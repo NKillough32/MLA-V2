@@ -3077,7 +3077,7 @@ class MLAQuizApp {
                 console.log('🖼️ IMAGE DEBUG - Looking for image file:', imagePath);
                 
                 // Use currentQuiz images if available
-                if (this.currentQuiz && this.currentQuiz.images) {
+                if (quizManager.currentQuiz && quizManager.currentQuiz.images) {
                     console.log('🖼️ IMAGE DEBUG - Searching in currentQuiz.images');
                     
                     // Try multiple possible keys for the image
@@ -3094,8 +3094,8 @@ class MLAQuizApp {
                     let foundKey = null;
                     
                     for (const key of possibleKeys) {
-                        if (this.currentQuiz.images[key]) {
-                            imageData = this.currentQuiz.images[key];
+                        if (quizManager.currentQuiz.images[key]) {
+                            imageData = quizManager.currentQuiz.images[key];
                             foundKey = key;
                             console.log('🖼️ IMAGE DEBUG - Found image with key:', key);
                             break;
@@ -3108,7 +3108,7 @@ class MLAQuizApp {
                         // Handle reference-based storage (resolve references)
                         if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                             const refKey = imageData.substring(8);
-                            imageData = this.currentQuiz.images[refKey];
+                            imageData = quizManager.currentQuiz.images[refKey];
                             console.log('🖼️ IMAGE DEBUG - Resolved reference from', foundKey, 'to', refKey);
                         }
                         
@@ -3119,10 +3119,10 @@ class MLAQuizApp {
                             console.log('🖼️ IMAGE DEBUG - Image data after resolution:', typeof imageData, imageData?.substring(0, 50) + '...');
                         }
                     } else {
-                        console.log('⚠️ Image not found in currentQuiz.images. Available keys:', Object.keys(this.currentQuiz.images).slice(0, 10));
+                        console.log('⚠️ Image not found in currentQuiz.images. Available keys:', Object.keys(quizManager.currentQuiz.images).slice(0, 10));
                     }
                 } else {
-                    console.log('⚠️ currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ quizManager.currentQuiz or currentQuiz.images not available');
                 }
                 
                 console.log('🖼️ IMAGE DEBUG - No embedded image found, showing as link');
@@ -3142,18 +3142,18 @@ class MLAQuizApp {
                 console.log('�️ IMAGE DEBUG - Looking for refKey:', refKey);
                 
                 // Use currentQuiz images if available (already loaded with IndexedDB data)
-                if (this.currentQuiz && this.currentQuiz.images) {
+                if (quizManager.currentQuiz && quizManager.currentQuiz.images) {
                     console.log('🖼️ IMAGE DEBUG - Using currentQuiz.images for lookup');
                     
                     // Check if the reference key exists directly
-                    if (this.currentQuiz.images[refKey]) {
-                        let imageData = this.currentQuiz.images[refKey];
+                    if (quizManager.currentQuiz.images[refKey]) {
+                        let imageData = quizManager.currentQuiz.images[refKey];
                         console.log('�️ IMAGE DEBUG - Found direct match for key:', refKey);
                         
                         // If it's another reference, resolve it
                         if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                             const secondRefKey = imageData.substring(8);
-                            imageData = this.currentQuiz.images[secondRefKey];
+                            imageData = quizManager.currentQuiz.images[secondRefKey];
                             console.log('🖼️ IMAGE DEBUG - Resolved nested reference from', refKey, 'to', secondRefKey);
                         }
                         
@@ -3164,10 +3164,10 @@ class MLAQuizApp {
                             console.log('⚠️ Found data but not base64:', typeof imageData, imageData?.substring(0, 50));
                         }
                     } else {
-                        console.log('⚠️ Key not found:', refKey, 'Available keys:', Object.keys(this.currentQuiz.images).slice(0, 10));
+                        console.log('⚠️ Key not found:', refKey, 'Available keys:', Object.keys(quizManager.currentQuiz.images).slice(0, 10));
                     }
                 } else {
-                    console.log('⚠️ currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ quizManager.currentQuiz or currentQuiz.images not available');
                 }
                 
                 if (actualUrl === url) {
