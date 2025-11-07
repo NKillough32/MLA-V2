@@ -27,12 +27,12 @@ class CalculatorBridge {
         if (window.ExtractedCalculators) {
             console.log('🔗 Setting up calculator bridge...');
             
-            // Get the main app if available
-            const mainApp = window.MLAQuizApp || {};
+            // Get the main app if available (it should already be window.quizApp)
+            const mainApp = window.quizApp || window.MLAQuizApp || {};
             
             // Create a comprehensive bridge that includes both main app and calculator functions
             const quizAppBridge = {
-                // Include main app methods if available
+                // Include main app methods if available (these should be first so they aren't overridden)
                 ...mainApp,
                 
                 // Copy all methods from ExtractedCalculators (calculator templates and functions)
@@ -44,7 +44,7 @@ class CalculatorBridge {
                 showToast: (msg, type) => this.showToast(msg, type)
             };
             
-            // Make the bridge available as window.quizApp for onclick handlers
+            // Update window.quizApp with the merged bridge (preserving all main app methods)
             window.quizApp = quizAppBridge;
             
             console.log('✅ Calculator bridge established');
@@ -53,7 +53,7 @@ class CalculatorBridge {
             console.log(`   - Calculator getters: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('get') && k.includes('Calculator')).length}`);
             
             // Test a few key calculator functions
-            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS'];
+            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS', 'showDrugDetail', 'loadDrugReferenceContent'];
             testFunctions.forEach(funcName => {
                 if (window.quizApp[funcName]) {
                     console.log(`   ✓ ${funcName} available`);

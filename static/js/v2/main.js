@@ -3474,8 +3474,8 @@ if (document.readyState === 'loading') {
 // Export for global access if needed
 window.MLAQuizApp = app;
 
-// Note: window.quizApp will be set by CalculatorBridge after initialization
-// This avoids race conditions between main app and calculator bridge
+// Set window.quizApp to reference the main app (needed for onclick handlers)
+window.quizApp = app;
 
 // Make sure quizManager is available on MLAQuizApp for template compatibility
 app.quizManager = quizManager;
