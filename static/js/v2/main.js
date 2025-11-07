@@ -3364,6 +3364,15 @@ class MLAQuizApp {
         }
         console.warn(`⚠️ Calculator method ${methodName} not available`);
     }
+
+    /**
+     * Show calculator list (back button functionality)
+     */
+    showCalculatorList() {
+        console.log('🔙 Showing calculator list');
+        // Switch back to the main calculator panel
+        this.switchTool('calculators');
+    }
 }
 
 // Create app instance and wrap it with a proxy for calculator method delegation

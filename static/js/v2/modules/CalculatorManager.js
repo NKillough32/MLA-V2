@@ -65,6 +65,47 @@ export class CalculatorManager {
         // V2 native implementations in Calculators.js only cover 6 calculators
         // TODO: Migrate remaining calculators to native V2 implementations
 
+        // === BASIC HEALTH CALCULATORS ===
+        
+        // BMI Calculator
+        if (EC.getBMICalculator) {
+            this.registerCalculator('bmi', {
+                name: 'BMI Calculator',
+                category: TOOL_CATEGORIES.GENERAL,
+                description: 'Body Mass Index calculation and interpretation',
+                keywords: ['bmi', 'body', 'mass', 'index', 'weight', 'height', 'obesity'],
+                getTemplate: () => EC.getBMICalculator(),
+                calculate: () => EC.calculateBMI(),
+                bindEvents: () => {}
+            });
+        }
+
+        // GCS Calculator
+        if (EC.getGCSCalculator) {
+            this.registerCalculator('gcs', {
+                name: 'Glasgow Coma Scale',
+                category: TOOL_CATEGORIES.NEUROLOGY,
+                description: 'Neurological assessment scale',
+                keywords: ['gcs', 'glasgow', 'coma', 'scale', 'consciousness', 'neurology'],
+                getTemplate: () => EC.getGCSCalculator(),
+                calculate: () => EC.calculateGCS(),
+                bindEvents: () => {}
+            });
+        }
+
+        // MADDERS Calculator
+        if (EC.getMADDERSCalculator) {
+            this.registerCalculator('madders', {
+                name: 'MADDERS Score',
+                category: TOOL_CATEGORIES.ASSESSMENT,
+                description: 'Mental health assessment tool',
+                keywords: ['madders', 'mental', 'health', 'assessment', 'score'],
+                getTemplate: () => EC.getMADDERSCalculator(),
+                calculate: () => EC.calculateMADDERS(),
+                bindEvents: () => {}
+            });
+        }
+
         // === CARDIOVASCULAR CALCULATORS ===
         
         // GRACE Score
@@ -76,6 +117,32 @@ export class CalculatorManager {
                 keywords: ['grace', 'acs', 'risk', 'cardiac', 'heart'],
                 getTemplate: () => EC.getGRACECalculator(),
                 calculate: () => EC.calculateGRACE(),
+                bindEvents: () => {}
+            });
+        }
+
+        // CHADS2-VASc Score
+        if (EC.getCHADS2VAScCalculator) {
+            this.registerCalculator('chads2vasc', {
+                name: 'CHADS2-VASc Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Stroke risk assessment in atrial fibrillation',
+                keywords: ['chads2', 'vasc', 'stroke', 'risk', 'atrial', 'fibrillation', 'anticoagulation'],
+                getTemplate: () => EC.getCHADS2VAScCalculator(),
+                calculate: () => EC.calculateCHADS2VASc(),
+                bindEvents: () => {}
+            });
+        }
+
+        // HAS-BLED Score
+        if (EC.getHASBLEDCalculator) {
+            this.registerCalculator('hasbled', {
+                name: 'HAS-BLED Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Bleeding risk assessment for anticoagulation',
+                keywords: ['hasbled', 'bleeding', 'risk', 'anticoagulation', 'warfarin'],
+                getTemplate: () => EC.getHASBLEDCalculator(),
+                calculate: () => EC.calculateHASBLED(),
                 bindEvents: () => {}
             });
         }
@@ -92,6 +159,19 @@ export class CalculatorManager {
                 bindEvents: () => {}
             });
         }
+
+        // QRISK (Legacy)
+        if (EC.getQRISKCalculator) {
+            this.registerCalculator('qrisk', {
+                name: 'QRISK Calculator',
+                category: TOOL_CATEGORIES.RISK,
+                description: 'Cardiovascular risk assessment (legacy version)',
+                keywords: ['qrisk', 'cardiovascular', 'risk', 'prevention', 'legacy'],
+                getTemplate: () => EC.getQRISKCalculator(),
+                calculate: () => EC.calculateQRISK(),
+                bindEvents: () => {}
+            });
+        }
         
         // === RESPIRATORY CALCULATORS ===
         
@@ -104,6 +184,19 @@ export class CalculatorManager {
                 keywords: ['curb', 'pneumonia', 'severity', 'respiratory'],
                 getTemplate: () => EC.getCURB65Calculator(),
                 calculate: () => EC.calculateCURB65(),
+                bindEvents: () => {}
+            });
+        }
+
+        // CRB-65
+        if (EC.getCRB65Calculator) {
+            this.registerCalculator('crb65', {
+                name: 'CRB-65',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Community pneumonia severity assessment (without urea)',
+                keywords: ['crb', 'pneumonia', 'severity', 'respiratory', 'community'],
+                getTemplate: () => EC.getCRB65Calculator(),
+                calculate: () => EC.calculateCRB65(),
                 bindEvents: () => {}
             });
         }
@@ -132,6 +225,19 @@ export class CalculatorManager {
                 keywords: ['nihss', 'stroke', 'neurology', 'severity'],
                 getTemplate: () => EC.getNIHSSCalculator(),
                 calculate: () => EC.calculateNIHSS(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Modified Rankin Scale
+        if (EC.getModifiedRankinCalculator) {
+            this.registerCalculator('rankin', {
+                name: 'Modified Rankin Scale',
+                category: TOOL_CATEGORIES.NEUROLOGY,
+                description: 'Functional disability assessment after stroke',
+                keywords: ['rankin', 'modified', 'stroke', 'disability', 'functional', 'outcome'],
+                getTemplate: () => EC.getModifiedRankinCalculator(),
+                calculate: () => EC.calculateModifiedRankin(),
                 bindEvents: () => {}
             });
         }
@@ -217,6 +323,19 @@ export class CalculatorManager {
                 bindEvents: () => {}
             });
         }
+
+        // Urea/Creatinine Ratio
+        if (EC.getUreaCreatinineCalculator) {
+            this.registerCalculator('urea-creatinine', {
+                name: 'Urea/Creatinine Ratio',
+                category: TOOL_CATEGORIES.NEPHROLOGY,
+                description: 'Blood urea nitrogen to creatinine ratio calculation',
+                keywords: ['urea', 'creatinine', 'ratio', 'bun', 'kidney', 'renal'],
+                getTemplate: () => EC.getUreaCreatinineCalculator(),
+                calculate: () => EC.calculateUreaCreatinine(),
+                bindEvents: () => {}
+            });
+        }
         
         // === HEPATOLOGY CALCULATORS ===
         
@@ -270,6 +389,19 @@ export class CalculatorManager {
                 keywords: ['calcium', 'albumin', 'corrected', 'biochemistry'],
                 getTemplate: () => EC.getCorrectedCalciumCalculator(),
                 calculate: () => EC.calculateCorrectedCalcium(),
+                bindEvents: () => {}
+            });
+        }
+
+        // LDL Calculator
+        if (EC.getLDLCalculator) {
+            this.registerCalculator('ldl-calc', {
+                name: 'LDL Calculator',
+                category: TOOL_CATEGORIES.LABORATORY,
+                description: 'LDL cholesterol calculation using Friedewald equation',
+                keywords: ['ldl', 'cholesterol', 'friedewald', 'lipids', 'cardiovascular'],
+                getTemplate: () => EC.getLDLCalculator(),
+                calculate: () => EC.calculateLDL(),
                 bindEvents: () => {}
             });
         }
@@ -387,6 +519,19 @@ export class CalculatorManager {
                 keywords: ['wells', 'dvt', 'thrombosis', 'vascular'],
                 getTemplate: () => EC.getWellsDVTCalculator(),
                 calculate: () => EC.calculateWellsDVT(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Wells Calculator (General)
+        if (EC.getWellsCalculator) {
+            this.registerCalculator('wells', {
+                name: 'Wells Score Calculator',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Wells scoring system (commonly PE)',
+                keywords: ['wells', 'score', 'pe', 'pulmonary', 'embolism'],
+                getTemplate: () => EC.getWellsCalculator(),
+                calculate: () => EC.calculateWells(),
                 bindEvents: () => {}
             });
         }
@@ -652,6 +797,110 @@ export class CalculatorManager {
             });
         }
 
+        // Infusion Rate Calculator
+        if (EC.getInfusionRateCalculator) {
+            this.registerCalculator('infusion-rate', {
+                name: 'Infusion Rate Calculator',
+                category: TOOL_CATEGORIES.PHARMACOLOGY,
+                description: 'IV infusion rate and drop calculations',
+                keywords: ['infusion', 'rate', 'drip', 'iv', 'drops'],
+                getTemplate: () => EC.getInfusionRateCalculator(),
+                calculate: () => EC.calculateInfusionRate(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Cockcroft-Gault Calculator
+        if (EC.getCockcroftGaultCalculator) {
+            this.registerCalculator('cockcroft-gault', {
+                name: 'Cockcroft-Gault Calculator',
+                category: TOOL_CATEGORIES.NEPHROLOGY,
+                description: 'Creatinine clearance estimation',
+                keywords: ['cockcroft', 'gault', 'creatinine', 'clearance'],
+                getTemplate: () => EC.getCockcroftGaultCalculator(),
+                calculate: () => EC.calculateCockcroftGault(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Body Surface Area Calculator
+        if (EC.getBSACalculator) {
+            this.registerCalculator('bsa', {
+                name: 'Body Surface Area Calculator',
+                category: TOOL_CATEGORIES.GENERAL,
+                description: 'BSA calculation using multiple formulas',
+                keywords: ['bsa', 'surface', 'area', 'dubois', 'mosteller'],
+                getTemplate: () => EC.getBSACalculator(),
+                calculate: () => EC.calculateBSA(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Fluid Balance Calculator
+        if (EC.getFluidBalanceCalculator) {
+            this.registerCalculator('fluid-balance', {
+                name: 'Fluid Balance Calculator',
+                category: TOOL_CATEGORIES.GENERAL,
+                description: 'Daily fluid requirements and balance',
+                keywords: ['fluid', 'balance', 'requirements', 'maintenance'],
+                getTemplate: () => EC.getFluidBalanceCalculator(),
+                calculate: () => EC.calculateFluidBalance(),
+                bindEvents: () => {}
+            });
+        }
+
+        // RASS Calculator
+        if (EC.getRASSCalculator) {
+            this.registerCalculator('rass', {
+                name: 'RASS Scale',
+                category: TOOL_CATEGORIES.ASSESSMENT,
+                description: 'Richmond Agitation-Sedation Scale',
+                keywords: ['rass', 'sedation', 'agitation', 'richmond', 'scale', 'consciousness'],
+                getTemplate: () => EC.getRASSCalculator(),
+                calculate: () => EC.calculateRASS(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Fracture Risk Calculator (FRAX)
+        if (EC.getFractureRiskCalculator) {
+            this.registerCalculator('frax-fracture', {
+                name: 'Fracture Risk Calculator',
+                category: TOOL_CATEGORIES.RISK,
+                description: 'FRAX fracture risk assessment tool',
+                keywords: ['frax', 'fracture', 'risk', 'osteoporosis', 'bone', 'density'],
+                getTemplate: () => EC.getFractureRiskCalculator(),
+                calculate: () => EC.calculateFractureRisk(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Anion Gap Calculator
+        if (EC.getAnionGapCalculator) {
+            this.registerCalculator('anion-gap', {
+                name: 'Anion Gap Calculator',
+                category: TOOL_CATEGORIES.LAB,
+                description: 'Calculate serum anion gap from electrolytes',
+                keywords: ['anion', 'gap', 'electrolytes', 'sodium', 'chloride', 'bicarbonate', 'acidosis'],
+                getTemplate: () => EC.getAnionGapCalculator(),
+                calculate: () => EC.calculateAnionGap(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Wells DVT Score Calculator
+        if (EC.getWellsDVTCalculator) {
+            this.registerCalculator('wells-dvt', {
+                name: 'Wells DVT Score',
+                category: TOOL_CATEGORIES.ASSESSMENT,
+                description: 'Wells Deep Vein Thrombosis probability score',
+                keywords: ['wells', 'dvt', 'deep', 'vein', 'thrombosis', 'probability', 'score'],
+                getTemplate: () => EC.getWellsDVTCalculator(),
+                calculate: () => EC.calculateWellsDVT(),
+                bindEvents: () => {}
+            });
+        }
+
         // Paediatric Dosing
         if (EC.getPaediatricDosingCalculator) {
             this.registerCalculator('paediatric-dosing', {
@@ -829,9 +1078,17 @@ export class CalculatorManager {
      */
     renderCalculator(calculator, container) {
         try {
-            // Render HTML using getTemplate
+            // Create back button
+            const backButton = `
+                <button class="back-btn" onclick="window.quizApp.showCalculatorList(); event.stopPropagation();" 
+                        style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px;">←</span> Back to Calculators
+                </button>
+            `;
+            
+            // Render HTML using getTemplate with back button
             const html = calculator.getTemplate();
-            container.innerHTML = html;
+            container.innerHTML = backButton + html;
             
             // Bind calculator events - pass the container
             if (calculator.bindEvents) {
