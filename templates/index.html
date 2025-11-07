@@ -4599,6 +4599,306 @@
             color: var(--text-primary);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
         }
+
+        /* Dark Mode for Quiz Interface - Comprehensive Styling */
+        
+        /* Quiz Screen Container */
+        [data-theme="dark"] #quizScreen {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        /* Question Header and Navigation */
+        [data-theme="dark"] .question-header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6b 100%);
+            color: white;
+        }
+
+        [data-theme="dark"] .question-number {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Question Content Areas */
+        [data-theme="dark"] .question-content {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .q-text {
+            background: rgba(240, 249, 255, 0.05) !important;
+            border-left-color: #3b82f6;
+            color: var(--text-primary) !important;
+        }
+
+        [data-theme="dark"] .prompt {
+            background: rgba(254, 252, 232, 0.08) !important;
+            border-left-color: #eab308;
+            color: var(--text-primary) !important;
+        }
+
+        [data-theme="dark"] .investigations {
+            background: rgba(240, 253, 244, 0.08) !important;
+            border-left-color: #22c55e;
+            color: var(--text-primary) !important;
+        }
+
+        /* Question Options Enhanced */
+        [data-theme="dark"] .new-option {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .new-option:hover {
+            background: rgba(10, 132, 255, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .new-option.selected {
+            background: rgba(10, 132, 255, 0.2);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .new-option.correct {
+            background: rgba(34, 197, 94, 0.15);
+            border-color: #22c55e;
+            color: #4ade80;
+        }
+
+        [data-theme="dark"] .new-option.incorrect {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: #ef4444;
+            color: #f87171;
+        }
+
+        [data-theme="dark"] .new-option.ruled-out {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+            opacity: 0.5;
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .new-option .label {
+            color: inherit;
+        }
+
+        [data-theme="dark"] .new-option .badge {
+            background: rgba(10, 132, 255, 0.2);
+            color: var(--accent-color);
+        }
+
+        /* Quiz Sidebar Dark Mode */
+        [data-theme="dark"] .question-sidebar {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .sidebar-header {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .sidebar-title {
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .sidebar-stats {
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .sidebar-toggle {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .sidebar-toggle:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        [data-theme="dark"] .sidebar-content {
+            background: var(--bg-secondary);
+        }
+
+        /* Question List Items */
+        [data-theme="dark"] .question-list-item {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .question-list-item:hover {
+            background: rgba(10, 132, 255, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .question-list-item.current {
+            background: rgba(10, 132, 255, 0.2);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .question-list-item.answered {
+            background: rgba(34, 197, 94, 0.1);
+            border-left-color: #22c55e;
+        }
+
+        [data-theme="dark"] .question-list-item.flagged {
+            background: rgba(245, 158, 11, 0.1);
+            border-left-color: #f59e0b;
+        }
+
+        /* Quiz Navigation Buttons */
+        [data-theme="dark"] .quiz-nav-btn {
+            background: var(--button-bg);
+            color: white;
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .quiz-nav-btn:hover {
+            background: #0066cc;
+            box-shadow: 0 4px 12px rgba(10, 132, 255, 0.3);
+        }
+
+        [data-theme="dark"] .quiz-nav-btn:disabled {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-color: var(--border-color);
+            opacity: 0.6;
+        }
+
+        /* Quiz Action Buttons */
+        [data-theme="dark"] .flag-btn {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .flag-btn:hover,
+        [data-theme="dark"] .flag-btn.flagged {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+            border-color: #f59e0b;
+        }
+
+        [data-theme="dark"] .rule-out-btn {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .rule-out-btn:hover {
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+            border-color: #ef4444;
+        }
+
+        /* Quiz Results and Feedback */
+        [data-theme="dark"] .quiz-results {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .score-display {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .score-percentage {
+            color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .results-breakdown {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+        }
+
+        /* Quiz Length Selection */
+        [data-theme="dark"] .quiz-length-btn {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .quiz-length-btn:hover {
+            background: rgba(10, 132, 255, 0.1);
+            border-color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .quiz-length-btn.active {
+            background: var(--button-bg);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        /* Quiz Upload Interface */
+        [data-theme="dark"] .quiz-upload-area {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .quiz-upload-area:hover {
+            background: rgba(10, 132, 255, 0.05);
+            border-color: var(--accent-color);
+        }
+
+        [data-theme="dark"] .uploaded-quiz {
+            background: rgba(52, 199, 89, 0.1) !important;
+            border-left-color: #34c759 !important;
+        }
+
+        [data-theme="dark"] .uploaded-quiz .quiz-name {
+            color: #4ade80 !important;
+        }
+
+        /* Image Containers in Questions */
+        [data-theme="dark"] .image-container {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .image-caption {
+            color: var(--text-secondary);
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        [data-theme="dark"] .question-image {
+            border-color: var(--border-color);
+        }
+
+        /* Timer and Progress Elements */
+        [data-theme="dark"] .quiz-timer {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .progress-bar {
+            background: var(--bg-tertiary);
+        }
+
+        [data-theme="dark"] .progress-fill {
+            background: var(--accent-color);
+        }
+
+        /* Quiz Statistics and Info */
+        [data-theme="dark"] .quiz-stats {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .stat-item {
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .stat-value {
+            color: var(--accent-color);
+        }
         
         /* V2 UI Elements - Loading overlay and modal backdrop */
         #loading-overlay {
