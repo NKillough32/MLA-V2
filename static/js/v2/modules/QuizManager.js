@@ -55,29 +55,60 @@ export class QuizManager {
      * Load a quiz by name
      */
     async loadQuiz(quizName, isUploaded = false) {
+        console.log(`📚 Loading quiz: ${quizName} (uploaded: ${isUploaded})`);
+        
         try {
             let quizData;
             
             if (isUploaded) {
-                // Load from uploaded quizzes
-                const uploadedQuizzes = storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+                // Load from uploaded quizzes with V1-compatible logic
+                const uploadedQuizzes = await this.getUploadedQuizzes();
                 const quiz = uploadedQuizzes.find(q => q.name === quizName);
+                
                 if (!quiz) {
-                    throw new Error('Uploaded quiz not found');
+                    throw new Error('Uploaded quiz not found. Please re-upload the file.');
                 }
+                
+                // Check if this is a split storage quiz that needs reconstruction
+                if (quiz.dataStored === 'split' && (!quiz.questions || quiz.questions.length === 0)) {
+                    console.log('🔍 Reconstructing split storage quiz');
+                    try {
+                        const storageKey = quiz.storageKey || `quiz_${this.sanitizeStorageKey(quiz.name)}`;
+                        const quizStoredData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+                        if (quizStoredData.questions && quizStoredData.questions.length > 0) {
+                            quiz.questions = quizStoredData.questions;
+                            quiz.images = quizStoredData.images || {};
+                            console.log('✅ Successfully reconstructed quiz with', quiz.questions.length, 'questions');
+                        } else {
+                            throw new Error('No questions found in split storage');
+                        }
+                    } catch (error) {
+                        console.error('❌ Failed to reconstruct quiz:', error);
+                        throw new Error('Failed to load quiz data. Please re-upload the file.');
+                    }
+                }
+                
                 quizData = quiz;
             } else {
                 // Load from API
-                const response = await fetch(`/api/quizzes/${encodeURIComponent(quizName)}`);
+                const response = await fetch(`/api/quiz/${encodeURIComponent(quizName)}`);
                 if (!response.ok) {
                     throw new Error(`Failed to load quiz: ${response.statusText}`);
                 }
-                quizData = await response.json();
+                const result = await response.json();
+                if (!result.success) {
+                    throw new Error(result.error || 'Failed to load quiz');
+                }
+                quizData = result.quiz;
             }
 
+            // Store current quiz for image lookups (V1 compatibility)
             this.currentQuiz = quizData;
             this.quizName = quizName;
             this.questions = quizData.questions || [];
+            
+            // Filter questions based on selected length (V1 compatibility)
+            this.questions = this.filterQuestionsByLength(this.questions);
             
             // Reset state
             this.currentQuestionIndex = 0;
@@ -87,15 +118,104 @@ export class QuizManager {
             this.flaggedQuestions = new Set();
             this.questionTimes = {};
             
+            if (this.questions.length === 0) {
+                throw new Error('This quiz contains no questions.');
+            }
+            
             eventBus.emit(EVENTS.QUIZ_LOADED, { name: quizName, questionCount: this.questions.length });
             console.log(`✅ Loaded quiz: ${quizName} (${this.questions.length} questions)`);
             
-            return quizData;
+            return true;
         } catch (error) {
             console.error('❌ Error loading quiz:', error);
-            eventBus.emit(EVENTS.ERROR_OCCURRED, { type: 'quiz_load', error });
-            throw error;
+            eventBus.emit(EVENTS.ERROR_OCCURRED, { type: 'quiz_load', error: error.message });
+            return false;
         }
+    }
+
+    /**
+     * Get uploaded quizzes with V1-compatible reconstruction logic
+     */
+    async getUploadedQuizzes() {
+        console.log('🔍 Retrieving uploaded quizzes');
+        
+        // Get quizzes from localStorage
+        let quizzes = storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+        
+        // Also check temporary storage (V1 compatibility)
+        if (window.tempUploadedQuizzes && window.tempUploadedQuizzes.length > 0) {
+            console.log('🔍 Found', window.tempUploadedQuizzes.length, 'quizzes in temporary storage');
+            // Merge with persistent storage, removing duplicates
+            const tempNames = window.tempUploadedQuizzes.map(q => q.name);
+            quizzes = quizzes.filter(q => !tempNames.includes(q.name));
+            quizzes = [...quizzes, ...window.tempUploadedQuizzes];
+        }
+        
+        // For split storage quizzes, reconstruct the data
+        const reconstructedQuizzes = [];
+        
+        for (const quiz of quizzes) {
+            // If this entry already contains full quiz data, accept it
+            if (quiz.questions && Array.isArray(quiz.questions)) {
+                reconstructedQuizzes.push(quiz);
+                continue;
+            }
+
+            // Handle split storage reconstruction
+            const storageKey = quiz.storageKey || `quiz_${this.sanitizeStorageKey(quiz.name)}`;
+
+            if (quiz.dataStored === 'split') {
+                console.log('🔍 Reconstructing split storage quiz:', quiz.name);
+                try {
+                    const quizData = JSON.parse(localStorage.getItem(storageKey) || '{}');
+                    reconstructedQuizzes.push({
+                        ...quiz,
+                        storageKey,
+                        questions: quizData.questions || [],
+                        images: quizData.images || {}
+                    });
+                } catch (error) {
+                    console.error('❌ Failed to reconstruct quiz:', quiz.name, error);
+                    reconstructedQuizzes.push(quiz); // Return metadata only
+                }
+            } else {
+                // For normally stored quizzes, try to read the full object
+                try {
+                    const stored = JSON.parse(localStorage.getItem(storageKey) || 'null');
+                    if (stored) {
+                        reconstructedQuizzes.push(stored);
+                    } else {
+                        reconstructedQuizzes.push(quiz);
+                    }
+                } catch (error) {
+                    console.error('❌ Failed to read stored quiz:', quiz.name, error);
+                    reconstructedQuizzes.push(quiz);
+                }
+            }
+        }
+        
+        console.log(`📦 Retrieved ${reconstructedQuizzes.length} uploaded quizzes`);
+        return reconstructedQuizzes;
+    }
+
+    /**
+     * Sanitize storage key (V1 compatibility)
+     */
+    sanitizeStorageKey(name) {
+        return name.replace(/[^a-zA-Z0-9_-]/g, '_');
+    }
+
+    /**
+     * Filter questions by selected length (V1 compatibility)
+     */
+    filterQuestionsByLength(questions) {
+        if (!this.selectedQuizLength || this.selectedQuizLength === 'all' || this.selectedQuizLength >= questions.length) {
+            return questions;
+        }
+        
+        // Shuffle and take selected number
+        const shuffled = [...questions].sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, this.selectedQuizLength);
     }
 
     /**
@@ -332,9 +452,35 @@ export class QuizManager {
      * Set quiz length preference
      */
     setQuizLength(length) {
-        this.quizLength = length;
-        storage.setItem('quizLength', length);
-        console.log(`📝 Quiz length preference set to: ${length}`);
+        this.selectedQuizLength = length === 'all' ? 'all' : parseInt(length);
+        this.quizLength = this.selectedQuizLength; // Keep both for compatibility
+        storage.setItem(STORAGE_KEYS.QUIZ_LENGTH, this.selectedQuizLength);
+        console.log(`🎯 Selected quiz length: ${this.selectedQuizLength}`);
+        
+        // Update UI display (V1 compatibility)
+        this.updateQuizLengthInfo();
+    }
+
+    /**
+     * Update quiz length info display (V1 compatibility)
+     */
+    updateQuizLengthInfo() {
+        let infoText = '';
+        if (this.selectedQuizLength === 'all') {
+            infoText = '📝 Selected: All questions for comprehensive practice';
+        } else if (this.selectedQuizLength === 100) {
+            infoText = '📝 Selected: 100 questions for extended practice session';
+        } else {
+            infoText = `📝 Selected: ${this.selectedQuizLength} questions for quick practice session`;
+        }
+        
+        // Update info display if element exists
+        const infoElement = document.querySelector('.quiz-length-info');
+        if (infoElement) {
+            infoElement.textContent = infoText;
+        }
+        
+        console.log(`🎯 Updated quiz length info: ${infoText}`);
     }
 
     /**

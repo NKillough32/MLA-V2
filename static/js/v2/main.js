@@ -331,16 +331,36 @@ class MLAQuizApp {
         }
 
         if (nextBtnTop) {
-            nextBtnTop.addEventListener('click', () => {
+            let nextBtnDebounce = false;
+            nextBtnTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (nextBtnDebounce) {
+                    console.log('➡️ Next button debounced');
+                    return;
+                }
+                nextBtnDebounce = true;
                 console.log('➡️ Next (top) button clicked');
                 quizManager.nextQuestion();
+                setTimeout(() => {
+                    nextBtnDebounce = false;
+                }, 300);
             });
         }
 
         if (prevBtnTop) {
-            prevBtnTop.addEventListener('click', () => {
+            let prevBtnDebounce = false;
+            prevBtnTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (prevBtnDebounce) {
+                    console.log('⬅️ Previous button debounced');
+                    return;
+                }
+                prevBtnDebounce = true;
                 console.log('⬅️ Previous (top) button clicked');
                 quizManager.previousQuestion();
+                setTimeout(() => {
+                    prevBtnDebounce = false;
+                }, 300);
             });
         }
 
@@ -2621,8 +2641,8 @@ class MLAQuizApp {
             return;
         }
 
-        // Get uploaded quizzes from storage
-        const uploadedQuizzes = storage.getItem('uploadedQuizzes', []);
+        // Get uploaded quizzes with V1-compatible reconstruction
+        const uploadedQuizzes = await quizManager.getUploadedQuizzes();
         console.log(`📂 Found ${uploadedQuizzes.length} uploaded quizzes:`, uploadedQuizzes);
         
         // Get server quizzes (if available)
@@ -2631,25 +2651,39 @@ class MLAQuizApp {
             const response = await fetch('/api/quizzes');
             if (response.ok) {
                 const data = await response.json();
-                // Ensure we have an array
-                serverQuizzes = Array.isArray(data) ? data : [];
-                console.log(`📡 Fetched ${serverQuizzes.length} server quizzes`);
+                if (data.success) {
+                    serverQuizzes = data.quizzes || [];
+                    console.log(`📡 Fetched ${serverQuizzes.length} server quizzes`);
+                } else {
+                    console.log('📝 No server quizzes available:', data.error);
+                }
             }
         } catch (error) {
             console.log('📝 Server quizzes not available (offline or local mode)');
-            serverQuizzes = []; // Ensure it's always an array
+            serverQuizzes = [];
+        }
+
+        // Check if no quizzes found
+        if (uploadedQuizzes.length === 0 && serverQuizzes.length === 0) {
+            quizList.innerHTML = `
+                <div style="padding: 20px; text-align: center; color: #8e8e93;">
+                    <p>No quizzes found. Upload quiz files using the button above.</p>
+                </div>
+            `;
+            return;
         }
 
         // Render list
         let html = '';
 
-        // Add uploaded quizzes first
+        // Add uploaded quizzes first (with special styling)
         uploadedQuizzes.forEach(quiz => {
+            const questionCount = quiz.questions?.length || quiz.questionCount || quiz.total_questions || 0;
             html += `
                 <div class="quiz-item uploaded-quiz" data-quiz-name="${quiz.name}" data-is-uploaded="true">
                     <div class="quiz-info">
-                        <h3 class="quiz-name">${quiz.name}</h3>
-                        <p class="quiz-details">Uploaded • ${quiz.questionCount || 0} questions</p>
+                        <h3 class="quiz-name">📁 ${quiz.name}</h3>
+                        <p class="quiz-details">Uploaded • ${questionCount} questions</p>
                     </div>
                     <span class="chevron">›</span>
                 </div>
@@ -2669,10 +2703,6 @@ class MLAQuizApp {
                 </div>
             `;
         });
-
-        if (html === '') {
-            html = '<div style="padding: 20px; text-align: center; color: #8e8e93;">No quizzes available. Upload a quiz to get started.</div>';
-        }
 
         console.log(`✅ Rendering ${uploadedQuizzes.length + serverQuizzes.length} quizzes to list`);
         quizList.innerHTML = html;
@@ -3075,21 +3105,47 @@ class MLAQuizApp {
         formattedText = formattedText.replace(/!\[([^\]]*)\]\(([^)]+?)(?:\s+"([^"]+)")?\)/g, (match, alt, url, caption) => {
             let actualUrl = url;
             
+            console.log(`🖼️ Processing image: ${match}`);
+            console.log(`🔧 URL: "${url}"`);
+            
             // Handle reference-based storage
             if (typeof url === 'string' && url.startsWith('__REF__:')) {
                 const refKey = url.substring(8);
+                console.log(`🔗 Reference key: "${refKey}"`);
+                
                 if (this.currentQuiz && this.currentQuiz.images && this.currentQuiz.images[refKey]) {
                     let imageData = this.currentQuiz.images[refKey];
+                    console.log(`📦 Found image data type: ${typeof imageData}`);
                     
+                    // Handle nested references
                     if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                         const secondRefKey = imageData.substring(8);
+                        console.log(`🔗 Secondary reference: "${secondRefKey}"`);
                         imageData = this.currentQuiz.images[secondRefKey];
                     }
                     
                     if (imageData && imageData.startsWith('data:')) {
                         actualUrl = imageData;
+                        console.log(`✅ Image resolved successfully`);
+                    } else {
+                        console.warn(`❌ Image data not found or invalid for key: ${refKey}`);
+                        console.log(`Available image keys:`, Object.keys(this.currentQuiz.images || {}));
                     }
+                } else {
+                    console.warn(`❌ No image found for reference: ${refKey}`);
+                    console.log(`Available image keys:`, Object.keys(this.currentQuiz.images || {}));
                 }
+            }
+            
+            // Safety check: if actualUrl is still __REF__: format, show error
+            if (actualUrl.startsWith('__REF__:')) {
+                console.error(`🚨 Failed to resolve image reference: ${actualUrl}`);
+                return `<div class="image-container image-error">
+                    <div style="background: #ffebee; border: 1px solid #f44336; padding: 12px; border-radius: 8px; text-align: center;">
+                        <p style="color: #d32f2f; margin: 0;">⚠️ Image not available</p>
+                        <small style="color: #757575;">Reference: ${actualUrl}</small>
+                    </div>
+                </div>`;
             }
             
             const imageHtml = `<img src="${actualUrl}" alt="${alt}" loading="lazy" onclick="window.openImageModal && openImageModal('${actualUrl}', '${alt}')">`;

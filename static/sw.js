@@ -28,10 +28,24 @@ self.addEventListener('install', (event) => {
         Promise.all([
             caches.open(STATIC_CACHE).then((cache) => {
                 console.log('Caching static files');
-                return cache.addAll(STATIC_FILES);
+                // Only cache files that actually exist to avoid 404 errors
+                return Promise.allSettled(
+                    STATIC_FILES.map(file => 
+                        cache.add(file).catch(error => {
+                            console.warn(`Failed to cache ${file}:`, error);
+                            return null;
+                        })
+                    )
+                );
+            }).catch(error => {
+                console.warn('Failed to open static cache:', error);
+                return null;
             })
         ]).then(() => {
             console.log('Service worker installed successfully');
+            return self.skipWaiting();
+        }).catch(error => {
+            console.error('Service worker installation failed:', error);
             return self.skipWaiting();
         })
     );
