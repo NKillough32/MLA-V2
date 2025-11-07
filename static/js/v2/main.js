@@ -437,6 +437,7 @@ class MLAQuizApp {
                 const confirm = window.confirm('Are you sure you want to finish the quiz?');
                 if (confirm) {
                     await quizManager.finishQuiz();
+                    this.showResults();
                 }
             });
         }
@@ -456,6 +457,24 @@ class MLAQuizApp {
             homeBtn.addEventListener('click', () => {
                 console.log('🏠 Home button clicked');
                 this.showScreen('quizSelection');
+            });
+        }
+
+        // Generate Report button
+        const generateReportBtn = document.getElementById('generate-report-btn');
+        if (generateReportBtn) {
+            generateReportBtn.addEventListener('click', () => {
+                console.log('📊 Generate report button clicked');
+                quizManager.generateStudyReport();
+            });
+        }
+
+        // Floating PDF button
+        const floatingPdfBtn = document.getElementById('floating-pdf-btn');
+        if (floatingPdfBtn) {
+            floatingPdfBtn.addEventListener('click', () => {
+                console.log('📊 Floating PDF button clicked');
+                quizManager.generateStudyReport();
             });
         }
 
@@ -3092,6 +3111,39 @@ class MLAQuizApp {
         }
 
         resultsContainer.innerHTML = html;
+    }
+
+    /**
+     * Show results screen (from V1)
+     */
+    showResults() {
+        const score = quizManager.calculateScore();
+        
+        this.showScreen('resultsScreen');
+        document.getElementById('navTitle').textContent = 'Results';
+        
+        const scorePercentage = document.getElementById('scorePercentage');
+        const scoreDetails = document.getElementById('scoreDetails');
+        
+        if (scorePercentage) {
+            scorePercentage.textContent = `${score.percentage}%`;
+        }
+        
+        if (scoreDetails) {
+            scoreDetails.textContent = `${score.correct} out of ${score.total} questions correct`;
+        }
+        
+        // Update score card color based on performance
+        const scoreCard = document.querySelector('.score-card');
+        if (scoreCard) {
+            if (score.percentage >= 80) {
+                scoreCard.style.background = 'linear-gradient(135deg, #34C759 0%, #00C957 100%)';
+            } else if (score.percentage >= 60) {
+                scoreCard.style.background = 'linear-gradient(135deg, #FF9500 0%, #FF8C00 100%)';
+            } else {
+                scoreCard.style.background = 'linear-gradient(135deg, #FF3B30 0%, #FF2D1C 100%)';
+            }
+        }
     }
 
     /**

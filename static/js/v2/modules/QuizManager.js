@@ -599,6 +599,15 @@ export class QuizManager {
     }
 
     /**
+     * Retry quiz (from V1)
+     */
+    retryQuiz() {
+        console.log('🔄 Retrying quiz');
+        this.resetQuiz();
+        this.startQuiz();
+    }
+
+    /**
      * Get quiz progress
      */
     getProgress() {
@@ -1307,6 +1316,437 @@ export class QuizManager {
         }));
         
         return { strengths, weaknesses };
+    }
+
+    /**
+     * Generate study report (from V1)
+     */
+    generateStudyReport() {
+        const reportData = this.calculateReportData();
+        const includeExplanationsEl = document.getElementById('include-explanations-toggle');
+        const includeExplanations = includeExplanationsEl ? includeExplanationsEl.checked : true;
+        
+        if (reportData.totalQuestions === 0) {
+            alert('No questions answered yet. Please answer at least one question to generate a report.');
+            return;
+        }
+        
+        const reportHTML = this.generateReportHTML(reportData, includeExplanations);
+        
+        // Create a printable window
+        const printWindow = window.open('', '_blank');
+        printWindow.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>MLA Quiz Study Report</title>
+                <style>
+                    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 20px; }
+                    .report-header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #007AFF; padding-bottom: 20px; }
+                    .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0; }
+                    .stat-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+                    .weak-areas { margin: 20px 0; }
+                    .question-list { margin: 20px 0; }
+                    .incorrect-question {
+                        margin: 20px 0;
+                        padding: 15px;
+                        border: 1px solid #e2e8f0;
+                        border-radius: 8px;
+                        background: #f8fafc;
+                        page-break-inside: avoid;
+                    }
+                    .question-header {
+                        margin-bottom: 10px;
+                        color: #dc2626;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    .question-scenario {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background: #f0f9ff;
+                        border-left: 4px solid #0ea5e9;
+                        border-radius: 4px;
+                    }
+                    .scenario-text {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #0f172a;
+                    }
+                    .question-investigations {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background: #f0fdf4;
+                        border-left: 4px solid #22c55e;
+                        border-radius: 4px;
+                    }
+                    .investigations-text {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #0f172a;
+                    }
+                    .question-prompt {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background: #fefce8;
+                        border-left: 4px solid #eab308;
+                        border-radius: 4px;
+                    }
+                    .prompt-text {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #0f172a;
+                        font-weight: 500;
+                    }
+                    .question-text {
+                        margin: 10px 0;
+                        padding: 8px;
+                        background: white;
+                        border-left: 3px solid #007AFF;
+                        font-size: 14px;
+                        line-height: 1.5;
+                    }
+                    .question-options {
+                        margin: 10px 0;
+                    }
+                    .question-options ol {
+                        margin: 5px 0;
+                        padding-left: 25px;
+                    }
+                    .question-options li {
+                        margin: 5px 0;
+                        padding: 5px;
+                        line-height: 1.4;
+                    }
+                    .your-answer {
+                        background: #fee2e2;
+                        border-radius: 4px;
+                    }
+                    .correct-answer {
+                        background: #dcfce7;
+                        border-radius: 4px;
+                        font-weight: 500;
+                    }
+                    .answer-analysis {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background: #f8fafc;
+                        border-radius: 4px;
+                    }
+                    .answer-analysis p {
+                        margin: 5px 0;
+                    }
+                    .explanation-section {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background: #f0f9ff;
+                        border-left: 4px solid #0ea5e9;
+                        border-radius: 4px;
+                    }
+                    .explanation-text {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        white-space: pre-wrap;
+                    }
+                    .progress-note {
+                        background: #fef3c7;
+                        border: 1px solid #fbbf24;
+                        border-radius: 8px;
+                        padding: 15px;
+                        margin: 20px 0;
+                    }
+                    .answered-questions {
+                        margin: 30px 0;
+                    }
+                    @media print {
+                        body { margin: 0; }
+                        .incorrect-question { page-break-inside: avoid; }
+                    }
+                </style>
+            </head>
+            <body>
+                ${reportHTML}
+                <script>
+                    window.onload = function() {
+                        window.print();
+                    };
+                </script>
+            </body>
+            </html>
+        `);
+        printWindow.document.close();
+        
+        console.log('📊 Study report generated');
+    }
+
+    /**
+     * Calculate report data
+     */
+    calculateReportData() {
+        const totalQuestions = Object.keys(this.submittedAnswers).length;
+        let correctAnswers = 0;
+        
+        Object.keys(this.submittedAnswers).forEach(questionIndex => {
+            const question = this.questions[questionIndex];
+            if (question && this.submittedAnswers[questionIndex] === question.correct_answer) {
+                correctAnswers++;
+            }
+        });
+        
+        const incorrectAnswers = totalQuestions - correctAnswers;
+        const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+        
+        // Calculate total time and average
+        let totalTime = 0;
+        Object.values(this.questionTimes).forEach(time => {
+            totalTime += time;
+        });
+        const averageTime = totalQuestions > 0 ? totalTime / totalQuestions : 0;
+        
+        return {
+            quizName: this.quizName,
+            totalQuestions,
+            correctAnswers,
+            incorrectAnswers,
+            accuracy,
+            totalTime,
+            averageTime,
+            questionsAnswered: totalQuestions,
+            date: new Date().toLocaleDateString(),
+            incorrectQuestionsList: this.getIncorrectQuestions(),
+            answeredQuestionsList: this.getAnsweredQuestions(),
+            timePerQuestion: this.questionTimes
+        };
+    }
+
+    /**
+     * Get incorrect questions list
+     */
+    getIncorrectQuestions() {
+        const incorrectQuestions = [];
+        
+        Object.keys(this.submittedAnswers).forEach(questionIndex => {
+            const index = parseInt(questionIndex);
+            const question = this.questions[index];
+            const selectedAnswer = this.submittedAnswers[questionIndex];
+            
+            if (question && selectedAnswer !== question.correct_answer) {
+                incorrectQuestions.push({
+                    index: index,
+                    question: question,
+                    yourAnswer: selectedAnswer,
+                    correctAnswer: question.correct_answer
+                });
+            }
+        });
+        
+        return incorrectQuestions;
+    }
+
+    /**
+     * Get all answered questions list
+     */
+    getAnsweredQuestions() {
+        const answered = [];
+        
+        Object.keys(this.submittedAnswers).forEach(questionIndex => {
+            const index = parseInt(questionIndex);
+            const question = this.questions[index];
+            
+            if (question) {
+                answered.push({
+                    index: index,
+                    question: question,
+                    yourAnswer: this.submittedAnswers[questionIndex],
+                    correctAnswer: question.correct_answer
+                });
+            }
+        });
+        
+        return answered;
+    }
+
+    /**
+     * Generate report HTML
+     */
+    generateReportHTML(data, includeExplanations = true) {
+        const isPartialReport = data.totalQuestions < (this.questions?.length || 0);
+        const totalQuizQuestions = this.questions?.length || data.totalQuestions;
+        
+        return `
+            <div class="report-header">
+                <h1>📊 MLA Quiz Study Report</h1>
+                <h2>${data.quizName}</h2>
+                <p>Generated on ${data.date}</p>
+                ${isPartialReport ? '<p><em>⚠️ Partial Report - Quiz in progress</em></p>' : ''}
+            </div>
+            
+            ${isPartialReport ? `
+                <div class="progress-note">
+                    <h3>📈 Progress Status</h3>
+                    <p><strong>Questions Answered:</strong> ${data.totalQuestions} of ${totalQuizQuestions}</p>
+                    <p><strong>Completion:</strong> ${Math.round((data.totalQuestions / totalQuizQuestions) * 100)}%</p>
+                </div>
+            ` : ''}
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>📈 Performance</h3>
+                    <p><strong>Accuracy:</strong> ${data.accuracy}%</p>
+                    <p><strong>Correct:</strong> ${data.correctAnswers}</p>
+                    <p><strong>Incorrect:</strong> ${data.incorrectAnswers}</p>
+                    <p><strong>Questions Answered:</strong> ${data.totalQuestions}</p>
+                    ${isPartialReport ? `<p><strong>Total Quiz Questions:</strong> ${totalQuizQuestions}</p>` : ''}
+                </div>
+                
+                <div class="stat-card">
+                    <h3>⏱️ Time Analysis</h3>
+                    <p><strong>Total Time:</strong> ${this.formatTime(Math.round(data.totalTime / 1000))}</p>
+                    <p><strong>Average per Question:</strong> ${Math.round(data.averageTime / 1000)}s</p>
+                    <p><strong>Questions Timed:</strong> ${data.questionsAnswered}</p>
+                    ${isPartialReport ? '<p><em>Note: Times for answered questions only</em></p>' : ''}
+                </div>
+            </div>
+            
+            <div class="weak-areas">
+                <h3>🎯 Areas for Improvement</h3>
+                ${data.incorrectQuestionsList.length > 0 ? 
+                    data.incorrectQuestionsList.map(q => `
+                        <div class="incorrect-question">
+                            <div class="question-header">
+                                <strong>Question ${q.index + 1}:</strong>
+                            </div>
+                            ${q.question.scenario ? `
+                                <div class="question-scenario">
+                                    <strong>Scenario:</strong>
+                                    <div class="scenario-text">${this.cleanTextForPDF(q.question.scenario)}</div>
+                                </div>
+                            ` : ''}
+                            ${q.question.investigations ? `
+                                <div class="question-investigations">
+                                    <strong>Investigations:</strong>
+                                    <div class="investigations-text">${this.cleanTextForPDF(q.question.investigations)}</div>
+                                </div>
+                            ` : ''}
+                            ${q.question.prompt ? `
+                                <div class="question-prompt">
+                                    <strong>Question:</strong>
+                                    <div class="prompt-text">${this.cleanTextForPDF(q.question.prompt)}</div>
+                                </div>
+                            ` : ''}
+                            ${q.question.options ? `
+                                <div class="question-options">
+                                    <strong>Options:</strong>
+                                    <ol type="A">
+                                        ${q.question.options.map((option, idx) => `
+                                            <li class="${idx === q.yourAnswer ? 'your-answer' : ''} ${idx === q.correctAnswer ? 'correct-answer' : ''}">${this.cleanTextForPDF(option)}</li>
+                                        `).join('')}
+                                    </ol>
+                                </div>
+                            ` : ''}
+                            <div class="answer-analysis">
+                                <p><strong>Your Answer:</strong> Option ${String.fromCharCode(65 + q.yourAnswer)} - ${this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A')}</p>
+                                <p><strong>Correct Answer:</strong> Option ${String.fromCharCode(65 + q.correctAnswer)} - ${this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A')}</p>
+                            </div>
+                            ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
+                                <div class="explanation-section">
+                                    <strong>Explanation:</strong>
+                                    <div class="explanation-text">${this.cleanTextForPDF(Array.isArray(q.question.explanations) && q.question.explanations.length ? q.question.explanations.join('\n') : (q.question.explanation || ''))}</div>
+                                </div>
+                            ` : ''}
+                        </div>
+                    `).join('') : 
+                    '<p>🎉 Great job! No incorrect answers to review so far.</p>'
+                }
+                ${isPartialReport ? '<p><em>Note: Only showing answered questions. Continue the quiz for complete analysis.</em></p>' : ''}
+            </div>
+
+            <div class="answered-questions">
+                <h3>📝 All Answered Questions & Explanations</h3>
+                ${includeExplanations && data.answeredQuestionsList.length > 0 ? data.answeredQuestionsList.map(q => `
+                    <div class="incorrect-question">
+                        <div class="question-header" style="color: ${q.yourAnswer === q.correctAnswer ? '#059669' : '#dc2626'};">
+                            <strong>Question ${q.index + 1}:</strong> ${q.yourAnswer === q.correctAnswer ? '✅ Correct' : '❌ Incorrect'}
+                        </div>
+                        ${q.question.scenario ? `
+                            <div class="question-scenario">
+                                <strong>Scenario:</strong>
+                                <div class="scenario-text">${this.cleanTextForPDF(q.question.scenario)}</div>
+                            </div>
+                        ` : ''}
+                        ${q.question.investigations ? `
+                            <div class="question-investigations">
+                                <strong>Investigations:</strong>
+                                <div class="investigations-text">${this.cleanTextForPDF(q.question.investigations)}</div>
+                            </div>
+                        ` : ''}
+                        ${q.question.prompt ? `
+                            <div class="question-prompt">
+                                <strong>Question:</strong>
+                                <div class="prompt-text">${this.cleanTextForPDF(q.question.prompt)}</div>
+                            </div>
+                        ` : ''}
+                        ${q.question.options ? `
+                            <div class="question-options">
+                                <strong>Options:</strong>
+                                <ol type="A">
+                                    ${q.question.options.map((option, idx) => `
+                                        <li class="${idx === q.yourAnswer ? 'your-answer' : ''} ${idx === q.correctAnswer ? 'correct-answer' : ''}">${this.cleanTextForPDF(option)}</li>
+                                    `).join('')}
+                                </ol>
+                            </div>
+                        ` : ''}
+                        <div class="answer-analysis">
+                            <p><strong>Your Answer:</strong> ${q.yourAnswer != null ? 'Option ' + String.fromCharCode(65 + q.yourAnswer) + ' - ' + this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A') : 'N/A'}</p>
+                            <p><strong>Correct Answer:</strong> ${q.correctAnswer != null ? 'Option ' + String.fromCharCode(65 + q.correctAnswer) + ' - ' + this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A') : 'N/A'}</p>
+                        </div>
+                        ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
+                            <div class="explanation-section">
+                                <strong>Explanation:</strong>
+                                <div class="explanation-text">${this.cleanTextForPDF(Array.isArray(q.question.explanations) && q.question.explanations.length ? q.question.explanations.join('\n') : (q.question.explanation || ''))}</div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('') : '<p>No answered questions available.</p>'}
+            </div>
+        `;
+    }
+
+    /**
+     * Clean text for PDF output
+     */
+    cleanTextForPDF(text) {
+        if (!text) return 'N/A';
+        
+        let cleanText = text
+            .replace(/<strong>(.*?)<\/strong>/gi, '**$1**')
+            .replace(/<em>(.*?)<\/em>/gi, '*$1*')
+            .replace(/<[^>]*>/g, '')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .trim();
+            
+        if (cleanText.length > 800) {
+            cleanText = cleanText.substring(0, 800) + '...';
+        }
+        
+        return cleanText;
+    }
+
+    /**
+     * Format time helper
+     */
+    formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
     }
 }
 
