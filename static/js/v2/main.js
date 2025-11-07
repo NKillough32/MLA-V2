@@ -2725,18 +2725,26 @@ class MLAQuizApp {
             optionsCount: question?.options?.length
         });
         
+        // Update existing header elements
+        const questionTitle = document.getElementById('questionTitle');
+        const questionProgress = document.getElementById('questionProgress');
+        
+        if (questionTitle) {
+            questionTitle.textContent = `Question ${index + 1}`;
+        }
+        
+        if (questionProgress) {
+            questionProgress.textContent = `${index + 1} of ${total}`;
+        }
+        
         const questionContainer = document.getElementById('questionContainer');
         if (!questionContainer) {
             console.error('❌ Question container not found in DOM');
             return;
         }
 
-        // Build question HTML
-        let html = `
-            <div class="question-header">
-                <div class="question-number">Question ${index + 1} of ${total}</div>
-            </div>
-        `;
+        // Build question content (no header since we update the existing one)
+        let html = '';
 
         // Add image if present
         if (question.image) {

@@ -10,10 +10,10 @@ const RUNTIME_CACHE = 'mla-quiz-runtime-v1';
 // Files to cache immediately
 const STATIC_FILES = [
     '/',
-    '/static/js/v1/app.js',
     '/static/manifest.json'
     // Icons are inline SVG data URIs, no need to cache external files
     // V2 modules load dynamically, don't pre-cache
+    // V1 app.js removed as we're using V2 system
 ];
 
 // API endpoints to cache
