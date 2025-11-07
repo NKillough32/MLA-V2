@@ -1,0 +1,3211 @@
+﻿/**
+ * Main Application Entry Point
+ * Initializes all managers and wires up the modular architecture
+ */
+
+// Foundation Modules
+import { eventBus } from './modules/EventBus.js';
+import { storage, storageManager } from './modules/StorageManager.js';
+import { orientationManager } from './modules/OrientationManager.js';
+import { analytics } from './modules/AnalyticsManager.js';
+import { EVENTS, STORAGE_KEYS, UI_CONFIG } from './modules/Constants.js';
+import UIHelpers from './modules/UIHelpers.js';
+
+// Feature Modules
+import { anatomyManager } from './modules/AnatomyManager.js';
+import { quizManager } from './modules/QuizManager.js';
+import { uiManager } from './modules/UIManager.js';
+import { calculatorManager } from './modules/CalculatorManager.js';
+
+// Reference Modules (require external database files)
+import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
+import { LabValuesManager } from './modules/LabValuesManager.js';
+import { GuidelinesManager } from './modules/GuidelinesManager.js';
+import { mnemonicsManager } from './modules/MnemonicsManager.js';
+import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
+import { laddersManager } from './modules/LaddersManager.js';
+
+// Clinical Feature Modules (bridge to V1)
+import { differentialDxManager } from './modules/DifferentialDxManager.js';
+import { triadsManager } from './modules/TriadsManager.js';
+import { examinationManager } from './modules/ExaminationManager.js';
+import { emergencyProtocolsManager } from './modules/EmergencyProtocolsManager.js';
+
+// V2 Integration Layer
+import { v2Integration } from './modules/V2Integration.js';
+
+/**
+ * Main Application Class
+ */
+class MLAQuizApp {
+    constructor() {
+        this.initialized = false;
+        this.drugManager = new DrugReferenceManager();
+        this.labManager = new LabValuesManager();
+        this.guidelinesManager = new GuidelinesManager();
+        this.mnemonicsManager = mnemonicsManager;
+        this.interpretationToolsManager = interpretationToolsManager;
+        this.laddersManager = laddersManager;
+        this.differentialDxManager = differentialDxManager;
+        this.triadsManager = triadsManager;
+        this.examinationManager = examinationManager;
+        this.emergencyProtocolsManager = emergencyProtocolsManager;
+        this.v2Integration = v2Integration;
+        this.setupEventListeners();
+    }
+
+    /**
+     * Initialize the application
+     */
+    async initialize() {
+        if (this.initialized) {
+            console.warn('App already initialized');
+            return;
+        }
+
+        console.log('🚀 Initializing MLA Quiz PWA...');
+
+        try {
+            // Show loading
+            uiManager.showLoadingOverlay('Initializing app...');
+
+            // Initialize managers in order
+            await this.initializeManagers();
+
+            // Wire up cross-module communication
+            this.setupCrossModuleCommunication();
+
+            // Initialize UI
+            await this.initializeUI();
+
+            // Load any saved state
+            await this.restoreState();
+
+            this.initialized = true;
+            console.log('✅ MLA Quiz PWA initialized successfully');
+
+            // Hide loading
+            uiManager.hideLoadingOverlay();
+
+            // Emit ready event
+            eventBus.emit(EVENTS.APP_READY);
+
+        } catch (error) {
+            console.error('❌ Failed to initialize app:', error);
+            uiManager.hideLoadingOverlay();
+            uiManager.showToast('Failed to initialize app. Please refresh.', 'error');
+        }
+    }
+
+    /**
+     * Initialize all managers
+     */
+    async initializeManagers() {
+        console.log('📦 Initializing managers...');
+
+        // Initialize storage first (needed by others)
+        await storageManager.initIndexedDB();
+
+        // Initialize UI manager (theme, settings)
+        uiManager.initialize();
+
+        // Initialize orientation manager
+        orientationManager.initialize();
+
+        // Initialize anatomy manager
+        anatomyManager.initialize();
+
+        // Initialize quiz manager
+        quizManager.initialize();
+
+        // Initialize calculator manager (auto-registers all calculators)
+        calculatorManager.initialize();
+
+        // Initialize drug reference manager (requires drugDatabase.js to be loaded)
+        await this.drugManager.initialize();
+
+        // Initialize lab values manager (requires labDatabase.js to be loaded)
+        await this.labManager.initialize();
+
+        // Initialize guidelines manager (requires guidelinesDatabase.js to be loaded)
+        await this.guidelinesManager.initialize();
+
+        // Initialize mnemonics manager
+        await this.mnemonicsManager.initialize();
+
+        // Initialize interpretation tools manager
+        await this.interpretationToolsManager.initialize();
+
+        // Initialize ladders manager
+        await this.laddersManager.initialize();
+
+        console.log('✅ All managers initialized');
+        console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
+        console.log(`   - Drugs: ${this.drugManager.getDrugCount()}`);
+        console.log(`   - Lab panels: ${this.labManager.getPanelCount()}, Tests: ${this.labManager.getTestCount()}`);
+        console.log(`   - Guidelines: ${this.guidelinesManager.getGuidelinesCount()}`);
+        console.log(`   - Mnemonics: ${this.mnemonicsManager.getStatistics().totalMnemonics}`);
+        console.log(`   - Interpretation Tools: ${this.interpretationToolsManager.getStatistics().totalTools}`);
+        console.log(`   - Treatment Ladders: ${this.laddersManager.getStatistics().totalLadders}`);
+        
+        // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
+        // This will be called from index.html after V1's app.js loads
+        console.log('✅ V2 Integration ready (awaiting V1 app instance)');
+    }
+
+    /**
+     * Setup cross-module communication
+     */
+    setupCrossModuleCommunication() {
+        console.log('🔗 Setting up cross-module communication...');
+
+        // Tool navigation button clicks (event delegation on medical tools panel)
+        const medicalToolsPanel = document.getElementById('medical-tools-panel');
+        if (medicalToolsPanel) {
+            medicalToolsPanel.addEventListener('click', (e) => {
+                const toolBtn = e.target.closest('.tool-nav-btn');
+                if (toolBtn) {
+                    const toolType = toolBtn.getAttribute('data-tool');
+                    if (toolType) {
+                        console.log(`🔧 Tool navigation button clicked: ${toolType}`);
+                        this.switchTool(toolType);
+                        
+                        // Update active state
+                        medicalToolsPanel.querySelectorAll('.tool-nav-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                        toolBtn.classList.add('active');
+                    }
+                }
+            });
+            console.log('✅ Tool navigation event delegation setup');
+        }
+
+        // Medical tools toggle button
+        const medicalToolsToggle = document.getElementById('medical-tools-toggle');
+        if (medicalToolsToggle) {
+            medicalToolsToggle.addEventListener('click', () => {
+                console.log('🔧 Medical tools toggle clicked');
+                if (medicalToolsPanel) {
+                    const isOpen = medicalToolsPanel.classList.contains('open');
+                    
+                    if (isOpen) {
+                        medicalToolsPanel.classList.remove('open');
+                    } else {
+                        medicalToolsPanel.classList.add('open');
+                        
+                        // Auto-switch to the currently active tool or default to calculators
+                        const activeBtn = medicalToolsPanel.querySelector('.tool-nav-btn.active');
+                        if (activeBtn) {
+                            const toolType = activeBtn.getAttribute('data-tool');
+                            this.switchTool(toolType);
+                        } else {
+                            // Default to calculators
+                            this.switchTool('calculators');
+                            const calcBtn = medicalToolsPanel.querySelector('[data-tool="calculators"]');
+                            if (calcBtn) calcBtn.classList.add('active');
+                        }
+                    }
+                }
+            });
+            console.log('✅ Medical tools toggle button setup');
+        }
+
+        // Tools close button
+        const toolsCloseBtn = document.getElementById('tools-close-btn');
+        if (toolsCloseBtn) {
+            toolsCloseBtn.addEventListener('click', () => {
+                console.log('🔧 Tools close button clicked');
+                if (medicalToolsPanel) {
+                    medicalToolsPanel.classList.remove('open');
+                }
+            });
+            console.log('✅ Tools close button setup');
+        }
+
+        // Back button handler
+        const backBtn = document.getElementById('backBtn');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                console.log('🔧 Back button clicked');
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    // Fallback to home screen
+                    const quizSelection = document.getElementById('quizSelection');
+                    if (quizSelection) {
+                        this.showScreen('quizSelection');
+                    }
+                }
+            });
+            console.log('✅ Back button setup');
+        }
+
+        // Upload button handler
+        const uploadBtn = document.getElementById('uploadBtn');
+        const quizFileInput = document.getElementById('quizFileInput');
+        if (uploadBtn && quizFileInput) {
+            uploadBtn.addEventListener('click', () => {
+                console.log('🔧 Upload button clicked');
+                quizFileInput.click();
+            });
+            
+            quizFileInput.addEventListener('change', async (e) => {
+                console.log('🔧 Quiz files selected');
+                if (e.target.files && e.target.files.length > 0) {
+                    // Pass files to quiz manager for processing
+                    await quizManager.handleFileUpload(e.target.files);
+                    // Reload quiz list
+                    this.loadQuizList();
+                }
+            });
+            console.log('✅ Upload controls setup');
+        }
+
+        // Quiz selection screen - quiz length buttons
+        const quizLengthBtns = document.querySelectorAll('.quiz-length-btn');
+        quizLengthBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all
+                quizLengthBtns.forEach(b => b.classList.remove('active'));
+                // Add to clicked
+                btn.classList.add('active');
+                
+                const length = btn.getAttribute('data-length');
+                quizManager.setQuizLength(length === 'all' ? 'all' : parseInt(length));
+                console.log(`📝 Quiz length set to: ${length}`);
+            });
+        });
+
+        // Quiz list item clicks (event delegation)
+        const quizList = document.getElementById('quiz-list');
+        if (quizList) {
+            quizList.addEventListener('click', async (e) => {
+                const quizItem = e.target.closest('.quiz-item');
+                if (quizItem) {
+                    const quizName = quizItem.getAttribute('data-quiz-name');
+                    const isUploaded = quizItem.getAttribute('data-is-uploaded') === 'true';
+                    
+                    console.log(`📚 Loading quiz: ${quizName} (uploaded: ${isUploaded})`);
+                    uiManager.showToast(`Loading ${quizName}...`, 'info');
+                    
+                    const success = await quizManager.loadQuiz(quizName, isUploaded);
+                    if (success) {
+                        await quizManager.startQuiz();
+                        this.showScreen('quizScreen');
+                    } else {
+                        uiManager.showToast('Failed to load quiz', 'error');
+                    }
+                }
+            });
+            console.log('✅ Quiz list event delegation setup');
+        }
+
+        // Quiz screen - answer submission
+        const submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => {
+                console.log('✅ Submit button clicked');
+                this.handleSubmitAnswer();
+            });
+        }
+
+        // Quiz screen - navigation buttons
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtnTop = document.getElementById('nextBtnTop');
+        const prevBtnTop = document.getElementById('prevBtnTop');
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                console.log('➡️ Next button clicked');
+                quizManager.nextQuestion();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                console.log('⬅️ Previous button clicked');
+                quizManager.previousQuestion();
+            });
+        }
+
+        if (nextBtnTop) {
+            nextBtnTop.addEventListener('click', () => {
+                console.log('➡️ Next (top) button clicked');
+                quizManager.nextQuestion();
+            });
+        }
+
+        if (prevBtnTop) {
+            prevBtnTop.addEventListener('click', () => {
+                console.log('⬅️ Previous (top) button clicked');
+                quizManager.previousQuestion();
+            });
+        }
+
+        // Flag button
+        const flagBtn = document.getElementById('flagBtn');
+        if (flagBtn) {
+            flagBtn.addEventListener('click', () => {
+                console.log('🚩 Flag button clicked');
+                quizManager.toggleFlag();
+            });
+        }
+
+        // Finish quiz button
+        const finishBtn = document.getElementById('finishBtn');
+        if (finishBtn) {
+            finishBtn.addEventListener('click', async () => {
+                console.log('🏁 Finish quiz clicked');
+                const confirm = window.confirm('Are you sure you want to finish the quiz?');
+                if (confirm) {
+                    await quizManager.finishQuiz();
+                }
+            });
+        }
+
+        // Results screen - retry button
+        const retryBtn = document.getElementById('retryBtn');
+        if (retryBtn) {
+            retryBtn.addEventListener('click', () => {
+                console.log('🔄 Retry button clicked');
+                quizManager.retryQuiz();
+            });
+        }
+
+        // Home button
+        const homeBtn = document.getElementById('homeBtn');
+        if (homeBtn) {
+            homeBtn.addEventListener('click', () => {
+                console.log('🏠 Home button clicked');
+                this.showScreen('quizSelection');
+            });
+        }
+
+        // Calculator button clicks (event delegation on calculator panel)
+        const calculatorPanel = document.getElementById('calculator-panel');
+        if (calculatorPanel) {
+            calculatorPanel.addEventListener('click', (e) => {
+                const calcBtn = e.target.closest('.calculator-btn');
+                if (calcBtn) {
+                    const calcId = calcBtn.getAttribute('data-calc');
+                    if (calcId) {
+                        console.log(`🧮 Calculator button clicked: ${calcId}`);
+                        const calculator = calculatorManager.getCalculator(calcId);
+                        if (calculator) {
+                            calculatorManager.loadCalculator(calcId);
+                        } else {
+                            console.warn(`⚠️ Calculator not found: ${calcId}. Available:`, 
+                                calculatorManager.getAllCalculators().map(c => c.id).join(', '));
+                            uiManager.showToast(`Calculator "${calcId}" is not yet implemented in V2`, 'info');
+                        }
+                    }
+                }
+            });
+            console.log('✅ Calculator panel event delegation setup');
+        }
+
+        // Quiz completion → Show results in UI
+        eventBus.on(EVENTS.QUIZ_COMPLETED, (data) => {
+            const score = data.score;
+            const total = data.totalQuestions;
+            const percentage = Math.round((score / total) * 100);
+            
+            uiManager.showToast(
+                `Quiz completed! Score: ${score}/${total} (${percentage}%)`,
+                'success'
+            );
+            
+            analytics.vibrateSuccess();
+            
+            // Show results screen
+            this.showScreen('resultsScreen');
+            this.renderResults(data);
+        });
+
+        // Quiz started → Update UI
+        eventBus.on(EVENTS.QUIZ_STARTED, (data) => {
+            console.log('📝 Quiz started:', data.quizName);
+            this.showScreen('quizScreen');
+            document.getElementById('navTitle').textContent = data.quizName || 'Quiz';
+        });
+
+        // Question rendered → Update UI
+        eventBus.on('quiz:renderQuestion', (data) => {
+            console.log('📄 Rendering question:', data.index + 1);
+            this.renderQuestion(data);
+        });
+
+        // Quiz progress updated → Update progress bar
+        eventBus.on('quiz:progressUpdated', (data) => {
+            this.updateProgressBar(data);
+        });
+
+        // Quiz answer → Feedback
+        eventBus.on(EVENTS.QUESTION_ANSWERED, (data) => {
+            if (data.isCorrect) {
+                analytics.vibrateSuccess();
+            } else {
+                analytics.vibrateError();
+            }
+            // Re-render question to show feedback
+            quizManager.renderQuestion();
+        });
+
+        // Anatomy structure clicked → Show info
+        eventBus.on(EVENTS.ANATOMY_STRUCTURE_CLICKED, (data) => {
+            analytics.vibrateClick();
+        });
+
+        // Calculator opened → Track
+        eventBus.on(EVENTS.CALCULATOR_OPENED, (data) => {
+            console.log(`📊 Calculator opened: ${data.name}`);
+            analytics.vibrateClick();
+        });
+
+        // Theme changed → Update everywhere
+        eventBus.on(EVENTS.THEME_CHANGED, (data) => {
+            console.log(`🎨 Theme changed to: ${data.darkMode ? 'dark' : 'light'}`);
+        });
+
+        // UI tool switching (for calculators, etc.)
+        eventBus.on(EVENTS.UI_SWITCH_TOOL, (data) => {
+            console.log(`🔧 Switching to tool: ${data.tool}`);
+            this.switchTool(data.tool);
+        });
+
+        // Error handling
+        eventBus.on(EVENTS.ERROR_OCCURRED, (data) => {
+            console.error('Error occurred:', data);
+            uiManager.showToast(`Error: ${data.error?.message || 'Unknown error'}`, 'error');
+        });
+
+        console.log('✅ Cross-module communication setup complete');
+    }
+
+    /**
+     * Setup global event listeners
+     */
+    setupEventListeners() {
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/static/sw.js')
+                    .then(registration => {
+                        console.log('✅ Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.warn('⚠️ Service Worker registration failed:', error);
+                    });
+            });
+        }
+
+        // Online/Offline status
+        window.addEventListener('online', () => {
+            console.log('🌐 App is online');
+            uiManager.showToast('Connection restored', 'success');
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('📡 App is offline');
+            uiManager.showToast('You are offline. Some features may be limited.', 'warning');
+        });
+
+        // Visibility change (tab focus)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                console.log('👋 App hidden');
+                // Save state when user leaves
+                this.saveState();
+            } else {
+                console.log('👀 App visible');
+            }
+        });
+
+        // Before unload (save state)
+        window.addEventListener('beforeunload', () => {
+            this.saveState();
+        });
+    }
+
+    /**
+     * Initialize UI
+     */
+    async initializeUI() {
+        console.log('🎨 Initializing UI...');
+
+        // Setup navigation
+        this.setupNavigation();
+
+        // Setup global keyboard shortcuts
+        this.setupKeyboardShortcuts();
+
+        console.log('✅ UI initialized');
+    }
+
+    /**
+     * Setup navigation
+     */
+    setupNavigation() {
+        // Handle browser back button
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.view) {
+                uiManager.showView(event.state.view, false);
+            }
+        });
+    }
+
+    /**
+     * Setup keyboard shortcuts
+     */
+    setupKeyboardShortcuts() {
+        document.addEventListener('keydown', (e) => {
+            // Ctrl/Cmd + D: Toggle dark mode
+            if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+                e.preventDefault();
+                uiManager.toggleDarkMode();
+            }
+
+            // Ctrl/Cmd + F: Focus search (if search exists)
+            if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+                const searchInput = document.querySelector('#search-input, .search-input');
+                if (searchInput) {
+                    e.preventDefault();
+                    searchInput.focus();
+                }
+            }
+
+            // Escape: Close modals
+            if (e.key === 'Escape') {
+                uiManager.hideModal();
+            }
+        });
+    }
+
+    /**
+     * Save application state
+     */
+    saveState() {
+        const state = {
+            timestamp: Date.now(),
+            theme: uiManager.isDarkMode(),
+            fontSize: uiManager.currentFontSize
+        };
+
+        storage.setItem(STORAGE_KEYS.APP_STATE, state);
+        console.log('💾 App state saved');
+    }
+
+    /**
+     * Restore application state
+     */
+    async restoreState() {
+        console.log('🔄 Restoring app state...');
+
+        const state = storage.getItem(STORAGE_KEYS.APP_STATE);
+        if (state) {
+            console.log('✅ Previous state found, restoring...');
+            // State already restored by individual managers
+        }
+
+        // Load quiz list (shows uploaded quizzes)
+        await this.loadQuizList();
+
+        // Check for saved quiz progress
+        const quizProgress = await quizManager.loadProgress();
+        if (quizProgress) {
+            const resume = await uiManager.confirm(
+                'You have an unfinished quiz. Would you like to resume?'
+            );
+            
+            if (resume) {
+                // Emit event to show quiz view
+                eventBus.emit(EVENTS.QUIZ_RESUME_REQUESTED, quizProgress);
+            }
+        }
+
+        console.log('✅ State restoration complete');
+    }
+
+    /**
+     * Switch between tools/panels (V1 compatibility method)
+     */
+    switchTool(toolType) {
+        const toolPanels = document.querySelectorAll('.tool-panel');
+        const navButtons = document.querySelectorAll('.tool-nav-btn');
+        
+        // Remove active class from all nav buttons
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked nav button
+        const activeNavBtn = document.querySelector(`[data-tool="${toolType}"]`);
+        if (activeNavBtn) {
+            activeNavBtn.classList.add('active');
+        }
+        
+        // Hide all panels
+        toolPanels.forEach(panel => {
+            panel.classList.remove('active');
+        });
+        
+        // Map navigation data-tool values to actual panel IDs
+        const panelIdMap = {
+            'drug-reference': 'drug-panel',
+            'calculators': 'calculator-panel',
+            'calculator-detail': 'calculator-detail',
+            'lab-values': 'lab-panel',
+            'guidelines': 'guidelines-panel',
+            'differential-dx': 'differential-panel',
+            'triads': 'triads-panel',
+            'examination': 'examination-panel',
+            'emergency-protocols': 'emergency-protocols-panel',
+            'interpretation': 'interpretation-panel',
+            'anatomy': 'anatomy-panel',
+            'ladders': 'ladders-panel',
+            'mnemonics': 'mnemonics-panel'
+        };
+        
+        // Show selected panel
+        const panelId = panelIdMap[toolType] || `${toolType}-panel`;
+        const targetPanel = document.getElementById(panelId);
+        if (targetPanel) {
+            targetPanel.classList.add('active');
+            console.log(`✅ Switched to panel: ${panelId}`);
+            
+            // Load content for the selected tool using V2 managers
+            this.loadToolContent(toolType, targetPanel);
+        } else {
+            console.warn(`⚠️ Panel not found: ${panelId}`);
+        }
+    }
+
+    /**
+     * Load content for a specific tool using V2 managers
+     */
+    loadToolContent(toolType, panel) {
+        switch(toolType) {
+            case 'drug-reference':
+                this.loadDrugReferenceContent(panel);
+                break;
+            case 'calculators':
+                this.loadCalculatorsContent(panel);
+                break;
+            case 'lab-values':
+                this.loadLabValuesContent(panel);
+                break;
+            case 'guidelines':
+                this.loadGuidelinesContent(panel);
+                break;
+            case 'mnemonics':
+                this.loadMnemonicsContent(panel);
+                break;
+            case 'differential-dx':
+                this.loadDifferentialDxContent(panel);
+                break;
+            case 'triads':
+                this.loadTriadsContent(panel);
+                break;
+            case 'examination':
+                this.loadExaminationContent(panel);
+                break;
+            case 'emergency-protocols':
+                this.loadEmergencyProtocolsContent(panel);
+                break;
+            case 'interpretation':
+                this.loadInterpretationToolsContent(panel);
+                break;
+            case 'anatomy':
+                anatomyManager.initialize();
+                break;
+            case 'ladders':
+                this.loadLaddersContent(panel);
+                break;
+        }
+    }
+
+    /**
+     * Load drug reference content
+     */
+    loadDrugReferenceContent(panel) {
+        const container = panel.querySelector('#drug-reference-container') || panel;
+        const categories = this.drugManager.getCategories();
+        
+        // Check if Web Speech API is supported
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const voiceSupported = !!SpeechRecognition;
+        
+        let html = `
+            <div class="search-container" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <input type="text" id="drug-search-v2" placeholder="🔍 Search medications..." class="tool-search" style="flex: 1;">
+                <button id="drug-search-btn-v2" class="btn-primary">Search</button>
+                ${voiceSupported ? `
+                    <button id="drug-voice-btn-v2" class="btn-voice" title="Voice Search">
+                        🎤 Voice
+                    </button>
+                ` : ''}
+            </div>
+            <div id="drug-voice-status-v2" style="display: none; padding: 10px; margin-bottom: 15px; background: var(--card-bg); border-left: 3px solid var(--accent); border-radius: 8px; font-size: 0.95em;">
+                🎤 Listening... Speak the drug name clearly.
+            </div>
+            <div class="drug-categories" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                ${categories.map(cat => `
+                    <button class="category-btn ${cat.id === 'alphabetical' ? 'active' : ''}" 
+                            data-category="${cat.id}"
+                            style="padding: 8px 16px; border: 1px solid var(--border); background: var(--card-bg); border-radius: 20px; cursor: pointer; transition: all 0.2s; font-size: 0.9em;">
+                        ${cat.icon} ${cat.name}
+                    </button>
+                `).join('')}
+            </div>
+            <div id="drug-list-v2"></div>
+        `;
+        
+        container.innerHTML = html;
+        
+        // Set up event listeners
+        const searchInput = container.querySelector('#drug-search-v2');
+        const searchBtn = container.querySelector('#drug-search-btn-v2');
+        const voiceBtn = container.querySelector('#drug-voice-btn-v2');
+        const voiceStatus = container.querySelector('#drug-voice-status-v2');
+        const drugListContainer = container.querySelector('#drug-list-v2');
+        
+        // Search functionality with TTS buttons
+        const handleSearch = () => {
+            const query = searchInput.value;
+            if (query.length < 2) {
+                this.showDrugCategory('alphabetical', container);
+                return;
+            }
+            
+            const results = this.drugManager.searchDrugs(query);
+            if (results.length === 0) {
+                drugListContainer.innerHTML = '<div class="no-results" style="text-align: center; padding: 40px; color: var(--text-secondary);">No medications found</div>';
+                return;
+            }
+            
+            drugListContainer.innerHTML = results.map(drug => `
+                <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.showDrugDetail('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
+                            <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
+                        </div>
+                        <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
+                            🔊
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        };
+        
+        searchInput.addEventListener('input', handleSearch);
+        searchBtn.addEventListener('click', handleSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleSearch();
+        });
+        
+        // Voice search
+        if (voiceBtn) {
+            voiceBtn.addEventListener('click', () => {
+                if (voiceBtn.classList.contains('listening')) {
+                    this.drugManager.stopVoiceSearch();
+                    voiceBtn.classList.remove('listening');
+                    voiceBtn.textContent = '🎤 Voice';
+                    voiceStatus.style.display = 'none';
+                } else {
+                    this.drugManager.startVoiceSearch();
+                }
+            });
+            
+            // Listen for voice events
+            this.eventBus.on('DRUG_VOICE_STARTED', () => {
+                voiceBtn.classList.add('listening');
+                voiceBtn.textContent = '⏹️ Stop';
+                voiceBtn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
+                voiceStatus.style.display = 'block';
+            });
+            
+            this.eventBus.on('DRUG_VOICE_RESULT', ({ transcript }) => {
+                searchInput.value = transcript;
+                voiceBtn.classList.remove('listening');
+                voiceBtn.textContent = '🎤 Voice';
+                voiceBtn.style.background = '';
+                voiceStatus.style.display = 'none';
+                handleSearch();
+            });
+            
+            this.eventBus.on('DRUG_VOICE_ERROR', ({ error }) => {
+                voiceBtn.classList.remove('listening');
+                voiceBtn.textContent = '🎤 Voice';
+                voiceBtn.style.background = '';
+                voiceStatus.style.display = 'none';
+                voiceStatus.innerHTML = `⚠️ Voice search error: ${error}`;
+                voiceStatus.style.borderColor = '#ef4444';
+                setTimeout(() => {
+                    voiceStatus.style.display = 'none';
+                    voiceStatus.style.borderColor = 'var(--accent)';
+                }, 3000);
+            });
+            
+            this.eventBus.on('DRUG_VOICE_ENDED', () => {
+                voiceBtn.classList.remove('listening');
+                voiceBtn.textContent = '🎤 Voice';
+                voiceBtn.style.background = '';
+                voiceStatus.style.display = 'none';
+            });
+        }
+        
+        // Category buttons
+        container.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                this.showDrugCategory(category, container);
+            });
+        });
+        
+        // Load initial category (alphabetical)
+        this.showDrugCategory('alphabetical', container);
+        
+        console.log('🏥 Drug reference content loaded with voice search');
+    }
+    
+    showDrugCategory(category, container) {
+        // Update active button
+        container.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        const activeBtn = container.querySelector(`[data-category="${category}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+        
+        const drugs = this.drugManager.getDrugsByCategory(category);
+        const drugListContainer = container.querySelector('#drug-list-v2');
+        
+        drugListContainer.innerHTML = drugs.map(drug => `
+            <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.showDrugDetail('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
+                        <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
+                    </div>
+                    <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
+                        🔊
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+    
+    showDrugDetail(drugKey) {
+        const drug = this.drugManager.getDrug(drugKey);
+        if (!drug) {
+            console.error('Drug not found:', drugKey);
+            return;
+        }
+        
+        const panel = document.querySelector('#drug-reference-container') || 
+                     document.querySelector('[data-panel="drug-reference"]');
+        if (!panel) return;
+        
+        panel.innerHTML = `
+            <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(this.closest('[data-panel]'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
+                ← Back to Drug List
+            </button>
+            <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border);">
+                    <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1;">${drug.name}</h3>
+                    <button class="speak-name-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}')" style="padding: 10px 16px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                        🔊 Hear pronunciation
+                    </button>
+                </div>
+                <div class="drug-info">
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">🏷️ Classification</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.class}</p>
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">⚙️ Mechanism of Action</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.mechanism}</p>
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">💊 Dosing & Administration</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.dosing}</p>
+                        ${drug.maxDose ? `<p style="margin: 10px 0 0 0; color: var(--text-primary); line-height: 1.6;"><strong>Maximum Dose:</strong> ${drug.maxDose}</p>` : ''}
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #ef4444;">
+                        <h4 style="margin: 0 0 10px 0; color: #ef4444; font-size: 1.1em;">⚠️ Contraindications</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.contraindications}</p>
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #f59e0b;">
+                        <h4 style="margin: 0 0 10px 0; color: #f59e0b; font-size: 1.1em;">🔄 Drug Interactions</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.interactions}</p>
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">📊 Monitoring Parameters</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.monitoring}</p>
+                    </div>
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #8b5cf6;">
+                        <h4 style="margin: 0 0 10px 0; color: #8b5cf6; font-size: 1.1em;">🤰 Pregnancy Safety</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.pregnancy}</p>
+                    </div>
+                    ${drug.sideEffects ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #ef4444;">
+                        <h4 style="margin: 0 0 10px 0; color: #ef4444; font-size: 1.1em;">🚨 Side Effects</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.sideEffects}</p>
+                    </div>` : ''}
+                    ${drug.pharmacokinetics ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">⏱️ Pharmacokinetics</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.pharmacokinetics}</p>
+                    </div>` : ''}
+                    ${drug.clinicalPearls ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #10b981;">
+                        <h4 style="margin: 0 0 10px 0; color: #10b981; font-size: 1.1em;">💎 Clinical Pearls</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.clinicalPearls}</p>
+                    </div>` : ''}
+                    ${drug.coverage ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">🦠 Antimicrobial Coverage</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.coverage}</p>
+                    </div>` : ''}
+                    ${drug.targets ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">🎯 Treatment Targets</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.targets}</p>
+                    </div>` : ''}
+                    ${drug.efficacy ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">📈 Clinical Efficacy</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.efficacy}</p>
+                    </div>` : ''}
+                    ${drug.indications ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">🎯 Indications</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.indications}</p>
+                    </div>` : ''}
+                </div>
+            </div>
+        `;
+        
+        // Scroll to top
+        panel.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+    
+    speakDrugName(drugName) {
+        this.drugManager.speakDrugName(drugName);
+    }
+
+    /**
+     * Load calculators list
+     */
+    loadCalculatorsContent(panel) {
+        const calculators = calculatorManager.getAllCalculators();
+        // Calculators should already be rendered in the HTML panel
+        console.log(`🧮 Calculators content loaded: ${calculators.length} calculators available`);
+    }
+
+    /**
+     * Load lab values content
+     */
+    loadLabValuesContent(panel) {
+        const container = panel.querySelector('#lab-values-container') || panel;
+        
+        // Access lab panels directly from the manager's data
+        const labData = this.labManager.labDatabase || {};
+        const panels = Object.keys(labData);
+        
+        if (panels.length === 0) {
+            container.innerHTML = '<div class="no-content">Lab values database not loaded</div>';
+            return;
+        }
+        
+        // Create modern lab interface with search
+        let html = `
+            <div class="search-container">
+                <input type="text" id="lab-search" placeholder="Search lab tests..." class="tool-search">
+                <button id="lab-search-btn">🔍</button>
+            </div>
+            <div id="lab-panels" class="lab-grid">
+        `;
+        
+        panels.forEach(panelKey => {
+            const panel = labData[panelKey];
+            const testCount = Object.keys(panel.values || {}).length;
+            
+            html += `
+                <button class="lab-value-btn" onclick="window.quizApp.showLabPanel('${panelKey}'); event.stopPropagation();">
+                    <div class="lab-name">${panel.name || panelKey}</div>
+                    <div class="lab-count">${testCount} test${testCount !== 1 ? 's' : ''}</div>
+                </button>
+            `;
+        });
+        
+        html += '</div>';
+        container.innerHTML = html;
+        
+        // Add search functionality
+        const searchInput = document.getElementById('lab-search');
+        const searchBtn = document.getElementById('lab-search-btn');
+        if (searchInput && searchBtn) {
+            const performSearch = () => {
+                const query = searchInput.value.toLowerCase();
+                if (!query) {
+                    const panelsContainer = document.getElementById('lab-panels');
+                    if (panelsContainer) {
+                        panelsContainer.innerHTML = panels.map(panelKey => {
+                            const panel = labData[panelKey];
+                            const testCount = Object.keys(panel.values || {}).length;
+                            return `
+                                <button class="lab-value-btn" onclick="window.quizApp.showLabPanel('${panelKey}'); event.stopPropagation();">
+                                    <div class="lab-name">${panel.name || panelKey}</div>
+                                    <div class="lab-count">${testCount} test${testCount !== 1 ? 's' : ''}</div>
+                                </button>
+                            `;
+                        }).join('');
+                    }
+                    return;
+                }
+                
+                const results = [];
+                panels.forEach(panelKey => {
+                    const panel = labData[panelKey];
+                    const panelName = (panel.name || panelKey).toLowerCase();
+                    
+                    if (panelName.includes(query)) {
+                        results.push({
+                            type: 'panel',
+                            key: panelKey,
+                            name: panel.name || panelKey,
+                            count: Object.keys(panel.values || {}).length
+                        });
+                    }
+                    
+                    Object.entries(panel.values || {}).forEach(([testKey, test]) => {
+                        const testName = (test.name || testKey).toLowerCase();
+                        if (testName.includes(query)) {
+                            results.push({
+                                type: 'test',
+                                panel: panelKey,
+                                key: testKey,
+                                name: test.name || testKey,
+                                range: test.range || test.normalRange
+                            });
+                        }
+                    });
+                });
+                
+                const panelsContainer = document.getElementById('lab-panels');
+                if (panelsContainer) {
+                    if (results.length === 0) {
+                        panelsContainer.innerHTML = '<div class="no-results"><h3>No lab tests found</h3><p>Try a different search term.</p></div>';
+                    } else {
+                        panelsContainer.innerHTML = results.map(result => {
+                            if (result.type === 'panel') {
+                                return `
+                                    <button class="lab-value-btn" onclick="window.quizApp.showLabPanel('${result.key}'); event.stopPropagation();">
+                                        <div class="lab-name">${result.name}</div>
+                                        <div class="lab-count">${result.count} test${result.count !== 1 ? 's' : ''}</div>
+                                    </button>
+                                `;
+                            } else {
+                                return `
+                                    <button class="lab-value-btn" onclick="window.quizApp.showLabPanel('${result.panel}'); event.stopPropagation();">
+                                        <div class="lab-name">${result.name}</div>
+                                        <div class="lab-count">${result.panel} • ${result.range || 'See details'}</div>
+                                    </button>
+                                `;
+                            }
+                        }).join('');
+                    }
+                }
+            };
+            
+            searchInput.addEventListener('input', performSearch);
+            searchBtn.addEventListener('click', performSearch);
+        }
+        
+        console.log('🧪 Lab values content loaded');
+    }
+
+    /**
+     * Show lab panel details
+     */
+    showLabPanel(panelKey) {
+        const container = document.getElementById('lab-values-container');
+        if (!container) return;
+        
+        const labData = this.labManager.labDatabase || {};
+        const panel = labData[panelKey];
+        if (!panel) return;
+        
+        let html = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('lab-values', document.getElementById('lab-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to Lab Panels
+            </button>
+            <div class="lab-panel-detail">
+                <h3 style="margin-bottom: 20px; font-size: 1.6em; color: var(--text-primary);">${panel.name || panelKey}</h3>
+                <div class="lab-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px;">
+        `;
+        
+        Object.entries(panel.values || {}).forEach(([testKey, test]) => {
+            html += `
+                <button class="lab-value-btn" onclick="window.quizApp.showLabTest('${panelKey}', '${testKey}'); event.stopPropagation();" style="cursor: pointer; padding: 15px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; text-align: left; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                    <div class="lab-name" style="font-weight: 600; font-size: 1.05em; color: var(--text-primary); margin-bottom: 6px;">${testKey}</div>
+                    <div class="lab-count" style="font-size: 0.9em; color: var(--text-secondary);">${test.normal || test.range || test.normalRange || 'Click for details'}</div>
+                </button>
+            `;
+        });
+        
+        html += '</div></div>';
+        container.innerHTML = html;
+        
+        // Scroll to top
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+    
+    /**
+     * Show lab test detail with all clinical information
+     */
+    showLabTest(panelKey, testKey) {
+        const container = document.getElementById('lab-values-container');
+        if (!container) return;
+        
+        const labData = this.labManager.labDatabase || {};
+        const panel = labData[panelKey];
+        if (!panel) return;
+        
+        const test = panel.values[testKey];
+        if (!test) return;
+        
+        container.innerHTML = `
+            <button class="back-btn" onclick="window.quizApp.showLabPanel('${panelKey}'); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to ${panel.name}
+            </button>
+            <div class="lab-test-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 25px 0; padding-bottom: 20px; border-bottom: 2px solid var(--border); font-size: 1.8em; color: var(--text-primary);">📊 ${testKey}</h3>
+                <div class="test-info">
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #0369a1; font-size: 1.05em;">🎯 Normal Range</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6; font-weight: 600;">${test.normal || test.range || test.normalRange || 'Not specified'}</p>
+                    </div>
+                    ${test.ageVariations ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #15803d; font-size: 1.05em;">👶🧓 Age Variations</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.ageVariations}</p>
+                    </div>` : ''}
+                    ${test.low ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fefce8; border-left: 4px solid #eab308; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #a16207; font-size: 1.05em;">📉 Low Values - Causes</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.low}</p>
+                    </div>` : ''}
+                    ${test.high ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fefce8; border-left: 4px solid #eab308; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #a16207; font-size: 1.05em;">📈 High Values - Causes</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.high}</p>
+                    </div>` : ''}
+                    ${test.critical ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fee2e2; border-left: 4px solid #dc2626; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #991b1b; font-size: 1.05em;">🚨 Critical Values</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6; font-weight: 600;">${test.critical}</p>
+                    </div>` : ''}
+                    ${test.clinicalSignificance ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #b45309; font-size: 1.05em;">💡 Clinical Significance</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.clinicalSignificance}</p>
+                    </div>` : ''}
+                    ${test.unit ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f1f5f9; border-left: 4px solid #64748b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #475569; font-size: 1.05em;">📏 Unit</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.unit}</p>
+                    </div>` : ''}
+                    ${test.description ? `
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f1f5f9; border-left: 4px solid #64748b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #475569; font-size: 1.05em;">ℹ️ Description</h4>
+                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.description}</p>
+                    </div>` : ''}
+                </div>
+            </div>
+        `;
+        
+        // Scroll to top
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load guidelines content
+     */
+    loadGuidelinesContent(panel) {
+        const container = panel.querySelector('#guidelines-container') || panel;
+        
+        // Access guidelines directly from the manager's data
+        const guidelinesData = this.guidelinesManager.guidelinesDatabase || {};
+        const guidelineKeys = Object.keys(guidelinesData);
+        
+        if (guidelineKeys.length === 0) {
+            container.innerHTML = '<div class="no-content">Guidelines database not loaded</div>';
+            return;
+        }
+        
+        // Create modern guidelines interface
+        let html = `
+            <div class="search-container">
+                <input type="text" id="guidelines-search" placeholder="Search guidelines..." class="tool-search">
+                <button id="guidelines-search-btn">🔍</button>
+            </div>
+            <div id="guidelines-list" class="lab-grid">
+        `;
+        
+        guidelineKeys.forEach(key => {
+            const guideline = guidelinesData[key];
+            const title = guideline.title || guideline.name || key;
+            const org = guideline.organisation || guideline.organization || '';
+            const updated = guideline.lastUpdated || guideline.year || '';
+            
+            html += `
+                <button class="lab-value-btn" onclick="window.quizApp.showGuidelineDetail('${key}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                    <div class="lab-name">${title}</div>
+                    <div class="lab-count">${org}${updated ? ' • ' + updated : ''}</div>
+                    ${guideline.summary || guideline.description || guideline.category ? `<p style="font-size: 12px; margin-top: 8px; opacity: 0.9;">${(guideline.summary || guideline.description || guideline.category)}</p>` : ''}
+                </button>
+            `;
+        });
+        
+        html += '</div>';
+        container.innerHTML = html;
+        
+        // Add search functionality
+        const searchInput = document.getElementById('guidelines-search');
+        const searchBtn = document.getElementById('guidelines-search-btn');
+        if (searchInput && searchBtn) {
+            const performSearch = () => {
+                const query = searchInput.value.toLowerCase();
+                const filtered = query ? guidelineKeys.filter(key => {
+                    const g = guidelinesData[key];
+                    return (g.title || '').toLowerCase().includes(query) ||
+                           (g.name || '').toLowerCase().includes(query) ||
+                           (g.organisation || '').toLowerCase().includes(query) ||
+                           (g.organization || '').toLowerCase().includes(query) ||
+                           (g.category || '').toLowerCase().includes(query) ||
+                           (g.summary || '').toLowerCase().includes(query);
+                }) : guidelineKeys;
+                
+                const listContainer = document.getElementById('guidelines-list');
+                if (listContainer) {
+                    if (filtered.length === 0) {
+                        listContainer.innerHTML = '<div class="no-results"><h3>No guidelines found</h3><p>Try a different search term.</p></div>';
+                    } else {
+                        listContainer.innerHTML = filtered.map(key => {
+                            const guideline = guidelinesData[key];
+                            const title = guideline.title || guideline.name || key;
+                            const org = guideline.organisation || guideline.organization || '';
+                            const updated = guideline.lastUpdated || guideline.year || '';
+                            
+                            return `
+                                <button class="lab-value-btn" onclick="window.quizApp.showGuidelineDetail('${key}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                                    <div class="lab-name">${title}</div>
+                                    <div class="lab-count">${org}${updated ? ' • ' + updated : ''}</div>
+                                    ${guideline.summary || guideline.description || guideline.category ? `<p style="font-size: 12px; margin-top: 8px; opacity: 0.9;">${(guideline.summary || guideline.description || guideline.category)}</p>` : ''}
+                                </button>
+                            `;
+                        }).join('');
+                    }
+                }
+            };
+            
+            searchInput.addEventListener('input', performSearch);
+            searchBtn.addEventListener('click', performSearch);
+        }
+        
+        console.log('📋 Guidelines content loaded');
+    }
+    
+    /**
+     * Show guideline detail with all sections
+     */
+    showGuidelineDetail(guidelineKey) {
+        const container = document.getElementById('guidelines-container') || 
+                         document.querySelector('[data-panel="guidelines"]');
+        if (!container) return;
+        
+        const guidelinesData = this.guidelinesManager.guidelinesDatabase || {};
+        const guideline = guidelinesData[guidelineKey];
+        if (!guideline) return;
+        
+        let contentHtml = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('guidelines', document.getElementById('guidelines-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to Guidelines
+            </button>
+            <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 15px 0; font-size: 1.8em; color: var(--text-primary);">${guideline.title || guideline.name || guidelineKey}</h3>
+                <div class="guideline-meta" style="display: flex; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border); flex-wrap: wrap;">
+                    ${guideline.evidenceLevel ? `<span class="evidence-level" style="padding: 6px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border-radius: 20px; font-size: 0.85em;">📋 ${guideline.evidenceLevel}</span>` : ''}
+                    ${guideline.lastUpdated ? `<span class="last-updated" style="padding: 6px 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 20px; font-size: 0.85em; color: var(--text-secondary);">🗓️ ${guideline.lastUpdated}</span>` : ''}
+                    ${guideline.organisation ? `<span style="padding: 6px 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 20px; font-size: 0.85em; color: var(--text-secondary);">🏥 ${guideline.organisation}</span>` : ''}
+                </div>
+        `;
+        
+        // Helper function to render sections
+        const renderSection = (title, icon, data, color = 'var(--accent)') => {
+            if (!data) return '';
+            
+            let content = '';
+            if (typeof data === 'string') {
+                content = `<p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${data}</p>`;
+            } else if (typeof data === 'object') {
+                content = Object.entries(data).map(([key, value]) => `
+                    <div style="margin-bottom: 12px;">
+                        <strong style="color: var(--text-primary);">${key}:</strong>
+                        <span style="color: var(--text-primary); margin-left: 8px;">${value}</span>
+                    </div>
+                `).join('');
+            }
+            
+            return `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid ${color};">
+                    <h4 style="margin: 0 0 12px 0; color: ${color}; font-size: 1.1em;">${icon} ${title}</h4>
+                    ${content}
+                </div>
+            `;
+        };
+        
+        // Render all possible sections
+        contentHtml += renderSection('Diagnosis', '🔍', guideline.diagnosis);
+        contentHtml += renderSection('Stages/Classification', '📊', guideline.stages);
+        contentHtml += renderSection('Patient Groups', '👥', guideline.groups);
+        contentHtml += renderSection('Treatment Targets', '🎯', guideline.targets, '#10b981');
+        contentHtml += renderSection('Treatment Recommendations', '💊', guideline.treatment);
+        contentHtml += renderSection('Treatment Algorithm', '🔄', guideline.algorithm);
+        contentHtml += renderSection('Medication Classes', '💊', guideline.medications);
+        contentHtml += renderSection('First-line Therapy', '🥇', guideline.firstLine, '#10b981');
+        contentHtml += renderSection('Second-line Options', '🥈', guideline.secondLine);
+        contentHtml += renderSection('Acute Management', '🚨', guideline.acute, '#ef4444');
+        contentHtml += renderSection('Exacerbations', '⚠️', guideline.exacerbations, '#f59e0b');
+        contentHtml += renderSection('Lifestyle Modifications', '🏃‍♂️', guideline.lifestyle);
+        contentHtml += renderSection('Monitoring', '📊', guideline.monitoring);
+        contentHtml += renderSection('Special Populations', '👥', guideline.specialPopulations);
+        contentHtml += renderSection('Investigations', '🔬', guideline.investigations);
+        contentHtml += renderSection('Inhalers', '💨', guideline.inhalers);
+        contentHtml += renderSection('Triggers', '⚡', guideline.triggers);
+        contentHtml += renderSection('Complications', '⚠️', guideline.complications, '#ef4444');
+        contentHtml += renderSection('Red Flags', '🚩', guideline.redFlags, '#ef4444');
+        contentHtml += renderSection('Follow-up', '📅', guideline.followUp);
+        contentHtml += renderSection('Criteria', '📋', guideline.criteria);
+        contentHtml += renderSection('Prevention', '�️', guideline.prevention);
+        
+        contentHtml += '</div>';
+        
+        container.innerHTML = contentHtml;
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load mnemonics content
+     */
+    loadMnemonicsContent(panel) {
+        const container = panel.querySelector('#mnemonics-container') || panel;
+        
+        // Access mnemonics directly from the manager's data  
+        const mnemonicsData = this.mnemonicsManager.mnemonicsDatabase || {};
+        const mnemonicKeys = Object.keys(mnemonicsData);
+        
+        if (mnemonicKeys.length === 0) {
+            container.innerHTML = '<div class="no-content">Mnemonics database not loaded</div>';
+            return;
+        }
+        
+        // Create modern mnemonics interface with categories
+        let html = `
+            <div class="search-container">
+                <input type="text" id="mnemonics-search" placeholder="Search mnemonics..." class="tool-search">
+                <button id="mnemonics-search-btn">🔍</button>
+            </div>
+            <div class="mnemonics-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="cardiovascular">Cardiovascular</button>
+                <button class="category-btn" data-category="respiratory">Respiratory</button>
+                <button class="category-btn" data-category="neurology">Neurology</button>
+                <button class="category-btn" data-category="emergency">Emergency</button>
+                <button class="category-btn" data-category="general">General</button>
+            </div>
+            <div id="mnemonics-grid" class="lab-grid">
+        `;
+        
+        mnemonicKeys.forEach(key => {
+            const mnemonic = mnemonicsData[key];
+            const details = mnemonic.details || [];
+            html += `
+                <button class="lab-value-btn" data-category="${mnemonic.category || 'general'}" onclick="window.quizApp.showMnemonicDetail('${key}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                    <div class="lab-name">${mnemonic.mnemonic || mnemonic.acronym}</div>
+                    <div class="lab-count">${mnemonic.title || mnemonic.meaning || ''}</div>
+                    <p style="font-size: 11px; margin-top: 8px; opacity: 0.8;">${mnemonic.usage || 'Click for details'}</p>
+                </button>
+            `;
+        });
+        
+        html += '</div>';
+        container.innerHTML = html;
+        
+        // Add search and filter functionality
+        const searchInput = document.getElementById('mnemonics-search');
+        const searchBtn = document.getElementById('mnemonics-search-btn');
+        const categoryBtns = document.querySelectorAll('.mnemonics-categories .category-btn');
+        
+        const filterMnemonics = () => {
+            const query = searchInput ? searchInput.value.toLowerCase() : '';
+            const activeCategory = document.querySelector('.mnemonics-categories .category-btn.active')?.dataset.category || 'all';
+            
+            let filtered = mnemonicKeys;
+            
+            // Filter by category
+            if (activeCategory !== 'all') {
+                filtered = filtered.filter(key => mnemonicsData[key].category === activeCategory);
+            }
+            
+            // Filter by search
+            if (query) {
+                filtered = filtered.filter(key => {
+                    const m = mnemonicsData[key];
+                    return (m.mnemonic || '').toLowerCase().includes(query) ||
+                           (m.acronym || '').toLowerCase().includes(query) ||
+                           (m.title || '').toLowerCase().includes(query) ||
+                           (m.meaning || '').toLowerCase().includes(query) ||
+                           (m.usage || '').toLowerCase().includes(query) ||
+                           (m.details || []).some(d => d.toLowerCase().includes(query));
+                });
+            }
+            
+            const gridContainer = document.getElementById('mnemonics-grid');
+            if (gridContainer) {
+                if (filtered.length === 0) {
+                    gridContainer.innerHTML = '<div class="no-results"><h3>No mnemonics found</h3><p>Try adjusting your search or category filter.</p></div>';
+                } else {
+                    gridContainer.innerHTML = filtered.map(key => {
+                        const mnemonic = mnemonicsData[key];
+                        return `
+                            <button class="lab-value-btn" data-category="${mnemonic.category || 'general'}" onclick="window.quizApp.showMnemonicDetail('${key}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                                <div class="lab-name">${mnemonic.mnemonic || mnemonic.acronym}</div>
+                                <div class="lab-count">${mnemonic.title || mnemonic.meaning || ''}</div>
+                                <p style="font-size: 11px; margin-top: 8px; opacity: 0.8;">${mnemonic.usage || 'Click for details'}</p>
+                            </button>
+                        `;
+                    }).join('');
+                }
+            }
+        };
+        
+        if (searchInput && searchBtn) {
+            searchInput.addEventListener('input', filterMnemonics);
+            searchBtn.addEventListener('click', filterMnemonics);
+        }
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filterMnemonics();
+            });
+        });
+        
+        console.log('🧠 Mnemonics content loaded');
+    }
+    
+    /**
+     * Show mnemonic detail with full breakdown
+     */
+    showMnemonicDetail(mnemonicKey) {
+        const container = document.getElementById('mnemonics-container') || 
+                         document.querySelector('[data-panel="mnemonics"]');
+        if (!container) return;
+        
+        const mnemonicsData = this.mnemonicsManager.mnemonicsDatabase || {};
+        const mnemonic = mnemonicsData[mnemonicKey];
+        if (!mnemonic) return;
+        
+        let html = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('mnemonics', document.getElementById('mnemonics-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to Mnemonics
+            </button>
+            <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 25px 0; font-size: 1.8em; color: var(--text-primary);">🧠 ${mnemonic.title}</h3>
+                
+                <div class="info-section" style="margin-bottom: 25px;">
+                    <div style="text-align: center; padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);">
+                        <div style="font-size: 2.5em; font-weight: bold; letter-spacing: 4px; margin-bottom: 12px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">${mnemonic.mnemonic || mnemonic.acronym}</div>
+                        <div style="font-size: 1.15em; opacity: 0.95; font-weight: 500;">${mnemonic.meaning}</div>
+                    </div>
+                </div>
+                
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                    <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">📋 Clinical Use</h4>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${mnemonic.usage}</p>
+                </div>
+                
+                <div class="info-section" style="margin-bottom: 20px; padding: 20px; background: var(--bg); border-radius: 8px; border-left: 3px solid #8b5cf6;">
+                    <h4 style="margin: 0 0 15px 0; color: #8b5cf6; font-size: 1.1em;">🔍 Breakdown</h4>
+                    <div style="line-height: 1.8;">
+                        ${(mnemonic.details || []).map(detail => {
+                            if (detail === '') {
+                                return '<div style="height: 15px;"></div>';
+                            }
+                            return `<div style="padding: 10px 15px; border-left: 3px solid #8b5cf6; margin: 8px 0; background: var(--card-bg); border-radius: 4px; color: var(--text-primary);">${detail}</div>`;
+                        }).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        container.innerHTML = html;
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load differential dx content
+     */
+    loadDifferentialDxContent(panel) {
+        const container = panel.querySelector('#differential-dx-container') || panel;
+        
+        // Access differentials database from manager
+        const ddxDatabase = this.differentialDxManager.differentialDatabase || {};
+        
+        if (Object.keys(ddxDatabase).length === 0) {
+            container.innerHTML = '<div class="no-content">Differential diagnosis database not loaded</div>';
+            return;
+        }
+        
+        // Create full V1-style interface with search and categories
+        container.innerHTML = `
+            <div class="search-container">
+                <input type="text" id="ddx-search" placeholder="Search symptoms or diagnoses..." class="tool-search">
+                <button id="ddx-search-btn">🔍</button>
+            </div>
+            <div id="ddx-search-results" class="lab-grid"></div>
+            <div class="ddx-categories">
+                <button class="category-btn active" onclick="window.quizApp.showDdxCategory('all'); event.stopPropagation();">All Symptoms</button>
+                <button class="category-btn" onclick="window.quizApp.showDdxCategory('cardiovascular'); event.stopPropagation();">CV/Pulm</button>
+                <button class="category-btn" onclick="window.quizApp.showDdxCategory('gastroenterology'); event.stopPropagation();">GI/Surgery</button>
+                <button class="category-btn" onclick="window.quizApp.showDdxCategory('neurology'); event.stopPropagation();">Neurology</button>
+                <button class="category-btn" onclick="window.quizApp.showDdxCategory('emergency'); event.stopPropagation();">Emergency</button>
+                <button class="category-btn" onclick="window.quizApp.showDdxCategory('general'); event.stopPropagation();">General Med</button>
+            </div>
+            <div id="ddx-list" class="lab-grid"></div>
+        `;
+        
+        // Setup search event listeners
+        const searchInput = document.getElementById('ddx-search');
+        const searchBtn = document.getElementById('ddx-search-btn');
+        searchInput.addEventListener('input', () => this.searchDdx(ddxDatabase));
+        searchBtn.addEventListener('click', () => this.searchDdx(ddxDatabase));
+        
+        // Store database reference
+        this.ddxDatabase = ddxDatabase;
+        
+        // Show all symptoms initially
+        this.showDdxCategory('all');
+        
+        console.log('🔍 Differential diagnosis content loaded');
+    }
+
+    /**
+     * Search differential diagnoses (V1 compatibility)
+     */
+    searchDdx(ddxDatabase) {
+        const query = document.getElementById('ddx-search').value.toLowerCase();
+        const resultsContainer = document.getElementById('ddx-search-results');
+        
+        if (query.length < 2) {
+            resultsContainer.innerHTML = '';
+            return;
+        }
+        
+        const matches = [];
+        Object.keys(ddxDatabase).forEach(symptom => {
+            if (ddxDatabase[symptom].title.toLowerCase().includes(query) ||
+                ddxDatabase[symptom].category.toLowerCase().includes(query)) {
+                matches.push({ type: 'symptom', key: symptom, name: ddxDatabase[symptom].title });
+            }
+            Object.keys(ddxDatabase[symptom].presentations).forEach(dx => {
+                if (dx.toLowerCase().includes(query)) {
+                    matches.push({ type: 'diagnosis', symptom: symptom, key: dx, name: dx });
+                }
+            });
+        });
+        
+        if (matches.length === 0) {
+            resultsContainer.innerHTML = '<div class="no-results">No results found</div>';
+            return;
+        }
+        
+        resultsContainer.innerHTML = matches.map(match => `
+            <button class="lab-value-btn" onclick="${match.type === 'symptom' ? `console.log('🔍 DDX search result clicked:', '${match.key}'); window.quizApp.showDdxDetail('${match.key}'); event.stopPropagation();` : `console.log('🔍 Diagnosis search result clicked:', '${match.key}'); window.quizApp.showDiagnosisDetail('${match.symptom}', '${match.key}'); event.stopPropagation();`}">
+                <div class="lab-name">${match.name}</div>
+                <div class="lab-count">${match.type === 'symptom' ? 'Symptom Complex' : 'Diagnosis'}</div>
+            </button>
+        `).join('');
+    }
+
+    /**
+     * Show differential diagnoses by category (V1 compatibility)
+     */
+    showDdxCategory(category) {
+        const ddxDatabase = this.ddxDatabase;
+        const ddxList = document.getElementById('ddx-list');
+        
+        // Update active button state
+        document.querySelectorAll('.ddx-categories .category-btn').forEach(btn => btn.classList.remove('active'));
+        const targetButton = Array.from(document.querySelectorAll('.ddx-categories .category-btn')).find(btn => 
+            btn.textContent.toLowerCase().includes(category.toLowerCase()) ||
+            (category === 'all' && btn.textContent === 'All Symptoms')
+        );
+        if (targetButton) targetButton.classList.add('active');
+        
+        let symptoms = Object.keys(ddxDatabase);
+        
+        if (category !== 'all') {
+            symptoms = symptoms.filter(symptom => 
+                ddxDatabase[symptom].category.toLowerCase().includes(category)
+            );
+        }
+        
+        ddxList.innerHTML = symptoms.map(symptom => `
+            <button class="lab-value-btn" onclick="console.log('🔍 DDX card clicked:', '${symptom}'); window.quizApp.showDdxDetail('${symptom}'); event.stopPropagation();">
+                <div class="lab-name">${ddxDatabase[symptom].title}</div>
+                <div class="lab-count">${Object.keys(ddxDatabase[symptom].presentations).length} differentials</div>
+            </button>
+        `).join('');
+    }
+
+    /**
+     * Show differential diagnosis detail view (V1 compatibility)
+     */
+    showDdxDetail(symptomKey) {
+        const symptom = this.ddxDatabase[symptomKey];
+        const container = document.getElementById('differential-dx-container');
+        
+        const presentationsHtml = Object.entries(symptom.presentations).map(([dx, data]) => `
+            <button class="lab-value-btn" onclick="console.log('🔍 Diagnosis clicked:', '${dx}'); window.quizApp.showDiagnosisDetail('${symptomKey}', '${dx}'); event.stopPropagation();">
+                <div class="lab-name">${dx}</div>
+                <div class="lab-count">${data.urgency}</div>
+            </button>
+        `).join('');
+        
+        container.innerHTML = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('differential-dx', document.getElementById('differential-panel')); event.stopPropagation();">← Back to Symptoms</button>
+            <div class="ddx-detail">
+                <h3>🔍 ${symptom.title}</h3>
+                <p class="ddx-category">📋 ${symptom.category}</p>
+                ${symptom.redFlags ? `
+                <div class="red-flags-banner">
+                    <h4>🚨 RED FLAGS</h4>
+                    <p>${symptom.redFlags}</p>
+                </div>` : ''}
+                <h4>📋 Differential Diagnoses:</h4>
+                <div class="lab-grid">
+                    ${presentationsHtml}
+                </div>
+            </div>
+        `;
+        
+        // Scroll to top
+        const ddxPanel = document.getElementById('differential-panel');
+        if (ddxPanel) ddxPanel.scrollTop = 0;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Show specific diagnosis detail (V1 compatibility)
+     */
+    showDiagnosisDetail(symptomKey, dxKey) {
+        const diagnosis = this.ddxDatabase[symptomKey].presentations[dxKey];
+        const container = document.getElementById('differential-dx-container');
+        
+        container.innerHTML = `
+            <button class="back-btn" onclick="window.quizApp.showDdxDetail('${symptomKey}'); event.stopPropagation();">← Back to ${this.ddxDatabase[symptomKey].title}</button>
+            <div class="diagnosis-detail">
+                <h3>🔍 ${dxKey}</h3>
+                <div class="urgency-banner ${diagnosis.urgency.toLowerCase()}">
+                    <span class="urgency-level">⚡ ${diagnosis.urgency.toUpperCase()}</span>
+                    ${diagnosis.timeToTreat ? `<span class="time-to-treat">⏱️ ${diagnosis.timeToTreat}</span>` : ''}
+                </div>
+                <div class="diagnosis-info">
+                    <div class="info-section" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4>🎯 Clinical Features</h4>
+                        <p>${diagnosis.features}</p>
+                    </div>
+                    <div class="info-section" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4>🔬 Diagnostic Tests</h4>
+                        <p>${diagnosis.tests}</p>
+                    </div>
+                    ${diagnosis.differentiatingFeatures ? `
+                    <div class="info-section" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4>🔍 Key Differentiating Features</h4>
+                        <p>${diagnosis.differentiatingFeatures}</p>
+                    </div>` : ''}
+                    ${diagnosis.clinicalPearls ? `
+                    <div class="info-section" style="background: #fff8e1; border-left: 4px solid #ffa726; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4>💎 Clinical Pearls</h4>
+                        <p>${diagnosis.clinicalPearls}</p>
+                    </div>` : ''}
+                </div>
+            </div>
+        `;
+        
+        // Scroll to top
+        const ddxPanel = document.getElementById('differential-panel');
+        if (ddxPanel) ddxPanel.scrollTop = 0;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Load triads content (V1 compatibility with full features)
+     */
+    loadTriadsContent(panel) {
+        const resultsContainer = panel.querySelector('#triads-results');
+        if (!resultsContainer) {
+            console.log('🔺 Triads results container not found');
+            return;
+        }
+        
+        // Check if already initialized
+        if (this.triadsInitialized) {
+            console.log('🔺 Clinical triads already initialized');
+            return;
+        }
+        
+        // Setup search and category filtering
+        this.setupTriadsSearch();
+        
+        // Display all triads initially
+        const triadsData = this.triadsManager.clinicalTriads || {};
+        this.displayTriads(Object.keys(triadsData));
+        
+        // Mark as initialized
+        this.triadsInitialized = true;
+        
+        console.log('🔺 Clinical triads content loaded');
+    }
+
+    /**
+     * Setup triads search functionality (V1 compatibility)
+     */
+    setupTriadsSearch() {
+        const searchInput = document.getElementById('triads-search');
+        const searchBtn = document.getElementById('triads-search-btn');
+        const categoryBtns = document.querySelectorAll('.triad-categories .category-btn');
+        
+        const performTriadsSearch = () => {
+            const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+            const activeCategory = document.querySelector('.triad-categories .category-btn.active')?.dataset.category || 'all';
+            
+            const triadsData = this.triadsManager.clinicalTriads || {};
+            let filteredTriads = Object.keys(triadsData);
+            
+            // Filter by category
+            if (activeCategory !== 'all') {
+                filteredTriads = filteredTriads.filter(triadId => 
+                    triadsData[triadId].category === activeCategory
+                );
+            }
+            
+            // Filter by search term
+            if (searchTerm) {
+                filteredTriads = filteredTriads.filter(triadId => {
+                    const triad = triadsData[triadId];
+                    return (
+                        triad.name.toLowerCase().includes(searchTerm) ||
+                        triad.condition.toLowerCase().includes(searchTerm) ||
+                        triad.components.some(comp => comp.toLowerCase().includes(searchTerm))
+                    );
+                });
+            }
+            
+            this.displayTriads(filteredTriads);
+        };
+        
+        // Event listeners
+        if (searchInput) {
+            searchInput.addEventListener('input', performTriadsSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performTriadsSearch();
+            });
+        }
+        
+        if (searchBtn) {
+            searchBtn.addEventListener('click', performTriadsSearch);
+        }
+        
+        // Category buttons
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                performTriadsSearch();
+            });
+        });
+        
+        // Set 'all' as active initially
+        const allBtn = document.querySelector('.triad-categories .category-btn[data-category="all"]');
+        if (allBtn) allBtn.classList.add('active');
+    }
+
+    /**
+     * Display filtered triads (V1 compatibility)
+     */
+    displayTriads(triadIds) {
+        const triadsResults = document.getElementById('triads-results');
+        if (!triadsResults) return;
+        
+        const triadsData = this.triadsManager.clinicalTriads || {};
+        
+        if (triadIds.length === 0) {
+            triadsResults.innerHTML = `
+                <div class="no-results">
+                    <h3>🔍 No triads found</h3>
+                    <p>Try adjusting your search terms or category filter.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Sort triads by urgency (emergency first) then alphabetically
+        const urgencyOrder = { 'emergency': 0, 'high': 1, 'moderate': 2, 'low': 3 };
+        const sortedTriadIds = triadIds.sort((a, b) => {
+            const triadA = triadsData[a];
+            const triadB = triadsData[b];
+            
+            // First sort by urgency
+            const urgencyDiff = urgencyOrder[triadA.urgency] - urgencyOrder[triadB.urgency];
+            if (urgencyDiff !== 0) return urgencyDiff;
+            
+            // Then alphabetically
+            return triadA.name.localeCompare(triadB.name);
+        });
+        
+        const triadsHtml = sortedTriadIds.map(triadId => {
+            const triad = triadsData[triadId];
+            return this.createTriadCard(triad);
+        }).join('');
+        
+        triadsResults.innerHTML = `
+            <div class="triads-grid">
+                ${triadsHtml}
+            </div>
+        `;
+        
+        console.log('🔺 Displayed triads:', triadIds.length);
+    }
+
+    /**
+     * Create triad card HTML (V1 compatibility)
+     */
+    createTriadCard(triad) {
+        const urgencyColors = {
+            'emergency': '#D32F2F',
+            'high': '#F57C00',
+            'moderate': '#1976D2',
+            'low': '#388E3C'
+        };
+        
+        const urgencyIcons = {
+            'emergency': '🚨',
+            'high': '⚠️',
+            'moderate': 'ℹ️',
+            'low': '✅'
+        };
+        
+        const categoryIcons = {
+            'cardiovascular': '❤️',
+            'respiratory': '🫁',
+            'neurologic': '🧠',
+            'emergency': '🚨',
+            'infectious': '🦠',
+            'endocrine': '⚗️',
+            'rheumatologic': '🦴',
+            'psychiatric': '🧭'
+        };
+        
+        return `
+            <div class="triad-card" style="border-left: 4px solid ${urgencyColors[triad.urgency]}">
+                <div class="triad-header">
+                    <h3>
+                        ${categoryIcons[triad.category] || '🔺'} ${triad.name}
+                        <span class="urgency-badge" style="background: ${urgencyColors[triad.urgency]}">
+                            ${urgencyIcons[triad.urgency]} ${triad.urgency.toUpperCase()}
+                        </span>
+                    </h3>
+                    <div class="condition-name">${triad.condition}</div>
+                </div>
+                
+                <div class="triad-components">
+                    <h4>🔺 Classic Triad:</h4>
+                    <div class="components-list">
+                        ${triad.components.map(comp => `<span class="component-item">${comp}</span>`).join('')}
+                    </div>
+                </div>
+                
+                <div class="triad-details">
+                    <div class="detail-section">
+                        <h4>🔬 Mechanism:</h4>
+                        <p>${triad.mechanism}</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>🎯 Clinical Significance:</h4>
+                        <p>${triad.clinicalSignificance}</p>
+                    </div>
+                    
+                    <div class="detail-section uk-guidelines">
+                        <h4>🇬🇧 UK Guidelines:</h4>
+                        <p>${triad.ukGuidelines}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Load examination content (V1 compatibility with full features)
+     */
+    loadExaminationContent(panel) {
+        const container = panel.querySelector('#examination-container');
+        if (!container) return;
+        
+        // Access examinations database from manager
+        const examinationDatabase = this.examinationManager.examinationGuides || {};
+        
+        if (Object.keys(examinationDatabase).length === 0) {
+            container.innerHTML = '<div class="no-content">Examination guides database not loaded</div>';
+            return;
+        }
+        
+        // Create full V1-style interface with search and categories
+        container.innerHTML = `
+            <div class="search-container">
+                <input type="text" id="examination-search" placeholder="Search examination techniques..." class="tool-search">
+                <button id="examination-search-btn">🔍</button>
+            </div>
+            <div id="examination-search-results" class="lab-grid"></div>
+            <div class="examination-categories">
+                <button class="category-btn active" onclick="window.quizApp.showExaminationCategory('all'); event.stopPropagation();">All Systems</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('systemic'); event.stopPropagation();">Systemic</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('musculoskeletal'); event.stopPropagation();">MSK</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('specialized'); event.stopPropagation();">Specialized</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('psychiatric'); event.stopPropagation();">Psychiatric</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('emergency'); event.stopPropagation();">Emergency</button>
+                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('primary_care'); event.stopPropagation();">Primary Care</button>
+            </div>
+            <div id="examination-list" class="lab-grid"></div>
+        `;
+        
+        // Setup search event listeners
+        const searchInput = document.getElementById('examination-search');
+        const searchBtn = document.getElementById('examination-search-btn');
+        searchInput.addEventListener('input', () => this.searchExamination(examinationDatabase));
+        searchBtn.addEventListener('click', () => this.searchExamination(examinationDatabase));
+        
+        // Store database reference
+        this.examinationDatabase = examinationDatabase;
+        
+        // Show all examinations initially
+        this.showExaminationCategory('all');
+        
+        console.log('🩺 Examination guides content loaded');
+    }
+
+    /**
+     * Search examinations (V1 compatibility)
+     */
+    searchExamination(examinationDatabase) {
+        const query = document.getElementById('examination-search').value.toLowerCase();
+        const resultsContainer = document.getElementById('examination-search-results');
+        
+        if (query.length < 2) {
+            resultsContainer.innerHTML = '';
+            return;
+        }
+        
+        const matches = [];
+        Object.keys(examinationDatabase).forEach(system => {
+            if (examinationDatabase[system].title.toLowerCase().includes(query)) {
+                matches.push({ type: 'system', key: system, name: examinationDatabase[system].title });
+            }
+            Object.keys(examinationDatabase[system].sections).forEach(section => {
+                const sectionData = examinationDatabase[system].sections[section];
+                if (sectionData.name.toLowerCase().includes(query) ||
+                    sectionData.technique.toLowerCase().includes(query)) {
+                    matches.push({ type: 'section', system: system, key: section, name: `${sectionData.name} (${examinationDatabase[system].title})` });
+                }
+            });
+        });
+        
+        if (matches.length === 0) {
+            resultsContainer.innerHTML = '<div class="no-results">No results found</div>';
+            return;
+        }
+        
+        resultsContainer.innerHTML = matches.map(match => `
+            <button class="lab-value-btn" onclick="${match.type === 'system' ? `console.log('🩺 Examination system clicked:', '${match.key}'); window.quizApp.showExaminationDetail('${match.key}'); event.stopPropagation();` : `console.log('🩺 Examination section clicked:', '${match.key}'); window.quizApp.showSectionDetail('${match.system}', '${match.key}'); event.stopPropagation();`}">
+                <div class="lab-name">${match.name}</div>
+                <div class="lab-count">${match.type === 'system' ? 'System' : 'Technique'}</div>
+            </button>
+        `).join('');
+    }
+
+    /**
+     * Show examinations by category (V1 compatibility)
+     */
+    showExaminationCategory(category) {
+        const examinationDatabase = this.examinationDatabase;
+        const examinationList = document.getElementById('examination-list');
+        
+        if (!examinationList || !examinationDatabase) {
+            console.log('⚠️ Examination list or database not ready, reloading...');
+            setTimeout(() => this.showExaminationCategory(category), 100);
+            return;
+        }
+        
+        // Update active button state
+        const categoryButtons = document.querySelectorAll('.examination-categories .category-btn');
+        categoryButtons.forEach(btn => {
+            btn.classList.remove('active');
+            const btnText = btn.textContent.trim();
+            if ((category === 'all' && btnText === 'All Systems') ||
+                (category === 'systemic' && btnText === 'Systemic') ||
+                (category === 'musculoskeletal' && btnText === 'MSK') ||
+                (category === 'specialized' && btnText === 'Specialized') ||
+                (category === 'psychiatric' && btnText === 'Psychiatric') ||
+                (category === 'emergency' && btnText === 'Emergency') ||
+                (category === 'primary_care' && btnText === 'Primary Care')) {
+                btn.classList.add('active');
+            }
+        });
+        
+        let systems = Object.keys(examinationDatabase);
+        
+        if (category !== 'all') {
+            systems = systems.filter(system => examinationDatabase[system].category === category);
+        }
+        
+        examinationList.innerHTML = systems.map(system => `
+            <button class="lab-value-btn" onclick="console.log('🩺 Examination system clicked:', '${system}'); window.quizApp.showExaminationDetail('${system}'); event.stopPropagation();">
+                <div class="lab-name">${examinationDatabase[system].title}</div>
+                <div class="lab-count">${Object.keys(examinationDatabase[system].sections).length} sections</div>
+            </button>
+        `).join('');
+    }
+
+    /**
+     * Show examination detail view (V1 compatibility)
+     */
+    showExaminationDetail(systemKey) {
+        if (!this.examinationDatabase) {
+            console.log('⚠️ Examination database not loaded, reloading...');
+            this.loadToolContent('examination', document.getElementById('examination-panel'));
+            return;
+        }
+        
+        const system = this.examinationDatabase[systemKey];
+        if (!system) {
+            console.log('⚠️ System not found:', systemKey);
+            return;
+        }
+        
+        const container = document.getElementById('examination-container');
+        if (!container) return;
+        
+        const sectionsHtml = Object.entries(system.sections).map(([sectionKey, section]) => `
+            <button class="lab-value-btn" onclick="window.quizApp.showSectionDetail('${systemKey}', '${sectionKey}'); event.stopPropagation();">
+                <div class="lab-name">${section.name}</div>
+                <div class="lab-count">${Object.keys(section.abnormal).length} abnormal findings</div>
+            </button>
+        `).join('');
+        
+        container.innerHTML = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('examination', document.getElementById('examination-panel')); event.stopPropagation();">← Back to Examinations</button>
+            <div class="examination-detail">
+                <h3>🩺 ${system.title}</h3>
+                <p class="exam-category">📋 ${system.category}</p>
+                <div class="approach-banner">
+                    <h4>🔄 Systematic Approach</h4>
+                    <p>${system.approach}</p>
+                </div>
+                <h4>📋 Examination Sections:</h4>
+                <div class="lab-grid">
+                    ${sectionsHtml}
+                </div>
+            </div>
+        `;
+        
+        // Scroll to top
+        const examPanel = document.getElementById('examination-panel');
+        if (examPanel) examPanel.scrollTop = 0;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Show examination section detail (V1 compatibility)
+     */
+    showSectionDetail(systemKey, sectionKey) {
+        if (!this.examinationDatabase) {
+            console.log('⚠️ Examination database not loaded, reloading...');
+            return;
+        }
+        
+        const system = this.examinationDatabase[systemKey];
+        if (!system) return;
+        
+        const section = system.sections[sectionKey];
+        if (!section) {
+            this.showExaminationDetail(systemKey);
+            return;
+        }
+        
+        const container = document.getElementById('examination-container');
+        if (!container) return;
+        
+        const abnormalHtml = Object.entries(section.abnormal).map(([finding, description]) => `
+            <div class="finding-item abnormal">
+                <div class="finding-name">⚠️ ${finding}</div>
+                <div class="finding-description">${description}</div>
+            </div>
+        `).join('');
+        
+        container.innerHTML = `
+            <button class="back-btn" onclick="window.quizApp.showExaminationDetail('${systemKey}'); event.stopPropagation();">← Back to ${system.title}</button>
+            <div class="section-detail">
+                <h3>🔍 ${section.name}</h3>
+                <div class="technique-banner">
+                    <h4>🛠️ Technique</h4>
+                    <p>${section.technique}</p>
+                </div>
+                <div class="findings-section">
+                    <div class="normal-findings">
+                        <h4>✅ Normal Findings</h4>
+                        <div class="normal-box">
+                            ${section.normal}
+                        </div>
+                    </div>
+                    <div class="abnormal-findings">
+                        <h4>⚠️ Abnormal Findings</h4>
+                        <div class="abnormal-list">
+                            ${abnormalHtml}
+                        </div>
+                    </div>
+                </div>
+                ${section.clinicalPearls ? `
+                <div class="clinical-pearls">
+                    <h4>💎 Clinical Pearls</h4>
+                    <p>${section.clinicalPearls}</p>
+                </div>` : ''}
+            </div>
+        `;
+        
+        // Scroll to top
+        const examPanel = document.getElementById('examination-panel');
+        if (examPanel) examPanel.scrollTop = 0;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Load emergency protocols content (V1 compatibility with full features)
+     */
+    loadEmergencyProtocolsContent(panel) {
+        const container = panel.querySelector('#emergency-protocols-container');
+        if (!container) return;
+        
+        // Store protocols reference from manager
+        const emergencyProtocolsData = this.emergencyProtocolsManager.emergencyProtocols || {};
+        
+        if (Object.keys(emergencyProtocolsData).length === 0) {
+            container.innerHTML = '<div class="no-content">Emergency protocols database not loaded</div>';
+            return;
+        }
+        
+        // Store reference for later use
+        this.emergencyProtocolsData = emergencyProtocolsData;
+        
+        // Setup category filtering
+        this.setupEmergencyProtocolsSearch();
+        
+        // Display all protocols initially
+        this.displayEmergencyProtocols(Object.keys(emergencyProtocolsData));
+        
+        console.log('🚨 Emergency protocols content loaded');
+    }
+
+    /**
+     * Setup emergency protocols search (V1 compatibility)
+     */
+    setupEmergencyProtocolsSearch() {
+        const categoryBtns = document.querySelectorAll('.emergency-categories .category-btn');
+        
+        const filterProtocols = () => {
+            const activeCategory = document.querySelector('.emergency-categories .category-btn.active')?.dataset.category || 'all';
+            
+            let filteredProtocols = Object.keys(this.emergencyProtocolsData);
+            
+            if (activeCategory !== 'all') {
+                filteredProtocols = filteredProtocols.filter(protocolId => 
+                    this.emergencyProtocolsData[protocolId].category === activeCategory
+                );
+            }
+            
+            this.displayEmergencyProtocols(filteredProtocols);
+        };
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filterProtocols();
+            });
+        });
+    }
+
+    /**
+     * Display emergency protocols list (V1 compatibility)
+     */
+    displayEmergencyProtocols(protocolIds) {
+        const container = document.getElementById('emergency-protocols-container');
+        if (!container) return;
+        
+        if (protocolIds.length === 0) {
+            container.innerHTML = `
+                <div class="no-results">
+                    <h3>🚨 No protocols found</h3>
+                    <p>Try adjusting your category filter.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Sort by urgency (emergency first) then alphabetically
+        const urgencyOrder = { 'emergency': 0, 'high': 1, 'moderate': 2, 'low': 3 };
+        const sortedProtocolIds = protocolIds.sort((a, b) => {
+            const protocolA = this.emergencyProtocolsData[a];
+            const protocolB = this.emergencyProtocolsData[b];
+            
+            const urgencyDiff = urgencyOrder[protocolA.urgency] - urgencyOrder[protocolB.urgency];
+            if (urgencyDiff !== 0) return urgencyDiff;
+            
+            return protocolA.name.localeCompare(protocolB.name);
+        });
+        
+        const protocolsHtml = sortedProtocolIds.map(protocolId => {
+            const protocol = this.emergencyProtocolsData[protocolId];
+            const urgencyClass = protocol.urgency === 'emergency' ? 'emergency' : 'standard';
+            
+            return `
+                <div class="protocol-item ${urgencyClass}" onclick="window.quizApp.showProtocolDetail('${protocolId}'); event.stopPropagation();">
+                    <div class="protocol-header">
+                        <h4>${protocol.name}</h4>
+                        <span class="protocol-urgency ${protocol.urgency}">${protocol.urgency.toUpperCase()}</span>
+                    </div>
+                    <div class="protocol-meta">
+                        <span class="protocol-category">${protocol.category}</span>
+                        <span class="protocol-guideline">${protocol.ukGuideline}</span>
+                    </div>
+                    <div class="protocol-actions">
+                        ${protocol.criticalActions.slice(0, 2).map(action => 
+                            `<span class="action-tag">${action}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+            `;
+        }).join('');
+        
+        container.innerHTML = protocolsHtml;
+    }
+
+    /**
+     * Show protocol detail view (V1 compatibility)
+     */
+    showProtocolDetail(protocolId) {
+        const protocol = this.emergencyProtocolsData[protocolId];
+        if (!protocol) return;
+        
+        const container = document.getElementById('emergency-protocols-container');
+        if (!container) return;
+        
+        const detailHtml = `
+            <div class="protocol-detail" onclick="event.stopPropagation();">
+                <div class="protocol-detail-header">
+                    <button class="back-btn" onclick="window.quizApp.loadToolContent('emergency-protocols', document.getElementById('emergency-protocols-panel')); event.stopPropagation();">← Back to Protocols</button>
+                    <h3>${protocol.name}</h3>
+                    <span class="protocol-urgency ${protocol.urgency}">${protocol.urgency.toUpperCase()}</span>
+                </div>
+                
+                <div class="protocol-steps">
+                    <h4>📋 Protocol Steps</h4>
+                    <ol class="step-list">
+                        ${protocol.steps.map(step => `<li>${step}</li>`).join('')}
+                    </ol>
+                </div>
+                
+                <div class="protocol-drugs">
+                    <h4>💊 Key Medications</h4>
+                    <ul class="drug-list">
+                        ${protocol.drugs.map(drug => `<li>${drug}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="protocol-actions">
+                    <h4>⚠️ Critical Actions</h4>
+                    <ul class="action-list">
+                        ${protocol.criticalActions.map(action => `<li>${action}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="protocol-guideline">
+                    <h4>📚 UK Guideline</h4>
+                    <p>${protocol.ukGuideline}</p>
+                </div>
+            </div>
+        `;
+        
+        container.innerHTML = detailHtml;
+        
+        // Scroll to top
+        const protocolPanel = document.getElementById('emergency-protocols-panel');
+        if (protocolPanel) protocolPanel.scrollTop = 0;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Load interpretation tools content
+     */
+    loadInterpretationToolsContent(panel) {
+        const container = panel.querySelector('#interpretation-container') || panel;
+        if (!container) return;
+        
+        // Access interpretation tools directly from the manager's data
+        const toolsData = this.interpretationToolsManager.interpretationTools || {};
+        const toolKeys = Object.keys(toolsData);
+        
+        if (toolKeys.length === 0) {
+            container.innerHTML = '<div class="no-content">Interpretation tools database not loaded</div>';
+            return;
+        }
+        
+        // Create modern interpretation tools interface
+        let html = `
+            <div class="search-container">
+                <input type="text" id="interp-search" placeholder="Search interpretation tools..." class="tool-search">
+                <button id="interp-search-btn">🔍</button>
+            </div>
+            <div id="interp-grid" class="lab-grid">
+        `;
+        
+        toolKeys.forEach(toolKey => {
+            const tool = toolsData[toolKey];
+            const criteria = tool.criteria || tool.components || tool.steps || [];
+            html += `
+                <button class="lab-value-btn" onclick="window.quizApp.showInterpretationDetail('${toolKey}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                    <div class="lab-name">${tool.name || tool.title || toolKey}</div>
+                    <div class="lab-count">${tool.category || tool.type || 'Interpretation'}</div>
+                    ${tool.description ? `<p style="font-size: 11px; margin-top: 8px; opacity: 0.9;">${tool.description.substring(0, 100)}${tool.description.length > 100 ? '...' : ''}</p>` : ''}
+                </button>
+            `;
+        });
+        
+        html += '</div>';
+        container.innerHTML = html;
+        
+        // Add search functionality
+        const searchInput = document.getElementById('interp-search');
+        const searchBtn = document.getElementById('interp-search-btn');
+        if (searchInput && searchBtn) {
+            const performSearch = () => {
+                const query = searchInput.value.toLowerCase();
+                const filtered = query ? toolKeys.filter(toolKey => {
+                    const t = toolsData[toolKey];
+                    return (t.name || '').toLowerCase().includes(query) ||
+                           (t.title || '').toLowerCase().includes(query) ||
+                           (t.category || '').toLowerCase().includes(query) ||
+                           (t.type || '').toLowerCase().includes(query) ||
+                           (t.description || '').toLowerCase().includes(query);
+                }) : toolKeys;
+                
+                const gridContainer = document.getElementById('interp-grid');
+                if (gridContainer) {
+                    if (filtered.length === 0) {
+                        gridContainer.innerHTML = '<div class="no-results"><h3>No tools found</h3><p>Try a different search term.</p></div>';
+                    } else {
+                        gridContainer.innerHTML = filtered.map(toolKey => {
+                            const tool = toolsData[toolKey];
+                            return `
+                                <button class="lab-value-btn" onclick="window.quizApp.showInterpretationDetail('${toolKey}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
+                                    <div class="lab-name">${tool.name || tool.title || toolKey}</div>
+                                    <div class="lab-count">${tool.category || tool.type || 'Interpretation'}</div>
+                                    ${tool.description ? `<p style="font-size: 11px; margin-top: 8px; opacity: 0.9;">${tool.description.substring(0, 100)}${tool.description.length > 100 ? '...' : ''}</p>` : ''}
+                                </button>
+                            `;
+                        }).join('');
+                    }
+                }
+            };
+            
+            searchInput.addEventListener('input', performSearch);
+            searchBtn.addEventListener('click', performSearch);
+        }
+        
+        console.log('📊 Interpretation tools content loaded');
+    }
+    
+    /**
+     * Show interpretation tool detail with full criteria and scoring
+     */
+    showInterpretationDetail(toolKey) {
+        const container = document.getElementById('interpretation-container') || 
+                         document.querySelector('[data-panel="interpretation-tools"]');
+        if (!container) return;
+        
+        const toolsData = this.interpretationToolsManager.interpretationTools || {};
+        const tool = toolsData[toolKey];
+        if (!tool) return;
+        
+        let html = `
+            <button class="back-btn" onclick="window.quizApp.loadToolContent('interpretation-tools', document.getElementById('interpretation-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to Interpretation Tools
+            </button>
+            <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="margin: 0 0 15px 0; font-size: 1.8em; color: var(--text-primary);">📊 ${tool.name || tool.title || toolKey}</h3>
+                <div class="guideline-meta" style="display: flex; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border); flex-wrap: wrap;">
+                    ${tool.category ? `<span style="padding: 6px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border-radius: 20px; font-size: 0.85em;">${tool.category}</span>` : ''}
+                    ${tool.type ? `<span style="padding: 6px 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 20px; font-size: 0.85em; color: var(--text-secondary);">${tool.type}</span>` : ''}
+                </div>
+                
+                ${tool.description ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                    <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">📋 Description</h4>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${tool.description}</p>
+                </div>` : ''}
+                
+                ${tool.steps && tool.steps.length > 0 ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #10b981;">
+                    <h4 style="margin: 0 0 15px 0; color: #10b981; font-size: 1.1em;">📋 Steps</h4>
+                    <div style="line-height: 1.8;">
+                        ${tool.steps.map((step, idx) => `
+                            <div style="padding: 12px; margin-bottom: 8px; background: var(--card-bg); border-left: 3px solid #10b981; border-radius: 4px;">
+                                <strong style="color: var(--text-primary);">Step ${idx + 1}:</strong>
+                                <span style="color: var(--text-primary); margin-left: 8px;">${step}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>` : ''}
+                
+                ${tool.criteria && tool.criteria.length > 0 ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #8b5cf6;">
+                    <h4 style="margin: 0 0 15px 0; color: #8b5cf6; font-size: 1.1em;">✓ Criteria</h4>
+                    <div style="line-height: 1.8;">
+                        ${tool.criteria.map((criterion, idx) => {
+                            const text = typeof criterion === 'string' ? criterion : 
+                                       (criterion.description || criterion.name || criterion.criteria || '');
+                            const points = criterion.points || criterion.score;
+                            return `
+                                <div style="padding: 12px; margin-bottom: 8px; background: var(--card-bg); border-left: 3px solid #8b5cf6; border-radius: 4px; display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--text-primary);">${text}</span>
+                                    ${points ? `<span style="padding: 4px 10px; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; border-radius: 12px; font-size: 0.85em; font-weight: 600;">${points} pt${points !== 1 ? 's' : ''}</span>` : ''}
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>` : ''}
+                
+                ${tool.components && tool.components.length > 0 ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                    <h4 style="margin: 0 0 15px 0; color: var(--accent); font-size: 1.1em;">🧩 Components</h4>
+                    <div style="line-height: 1.8;">
+                        ${tool.components.map(component => {
+                            const text = typeof component === 'string' ? component : 
+                                       (component.description || component.name || '');
+                            return `
+                                <div style="padding: 12px; margin-bottom: 8px; background: var(--card-bg); border-left: 3px solid var(--accent); border-radius: 4px;">
+                                    <span style="color: var(--text-primary);">${text}</span>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>` : ''}
+                
+                ${tool.interpretation && typeof tool.interpretation === 'object' ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #f59e0b;">
+                    <h4 style="margin: 0 0 15px 0; color: #f59e0b; font-size: 1.1em;">💡 Interpretation</h4>
+                    <div style="line-height: 1.8;">
+                        ${Object.entries(tool.interpretation).map(([score, meaning]) => `
+                            <div style="padding: 12px; margin-bottom: 8px; background: var(--card-bg); border-left: 3px solid #f59e0b; border-radius: 4px;">
+                                <strong style="color: var(--text-primary);">${score}:</strong>
+                                <span style="color: var(--text-primary); margin-left: 8px;">${meaning}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>` : ''}
+                
+                ${tool.normalValues && typeof tool.normalValues === 'object' ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #10b981;">
+                    <h4 style="margin: 0 0 15px 0; color: #10b981; font-size: 1.1em;">📊 Normal Values</h4>
+                    <div style="line-height: 1.8;">
+                        ${Object.entries(tool.normalValues).map(([key, value]) => `
+                            <div style="padding: 8px 0; border-bottom: 1px solid var(--border);">
+                                <strong style="color: var(--text-primary);">${key}:</strong>
+                                <span style="color: var(--text-primary); margin-left: 8px;">${value}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>` : ''}
+                
+                ${tool.notes ? `
+                <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
+                    <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">📝 Notes</h4>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${tool.notes}</p>
+                </div>` : ''}
+            </div>
+        `;
+        
+        container.innerHTML = html;
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load ladders content
+     */
+    loadLaddersContent(panel) {
+        // Ladders content should already be in the HTML panel
+        console.log('🪜 Treatment ladders content loaded');
+    }
+
+    /**
+     * Show screen (main navigation between quiz, results, etc.)
+     */
+    showScreen(screenId) {
+        const screens = document.querySelectorAll('.screen');
+        screens.forEach(screen => {
+            if (screen.id === screenId) {
+                screen.classList.add('active');
+                screen.style.display = 'block';
+            } else {
+                screen.classList.remove('active');
+                screen.style.display = 'none';
+            }
+        });
+        console.log(`📄 Showing screen: ${screenId}`);
+    }
+
+    /**
+     * Load and render quiz list
+     */
+    async loadQuizList() {
+        console.log('📋 Loading quiz list...');
+        const quizList = document.getElementById('quiz-list');
+        if (!quizList) {
+            console.error('❌ Quiz list container not found');
+            return;
+        }
+
+        // Get uploaded quizzes from storage
+        const uploadedQuizzes = storage.getItem('uploadedQuizzes', []);
+        console.log(`📂 Found ${uploadedQuizzes.length} uploaded quizzes:`, uploadedQuizzes);
+        
+        // Get server quizzes (if available)
+        let serverQuizzes = [];
+        try {
+            const response = await fetch('/api/quizzes');
+            if (response.ok) {
+                const data = await response.json();
+                // Ensure we have an array
+                serverQuizzes = Array.isArray(data) ? data : [];
+                console.log(`📡 Fetched ${serverQuizzes.length} server quizzes`);
+            }
+        } catch (error) {
+            console.log('📝 Server quizzes not available (offline or local mode)');
+            serverQuizzes = []; // Ensure it's always an array
+        }
+
+        // Render list
+        let html = '';
+
+        // Add uploaded quizzes first
+        uploadedQuizzes.forEach(quiz => {
+            html += `
+                <div class="quiz-item uploaded-quiz" data-quiz-name="${quiz.name}" data-is-uploaded="true">
+                    <div class="quiz-info">
+                        <h3 class="quiz-name">${quiz.name}</h3>
+                        <p class="quiz-details">Uploaded • ${quiz.questionCount || 0} questions</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </div>
+            `;
+        });
+
+        // Add server quizzes
+        serverQuizzes.forEach(quiz => {
+            const sizeKB = Math.round((quiz.size || 0) / 1024);
+            html += `
+                <div class="quiz-item" data-quiz-name="${quiz.name}" data-is-uploaded="false">
+                    <div class="quiz-info">
+                        <h3 class="quiz-name">${quiz.name}</h3>
+                        <p class="quiz-details">${sizeKB}KB • ${quiz.filename || ''}</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </div>
+            `;
+        });
+
+        if (html === '') {
+            html = '<div style="padding: 20px; text-align: center; color: #8e8e93;">No quizzes available. Upload a quiz to get started.</div>';
+        }
+
+        console.log(`✅ Rendering ${uploadedQuizzes.length + serverQuizzes.length} quizzes to list`);
+        quizList.innerHTML = html;
+    }
+
+    /**
+     * Render current question
+     */
+    renderQuestion(data) {
+        const { question, index, total, answer, submitted, ruledOut, flagged } = data;
+        
+        console.log('🎨 Rendering question in UI:', {
+            hasQuestion: !!question,
+            questionKeys: question ? Object.keys(question) : [],
+            index,
+            total,
+            prompt: question?.prompt?.substring(0, 50),
+            scenario: question?.scenario?.substring(0, 50),
+            text: question?.text?.substring(0, 50),
+            optionsCount: question?.options?.length
+        });
+        
+        const questionContainer = document.getElementById('questionContainer');
+        if (!questionContainer) {
+            console.error('❌ Question container not found in DOM');
+            return;
+        }
+
+        // Build question HTML
+        let html = `
+            <div class="question-header">
+                <div class="question-number">Question ${index + 1} of ${total}</div>
+            </div>
+        `;
+
+        // Add image if present
+        if (question.image) {
+            html += `
+                <div class="image-container">
+                    <img src="${question.image}" alt="Question image" class="question-image">
+                </div>
+            `;
+        }
+
+        // Add scenario if present and different from prompt (V1-style blue background)
+        if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text) {
+            html += `<div class="q-text" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 15px;">${this.formatText(question.scenario)}</div>`;
+        }
+
+        // Add investigations if present (V1-style green background)
+        if (question.investigations) {
+            const formattedInvestigations = this.formatInvestigations(question.investigations);
+            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 15px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">🔬 Investigations</h4><div>${formattedInvestigations}</div></div>`;
+        }
+
+        // Add question prompt (V1-style yellow background)
+        const questionText = question.prompt || (question.scenario ? '' : question.text) || '';
+        if (questionText) {
+            html += `<div class="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-weight: 500;">${this.formatText(questionText)}</div>`;
+        }
+
+        // Add options
+        if (question.options && question.options.length > 0) {
+            html += '<div class="new-options">';
+            question.options.forEach((option, idx) => {
+                const isSelected = answer === idx;
+                const isCorrect = question.correctAnswer === idx;
+                const isRuledOut = ruledOut && ruledOut.includes(idx);
+                
+                let optionClass = 'new-option option';
+                if (isSelected) optionClass += ' selected';
+                if (submitted && isCorrect) optionClass += ' correct';
+                if (submitted && isSelected && !isCorrect) optionClass += ' incorrect';
+                if (isRuledOut) optionClass += ' ruled-out';
+
+                // Remove leading option letters (A., B., etc.) if present
+                let cleanOption = option.replace(/^[\(\[]?[A-Z][\)\.]\s*/i, '').trim();
+
+                html += `
+                    <div class="${optionClass}" data-option="${idx}">
+                        <span class="option-letter badge">${String.fromCharCode(65 + idx)}</span>
+                        <span class="option-text label">${cleanOption}</span>
+                    </div>
+                `;
+            });
+            html += '</div>';
+        }
+
+        // Add feedback if submitted
+        if (submitted) {
+            const isCorrect = answer === question.correctAnswer;
+            const correctLetter = String.fromCharCode(65 + question.correctAnswer);
+            
+            html += `
+                <div class="feedback-container ${isCorrect ? 'correct' : 'incorrect'}">
+                    ${isCorrect ? '✅ Correct!' : `❌ Incorrect. The correct answer is ${correctLetter}.`}
+                </div>
+            `;
+
+            // Add explanation if available (handle both array and string)
+            let explanationText = '';
+            if (question.explanations && Array.isArray(question.explanations)) {
+                explanationText = question.explanations
+                    .map(exp => this.formatText(exp))
+                    .join('<br><br>');
+            } else if (question.explanation) {
+                explanationText = this.formatText(question.explanation);
+            }
+            
+            if (explanationText) {
+                html += `
+                    <div class="explanation-container">
+                        <div class="explanation-title">📚 Explanation</div>
+                        <div class="explanation-content">${explanationText}</div>
+                    </div>
+                `;
+            }
+        }
+
+        questionContainer.innerHTML = html;
+
+        // Bind option click events
+        const options = questionContainer.querySelectorAll('.option, .new-option');
+        options.forEach((option, idx) => {
+            // Left click - select option
+            option.addEventListener('click', () => {
+                if (!submitted) {
+                    quizManager.selectAnswer(idx);
+                }
+            });
+
+            // Right click - rule out option
+            option.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                if (!submitted) {
+                    quizManager.toggleRuleOut(idx);
+                    analytics.vibrateClick();
+                }
+            });
+
+            // Touch events for long-press (mobile)
+            if (!submitted) {
+                let pressTimer = null;
+                let startPos = null;
+                
+                option.addEventListener('touchstart', (e) => {
+                    const touch = e.touches[0];
+                    startPos = { x: touch.clientX, y: touch.clientY };
+                    
+                    pressTimer = setTimeout(() => {
+                        quizManager.toggleRuleOut(idx);
+                        analytics.vibrateClick();
+                        pressTimer = null;
+                    }, 800);
+                }, { passive: true });
+                
+                option.addEventListener('touchmove', (e) => {
+                    if (startPos && pressTimer) {
+                        const touch = e.touches[0];
+                        const deltaX = Math.abs(touch.clientX - startPos.x);
+                        const deltaY = Math.abs(touch.clientY - startPos.y);
+                        
+                        if (deltaX > 15 || deltaY > 15) {
+                            clearTimeout(pressTimer);
+                            pressTimer = null;
+                        }
+                    }
+                }, { passive: true });
+                
+                option.addEventListener('touchend', () => {
+                    if (pressTimer) {
+                        clearTimeout(pressTimer);
+                        pressTimer = null;
+                    }
+                    startPos = null;
+                }, { passive: true });
+                
+                option.addEventListener('touchcancel', () => {
+                    if (pressTimer) {
+                        clearTimeout(pressTimer);
+                        pressTimer = null;
+                    }
+                    startPos = null;
+                }, { passive: true });
+            }
+        });
+
+        // Update button states
+        this.updateQuizButtons(data);
+    }
+
+    /**
+     * Update quiz navigation button states
+     */
+    updateQuizButtons(data) {
+        const submitBtn = document.getElementById('submitBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const prevBtnTop = document.getElementById('prevBtnTop');
+        const nextBtnTop = document.getElementById('nextBtnTop');
+        const flagBtn = document.getElementById('flagBtn');
+
+        if (submitBtn && nextBtn) {
+            if (data.submitted) {
+                submitBtn.style.display = 'none';
+                nextBtn.style.display = 'inline-block';
+            } else if (data.answer !== undefined) {
+                submitBtn.style.display = 'inline-block';
+                nextBtn.style.display = 'none';
+            } else {
+                submitBtn.style.display = 'none';
+                nextBtn.style.display = 'inline-block';
+            }
+        }
+
+        // Show/hide prev button
+        if (prevBtn) {
+            if (data.index === 0) {
+                prevBtn.style.display = 'none';
+                prevBtn.disabled = true;
+            } else {
+                prevBtn.style.display = 'inline-block';
+                prevBtn.disabled = false;
+            }
+        }
+
+        // Update top navigation buttons
+        if (prevBtnTop) {
+            if (data.index === 0) {
+                prevBtnTop.style.display = 'none';
+            } else {
+                prevBtnTop.style.display = 'inline-block';
+            }
+        }
+
+        if (nextBtnTop) {
+            nextBtnTop.style.display = 'inline-block';
+        }
+
+        if (flagBtn) {
+            if (data.flagged) {
+                flagBtn.classList.add('flagged');
+                flagBtn.title = 'Remove flag';
+            } else {
+                flagBtn.classList.remove('flagged');
+                flagBtn.title = 'Flag question';
+            }
+        }
+
+        // Update next button text
+        if (nextBtn) {
+            nextBtn.textContent = (data.index === data.total - 1) ? 'Finish Quiz' : 'Next →';
+        }
+        
+        if (nextBtnTop) {
+            nextBtnTop.textContent = (data.index === data.total - 1) ? 'Finish →' : 'Next →';
+        }
+    }
+
+    /**
+     * Update progress bar
+     */
+    updateProgressBar(data) {
+        const progressBar = document.getElementById('progress-bar');
+        if (progressBar) {
+            const percentage = ((data.current + 1) / data.total) * 100;
+            progressBar.style.width = `${percentage}%`;
+        }
+
+        const progressText = document.getElementById('progress-text');
+        if (progressText) {
+            progressText.textContent = `${data.current + 1} / ${data.total}`;
+        }
+    }
+
+    /**
+     * Handle submit answer
+     */
+    handleSubmitAnswer() {
+        const currentAnswer = quizManager.getCurrentAnswer();
+        if (currentAnswer === undefined) {
+            uiManager.showToast('Please select an answer', 'warning');
+            return;
+        }
+
+        quizManager.submitAnswer(currentAnswer);
+    }
+
+    /**
+     * Render quiz results
+     */
+    renderResults(data) {
+        const resultsContainer = document.getElementById('results-summary');
+        if (!resultsContainer) return;
+
+        const percentage = Math.round((data.score / data.totalQuestions) * 100);
+        
+        let html = `
+            <div class="results-header">
+                <h2>Quiz Complete!</h2>
+                <div class="score-display">
+                    <div class="score-big">${percentage}%</div>
+                    <div class="score-detail">${data.score} / ${data.totalQuestions} correct</div>
+                </div>
+            </div>
+        `;
+
+        // Add time statistics if available
+        if (data.totalTime) {
+            const minutes = Math.floor(data.totalTime / 60);
+            const seconds = data.totalTime % 60;
+            html += `
+                <div class="time-stats">
+                    <strong>Total Time:</strong> ${minutes}m ${seconds}s<br>
+                    <strong>Average per Question:</strong> ${data.averageTime}s
+                </div>
+            `;
+        }
+
+        resultsContainer.innerHTML = html;
+    }
+
+    /**
+     * Format investigations text with proper line breaks
+     */
+    formatInvestigations(investigationsText) {
+        if (!investigationsText) return '';
+        
+        // Format the text with proper line breaks and structure
+        let formatted = investigationsText
+            // Replace multiple spaces with single space
+            .replace(/\s+/g, ' ')
+            // Add line breaks before test names (common patterns)
+            .replace(/([A-Z][a-z]+:)/g, '\n$1')
+            // Add line breaks for numeric values with units
+            .replace(/(\d+\.?\d*\s*[a-zA-Z/]+)/g, ' $1')
+            .trim();
+        
+        return this.formatText(formatted);
+    }
+
+    /**
+     * Format text with markdown, images, and links
+     */
+    formatText(text) {
+        if (!text) return '';
+        
+        // Convert markdown-style formatting to HTML
+        let formattedText = text
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+            .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic
+            .replace(/- (.*?)(?=\n|$)/g, '• $1') // Bullet points
+            .trim();
+        
+        // Handle [IMAGE: filename] format - check currentQuiz for embedded images
+        formattedText = formattedText.replace(/\[IMAGE:\s*([^\]]+)\]/gi, (match, filename) => {
+            // Check if we have a data URL already embedded
+            const dataUrlPattern = /data:[^;]+;base64,[A-Za-z0-9+/=]+/;
+            if (dataUrlPattern.test(filename)) {
+                return `<div class="image-container"><img src="${filename}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${filename}', 'Image')"></div>`;
+            }
+            
+            // Try to find image in currentQuiz.images
+            let imagePath = filename.trim();
+            
+            if (this.currentQuiz && this.currentQuiz.images) {
+                const possibleKeys = [
+                    imagePath,
+                    imagePath.toLowerCase(),
+                    imagePath.replace(/\.[^.]+$/, ''),
+                    imagePath.replace(/\.[^.]+$/, '').toLowerCase(),
+                    `MLA_images/${imagePath}`,
+                    `MLA_images/${imagePath.toLowerCase()}`
+                ];
+                
+                let imageData = null;
+                for (const key of possibleKeys) {
+                    if (this.currentQuiz.images[key]) {
+                        imageData = this.currentQuiz.images[key];
+                        
+                        // Handle reference-based storage
+                        if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
+                            const refKey = imageData.substring(8);
+                            imageData = this.currentQuiz.images[refKey];
+                        }
+                        
+                        if (imageData && imageData.startsWith('data:')) {
+                            return `<div class="image-container"><img src="${imageData}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${imageData}', 'Image')"></div>`;
+                        }
+                        break;
+                    }
+                }
+            }
+            
+            // Fallback: show as link
+            return `<a href="#" class="image-link" onclick="alert('Image not available: ${imagePath}'); return false;">🖼️ View Image: ${imagePath}</a>`;
+        });
+        
+        // Handle markdown-style images: ![alt text](url)
+        formattedText = formattedText.replace(/!\[([^\]]*)\]\(([^)]+?)(?:\s+"([^"]+)")?\)/g, (match, alt, url, caption) => {
+            let actualUrl = url;
+            
+            // Handle reference-based storage
+            if (typeof url === 'string' && url.startsWith('__REF__:')) {
+                const refKey = url.substring(8);
+                if (this.currentQuiz && this.currentQuiz.images && this.currentQuiz.images[refKey]) {
+                    let imageData = this.currentQuiz.images[refKey];
+                    
+                    if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
+                        const secondRefKey = imageData.substring(8);
+                        imageData = this.currentQuiz.images[secondRefKey];
+                    }
+                    
+                    if (imageData && imageData.startsWith('data:')) {
+                        actualUrl = imageData;
+                    }
+                }
+            }
+            
+            const imageHtml = `<img src="${actualUrl}" alt="${alt}" loading="lazy" onclick="window.openImageModal && openImageModal('${actualUrl}', '${alt}')">`;
+            if (caption) {
+                return `<div class="image-container">${imageHtml}<div class="image-caption">${caption}</div></div>`;
+            }
+            return `<div class="image-container">${imageHtml}</div>`;
+        });
+        
+        // Handle simple image URLs
+        formattedText = formattedText.replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg)(\?[^\s]*)?/gi, (url) => {
+            return `<div class="image-container"><img src="${url}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${url}', 'Image')"></div>`;
+        });
+        
+        // Convert plain URLs to clickable links
+        formattedText = formattedText.replace(
+            /(https?:\/\/[^\s<>"']+)/gi,
+            '<a href="$1" target="_blank" rel="noopener noreferrer" class="explanation-link">$1</a>'
+        );
+        
+        // Convert www.domain.com to clickable links
+        formattedText = formattedText.replace(
+            /(?<!https?:\/\/)\b(www\.[^\s<>"']+)/gi,
+            '<a href="http://$1" target="_blank" rel="noopener noreferrer" class="explanation-link">$1</a>'
+        );
+        
+        // Convert line breaks to paragraphs
+        if (formattedText.includes('\n\n')) {
+            formattedText = formattedText
+                .replace(/\n\s*\n/g, '</p><p>')
+                .replace(/\n/g, ' ')
+                .replace(/^/, '<p>')
+                .replace(/$/, '</p>');
+        } else {
+            formattedText = formattedText.replace(/\n/g, ' ');
+        }
+        
+        return formattedText;
+    }
+
+    /**
+     * Escape HTML to prevent XSS (fallback for untrusted content)
+     */
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    /**
+     * Get app info
+     */
+    getInfo() {
+        return {
+            initialized: this.initialized,
+            managers: {
+                ui: uiManager.getInfo?.() || 'initialized',
+                quiz: quizManager.getStatistics(),
+                anatomy: 'initialized',
+                calculator: calculatorManager.getStatistics(),
+                storage: 'initialized',
+                orientation: 'initialized',
+                analytics: 'initialized',
+                drug: this.drugManager.getStatistics(),
+                lab: this.labManager.getStatistics(),
+                guidelines: this.guidelinesManager.getStatistics(),
+                mnemonics: this.mnemonicsManager.getStatistics(),
+                interpretation: this.interpretationToolsManager.getStatistics(),
+                ladders: this.laddersManager.getStatistics()
+            }
+        };
+    }
+}
+
+// Create and export app instance
+const app = new MLAQuizApp();
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => app.initialize());
+} else {
+    app.initialize();
+}
+
+// Export for global access if needed
+window.MLAQuizApp = app;
+window.quizApp = app; // Alias for template compatibility
+
+// Make sure quizManager is available on MLAQuizApp for template compatibility
+app.quizManager = quizManager;
+
+// Export managers for backward compatibility with existing app.js
+window.eventBus = eventBus;
+window.storage = storage;
+window.uiManager = uiManager;
+window.quizManager = quizManager;
+window.anatomyManager = anatomyManager;
+window.calculatorManager = calculatorManager;
+window.orientationManager = orientationManager;
+window.analytics = analytics;
+window.drugManager = app.drugManager;
+window.labManager = app.labManager;
+window.guidelinesManager = app.guidelinesManager;
+window.mnemonicsManager = app.mnemonicsManager;
+window.interpretationToolsManager = app.interpretationToolsManager;
+window.laddersManager = app.laddersManager;
+window.differentialDxManager = differentialDxManager;
+window.triadsManager = triadsManager;
+window.examinationManager = examinationManager;
+window.emergencyProtocolsManager = emergencyProtocolsManager;
+window.v2Integration = v2Integration;
+
+// Helper function to initialize V2 integration after V1 app is ready
+window.initializeV2Integration = function(v1AppInstance) {
+    if (v1AppInstance && window.v2Integration) {
+        window.v2Integration.initialize(v1AppInstance);
+        console.log('✅ V2 Integration initialized with V1 app');
+        
+        // Make drugManager, labManager, guidelinesManager available globally
+        window.drugReferenceManager = app.drugManager;
+        window.labValuesManager = app.labManager;
+        window.guidelinesManager = app.guidelinesManager;
+        window.mnemonicsManager = app.mnemonicsManager;
+        window.interpretationToolsManager = app.interpretationToolsManager;
+        window.laddersManager = app.laddersManager;
+        
+        return true;
+    }
+    console.error('❌ Failed to initialize V2 integration - missing V1 app or V2 integration');
+    return false;
+};
+
+console.log('📦 MLA Quiz PWA modules loaded');
+
+export default app;

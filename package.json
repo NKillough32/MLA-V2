@@ -1,0 +1,60 @@
+{
+  "name": "mla-quiz-v2",
+  "version": "2.0.0",
+  "description": "MLA Quiz V2 - Independent Medical Learning Application",
+  "main": "static/js/v2/main.js",
+  "scripts": {
+    "start": "python api/index.py",
+    "dev": "python api/index.py",
+    "build": "echo 'V2 uses native ES6 modules - no build step required'",
+    "deploy": "vercel --prod",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "medical",
+    "education",
+    "calculators",
+    "pwa",
+    "healthcare",
+    "clinical",
+    "anatomy",
+    "differential-diagnosis"
+  ],
+  "author": "MLA Development Team",
+  "license": "Educational",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NKillough32/MLA-Quiz-V2.git"
+  },
+  "engines": {
+    "python": "3.11.x"
+  },
+  "dependencies": {
+    "python": "^3.11.0"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "pwa": {
+    "name": "MLA Quiz V2",
+    "short_name": "MLA-V2",
+    "description": "Medical Learning Application V2",
+    "theme_color": "#1976d2",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait-primary"
+  },
+  "features": {
+    "calculators": true,
+    "anatomy": true,
+    "differentials": true,
+    "triads": true,
+    "protocols": true,
+    "guidelines": true,
+    "offline": true,
+    "pwa": true
+  }
+}
