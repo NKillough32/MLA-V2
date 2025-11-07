@@ -313,6 +313,440 @@ export class CalculatorManager {
             });
         }
 
+        // A-a Gradient
+        if (EC.getAAGradientCalculator) {
+            this.registerCalculator('aa-gradient', {
+                name: 'A-a Gradient',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Alveolar-arterial oxygen gradient',
+                keywords: ['aa', 'gradient', 'oxygen', 'respiratory', 'abg'],
+                getTemplate: () => EC.getAAGradientCalculator(),
+                calculate: () => EC.calculateAAGradient(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // PERC Rule
+        if (EC.getPERCCalculator) {
+            this.registerCalculator('perc', {
+                name: 'PERC Rule',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Pulmonary embolism rule-out criteria',
+                keywords: ['perc', 'pe', 'pulmonary', 'embolism'],
+                getTemplate: () => EC.getPERCCalculator(),
+                calculate: () => EC.calculatePERC(),
+                bindEvents: () => {}
+            });
+        }
+
+        // TIMI Risk Score
+        if (EC.getTIMICalculator) {
+            this.registerCalculator('timi', {
+                name: 'TIMI Risk Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Cardiac risk stratification',
+                keywords: ['timi', 'cardiac', 'risk', 'acs'],
+                getTemplate: () => EC.getTIMICalculator(),
+                calculate: () => EC.calculateTIMI(),
+                bindEvents: () => {}
+            });
+        }
+
+        // RCRI (Revised Cardiac Risk Index)
+        if (EC.getRCRICalculator) {
+            this.registerCalculator('rcri', {
+                name: 'Revised Cardiac Risk Index',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Perioperative cardiac risk',
+                keywords: ['rcri', 'cardiac', 'perioperative', 'surgery'],
+                getTemplate: () => EC.getRCRICalculator(),
+                calculate: () => EC.calculateRCRI(),
+                bindEvents: () => {}
+            });
+        }
+
+        // QTc Calculator
+        if (EC.getQTcCalculator) {
+            this.registerCalculator('qtc', {
+                name: 'QTc Calculator',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Corrected QT interval',
+                keywords: ['qtc', 'qt', 'interval', 'ecg', 'arrhythmia'],
+                getTemplate: () => EC.getQTcCalculator(),
+                calculate: () => EC.calculateQTc(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Wells DVT Score
+        if (EC.getWellsDVTCalculator) {
+            this.registerCalculator('wells-dvt', {
+                name: 'Wells DVT Score',
+                category: TOOL_CATEGORIES.VASCULAR,
+                description: 'Deep vein thrombosis probability',
+                keywords: ['wells', 'dvt', 'thrombosis', 'vascular'],
+                getTemplate: () => EC.getWellsDVTCalculator(),
+                calculate: () => EC.calculateWellsDVT(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Wells PE Score
+        if (EC.getWellsCalculator) {
+            this.registerCalculator('wells-pe', {
+                name: 'Wells PE Score',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Pulmonary embolism probability',
+                keywords: ['wells', 'pe', 'pulmonary', 'embolism'],
+                getTemplate: () => EC.getWellsCalculator(),
+                calculate: () => EC.calculateWells(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // === GASTROENTEROLOGY ADDITIONAL ===
+        
+        // Rockall Score
+        if (EC.getRockallCalculator) {
+            this.registerCalculator('rockall', {
+                name: 'Rockall Score',
+                category: TOOL_CATEGORIES.GASTROENTEROLOGY,
+                description: 'Upper GI bleeding risk assessment',
+                keywords: ['rockall', 'gi', 'bleeding', 'upper'],
+                getTemplate: () => EC.getRockallCalculator(),
+                calculate: () => EC.calculateRockall(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Glasgow-Blatchford Score
+        if (EC.getGlasgowBlatchfordCalculator) {
+            this.registerCalculator('glasgow-blatchford', {
+                name: 'Glasgow-Blatchford Score',
+                category: TOOL_CATEGORIES.GASTROENTEROLOGY,
+                description: 'GI bleeding severity assessment',
+                keywords: ['glasgow', 'blatchford', 'gi', 'bleeding'],
+                getTemplate: () => EC.getGlasgowBlatchfordCalculator(),
+                calculate: () => EC.calculateGlasgowBlatchford(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Centor Score
+        if (EC.getCentorCalculator) {
+            this.registerCalculator('centor', {
+                name: 'Centor Score',
+                category: TOOL_CATEGORIES.INFECTIOUS_DISEASE,
+                description: 'Strep throat probability',
+                keywords: ['centor', 'strep', 'throat', 'pharyngitis'],
+                getTemplate: () => EC.getCentorCalculator(),
+                calculate: () => EC.calculateCentor(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Alvarado Score
+        if (EC.getAlvaradoCalculator) {
+            this.registerCalculator('alvarado', {
+                name: 'Alvarado Score',
+                category: TOOL_CATEGORIES.SURGERY,
+                description: 'Acute appendicitis diagnosis',
+                keywords: ['alvarado', 'appendicitis', 'surgery', 'diagnosis'],
+                getTemplate: () => EC.getAlvaradoCalculator(),
+                calculate: () => EC.calculateAlvarado(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // === PSYCHIATRY CALCULATORS ===
+        
+        // PHQ-9
+        if (EC.getPHQ9Calculator) {
+            this.registerCalculator('phq9', {
+                name: 'PHQ-9',
+                category: TOOL_CATEGORIES.PSYCHIATRY,
+                description: 'Depression severity questionnaire',
+                keywords: ['phq', 'depression', 'psychiatry', 'mental'],
+                getTemplate: () => EC.getPHQ9Calculator(),
+                calculate: () => EC.calculatePHQ9(),
+                bindEvents: () => {}
+            });
+        }
+
+        // GAD-7
+        if (EC.getGAD7Calculator) {
+            this.registerCalculator('gad7', {
+                name: 'GAD-7',
+                category: TOOL_CATEGORIES.PSYCHIATRY,
+                description: 'Generalized anxiety disorder assessment',
+                keywords: ['gad', 'anxiety', 'psychiatry', 'mental'],
+                getTemplate: () => EC.getGAD7Calculator(),
+                calculate: () => EC.calculateGAD7(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Mental State Examination
+        if (EC.getMSECalculator) {
+            this.registerCalculator('mse', {
+                name: 'Mental State Exam',
+                category: TOOL_CATEGORIES.PSYCHIATRY,
+                description: 'Structured MSE assessment',
+                keywords: ['mse', 'mental', 'state', 'psychiatry'],
+                getTemplate: () => EC.getMSECalculator(),
+                calculate: () => EC.calculateMSE(),
+                bindEvents: () => {}
+            });
+        }
+
+        // MMSE
+        if (EC.getMMSECalculator) {
+            this.registerCalculator('mmse', {
+                name: 'Mini-Mental State Exam',
+                category: TOOL_CATEGORIES.NEUROLOGY,
+                description: 'Cognitive impairment screening',
+                keywords: ['mmse', 'cognitive', 'dementia', 'mental'],
+                getTemplate: () => EC.getMMSECalculator(),
+                calculate: () => EC.calculateMMSE(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // === GERIATRICS & NUTRITION ===
+        
+        // MUST Score
+        if (EC.getMUSTCalculator) {
+            this.registerCalculator('must', {
+                name: 'MUST Score',
+                category: TOOL_CATEGORIES.NUTRITION,
+                description: 'Malnutrition Universal Screening Tool',
+                keywords: ['must', 'malnutrition', 'nutrition', 'screening'],
+                getTemplate: () => EC.getMUSTCalculator(),
+                calculate: () => EC.calculateMUST(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Waterlow Score
+        if (EC.getWaterlowCalculator) {
+            this.registerCalculator('waterlow', {
+                name: 'Waterlow Score',
+                category: TOOL_CATEGORIES.SURGERY,
+                description: 'Pressure ulcer risk assessment',
+                keywords: ['waterlow', 'pressure', 'ulcer', 'risk'],
+                getTemplate: () => EC.getWaterlowCalculator(),
+                calculate: () => EC.calculateWaterlow(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Frailty Index
+        if (EC.getFrailtyCalculator) {
+            this.registerCalculator('frailty', {
+                name: 'Frailty Index',
+                category: TOOL_CATEGORIES.GERIATRICS,
+                description: 'Clinical frailty assessment',
+                keywords: ['frailty', 'geriatrics', 'elderly', 'assessment'],
+                getTemplate: () => EC.getFrailtyCalculator(),
+                calculate: () => EC.calculateFrailty(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Barthel Index
+        if (EC.getBarthelCalculator) {
+            this.registerCalculator('barthel', {
+                name: 'Barthel Index',
+                category: TOOL_CATEGORIES.GERIATRICS,
+                description: 'Activities of daily living assessment',
+                keywords: ['barthel', 'adl', 'independence', 'function'],
+                getTemplate: () => EC.getBarthelCalculator(),
+                calculate: () => EC.calculateBarthel(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === ORTHOPAEDIC CALCULATORS ===
+        
+        // Ottawa Ankle Rules
+        if (EC.getOttawaAnkleCalculator) {
+            this.registerCalculator('ottawa-ankle', {
+                name: 'Ottawa Ankle Rules',
+                category: TOOL_CATEGORIES.ORTHOPAEDICS,
+                description: 'Ankle fracture decision rule',
+                keywords: ['ottawa', 'ankle', 'fracture', 'xray'],
+                getTemplate: () => EC.getOttawaAnkleCalculator(),
+                calculate: () => EC.calculateOttawaAnkle(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === OBSTETRICS & PAEDIATRICS ===
+        
+        // APGAR Score
+        if (EC.getAPGARCalculator) {
+            this.registerCalculator('apgar', {
+                name: 'APGAR Score',
+                category: TOOL_CATEGORIES.PAEDIATRICS,
+                description: 'Newborn assessment score',
+                keywords: ['apgar', 'newborn', 'paediatric', 'assessment'],
+                getTemplate: () => EC.getAPGARCalculator(),
+                calculate: () => EC.calculateAPGAR(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Bishop Score
+        if (EC.getBishopCalculator) {
+            this.registerCalculator('bishop', {
+                name: 'Bishop Score',
+                category: TOOL_CATEGORIES.OBSTETRICS,
+                description: 'Cervical readiness for induction',
+                keywords: ['bishop', 'cervical', 'induction', 'labour'],
+                getTemplate: () => EC.getBishopCalculator(),
+                calculate: () => EC.calculateBishop(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === PALLIATIVE CARE ===
+        
+        // Palliative Care Calculator
+        if (EC.getPalliativeCalculator) {
+            this.registerCalculator('palliative', {
+                name: 'Palliative Care Assessment',
+                category: TOOL_CATEGORIES.PALLIATIVE,
+                description: 'Palliative care needs assessment',
+                keywords: ['palliative', 'end', 'life', 'care', 'comfort'],
+                getTemplate: () => EC.getPalliativeCalculator(),
+                calculate: () => EC.calculatePalliative(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === PHARMACOLOGY ===
+        
+        // Insulin Sliding Scale
+        if (EC.getInsulinSlidingCalculator) {
+            this.registerCalculator('insulin-sliding', {
+                name: 'Insulin Sliding Scale',
+                category: TOOL_CATEGORIES.ENDOCRINOLOGY,
+                description: 'Variable rate insulin infusion',
+                keywords: ['insulin', 'sliding', 'diabetes', 'glucose'],
+                getTemplate: () => EC.getInsulinSlidingCalculator(),
+                calculate: () => EC.calculateInsulinSliding(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Vasopressor Calculator
+        if (EC.getVasopressorCalculator) {
+            this.registerCalculator('vasopressor', {
+                name: 'Vasopressor Calculator',
+                category: TOOL_CATEGORIES.CRITICAL_CARE,
+                description: 'Inotrope/vasopressor dosing',
+                keywords: ['vasopressor', 'inotrope', 'noradrenaline', 'adrenaline'],
+                getTemplate: () => EC.getVasopressorCalculator(),
+                calculate: () => EC.calculateVasopressor(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Paediatric Dosing
+        if (EC.getPaediatricDosingCalculator) {
+            this.registerCalculator('paediatric-dosing', {
+                name: 'Paediatric Dosing',
+                category: TOOL_CATEGORIES.PAEDIATRICS,
+                description: 'Weight-based drug dosing',
+                keywords: ['paediatric', 'dosing', 'weight', 'children'],
+                getTemplate: () => EC.getPaediatricDosingCalculator(),
+                calculate: () => EC.calculatePaediatricDosing(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Drug Volume Calculator
+        if (EC.getDrugVolumeCalculator) {
+            this.registerCalculator('drug-volume', {
+                name: 'Drug Volume Calculator',
+                category: TOOL_CATEGORIES.PHARMACOLOGY,
+                description: 'Drug volume and dilution calculations',
+                keywords: ['drug', 'volume', 'dilution', 'concentration'],
+                getTemplate: () => EC.getDrugVolumeCalculator(),
+                calculate: () => EC.calculateDrugVolume(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // Unit Converter
+        if (EC.getUnitConverterCalculator) {
+            this.registerCalculator('unit-converter', {
+                name: 'Clinical Unit Converter',
+                category: TOOL_CATEGORIES.UTILITIES,
+                description: 'Convert between clinical units',
+                keywords: ['unit', 'converter', 'conversion', 'mmol', 'mg'],
+                getTemplate: () => EC.getUnitConverterCalculator(),
+                calculate: () => EC.calculateUnitConverter(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === ADDITIONAL RESPIRATORY ===
+        
+        // Asthma Calculator
+        if (EC.getAsthmaCalculator) {
+            this.registerCalculator('asthma', {
+                name: 'Asthma Severity',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'BTS/SIGN asthma severity assessment',
+                keywords: ['asthma', 'pef', 'respiratory', 'wheeze'],
+                getTemplate: () => EC.getAsthmaCalculator(),
+                calculate: () => EC.calculateAsthma(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Winters Formula
+        if (EC.getWintersCalculator) {
+            this.registerCalculator('winters', {
+                name: 'Winters Formula',
+                category: TOOL_CATEGORIES.LABORATORY,
+                description: 'Expected pCO2 in metabolic acidosis',
+                keywords: ['winters', 'pco2', 'acidosis', 'metabolic', 'compensation'],
+                getTemplate: () => EC.getWintersCalculator(),
+                calculate: () => EC.calculateWinters(),
+                bindEvents: () => {}
+            });
+        }
+
+        // === ADDITIONAL CARDIOLOGY ===
+        
+        // GRACE Score
+        if (EC.getGRACECalculator) {
+            this.registerCalculator('grace', {
+                name: 'GRACE Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Risk stratification for ACS',
+                keywords: ['grace', 'acs', 'risk', 'cardiac', 'heart'],
+                getTemplate: () => EC.getGRACECalculator(),
+                calculate: () => EC.calculateGRACE(),
+                bindEvents: () => {}
+            });
+        }
+
+        // CRUSADE Score
+        if (EC.getCRUSADECalculator) {
+            this.registerCalculator('crusade', {
+                name: 'CRUSADE Bleeding Risk',
+                category: TOOL_CATEGORIES.RISK,
+                description: 'Bleeding risk in ACS patients',
+                keywords: ['crusade', 'bleeding', 'acs', 'cardiac'],
+                getTemplate: () => EC.getCRUSADECalculator(),
+                calculate: () => EC.calculateCRUSADE(),
+                bindEvents: () => {}
+            });
+        }
+
         console.log(`✅ Bridge calculators registered: ${this.calculators.size - 6} from ExtractedCalculators`);
     }
 
@@ -378,7 +812,7 @@ export class CalculatorManager {
                 });
                 
                 // Analytics
-                analytics.trackCalculatorUsage(calculator.id);
+                analytics.trackCalculatorUse(calculator.id);
                 
                 console.log(`✅ Calculator loaded: ${calculator.name}`);
             }
