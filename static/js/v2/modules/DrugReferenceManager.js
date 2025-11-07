@@ -387,6 +387,140 @@ export class DrugReferenceManager {
             initialized: this.initialized
         };
     }
+
+    /**
+     * Assess interaction severity - Helper method
+     */
+    assessInteractionSeverity(interactionText) {
+        const text = interactionText.toLowerCase();
+        
+        // Critical severity keywords
+        if (text.includes('contraindicated') || text.includes('avoid') || 
+            text.includes('fatal') || text.includes('life-threatening')) {
+            return 'critical';
+        }
+        
+        // High severity keywords
+        if (text.includes('↑↑') || text.includes('severe') || 
+            text.includes('significant') || text.includes('major')) {
+            return 'high';
+        }
+        
+        // Moderate severity keywords
+        if (text.includes('↑') || text.includes('caution') || 
+            text.includes('monitor') || text.includes('moderate')) {
+            return 'moderate';
+        }
+        
+        return 'low';
+    }
+
+    /**
+     * Categorize pregnancy safety - Helper method
+     */
+    categorizePregancySafety(pregnancyText) {
+        const text = pregnancyText.toLowerCase();
+        
+        if (text.includes('safe') || text.includes('no evidence of harm')) {
+            return 'safe';
+        }
+        
+        if (text.includes('avoid') || text.includes('teratogenic') || 
+            text.includes('contraindicated') || text.includes('not recommended')) {
+            return 'avoid';
+        }
+        
+        if (text.includes('caution') || text.includes('specialist advice') ||
+            text.includes('risk') || text.includes('limited data')) {
+            return 'caution';
+        }
+        
+        return 'unknown';
+    }
+
+    /**
+     * Get pregnancy recommendation - Helper method
+     */
+    getPregnancyRecommendation(safetyLevel) {
+        const recommendations = {
+            'safe': 'Generally considered safe in pregnancy. Continue as prescribed.',
+            'caution': 'Use only if benefits outweigh risks. Consult specialist.',
+            'avoid': 'Avoid in pregnancy unless absolutely necessary. Seek alternatives.',
+            'unknown': 'Limited data available. Consult obstetrician or specialist.'
+        };
+        
+        return recommendations[safetyLevel] || recommendations.unknown;
+    }
+
+    /**
+     * Adjust dose for patient - Helper method
+     */
+    adjustDoseForPatient(drug, weight, age) {
+        // Basic weight-based adjustment
+        const standardWeight = 70; // kg
+        let adjustedDose = drug.dosing;
+        
+        // Pediatric dosing considerations
+        if (age < 18) {
+            adjustedDose += '\n\n⚠️ PEDIATRIC: Requires specialist dosing calculation';
+        }
+        
+        // Geriatric considerations
+        if (age >= 65) {
+            adjustedDose += '\n\n⚠️ ELDERLY: Consider reduced dose and increased monitoring';
+        }
+        
+        // Weight-based adjustment note
+        if (weight < 50 || weight > 100) {
+            adjustedDose += `\n\n⚖️ WEIGHT: Patient weight (${weight}kg) differs significantly from standard (70kg) - consider dose adjustment`;
+        }
+        
+        return adjustedDose;
+    }
+
+    /**
+     * Calculate maximum dose - Helper method
+     */
+    calculateMaxDose(drug, weight) {
+        // Extract maximum dose from dosing string if available
+        const maxDoseMatch = drug.dosing.match(/max(?:imum)?:?\s*(\d+(?:\.\d+)?)\s*(\w+)/i);
+        
+        if (maxDoseMatch) {
+            return `${maxDoseMatch[1]} ${maxDoseMatch[2]}`;
+        }
+        
+        return 'See dosing guidelines';
+    }
+
+    /**
+     * Check renal adjustment - Helper method
+     */
+    checkRenalAdjustment(drug) {
+        const contraindications = drug.contraindications?.toLowerCase() || '';
+        const dosing = drug.dosing?.toLowerCase() || '';
+        
+        if (contraindications.includes('renal') || dosing.includes('renal') ||
+            contraindications.includes('kidney') || dosing.includes('egfr')) {
+            return 'Required - check eGFR and adjust dose accordingly';
+        }
+        
+        return 'Not typically required';
+    }
+
+    /**
+     * Check hepatic adjustment - Helper method
+     */
+    checkHepaticAdjustment(drug) {
+        const contraindications = drug.contraindications?.toLowerCase() || '';
+        const dosing = drug.dosing?.toLowerCase() || '';
+        
+        if (contraindications.includes('hepatic') || dosing.includes('hepatic') ||
+            contraindications.includes('liver') || dosing.includes('child-pugh')) {
+            return 'Required - check liver function and adjust dose accordingly';
+        }
+        
+        return 'Not typically required';
+    }
 }
 
 // Export singleton instance

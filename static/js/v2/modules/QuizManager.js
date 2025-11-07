@@ -725,27 +725,107 @@ export class QuizManager {
     }
 
     /**
-     * Export quiz results (for sharing or analysis)
+     * Export quiz results (for sharing or analysis) - ENHANCED V2 IMPLEMENTATION
      */
-    exportResults() {
+    exportResults(format = 'download') {
         const score = this.calculateScore();
+        const totalQuestions = this.questions.length;
+        const percentage = Math.round((score / totalQuestions) * 100);
+        
         const results = {
             quizName: this.quizName,
             score,
+            totalQuestions,
+            percentage,
             totalTime: this.getTotalTime(),
+            averageTimePerQuestion: Math.round(this.getTotalTime() / totalQuestions),
             questionTimes: this.questionTimes,
+            flaggedCount: this.flaggedQuestions.size,
             answers: this.questions.map((q, i) => ({
-                question: q.question,
+                questionNumber: i + 1,
+                question: q.question?.substring(0, 100) + '...', // Truncated for export
                 yourAnswer: this.answers[i],
                 correctAnswer: q.correctAnswer,
                 isCorrect: this.answers[i] === q.correctAnswer,
-                timeSpent: this.questionTimes[i] || 0,
-                flagged: this.flaggedQuestions.has(i)
+                timeSpent: Math.round((this.questionTimes[i] || 0) / 1000), // Convert to seconds
+                flagged: this.flaggedQuestions.has(i),
+                ruledOutOptions: this.ruledOutAnswers[i]?.length || 0
             })),
-            completedAt: new Date().toISOString()
+            completedAt: new Date().toISOString(),
+            sessionStats: this.getStatistics(),
+            deviceInfo: {
+                platform: navigator.platform,
+                language: navigator.language,
+                userAgent: navigator.userAgent.substring(0, 100) // Truncated
+            }
         };
 
-        return results;
+        if (format === 'download') {
+            this.downloadResults(results);
+        } else {
+            return results;
+        }
+    }
+
+    /**
+     * Download results as file - NEW FEATURE
+     */
+    downloadResults(results, format = 'json') {
+        let content, filename, mimeType;
+        
+        if (format === 'json') {
+            content = JSON.stringify(results, null, 2);
+            filename = `mla-quiz-${results.quizName}-${new Date().toISOString().slice(0, 10)}.json`;
+            mimeType = 'application/json';
+        } else if (format === 'csv') {
+            content = this.convertToCSV(results);
+            filename = `mla-quiz-${results.quizName}-${new Date().toISOString().slice(0, 10)}.csv`;
+            mimeType = 'text/csv';
+        }
+        
+        const blob = new Blob([content], { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        
+        a.href = url;
+        a.download = filename;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        console.log(`📤 Quiz results exported as ${format.toUpperCase()}: ${filename}`);
+    }
+
+    /**
+     * Convert results to CSV format - NEW FEATURE
+     */
+    convertToCSV(results) {
+        const headers = ['Question #', 'Correct', 'Time (s)', 'Flagged', 'Ruled Out'];
+        const rows = [headers];
+        
+        // Add summary row
+        rows.push(['SUMMARY', '', '', '', '']);
+        rows.push(['Quiz', results.quizName, '', '', '']);
+        rows.push(['Score', `${results.score}/${results.totalQuestions} (${results.percentage}%)`, '', '', '']);
+        rows.push(['Total Time', `${Math.round(results.totalTime / 60)} minutes`, '', '', '']);
+        rows.push(['Average/Question', `${results.averageTimePerQuestion}s`, '', '', '']);
+        rows.push(['', '', '', '', '']); // Empty row
+        
+        // Add question details
+        rows.push(headers); // Headers again
+        results.answers.forEach(answer => {
+            rows.push([
+                answer.questionNumber,
+                answer.isCorrect ? 'Yes' : 'No',
+                answer.timeSpent,
+                answer.flagged ? 'Yes' : 'No',
+                answer.ruledOutOptions
+            ]);
+        });
+        
+        return rows.map(row => row.join(',')).join('\n');
     }
 
     /**
@@ -875,18 +955,50 @@ export class QuizManager {
     }
 
     /**
-     * Handle file upload (for uploaded quizzes)
+     * Handle file upload (for uploaded quizzes) - ENHANCED V2 IMPLEMENTATION
      */
     async handleFileUpload(files) {
         try {
             console.log('📁 Processing file upload...', files.length, 'files');
             
-            // Use V1 compatibility layer if available
+            // V2 Native Implementation with V1 fallback
+            const uploadResults = [];
+            
+            for (let file of files) {
+                console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
+                
+                if (file.size > 5 * 1024 * 1024) { // 5MB limit
+                    uploadResults.push({
+                        filename: file.name,
+                        success: false,
+                        error: 'File too large (max 5MB)'
+                    });
+                    continue;
+                }
+                
+                if (file.name.endsWith('.md')) {
+                    const result = await this.processMarkdownFile(file);
+                    uploadResults.push(result);
+                } else if (file.name.endsWith('.zip')) {
+                    const result = await this.processZipFile(file);
+                    uploadResults.push(result);
+                } else {
+                    uploadResults.push({
+                        filename: file.name,
+                        success: false,
+                        error: 'Unsupported file type (only .md and .zip allowed)'
+                    });
+                }
+            }
+            
+            // Update quiz list and show results
+            eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
+            this.showUploadResults(uploadResults);
+            
+            // Use V1 compatibility layer as fallback
             if (window.quizApp && typeof window.quizApp.handleFileUpload === 'function') {
-                console.log('📤 Using V1 upload handler');
+                console.log('📤 Also running V1 upload handler for compatibility');
                 await window.quizApp.handleFileUpload(files);
-                eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
-                return;
             }
             
             // V2 implementation: upload to server
@@ -940,6 +1052,238 @@ export class QuizManager {
             console.error('❌ Error handling file upload:', error);
             throw error;
         }
+    }
+
+    /**
+     * File processing helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    async processMarkdownFile(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            
+            reader.onload = (e) => {
+                try {
+                    const content = e.target.result;
+                    const questions = this.parseMarkdownQuiz(content);
+                    
+                    if (questions.length === 0) {
+                        reject(new Error('No valid questions found in markdown file'));
+                        return;
+                    }
+                    
+                    const quizName = file.name.replace('.md', '');
+                    resolve({
+                        name: quizName,
+                        questions,
+                        questionCount: questions.length,
+                        isUploaded: true,
+                        uploadTimestamp: Date.now()
+                    });
+                } catch (error) {
+                    reject(new Error(`Failed to parse markdown: ${error.message}`));
+                }
+            };
+            
+            reader.onerror = () => reject(new Error('Failed to read file'));
+            reader.readAsText(file);
+        });
+    }
+
+    parseMarkdownQuiz(content) {
+        const questions = [];
+        const questionBlocks = content.split(/\n(?=\d+\.\s)/);
+        
+        for (const block of questionBlocks) {
+            if (!block.trim()) continue;
+            
+            const lines = block.split('\n').filter(l => l.trim());
+            if (lines.length < 2) continue;
+            
+            const questionMatch = lines[0].match(/^\d+\.\s+(.+)/);
+            if (!questionMatch) continue;
+            
+            const question = questionMatch[1];
+            const options = [];
+            let correctAnswer = null;
+            let explanation = '';
+            
+            for (let i = 1; i < lines.length; i++) {
+                const line = lines[i].trim();
+                
+                if (line.match(/^[A-D]\.\s/)) {
+                    const optionText = line.substring(3);
+                    options.push(optionText);
+                    
+                    if (line.includes('*') || line.includes('**') || lines[i+1]?.includes('Correct')) {
+                        correctAnswer = String.fromCharCode(65 + options.length - 1);
+                    }
+                } else if (line.toLowerCase().startsWith('explanation:')) {
+                    explanation = line.substring(12).trim();
+                } else if (line.toLowerCase().startsWith('answer:')) {
+                    const answerMatch = line.match(/answer:\s*([A-D])/i);
+                    if (answerMatch) correctAnswer = answerMatch[1].toUpperCase();
+                }
+            }
+            
+            if (question && options.length >= 2 && correctAnswer) {
+                questions.push({
+                    question,
+                    options,
+                    correctAnswer,
+                    explanation: explanation || `The correct answer is ${correctAnswer}.`
+                });
+            }
+        }
+        
+        return questions;
+    }
+
+    async processZipFile(file) {
+        // For zip files, we'll need JSZip library or send to server
+        // This is a placeholder for server-side processing
+        const formData = new FormData();
+        formData.append('quiz_file', file);
+        
+        const response = await fetch('/api/upload-quiz', {
+            method: 'POST',
+            body: formData
+        });
+        
+        if (!response.ok) {
+            throw new Error(`Upload failed: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        if (!data.success) {
+            throw new Error(data.error || 'Upload failed');
+        }
+        
+        return {
+            name: data.quiz_name,
+            questions: data.questions,
+            questionCount: data.total_questions,
+            isUploaded: true,
+            images: data.images || {},
+            uploadTimestamp: Date.now()
+        };
+    }
+
+    showUploadResults(results) {
+        if (!results || results.length === 0) {
+            UIHelpers.showToast('No quizzes uploaded', 'warning');
+            return;
+        }
+        
+        const totalQuestions = results.reduce((sum, r) => sum + r.questionCount, 0);
+        const quizNames = results.map(r => r.name).join(', ');
+        
+        UIHelpers.showToast(
+            `Successfully uploaded ${results.length} quiz(es): ${quizNames} (${totalQuestions} questions total)`,
+            'success'
+        );
+        
+        // Update UI to show new quizzes
+        eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
+    }
+
+    /**
+     * Analytics helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    getSessionCount() {
+        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+        return history.length;
+    }
+
+    getAverageScore() {
+        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+        
+        if (history.length === 0) return 0;
+        
+        const totalPercentage = history.reduce((sum, session) => {
+            return sum + (session.percentage || 0);
+        }, 0);
+        
+        return Math.round(totalPercentage / history.length);
+    }
+
+    getImprovementTrend() {
+        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+        
+        if (history.length < 2) return { trend: 'insufficient_data', change: 0 };
+        
+        // Get last 5 sessions vs previous 5 sessions
+        const recentSessions = history.slice(-5);
+        const previousSessions = history.slice(-10, -5);
+        
+        if (previousSessions.length === 0) {
+            return { trend: 'new', change: 0 };
+        }
+        
+        const recentAvg = recentSessions.reduce((sum, s) => sum + (s.percentage || 0), 0) / recentSessions.length;
+        const previousAvg = previousSessions.reduce((sum, s) => sum + (s.percentage || 0), 0) / previousSessions.length;
+        
+        const change = Math.round(recentAvg - previousAvg);
+        
+        let trend;
+        if (change > 5) trend = 'improving';
+        else if (change < -5) trend = 'declining';
+        else trend = 'stable';
+        
+        return { trend, change };
+    }
+
+    getTotalStudyTime() {
+        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+        
+        if (history.length === 0) return 0;
+        
+        return history.reduce((total, session) => {
+            return total + (session.totalTime || 0);
+        }, 0);
+    }
+
+    getStrengthsAndWeaknesses() {
+        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+        
+        const topicPerformance = {};
+        
+        for (const session of history) {
+            const topic = session.quizName || 'Unknown';
+            
+            if (!topicPerformance[topic]) {
+                topicPerformance[topic] = {
+                    attempts: 0,
+                    totalScore: 0,
+                    avgScore: 0
+                };
+            }
+            
+            topicPerformance[topic].attempts++;
+            topicPerformance[topic].totalScore += session.percentage || 0;
+            topicPerformance[topic].avgScore = Math.round(
+                topicPerformance[topic].totalScore / topicPerformance[topic].attempts
+            );
+        }
+        
+        const topics = Object.entries(topicPerformance)
+            .sort((a, b) => b[1].avgScore - a[1].avgScore);
+        
+        const strengths = topics.slice(0, 3).map(([name, data]) => ({
+            topic: name,
+            avgScore: data.avgScore,
+            attempts: data.attempts
+        }));
+        
+        const weaknesses = topics.slice(-3).reverse().map(([name, data]) => ({
+            topic: name,
+            avgScore: data.avgScore,
+            attempts: data.attempts
+        }));
+        
+        return { strengths, weaknesses };
     }
 }
 

@@ -651,11 +651,12 @@ export class UIManager {
     }
 
     /**
-     * Setup rotation lock button
+     * Setup rotation lock button - ENHANCED V2 IMPLEMENTATION
      */
     setupRotationLock() {
         // Load saved state
         this.rotationLocked = storage.getItem('rotationLocked', false) === 'true';
+        this.lockedOrientation = storage.getItem('lockedOrientation', 'portrait');
         
         const rotLockBtn = document.getElementById('rotLock');
         if (!rotLockBtn) {
@@ -663,20 +664,105 @@ export class UIManager {
             return;
         }
 
-        // Set initial icon
+        // Set initial icon and enhanced styling
         this.updateRotationLockIcon(rotLockBtn);
+        
+        // Enhanced button styling
+        rotLockBtn.style.cssText += `
+            transition: all 0.2s ease;
+            transform: scale(${this.rotationLocked ? '1.1' : '1.0'});
+            color: ${this.rotationLocked ? '#ff6b6b' : 'var(--text-secondary)'};
+        `;
 
-        // Add click handler
+        // Add click handler with haptic feedback
         rotLockBtn.addEventListener('click', () => {
+            analytics.vibrateClick();
             this.toggleRotationLock();
         });
+
+        // Setup enhanced orientation detection
+        this.setupOrientationDetection();
 
         // Apply initial lock state
         if (this.rotationLocked) {
             this.lockOrientation();
         }
 
-        console.log('✅ Rotation lock button initialized');
+        console.log('✅ Enhanced rotation lock system initialized');
+    }
+
+    /**
+     * Setup orientation detection and management - NEW FEATURE
+     */
+    setupOrientationDetection() {
+        // Store current orientation
+        this.currentOrientation = this.getCurrentOrientation();
+        
+        // Listen for orientation changes with enhanced detection
+        const handleOrientationChange = () => {
+            // Multiple timeouts for better compatibility across devices
+            setTimeout(() => this.processOrientationChange(), 50);
+            setTimeout(() => this.processOrientationChange(), 150);
+            setTimeout(() => this.processOrientationChange(), 300);
+        };
+        
+        // Multiple event listeners for better cross-browser support
+        window.addEventListener('orientationchange', handleOrientationChange);
+        window.addEventListener('resize', handleOrientationChange);
+        
+        // Modern Screen Orientation API
+        if (screen.orientation) {
+            screen.orientation.addEventListener('change', handleOrientationChange);
+        }
+        
+        // Visual Viewport API (for mobile browsers)
+        if (window.visualViewport) {
+            window.visualViewport.addEventListener('resize', handleOrientationChange);
+        }
+    }
+
+    /**
+     * Process orientation change - NEW FEATURE
+     */
+    processOrientationChange() {
+        const newOrientation = this.getCurrentOrientation();
+        
+        if (newOrientation !== this.currentOrientation) {
+            console.log(`📱 Orientation changed: ${this.currentOrientation} → ${newOrientation}`);
+            
+            if (this.rotationLocked && newOrientation !== this.lockedOrientation) {
+                console.log('🔒 Enforcing orientation lock...');
+                this.enforceOrientationLock();
+            } else {
+                this.currentOrientation = newOrientation;
+                this.adjustLayoutForOrientation(newOrientation);
+                
+                // Vibrate on successful orientation change when not locked
+                if (!this.rotationLocked) {
+                    analytics.vibrateClick();
+                }
+            }
+        }
+    }
+
+    /**
+     * Get current device orientation - NEW FEATURE
+     */
+    getCurrentOrientation() {
+        // Modern Screen Orientation API (most accurate)
+        if (screen.orientation) {
+            const angle = screen.orientation.angle;
+            return (angle === 0 || angle === 180) ? 'portrait' : 'landscape';
+        }
+        
+        // Legacy orientation API
+        if (typeof window.orientation !== 'undefined') {
+            const angle = Math.abs(window.orientation);
+            return (angle === 0 || angle === 180) ? 'portrait' : 'landscape';
+        }
+        
+        // Fallback: use window dimensions
+        return window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
     }
 
     /**
@@ -837,6 +923,206 @@ export class UIManager {
      */
     isHapticsEnabled() {
         return this.hapticsEnabled;
+    }
+
+    /**
+     * Orientation enforcement helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    async enforceOrientationLock(orientation = 'portrait-primary') {
+        // Try multiple methods to enforce orientation
+        const methods = [
+            () => this.useScreenOrientationAPI(orientation),
+            () => this.useFullscreenOrientation(orientation),
+            () => this.useCSSOrientationLock(orientation),
+            () => this.useVisualHints(orientation)
+        ];
+        
+        for (const method of methods) {
+            try {
+                const result = await method();
+                if (result.success) {
+                    console.log(`✅ Orientation locked using: ${result.method}`);
+                    return result;
+                }
+            } catch (error) {
+                console.warn(`⚠️ Orientation method failed:`, error);
+            }
+        }
+        
+        // All methods failed, use visual hint as fallback
+        return this.useVisualHints(orientation);
+    }
+
+    async useScreenOrientationAPI(orientation) {
+        if (!screen.orientation || !screen.orientation.lock) {
+            throw new Error('Screen Orientation API not supported');
+        }
+        
+        try {
+            await screen.orientation.lock(orientation);
+            return { success: true, method: 'Screen Orientation API' };
+        } catch (error) {
+            throw new Error(`Screen Orientation API failed: ${error.message}`);
+        }
+    }
+
+    async useFullscreenOrientation(orientation) {
+        const docEl = document.documentElement;
+        
+        if (!docEl.requestFullscreen) {
+            throw new Error('Fullscreen API not supported');
+        }
+        
+        try {
+            await docEl.requestFullscreen({ orientationLock: orientation });
+            return { success: true, method: 'Fullscreen with orientation lock' };
+        } catch (error) {
+            throw new Error(`Fullscreen orientation failed: ${error.message}`);
+        }
+    }
+
+    useCSSOrientationLock(orientation) {
+        // Apply CSS transforms to maintain portrait layout in landscape
+        const isPortrait = orientation.includes('portrait');
+        
+        if (!isPortrait && this.getCurrentOrientation() === 'landscape') {
+            document.body.style.transform = 'rotate(90deg)';
+            document.body.style.transformOrigin = 'center center';
+            document.body.style.width = '100vh';
+            document.body.style.height = '100vw';
+            document.body.style.overflow = 'hidden';
+            
+            return { success: true, method: 'CSS Transform Lock' };
+        }
+        
+        // Reset transforms if in correct orientation
+        document.body.style.transform = '';
+        document.body.style.transformOrigin = '';
+        document.body.style.width = '';
+        document.body.style.height = '';
+        
+        return { success: false, method: 'CSS Transform' };
+    }
+
+    useVisualHints(orientation) {
+        const isPortrait = orientation.includes('portrait');
+        const currentOrientation = this.getCurrentOrientation();
+        
+        if ((isPortrait && currentOrientation !== 'portrait') ||
+            (!isPortrait && currentOrientation !== 'landscape')) {
+            this.showOrientationHint(isPortrait ? 'portrait' : 'landscape');
+        } else {
+            this.hideOrientationHint();
+        }
+        
+        return { success: true, method: 'Visual Hint' };
+    }
+
+    async requestFullscreenForOrientation() {
+        const docEl = document.documentElement;
+        
+        try {
+            if (docEl.requestFullscreen) {
+                await docEl.requestFullscreen();
+            } else if (docEl.webkitRequestFullscreen) {
+                await docEl.webkitRequestFullscreen();
+            } else if (docEl.msRequestFullscreen) {
+                await docEl.msRequestFullscreen();
+            } else {
+                throw new Error('Fullscreen API not supported');
+            }
+            
+            return { success: true };
+        } catch (error) {
+            console.error('Fullscreen request failed:', error);
+            return { success: false, error: error.message };
+        }
+    }
+
+    adjustLayoutForOrientation(orientation) {
+        const body = document.body;
+        const main = document.querySelector('main');
+        
+        if (!main) return;
+        
+        // Remove previous orientation classes
+        body.classList.remove('orientation-portrait', 'orientation-landscape');
+        
+        // Add current orientation class
+        body.classList.add(`orientation-${orientation}`);
+        
+        // Adjust layout based on orientation
+        if (orientation === 'landscape') {
+            // Optimize for landscape: wider panels, side-by-side layouts
+            main.style.maxWidth = '100%';
+            main.style.padding = '10px 20px';
+            
+            // Make panels wider in landscape
+            const panels = document.querySelectorAll('.panel');
+            panels.forEach(panel => {
+                panel.style.maxWidth = '100%';
+            });
+        } else {
+            // Optimize for portrait: narrower, stacked layouts
+            main.style.maxWidth = '800px';
+            main.style.padding = '10px';
+            
+            // Reset panel widths
+            const panels = document.querySelectorAll('.panel');
+            panels.forEach(panel => {
+                panel.style.maxWidth = '';
+            });
+        }
+        
+        console.log(`📱 Layout adjusted for ${orientation} orientation`);
+    }
+
+    showOrientationHint(targetOrientation) {
+        // Remove existing hint
+        this.hideOrientationHint();
+        
+        // Create hint overlay
+        const hint = document.createElement('div');
+        hint.id = 'orientation-hint';
+        hint.className = 'orientation-hint';
+        hint.innerHTML = `
+            <div class="orientation-hint-content">
+                <div class="orientation-hint-icon">
+                    ${targetOrientation === 'portrait' ? '📱' : '🔄'}
+                </div>
+                <div class="orientation-hint-text">
+                    Please rotate your device to ${targetOrientation} mode
+                </div>
+                <button class="orientation-hint-dismiss" onclick="this.parentElement.parentElement.remove()">
+                    Dismiss
+                </button>
+            </div>
+        `;
+        
+        // Add styles
+        hint.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeIn 0.3s ease;
+        `;
+        
+        document.body.appendChild(hint);
+    }
+
+    hideOrientationHint() {
+        const hint = document.getElementById('orientation-hint');
+        if (hint) {
+            hint.remove();
+        }
     }
 }
 

@@ -500,6 +500,210 @@ export class EmergencyProtocolsManager {
     clearCache() {
         this.searchCache.clear();
     }
+
+    /**
+     * Emergency dosage calculation helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    calculateWeightBasedDose(drugName, weight, indication = '') {
+        // Common weight-based emergency drug dosages
+        const dosageDatabase = {
+            'adrenaline': {
+                'cardiac-arrest': { dose: 0.01, unit: 'mg/kg', max: 1, route: 'IV' },
+                'anaphylaxis': { dose: 0.01, unit: 'mg/kg', max: 0.5, route: 'IM' },
+                'default': { dose: 0.01, unit: 'mg/kg', max: 1, route: 'IV/IM' }
+            },
+            'epinephrine': {
+                'cardiac-arrest': { dose: 0.01, unit: 'mg/kg', max: 1, route: 'IV' },
+                'anaphylaxis': { dose: 0.01, unit: 'mg/kg', max: 0.5, route: 'IM' },
+                'default': { dose: 0.01, unit: 'mg/kg', max: 1, route: 'IV/IM' }
+            },
+            'amiodarone': {
+                'vf-vt': { dose: 5, unit: 'mg/kg', max: 300, route: 'IV bolus' },
+                'default': { dose: 5, unit: 'mg/kg', max: 300, route: 'IV' }
+            },
+            'atropine': {
+                'bradycardia': { dose: 0.02, unit: 'mg/kg', min: 0.5, max: 3, route: 'IV' },
+                'default': { dose: 0.02, unit: 'mg/kg', min: 0.5, max: 3, route: 'IV' }
+            },
+            'adenosine': {
+                'svt': { dose: 0.1, unit: 'mg/kg', initial: 6, max: 12, route: 'Rapid IV push' },
+                'default': { dose: 0.1, unit: 'mg/kg', initial: 6, max: 12, route: 'IV' }
+            },
+            'glucose': {
+                'hypoglycaemia': { dose: 0.5, unit: 'g/kg', max: 25, concentration: '10% or 50%', route: 'IV' },
+                'default': { dose: 0.5, unit: 'g/kg', max: 25, route: 'IV' }
+            },
+            'midazolam': {
+                'seizure': { dose: 0.1, unit: 'mg/kg', max: 10, route: 'Buccal/IM/IV' },
+                'default': { dose: 0.1, unit: 'mg/kg', max: 10, route: 'Buccal/IM/IV' }
+            },
+            'diazepam': {
+                'seizure': { dose: 0.2, unit: 'mg/kg', max: 10, route: 'IV/PR' },
+                'default': { dose: 0.2, unit: 'mg/kg', max: 10, route: 'IV/PR' }
+            }
+        };
+        
+        const drug = dosageDatabase[drugName.toLowerCase()];
+        if (!drug) {
+            return {
+                success: false,
+                error: `Dosage information not available for ${drugName}`,
+                suggestion: 'Please consult drug reference or formulary'
+            };
+        }
+        
+        const dosageInfo = drug[indication.toLowerCase()] || drug['default'];
+        const calculatedDose = dosageInfo.dose * weight;
+        
+        let finalDose = calculatedDose;
+        if (dosageInfo.max && calculatedDose > dosageInfo.max) {
+            finalDose = dosageInfo.max;
+        }
+        if (dosageInfo.min && calculatedDose < dosageInfo.min) {
+            finalDose = dosageInfo.min;
+        }
+        
+        return {
+            success: true,
+            drug: drugName,
+            indication: indication || 'default',
+            weight: weight,
+            calculatedDose: Math.round(calculatedDose * 100) / 100,
+            recommendedDose: Math.round(finalDose * 100) / 100,
+            unit: dosageInfo.unit,
+            route: dosageInfo.route,
+            initial: dosageInfo.initial,
+            max: dosageInfo.max,
+            min: dosageInfo.min,
+            concentration: dosageInfo.concentration,
+            warning: calculatedDose !== finalDose ? 
+                `Dose adjusted from ${calculatedDose.toFixed(2)} to ${finalDose.toFixed(2)} ${dosageInfo.unit}` : null
+        };
+    }
+
+    getCriticalSeverity(vitalSigns) {
+        // Assess severity based on vital signs
+        let severity = 'stable';
+        const alerts = [];
+        
+        if (!vitalSigns) return { severity, alerts };
+        
+        // Heart rate assessment
+        if (vitalSigns.heartRate) {
+            if (vitalSigns.heartRate < 40) {
+                severity = 'critical';
+                alerts.push('Severe bradycardia - immediate intervention required');
+            } else if (vitalSigns.heartRate > 150) {
+                severity = severity === 'critical' ? 'critical' : 'severe';
+                alerts.push('Severe tachycardia - urgent assessment needed');
+            } else if (vitalSigns.heartRate < 50 || vitalSigns.heartRate > 120) {
+                severity = severity === 'critical' || severity === 'severe' ? severity : 'moderate';
+                alerts.push('Abnormal heart rate - monitor closely');
+            }
+        }
+        
+        // Blood pressure assessment
+        if (vitalSigns.systolicBP) {
+            if (vitalSigns.systolicBP < 90) {
+                severity = 'critical';
+                alerts.push('Hypotension - immediate fluid resuscitation/vasopressors');
+            } else if (vitalSigns.systolicBP > 200) {
+                severity = severity === 'critical' ? 'critical' : 'severe';
+                alerts.push('Hypertensive emergency - urgent treatment');
+            }
+        }
+        
+        // Respiratory rate assessment
+        if (vitalSigns.respiratoryRate) {
+            if (vitalSigns.respiratoryRate < 8 || vitalSigns.respiratoryRate > 30) {
+                severity = 'critical';
+                alerts.push('Critical respiratory rate - airway support may be needed');
+            } else if (vitalSigns.respiratoryRate < 10 || vitalSigns.respiratoryRate > 24) {
+                severity = severity === 'critical' ? 'critical' : 'severe';
+                alerts.push('Abnormal respiratory rate - oxygen therapy and monitoring');
+            }
+        }
+        
+        // Oxygen saturation assessment
+        if (vitalSigns.oxygenSaturation) {
+            if (vitalSigns.oxygenSaturation < 90) {
+                severity = 'critical';
+                alerts.push('Critical hypoxia - high-flow oxygen immediately');
+            } else if (vitalSigns.oxygenSaturation < 94) {
+                severity = severity === 'critical' ? 'critical' : 'moderate';
+                alerts.push('Hypoxia - supplemental oxygen required');
+            }
+        }
+        
+        // GCS assessment
+        if (vitalSigns.gcs) {
+            if (vitalSigns.gcs <= 8) {
+                severity = 'critical';
+                alerts.push('Severe impairment (GCS ≤8) - airway protection required');
+            } else if (vitalSigns.gcs <= 12) {
+                severity = severity === 'critical' ? 'critical' : 'severe';
+                alerts.push('Moderate impairment - close neurological monitoring');
+            }
+        }
+        
+        // Temperature assessment
+        if (vitalSigns.temperature) {
+            if (vitalSigns.temperature < 35 || vitalSigns.temperature > 40) {
+                severity = severity === 'critical' ? 'critical' : 'severe';
+                alerts.push('Severe temperature abnormality - active warming/cooling required');
+            }
+        }
+        
+        return { severity, alerts, criticalCount: alerts.length };
+    }
+
+    getCriticalActions(protocolId, severity = 'moderate') {
+        // Return prioritized critical actions based on protocol and severity
+        const protocol = this.emergencyProtocols[protocolId];
+        if (!protocol) return [];
+        
+        const criticalActions = [];
+        
+        // Always include first 3 steps as critical
+        protocol.steps.slice(0, 3).forEach((step, index) => {
+            criticalActions.push({
+                priority: index + 1,
+                action: step,
+                timing: index === 0 ? 'IMMEDIATE' : index === 1 ? 'Within 5 min' : 'Within 10 min',
+                critical: true
+            });
+        });
+        
+        // Add severity-specific actions
+        if (severity === 'critical') {
+            criticalActions.unshift({
+                priority: 0,
+                action: 'Call for senior help immediately (emergency team/consultant)',
+                timing: 'IMMEDIATE',
+                critical: true
+            });
+            
+            criticalActions.splice(2, 0, {
+                priority: 1.5,
+                action: 'Ensure IV/IO access and continuous monitoring',
+                timing: 'IMMEDIATE',
+                critical: true
+            });
+        }
+        
+        // Add drug administration if available
+        if (protocol.drugs && protocol.drugs.length > 0) {
+            criticalActions.push({
+                priority: 4,
+                action: `Prepare emergency medications: ${protocol.drugs.slice(0, 3).join(', ')}`,
+                timing: 'Within 5 min',
+                critical: severity === 'critical' || severity === 'severe'
+            });
+        }
+        
+        return criticalActions.sort((a, b) => a.priority - b.priority);
+    }
 }
 
 // Export singleton instance

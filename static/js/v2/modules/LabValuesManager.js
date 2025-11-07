@@ -339,6 +339,314 @@ export class LabValuesManager {
             clinicalSignificance: test.clinicalSignificance
         };
     }
+
+    /**
+     * Lab interpretation helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    getLabInterpretation(testName, value) {
+        const interpretations = {
+            'sodium': {
+                ranges: [
+                    { min: 0, max: 125, status: 'critically low', action: 'URGENT: Severe hyponatraemia - immediate senior review, assess clinically, consider hypertonic saline' },
+                    { min: 125, max: 135, status: 'low', action: 'Hyponatraemia - assess fluid status, review medications, check paired osmolality' },
+                    { min: 135, max: 145, status: 'normal', action: 'Normal sodium level' },
+                    { min: 145, max: 155, status: 'high', action: 'Hypernatraemia - assess hydration, fluid losses, review medications' },
+                    { min: 155, max: 999, status: 'critically high', action: 'URGENT: Severe hypernatraemia - immediate senior review, correct slowly' }
+                ]
+            },
+            'potassium': {
+                ranges: [
+                    { min: 0, max: 2.5, status: 'critically low', action: 'CRITICAL: Severe hypokalaemia - cardiac monitoring, urgent IV replacement, ECG' },
+                    { min: 2.5, max: 3.5, status: 'low', action: 'Hypokalaemia - oral/IV potassium replacement, review medications, check magnesium' },
+                    { min: 3.5, max: 5.0, status: 'normal', action: 'Normal potassium level' },
+                    { min: 5.0, max: 6.0, status: 'high', action: 'Hyperkalaemia - repeat urgent, ECG, consider treatment, review medications' },
+                    { min: 6.0, max: 999, status: 'critically high', action: 'CRITICAL: Severe hyperkalaemia - ECG immediately, calcium gluconate, insulin/dextrose, senior review' }
+                ]
+            },
+            'creatinine': {
+                ranges: [
+                    { min: 0, max: 60, status: 'low', action: 'Low creatinine - may indicate low muscle mass, malnutrition' },
+                    { min: 60, max: 120, status: 'normal', action: 'Normal renal function' },
+                    { min: 120, max: 200, status: 'mildly elevated', action: 'Mild renal impairment - calculate eGFR, review medications, hydration' },
+                    { min: 200, max: 400, status: 'elevated', action: 'Moderate-severe renal impairment - nephrology input, adjust drug doses' },
+                    { min: 400, max: 999, status: 'critically high', action: 'URGENT: Severe renal impairment - urgent nephrology review, consider dialysis' }
+                ]
+            },
+            'glucose': {
+                ranges: [
+                    { min: 0, max: 3.0, status: 'critically low', action: 'CRITICAL: Severe hypoglycaemia - immediate glucose/dextrose, assess causes' },
+                    { min: 3.0, max: 4.0, status: 'low', action: 'Hypoglycaemia - oral glucose if conscious, review medications' },
+                    { min: 4.0, max: 7.0, status: 'normal (fasting)', action: 'Normal fasting glucose' },
+                    { min: 7.0, max: 11.0, status: 'elevated', action: 'Hyperglycaemia - check HbA1c, assess for diabetes, lifestyle advice' },
+                    { min: 11.0, max: 999, status: 'high', action: 'Significant hyperglycaemia - diabetic review, check ketones, insulin therapy' }
+                ]
+            },
+            'haemoglobin': {
+                ranges: [
+                    { min: 0, max: 70, status: 'critically low', action: 'CRITICAL: Severe anaemia - urgent transfusion, investigate cause immediately' },
+                    { min: 70, max: 100, status: 'low', action: 'Moderate anaemia - investigate cause, consider iron studies, B12, folate' },
+                    { min: 100, max: 130, status: 'mild anaemia', action: 'Mild anaemia - screen for causes, iron studies, dietary advice' },
+                    { min: 130, max: 180, status: 'normal', action: 'Normal haemoglobin' },
+                    { min: 180, max: 999, status: 'high', action: 'Polycythaemia - investigate cause, consider haematology review' }
+                ]
+            },
+            'wbc': {
+                ranges: [
+                    { min: 0, max: 2.0, status: 'critically low', action: 'URGENT: Severe leucopenia - infection risk, avoid crowds, urgent haematology' },
+                    { min: 2.0, max: 4.0, status: 'low', action: 'Leucopenia - review medications, consider causes' },
+                    { min: 4.0, max: 11.0, status: 'normal', action: 'Normal white cell count' },
+                    { min: 11.0, max: 20.0, status: 'elevated', action: 'Leucocytosis - assess for infection, inflammation, stress response' },
+                    { min: 20.0, max: 999, status: 'critically high', action: 'URGENT: Severe leucocytosis - infection/malignancy, urgent senior review' }
+                ]
+            }
+        };
+        
+        const testData = interpretations[testName.toLowerCase()];
+        if (!testData) {
+            return {
+                value,
+                status: 'unknown',
+                action: 'Please consult laboratory reference ranges',
+                ranges: null
+            };
+        }
+        
+        const range = testData.ranges.find(r => value >= r.min && value < r.max);
+        if (!range) {
+            return {
+                value,
+                status: 'out of range',
+                action: 'Value outside expected ranges - urgent review required',
+                ranges: testData.ranges
+            };
+        }
+        
+        return {
+            value,
+            status: range.status,
+            action: range.action,
+            isCritical: range.status.includes('critically'),
+            ranges: testData.ranges
+        };
+    }
+
+    calculateTrend(values) {
+        if (!values || values.length < 2) {
+            return { trend: 'insufficient data', slope: 0 };
+        }
+        
+        // Simple linear regression to calculate trend
+        const n = values.length;
+        let sumX = 0, sumY = 0, sumXY = 0, sumX2 = 0;
+        
+        values.forEach((point, index) => {
+            const x = index;
+            const y = point.value;
+            sumX += x;
+            sumY += y;
+            sumXY += x * y;
+            sumX2 += x * x;
+        });
+        
+        const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+        const intercept = (sumY - slope * sumX) / n;
+        
+        // Calculate R-squared for trend strength
+        const yMean = sumY / n;
+        let ssTotal = 0, ssResidual = 0;
+        
+        values.forEach((point, index) => {
+            const predicted = slope * index + intercept;
+            ssTotal += Math.pow(point.value - yMean, 2);
+            ssResidual += Math.pow(point.value - predicted, 2);
+        });
+        
+        const rSquared = 1 - (ssResidual / ssTotal);
+        
+        return {
+            trend: slope > 0.1 ? 'increasing' : slope < -0.1 ? 'decreasing' : 'stable',
+            slope,
+            intercept,
+            strength: rSquared,
+            predictedNext: slope * n + intercept
+        };
+    }
+
+    assessTrendSignificance(testName, trendData, currentValue) {
+        const { slope, trend } = trendData;
+        
+        if (trend === 'insufficient data') {
+            return { significant: false, message: 'Need more data points for trend analysis' };
+        }
+        
+        // Assess clinical significance based on test type and rate of change
+        const significanceThresholds = {
+            'potassium': { critical: 0.5, significant: 0.3 },
+            'sodium': { critical: 3, significant: 2 },
+            'creatinine': { critical: 50, significant: 30 },
+            'haemoglobin': { critical: 20, significant: 10 },
+            'wbc': { critical: 5, significant: 3 },
+            'default': { critical: 10, significant: 5 }
+        };
+        
+        const threshold = significanceThresholds[testName.toLowerCase()] || significanceThresholds['default'];
+        const absSlope = Math.abs(slope);
+        
+        let significance;
+        if (absSlope >= threshold.critical) {
+            significance = 'critical';
+        } else if (absSlope >= threshold.significant) {
+            significance = 'significant';
+        } else {
+            significance = 'minor';
+        }
+        
+        return {
+            significant: significance !== 'minor',
+            severity: significance,
+            message: `${testName} showing ${trend} trend (rate: ${slope.toFixed(2)} per reading)`,
+            recommendation: this.getTrendRecommendation(testName, trend, significance)
+        };
+    }
+
+    getTrendRecommendation(testName, trend, significance) {
+        if (significance === 'critical') {
+            return `URGENT: Critical ${trend} trend in ${testName} - immediate senior review and intervention required`;
+        }
+        
+        if (significance === 'significant') {
+            if (trend === 'increasing') {
+                return `Significant rising ${testName} - increase monitoring frequency, review management plan`;
+            } else if (trend === 'decreasing') {
+                return `Significant falling ${testName} - increase monitoring frequency, assess for causes`;
+            }
+        }
+        
+        return `${testName} trend stable - continue routine monitoring`;
+    }
+
+    getCriticalThresholds(testName) {
+        const thresholds = {
+            'potassium': { low: 2.5, high: 6.0, unit: 'mmol/L' },
+            'sodium': { low: 125, high: 155, unit: 'mmol/L' },
+            'glucose': { low: 3.0, high: 20.0, unit: 'mmol/L' },
+            'haemoglobin': { low: 70, high: 200, unit: 'g/L' },
+            'wbc': { low: 2.0, high: 20.0, unit: '×10⁹/L' },
+            'platelets': { low: 50, high: 1000, unit: '×10⁹/L' },
+            'creatinine': { low: null, high: 400, unit: 'μmol/L' },
+            'bilirubin': { low: null, high: 100, unit: 'μmol/L' },
+            'inr': { low: null, high: 5.0, unit: '' },
+            'troponin': { low: null, high: 50, unit: 'ng/L' }
+        };
+        
+        return thresholds[testName.toLowerCase()] || null;
+    }
+
+    getCriticalSeverity(testName, value, critical) {
+        if (!critical) return 0;
+        
+        let severityScore = 0;
+        
+        if (critical.low !== null && value < critical.low) {
+            const deviation = (critical.low - value) / critical.low;
+            severityScore = Math.min(10, Math.floor(deviation * 10) + 5);
+        }
+        
+        if (critical.high !== null && value > critical.high) {
+            const deviation = (value - critical.high) / critical.high;
+            severityScore = Math.min(10, Math.floor(deviation * 10) + 5);
+        }
+        
+        return severityScore;
+    }
+
+    getCriticalActions(testName, value) {
+        const actions = {
+            'potassium': [
+                'Urgent ECG - assess for hyperkalaemia/hypokalaemia changes',
+                'Repeat urgent sample to confirm',
+                'Review medications (ACEi, ARBs, spironolactone, NSAIDs)',
+                'Senior/critical care review if >6.5 or <2.5'
+            ],
+            'sodium': [
+                'Assess clinical status and hydration',
+                'Paired serum and urine osmolality',
+                'Review fluid balance and medications',
+                'Correct slowly to avoid complications'
+            ],
+            'glucose': [
+                'Check consciousness level and vital signs',
+                'If <3.0: immediate glucose 15-20g or IV dextrose',
+                'If >20: check ketones, assess for DKA',
+                'Senior review and insulin sliding scale if indicated'
+            ],
+            'haemoglobin': [
+                'Assess for active bleeding and haemodynamic stability',
+                'Group and save / crossmatch if <80',
+                'Transfusion threshold: <70 (or <80 if cardiac disease)',
+                'Investigate cause: FBC, iron studies, B12, folate'
+            ],
+            'creatinine': [
+                'Calculate eGFR and assess for AKI',
+                'Review medications and adjust renal doses',
+                'Fluid balance assessment',
+                'Urgent nephrology if >400 or rapidly rising'
+            ]
+        };
+        
+        return actions[testName.toLowerCase()] || [
+            'Repeat urgent sample to confirm',
+            'Senior clinical review',
+            'Review medications',
+            'Increase monitoring frequency'
+        ];
+    }
+
+    getAssociatedConditions(testName, value, status) {
+        const conditions = {
+            'potassium': {
+                low: ['Diuretic use', 'Vomiting/diarrhoea', 'Hyperaldosteronism', 'Renal tubular acidosis'],
+                high: ['Renal failure', 'ACEi/ARB use', 'Addisons disease', 'Rhabdomyolysis', 'Acidosis']
+            },
+            'sodium': {
+                low: ['SIADH', 'Diuretics', 'Heart failure', 'Liver cirrhosis', 'Psychogenic polydipsia'],
+                high: ['Dehydration', 'Diabetes insipidus', 'Hyperaldosteronism', 'Cushings syndrome']
+            },
+            'creatinine': {
+                high: ['Acute kidney injury', 'Chronic kidney disease', 'Dehydration', 'Rhabdomyolysis', 'Obstruction']
+            },
+            'haemoglobin': {
+                low: ['Iron deficiency', 'B12/folate deficiency', 'Chronic disease', 'Bleeding', 'Haemolysis'],
+                high: ['Polycythaemia vera', 'Chronic hypoxia', 'Dehydration', 'Smoking']
+            },
+            'wbc': {
+                low: ['Viral infection', 'Drug-induced', 'Bone marrow failure', 'Autoimmune'],
+                high: ['Bacterial infection', 'Inflammation', 'Leukaemia', 'Steroids', 'Stress']
+            }
+        };
+        
+        const testConditions = conditions[testName.toLowerCase()];
+        if (!testConditions) return [];
+        
+        if (status.includes('low')) return testConditions.low || [];
+        if (status.includes('high')) return testConditions.high || [];
+        
+        return [];
+    }
+
+    getFollowUpTests(testName, value, status) {
+        const followUp = {
+            'potassium': ['U&Es repeat', 'ECG', 'Venous blood gas', 'Urinary electrolytes'],
+            'sodium': ['Paired serum/urine osmolality', 'Thyroid function', 'Cortisol', 'U&Es repeat'],
+            'creatinine': ['eGFR calculation', 'Urinalysis', 'Ultrasound kidneys', 'Previous creatinine for comparison'],
+            'haemoglobin': ['Full blood count', 'Iron studies (ferritin, TIBC)', 'B12 and folate', 'Reticulocyte count'],
+            'glucose': ['HbA1c', 'Fasting glucose repeat', 'C-peptide', 'Glucose tolerance test'],
+            'wbc': ['Blood film', 'CRP', 'Blood cultures if febrile', 'Differential white count']
+        };
+        
+        return followUp[testName.toLowerCase()] || ['Repeat test', 'Clinical correlation', 'Senior review'];
+    }
 }
 
 

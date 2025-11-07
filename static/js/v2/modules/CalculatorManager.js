@@ -1353,6 +1353,232 @@ export class CalculatorManager {
             notesCount: Object.keys(this.toolNotes).length
         };
     }
+
+    /**
+     * Interpretation helper methods - COMPREHENSIVE IMPLEMENTATIONS
+     */
+    
+    interpretBMI(result) {
+        const bmi = result.bmi || result;
+        let category, riskLevel, recommendation;
+        
+        if (bmi < 18.5) {
+            category = 'Underweight';
+            riskLevel = 'moderate';
+            recommendation = 'Nutritional assessment recommended. Screen for eating disorders and malnutrition.';
+        } else if (bmi < 25) {
+            category = 'Normal weight';
+            riskLevel = 'low';
+            recommendation = 'Maintain healthy lifestyle with balanced diet and regular exercise.';
+        } else if (bmi < 30) {
+            category = 'Overweight';
+            riskLevel = 'moderate';
+            recommendation = 'Lifestyle modification advised. Consider dietary counselling and increased physical activity.';
+        } else if (bmi < 35) {
+            category = 'Obese Class I';
+            riskLevel = 'high';
+            recommendation = 'Weight management essential. Consider referral to specialist weight management service.';
+        } else if (bmi < 40) {
+            category = 'Obese Class II';
+            riskLevel = 'high';
+            recommendation = 'Significant health risk. Specialist referral recommended. Consider pharmacotherapy.';
+        } else {
+            category = 'Obese Class III';
+            riskLevel = 'critical';
+            recommendation = 'Very high health risk. Urgent specialist referral. Consider bariatric surgery assessment.';
+        }
+        
+        return { interpretation: category, recommendation, riskLevel, value: bmi.toFixed(1) };
+    }
+
+    interpretGCS(result) {
+        const score = result.score || result;
+        let category, riskLevel, recommendation;
+        
+        if (score <= 8) {
+            category = 'Severe impairment';
+            riskLevel = 'critical';
+            recommendation = 'IMMEDIATE: Secure airway, consider intubation. CT head urgently. ITU referral.';
+        } else if (score <= 12) {
+            category = 'Moderate impairment';
+            riskLevel = 'high';
+            recommendation = 'Close monitoring required. CT head. Consider HDU admission. Frequent neurological observations.';
+        } else if (score <= 14) {
+            category = 'Mild impairment';
+            riskLevel = 'moderate';
+            recommendation = 'Regular neurological observations. Consider CT head if deteriorating or mechanism concerning.';
+        } else {
+            category = 'Normal consciousness';
+            riskLevel = 'low';
+            recommendation = 'Continue routine monitoring. Reassess if any deterioration.';
+        }
+        
+        return { interpretation: category, recommendation, riskLevel, score };
+    }
+
+    interpretCHADS2VASc(result) {
+        const score = result.score || result;
+        let riskLevel, recommendation, annualStrokeRisk;
+        
+        if (score === 0) {
+            riskLevel = 'low';
+            annualStrokeRisk = '0.2%';
+            recommendation = 'Low risk. No anticoagulation required. Consider aspirin only in certain cases.';
+        } else if (score === 1) {
+            riskLevel = 'moderate';
+            annualStrokeRisk = '0.6-2.0%';
+            recommendation = 'Moderate risk. Consider anticoagulation (DOAC preferred). Discuss risks/benefits with patient.';
+        } else if (score === 2) {
+            riskLevel = 'moderate-high';
+            annualStrokeRisk = '2.2-3.2%';
+            recommendation = 'Anticoagulation recommended unless contraindicated. DOAC preferred over warfarin.';
+        } else {
+            riskLevel = 'high';
+            annualStrokeRisk = score === 3 ? '3.2%' : `${Math.min(score * 1.5, 15)}%`;
+            recommendation = 'High risk. Anticoagulation strongly recommended. Use HAS-BLED to assess bleeding risk.';
+        }
+        
+        return { interpretation: `${score}/9 points`, recommendation, riskLevel, annualStrokeRisk, score };
+    }
+
+    interpretHASBLED(result) {
+        const score = result.score || result;
+        let riskLevel, recommendation;
+        
+        if (score <= 2) {
+            riskLevel = 'low';
+            recommendation = 'Low bleeding risk. Anticoagulation can proceed if indicated. Annual review recommended.';
+        } else {
+            riskLevel = 'high';
+            recommendation = 'Increased bleeding risk. Anticoagulation still beneficial if CHA2DS2-VASc ≥2. Address modifiable risk factors. More frequent monitoring required.';
+        }
+        
+        return { interpretation: `${score}/9 points`, recommendation, riskLevel, score };
+    }
+
+    interpretCURB65(result) {
+        const score = result.score || result;
+        let riskLevel, recommendation, mortality;
+        
+        if (score === 0 || score === 1) {
+            riskLevel = 'low';
+            mortality = score === 0 ? '0.7%' : '2.1%';
+            recommendation = 'Low severity. Consider home treatment with oral antibiotics. Safety net advice essential.';
+        } else if (score === 2) {
+            riskLevel = 'moderate';
+            mortality = '9.2%';
+            recommendation = 'Moderate severity. Consider hospital admission. IV antibiotics initially. Senior review required.';
+        } else {
+            riskLevel = 'high';
+            mortality = score === 3 ? '14.5%' : '>27%';
+            recommendation = 'High severity. Hospital admission essential. Consider ITU/HDU. IV antibiotics. Consultant review.';
+        }
+        
+        return { interpretation: `${score}/5 points`, recommendation, riskLevel, mortality, score };
+    }
+
+    interpretNEWS2(result) {
+        const score = result.score || result;
+        let riskLevel, recommendation, urgency;
+        
+        if (score === 0) {
+            riskLevel = 'low';
+            urgency = 'Routine';
+            recommendation = 'Continue routine monitoring. Minimum 12-hourly observations.';
+        } else if (score <= 4) {
+            riskLevel = 'low-medium';
+            urgency = 'Low';
+            recommendation = 'Increase observation frequency to minimum 4-6 hourly. Inform nurse in charge.';
+        } else if (score <= 6) {
+            riskLevel = 'medium';
+            urgency = 'Medium';
+            recommendation = 'Urgent review by clinician with competency in acute illness. Minimum hourly observations. Consider HDU.';
+        } else {
+            riskLevel = 'high';
+            urgency = 'High';
+            recommendation = 'EMERGENCY: Immediate clinical review. Consultant and critical care team. Continuous monitoring. Consider ITU.';
+        }
+        
+        return { interpretation: `${score} points`, recommendation, riskLevel, urgency, score };
+    }
+
+    interpreteGFR(result) {
+        const egfr = result.egfr || result;
+        let stage, riskLevel, recommendation;
+        
+        if (egfr >= 90) {
+            stage = 'Stage 1 (Normal/High)';
+            riskLevel = 'low';
+            recommendation = 'Normal kidney function. Continue routine monitoring if risk factors present.';
+        } else if (egfr >= 60) {
+            stage = 'Stage 2 (Mildly reduced)';
+            riskLevel = 'low';
+            recommendation = 'Mild reduction. Monitor annually. Address cardiovascular risk factors.';
+        } else if (egfr >= 45) {
+            stage = 'Stage 3a (Mild-moderate)';
+            riskLevel = 'moderate';
+            recommendation = 'Mild-moderate CKD. 6-monthly monitoring. Adjust medication doses. Nephrology referral if declining.';
+        } else if (egfr >= 30) {
+            stage = 'Stage 3b (Moderate-severe)';
+            riskLevel = 'moderate-high';
+            recommendation = 'Moderate-severe CKD. 3-monthly monitoring. Nephrology referral advised. Medication review essential.';
+        } else if (egfr >= 15) {
+            stage = 'Stage 4 (Severe)';
+            riskLevel = 'high';
+            recommendation = 'Severe CKD. Nephrology follow-up essential. Prepare for renal replacement therapy. Frequent monitoring.';
+        } else {
+            stage = 'Stage 5 (End-stage)';
+            riskLevel = 'critical';
+            recommendation = 'End-stage kidney disease. Urgent nephrology input. Dialysis or transplant required.';
+        }
+        
+        return { interpretation: stage, recommendation, riskLevel, egfr: egfr.toFixed(1) };
+    }
+
+    interpretWells(result) {
+        const score = result.score || result;
+        let riskLevel, recommendation, probability;
+        
+        if (score <= 1) {
+            riskLevel = 'low';
+            probability = '1.3%';
+            recommendation = 'Low probability of DVT/PE. Consider D-dimer. If negative, DVT/PE unlikely.';
+        } else if (score <= 2) {
+            riskLevel = 'moderate';
+            probability = '16.2%';
+            recommendation = 'Moderate probability. D-dimer testing. If positive or high clinical suspicion, proceed to imaging.';
+        } else {
+            riskLevel = 'high';
+            probability = '40.6%';
+            recommendation = 'High probability. Proceed directly to imaging (ultrasound for DVT, CTPA for PE). Consider treatment dose anticoagulation while awaiting results.';
+        }
+        
+        return { interpretation: `${score} points`, recommendation, riskLevel, probability, score };
+    }
+
+    /**
+     * Calculate with patient data - Helper method
+     */
+    calculateWithData(calculatorId, patientData) {
+        // Placeholder for actual calculation logic
+        // This would interface with the calculator's calculate method
+        return { calculated: true, data: patientData };
+    }
+
+    /**
+     * Get clinical relevance - Helper method
+     */
+    getClinicalRelevance(calculatorId, category) {
+        const relevanceMap = {
+            [TOOL_CATEGORIES.CARDIOLOGY]: 'Essential for cardiovascular risk stratification and management decisions',
+            [TOOL_CATEGORIES.RESPIRATORY]: 'Critical for assessing respiratory disease severity and determining treatment location',
+            [TOOL_CATEGORIES.NEPHROLOGY]: 'Important for medication dosing and monitoring chronic kidney disease progression',
+            [TOOL_CATEGORIES.CRITICAL_CARE]: 'Vital for triage, severity assessment, and determining level of care required',
+            [TOOL_CATEGORIES.GENERAL]: 'Useful for routine clinical assessment and health monitoring'
+        };
+        
+        return relevanceMap[category] || 'Aids clinical decision-making and risk assessment';
+    }
 }
 
 // Create and export singleton instance

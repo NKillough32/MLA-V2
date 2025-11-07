@@ -111,6 +111,72 @@ export class AnalyticsManager {
     trackAnatomyView(layer, view) {
         this.trackEvent('Anatomy', 'Viewed', `${layer}-${view}`);
     }
+
+    /**
+     * Enhanced session tracking - NEW FEATURE
+     */
+    trackSessionStart() {
+        this.sessionData = {
+            startTime: Date.now(),
+            pageViews: 0,
+            interactions: 0,
+            quizzesCompleted: 0,
+            calculatorsUsed: 0,
+            timeSpent: 0
+        };
+        
+        this.trackEvent('session', 'start', navigator.platform, 1);
+        console.log('📊 Session tracking started');
+    }
+
+    /**
+     * Track session end with comprehensive data - NEW FEATURE
+     */
+    trackSessionEnd() {
+        if (!this.sessionData) return;
+        
+        const sessionDuration = Date.now() - this.sessionData.startTime;
+        this.sessionData.timeSpent = Math.round(sessionDuration / 1000);
+        
+        // Store session data
+        const sessions = JSON.parse(localStorage.getItem('sessionHistory') || '[]');
+        sessions.push({
+            ...this.sessionData,
+            endTime: Date.now(),
+            duration: this.sessionData.timeSpent,
+            date: new Date().toISOString().slice(0, 10)
+        });
+        
+        // Keep last 30 sessions
+        if (sessions.length > 30) {
+            sessions.splice(0, sessions.length - 30);
+        }
+        
+        localStorage.setItem('sessionHistory', JSON.stringify(sessions));
+        this.trackEvent('session', 'end', 'duration_seconds', this.sessionData.timeSpent);
+        console.log(`📊 Session ended: ${this.sessionData.timeSpent}s`);
+    }
+
+    /**
+     * Get comprehensive analytics summary - NEW FEATURE
+     */
+    getAnalyticsSummary() {
+        const sessions = JSON.parse(localStorage.getItem('sessionHistory') || '[]');
+        const totalSessions = sessions.length;
+        const totalTime = sessions.reduce((sum, s) => sum + s.timeSpent, 0);
+        
+        return {
+            sessions: {
+                total: totalSessions,
+                totalTimeSpent: Math.round(totalTime / 60), // minutes
+                averageSessionTime: totalSessions > 0 ? Math.round(totalTime / totalSessions / 60) : 0
+            },
+            vibration: {
+                enabled: this.vibrationEnabled,
+                supported: 'vibrate' in navigator
+            }
+        };
+    }
 }
 
 // Export singleton instance
