@@ -166,7 +166,7 @@ export class GuidelinesManager {
      * @param {string} key - Guideline key
      * @param {string} title - Guideline title
      */
-    async addToRecent(key, title) {
+    addToRecent(key, title) {
         // Remove if already exists
         this.recentGuidelines = this.recentGuidelines.filter(g => g.key !== key);
         
@@ -183,7 +183,7 @@ export class GuidelinesManager {
         }
 
         // Save to storage
-        await StorageManager.set('recentGuidelines', this.recentGuidelines);
+        storage.setItem('recentGuidelines', this.recentGuidelines);
     }
 
     /**

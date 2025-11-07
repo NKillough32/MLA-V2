@@ -909,7 +909,7 @@ class MLAQuizApp {
         if (!panel) return;
         
         panel.innerHTML = `
-            <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(document.querySelector('[data-panel=\"drug-panel\"]'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
+            <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(document.getElementById('drug-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
                 ← Back to Drug List
             </button>
             <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -1239,6 +1239,10 @@ class MLAQuizApp {
      * Load guidelines content
      */
     loadGuidelinesContent(panel) {
+        if (!panel) {
+            console.error('loadGuidelinesContent: panel is null');
+            return;
+        }
         const container = panel.querySelector('#guidelines-container') || panel;
         
         // Access guidelines directly from the manager's data
@@ -1328,7 +1332,7 @@ class MLAQuizApp {
      */
     showGuidelineDetail(guidelineKey) {
         const container = document.getElementById('guidelines-container') || 
-                         document.querySelector('[data-panel="guidelines"]');
+                         document.getElementById('guidelines-panel');
         if (!container) return;
         
         const guidelinesData = this.guidelinesManager.guidelinesDatabase || {};
@@ -1407,6 +1411,10 @@ class MLAQuizApp {
      * Load mnemonics content
      */
     loadMnemonicsContent(panel) {
+        if (!panel) {
+            console.error('loadMnemonicsContent: panel is null');
+            return;
+        }
         const container = panel.querySelector('#mnemonics-container') || panel;
         
         // Access mnemonics directly from the manager's data  
@@ -1519,7 +1527,7 @@ class MLAQuizApp {
      */
     showMnemonicDetail(mnemonicKey) {
         const container = document.getElementById('mnemonics-container') || 
-                         document.querySelector('[data-panel="mnemonics"]');
+                         document.getElementById('mnemonics-panel');
         if (!container) return;
         
         const mnemonicsData = this.mnemonicsManager.mnemonicsDatabase || {};
@@ -2381,6 +2389,10 @@ class MLAQuizApp {
      * Load interpretation tools content
      */
     loadInterpretationToolsContent(panel) {
+        if (!panel) {
+            console.error('loadInterpretationToolsContent: panel is null');
+            return;
+        }
         const container = panel.querySelector('#interpretation-container') || panel;
         if (!container) return;
         
@@ -2463,7 +2475,7 @@ class MLAQuizApp {
      */
     showInterpretationDetail(toolKey) {
         const container = document.getElementById('interpretation-container') || 
-                         document.querySelector('[data-panel="interpretation-tools"]');
+                         document.getElementById('interpretation-panel');
         if (!container) return;
         
         const toolsData = this.interpretationToolsManager.interpretationTools || {};

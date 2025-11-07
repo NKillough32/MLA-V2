@@ -146,7 +146,7 @@ export class LabValuesManager {
     /**
      * Add lab to recent history
      */
-    async addToRecent(item) {
+    addToRecent(item) {
         // Create unique identifier
         const identifier = item.type === 'panel' 
             ? `panel:${item.key}` 
@@ -163,7 +163,7 @@ export class LabValuesManager {
         // Keep only last 10
         this.recentLabs = this.recentLabs.slice(0, 10);
         
-        await this.storage.set('recentLabs', this.recentLabs);
+        this.storage.setItem('recentLabs', this.recentLabs);
     }
 
     /**
