@@ -1239,7 +1239,7 @@ class MLAQuizApp {
         if (!panel) return;
         
         let html = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('lab-values', document.getElementById('lab-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+            <button class="back-btn" onclick="window.quizApp.loadLabValuesContent(document.getElementById('lab-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                 ← Back to Lab Panels
             </button>
             <div class="lab-panel-detail">
@@ -1438,7 +1438,7 @@ class MLAQuizApp {
         if (!guideline) return;
         
         let contentHtml = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('guidelines', document.getElementById('guidelines-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+            <button class="back-btn" onclick="window.quizApp.loadGuidelinesContent(document.getElementById('guidelines-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                 ← Back to Guidelines
             </button>
             <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -1633,7 +1633,7 @@ class MLAQuizApp {
         if (!mnemonic) return;
         
         let html = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('mnemonics', document.getElementById('mnemonics-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+            <button class="back-btn" onclick="window.quizApp.loadMnemonicsContent(document.getElementById('mnemonics-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                 ← Back to Mnemonics
             </button>
             <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -1801,7 +1801,7 @@ class MLAQuizApp {
         `).join('');
         
         container.innerHTML = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('differential-dx', document.getElementById('differential-panel')); event.stopPropagation();">← Back to Symptoms</button>
+            <button class="back-btn" onclick="window.quizApp.loadDifferentialDxContent(document.getElementById('differential-panel')); event.stopPropagation();">← Back to Symptoms</button>
             <div class="ddx-detail">
                 <h3>🔍 ${symptom.title}</h3>
                 <p class="ddx-category">📋 ${symptom.category}</p>
@@ -2234,7 +2234,7 @@ class MLAQuizApp {
         `).join('');
         
         container.innerHTML = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('examination', document.getElementById('examination-panel')); event.stopPropagation();">← Back to Examinations</button>
+            <button class="back-btn" onclick="window.quizApp.loadExaminationContent(document.getElementById('examination-panel')); event.stopPropagation();">← Back to Examinations</button>
             <div class="examination-detail">
                 <h3>🩺 ${system.title}</h3>
                 <p class="exam-category">📋 ${system.category}</p>
@@ -2446,7 +2446,7 @@ class MLAQuizApp {
         const detailHtml = `
             <div class="protocol-detail" onclick="event.stopPropagation();">
                 <div class="protocol-detail-header">
-                    <button class="back-btn" onclick="window.quizApp.loadToolContent('emergency-protocols', document.getElementById('emergency-protocols-panel')); event.stopPropagation();">← Back to Protocols</button>
+                    <button class="back-btn" onclick="window.quizApp.loadEmergencyProtocolsContent(document.getElementById('emergency-protocols-panel')); event.stopPropagation();">← Back to Protocols</button>
                     <h3>${protocol.name}</h3>
                     <span class="protocol-urgency ${protocol.urgency}">${protocol.urgency.toUpperCase()}</span>
                 </div>
@@ -2586,7 +2586,7 @@ class MLAQuizApp {
         if (!tool) return;
         
         let html = `
-            <button class="back-btn" onclick="window.quizApp.loadToolContent('interpretation-tools', document.getElementById('interpretation-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+            <button class="back-btn" onclick="window.quizApp.loadInterpretationToolsContent(document.getElementById('interpretation-panel')); event.stopPropagation();" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                 ← Back to Interpretation Tools
             </button>
             <div class="guideline-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
