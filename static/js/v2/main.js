@@ -3065,95 +3065,118 @@ class MLAQuizApp {
             .replace(/- (.*?)(?=\n|$)/g, '• $1') // Bullet points
             .trim();
         
-        // Handle [IMAGE: filename] format - check currentQuiz for embedded images
+        // Handle [IMAGE: filename] format first - improved handling with better path resolution
         formattedText = formattedText.replace(/\[IMAGE:\s*([^\]]+)\]/gi, (match, filename) => {
-            // Check if we have a data URL already embedded
+            console.log('🖼️ IMAGE DEBUG - Processing image:', filename);
+            
+            // Check if we have a data URL already embedded in the text
             const dataUrlPattern = /data:[^;]+;base64,[A-Za-z0-9+/=]+/;
             if (dataUrlPattern.test(filename)) {
+                console.log('🖼️ IMAGE DEBUG - Found data URL, displaying directly');
+                // It's already a data URL, display it as an image
                 return `<div class="image-container"><img src="${filename}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${filename}', 'Image')"></div>`;
-            }
-            
-            // Try to find image in currentQuiz.images
-            let imagePath = filename.trim();
-            
-            if (this.currentQuiz && this.currentQuiz.images) {
-                const possibleKeys = [
-                    imagePath,
-                    imagePath.toLowerCase(),
-                    imagePath.replace(/\.[^.]+$/, ''),
-                    imagePath.replace(/\.[^.]+$/, '').toLowerCase(),
-                    `MLA_images/${imagePath}`,
-                    `MLA_images/${imagePath.toLowerCase()}`
-                ];
+            } else {
+                // It's a filename, try to find it in currentQuiz.images
+                let imagePath = filename.trim();
+                console.log('🖼️ IMAGE DEBUG - Looking for image file:', imagePath);
                 
-                let imageData = null;
-                for (const key of possibleKeys) {
-                    if (this.currentQuiz.images[key]) {
-                        imageData = this.currentQuiz.images[key];
+                // Use currentQuiz images if available
+                if (this.currentQuiz && this.currentQuiz.images) {
+                    console.log('🖼️ IMAGE DEBUG - Searching in currentQuiz.images');
+                    
+                    // Try multiple possible keys for the image
+                    const possibleKeys = [
+                        imagePath, // Original filename
+                        imagePath.toLowerCase(), // Lowercase
+                        imagePath.replace(/\.[^.]+$/, ''), // Without extension
+                        imagePath.replace(/\.[^.]+$/, '').toLowerCase(), // Without extension, lowercase
+                        `MLA_images/${imagePath}`, // With folder prefix
+                        `MLA_images/${imagePath.toLowerCase()}`, // With folder prefix, lowercase
+                    ];
+                    
+                    let imageData = null;
+                    let foundKey = null;
+                    
+                    for (const key of possibleKeys) {
+                        if (this.currentQuiz.images[key]) {
+                            imageData = this.currentQuiz.images[key];
+                            foundKey = key;
+                            console.log('🖼️ IMAGE DEBUG - Found image with key:', key);
+                            break;
+                        }
+                    }
+                    
+                    if (imageData) {
+                        console.log('🖼️ IMAGE DEBUG - Found embedded image data for:', foundKey);
                         
-                        // Handle reference-based storage
+                        // Handle reference-based storage (resolve references)
                         if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                             const refKey = imageData.substring(8);
                             imageData = this.currentQuiz.images[refKey];
+                            console.log('🖼️ IMAGE DEBUG - Resolved reference from', foundKey, 'to', refKey);
                         }
                         
                         if (imageData && imageData.startsWith('data:')) {
+                            // Found actual image data
                             return `<div class="image-container"><img src="${imageData}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${imageData}', 'Image')"></div>`;
+                        } else {
+                            console.log('🖼️ IMAGE DEBUG - Image data after resolution:', typeof imageData, imageData?.substring(0, 50) + '...');
                         }
-                        break;
+                    } else {
+                        console.log('⚠️ Image not found in currentQuiz.images. Available keys:', Object.keys(this.currentQuiz.images).slice(0, 10));
                     }
+                } else {
+                    console.log('⚠️ currentQuiz or currentQuiz.images not available');
                 }
+                
+                console.log('🖼️ IMAGE DEBUG - No embedded image found, showing as link');
+                // Default: show as a link
+                return `<a href="#" class="image-link" onclick="alert('Image not available: ${imagePath}'); return false;">🖼️ View Image: ${imagePath}</a>`;
             }
-            
-            // Fallback: show as link
-            return `<a href="#" class="image-link" onclick="alert('Image not available: ${imagePath}'); return false;">🖼️ View Image: ${imagePath}</a>`;
         });
         
-        // Handle markdown-style images: ![alt text](url)
+        // Handle markdown-style images: ![alt text](url) or ![alt text](url "caption")
         formattedText = formattedText.replace(/!\[([^\]]*)\]\(([^)]+?)(?:\s+"([^"]+)")?\)/g, (match, alt, url, caption) => {
             let actualUrl = url;
             
-            console.log(`🖼️ Processing image: ${match}`);
-            console.log(`🔧 URL: "${url}"`);
-            
-            // Handle reference-based storage
+            // Handle reference-based storage (resolve references)
             if (typeof url === 'string' && url.startsWith('__REF__:')) {
-                const refKey = url.substring(8);
-                console.log(`🔗 Reference key: "${refKey}"`);
+                console.log('🖼️ IMAGE DEBUG - Found reference in markdown image:', url);
+                const refKey = url.substring(8); // Remove '__REF__:' prefix (8 characters)
+                console.log('�️ IMAGE DEBUG - Looking for refKey:', refKey);
                 
-                if (this.currentQuiz && this.currentQuiz.images && this.currentQuiz.images[refKey]) {
-                    let imageData = this.currentQuiz.images[refKey];
-                    console.log(`📦 Found image data type: ${typeof imageData}`);
+                // Use currentQuiz images if available (already loaded with IndexedDB data)
+                if (this.currentQuiz && this.currentQuiz.images) {
+                    console.log('🖼️ IMAGE DEBUG - Using currentQuiz.images for lookup');
                     
-                    // Handle nested references
-                    if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
-                        const secondRefKey = imageData.substring(8);
-                        console.log(`🔗 Secondary reference: "${secondRefKey}"`);
-                        imageData = this.currentQuiz.images[secondRefKey];
-                    }
-                    
-                    if (imageData && imageData.startsWith('data:')) {
-                        actualUrl = imageData;
-                        console.log(`✅ Image resolved successfully`);
+                    // Check if the reference key exists directly
+                    if (this.currentQuiz.images[refKey]) {
+                        let imageData = this.currentQuiz.images[refKey];
+                        console.log('�️ IMAGE DEBUG - Found direct match for key:', refKey);
+                        
+                        // If it's another reference, resolve it
+                        if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
+                            const secondRefKey = imageData.substring(8);
+                            imageData = this.currentQuiz.images[secondRefKey];
+                            console.log('🖼️ IMAGE DEBUG - Resolved nested reference from', refKey, 'to', secondRefKey);
+                        }
+                        
+                        if (imageData && imageData.startsWith('data:')) {
+                            actualUrl = imageData;
+                            console.log('✅ Resolved markdown reference to base64 data');
+                        } else {
+                            console.log('⚠️ Found data but not base64:', typeof imageData, imageData?.substring(0, 50));
+                        }
                     } else {
-                        console.warn(`❌ Image data not found or invalid for key: ${refKey}`);
-                        console.log(`Available image keys:`, Object.keys(this.currentQuiz.images || {}));
+                        console.log('⚠️ Key not found:', refKey, 'Available keys:', Object.keys(this.currentQuiz.images).slice(0, 10));
                     }
                 } else {
-                    console.warn(`❌ No image found for reference: ${refKey}`);
-                    console.log(`Available image keys:`, Object.keys(this.currentQuiz.images || {}));
+                    console.log('⚠️ currentQuiz or currentQuiz.images not available');
                 }
-            }
-            
-            // Safety check: if actualUrl is still __REF__: format, show error
-            if (actualUrl.startsWith('__REF__:')) {
-                console.error(`🚨 Failed to resolve image reference: ${actualUrl}`);
-                return `<div class="image-container image-error">
-                    <div style="background: #ffebee; border: 1px solid #f44336; padding: 12px; border-radius: 8px; text-align: center;">
-                        <p style="color: #d32f2f; margin: 0;">⚠️ Image not available</p>
-                        <small style="color: #757575;">Reference: ${actualUrl}</small>
-                    </div>
-                </div>`;
+                
+                if (actualUrl === url) {
+                    console.log('❌ Failed to resolve reference:', refKey);
+                }
             }
             
             const imageHtml = `<img src="${actualUrl}" alt="${alt}" loading="lazy" onclick="window.openImageModal && openImageModal('${actualUrl}', '${alt}')">`;
@@ -3163,12 +3186,17 @@ class MLAQuizApp {
             return `<div class="image-container">${imageHtml}</div>`;
         });
         
-        // Handle simple image URLs
+        // Handle simple image URLs (common formats)
         formattedText = formattedText.replace(/https?:\/\/[^\s]+\.(jpg|jpeg|png|gif|webp|svg)(\?[^\s]*)?/gi, (url) => {
             return `<div class="image-container"><img src="${url}" alt="Image" loading="lazy" onclick="window.openImageModal && openImageModal('${url}', 'Image')"></div>`;
         });
         
-        // Convert plain URLs to clickable links
+        // Handle image links with "View Image" button: [View Image](url)
+        formattedText = formattedText.replace(/\[(View Image|view image|IMAGE|Image)\]\(([^)]+)\)/gi, (match, text, url) => {
+            return `<a href="#" class="image-link" onclick="window.openImageModal && openImageModal('${url}', 'Image'); return false;">🖼️ View Image</a>`;
+        });
+        
+        // Convert plain URLs to clickable links with proper wrapping attributes
         formattedText = formattedText.replace(
             /(https?:\/\/[^\s<>"']+)/gi,
             '<a href="$1" target="_blank" rel="noopener noreferrer" class="explanation-link">$1</a>'
