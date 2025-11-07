@@ -48,11 +48,7 @@ export class CalculatorManager {
     }
 
     /**
-     * Register calculators from the V1 bridge
-     * 
-     * Connects to ExtractedCalculators which contains all 61 calculator implementations from V1.
-     * V2 native implementations (Calculators.js) provides only 6 calculators.
-     * The bridge provides the remaining 55+ calculators until full V2 migration is complete.
+     * Register calculators from ExtractedCalculators bridge
      */
     registerBridgeCalculators() {
         // Check if ExtractedCalculators is available
@@ -68,53 +64,7 @@ export class CalculatorManager {
         // Note: For now, the bridge provides most calculator functionality
         // V2 native implementations in Calculators.js only cover 6 calculators
         // TODO: Migrate remaining calculators to native V2 implementations
-    }
 
-    /**
-     * Register a calculator (moved from below to clean up dead bridge code)
-            name: 'Wells Score for PE',
-            category: TOOL_CATEGORIES.DIAGNOSTIC,
-            description: 'Stratifies risk of pulmonary embolism',
-            keywords: ['pe', 'pulmonary', 'embolism', 'wells', 'dvt'],
-            getTemplate: () => this.bridge.getWellsCalculator(),
-            calculate: () => this.bridge.calculateWells(),
-            bindEvents: (container) => {
-                const btn = container.querySelector('button');
-                if (btn) btn.addEventListener('click', () => this.bridge.calculateWells());
-            }
-        });
-
-        // CRUSADE Score
-        this.registerCalculator('crusade', {
-            name: 'CRUSADE Bleeding Risk',
-            category: TOOL_CATEGORIES.RISK,
-            description: 'Bleeding risk in ACS patients',
-            keywords: ['crusade', 'bleeding', 'acs', 'cardiac'],
-            getTemplate: () => this.bridge.getCRUSADECalculator(),
-            calculate: () => this.bridge.calculateCRUSADE(),
-            bindEvents: (container) => {
-                const btn = container.querySelector('button');
-                if (btn) btn.addEventListener('click', () => this.bridge.calculateCRUSADE());
-            }
-        });
-
-        // Asthma Severity
-        this.registerCalculator('asthma', {
-            name: 'Asthma Severity',
-            category: TOOL_CATEGORIES.DIAGNOSTIC,
-            description: 'BTS/SIGN asthma severity assessment',
-            keywords: ['asthma', 'pef', 'respiratory', 'wheeze'],
-            getTemplate: () => this.bridge.getAsthmaCalculator(),
-            calculate: () => this.bridge.calculateAsthma(),
-            bindEvents: (container) => {
-                const btn = container.querySelector('button');
-                if (btn) btn.addEventListener('click', () => this.bridge.calculateAsthma());
-            }
-        });
-        
-        // If ExtractedCalculators is available, register additional calculators
-        if (!EC) return;
-        
         // === CARDIOVASCULAR CALCULATORS ===
         
         // GRACE Score
@@ -122,27 +72,25 @@ export class CalculatorManager {
             this.registerCalculator('grace', {
                 name: 'GRACE Score',
                 category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: 'ACS mortality risk prediction',
-                keywords: ['grace', 'acs', 'cardiac', 'mortality', 'stemi', 'nstemi'],
+                description: 'Risk stratification for ACS',
+                keywords: ['grace', 'acs', 'risk', 'cardiac', 'heart'],
                 getTemplate: () => EC.getGRACECalculator(),
                 calculate: () => EC.calculateGRACE(),
-                bindEvents: () => {} // onclick handlers in template
+                bindEvents: () => {}
             });
         }
-        
+
         // QRISK3
         if (EC.getQRISK3Calculator) {
-            const qriskConfig = {
+            this.registerCalculator('qrisk3', {
                 name: 'QRISK3',
-                category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: '10-year cardiovascular disease risk',
-                keywords: ['qrisk', 'cvd', 'cardiac', 'risk', 'cardiovascular'],
+                category: TOOL_CATEGORIES.RISK,
+                description: 'CV risk assessment',
+                keywords: ['qrisk', 'cardiovascular', 'risk', 'prevention'],
                 getTemplate: () => EC.getQRISK3Calculator(),
                 calculate: () => EC.calculateQRISK3(),
                 bindEvents: () => {}
-            };
-            this.registerCalculator('qrisk3', qriskConfig);
-            this.registerCalculator('qrisk', qriskConfig); // Alias for HTML compatibility
+            });
         }
         
         // === RESPIRATORY CALCULATORS ===
@@ -153,48 +101,48 @@ export class CalculatorManager {
                 name: 'CURB-65',
                 category: TOOL_CATEGORIES.RESPIRATORY,
                 description: 'Pneumonia severity assessment',
-                keywords: ['curb', 'pneumonia', 'respiratory', 'infection'],
+                keywords: ['curb', 'pneumonia', 'severity', 'respiratory'],
                 getTemplate: () => EC.getCURB65Calculator(),
                 calculate: () => EC.calculateCURB65(),
                 bindEvents: () => {}
             });
         }
-        
-        // PEFR
+
+        // Peak Flow (PEFR)
         if (EC.getPEFRCalculator) {
             this.registerCalculator('pefr', {
-                name: 'Peak Flow (PEFR)',
+                name: 'Peak Flow Calculator',
                 category: TOOL_CATEGORIES.RESPIRATORY,
-                description: 'Peak expiratory flow rate calculator',
-                keywords: ['pefr', 'peak', 'flow', 'asthma', 'respiratory'],
+                description: 'Expected peak expiratory flow rate',
+                keywords: ['pefr', 'peak', 'flow', 'respiratory', 'asthma'],
                 getTemplate: () => EC.getPEFRCalculator(),
                 calculate: () => EC.calculatePEFR(),
                 bindEvents: () => {}
             });
         }
         
-        // === NEUROLOGY CALCULATORS ===
+        // === NEUROLOGICAL CALCULATORS ===
         
         // NIHSS
         if (EC.getNIHSSCalculator) {
             this.registerCalculator('nihss', {
-                name: 'NIH Stroke Scale',
+                name: 'NIHSS',
                 category: TOOL_CATEGORIES.NEUROLOGY,
                 description: 'Stroke severity assessment',
-                keywords: ['nihss', 'stroke', 'neurology', 'cva'],
+                keywords: ['nihss', 'stroke', 'neurology', 'severity'],
                 getTemplate: () => EC.getNIHSSCalculator(),
                 calculate: () => EC.calculateNIHSS(),
                 bindEvents: () => {}
             });
         }
-        
+
         // ABCD2 Score
         if (EC.getABCD2Calculator) {
             this.registerCalculator('abcd2', {
-                name: 'ABCD² Score',
+                name: 'ABCD2 Score',
                 category: TOOL_CATEGORIES.NEUROLOGY,
                 description: 'TIA stroke risk stratification',
-                keywords: ['abcd2', 'tia', 'stroke', 'neurology'],
+                keywords: ['abcd2', 'tia', 'stroke', 'risk'],
                 getTemplate: () => EC.getABCD2Calculator(),
                 calculate: () => EC.calculateABCD2(),
                 bindEvents: () => {}
@@ -209,46 +157,46 @@ export class CalculatorManager {
                 name: 'APACHE II',
                 category: TOOL_CATEGORIES.CRITICAL_CARE,
                 description: 'ICU mortality prediction',
-                keywords: ['apache', 'icu', 'critical', 'mortality'],
+                keywords: ['apache', 'icu', 'mortality', 'critical'],
                 getTemplate: () => EC.getAPACHECalculator(),
                 calculate: () => EC.calculateAPACHE(),
                 bindEvents: () => {}
             });
         }
-        
+
         // SOFA Score
         if (EC.getSOFACalculator) {
             this.registerCalculator('sofa', {
                 name: 'SOFA Score',
                 category: TOOL_CATEGORIES.CRITICAL_CARE,
                 description: 'Sequential organ failure assessment',
-                keywords: ['sofa', 'sepsis', 'organ', 'failure', 'icu'],
+                keywords: ['sofa', 'organ', 'failure', 'critical', 'sepsis'],
                 getTemplate: () => EC.getSOFACalculator(),
                 calculate: () => EC.calculateSOFA(),
                 bindEvents: () => {}
             });
         }
-        
-        // MEWS
+
+        // MEWS (Modified Early Warning Score)
         if (EC.getMEWSCalculator) {
             this.registerCalculator('mews', {
                 name: 'MEWS',
                 category: TOOL_CATEGORIES.CRITICAL_CARE,
                 description: 'Modified Early Warning Score',
-                keywords: ['mews', 'warning', 'deterioration', 'ews'],
+                keywords: ['mews', 'warning', 'deterioration', 'vital'],
                 getTemplate: () => EC.getMEWSCalculator(),
                 calculate: () => EC.calculateMEWS(),
                 bindEvents: () => {}
             });
         }
-        
-        // NEWS Score
+
+        // NEWS2
         if (EC.getNEWS2Calculator) {
-            this.registerCalculator('news', {
+            this.registerCalculator('news2', {
                 name: 'NEWS2',
                 category: TOOL_CATEGORIES.CRITICAL_CARE,
                 description: 'National Early Warning Score 2',
-                keywords: ['news', 'warning', 'deterioration', 'ews'],
+                keywords: ['news', 'warning', 'deterioration', 'rcp'],
                 getTemplate: () => EC.getNEWS2Calculator(),
                 calculate: () => EC.calculateNEWS2(),
                 bindEvents: () => {}
@@ -261,559 +209,93 @@ export class CalculatorManager {
         if (EC.getEGFRCalculator) {
             this.registerCalculator('egfr', {
                 name: 'eGFR Calculator',
-                category: TOOL_CATEGORIES.RENAL,
+                category: TOOL_CATEGORIES.NEPHROLOGY,
                 description: 'Estimated glomerular filtration rate',
-                keywords: ['egfr', 'kidney', 'renal', 'creatinine', 'gfr'],
+                keywords: ['egfr', 'kidney', 'renal', 'creatinine'],
                 getTemplate: () => EC.getEGFRCalculator(),
                 calculate: () => EC.calculateEGFR(),
                 bindEvents: () => {}
             });
         }
         
-        // === HEPATIC CALCULATORS ===
+        // === HEPATOLOGY CALCULATORS ===
         
         // MELD Score
         if (EC.getMELDCalculator) {
             this.registerCalculator('meld', {
                 name: 'MELD Score',
                 category: TOOL_CATEGORIES.HEPATOLOGY,
-                description: 'Liver disease severity',
-                keywords: ['meld', 'liver', 'cirrhosis', 'hepatic'],
+                description: 'Model for End-stage Liver Disease',
+                keywords: ['meld', 'liver', 'hepatology', 'cirrhosis'],
                 getTemplate: () => EC.getMELDCalculator(),
                 calculate: () => EC.calculateMELD(),
                 bindEvents: () => {}
             });
         }
-        
-        // Child-Pugh Score
+
+        // Child-Pugh
         if (EC.getChildPughCalculator) {
             this.registerCalculator('child-pugh', {
                 name: 'Child-Pugh Score',
                 category: TOOL_CATEGORIES.HEPATOLOGY,
-                description: 'Cirrhosis classification',
-                keywords: ['child', 'pugh', 'liver', 'cirrhosis', 'hepatic'],
+                description: 'Chronic liver disease severity',
+                keywords: ['child', 'pugh', 'liver', 'cirrhosis'],
                 getTemplate: () => EC.getChildPughCalculator(),
                 calculate: () => EC.calculateChildPugh(),
                 bindEvents: () => {}
             });
         }
         
-        // === METABOLIC/CHEMISTRY CALCULATORS ===
+        // === LABORATORY CALCULATORS ===
         
         // Anion Gap
         if (EC.getAnionGapCalculator) {
             this.registerCalculator('anion-gap', {
                 name: 'Anion Gap',
-                category: TOOL_CATEGORIES.CHEMISTRY,
-                description: 'Acid-base disorder assessment',
-                keywords: ['anion', 'gap', 'metabolic', 'acidosis', 'chemistry'],
+                category: TOOL_CATEGORIES.LABORATORY,
+                description: 'Serum anion gap calculation',
+                keywords: ['anion', 'gap', 'electrolytes', 'acidosis'],
                 getTemplate: () => EC.getAnionGapCalculator(),
                 calculate: () => EC.calculateAnionGap(),
                 bindEvents: () => {}
             });
         }
-        
+
         // Corrected Calcium
         if (EC.getCorrectedCalciumCalculator) {
             this.registerCalculator('corrected-calcium', {
                 name: 'Corrected Calcium',
-                category: TOOL_CATEGORIES.CHEMISTRY,
+                category: TOOL_CATEGORIES.LABORATORY,
                 description: 'Albumin-corrected calcium',
-                keywords: ['calcium', 'albumin', 'corrected', 'chemistry'],
+                keywords: ['calcium', 'albumin', 'corrected', 'biochemistry'],
                 getTemplate: () => EC.getCorrectedCalciumCalculator(),
                 calculate: () => EC.calculateCorrectedCalcium(),
                 bindEvents: () => {}
             });
         }
-        
+
         // Corrected Sodium
         if (EC.getCorrectedSodiumCalculator) {
             this.registerCalculator('corrected-sodium', {
                 name: 'Corrected Sodium',
-                category: TOOL_CATEGORIES.CHEMISTRY,
+                category: TOOL_CATEGORIES.LABORATORY,
                 description: 'Glucose-corrected sodium',
-                keywords: ['sodium', 'glucose', 'corrected', 'hyponatremia', 'chemistry'],
+                keywords: ['sodium', 'glucose', 'corrected', 'hyperglycemia'],
                 getTemplate: () => EC.getCorrectedSodiumCalculator(),
                 calculate: () => EC.calculateCorrectedSodium(),
                 bindEvents: () => {}
             });
         }
-        
-        // Osmolality
+
+        // Osmolal Gap
         if (EC.getOsmolalGapCalculator) {
-            this.registerCalculator('osmolality', {
-                name: 'Serum Osmolality',
-                category: TOOL_CATEGORIES.CHEMISTRY,
-                description: 'Serum osmolality and osmolal gap',
-                keywords: ['osmolality', 'osmolal', 'gap', 'chemistry'],
+            this.registerCalculator('osmolal-gap', {
+                name: 'Osmolal Gap',
+                category: TOOL_CATEGORIES.LABORATORY,
+                description: 'Serum osmolal gap calculation',
+                keywords: ['osmolal', 'gap', 'toxicology', 'alcohol'],
                 getTemplate: () => EC.getOsmolalGapCalculator(),
                 calculate: () => EC.calculateOsmolalGap(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === EMERGENCY MEDICINE CALCULATORS ===
-        
-        // Ranson Criteria
-        if (EC.getRansonCalculator) {
-            this.registerCalculator('ranson', {
-                name: 'Ranson Criteria',
-                category: TOOL_CATEGORIES.EMERGENCY,
-                description: 'Acute pancreatitis severity',
-                keywords: ['ranson', 'pancreatitis', 'pancreas', 'emergency'],
-                getTemplate: () => EC.getRansonCalculator(),
-                calculate: () => EC.calculateRanson(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Centor Score
-        if (EC.getCentorCalculator) {
-            this.registerCalculator('centor', {
-                name: 'Centor Score',
-                category: TOOL_CATEGORIES.EMERGENCY,
-                description: 'Strep throat probability',
-                keywords: ['centor', 'strep', 'throat', 'pharyngitis', 'tonsillitis'],
-                getTemplate: () => EC.getCentorCalculator(),
-                calculate: () => EC.calculateCentor(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Alvarado Score
-        if (EC.getAlvaradoCalculator) {
-            this.registerCalculator('alvarado', {
-                name: 'Alvarado Score',
-                category: TOOL_CATEGORIES.EMERGENCY,
-                description: 'Appendicitis probability',
-                keywords: ['alvarado', 'appendicitis', 'appendix', 'emergency'],
-                getTemplate: () => EC.getAlvaradoCalculator(),
-                calculate: () => EC.calculateAlvarado(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === PSYCHIATRY CALCULATORS ===
-        
-        // PHQ-9
-        if (EC.getPHQ9Calculator) {
-            this.registerCalculator('phq9', {
-                name: 'PHQ-9',
-                category: TOOL_CATEGORIES.PSYCHIATRY,
-                description: 'Depression severity assessment',
-                keywords: ['phq', 'depression', 'mental', 'health', 'psychiatry'],
-                getTemplate: () => EC.getPHQ9Calculator(),
-                calculate: () => EC.calculatePHQ9(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // GAD-7
-        if (EC.getGAD7Calculator) {
-            this.registerCalculator('gad7', {
-                name: 'GAD-7',
-                category: TOOL_CATEGORIES.PSYCHIATRY,
-                description: 'Generalized anxiety disorder assessment',
-                keywords: ['gad', 'anxiety', 'mental', 'health', 'psychiatry'],
-                getTemplate: () => EC.getGAD7Calculator(),
-                calculate: () => EC.calculateGAD7(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // MSE
-        if (EC.getMSECalculator) {
-            this.registerCalculator('mse', {
-                name: 'Mental State Examination',
-                category: TOOL_CATEGORIES.PSYCHIATRY,
-                description: 'Structured mental state assessment',
-                keywords: ['mse', 'mental', 'state', 'psychiatry', 'cognitive'],
-                getTemplate: () => EC.getMSECalculator(),
-                calculate: () => EC.calculateMSE(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // MMSE
-        if (EC.getMMSECalculator) {
-            this.registerCalculator('mmse', {
-                name: 'Mini-Mental State Examination',
-                category: TOOL_CATEGORIES.PSYCHIATRY,
-                description: 'Cognitive impairment screening',
-                keywords: ['mmse', 'cognitive', 'dementia', 'mental', 'folstein'],
-                getTemplate: () => EC.getMMSECalculator(),
-                calculate: () => EC.calculateMMSE(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === DOSING/INFUSION CALCULATORS ===
-        
-        // Insulin Sliding Scale
-        if (EC.getInsulinSlidingCalculator) {
-            this.registerCalculator('insulin-sliding', {
-                name: 'Insulin Sliding Scale',
-                category: TOOL_CATEGORIES.ENDOCRINE,
-                description: 'Variable insulin dosing guide',
-                keywords: ['insulin', 'diabetes', 'glucose', 'sliding', 'scale'],
-                getTemplate: () => EC.getInsulinSlidingCalculator(),
-                calculate: () => EC.calculateInsulinSliding(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Vasopressor Dosing
-        if (EC.getVasopressorCalculator) {
-            this.registerCalculator('vasopressor', {
-                name: 'Vasopressor Dosing',
-                category: TOOL_CATEGORIES.CRITICAL_CARE,
-                description: 'Vasopressor and inotrope dosing calculator',
-                keywords: ['vasopressor', 'noradrenaline', 'adrenaline', 'dopamine', 'icu'],
-                getTemplate: () => EC.getVasopressorCalculator(),
-                calculate: () => EC.calculateVasopressor(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Paediatric Dosing
-        if (EC.getPaediatricDosingCalculator) {
-            this.registerCalculator('paediatric-dosing', {
-                name: 'Paediatric Drug Dosing',
-                category: TOOL_CATEGORIES.PAEDIATRICS,
-                description: 'Weight-based paediatric medication dosing',
-                keywords: ['paediatric', 'pediatric', 'child', 'dosing', 'weight'],
-                getTemplate: () => EC.getPaediatricDosingCalculator(),
-                calculate: () => EC.calculatePaediatricDosing(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Infusion Rate
-        if (EC.getInfusionRateCalculator) {
-            this.registerCalculator('infusion-rate', {
-                name: 'Infusion Rate Calculator',
-                category: TOOL_CATEGORIES.CRITICAL_CARE,
-                description: 'IV infusion rate and drip rate calculator',
-                keywords: ['infusion', 'rate', 'drip', 'iv', 'pump'],
-                getTemplate: () => EC.getInfusionRateCalculator(),
-                calculate: () => EC.calculateInfusionRate(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Drug Volume
-        if (EC.getDrugVolumeCalculator) {
-            this.registerCalculator('drug-volume', {
-                name: 'Drug Volume Calculator',
-                category: TOOL_CATEGORIES.PHARMACY,
-                description: 'Calculate volume of drug to administer',
-                keywords: ['drug', 'volume', 'dose', 'concentration', 'pharmacy'],
-                getTemplate: () => EC.getDrugVolumeCalculator(),
-                calculate: () => EC.calculateDrugVolume(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === FUNCTIONAL ASSESSMENT CALCULATORS ===
-        
-        // MUST Score
-        if (EC.getMUSTCalculator) {
-            this.registerCalculator('must', {
-                name: 'MUST Score',
-                category: TOOL_CATEGORIES.NUTRITION,
-                description: 'Malnutrition Universal Screening Tool',
-                keywords: ['must', 'malnutrition', 'nutrition', 'screening'],
-                getTemplate: () => EC.getMUSTCalculator(),
-                calculate: () => EC.calculateMUST(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Waterlow Score
-        if (EC.getWaterlowCalculator) {
-            this.registerCalculator('waterlow', {
-                name: 'Waterlow Score',
-                category: TOOL_CATEGORIES.NURSING,
-                description: 'Pressure ulcer risk assessment',
-                keywords: ['waterlow', 'pressure', 'ulcer', 'sore', 'risk'],
-                getTemplate: () => EC.getWaterlowCalculator(),
-                calculate: () => EC.calculateWaterlow(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Clinical Frailty Scale
-        if (EC.getFrailtyCalculator) {
-            this.registerCalculator('frailty', {
-                name: 'Clinical Frailty Scale',
-                category: TOOL_CATEGORIES.GERIATRICS,
-                description: 'Rockwood Clinical Frailty Scale',
-                keywords: ['frailty', 'rockwood', 'geriatric', 'elderly', 'functional'],
-                getTemplate: () => EC.getFrailtyCalculator(),
-                calculate: () => EC.calculateFrailty(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Barthel Index
-        if (EC.getBarthelCalculator) {
-            this.registerCalculator('barthel', {
-                name: 'Barthel Index',
-                category: TOOL_CATEGORIES.GERIATRICS,
-                description: 'Activities of daily living assessment',
-                keywords: ['barthel', 'adl', 'activities', 'daily', 'living', 'functional'],
-                getTemplate: () => EC.getBarthelCalculator(),
-                calculate: () => EC.calculateBarthel(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Modified Rankin Scale
-        if (EC.getModifiedRankinCalculator) {
-            this.registerCalculator('rankin', {
-                name: 'Modified Rankin Scale',
-                category: TOOL_CATEGORIES.NEUROLOGY,
-                description: 'Degree of disability after stroke',
-                keywords: ['rankin', 'stroke', 'disability', 'functional', 'outcome'],
-                getTemplate: () => EC.getModifiedRankinCalculator(),
-                calculate: () => EC.calculateModifiedRankin(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === ADDITIONAL CARDIOVASCULAR CALCULATORS ===
-        
-        // TIMI Score
-        if (EC.getTIMICalculator) {
-            this.registerCalculator('timi', {
-                name: 'TIMI Risk Score',
-                category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: 'STEMI/NSTEMI risk stratification',
-                keywords: ['timi', 'mi', 'stemi', 'nstemi', 'cardiac'],
-                getTemplate: () => EC.getTIMICalculator(),
-                calculate: () => EC.calculateTIMI(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // RCRI
-        if (EC.getRCRICalculator) {
-            this.registerCalculator('rcri', {
-                name: 'Revised Cardiac Risk Index',
-                category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: 'Perioperative cardiac risk',
-                keywords: ['rcri', 'cardiac', 'risk', 'surgery', 'perioperative'],
-                getTemplate: () => EC.getRCRICalculator(),
-                calculate: () => EC.calculateRCRI(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // QTc Calculator
-        if (EC.getQTcCalculator) {
-            this.registerCalculator('qtc', {
-                name: 'QTc Calculator',
-                category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: 'Corrected QT interval calculation',
-                keywords: ['qtc', 'qt', 'interval', 'ecg', 'cardiac', 'bazett'],
-                getTemplate: () => EC.getQTcCalculator(),
-                calculate: () => EC.calculateQTc(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Wells DVT Score
-        if (EC.getWellsDVTCalculator) {
-            this.registerCalculator('wells-dvt', {
-                name: 'Wells DVT Score',
-                category: TOOL_CATEGORIES.VASCULAR,
-                description: 'Deep vein thrombosis probability',
-                keywords: ['wells', 'dvt', 'thrombosis', 'clot', 'vascular'],
-                getTemplate: () => EC.getWellsDVTCalculator(),
-                calculate: () => EC.calculateWellsDVT(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === GI CALCULATORS ===
-        
-        // Rockall Score
-        if (EC.getRockallCalculator) {
-            this.registerCalculator('rockall', {
-                name: 'Rockall Score',
-                category: TOOL_CATEGORIES.GASTROENTEROLOGY,
-                description: 'Upper GI bleeding risk assessment',
-                keywords: ['rockall', 'gi', 'bleed', 'gastro', 'haematemesis'],
-                getTemplate: () => EC.getRockallCalculator(),
-                calculate: () => EC.calculateRockall(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Glasgow-Blatchford Score
-        if (EC.getGlasgowBlatchfordCalculator) {
-            this.registerCalculator('glasgow-blatchford', {
-                name: 'Glasgow-Blatchford Score',
-                category: TOOL_CATEGORIES.GASTROENTEROLOGY,
-                description: 'Upper GI bleeding need for intervention',
-                keywords: ['glasgow', 'blatchford', 'gi', 'bleed', 'gastro'],
-                getTemplate: () => EC.getGlasgowBlatchfordCalculator(),
-                calculate: () => EC.calculateGlasgowBlatchford(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === ORTHOPEDIC CALCULATORS ===
-        
-        // Ottawa Ankle Rules
-        if (EC.getOttawaAnkleCalculator) {
-            this.registerCalculator('ottawa-ankle', {
-                name: 'Ottawa Ankle Rules',
-                category: TOOL_CATEGORIES.ORTHOPEDICS,
-                description: 'Ankle/foot injury X-ray decision rule',
-                keywords: ['ottawa', 'ankle', 'foot', 'fracture', 'xray'],
-                getTemplate: () => EC.getOttawaAnkleCalculator(),
-                calculate: () => EC.calculateOttawaAnkle(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // FRAX Fracture Risk
-        if (EC.getFractureRiskCalculator) {
-            this.registerCalculator('frax-fracture', {
-                name: 'FRAX Fracture Risk',
-                category: TOOL_CATEGORIES.ORTHOPEDICS,
-                description: 'Osteoporotic fracture risk assessment',
-                keywords: ['frax', 'fracture', 'osteoporosis', 'bone', 'risk'],
-                getTemplate: () => EC.getFractureRiskCalculator(),
-                calculate: () => EC.calculateFractureRisk(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === ADDITIONAL RENAL CALCULATORS ===
-        
-        // Cockcroft-Gault
-        if (EC.getCockcroftGaultCalculator) {
-            this.registerCalculator('cockcroft-gault', {
-                name: 'Cockcroft-Gault',
-                category: TOOL_CATEGORIES.RENAL,
-                description: 'Creatinine clearance estimation',
-                keywords: ['cockcroft', 'gault', 'creatinine', 'clearance', 'renal'],
-                getTemplate: () => EC.getCockcroftGaultCalculator(),
-                calculate: () => EC.calculateCockcroftGault(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Urea:Creatinine Ratio
-        if (EC.getUreaCreatinineCalculator) {
-            this.registerCalculator('urea-creatinine', {
-                name: 'Urea:Creatinine Ratio',
-                category: TOOL_CATEGORIES.RENAL,
-                description: 'BUN:Creatinine ratio for AKI classification',
-                keywords: ['urea', 'creatinine', 'ratio', 'aki', 'renal'],
-                getTemplate: () => EC.getUreaCreatinineCalculator(),
-                calculate: () => EC.calculateUreaCreatinine(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === SEDATION & PALLIATIVE CALCULATORS ===
-        
-        // RASS Scale
-        if (EC.getRASSCalculator) {
-            this.registerCalculator('rass', {
-                name: 'RASS Scale',
-                category: TOOL_CATEGORIES.CRITICAL_CARE,
-                description: 'Richmond Agitation-Sedation Scale',
-                keywords: ['rass', 'sedation', 'agitation', 'icu', 'conscious'],
-                getTemplate: () => EC.getRASSCalculator(),
-                calculate: () => EC.calculateRASS(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Palliative Care Calculator
-        if (EC.getPalliativeCalculator) {
-            this.registerCalculator('palliative', {
-                name: 'Palliative Care Calculator',
-                category: TOOL_CATEGORIES.PALLIATIVE,
-                description: 'Opioid conversion and symptom management',
-                keywords: ['palliative', 'opioid', 'conversion', 'morphine', 'pain'],
-                getTemplate: () => EC.getPalliativeCalculator(),
-                calculate: () => EC.calculatePalliative(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // MADDERS Score
-        if (EC.getMADDERSCalculator) {
-            this.registerCalculator('madders', {
-                name: 'MADDERS Score',
-                category: TOOL_CATEGORIES.EMERGENCY,
-                description: 'Medical assessment decision support',
-                keywords: ['madders', 'assessment', 'decision', 'emergency'],
-                getTemplate: () => EC.getMADDERSCalculator(),
-                calculate: () => EC.calculateMADDERS(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === RESPIRATORY (ADDITIONAL) ===
-        
-        // CRB-65
-        if (EC.getCRB65Calculator) {
-            this.registerCalculator('crb65', {
-                name: 'CRB-65',
-                category: TOOL_CATEGORIES.RESPIRATORY,
-                description: 'Simplified pneumonia severity (community)',
-                keywords: ['crb', 'crb65', 'pneumonia', 'respiratory'],
-                getTemplate: () => EC.getCRB65Calculator(),
-                calculate: () => EC.calculateCRB65(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === OBSTETRICS CALCULATORS ===
-        
-        // APGAR Score
-        if (EC.getAPGARCalculator) {
-            this.registerCalculator('apgar', {
-                name: 'APGAR Score',
-                category: TOOL_CATEGORIES.OBSTETRICS,
-                description: 'Newborn health assessment',
-                keywords: ['apgar', 'newborn', 'baby', 'obstetrics', 'neonate'],
-                getTemplate: () => EC.getAPGARCalculator(),
-                calculate: () => EC.calculateAPGAR(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Bishop Score
-        if (EC.getBishopCalculator) {
-            this.registerCalculator('bishop', {
-                name: 'Bishop Score',
-                category: TOOL_CATEGORIES.OBSTETRICS,
-                description: 'Cervical readiness for induction',
-                keywords: ['bishop', 'cervix', 'induction', 'labour', 'obstetrics'],
-                getTemplate: () => EC.getBishopCalculator(),
-                calculate: () => EC.calculateBishop(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // === UTILITY CALCULATORS ===
-        
-        // Unit Converter
-        if (EC.getUnitConverterCalculator) {
-            this.registerCalculator('unit-converter', {
-                name: 'Clinical Unit Converter',
-                category: TOOL_CATEGORIES.UTILITIES,
-                description: 'Convert between clinical units',
-                keywords: ['unit', 'converter', 'conversion', 'mmol', 'mg'],
-                getTemplate: () => EC.getUnitConverterCalculator(),
-                calculate: () => EC.calculateUnitConverter(),
                 bindEvents: () => {}
             });
         }
@@ -830,60 +312,8 @@ export class CalculatorManager {
                 bindEvents: () => {}
             });
         }
-        
-        // A-a Gradient
-        if (EC.getAAGradientCalculator) {
-            this.registerCalculator('aa-gradient', {
-                name: 'A-a Gradient',
-                category: TOOL_CATEGORIES.RESPIRATORY,
-                description: 'Alveolar-arterial oxygen gradient',
-                keywords: ['aa', 'gradient', 'oxygen', 'respiratory', 'abg'],
-                getTemplate: () => EC.getAAGradientCalculator(),
-                calculate: () => EC.calculateAAGradient(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // PERC Rule
-        if (EC.getPERCCalculator) {
-            this.registerCalculator('perc', {
-                name: 'PERC Rule',
-                category: TOOL_CATEGORIES.EMERGENCY,
-                description: 'Pulmonary Embolism Rule-out Criteria',
-                keywords: ['perc', 'pe', 'pulmonary', 'embolism', 'rule'],
-                getTemplate: () => EC.getPERCCalculator(),
-                calculate: () => EC.calculatePERC(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // LDL Calculator
-        if (EC.getLDLCalculator) {
-            this.registerCalculator('ldl-calc', {
-                name: 'LDL Calculator',
-                category: TOOL_CATEGORIES.CARDIOLOGY,
-                description: 'Friedewald LDL calculation',
-                keywords: ['ldl', 'cholesterol', 'lipid', 'friedewald'],
-                getTemplate: () => EC.getLDLCalculator(),
-                calculate: () => EC.calculateLDL(),
-                bindEvents: () => {}
-            });
-        }
-        
-        // Winters Formula
-        if (EC.getWintersCalculator) {
-            this.registerCalculator('winters', {
-                name: 'Winters Formula',
-                category: TOOL_CATEGORIES.CHEMISTRY,
-                description: 'Expected PaCO2 in metabolic acidosis',
-                keywords: ['winters', 'pco2', 'acidosis', 'metabolic', 'compensation'],
-                getTemplate: () => EC.getWintersCalculator(),
-                calculate: () => EC.calculateWinters(),
-                bindEvents: () => {}
-            });
-        }
-        
-        console.log(`✅ Bridge calculators registered: ${EC ? 'with ExtractedCalculators' : 'native only'}`);
+
+        console.log(`✅ Bridge calculators registered: ${this.calculators.size - 6} from ExtractedCalculators`);
     }
 
     /**
@@ -921,61 +351,39 @@ export class CalculatorManager {
             // Switch to calculator detail panel first
             eventBus.emit(EVENTS.UI_SWITCH_TOOL, { tool: 'calculator-detail' });
             
-            // Get container
-            const container = document.getElementById('calculator-detail-container');
+            // Set current calculator
+            this.currentCalculator = calculator;
+            
+            // Add to recent tools
+            this.addToRecentTools(calculatorId);
+            
+            // Get container element
+            const container = document.getElementById('calculator-content');
             if (!container) {
-                console.error('Calculator detail container not found');
+                console.error('Calculator container not found');
                 return false;
             }
-
-            // Build header with back button
-            const headerHtml = `
-                <div class="calculator-header">
-                    <button class="back-btn" id="calc-back-btn">← Back to Calculators</button>
-                    <h3>${calculator.name}</h3>
-                </div>
-                <div class="calculator-content">
-                    ${calculator.getTemplate()}
-                </div>
-            `;
-
-            container.innerHTML = headerHtml;
-
-            // Bind back button
-            const backBtn = document.getElementById('calc-back-btn');
-            if (backBtn) {
-                backBtn.addEventListener('click', () => {
-                    eventBus.emit(EVENTS.UI_SWITCH_TOOL, { tool: 'calculators' });
+            
+            // Clear existing content
+            container.innerHTML = '';
+            
+            // Render calculator
+            const success = this.renderCalculator(calculator, container);
+            if (success) {
+                // Emit event
+                eventBus.emit(EVENTS.CALCULATOR_LOADED, {
+                    id: calculator.id,
+                    name: calculator.name,
+                    category: calculator.category
                 });
+                
+                // Analytics
+                analytics.trackCalculatorUsage(calculator.id);
+                
+                console.log(`✅ Calculator loaded: ${calculator.name}`);
             }
-
-            // Bind calculator events - pass the content container
-            if (calculator.bindEvents) {
-                const contentContainer = container.querySelector('.calculator-content');
-                calculator.bindEvents(contentContainer || container);
-            }
-
-            // Set as current calculator
-            this.currentCalculator = calculator;
-
-            // Add to recent
-            this.addToRecent(calculatorId);
-
-            // Track usage
-            analytics.trackCalculatorUse(calculator.name);
-
-            // Emit event
-            eventBus.emit(EVENTS.CALCULATOR_OPENED, { 
-                id: calculatorId, 
-                name: calculator.name 
-            });
-
-            // Switch to detail view
-            eventBus.emit(EVENTS.UI_SWITCH_TOOL, { tool: 'calculator-detail' });
-
-            console.log(`🧮 Loaded calculator: ${calculator.name}`);
-            return true;
-
+            
+            return success;
         } catch (error) {
             console.error('Error loading calculator:', error);
             return false;
@@ -983,19 +391,9 @@ export class CalculatorManager {
     }
 
     /**
-     * Render calculator HTML into a container
+     * Render calculator HTML and bind events
      */
-    renderCalculator(calculatorId, containerId) {
-        const calculator = this.getCalculator(calculatorId);
-        const container = typeof containerId === 'string' 
-            ? document.getElementById(containerId) 
-            : containerId;
-            
-        if (!calculator || !container) {
-            console.error('Calculator or container not found');
-            return false;
-        }
-        
+    renderCalculator(calculator, container) {
         try {
             // Render HTML using getTemplate
             const html = calculator.getTemplate();
@@ -1048,20 +446,8 @@ export class CalculatorManager {
                 calculator: calculatorId,
                 error 
             });
-            analytics.vibrateError();
-            return null;
+            return { error: error.message };
         }
-    }
-
-    /**
-     * Unregister a calculator
-     */
-    unregisterCalculator(id) {
-        const deleted = this.calculators.delete(id);
-        if (deleted) {
-            console.log(`🗑️ Unregistered calculator: ${id}`);
-        }
-        return deleted;
     }
 
     /**
@@ -1086,165 +472,75 @@ export class CalculatorManager {
     }
 
     /**
-     * Open calculator
+     * Get calculator count
      */
-    openCalculator(id) {
-        const calculator = this.getCalculator(id);
-        if (!calculator) {
-            console.error(`Calculator not found: ${id}`);
-            return null;
-        }
-
-        this.currentCalculator = calculator;
-        
-        // Add to recent tools (max 10)
-        this.addToRecent(id);
-        
-        // Track usage
-        analytics.trackCalculatorUse(calculator.name);
-        
-        // Emit event
-        eventBus.emit(EVENTS.CALCULATOR_OPENED, { id, name: calculator.name });
-        
-        console.log(`📊 Opened calculator: ${calculator.name}`);
-        
-        return calculator;
+    getCalculatorCount() {
+        return this.calculators.size;
     }
 
     /**
-     * Calculate using current calculator
+     * Search calculators by keyword
      */
-    calculate(inputs) {
-        if (!this.currentCalculator) {
-            console.error('No calculator is currently open');
-            return null;
-        }
-
-        const calculator = this.currentCalculator;
-        
-        try {
-            // New calculators don't take inputs, they read from DOM
-            const result = calculator.calculate();
+    searchCalculators(query) {
+        const searchTerm = query.toLowerCase();
+        return this.getAllCalculators().filter(calc => {
+            const nameMatch = calc.name.toLowerCase().includes(searchTerm);
+            const keywordMatch = calc.keywords.some(keyword => 
+                keyword.toLowerCase().includes(searchTerm)
+            );
+            const descMatch = calc.description.toLowerCase().includes(searchTerm);
             
-            // Emit event
-            eventBus.emit(EVENTS.CALCULATOR_CALCULATED, {
-                id: calculator.id,
-                name: calculator.name,
-                result
-            });
-            
-            return result;
-        } catch (error) {
-            console.error('Calculation error:', error);
-            eventBus.emit(EVENTS.ERROR_OCCURRED, { 
-                type: 'calculator', 
-                calculator: calculator.id,
-                error 
-            });
-            return null;
-        }
+            return nameMatch || keywordMatch || descMatch;
+        });
     }
 
     /**
-     * Add calculator to recent list
+     * Add calculator to recent tools
      */
-    addToRecent(id) {
-        // Remove if already in list
-        const index = this.recentTools.indexOf(id);
-        if (index > -1) {
-            this.recentTools.splice(index, 1);
-        }
-
+    addToRecentTools(calculatorId) {
+        // Remove if already exists
+        this.recentTools = this.recentTools.filter(id => id !== calculatorId);
+        
         // Add to beginning
-        this.recentTools.unshift(id);
-
-        // Keep max 10 recent
+        this.recentTools.unshift(calculatorId);
+        
+        // Keep only last 10
         if (this.recentTools.length > 10) {
             this.recentTools = this.recentTools.slice(0, 10);
         }
-
+        
         // Save to storage
         storage.setItem(STORAGE_KEYS.RECENT_TOOLS, this.recentTools);
     }
 
     /**
-     * Get recent calculators
+     * Get recent tools
      */
-    getRecentCalculators() {
-        return this.recentTools
-            .map(id => this.getCalculator(id))
-            .filter(calc => calc !== undefined);
+    getRecentTools() {
+        return this.recentTools.map(id => this.getCalculator(id)).filter(Boolean);
     }
 
     /**
-     * Clear recent calculators
+     * Clear recent tools
      */
-    clearRecent() {
+    clearRecentTools() {
         this.recentTools = [];
         storage.removeItem(STORAGE_KEYS.RECENT_TOOLS);
-        console.log('🗑️ Recent calculators cleared');
     }
 
     /**
-     * Add note to calculator
+     * Get tool notes for calculator
      */
-    addNote(calculatorId, note) {
-        if (!this.toolNotes[calculatorId]) {
-            this.toolNotes[calculatorId] = [];
-        }
+    getToolNotes(calculatorId) {
+        return this.toolNotes[calculatorId] || '';
+    }
 
-        this.toolNotes[calculatorId].push({
-            text: note,
-            timestamp: Date.now()
-        });
-
+    /**
+     * Save tool notes for calculator
+     */
+    saveToolNotes(calculatorId, notes) {
+        this.toolNotes[calculatorId] = notes;
         storage.setItem(STORAGE_KEYS.TOOL_NOTES, this.toolNotes);
-        console.log(`📝 Note added to calculator: ${calculatorId}`);
-    }
-
-    /**
-     * Get notes for calculator
-     */
-    getNotes(calculatorId) {
-        return this.toolNotes[calculatorId] || [];
-    }
-
-    /**
-     * Delete note
-     */
-    deleteNote(calculatorId, index) {
-        if (this.toolNotes[calculatorId] && this.toolNotes[calculatorId][index]) {
-            this.toolNotes[calculatorId].splice(index, 1);
-            storage.setItem(STORAGE_KEYS.TOOL_NOTES, this.toolNotes);
-            console.log(`🗑️ Note deleted from calculator: ${calculatorId}`);
-            return true;
-        }
-        return false;
-    }
-
-    /**
-     * Clear all notes for a calculator
-     */
-    clearNotes(calculatorId) {
-        if (this.toolNotes[calculatorId]) {
-            delete this.toolNotes[calculatorId];
-            storage.setItem(STORAGE_KEYS.TOOL_NOTES, this.toolNotes);
-            console.log(`🗑️ All notes cleared for calculator: ${calculatorId}`);
-            return true;
-        }
-        return false;
-    }
-
-    /**
-     * Search calculators
-     */
-    searchCalculators(query) {
-        const q = query.toLowerCase();
-        return this.getAllCalculators().filter(calc => {
-            return calc.name.toLowerCase().includes(q) ||
-                   calc.description.toLowerCase().includes(q) ||
-                   calc.category.toLowerCase().includes(q);
-        });
     }
 
     /**
@@ -1259,114 +555,43 @@ export class CalculatorManager {
     }
 
     /**
-     * Get calculator count
+     * Export calculator data
      */
-    getCalculatorCount() {
-        return this.calculators.size;
-    }
-
-    /**
-     * Get calculator count by category
-     */
-    getCategoryCount(category) {
-        return this.getCalculatorsByCategory(category).length;
-    }
-
-    /**
-     * Check if calculator exists
-     */
-    hasCalculator(id) {
-        return this.calculators.has(id);
-    }
-
-    /**
-     * Get current calculator
-     */
-    getCurrentCalculator() {
-        return this.currentCalculator;
-    }
-
-    /**
-     * Close current calculator
-     */
-    closeCalculator() {
-        const previousCalculator = this.currentCalculator;
-        this.currentCalculator = null;
-        
-        if (previousCalculator) {
-            console.log(`📊 Closed calculator: ${previousCalculator.name}`);
-        }
-        
-        return previousCalculator;
-    }
-
-    /**
-     * Export calculator history (for analysis)
-     */
-    exportHistory() {
+    exportCalculatorData() {
         return {
-            recent: this.recentTools,
-            notes: this.toolNotes,
-            exportedAt: new Date().toISOString()
+            calculators: this.getAllCalculators().map(calc => ({
+                id: calc.id,
+                name: calc.name,
+                category: calc.category,
+                description: calc.description,
+                keywords: calc.keywords
+            })),
+            recentTools: this.recentTools,
+            toolNotes: this.toolNotes,
+            exportDate: new Date().toISOString(),
+            version: '2.0'
         };
-    }
-
-    /**
-     * Import calculator history
-     */
-    importHistory(data) {
-        if (data.recent) {
-            this.recentTools = data.recent;
-            storage.setItem(STORAGE_KEYS.RECENT_TOOLS, this.recentTools);
-        }
-        
-        if (data.notes) {
-            this.toolNotes = data.notes;
-            storage.setItem(STORAGE_KEYS.TOOL_NOTES, this.toolNotes);
-        }
-        
-        console.log('📥 Calculator history imported');
     }
 
     /**
      * Get calculator statistics
      */
     getStatistics() {
+        const stats = {};
+        const categories = this.getCategories();
+        
+        categories.forEach(category => {
+            stats[category] = this.getCalculatorsByCategory(category).length;
+        });
+        
         return {
             totalCalculators: this.getCalculatorCount(),
-            categories: this.getCategories().length,
-            recentCount: this.recentTools.length,
-            notesCount: Object.keys(this.toolNotes).length,
-            totalNotes: Object.values(this.toolNotes).reduce((sum, notes) => sum + notes.length, 0)
+            categoryCounts: stats,
+            recentToolsCount: this.recentTools.length,
+            notesCount: Object.keys(this.toolNotes).length
         };
-    }
-
-    /**
-     * Validate inputs for calculator
-     */
-    validateInputs(calculatorId, inputs) {
-        const calculator = this.getCalculator(calculatorId);
-        if (!calculator) {
-            return { valid: false, error: 'Calculator not found' };
-        }
-
-        // If calculator has custom validation
-        if (calculator.metadata.validate) {
-            return calculator.metadata.validate(inputs);
-        }
-
-        // Basic validation - check all required inputs exist
-        if (calculator.metadata.requiredInputs) {
-            for (const input of calculator.metadata.requiredInputs) {
-                if (inputs[input] === undefined || inputs[input] === null || inputs[input] === '') {
-                    return { valid: false, error: `Missing required input: ${input}` };
-                }
-            }
-        }
-
-        return { valid: true };
     }
 }
 
-// Export singleton instance
+// Create and export singleton instance
 export const calculatorManager = new CalculatorManager();
