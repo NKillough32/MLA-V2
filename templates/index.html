@@ -477,6 +477,20 @@
         .image-modal-close:hover {
             opacity: 0.7;
         }
+
+        /* Dark mode for image modal */
+        [data-theme="dark"] .image-modal {
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        [data-theme="dark"] .image-modal-close {
+            color: #f9fafb;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        [data-theme="dark"] .image-modal-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
         
         /* Dark Mode Styles */
         :root {
@@ -580,15 +594,36 @@
         }
 
         [data-theme="dark"] .explanation-container {
-            background-color: var(--bg-tertiary) !important;
-            border-color: var(--border-color) !important;
-            color: var(--text-primary) !important;
+            background-color: #1f2937 !important;
+            border-color: #374151 !important;
+            color: #f9fafb !important;
         }
 
         [data-theme="dark"] .explanation-container a,
         [data-theme="dark"] .explanation-content a,
         [data-theme="dark"] .explanation-link {
-            color: #63b3ed !important;
+            color: #60a5fa !important;
+        }
+        
+        [data-theme="dark"] a {
+            color: #60a5fa;
+        }
+        
+        [data-theme="dark"] a:hover {
+            color: #93c5fd;
+        }
+
+        /* Dark mode button improvements */
+        [data-theme="dark"] button {
+            background: var(--button-bg);
+            color: white;
+            border: 1px solid var(--border-color);
+        }
+        
+        [data-theme="dark"] button:disabled {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+            opacity: 0.6;
         }
         
         [data-theme="dark"] .feedback-container {
@@ -623,6 +658,7 @@
         
         [data-theme="dark"] .investigations {
             background-color: var(--bg-tertiary) !important;
+            border-left: 4px solid #22c55e !important;
             border-color: var(--border-color) !important;
             color: var(--text-primary) !important;
         }
@@ -4462,8 +4498,8 @@
         [data-theme="dark"] select:focus,
         [data-theme="dark"] input:focus,
         [data-theme="dark"] textarea:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.2);
+            border-color: #0a84ff;
+            box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
         }
 
         /* Dark Mode for Checkbox and Radio Groups */
@@ -4521,8 +4557,8 @@
         /* Dark Mode for Placeholder Text */
         [data-theme="dark"] input::placeholder,
         [data-theme="dark"] textarea::placeholder {
-            color: var(--text-secondary);
-            opacity: 0.7;
+            color: #9ca3af;
+            opacity: 0.85;
         }
 
         /* Dark Mode for Calculator Detail Container */
@@ -4685,7 +4721,7 @@
 
         [data-theme="dark"] .new-option .badge {
             background: rgba(10, 132, 255, 0.2);
-            color: var(--accent-color);
+            color: #0a84ff;
         }
 
         /* Quiz Sidebar Dark Mode */
@@ -5105,8 +5141,8 @@
             word-break: break-word;
             white-space: pre-wrap;
             width: 100%;
-            font-size: 1rem;
-            line-height: 1.4;
+            font-size: 1.1rem;
+            line-height: 1.5;
         }
         
         .investigations {
@@ -5176,7 +5212,7 @@
         /* Options list */
         .new-options {
             display: grid;
-            gap: 6px;
+            gap: 4px;
             margin: 0;
         }
 
@@ -5184,15 +5220,15 @@
         .new-option {
             display: flex;
             align-items: flex-start;
-            gap: 12px;
-            padding: 14px 16px;
+            gap: 10px;
+            padding: 10px 12px;
             border: 2px solid var(--v2-border);
-            border-radius: 12px;
+            border-radius: 8px;
             background: var(--v2-bg-card);
             cursor: pointer;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             width: 100%;
-            min-height: 48px;
+            min-height: 40px;
         }
 
         .new-option input[type="radio"] {
