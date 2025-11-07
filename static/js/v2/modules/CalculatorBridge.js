@@ -27,38 +27,45 @@ class CalculatorBridge {
         if (window.ExtractedCalculators) {
             console.log('🔗 Setting up calculator bridge...');
             
-            // Get the main app if available (it should already be window.quizApp)
-            const mainApp = window.quizApp || window.MLAQuizApp || {};
+            // Get the main app (should already be window.quizApp)
+            const mainApp = window.quizApp || window.MLAQuizApp;
             
-            // Create a comprehensive bridge that includes both main app and calculator functions
-            const quizAppBridge = {
-                // Include main app methods if available (these should be first so they aren't overridden)
-                ...mainApp,
-                
-                // Copy all methods from ExtractedCalculators (calculator templates and functions)
-                ...window.ExtractedCalculators,
-                
-                // Add V2 bridge methods for compatibility
-                trackToolUsage: (type, name) => this.trackToolUsage(type, name),
-                switchMedicalTool: (name) => this.switchMedicalTool(name),
-                showToast: (msg, type) => this.showToast(msg, type)
-            };
+            if (!mainApp) {
+                console.warn('⚠️ Main app not ready yet, retrying...');
+                setTimeout(() => this.setupCalculatorBridge(), 100);
+                return;
+            }
             
-            // Update window.quizApp with the merged bridge (preserving all main app methods)
-            window.quizApp = quizAppBridge;
+            // Instead of replacing window.quizApp, extend it by adding calculator methods
+            // This preserves all the main app methods on the prototype chain
+            Object.keys(window.ExtractedCalculators).forEach(key => {
+                if (!mainApp[key]) {  // Only add if not already present
+                    mainApp[key] = window.ExtractedCalculators[key];
+                }
+            });
+            
+            // Add V2 bridge methods for compatibility if not present
+            if (!mainApp.trackToolUsage) {
+                mainApp.trackToolUsage = (type, name) => this.trackToolUsage(type, name);
+            }
+            if (!mainApp.switchMedicalTool) {
+                mainApp.switchMedicalTool = (name) => this.switchMedicalTool(name);
+            }
+            if (!mainApp.showToast) {
+                mainApp.showToast = (msg, type) => this.showToast(msg, type);
+            }
             
             console.log('✅ Calculator bridge established');
-            console.log(`   - Main app methods: ${Object.keys(mainApp).length}`);
-            console.log(`   - Calculator functions: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('calculate')).length}`);
-            console.log(`   - Calculator getters: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('get') && k.includes('Calculator')).length}`);
+            console.log(`   - Calculator functions added: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('calculate')).length}`);
+            console.log(`   - Calculator getters added: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('get') && k.includes('Calculator')).length}`);
             
-            // Test a few key calculator functions
-            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS', 'showDrugDetail', 'loadDrugReferenceContent'];
+            // Test key functions
+            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS', 'showDrugDetail', 'loadDrugReferenceContent', 'speakDrugName'];
             testFunctions.forEach(funcName => {
-                if (window.quizApp[funcName]) {
+                if (typeof mainApp[funcName] === 'function') {
                     console.log(`   ✓ ${funcName} available`);
                 } else {
-                    console.warn(`   ⚠ ${funcName} missing`);
+                    console.warn(`   ⚠ ${funcName} missing or not a function`);
                 }
             });
             
