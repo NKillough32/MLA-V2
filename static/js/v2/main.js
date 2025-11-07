@@ -317,9 +317,14 @@ class MLAQuizApp {
         const prevBtnTop = document.getElementById('prevBtnTop');
 
         if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
+            nextBtn.addEventListener('click', async () => {
                 console.log('➡️ Next button clicked');
-                quizManager.nextQuestion();
+                const moved = quizManager.nextQuestion();
+                if (!moved) {
+                    // Reached the end, finish the quiz
+                    console.log('🏁 Quiz finished via Next button');
+                    await quizManager.finishQuiz();
+                }
             });
         }
 
@@ -332,7 +337,7 @@ class MLAQuizApp {
 
         if (nextBtnTop) {
             let nextBtnDebounce = false;
-            nextBtnTop.addEventListener('click', (e) => {
+            nextBtnTop.addEventListener('click', async (e) => {
                 e.preventDefault();
                 if (nextBtnDebounce) {
                     console.log('➡️ Next button debounced');
@@ -340,7 +345,12 @@ class MLAQuizApp {
                 }
                 nextBtnDebounce = true;
                 console.log('➡️ Next (top) button clicked');
-                quizManager.nextQuestion();
+                const moved = quizManager.nextQuestion();
+                if (!moved) {
+                    // Reached the end, finish the quiz
+                    console.log('🏁 Quiz finished via Next (top) button');
+                    await quizManager.finishQuiz();
+                }
                 setTimeout(() => {
                     nextBtnDebounce = false;
                 }, 300);
@@ -3326,6 +3336,223 @@ window.initializeV2Integration = function(v1AppInstance) {
     console.error('❌ Failed to initialize V2 integration - missing V1 app or V2 integration');
     return false;
 };
+
+// Image Modal Functions (V1 compatibility)
+function openImageModal(imageUrl, altText) {
+    // Remove existing modal if any
+    const existingModal = document.getElementById('imageModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+    
+    // Handle case where imageUrl might be a filename that needs to be resolved
+    let actualUrl = imageUrl;
+    
+    // If it's not a data URL or http URL, try to find it in the document
+    if (!imageUrl.startsWith('data:') && !imageUrl.startsWith('http')) {
+        // Look for an image with this filename in the document
+        const images = document.querySelectorAll('img');
+        for (let img of images) {
+            if (img.src.includes(imageUrl) || img.alt === imageUrl) {
+                actualUrl = img.src;
+                break;
+            }
+        }
+        
+        // If still not found, show error
+        if (actualUrl === imageUrl && !imageUrl.startsWith('data:')) {
+            console.warn('Image not found:', imageUrl);
+            alert('Image not found: ' + imageUrl);
+            return;
+        }
+    }
+    
+    // Create modal with zoom container
+    const modal = document.createElement('div');
+    modal.id = 'imageModal';
+    modal.className = 'image-modal';
+    modal.innerHTML = `
+        <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+        <div class="image-zoom-container">
+            <img src="${actualUrl}" alt="${altText}" loading="lazy" class="zoomable-image">
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Initialize pinch zoom functionality
+    const img = modal.querySelector('.zoomable-image');
+    const container = modal.querySelector('.image-zoom-container');
+    initPinchZoom(img, container);
+    
+    // Close modal when clicking on background (but not on image)
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeImageModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', handleEscapeKey);
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.remove();
+    }
+    document.removeEventListener('keydown', handleEscapeKey);
+}
+
+function handleEscapeKey(e) {
+    if (e.key === 'Escape') {
+        closeImageModal();
+    }
+}
+
+function initPinchZoom(img, container) {
+    let scale = 1;
+    let startDistance = 0;
+    let startScale = 1;
+    let startX = 0, startY = 0;
+    let translateX = 0, translateY = 0;
+    let startTranslateX = 0, startTranslateY = 0;
+
+    img.style.transition = 'transform 0.1s ease-out';
+    
+    // Touch events for pinch zoom
+    container.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 2) {
+            e.preventDefault();
+            img.style.transition = 'none';
+            
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            startDistance = Math.hypot(
+                touch2.clientX - touch1.clientX,
+                touch2.clientY - touch1.clientY
+            );
+            startScale = scale;
+            
+            // Record center point for zooming
+            const rect = container.getBoundingClientRect();
+            startX = (touch1.clientX + touch2.clientX) / 2 - rect.left;
+            startY = (touch1.clientY + touch2.clientY) / 2 - rect.top;
+            startTranslateX = translateX;
+            startTranslateY = translateY;
+        } else if (e.touches.length === 1 && scale > 1) {
+            e.preventDefault();
+            img.style.transition = 'none';
+            
+            const touch = e.touches[0];
+            const rect = container.getBoundingClientRect();
+            startX = touch.clientX - rect.left;
+            startY = touch.clientY - rect.top;
+            startTranslateX = translateX;
+            startTranslateY = translateY;
+        }
+    });
+
+    container.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2) {
+            e.preventDefault();
+            
+            const touch1 = e.touches[0];
+            const touch2 = e.touches[1];
+            const distance = Math.hypot(
+                touch2.clientX - touch1.clientX,
+                touch2.clientY - touch1.clientY
+            );
+            
+            scale = Math.min(Math.max(0.5, startScale * (distance / startDistance)), 4);
+            
+            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        } else if (e.touches.length === 1 && scale > 1) {
+            e.preventDefault();
+            
+            const touch = e.touches[0];
+            const rect = container.getBoundingClientRect();
+            const deltaX = (touch.clientX - rect.left) - startX;
+            const deltaY = (touch.clientY - rect.top) - startY;
+            
+            translateX = startTranslateX + deltaX / scale;
+            translateY = startTranslateY + deltaY / scale;
+            
+            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+    });
+
+    container.addEventListener('touchend', (e) => {
+        if (e.touches.length === 0) {
+            img.style.transition = 'transform 0.1s ease-out';
+            
+            // Reset if zoomed out too much
+            if (scale < 1) {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                img.style.transform = 'scale(1) translate(0px, 0px)';
+            }
+        }
+    });
+
+    // Mouse wheel zoom for desktop
+    container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        
+        const rect = container.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        const zoom = e.deltaY < 0 ? 1.1 : 0.9;
+        const newScale = Math.min(Math.max(0.5, scale * zoom), 4);
+        
+        if (newScale !== scale) {
+            const scaleChange = newScale / scale;
+            translateX = (translateX - mouseX / scale) * scaleChange + mouseX / newScale;
+            translateY = (translateY - mouseY / scale) * scaleChange + mouseY / newScale;
+            scale = newScale;
+            
+            img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+            
+            // Reset if zoomed out to normal
+            if (scale <= 1) {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                img.style.transform = 'scale(1) translate(0px, 0px)';
+            }
+        }
+    });
+
+    // Double tap to zoom
+    let lastTap = 0;
+    container.addEventListener('touchend', (e) => {
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTap;
+        
+        if (tapLength < 500 && tapLength > 0) {
+            e.preventDefault();
+            
+            if (scale === 1) {
+                scale = 2;
+                img.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+            } else {
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                img.style.transform = 'scale(1) translate(0px, 0px)';
+            }
+        }
+        
+        lastTap = currentTime;
+    });
+}
+
+// Make functions globally available
+window.openImageModal = openImageModal;
+window.closeImageModal = closeImageModal;
+window.handleEscapeKey = handleEscapeKey;
 
 console.log('📦 MLA Quiz PWA modules loaded');
 
