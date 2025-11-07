@@ -2746,14 +2746,14 @@ class MLAQuizApp {
         // Build question content (no header since we update the existing one)
         let html = '';
 
-        // Add image if present
-        if (question.image) {
-            html += this.formatText(question.image);
-        }
-
         // Add scenario if present and different from prompt (V1-style blue background)
         if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text) {
             html += `<div class="q-text" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 15px;">${this.formatText(question.scenario)}</div>`;
+        }
+
+        // Add image if present (after scenario/stem, matching V1 order)
+        if (question.image) {
+            html += this.formatText(question.image);
         }
 
         // Add investigations if present (V1-style green background)
@@ -3035,16 +3035,24 @@ class MLAQuizApp {
     formatInvestigations(investigationsText) {
         if (!investigationsText) return '';
         
-        // Format the text with proper line breaks and structure
-        let formatted = investigationsText
-            // Replace multiple spaces with single space
-            .replace(/\s+/g, ' ')
-            // Add line breaks before test names (common patterns)
-            .replace(/([A-Z][a-z]+:)/g, '\n$1')
-            // Add line breaks for numeric values with units
-            .replace(/(\d+\.?\d*\s*[a-zA-Z/]+)/g, ' $1')
-            .trim();
+        let formatted = investigationsText.trim();
         
+        // First, handle lines that start with "- " to ensure they stay on separate lines
+        // Replace newlines followed by "- " with a placeholder that won't be collapsed
+        formatted = formatted.replace(/\n-\s+/g, '<br>- ');
+        
+        // Split investigations at natural break points:
+        // 1. After reference ranges in parentheses followed by a capital letter
+        // 2. After test results with colons followed by a capital letter
+        formatted = formatted
+            // Pattern: "Value unit (range) NextTest" -> "Value unit (range)<br>NextTest"
+            .replace(/(\([^)]+\))\s+([A-Z][A-Za-z])/g, '$1<br>$2')
+            // Pattern: "Test: result NextTest" -> "Test: result<br>NextTest" 
+            .replace(/(:\s*[a-z][^:]*?)\s+([A-Z][A-Za-z])/g, '$1<br>$2')
+            // Collapse multiple spaces but preserve <br> tags
+            .replace(/\s+/g, ' ')
+            .trim();
+            
         return this.formatText(formatted);
     }
 
