@@ -1220,6 +1220,77 @@ export class CalculatorManager {
     }
 
     /**
+     * Calculator result interpretation - NEW FEATURE
+     */
+    interpretResult(calculatorId, result) {
+        const interpretations = {
+            'bmi': this.interpretBMI(result),
+            'gcs': this.interpretGCS(result),
+            'chads2-vasc': this.interpretCHADS2VASc(result),
+            'hasbled': this.interpretHASBLED(result),
+            'curb65': this.interpretCURB65(result),
+            'news2': this.interpretNEWS2(result),
+            'egfr': this.interpreteGFR(result),
+            'wells': this.interpretWells(result)
+        };
+        
+        return interpretations[calculatorId] || { 
+            interpretation: 'Result calculated', 
+            recommendation: 'Please interpret clinically',
+            riskLevel: 'unknown'
+        };
+    }
+
+    /**
+     * Calculator comparison tool - NEW FEATURE
+     */
+    compareCalculators(calculatorIds, patientData) {
+        return calculatorIds.map(id => {
+            const calc = this.getCalculator(id);
+            if (!calc) return null;
+            
+            return {
+                id,
+                name: calc.name,
+                category: calc.category,
+                result: this.calculateWithData(id, patientData),
+                interpretation: this.interpretResult(id, patientData),
+                clinicalRelevance: this.getClinicalRelevance(id, calc.category)
+            };
+        }).filter(Boolean);
+    }
+
+    /**
+     * Smart calculator suggestions - NEW FEATURE
+     */
+    suggestCalculators(symptoms, demographics, vitals) {
+        const suggestions = [];
+        
+        // Age-based suggestions
+        if (demographics.age > 65) {
+            suggestions.push('frailty', 'barthel', 'waterlow');
+        }
+        
+        // Symptom-based suggestions
+        if (symptoms.includes('chest pain')) {
+            suggestions.push('grace', 'chads2-vasc', 'wells');
+        }
+        if (symptoms.includes('shortness of breath')) {
+            suggestions.push('curb65', 'news2', 'wells');
+        }
+        if (symptoms.includes('confusion')) {
+            suggestions.push('gcs', 'news2', 'mmse');
+        }
+        
+        // Vital sign triggers
+        if (vitals.systolic > 160 || vitals.diastolic > 100) {
+            suggestions.push('qrisk3', 'chads2-vasc');
+        }
+        
+        return suggestions.map(id => this.getCalculator(id)).filter(Boolean);
+    }
+
+    /**
      * Get tool notes for calculator
      */
     getToolNotes(calculatorId) {

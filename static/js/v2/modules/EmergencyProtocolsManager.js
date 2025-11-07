@@ -379,6 +379,88 @@ export class EmergencyProtocolsManager {
     }
 
     /**
+     * Emergency protocol timer - NEW FEATURE
+     */
+    startProtocolTimer(protocolKey, stepIndex = 0) {
+        const protocol = this.emergencyProtocols[protocolKey];
+        if (!protocol || !protocol.steps) return null;
+
+        const timer = {
+            protocolKey,
+            protocolName: protocol.name,
+            currentStep: stepIndex,
+            startTime: Date.now(),
+            stepStartTime: Date.now(),
+            completed: false
+        };
+
+        // Store in sessionStorage for persistence across refreshes
+        sessionStorage.setItem('activeProtocolTimer', JSON.stringify(timer));
+        
+        return timer;
+    }
+
+    /**
+     * Drug dosage calculator for emergencies - NEW FEATURE
+     */
+    calculateEmergencyDosage(drugName, patientWeight, indication) {
+        const emergencyDrugs = {
+            'adrenaline': {
+                anaphylaxis: { dose: '0.5mg IM', calculation: '0.01mg/kg IM' },
+                cardiacArrest: { dose: '1mg IV', calculation: '10ml of 1:10,000' }
+            },
+            'amiodarone': {
+                vt: { dose: '5mg/kg IV', maxDose: '300mg' },
+                af: { dose: '5mg/kg over 1h', maxDose: '1.2g/24h' }
+            },
+            'atropine': {
+                bradycardia: { dose: '0.5mg IV', maxDose: '3mg' },
+                organophosphate: { dose: '2mg IV bolus' }
+            }
+        };
+
+        const drug = emergencyDrugs[drugName.toLowerCase()];
+        if (!drug || !drug[indication]) return null;
+
+        const protocol = drug[indication];
+        return {
+            drug: drugName,
+            indication,
+            standardDose: protocol.dose,
+            weightBasedDose: this.calculateWeightBasedDose(protocol.calculation, patientWeight),
+            maxDose: protocol.maxDose,
+            patientWeight
+        };
+    }
+
+    /**
+     * Protocol adherence tracker - NEW FEATURE
+     */
+    trackProtocolAdherence(protocolKey, completedSteps) {
+        const protocol = this.emergencyProtocols[protocolKey];
+        if (!protocol) return null;
+
+        const totalSteps = protocol.steps ? protocol.steps.length : 0;
+        const adherenceScore = totalSteps > 0 ? (completedSteps.length / totalSteps) * 100 : 0;
+        
+        const tracking = {
+            protocol: protocol.name,
+            totalSteps,
+            completedSteps: completedSteps.length,
+            adherenceScore: Math.round(adherenceScore),
+            missedSteps: totalSteps - completedSteps.length,
+            completionTime: Date.now()
+        };
+
+        // Store adherence data
+        const adherenceHistory = JSON.parse(localStorage.getItem('protocolAdherence') || '[]');
+        adherenceHistory.push(tracking);
+        localStorage.setItem('protocolAdherence', JSON.stringify(adherenceHistory));
+
+        return tracking;
+    }
+
+    /**
      * Get protocols by urgency
      */
     getProtocolsByUrgency(urgency) {

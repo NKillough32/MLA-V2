@@ -71,6 +71,70 @@ export class DrugReferenceManager {
     }
 
     /**
+     * Drug interaction checker - NEW FEATURE
+     */
+    checkDrugInteractions(drugNames) {
+        const interactions = [];
+        const drugs = drugNames.map(name => 
+            this.searchDrugs(name).find(d => d.name.toLowerCase() === name.toLowerCase())
+        ).filter(Boolean);
+
+        for (let i = 0; i < drugs.length; i++) {
+            for (let j = i + 1; j < drugs.length; j++) {
+                const drug1 = drugs[i];
+                const drug2 = drugs[j];
+                
+                // Check if drug1's interactions mention drug2's class or name
+                if (drug1.interactions && (
+                    drug1.interactions.toLowerCase().includes(drug2.class.toLowerCase()) ||
+                    drug1.interactions.toLowerCase().includes(drug2.name.toLowerCase())
+                )) {
+                    interactions.push({
+                        drugs: [drug1.name, drug2.name],
+                        severity: this.assessInteractionSeverity(drug1.interactions),
+                        description: drug1.interactions
+                    });
+                }
+            }
+        }
+        
+        return interactions;
+    }
+
+    /**
+     * Pregnancy safety checker - NEW FEATURE
+     */
+    checkPregnancySafety(drugName) {
+        const drug = this.searchDrugs(drugName)[0];
+        if (!drug || !drug.pregnancy) return null;
+
+        const safetyLevel = this.categorizePregancySafety(drug.pregnancy);
+        return {
+            drug: drug.name,
+            safety: safetyLevel,
+            details: drug.pregnancy,
+            recommendation: this.getPregnancyRecommendation(safetyLevel)
+        };
+    }
+
+    /**
+     * Dosing calculator with weight/age adjustments - NEW FEATURE
+     */
+    calculateDosing(drugName, patientWeight, patientAge, indication = 'standard') {
+        const drug = this.searchDrugs(drugName)[0];
+        if (!drug) return null;
+
+        return {
+            drug: drug.name,
+            standardDose: drug.dosing,
+            adjustedDose: this.adjustDoseForPatient(drug, patientWeight, patientAge),
+            maxDose: this.calculateMaxDose(drug, patientWeight),
+            renalAdjustment: this.checkRenalAdjustment(drug),
+            hepaticAdjustment: this.checkHepaticAdjustment(drug)
+        };
+    }
+
+    /**
      * Get drugs by category
      */
     getDrugsByCategory(category) {

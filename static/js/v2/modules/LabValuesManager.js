@@ -239,6 +239,67 @@ export class LabValuesManager {
     }
 
     /**
+     * Lab value interpreter - NEW FEATURE
+     */
+    interpretLabValue(testName, value, units, patientAge, patientSex) {
+        const interpretation = this.getLabInterpretation(testName, value, patientAge, patientSex);
+        
+        return {
+            test: testName,
+            value: `${value} ${units}`,
+            status: interpretation.status, // 'normal', 'high', 'low', 'critical'
+            significance: interpretation.significance,
+            recommendations: interpretation.recommendations,
+            associatedConditions: this.getAssociatedConditions(testName, interpretation.status),
+            followUpTests: this.getFollowUpTests(testName, interpretation.status)
+        };
+    }
+
+    /**
+     * Lab trend analyzer - NEW FEATURE
+     */
+    analyzeTrend(testName, values, dates) {
+        if (values.length < 2) return null;
+        
+        const trend = this.calculateTrend(values);
+        const latestValue = values[values.length - 1];
+        const previousValue = values[values.length - 2];
+        const percentChange = ((latestValue - previousValue) / previousValue) * 100;
+        
+        return {
+            test: testName,
+            trend: trend, // 'increasing', 'decreasing', 'stable'
+            percentChange: Math.round(percentChange * 100) / 100,
+            direction: latestValue > previousValue ? 'up' : 'down',
+            significance: this.assessTrendSignificance(testName, trend, percentChange),
+            recommendation: this.getTrendRecommendation(testName, trend, percentChange)
+        };
+    }
+
+    /**
+     * Critical values alert system - NEW FEATURE
+     */
+    checkCriticalValues(labResults) {
+        const criticalAlerts = [];
+        
+        Object.entries(labResults).forEach(([testName, value]) => {
+            const critical = this.getCriticalThresholds(testName);
+            if (critical && (value < critical.low || value > critical.high)) {
+                criticalAlerts.push({
+                    test: testName,
+                    value,
+                    threshold: critical,
+                    severity: this.getCriticalSeverity(testName, value, critical),
+                    urgency: 'immediate',
+                    actions: this.getCriticalActions(testName, value)
+                });
+            }
+        });
+        
+        return criticalAlerts.sort((a, b) => b.severity - a.severity);
+    }
+
+    /**
      * Get total test count
      */
     getTestCount() {
