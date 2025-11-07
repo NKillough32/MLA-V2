@@ -3076,8 +3076,9 @@ class MLAQuizApp {
                 let imagePath = filename.trim();
                 console.log('🖼️ IMAGE DEBUG - Looking for image file:', imagePath);
                 
-                // Use currentQuiz images if available
-                if (quizManager.currentQuiz && quizManager.currentQuiz.images) {
+                // Use currentQuiz images if available (try both imported and window reference)
+                const activeQuizManager = quizManager || window.quizManager;
+                if (activeQuizManager && activeQuizManager.currentQuiz && activeQuizManager.currentQuiz.images) {
                     console.log('🖼️ IMAGE DEBUG - Searching in currentQuiz.images');
                     
                     // Try multiple possible keys for the image
@@ -3094,8 +3095,8 @@ class MLAQuizApp {
                     let foundKey = null;
                     
                     for (const key of possibleKeys) {
-                        if (quizManager.currentQuiz.images[key]) {
-                            imageData = quizManager.currentQuiz.images[key];
+                        if (activeQuizManager.currentQuiz.images[key]) {
+                            imageData = activeQuizManager.currentQuiz.images[key];
                             foundKey = key;
                             console.log('🖼️ IMAGE DEBUG - Found image with key:', key);
                             break;
@@ -3108,7 +3109,7 @@ class MLAQuizApp {
                         // Handle reference-based storage (resolve references)
                         if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                             const refKey = imageData.substring(8);
-                            imageData = quizManager.currentQuiz.images[refKey];
+                            imageData = activeQuizManager.currentQuiz.images[refKey];
                             console.log('🖼️ IMAGE DEBUG - Resolved reference from', foundKey, 'to', refKey);
                         }
                         
@@ -3119,10 +3120,12 @@ class MLAQuizApp {
                             console.log('🖼️ IMAGE DEBUG - Image data after resolution:', typeof imageData, imageData?.substring(0, 50) + '...');
                         }
                     } else {
-                        console.log('⚠️ Image not found in currentQuiz.images. Available keys:', Object.keys(quizManager.currentQuiz.images).slice(0, 10));
+                        console.log('⚠️ Image not found in currentQuiz.images. Available keys:', Object.keys(activeQuizManager.currentQuiz.images).slice(0, 10));
                     }
                 } else {
-                    console.log('⚠️ quizManager.currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ activeQuizManager.currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ Debug - quizManager:', !!quizManager);
+                    console.log('⚠️ Debug - window.quizManager:', !!window.quizManager);
                 }
                 
                 console.log('🖼️ IMAGE DEBUG - No embedded image found, showing as link');
@@ -3141,19 +3144,20 @@ class MLAQuizApp {
                 const refKey = url.substring(8); // Remove '__REF__:' prefix (8 characters)
                 console.log('�️ IMAGE DEBUG - Looking for refKey:', refKey);
                 
-                // Use currentQuiz images if available (already loaded with IndexedDB data)
-                if (quizManager.currentQuiz && quizManager.currentQuiz.images) {
+                // Use currentQuiz images if available (try both imported and window reference)
+                const activeQuizManager = quizManager || window.quizManager;
+                if (activeQuizManager && activeQuizManager.currentQuiz && activeQuizManager.currentQuiz.images) {
                     console.log('🖼️ IMAGE DEBUG - Using currentQuiz.images for lookup');
                     
                     // Check if the reference key exists directly
-                    if (quizManager.currentQuiz.images[refKey]) {
-                        let imageData = quizManager.currentQuiz.images[refKey];
+                    if (activeQuizManager.currentQuiz.images[refKey]) {
+                        let imageData = activeQuizManager.currentQuiz.images[refKey];
                         console.log('�️ IMAGE DEBUG - Found direct match for key:', refKey);
                         
                         // If it's another reference, resolve it
                         if (typeof imageData === 'string' && imageData.startsWith('__REF__:')) {
                             const secondRefKey = imageData.substring(8);
-                            imageData = quizManager.currentQuiz.images[secondRefKey];
+                            imageData = activeQuizManager.currentQuiz.images[secondRefKey];
                             console.log('🖼️ IMAGE DEBUG - Resolved nested reference from', refKey, 'to', secondRefKey);
                         }
                         
@@ -3164,10 +3168,15 @@ class MLAQuizApp {
                             console.log('⚠️ Found data but not base64:', typeof imageData, imageData?.substring(0, 50));
                         }
                     } else {
-                        console.log('⚠️ Key not found:', refKey, 'Available keys:', Object.keys(quizManager.currentQuiz.images).slice(0, 10));
+                        console.log('⚠️ Key not found:', refKey, 'Available keys:', Object.keys(activeQuizManager.currentQuiz.images).slice(0, 10));
                     }
                 } else {
-                    console.log('⚠️ quizManager.currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ activeQuizManager.currentQuiz or currentQuiz.images not available');
+                    console.log('⚠️ Debug - quizManager available:', !!quizManager);
+                    console.log('⚠️ Debug - window.quizManager available:', !!window.quizManager);
+                    if (window.quizManager) {
+                        console.log('⚠️ Debug - window.quizManager.currentQuiz:', !!window.quizManager.currentQuiz);
+                    }
                 }
                 
                 if (actualUrl === url) {
