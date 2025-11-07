@@ -728,6 +728,10 @@ class MLAQuizApp {
      * Load drug reference content
      */
     loadDrugReferenceContent(panel) {
+        if (!panel) {
+            console.error('loadDrugReferenceContent: panel is null');
+            return;
+        }
         const container = panel.querySelector('#drug-reference-container') || panel;
         const categories = this.drugManager.getCategories();
         
@@ -905,7 +909,7 @@ class MLAQuizApp {
         if (!panel) return;
         
         panel.innerHTML = `
-            <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(this.closest('[data-panel]'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
+            <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(document.querySelector('[data-panel=\"drug-panel\"]'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
                 ← Back to Drug List
             </button>
             <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">

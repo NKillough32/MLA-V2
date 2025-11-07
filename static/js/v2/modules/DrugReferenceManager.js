@@ -168,7 +168,7 @@ export class DrugReferenceManager {
     /**
      * Add drug to recent history
      */
-    async addToRecent(drugKey) {
+    addToRecent(drugKey) {
         // Remove if already exists
         this.recentDrugs = this.recentDrugs.filter(key => key !== drugKey);
         
@@ -178,7 +178,7 @@ export class DrugReferenceManager {
         // Keep only last 10
         this.recentDrugs = this.recentDrugs.slice(0, 10);
         
-        await this.storage.set('recentDrugs', this.recentDrugs);
+        this.storage.setItem('recentDrugs', this.recentDrugs);
     }
 
     /**
