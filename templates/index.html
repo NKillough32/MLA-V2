@@ -4674,7 +4674,7 @@
 
         [data-theme="dark"] .investigations {
             background: rgba(240, 253, 244, 0.08) !important;
-            border-left-color: #22c55e;
+            border-left: 4px solid #22c55e !important;
             color: var(--text-primary) !important;
         }
 
@@ -5212,7 +5212,7 @@
         /* Options list */
         .new-options {
             display: grid;
-            gap: 4px;
+            gap: 2px;
             margin: 0;
         }
 
@@ -5221,14 +5221,14 @@
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            padding: 10px 12px;
+            padding: 8px 12px;
             border: 2px solid var(--v2-border);
             border-radius: 8px;
             background: var(--v2-bg-card);
             cursor: pointer;
             transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             width: 100%;
-            min-height: 40px;
+            min-height: 36px;
         }
 
         .new-option input[type="radio"] {
@@ -8441,6 +8441,18 @@
                 setTimeout(checkAppReady, 1000);
             }
             
+            // Fallback calculator bridge setup in case module timing is off
+            setTimeout(() => {
+                if (window.ExtractedCalculators && (!window.quizApp || !window.quizApp.calculateBMI)) {
+                    console.log('🔄 Setting up fallback calculator bridge...');
+                    window.quizApp = {
+                        ...window.MLAQuizApp,
+                        ...window.ExtractedCalculators
+                    };
+                    console.log('✅ Fallback calculator bridge established');
+                }
+            }, 2000);
+
             // Add report generation handler for both buttons
             document.addEventListener('click', (e) => {
                 if (e.target.id === 'generate-report-btn' || e.target.id === 'floating-pdf-btn') {

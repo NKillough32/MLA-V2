@@ -17,6 +17,56 @@ class CalculatorBridge {
         this.eventBus = eventBus;
         this.storageManager = storageManager;
         this.analyticsManager = analyticsManager;
+        
+        // Bridge the ExtractedCalculators methods to work with our system
+        // This allows the extracted calculators (which use window.quizApp) to work in V2
+        this.setupCalculatorBridge();
+    }
+
+    setupCalculatorBridge() {
+        if (window.ExtractedCalculators) {
+            console.log('🔗 Setting up calculator bridge...');
+            
+            // Get the main app if available
+            const mainApp = window.MLAQuizApp || {};
+            
+            // Create a comprehensive bridge that includes both main app and calculator functions
+            const quizAppBridge = {
+                // Include main app methods if available
+                ...mainApp,
+                
+                // Copy all methods from ExtractedCalculators (calculator templates and functions)
+                ...window.ExtractedCalculators,
+                
+                // Add V2 bridge methods for compatibility
+                trackToolUsage: (type, name) => this.trackToolUsage(type, name),
+                switchMedicalTool: (name) => this.switchMedicalTool(name),
+                showToast: (msg, type) => this.showToast(msg, type)
+            };
+            
+            // Make the bridge available as window.quizApp for onclick handlers
+            window.quizApp = quizAppBridge;
+            
+            console.log('✅ Calculator bridge established');
+            console.log(`   - Main app methods: ${Object.keys(mainApp).length}`);
+            console.log(`   - Calculator functions: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('calculate')).length}`);
+            console.log(`   - Calculator getters: ${Object.keys(window.ExtractedCalculators).filter(k => k.startsWith('get') && k.includes('Calculator')).length}`);
+            
+            // Test a few key calculator functions
+            const testFunctions = ['calculateBMI', 'calculateFrailty', 'calculateGCS'];
+            testFunctions.forEach(funcName => {
+                if (window.quizApp[funcName]) {
+                    console.log(`   ✓ ${funcName} available`);
+                } else {
+                    console.warn(`   ⚠ ${funcName} missing`);
+                }
+            });
+            
+        } else {
+            console.warn('⚠️ ExtractedCalculators not available - retrying...');
+            // Retry after a short delay in case the script is still loading
+            setTimeout(() => this.setupCalculatorBridge(), 100);
+        }
     }
 
     // Bridge method for trackToolUsage
@@ -408,26 +458,6 @@ const bridge = new CalculatorBridge();
 // Make it available globally for onclick handlers
 if (typeof window !== 'undefined') {
     window.calculatorBridge = bridge;
-    
-    // Bridge the ExtractedCalculators methods to work with our system
-    // This allows the extracted calculators (which use window.quizApp) to work in V2
-    if (window.ExtractedCalculators) {
-        // Create a bridge context object that mimics window.quizApp
-        const quizAppBridge = {
-            // Copy all methods from ExtractedCalculators
-            ...window.ExtractedCalculators,
-            
-            // Add V2 bridge methods for compatibility
-            trackToolUsage: (type, name) => bridge.trackToolUsage(type, name),
-            switchMedicalTool: (name) => bridge.switchMedicalTool(name),
-            showToast: (msg, type) => bridge.showToast(msg, type)
-        };
-        
-        // Make the bridge available as window.quizApp for onclick handlers
-        window.quizApp = quizAppBridge;
-        
-        console.log('✅ ExtractedCalculators bridged to window.quizApp');
-    }
 }
 
 export default bridge;

@@ -33,6 +33,7 @@ import { emergencyProtocolsManager } from './modules/EmergencyProtocolsManager.j
 
 // V2 Integration Layer
 import { v2Integration } from './modules/V2Integration.js';
+import calculatorBridge from './modules/CalculatorBridge.js';
 
 /**
  * Main Application Class
@@ -51,6 +52,7 @@ class MLAQuizApp {
         this.examinationManager = examinationManager;
         this.emergencyProtocolsManager = emergencyProtocolsManager;
         this.v2Integration = v2Integration;
+        this.calculatorBridge = calculatorBridge;
         this.setupEventListeners();
     }
 
@@ -121,6 +123,8 @@ class MLAQuizApp {
         // Initialize calculator manager (auto-registers all calculators)
         calculatorManager.initialize();
 
+        // Calculator bridge will be initialized after all other managers are ready
+
         // Initialize drug reference manager (requires drugDatabase.js to be loaded)
         await this.drugManager.initialize();
 
@@ -139,6 +143,10 @@ class MLAQuizApp {
         // Initialize ladders manager
         await this.laddersManager.initialize();
 
+        // Initialize calculator bridge at the end to ensure all dependencies are ready
+        console.log('🔗 Initializing calculator bridge...');
+        await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
+        
         console.log('✅ All managers initialized');
         console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
         console.log(`   - Drugs: ${this.drugManager.getDrugCount()}`);
@@ -151,6 +159,44 @@ class MLAQuizApp {
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
         // This will be called from index.html after V1's app.js loads
         console.log('✅ V2 Integration ready (awaiting V1 app instance)');
+    }
+
+    /**
+     * Initialize calculator bridge with retry mechanism
+     */
+    async initializeCalculatorBridge(eventBus, storageManager, analytics) {
+        const maxRetries = 10;
+        let retryCount = 0;
+        
+        const tryInitialize = () => {
+            if (window.ExtractedCalculators) {
+                console.log('✅ ExtractedCalculators found, initializing bridge...');
+                this.calculatorBridge.initialize(eventBus, storageManager, analytics);
+                return true;
+            } else {
+                retryCount++;
+                if (retryCount < maxRetries) {
+                    console.log(`⏳ Waiting for ExtractedCalculators... (attempt ${retryCount}/${maxRetries})`);
+                    return false;
+                } else {
+                    console.error('❌ ExtractedCalculators failed to load after maximum retries');
+                    return true; // Stop retrying
+                }
+            }
+        };
+        
+        // Try immediately first
+        if (!tryInitialize()) {
+            // Use a retry mechanism with exponential backoff
+            return new Promise((resolve) => {
+                const retryInterval = setInterval(() => {
+                    if (tryInitialize()) {
+                        clearInterval(retryInterval);
+                        resolve();
+                    }
+                }, 100);
+            });
+        }
     }
 
     /**
@@ -2619,8 +2665,9 @@ class MLAQuizApp {
      * Load ladders content
      */
     loadLaddersContent(panel) {
-        // Ladders content should already be in the HTML panel
-        console.log('🪜 Treatment ladders content loaded');
+        // Load dynamic ladders content from LaddersManager
+        console.log('🪜 Loading treatment ladders content...');
+        this.laddersManager.loadLadders();
     }
 
     /**
@@ -3277,10 +3324,76 @@ class MLAQuizApp {
             }
         };
     }
+
+    /**
+     * Fallback calculator methods - delegates to ExtractedCalculators if available
+     * These ensure window.quizApp always has calculator methods
+     */
+    calculateBMI() {
+        if (window.ExtractedCalculators && window.ExtractedCalculators.calculateBMI) {
+            return window.ExtractedCalculators.calculateBMI();
+        }
+        console.warn('⚠️ BMI calculator not available');
+    }
+
+    calculateFrailty() {
+        if (window.ExtractedCalculators && window.ExtractedCalculators.calculateFrailty) {
+            return window.ExtractedCalculators.calculateFrailty();
+        }
+        console.warn('⚠️ Frailty calculator not available');
+    }
+
+    calculateGCS() {
+        if (window.ExtractedCalculators && window.ExtractedCalculators.calculateGCS) {
+            return window.ExtractedCalculators.calculateGCS();
+        }
+        console.warn('⚠️ GCS calculator not available');
+    }
+
+    calculateWells() {
+        if (window.ExtractedCalculators && window.ExtractedCalculators.calculateWells) {
+            return window.ExtractedCalculators.calculateWells();
+        }
+        console.warn('⚠️ Wells calculator not available');
+    }
+
+    // Generic calculator delegator for any missing methods
+    _delegateCalculator(methodName) {
+        if (window.ExtractedCalculators && window.ExtractedCalculators[methodName]) {
+            return window.ExtractedCalculators[methodName]();
+        }
+        console.warn(`⚠️ Calculator method ${methodName} not available`);
+    }
 }
 
-// Create and export app instance
-const app = new MLAQuizApp();
+// Create app instance and wrap it with a proxy for calculator method delegation
+const appInstance = new MLAQuizApp();
+
+// Create a proxy that automatically delegates calculate* methods to ExtractedCalculators
+const app = new Proxy(appInstance, {
+    get(target, prop, receiver) {
+        // If the property exists on the target, return it
+        if (prop in target) {
+            return Reflect.get(target, prop, receiver);
+        }
+        
+        // If it's a calculate method and ExtractedCalculators has it, delegate
+        if (typeof prop === 'string' && prop.startsWith('calculate') && 
+            window.ExtractedCalculators && typeof window.ExtractedCalculators[prop] === 'function') {
+            console.log(`🔄 Delegating ${prop} to ExtractedCalculators`);
+            return window.ExtractedCalculators[prop].bind(window.ExtractedCalculators);
+        }
+        
+        // If it's a get*Calculator method and ExtractedCalculators has it, delegate
+        if (typeof prop === 'string' && prop.startsWith('get') && prop.includes('Calculator') && 
+            window.ExtractedCalculators && typeof window.ExtractedCalculators[prop] === 'function') {
+            return window.ExtractedCalculators[prop].bind(window.ExtractedCalculators);
+        }
+        
+        // Otherwise return undefined
+        return undefined;
+    }
+});
 
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
@@ -3291,7 +3404,9 @@ if (document.readyState === 'loading') {
 
 // Export for global access if needed
 window.MLAQuizApp = app;
-window.quizApp = app; // Alias for template compatibility
+
+// Note: window.quizApp will be set by CalculatorBridge after initialization
+// This avoids race conditions between main app and calculator bridge
 
 // Make sure quizManager is available on MLAQuizApp for template compatibility
 app.quizManager = quizManager;
