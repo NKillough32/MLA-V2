@@ -6255,6 +6255,290 @@
             border-color: #444;
             color: #63b3ed;
         }
+
+        /* Quiz Practice Panel Styles */
+        .quiz-practice-container {
+            padding: 20px;
+        }
+
+        .quiz-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .quiz-category-card {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .quiz-category-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .category-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .quiz-category-card h3 {
+            margin: 0 0 10px 0;
+            color: var(--text-primary);
+        }
+
+        .quiz-category-card p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .start-quiz-btn, .case-btn, .pathway-btn {
+            background: linear-gradient(135deg, #007AFF, #0051D0);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .start-quiz-btn:hover, .case-btn:hover, .pathway-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+        }
+
+        .quiz-settings {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .setting-group {
+            margin-bottom: 15px;
+        }
+
+        .setting-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .setting-group select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--background);
+            color: var(--text-primary);
+        }
+
+        /* Case Studies Panel Styles */
+        .case-studies-container {
+            padding: 20px;
+        }
+
+        .case-categories {
+            margin-top: 20px;
+        }
+
+        .case-category {
+            margin-bottom: 30px;
+        }
+
+        .case-category h3 {
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .case-card {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .case-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .case-card h4 {
+            margin: 0 0 10px 0;
+            color: var(--text-primary);
+        }
+
+        .case-card p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .case-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .tag.cardiology { background: #ffebee; color: #c62828; }
+        .tag.emergency { background: #fff3e0; color: #e65100; }
+        .tag.respiratory { background: #e8f5e8; color: #2e7d32; }
+        .tag.neurology { background: #f3e5f5; color: #7b1fa2; }
+        .tag.geriatrics { background: #e1f5fe; color: #0277bd; }
+        .tag.endocrine { background: #fff9c4; color: #f57f17; }
+        .tag.primary-care { background: #f1f8e9; color: #33691e; }
+        .tag.chronic { background: #fce4ec; color: #ad1457; }
+
+        /* Learning Pathways Panel Styles */
+        .learning-pathways-container {
+            padding: 20px;
+        }
+
+        .pathway-categories {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .pathway-card {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .pathway-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .pathway-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .pathway-info h3 {
+            margin: 0 0 5px 0;
+            color: var(--text-primary);
+        }
+
+        .pathway-info p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .pathway-progress {
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #007AFF, #0051D0);
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        .pathway-modules {
+            margin-bottom: 15px;
+        }
+
+        .module {
+            padding: 8px 0;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .module:last-child {
+            border-bottom: none;
+        }
+
+        .pathway-stats {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 15px;
+            background: var(--background);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007AFF;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* Dark theme adjustments */
+        [data-theme="dark"] .tag.cardiology { background: #4a2c2a; color: #ffcdd2; }
+        [data-theme="dark"] .tag.emergency { background: #4a3626; color: #ffcc80; }
+        [data-theme="dark"] .tag.respiratory { background: #2d4a2d; color: #c8e6c9; }
+        [data-theme="dark"] .tag.neurology { background: #4a2d4a; color: #e1bee7; }
+        [data-theme="dark"] .tag.geriatrics { background: #264a4a; color: #b3e5fc; }
+        [data-theme="dark"] .tag.endocrine { background: #4a4626; color: #fff59d; }
+        [data-theme="dark"] .tag.primary-care { background: #334a26; color: #dcedc8; }
+        [data-theme="dark"] .tag.chronic { background: #4a264a; color: #f8bbd9; }
     </style>
         <style>
             /* Anatomy layout and dark-mode-aware styling */
@@ -7595,6 +7879,7 @@
         </div>
         
         <div class="tools-navigation">
+            <button class="tool-nav-btn" data-tool="quiz">📝 Quiz Practice</button>
             <button class="tool-nav-btn active" data-tool="drug-reference">💊 Drug Reference</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
             <button class="tool-nav-btn" data-tool="emergency-protocols">🚨 Emergency</button>
@@ -7607,6 +7892,8 @@
             <button class="tool-nav-btn" data-tool="examination">🩺 Examination</button>
             <button class="tool-nav-btn" data-tool="anatomy">🦴 Muscles & Bones</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Steroid & Pain Ladders</button>
+            <button class="tool-nav-btn" data-tool="case-studies">📋 Case Studies</button>
+            <button class="tool-nav-btn" data-tool="learning-pathways">🎯 Learning Paths</button>
         </div>
         
         <div class="tools-content">
@@ -8358,6 +8645,233 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Practice Panel -->
+            <div id="quiz-panel" class="tool-panel">
+                <div class="quiz-practice-container">
+                    <h2>📝 Quiz Practice</h2>
+                    <p class="section-description">Interactive medical quizzes to test your knowledge across different specialties and difficulty levels.</p>
+                    
+                    <div class="quiz-categories">
+                        <div class="quiz-category-card" data-category="general">
+                            <div class="category-icon">🏥</div>
+                            <h3>General Medicine</h3>
+                            <p>Internal medicine, common conditions, and clinical reasoning</p>
+                            <button class="start-quiz-btn" data-category="general">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="emergency">
+                            <div class="category-icon">🚨</div>
+                            <h3>Emergency Medicine</h3>
+                            <p>Acute presentations, resuscitation, and emergency protocols</p>
+                            <button class="start-quiz-btn" data-category="emergency">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="cardiology">
+                            <div class="category-icon">❤️</div>
+                            <h3>Cardiology</h3>
+                            <p>Heart conditions, ECGs, and cardiovascular medicine</p>
+                            <button class="start-quiz-btn" data-category="cardiology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="respiratory">
+                            <div class="category-icon">🫁</div>
+                            <h3>Respiratory</h3>
+                            <p>Lung conditions, breathing disorders, and chest medicine</p>
+                            <button class="start-quiz-btn" data-category="respiratory">Start Quiz</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-settings">
+                        <h3>Quiz Settings</h3>
+                        <div class="setting-group">
+                            <label for="quiz-length">Number of Questions:</label>
+                            <select id="quiz-length">
+                                <option value="10">10 Questions</option>
+                                <option value="25" selected>25 Questions</option>
+                                <option value="50">50 Questions</option>
+                                <option value="100">100 Questions</option>
+                            </select>
+                        </div>
+                        <div class="setting-group">
+                            <label for="quiz-difficulty">Difficulty:</label>
+                            <select id="quiz-difficulty">
+                                <option value="mixed" selected>Mixed</option>
+                                <option value="easy">Easy</option>
+                                <option value="moderate">Moderate</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Studies Panel -->
+            <div id="case-studies-panel" class="tool-panel">
+                <div class="case-studies-container">
+                    <h2>📋 Clinical Case Studies</h2>
+                    <p class="section-description">Real-world clinical scenarios to develop your diagnostic and management skills.</p>
+                    
+                    <div class="case-categories">
+                        <div class="case-category" data-category="acute">
+                            <h3>🚨 Acute Presentations</h3>
+                            <div class="case-grid">
+                                <div class="case-card">
+                                    <h4>Chest Pain in ED</h4>
+                                    <p>45-year-old male presenting with acute onset chest pain...</p>
+                                    <div class="case-tags">
+                                        <span class="tag cardiology">Cardiology</span>
+                                        <span class="tag emergency">Emergency</span>
+                                    </div>
+                                    <button class="case-btn">Start Case</button>
+                                </div>
+                                
+                                <div class="case-card">
+                                    <h4>Shortness of Breath</h4>
+                                    <p>72-year-old female with worsening dyspnea over 3 days...</p>
+                                    <div class="case-tags">
+                                        <span class="tag respiratory">Respiratory</span>
+                                        <span class="tag cardiology">Cardiology</span>
+                                    </div>
+                                    <button class="case-btn">Start Case</button>
+                                </div>
+                                
+                                <div class="case-card">
+                                    <h4>Altered Mental State</h4>
+                                    <p>68-year-old male found confused by family members...</p>
+                                    <div class="case-tags">
+                                        <span class="tag neurology">Neurology</span>
+                                        <span class="tag geriatrics">Geriatrics</span>
+                                    </div>
+                                    <button class="case-btn">Start Case</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="case-category" data-category="chronic">
+                            <h3>📅 Chronic Conditions</h3>
+                            <div class="case-grid">
+                                <div class="case-card">
+                                    <h4>Diabetes Management</h4>
+                                    <p>52-year-old with poorly controlled Type 2 diabetes...</p>
+                                    <div class="case-tags">
+                                        <span class="tag endocrine">Endocrine</span>
+                                        <span class="tag primary-care">Primary Care</span>
+                                    </div>
+                                    <button class="case-btn">Start Case</button>
+                                </div>
+                                
+                                <div class="case-card">
+                                    <h4>Heart Failure Follow-up</h4>
+                                    <p>75-year-old with established heart failure for medication review...</p>
+                                    <div class="case-tags">
+                                        <span class="tag cardiology">Cardiology</span>
+                                        <span class="tag chronic">Chronic Care</span>
+                                    </div>
+                                    <button class="case-btn">Start Case</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Pathways Panel -->
+            <div id="learning-pathways-panel" class="tool-panel">
+                <div class="learning-pathways-container">
+                    <h2>🎯 Learning Pathways</h2>
+                    <p class="section-description">Structured learning journeys tailored to your medical education needs.</p>
+                    
+                    <div class="pathway-categories">
+                        <div class="pathway-card">
+                            <div class="pathway-header">
+                                <div class="pathway-icon">👨‍⚕️</div>
+                                <div class="pathway-info">
+                                    <h3>Foundation Year Training</h3>
+                                    <p>Essential skills and knowledge for junior doctors</p>
+                                </div>
+                            </div>
+                            <div class="pathway-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0/12 modules completed</span>
+                            </div>
+                            <div class="pathway-modules">
+                                <div class="module">📋 History Taking & Communication</div>
+                                <div class="module">🩺 Physical Examination Skills</div>
+                                <div class="module">🧮 Basic Clinical Calculations</div>
+                                <div class="module">📊 Interpreting Investigations</div>
+                            </div>
+                            <button class="pathway-btn">Continue Learning</button>
+                        </div>
+                        
+                        <div class="pathway-card">
+                            <div class="pathway-header">
+                                <div class="pathway-icon">🚨</div>
+                                <div class="pathway-info">
+                                    <h3>Emergency Medicine Essentials</h3>
+                                    <p>Critical skills for acute medical situations</p>
+                                </div>
+                            </div>
+                            <div class="pathway-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0/8 modules completed</span>
+                            </div>
+                            <div class="pathway-modules">
+                                <div class="module">⚡ ABCDE Assessment</div>
+                                <div class="module">💔 Cardiac Arrest Management</div>
+                                <div class="module">🫁 Respiratory Emergencies</div>
+                                <div class="module">🧠 Neurological Emergencies</div>
+                            </div>
+                            <button class="pathway-btn">Start Pathway</button>
+                        </div>
+                        
+                        <div class="pathway-card">
+                            <div class="pathway-header">
+                                <div class="pathway-icon">💊</div>
+                                <div class="pathway-info">
+                                    <h3>Clinical Pharmacology</h3>
+                                    <p>Safe prescribing and medication management</p>
+                                </div>
+                            </div>
+                            <div class="pathway-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <span class="progress-text">0/10 modules completed</span>
+                            </div>
+                            <div class="pathway-modules">
+                                <div class="module">📝 Prescribing Principles</div>
+                                <div class="module">⚠️ Drug Interactions</div>
+                                <div class="module">👵 Prescribing in Special Populations</div>
+                                <div class="module">🚫 Adverse Drug Reactions</div>
+                            </div>
+                            <button class="pathway-btn">Start Pathway</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pathway-stats">
+                        <h3>Your Learning Progress</h3>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Pathways Completed</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Hours Studied</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Certificates Earned</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

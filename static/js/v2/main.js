@@ -739,7 +739,10 @@ class MLAQuizApp {
             'interpretation': 'interpretation-panel',
             'anatomy': 'anatomy-panel',
             'ladders': 'ladders-panel',
-            'mnemonics': 'mnemonics-panel'
+            'mnemonics': 'mnemonics-panel',
+            'quiz-practice': 'quiz-panel',
+            'case-studies': 'case-studies-panel',
+            'learning-pathways': 'learning-pathways-panel'
         };
         
         // Show selected panel
@@ -3677,6 +3680,70 @@ function initPinchZoom(img, container) {
 window.openImageModal = openImageModal;
 window.closeImageModal = closeImageModal;
 window.handleEscapeKey = handleEscapeKey;
+
+// Enhanced section functionality
+function initializeEnhancedSections() {
+    // Quiz Practice functionality
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('start-quiz-btn')) {
+            const category = e.target.getAttribute('data-category');
+            const length = document.getElementById('quiz-length')?.value || '25';
+            const difficulty = document.getElementById('quiz-difficulty')?.value || 'mixed';
+            
+            console.log(`Starting ${category} quiz: ${length} questions, ${difficulty} difficulty`);
+            
+            // Integration with existing quiz system
+            if (window.QuizManager && window.QuizManager.startCategoryQuiz) {
+                window.QuizManager.startCategoryQuiz(category, parseInt(length), difficulty);
+            } else {
+                // Fallback to general quiz functionality
+                alert(`Starting ${category} quiz with ${length} questions at ${difficulty} difficulty level!`);
+            }
+        }
+        
+        // Case Studies functionality
+        if (e.target.classList.contains('case-btn')) {
+            const caseCard = e.target.closest('.case-card');
+            const caseTitle = caseCard.querySelector('h4')?.textContent || 'Unknown Case';
+            
+            console.log(`Opening case study: ${caseTitle}`);
+            alert(`Opening case study: ${caseTitle}\n\nThis would launch an interactive clinical case with patient history, examination findings, and decision points.`);
+        }
+        
+        // Learning Pathways functionality
+        if (e.target.classList.contains('pathway-btn')) {
+            const pathwayCard = e.target.closest('.pathway-card');
+            const pathwayTitle = pathwayCard.querySelector('h3')?.textContent || 'Unknown Pathway';
+            
+            console.log(`Opening learning pathway: ${pathwayTitle}`);
+            alert(`Opening learning pathway: ${pathwayTitle}\n\nThis would launch a structured learning journey with modules, assessments, and progress tracking.`);
+        }
+    });
+    
+    // Update progress bars dynamically (example)
+    const progressBars = document.querySelectorAll('.progress-fill');
+    progressBars.forEach(bar => {
+        // Simulate some progress for demo purposes
+        setTimeout(() => {
+            const randomProgress = Math.floor(Math.random() * 30);
+            bar.style.width = `${randomProgress}%`;
+            
+            const progressText = bar.parentNode.parentNode.querySelector('.progress-text');
+            if (progressText) {
+                const totalModules = progressText.textContent.split('/')[1]?.split(' ')[0] || '0';
+                const completedModules = Math.floor((randomProgress / 100) * parseInt(totalModules));
+                progressText.textContent = `${completedModules}/${totalModules} modules completed`;
+            }
+        }, 1000);
+    });
+}
+
+// Initialize enhanced sections when DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeEnhancedSections);
+} else {
+    initializeEnhancedSections();
+}
 
 console.log('📦 MLA Quiz PWA modules loaded');
 
