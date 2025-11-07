@@ -818,14 +818,14 @@ class MLAQuizApp {
             });
             
             // Listen for voice events
-            this.eventBus.on('DRUG_VOICE_STARTED', () => {
+            eventBus.on('DRUG_VOICE_STARTED', () => {
                 voiceBtn.classList.add('listening');
                 voiceBtn.textContent = '⏹️ Stop';
                 voiceBtn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
                 voiceStatus.style.display = 'block';
             });
             
-            this.eventBus.on('DRUG_VOICE_RESULT', ({ transcript }) => {
+            eventBus.on('DRUG_VOICE_RESULT', ({ transcript }) => {
                 searchInput.value = transcript;
                 voiceBtn.classList.remove('listening');
                 voiceBtn.textContent = '🎤 Voice';
@@ -834,7 +834,7 @@ class MLAQuizApp {
                 handleSearch();
             });
             
-            this.eventBus.on('DRUG_VOICE_ERROR', ({ error }) => {
+            eventBus.on('DRUG_VOICE_ERROR', ({ error }) => {
                 voiceBtn.classList.remove('listening');
                 voiceBtn.textContent = '🎤 Voice';
                 voiceBtn.style.background = '';
@@ -847,7 +847,7 @@ class MLAQuizApp {
                 }, 3000);
             });
             
-            this.eventBus.on('DRUG_VOICE_ENDED', () => {
+            eventBus.on('DRUG_VOICE_ENDED', () => {
                 voiceBtn.classList.remove('listening');
                 voiceBtn.textContent = '🎤 Voice';
                 voiceBtn.style.background = '';

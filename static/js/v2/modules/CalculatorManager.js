@@ -358,7 +358,7 @@ export class CalculatorManager {
             this.addToRecentTools(calculatorId);
             
             // Get container element
-            const container = document.getElementById('calculator-content');
+            const container = document.getElementById('calculator-detail-container');
             if (!container) {
                 console.error('Calculator container not found');
                 return false;
