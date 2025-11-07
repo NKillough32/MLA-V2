@@ -583,6 +583,23 @@
             color: white !important;
         }
 
+        /* Keep option letters visible when selected */
+        [data-theme="dark"] .new-option.selected .badge,
+        [data-theme="dark"] .new-option.selected .option-letter {
+            background: rgba(10, 132, 255, 0.3) !important;
+            color: #ffffff !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        }
+
+        .new-option.selected .badge,
+        .new-option.selected .option-letter {
+            background: rgba(139, 92, 246, 0.2) !important;
+            color: var(--v2-primary) !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(139, 92, 246, 0.3) !important;
+        }
+
         [data-theme="dark"] .new-option.ruled-out {
             background-color: var(--bg-secondary) !important;
             opacity: 0.5;
@@ -596,7 +613,28 @@
         [data-theme="dark"] .explanation-container {
             background-color: #1f2937 !important;
             border-color: #374151 !important;
-            color: #f9fafb !important;
+            color: #ffffff !important;
+            font-weight: bold !important;
+        }
+
+        [data-theme="dark"] .explanation-container h4 {
+            color: #ffffff !important;
+            font-weight: bold !important;
+        }
+
+        [data-theme="dark"] .explanation-container p {
+            color: #ffffff !important;
+            font-weight: bold !important;
+        }
+
+        [data-theme="dark"] .explanation-content {
+            color: #ffffff !important;
+            font-weight: bold !important;
+        }
+
+        [data-theme="dark"] .explanation-title {
+            color: #ffffff !important;
+            font-weight: bold !important;
         }
 
         [data-theme="dark"] .explanation-container a,
@@ -5263,9 +5301,27 @@
             background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
         }
 
+        /* Keep option letters visible in correct state */
+        .new-option.correct .badge,
+        .new-option.correct .option-letter {
+            background: rgba(20, 184, 166, 0.2) !important;
+            color: var(--v2-secondary) !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(20, 184, 166, 0.3) !important;
+        }
+
         .new-option.incorrect {
             border-color: #EF4444;
             background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(239, 68, 68, 0.02) 100%);
+        }
+
+        /* Keep option letters visible in incorrect state */
+        .new-option.incorrect .badge,
+        .new-option.incorrect .option-letter {
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #EF4444 !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(239, 68, 68, 0.3) !important;
         }
         
         /* Ruled out state - user marked as eliminated */
@@ -5278,6 +5334,15 @@
         .new-option.ruled-out .label {
             text-decoration: line-through;
             color: var(--v2-text-secondary);
+        }
+
+        /* Keep option letters visible even when ruled out */
+        .new-option.ruled-out .badge,
+        .new-option.ruled-out .option-letter {
+            opacity: 0.6 !important;
+            background: rgba(209, 213, 219, 0.3) !important;
+            color: var(--v2-text-secondary) !important;
+            font-weight: bold !important;
         }
 
         /* Label text wraps; letters stand out */
