@@ -340,6 +340,7 @@ export class QuizManager {
         if (this.currentQuestionIndex < this.questions.length - 1) {
             this.currentQuestionIndex++;
             this.renderQuestion();
+            this.scrollToTop();
             analytics.vibrateClick();
             return true;
         }
@@ -353,6 +354,7 @@ export class QuizManager {
         if (this.currentQuestionIndex > 0) {
             this.currentQuestionIndex--;
             this.renderQuestion();
+            this.scrollToTop();
             analytics.vibrateClick();
             return true;
         }
@@ -366,10 +368,31 @@ export class QuizManager {
         if (index >= 0 && index < this.questions.length) {
             this.currentQuestionIndex = index;
             this.renderQuestion();
+            this.scrollToTop();
             analytics.vibrateClick();
             return true;
         }
         return false;
+    }
+
+    /**
+     * Scroll to top helper
+     */
+    scrollToTop() {
+        // Scroll main window with smooth behavior
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Also scroll quiz panel if it exists
+        const quizPanel = document.getElementById('quiz-panel');
+        if (quizPanel) {
+            quizPanel.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Scroll main content area
+        const mainContent = document.querySelector('main');
+        if (mainContent) {
+            mainContent.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     }
 
     /**

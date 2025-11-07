@@ -1802,6 +1802,7 @@ class MLAQuizApp {
         const ddxPanel = document.getElementById('differential-panel');
         if (ddxPanel) ddxPanel.scrollTop = 0;
         container.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**
@@ -1846,6 +1847,7 @@ class MLAQuizApp {
         const ddxPanel = document.getElementById('differential-panel');
         if (ddxPanel) ddxPanel.scrollTop = 0;
         container.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**
@@ -2232,6 +2234,7 @@ class MLAQuizApp {
         const examPanel = document.getElementById('examination-panel');
         if (examPanel) examPanel.scrollTop = 0;
         container.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**
@@ -2296,6 +2299,7 @@ class MLAQuizApp {
         const examPanel = document.getElementById('examination-panel');
         if (examPanel) examPanel.scrollTop = 0;
         container.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**
@@ -2462,6 +2466,7 @@ class MLAQuizApp {
         const protocolPanel = document.getElementById('emergency-protocols-panel');
         if (protocolPanel) protocolPanel.scrollTop = 0;
         container.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**
