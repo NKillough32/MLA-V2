@@ -2748,11 +2748,7 @@ class MLAQuizApp {
 
         // Add image if present
         if (question.image) {
-            html += `
-                <div class="image-container">
-                    <img src="${question.image}" alt="Question image" class="question-image">
-                </div>
-            `;
+            html += this.formatText(question.image);
         }
 
         // Add scenario if present and different from prompt (V1-style blue background)
