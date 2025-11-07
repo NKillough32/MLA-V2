@@ -1285,44 +1285,44 @@ class MLAQuizApp {
             <div class="lab-test-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                 <h3 style="margin: 0 0 25px 0; padding-bottom: 20px; border-bottom: 2px solid var(--border); font-size: 1.8em; color: var(--text-primary);">📊 ${testKey}</h3>
                 <div class="test-info">
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f0f9ff; border-left: 4px solid #0ea5e9; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #0369a1; font-size: 1.05em;">🎯 Normal Range</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6; font-weight: 600;">${test.normal || test.range || test.normalRange || 'Not specified'}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #0ea5e9; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #0ea5e9; font-size: 1.05em;">🎯 Normal Range</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6; font-weight: 600;">${test.normal || test.range || test.normalRange || 'Not specified'}</p>
                     </div>
                     ${test.ageVariations ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #15803d; font-size: 1.05em;">👶🧓 Age Variations</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.ageVariations}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #22c55e; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #22c55e; font-size: 1.05em;">👶🧓 Age Variations</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.ageVariations}</p>
                     </div>` : ''}
                     ${test.low ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fefce8; border-left: 4px solid #eab308; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #a16207; font-size: 1.05em;">📉 Low Values - Causes</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.low}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #eab308; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #eab308; font-size: 1.05em;">📉 Low Values - Causes</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.low}</p>
                     </div>` : ''}
                     ${test.high ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fefce8; border-left: 4px solid #eab308; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #a16207; font-size: 1.05em;">📈 High Values - Causes</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.high}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #eab308; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #eab308; font-size: 1.05em;">📈 High Values - Causes</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.high}</p>
                     </div>` : ''}
                     ${test.critical ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fee2e2; border-left: 4px solid #dc2626; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #991b1b; font-size: 1.05em;">🚨 Critical Values</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6; font-weight: 600;">${test.critical}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #dc2626; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #ef4444; font-size: 1.05em;">🚨 Critical Values</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6; font-weight: 600;">${test.critical}</p>
                     </div>` : ''}
                     ${test.clinicalSignificance ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #b45309; font-size: 1.05em;">💡 Clinical Significance</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.clinicalSignificance}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #f59e0b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #f59e0b; font-size: 1.05em;">💡 Clinical Significance</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.clinicalSignificance}</p>
                     </div>` : ''}
                     ${test.unit ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f1f5f9; border-left: 4px solid #64748b; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #475569; font-size: 1.05em;">📏 Unit</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.unit}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #64748b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #94a3b8; font-size: 1.05em;">📏 Unit</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.unit}</p>
                     </div>` : ''}
                     ${test.description ? `
-                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: #f1f5f9; border-left: 4px solid #64748b; border-radius: 6px;">
-                        <h4 style="margin: 0 0 8px 0; color: #475569; font-size: 1.05em;">ℹ️ Description</h4>
-                        <p style="margin: 0; color: #0f172a; line-height: 1.6;">${test.description}</p>
+                    <div class="info-section" style="margin-bottom: 15px; padding: 12px; background: var(--bg-tertiary); border-left: 4px solid #64748b; border-radius: 6px;">
+                        <h4 style="margin: 0 0 8px 0; color: #94a3b8; font-size: 1.05em;">ℹ️ Description</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${test.description}</p>
                     </div>` : ''}
                 </div>
             </div>
@@ -1653,13 +1653,15 @@ class MLAQuizApp {
                 
                 <div class="info-section" style="margin-bottom: 20px; padding: 20px; background: var(--bg); border-radius: 8px; border-left: 3px solid #8b5cf6;">
                     <h4 style="margin: 0 0 15px 0; color: #8b5cf6; font-size: 1.1em;">🔍 Breakdown</h4>
-                    <div style="line-height: 1.8;">
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
                         ${(mnemonic.details || []).map(detail => {
-                            if (detail === '') {
-                                return '<div style="height: 15px;"></div>';
+                            if (!detail || detail.trim() === '') {
+                                return '';
                             }
-                            return `<div style="padding: 10px 15px; border-left: 3px solid #8b5cf6; margin: 8px 0; background: var(--card-bg); border-radius: 4px; color: var(--text-primary);">${detail}</div>`;
-                        }).join('')}
+                            // Clean up the detail text
+                            const cleanDetail = detail.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+                            return `<div style="padding: 12px 16px; border-left: 3px solid #8b5cf6; background: var(--card-bg); border-radius: 6px; color: var(--text-primary); line-height: 1.5;">${cleanDetail}</div>`;
+                        }).filter(item => item !== '').join('')}
                     </div>
                 </div>
             </div>
@@ -2694,7 +2696,15 @@ class MLAQuizApp {
     loadLaddersContent(panel) {
         // Load dynamic ladders content from LaddersManager
         console.log('🪜 Loading treatment ladders content...');
-        this.laddersManager.loadLadders();
+        
+        // Make sure laddersManager is available
+        if (this.laddersManager && typeof this.laddersManager.loadLadders === 'function') {
+            this.laddersManager.loadLadders();
+        } else if (window.laddersManager && typeof window.laddersManager.loadLadders === 'function') {
+            window.laddersManager.loadLadders();
+        } else {
+            console.error('❌ LaddersManager not available');
+        }
     }
 
     /**
@@ -2843,7 +2853,7 @@ class MLAQuizApp {
         // Add investigations if present (V1-style green background)
         if (question.investigations) {
             const formattedInvestigations = this.formatInvestigations(question.investigations);
-            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 15px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">🔬 Investigations</h4><div>${formattedInvestigations}</div></div>`;
+            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 15px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">Investigations</h4><div>${formattedInvestigations}</div></div>`;
         }
 
         // Add question prompt (V1-style yellow background)
