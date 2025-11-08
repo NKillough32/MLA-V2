@@ -2845,13 +2845,6 @@ class MLAQuizApp {
     renderQuestion(data) {
         const { question, index, total, answer, submitted, ruledOut, flagged } = data;
         
-        console.log('🎨 Rendering question in UI:');
-        console.log('   answer =', answer, '(type:', typeof answer, ')');
-        console.log('   submitted =', submitted);
-        console.log('   ruledOut =', ruledOut);
-        console.log('   index =', index);
-        console.log('   total =', total);
-        
         // Update existing header elements
         const questionTitle = document.getElementById('questionTitle');
         const questionProgress = document.getElementById('questionProgress');
@@ -2903,19 +2896,11 @@ class MLAQuizApp {
                 const isCorrect = question.correctAnswer === idx;
                 const isRuledOut = ruledOut && ruledOut.includes(idx);
                 
-                if (idx === 0) {
-                    console.log(`📝 Option ${idx}: answer=${answer}, idx=${idx}, isSelected=${isSelected}`);
-                }
-                
                 let optionClass = 'new-option option';
                 if (isSelected) optionClass += ' selected';
                 if (submitted && isCorrect) optionClass += ' correct';
                 if (submitted && isSelected && !isCorrect) optionClass += ' incorrect';
                 if (isRuledOut) optionClass += ' ruled-out';
-                
-                if (idx === 0) {
-                    console.log(`📝 Option ${idx} classes: "${optionClass}"`);
-                }
 
                 // Remove leading option letters (A., B., etc.) if present
                 let cleanOption = option.replace(/^[\(\[]?[A-Z][\)\.]\s*/i, '').trim();
@@ -2965,22 +2950,15 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
-        console.log(`🔗 Binding click events to ${options.length} options`);
         options.forEach((option) => {
             const optionIdx = parseInt(option.dataset.option);
-            console.log(`📌 Binding option ${optionIdx}, dataset:`, option.dataset.option);
             
             // Left click - select option
             option.addEventListener('click', () => {
-                console.log(`👆 Option ${optionIdx} clicked`);
                 // Check if answer is already submitted
                 const isSubmitted = quizManager.isAnswerSubmitted();
-                console.log(`   Submitted state: ${isSubmitted}`);
                 if (!isSubmitted) {
-                    console.log(`   ✅ Calling selectAnswer(${optionIdx})`);
                     quizManager.selectAnswer(optionIdx);
-                } else {
-                    console.log(`   ❌ Answer already submitted, ignoring click`);
                 }
             });
 
