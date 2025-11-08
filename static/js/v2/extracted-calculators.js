@@ -508,7 +508,7 @@ const ExtractedCalculators = {
             <div class="calculator-form">
                 <h4>QRISK3 Calculator (Official Algorithm)</h4>
                 <p><small>10-year CVD risk using ClinRisk Ltd. validated algorithm</small></p>
-                <div class="info-banner" style="background-color: #e3f2fd; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                <div class="info-banner" style="background-color: var(--card-bg, #f8f9fa); border: 1px solid var(--border, #dee2e6); padding: 10px; border-radius: 5px; margin-bottom: 15px;">
                     <strong>ℹ️ Official Implementation:</strong> This uses the exact QRISK3-2017 algorithm from ClinRisk Ltd. 
                     (GNU LGPL v3 licensed, based on <a href="https://github.com/sisuhealthgroup/qrisk3" target="_blank">sisuhealthgroup/qrisk3</a>)
                 </div>
@@ -634,7 +634,7 @@ const ExtractedCalculators = {
                         <li><strong>Use:</strong> Recommended for NICE guideline implementation</li>
                         <li><strong>License:</strong> GNU LGPL v3 (ClinRisk Ltd.)</li>
                     </ul>
-                    <div style="background-color: #fff3cd; padding: 8px; border-radius: 5px; margin-top: 10px;">
+                    <div style="background-color: var(--warning-bg, #fff3cd); border: 1px solid var(--warning-border, #ffc107); padding: 8px; border-radius: 5px; margin-top: 10px; color: var(--text-primary, #000);">
                         <small><strong>⚠️ Disclaimer:</strong> ${window.qrisk3Official?.Disclaimer || 'Use official QRISK3 tool at qrisk.org for clinical decisions'}</small>
                     </div>
                 </div>
@@ -4678,14 +4678,14 @@ const ExtractedCalculators = {
                         <div class="result-interpretation" style="color: ${color}">
                             <strong>${riskLevel}</strong>
                         </div>
-                        <div style="background-color: #e8f5e9; padding: 8px; border-radius: 5px; margin-top: 10px;">
+                        <div style="background-color: var(--success-bg, #e8f5e9); border: 1px solid var(--success-border, #4CAF50); padding: 8px; border-radius: 5px; margin-top: 10px;">
                             <small>✅ <strong>Official Algorithm:</strong> This result uses the exact QRISK3-2017 coefficients from ClinRisk Ltd.</small>
                         </div>
                     </div>
                     
                     <div class="clinical-guidance">
                         <h5>NICE Guidance:</h5>
-                        <div style="background-color: rgba(${color === '#4CAF50' ? '76,175,80' : color === '#FF9800' ? '255,152,0' : '244,67,54'}, 0.1); padding: 10px; border-radius: 5px; margin-top: 8px;">
+                        <div style="background-color: var(--card-bg, #f8f9fa); border: 1px solid ${color}; padding: 10px; border-radius: 5px; margin-top: 8px;">
                             ${recommendation}
                         </div>
                     </div>

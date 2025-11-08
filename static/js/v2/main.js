@@ -2879,7 +2879,7 @@ class MLAQuizApp {
 
         // Add scenario if present and different from prompt (V1-style blue background)
         if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text) {
-            html += `<div class="q-text" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 15px;">${this.formatText(question.scenario)}</div>`;
+            html += `<div class="q-text" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 8px;">${this.formatText(question.scenario)}</div>`;
         }
 
         // Add image if present (after scenario/stem, matching V1 order)
@@ -2890,13 +2890,13 @@ class MLAQuizApp {
         // Add investigations if present (V1-style green background)
         if (question.investigations) {
             const formattedInvestigations = this.formatInvestigations(question.investigations);
-            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 15px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">Investigations</h4><div>${formattedInvestigations}</div></div>`;
+            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">Investigations</h4><div>${formattedInvestigations}</div></div>`;
         }
 
         // Add question prompt (V1-style yellow background)
         const questionText = question.prompt || (question.scenario ? '' : question.text) || '';
         if (questionText) {
-            html += `<div class="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 15px; font-weight: 500;">${this.formatText(questionText)}</div>`;
+            html += `<div class="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-weight: 500;">${this.formatText(questionText)}</div>`;
         }
 
         // Add options
