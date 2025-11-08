@@ -34,7 +34,7 @@
  *
  * Calculate the QRISK3-2017 score for females.
  */
-const calc = (
+const calcFemale = (
     age,
     b_AF,
     b_atypicalantipsy,
@@ -176,4 +176,4 @@ const calc = (
     return 100.0 * (1 - Math.pow(survivor[surv], Math.exp(a)));
 };
 
-window.qrisk3Female = { calc };
+window.qrisk3Female = { calc: calcFemale };

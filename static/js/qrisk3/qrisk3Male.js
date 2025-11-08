@@ -34,7 +34,7 @@
  *
  * Calculate the QRISK3-2017 score for males.
  */
-const calc = (
+const calcMale = (
     age,
     b_AF,
     b_atypicalantipsy,
@@ -178,4 +178,4 @@ const calc = (
     return 100.0 * (1 - Math.pow(survivor[surv], Math.exp(a)));
 };
 
-window.qrisk3Male = { calc };
+window.qrisk3Male = { calc: calcMale };
