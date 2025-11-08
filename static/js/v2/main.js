@@ -2845,19 +2845,12 @@ class MLAQuizApp {
     renderQuestion(data) {
         const { question, index, total, answer, submitted, ruledOut, flagged } = data;
         
-        console.log('🎨 Rendering question in UI:', {
-            hasQuestion: !!question,
-            questionKeys: question ? Object.keys(question) : [],
-            index,
-            total,
-            answer: answer,
-            submitted: submitted,
-            ruledOut: ruledOut,
-            prompt: question?.prompt?.substring(0, 50),
-            scenario: question?.scenario?.substring(0, 50),
-            text: question?.text?.substring(0, 50),
-            optionsCount: question?.options?.length
-        });
+        console.log('🎨 Rendering question in UI:');
+        console.log('   answer =', answer, '(type:', typeof answer, ')');
+        console.log('   submitted =', submitted);
+        console.log('   ruledOut =', ruledOut);
+        console.log('   index =', index);
+        console.log('   total =', total);
         
         // Update existing header elements
         const questionTitle = document.getElementById('questionTitle');
