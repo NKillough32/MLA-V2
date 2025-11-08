@@ -2961,11 +2961,14 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
+        console.log(`🔍 Found ${options.length} options to bind events to`);
         options.forEach((option) => {
             const optionIdx = parseInt(option.dataset.option);
+            console.log(`🔗 Binding click event to option ${optionIdx}`, option);
             
             // Left click - select option
             option.addEventListener('click', () => {
+                console.log(`👆 Option ${optionIdx} clicked, submitted=${submitted}`);
                 if (!submitted) {
                     quizManager.selectAnswer(optionIdx);
                 }
