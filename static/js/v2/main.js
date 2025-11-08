@@ -3104,15 +3104,43 @@ class MLAQuizApp {
      * Update progress bar
      */
     updateProgressBar(data) {
-        const progressBar = document.getElementById('progress-bar');
-        if (progressBar) {
-            const percentage = ((data.current + 1) / data.total) * 100;
-            progressBar.style.width = `${percentage}%`;
+        // Update progress bar fill
+        const progressFill = document.getElementById('progressFill');
+        if (progressFill) {
+            const percentage = (data.answered / data.total) * 100;
+            progressFill.style.setProperty('--w', `${percentage}%`);
         }
 
-        const progressText = document.getElementById('progress-text');
-        if (progressText) {
-            progressText.textContent = `${data.current + 1} / ${data.total}`;
+        // Update completed count
+        const completedCount = document.getElementById('completedCount');
+        if (completedCount) {
+            completedCount.textContent = `${data.answered}/${data.total}`;
+        }
+
+        // Update correct count
+        const correctCount = document.getElementById('correctCount');
+        if (correctCount) {
+            const correctPercentage = data.answered > 0 ? Math.round((data.correct / data.answered) * 100) : 0;
+            correctCount.textContent = `${data.correct} (${correctPercentage}%)`;
+        }
+
+        // Update time display
+        const timeDisplay = document.getElementById('time-display');
+        if (timeDisplay && data.totalTime > 0) {
+            const minutes = Math.floor(data.totalTime / 60);
+            const seconds = data.totalTime % 60;
+            const avgTime = data.answered > 0 ? Math.round(data.totalTime / data.answered) : 0;
+            
+            timeDisplay.innerHTML = `
+                <div class="time-stats" style="font-size: 0.9rem;">
+                    <div style="margin-bottom: 4px;">
+                        <strong>Total Time:</strong> ${minutes}m ${seconds}s
+                    </div>
+                    <div>
+                        <strong>Avg/Question:</strong> ${avgTime}s
+                    </div>
+                </div>
+            `;
         }
     }
 

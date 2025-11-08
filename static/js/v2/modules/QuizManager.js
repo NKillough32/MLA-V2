@@ -291,6 +291,10 @@ export class QuizManager {
             ruledOut: this.ruledOutAnswers[this.currentQuestionIndex] || [],
             flagged: this.flaggedQuestions.has(this.currentQuestionIndex)
         });
+
+        // Emit progress update event
+        const progress = this.getProgress();
+        eventBus.emit('quiz:progressUpdated', progress);
     }
 
     /**
