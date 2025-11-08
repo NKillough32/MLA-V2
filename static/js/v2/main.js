@@ -367,9 +367,19 @@ class MLAQuizApp {
                 console.log('➡️ Next button clicked');
                 const moved = quizManager.nextQuestion();
                 if (!moved) {
-                    // Reached the end, finish the quiz
-                    console.log('🏁 Quiz finished via Next button');
-                    await quizManager.finishQuiz();
+                    // Reached the end
+                    if (quizManager.isReviewMode) {
+                        // Exit review mode, return to results
+                        quizManager.isReviewMode = false;
+                        this.showResults();
+                    } else {
+                        // Finish the quiz
+                        console.log('🏁 Quiz finished via Next button');
+                        await quizManager.finishQuiz();
+                    }
+                } else if (quizManager.isReviewMode) {
+                    // Auto-show answer in review mode
+                    setTimeout(() => this.showAnswer(true), 100);
                 }
             });
         }
@@ -378,6 +388,10 @@ class MLAQuizApp {
             prevBtn.addEventListener('click', () => {
                 console.log('⬅️ Previous button clicked');
                 quizManager.previousQuestion();
+                if (quizManager.isReviewMode) {
+                    // Auto-show answer in review mode
+                    setTimeout(() => this.showAnswer(true), 100);
+                }
             });
         }
 
@@ -393,9 +407,19 @@ class MLAQuizApp {
                 console.log('➡️ Next (top) button clicked');
                 const moved = quizManager.nextQuestion();
                 if (!moved) {
-                    // Reached the end, finish the quiz
-                    console.log('🏁 Quiz finished via Next (top) button');
-                    await quizManager.finishQuiz();
+                    // Reached the end
+                    if (quizManager.isReviewMode) {
+                        // Exit review mode, return to results
+                        quizManager.isReviewMode = false;
+                        this.showResults();
+                    } else {
+                        // Finish the quiz
+                        console.log('🏁 Quiz finished via Next (top) button');
+                        await quizManager.finishQuiz();
+                    }
+                } else if (quizManager.isReviewMode) {
+                    // Auto-show answer in review mode
+                    setTimeout(() => this.showAnswer(true), 100);
                 }
                 setTimeout(() => {
                     nextBtnDebounce = false;
@@ -414,6 +438,10 @@ class MLAQuizApp {
                 prevBtnDebounce = true;
                 console.log('⬅️ Previous (top) button clicked');
                 quizManager.previousQuestion();
+                if (quizManager.isReviewMode) {
+                    // Auto-show answer in review mode
+                    setTimeout(() => this.showAnswer(true), 100);
+                }
                 setTimeout(() => {
                     prevBtnDebounce = false;
                 }, 300);
@@ -448,6 +476,15 @@ class MLAQuizApp {
             retryBtn.addEventListener('click', () => {
                 console.log('🔄 Retry button clicked');
                 quizManager.retryQuiz();
+            });
+        }
+
+        // Review Answers button
+        const reviewAnswersBtn = document.getElementById('reviewAnswersBtn');
+        if (reviewAnswersBtn) {
+            reviewAnswersBtn.addEventListener('click', () => {
+                console.log('📖 Review answers button clicked');
+                this.reviewAnswers();
             });
         }
 
@@ -3157,6 +3194,37 @@ class MLAQuizApp {
     }
 
     /**
+     * Review answers mode - go through all questions showing answers
+     */
+    reviewAnswers() {
+        // Switch to review mode
+        quizManager.currentQuestionIndex = 0;
+        quizManager.isReviewMode = true;
+        
+        // Show quiz screen
+        this.showScreen('quizScreen');
+        document.getElementById('navTitle').textContent = 'Review Answers';
+        
+        // Hide submit button, show answer immediately
+        const submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) submitBtn.style.display = 'none';
+        
+        // Show next/prev buttons
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        if (nextBtn) nextBtn.style.display = 'block';
+        if (prevBtn) prevBtn.style.display = 'block';
+        
+        // Render first question in review mode
+        this.renderQuestion();
+        
+        // Auto-show the answer
+        setTimeout(() => {
+            this.showAnswer(true);
+        }, 100);
+    }
+
+    /**
      * Format investigations text with proper line breaks
      */
     formatInvestigations(investigationsText) {
@@ -3169,11 +3237,12 @@ class MLAQuizApp {
         formatted = formatted.replace(/\n-\s+/g, '<br>- ');
         
         // Split investigations at natural break points:
-        // 1. After reference ranges in parentheses followed by a capital letter
+        // 1. After reference ranges in parentheses followed by any letter (capital or lowercase)
         // 2. After test results with colons followed by a capital letter
         formatted = formatted
-            // Pattern: "Value unit (range) NextTest" -> "Value unit (range)<br>NextTest"
-            .replace(/(\([^)]+\))\s+([A-Z][A-Za-z])/g, '$1<br>$2')
+            // Pattern: "Value unit (range) nextTest" -> "Value unit (range)<br>nextTest"
+            // Updated to handle both uppercase and lowercase letters after closing bracket
+            .replace(/(\([^)]+\))\s+([A-Za-z])/g, '$1<br>$2')
             // Pattern: "Test: result NextTest" -> "Test: result<br>NextTest" 
             .replace(/(:\s*[a-z][^:]*?)\s+([A-Z][A-Za-z])/g, '$1<br>$2')
             // Collapse multiple spaces but preserve <br> tags
