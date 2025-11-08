@@ -2893,7 +2893,7 @@ class MLAQuizApp {
             html += '<div class="new-options">';
             question.options.forEach((option, idx) => {
                 const isSelected = answer === idx;
-                const isCorrect = question.correctAnswer === idx;
+                const isCorrect = (question.correct_answer || question.correctAnswer) === idx;
                 const isRuledOut = ruledOut && ruledOut.includes(idx);
                 
                 let optionClass = 'new-option option';
@@ -2917,8 +2917,9 @@ class MLAQuizApp {
 
         // Add feedback if submitted
         if (submitted) {
-            const isCorrect = answer === question.correctAnswer;
-            const correctLetter = String.fromCharCode(65 + question.correctAnswer);
+            const correctAnswerIdx = question.correct_answer || question.correctAnswer;
+            const isCorrect = answer === correctAnswerIdx;
+            const correctLetter = String.fromCharCode(65 + correctAnswerIdx);
             
             html += `
                 <div class="feedback-container ${isCorrect ? 'correct' : 'incorrect'}">
@@ -2950,15 +2951,22 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
+        console.log(`🔗 Found ${options.length} options to bind`);
         options.forEach((option) => {
             const optionIdx = parseInt(option.dataset.option);
+            console.log(`📌 Binding option ${optionIdx}`);
             
             // Left click - select option
             option.addEventListener('click', () => {
+                console.log(`👆 Option ${optionIdx} clicked`);
                 // Check if answer is already submitted
                 const isSubmitted = quizManager.isAnswerSubmitted();
+                console.log(`   Submitted: ${isSubmitted}`);
                 if (!isSubmitted) {
+                    console.log(`   ✅ Calling selectAnswer(${optionIdx})`);
                     quizManager.selectAnswer(optionIdx);
+                } else {
+                    console.log(`   ❌ Already submitted, ignoring`);
                 }
             });
 

@@ -314,7 +314,8 @@ export class QuizManager {
         }
 
         // Check if correct
-        const isCorrect = selectedAnswer === question.correctAnswer;
+        const correctAnswerIdx = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
+        const isCorrect = selectedAnswer === correctAnswerIdx;
         
         // Vibration feedback
         if (isCorrect) {
@@ -330,7 +331,7 @@ export class QuizManager {
             timeSpent: this.questionTimes[questionIndex]
         });
 
-        return { isCorrect, correctAnswer: question.correctAnswer };
+        return { isCorrect, correctAnswer: correctAnswerIdx };
     }
 
     /**
@@ -516,7 +517,8 @@ export class QuizManager {
         this.questions.forEach((question, index) => {
             if (this.submittedAnswers[index]) {
                 answered++;
-                if (this.answers[index] === question.correctAnswer) {
+                const correctAnswerIdx = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
+                if (this.answers[index] === correctAnswerIdx) {
                     correct++;
                 }
             }
@@ -773,16 +775,19 @@ export class QuizManager {
             averageTimePerQuestion: Math.round(this.getTotalTime() / totalQuestions),
             questionTimes: this.questionTimes,
             flaggedCount: this.flaggedQuestions.size,
-            answers: this.questions.map((q, i) => ({
-                questionNumber: i + 1,
-                question: q.question?.substring(0, 100) + '...', // Truncated for export
-                yourAnswer: this.answers[i],
-                correctAnswer: q.correctAnswer,
-                isCorrect: this.answers[i] === q.correctAnswer,
-                timeSpent: Math.round((this.questionTimes[i] || 0) / 1000), // Convert to seconds
-                flagged: this.flaggedQuestions.has(i),
-                ruledOutOptions: this.ruledOutAnswers[i]?.length || 0
-            })),
+            answers: this.questions.map((q, i) => {
+                const correctAnswerIdx = q.correct_answer !== undefined ? q.correct_answer : q.correctAnswer;
+                return {
+                    questionNumber: i + 1,
+                    question: q.question?.substring(0, 100) + '...', // Truncated for export
+                    yourAnswer: this.answers[i],
+                    correctAnswer: correctAnswerIdx,
+                    isCorrect: this.answers[i] === correctAnswerIdx,
+                    timeSpent: Math.round((this.questionTimes[i] || 0) / 1000), // Convert to seconds
+                    flagged: this.flaggedQuestions.has(i),
+                    ruledOutOptions: this.ruledOutAnswers[i]?.length || 0
+                };
+            }),
             completedAt: new Date().toISOString(),
             sessionStats: this.getStatistics(),
             deviceInfo: {
