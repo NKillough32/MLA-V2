@@ -502,6 +502,147 @@ const ExtractedCalculators = {
 
     },
 
+    getQRISK3OfficialCalculator() {
+
+        return `
+            <div class="calculator-form">
+                <h4>QRISK3 Calculator (Official Algorithm)</h4>
+                <p><small>10-year CVD risk using ClinRisk Ltd. validated algorithm</small></p>
+                <div class="info-banner" style="background-color: #e3f2fd; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                    <strong>ℹ️ Official Implementation:</strong> This uses the exact QRISK3-2017 algorithm from ClinRisk Ltd. 
+                    (GNU LGPL v3 licensed, based on <a href="https://github.com/sisuhealthgroup/qrisk3" target="_blank">sisuhealthgroup/qrisk3</a>)
+                </div>
+                
+                <div class="qrisk-sections">
+                    <div class="qrisk-section">
+                        <h5>👤 About You</h5>
+                        
+                        <div class="calc-input-group">
+                            <label>Age (25-84 years):</label>
+                            <input type="number" id="qrisk3v2-age" placeholder="50" min="25" max="84">
+                            <small>QRISK3 is validated for ages 25-84 years</small>
+                        </div>
+                        
+                        <div class="calc-checkbox-group">
+                            <label><strong>Sex:</strong></label>
+                            <label><input type="radio" name="qrisk3v2-sex" value="male"> Male</label>
+                            <label><input type="radio" name="qrisk3v2-sex" value="female"> Female</label>
+                        </div>
+                        
+                        <div class="calc-input-group">
+                            <label>Ethnicity:</label>
+                            <select id="qrisk3v2-ethnicity">
+                                <option value="1">White/not stated</option>
+                                <option value="2">Indian</option>
+                                <option value="3">Pakistani</option>
+                                <option value="4">Bangladeshi</option>
+                                <option value="5">Other Asian</option>
+                                <option value="6">Caribbean</option>
+                                <option value="7">Black African</option>
+                                <option value="8">Chinese</option>
+                                <option value="9">Other ethnic group</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="qrisk-section">
+                        <h5>📊 Measurements</h5>
+                        
+                        <div class="calc-input-group">
+                            <label>BMI (kg/m²):</label>
+                            <input type="number" id="qrisk3v2-bmi" placeholder="25.0" min="15" max="50" step="0.1">
+                            <small>Normal: 18.5-24.9 kg/m²</small>
+                        </div>
+                        
+                        <div class="calc-input-group">
+                            <label>Systolic Blood Pressure (mmHg):</label>
+                            <input type="number" id="qrisk3v2-sbp" placeholder="130" min="80" max="250">
+                            <small>Normal: <120 mmHg</small>
+                        </div>
+                        
+                        <div class="calc-input-group">
+                            <label>Total Cholesterol (mmol/L):</label>
+                            <input type="number" id="qrisk3v2-cholesterol" placeholder="5.0" min="2" max="15" step="0.1">
+                            <small>Desirable: <5.0 mmol/L</small>
+                        </div>
+                        
+                        <div class="calc-input-group">
+                            <label>HDL Cholesterol (mmol/L):</label>
+                            <input type="number" id="qrisk3v2-hdl" placeholder="1.2" min="0.5" max="5" step="0.1">
+                            <small>Good: >1.0 (men), >1.3 (women) mmol/L</small>
+                        </div>
+                        
+                        <div class="calc-input-group">
+                            <label>Systolic BP Standard Deviation (optional):</label>
+                            <input type="number" id="qrisk3v2-sbpsd" placeholder="0" min="0" max="50" step="0.1">
+                            <small>Measure of BP variability, 0 if unknown</small>
+                        </div>
+                    </div>
+                    
+                    <div class="qrisk-section">
+                        <h5>🚬 Smoking</h5>
+                        <div class="calc-input-group">
+                            <label>Smoking Status:</label>
+                            <select id="qrisk3v2-smoking">
+                                <option value="0">Non-smoker</option>
+                                <option value="1">Former smoker</option>
+                                <option value="2">Light smoker (1-9/day)</option>
+                                <option value="3">Moderate smoker (10-19/day)</option>
+                                <option value="4">Heavy smoker (≥20/day)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="qrisk-section">
+                        <h5>🏥 Medical Conditions</h5>
+                        <div class="calc-checkbox-group">
+                            <label><input type="checkbox" id="qrisk3v2-diabetes-type1"> Type 1 diabetes</label>
+                            <label><input type="checkbox" id="qrisk3v2-diabetes-type2"> Type 2 diabetes</label>
+                            <label><input type="checkbox" id="qrisk3v2-family-history"> Family history of CHD in first degree relative <60 years</label>
+                            <label><input type="checkbox" id="qrisk3v2-ckd"> Chronic kidney disease (stage 3/4/5)</label>
+                            <label><input type="checkbox" id="qrisk3v2-af"> Atrial fibrillation</label>
+                            <label><input type="checkbox" id="qrisk3v2-bp-treatment"> On blood pressure treatment</label>
+                            <label><input type="checkbox" id="qrisk3v2-ra"> Rheumatoid arthritis</label>
+                            <label><input type="checkbox" id="qrisk3v2-lupus"> Systemic lupus erythematosus</label>
+                            <label><input type="checkbox" id="qrisk3v2-smi"> Severe mental illness</label>
+                            <label><input type="checkbox" id="qrisk3v2-antipsychotic"> On atypical antipsychotics</label>
+                            <label><input type="checkbox" id="qrisk3v2-steroid"> On regular steroid tablets</label>
+                            <label><input type="checkbox" id="qrisk3v2-erectile"> Erectile dysfunction (males only)</label>
+                            <label><input type="checkbox" id="qrisk3v2-migraine"> Migraine</label>
+                        </div>
+                    </div>
+                    
+                    <div class="qrisk-section">
+                        <h5>📍 Social (Optional)</h5>
+                        <div class="calc-input-group">
+                            <label>Townsend Deprivation Score:</label>
+                            <input type="number" id="qrisk3v2-townsend" placeholder="0" step="0.1" min="-6" max="15">
+                            <small>Postcode-based deprivation measure, 0 if unknown</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="window.quizApp.calculateQRISK3Official()">Calculate QRISK3 Score</button>
+                <div id="qrisk3v2-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <h5>QRISK3 Official Algorithm Information:</h5>
+                    <ul>
+                        <li><strong>Validation:</strong> Based on UK population data (ClinRisk Ltd.)</li>
+                        <li><strong>Coefficients:</strong> Exact QRISK3-2017 fractional polynomial coefficients</li>
+                        <li><strong>Accuracy:</strong> Matches results from <a href="https://qrisk.org" target="_blank">qrisk.org</a></li>
+                        <li><strong>Use:</strong> Recommended for NICE guideline implementation</li>
+                        <li><strong>License:</strong> GNU LGPL v3 (ClinRisk Ltd.)</li>
+                    </ul>
+                    <div style="background-color: #fff3cd; padding: 8px; border-radius: 5px; margin-top: 10px;">
+                        <small><strong>⚠️ Disclaimer:</strong> ${window.qrisk3Official?.Disclaimer || 'Use official QRISK3 tool at qrisk.org for clinical decisions'}</small>
+                    </div>
+                </div>
+            </div>
+        `;
+
+    },
+
     getMADDERSCalculator() {
 
         return `
@@ -4393,6 +4534,191 @@ const ExtractedCalculators = {
 
     },
 
+    calculateQRISK3Official() {
+
+        // Get input values
+        const age = parseInt(document.getElementById('qrisk3v2-age').value);
+        const sex = document.querySelector('input[name="qrisk3v2-sex"]:checked')?.value;
+        const ethnicity = parseInt(document.getElementById('qrisk3v2-ethnicity').value);
+        const bmi = parseFloat(document.getElementById('qrisk3v2-bmi').value);
+        const sbp = parseFloat(document.getElementById('qrisk3v2-sbp').value);
+        const cholesterol = parseFloat(document.getElementById('qrisk3v2-cholesterol').value);
+        const hdl = parseFloat(document.getElementById('qrisk3v2-hdl').value);
+        const sbpSD = parseFloat(document.getElementById('qrisk3v2-sbpsd').value) || 0;
+        const smokingStatus = parseInt(document.getElementById('qrisk3v2-smoking').value);
+        const townsend = parseFloat(document.getElementById('qrisk3v2-townsend').value) || 0;
+        
+        // Validate required fields
+        if (!age || !sex || !bmi || !sbp || !cholesterol || !hdl) {
+            document.getElementById('qrisk3v2-result').innerHTML = 
+                '<p class="error">Please fill in all required fields (age, sex, BMI, blood pressure, cholesterol and HDL)</p>';
+            return;
+        }
+
+        // QRISK3 age validation
+        if (age < 25 || age > 84) {
+            document.getElementById('qrisk3v2-result').innerHTML = 
+                '<p class="error">QRISK3 is validated for ages 25-84 years only</p>';
+            return;
+        }
+
+        // Get medical conditions
+        const diabetesType1 = document.getElementById('qrisk3v2-diabetes-type1').checked;
+        const diabetesType2 = document.getElementById('qrisk3v2-diabetes-type2').checked;
+        
+        // Validate diabetes - can't have both types
+        if (diabetesType1 && diabetesType2) {
+            document.getElementById('qrisk3v2-result').innerHTML = 
+                '<p class="error">Please select only Type 1 OR Type 2 diabetes, not both</p>';
+            return;
+        }
+
+        // Calculate cholesterol to HDL ratio
+        const cholesterolHdlRatio = cholesterol / hdl;
+
+        // Check if official library is available
+        if (!window.qrisk3Official || typeof window.qrisk3Official.calculateScore !== 'function') {
+            document.getElementById('qrisk3v2-result').innerHTML = 
+                '<p class="error">❌ Official QRISK3 library not loaded. Please refresh the page.</p>';
+            console.error('QRISK3 Official library not available');
+            return;
+        }
+
+        // Build input using official library's input builder
+        const { inputBuilder } = window.qrisk3Official;
+        
+        try {
+            // Build about you section
+            const aboutYou = inputBuilder.buildAboutYou(age, sex, ethnicity);
+            
+            // Build clinical section
+            const clinical = inputBuilder.buildClinical(
+                smokingStatus, // smoking status
+                diabetesType1 ? 'type1' : diabetesType2 ? 'type2' : 'none', // diabetes status
+                document.getElementById('qrisk3v2-family-history').checked, // family angina/heart attack
+                document.getElementById('qrisk3v2-ckd').checked, // CKD stage 3/4/5
+                document.getElementById('qrisk3v2-af').checked, // atrial fibrillation
+                document.getElementById('qrisk3v2-bp-treatment').checked, // blood pressure treatment
+                document.getElementById('qrisk3v2-migraine').checked, // migraine
+                document.getElementById('qrisk3v2-ra').checked, // rheumatoid arthritis
+                document.getElementById('qrisk3v2-lupus').checked, // SLE
+                document.getElementById('qrisk3v2-smi').checked, // severe mental illness
+                document.getElementById('qrisk3v2-antipsychotic').checked, // atypical antipsychotics
+                document.getElementById('qrisk3v2-steroid').checked, // regular steroids
+                document.getElementById('qrisk3v2-erectile').checked // erectile dysfunction (males)
+            );
+            
+            // Build biometric section
+            const biometric = inputBuilder.buildBiometrics(
+                cholesterolHdlRatio, // cholesterol/HDL ratio
+                sbp, // systolic BP
+                sbpSD, // systolic BP standard deviation
+                bmi // BMI
+            );
+            
+            // Build complete QRISK input
+            const qriskInput = inputBuilder.buildQriskInput(aboutYou, clinical, biometric, townsend);
+            
+            console.log('🔍 QRISK3 Official Input:', qriskInput);
+            
+            // Calculate using official algorithm
+            const risk = window.qrisk3Official.calculateScore(qriskInput);
+            
+            console.log('✅ QRISK3 Official Result:', risk);
+            
+            // Ensure risk is a valid number
+            if (isNaN(risk) || risk < 0) {
+                document.getElementById('qrisk3v2-result').innerHTML = 
+                    '<p class="error">Unable to calculate risk. Please check your inputs.</p>';
+                return;
+            }
+            
+            // Cap risk at 99% for display
+            const displayRisk = Math.min(risk, 99);
+            
+            // NICE NG238 risk categorization
+            let riskLevel = '';
+            let color = '';
+            let recommendation = '';
+            
+            if (displayRisk < 10) {
+                riskLevel = 'Low risk (<10%)';
+                color = '#4CAF50';
+                recommendation = 'NICE NG238: Lifestyle advice. Reassess in 5 years. Consider statin if additional risk factors or patient preference.';
+            } else if (displayRisk < 20) {
+                riskLevel = 'Moderate risk (10-20%)';
+                color = '#FF9800';
+                recommendation = 'NICE NG238: Offer atorvastatin 20mg daily with lifestyle advice. Shared decision-making important.';
+            } else {
+                riskLevel = 'High risk (≥20%)';
+                color = '#F44336';
+                recommendation = 'NICE NG238: Offer atorvastatin 20mg daily with lifestyle advice. Consider higher intensity if required.';
+            }
+            
+            // Additional risk factors for context
+            const riskFactors = [];
+            if (diabetesType1) riskFactors.push('Type 1 diabetes');
+            if (diabetesType2) riskFactors.push('Type 2 diabetes');
+            if (qriskInput.atrialFibrillation) riskFactors.push('Atrial fibrillation');
+            if (qriskInput.familyAnginaOrHeartAttack) riskFactors.push('Family history of CHD');
+            if (qriskInput.chronicKidneyDiseaseStage345) riskFactors.push('Chronic kidney disease');
+            if (qriskInput.rheumatoidArthritis) riskFactors.push('Rheumatoid arthritis');
+            if (qriskInput.systemicLupusErythematosus) riskFactors.push('SLE');
+            if (smokingStatus > 0) {
+                const smokingLabels = ['Non-smoker', 'Former smoker', 'Light smoker', 'Moderate smoker', 'Heavy smoker'];
+                riskFactors.push(smokingLabels[smokingStatus] || 'Smoker');
+            }
+            
+            document.getElementById('qrisk3v2-result').innerHTML = `
+                <div class="qrisk-result-display">
+                    <div class="result-summary">
+                        <div class="result-value" style="color: ${color}">
+                            <strong>10-year CVD Risk: ${displayRisk.toFixed(1)}%</strong>
+                        </div>
+                        <div class="result-interpretation" style="color: ${color}">
+                            <strong>${riskLevel}</strong>
+                        </div>
+                        <div style="background-color: #e8f5e9; padding: 8px; border-radius: 5px; margin-top: 10px;">
+                            <small>✅ <strong>Official Algorithm:</strong> This result uses the exact QRISK3-2017 coefficients from ClinRisk Ltd.</small>
+                        </div>
+                    </div>
+                    
+                    <div class="clinical-guidance">
+                        <h5>NICE Guidance:</h5>
+                        <div style="background-color: rgba(${color === '#4CAF50' ? '76,175,80' : color === '#FF9800' ? '255,152,0' : '244,67,54'}, 0.1); padding: 10px; border-radius: 5px; margin-top: 8px;">
+                            ${recommendation}
+                        </div>
+                    </div>
+                    
+                    <div class="risk-factors">
+                        <h5>Key Measurements:</h5>
+                        <ul>
+                            <li><strong>Cholesterol/HDL ratio:</strong> ${cholesterolHdlRatio.toFixed(2)} ${cholesterolHdlRatio > 4.5 ? '(elevated)' : '(good)'}</li>
+                            <li><strong>BMI:</strong> ${bmi} kg/m² ${bmi >= 30 ? '(obese)' : bmi >= 25 ? '(overweight)' : '(normal)'}</li>
+                            <li><strong>Blood pressure:</strong> ${sbp} mmHg ${sbp >= 140 ? '(high)' : sbp >= 120 ? '(elevated)' : '(normal)'}</li>
+                            ${riskFactors.length > 0 ? `<li><strong>Risk factors:</strong> ${riskFactors.join(', ')}</li>` : ''}
+                        </ul>
+                    </div>
+                    
+                    <div class="calculation-info">
+                        <small>
+                            <strong>Calculation method:</strong> ✅ Official QRISK3-2017 algorithm (ClinRisk Ltd.)<br>
+                            <strong>Implementation:</strong> Based on <a href="https://github.com/sisuhealthgroup/qrisk3" target="_blank">sisuhealthgroup/qrisk3</a> (GNU LGPL v3)<br>
+                            <strong>Reference:</strong> NICE NG238 (2023) - Cardiovascular disease: risk assessment and reduction<br>
+                            <strong>Validation:</strong> Matches results from <a href="https://qrisk.org" target="_blank">qrisk.org</a>
+                        </small>
+                    </div>
+                </div>
+            `;
+            
+        } catch (error) {
+            console.error('QRISK3 Official calculation error:', error);
+            document.getElementById('qrisk3v2-result').innerHTML = 
+                `<p class="error">❌ Error calculating QRISK3: ${error.message}</p>`;
+        }
+
+    },
+
     calculateMADDERS() {
 
         let score = 0;
@@ -7689,6 +8015,1162 @@ const ExtractedCalculators = {
         </div>
     `;
 
+    },
+
+    getMELDCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>MELD Score (Model for End-Stage Liver Disease)</h4>
+                <p><small>Quantifies end-stage liver disease severity for transplant prioritization</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Serum Creatinine (mg/dL):</label>
+                    <input type="number" id="meld-creatinine" placeholder="1.0" step="0.1" min="0.1" max="15">
+                    <small>Normal: 0.7-1.3 mg/dL. Max value 4.0 used in calculation if >4.0</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum Bilirubin (mg/dL):</label>
+                    <input type="number" id="meld-bilirubin" placeholder="1.0" step="0.1" min="0.1" max="50">
+                    <small>Normal: 0.3-1.2 mg/dL</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>INR:</label>
+                    <input type="number" id="meld-inr" placeholder="1.1" step="0.1" min="0.5" max="10">
+                    <small>Normal: 0.8-1.2</small>
+                </div>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="meld-dialysis"> On dialysis (or CRRT) in past week</label>
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum Sodium (mEq/L) - Optional for MELD-Na:</label>
+                    <input type="number" id="meld-sodium" placeholder="140" step="1" min="120" max="150">
+                    <small>For MELD-Na calculation (current UNOS/OPTN standard)</small>
+                </div>
+                
+                <button onclick="window.quizApp.calculateMELD()">Calculate MELD Score</button>
+                <div id="meld-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original MELD:</strong> Kamath PS et al. Hepatology 2001<br>
+                        <strong>MELD-Na:</strong> Current UNOS/OPTN standard since 2016<br>
+                        <strong>Score Range:</strong> 6-40 (scores <6 rounded to 6)<br>
+                        <strong>Interpretation:</strong><br>
+                        • <20: 6% 3-month mortality<br>
+                        • 20-30: 20% 3-month mortality<br>
+                        • 30-40: 50% 3-month mortality<br>
+                        • >40: 71% 3-month mortality
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getSOFACalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>SOFA Score (Sequential Organ Failure Assessment)</h4>
+                <p><small>Predicts ICU mortality based on degree of organ dysfunction</small></p>
+                
+                <div class="calc-input-group">
+                    <label>PaO₂/FiO₂ ratio (mmHg):</label>
+                    <select id="sofa-resp">
+                        <option value="0">≥400</option>
+                        <option value="1">&lt;400</option>
+                        <option value="2">&lt;300</option>
+                        <option value="3">&lt;200 (with ventilatory support)</option>
+                        <option value="4">&lt;100 (with ventilatory support)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Platelets (×10³/μL):</label>
+                    <select id="sofa-coag">
+                        <option value="0">≥150</option>
+                        <option value="1">&lt;150</option>
+                        <option value="2">&lt;100</option>
+                        <option value="3">&lt;50</option>
+                        <option value="4">&lt;20</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Bilirubin (mg/dL):</label>
+                    <select id="sofa-liver">
+                        <option value="0">&lt;1.2</option>
+                        <option value="1">1.2-1.9</option>
+                        <option value="2">2.0-5.9</option>
+                        <option value="3">6.0-11.9</option>
+                        <option value="4">≥12.0</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Mean Arterial Pressure OR Vasopressors:</label>
+                    <select id="sofa-cv">
+                        <option value="0">MAP ≥70 mmHg</option>
+                        <option value="1">MAP &lt;70 mmHg</option>
+                        <option value="2">Dopamine ≤5 OR dobutamine (any dose)</option>
+                        <option value="3">Dopamine &gt;5 OR epi ≤0.1 OR norepi ≤0.1</option>
+                        <option value="4">Dopamine &gt;15 OR epi &gt;0.1 OR norepi &gt;0.1</option>
+                    </select>
+                    <small>Vasopressor doses in μg/kg/min for at least 1 hour</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Glasgow Coma Scale:</label>
+                    <select id="sofa-cns">
+                        <option value="0">15</option>
+                        <option value="1">13-14</option>
+                        <option value="2">10-12</option>
+                        <option value="3">6-9</option>
+                        <option value="4">&lt;6</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Creatinine (mg/dL) OR Urine Output:</label>
+                    <select id="sofa-renal">
+                        <option value="0">&lt;1.2</option>
+                        <option value="1">1.2-1.9</option>
+                        <option value="2">2.0-3.4</option>
+                        <option value="3">3.5-4.9 OR &lt;500 mL/day</option>
+                        <option value="4">≥5.0 OR &lt;200 mL/day</option>
+                    </select>
+                </div>
+                
+                <button onclick="window.quizApp.calculateSOFA()">Calculate SOFA Score</button>
+                <div id="sofa-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original:</strong> Vincent JL et al. Intensive Care Med 1996<br>
+                        <strong>Score Range:</strong> 0-24 (higher = worse prognosis)<br>
+                        <strong>Mortality:</strong><br>
+                        • 0-6: &lt;10% mortality<br>
+                        • 7-9: 15-20% mortality<br>
+                        • 10-12: 40-50% mortality<br>
+                        • 13-14: 50-60% mortality<br>
+                        • 15+: &gt;80% mortality<br>
+                        <strong>qSOFA (Quick SOFA):</strong> RR≥22, altered mentation, SBP≤100 (≥2 = high risk)
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getFENaCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>FENa (Fractional Excretion of Sodium)</h4>
+                <p><small>Distinguishes prerenal from intrinsic acute kidney injury</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Serum Sodium (mEq/L):</label>
+                    <input type="number" id="fena-serum-na" placeholder="140" step="1" min="120" max="160">
+                </div>
+                <div class="calc-input-group">
+                    <label>Urine Sodium (mEq/L):</label>
+                    <input type="number" id="fena-urine-na" placeholder="50" step="1" min="1" max="200">
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum Creatinine (mg/dL):</label>
+                    <input type="number" id="fena-serum-cr" placeholder="1.5" step="0.1" min="0.1" max="15">
+                </div>
+                <div class="calc-input-group">
+                    <label>Urine Creatinine (mg/dL):</label>
+                    <input type="number" id="fena-urine-cr" placeholder="80" step="1" min="1" max="300">
+                </div>
+                
+                <button onclick="window.quizApp.calculateFENa()">Calculate FENa</button>
+                <div id="fena-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Formula:</strong> FENa = (Urine Na × Serum Cr) / (Serum Na × Urine Cr) × 100<br>
+                        <strong>Interpretation:</strong><br>
+                        • &lt;1%: Prerenal azotemia (volume depletion, heart failure, cirrhosis)<br>
+                        • &gt;2%: Intrinsic renal disease (ATN, interstitial nephritis)<br>
+                        • 1-2%: Indeterminate (consider clinical context)<br>
+                        <strong>Limitations:</strong><br>
+                        • Not valid with diuretic use (use FEUrea instead)<br>
+                        • Less reliable in chronic kidney disease<br>
+                        • Post-obstructive diuresis can give false high values
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getCapriniCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>Caprini Score for VTE Risk</h4>
+                <p><small>Stratifies venous thromboembolism risk in surgical patients</small></p>
+                
+                <h5>1 Point Each:</h5>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="caprini-age40" class="caprini-1"> Age 41-60 years</label>
+                    <label><input type="checkbox" id="caprini-minor" class="caprini-1"> Minor surgery planned</label>
+                    <label><input type="checkbox" id="caprini-bmi" class="caprini-1"> BMI &gt;25 kg/m²</label>
+                    <label><input type="checkbox" id="caprini-swelling" class="caprini-1"> Swollen legs (current)</label>
+                    <label><input type="checkbox" id="caprini-varicose" class="caprini-1"> Varicose veins</label>
+                    <label><input type="checkbox" id="caprini-pregnancy" class="caprini-1"> Pregnancy or postpartum (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-hx-miscarriage" class="caprini-1"> History of recurrent miscarriage</label>
+                    <label><input type="checkbox" id="caprini-ocp" class="caprini-1"> Oral contraceptives or HRT</label>
+                    <label><input type="checkbox" id="caprini-sepsis" class="caprini-1"> Sepsis (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-lung" class="caprini-1"> Serious lung disease (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-pneumonia" class="caprini-1"> Abnormal pulmonary function</label>
+                    <label><input type="checkbox" id="caprini-mi" class="caprini-1"> Acute MI</label>
+                    <label><input type="checkbox" id="caprini-chf" class="caprini-1"> CHF (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-bed" class="caprini-1"> Medical patient on bed rest</label>
+                    <label><input type="checkbox" id="caprini-immobile" class="caprini-1"> Immobilizing plaster cast</label>
+                    <label><input type="checkbox" id="caprini-central" class="caprini-1"> Central venous access</label>
+                </div>
+                
+                <h5>2 Points Each:</h5>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="caprini-age60" class="caprini-2"> Age 61-74 years</label>
+                    <label><input type="checkbox" id="caprini-arthroscopy" class="caprini-2"> Arthroscopic surgery</label>
+                    <label><input type="checkbox" id="caprini-major" class="caprini-2"> Major surgery (&gt;45 min)</label>
+                    <label><input type="checkbox" id="caprini-laparoscopy" class="caprini-2"> Laparoscopic surgery (&gt;45 min)</label>
+                    <label><input type="checkbox" id="caprini-malignancy" class="caprini-2"> Malignancy (present or previous)</label>
+                    <label><input type="checkbox" id="caprini-immobile2" class="caprini-2"> Confined to bed (&gt;72 hrs)</label>
+                    <label><input type="checkbox" id="caprini-cast" class="caprini-2"> Immobilizing plaster cast (&lt;1 month)</label>
+                </div>
+                
+                <h5>3 Points Each:</h5>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="caprini-age75" class="caprini-3"> Age ≥75 years</label>
+                    <label><input type="checkbox" id="caprini-hx-dvt" class="caprini-3"> History of DVT/PE</label>
+                    <label><input type="checkbox" id="caprini-family" class="caprini-3"> Family history of VTE</label>
+                    <label><input type="checkbox" id="caprini-factor5" class="caprini-3"> Factor V Leiden</label>
+                    <label><input type="checkbox" id="caprini-prothrombin" class="caprini-3"> Prothrombin 20210A</label>
+                    <label><input type="checkbox" id="caprini-lupus" class="caprini-3"> Lupus anticoagulant</label>
+                    <label><input type="checkbox" id="caprini-anticardio" class="caprini-3"> Anticardiolipin antibodies</label>
+                    <label><input type="checkbox" id="caprini-heparin" class="caprini-3"> Heparin-induced thrombocytopenia</label>
+                    <label><input type="checkbox" id="caprini-thrombo" class="caprini-3"> Other congenital thrombophilia</label>
+                </div>
+                
+                <h5>5 Points Each:</h5>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="caprini-stroke" class="caprini-5"> Stroke (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-elective-arthro" class="caprini-5"> Elective major arthroplasty</label>
+                    <label><input type="checkbox" id="caprini-hip" class="caprini-5"> Hip, pelvis, or leg fracture (&lt;1 month)</label>
+                    <label><input type="checkbox" id="caprini-spinal" class="caprini-5"> Acute spinal cord injury (&lt;1 month)</label>
+                </div>
+                
+                <button onclick="window.quizApp.calculateCaprini()">Calculate Caprini Score</button>
+                <div id="caprini-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original:</strong> Caprini JA. Dis Mon 2005<br>
+                        <strong>VTE Prophylaxis Recommendations:</strong><br>
+                        • 0-1: Low risk - early mobilization<br>
+                        • 2: Moderate risk - mechanical prophylaxis<br>
+                        • 3-4: Higher risk - pharmacologic ± mechanical<br>
+                        • ≥5: Highest risk - pharmacologic + mechanical<br>
+                        <strong>Note:</strong> Individual patient factors and bleeding risk must be considered
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getHEARTCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>HEART Score for Major Cardiac Events</h4>
+                <p><small>Predicts 6-week risk of major adverse cardiac event in chest pain patients</small></p>
+                
+                <div class="calc-input-group">
+                    <label>History:</label>
+                    <select id="heart-history">
+                        <option value="0">Slightly suspicious (0)</option>
+                        <option value="1">Moderately suspicious (1)</option>
+                        <option value="2">Highly suspicious (2)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>ECG:</label>
+                    <select id="heart-ecg">
+                        <option value="0">Normal (0)</option>
+                        <option value="1">Non-specific repolarization abnormality (1)</option>
+                        <option value="2">Significant ST deviation (2)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Age:</label>
+                    <select id="heart-age">
+                        <option value="0">&lt;45 years (0)</option>
+                        <option value="1">45-64 years (1)</option>
+                        <option value="2">≥65 years (2)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Risk Factors (≥3 of: HTN, hyperlipidemia, DM, obesity, smoking, family Hx CAD):</label>
+                    <select id="heart-rf">
+                        <option value="0">No known risk factors (0)</option>
+                        <option value="1">1-2 risk factors (1)</option>
+                        <option value="2">≥3 risk factors or atherosclerotic disease (2)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Troponin:</label>
+                    <select id="heart-troponin">
+                        <option value="0">≤Normal limit (0)</option>
+                        <option value="1">1-3× normal limit (1)</option>
+                        <option value="2">&gt;3× normal limit (2)</option>
+                    </select>
+                </div>
+                
+                <button onclick="window.quizApp.calculateHEART()">Calculate HEART Score</button>
+                <div id="heart-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original:</strong> Six AJ et al. Neth Heart J 2008<br>
+                        <strong>Validation:</strong> Multiple studies, >10,000 patients<br>
+                        <strong>6-Week MACE Risk:</strong><br>
+                        • 0-3: Low (1.7%) - Consider discharge with outpatient follow-up<br>
+                        • 4-6: Moderate (20%) - Admit for further evaluation<br>
+                        • 7-10: High (72%) - Urgent intervention likely needed<br>
+                        <strong>MACE:</strong> Death, MI, or revascularization
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getCIWACalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>CIWA-Ar (Alcohol Withdrawal Assessment)</h4>
+                <p><small>Quantifies severity of alcohol withdrawal syndrome</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Nausea/Vomiting:</label>
+                    <select id="ciwa-nausea">
+                        <option value="0">None (0)</option>
+                        <option value="1">Mild nausea, no vomiting (1)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">Intermittent nausea with dry heaves (4)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">Constant nausea/frequent vomiting (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Tremor:</label>
+                    <select id="ciwa-tremor">
+                        <option value="0">None (0)</option>
+                        <option value="1">Not visible, can be felt fingertip-to-fingertip (1)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">Moderate, with arms extended (4)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">Severe, even with arms not extended (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Paroxysmal Sweats:</label>
+                    <select id="ciwa-sweat">
+                        <option value="0">None (0)</option>
+                        <option value="1">Barely perceptible, palms moist (1)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">Beads of sweat on forehead (4)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">Drenching sweats (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Anxiety:</label>
+                    <select id="ciwa-anxiety">
+                        <option value="0">None (0)</option>
+                        <option value="1">Mildly anxious (1)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">Moderately anxious/guarded (4)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">Panic state (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Agitation:</label>
+                    <select id="ciwa-agitation">
+                        <option value="0">Normal activity (0)</option>
+                        <option value="1">Somewhat more than normal (1)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">Moderately fidgety/restless (4)</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">Constant pacing or thrashing (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Tactile Disturbances:</label>
+                    <select id="ciwa-tactile">
+                        <option value="0">None (0)</option>
+                        <option value="1">Mild itching/pins and needles (1)</option>
+                        <option value="2">Moderate itching/pins and needles (2)</option>
+                        <option value="3">Moderate hallucinations (3)</option>
+                        <option value="4">Severe hallucinations (4)</option>
+                        <option value="5">Extremely severe hallucinations (5)</option>
+                        <option value="6">Continuous hallucinations (6)</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Auditory Disturbances:</label>
+                    <select id="ciwa-auditory">
+                        <option value="0">None (0)</option>
+                        <option value="1">Mild harshness/ability to frighten (1)</option>
+                        <option value="2">Moderate harshness/ability to frighten (2)</option>
+                        <option value="3">Moderate hallucinations (3)</option>
+                        <option value="4">Severe hallucinations (4)</option>
+                        <option value="5">Extremely severe hallucinations (5)</option>
+                        <option value="6">Continuous hallucinations (6)</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Visual Disturbances:</label>
+                    <select id="ciwa-visual">
+                        <option value="0">None (0)</option>
+                        <option value="1">Mild sensitivity (1)</option>
+                        <option value="2">Moderate sensitivity (2)</option>
+                        <option value="3">Moderate hallucinations (3)</option>
+                        <option value="4">Severe hallucinations (4)</option>
+                        <option value="5">Extremely severe hallucinations (5)</option>
+                        <option value="6">Continuous hallucinations (6)</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Headache:</label>
+                    <select id="ciwa-headache">
+                        <option value="0">None (0)</option>
+                        <option value="1">Very mild (1)</option>
+                        <option value="2">Mild (2)</option>
+                        <option value="3">Moderate (3)</option>
+                        <option value="4">Moderately severe (4)</option>
+                        <option value="5">Severe (5)</option>
+                        <option value="6">Very severe (6)</option>
+                        <option value="7">Extremely severe (7)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Orientation/Clouding of Sensorium:</label>
+                    <select id="ciwa-orientation">
+                        <option value="0">Oriented, can do serial additions (0)</option>
+                        <option value="1">Cannot do serial additions or uncertain about date (1)</option>
+                        <option value="2">Disoriented to date by no more than 2 days (2)</option>
+                        <option value="3">Disoriented to date by &gt;2 days (3)</option>
+                        <option value="4">Disoriented to place and/or person (4)</option>
+                    </select>
+                </div>
+                
+                <button onclick="window.quizApp.calculateCIWA()">Calculate CIWA-Ar Score</button>
+                <div id="ciwa-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original:</strong> Sullivan JT et al. Br J Addict 1989<br>
+                        <strong>Score Range:</strong> 0-67<br>
+                        <strong>Management:</strong><br>
+                        • &lt;8: Minimal/absent withdrawal - supportive care<br>
+                        • 8-15: Mild-moderate withdrawal - consider pharmacotherapy<br>
+                        • &gt;15: Severe withdrawal - pharmacotherapy indicated<br>
+                        <strong>Treatment:</strong> Benzodiazepines (chlordiazepoxide, diazepam, lorazepam)<br>
+                        <strong>Monitoring:</strong> Reassess every 1-4 hours based on severity
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getSTOPBANGCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>STOP-BANG Score for OSA</h4>
+                <p><small>Screens for obstructive sleep apnea</small></p>
+                
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="stopbang-snoring"> <strong>S</strong>noring: Loud enough to be heard through closed door?</label>
+                    <label><input type="checkbox" id="stopbang-tired"> <strong>T</strong>ired: Daytime tiredness/fatigue?</label>
+                    <label><input type="checkbox" id="stopbang-observed"> <strong>O</strong>bserved: Witnessed apneas during sleep?</label>
+                    <label><input type="checkbox" id="stopbang-pressure"> <strong>P</strong>ressure: High blood pressure or treatment for hypertension?</label>
+                    <label><input type="checkbox" id="stopbang-bmi"> <strong>B</strong>MI &gt;35 kg/m²?</label>
+                    <label><input type="checkbox" id="stopbang-age"> <strong>A</strong>ge &gt;50 years?</label>
+                    <label><input type="checkbox" id="stopbang-neck"> <strong>N</strong>eck circumference &gt;40 cm (16 inches)?</label>
+                    <label><input type="checkbox" id="stopbang-gender"> <strong>G</strong>ender: Male?</label>
+                </div>
+                
+                <button onclick="window.quizApp.calculateSTOPBANG()">Calculate STOP-BANG Score</button>
+                <div id="stopbang-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Original:</strong> Chung F et al. Anesthesiology 2008<br>
+                        <strong>Validation:</strong> Surgical population, >10,000 patients<br>
+                        <strong>OSA Risk:</strong><br>
+                        • 0-2: Low risk<br>
+                        • 3-4: Intermediate risk<br>
+                        • 5-8: High risk<br>
+                        <strong>Sensitivity:</strong><br>
+                        • ≥3 for moderate-severe OSA: 93%<br>
+                        • ≥5 for severe OSA: 100%<br>
+                        <strong>Next Steps:</strong> High risk → sleep study (polysomnography)
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getMaintenanceFluidsCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>Maintenance Fluids (Holliday-Segar)</h4>
+                <p><small>Calculates maintenance fluid requirements by weight</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Weight (kg):</label>
+                    <input type="number" id="mf-weight" placeholder="20" step="0.1" min="0.5" max="150">
+                </div>
+                
+                <button onclick="window.quizApp.calculateMaintenanceFluids()">Calculate Fluids</button>
+                <div id="mf-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Holliday-Segar Method:</strong><br>
+                        • First 10 kg: 100 mL/kg/day (4 mL/kg/hr)<br>
+                        • Next 10 kg (11-20 kg): 50 mL/kg/day (2 mL/kg/hr)<br>
+                        • Each kg &gt;20 kg: 20 mL/kg/day (1 mL/kg/hr)<br>
+                        <strong>Example:</strong> 25 kg child = (10×100) + (10×50) + (5×20) = 1600 mL/day<br>
+                        <strong>Adjustments:</strong><br>
+                        • Fever: ↑ 12.5% per °C &gt;37.5°C<br>
+                        • Hyperventilation: ↑ 20-60%<br>
+                        • Humidity: ↓ 25-50% (incubator, humidified air)
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getFreeWaterDeficitCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>Free Water Deficit</h4>
+                <p><small>Calculates free water deficit in hypernatremia</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Weight (kg):</label>
+                    <input type="number" id="fwd-weight" placeholder="70" step="0.1" min="20" max="300">
+                </div>
+                <div class="calc-input-group">
+                    <label>Sex:</label>
+                    <select id="fwd-sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <small>Affects total body water calculation (60% male, 50% female)</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum Sodium (mEq/L):</label>
+                    <input type="number" id="fwd-sodium" placeholder="155" step="1" min="145" max="200">
+                    <small>Normal: 135-145 mEq/L</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Target Sodium (mEq/L):</label>
+                    <input type="number" id="fwd-target" placeholder="140" step="1" min="135" max="145" value="140">
+                </div>
+                
+                <button onclick="window.quizApp.calculateFreeWaterDeficit()">Calculate Deficit</button>
+                <div id="fwd-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Formula:</strong><br>
+                        Free Water Deficit = TBW × [(Current Na / Target Na) - 1]<br>
+                        TBW = Weight × (0.6 for men, 0.5 for women)<br>
+                        <strong>Correction Rate:</strong><br>
+                        • Acute (&lt;48h): Max 1-2 mEq/L/hr initially<br>
+                        • Chronic (&gt;48h): Max 8-10 mEq/L/24h to avoid cerebral edema<br>
+                        <strong>Caution:</strong> Too rapid correction → osmotic demyelination syndrome
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    calculateMELD() {
+        const creatinine = parseFloat(document.getElementById('meld-creatinine').value);
+        const bilirubin = parseFloat(document.getElementById('meld-bilirubin').value);
+        const inr = parseFloat(document.getElementById('meld-inr').value);
+        const onDialysis = document.getElementById('meld-dialysis').checked;
+        const sodium = parseFloat(document.getElementById('meld-sodium').value);
+
+        if (!creatinine || !bilirubin || !inr) {
+            document.getElementById('meld-result').innerHTML = '<p class="error">Please enter creatinine, bilirubin, and INR</p>';
+            return;
+        }
+
+        // Cap creatinine at 4.0, and if on dialysis, automatically use 4.0
+        let crCapped = onDialysis ? 4.0 : Math.min(creatinine, 4.0);
+        // Floor at 1.0 for all values
+        crCapped = Math.max(crCapped, 1.0);
+        const bilCapped = Math.max(bilirubin, 1.0);
+        const inrCapped = Math.max(inr, 1.0);
+
+        // MELD = 3.78×ln(bilirubin mg/dL) + 11.2×ln(INR) + 9.57×ln(creatinine mg/dL) + 6.43
+        const meldRaw = (3.78 * Math.log(bilCapped)) + (11.2 * Math.log(inrCapped)) + (9.57 * Math.log(crCapped)) + 6.43;
+        let meldScore = Math.round(meldRaw * 10) / 10;
+        
+        // Round to nearest integer and cap
+        meldScore = Math.round(meldScore);
+        meldScore = Math.max(6, Math.min(40, meldScore)); // Floor at 6, cap at 40
+
+        let color = '#4CAF50';
+        let mortality = '';
+        let interpretation = '';
+
+        if (meldScore < 10) {
+            color = '#4CAF50';
+            mortality = '1.9% 3-month mortality';
+            interpretation = 'Low severity';
+        } else if (meldScore < 20) {
+            color = '#4CAF50';
+            mortality = '6% 3-month mortality';
+            interpretation = 'Mild-moderate severity';
+        } else if (meldScore < 30) {
+            color = '#FF9800';
+            mortality = '20% 3-month mortality';
+            interpretation = 'Moderate-severe, consider transplant evaluation';
+        } else if (meldScore < 40) {
+            color = '#F44336';
+            mortality = '50% 3-month mortality';
+            interpretation = 'Severe, high transplant priority';
+        } else {
+            color = '#F44336';
+            mortality = '71% 3-month mortality';
+            interpretation = 'Critical, urgent transplant consideration';
+        }
+
+        let resultHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>MELD Score: ${meldScore}</strong>
+                </div>
+                <div class="result-interpretation">
+                    ${interpretation}<br>
+                    <strong>${mortality}</strong>
+                </div>
+            </div>
+        `;
+
+        // MELD-Na calculation if sodium provided
+        if (sodium && sodium >= 125 && sodium <= 150) {
+            const sodiumCapped = Math.max(125, Math.min(137, sodium));
+            const meldNa = meldScore + 1.32 * (137 - sodiumCapped) - (0.033 * meldScore * (137 - sodiumCapped));
+            const meldNaFinal = Math.max(6, Math.min(40, Math.round(meldNa)));
+
+            resultHTML += `
+                <div class="result-summary" style="margin-top: 12px; background-color: rgba(33, 150, 243, 0.1); padding: 10px; border-radius: 5px;">
+                    <div class="result-value" style="color: #2196F3">
+                        <strong>MELD-Na Score: ${meldNaFinal}</strong>
+                    </div>
+                    <div class="result-interpretation">
+                        Current UNOS/OPTN standard for transplant allocation<br>
+                        <small>Incorporates serum sodium (${sodium} mEq/L)</small>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.getElementById('meld-result').innerHTML = resultHTML;
+    },
+
+    calculateSOFA() {
+        const resp = parseInt(document.getElementById('sofa-resp').value);
+        const coag = parseInt(document.getElementById('sofa-coag').value);
+        const liver = parseInt(document.getElementById('sofa-liver').value);
+        const cv = parseInt(document.getElementById('sofa-cv').value);
+        const cns = parseInt(document.getElementById('sofa-cns').value);
+        const renal = parseInt(document.getElementById('sofa-renal').value);
+
+        const total = resp + coag + liver + cv + cns + renal;
+
+        let color = '#4CAF50';
+        let mortality = '';
+        let interpretation = '';
+
+        if (total <= 6) {
+            color = '#4CAF50';
+            mortality = '<10%';
+            interpretation = 'Low mortality risk';
+        } else if (total <= 9) {
+            color = '#4CAF50';
+            mortality = '15-20%';
+            interpretation = 'Mild-moderate organ dysfunction';
+        } else if (total <= 12) {
+            color = '#FF9800';
+            mortality = '40-50%';
+            interpretation = 'Moderate-severe organ dysfunction';
+        } else if (total <= 14) {
+            color = '#FF9800';
+            mortality = '50-60%';
+            interpretation = 'Severe multi-organ dysfunction';
+        } else {
+            color = '#F44336';
+            mortality = '>80%';
+            interpretation = 'Critical multi-organ failure';
+        }
+
+        document.getElementById('sofa-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>SOFA Score: ${total}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    ${interpretation}<br>
+                    <strong>Predicted Mortality: ${mortality}</strong>
+                </div>
+            </div>
+            <div class="score-breakdown" style="margin-top: 12px;">
+                <h5>Component Scores:</h5>
+                <ul>
+                    <li>Respiration: ${resp}</li>
+                    <li>Coagulation: ${coag}</li>
+                    <li>Liver: ${liver}</li>
+                    <li>Cardiovascular: ${cv}</li>
+                    <li>CNS: ${cns}</li>
+                    <li>Renal: ${renal}</li>
+                </ul>
+            </div>
+            <div class="clinical-note" style="margin-top: 8px; font-size: 0.9em; color: #666;">
+                <strong>Note:</strong> Score increase of 2-3 points correlates with ~20% mortality.
+                Sequential scoring helps assess response to therapy.
+            </div>
+        `;
+    },
+
+    calculateFENa() {
+        const serumNa = parseFloat(document.getElementById('fena-serum-na').value);
+        const urineNa = parseFloat(document.getElementById('fena-urine-na').value);
+        const serumCr = parseFloat(document.getElementById('fena-serum-cr').value);
+        const urineCr = parseFloat(document.getElementById('fena-urine-cr').value);
+
+        if (!serumNa || !urineNa || !serumCr || !urineCr) {
+            document.getElementById('fena-result').innerHTML = '<p class="error">Please enter all values</p>';
+            return;
+        }
+
+        // FENa = (Urine Na × Serum Cr) / (Serum Na × Urine Cr) × 100
+        const fena = ((urineNa * serumCr) / (serumNa * urineCr)) * 100;
+
+        let color = '#4CAF50';
+        let interpretation = '';
+        let diagnosis = '';
+
+        if (fena < 1) {
+            color = '#2196F3';
+            interpretation = 'FENa <1%';
+            diagnosis = 'Suggestive of <strong>prerenal azotemia</strong><br>Causes: Volume depletion, heart failure, cirrhosis, hepatorenal syndrome';
+        } else if (fena <= 2) {
+            color = '#FF9800';
+            interpretation = 'FENa 1-2%';
+            diagnosis = '<strong>Indeterminate</strong> - Consider clinical context and other indices';
+        } else {
+            color = '#F44336';
+            interpretation = 'FENa >2%';
+            diagnosis = 'Suggestive of <strong>intrinsic renal disease</strong><br>Causes: Acute tubular necrosis, interstitial nephritis, glomerulonephritis';
+        }
+
+        document.getElementById('fena-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>${interpretation}</strong><br>
+                    <span style="font-size: 1.5em;">${fena.toFixed(2)}%</span>
+                </div>
+                <div class="result-interpretation">
+                    ${diagnosis}
+                </div>
+            </div>
+            <div class="calculation-details" style="margin-top: 12px;">
+                <h5>Calculation:</h5>
+                <p>FENa = (U<sub>Na</sub> × S<sub>Cr</sub>) / (S<sub>Na</sub> × U<sub>Cr</sub>) × 100</p>
+                <p>= (${urineNa} × ${serumCr}) / (${serumNa} × ${urineCr}) × 100</p>
+                <p>= <strong>${fena.toFixed(2)}%</strong></p>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; padding: 10px; background-color: rgba(255, 152, 0, 0.1); border-radius: 5px;">
+                <strong>⚠️ Important:</strong><br>
+                • Not valid if diuretics used recently (use FEUrea instead)<br>
+                • Less reliable in CKD (baseline renal dysfunction)<br>
+                • Can be misleading in contrast nephropathy, rhabdomyolysis<br>
+                • Consider other indices: BUN/Cr ratio, urine osmolality
+            </div>
+        `;
+    },
+
+    calculateCaprini() {
+        let score = 0;
+
+        // 1 point items
+        document.querySelectorAll('.caprini-1:checked').forEach(() => score += 1);
+        // 2 point items
+        document.querySelectorAll('.caprini-2:checked').forEach(() => score += 2);
+        // 3 point items
+        document.querySelectorAll('.caprini-3:checked').forEach(() => score += 3);
+        // 5 point items
+        document.querySelectorAll('.caprini-5:checked').forEach(() => score += 5);
+
+        let color = '#4CAF50';
+        let risk = '';
+        let prophylaxis = '';
+
+        if (score <= 1) {
+            color = '#4CAF50';
+            risk = 'Low Risk';
+            prophylaxis = '<strong>Early mobilization</strong><br>No pharmacologic prophylaxis needed';
+        } else if (score === 2) {
+            color = '#4CAF50';
+            risk = 'Moderate Risk';
+            prophylaxis = '<strong>Mechanical prophylaxis</strong><br>SCDs or GCS (graduated compression stockings)';
+        } else if (score <= 4) {
+            color = '#FF9800';
+            risk = 'Higher Risk';
+            prophylaxis = '<strong>Pharmacologic ± mechanical prophylaxis</strong><br>LMWH or UFH + SCDs/GCS';
+        } else {
+            color = '#F44336';
+            risk = 'Highest Risk';
+            prophylaxis = '<strong>Pharmacologic AND mechanical prophylaxis</strong><br>LMWH or UFH + SCDs/GCS<br>Consider extended duration prophylaxis post-discharge';
+        }
+
+        document.getElementById('caprini-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>Caprini Score: ${score}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    <strong>${risk}</strong>
+                </div>
+            </div>
+            <div class="prophylaxis-recommendation" style="margin-top: 12px; padding: 12px; background-color: rgba(${color === '#F44336' ? '244,67,54' : color === '#FF9800' ? '255,152,0' : '76,175,80'}, 0.1); border-radius: 5px;">
+                <h5>VTE Prophylaxis Recommendation:</h5>
+                <p>${prophylaxis}</p>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>Note:</strong> Individual bleeding risk must be assessed. Consider patient preferences and contraindications to anticoagulation.
+                High-risk patients may benefit from extended thromboprophylaxis (up to 4 weeks post-surgery).
+            </div>
+        `;
+    },
+
+    calculateHEART() {
+        const history = parseInt(document.getElementById('heart-history').value);
+        const ecg = parseInt(document.getElementById('heart-ecg').value);
+        const age = parseInt(document.getElementById('heart-age').value);
+        const rf = parseInt(document.getElementById('heart-rf').value);
+        const troponin = parseInt(document.getElementById('heart-troponin').value);
+
+        const total = history + ecg + age + rf + troponin;
+
+        let color = '#4CAF50';
+        let risk = '';
+        let mace = '';
+        let recommendation = '';
+
+        if (total <= 3) {
+            color = '#4CAF50';
+            risk = 'Low Risk';
+            mace = '1.7%';
+            recommendation = '<strong>Consider discharge</strong> with outpatient follow-up within 72 hours.<br>May use troponin and ECG to rule out MI.';
+        } else if (total <= 6) {
+            color = '#FF9800';
+            risk = 'Moderate Risk';
+            mace = '20%';
+            recommendation = '<strong>Admit for observation</strong> and further cardiac workup.<br>Serial troponins, continuous monitoring, cardiology consultation.';
+        } else {
+            color = '#F44336';
+            risk = 'High Risk';
+            mace = '72%';
+            recommendation = '<strong>Urgent intervention likely needed.</strong><br>Cardiology consultation, consider catheterization, aggressive medical management.';
+        }
+
+        document.getElementById('heart-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>HEART Score: ${total}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    <strong>${risk}</strong><br>
+                    6-Week MACE Risk: ${mace}
+                </div>
+            </div>
+            <div class="recommendation" style="margin-top: 12px; padding: 12px; background-color: rgba(${color === '#F44336' ? '244,67,54' : color === '#FF9800' ? '255,152,0' : '76,175,80'}, 0.1); border-radius: 5px;">
+                <h5>Recommendation:</h5>
+                <p>${recommendation}</p>
+            </div>
+            <div class="score-breakdown" style="margin-top: 12px;">
+                <h5>Score Components:</h5>
+                <ul>
+                    <li>History: ${history}</li>
+                    <li>ECG: ${ecg}</li>
+                    <li>Age: ${age}</li>
+                    <li>Risk Factors: ${rf}</li>
+                    <li>Troponin: ${troponin}</li>
+                </ul>
+            </div>
+            <div class="clinical-note" style="margin-top: 8px; font-size: 0.9em; color: #666;">
+                <strong>MACE =</strong> Death, MI, or coronary revascularization within 6 weeks
+            </div>
+        `;
+    },
+
+    calculateCIWA() {
+        const nausea = parseInt(document.getElementById('ciwa-nausea').value);
+        const tremor = parseInt(document.getElementById('ciwa-tremor').value);
+        const sweat = parseInt(document.getElementById('ciwa-sweat').value);
+        const anxiety = parseInt(document.getElementById('ciwa-anxiety').value);
+        const agitation = parseInt(document.getElementById('ciwa-agitation').value);
+        const tactile = parseInt(document.getElementById('ciwa-tactile').value);
+        const auditory = parseInt(document.getElementById('ciwa-auditory').value);
+        const visual = parseInt(document.getElementById('ciwa-visual').value);
+        const headache = parseInt(document.getElementById('ciwa-headache').value);
+        const orientation = parseInt(document.getElementById('ciwa-orientation').value);
+
+        const total = nausea + tremor + sweat + anxiety + agitation + tactile + auditory + visual + headache + orientation;
+
+        let color = '#4CAF50';
+        let severity = '';
+        let management = '';
+
+        if (total < 8) {
+            color = '#4CAF50';
+            severity = 'Minimal/Absent Withdrawal';
+            management = '<strong>Supportive care:</strong><br>• Reassurance and orientation<br>• Quiet environment<br>• Hydration and nutrition<br>• Thiamine, folate, multivitamin<br>• Monitor vital signs<br>• Reassess q4-8h';
+        } else if (total <= 15) {
+            color = '#FF9800';
+            severity = 'Mild-Moderate Withdrawal';
+            management = '<strong>Consider pharmacotherapy:</strong><br>• Chlordiazepoxide 25-100 mg PO/IV q6h PRN<br>• OR Diazepam 5-10 mg PO/IV q6h PRN<br>• OR Lorazepam 1-2 mg PO/IV q6h PRN<br>• Thiamine 100 mg daily<br>• Reassess q2-4h<br>• Treat to CIWA <8';
+        } else {
+            color = '#F44336';
+            severity = 'Severe Withdrawal';
+            management = '<strong>Pharmacotherapy indicated:</strong><br>• Chlordiazepoxide 50-100 mg PO/IV q4-6h<br>• OR Diazepam 10-20 mg PO/IV q4-6h<br>• OR Lorazepam 2-4 mg PO/IV q4-6h<br>• Thiamine 100 mg before glucose<br>• Consider ICU if score >20<br>• Reassess q1-2h<br>• Monitor for delirium tremens';
+        }
+
+        document.getElementById('ciwa-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>CIWA-Ar Score: ${total}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    <strong>${severity}</strong>
+                </div>
+            </div>
+            <div class="management-plan" style="margin-top: 12px; padding: 12px; background-color: rgba(${color === '#F44336' ? '244,67,54' : color === '#FF9800' ? '255,152,0' : '76,175,80'}, 0.1); border-radius: 5px;">
+                <h5>Management:</h5>
+                <p>${management}</p>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>⚠️ Important:</strong><br>
+                • Symptom-triggered therapy more effective than fixed-schedule dosing<br>
+                • Watch for complications: seizures, arrhythmias, aspiration<br>
+                • Thiamine BEFORE glucose to prevent Wernicke's encephalopathy<br>
+                • Consider phenobarbital for refractory cases
+            </div>
+        `;
+    },
+
+    calculateSTOPBANG() {
+        let score = 0;
+
+        if (document.getElementById('stopbang-snoring').checked) score++;
+        if (document.getElementById('stopbang-tired').checked) score++;
+        if (document.getElementById('stopbang-observed').checked) score++;
+        if (document.getElementById('stopbang-pressure').checked) score++;
+        if (document.getElementById('stopbang-bmi').checked) score++;
+        if (document.getElementById('stopbang-age').checked) score++;
+        if (document.getElementById('stopbang-neck').checked) score++;
+        if (document.getElementById('stopbang-gender').checked) score++;
+
+        let color = '#4CAF50';
+        let risk = '';
+        let recommendation = '';
+
+        if (score <= 2) {
+            color = '#4CAF50';
+            risk = 'Low Risk for OSA';
+            recommendation = '<strong>Routine management.</strong><br>OSA unlikely. No further sleep testing needed unless high clinical suspicion.';
+        } else if (score <= 4) {
+            color = '#FF9800';
+            risk = 'Intermediate Risk for OSA';
+            recommendation = '<strong>Consider sleep study.</strong><br>Moderate risk of OSA. Home sleep apnea testing or polysomnography recommended if symptoms present.';
+        } else {
+            color = '#F44336';
+            risk = 'High Risk for OSA';
+            recommendation = '<strong>Sleep study recommended.</strong><br>High risk of moderate-severe OSA. Polysomnography indicated. Consider perioperative precautions if surgery planned.';
+        }
+
+        document.getElementById('stopbang-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>STOP-BANG Score: ${score}/8</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    <strong>${risk}</strong>
+                </div>
+            </div>
+            <div class="recommendation" style="margin-top: 12px; padding: 12px; background-color: rgba(${color === '#F44336' ? '244,67,54' : color === '#FF9800' ? '255,152,0' : '76,175,80'}, 0.1); border-radius: 5px;">
+                <h5>Recommendation:</h5>
+                <p>${recommendation}</p>
+            </div>
+            <div class="clinical-context" style="margin-top: 12px;">
+                <h5>OSA Prevalence by Score:</h5>
+                <ul>
+                    <li><strong>≥3:</strong> Moderate-severe OSA sensitivity 93%</li>
+                    <li><strong>≥5:</strong> Severe OSA sensitivity 100%</li>
+                </ul>
+            </div>
+            <div class="clinical-note" style="margin-top: 8px; font-size: 0.9em; color: #666;">
+                <strong>Perioperative Implications:</strong> High STOP-BANG scores warrant enhanced monitoring, avoid opioids when possible, consider CPAP postoperatively.
+            </div>
+        `;
+    },
+
+    calculateMaintenanceFluids() {
+        const weight = parseFloat(document.getElementById('mf-weight').value);
+
+        if (!weight || weight <= 0) {
+            document.getElementById('mf-result').innerHTML = '<p class="error">Please enter a valid weight</p>';
+            return;
+        }
+
+        let dailyRate = 0;
+        let hourlyRate = 0;
+
+        // Holliday-Segar method
+        if (weight <= 10) {
+            dailyRate = weight * 100;
+            hourlyRate = weight * 4;
+        } else if (weight <= 20) {
+            dailyRate = 1000 + ((weight - 10) * 50);
+            hourlyRate = 40 + ((weight - 10) * 2);
+        } else {
+            dailyRate = 1500 + ((weight - 20) * 20);
+            hourlyRate = 60 + ((weight - 20) * 1);
+        }
+
+        // Calculate common IV fluid rates
+        const ml10h = Math.round(dailyRate / 24 / 10) * 10; // Rounded to nearest 10
+
+        document.getElementById('mf-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: #2196F3">
+                    <strong>${Math.round(dailyRate)} mL/day</strong><br>
+                    <span style="font-size: 0.9em;">(${hourlyRate.toFixed(1)} mL/hour)</span>
+                </div>
+            </div>
+            <div class="calculation-breakdown" style="margin-top: 12px;">
+                <h5>Holliday-Segar Calculation:</h5>
+                ${weight <= 10 ? `
+                    <p>Weight ≤10 kg: ${weight} kg × 100 mL/kg/day = ${dailyRate} mL/day</p>
+                ` : weight <= 20 ? `
+                    <p>First 10 kg: 10 × 100 = 1000 mL/day</p>
+                    <p>Next ${(weight - 10).toFixed(1)} kg: ${(weight - 10).toFixed(1)} × 50 = ${((weight - 10) * 50).toFixed(0)} mL/day</p>
+                    <p><strong>Total: ${dailyRate} mL/day</strong></p>
+                ` : `
+                    <p>First 10 kg: 10 × 100 = 1000 mL/day</p>
+                    <p>Next 10 kg: 10 × 50 = 500 mL/day</p>
+                    <p>Remaining ${(weight - 20).toFixed(1)} kg: ${(weight - 20).toFixed(1)} × 20 = ${((weight - 20) * 20).toFixed(0)} mL/day</p>
+                    <p><strong>Total: ${dailyRate} mL/day</strong></p>
+                `}
+            </div>
+            <div class="practical-rates" style="margin-top: 12px; padding: 12px; background-color: rgba(33, 150, 243, 0.1); border-radius: 5px;">
+                <h5>Practical IV Fluid Rate:</h5>
+                <p><strong>${ml10h} mL/hour</strong> (rounded for pump setting)</p>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>Adjustments:</strong><br>
+                • Fever: Increase 12.5% per °C above 37.5°C<br>
+                • Hyperventilation: Increase 20-60%<br>
+                • High humidity/incubator: Decrease 25-50%<br>
+                • Ongoing losses (NG, drains): Add to maintenance<br>
+                <strong>Standard fluid:</strong> 0.9% NaCl or 0.45% NaCl + 5% dextrose
+            </div>
+        `;
+    },
+
+    calculateFreeWaterDeficit() {
+        const weight = parseFloat(document.getElementById('fwd-weight').value);
+        const sex = document.getElementById('fwd-sex').value;
+        const sodium = parseFloat(document.getElementById('fwd-sodium').value);
+        const target = parseFloat(document.getElementById('fwd-target').value) || 140;
+
+        if (!weight || !sodium) {
+            document.getElementById('fwd-result').innerHTML = '<p class="error">Please enter weight and serum sodium</p>';
+            return;
+        }
+
+        if (sodium < 145) {
+            document.getElementById('fwd-result').innerHTML = '<p class="error">Free water deficit calculation is for hypernatremia (Na ≥145 mEq/L)</p>';
+            return;
+        }
+
+        // Total body water: 60% for males, 50% for females
+        const tbwPercent = sex === 'male' ? 0.6 : 0.5;
+        const tbw = weight * tbwPercent;
+
+        // Free water deficit = TBW × [(Current Na / Target Na) - 1]
+        const deficit = tbw * ((sodium / target) - 1);
+
+        // Correction rate recommendations
+        const isAcute = sodium >= 160; // Assume very high = more likely acute
+        const maxCorrection = isAcute ? '1-2 mEq/L/hour initially, then slower' : '8-10 mEq/L per 24 hours';
+        const timeline = isAcute ? '24-48 hours' : '48-72 hours';
+
+        let color = sodium >= 160 ? '#F44336' : '#FF9800';
+        let severity = sodium >= 160 ? 'Severe Hypernatremia' : 'Moderate Hypernatremia';
+
+        document.getElementById('fwd-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>Free Water Deficit: ${deficit.toFixed(1)} L</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    ${severity} (Na ${sodium} mEq/L)
+                </div>
+            </div>
+            <div class="calculation-details" style="margin-top: 12px;">
+                <h5>Calculation:</h5>
+                <p>Total Body Water (TBW) = ${weight} kg × ${tbwPercent} = ${tbw.toFixed(1)} L</p>
+                <p>Free Water Deficit = ${tbw.toFixed(1)} × [(${sodium}/${target}) - 1]</p>
+                <p>= ${tbw.toFixed(1)} × ${((sodium / target) - 1).toFixed(3)} = <strong>${deficit.toFixed(1)} L</strong></p>
+            </div>
+            <div class="correction-plan" style="margin-top: 12px; padding: 12px; background-color: rgba(${color === '#F44336' ? '244,67,54' : '255,152,0'}, 0.1); border-radius: 5px;">
+                <h5>Correction Strategy:</h5>
+                <p><strong>Target correction rate:</strong> ${maxCorrection}</p>
+                <p><strong>Estimated timeline:</strong> ${timeline}</p>
+                <p><strong>Fluid options:</strong></p>
+                <ul>
+                    <li>D5W (pure free water)</li>
+                    <li>0.45% NaCl (half-normal saline)</li>
+                    <li>0.2% NaCl (quarter-normal saline)</li>
+                    <li>Enteral free water if tolerated</li>
+                </ul>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>⚠️ CRITICAL:</strong><br>
+                • <strong>Chronic hypernatremia (&gt;48h):</strong> Correct slowly to avoid cerebral edema<br>
+                • <strong>Maximum correction:</strong> 8-10 mEq/L per 24 hours<br>
+                • <strong>Monitor sodium:</strong> Every 2-4 hours initially<br>
+                • <strong>Ongoing losses:</strong> Add insensible losses (~500-1000 mL/day) + measured losses<br>
+                • <strong>Elderly/frail:</strong> Use lower TBW estimate (50% males, 45% females)
+            </div>
+        `;
     }
 
 };

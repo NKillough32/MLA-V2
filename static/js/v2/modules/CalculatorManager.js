@@ -147,6 +147,32 @@ export class CalculatorManager {
             });
         }
 
+        // HEART Score
+        if (EC.getHEARTCalculator) {
+            this.registerCalculator('heart', {
+                name: 'HEART Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Predicts 6-week major adverse cardiac events in chest pain',
+                keywords: ['heart', 'chest pain', 'cardiac', 'mace', 'risk'],
+                getTemplate: () => EC.getHEARTCalculator(),
+                calculate: () => EC.calculateHEART(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Caprini VTE Risk
+        if (EC.getCapriniCalculator) {
+            this.registerCalculator('caprini', {
+                name: 'Caprini VTE Risk Score',
+                category: TOOL_CATEGORIES.CARDIOLOGY,
+                description: 'Stratifies venous thromboembolism risk in surgical patients',
+                keywords: ['caprini', 'vte', 'dvt', 'thrombosis', 'surgery', 'prophylaxis'],
+                getTemplate: () => EC.getCapriniCalculator(),
+                calculate: () => EC.calculateCaprini(),
+                bindEvents: () => {}
+            });
+        }
+
         // QRISK3
         if (EC.getQRISK3Calculator) {
             this.registerCalculator('qrisk3', {
@@ -169,6 +195,19 @@ export class CalculatorManager {
                 keywords: ['qrisk', 'cardiovascular', 'risk', 'prevention', 'legacy'],
                 getTemplate: () => EC.getQRISKCalculator(),
                 calculate: () => EC.calculateQRISK(),
+                bindEvents: () => {}
+            });
+        }
+        
+        // QRISK3 Official (ClinRisk Ltd. validated algorithm)
+        if (EC.getQRISK3OfficialCalculator) {
+            this.registerCalculator('qrisk3-official', {
+                name: 'QRISK3 Calculator (Official)',
+                category: TOOL_CATEGORIES.RISK,
+                description: '10-year CVD risk using validated ClinRisk algorithm',
+                keywords: ['qrisk3', 'qrisk', 'cardiovascular', 'cvd', 'risk', 'prevention', 'official', 'clinrisk', 'nice', 'statin', 'cholesterol'],
+                getTemplate: () => EC.getQRISK3OfficialCalculator(),
+                calculate: () => EC.calculateQRISK3Official(),
                 bindEvents: () => {}
             });
         }
@@ -320,6 +359,32 @@ export class CalculatorManager {
                 keywords: ['egfr', 'kidney', 'renal', 'creatinine'],
                 getTemplate: () => EC.getEGFRCalculator(),
                 calculate: () => EC.calculateEGFR(),
+                bindEvents: () => {}
+            });
+        }
+
+        // FENa
+        if (EC.getFENaCalculator) {
+            this.registerCalculator('fena', {
+                name: 'FENa (Fractional Excretion of Sodium)',
+                category: TOOL_CATEGORIES.NEPHROLOGY,
+                description: 'Distinguishes prerenal from intrinsic AKI',
+                keywords: ['fena', 'sodium', 'aki', 'renal', 'failure', 'prerenal'],
+                getTemplate: () => EC.getFENaCalculator(),
+                calculate: () => EC.calculateFENa(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Free Water Deficit
+        if (EC.getFreeWaterDeficitCalculator) {
+            this.registerCalculator('free-water-deficit', {
+                name: 'Free Water Deficit',
+                category: TOOL_CATEGORIES.NEPHROLOGY,
+                description: 'Calculates free water deficit in hypernatremia',
+                keywords: ['water', 'deficit', 'hypernatremia', 'sodium', 'dehydration'],
+                getTemplate: () => EC.getFreeWaterDeficitCalculator(),
+                calculate: () => EC.calculateFreeWaterDeficit(),
                 bindEvents: () => {}
             });
         }
@@ -631,6 +696,32 @@ export class CalculatorManager {
             });
         }
 
+        // CIWA-Ar
+        if (EC.getCIWACalculator) {
+            this.registerCalculator('ciwa', {
+                name: 'CIWA-Ar',
+                category: TOOL_CATEGORIES.PSYCHIATRY,
+                description: 'Clinical Institute Withdrawal Assessment for Alcohol',
+                keywords: ['ciwa', 'alcohol', 'withdrawal', 'detox', 'addiction'],
+                getTemplate: () => EC.getCIWACalculator(),
+                calculate: () => EC.calculateCIWA(),
+                bindEvents: () => {}
+            });
+        }
+
+        // STOP-BANG
+        if (EC.getSTOPBANGCalculator) {
+            this.registerCalculator('stopbang', {
+                name: 'STOP-BANG',
+                category: TOOL_CATEGORIES.RESPIRATORY,
+                description: 'Obstructive sleep apnea screening tool',
+                keywords: ['stop', 'bang', 'sleep', 'apnea', 'osa', 'snoring'],
+                getTemplate: () => EC.getSTOPBANGCalculator(),
+                calculate: () => EC.calculateSTOPBANG(),
+                bindEvents: () => {}
+            });
+        }
+
         // Mental State Examination
         if (EC.getMSECalculator) {
             this.registerCalculator('mse', {
@@ -737,6 +828,19 @@ export class CalculatorManager {
                 keywords: ['apgar', 'newborn', 'paediatric', 'assessment'],
                 getTemplate: () => EC.getAPGARCalculator(),
                 calculate: () => EC.calculateAPGAR(),
+                bindEvents: () => {}
+            });
+        }
+
+        // Maintenance Fluids
+        if (EC.getMaintenanceFluidsCalculator) {
+            this.registerCalculator('maintenance-fluids', {
+                name: 'Maintenance Fluids (Holliday-Segar)',
+                category: TOOL_CATEGORIES.PAEDIATRICS,
+                description: 'Calculates maintenance fluid requirements by weight',
+                keywords: ['fluids', 'maintenance', 'pediatric', 'holliday', 'segar', 'hydration'],
+                getTemplate: () => EC.getMaintenanceFluidsCalculator(),
+                calculate: () => EC.calculateMaintenanceFluids(),
                 bindEvents: () => {}
             });
         }

@@ -8949,6 +8949,12 @@
     <!-- Note: Other data files (mnemonics, triads, differentials, emergency, examination) 
          are ES6 modules imported directly by their respective managers -->
     
+    <!-- QRISK3 Official Library (sisuhealthgroup implementation) -->
+    <!-- Load in correct order: Female, Male, then Core -->
+    <script src="/static/js/qrisk3/qrisk3Female.js"></script>
+    <script src="/static/js/qrisk3/qrisk3Male.js"></script>
+    <script src="/static/js/qrisk3/qrisk3Core.js"></script>
+    
     <!-- QRISK3 Module Bridge - Load as module and expose to window -->
     <script type="module">
         // Try to import QRISK3 as ES module and attach to window for the main app
