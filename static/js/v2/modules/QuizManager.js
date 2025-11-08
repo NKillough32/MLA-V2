@@ -233,6 +233,9 @@ export class QuizManager {
                 .slice(0, this.selectedQuizLength);
         }
 
+        // Shuffle options for all questions to prevent pattern memorization (V1 compatibility)
+        this.questions = this.questions.map(question => this.shuffleOptions(question));
+
         // Start timing
         this.quizStartTime = Date.now();
         this.questionStartTime = Date.now();
@@ -738,6 +741,55 @@ export class QuizManager {
             [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
         return shuffled;
+    }
+
+    /**
+     * Shuffle options for a question to prevent pattern memorization (V1 compatibility)
+     * Updates the correct_answer index to match the new shuffled position
+     */
+    shuffleOptions(question) {
+        if (!question.options || question.options.length <= 1) {
+            return question;
+        }
+
+        // Get correct answer index - support both naming conventions
+        const originalCorrectAnswer = question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer;
+        
+        // Validate correct_answer index is within bounds
+        if (originalCorrectAnswer === null || originalCorrectAnswer === undefined || 
+            originalCorrectAnswer < 0 || originalCorrectAnswer >= question.options.length) {
+            console.warn('⚠️ Invalid correct_answer index:', originalCorrectAnswer, 'for question with', question.options.length, 'options');
+            question.correct_answer = 0; // Default to first option as fallback
+            return question;
+        }
+        
+        // Create array of indices and their corresponding options
+        const optionPairs = question.options.map((option, index) => ({ option, originalIndex: index }));
+        
+        // Fisher-Yates shuffle
+        for (let i = optionPairs.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [optionPairs[i], optionPairs[j]] = [optionPairs[j], optionPairs[i]];
+        }
+        
+        // Create the shuffled question
+        const shuffledQuestion = { ...question };
+        shuffledQuestion.options = optionPairs.map(pair => pair.option);
+        
+        // Update the correct answer index to match the new position
+        const correctOptionPair = optionPairs.find(pair => pair.originalIndex === originalCorrectAnswer);
+        if (correctOptionPair) {
+            shuffledQuestion.correct_answer = optionPairs.indexOf(correctOptionPair);
+            console.log(`🔀 Shuffled question: original answer index ${originalCorrectAnswer} → new index ${shuffledQuestion.correct_answer}`);
+        } else {
+            console.error('❌ Failed to find correct option pair for question:', question.title);
+            shuffledQuestion.correct_answer = 0; // Default to first option
+        }
+        
+        // Store the mapping for this question so we can maintain consistency
+        shuffledQuestion.optionMapping = optionPairs.map(pair => pair.originalIndex);
+        
+        return shuffledQuestion;
     }
 
     /**
