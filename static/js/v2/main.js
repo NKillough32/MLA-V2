@@ -2903,11 +2903,19 @@ class MLAQuizApp {
                 const isCorrect = question.correctAnswer === idx;
                 const isRuledOut = ruledOut && ruledOut.includes(idx);
                 
+                if (idx === 0) {
+                    console.log(`📝 Option ${idx}: answer=${answer}, idx=${idx}, isSelected=${isSelected}`);
+                }
+                
                 let optionClass = 'new-option option';
                 if (isSelected) optionClass += ' selected';
                 if (submitted && isCorrect) optionClass += ' correct';
                 if (submitted && isSelected && !isCorrect) optionClass += ' incorrect';
                 if (isRuledOut) optionClass += ' ruled-out';
+                
+                if (idx === 0) {
+                    console.log(`📝 Option ${idx} classes: "${optionClass}"`);
+                }
 
                 // Remove leading option letters (A., B., etc.) if present
                 let cleanOption = option.replace(/^[\(\[]?[A-Z][\)\.]\s*/i, '').trim();
