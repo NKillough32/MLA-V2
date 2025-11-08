@@ -2961,18 +2961,13 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
-        console.log(`🔍 Found ${options.length} options to bind events to`);
         options.forEach((option) => {
             const optionIdx = parseInt(option.dataset.option);
-            console.log(`🔗 Binding click event to option ${optionIdx}`, option);
             
             // Left click - select option
             option.addEventListener('click', () => {
-                // Check current submitted state from quizManager, not the captured closure variable
-                const currentState = quizManager.getCurrentQuestion();
-                const isSubmitted = currentState?.submitted || false;
-                console.log(`👆 Option ${optionIdx} clicked, submitted=${isSubmitted}`);
-                if (!isSubmitted) {
+                // Check if answer is already submitted
+                if (!quizManager.isAnswerSubmitted()) {
                     quizManager.selectAnswer(optionIdx);
                 }
             });
@@ -2980,9 +2975,7 @@ class MLAQuizApp {
             // Right click - rule out option
             option.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
-                const currentState = quizManager.getCurrentQuestion();
-                const isSubmitted = currentState?.submitted || false;
-                if (!isSubmitted) {
+                if (!quizManager.isAnswerSubmitted()) {
                     quizManager.toggleRuleOut(optionIdx);
                     analytics.vibrateClick();
                 }
@@ -2993,9 +2986,7 @@ class MLAQuizApp {
             let startPos = null;
             
             option.addEventListener('touchstart', (e) => {
-                const currentState = quizManager.getCurrentQuestion();
-                const isSubmitted = currentState?.submitted || false;
-                if (isSubmitted) return;
+                if (quizManager.isAnswerSubmitted()) return;
                 
                 const touch = e.touches[0];
                 startPos = { x: touch.clientX, y: touch.clientY };
