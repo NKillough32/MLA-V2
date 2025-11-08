@@ -2968,8 +2968,11 @@ class MLAQuizApp {
             
             // Left click - select option
             option.addEventListener('click', () => {
-                console.log(`👆 Option ${optionIdx} clicked, submitted=${submitted}`);
-                if (!submitted) {
+                // Check current submitted state from quizManager, not the captured closure variable
+                const currentState = quizManager.getCurrentQuestion();
+                const isSubmitted = currentState?.submitted || false;
+                console.log(`👆 Option ${optionIdx} clicked, submitted=${isSubmitted}`);
+                if (!isSubmitted) {
                     quizManager.selectAnswer(optionIdx);
                 }
             });
@@ -2977,59 +2980,64 @@ class MLAQuizApp {
             // Right click - rule out option
             option.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
-                if (!submitted) {
+                const currentState = quizManager.getCurrentQuestion();
+                const isSubmitted = currentState?.submitted || false;
+                if (!isSubmitted) {
                     quizManager.toggleRuleOut(optionIdx);
                     analytics.vibrateClick();
                 }
             });
 
-            // Touch events for long-press (mobile)
-            if (!submitted) {
-                let pressTimer = null;
-                let startPos = null;
+            // Touch events for long-press (mobile) - always bind, check state on execution
+            let pressTimer = null;
+            let startPos = null;
+            
+            option.addEventListener('touchstart', (e) => {
+                const currentState = quizManager.getCurrentQuestion();
+                const isSubmitted = currentState?.submitted || false;
+                if (isSubmitted) return;
                 
-                option.addEventListener('touchstart', (e) => {
+                const touch = e.touches[0];
+                startPos = { x: touch.clientX, y: touch.clientY };
+                
+                pressTimer = setTimeout(() => {
+                    quizManager.toggleRuleOut(optionIdx);
+                    analytics.vibrateClick();
+                    pressTimer = null;
+                }, 800);
+            }, { passive: true });
+            
+            option.addEventListener('touchmove', (e) => {
+                if (startPos && pressTimer) {
                     const touch = e.touches[0];
-                    startPos = { x: touch.clientX, y: touch.clientY };
+                    const deltaX = Math.abs(touch.clientX - startPos.x);
+                    const deltaY = Math.abs(touch.clientY - startPos.y);
                     
-                    pressTimer = setTimeout(() => {
-                        quizManager.toggleRuleOut(optionIdx);
-                        analytics.vibrateClick();
-                        pressTimer = null;
-                    }, 800);
-                }, { passive: true });
-                
-                option.addEventListener('touchmove', (e) => {
-                    if (startPos && pressTimer) {
-                        const touch = e.touches[0];
-                        const deltaX = Math.abs(touch.clientX - startPos.x);
-                        const deltaY = Math.abs(touch.clientY - startPos.y);
-                        
-                        if (deltaX > 15 || deltaY > 15) {
-                            clearTimeout(pressTimer);
-                            pressTimer = null;
-                        }
-                    }
-                }, { passive: true });
-                
-                option.addEventListener('touchend', () => {
-                    if (pressTimer) {
+                    if (deltaX > 15 || deltaY > 15) {
                         clearTimeout(pressTimer);
                         pressTimer = null;
                     }
-                    startPos = null;
-                }, { passive: true });
-                
-                option.addEventListener('touchcancel', () => {
-                    if (pressTimer) {
-                        clearTimeout(pressTimer);
-                        pressTimer = null;
-                    }
-                    startPos = null;
-                }, { passive: true });
-            }
+                }
+            }, { passive: true });
+            
+            option.addEventListener('touchend', () => {
+                if (pressTimer) {
+                    clearTimeout(pressTimer);
+                    pressTimer = null;
+                }
+                startPos = null;
+            }, { passive: true });
+            
+            option.addEventListener('touchcancel', () => {
+                if (pressTimer) {
+                    clearTimeout(pressTimer);
+                    pressTimer = null;
+                }
+                startPos = null;
+            }, { passive: true });
         });
 
+        this.updateQuizButtons(data);
         // Update button states
         this.updateQuizButtons(data);
     }
