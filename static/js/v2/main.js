@@ -2951,14 +2951,15 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
-        console.log(`🔗 Found ${options.length} options to bind`);
-        options.forEach((option) => {
+        console.log(`🔗 Found ${options.length} options to bind for question ${data.index + 1}`);
+        
+        options.forEach((option, optionIndex) => {
             const optionIdx = parseInt(option.dataset.option);
-            console.log(`📌 Binding option ${optionIdx}`);
+            console.log(`📌 Binding option ${optionIdx}, element index ${optionIndex}, dataset:`, option.dataset);
             
             // Left click - select option
             option.addEventListener('click', () => {
-                console.log(`👆 Option ${optionIdx} clicked`);
+                console.log(`👆 Option ${optionIdx} clicked (question ${data.index + 1})`);
                 // Check if answer is already submitted
                 const isSubmitted = quizManager.isAnswerSubmitted();
                 console.log(`   Submitted: ${isSubmitted}`);
