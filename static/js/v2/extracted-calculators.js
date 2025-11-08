@@ -9180,4 +9180,4 @@ if (typeof window !== 'undefined') {
     window.ExtractedCalculators = ExtractedCalculators;
 }
 
-console.log('✅ ExtractedCalculators loaded: 61 getters, 65 calculate functions');
+console.log('✅ ExtractedCalculators loaded: 72 calculators (includes 10 new + QRISK3 Official)');
