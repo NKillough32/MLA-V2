@@ -2961,11 +2961,13 @@ class MLAQuizApp {
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
-        options.forEach((option, idx) => {
+        options.forEach((option) => {
+            const optionIdx = parseInt(option.dataset.option);
+            
             // Left click - select option
             option.addEventListener('click', () => {
                 if (!submitted) {
-                    quizManager.selectAnswer(idx);
+                    quizManager.selectAnswer(optionIdx);
                 }
             });
 
@@ -2973,7 +2975,7 @@ class MLAQuizApp {
             option.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
                 if (!submitted) {
-                    quizManager.toggleRuleOut(idx);
+                    quizManager.toggleRuleOut(optionIdx);
                     analytics.vibrateClick();
                 }
             });
@@ -2988,7 +2990,7 @@ class MLAQuizApp {
                     startPos = { x: touch.clientX, y: touch.clientY };
                     
                     pressTimer = setTimeout(() => {
-                        quizManager.toggleRuleOut(idx);
+                        quizManager.toggleRuleOut(optionIdx);
                         analytics.vibrateClick();
                         pressTimer = null;
                     }, 800);
