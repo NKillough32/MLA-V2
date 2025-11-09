@@ -1394,73 +1394,55 @@ const ExtractedCalculators = {
                 <h3>Wells Score for DVT</h3>
                 <p>Assesses probability of deep vein thrombosis</p>
                 
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-cancer" value="1">
-                        Active cancer (treatment within 6 months or palliative) (+1)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 16px;align-items:center;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-cancer" value="1" style="margin-top:4px;">
+                        <span>Active cancer (treatment within 6 months or palliative) (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-paralysis" value="1">
-                        Paralysis, paresis, or recent plaster immobilisation of lower extremity (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-paralysis" value="1" style="margin-top:4px;">
+                        <span>Paralysis, paresis, or recent plaster immobilisation of lower extremity (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-bedridden" value="1">
-                        Recently bedridden >3 days or major surgery within 12 weeks (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-bedridden" value="1" style="margin-top:4px;">
+                        <span>Recently bedridden &gt;3 days or major surgery within 12 weeks (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-tenderness" value="1">
-                        Localized tenderness along deep venous system (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-tenderness" value="1" style="margin-top:4px;">
+                        <span>Localized tenderness along deep venous system (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-swelling" value="1">
-                        Entire leg swollen (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-swelling" value="1" style="margin-top:4px;">
+                        <span>Entire leg swollen (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-calf" value="1">
-                        Calf swelling >3cm compared to asymptomatic leg (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-calf" value="1" style="margin-top:4px;">
+                        <span>Calf swelling &gt;3cm compared to asymptomatic leg (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-pitting" value="1">
-                        Pitting edema confined to symptomatic leg (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-pitting" value="1" style="margin-top:4px;">
+                        <span>Pitting oedema confined to symptomatic leg (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-veins" value="1">
-                        Collateral superficial veins (non-varicose) (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-veins" value="1" style="margin-top:4px;">
+                        <span>Collateral superficial veins (non-varicose) (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-previous" value="1">
-                        Previously documented DVT (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-previous" value="1" style="margin-top:4px;">
+                        <span>Previously documented DVT (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="wells-dvt-alternative" value="-2">
-                        Alternative diagnosis at least as likely as DVT (-2)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="wells-dvt-alternative" value="-2" style="margin-top:4px;">
+                        <span>Alternative diagnosis at least as likely as DVT (-2)</span>
                     </label>
                 </div>
                 
