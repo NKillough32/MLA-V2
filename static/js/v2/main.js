@@ -3738,6 +3738,199 @@ window.quizApp = app;
 
 // Safe wrappers for legacy templates that call unit converter helpers directly.
 // These try the main app proxy first, then fall back to ExtractedCalculators, and finally warn.
+// Internal lightweight unit converter fallback (used only if no legacy implementation
+// is reachable). This mirrors a subset of the real converter behavior so the UI
+// remains functional.
+window._internalUnitConverter = (function() {
+    function updateUnitConverter() {
+        const unitTypeEl = document.getElementById('unit-type');
+        const unitType = unitTypeEl ? unitTypeEl.value : '';
+        const fieldsContainer = document.getElementById('unit-converter-fields');
+        const conversionInfo = document.getElementById('conversion-info');
+        const resultDiv = document.getElementById('unit-result');
+
+        if (!unitType) {
+            if (fieldsContainer) fieldsContainer.innerHTML = '';
+            if (conversionInfo) conversionInfo.innerHTML = '';
+            if (resultDiv) resultDiv.innerHTML = '';
+            return;
+        }
+
+        // Minimal field templates for common types (keeps ids used by convertUnits)
+        let fieldsHtml = '';
+        let infoText = '';
+        switch (unitType) {
+            case 'glucose':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="5.5" step="0.1" oninput="window.callConvertUnits('glucose','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="100" step="1" oninput="window.callConvertUnits('glucose','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 18';
+                break;
+            case 'weight':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Kilograms (kg):</label>
+                        <input type="number" id="unit-input-1" placeholder="70" step="0.1" oninput="window.callConvertUnits('weight','kg')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Pounds (lbs):</label>
+                        <input type="number" id="unit-input-2" placeholder="154" step="0.1" oninput="window.callConvertUnits('weight','lbs')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> 1 kg = 2.20462 lbs';
+                break;
+            case 'height':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Centimetres (cm):</label>
+                        <input type="number" id="unit-input-1" placeholder="175" step="0.1" oninput="window.callConvertUnits('height','cm')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Feet (ft):</label>
+                        <input type="number" id="unit-input-2" placeholder="5" step="1" oninput="window.callConvertUnits('height','feet')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Inches (in):</label>
+                        <input type="number" id="unit-input-3" placeholder="9" step="1" oninput="window.callConvertUnits('height','inches')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> 1 inch = 2.54 cm';
+                break;
+            case 'temperature':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>°C:</label>
+                        <input type="number" id="unit-input-1" placeholder="37" step="0.1" oninput="window.callConvertUnits('temperature','celsius')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>°F:</label>
+                        <input type="number" id="unit-input-2" placeholder="98.6" step="0.1" oninput="window.callConvertUnits('temperature','fahrenheit')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> °F = (°C × 9/5) + 32';
+                break;
+            default:
+                // Generic two-field fallback
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Value A:</label>
+                        <input type="number" id="unit-input-1" oninput="window.callConvertUnits('${unitType}','a')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Value B:</label>
+                        <input type="number" id="unit-input-2" oninput="window.callConvertUnits('${unitType}','b')">
+                    </div>
+                `;
+                infoText = '';
+        }
+
+        if (fieldsContainer) fieldsContainer.innerHTML = fieldsHtml;
+        if (conversionInfo) conversionInfo.innerHTML = infoText;
+        if (resultDiv) resultDiv.innerHTML = '';
+    }
+
+    function convertUnits(unitType, sourceUnit) {
+        const input1 = document.getElementById('unit-input-1');
+        const input2 = document.getElementById('unit-input-2');
+        const input3 = document.getElementById('unit-input-3');
+        const resultDiv = document.getElementById('unit-result');
+        let value, converted, resultText = '';
+
+        switch (unitType) {
+            case 'glucose':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 18;
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mmol/L = ${converted.toFixed(1)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value / 18;
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(1)} mmol/L` : '';
+                }
+                break;
+            case 'weight':
+                if (sourceUnit === 'kg') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 2.20462;
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} kg = ${converted.toFixed(1)} lbs` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value * 0.453592;
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} lbs = ${converted.toFixed(1)} kg` : '';
+                }
+                break;
+            case 'height':
+                if (sourceUnit === 'cm') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    const totalInches = value / 2.54;
+                    const feet = Math.floor(totalInches / 12);
+                    const inches = Math.round(totalInches % 12);
+                    if (input2) input2.value = feet || '';
+                    if (input3) input3.value = inches || '';
+                    resultText = value ? `${value} cm = ${feet}' ${inches}"` : '';
+                } else {
+                    const feet = parseFloat(input2 && input2.value) || 0;
+                    const inches = parseFloat(input3 && input3.value) || 0;
+                    if (feet || inches) {
+                        const totalInches = (feet * 12) + inches;
+                        converted = totalInches * 2.54;
+                        if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                        resultText = `${feet}' ${inches}" = ${converted.toFixed(1)} cm`;
+                    }
+                }
+                break;
+            case 'temperature':
+                if (sourceUnit === 'celsius') {
+                    value = parseFloat(input1 && input1.value);
+                    if (!isNaN(value)) {
+                        converted = (value * 9/5) + 32;
+                        if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                        resultText = `${value}°C = ${converted.toFixed(1)}°F`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (!isNaN(value)) {
+                        converted = (value - 32) * 5/9;
+                        if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                        resultText = `${value}°F = ${converted.toFixed(1)}°C`;
+                    }
+                }
+                break;
+            default:
+                // Generic: copy value between fields if present
+                if (sourceUnit === 'a') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    if (input2) input2.value = value;
+                    resultText = value ? `${value} → ${value}` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    if (input1) input1.value = value;
+                    resultText = value ? `${value} → ${value}` : '';
+                }
+        }
+
+        if (resultDiv) {
+            resultDiv.innerHTML = resultText ? `<div class="unit-converter-result" style="font-weight:bold;padding:10px;border-radius:4px;">${resultText}</div>` : '';
+        }
+    }
+
+    return {
+        updateUnitConverter: updateUnitConverter,
+        convertUnits: convertUnits
+    };
+})();
+
 window.callUpdateUnitConverter = function() {
     try {
         console.debug('callUpdateUnitConverter() invoked');
@@ -3767,6 +3960,18 @@ window.callUpdateUnitConverter = function() {
         } else if (typeof window.updateUnitConverter === 'function') {
             console.debug('-> global updateUnitConverter exists but points to wrapper; skipping to avoid recursion');
         }
+        // As a last resort, use an internal lightweight implementation so the
+        // UI still populates and the converter works even if legacy helpers
+        // are not exposed at runtime.
+        if (window._internalUnitConverter && typeof window._internalUnitConverter.updateUnitConverter === 'function') {
+            console.debug('-> using internal unit converter fallback');
+            try {
+                return window._internalUnitConverter.updateUnitConverter();
+            } catch (e) {
+                console.error('Internal unit converter failed:', e);
+            }
+        }
+
         console.warn('updateUnitConverter not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
         console.error('Error calling updateUnitConverter:', e);
@@ -3798,6 +4003,16 @@ window.callConvertUnits = function(unitType, sourceUnit) {
         } else if (typeof window.convertUnits === 'function') {
             console.debug('-> global convertUnits exists but points to wrapper; skipping to avoid recursion');
         }
+        // Last-resort internal implementation
+        if (window._internalUnitConverter && typeof window._internalUnitConverter.convertUnits === 'function') {
+            console.debug('-> using internal convertUnits fallback');
+            try {
+                return window._internalUnitConverter.convertUnits(unitType, sourceUnit);
+            } catch (e) {
+                console.error('Internal convertUnits failed:', e);
+            }
+        }
+
         console.warn('convertUnits not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
         console.error('Error calling convertUnits:', e);
