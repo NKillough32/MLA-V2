@@ -39,11 +39,11 @@ export class QuizManager {
     /**
      * Initialize the quiz manager
      */
-    initialize() {
+    async initialize() {
         console.log('🎯 QuizManager initialized');
         
         // Load quiz length from storage
-        this.selectedQuizLength = storage.getItem(STORAGE_KEYS.QUIZ_LENGTH, QUIZ_CONFIG.DEFAULT_LENGTH);
+        this.selectedQuizLength = await storage.getItem(STORAGE_KEYS.QUIZ_LENGTH, QUIZ_CONFIG.DEFAULT_LENGTH);
         
         // Update quiz length info display
         this.updateQuizLengthInfo();
@@ -140,7 +140,7 @@ export class QuizManager {
         console.log('🔍 Retrieving uploaded quizzes');
         
         // Get quizzes from localStorage
-        let quizzes = storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+        let quizzes = await storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
         
         // Also check temporary storage (V1 compatibility)
         if (window.tempUploadedQuizzes && window.tempUploadedQuizzes.length > 0) {
@@ -485,10 +485,10 @@ export class QuizManager {
     /**
      * Set quiz length preference
      */
-    setQuizLength(length) {
+    async setQuizLength(length) {
         this.selectedQuizLength = length === 'all' ? 'all' : parseInt(length);
         this.quizLength = this.selectedQuizLength; // Keep both for compatibility
-        storage.setItem(STORAGE_KEYS.QUIZ_LENGTH, this.selectedQuizLength);
+        await storage.setItem(STORAGE_KEYS.QUIZ_LENGTH, this.selectedQuizLength);
         console.log(`🎯 Selected quiz length: ${this.selectedQuizLength}`);
         
         // Update UI display (V1 compatibility)
@@ -566,10 +566,10 @@ export class QuizManager {
         };
 
         // Save results
-        storage.setItem(STORAGE_KEYS.LAST_QUIZ, results);
+        await storage.setItem(STORAGE_KEYS.LAST_QUIZ, results);
         
         // Update session stats
-        const sessionStats = storage.getItem(STORAGE_KEYS.SESSION_STATS, {
+        const sessionStats = await storage.getItem(STORAGE_KEYS.SESSION_STATS, {
             totalQuizzes: 0,
             totalQuestions: 0,
             totalCorrect: 0,
@@ -581,7 +581,7 @@ export class QuizManager {
         sessionStats.totalCorrect += score.correct;
         sessionStats.totalTime += totalTime;
         
-        storage.setItem(STORAGE_KEYS.SESSION_STATS, sessionStats);
+        await storage.setItem(STORAGE_KEYS.SESSION_STATS, sessionStats);
 
         // Track completion
         analytics.trackQuizCompletion(this.quizName, score.percentage, totalTime);
@@ -708,7 +708,7 @@ export class QuizManager {
     /**
      * Save progress (for resuming later)
      */
-    saveProgress() {
+    async saveProgress() {
         const progress = {
             quizName: this.quizName,
             currentQuestionIndex: this.currentQuestionIndex,
@@ -721,7 +721,7 @@ export class QuizManager {
             savedAt: Date.now()
         };
 
-        storage.setItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${this.quizName}`, progress);
+        await storage.setItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${this.quizName}`, progress);
         console.log('💾 Quiz progress saved');
         
         return progress;
@@ -730,8 +730,8 @@ export class QuizManager {
     /**
      * Load progress (to resume quiz)
      */
-    loadProgress(quizName) {
-        const progress = storage.getItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
+    async loadProgress(quizName) {
+        const progress = await storage.getItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
         
         if (progress) {
             this.currentQuestionIndex = progress.currentQuestionIndex || 0;
@@ -752,8 +752,8 @@ export class QuizManager {
     /**
      * Clear saved progress
      */
-    clearProgress(quizName = this.quizName) {
-        storage.removeItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
+    async clearProgress(quizName = this.quizName) {
+        await storage.removeItem(`${STORAGE_KEYS.QUIZ_PROGRESS}_${quizName}`);
         console.log('🗑️ Quiz progress cleared');
     }
 
@@ -980,7 +980,7 @@ export class QuizManager {
             console.log('🗑️ Clearing all uploaded quiz data...');
             
             // Clear from localStorage
-            storage.removeItem(STORAGE_KEYS.UPLOADED_QUIZZES);
+            await storage.removeItem(STORAGE_KEYS.UPLOADED_QUIZZES);
             
             // Clear any temp uploaded data
             if (window.tempUploadedQuizzes) {

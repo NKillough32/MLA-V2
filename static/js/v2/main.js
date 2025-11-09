@@ -118,7 +118,7 @@ class MLAQuizApp {
         anatomyManager.initialize();
 
         // Initialize quiz manager
-        quizManager.initialize();
+        quizManager.initialize(),
 
         // Initialize calculator manager (auto-registers all calculators)
         calculatorManager.initialize();
@@ -330,14 +330,14 @@ class MLAQuizApp {
         // Quiz selection screen - quiz length buttons
         const quizLengthBtns = document.querySelectorAll('.quiz-length-btn');
         quizLengthBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', async () => {
                 // Remove active from all
                 quizLengthBtns.forEach(b => b.classList.remove('active'));
                 // Add to clicked
                 btn.classList.add('active');
                 
                 const length = btn.getAttribute('data-length');
-                quizManager.setQuizLength(length === 'all' ? 'all' : parseInt(length));
+                await quizManager.setQuizLength(length === 'all' ? 'all' : parseInt(length));
                 console.log(`📝 Quiz length set to: ${length}`);
             });
         });
