@@ -1086,15 +1086,42 @@ export class QuizManager {
             for (let file of files) {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
                 
-                if (file.size > 5 * 1024 * 1024) { // 5MB limit
-                    uploadResults.push({
-                        filename: file.name,
-                        success: false,
-                        error: 'File too large (max 5MB)'
-                    });
-                    continue;
+                // Client-side size limits: keep small limit for markdown files but
+                // allow larger ZIP uploads (images inside zips commonly exceed 5MB)
+                if (file.name.endsWith('.md')) {
+                    if (file.size > 5 * 1024 * 1024) { // 5MB limit for .md
+                        uploadResults.push({
+                            filename: file.name,
+                            success: false,
+                            error: 'File too large (max 5MB for markdown files)'
+                        });
+                        continue;
+                    }
+                } else if (file.name.endsWith('.zip')) {
+                    // Allow larger zip uploads but enforce a reasonable cap client-side
+                    // to avoid accidental huge uploads from mobile devices. Server still
+                    // validates size and will reject if too large.
+                    const ZIP_CLIENT_LIMIT = 50 * 1024 * 1024; // 50MB
+                    if (file.size > ZIP_CLIENT_LIMIT) {
+                        uploadResults.push({
+                            filename: file.name,
+                            success: false,
+                            error: `ZIP file too large (max ${Math.round(ZIP_CLIENT_LIMIT / (1024*1024))}MB)`
+                        });
+                        continue;
+                    }
+                } else {
+                    // For unknown types, still enforce a reasonable cap
+                    if (file.size > 50 * 1024 * 1024) {
+                        uploadResults.push({
+                            filename: file.name,
+                            success: false,
+                            error: 'File too large (max 50MB)'
+                        });
+                        continue;
+                    }
                 }
-                
+
                 if (file.name.endsWith('.md')) {
                     const result = await this.processMarkdownFile(file);
                     uploadResults.push(result);
