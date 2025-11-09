@@ -109,7 +109,7 @@ class MLAQuizApp {
         await storageManager.initIndexedDB();
 
         // Initialize UI manager (theme, settings)
-        uiManager.initialize();
+        await uiManager.initialize();
 
         // Initialize orientation manager
         orientationManager.initialize();

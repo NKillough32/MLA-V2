@@ -22,9 +22,9 @@ export class UIManager {
     /**
      * Initialize UI Manager
      */
-    initialize() {
+    async initialize() {
         // Load saved settings
-        this.loadSettings();
+        await this.loadSettings();
         
         // Apply settings
         this.applyTheme();
@@ -45,9 +45,9 @@ export class UIManager {
     /**
      * Load saved settings
      */
-    loadSettings() {
-        this.fontSize = storage.getItem(STORAGE_KEYS.FONT_SIZE, DEFAULT_SETTINGS.fontSize);
-        const savedDarkMode = storage.getItem(STORAGE_KEYS.DARK_MODE);
+    async loadSettings() {
+        this.fontSize = await storage.getItem(STORAGE_KEYS.FONT_SIZE, DEFAULT_SETTINGS.fontSize);
+        const savedDarkMode = await storage.getItem(STORAGE_KEYS.DARK_MODE);
         
         if (savedDarkMode !== null) {
             this.darkMode = savedDarkMode === 'true';
@@ -64,8 +64,8 @@ export class UIManager {
     setupEventListeners() {
         // Listen for system theme changes
         if (window.matchMedia) {
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                const savedPreference = storage.getItem(STORAGE_KEYS.DARK_MODE);
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async (e) => {
+                const savedPreference = await storage.getItem(STORAGE_KEYS.DARK_MODE);
                 if (savedPreference === null) {
                     // Only auto-switch if user hasn't set a preference
                     this.setDarkMode(e.matches);
@@ -90,10 +90,10 @@ export class UIManager {
     /**
      * Set dark mode
      */
-    setDarkMode(enabled) {
+    async setDarkMode(enabled) {
         this.darkMode = enabled;
         this.applyTheme();
-        storage.setItem(STORAGE_KEYS.DARK_MODE, enabled.toString());
+        await storage.setItem(STORAGE_KEYS.DARK_MODE, enabled.toString());
         eventBus.emit(EVENTS.THEME_CHANGED, { darkMode: enabled });
         console.log(`🌓 Dark mode: ${enabled ? 'ON' : 'OFF'}`);
     }
@@ -121,7 +121,7 @@ export class UIManager {
     /**
      * Set font size
      */
-    setFontSize(size) {
+    async setFontSize(size) {
         const validSizes = Object.values(UI_CONFIG.FONT_SIZES);
         if (!validSizes.includes(size)) {
             console.warn(`Invalid font size: ${size}`);
@@ -130,7 +130,7 @@ export class UIManager {
 
         this.fontSize = size;
         this.applyFontSize();
-        storage.setItem(STORAGE_KEYS.FONT_SIZE, size);
+        await storage.setItem(STORAGE_KEYS.FONT_SIZE, size);
         
         // Update button states if they exist
         this.updateFontSizeButtons();
@@ -734,9 +734,9 @@ export class UIManager {
     /**
      * Add haptics toggle button to navbar
      */
-    addHapticsToggle() {
+    async addHapticsToggle() {
         // Load saved state
-        this.hapticsEnabled = storage.getItem('hapticsEnabled', DEFAULT_SETTINGS.vibrationEnabled);
+        this.hapticsEnabled = await storage.getItem('hapticsEnabled', DEFAULT_SETTINGS.vibrationEnabled);
         if (typeof this.hapticsEnabled === 'string') {
             this.hapticsEnabled = this.hapticsEnabled === 'true';
         }
@@ -794,9 +794,9 @@ export class UIManager {
     /**
      * Toggle haptics on/off
      */
-    toggleHaptics() {
+    async toggleHaptics() {
         this.hapticsEnabled = !this.hapticsEnabled;
-        storage.setItem('hapticsEnabled', this.hapticsEnabled.toString());
+        await storage.setItem('hapticsEnabled', this.hapticsEnabled.toString());
         analytics.setVibrationSetting(this.hapticsEnabled);
 
         const toggleBtn = document.getElementById('haptics-toggle');
