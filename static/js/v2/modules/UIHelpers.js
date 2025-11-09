@@ -55,6 +55,76 @@ export class UIHelpers {
     }
 
     /**
+     * Show toast notification
+     */
+    static showToast(message, type = 'info', duration = 3000) {
+        // Create toast container if it doesn't exist
+        let toastContainer = document.getElementById('toast-container');
+        if (!toastContainer) {
+            toastContainer = document.createElement('div');
+            toastContainer.id = 'toast-container';
+            toastContainer.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 10000;
+                pointer-events: none;
+            `;
+            document.body.appendChild(toastContainer);
+        }
+
+        // Create toast element
+        const toast = document.createElement('div');
+        const toastId = this.generateId('toast');
+        toast.id = toastId;
+        toast.style.cssText = `
+            background: ${type === 'success' ? '#4caf50' : type === 'warning' ? '#ff9800' : type === 'error' ? '#f44336' : '#2196f3'};
+            color: white;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            font-size: 14px;
+            max-width: 300px;
+            word-wrap: break-word;
+            pointer-events: auto;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        `;
+
+        // Add close button
+        toast.innerHTML = `
+            <span>${message}</span>
+            <span style="float: right; margin-left: 8px; cursor: pointer; font-weight: bold;">×</span>
+        `;
+
+        // Add click to dismiss
+        toast.addEventListener('click', () => {
+            toast.style.opacity = '0';
+            setTimeout(() => {
+                if (toast.parentNode) {
+                    toast.parentNode.removeChild(toast);
+                }
+            }, 300);
+        });
+
+        // Add to container
+        toastContainer.appendChild(toast);
+
+        // Auto remove after duration
+        setTimeout(() => {
+            if (toast.parentNode) {
+                toast.style.opacity = '0';
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 300);
+            }
+        }, duration);
+    }
+
+    /**
      * Debounce function
      */
     static debounce(func, wait = 300) {
