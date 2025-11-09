@@ -3224,11 +3224,29 @@ class MLAQuizApp {
                 const style = document.createElement('style');
                 style.id = 'pq-grid-styles';
                 style.textContent = `
-                    .pq-cell { font-weight: 600; }
-                    .pq-correct { background: #dcfce7; border-color: #10b981; }
-                    .pq-incorrect { background: #fee2e2; border-color: #ef4444; }
-                    .pq-flagged { box-shadow: 0 0 0 2px rgba(251, 113, 133, 0.08); }
-                    .pq-unanswered { background: var(--card-bg); opacity: 0.95; }
+                    /* Progress grid cells */
+                    #questionProgressGrid { margin-top: 8px; }
+                    .pq-cell { font-weight: 700; position: relative; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+
+                    /* Correct = green */
+                    .pq-correct { background: #16a34a; border-color: #15803d; color: #ffffff !important; }
+
+                    /* Incorrect = red */
+                    .pq-incorrect { background: #ef4444; border-color: #dc2626; color: #ffffff !important; }
+
+                    /* Answered but unknown (fallback) */
+                    .pq-answered { background: #60a5fa; border-color: #3b82f6; color: #ffffff; }
+
+                    /* Unanswered neutral */
+                    .pq-unanswered { background: var(--card-bg); border-color: rgba(0,0,0,0.06); color: inherit; }
+
+                    /* Flagged: pronounced red border + subtle glow + flag icon */
+                    .pq-flagged { border-width: 2px !important; border-style: solid !important; border-color: #ef4444 !important; box-shadow: 0 0 0 4px rgba(239,68,68,0.06); }
+                    .pq-flagged::after { content: "🚩"; position: absolute; top: -8px; right: -8px; font-size: 12px; }
+
+                    /* Make buttons visually consistent */
+                    #questionProgressGrid .pq-cell { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: transform 120ms ease, box-shadow 120ms ease; }
+                    #questionProgressGrid .pq-cell:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
                 `;
                 document.head.appendChild(style);
             }
