@@ -1091,7 +1091,7 @@ const ExtractedCalculators = {
                 
                 <div class="calc-input-group">
                     <label>Conversion Type:</label>
-                    <select id="unit-type" onchange="window.quizApp.updateUnitConverter()">
+                    <select id="unit-type" onchange="window.callUpdateUnitConverter()">
                         <option value="">Select conversion type</option>
                         <optgroup label="Laboratory Values - Common">
                             <option value="glucose">Glucose (mmol/L ⇄ mg/dL)</option>

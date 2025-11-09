@@ -3736,6 +3736,36 @@ window.MLAQuizApp = app;
 // Set window.quizApp to reference the main app (needed for onclick handlers)
 window.quizApp = app;
 
+// Safe wrappers for legacy templates that call unit converter helpers directly.
+// These try the main app proxy first, then fall back to ExtractedCalculators, and finally warn.
+window.callUpdateUnitConverter = function() {
+    try {
+        if (window.quizApp && typeof window.quizApp.updateUnitConverter === 'function') {
+            return window.quizApp.updateUnitConverter();
+        }
+        if (window.ExtractedCalculators && typeof window.ExtractedCalculators.updateUnitConverter === 'function') {
+            return window.ExtractedCalculators.updateUnitConverter();
+        }
+        console.warn('updateUnitConverter not available');
+    } catch (e) {
+        console.error('Error calling updateUnitConverter:', e);
+    }
+};
+
+window.callConvertUnits = function(unitType, sourceUnit) {
+    try {
+        if (window.quizApp && typeof window.quizApp.convertUnits === 'function') {
+            return window.quizApp.convertUnits(unitType, sourceUnit);
+        }
+        if (window.ExtractedCalculators && typeof window.ExtractedCalculators.convertUnits === 'function') {
+            return window.ExtractedCalculators.convertUnits(unitType, sourceUnit);
+        }
+        console.warn('convertUnits not available');
+    } catch (e) {
+        console.error('Error calling convertUnits:', e);
+    }
+};
+
 // Make sure quizManager is available on MLAQuizApp for template compatibility
 app.quizManager = quizManager;
 
