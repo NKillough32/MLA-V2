@@ -2947,6 +2947,26 @@ class MLAQuizApp {
             }
         }
 
+        // Ensure explanation text is rendered with normal font weight (not bold)
+        try {
+            if (!document.getElementById('explanation-styles')) {
+                const style = document.createElement('style');
+                style.id = 'explanation-styles';
+                style.textContent = `
+                    /* Force normal weight for explanation blocks to avoid bolding from rich text */
+                    .explanation-container .explanation-title,
+                    .explanation-container .explanation-content,
+                    .explanation-container strong,
+                    .explanation-container b {
+                        font-weight: normal !important;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        } catch (e) {
+            console.warn('Could not inject explanation styles', e);
+        }
+
         questionContainer.innerHTML = html;
 
         // Bind option click events
