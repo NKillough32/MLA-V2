@@ -130,13 +130,23 @@ export class OrientationManager {
     async toggleRotationLock() {
         if (this.screenLocked) {
             this.unlockOrientation();
+            this.exitFullscreen();
             return { locked: false };
         } else {
+            // First enter fullscreen, then lock orientation
+            await this.requestFullscreenForOrientationLock();
+            
+            // Wait a bit for fullscreen to activate
+            await new Promise(resolve => setTimeout(resolve, 300));
+            
+            // Now try to lock orientation
             const success = await this.lockToOptimalOrientation();
+            
             if (!success) {
-                await this.requestFullscreenForOrientationLock();
-                await this.lockToOptimalOrientation();
+                console.warn('⚠️ Failed to lock orientation even in fullscreen');
+                this.exitFullscreen();
             }
+            
             return { locked: this.screenLocked, lockedTo: this.lockedTo };
         }
     }

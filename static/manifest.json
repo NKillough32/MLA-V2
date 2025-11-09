@@ -7,7 +7,7 @@
     "display_override": ["standalone"],
     "background_color": "#f2f2f7",
     "theme_color": "#007AFF",
-    "orientation": "portrait-primary",
+    "orientation": "any",
     "scope": "/",
     "lang": "en",
     "categories": ["education", "medical", "productivity"],

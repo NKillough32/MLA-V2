@@ -679,6 +679,54 @@
             color: var(--text-primary) !important;
         }
 
+        /* Fullscreen Mode Styles - Fix overlapping navigation */
+        :fullscreen .navbar,
+        :-webkit-full-screen .navbar,
+        :-moz-full-screen .navbar,
+        :-ms-fullscreen .navbar {
+            padding: 8px 12px;
+            min-height: 48px;
+        }
+
+        :fullscreen .nav-left,
+        :fullscreen .nav-right,
+        :-webkit-full-screen .nav-left,
+        :-webkit-full-screen .nav-right,
+        :-moz-full-screen .nav-left,
+        :-moz-full-screen .nav-right {
+            gap: 6px;
+        }
+
+        :fullscreen .navbar button,
+        :fullscreen .font-controls button,
+        :fullscreen .haptics-controls button,
+        :-webkit-full-screen .navbar button,
+        :-webkit-full-screen .font-controls button,
+        :-webkit-full-screen .haptics-controls button,
+        :-moz-full-screen .navbar button,
+        :-moz-full-screen .font-controls button,
+        :-moz-full-screen .haptics-controls button {
+            padding: 4px 8px;
+            font-size: 12px;
+            min-width: 0;
+        }
+
+        :fullscreen .navbar h1,
+        :-webkit-full-screen .navbar h1,
+        :-moz-full-screen .navbar h1 {
+            font-size: 14px;
+        }
+
+        :fullscreen .font-controls,
+        :fullscreen .haptics-controls,
+        :-webkit-full-screen .font-controls,
+        :-webkit-full-screen .haptics-controls,
+        :-moz-full-screen .font-controls,
+        :-moz-full-screen .haptics-controls {
+            gap: 4px;
+        }
+
+
         [data-theme="dark"] input[type="file"] {
             background-color: var(--bg-tertiary) !important;
             color: var(--text-primary) !important;
