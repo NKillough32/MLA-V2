@@ -1141,12 +1141,6 @@ export class QuizManager {
             eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
             this.showUploadResults(uploadResults);
             
-            // Use V1 compatibility layer as fallback
-            if (window.quizApp && typeof window.quizApp.handleFileUpload === 'function') {
-                console.log('📤 Also running V1 upload handler for compatibility');
-                await window.quizApp.handleFileUpload(files);
-            }
-            
             // V2 implementation: upload to server
             for (let file of files) {
                 if (file.name.endsWith('.md') || file.name.endsWith('.zip')) {
@@ -1182,10 +1176,10 @@ export class QuizManager {
                     };
                     
                     // Add to uploaded quizzes in storage
-                    let uploadedQuizzes = this.storage.getItem('uploadedQuizzes', []);
+                    let uploadedQuizzes = this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
                     uploadedQuizzes = uploadedQuizzes.filter(q => q.name !== quizData.name);
                     uploadedQuizzes.push(quizData);
-                    this.storage.setItem('uploadedQuizzes', uploadedQuizzes);
+                    this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
                     
                     console.log(`✅ Quiz uploaded: ${quizData.name} (${quizData.questionCount} questions)`);
                 }

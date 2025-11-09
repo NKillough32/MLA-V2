@@ -35,15 +35,25 @@ export class GuidelinesManager {
 
         // Load guidelines database immediately
         console.log('📋 Loading guidelines database...');
-        if (!window.guidelinesDatabase) {
-            console.warn('⚠️ Guidelines database not loaded. Using empty database.');
-            this.guidelinesDatabase = {};
-        } else {
-            this.guidelinesDatabase = window.guidelinesDatabase;
+        const maxRetries = 5;
+        let retries = 0;
+        
+        while (retries < maxRetries) {
+            if (window.guidelinesDatabase) {
+                this.guidelinesDatabase = window.guidelinesDatabase;
+                console.log('✅ Guidelines database loaded with', Object.keys(this.guidelinesDatabase).length, 'guidelines');
+                break;
+            } else {
+                retries++;
+                console.log(`⏳ Waiting for guidelines database... (attempt ${retries}/${maxRetries})`);
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
         }
-
-        this.dataLoaded = true;
-        console.log('✅ Guidelines database loaded with', Object.keys(this.guidelinesDatabase).length, 'guidelines');
+        
+        if (retries >= maxRetries) {
+            console.warn('⚠️ Guidelines database not loaded after retries. Using empty database.');
+            this.guidelinesDatabase = {};
+        }
         
         this.initialized = true;
         console.log('✅ GuidelinesManager initialized with data loaded');

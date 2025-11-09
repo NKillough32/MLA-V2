@@ -29,11 +29,23 @@ export class LabValuesManager {
         
         // Load lab database immediately
         console.log('🧪 Loading lab database...');
-        if (typeof window.labDatabase !== 'undefined') {
-            this.labDatabase = window.labDatabase;
-            console.log(`✅ Lab database loaded: ${Object.keys(this.labDatabase).length} panels`);
-        } else {
-            console.warn('⚠️ Lab database not loaded. Using empty database.');
+        const maxRetries = 5;
+        let retries = 0;
+        
+        while (retries < maxRetries) {
+            if (typeof window.labDatabase !== 'undefined') {
+                this.labDatabase = window.labDatabase;
+                console.log(`✅ Lab database loaded: ${Object.keys(this.labDatabase).length} panels`);
+                break;
+            } else {
+                retries++;
+                console.log(`⏳ Waiting for lab database... (attempt ${retries}/${maxRetries})`);
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+        }
+        
+        if (retries >= maxRetries) {
+            console.warn('⚠️ Lab database not loaded after retries. Using empty database.');
             this.labDatabase = {};
         }
 

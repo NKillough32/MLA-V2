@@ -28,13 +28,27 @@ export class DrugReferenceManager {
         // Load recent drugs from storage (lightweight)
         this.recentDrugs = this.storage.getItem('recentDrugs', []);
         
-        // Load drug database immediately
+        // Load drug database immediately with retry mechanism
         console.log('🏥 Loading drug database...');
-        if (typeof window.drugDatabase !== 'undefined') {
-            this.drugDatabase = window.drugDatabase;
-            console.log(`✅ Drug database loaded: ${Object.keys(this.drugDatabase).length} drugs`);
-        } else {
-            console.warn('⚠️ Drug database not loaded. Using empty database.');
+        
+        // Retry up to 5 times with 100ms delay to ensure window.drugDatabase is available
+        let retries = 0;
+        const maxRetries = 5;
+        
+        while (retries < maxRetries) {
+            if (typeof window.drugDatabase !== 'undefined') {
+                this.drugDatabase = window.drugDatabase;
+                console.log(`✅ Drug database loaded: ${Object.keys(this.drugDatabase).length} drugs`);
+                break;
+            } else {
+                retries++;
+                console.log(`⏳ Waiting for drug database... (attempt ${retries}/${maxRetries})`);
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+        }
+        
+        if (!this.drugDatabase) {
+            console.warn('⚠️ Drug database not loaded after retries. Using empty database.');
             this.drugDatabase = {};
         }
 
