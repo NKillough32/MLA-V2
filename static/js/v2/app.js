@@ -7518,7 +7518,7 @@ class MLAQuizApp {
                 
                 <div class="calc-input-group">
                     <label>Conversion Type:</label>
-                    <select id="unit-type" onchange="window.callUpdateUnitConverter()">
+                    <select id="unit-type" onchange="window.quizApp.updateUnitConverter()">
                         <option value="">Select conversion type</option>
                         <optgroup label="Laboratory Values - Common">
                             <option value="glucose">Glucose (mmol/L ⇄ mg/dL)</option>
@@ -7588,12 +7588,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="5.5" step="0.1" 
-                               oninput="window.callConvertUnits('glucose', 'mmol')">
+                               oninput="window.quizApp.convertUnits('glucose', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="100" step="1" 
-                               oninput="window.callConvertUnits('glucose', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('glucose', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 18 | Normal fasting: 3.9-5.6 mmol/L (70-100 mg/dL)';
@@ -7604,12 +7604,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="5.0" step="0.1" 
-                               oninput="window.callConvertUnits('cholesterol', 'mmol')">
+                               oninput="window.quizApp.convertUnits('cholesterol', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="193" step="1" 
-                               oninput="window.callConvertUnits('cholesterol', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('cholesterol', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 38.67 | Target total cholesterol: <5.0 mmol/L (<193 mg/dL)';
@@ -7620,12 +7620,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>μmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="100" step="1" 
-                               oninput="window.callConvertUnits('creatinine', 'umol')">
+                               oninput="window.quizApp.convertUnits('creatinine', 'umol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="1.13" step="0.01" 
-                               oninput="window.callConvertUnits('creatinine', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('creatinine', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = μmol/L × 0.0113 | Normal: M 62-115 μmol/L, F 53-97 μmol/L';
@@ -7636,12 +7636,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>μmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="20" step="1" 
-                               oninput="window.callConvertUnits('bilirubin', 'umol')">
+                               oninput="window.quizApp.convertUnits('bilirubin', 'umol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="1.17" step="0.01" 
-                               oninput="window.callConvertUnits('bilirubin', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('bilirubin', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = μmol/L × 0.0585 | Normal: 5-20 μmol/L (0.3-1.2 mg/dL)';
@@ -7652,12 +7652,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>% (DCCT):</label>
                         <input type="number" id="unit-input-1" placeholder="6.5" step="0.1" 
-                               oninput="window.callConvertUnits('hba1c', 'percent')">
+                               oninput="window.quizApp.convertUnits('hba1c', 'percent')">
                     </div>
                     <div class="calc-input-group">
                         <label>mmol/mol (IFCC):</label>
                         <input type="number" id="unit-input-2" placeholder="48" step="1" 
-                               oninput="window.callConvertUnits('hba1c', 'mmol')">
+                               oninput="window.quizApp.convertUnits('hba1c', 'mmol')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mmol/mol = (% - 2.15) × 10.929 | Diabetes: ≥48 mmol/mol (≥6.5%)';
@@ -7668,12 +7668,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>Kilograms (kg):</label>
                         <input type="number" id="unit-input-1" placeholder="70" step="0.1" 
-                               oninput="window.callConvertUnits('weight', 'kg')">
+                               oninput="window.quizApp.convertUnits('weight', 'kg')">
                     </div>
                     <div class="calc-input-group">
                         <label>Pounds (lbs):</label>
                         <input type="number" id="unit-input-2" placeholder="154" step="0.1" 
-                               oninput="window.callConvertUnits('weight', 'lbs')">
+                               oninput="window.quizApp.convertUnits('weight', 'lbs')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 kg = 2.20462 lbs | 1 lb = 0.453592 kg';
@@ -7684,17 +7684,17 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>Centimeters (cm):</label>
                         <input type="number" id="unit-input-1" placeholder="175" step="0.1" 
-                               oninput="window.callConvertUnits('height', 'cm')">
+                               oninput="window.quizApp.convertUnits('height', 'cm')">
                     </div>
                     <div class="calc-input-group">
                         <label>Feet:</label>
                         <input type="number" id="unit-input-2" placeholder="5" step="1" 
-                               oninput="window.callConvertUnits('height', 'feet')">
+                               oninput="window.quizApp.convertUnits('height', 'feet')">
                     </div>
                     <div class="calc-input-group">
                         <label>Inches:</label>
                         <input type="number" id="unit-input-3" placeholder="9" step="1" 
-                               oninput="window.callConvertUnits('height', 'inches')">
+                               oninput="window.quizApp.convertUnits('height', 'inches')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 inch = 2.54 cm | 1 foot = 12 inches = 30.48 cm';
@@ -7705,12 +7705,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>Celsius (°C):</label>
                         <input type="number" id="unit-input-1" placeholder="37" step="0.1" 
-                               oninput="window.callConvertUnits('temperature', 'celsius')">
+                               oninput="window.quizApp.convertUnits('temperature', 'celsius')">
                     </div>
                     <div class="calc-input-group">
                         <label>Fahrenheit (°F):</label>
                         <input type="number" id="unit-input-2" placeholder="98.6" step="0.1" 
-                               oninput="window.callConvertUnits('temperature', 'fahrenheit')">
+                               oninput="window.quizApp.convertUnits('temperature', 'fahrenheit')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> °F = (°C × 9/5) + 32 | Normal body temp: 36.5-37.5°C (97.7-99.5°F)';
@@ -7732,17 +7732,33 @@ class MLAQuizApp {
                 infoText = '<strong>Conversion:</strong> 1 kPa = 7.50062 mmHg | Normal BP: <120/80 mmHg (<16/10.7 kPa)';
                 break;
                 
+            case 'pressure':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmHg:</label>
+                        <input type="number" id="unit-input-1" placeholder="120" step="1" 
+                               oninput="window.quizApp.convertUnits('pressure', 'mmhg')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>kPa:</label>
+                        <input type="number" id="unit-input-2" placeholder="16" step="0.1" 
+                               oninput="window.quizApp.convertUnits('pressure', 'kpa')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> 1 kPa = 7.50062 mmHg | Normal BP: <120/80 mmHg (<16/10.7 kPa)';
+                break;
+                
             case 'hemoglobin':
                 fieldsHtml = `
                     <div class="calc-input-group">
                         <label>g/dL:</label>
                         <input type="number" id="unit-input-1" placeholder="14.5" step="0.1" 
-                               oninput="window.callConvertUnits('hemoglobin', 'gdl')">
+                               oninput="window.quizApp.convertUnits('hemoglobin', 'gdl')">
                     </div>
                     <div class="calc-input-group">
                         <label>g/L:</label>
                         <input type="number" id="unit-input-2" placeholder="145" step="1" 
-                               oninput="window.callConvertUnits('hemoglobin', 'gl')">
+                               oninput="window.quizApp.convertUnits('hemoglobin', 'gl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> g/L = g/dL × 10 | Normal: M 130-180 g/L (13-18 g/dL), F 120-160 g/L (12-16 g/dL)';
@@ -7753,12 +7769,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="2.4" step="0.01" 
-                               oninput="window.callConvertUnits('calcium', 'mmol')">
+                               oninput="window.quizApp.convertUnits('calcium', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="9.6" step="0.1" 
-                               oninput="window.callConvertUnits('calcium', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('calcium', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 4.008 | Normal: 2.2-2.6 mmol/L (8.8-10.4 mg/dL) | Adjust for albumin';
@@ -7769,12 +7785,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="0.85" step="0.01" 
-                               oninput="window.callConvertUnits('magnesium', 'mmol')">
+                               oninput="window.quizApp.convertUnits('magnesium', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="2.07" step="0.01" 
-                               oninput="window.callConvertUnits('magnesium', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('magnesium', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 2.431 | Normal: 0.7-1.0 mmol/L (1.7-2.4 mg/dL)';
@@ -7785,12 +7801,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="1.0" step="0.01" 
-                               oninput="window.callConvertUnits('phosphate', 'mmol')">
+                               oninput="window.quizApp.convertUnits('phosphate', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="3.1" step="0.1" 
-                               oninput="window.callConvertUnits('phosphate', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('phosphate', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 3.097 | Normal: 0.8-1.5 mmol/L (2.5-4.5 mg/dL)';
@@ -7801,12 +7817,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L (Urea):</label>
                         <input type="number" id="unit-input-1" placeholder="5.0" step="0.1" 
-                               oninput="window.callConvertUnits('urea', 'mmol')">
+                               oninput="window.quizApp.convertUnits('urea', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL (BUN):</label>
                         <input type="number" id="unit-input-2" placeholder="14" step="1" 
-                               oninput="window.callConvertUnits('urea', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('urea', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> BUN (mg/dL) = Urea (mmol/L) × 2.8 | Normal: 2.5-7.8 mmol/L (7-22 mg/dL BUN)';
@@ -7817,12 +7833,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>g/L:</label>
                         <input type="number" id="unit-input-1" placeholder="40" step="1" 
-                               oninput="window.callConvertUnits('albumin', 'gl')">
+                               oninput="window.quizApp.convertUnits('albumin', 'gl')">
                     </div>
                     <div class="calc-input-group">
                         <label>g/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="4.0" step="0.1" 
-                               oninput="window.callConvertUnits('albumin', 'gdl')">
+                               oninput="window.quizApp.convertUnits('albumin', 'gdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> g/dL = g/L × 0.1 | Normal: 35-50 g/L (3.5-5.0 g/dL)';
@@ -7833,12 +7849,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="1.5" step="0.1" 
-                               oninput="window.callConvertUnits('triglycerides', 'mmol')">
+                               oninput="window.quizApp.convertUnits('triglycerides', 'mmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="133" step="1" 
-                               oninput="window.callConvertUnits('triglycerides', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('triglycerides', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 88.57 | Target: <1.7 mmol/L (<150 mg/dL)';
@@ -7849,12 +7865,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>μmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="350" step="10" 
-                               oninput="window.callConvertUnits('uric-acid', 'umol')">
+                               oninput="window.quizApp.convertUnits('uric-acid', 'umol')">
                     </div>
                     <div class="calc-input-group">
                         <label>mg/dL:</label>
                         <input type="number" id="unit-input-2" placeholder="5.9" step="0.1" 
-                               oninput="window.callConvertUnits('uric-acid', 'mgdl')">
+                               oninput="window.quizApp.convertUnits('uric-acid', 'mgdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = μmol/L × 0.0168 | Normal: M 200-430 μmol/L, F 140-360 μmol/L | Gout: >360 μmol/L';
@@ -7865,12 +7881,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>nmol/L:</label>
                         <input type="number" id="unit-input-1" placeholder="75" step="1" 
-                               oninput="window.callConvertUnits('vitamin-d', 'nmol')">
+                               oninput="window.quizApp.convertUnits('vitamin-d', 'nmol')">
                     </div>
                     <div class="calc-input-group">
                         <label>ng/mL:</label>
                         <input type="number" id="unit-input-2" placeholder="30" step="1" 
-                               oninput="window.callConvertUnits('vitamin-d', 'ngml')">
+                               oninput="window.quizApp.convertUnits('vitamin-d', 'ngml')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> ng/mL = nmol/L × 0.4 | Deficient: <25 nmol/L (<10 ng/mL) | Sufficient: >50 nmol/L (>20 ng/mL)';
@@ -7881,12 +7897,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>μg/L:</label>
                         <input type="number" id="unit-input-1" placeholder="100" step="1" 
-                               oninput="window.callConvertUnits('ferritin', 'ugl')">
+                               oninput="window.quizApp.convertUnits('ferritin', 'ugl')">
                     </div>
                     <div class="calc-input-group">
                         <label>ng/mL:</label>
                         <input type="number" id="unit-input-2" placeholder="100" step="1" 
-                               oninput="window.callConvertUnits('ferritin', 'ngml')">
+                               oninput="window.quizApp.convertUnits('ferritin', 'ngml')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 μg/L = 1 ng/mL (same value, different units) | Normal: M 30-400, F 15-150 μg/L';
@@ -7897,17 +7913,17 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>Milliliters (mL):</label>
                         <input type="number" id="unit-input-1" placeholder="450" step="10" 
-                               oninput="window.callConvertUnits('blood-volume', 'ml')">
+                               oninput="window.quizApp.convertUnits('blood-volume', 'ml')">
                     </div>
                     <div class="calc-input-group">
                         <label>Units (blood transfusion):</label>
                         <input type="number" id="unit-input-2" placeholder="1" step="0.1" 
-                               oninput="window.callConvertUnits('blood-volume', 'units')">
+                               oninput="window.quizApp.convertUnits('blood-volume', 'units')">
                     </div>
                     <div class="calc-input-group">
                         <label>Pints:</label>
                         <input type="number" id="unit-input-3" placeholder="0.95" step="0.01" 
-                               oninput="window.callConvertUnits('blood-volume', 'pints')">
+                               oninput="window.quizApp.convertUnits('blood-volume', 'pints')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 unit ≈ 450-500 mL ≈ 0.95 pints | 1 pint = 473 mL | RBC increases Hb by ~10 g/L per unit';
@@ -7918,12 +7934,12 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>INR:</label>
                         <input type="number" id="unit-input-1" placeholder="2.5" step="0.1" 
-                               oninput="window.callConvertUnits('inr', 'inr')">
+                               oninput="window.quizApp.convertUnits('inr', 'inr')">
                     </div>
                     <div class="calc-input-group">
                         <label>Prothrombin Time (%):</label>
                         <input type="number" id="unit-input-2" placeholder="40" step="1" 
-                               oninput="window.callConvertUnits('inr', 'percent')">
+                               oninput="window.quizApp.convertUnits('inr', 'percent')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> PT% = 100 ÷ INR | Normal INR: 0.8-1.2 (100-83%) | Therapeutic: AF 2-3, DVT/PE 2-3, Mechanical valve 2.5-3.5';
@@ -8089,14 +8105,14 @@ class MLAQuizApp {
             case 'temperature':
                 if (sourceUnit === 'celsius') {
                     value = parseFloat(input1.value);
-                    if (value !== undefined && value !== null && value !== '') {
+                    if (validNumber(value)) {
                         converted = (value * 9/5) + 32;
                         input2.value = converted.toFixed(1);
                         resultText = `${value}°C = ${converted.toFixed(1)}°F`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value !== undefined && value !== null && value !== '') {
+                    if (validNumber(value)) {
                         converted = (value - 32) * 5/9;
                         input1.value = converted.toFixed(1);
                         resultText = `${value}°F = ${converted.toFixed(1)}°C`;
