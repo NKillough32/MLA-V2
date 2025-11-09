@@ -1574,12 +1574,15 @@ export class QuizManager {
      * Calculate report data
      */
     calculateReportData() {
+        // Only consider questions that have been submitted (submittedAnswers holds boolean flags)
         const totalQuestions = Object.keys(this.submittedAnswers).length;
         let correctAnswers = 0;
-        
+
         Object.keys(this.submittedAnswers).forEach(questionIndex => {
             const question = this.questions[questionIndex];
-            if (question && this.submittedAnswers[questionIndex] === question.correct_answer) {
+            const selected = this.answers[questionIndex];
+            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
+            if (question && selected !== undefined && selected === correctIdx) {
                 correctAnswers++;
             }
         });
@@ -1616,17 +1619,19 @@ export class QuizManager {
     getIncorrectQuestions() {
         const incorrectQuestions = [];
         
+        // Iterate over submitted answers (keys) but read the chosen option index from this.answers
         Object.keys(this.submittedAnswers).forEach(questionIndex => {
             const index = parseInt(questionIndex);
             const question = this.questions[index];
-            const selectedAnswer = this.submittedAnswers[questionIndex];
-            
-            if (question && selectedAnswer !== question.correct_answer) {
+            const selectedAnswer = this.answers[questionIndex];
+            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
+
+            if (question && selectedAnswer !== undefined && selectedAnswer !== correctIdx) {
                 incorrectQuestions.push({
                     index: index,
                     question: question,
                     yourAnswer: selectedAnswer,
-                    correctAnswer: question.correct_answer
+                    correctAnswer: correctIdx
                 });
             }
         });
@@ -1643,13 +1648,15 @@ export class QuizManager {
         Object.keys(this.submittedAnswers).forEach(questionIndex => {
             const index = parseInt(questionIndex);
             const question = this.questions[index];
-            
+            const selectedAnswer = this.answers[questionIndex];
+            const correctIdx = question ? (question.correct_answer !== undefined ? question.correct_answer : question.correctAnswer) : undefined;
+
             if (question) {
                 answered.push({
                     index: index,
                     question: question,
-                    yourAnswer: this.submittedAnswers[questionIndex],
-                    correctAnswer: question.correct_answer
+                    yourAnswer: selectedAnswer,
+                    correctAnswer: correctIdx
                 });
             }
         });
