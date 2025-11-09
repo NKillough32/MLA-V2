@@ -6558,6 +6558,40 @@
         .btn-secondary:hover {
             background: #636366;
         }
+
+        /* Calculator Submit Buttons - Enhanced Size */
+        .calc-button,
+        button[onclick*="calculate"],
+        button[onclick*="Calculate"] {
+            background: linear-gradient(135deg, #007AFF, #0056cc);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 16px 24px;
+            min-height: 48px;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            margin: 12px 0;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+        }
+
+        .calc-button:hover,
+        button[onclick*="calculate"]:hover,
+        button[onclick*="Calculate"]:hover {
+            background: linear-gradient(135deg, #0056cc, #003d99);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.4);
+        }
+
+        .calc-button:active,
+        button[onclick*="calculate"]:active,
+        button[onclick*="Calculate"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 122, 255, 0.3);
+        }
         
         /* Progress Bar */
         .progress-container {
