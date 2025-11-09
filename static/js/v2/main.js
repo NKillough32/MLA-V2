@@ -157,6 +157,86 @@ class MLAQuizApp {
         console.log(`   - Interpretation Tools: ${this.interpretationToolsManager.getStatistics().totalTools}`);
         console.log(`   - Treatment Ladders: ${this.laddersManager.getStatistics().totalLadders}`);
         
+        // Preload medical tool content upfront to undo lazy loading
+        setTimeout(() => {
+            console.log('📄 Preloading medical tool content upfront...');
+            
+            const medicalToolsPanel = document.getElementById('medical-tools-panel');
+            if (medicalToolsPanel) {
+                // Preload drug reference content
+                const drugPanel = document.getElementById('drug-panel');
+                if (drugPanel) {
+                    console.log('🏥 Preloading drug reference content...');
+                    this.loadDrugReferenceContent(drugPanel);
+                }
+                
+                // Preload lab values content
+                const labPanel = document.getElementById('lab-panel');
+                if (labPanel) {
+                    console.log('🧪 Preloading lab values content...');
+                    this.loadLabValuesContent(labPanel);
+                }
+                
+                // Preload guidelines content
+                const guidelinesPanel = document.getElementById('guidelines-panel');
+                if (guidelinesPanel) {
+                    console.log('📋 Preloading guidelines content...');
+                    this.loadGuidelinesContent(guidelinesPanel);
+                }
+                
+                // Preload mnemonics content
+                const mnemonicsPanel = document.getElementById('mnemonics-panel');
+                if (mnemonicsPanel) {
+                    console.log('🧠 Preloading mnemonics content...');
+                    this.loadMnemonicsContent(mnemonicsPanel);
+                }
+                
+                // Preload differential diagnosis content
+                const differentialPanel = document.getElementById('differential-panel');
+                if (differentialPanel) {
+                    console.log('🔍 Preloading differential diagnosis content...');
+                    this.loadDifferentialDxContent(differentialPanel);
+                }
+                
+                // Preload triads content
+                const triadsPanel = document.getElementById('triads-panel');
+                if (triadsPanel) {
+                    console.log('🔺 Preloading clinical triads content...');
+                    this.loadTriadsContent(triadsPanel);
+                }
+                
+                // Preload examination content
+                const examinationPanel = document.getElementById('examination-panel');
+                if (examinationPanel) {
+                    console.log('👨‍⚕️ Preloading examination content...');
+                    this.loadExaminationContent(examinationPanel);
+                }
+                
+                // Preload emergency protocols content
+                const emergencyProtocolsPanel = document.getElementById('emergency-protocols-panel');
+                if (emergencyProtocolsPanel) {
+                    console.log('🚨 Preloading emergency protocols content...');
+                    this.loadEmergencyProtocolsContent(emergencyProtocolsPanel);
+                }
+                
+                // Preload interpretation tools content
+                const interpretationPanel = document.getElementById('interpretation-panel');
+                if (interpretationPanel) {
+                    console.log('📊 Preloading interpretation tools content...');
+                    this.loadInterpretationToolsContent(interpretationPanel);
+                }
+                
+                // Preload ladders content
+                const laddersPanel = document.getElementById('ladders-panel');
+                if (laddersPanel) {
+                    console.log('🪜 Preloading treatment ladders content...');
+                    this.loadLaddersContent(laddersPanel);
+                }
+                
+                console.log('✅ All medical tool content preloaded');
+            }
+        }, 1000); // Delay to ensure DOM is ready
+        
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
         // This will be called from index.html after V1's app.js loads
         console.log('✅ V2 Integration ready (awaiting V1 app instance)');

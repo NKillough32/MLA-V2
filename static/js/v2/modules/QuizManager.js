@@ -160,6 +160,12 @@ export class QuizManager {
         // For split storage quizzes, reconstruct the data
         const reconstructedQuizzes = [];
         
+        // Ensure quizzes is still an array after merge
+        if (!Array.isArray(quizzes)) {
+            console.error('❌ Quizzes became non-array after merge, resetting');
+            quizzes = [];
+        }
+        
         for (const quiz of quizzes) {
             // If this entry already contains full quiz data, accept it
             if (quiz.questions && Array.isArray(quiz.questions)) {
