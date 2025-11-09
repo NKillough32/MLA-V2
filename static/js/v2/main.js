@@ -3030,6 +3030,12 @@ class MLAQuizApp {
         this.updateQuizButtons(data);
         // Update button states
         this.updateQuizButtons(data);
+        // Render the V1-style question progress grid in the sidebar
+        try {
+            this.renderQuestionProgressGrid?.(data);
+        } catch (err) {
+            console.warn('Could not render question progress grid:', err);
+        }
     }
 
     /**
@@ -3141,6 +3147,93 @@ class MLAQuizApp {
                     </div>
                 </div>
             `;
+        }
+    }
+
+    /**
+     * Render a V1-style clickable question-number grid in the sidebar
+     * Shows per-question state: unanswered / correct / incorrect / flagged
+     */
+    renderQuestionProgressGrid(data) {
+        try {
+            const container = document.getElementById('sidebarContent');
+            if (!container) return;
+
+            const total = data.total || quizManager.questions.length || 0;
+            if (total === 0) {
+                container.innerHTML = '';
+                return;
+            }
+
+            // Build grid
+            let html = '<div id="questionProgressGrid" class="question-progress-grid" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:6px;">';
+
+            for (let i = 0; i < total; i++) {
+                const isSubmitted = !!quizManager.submittedAnswers[i];
+                const yourAnswer = quizManager.answers[i];
+                const q = quizManager.questions[i];
+                const correctIdx = q ? (q.correct_answer !== undefined ? q.correct_answer : q.correctAnswer) : undefined;
+                const isFlagged = quizManager.isFlagged?.(i) || false;
+
+                let classes = 'pq-cell';
+                let title = `Question ${i + 1}`;
+                if (isFlagged) {
+                    classes += ' pq-flagged';
+                    title += ' • Flagged';
+                }
+                if (isSubmitted) {
+                    if (yourAnswer !== undefined && correctIdx !== undefined) {
+                        if (yourAnswer === correctIdx) {
+                            classes += ' pq-correct';
+                            title += ' • Correct';
+                        } else {
+                            classes += ' pq-incorrect';
+                            title += ' • Incorrect';
+                        }
+                    } else {
+                        classes += ' pq-answered';
+                        title += ' • Answered';
+                    }
+                } else {
+                    classes += ' pq-unanswered';
+                    title += ' • Unanswered';
+                }
+
+                html += `
+                    <button class="${classes}" data-qindex="${i}" title="${title}" style="padding:8px; border-radius:6px; border:1px solid var(--border); background:var(--card-bg); cursor:pointer;">${i + 1}</button>
+                `;
+            }
+
+            html += '</div>';
+            container.innerHTML = html;
+
+            // Bind clicks
+            const cells = container.querySelectorAll('#questionProgressGrid .pq-cell');
+            cells.forEach(cell => {
+                const idx = parseInt(cell.getAttribute('data-qindex'));
+                cell.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (typeof quizManager.goToQuestion === 'function') {
+                        quizManager.goToQuestion(idx);
+                    }
+                });
+            });
+
+            // Small inline styles for state classes (only added once)
+            if (!document.getElementById('pq-grid-styles')) {
+                const style = document.createElement('style');
+                style.id = 'pq-grid-styles';
+                style.textContent = `
+                    .pq-cell { font-weight: 600; }
+                    .pq-correct { background: #dcfce7; border-color: #10b981; }
+                    .pq-incorrect { background: #fee2e2; border-color: #ef4444; }
+                    .pq-flagged { box-shadow: 0 0 0 2px rgba(251, 113, 133, 0.08); }
+                    .pq-unanswered { background: var(--card-bg); opacity: 0.95; }
+                `;
+                document.head.appendChild(style);
+            }
+        } catch (error) {
+            console.warn('renderQuestionProgressGrid error:', error);
         }
     }
 
