@@ -1879,22 +1879,22 @@ class MLAQuizApp {
                     ${diagnosis.timeToTreat ? `<span class="time-to-treat">⏱️ ${diagnosis.timeToTreat}</span>` : ''}
                 </div>
                 <div class="diagnosis-info">
-                    <div class="info-section" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
-                        <h4>🎯 Clinical Features</h4>
+                    <div class="info-section info-section-features" style="border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4 style="color: #0ea5e9;">🎯 Clinical Features</h4>
                         <p>${diagnosis.features}</p>
                     </div>
-                    <div class="info-section" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
-                        <h4>🔬 Diagnostic Tests</h4>
+                    <div class="info-section info-section-tests" style="border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4 style="color: #22c55e;">🔬 Diagnostic Tests</h4>
                         <p>${diagnosis.tests}</p>
                     </div>
                     ${diagnosis.differentiatingFeatures ? `
-                    <div class="info-section" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
-                        <h4>🔍 Key Differentiating Features</h4>
+                    <div class="info-section info-section-diff" style="border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4 style="color: #eab308;">🔍 Key Differentiating Features</h4>
                         <p>${diagnosis.differentiatingFeatures}</p>
                     </div>` : ''}
                     ${diagnosis.clinicalPearls ? `
-                    <div class="info-section" style="background: #fff8e1; border-left: 4px solid #ffa726; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
-                        <h4>💎 Clinical Pearls</h4>
+                    <div class="info-section info-section-pearls" style="border-left: 4px solid #ffa726; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4 style="color: #ffa726;">💎 Clinical Pearls</h4>
                         <p>${diagnosis.clinicalPearls}</p>
                     </div>` : ''}
                 </div>
