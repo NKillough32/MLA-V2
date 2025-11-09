@@ -802,11 +802,15 @@ export class QuizManager {
         // Update the correct answer index to match the new position
         const correctOptionPair = optionPairs.find(pair => pair.originalIndex === originalCorrectAnswer);
         if (correctOptionPair) {
-            shuffledQuestion.correct_answer = optionPairs.indexOf(correctOptionPair);
-            console.log(`🔀 Shuffled question: original answer index ${originalCorrectAnswer} → new index ${shuffledQuestion.correct_answer}`);
+            const newCorrectIndex = optionPairs.indexOf(correctOptionPair);
+            shuffledQuestion.correct_answer = newCorrectIndex;
+            // Also update correctAnswer (camelCase) to ensure consistency
+            shuffledQuestion.correctAnswer = newCorrectIndex;
+            console.log(`🔀 Shuffled question: original answer index ${originalCorrectAnswer} → new index ${newCorrectIndex}`);
         } else {
             console.error('❌ Failed to find correct option pair for question:', question.title);
             shuffledQuestion.correct_answer = 0; // Default to first option
+            shuffledQuestion.correctAnswer = 0;
         }
         
         // Store the mapping for this question so we can maintain consistency
