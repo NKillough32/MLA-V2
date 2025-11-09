@@ -240,6 +240,9 @@ export class QuizManager {
         this.quizStartTime = Date.now();
         this.questionStartTime = Date.now();
         
+        // Scroll to top when quiz starts
+        this.scrollToTop();
+        
         // Render first question
         this.currentQuestionIndex = 0;
         this.renderQuestion();
