@@ -3760,9 +3760,12 @@ window.callUpdateUnitConverter = function() {
             console.debug('-> calling updateUnitConverter on window.ExtractedCalculators');
             return window.ExtractedCalculators.updateUnitConverter();
         }
-        if (typeof window.updateUnitConverter === 'function') {
-            console.debug('-> calling global updateUnitConverter');
+        // Avoid calling the global alias if it points back to this wrapper (would recurse)
+        if (typeof window.updateUnitConverter === 'function' && window.updateUnitConverter !== window.callUpdateUnitConverter) {
+            console.debug('-> calling global updateUnitConverter (non-wrapper)');
             return window.updateUnitConverter();
+        } else if (typeof window.updateUnitConverter === 'function') {
+            console.debug('-> global updateUnitConverter exists but points to wrapper; skipping to avoid recursion');
         }
         console.warn('updateUnitConverter not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
@@ -3788,9 +3791,12 @@ window.callConvertUnits = function(unitType, sourceUnit) {
             console.debug('-> calling convertUnits on window.ExtractedCalculators');
             return window.ExtractedCalculators.convertUnits(unitType, sourceUnit);
         }
-        if (typeof window.convertUnits === 'function') {
-            console.debug('-> calling global convertUnits');
+        // Avoid calling the global alias if it points back to this wrapper (would recurse)
+        if (typeof window.convertUnits === 'function' && window.convertUnits !== window.callConvertUnits) {
+            console.debug('-> calling global convertUnits (non-wrapper)');
             return window.convertUnits(unitType, sourceUnit);
+        } else if (typeof window.convertUnits === 'function') {
+            console.debug('-> global convertUnits exists but points to wrapper; skipping to avoid recursion');
         }
         console.warn('convertUnits not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
