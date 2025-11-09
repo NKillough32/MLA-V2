@@ -3769,6 +3769,145 @@
         [data-theme="dark"] .protocol-header h4 {
             color: #fff;
         }
+
+        /* Emergency Protocol Card Styles */
+        .protocol-card {
+            background: white;
+            border: 1px solid #e5e5ea;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .protocol-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .protocol-card.emergency-card {
+            border-left: 4px solid #ef4444;
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(251, 146, 60, 0.05) 100%);
+        }
+
+        .protocol-card .protocol-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .protocol-card .protocol-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #dc2626;
+            flex: 1;
+        }
+
+        .protocol-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .protocol-summary {
+            margin-bottom: 12px;
+        }
+
+        .protocol-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .protocol-info strong {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+        .protocol-guideline {
+            font-size: 13px;
+            color: #666;
+            padding: 8px 12px;
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 3px solid #ef4444;
+            border-radius: 4px;
+        }
+
+        .protocol-guideline strong {
+            color: #dc2626;
+        }
+
+        .protocol-card .protocol-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .view-protocol {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .view-protocol:hover {
+            background: linear-gradient(135deg, #b91c1c, #991b1b);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+        }
+
+        /* Dark Mode Emergency Protocol Cards */
+        [data-theme="dark"] .protocol-card {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .protocol-card.emergency-card {
+            border-left: 4px solid #ef4444;
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(251, 146, 60, 0.15) 100%);
+        }
+
+        [data-theme="dark"] .protocol-card:hover {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(251, 146, 60, 0.2) 100%);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        [data-theme="dark"] .protocol-card .protocol-header h3 {
+            color: #f87171;
+        }
+
+        [data-theme="dark"] .protocol-info {
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .protocol-info strong {
+            color: #f87171;
+        }
+
+        [data-theme="dark"] .protocol-guideline {
+            background: rgba(239, 68, 68, 0.15);
+            border-left-color: #ef4444;
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .protocol-guideline strong {
+            color: #f87171;
+        }
+
+        [data-theme="dark"] .view-protocol {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        [data-theme="dark"] .view-protocol:hover {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            box-shadow: 0 4px 8px rgba(239, 68, 68, 0.4);
+        }
         
         .protocol-actions {
             display: flex;
@@ -4008,6 +4147,14 @@
             color: #1c1c1e;
             font-weight: 600;
             margin-right: 8px;
+        }
+
+        .differential-details {
+            margin-top: 8px;
+        }
+
+        .differential-modal .modal-content {
+            color: #1c1c1e;
         }
 
         .detail-meta {
@@ -4667,12 +4814,15 @@
         }
 
         [data-theme="dark"] .differential-details {
-            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-content {
             color: var(--text-primary);
         }
 
         [data-theme="dark"] .differentials-section {
-            background: var(--bg-primary);
+            background: transparent;
         }
 
         [data-theme="dark"] .differentials-section h3 {
