@@ -1532,12 +1532,15 @@ export class QuizManager {
                         background: #f0f9ff;
                         border-left: 4px solid #0ea5e9;
                         border-radius: 4px;
+                        font-weight: normal; /* ensure explanation block uses normal weight */
                     }
+                    .explanation-section strong { font-weight: normal; } /* label inside section should not be bold */
                     .explanation-text {
                         margin-top: 5px;
                         font-size: 14px;
                         line-height: 1.6;
                         white-space: pre-wrap;
+                        font-weight: normal; /* force normal weight for explanation content */
                     }
                     .progress-note {
                         background: #fef3c7;
