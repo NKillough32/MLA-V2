@@ -2280,45 +2280,47 @@ const ExtractedCalculators = {
                 
                 <div class="calc-input-group">
                     <label>Clinical Features:</label>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-unable-complete">
-                        <label for="asthma-unable-complete">Unable to complete sentences in one breath</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-pulse-110">
-                        <label for="asthma-pulse-110">Pulse ≥110 bpm</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-rr-25">
-                        <label for="asthma-rr-25">Respiratory rate ≥25/min</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-pulse-paradoxus">
-                        <label for="asthma-pulse-paradoxus">Pulsus paradoxus present</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-silent-chest">
-                        <label for="asthma-silent-chest">Silent chest / poor air entry</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-cyanosis">
-                        <label for="asthma-cyanosis">Cyanosis</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-exhaustion">
-                        <label for="asthma-exhaustion">Exhaustion / confusion / altered consciousness</label>
-                    </div>
-                    
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="asthma-bradycardia">
-                        <label for="asthma-bradycardia">Bradycardia / hypotension / arrhythmia</label>
+
+                    <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-unable-complete" style="margin-top:4px;">
+                            <span>Unable to complete sentences in one breath</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-pulse-110" style="margin-top:4px;">
+                            <span>Pulse ≥110 bpm</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-rr-25" style="margin-top:4px;">
+                            <span>Respiratory rate ≥25/min</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-pulse-paradoxus" style="margin-top:4px;">
+                            <span>Pulsus paradoxus present</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-silent-chest" style="margin-top:4px;">
+                            <span>Silent chest / poor air entry</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-cyanosis" style="margin-top:4px;">
+                            <span>Cyanosis</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-exhaustion" style="margin-top:4px;">
+                            <span>Exhaustion / confusion / altered consciousness</span>
+                        </label>
+
+                        <label style="display:flex;align-items:flex-start;gap:10px;">
+                            <input type="checkbox" id="asthma-bradycardia" style="margin-top:4px;">
+                            <span>Bradycardia / hypotension / arrhythmia</span>
+                        </label>
                     </div>
                 </div>
                 
