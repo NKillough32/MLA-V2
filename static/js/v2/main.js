@@ -3741,9 +3741,20 @@ window.quizApp = app;
 window.callUpdateUnitConverter = function() {
     try {
         console.debug('callUpdateUnitConverter() invoked');
-        if (window.quizApp && typeof window.quizApp.updateUnitConverter === 'function') {
-            console.debug('-> calling updateUnitConverter on window.quizApp');
-            return window.quizApp.updateUnitConverter();
+        // Avoid calling back into this wrapper via the proxy which may return the same
+        // wrapper function (causing infinite recursion). Read the property and
+        // only invoke it if it's a different function.
+        if (window.quizApp) {
+            try {
+                const qaMethod = window.quizApp.updateUnitConverter;
+                if (typeof qaMethod === 'function' && qaMethod !== window.callUpdateUnitConverter) {
+                    console.debug('-> calling updateUnitConverter on window.quizApp (native implementation)');
+                    return qaMethod.call(window.quizApp);
+                }
+            } catch (e) {
+                // Accessing the proxy may throw or return the wrapper; fall through to other fallbacks
+                console.debug('-> unable to call updateUnitConverter on window.quizApp directly:', e && e.message);
+            }
         }
         if (window.ExtractedCalculators && typeof window.ExtractedCalculators.updateUnitConverter === 'function') {
             console.debug('-> calling updateUnitConverter on window.ExtractedCalculators');
@@ -3762,9 +3773,16 @@ window.callUpdateUnitConverter = function() {
 window.callConvertUnits = function(unitType, sourceUnit) {
     try {
         console.debug('callConvertUnits() invoked for', unitType, sourceUnit);
-        if (window.quizApp && typeof window.quizApp.convertUnits === 'function') {
-            console.debug('-> calling convertUnits on window.quizApp');
-            return window.quizApp.convertUnits(unitType, sourceUnit);
+        if (window.quizApp) {
+            try {
+                const qaMethod = window.quizApp.convertUnits;
+                if (typeof qaMethod === 'function' && qaMethod !== window.callConvertUnits) {
+                    console.debug('-> calling convertUnits on window.quizApp (native implementation)');
+                    return qaMethod.call(window.quizApp, unitType, sourceUnit);
+                }
+            } catch (e) {
+                console.debug('-> unable to call convertUnits on window.quizApp directly:', e && e.message);
+            }
         }
         if (window.ExtractedCalculators && typeof window.ExtractedCalculators.convertUnits === 'function') {
             console.debug('-> calling convertUnits on window.ExtractedCalculators');
