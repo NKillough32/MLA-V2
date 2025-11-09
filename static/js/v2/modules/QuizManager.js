@@ -1205,6 +1205,9 @@ export class QuizManager {
      */
     
     async processMarkdownFile(file) {
+        // Show loading feedback for markdown files
+        UIHelpers.showToast(`📄 Processing markdown file: ${file.name}...`, 'info', 0);
+        
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             
@@ -1214,11 +1217,16 @@ export class QuizManager {
                     const questions = this.parseMarkdownQuiz(content);
                     
                     if (questions.length === 0) {
+                        UIHelpers.showToast(`❌ No valid questions found in ${file.name}`, 'error');
                         reject(new Error('No valid questions found in markdown file'));
                         return;
                     }
                     
                     const quizName = file.name.replace('.md', '');
+                    
+                    // Clear loading toast and show success
+                    UIHelpers.showToast(`✅ Markdown file processed: ${quizName} (${questions.length} questions)`, 'success');
+                    
                     resolve({
                         name: quizName,
                         questions,
@@ -1227,11 +1235,17 @@ export class QuizManager {
                         uploadTimestamp: Date.now()
                     });
                 } catch (error) {
+                    // Clear loading toast and show error
+                    UIHelpers.showToast(`❌ Failed to parse markdown file: ${error.message}`, 'error');
                     reject(new Error(`Failed to parse markdown: ${error.message}`));
                 }
             };
             
-            reader.onerror = () => reject(new Error('Failed to read file'));
+            reader.onerror = () => {
+                UIHelpers.showToast(`❌ Failed to read file: ${file.name}`, 'error');
+                reject(new Error('Failed to read file'));
+            };
+            
             reader.readAsText(file);
         });
     }
@@ -1286,34 +1300,46 @@ export class QuizManager {
     }
 
     async processZipFile(file) {
-        // For zip files, we'll need JSZip library or send to server
-        // This is a placeholder for server-side processing
-        const formData = new FormData();
-        formData.append('quiz_file', file);
+        // Show loading feedback for zip files
+        UIHelpers.showToast(`📦 Processing ZIP file: ${file.name}...`, 'info', 0);
         
-        const response = await fetch('/api/upload-quiz', {
-            method: 'POST',
-            body: formData
-        });
-        
-        if (!response.ok) {
-            throw new Error(`Upload failed: ${response.status}`);
+        try {
+            // For zip files, we'll need JSZip library or send to server
+            // This is a placeholder for server-side processing
+            const formData = new FormData();
+            formData.append('quiz_file', file);
+            
+            const response = await fetch('/api/upload-quiz', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Upload failed: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            if (!data.success) {
+                throw new Error(data.error || 'Upload failed');
+            }
+            
+            // Clear loading toast and show success
+            UIHelpers.showToast(`✅ ZIP file processed successfully: ${data.quiz_name}`, 'success');
+            
+            return {
+                name: data.quiz_name,
+                questions: data.questions,
+                questionCount: data.total_questions,
+                isUploaded: true,
+                images: data.images || {},
+                uploadTimestamp: Date.now()
+            };
+        } catch (error) {
+            // Clear loading toast and show error
+            UIHelpers.showToast(`❌ Failed to process ZIP file: ${error.message}`, 'error');
+            throw error;
         }
-        
-        const data = await response.json();
-        
-        if (!data.success) {
-            throw new Error(data.error || 'Upload failed');
-        }
-        
-        return {
-            name: data.quiz_name,
-            questions: data.questions,
-            questionCount: data.total_questions,
-            isUploaded: true,
-            images: data.images || {},
-            uploadTimestamp: Date.now()
-        };
     }
 
     showUploadResults(results) {

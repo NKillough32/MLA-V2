@@ -22,32 +22,13 @@ export class LabValuesManager {
             return;
         }
 
-        console.log('🧪 Initializing LabValuesManager (lazy loading)...');
+        console.log('🧪 Initializing LabValuesManager...');
         
         // Load recent labs from storage (lightweight)
         this.recentLabs = this.storage.getItem('recentLabs', []);
         
-        this.eventBus.emit('LAB_MANAGER_READY', { 
-            panelCount: 0, // Will be updated when data is loaded
-            testCount: 0,  // Will be updated when data is loaded
-            lazyLoaded: true
-        });
-        
-        this.initialized = true;
-        console.log('✅ LabValuesManager initialized (data will be loaded on first use)');
-    }
-
-    /**
-     * Load lab database lazily when first needed
-     */
-    async loadLabData() {
-        if (this.dataLoaded) {
-            return;
-        }
-
+        // Load lab database immediately
         console.log('🧪 Loading lab database...');
-        
-        // Load lab database from window.labDatabase (loaded from labDatabase.js)
         if (typeof window.labDatabase !== 'undefined') {
             this.labDatabase = window.labDatabase;
             console.log(`✅ Lab database loaded: ${Object.keys(this.labDatabase).length} panels`);
@@ -62,17 +43,27 @@ export class LabValuesManager {
             sum + Object.keys(panel.values || {}).length, 0
         );
         
+        this.eventBus.emit('LAB_MANAGER_READY', { 
+            panelCount: Object.keys(this.labDatabase).length,
+            testCount: totalTests,
+            lazyLoaded: false
+        });
+        
         this.eventBus.emit('LAB_DATA_LOADED', { 
             panelCount: Object.keys(this.labDatabase).length,
             testCount: totalTests
         });
+        
+        this.initialized = true;
+        console.log('✅ LabValuesManager initialized with data loaded');
     }
+
+
 
     /**
      * Search labs by panel name or test name
      */
     async searchLabs(query) {
-        await this.loadLabData(); // Ensure data is loaded
         
         if (!this.labDatabase) return [];
         
@@ -117,7 +108,6 @@ export class LabValuesManager {
      * Get all lab panels
      */
     async getPanels() {
-        await this.loadLabData(); // Ensure data is loaded
         
         if (!this.labDatabase) return [];
         
@@ -132,7 +122,6 @@ export class LabValuesManager {
      * Get a specific panel with all its tests
      */
     async getPanel(panelKey) {
-        await this.loadLabData(); // Ensure data is loaded
         
         if (!this.labDatabase || !this.labDatabase[panelKey]) return null;
         
@@ -157,7 +146,6 @@ export class LabValuesManager {
      * Get a specific test
      */
     async getTest(panelKey, testKey) {
-        await this.loadLabData(); // Ensure data is loaded
         
         if (!this.labDatabase || !this.labDatabase[panelKey] || 
             !this.labDatabase[panelKey].values[testKey]) return null;
@@ -205,7 +193,6 @@ export class LabValuesManager {
      * Get recent labs
      */
     async getRecentLabs() {
-        await this.loadLabData(); // Ensure data is loaded
         
         return this.recentLabs.map(item => {
             if (item.type === 'panel') {
@@ -246,7 +233,6 @@ export class LabValuesManager {
      * Get panels by category
      */
     async getPanelsByCategory(categoryId) {
-        await this.loadLabData(); // Ensure data is loaded
         
         const category = this.getCategories().find(cat => cat.id === categoryId);
         
@@ -274,7 +260,6 @@ export class LabValuesManager {
      * Get panel count
      */
     async getPanelCount() {
-        await this.loadLabData(); // Ensure data is loaded
         
         return this.labDatabase ? Object.keys(this.labDatabase).length : 0;
     }
@@ -344,7 +329,6 @@ export class LabValuesManager {
      * Get total test count
      */
     async getTestCount() {
-        await this.loadLabData(); // Ensure data is loaded
         
         if (!this.labDatabase) return 0;
         return Object.values(this.labDatabase).reduce((sum, panel) => 
