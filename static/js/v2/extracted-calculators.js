@@ -2281,60 +2281,76 @@ const ExtractedCalculators = {
                 <div class="calc-input-group">
                     <label>Clinical Features:</label>
 
-                    <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-unable-complete" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Unable to complete sentences in one breath</span>
+                    <div class="calc-checkbox-grid" style="display:flex;flex-wrap:wrap;gap:8px 12px;align-items:flex-start;">
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-unable-complete">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Unable to complete sentences in one breath</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-pulse-110" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Pulse ≥110 bpm</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-pulse-110">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Pulse ≥110 bpm</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-rr-25" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Respiratory rate ≥25/min</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-rr-25">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Respiratory rate ≥25/min</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-pulse-paradoxus" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Pulsus paradoxus present</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-pulse-paradoxus">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Pulsus paradoxus present</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-silent-chest" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Silent chest / poor air entry</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-silent-chest">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Silent chest / poor air entry</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-cyanosis" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Cyanosis</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-cyanosis">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Cyanosis</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-exhaustion" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Exhaustion / confusion / altered consciousness</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-exhaustion">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Exhaustion / confusion / altered consciousness</span>
                             </label>
                         </div>
 
-                        <div style="width:100%;">
-                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
-                                <input type="checkbox" id="asthma-bradycardia" style="margin-top:4px;flex:0 0 auto;">
-                                <span style="display:block;flex:1;">Bradycardia / hypotension / arrhythmia</span>
+                        <div style="flex:1 1 260px;min-width:0;">
+                            <label style="display:flex !important;align-items:flex-start;gap:10px;width:100% !important;">
+                                <div style="flex:0 0 auto;margin-top:4px;">
+                                    <input type="checkbox" id="asthma-bradycardia">
+                                </div>
+                                <span style="display:block;flex:1;min-width:0;word-break:break-word;">Bradycardia / hypotension / arrhythmia</span>
                             </label>
                         </div>
                     </div>
