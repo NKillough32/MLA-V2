@@ -1376,23 +1376,15 @@ class MLAQuizApp {
                     case 'success':
                         pattern = [100, 50, 100]; // Double tap for success
                         break;
-                    case 'error':
-                        pattern = [200, 100, 200, 100, 200]; // Triple tap for error
+                    case 'heavy':
+                        pattern = [200, 50, 200];
                         break;
                     case 'selection':
-                        pattern = [50]; // Single short for selection
-                        break;
-                    case 'heavy':
-                        pattern = [300]; // Longer vibration for long press (reduced from 500ms)
+                        pattern = [30];
                         break;
                     default:
-                        pattern = [80, 40, 80]; // Default light feedback
+                        pattern = [50];
                 }
-                
-                // Cancel any existing vibrations first
-                navigator.vibrate(0);
-                
-                // Add small delay to ensure cancellation, then trigger new vibration
                 setTimeout(() => {
                     const success = navigator.vibrate(pattern);
                     console.log('🔊 Vibration triggered:', pattern, 'Success:', success);
@@ -5046,23 +5038,23 @@ class MLAQuizApp {
                 calculatorTitle = 'Clinical Unit Converter';
                 calculatorContent += this.getUnitConverterCalculator();
                 break;
-            case 'drug-volume':
-                calculatorTitle = 'Drug Volume Calculator';
-                calculatorContent += this.getDrugVolumeCalculator();
+            case 'blood-volume':
+                if (sourceUnit === 'ml') {
+                    value = parseFloat(input1.value);
+                    if (validNumber(value)) {
+                        converted = value / 1000;
+                        input2.value = converted.toFixed(3);
+                        resultText = `${value} mL = ${converted.toFixed(3)} L`;
+                    }
+                } else {
+                    value = parseFloat(input2.value);
+                    if (validNumber(value)) {
+                        converted = value * 1000;
+                        input1.value = converted.toFixed(0);
+                        resultText = `${value} L = ${converted.toFixed(0)} mL`;
+                    }
+                }
                 break;
-            case 'news2':
-                calculatorTitle = 'NEWS2 Score';
-                calculatorContent += this.getNEWS2Calculator();
-                break;
-            case 'curb65':
-                calculatorTitle = 'CURB-65 Score';
-                calculatorContent += this.getCURB65Calculator();
-                break;
-            case 'palliative':
-                calculatorTitle = 'Palliative Care Calculator';
-                calculatorContent += this.getPalliativeCalculator();
-                break;
-            case 'paediatric-dosing':
                 calculatorTitle = 'Paediatric Dosing Calculator';
                 calculatorContent += this.getPaediatricDosingCalculator();
                 break;
@@ -7978,14 +7970,14 @@ class MLAQuizApp {
             case 'cholesterol':
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 38.67;
                         input2.value = converted.toFixed(0);
                         resultText = `${value} mmol/L = ${converted.toFixed(0)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 38.67;
                         input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
@@ -8038,14 +8030,14 @@ class MLAQuizApp {
             case 'hba1c':
                 if (sourceUnit === 'percent') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = (value - 2.15) * 10.929;
                         input2.value = converted.toFixed(0);
                         resultText = `${value}% = ${converted.toFixed(0)} mmol/mol`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = (value / 10.929) + 2.15;
                         input1.value = converted.toFixed(1);
                         resultText = `${value} mmol/mol = ${converted.toFixed(1)}%`;
@@ -8056,14 +8048,14 @@ class MLAQuizApp {
             case 'weight':
                 if (sourceUnit === 'kg') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 2.20462;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} kg = ${converted.toFixed(1)} lbs`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 0.453592;
                         input1.value = converted.toFixed(1);
                         resultText = `${value} lbs = ${converted.toFixed(1)} kg`;
@@ -8115,14 +8107,14 @@ class MLAQuizApp {
             case 'pressure':
                 if (sourceUnit === 'mmhg') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 7.50062;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} mmHg = ${converted.toFixed(1)} kPa`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 7.50062;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} kPa = ${converted.toFixed(0)} mmHg`;
@@ -8133,14 +8125,14 @@ class MLAQuizApp {
             case 'hemoglobin':
                 if (sourceUnit === 'gdl') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 10;
                         input2.value = converted.toFixed(0);
                         resultText = `${value} g/dL = ${converted.toFixed(0)} g/L`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 10;
                         input1.value = converted.toFixed(1);
                         resultText = `${value} g/L = ${converted.toFixed(1)} g/dL`;
@@ -8172,14 +8164,14 @@ class MLAQuizApp {
             case 'magnesium':
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 2.431;
                         input2.value = converted.toFixed(2);
                         resultText = `${value} mmol/L = ${converted.toFixed(2)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 2.431;
                         input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
@@ -8190,14 +8182,14 @@ class MLAQuizApp {
             case 'phosphate':
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 3.097;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 3.097;
                         input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
@@ -8208,14 +8200,14 @@ class MLAQuizApp {
             case 'urea':
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 2.8;
                         input2.value = converted.toFixed(0);
                         resultText = `${value} mmol/L (Urea) = ${converted.toFixed(0)} mg/dL (BUN)`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 2.8;
                         input1.value = converted.toFixed(1);
                         resultText = `${value} mg/dL (BUN) = ${converted.toFixed(1)} mmol/L (Urea)`;
@@ -8309,13 +8301,13 @@ class MLAQuizApp {
             case 'ferritin':
                 if (sourceUnit === 'ugl') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         input2.value = value;
                         resultText = `${value} μg/L = ${value} ng/mL (same numeric value)`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         input1.value = value;
                         resultText = `${value} ng/mL = ${value} μg/L (same numeric value)`;
                     }
@@ -8325,7 +8317,7 @@ class MLAQuizApp {
             case 'blood-volume':
                 if (sourceUnit === 'ml') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         const units = value / 475; // Average of 450-500
                         const pints = value / 473;
                         input2.value = units.toFixed(2);
@@ -8334,7 +8326,7 @@ class MLAQuizApp {
                     }
                 } else if (sourceUnit === 'units') {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         const ml = value * 475;
                         const pints = ml / 473;
                         input1.value = ml.toFixed(0);
@@ -8343,7 +8335,7 @@ class MLAQuizApp {
                     }
                 } else if (sourceUnit === 'pints') {
                     value = parseFloat(input3.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         const ml = value * 473;
                         const units = ml / 475;
                         input1.value = ml.toFixed(0);

@@ -4169,26 +4169,42 @@ window._internalUnitConverter = (function() {
                 break;
             case 'weight':
                 if (sourceUnit === 'kg') {
-                    value = parseFloat(input1 && input1.value) || 0;
-                    converted = value * 2.20462;
-                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
-                    resultText = value ? `${value} kg = ${converted.toFixed(1)} lbs` : '';
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 2.20462;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} kg = ${converted.toFixed(1)} lbs`;
+                    } else {
+                        if (input2) input2.value = '';
+                        resultText = '';
+                    }
                 } else {
-                    value = parseFloat(input2 && input2.value) || 0;
-                    converted = value * 0.453592;
-                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
-                    resultText = value ? `${value} lbs = ${converted.toFixed(1)} kg` : '';
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value * 0.453592;
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value} lbs = ${converted.toFixed(1)} kg`;
+                    } else {
+                        if (input1) input1.value = '';
+                        resultText = '';
+                    }
                 }
                 break;
             case 'height':
                 if (sourceUnit === 'cm') {
-                    value = parseFloat(input1 && input1.value) || 0;
-                    const totalInches = value / 2.54;
-                    const feet = Math.floor(totalInches / 12);
-                    const inches = Math.round(totalInches % 12);
-                    if (input2) input2.value = feet || '';
-                    if (input3) input3.value = inches || '';
-                    resultText = value ? `${value} cm = ${feet}' ${inches}"` : '';
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        const totalInches = value / 2.54;
+                        const feet = Math.floor(totalInches / 12);
+                        const inches = Math.round(totalInches % 12);
+                        if (input2) input2.value = feet;
+                        if (input3) input3.value = inches;
+                        resultText = `${value} cm = ${feet}' ${inches}"`;
+                    } else {
+                        if (input2) input2.value = '';
+                        if (input3) input3.value = '';
+                        resultText = '';
+                    }
                 } else {
                     const feet = parseFloat(input2 && input2.value) || 0;
                     const inches = parseFloat(input3 && input3.value) || 0;
