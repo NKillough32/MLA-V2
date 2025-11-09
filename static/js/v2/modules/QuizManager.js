@@ -142,6 +142,12 @@ export class QuizManager {
         // Get quizzes from localStorage
         let quizzes = await storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
         
+        // Ensure quizzes is always an array (handle corrupted storage data)
+        if (!Array.isArray(quizzes)) {
+            console.warn('⚠️ Uploaded quizzes data is not an array, resetting to empty array:', quizzes);
+            quizzes = [];
+        }
+        
         // Also check temporary storage (V1 compatibility)
         if (window.tempUploadedQuizzes && window.tempUploadedQuizzes.length > 0) {
             console.log('🔍 Found', window.tempUploadedQuizzes.length, 'quizzes in temporary storage');
