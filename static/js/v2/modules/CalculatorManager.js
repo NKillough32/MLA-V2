@@ -60,6 +60,12 @@ export class CalculatorManager {
         }
         
         console.log('✅ ExtractedCalculators bridge loaded - registering 55+ calculators...');
+
+        // Feature flag: disable unofficial QRISK calculators (keep official implementation only)
+        const DISABLE_UNOFFICIAL_QRISK = true;
+        if (DISABLE_UNOFFICIAL_QRISK) {
+            console.info('🔒 Unofficial QRISK calculators are disabled by configuration');
+        }
         
         // Note: For now, the bridge provides most calculator functionality
         // V2 native implementations in Calculators.js only cover 6 calculators
@@ -173,8 +179,8 @@ export class CalculatorManager {
             });
         }
 
-        // QRISK3
-        if (EC.getQRISK3Calculator) {
+        // QRISK3 (unofficial) - optionally disabled in favor of the official implementation
+        if (!DISABLE_UNOFFICIAL_QRISK && EC.getQRISK3Calculator) {
             this.registerCalculator('qrisk3', {
                 name: 'QRISK3',
                 category: TOOL_CATEGORIES.RISK,
@@ -186,8 +192,8 @@ export class CalculatorManager {
             });
         }
 
-        // QRISK (Legacy)
-        if (EC.getQRISKCalculator) {
+        // QRISK (legacy/unofficial) - optionally disabled
+        if (!DISABLE_UNOFFICIAL_QRISK && EC.getQRISKCalculator) {
             this.registerCalculator('qrisk', {
                 name: 'QRISK Calculator',
                 category: TOOL_CATEGORIES.RISK,
