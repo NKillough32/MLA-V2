@@ -624,12 +624,31 @@ export class QuizManager {
         const percentage = this.questions.length > 0 ? 
             (answered / this.questions.length) * 100 : 0;
 
+        // Calculate correct answers
+        let correct = 0;
+        for (const [index, submitted] of Object.entries(this.submittedAnswers)) {
+            if (submitted) {
+                const question = this.questions[parseInt(index)];
+                const userAnswer = this.answers[index];
+                const correctAnswer = question.correct_answer || question.correctAnswer;
+                if (userAnswer === correctAnswer) {
+                    correct++;
+                }
+            }
+        }
+
+        // Calculate total time spent (already in seconds)
+        const totalTime = this.sessionStats?.totalTime || 0;
+
         return {
             current: this.currentQuestionIndex + 1,
             total: this.questions.length,
             answered,
             unanswered: this.questions.length - answered,
-            percentage: Math.round(percentage)
+            percentage: Math.round(percentage),
+            correct,
+            incorrect: answered - correct,
+            totalTime: Math.round(totalTime) // Already in seconds
         };
     }
 

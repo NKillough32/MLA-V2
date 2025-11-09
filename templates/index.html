@@ -3870,6 +3870,164 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        /* Differential Diagnosis Modal Styles */
+        .differential-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            padding: 20px;
+        }
+
+        .differential-modal {
+            background: white;
+            border-radius: 16px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .differential-modal .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid #e5e5ea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(20, 184, 166, 0.05));
+        }
+
+        .differential-modal .modal-header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #1c1c1e;
+        }
+
+        .differential-modal .modal-close {
+            background: none;
+            border: none;
+            font-size: 32px;
+            color: #8e8e93;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+
+        .differential-modal .modal-close:hover {
+            background: rgba(0, 0, 0, 0.05);
+            color: #1c1c1e;
+        }
+
+        .differential-modal .modal-content {
+            padding: 24px;
+        }
+
+        .red-flags-section {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.05));
+            border: 2px solid rgba(239, 68, 68, 0.3);
+            border-left: 4px solid #ef4444;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .red-flags-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        .red-flags-section p {
+            margin: 0;
+            color: #1c1c1e;
+            line-height: 1.6;
+        }
+
+        .differentials-section {
+            margin-bottom: 24px;
+        }
+
+        .differentials-section h3 {
+            margin: 0 0 16px 0;
+            font-size: 20px;
+            font-weight: 700;
+            color: #1c1c1e;
+        }
+
+        .differentials-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .differential-modal .differential-item {
+            background: #f8f9fa;
+            border: 1px solid #e5e5ea;
+            border-radius: 12px;
+            padding: 16px;
+            cursor: default;
+        }
+
+        .differential-modal .differential-item:hover {
+            background: #f8f9fa;
+            border-color: #e5e5ea;
+        }
+
+        .differential-modal .differential-item h4 {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: #1c1c1e;
+        }
+
+        .differential-modal .detail-row {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .differential-modal .detail-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .differential-modal .detail-row strong {
+            color: #1c1c1e;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .detail-meta {
+            padding-top: 16px;
+            border-top: 1px solid #e5e5ea;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .category-tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(20, 184, 166, 0.1));
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #8b5cf6;
+        }
         
         /* Time/urgency level badge styling */
         .time-to-treat {
@@ -3945,17 +4103,19 @@
         
         .calculator-form button {
             width: 100%;
-            padding: 14px;
+            padding: 16px 24px;
             background: linear-gradient(135deg, var(--v2-primary), var(--v2-secondary));
             color: white;
             border: none;
-            border-radius: 10px;
-            font-size: 15px;
+            border-radius: 12px;
+            font-size: 17px;
             font-weight: 600;
             cursor: pointer;
+            margin-top: 8px;
             margin-bottom: 16px;
             box-shadow: var(--v2-shadow-md);
             transition: all 0.3s ease;
+            min-height: 48px;
         }
         
         .calculator-form button:hover {
@@ -4385,6 +4545,8 @@
             background: linear-gradient(135deg, var(--button-bg), #0066cc);
             color: white;
             border: 1px solid var(--border-color);
+            font-size: 17px;
+            min-height: 48px;
         }
 
         [data-theme="dark"] .calculator-form button:hover {
@@ -4513,6 +4675,10 @@
             background: var(--bg-primary);
         }
 
+        [data-theme="dark"] .differentials-section h3 {
+            color: var(--text-primary);
+        }
+
         [data-theme="dark"] .differential-modal {
             background: var(--bg-primary);
             border-color: var(--border-color);
@@ -4521,6 +4687,75 @@
 
         [data-theme="dark"] .differential-modal-overlay {
             background: rgba(0, 0, 0, 0.85);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-header {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(20, 184, 166, 0.15));
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-header h2 {
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-close {
+            color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-close:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .modal-content {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .red-flags-section {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.1));
+            border-color: rgba(239, 68, 68, 0.4);
+        }
+
+        [data-theme="dark"] .red-flags-section h3 {
+            color: #f87171;
+        }
+
+        [data-theme="dark"] .red-flags-section p {
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .differential-item {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .differential-modal .differential-item:hover {
+            background: var(--bg-secondary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .differential-modal .differential-item h4 {
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .detail-row {
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal .detail-row strong {
+            color: var(--text-primary);
+            opacity: 0.9;
+        }
+
+        [data-theme="dark"] .detail-meta {
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .category-tag {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(20, 184, 166, 0.2));
+            border-color: rgba(139, 92, 246, 0.4);
+            color: #a78bfa;
         }
 
         /* Dark Mode for Calculator Result Elements */
