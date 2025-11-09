@@ -1736,8 +1736,8 @@ export class QuizManager {
                                 </div>
                             ` : ''}
                             <div class="answer-analysis">
-                                <p><strong>Your Answer:</strong> Option ${String.fromCharCode(65 + q.yourAnswer)} - ${this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A')}</p>
-                                <p><strong>Correct Answer:</strong> Option ${String.fromCharCode(65 + q.correctAnswer)} - ${this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A')}</p>
+                                <p><strong>Your Answer:</strong> ${this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A')}</p>
+                                <p><strong>Correct Answer:</strong> ${this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A')}</p>
                             </div>
                             ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
                                 <div class="explanation-section">
@@ -1788,8 +1788,8 @@ export class QuizManager {
                             </div>
                         ` : ''}
                         <div class="answer-analysis">
-                            <p><strong>Your Answer:</strong> ${q.yourAnswer != null ? 'Option ' + String.fromCharCode(65 + q.yourAnswer) + ' - ' + this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A') : 'N/A'}</p>
-                            <p><strong>Correct Answer:</strong> ${q.correctAnswer != null ? 'Option ' + String.fromCharCode(65 + q.correctAnswer) + ' - ' + this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A') : 'N/A'}</p>
+                            <p><strong>Your Answer:</strong> ${q.yourAnswer != null ? this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A') : 'N/A'}</p>
+                            <p><strong>Correct Answer:</strong> ${q.correctAnswer != null ? this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A') : 'N/A'}</p>
                         </div>
                         ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
                             <div class="explanation-section">
