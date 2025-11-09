@@ -7948,27 +7948,32 @@ class MLAQuizApp {
         const input2 = document.getElementById('unit-input-2');
         const input3 = document.getElementById('unit-input-3');
         const resultDiv = document.getElementById('unit-result');
-        
+
         let value, converted, resultText = '';
-        
+
+        // Helper to check numeric input (allows zero)
+        const validNumber = (v) => typeof v === 'number' && !isNaN(v);
+
         switch(unitType) {
-            case 'glucose':
+            case 'glucose': {
+                // mmol/L <-> mg/dL (×18)
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 18;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value / 18;
                         input1.value = converted.toFixed(1);
                         resultText = `${value} mg/dL = ${converted.toFixed(1)} mmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
             case 'cholesterol':
                 if (sourceUnit === 'mmol') {
@@ -7988,41 +7993,47 @@ class MLAQuizApp {
                 }
                 break;
                 
-            case 'creatinine':
+            case 'creatinine': {
+                // μmol/L <-> mg/dL (use more precise factor)
+                const factor = 0.011312; // μmol -> mg/dL
                 if (sourceUnit === 'umol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 0.0113;
+                    if (validNumber(value)) {
+                        converted = value * factor;
                         input2.value = converted.toFixed(2);
                         resultText = `${value} μmol/L = ${converted.toFixed(2)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 0.0113;
+                    if (validNumber(value)) {
+                        converted = value / factor;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
-            case 'bilirubin':
+            case 'bilirubin': {
+                // μmol/L <-> mg/dL (1 mg/dL ≈ 17.1 μmol/L)
+                const factor = 1 / 17.1; // μmol -> mg/dL ≈ 0.05848
                 if (sourceUnit === 'umol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 0.0585;
+                    if (validNumber(value)) {
+                        converted = value * factor;
                         input2.value = converted.toFixed(2);
                         resultText = `${value} μmol/L = ${converted.toFixed(2)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 0.0585;
+                    if (validNumber(value)) {
+                        converted = value / factor;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
             case 'hba1c':
                 if (sourceUnit === 'percent') {
@@ -8137,23 +8148,26 @@ class MLAQuizApp {
                 }
                 break;
                 
-            case 'calcium':
+            case 'calcium': {
+                // mmol/L <-> mg/dL (×4.0078)
+                const factor = 4.0078;
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 4.008;
+                    if (validNumber(value)) {
+                        converted = value * factor;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 4.008;
+                    if (validNumber(value)) {
+                        converted = value / factor;
                         input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
             case 'magnesium':
                 if (sourceUnit === 'mmol') {
@@ -8209,77 +8223,88 @@ class MLAQuizApp {
                 }
                 break;
                 
-            case 'albumin':
+            case 'albumin': {
+                // g/L <-> g/dL
                 if (sourceUnit === 'gl') {
                     value = parseFloat(input1.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 0.1;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} g/L = ${converted.toFixed(1)} g/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
+                    if (validNumber(value)) {
                         converted = value * 10;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} g/dL = ${converted.toFixed(0)} g/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
-            case 'triglycerides':
+            case 'triglycerides': {
+                // mmol/L <-> mg/dL
+                const factor = 88.57;
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 88.57;
+                    if (validNumber(value)) {
+                        converted = value * factor;
                         input2.value = converted.toFixed(0);
                         resultText = `${value} mmol/L = ${converted.toFixed(0)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 88.57;
+                    if (validNumber(value)) {
+                        converted = value / factor;
                         input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
-            case 'uric-acid':
+            case 'uric-acid': {
+                // μmol/L <-> mg/dL
+                const factor = 0.0168;
                 if (sourceUnit === 'umol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 0.0168;
+                    if (validNumber(value)) {
+                        converted = value * factor;
                         input2.value = converted.toFixed(1);
                         resultText = `${value} μmol/L = ${converted.toFixed(1)} mg/dL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 0.0168;
+                    if (validNumber(value)) {
+                        converted = value / factor;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
-            case 'vitamin-d':
+            case 'vitamin-d': {
+                // nmol/L <-> ng/mL (1 ng/mL = 2.496 nmol/L)
+                const denom = 2.496;
                 if (sourceUnit === 'nmol') {
                     value = parseFloat(input1.value);
-                    if (value) {
-                        converted = value * 0.4;
-                        input2.value = converted.toFixed(0);
-                        resultText = `${value} nmol/L = ${converted.toFixed(0)} ng/mL`;
+                    if (validNumber(value)) {
+                        converted = value / denom;
+                        input2.value = converted.toFixed(1);
+                        resultText = `${value} nmol/L = ${converted.toFixed(1)} ng/mL`;
                     }
                 } else {
                     value = parseFloat(input2.value);
-                    if (value) {
-                        converted = value / 0.4;
+                    if (validNumber(value)) {
+                        converted = value * denom;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} ng/mL = ${converted.toFixed(0)} nmol/L`;
                     }
                 }
-                break;
+            }
+            break;
                 
             case 'ferritin':
                 if (sourceUnit === 'ugl') {
