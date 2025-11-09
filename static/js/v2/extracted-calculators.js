@@ -634,7 +634,7 @@ const ExtractedCalculators = {
                         <li><strong>Use:</strong> Recommended for NICE guideline implementation</li>
                         <li><strong>License:</strong> GNU LGPL v3 (ClinRisk Ltd.)</li>
                     </ul>
-                    <div style="background-color: var(--warning-bg, #fff3cd); border: 1px solid var(--warning-border, #ffc107); padding: 8px; border-radius: 5px; margin-top: 10px; color: var(--text-primary, #000);">
+                    <div style="background-color: var(--qrisk-official-bg, rgba(11,61,145,0.08)); border: 1px solid var(--qrisk-official-border, rgba(11,61,145,0.24)); padding: 8px; border-radius: 5px; margin-top: 10px; color: var(--qrisk-official-text, inherit);">
                         <small><strong>⚠️ Disclaimer:</strong> ${window.qrisk3Official?.Disclaimer || 'Use official QRISK3 tool at qrisk.org for clinical decisions'}</small>
                     </div>
                 </div>
