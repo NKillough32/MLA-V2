@@ -3770,11 +3770,21 @@ if (document.readyState === 'loading') {
     app.initialize();
 }
 
-// Export for global access if needed
-window.MLAQuizApp = app;
+// Export for global access if needed — do not overwrite existing globals from V1.
+if (!window.MLAQuizApp) {
+    window.MLAQuizApp = app;
+} else {
+    // Preserve any existing V1 global but still expose V2 under a distinct name
+    if (!window.v2App) window.v2App = app;
+}
 
-// Set window.quizApp to reference the main app (needed for onclick handlers)
-window.quizApp = app;
+// Set window.quizApp only if nothing else defines it (avoid clobbering V1)
+if (!window.quizApp) {
+    window.quizApp = app;
+} else {
+    // If a V1 quizApp exists already, expose V2 under a safe alias
+    if (!window.v2App) window.v2App = app;
+}
 
 // Try to expose any concrete implementations from the legacy ExtractedCalculators
 // onto the concrete app instance and global scope. This makes wrappers like
@@ -3958,6 +3968,157 @@ window._internalUnitConverter = (function() {
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 4.01';
+                break;
+            case 'magnesium':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 2.431;
+                        if (input2) input2.value = converted.toFixed(2);
+                        resultText = `${value} mmol/L = ${converted.toFixed(2)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 2.431;
+                        if (input1) input1.value = converted.toFixed(2);
+                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
+                    }
+                }
+                break;
+            case 'phosphate':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 3.097;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 3.097;
+                        if (input1) input1.value = converted.toFixed(2);
+                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
+                    }
+                }
+                break;
+            case 'urea':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 2.8;
+                        if (input2) input2.value = converted.toFixed(0);
+                        resultText = `${value} mmol/L (Urea) = ${converted.toFixed(0)} mg/dL (BUN)`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 2.8;
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value} mg/dL (BUN) = ${converted.toFixed(1)} mmol/L (Urea)`;
+                    }
+                }
+                break;
+            case 'blood-volume':
+                if (sourceUnit === 'ml') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        const units = value / 475; // average
+                        const pints = value / 473;
+                        if (input2) input2.value = units.toFixed(2);
+                        if (input3) input3.value = pints.toFixed(2);
+                        resultText = `${value} mL = ${units.toFixed(2)} units = ${pints.toFixed(2)} pints`;
+                    }
+                } else if (sourceUnit === 'units') {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        const ml = value * 475;
+                        const pints = ml / 473;
+                        if (input1) input1.value = ml.toFixed(0);
+                        if (input3) input3.value = pints.toFixed(2);
+                        resultText = `${value} units = ${ml.toFixed(0)} mL = ${pints.toFixed(2)} pints`;
+                    }
+                } else if (sourceUnit === 'pints') {
+                    value = parseFloat(input3 && input3.value);
+                    if (validNumber(value)) {
+                        const ml = value * 473;
+                        const units = ml / 475;
+                        if (input1) input1.value = ml.toFixed(0);
+                        if (input2) input2.value = units.toFixed(2);
+                        resultText = `${value} pints = ${ml.toFixed(0)} mL = ${units.toFixed(2)} units`;
+                    }
+                }
+                break;
+            case 'inr':
+                if (sourceUnit === 'inr') {
+                    value = parseFloat(input1 && input1.value);
+                    if (value && value > 0) {
+                        converted = 100 / value;
+                        if (input2) input2.value = converted.toFixed(0);
+                        resultText = `INR ${value} = ${converted.toFixed(0)}% prothrombin time`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (value && value > 0) {
+                        converted = 100 / value;
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value}% prothrombin time = INR ${converted.toFixed(1)}`;
+                    }
+                }
+                break;
+            case 'pressure':
+                if (sourceUnit === 'mmhg') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value / 7.50062; // mmHg -> kPa
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} mmHg = ${converted.toFixed(1)} kPa`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value * 7.50062; // kPa -> mmHg
+                        if (input1) input1.value = converted.toFixed(0);
+                        resultText = `${value} kPa = ${converted.toFixed(0)} mmHg`;
+                    }
+                }
+                break;
+            case 'uric-acid': {
+                // μmol/L <-> mg/dL
+                const factor = 0.0168;
+                if (sourceUnit === 'umol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * factor;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} μmol/L = ${converted.toFixed(1)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / factor;
+                        if (input1) input1.value = converted.toFixed(0);
+                        resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
+                    }
+                }
+            }
+            break;
+            case 'ferritin':
+                // μg/L <-> ng/mL (same numeric value)
+                if (sourceUnit === 'ugl') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        if (input2) input2.value = value;
+                        resultText = `${value} μg/L = ${value} ng/mL (same numeric value)`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        if (input1) input1.value = value;
+                        resultText = `${value} ng/mL = ${value} μg/L (same numeric value)`;
+                    }
+                }
                 break;
             case 'weight':
                 fieldsHtml = `
@@ -4391,6 +4552,30 @@ window.initializeV2Integration = function(v1AppInstance) {
     console.error('❌ Failed to initialize V2 integration - missing V1 app or V2 integration');
     return false;
 };
+
+// If V1 attempted to initialize V2 early (queued by a non-module shim), consume the queue now.
+// This makes V2 robust to timing/race issues on slower devices (eg. older iOS).
+try {
+    if (window.__v1_init_queue && Array.isArray(window.__v1_init_queue) && window.__v1_init_queue.length) {
+        while (window.__v1_init_queue.length) {
+            const v1 = window.__v1_init_queue.shift();
+            try {
+                if (v1) window.initializeV2Integration(v1);
+            } catch (e) {
+                console.debug('Failed to initialize V2 from queued V1 instance', e && e.message);
+            }
+        }
+    }
+} catch (e) {
+    console.debug('Error consuming V1 init queue:', e && e.message);
+}
+
+// Announce V2 readiness in a deterministic way for V1 or other consumers to listen for.
+try {
+    window.dispatchEvent(new Event('v2:ready'));
+} catch (e) {
+    console.debug('Could not dispatch v2:ready event:', e && e.message);
+}
 
 // Image Modal Functions (V1 compatibility)
 function openImageModal(imageUrl, altText) {
