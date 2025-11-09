@@ -407,7 +407,7 @@ export class DrugReferenceManager {
     /**
      * Get drug count
      */
-    async getDrugCount() {
+    getDrugCount() {
         
         return this.drugDatabase ? Object.keys(this.drugDatabase).length : 0;
     }

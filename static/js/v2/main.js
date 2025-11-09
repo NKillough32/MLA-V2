@@ -149,7 +149,8 @@ class MLAQuizApp {
         
         console.log('✅ All managers initialized');
         console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
-        console.log(`   - Drugs: ${this.drugManager.getStatistics().totalDrugs}`);
+        const drugStats = await this.drugManager.getStatistics();
+        console.log(`   - Drugs: ${drugStats.totalDrugs}`);
         console.log(`   - Lab panels: ${this.labManager.getStatistics().totalPanels}, Tests: ${this.labManager.getStatistics().totalTests}`);
         console.log(`   - Guidelines: ${this.guidelinesManager.getStatistics().total}`);
         console.log(`   - Mnemonics: ${this.mnemonicsManager.getStatistics().totalMnemonics}`);
@@ -3662,7 +3663,7 @@ class MLAQuizApp {
     /**
      * Get app info
      */
-    getInfo() {
+    async getInfo() {
         return {
             initialized: this.initialized,
             managers: {
@@ -3673,7 +3674,7 @@ class MLAQuizApp {
                 storage: 'initialized',
                 orientation: 'initialized',
                 analytics: 'initialized',
-                drug: this.drugManager.getStatistics(),
+                drug: await this.drugManager.getStatistics(),
                 lab: this.labManager.getStatistics(),
                 guidelines: this.guidelinesManager.getStatistics(),
                 mnemonics: this.mnemonicsManager.getStatistics(),

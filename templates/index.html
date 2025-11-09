@@ -9711,10 +9711,10 @@
             
             // Wait for V2 app to be ready
             if (window.eventBus) {
-                window.eventBus.on('app:ready', () => {
+                window.eventBus.on('app:ready', async () => {
                     console.log('✅ V2 MLA Quiz App Ready');
                     if (window.MLAQuizApp) {
-                        const appInfo = window.MLAQuizApp.getInfo();
+                        const appInfo = await window.MLAQuizApp.getInfo();
                         console.log('📊 V2 App Features:');
                         console.log('   - Calculators:', appInfo.managers.calculator?.totalCalculators || 0);
                         console.log('   - Drugs:', appInfo.managers.drug?.totalDrugs || 0);
@@ -9725,10 +9725,10 @@
                 });
             } else {
                 // Fallback: check periodically for app readiness
-                const checkAppReady = () => {
+                const checkAppReady = async () => {
                     if (window.MLAQuizApp && window.MLAQuizApp.initialized) {
                         console.log('✅ V2 MLA Quiz App Ready (fallback detection)');
-                        const appInfo = window.MLAQuizApp.getInfo();
+                        const appInfo = await window.MLAQuizApp.getInfo();
                         console.log('📊 V2 App Features:');
                         console.log('   - Calculators:', appInfo.managers.calculator?.totalCalculators || 0);
                         console.log('   - Drugs:', appInfo.managers.drug?.totalDrugs || 0);
