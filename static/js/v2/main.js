@@ -3265,8 +3265,8 @@ class MLAQuizApp {
                     /* Answered but unknown (fallback) - darker blue */
                     .pq-answered { background: #1D4ED8 !important; border-color: #1e40af !important; color: #ffffff !important; }
 
-                    /* Unanswered neutral (darker blue than before) */
-                    .pq-unanswered { background: #1e3a8a !important; border-color: #172554 !important; color: #ffffff !important; }
+                    /* Unanswered neutral (even darker blue) */
+                    .pq-unanswered { background: #0b3d91 !important; border-color: #06224a !important; color: #ffffff !important; }
 
                     /* Flagged: pronounced red border + subtle glow + flag icon */
                     .pq-flagged { border-width: 2px !important; border-style: solid !important; border-color: #ef4444 !important; box-shadow: 0 0 0 4px rgba(239,68,68,0.06); }
