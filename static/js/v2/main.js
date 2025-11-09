@@ -3244,6 +3244,10 @@ class MLAQuizApp {
                     .pq-flagged { border-width: 2px !important; border-style: solid !important; border-color: #ef4444 !important; box-shadow: 0 0 0 4px rgba(239,68,68,0.06); }
                     .pq-flagged::after { content: "🚩"; position: absolute; top: -8px; right: -8px; font-size: 12px; }
 
+                    /* Ensure flagged+state combinations still show the correct fill color */
+                    .pq-flagged.pq-correct, .pq-correct.pq-flagged { background: #16a34a !important; color: #ffffff !important; }
+                    .pq-flagged.pq-incorrect, .pq-incorrect.pq-flagged { background: #ef4444 !important; color: #ffffff !important; }
+
                     /* Make buttons visually consistent */
                     #questionProgressGrid .pq-cell { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: transform 120ms ease, box-shadow 120ms ease; }
                     #questionProgressGrid .pq-cell:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
