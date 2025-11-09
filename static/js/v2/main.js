@@ -3851,9 +3851,9 @@ window._internalUnitConverter = (function() {
             return;
         }
 
-        // Minimal field templates for common types (keeps ids used by convertUnits)
         let fieldsHtml = '';
         let infoText = '';
+
         switch (unitType) {
             case 'glucose':
                 fieldsHtml = `
@@ -3946,6 +3946,19 @@ window._internalUnitConverter = (function() {
                 `;
                 infoText = '<strong>Conversion:</strong> g/dL = g/L ÷ 10';
                 break;
+            case 'calcium':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="2.2" step="0.01" oninput="window.callConvertUnits('calcium','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="8.8" step="0.1" oninput="window.callConvertUnits('calcium','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 4.01';
+                break;
             case 'weight':
                 fieldsHtml = `
                     <div class="calc-input-group">
@@ -3958,6 +3971,76 @@ window._internalUnitConverter = (function() {
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 kg = 2.20462 lbs';
+                break;
+            case 'height':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Centimetres (cm):</label>
+                        <input type="number" id="unit-input-1" placeholder="175" step="0.1" oninput="window.callConvertUnits('height','cm')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Feet (ft):</label>
+                        <input type="number" id="unit-input-2" placeholder="5" step="1" oninput="window.callConvertUnits('height','feet')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Inches (in):</label>
+                        <input type="number" id="unit-input-3" placeholder="9" step="1" oninput="window.callConvertUnits('height','inches')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> 1 inch = 2.54 cm';
+                break;
+            case 'temperature':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>°C:</label>
+                        <input type="number" id="unit-input-1" placeholder="37" step="0.1" oninput="window.callConvertUnits('temperature','celsius')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>°F:</label>
+                        <input type="number" id="unit-input-2" placeholder="98.6" step="0.1" oninput="window.callConvertUnits('temperature','fahrenheit')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> °F = (°C × 9/5) + 32';
+                break;
+            default:
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Value A:</label>
+                        <input type="number" id="unit-input-1" oninput="window.callConvertUnits('${unitType}','a')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Value B:</label>
+                        <input type="number" id="unit-input-2" oninput="window.callConvertUnits('${unitType}','b')">
+                    </div>
+                `;
+                infoText = '';
+        }
+
+        if (fieldsContainer) fieldsContainer.innerHTML = fieldsHtml;
+        if (conversionInfo) conversionInfo.innerHTML = infoText;
+        if (resultDiv) resultDiv.innerHTML = '';
+    }
+
+    function convertUnits(unitType, sourceUnit) {
+        const input1 = document.getElementById('unit-input-1');
+        const input2 = document.getElementById('unit-input-2');
+        const input3 = document.getElementById('unit-input-3');
+        const resultDiv = document.getElementById('unit-result');
+        let value = 0, converted = 0, resultText = '';
+
+        switch (unitType) {
+            case 'glucose':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 18;
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mmol/L = ${converted.toFixed(1)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value / 18;
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(1)} mmol/L` : '';
+                }
                 break;
             case 'cholesterol':
                 if (sourceUnit === 'mmol') {
@@ -4037,75 +4120,17 @@ window._internalUnitConverter = (function() {
                     resultText = value ? `${value} g/dL = ${converted.toFixed(0)} g/L` : '';
                 }
                 break;
-            case 'height':
-                fieldsHtml = `
-                    <div class="calc-input-group">
-                        <label>Centimetres (cm):</label>
-                        <input type="number" id="unit-input-1" placeholder="175" step="0.1" oninput="window.callConvertUnits('height','cm')">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>Feet (ft):</label>
-                        <input type="number" id="unit-input-2" placeholder="5" step="1" oninput="window.callConvertUnits('height','feet')">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>Inches (in):</label>
-                        <input type="number" id="unit-input-3" placeholder="9" step="1" oninput="window.callConvertUnits('height','inches')">
-                    </div>
-                `;
-                infoText = '<strong>Conversion:</strong> 1 inch = 2.54 cm';
-                break;
-            case 'temperature':
-                fieldsHtml = `
-                    <div class="calc-input-group">
-                        <label>°C:</label>
-                        <input type="number" id="unit-input-1" placeholder="37" step="0.1" oninput="window.callConvertUnits('temperature','celsius')">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>°F:</label>
-                        <input type="number" id="unit-input-2" placeholder="98.6" step="0.1" oninput="window.callConvertUnits('temperature','fahrenheit')">
-                    </div>
-                `;
-                infoText = '<strong>Conversion:</strong> °F = (°C × 9/5) + 32';
-                break;
-            default:
-                // Generic two-field fallback
-                fieldsHtml = `
-                    <div class="calc-input-group">
-                        <label>Value A:</label>
-                        <input type="number" id="unit-input-1" oninput="window.callConvertUnits('${unitType}','a')">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>Value B:</label>
-                        <input type="number" id="unit-input-2" oninput="window.callConvertUnits('${unitType}','b')">
-                    </div>
-                `;
-                infoText = '';
-        }
-
-        if (fieldsContainer) fieldsContainer.innerHTML = fieldsHtml;
-        if (conversionInfo) conversionInfo.innerHTML = infoText;
-        if (resultDiv) resultDiv.innerHTML = '';
-    }
-
-    function convertUnits(unitType, sourceUnit) {
-        const input1 = document.getElementById('unit-input-1');
-        const input2 = document.getElementById('unit-input-2');
-        const input3 = document.getElementById('unit-input-3');
-        const resultDiv = document.getElementById('unit-result');
-        let value, converted, resultText = '';
-
-        switch (unitType) {
-            case 'glucose':
+            case 'calcium':
                 if (sourceUnit === 'mmol') {
                     value = parseFloat(input1 && input1.value) || 0;
-                    converted = value * 18;
-                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
-                    resultText = value ? `${value} mmol/L = ${converted.toFixed(1)} mg/dL` : '';
+                    converted = value * 4.0078; // mmol/L -> mg/dL (approx)
+                    if (input2) input2.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} mmol/L = ${converted.toFixed(2)} mg/dL` : '';
                 } else {
                     value = parseFloat(input2 && input2.value) || 0;
-                    converted = value / 18;
-                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
-                    resultText = value ? `${value} mg/dL = ${converted.toFixed(1)} mmol/L` : '';
+                    converted = value / 4.0078; // mg/dL -> mmol/L
+                    if (input1) input1.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(2)} mmol/L` : '';
                 }
                 break;
             case 'weight':
@@ -4159,7 +4184,6 @@ window._internalUnitConverter = (function() {
                 }
                 break;
             default:
-                // Generic: copy value between fields if present
                 if (sourceUnit === 'a') {
                     value = parseFloat(input1 && input1.value) || 0;
                     if (input2) input2.value = value;
