@@ -213,8 +213,8 @@ export class QuizManager {
             return questions;
         }
         
-        // Shuffle and take selected number
-        const shuffled = [...questions].sort(() => Math.random() - 0.5);
+        // Use proper Fisher-Yates shuffle instead of biased sort
+        const shuffled = this.shuffleArray([...questions]);
         return shuffled.slice(0, this.selectedQuizLength);
     }
 

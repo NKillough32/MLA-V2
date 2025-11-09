@@ -4279,6 +4279,11 @@
             border-color: #4a3f2a;
             color: #e6d576;
         }
+
+        /* Ensure calc-reference is visible in dark mode */
+        [data-theme="dark"] .calc-reference small {
+            color: #e6d576;
+        }
         
         [data-theme="dark"] .calc-section {
             background: var(--bg-tertiary);
@@ -4471,6 +4476,53 @@
             color: var(--text-primary);
         }
 
+        /* Dark Mode for Urgency Badges in Differential Diagnosis */
+        [data-theme="dark"] .urgency-badge {
+            color: white;
+        }
+
+        [data-theme="dark"] .urgency-badge.urgency-emergency {
+            background: #dc2626;
+        }
+
+        [data-theme="dark"] .urgency-badge.urgency-urgent {
+            background: #ea580c;
+        }
+
+        [data-theme="dark"] .urgency-badge.urgency-non-urgent {
+            background: #16a34a;
+        }
+
+        [data-theme="dark"] .urgency-badge.urgency-standard {
+            background: #6b7280;
+        }
+
+        /* Dark Mode for Differential Diagnosis Detail Rows */
+        [data-theme="dark"] .detail-row {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-details {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differentials-section {
+            background: var(--bg-primary);
+        }
+
+        [data-theme="dark"] .differential-modal {
+            background: var(--bg-primary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .differential-modal-overlay {
+            background: rgba(0, 0, 0, 0.85);
+        }
+
         /* Dark Mode for Calculator Result Elements */
         [data-theme="dark"] .calc-interpretation {
             background: var(--bg-tertiary);
@@ -4594,6 +4646,23 @@
 
         [data-theme="dark"] .tools-content {
             background: var(--bg-primary);
+        }
+
+        /* Dark Mode for Modal Headers and Content */
+        [data-theme="dark"] .modal-header {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .modal-content {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .detail-meta {
+            background: var(--bg-tertiary);
+            border-color: var(--border-color);
         }
 
         /* Dark Mode for Placeholder Text */
@@ -4740,15 +4809,33 @@
         }
 
         [data-theme="dark"] .new-option.correct {
-            background: rgba(34, 197, 94, 0.15);
+            background: rgba(34, 197, 94, 0.25);
             border-color: #22c55e;
             color: #4ade80;
         }
 
         [data-theme="dark"] .new-option.incorrect {
-            background: rgba(239, 68, 68, 0.15);
+            background: rgba(239, 68, 68, 0.25);
             border-color: #ef4444;
             color: #f87171;
+        }
+
+        /* Dark mode: Keep option letters/badges visible in correct state */
+        [data-theme="dark"] .new-option.correct .badge,
+        [data-theme="dark"] .new-option.correct .option-letter {
+            background: rgba(34, 197, 94, 0.3) !important;
+            color: #4ade80 !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(34, 197, 94, 0.5) !important;
+        }
+
+        /* Dark mode: Keep option letters/badges visible in incorrect state */
+        [data-theme="dark"] .new-option.incorrect .badge,
+        [data-theme="dark"] .new-option.incorrect .option-letter {
+            background: rgba(239, 68, 68, 0.3) !important;
+            color: #f87171 !important;
+            font-weight: bold !important;
+            border: 1px solid rgba(239, 68, 68, 0.5) !important;
         }
 
         [data-theme="dark"] .new-option.ruled-out {
