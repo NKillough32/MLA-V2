@@ -3200,7 +3200,7 @@ class MLAQuizApp {
                 }
 
                 html += `
-                    <button class="${classes}" data-qindex="${i}" title="${title}" style="padding:8px; border-radius:6px; border:1px solid var(--border); background:var(--card-bg); cursor:pointer;">${i + 1}</button>
+                    <button class="${classes}" data-qindex="${i}" title="${title}" style="padding:8px; border-radius:6px; border:1px solid var(--border); cursor:pointer;">${i + 1}</button>
                 `;
             }
 
@@ -3229,10 +3229,10 @@ class MLAQuizApp {
                     .pq-cell { font-weight: 700; position: relative; height: 40px; display: inline-flex; align-items: center; justify-content: center; }
 
                     /* Correct = green */
-                    .pq-correct { background: #16a34a; border-color: #15803d; color: #ffffff !important; }
+                    .pq-correct { background: #16a34a !important; border-color: #15803d !important; color: #ffffff !important; }
 
                     /* Incorrect = red */
-                    .pq-incorrect { background: #ef4444; border-color: #dc2626; color: #ffffff !important; }
+                    .pq-incorrect { background: #ef4444 !important; border-color: #dc2626 !important; color: #ffffff !important; }
 
                     /* Answered but unknown (fallback) */
                     .pq-answered { background: #60a5fa; border-color: #3b82f6; color: #ffffff; }
