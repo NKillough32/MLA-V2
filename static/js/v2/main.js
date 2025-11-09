@@ -3736,6 +3736,61 @@ window.MLAQuizApp = app;
 // Set window.quizApp to reference the main app (needed for onclick handlers)
 window.quizApp = app;
 
+// Try to expose any concrete implementations from the legacy ExtractedCalculators
+// onto the concrete app instance and global scope. This makes wrappers like
+// callUpdateUnitConverter()/callConvertUnits() call the real V1 implementations
+// (if present) instead of falling back to the internal lightweight version.
+// We bind functions to the ExtractedCalculators context and retry briefly in
+// case the large extracted script loads after this file.
+(function exposeExtractedImplementations() {
+    function tryExpose() {
+        try {
+            if (!window.ExtractedCalculators) return false;
+            const ec = window.ExtractedCalculators;
+            Object.keys(ec).forEach((name) => {
+                try {
+                    if (typeof ec[name] !== 'function') return;
+
+                    // Prefer attaching to the concrete app instance (target of the proxy)
+                    // so that the proxy's get trap will return the direct function from target
+                    // and avoid returning wrapper functions that cause recursion.
+                    if (typeof appInstance[name] !== 'function') {
+                        appInstance[name] = ec[name].bind(ec);
+                    }
+
+                    // Also expose as a global function for legacy inline handlers that call
+                    // window.updateUnitConverter / window.convertUnits directly.
+                    // Only overwrite if the global is not already a proper non-wrapper function.
+                    const globalFn = window[name];
+                    const isWrapperAlias = globalFn === window.callUpdateUnitConverter || globalFn === window.callConvertUnits;
+                    if (isWrapperAlias || typeof globalFn !== 'function') {
+                        window[name] = ec[name].bind(ec);
+                    }
+                } catch (e) {
+                    console.debug('exposeExtractedImplementations - skip', name, e && e.message);
+                }
+            });
+            console.log('✅ Exposed ExtractedCalculators functions onto appInstance and global scope');
+            return true;
+        } catch (e) {
+            console.debug('exposeExtractedImplementations error:', e && e.message);
+            return false;
+        }
+    }
+
+    if (!tryExpose()) {
+        // Retry for a short period while ExtractedCalculators loads
+        let attempts = 0;
+        const maxAttempts = 50; // ~5s at 100ms interval
+        const interval = setInterval(() => {
+            attempts += 1;
+            if (tryExpose() || attempts >= maxAttempts) {
+                clearInterval(interval);
+            }
+        }, 100);
+    }
+})();
+
 // Safe wrappers for legacy templates that call unit converter helpers directly.
 // These try the main app proxy first, then fall back to ExtractedCalculators, and finally warn.
 // Internal lightweight unit converter fallback (used only if no legacy implementation
