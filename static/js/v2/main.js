@@ -3262,11 +3262,11 @@ class MLAQuizApp {
                     /* Incorrect = red */
                     .pq-incorrect { background: #ef4444 !important; border-color: #dc2626 !important; color: #ffffff !important; }
 
-                    /* Answered but unknown (fallback) */
-                    .pq-answered { background: #60a5fa; border-color: #3b82f6; color: #ffffff; }
+                    /* Answered but unknown (fallback) - darker blue */
+                    .pq-answered { background: #1D4ED8 !important; border-color: #1e40af !important; color: #ffffff !important; }
 
-                    /* Unanswered neutral */
-                    .pq-unanswered { background: var(--card-bg); border-color: rgba(0,0,0,0.06); color: inherit; }
+                    /* Unanswered neutral (darker blue than before) */
+                    .pq-unanswered { background: #1e3a8a !important; border-color: #172554 !important; color: #ffffff !important; }
 
                     /* Flagged: pronounced red border + subtle glow + flag icon */
                     .pq-flagged { border-width: 2px !important; border-style: solid !important; border-color: #ef4444 !important; box-shadow: 0 0 0 4px rgba(239,68,68,0.06); }
