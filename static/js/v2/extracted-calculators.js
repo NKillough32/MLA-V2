@@ -162,21 +162,21 @@ const ExtractedCalculators = {
             <div class="calculator-form">
                 <h4>Glasgow Coma Scale</h4>
                 
-                <div class="calc-select-group">
-                    <label>Eye Opening:</label>
-                    <select id="gcs-eye">
-                        <option value="1">No eye opening (1)</option>
-                        <option value="2">Eye opening to pain (2)</option>
-                        <option value="3">Eye opening to verbal command (3)</option>
-                        <option value="4" selected>Eyes open spontaneously (4)</option>
+                <div class="calc-input-group">
+                    <label>Patient's Current State:</label>
+                    <select id="rass-level" style="width:100%;max-width:420px;">
+                        <option value="+4" title="Combative (violent, immediate danger)">+4 — Combative</option>
+                        <option value="+3" title="Very agitated (pulls/removes tubes, aggressive)">+3 — Very agitated</option>
+                        <option value="+2" title="Agitated (frequent non-purposeful movement)">+2 — Agitated</option>
+                        <option value="+1" title="Restless (anxious, apprehensive, not aggressive)">+1 — Restless</option>
+                        <option value="0" selected title="Alert and calm">0 — Alert & calm</option>
+                        <option value="-1" title="Drowsy (not fully alert, sustained awakening to voice)">-1 — Drowsy</option>
+                        <option value="-2" title="Light sedation (briefly awakens to voice <10 sec)">-2 — Light sedation</option>
+                        <option value="-3" title="Moderate sedation (movement/eye opening to voice, no eye contact)">-3 — Moderate sedation</option>
+                        <option value="-4" title="Deep sedation (no response to voice, movement to physical stimulation)">-4 — Deep sedation</option>
+                        <option value="-5" title="Unarousable (no response to voice or physical stimulation)">-5 — Unarousable</option>
                     </select>
                 </div>
-                
-                <div class="calc-select-group">
-                    <label>Verbal Response:</label>
-                    <select id="gcs-verbal">
-                        <option value="1">No verbal response (1)</option>
-                        <option value="2">Incomprehensible sounds (2)</option>
                         <option value="3">Inappropriate words (3)</option>
                         <option value="4">Confused (4)</option>
                         <option value="5" selected>Oriented (5)</option>
@@ -2282,45 +2282,61 @@ const ExtractedCalculators = {
                     <label>Clinical Features:</label>
 
                     <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-unable-complete" style="margin-top:4px;">
-                            <span>Unable to complete sentences in one breath</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-unable-complete" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Unable to complete sentences in one breath</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-pulse-110" style="margin-top:4px;">
-                            <span>Pulse ≥110 bpm</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-pulse-110" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Pulse ≥110 bpm</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-rr-25" style="margin-top:4px;">
-                            <span>Respiratory rate ≥25/min</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-rr-25" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Respiratory rate ≥25/min</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-pulse-paradoxus" style="margin-top:4px;">
-                            <span>Pulsus paradoxus present</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-pulse-paradoxus" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Pulsus paradoxus present</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-silent-chest" style="margin-top:4px;">
-                            <span>Silent chest / poor air entry</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-silent-chest" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Silent chest / poor air entry</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-cyanosis" style="margin-top:4px;">
-                            <span>Cyanosis</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-cyanosis" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Cyanosis</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-exhaustion" style="margin-top:4px;">
-                            <span>Exhaustion / confusion / altered consciousness</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-exhaustion" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Exhaustion / confusion / altered consciousness</span>
+                            </label>
+                        </div>
 
-                        <label style="display:flex;align-items:flex-start;gap:10px;">
-                            <input type="checkbox" id="asthma-bradycardia" style="margin-top:4px;">
-                            <span>Bradycardia / hypotension / arrhythmia</span>
-                        </label>
+                        <div style="width:100%;">
+                            <label style="display:flex !important;width:100% !important;align-items:flex-start;gap:10px;">
+                                <input type="checkbox" id="asthma-bradycardia" style="margin-top:4px;flex:0 0 auto;">
+                                <span style="display:block;flex:1;">Bradycardia / hypotension / arrhythmia</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 
@@ -3700,9 +3716,9 @@ const ExtractedCalculators = {
             }
             
             waistAssessment = `
-                <div style="margin-top: 8px; padding: 6px; background: #f5f5f5; border-radius: 4px;">
+                <div style="margin-top: 8px; padding: 6px; background: var(--waist-bg, rgba(255,255,255,0.04)); border: 1px solid var(--waist-border, rgba(0,0,0,0.08)); border-radius: 4px; color: var(--waist-text, inherit);">
                     <strong>Waist Circumference:</strong> ${waist} cm<br>
-                    <span style="color: ${waistColor}; font-weight: bold;">${waistRisk}</span> for metabolic complications
+                    <span style="color: var(--waist-risk-color, ${waistColor}); font-weight: bold;">${waistRisk}</span> for metabolic complications
                 </div>
             `;
         }

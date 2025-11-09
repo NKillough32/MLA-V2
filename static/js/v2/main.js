@@ -3712,6 +3712,12 @@ const app = new Proxy(appInstance, {
             return window.ExtractedCalculators[prop].bind(window.ExtractedCalculators);
         }
         
+        // Delegate any other helper methods (e.g. updateUnitConverter, convertUnits)
+        // that exist on the extracted V1 calculators object but are not calculate*/get* methods.
+        if (typeof prop === 'string' && window.ExtractedCalculators && typeof window.ExtractedCalculators[prop] === 'function') {
+            console.log(`🔄 Delegating helper ${prop} to ExtractedCalculators`);
+            return window.ExtractedCalculators[prop].bind(window.ExtractedCalculators);
+        }
         // Otherwise return undefined
         return undefined;
     }
