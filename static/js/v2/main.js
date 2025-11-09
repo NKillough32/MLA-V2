@@ -3740,13 +3740,20 @@ window.quizApp = app;
 // These try the main app proxy first, then fall back to ExtractedCalculators, and finally warn.
 window.callUpdateUnitConverter = function() {
     try {
+        console.debug('callUpdateUnitConverter() invoked');
         if (window.quizApp && typeof window.quizApp.updateUnitConverter === 'function') {
+            console.debug('-> calling updateUnitConverter on window.quizApp');
             return window.quizApp.updateUnitConverter();
         }
         if (window.ExtractedCalculators && typeof window.ExtractedCalculators.updateUnitConverter === 'function') {
+            console.debug('-> calling updateUnitConverter on window.ExtractedCalculators');
             return window.ExtractedCalculators.updateUnitConverter();
         }
-        console.warn('updateUnitConverter not available');
+        if (typeof window.updateUnitConverter === 'function') {
+            console.debug('-> calling global updateUnitConverter');
+            return window.updateUnitConverter();
+        }
+        console.warn('updateUnitConverter not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
         console.error('Error calling updateUnitConverter:', e);
     }
@@ -3754,17 +3761,28 @@ window.callUpdateUnitConverter = function() {
 
 window.callConvertUnits = function(unitType, sourceUnit) {
     try {
+        console.debug('callConvertUnits() invoked for', unitType, sourceUnit);
         if (window.quizApp && typeof window.quizApp.convertUnits === 'function') {
+            console.debug('-> calling convertUnits on window.quizApp');
             return window.quizApp.convertUnits(unitType, sourceUnit);
         }
         if (window.ExtractedCalculators && typeof window.ExtractedCalculators.convertUnits === 'function') {
+            console.debug('-> calling convertUnits on window.ExtractedCalculators');
             return window.ExtractedCalculators.convertUnits(unitType, sourceUnit);
         }
-        console.warn('convertUnits not available');
+        if (typeof window.convertUnits === 'function') {
+            console.debug('-> calling global convertUnits');
+            return window.convertUnits(unitType, sourceUnit);
+        }
+        console.warn('convertUnits not available on quizApp, ExtractedCalculators, or global scope');
     } catch (e) {
         console.error('Error calling convertUnits:', e);
     }
 };
+
+// Backwards-compatibility: expose simple global functions that older inline handlers may call
+window.updateUnitConverter = window.callUpdateUnitConverter;
+window.convertUnits = window.callConvertUnits;
 
 // Make sure quizManager is available on MLAQuizApp for template compatibility
 app.quizManager = quizManager;
