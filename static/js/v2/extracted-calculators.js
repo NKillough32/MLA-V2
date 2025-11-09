@@ -1470,59 +1470,45 @@ const ExtractedCalculators = {
                 <h3>PERC Rule (Pulmonary Embolism Rule-out Criteria)</h3>
                 <p>Excludes PE without D-dimer if all criteria are negative</p>
                 
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-age" value="1">
-                        Age ≥50 years
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-age" value="1" style="margin-top:4px;">
+                        <span>Age ≥50 years</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-hr" value="1">
-                        Heart rate ≥100 bpm
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-hr" value="1" style="margin-top:4px;">
+                        <span>Heart rate ≥100 bpm</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-sats" value="1">
-                        O₂ saturation <95% on room air
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-sats" value="1" style="margin-top:4px;">
+                        <span>O₂ saturation &lt;95% on room air</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-hemoptysis" value="1">
-                        Hemoptysis present
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-hemoptysis" value="1" style="margin-top:4px;">
+                        <span>Hemoptysis present</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-estrogen" value="1">
-                        Estrogen use (oral contraceptives, HRT)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-estrogen" value="1" style="margin-top:4px;">
+                        <span>Estrogen use (oral contraceptives, HRT)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-surgery" value="1">
-                        Previous DVT or PE
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-surgery" value="1" style="margin-top:4px;">
+                        <span>Previous DVT or PE</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-trauma" value="1">
-                        Trauma or surgery requiring hospitalization within 4 weeks
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-trauma" value="1" style="margin-top:4px;">
+                        <span>Trauma or surgery requiring hospitalization within 4 weeks</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="perc-swelling" value="1">
-                        Unilateral leg swelling
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="perc-swelling" value="1" style="margin-top:4px;">
+                        <span>Unilateral leg swelling</span>
                     </label>
                 </div>
                 
@@ -1550,45 +1536,35 @@ const ExtractedCalculators = {
                 <h3>Revised Cardiac Risk Index (RCRI)</h3>
                 <p>Estimates risk of perioperative cardiac complications</p>
                 
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-ihd" value="1">
-                        History of ischemic heart disease (+1)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 12px;align-items:center;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-ihd" value="1" style="margin-top:4px;">
+                        <span>History of ischemic heart disease (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-hf" value="1">
-                        History of congestive heart failure (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-hf" value="1" style="margin-top:4px;">
+                        <span>History of congestive heart failure (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-stroke" value="1">
-                        History of cerebrovascular disease (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-stroke" value="1" style="margin-top:4px;">
+                        <span>History of cerebrovascular disease (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-diabetes" value="1">
-                        Diabetes mellitus requiring insulin (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-diabetes" value="1" style="margin-top:4px;">
+                        <span>Diabetes mellitus requiring insulin (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-renal" value="1">
-                        Renal impairment (creatinine >177 μmol/L / 2 mg/dL) (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-renal" value="1" style="margin-top:4px;">
+                        <span>Renal impairment (creatinine &gt;177 μmol/L / 2 mg/dL) (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="rcri-surgery" value="1">
-                        High-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular) (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="rcri-surgery" value="1" style="margin-top:4px;">
+                        <span>High-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular) (+1)</span>
                     </label>
                 </div>
                 
@@ -1750,31 +1726,25 @@ const ExtractedCalculators = {
                     </select>
                 </div>
                 
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="centor-exudate" value="1">
-                        Tonsillar exudate present (+1)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="centor-exudate" value="1" style="margin-top:4px;">
+                        <span>Tonsillar exudate present (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="centor-lymph" value="1">
-                        Tender anterior cervical lymphadenopathy (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="centor-lymph" value="1" style="margin-top:4px;">
+                        <span>Tender anterior cervical lymphadenopathy (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="centor-fever" value="1">
-                        Temperature >38°C (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="centor-fever" value="1" style="margin-top:4px;">
+                        <span>Temperature &gt;38°C (+1)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="centor-cough" value="1">
-                        Absence of cough (+1)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="centor-cough" value="1" style="margin-top:4px;">
+                        <span>Absence of cough (+1)</span>
                     </label>
                 </div>
                 
@@ -1803,61 +1773,51 @@ const ExtractedCalculators = {
                 <p>Risk stratification for acute appendicitis</p>
                 
                 <h4>Symptoms (1 point each):</h4>
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-migration" value="1">
-                        Migration of pain to RLQ
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 12px;align-items:center;margin-bottom:8px;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-migration" value="1" style="margin-top:4px;">
+                        <span>Migration of pain to RLQ</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-anorexia" value="1">
-                        Anorexia
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-anorexia" value="1" style="margin-top:4px;">
+                        <span>Anorexia</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-nausea" value="1">
-                        Nausea/vomiting
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-nausea" value="1" style="margin-top:4px;">
+                        <span>Nausea/vomiting</span>
                     </label>
                 </div>
                 
                 <h4>Signs:</h4>
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-tenderness" value="2">
-                        Tenderness in RLQ (2 points)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 12px;align-items:center;margin-bottom:8px;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-tenderness" value="2" style="margin-top:4px;">
+                        <span>Tenderness in RLQ (2 points)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-rebound" value="1">
-                        Rebound tenderness (1 point)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-rebound" value="1" style="margin-top:4px;">
+                        <span>Rebound tenderness (1 point)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-fever" value="1">
-                        Elevated temperature >37.3°C (1 point)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-fever" value="1" style="margin-top:4px;">
+                        <span>Elevated temperature &gt;37.3°C (1 point)</span>
                     </label>
                 </div>
                 
                 <h4>Laboratory:</h4>
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-wbc" value="2">
-                        Leukocytosis >10,000 (2 points)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:6px 12px;align-items:center;margin-bottom:8px;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-wbc" value="2" style="margin-top:4px;">
+                        <span>Leukocytosis &gt;10,000 (2 points)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="alvarado-shift" value="1">
-                        Neutrophil left shift (1 point)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="alvarado-shift" value="1" style="margin-top:4px;">
+                        <span>Neutrophil left shift (1 point)</span>
                     </label>
                 </div>
                 
@@ -1925,38 +1885,30 @@ const ExtractedCalculators = {
                     </select>
                 </div>
                 
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="gbs-pulse" value="1">
-                        Pulse ≥100 bpm (1 point)
+                <div class="calc-checkbox-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 12px;align-items:center;">
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="gbs-pulse" value="1" style="margin-top:4px;">
+                        <span>Pulse ≥100 bpm (1 point)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="gbs-melena" value="1">
-                        Melena present (1 point)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="gbs-melena" value="1" style="margin-top:4px;">
+                        <span>Melena present (1 point)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="gbs-syncope" value="2">
-                        Syncope (2 points)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="gbs-syncope" value="2" style="margin-top:4px;">
+                        <span>Syncope (2 points)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="gbs-liver" value="2">
-                        Hepatic disease (2 points)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="gbs-liver" value="2" style="margin-top:4px;">
+                        <span>Hepatic disease (2 points)</span>
                     </label>
-                </div>
-                
-                <div class="calc-input-group">
-                    <label>
-                        <input type="checkbox" id="gbs-cardiac" value="2">
-                        Cardiac failure (2 points)
+
+                    <label style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="gbs-cardiac" value="2" style="margin-top:4px;">
+                        <span>Cardiac failure (2 points)</span>
                     </label>
                 </div>
                 
