@@ -7,6 +7,7 @@ import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 import UIHelpers from './UIHelpers.js';
 import { EVENTS, STORAGE_KEYS, UI_CONFIG, DEFAULT_SETTINGS } from './Constants.js';
+import { orientationManager } from './OrientationManager.js';
 
 export class UIManager {
     constructor() {
@@ -651,185 +652,82 @@ export class UIManager {
     }
 
     /**
-     * Setup rotation lock button - ENHANCED V2 IMPLEMENTATION
+     * Setup rotation lock button - Integrated with OrientationManager
      */
     setupRotationLock() {
-        // Load saved state
-        this.rotationLocked = storage.getItem('rotationLocked', false) === 'true';
-        this.lockedOrientation = storage.getItem('lockedOrientation', 'portrait');
-        
         const rotLockBtn = document.getElementById('rotLock');
         if (!rotLockBtn) {
             console.warn('⚠️ Rotation lock button not found');
             return;
         }
 
-        // Set initial icon and enhanced styling
+        // Set initial icon based on OrientationManager state
         this.updateRotationLockIcon(rotLockBtn);
         
         // Enhanced button styling
         rotLockBtn.style.cssText += `
             transition: all 0.2s ease;
-            transform: scale(${this.rotationLocked ? '1.1' : '1.0'});
-            color: ${this.rotationLocked ? '#ff6b6b' : 'var(--text-secondary)'};
+            transform: scale(${orientationManager.screenLocked ? '1.1' : '1.0'});
+            color: ${orientationManager.screenLocked ? '#ff6b6b' : 'var(--text-secondary)'};
         `;
 
-        // Add click handler with haptic feedback
-        rotLockBtn.addEventListener('click', () => {
+        // Add click handler with haptic feedback - delegates to OrientationManager
+        rotLockBtn.addEventListener('click', async () => {
             analytics.vibrateClick();
-            this.toggleRotationLock();
+            await this.toggleRotationLock();
         });
 
-        // Setup enhanced orientation detection
-        this.setupOrientationDetection();
-
-        // Apply initial lock state
-        if (this.rotationLocked) {
-            this.lockOrientation();
-        }
-
-        console.log('✅ Enhanced rotation lock system initialized');
-    }
-
-    /**
-     * Setup orientation detection and management - NEW FEATURE
-     */
-    setupOrientationDetection() {
-        // Store current orientation
-        this.currentOrientation = this.getCurrentOrientation();
-        
-        // Listen for orientation changes with enhanced detection
-        const handleOrientationChange = () => {
-            // Multiple timeouts for better compatibility across devices
-            setTimeout(() => this.processOrientationChange(), 50);
-            setTimeout(() => this.processOrientationChange(), 150);
-            setTimeout(() => this.processOrientationChange(), 300);
-        };
-        
-        // Multiple event listeners for better cross-browser support
-        window.addEventListener('orientationchange', handleOrientationChange);
-        window.addEventListener('resize', handleOrientationChange);
-        
-        // Modern Screen Orientation API
-        if (screen.orientation) {
-            screen.orientation.addEventListener('change', handleOrientationChange);
-        }
-        
-        // Visual Viewport API (for mobile browsers)
-        if (window.visualViewport) {
-            window.visualViewport.addEventListener('resize', handleOrientationChange);
-        }
-    }
-
-    /**
-     * Process orientation change - NEW FEATURE
-     */
-    processOrientationChange() {
-        const newOrientation = this.getCurrentOrientation();
-        
-        if (newOrientation !== this.currentOrientation) {
-            console.log(`📱 Orientation changed: ${this.currentOrientation} → ${newOrientation}`);
-            
-            if (this.rotationLocked && newOrientation !== this.lockedOrientation) {
-                console.log('🔒 Enforcing orientation lock...');
-                this.enforceOrientationLock();
-            } else {
-                this.currentOrientation = newOrientation;
-                this.adjustLayoutForOrientation(newOrientation);
-                
-                // Vibrate on successful orientation change when not locked
-                if (!this.rotationLocked) {
-                    analytics.vibrateClick();
-                }
+        // Listen for orientation changes from OrientationManager
+        orientationManager.onOrientationChange(() => {
+            const currentOrientation = orientationManager.getCurrentOrientation();
+            console.log(`📱 Orientation changed to: ${currentOrientation}`);
+            // Vibrate on successful orientation change when not locked
+            if (!orientationManager.screenLocked) {
+                analytics.vibrateClick();
             }
-        }
+        });
+
+        console.log('✅ Enhanced rotation lock system initialized (integrated with OrientationManager)');
     }
 
     /**
-     * Get current device orientation - NEW FEATURE
+     * Toggle rotation lock - delegates to OrientationManager
      */
-    getCurrentOrientation() {
-        // Modern Screen Orientation API (most accurate)
-        if (screen.orientation) {
-            const angle = screen.orientation.angle;
-            return (angle === 0 || angle === 180) ? 'portrait' : 'landscape';
-        }
-        
-        // Legacy orientation API
-        if (typeof window.orientation !== 'undefined') {
-            const angle = Math.abs(window.orientation);
-            return (angle === 0 || angle === 180) ? 'portrait' : 'landscape';
-        }
-        
-        // Fallback: use window dimensions
-        return window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
-    }
-
-    /**
-     * Toggle rotation lock
-     */
-    toggleRotationLock() {
-        this.rotationLocked = !this.rotationLocked;
-        storage.setItem('rotationLocked', this.rotationLocked.toString());
+    async toggleRotationLock() {
+        const result = await orientationManager.toggleRotationLock();
         
         const rotLockBtn = document.getElementById('rotLock');
         if (rotLockBtn) {
             this.updateRotationLockIcon(rotLockBtn);
+            
+            // Update button styling
+            rotLockBtn.style.transform = `scale(${result.locked ? '1.1' : '1.0'})`;
+            rotLockBtn.style.color = result.locked ? '#ff6b6b' : 'var(--text-secondary)';
         }
 
-        if (this.rotationLocked) {
-            this.lockOrientation();
-            this.showToast('🔒 Rotation locked to portrait', 'info');
+        // Show toast notification
+        if (result.locked) {
+            const orientation = result.lockedTo || 'optimal';
+            this.showToast(`🔒 Rotation locked to ${orientation}`, 'info');
         } else {
-            this.unlockOrientation();
             this.showToast('🔓 Rotation unlocked', 'info');
         }
 
-        eventBus.emit('orientation:lockChanged', { locked: this.rotationLocked });
+        eventBus.emit('orientation:lockChanged', result);
     }
 
     /**
      * Update rotation lock button icon
      */
     updateRotationLockIcon(button) {
-        if (this.rotationLocked) {
+        if (orientationManager.screenLocked) {
             button.textContent = '🔒';
-            button.title = 'Unlock Rotation';
+            button.title = `Unlock Rotation (Currently: ${orientationManager.lockedTo || 'locked'})`;
             button.style.opacity = '1';
         } else {
             button.textContent = '🔓';
-            button.title = 'Lock Rotation (Portrait)';
+            button.title = 'Lock Rotation (Auto-detect optimal)';
             button.style.opacity = '0.6';
-        }
-    }
-
-    /**
-     * Lock orientation to portrait
-     */
-    lockOrientation() {
-        try {
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock('portrait').catch(err => {
-                    console.warn('⚠️ Could not lock orientation:', err.message);
-                });
-            } else {
-                console.warn('⚠️ Screen Orientation API not supported');
-            }
-        } catch (err) {
-            console.warn('⚠️ Orientation lock error:', err.message);
-        }
-    }
-
-    /**
-     * Unlock orientation
-     */
-    unlockOrientation() {
-        try {
-            if (screen.orientation && screen.orientation.unlock) {
-                screen.orientation.unlock();
-            }
-        } catch (err) {
-            console.warn('⚠️ Orientation unlock error:', err.message);
         }
     }
 

@@ -4127,6 +4127,12 @@
             margin-bottom: 24px;
         }
 
+        [data-theme="dark"] .red-flags-section {
+            background: transparent;
+            border: 2px solid rgba(239, 68, 68, 0.4);
+            border-left: 4px solid #ef4444;
+        }
+
         .red-flags-section h3 {
             margin: 0 0 12px 0;
             font-size: 18px;
@@ -4134,10 +4140,18 @@
             color: #dc2626;
         }
 
+        [data-theme="dark"] .red-flags-section h3 {
+            color: #f87171;
+        }
+
         .red-flags-section p {
             margin: 0;
             color: #1c1c1e;
             line-height: 1.6;
+        }
+
+        [data-theme="dark"] .red-flags-section p {
+            color: var(--text-primary);
         }
 
         .differentials-section {
