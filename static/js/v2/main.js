@@ -2938,6 +2938,14 @@ class MLAQuizApp {
             }
             
             if (explanationText) {
+                // Strip <strong> and <b> tags from explanations so they render with normal weight
+                // Keep other HTML (links, <em>, <p>, <br>) intact.
+                try {
+                    explanationText = explanationText.replace(/<\/?(strong|b)(\s[^>]*)?>/gi, '');
+                } catch (err) {
+                    console.warn('Could not sanitize explanationText', err);
+                }
+
                 html += `
                     <div class="explanation-container">
                         <div class="explanation-title">📚 Explanation</div>

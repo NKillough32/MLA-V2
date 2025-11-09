@@ -6130,6 +6130,25 @@
             margin-bottom: 0;
         }
 
+        /* Force normal font-weight inside explanation blocks.
+           Some explanation content is generated with <strong> or <b>
+           tags or is affected by global heading styles. Make the
+           content readable by forcing normal weight here only. */
+        .explanation-container,
+        .explanation-container h4,
+        .explanation-container p,
+        .explanation-container .explanation-content,
+        .explanation-container .explanation-title,
+        .explanation-container .explanation-text,
+        .explanation-container strong,
+        .explanation-container b,
+        .explanation-container .explanation-content strong,
+        .explanation-container .explanation-content b,
+        .explanation-container a,
+        .explanation-container .explanation-content a {
+            font-weight: 400 !important;
+        }
+
         /* Link wrapping in explanations */
         .explanation-container a,
         .explanation-content a,
