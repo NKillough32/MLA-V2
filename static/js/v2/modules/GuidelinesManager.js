@@ -239,7 +239,7 @@ export class GuidelinesManager {
      * Get statistics about guidelines database
      * @returns {Object} Statistics
      */
-    async getStatistics() {
+    getStatistics() {
         
         const categories = {};
         const organisations = {};

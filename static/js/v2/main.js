@@ -149,9 +149,9 @@ class MLAQuizApp {
         
         console.log('✅ All managers initialized');
         console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
-        console.log(`   - Drugs: ${this.drugManager.getDrugCount()}`);
-        console.log(`   - Lab panels: ${this.labManager.getPanelCount()}, Tests: ${this.labManager.getTestCount()}`);
-        console.log(`   - Guidelines: ${this.guidelinesManager.getGuidelinesCount()}`);
+        console.log(`   - Drugs: ${this.drugManager.getStatistics().totalDrugs}`);
+        console.log(`   - Lab panels: ${this.labManager.getStatistics().totalPanels}, Tests: ${this.labManager.getStatistics().totalTests}`);
+        console.log(`   - Guidelines: ${this.guidelinesManager.getStatistics().total}`);
         console.log(`   - Mnemonics: ${this.mnemonicsManager.getStatistics().totalMnemonics}`);
         console.log(`   - Interpretation Tools: ${this.interpretationToolsManager.getStatistics().totalTools}`);
         console.log(`   - Treatment Ladders: ${this.laddersManager.getStatistics().totalLadders}`);

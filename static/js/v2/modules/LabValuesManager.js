@@ -338,14 +338,27 @@ export class LabValuesManager {
     }
 
     /**
-     * Get total test count
+     * Get total panel count
      */
-    async getTestCount() {
+    async getPanelCount() {
         
+        return this.labDatabase ? Object.keys(this.labDatabase).length : 0;
+    }
+
+    /**
+     * Get total test count across all panels
+     */
+    getTestCount() {
         if (!this.labDatabase) return 0;
-        return Object.values(this.labDatabase).reduce((sum, panel) => 
-            sum + Object.keys(panel.values).length, 0
-        );
+        
+        let totalTests = 0;
+        for (const panelKey in this.labDatabase) {
+            const panel = this.labDatabase[panelKey];
+            if (panel && panel.tests) {
+                totalTests += Object.keys(panel.tests).length;
+            }
+        }
+        return totalTests;
     }
 
     /**
@@ -353,7 +366,7 @@ export class LabValuesManager {
      */
     getStatistics() {
         return {
-            totalPanels: this.getPanelCount(),
+            totalPanels: this.labDatabase ? Object.keys(this.labDatabase).length : 0,
             totalTests: this.getTestCount(),
             totalViews: this.recentLabs ? this.recentLabs.length : 0,
             initialized: this.initialized
