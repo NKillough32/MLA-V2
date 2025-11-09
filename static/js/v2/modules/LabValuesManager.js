@@ -12,10 +12,40 @@ export class LabValuesManager {
         this.storage = storage;
         this.labDatabase = null;
         this.recentLabs = [];
+        this.initialized = false;
+        this.dataLoaded = false;
     }
 
     async initialize() {
-        console.log('🧪 Initializing LabValuesManager...');
+        if (this.initialized) {
+            console.log('🧪 LabValuesManager already initialized, skipping...');
+            return;
+        }
+
+        console.log('🧪 Initializing LabValuesManager (lazy loading)...');
+        
+        // Load recent labs from storage (lightweight)
+        this.recentLabs = this.storage.getItem('recentLabs', []);
+        
+        this.eventBus.emit('LAB_MANAGER_READY', { 
+            panelCount: 0, // Will be updated when data is loaded
+            testCount: 0,  // Will be updated when data is loaded
+            lazyLoaded: true
+        });
+        
+        this.initialized = true;
+        console.log('✅ LabValuesManager initialized (data will be loaded on first use)');
+    }
+
+    /**
+     * Load lab database lazily when first needed
+     */
+    async loadLabData() {
+        if (this.dataLoaded) {
+            return;
+        }
+
+        console.log('🧪 Loading lab database...');
         
         // Load lab database from window.labDatabase (loaded from labDatabase.js)
         if (typeof window.labDatabase !== 'undefined') {
@@ -26,25 +56,24 @@ export class LabValuesManager {
             this.labDatabase = {};
         }
 
-        // Load recent labs from storage
-        this.recentLabs = this.storage.getItem('recentLabs', []);
+        this.dataLoaded = true;
         
         const totalTests = Object.values(this.labDatabase).reduce((sum, panel) => 
             sum + Object.keys(panel.values || {}).length, 0
         );
         
-        this.eventBus.emit('LAB_MANAGER_READY', { 
+        this.eventBus.emit('LAB_DATA_LOADED', { 
             panelCount: Object.keys(this.labDatabase).length,
             testCount: totalTests
         });
-        
-        console.log('✅ LabValuesManager initialized');
     }
 
     /**
      * Search labs by panel name or test name
      */
-    searchLabs(query) {
+    async searchLabs(query) {
+        await this.loadLabData(); // Ensure data is loaded
+        
         if (!this.labDatabase) return [];
         
         const lowerQuery = query.toLowerCase().trim();
@@ -87,7 +116,9 @@ export class LabValuesManager {
     /**
      * Get all lab panels
      */
-    getPanels() {
+    async getPanels() {
+        await this.loadLabData(); // Ensure data is loaded
+        
         if (!this.labDatabase) return [];
         
         return Object.entries(this.labDatabase).map(([key, panel]) => ({
@@ -100,7 +131,9 @@ export class LabValuesManager {
     /**
      * Get a specific panel with all its tests
      */
-    getPanel(panelKey) {
+    async getPanel(panelKey) {
+        await this.loadLabData(); // Ensure data is loaded
+        
         if (!this.labDatabase || !this.labDatabase[panelKey]) return null;
         
         const panel = this.labDatabase[panelKey];
@@ -123,7 +156,9 @@ export class LabValuesManager {
     /**
      * Get a specific test
      */
-    getTest(panelKey, testKey) {
+    async getTest(panelKey, testKey) {
+        await this.loadLabData(); // Ensure data is loaded
+        
         if (!this.labDatabase || !this.labDatabase[panelKey] || 
             !this.labDatabase[panelKey].values[testKey]) return null;
         
@@ -169,7 +204,9 @@ export class LabValuesManager {
     /**
      * Get recent labs
      */
-    getRecentLabs() {
+    async getRecentLabs() {
+        await this.loadLabData(); // Ensure data is loaded
+        
         return this.recentLabs.map(item => {
             if (item.type === 'panel') {
                 const panel = this.labDatabase[item.key];
@@ -208,7 +245,9 @@ export class LabValuesManager {
     /**
      * Get panels by category
      */
-    getPanelsByCategory(categoryId) {
+    async getPanelsByCategory(categoryId) {
+        await this.loadLabData(); // Ensure data is loaded
+        
         const category = this.getCategories().find(cat => cat.id === categoryId);
         
         if (categoryId === 'all' || !category) {
@@ -234,7 +273,9 @@ export class LabValuesManager {
     /**
      * Get panel count
      */
-    getPanelCount() {
+    async getPanelCount() {
+        await this.loadLabData(); // Ensure data is loaded
+        
         return this.labDatabase ? Object.keys(this.labDatabase).length : 0;
     }
 
@@ -302,7 +343,9 @@ export class LabValuesManager {
     /**
      * Get total test count
      */
-    getTestCount() {
+    async getTestCount() {
+        await this.loadLabData(); // Ensure data is loaded
+        
         if (!this.labDatabase) return 0;
         return Object.values(this.labDatabase).reduce((sum, panel) => 
             sum + Object.keys(panel.values).length, 0

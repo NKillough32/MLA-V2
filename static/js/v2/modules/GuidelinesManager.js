@@ -11,6 +11,8 @@ export class GuidelinesManager {
         this.guidelinesDatabase = null;
         this.recentGuidelines = [];
         this.maxRecent = 10;
+        this.initialized = false;
+        this.dataLoaded = false;
     }
 
     /**
@@ -18,32 +20,56 @@ export class GuidelinesManager {
      * Loads the external guidelines database
      */
     async initialize() {
-        try {
-            // Check if guidelines database is loaded
-            if (!window.guidelinesDatabase) {
-                console.warn('⚠️ Guidelines database not loaded. Using empty database.');
-                this.guidelinesDatabase = {};
-            } else {
-                this.guidelinesDatabase = window.guidelinesDatabase;
-            }
-
-            // Load recent guidelines from storage
-            const stored = storage.getItem('recentGuidelines');
-            if (stored) {
-                this.recentGuidelines = stored;
-            }
-
-            console.log('✅ GuidelinesManager initialized with', Object.keys(this.guidelinesDatabase).length, 'guidelines');
-            eventBus.emit('GUIDELINES_MANAGER_READY', {
-                count: Object.keys(this.guidelinesDatabase).length,
-                categories: this.getCategories()
-            });
-
+        if (this.initialized) {
+            console.log('📋 GuidelinesManager already initialized, skipping...');
             return true;
-        } catch (error) {
-            console.error('❌ Failed to initialize GuidelinesManager:', error);
-            return false;
         }
+
+        console.log('📋 Initializing GuidelinesManager (lazy loading)...');
+        
+        // Load recent guidelines from storage (lightweight)
+        const stored = storage.getItem('recentGuidelines');
+        if (stored) {
+            this.recentGuidelines = stored;
+        }
+
+        this.initialized = true;
+        console.log('✅ GuidelinesManager initialized (data will be loaded on first use)');
+        
+        eventBus.emit('GUIDELINES_MANAGER_READY', {
+            count: 0, // Will be updated when data is loaded
+            categories: [], // Will be updated when data is loaded
+            lazyLoaded: true
+        });
+
+        return true;
+    }
+
+    /**
+     * Load guidelines database lazily when first needed
+     */
+    async loadGuidelinesData() {
+        if (this.dataLoaded) {
+            return;
+        }
+
+        console.log('📋 Loading guidelines database...');
+        
+        // Check if guidelines database is loaded
+        if (!window.guidelinesDatabase) {
+            console.warn('⚠️ Guidelines database not loaded. Using empty database.');
+            this.guidelinesDatabase = {};
+        } else {
+            this.guidelinesDatabase = window.guidelinesDatabase;
+        }
+
+        this.dataLoaded = true;
+        console.log('✅ Guidelines database loaded with', Object.keys(this.guidelinesDatabase).length, 'guidelines');
+        
+        eventBus.emit('GUIDELINES_DATA_LOADED', {
+            count: Object.keys(this.guidelinesDatabase).length,
+            categories: this.getCategories()
+        });
     }
 
     /**
@@ -51,7 +77,9 @@ export class GuidelinesManager {
      * @param {string} query - Search query
      * @returns {Array} Matching guidelines
      */
-    searchGuidelines(query) {
+    async searchGuidelines(query) {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         if (!query || query.length < 2) {
             return [];
         }
@@ -87,7 +115,9 @@ export class GuidelinesManager {
      * Get all available categories
      * @returns {Array} List of categories with icons
      */
-    getCategories() {
+    async getCategories() {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         const categories = [
             { id: 'all', name: 'All Guidelines', icon: '📋', count: Object.keys(this.guidelinesDatabase).length },
             { id: 'cardiovascular', name: 'Cardiovascular', icon: '❤️', count: 0 },
@@ -118,7 +148,9 @@ export class GuidelinesManager {
      * @param {string} categoryId - Category ID
      * @returns {Array} Guidelines in category
      */
-    getGuidelinesByCategory(categoryId) {
+    async getGuidelinesByCategory(categoryId) {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         if (categoryId === 'all') {
             return Object.entries(this.guidelinesDatabase).map(([key, guideline]) => ({
                 key: key,
@@ -139,7 +171,9 @@ export class GuidelinesManager {
      * @param {string} guidelineKey - Guideline key
      * @returns {Object} Guideline details
      */
-    getGuideline(guidelineKey) {
+    async getGuideline(guidelineKey) {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         const guideline = this.guidelinesDatabase[guidelineKey];
         
         if (guideline) {
@@ -190,7 +224,9 @@ export class GuidelinesManager {
      * Get recent guidelines
      * @returns {Array} Recent guidelines
      */
-    getRecentGuidelines() {
+    async getRecentGuidelines() {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         return this.recentGuidelines.map(recent => {
             const guideline = this.guidelinesDatabase[recent.key];
             return {
@@ -206,7 +242,9 @@ export class GuidelinesManager {
      * Get statistics about guidelines database
      * @returns {Object} Statistics
      */
-    getStatistics() {
+    async getStatistics() {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         const categories = {};
         const organisations = {};
 
@@ -232,7 +270,9 @@ export class GuidelinesManager {
      * Get guidelines count
      * @returns {number} Total guidelines count
      */
-    getGuidelinesCount() {
+    async getGuidelinesCount() {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         return Object.keys(this.guidelinesDatabase).length;
     }
 
@@ -241,7 +281,9 @@ export class GuidelinesManager {
      * @param {string} key - Guideline key
      * @returns {string} Formatted HTML
      */
-    formatGuidelineDetail(key) {
+    async formatGuidelineDetail(key) {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         const guideline = this.getGuideline(key);
         if (!guideline) {
             return '<p>Guideline not found</p>';
@@ -317,7 +359,9 @@ export class GuidelinesManager {
      * Get manager info for statistics
      * @returns {Object} Manager info with counts
      */
-    getInfo() {
+    async getInfo() {
+        await this.loadGuidelinesData(); // Ensure data is loaded
+        
         return {
             totalGuidelines: Object.keys(this.guidelinesDatabase || {}).length,
             categories: this.getCategories().length,

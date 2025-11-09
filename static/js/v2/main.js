@@ -159,6 +159,24 @@ class MLAQuizApp {
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
         // This will be called from index.html after V1's app.js loads
         console.log('✅ V2 Integration ready (awaiting V1 app instance)');
+        
+        // Register service worker after critical app initialization
+        this.registerServiceWorker();
+    }
+
+    /**
+     * Register service worker after critical initialization
+     */
+    registerServiceWorker() {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/static/sw.js')
+                .then(registration => {
+                    console.log('✅ Service Worker registered:', registration);
+                })
+                .catch(error => {
+                    console.warn('⚠️ Service Worker registration failed:', error);
+                });
+        }
     }
 
     /**
@@ -620,19 +638,6 @@ class MLAQuizApp {
      * Setup global event listeners
      */
     setupEventListeners() {
-        // Service Worker registration
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/static/sw.js')
-                    .then(registration => {
-                        console.log('✅ Service Worker registered:', registration);
-                    })
-                    .catch(error => {
-                        console.warn('⚠️ Service Worker registration failed:', error);
-                    });
-            });
-        }
-
         // Online/Offline status
         window.addEventListener('online', () => {
             console.log('🌐 App is online');

@@ -13,10 +13,39 @@ export class DrugReferenceManager {
         this.drugDatabase = null;
         this.recognition = null;
         this.recentDrugs = [];
+        this.initialized = false;
+        this.dataLoaded = false;
     }
 
     async initialize() {
-        console.log('🏥 Initializing DrugReferenceManager...');
+        if (this.initialized) {
+            console.log('🏥 DrugReferenceManager already initialized, skipping...');
+            return;
+        }
+
+        console.log('🏥 Initializing DrugReferenceManager (lazy loading)...');
+        
+        // Load recent drugs from storage (lightweight)
+        this.recentDrugs = this.storage.getItem('recentDrugs', []);
+        
+        this.eventBus.emit('DRUG_MANAGER_READY', { 
+            drugCount: 0, // Will be updated when data is loaded
+            lazyLoaded: true
+        });
+        
+        this.initialized = true;
+        console.log('✅ DrugReferenceManager initialized (data will be loaded on first use)');
+    }
+
+    /**
+     * Load drug database lazily when first needed
+     */
+    async loadDrugData() {
+        if (this.dataLoaded) {
+            return;
+        }
+
+        console.log('🏥 Loading drug database...');
         
         // Load drug database from window.drugDatabase (loaded from drugDatabase.js)
         if (typeof window.drugDatabase !== 'undefined') {
@@ -27,20 +56,19 @@ export class DrugReferenceManager {
             this.drugDatabase = {};
         }
 
-        // Load recent drugs from storage
-        this.recentDrugs = this.storage.getItem('recentDrugs', []);
+        this.dataLoaded = true;
         
-        this.eventBus.emit('DRUG_MANAGER_READY', { 
+        this.eventBus.emit('DRUG_DATA_LOADED', { 
             drugCount: Object.keys(this.drugDatabase).length 
         });
-        
-        console.log('✅ DrugReferenceManager initialized');
     }
 
     /**
      * Search drugs by name, class, or indication
      */
-    searchDrugs(query) {
+    async searchDrugs(query) {
+        await this.loadDrugData(); // Ensure data is loaded
+        
         if (!this.drugDatabase) return [];
         
         const lowerQuery = query.toLowerCase().trim();
@@ -137,7 +165,9 @@ export class DrugReferenceManager {
     /**
      * Get drugs by category
      */
-    getDrugsByCategory(category) {
+    async getDrugsByCategory(category) {
+        await this.loadDrugData(); // Ensure data is loaded
+        
         if (!this.drugDatabase) return [];
 
         const drugs = Object.entries(this.drugDatabase);
@@ -218,7 +248,9 @@ export class DrugReferenceManager {
     /**
      * Get drug details by key
      */
-    getDrug(drugKey) {
+    async getDrug(drugKey) {
+        await this.loadDrugData(); // Ensure data is loaded
+        
         if (!this.drugDatabase || !this.drugDatabase[drugKey]) return null;
         
         // Add to recent drugs
@@ -248,7 +280,9 @@ export class DrugReferenceManager {
     /**
      * Get recent drugs
      */
-    getRecentDrugs() {
+    async getRecentDrugs() {
+        await this.loadDrugData(); // Ensure data is loaded
+        
         return this.recentDrugs
             .map(key => this.drugDatabase[key] ? { key, ...this.drugDatabase[key] } : null)
             .filter(drug => drug !== null);
@@ -371,7 +405,9 @@ export class DrugReferenceManager {
     /**
      * Get drug count
      */
-    getDrugCount() {
+    async getDrugCount() {
+        await this.loadDrugData(); // Ensure data is loaded
+        
         return this.drugDatabase ? Object.keys(this.drugDatabase).length : 0;
     }
 
