@@ -1176,10 +1176,14 @@ export class QuizManager {
                     };
                     
                     // Add to uploaded quizzes in storage
-                    let uploadedQuizzes = this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+                    let uploadedQuizzes = await this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
                     uploadedQuizzes = uploadedQuizzes.filter(q => q.name !== quizData.name);
                     uploadedQuizzes.push(quizData);
-                    this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
+                    const storageSuccess = await this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
+                    
+                    if (!storageSuccess) {
+                        UIHelpers.showToast(`⚠️ Quiz uploaded but storage failed. Quiz may not persist on page reload.`, 'warning');
+                    }
                     
                     console.log(`✅ Quiz uploaded: ${quizData.name} (${quizData.questionCount} questions)`);
                 }
@@ -1358,13 +1362,13 @@ export class QuizManager {
      * Analytics helper methods - COMPREHENSIVE IMPLEMENTATIONS
      */
     
-    getSessionCount() {
-        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+    async getSessionCount() {
+        const history = await this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
         return history.length;
     }
 
-    getAverageScore() {
-        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+    async getAverageScore() {
+        const history = await this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
         
         if (history.length === 0) return 0;
         
@@ -1375,8 +1379,8 @@ export class QuizManager {
         return Math.round(totalPercentage / history.length);
     }
 
-    getImprovementTrend() {
-        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+    async getImprovementTrend() {
+        const history = await this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
         
         if (history.length < 2) return { trend: 'insufficient_data', change: 0 };
         
@@ -1401,8 +1405,8 @@ export class QuizManager {
         return { trend, change };
     }
 
-    getTotalStudyTime() {
-        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+    async getTotalStudyTime() {
+        const history = await this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
         
         if (history.length === 0) return 0;
         
@@ -1411,8 +1415,8 @@ export class QuizManager {
         }, 0);
     }
 
-    getStrengthsAndWeaknesses() {
-        const history = this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
+    async getStrengthsAndWeaknesses() {
+        const history = await this.storage.getItem(STORAGE_KEYS.QUIZ_HISTORY, []);
         
         const topicPerformance = {};
         
