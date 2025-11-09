@@ -1123,9 +1123,49 @@ class MLAQuizApp {
             </div>
         `;
         
-        // Scroll to top
-        panel.scrollTop = 0;
-        window.scrollTo(0, 0);
+        // Scroll to top of the newly-rendered drug detail.
+        // Some layouts put the scroll on a parent panel (tools-content/tool-panel),
+        // so do a defensive, deferred scroll: 1) scroll the closest scrollable ancestor,
+        // 2) ensure the .drug-detail element is visible via scrollIntoView, and
+        // 3) as a last resort scroll the window.
+        requestAnimationFrame(() => {
+            try {
+                // Ensure inner detail element is present
+                const detailEl = panel.querySelector('.drug-detail') || panel;
+
+                // Helper: find nearest scrollable ancestor (overflow-y: auto/scroll and scrollable)
+                const findScrollableAncestor = (el) => {
+                    let cursor = el;
+                    while (cursor && cursor !== document.body) {
+                        const style = window.getComputedStyle(cursor);
+                        const overflowY = style.overflowY;
+                        if ((overflowY === 'auto' || overflowY === 'scroll') && cursor.scrollHeight > cursor.clientHeight) {
+                            return cursor;
+                        }
+                        cursor = cursor.parentElement;
+                    }
+                    return null;
+                };
+
+                const scrollable = findScrollableAncestor(panel) || findScrollableAncestor(detailEl) || document.querySelector('.tools-content') || null;
+
+                if (scrollable) {
+                    scrollable.scrollTop = 0;
+                }
+
+                // Ensure the detail element itself is scrolled into view within its scroll container
+                if (detailEl && typeof detailEl.scrollIntoView === 'function') {
+                    detailEl.scrollIntoView({ behavior: 'auto', block: 'start' });
+                }
+
+                // Fallback to scrolling the window (use setTimeout to let layout settle on some devices)
+                setTimeout(() => {
+                    try { window.scrollTo({ top: 0, left: 0, behavior: 'auto' }); } catch (e) { /* ignore */ }
+                }, 50);
+            } catch (e) {
+                console.debug('Scroll-to-top fallback failed:', e);
+            }
+        });
     }
     
     speakDrugName(drugName) {
@@ -3828,6 +3868,84 @@ window._internalUnitConverter = (function() {
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL = mmol/L × 18';
                 break;
+            case 'cholesterol':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="5.2" step="0.01" oninput="window.callConvertUnits('cholesterol','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="200" step="0.1" oninput="window.callConvertUnits('cholesterol','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 38.67';
+                break;
+            case 'triglycerides':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="1.7" step="0.01" oninput="window.callConvertUnits('triglycerides','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="150" step="0.1" oninput="window.callConvertUnits('triglycerides','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 88.57';
+                break;
+            case 'creatinine':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>μmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="90" step="0.1" oninput="window.callConvertUnits('creatinine','umol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="1.02" step="0.01" oninput="window.callConvertUnits('creatinine','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ μmol/L × 0.011312';
+                break;
+            case 'bilirubin':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>μmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="17" step="0.1" oninput="window.callConvertUnits('bilirubin','umol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="1" step="0.01" oninput="window.callConvertUnits('bilirubin','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ μmol/L ÷ 17.1';
+                break;
+            case 'vitamin-d':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>nmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="50" step="0.1" oninput="window.callConvertUnits('vitamin-d','nmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>ng/mL:</label>
+                        <input type="number" id="unit-input-2" placeholder="20" step="0.1" oninput="window.callConvertUnits('vitamin-d','ngml')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> ng/mL = nmol/L ÷ 2.496';
+                break;
+            case 'albumin':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>g/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="40" step="0.1" oninput="window.callConvertUnits('albumin','gl')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>g/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="4" step="0.01" oninput="window.callConvertUnits('albumin','gdL')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> g/dL = g/L ÷ 10';
+                break;
             case 'weight':
                 fieldsHtml = `
                     <div class="calc-input-group">
@@ -3840,6 +3958,84 @@ window._internalUnitConverter = (function() {
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> 1 kg = 2.20462 lbs';
+                break;
+            case 'cholesterol':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 38.67;
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mmol/L = ${converted.toFixed(1)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value / 38.67;
+                    if (input1) input1.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(2)} mmol/L` : '';
+                }
+                break;
+            case 'triglycerides':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 88.57;
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mmol/L = ${converted.toFixed(1)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value / 88.57;
+                    if (input1) input1.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(2)} mmol/L` : '';
+                }
+                break;
+            case 'creatinine':
+                if (sourceUnit === 'umol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value * 0.011312; // μmol/L -> mg/dL
+                    if (input2) input2.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} μmol/L = ${converted.toFixed(2)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value / 0.011312; // mg/dL -> μmol/L
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(1)} μmol/L` : '';
+                }
+                break;
+            case 'bilirubin':
+                if (sourceUnit === 'umol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value / 17.1; // μmol/L -> mg/dL
+                    if (input2) input2.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} μmol/L = ${converted.toFixed(2)} mg/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value * 17.1; // mg/dL -> μmol/L
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} mg/dL = ${converted.toFixed(1)} μmol/L` : '';
+                }
+                break;
+            case 'vitamin-d':
+                if (sourceUnit === 'nmol') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value / 2.496; // nmol/L -> ng/mL
+                    if (input2) input2.value = converted ? converted.toFixed(2) : '';
+                    resultText = value ? `${value} nmol/L = ${converted.toFixed(2)} ng/mL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value * 2.496; // ng/mL -> nmol/L
+                    if (input1) input1.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} ng/mL = ${converted.toFixed(1)} nmol/L` : '';
+                }
+                break;
+            case 'albumin':
+                if (sourceUnit === 'gl') {
+                    value = parseFloat(input1 && input1.value) || 0;
+                    converted = value / 10; // g/L -> g/dL
+                    if (input2) input2.value = converted ? converted.toFixed(1) : '';
+                    resultText = value ? `${value} g/L = ${converted.toFixed(1)} g/dL` : '';
+                } else {
+                    value = parseFloat(input2 && input2.value) || 0;
+                    converted = value * 10; // g/dL -> g/L
+                    if (input1) input1.value = converted ? converted.toFixed(0) : '';
+                    resultText = value ? `${value} g/dL = ${converted.toFixed(0)} g/L` : '';
+                }
                 break;
             case 'height':
                 fieldsHtml = `

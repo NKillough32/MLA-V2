@@ -9663,8 +9663,46 @@
         })();
     </script>
     
-    <!-- V2 Main Application Entry Point (Modular architecture) -->
-    <script type="module" src="/static/js/v2/main.js"></script>
+    <!-- V2 Main Application Entry Point (Modular architecture)
+         NOTE: some older iOS/Safari versions cannot parse modern JS (class fields, etc.).
+         Do a quick feature-detect and load V2 only when supported; otherwise fall back
+         to a legacy V1 script (if available) and show a brief notice. -->
+    <script>
+        (function() {
+            // Quick parse-test for modern class field syntax (used heavily in V2).
+            // Use Function constructor to avoid transpiler/minifier issues with eval.
+            try {
+                new Function("class TestClass { field = 1 }");
+                // Modern JS supported -> load V2 module
+                var s = document.createElement('script');
+                s.type = 'module';
+                s.src = '/static/js/v2/main.js';
+                s.async = false;
+                document.head.appendChild(s);
+                console.log('✅ Modern JS supported: loading V2 app');
+            } catch (err) {
+                // Parsing failed -> older browser (likely older iOS). Load legacy V1 script
+                console.warn('⚠️ Modern JS unsupported in this browser. Falling back to legacy app.', err);
+
+                // Try to load the legacy V1 bundle (best-effort). Adjust path if your server
+                // serves it from a different location.
+                var s2 = document.createElement('script');
+                s2.src = '/V1/app.js';
+                s2.async = false;
+                document.head.appendChild(s2);
+
+                // Insert a visible notice so users know why behavior may differ
+                try {
+                    var notice = document.createElement('div');
+                    notice.style.cssText = 'padding:10px;background:#fff3cd;color:#856404;border:1px solid #ffeeba;margin:8px;text-align:center;font-size:0.95em;';
+                    notice.innerHTML = 'Notice: Your browser does not fully support the modern app. The site has loaded a legacy fallback for compatibility. For best results update iOS or use a modern browser.';
+                    document.body.insertBefore(notice, document.body.firstChild);
+                } catch (e) {
+                    console.debug('Failed to inject compatibility notice:', e);
+                }
+            }
+        })();
+    </script>
     
     <script>
         // V2 Application Initialization
