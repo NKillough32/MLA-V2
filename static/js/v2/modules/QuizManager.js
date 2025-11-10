@@ -224,12 +224,18 @@ export class QuizManager {
      * Filter questions by selected length (V1 compatibility)
      */
     filterQuestionsByLength(questions) {
-        if (!this.selectedQuizLength || this.selectedQuizLength === 'all' || this.selectedQuizLength >= questions.length) {
-            return questions;
+        const totalQuestions = questions.length;
+        const shouldKeepAll = !this.selectedQuizLength
+            || this.selectedQuizLength === 'all'
+            || this.selectedQuizLength >= totalQuestions;
+
+        // Always shuffle before deciding how many questions to use
+        const shuffled = this.shuffleArray(questions);
+
+        if (shouldKeepAll) {
+            return shuffled;
         }
-        
-        // Use proper Fisher-Yates shuffle instead of biased sort
-        const shuffled = this.shuffleArray([...questions]);
+
         return shuffled.slice(0, this.selectedQuizLength);
     }
 
@@ -243,10 +249,16 @@ export class QuizManager {
         }
 
         // Randomly select questions if needed
-        if (this.selectedQuizLength && this.selectedQuizLength < this.questions.length) {
-            this.questions = this.shuffleArray([...this.questions])
-                .slice(0, this.selectedQuizLength);
-        }
+        const totalQuestions = this.questions.length;
+        const shouldKeepAll = !this.selectedQuizLength
+            || this.selectedQuizLength === 'all'
+            || this.selectedQuizLength >= totalQuestions;
+
+        const shuffledQuestions = this.shuffleArray(this.questions);
+
+        this.questions = shouldKeepAll
+            ? shuffledQuestions
+            : shuffledQuestions.slice(0, this.selectedQuizLength);
 
         // Shuffle options for all questions to prevent pattern memorization (V1 compatibility)
         this.questions = this.questions.map(question => this.shuffleOptions(question));
