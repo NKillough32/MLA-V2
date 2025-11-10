@@ -56,6 +56,15 @@ export class CalculatorManager {
      */
     registerAllCalculators() {
         Object.entries(calculatorRegistry).forEach(([id, config]) => {
+            const isConfigObject = config && typeof config === 'object';
+            const hasTemplate = isConfigObject && typeof config.getTemplate === 'function';
+            const hasCalculate = isConfigObject && typeof config.calculate === 'function';
+
+            if (!hasTemplate || !hasCalculate) {
+                console.debug(`Skipping calculator registry entry '${id}' - missing template or calculate handler.`);
+                return;
+            }
+
             this.registerCalculator(id, config);
         });
     }

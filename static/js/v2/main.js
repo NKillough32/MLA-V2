@@ -4018,6 +4018,32 @@ window._internalUnitConverter = (function() {
                 `;
                 infoText = '<strong>Conversion:</strong> mg/dL ≈ μmol/L ÷ 17.1';
                 break;
+            case 'hba1c':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>HbA1c (%):</label>
+                        <input type="number" id="unit-input-1" placeholder="6.5" step="0.1" oninput="window.callConvertUnits('hba1c','percent')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>HbA1c (mmol/mol):</label>
+                        <input type="number" id="unit-input-2" placeholder="48" step="1" oninput="window.callConvertUnits('hba1c','mmolmol')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mmol/mol = (A1c% − 2.15) × 10.929. Estimated average glucose shown with results.';
+                break;
+            case 'hemoglobin':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>g/dL:</label>
+                        <input type="number" id="unit-input-1" placeholder="13.5" step="0.1" oninput="window.callConvertUnits('hemoglobin','gdl')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>g/L:</label>
+                        <input type="number" id="unit-input-2" placeholder="135" step="1" oninput="window.callConvertUnits('hemoglobin','gl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> g/L = g/dL × 10';
+                break;
             case 'vitamin-d':
                 fieldsHtml = `
                     <div class="calc-input-group">
@@ -4362,6 +4388,46 @@ window._internalUnitConverter = (function() {
                         converted = value * 17.1; // mg/dL -> μmol/L
                         if (input1) input1.value = converted.toFixed(1);
                         resultText = `${value} mg/dL = ${converted.toFixed(1)} μmol/L`;
+                    }
+                }
+                break;
+            case 'hba1c':
+                if (sourceUnit === 'percent') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = (value - 2.15) * 10.929; // % -> mmol/mol
+                        if (input2) input2.value = converted.toFixed(0);
+                        const eAGmg = (28.7 * value) - 46.7;
+                        const eAGmmol = eAGmg / 18;
+                        resultText = `${value}% = ${converted.toFixed(0)} mmol/mol` +
+                            `<br>Estimated average glucose: ${eAGmg.toFixed(0)} mg/dL (${eAGmmol.toFixed(1)} mmol/L)`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        const percent = (value / 10.929) + 2.15; // mmol/mol -> %
+                        if (input1) input1.value = percent.toFixed(1);
+                        const eAGmg = (28.7 * percent) - 46.7;
+                        const eAGmmol = eAGmg / 18;
+                        resultText = `${value} mmol/mol = ${percent.toFixed(1)}%` +
+                            `<br>Estimated average glucose: ${eAGmg.toFixed(0)} mg/dL (${eAGmmol.toFixed(1)} mmol/L)`;
+                    }
+                }
+                break;
+            case 'hemoglobin':
+                if (sourceUnit === 'gdl') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 10; // g/dL -> g/L
+                        if (input2) input2.value = converted.toFixed(0);
+                        resultText = `${value} g/dL = ${converted.toFixed(0)} g/L`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 10; // g/L -> g/dL
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value} g/L = ${converted.toFixed(1)} g/dL`;
                     }
                 }
                 break;
