@@ -121,7 +121,8 @@ class MLAQuizApp {
         quizManager.initialize(),
 
         // Initialize calculator manager (auto-registers all calculators)
-        calculatorManager.initialize();
+        // Ensure we await initialization because it loads data from async storage.
+        await calculatorManager.initialize();
 
         // Calculator bridge will be initialized after all other managers are ready
 

@@ -21,13 +21,26 @@ export class CalculatorManager {
     /**
      * Initialize calculator manager and auto-register all calculators
      */
-    initialize() {
+    async initialize() {
         // Initialize the bridge with dependencies
         this.bridge.initialize(eventBus, storage, analytics);
         
         // Load saved data
-        this.recentTools = storage.getItem(STORAGE_KEYS.RECENT_TOOLS, []);
-        this.toolNotes = storage.getItem(STORAGE_KEYS.TOOL_NOTES, {});
+        try {
+            const recent = await storage.getItem(STORAGE_KEYS.RECENT_TOOLS, []);
+            this.recentTools = Array.isArray(recent) ? recent : [];
+        } catch (e) {
+            console.warn('Failed to load recent tools from storage, using empty array', e);
+            this.recentTools = [];
+        }
+
+        try {
+            const notes = await storage.getItem(STORAGE_KEYS.TOOL_NOTES, {});
+            this.toolNotes = (notes && typeof notes === 'object') ? notes : {};
+        } catch (e) {
+            console.warn('Failed to load tool notes from storage, using empty object', e);
+            this.toolNotes = {};
+        }
         
         // Auto-register all calculators from registry
         this.registerAllCalculators();
