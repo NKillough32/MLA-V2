@@ -4065,7 +4065,7 @@ window._internalUnitConverter = (function() {
                     </div>
                     <div class="calc-input-group">
                         <label>g/dL:</label>
-                        <input type="number" id="unit-input-2" placeholder="4" step="0.01" oninput="window.callConvertUnits('albumin','gdL')">
+                        <input type="number" id="unit-input-2" placeholder="4" step="0.01" oninput="window.callConvertUnits('albumin','gdl')">
                     </div>
                 `;
                 infoText = '<strong>Conversion:</strong> g/dL = g/L ÷ 10';
@@ -4084,156 +4084,114 @@ window._internalUnitConverter = (function() {
                 infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 4.01';
                 break;
             case 'magnesium':
-                if (sourceUnit === 'mmol') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        converted = value * 2.431;
-                        if (input2) input2.value = converted.toFixed(2);
-                        resultText = `${value} mmol/L = ${converted.toFixed(2)} mg/dL`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        converted = value / 2.431;
-                        if (input1) input1.value = converted.toFixed(2);
-                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="0.8" step="0.01" oninput="window.callConvertUnits('magnesium','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="2" step="0.01" oninput="window.callConvertUnits('magnesium','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 2.431';
                 break;
             case 'phosphate':
-                if (sourceUnit === 'mmol') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        converted = value * 3.097;
-                        if (input2) input2.value = converted.toFixed(1);
-                        resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        converted = value / 3.097;
-                        if (input1) input1.value = converted.toFixed(2);
-                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="1.2" step="0.01" oninput="window.callConvertUnits('phosphate','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="3.7" step="0.01" oninput="window.callConvertUnits('phosphate','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ mmol/L × 3.097';
                 break;
             case 'urea':
-                if (sourceUnit === 'mmol') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        converted = value * 2.8;
-                        if (input2) input2.value = converted.toFixed(0);
-                        resultText = `${value} mmol/L (Urea) = ${converted.toFixed(0)} mg/dL (BUN)`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        converted = value / 2.8;
-                        if (input1) input1.value = converted.toFixed(1);
-                        resultText = `${value} mg/dL (BUN) = ${converted.toFixed(1)} mmol/L (Urea)`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmol/L (Urea):</label>
+                        <input type="number" id="unit-input-1" placeholder="7" step="0.1" oninput="window.callConvertUnits('urea','mmol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL (BUN):</label>
+                        <input type="number" id="unit-input-2" placeholder="20" step="0.1" oninput="window.callConvertUnits('urea','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL (BUN) ≈ mmol/L (Urea) × 2.8';
                 break;
             case 'blood-volume':
-                if (sourceUnit === 'ml') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        const units = value / 475; // average
-                        const pints = value / 473;
-                        if (input2) input2.value = units.toFixed(2);
-                        if (input3) input3.value = pints.toFixed(2);
-                        resultText = `${value} mL = ${units.toFixed(2)} units = ${pints.toFixed(2)} pints`;
-                    }
-                } else if (sourceUnit === 'units') {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        const ml = value * 475;
-                        const pints = ml / 473;
-                        if (input1) input1.value = ml.toFixed(0);
-                        if (input3) input3.value = pints.toFixed(2);
-                        resultText = `${value} units = ${ml.toFixed(0)} mL = ${pints.toFixed(2)} pints`;
-                    }
-                } else if (sourceUnit === 'pints') {
-                    value = parseFloat(input3 && input3.value);
-                    if (validNumber(value)) {
-                        const ml = value * 473;
-                        const units = ml / 475;
-                        if (input1) input1.value = ml.toFixed(0);
-                        if (input2) input2.value = units.toFixed(2);
-                        resultText = `${value} pints = ${ml.toFixed(0)} mL = ${units.toFixed(2)} units`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>Millilitres (mL):</label>
+                        <input type="number" id="unit-input-1" placeholder="500" step="1" oninput="window.callConvertUnits('blood-volume','ml')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Units:</label>
+                        <input type="number" id="unit-input-2" placeholder="1" step="0.01" oninput="window.callConvertUnits('blood-volume','units')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Pints:</label>
+                        <input type="number" id="unit-input-3" placeholder="1" step="0.01" oninput="window.callConvertUnits('blood-volume','pints')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> 1 unit ≈ 475 mL, 1 pint ≈ 473 mL';
                 break;
             case 'inr':
-                if (sourceUnit === 'inr') {
-                    value = parseFloat(input1 && input1.value);
-                    if (value && value > 0) {
-                        converted = 100 / value;
-                        if (input2) input2.value = converted.toFixed(0);
-                        resultText = `INR ${value} = ${converted.toFixed(0)}% prothrombin time`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (value && value > 0) {
-                        converted = 100 / value;
-                        if (input1) input1.value = converted.toFixed(1);
-                        resultText = `${value}% prothrombin time = INR ${converted.toFixed(1)}`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>INR:</label>
+                        <input type="number" id="unit-input-1" placeholder="2.5" step="0.1" oninput="window.callConvertUnits('inr','inr')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Prothrombin time (%):</label>
+                        <input type="number" id="unit-input-2" placeholder="40" step="1" oninput="window.callConvertUnits('inr','prothrombin')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> % prothrombin ≈ 100 ÷ INR';
                 break;
             case 'pressure':
-                if (sourceUnit === 'mmhg') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        converted = value / 7.50062; // mmHg -> kPa
-                        if (input2) input2.value = converted.toFixed(1);
-                        resultText = `${value} mmHg = ${converted.toFixed(1)} kPa`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        converted = value * 7.50062; // kPa -> mmHg
-                        if (input1) input1.value = converted.toFixed(0);
-                        resultText = `${value} kPa = ${converted.toFixed(0)} mmHg`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>mmHg:</label>
+                        <input type="number" id="unit-input-1" placeholder="120" step="0.1" oninput="window.callConvertUnits('pressure','mmhg')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>kPa:</label>
+                        <input type="number" id="unit-input-2" placeholder="16" step="0.1" oninput="window.callConvertUnits('pressure','kpa')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> kPa ≈ mmHg ÷ 7.50062';
                 break;
-            case 'uric-acid': {
-                // μmol/L <-> mg/dL
-                const factor = 0.0168;
-                if (sourceUnit === 'umol') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        converted = value * factor;
-                        if (input2) input2.value = converted.toFixed(1);
-                        resultText = `${value} μmol/L = ${converted.toFixed(1)} mg/dL`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        converted = value / factor;
-                        if (input1) input1.value = converted.toFixed(0);
-                        resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
-                    }
-                }
-            }
-            break;
+            case 'uric-acid':
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>μmol/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="300" step="1" oninput="window.callConvertUnits('uric-acid','umol')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>mg/dL:</label>
+                        <input type="number" id="unit-input-2" placeholder="5" step="0.1" oninput="window.callConvertUnits('uric-acid','mgdl')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> mg/dL ≈ μmol/L × 0.0168';
+                break;
             case 'ferritin':
-                // μg/L <-> ng/mL (same numeric value)
-                if (sourceUnit === 'ugl') {
-                    value = parseFloat(input1 && input1.value);
-                    if (validNumber(value)) {
-                        if (input2) input2.value = value;
-                        resultText = `${value} μg/L = ${value} ng/mL (same numeric value)`;
-                    }
-                } else {
-                    value = parseFloat(input2 && input2.value);
-                    if (validNumber(value)) {
-                        if (input1) input1.value = value;
-                        resultText = `${value} ng/mL = ${value} μg/L (same numeric value)`;
-                    }
-                }
+                fieldsHtml = `
+                    <div class="calc-input-group">
+                        <label>μg/L:</label>
+                        <input type="number" id="unit-input-1" placeholder="150" step="1" oninput="window.callConvertUnits('ferritin','ugl')">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>ng/mL:</label>
+                        <input type="number" id="unit-input-2" placeholder="150" step="1" oninput="window.callConvertUnits('ferritin','ngml')">
+                    </div>
+                `;
+                infoText = '<strong>Conversion:</strong> μg/L and ng/mL are numerically equivalent';
                 break;
+
             case 'weight':
                 fieldsHtml = `
                     <div class="calc-input-group">
@@ -4479,6 +4437,156 @@ window._internalUnitConverter = (function() {
                         converted = value / 4.0078; // mg/dL -> mmol/L
                         if (input1) input1.value = converted.toFixed(2);
                         resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
+                    }
+                }
+                break;
+
+            case 'magnesium':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 2.431;
+                        if (input2) input2.value = converted.toFixed(2);
+                        resultText = `${value} mmol/L = ${converted.toFixed(2)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 2.431;
+                        if (input1) input1.value = converted.toFixed(2);
+                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
+                    }
+                }
+                break;
+            case 'phosphate':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 3.097;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} mmol/L = ${converted.toFixed(1)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 3.097;
+                        if (input1) input1.value = converted.toFixed(2);
+                        resultText = `${value} mg/dL = ${converted.toFixed(2)} mmol/L`;
+                    }
+                }
+                break;
+            case 'urea':
+                if (sourceUnit === 'mmol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * 2.8;
+                        if (input2) input2.value = converted.toFixed(0);
+                        resultText = `${value} mmol/L (Urea) = ${converted.toFixed(0)} mg/dL (BUN)`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / 2.8;
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value} mg/dL (BUN) = ${converted.toFixed(1)} mmol/L (Urea)`;
+                    }
+                }
+                break;
+            case 'blood-volume':
+                if (sourceUnit === 'ml') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        const units = value / 475;
+                        const pints = value / 473;
+                        if (input2) input2.value = units.toFixed(2);
+                        if (input3) input3.value = pints.toFixed(2);
+                        resultText = `${value} mL = ${units.toFixed(2)} units = ${pints.toFixed(2)} pints`;
+                    }
+                } else if (sourceUnit === 'units') {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        const ml = value * 475;
+                        const pints = ml / 473;
+                        if (input1) input1.value = ml.toFixed(0);
+                        if (input3) input3.value = pints.toFixed(2);
+                        resultText = `${value} units = ${ml.toFixed(0)} mL = ${pints.toFixed(2)} pints`;
+                    }
+                } else if (sourceUnit === 'pints') {
+                    value = parseFloat(input3 && input3.value);
+                    if (validNumber(value)) {
+                        const ml = value * 473;
+                        const units = ml / 475;
+                        if (input1) input1.value = ml.toFixed(0);
+                        if (input2) input2.value = units.toFixed(2);
+                        resultText = `${value} pints = ${ml.toFixed(0)} mL = ${units.toFixed(2)} units`;
+                    }
+                }
+                break;
+            case 'inr':
+                if (sourceUnit === 'inr') {
+                    value = parseFloat(input1 && input1.value);
+                    if (value && value > 0) {
+                        converted = 100 / value;
+                        if (input2) input2.value = converted.toFixed(0);
+                        resultText = `INR ${value} = ${converted.toFixed(0)}% prothrombin time`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (value && value > 0) {
+                        converted = 100 / value;
+                        if (input1) input1.value = converted.toFixed(1);
+                        resultText = `${value}% prothrombin time = INR ${converted.toFixed(1)}`;
+                    }
+                }
+                break;
+            case 'pressure':
+                if (sourceUnit === 'mmhg') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value / 7.50062;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} mmHg = ${converted.toFixed(1)} kPa`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value * 7.50062;
+                        if (input1) input1.value = converted.toFixed(0);
+                        resultText = `${value} kPa = ${converted.toFixed(0)} mmHg`;
+                    }
+                }
+                break;
+            case 'uric-acid': {
+                const factor = 0.0168;
+                if (sourceUnit === 'umol') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        converted = value * factor;
+                        if (input2) input2.value = converted.toFixed(1);
+                        resultText = `${value} μmol/L = ${converted.toFixed(1)} mg/dL`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        converted = value / factor;
+                        if (input1) input1.value = converted.toFixed(0);
+                        resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
+                    }
+                }
+            }
+            break;
+            case 'ferritin':
+                if (sourceUnit === 'ugl') {
+                    value = parseFloat(input1 && input1.value);
+                    if (validNumber(value)) {
+                        if (input2) input2.value = value;
+                        resultText = `${value} μg/L = ${value} ng/mL (same numeric value)`;
+                    }
+                } else {
+                    value = parseFloat(input2 && input2.value);
+                    if (validNumber(value)) {
+                        if (input1) input1.value = value;
+                        resultText = `${value} ng/mL = ${value} μg/L (same numeric value)`;
                     }
                 }
                 break;
