@@ -7758,22 +7758,6 @@ class MLAQuizApp {
                     <div class="calc-input-group">
                         <label>mmHg:</label>
                         <input type="number" id="unit-input-1" placeholder="120" step="1" 
-                               oninput="window.callConvertUnits('pressure', 'mmhg')">
-                    </div>
-                    <div class="calc-input-group">
-                        <label>kPa:</label>
-                        <input type="number" id="unit-input-2" placeholder="16" step="0.1" 
-                               oninput="window.callConvertUnits('pressure', 'kpa')">
-                    </div>
-                `;
-                infoText = '<strong>Conversion:</strong> 1 kPa = 7.50062 mmHg | Normal BP: <120/80 mmHg (<16/10.7 kPa)';
-                break;
-                
-            case 'pressure':
-                fieldsHtml = `
-                    <div class="calc-input-group">
-                        <label>mmHg:</label>
-                        <input type="number" id="unit-input-1" placeholder="120" step="1" 
                                oninput="window.quizApp.convertUnits('pressure', 'mmhg')">
                     </div>
                     <div class="calc-input-group">
@@ -8084,16 +8068,16 @@ class MLAQuizApp {
                 if (sourceUnit === 'percent') {
                     value = parseFloat(input1.value);
                     if (validNumber(value)) {
-                        converted = (value - 2.15) * 10.929;
-                        input2.value = converted.toFixed(1);
-                        resultText = `${value} % = ${converted.toFixed(1)} mmol/mol`;
+                        converted = Math.round((value - 2.15) * 10.929);
+                        input2.value = converted;
+                        resultText = `${value} % = ${converted} mmol/mol`;
                     }
                 } else if (sourceUnit === 'mmol') {
                     value = parseFloat(input2.value);
                     if (validNumber(value)) {
                         converted = (value / 10.929) + 2.15;
-                        input1.value = converted.toFixed(2);
-                        resultText = `${value} mmol/mol = ${converted.toFixed(2)} %`;
+                        input1.value = converted.toFixed(1);
+                        resultText = `${value} mmol/mol = ${converted.toFixed(1)} %`;
                     }
                 }
                 break;
@@ -11080,15 +11064,19 @@ class MLAQuizApp {
     // Drug Reference Functions
     loadDrugReference() {
         // Check if drugDatabase is available (loaded from external file)
+        // If not loaded yet, wait and retry
         if (typeof window.drugDatabase === 'undefined') {
-            console.error('Drug database not loaded. Make sure drugDatabase.js is included before app.js');
+            console.log('⏳ Drug database not loaded yet, waiting...');
             const container = document.getElementById('drug-reference-container');
             if (container) {
-                container.innerHTML = '<div class="error-message">⚠️ Drug database not available. Please refresh the page.</div>';
+                container.innerHTML = '<div class="loading-message">Loading drug database...</div>';
             }
+            // Retry after a short delay
+            setTimeout(() => this.loadDrugReference(), 500);
             return;
         }
         
+        console.log('✅ Drug database loaded successfully');
         const drugDatabase = window.drugDatabase;
         
         const container = document.getElementById('drug-reference-container');
