@@ -3862,15 +3862,48 @@ class MLAQuizApp {
             toolsToggle.addEventListener('click', () => {
                 const wasOpen = toolsPanel.classList.contains('open');
                 toolsPanel.classList.toggle('open');
-                
-                // Initialize drug reference on first open
-                if (!wasOpen && !this.medicalToolsInitialized) {
-                    this.loadDrugReference();
-                    this.medicalToolsInitialized = true;
-                }
-                
                 console.log('🩺 Medical tools panel toggled');
             });
+        }
+
+        // Ensure medical tools are initialized once on app load.
+        // This preloads commonly used datasets and sets up calculator events so
+        // the tools are immediately available without waiting for the panel to open.
+        if (this.medicalToolsInitialized) {
+            console.log('🩺 Medical tools already initialized (skipping preload)');
+        } else {
+            this.medicalToolsInitialized = true;
+
+            // Preload key tool datasets and initialize calculators. Use try/catch to
+            // avoid blocking startup if an individual loader fails.
+            try {
+                this.loadDrugReference();
+                console.log('🩺 Preloaded drug reference');
+            } catch (err) {
+                console.warn('⚠️ preload loadDrugReference failed:', err);
+            }
+
+            try {
+                this.loadLabValues();
+                console.log('🩺 Preloaded lab values');
+            } catch (err) {
+                console.warn('⚠️ preload loadLabValues failed:', err);
+            }
+
+            try {
+                this.initializeCalculators();
+                console.log('🩺 Calculators initialized on load');
+            } catch (err) {
+                console.warn('⚠️ preload initializeCalculators failed:', err);
+            }
+
+            // Pre-populate other helpful tool UIs (triads, guidelines, mnemonics, etc.)
+            try { this.loadTriads(); console.log('🩺 Triads preloaded'); } catch (e) { console.warn('⚠️ preload loadTriads failed', e); }
+            try { this.loadGuidelines(); console.log('🩺 Guidelines preloaded'); } catch (e) { console.warn('⚠️ preload loadGuidelines failed', e); }
+            try { this.loadDifferentialDx(); console.log('🩺 Differential diagnoses preloaded'); } catch (e) { console.warn('⚠️ preload loadDifferentialDx failed', e); }
+            try { this.loadEmergencyProtocols(); console.log('🩺 Emergency protocols preloaded'); } catch (e) { console.warn('⚠️ preload loadEmergencyProtocols failed', e); }
+            try { this.loadInterpretationTools(); console.log('🩺 Interpretation tools preloaded'); } catch (e) { console.warn('⚠️ preload loadInterpretationTools failed', e); }
+            try { this.loadMnemonics(); console.log('🩺 Mnemonics preloaded'); } catch (e) { console.warn('⚠️ preload loadMnemonics failed', e); }
         }
 
         // Close panel
@@ -5173,6 +5206,10 @@ class MLAQuizApp {
             case 'asthma':
                 calculatorTitle = 'Asthma Severity Assessment';
                 calculatorContent += this.getAsthmaCalculator();
+                break;
+            case 'palliative':
+                calculatorTitle = 'Palliative Care Calculator';
+                calculatorContent += this.getPalliativeCalculator();
                 break;
             default:
                 calculatorTitle = 'Calculator';
