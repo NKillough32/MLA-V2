@@ -14,6 +14,7 @@ import base64
 import zipfile
 import threading
 from io import BytesIO
+from tempfile import SpooledTemporaryFile
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from flask import Flask, render_template, jsonify, request, send_from_directory
@@ -961,43 +962,38 @@ def upload_quiz():
             }), 400
 
         max_bytes = int(4.5 * 1024 * 1024)
+        temp_file = SpooledTemporaryFile(max_size=max_bytes + 1024, mode='w+b')
         try:
             try:
-                raw_data = file.read()
-            except Exception:
-                stream = getattr(file, 'stream', None)
-                if stream is None:
-                    raise
-                stream.seek(0)
-                raw_data = stream.read()
+                file.stream.seek(0)
+            except (AttributeError, OSError):
+                pass
 
-            if raw_data is None:
-                return jsonify({
-                    'success': False,
-                    'error': 'Unable to read uploaded file'
-                }), 400
-
-            if isinstance(raw_data, str):
-                raw_data = raw_data.encode('utf-8')
-
-            total_bytes = len(raw_data)
-            if total_bytes > max_bytes:
-                return jsonify({
-                    'success': False,
-                    'error': 'File too large. Maximum size is 4.5MB.'
-                }), 400
+            total_bytes = 0
+            while True:
+                chunk = file.stream.read(64 * 1024)
+                if not chunk:
+                    break
+                total_bytes += len(chunk)
+                if total_bytes > max_bytes:
+                    return jsonify({
+                        'success': False,
+                        'error': 'File too large. Maximum size is 4.5MB.'
+                    }), 400
+                temp_file.write(chunk)
 
             logger.info(f"File size: {total_bytes} bytes")
-            file_buffer = BytesIO(raw_data)
+            temp_file.seek(0)
 
             if file.filename.lower().endswith('.zip'):
                 logger.info("Processing ZIP file")
 
                 try:
+                    temp_file.seek(0)
                     quiz_data = []
                     image_data = {}  # Store images from zip
 
-                    with zipfile.ZipFile(file_buffer, 'r') as zip_ref:
+                    with zipfile.ZipFile(temp_file, 'r') as zip_ref:
                         # Get all files in the zip
                         all_files = zip_ref.namelist()
                         # Filter out directories and hidden files
@@ -1204,8 +1200,8 @@ def upload_quiz():
             elif file.filename.lower().endswith('.md'):
                 logger.info("Processing MD file")
                 try:
-                    file_buffer.seek(0)
-                    content = file_buffer.read().decode('utf-8')
+                    temp_file.seek(0)
+                    content = temp_file.read().decode('utf-8')
                     questions = PWAQuizLoader.parse_markdown_content(content, file.filename)
 
                     if not questions:
@@ -1240,8 +1236,7 @@ def upload_quiz():
                     'error': 'Unsupported file type. Please upload .md or .zip files'
                 }), 400
         finally:
-            if 'file_buffer' in locals():
-                file_buffer.close()
+            temp_file.close()
 
     except Exception as e:
         logger.error(f"Error uploading quiz: {e}")
