@@ -374,6 +374,29 @@ class LaddersManager {
             `;
             
             this.initializeLadderTabs();
+
+            // Inject small, local styles for ladders to improve default spacing
+            try {
+                if (!document.getElementById('ladders-styles')) {
+                    const s = document.createElement('style');
+                    s.id = 'ladders-styles';
+                    s.textContent = `
+                        .ladders-container { padding: 12px 8px; }
+                        .ladder-section { margin-bottom: 18px; }
+                        .ladder-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+                        .ladder-step .step-number { font-weight: 700; background:#f3f4f6;border-radius:6px;padding:8px 10px;min-width:48px;text-align:center }
+                        .medication-list { display: grid; gap:8px; }
+                        .med-item { background: var(--card-bg); padding:8px; border-radius:6px; display:flex; flex-direction:column; gap:4px }
+                        .adjuvant-grid { display:flex; gap:10px; flex-wrap:wrap }
+                        .adjuvant-card { background:var(--card-bg); padding:10px; border-radius:6px; min-width:180px }
+                        .opioid-conversion-table table { width:100%; border-collapse:collapse }
+                        .opioid-conversion-table td, .opioid-conversion-table th { padding:8px; border-bottom:1px solid var(--border) }
+                    `;
+                    document.head.appendChild(s);
+                }
+            } catch (e) {
+                console.debug('Could not inject ladders styles', e && e.message);
+            }
             console.log('✅ Ladders loaded successfully!');
             
         } catch (error) {
@@ -450,37 +473,43 @@ class LaddersManager {
      * @returns {string} HTML content for pain ladder
      */
     renderPainLadder() {
-        const painData = this.laddersData.pain;
-        
-        const stepsHtml = painData.steps.map(step => `
+        const painData = this.laddersData.pain || {};
+        const stepsArr = Array.isArray(painData.steps) ? painData.steps : [];
+        const adjuvantsObj = painData.adjuvants && typeof painData.adjuvants === 'object' ? painData.adjuvants : {};
+        const conversionsArr = Array.isArray(painData.conversions) ? painData.conversions : [];
+        const pearlsArr = Array.isArray(painData.clinicalPearls) ? painData.clinicalPearls : [];
+
+        const stepsHtml = stepsArr.map(step => `
             <div class="ladder-step step-${step.step}">
                 <div class="step-number">Step ${step.step}</div>
                 <div class="step-content">
                     <h4 style="color: ${step.color};">${step.severity}</h4>
                     <p><strong>${step.approach}</strong></p>
                     <div class="medication-list">
-                        ${step.medications.map(med => `
-                            <div class="med-item">
-                                <strong>${med.name}</strong>
-                                <span>${med.dose}</span>
-                                <span class="med-note">${med.note}</span>
+                        ${Array.isArray(step.medications) ? step.medications.map(med => `
+                            <div class="med-item" role="group" aria-label="${med.name}">
+                                <div style="display:flex;justify-content:space-between;align-items:center;">
+                                    <strong>${med.name}</strong>
+                                    <span class="med-dose" style="opacity:0.85;font-size:0.95em">${med.dose}</span>
+                                </div>
+                                ${med.note ? `<div class="med-note" style="color:var(--muted);font-size:0.9em">${med.note}</div>` : ''}
                             </div>
-                        `).join('')}
+                        `).join('') : ''}
                     </div>
                 </div>
             </div>
         `).join('');
 
-        const adjuvantsHtml = Object.entries(painData.adjuvants).map(([type, medications]) => `
+        const adjuvantsHtml = Object.entries(adjuvantsObj).map(([type, medications]) => `
             <div class="adjuvant-card">
                 <h5>${type}</h5>
                 <ul>
-                    ${medications.map(med => `<li>${med}</li>`).join('')}
+                    ${Array.isArray(medications) ? medications.map(med => `<li>${med}</li>`).join('') : ''}
                 </ul>
             </div>
         `).join('');
 
-        const conversionsTable = painData.conversions.map(conv => `
+        const conversionsTable = conversionsArr.map(conv => `
             <tr>
                 <td>${conv.medication}</td>
                 <td>${conv.route}</td>
@@ -523,7 +552,7 @@ class LaddersManager {
                 <div class="clinical-pearl">
                     <h4>💡 Clinical Pearls</h4>
                     <ul>
-                        ${painData.clinicalPearls.map(pearl => `<li>${pearl}</li>`).join('')}
+                        ${pearlsArr.map(pearl => `<li>${pearl}</li>`).join('')}
                     </ul>
                 </div>
             </div>
