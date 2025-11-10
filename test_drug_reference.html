@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Reference Test</title>
+</head>
+<body>
+    <h1>Drug Reference Test</h1>
+    <div id="test-results"></div>
+
+    <!-- Load drug database -->
+    <script src="static/js/data/drugDatabase.js"></script>
+
+    <!-- Load DrugReferenceManager -->
+    <script type="module">
+        import { DrugReferenceManager } from './static/js/v2/modules/DrugReferenceManager.js';
+
+        async function testDrugReference() {
+            const results = document.getElementById('test-results');
+            results.innerHTML = '<p>Testing drug reference...</p>';
+
+            try {
+                // Create drug manager
+                const drugManager = new DrugReferenceManager();
+
+                // Initialize
+                await drugManager.initialize();
+                results.innerHTML += '<p>✅ Drug manager initialized</p>';
+
+                // Test getDrug method
+                const testDrugKey = 'aciclovir'; // First drug in database
+                const drug = await drugManager.getDrug(testDrugKey);
+
+                if (drug) {
+                    results.innerHTML += '<p>✅ Drug retrieved successfully</p>';
+                    results.innerHTML += `<p>Drug name: ${drug.name}</p>`;
+                    results.innerHTML += `<p>Drug class: ${drug.class}</p>`;
+                    results.innerHTML += `<p>Drug dosing: ${drug.dosing}</p>`;
+                    results.innerHTML += `<p>Drug contraindications: ${drug.contraindications}</p>`;
+                } else {
+                    results.innerHTML += '<p>❌ Failed to retrieve drug</p>';
+                }
+
+                // Test async showDrugDetail simulation
+                async function simulateShowDrugDetail(drugKey) {
+                    const drug = await drugManager.getDrug(drugKey);
+                    if (!drug) {
+                        return 'Drug not found';
+                    }
+                    return `Drug: ${drug.name}, Class: ${drug.class}, Dosing: ${drug.dosing}`;
+                }
+
+                const detailResult = await simulateShowDrugDetail(testDrugKey);
+                results.innerHTML += `<p>✅ Async drug detail test: ${detailResult}</p>`;
+
+            } catch (error) {
+                results.innerHTML += `<p>❌ Error: ${error.message}</p>`;
+                console.error(error);
+            }
+        }
+
+        // Run test when page loads
+        window.addEventListener('load', testDrugReference);
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\Nicho\Desktop\MLA-V2\MLA-V2\test_drug_reference.html

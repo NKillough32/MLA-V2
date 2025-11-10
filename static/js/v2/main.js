@@ -1010,7 +1010,7 @@ class MLAQuizApp {
             }
             
             drugListContainer.innerHTML = results.map(drug => `
-                <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.showDrugDetail('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s;">
+                <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.handleDrugClick('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
@@ -1124,7 +1124,7 @@ class MLAQuizApp {
         if (!drugListContainer) return;
 
         drugListContainer.innerHTML = drugs.map(drug => `
-            <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.showDrugDetail('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.handleDrugClick('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
@@ -1138,8 +1138,8 @@ class MLAQuizApp {
         `).join('');
     }
     
-    showDrugDetail(drugKey) {
-        const drug = this.drugManager.getDrug(drugKey);
+    async showDrugDetail(drugKey) {
+        const drug = await this.drugManager.getDrug(drugKey);
         if (!drug) {
             console.error('Drug not found:', drugKey);
             return;
@@ -1275,6 +1275,10 @@ class MLAQuizApp {
                 console.debug('Scroll-to-top fallback failed:', e);
             }
         });
+    }
+    
+    handleDrugClick(drugKey) {
+        this.showDrugDetail(drugKey);
     }
     
     speakDrugName(drugName) {
