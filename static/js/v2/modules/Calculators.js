@@ -125,17 +125,21 @@ class V2Calculators {
     }
     
     calculateBMI() {
-        const weight = parseFloat(document.getElementById('bmi-weight')?.value);
-        const height = parseFloat(document.getElementById('bmi-height')?.value) / 100; // Convert cm to m
+        const weightInput = parseFloat(document.getElementById('bmi-weight')?.value);
+        const heightInput = parseFloat(document.getElementById('bmi-height')?.value);
         const waist = parseFloat(document.getElementById('bmi-waist')?.value);
         const ethnicity = document.getElementById('bmi-ethnicity')?.value;
         const sex = document.querySelector('input[name="bmi-sex"]:checked')?.value;
-        
-        if (!weight || !height) {
-            document.getElementById('bmi-result').innerHTML = '<p class="error">Please enter valid weight and height</p>';
-            return { error: 'Missing required inputs' };
+
+        const weight = Number.isFinite(weightInput) ? weightInput : NaN;
+        const heightCm = Number.isFinite(heightInput) ? heightInput : NaN;
+        const height = Number.isFinite(heightCm) ? heightCm / 100 : NaN; // Convert cm to m
+
+        if (!Number.isFinite(weight) || weight <= 0 || !Number.isFinite(heightCm) || heightCm <= 0) {
+            document.getElementById('bmi-result').innerHTML = '<p class="error">Enter weight > 0 kg and height > 0 cm</p>';
+            return { error: 'Invalid anthropometric inputs' };
         }
-        
+
         const bmi = weight / (height * height);
         let category = '';
         let color = '';
@@ -302,60 +306,65 @@ class V2Calculators {
     }
     
     calculateCHADS2VASc() {
-        let score = 0;
-        
-        if (document.getElementById('chads-chf')?.checked) score += 1;
-        if (document.getElementById('chads-htn')?.checked) score += 1;
-        if (document.getElementById('chads-age75')?.checked) score += 2;
-        if (document.getElementById('chads-diabetes')?.checked) score += 1;
-        if (document.getElementById('chads-stroke')?.checked) score += 2;
-        if (document.getElementById('chads-vascular')?.checked) score += 1;
-        if (document.getElementById('chads-age65')?.checked) score += 1;
-        
+        let baseScore = 0;
+
+        if (document.getElementById('chads-chf')?.checked) baseScore += 1;
+        if (document.getElementById('chads-htn')?.checked) baseScore += 1;
+        if (document.getElementById('chads-age75')?.checked) baseScore += 2;
+        if (document.getElementById('chads-diabetes')?.checked) baseScore += 1;
+        if (document.getElementById('chads-stroke')?.checked) baseScore += 2;
+        if (document.getElementById('chads-vascular')?.checked) baseScore += 1;
+        if (document.getElementById('chads-age65')?.checked) baseScore += 1;
+
         const isFemale = document.getElementById('chads-female')?.checked;
-        if (isFemale) score += 1;
-        
+        const femalePoint = isFemale && baseScore > 0 ? 1 : 0;
+        const score = baseScore + femalePoint;
+
         let risk = '';
         let recommendation = '';
         let color = '';
-        
+
         if (score === 0) {
-            risk = 'Low risk (0.2%/year)';
-            recommendation = 'No anticoagulation recommended';
+            risk = 'Low risk (~0.2% per year)';
+            recommendation = isFemale
+                ? 'Female sex alone does not warrant anticoagulation.'
+                : 'No anticoagulation recommended.';
             color = '#4CAF50';
         } else if (score === 1) {
-            if (isFemale && score === 1) {
-                risk = 'Low-moderate risk (0.6%/year)';
-                recommendation = 'Female sex alone: generally no anticoagulation. Consider other risk factors';
-                color = '#FF9800';
-            } else {
-                risk = 'Low-moderate risk (0.6%/year)';
-                recommendation = 'Consider anticoagulation (men ≥1 or women ≥2 with non-sex risk factors)';
-                color = '#FF9800';
-            }
+            risk = 'Low-moderate risk (~1.3% per year)';
+            recommendation = 'Consider anticoagulation after shared decision making (men with score of 1).';
+            color = '#FF9800';
         } else {
-            risk = 'High risk (≥2.2%/year)';
-            recommendation = 'Anticoagulation recommended unless contraindicated';
+            risk = 'High risk (≥2.2% per year)';
+            recommendation = 'Anticoagulation recommended unless contraindicated.';
             color = '#F44336';
         }
-        
-        const result = { score, risk, recommendation, color };
-        
+
+        const femaleExplanation = isFemale
+            ? (baseScore === 0
+                ? 'Female sex was selected without additional risk factors, so no point was added.'
+                : 'Female sex added one point because another CHA₂DS₂-VASc risk factor is present.')
+            : 'Score reflects non-sex risk factors only.';
+
+        const result = { score, baseScore, femalePoint, risk, recommendation, color, isFemale };
+
         document.getElementById('chads-result').innerHTML = `
             <div class="score-result">
                 <div class="score-value" style="color: ${color}">
                     Score: <strong>${score}</strong>
+                    ${isFemale ? `<span style="font-size: 0.8em; color: #555;">(Non-sex factors: ${baseScore}, Female point: ${femalePoint})</span>` : ''}
                 </div>
                 <div class="score-risk">${risk}</div>
                 <div class="score-recommendation" style="color: ${color}">
                     <strong>${recommendation}</strong>
                 </div>
                 <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
-                    Based on current UK guidelines. Consider individual bleeding risk (HAS-BLED).
+                    ${femaleExplanation}<br>
+                    Based on ESC/ACC guidelines. Consider individual bleeding risk (HAS-BLED).
                 </div>
             </div>
         `;
-        
+
         return result;
     }
     
@@ -566,74 +575,1341 @@ class V2Calculators {
         }
     }
     
-    // Placeholder methods for remaining categories - to be implemented
-    registerRespiratoryCalculators() { 
-        // Wells PE, PERC, CRB-65, etc. - to be implemented
+    registerRespiratoryCalculators() {
+        this.calculators.set('wells-pe', {
+            id: 'wells-pe',
+            name: 'Wells Score for PE',
+            category: TOOL_CATEGORIES.RESPIRATORY,
+            description: 'Estimates pre-test probability of pulmonary embolism',
+            keywords: ['wells', 'pulmonary embolism', 'pe', 'dvt'],
+            getTemplate: () => this.getWellsPETemplate(),
+            calculate: () => this.calculateWellsPE(),
+            bindEvents: () => this.bindWellsPEEvents()
+        });
+    }
+
+    /**
+     * Respiratory – Wells PE Score
+     */
+    getWellsPETemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Wells Score for Pulmonary Embolism</h4>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="wells-dvt"> Clinical signs of DVT (+3)</label>
+                    <label><input type="checkbox" id="wells-alternative"> PE more likely than alternative diagnosis (+3)</label>
+                    <label><input type="checkbox" id="wells-hr"> Heart rate &gt;100 bpm (+1.5)</label>
+                    <label><input type="checkbox" id="wells-immobilization"> Immobilization/surgery in past 4 weeks (+1.5)</label>
+                    <label><input type="checkbox" id="wells-history"> Previous DVT/PE (+1.5)</label>
+                    <label><input type="checkbox" id="wells-hemoptysis"> Hemoptysis (+1)</label>
+                    <label><input type="checkbox" id="wells-malignancy"> Malignancy treated in past 6 months (+1)</label>
+                </div>
+                <button class="calc-button" data-calc="wells-pe">Calculate Wells Score</button>
+                <div id="wells-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Reference: Wells PS et al. Ann Intern Med. 2001.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateWellsPE() {
+        let score = 0;
+
+        if (document.getElementById('wells-dvt')?.checked) score += 3;
+        if (document.getElementById('wells-alternative')?.checked) score += 3;
+        if (document.getElementById('wells-hr')?.checked) score += 1.5;
+        if (document.getElementById('wells-immobilization')?.checked) score += 1.5;
+        if (document.getElementById('wells-history')?.checked) score += 1.5;
+        if (document.getElementById('wells-hemoptysis')?.checked) score += 1;
+        if (document.getElementById('wells-malignancy')?.checked) score += 1;
+
+        let category = '';
+        let probability = '';
+        let recommendation = '';
+        let color = '';
+
+        if (score <= 1.5) {
+            category = 'Low probability';
+            probability = '≈10% prevalence of PE';
+            recommendation = 'Consider D-dimer to rule out PE in low-risk patients.';
+            color = '#4CAF50';
+        } else if (score <= 6) {
+            category = 'Moderate probability';
+            probability = '≈25-30% prevalence of PE';
+            recommendation = 'Obtain imaging (CTPA/VQ) or D-dimer depending on clinical context.';
+            color = '#FF9800';
+        } else {
+            category = 'High probability';
+            probability = '≈65% prevalence of PE';
+            recommendation = 'Proceed directly to imaging or treat empirically if unstable.';
+            color = '#F44336';
+        }
+
+        const result = { score, category, probability, recommendation, color };
+
+        document.getElementById('wells-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">
+                    Wells score: <strong>${score.toFixed(1)}</strong>
+                </div>
+                <div class="score-risk">${category} (${probability})</div>
+                <div class="score-recommendation" style="color: ${color};">
+                    ${recommendation}
+                </div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindWellsPEEvents() {
+        const button = document.querySelector('.calc-button[data-calc="wells-pe"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateWellsPE());
+        }
+    }
+
+    /**
+     * Critical Care – MEWS
+     */
+    getMEWSTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Modified Early Warning Score (MEWS)</h4>
+                <div class="calc-input-group">
+                    <label>Respiratory rate (breaths/min):</label>
+                    <input type="number" id="mews-rr" placeholder="16" min="0" step="1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Heart rate (beats/min):</label>
+                    <input type="number" id="mews-hr" placeholder="85" min="0" step="1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Systolic BP (mmHg):</label>
+                    <input type="number" id="mews-sbp" placeholder="120" min="0" step="1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Temperature (°C):</label>
+                    <input type="number" id="mews-temp" placeholder="37.0" step="0.1">
+                </div>
+                <div class="calc-select-group">
+                    <label>Neurology (AVPU):</label>
+                    <select id="mews-avpu">
+                        <option value="0" selected>Alert (0)</option>
+                        <option value="1">Responds to Voice (1)</option>
+                        <option value="2">Responds to Pain (2)</option>
+                        <option value="3">Unresponsive (3)</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="mews">Calculate MEWS</button>
+                <div id="mews-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Based on Subbe CP et al. QJM. 2001.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateMEWS() {
+        const rr = parseFloat(document.getElementById('mews-rr')?.value);
+        const hr = parseFloat(document.getElementById('mews-hr')?.value);
+        const sbp = parseFloat(document.getElementById('mews-sbp')?.value);
+        const temp = parseFloat(document.getElementById('mews-temp')?.value);
+        const avpu = parseInt(document.getElementById('mews-avpu')?.value, 10);
+
+        if (![rr, hr, sbp, temp].every(value => Number.isFinite(value) && value >= 0)) {
+            document.getElementById('mews-result').innerHTML = '<p class="error">Enter valid vitals for RR, HR, BP, and temperature.</p>';
+            return { error: 'Invalid MEWS inputs' };
+        }
+
+        const rrScore = rr <= 8 ? 3 : rr >= 9 && rr <= 14 ? 0 : rr <= 20 ? 1 : rr <= 29 ? 2 : 3;
+        const hrScore = hr <= 40 ? 2 : hr <= 50 ? 1 : hr <= 100 ? 0 : hr <= 110 ? 1 : hr <= 129 ? 2 : 3;
+        const sbpScore = sbp <= 70 ? 3 : sbp <= 80 ? 2 : sbp <= 100 ? 1 : sbp <= 199 ? 0 : 2;
+        const tempScore = temp < 35 ? 2 : temp <= 38.4 ? 0 : 2;
+        const neuroScore = Number.isFinite(avpu) ? avpu : 0;
+
+        const total = rrScore + hrScore + sbpScore + tempScore + neuroScore;
+
+        let riskLevel = '';
+        let action = '';
+        let color = '';
+
+        if (total <= 1) {
+            riskLevel = 'Low risk';
+            action = 'Continue routine monitoring.';
+            color = '#4CAF50';
+        } else if (total <= 4) {
+            riskLevel = 'Intermediate risk';
+            action = 'Increase frequency of observations and consider clinical review.';
+            color = '#FF9800';
+        } else {
+            riskLevel = 'High risk';
+            action = 'Urgent clinical review / consider rapid response activation.';
+            color = '#F44336';
+        }
+
+        const result = { total, riskLevel, action, componentScores: { rrScore, hrScore, sbpScore, tempScore, neuroScore } };
+
+        document.getElementById('mews-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">MEWS: <strong>${total}</strong></div>
+                <div class="score-risk">${riskLevel}</div>
+                <div class="score-recommendation" style="color: ${color};">${action}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
+                    RR ${rrScore} | HR ${hrScore} | SBP ${sbpScore} | Temp ${tempScore} | AVPU ${neuroScore}
+                </div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindMEWSEvents() {
+        const button = document.querySelector('.calc-button[data-calc="mews"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateMEWS());
+        }
+    }
+
+    /**
+     * Renal – Cockcroft-Gault
+     */
+    getCockcroftGaultTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Cockcroft-Gault Creatinine Clearance</h4>
+                <div class="calc-input-group">
+                    <label>Age (years):</label>
+                    <input type="number" id="cg-age" placeholder="65" min="0" step="1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Weight (kg):</label>
+                    <input type="number" id="cg-weight" placeholder="70" min="0" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum creatinine:</label>
+                    <div class="calc-inline">
+                        <input type="number" id="cg-creatinine" placeholder="1.2" min="0" step="0.01">
+                        <select id="cg-creatinine-unit">
+                            <option value="mgdl" selected>mg/dL</option>
+                            <option value="umol">µmol/L</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-checkbox-group">
+                    <label><input type="radio" name="cg-sex" value="male"> Male</label>
+                    <label><input type="radio" name="cg-sex" value="female"> Female</label>
+                </div>
+                <button class="calc-button" data-calc="cockcroft-gault">Calculate CrCl</button>
+                <div id="cg-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Use actual body weight; consider adjusted weight if BMI ≥30 kg/m².</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateCockcroftGault() {
+        const age = parseFloat(document.getElementById('cg-age')?.value);
+        const weight = parseFloat(document.getElementById('cg-weight')?.value);
+        const creatinineValue = parseFloat(document.getElementById('cg-creatinine')?.value);
+        const unit = document.getElementById('cg-creatinine-unit')?.value || 'mgdl';
+        const sex = document.querySelector('input[name="cg-sex"]:checked')?.value;
+
+        if (!Number.isFinite(age) || age <= 0 || !Number.isFinite(weight) || weight <= 0 || !Number.isFinite(creatinineValue) || creatinineValue <= 0 || !sex) {
+            document.getElementById('cg-result').innerHTML = '<p class="error">Enter age, weight, creatinine, and sex.</p>';
+            return { error: 'Invalid Cockcroft inputs' };
+        }
+
+        const creatinineMgDl = unit === 'umol' ? creatinineValue / 88.4 : creatinineValue;
+        const base = ((140 - age) * weight) / (72 * creatinineMgDl);
+        const crcl = sex === 'female' ? base * 0.85 : base;
+
+        let stage = '';
+        let color = '';
+
+        if (crcl >= 90) {
+            stage = 'Normal kidney function';
+            color = '#4CAF50';
+        } else if (crcl >= 60) {
+            stage = 'Mild impairment (CKD G2)';
+            color = '#8BC34A';
+        } else if (crcl >= 45) {
+            stage = 'Mild-moderate impairment (CKD G3a)';
+            color = '#FFC107';
+        } else if (crcl >= 30) {
+            stage = 'Moderate impairment (CKD G3b)';
+            color = '#FF9800';
+        } else if (crcl >= 15) {
+            stage = 'Severe impairment (CKD G4)';
+            color = '#FF5722';
+        } else {
+            stage = 'Kidney failure (CKD G5)';
+            color = '#F44336';
+        }
+
+        const result = { crcl, stage, sex, unit };
+
+        document.getElementById('cg-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">
+                    Creatinine clearance: <strong>${crcl.toFixed(1)} mL/min</strong>
+                </div>
+                <div class="score-risk">${stage}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
+                    Based on Cockcroft-Gault equation; adjust for drug dosing per product information.
+                </div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindCockcroftGaultEvents() {
+        const button = document.querySelector('.calc-button[data-calc="cockcroft-gault"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateCockcroftGault());
+        }
+    }
+
+    /**
+     * Gastroenterology – Child-Pugh
+     */
+    getChildPughTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Child-Pugh Score</h4>
+                <div class="calc-input-group">
+                    <label>Total bilirubin (mg/dL):</label>
+                    <input type="number" id="child-bilirubin" placeholder="1.8" min="0" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum albumin (g/dL):</label>
+                    <input type="number" id="child-albumin" placeholder="3.2" min="0" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>INR:</label>
+                    <input type="number" id="child-inr" placeholder="1.4" min="0" step="0.1">
+                </div>
+                <div class="calc-select-group">
+                    <label>Ascites:</label>
+                    <select id="child-ascites">
+                        <option value="1">None</option>
+                        <option value="2">Mild (diuretic controlled)</option>
+                        <option value="3">Moderate-severe (refractory)</option>
+                    </select>
+                </div>
+                <div class="calc-select-group">
+                    <label>Hepatic encephalopathy:</label>
+                    <select id="child-encephalopathy">
+                        <option value="1">None</option>
+                        <option value="2">Grade I-II</option>
+                        <option value="3">Grade III-IV</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="child-pugh">Calculate Child-Pugh</button>
+                <div id="child-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Higher scores indicate worse hepatic reserve; consider MELD for transplant evaluation.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateChildPugh() {
+        const bilirubin = parseFloat(document.getElementById('child-bilirubin')?.value);
+        const albumin = parseFloat(document.getElementById('child-albumin')?.value);
+        const inr = parseFloat(document.getElementById('child-inr')?.value);
+        const ascites = parseInt(document.getElementById('child-ascites')?.value, 10);
+        const encephalopathy = parseInt(document.getElementById('child-encephalopathy')?.value, 10);
+
+        if (![bilirubin, albumin, inr].every(value => Number.isFinite(value) && value >= 0)) {
+            document.getElementById('child-result').innerHTML = '<p class="error">Enter numeric values for bilirubin, albumin, and INR.</p>';
+            return { error: 'Invalid Child-Pugh inputs' };
+        }
+
+        const bilirubinScore = bilirubin < 2 ? 1 : bilirubin <= 3 ? 2 : 3;
+        const albuminScore = albumin > 3.5 ? 1 : albumin >= 2.8 ? 2 : 3;
+        const inrScore = inr < 1.7 ? 1 : inr <= 2.3 ? 2 : 3;
+        const ascitesScore = Number.isFinite(ascites) ? ascites : 1;
+        const encephalopathyScore = Number.isFinite(encephalopathy) ? encephalopathy : 1;
+
+        const total = bilirubinScore + albuminScore + inrScore + ascitesScore + encephalopathyScore;
+
+        let classification = '';
+        let prognosis = '';
+        let color = '';
+
+        if (total <= 6) {
+            classification = 'Class A';
+            prognosis = 'Well-compensated disease (~100% 1-year survival)';
+            color = '#4CAF50';
+        } else if (total <= 9) {
+            classification = 'Class B';
+            prognosis = 'Significant functional compromise (~80% 1-year survival)';
+            color = '#FF9800';
+        } else {
+            classification = 'Class C';
+            prognosis = 'Decompensated disease (~45% 1-year survival)';
+            color = '#F44336';
+        }
+
+        const result = {
+            total,
+            classification,
+            prognosis,
+            componentScores: { bilirubinScore, albuminScore, inrScore, ascitesScore, encephalopathyScore }
+        };
+
+        document.getElementById('child-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Child-Pugh: <strong>${total}</strong> (${classification})</div>
+                <div class="score-risk">${prognosis}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
+                    Bili ${bilirubinScore} | Alb ${albuminScore} | INR ${inrScore} | Ascites ${ascitesScore} | Encephalopathy ${encephalopathyScore}
+                </div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindChildPughEvents() {
+        const button = document.querySelector('.calc-button[data-calc="child-pugh"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateChildPugh());
+        }
+    }
+
+    /**
+     * Emergency – Modified Centor
+     */
+    getCentorTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Modified Centor (McIsaac) Score</h4>
+                <div class="calc-checkbox-group">
+                    <label><input type="checkbox" id="centor-exudate"> Tonsillar exudate/swelling (+1)</label>
+                    <label><input type="checkbox" id="centor-adenopathy"> Tender anterior cervical adenopathy (+1)</label>
+                    <label><input type="checkbox" id="centor-fever"> Temperature &gt;38°C (+1)</label>
+                    <label><input type="checkbox" id="centor-cough"> Absence of cough (+1)</label>
+                </div>
+                <div class="calc-input-group">
+                    <label>Age (years):</label>
+                    <input type="number" id="centor-age" placeholder="25" min="0" step="1">
+                </div>
+                <button class="calc-button" data-calc="centor">Calculate Centor Score</button>
+                <div id="centor-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>McIsaac WJ et al. JAMA. 2004.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateCentor() {
+        let score = 0;
+
+        if (document.getElementById('centor-exudate')?.checked) score += 1;
+        if (document.getElementById('centor-adenopathy')?.checked) score += 1;
+        if (document.getElementById('centor-fever')?.checked) score += 1;
+        if (document.getElementById('centor-cough')?.checked) score += 1;
+
+        const age = parseFloat(document.getElementById('centor-age')?.value);
+        if (Number.isFinite(age)) {
+            if (age >= 3 && age <= 14) {
+                score += 1;
+            } else if (age >= 45) {
+                score -= 1;
+            }
+        }
+
+        let risk = '';
+        let probability = '';
+        let recommendation = '';
+        let color = '';
+
+        if (score <= 0) {
+            risk = 'Very low risk';
+            probability = '≤1% likelihood of Group A Streptococcus';
+            recommendation = 'No testing or antibiotics needed unless clinical suspicion is high.';
+            color = '#4CAF50';
+        } else if (score <= 1) {
+            risk = 'Low risk';
+            probability = '5-10% likelihood';
+            recommendation = 'Consider throat culture or rapid antigen test if symptoms persist.';
+            color = '#8BC34A';
+        } else if (score === 2) {
+            risk = 'Intermediate risk';
+            probability = '11-17% likelihood';
+            recommendation = 'Perform rapid antigen test or culture; treat if positive.';
+            color = '#FFC107';
+        } else if (score === 3) {
+            risk = 'Moderate risk';
+            probability = '28-35% likelihood';
+            recommendation = 'Test for strep; consider empiric treatment if testing unavailable.';
+            color = '#FF9800';
+        } else {
+            risk = 'High risk';
+            probability = '38-57% likelihood';
+            recommendation = 'Empiric antibiotics or confirmatory testing recommended.';
+            color = '#F44336';
+        }
+
+        const result = { score, risk, probability, recommendation, color };
+
+        document.getElementById('centor-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Centor score: <strong>${score}</strong></div>
+                <div class="score-risk">${risk} (${probability})</div>
+                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindCentorEvents() {
+        const button = document.querySelector('.calc-button[data-calc="centor"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateCentor());
+        }
+    }
+
+    /**
+     * Geriatrics – Timed Up and Go
+     */
+    getTimedUpGoTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Timed Up &amp; Go (TUG) Test</h4>
+                <div class="calc-input-group">
+                    <label>Time to complete test (seconds):</label>
+                    <input type="number" id="tug-time" placeholder="12" min="0" step="0.1">
+                </div>
+                <button class="calc-button" data-calc="timed-up-go">Assess Mobility</button>
+                <div id="tug-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Podsiadlo D &amp; Richardson S. J Am Geriatr Soc. 1991.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateTimedUpGo() {
+        const time = parseFloat(document.getElementById('tug-time')?.value);
+
+        if (!Number.isFinite(time) || time <= 0) {
+            document.getElementById('tug-result').innerHTML = '<p class="error">Enter a valid TUG time in seconds.</p>';
+            return { error: 'Invalid TUG time' };
+        }
+
+        let category = '';
+        let interpretation = '';
+        let color = '';
+
+        if (time < 10) {
+            category = 'Normal mobility';
+            interpretation = 'Independent with minimal fall risk.';
+            color = '#4CAF50';
+        } else if (time <= 19) {
+            category = 'Mostly independent';
+            interpretation = 'Low to moderate fall risk; review gait aids and home safety.';
+            color = '#8BC34A';
+        } else if (time <= 29) {
+            category = 'Varied mobility';
+            interpretation = 'Needs assistance for some activities; consider physiotherapy referral.';
+            color = '#FFC107';
+        } else {
+            category = 'High fall risk';
+            interpretation = 'Requires comprehensive falls assessment and support.';
+            color = '#F44336';
+        }
+
+        const result = { time, category, interpretation };
+
+        document.getElementById('tug-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">${time.toFixed(1)} seconds</div>
+                <div class="score-risk">${category}</div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindTimedUpGoEvents() {
+        const button = document.querySelector('.calc-button[data-calc="timed-up-go"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateTimedUpGo());
+        }
+    }
+
+    /**
+     * Psychiatry – PHQ-9
+     */
+    getPHQ9Template() {
+        const options = `
+            <option value="0">Not at all (0)</option>
+            <option value="1">Several days (1)</option>
+            <option value="2">More than half the days (2)</option>
+            <option value="3">Nearly every day (3)</option>
+        `;
+
+        return `
+            <div class="calculator-form">
+                <h4>PHQ-9 Depression Severity</h4>
+                <p><small>Over the last two weeks, how often have you been bothered by the following problems?</small></p>
+                ${Array.from({ length: 9 }).map((_, index) => `
+                    <div class="calc-select-group">
+                        <label>Question ${index + 1}</label>
+                        <select id="phq-item${index + 1}">
+                            ${options}
+                        </select>
+                    </div>
+                `).join('')}
+                <div class="calc-select-group">
+                    <label>If you checked any problems, how difficult have these made work/home duties?</label>
+                    <select id="phq-difficulty">
+                        <option value="0" selected>Not difficult at all</option>
+                        <option value="1">Somewhat difficult</option>
+                        <option value="2">Very difficult</option>
+                        <option value="3">Extremely difficult</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="phq9">Calculate PHQ-9</button>
+                <div id="phq-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Kroenke K et al. J Gen Intern Med. 2001.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculatePHQ9() {
+        let total = 0;
+        const responses = [];
+
+        for (let i = 1; i <= 9; i += 1) {
+            const value = parseInt(document.getElementById(`phq-item${i}`)?.value, 10) || 0;
+            responses.push(value);
+            total += value;
+        }
+
+        const difficulty = parseInt(document.getElementById('phq-difficulty')?.value, 10) || 0;
+
+        let severity = '';
+        let recommendation = '';
+        let color = '';
+
+        if (total <= 4) {
+            severity = 'Minimal depression';
+            recommendation = 'Monitor; consider repeat screening if symptoms persist.';
+            color = '#4CAF50';
+        } else if (total <= 9) {
+            severity = 'Mild depression';
+            recommendation = 'Use watchful waiting; consider brief psychotherapy if symptoms impact function.';
+            color = '#8BC34A';
+        } else if (total <= 14) {
+            severity = 'Moderate depression';
+            recommendation = 'Develop treatment plan, which may include psychotherapy or medication.';
+            color = '#FFC107';
+        } else if (total <= 19) {
+            severity = 'Moderately severe depression';
+            recommendation = 'Initiate active treatment; consider combined therapy.';
+            color = '#FF9800';
+        } else {
+            severity = 'Severe depression';
+            recommendation = 'Immediate initiation of treatment and referral to mental health specialist recommended.';
+            color = '#F44336';
+        }
+
+        const difficultyText = ['no reported difficulty', 'some difficulty', 'very difficult', 'extremely difficult'][difficulty] || 'no reported difficulty';
+
+        const result = { total, severity, recommendation, responses, difficulty };
+
+        document.getElementById('phq-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">PHQ-9 total: <strong>${total}</strong></div>
+                <div class="score-risk">${severity}</div>
+                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">Patient reports ${difficultyText} in daily functioning.</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindPHQ9Events() {
+        const button = document.querySelector('.calc-button[data-calc="phq9"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculatePHQ9());
+        }
+    }
+
+    /**
+     * Endocrine – HbA1c to eAG
+     */
+    getHba1cTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>HbA1c to Estimated Average Glucose (eAG)</h4>
+                <div class="calc-input-group">
+                    <label>HbA1c (%):</label>
+                    <input type="number" id="hba1c-value" placeholder="7.2" min="0" step="0.1">
+                </div>
+                <div class="calc-select-group">
+                    <label>Display eAG in:</label>
+                    <select id="hba1c-eag-unit">
+                        <option value="mgdl" selected>mg/dL</option>
+                        <option value="mmol">mmol/L</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="hba1c-eag">Convert HbA1c</button>
+                <div id="hba1c-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>ADAG Study Group. Diabetes Care. 2008.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateHba1cEag() {
+        const a1c = parseFloat(document.getElementById('hba1c-value')?.value);
+        const unit = document.getElementById('hba1c-eag-unit')?.value || 'mgdl';
+
+        if (!Number.isFinite(a1c) || a1c <= 0) {
+            document.getElementById('hba1c-result').innerHTML = '<p class="error">Enter a valid HbA1c percentage.</p>';
+            return { error: 'Invalid HbA1c' };
+        }
+
+        const eagMg = 28.7 * a1c - 46.7;
+        const eag = unit === 'mmol' ? eagMg / 18 : eagMg;
+
+        const result = { a1c, eagMg, unit, eag };
+
+        document.getElementById('hba1c-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value">Estimated average glucose: <strong>${unit === 'mmol' ? eag.toFixed(1) + ' mmol/L' : eag.toFixed(0) + ' mg/dL'}</strong></div>
+                <div class="score-risk">Every 1% change in HbA1c ≈ 29 mg/dL (1.6 mmol/L) change in eAG.</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindHba1cEvents() {
+        const button = document.querySelector('.calc-button[data-calc="hba1c-eag"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateHba1cEag());
+        }
+    }
+
+    /**
+     * Chemistry – Anion Gap
+     */
+    getAnionGapTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Serum Anion Gap</h4>
+                <div class="calc-input-group">
+                    <label>Sodium (Na⁺) (mmol/L):</label>
+                    <input type="number" id="anion-na" placeholder="140" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Potassium (K⁺) (mmol/L) - optional:</label>
+                    <input type="number" id="anion-k" placeholder="4.0" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Chloride (Cl⁻) (mmol/L):</label>
+                    <input type="number" id="anion-cl" placeholder="105" step="0.1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Bicarbonate (HCO₃⁻) (mmol/L):</label>
+                    <input type="number" id="anion-hco3" placeholder="24" step="0.1">
+                </div>
+                <button class="calc-button" data-calc="anion-gap">Calculate Anion Gap</button>
+                <div id="anion-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Correct for albumin: add 2.5 mmol/L for each 1 g/dL decrease below 4.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateAnionGap() {
+        const sodium = parseFloat(document.getElementById('anion-na')?.value);
+        const potassium = parseFloat(document.getElementById('anion-k')?.value);
+        const chloride = parseFloat(document.getElementById('anion-cl')?.value);
+        const bicarbonate = parseFloat(document.getElementById('anion-hco3')?.value);
+
+        if (![sodium, chloride, bicarbonate].every(value => Number.isFinite(value))) {
+            document.getElementById('anion-result').innerHTML = '<p class="error">Enter sodium, chloride, and bicarbonate values.</p>';
+            return { error: 'Invalid anion gap inputs' };
+        }
+
+        const kComponent = Number.isFinite(potassium) ? potassium : 0;
+        const ag = sodium + kComponent - (chloride + bicarbonate);
+
+        let interpretation = '';
+        let color = '';
+
+        if (ag < 8) {
+            interpretation = 'Low anion gap – consider laboratory error, hypoalbuminemia, or paraproteinemia.';
+            color = '#03A9F4';
+        } else if (ag <= 12) {
+            interpretation = 'Normal anion gap – evaluate for non-gap metabolic acidosis if pH low.';
+            color = '#4CAF50';
+        } else if (ag <= 16) {
+            interpretation = 'Borderline high – correlate clinically and consider albumin correction.';
+            color = '#FFC107';
+        } else {
+            interpretation = 'High anion gap metabolic acidosis – assess for MUDPILES/“GOLDMARK” etiologies.';
+            color = '#F44336';
+        }
+
+        const result = { ag, interpretation };
+
+        document.getElementById('anion-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Anion gap: <strong>${ag.toFixed(1)} mmol/L</strong></div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindAnionGapEvents() {
+        const button = document.querySelector('.calc-button[data-calc="anion-gap"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateAnionGap());
+        }
+    }
+
+    /**
+     * Obstetrics – Bishop Score
+     */
+    getBishopTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Bishop Score</h4>
+                <div class="calc-select-group">
+                    <label>Cervical dilation (cm):</label>
+                    <select id="bishop-dilation">
+                        <option value="0">Closed (0)</option>
+                        <option value="1">1-2 cm (1)</option>
+                        <option value="2">3-4 cm (2)</option>
+                        <option value="3">5-6 cm (3)</option>
+                    </select>
+                </div>
+                <div class="calc-select-group">
+                    <label>Cervical effacement (%):</label>
+                    <select id="bishop-effacement">
+                        <option value="0">&lt;30% (0)</option>
+                        <option value="1">40-50% (1)</option>
+                        <option value="2">60-70% (2)</option>
+                        <option value="3">&gt;=80% (3)</option>
+                    </select>
+                </div>
+                <div class="calc-select-group">
+                    <label>Fetal station:</label>
+                    <select id="bishop-station">
+                        <option value="0">-3 (0)</option>
+                        <option value="1">-2 (1)</option>
+                        <option value="2">-1 / 0 (2)</option>
+                        <option value="3">+1 / +2 (3)</option>
+                    </select>
+                </div>
+                <div class="calc-select-group">
+                    <label>Cervical consistency:</label>
+                    <select id="bishop-consistency">
+                        <option value="0">Firm (0)</option>
+                        <option value="1">Medium (1)</option>
+                        <option value="2">Soft (2)</option>
+                    </select>
+                </div>
+                <div class="calc-select-group">
+                    <label>Cervical position:</label>
+                    <select id="bishop-position">
+                        <option value="0">Posterior (0)</option>
+                        <option value="1">Mid-position (1)</option>
+                        <option value="2">Anterior (2)</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="bishop-score">Calculate Bishop Score</button>
+                <div id="bishop-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Score ≥8 suggests favourable cervix for induction.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateBishop() {
+        const dilation = parseInt(document.getElementById('bishop-dilation')?.value, 10) || 0;
+        const effacement = parseInt(document.getElementById('bishop-effacement')?.value, 10) || 0;
+        const station = parseInt(document.getElementById('bishop-station')?.value, 10) || 0;
+        const consistency = parseInt(document.getElementById('bishop-consistency')?.value, 10) || 0;
+        const position = parseInt(document.getElementById('bishop-position')?.value, 10) || 0;
+
+        const total = dilation + effacement + station + consistency + position;
+
+        let interpretation = '';
+        let color = '';
+
+        if (total >= 8) {
+            interpretation = 'Favourable cervix – high likelihood of successful induction.';
+            color = '#4CAF50';
+        } else if (total >= 5) {
+            interpretation = 'Intermediate – consider cervical ripening strategies before induction.';
+            color = '#FFC107';
+        } else {
+            interpretation = 'Unfavourable cervix – cervical ripening recommended prior to induction.';
+            color = '#F44336';
+        }
+
+        const result = { total, interpretation };
+
+        document.getElementById('bishop-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Bishop score: <strong>${total}</strong></div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindBishopEvents() {
+        const button = document.querySelector('.calc-button[data-calc="bishop-score"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateBishop());
+        }
+    }
+
+    /**
+     * Other – QTc Bazett
+     */
+    getQTCTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>QTc (Bazett) Calculator</h4>
+                <div class="calc-input-group">
+                    <label>Measured QT interval (ms):</label>
+                    <input type="number" id="qtc-qt" placeholder="420" min="0" step="1">
+                </div>
+                <div class="calc-input-group">
+                    <label>Heart rate (beats/min):</label>
+                    <input type="number" id="qtc-hr" placeholder="75" min="0" step="1">
+                </div>
+                <div class="calc-checkbox-group">
+                    <label><input type="radio" name="qtc-sex" value="male"> Male</label>
+                    <label><input type="radio" name="qtc-sex" value="female"> Female</label>
+                </div>
+                <button class="calc-button" data-calc="qtc-bazett">Calculate QTc</button>
+                <div id="qtc-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Bazett HC. Heart. 1920. Consider Fridericia correction at high heart rates.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateQTC() {
+        const qt = parseFloat(document.getElementById('qtc-qt')?.value);
+        const hr = parseFloat(document.getElementById('qtc-hr')?.value);
+        const sex = document.querySelector('input[name="qtc-sex"]:checked')?.value;
+
+        if (!Number.isFinite(qt) || qt <= 0 || !Number.isFinite(hr) || hr <= 0) {
+            document.getElementById('qtc-result').innerHTML = '<p class="error">Enter valid QT interval and heart rate.</p>';
+            return { error: 'Invalid QTc inputs' };
+        }
+
+        const rr = 60 / hr; // seconds
+        const qtc = qt / Math.sqrt(rr);
+
+        let interpretation = '';
+        let color = '';
+
+        const threshold = sex === 'female' ? 470 : 450;
+        if (qtc < threshold) {
+            interpretation = 'Within normal limits.';
+            color = '#4CAF50';
+        } else if (qtc < 500) {
+            interpretation = 'Borderline prolonged – review QT-prolonging medications and electrolytes.';
+            color = '#FFC107';
+        } else {
+            interpretation = 'Marked QT prolongation – high torsades risk; urgent evaluation required.';
+            color = '#F44336';
+        }
+
+        const result = { qtc, interpretation, rr, sex };
+
+        document.getElementById('qtc-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">QTc: <strong>${qtc.toFixed(0)} ms</strong></div>
+                <div class="score-risk">${interpretation}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">RR interval: ${rr.toFixed(2)} s${sex ? ` | Sex: ${sex}` : ''}</div>
+            </div>
+        `;
+
+        return result;
+    }
+
+    bindQTCEvents() {
+        const button = document.querySelector('.calc-button[data-calc="qtc-bazett"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateQTC());
+        }
+    }
+
+    registerCriticalCareCalculators() {
+        this.calculators.set('mews', {
+            id: 'mews',
+            name: 'Modified Early Warning Score (MEWS)',
+            category: TOOL_CATEGORIES.CRITICAL_CARE,
+            description: 'Physiologic track-and-trigger system to detect deterioration',
+            keywords: ['mews', 'early warning', 'critical care'],
+            getTemplate: () => this.getMEWSTemplate(),
+            calculate: () => this.calculateMEWS(),
+            bindEvents: () => this.bindMEWSEvents()
+        });
+    }
+
+    registerRenalCalculators() {
+        this.calculators.set('cockcroft-gault', {
+            id: 'cockcroft-gault',
+            name: 'Cockcroft-Gault CrCl',
+            category: TOOL_CATEGORIES.RENAL,
+            description: 'Estimate creatinine clearance for drug dosing',
+            keywords: ['egfr', 'creatinine clearance', 'renal', 'cockcroft'],
+            getTemplate: () => this.getCockcroftGaultTemplate(),
+            calculate: () => this.calculateCockcroftGault(),
+            bindEvents: () => this.bindCockcroftGaultEvents()
+        });
+    }
+
+    registerGastroenterologyCalculators() {
+        this.calculators.set('child-pugh', {
+            id: 'child-pugh',
+            name: 'Child-Pugh Score',
+            category: TOOL_CATEGORIES.GASTROENTEROLOGY,
+            description: 'Assess severity and prognosis of cirrhosis',
+            keywords: ['child', 'pugh', 'cirrhosis', 'liver'],
+            getTemplate: () => this.getChildPughTemplate(),
+            calculate: () => this.calculateChildPugh(),
+            bindEvents: () => this.bindChildPughEvents()
+        });
+    }
+
+    registerEmergencyCalculators() {
+        this.calculators.set('centor', {
+            id: 'centor',
+            name: 'Modified Centor (McIsaac) Score',
+            category: TOOL_CATEGORIES.EMERGENCY,
+            description: 'Predict streptococcal pharyngitis probability',
+            keywords: ['centor', 'pharyngitis', 'sore throat'],
+            getTemplate: () => this.getCentorTemplate(),
+            calculate: () => this.calculateCentor(),
+            bindEvents: () => this.bindCentorEvents()
+        });
+    }
+
+    registerGeriatricsCalculators() {
+        this.calculators.set('timed-up-go', {
+            id: 'timed-up-go',
+            name: 'Timed Up & Go Test',
+            category: TOOL_CATEGORIES.GERIATRICS,
+            description: 'Screen for mobility limitation and fall risk',
+            keywords: ['timed up and go', 'fall risk', 'geriatrics'],
+            getTemplate: () => this.getTimedUpGoTemplate(),
+            calculate: () => this.calculateTimedUpGo(),
+            bindEvents: () => this.bindTimedUpGoEvents()
+        });
+    }
+
+    registerPsychiatryCalculators() {
+        this.calculators.set('phq9', {
+            id: 'phq9',
+            name: 'PHQ-9 Depression Severity',
+            category: TOOL_CATEGORIES.PSYCHIATRY,
+            description: 'Quantify depressive symptoms over the last 2 weeks',
+            keywords: ['phq', 'depression', 'mental health'],
+            getTemplate: () => this.getPHQ9Template(),
+            calculate: () => this.calculatePHQ9(),
+            bindEvents: () => this.bindPHQ9Events()
+        });
+    }
+
+    registerEndocrineCalculators() {
+        this.calculators.set('hba1c-eag', {
+            id: 'hba1c-eag',
+            name: 'HbA1c to eAG Converter',
+            category: TOOL_CATEGORIES.ENDOCRINE,
+            description: 'Translate HbA1c into estimated average glucose',
+            keywords: ['hba1c', 'eag', 'diabetes'],
+            getTemplate: () => this.getHba1cTemplate(),
+            calculate: () => this.calculateHba1cEag(),
+            bindEvents: () => this.bindHba1cEvents()
+        });
+    }
+
+    registerChemistryCalculators() {
+        this.calculators.set('anion-gap', {
+            id: 'anion-gap',
+            name: 'Serum Anion Gap',
+            category: TOOL_CATEGORIES.CHEMISTRY,
+            description: 'Evaluate metabolic acidosis etiology',
+            keywords: ['anion gap', 'metabolic acidosis', 'chemistry'],
+            getTemplate: () => this.getAnionGapTemplate(),
+            calculate: () => this.calculateAnionGap(),
+            bindEvents: () => this.bindAnionGapEvents()
+        });
+    }
+
+    registerObstetricsCalculators() {
+        this.calculators.set('bishop-score', {
+            id: 'bishop-score',
+            name: 'Bishop Score',
+            category: TOOL_CATEGORIES.OBSTETRICS,
+            description: 'Assess cervix favorability for induction of labour',
+            keywords: ['bishop', 'labour', 'cervix'],
+            getTemplate: () => this.getBishopTemplate(),
+            calculate: () => this.calculateBishop(),
+            bindEvents: () => this.bindBishopEvents()
+        });
+    }
+
+    registerOtherCalculators() {
+        this.calculators.set('qtc-bazett', {
+            id: 'qtc-bazett',
+            name: 'QTc (Bazett) Calculator',
+            category: TOOL_CATEGORIES.OTHER,
+            description: 'Correct QT interval for heart rate',
+            keywords: ['qtc', 'ekg', 'bazett'],
+            getTemplate: () => this.getQTCTemplate(),
+            calculate: () => this.calculateQTC(),
+            bindEvents: () => this.bindQTCEvents()
+        });
     }
     
-    registerCriticalCareCalculators() { 
-        // APACHE II, MEWS, RASS, etc. - to be implemented
+    getBSATemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Body Surface Area (BSA)</h4>
+                <p><small>Commonly used to dose chemotherapeutics and adjust physiological measurements</small></p>
+                <div class="calc-input-group">
+                    <label>Weight (kg):</label>
+                    <input type="number" id="bsa-weight" placeholder="70" step="0.1" min="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>Height (cm):</label>
+                    <input type="number" id="bsa-height" placeholder="175" step="0.1" min="0">
+                </div>
+                <div class="calc-select-group">
+                    <label>Formula:</label>
+                    <select id="bsa-formula">
+                        <option value="mosteller" selected>Mosteller (1987)</option>
+                        <option value="dubois">Du Bois &amp; Du Bois (1916)</option>
+                        <option value="haycock">Haycock (1978)</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="bsa">Calculate BSA</button>
+                <div id="bsa-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>
+                        <strong>References:</strong> Du Bois D, Arch Intern Med. 1916; Haycock GB, Clin Nephrol. 1978; Mosteller RD, N Engl J Med. 1987.
+                    </small>
+                </div>
+            </div>
+        `;
     }
-    
-    registerRenalCalculators() { 
-        // eGFR, Cockcroft-Gault, etc. - to be implemented
+
+    calculateBSA() {
+        const weightInput = parseFloat(document.getElementById('bsa-weight')?.value);
+        const heightInput = parseFloat(document.getElementById('bsa-height')?.value);
+        const formula = document.getElementById('bsa-formula')?.value || 'mosteller';
+
+        const weight = Number.isFinite(weightInput) ? weightInput : NaN;
+        const height = Number.isFinite(heightInput) ? heightInput : NaN;
+
+        if (!Number.isFinite(weight) || weight <= 0 || !Number.isFinite(height) || height <= 0) {
+            document.getElementById('bsa-result').innerHTML = '<p class="error">Enter weight &gt; 0 kg and height &gt; 0 cm.</p>';
+            return { error: 'Invalid anthropometric inputs' };
+        }
+
+        let bsa = 0;
+        let formulaName = '';
+        let formulaExpression = '';
+
+        switch (formula) {
+            case 'dubois':
+                bsa = 0.007184 * Math.pow(weight, 0.425) * Math.pow(height, 0.725);
+                formulaName = 'Du Bois & Du Bois';
+                formulaExpression = 'BSA = 0.007184 × W^0.425 × H^0.725';
+                break;
+            case 'haycock':
+                bsa = 0.024265 * Math.pow(weight, 0.5378) * Math.pow(height / 100, 0.3964);
+                formulaName = 'Haycock';
+                formulaExpression = 'BSA = 0.024265 × W^0.5378 × (H in m)^0.3964';
+                break;
+            default:
+                bsa = Math.sqrt((height * weight) / 3600);
+                formulaName = 'Mosteller';
+                formulaExpression = 'BSA = √((H × W) ÷ 3600)';
+        }
+
+        const bsaRounded = Math.round(bsa * 100) / 100;
+
+        const result = {
+            bsa: bsaRounded,
+            rawBsa: bsa,
+            formula: formulaName
+        };
+
+        document.getElementById('bsa-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value">
+                    Estimated BSA: <strong>${bsaRounded.toFixed(2)} m²</strong>
+                </div>
+                <div class="score-risk" style="font-size: 0.9em; color: #555;">
+                    Formula: ${formulaName}<br>
+                    <span style="font-family: monospace;">${formulaExpression}</span>
+                </div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
+                    Consider indexing drug doses and physiologic measurements (e.g., cardiac output) to patient-specific BSA.
+                </div>
+            </div>
+        `;
+
+        return result;
     }
-    
-    registerGastroenterologyCalculators() { 
-        // Rockall, Glasgow-Blatchford, Child-Pugh, etc. - to be implemented
+
+    bindBSAEvents() {
+        const button = document.querySelector('.calc-button[data-calc="bsa"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateBSA());
+        }
     }
-    
-    registerEmergencyCalculators() { 
-        // Ottawa Ankle, Centor, Alvarado, etc. - to be implemented
+
+    getFluidBalanceTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>24-hour Fluid Balance</h4>
+                <p><small>Track intake, output, and net fluid status over a defined interval</small></p>
+                <div class="calc-input-group">
+                    <label>Oral intake (mL):</label>
+                    <input type="number" id="fluid-oral" placeholder="1200" step="10" min="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>IV fluids/medications (mL):</label>
+                    <input type="number" id="fluid-iv" placeholder="800" step="10" min="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>Other intake (tube feeds, etc.) (mL):</label>
+                    <input type="number" id="fluid-other-intake" placeholder="0" step="10" min="0">
+                </div>
+                <hr>
+                <div class="calc-input-group">
+                    <label>Urine output (mL):</label>
+                    <input type="number" id="fluid-urine" placeholder="1500" step="10" min="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>Drains/NG losses (mL):</label>
+                    <input type="number" id="fluid-drains" placeholder="200" step="10" min="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>Insensible estimate (mL) - optional:</label>
+                    <input type="number" id="fluid-insensible" placeholder="500" step="10" min="0">
+                </div>
+                <div class="calc-select-group">
+                    <label>Assessment window:</label>
+                    <select id="fluid-window">
+                        <option value="24">24 hours</option>
+                        <option value="12">12 hours</option>
+                        <option value="8">8 hours</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="fluid-balance">Calculate Balance</button>
+                <div id="fluid-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>
+                        Positive balance indicates fluid accumulation. Assess alongside weight trends and clinical exam.
+                    </small>
+                </div>
+            </div>
+        `;
     }
-    
-    registerGeriatricsCalculators() { 
-        // Frailty Scale, Barthel Index, etc. - to be implemented
+
+    calculateFluidBalance() {
+        const oral = parseFloat(document.getElementById('fluid-oral')?.value) || 0;
+        const iv = parseFloat(document.getElementById('fluid-iv')?.value) || 0;
+        const otherIntake = parseFloat(document.getElementById('fluid-other-intake')?.value) || 0;
+        const urine = parseFloat(document.getElementById('fluid-urine')?.value) || 0;
+        const drains = parseFloat(document.getElementById('fluid-drains')?.value) || 0;
+        const insensible = parseFloat(document.getElementById('fluid-insensible')?.value) || 0;
+        const window = parseFloat(document.getElementById('fluid-window')?.value) || 24;
+
+        const inputs = [oral, iv, otherIntake, urine, drains, insensible];
+        const hasValues = inputs.some(value => Number.isFinite(value) && value > 0);
+
+        if (!hasValues) {
+            document.getElementById('fluid-result').innerHTML = '<p class="error">Enter at least one intake or output value.</p>';
+            return { error: 'No values supplied' };
+        }
+
+        const totalIntake = oral + iv + otherIntake;
+        const totalOutput = urine + drains + insensible;
+        const net = totalIntake - totalOutput;
+
+        let status = '';
+        let color = '';
+        if (net > 500) {
+            status = 'Positive balance – consider diuresis or fluid restriction if clinically indicated.';
+            color = '#F44336';
+        } else if (net < -500) {
+            status = 'Negative balance – ensure perfusion, assess for dehydration or over-diuresis.';
+            color = '#FF9800';
+        } else {
+            status = 'Near-neutral balance – continue current plan if patient clinically stable.';
+            color = '#4CAF50';
+        }
+
+        const hourly = net / window;
+
+        const result = {
+            intake: totalIntake,
+            output: totalOutput,
+            net,
+            hourlyRate: hourly,
+            windowHours: window
+        };
+
+        document.getElementById('fluid-result').innerHTML = `
+            <div class="score-result">
+                <div>Total intake: <strong>${totalIntake.toFixed(0)} mL</strong></div>
+                <div>Total output: <strong>${totalOutput.toFixed(0)} mL</strong></div>
+                <div class="score-value" style="color: ${color}; margin-top: 8px;">
+                    Net balance (${window}-hour): <strong>${net >= 0 ? '+' : ''}${net.toFixed(0)} mL</strong>
+                </div>
+                <div style="font-size: 0.85em; color: #555;">Average net: ${net >= 0 ? '+' : ''}${hourly.toFixed(1)} mL/hour</div>
+                <div class="score-recommendation" style="color: ${color}; margin-top: 8px;">
+                    ${status}
+                </div>
+            </div>
+        `;
+
+        return result;
     }
-    
-    registerPsychiatryCalculators() { 
-        // PHQ-9, GAD-7, etc. - to be implemented
-    }
-    
-    registerEndocrineCalculators() { 
-        // Insulin sliding scale, etc. - to be implemented
-    }
-    
-    registerChemistryCalculators() { 
-        // Anion gap, osmolal gap, etc. - to be implemented
-    }
-    
-    registerObstetricsCalculators() { 
-        // APGAR, Bishop Score, etc. - to be implemented
-    }
-    
-    registerOtherCalculators() { 
-        // FRAX, unit converter, etc. - to be implemented
-    }
-    
-    // Placeholder implementations for BSA and Fluid Balance
-    getBSATemplate() { 
-        return '<div class="calculator-form"><h4>BSA Calculator</h4><p>Body Surface Area Calculator - Implementation coming soon</p></div>'; 
-    }
-    
-    calculateBSA() { 
-        return { error: 'BSA Calculator not yet implemented' }; 
-    }
-    
-    bindBSAEvents() { 
-        // BSA event binding - to be implemented
-    }
-    
-    getFluidBalanceTemplate() { 
-        return '<div class="calculator-form"><h4>Fluid Balance Calculator</h4><p>Fluid Balance Calculator - Implementation coming soon</p></div>'; 
-    }
-    
-    calculateFluidBalance() { 
-        return { error: 'Fluid Balance Calculator not yet implemented' }; 
-    }
-    
-    bindFluidBalanceEvents() { 
-        // Fluid balance event binding - to be implemented
+
+    bindFluidBalanceEvents() {
+        const button = document.querySelector('.calc-button[data-calc="fluid-balance"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateFluidBalance());
+        }
     }
     
     /**
