@@ -416,8 +416,9 @@ class LaddersManager {
 
                         /* Make medication list responsive and tidy */
                         .medication-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-top: 8px; }
-                        .med-item { background: var(--card-bg); padding: 12px; border-radius:8px; display:flex; flex-direction:column; gap:6px; border: 1px solid var(--border-color, #eaeaea); }
-                        .med-item strong { font-size: 0.98em; }
+                        .med-item { background: var(--card-bg); padding: 12px; border-radius:8px; display:flex; flex-direction:column; gap:6px; border: 1px solid var(--border-color, #eaeaea); min-width:0; }
+                        .med-item strong { font-size: 0.98em; display:block; margin-bottom:4px; }
+                        .med-dose { display:block; color: var(--secondary-text, #666); font-size: 0.95em; line-height:1.2; overflow-wrap: anywhere; word-break: break-word; }
 
                         .adjuvant-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px; }
                         .adjuvant-card { background:var(--card-bg); padding:12px; border-radius:8px; }
@@ -527,11 +528,9 @@ class LaddersManager {
                     <div class="medication-list">
                         ${Array.isArray(step.medications) ? step.medications.map(med => `
                             <div class="med-item" role="group" aria-label="${med.name}">
-                                <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-                                    <strong>${med.name}</strong>
-                                    <span class="med-dose" style="opacity:0.85;font-size:0.95em;white-space:nowrap">${med.dose}</span>
-                                </div>
-                                ${med.note ? `<div class="med-note" style="color:var(--muted);font-size:0.9em">${med.note}</div>` : ''}
+                                <strong>${med.name}</strong>
+                                <div class="med-dose">${med.dose}</div>
+                                ${med.note ? `<div class="med-note" style="color:var(--muted);font-size:0.9em;margin-top:6px">${med.note}</div>` : ''}
                             </div>
                         `).join('') : ''}
                     </div>
