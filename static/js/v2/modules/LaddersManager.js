@@ -373,8 +373,22 @@ class LaddersManager {
                 </div>
             `;
             
-            this.initializeLadderTabs();
-
+            // Defer tab initialization briefly to avoid race with DOM insertion in some host pages
+            // and add diagnostics so we can see why a specific ladder (e.g., pain) might not render.
+            console.log('🪜 Ladders data stats:', this.getStatistics());
+            setTimeout(() => {
+                this.initializeLadderTabs();
+                // Verify tab elements exist after initialization
+                const btns = document.querySelectorAll('.ladder-tab-btn');
+                const contents = document.querySelectorAll('.ladder-tab-content');
+                console.log(`🪜 Ladder tab buttons: ${btns.length}, tab contents: ${contents.length}`);
+                try {
+                    const painSteps = (this.laddersData.pain && Array.isArray(this.laddersData.pain.steps)) ? this.laddersData.pain.steps.length : 0;
+                    console.log(`🪜 Pain ladder steps count: ${painSteps}`);
+                } catch (e) {
+                    console.warn('⚠️ Could not read pain ladder steps', e && e.message);
+                }
+            }, 0);
             // Inject small, local styles for ladders to improve default spacing
             try {
                 if (!document.getElementById('ladders-styles')) {
