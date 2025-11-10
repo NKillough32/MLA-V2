@@ -117,8 +117,8 @@ class MLAQuizApp {
         // Initialize anatomy manager
         anatomyManager.initialize();
 
-        // Initialize quiz manager
-        quizManager.initialize(),
+    // Initialize quiz manager
+    await quizManager.initialize();
 
         // Initialize calculator manager (auto-registers all calculators)
         // Ensure we await initialization because it loads data from async storage.
@@ -822,7 +822,7 @@ class MLAQuizApp {
     async restoreState() {
         console.log('🔄 Restoring app state...');
 
-        const state = storage.getItem(STORAGE_KEYS.APP_STATE);
+        const state = await storage.getItem(STORAGE_KEYS.APP_STATE);
         if (state) {
             console.log('✅ Previous state found, restoring...');
             // State already restored by individual managers
