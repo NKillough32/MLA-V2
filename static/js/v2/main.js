@@ -1094,15 +1094,34 @@ class MLAQuizApp {
         console.log('🏥 Drug reference content loaded with voice search');
     }
     
-    showDrugCategory(category, container) {
+    async showDrugCategory(category, container) {
         // Update active button
         container.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
         const activeBtn = container.querySelector(`[data-category="${category}"]`);
         if (activeBtn) activeBtn.classList.add('active');
         
-        const drugs = this.drugManager.getDrugsByCategory(category);
+        // Retrieve drugs from manager (async). Guard against non-array results.
+        let drugs = [];
+        try {
+            drugs = await this.drugManager.getDrugsByCategory(category);
+        } catch (err) {
+            console.error('showDrugCategory: error getting drugs by category', err);
+            drugs = [];
+        }
+
+        if (!Array.isArray(drugs)) {
+            console.warn('showDrugCategory: expected array from drugManager.getDrugsByCategory, got:', drugs);
+            // Fallback: try to read raw database if available
+            if (this.drugManager && this.drugManager.drugDatabase) {
+                drugs = Object.entries(this.drugManager.drugDatabase).map(([key, d]) => ({ key, ...d }));
+            } else {
+                drugs = [];
+            }
+        }
+
         const drugListContainer = container.querySelector('#drug-list-v2');
-        
+        if (!drugListContainer) return;
+
         drugListContainer.innerHTML = drugs.map(drug => `
             <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.showDrugDetail('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
