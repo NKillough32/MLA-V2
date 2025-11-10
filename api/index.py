@@ -12,7 +12,8 @@ import time
 import logging
 import base64
 import zipfile
-import io
+import threading
+from io import BytesIO
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from flask import Flask, render_template, jsonify, request, send_from_directory
@@ -30,8 +31,13 @@ CORS(app)  # Enable CORS for development
 # Reuse the QuizLoader logic from your existing main.py
 class PWAQuizLoader:
     """PWA version of QuizLoader that reuses your existing parsing logic."""
-    
-    _cache = {}
+
+    _cache: Dict[str, Dict[str, Any]] = {}
+    _cache_lock = threading.RLock()
+    _CACHE_MAX_SIZE = 16
+    _quiz_list_cache: Dict[str, Any] = {"timestamp": 0.0, "data": []}
+    _quiz_list_lock = threading.RLock()
+    _QUIZ_LIST_TTL = 30.0
     QUESTION_RE = re.compile(r'(###\s*\d+\..*?)(?=###\s*\d+\.|\Z)', re.DOTALL)
     SPECIALTY_HEADER_RE = re.compile(r'^##\s+(.+?)$', re.MULTILINE)
     
@@ -79,9 +85,13 @@ class PWAQuizLoader:
         # Remove maxsplit limitation to capture all sections including image and question after image
         parts = [p.strip() for p in re.split(r'\n\s*\n', rest) if p.strip()]
         
-        logger.info(f"Question {num}: Split into {len(parts)} parts")
+        logger.debug(f"Question {num}: Split into {len(parts)} parts")
         for idx, part in enumerate(parts):
-            logger.info(f"Question {num}: parts[{idx}] = '{part[:100]}...'" if len(part) > 100 else f"Question {num}: parts[{idx}] = '{part}'")
+            logger.debug(
+                f"Question {num}: parts[{idx}] = '{part[:100]}...'"
+                if len(part) > 100
+                else f"Question {num}: parts[{idx}] = '{part}'"
+            )
 
         scenario = parts[0] if parts else ""
         investigation_index = None
@@ -94,7 +104,9 @@ class PWAQuizLoader:
         prompt_from_first_section = False
         if parts:
             if re.search(r'^\s*[A-Z][\.)]\s+', parts[0], re.MULTILINE):
-                logger.info(f"Question {num}: Detected options in first section; treating parts[0] as prompt")
+                logger.debug(
+                    f"Question {num}: Detected options in first section; treating parts[0] as prompt"
+                )
                 scenario = ""
                 prompt = parts[0]
                 tail_start = 1
@@ -127,16 +139,28 @@ class PWAQuizLoader:
         if investigation_index is not None:
             if investigation_index + 1 < len(parts):
                 potential_prompt = parts[investigation_index + 1]
-                logger.info(f"Question {num}: Section after investigations: '{potential_prompt[:100]}'")
+                logger.debug(
+                    f"Question {num}: Section after investigations: '{potential_prompt[:100]}'"
+                )
                 
                 # Check if this section is just an image reference
                 # Pattern: [IMAGE: filename.png] or ![Image](__REF__:filename)
                 is_image_only = re.match(r'^\s*(\[IMAGE:\s*[^\]]+\]|!\[Image\]\([^)]+\))\s*$', potential_prompt.strip())
                 
                 if is_image_only:
-                    logger.info(f"Question {num}: Detected image-only section")
-                    logger.info(f"Question {num}: len(parts)={len(parts)}, investigation_index={investigation_index}")
-                    logger.info(f"Question {num}: Checking if investigation_index + 2 ({investigation_index + 2}) < len(parts) ({len(parts)})")
+                    logger.debug("Question %s: Detected image-only section", num)
+                    logger.debug(
+                        "Question %s: len(parts)=%s, investigation_index=%s",
+                        num,
+                        len(parts),
+                        investigation_index,
+                    )
+                    logger.debug(
+                        "Question %s: Checking if investigation_index + 2 (%s) < len(parts) (%s)",
+                        num,
+                        investigation_index + 2,
+                        len(parts),
+                    )
                     # Store the image reference separately
                     image = potential_prompt.strip()
                     
@@ -144,7 +168,9 @@ class PWAQuizLoader:
                         # The actual question comes AFTER the image in a separate section
                         prompt = parts[investigation_index + 2]
                         tail_start = investigation_index + 3
-                        logger.info(f"Question {num}: Using section after image as prompt: '{prompt[:100]}'")
+                        logger.debug(
+                            f"Question {num}: Using section after image as prompt: '{prompt[:100]}'"
+                        )
                     else:
                         logger.warning(f"Question {num}: Image detected but no section after image (investigation_index={investigation_index}, len(parts)={len(parts)})")
                         tail_start = investigation_index + 2
@@ -174,7 +200,9 @@ class PWAQuizLoader:
                     if found_image and question_lines:
                         # Found image embedded with question - separate them
                         prompt = '\n'.join(question_lines).strip()
-                        logger.info(f"Question {num}: Separated embedded image from question: '{prompt[:100]}'")
+                        logger.debug(
+                            f"Question {num}: Separated embedded image from question: '{prompt[:100]}'"
+                        )
                         tail_start = investigation_index + 2
                     else:
                         # No image found, use as-is
@@ -190,38 +218,50 @@ class PWAQuizLoader:
             # complex logic that would overwrite prompt using parts[1]. The
             # correct flow is to treat parts[1:] as tail (answer/explanation).
             if 'prompt_from_first_section' in locals() and prompt_from_first_section:
-                logger.info(f"Question {num}: prompt came from first section, skipping parts[1] processing")
+                logger.debug(
+                    f"Question {num}: prompt came from first section, skipping parts[1] processing"
+                )
             else:
                 potential_prompt = parts[1]
-                logger.info(f"Question {num}: Section after scenario: '{potential_prompt[:100]}'")
-                logger.info(f"Question {num}: DEBUG - len(parts)={len(parts)}, parts array: {[p[:50] + '...' if len(p) > 50 else p for p in parts]}")
+                logger.debug(
+                    f"Question {num}: Section after scenario: '{potential_prompt[:100]}'"
+                )
+                logger.debug(
+                    f"Question {num}: DEBUG - len(parts)={len(parts)}, parts array: {[p[:50] + '...' if len(p) > 50 else p for p in parts]}"
+                )
             
             # Check if the section after scenario is an image reference
             
                 is_image_only = re.match(r'^\s*(\[IMAGE:\s*[^\]]+\]|!\[Image\]\([^)]+\))\s*$', potential_prompt.strip())
                 
                 if is_image_only:
-                    logger.info(f"Question {num}: Detected image-only section after scenario")
+                    logger.debug(
+                        f"Question {num}: Detected image-only section after scenario"
+                    )
                     # Store the image reference separately
                     image = potential_prompt.strip()
-                    logger.info(f"Question {num}: DEBUG - Stored image reference: '{image}'")
+                    logger.debug(f"Question {num}: DEBUG - Stored image reference: '{image}'")
                     
                     if len(parts) >= 3:
                         # The actual question comes AFTER the image in a separate section
-                        logger.info(f"Question {num}: DEBUG - BEFORE assignment: prompt='{prompt}'")
-                        logger.info(f"Question {num}: DEBUG - parts[2] content: '{parts[2]}'")
+                        logger.debug(f"Question {num}: DEBUG - BEFORE assignment: prompt='{prompt}'")
+                        logger.debug(f"Question {num}: DEBUG - parts[2] content: '{parts[2]}'")
                         prompt = parts[2]
-                        logger.info(f"Question {num}: DEBUG - AFTER assignment: prompt='{prompt}'")
+                        logger.debug(f"Question {num}: DEBUG - AFTER assignment: prompt='{prompt}'")
                         tail_start = 3
-                        logger.info(f"Question {num}: Using section after image as prompt: '{prompt[:100]}'")
+                        logger.debug(
+                            f"Question {num}: Using section after image as prompt: '{prompt[:100]}'"
+                        )
                     else:
                         logger.warning(f"Question {num}: Image detected but no section after image")
                         tail_start = 2
                 else:
                     # Not image-only, but check if image is embedded in the text
-                    logger.info(f"Question {num}: Checking for embedded image in section (length {len(potential_prompt)} chars)")
+                    logger.debug(
+                        f"Question {num}: Checking for embedded image in section (length {len(potential_prompt)} chars)"
+                    )
                     section_lines = potential_prompt.split('\n')
-                    logger.info(f"Question {num}: Section has {len(section_lines)} lines")
+                    logger.debug(f"Question {num}: Section has {len(section_lines)} lines")
                     image_lines = []
                     question_lines = []
                     found_image = False
@@ -229,11 +269,13 @@ class PWAQuizLoader:
                     for idx, line in enumerate(section_lines):
                         is_image_line = re.match(r'^\s*(\[IMAGE:\s*[^\]]+\]|!\[Image\]\([^)]+\))\s*$', line.strip())
                         if is_image_line:
-                            logger.info(f"Question {num}: Line {idx} is image: '{line.strip()[:80]}'")
+                            logger.debug(f"Question {num}: Line {idx} is image: '{line.strip()[:80]}'")
                             image_lines.append(line)
                             found_image = True
                         elif found_image:
-                            logger.info(f"Question {num}: Line {idx} after image: '{line.strip()[:80]}'")
+                            logger.debug(
+                                f"Question {num}: Line {idx} after image: '{line.strip()[:80]}'"
+                            )
                             question_lines.append(line)
                         elif not found_image and not line.strip():
                             continue
@@ -242,10 +284,17 @@ class PWAQuizLoader:
                     
                     if found_image and question_lines:
                         prompt = '\n'.join(question_lines).strip()
-                        logger.info(f"Question {num}: Separated embedded image from question: '{prompt[:100]}'")
+                        logger.debug(
+                            f"Question {num}: Separated embedded image from question: '{prompt[:100]}'"
+                        )
                         tail_start = 2
                     else:
-                        logger.info(f"Question {num}: No embedded image found or no question lines after image (found_image={found_image}, question_lines={len(question_lines)})")
+                        logger.debug(
+                            "Question %s: No embedded image found or no question lines after image (found_image=%s, question_lines=%s)",
+                            num,
+                            found_image,
+                            len(question_lines),
+                        )
                         prompt = potential_prompt
                         tail_start = 2
 
@@ -255,7 +304,7 @@ class PWAQuizLoader:
         
         # Combine all tail parts to search for answer
         tail_content = '\n\n'.join(parts[tail_start:])
-        logger.info(f"Question {num} tail content (first 500 chars): {tail_content[:500]}")
+        logger.debug(f"Question {num} tail content (first 500 chars): {tail_content[:500]}")
         
         # Parse answer using flexible regex to handle both formats
         # Matches: **Answer:** A OR **Answer**: A OR **Ans:** A OR **Ans**: A
@@ -281,7 +330,7 @@ class PWAQuizLoader:
             else:
                 correct_answer = ord(answer_letter) - ord('A')
 
-        logger.info(f"Answer detection: found pattern '{answer_match.group(0) if answer_match else 'None'}' -> letter={answer_letter}, index={correct_answer}")
+        logger.debug(f"Answer detection: found pattern '{answer_match.group(0) if answer_match else 'None'}' -> letter={answer_letter}, index={correct_answer}")
         
         for part in parts[tail_start:]:
             lines = part.strip().split('\n')
@@ -324,7 +373,7 @@ class PWAQuizLoader:
             explanation_match = re.search(pattern, tail_content, re.DOTALL | re.IGNORECASE)
             if explanation_match:
                 explanation = explanation_match.group(1).strip()
-                logger.info(f"Found explanation for question {num} using pattern: {explanation[:100]}...")
+                logger.debug(f"Found explanation for question {num} using pattern: {explanation[:100]}...")
                 break
         
         if explanation:
@@ -337,8 +386,8 @@ class PWAQuizLoader:
         # This is common when question and options are in the same markdown section
         
         # SIMPLER LOGIC: If prompt is just an image, find the question sentence before the options
-        logger.info(f"Question {num}: DEBUG - About to check fallback. Current prompt value: '{prompt}'")
-        logger.info(f"Question {num}: DEBUG - tail_start={tail_start}, len(parts)={len(parts)}")
+        logger.debug(f"Question {num}: DEBUG - About to check fallback. Current prompt value: '{prompt}'")
+        logger.debug(f"Question {num}: DEBUG - tail_start={tail_start}, len(parts)={len(parts)}")
         if re.match(r'^\s*(\[IMAGE:\s*[^\]]+\]|!\[Image\]\([^)]+\))\s*$', prompt.strip()):
             logger.warning(f"Question {num}: Prompt is still just an image after parsing! Looking for question before options...")
             
@@ -346,10 +395,10 @@ class PWAQuizLoader:
             question_found = False
             for i in range(tail_start, len(parts)):
                 part = parts[i]
-                logger.info(f"Question {num}: Checking parts[{i}] for options/question: '{part[:100]}'")
+                logger.debug(f"Question {num}: Checking parts[{i}] for options/question: '{part[:100]}'")
                 # Check if this part contains options (starts with A. or A))
                 if re.search(r'^\s*[A-Z][.)]\s', part, re.MULTILINE):
-                    logger.info(f"Question {num}: Found options in parts[{i}]")
+                    logger.debug(f"Question {num}: Found options in parts[{i}]")
                     # The question should be right before the first option
                     # Split by newlines and find the last sentence before options
                     lines = part.split('\n')
@@ -368,13 +417,13 @@ class PWAQuizLoader:
                         if potential_question.endswith('?'):
                             prompt = potential_question
                             question_found = True
-                            logger.info(f"Question {num}: Found question before options: '{prompt}'")
+                            logger.debug(f"Question {num}: Found question before options: '{prompt}'")
                             break
                         # Even if no question mark, use the last sentence before options
                         elif len(potential_question) > 10:
                             prompt = potential_question
                             question_found = True
-                            logger.info(f"Question {num}: Using text before options as question: '{prompt}'")
+                            logger.debug(f"Question {num}: Using text before options as question: '{prompt}'")
                             break
             
                 if not question_found:
@@ -385,16 +434,16 @@ class PWAQuizLoader:
                         sentences = re.split(r'[.!]\s+', scenario)
                         if sentences and sentences[-1].strip().endswith('?'):
                             prompt = sentences[-1].strip()
-                            logger.info(f"Question {num}: Extracted question from end of scenario: '{prompt}'")
+                            logger.debug(f"Question {num}: Extracted question from end of scenario: '{prompt}'")
                             question_found = True
 
                 if not question_found:
                     # Do NOT invent a prompt. Leave prompt empty to avoid misleading
                     # content being injected into question data.
                     prompt = ""
-                    logger.info(f"Question {num}: No explicit prompt found; leaving prompt empty")
+                    logger.debug(f"Question {num}: No explicit prompt found; leaving prompt empty")
         else:
-            logger.info(f"Question {num}: DEBUG - Fallback check passed, prompt is NOT just an image")
+            logger.debug(f"Question {num}: DEBUG - Fallback check passed, prompt is NOT just an image")
         
         prompt_lines = prompt.split('\n')
         option_lines = []
@@ -418,7 +467,7 @@ class PWAQuizLoader:
                 options = option_lines
             # Clean the prompt to only contain the question text
             prompt = '\n'.join(non_option_lines).strip()
-            logger.info(f"Question {num}: Extracted {len(option_lines)} options from prompt section")
+            logger.debug(f"Question {num}: Extracted {len(option_lines)} options from prompt section")
 
         # Normalise option strings but PRESERVE the primary label (A, B, C...) so UI shows 'A) text'
         cleaned_options = []
@@ -459,7 +508,7 @@ class PWAQuizLoader:
             cleaned_options.append(cleaned)
 
         options = cleaned_options
-        logger.info(f"Question {num}: Cleaned options: {options}")
+        logger.debug(f"Question {num}: Cleaned options: {options}")
 
         # Recompute correct_answer index by matching the detected answer_letter to option labels
         if answer_letter:
@@ -474,17 +523,17 @@ class PWAQuizLoader:
             else:
                 # fallback to alphabetical mapping
                 correct_answer = ord(answer_letter) - ord('A')
-            logger.info(f"Question {num}: Recomputed correct_answer from letter '{answer_letter}' -> index {correct_answer}")
+            logger.debug(f"Question {num}: Recomputed correct_answer from letter '{answer_letter}' -> index {correct_answer}")
 
-        logger.info(f"Parsed question {num}: title='{title[:50] if len(title) > 50 else title}', prompt='{prompt[:80] if prompt else 'None'}', options={len(options)}, correct_answer={correct_answer}")
+        logger.debug(f"Parsed question {num}: title='{title[:50] if len(title) > 50 else title}', prompt='{prompt[:80] if prompt else 'None'}', options={len(options)}, correct_answer={correct_answer}")
         if correct_answer is None and options:
             logger.warning(f"No correct answer found for question {num}. Sample content: {tail_content[:200]}...")
 
-        logger.info(f"Question {num}: DEBUG - FINAL VALUES BEFORE RETURN:")
-        logger.info(f"Question {num}: DEBUG - scenario='{scenario[:100] if len(scenario) > 100 else scenario}'")
-        logger.info(f"Question {num}: DEBUG - prompt='{prompt}'")
-        logger.info(f"Question {num}: DEBUG - image='{image}'")
-        logger.info(f"Question {num}: DEBUG - investigations='{investigations[:50] if investigations else 'None'}'")
+        logger.debug(f"Question {num}: DEBUG - FINAL VALUES BEFORE RETURN:")
+        logger.debug(f"Question {num}: DEBUG - scenario='{scenario[:100] if len(scenario) > 100 else scenario}'")
+        logger.debug(f"Question {num}: DEBUG - prompt='{prompt}'")
+        logger.debug(f"Question {num}: DEBUG - image='{image}'")
+        logger.debug(f"Question {num}: DEBUG - investigations='{investigations[:50] if investigations else 'None'}'")
 
         return {
             'id': int(num),
@@ -503,19 +552,19 @@ class PWAQuizLoader:
     def parse_markdown_content(content, filename="uploaded_quiz"):
         """Parse markdown content directly without file system."""
         try:
-            logger.info(f"Starting to parse quiz content from {filename}, length: {len(content)} characters")
+            logger.debug(f"Starting to parse quiz content from {filename}, length: {len(content)} characters")
             
             # Clean up the content first
             content = content.strip()
             
             # Log some debugging info about the content structure
             lines_with_hash = [line.strip() for line in content.split('\n') if line.strip().startswith('###')]
-            logger.info(f"Found {len(lines_with_hash)} lines starting with '###': {lines_with_hash[:5]}")
+            logger.debug(f"Found {len(lines_with_hash)} lines starting with '###': {lines_with_hash[:5]}")
             
             if len(lines_with_hash) == 0:
                 # Maybe the content uses different formatting - check for other patterns
                 lines_with_numbers = [line.strip() for line in content.split('\n') if re.match(r'^\d+\.', line.strip())]
-                logger.info(f"Found {len(lines_with_numbers)} lines starting with numbers: {lines_with_numbers[:3]}")
+                logger.debug(f"Found {len(lines_with_numbers)} lines starting with numbers: {lines_with_numbers[:3]}")
                 
                 # Try to detect other question patterns
                 question_patterns = [
@@ -528,17 +577,17 @@ class PWAQuizLoader:
                 for pattern in question_patterns:
                     matches = re.findall(pattern, content, re.MULTILINE)
                     if matches:
-                        logger.info(f"Found {len(matches)} matches for pattern '{pattern}': {matches[:3]}")
+                        logger.debug(f"Found {len(matches)} matches for pattern '{pattern}': {matches[:3]}")
                         break
             
             # Debug: Look for question patterns
             question_pattern_matches = re.findall(r'###\s*\d+.*?(?=###\s*\d+|\Z)', content, re.DOTALL)
-            logger.info(f"Found {len(question_pattern_matches)} question blocks using QUESTION_RE pattern")
+            logger.debug(f"Found {len(question_pattern_matches)} question blocks using QUESTION_RE pattern")
             
             if len(question_pattern_matches) > 0:
-                logger.info(f"First question block preview (200 chars): {question_pattern_matches[0][:200]}...")
+                logger.debug(f"First question block preview (200 chars): {question_pattern_matches[0][:200]}...")
                 if len(question_pattern_matches) > 1:
-                    logger.info(f"Second question block preview (200 chars): {question_pattern_matches[1][:200]}...")
+                    logger.debug(f"Second question block preview (200 chars): {question_pattern_matches[1][:200]}...")
             
             # Analyze investigation variations
             PWAQuizLoader.analyze_investigation_variations(content)
@@ -550,7 +599,7 @@ class PWAQuizLoader:
             for m in PWAQuizLoader.SPECIALTY_HEADER_RE.finditer(content):
                 specialty_markers.append((m.start(), m.group(1).strip()))
             specialty_markers.sort(key=lambda x: x[0])
-            logger.info(f"Found {len(specialty_markers)} specialty markers: {[s[1] for s in specialty_markers]}")
+            logger.debug(f"Found {len(specialty_markers)} specialty markers: {[s[1] for s in specialty_markers]}")
 
             def find_specialty(pos: int) -> str:
                 lo, hi = 0, len(specialty_markers) - 1
@@ -570,19 +619,19 @@ class PWAQuizLoader:
             for qm in PWAQuizLoader.QUESTION_RE.finditer(content):
                 block = qm.group(1)
                 specialty = find_specialty(qm.start())
-                logger.info(f"Processing question block {question_count + 1} (specialty: {specialty})")
+                logger.debug(f"Processing question block {question_count + 1} (specialty: {specialty})")
                 logger.debug(f"Block content: {block[:200]}...")
                 
                 q = PWAQuizLoader._parse_question(block, specialty)
                 if q:
                     questions.append(q)
                     question_count += 1
-                    logger.info(f"✓ Successfully parsed question {question_count}: ID={q['id']}, title='{q['title'][:50]}...'")
+                    logger.debug(f"✓ Successfully parsed question {question_count}: ID={q['id']}, title='{q['title'][:50]}...'")
                 else:
                     failed_blocks += 1
                     logger.warning(f"✗ Failed to parse question block {question_count + failed_blocks}. Block start: {block[:100]}...")
 
-            logger.info(f"Parsing complete: {len(questions)} questions successfully parsed, {failed_blocks} blocks failed")
+            logger.debug(f"Parsing complete: {len(questions)} questions successfully parsed, {failed_blocks} blocks failed")
             
             if len(questions) == 0:
                 logger.error(f"NO QUESTIONS PARSED! Debug info for {filename}:")
@@ -592,7 +641,7 @@ class PWAQuizLoader:
                 logger.error(f"First 1000 chars: {content[:1000]}")
                 
                 # Try alternative parsing approach
-                logger.info("Attempting alternative parsing approaches...")
+                logger.debug("Attempting alternative parsing approaches...")
                 
                 # Try a more flexible question pattern
                 alternative_patterns = [
@@ -603,9 +652,9 @@ class PWAQuizLoader:
                 
                 for pattern_name, pattern in [("numbered", alternative_patterns[0]), ("Q-format", alternative_patterns[1]), ("Question-format", alternative_patterns[2])]:
                     alt_matches = re.findall(pattern, content, re.DOTALL | re.IGNORECASE)
-                    logger.info(f"Alternative pattern '{pattern_name}' found {len(alt_matches)} matches")
+                    logger.debug(f"Alternative pattern '{pattern_name}' found {len(alt_matches)} matches")
                     if alt_matches:
-                        logger.info(f"Sample match: {alt_matches[0][:200]}...")
+                        logger.debug(f"Sample match: {alt_matches[0][:200]}...")
                         # Try to parse with modified content
                         modified_content = content
                         # Convert to ### format
@@ -622,7 +671,7 @@ class PWAQuizLoader:
                         
                         # Try parsing again with modified content
                         if modified_content != content:
-                            logger.info(f"Attempting to re-parse with {pattern_name} conversion...")
+                            logger.debug(f"Attempting to re-parse with {pattern_name} conversion...")
                             alt_questions = []
                             for qm in PWAQuizLoader.QUESTION_RE.finditer(modified_content):
                                 block = qm.group(1)
@@ -632,7 +681,7 @@ class PWAQuizLoader:
                                     alt_questions.append(q)
                             
                             if alt_questions:
-                                logger.info(f"✓ Alternative parsing succeeded with {len(alt_questions)} questions!")
+                                logger.debug(f"✓ Alternative parsing succeeded with {len(alt_questions)} questions!")
                                 questions = alt_questions
                                 break
                 
@@ -644,7 +693,7 @@ class PWAQuizLoader:
                         if re.match(r'^\s*###\s*\d+', line) or re.match(r'^\s*\d+\.', line):
                             question_lines.append((i, line.strip()))
                     
-                    logger.info(f"Found {len(question_lines)} potential question lines: {question_lines[:5]}")
+                    logger.debug(f"Found {len(question_lines)} potential question lines: {question_lines[:5]}")
             
             return questions
 
@@ -661,6 +710,13 @@ class PWAQuizLoader:
             file_hash, content = PWAQuizLoader._get_file_hash_and_content(path)
             if not content:
                 return []
+
+            with PWAQuizLoader._cache_lock:
+                cached = PWAQuizLoader._cache.get(path)
+                if cached and cached["hash"] == file_hash:
+                    cached["last_access"] = time.time()
+                    logger.debug("Returning cached quiz for %s", path)
+                    return cached["questions"]
 
             # Analyze investigation variations
             PWAQuizLoader.analyze_investigation_variations(content)
@@ -694,6 +750,20 @@ class PWAQuizLoader:
                     questions.append(q)
 
             logger.info(f"Loaded {len(questions)} questions from {path}")
+
+            with PWAQuizLoader._cache_lock:
+                PWAQuizLoader._cache[path] = {
+                    "hash": file_hash,
+                    "questions": questions,
+                    "last_access": time.time(),
+                }
+                if len(PWAQuizLoader._cache) > PWAQuizLoader._CACHE_MAX_SIZE:
+                    oldest_key = min(
+                        PWAQuizLoader._cache.items(),
+                        key=lambda item: item[1]["last_access"],
+                    )[0]
+                    PWAQuizLoader._cache.pop(oldest_key, None)
+
             return questions
 
         except Exception as e:
@@ -703,8 +773,18 @@ class PWAQuizLoader:
     @staticmethod
     def get_available_quizzes():
         """Get list of available quiz files."""
+        now = time.time()
+        with PWAQuizLoader._quiz_list_lock:
+            cached = PWAQuizLoader._quiz_list_cache
+            if (
+                cached["data"]
+                and now - cached["timestamp"] < PWAQuizLoader._QUIZ_LIST_TTL
+            ):
+                logger.debug("Returning cached quiz list")
+                return list(cached["data"])
+
         quiz_files = []
-        
+
         # Get the directory of the current script
         script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         
@@ -726,6 +806,12 @@ class PWAQuizLoader:
                             'size': os.path.getsize(os.path.join(search_path, file))
                         })
         
+        with PWAQuizLoader._quiz_list_lock:
+            PWAQuizLoader._quiz_list_cache = {
+                "timestamp": now,
+                "data": list(quiz_files),
+            }
+
         return quiz_files
 
 # Flask Routes
@@ -857,319 +943,312 @@ def upload_quiz():
     """Handle quiz file upload from client."""
     try:
         logger.info("Upload request received")
-        
+
         if 'quiz_file' not in request.files:
             logger.error("No quiz_file in request.files")
             return jsonify({
                 'success': False,
                 'error': 'No quiz file provided'
             }), 400
-        
+
         file = request.files['quiz_file']
         logger.info(f"File received: {file.filename}")
-        
+
         if file.filename == '':
             return jsonify({
                 'success': False,
                 'error': 'No file selected'
             }), 400
-        
-        # Read file content first
-        file_content = file.read()
-        logger.info(f"File size: {len(file_content)} bytes")
-        
-        # Validate file size (max 4.5MB for Vercel Hobby plan)
-        if len(file_content) > 4.5 * 1024 * 1024:  # 4.5MB limit
-            return jsonify({
-                'success': False,
-                'error': 'File too large. Maximum size is 4.5MB.'
-            }), 400
-        
-        # Process file based on extension
-        if file.filename.lower().endswith('.zip'):
-            logger.info("Processing ZIP file")
-            
+
+        max_bytes = int(4.5 * 1024 * 1024)
+        try:
             try:
-                # Extract zip file
-                zip_content = io.BytesIO(file_content)
-                quiz_data = []
-                image_data = {}  # Store images from zip
-                
-                with zipfile.ZipFile(zip_content, 'r') as zip_ref:
-                    # Get all files in the zip
-                    all_files = zip_ref.namelist()
-                    # Filter out directories and hidden files
-                    actual_files = [f for f in all_files if not f.endswith('/') and not f.startswith('__MACOSX') and not f.startswith('.')]
-                    md_files = [f for f in actual_files if f.lower().endswith(('.md', '.txt')) and not f.startswith('.')]
-                    image_files = [f for f in actual_files if f.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.bmp'))]
-                    
-                    logger.info(f"ZIP contents: {all_files}")
-                    logger.info(f"Found {len(md_files)} .md files: {md_files}")
-                    logger.info(f"Found {len(image_files)} image files: {image_files}")
-                    
-                    if not md_files:
-                        return jsonify({
-                            'success': False,
-                            'error': f'No markdown files found in ZIP. Found files: {actual_files[:10]}... (showing first 10)'
-                        }), 400
-                    
-                    # Extract and encode images as base64
-                    for image_file in image_files:
-                        try:
-                            with zip_ref.open(image_file) as img_file:
-                                img_content = img_file.read()
-                                # Get file extension for mime type
-                                ext = image_file.lower().split('.')[-1]
-                                mime_type = {
-                                    'jpg': 'image/jpeg',
-                                    'jpeg': 'image/jpeg', 
-                                    'png': 'image/png',
-                                    'gif': 'image/gif',
-                                    'webp': 'image/webp',
-                                    'svg': 'image/svg+xml'
-                                }.get(ext, 'image/jpeg')
-                                
-                                # Convert to base64 data URL
-                                img_base64 = base64.b64encode(img_content).decode('utf-8')
-                                data_url = f"data:{mime_type};base64,{img_base64}"
-                                
-                                # Store the actual image data only once with the primary key
-                                primary_key = image_file.replace('\\', '/').lstrip('./')
-                                image_data[primary_key] = data_url
-                                
-                                # Create reference mappings (without duplicating the base64 data)
-                                filename_only = image_file.split('/')[-1]
-                                name_without_ext = filename_only.rsplit('.', 1)[0]
-                                
-                                # Only store references if they're different from the primary key
-                                reference_keys = [
-                                    image_file,  # Original path
-                                    filename_only,  # Just filename
-                                    name_without_ext,  # Name without extension
-                                    filename_only.lower(),  # Lowercase filename
-                                    name_without_ext.lower()  # Lowercase name without extension
-                                ]
-                                
-                                # Store references that point to the primary key (much smaller)
-                                for ref_key in reference_keys:
-                                    if ref_key != primary_key and ref_key not in image_data:
-                                        image_data[ref_key] = f"__REF__:{primary_key}"
-                                
-                                logger.info(f"Processed image: {image_file} -> primary key: {primary_key}, references: {len(reference_keys)}")
-                        except Exception as e:
-                            logger.warning(f"Could not process image {image_file}: {e}")
-                            continue
-                    
-                    # Process markdown files
-                    for filename in md_files:
-                        try:
-                            logger.info(f"Processing MD file: {filename}")
-                            with zip_ref.open(filename) as md_file:
-                                raw_content = md_file.read()
-                                logger.info(f"Raw content length: {len(raw_content)} bytes")
-                                
-                                # Try different encodings
-                                content = None
-                                encodings_to_try = ['utf-8', 'utf-8-sig', 'latin1', 'cp1252']
-                                
-                                for encoding in encodings_to_try:
-                                    try:
-                                        content = raw_content.decode(encoding)
-                                        logger.info(f"Successfully decoded with {encoding}")
-                                        break
-                                    except UnicodeDecodeError as e:
-                                        logger.warning(f"Failed to decode with {encoding}: {e}")
-                                        continue
-                                
-                                if content is None:
-                                    logger.error(f"Could not decode {filename} with any encoding")
-                                    continue
-                                
-                                logger.info(f"Decoded content length: {len(content)} characters")
-                                logger.info(f"First 500 characters: {repr(content[:500])}")
-                                
-                                # Check if this looks like a valid markdown quiz file
-                                has_questions = bool(re.search(r'###\s*\d+', content))
-                                has_hash_headers = content.count('###') > 0
-                                has_bullet_points = content.count('A)') > 0 or content.count('A.') > 0
-                                
-                                logger.info(f"Content validation - has_questions: {has_questions}, has_hash_headers: {has_hash_headers}, has_bullet_points: {has_bullet_points}")
-                                
-                                if not has_questions and not has_hash_headers:
-                                    logger.warning(f"File {filename} does not appear to contain quiz questions (no ### headers found)")
-                                    # Show some sample lines to help debug
-                                    sample_lines = content.split('\n')[:20]
-                                    logger.info(f"First 20 lines: {sample_lines}")
-                                
-                                original_content = content
-                                
-                                # Replace local image references with base64 data URLs
-                                replacements_made = 0
-                                
-                                # First pass: exact matches
-                                for image_path, data_url in image_data.items():
-                                    old_content = content
-                                    
-                                    # Replace various possible reference formats
-                                    content = content.replace(f"({image_path})", f"({data_url})")
-                                    content = content.replace(f'"{image_path}"', f'"{data_url}"')
-                                    content = content.replace(f"'{image_path}'", f"'{data_url}'")
-                                    # Handle relative paths
-                                    content = content.replace(f"(./{image_path})", f"({data_url})")
-                                    content = content.replace(f"(../{image_path})", f"({data_url})")
-                                    # Handle [IMAGE: filename] format specifically
-                                    content = content.replace(f"[IMAGE: {image_path}]", f"![Image]({data_url})")
-                                    content = content.replace(f"[IMAGE:{image_path}]", f"![Image]({data_url})")
-                                    # Handle spaces in IMAGE format
-                                    content = content.replace(f"[IMAGE:  {image_path}]", f"![Image]({data_url})")
-                                    content = content.replace(f"[IMAGE:   {image_path}]", f"![Image]({data_url})")
-                                    
-                                    if content != old_content:
-                                        replacements_made += 1
-                                        logger.info(f"Replaced image reference: {image_path}")
-                                
-                                # Second pass: case-insensitive search for unreplaced IMAGE tags
-                                image_pattern = re.compile(r'\[IMAGE:\s*([^\]]+)\]', re.IGNORECASE)
-                                matches = image_pattern.findall(content)
-                                
-                                for match in matches:
-                                    match_clean = match.strip()
-                                    found_replacement = None
-                                    
-                                    # Try to find matching image by filename (case insensitive)
-                                    for image_path, data_url in image_data.items():
-                                        if (match_clean.lower() == image_path.lower() or 
-                                            match_clean.lower() in image_path.lower() or
-                                            image_path.lower() in match_clean.lower()):
-                                            found_replacement = data_url
-                                            logger.info(f"Found case-insensitive match: '{match_clean}' -> '{image_path}'")
+                raw_data = file.read()
+            except Exception:
+                stream = getattr(file, 'stream', None)
+                if stream is None:
+                    raise
+                stream.seek(0)
+                raw_data = stream.read()
+
+            if raw_data is None:
+                return jsonify({
+                    'success': False,
+                    'error': 'Unable to read uploaded file'
+                }), 400
+
+            if isinstance(raw_data, str):
+                raw_data = raw_data.encode('utf-8')
+
+            total_bytes = len(raw_data)
+            if total_bytes > max_bytes:
+                return jsonify({
+                    'success': False,
+                    'error': 'File too large. Maximum size is 4.5MB.'
+                }), 400
+
+            logger.info(f"File size: {total_bytes} bytes")
+            file_buffer = BytesIO(raw_data)
+
+            if file.filename.lower().endswith('.zip'):
+                logger.info("Processing ZIP file")
+
+                try:
+                    quiz_data = []
+                    image_data = {}  # Store images from zip
+
+                    with zipfile.ZipFile(file_buffer, 'r') as zip_ref:
+                        # Get all files in the zip
+                        all_files = zip_ref.namelist()
+                        # Filter out directories and hidden files
+                        actual_files = [f for f in all_files if not f.endswith('/') and not f.startswith('__MACOSX') and not f.startswith('.')]
+                        md_files = [f for f in actual_files if f.lower().endswith(('.md', '.txt')) and not f.startswith('.')]
+                        image_files = [f for f in actual_files if f.lower().endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.bmp'))]
+
+                        logger.debug(f"ZIP contents: {all_files}")
+                        logger.debug(f"Found {len(md_files)} .md files: {md_files}")
+                        logger.debug(f"Found {len(image_files)} image files: {image_files}")
+
+                        if not md_files:
+                            return jsonify({
+                                'success': False,
+                                'error': f'No markdown files found in ZIP. Found files: {actual_files[:10]}... (showing first 10)'
+                            }), 400
+
+                        # Extract and encode images as base64
+                        for image_file in image_files:
+                            try:
+                                with zip_ref.open(image_file) as img_file:
+                                    img_content = img_file.read()
+                                    ext = image_file.lower().split('.')[-1]
+                                    mime_type = {
+                                        'jpg': 'image/jpeg',
+                                        'jpeg': 'image/jpeg',
+                                        'png': 'image/png',
+                                        'gif': 'image/gif',
+                                        'webp': 'image/webp',
+                                        'svg': 'image/svg+xml'
+                                    }.get(ext, 'image/jpeg')
+
+                                    img_base64 = base64.b64encode(img_content).decode('utf-8')
+                                    data_url = f"data:{mime_type};base64,{img_base64}"
+
+                                    primary_key = image_file.replace('\\', '/').lstrip('./')
+                                    image_data[primary_key] = data_url
+
+                                    filename_only = image_file.split('/')[-1]
+                                    name_without_ext = filename_only.rsplit('.', 1)[0]
+
+                                    reference_keys = [
+                                        image_file,
+                                        filename_only,
+                                        name_without_ext,
+                                        filename_only.lower(),
+                                        name_without_ext.lower()
+                                    ]
+
+                                    for ref_key in reference_keys:
+                                        if ref_key != primary_key and ref_key not in image_data:
+                                            image_data[ref_key] = f"__REF__:{primary_key}"
+
+                                    logger.debug(f"Processed image: {image_file} -> primary key: {primary_key}, references: {len(reference_keys)}")
+                            except Exception as e:
+                                logger.warning(f"Could not process image {image_file}: {e}")
+                                continue
+
+                        for filename in md_files:
+                            try:
+                                logger.debug(f"Processing MD file: {filename}")
+                                with zip_ref.open(filename) as md_file:
+                                    raw_content = md_file.read()
+                                    logger.debug(f"Raw content length: {len(raw_content)} bytes")
+
+                                    content = None
+                                    encodings_to_try = ['utf-8', 'utf-8-sig', 'latin1', 'cp1252']
+
+                                    for encoding in encodings_to_try:
+                                        try:
+                                            content = raw_content.decode(encoding)
+                                            logger.debug(f"Successfully decoded with {encoding}")
                                             break
-                                    
-                                    if found_replacement:
-                                        # Replace with case-insensitive regex
+                                        except UnicodeDecodeError as e:
+                                            logger.warning(f"Failed to decode with {encoding}: {e}")
+                                            continue
+
+                                    if content is None:
+                                        logger.error(f"Could not decode {filename} with any encoding")
+                                        continue
+
+                                    logger.debug(f"Decoded content length: {len(content)} characters")
+                                    logger.debug(f"First 500 characters: {repr(content[:500])}")
+
+                                    has_questions = bool(re.search(r'###\s*\d+', content))
+                                    has_hash_headers = content.count('###') > 0
+                                    has_bullet_points = content.count('A)') > 0 or content.count('A.') > 0
+
+                                    logger.debug(f"Content validation - has_questions: {has_questions}, has_hash_headers: {has_hash_headers}, has_bullet_points: {has_bullet_points}")
+
+                                    if not has_questions and not has_hash_headers:
+                                        logger.warning(f"File {filename} does not appear to contain quiz questions (no ### headers found)")
+                                        sample_lines = content.split('\n')[:20]
+                                        logger.debug(f"First 20 lines: {sample_lines}")
+
+                                    original_content = content
+                                    replacements_made = 0
+
+                                    for image_path, data_url in image_data.items():
                                         old_content = content
-                                        pattern = re.compile(re.escape(f"[IMAGE: {match_clean}]"), re.IGNORECASE)
-                                        content = pattern.sub(f"![Image]({found_replacement})", content)
-                                        pattern = re.compile(re.escape(f"[IMAGE:{match_clean}]"), re.IGNORECASE)
-                                        content = pattern.sub(f"![Image]({found_replacement})", content)
-                                        
+                                        content = content.replace(f"({image_path})", f"({data_url})")
+                                        content = content.replace(f'"{image_path}"', f'"{data_url}"')
+                                        content = content.replace(f"'{image_path}'", f"'{data_url}'")
+                                        content = content.replace(f"(./{image_path})", f"({data_url})")
+                                        content = content.replace(f"(../{image_path})", f"({data_url})")
+                                        content = content.replace(f"[IMAGE: {image_path}]", f"![Image]({data_url})")
+                                        content = content.replace(f"[IMAGE:{image_path}]", f"![Image]({data_url})")
+                                        content = content.replace(f"[IMAGE:  {image_path}]", f"![Image]({data_url})")
+                                        content = content.replace(f"[IMAGE:   {image_path}]", f"![Image]({data_url})")
+
                                         if content != old_content:
                                             replacements_made += 1
-                                            logger.info(f"Case-insensitive replacement: {match_clean}")
-                                
-                                logger.info(f"Made {replacements_made} image replacements in {filename}")
-                                if replacements_made == 0 and len(image_data) > 0:
-                                    logger.warning(f"No image replacements made in {filename}, but {len(image_data)} images available")
-                                    logger.info(f"Available images: {list(image_data.keys())}")
-                                    # Show IMAGE references found in content
-                                    image_refs = re.findall(r'\[IMAGE:\s*([^\]]+)\]', original_content, re.IGNORECASE)
-                                    if image_refs:
-                                        logger.info(f"Found IMAGE references: {image_refs}")
+                                            logger.debug(f"Replaced image reference: {image_path}")
+
+                                    image_pattern = re.compile(r'\[IMAGE:\s*([^\]]+)\]', re.IGNORECASE)
+                                    matches = image_pattern.findall(content)
+
+                                    for match in matches:
+                                        match_clean = match.strip()
+                                        found_replacement = None
+
+                                        for image_path, data_url in image_data.items():
+                                            if (match_clean.lower() == image_path.lower() or
+                                                match_clean.lower() in image_path.lower() or
+                                                image_path.lower() in match_clean.lower()):
+                                                found_replacement = data_url
+                                                logger.debug(f"Found case-insensitive match: '{match_clean}' -> '{image_path}'")
+                                                break
+
+                                        if found_replacement:
+                                            old_content = content
+                                            pattern = re.compile(re.escape(f"[IMAGE: {match_clean}]"), re.IGNORECASE)
+                                            content = pattern.sub(f"![Image]({found_replacement})", content)
+                                            pattern = re.compile(re.escape(f"[IMAGE:{match_clean}]"), re.IGNORECASE)
+                                            content = pattern.sub(f"![Image]({found_replacement})", content)
+
+                                            if content != old_content:
+                                                replacements_made += 1
+                                                logger.debug(f"Case-insensitive replacement: {match_clean}")
+
+                                    logger.debug(f"Made {replacements_made} image replacements in {filename}")
+                                    if replacements_made == 0 and len(image_data) > 0:
+                                        logger.warning(f"No image replacements made in {filename}, but {len(image_data)} images available")
+                                        logger.debug(f"Available images: {list(image_data.keys())}")
+                                        image_refs = re.findall(r'\[IMAGE:\s*([^\]]+)\]', original_content, re.IGNORECASE)
+                                        if image_refs:
+                                            logger.debug(f"Found IMAGE references: {image_refs}")
+                                        else:
+                                            logger.debug("No [IMAGE: ...] references found in content")
+                                        logger.debug(f"Content preview: {original_content[:300]}...")
+
+                                    questions = PWAQuizLoader.parse_markdown_content(content, filename)
+                                    quiz_data.extend(questions)
+                                    logger.debug(f"Extracted {len(questions)} questions from {filename}")
+
+                                    if len(questions) == 0:
+                                        logger.error(f"NO QUESTIONS FOUND in {filename}")
+                                        logger.error(f"Content length: {len(content)} characters")
+                                        logger.error(f"Content preview (first 500 chars): {content[:500]}")
+                                        logger.error(f"Looking for ### patterns...")
+                                        question_matches = re.findall(r'###\s*\d+', content)
+                                        logger.error(f"Found {len(question_matches)} question headers: {question_matches[:5]}")
                                     else:
-                                        logger.info("No [IMAGE: ...] references found in content")
-                                    # Show first 300 chars of content for debugging
-                                    logger.info(f"Content preview: {original_content[:300]}...")
-                                
-                                questions = PWAQuizLoader.parse_markdown_content(content, filename)
-                                quiz_data.extend(questions)
-                                logger.info(f"Extracted {len(questions)} questions from {filename}")
-                                
-                                # Debug: Show sample of content being parsed
-                                if len(questions) == 0:
-                                    logger.error(f"NO QUESTIONS FOUND in {filename}")
-                                    logger.error(f"Content length: {len(content)} characters")
-                                    logger.error(f"Content preview (first 500 chars): {content[:500]}")
-                                    logger.error(f"Looking for ### patterns...")
-                                    question_matches = re.findall(r'###\s*\d+', content)
-                                    logger.error(f"Found {len(question_matches)} question headers: {question_matches[:5]}")
-                                else:
-                                    logger.info(f"Successfully found {len(questions)} questions in {filename}")
-                        except UnicodeDecodeError as e:
-                            logger.warning(f"Could not decode file {filename}: {e}")
-                            continue
-                        except Exception as e:
-                            logger.error(f"Error processing file {filename}: {e}")
-                            continue
-                
-                if not quiz_data:
-                    error_msg = f'No valid quiz questions found in the uploaded files. Processed {len(md_files)} markdown files: {", ".join([f.split("/")[-1] for f in md_files])}'
-                    logger.error(f"Final error: {error_msg}")
+                                        logger.debug(f"Successfully found {len(questions)} questions in {filename}")
+                            except UnicodeDecodeError as e:
+                                logger.warning(f"Could not decode file {filename}: {e}")
+                                continue
+                            except Exception as e:
+                                logger.error(f"Error processing file {filename}: {e}")
+                                continue
+
+                    if not quiz_data:
+                        error_msg = f'No valid quiz questions found in the uploaded files. Processed {len(md_files)} markdown files: {", ".join([f.split("/")[-1] for f in md_files])}'
+                        logger.error(f"Final error: {error_msg}")
+                        return jsonify({
+                            'success': False,
+                            'error': error_msg
+                        }), 400
+
+                except zipfile.BadZipFile:
+                    logger.error("Invalid ZIP file")
                     return jsonify({
                         'success': False,
-                        'error': error_msg
+                        'error': 'Invalid zip file format'
                     }), 400
-            
-            except zipfile.BadZipFile:
-                logger.error("Invalid ZIP file")
-                return jsonify({
-                    'success': False,
-                    'error': 'Invalid zip file format'
-                }), 400
-            except Exception as e:
-                logger.error(f"ZIP processing error: {e}")
-                return jsonify({
-                    'success': False,
-                    'error': f'Error processing ZIP file: {str(e)}'
-                }), 500
-            
-            quiz_name = file.filename.replace('.zip', '')
-            logger.info(f"Successfully processed ZIP file: {len(quiz_data)} total questions, {len(image_data)} images")
-            
-            return jsonify({
-                'success': True,
-                'quiz_name': quiz_name,
-                'questions': quiz_data,
-                'total_questions': len(quiz_data),
-                'images': image_data  # Add this line to include images in response
-            })
-            
-        elif file.filename.lower().endswith('.md'):
-            logger.info("Processing MD file")
-            try:
-                content = file_content.decode('utf-8')
-                questions = PWAQuizLoader.parse_markdown_content(content, file.filename)
-                
-                if not questions:
+                except Exception as e:
+                    logger.error(f"ZIP processing error: {e}")
                     return jsonify({
                         'success': False,
-                        'error': 'No valid quiz questions found in the markdown file'
-                    }), 400
-                
-                logger.info(f"Successfully processed MD file: {len(questions)} questions")
-                
+                        'error': f'Error processing ZIP file: {str(e)}'
+                    }), 500
+
+                quiz_name = file.filename.replace('.zip', '')
+                logger.info(f"Successfully processed ZIP file: {len(quiz_data)} total questions, {len(image_data)} images")
+
                 return jsonify({
                     'success': True,
-                    'quiz_name': file.filename.replace('.md', ''),
-                    'questions': questions,
-                    'total_questions': len(questions)
+                    'quiz_name': quiz_name,
+                    'questions': quiz_data,
+                    'total_questions': len(quiz_data),
+                    'images': image_data
                 })
-            except UnicodeDecodeError:
+
+            elif file.filename.lower().endswith('.md'):
+                logger.info("Processing MD file")
+                try:
+                    file_buffer.seek(0)
+                    content = file_buffer.read().decode('utf-8')
+                    questions = PWAQuizLoader.parse_markdown_content(content, file.filename)
+
+                    if not questions:
+                        return jsonify({
+                            'success': False,
+                            'error': 'No valid quiz questions found in the markdown file'
+                        }), 400
+
+                    logger.info(f"Successfully processed MD file: {len(questions)} questions")
+
+                    return jsonify({
+                        'success': True,
+                        'quiz_name': file.filename.replace('.md', ''),
+                        'questions': questions,
+                        'total_questions': len(questions)
+                    })
+                except UnicodeDecodeError:
+                    return jsonify({
+                        'success': False,
+                        'error': 'Could not read the markdown file. Please ensure it is UTF-8 encoded.'
+                    }), 400
+                except Exception as e:
+                    logger.error(f"MD processing error: {e}")
+                    return jsonify({
+                        'success': False,
+                        'error': f'Error processing markdown file: {str(e)}'
+                    }), 500
+
+            else:
                 return jsonify({
                     'success': False,
-                    'error': 'Could not read the markdown file. Please ensure it is UTF-8 encoded.'
+                    'error': 'Unsupported file type. Please upload .md or .zip files'
                 }), 400
-            except Exception as e:
-                logger.error(f"MD processing error: {e}")
-                return jsonify({
-                    'success': False,
-                    'error': f'Error processing markdown file: {str(e)}'
-                }), 500
-        
-        else:
-            return jsonify({
-                'success': False,
-                'error': 'Unsupported file type. Please upload .md or .zip files'
-            }), 400
-            
+        finally:
+            if 'file_buffer' in locals():
+                file_buffer.close()
+
     except Exception as e:
-        logger.error(f"Upload error: {e}")
-        import traceback
-        traceback.print_exc()
+        logger.error(f"Error uploading quiz: {e}")
         return jsonify({
             'success': False,
-            'error': f'Server error: {str(e)}'
+            'error': str(e)
         }), 500
-
 @app.route('/api/quiz/<quiz_name>/specialty/<specialty>')
 def get_quiz_by_specialty(quiz_name, specialty):
     """Get questions filtered by specialty."""
