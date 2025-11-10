@@ -8085,15 +8085,15 @@ class MLAQuizApp {
                     value = parseFloat(input1.value);
                     if (validNumber(value)) {
                         converted = (value - 2.15) * 10.929;
-                        input2.value = converted.toFixed(0);
-                        resultText = `${value}% = ${converted.toFixed(0)} mmol/mol`;
+                        input2.value = converted.toFixed(1);
+                        resultText = `${value} % = ${converted.toFixed(1)} mmol/mol`;
                     }
-                } else {
+                } else if (sourceUnit === 'mmol') {
                     value = parseFloat(input2.value);
                     if (validNumber(value)) {
                         converted = (value / 10.929) + 2.15;
-                        input1.value = converted.toFixed(1);
-                        resultText = `${value} mmol/mol = ${converted.toFixed(1)}%`;
+                        input1.value = converted.toFixed(2);
+                        resultText = `${value} mmol/mol = ${converted.toFixed(2)} %`;
                     }
                 }
                 break;
@@ -8180,15 +8180,15 @@ class MLAQuizApp {
                     value = parseFloat(input1.value);
                     if (validNumber(value)) {
                         converted = value * 10;
-                        input2.value = converted.toFixed(0);
-                        resultText = `${value} g/dL = ${converted.toFixed(0)} g/L`;
+                        input2.value = converted.toFixed(1);
+                        resultText = `${value} g/dL = ${converted.toFixed(1)} g/L`;
                     }
-                } else {
+                } else if (sourceUnit === 'gl') {
                     value = parseFloat(input2.value);
                     if (validNumber(value)) {
                         converted = value / 10;
-                        input1.value = converted.toFixed(1);
-                        resultText = `${value} g/L = ${converted.toFixed(1)} g/dL`;
+                        input1.value = converted.toFixed(2);
+                        resultText = `${value} g/L = ${converted.toFixed(2)} g/dL`;
                     }
                 }
                 break;
@@ -8311,18 +8311,17 @@ class MLAQuizApp {
                 
             case 'uric-acid': {
                 // μmol/L <-> mg/dL
-                const factor = 0.0168;
                 if (sourceUnit === 'umol') {
                     value = parseFloat(input1.value);
                     if (validNumber(value)) {
-                        converted = value * factor;
-                        input2.value = converted.toFixed(1);
-                        resultText = `${value} μmol/L = ${converted.toFixed(1)} mg/dL`;
+                        converted = value * 0.01681;
+                        input2.value = converted.toFixed(2);
+                        resultText = `${value} μmol/L = ${converted.toFixed(2)} mg/dL`;
                     }
-                } else {
+                } else if (sourceUnit === 'mgdl') {
                     value = parseFloat(input2.value);
                     if (validNumber(value)) {
-                        converted = value / factor;
+                        converted = value * 59.48;
                         input1.value = converted.toFixed(0);
                         resultText = `${value} mg/dL = ${converted.toFixed(0)} μmol/L`;
                     }
