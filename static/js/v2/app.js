@@ -11280,15 +11280,23 @@ class MLAQuizApp {
     }
     
     showDrugCategory(category) {
-        const drugDatabase = this.drugDatabase;
+        // Defensive: ensure we have a usable drug database object before operating.
+        const drugDatabase = (this.drugDatabase && typeof this.drugDatabase === 'object') ? this.drugDatabase : (window.drugDatabase && typeof window.drugDatabase === 'object' ? window.drugDatabase : {});
         const drugList = document.getElementById('drug-list');
-        let drugs = Object.keys(drugDatabase);
+
+        if (!drugList) {
+            console.warn('⚠️ showDrugCategory: #drug-list element not found');
+            return;
+        }
+
+        // Ensure we always have an array to work with to avoid "X.map is not a function" errors.
+        let drugs = Array.isArray(drugDatabase) ? drugDatabase.slice() : Object.keys(drugDatabase || {});
         
         // Update active state of category buttons
         const categoryButtons = document.querySelectorAll('.drug-categories .category-btn');
-        categoryButtons.forEach(btn => {
-            btn.classList.remove('active');
-        });
+        if (categoryButtons && categoryButtons.length) {
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+        }
         
         // Find and activate the correct button
         const activeButton = Array.from(categoryButtons).find(btn => {
@@ -11306,7 +11314,7 @@ class MLAQuizApp {
             if (category === 'neuro' && btnText === 'Neurological') return true;
             return false;
         });
-        if (activeButton) activeButton.classList.add('active');
+    if (activeButton) activeButton.classList.add('active');
         
         // Filter drugs by category
         if (category === 'analgesics') {
@@ -11419,15 +11427,24 @@ class MLAQuizApp {
         
         // Sort alphabetically if requested or if "A-Z" category selected
         if (category === 'alphabetical') {
-            drugs.sort((a, b) => drugDatabase[a].name.localeCompare(drugDatabase[b].name));
+            try {
+                drugs.sort((a, b) => (drugDatabase[a] && drugDatabase[b]) ? drugDatabase[a].name.localeCompare(drugDatabase[b].name) : 0);
+            } catch (e) {
+                console.warn('⚠️ showDrugCategory: failed to sort drugs alphabetically', e);
+            }
         }
-        
-        drugList.innerHTML = drugs.map(drug => `
+
+        // Render – ensure we have an array and that entries resolve to objects in the database.
+        if (!Array.isArray(drugs)) drugs = [];
+
+        const cards = drugs.filter(key => drugDatabase && drugDatabase[key]).map(drug => `
             <div class="drug-card" onclick="console.log('💊 Drug card clicked:', '${drug}'); window.quizApp.showDrugDetail('${drug}'); event.stopPropagation();">
-                <div class="drug-name">${drugDatabase[drug].name}</div>
-                <div class="drug-class">${drugDatabase[drug].class}</div>
+                <div class="drug-name">${(drugDatabase[drug] && drugDatabase[drug].name) || drug}</div>
+                <div class="drug-class">${(drugDatabase[drug] && drugDatabase[drug].class) || ''}</div>
             </div>
         `).join('');
+
+        drugList.innerHTML = cards || '<div class="no-results">No drugs available</div>';
     }
     
     showDrugDetail(drugKey) {
@@ -12271,8 +12288,13 @@ class MLAQuizApp {
     }
 
     searchLabValues(labDatabase) {
-        const query = document.getElementById('lab-search').value.toLowerCase();
+        const queryEl = document.getElementById('lab-search');
+        const query = (queryEl && queryEl.value || '').toLowerCase();
         const resultsContainer = document.getElementById('lab-search-results');
+        if (!resultsContainer) {
+            console.warn('⚠️ searchLabValues: results container not found');
+            return;
+        }
         
         if (query.length < 2) {
             resultsContainer.innerHTML = '';
@@ -12291,11 +12313,11 @@ class MLAQuizApp {
             });
         });
         
-        if (matches.length === 0) {
+        if (!Array.isArray(matches) || matches.length === 0) {
             resultsContainer.innerHTML = '<div class="no-results">No lab values found</div>';
             return;
         }
-        
+
         resultsContainer.innerHTML = matches.map(match => `
             <button class="lab-value-btn" onclick="${match.type === 'panel' ? `console.log('🧪 Search result panel clicked:', '${match.key}'); window.quizApp.showLabPanel('${match.key}'); event.stopPropagation();` : `console.log('🧪 Search result test clicked:', '${match.key}'); window.quizApp.showLabTest('${match.panel}', '${match.key}'); event.stopPropagation();`}">
                 <div class="lab-name">${match.name}</div>
@@ -12305,8 +12327,12 @@ class MLAQuizApp {
     }
     
     showLabCategory(category) {
-        const labDatabase = this.labDatabase;
+        const labDatabase = (this.labDatabase && typeof this.labDatabase === 'object') ? this.labDatabase : {};
         const labList = document.getElementById('lab-list');
+        if (!labList) {
+            console.warn('⚠️ showLabCategory: #lab-list element not found');
+            return;
+        }
         
         // Handle special collection category
         if (category === 'collection') {
@@ -12314,7 +12340,7 @@ class MLAQuizApp {
             return;
         }
         
-        let panels = Object.keys(labDatabase);
+    let panels = Array.isArray(labDatabase) ? labDatabase.slice() : Object.keys(labDatabase || {});
         
         // Update active state of category buttons
         const categoryButtons = document.querySelectorAll('.lab-categories .category-btn');
@@ -12345,23 +12371,35 @@ class MLAQuizApp {
             panels = panels.filter(panel => panel === category);
         }
         
-        labList.innerHTML = panels.map(panel => `
+        if (!Array.isArray(panels)) panels = [];
+        const panelCards = panels.filter(p => labDatabase && labDatabase[p]).map(panel => `
             <button class="lab-value-btn" onclick="console.log('🧪 Lab panel clicked:', '${panel}'); window.quizApp.showLabPanel('${panel}'); event.stopPropagation();">
                 <div class="lab-name">${labDatabase[panel].name}</div>
-                <div class="lab-count">${Object.keys(labDatabase[panel].values).length} tests</div>
+                <div class="lab-count">${labDatabase[panel] && labDatabase[panel].values ? Object.keys(labDatabase[panel].values).length : 0} tests</div>
             </button>
         `).join('');
+
+        labList.innerHTML = panelCards || '<div class="no-results">No lab panels available</div>';
     }
     
     showLabPanel(panelKey) {
         console.log('🧪 Opening lab panel:', panelKey);
-        const panel = this.labDatabase[panelKey];
         const container = document.getElementById('lab-values-container');
-        
-        const testsHtml = Object.entries(panel.values).map(([test, data]) => `
+        if (!container) {
+            console.warn('⚠️ showLabPanel: container not found');
+            return;
+        }
+
+        const panel = (this.labDatabase && this.labDatabase[panelKey]) ? this.labDatabase[panelKey] : null;
+        if (!panel || !panel.values) {
+            container.innerHTML = '<div class="no-results">Lab panel not available</div>';
+            return;
+        }
+
+        const testsHtml = Object.entries(panel.values || {}).map(([test, data]) => `
             <button class="lab-value-btn" onclick="console.log('🧪 Lab test clicked:', '${test}'); window.quizApp.showLabTest('${panelKey}', '${test}'); event.stopPropagation();">
                 <div class="lab-name">${test}</div>
-                <div class="lab-count">${data.normal}</div>
+                <div class="lab-count">${data.normal || ''}</div>
             </button>
         `).join('');
         
@@ -13756,40 +13794,51 @@ class MLAQuizApp {
     }
 
     searchGuidelines(guidelinesDatabase) {
-        const query = document.getElementById('guidelines-search').value.toLowerCase();
+        const queryEl = document.getElementById('guidelines-search');
+        const query = (queryEl && queryEl.value || '').toLowerCase();
         const resultsContainer = document.getElementById('guidelines-search-results');
-        
+        if (!resultsContainer) {
+            console.warn('⚠️ searchGuidelines: results container not found');
+            return;
+        }
+
         if (query.length < 2) {
             resultsContainer.innerHTML = '';
             return;
         }
-        
-        const matches = Object.keys(guidelinesDatabase).filter(guideline => 
-            guidelinesDatabase[guideline].title.toLowerCase().includes(query) ||
-            guidelinesDatabase[guideline].category.toLowerCase().includes(query) ||
-            guideline.toLowerCase().includes(query)
-        );
-        
-        if (matches.length === 0) {
+
+        const keys = guidelinesDatabase && typeof guidelinesDatabase === 'object' ? Object.keys(guidelinesDatabase) : [];
+        const matches = keys.filter(guideline => {
+            const entry = guidelinesDatabase[guideline] || {};
+            return (entry.title || '').toLowerCase().includes(query) ||
+                   (entry.category || '').toLowerCase().includes(query) ||
+                   guideline.toLowerCase().includes(query);
+        });
+
+        if (!Array.isArray(matches) || matches.length === 0) {
             resultsContainer.innerHTML = '<div class="no-results">No guidelines found</div>';
             return;
         }
-        
+
         resultsContainer.innerHTML = matches.map(guideline => `
             <button class="lab-value-btn" onclick="console.log('📋 Guideline search result clicked:', '${guideline}'); window.quizApp.showGuidelineDetail('${guideline}'); event.stopPropagation();">
-                <div class="lab-name">${guidelinesDatabase[guideline].title}</div>
-                <div class="lab-count">${guidelinesDatabase[guideline].category}</div>
+                <div class="lab-name">${(guidelinesDatabase[guideline] && guidelinesDatabase[guideline].title) || guideline}</div>
+                <div class="lab-count">${(guidelinesDatabase[guideline] && guidelinesDatabase[guideline].category) || ''}</div>
             </button>
         `).join('');
     }
     
     showGuidelinesCategory(category) {
-        const guidelinesDatabase = this.guidelinesDatabase;
+        const guidelinesDatabase = (this.guidelinesDatabase && typeof this.guidelinesDatabase === 'object') ? this.guidelinesDatabase : {};
         const guidelinesList = document.getElementById('guidelines-list');
-        let guidelines = Object.keys(guidelinesDatabase);
+        if (!guidelinesList) {
+            console.warn('⚠️ showGuidelinesCategory: guidelines list element not found');
+            return;
+        }
+        let guidelines = Object.keys(guidelinesDatabase || {});
         
         // Reset container to grid layout for list view
-        guidelinesList.style.display = 'grid';
+        try { guidelinesList.style.display = 'grid'; } catch (e) {}
         
         // Update active state of category buttons
         const categoryButtons = document.querySelectorAll('.guidelines-categories .category-btn');
@@ -13803,17 +13852,18 @@ class MLAQuizApp {
         });
         
         if (category !== 'all') {
-            guidelines = guidelines.filter(guideline => 
-                guidelinesDatabase[guideline].category.toLowerCase() === category
-            );
+            guidelines = guidelines.filter(guideline => ((guidelinesDatabase[guideline] && guidelinesDatabase[guideline].category) || '').toLowerCase() === category);
         }
-        
-        guidelinesList.innerHTML = guidelines.map(guideline => `
+
+        if (!Array.isArray(guidelines)) guidelines = [];
+        const guidelineCards = guidelines.filter(k => guidelinesDatabase[k]).map(guideline => `
             <button class="lab-value-btn" onclick="console.log('📋 Guideline card clicked:', '${guideline}'); window.quizApp.showGuidelineDetail('${guideline}'); event.stopPropagation();">
-                <div class="lab-name">${guidelinesDatabase[guideline].title}</div>
-                <div class="lab-count">${guidelinesDatabase[guideline].category}</div>
+                <div class="lab-name">${(guidelinesDatabase[guideline] && guidelinesDatabase[guideline].title) || guideline}</div>
+                <div class="lab-count">${(guidelinesDatabase[guideline] && guidelinesDatabase[guideline].category) || ''}</div>
             </button>
         `).join('');
+
+        guidelinesList.innerHTML = guidelineCards || '<div class="no-results">No guidelines available</div>';
     }
     
     // Helper function to map button text to category
@@ -13833,11 +13883,20 @@ class MLAQuizApp {
     
     showGuidelineDetail(guidelineKey) {
         console.log('📋 Opening guideline detail:', guidelineKey);
-        const guideline = this.guidelinesDatabase[guidelineKey];
         const container = document.getElementById('guidelines-list');
-        
+        if (!container) {
+            console.warn('⚠️ showGuidelineDetail: container not found');
+            return;
+        }
+
+        const guideline = (this.guidelinesDatabase && this.guidelinesDatabase[guidelineKey]) ? this.guidelinesDatabase[guidelineKey] : null;
+        if (!guideline) {
+            container.innerHTML = '<div class="no-results">Guideline not available</div>';
+            return;
+        }
+
         // Change container to block layout for detail view
-        container.style.display = 'block';
+        try { container.style.display = 'block'; } catch (e) {}
         
         let contentHtml = `
             <button class="back-btn" onclick="window.quizApp.showGuidelinesCategory('all'); event.stopPropagation();">← Back to Guidelines</button>
@@ -13849,7 +13908,7 @@ class MLAQuizApp {
                 </div>
         `;
         
-        if (guideline.stages) {
+        if (guideline.stages && typeof guideline.stages === 'object') {
             contentHtml += `
                 <div class="info-section">
                     <h4>📊 Stages/Classification</h4>
@@ -13862,7 +13921,7 @@ class MLAQuizApp {
             `;
         }
         
-        if (guideline.groups) {
+        if (guideline.groups && typeof guideline.groups === 'object') {
             contentHtml += `
                 <div class="info-section">
                     <h4>👥 Patient Groups</h4>
@@ -13881,17 +13940,17 @@ class MLAQuizApp {
                     <h4>🎯 Treatment Targets</h4>
                     ${typeof guideline.targets === 'string' ? 
                         `<p>${guideline.targets}</p>` :
-                        Object.entries(guideline.targets).map(([target, value]) => `
+                        (typeof guideline.targets === 'object' ? Object.entries(guideline.targets).map(([target, value]) => `
                             <div class="target-item">
                                 <strong>${target}:</strong> ${value}
                             </div>
-                        `).join('')
+                        `).join('') : '')
                     }
                 </div>
             `;
         }
         
-        if (guideline.treatment) {
+        if (guideline.treatment && typeof guideline.treatment === 'object') {
             contentHtml += `
                 <div class="info-section">
                     <h4>💊 Treatment Recommendations</h4>
@@ -17336,11 +17395,12 @@ MLAQuizApp.prototype.setupTriadsSearch = function() {
         // Filter by search term
         if (searchTerm) {
             filteredTriads = filteredTriads.filter(triadId => {
-                const triad = clinicalTriads[triadId];
+                const triad = clinicalTriads[triadId] || {};
+                const components = Array.isArray(triad.components) ? triad.components : [];
                 return (
-                    triad.name.toLowerCase().includes(searchTerm) ||
-                    triad.condition.toLowerCase().includes(searchTerm) ||
-                    triad.components.some(comp => comp.toLowerCase().includes(searchTerm))
+                    (triad.name || '').toLowerCase().includes(searchTerm) ||
+                    (triad.condition || '').toLowerCase().includes(searchTerm) ||
+                    components.some(comp => (comp || '').toLowerCase().includes(searchTerm))
                 );
             });
         }
@@ -17457,7 +17517,7 @@ MLAQuizApp.prototype.createTriadCard = function(triad) {
             <div class="triad-components">
                 <h4>🔺 Classic Triad:</h4>
                 <div class="components-list">
-                    ${triad.components.map(comp => `<span class="component-item">${comp}</span>`).join('')}
+                    ${(Array.isArray(triad.components) ? triad.components : []).map(comp => `<span class="component-item">${comp}</span>`).join('')}
                 </div>
             </div>
             
