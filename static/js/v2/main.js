@@ -1149,14 +1149,17 @@ class MLAQuizApp {
                      document.querySelector('[data-panel="drug-reference"]');
         if (!panel) return;
         
+        // Ensure drug name exists, fallback to key if not
+        const drugName = drug.name || drugKey;
+        
         panel.innerHTML = `
             <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(document.getElementById('drug-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
                 ← Back to Drug List
             </button>
             <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border);">
-                    <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1;">${drug.name}</h3>
-                    <button class="speak-name-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}')" style="padding: 10px 16px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                    <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1;">${drugName}</h3>
+                    <button class="speak-name-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drugName.replace(/'/g, "\\'")}')" style="padding: 10px 16px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                         🔊 Hear pronunciation
                     </button>
                 </div>

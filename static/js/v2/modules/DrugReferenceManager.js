@@ -268,6 +268,11 @@ export class DrugReferenceManager {
      * Add drug to recent history
      */
     addToRecent(drugKey) {
+        // Ensure recentDrugs is an array
+        if (!Array.isArray(this.recentDrugs)) {
+            this.recentDrugs = [];
+        }
+        
         // Remove if already exists
         this.recentDrugs = this.recentDrugs.filter(key => key !== drugKey);
         
@@ -284,6 +289,10 @@ export class DrugReferenceManager {
      * Get recent drugs
      */
     async getRecentDrugs() {
+        // Ensure recentDrugs is an array
+        if (!Array.isArray(this.recentDrugs)) {
+            this.recentDrugs = [];
+        }
         
         return this.recentDrugs
             .map(key => this.drugDatabase[key] ? { key, ...this.drugDatabase[key] } : null)
