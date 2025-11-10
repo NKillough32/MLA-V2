@@ -298,45 +298,51 @@ class LaddersManager {
      */
     initializeLadderTabs() {
         try {
-            // Check if already initialized to avoid duplicate listeners
-            if (this.ladderTabsInitialized) return;
-            this.ladderTabsInitialized = true;
-
-            console.log('🪜 Initializing ladder tabs...');
-
-            const tabButtons = document.querySelectorAll('.ladder-tab-btn');
-            const tabContents = document.querySelectorAll('.ladder-tab-content');
-
-            if (!tabButtons.length || !tabContents.length) {
-                console.warn('⚠️ Ladder tab elements not found');
+            // Delegate clicks from the tabs container. This is robust when the
+            // tabs DOM is replaced (e.g. loadLadders writes innerHTML) and avoids
+            // stale listeners attached to removed nodes.
+            const tabsContainer = document.querySelector('.ladder-tabs');
+            if (!tabsContainer) {
+                console.warn('⚠️ Ladder tabs container not found');
                 return;
             }
 
-            tabButtons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const targetLadder = button.getAttribute('data-ladder');
+            // Remove previous delegated handler if present
+            if (this._ladderTabsHandler) {
+                try { tabsContainer.removeEventListener('click', this._ladderTabsHandler); } catch (e) {/* ignore */}
+                this._ladderTabsHandler = null;
+            }
 
-                    // Remove active class from all buttons and contents
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    tabContents.forEach(content => content.classList.remove('active'));
+            this._ladderTabsHandler = (e) => {
+                const btn = e.target.closest && e.target.closest('.ladder-tab-btn');
+                if (!btn) return;
+                e.stopPropagation();
+                const targetLadder = btn.getAttribute('data-ladder');
 
-                    // Add active class to clicked button
-                    button.classList.add('active');
+                const tabButtons = tabsContainer.querySelectorAll('.ladder-tab-btn');
+                const tabContents = document.querySelectorAll('.ladder-tab-content');
 
-                    // Show corresponding content
-                    const targetContent = document.getElementById(`${targetLadder}-ladder`);
-                    if (targetContent) {
-                        targetContent.classList.add('active');
-                        this.activeLadder = targetLadder;
-                        console.log(`🪜 Switched to ${targetLadder} ladder`);
-                    }
-                });
-            });
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
 
-            console.log('✅ Ladder tabs initialized successfully');
+                // Activate clicked button and corresponding content
+                btn.classList.add('active');
+                const targetContent = document.getElementById(`${targetLadder}-ladder`);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                    this.activeLadder = targetLadder;
+                    console.log(`🪜 Switched to ${targetLadder} ladder`);
+                } else {
+                    console.warn(`⚠️ Ladder content element not found for: ${targetLadder}`);
+                }
+            };
+
+            tabsContainer.addEventListener('click', this._ladderTabsHandler);
+            this.ladderTabsInitialized = true;
+            console.log('✅ Ladder tabs delegated handler attached');
         } catch (err) {
-            console.error('❌ Error initializing ladder tabs:', err);
+            console.error('❌ Error initializing ladder tabs (delegation):', err);
         }
     }
 
