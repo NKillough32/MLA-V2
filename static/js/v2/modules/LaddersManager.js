@@ -403,14 +403,33 @@ class LaddersManager {
                     s.textContent = `
                         .ladders-container { padding: 12px 8px; }
                         .ladder-section { margin-bottom: 18px; }
-                        .ladder-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
-                        .ladder-step .step-number { font-weight: 700; background:#f3f4f6;border-radius:6px;padding:8px 10px;min-width:48px;text-align:center }
-                        .medication-list { display: grid; gap:8px; }
-                        .med-item { background: var(--card-bg); padding:8px; border-radius:6px; display:flex; flex-direction:column; gap:4px }
-                        .adjuvant-grid { display:flex; gap:10px; flex-wrap:wrap }
-                        .adjuvant-card { background:var(--card-bg); padding:10px; border-radius:6px; min-width:180px }
+
+                        /* Pain ladder layout improvements */
+                        .pain-ladder-visual { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+
+                        /* Each step is a two-column layout: badge + content */
+                        .ladder-step { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: start; margin-bottom: 12px; }
+                        .ladder-step .step-number { width:56px; height:56px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+
+                        .ladder-step .step-content { min-width: 0; }
+                        .ladder-step .step-content h4 { margin: 0 0 8px 0; }
+
+                        /* Make medication list responsive and tidy */
+                        .medication-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-top: 8px; }
+                        .med-item { background: var(--card-bg); padding: 12px; border-radius:8px; display:flex; flex-direction:column; gap:6px; border: 1px solid var(--border-color, #eaeaea); }
+                        .med-item strong { font-size: 0.98em; }
+
+                        .adjuvant-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px; }
+                        .adjuvant-card { background:var(--card-bg); padding:12px; border-radius:8px; }
+
                         .opioid-conversion-table table { width:100%; border-collapse:collapse }
                         .opioid-conversion-table td, .opioid-conversion-table th { padding:8px; border-bottom:1px solid var(--border) }
+
+                        @media (max-width: 640px) {
+                            .ladder-step { grid-template-columns: 48px 1fr; }
+                            .ladder-step .step-number { width:48px; height:48px; }
+                            .medication-list { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+                        }
                     `;
                     document.head.appendChild(s);
                 }
@@ -501,16 +520,16 @@ class LaddersManager {
 
         const stepsHtml = stepsArr.map(step => `
             <div class="ladder-step step-${step.step}">
-                <div class="step-number">Step ${step.step}</div>
+                <div class="step-number" style="background: ${step.color};">Step ${step.step}</div>
                 <div class="step-content">
                     <h4 style="color: ${step.color};">${step.severity}</h4>
                     <p><strong>${step.approach}</strong></p>
                     <div class="medication-list">
                         ${Array.isArray(step.medications) ? step.medications.map(med => `
                             <div class="med-item" role="group" aria-label="${med.name}">
-                                <div style="display:flex;justify-content:space-between;align-items:center;">
+                                <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
                                     <strong>${med.name}</strong>
-                                    <span class="med-dose" style="opacity:0.85;font-size:0.95em">${med.dose}</span>
+                                    <span class="med-dose" style="opacity:0.85;font-size:0.95em;white-space:nowrap">${med.dose}</span>
                                 </div>
                                 ${med.note ? `<div class="med-note" style="color:var(--muted);font-size:0.9em">${med.note}</div>` : ''}
                             </div>
