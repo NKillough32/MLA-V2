@@ -53,6 +53,7 @@ class MLAQuizApp {
         this.emergencyProtocolsManager = emergencyProtocolsManager;
         this.v2Integration = v2Integration;
         this.calculatorBridge = calculatorBridge;
+        this.toolsPreloaded = false;
         this.setupEventListeners();
     }
 
@@ -105,145 +106,119 @@ class MLAQuizApp {
     async initializeManagers() {
         console.log('📦 Initializing managers...');
 
-        // Initialize storage first (needed by others)
         await storageManager.initIndexedDB();
-
-        // Initialize UI manager (theme, settings)
         await uiManager.initialize();
-
-        // Initialize orientation manager
         orientationManager.initialize();
-
-        // Initialize anatomy manager
         anatomyManager.initialize();
+        await quizManager.initialize();
 
-    // Initialize quiz manager
-    await quizManager.initialize();
+        const calculatorInitialization = calculatorManager.initialize();
+        const referenceInitializers = [
+            this.drugManager.initialize(),
+            this.labManager.initialize(),
+            this.guidelinesManager.initialize(),
+            this.mnemonicsManager.initialize(),
+            this.interpretationToolsManager.initialize(),
+            this.laddersManager.initialize()
+        ];
 
-        // Initialize calculator manager (auto-registers all calculators)
-        // Ensure we await initialization because it loads data from async storage.
-        await calculatorManager.initialize();
+        await Promise.all([calculatorInitialization, ...referenceInitializers]);
 
-        // Calculator bridge will be initialized after all other managers are ready
-
-        // Initialize drug reference manager (requires drugDatabase.js to be loaded)
-        await this.drugManager.initialize();
-
-        // Initialize lab values manager (requires labDatabase.js to be loaded)
-        await this.labManager.initialize();
-
-        // Initialize guidelines manager (requires guidelinesDatabase.js to be loaded)
-        await this.guidelinesManager.initialize();
-
-        // Initialize mnemonics manager
-        await this.mnemonicsManager.initialize();
-
-        // Initialize interpretation tools manager
-        await this.interpretationToolsManager.initialize();
-
-        // Initialize ladders manager
-        await this.laddersManager.initialize();
-
-        // Initialize calculator bridge at the end to ensure all dependencies are ready
         console.log('🔗 Initializing calculator bridge...');
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
-        
+
         console.log('✅ All managers initialized');
         console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
-        const drugStats = await this.drugManager.getStatistics();
-        console.log(`   - Drugs: ${drugStats.totalDrugs}`);
-        console.log(`   - Lab panels: ${this.labManager.getStatistics().totalPanels}, Tests: ${this.labManager.getStatistics().totalTests}`);
-        console.log(`   - Guidelines: ${this.guidelinesManager.getStatistics().total}`);
-        console.log(`   - Mnemonics: ${this.mnemonicsManager.getStatistics().totalMnemonics}`);
-        console.log(`   - Interpretation Tools: ${this.interpretationToolsManager.getStatistics().totalTools}`);
-        console.log(`   - Treatment Ladders: ${this.laddersManager.getStatistics().totalLadders}`);
-        
-        // Preload medical tool content upfront to undo lazy loading
-        setTimeout(() => {
-            console.log('📄 Preloading medical tool content upfront...');
-            
-            const medicalToolsPanel = document.getElementById('medical-tools-panel');
-            if (medicalToolsPanel) {
-                // Preload drug reference content
-                const drugPanel = document.getElementById('drug-panel');
-                if (drugPanel) {
-                    console.log('🏥 Preloading drug reference content...');
-                    this.loadDrugReferenceContent(drugPanel);
-                }
-                
-                // Preload lab values content
-                const labPanel = document.getElementById('lab-panel');
-                if (labPanel) {
-                    console.log('🧪 Preloading lab values content...');
-                    this.loadLabValuesContent(labPanel);
-                }
-                
-                // Preload guidelines content
-                const guidelinesPanel = document.getElementById('guidelines-panel');
-                if (guidelinesPanel) {
-                    console.log('📋 Preloading guidelines content...');
-                    this.loadGuidelinesContent(guidelinesPanel);
-                }
-                
-                // Preload mnemonics content
-                const mnemonicsPanel = document.getElementById('mnemonics-panel');
-                if (mnemonicsPanel) {
-                    console.log('🧠 Preloading mnemonics content...');
-                    this.loadMnemonicsContent(mnemonicsPanel);
-                }
-                
-                // Preload differential diagnosis content
-                const differentialPanel = document.getElementById('differential-panel');
-                if (differentialPanel) {
-                    console.log('🔍 Preloading differential diagnosis content...');
-                    this.loadDifferentialDxContent(differentialPanel);
-                }
-                
-                // Preload triads content
-                const triadsPanel = document.getElementById('triads-panel');
-                if (triadsPanel) {
-                    console.log('🔺 Preloading clinical triads content...');
-                    this.loadTriadsContent(triadsPanel);
-                }
-                
-                // Preload examination content
-                const examinationPanel = document.getElementById('examination-panel');
-                if (examinationPanel) {
-                    console.log('👨‍⚕️ Preloading examination content...');
-                    this.loadExaminationContent(examinationPanel);
-                }
-                
-                // Preload emergency protocols content
-                const emergencyProtocolsPanel = document.getElementById('emergency-protocols-panel');
-                if (emergencyProtocolsPanel) {
-                    console.log('🚨 Preloading emergency protocols content...');
-                    this.loadEmergencyProtocolsContent(emergencyProtocolsPanel);
-                }
-                
-                // Preload interpretation tools content
-                const interpretationPanel = document.getElementById('interpretation-panel');
-                if (interpretationPanel) {
-                    console.log('📊 Preloading interpretation tools content...');
-                    this.loadInterpretationToolsContent(interpretationPanel);
-                }
-                
-                // Preload ladders content
-                const laddersPanel = document.getElementById('ladders-panel');
-                if (laddersPanel) {
-                    console.log('🪜 Preloading treatment ladders content...');
-                    this.loadLaddersContent(laddersPanel);
-                }
-                
-                console.log('✅ All medical tool content preloaded');
-            }
-        }, 1000); // Delay to ensure DOM is ready
-        
+
+        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, ladderStats] = await Promise.all([
+            this.drugManager.getStatistics(),
+            Promise.resolve(this.labManager.getStatistics()),
+            this.guidelinesManager.getStatistics(),
+            this.mnemonicsManager.getStatistics(),
+            this.interpretationToolsManager.getStatistics(),
+            this.laddersManager.getStatistics()
+        ]);
+
+        const safeLabStats = labStats || { totalPanels: 0, totalTests: 0 };
+        const safeGuidelinesStats = guidelinesStats || { total: 0 };
+        const safeMnemonicStats = mnemonicStats || { totalMnemonics: 0 };
+        const safeInterpretationStats = interpretationStats || { totalTools: 0 };
+        const safeLadderStats = ladderStats || { totalLadders: 0 };
+
+        console.log(`   - Drugs: ${drugStats?.totalDrugs ?? 0}`);
+        console.log(`   - Lab panels: ${safeLabStats.totalPanels}, Tests: ${safeLabStats.totalTests}`);
+        console.log(`   - Guidelines: ${safeGuidelinesStats.total}`);
+        console.log(`   - Mnemonics: ${safeMnemonicStats.totalMnemonics}`);
+        console.log(`   - Interpretation Tools: ${safeInterpretationStats.totalTools}`);
+        console.log(`   - Treatment Ladders: ${safeLadderStats.totalLadders}`);
+
+        this.scheduleToolPreload();
+
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
-        // This will be called from index.html after V1's app.js loads
         console.log('✅ V2 Integration ready (awaiting V1 app instance)');
-        
+
         // Register service worker after critical app initialization
         this.registerServiceWorker();
+    }
+
+    scheduleToolPreload() {
+        const triggerPreload = () => this.preloadMedicalTools();
+
+        if ('IntersectionObserver' in window) {
+            const medicalToolsPanel = document.getElementById('medical-tools-panel');
+            if (medicalToolsPanel) {
+                const observer = new IntersectionObserver(entries => {
+                    if (entries.some(entry => entry.isIntersecting)) {
+                        observer.disconnect();
+                        triggerPreload();
+                    }
+                });
+                observer.observe(medicalToolsPanel);
+            }
+        }
+
+        if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(() => triggerPreload(), { timeout: 3000 });
+        } else {
+            window.setTimeout(() => triggerPreload(), 1500);
+        }
+    }
+
+    preloadMedicalTools() {
+        if (this.toolsPreloaded) {
+            return;
+        }
+
+        const medicalToolsPanel = document.getElementById('medical-tools-panel');
+        if (!medicalToolsPanel) {
+            return;
+        }
+
+        this.toolsPreloaded = true;
+        console.log('📄 Preloading medical tool content...');
+
+        const preloadTargets = [
+            { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
+            { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
+            { id: 'guidelines-panel', log: '📋 Preloading guidelines content...', loader: panel => this.loadGuidelinesContent(panel) },
+            { id: 'mnemonics-panel', log: '🧠 Preloading mnemonics content...', loader: panel => this.loadMnemonicsContent(panel) },
+            { id: 'differential-panel', log: '🔍 Preloading differential diagnosis content...', loader: panel => this.loadDifferentialDxContent(panel) },
+            { id: 'triads-panel', log: '🔺 Preloading clinical triads content...', loader: panel => this.loadTriadsContent(panel) },
+            { id: 'examination-panel', log: '👨‍⚕️ Preloading examination content...', loader: panel => this.loadExaminationContent(panel) },
+            { id: 'emergency-protocols-panel', log: '🚨 Preloading emergency protocols content...', loader: panel => this.loadEmergencyProtocolsContent(panel) },
+            { id: 'interpretation-panel', log: '📊 Preloading interpretation tools content...', loader: panel => this.loadInterpretationToolsContent(panel) },
+            { id: 'ladders-panel', log: '🪜 Preloading treatment ladders content...', loader: panel => this.loadLaddersContent(panel) }
+        ];
+
+        preloadTargets.forEach(({ id, log, loader }) => {
+            const panel = document.getElementById(id);
+            if (panel) {
+                console.log(log);
+                loader(panel);
+            }
+        });
+
+        console.log('✅ All medical tool content preloaded');
     }
 
     /**
