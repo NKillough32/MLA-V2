@@ -13,6 +13,7 @@ import logging
 import base64
 import zipfile
 import threading
+from io import BytesIO
 from tempfile import SpooledTemporaryFile
 from pathlib import Path
 from typing import List, Dict, Any, Optional
