@@ -700,5 +700,70 @@ window.guidelinesDatabase = {
         },
         monitoring: 'Check FBC after 2-4 weeks treatment. Hb should rise 10-20 g/L per week. Investigate if no response',
         transfusion: 'If Hb <70 g/L with symptoms OR <80 g/L with cardiovascular disease'
+    },
+    'type-2-diabetes': {
+        title: 'Type 2 Diabetes Mellitus (NICE NG28 2024 update)',
+        category: 'endocrine',
+        evidenceLevel: 'NICE Clinical Guideline',
+        lastUpdated: '2024',
+        organisation: 'NICE',
+        diagnosis: {
+            'HbA1c': '≥48 mmol/mol (6.5%) on two separate tests (or ≥58 mmol/mol if symptomatic)',
+            'Fasting glucose': '≥7.0 mmol/L (126 mg/dL)',
+            'Random glucose': '≥11.1 mmol/L (200 mg/dL) with symptoms',
+            'Screening': 'Offer testing to adults with BMI ≥25 (≥23 in South Asian) plus risk factors'
+        },
+        glycaemicTargets: {
+            'General target': 'HbA1c ≤48 mmol/mol (6.5%) for most adults',
+            'Relaxed target': '≤58 mmol/mol (7.5%) if risk of hypoglycaemia or limited life expectancy',
+            'Self-monitoring': 'Offer SMBG if on insulin or sulfonylurea, or evidence of hypoglycaemia'
+        },
+        treatment: {
+            'Lifestyle': 'Structured education (e.g., DESMOND), weight loss 5-10%, 150 min moderate exercise weekly',
+            'First-line': 'Metformin (start 500mg OD, titrate to 1g BD as tolerated)',
+            'Dual therapy': 'Add SGLT2 inhibitor if high cardiovascular risk or established CVD; otherwise consider DPP-4 inhibitor, pioglitazone, sulfonylurea',
+            'Triple therapy': 'Metformin + SGLT2 inhibitor + DPP-4 inhibitor OR GLP-1 receptor agonist',
+            'Injectable therapy': 'Consider GLP-1 RA (semaglutide, liraglutide) if BMI ≥35 or if insulin unacceptable; basal insulin if inadequate control'
+        },
+        cardiovascularRisk: {
+            'Blood pressure': 'Target <140/90 mmHg (<130/80 if albuminuria). ACE inhibitor first-line',
+            'Lipid management': 'Offer atorvastatin 20mg for primary prevention',
+            'Antiplatelet': 'Aspirin only if secondary prevention'
+        },
+        monitoring: 'Review every 3-6 months. Check HbA1c, renal function, lipid profile, weight, smoking status',
+        complicationsScreening: {
+            'Retinopathy': 'Annual digital retinal screening',
+            'Nephropathy': 'Urine ACR and eGFR annually',
+            'Neuropathy': 'Foot examination at least annually',
+            'Cardiovascular': 'Assess QRISK3 score, manage risk factors aggressively'
+        }
+    },
+    'postpartum-haemorrhage': {
+        title: 'Postpartum Haemorrhage (RCOG Green-top Guideline No. 52, 2016, reaffirmed 2021)',
+        category: 'obstetrics',
+        evidenceLevel: 'Royal College Guideline',
+        lastUpdated: '2021',
+        organisation: 'RCOG',
+        definitions: {
+            'Primary PPH': 'Blood loss ≥500ml within 24 hours of birth (≥1000ml considered major)',
+            'Secondary PPH': 'Abnormal bleeding from 24 hours to 12 weeks postpartum'
+        },
+        riskAssessment: {
+            'Antenatal': 'Previous PPH, placenta previa/accreta, multiple pregnancy, anaemia, fibroids',
+            'Intrapartum': 'Prolonged labour, augmentation, operative delivery, macrosomia, retained placenta'
+        },
+        prevention: {
+            'Active management of third stage': 'Offer to all women – uterotonic (oxytocin 10 IU IM), controlled cord traction',
+            'Iron optimisation': 'Treat antenatal anaemia to Hb ≥105 g/L',
+            'Birth planning': 'Deliver in consultant-led unit if high risk'
+        },
+        management: {
+            'Initial response': 'Call for help, ABC assessment, uterine massage, two large-bore cannulae, blood tests (FBC, coagulation, fibrinogen)',
+            'Uterotonic sequence': 'Oxytocin 10 IU IV/IM → Ergometrine 500 mcg IM (if no hypertension) → Carboprost 250 mcg IM q15min (max 8) → Misoprostol 800-1000 mcg PR',
+            'Adjuncts': 'Tranexamic acid 1g IV within 3 hours (repeat once if needed), consider fibrinogen concentrate/cryoprecipitate if fibrinogen <2g/L',
+            'Mechanical/Surgical': 'Balloon tamponade, B-Lynch suture, uterine artery embolisation, hysterectomy as last resort'
+        },
+        monitoring: 'Record cumulative blood loss, vital signs, urine output ≥30ml/hr, temperature. Repeat labs every 30-60 min while bleeding',
+        postEventCare: 'Debrief patient, check for anaemia, consider iron therapy, document and plan for future pregnancies'
     }
 };

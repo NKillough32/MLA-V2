@@ -65,6 +65,23 @@ export const mnemonicsDatabase = {
             '🔬 Distinguish by clinical features and haemodynamic parameters'
         ]
     },
+    'six-ps-acute-limb': {
+        title: '6 Ps of Acute Limb Ischaemia',
+        category: 'cardiovascular',
+        mnemonic: '6 Ps',
+        meaning: 'Pain, Pallor, Pulselessness, Paraesthesia, Paralysis, Poikilothermia',
+        usage: 'Recognise limb-threatening arterial occlusion',
+        details: [
+            '<strong>Pain</strong> - Sudden severe limb pain out of proportion to findings',
+            '<strong>Pallor</strong> - Pale or mottled appearance compared with contralateral limb',
+            '<strong>Pulselessness</strong> - Absent distal pulses on palpation and Doppler',
+            '<strong>Paraesthesia</strong> - Distal sensory loss or tingling (nerve ischaemia)',
+            '<strong>Paralysis</strong> - Weakness or inability to move limb (late sign)',
+            '<strong>Poikilothermia</strong> - Cool limb unable to regulate temperature',
+            '',
+            '🚨 Limb viability threatened – needs urgent vascular referral for revascularisation'
+        ]
+    },
 
     // Respiratory Mnemonics
     'chest-life-threatening-asthma': {
@@ -89,6 +106,21 @@ export const mnemonicsDatabase = {
             '🚨 Requires immediate senior review and ITU consideration'
         ]
     },
+    'dope-ventilator-troubleshoot': {
+        title: 'DOPE - Ventilator Troubleshooting',
+        category: 'emergency',
+        mnemonic: 'DOPE',
+        meaning: 'Displacement, Obstruction, Pneumothorax, Equipment failure',
+        usage: 'Rapid assessment of deteriorating ventilated patient',
+        details: [
+            '<strong>D</strong> - <strong>Displacement</strong>: Check tube position, depth, cuff inflation',
+            '<strong>O</strong> - <strong>Obstruction</strong>: Suction for mucus plug, check for biting/kinking',
+            '<strong>P</strong> - <strong>Pneumothorax</strong>: Auscultate, percuss, consider ultrasound',
+            '<strong>E</strong> - <strong>Equipment</strong>: Inspect ventilator circuit, oxygen supply, power',
+            '',
+            '🛠️ Run through DOPE whenever alarms trigger or patient deteriorates'
+        ]
+    },
     'curb-65': {
         title: 'CURB-65 - Pneumonia Severity',
         category: 'respiratory',
@@ -108,6 +140,23 @@ export const mnemonicsDatabase = {
             '• Score 3-5: High risk → urgent hospital admission',
             '',
             '💡 CRB-65 (without urea) can be used in community'
+        ]
+    },
+
+    // Endocrine Mnemonics
+    'bones-stones-hypercalcaemia': {
+        title: 'Bones, Stones, Groans & Psychiatric Overtones',
+        category: 'endocrine',
+        mnemonic: 'Bones, Stones, Groans, Psychiatric overtones',
+        meaning: 'Classic symptoms of hypercalcaemia',
+        usage: 'Recall systemic manifestations when assessing calcium abnormalities',
+        details: [
+            '<strong>Bones</strong> - Bone pain, fractures, osteitis fibrosa cystica',
+            '<strong>Stones</strong> - Renal calculi, nephrocalcinosis, polyuria',
+            '<strong>Groans</strong> - Abdominal pain, constipation, pancreatitis, peptic ulcers',
+            '<strong>Psychiatric overtones</strong> - Fatigue, depression, confusion, memory loss',
+            '',
+            '🧪 Always check PTH to differentiate primary hyperparathyroidism vs malignancy-related hypercalcaemia'
         ]
     },
 

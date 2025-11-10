@@ -125,6 +125,36 @@ export const clinicalTriads = {
         urgency: 'moderate',
         clinicalSignificance: 'Hereditary cancer syndrome requiring screening',
         ukGuidelines: 'Genetic counselling and family screening (NICE guidance)'
+    },
+    'wernicke-encephalopathy': {
+        name: 'Wernicke Encephalopathy Triad',
+        category: 'neurologic',
+        components: ['Ophthalmoplegia/nystagmus', 'Ataxia', 'Confusion'],
+        condition: 'Acute Thiamine Deficiency (Wernicke Encephalopathy)',
+        mechanism: 'Thiamine deficiency causing brainstem and cerebellar dysfunction',
+        urgency: 'emergency',
+        clinicalSignificance: 'Requires immediate IV thiamine to prevent irreversible Korsakoff syndrome',
+        ukGuidelines: 'Administer high-dose IV thiamine before glucose in malnourished or alcohol-dependent patients'
+    },
+    'fat-embolism-syndrome': {
+        name: 'Fat Embolism Syndrome Triad',
+        category: 'trauma',
+        components: ['Respiratory distress', 'Neurological impairment', 'Petechial rash'],
+        condition: 'Fat Embolism Syndrome',
+        mechanism: 'Fat droplets entering circulation after long bone fractures or orthopaedic surgery',
+        urgency: 'high',
+        clinicalSignificance: 'Early recognition prompts supportive care and ICU monitoring to prevent respiratory failure',
+        ukGuidelines: 'Stabilise fractures early, provide high-flow oxygen, consider critical care referral'
+    },
+    'leriche-syndrome': {
+        name: 'Leriche Syndrome Triad',
+        category: 'vascular',
+        components: ['Buttock/thigh claudication', 'Absent/diminished femoral pulses', 'Erectile dysfunction'],
+        condition: 'Aortoiliac Occlusive Disease',
+        mechanism: 'Atherosclerotic obstruction of the distal aorta or iliac arteries',
+        urgency: 'moderate',
+        clinicalSignificance: 'Suggests advanced peripheral arterial disease requiring vascular assessment',
+        ukGuidelines: 'Urgent vascular referral, aggressive cardiovascular risk factor modification, consider revascularisation'
     }
 };
 

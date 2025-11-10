@@ -233,6 +233,45 @@ export const differentialDatabase =         {
                     }
                 }
             },
+            'syncope': {
+                title: 'Syncope / Transient Loss of Consciousness',
+                category: 'Cardiology/Neurology',
+                redFlags: '🚩 Exertional syncope, family history of sudden cardiac death, abnormal ECG, syncope with chest pain or palpitations',
+                presentations: {
+                    'Vasovagal syncope': {
+                        features: 'Prodrome of nausea, warmth, sweating, visual changes. Triggered by standing, emotional stress, pain. Rapid recovery when supine',
+                        tests: 'Clinical diagnosis, tilt-table test if recurrent or unclear, ECG to exclude arrhythmia',
+                        urgency: 'Non-urgent',
+                        timeToTreat: 'Education, avoid triggers, increase fluids/salt, counter-pressure manoeuvres',
+                        clinicalPearls: 'Most common cause in young adults. Prodromal symptoms and identifiable trigger typical',
+                        differentiatingFeatures: 'Prodrome present, occurs in upright position, no post-event confusion'
+                    },
+                    'Orthostatic hypotension': {
+                        features: 'Syncope or dizziness within minutes of standing. History of dehydration, autonomic dysfunction, medications (diuretics, antihypertensives)',
+                        tests: 'Postural BP drop ≥20 systolic or ≥10 diastolic, review medications, autonomic testing if needed',
+                        urgency: 'Urgent',
+                        timeToTreat: 'Fluid resuscitation, medication review, compression stockings, fludrocortisone/midodrine if persistent',
+                        clinicalPearls: 'Common in elderly, diabetics, Parkinson disease. Evaluate for volume depletion or medications',
+                        differentiatingFeatures: 'Occurs shortly after standing, documented postural BP drop, minimal prodrome'
+                    },
+                    'Cardiac arrhythmia': {
+                        features: 'Abrupt syncope without prodrome, palpitations, history of structural heart disease or pacemaker',
+                        tests: '12-lead ECG, ambulatory monitoring, echocardiography, consider electrophysiology referral',
+                        urgency: 'Emergency',
+                        timeToTreat: 'Hospital admission, treat underlying arrhythmia (e.g., pacemaker for bradycardia, antiarrhythmic or ablation for tachyarrhythmia)',
+                        clinicalPearls: 'Consider long QT, Brugada, VT, AV block. Syncope during exertion highly suspicious',
+                        differentiatingFeatures: 'No warning, injury common, abnormal ECG, structural heart disease'
+                    },
+                    'Seizure mimic': {
+                        features: 'Tonic-clonic movements >20s, tongue biting (lateral), incontinence, prolonged post-ictal confusion',
+                        tests: 'EEG, MRI brain if focal features, serum prolactin (within 20 minutes) may aid differentiation',
+                        urgency: 'Urgent',
+                        timeToTreat: 'Neurology referral, antiseizure medication if confirmed, driving restrictions',
+                        clinicalPearls: 'Up to 20% of presumed seizures are syncope with myoclonic activity. Look for post-event confusion >10 minutes',
+                        differentiatingFeatures: 'Post-ictal confusion, lateral tongue biting, prolonged recovery'
+                    }
+                }
+            },
             'altered-mental-status': {
                 title: 'Altered Mental Status',
                 category: 'Neurology/Emergency',
