@@ -100,6 +100,20 @@ const drugDatabase = {
                 clinicalPearls: 'Long half-life allows once daily dosing. Ankle oedema not due to fluid retention. Preferred CCB in UK',
                 indication: 'Hypertension, stable angina. Often used as add-on therapy'
             },
+            'apixaban': {
+                name: 'Apixaban',
+                class: 'Direct oral anticoagulant (Factor Xa inhibitor)',
+                mechanism: 'Selectively inhibits Factor Xa, reducing thrombin generation and clot formation',
+                dosing: 'AF stroke prevention: 5mg BD (reduce to 2.5mg BD if ≥2 of: age ≥80, weight ≤60kg, creatinine ≥133μmol/L). VTE treatment: 10mg BD for 7 days then 5mg BD',
+                contraindications: 'Active bleeding, hepatic disease with coagulopathy, prosthetic heart valves, pregnancy/breastfeeding',
+                interactions: 'Strong CYP3A4/P-gp inhibitors (ketoconazole, ritonavir) increase levels; inducers (rifampicin, carbamazepine) decrease effect',
+                monitoring: 'Renal function baseline then annually (more frequent if CKD), assess bleeding risk, no routine coagulation monitoring required',
+                pregnancy: 'Avoid – insufficient safety data; switch to LMWH if anticoagulation needed',
+                sideEffects: 'Bleeding, bruising, anaemia, nausea. Rare: hypersensitivity, liver enzyme elevation',
+                pharmacokinetics: 'Oral bioavailability ~50%, peak 3-4h, half-life 12h, dual hepatic and renal elimination',
+                clinicalPearls: 'Ensure adherence (short half-life). Hold 48-72h pre-surgery depending on bleeding risk. Specific reversal agent: andexanet alfa (limited availability), otherwise PCC',
+                indication: 'Stroke prevention in non-valvular AF, treatment and prevention of DVT/PE'
+            },
             'amitriptyline': {
                 name: 'Amitriptyline',
                 class: 'Tricyclic antidepressant (TCA)',

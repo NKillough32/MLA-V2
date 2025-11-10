@@ -235,35 +235,6 @@ window.labDatabase = {
             }
         }
     },
-    'coagulation': {
-        name: 'Coagulation Studies',
-        values: {
-            'PT/INR': {
-                normal: 'PT: 11-13 seconds, INR: 0.8-1.2',
-                low: 'Thrombophilia, early liver disease',
-                high: 'Warfarin therapy, liver disease, vitamin K deficiency, DIC',
-                critical: 'INR >5.0 (bleeding risk)',
-                ageVariations: 'Slight increase with age',
-                clinicalSignificance: 'INR target 2-3 for most indications, 2.5-3.5 for mechanical valves. Reflects extrinsic pathway.'
-            },
-            'APTT': {
-                normal: '25-35 seconds',
-                low: 'Early DIC, thrombophilia',
-                high: 'Heparin therapy, hemophilia, liver disease, lupus anticoagulant',
-                critical: '>100 seconds',
-                ageVariations: 'Consistent across ages',
-                clinicalSignificance: 'Monitors unfractionated heparin therapy. Reflects intrinsic pathway. Ratio to control usually reported.'
-            },
-            'D-dimer': {
-                normal: '<0.5 mg/L',
-                low: 'No clinical significance',
-                high: 'VTE, DIC, malignancy, infection, pregnancy, surgery, advanced age',
-                critical: '>10 mg/L',
-                ageVariations: 'Increases with age (age×10 μg/L cutoff >50 years)',
-                clinicalSignificance: 'High sensitivity, low specificity for VTE. Normal D-dimer excludes PE/DVT in low-risk patients.'
-            }
-        }
-    },
     'cardiac_markers': {
         name: 'Cardiac Markers',
         values: {
@@ -348,6 +319,43 @@ window.labDatabase = {
                 critical: '<1.90 or >3.00 mmol/L',
                 ageVariations: 'Consistent across ages',
                 clinicalSignificance: 'Correct for albumin: Corrected Ca = measured Ca + 0.02 × (40 - albumin g/L). Check PTH if abnormal.'
+            }
+        }
+    },
+    'coagulation': {
+        name: 'Coagulation Profile',
+        values: {
+            'Prothrombin Time (PT)': {
+                normal: '10-14 seconds',
+                low: 'Shortened PT rarely clinically significant (can indicate high Factor VII activity)',
+                high: 'Vitamin K deficiency, liver disease, warfarin therapy, disseminated intravascular coagulation',
+                critical: '>20 seconds or INR >5',
+                ageVariations: 'Neonates have mildly prolonged PT due to immature liver function',
+                clinicalSignificance: 'Prolonged PT suggests extrinsic pathway defect; monitor warfarin therapy'
+            },
+            'International Normalised Ratio (INR)': {
+                normal: '0.9-1.2 (non-anticoagulated)',
+                low: 'Hypercoagulable state (rare, usually lab variation)',
+                high: 'Warfarin overdose, vitamin K deficiency, liver failure, DIC',
+                critical: '>5.0 or any elevation with bleeding',
+                ageVariations: 'Consistent across ages; therapeutic ranges depend on indication',
+                clinicalSignificance: 'Target 2.0-3.0 for AF/DVT/PE; 2.5-3.5 for mechanical mitral valve'
+            },
+            'Activated Partial Thromboplastin Time (APTT)': {
+                normal: '25-35 seconds',
+                low: 'Shortened APTT rarely significant (e.g., high Factor VIII)',
+                high: 'Heparin therapy, lupus anticoagulant, factor deficiencies (VIII, IX, XI), DIC',
+                critical: '>70 seconds or any elevation with bleeding',
+                ageVariations: 'Slightly prolonged in neonates',
+                clinicalSignificance: 'Evaluates intrinsic pathway; monitor unfractionated heparin therapy'
+            },
+            'Fibrinogen': {
+                normal: '1.5-4.0 g/L',
+                low: 'DIC, liver disease, massive transfusion, congenital hypofibrinogenaemia',
+                high: 'Inflammation, pregnancy, malignancy',
+                critical: '<1.0 g/L (bleeding risk)',
+                ageVariations: 'Increases in pregnancy (up to 6.0 g/L)',
+                clinicalSignificance: 'Key target in major haemorrhage – aim >2.0 g/L in obstetric bleeding'
             }
         }
     }

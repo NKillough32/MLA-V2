@@ -236,5 +236,42 @@ export const emergencyProtocols = {
         drugs: ['Piperacillin-tazobactam 4.5g IV TDS', 'Alternative: Meropenem + Vancomycin'],
         ukGuideline: 'NICE CG151',
         criticalActions: ['Immediate antibiotics', 'Source identification', 'Daily monitoring']
+    },
+    'postpartum-haemorrhage': {
+        name: 'Postpartum Haemorrhage (PPH) Protocol',
+        category: 'obstetric',
+        urgency: 'emergency',
+        steps: [
+            'Call for obstetric emergency team and activate massive haemorrhage protocol',
+            'Assess airway, breathing, circulation; give high-flow oxygen',
+            'Establish two large-bore IV cannulae, send blood for FBC, crossmatch, coagulation, fibrinogen',
+            'Commence uterine massage and ensure bladder empty (catheterise if needed)',
+            'Administer uterotonics: Oxytocin 10 IU IV/IM, followed by infusion (40 IU in 500ml over 4 hours)',
+            'If bleeding persists: give ergometrine 500mcg IM (if no hypertension) and carboprost 250mcg IM q15 min (max 8 doses)',
+            'Administer tranexamic acid 1g IV within 3 hours of birth (repeat after 30 min if bleeding continues)',
+            'Consider intrauterine balloon tamponade, brace sutures, arterial embolisation, or hysterectomy if refractory',
+            'Monitor observations, blood loss, urine output, coagulation profile continuously'
+        ],
+        drugs: ['Oxytocin 10 IU IV/IM then infusion', 'Ergometrine 500mcg IM', 'Carboprost 250mcg IM', 'Tranexamic acid 1g IV'],
+        ukGuideline: 'RCOG Green-top Guideline No. 52 (2016, reaffirmed 2021)',
+        criticalActions: ['Early senior involvement', 'Rapid uterotonic therapy', 'Activate massive transfusion', 'Escalate to surgical control if ongoing bleeding']
+    },
+    'acute-hyperkalaemia': {
+        name: 'Acute Hyperkalaemia Management',
+        category: 'metabolic',
+        urgency: 'emergency',
+        steps: [
+            'Confirm potassium level and assess ECG for tall T waves, widened QRS, sine-wave pattern',
+            'Give IV calcium gluconate 10% 10ml over 5 minutes (repeat if ECG changes persist)',
+            'Shift potassium intracellularly: Insulin 10 units IV with 25g glucose; consider nebulised salbutamol 10-20mg',
+            'Administer sodium bicarbonate 50ml 8.4% IV if metabolic acidosis or severe hyperkalaemia',
+            'Remove potassium: Consider loop diuretic, calcium resonium, or haemodialysis in renal failure',
+            'Stop nephrotoxic and potassium-retaining drugs, review medications',
+            'Monitor potassium, glucose, and ECG every 30-60 minutes until stable',
+            'Escalate to renal team if refractory or if dialysis access required'
+        ],
+        drugs: ['Calcium gluconate 10% 10ml IV', 'Actrapid 10 units IV + 25g glucose', 'Nebulised salbutamol 10-20mg', 'Sodium bicarbonate 50ml 8.4% IV'],
+        ukGuideline: 'UK Renal Association Acute Hyperkalaemia Guideline 2022',
+        criticalActions: ['Protect myocardium with calcium', 'Shift potassium intracellularly rapidly', 'Arrange definitive potassium removal']
     }
 };

@@ -1577,6 +1577,94 @@ export const examinationGuides =     {
                     clinicalPearls: 'Gentle technique. Warn patient before examination. Note any masses'
                 }
             }
+        },
+        'postnatal-review': {
+            title: 'Postnatal Maternal Assessment',
+            category: 'obstetrics',
+            approach: 'Introduction → Observations → Uterine assessment → Lochia → Perineum/Caesarean wound → Breasts/feeding → Mental health → Safety-netting',
+            sections: {
+                'observations': {
+                    name: 'Observations & General Wellbeing',
+                    technique: 'Assess vital signs, pain scores, overall appearance, ability to mobilise',
+                    normal: 'Afebrile, normotensive, comfortable at rest, mobilising independently',
+                    abnormal: {
+                        'Pyrexia (>38°C)': 'Consider endometritis, wound infection, mastitis',
+                        'Tachycardia/hypotension': 'May signal ongoing haemorrhage or sepsis',
+                        'Breathlessness or chest pain': 'Consider pulmonary embolism',
+                        'Severe pain or inability to mobilise': 'Complication requiring review'
+                    },
+                    clinicalPearls: 'Ask about urinary/bowel function, thromboembolism prophylaxis adherence'
+                },
+                'uterus-involution': {
+                    name: 'Uterine Involution',
+                    technique: 'Palpate fundal height and tone, assess for tenderness',
+                    normal: 'Fundus firm, midline, at or below umbilicus by day 2-3 postpartum',
+                    abnormal: {
+                        'Boggy uterus': 'Suggests uterine atony and risk of haemorrhage',
+                        'Delayed involution': 'Consider retained products or infection',
+                        'Marked tenderness': 'May indicate endometritis or haematoma'
+                    },
+                    clinicalPearls: 'Encourage breastfeeding and bladder emptying to promote uterine tone'
+                },
+                'lochia-assessment': {
+                    name: 'Lochia Assessment',
+                    technique: 'Ask about amount, colour, odour of vaginal loss',
+                    normal: 'Lochia rubra first few days → serosa (pink/brown) by day 4-10 → alba (yellow/white) by week 3-6',
+                    abnormal: {
+                        'Heavy fresh bleeding with clots': 'Postpartum haemorrhage, retained products',
+                        'Offensive odour': 'Endometritis',
+                        'Sudden return to bright red bleeding': 'Overexertion or retained products'
+                    },
+                    clinicalPearls: 'Quantify pad use, advise patient to seek care if bleeding soaks >1 pad/hour'
+                },
+                'perineum-wound': {
+                    name: 'Perineum / Caesarean Wound',
+                    technique: 'Inspect perineal sutures or abdominal wound for healing, erythema, discharge',
+                    normal: 'Edges approximated, minimal swelling, no discharge or dehiscence',
+                    abnormal: {
+                        'Redness, warmth, purulent discharge': 'Wound infection',
+                        'Gapping of wound': 'Wound dehiscence – urgent surgical review',
+                        'Hematoma': 'Painful swelling, may require drainage',
+                        'Severe perineal pain': 'Consider infection or breakdown of repair'
+                    },
+                    clinicalPearls: 'Assess analgesia needs, pelvic floor exercises, offer referral for continence support if required'
+                },
+                'breastfeeding-support': {
+                    name: 'Breast & Feeding Support',
+                    technique: 'Observe latch if breastfeeding, inspect breasts for engorgement or mastitis, ask about feeding plan',
+                    normal: 'Breasts soft or mildly engorged, nipples intact, effective latch, baby feeding 8-12 times/day',
+                    abnormal: {
+                        'Cracked/bleeding nipples': 'Poor latch or infection',
+                        'Localized breast redness + fever': 'Mastitis – needs prompt treatment',
+                        'Insufficient milk transfer': 'Consider lactation support',
+                        'Formula feeding difficulties': 'Address equipment, feeding schedule, support needs'
+                    },
+                    clinicalPearls: 'Signpost to lactation consultant, provide safe feeding advice, check vitamin D supplementation'
+                },
+                'mental-health': {
+                    name: 'Mental Health & Safeguarding',
+                    technique: 'Use open questions to explore mood, anxiety, bonding, support network, domestic safety',
+                    normal: 'Positive mood, normal emotional lability, adequate support, no safeguarding concerns',
+                    abnormal: {
+                        'Persistent low mood, anhedonia': 'Postnatal depression – consider EPDS screening',
+                        'Intrusive thoughts/obsessions': 'Postnatal OCD or anxiety',
+                        'Red flag symptoms': 'Thoughts of self-harm or harm to baby, psychosis – emergency referral',
+                        'Safeguarding concerns': 'Domestic abuse, substance misuse, housing insecurity'
+                    },
+                    clinicalPearls: 'Provide perinatal mental health resources, ensure follow-up, involve health visitor'
+                },
+                'safety-netting': {
+                    name: 'Safety Netting & Follow-up',
+                    technique: 'Discuss warning signs, contraception, immunisations, schedule routine postnatal checks',
+                    normal: 'Patient understands red flags and follow-up plan, contraception discussed, immunisations up to date',
+                    abnormal: {
+                        'No understanding of red flags': 'Reiterate education, provide written information',
+                        'Unaddressed contraception needs': 'Offer immediate options including LARC',
+                        'Outstanding clinical issues': 'Arrange GP or specialist review'
+                    },
+                    clinicalPearls: 'Document all advice, provide contact numbers, coordinate care with primary/community teams'
+                }
+            }
         }
     };
 
