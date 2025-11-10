@@ -1312,9 +1312,15 @@ export class CalculatorManager {
      * Add calculator to recent tools
      */
     addToRecentTools(calculatorId) {
+        // Defensively ensure recentTools is always an array
+        if (!Array.isArray(this.recentTools)) {
+            console.warn('recentTools in unexpected format, resetting to empty array:', this.recentTools);
+            this.recentTools = [];
+        }
+
         // Remove if already exists
         this.recentTools = this.recentTools.filter(id => id !== calculatorId);
-        
+
         // Add to beginning
         this.recentTools.unshift(calculatorId);
         

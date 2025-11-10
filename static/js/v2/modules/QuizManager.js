@@ -34,6 +34,9 @@ export class QuizManager {
             totalTime: 0,
             averageTimePerQuestion: 0
         };
+
+        // Upload status element id (used to show V1-style persistent messages during file processing)
+        this.uploadStatusId = 'upload-status';
     }
 
     /**
@@ -1097,6 +1100,8 @@ export class QuizManager {
             
             for (let file of files) {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
+                // Show a persistent status message for the current file (V1-style feedback)
+                this.setUploadStatus(`Reading file: ${file.name}`);
                 
                 // Client-side size limits: keep small limit for markdown files but
                 // allow larger ZIP uploads (images inside zips commonly exceed 5MB)
@@ -1147,6 +1152,9 @@ export class QuizManager {
                         error: 'Unsupported file type (only .md and .zip allowed)'
                     });
                 }
+
+                // Clear transient status for this file after processing (keep final toast from processX methods)
+                this.clearUploadStatus(1500);
             }
             
             // Update quiz list and show results
@@ -1161,6 +1169,8 @@ export class QuizManager {
                     const formData = new FormData();
                     formData.append('quiz_file', file);
                     
+                    // Show upload/transfer status
+                    this.setUploadStatus(`Uploading ${file.name} to server...`);
                     const response = await fetch('/api/upload-quiz', {
                         method: 'POST',
                         body: formData
@@ -1198,6 +1208,7 @@ export class QuizManager {
                     }
                     
                     console.log(`✅ Quiz uploaded: ${quizData.name} (${quizData.questionCount} questions)`);
+                    this.setUploadStatus(`Uploaded ${quizData.name} (${quizData.questionCount} questions)`, 'success', 2500);
                 }
             }
             
@@ -1215,8 +1226,9 @@ export class QuizManager {
      */
     
     async processMarkdownFile(file) {
-        // Show loading feedback for markdown files
+        // Show loading feedback for markdown files (both toast and persistent status)
         UIHelpers.showToast(`📄 Processing markdown file: ${file.name}...`, 'info', 0);
+        this.setUploadStatus(`Parsing markdown: ${file.name}`);
         
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
@@ -1236,6 +1248,7 @@ export class QuizManager {
                     
                     // Clear loading toast and show success
                     UIHelpers.showToast(`✅ Markdown file processed: ${quizName} (${questions.length} questions)`, 'success');
+                    this.setUploadStatus(`Parsed ${quizName} — ${questions.length} question(s)`, 'success', 2000);
                     
                     resolve({
                         name: quizName,
@@ -1247,12 +1260,14 @@ export class QuizManager {
                 } catch (error) {
                     // Clear loading toast and show error
                     UIHelpers.showToast(`❌ Failed to parse markdown file: ${error.message}`, 'error');
+                    this.setUploadStatus(`Failed to parse ${file.name}: ${error.message}`, 'error', 4000);
                     reject(new Error(`Failed to parse markdown: ${error.message}`));
                 }
             };
             
             reader.onerror = () => {
                 UIHelpers.showToast(`❌ Failed to read file: ${file.name}`, 'error');
+                this.setUploadStatus(`Failed to read ${file.name}`, 'error', 4000);
                 reject(new Error('Failed to read file'));
             };
             
@@ -1310,8 +1325,9 @@ export class QuizManager {
     }
 
     async processZipFile(file) {
-        // Show loading feedback for zip files
+        // Show loading feedback for zip files (persistent status + toast)
         UIHelpers.showToast(`📦 Processing ZIP file: ${file.name}...`, 'info', 0);
+        this.setUploadStatus(`Uploading ZIP: ${file.name}`);
         
         try {
             // For zip files, we'll need JSZip library or send to server
@@ -1336,6 +1352,7 @@ export class QuizManager {
             
             // Clear loading toast and show success
             UIHelpers.showToast(`✅ ZIP file processed successfully: ${data.quiz_name}`, 'success');
+            this.setUploadStatus(`ZIP processed: ${data.quiz_name}`, 'success', 2500);
             
             return {
                 name: data.quiz_name,
@@ -1348,7 +1365,52 @@ export class QuizManager {
         } catch (error) {
             // Clear loading toast and show error
             UIHelpers.showToast(`❌ Failed to process ZIP file: ${error.message}`, 'error');
+            this.setUploadStatus(`Failed to process ZIP: ${error.message}`, 'error', 4000);
             throw error;
+        }
+    }
+
+    /**
+     * Show a small persistent upload status message (V1-style)
+     * level: 'info' | 'success' | 'error'
+     * duration: milliseconds to auto-clear (if omitted or 0, persistent until cleared)
+     */
+    setUploadStatus(message, level = 'info', duration = 0) {
+        try {
+            let el = document.getElementById(this.uploadStatusId);
+            if (!el) {
+                el = document.createElement('div');
+                el.id = this.uploadStatusId;
+                el.style.cssText = 'position:fixed;bottom:18px;left:18px;z-index:9999;padding:10px 14px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12);font-size:13px;color:#fff;max-width:80%;backdrop-filter: blur(4px);';
+                document.body.appendChild(el);
+            }
+
+            const bg = level === 'success' ? '#059669' : (level === 'error' ? '#dc2626' : '#0ea5e9');
+            el.style.background = bg;
+            el.textContent = message;
+
+            // If duration provided, auto-clear after duration ms
+            if (duration && duration > 0) {
+                setTimeout(() => this.clearUploadStatus(), duration);
+            }
+        } catch (e) {
+            console.debug('Failed to show upload status element:', e);
+        }
+    }
+
+    /**
+     * Clear the upload status element. optional delay in ms before clearing.
+     */
+    clearUploadStatus(delay = 0) {
+        try {
+            if (delay && delay > 0) {
+                setTimeout(() => this.clearUploadStatus(0), delay);
+                return;
+            }
+            const el = document.getElementById(this.uploadStatusId);
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+        } catch (e) {
+            console.debug('Failed to clear upload status element:', e);
         }
     }
 
