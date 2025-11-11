@@ -748,11 +748,13 @@ export class AnatomyManager {
 
         if (imageUrl) {
             const safeSrc = escapeAttr(imageUrl);
-            const modalUrl = escapeJsString(imageUrl);
-            const modalCaption = escapeJsString(`${data.commonName || toTitle(key)} reference view`);
+            // use data- attributes to avoid inline JS and escaping issues
+            const modalUrlAttr = escapeAttr(imageUrl);
+            const modalCaptionAttr = escapeAttr(`${data.commonName || toTitle(key)} reference view`);
             html += `
                 <div class="anatomy-info-image">
-                    <img src="${safeSrc}" alt="${name} reference" loading="lazy" onclick="window.openImageModal && openImageModal('${modalUrl}', '${modalCaption}')">
+                    <img class="anatomy-info-img" src="${safeSrc}" alt="${name} reference" loading="lazy"
+                         data-modal-url="${modalUrlAttr}" data-modal-caption="${modalCaptionAttr}">
                     ${imageCaption ? `<div class="image-caption">${sanitize(imageCaption)}</div>` : ''}
                 </div>
             `;
@@ -820,6 +822,28 @@ export class AnatomyManager {
 
         html += `</div>`;
         info.innerHTML = html;
+
+        // Attach click handler to image element (avoid inline onclick to prevent syntax errors)
+        try {
+            const imgEl = info.querySelector('.anatomy-info-img');
+            if (imgEl) {
+                imgEl.addEventListener('click', (ev) => {
+                    ev.stopPropagation();
+                    const url = imgEl.getAttribute('data-modal-url') || '';
+                    const caption = imgEl.getAttribute('data-modal-caption') || '';
+                    if (typeof window.openImageModal === 'function') {
+                        window.openImageModal(url, caption);
+                    } else if (typeof openImageModal === 'function') {
+                        try { openImageModal(url, caption); } catch (e) { /* ignore */ }
+                    } else if (url) {
+                        // fallback: open image in new tab
+                        window.open(url, '_blank', 'noopener');
+                    }
+                });
+            }
+        } catch (attachErr) {
+            console.debug('Could not attach anatomy image click handler', attachErr);
+        }
     }
 
     /**
