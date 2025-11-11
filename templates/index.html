@@ -7428,6 +7428,261 @@
                 font-size: 12px;
             }
 
+            /* Vaccination Programme Styles */
+            .vaccination-container {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                padding: 24px;
+            }
+
+            .vaccination-header {
+                background: var(--v2-bg-card, var(--card-bg, #ffffff));
+                border: 1px solid var(--v2-border, var(--border, #e2e8f0));
+                border-radius: 16px;
+                padding: 24px;
+                box-shadow: var(--v2-shadow-md, 0 8px 16px -4px rgba(15, 23, 42, 0.08));
+            }
+
+            .vaccination-header h2 {
+                margin: 0 0 12px 0;
+                font-size: 1.8rem;
+                color: var(--v2-text-primary, var(--text-primary));
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .vaccination-header p {
+                margin: 4px 0 0 0;
+                color: var(--v2-text-secondary, var(--text-secondary));
+                line-height: 1.6;
+            }
+
+            .vaccination-badges {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 16px;
+            }
+
+            .vaccination-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 12px;
+                background: rgba(99, 102, 241, 0.1);
+                border-radius: 999px;
+                color: var(--v2-primary, #6366f1);
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+
+            .vaccination-key-points {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 12px;
+            }
+
+            .vaccination-pill {
+                padding: 12px 16px;
+                background: var(--v2-bg-card, rgba(6, 182, 212, 0.08));
+                border-radius: 14px;
+                border: 1px solid rgba(6, 182, 212, 0.2);
+                color: var(--v2-text-primary, var(--text-primary));
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            .vaccination-tabs {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                background: var(--v2-bg-card, var(--bg-secondary));
+                border: 1px solid var(--v2-border, var(--border));
+                border-radius: 14px;
+                padding: 10px;
+            }
+
+            .vaccination-tab {
+                flex: 1 1 200px;
+                border: none;
+                background: transparent;
+                padding: 12px 16px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 0.95rem;
+                color: var(--v2-text-secondary, var(--text-secondary));
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                justify-content: center;
+                transition: all var(--v2-transition-base, 0.2s ease);
+            }
+
+            .vaccination-tab:hover {
+                background: rgba(99, 102, 241, 0.08);
+                color: var(--v2-primary, #6366f1);
+            }
+
+            .vaccination-tab.active {
+                background: linear-gradient(135deg, var(--v2-primary, #6366f1) 0%, var(--v2-primary-dark, #4f46e5) 100%);
+                color: #ffffff;
+                box-shadow: 0 10px 20px -12px rgba(79, 70, 229, 0.6);
+            }
+
+            .vaccination-content {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .vaccination-section {
+                display: none;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .vaccination-section.active {
+                display: flex;
+            }
+
+            .vaccination-card {
+                background: var(--v2-bg-card, var(--card-bg, #ffffff));
+                border: 1px solid var(--v2-border, var(--border, #e2e8f0));
+                border-radius: 16px;
+                padding: 20px;
+                box-shadow: var(--v2-shadow-sm, 0 6px 12px -8px rgba(15, 23, 42, 0.25));
+            }
+
+            .vaccination-card h3 {
+                margin: 0 0 10px 0;
+                font-size: 1.2rem;
+                color: var(--v2-primary-dark, var(--text-primary));
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .vaccination-age {
+                font-size: 0.85rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--v2-text-secondary, var(--text-secondary));
+                margin-bottom: 12px;
+            }
+
+            .vaccination-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 14px;
+            }
+
+            .vaccination-list li {
+                background: var(--v2-bg-elevated, rgba(99, 102, 241, 0.06));
+                border-radius: 12px;
+                padding: 14px 16px;
+                border: 1px solid rgba(99, 102, 241, 0.15);
+            }
+
+            .vaccination-list strong {
+                color: var(--v2-text-primary, var(--text-primary));
+                font-size: 1rem;
+            }
+
+            .vaccination-components {
+                display: inline-flex;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin: 6px 0 0 0;
+            }
+
+            .vaccination-chip {
+                background: rgba(14, 165, 233, 0.12);
+                color: #0284c7;
+                padding: 4px 10px;
+                border-radius: 999px;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+
+            .vaccination-note {
+                margin-top: 8px;
+                font-size: 0.9rem;
+                color: var(--v2-text-secondary, var(--text-secondary));
+            }
+
+            .vaccination-extra {
+                margin-top: 14px;
+                padding: 12px 14px;
+                border-left: 4px solid var(--v2-secondary, #06b6d4);
+                background: rgba(6, 182, 212, 0.08);
+                border-radius: 10px;
+                color: var(--v2-text-primary, var(--text-primary));
+                font-size: 0.95rem;
+            }
+
+            .vaccination-footnote {
+                font-size: 0.85rem;
+                color: var(--v2-text-secondary, var(--text-secondary));
+                line-height: 1.6;
+                border-left: 3px solid rgba(99, 102, 241, 0.3);
+                padding-left: 12px;
+            }
+
+            [data-theme="dark"] .vaccination-header,
+            [data-theme="dark"] .vaccination-card {
+                background: var(--bg-secondary);
+                border-color: var(--border-color);
+                box-shadow: none;
+            }
+
+            [data-theme="dark"] .vaccination-pill {
+                background: rgba(6, 182, 212, 0.18);
+                border-color: rgba(6, 182, 212, 0.35);
+                color: var(--text-primary);
+            }
+
+            [data-theme="dark"] .vaccination-tab {
+                color: var(--text-secondary);
+            }
+
+            [data-theme="dark"] .vaccination-tab:hover {
+                background: rgba(99, 102, 241, 0.2);
+            }
+
+            [data-theme="dark"] .vaccination-list li {
+                background: rgba(99, 102, 241, 0.18);
+                border-color: rgba(99, 102, 241, 0.35);
+            }
+
+            [data-theme="dark"] .vaccination-extra {
+                background: rgba(6, 182, 212, 0.2);
+                color: var(--text-primary);
+            }
+
+            @media (max-width: 768px) {
+                .vaccination-container {
+                    padding: 18px;
+                }
+
+                .vaccination-header h2 {
+                    font-size: 1.5rem;
+                }
+
+                .vaccination-tabs {
+                    flex-direction: column;
+                }
+
+                .vaccination-tab {
+                    width: 100%;
+                }
+            }
+
             /* View Controls */
             .anatomy-view-controls {
                 display: grid;
@@ -9193,6 +9448,7 @@
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
             <button class="tool-nav-btn" data-tool="genetics">🧬 Genetics</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
+            <button class="tool-nav-btn" data-tool="vaccinations">💉 Vaccinations</button>
             <button class="tool-nav-btn" data-tool="mnemonics">🧠 Mnemonics</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
             <button class="tool-nav-btn" data-tool="triads">🔺 Clinical Triads</button>
@@ -9866,7 +10122,13 @@
                 <!-- Content loaded dynamically by JavaScript -->
                 <div class="loading-message">📋 Loading guidelines...</div>
             </div>
-            
+
+            <!-- Vaccinations Panel -->
+            <div id="vaccinations-panel" class="tool-panel">
+                <!-- Content loaded dynamically by JavaScript -->
+                <div class="loading-message">💉 Loading vaccination programme...</div>
+            </div>
+
             <!-- Differential Diagnosis Panel -->
             <div id="differential-panel" class="tool-panel">
                 <div id="differential-dx-container">
@@ -10860,6 +11122,7 @@
     <script src="/static/js/data/drugDatabase.js"></script>
     <script src="/static/js/data/labDatabase.js"></script>
     <script src="/static/js/data/guidelinesDatabase.js"></script>
+    <script src="/static/js/data/vaccinationSchedule.js"></script>
     
     <!-- Load extracted calculators from V1 (provides window.ExtractedCalculators) -->
     <!-- This contains all 61 calculator implementations extracted from V1 -->

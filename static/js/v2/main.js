@@ -201,6 +201,7 @@ class MLAQuizApp {
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
             { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
             { id: 'guidelines-panel', log: '📋 Preloading guidelines content...', loader: panel => this.loadGuidelinesContent(panel) },
+            { id: 'vaccinations-panel', log: '💉 Preloading vaccination programme...', loader: panel => this.loadVaccinationsContent(panel) },
             { id: 'mnemonics-panel', log: '🧠 Preloading mnemonics content...', loader: panel => this.loadMnemonicsContent(panel) },
             { id: 'differential-panel', log: '🔍 Preloading differential diagnosis content...', loader: panel => this.loadDifferentialDxContent(panel) },
             { id: 'triads-panel', log: '🔺 Preloading clinical triads content...', loader: panel => this.loadTriadsContent(panel) },
@@ -850,6 +851,7 @@ class MLAQuizApp {
             'calculator-detail': 'calculator-detail',
             'lab-values': 'lab-panel',
             'guidelines': 'guidelines-panel',
+            'vaccinations': 'vaccinations-panel',
             'differential-dx': 'differential-panel',
             'triads': 'triads-panel',
             'examination': 'examination-panel',
@@ -894,6 +896,9 @@ class MLAQuizApp {
                 break;
             case 'guidelines':
                 this.loadGuidelinesContent(panel);
+                break;
+            case 'vaccinations':
+                this.loadVaccinationsContent(panel);
                 break;
             case 'mnemonics':
                 this.loadMnemonicsContent(panel);
@@ -1672,6 +1677,144 @@ class MLAQuizApp {
         container.innerHTML = contentHtml;
         container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load UK vaccination programme content
+     */
+    loadVaccinationsContent(panel) {
+        if (!panel) {
+            console.error('loadVaccinationsContent: panel is null');
+            return;
+        }
+
+        const container = panel;
+        const vaccinationData = window.ukVaccinationProgramme;
+
+        if (!vaccinationData) {
+            container.innerHTML = '<div class="no-content">Vaccination programme data not available. Please refresh once the data file has loaded.</div>';
+            return;
+        }
+
+        const renderVaccineList = (vaccines = []) => {
+            if (!Array.isArray(vaccines) || vaccines.length === 0) {
+                return '<div class="no-content">No vaccine information recorded.</div>';
+            }
+
+            return `
+                <ul class="vaccination-list">
+                    ${vaccines.map(vaccine => `
+                        <li>
+                            <div><strong>${vaccine.name || 'Vaccine'}</strong></div>
+                            ${vaccine.summary ? `<div class="vaccination-note">${vaccine.summary}</div>` : ''}
+                            ${vaccine.notes ? `<div class="vaccination-note"><em>${vaccine.notes}</em></div>` : ''}
+                        </li>
+                    `).join('')}
+                </ul>
+            `;
+        };
+
+        const renderRoutineSchedule = (vaccinationData.routineChildhood || []).map(entry => `
+            <div class="vaccination-card">
+                <div class="vaccination-age">${entry.age || 'Schedule point'}</div>
+                ${renderVaccineList(entry.vaccines)}
+                ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
+            </div>
+        `).join('') || '<div class="no-content">Routine childhood schedule not available.</div>';
+
+        const renderAdolescentAdult = (vaccinationData.adolescentAdult || []).map(entry => `
+            <div class="vaccination-card">
+                <h3>🧑 ${entry.group || 'Adolescent/Adult group'}</h3>
+                <ul class="vaccination-list">
+                    ${(entry.details || []).map(detail => `<li>${detail}</li>`).join('')}
+                </ul>
+                ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
+            </div>
+        `).join('') || '<div class="no-content">No adolescent or adult booster information available.</div>';
+
+        const renderRiskGroups = (vaccinationData.riskGroups || []).map(entry => `
+            <div class="vaccination-card">
+                <h3>⚠️ ${entry.group || 'Clinical risk group'}</h3>
+                <ul class="vaccination-list">
+                    ${(entry.recommendations || []).map(rec => `<li>${rec}</li>`).join('')}
+                </ul>
+                ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
+            </div>
+        `).join('') || '<div class="no-content">Risk group guidance will appear here once added.</div>';
+
+        const renderSeasonalCampaigns = (vaccinationData.seasonalCampaigns || []).map(entry => `
+            <div class="vaccination-card">
+                <h3>🍂 ${entry.season || 'Seasonal campaign'}</h3>
+                <div class="vaccination-note">${entry.detail || 'Follow national guidance for campaign eligibility and timing.'}</div>
+                ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
+            </div>
+        `).join('') || '<div class="no-content">Seasonal campaign information not available.</div>';
+
+        const keyPoints = Array.isArray(vaccinationData.keyPoints) && vaccinationData.keyPoints.length > 0
+            ? vaccinationData.keyPoints.map(point => `<div class="vaccination-pill">✅ ${point}</div>`).join('')
+            : '';
+
+        const badgeRow = `
+            <div class="vaccination-badges">
+                ${vaccinationData.updated ? `<span class="vaccination-badge">🗓️ ${vaccinationData.updated}</span>` : ''}
+                <span class="vaccination-badge">🇬🇧 NHS & JCVI guidance</span>
+            </div>
+        `;
+
+        container.innerHTML = `
+            <div class="vaccination-container">
+                <div class="vaccination-header">
+                    <h2>💉 UK Vaccination Programme</h2>
+                    <p>Concise view of the national immunisation schedule with focus on routine childhood vaccines, adolescent boosters, risk group adaptations, and current seasonal campaigns.</p>
+                    ${badgeRow}
+                </div>
+                ${keyPoints ? `<div class="vaccination-key-points">${keyPoints}</div>` : ''}
+                <div class="vaccination-tabs">
+                    <button class="vaccination-tab active" data-tab="childhood">🧒 Routine Childhood</button>
+                    <button class="vaccination-tab" data-tab="adolescent">🧑 Adolescents & Adults</button>
+                    <button class="vaccination-tab" data-tab="risk">⚠️ Clinical Risk Groups</button>
+                    <button class="vaccination-tab" data-tab="seasonal">🍂 Seasonal & Campaigns</button>
+                </div>
+                <div class="vaccination-content">
+                    <div class="vaccination-section active" data-tab="childhood">
+                        ${renderRoutineSchedule}
+                    </div>
+                    <div class="vaccination-section" data-tab="adolescent">
+                        ${renderAdolescentAdult}
+                    </div>
+                    <div class="vaccination-section" data-tab="risk">
+                        ${renderRiskGroups}
+                    </div>
+                    <div class="vaccination-section" data-tab="seasonal">
+                        ${renderSeasonalCampaigns}
+                    </div>
+                </div>
+                <div class="vaccination-footnote">
+                    ${vaccinationData.footnote || 'Confirm all vaccine decisions against the latest Green Book guidance and local NHS policies.'}
+                </div>
+            </div>
+        `;
+
+        const tabButtons = container.querySelectorAll('.vaccination-tab');
+        const sections = container.querySelectorAll('.vaccination-section');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                sections.forEach(section => {
+                    const matches = section.getAttribute('data-tab') === targetTab;
+                    section.classList.toggle('active', matches);
+                });
+            });
+        });
+
+        container.scrollTop = 0;
+        window.scrollTo(0, 0);
+        console.log('💉 Vaccination programme content loaded');
     }
 
     /**
