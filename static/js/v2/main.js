@@ -2777,9 +2777,9 @@ class MLAQuizApp {
         const protocolsHtml = sortedProtocolIds.map(protocolId => {
             const protocol = this.emergencyProtocolsData[protocolId];
             const urgencyClass = protocol.urgency === 'emergency' ? 'emergency' : 'standard';
-            
+
             return `
-                <div class="protocol-item ${urgencyClass}" onclick="window.quizApp.showProtocolDetail('${protocolId}'); event.stopPropagation();">
+                <button type="button" class="protocol-item ${urgencyClass}" onclick="window.quizApp.showProtocolDetail('${protocolId}'); event.stopPropagation();">
                     <div class="protocol-header">
                         <h4>${protocol.name}</h4>
                         <span class="protocol-urgency ${protocol.urgency}">${protocol.urgency.toUpperCase()}</span>
@@ -2789,11 +2789,11 @@ class MLAQuizApp {
                         <span class="protocol-guideline">${protocol.ukGuideline}</span>
                     </div>
                     <div class="protocol-actions">
-                        ${protocol.criticalActions.slice(0, 2).map(action => 
+                        ${protocol.criticalActions.slice(0, 2).map(action =>
                             `<span class="action-tag">${action}</span>`
                         ).join('')}
                     </div>
-                </div>
+                </button>
             `;
         }).join('');
         
