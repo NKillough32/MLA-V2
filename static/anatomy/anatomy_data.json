@@ -2,12 +2,29 @@
   "skull": {
     "commonName": "Skull",
     "brief": "Protects the brain and houses sensory organs.",
+    "description": "Composite axial skeleton structure formed from cranial and facial bones that encase the brain, support the airway and provide attachment points for the muscles of mastication and facial expression.",
     "origin": "Cranial bones fused at sutures",
     "insertion": "N/A (composite of several bones)",
-    "innervation": "Trigeminal nerve (sensory branches) and various motor branches for mastication muscles",
+    "innervation": "Trigeminal nerve (sensory branches) and cranial nerve motor branches for mastication and facial muscles",
     "action": "Protective bony vault for the brain; provides attachment for facial muscles",
+    "functions": [
+      "Encases and protects the brain, cranial nerves and meninges",
+      "Houses special sense organs for vision, hearing, taste and smell",
+      "Provides anchorage for muscles of facial expression, mastication and speech"
+    ],
+    "bloodSupply": "Branches of the external and internal carotid arteries, including the middle meningeal and superficial temporal vessels",
+    "examTips": [
+      "Inspect for scalp lacerations, step deformities or cephalohaematoma after trauma",
+      "Look for cerebrospinal fluid leak (otorrhoea/rhinorrhoea) and periorbital ecchymosis in suspected basilar fractures"
+    ],
     "image": "/static/anatomy/bones_front.svg",
+    "imageCaption": "Anterior skull view highlighting cranial sutures and fossae",
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Basilar skull fractures may present with raccoon eyes or Battle's sign — inspect carefully.",
+    "clinicalPearls": [
+      "Basilar skull fractures may present with raccoon eyes or Battle's sign — inspect carefully.",
+      "In trauma, palpate the zygomatic arch, maxilla and mandible for step deformities indicating mid-face fractures"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Human_skull",
     "relatedStructures": ["spine", "jaw", "facial"],
     "category": "axial"
@@ -15,12 +32,29 @@
   "Skull": {
     "commonName": "Skull",
     "brief": "Protects the brain and houses sensory organs.",
+    "description": "Composite axial skeleton structure formed from cranial and facial bones that encase the brain, support the airway and provide attachment points for the muscles of mastication and facial expression.",
     "origin": "Cranial bones fused at sutures",
     "insertion": "N/A (composite of several bones)",
-    "innervation": "Trigeminal nerve (sensory branches) and various motor branches for mastication muscles",
+    "innervation": "Trigeminal nerve (sensory branches) and cranial nerve motor branches for mastication and facial muscles",
     "action": "Protective bony vault for the brain; provides attachment for facial muscles",
+    "functions": [
+      "Encases and protects the brain, cranial nerves and meninges",
+      "Houses special sense organs for vision, hearing, taste and smell",
+      "Provides anchorage for muscles of facial expression, mastication and speech"
+    ],
+    "bloodSupply": "Branches of the external and internal carotid arteries, including the middle meningeal and superficial temporal vessels",
+    "examTips": [
+      "Inspect for scalp lacerations, step deformities or cephalohaematoma after trauma",
+      "Look for cerebrospinal fluid leak (otorrhoea/rhinorrhoea) and periorbital ecchymosis in suspected basilar fractures"
+    ],
     "image": "/static/anatomy/bones_front.svg",
+    "imageCaption": "Anterior skull view highlighting cranial sutures and fossae",
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Basilar skull fractures may present with raccoon eyes or Battle's sign — inspect carefully.",
+    "clinicalPearls": [
+      "Basilar skull fractures may present with raccoon eyes or Battle's sign — inspect carefully.",
+      "In trauma, palpate the zygomatic arch, maxilla and mandible for step deformities indicating mid-face fractures"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Human_skull",
     "relatedStructures": ["spine", "jaw", "facial"],
     "category": "axial"
@@ -141,61 +175,157 @@
   "humerus": {
     "commonName": "Humerus",
     "brief": "Upper arm long bone.",
+    "description": "Long bone of the upper limb forming the glenohumeral joint proximally and the elbow joint distally. Provides a lever for powerful shoulder and elbow musculature and transmits force from hand to trunk.",
     "origin": "Proximal articulations with the scapula (glenohumeral joint)",
     "insertion": "Distally with radius and ulna at the elbow",
     "innervation": "Radial nerve (posterior compartment muscles), musculocutaneous (anterior)",
     "action": "Upper limb movement and force transmission",
+    "functions": [
+      "Serves as the attachment site for rotator cuff, deltoid and arm musculature",
+      "Transmits compressive and torsional forces between the hand, forearm and shoulder girdle",
+      "Maintains the humeral head within the glenoid via ligamentous and muscular support"
+    ],
+    "bloodSupply": "Anterior and posterior circumflex humeral arteries and branches of the profunda brachii",
+    "examTips": [
+      "Assess axillary nerve function (shoulder abduction, regimental badge sensation) after proximal fractures",
+      "Check radial nerve motor function (wrist extension, finger extension) for spiral groove injuries"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Proximal humeral fractures are common in older adults after a fall; check axillary nerve function (shoulder abduction) and vascular status.",
+    "clinicalPearls": [
+      "Proximal humeral fractures are common in older adults after a fall; check axillary nerve function (shoulder abduction) and vascular status.",
+      "Mid-shaft fractures risk radial nerve palsy causing wrist drop; document motor power and dorsal hand sensation"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Humerus"
   },
   "radius": {
     "commonName": "Radius",
     "brief": "Lateral forearm bone enabling pronation/supination.",
+    "description": "Shorter lateral bone of the forearm that rotates around the ulna to allow pronation and supination while transmitting axial load to the wrist.",
     "origin": "Proximally articulates with humerus and ulna",
     "insertion": "Distally forms part of the wrist (carpal bones)",
     "innervation": "Radial and median nerve contributions to surrounding muscles",
     "action": "Forearm rotation and load transmission to wrist",
+    "functions": [
+      "Acts as the mobile bone of the forearm permitting pronation and supination",
+      "Transmits force from the hand to the elbow via the radiocarpal joint",
+      "Provides insertion for biceps brachii and supinator to generate rotation"
+    ],
+    "bloodSupply": "Radial artery and recurrent branches around the elbow",
+    "examTips": [
+      "Check distal radioulnar joint stability and grip strength after distal radius fractures",
+      "Assess median nerve function (thumb opposition, sensation over index finger) after volar plating"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Distal radius (Colles') fractures often occur from FOOSH; check for dinner-fork deformity.",
+    "clinicalPearls": [
+      "Distal radius (Colles') fractures often occur from FOOSH; check for dinner-fork deformity.",
+      "Smith fractures (volar displacement) can cause median nerve compression — monitor for carpal tunnel symptoms"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Radius_(bone)"
   },
   "ulna": {
     "commonName": "Ulna",
     "brief": "Medial forearm bone important for elbow stability.",
+    "description": "Longer medial forearm bone that forms the trochlear notch of the elbow and provides longitudinal stability to the forearm, acting as the hinge axis for flexion and extension.",
     "origin": "Olecranon process proximally",
     "insertion": "Distally forms part of wrist articulation with radius",
     "innervation": "Ulnar nerve supplies intrinsic hand muscles and sensation medially",
     "action": "Forms hinge of elbow and stabilises forearm",
+    "functions": [
+      "Acts as the stable forearm bone during pronation and supination",
+      "Provides insertion for triceps brachii at the olecranon to extend the elbow",
+      "Maintains alignment of the humeroulnar joint during weight bearing"
+    ],
+    "bloodSupply": "Ulnar artery and posterior interosseous branches",
+    "examTips": [
+      "Palpate the olecranon, radial head and medial epicondyle to assess the elbow triangle after injury",
+      "Check ulnar nerve sensation over the little finger and intrinsic hand strength (finger abduction) in suspected entrapment"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Ulnar nerve injury at the elbow causes numbness/tingling in the little finger and weakness in finger abduction/adduction.",
+    "clinicalPearls": [
+      "Ulnar nerve injury at the elbow causes numbness/tingling in the little finger and weakness in finger abduction/adduction.",
+      "Night-time elbow flexion can exacerbate cubital tunnel syndrome — consider padding or splinting"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Ulna"
   },
   "femur": {
     "commonName": "Femur",
     "brief": "Thigh bone — longest and strongest bone.",
+    "description": "The largest long bone of the body forming the hip joint proximally and the knee joint distally. Critical for weight bearing, locomotion and muscle attachment across the pelvis and lower limb.",
     "origin": "Proximal articulation with pelvis at the hip",
     "insertion": "Distally with tibia/fibula at knee",
     "innervation": "Femoral nerve (anterior compartment) and sciatic nerve contributions",
     "action": "Weight bearing and locomotion",
+    "functions": [
+      "Supports the body's weight during standing, walking and running",
+      "Provides origin or insertion for gluteal, quadriceps, hamstring and adductor muscles",
+      "Transfers forces between pelvis and tibia through the hip and knee joints"
+    ],
+    "bloodSupply": "Medial and lateral circumflex femoral arteries, perforators from profunda femoris and artery of ligamentum teres",
+    "examTips": [
+      "Check leg length, hip rotation and neurovascular status after suspected femoral fractures",
+      "Assess for shortened externally rotated leg in neck of femur fractures and perform neurovascular observations"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "A fractured femoral neck in older adults is an orthopedic emergency — stabilise and arrange urgent orthopedics.",
+    "clinicalPearls": [
+      "A fractured femoral neck in older adults is an orthopedic emergency — stabilise and arrange urgent orthopedics.",
+      "Femoral shaft fractures can cause major blood loss; monitor for hypovolaemia and fat embolism"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Femur"
   },
   "tibia": {
     "commonName": "Tibia",
     "brief": "Shin bone — main weight-bearing bone of the lower leg.",
+    "description": "Robust medial bone that forms the tibial plateau proximally and the medial malleolus distally, supporting body weight and anchoring key knee and ankle ligaments.",
     "origin": "Proximal tibial plateau (knee joint)",
     "insertion": "Distal tibia forms ankle joint with talus",
     "innervation": "Tibial nerve for posterior compartment muscles",
     "action": "Weight bearing and forming knee/ankle joints",
+    "functions": [
+      "Supports compressive forces through the knee and ankle during stance",
+      "Serves as an insertion for patellar tendon, pes anserinus and posterior compartment muscles",
+      "Helps maintain ankle mortise alignment via the medial malleolus"
+    ],
+    "bloodSupply": "Nutrient artery from posterior tibial artery plus periosteal branches",
+    "examTips": [
+      "Evaluate knee joint line tenderness and varus/valgus stability in tibial plateau injuries",
+      "Monitor for compartment syndrome after fractures or casting — escalating pain is an early warning"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Tibial plateau fractures may impair knee stability — assess joint line tenderness and consider imaging with CT for surgical planning.",
+    "clinicalPearls": [
+      "Tibial plateau fractures may impair knee stability — assess joint line tenderness and consider imaging with CT for surgical planning.",
+      "Posterior tibial fractures can compromise neurovascular supply; check distal pulses and toe movement"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Tibia"
   },
   "fibula": {
     "commonName": "Fibula",
     "brief": "Lateral lower-leg bone providing muscular attachment.",
+    "description": "Slender lateral bone of the leg that stabilises the ankle mortise and offers extensive attachment for lateral compartment muscles while bearing minimal axial load.",
     "origin": "Head of fibula proximally",
     "insertion": "Lateral malleolus distally",
     "innervation": "Common peroneal (fibular) nerve supplies associated muscles",
     "action": "Provides lateral support and muscle attachment; minor weight bearing",
+    "functions": [
+      "Stabilises the ankle mortise via the lateral malleolus",
+      "Serves as origin for peroneal muscles contributing to foot eversion",
+      "Provides attachment for lateral ligaments of the knee and ankle"
+    ],
+    "bloodSupply": "Fibular (peroneal) artery and branches from anterior tibial artery",
+    "examTips": [
+      "Assess common peroneal nerve function (ankle dorsiflexion, sensation over first web space) after fibular neck injury",
+      "Palpate the entire fibula for tenderness in ankle sprains to exclude proximal fractures (Maisonneuve injury)"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "An isolated fibular head fracture may be associated with common peroneal nerve injury; examine dorsiflexion and sensation over the dorsum of the foot.",
+    "clinicalPearls": [
+      "An isolated fibular head fracture may be associated with common peroneal nerve injury; examine dorsiflexion and sensation over the dorsum of the foot.",
+      "Maisonneuve fractures combine proximal fibula fracture with deltoid ligament injury—always image the entire fibula in ankle fractures"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Fibula"
   },
   "patella": {
@@ -212,11 +342,27 @@
   "pectoralis": {
     "commonName": "Pectoralis Major",
     "brief": "Large chest muscle involved in shoulder adduction and internal rotation.",
+    "description": "Fan-shaped superficial chest muscle with clavicular and sternocostal heads that powerfully adduct and internally rotate the humerus while assisting with respiration when the upper limb is fixed.",
     "origin": "Clavicle, sternum and costal cartilages",
     "insertion": "Lateral lip of intertubercular sulcus of humerus",
     "innervation": "Medial and lateral pectoral nerves (C5-T1)",
     "action": "Adduction, internal rotation and flexion of humerus",
+    "functions": [
+      "Adducts and internally rotates the humerus",
+      "Clavicular head flexes the shoulder from an extended position",
+      "Assists with deep inspiration by elevating the rib cage when arms are fixed"
+    ],
+    "bloodSupply": "Pectoral branches of thoracoacromial artery and perforators from internal thoracic artery",
+    "examTips": [
+      "Test clavicular fibres by resisted shoulder flexion from 90° flexion with the arm supinated",
+      "Assess sternal fibres by resisted horizontal adduction (pressing hands together) and look for asymmetry"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Pectoralis major tendon ruptures are seen with heavy lifting; sudden pain and weakness on adduction should raise suspicion. The 'dropped nipple sign' may be visible.",
+    "clinicalPearls": [
+      "Pectoralis major tendon ruptures are seen with heavy lifting; sudden pain and weakness on adduction should raise suspicion. The 'dropped nipple sign' may be visible.",
+      "Post-mastectomy tightness can cause adduction contracture; early physiotherapy and stretching are key"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Pectoralis_major",
     "relatedStructures": ["clavicle", "sternum", "humerus", "deltoid"],
     "category": "thorax"
@@ -224,11 +370,27 @@
   "pectoralis_major": {
     "commonName": "Pectoralis Major",
     "brief": "Large chest muscle involved in shoulder adduction and internal rotation.",
+    "description": "Fan-shaped superficial chest muscle with clavicular and sternocostal heads that powerfully adduct and internally rotate the humerus while assisting with respiration when the upper limb is fixed.",
     "origin": "Clavicle, sternum and costal cartilages",
     "insertion": "Lateral lip of intertubercular sulcus of humerus",
     "innervation": "Medial and lateral pectoral nerves (C5-T1)",
     "action": "Adduction, internal rotation and flexion of humerus",
+    "functions": [
+      "Adducts and internally rotates the humerus",
+      "Clavicular head flexes the shoulder from an extended position",
+      "Assists with deep inspiration by elevating the rib cage when arms are fixed"
+    ],
+    "bloodSupply": "Pectoral branches of thoracoacromial artery and perforators from internal thoracic artery",
+    "examTips": [
+      "Test clavicular fibres by resisted shoulder flexion from 90° flexion with the arm supinated",
+      "Assess sternal fibres by resisted horizontal adduction (pressing hands together) and look for asymmetry"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Pectoralis major tendon ruptures are seen with heavy lifting; sudden pain and weakness on adduction should raise suspicion. The 'dropped nipple sign' may be visible.",
+    "clinicalPearls": [
+      "Pectoralis major tendon ruptures are seen with heavy lifting; sudden pain and weakness on adduction should raise suspicion. The 'dropped nipple sign' may be visible.",
+      "Post-mastectomy tightness can cause adduction contracture; early physiotherapy and stretching are key"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Pectoralis_major",
     "relatedStructures": ["clavicle", "sternum", "humerus", "deltoid"],
     "category": "thorax"
@@ -268,177 +430,461 @@
     "relatedStructures": ["jaw", "skull", "temporalis"],
     "category": "head"
   },
+  "sternocleidomastoid": {
+    "commonName": "Sternocleidomastoid",
+    "brief": "Superficial neck muscle for head rotation and flexion.",
+    "description": "Paired muscle with sternal and clavicular heads that flex the neck, rotate the head and form a key landmark for cervical structures such as the carotid sheath.",
+    "origin": "Manubrium of sternum and medial clavicle",
+    "insertion": "Mastoid process of temporal bone and lateral superior nuchal line",
+    "innervation": "Spinal accessory nerve (motor) with C2-C3 proprioceptive fibres",
+    "action": "Unilateral lateral flexion with contralateral rotation; bilateral neck flexion",
+    "functions": [
+      "Turns the chin to the opposite side while tilting the head toward the same shoulder",
+      "Flexes the neck when both sides contract",
+      "Assists in forced inspiration by elevating the sternum when the neck is fixed"
+    ],
+    "bloodSupply": "Occipital and superior thyroid arteries",
+    "examTips": [
+      "Ask the patient to rotate the head against resistance to assess spinal accessory nerve strength",
+      "Palpate anterior to the muscle for carotid pulse while the patient relaxes to avoid syncope"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
+    "clinicalPearl": "Accessory nerve palsy results in sternocleidomastoid and trapezius weakness; assess after posterior triangle surgery.",
+    "clinicalPearls": [
+      "Congenital muscular torticollis causes head tilt toward the affected side with chin rotation away — early physiotherapy prevents contractures",
+      "Accessory nerve palsy results in SCM and trapezius weakness; evaluate following posterior triangle surgery"
+    ],
+    "reference": "https://en.wikipedia.org/wiki/Sternocleidomastoid_muscle",
+    "relatedStructures": ["carotid_sheath", "trapezius", "cervical_spine"],
+    "category": "head"
+  },
   "deltoid": {
     "commonName": "Deltoid",
     "brief": "Shoulder muscle responsible for abduction.",
+    "description": "Triangular superficial shoulder muscle with anterior, middle and posterior fibres that provide the primary abduction force and dynamic stability to the glenohumeral joint.",
     "origin": "Lateral third of clavicle, acromion and spine of scapula",
     "insertion": "Deltoid tuberosity of humerus",
     "innervation": "Axillary nerve",
     "action": "Abduction, flexion, extension and rotation of the arm depending on fibres",
+    "functions": [
+      "Middle fibres abduct the arm beyond the first 15° (initiated by supraspinatus)",
+      "Anterior fibres flex and internally rotate the shoulder",
+      "Posterior fibres extend and externally rotate the shoulder"
+    ],
+    "bloodSupply": "Posterior circumflex humeral artery and deltoid branch of thoracoacromial artery",
+    "examTips": [
+      "Test abduction from 15–90° against resistance to isolate deltoid function",
+      "Assess regimental badge sensation and shoulder contour after dislocation to screen axillary nerve"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Axillary nerve injury from shoulder dislocation causes deltoid weakness and sensory loss over the lateral shoulder (regimental badge area).",
+    "clinicalPearls": [
+      "Axillary nerve injury from shoulder dislocation causes deltoid weakness and sensory loss over the lateral shoulder (regimental badge area).",
+      "Deltoid intramuscular injections should be administered 2–3 fingerbreadths below the acromion to avoid nerve injury"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Deltoid_muscle"
   },
   "biceps": {
     "commonName": "Biceps Brachii",
     "brief": "Anterior arm muscle for elbow flexion and supination.",
+    "description": "Two-headed anterior arm muscle spanning the shoulder and elbow that flexes the elbow and supinates the forearm while stabilising the glenohumeral joint.",
     "origin": "Long head from supraglenoid tubercle; short head from coracoid process",
     "insertion": "Radial tuberosity and bicipital aponeurosis",
     "innervation": "Musculocutaneous nerve",
     "action": "Elbow flexion and forearm supination",
+    "functions": [
+      "Primary supinator of the forearm when the elbow is flexed",
+      "Flexes the elbow, particularly in supinated positions",
+      "Long head assists shoulder flexion and stabilises the humeral head"
+    ],
+    "bloodSupply": "Muscular branches of brachial artery",
+    "examTips": [
+      "Perform the hook test or squeeze test to evaluate distal biceps tendon integrity",
+      "Check supination strength with the elbow flexed to 90° to isolate the biceps"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Biceps tendon rupture may present with a 'Popeye' deformity and weakness of supination.",
+    "clinicalPearls": [
+      "Biceps tendon rupture may present with a 'Popeye' deformity and weakness of supination.",
+      "Repeated steroid injections around the tendon increase rupture risk — use ultrasound guidance when possible"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Biceps_brachii",
     "category": "upper_limb"
   },
   "biceps_brachii": {
     "commonName": "Biceps Brachii",
     "brief": "Anterior arm muscle for elbow flexion and supination.",
+    "description": "Two-headed anterior arm muscle spanning the shoulder and elbow that flexes the elbow and supinates the forearm while stabilising the glenohumeral joint.",
     "origin": "Long head from supraglenoid tubercle; short head from coracoid process",
     "insertion": "Radial tuberosity and bicipital aponeurosis",
     "innervation": "Musculocutaneous nerve",
     "action": "Elbow flexion and forearm supination",
+    "functions": [
+      "Primary supinator of the forearm when the elbow is flexed",
+      "Flexes the elbow, particularly in supinated positions",
+      "Long head assists shoulder flexion and stabilises the humeral head"
+    ],
+    "bloodSupply": "Muscular branches of brachial artery",
+    "examTips": [
+      "Perform the hook test or squeeze test to evaluate distal biceps tendon integrity",
+      "Check supination strength with the elbow flexed to 90° to isolate the biceps"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Biceps tendon rupture may present with a 'Popeye' deformity and weakness of supination.",
+    "clinicalPearls": [
+      "Biceps tendon rupture may present with a 'Popeye' deformity and weakness of supination.",
+      "Repeated steroid injections around the tendon increase rupture risk — use ultrasound guidance when possible"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Biceps_brachii",
     "category": "upper_limb"
   },
   "quadriceps": {
     "commonName": "Quadriceps",
     "brief": "Anterior thigh muscle group for knee extension.",
+    "description": "Four-muscle group comprising rectus femoris, vastus medialis, vastus lateralis and vastus intermedius that extends the knee and stabilises the patella.",
     "origin": "Various heads from femur and iliac spine",
     "insertion": "Patella via quadriceps tendon to tibial tuberosity",
     "innervation": "Femoral nerve",
     "action": "Knee extension and hip flexion (rectus femoris)",
+    "functions": [
+      "Extend the knee joint to enable standing, walking and jumping",
+      "Rectus femoris also flexes the hip",
+      "Vastus medialis obliquus stabilises the patella medially"
+    ],
+    "bloodSupply": "Lateral circumflex femoral and profunda femoris branches",
+    "examTips": [
+      "Test active straight-leg raise to assess quadriceps tendon integrity",
+      "Elicit patellar tendon reflex (L3-L4) to screen femoral nerve function"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Quadriceps tendon rupture results in inability to actively extend the knee; examine for suprapatellar gap.",
+    "clinicalPearls": [
+      "Quadriceps tendon rupture results in inability to actively extend the knee; examine for suprapatellar gap.",
+      "Vastus medialis weakness can lead to patellofemoral pain—strengthen with terminal knee extension exercises"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Quadriceps_muscle_group"
   },
   "gastrocnemius": {
     "commonName": "Gastrocnemius",
     "brief": "Calf muscle for plantarflexion.",
+    "description": "Superficial calf muscle with medial and lateral heads that crosses the knee and ankle to generate powerful plantarflexion for propulsion.",
     "origin": "Medial and lateral femoral condyles",
     "insertion": "Calcaneus via Achilles tendon",
     "innervation": "Tibial nerve",
     "action": "Plantarflexion of the foot and knee flexion",
+    "functions": [
+      "Provides propulsive force during toe-off in gait",
+      "Assists with knee flexion when the foot is dorsiflexed",
+      "Acts with soleus as part of the triceps surae to maintain posture"
+    ],
+    "bloodSupply": "Sural branches of the popliteal artery",
+    "examTips": [
+      "Perform the Thompson squeeze test to rule out Achilles rupture",
+      "Assess single-leg heel raises for calf strength"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Achilles tendon rupture commonly presents with a snapping sensation and difficulty with push-off; Thompson test can help diagnosis.",
+    "clinicalPearls": [
+      "Achilles tendon rupture commonly presents with a snapping sensation and difficulty with push-off; Thompson test can help diagnosis.",
+      "Medial head tears cause sudden calf pain in tennis players—known as 'tennis leg'"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
     "category": "lower_limb"
   },
   "triceps": {
     "commonName": "Triceps Brachii",
     "brief": "Posterior arm muscle for elbow extension.",
+    "description": "Three-headed muscle forming the posterior compartment of the arm that extends the elbow and contributes to shoulder extension and adduction via its long head.",
     "origin": "Long head from infraglenoid tubercle; lateral and medial heads from humerus",
     "insertion": "Olecranon process of ulna",
     "innervation": "Radial nerve",
     "action": "Elbow extension and shoulder adduction (long head)",
+    "functions": [
+      "Extends the elbow to straighten the forearm",
+      "Long head assists with shoulder extension and adduction",
+      "Provides dynamic stability to the elbow joint during pushing movements"
+    ],
+    "bloodSupply": "Deep brachial (profunda brachii) artery",
+    "examTips": [
+      "Elicit the triceps reflex (C7-C8) to evaluate radial nerve integrity",
+      "Test resisted elbow extension with the shoulder abducted to 90° to isolate triceps"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Radial nerve palsy causes wrist drop and inability to extend the elbow or wrist.",
+    "clinicalPearls": [
+      "Radial nerve palsy causes wrist drop and inability to extend the elbow or wrist.",
+      "Posterior elbow dislocations can stretch the triceps and radial nerve—reassess after reduction"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Triceps",
     "category": "upper_limb"
   },
   "triceps_brachii": {
     "commonName": "Triceps Brachii",
     "brief": "Posterior arm muscle for elbow extension.",
+    "description": "Three-headed muscle forming the posterior compartment of the arm that extends the elbow and contributes to shoulder extension and adduction via its long head.",
     "origin": "Long head from infraglenoid tubercle; lateral and medial heads from humerus",
     "insertion": "Olecranon process of ulna",
     "innervation": "Radial nerve",
     "action": "Elbow extension and shoulder adduction (long head)",
+    "functions": [
+      "Extends the elbow to straighten the forearm",
+      "Long head assists with shoulder extension and adduction",
+      "Provides dynamic stability to the elbow joint during pushing movements"
+    ],
+    "bloodSupply": "Deep brachial (profunda brachii) artery",
+    "examTips": [
+      "Elicit the triceps reflex (C7-C8) to evaluate radial nerve integrity",
+      "Test resisted elbow extension with the shoulder abducted to 90° to isolate triceps"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Radial nerve palsy causes wrist drop and inability to extend the elbow or wrist.",
+    "clinicalPearls": [
+      "Radial nerve palsy causes wrist drop and inability to extend the elbow or wrist.",
+      "Posterior elbow dislocations can stretch the triceps and radial nerve—reassess after reduction"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Triceps",
     "category": "upper_limb"
   },
   "latissimus_dorsi": {
     "commonName": "Latissimus Dorsi",
     "brief": "Large back muscle for shoulder adduction and extension.",
+    "description": "Broad superficial muscle covering the lower back, inserting into the humerus to adduct, extend and internally rotate the shoulder while assisting with climbing and coughing.",
     "origin": "Lower thoracic and lumbar vertebrae, sacrum, iliac crest",
     "insertion": "Intertubercular groove of humerus",
     "innervation": "Thoracodorsal nerve",
     "action": "Adduction, extension, and internal rotation of shoulder",
+    "functions": [
+      "Powerfully adducts and extends the humerus from a flexed position",
+      "Depresses the scapula to aid in crutch walking or transfers",
+      "Assists with forced expiration and coughing by compressing the thorax"
+    ],
+    "bloodSupply": "Thoracodorsal artery",
+    "examTips": [
+      "Test shoulder adduction against resistance with the arm elevated",
+      "Palpate the posterior axillary fold during resisted extension to ensure activation"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Used in breast reconstruction surgery as a myocutaneous flap. Test by having patient cough.",
+    "clinicalPearls": [
+      "Used in breast reconstruction surgery as a myocutaneous flap. Test by having patient cough.",
+      "Thoracodorsal nerve damage during axillary dissection weakens shoulder adduction and extension"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
     "category": "thorax"
   },
   "trapezius": {
     "commonName": "Trapezius",
     "brief": "Large superficial back muscle for scapular movement.",
+    "description": "Superficial kite-shaped muscle spanning the upper back and neck with upper, middle and lower fibres coordinating scapular elevation, retraction and upward rotation.",
     "origin": "Occipital bone, nuchal ligament, spinous processes C7-T12",
     "insertion": "Lateral clavicle, acromion, spine of scapula",
     "innervation": "Spinal accessory nerve (CN XI)",
     "action": "Elevates, retracts, and rotates scapula",
+    "functions": [
+      "Upper fibres elevate and upwardly rotate the scapula",
+      "Middle fibres retract the scapula",
+      "Lower fibres depress and assist upward rotation of the scapula"
+    ],
+    "bloodSupply": "Superficial branch of transverse cervical artery and dorsal scapular artery",
+    "examTips": [
+      "Assess shrug strength against resistance to evaluate spinal accessory nerve integrity",
+      "Observe scapular movement during arm abduction for dyskinesis indicating trapezius weakness"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Spinal accessory nerve injury causes shoulder droop and inability to shrug. Can occur iatrogenically during neck surgery.",
+    "clinicalPearls": [
+      "Spinal accessory nerve injury causes shoulder droop and inability to shrug. Can occur iatrogenically during neck surgery.",
+      "Chronic trapezius overuse contributes to tension headaches—encourage posture correction and stretching"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Trapezius",
     "category": "thorax"
   },
   "rectus_abdominis": {
     "commonName": "Rectus Abdominis",
     "brief": "Anterior abdominal muscle (six-pack muscle).",
+    "description": "Paired strap muscle segmented by tendinous intersections that flexes the trunk, stabilises the pelvis and maintains intra-abdominal pressure.",
     "origin": "Pubic symphysis and pubic crest",
     "insertion": "Xiphoid process and costal cartilages 5-7",
     "innervation": "Thoracoabdominal nerves (T7-T12)",
     "action": "Trunk flexion and compression of abdominal contents",
+    "functions": [
+      "Flexes the lumbar spine and assists with posterior pelvic tilt",
+      "Supports abdominal viscera and increases intra-abdominal pressure during cough or defecation",
+      "Stabilises the pelvis during gait and transfers load between thorax and lower limbs"
+    ],
+    "bloodSupply": "Superior and inferior epigastric arteries",
+    "examTips": [
+      "Inspect for diastasis recti when patient performs a partial sit-up",
+      "Palpate along the linea alba for hernia defects while the patient strains"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Diastasis recti is separation of the rectus abdominis, common in pregnancy. Grey Turner's sign (flank bruising) suggests retroperitoneal hemorrhage.",
+    "clinicalPearls": [
+      "Diastasis recti is separation of the rectus abdominis, common in pregnancy. Grey Turner's sign (flank bruising) suggests retroperitoneal hemorrhage.",
+      "Abdominal trauma with ecchymosis over the umbilicus (Cullen sign) warrants evaluation for internal bleeding"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
     "category": "thorax"
   },
   "external_oblique": {
     "commonName": "External Oblique",
     "brief": "Lateral abdominal muscle for trunk rotation.",
+    "description": "Superficial abdominal muscle forming the anterolateral abdominal wall and inguinal ligament, working with contralateral internal oblique to rotate the trunk and support abdominal contents.",
     "origin": "External surfaces of ribs 5-12",
     "insertion": "Iliac crest and linea alba",
     "innervation": "Thoracoabdominal nerves and subcostal nerve",
     "action": "Trunk flexion, lateral bending, and contralateral rotation",
+    "functions": [
+      "Rotates the trunk to the opposite side when acting with contralateral internal oblique",
+      "Compresses abdominal contents and assists with forced expiration",
+      "Contributes to formation of inguinal ligament and superficial inguinal ring"
+    ],
+    "bloodSupply": "Lower intercostal and deep circumflex iliac arteries",
+    "examTips": [
+      "Assess trunk rotation strength while the patient performs a sit-up touching the contralateral knee",
+      "Palpate above the inguinal ligament to detect direct or indirect hernias during cough impulse"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Forms the inguinal ligament and superficial inguinal ring. Important in inguinal hernia anatomy.",
+    "clinicalPearls": [
+      "Forms the inguinal ligament and superficial inguinal ring. Important in inguinal hernia anatomy.",
+      "Oblique muscle tears in athletes cause flank pain—rehabilitation focuses on rotational core strength"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
     "category": "thorax"
   },
   "gluteus_maximus": {
     "commonName": "Gluteus Maximus",
     "brief": "Largest buttock muscle for hip extension.",
+    "description": "Powerful hip extensor activated during rising, climbing and sprinting; also provides pelvic stability via its attachment to the iliotibial tract.",
     "origin": "Ilium, sacrum, and coccyx",
     "insertion": "Iliotibial tract and gluteal tuberosity of femur",
     "innervation": "Inferior gluteal nerve",
     "action": "Hip extension, lateral rotation, and stabilization",
+    "functions": [
+      "Extends the hip from a flexed position (e.g., sit-to-stand, stair climbing)",
+      "Laterally rotates and abducts the thigh",
+      "Stabilises the trunk and pelvis via iliotibial tract tension"
+    ],
+    "bloodSupply": "Superior and inferior gluteal arteries",
+    "examTips": [
+      "Assess hip extension strength with patient prone, knee flexed",
+      "Observe gait for difficulty climbing or rising indicative of gluteal weakness"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Trendelenburg gait (hip drop on contralateral side) indicates superior gluteal nerve injury affecting gluteus medius/minimus, not maximus.",
+    "clinicalPearls": [
+      "Trendelenburg gait (hip drop on contralateral side) indicates superior gluteal nerve injury affecting gluteus medius/minimus, not maximus.",
+      "Posterior hip dislocations risk inferior gluteal nerve injury—check hip extension power after reduction"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Gluteus_maximus",
     "category": "lower_limb"
   },
   "hamstrings": {
     "commonName": "Hamstrings",
     "brief": "Posterior thigh muscle group for knee flexion.",
+    "description": "Three-muscle group (biceps femoris, semitendinosus, semimembranosus) spanning hip and knee to extend the hip and flex the knee.",
     "origin": "Ischial tuberosity (biceps femoris, semitendinosus, semimembranosus)",
     "insertion": "Head of fibula and tibia",
     "innervation": "Tibial portion of sciatic nerve",
     "action": "Knee flexion and hip extension",
+    "functions": [
+      "Extend the hip during propulsion and stance",
+      "Flex the knee and assist in tibial rotation",
+      "Stabilise the pelvis by countering hip flexion"
+    ],
+    "bloodSupply": "Perforating branches of profunda femoris",
+    "examTips": [
+      "Assess straight-leg raise flexibility and compare bilaterally",
+      "Test resisted knee flexion with the hip extended to isolate hamstrings"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Hamstring strains are common in sprinting. Proximal avulsion injuries can occur with violent hip flexion during knee extension.",
+    "clinicalPearls": [
+      "Hamstring strains are common in sprinting. Proximal avulsion injuries can occur with violent hip flexion during knee extension.",
+      "Chronic tendinopathy at the ischial tuberosity causes sitting pain—rehab emphasises eccentric loading"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Hamstring",
     "category": "lower_limb"
   },
   "soleus": {
     "commonName": "Soleus",
     "brief": "Deep calf muscle for plantarflexion.",
+    "description": "Broad, fatigue-resistant muscle deep to gastrocnemius that plantarflexes the ankle and pumps venous blood back toward the heart.",
     "origin": "Posterior tibia and fibula",
     "insertion": "Calcaneus via Achilles tendon",
     "innervation": "Tibial nerve",
     "action": "Plantarflexion of foot (especially when knee is flexed)",
+    "functions": [
+      "Maintains upright posture by preventing forward sway",
+      "Provides sustained plantarflexion during standing and walking",
+      "Acts as a venous pump aiding return circulation"
+    ],
+    "bloodSupply": "Posterior tibial artery",
+    "examTips": [
+      "Test endurance with repetitive heel raises while knee is slightly flexed",
+      "Palpate deep to gastrocnemius for tenderness in overuse injuries"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Deep to gastrocnemius, forms the triceps surae. Important in venous return ('peripheral heart').",
+    "clinicalPearls": [
+      "Deep to gastrocnemius, forms the triceps surae. Important in venous return ('peripheral heart').",
+      "Soleus strains cause deep calf aching with prolonged standing—contrast with gastrocnemius tears"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Soleus_muscle",
     "category": "lower_limb"
   },
   "serratus_anterior": {
     "commonName": "Serratus Anterior",
     "brief": "Lateral chest muscle that protracts the scapula.",
+    "description": "Saw-toothed muscle on the lateral thoracic wall that anchors the scapula to the rib cage and enables overhead reach by producing scapular protraction and upward rotation.",
     "origin": "Ribs 1-8",
     "insertion": "Medial border of scapula",
     "innervation": "Long thoracic nerve",
     "action": "Scapular protraction and upward rotation",
+    "functions": [
+      "Protracts and stabilises the scapula against the thoracic wall",
+      "Assists trapezius in upward rotation for full shoulder abduction",
+      "Provides a platform for powerful pushing movements"
+    ],
+    "bloodSupply": "Lateral thoracic and thoracodorsal arteries",
+    "examTips": [
+      "Ask the patient to push against a wall to observe for scapular winging",
+      "Palpate along the ribs during resisted protraction to identify trigger points in athletes"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Long thoracic nerve injury causes winged scapula. Test by having patient push against wall.",
+    "clinicalPearls": [
+      "Long thoracic nerve injury causes winged scapula. Test by having patient push against wall.",
+      "Serratus anterior strengthening (push-up plus) is essential in scapular dyskinesis rehabilitation"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
     "category": "thorax"
   },
   "tibialis_anterior": {
     "commonName": "Tibialis Anterior",
     "brief": "Anterior lower leg muscle for dorsiflexion.",
+    "description": "Primary dorsiflexor of the ankle located in the anterior compartment of the leg; also inverts the foot and supports the medial arch during gait.",
     "origin": "Lateral tibia and interosseous membrane",
     "insertion": "Medial cuneiform and first metatarsal base",
     "innervation": "Deep peroneal nerve",
     "action": "Dorsiflexion and inversion of foot",
+    "functions": [
+      "Dorsiflexes the ankle during swing phase to prevent toe drag",
+      "Controls foot placement during heel strike",
+      "Assists in maintaining medial longitudinal arch"
+    ],
+    "bloodSupply": "Anterior tibial artery",
+    "examTips": [
+      "Test ankle dorsiflexion strength against resistance and assess heel-walking",
+      "Look for shin splints tenderness along the tibial border in overuse injuries"
+    ],
+    "focusImage": "/static/anatomy/muscles_front.svg",
     "clinicalPearl": "Foot drop indicates deep peroneal nerve or L5 nerve root injury. Test by asking patient to walk on heels.",
+    "clinicalPearls": [
+      "Foot drop indicates deep peroneal nerve or L5 nerve root injury. Test by asking patient to walk on heels.",
+      "Chronic compartment syndrome presents with anterior leg pain and foot drop during exertion"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
     "category": "lower_limb"
   },
@@ -489,13 +935,57 @@
   "erector_spinae": {
     "commonName": "Erector Spinae",
     "brief": "Deep back muscle group for spine extension.",
+    "description": "Longitudinal column of iliocostalis, longissimus and spinalis muscles that extend, laterally flex and stabilise the vertebral column.",
     "origin": "Sacrum, iliac crest, spinous processes",
     "insertion": "Ribs, transverse and spinous processes",
     "innervation": "Posterior rami of spinal nerves",
     "action": "Spine extension, lateral bending, and postural control",
+    "functions": [
+      "Extend the spine when both sides contract",
+      "Laterally flex the spine when contracting unilaterally",
+      "Maintain upright posture and control spinal flexion eccentrically"
+    ],
+    "bloodSupply": "Dorsal branches of intercostal and lumbar arteries",
+    "examTips": [
+      "Palpate paraspinal tone with patient prone to assess spasm in low back pain",
+      "Test endurance with the Sorensen test to identify core weakness"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
     "clinicalPearl": "Paraspinal muscle spasm common in low back pain. Includes iliocostalis, longissimus, and spinalis.",
+    "clinicalPearls": [
+      "Paraspinal muscle spasm common in low back pain. Includes iliocostalis, longissimus, and spinalis.",
+      "Strengthening erector spinae reduces recurrent lumbar strain—incorporate extension exercises"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
     "category": "axial"
+  },
+  "rhomboids": {
+    "commonName": "Rhomboid Major & Minor",
+    "brief": "Deep scapular retractors and stabilisers.",
+    "description": "Pair of muscles deep to trapezius that retract and downwardly rotate the scapula, securing it against the thoracic wall.",
+    "origin": "Nuchal ligament and spinous processes C7-T5",
+    "insertion": "Medial border of scapula",
+    "innervation": "Dorsal scapular nerve",
+    "action": "Retracts and downwardly rotates scapula",
+    "functions": [
+      "Pull the scapula medially and downward",
+      "Stabilise the medial border during arm movements",
+      "Work with serratus anterior to maintain scapulothoracic rhythm"
+    ],
+    "bloodSupply": "Dorsal scapular artery",
+    "examTips": [
+      "Test scapular retraction strength with hands on hips and elbows pushed backward",
+      "Palpate medial border for prominence indicating rhomboid weakness"
+    ],
+    "focusImage": "/static/anatomy/muscles_back.svg",
+    "clinicalPearl": "Dorsal scapular nerve palsy leads to lateral scapular winging and difficulty retracting the scapula.",
+    "clinicalPearls": [
+      "Dorsal scapular nerve palsy leads to lateral scapular winging and difficulty retracting the scapula",
+      "Desk workers often develop rhomboid trigger points from prolonged protraction—encourage posture exercises"
+    ],
+    "reference": "https://en.wikipedia.org/wiki/Rhomboid_muscles",
+    "relatedStructures": ["trapezius", "serratus_anterior", "scapula"],
+    "category": "thorax"
   },
   "Scapula": {
     "commonName": "Scapula (Shoulder Blade)",
@@ -626,61 +1116,157 @@
   "Femur": {
     "commonName": "Femur",
     "brief": "Longest and strongest bone in the body (thigh bone).",
+    "description": "Primary load-bearing bone of the thigh forming the hip and knee joints. Transfers ground reaction forces to the pelvis and anchors powerful locomotor muscles.",
     "origin": "Femoral head articulates with acetabulum at hip",
     "insertion": "Distal femoral condyles articulate with tibia at knee",
     "innervation": "Femoral nerve and sciatic nerve supply surrounding muscles",
     "action": "Weight bearing, locomotion, and lower limb force transmission",
+    "functions": [
+      "Supports body weight during stance and gait",
+      "Serves as the origin/insertion for gluteals, quadriceps, hamstrings and adductors",
+      "Facilitates hip and knee leverage for propulsion"
+    ],
+    "bloodSupply": "Medial and lateral circumflex femoral arteries with branches from profunda femoris",
+    "examTips": [
+      "Assess for leg shortening and external rotation in suspected neck of femur fractures",
+      "Document distal pulses and motor/sensory function to exclude femoral neurovascular injury"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+    "clinicalPearls": [
+      "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+      "Femoral shaft fractures may be associated with fat embolism syndrome—monitor for respiratory distress and petechiae"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Femur"
   },
   "FemurLeft": {
     "commonName": "Femur",
     "brief": "Longest and strongest bone in the body (thigh bone).",
+    "description": "Primary load-bearing bone of the thigh forming the hip and knee joints. Transfers ground reaction forces to the pelvis and anchors powerful locomotor muscles.",
     "origin": "Femoral head articulates with acetabulum at hip",
     "insertion": "Distal femoral condyles articulate with tibia at knee",
     "innervation": "Femoral nerve and sciatic nerve supply surrounding muscles",
     "action": "Weight bearing, locomotion, and lower limb force transmission",
+    "functions": [
+      "Supports body weight during stance and gait",
+      "Serves as the origin/insertion for gluteals, quadriceps, hamstrings and adductors",
+      "Facilitates hip and knee leverage for propulsion"
+    ],
+    "bloodSupply": "Medial and lateral circumflex femoral arteries with branches from profunda femoris",
+    "examTips": [
+      "Assess for leg shortening and external rotation in suspected neck of femur fractures",
+      "Document distal pulses and motor/sensory function to exclude femoral neurovascular injury"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+    "clinicalPearls": [
+      "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+      "Femoral shaft fractures may be associated with fat embolism syndrome—monitor for respiratory distress and petechiae"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Femur"
   },
   "FemurRight": {
     "commonName": "Femur",
     "brief": "Longest and strongest bone in the body (thigh bone).",
+    "description": "Primary load-bearing bone of the thigh forming the hip and knee joints. Transfers ground reaction forces to the pelvis and anchors powerful locomotor muscles.",
     "origin": "Femoral head articulates with acetabulum at hip",
     "insertion": "Distal femoral condyles articulate with tibia at knee",
     "innervation": "Femoral nerve and sciatic nerve supply surrounding muscles",
     "action": "Weight bearing, locomotion, and lower limb force transmission",
+    "functions": [
+      "Supports body weight during stance and gait",
+      "Serves as the origin/insertion for gluteals, quadriceps, hamstrings and adductors",
+      "Facilitates hip and knee leverage for propulsion"
+    ],
+    "bloodSupply": "Medial and lateral circumflex femoral arteries with branches from profunda femoris",
+    "examTips": [
+      "Assess for leg shortening and external rotation in suspected neck of femur fractures",
+      "Document distal pulses and motor/sensory function to exclude femoral neurovascular injury"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+    "clinicalPearls": [
+      "Femoral neck fractures can disrupt blood supply to femoral head, risking avascular necrosis. Check for shortened, externally rotated leg.",
+      "Femoral shaft fractures may be associated with fat embolism syndrome—monitor for respiratory distress and petechiae"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Femur"
   },
   "Tibia": {
     "commonName": "Tibia",
     "brief": "Larger medial shin bone bearing most of lower leg weight.",
+    "description": "Primary weight-bearing bone of the leg forming the knee joint proximally and the ankle mortise distally. Provides attachment for patellar tendon and soleus and supports gait stability.",
     "origin": "Tibial plateau articulates with femoral condyles",
     "insertion": "Medial malleolus at ankle joint",
     "innervation": "Tibial nerve and common peroneal nerve branches",
     "action": "Weight bearing, gait stability",
+    "functions": [
+      "Supports body weight through the knee and ankle",
+      "Provides insertion for quadriceps via patellar tendon and posterior leg muscles",
+      "Maintains ankle mortise stability with medial malleolus"
+    ],
+    "bloodSupply": "Anterior and posterior tibial arteries and nutrient branches",
+    "examTips": [
+      "Palpate the tibial crest and malleoli for tenderness or displacement after injury",
+      "Monitor compartments closely for rising pain, pain on passive stretch and neurovascular compromise"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+    "clinicalPearls": [
+      "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+      "Stress fractures are common in runners — look for focal tibial tenderness and consider MRI if X-ray negative"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Tibia"
   },
   "TibiaLeft": {
     "commonName": "Tibia",
     "brief": "Larger medial shin bone bearing most of lower leg weight.",
+    "description": "Primary weight-bearing bone of the leg forming the knee joint proximally and the ankle mortise distally. Provides attachment for patellar tendon and soleus and supports gait stability.",
     "origin": "Tibial plateau articulates with femoral condyles",
     "insertion": "Medial malleolus at ankle joint",
     "innervation": "Tibial nerve and common peroneal nerve branches",
     "action": "Weight bearing, gait stability",
+    "functions": [
+      "Supports body weight through the knee and ankle",
+      "Provides insertion for quadriceps via patellar tendon and posterior leg muscles",
+      "Maintains ankle mortise stability with medial malleolus"
+    ],
+    "bloodSupply": "Anterior and posterior tibial arteries and nutrient branches",
+    "examTips": [
+      "Palpate the tibial crest and malleoli for tenderness or displacement after injury",
+      "Monitor compartments closely for rising pain, pain on passive stretch and neurovascular compromise"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+    "clinicalPearls": [
+      "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+      "Stress fractures are common in runners — look for focal tibial tenderness and consider MRI if X-ray negative"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Tibia"
   },
   "TibiaRight": {
     "commonName": "Tibia",
     "brief": "Larger medial shin bone bearing most of lower leg weight.",
+    "description": "Primary weight-bearing bone of the leg forming the knee joint proximally and the ankle mortise distally. Provides attachment for patellar tendon and soleus and supports gait stability.",
     "origin": "Tibial plateau articulates with femoral condyles",
     "insertion": "Medial malleolus at ankle joint",
     "innervation": "Tibial nerve and common peroneal nerve branches",
     "action": "Weight bearing, gait stability",
+    "functions": [
+      "Supports body weight through the knee and ankle",
+      "Provides insertion for quadriceps via patellar tendon and posterior leg muscles",
+      "Maintains ankle mortise stability with medial malleolus"
+    ],
+    "bloodSupply": "Anterior and posterior tibial arteries and nutrient branches",
+    "examTips": [
+      "Palpate the tibial crest and malleoli for tenderness or displacement after injury",
+      "Monitor compartments closely for rising pain, pain on passive stretch and neurovascular compromise"
+    ],
+    "focusImage": "/static/anatomy/bones_front.svg",
     "clinicalPearl": "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+    "clinicalPearls": [
+      "Tibial shaft fractures may cause compartment syndrome. Monitor for 5 P's: Pain, Pallor, Pulselessness, Paresthesias, Paralysis.",
+      "Stress fractures are common in runners — look for focal tibial tenderness and consider MRI if X-ray negative"
+    ],
     "reference": "https://en.wikipedia.org/wiki/Tibia"
   },
   "Fibula": {
