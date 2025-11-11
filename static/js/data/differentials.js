@@ -251,7 +251,8 @@ export const differentialDatabase =         {
                         tests: 'Postural BP drop ≥20 systolic or ≥10 diastolic, review medications, autonomic testing if needed',
                         urgency: 'Urgent',
                         timeToTreat: 'Fluid resuscitation, medication review, compression stockings, fludrocortisone/midodrine if persistent',
-                        clinicalPearls: 'Common in elderly, diabetics, Parkinson disease. Evaluate for volume depletion or medications',
+                        clinicalPearls: 'Common in elderly, diabetics, Parkinson disease. Evaluate for volume depletion or medications. Documented postural vitals provide rapid bedside confirmation',
+                        howToPerform: 'Measure BP/HR after 5 minutes supine, then repeat within 1 minute and at 3 minutes of standing; a sustained drop ≥20 mmHg systolic or ≥10 mmHg diastolic (or HR rise >30 in POTS) with symptoms supports diagnosis',
                         differentiatingFeatures: 'Occurs shortly after standing, documented postural BP drop, minimal prodrome'
                     },
                     'Cardiac arrhythmia': {
@@ -337,7 +338,8 @@ export const differentialDatabase =         {
                         tests: 'Clinical diagnosis with Dix-Hallpike manoeuvre, audiometry if hearing concerns',
                         urgency: 'Non-urgent',
                         timeToTreat: 'Canalith repositioning procedures (Epley manoeuvre)',
-                        clinicalPearls: 'Most common cause of vertigo. Posterior canal most affected. May recur',
+                        clinicalPearls: 'Most common cause of vertigo. Posterior canal most affected. Dix-Hallpike reproduces torsional nystagmus; Epley manoeuvre often curative. May recur',
+                        howToPerform: 'Dix-Hallpike: from sitting, rotate head 45° toward test ear, quickly lay patient back with 20° neck extension, observe for torsional/up-beating nystagmus for up to 30s, return upright and repeat contralaterally',
                         differentiatingFeatures: 'Positional triggers, Dix-Hallpike positive, brief episodes'
                     },
                     'Vestibular neuronitis': {
@@ -361,7 +363,8 @@ export const differentialDatabase =         {
                         tests: 'Urgent CT head, MRI with DWI, CT angiogram, ECG',
                         urgency: 'Emergency',
                         timeToTreat: 'Thrombolysis/thrombectomy if within time window',
-                        clinicalPearls: 'HINTS exam (Head Impulse, Nystagmus, Test of Skew) can differentiate from peripheral',
+                        clinicalPearls: 'Central vertigo often has direction-changing nystagmus and severe imbalance. HINTS exam helps differentiate dangerous posterior strokes from peripheral vestibulopathies',
+                        howToPerform: 'HINTS: (1) Head impulse — perform rapid, small-amplitude head thrusts; absence of corrective saccade suggests central lesion. (2) Nystagmus — look for direction-changing gaze-evoked nystagmus. (3) Test of skew — alternate cover test revealing vertical ocular realignment indicates central pathology',
                         differentiatingFeatures: 'Associated neurological signs, negative head impulse test'
                     },
                     'Orthostatic hypotension': {
@@ -369,7 +372,8 @@ export const differentialDatabase =         {
                         tests: 'Orthostatic vitals (drop >20 mmHg systolic or >10 mmHg diastolic), ECG',
                         urgency: 'Non-urgent',
                         timeToTreat: 'Medication review, increase fluid/salt intake, compression stockings',
-                        clinicalPearls: 'Common in elderly. Check medications (diuretics, alpha-blockers). Gradual position changes',
+                        clinicalPearls: 'Common in elderly. Check medications (diuretics, alpha-blockers). Gradual position changes. Active stand measurements confirm diagnosis at bedside',
+                        howToPerform: 'After 5 minutes supine, record BP/HR, stand patient and repeat at 1 and 3 minutes; a sustained drop >20 mmHg systolic or >10 mmHg diastolic with reproduction of dizziness is diagnostic',
                         differentiatingFeatures: 'Positional component, medication history, orthostatic vital changes'
                     },
                     'Anxiety/Panic': {
