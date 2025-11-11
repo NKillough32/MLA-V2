@@ -7470,6 +7470,280 @@
                 animation: slideIn 0.3s ease;
             }
 
+            .anatomy-info-header {
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+
+            .anatomy-info-title {
+                margin: 0;
+                font-size: 1.3rem;
+                color: var(--primary-color);
+            }
+
+            .anatomy-info-brief {
+                margin: 8px 0 0 0;
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+
+            .anatomy-info-tags {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+
+            .anatomy-chip {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 10px;
+                background: rgba(99, 102, 241, 0.12);
+                color: var(--primary-color);
+                border-radius: 999px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+            }
+
+            .anatomy-info-image {
+                margin: 16px 0;
+                text-align: center;
+            }
+
+            .anatomy-info-image img {
+                width: 100%;
+                max-width: 380px;
+                border-radius: 10px;
+                border: 1px solid var(--anatomy-info-border);
+                box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+                cursor: zoom-in;
+                transition: transform var(--v2-transition-base), box-shadow var(--v2-transition-base);
+            }
+
+            .anatomy-info-image img:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+            }
+
+            .anatomy-info-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 12px;
+                margin-top: 12px;
+            }
+
+            .anatomy-info-grid .info-item {
+                padding: 12px;
+                border-radius: 10px;
+                border: 1px dashed rgba(99, 102, 241, 0.35);
+                background: rgba(99, 102, 241, 0.04);
+            }
+
+            .anatomy-info-grid .info-item h4 {
+                margin: 0 0 6px 0;
+                font-size: 0.85rem;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: rgba(15, 23, 42, 0.65);
+            }
+
+            .anatomy-info-grid .info-item p {
+                margin: 0;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+
+            .anatomy-detail-section {
+                margin-top: 18px;
+            }
+
+            .anatomy-detail-section h4 {
+                margin: 0 0 10px 0;
+                font-size: 1rem;
+                color: var(--secondary-color);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .anatomy-detail-section ul {
+                margin: 0;
+                padding-left: 20px;
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+
+            .anatomy-detail-section ul li {
+                margin-bottom: 6px;
+            }
+
+            .anatomy-clinical-card {
+                margin-top: 16px;
+                padding: 14px 16px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(249, 115, 22, 0.14) 100%);
+                border-left: 4px solid #f97316;
+            }
+
+            .anatomy-clinical-card strong {
+                color: #c2410c;
+            }
+
+            .anatomy-clinical-card ul {
+                margin: 8px 0 0 0;
+                padding-left: 18px;
+                color: #7c2d12;
+            }
+
+            .anatomy-related-chips {
+                margin-top: 8px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .anatomy-related-chips span {
+                padding: 6px 10px;
+                border-radius: 999px;
+                background: rgba(6, 182, 212, 0.18);
+                color: #0f172a;
+                font-size: 0.85rem;
+                font-weight: 600;
+                letter-spacing: 0.01em;
+            }
+
+            [data-theme="dark"] .anatomy-related-chips span {
+                background: rgba(45, 212, 191, 0.2);
+                color: #e0f2fe;
+            }
+
+            .anatomy-reference-gallery {
+                margin-top: 24px;
+                padding: 20px;
+                border-radius: 16px;
+                border: 1px solid rgba(99, 102, 241, 0.18);
+                background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(79, 70, 229, 0.09) 100%);
+                box-shadow: var(--anatomy-card-shadow);
+            }
+
+            .anatomy-reference-header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .anatomy-reference-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 16px;
+            }
+
+            .anatomy-reference-card {
+                background: rgba(255, 255, 255, 0.85);
+                border-radius: 14px;
+                padding: 14px;
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+                backdrop-filter: blur(6px);
+            }
+
+            [data-theme="dark"] .anatomy-reference-card {
+                background: rgba(15, 23, 42, 0.55);
+                border-color: rgba(148, 163, 184, 0.3);
+            }
+
+            .anatomy-reference-card img {
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid rgba(99, 102, 241, 0.3);
+                box-shadow: 0 6px 20px rgba(79, 70, 229, 0.18);
+                cursor: zoom-in;
+            }
+
+            .anatomy-reference-card h4 {
+                margin: 12px 0 4px 0;
+                font-size: 1rem;
+                color: var(--primary-color);
+            }
+
+            .anatomy-reference-card p {
+                margin: 0;
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+            }
+
+            .anatomy-overview {
+                margin: 20px 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 16px;
+            }
+
+            .anatomy-overview-card {
+                padding: 16px 18px;
+                border-radius: 14px;
+                border: 1px solid rgba(148, 163, 184, 0.35);
+                background: rgba(248, 250, 252, 0.88);
+                box-shadow: 0 12px 24px rgba(148, 163, 184, 0.18);
+            }
+
+            [data-theme="dark"] .anatomy-overview-card {
+                background: rgba(30, 41, 59, 0.6);
+                border-color: rgba(148, 163, 184, 0.25);
+            }
+
+            .anatomy-overview-card h3 {
+                margin: 0 0 10px 0;
+                font-size: 1.05rem;
+                color: var(--primary-color);
+            }
+
+            .anatomy-overview-card ul {
+                margin: 0;
+                padding-left: 18px;
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+
+            .anatomy-info-placeholder {
+                padding: 24px;
+                border-radius: 12px;
+                border: 2px dashed rgba(99, 102, 241, 0.3);
+                background: rgba(99, 102, 241, 0.05);
+                text-align: center;
+                color: var(--text-secondary);
+                line-height: 1.6;
+            }
+
+            .anatomy-info-placeholder strong {
+                display: block;
+                margin-bottom: 8px;
+                color: var(--primary-color);
+                font-size: 1rem;
+            }
+
+            @media (max-width: 640px) {
+                .anatomy-info-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .anatomy-reference-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .anatomy-info-image img {
+                    max-width: 100%;
+                }
+            }
+
             @keyframes slideIn {
                 from {
                     opacity: 0;
@@ -8905,6 +9179,34 @@
                         </div>
                     </div>
 
+                    <!-- Overview Cards -->
+                    <div class="anatomy-overview">
+                        <div class="anatomy-overview-card">
+                            <h3>Muscle Map Essentials</h3>
+                            <ul>
+                                <li>Toggle between <strong>bones</strong> and <strong>muscles</strong> to reveal layered anatomy.</li>
+                                <li>Origins, insertions and innervation are surfaced instantly for each highlighted structure.</li>
+                                <li>Surface-marking notes show where to palpate or landmark during examinations.</li>
+                            </ul>
+                        </div>
+                        <div class="anatomy-overview-card">
+                            <h3>Bone Landmark Focus</h3>
+                            <ul>
+                                <li>Anterior/posterior views emphasise long-bone alignments and axial skeleton detail.</li>
+                                <li>Clinical pearls flag common fracture sites and neurovascular relationships.</li>
+                                <li>Quick access regions jump straight to head, spine, limb and thoracic structures.</li>
+                            </ul>
+                        </div>
+                        <div class="anatomy-overview-card">
+                            <h3>Exam-Ready Insights</h3>
+                            <ul>
+                                <li>Use the search bar to instantly find muscles, bones or attachment points.</li>
+                                <li>Review high-yield nerve roots, blood supply and functional tests in the detail pane.</li>
+                                <li>Bookmark favourites via your browser to build rapid revision decks.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <!-- Quick Access Regions -->
                     <div class="anatomy-quick-access">
                         <h3 class="quick-access-title">Quick Access</h3>
@@ -8989,7 +9291,42 @@
                     </div>
 
                     <!-- Structure Info Display -->
-                    <div id="structureInfo" class="structure-info-section"></div>
+                    <div id="structureInfo" class="structure-info-section">
+                        <div class="anatomy-info-placeholder">
+                            <strong>Tap a muscle or bone to load deep-dive details.</strong>
+                            Use the canvas, search box or quick access buttons to view attachments, functions, innervation and clinical pearls for each structure.
+                        </div>
+                    </div>
+
+                    <!-- Reference Gallery -->
+                    <div class="anatomy-reference-gallery">
+                        <div class="anatomy-reference-header">
+                            <h3>High-Resolution Reference Gallery</h3>
+                            <span style="font-size:0.9rem;color:var(--text-secondary);">Click to zoom each layer</span>
+                        </div>
+                        <div class="anatomy-reference-grid">
+                            <div class="anatomy-reference-card">
+                                <img src="/static/anatomy/bones_front.svg" alt="Anterior skeleton" loading="lazy" onclick="window.openImageModal && openImageModal('/static/anatomy/bones_front.svg', 'Anterior skeleton')">
+                                <h4>Anterior Skeleton</h4>
+                                <p>Visualise clavicular alignment, rib cage contours and lower-limb load transfer.</p>
+                            </div>
+                            <div class="anatomy-reference-card">
+                                <img src="/static/anatomy/bones_back.svg" alt="Posterior skeleton" loading="lazy" onclick="window.openImageModal && openImageModal('/static/anatomy/bones_back.svg', 'Posterior skeleton')">
+                                <h4>Posterior Skeleton</h4>
+                                <p>Highlight spinous processes, scapular positioning and sacroiliac relationships.</p>
+                            </div>
+                            <div class="anatomy-reference-card">
+                                <img src="/static/anatomy/muscles_front.svg" alt="Anterior musculature" loading="lazy" onclick="window.openImageModal && openImageModal('/static/anatomy/muscles_front.svg', 'Anterior musculature')">
+                                <h4>Anterior Musculature</h4>
+                                <p>Trace fascial planes from sternocleidomastoid to dorsiflexors with labelled nerve supply.</p>
+                            </div>
+                            <div class="anatomy-reference-card">
+                                <img src="/static/anatomy/muscles_back.svg" alt="Posterior musculature" loading="lazy" onclick="window.openImageModal && openImageModal('/static/anatomy/muscles_back.svg', 'Posterior musculature')">
+                                <h4>Posterior Musculature</h4>
+                                <p>Review superficial back lines, gluteal fan and calf pump attachments in one view.</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Quiz Mode Toggle -->
                     <div class="anatomy-quiz-toggle">
