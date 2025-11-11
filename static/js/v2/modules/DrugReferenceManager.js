@@ -162,8 +162,12 @@ export class DrugReferenceManager {
             standardDose: drug.dosing,
             adjustedDose: this.adjustDoseForPatient(drug, patientWeight, patientAge),
             maxDose: this.calculateMaxDose(drug, patientWeight),
-            renalAdjustment: this.checkRenalAdjustment(drug),
-            hepaticAdjustment: this.checkHepaticAdjustment(drug)
+            renalAdjustment: drug.renalDoseAdjustments || this.checkRenalAdjustment(drug),
+            hepaticAdjustment: drug.hepaticDoseAdjustments || this.checkHepaticAdjustment(drug),
+            stewardshipAdvice: drug.antimicrobialStewardship || '',
+            treatmentDuration: drug.treatmentDuration || '',
+            ivToOralSwitch: drug.ivToOralSwitch || '',
+            therapeuticMonitoring: drug.therapeuticDrugMonitoring || ''
         };
     }
 
@@ -542,30 +546,38 @@ export class DrugReferenceManager {
      * Check renal adjustment - Helper method
      */
     checkRenalAdjustment(drug) {
+        if (drug.renalDoseAdjustments) {
+            return drug.renalDoseAdjustments;
+        }
+
         const contraindications = drug.contraindications?.toLowerCase() || '';
         const dosing = drug.dosing?.toLowerCase() || '';
-        
+
         if (contraindications.includes('renal') || dosing.includes('renal') ||
             contraindications.includes('kidney') || dosing.includes('egfr')) {
-            return 'Required - check eGFR and adjust dose accordingly';
+            return 'Renal dosing adjustments required – check eGFR and follow local guidelines.';
         }
-        
-        return 'Not typically required';
+
+        return 'No specific renal adjustment usually required';
     }
 
     /**
      * Check hepatic adjustment - Helper method
      */
     checkHepaticAdjustment(drug) {
+        if (drug.hepaticDoseAdjustments) {
+            return drug.hepaticDoseAdjustments;
+        }
+
         const contraindications = drug.contraindications?.toLowerCase() || '';
         const dosing = drug.dosing?.toLowerCase() || '';
-        
+
         if (contraindications.includes('hepatic') || dosing.includes('hepatic') ||
             contraindications.includes('liver') || dosing.includes('child-pugh')) {
-            return 'Required - check liver function and adjust dose accordingly';
+            return 'Hepatic impairment warrants dose adjustment or caution – check LFTs and consult guidance.';
         }
-        
-        return 'Not typically required';
+
+        return 'No routine hepatic adjustment';
     }
 }
 

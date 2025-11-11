@@ -1377,6 +1377,9 @@ const drugDatabase = {
                 sideEffects: 'Allergic reactions, diarrhoea, C. difficile infection, electrolyte disturbances (Na+)',
                 pharmacokinetics: 'Renal elimination; time-dependent killing; short half-life',
                 clinicalPearls: 'Broad-spectrum including Pseudomonas; stewardship important—use per local protocols. Consider extended or continuous infusion for severe/critically ill patients to optimise time > MIC.',
+                renalDoseAdjustments: 'eGFR 20–40 mL/min: 4.5 g IV every 8 h; eGFR <20 mL/min: 4.5 g IV every 12 h; haemodialysis: 4.5 g IV every 12 h with a post-dialysis top-up dose (follow local guidance).',
+                antimicrobialStewardship: 'Review at 48 h and de-escalate when cultures available. Aim for total IV course 5–7 days once source controlled.',
+                treatmentDuration: 'Neutropenic sepsis: continue until afebrile and neutrophil recovery; complicated intra-abdominal infection: typically 5–7 days post source-control unless ongoing sepsis.',
                 indication: 'Severe healthcare-associated infections, intra-abdominal sepsis, neutropenic sepsis and other indications per local policy'
             },
             'prednisolone': {
@@ -2769,6 +2772,9 @@ const drugDatabase = {
                 pregnancy: 'Use if essential with caution',
                 sideEffects: 'Nephrotoxicity, ototoxicity (esp. high doses/rapid IV or coadministration with other ototoxins)',
                 clinicalPearls: 'Dose and monitor levels closely; adjust for renal impairment',
+                renalDoseAdjustments: 'Extended-interval dosing: eGFR ≥60 mL/min every 24 h; 40–59 mL/min every 36 h; 20–39 mL/min every 48 h; <20 mL/min give dose based on therapeutic level monitoring.',
+                therapeuticDrugMonitoring: 'Aim peak 8–10 mg/L (once-daily regimens) with trough <1 mg/L. Take a level 6–14 h post dose and apply Hartford or local nomogram to determine next interval.',
+                antimicrobialStewardship: 'Limit course to ≤7 days where possible. Review for IV-to-oral step-down once cultures identify a susceptible agent.',
                 indication: 'Severe Gram-negative infections, synergistic therapy in endocarditis'
             },
             'vancomycin': {
@@ -2782,6 +2788,9 @@ const drugDatabase = {
                 pregnancy: 'Use if essential; seek specialist/obstetric advice',
                 sideEffects: 'Nephrotoxicity, ototoxicity (rare), infusion-related reactions including "Red man" syndrome if infused too rapidly',
                 clinicalPearls: 'Prefer AUC-guided TDM when available (reduces nephrotoxicity risk). Infuse over ≥60 minutes (longer for higher doses) to reduce infusion reactions; premedicate/slow infusion if prior reactions. Adjust dose for renal impairment and use local microbiology/ID guidance for target exposures.',
+                renalDoseAdjustments: 'Initial maintenance: eGFR ≥50 mL/min every 12 h; 20–49 mL/min every 24 h; <20 mL/min every 48 h. Modify according to AUC/trough monitoring.',
+                therapeuticDrugMonitoring: 'Target AUC/MIC 400–600 (or trough 15–20 mg/L if AUC monitoring unavailable). Take pre-dose level before 4th dose or sooner in renal impairment.',
+                antimicrobialStewardship: 'Review MRSA screen and cultures at 48 h. Step down to oral linezolid/doxycycline if appropriate once stable and organism susceptible.',
                 indication: 'Serious Gram-positive infections including MRSA, endocarditis, bone and joint infections; oral vancomycin for C. difficile colitis'
             },
             /* duplicate piperacillin-tazobactam removed (consolidated earlier) */
@@ -2796,6 +2805,11 @@ const drugDatabase = {
                 pregnancy: 'Generally considered safe',
                 sideEffects: 'Diarrhoea, hypersensitivity, cholestatic hepatitis (rare)',
                 clinicalPearls: 'Common community/hospital antibiotic for mixed infections',
+                renalDoseAdjustments: 'eGFR ≥30 mL/min: 625 mg PO TDS; eGFR 10–29 mL/min: 625 mg PO BD; eGFR <10 mL/min: 625 mg PO once daily. IV 1.2 g every 8 h (extend to every 12–24 h if eGFR <30 mL/min).',
+                hepaticDoseAdjustments: 'Avoid re-use if previous cholestatic jaundice; monitor LFTs when treatment exceeds 14 days.',
+                antimicrobialStewardship: 'Review indication at 48 h – convert to narrower oral agent when clinically stable.',
+                treatmentDuration: 'Most indications 5 days (CAP, COPD). Human/animal bites 7 days; cholangitis continue until source controlled.',
+                ivToOralSwitch: 'Switch to oral once afebrile for 24 h, tolerating diet, and inflammatory markers improving.',
                 indication: 'Respiratory, ENT, skin/soft tissue, intra-abdominal infections as indicated'
             },
             'ceftriaxone': {
@@ -2809,6 +2823,10 @@ const drugDatabase = {
                 pregnancy: 'Use if necessary',
                 sideEffects: 'Allergic reactions, diarrhoea',
                 clinicalPearls: 'Useful for many severe community-acquired infections including meningitis (higher doses)',
+                renalDoseAdjustments: 'No change for isolated renal impairment; if eGFR <10 mL/min consider dosing every 48 h and monitor for accumulation.',
+                hepaticDoseAdjustments: 'Avoid >2 g/day in severe hepatic impairment; monitor bilirubin/LFTs with prolonged therapy.',
+                antimicrobialStewardship: 'High C. difficile risk – restrict to approved indications and step down once susceptibilities known.',
+                treatmentDuration: 'Meningitis 10–14 days; severe CAP 5–7 days; gonorrhoea single 1 g IM.',
                 indication: 'Severe community infections, meningitis, gonorrhoea (depending on guidance)'
             },
             'ciprofloxacin': {

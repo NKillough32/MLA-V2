@@ -1148,6 +1148,233 @@ class V2Calculators {
     }
 
     /**
+     * Geriatrics – Clinical Frailty Scale
+     */
+    getClinicalFrailtyTemplate() {
+        const options = [
+            { value: 1, label: '1 – Very Fit (robust, active, energetic)' },
+            { value: 2, label: '2 – Well (no active disease symptoms)' },
+            { value: 3, label: '3 – Managing Well (medical issues well controlled)' },
+            { value: 4, label: '4 – Vulnerable (not dependent, symptoms limit activities)' },
+            { value: 5, label: '5 – Mildly Frail (needs help with higher order IADLs)' },
+            { value: 6, label: '6 – Moderately Frail (needs help with outside and inside activities)' },
+            { value: 7, label: '7 – Severely Frail (completely dependent for personal care)' },
+            { value: 8, label: '8 – Very Severely Frail (completely dependent, approaching end of life)' },
+            { value: 9, label: '9 – Terminally Ill (life expectancy <6 months)' }
+        ];
+
+        const optionsHtml = options.map(opt => `<option value="${opt.value}">${opt.label}</option>`).join('');
+
+        return `
+            <div class="calculator-form">
+                <h4>Clinical Frailty Scale (CFS)</h4>
+                <p><small>Use the best fitting description for baseline function over the last 2 weeks.</small></p>
+                <div class="calc-select-group">
+                    <label>Frailty category:</label>
+                    <select id="cfs-score">${optionsHtml}</select>
+                </div>
+                <button class="calc-button" data-calc="clinical-frailty-scale">Calculate CFS</button>
+                <div id="cfs-result" class="calc-result"></div>
+                <div class="calc-reference"><small>Rockwood et al. CMAJ 2005; NICE NG159 recommends CFS to inform escalation decisions in older adults.</small></div>
+            </div>
+        `;
+    }
+
+    calculateClinicalFrailty() {
+        const select = document.getElementById('cfs-score');
+        const value = Number.parseInt(select?.value, 10);
+
+        if (!Number.isInteger(value) || value < 1 || value > 9) {
+            document.getElementById('cfs-result').innerHTML = '<p class="error">Select the description that best matches the patient.</p>';
+            return { error: 'Invalid CFS selection' };
+        }
+
+        const interpretations = {
+            1: { risk: 'Very fit', advice: 'Low perioperative risk. Optimise lifestyle and encourage strength/balance training.' },
+            2: { risk: 'Well', advice: 'Monitor for decline; reinforce preventative health and vaccinations.' },
+            3: { risk: 'Managing well', advice: 'Continue chronic disease optimisation and falls prevention.' },
+            4: { risk: 'Vulnerable', advice: 'Offer comprehensive geriatric assessment and review polypharmacy.' },
+            5: { risk: 'Mildly frail', advice: 'Plan support with instrumental activities, consider community therapy referral.' },
+            6: { risk: 'Moderately frail', advice: 'Assess care package needs, advance care planning discussion recommended.' },
+            7: { risk: 'Severely frail', advice: 'Coordinate multidisciplinary review, consider anticipatory medication and falls safeguards.' },
+            8: { risk: 'Very severely frail', advice: 'Prioritise comfort, discuss ceilings of treatment and emergency plans.' },
+            9: { risk: 'Terminally ill', advice: 'Focus on palliative goals, review resuscitation status and symptom control.' }
+        };
+
+        const interpretation = interpretations[value];
+        const color = value <= 3 ? '#16a34a' : value <= 5 ? '#f59e0b' : '#dc2626';
+
+        document.getElementById('cfs-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">CFS ${value}</div>
+                <div class="score-risk">${interpretation.risk}</div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation.advice}</div>
+            </div>
+        `;
+
+        return { score: value, ...interpretation };
+    }
+
+    bindClinicalFrailtyEvents() {
+        const button = document.querySelector('.calc-button[data-calc="clinical-frailty-scale"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateClinicalFrailty());
+        }
+    }
+
+    /**
+     * Geriatrics – PRISMA-7
+     */
+    getPrisma7Template() {
+        const questions = [
+            { id: 'age', text: 'Are you older than 85 years?' },
+            { id: 'male', text: 'Are you male?' },
+            { id: 'health', text: 'In general, do you have any health problems that limit your activities?' },
+            { id: 'help', text: 'Do you need someone to help you on a regular basis?' },
+            { id: 'support', text: 'In the last 12 months, have you regularly needed support from another person?' },
+            { id: 'mobility', text: 'Do you use a stick, walker, or wheelchair to get about?' },
+            { id: 'transport', text: 'In general, do you have health problems that require you to stay at home?' }
+        ];
+
+        return `
+            <div class="calculator-form">
+                <h4>PRISMA-7 Screening Tool</h4>
+                <p><small>Tick all statements that apply to the patient. Score ≥3 indicates high risk of frailty.</small></p>
+                <div class="calc-checkbox-group">
+                    ${questions.map(q => `
+                        <label>
+                            <input type="checkbox" id="prisma-${q.id}" value="1"> ${q.text}
+                        </label>
+                    `).join('')}
+                </div>
+                <button class="calc-button" data-calc="prisma-7">Calculate PRISMA-7</button>
+                <div id="prisma-result" class="calc-result"></div>
+                <div class="calc-reference"><small>Raîche et al. Age Ageing 2008 – validated frailty screen for community-dwelling older adults.</small></div>
+            </div>
+        `;
+    }
+
+    calculatePrisma7() {
+        const ids = ['age', 'male', 'health', 'help', 'support', 'mobility', 'transport'];
+        let score = 0;
+
+        ids.forEach(id => {
+            const checkbox = document.getElementById(`prisma-${id}`);
+            if (checkbox?.checked) {
+                score += Number(checkbox.value) || 0;
+            }
+        });
+
+        const interpretation = score >= 3 ? 'High frailty risk – arrange comprehensive geriatric assessment' : score === 2 ? 'Intermediate risk – monitor, address modifiable risks' : 'Low frailty risk – continue health promotion';
+        const color = score >= 3 ? '#dc2626' : score === 2 ? '#f59e0b' : '#16a34a';
+
+        document.getElementById('prisma-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Score ${score}/7</div>
+                <div class="score-risk">${score >= 3 ? 'High risk' : score === 2 ? 'Intermediate risk' : 'Low risk'}</div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+            </div>
+        `;
+
+        return { score, interpretation };
+    }
+
+    bindPrisma7Events() {
+        const button = document.querySelector('.calc-button[data-calc="prisma-7"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculatePrisma7());
+        }
+    }
+
+    /**
+     * Geriatrics – 4AT
+     */
+    getFourAtTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>4AT Delirium Assessment</h4>
+                <div class="calc-select-group">
+                    <label>Alertness:</label>
+                    <select id="fourat-alertness">
+                        <option value="0">0 – Alert/normal</option>
+                        <option value="0">0 – Mild sleepiness but easily rousable</option>
+                        <option value="4">4 – Clearly abnormal (agitated, stupor, or coma)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>AMT4 errors (age, DOB, place, current year):</label>
+                    <input type="number" id="fourat-amt-errors" min="0" max="4" step="1" value="0">
+                </div>
+                <div class="calc-input-group">
+                    <label>Attention – months backwards correct:</label>
+                    <input type="number" id="fourat-attention" min="0" max="12" step="1" value="12">
+                </div>
+                <div class="calc-select-group">
+                    <label>Acute change or fluctuating course:</label>
+                    <select id="fourat-acute">
+                        <option value="0">0 – No</option>
+                        <option value="4">4 – Yes, acute change</option>
+                    </select>
+                </div>
+                <button class="calc-button" data-calc="4at">Calculate 4AT</button>
+                <div id="fourat-result" class="calc-result"></div>
+                <div class="calc-reference"><small>4AT (Bellelli et al. Age Ageing 2014) – rapid delirium screening endorsed by NICE NG103.</small></div>
+            </div>
+        `;
+    }
+
+    calculateFourAt() {
+        const alertness = Number(document.getElementById('fourat-alertness')?.value ?? 0);
+        const amtErrorsInput = Number(document.getElementById('fourat-amt-errors')?.value ?? 0);
+        const attentionCorrect = Number(document.getElementById('fourat-attention')?.value ?? 0);
+        const acuteChange = Number(document.getElementById('fourat-acute')?.value ?? 0);
+
+        if ([alertness, amtErrorsInput, attentionCorrect, acuteChange].some(value => Number.isNaN(value) || value < 0)) {
+            document.getElementById('fourat-result').innerHTML = '<p class="error">Check the inputs for alertness, AMT4 errors, and attention.</p>';
+            return { error: 'Invalid 4AT inputs' };
+        }
+
+        const amtScore = amtErrorsInput === 0 ? 0 : amtErrorsInput === 1 ? 1 : 2;
+        const attentionScore = attentionCorrect >= 7 ? 0 : attentionCorrect > 0 ? 1 : 2;
+
+        const total = alertness + amtScore + attentionScore + acuteChange;
+        let interpretation = '';
+        let risk = '';
+        let color = '';
+
+        if (total >= 4) {
+            interpretation = 'Possible delirium – urgent medical review and treat precipitating causes';
+            risk = 'Delirium likely';
+            color = '#dc2626';
+        } else if (total >= 1) {
+            interpretation = 'Possible cognitive impairment – perform cognitive testing (e.g., MoCA) and monitor closely';
+            risk = 'Cognitive concern';
+            color = '#f59e0b';
+        } else {
+            interpretation = 'Delirium unlikely, but continue routine observation if risk factors present';
+            risk = 'Low risk';
+            color = '#16a34a';
+        }
+
+        document.getElementById('fourat-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Total ${total}</div>
+                <div class="score-risk">${risk}</div>
+                <div class="score-recommendation" style="color: ${color};">${interpretation}</div>
+            </div>
+        `;
+
+        return { total, risk, interpretation, components: { alertness, amtScore, attentionScore, acuteChange } };
+    }
+
+    bindFourAtEvents() {
+        const button = document.querySelector('.calc-button[data-calc="4at"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateFourAt());
+        }
+    }
+
+    /**
      * Psychiatry – PHQ-9
      */
     getPHQ9Template() {
@@ -1491,6 +1718,198 @@ class V2Calculators {
     }
 
     /**
+     * Obstetrics – MEOWS Calculator
+     */
+    getMeowsTemplate() {
+        return `
+            <div class="calculator-form">
+                <h4>Maternity Early Obstetric Warning Score (MEOWS)</h4>
+                <p><small>Enter the most recent set of vital signs. Escalate according to local maternity early warning policy.</small></p>
+                <div class="calc-grid">
+                    <div class="calc-input-group">
+                        <label>Respiratory rate (breaths/min):</label>
+                        <input type="number" id="meows-resp" min="0" step="1" placeholder="18">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>SpO₂ (%):</label>
+                        <input type="number" id="meows-spo2" min="0" max="100" step="1" placeholder="97">
+                    </div>
+                    <div class="calc-checkbox-group" style="margin-top: 8px;">
+                        <label><input type="checkbox" id="meows-oxygen"> Receiving supplemental oxygen</label>
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Temperature (°C):</label>
+                        <input type="number" id="meows-temp" step="0.1" placeholder="36.8">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Systolic BP (mmHg):</label>
+                        <input type="number" id="meows-sbp" min="0" step="1" placeholder="118">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Diastolic BP (mmHg):</label>
+                        <input type="number" id="meows-dbp" min="0" step="1" placeholder="70">
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Heart rate (beats/min):</label>
+                        <input type="number" id="meows-hr" min="0" step="1" placeholder="88">
+                    </div>
+                    <div class="calc-select-group">
+                        <label>Consciousness (AVPU):</label>
+                        <select id="meows-consciousness">
+                            <option value="0">Alert</option>
+                            <option value="1">Responds to Voice</option>
+                            <option value="2">Responds to Pain/Unresponsive</option>
+                        </select>
+                    </div>
+                    <div class="calc-input-group">
+                        <label>Urine output (ml/hour):</label>
+                        <input type="number" id="meows-urine" min="0" step="1" placeholder="55">
+                    </div>
+                </div>
+                <button class="calc-button" data-calc="meows">Calculate MEOWS</button>
+                <div id="meows-result" class="calc-result"></div>
+                <div class="calc-reference"><small>Based on UK Obstetric Surveillance System / NHS England MEOWS trigger thresholds. Always follow local escalation policies.</small></div>
+            </div>
+        `;
+    }
+
+    calculateMeows() {
+        const resp = Number.parseFloat(document.getElementById('meows-resp')?.value ?? '');
+        const spo2 = Number.parseFloat(document.getElementById('meows-spo2')?.value ?? '');
+        const temp = Number.parseFloat(document.getElementById('meows-temp')?.value ?? '');
+        const sbp = Number.parseFloat(document.getElementById('meows-sbp')?.value ?? '');
+        const dbp = Number.parseFloat(document.getElementById('meows-dbp')?.value ?? '');
+        const hr = Number.parseFloat(document.getElementById('meows-hr')?.value ?? '');
+        const consciousness = Number.parseInt(document.getElementById('meows-consciousness')?.value ?? '0', 10);
+        const urine = Number.parseFloat(document.getElementById('meows-urine')?.value ?? '');
+        const onOxygen = Boolean(document.getElementById('meows-oxygen')?.checked);
+
+        const numericInputs = [resp, spo2, temp, sbp, dbp, hr, urine];
+        if (numericInputs.some(value => !Number.isFinite(value))) {
+            document.getElementById('meows-result').innerHTML = '<p class="error">Please enter numeric values for all vital signs.</p>';
+            return { error: 'Invalid MEOWS inputs' };
+        }
+
+        const scoreRange = (value, ranges) => {
+            for (const range of ranges) {
+                const aboveMin = typeof range.min === 'number' ? value >= range.min : true;
+                const belowMax = typeof range.max === 'number' ? value <= range.max : true;
+                if (aboveMin && belowMax) {
+                    return range.score;
+                }
+            }
+            return 0;
+        };
+
+        const respScore = scoreRange(resp, [
+            { max: 10, score: 2 },
+            { min: 11, max: 20, score: 0 },
+            { min: 21, max: 24, score: 1 },
+            { min: 25, score: 2 }
+        ]);
+
+        const spo2Score = scoreRange(spo2, [
+            { min: 96, max: 100, score: 0 },
+            { min: 94, max: 95, score: 1 },
+            { max: 93.999, score: 2 }
+        ]);
+
+        const tempScore = scoreRange(temp, [
+            { max: 34.9, score: 2 },
+            { min: 35, max: 35.9, score: 1 },
+            { min: 36, max: 37.4, score: 0 },
+            { min: 37.5, max: 38, score: 1 },
+            { min: 38.1, score: 2 }
+        ]);
+
+        const sbpScore = scoreRange(sbp, [
+            { max: 89, score: 2 },
+            { min: 90, max: 99, score: 1 },
+            { min: 100, max: 139, score: 0 },
+            { min: 140, max: 159, score: 1 },
+            { min: 160, score: 2 }
+        ]);
+
+        const dbpScore = scoreRange(dbp, [
+            { max: 49, score: 1 },
+            { min: 50, max: 89, score: 0 },
+            { min: 90, max: 99, score: 1 },
+            { min: 100, score: 2 }
+        ]);
+
+        const hrScore = scoreRange(hr, [
+            { max: 49, score: 2 },
+            { min: 50, max: 59, score: 1 },
+            { min: 60, max: 100, score: 0 },
+            { min: 101, max: 120, score: 1 },
+            { min: 121, score: 2 }
+        ]);
+
+        const oxygenScore = onOxygen ? 1 : 0;
+        const urineScore = scoreRange(urine, [
+            { min: 51, score: 0 },
+            { min: 30, max: 50, score: 1 },
+            { max: 29.999, score: 2 }
+        ]);
+
+        const scores = [respScore, spo2Score, tempScore, sbpScore, dbpScore, hrScore, oxygenScore, consciousness, urineScore];
+        const total = scores.reduce((sum, val) => sum + val, 0);
+        const redTriggers = scores.filter(val => val >= 2).length;
+        const yellowTriggers = scores.filter(val => val === 1).length;
+
+        let priority = '';
+        let recommendation = '';
+        let color = '';
+
+        if (redTriggers >= 1 || total >= 4) {
+            priority = 'Urgent medical review';
+            recommendation = 'Escalate immediately to obstetric registrar/anaesthetics, initiate ABC approach and repeat observations every 15 minutes.';
+            color = '#dc2626';
+        } else if (yellowTriggers >= 2) {
+            priority = 'Early escalation required';
+            recommendation = 'Inform senior midwife or obstetric team within 30 minutes and repeat observations within 30 minutes.';
+            color = '#f59e0b';
+        } else {
+            priority = 'Within normal limits';
+            recommendation = 'Continue routine 4-hourly MEOWS monitoring and reassess if condition changes.';
+            color = '#16a34a';
+        }
+
+        const breakdown = [
+            { label: 'Respiratory rate', value: `${resp} /min`, score: respScore },
+            { label: 'SpO₂', value: `${spo2}%${onOxygen ? ' (on O₂)' : ''}`, score: spo2Score + oxygenScore },
+            { label: 'Temperature', value: `${temp.toFixed(1)} °C`, score: tempScore },
+            { label: 'Systolic BP', value: `${sbp} mmHg`, score: sbpScore },
+            { label: 'Diastolic BP', value: `${dbp} mmHg`, score: dbpScore },
+            { label: 'Heart rate', value: `${hr} bpm`, score: hrScore },
+            { label: 'Consciousness', value: ['Alert', 'Responds to Voice', 'Responds to Pain/Unresponsive'][consciousness] || 'Alert', score: consciousness },
+            { label: 'Urine output', value: `${urine} ml/hour`, score: urineScore }
+        ];
+
+        document.getElementById('meows-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">Total MEOWS: <strong>${total}</strong></div>
+                <div class="score-risk">${priority}</div>
+                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+            </div>
+            <div class="score-breakdown">
+                <ul>
+                    ${breakdown.map(item => `<li>${item.label}: ${item.value} (score ${item.score})</li>`).join('')}
+                </ul>
+            </div>
+        `;
+
+        return { total, redTriggers, yellowTriggers, priority, recommendation, breakdown };
+    }
+
+    bindMeowsEvents() {
+        const button = document.querySelector('.calc-button[data-calc="meows"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateMeows());
+        }
+    }
+
+    /**
      * Other – QTc Bazett
      */
     getQTCTemplate() {
@@ -1629,6 +2048,39 @@ class V2Calculators {
             calculate: () => this.calculateTimedUpGo(),
             bindEvents: () => this.bindTimedUpGoEvents()
         });
+
+        this.calculators.set('clinical-frailty-scale', {
+            id: 'clinical-frailty-scale',
+            name: 'Clinical Frailty Scale (CFS)',
+            category: TOOL_CATEGORIES.GERIATRICS,
+            description: 'Nine-point frailty assessment to guide escalation decisions',
+            keywords: ['frailty', 'cfs', 'geriatrics', 'rockwood'],
+            getTemplate: () => this.getClinicalFrailtyTemplate(),
+            calculate: () => this.calculateClinicalFrailty(),
+            bindEvents: () => this.bindClinicalFrailtyEvents()
+        });
+
+        this.calculators.set('prisma-7', {
+            id: 'prisma-7',
+            name: 'PRISMA-7 Frailty Screen',
+            category: TOOL_CATEGORIES.GERIATRICS,
+            description: 'Rapid seven-item screen to identify high-risk older adults',
+            keywords: ['prisma', 'frailty', 'screening', 'geriatrics'],
+            getTemplate: () => this.getPrisma7Template(),
+            calculate: () => this.calculatePrisma7(),
+            bindEvents: () => this.bindPrisma7Events()
+        });
+
+        this.calculators.set('4at', {
+            id: '4at',
+            name: '4AT Delirium Screen',
+            category: TOOL_CATEGORIES.GERIATRICS,
+            description: 'Assess delirium risk and acute cognitive impairment',
+            keywords: ['delirium', '4at', 'cognition', 'acute confusion'],
+            getTemplate: () => this.getFourAtTemplate(),
+            calculate: () => this.calculateFourAt(),
+            bindEvents: () => this.bindFourAtEvents()
+        });
     }
 
     registerPsychiatryCalculators() {
@@ -1680,6 +2132,17 @@ class V2Calculators {
             getTemplate: () => this.getBishopTemplate(),
             calculate: () => this.calculateBishop(),
             bindEvents: () => this.bindBishopEvents()
+        });
+
+        this.calculators.set('meows', {
+            id: 'meows',
+            name: 'MEOWS Chart (Maternity Early Warning)',
+            category: TOOL_CATEGORIES.OBSTETRICS,
+            description: 'Aggregate score to prompt escalation in unwell maternity patients',
+            keywords: ['meows', 'obstetric early warning', 'maternal observations'],
+            getTemplate: () => this.getMeowsTemplate(),
+            calculate: () => this.calculateMeows(),
+            bindEvents: () => this.bindMeowsEvents()
         });
     }
 

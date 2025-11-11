@@ -237,6 +237,101 @@ export const emergencyProtocols = {
         ukGuideline: 'NICE CG151',
         criticalActions: ['Immediate antibiotics', 'Source identification', 'Daily monitoring']
     },
+    'pals-cardiac-arrest': {
+        name: 'Paediatric Cardiac Arrest (Shockable Rhythm)',
+        category: 'paediatric',
+        urgency: 'emergency',
+        steps: [
+            'Check responsiveness, airway, breathing and pulse for no more than 10 seconds',
+            'Begin CPR with 15:2 compressions to ventilations using two-rescuer technique',
+            'Attach defibrillator/monitor and assess rhythm – ventricular fibrillation/pulseless VT confirmed',
+            'Deliver defibrillation at 4 J/kg biphasic, resume CPR immediately for 2 minutes',
+            'After second shock give Adrenaline 10 micrograms/kg (0.1 ml/kg of 1:10,000) IV/IO every alternate cycle',
+            'After third shock administer Amiodarone 5 mg/kg IV/IO bolus',
+            'Continue 2-minute CPR cycles with rhythm reassessment and further 4 J/kg shocks as indicated',
+            'Secure airway (bag-mask ventilation, supraglottic, or intubation) and obtain vascular access',
+            'Treat reversible causes using the 4 Hs and 4 Ts framework',
+            'Plan for post-resuscitation care once return of spontaneous circulation achieved'
+        ],
+        drugs: ['Adrenaline 10 micrograms/kg IV/IO every 3-5 minutes', 'Amiodarone 5 mg/kg IV/IO after 3rd shock'],
+        ukGuideline: 'Resuscitation Council UK Paediatric Life Support Guidelines 2021',
+        criticalActions: ['Deliver 4 J/kg shocks promptly', 'Ensure high-quality paediatric CPR', 'Identify reversible causes early']
+    },
+    'pals-bradycardia': {
+        name: 'Paediatric Bradycardia with Poor Perfusion',
+        category: 'paediatric',
+        urgency: 'emergency',
+        steps: [
+            'Assess airway, breathing, circulation and provide high-flow oxygen',
+            'Start CPR if heart rate <60/min with signs of poor perfusion despite oxygenation and ventilation',
+            'Establish vascular access (IV/IO) and monitor ECG, SpO₂, blood pressure',
+            'Administer Adrenaline 10 micrograms/kg (0.1 ml/kg 1:10,000) IV/IO every 3-5 minutes',
+            'Consider Atropine 20 micrograms/kg (minimum 100 micrograms) IV/IO for vagal causes or AV block',
+            'If refractory, initiate transcutaneous pacing and involve paediatric cardiology/ICU early',
+            'Treat reversible causes: hypoxia, hypovolaemia, hypothermia, toxins, metabolic disturbances',
+            'Escalate to advanced airway management and consider inotropes once perfusion restored'
+        ],
+        drugs: ['Adrenaline 10 micrograms/kg IV/IO', 'Atropine 20 micrograms/kg IV/IO (max single dose 600 micrograms)'],
+        ukGuideline: 'Resuscitation Council UK Paediatric Advanced Life Support 2021',
+        criticalActions: ['Start compressions if HR <60 with poor output', 'Treat hypoxia aggressively', 'Early pacing for refractory bradycardia']
+    },
+    'neonatal-resuscitation': {
+        name: 'Newborn Life Support (0–10 Minutes)',
+        category: 'neonatal',
+        urgency: 'emergency',
+        steps: [
+            'Dry, warm and position the newborn with neutral head alignment, stimulate to breathe',
+            'Assess tone, breathing, heart rate; start 5 inflation breaths with room air if apnoeic or gasping',
+            'Check chest movement – if inadequate, reposition, repeat inflation breaths, consider jaw thrust and two-person technique',
+            'Start continuous positive pressure ventilation at 30–40 breaths per minute if heart rate <100 bpm',
+            'If heart rate remains <60 bpm after 30 seconds of effective ventilation, begin chest compressions (3:1 ratio) with oxygen',
+            'Secure umbilical venous access for emergency drugs',
+            'Administer Adrenaline 10 micrograms/kg (0.1 ml/kg of 1:10,000) IV/IO if heart rate remains <60 bpm despite ventilation and compressions',
+            'Consider volume expansion with 0.9% saline 10 ml/kg if blood loss suspected',
+            'Reassess every 30 seconds; stop compressions once heart rate >60 bpm and improving',
+            'Initiate post-resuscitation care including thermal management, glucose monitoring and senior neonatal review'
+        ],
+        drugs: ['Adrenaline 10 micrograms/kg IV/IO', '0.9% saline 10 ml/kg for hypovolaemia'],
+        ukGuideline: 'Resuscitation Council UK Newborn Life Support 2021',
+        criticalActions: ['Prioritise effective ventilation', 'Use 3:1 compression ratio when indicated', 'Seek neonatal team support early']
+    },
+    'paediatric-sepsis': {
+        name: 'Paediatric Sepsis 6 (First Hour)',
+        category: 'paediatric',
+        urgency: 'emergency',
+        steps: [
+            'Recognise red flags: abnormal vitals, altered mental state, mottled or cyanotic skin, lactate >2 mmol/L',
+            'Call for senior paediatric review and activate sepsis pathway',
+            'Administer high-flow oxygen and obtain IV/IO access',
+            'Take blood cultures, lactate, glucose and send FBC/U&E/CRP',
+            'Administer broad-spectrum IV antibiotics within 1 hour, tailoring to local guidelines',
+            'Give fluid bolus 10–20 ml/kg isotonic crystalloid; reassess perfusion and repeat cautiously (maximum 40–60 ml/kg without senior review)',
+            'Measure urine output; insert catheter if shocked',
+            'Consider inotropes/vasoactives early if fluid-refractory shock',
+            'Escalate to PICU for refractory shock or respiratory failure'
+        ],
+        drugs: ['Broad-spectrum IV antibiotics (e.g., cefotaxime + amoxicillin in infants)', '10–20 ml/kg 0.9% saline boluses', 'Inotropes per intensive care advice'],
+        ukGuideline: 'NICE NG143 Sepsis: recognition, diagnosis and early management (paediatrics)',
+        criticalActions: ['Deliver antibiotics within 60 minutes', 'Fluid resuscitate with frequent reassessment', 'Early senior/critical care involvement']
+    },
+    'paediatric-status-epilepticus': {
+        name: 'Paediatric Convulsive Status Epilepticus',
+        category: 'paediatric',
+        urgency: 'emergency',
+        steps: [
+            'Ensure airway patency, provide high-flow oxygen, check glucose immediately',
+            'First-line: Administer buccal midazolam 0.5 mg/kg (max 10 mg) or rectal diazepam 0.5 mg/kg (max 20 mg)',
+            'If seizure continues after 5 minutes, give second dose of buccal midazolam or IV lorazepam 0.1 mg/kg (max 4 mg)',
+            'After two benzodiazepine doses, establish IV/IO access and load with levetiracetam 40 mg/kg (max 2.5 g) or phenytoin 20 mg/kg IV',
+            'Monitor ECG and blood pressure continuously during second-line therapy',
+            'If seizures persist beyond 30 minutes, contact paediatric ICU for rapid sequence induction and continuous infusions (midazolam, thiopentone, or propofol per protocol)',
+            'Investigate and treat underlying causes: infection, metabolic disturbance, head injury, medication non-adherence',
+            'Arrange urgent neuroimaging if focal signs, trauma, or no recovery'
+        ],
+        drugs: ['Buccal midazolam 0.5 mg/kg', 'IV Lorazepam 0.1 mg/kg (max 4 mg)', 'Levetiracetam 40 mg/kg IV (max 2.5 g)', 'Phenytoin 20 mg/kg IV'],
+        ukGuideline: 'Association of Paediatric Emergency Medicine Status Epilepticus Guideline 2020',
+        criticalActions: ['Give benzodiazepines promptly', 'Use weight-based dosing throughout', 'Escalate to anaesthesia for refractory seizures']
+    },
     'postpartum-haemorrhage': {
         name: 'Postpartum Haemorrhage (PPH) Protocol',
         category: 'obstetric',

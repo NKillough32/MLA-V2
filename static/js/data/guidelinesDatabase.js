@@ -738,6 +738,97 @@ window.guidelinesDatabase = {
             'Cardiovascular': 'Assess QRISK3 score, manage risk factors aggressively'
         }
     },
+    'preeclampsia': {
+        title: 'Hypertension in Pregnancy & Preeclampsia (NICE NG133 2023 update)',
+        category: 'obstetrics',
+        evidenceLevel: 'NICE Guideline',
+        lastUpdated: '2023',
+        organisation: 'NICE',
+        diagnosis: {
+            'Gestational hypertension': 'New hypertension (≥140/90 mmHg) after 20 weeks without proteinuria',
+            'Preeclampsia': 'Hypertension after 20 weeks with proteinuria (≥300 mg/24 h or PCR ≥30 mg/mmol) and/or maternal organ dysfunction',
+            'Severe features': 'BP ≥160/110 mmHg, platelets <150 x10⁹/L, rising creatinine, elevated AST/ALT, headache/visual disturbance, pulmonary oedema, fetal growth restriction'
+        },
+        investigations: {
+            'Maternal': 'Weekly FBC, U&E, LFTs in moderate disease; twice weekly if severe. Monitor urine PCR and clinical symptoms',
+            'Fetal': 'Fortnightly growth scans and Dopplers, weekly CTG in severe disease'
+        },
+        management: {
+            'BP control': 'Treat sustained BP ≥150/100 mmHg; target <135/85 mmHg. Use labetalol first-line, nifedipine MR or methyldopa alternatives',
+            'Severe hypertension': 'Treat within 30 minutes. IV labetalol 20 mg bolus (repeat 40-80 mg) or hydralazine 5-10 mg IV. Consider oral nifedipine 10 mg if IV access delayed',
+            'Seizure prophylaxis': 'Magnesium sulphate 4 g IV loading then 1 g/hour infusion for women with severe preeclampsia or eclampsia',
+            'Fluid balance': 'Restrict to 80 ml/hour unless additional losses, monitor urine output, avoid fluid overload'
+        },
+        deliveryPlanning: {
+            '<34 weeks': 'Expectant management in tertiary centre if maternal/fetal status stable',
+            '34-36+6 weeks': 'Consider delivery if severe hypertension or maternal/fetal compromise',
+            '≥37 weeks': 'Recommend birth within 24-48 h for confirmed preeclampsia'
+        },
+        postpartumCare: {
+            'Monitoring': 'Continue magnesium sulphate for 24 h postpartum if used antenatally, monitor BP for 3 days then at 7-10 days',
+            'Medication': 'Switch methyldopa within 2 days postpartum, continue antihypertensives tailored to breastfeeding safety',
+            'Follow-up': 'Offer renal and BP review at 6-8 weeks postpartum; counsel regarding cardiovascular risk in future life'
+        }
+    },
+    'gestational-diabetes': {
+        title: 'Gestational Diabetes Mellitus (NICE NG3 2020 update)',
+        category: 'obstetrics',
+        evidenceLevel: 'NICE Guideline',
+        lastUpdated: '2020',
+        organisation: 'NICE',
+        diagnosis: {
+            'At booking': 'Offer early HbA1c to women with previous GDM, BMI ≥30, first-degree relative with diabetes, or high-risk ethnicity',
+            'Standard 75 g OGTT': 'Fasting plasma glucose ≥5.6 mmol/L or 2-hour ≥7.8 mmol/L between 24-28 weeks confirms diagnosis'
+        },
+        glycaemicTargets: {
+            'Fasting': '<5.3 mmol/L',
+            '1-hour postprandial': '<7.8 mmol/L',
+            '2-hour postprandial': '<6.4 mmol/L'
+        },
+        management: {
+            'Lifestyle': 'Structured dietary advice, 30 minutes moderate exercise daily, weight management support',
+            'Metformin': 'Start if lifestyle fails within 1-2 weeks and fasting glucose <7 mmol/L; titrate to 2 g/day as tolerated',
+            'Insulin': 'Initiate if fasting glucose ≥7 mmol/L or if targets unmet on maximal metformin. Use basal-bolus regimen aligned to meals',
+            'Aspirin': 'Offer 150 mg nocte from 12 weeks to women with GDM risk plus preeclampsia risk factors'
+        },
+        fetalSurveillance: {
+            'Ultrasound': 'Growth scans at 28, 32, 36 weeks to monitor macrosomia and amniotic fluid',
+            'Delivery planning': 'Offer induction or CS at 40+0 weeks if no complications; individualise earlier birth for macrosomia, maternal indications, or insulin use'
+        },
+        intrapartum: {
+            'Glucose monitoring': 'Check hourly capillary glucose during labour aiming 4-7 mmol/L; use IV insulin/dextrose infusion if >7 mmol/L despite sips of water',
+            'Neonatal': 'Ensure early feeding and measure neonatal glucose at 2-4 hours of age'
+        },
+        postnatalCare: {
+            'Screening': '6-12 week 75 g OGTT or fasting plasma glucose, then annual HbA1c or fasting glucose',
+            'Lifestyle': 'Encourage weight optimisation, physical activity, discuss 7-fold risk of type 2 diabetes and importance of future pregnancy planning'
+        }
+    },
+    'hyperemesis-gravidarum': {
+        title: 'Hyperemesis Gravidarum (RCOG Green-top 69, 2023)',
+        category: 'obstetrics',
+        evidenceLevel: 'Royal College Guideline',
+        lastUpdated: '2023',
+        organisation: 'RCOG',
+        diagnosis: {
+            'Definition': 'Protracted nausea and vomiting with weight loss >5% pre-pregnancy weight, dehydration or electrolyte imbalance',
+            'Assessment': 'PUQE score ≥13 suggests severe disease; evaluate for differential diagnoses (thyroid disease, gastrointestinal pathology)'
+        },
+        management: {
+            'Ambulatory care': 'Offer oral/IV antiemetics (cyclizine, prochlorperazine, ondansetron), thiamine supplementation, and hydration in day care settings when possible',
+            'Inpatient care': 'Indicated if intractable vomiting, ketonuria, electrolyte disturbance, or inability to tolerate oral intake',
+            'Escalation': 'Consider enteral or parenteral nutrition if weight loss persists despite therapy; involve dietetics early'
+        },
+        pharmacotherapy: {
+            'First-line': 'Cyclizine, prochlorperazine or promethazine',
+            'Second-line': 'Metoclopramide or ondansetron (off-label but supported by RCOG for refractory cases)',
+            'Adjuncts': 'Thiamine 100 mg IV/IM prior to dextrose to prevent Wernicke’s encephalopathy; consider corticosteroids (hydrocortisone 100 mg IV q12h) for refractory hyperemesis after specialist input'
+        },
+        supportiveCare: {
+            'Venous thromboembolism': 'Assess risk daily; provide LMWH prophylaxis during inpatient stay',
+            'Psychological support': 'Offer counselling, peer support networks, occupational health review for work adjustments'
+        }
+    },
     'postpartum-haemorrhage': {
         title: 'Postpartum Haemorrhage (RCOG Green-top Guideline No. 52, 2016, reaffirmed 2021)',
         category: 'obstetrics',
