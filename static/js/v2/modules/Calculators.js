@@ -1944,16 +1944,4 @@ class V2Calculators {
 // Create and export singleton instance
 export const v2Calculators = new V2Calculators();
 
-// Export the registry object for CalculatorManager compatibility
-export const calculatorRegistry = {
-    // Convert Map to object for backward compatibility
-    ...Object.fromEntries(v2Calculators.calculators),
-    
-    // Helper methods
-    getCalculator: (id) => v2Calculators.getCalculator(id),
-    getAllCalculators: () => v2Calculators.getAllCalculators(),
-    getCalculatorsByCategory: (category) => v2Calculators.getCalculatorsByCategory(category),
-    getCalculatorCount: () => v2Calculators.getCalculatorCount()
-};
-
 console.log('✅ V2 Calculators module loaded with native implementations');
