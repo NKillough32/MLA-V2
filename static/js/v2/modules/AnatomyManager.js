@@ -682,7 +682,7 @@ export class AnatomyManager {
             if (value === undefined || value === null) return '';
             return String(value)
                 .replace(/\\/g, '\\\\')
-                .replace(/'/g, '\\'');
+                .replace(/'/g, "\\'");
         };
 
         const data = this.anatomyData && this.anatomyData[key];
