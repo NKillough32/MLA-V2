@@ -83,6 +83,23 @@ export const mnemonicsDatabase = {
         ]
     },
 
+    'lmnop-acute-oedema': {
+        title: 'LMNOP - Acute Pulmonary Oedema Management',
+        category: 'cardiovascular',
+        mnemonic: 'LMNOP',
+        meaning: 'Loop diuretic (furosemide), Morphine, Nitrates, Oxygen, Position',
+        usage: 'Rapid stabilisation steps for acute pulmonary oedema',
+        details: [
+            '<strong>L</strong> - <strong>Loop diuretic</strong> (IV furosemide) to offload fluid and reduce preload',
+            '<strong>M</strong> - <strong>Morphine</strong> for distress relief and venodilation (use cautiously and only if anxious/in pain)',
+            '<strong>N</strong> - <strong>Nitrates</strong> (GTN) if blood pressure allows to lower preload/afterload',
+            '<strong>O</strong> - <strong>Oxygen</strong> or CPAP to optimise oxygenation and reduce work of breathing',
+            '<strong>P</strong> - <strong>Position</strong> sitting upright with legs dependent to aid ventilation',
+            '',
+            '📈 Escalate early to inotropes, NIV or ICU support if there is inadequate response'
+        ]
+    },
+
     // Respiratory Mnemonics
     'chest-life-threatening-asthma': {
         title: 'CHEST - Life-Threatening Asthma',
@@ -119,6 +136,40 @@ export const mnemonicsDatabase = {
             '<strong>E</strong> - <strong>Equipment</strong>: Inspect ventilator circuit, oxygen supply, power',
             '',
             '🛠️ Run through DOPE whenever alarms trigger or patient deteriorates'
+        ]
+    },
+    'opqrst-pain-assessment': {
+        title: 'OPQRST - Pain History',
+        category: 'emergency',
+        mnemonic: 'OPQRST',
+        meaning: 'Onset, Provocation, Quality, Radiation, Severity, Time',
+        usage: 'Structured assessment of acute pain presentations',
+        details: [
+            '<strong>O</strong> - <strong>Onset</strong>: When did the pain start and how?',
+            '<strong>P</strong> - <strong>Provocation/Palliation</strong>: What worsens or relieves it?',
+            '<strong>Q</strong> - <strong>Quality</strong>: What does the pain feel like (sharp, dull, burning)?',
+            '<strong>R</strong> - <strong>Radiation</strong>: Does the pain move or travel anywhere?',
+            '<strong>S</strong> - <strong>Severity</strong>: Grade the intensity (e.g. 0–10 scale)',
+            '<strong>T</strong> - <strong>Time</strong>: Has the pain pattern changed or progressed?',
+            '',
+            '📝 Combine with red flag screening and vitals for safe triage'
+        ]
+    },
+    'sample-emergency-history': {
+        title: 'SAMPLE - Emergency History',
+        category: 'emergency',
+        mnemonic: 'SAMPLE',
+        meaning: 'Symptoms, Allergies, Medications, Past history, Last intake, Events',
+        usage: 'Focused history structure for emergency and pre-hospital care',
+        details: [
+            '<strong>S</strong> - <strong>Symptoms</strong>: Current complaint and associated features',
+            '<strong>A</strong> - <strong>Allergies</strong>: Drugs, foods, or environmental triggers and reactions',
+            '<strong>M</strong> - <strong>Medications</strong>: Regular prescriptions, over-the-counter (OTC) items, anticoagulants, herbal remedies',
+            '<strong>P</strong> - <strong>Past medical history</strong>: Relevant diagnoses, surgeries, pregnancies',
+            '<strong>L</strong> - <strong>Last oral intake</strong>: Food, drink, medication timing (important for anaesthesia)',
+            '<strong>E</strong> - <strong>Events/Environment</strong>: What led to the incident or symptoms?',
+            '',
+            '🚑 Supports concise handovers and ensures critical context is captured'
         ]
     },
     'curb-65': {
@@ -181,6 +232,22 @@ export const mnemonicsDatabase = {
             '🚨 Call 999 immediately if any symptoms present'
         ]
     },
+    'avpu-consciousness': {
+        title: 'AVPU - Level of Consciousness',
+        category: 'neurology',
+        mnemonic: 'AVPU',
+        meaning: 'Alert, Voice, Pain, Unresponsive',
+        usage: 'Quick neurological assessment for deteriorating patients',
+        details: [
+            '<strong>A</strong> - <strong>Alert</strong>: Awake, oriented, and appropriately responsive',
+            '<strong>V</strong> - <strong>Responds to Voice</strong>: Opens eyes or obeys commands when spoken to',
+            '<strong>P</strong> - <strong>Responds to Pain</strong>: Withdraws or localises only with painful stimulus',
+            '<strong>U</strong> - <strong>Unresponsive</strong>: No response to voice or pain',
+            '',
+            '🧠 Track AVPU alongside GCS scores to monitor neurological trends and trigger escalation'
+        ]
+    },
+
     'dimtop-confusion': {
         title: 'DIMTOP - Causes of Confusion',
         category: 'neurology',
@@ -190,8 +257,8 @@ export const mnemonicsDatabase = {
         details: [
             '<strong>D</strong> - <strong>Drugs</strong> (opioids, benzodiazepines, anticholinergics)',
             '<strong>I</strong> - <strong>Infection</strong> (UTI, pneumonia, meningitis)',
-            '<strong>M</strong> - <strong>Metabolic</strong> (hypo/hyperglycemia, Na+, Ca2+)',
-            '<strong>T</strong> - <strong>Trauma</strong> (head injury, subdural hematoma)',
+            '<strong>M</strong> - <strong>Metabolic</strong> (hypo/hyperglycaemia, Na+, Ca2+)',
+            '<strong>T</strong> - <strong>Trauma</strong> (head injury, subdural haematoma)',
             '<strong>O</strong> - <strong>Oxygen</strong> (hypoxia from any cause)',
             '<strong>P</strong> - <strong>Pain</strong> (acute pain, urinary retention)',
             '',
@@ -225,6 +292,25 @@ export const mnemonicsDatabase = {
         ]
     },
 
+    // Psychiatry Mnemonics
+    'headss-adolescent': {
+        title: 'HEADSS - Adolescent Psychosocial Assessment',
+        category: 'psychiatry',
+        mnemonic: 'HEADSS',
+        meaning: 'Home, Education/Employment, Activities, Drugs, Sexuality, Suicide/Safety',
+        usage: 'Structured framework for taking a confidential psychosocial history',
+        details: [
+            '<strong>H</strong> - <strong>Home</strong>: Family structure, relationships, stability and support',
+            '<strong>E</strong> - <strong>Education/Employment</strong>: School performance, attendance, bullying, work stress',
+            '<strong>A</strong> - <strong>Activities</strong>: Hobbies, friendships, online engagement, physical activity',
+            '<strong>D</strong> - <strong>Drugs</strong>: Tobacco, alcohol, vaping, recreational drugs and context of use',
+            '<strong>S</strong> - <strong>Sexuality</strong>: Relationships, consent, contraception, gender identity concerns',
+            '<strong>S</strong> - <strong>Suicide/Safety</strong>: Mood, self-harm, abuse, violence, digital safety',
+            '',
+            '🧠 Begin with less sensitive topics to build rapport before progressing to risk assessment'
+        ]
+    },
+
     // Gastrointestinal Mnemonics
     'abcde-gi-bleeding': {
         title: 'ABCDE - Upper GI Bleeding Management',
@@ -254,7 +340,7 @@ export const mnemonicsDatabase = {
         meaning: 'Causes of hepatic encephalopathy decompensation',
         usage: 'Identify and treat reversible precipitants',
         details: [
-            '<strong>H</strong> - <strong>H</strong>ypoglycemia',
+            '<strong>H</strong> - <strong>H</strong>ypoglycaemia',
             '<strong>E</strong> - <strong>E</strong>lectrolyte imbalance (K+, Na+)',
             '<strong>P</strong> - <strong>P</strong>rotein overload (GI bleed, constipation)',
             '<strong>A</strong> - <strong>A</strong>lcohol or drug use',
@@ -280,7 +366,7 @@ export const mnemonicsDatabase = {
         usage: 'Systematic approach to AKI diagnosis',
         details: [
             '<strong>PRE-RENAL</strong> (70% of AKI):',
-            '• Hypovolemia (hemorrhage, dehydration)',
+            '• Hypovolaemia (haemorrhage, dehydration)',
             '• Hypotension (sepsis, cardiogenic shock)',
             '• Renal artery stenosis',
             '• NSAIDs, ACE inhibitors',
@@ -292,7 +378,7 @@ export const mnemonicsDatabase = {
             '• Vascular (vasculitis)',
             '',
             '<strong>POST-RENAL</strong> (5% of AKI):',
-            '• Obstruction: stones, tumor, BPH',
+            '• Obstruction: stones, tumour, BPH',
             '• Bilateral ureteric obstruction',
             '• Bladder outlet obstruction',
             '',
@@ -337,7 +423,7 @@ export const mnemonicsDatabase = {
             '<strong>T</strong> - <strong>T</strong>oo much insulin/sulphonylureas',
             '<strong>I</strong> - <strong>I</strong>nsufficient carbohydrate intake',
             '<strong>R</strong> - <strong>R</strong>enal failure (reduced insulin clearance)',
-            '<strong>E</strong> - <strong>E</strong>xercise (increased glucose utilization)',
+            '<strong>E</strong> - <strong>E</strong>xercise (increased glucose utilisation)',
             '<strong>D</strong> - <strong>D</strong>rinks (alcohol)',
             '',
             '💡 Also consider:',
@@ -363,7 +449,7 @@ export const mnemonicsDatabase = {
             '<strong>N</strong> - <strong>N</strong>aCl 0.9% fluid resuscitation',
             '<strong>S</strong> - <strong>S</strong>earch for precipitant (infection, non-compliance)',
             '<strong>U</strong> - <strong>U</strong>rea and electrolytes (monitor K+)',
-            '<strong>L</strong> - <strong>L</strong>ook for complications (cerebral edema)',
+            '<strong>L</strong> - <strong>L</strong>ook for complications (cerebral oedema)',
             '<strong>I</strong> - <strong>I</strong>nfection treatment (antibiotics if indicated)',
             '<strong>N</strong> - <strong>N</strong>ever stop long-acting insulin',
             '',
@@ -626,8 +712,8 @@ export const mnemonicsDatabase = {
             '<strong>T</strong>ransfusion-<strong>R</strong>elated <strong>A</strong>cute <strong>L</strong>ung <strong>I</strong>njury',
             '',
             '⚠️ Clinical features:',
-            '• Acute dyspnea during or within 6 hours of transfusion',
-            '• Hypoxemia',
+            '• Acute dyspnoea during or within 6 hours of transfusion',
+            '• Hypoxaemia',
             '• Bilateral pulmonary infiltrates on CXR',
             '• No evidence of fluid overload',
             '',
@@ -657,7 +743,7 @@ export const mnemonicsDatabase = {
             '<strong>A</strong> - <strong>A</strong>rthritis (non-erosive, 2+ joints)',
             '<strong>P</strong> - <strong>P</strong>hotosensitivity',
             '',
-            '<strong>B</strong> - <strong>B</strong>lood disorders (anemia, leukopenia, thrombocytopenia)',
+            '<strong>B</strong> - <strong>B</strong>lood disorders (anaemia, leucopenia, thrombocytopenia)',
             '<strong>R</strong> - <strong>R</strong>enal involvement (proteinuria, casts)',
             '<strong>A</strong> - <strong>A</strong>NA positive',
             '<strong>I</strong> - <strong>I</strong>mmunologic (anti-dsDNA, anti-Sm, antiphospholipid)',
