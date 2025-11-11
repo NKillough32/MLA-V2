@@ -649,46 +649,170 @@ export class AnatomyManager {
         const info = document.getElementById('structureInfo');
         if (!info) return;
 
-        if (!this.anatomyData || !this.anatomyData[key]) {
+        const sanitize = (value) => UIHelpers.sanitizeHTML(String(value));
+        const toTitle = (text = '') => text
+            .replace(/_/g, ' ')
+            .replace(/\b\w/g, (char) => char.toUpperCase());
+        const toList = (...values) => {
+            const result = [];
+            values.forEach((value) => {
+                if (!value) return;
+                if (Array.isArray(value)) {
+                    value.forEach((item) => {
+                        if (item && typeof item === 'string' && !result.includes(item)) {
+                            result.push(item);
+                        }
+                    });
+                } else if (typeof value === 'string' && !result.includes(value)) {
+                    result.push(value);
+                }
+            });
+            return result;
+        };
+        const formatDetailValue = (value) => {
+            const values = toList(value);
+            if (values.length === 0) return '';
+            return values.map((entry) => sanitize(entry)).join('<br>');
+        };
+        const escapeAttr = (value) => {
+            if (value === undefined || value === null) return '';
+            return String(value).replace(/"/g, '&quot;');
+        };
+        const escapeJsString = (value) => {
+            if (value === undefined || value === null) return '';
+            return String(value)
+                .replace(/\\/g, '\\\\')
+                .replace(/'/g, "\\'");
+        };
+
+        const data = this.anatomyData && this.anatomyData[key];
+        if (!data) {
             info.innerHTML = `
                 <div class="anatomy-info-card">
-                    <h3>${key.replace(/_/g, ' ')}</h3>
-                    <p>${fallbackInfo || 'No detailed information available.'}</p>
+                    <div class="anatomy-info-header">
+                        <div>
+                            <h3 class="anatomy-info-title">${sanitize(toTitle(key))}</h3>
+                            <p class="anatomy-info-brief">${sanitize(fallbackInfo || 'No detailed information available.')}</p>
+                        </div>
+                    </div>
                 </div>
             `;
             return;
         }
 
-        const data = this.anatomyData[key];
-        const name = data.commonName || key.replace(/_/g, ' ');
-        const desc = data.description || '';
-        const func = data.function || '';
-        const clinical = data.clinicalPearls || [];
+        const name = sanitize(data.commonName || toTitle(key));
+        const description = data.description || '';
+        const brief = data.brief || '';
+        const tags = toList(data.tags, data.category, data.region, data.layer, data.compartment, data.type)
+            .map((tag) => `<span class="anatomy-chip">${sanitize(toTitle(tag))}</span>`)
+            .join('');
 
-        let html = `
-            <div class="anatomy-info-card" style="animation: fadeIn 0.3s ease-in;">
-                <h3 style="color:var(--primary-color);margin-bottom:12px;">${name}</h3>
+        const detailItems = [
+            { label: 'Origin', value: data.origin },
+            { label: 'Insertion', value: data.insertion },
+            { label: 'Innervation', value: data.innervation },
+            { label: 'Blood Supply', value: data.bloodSupply || data.arterialSupply || data.vascularSupply },
+            { label: 'Surface Landmark', value: data.surfaceAnatomy || data.surfaceLandmark },
+            { label: 'Nerve Roots', value: data.nerveRoots },
+            { label: 'Functional Tests', value: data.specialTests },
+        ].filter((item) => item.value);
+
+        const detailHtml = detailItems.map((item) => `
+            <div class="info-item">
+                <h4>${sanitize(item.label)}</h4>
+                <p>${formatDetailValue(item.value)}</p>
+            </div>
+        `).join('');
+
+        const functionList = toList(data.functions, data.function, data.actions, data.action);
+        const clinicalList = toList(data.clinicalPearls, data.clinicalPearl);
+        const examList = toList(data.examTips, data.examinationTips, data.examination);
+        const relationList = toList(data.relatedStructures).map((item) => sanitize(toTitle(item)));
+        const referenceList = toList(data.references, data.reference);
+
+        const imageUrl = data.focusImage || data.highlightImage || data.imageDetail || data.image;
+        const imageCaption = data.imageCaption || data.caption || '';
+
+        let html = `<div class="anatomy-info-card" style="animation: fadeIn 0.3s ease-in;">`;
+
+        html += `
+            <div class="anatomy-info-header">
+                <div>
+                    <h3 class="anatomy-info-title">${name}</h3>
+                    ${description ? `<p class="anatomy-info-brief">${sanitize(description)}</p>` : ''}
+                    ${brief && brief !== description ? `<p class="anatomy-info-brief" style="font-style:italic;">${sanitize(brief)}</p>` : ''}
+                </div>
+                ${tags ? `<div class="anatomy-info-tags">${tags}</div>` : ''}
+            </div>
         `;
 
-        if (desc) {
-            html += `<p style="margin-bottom:12px;line-height:1.6;">${desc}</p>`;
-        }
-
-        if (func) {
+        if (imageUrl) {
+            const safeSrc = escapeAttr(imageUrl);
+            const modalUrl = escapeJsString(imageUrl);
+            const modalCaption = escapeJsString(`${data.commonName || toTitle(key)} reference view`);
             html += `
-                <div style="margin-bottom:12px;">
-                    <strong style="color:var(--secondary-color);">Function:</strong>
-                    <p style="margin-top:4px;line-height:1.6;">${func}</p>
+                <div class="anatomy-info-image">
+                    <img src="${safeSrc}" alt="${name} reference" loading="lazy" onclick="window.openImageModal && openImageModal('${modalUrl}', '${modalCaption}')">
+                    ${imageCaption ? `<div class="image-caption">${sanitize(imageCaption)}</div>` : ''}
                 </div>
             `;
         }
 
-        if (clinical && clinical.length > 0) {
+        if (detailHtml) {
+            html += `<div class="anatomy-info-grid">${detailHtml}</div>`;
+        }
+
+        if (functionList.length > 0) {
             html += `
-                <div style="background:rgba(255,193,7,0.1);padding:12px;border-radius:6px;border-left:4px solid #ffc107;">
-                    <strong style="color:#f57c00;">Clinical Pearls:</strong>
-                    <ul style="margin-top:8px;padding-left:20px;">
-                        ${clinical.map(pearl => `<li style="margin-bottom:4px;">${pearl}</li>`).join('')}
+                <div class="anatomy-detail-section">
+                    <h4>Key Functions</h4>
+                    <ul>${functionList.map((item) => `<li>${sanitize(item)}</li>`).join('')}</ul>
+                </div>
+            `;
+        }
+
+        if (examList.length > 0) {
+            html += `
+                <div class="anatomy-detail-section">
+                    <h4>Clinical Examination</h4>
+                    <ul>${examList.map((item) => `<li>${sanitize(item)}</li>`).join('')}</ul>
+                </div>
+            `;
+        }
+
+        if (relationList.length > 0) {
+            html += `
+                <div class="anatomy-detail-section">
+                    <h4>Related Structures</h4>
+                    <div class="anatomy-related-chips">
+                        ${relationList.map((item) => `<span>${item}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        if (clinicalList.length > 0) {
+            html += `
+                <div class="anatomy-clinical-card">
+                    <strong>Clinical Pearls</strong>
+                    <ul>${clinicalList.map((item) => `<li>${sanitize(item)}</li>`).join('')}</ul>
+                </div>
+            `;
+        }
+
+        if (referenceList.length > 0) {
+            html += `
+                <div class="anatomy-detail-section">
+                    <h4>Further Reading</h4>
+                    <ul>
+                        ${referenceList.map((ref) => {
+                            const trimmed = ref.trim();
+                            if (/^https?:\/\//i.test(trimmed)) {
+                                const label = trimmed.replace(/^https?:\/\/(www\.)?/i, '');
+                                return `<li><a href="${escapeAttr(trimmed)}" target="_blank" rel="noopener noreferrer">${sanitize(label)}</a></li>`;
+                            }
+                            return `<li>${sanitize(trimmed)}</li>`;
+                        }).join('')}
                     </ul>
                 </div>
             `;
