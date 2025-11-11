@@ -1818,14 +1818,33 @@ class MLAQuizApp {
                 
                 <div class="info-section" style="margin-bottom: 20px; padding: 20px; background: var(--bg); border-radius: 8px; border-left: 3px solid #8b5cf6;">
                     <h4 style="margin: 0 0 15px 0; color: #8b5cf6; font-size: 1.1em;">🔍 Breakdown</h4>
-                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
                         ${(mnemonic.details || []).map(detail => {
                             if (!detail || detail.trim() === '') {
                                 return '';
                             }
-                            // Clean up the detail text
-                            const cleanDetail = detail.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-                            return `<div style="padding: 12px 16px; border-left: 3px solid #8b5cf6; background: var(--card-bg); border-radius: 6px; color: var(--text-primary); line-height: 1.5;">${cleanDetail}</div>`;
+
+                            const trimmedDetail = detail.trim();
+                            const dashIndex = trimmedDetail.indexOf(' - ');
+
+                            if (dashIndex > -1) {
+                                const leading = trimmedDetail.slice(0, dashIndex).trim();
+                                const trailing = trimmedDetail.slice(dashIndex + 3).trim();
+
+                                return `
+                                    <div style="display: grid; grid-template-columns: minmax(48px, 72px) 1fr; gap: 16px; align-items: start;">
+                                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 6px;">
+                                            <span style="font-size: 1.8em; font-weight: 700; color: var(--accent); line-height: 1;">${leading}</span>
+                                            <span style="font-size: 1.2em; font-weight: 600; color: var(--accent); line-height: 1;">—</span>
+                                        </div>
+                                        <div style="background: var(--card-bg); border-radius: 10px; padding: 14px 18px; line-height: 1.7; color: var(--text-primary); box-shadow: 0 2px 6px rgba(139, 92, 246, 0.15);">
+                                            ${trailing}
+                                        </div>
+                                    </div>
+                                `;
+                            }
+
+                            return `<div style="padding: 12px 16px; border-left: 3px solid #8b5cf6; background: var(--card-bg); border-radius: 6px; color: var(--text-primary); line-height: 1.6;">${trimmedDetail.replace(/\n/g, '<br>')}</div>`;
                         }).filter(item => item !== '').join('')}
                     </div>
                 </div>
