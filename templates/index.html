@@ -3559,6 +3559,141 @@
             margin-top: 4px;
             font-style: italic;
         }
+
+        /* Genetics Reference */
+        .genetics-intro {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(6, 182, 212, 0.12));
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            border-radius: 18px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .genetics-intro h4 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .genetics-intro p {
+            margin: 0;
+            color: var(--v2-text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .genetics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .genetics-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: var(--v2-shadow-sm);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .genetics-card h4 {
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--v2-text-primary);
+        }
+
+        .genetics-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .genetics-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(99, 102, 241, 0.12);
+            color: var(--v2-primary-dark);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+        }
+
+        .genetics-badge::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .genetics-section h5 {
+            margin: 0 0 6px 0;
+            font-size: 0.9rem;
+            color: var(--v2-text-secondary);
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        .genetics-section ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--v2-text-primary);
+            display: grid;
+            gap: 6px;
+        }
+
+        .genetics-pearls {
+            background: rgba(245, 158, 11, 0.12);
+            border-radius: 14px;
+            padding: 12px 14px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .genetics-pearls strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #b45309;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 640px) {
+            .genetics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        [data-theme="dark"] .genetics-intro {
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.16), rgba(45, 212, 191, 0.16));
+            border-color: rgba(129, 140, 248, 0.35);
+        }
+
+        [data-theme="dark"] .genetics-card {
+            background: var(--v2-bg-elevated);
+            border-color: var(--v2-border);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        [data-theme="dark"] .genetics-badge {
+            background: rgba(129, 140, 248, 0.18);
+            border-color: rgba(129, 140, 248, 0.35);
+            color: var(--v2-text-primary);
+        }
+
+        [data-theme="dark"] .genetics-pearls {
+            background: rgba(245, 158, 11, 0.22);
+            border-color: rgba(245, 158, 11, 0.45);
+        }
         
         .ddx-item.emergency {
             border-left: 4px solid #ff3b30;
@@ -8799,6 +8934,7 @@
             <button class="tool-nav-btn" data-tool="emergency-protocols">🚨 Emergency</button>
             <button class="tool-nav-btn" data-tool="interpretation">📋 Interpretation</button>
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
+            <button class="tool-nav-btn" data-tool="genetics">🧬 Genetics</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
             <button class="tool-nav-btn" data-tool="mnemonics">🧠 Mnemonics</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
@@ -9125,7 +9261,138 @@
                     <div class="loading-message">📊 Loading lab values...</div>
                 </div>
             </div>
-            
+
+            <!-- Genetics Reference Panel -->
+            <div id="genetics-panel" class="tool-panel">
+                <div class="genetics-intro">
+                    <h4>High-Yield Medical Genetics</h4>
+                    <p>Concise inheritance patterns, molecular defects, and hallmark features for commonly tested congenital and hematologic conditions.</p>
+                </div>
+                <div class="genetics-grid">
+                    <div class="genetics-card">
+                        <div>
+                            <h4>Sickle Cell Disease</h4>
+                            <div class="genetics-tags">
+                                <span class="genetics-badge">Autosomal recessive</span>
+                                <span class="genetics-badge">HBB missense (β-globin Glu6Val)</span>
+                            </div>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Classic presentation</h5>
+                            <ul>
+                                <li>Symptomatic after 6 months as HbF declines; dactylitis or severe hemolytic anemia in infancy.</li>
+                                <li>Recurrent vaso-occlusive pain crises triggered by infection, dehydration, or hypoxia.</li>
+                                <li>Functional asplenia → Howell-Jolly bodies, susceptibility to encapsulated organisms.</li>
+                                <li>Protective heterozygous trait against severe Plasmodium falciparum malaria.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Key complications</h5>
+                            <ul>
+                                <li>Acute chest syndrome, stroke, avascular necrosis, priapism.</li>
+                                <li>Salmonella osteomyelitis and overwhelming sepsis post-autosplenectomy.</li>
+                                <li>Splenic sequestration crises in young children; chronic kidney injury.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-pearls">
+                            <strong>Exam pearls</strong>
+                            Hydroxyurea boosts HbF and reduces crises; give penicillin prophylaxis in childhood and vaccinate broadly (pneumococcus, meningococcus, Hib).
+                        </div>
+                    </div>
+
+                    <div class="genetics-card">
+                        <div>
+                            <h4>Cystic Fibrosis</h4>
+                            <div class="genetics-tags">
+                                <span class="genetics-badge">Autosomal recessive</span>
+                                <span class="genetics-badge">CFTR ΔF508 (Class II)</span>
+                            </div>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Classic presentation</h5>
+                            <ul>
+                                <li>Neonate with meconium ileus or failure to thrive; salty-tasting skin.</li>
+                                <li>Chronic sinopulmonary infections (Staphylococcus aureus, later Pseudomonas) with productive cough and bronchiectasis.</li>
+                                <li>Pancreatic insufficiency → steatorrhea, fat-soluble vitamin deficiency, recurrent nasal polyps.</li>
+                                <li>Male infertility from congenital bilateral absence of the vas deferens.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Diagnostic highlights</h5>
+                            <ul>
+                                <li>Elevated sweat chloride (&gt;60 mmol/L) on pilocarpine iontophoresis confirms diagnosis.</li>
+                                <li>Newborn screen with immunoreactive trypsinogen; follow-up genetic sequencing or panel testing.</li>
+                                <li>Obstructive lung disease with hyperinflation on imaging; fat malabsorption labs (↓fecal elastase).</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-pearls">
+                            <strong>Exam pearls</strong>
+                            Airway clearance, aggressive infection control, and CFTR modulators (e.g., elexacaftor/tezacaftor/ivacaftor) improve survival; supplement pancreatic enzymes and ADEK vitamins.
+                        </div>
+                    </div>
+
+                    <div class="genetics-card">
+                        <div>
+                            <h4>Trisomy 21 (Down Syndrome)</h4>
+                            <div class="genetics-tags">
+                                <span class="genetics-badge">Meiotic nondisjunction (≈95%)</span>
+                                <span class="genetics-badge">Robertsonian translocation (~4%)</span>
+                            </div>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Classic features</h5>
+                            <ul>
+                                <li>Hypotonia, developmental delay, flat facial profile, upslanting palpebral fissures, epicanthal folds.</li>
+                                <li>Single palmar crease, sandal gap toes, Brushfield spots, excessive skin at the nape.</li>
+                                <li>Congenital heart disease (atrioventricular septal defect), duodenal atresia, Hirschsprung disease.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>High-yield associations</h5>
+                            <ul>
+                                <li>↑β-hCG, ↑inhibin A, ↓AFP, ↓estriol on second-trimester screening; ↑nuchal translucency.</li>
+                                <li>Early-onset Alzheimer-like dementia (extra APP), increased risk of AML/ALL, atlantoaxial instability.</li>
+                                <li>Thyroid dysfunction, obstructive sleep apnea, and chronic otitis media common in childhood.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-pearls">
+                            <strong>Exam pearls</strong>
+                            Offer parental karyotype if translocation suspected; counsel on prenatal screening and need for early cardiac and thyroid evaluation.
+                        </div>
+                    </div>
+
+                    <div class="genetics-card">
+                        <div>
+                            <h4>Trisomy 18 (Edwards Syndrome)</h4>
+                            <div class="genetics-tags">
+                                <span class="genetics-badge">Meiotic nondisjunction</span>
+                                <span class="genetics-badge">Mosaicism rare (&lt;5%)</span>
+                            </div>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Classic features</h5>
+                            <ul>
+                                <li>Severe growth restriction, micrognathia, low-set ears, prominent occiput.</li>
+                                <li>Clenched fists with overlapping index over third finger, rocker-bottom feet.</li>
+                                <li>Congenital heart defects (VSD/PDA), renal malformations, omphalocele or diaphragmatic hernia.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-section">
+                            <h5>Prenatal clues</h5>
+                            <ul>
+                                <li>Quad screen: markedly ↓AFP, ↓β-hCG, ↓estriol, ↓inhibin A.</li>
+                                <li>Ultrasound: choroid plexus cysts, clenched hands, single umbilical artery, polyhydramnios.</li>
+                                <li>High mortality—median survival &lt;1 year, often due to cardiac or respiratory failure.</li>
+                            </ul>
+                        </div>
+                        <div class="genetics-pearls">
+                            <strong>Exam pearls</strong>
+                            Supportive care discussions are essential; recurrence risk increases with advanced maternal age though far lower than trisomy 21.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Guidelines Panel -->
             <div id="guidelines-panel" class="tool-panel">
                 <!-- Content loaded dynamically by JavaScript -->
