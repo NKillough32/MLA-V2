@@ -1192,6 +1192,36 @@ class MLAQuizApp {
                         <h4 style="margin: 0 0 10px 0; color: #10b981; font-size: 1.1em;">💎 Clinical Pearls</h4>
                         <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.clinicalPearls}</p>
                     </div>` : ''}
+                    ${drug.renalDoseAdjustments ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #0ea5e9;">
+                        <h4 style="margin: 0 0 10px 0; color: #0ea5e9; font-size: 1.1em;">🚰 Renal Dose Adjustments</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.renalDoseAdjustments}</p>
+                    </div>` : ''}
+                    ${drug.hepaticDoseAdjustments ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #fb923c;">
+                        <h4 style="margin: 0 0 10px 0; color: #fb923c; font-size: 1.1em;">🧬 Hepatic Considerations</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.hepaticDoseAdjustments}</p>
+                    </div>` : ''}
+                    ${drug.therapeuticDrugMonitoring ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #14b8a6;">
+                        <h4 style="margin: 0 0 10px 0; color: #14b8a6; font-size: 1.1em;">🧪 Therapeutic Drug Monitoring</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.therapeuticDrugMonitoring}</p>
+                    </div>` : ''}
+                    ${drug.antimicrobialStewardship ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #6366f1;">
+                        <h4 style="margin: 0 0 10px 0; color: #6366f1; font-size: 1.1em;">🛡️ Stewardship Prompts</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.antimicrobialStewardship}</p>
+                    </div>` : ''}
+                    ${drug.treatmentDuration ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #f97316;">
+                        <h4 style="margin: 0 0 10px 0; color: #f97316; font-size: 1.1em;">⏳ Typical Course Length</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.treatmentDuration}</p>
+                    </div>` : ''}
+                    ${drug.ivToOralSwitch ? `
+                    <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid #34d399;">
+                        <h4 style="margin: 0 0 10px 0; color: #34d399; font-size: 1.1em;">🔄 IV-to-Oral Switch Criteria</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${drug.ivToOralSwitch}</p>
+                    </div>` : ''}
                     ${drug.coverage ? `
                     <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid var(--accent);">
                         <h4 style="margin: 0 0 10px 0; color: var(--accent); font-size: 1.1em;">🦠 Antimicrobial Coverage</h4>

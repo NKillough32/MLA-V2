@@ -214,6 +214,23 @@ window.ukVaccinationProgramme = {
                 'Eligible for RSV vaccine during time-limited programmes (September start).',
                 'COVID-19 and influenza boosters offered each autumn—consider spring booster for the most vulnerable.'
             ]
+        },
+        {
+            group: 'Adults with chronic liver or renal disease',
+            details: [
+                'Ensure hepatitis B primary course (consider accelerated 0,7,21 day schedule with 12-month booster) and check anti-HBs titres.',
+                'Offer hepatitis A vaccination for chronic liver disease and haemophilia patients; provide boosters according to Green Book intervals.',
+                'Annual influenza and 5-yearly PPV23 boosters in addition to PCV priming if not previously completed.'
+            ]
+        },
+        {
+            group: 'Functional or anatomical asplenia',
+            details: [
+                'Complete MenB two-dose course with booster at 1 year; give MenACWY with 5-yearly boosters lifelong.',
+                'Administer PCV followed by PPV23 with 5-yearly boosters; offer influenza and COVID-19 vaccines annually.',
+                'Educate on urgent antibiotic use for febrile illness and ensure household contacts are up to date with MMR and MenACWY.'
+            ],
+            notes: 'Coordinate with prophylactic antibiotic plans and provide emergency supply where recommended.'
         }
     ],
     riskGroups: [
@@ -229,9 +246,20 @@ window.ukVaccinationProgramme = {
             group: 'Immunocompromised (chemotherapy, high-dose steroids, HIV, post-transplant)',
             recommendations: [
                 'Avoid live vaccines when severely immunosuppressed—seek specialist input before MMR, LAIV, varicella, and zoster.',
-                'Offer inactivated influenza annually, consider additional COVID-19 and pneumococcal boosters.',
-                'Assess need for varicella or recombinant zoster vaccines once immune reconstitution achieved.'
+                'Offer inactivated influenza annually (consider high-dose/adjuvanted products) and schedule seasonal COVID-19 boosters plus any additional primary doses advised by JCVI.',
+                'Provide pneumococcal vaccination with PCV followed by PPV23 and repeat PPV every 5 years.',
+                'Assess need for varicella or recombinant zoster vaccines once immune reconstitution achieved and prophylactic hepatitis B if not immune.'
             ]
+        },
+        {
+            group: 'Solid organ or stem cell transplant recipients',
+            recommendations: [
+                'Ensure full pneumococcal protection (PCV13/15 followed by PPV23 with 5-yearly boosters).',
+                'Annual influenza using high-dose or adjuvanted vaccine as available; vaccinate close household contacts.',
+                'Schedule COVID-19 additional primary doses and seasonal boosters as per transplant centre guidance.',
+                'Avoid live vaccines post-transplant unless a specialist deems immune reconstitution adequate; check VZV/measles serostatus and vaccinate pre-transplant where possible.'
+            ],
+            notes: 'Coordinate timing with transplant team to avoid periods of maximal immunosuppression.'
         },
         {
             group: 'Chronic kidney or liver disease',
@@ -248,6 +276,15 @@ window.ukVaccinationProgramme = {
                 'MMR (two doses) and varicella immunity check prior to patient contact roles.',
                 'Annual influenza and COVID-19 boosters according to national staff programmes.'
             ]
+        },
+        {
+            group: 'Travel to endemic regions / occupational exposure',
+            recommendations: [
+                'Undertake destination-specific risk assessment for hepatitis A/B, typhoid, polio boosters, rabies, yellow fever, Japanese encephalitis, meningococcal ACWY.',
+                'Offer accelerated hepatitis B schedules for last-minute travellers at high occupational risk (e.g., humanitarian workers).',
+                'Advise malaria chemoprophylaxis, insect bite avoidance, and document vaccine certificates where required (e.g., yellow fever).'
+            ],
+            notes: 'Use NaTHNaC/TravelHealthPro resources and “Green Book” chapters for up-to-date travel recommendations.'
         }
     ],
     seasonalCampaigns: [
