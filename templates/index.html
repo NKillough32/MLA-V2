@@ -11318,11 +11318,20 @@
             setTimeout(() => {
                 if (window.ExtractedCalculators && (!window.quizApp || !window.quizApp.calculateBMI)) {
                     console.log('🔄 Setting up fallback calculator bridge...');
-                    window.quizApp = {
-                        ...window.MLAQuizApp,
-                        ...window.ExtractedCalculators
-                    };
-                    console.log('✅ Fallback calculator bridge established');
+
+                    const targetApp = window.MLAQuizApp || window.quizApp;
+
+                    if (targetApp) {
+                        // Preserve prototype methods (like showProtocolDetail) by mutating the
+                        // existing app instance instead of creating a plain object copy.
+                        Object.assign(targetApp, window.ExtractedCalculators);
+
+                        window.quizApp = targetApp;
+
+                        console.log('✅ Fallback calculator bridge established');
+                    } else {
+                        console.warn('⚠️ Fallback bridge could not find an app instance to extend');
+                    }
                 }
             }, 2000);
 
