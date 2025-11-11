@@ -856,6 +856,7 @@ class MLAQuizApp {
             'emergency-protocols': 'emergency-protocols-panel',
             'interpretation': 'interpretation-panel',
             'anatomy': 'anatomy-panel',
+            'developmental': 'developmental-panel',
             'ladders': 'ladders-panel',
             'mnemonics': 'mnemonics-panel',
             'quiz-practice': 'quiz-panel',
@@ -914,6 +915,9 @@ class MLAQuizApp {
                 break;
             case 'anatomy':
                 anatomyManager.initialize();
+                break;
+            case 'developmental':
+                this.initializeDevelopmentalPanel(panel);
                 break;
             case 'ladders':
                 this.loadLaddersContent(panel);
@@ -2879,7 +2883,7 @@ class MLAQuizApp {
     loadLaddersContent(panel) {
         // Load dynamic ladders content from LaddersManager
         console.log('🪜 Loading treatment ladders content...');
-        
+
         // Make sure laddersManager is available
         if (this.laddersManager && typeof this.laddersManager.loadLadders === 'function') {
             this.laddersManager.loadLadders();
@@ -2888,6 +2892,60 @@ class MLAQuizApp {
         } else {
             console.error('❌ LaddersManager not available');
         }
+    }
+
+    /**
+     * Initialise developmental milestone filters and helpers
+     */
+    initializeDevelopmentalPanel(panel) {
+        if (!panel) {
+            console.warn('initializeDevelopmentalPanel called without panel');
+            return;
+        }
+
+        if (panel.dataset.initialized === 'true') {
+            return;
+        }
+
+        const filterButtons = panel.querySelectorAll('.milestone-filter-btn');
+        const milestoneRows = panel.querySelectorAll('.milestone-row');
+        const summaryElement = panel.querySelector('.milestone-domain-summary');
+
+        const summaryText = {
+            'all': 'Showing milestones across all domains. Use the filters to spotlight a specific developmental stream.',
+            'gross-motor': 'Gross motor milestones track large muscle control. Watch for poor head control, late sitting or delayed walking as key red flags.',
+            'fine-motor': 'Fine motor milestones reflect hand dexterity and visual-motor coordination. Persistent fisted hands or difficulty with pincer grasp merit review.',
+            'speech-language': 'Speech & language milestones include receptive and expressive skills. Quiet babies, limited babbling or few words suggest hearing or communication concerns.',
+            'social': 'Social & emotional milestones focus on interaction, joint attention and pretend play. Lack of gestures, eye contact or play skills can indicate autism spectrum traits.'
+        };
+
+        const applyFilter = (domain) => {
+            const targetDomain = domain || 'all';
+
+            milestoneRows.forEach(row => {
+                const rowDomain = row.dataset.domain;
+                const shouldShow = targetDomain === 'all' || rowDomain === targetDomain;
+                row.style.display = shouldShow ? '' : 'none';
+            });
+
+            filterButtons.forEach(btn => {
+                const btnDomain = btn.dataset.domain || 'all';
+                btn.classList.toggle('active', btnDomain === targetDomain);
+            });
+
+            if (summaryElement) {
+                summaryElement.textContent = summaryText[targetDomain] || summaryText.all;
+            }
+        };
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                applyFilter(btn.dataset.domain || 'all');
+            });
+        });
+
+        applyFilter('all');
+        panel.dataset.initialized = 'true';
     }
 
     /**

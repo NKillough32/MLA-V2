@@ -7965,6 +7965,263 @@
                 }
             }
 
+            /* Developmental Milestones Panel */
+            .developmental-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                background: var(--v2-bg-card);
+                border-radius: 20px;
+                box-shadow: var(--v2-shadow-lg);
+            }
+
+            .developmental-header h2 {
+                margin: 0 0 8px 0;
+                font-size: 28px;
+                color: var(--v2-primary-dark);
+            }
+
+            .developmental-header p {
+                margin: 0;
+                font-size: 1rem;
+                color: var(--v2-text-secondary);
+                line-height: 1.6;
+            }
+
+            .milestone-highlights {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 16px;
+            }
+
+            .highlight-card {
+                padding: 18px;
+                border-radius: 16px;
+                background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
+                border: 1px solid rgba(99, 102, 241, 0.18);
+                box-shadow: var(--v2-shadow-sm);
+                backdrop-filter: blur(8px);
+            }
+
+            .highlight-card h3 {
+                margin: 0 0 6px 0;
+                font-size: 1.05rem;
+                color: var(--v2-primary-dark);
+            }
+
+            .highlight-card p {
+                margin: 0;
+                font-size: 0.95rem;
+                color: var(--v2-text-secondary);
+                line-height: 1.6;
+            }
+
+            .milestone-filter {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .milestone-filter-btn {
+                padding: 10px 18px;
+                border-radius: 999px;
+                border: 1px solid rgba(99, 102, 241, 0.25);
+                background: rgba(99, 102, 241, 0.08);
+                color: var(--v2-primary-dark);
+                font-size: 0.9rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all var(--v2-transition-base);
+            }
+
+            .milestone-filter-btn:hover {
+                transform: translateY(-1px);
+                box-shadow: var(--v2-shadow-sm);
+            }
+
+            .milestone-filter-btn.active {
+                background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-secondary) 100%);
+                color: #fff;
+                box-shadow: var(--v2-shadow-md);
+                border-color: transparent;
+            }
+
+            .milestone-domain-summary {
+                margin: 0;
+                padding: 14px 18px;
+                background: rgba(99, 102, 241, 0.08);
+                border: 1px solid rgba(99, 102, 241, 0.18);
+                border-radius: 14px;
+                color: var(--v2-text-secondary);
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .milestone-table-wrapper {
+                overflow-x: auto;
+                border-radius: 18px;
+                box-shadow: var(--v2-shadow-md);
+            }
+
+            .milestone-table {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 720px;
+                background: var(--v2-bg-card);
+            }
+
+            .milestone-table thead th {
+                text-align: left;
+                padding: 16px;
+                background: linear-gradient(135deg, rgba(99, 102, 241, 0.92) 0%, rgba(79, 70, 229, 0.92) 100%);
+                color: #ffffff;
+                font-size: 0.95rem;
+                letter-spacing: 0.02em;
+            }
+
+            .milestone-table tbody td {
+                padding: 16px;
+                border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+                color: var(--v2-text-primary);
+                font-size: 0.95rem;
+                vertical-align: top;
+            }
+
+            .milestone-table tbody tr:nth-child(even) {
+                background: rgba(99, 102, 241, 0.04);
+            }
+
+            .milestone-table tbody tr:hover {
+                background: rgba(6, 182, 212, 0.08);
+            }
+
+            .milestone-table td:first-child {
+                white-space: nowrap;
+                font-weight: 600;
+            }
+
+            .milestone-table td:nth-child(2) {
+                font-weight: 600;
+                color: var(--v2-primary-dark);
+            }
+
+            .milestone-notes {
+                background: rgba(6, 182, 212, 0.08);
+                border-left: 4px solid var(--v2-secondary);
+                padding: 18px 22px;
+                border-radius: 16px;
+                color: var(--v2-text-secondary);
+                line-height: 1.7;
+            }
+
+            .milestone-notes h3 {
+                margin-top: 0;
+                margin-bottom: 8px;
+                color: var(--v2-secondary-dark);
+            }
+
+            .milestone-notes ul {
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            .milestone-notes li {
+                margin-bottom: 6px;
+            }
+
+            @media (max-width: 1024px) {
+                .developmental-container {
+                    padding: 20px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .developmental-header h2 {
+                    font-size: 24px;
+                }
+
+                .highlight-card {
+                    padding: 16px;
+                }
+
+                .milestone-table {
+                    min-width: 600px;
+                }
+            }
+
+            @media (max-width: 540px) {
+                .developmental-container {
+                    padding: 16px;
+                    border-radius: 16px;
+                }
+
+                .milestone-filter-btn {
+                    flex: 1 1 calc(50% - 8px);
+                    text-align: center;
+                }
+
+                .milestone-domain-summary {
+                    font-size: 0.9rem;
+                }
+            }
+
+            [data-theme="dark"] .developmental-container {
+                background: var(--v2-bg-card);
+                box-shadow: var(--v2-shadow-md);
+            }
+
+            [data-theme="dark"] .highlight-card {
+                background: linear-gradient(135deg, rgba(99, 102, 241, 0.22) 0%, rgba(6, 182, 212, 0.2) 100%);
+                border-color: rgba(129, 140, 248, 0.3);
+                color: var(--v2-text-primary);
+            }
+
+            [data-theme="dark"] .highlight-card p {
+                color: var(--v2-text-secondary);
+            }
+
+            [data-theme="dark"] .milestone-filter-btn {
+                background: rgba(79, 70, 229, 0.18);
+                border-color: rgba(129, 140, 248, 0.3);
+                color: var(--v2-text-secondary);
+            }
+
+            [data-theme="dark"] .milestone-domain-summary {
+                background: rgba(30, 41, 59, 0.65);
+                border-color: rgba(129, 140, 248, 0.25);
+                color: var(--v2-text-secondary);
+            }
+
+            [data-theme="dark"] .milestone-table-wrapper {
+                box-shadow: var(--v2-shadow-sm);
+            }
+
+            [data-theme="dark"] .milestone-table {
+                background: rgba(15, 23, 42, 0.9);
+            }
+
+            [data-theme="dark"] .milestone-table tbody td {
+                border-color: rgba(148, 163, 184, 0.25);
+                color: var(--v2-text-primary);
+            }
+
+            [data-theme="dark"] .milestone-table tbody tr:nth-child(even) {
+                background: rgba(79, 70, 229, 0.18);
+            }
+
+            [data-theme="dark"] .milestone-table tbody tr:hover {
+                background: rgba(6, 182, 212, 0.2);
+            }
+
+            [data-theme="dark"] .milestone-notes {
+                background: rgba(6, 182, 212, 0.16);
+                border-left-color: rgba(6, 182, 212, 0.8);
+            }
+
             /* Steroid & Pain Ladders Styling */
             .ladders-container {
                 padding: 24px;
@@ -8941,6 +9198,7 @@
             <button class="tool-nav-btn" data-tool="triads">🔺 Clinical Triads</button>
             <button class="tool-nav-btn" data-tool="examination">🩺 Examination</button>
             <button class="tool-nav-btn" data-tool="anatomy">🦴 Muscles & Bones</button>
+            <button class="tool-nav-btn" data-tool="developmental">🧒 Development</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Steroid & Pain Ladders</button>
             <button class="tool-nav-btn" data-tool="case-studies" style="display: none;">📋 Case Studies</button>
             <button class="tool-nav-btn" data-tool="learning-pathways" style="display: none;">🎯 Learning Paths</button>
@@ -9811,6 +10069,180 @@
                             <span class="btn-icon">🎯</span>
                             <span class="btn-text">Start Quiz Mode</span>
                         </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developmental Milestones Panel -->
+            <div id="developmental-panel" class="tool-panel">
+                <div class="developmental-container">
+                    <div class="developmental-header">
+                        <h2>🧒 Developmental Milestones</h2>
+                        <p>Track expected milestones across gross motor, fine motor, speech &amp; language, and social-emotional domains. Use the filters to focus on a specific stream and note common presentations when skills are delayed.</p>
+                    </div>
+
+                    <div class="milestone-highlights">
+                        <div class="highlight-card">
+                            <h3>Look for progression</h3>
+                            <p>Loss of previously gained skills or regression across any domain warrants urgent neurodevelopmental assessment.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Consider variation</h3>
+                            <p>Prematurity, chronic illness, and psychosocial adversity may shift timelines—correct for gestational age until 2 years.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <h3>Escalate concerns</h3>
+                            <p>Combine parental worries with red flags below; early referral improves outcomes for speech, motor, and social delays.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-filter">
+                        <button class="milestone-filter-btn active" data-domain="all">All Domains</button>
+                        <button class="milestone-filter-btn" data-domain="gross-motor">Gross Motor</button>
+                        <button class="milestone-filter-btn" data-domain="fine-motor">Fine Motor</button>
+                        <button class="milestone-filter-btn" data-domain="speech-language">Speech &amp; Language</button>
+                        <button class="milestone-filter-btn" data-domain="social">Social &amp; Emotional</button>
+                    </div>
+
+                    <p class="milestone-domain-summary"></p>
+
+                    <div class="milestone-table-wrapper">
+                        <table class="milestone-table">
+                            <thead>
+                                <tr>
+                                    <th>Age</th>
+                                    <th>Domain</th>
+                                    <th>Expected Milestone</th>
+                                    <th>Common Presentation When Delayed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="milestone-row" data-domain="social">
+                                    <td>6 weeks</td>
+                                    <td>Social</td>
+                                    <td>Smiles responsively and fixes gaze on faces.</td>
+                                    <td>No social smile by 8 weeks, poor eye contact, limited engagement with caregivers.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>3 months</td>
+                                    <td>Gross Motor</td>
+                                    <td>Holds head steady in supported sitting and prone lift.</td>
+                                    <td>Persistent head lag after 4 months, marked hypotonia or "floppy" posture.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="fine-motor">
+                                    <td>4–5 months</td>
+                                    <td>Fine Motor</td>
+                                    <td>Reaches out, grasps toys, and brings hands to midline.</td>
+                                    <td>No purposeful reaching by 5 months, asymmetric hand use, clenched fists.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="speech-language">
+                                    <td>6 months</td>
+                                    <td>Speech &amp; Language</td>
+                                    <td>Turns to sound, babbles consonant sounds (ba/da).</td>
+                                    <td>Silent baby with no babbling by 7 months, limited response to familiar voices.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>8–9 months</td>
+                                    <td>Gross Motor</td>
+                                    <td>Sits without support, rolls both ways.</td>
+                                    <td>Unable to sit by 9 months, persistent rounded back posture, only rolls one direction.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="social">
+                                    <td>9 months</td>
+                                    <td>Social</td>
+                                    <td>Displays stranger anxiety, waves bye-bye, enjoys peekaboo.</td>
+                                    <td>Indifferent to caregivers, no gestures or reciprocal play, lacks shared enjoyment.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="fine-motor">
+                                    <td>10–12 months</td>
+                                    <td>Fine Motor</td>
+                                    <td>Develops neat pincer grip, transfers objects hand to hand.</td>
+                                    <td>No pincer grasp by 12 months, persistent raking grasp, drops objects frequently.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="speech-language">
+                                    <td>12 months</td>
+                                    <td>Speech &amp; Language</td>
+                                    <td>Says 1–2 meaningful words, responds to name, follows simple command.</td>
+                                    <td>No single words by 15 months, poor response to name, relies on shrieks or grunts.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>12–15 months</td>
+                                    <td>Gross Motor</td>
+                                    <td>Pulls to stand, cruises along furniture, stoops and recovers.</td>
+                                    <td>Not weight bearing through legs, cannot pull to stand by 12 months, toe standing with tight heel cords.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>18 months</td>
+                                    <td>Gross Motor</td>
+                                    <td>Walks independently, carries toys while walking.</td>
+                                    <td>Not walking by 18 months, persistent bottom shuffling or toe-walking only.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="speech-language">
+                                    <td>18 months</td>
+                                    <td>Speech &amp; Language</td>
+                                    <td>Vocabulary of 10–20 words, points to wants, follows one-step commands.</td>
+                                    <td>Fewer than six words, absence of pointing or gesturing, frustrated tantrums from communication difficulty.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="fine-motor">
+                                    <td>2 years</td>
+                                    <td>Fine Motor</td>
+                                    <td>Builds tower of six cubes, scribbles circular strokes.</td>
+                                    <td>Cannot stack three blocks, persistent fisted grip, avoids drawing activities.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="social">
+                                    <td>2 years</td>
+                                    <td>Social</td>
+                                    <td>Engages in parallel play, initiates simple pretend play.</td>
+                                    <td>Lacks pretend play, limited joint attention, repetitive solitary behaviours.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>3 years</td>
+                                    <td>Gross Motor</td>
+                                    <td>Pedals tricycle, jumps forward, climbs stairs alternating feet.</td>
+                                    <td>Frequent falls, needs support on stairs, refuses to jump or pedal.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="speech-language">
+                                    <td>3 years</td>
+                                    <td>Speech &amp; Language</td>
+                                    <td>Uses 3-word sentences, 75% intelligible to strangers.</td>
+                                    <td>Speech largely unintelligible, echolalia only, difficulty expressing needs.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="fine-motor">
+                                    <td>4 years</td>
+                                    <td>Fine Motor</td>
+                                    <td>Draws cross or person with 2–3 parts, cuts with scissors.</td>
+                                    <td>Cannot draw circle, poor utensil use, avoids craft play due to grip difficulty.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="social">
+                                    <td>4 years</td>
+                                    <td>Social</td>
+                                    <td>Cooperative play, shares and takes turns, enjoys role play.</td>
+                                    <td>Rigid solitary play, intense difficulty sharing, aggressive outbursts in group settings.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="gross-motor">
+                                    <td>5 years</td>
+                                    <td>Gross Motor</td>
+                                    <td>Balances on one foot &gt;5 seconds, hops and skips with rhythm.</td>
+                                    <td>Cannot hop or balance briefly, clumsy running, struggles with PE warm-ups.</td>
+                                </tr>
+                                <tr class="milestone-row" data-domain="speech-language">
+                                    <td>5 years</td>
+                                    <td>Speech &amp; Language</td>
+                                    <td>Tells simple stories, knows colours and numbers to 10.</td>
+                                    <td>Cannot narrate events, limited vocabulary, misunderstands multi-step instructions.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="milestone-notes">
+                        <h3>Red flag triggers for urgent review</h3>
+                        <ul>
+                            <li>No smiling at 8 weeks, no babbling at 7 months, or no single words at 15 months.</li>
+                            <li>Not sitting independently by 9 months or not walking by 18 months.</li>
+                            <li>Hand preference before 12 months, loss of any previously acquired skill, or persistent toe walking.</li>
+                            <li>Lack of eye contact, absence of pointing/gestures, or no pretend play by 2 years.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
