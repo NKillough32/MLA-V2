@@ -247,6 +247,11 @@ export class DifferentialDxManager {
                                                 <strong>Clinical Pearls:</strong> ${details.clinicalPearls}
                                             </div>
                                         ` : ''}
+                                        ${details.howToPerform ? `
+                                            <div class="detail-row">
+                                                <strong>How to Perform:</strong> ${details.howToPerform}
+                                            </div>
+                                        ` : ''}
                                         ${details.differentiatingFeatures ? `
                                             <div class="detail-row">
                                                 <strong>Differentiating Features:</strong> ${details.differentiatingFeatures}

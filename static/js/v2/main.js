@@ -2190,6 +2190,11 @@ class MLAQuizApp {
                         <h4 style="color: #ffa726;">💎 Clinical Pearls</h4>
                         <p>${diagnosis.clinicalPearls}</p>
                     </div>` : ''}
+                    ${diagnosis.howToPerform ? `
+                    <div class="info-section info-section-howto" style="border-left: 4px solid #38bdf8; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                        <h4 style="color: #38bdf8;">🛠️ How to Perform</h4>
+                        <p>${diagnosis.howToPerform}</p>
+                    </div>` : ''}
                 </div>
             </div>
         `;
