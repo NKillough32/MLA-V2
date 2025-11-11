@@ -1832,9 +1832,10 @@ class MLAQuizApp {
                                 const trailing = trimmedDetail.slice(dashIndex + 3).trim();
 
                                 return `
-                                    <div style="display: grid; grid-template-columns: minmax(70px, max-content) 1fr; gap: 16px; align-items: start;">
-                                        <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-                                            <span style="font-size: 1.6em; font-weight: 700; color: var(--accent); line-height: 1.2; word-break: break-word; overflow-wrap: anywhere;">${leading}</span>
+                                    <div style="display: grid; grid-template-columns: minmax(48px, 72px) 1fr; gap: 16px; align-items: start;">
+                                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 6px;">
+                                            <span style="font-size: 1.8em; font-weight: 700; color: var(--accent); line-height: 1;">${leading}</span>
+                                            <span style="font-size: 1.2em; font-weight: 600; color: var(--accent); line-height: 1;">—</span>
                                         </div>
                                         <div style="background: var(--card-bg); border-radius: 10px; padding: 14px 18px; line-height: 1.7; color: var(--text-primary); box-shadow: 0 2px 6px rgba(139, 92, 246, 0.15);">
                                             ${trailing}
