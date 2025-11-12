@@ -7374,6 +7374,54 @@
         [data-theme="dark"] .tag.primary-care { background: #334a26; color: #dcedc8; }
         [data-theme="dark"] .tag.chronic { background: #4a264a; color: #f8bbd9; }
     </style>
+    <style>
+        /* ========================================
+           Blue-theme overrides for protocol & interpretation cards
+           These override the emergency (red) accents and switch them to the
+           site's primary blue. Kept minimal and placed after the main
+           stylesheet so they take precedence.
+           ======================================== */
+
+        /* Protocol emergency -> blue variant */
+        .protocol-item.emergency {
+            border-left: 6px solid var(--v2-primary);
+            padding-left: 16px;
+            background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, rgba(37,99,235,0.06) 100%);
+            color: var(--v2-text-primary);
+        }
+
+        .protocol-item.emergency:hover,
+        .protocol-item.emergency:focus-visible {
+            background: linear-gradient(135deg, rgba(99,102,241,0.16) 0%, rgba(37,99,235,0.08) 100%);
+            border-color: rgba(99,102,241,0.5);
+            box-shadow: 0 6px 16px rgba(99,102,241,0.12);
+            transform: translateY(-2px);
+        }
+
+        .protocol-urgency.emergency {
+            background: rgba(99,102,241,0.12);
+            color: var(--v2-primary-dark);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-weight: 700;
+        }
+
+        /* Interpretation items: opt-in blue variant via "blue" class */
+        .interpretation-item.blue {
+            border-left: 6px solid var(--v2-primary);
+            padding-left: 16px;
+            background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(37,99,235,0.04) 100%);
+        }
+
+        /* Dark mode adjustments for the blue variants */
+        [data-theme="dark"] .protocol-item.emergency,
+        [data-theme="dark"] .interpretation-item.blue {
+            border-left-color: var(--v2-primary-light);
+            background: linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(37,99,235,0.04) 100%);
+            box-shadow: 0 4px 12px rgba(99,102,241,0.08);
+        }
+
+    </style>
         <style>
             /* Anatomy layout and dark-mode-aware styling */
             :root {
