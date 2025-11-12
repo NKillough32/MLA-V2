@@ -259,6 +259,326 @@ export const geneticsDatabase = {
         ],
         pearls: 'No disease-modifying therapy; manage symptoms (VMAT2 inhibitors for chorea) and provide genetic counseling with presymptomatic testing options for at-risk relatives.'
     }
+    ,
+    'brca1-2': {
+        title: 'BRCA1/2 Hereditary Breast & Ovarian Cancer',
+        tags: ['Autosomal dominant', 'BRCA1/2 tumor suppressors'],
+        sections: [
+            {
+                heading: 'Key features',
+                items: [
+                    'Early-onset breast cancer (often <50 years), bilateral disease and male breast cancer.',
+                    'High lifetime ovarian cancer risk; also increased pancreatic and prostate cancer risks.'
+                ]
+            },
+            {
+                heading: 'Clinical actions',
+                items: [
+                    'Offer enhanced surveillance (earlier MRI/mammography), risk-reducing salpingo-oophorectomy, and consideration of bilateral mastectomy.',
+                    'PARP inhibitors effective in BRCA-mutant cancers; cascade testing of relatives is high-yield.'
+                ]
+            }
+        ],
+        pearls: 'Strongly consider referral for genetic counselling and cascade testing; preventive surgery reduces cancer-specific mortality.'
+    },
+    'lynch-syndrome': {
+        title: 'Lynch Syndrome (HNPCC)',
+        tags: ['Autosomal dominant', 'MMR genes: MLH1, MSH2, MSH6, PMS2, EPCAM'],
+        sections: [
+            {
+                heading: 'Clinical features',
+                items: [
+                    'Early colorectal cancer (median age ~44), endometrial and other GI/urogenital malignancies.',
+                    'Family history meeting Amsterdam/Bethesda criteria raises suspicion.'
+                ]
+            },
+            {
+                heading: 'Diagnostics & management',
+                items: [
+                    'Tumor testing for microsatellite instability (MSI) or MMR immunohistochemistry; confirm with germline testing.',
+                    'High-intensity surveillance: colonoscopy every 1–2 years starting younger; consider prophylactic hysterectomy after childbearing.'
+                ]
+            }
+        ],
+        pearls: 'Recognize families with multiple early cancers—referral for germline testing changes surveillance and management.'
+    },
+    'familial-hypercholesterolemia': {
+        title: 'Familial Hypercholesterolemia (FH)',
+        tags: ['Autosomal dominant', 'LDLR / PCSK9 / APOB'],
+        sections: [
+            {
+                heading: 'Presentation',
+                items: [
+                    'Very high LDL cholesterol from birth, tendon xanthomas, premature atherosclerotic cardiovascular disease.',
+                    'Heterozygotes present in adulthood; homozygotes present in childhood with severe ASCVD.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Aggressive lipid-lowering: high-intensity statin ± ezetimibe; PCSK9 inhibitors for refractory LDL.',
+                    'Cascade screening of first-degree relatives is essential.'
+                ]
+            }
+        ],
+        pearls: 'Think FH in young patients with premature ASCVD or very high LDL (>190 mg/dL adult threshold) — early treatment changes outcomes.'
+    },
+    'hemochromatosis': {
+        title: 'Hereditary Hemochromatosis (HFE)',
+        tags: ['Autosomal recessive', 'HFE C282Y'],
+        sections: [
+            {
+                heading: 'Clinical clues',
+                items: [
+                    'Fatigue, bronze skin pigmentation, diabetes, arthropathy, cirrhosis and cardiomyopathy in later stages.',
+                    'Often incidental high ferritin or transferrin saturation.'
+                ]
+            },
+            {
+                heading: 'Diagnosis & treatment',
+                items: [
+                    'Screen with transferrin saturation & ferritin; confirm with HFE genotyping and consider liver assessment.',
+                    'Mainstay treatment is regular phlebotomy; chelation for non-phlebotomy candidates.'
+                ]
+            }
+        ],
+        pearls: 'Detect early via iron studies—phlebotomy before end-organ damage prevents disease progression.'
+    },
+    'thalassemias': {
+        title: 'Thalassemias (α and β)',
+        tags: ['Autosomal recessive / gene deletions'],
+        sections: [
+            {
+                heading: 'Key points',
+                items: [
+                    'Microcytic anemia not corrected by iron suggests thalassemia trait or disease; family ancestry important (Mediterranean, SEA, Middle East).',
+                    'β-thalassemia major causes transfusion-dependent anemia; α-thalassemia extremes cause hydrops fetalis or Hb H disease.'
+                ]
+            },
+            {
+                heading: 'Investigations & management',
+                items: [
+                    'Hemoglobin electrophoresis and molecular testing differentiate types; manage severe disease with transfusion, iron chelation, and curative stem-cell transplant in selected cases.'
+                ]
+            }
+        ],
+        pearls: 'Use red-cell indices and electrophoresis to differentiate from iron deficiency; avoid unnecessary iron if not deficient.'
+    },
+    'g6pd-deficiency': {
+        title: 'G6PD Deficiency',
+        tags: ['X-linked recessive', 'Enzyme deficiency'],
+        sections: [
+            {
+                heading: 'Classic features',
+                items: [
+                    'Episodic hemolysis triggered by oxidant drugs (primaquine, dapsone, nitrofurantoin), fava beans, or infection.',
+                    'Bite cells and Heinz bodies on blood smear during hemolysis.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Avoid triggers; supportive care and transfusion for severe hemolysis.'
+                ]
+            }
+        ],
+        pearls: 'Screening often considered in at-risk populations before prescribing known oxidant drugs.'
+    },
+    'hemophilia-a-b': {
+        title: 'Hemophilia A & B',
+        tags: ['X-linked recessive', 'Factor VIII (A) / Factor IX (B)'],
+        sections: [
+            {
+                heading: 'Presentation',
+                items: [
+                    'Deep tissue bleeding and hemarthroses in males; prolonged aPTT with normal PT.',
+                    'Severity correlates with factor level; severe disease causes spontaneous bleeds.'
+                ]
+            },
+            {
+                heading: 'Treatment',
+                items: [
+                    'Replacement therapy with factor concentrates; prophylaxis reduces joint disease; desmopressin useful in mild Hemophilia A.'
+                ]
+            }
+        ],
+        pearls: 'Consider inhibitor formation (antibodies) in patients with poor response to replacement—specialist management required.'
+    },
+    'von-willebrand-disease': {
+        title: 'von Willebrand Disease (vWD)',
+        tags: ['Common', 'vWF quantitative/qualitative defects'],
+        sections: [
+            {
+                heading: 'Clinical features',
+                items: [
+                    'Mucocutaneous bleeding: epistaxis, menorrhagia, easy bruising.',
+                    'Laboratory: prolonged bleeding time, variable aPTT, low vWF antigen or activity.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Desmopressin (DDAVP) for many type 1 patients; vWF-containing concentrates for severe disease or when DDAVP ineffective.'
+                ]
+            }
+        ],
+        pearls: 'Most common inherited bleeding disorder — consider in women with heavy menstrual bleeding.'
+    },
+    'wilson-disease': {
+        title: 'Wilson Disease',
+        tags: ['Autosomal recessive', 'ATP7B'],
+        sections: [
+            {
+                heading: 'Presentation',
+                items: [
+                    'Hepatic dysfunction, neuropsychiatric symptoms, and movement disorders; Kayser–Fleischer rings on slit-lamp exam.',
+                    'Young patients with unexplained liver disease or movement disorder should prompt testing.'
+                ]
+            },
+            {
+                heading: 'Diagnosis & treatment',
+                items: [
+                    'Low serum ceruloplasmin, elevated 24-hour urinary copper, and genetic testing confirm diagnosis.',
+                    'Chelation with penicillamine or trientine and zinc therapy; early treatment prevents progression.'
+                ]
+            }
+        ],
+        pearls: 'Consider Kayser–Fleischer ring and check copper studies in young patients with liver or neuro symptoms.'
+    },
+    'spinal-muscular-atrophy': {
+        title: 'Spinal Muscular Atrophy (SMN1)',
+        tags: ['Autosomal recessive', 'SMN1 deletion'],
+        sections: [
+            {
+                heading: 'Presentation',
+                items: [
+                    'Floppy infant with progressive weakness; spectrum from severe infantile (type 1) to milder later-onset forms.',
+                    'Hypotonia, poor feeding, respiratory failure in severe cases.'
+                ]
+            },
+            {
+                heading: 'Therapies',
+                items: [
+                    'Disease-modifying therapies available (nusinersen, risdiplam, onasemnogene gene therapy) — early diagnosis changes outcomes.'
+                ]
+            }
+        ],
+        pearls: 'Newborn screening and early treatment are practice-changing; refer to neuromuscular/genetics specialists.'
+    },
+    'tay-sachs-disease': {
+        title: 'Tay–Sachs Disease',
+        tags: ['Autosomal recessive', 'HEX A deficiency'],
+        sections: [
+            {
+                heading: 'Classic features',
+                items: [
+                    'Progressive neurodegeneration in infancy, loss of motor milestones, exaggerated startle, cherry-red macula.',
+                    'Common founder risk in Ashkenazi Jewish population; carrier screening reduces incidence.'
+                ]
+            }
+        ],
+        pearls: 'No cure; focus on supportive care and carrier screening in high-risk populations.'
+    },
+    'klinefelter-syndrome': {
+        title: 'Klinefelter Syndrome (47,XXY)',
+        tags: ['Chromosomal aneuploidy'],
+        sections: [
+            {
+                heading: 'Features',
+                items: [
+                    'Tall, eunuchoid habitus, small firm testes, infertility, learning difficulties and psychosocial issues.',
+                    'Often undiagnosed until fertility evaluation.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Testosterone replacement improves secondary sexual development, bone health and mood; fertility options include assisted reproduction.'
+                ]
+            }
+        ],
+        pearls: 'Consider in males with small testes, infertility, or learning problems—karyotype confirms diagnosis.'
+    },
+    'prader-willi-syndrome': {
+        title: 'Prader–Willi Syndrome',
+        tags: ['Imprinting disorder', 'Loss of paternal 15q11-13 expression'],
+        sections: [
+            {
+                heading: 'Course',
+                items: [
+                    'Neonatal hypotonia and poor feeding, later hyperphagia, obesity, short stature, hypogonadism and developmental delay.',
+                    'Behavioral problems and risk of severe obesity-related complications.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Multidisciplinary care: strict diet, growth hormone for short stature, endocrine and behavioral support.'
+                ]
+            }
+        ],
+        pearls: 'Recognize the transition from hypotonia/feeding difficulty to hyperphagia in childhood — early nutrition/behavior interventions are critical.'
+    },
+    'angelman-syndrome': {
+        title: 'Angelman Syndrome',
+        tags: ['Imprinting disorder', 'Loss of maternal 15q11-13 expression'],
+        sections: [
+            {
+                heading: 'Key features',
+                items: [
+                    'Severe intellectual disability, ataxia, frequent laughter/smiling ("happy" appearance), seizures and microcephaly.',
+                    'Distinctive EEG patterns and developmental regression common.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Supportive therapies, seizure control, and genetic counseling; early intervention improves function.'
+                ]
+            }
+        ],
+        pearls: 'Differentiate from Prader–Willi by the opposite imprinting pattern and markedly different phenotype.'
+    },
+    'alpha-1-antitrypsin-deficiency': {
+        title: 'Alpha-1 Antitrypsin Deficiency',
+        tags: ['Codominant', 'SERPINA1'],
+        sections: [
+            {
+                heading: 'Presentation',
+                items: [
+                    'Early panacinar emphysema (basilar-predominant) and variable liver disease (cirrhosis), often in younger patients or never-smokers.',
+                    'Family history and low serum A1AT level are diagnostic clues.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Smoking cessation, bronchodilators, and augmentation therapy with pooled A1AT for selected patients; consider liver transplant for end-stage disease.'
+                ]
+            }
+        ],
+        pearls: 'Test alpha-1 levels in younger patients with emphysema or unexplained liver disease.'
+    },
+    'long-qt-syndrome': {
+        title: 'Congenital Long QT Syndromes',
+        tags: ['Channelopathies', 'KCNQ1, KCNH2, SCN5A'],
+        sections: [
+            {
+                heading: 'Clinical relevance',
+                items: [
+                    'Syncope, seizure-like episodes, or sudden cardiac death precipitated by exercise, startle, or drugs.',
+                    'ECG shows prolonged QT interval; family history of sudden death is a red flag.'
+                ]
+            },
+            {
+                heading: 'Management',
+                items: [
+                    'Beta-blockers (non-selective) are first-line; avoid QT-prolonging medications; consider ICD for high-risk patients.'
+                ]
+            }
+        ],
+        pearls: 'Always check family history and medication lists in unexplained syncope — identification prevents catastrophic arrhythmia.'
+    }
 };
 
 export function getAllGenetics() {
