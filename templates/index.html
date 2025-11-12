@@ -2382,10 +2382,10 @@
             gap: 4px;
         }
         
-        /* Tool Results */
+        /* Tool Results: allow the container to grow with page content instead of restricting height */
         .tool-results {
-            max-height: calc(100vh - 250px);
-            overflow-y: auto;
+            max-height: none;
+            overflow-y: visible;
         }
         
         .drug-item,
