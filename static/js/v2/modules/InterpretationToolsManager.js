@@ -944,13 +944,13 @@ class InterpretationToolsManager {
             <div class="guideline-detail">
                 <button class="back-btn" onclick="window.interpretationToolsManager.loadInterpretationTools(); event.stopPropagation();">← Back to Interpretation Tools</button>
                 <h3>📊 ${tool.name}</h3>
-                
+
                 <div class="info-section">
-                    <div class="interpretation-type-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 10px 20px; border-radius: 20px; display: inline-block; margin-bottom: 20px;">
-                        ${tool.type} approach
-                    </div>
+                    <h4 class="interpretation-type-title">
+                        ${this.formatApproachLabel(tool.type)} approach
+                    </h4>
                 </div>
-                
+
                 <div class="info-section">
                     <h4>📋 Systematic Steps</h4>
                     <ol class="interpretation-steps">
@@ -963,6 +963,19 @@ class InterpretationToolsManager {
         `;
         
         container.innerHTML = html;
+    }
+
+    /**
+     * Format interpretation approach label for display
+     * @param {string} type - Interpretation type string
+     * @returns {string} Capitalised interpretation type
+     */
+    formatApproachLabel(type = '') {
+        if (!type) {
+            return '';
+        }
+
+        return type.charAt(0).toUpperCase() + type.slice(1);
     }
 
     /**

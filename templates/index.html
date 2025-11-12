@@ -1078,13 +1078,13 @@
             flex: 1;
             min-width: fit-content;
             padding: 12px 16px;
-            background: none;
+            background: transparent;
             border: none;
             font-size: 13px;
             font-weight: 600;
-            color: #8e8e93;
+            color: var(--v2-text-secondary);
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all var(--v2-transition-base);
             border-bottom: 3px solid transparent;
             white-space: nowrap;
             text-align: center;
@@ -1093,16 +1093,40 @@
             justify-content: center;
             gap: 4px;
         }
-        
+
         .tool-nav-btn:hover {
-            color: #007AFF;
-            background: rgba(0, 122, 255, 0.1);
+            color: var(--v2-primary);
+            background: rgba(99, 102, 241, 0.08);
         }
-        
+
         .tool-nav-btn.active {
-            color: #007AFF;
-            border-bottom-color: #007AFF;
-            background: rgba(0, 122, 255, 0.1);
+            color: var(--v2-primary-dark);
+            border-bottom-color: var(--v2-primary);
+            background: rgba(99, 102, 241, 0.12);
+            box-shadow: inset 0 -2px 6px rgba(79, 70, 229, 0.15);
+        }
+
+        .tool-nav-btn[data-tool="emergency-protocols"],
+        .tool-nav-btn[data-tool="interpretation"] {
+            color: white;
+            background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-secondary) 100%);
+            border-radius: 12px 12px 0 0;
+            box-shadow: var(--v2-shadow-sm);
+            border-bottom: 3px solid transparent;
+            margin: 4px 6px 0 6px;
+        }
+
+        .tool-nav-btn[data-tool="emergency-protocols"]:hover,
+        .tool-nav-btn[data-tool="interpretation"]:hover {
+            background: linear-gradient(135deg, var(--v2-primary-dark) 0%, var(--v2-secondary-dark) 100%);
+            box-shadow: var(--v2-shadow-md);
+            transform: translateY(var(--v2-hover-lift));
+        }
+
+        .tool-nav-btn[data-tool="emergency-protocols"].active,
+        .tool-nav-btn[data-tool="interpretation"].active {
+            border-bottom-color: rgba(255, 255, 255, 0.7);
+            box-shadow: var(--v2-shadow-md);
         }
 
         /* Drug search input and voice button */
@@ -1147,13 +1171,31 @@
         }
         
         [data-theme="dark"] .tool-nav-btn {
-            color: var(--text-secondary);
+            color: var(--v2-text-secondary);
         }
-        
-        [data-theme="dark"] .tool-nav-btn:hover,
+
+        [data-theme="dark"] .tool-nav-btn:hover {
+            color: var(--v2-primary-light);
+            background: rgba(129, 140, 248, 0.18);
+        }
+
         [data-theme="dark"] .tool-nav-btn.active {
-            color: var(--button-bg);
-            background: rgba(10, 132, 255, 0.1);
+            color: var(--v2-primary-light);
+            border-bottom-color: var(--v2-primary-light);
+            background: rgba(99, 102, 241, 0.3);
+            box-shadow: inset 0 -2px 6px rgba(79, 70, 229, 0.35);
+        }
+
+        [data-theme="dark"] .tool-nav-btn[data-tool="emergency-protocols"],
+        [data-theme="dark"] .tool-nav-btn[data-tool="interpretation"] {
+            color: white;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.95) 0%, rgba(14, 165, 233, 0.95) 100%);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        [data-theme="dark"] .tool-nav-btn[data-tool="emergency-protocols"].active,
+        [data-theme="dark"] .tool-nav-btn[data-tool="interpretation"].active {
+            border-bottom-color: rgba(255, 255, 255, 0.75);
         }
         
         /* Tools Content */
@@ -3046,7 +3088,27 @@
             font-size: 10px;
             font-weight: 500;
         }
-        
+
+        .interpretation-type-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--v2-primary-dark);
+            margin: 0 0 12px 0;
+            text-transform: capitalize;
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .interpretation-type-title::before {
+            content: '';
+            width: 32px;
+            height: 4px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-secondary) 100%);
+        }
+
         .interpretation-preview {
             margin-top: 8px;
         }
@@ -3119,6 +3181,14 @@
         [data-theme="dark"] .normal-values h4, [data-theme="dark"] .common-abnormalities h4,
         [data-theme="dark"] .common-pathology h4, [data-theme="dark"] .compensation-rules h4, [data-theme="dark"] .emergency-findings h4 {
             color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .interpretation-type-title {
+            color: var(--v2-primary-light);
+        }
+
+        [data-theme="dark"] .interpretation-type-title::before {
+            background: linear-gradient(135deg, rgba(129, 140, 248, 0.95) 0%, rgba(45, 212, 191, 0.95) 100%);
         }
         
         [data-theme="dark"] .protocol-meta, [data-theme="dark"] .interpretation-meta,
