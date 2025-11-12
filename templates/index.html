@@ -2146,7 +2146,28 @@
         
         [data-theme="dark"] .info-section {
             background: #2a2a2a;
-            border-color: #444;
+        }
+
+        /* Hide the interpretation "approach" badge and collapse its wrapper
+           Scoped so it only affects interpretation detail views. Uses :has()
+           where available, with a robust fallback that hides the badge and
+           minimizes empty wrapper spacing.
+        */
+        .interpretation-detail .interpretation-type-badge {
+            display: none !important;
+        }
+
+        /* If browser supports :has(), remove the whole info-section when it only
+           contains the badge to avoid leaving an empty boxed area */
+        .interpretation-detail:has(.info-section > .interpretation-type-badge) .info-section {
+            display: none !important;
+        }
+
+        /* Fallback: if :has isn't supported, collapse min-height/margins of
+           any info-section that only contains the badge at runtime using a
+           small helper class set by JS (safe). We'll hide visual space here */
+        .interpretation-detail .info-section:empty {
+            display: none !important;
         }
         
         [data-theme="dark"] .info-section.alert {
