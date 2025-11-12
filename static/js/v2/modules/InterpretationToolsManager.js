@@ -64,6 +64,13 @@ class InterpretationToolsManager {
                     'NSTEMI: ST depression, T wave inversion',
                     'AF: Irregularly irregular, absent P waves',
                     'Heart Block: Prolonged PR, dropped beats, AV dissociation'
+                ],
+                commonPathologicalFindings: [
+                    'Pericarditis: Diffuse saddle-shaped ST elevation, PR depression',
+                    'Hyperkalaemia: Tall peaked T waves, widened QRS, sine wave progression',
+                    'Left ventricular hypertrophy: Tall R waves in V5-6 with strain pattern',
+                    'Pulmonary embolism: S1Q3T3 pattern, right axis deviation, RBBB',
+                    'Myocarditis: Diffuse T wave inversion, arrhythmias, conduction delays'
                 ]
             },
             'abg-interpretation': {
@@ -90,7 +97,14 @@ class InterpretationToolsManager {
                     'Metabolic Alkalosis': 'Expected pCO2 = 0.7 × [HCO3] + 21 (±2)',
                     'Respiratory Acidosis': 'Acute: HCO3 ↑ by 1 per 10 pCO2 ↑',
                     'Respiratory Alkalosis': 'Acute: HCO3 ↓ by 2 per 10 pCO2 ↓'
-                }
+                },
+                commonPathologicalFindings: [
+                    'DKA: Metabolic acidosis with high anion gap, compensatory low pCO2',
+                    'Septic shock: Metabolic acidosis, high lactate, inadequate compensation',
+                    'COPD exacerbation: Respiratory acidosis with elevated bicarbonate (chronic compensation)',
+                    'Pulmonary embolism: Respiratory alkalosis with hypoxaemia, widened A-a gradient',
+                    'Renal failure: Metabolic acidosis, high potassium, impaired compensation'
+                ]
             },
             'chest-xray': {
                 name: 'Chest X-Ray Systematic Review',
@@ -116,6 +130,13 @@ class InterpretationToolsManager {
                     'Tension pneumothorax: Mediastinal shift away',
                     'Massive PE: Right heart strain, oligaemia',
                     'Aortic dissection: Widened mediastinum'
+                ],
+                commonPathologicalFindings: [
+                    'Heart failure: Cardiomegaly, upper lobe diversion, Kerley B lines, pleural effusions',
+                    'Bacterial pneumonia: Lobar consolidation with air bronchograms, silhouette sign loss',
+                    'Tuberculosis: Apical cavitating lesions, hilar lymphadenopathy, pleural thickening',
+                    'Interstitial lung disease: Reticular or honeycomb pattern, reduced lung volumes',
+                    'Metastatic disease: Multiple rounded nodules of varying size throughout lung fields'
                 ]
             },
             'ct-head': {
@@ -142,6 +163,13 @@ class InterpretationToolsManager {
                     'Mass effect: Midline shift, compressed ventricles',
                     'Herniation: Loss of cisterns, uncal herniation',
                     'Hydrocephalus: Enlarged ventricles'
+                ],
+                commonPathologicalFindings: [
+                    'Acute ischaemic stroke: Loss of grey-white differentiation, hyperdense vessel sign, sulcal effacement',
+                    'Chronic infarct: Encephalomalacia with low density, ex vacuo dilatation of ventricles',
+                    'Subdural haematoma: Crescentic extra-axial collection crossing sutures, variable density',
+                    'Epidural haematoma: Biconvex lens-shaped hyperdensity limited by sutures, associated skull fracture',
+                    'Brain tumour: Mass lesion with surrounding vasogenic oedema, possible calcification or haemorrhage'
                 ]
             },
             'urinalysis': {
@@ -175,6 +203,13 @@ class InterpretationToolsManager {
                     'Haematuria: Stones, infection, malignancy, trauma',
                     'Glycosuria: Diabetes mellitus, pregnancy',
                     'DKA: Glucose +, ketones +++, high blood glucose'
+                ],
+                commonPathologicalFindings: [
+                    'Nephrotic syndrome: Heavy proteinuria (+++), lipiduria, foamy urine',
+                    'Glomerulonephritis: Protein +, blood +, possible RBC casts, hypertension',
+                    'Pyelonephritis: Leucocyte +, nitrite +, fever, flank pain',
+                    'Multiple myeloma: Protein + (Bence Jones), normal dipstick albumin, consider electrophoresis',
+                    'Pregnancy complications: Proteinuria with hypertension suggesting pre-eclampsia'
                 ]
             },
             'pleural-fluid': {
@@ -208,6 +243,13 @@ class InterpretationToolsManager {
                     'Empyema: pH <7.2, glucose <2.2, pus, positive culture',
                     'Haemothorax: Haematocrit >50% of serum haematocrit',
                     'Chylothorax: Milky, triglycerides >1.24 mmol/L'
+                ],
+                commonPathologicalFindings: [
+                    'Parapneumonic effusion: Exudate with high neutrophils, low pH, high LDH',
+                    'Malignant effusion: Exudate with atypical cells on cytology, recurrent large volume',
+                    'Tuberculous pleuritis: Lymphocytic exudate, high ADA, low glucose',
+                    'Pulmonary embolism: Small haemorrhagic exudate, elevated D-dimer, concurrent PE symptoms',
+                    'Pancreatitis-related effusion: Exudate with very high amylase, left-sided predominance'
                 ]
             },
             'ascitic-fluid': {
@@ -241,6 +283,13 @@ class InterpretationToolsManager {
                     'Cardiac: High SAAG, high protein (>25g/L)',
                     'TB: Lymphocytic, low SAAG, high protein, positive culture',
                     'Pancreatic: High amylase, low SAAG'
+                ],
+                commonPathologicalFindings: [
+                    'Cirrhosis with portal hypertension: High SAAG, low protein, straw coloured fluid',
+                    'Heart failure: High SAAG, high protein, elevated BNP, bilateral oedema',
+                    'Peritoneal carcinomatosis: Low SAAG, high protein, malignant cells, weight loss',
+                    'Pancreatic ascites: Low SAAG, very high amylase, history of pancreatitis',
+                    'Tuberculous peritonitis: Low SAAG, lymphocytic predominance, high ADA, chronic symptoms'
                 ]
             },
             'csf-interpretation': {
@@ -278,6 +327,13 @@ class InterpretationToolsManager {
                     'Gram positive diplococci: Pneumococcal meningitis',
                     'Gram negative diplococci: Meningococcal meningitis',
                     'Very low glucose <1.0: Bacterial meningitis likely'
+                ],
+                commonPathologicalFindings: [
+                    'Multiple sclerosis: Oligoclonal bands, normal glucose, mild protein elevation',
+                    'Guillain–Barré syndrome: Elevated protein with normal cell count (albuminocytologic dissociation)',
+                    'Carcinomatous meningitis: Elevated opening pressure, malignant cells on cytology, low glucose',
+                    'Herpes encephalitis: Lymphocytic pleocytosis, high protein, positive HSV PCR',
+                    'Subarachnoid haemorrhage: Xanthochromia, high RBC count, elevated bilirubin'
                 ]
             },
             'urine-microscopy': {
@@ -307,6 +363,13 @@ class InterpretationToolsManager {
                     'Struvite crystals: Proteus infection (staghorn calculi)',
                     'Eosinophils: Acute interstitial nephritis',
                     'Renal tubular cells: Acute tubular necrosis'
+                ],
+                commonPathologicalFindings: [
+                    'Acute glomerulonephritis: RBC casts, dysmorphic RBCs, proteinuria',
+                    'Acute tubular necrosis: Muddy brown granular casts, renal tubular epithelial cells',
+                    'Nephrotic syndrome: Oval fat bodies, fatty casts, lipid-laden macrophages',
+                    'Myoglobinuria (rhabdomyolysis): Pigmented granular casts, positive blood with few RBCs',
+                    'Chronic pyelonephritis: WBC casts, coarse granular casts, scarred kidneys on imaging'
                 ]
             },
             'joint-fluid': {
@@ -343,6 +406,13 @@ class InterpretationToolsManager {
                     'Pseudogout: WCC variable, CPPD crystals (rhomboid, positive birefringence)',
                     'Inflammatory (RA): WCC 2,000-50,000, no crystals',
                     'Haemarthrosis: Blood-stained, trauma, haemophilia, anticoagulation'
+                ],
+                commonPathologicalFindings: [
+                    'Septic arthritis (Staph aureus): Purulent fluid, very high PMNs, positive Gram stain/culture',
+                    'Gout flare: Needle-shaped negatively birefringent crystals, tophi, elevated serum urate',
+                    'Pseudogout attack: Rhomboid positively birefringent crystals, chondrocalcinosis on X-ray',
+                    'Haemarthrosis: Frank blood in joint, trauma or coagulopathy, requires urgent management',
+                    'Reactive arthritis: Inflammatory fluid, sterile cultures, recent GI/GU infection'
                 ]
             },
             'liver-function-pattern': {
@@ -376,6 +446,13 @@ class InterpretationToolsManager {
                     'Acute viral hepatitis: Very high ALT/AST, jaundice',
                     'Cholestasis: ALP ++, bilirubin ++, GGT confirms hepatic origin',
                     'Cirrhosis: Low albumin, prolonged INR, mild transaminase rise'
+                ],
+                commonPathologicalFindings: [
+                    'Autoimmune hepatitis: High transaminases, positive ANA/ASMA, elevated IgG',
+                    'Primary biliary cholangitis: Cholestatic pattern with positive AMA, pruritus',
+                    'Primary sclerosing cholangitis: Cholestasis with elevated ALP, associated IBD, beading on MRCP',
+                    'Ischaemic hepatitis: Massive AST/ALT elevation after hypotensive event, rapid normalisation',
+                    'Hepatocellular carcinoma: Rising AFP, new cholestatic picture in cirrhotic patient'
                 ]
             },
             'anaemia-interpretation': {
@@ -409,6 +486,13 @@ class InterpretationToolsManager {
                     'Haemolysis: Normocytic, high reticulocytes, high LDH, low haptoglobin',
                     'Thalassaemia: Microcytic, normal ferritin, high RBC count, family history',
                     'ACD: Normocytic/microcytic, chronic inflammation, high ferritin'
+                ],
+                commonPathologicalFindings: [
+                    'Myelodysplasia: Macrocytosis, dysplastic neutrophils, cytopenias on film',
+                    'Sideroblastic anaemia: Microcytosis with high ferritin, ring sideroblasts on marrow',
+                    'Haemoglobinopathies: Target cells, basophilic stippling, abnormal electrophoresis',
+                    'Haemolytic uraemic syndrome: Normocytic anaemia with schistocytes, thrombocytopenia, renal failure',
+                    'Aplastic anaemia: Pancytopenia, hypocellular marrow, low reticulocytes'
                 ]
             },
             'thyroid-function': {
@@ -446,6 +530,13 @@ class InterpretationToolsManager {
                     'Subclinical hypothyroid: TSH 5-10, normal T4, mild symptoms',
                     'Post-partum thyroiditis: Transient hyper then hypothyroidism',
                     'Drug-induced: Amiodarone (hypo/hyper), lithium (hypothyroid)'
+                ],
+                commonPathologicalFindings: [
+                    'Thyroid storm: Suppressed TSH, markedly elevated T3/T4, systemic decompensation',
+                    'Myxoedema coma: Very high TSH, very low T4, hyponatraemia, hypothermia',
+                    'Toxic multinodular goitre: Suppressed TSH with high T3/T4, multinodular gland on imaging',
+                    'Subacute (de Quervain) thyroiditis: Transient thyrotoxicosis, raised ESR, tender thyroid, low uptake scan',
+                    'Central hypothyroidism: Low/normal TSH with low T4, pituitary pathology on MRI'
                 ]
             }
         };
@@ -552,7 +643,9 @@ class InterpretationToolsManager {
             return tool.name.toLowerCase().includes(query) ||
                    tool.category.toLowerCase().includes(query) ||
                    tool.type.toLowerCase().includes(query) ||
-                   tool.steps.some(step => step.toLowerCase().includes(query));
+                   tool.steps.some(step => step.toLowerCase().includes(query)) ||
+                   (tool.commonAbnormalities && tool.commonAbnormalities.some(item => item.toLowerCase().includes(query))) ||
+                   (tool.commonPathologicalFindings && tool.commonPathologicalFindings.some(item => item.toLowerCase().includes(query)));
         });
         
         let html = '';
@@ -684,7 +777,18 @@ class InterpretationToolsManager {
                 </div>
             `;
         }
-        
+
+        if (tool.commonPathologicalFindings) {
+            additionalSections += `
+                <div class="common-pathology">
+                    <h4>🦠 Common Pathological Findings</h4>
+                    <ul class="pathology-list">
+                        ${tool.commonPathologicalFindings.map(finding => `<li>${finding}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
         if (tool.compensation) {
             additionalSections += `
                 <div class="compensation-rules">
