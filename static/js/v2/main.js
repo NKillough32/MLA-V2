@@ -2863,19 +2863,43 @@ class MLAQuizApp {
             console.error('loadInterpretationToolsContent: panel is null');
             return;
         }
+
         const container = panel.querySelector('#interpretation-container') || panel;
-        if (!container) return;
-        
-        // Access interpretation tools directly from the manager's data
+        if (!container) {
+            console.error('loadInterpretationToolsContent: container not found');
+            return;
+        }
+
+        // Hide legacy static category buttons if they exist within the panel to avoid duplicate UI
+        const legacyCategoryBar = panel.querySelector(':scope > .interpretation-categories');
+        if (legacyCategoryBar) {
+            legacyCategoryBar.style.display = 'none';
+        }
+
+        // Prefer the dedicated InterpretationToolsManager implementation when available so that
+        // category filtering, search, and extended metadata (e.g. pathological findings) are rendered.
+        if (this.interpretationToolsManager &&
+            typeof this.interpretationToolsManager.loadInterpretationTools === 'function') {
+            container.innerHTML = '';
+            this.interpretationToolsManager.loadInterpretationTools();
+
+            // Ensure the panel scroll position resets for a fresh view
+            panel.scrollTop = 0;
+            container.scrollTop = 0;
+
+            console.log('📊 Interpretation tools content loaded via InterpretationToolsManager');
+            return;
+        }
+
+        // Fallback legacy rendering (should rarely be used)
         const toolsData = this.interpretationToolsManager.interpretationTools || {};
         const toolKeys = Object.keys(toolsData);
-        
+
         if (toolKeys.length === 0) {
             container.innerHTML = '<div class="no-content">Interpretation tools database not loaded</div>';
             return;
         }
-        
-        // Create modern interpretation tools interface
+
         let html = `
             <div class="search-container">
                 <input type="text" id="interp-search" placeholder="Search interpretation tools..." class="tool-search">
@@ -2883,10 +2907,9 @@ class MLAQuizApp {
             </div>
             <div id="interp-grid" class="lab-grid">
         `;
-        
+
         toolKeys.forEach(toolKey => {
             const tool = toolsData[toolKey];
-            const criteria = tool.criteria || tool.components || tool.steps || [];
             html += `
                 <button class="lab-value-btn" onclick="window.quizApp.showInterpretationDetail('${toolKey}'); event.stopPropagation();" style="cursor: pointer; text-align: left; transition: all 0.2s;">
                     <div class="lab-name">${tool.name || tool.title || toolKey}</div>
@@ -2895,11 +2918,10 @@ class MLAQuizApp {
                 </button>
             `;
         });
-        
+
         html += '</div>';
         container.innerHTML = html;
-        
-        // Add search functionality
+
         const searchInput = document.getElementById('interp-search');
         const searchBtn = document.getElementById('interp-search-btn');
         if (searchInput && searchBtn) {
@@ -2913,7 +2935,7 @@ class MLAQuizApp {
                            (t.type || '').toLowerCase().includes(query) ||
                            (t.description || '').toLowerCase().includes(query);
                 }) : toolKeys;
-                
+
                 const gridContainer = document.getElementById('interp-grid');
                 if (gridContainer) {
                     if (filtered.length === 0) {
@@ -2932,22 +2954,35 @@ class MLAQuizApp {
                     }
                 }
             };
-            
+
             searchInput.addEventListener('input', performSearch);
             searchBtn.addEventListener('click', performSearch);
         }
-        
-        console.log('📊 Interpretation tools content loaded');
+
+        console.log('📊 Interpretation tools content loaded (legacy mode)');
     }
-    
+
     /**
      * Show interpretation tool detail with full criteria and scoring
      */
     showInterpretationDetail(toolKey) {
-        const container = document.getElementById('interpretation-container') || 
+        // Prefer manager-driven detail rendering so we get the richer layout (including common pathological findings)
+        if (this.interpretationToolsManager &&
+            typeof this.interpretationToolsManager.showInterpretationDetail === 'function') {
+            this.interpretationToolsManager.showInterpretationDetail(toolKey);
+
+            const interpretationPanel = document.getElementById('interpretation-panel');
+            if (interpretationPanel) {
+                interpretationPanel.scrollTop = 0;
+            }
+            window.scrollTo(0, 0);
+            return;
+        }
+
+        const container = document.getElementById('interpretation-container') ||
                          document.getElementById('interpretation-panel');
         if (!container) return;
-        
+
         const toolsData = this.interpretationToolsManager.interpretationTools || {};
         const tool = toolsData[toolKey];
         if (!tool) return;
