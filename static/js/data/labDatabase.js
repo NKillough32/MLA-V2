@@ -358,5 +358,68 @@ window.labDatabase = {
                 clinicalSignificance: 'Key target in major haemorrhage – aim >2.0 g/L in obstetric bleeding'
             }
         }
+    },
+    'abg': {
+        name: 'Arterial Blood Gas (ABG)',
+        values: {
+            'pH': { normal: '7.35-7.45', low: 'Acidaemia', high: 'Alkalaemia', clinicalSignificance: 'Primary acid–base status; interpret with pCO2 and HCO3-' },
+            'pCO2': { normal: '35-45 mmHg', clinicalSignificance: 'Respiratory contribution to acid–base. High in hypoventilation.' },
+            'pO2': { normal: '80-100 mmHg (room air)', clinicalSignificance: 'Oxygenation; interpret with FiO2' },
+            'HCO3-': { normal: '22-26 mmol/L', clinicalSignificance: 'Metabolic component of acid–base' },
+            'Base excess': { normal: '-2 to +2 mmol/L', clinicalSignificance: 'Metabolic buffer reserve' },
+            'Lactate': { normal: '<2 mmol/L', high: 'Sepsis, tissue hypoperfusion; prognostic marker', critical: '>4 mmol/L' }
+        }
+    },
+    'magnesium': {
+        name: 'Magnesium (Mg2+)',
+        values: {
+            'Mg2+': { normal: '0.7-1.0 mmol/L', low: 'Arrhythmia risk, neuromuscular irritability, seizures', high: 'Hypotonia, bradycardia', critical: '<0.5 or >2.5 mmol/L', clinicalSignificance: 'Replace IV/PO depending on severity; monitor renal function' }
+        }
+    },
+    'phosphate': {
+        name: 'Phosphate (PO4)',
+        values: {
+            'PO4': { normal: '0.8-1.5 mmol/L', low: 'Weakness, respiratory failure risk in severe hypophosphataemia', high: 'Renal failure, tumour lysis', clinicalSignificance: 'Replace in severe deficiency; monitor calcium concurrently' }
+        }
+    },
+    'd_dimer': {
+        name: 'D-dimer',
+        values: {
+            'D-dimer': { normal: '<500 ng/mL FEU (lab-dependent)', high: 'Elevated in VTE but non-specific (inflammation, malignancy, post-op)', clinicalSignificance: 'Useful to rule out VTE in low pre-test probability using validated algorithms; consider age-adjusted cutoffs' }
+        }
+    },
+    'amylase_lipase': {
+        name: 'Amylase & Lipase',
+        values: {
+            'Amylase': { normal: 'Approx. 23-85 U/L (lab-dependent)', high: 'Pancreatitis (less specific)', clinicalSignificance: 'Less specific than lipase for pancreatitis' },
+            'Lipase': { normal: 'Approx. 0-160 U/L (lab-dependent)', high: 'Pancreatitis (more specific)', clinicalSignificance: 'Preferred test when suspecting pancreatitis' }
+        }
+    },
+    'ck': {
+        name: 'Creatine Kinase (CK)',
+        values: {
+            'CK': { normal: '25-200 U/L (lab-dependent)', high: 'Rhabdomyolysis, muscle injury, some MIs', clinicalSignificance: 'Check renal function and risk of AKI with very high values' }
+        }
+    },
+    'ammonia': {
+        name: 'Ammonia (NH3)',
+        values: {
+            'NH3': { normal: '11-35 μmol/L (lab-dependent)', high: 'Hepatic encephalopathy, metabolic disorders', clinicalSignificance: 'Handle sample on ice; interpret in clinical context' }
+        }
+    },
+    'hcg': {
+        name: 'Pregnancy Test (hCG)',
+        values: {
+            'hCG (qual/quant)': { normal: 'Negative', high: 'Positive - pregnancy', clinicalSignificance: 'Essential before radiology, teratogenic medications, and some surgical procedures' }
+        }
+    },
+    'therapeutic_levels': {
+        name: 'Therapeutic Drug Levels (common examples)',
+        values: {
+            'Vancomycin (trough)': { normal: '10-20 mg/L depending on target', clinicalSignificance: 'Trough targets vary by infection severity; coordinate with microbiology/pharmacy' },
+            'Gentamicin (trough/peak)': { normal: 'Trough: <1 mg/L, Peak: 5-12 mg/L depending on regimen', clinicalSignificance: 'Timing of levels critical; adjust for renal function' },
+            'Lithium': { normal: '0.6-1.2 mmol/L (maintenance)', clinicalSignificance: 'Toxicity risk >1.5 mmol/L; monitor renal function and interactions' },
+            'Digoxin': { normal: '0.5-2.0 ng/mL', clinicalSignificance: 'Narrow therapeutic index; toxicity risk with renal failure and hypokalaemia' }
+        }
     }
 };

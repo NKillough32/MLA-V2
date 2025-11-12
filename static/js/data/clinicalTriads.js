@@ -156,6 +156,87 @@ export const clinicalTriads = {
         clinicalSignificance: 'Suggests advanced peripheral arterial disease requiring vascular assessment',
         ukGuidelines: 'Urgent vascular referral, aggressive cardiovascular risk factor modification, consider revascularisation'
     }
+    ,
+    'hellp-syndrome': {
+        name: 'HELLP Syndrome',
+        category: 'obstetric',
+        components: ['Hemolysis', 'Elevated liver enzymes', 'Low platelets'],
+        condition: 'HELLP syndrome (severe pre-eclampsia variant)',
+        mechanism: 'Microangiopathic haemolysis and hepatic dysfunction associated with pre-eclampsia',
+        urgency: 'emergency',
+        clinicalSignificance: 'High maternal and fetal risk; urgent obstetric and critical care management required',
+        ukGuidelines: 'Urgent delivery planning and critical care support; follow local maternity & NICE guidelines'
+    },
+    'hakim-nph': {
+        name: 'Hakim Triad (Normal Pressure Hydrocephalus)',
+        category: 'neurologic',
+        components: ['Gait disturbance', 'Urinary incontinence', 'Cognitive impairment (dementia)'],
+        condition: 'Normal Pressure Hydrocephalus (NPH)',
+        mechanism: 'Ventricular enlargement causing periventricular white matter dysfunction',
+        urgency: 'high',
+        clinicalSignificance: 'Potentially reversible cause of dementia — consider CSF tap/trial and neurosurgical referral',
+        ukGuidelines: 'Neurosurgical/neurology referral for diagnostic CSF tap and consideration of shunting'
+    },
+    'parkinsonism-triad': {
+        name: 'Parkinsonism Triad',
+        category: 'neurologic',
+        components: ['Bradykinesia', 'Rigidity', 'Rest tremor'],
+        condition: 'Parkinson disease / parkinsonism',
+        mechanism: 'Degeneration of nigrostriatal dopaminergic pathways (or secondary causes)',
+        urgency: 'moderate',
+        clinicalSignificance: 'Core features used to diagnose and manage Parkinson disease',
+        ukGuidelines: 'Refer to neurology; consider dopaminergic therapy and multi-disciplinary support'
+    },
+    'hutchinson-triad': {
+        name: "Hutchinson's Triad",
+        category: 'infectious',
+        components: ['Interstitial keratitis', "Hutchinson's teeth", 'Sensorineural deafness'],
+        condition: 'Congenital syphilis',
+        mechanism: 'In utero Treponema pallidum infection causing multisystem damage',
+        urgency: 'high',
+        clinicalSignificance: 'Classic late congenital syphilis findings; requires specialist paediatric infectious disease input',
+        ukGuidelines: 'Refer to paediatric infectious diseases and public health; treat with penicillin as per local policy'
+    },
+    'nephrotic-syndrome': {
+        name: 'Nephrotic Syndrome Triad',
+        category: 'renal',
+        components: ['Massive proteinuria', 'Hypoalbuminaemia', 'Oedema'],
+        condition: 'Nephrotic syndrome',
+        mechanism: 'Increased glomerular permeability leading to protein loss and decreased oncotic pressure',
+        urgency: 'moderate',
+        clinicalSignificance: 'Guides investigation and management (urinalysis, nephrology referral, thrombosis risk)',
+        ukGuidelines: 'Investigate underlying cause and manage fluid balance; liaise with nephrology'
+    },
+    'classic-pe-triad': {
+        name: 'Classic PE Triad',
+        category: 'cardiovascular',
+        components: ['Dyspnoea', 'Pleuritic chest pain', 'Haemoptysis'],
+        condition: 'Pulmonary embolism',
+        mechanism: 'Embolic occlusion of pulmonary arteries causing ventilation–perfusion mismatch and infarction',
+        urgency: 'emergency',
+        clinicalSignificance: 'Clinical suspicion requires urgent assessment (Wells, D-dimer, CTPA) and treatment as indicated',
+        ukGuidelines: 'Assess with clinical decision rules and local PE pathway (consider immediate anticoagulation if high suspicion)'
+    },
+    'infective-endocarditis-triad': {
+        name: 'Infective Endocarditis (clinical) Triad',
+        category: 'infectious',
+        components: ['Fever', 'New murmur', 'Positive blood cultures'],
+        condition: 'Infective endocarditis',
+        mechanism: 'Infection of endocardial surfaces leading to valvular destruction and systemic emboli',
+        urgency: 'emergency',
+        clinicalSignificance: 'Prompt blood cultures and echocardiography; may require prolonged antibiotics and surgical review',
+        ukGuidelines: 'Follow local endocarditis pathway; liaise with microbiology and cardiothoracic surgery'
+    },
+    'meniere-triad': {
+        name: "Menière's Disease Triad",
+        category: 'ENT',
+        components: ['Episodic vertigo', 'Tinnitus', 'Sensorineural hearing loss'],
+        condition: "Menière's disease",
+        mechanism: 'Endolymphatic hydrops causing inner ear dysfunction',
+        urgency: 'moderate',
+        clinicalSignificance: 'ENT referral for audiometry and symptomatic management; vestibular rehabilitation may help',
+        ukGuidelines: 'Refer to ENT for specialist assessment and audiological testing'
+    }
 };
 
 // Export helper functions
