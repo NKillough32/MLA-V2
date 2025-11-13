@@ -1,0 +1,12 @@
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+This file is a short reference. The QRISK3 implementation bundled in this folder is licensed under the GNU Lesser General Public License v3 (LGPL v3) by ClinRisk Ltd.
+
+Full license text and terms must be provided with any distribution that modifies or redistributes the QRISK3 code.
+
+For the full license text see: https://www.gnu.org/licenses/lgpl-3.0.txt
+
+Additional attribution and disclaimer required by ClinRisk Ltd. must be displayed alongside any score produced by the QRISK3 implementation. See `README.md`.
