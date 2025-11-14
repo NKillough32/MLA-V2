@@ -1035,8 +1035,11 @@ class MLAQuizApp {
         const voiceStatus = container.querySelector('#drug-voice-status-v2');
         const drugListContainer = container.querySelector('#drug-list-v2');
         
+        console.log('🔍 Elements found - searchInput:', searchInput, 'searchBtn:', searchBtn, 'container:', container);
+        
         // Search functionality with TTS buttons
         const handleSearch = async () => {
+            console.log('🔍 handleSearch called, query:', searchInput.value);
             const query = searchInput.value;
             if (query.length < 2) {
                 this.showDrugCategory('alphabetical', container);
@@ -1044,6 +1047,7 @@ class MLAQuizApp {
             }
             
             const results = await this.drugManager.searchDrugs(query);
+            console.log('🔍 Search results:', results.length);
             if (results.length === 0) {
                 drugListContainer.innerHTML = '<div class="no-results" style="text-align: center; padding: 40px; color: var(--text-secondary);">No medications found</div>';
                 return;
@@ -1065,7 +1069,11 @@ class MLAQuizApp {
         };
         
         searchInput.addEventListener('input', handleSearch);
-        searchBtn.addEventListener('click', handleSearch);
+        searchBtn.addEventListener('click', (e) => {
+            console.log('🔍 Search button clicked!', e);
+            handleSearch();
+        });
+        console.log('🔍 Event listeners attached - searchBtn:', searchBtn, 'searchInput:', searchInput);
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') handleSearch();
         });
