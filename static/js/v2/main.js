@@ -16,7 +16,7 @@ import { anatomyManager } from './modules/AnatomyManager.js';
 import { quizManager } from './modules/QuizManager.js';
 import { uiManager } from './modules/UIManager.js';
 import { calculatorManager } from './modules/CalculatorManager.js';
-import { offlineManager } from './modules/OfflineManager.js';
+import { OfflineManager } from './modules/OfflineManager.js';
 
 // Reference Modules (require external database files)
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
@@ -54,6 +54,7 @@ class MLAQuizApp {
         this.emergencyProtocolsManager = emergencyProtocolsManager;
         this.v2Integration = v2Integration;
         this.calculatorBridge = calculatorBridge;
+        this.offlineManager = new OfflineManager();
         this.toolsPreloaded = false;
         this.setupEventListeners();
     }
@@ -112,7 +113,7 @@ class MLAQuizApp {
         orientationManager.initialize();
         anatomyManager.initialize();
         await quizManager.initialize();
-        await offlineManager.initialize();
+        await this.offlineManager.initialize();
 
         const calculatorInitialization = calculatorManager.initialize();
         const referenceInitializers = [

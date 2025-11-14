@@ -312,3 +312,5 @@ export class OfflineManager {
         await this.updateOfflineStatus();
     }
 }
+
+export { OfflineManager };
