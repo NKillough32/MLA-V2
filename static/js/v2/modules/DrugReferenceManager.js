@@ -106,11 +106,15 @@ export class DrugReferenceManager {
     /**
      * Drug interaction checker - NEW FEATURE
      */
-    checkDrugInteractions(drugNames) {
+    async checkDrugInteractions(drugNames) {
         const interactions = [];
-        const drugs = drugNames.map(name => 
-            this.searchDrugs(name).find(d => d.name.toLowerCase() === name.toLowerCase())
-        ).filter(Boolean);
+        const drugs = [];
+        
+        for (const name of drugNames) {
+            const searchResults = await this.searchDrugs(name);
+            const drug = searchResults.find(d => d.name.toLowerCase() === name.toLowerCase());
+            if (drug) drugs.push(drug);
+        }
 
         for (let i = 0; i < drugs.length; i++) {
             for (let j = i + 1; j < drugs.length; j++) {
@@ -137,8 +141,9 @@ export class DrugReferenceManager {
     /**
      * Pregnancy safety checker - NEW FEATURE
      */
-    checkPregnancySafety(drugName) {
-        const drug = this.searchDrugs(drugName)[0];
+    async checkPregnancySafety(drugName) {
+        const searchResults = await this.searchDrugs(drugName);
+        const drug = searchResults[0];
         if (!drug || !drug.pregnancy) return null;
 
         const safetyLevel = this.categorizePregancySafety(drug.pregnancy);
@@ -153,8 +158,9 @@ export class DrugReferenceManager {
     /**
      * Dosing calculator with weight/age adjustments - NEW FEATURE
      */
-    calculateDosing(drugName, patientWeight, patientAge, indication = 'standard') {
-        const drug = this.searchDrugs(drugName)[0];
+    async calculateDosing(drugName, patientWeight, patientAge, indication = 'standard') {
+        const searchResults = await this.searchDrugs(drugName);
+        const drug = searchResults[0];
         if (!drug) return null;
 
         return {

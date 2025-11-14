@@ -1036,14 +1036,14 @@ class MLAQuizApp {
         const drugListContainer = container.querySelector('#drug-list-v2');
         
         // Search functionality with TTS buttons
-        const handleSearch = () => {
+        const handleSearch = async () => {
             const query = searchInput.value;
             if (query.length < 2) {
                 this.showDrugCategory('alphabetical', container);
                 return;
             }
             
-            const results = this.drugManager.searchDrugs(query);
+            const results = await this.drugManager.searchDrugs(query);
             if (results.length === 0) {
                 drugListContainer.innerHTML = '<div class="no-results" style="text-align: center; padding: 40px; color: var(--text-secondary);">No medications found</div>';
                 return;
