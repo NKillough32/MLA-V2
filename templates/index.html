@@ -9398,6 +9398,74 @@
                 from { opacity: 0; transform: translateY(-20px); }
                 to { opacity: 1; transform: translateY(0); }
             }
+            
+            /* Offline Status Indicator */
+            .offline-status {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 4px 8px;
+                border-radius: 12px;
+                font-size: 12px;
+                font-weight: 500;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: white;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+            
+            .offline-status:hover {
+                background: rgba(255, 255, 255, 0.15);
+                transform: translateY(-1px);
+            }
+            
+            .offline-status.offline {
+                background: rgba(255, 59, 48, 0.9);
+                border-color: rgba(255, 59, 48, 0.5);
+                animation: pulse 2s infinite;
+            }
+            
+            .offline-status.online {
+                background: rgba(52, 199, 89, 0.9);
+                border-color: rgba(52, 199, 89, 0.5);
+            }
+            
+            .offline-status.syncing {
+                background: rgba(255, 204, 0, 0.9);
+                border-color: rgba(255, 204, 0, 0.5);
+                animation: pulse 1s infinite;
+            }
+            
+            .status-text {
+                font-size: 11px;
+                opacity: 0.9;
+            }
+            
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.7; }
+            }
+            
+            [data-theme="dark"] .offline-status {
+                background: rgba(255, 255, 255, 0.1);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+            
+            [data-theme="dark"] .offline-status.offline {
+                background: rgba(255, 59, 48, 0.9);
+                border-color: rgba(255, 59, 48, 0.5);
+            }
+            
+            [data-theme="dark"] .offline-status.online {
+                background: rgba(52, 199, 89, 0.9);
+                border-color: rgba(52, 199, 89, 0.5);
+            }
+            
+            [data-theme="dark"] .offline-status.syncing {
+                background: rgba(255, 204, 0, 0.9);
+                border-color: rgba(255, 204, 0, 0.5);
+            }
         </style>
 </head>
 <body>
@@ -9410,6 +9478,11 @@
             <h1 id="navTitle">MLA Quiz</h1>
         </div>
         <div class="nav-right">
+            <div id="offline-status" class="offline-status" title="Offline Status" style="display: none;">
+                <span id="connection-icon">📶</span>
+                <span id="cached-count" class="status-text">0</span>
+                <span id="pending-count" class="status-text" style="display: none;">⚠️</span>
+            </div>
             <button id="themeToggle" title="Toggle Dark Mode" style="background:none;border:none;color:white;font-size:20px;padding:6px;margin-right:8px;">🌙</button>
             <button id="rotLock" title="Toggle Lock" style="background:none;border:none;color:white;font-size:16px;padding:6px;margin-right:8px;">🔒</button>
             <button class="next-btn" id="nextNavBtn" style="display: none;">Next →</button>

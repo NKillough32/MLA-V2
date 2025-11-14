@@ -19,7 +19,8 @@ export const STORAGE_KEYS = {
     TOOL_NOTES: 'medicalToolsNotes',
     LAST_QUIZ: 'lastQuiz',
     SESSION_STATS: 'sessionStats',
-    ORIENTATION_LOCK: 'orientationLock'
+    ORIENTATION_LOCK: 'orientationLock',
+    CACHED_QUIZZES: 'cachedQuizzes'
 };
 
 // IndexedDB Configuration
@@ -121,8 +122,22 @@ export const EVENTS = {
     QUIZ_STARTED: 'quiz:started',
     QUIZ_COMPLETED: 'quiz:completed',
     QUIZ_RESUME_REQUESTED: 'quiz:resumeRequested',
+    QUIZ_SUBMITTED: 'quiz:submitted',
     QUESTION_ANSWERED: 'question:answered',
     QUESTION_FLAGGED: 'question:flagged',
+    
+    // Offline Events
+    OFFLINE_MODE: 'offline:mode',
+    OFFLINE_STATUS_UPDATE: 'offline:statusUpdate',
+    OFFLINE_SUBMISSION_STORED: 'offline:submissionStored',
+    OFFLINE_SYNC_COMPLETE: 'offline:syncComplete',
+    QUIZ_PRELOAD_STARTED: 'quiz:preloadStarted',
+    QUIZ_PRELOAD_COMPLETE: 'quiz:preloadComplete',
+    QUIZ_PRELOAD_FAILED: 'quiz:preloadFailed',
+    RECONNECTION_STARTED: 'network:reconnectionStarted',
+    RECONNECTION_COMPLETE: 'network:reconnectionComplete',
+    RECONNECTION_FAILED: 'network:reconnectionFailed',
+    SERVICE_WORKER_UPDATE: 'serviceworker:update',
     
     // UI Events
     THEME_CHANGED: 'theme:changed',

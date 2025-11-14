@@ -16,6 +16,7 @@ import { anatomyManager } from './modules/AnatomyManager.js';
 import { quizManager } from './modules/QuizManager.js';
 import { uiManager } from './modules/UIManager.js';
 import { calculatorManager } from './modules/CalculatorManager.js';
+import { offlineManager } from './modules/OfflineManager.js';
 
 // Reference Modules (require external database files)
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
@@ -111,6 +112,7 @@ class MLAQuizApp {
         orientationManager.initialize();
         anatomyManager.initialize();
         await quizManager.initialize();
+        await offlineManager.initialize();
 
         const calculatorInitialization = calculatorManager.initialize();
         const referenceInitializers = [
@@ -159,6 +161,13 @@ class MLAQuizApp {
 
         // Register service worker after critical app initialization
         this.registerServiceWorker();
+
+        // Initialize offline status indicators
+        this.updateOfflineStatusIndicators({
+            isOnline: navigator.onLine,
+            cachedQuizzes: 0,
+            offlineSubmissions: 0
+        });
     }
 
     scheduleToolPreload() {
@@ -683,13 +692,59 @@ class MLAQuizApp {
             this.switchTool(data.tool);
         });
 
-        // Error handling
-        eventBus.on(EVENTS.ERROR_OCCURRED, (data) => {
-            console.error('Error occurred:', data);
-            uiManager.showToast(`Error: ${data.error?.message || 'Unknown error'}`, 'error');
+        // Offline status updates → Update navbar indicators
+        eventBus.on(EVENTS.OFFLINE_STATUS_UPDATE, (data) => {
+            console.log('📡 Offline status update:', data);
+            this.updateOfflineStatusIndicators(data);
         });
 
         console.log('✅ Cross-module communication setup complete');
+    }
+
+    /**
+     * Update offline status indicators in the navbar
+     */
+    updateOfflineStatusIndicators(data) {
+        const offlineStatus = document.getElementById('offline-status');
+        const connectionIcon = document.getElementById('connection-icon');
+        const cachedCount = document.getElementById('cached-count');
+        const pendingCount = document.getElementById('pending-count');
+
+        if (!offlineStatus || !connectionIcon || !cachedCount || !pendingCount) {
+            console.warn('⚠️ Offline status indicators not found in DOM');
+            return;
+        }
+
+        const { isOnline, cachedQuizzes, offlineSubmissions } = data;
+
+        // Update visibility
+        offlineStatus.style.display = 'flex';
+
+        // Update connection status
+        if (isOnline) {
+            connectionIcon.textContent = '📶';
+            connectionIcon.title = 'Online';
+            offlineStatus.classList.remove('offline', 'syncing');
+            offlineStatus.classList.add('online');
+        } else {
+            connectionIcon.textContent = '📴';
+            connectionIcon.title = 'Offline';
+            offlineStatus.classList.remove('online', 'syncing');
+            offlineStatus.classList.add('offline');
+        }
+
+        // Update cached quizzes count
+        cachedCount.textContent = cachedQuizzes || 0;
+
+        // Update pending submissions
+        if (offlineSubmissions > 0) {
+            pendingCount.textContent = `⚠️ ${offlineSubmissions}`;
+            pendingCount.style.display = 'inline';
+            offlineStatus.classList.add('syncing');
+        } else {
+            pendingCount.style.display = 'none';
+            offlineStatus.classList.remove('syncing');
+        }
     }
 
     /**
