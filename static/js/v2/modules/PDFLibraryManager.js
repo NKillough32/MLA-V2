@@ -50,23 +50,44 @@ export class PDFLibraryManager {
             this.pdfIndex = [];
         }
 
-        // Load pdf.js library dynamically
-        console.log('📚 Loading pdf.js library...');
+        // Load pdf.js library dynamically; prefer bundler import but fall back
+        // quickly to the CDN for unbundled/static environments.
+        console.log('📚 Loading pdf.js library (prefers local bundle, will fallback to CDN if unavailable)...');
+        const CDN_PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+        const CDN_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+        const LOCAL_WORKER = '/static/js/v2/pdf.worker.min.js';
+
         try {
-            // Import pdf.js
-            this.pdfjsLib = await import('pdfjs-dist/webpack');
+            // Try a dynamic import but don't block too long in case this is an
+            // unbundled static site where 'pdfjs-dist/webpack' isn't available.
+            const importPromise = import('pdfjs-dist/webpack');
+            const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('dynamic import timeout')), 1500));
 
-            // Set worker path for pdf.js
-            this.pdfjsLib.GlobalWorkerOptions.workerSrc = '/static/js/v2/pdf.worker.min.js';
+            this.pdfjsLib = await Promise.race([importPromise, timeout]);
 
-            console.log('✅ pdf.js library loaded');
+            // Verify the imported module looks correct
+            if (this.pdfjsLib && (this.pdfjsLib.getDocument || (this.pdfjsLib.GlobalWorkerOptions && window && window.pdfjsLib))) {
+                try {
+                    if (this.pdfjsLib.GlobalWorkerOptions) {
+                        this.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
+                    } else if (window && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
+                        window.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
+                    }
+                } catch (e) {
+                    // not fatal; continue
+                }
+                console.log('✅ pdf.js library loaded via dynamic import');
+            } else {
+                console.warn('⚠️ pdf.js dynamic import did not provide the expected API — falling back to CDN');
+                await this.loadPdfJsFromCDN();
+            }
         } catch (error) {
-            console.warn('⚠️ Error loading pdf.js:', error);
-            // Fallback: try to load from CDN
+            // Common in static dev: dynamic import will fail. Use CDN fallback.
+            console.info('ℹ️ pdf.js dynamic import unavailable or timed out, loading CDN version. Reason:', error && error.message);
             try {
                 await this.loadPdfJsFromCDN();
             } catch (cdnError) {
-                console.error('❌ Failed to load pdf.js from both local and CDN');
+                console.error('❌ Failed to load pdf.js from CDN:', cdnError);
                 this.pdfjsLib = null;
             }
         }
