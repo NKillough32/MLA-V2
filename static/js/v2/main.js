@@ -3,35 +3,8 @@
  * Initializes all managers and wires up the modular architecture
  */
 
-console.log('🔍 DEBUG: main.js file loaded and executing...');
-
-// Simple test to see if basic functionality works
-console.log('🔍 DEBUG: Testing basic JavaScript execution...');
-
-try {
-    // Test basic class creation
-    class TestClass {
-        constructor() {
-            this.test = 'working';
-        }
-    }
-    const test = new TestClass();
-    console.log('🔍 DEBUG: Basic class creation works:', test.test);
-} catch (error) {
-    console.error('🔍 DEBUG: Basic class creation failed:', error);
-}
-
-// Test module import
-try {
-    console.log('🔍 DEBUG: Attempting to import EventBus...');
-    // Temporarily comment out all imports to see if basic loading works
-    // import { eventBus } from './modules/EventBus.js';
-    console.log('🔍 DEBUG: Import test completed');
-} catch (error) {
-    console.error('🔍 DEBUG: Import failed:', error);
-}
-
 // Foundation Modules
+import { eventBus } from './modules/EventBus.js';
 import { storage, storageManager } from './modules/StorageManager.js';
 import { orientationManager } from './modules/OrientationManager.js';
 import { analytics } from './modules/AnalyticsManager.js';
@@ -69,7 +42,6 @@ import calculatorBridge from './modules/CalculatorBridge.js';
  */
 class MLAQuizApp {
     constructor() {
-        console.log('🔍 DEBUG: MLAQuizApp constructor called');
         this.initialized = false;
         this.drugManager = new DrugReferenceManager();
         this.labManager = new LabValuesManager();
@@ -86,52 +58,36 @@ class MLAQuizApp {
         this.calculatorBridge = calculatorBridge;
         this.offlineManager = new OfflineManager();
         this.toolsPreloaded = false;
-        console.log('🔍 DEBUG: MLAQuizApp constructor completed, calling setupEventListeners');
         this.setupEventListeners();
-        console.log('🔍 DEBUG: MLAQuizApp constructor finished');
     }
 
-    /**
-     * Initialize the application
-     */
     async initialize() {
-        console.log('🔍 DEBUG: initialize() method called');
         if (this.initialized) {
             console.warn('App already initialized');
             return;
         }
 
-        console.log('🚀 Initializing MLA Quiz PWA...');
-
         try {
-            console.log('🔍 DEBUG: Showing loading overlay');
             // Show loading
             uiManager.showLoadingOverlay('Initializing app...');
 
-            console.log('🔍 DEBUG: Calling initializeManagers');
             // Initialize managers in order
             await this.initializeManagers();
 
-            console.log('🔍 DEBUG: Setting up cross-module communication');
             // Wire up cross-module communication
             this.setupCrossModuleCommunication();
 
-            console.log('🔍 DEBUG: Initializing UI');
             // Initialize UI
             await this.initializeUI();
 
-            console.log('🔍 DEBUG: Restoring state');
             // Load any saved state
             await this.restoreState();
 
             this.initialized = true;
-            console.log('✅ MLA Quiz PWA initialized successfully');
 
-            console.log('🔍 DEBUG: Hiding loading overlay');
             // Hide loading
             uiManager.hideLoadingOverlay();
 
-            console.log('🔍 DEBUG: Emitting APP_READY event');
             // Emit ready event
             eventBus.emit(EVENTS.APP_READY);
 
@@ -142,12 +98,7 @@ class MLAQuizApp {
         }
     }
 
-    /**
-     * Initialize all managers
-     */
     async initializeManagers() {
-        console.log('📦 Initializing managers...');
-
         await storageManager.initIndexedDB();
         await uiManager.initialize();
         orientationManager.initialize();
@@ -167,15 +118,11 @@ class MLAQuizApp {
 
         await Promise.all([calculatorInitialization, ...referenceInitializers]);
 
-        console.log('🔗 Initializing calculator bridge...');
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
-
-        console.log('✅ All managers initialized');
-        console.log(`   - Calculators: ${calculatorManager.getCalculatorCount()}`);
 
         const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, ladderStats] = await Promise.all([
             this.drugManager.getStatistics(),
-            Promise.resolve(this.labManager.getStatistics()),
+            Promise.resolve(this.labManager.getStatistics() || { totalPanels: 0, totalTests: 0 }),
             this.guidelinesManager.getStatistics(),
             this.mnemonicsManager.getStatistics(),
             this.interpretationToolsManager.getStatistics(),
@@ -188,19 +135,9 @@ class MLAQuizApp {
         const safeInterpretationStats = interpretationStats || { totalTools: 0 };
         const safeLadderStats = ladderStats || { totalLadders: 0 };
 
-        console.log(`   - Drugs: ${drugStats?.totalDrugs ?? 0}`);
-        console.log(`   - Lab panels: ${safeLabStats.totalPanels}, Tests: ${safeLabStats.totalTests}`);
-        console.log(`   - Guidelines: ${safeGuidelinesStats.total}`);
-        console.log(`   - Mnemonics: ${safeMnemonicStats.totalMnemonics}`);
-        console.log(`   - Interpretation Tools: ${safeInterpretationStats.totalTools}`);
-        console.log(`   - Treatment Ladders: ${safeLadderStats.totalLadders}`);
-
         this.scheduleToolPreload();
 
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
-        console.log('✅ V2 Integration ready (awaiting V1 app instance)');
-
-        // Register service worker after critical app initialization
         this.registerServiceWorker();
 
         // Initialize offline status indicators
@@ -245,7 +182,6 @@ class MLAQuizApp {
         }
 
         this.toolsPreloaded = true;
-        console.log('📄 Preloading medical tool content...');
 
         const preloadTargets = [
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
@@ -264,12 +200,9 @@ class MLAQuizApp {
         preloadTargets.forEach(({ id, log, loader }) => {
             const panel = document.getElementById(id);
             if (panel) {
-                console.log(log);
                 loader(panel);
             }
         });
-
-        console.log('✅ All medical tool content preloaded');
     }
 
     /**
@@ -279,7 +212,6 @@ class MLAQuizApp {
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/static/sw.js')
                 .then(registration => {
-                    console.log('✅ Service Worker registered:', registration);
                 })
                 .catch(error => {
                     console.warn('⚠️ Service Worker registration failed:', error);
@@ -296,13 +228,11 @@ class MLAQuizApp {
         
         const tryInitialize = () => {
             if (window.ExtractedCalculators) {
-                console.log('✅ ExtractedCalculators found, initializing bridge...');
                 this.calculatorBridge.initialize(eventBus, storageManager, analytics);
                 return true;
             } else {
                 retryCount++;
                 if (retryCount < maxRetries) {
-                    console.log(`⏳ Waiting for ExtractedCalculators... (attempt ${retryCount}/${maxRetries})`);
                     return false;
                 } else {
                     console.error('❌ ExtractedCalculators failed to load after maximum retries');
@@ -325,9 +255,6 @@ class MLAQuizApp {
         }
     }
 
-    /**
-     * Setup cross-module communication
-     */
     setupCrossModuleCommunication() {
         console.log('🔗 Setting up cross-module communication...');
 
@@ -339,7 +266,6 @@ class MLAQuizApp {
                 if (toolBtn) {
                     const toolType = toolBtn.getAttribute('data-tool');
                     if (toolType) {
-                        console.log(`🔧 Tool navigation button clicked: ${toolType}`);
                         this.switchTool(toolType);
                         
                         // Update active state
@@ -350,14 +276,12 @@ class MLAQuizApp {
                     }
                 }
             });
-            console.log('✅ Tool navigation event delegation setup');
         }
 
         // Medical tools toggle button
         const medicalToolsToggle = document.getElementById('medical-tools-toggle');
         if (medicalToolsToggle) {
             medicalToolsToggle.addEventListener('click', () => {
-                console.log('🔧 Medical tools toggle clicked');
                 if (medicalToolsPanel) {
                     const isOpen = medicalToolsPanel.classList.contains('open');
                     
@@ -380,26 +304,22 @@ class MLAQuizApp {
                     }
                 }
             });
-            console.log('✅ Medical tools toggle button setup');
         }
 
         // Tools close button
         const toolsCloseBtn = document.getElementById('tools-close-btn');
         if (toolsCloseBtn) {
             toolsCloseBtn.addEventListener('click', () => {
-                console.log('🔧 Tools close button clicked');
                 if (medicalToolsPanel) {
                     medicalToolsPanel.classList.remove('open');
                 }
             });
-            console.log('✅ Tools close button setup');
         }
 
         // Back button handler
         const backBtn = document.getElementById('backBtn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                console.log('🔧 Back button clicked');
                 if (window.history.length > 1) {
                     window.history.back();
                 } else {
@@ -410,7 +330,6 @@ class MLAQuizApp {
                     }
                 }
             });
-            console.log('✅ Back button setup');
         }
 
         // Upload button handler
@@ -418,12 +337,10 @@ class MLAQuizApp {
         const quizFileInput = document.getElementById('quizFileInput');
         if (uploadBtn && quizFileInput) {
             uploadBtn.addEventListener('click', () => {
-                console.log('🔧 Upload button clicked');
                 quizFileInput.click();
             });
             
             quizFileInput.addEventListener('change', async (e) => {
-                console.log('🔧 Quiz files selected');
                 if (e.target.files && e.target.files.length > 0) {
                     // Pass files to quiz manager for processing
                     await quizManager.handleFileUpload(e.target.files);
@@ -431,7 +348,6 @@ class MLAQuizApp {
                     this.loadQuizList();
                 }
             });
-            console.log('✅ Upload controls setup');
         }
 
         // Quiz selection screen - quiz length buttons
@@ -445,7 +361,6 @@ class MLAQuizApp {
                 
                 const length = btn.getAttribute('data-length');
                 await quizManager.setQuizLength(length === 'all' ? 'all' : parseInt(length));
-                console.log(`📝 Quiz length set to: ${length}`);
             });
         });
 
@@ -458,7 +373,6 @@ class MLAQuizApp {
                     const quizName = quizItem.getAttribute('data-quiz-name');
                     const isUploaded = quizItem.getAttribute('data-is-uploaded') === 'true';
                     
-                    console.log(`📚 Loading quiz: ${quizName} (uploaded: ${isUploaded})`);
                     uiManager.showToast(`Loading ${quizName}...`, 'info');
                     
                     const success = await quizManager.loadQuiz(quizName, isUploaded);
@@ -470,14 +384,12 @@ class MLAQuizApp {
                     }
                 }
             });
-            console.log('✅ Quiz list event delegation setup');
         }
 
         // Quiz screen - answer submission
         const submitBtn = document.getElementById('submitBtn');
         if (submitBtn) {
             submitBtn.addEventListener('click', () => {
-                console.log('✅ Submit button clicked');
                 this.handleSubmitAnswer();
             });
         }
@@ -490,7 +402,6 @@ class MLAQuizApp {
 
         if (nextBtn) {
             nextBtn.addEventListener('click', async () => {
-                console.log('➡️ Next button clicked');
                 const moved = quizManager.nextQuestion();
                 if (!moved) {
                     // Reached the end
@@ -500,7 +411,6 @@ class MLAQuizApp {
                         this.showResults();
                     } else {
                         // Finish the quiz
-                        console.log('🏁 Quiz finished via Next button');
                         await quizManager.finishQuiz();
                     }
                 } else if (quizManager.isReviewMode) {
@@ -512,7 +422,6 @@ class MLAQuizApp {
 
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
-                console.log('⬅️ Previous button clicked');
                 quizManager.previousQuestion();
                 if (quizManager.isReviewMode) {
                     // Auto-show answer in review mode
@@ -526,11 +435,9 @@ class MLAQuizApp {
             nextBtnTop.addEventListener('click', async (e) => {
                 e.preventDefault();
                 if (nextBtnDebounce) {
-                    console.log('➡️ Next button debounced');
                     return;
                 }
                 nextBtnDebounce = true;
-                console.log('➡️ Next (top) button clicked');
                 const moved = quizManager.nextQuestion();
                 if (!moved) {
                     // Reached the end
@@ -540,7 +447,6 @@ class MLAQuizApp {
                         this.showResults();
                     } else {
                         // Finish the quiz
-                        console.log('🏁 Quiz finished via Next (top) button');
                         await quizManager.finishQuiz();
                     }
                 } else if (quizManager.isReviewMode) {
@@ -558,11 +464,9 @@ class MLAQuizApp {
             prevBtnTop.addEventListener('click', (e) => {
                 e.preventDefault();
                 if (prevBtnDebounce) {
-                    console.log('⬅️ Previous button debounced');
                     return;
                 }
                 prevBtnDebounce = true;
-                console.log('⬅️ Previous (top) button clicked');
                 quizManager.previousQuestion();
                 if (quizManager.isReviewMode) {
                     // Auto-show answer in review mode
@@ -578,7 +482,6 @@ class MLAQuizApp {
         const flagBtn = document.getElementById('flagBtn');
         if (flagBtn) {
             flagBtn.addEventListener('click', () => {
-                console.log('🚩 Flag button clicked');
                 quizManager.toggleFlag();
             });
         }
@@ -587,7 +490,6 @@ class MLAQuizApp {
         const finishBtn = document.getElementById('finishBtn');
         if (finishBtn) {
             finishBtn.addEventListener('click', async () => {
-                console.log('🏁 Finish quiz clicked');
                 const confirm = window.confirm('Are you sure you want to finish the quiz?');
                 if (confirm) {
                     await quizManager.finishQuiz();
@@ -600,7 +502,6 @@ class MLAQuizApp {
         const retryBtn = document.getElementById('retryBtn');
         if (retryBtn) {
             retryBtn.addEventListener('click', () => {
-                console.log('🔄 Retry button clicked');
                 quizManager.retryQuiz();
             });
         }
@@ -609,7 +510,6 @@ class MLAQuizApp {
         const reviewAnswersBtn = document.getElementById('reviewAnswersBtn');
         if (reviewAnswersBtn) {
             reviewAnswersBtn.addEventListener('click', () => {
-                console.log('📖 Review answers button clicked');
                 this.reviewAnswers();
             });
         }
@@ -618,7 +518,6 @@ class MLAQuizApp {
         const homeBtn = document.getElementById('homeBtn');
         if (homeBtn) {
             homeBtn.addEventListener('click', () => {
-                console.log('🏠 Home button clicked');
                 this.showScreen('quizSelection');
             });
         }
@@ -627,7 +526,6 @@ class MLAQuizApp {
         const generateReportBtn = document.getElementById('generate-report-btn');
         if (generateReportBtn) {
             generateReportBtn.addEventListener('click', () => {
-                console.log('📊 Generate report button clicked');
                 quizManager.generateStudyReport();
             });
         }
@@ -636,7 +534,6 @@ class MLAQuizApp {
         const floatingPdfBtn = document.getElementById('floating-pdf-btn');
         if (floatingPdfBtn) {
             floatingPdfBtn.addEventListener('click', () => {
-                console.log('📊 Floating PDF button clicked');
                 quizManager.generateStudyReport();
             });
         }
@@ -649,19 +546,15 @@ class MLAQuizApp {
                 if (calcBtn) {
                     const calcId = calcBtn.getAttribute('data-calc');
                     if (calcId) {
-                        console.log(`🧮 Calculator button clicked: ${calcId}`);
                         const calculator = calculatorManager.getCalculator(calcId);
                         if (calculator) {
                             calculatorManager.loadCalculator(calcId);
                         } else {
-                            console.warn(`⚠️ Calculator not found: ${calcId}. Available:`, 
-                                calculatorManager.getAllCalculators().map(c => c.id).join(', '));
                             uiManager.showToast(`Calculator "${calcId}" is not yet implemented in V2`, 'info');
                         }
                     }
                 }
             });
-            console.log('✅ Calculator panel event delegation setup');
         }
 
         // Quiz completion → Show results in UI
@@ -684,14 +577,12 @@ class MLAQuizApp {
 
         // Quiz started → Update UI
         eventBus.on(EVENTS.QUIZ_STARTED, (data) => {
-            console.log('📝 Quiz started:', data.quizName);
             this.showScreen('quizScreen');
             document.getElementById('navTitle').textContent = data.quizName || 'Quiz';
         });
 
         // Question rendered → Update UI
         eventBus.on('quiz:renderQuestion', (data) => {
-            console.log('📄 Rendering question:', data.index + 1);
             this.renderQuestion(data);
         });
 
@@ -718,28 +609,22 @@ class MLAQuizApp {
 
         // Calculator opened → Track
         eventBus.on(EVENTS.CALCULATOR_OPENED, (data) => {
-            console.log(`📊 Calculator opened: ${data.name}`);
             analytics.vibrateClick();
         });
 
         // Theme changed → Update everywhere
         eventBus.on(EVENTS.THEME_CHANGED, (data) => {
-            console.log(`🎨 Theme changed to: ${data.darkMode ? 'dark' : 'light'}`);
         });
 
         // UI tool switching (for calculators, etc.)
         eventBus.on(EVENTS.UI_SWITCH_TOOL, (data) => {
-            console.log(`🔧 Switching to tool: ${data.tool}`);
             this.switchTool(data.tool);
         });
 
         // Offline status updates → Update navbar indicators
         eventBus.on(EVENTS.OFFLINE_STATUS_UPDATE, (data) => {
-            console.log('📡 Offline status update:', data);
             this.updateOfflineStatusIndicators(data);
         });
-
-        console.log('✅ Cross-module communication setup complete');
     }
 
     /**
@@ -794,23 +679,19 @@ class MLAQuizApp {
     setupEventListeners() {
         // Online/Offline status
         window.addEventListener('online', () => {
-            console.log('🌐 App is online');
             uiManager.showToast('Connection restored', 'success');
         });
 
         window.addEventListener('offline', () => {
-            console.log('📡 App is offline');
             uiManager.showToast('You are offline. Some features may be limited.', 'warning');
         });
 
         // Visibility change (tab focus)
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
-                console.log('👋 App hidden');
                 // Save state when user leaves
                 this.saveState();
             } else {
-                console.log('👀 App visible');
             }
         });
 
@@ -824,15 +705,11 @@ class MLAQuizApp {
      * Initialize UI
      */
     async initializeUI() {
-        console.log('🎨 Initializing UI...');
-
         // Setup navigation
         this.setupNavigation();
 
         // Setup global keyboard shortcuts
         this.setupKeyboardShortcuts();
-
-        console.log('✅ UI initialized');
     }
 
     /**
@@ -885,18 +762,14 @@ class MLAQuizApp {
         };
 
         storage.setItem(STORAGE_KEYS.APP_STATE, state);
-        console.log('💾 App state saved');
     }
 
     /**
      * Restore application state
      */
     async restoreState() {
-        console.log('🔄 Restoring app state...');
-
         const state = await storage.getItem(STORAGE_KEYS.APP_STATE);
         if (state) {
-            console.log('✅ Previous state found, restoring...');
             // State already restored by individual managers
         }
 
@@ -915,8 +788,6 @@ class MLAQuizApp {
                 eventBus.emit(EVENTS.QUIZ_RESUME_REQUESTED, quizProgress);
             }
         }
-
-        console.log('✅ State restoration complete');
     }
 
     /**
@@ -968,7 +839,6 @@ class MLAQuizApp {
         const targetPanel = document.getElementById(panelId);
         if (targetPanel) {
             targetPanel.classList.add('active');
-            console.log(`✅ Switched to panel: ${panelId}`);
             
             // Load content for the selected tool using V2 managers
             this.loadToolContent(toolType, targetPanel);
@@ -1051,8 +921,6 @@ class MLAQuizApp {
         } else {
             container.innerHTML = '<div class="no-content">PDF Library manager not available</div>';
         }
-        
-        console.log('📚 PDF library content loaded');
     }
 
     /**
@@ -1103,8 +971,6 @@ class MLAQuizApp {
         const voiceBtn = container.querySelector('#drug-voice-btn-v2');
         const voiceStatus = container.querySelector('#drug-voice-status-v2');
         const drugListContainer = container.querySelector('#drug-list-v2');
-        
-        console.log('🔍 Elements found - searchInput:', searchInput, 'searchBtn:', searchBtn, 'container:', container);
         
         // Search functionality with TTS buttons
         const handleSearch = async () => {
@@ -1438,7 +1304,6 @@ class MLAQuizApp {
     loadCalculatorsContent(panel) {
         const calculators = calculatorManager.getAllCalculators();
         // Calculators should already be rendered in the HTML panel
-        console.log(`🧮 Calculators content loaded: ${calculators.length} calculators available`);
     }
 
     /**
@@ -1560,8 +1425,6 @@ class MLAQuizApp {
             searchInput.addEventListener('input', performSearch);
             searchBtn.addEventListener('click', performSearch);
         }
-        
-        console.log('🧪 Lab values content loaded');
     }
 
     /**
@@ -1758,8 +1621,6 @@ class MLAQuizApp {
             searchInput.addEventListener('input', performSearch);
             searchBtn.addEventListener('click', performSearch);
         }
-        
-        console.log('📋 Guidelines content loaded');
     }
     
     /**
@@ -1977,7 +1838,6 @@ class MLAQuizApp {
 
         container.scrollTop = 0;
         window.scrollTo(0, 0);
-        console.log('💉 Vaccination programme content loaded');
     }
 
     /**
@@ -2091,8 +1951,6 @@ class MLAQuizApp {
                 filterMnemonics();
             });
         });
-        
-        console.log('🧠 Mnemonics content loaded');
     }
     
     /**
@@ -2208,8 +2066,6 @@ class MLAQuizApp {
         
         // Show all symptoms initially
         this.showDdxCategory('all');
-        
-        console.log('🔍 Differential diagnosis content loaded');
     }
 
     /**
@@ -2621,8 +2477,6 @@ class MLAQuizApp {
         
         // Show all examinations initially
         this.showExaminationCategory('all');
-        
-        console.log('🩺 Examination guides content loaded');
     }
 
     /**
@@ -2844,8 +2698,6 @@ class MLAQuizApp {
         
         // Display all protocols initially
         this.displayEmergencyProtocols(Object.keys(emergencyProtocolsData));
-        
-        console.log('🚨 Emergency protocols content loaded');
     }
 
     /**
@@ -3019,8 +2871,6 @@ class MLAQuizApp {
             // Ensure the panel scroll position resets for a fresh view
             panel.scrollTop = 0;
             container.scrollTop = 0;
-
-            console.log('📊 Interpretation tools content loaded via InterpretationToolsManager');
             return;
         }
 
@@ -3091,8 +2941,6 @@ class MLAQuizApp {
             searchInput.addEventListener('input', performSearch);
             searchBtn.addEventListener('click', performSearch);
         }
-
-        console.log('📊 Interpretation tools content loaded (legacy mode)');
     }
 
     /**
@@ -3308,14 +3156,12 @@ class MLAQuizApp {
                 screen.style.display = 'none';
             }
         });
-        console.log(`📄 Showing screen: ${screenId}`);
     }
 
     /**
      * Load and render quiz list
      */
     async loadQuizList() {
-        console.log('📋 Loading quiz list...');
         const quizList = document.getElementById('quiz-list');
         if (!quizList) {
             console.error('❌ Quiz list container not found');
@@ -3324,7 +3170,6 @@ class MLAQuizApp {
 
         // Get uploaded quizzes with V1-compatible reconstruction
         const uploadedQuizzes = await quizManager.getUploadedQuizzes();
-        console.log(`📂 Found ${uploadedQuizzes.length} uploaded quizzes:`, uploadedQuizzes);
         
         // Get server quizzes (if available)
         let serverQuizzes = [];
@@ -3334,7 +3179,7 @@ class MLAQuizApp {
                 const data = await response.json();
                 if (data.success) {
                     serverQuizzes = data.quizzes || [];
-                    console.log(`📡 Fetched ${serverQuizzes.length} server quizzes`);
+                    
                 } else {
                     console.log('📝 No server quizzes available:', data.error);
                 }
@@ -5543,7 +5388,5 @@ if (document.readyState === 'loading') {
 } else {
     initializeEnhancedSections();
 }
-
-console.log('📦 MLA Quiz PWA modules loaded');
 
 export default app;

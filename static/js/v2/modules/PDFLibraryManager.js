@@ -348,7 +348,7 @@ export class PDFLibraryManager {
             throw new Error('pdf.js library not loaded');
         }
 
-        const url = `/assets/${filename}`;
+        const url = `/static/assets/${filename}`;
 
         eventBus.emit('PDF_LOADING', { filename });
 
@@ -390,6 +390,14 @@ export class PDFLibraryManager {
             console.error('Error rendering PDF:', error);
             eventBus.emit('PDF_ERROR', { filename, error: error.message });
 
+            // Helpful hint for debugging missing files
+            try {
+                if (error && error.message && /404|Not Found/i.test(error.message)) {
+                    console.warn(`⚠️ PDF file not found at ${url}. Ensure PDFs are placed in /static/assets/ or update the path.`);
+                }
+            } catch (e) {
+                // ignore
+            }
             return `
                 <div class="card error-card">
                     <div class="q-header">
