@@ -348,7 +348,7 @@ export class PDFLibraryManager {
             throw new Error('pdf.js library not loaded');
         }
 
-        const url = `/static/assets/pdfs/${filename}`;
+        const url = `/assets/${filename}`;
 
         eventBus.emit('PDF_LOADING', { filename });
 
