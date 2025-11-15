@@ -3,8 +3,35 @@
  * Initializes all managers and wires up the modular architecture
  */
 
+console.log('🔍 DEBUG: main.js file loaded and executing...');
+
+// Simple test to see if basic functionality works
+console.log('🔍 DEBUG: Testing basic JavaScript execution...');
+
+try {
+    // Test basic class creation
+    class TestClass {
+        constructor() {
+            this.test = 'working';
+        }
+    }
+    const test = new TestClass();
+    console.log('🔍 DEBUG: Basic class creation works:', test.test);
+} catch (error) {
+    console.error('🔍 DEBUG: Basic class creation failed:', error);
+}
+
+// Test module import
+try {
+    console.log('🔍 DEBUG: Attempting to import EventBus...');
+    // Temporarily comment out all imports to see if basic loading works
+    // import { eventBus } from './modules/EventBus.js';
+    console.log('🔍 DEBUG: Import test completed');
+} catch (error) {
+    console.error('🔍 DEBUG: Import failed:', error);
+}
+
 // Foundation Modules
-import { eventBus } from './modules/EventBus.js';
 import { storage, storageManager } from './modules/StorageManager.js';
 import { orientationManager } from './modules/OrientationManager.js';
 import { analytics } from './modules/AnalyticsManager.js';
@@ -42,6 +69,7 @@ import calculatorBridge from './modules/CalculatorBridge.js';
  */
 class MLAQuizApp {
     constructor() {
+        console.log('🔍 DEBUG: MLAQuizApp constructor called');
         this.initialized = false;
         this.drugManager = new DrugReferenceManager();
         this.labManager = new LabValuesManager();
@@ -58,13 +86,16 @@ class MLAQuizApp {
         this.calculatorBridge = calculatorBridge;
         this.offlineManager = new OfflineManager();
         this.toolsPreloaded = false;
+        console.log('🔍 DEBUG: MLAQuizApp constructor completed, calling setupEventListeners');
         this.setupEventListeners();
+        console.log('🔍 DEBUG: MLAQuizApp constructor finished');
     }
 
     /**
      * Initialize the application
      */
     async initialize() {
+        console.log('🔍 DEBUG: initialize() method called');
         if (this.initialized) {
             console.warn('App already initialized');
             return;
@@ -73,27 +104,34 @@ class MLAQuizApp {
         console.log('🚀 Initializing MLA Quiz PWA...');
 
         try {
+            console.log('🔍 DEBUG: Showing loading overlay');
             // Show loading
             uiManager.showLoadingOverlay('Initializing app...');
 
+            console.log('🔍 DEBUG: Calling initializeManagers');
             // Initialize managers in order
             await this.initializeManagers();
 
+            console.log('🔍 DEBUG: Setting up cross-module communication');
             // Wire up cross-module communication
             this.setupCrossModuleCommunication();
 
+            console.log('🔍 DEBUG: Initializing UI');
             // Initialize UI
             await this.initializeUI();
 
+            console.log('🔍 DEBUG: Restoring state');
             // Load any saved state
             await this.restoreState();
 
             this.initialized = true;
             console.log('✅ MLA Quiz PWA initialized successfully');
 
+            console.log('🔍 DEBUG: Hiding loading overlay');
             // Hide loading
             uiManager.hideLoadingOverlay();
 
+            console.log('🔍 DEBUG: Emitting APP_READY event');
             // Emit ready event
             eventBus.emit(EVENTS.APP_READY);
 
