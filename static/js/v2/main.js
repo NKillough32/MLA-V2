@@ -25,6 +25,7 @@ import { GuidelinesManager } from './modules/GuidelinesManager.js';
 import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
+import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 
 // Clinical Feature Modules (bridge to V1)
 import { differentialDxManager } from './modules/DifferentialDxManager.js';
@@ -52,6 +53,7 @@ class MLAQuizApp {
         this.triadsManager = triadsManager;
         this.examinationManager = examinationManager;
         this.emergencyProtocolsManager = emergencyProtocolsManager;
+        this.pdfLibraryManager = new PDFLibraryManager();
         this.v2Integration = v2Integration;
         this.calculatorBridge = calculatorBridge;
         this.offlineManager = new OfflineManager();
@@ -919,7 +921,8 @@ class MLAQuizApp {
             'mnemonics': 'mnemonics-panel',
             'quiz-practice': 'quiz-panel',
             'case-studies': 'case-studies-panel',
-            'learning-pathways': 'learning-pathways-panel'
+            'learning-pathways': 'learning-pathways-panel',
+            'pdf-library': 'pdf-library-panel'
         };
         
         // Show selected panel
@@ -983,7 +986,35 @@ class MLAQuizApp {
             case 'ladders':
                 this.loadLaddersContent(panel);
                 break;
+            case 'pdf-library':
+                this.loadPDFLibraryContent(panel);
+                break;
         }
+    }
+
+    /**
+     * Load PDF library content
+     */
+    loadPDFLibraryContent(panel) {
+        if (!panel) {
+            console.error('loadPDFLibraryContent: panel is null');
+            return;
+        }
+        const container = panel.querySelector('#pdf-library-container') || panel;
+        
+        // Initialize PDF library manager if not already done
+        if (this.pdfLibraryManager && typeof this.pdfLibraryManager.initialize === 'function') {
+            this.pdfLibraryManager.initialize();
+        }
+        
+        // Use the manager to render the PDF library content
+        if (this.pdfLibraryManager && typeof this.pdfLibraryManager.renderList === 'function') {
+            this.pdfLibraryManager.renderList();
+        } else {
+            container.innerHTML = '<div class="no-content">PDF Library manager not available</div>';
+        }
+        
+        console.log('📚 PDF library content loaded');
     }
 
     /**
@@ -5142,6 +5173,7 @@ window.guidelinesManager = app.guidelinesManager;
 window.mnemonicsManager = app.mnemonicsManager;
 window.interpretationToolsManager = app.interpretationToolsManager;
 window.laddersManager = app.laddersManager;
+window.pdfLibraryManager = app.pdfLibraryManager;
 window.differentialDxManager = differentialDxManager;
 window.triadsManager = triadsManager;
 window.examinationManager = examinationManager;
@@ -5161,6 +5193,7 @@ window.initializeV2Integration = function(v1AppInstance) {
         window.mnemonicsManager = app.mnemonicsManager;
         window.interpretationToolsManager = app.interpretationToolsManager;
         window.laddersManager = app.laddersManager;
+        window.pdfLibraryManager = app.pdfLibraryManager;
         
         return true;
     }
