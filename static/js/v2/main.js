@@ -300,6 +300,7 @@ class MLAQuizApp {
                             btn.classList.remove('active');
                         });
                         toolBtn.classList.add('active');
+                        this.ensureToolTabVisible(toolBtn);
                     }
                 }
             });
@@ -322,11 +323,15 @@ class MLAQuizApp {
                         if (activeBtn) {
                             const toolType = activeBtn.getAttribute('data-tool');
                             this.switchTool(toolType);
+                            this.ensureToolTabVisible(activeBtn);
                         } else {
                             // Default to calculators
                             this.switchTool('calculators');
                             const calcBtn = medicalToolsPanel.querySelector('[data-tool="calculators"]');
-                            if (calcBtn) calcBtn.classList.add('active');
+                            if (calcBtn) {
+                                calcBtn.classList.add('active');
+                                this.ensureToolTabVisible(calcBtn);
+                            }
                         }
                     }
                 }
@@ -700,6 +705,31 @@ class MLAQuizApp {
         }
     }
 
+    ensureToolTabVisible(button) {
+        if (!button) {
+            return;
+        }
+
+        const navContainer = button.closest('.tools-navigation');
+        if (!navContainer) {
+            return;
+        }
+
+        if (navContainer.scrollWidth <= navContainer.clientWidth) {
+            return;
+        }
+
+        try {
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+        } catch (e) {
+            button.scrollIntoView();
+        }
+    }
+
     /**
      * Setup global event listeners
      */
@@ -831,6 +861,7 @@ class MLAQuizApp {
         const activeNavBtn = document.querySelector(`[data-tool="${toolType}"]`);
         if (activeNavBtn) {
             activeNavBtn.classList.add('active');
+            this.ensureToolTabVisible(activeNavBtn);
         }
         
         // Hide all panels

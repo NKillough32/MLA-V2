@@ -3570,12 +3570,22 @@
             .tool-nav-btn {
                 font-size: 11px;
                 padding: 10px 12px;
-                min-width: fit-content;
-                flex: 1 1 auto;
+                width: 100%;
+                min-width: 0;
+                justify-content: flex-start;
             }
-            
+
             .tools-navigation {
-                gap: 4px;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 6px;
+                overflow: visible;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .tool-nav-btn {
+                grid-column: span 2;
             }
         }
         
