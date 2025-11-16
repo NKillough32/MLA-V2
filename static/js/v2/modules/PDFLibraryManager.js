@@ -28,6 +28,13 @@ export class PDFLibraryManager {
 
         console.log('📚 Initializing PDFLibraryManager...');
 
+        // Debug: report whether pdf.js was injected before this script runs
+        try {
+            console.debug('🔍 window.pdfjsLib present?', !!(typeof window !== 'undefined' && window.pdfjsLib));
+        } catch (e) {
+            console.debug('🔍 window access error when checking pdfjsLib', e);
+        }
+
         // Load recent PDFs from storage (lightweight)
         const stored = storage.getItem('recentPDFs');
         if (stored) {
@@ -63,8 +70,10 @@ export class PDFLibraryManager {
 
         if (!this.pdfjsLib) {
             try {
+                console.debug('🔁 pdfjsLib not found; attempting CDN load');
                 await this.loadPdfJsFromCDN();
                 this.pdfjsLib = window.pdfjsLib || null;
+                console.debug('🔍 After CDN load: window.pdfjsLib present?', !!this.pdfjsLib);
             } catch (cdnError) {
                 console.error('❌ Failed to load pdf.js from CDN:', cdnError);
                 this.pdfjsLib = null;
@@ -78,13 +87,15 @@ export class PDFLibraryManager {
             if (this.pdfjsLib && this.pdfjsLib.GlobalWorkerOptions) {
                 // Prefer local worker if served with app, otherwise point to CDN
                 this.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
+                console.debug('🔧 Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', LOCAL_WORKER);
             }
             // Also defensively update window.pdfjsLib if present
             if (typeof window !== 'undefined' && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
                 window.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
+                console.debug('🔧 Set window.pdfjsLib.GlobalWorkerOptions.workerSrc ->', LOCAL_WORKER);
             }
         } catch (e) {
-            // Non-fatal: workerSrc may be set later by the app or CDN loader
+            console.warn('⚠️ Could not set workerSrc on pdfjsLib:', e);
         }
 
         this.initialized = true;
@@ -114,11 +125,21 @@ export class PDFLibraryManager {
             script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
             script.onload = () => {
                 this.pdfjsLib = window.pdfjsLib;
-                this.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+                try {
+                    if (this.pdfjsLib && this.pdfjsLib.GlobalWorkerOptions) {
+                        this.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+                        console.debug('🔧 Set workerSrc to CDN worker after CDN script load');
+                    }
+                } catch (e) {
+                    console.warn('⚠️ Could not set workerSrc after CDN pdf.js load:', e);
+                }
                 console.log('✅ pdf.js loaded from CDN');
                 resolve();
             };
-            script.onerror = reject;
+            script.onerror = (e) => {
+                console.error('❌ Failed to load pdf.min.js from CDN', e);
+                reject(new Error('Failed to load pdf.min.js from CDN'));
+            };
             document.head.appendChild(script);
         });
     }
