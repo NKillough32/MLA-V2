@@ -168,9 +168,11 @@ export class PDFLibraryManager {
         }
 
         // Load recent PDFs from storage (lightweight)
-        const stored = storage.getItem('recentPDFs');
-        if (stored) {
+        const stored = await storage.getItem('recentPDFs');
+        if (Array.isArray(stored)) {
             this.recentPDFs = stored;
+        } else if (stored && typeof stored === 'object') {
+            this.recentPDFs = Object.values(stored);
         }
 
         // Load PDF index
