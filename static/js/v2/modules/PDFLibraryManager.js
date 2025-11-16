@@ -6,6 +6,126 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 
+const normalizePdfTitleKey = (value) => (value || '')
+    .toString()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '');
+
+const PDF_TITLE_OVERRIDES = new Map([
+    [normalizePdfTitleKey('4asdelirium'), "4A's Delirium Assessment"],
+    [normalizePdfTitleKey('4asdelerium'), "4A's Delirium Assessment"],
+    [normalizePdfTitleKey('4cmortality'), '4C COVID-19 Mortality Score'],
+    [normalizePdfTitleKey('4peps'), '4PEPS Pulmonary Embolism Rule'],
+    [normalizePdfTitleKey('6minutewalkdistance'), '6 Minute Walk Distance'],
+    [normalizePdfTitleKey('age-adjusted d-dimer'), 'Age-Adjusted D-Dimer'],
+    [normalizePdfTitleKey('ageadjustedcrpesr'), 'Age-Adjusted CRP/ESR'],
+    [normalizePdfTitleKey('adjustedbodyweight'), 'Adjusted Body Weight Calculator'],
+    [normalizePdfTitleKey('apachescore'), 'APACHE Score'],
+    [normalizePdfTitleKey('apgarscore'), 'APGAR Score'],
+    [normalizePdfTitleKey('air'), 'AIR Score (Appendicitis Inflammatory Response)']
+]);
+
+const ABBREVIATION_EXPANSIONS = new Map([
+    ['AX', 'Assessment'],
+    ['MX', 'Management'],
+    ['DX', 'Diagnosis'],
+    ['HX', 'History'],
+    ['PX', 'Prophylaxis'],
+    ['RX', 'Prescription'],
+    ['TX', 'Treatment'],
+    ['FX', 'Fracture'],
+    ['IV', 'Intravenous'],
+    ['IM', 'Intramuscular'],
+    ['PO', 'Oral'],
+    ['PR', 'Rectal'],
+    ['SC', 'Subcutaneous'],
+    ['MSK', 'Musculoskeletal'],
+    ['CV', 'Cardiovascular'],
+    ['GI', 'Gastrointestinal'],
+    ['GU', 'Genitourinary'],
+    ['ENT', 'Ear Nose Throat'],
+    ['COPD', 'Chronic Obstructive Pulmonary Disease'],
+    ['CHF', 'Congestive Heart Failure'],
+    ['MI', 'Myocardial Infarction'],
+    ['PE', 'Pulmonary Embolism'],
+    ['DVT', 'Deep Vein Thrombosis'],
+    ['AKI', 'Acute Kidney Injury'],
+    ['CKD', 'Chronic Kidney Disease'],
+    ['UTI', 'Urinary Tract Infection'],
+    ['SOB', 'Shortness Of Breath'],
+    ['ABG', 'Arterial Blood Gas'],
+    ['GCS', 'Glasgow Coma Scale'],
+    ['NIHSS', 'NIH Stroke Scale'],
+    ['MEWS', 'Modified Early Warning Score'],
+    ['NEWS', 'National Early Warning Score'],
+    ['NEWS2', 'NEWS 2'],
+    ['PHQ', 'Patient Health Questionnaire'],
+    ['GAD', 'General Anxiety Disorder'],
+    ['BSA', 'Body Surface Area'],
+    ['BMI', 'Body Mass Index'],
+    ['MAP', 'Mean Arterial Pressure'],
+    ['LRINEC', 'LRINEC Score'],
+    ['MELD', 'MELD Score'],
+    ['SOFA', 'SOFA Score'],
+    ['QSOFA', 'qSOFA Score'],
+    ['CRP', 'C-Reactive Protein'],
+    ['ESR', 'Erythrocyte Sedimentation Rate']
+]);
+
+const ALWAYS_UPPERCASE_WORDS = new Set([
+    'ABG', 'AKI', 'ALS', 'ADHD', 'BMI', 'BSA', 'CAD', 'CKD', 'COPD', 'CT', 'CXR', 'DM', 'ECG',
+    'ENT', 'GI', 'GU', 'GFR', 'GCS', 'HIV', 'HTN', 'IBD', 'IBS', 'INR', 'IV', 'MRI', 'MSK',
+    'NIHSS', 'NSAID', 'PE', 'PO', 'PR', 'PTT', 'PT', 'PTA', 'PTSD', 'PVC', 'RX', 'SC', 'SOB',
+    'TIA', 'UTI', 'WBC', 'NEWS', 'NEWS2', 'MEWS', 'LRINEC', 'MELD', 'SOFA', 'QSOFA'
+]);
+
+const KEYWORD_INSERTS = [
+    'ANXIETY', 'SCALE', 'SCORE', 'INDEX', 'ASSESSMENT', 'GUIDELINE', 'GUIDE', 'CRITERIA',
+    'CALCULATOR', 'CALCULATION', 'CLASSIFICATION', 'ALGORITHM', 'PROTOCOL', 'DIAGNOSIS',
+    'MANAGEMENT', 'TREATMENT', 'THERAPY', 'PATHWAY', 'FORMULA', 'MODEL', 'STAGING', 'SCREEN',
+    'CHECKLIST', 'QUESTIONNAIRE', 'OVERVIEW', 'RISK', 'WORKUP', 'SUMMARY', 'CONSENT',
+    'PROPHYLAXIS', 'DELIRIUM', 'DELERIUM', 'MORTALITY', 'DISTANCE', 'ADJUSTED', 'ANION',
+    'WEIGHT', 'BODY', 'PRESSURE', 'VOLUME', 'INFUSION', 'DOSING', 'SODIUM', 'POTASSIUM',
+    'MAGNESIUM', 'CALCIUM', 'PHOSPHATE', 'GLUCOSE', 'FRACTURE', 'BLEED', 'BLEEDING',
+    'ANATOMY', 'EXAMINATION', 'EXAM', 'ANALYSIS', 'EMERGENCY', 'NEUROLOGY', 'CARDIOLOGY',
+    'RESPIRATORY', 'RENAL', 'HEPATIC', 'PEDIATRIC', 'PAEDIATRIC', 'NEPHROLOGY'
+];
+
+const CATEGORY_TITLE_RULES = new Map([
+    ['assessment', {
+        descriptor: 'Assessment Tool',
+        keywords: ['assessment', 'screen', 'checklist', 'questionnaire', 'exam', 'review', 'history']
+    }],
+    ['calculators', {
+        descriptor: 'Calculator',
+        keywords: ['calculator', 'calc', 'score', 'index', 'ratio', 'rate', 'volume', 'risk', 'dose', 'dosing']
+    }],
+    ['management', {
+        descriptor: 'Management Guide',
+        keywords: ['management', 'treatment', 'therapy', 'protocol', 'guideline', 'care', 'plan']
+    }],
+    ['diagnosis', {
+        descriptor: 'Diagnostic Guide',
+        keywords: ['diagnosis', 'diagnostic', 'criteria', 'workup', 'investigation']
+    }],
+    ['scoring', {
+        descriptor: 'Score',
+        keywords: ['score', 'scale', 'scoring', 'index', 'classification', 'stage', 'staging']
+    }],
+    ['emergency', {
+        descriptor: 'Emergency Reference',
+        keywords: ['emergency', 'resuscitation', 'arrest', 'shock', 'sepsis', 'acute']
+    }],
+    ['anatomy', {
+        descriptor: 'Anatomy Reference',
+        keywords: ['anatomy', 'diagram', 'msk', 'nerve', 'vascular', 'bone']
+    }],
+    ['other', {
+        descriptor: 'Clinical Reference',
+        keywords: ['reference', 'overview', 'summary', 'consent']
+    }]
+]);
+
 export class PDFLibraryManager {
     constructor() {
         this.pdfIndex = null;
@@ -41,6 +161,65 @@ export class PDFLibraryManager {
         return this.escapeHtml(value)
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
+    }
+
+    applyKeywordSpacing(text) {
+        let result = text;
+        for (const keyword of KEYWORD_INSERTS) {
+            const regex = new RegExp(keyword, 'gi');
+            result = result.replace(regex, (match, offset, full) => {
+                const precedingChar = offset > 0 ? full[offset - 1] : '';
+                const needsSpace = offset > 0 && precedingChar.trim() !== '';
+                const formatted = match.charAt(0) + match.slice(1).toLowerCase();
+                return `${needsSpace ? ' ' : ''}${formatted}`;
+            });
+        }
+        return result;
+    }
+
+    expandAbbreviationWord(word) {
+        if (!word) {
+            return '';
+        }
+        const cleaned = word.replace(/[^a-z0-9]/gi, '');
+        if (!cleaned) {
+            return word;
+        }
+        const lookup = cleaned.toUpperCase();
+        if (ABBREVIATION_EXPANSIONS.has(lookup)) {
+            return ABBREVIATION_EXPANSIONS.get(lookup);
+        }
+        return word;
+    }
+
+    titleCaseWord(word) {
+        if (!word) {
+            return '';
+        }
+        const leading = word.match(/^[^a-zA-Z0-9]+/);
+        const trailing = word.match(/[^a-zA-Z0-9]+$/);
+        const core = word
+            .replace(/^[^a-zA-Z0-9]+/, '')
+            .replace(/[^a-zA-Z0-9]+$/, '');
+        if (!core) {
+            return word;
+        }
+
+        const coreUpper = core.toUpperCase();
+        if (ALWAYS_UPPERCASE_WORDS.has(coreUpper)) {
+            return `${leading ? leading[0] : ''}${coreUpper}${trailing ? trailing[0] : ''}`;
+        }
+
+        if (/^(?:[IVXLCDM]+)$/i.test(core) && core.length <= 4) {
+            return `${leading ? leading[0] : ''}${coreUpper}${trailing ? trailing[0] : ''}`;
+        }
+
+        if (/^\d+$/.test(core)) {
+            return `${leading ? leading[0] : ''}${core}${trailing ? trailing[0] : ''}`;
+        }
+
+        const formatted = core.charAt(0).toUpperCase() + core.slice(1).toLowerCase();
+        return `${leading ? leading[0] : ''}${formatted}${trailing ? trailing[0] : ''}`;
     }
 
     /**
@@ -205,7 +384,7 @@ export class PDFLibraryManager {
             if (filename.toLowerCase().includes(searchTerm)) {
                 results.push({
                     filename: filename,
-                    title: this.formatPDFTitle(filename),
+                    title: this.getDisplayTitle(filename),
                     category: this.categorizePDF(filename)
                 });
             }
@@ -257,7 +436,7 @@ export class PDFLibraryManager {
         if (categoryId === 'all') {
             return this.pdfIndex.map(filename => ({
                 filename: filename,
-                title: this.formatPDFTitle(filename),
+                title: this.getDisplayTitle(filename),
                 category: this.categorizePDF(filename)
             }));
         }
@@ -266,7 +445,7 @@ export class PDFLibraryManager {
             .filter(filename => this.categorizePDF(filename) === categoryId)
             .map(filename => ({
                 filename: filename,
-                title: this.formatPDFTitle(filename),
+                title: this.getDisplayTitle(filename),
                 category: categoryId
             }));
     }
@@ -333,90 +512,72 @@ export class PDFLibraryManager {
      * @returns {string} Formatted title
      */
     formatPDFTitle(filename) {
-        // Remove 'info.pdf' suffix and format
-        let title = filename.replace(/info\.pdf$/i, '').replace(/\.pdf$/i, '');
+        let baseTitle = (filename || '')
+            .replace(/info\.pdf$/i, '')
+            .replace(/\.pdf$/i, '');
 
-        // Replace common abbreviations
-        const abbreviations = {
-            'Mx': 'Management',
-            'Ax': 'Assessment',
-            'GCS': 'Glasgow Coma Scale',
-            'NIHSS': 'NIH Stroke Scale',
-            'ABG': 'Arterial Blood Gas',
-            'ECG': 'Electrocardiogram',
-            'CXR': 'Chest X-Ray',
-            'AXR': 'Abdominal X-Ray',
-            'CT': 'CT Scan',
-            'MRI': 'MRI Scan',
-            'IV': 'Intravenous',
-            'IM': 'Intramuscular',
-            'PO': 'Oral',
-            'PR': 'Rectal',
-            'SC': 'Subcutaneous',
-            'MSK': 'Musculoskeletal',
-            'CV': 'Cardiovascular',
-            'GI': 'Gastrointestinal',
-            'GU': 'Genitourinary',
-            'ENT': 'Ear Nose Throat',
-            'COPD': 'Chronic Obstructive Pulmonary Disease',
-            'CHF': 'Congestive Heart Failure',
-            'MI': 'Myocardial Infarction',
-            'PE': 'Pulmonary Embolism',
-            'DVT': 'Deep Vein Thrombosis',
-            'AKI': 'Acute Kidney Injury',
-            'CKD': 'Chronic Kidney Disease',
-            'UTI': 'Urinary Tract Infection',
-            'SOB': 'Shortness of Breath',
-            'CP': 'Chest Pain',
-            'NVD': 'Nausea Vomiting Diarrhea',
-            'BM': 'Bowel Movement',
-            'PR': 'Per Rectum',
-            'PV': 'Per Vaginam',
-            'PID': 'Pelvic Inflammatory Disease',
-            'STI': 'Sexually Transmitted Infection',
-            'HIV': 'Human Immunodeficiency Virus',
-            'AIDS': 'Acquired Immune Deficiency Syndrome',
-            'DM': 'Diabetes Mellitus',
-            'HTN': 'Hypertension',
-            'CAD': 'Coronary Artery Disease',
-            'PAD': 'Peripheral Artery Disease',
-            'CVA': 'Cerebrovascular Accident',
-            'TIA': 'Transient Ischemic Attack',
-            'MS': 'Multiple Sclerosis',
-            'ALS': 'Amyotrophic Lateral Sclerosis',
-            'IBS': 'Irritable Bowel Syndrome',
-            'IBD': 'Inflammatory Bowel Disease',
-            'GERD': 'Gastroesophageal Reflux Disease',
-            'PUD': 'Peptic Ulcer Disease',
-            'BPH': 'Benign Prostatic Hyperplasia',
-            'PSA': 'Prostate Specific Antigen',
-            'CA': 'Cancer',
-            ' mets': ' metastases',
-            'Sx': 'Symptoms',
-            'Tx': 'Treatment',
-            'Rx': 'Prescription',
-            'Hx': 'History',
-            'Px': 'Prophylaxis',
-            'Dx': 'Diagnosis',
-            'Fx': 'Fracture',
-            'Tx': 'Transfusion'
-        };
-
-        // Replace abbreviations
-        for (const [abbr, full] of Object.entries(abbreviations)) {
-            title = title.replace(new RegExp(abbr, 'gi'), full);
+        const overrideKey = normalizePdfTitleKey(baseTitle);
+        if (PDF_TITLE_OVERRIDES.has(overrideKey)) {
+            return PDF_TITLE_OVERRIDES.get(overrideKey);
         }
 
-        // Add spaces before capital letters (camelCase to Title Case)
-        title = title.replace(/([a-z])([A-Z])/g, '$1 $2');
+        let title = baseTitle
+            .replace(/[_/]+/g, ' ')
+            .replace(/-/g, ' ')
+            .replace(/([a-z])([A-Z])/g, '$1 $2')
+            .replace(/(\d)([A-Za-z])/g, '$1 $2')
+            .replace(/([A-Za-z])(\d)/g, '$1 $2');
 
-        // Capitalize first letter of each word
-        title = title.replace(/\b\w/g, l => l.toUpperCase());
+        title = this.applyKeywordSpacing(title);
 
-        // Clean up multiple spaces
+        // Separate roman numerals that are attached to words (e.g., APACHEIIScore)
+        title = title.replace(/([A-Za-z])([IVXLCDM]{1,4})(?![a-z])/g, '$1 $2');
+
         title = title.replace(/\s+/g, ' ').trim();
 
-        return title;
+        const parts = [];
+        for (const chunk of title.split(' ')) {
+            if (!chunk) continue;
+            const expanded = this.expandAbbreviationWord(chunk);
+            if (typeof expanded === 'string' && expanded.includes(' ')) {
+                parts.push(...expanded.split(' '));
+            } else if (expanded) {
+                parts.push(expanded);
+            }
+        }
+
+        const formattedTitle = parts
+            .map(part => this.titleCaseWord(part))
+            .join(' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        return formattedTitle;
+    }
+
+    getDisplayTitle(filename) {
+        const baseTitle = this.formatPDFTitle(filename);
+        const category = this.categorizePDF(filename);
+        const descriptor = this.getCategoryDescriptor(category, baseTitle);
+        if (descriptor) {
+            return `${baseTitle} ${descriptor}`;
+        }
+        return baseTitle;
+    }
+
+    getCategoryDescriptor(categoryId, title) {
+        if (!categoryId) {
+            return '';
+        }
+        const rule = CATEGORY_TITLE_RULES.get(categoryId);
+        if (!rule) {
+            return '';
+        }
+        const normalizedTitle = title.toLowerCase();
+        if (rule.keywords.some(keyword => normalizedTitle.includes(keyword))) {
+            return '';
+        }
+        return rule.descriptor;
     }
 
     /**
@@ -450,7 +611,7 @@ export class PDFLibraryManager {
                 // Android PWAs that run in standalone mode now attempt the inline
                 // pdf.js renderer first so that installed users keep the same
                 // experience as the browser version.
-                console.debug('📄 Standalone display mode detected; keeping inline PDF renderer active.');
+            console.debug('📄 Standalone display mode detected; keeping inline PDF renderer active.');
             }
 
             return shouldFallback;
@@ -488,24 +649,24 @@ export class PDFLibraryManager {
     async renderPDFToHTML(filename) {
         const url = this.getPDFUrl(filename);
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
-        const safeDisplayTitle = this.escapeHtml(this.formatPDFTitle(filename));
-
+        const displayTitle = this.getDisplayTitle(filename);
+        const safeDisplayTitle = this.escapeHtml(displayTitle);
 
         if (!url) {
             console.error('Unable to construct PDF URL for', filename);
-            return this.renderPDFFallback(filename, safeDisplayTitle);
+            return this.renderPDFFallback(filename, displayTitle);
         }
 
         if (this.shouldPreferNativeViewer()) {
             console.warn('Forcing native PDF viewer for this Android environment');
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'android_native' });
-            return this.renderPDFFallback(filename, safeDisplayTitle, url);
+            return this.renderPDFFallback(filename, displayTitle, url);
         }
 
         if (!this.pdfjsLib) {
             console.warn('pdf.js library not loaded, using browser PDF fallback for', filename);
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'pdfjs_missing' });
-            return this.renderPDFFallback(filename, safeDisplayTitle, url);
+            return this.renderPDFFallback(filename, displayTitle, url);
         }
 
         eventBus.emit('PDF_LOADING', { filename });
@@ -603,7 +764,7 @@ export class PDFLibraryManager {
 
             // Gracefully fall back to the browser's built-in PDF renderer
             try {
-                const fallbackHtml = this.renderPDFFallback(filename, safeDisplayTitle, url);
+                const fallbackHtml = this.renderPDFFallback(filename, displayTitle, url);
                 if (fallbackHtml) {
                     console.warn('Using browser PDF fallback due to rendering error for', filename);
                     eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'render_error' });
@@ -612,7 +773,7 @@ export class PDFLibraryManager {
             } catch (fallbackError) {
                 console.error('Failed to build PDF fallback UI:', fallbackError);
             }
-            const safeErrorTitle = this.escapeHtml(this.formatPDFTitle(filename));
+            const safeErrorTitle = this.escapeHtml(displayTitle);
             const safeErrorMessage = this.escapeHtml(error.message || '');
             return `
                 <div class="card error-card">
@@ -647,20 +808,20 @@ export class PDFLibraryManager {
 
         const safeUrl = this.escapeHtmlAttribute(`${pdfUrl}#view=FitH`);
         const safeDownloadUrl = this.escapeHtmlAttribute(pdfUrl);
-        const safeTitle = this.escapeHtml(displayTitle || this.formatPDFTitle(filename));
+        const safeTitle = this.escapeHtml(displayTitle || this.getDisplayTitle(filename));
 
         return `
-            <div class="card pdf-fallback" style="padding: 20px;">
-                <div class="q-header" style="margin-bottom: 16px;">
+            <div class="card pdf-fallback" style="padding: 16px;">
+                <div class="q-header" style="margin-bottom: 12px;">
                     <h2 style="margin: 0; font-size: 1.3em;">📄 ${safeTitle}</h2>
-                    <p style="margin: 8px 0 0; color: var(--text-secondary); font-size: 0.95em;">
+                    <p style="margin: 6px 0 0; color: var(--text-secondary); font-size: 0.95em;">
                         Displaying using the browser's built-in PDF viewer.
                     </p>
                 </div>
                 <div class="card-body" style="padding: 0;">
                     <iframe src="${safeUrl}" style="width: 100%; min-height: 70vh; border: 1px solid var(--border); border-radius: 8px; background: #fff;" title="${safeTitle}" loading="lazy"></iframe>
                 </div>
-                <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
                     <a href="${safeDownloadUrl}" class="btn" download style="text-decoration: none;">
                         ⬇️ Download PDF
                     </a>
@@ -715,7 +876,8 @@ export class PDFLibraryManager {
         const container = document.getElementById('pdf-library-panel');
         if (!container) return;
 
-        const safeTitle = this.escapeHtml(this.formatPDFTitle(filename));
+        const displayTitle = this.getDisplayTitle(filename);
+        const safeTitle = this.escapeHtml(displayTitle);
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
 
 
@@ -739,7 +901,7 @@ export class PDFLibraryManager {
 
             // Add back button and content
             container.innerHTML = `
-                <button class="back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                <button type="button" class="pdf-back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));">
                     ← Back to PDF Library
                 </button>
                 <div class="pdf-content-container">
@@ -748,7 +910,7 @@ export class PDFLibraryManager {
             `;
 
             // Add to recent PDFs
-            this.addToRecent(filename, this.formatPDFTitle(filename));
+            this.addToRecent(filename, displayTitle);
 
             // Keep the PDF view pinned to the top of the tools panel without
             // forcing the entire window to scroll (which was causing the
@@ -762,7 +924,7 @@ export class PDFLibraryManager {
         } catch (error) {
             const safeErrorMessage = this.escapeHtml(error.message || '');
             container.innerHTML = `
-                <button class="back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                <button type="button" class="pdf-back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));">
                     ← Back to PDF Library
                 </button>
                 <div class="error-state" style="text-align: center; padding: 40px;">
@@ -791,8 +953,8 @@ export class PDFLibraryManager {
         // Create search and category interface
         container.innerHTML = `
             <div class="search-container">
-                <input type="text" id="pdf-search" placeholder="Search PDFs..." class="tool-search">
-                <button id="pdf-search-btn">🔍</button>
+                <input type="text" id="pdf-search" placeholder="Search PDFs..." class="tool-search" aria-label="Search PDFs">
+                <button id="pdf-search-btn" class="btn pdf-search-btn" type="button" aria-label="Search PDFs">🔍</button>
             </div>
             <div class="pdf-categories">
                 <button class="category-btn active" data-category="all">All Documents</button>
@@ -880,14 +1042,14 @@ export class PDFLibraryManager {
             const safeTitle = this.escapeHtml(pdf.title);
             const safeCategory = this.escapeHtml(this.getCategoryName(pdf.category));
             return `
-                <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');" style="cursor: pointer; margin-bottom: 10px;">
-                    <div class="card-body" style="padding: 15px;">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
+                    <div class="card-body">
+                        <div class="pdf-card-row">
                             <div>
                                 <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
                                 <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${safeCategory}</div>
                             </div>
-                            <div style="font-size: 1.5em;">📄</div>
+                            <div class="pdf-card-icon" aria-hidden="true">📄</div>
                         </div>
                     </div>
                 </div>
