@@ -210,10 +210,30 @@ export class PDFLibraryManager {
 
         // Load recent PDFs from storage (lightweight)
         const stored = await storage.getItem('recentPDFs');
-        if (Array.isArray(stored)) {
-            this.recentPDFs = stored;
-        } else if (stored && typeof stored === 'object') {
-            this.recentPDFs = Object.values(stored);
+        try {
+            if (Array.isArray(stored)) {
+                this.recentPDFs = stored;
+            } else if (stored && typeof stored === 'object') {
+                this.recentPDFs = Object.values(stored);
+            } else if (typeof stored === 'string') {
+                // Handle legacy stringified arrays or comma-separated values
+                try {
+                    const parsed = JSON.parse(stored);
+                    if (Array.isArray(parsed)) {
+                        this.recentPDFs = parsed;
+                    } else {
+                        this.recentPDFs = [];
+                    }
+                } catch (e) {
+                    // Fallback: treat comma-separated string as list
+                    this.recentPDFs = stored.split(',').map(s => s.trim()).filter(Boolean);
+                }
+            } else {
+                this.recentPDFs = [];
+            }
+        } catch (e) {
+            console.warn('⚠️ Could not coerce stored recentPDFs to array, resetting to empty:', stored, e);
+            this.recentPDFs = [];
         }
 
         // Load PDF index
