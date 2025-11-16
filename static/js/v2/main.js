@@ -338,6 +338,20 @@ class MLAQuizApp {
             });
         }
 
+        const pdfLibraryShortcut = document.getElementById('floating-library-btn');
+        if (pdfLibraryShortcut) {
+            pdfLibraryShortcut.addEventListener('click', () => {
+                if (medicalToolsPanel) {
+                    if (!medicalToolsPanel.classList.contains('open')) {
+                        medicalToolsPanel.classList.add('open');
+                    }
+                    this.switchTool('pdf-library');
+                } else {
+                    console.warn('PDF library panel is not available in the DOM');
+                }
+            });
+        }
+
         // Tools close button
         const toolsCloseBtn = document.getElementById('tools-close-btn');
         if (toolsCloseBtn) {

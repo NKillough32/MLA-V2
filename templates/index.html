@@ -915,7 +915,60 @@
                 min-width: 100px;
             }
         }
-        
+
+        /* Floating PDF Library shortcut */
+        .floating-library-btn {
+            position: fixed;
+            bottom: 150px;
+            right: 20px;
+            background: #6366f1;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            min-width: 120px;
+            justify-content: center;
+        }
+
+        .floating-library-btn:hover {
+            background: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.5);
+        }
+
+        .floating-library-btn:active {
+            transform: translateY(0px);
+        }
+
+        [data-theme="dark"] .floating-library-btn {
+            background: #7c3aed;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+        }
+
+        [data-theme="dark"] .floating-library-btn:hover {
+            background: #6d28d9;
+            box-shadow: 0 6px 16px rgba(124, 58, 237, 0.5);
+        }
+
+        @media (max-width: 480px) {
+            .floating-library-btn {
+                bottom: 140px;
+                right: 15px;
+                padding: 10px 14px;
+                font-size: 12px;
+                min-width: 110px;
+            }
+        }
+
         /* Hide when on quiz selection screen */
         #quizSelection:not([style*="none"]) ~ .floating-pdf-btn {
             display: none;
@@ -1086,6 +1139,23 @@
             gap: 6px;
             border-bottom: 1px solid #e5e5ea;
             background: #f8f9fa;
+            padding: 12px 16px;
+            max-height: 45vh;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .tools-navigation::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .tools-navigation::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 999px;
+        }
+
+        .tools-navigation::-webkit-scrollbar-track {
+            background: transparent;
         }
         
         .tool-nav-btn {
@@ -3579,7 +3649,8 @@
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 6px;
-                overflow: visible;
+                max-height: 60vh;
+                overflow-y: auto;
             }
         }
 
@@ -9709,9 +9780,14 @@
         
                 <!-- Anatomy Explorer (moved into Medical Tools panel). Full-screen anatomy screen removed to avoid duplication. -->
 
-                <!-- Floating PDF Export Button -->
+    <!-- Floating PDF Export Button -->
     <button id="floating-pdf-btn" class="floating-pdf-btn" title="Generate Study Report">
         📊 Report
+    </button>
+
+    <!-- Floating PDF Library Shortcut -->
+    <button id="floating-library-btn" class="floating-library-btn" title="Open PDF Library" aria-label="Open PDF Library">
+        📚 PDFs
     </button>
     
     <!-- Medical Tools Toggle Button -->
@@ -9730,6 +9806,7 @@
             <button class="tool-nav-btn" data-tool="quiz" style="display: none;">📝 Quiz Practice</button>
             <button class="tool-nav-btn active" data-tool="drug-reference">💊 Drug Reference</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
+            <button class="tool-nav-btn" data-tool="pdf-library">📚 PDF Library</button>
             <button class="tool-nav-btn" data-tool="emergency-protocols">🚨 Emergency</button>
             <button class="tool-nav-btn" data-tool="interpretation">📋 Interpretation</button>
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
@@ -9743,7 +9820,6 @@
             <button class="tool-nav-btn" data-tool="anatomy">🦴 Muscles & Bones</button>
             <button class="tool-nav-btn" data-tool="developmental">🧒 Development</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Steroid & Pain Ladders</button>
-            <button class="tool-nav-btn" data-tool="pdf-library">📚 PDF Library</button>
             <button class="tool-nav-btn" data-tool="case-studies" style="display: none;">📋 Case Studies</button>
             <button class="tool-nav-btn" data-tool="learning-pathways" style="display: none;">🎯 Learning Paths</button>
         </div>
@@ -11276,7 +11352,7 @@
             const updateFloatingButton = () => {
                 const floatingBtn = document.getElementById('floating-pdf-btn');
                 const quizSelectionScreen = document.getElementById('quizSelection');
-                
+
                 if (floatingBtn && quizSelectionScreen) {
                     // Hide on quiz selection screen, show everywhere else
                     const isQuizSelection = quizSelectionScreen.style.display !== 'none';
