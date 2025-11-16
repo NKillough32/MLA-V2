@@ -750,9 +750,14 @@ export class PDFLibraryManager {
             // Add to recent PDFs
             this.addToRecent(filename, this.formatPDFTitle(filename));
 
-            // Scroll to top
+            // Keep the PDF view pinned to the top of the tools panel without
+            // forcing the entire window to scroll (which was causing the
+            // Android Chrome address bar to expand and leave a large gap).
             container.scrollTop = 0;
-            window.scrollTo(0, 0);
+            const toolsPanel = container.closest('.tools-content');
+            if (toolsPanel) {
+                toolsPanel.scrollTop = 0;
+            }
 
         } catch (error) {
             const safeErrorMessage = this.escapeHtml(error.message || '');
