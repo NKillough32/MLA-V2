@@ -695,7 +695,7 @@ export class PDFLibraryManager {
                         <div class="pdf-page-image" style="display:flex; justify-content:center;">
                             <img src="${safeImageUrl}" alt="${safeDisplayTitle} - Page ${pageNum}" style="width:100%; height:auto; border-radius: 12px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);" loading="lazy" />
                         </div>
-                    `;
+                    `.trim();
                 } else {
                     const textContent = await page.getTextContent();
                     const text = textContent.items.map(item => item.str).join(' ');
@@ -706,7 +706,7 @@ export class PDFLibraryManager {
                         <div class="pdf-content" style="white-space: pre-wrap; font-family: inherit;">
                             ${this.formatPDFText(text)}
                         </div>
-                    `;
+                    `.trim();
                 }
 
                 html += `
@@ -714,9 +714,7 @@ export class PDFLibraryManager {
                         <div class="q-header">
                             <h2 style="font-size: 1.4em; margin: 0;">📘 ${safeDisplayTitle} - Page ${pageNum}</h2>
                         </div>
-                        <div class="card-body q-text" style="line-height: 1.6;">
-                            ${pageBodyHtml}
-                        </div>
+                        <div class="card-body q-text" style="line-height: 1.6;">${pageBodyHtml}</div>
                     </div>
                 `;
 
