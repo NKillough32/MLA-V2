@@ -571,7 +571,7 @@ export class PDFLibraryManager {
                 }
 
                 html += `
-                    <div class="card pdf-page-card" style="margin-bottom: 20px;">
+                    <div class="card pdf-page-card">
                         <div class="q-header">
                             <h2 style="font-size: 1.4em; margin: 0;">📄 ${safeDisplayTitle} - Page ${pageNum}</h2>
                         </div>

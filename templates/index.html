@@ -1268,6 +1268,35 @@
             transform: translateX(0);
             display: block;
         }
+
+        /* PDF library layout */
+        .pdf-content-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .pdf-page-card {
+            margin: 0;
+        }
+
+        .pdf-page-card .q-header {
+            padding: 6px 16px;
+        }
+
+        .pdf-page-card .card-body {
+            padding: 14px 18px;
+        }
+
+        @media (max-width: 768px) {
+            .pdf-content-container {
+                gap: 8px;
+            }
+
+            .pdf-page-card .card-body {
+                padding: 12px 16px;
+            }
+        }
         
         /* Search Container */
         .search-container {
