@@ -17,6 +17,32 @@ export class PDFLibraryManager {
     }
 
     /**
+     * Escape text for safe HTML rendering
+     * @param {string} value
+     * @returns {string}
+     */
+    escapeHtml(value) {
+        if (value === null || value === undefined) {
+            return '';
+        }
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+    }
+
+    /**
+     * Escape text for safe use inside HTML attributes
+     * @param {string} value
+     * @returns {string}
+     */
+    escapeHtmlAttribute(value) {
+        return this.escapeHtml(value)
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    /**
      * Initialize the PDF library manager
      * Loads the PDF index and pdf.js library
      */
@@ -386,6 +412,8 @@ export class PDFLibraryManager {
         }
 
         const url = `/static/assets/${filename}`;
+        const safeFilenameAttr = this.escapeHtmlAttribute(filename);
+        const safeDisplayTitle = this.escapeHtml(this.formatPDFTitle(filename));
 
         eventBus.emit('PDF_LOADING', { filename });
 
@@ -406,7 +434,7 @@ export class PDFLibraryManager {
                 html += `
                     <div class="card pdf-page-card" style="margin-bottom: 20px;">
                         <div class="q-header">
-                            <h2 style="font-size: 1.4em; margin: 0;">📄 ${this.formatPDFTitle(filename)} - Page ${pageNum}</h2>
+                            <h2 style="font-size: 1.4em; margin: 0;">📄 ${safeDisplayTitle} - Page ${pageNum}</h2>
                         </div>
                         <div class="card-body q-text" style="line-height: 1.6;">
                             <div class="pdf-content" style="white-space: pre-wrap; font-family: inherit;">
@@ -435,15 +463,17 @@ export class PDFLibraryManager {
             } catch (e) {
                 // ignore
             }
+            const safeErrorTitle = this.escapeHtml(this.formatPDFTitle(filename));
+            const safeErrorMessage = this.escapeHtml(error.message || '');
             return `
                 <div class="card error-card">
                     <div class="q-header">
                         <h2 style="color: #ef4444;">❌ Error Loading PDF</h2>
                     </div>
                     <div class="card-body">
-                        <p>Unable to load <strong>${filename}</strong></p>
-                        <p style="color: #6b7280; font-size: 0.9em;">${error.message}</p>
-                        <button onclick="window.pdfLibraryManager.renderPDFToHTML('${filename}')" class="btn" style="margin-top: 10px;">
+                        <p>Unable to load <strong>${safeErrorTitle}</strong></p>
+                        <p style="color: #6b7280; font-size: 0.9em;">${safeErrorMessage}</p>
+                        <button onclick="window.pdfLibraryManager.renderPDFToHTML('${safeFilenameAttr}')" class="btn" style="margin-top: 10px;">
                             🔄 Try Again
                         </button>
                     </div>
@@ -475,11 +505,14 @@ export class PDFLibraryManager {
         const container = document.getElementById('pdf-library-panel');
         if (!container) return;
 
+        const safeTitle = this.escapeHtml(this.formatPDFTitle(filename));
+        const safeFilenameAttr = this.escapeHtmlAttribute(filename);
+
         // Add loading state
         container.innerHTML = `
             <div class="loading-state" style="text-align: center; padding: 40px;">
                 <div style="font-size: 2em; margin-bottom: 20px;">📚</div>
-                <h3>Loading ${this.formatPDFTitle(filename)}...</h3>
+                <h3>Loading ${safeTitle}...</h3>
                 <div class="loading-spinner" style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #6366F1; border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto;"></div>
             </div>
             <style>
@@ -511,6 +544,7 @@ export class PDFLibraryManager {
             window.scrollTo(0, 0);
 
         } catch (error) {
+            const safeErrorMessage = this.escapeHtml(error.message || '');
             container.innerHTML = `
                 <button class="back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                     ← Back to PDF Library
@@ -518,8 +552,8 @@ export class PDFLibraryManager {
                 <div class="error-state" style="text-align: center; padding: 40px;">
                     <div style="font-size: 2em; margin-bottom: 20px;">❌</div>
                     <h3>Error Loading PDF</h3>
-                    <p>${error.message}</p>
-                    <button onclick="window.pdfLibraryManager.showPDF('${filename}')" class="btn" style="margin-top: 20px;">
+                    <p>${safeErrorMessage}</p>
+                    <button onclick="window.pdfLibraryManager.showPDF('${safeFilenameAttr}')" class="btn" style="margin-top: 20px;">
                         🔄 Try Again
                     </button>
                 </div>
@@ -625,19 +659,24 @@ export class PDFLibraryManager {
         // Sort PDFs alphabetically
         pdfs.sort((a, b) => a.title.localeCompare(b.title));
 
-        listContainer.innerHTML = pdfs.map(pdf => `
-            <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${pdf.filename}');" style="cursor: pointer; margin-bottom: 10px;">
-                <div class="card-body" style="padding: 15px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${pdf.title}</div>
-                            <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${this.getCategoryName(pdf.category)}</div>
+        listContainer.innerHTML = pdfs.map(pdf => {
+            const safeFilename = this.escapeHtmlAttribute(pdf.filename);
+            const safeTitle = this.escapeHtml(pdf.title);
+            const safeCategory = this.escapeHtml(this.getCategoryName(pdf.category));
+            return `
+                <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');" style="cursor: pointer; margin-bottom: 10px;">
+                    <div class="card-body" style="padding: 15px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
+                                <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${safeCategory}</div>
+                            </div>
+                            <div style="font-size: 1.5em;">📄</div>
                         </div>
-                        <div style="font-size: 1.5em;">📄</div>
                     </div>
                 </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     }
 
     /**
