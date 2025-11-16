@@ -349,7 +349,7 @@ export class PDFLibraryManager {
             if (filename.toLowerCase().includes(searchTerm)) {
                 results.push({
                     filename: filename,
-                    title: this.formatPDFTitle(filename),
+                    title: this.getDisplayTitle(filename),
                     category: this.categorizePDF(filename)
                 });
             }
@@ -401,7 +401,7 @@ export class PDFLibraryManager {
         if (categoryId === 'all') {
             return this.pdfIndex.map(filename => ({
                 filename: filename,
-                title: this.formatPDFTitle(filename),
+                title: this.getDisplayTitle(filename),
                 category: this.categorizePDF(filename)
             }));
         }
@@ -410,7 +410,7 @@ export class PDFLibraryManager {
             .filter(filename => this.categorizePDF(filename) === categoryId)
             .map(filename => ({
                 filename: filename,
-                title: this.formatPDFTitle(filename),
+                title: this.getDisplayTitle(filename),
                 category: categoryId
             }));
     }
@@ -589,24 +589,24 @@ export class PDFLibraryManager {
     async renderPDFToHTML(filename) {
         const url = this.getPDFUrl(filename);
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
-        const safeDisplayTitle = this.escapeHtml(this.formatPDFTitle(filename));
-
+        const displayTitle = this.getDisplayTitle(filename);
+        const safeDisplayTitle = this.escapeHtml(displayTitle);
 
         if (!url) {
             console.error('Unable to construct PDF URL for', filename);
-            return this.renderPDFFallback(filename, safeDisplayTitle);
+            return this.renderPDFFallback(filename, displayTitle);
         }
 
         if (this.shouldPreferNativeViewer()) {
             console.warn('Forcing native PDF viewer for this Android environment');
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'android_native' });
-            return this.renderPDFFallback(filename, safeDisplayTitle, url);
+            return this.renderPDFFallback(filename, displayTitle, url);
         }
 
         if (!this.pdfjsLib) {
             console.warn('pdf.js library not loaded, using browser PDF fallback for', filename);
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'pdfjs_missing' });
-            return this.renderPDFFallback(filename, safeDisplayTitle, url);
+            return this.renderPDFFallback(filename, displayTitle, url);
         }
 
         eventBus.emit('PDF_LOADING', { filename });
@@ -704,7 +704,7 @@ export class PDFLibraryManager {
 
             // Gracefully fall back to the browser's built-in PDF renderer
             try {
-                const fallbackHtml = this.renderPDFFallback(filename, safeDisplayTitle, url);
+                const fallbackHtml = this.renderPDFFallback(filename, displayTitle, url);
                 if (fallbackHtml) {
                     console.warn('Using browser PDF fallback due to rendering error for', filename);
                     eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'render_error' });
@@ -713,7 +713,7 @@ export class PDFLibraryManager {
             } catch (fallbackError) {
                 console.error('Failed to build PDF fallback UI:', fallbackError);
             }
-            const safeErrorTitle = this.escapeHtml(this.formatPDFTitle(filename));
+            const safeErrorTitle = this.escapeHtml(displayTitle);
             const safeErrorMessage = this.escapeHtml(error.message || '');
             return `
                 <div class="card error-card">
@@ -748,7 +748,7 @@ export class PDFLibraryManager {
 
         const safeUrl = this.escapeHtmlAttribute(`${pdfUrl}#view=FitH`);
         const safeDownloadUrl = this.escapeHtmlAttribute(pdfUrl);
-        const safeTitle = this.escapeHtml(displayTitle || this.formatPDFTitle(filename));
+        const safeTitle = this.escapeHtml(displayTitle || this.getDisplayTitle(filename));
 
         return `
             <div class="card pdf-fallback" style="padding: 20px;">
@@ -761,7 +761,7 @@ export class PDFLibraryManager {
                 <div class="card-body" style="padding: 0;">
                     <iframe src="${safeUrl}" style="width: 100%; min-height: 70vh; border: 1px solid var(--border); border-radius: 8px; background: #fff;" title="${safeTitle}" loading="lazy"></iframe>
                 </div>
-                <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
                     <a href="${safeDownloadUrl}" class="btn" download style="text-decoration: none;">
                         ⬇️ Download PDF
                     </a>
@@ -816,7 +816,8 @@ export class PDFLibraryManager {
         const container = document.getElementById('pdf-library-panel');
         if (!container) return;
 
-        const safeTitle = this.escapeHtml(this.formatPDFTitle(filename));
+        const displayTitle = this.getDisplayTitle(filename);
+        const safeTitle = this.escapeHtml(displayTitle);
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
 
 
@@ -849,7 +850,7 @@ export class PDFLibraryManager {
             `;
 
             // Add to recent PDFs
-            this.addToRecent(filename, this.formatPDFTitle(filename));
+            this.addToRecent(filename, displayTitle);
 
             // Keep the PDF view pinned to the top of the tools panel without
             // forcing the entire window to scroll (which was causing the
@@ -988,7 +989,7 @@ export class PDFLibraryManager {
                                 <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
                                 <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${safeCategory}</div>
                             </div>
-                            <div class="pdf-card-icon" aria-hidden="true">📘</div>
+                            <div class="pdf-card-icon" aria-hidden="true">📄</div>
                         </div>
                     </div>
                 </div>
