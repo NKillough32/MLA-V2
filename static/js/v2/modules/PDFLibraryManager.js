@@ -84,18 +84,18 @@ export class PDFLibraryManager {
 
         // Set workerSrc: prefer a local bundled worker if present, else CDN worker
         try {
+            // TEMPORARY: force worker to CDN to rule out local shim issues
             if (this.pdfjsLib && this.pdfjsLib.GlobalWorkerOptions) {
-                // Prefer local worker if served with app, otherwise point to CDN
-                this.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
-                console.debug('🔧 Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', LOCAL_WORKER);
+                this.pdfjsLib.GlobalWorkerOptions.workerSrc = CDN_WORKER; // temporarily point to CDN
+                console.debug('🔧 (TEMP) Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', CDN_WORKER);
             }
             // Also defensively update window.pdfjsLib if present
             if (typeof window !== 'undefined' && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
-                window.pdfjsLib.GlobalWorkerOptions.workerSrc = LOCAL_WORKER;
-                console.debug('🔧 Set window.pdfjsLib.GlobalWorkerOptions.workerSrc ->', LOCAL_WORKER);
+                window.pdfjsLib.GlobalWorkerOptions.workerSrc = CDN_WORKER; // temporarily point to CDN
+                console.debug('🔧 (TEMP) Set window.pdfjsLib.GlobalWorkerOptions.workerSrc ->', CDN_WORKER);
             }
         } catch (e) {
-            console.warn('⚠️ Could not set workerSrc on pdfjsLib:', e);
+            console.warn('⚠️ Could not set workerSrc on pdfjsLib (temporary CDN override):', e);
         }
 
         this.initialized = true;

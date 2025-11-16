@@ -54,6 +54,13 @@ class MLAQuizApp {
         this.examinationManager = examinationManager;
         this.emergencyProtocolsManager = emergencyProtocolsManager;
         this.pdfLibraryManager = new PDFLibraryManager();
+        // Expose to window so inline handlers and legacy code can access it
+        try {
+            window.pdfLibraryManager = this.pdfLibraryManager;
+            console.debug('🔗 window.pdfLibraryManager attached');
+        } catch (e) {
+            console.warn('⚠️ Could not attach pdfLibraryManager to window', e);
+        }
         this.v2Integration = v2Integration;
         this.calculatorBridge = calculatorBridge;
         this.offlineManager = new OfflineManager();
@@ -136,6 +143,17 @@ class MLAQuizApp {
         const safeLadderStats = ladderStats || { totalLadders: 0 };
 
         this.scheduleToolPreload();
+
+        // Ensure the PDF library manager is initialized during app startup so
+        // pdf.js is available before the user opens the PDF panel.
+        try {
+            if (this.pdfLibraryManager && typeof this.pdfLibraryManager.initialize === 'function') {
+                // Don't block overall startup — initialize but don't await if unnecessary
+                this.pdfLibraryManager.initialize().catch(err => console.warn('PDFLibraryManager init warning:', err));
+            }
+        } catch (e) {
+            console.warn('⚠️ Failed to trigger PDFLibraryManager initialization:', e);
+        }
 
         // Initialize V2 Integration Layer (must happen AFTER V1 app exists)
         this.registerServiceWorker();
