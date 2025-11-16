@@ -14,6 +14,7 @@ export class PDFLibraryManager {
         this.initialized = false;
         this.dataLoaded = false;
         this.pdfjsLib = null;
+        this.assetsBasePath = '/static/assets/';
     }
 
     /**
@@ -407,13 +408,20 @@ export class PDFLibraryManager {
      * @returns {string} HTML content
      */
     async renderPDFToHTML(filename) {
-        if (!this.pdfjsLib) {
-            throw new Error('pdf.js library not loaded');
-        }
-
-        const url = `/static/assets/${filename}`;
+        const url = this.getPDFUrl(filename);
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
         const safeDisplayTitle = this.escapeHtml(this.formatPDFTitle(filename));
+
+        if (!url) {
+            console.error('Unable to construct PDF URL for', filename);
+            return this.renderPDFFallback(filename, safeDisplayTitle);
+        }
+
+        if (!this.pdfjsLib) {
+            console.warn('pdf.js library not loaded, using browser PDF fallback for', filename);
+            eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'pdfjs_missing' });
+            return this.renderPDFFallback(filename, safeDisplayTitle, url);
+        }
 
         eventBus.emit('PDF_LOADING', { filename });
 
@@ -463,6 +471,18 @@ export class PDFLibraryManager {
             } catch (e) {
                 // ignore
             }
+
+            // Gracefully fall back to the browser's built-in PDF renderer
+            try {
+                const fallbackHtml = this.renderPDFFallback(filename, safeDisplayTitle, url);
+                if (fallbackHtml) {
+                    console.warn('Using browser PDF fallback due to rendering error for', filename);
+                    eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'render_error' });
+                    return fallbackHtml;
+                }
+            } catch (fallbackError) {
+                console.error('Failed to build PDF fallback UI:', fallbackError);
+            }
             const safeErrorTitle = this.escapeHtml(this.formatPDFTitle(filename));
             const safeErrorMessage = this.escapeHtml(error.message || '');
             return `
@@ -479,6 +499,66 @@ export class PDFLibraryManager {
                     </div>
                 </div>
             `;
+        }
+    }
+
+    /**
+     * Build a browser-based PDF fallback viewer
+     * @param {string} filename - PDF filename
+     * @param {string} [displayTitle] - Optional display title
+     * @param {string} [url] - Optional precomputed URL
+     * @returns {string} HTML markup for the fallback viewer
+     */
+    renderPDFFallback(filename, displayTitle, url = null) {
+        const pdfUrl = url || this.getPDFUrl(filename);
+        if (!pdfUrl) {
+            return '';
+        }
+
+        const safeUrl = this.escapeHtmlAttribute(`${pdfUrl}#view=FitH`);
+        const safeDownloadUrl = this.escapeHtmlAttribute(pdfUrl);
+        const safeTitle = this.escapeHtml(displayTitle || this.formatPDFTitle(filename));
+
+        return `
+            <div class="card pdf-fallback" style="padding: 20px;">
+                <div class="q-header" style="margin-bottom: 16px;">
+                    <h2 style="margin: 0; font-size: 1.3em;">📄 ${safeTitle}</h2>
+                    <p style="margin: 8px 0 0; color: var(--text-secondary); font-size: 0.95em;">
+                        Displaying using the browser's built-in PDF viewer.
+                    </p>
+                </div>
+                <div class="card-body" style="padding: 0;">
+                    <iframe src="${safeUrl}" style="width: 100%; min-height: 70vh; border: 1px solid var(--border); border-radius: 8px; background: #fff;" title="${safeTitle}" loading="lazy"></iframe>
+                </div>
+                <div style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="${safeDownloadUrl}" class="btn" download style="text-decoration: none;">
+                        ⬇️ Download PDF
+                    </a>
+                    <a href="${safeDownloadUrl}" class="btn-secondary" target="_blank" rel="noopener" style="text-decoration: none;">
+                        🔗 Open in new tab
+                    </a>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Get a fully-qualified URL for a PDF asset
+     * @param {string} filename - Raw filename from the index
+     * @returns {string|null} Encoded URL
+     */
+    getPDFUrl(filename) {
+        if (!filename) {
+            return null;
+        }
+
+        try {
+            const normalized = String(filename).trim().replace(/^\/+/, '');
+            const safeName = encodeURIComponent(normalized);
+            return `${this.assetsBasePath}${safeName}`;
+        } catch (e) {
+            console.warn('Failed to build PDF URL for filename:', filename, e);
+            return null;
         }
     }
 
