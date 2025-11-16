@@ -21,6 +21,17 @@
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="/static/manifest.json">
+    <!-- pdf.js CDN fallback (ensures PDF rendering works when JS isn't bundled) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        try {
+            if (window && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
+                window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+            }
+        } catch (e) {
+            console.warn('Failed to set pdf.js workerSrc on initial load', e);
+        }
+    </script>
     
     <!-- V2 Modern Design System -->
     <style>

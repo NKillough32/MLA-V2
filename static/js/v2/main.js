@@ -183,6 +183,15 @@ class MLAQuizApp {
 
         this.toolsPreloaded = true;
 
+        // Ensure PDF library is initialized early so pdf.js is loaded before user opens PDFs
+        try {
+            if (this.pdfLibraryManager && typeof this.pdfLibraryManager.initialize === 'function') {
+                this.pdfLibraryManager.initialize();
+            }
+        } catch (e) {
+            console.warn('PDFLibraryManager preload failed:', e);
+        }
+
         const preloadTargets = [
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
             { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
