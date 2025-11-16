@@ -24,7 +24,8 @@ export class PDFLibraryManager {
             workerSrc: null,
             cdnFallbackUsed: false,
             lastPDF: null,
-            lastError: null
+            lastError: null,
+            fallbackReason: null
         };
         this.exposeDebugHelpers();
     }
@@ -84,7 +85,8 @@ export class PDFLibraryManager {
             { label: 'Worker Source', value: state.workerSrc || 'Not set' },
             { label: 'CDN Fallback Used', value: state.cdnFallbackUsed ? 'Yes' : 'No' },
             { label: 'Last PDF Requested', value: state.lastPDF || 'None' },
-            { label: 'Last Error', value: state.lastError || 'None' }
+            { label: 'Last Error', value: state.lastError || 'None' },
+            { label: 'Fallback Reason', value: state.fallbackReason || 'None' }
         ];
 
         const statusHtml = statusItems.map(item => `
@@ -544,6 +546,58 @@ export class PDFLibraryManager {
     }
 
     /**
+     * Determine if we should bypass pdf.js and use the native viewer instead.
+     * Android PWAs/WebViews frequently fail to spin up the pdf.js worker which
+     * leaves the panel blank. Falling back to the browser viewer gives the user
+     * a predictable experience.
+     * @returns {boolean}
+     */
+    shouldPreferNativeViewer() {
+        if (typeof navigator === 'undefined') {
+            return false;
+        }
+
+        try {
+            const ua = navigator.userAgent || '';
+            const isAndroid = /Android/i.test(ua);
+            if (!isAndroid) {
+                return false;
+            }
+
+            const isWebView = /; wv\)/i.test(ua) || /Version\/\d+\.\d+ Chrome\//i.test(ua);
+            const isSamsungBrowser = /SamsungBrowser/i.test(ua);
+            const lowMemory = typeof navigator.deviceMemory === 'number' && navigator.deviceMemory <= 2;
+            const offline = typeof navigator.onLine === 'boolean' && navigator.onLine === false;
+            const standalone = this.isStandaloneDisplayMode();
+
+            return isWebView || isSamsungBrowser || lowMemory || offline || standalone;
+        } catch (err) {
+            console.debug('PDF native viewer detection failed', err);
+            return false;
+        }
+    }
+
+    /**
+     * Check if the PWA is running in standalone display mode
+     * @returns {boolean}
+     */
+    isStandaloneDisplayMode() {
+        if (typeof window === 'undefined') {
+            return false;
+        }
+
+        try {
+            if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) {
+                return true;
+            }
+        } catch (e) {
+            // ignore
+        }
+
+        return !!(window.navigator && window.navigator.standalone);
+    }
+
+    /**
      * Render PDF to MLA-style HTML
      * @param {string} filename - PDF filename
      * @returns {string} HTML content
@@ -559,12 +613,22 @@ export class PDFLibraryManager {
         if (!url) {
             console.error('Unable to construct PDF URL for', filename);
             this.logDebug('Unable to construct PDF URL', { filename }, 'error');
+            this.updateDebugState({ fallbackReason: 'invalid_url' });
             return this.renderPDFFallback(filename, safeDisplayTitle);
+        }
+
+        if (this.shouldPreferNativeViewer()) {
+            console.warn('Forcing native PDF viewer for this Android environment');
+            this.logDebug('Android native viewer forced', { filename });
+            this.updateDebugState({ fallbackReason: 'android_native' });
+            eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'android_native' });
+            return this.renderPDFFallback(filename, safeDisplayTitle, url);
         }
 
         if (!this.pdfjsLib) {
             console.warn('pdf.js library not loaded, using browser PDF fallback for', filename);
             this.logDebug('pdf.js not loaded; using fallback', { filename }, 'warn');
+            this.updateDebugState({ fallbackReason: 'pdfjs_missing' });
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'pdfjs_missing' });
             return this.renderPDFFallback(filename, safeDisplayTitle, url);
         }
@@ -575,6 +639,7 @@ export class PDFLibraryManager {
             const pdf = await this.pdfjsLib.getDocument(url).promise;
             this.logDebug('PDF loaded via pdf.js', { filename, pages: pdf.numPages });
             let html = '';
+            this.updateDebugState({ fallbackReason: null });
 
             eventBus.emit('PDF_LOADED', { filename, pages: pdf.numPages });
 
@@ -610,7 +675,7 @@ export class PDFLibraryManager {
             console.error('Error rendering PDF:', error);
             eventBus.emit('PDF_ERROR', { filename, error: error.message });
             this.logDebug('Error rendering PDF', { filename, error: error?.message || error }, 'error');
-            this.updateDebugState({ lastError: error?.message || 'Unknown PDF render error' });
+            this.updateDebugState({ lastError: error?.message || 'Unknown PDF render error', fallbackReason: 'render_error' });
 
             // Helpful hint for debugging missing files
             try {
@@ -627,6 +692,7 @@ export class PDFLibraryManager {
                 if (fallbackHtml) {
                     console.warn('Using browser PDF fallback due to rendering error for', filename);
                     this.logDebug('Using browser PDF fallback due to rendering error', { filename }, 'warn');
+                    this.updateDebugState({ fallbackReason: 'render_error' });
                     eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'render_error' });
                     return fallbackHtml;
                 }
