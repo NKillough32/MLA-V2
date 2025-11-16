@@ -226,23 +226,38 @@ export class PDFLibraryManager {
             this.updateDebugState({ pdfjsLoaded: true });
         }
 
-        // Set workerSrc: prefer a local bundled worker if present, else CDN worker
-        try {
-            // TEMPORARY: force worker to CDN to rule out local shim issues
+        const applyWorkerSrc = (src) => {
             if (this.pdfjsLib && this.pdfjsLib.GlobalWorkerOptions) {
-                this.pdfjsLib.GlobalWorkerOptions.workerSrc = CDN_WORKER; // temporarily point to CDN
-                console.debug('🔧 (TEMP) Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', CDN_WORKER);
-                this.updateDebugState({ workerSrc: CDN_WORKER });
+                this.pdfjsLib.GlobalWorkerOptions.workerSrc = src;
             }
-            // Also defensively update window.pdfjsLib if present
             if (typeof window !== 'undefined' && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
-                window.pdfjsLib.GlobalWorkerOptions.workerSrc = CDN_WORKER; // temporarily point to CDN
-                console.debug('🔧 (TEMP) Set window.pdfjsLib.GlobalWorkerOptions.workerSrc ->', CDN_WORKER);
-                this.updateDebugState({ workerSrc: CDN_WORKER });
+                window.pdfjsLib.GlobalWorkerOptions.workerSrc = src;
             }
-        } catch (e) {
-            console.warn('⚠️ Could not set workerSrc on pdfjsLib (temporary CDN override):', e);
-            this.logDebug('Could not set workerSrc on pdfjsLib', e?.message || e, 'warn');
+            this.updateDebugState({ workerSrc: src });
+            console.debug('🔧 Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', src);
+        };
+
+        const workerPreferences = [
+            { src: LOCAL_WORKER, label: 'local shim' },
+            { src: CDN_WORKER, label: 'CDN fallback' }
+        ];
+
+        let workerConfigured = false;
+        for (const candidate of workerPreferences) {
+            try {
+                applyWorkerSrc(candidate.src);
+                this.logDebug(`workerSrc set to ${candidate.label}`, candidate.src);
+                workerConfigured = true;
+                break;
+            } catch (err) {
+                console.warn(`⚠️ Could not set workerSrc using ${candidate.label}:`, err);
+                this.logDebug(`Could not set workerSrc using ${candidate.label}`, err?.message || err, 'warn');
+            }
+        }
+
+        if (!workerConfigured) {
+            console.error('❌ pdfjsLib workerSrc could not be configured with any source');
+            this.logDebug('Could not set workerSrc on pdfjsLib', 'All worker sources failed', 'error');
         }
 
         this.initialized = true;
