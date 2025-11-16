@@ -645,13 +645,60 @@ export class PDFLibraryManager {
 
             eventBus.emit('PDF_LOADED', { filename, pages: pdf.numPages });
 
+            const deviceScale = Math.min(typeof window !== 'undefined' ? (window.devicePixelRatio || 1) : 1, 2);
+
             for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
                 const page = await pdf.getPage(pageNum);
-                const textContent = await page.getTextContent();
-                const text = textContent.items.map(item => item.str).join(' ');
+                let pageImageDataUrl = null;
 
-                // Skip empty pages
-                if (!text.trim()) continue;
+                try {
+                    const viewport = page.getViewport({ scale: 1.25 });
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    if (!context) {
+                        throw new Error('Canvas 2D context unavailable');
+                    }
+                    const outputScale = deviceScale || 1;
+
+                    canvas.width = viewport.width * outputScale;
+                    canvas.height = viewport.height * outputScale;
+                    canvas.style.width = `${viewport.width}px`;
+                    canvas.style.height = `${viewport.height}px`;
+
+                    const renderContext = {
+                        canvasContext: context,
+                        viewport,
+                        transform: outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : undefined
+                    };
+
+                    await page.render(renderContext).promise;
+                    pageImageDataUrl = canvas.toDataURL('image/png');
+                } catch (renderError) {
+                    console.warn('PDF canvas render failed, falling back to text view for', filename, renderError);
+                    this.logDebug('PDF canvas render failed', renderError?.message || renderError, 'warn');
+                }
+
+                let pageBodyHtml = '';
+
+                if (pageImageDataUrl) {
+                    const safeImageUrl = this.escapeHtmlAttribute(pageImageDataUrl);
+                    pageBodyHtml = `
+                        <div class="pdf-page-image" style="display:flex; justify-content:center;">
+                            <img src="${safeImageUrl}" alt="${safeDisplayTitle} - Page ${pageNum}" style="width:100%; height:auto; border-radius: 12px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);" loading="lazy" />
+                        </div>
+                    `;
+                } else {
+                    const textContent = await page.getTextContent();
+                    const text = textContent.items.map(item => item.str).join(' ');
+                    if (!text.trim()) {
+                        continue;
+                    }
+                    pageBodyHtml = `
+                        <div class="pdf-content" style="white-space: pre-wrap; font-family: inherit;">
+                            ${this.formatPDFText(text)}
+                        </div>
+                    `;
+                }
 
                 html += `
                     <div class="card pdf-page-card" style="margin-bottom: 20px;">
@@ -659,9 +706,7 @@ export class PDFLibraryManager {
                             <h2 style="font-size: 1.4em; margin: 0;">📄 ${safeDisplayTitle} - Page ${pageNum}</h2>
                         </div>
                         <div class="card-body q-text" style="line-height: 1.6;">
-                            <div class="pdf-content" style="white-space: pre-wrap; font-family: inherit;">
-                                ${this.formatPDFText(text)}
-                            </div>
+                            ${pageBodyHtml}
                         </div>
                     </div>
                 `;
