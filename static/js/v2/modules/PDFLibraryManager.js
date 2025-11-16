@@ -15,106 +15,6 @@ export class PDFLibraryManager {
         this.dataLoaded = false;
         this.pdfjsLib = null;
         this.assetsBasePath = '/static/assets/';
-        this.debugLogs = [];
-        this.debugState = {
-            pdfIndexLoaded: false,
-            pdfIndexCount: 0,
-            pdfjsGlobalDetected: false,
-            pdfjsLoaded: false,
-            workerSrc: null,
-            cdnFallbackUsed: false,
-            lastPDF: null,
-            lastError: null,
-            fallbackReason: null
-        };
-        this.exposeDebugHelpers();
-    }
-
-    exposeDebugHelpers() {
-        try {
-            window.__PDF_DEBUG__ = {
-                getState: () => ({ ...this.debugState }),
-                getLogs: () => [...this.debugLogs],
-                manager: this
-            };
-            console.debug('🐞 PDF debug helpers attached to window.__PDF_DEBUG__');
-        } catch (e) {
-            console.warn('⚠️ Could not attach PDF debug helpers to window', e);
-        }
-    }
-
-    logDebug(message, data = null, level = 'log') {
-        const entry = {
-            timestamp: new Date().toISOString(),
-            message,
-            data
-        };
-        this.debugLogs.push(entry);
-        if (this.debugLogs.length > 50) {
-            this.debugLogs.shift();
-        }
-
-        const consoleFn = console[level] || console.log;
-        try {
-            consoleFn.call(console, `🐞 [PDF] ${message}`, data || '');
-        } catch (e) {
-            console.log(`🐞 [PDF] ${message}`);
-        }
-
-        this.renderDebugInfo();
-        return entry;
-    }
-
-    updateDebugState(partial) {
-        this.debugState = { ...this.debugState, ...partial };
-        this.renderDebugInfo();
-    }
-
-    renderDebugInfo() {
-        const panel = document.getElementById('pdf-debug-info');
-        if (!panel) return;
-        panel.innerHTML = this.buildDebugInfoHTML();
-    }
-
-    buildDebugInfoHTML() {
-        const state = this.debugState || {};
-        const statusItems = [
-            { label: 'Index Loaded', value: state.pdfIndexLoaded ? `Yes (${state.pdfIndexCount})` : 'No' },
-            { label: 'Global pdf.js detected', value: state.pdfjsGlobalDetected ? 'Yes' : 'No' },
-            { label: 'pdf.js Loaded', value: state.pdfjsLoaded ? 'Yes' : 'No' },
-            { label: 'Worker Source', value: state.workerSrc || 'Not set' },
-            { label: 'CDN Fallback Used', value: state.cdnFallbackUsed ? 'Yes' : 'No' },
-            { label: 'Last PDF Requested', value: state.lastPDF || 'None' },
-            { label: 'Last Error', value: state.lastError || 'None' },
-            { label: 'Fallback Reason', value: state.fallbackReason || 'None' }
-        ];
-
-        const statusHtml = statusItems.map(item => `
-            <div class="pdf-debug-status-row" style="display:flex; justify-content:space-between; gap:8px; padding:4px 0; border-bottom:1px solid rgba(148, 163, 184, 0.2); font-size:0.85em;">
-                <span>${this.escapeHtml(item.label)}:</span>
-                <strong>${this.escapeHtml(String(item.value))}</strong>
-            </div>
-        `).join('');
-
-        const logs = this.debugLogs.slice(-10).reverse();
-        const logsHtml = logs.length ? logs.map(log => {
-            const safeMessage = this.escapeHtml(log.message || '');
-            const safeData = log.data ? this.escapeHtml(typeof log.data === 'string' ? log.data : JSON.stringify(log.data)) : '';
-            return `
-                <li style="margin-bottom:4px;">
-                    <span class="pdf-debug-timestamp" style="color: var(--v2-text-tertiary); font-size:0.75em;">${this.escapeHtml(new Date(log.timestamp).toLocaleTimeString())}</span>
-                    <code style="display:block; font-family: 'SFMono-Regular', Menlo, Consolas, monospace; white-space:pre-wrap;">${safeMessage}${safeData ? ` → ${safeData}` : ''}</code>
-                </li>
-            `;
-        }).join('') : '<li>No debug events recorded yet.</li>';
-
-        return `
-            <div class="pdf-debug-status" style="margin-bottom:10px;">${statusHtml}</div>
-            <div class="pdf-debug-logs">
-                <strong style="display:block; margin-bottom:6px;">Recent Events</strong>
-                <ul style="list-style:none; padding-left:0; margin:0;">${logsHtml}</ul>
-            </div>
-        `;
     }
 
     /**
@@ -150,21 +50,17 @@ export class PDFLibraryManager {
     async initialize() {
         if (this.initialized) {
             console.log('📚 PDFLibraryManager already initialized, skipping...');
-            this.logDebug('initialize() called but already initialized');
             return true;
         }
 
         console.log('📚 Initializing PDFLibraryManager...');
-        this.logDebug('Initializing PDFLibraryManager...');
 
         // Debug: report whether pdf.js was injected before this script runs
         try {
             const hasGlobalPdfJs = !!(typeof window !== 'undefined' && window.pdfjsLib);
             console.debug('🔍 window.pdfjsLib present?', hasGlobalPdfJs);
-            this.updateDebugState({ pdfjsGlobalDetected: hasGlobalPdfJs });
         } catch (e) {
             console.debug('🔍 window access error when checking pdfjsLib', e);
-            this.logDebug('window access error when checking pdfjsLib', e?.message || e, 'warn');
         }
 
         // Load recent PDFs from storage (lightweight)
@@ -177,25 +73,18 @@ export class PDFLibraryManager {
 
         // Load PDF index
         console.log('📚 Loading PDF index...');
-        this.logDebug('Loading PDF index...');
         try {
             const response = await fetch('/static/assets/pdf_index.json');
             if (response.ok) {
                 this.pdfIndex = await response.json();
                 console.log('✅ PDF index loaded with', this.pdfIndex.length, 'documents');
-                this.logDebug('PDF index loaded', { count: this.pdfIndex.length });
-                this.updateDebugState({ pdfIndexLoaded: true, pdfIndexCount: this.pdfIndex.length });
             } else {
                 console.warn('⚠️ PDF index not found, using empty index');
                 this.pdfIndex = [];
-                this.logDebug('PDF index not found, using empty index', null, 'warn');
-                this.updateDebugState({ pdfIndexLoaded: false, pdfIndexCount: 0 });
             }
         } catch (error) {
             console.warn('⚠️ Error loading PDF index:', error);
             this.pdfIndex = [];
-            this.logDebug('Error loading PDF index', error?.message || error, 'warn');
-            this.updateDebugState({ pdfIndexLoaded: false, pdfIndexCount: 0, lastError: error?.message || 'Failed to load index' });
         }
 
         // Load pdf.js library — use global `window.pdfjsLib` when available,
@@ -203,7 +92,6 @@ export class PDFLibraryManager {
         // is not bundled by webpack in many deployments, so dynamic import
         // of 'pdfjs-dist/webpack' frequently fails in the browser.
         console.log('📚 Loading pdf.js library (global -> CDN fallback)...');
-        this.logDebug('Loading pdf.js library (global -> CDN fallback)...');
         const CDN_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
         const LOCAL_WORKER = '/static/js/v2/pdf.worker.min.js';
 
@@ -213,21 +101,15 @@ export class PDFLibraryManager {
         if (!this.pdfjsLib) {
             try {
                 console.debug('🔁 pdfjsLib not found; attempting CDN load');
-                this.logDebug('Global pdf.js not found; attempting CDN load');
                 await this.loadPdfJsFromCDN();
                 this.pdfjsLib = window.pdfjsLib || null;
                 console.debug('🔍 After CDN load: window.pdfjsLib present?', !!this.pdfjsLib);
-                this.updateDebugState({ pdfjsLoaded: !!this.pdfjsLib, cdnFallbackUsed: true });
             } catch (cdnError) {
                 console.error('❌ Failed to load pdf.js from CDN:', cdnError);
                 this.pdfjsLib = null;
-                this.logDebug('Failed to load pdf.js from CDN', cdnError?.message || cdnError, 'error');
-                this.updateDebugState({ pdfjsLoaded: false, lastError: cdnError?.message || 'CDN load failed' });
             }
         } else {
             console.log('✅ Using existing global pdfjsLib');
-            this.logDebug('Using existing global pdfjsLib');
-            this.updateDebugState({ pdfjsLoaded: true });
         }
 
         const applyWorkerSrc = (src) => {
@@ -237,7 +119,6 @@ export class PDFLibraryManager {
             if (typeof window !== 'undefined' && window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
                 window.pdfjsLib.GlobalWorkerOptions.workerSrc = src;
             }
-            this.updateDebugState({ workerSrc: src });
             console.debug('🔧 Set pdfjsLib.GlobalWorkerOptions.workerSrc ->', src);
         };
 
@@ -250,23 +131,19 @@ export class PDFLibraryManager {
         for (const candidate of workerPreferences) {
             try {
                 applyWorkerSrc(candidate.src);
-                this.logDebug(`workerSrc set to ${candidate.label}`, candidate.src);
                 workerConfigured = true;
                 break;
             } catch (err) {
                 console.warn(`⚠️ Could not set workerSrc using ${candidate.label}:`, err);
-                this.logDebug(`Could not set workerSrc using ${candidate.label}`, err?.message || err, 'warn');
             }
         }
 
         if (!workerConfigured) {
             console.error('❌ pdfjsLib workerSrc could not be configured with any source');
-            this.logDebug('Could not set workerSrc on pdfjsLib', 'All worker sources failed', 'error');
         }
 
         this.initialized = true;
         console.log('✅ PDFLibraryManager initialized');
-        this.logDebug('PDFLibraryManager initialized');
 
         eventBus.emit('PDF_LIBRARY_MANAGER_READY', {
             count: this.pdfIndex.length,
@@ -286,7 +163,6 @@ export class PDFLibraryManager {
      * Fallback method to load pdf.js from CDN
      */
     async loadPdfJsFromCDN() {
-        this.logDebug('loadPdfJsFromCDN() invoked');
         return new Promise((resolve, reject) => {
             // Load pdf.js from CDN
             const script = document.createElement('script');
@@ -297,19 +173,15 @@ export class PDFLibraryManager {
                     if (this.pdfjsLib && this.pdfjsLib.GlobalWorkerOptions) {
                         this.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
                         console.debug('🔧 Set workerSrc to CDN worker after CDN script load');
-                        this.updateDebugState({ workerSrc: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js' });
                     }
                 } catch (e) {
                     console.warn('⚠️ Could not set workerSrc after CDN pdf.js load:', e);
-                    this.logDebug('Could not set workerSrc after CDN pdf.js load', e?.message || e, 'warn');
                 }
                 console.log('✅ pdf.js loaded from CDN');
-                this.logDebug('pdf.js loaded from CDN');
                 resolve();
             };
             script.onerror = (e) => {
                 console.error('❌ Failed to load pdf.min.js from CDN', e);
-                this.logDebug('Failed to load pdf.min.js from CDN', e?.message || e, 'error');
                 reject(new Error('Failed to load pdf.min.js from CDN'));
             };
             document.head.appendChild(script);
@@ -609,28 +481,20 @@ export class PDFLibraryManager {
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
         const safeDisplayTitle = this.escapeHtml(this.formatPDFTitle(filename));
 
-        this.logDebug('renderPDFToHTML invoked', { filename, url });
-        this.updateDebugState({ lastPDF: filename });
 
         if (!url) {
             console.error('Unable to construct PDF URL for', filename);
-            this.logDebug('Unable to construct PDF URL', { filename }, 'error');
-            this.updateDebugState({ fallbackReason: 'invalid_url' });
             return this.renderPDFFallback(filename, safeDisplayTitle);
         }
 
         if (this.shouldPreferNativeViewer()) {
             console.warn('Forcing native PDF viewer for this Android environment');
-            this.logDebug('Android native viewer forced', { filename });
-            this.updateDebugState({ fallbackReason: 'android_native' });
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'android_native' });
             return this.renderPDFFallback(filename, safeDisplayTitle, url);
         }
 
         if (!this.pdfjsLib) {
             console.warn('pdf.js library not loaded, using browser PDF fallback for', filename);
-            this.logDebug('pdf.js not loaded; using fallback', { filename }, 'warn');
-            this.updateDebugState({ fallbackReason: 'pdfjs_missing' });
             eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'pdfjs_missing' });
             return this.renderPDFFallback(filename, safeDisplayTitle, url);
         }
@@ -639,9 +503,7 @@ export class PDFLibraryManager {
 
         try {
             const pdf = await this.pdfjsLib.getDocument(url).promise;
-            this.logDebug('PDF loaded via pdf.js', { filename, pages: pdf.numPages });
             let html = '';
-            this.updateDebugState({ fallbackReason: null });
 
             eventBus.emit('PDF_LOADED', { filename, pages: pdf.numPages });
 
@@ -675,7 +537,6 @@ export class PDFLibraryManager {
                     pageImageDataUrl = canvas.toDataURL('image/png');
                 } catch (renderError) {
                     console.warn('PDF canvas render failed, falling back to text view for', filename, renderError);
-                    this.logDebug('PDF canvas render failed', renderError?.message || renderError, 'warn');
                 }
 
                 let pageBodyHtml = '';
@@ -721,8 +582,6 @@ export class PDFLibraryManager {
         } catch (error) {
             console.error('Error rendering PDF:', error);
             eventBus.emit('PDF_ERROR', { filename, error: error.message });
-            this.logDebug('Error rendering PDF', { filename, error: error?.message || error }, 'error');
-            this.updateDebugState({ lastError: error?.message || 'Unknown PDF render error', fallbackReason: 'render_error' });
 
             // Helpful hint for debugging missing files
             try {
@@ -738,14 +597,11 @@ export class PDFLibraryManager {
                 const fallbackHtml = this.renderPDFFallback(filename, safeDisplayTitle, url);
                 if (fallbackHtml) {
                     console.warn('Using browser PDF fallback due to rendering error for', filename);
-                    this.logDebug('Using browser PDF fallback due to rendering error', { filename }, 'warn');
-                    this.updateDebugState({ fallbackReason: 'render_error' });
                     eventBus.emit('PDF_RENDER_FALLBACK', { filename, reason: 'render_error' });
                     return fallbackHtml;
                 }
             } catch (fallbackError) {
                 console.error('Failed to build PDF fallback UI:', fallbackError);
-                this.logDebug('Failed to build PDF fallback UI', fallbackError?.message || fallbackError, 'error');
             }
             const safeErrorTitle = this.escapeHtml(this.formatPDFTitle(filename));
             const safeErrorMessage = this.escapeHtml(error.message || '');
@@ -779,7 +635,6 @@ export class PDFLibraryManager {
             return '';
         }
 
-        this.logDebug('renderPDFFallback invoked', { filename, url: pdfUrl });
 
         const safeUrl = this.escapeHtmlAttribute(`${pdfUrl}#view=FitH`);
         const safeDownloadUrl = this.escapeHtmlAttribute(pdfUrl);
@@ -854,8 +709,6 @@ export class PDFLibraryManager {
         const safeTitle = this.escapeHtml(this.formatPDFTitle(filename));
         const safeFilenameAttr = this.escapeHtmlAttribute(filename);
 
-        this.logDebug('showPDF called', { filename });
-        this.updateDebugState({ lastPDF: filename });
 
         // Add loading state
         container.innerHTML = `
@@ -894,7 +747,6 @@ export class PDFLibraryManager {
 
         } catch (error) {
             const safeErrorMessage = this.escapeHtml(error.message || '');
-            this.logDebug('showPDF error', { filename, error: error?.message || error }, 'error');
             container.innerHTML = `
                 <button class="back-btn" onclick="window.quizApp.loadPDFLibraryContent(document.getElementById('pdf-library-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
                     ← Back to PDF Library
@@ -928,14 +780,6 @@ export class PDFLibraryManager {
                 <input type="text" id="pdf-search" placeholder="Search PDFs..." class="tool-search">
                 <button id="pdf-search-btn">🔍</button>
             </div>
-            <div class="pdf-debugger" style="margin-bottom: 12px;">
-                <button id="pdf-debug-toggle" class="pdf-debug-toggle" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; border: 1px dashed var(--v2-border); background: transparent; color: var(--v2-text-secondary); cursor: pointer; font-size: 0.9em;">
-                    🐞 Show PDF Debug Info
-                </button>
-                <div id="pdf-debug-info" class="pdf-debug-info" style="display: none; margin-top: 8px; font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 0.8em; background: var(--v2-bg-elevated); border: 1px dashed var(--v2-border); border-radius: 12px; padding: 12px; line-height: 1.5;">
-                    <div style="color: var(--v2-text-tertiary);">No debug data yet.</div>
-                </div>
-            </div>
             <div class="pdf-categories">
                 <button class="category-btn active" data-category="all">All Documents</button>
                 <button class="category-btn" data-category="assessment">Assessment Tools</button>
@@ -968,22 +812,6 @@ export class PDFLibraryManager {
 
         searchInput.addEventListener('input', performSearch);
         searchBtn.addEventListener('click', performSearch);
-
-        const debugToggle = document.getElementById('pdf-debug-toggle');
-        const debugInfo = document.getElementById('pdf-debug-info');
-        if (debugToggle && debugInfo) {
-            debugToggle.addEventListener('click', () => {
-                const isHidden = debugInfo.style.display === 'none';
-                debugInfo.style.display = isHidden ? 'block' : 'none';
-                debugToggle.textContent = isHidden ? '🐞 Hide PDF Debug Info' : '🐞 Show PDF Debug Info';
-                debugToggle.setAttribute('aria-expanded', String(isHidden));
-                if (isHidden) {
-                    this.renderDebugInfo();
-                }
-            });
-        }
-
-        this.renderDebugInfo();
 
         // Setup category buttons
         const categoryBtns = document.querySelectorAll('.pdf-categories .category-btn');
