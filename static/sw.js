@@ -94,8 +94,29 @@ self.addEventListener('fetch', (event) => {
     const { request } = event;
     const url = new URL(request.url);
 
+    if (request.mode === 'navigate') {
+        event.respondWith(
+            fetch(request)
+                .then((response) => {
+                    const responseClone = response.clone();
+                    caches.open(STATIC_CACHE)
+                        .then((cache) => cache.put(request, responseClone))
+                        .catch((cacheError) => console.warn('Failed to update cached shell:', cacheError));
+                    return response;
+                })
+                .catch(async () => {
+                    const cachedResponse = await caches.match(request);
+                    if (cachedResponse) {
+                        return cachedResponse;
+                    }
+                    return caches.match('/');
+                })
+        );
+        return;
+    }
+
     // Handle static files (CSS, JS, images)
-    if (STATIC_FILES.some(file => url.pathname === file) || 
+    if (STATIC_FILES.some(file => url.pathname === file) ||
         url.pathname.startsWith('/static/')) {
         
         event.respondWith(
