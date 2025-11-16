@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- PDF.js MUST load before any modules that reference window.pdfjsLib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        try {
+            if (window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
+                // Prefer your local worker for same-origin & offline mode
+                window.pdfjsLib.GlobalWorkerOptions.workerSrc = '/static/js/v2/pdf.worker.min.js';
+            }
+        } catch (e) {
+            console.warn('Failed to configure pdf.js worker', e);
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>MLA Quiz</title>
@@ -1069,9 +1082,10 @@
         /* Tools Navigation */
         .tools-navigation {
             display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
             border-bottom: 1px solid #e5e5ea;
             background: #f8f9fa;
-            overflow-x: auto;
         }
         
         .tool-nav-btn {
@@ -3561,14 +3575,7 @@
             }
             
             .tools-navigation {
-                overflow-x: auto;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-                gap: 2px;
-            }
-            
-            .tools-navigation::-webkit-scrollbar {
-                display: none;
+                gap: 4px;
             }
         }
         
