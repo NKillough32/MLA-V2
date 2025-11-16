@@ -15,7 +15,8 @@ const STATIC_FILES = [
     '/static/js/v2/modules/QuizManager.js',
     '/static/js/v2/modules/StorageManager.js',
     '/static/js/v2/modules/EventBus.js',
-    '/static/js/v2/modules/Constants.js'
+    '/static/js/v2/modules/Constants.js',
+    '/static/assets/pdf_index.json'
     // Icons are inline SVG data URIs, no need to cache external files
     // V2 modules load dynamically, don't pre-cache
     // V1 app.js removed as we're using V2 system
