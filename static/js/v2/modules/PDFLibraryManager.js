@@ -444,7 +444,16 @@ export class PDFLibraryManager {
             const offline = typeof navigator.onLine === 'boolean' && navigator.onLine === false;
             const standalone = this.isStandaloneDisplayMode();
 
-            return isWebView || isSamsungBrowser || lowMemory || offline || standalone;
+            const shouldFallback = isWebView || isSamsungBrowser || lowMemory || offline;
+
+            if (!shouldFallback && standalone) {
+                // Android PWAs that run in standalone mode now attempt the inline
+                // pdf.js renderer first so that installed users keep the same
+                // experience as the browser version.
+                console.debug('📄 Standalone display mode detected; keeping inline PDF renderer active.');
+            }
+
+            return shouldFallback;
         } catch (err) {
             console.debug('PDF native viewer detection failed', err);
             return false;
