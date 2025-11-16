@@ -91,41 +91,6 @@ const KEYWORD_INSERTS = [
     'RESPIRATORY', 'RENAL', 'HEPATIC', 'PEDIATRIC', 'PAEDIATRIC', 'NEPHROLOGY'
 ];
 
-const CATEGORY_TITLE_RULES = new Map([
-    ['assessment', {
-        descriptor: 'Assessment Tool',
-        keywords: ['assessment', 'screen', 'checklist', 'questionnaire', 'exam', 'review', 'history']
-    }],
-    ['calculators', {
-        descriptor: 'Calculator',
-        keywords: ['calculator', 'calc', 'score', 'index', 'ratio', 'rate', 'volume', 'risk', 'dose', 'dosing']
-    }],
-    ['management', {
-        descriptor: 'Management Guide',
-        keywords: ['management', 'treatment', 'therapy', 'protocol', 'guideline', 'care', 'plan']
-    }],
-    ['diagnosis', {
-        descriptor: 'Diagnostic Guide',
-        keywords: ['diagnosis', 'diagnostic', 'criteria', 'workup', 'investigation']
-    }],
-    ['scoring', {
-        descriptor: 'Score',
-        keywords: ['score', 'scale', 'scoring', 'index', 'classification', 'stage', 'staging']
-    }],
-    ['emergency', {
-        descriptor: 'Emergency Reference',
-        keywords: ['emergency', 'resuscitation', 'arrest', 'shock', 'sepsis', 'acute']
-    }],
-    ['anatomy', {
-        descriptor: 'Anatomy Reference',
-        keywords: ['anatomy', 'diagram', 'msk', 'nerve', 'vascular', 'bone']
-    }],
-    ['other', {
-        descriptor: 'Clinical Reference',
-        keywords: ['reference', 'overview', 'summary', 'consent']
-    }]
-]);
-
 export class PDFLibraryManager {
     constructor() {
         this.pdfIndex = null;
@@ -412,7 +377,7 @@ export class PDFLibraryManager {
             { id: 'scoring', name: 'Scoring Systems', icon: '📊', count: 0 },
             { id: 'emergency', name: 'Emergency', icon: '🚨', count: 0 },
             { id: 'anatomy', name: 'Anatomy', icon: '🦴', count: 0 },
-            { id: 'other', name: 'Other', icon: '📄', count: 0 }
+            { id: 'other', name: 'Other', icon: '📘', count: 0 }
         ];
 
         // Count PDFs in each category
@@ -555,31 +520,6 @@ export class PDFLibraryManager {
         return formattedTitle;
     }
 
-    getDisplayTitle(filename) {
-        const baseTitle = this.formatPDFTitle(filename);
-        const category = this.categorizePDF(filename);
-        const descriptor = this.getCategoryDescriptor(category, baseTitle);
-        if (descriptor) {
-            return `${baseTitle} ${descriptor}`;
-        }
-        return baseTitle;
-    }
-
-    getCategoryDescriptor(categoryId, title) {
-        if (!categoryId) {
-            return '';
-        }
-        const rule = CATEGORY_TITLE_RULES.get(categoryId);
-        if (!rule) {
-            return '';
-        }
-        const normalizedTitle = title.toLowerCase();
-        if (rule.keywords.some(keyword => normalizedTitle.includes(keyword))) {
-            return '';
-        }
-        return rule.descriptor;
-    }
-
     /**
      * Determine if we should bypass pdf.js and use the native viewer instead.
      * Android PWAs/WebViews frequently fail to spin up the pdf.js worker which
@@ -611,7 +551,7 @@ export class PDFLibraryManager {
                 // Android PWAs that run in standalone mode now attempt the inline
                 // pdf.js renderer first so that installed users keep the same
                 // experience as the browser version.
-            console.debug('📄 Standalone display mode detected; keeping inline PDF renderer active.');
+            console.debug('📘 Standalone display mode detected; keeping inline PDF renderer active.');
             }
 
             return shouldFallback;
@@ -734,7 +674,7 @@ export class PDFLibraryManager {
                 html += `
                     <div class="card pdf-page-card">
                         <div class="q-header">
-                            <h2 style="font-size: 1.4em; margin: 0;">📄 ${safeDisplayTitle} - Page ${pageNum}</h2>
+                            <h2 style="font-size: 1.4em; margin: 0;">📘 ${safeDisplayTitle} - Page ${pageNum}</h2>
                         </div>
                         <div class="card-body q-text" style="line-height: 1.6;">
                             ${pageBodyHtml}
@@ -811,10 +751,10 @@ export class PDFLibraryManager {
         const safeTitle = this.escapeHtml(displayTitle || this.getDisplayTitle(filename));
 
         return `
-            <div class="card pdf-fallback" style="padding: 16px;">
-                <div class="q-header" style="margin-bottom: 12px;">
-                    <h2 style="margin: 0; font-size: 1.3em;">📄 ${safeTitle}</h2>
-                    <p style="margin: 6px 0 0; color: var(--text-secondary); font-size: 0.95em;">
+            <div class="card pdf-fallback" style="padding: 20px;">
+                <div class="q-header" style="margin-bottom: 16px;">
+                    <h2 style="margin: 0; font-size: 1.3em;">📘 ${safeTitle}</h2>
+                    <p style="margin: 8px 0 0; color: var(--text-secondary); font-size: 0.95em;">
                         Displaying using the browser's built-in PDF viewer.
                     </p>
                 </div>

@@ -1277,8 +1277,8 @@
         .pdf-content-container {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            margin-top: 0;
+            gap: 10px;
+            margin-top: 4px;
         }
 
         .pdf-page-card {
@@ -1349,6 +1349,83 @@
         @media (max-width: 768px) {
             .pdf-card .card-body {
                 padding: 12px 14px;
+            }
+        }
+
+        .pdf-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .pdf-card:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--v2-shadow-lg);
+        }
+
+        .pdf-card-icon {
+            font-size: 1.4em;
+            color: var(--v2-primary);
+        }
+
+        /* PDF library controls */
+        #pdf-library-panel .search-container {
+            margin-bottom: 10px;
+        }
+
+        #pdf-library-panel .pdf-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 6px 0 14px;
+        }
+
+        .pdf-search-btn {
+            min-width: 44px;
+            border-radius: 12px;
+            background: var(--v2-primary);
+            color: white;
+        }
+
+        .pdf-search-btn:hover {
+            background: var(--v2-primary-dark);
+        }
+
+        .pdf-back-btn {
+            margin-bottom: 12px;
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pdf-back-btn:hover {
+            background: rgba(99, 102, 241, 0.08);
+        }
+
+        .pdf-card {
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .pdf-card-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pdf-card .card-body {
+            padding: 16px 18px;
+        }
+
+        @media (max-width: 768px) {
+            .pdf-card .card-body {
+                padding: 14px 16px;
             }
         }
 
