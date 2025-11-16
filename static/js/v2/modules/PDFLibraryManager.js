@@ -100,6 +100,7 @@ export class PDFLibraryManager {
         this.dataLoaded = false;
         this.pdfjsLib = null;
         this.assetsBasePath = '/static/assets/';
+        this.titleCache = new Map();
     }
 
     /**
@@ -518,6 +519,43 @@ export class PDFLibraryManager {
             .trim();
 
         return formattedTitle;
+    }
+
+    /**
+     * Get a user-friendly display title for a PDF
+     * @param {string} filename - Source filename from the index
+     * @returns {string} Formatted title suitable for UI display
+     */
+    getDisplayTitle(filename) {
+        if (!filename) {
+            return 'Medical Reference';
+        }
+
+        try {
+            const cacheKey = filename.toLowerCase();
+            if (this.titleCache.has(cacheKey)) {
+                return this.titleCache.get(cacheKey);
+            }
+
+            let title = this.formatPDFTitle(filename);
+
+            if (!title || !title.trim()) {
+                title = filename
+                    .replace(/[_/]+/g, ' ')
+                    .replace(/\.pdf$/i, '')
+                    .trim();
+            }
+
+            if (!title) {
+                title = 'Medical Reference';
+            }
+
+            this.titleCache.set(cacheKey, title);
+            return title;
+        } catch (error) {
+            console.warn('Failed to format PDF title for', filename, error);
+            return filename;
+        }
     }
 
     /**
