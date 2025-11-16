@@ -197,34 +197,54 @@ export class StorageManager {
         }
     }
 
-    async getItem(key, defaultValue = null) {
+    // Make getItem synchronous-friendly: return localStorage value immediately
+    // so callers that do not `await` (legacy/compat usage) receive the value
+    // instead of a Promise. If the key is not present in localStorage we
+    // return the provided defaultValue and trigger an async IndexedDB lookup
+    // in the background to populate localStorage if possible.
+    getItem(key, defaultValue = null) {
         try {
             const item = localStorage.getItem(key);
             if (item !== null) {
-                // Try to parse as JSON first
                 try {
                     return JSON.parse(item);
                 } catch (parseError) {
-                    // If JSON parsing fails, return as string (for backwards compatibility)
                     console.warn(`localStorage item "${key}" is not valid JSON, returning as string:`, item);
                     return item;
                 }
             }
-            
-            // If not in localStorage, try IndexedDB
-            const dbValue = await this.getItemFromDB(key);
-            return dbValue !== null ? dbValue : defaultValue;
+
+            // Not present in localStorage: schedule a background DB read to
+            // populate localStorage (non-blocking). Return defaultValue
+            // immediately so callers that expect a synchronous value work.
+            this.getItemFromDB(key).then(dbValue => {
+                try {
+                    if (dbValue !== null) {
+                        try {
+                            localStorage.setItem(key, JSON.stringify(dbValue));
+                        } catch (e) {
+                            // ignore localStorage set errors here
+                        }
+                    }
+                } catch (e) {
+                    // swallow errors from background update
+                }
+            }).catch(() => {});
+
+            return defaultValue;
         } catch (error) {
             console.error('Error reading from localStorage:', error);
-            
-            // Try IndexedDB fallback
-            try {
-                const dbValue = await this.getItemFromDB(key);
-                return dbValue !== null ? dbValue : defaultValue;
-            } catch (dbError) {
-                console.error('Error reading from IndexedDB:', dbError);
-                return defaultValue;
-            }
+            // If localStorage read fails, attempt async DB read in background
+            this.getItemFromDB(key).then(dbValue => {
+                try {
+                    if (dbValue !== null) {
+                        try {
+                            localStorage.setItem(key, JSON.stringify(dbValue));
+                        } catch (e) {}
+                    }
+                } catch (e) {}
+            }).catch(() => {});
+            return defaultValue;
         }
     }
 
