@@ -283,6 +283,20 @@ export class PDFLibraryManager {
             console.warn('⚠️ Error loading PDF metadata:', metaErr);
         }
 
+        // Try to load a Revision folder index (separate subfolder listing)
+        this.revisionIndex = [];
+        this.revisionAvailable = false;
+        try {
+            const revResp = await fetch('/static/assets/revision_index.json');
+            if (revResp.ok) {
+                this.revisionIndex = await revResp.json();
+                this.revisionAvailable = true;
+                console.log('✅ Revision index loaded with', this.revisionIndex.length, 'documents');
+            }
+        } catch (e) {
+            // ignore; revision folder optional
+        }
+
         // Load pdf.js library — use global `window.pdfjsLib` when available,
         // otherwise load from CDN. This project is served as static files and
         // is not bundled by webpack in many deployments, so dynamic import
@@ -940,8 +954,27 @@ export class PDFLibraryManager {
         }
 
         try {
-            const normalized = String(filename).trim().replace(/^\/+/, '');
-            const safeName = encodeURIComponent(normalized);
+            const original = String(filename);
+            const trimmed = original.trim();
+
+            // If the filename looks like a path (contains a slash) treat it
+            // as an explicit path on the server and return it as-is (but
+            // make sure each path segment is URL-encoded). This allows
+            // files placed under `/static/revision/...` to be referenced
+            // directly from `revision_index.json`.
+            if (trimmed.startsWith('/')) {
+                const withoutLeading = trimmed.replace(/^\/+/, '');
+                const parts = withoutLeading.split('/').map(p => encodeURIComponent(p));
+                return '/' + parts.join('/');
+            }
+
+            if (trimmed.includes('/')) {
+                const parts = trimmed.split('/').map(p => encodeURIComponent(p));
+                return '/' + parts.join('/');
+            }
+
+            // Otherwise assume the asset lives under the configured assets path
+            const safeName = encodeURIComponent(trimmed);
             return `${this.assetsBasePath}${safeName}`;
         } catch (e) {
             console.warn('Failed to build PDF URL for filename:', filename, e);
@@ -1052,6 +1085,7 @@ export class PDFLibraryManager {
                 <input type="text" id="pdf-search" placeholder="Search PDFs..." class="tool-search" aria-label="Search PDFs">
                 <button id="pdf-search-btn" class="btn pdf-search-btn" type="button" aria-label="Search PDFs">🔍</button>
             </div>
+            ${this.revisionAvailable ? `<div style="margin:8px 0 12px;"><a href="#" id="pdf-revision-link" style="text-decoration:none; font-weight:600;">📁 Revision</a></div>` : ''}
             <div class="pdf-categories">
                 <button class="category-btn active" data-category="all">All Documents</button>
                 <button class="category-btn" data-category="assessment">Assessment Tools</button>
@@ -1099,6 +1133,17 @@ export class PDFLibraryManager {
         // Show all PDFs initially
         await this.showCategory('all');
 
+        // Wire up revision link if available
+        if (this.revisionAvailable) {
+            const revLink = document.getElementById('pdf-revision-link');
+            if (revLink) {
+                revLink.addEventListener('click', async (ev) => {
+                    ev.preventDefault();
+                    await this.showRevision();
+                });
+            }
+        }
+
         console.log('📚 PDF library list rendered');
     }
 
@@ -1109,6 +1154,40 @@ export class PDFLibraryManager {
     async showCategory(categoryId) {
         const pdfs = await this.getPDFsByCategory(categoryId);
         this.displayPDFs(pdfs);
+    }
+
+    /**
+     * Show the Revision subfolder (uses `this.revisionIndex` loaded at init)
+     */
+    async showRevision() {
+        // Build a list similar to getPDFsByCategory
+        const pdfs = (Array.isArray(this.revisionIndex) ? this.revisionIndex : []).map(filename => ({
+            filename,
+            title: this.getDisplayTitle(filename),
+            category: 'revision'
+        }));
+
+        // Prepend a back link to the top of the list container
+        const listContainer = document.getElementById('pdf-list');
+        if (!listContainer) return;
+        listContainer.innerHTML = `
+            <div style="margin-bottom:12px;">
+                <a href="#" id="pdf-revision-back" style="text-decoration:none;">← Back to All Documents</a>
+            </div>
+        `;
+
+        // Render the revision PDFs
+        this.displayPDFs(pdfs);
+
+        // Wire back link
+        const back = document.getElementById('pdf-revision-back');
+        if (back) {
+            back.addEventListener('click', async (ev) => {
+                ev.preventDefault();
+                // restore categories UI and show all
+                await this.renderList();
+            });
+        }
     }
 
     /**
