@@ -924,9 +924,6 @@ export class PDFLibraryManager {
 
                 html += `
                     <div class="card pdf-page-card">
-                        <div class="q-header">
-                            <h2 style="font-size: 1.4em; margin: 0;">📘 ${safeDisplayTitle} - Page ${pageNum}</h2>
-                        </div>
                         <div class="card-body q-text" style="line-height: 1.6;">${pageBodyHtml}</div>
                     </div>
                 `;
@@ -1001,12 +998,6 @@ export class PDFLibraryManager {
 
         return `
             <div class="card pdf-fallback" style="padding: 20px;">
-                <div class="q-header" style="margin-bottom: 16px;">
-                    <h2 style="margin: 0; font-size: 1.3em;">📘 ${safeTitle}</h2>
-                    <p style="margin: 8px 0 0; color: var(--text-secondary); font-size: 0.95em;">
-                        Displaying using the browser's built-in PDF viewer.
-                    </p>
-                </div>
                 <div class="card-body" style="padding: 0;">
                     <iframe src="${safeUrl}" style="width: 100%; min-height: 70vh; border: 1px solid var(--border); border-radius: 8px; background: #fff;" title="${safeTitle}" loading="lazy"></iframe>
                 </div>
