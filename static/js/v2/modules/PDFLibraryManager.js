@@ -1136,20 +1136,30 @@ export class PDFLibraryManager {
         listContainer.innerHTML = pdfs.map(pdf => {
             const safeFilename = this.escapeHtmlAttribute(pdf.filename);
             const safeTitle = this.escapeHtml(pdf.title);
-            const safeCategory = this.escapeHtml(this.getCategoryName(pdf.category));
             const filenameBase = String(pdf.filename || '').replace(/\.pdf$/i, '').trim();
             const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(filenameBase)) : null;
             const tagline = meta && meta.subjectTagline ? this.escapeHtml(meta.subjectTagline) : '';
+
+            // Prefer showing metadata-provided filters/keywords as the category label.
+            // If no metadata keywords exist, fall back to the heuristically-derived category name.
+            let categoryLabel = '';
+            if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
+                // Show up to 3 keywords, humanized and separated by a bullet
+                const kws = meta.keywords.slice(0, 3).map(k => this.escapeHtml(this.titleCaseWord(String(k))));
+                categoryLabel = kws.join(' • ');
+            } else {
+                categoryLabel = this.escapeHtml(this.getCategoryName(pdf.category));
+            }
+
             return `
                 <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
                     <div class="card-body">
                         <div class="pdf-card-row">
                             <div>
                                 <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
-                                <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${safeCategory}</div>
+                                <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${categoryLabel}</div>
                                 ${tagline ? `<div class="pdf-tagline" style="color: var(--text-muted); font-size: 0.85em; margin-top:6px;">${tagline}</div>` : ''}
                             </div>
-                            <div class="pdf-card-icon" aria-hidden="true">📄</div>
                         </div>
                     </div>
                 </div>
