@@ -341,3 +341,22 @@ WELLSPEinfo,WELLS PE,Calculates risk of PE based on clinical criteria,Emergency 
 WESTHAVENinfo,WEST HAVEN CRITERIA,Defines criteria for the grades / stages of hepatic encephalopathy,Critical Care ITU Intensive Care Emergency Gastroenterology liver hepatology
 mSOFAinfo,MSOFA,Modified Sequential Organ Failure Assessment: predicts ICU mortality similar to SOFA but less variables,Critical Care ITU Intensive Care sepsis
 QSOFAinfo,QSOFA,Identifies high-risk patients for in-hospital mortality with suspected infection,Critical Care ITU Intensive Care Emergency sepsis
+A-aO2Gradientinfo.pdf,A–a O₂ Gradient,Alveolar–arterial oxygen gradient interpretation,respiratory;oxygen;gas-exchange
+ABCD2Stroke.pdf,ABCD² Stroke Risk Score,Risk of stroke after TIA,stroke;TIA;risk
+ABICSCOREinfo.pdf,ABIC Score,Prognostic score for alcoholic hepatitis,alcohol;hepatitis;prognosis
+BACTERIALMENINGITISinfo.pdf,Bacterial Meningitis,Assessment and initial management,meningitis;infection;antibiotics
+BodyWeight.pdf,Body Weight,Conversion & dosing reference,weight;dosing
+CHADS-VAS.pdf,CHA2DS2-VASc Score,Stroke risk in atrial fibrillation,AF;stroke;risk
+CockcroftGault.pdf,Cockcroft–Gault Equation,Estimate creatinine clearance for drug dosing,renal;creatinine;drugs
+Disclaimer.pdf,Disclaimer,Clinical guidance is for informational purposes only,legal;disclaimer
+DukeEndocarditis.pdf,Duke Criteria,Diagnostic criteria for infective endocarditis,endocarditis;infection;diagnosis
+EpistaxisRef.pdf,Epistaxis,Assessment and management of nasal bleeding,ENT;bleeding;epistaxis
+FallsAxRef.pdf,Falls Assessment,Initial assessment and red flags for falls,falls;geriatric
+FeverAxRef.pdf,Fever Assessment,Approach to fever in adults,fever;infection
+GCSRef.pdf,Glasgow Coma Scale,GCS reference and scoring chart,neurology;coma;GCS
+GlasgowUGIBleed.pdf,Glasgow-Blatchford Score,Risk assessment for upper GI bleeding,GI;bleeding;UGIB
+GraceMI.pdf,GRACE Score,Risk stratification after acute coronary syndrome,MI;ACS;prognosis
+HAS-BLED.pdf,HAS-BLED Score,Bleeding risk in atrial fibrillation anticoagulation,AF;bleeding;risk
+KingsCriteriaParacetamol.pdf,King's College Criteria,Prognosis in paracetamol overdose,overdose;paracetamol;liver
+Missing.pdf,Missing Document,Placeholder — metadata required,
+Scarbossa.pdf,Sgarbossa Criteria,ECG criteria for MI in LBBB,ECG;MI;LBBB
