@@ -5,6 +5,26 @@
     { "src": "static/**", "use": "@vercel/static" },
     { "src": "index.html", "use": "@vercel/static" }
   ],
+  "headers": [
+    {
+      "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/static/assets/(.*).json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/static/assets/(pdf_)?(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, max-age=0, must-revalidate" }
+      ]
+    }
+  ],
   "routes": [
     { "src": "/api/(.*)", "dest": "api/index.py" },
     { "src": "/sw.js", "dest": "/static/sw.js" },

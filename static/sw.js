@@ -85,7 +85,17 @@ self.addEventListener('activate', (event) => {
             );
         }).then(() => {
             console.log('Service worker activated');
-            return self.clients.claim();
+            // Claim clients and notify them that a new service worker is active
+            return self.clients.claim().then(async () => {
+                try {
+                    const clientsList = await self.clients.matchAll();
+                    clientsList.forEach(client => {
+                        client.postMessage({ type: 'SW_UPDATED' });
+                    });
+                } catch (e) {
+                    console.warn('Failed to notify clients about SW update', e);
+                }
+            });
         })
     );
 });
@@ -116,16 +126,34 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // Handle static files (CSS, JS, images)
-    if (STATIC_FILES.some(file => url.pathname === file) ||
-        url.pathname.startsWith('/static/')) {
-        
+    // For JSON assets and index.html prefer network-first to avoid serving stale metadata
+    if (url.pathname.endsWith('.json') || url.pathname === '/' || url.pathname === '/index.html') {
+        event.respondWith(
+            fetch(request)
+                .then((response) => {
+                    // Update cache for future offline use
+                    if (response && response.status === 200) {
+                        const respClone = response.clone();
+                        caches.open(RUNTIME_CACHE).then(cache => cache.put(request, respClone));
+                    }
+                    return response;
+                })
+                .catch(() => {
+                    // Fallback to cache when offline
+                    return caches.match(request).then(cached => cached || caches.match('/'));
+                })
+        );
+        return;
+    }
+
+    // Handle static files (CSS, JS, images) - cache-first as before
+    if (STATIC_FILES.some(file => url.pathname === file) || url.pathname.startsWith('/static/')) {
         event.respondWith(
             caches.match(request).then((cachedResponse) => {
                 if (cachedResponse) {
                     return cachedResponse;
                 }
-                
+
                 return fetch(request).then((response) => {
                     if (response.status === 200) {
                         const responseClone = response.clone();

@@ -297,7 +297,7 @@ export class PDFLibraryManager {
         // Load PDF index
         console.log('📚 Loading PDF index...');
         try {
-            const response = await fetch('/static/assets/pdf_index.json');
+            const response = await fetch('/static/assets/pdf_index.json', { cache: 'no-store' });
             if (response.ok) {
                 this.pdfIndex = await response.json();
                 console.log('✅ PDF index loaded with', this.pdfIndex.length, 'documents');
@@ -314,7 +314,7 @@ export class PDFLibraryManager {
         // fall back to parsing the `subjects.csv` at runtime.
         try {
             // Try JSON first (fast, build-time generated)
-            const metaResp = await fetch('/static/assets/pdf_metadata.json');
+            const metaResp = await fetch('/static/assets/pdf_metadata.json', { cache: 'no-store' });
             if (metaResp.ok) {
                 const metaJson = await metaResp.json();
                 for (const k of Object.keys(metaJson)) {
@@ -344,7 +344,7 @@ export class PDFLibraryManager {
         this.revisionIndex = [];
         this.revisionAvailable = false;
         try {
-            const revResp = await fetch('/static/assets/revision_index.json');
+            const revResp = await fetch('/static/assets/revision_index.json', { cache: 'no-store' });
             if (revResp.ok) {
                 this.revisionIndex = await revResp.json();
                 this.revisionAvailable = true;
@@ -352,6 +352,28 @@ export class PDFLibraryManager {
             }
         } catch (e) {
             // ignore; revision folder optional
+        }
+
+        // Listen for service worker messages so we can prompt the user to reload
+        try {
+            if (navigator && navigator.serviceWorker && navigator.serviceWorker.addEventListener) {
+                navigator.serviceWorker.addEventListener('message', (ev) => {
+                    try {
+                        const data = ev.data || {};
+                        if (data && data.type === 'SW_UPDATED') {
+                            // Non-blocking prompt to user to reload to get latest version
+                            const doReload = confirm('A new version of the app is available. Reload now to update?');
+                            if (doReload) {
+                                window.location.reload();
+                            }
+                        }
+                    } catch (msgErr) {
+                        console.warn('Failed to handle SW message', msgErr);
+                    }
+                });
+            }
+        } catch (e) {
+            // Ignore message hookup failures
         }
 
         // Load pdf.js library — use global `window.pdfjsLib` when available,
