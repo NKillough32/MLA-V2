@@ -91,6 +91,63 @@ const KEYWORD_INSERTS = [
     'RESPIRATORY', 'RENAL', 'HEPATIC', 'PEDIATRIC', 'PAEDIATRIC', 'NEPHROLOGY'
 ];
 
+// Map of normalized speciality keys -> emoji/icon for Revision view
+const REVISION_ICON_MAP = new Map([
+    ['criticalcare', '🚑'],
+    ['dermatology', '🧴'],
+    ['emergencymedicine', '🚨'],
+    ['endocrine', '🧪'],
+    ['ent', '👂'],
+    ['gastroenterology', '🥘'],
+    ['haematology', '🩸'],
+    ['neurology', '🧠'],
+    ['urology', '🚻'],
+    ['obstetricsandgynaecology', '🤰'],
+    ['radiology', '🩻'],
+    ['ophthalmology', '👁️'],
+    ['orthopaedics', '🦴'],
+    ['paediatrics', '🧒'],
+    ['geriatric', '👴'],
+    ['rheumatology', '🦴'],
+    ['genetics', '🧬'],
+    ['vascularsurgery', '🫀'],
+    ['cardiology', '❤️'],
+    ['epidemiology', '🔬'],
+    ['oncology', '🎗️'],
+    ['anatomy', '🦴'],
+    ['psychiatry', '🧠'],
+    ['ethics', '⚖️'],
+    ['generalsurgery', '🔪'],
+    ['genitourinary', '🚻'],
+    ['palliativecare', '🕯️'],
+    ['pharmacology', '💊'],
+    ['infectiousdiseases', '🦠'],
+    ['nephrology', '🩺'],
+    ['respiratory', '🫁']
+]);
+
+const normalizeSpecialityKey = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+// Extract a friendly speciality title from a revision filename/path
+function getRevisionSpecialityTitle(filename) {
+    try {
+        const parts = String(filename).split('/');
+        let last = parts[parts.length - 1] || filename;
+        last = last.replace(/\.pdf$/i, '').trim();
+        // Remove leading ordinal like "1. " or "25." if present
+        last = last.replace(/^\d+\.\s*/, '').replace(/^\d+\./, '').trim();
+        return last;
+    } catch (e) {
+        return String(filename).replace(/\.pdf$/i, '');
+    }
+}
+
+function getRevisionIconForTitle(title) {
+    const key = normalizeSpecialityKey(title);
+    if (REVISION_ICON_MAP.has(key)) return REVISION_ICON_MAP.get(key);
+    return '📁';
+}
+
 export class PDFLibraryManager {
     constructor() {
         this.pdfIndex = null;
@@ -1160,10 +1217,11 @@ export class PDFLibraryManager {
      * Show the Revision subfolder (uses `this.revisionIndex` loaded at init)
      */
     async showRevision() {
-        // Build a list similar to getPDFsByCategory
+        // Build a list similar to getPDFsByCategory but use friendly
+        // speciality names (extracted from filenames) and mark category
         const pdfs = (Array.isArray(this.revisionIndex) ? this.revisionIndex : []).map(filename => ({
             filename,
-            title: this.getDisplayTitle(filename),
+            title: getRevisionSpecialityTitle(filename),
             category: 'revision'
         }));
 
@@ -1215,29 +1273,41 @@ export class PDFLibraryManager {
         listContainer.innerHTML = pdfs.map(pdf => {
             const safeFilename = this.escapeHtmlAttribute(pdf.filename);
             const safeTitle = this.escapeHtml(pdf.title);
+
+            // Revision-specific UI: show an icon and speciality-only title
+            let iconHtml = '';
+            if (pdf.category === 'revision') {
+                const icon = getRevisionIconForTitle(pdf.title);
+                iconHtml = `<div class="pdf-icon" style="font-size:1.6em; margin-right:8px; line-height:1;">${this.escapeHtml(icon)}</div>`;
+            }
+
+            // Try to enrich with metadata for tagline; fall back silently
             const filenameBase = String(pdf.filename || '').replace(/\.pdf$/i, '').trim();
             const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(filenameBase)) : null;
             const tagline = meta && meta.subjectTagline ? this.escapeHtml(meta.subjectTagline) : '';
 
-            // Prefer showing metadata-provided filters/keywords as the category label.
-            // If no metadata keywords exist, fall back to the heuristically-derived category name.
+            // For Revision items we prefer not to show a category label; for others keep previous behavior
             let categoryLabel = '';
-            if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
-                // Show up to 3 keywords, humanized and separated by a bullet
-                const kws = meta.keywords.slice(0, 3).map(k => this.escapeHtml(this.titleCaseWord(String(k))));
-                categoryLabel = kws.join(' • ');
-            } else {
-                categoryLabel = this.escapeHtml(this.getCategoryName(pdf.category));
+            if (pdf.category !== 'revision') {
+                if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
+                    const kws = meta.keywords.slice(0, 3).map(k => this.escapeHtml(this.titleCaseWord(String(k))));
+                    categoryLabel = kws.join(' • ');
+                } else {
+                    categoryLabel = this.escapeHtml(this.getCategoryName(pdf.category));
+                }
             }
 
             return `
                 <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
                     <div class="card-body">
                         <div class="pdf-card-row">
-                            <div>
-                                <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
-                                <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${categoryLabel}</div>
-                                ${tagline ? `<div class="pdf-tagline" style="color: var(--text-muted); font-size: 0.85em; margin-top:6px;">${tagline}</div>` : ''}
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                ${iconHtml}
+                                <div>
+                                    <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
+                                    ${categoryLabel ? `<div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${categoryLabel}</div>` : ''}
+                                    ${tagline ? `<div class="pdf-tagline" style="color: var(--text-muted); font-size: 0.85em; margin-top:6px;">${tagline}</div>` : ''}
+                                </div>
                             </div>
                         </div>
                     </div>
