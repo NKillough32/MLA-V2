@@ -17,6 +17,7 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
+PDFINFO_CSV = os.path.join(ROOT, 'static', 'assets', 'pdfinfo.csv')
 SUBJECTS_CSV = os.path.join(ROOT, 'static', 'assets', 'subjects.csv')
 CALCULATORS_CSV = os.path.join(ROOT, 'static', 'assets', 'calculators.csv')
 OUT_PATH = os.path.join(ROOT, 'static', 'assets', 'pdf_metadata.json')
@@ -40,7 +41,36 @@ def main():
                 merged[k] = v
         metadata[key] = merged
 
-    # Parse subjects.csv first
+    # Parse pdfinfo.csv first (authoritative)
+    if os.path.exists(PDFINFO_CSV):
+        with open(PDFINFO_CSV, newline='', encoding='utf-8') as fh:
+            reader = csv.DictReader(fh)
+            for row in reader:
+                # Expected columns: filename,filetitle,fileinfo,filters
+                filename_field = (row.get('filename') or row.get('pdf') or '').strip()
+                filetitle = (row.get('filetitle') or row.get('subjectTitle') or '').strip()
+                fileinfo = (row.get('fileinfo') or row.get('subjectTagline') or '').strip()
+                filters_raw = (row.get('filters') or row.get('keywords') or '').strip()
+
+                key = normalize_key(filename_field or filetitle)
+                if not key:
+                    continue
+
+                filters = []
+                if filters_raw:
+                    filters = [k.strip() for k in re.split(r'[;,\|]|\s+', filters_raw) if k.strip()]
+
+                # Use pdfinfo as authoritative values (overwrite existing)
+                metadata[key] = {
+                    'pdf': filename_field,
+                    'subjectTitle': filetitle,
+                    'subjectTagline': fileinfo,
+                    'keywords': filters
+                }
+    else:
+        print('Warning: pdfinfo.csv not found at', PDFINFO_CSV)
+
+    # Parse subjects.csv as a fallback (only fill missing keys)
     if os.path.exists(SUBJECTS_CSV):
         with open(SUBJECTS_CSV, newline='', encoding='utf-8') as fh:
             reader = csv.DictReader(fh)
@@ -54,6 +84,10 @@ def main():
                 if not key:
                     continue
 
+                # Only merge if the key does not already exist (pdfinfo authoritative)
+                if key in metadata:
+                    continue
+
                 keywords = []
                 if keywords_raw:
                     keywords = [k for k in re.split(r"[\s,;]+", keywords_raw) if k]
@@ -64,11 +98,10 @@ def main():
                     'subjectTagline': subject_tagline,
                     'keywords': keywords
                 })
-
     else:
         print('Warning: subjects.csv not found at', SUBJECTS_CSV)
 
-    # Parse calculators.csv and prefer its title/tagline for matching form files
+    # Parse calculators.csv as a fallback (only fill missing keys)
     if os.path.exists(CALCULATORS_CSV):
         with open(CALCULATORS_CSV, newline='', encoding='utf-8') as fh:
             reader = csv.DictReader(fh)
@@ -94,6 +127,9 @@ def main():
 
                 for key in candidates:
                     if not key:
+                        continue
+                    # Only merge if the key does not already exist
+                    if key in metadata:
                         continue
                     merge_entry(key, {
                         'pdf': form_info,

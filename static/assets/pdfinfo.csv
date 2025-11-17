@@ -1,0 +1,343 @@
+filename,filetitle,fileinfo,filters
+4ASDELERIUMinfo,4As DELIRIUM,Screening for delirium in older patients,"All,Neuro,Old,Psych"
+4CMORTALITYinfo,4C MORTALITY,Predicts in-hospital mortality in patients admitted with COVID-19,"All,CriticalCare,Resp"
+4PEPSinfo,4PEPS,4-Level Pulmonary Embolism Clinical Probability Score (4PEPS): Rules out PE based on clinical criteria,"All,Emergency,Resp"
+4Tsinfo,4Ts HIT Score,Differentiates patients with Heparin-Induced Thrombocytopenia from those with other causes of thrombocytopenia,"All,Haem"
+6MINUTEWALKDISTANCEinfo,6 MINUTE WALK DISTANCE,"Calculates reference values for distance walked, as a measure of functional status","All,GP,MSK,Old"
+ABCD2info,ABCD2,Estimates the risk of stroke after a suspected transient ischemic attack (TIA),"All,Emergency,GP,Neuro,Old"
+ACR-EULARPMRinfo,ACR-EULAR PMR,Diagnoses polymyalgia rheumatica (PMR) in patients based on 2012 EULAR/ACR criteria,"All,GP,MSK"
+ACR-EULARRAinfo,ACR-EULAR RA,Diagnoses rheumatoid arthritis (RA) in patients with undifferentiated inflammatory synovitis,"All,GP,MSK"
+ACUTEGOUTDIAGNOSISinfo,ACUTE GOUT DIAGNOSIS,Risk stratifies for gout vs non-gout arthritis,"All,Emergency,GP,MSK"
+ADHDinfo,ADHD-ADULT SELF-REPORT SCALE,Used as diagnostic tool for adult ADHD,"All,GP,Psych"
+ADJUSTEDBODYWEIGHTinfo,BODY WEIGHT - ADJUSTED,Calculates adjusted body weight. For use in obese patients where actual > ideal body weight,"All,CriticalCare,Gastro,GP"
+AGEADJUSTEDCRPESRinfo,AGE ADJUSTED CRP/ESR,Calculates age-adjusted ESR and CRP in adult patients,"All,MSK,GP"
+AGE-ADJUSTEDD-DIMERinfo,AGE-ADJUSTED D-DIMER,Adjusts D-dimer cutoffs by age to help rule out VTE in patients ≥50 years old,"All,Cardio,Emergency"
+AIRinfo,AIR SCORE,Diagnoses appendicitis based on clinical and laboratory findings,"All,Emergency,GenSurg"
+AKINCLASSIFICATIONinfo,AKIN CLASSIFICATION,AKIN Classification for acute kidney injury (AKI),"All,Renal"
+ALCinfo,ABSOLUTE LYMPHOCYTE COUNT,Absolute Lymphocyte Count: predicts CD4 count,"All,Haem"
+ALT-70info,ALT-70 CELLULITIS,Predicts likelihood of lower limb cellulitis,"All,Emergency,GP"
+AMT-10info,AMT-10,"Assesses mental impairment in elderly patients, screening for delirium or dementia","All,Emergency,GP,Neuro,Old,Psych"
+AMT-4info,AMT-4,"Assesses mental impairment in elderly patients, screening for delirium or dementia","All,Emergency,GP,Neuro,Old,Psych"
+ANCinfo,ABSOLUTE NEUTROPHIL COUNT,Absolute Neutrophil Count: used to determine potential neutropenia in immunocompromised patients,"All,Haem"
+ANIONinfo,ANION GAP,Evaluates states of metabolic acidosis,"All,CriticalCare,Endo,Gastro,Renal,Resp"
+ANIONCorrectedinfo,ANION GAP ALBUMIN,Evaluates states of metabolic acidosis. Includes correction for Albumin.,"All,CriticalCare,Endo,Gastro,Renal,Resp"
+APACHEIISCOREinfo,APACHE II SCORE,Estimates ICU mortality,"All,CriticalCare"
+APGARSCOREinfo,APGAR SCORE,Assesses neonates 1 and 5 minutes after birth,"All,Paeds"
+APRIinfo,APRI,"AST to Platelet Ratio Index.
+Determines the likelihood of hepatic fibrosis and cirrhosis in patients with hepatitis C","All,Gastro"
+ASAinfo,ASA CLASSIFICATION,Classifies health of patients prior to surgery,All
+ASASCRITERIAinfo,ASAS AXIAL CRITERIA,Classifies Axial spondyloarthritis according to Assessment of Spondyloarthritis International Society (ASAS) criteria,"All,GP,MSK,Ophth"
+ASASCRITERIAPinfo,ASAS PERIPHERAL CRITERIA,Classifies Peripheral spondyloarthritis according to Assessment of Spondyloarthritis International Society (ASAS) criteria,"All,GP,MSK,Ophth"
+ASDAS-CRPinfo,ASDAS-CRP,Ankylosing Spondylitis Disease Activity Score with CRP: stratifies disease severity,"All,MSK"
+ASDAS-ESRinfo,ASDAS-ESR,Ankylosing Spondylitis Disease Activity Score with ESR: stratifies disease severity,"All,MSK"
+ASTHMAPREDICTIVEINDEXinfo,ASTHMA PREDICTIVE INDEX,Determines likelihood of paediatric patients (≤3 years age) developing childhood asthma,"All,GP,Paeds,Resp"
+ATLASSCORECDIFFinfo,ATLAS SCORE C.DIFF,Predicts response to therapy in patients with C. diff,"All,Gastro"
+AUDIT-Cinfo,AUDIT-C,Identifies at risk drinkers who may not be alcohol dependent,"All,Emergency,Gastro,GP,Psych"
+AWOLSCOREinfo,AWOL DELIRIUM SCORE,Predicts risk of delirium during hospital admission,"All,Old,Psych"
+AbbeyPainScaleinfo,ABBEY PAIN SCALE,Assesses pain in patients with advanced dementia,"All,Old,Psych"
+AlvaradoScoreinfo,ALVARADO SCORE,Predicts likelihood of acute appendicitis,"All,Emergency,GenSurg"
+BAP-65SCOREinfo,BAP-65 SCORE,Predicts mortality in acute COPD exacerbation,"All,Emergency,GP,Resp"
+BEIGHTONinfo,BEIGHTON SCORE,Measures joint hypermobility on a 9-point scale,"All,GP,MSK"
+BISAPSCOREinfo,BISAP SCORE,Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables,"All,Gastro,GenSurg"
+BISHOPSCOREinfo,BISHOP SCORE,Predicts likelihood of successful vaginal delivery,"All,Gynae"
+BMIinfo,BMI,Calculates body mass index,"All,Gastro,GP,MSK"
+BOPSinfo,BOPS POST-OP PAEDIATRIC PAIN,Behavioural Observational Pain Scale: Quantifies post-operative pain for children aged 1-7 years,"All,Paeds"
+BPSinfo,BPS PAIN INTUBATED PATIENTS,Behavioural Pain Scale: Quantifies pain in intubated patients,"All,CriticalCare"
+BSAinfo,BSA,Calculates body surface area,"All,CriticalCare"
+BUNinfo,BUN CREATININE RATIO,Renal function measurement,"All,CriticalCare,Renal"
+BWPSinfo,BURCH-WARTOFSKY SCALE,BWPS: Predicts likelihood that biochemical thyrotoxicosis is thyroid storm,"All,Endo"
+BRUGADACRITERIAinfo,BRUGADA CRITERIA,Distinguishes ventricular tachycardia from supraventricular tachycardia,"All,Cardio,Emergency"
+CAGEQUESTIONNAIREinfo,CAGE QUESTIONNAIRE,Screens for excessive drinking and alcoholism,"All,Emergency,Gastro,GP,Psych"
+CASPARCRITERIAinfo,CASPAR CRITERIA,Criteria for psoriatic arthritis diagnosis,"All,MSK"
+CENTORinfo,CENTOR SCORE,Estimates probability that acute pharyngitis is streptococcal in nature,"All,GP,ENT"
+CHA2DS2-VAScScoreinfo,CHA2DS2-VASc Score,Calculates stroke risk for patients with AF,"All,Cardio,GP,Neuro,Old"
+CHILD-PUGHinfo,CHILD-PUGH,Estimates liver cirrhosis severity,"All,Gastro"
+CIWA-Arinfo,CIWA-Ar,Assessment severity of alcohol withdrawal,"All,Emergency,Gastro,GP"
+CKD-EPIinfo,CKD-EPI CREATININE 2021,Estimates GFR based on serum creatinine based on CKD-EPI Creatinine 2021 equation,"All,Renal"
+CLIF-CACLFinfo,CLIF-C ACLF,Predicts mortality in acute-on-chronic liver failure.,"All,Gastro"
+GOLDinfo,COPD GOLD CRITERIA,Global Initiative for Obstructive Lung Disease: Stratifies levels of COPD and provides recommendation on treatment,"All,Resp,GP"
+CORRECTEDQTinfo,CORRECTED QT,Corrects the QT interval for heart rate - QTc,"All,Cardio"
+CREATININECLEARANCEinfo,CREATININE CLEARANCE,Calculates Creatinine Clearance according to the Cockcroft-Gault equation,"All,Old,Renal"
+CDAIinfo,CDAI,Crohn's Disease Activity Index: current severity of Crohn's disease,"All,Gastro"
+CURB-65info,CURB-65,Estimates mortality of community-acquired pneumonia,"All,Emergency,GP,Resp"
+DAS28-CRPinfo,DAS28-CRP,Disease Activity Score-28 for Rheumatoid Arthritis with CRP,"All,MSK"
+DAS28-ESRinfo,DAS28-ESR,Disease Activity Score-28 for Rheumatoid Arthritis with ESR,"All,MSK"
+DASHinfo,DASH,Predicts likelihood of recurrent VTE after first VTE,"All,Haem"
+DUAinfo,DUA CLASSIFICATION,Dua classification of ocular chemical injuries,"All,Ophth"
+FIB-4info,FIB-4,Index for Liver Fibrosis. Non-invasive estimate of liver fibrosis in HCV & HBV patients to assess need for biopsy.,"All,Gastro"
+FORRESTinfo,FORREST CLASSIFICATION,Forrest Classification of Upper GI Bleeding: severity based on endoscopic finding,"All,Gastro,GenSurg"
+FRAMINGHAMRISKSCOREinfo,$$VOID$$FRAMINGHAM RISK SCORE,Estimates 10-year risk of heart attack,"All,Cardio,GP"
+FeverPAINinfo,FeverPAIN SCORE,Estimates probability that acute pharyngitis is streptococcal in nature,"All,GP,ENT"
+FREEWATERDEFICITinfo,FREE WATER DEFICIT,Calculates free water deficit in hypernatremiaby estimated total body water,"All,CriticalCare,Endo"
+GAD-7info,GAD-7,General Anxiety Disorder-7: measures severity of anxiety,"All,GP,Psych"
+GCAinfo,GCA PROBABILITY SCORE,Risk stratification of patients with potential GCA,"All,Ophth,MSK"
+GCSinfo,GCS,"Coma severity based on Eye, Verbal, and Motor criteria","All,CriticalCare,Emergency,GP,Neuro"
+GCSinfo%GCSPUPILinfo,GCS Combined,GCS and GCS Pupil combined calculator,"All,CriticalCare,Emergency,GP,Neuro"
+GCSPUPILinfo,GCS + PUPIL,Combines GCS and pupil reactivity for greater accuracy at low GCS,"All,CriticalCare,Emergency,GP,Neuro"
+GLASGOWBLATCHFORDinfo,GLASGOW BLATCHFORD,Stratifies upper GI bleeding patient risk status,"All,Emergency,Gastro,GenSurg,GP"
+GLASGOW-IMRIEinfo,GLASGOW-IMRIE,Determines severity of acute pancreatitis,"All,Emergency,Gastro,GenSurg"
+GRACEACSinfo,$$VOID$$GRACE ACS,Estimates admission to 6 month mortality for patients with ACS,"All,Cardio,Emergency"
+GLASGOWALCOHOLICHEPATITISinfo,GLASGOW ALCOHOLIC HEPATITIS,Predicts mortality in patients with alcoholic hepatitis by lab results and age,"All,Gastro"
+HAMILTONANXIETYSCALEinfo,HAMILTON ANXIETY SCALE,Assesses level of anxiety based on clinical questions,"All,Psych,GP"
+HARVEY-BRADSHAWinfo,HARVEY-BRADSHAW,Index stratifies severity of Crohn's disease,"All,Gastro"
+HAS-BLEDScoreinfo,HAS-BLED Score,Estimates risk of major bleeding for patients on anticoagulation,"All,Cardio,GP"
+HLHinfo,HSCORE,Provides probability of reactive haemophagocytic syndrome,All
+CALCIUMCORRECTIONHYPOALBUMINinfo,HYPOALBUMINEMIA CA CORRECTION,Calculates a corrected calcium level for patients with hypoalbuminemia,"All,CriticalCare,Endo,Gastro"
+HYPONATRAEMIANADEFICIT-ADULTinfo,HYPONATRAEMIA NA DEFICIT - ADULT,Calculates sodium quantity deficit in hyponatraemia for adults,"All,Endo"
+HYPONATRAEMIANADEFICIT-CHILDinfo,HYPONATRAEMIA NA DEFICIT - CHILD,Calculates sodium quantity deficit in hyponatraemia for children,"All,Endo,Paeds"
+IDEALBODYWEIGHTinfo,BODY WEIGHT - IDEAL,Calculates ideal body weight using Devine formula,"All,CriticalCare,Gastro,GP"
+ISTHCRITERIAinfo,ISTH CRITERIA,Criteria for overt Disseminated Intravascular Coagulation (DIC),"All,CriticalCare,Emergency,Haem"
+KAWASAKIDISEASECRITERIAinfo,KAWASAKI DISEASE CRITERIA,Diagnoses Kawasaki Disease,"All,GP,Paeds"
+KIDNEYFAILUREinfo,KIDNEY FAILURE RISK,Predicts progression to kidney failure in patients with CKD,"All,Renal"
+KINGSCRITERIAinfo,KING'S CRITERIA,Paracetamol toxicity - recommends immediate referred for liver transplant,"All,CriticalCare,Emergency,Gastro"
+KOCHERCRITERIAinfo,KOCHER CRITERIA,Distinguishes septic arthritis from transient synovitis in a child with hip pain / limping,"All,MSK,Paeds"
+LIGHT'SCRITERIAinfo,LIGHT'S CRITERIA,Light's Criteria to help determine if pleural fluid is exudative or transudative,"All,CriticalCare,Resp"
+LILLEMODELinfo,LILLE MODEL,Predicts mortality in patients with Alcoholic Hepatitis not responding to steroid therapy,"All,Gastro"
+LRINECinfo,LRINEC SCORE,predicts likelihood of necrotising fasciitis,"All,Emergency,MSK"
+MADDREY'Sinfo,MADDREY'S,Maddrey's Discriminant Function for Alcoholic Hepatitis: patients with alcoholic hepatitis that may have a poor prognosis and benefit from steroid treatment,"All,Gastro"
+MDIinfo,MAJOR DEPRESSION INDEX,Screens for depression and rates severity,"All,Psych,GP"
+MAPinfo,MAP,Calculates mean arterial pressure,"All,Cardio,CriticalCare,Emergency"
+MAYOSCOREinfo,MAYO SCORE,Disease Activity Index (DAI) for Ulcerative Colitis: Assesses severity,"All,Gastro"
+MELD-NAinfo,MELD-NA,Quantifies end-stage liver disease for transplant planning with sodium used by UNOS/OPTN,"All,Gastro"
+MEWSinfo,MEWS,Determines the degree of illness of a patient,"All,CriticalCare,Emergency,GP"
+BISHOPSCOREMODIFIEDinfo,BISHOP SCORE - MODIFIED,Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score,"All,Gynae"
+MOLESinfo,MOLES SCORE,Estimate risk of melanoma from choroidal naevi features,"All,Ophth"
+MUSTinfo,MUST,Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition,"All,CriticalCare,Gastro,GenSurg,Old"
+NAFLDFIBROSISSCOREinfo,NAFLD FIBROSIS SCORE,Estimates the degree of hepatic fibrosis based on several laboratory tests,"All,Gastro"
+NEWS2info,NEWS2,Determines the degree of illness and prompts critical care intervention,"All,CriticalCare,Emergency,GP"
+NIHSSinfo,NIHSS,Calculates the NIH Stroke Scale for quantifying stroke severity,"All,Neuro,Old"
+NYHAinfo,NYHA,New York Heart Association Functional Classification for Heart Failure. Stratifies severity by symptoms,"All,Cardio"
+OHTSinfo,OHTS CALCULATOR,Ocular Hypertension Treatment Study: Identifies patients that may benefit from intraocular pressure lowering therapy,"All,Ophth"
+OTTAWAANKLEinfo,OTTAWA ANKLE RULE,Criteria for ankle / foot trauma injuries to determine if plain radiographs are indicated,"All,Emergency,MSK"
+OTTAWAKNEEinfo,OTTAWA KNEE RULE,Criteria for knee trauma injuries to determine if plain radiographs are indicated,"All,Emergency,MSK"
+OTTAWASAHRULEinfo,OTTAWA SAH RULE,Rules out SAH in patients with headache,"All,Emergency,Neuro"
+pGCSinfo,PAEDIATRIC (≤2) GCS,GCS scoring for children ≤2 years of age,"All,CriticalCare,Emergency,Neuro,Paeds"
+PAINADVANCEDDEMENTIAinfo,PAINAD SCALE,Assesses pain in patients with advanced dementia,"All,Old,Psych"
+PASSCOREinfo,PAS SCORE,Pediatric Appendicitis Score. Predicts appendicitis in children,"All,Emergency,Gastro,Paeds"
+PASSinfo,PASS ASTHMA SEVERITY,Determines severity of paediatric asthma based on physical examination,"All,Paeds,Resp"
+PCDAIinfo,PCDAI,Paediatric Crohn's Disease Activity Index: current severity of Crohn's disease,"All,Gastro,Paeds"
+PEDISinfo,PEDIS,Predicts likelihood of adverse outcomes in diabetic foot ulcers,"All,Endo,MSK"
+PEFRinfo,PEFR,Determines the predicted maximum PEFR (peak expiratory flow rate) for ages 5+,"All,GP,Resp"
+PHQ-9info,PHQ-9,Screening tool to diagnose depression and quantify severity,"All,GP,Psych"
+PackYearsCalcinfo,PACK YEARS CALC,Calculates pack years in patients with any smoking history.,"All,GP,Resp,Cardio"
+MODIFIEDRANKINinfo,MODIFIED RANKIN,Measures the degree of disability in ADL in stroke / neurological disability patients,"All,Neuro,Old"
+RIFLECRITERIAAKIinfo,RIFLE CRITERIA AKI,"Classifies severity of acute kidney injury, similar to AKIN Classification","All,Renal"
+RIPinfo,RIP SCORE,Predicts risk of recurrent instability after primary patellar dislocation,"All,MSK"
+ROCKALLPOST-ENDOSCOPYinfo,ROCKALL POST-ENDOSCOPY,"Determines severity of GI bleeding, post endoscopy","All,Emergency,Gastro,GenSurg"
+ROCKALLPRE-ENDOSCOPYinfo,ROCKALL PRE-ENDOSCOPY,"Determines severity of GI bleeding, prior to endoscopy","All,Emergency,Gastro,GenSurg"
+ROPERHALLinfo,ROPER-HALL CLASSIFICATION,Roper-Hall classification of ocular chemical injuries,"All,Ophth"
+RomeIVIBSinfo,ROME IV IBS,Official Rome IV criteria for the diagnosis of irritable bowel syndrome,"All,Gastro,GP"
+SAAGinfo,SAAG,Serum Ascites Albumin Gradient. Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of the ascites ,"All,Gastro"
+SGARBOSSAMODIFIEDinfo,SGARBOSSA MODIFIED,Criteria to diagnose acute MI in patients with prior LBBB,"All,Cardio,Emergency,GP"
+SODIUMCORRECTIONinfo,SODIUM CORRECTION,Calculates the actual sodium level in patients with hyperglycemia,"All,CriticalCare,Endo,Renal"
+STONESCOREinfo,MODIFIED STONE SCORE,Predicts likelihood of ureteral stone in uncomplicated patients with flank pain. Modified as does not include Race,"All,Renal"
+STOP-BANGinfo,STOP-BANG,Screens for obstructive sleep apnea,"All,GP,Resp"
+SERUMOSMOLALITYinfo,SERUM OSMOLALITY,Calculates the expected serum osmolality to allow comparison to measured osmolality,"All,CriticalCare,Endo,Renal"
+SGARBOSSACRITERIAinfo,SGARBOSSA CRITERIA,Criteria to diagnose acute MI in patients with prior LBBB.,"All,Cardio,Emergency,GP"
+TRUELOVEWITTSinfo,TRUELOVE WITTS,Stratifies severity of Ulcerative Colitis,"All,Gastro"
+TWISTinfo,TWIST,Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound,"All,Emergency,Renal"
+UKELDinfo,UKELD,Predicts mortality in end-stage liver disease patients for transplant planning (UK),"All,Gastro"
+URINEANIONGAPinfo,URINE ANION GAP,Detects urine acidosis for evaluation of non-gap metabolic acidosis,"All,CriticalCare,Endo,Renal"
+VANCOUVERinfo,VANCOUVER CHEST PAIN,Identifies chest pain patients who are low risk and safe to discharge,"All,Cardio,Emergency,GP"
+WELLSDVTinfo,WELLS DVT,Calculates risk of DVT based on clinical criteria,"All,Emergency,GP,Haem,MSK"
+WELLSPEinfo,WELLS PE,Calculates risk of PE based on clinical criteria,"All,Emergency,GP,Haem,Resp"
+WESTHAVENinfo,WEST HAVEN CRITERIA,Defines criteria for the grades / stages of hepatic encephalopathy,"All,CriticalCare,Emergency,Gastro"
+mSOFAinfo,MSOFA,Modified Sequential Organ Failure Assessment: predicts ICU mortality similar to SOFA but less variables,"All,CriticalCare"
+QSOFAinfo,QSOFA,Identifies high-risk patients for in-hospital mortality with suspected infection,"All,CriticalCare,Emergency"
+AbdoPainAx,Abdominal Pain Assessment,"A-E assessment of abdominal pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",Gastroenterology Surgery abdomen IBD colitis appendicitis
+ChestPainAx,Chest Pain Assessment,"A-E assessment of chest pain, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Cardiology Respiratory Medicine ACS STEMI NSTEMI heart
+ConfirmingDeath,Confirming Death,Explains the process for confirming death,Geriatrics Surgery Medicine RIP confirmation
+ConfusionAx,Confusion Assessment,"A-E assessment of confusion, including advice on key signs and symptoms, useful investigations and potential diagnoses",Neurology Geriatrics Medicine dementia infection AMTS violent aggression
+DeterioratingPatientAx,Deteriorating Patient Assessment,"A-E assessment of the deteriorating patient, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Cardiology Neurology Respiratory Surgery Medicine Sepsis ACS  unwell highNEWS hypotension
+OphthalmologyEx,Eye Assessment,"A-E assessment of the eye, including advice on key signs and symptoms, useful investigations and potential diagnoses",Surgery eyes redeye conjunctivitis dryeye lossofvision visualdisturbance opticneuritis diplopia GCA acuity snellen ophthalmology
+FallsAx,Falls Assessment,"A-E assessment of a patient who has fall, including advice on key signs and symptoms, useful investigation and potential diagnoses",Fall Geriatric Trip Headinjury Fracture Collapse
+FeverAx,Fever Assessment,"A-E assessment of fever, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Microbiology Medicine Temperature sepsis infection febrile
+HaematuriaAx,Haematuria Assessment,"A-E assessment of haematuria, including advice on key signs and symptoms, useful investigations and potential diagnoses",Surgery Medicine bleeding renal uti blood
+HaematemesisAx,Haematemesis Assessment,"A-E assessment of haematemesis, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Gastroenterology Medicine UGIB Liver bleeding varices melena
+HaemoptysisAx,Haemoptysis Assessment,"A-E assessment of haemoptysis, including advice on key signs and symptoms, useful investigations and potential diagnoses",Respiratory Medicine bleeding cough smoking lungcancer pe pulmonaryembolism blood
+HeadacheAx,Headache Assessment,"A-E assessment of headache, including advice on key signs and symptoms, useful investigations and potential diagnoses",Migraine meningitis SAH subarachnoid tension
+LegSwellingAx,Leg Swelling Assessment,"A-E assessment of leg swelling, including advice on key signs and symptoms, useful investigations and potential diagnoses",Cardiology Orthopaedics Surgery Medicine heartfailure DVT oedema wells peripheral
+LowGCSAx,Low GCS Assessment,"A-E assessment of a patient with low GCS score, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Endocrinology Neurology Geriatrics Respiratory Medicine Coma confused glasgowcomascore drowsy headinjury
+LowUrineOutputAx,Low Urine Output Assessment,"A-E assessment of low urine output, including advice on key signs and symptoms, useful investigations and potential diagnoses",Geriatrics Surgery Medicine renalfailure sepsis AKI acutekidneyinjury dehydration IV fluids
+PainfulLimbAx,Painful Limb Assessment,"A-E assessment of a painful limb, including advice on key signs and symptoms, useful investigations and potential diagnoses",Orthopaedics Surgery Fracture injury trauma gout dvt swelling arthritis
+RectalBleedingAx,Rectal Bleeding Assessment,"A-E assessment of rectal bleeding, including advice on key signs and symptoms, useful investigations and potential diagnoses",Gastroenterology Surgery PRbleeding rectalcancer IBD colitis haemorrhoids
+SOBAx,SOB Assessment,"A-E assessment of shortness of breath, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Cardiology Respiratory Medicine shortnessofbreath asthma copd lowsaturations pneumonia PE pulmonary emoblism sputum
+StrokeAx,Stroke Assessment,"A-E assessment of suspected stroke, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Neurology Geriatrics Medicine CVA NIHSS weakness todds TIA thrombolysis thrombectomy
+ACSMx,ACS Management,"A-E assessment of suspected acute coronary syndrome, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Cardiology Medicine STEMI NSTEMI heart angina failure troponin chest pain cardiac
+AcuteAsthmaMx,Acute Asthma Management,Evidence based management strategy for acute asthma,Emergency Respiratory Medicine shortnessofbreath wheeze
+AcuteSeizureMx,Acute Seizure Management,Evidence based management strategy for seizures,Emergency Neurology Medicine fit epilepsy headinjury status epilepticus pseudo
+AFMx,AF Management,Evidence based management strategy for atrial fibirillation,Cardiology Medicine atrialfibrillation tachycardia palpitations fastaf irregular
+AlcoholMx,Alcohol Withdrawal Management,Evidence based management strategy for alcohol withdrawal,Gastroenterology Medicine liver etoh seizure cirrhosis ETOH delirium tremens detoxification cholrdiazepoxide CIWA
+ALS,ALS,"Flowchart for managing cardiac arrest, including possible causes and post ROSC care",Emergency Cardiology Surgery Medicine cardiacarrest CPR resuscitation
+AnaphylaxisMx,Anaphylaxis Management,Evidence based management strategy for anaphylaxis,Emergency Medicine allergicreaction ALS wheeze rash allergy
+BradycardiaMx,Bradycardia Management,Flowchart for managing bradycardia,Emergency Cardiology Medicine heartblock syncope ALS collapse slow
+CervicalSpineInjury,Cervical Spine Injury,Evidence based guidelines on the investigation and imaging of cervical spine injuries,Emergency Orthopaedics Radiology Surgery neck trauma head injury neck paralysis RTC RTA
+ColitisMx,Colitis Management,Evidence based management strategy for colitis,Emergency Gastroenterology Surgery Medicine IBD abdominalpain Crohns ulcerativecolitis rectal bleeding
+ConstipationMx,Constipation Management,Evidence based management strategy for constipation,Gastroenterology Geriatrics Medicine opiates IBS irritablebowelsyndrome
+COPDExacerbationMx,COPD Exacerbation Management,Evidence based management strategy for chornic obstructive pulmonary disease exacerbations,Respiratory Medicine wheeze T2RF chronicobstructivepulmonarydisease cough sputum smoking
+DecompensatedCirrhosisMx,Decompensated Cirrhosis Management,Evidence based guidance on the investigation and management of decompensated cirrhosis,Emergency Gastroenterology Medicine Liver encephalopathy jaundice ascites bleeding yellow
+DVTPEMx,DVT / PE Management,Evidence based management strategy for pulmonary emobolism and deep vein thrombosis,Emergency Haematology Respiratory Surgery Medicine legswelling shortnessofbreath chestpain clot SOB legpain
+EndOfLifeMedications,End Of Life Medications,Commonly used medications in palliative situations,Emergency Surgery palliativecare prn justincase dying palliation syringe driver
+EpistaxisMx,Epistaxis Management,Evidence based management strategy for epistaxis,Geriatrics Medicine nosebleed ENT
+HeadInjury,Head Injury,Evidence based guidance on the investigation and monitoring of patients with head injuries,Emergency Neurology Orthopaedics Radiology Surgery Medicine Cthead trauma
+HeartFailureMx,Heart Failure Management,Evidence based management strategy for decompensated heart failure,Cardiology Medicine CCF pulmonaryoedema shortnessofbreath peripheraloedema LVF decompensated
+HypercalcaemiaMx,Hypercalcaemia Management,Evidence based management strategy of high calcium levels,Endocrinology Gastroenterology Medicine electrolytes calcium high
+HyperglycaemiaMx,Hyperglycaemia Management,Evidence based management strategy of high glucose levels,Endocrinology Gastroenterology Medicine diabetes DKA HHS insulin high glucose
+HyperkalemiaMx,Hyperkalemia Management,Evidence based management strategy of high potassium levels,Endocrinology Gastroenterology Medicine potassium electrolytes AKI high
+HypocalcaemiaMx,Hypocalcaemia Management,Evidence based management strategy of low calcium levels,Endocrinology Gastroenterology Medicine calcium electrolytes refeedingsyndrome low
+HypoglycaemiaMx,Hypoglycaemia Management,Evidence based management strategy of low glucose levels,Endocrinology Gastroenterology Medicine coma diabetic seizure refeedingsyndrome glucose low BM
+HypokalemiaMx,Hypokalemia Management,Evidence based management strategy of low potassium levels,Endocrinology Gastroenterology Medicine potassium electrolytes low refeedingsyndrome
+HypomagnesemiaMx,Hypomagnesemia Management,Evidence based management strategy of low magnesium levels,Endocrinology Gastroenterology Medicine Magnesium electrolytes refeedingsyndrome low
+HyponatremiaMx,Hyponatremia Management,Evidence based management strategy of low sodium levels,Endocrinology Gastroenterology Medicine sodium electrolytes refeedingsyndrome low SIADH
+HypophosphatemiaMx,Hypophosphatemia Management,Evidence based management strategy of low phosphate levels,Endocrinology Gastroenterology Medicine Phosphate electrolytes refeedingsyndrome low
+INRMx,INR Management,Algorithm for initiating and monitoring anticoagulation with warfarin,Haematology Surgery Medicine warfarin clotting bleeding haemorrhage anticoagulation vitamink
+IVFluidMx,IV Fluid Management,Evidence based guidance on the management of intravenous fluids,Emergency Gastroenterology Surgery Medicine sepsis dehydration fluids nacl hartmanns
+NauseaMx,Nausea Management,Evidence based management strategy for nausea,Gastroenterology Geriatrics Surgery Medicine antiemetics vomiting sick pallitaivecare
+OphthalmologyMx,Ophthalmology Management,Evidence based guidance on the investigation and management of common conditions affecting the eye,Surgery eyes redeye conjunctivitis dryeye lossofvision visualdisturbance opticneuritis diplopia GCA acuity snellen ophthalmology
+PainMx,Pain Management,Evidence based management strategy for pain,Orthopaedics Geriatrics Surgery Medicine Analgesia relief opiate paracetamol discomfort
+ParacetamolOverdoseMx,Paracetamol Overdose Management,Evidence based management strategy for paracetamol overdose,Emergency Gastroenterology Medicine NAC liver failure
+PneumoniaMx,Pneumonia Management,Evidence based management strategy for pneumonia,Respiratory Medicine LRTI chest sepsis sputum cough fever SOB
+PneumothoraxMx,Pneumothorax Management,Evidence based management strategy for pneumothorax,Emergency Respiratory Medicine tension shortnessofbreath chestpain chestdrain pleural
+HeadacheMx,Primary Headache Management,Evidence based management strategy for primary headache,Neurology Medicine migraine tension
+SedationMx,Sedation Management,Overview of different types of sedation and general management advice,Neurology Geriatrics Medicine agitation psychosis epilepsy confusion rapid tranquilisation
+Sepsis6,Sepsis 6,Information on sedation strategies for use in aggressive patients or insomnia,Emergency Microbiology Surgery Medicine infection detriorating rash septicaemia fever
+StrokeMx,Stroke Management,Evidence based management strategy for stroke,Emergency Neurology Medicine NIHSS CVA TIA disability weakness
+TachycardiaMx,Tachycardia Management,Flowchart on the management of tachycardia,Emergency Cardiology Medicine palpitations syncope fast ALS SVT AF
+TransfusionMx,Transfusion Indication,Guidance on the transfusion of blood and blood products,Haematology Surgery Medicine blood anaemia bleeding haemorrhage red
+TransfusionReactionMx,Transfusion Reaction Management,Flowchart describing key steps in the management of a suspected transfusion reaction,Emergency Haematology Medicine anyphylaxis blood products haemorrhage
+UpperGIBleedMx,Upper GI Bleed Management,Evidence based management strategy for upper gastrointestinal bleeding,Emergency Gastroenterology Haematology Medicine haematemesis liver haemorrhage OGD varices ulcer melena blood UGIB
+VTEProphylaxis,VTE Prophylaxis,Considerations and risk assessment of patients requiring venous thromboembolism prophylaxis,Haematology Orthopaedics Surgery Medicine LMWH thromboprophylaxis clots heparin DVT PE
+ABGAnalysis,ABG Analysis,Interpretation and normal values of arterial blood gas samples,Emergency Respiratory Medicine arterialbloodgas VBG alkalosis acidosis
+AXR,Abdo X-ray,Systematic interpreation of abdominal X-rays,Emergency Gastroenterology Radiology Surgery AXR radiology
+AKI,AKI,Staging and possible differential diagnoses of acute kidney injury,Medicine renalfailure acutekidneyinjury creatinine low urine output CKD
+AsciticFluidAnalysis,Ascitic Fluid Analysis,Systematic intepretation of ascitic fluid,Gastroenterology Microbiology Medicine Ascites paracetnesis tap SBP spontaneous bacterial peritonitis decompensated cirrhosis saag
+CapacityConsent,Capacity & Consent,Key steps in assessing a patient's capcity and in gaining consent for procedures,Neurology Orthopaedics Geriatrics Surgery Medicine Ethics gillick fraser agree confusion
+CXR,Chest X-Ray,Systematic interpreation of chest X-rays,Emergency Radiology Respiratory Medicine radiology CXR pneumonia effusion
+ClottingProducts,Clotting Products,Information on blood products and the reversal of common anticoagulation agents,Emergency Haematology Surgery Medicine haematology haemorrhage bleeding FFP cryoprecipitate fibrinogen transfusion blood
+CSFAnalysis,CSF Analysis,Systematic intepretation of cerebral spinal fluid,Emergency Microbiology Neurology Medicine meningitis SAH headache lumbarpuncture cerebralspinalfluid
+ECG,ECG Analysis,Systematic interpreation of electrocardiograms,Emergency Cardiology Endocrinology Respiratory Medicine heart arrythmia AF VT SVT bundle branch block
+Gentamicin,Gentamicin,Information on the initiation and monitoring of gentamicin,Microbiology Medicine Antibiotics gram negative dosing monitoring
+Insulin,Insulin,Information on the range of insulin strategies,Endocrinology Medicine diabetes DKA HHS bm hyperglycaemia
+IVFluids,IV Fluid Types,Information on the differing options for intravenous fluid replacement,Gastroenterology Surgery Medicine IVF saline hartmanns dextrose infusion
+JointAspirationAnalysis,Joint Aspiration Analysis,Systematic intepretation of fluid aspirated from a joint,Microbiology Orthopaedics Surgery gout septicarthritis red swollen
+MSKAnatomy,MSK Anatomy,Information on the anatomy of muscles and bones,Orthopaedics Radiology Surgery bone ligament muscle
+MSKXray,MSK X-ray,Systematic interpreation of musculoskeletal X-rays,Orthopaedics Radiology Surgery radiology bone sprain fracture
+NeuroAnatomy,Neuro Anatomy,Information on the anatomy of the central and peripheral nervous system,Emergency Neurology Orthopaedics Geriatrics Radiology Surgery Medicine brain nerves
+NeuroExam,Neuro Exam,"Systematic A-E assessment of the neurologcal system, including advice on key signs and symptoms, useful investigations and potential diagnoses",Emergency Neurology Orthopaedics Geriatrics Surgery Medicine cranial assessment stroke
+NGTube,NG Tube,Information on ensuring adequate nasogastric tube placement,Gastroenterology Surgery Rylestube nasogastric feeding
+OxygenDelivery,Oxygen Delivery,Information of the delivery of oxygen,Respiratory Medicine oxygen SOB hypoxia o2 mask nasal
+PleuralFluidAnalysis,Pleural Fluid Analysis,Systematic interpreation of pleural fluid,Cardiology Microbiology Respiratory Medicine lights effusion exudate transudate empyema effusion
+PreOp,Pre-Op,Information on the assessment of patients pre-operatively,Orthopaedics Surgery assessment theatre operation
+RefeedingSyndrome,Refeeding Syndrome,"Information on the diangosis, monitoring and replacement of patients with suspected refeeding syndrome",Endocrinology Gastroenterology Geriatrics Medicine electrolytes phosphate potassium magnesium calcium malnutrion annorexia
+Teicoplanin,Teicoplanin,Information on the initiation and monitoring of teicoplanin,Microbiology Medicine Antibiotics
+TransfusionConsent,Transfusion Consent,Information on gaining consent prior to administering blood products,Haematology Surgery Medicine ethics capacity blood
+Vancomycin,Vancomycin,Information on the initiation and monitoring of vancomycin,Microbiology Medicine Antibiotics
+VascularAnatomy,Vascular Anatomy,Information on the macroscopic and microscopic anatomy of blood vessels,Cardiology Haematology Orthopaedics Radiology Surgery Medicine artery arteries veins heart
+4ASDELERIUMinfo,4As DELIRIUM,Screening for delirium in older patients,Neurology Geriatrics Psychiatry loc gcs
+4PEPSinfo,4PEPS,4-Level Pulmonary Embolism Clinical Probability Score (4PEPS): Rules out PE based on clinical criteria,Emergency Respiratory PE VTE DVT SOB
+6MINUTEWALKDISTANCEinfo,6 MINUTE WALK DISTANCE,"Calculates reference values for distance walked, as a measure of functional status",GP Orthopaedics Rheumatology Geriatrics
+ABCD2info,ABCD2,Estimates the risk of stroke after a suspected transient ischemic attack (TIA),Emergency GP Neurology Geriatrics Stokr TIA
+ACR-EULARPMRinfo,ACR-EULAR PMR,Diagnoses polymyalgia rheumatica (PMR) in patients based on 2012 EULAR/ACR criteria,GP Rheumatology PMR Headache Ophthalmology
+ACR-EULARRAinfo,ACR-EULAR RA,Diagnoses rheumatoid arthritis (RA) in patients with undifferentiated inflammatory synovitis,GP Rheumatology joint swelling aspiration
+ACUTEGOUTDIAGNOSISinfo,ACUTE GOUT DIAGNOSIS,Risk stratifies for gout vs non-gout arthritis,Emergency GP Orthopaedics Rheumatology medicine joint swelling aspiration
+ADJUSTEDBODYWEIGHTinfo,BODY WEIGHT - ADJUSTED,Calculates adjusted body weight. For use in obese patients where actual > ideal body weight,Critical Care ITU Intensive Care Gastroenterology GP Medicine Surgery
+AGEADJUSTEDCRPESRinfo,AGE ADJUSTED CRP/ESR,Calculates age-adjusted ESR and CRP in adult patients,Orthopaedics Rheumatology GP joint swelling PMR
+AGE-ADJUSTEDD-DIMERinfo,AGE-ADJUSTED D-DIMER,Adjusts D-dimer cutoffs by age to help rule out VTE in patients ≥50 years old,Cardiology Emergency ACS Heart Chest
+AIRinfo,AIR SCORE,Diagnoses appendicitis based on clinical and laboratory findings,Emergency Surgery General Surgery Abdomen
+AKINCLASSIFICATIONinfo,AKIN CLASSIFICATION,AKIN Classification for acute kidney injury (AKI),Renal Nephrology
+ALT-70info,ALT-70 CELLULITIS,Predicts likelihood of lower limb cellulitis,Emergency GP infection sepsis
+AMT-10info,AMT-10,"Assesses mental impairment in elderly patients, screening for delirium or dementia",Emergency GP Neurology Geriatrics Psychiatry LOC GCS
+AMT-4info,AMT-4,"Assesses mental impairment in elderly patients, screening for delirium or dementia",Emergency GP Neurology Geriatrics Psychiatry LOC GCS
+ANIONinfo,ANION GAP,Evaluates states of metabolic acidosis.,Critical Care ITU Intensive Care Endocrinology Gastroenterology Renal Nephrology Respiratory
+ANIONCorrectedinfo,ANION GAP ALBUMIN,Evaluates states of metabolic acidosis. Includes correction for Albumin.,Critical Care ITU Intensive Care Endocrinology Gastroenterology Renal Nephrology Respiratory albumin
+APACHEIISCOREinfo,APACHE II SCORE,Estimates ICU mortality,Critical Care ITU Intensive Care
+APRIinfo,APRI,AST to Platelet Ratio Index. Determines the likelihood of hepatic fibrosis and cirrhosis in patients with hepatitis C,Gastroenterology liver abdomen alcohol
+ASAinfo,ASA CLASSIFICATION,Classifies health of patients prior to surgery,Surgery Orthopaedics Rheumatology ENT General Surgery Otorhinolaryngology Obstetrics Gynaecology
+ATLASSCORECDIFFinfo,ATLAS SCORE C.DIFF,Predicts response to therapy in patients with C. diff,Gastroenterology Clostridioides difficile abdomen UC
+AUDIT-Cinfo,AUDIT-C,Identifies at risk drinkers who may not be alcohol dependent,Emergency Gastroenterology GP Psychiatry alcohol
+AWOLSCOREinfo,AWOL DELIRIUM SCORE,Predicts risk of delirium during hospital admission,Geriatrics Psychiatry LOC GCS
+AbbeyPainScaleinfo,ABBEY PAIN SCALE,Assesses pain in patients with advanced dementia,Geriatrics Psychiatry pain dementia
+AlvaradoScoreinfo,ALVARADO SCORE,Predicts likelihood of acute appendicitis,Emergency Surgery General Surgery Abdomen
+BAP-65SCOREinfo,BAP-65 SCORE,Predicts mortality in acute COPD exacerbation,Emergency GP Respiratory COPD SOB Chest
+BEIGHTONinfo,BEIGHTON SCORE,Measures joint hypermobility on a 9-point scale,GP Orthopaedics Rheumatology Joint
+BISAPSCOREinfo,BISAP SCORE,Predicts mortality risk in pancreatitis: similar to Ranson's criteria with less variables,Gastroenterology Surgery General Surgery Abdomen
+BMIinfo,BMI,Calculates body mass index,Gastroenterology GP Orthopaedics Medicine Surgery
+BPSinfo,BPS PAIN INTUBATED PATIENTS,Behavioural Pain Scale: Quantifies pain in intubated patients,Critical Care ITU Intensive Care Pain
+BSAinfo,BSA,Calculates body surface area,Critical Care ITU Intensive Care Medicine Surgery
+BUNinfo,BUN CREATININE RATIO,Renal function measurement,Critical Care ITU Intensive Care Renal Nephrology Medicine
+BRUGADACRITERIAinfo,BRUGADA CRITERIA,Distinguishes ventricular tachycardia from supraventricular tachycardia,Cardiology Emergency Heart arrhythmia VT SVT
+CAGEQUESTIONNAIREinfo,CAGE QUESTIONNAIRE,Screens for excessive drinking and alcoholism,Emergency Gastroenterology GP Psychiatry CIWA-AR
+CENTORinfo,CENTOR SCORE,Estimates probability that acute pharyngitis is streptococcal in nature,GP ENT Otorhinolaryngology throat tonsillitis
+CHA2DS2-VAScScoreinfo,CHA2DS2-VASc Score,Calculates stroke risk for patients with AF,Cardiology GP Neurology Geriatrics Heart arrhthmia
+CHILD-PUGHinfo,CHILD-PUGH,Estimates liver cirrhosis severity,Gastroenterology hepatic hepatology
+CIWA-Arinfo,CIWA-Ar,Assessment severity of alcohol withdrawal,Emergency Gastroenterology GP CAGE
+CKD-EPIinfo,CKD-EPI CREATININE 2021,Estimates GFR based on serum creatinine based on CKD-EPI Creatinine 2021 equation,Renal Nephrology Medicine
+CLIF-CACLFinfo,CLIF-C ACLF,Predicts mortality in acute-on-chronic liver failure.,Gastroenterology abdomen liver
+GOLDinfo,COPD GOLD CRITERIA,Global Initiative for Obstructive Lung Disease: Stratifies levels of COPD and provides recommendation on treatment,Respiratory GP chest SOB COPD
+CORRECTEDQTinfo,CORRECTED QT,Corrects the QT interval for heart rate - QTc,Cardiology arrhthmia chest heart ACS
+CREATININECLEARANCEinfo,CREATININE CLEARANCE,Calculates Creatinine Clearance according to the Cockcroft-Gault equation,Geriatrics Renal Nephrology Medicine
+CDAIinfo,CDAI,Crohn's Disease Activity Index: current severity of Crohn's disease,Gastroenterology abdomen inflammatory IDB bowel
+CURB-65info,CURB-65,Estimates mortality of community-acquired pneumonia,Emergency GP Respiratory Chest SOB LRTI
+FIB-4info,FIB-4,Index for Liver Fibrosis. Non-invasive estimate of liver fibrosis in HCV & HBV patients to assess need for biopsy.,Gastroenterology Abdomen Hepatic Hepatology
+FORRESTinfo,FORREST CLASSIFICATION,Forrest Classification of Upper GI Bleeding: severity based on endoscopic finding,Gastroenterology Surgery General Surgery UGIB haemorrhage
+FeverPAINinfo,FeverPAIN SCORE,Estimates probability that acute pharyngitis is streptococcal in nature,GP ENT Otorhinolaryngology throat tonsillitis
+FREEWATERDEFICITinfo,FREE WATER DEFICIT,Calculates free water deficit in hypernatremia by estimated total body water,Critical Care ITU Intensive Care Endocrinology
+GAD-7info,GAD-7,General Anxiety Disorder-7: measures severity of anxiety,GP Psychiatry mental
+GCAinfo,GCA PROBABILITY SCORE,Risk stratification of patients with potential GCA,Ophthalmology Orthopaedics Headache PMR inflammation temporal
+GCSinfo,GCS,"Coma severity based on Eye, Verbal, and Motor criteria",Critical Care ITU Intensive Care Emergency GP Neurology GCS
+GCSPUPILinfo,GCS + PUPIL,Combines GCS and pupil reactivity for greater accuracy at low GCS,Critical Care ITU Intensive Care Emergency GP Neurology GCS
+GLASGOWBLATCHFORDinfo,GLASGOW BLATCHFORD,Stratifies upper GI bleeding patient risk status,Emergency Gastroenterology Surgery General Surgery GP GCS
+GLASGOW-IMRIEinfo,GLASGOW-IMRIE,Determines severity of acute pancreatitis,Emergency Gastroenterology Surgery General Surgery Abdomen pancreas
+GLASGOWALCOHOLICHEPATITISinfo,GLASGOW ALCOHOLIC HEPATITIS,Predicts mortality in patients with alcoholic hepatitis by lab results and age,Gastroenterology liver hepatology hepatic
+HAMILTONANXIETYSCALEinfo,HAMILTON ANXIETY SCALE,Assesses level of anxiety based on clinical questions,Psychiatry GP mental
+HARVEY-BRADSHAWinfo,HARVEY-BRADSHAW,Index stratifies severity of Crohn's disease,Gastroenterology Abdomen IBD bowel inflammatory
+HAS-BLEDScoreinfo,HAS-BLED Score,Estimates risk of major bleeding for patients on anticoagulation,Cardiology GP haemorrhage
+CALCIUMCORRECTIONHYPOALBUMINinfo,HYPOALBUMINEMIA CA CORRECTION,Calculates a corrected calcium level for patients with hypoalbuminemia,Critical Care ITU Intensive Care Endocrinology Gastroenterology electrolytes albumin
+HYPONATRAEMIANADEFICIT-ADULTinfo,HYPONATRAEMIA NA DEFICIT - ADULT,Calculates sodium quantity deficit in hyponatraemia for adults,Endocrinology electrolytes sodium
+IDEALBODYWEIGHTinfo,BODY WEIGHT - IDEAL,Calculates ideal body weight using Devine formula,Critical Care ITU Intensive Care Gastroenterology GP
+ISTHCRITERIAinfo,ISTH CRITERIA,Criteria for overt Disseminated Intravascular Coagulation (DIC),Critical Care ITU Intensive Care Emergency Haematology sepsis
+KIDNEYFAILUREinfo,KIDNEY FAILURE RISK,Predicts progression to kidney failure in patients with CKD,Renal Nephrology kidney
+KINGSCRITERIAinfo,KING'S CRITERIA,Paracetamol toxicity - recommends immediate referred for liver transplant,Critical Care ITU Intensive Care Emergency Gastroenterology liver hepatic hepatology
+LIGHT'SCRITERIAinfo,LIGHT'S CRITERIA,Light's Criteria to help determine if pleural fluid is exudative or transudative,Critical Care ITU Intensive Care Respiratory lung chest
+LILLEMODELinfo,LILLE MODEL,Predicts mortality in patients with Alcoholic Hepatitis not responding to steroid therapy,Gastroenterology liver hepatology hepatic
+LRINECinfo,LRINEC SCORE,Predicts likelihood of necrotising fasciitis,Emergency Orthopaedics sepsis infection
+MADDREY'Sinfo,MADDREY'S,Maddrey's Discriminant Function for Alcoholic Hepatitis: patients with alcoholic hepatitis that may have a poor prognosis and benefit from steroid treatment,Gastroenterology hepatic hepatology liver
+MDIinfo,MAJOR DEPRESSION INDEX,Screens for depression and rates severity,Psychiatry GP mental
+MAPinfo,MAP,Calculates mean arterial pressure,Cardiology Critical Care ITU Intensive Care Emergency Heart
+MAYOSCOREinfo,MAYO SCORE,Disease Activity Index (DAI) for Ulcerative Colitis: Assesses severity,Gastroenterology abdomen IBD inflammatory bowel
+MELD-NAinfo,MELD-NA,Quantifies end-stage liver disease for transplant planning with sodium used by UNOS/OPTN,Gastroenterology abdomen liver hepatology hepatic
+MEWSinfo,MEWS,Determines the degree of illness of a patient,Critical Care ITU Intensive Care Emergency GP
+BISHOPSCOREMODIFIEDinfo,BISHOP SCORE - MODIFIED,Predicts likelihood of successful vaginal delivery with additional parameters to the original Bishop score,Obstetrics Gynaecology pregnancy birth
+MUSTinfo,MUST,Malnutrition Universal Screening Tool: identifies malnourished / risk of malnutrition,Critical Care ITU Intensive Care Gastroenterology Surgery General Surgery Geriatrics refeeding
+NEWS2info,NEWS2,Determines the degree of illness and prompts critical care intervention,Critical Care ITU Intensive Care Emergency GP deterioration NEWS
+NIHSSinfo,NIHSS,Calculates the NIH Stroke Scale for quantifying stroke severity,Neurology Geriatrics stroke
+NYHAinfo,NYHA,New York Heart Association Functional Classification for Heart Failure. Stratifies severity by symptoms,Cardiology heart
+OTTAWAANKLEinfo,OTTAWA ANKLE RULE,Criteria for ankle / foot trauma injuries to determine if plain radiographs are indicated,Emergency Orthopaedics joint ankle fracture
+OTTAWAKNEEinfo,OTTAWA KNEE RULE,Criteria for knee trauma injuries to determine if plain radiographs are indicated,Emergency Orthopaedics joint knee fracture
+OTTAWASAHRULEinfo,OTTAWA SAH RULE,Rules out SAH in patients with headache,Emergency Neurology headache gcs haemorrhage ICP
+PAINADVANCEDDEMENTIAinfo,PAINAD SCALE,Assesses pain in patients with advanced dementia,Geriatrics Psychiatry
+PEDISinfo,PEDIS,Predicts likelihood of adverse outcomes in diabetic foot ulcers,Endocrinology Orthopaedics diabetes ulcer
+PEFRinfo,PEFR,Determines the predicted maximum PEFR (peak expiratory flow rate) for ages 5+,GP Respiratory asthma SOB
+PHQ-9info,PHQ-9,Screening tool to diagnose depression and quantify severity,GP Psychiatry anxiety
+PackYearsCalcinfo,PACK YEARS CALC,Calculates pack years in patients with any smoking history.,GP Respiratory Cardiology lung chest
+MODIFIEDRANKINinfo,MODIFIED RANKIN,Measures the degree of disability in ADL in stroke / neurological disability patients,Neurology Geriatrics stroke
+ROCKALLPOST-ENDOSCOPYinfo,ROCKALL POST-ENDOSCOPY,"Determines severity of GI bleeding, post endoscopy",Emergency Gastroenterology Surgery General Surgery haemorrhage UGIB
+ROCKALLPRE-ENDOSCOPYinfo,ROCKALL PRE-ENDOSCOPY,"Determines severity of GI bleeding, prior to endoscopy",Emergency Gastroenterology Surgery General Surgery haemorrhage UGIB
+ROPERHALLinfo,ROPER-HALL CLASSIFICATION,Roper-Hall classification of ocular chemical injuries,Ophthalmology chemical eye alkali acid
+RomeIVIBSinfo,ROME IV IBS,Official Rome IV criteria for the diagnosis of irritable bowel syndrome,Gastroenterology GP IBS bowel
+SAAGinfo,SAAG,Serum Ascites Albumin Gradient. Helps determine the possible underlying cause of ascites,Gastroenterology liver hepatology hepatic cirrhosis ascites ascitic
+SGARBOSSAMODIFIEDinfo,SGARBOSSA MODIFIED,Criteria to diagnose acute MI in patients with prior LBBB,Cardiology Emergency GP ACS ECG chest heart
+SODIUMCORRECTIONinfo,SODIUM CORRECTION,Calculates the actual sodium level in patients with hyperglycemia,Critical Care ITU Intensive Care Endocrinology Renal Nephrology diabetes sodium
+STONESCOREinfo,MODIFIED STONE SCORE,Predicts likelihood of ureteral stone in uncomplicated patients with flank pain. Modified as does not include Race,Renal Nephrology stone ureteric abdomen
+STOP-BANGinfo,STOP-BANG,Screens for obstructive sleep apnea,GP Respiratory SOB sleep
+SERUMOSMOLALITYinfo,SERUM OSMOLALITY,Calculates the expected serum osmolality to allow comparison to measured osmolality,Critical Care ITU Intensive Care Endocrinology Renal Nephrology kidney
+TRUELOVEWITTSinfo,TRUELOVE WITTS,Stratifies severity of Ulcerative Colitis,Gastroenterology abdomen IBD inflammatory bowel
+TWISTinfo,TWIST,Testicular workup for ischaemia and suspected torsion: Diagnosis of testicular torsion / indication for ultrasound,Emergency abdomen urology testicle scrotum
+UKELDinfo,UKELD,Predicts mortality in end-stage liver disease patients for transplant planning (UK),Gastroenterology liver hepatic hepatology
+URINEANIONGAPinfo,URINE ANION GAP,Detects urine acidosis for evaluation of non-gap metabolic acidosis,Critical Care ITU Intensive Care Endocrinology Renal Nephrology medicine
+VANCOUVERinfo,VANCOUVER CHEST PAIN,Identifies chest pain patients who are low risk and safe to discharge,Cardiology Emergency GP ACS ECG chest heart
+WELLSDVTinfo,WELLS DVT,Calculates risk of DVT based on clinical criteria,Emergency GP Haematology Orthopaedics SOB leg swelling
+WELLSPEinfo,WELLS PE,Calculates risk of PE based on clinical criteria,Emergency GP Haematology Respiratory SOB chest haemoptysis
+WESTHAVENinfo,WEST HAVEN CRITERIA,Defines criteria for the grades / stages of hepatic encephalopathy,Critical Care ITU Intensive Care Emergency Gastroenterology liver hepatology
+mSOFAinfo,MSOFA,Modified Sequential Organ Failure Assessment: predicts ICU mortality similar to SOFA but less variables,Critical Care ITU Intensive Care sepsis
+QSOFAinfo,QSOFA,Identifies high-risk patients for in-hospital mortality with suspected infection,Critical Care ITU Intensive Care Emergency sepsis
