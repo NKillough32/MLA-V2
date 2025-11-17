@@ -640,9 +640,13 @@ export class PDFLibraryManager {
                 return this.titleCache.get(cacheKey);
             }
 
-            // Prefer metadata title when available
+
+            // Prefer metadata title when available. Normalize lookup against
+            // the filename base (strip the `.pdf` extension) so CSV keys
+            // generated at build-time match filenames in the index.
             try {
-                const metaKey = normalizePdfTitleKey(filename);
+                const filenameBase = String(filename).replace(/\.pdf$/i, '').trim();
+                const metaKey = normalizePdfTitleKey(filenameBase);
                 if (this.metadataMap && this.metadataMap.has(metaKey)) {
                     const meta = this.metadataMap.get(metaKey);
                     if (meta && meta.subjectTitle && meta.subjectTitle.trim()) {
@@ -652,18 +656,15 @@ export class PDFLibraryManager {
                     }
                 }
             } catch (e) {
-                // Continue to format heuristically
+                // Continue to fallback behavior below
                 console.debug('Metadata lookup failed for', filename, e);
             }
 
-            let title = this.formatPDFTitle(filename);
-
-            if (!title || !title.trim()) {
-                title = filename
-                    .replace(/[_/]+/g, ' ')
-                    .replace(/\.pdf$/i, '')
-                    .trim();
-            }
+            // If no metadata exists, prefer preserving the original filename
+            // (only strip the `.pdf` extension) rather than applying aggressive
+            // heuristic reformatting which can produce odd results like
+            // "A Cr Eu Lar Ra". This keeps file names recognizable.
+            let title = String(filename).replace(/\.pdf$/i, '').trim();
 
             if (!title) {
                 title = 'Medical Reference';
@@ -1136,7 +1137,8 @@ export class PDFLibraryManager {
             const safeFilename = this.escapeHtmlAttribute(pdf.filename);
             const safeTitle = this.escapeHtml(pdf.title);
             const safeCategory = this.escapeHtml(this.getCategoryName(pdf.category));
-            const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(pdf.filename)) : null;
+            const filenameBase = String(pdf.filename || '').replace(/\.pdf$/i, '').trim();
+            const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(filenameBase)) : null;
             const tagline = meta && meta.subjectTagline ? this.escapeHtml(meta.subjectTagline) : '';
             return `
                 <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
