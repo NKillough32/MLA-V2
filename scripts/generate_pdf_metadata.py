@@ -27,6 +27,27 @@ def normalize_key(value):
         return ''
     return re.sub(r'[^a-z0-9]+', '', value.lower())
 
+def add_with_aliases(metadata, id_str, entry, overwrite=False):
+    """Add an entry to metadata under the normalized id and common alias variants.
+    If overwrite is True, always replace existing entries (used for authoritative csv).
+    If overwrite is False, only set keys that are missing.
+    """
+    if not id_str:
+        return
+    aliases = set()
+    aliases.add(normalize_key(id_str))
+    aliases.add(normalize_key(id_str + '.pdf'))
+    # also add normalized form of any explicit pdf filename in the entry
+    pdfname = (entry.get('pdf') or '').strip()
+    if pdfname:
+        aliases.add(normalize_key(pdfname))
+
+    for a in aliases:
+        if not a:
+            continue
+        if overwrite or (a not in metadata):
+            metadata[a] = entry.copy()
+
 def main():
     metadata = {}
 
@@ -52,7 +73,7 @@ def main():
                 fileinfo = (row.get('fileinfo') or row.get('subjectTagline') or '').strip()
                 filters_raw = (row.get('filters') or row.get('keywords') or '').strip()
 
-                key = normalize_key(filename_field or filetitle)
+                key = filename_field or filetitle
                 if not key:
                     continue
 
@@ -61,12 +82,13 @@ def main():
                     filters = [k.strip() for k in re.split(r'[;,\|]|\s+', filters_raw) if k.strip()]
 
                 # Use pdfinfo as authoritative values (overwrite existing)
-                metadata[key] = {
+                entry = {
                     'pdf': filename_field,
                     'subjectTitle': filetitle,
                     'subjectTagline': fileinfo,
                     'keywords': filters
                 }
+                add_with_aliases(metadata, key, entry, overwrite=True)
     else:
         print('Warning: pdfinfo.csv not found at', PDFINFO_CSV)
 
@@ -80,24 +102,22 @@ def main():
                 subject_tagline = (row.get('subjectTagline') or row.get('subjectTagline') or '').strip()
                 keywords_raw = (row.get('keywords') or row.get('Keywords') or '').strip()
 
-                key = normalize_key(pdf_field or subject_title)
+                key = pdf_field or subject_title
                 if not key:
-                    continue
-
-                # Only merge if the key does not already exist (pdfinfo authoritative)
-                if key in metadata:
                     continue
 
                 keywords = []
                 if keywords_raw:
                     keywords = [k for k in re.split(r"[\s,;]+", keywords_raw) if k]
 
-                merge_entry(key, {
+                entry = {
                     'pdf': pdf_field,
                     'subjectTitle': subject_title,
                     'subjectTagline': subject_tagline,
                     'keywords': keywords
-                })
+                }
+                # Only add aliases for missing keys (do not overwrite authoritative pdfinfo)
+                add_with_aliases(metadata, key, entry, overwrite=False)
     else:
         print('Warning: subjects.csv not found at', SUBJECTS_CSV)
 
@@ -112,31 +132,22 @@ def main():
                 tagLine = (row.get('tagLine') or row.get('tagline') or row.get('tagLine') or '').strip()
                 keywords_raw = (row.get('keywords') or row.get('Keywords') or '').strip()
 
-                # The CSV sometimes stores raw identifiers (no extension). Normalize both forms
-                candidates = set()
-                if form_info:
-                    candidates.add(normalize_key(form_info))
-                    # also try with common suffixes
-                    candidates.add(normalize_key(form_info + '.pdf'))
-                if title:
-                    candidates.add(normalize_key(title))
-
                 keywords = []
                 if keywords_raw:
                     keywords = [k for k in re.split(r"[\s,;]+", keywords_raw) if k]
 
-                for key in candidates:
-                    if not key:
-                        continue
-                    # Only merge if the key does not already exist
-                    if key in metadata:
-                        continue
-                    merge_entry(key, {
-                        'pdf': form_info,
-                        'subjectTitle': title,
-                        'subjectTagline': tagLine,
-                        'keywords': keywords
-                    })
+                entry = {
+                    'pdf': form_info,
+                    'subjectTitle': title,
+                    'subjectTagline': tagLine,
+                    'keywords': keywords
+                }
+
+                # Add aliases for the calculator form identifier/title without overwriting
+                if form_info:
+                    add_with_aliases(metadata, form_info, entry, overwrite=False)
+                if title:
+                    add_with_aliases(metadata, title, entry, overwrite=False)
     else:
         print('Warning: calculators.csv not found at', CALCULATORS_CSV)
 
