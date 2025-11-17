@@ -100,6 +100,7 @@ export class PDFLibraryManager {
         this.dataLoaded = false;
         this.pdfjsLib = null;
         this.assetsBasePath = '/static/assets/';
+        this.metadataMap = new Map();
         this.titleCache = new Map();
     }
 
@@ -252,6 +253,36 @@ export class PDFLibraryManager {
             this.pdfIndex = [];
         }
 
+        // Load PDF metadata (preferred: pre-generated JSON). If not available,
+        // fall back to parsing the `subjects.csv` at runtime.
+        try {
+            // Try JSON first (fast, build-time generated)
+            const metaResp = await fetch('/static/assets/pdf_metadata.json');
+            if (metaResp.ok) {
+                const metaJson = await metaResp.json();
+                for (const k of Object.keys(metaJson)) {
+                    this.metadataMap.set(k, metaJson[k]);
+                }
+                console.log('✅ PDF metadata loaded from /static/assets/pdf_metadata.json');
+            } else {
+                // Try subjects.csv as a runtime fallback
+                const csvResp = await fetch('/static/assets/subjects.csv');
+                if (csvResp.ok) {
+                    const csvText = await csvResp.text();
+                    const parsed = this.parseSubjectsCSV(csvText);
+                    for (const entry of parsed) {
+                        const key = normalizePdfTitleKey(entry.pdf || entry.subjectTitle || '');
+                        this.metadataMap.set(key, entry);
+                    }
+                    console.log('✅ PDF metadata parsed from /static/assets/subjects.csv');
+                } else {
+                    console.debug('ℹ️ No pdf_metadata.json and subjects.csv not available (or returned non-OK)');
+                }
+            }
+        } catch (metaErr) {
+            console.warn('⚠️ Error loading PDF metadata:', metaErr);
+        }
+
         // Load pdf.js library — use global `window.pdfjsLib` when available,
         // otherwise load from CDN. This project is served as static files and
         // is not bundled by webpack in many deployments, so dynamic import
@@ -352,6 +383,58 @@ export class PDFLibraryManager {
             document.head.appendChild(script);
         });
     }
+
+        /**
+         * Parse the subjects CSV and return an array of simplified metadata entries.
+         * This parser is intentionally small and tolerant: it handles quoted fields
+         * and commas inside quotes.
+         * @param {string} csvText
+         * @returns {Array<Object>} entries with keys: pdf, subjectTitle, subjectTagline, keywords
+         */
+        parseSubjectsCSV(csvText) {
+            const lines = csvText.split(/\r?\n/).filter(l => l.trim().length > 0);
+            if (!lines.length) return [];
+
+            const parseLine = (line) => {
+                const out = [];
+                let cur = '';
+                let inQuotes = false;
+                for (let i = 0; i < line.length; i++) {
+                    const ch = line[i];
+                    if (ch === '"') {
+                        if (inQuotes && line[i+1] === '"') { cur += '"'; i++; }
+                        else inQuotes = !inQuotes;
+                    } else if (ch === ',' && !inQuotes) {
+                        out.push(cur);
+                        cur = '';
+                    } else {
+                        cur += ch;
+                    }
+                }
+                out.push(cur);
+                return out.map(s => s.trim().replace(/^"|"$/g, ''));
+            };
+
+            const header = parseLine(lines[0]).map(h => h.replace(/^"|"$/g, ''));
+            const rows = [];
+            for (let i = 1; i < lines.length; i++) {
+                const fields = parseLine(lines[i]);
+                if (fields.length !== header.length) continue;
+                const obj = {};
+                for (let j = 0; j < header.length; j++) {
+                    obj[header[j]] = fields[j];
+                }
+                rows.push(obj);
+            }
+
+            // Map to simplified entries
+            return rows.map(r => ({
+                pdf: r['pdf'] || r['PDF'] || '',
+                subjectTitle: r['subjectTitle'] || r['subjectTitle'] || r['subjectID'] || '',
+                subjectTagline: r['subjectTagline'] || r['subjectTagline'] || '',
+                keywords: (r['keywords'] || '').split(/\s+/).filter(Boolean)
+            }));
+        }
 
     /**
      * Search PDFs by filename
@@ -555,6 +638,22 @@ export class PDFLibraryManager {
             const cacheKey = filename.toLowerCase();
             if (this.titleCache.has(cacheKey)) {
                 return this.titleCache.get(cacheKey);
+            }
+
+            // Prefer metadata title when available
+            try {
+                const metaKey = normalizePdfTitleKey(filename);
+                if (this.metadataMap && this.metadataMap.has(metaKey)) {
+                    const meta = this.metadataMap.get(metaKey);
+                    if (meta && meta.subjectTitle && meta.subjectTitle.trim()) {
+                        const titleFromMeta = meta.subjectTitle.trim();
+                        this.titleCache.set(cacheKey, titleFromMeta);
+                        return titleFromMeta;
+                    }
+                }
+            } catch (e) {
+                // Continue to format heuristically
+                console.debug('Metadata lookup failed for', filename, e);
             }
 
             let title = this.formatPDFTitle(filename);
@@ -1037,6 +1136,8 @@ export class PDFLibraryManager {
             const safeFilename = this.escapeHtmlAttribute(pdf.filename);
             const safeTitle = this.escapeHtml(pdf.title);
             const safeCategory = this.escapeHtml(this.getCategoryName(pdf.category));
+            const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(pdf.filename)) : null;
+            const tagline = meta && meta.subjectTagline ? this.escapeHtml(meta.subjectTagline) : '';
             return `
                 <div class="card pdf-card" onclick="window.pdfLibraryManager.showPDF('${safeFilename}');">
                     <div class="card-body">
@@ -1044,6 +1145,7 @@ export class PDFLibraryManager {
                             <div>
                                 <div class="pdf-title" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${safeTitle}</div>
                                 <div class="pdf-category" style="color: var(--text-secondary); font-size: 0.9em;">${safeCategory}</div>
+                                ${tagline ? `<div class="pdf-tagline" style="color: var(--text-muted); font-size: 0.85em; margin-top:6px;">${tagline}</div>` : ''}
                             </div>
                             <div class="pdf-card-icon" aria-hidden="true">📄</div>
                         </div>
