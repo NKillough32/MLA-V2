@@ -37,10 +37,17 @@ def add_with_aliases(metadata, id_str, entry, overwrite=False):
     aliases = set()
     aliases.add(normalize_key(id_str))
     aliases.add(normalize_key(id_str + '.pdf'))
-    # also add normalized form of any explicit pdf filename in the entry
+    # also add variant with trailing 'pdf' removed (handles ids that already include 'pdf')
+    id_no_pdf = re.sub(r'(?i)(?:\.pdf|pdf)$', '', id_str).strip()
+    if id_no_pdf:
+        aliases.add(normalize_key(id_no_pdf))
+    # also add normalized form of any explicit pdf filename in the entry, with and without suffix
     pdfname = (entry.get('pdf') or '').strip()
     if pdfname:
         aliases.add(normalize_key(pdfname))
+        pdf_no_pdf = re.sub(r'(?i)(?:\.pdf|pdf)$', '', pdfname).strip()
+        if pdf_no_pdf:
+            aliases.add(normalize_key(pdf_no_pdf))
 
     for a in aliases:
         if not a:
