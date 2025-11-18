@@ -113,14 +113,6 @@ export class GlobalSearchManager {
 
         this.renderEmptyState();
         console.debug('✅ GlobalSearchManager ready');
-
-        try {
-            document.dispatchEvent(new CustomEvent('global-search:ready', {
-                detail: { manager: this }
-            }));
-        } catch (eventError) {
-            console.warn('GlobalSearchManager: Failed to dispatch ready event', eventError);
-        }
     }
 
     /**
