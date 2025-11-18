@@ -1793,9 +1793,14 @@ class MLAQuizApp {
         contentHtml += renderSection('Follow-up', '📅', guideline.followUp);
         contentHtml += renderSection('Criteria', '📋', guideline.criteria);
         contentHtml += renderSection('Prevention', '�️', guideline.prevention);
-        
+        contentHtml += renderSection('Infection Overview', '🦠', guideline.infectionOverview, '#0891b2');
+        contentHtml += renderSection('Bacterial Infection Therapy', '🧫', guideline.bacterialInfections, '#16a34a');
+        contentHtml += renderSection('Viral Infection Therapy', '🧬', guideline.viralInfections, '#c026d3');
+        contentHtml += renderSection('Fungal Infection Therapy', '🍄', guideline.fungalInfections, '#ea580c');
+        contentHtml += renderSection('Antimicrobial Stewardship', '📏', guideline.stewardship, '#6366f1');
+
         contentHtml += '</div>';
-        
+
         container.innerHTML = contentHtml;
         container.scrollTop = 0;
         window.scrollTo(0, 0);
