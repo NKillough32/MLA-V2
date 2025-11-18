@@ -9861,7 +9861,6 @@
     <nav class="navbar">
         <div class="nav-left">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
-            <button type="button" id="global-search-toggle" class="nav-icon-btn" title="Search across the app" aria-label="Open global search">🔍</button>
         </div>
         <div class="nav-center">
             <h1 id="navTitle">MLA Quiz</h1>
@@ -9872,32 +9871,11 @@
                 <span id="cached-count" class="status-text">0</span>
                 <span id="pending-count" class="status-text" style="display: none;">⚠️</span>
             </div>
-            <button id="global-search-toggle" class="nav-icon-btn" title="Search across the app">🔍</button>
             <button id="themeToggle" title="Toggle Dark Mode" style="background:none;border:none;color:white;font-size:20px;padding:6px;margin-right:8px;">🌙</button>
             <button id="rotLock" title="Toggle Lock" style="background:none;border:none;color:white;font-size:16px;padding:6px;margin-right:8px;">🔒</button>
             <button class="next-btn" id="nextNavBtn" style="display: none;">Next →</button>
         </div>
     </nav>
-
-    <div id="global-search-overlay" class="global-search-overlay" aria-hidden="true">
-        <div class="global-search-panel" role="dialog" aria-modal="true" aria-labelledby="global-search-title">
-            <div class="global-search-header">
-                <div>
-                    <h2 id="global-search-title">Search MLA</h2>
-                    <p style="margin: 4px 0 0; color: var(--v2-text-secondary);">Find calculators, guidelines, drugs, labs and tools instantly.</p>
-                </div>
-                <button type="button" id="global-search-close" class="global-search-close" aria-label="Close search">✕</button>
-            </div>
-            <div class="global-search-input-row">
-                <input type="search" id="global-search-input" placeholder="Search calculators, medications, lab tests, PDFs..." autocomplete="off">
-                <button type="button" id="global-search-clear" class="ghost-btn">Clear</button>
-            </div>
-            <div id="global-search-meta" class="global-search-meta">
-                Search across quizzes, calculators, drugs, labs, mnemonics, protocols and PDFs.
-            </div>
-            <div id="global-search-results" class="global-search-results" aria-live="polite"></div>
-        </div>
-    </div>
 
     <!-- Main Container -->
     <div class="container">
@@ -11759,70 +11737,5 @@
         });
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const openOverlayFallback = () => {
-                const overlay = document.getElementById('global-search-overlay');
-                if (!overlay) return;
-                overlay.classList.add('active');
-                overlay.setAttribute('aria-hidden', 'false');
-                document.body.classList.add('global-search-open');
-                setTimeout(() => document.getElementById('global-search-input')?.focus(), 60);
-            };
-
-            const closeOverlayFallback = () => {
-                const overlay = document.getElementById('global-search-overlay');
-                if (!overlay) return;
-                overlay.classList.remove('active');
-                overlay.setAttribute('aria-hidden', 'true');
-                document.body.classList.remove('global-search-open');
-            };
-
-            const ensureGlobalSearchBindings = () => {
-                const toggleBtn = document.getElementById('global-search-toggle');
-                if (toggleBtn && !toggleBtn.dataset.searchBound) {
-                    toggleBtn.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        if (window.globalSearchManager && typeof window.globalSearchManager.openPanel === 'function') {
-                            window.globalSearchManager.openPanel();
-                        } else {
-                            openOverlayFallback();
-                        }
-                    });
-                    toggleBtn.dataset.searchBound = 'true';
-                }
-
-                const closeBtn = document.getElementById('global-search-close');
-                if (closeBtn && !closeBtn.dataset.searchBound) {
-                    closeBtn.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
-                            window.globalSearchManager.closePanel();
-                        } else {
-                            closeOverlayFallback();
-                        }
-                    });
-                    closeBtn.dataset.searchBound = 'true';
-                }
-
-                const overlay = document.getElementById('global-search-overlay');
-                if (overlay && !overlay.dataset.searchBound) {
-                    overlay.addEventListener('click', (event) => {
-                        if (event.target !== overlay) return;
-                        event.preventDefault();
-                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
-                            window.globalSearchManager.closePanel();
-                        } else {
-                            closeOverlayFallback();
-                        }
-                    });
-                    overlay.dataset.searchBound = 'true';
-                }
-            };
-
-            ensureGlobalSearchBindings();
-            document.addEventListener('global-search:ready', ensureGlobalSearchBindings);
-        });
-    </script>
 </body>
 </html>
