@@ -318,7 +318,12 @@ export class GuidelinesManager {
             { key: 'specialPopulations', title: '👨‍⚕️ Special Populations', icon: '👨‍⚕️' },
             { key: 'complications', title: '⚠️ Complications', icon: '⚠️' },
             { key: 'prevention', title: '🛡️ Prevention', icon: '🛡️' },
-            { key: 'referral', title: '🏥 Referral Criteria', icon: '🏥' }
+            { key: 'referral', title: '🏥 Referral Criteria', icon: '🏥' },
+            { key: 'infectionOverview', title: '🦠 Infection Overview', icon: '🦠' },
+            { key: 'bacterialInfections', title: '🧫 Bacterial Infection Therapy', icon: '🧫' },
+            { key: 'viralInfections', title: '🧬 Viral Infection Therapy', icon: '🧬' },
+            { key: 'fungalInfections', title: '🍄 Fungal Infection Therapy', icon: '🍄' },
+            { key: 'stewardship', title: '📏 Antimicrobial Stewardship', icon: '📏' }
         ];
 
         for (const section of sections) {
