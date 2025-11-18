@@ -22,6 +22,157 @@ SUBJECTS_CSV = os.path.join(ROOT, 'static', 'assets', 'subjects.csv')
 CALCULATORS_CSV = os.path.join(ROOT, 'static', 'assets', 'calculators.csv')
 OUT_PATH = os.path.join(ROOT, 'static', 'assets', 'pdf_metadata.json')
 
+# A very small subset of the heuristics the UI applies when it has to guess a
+# friendly name for a PDF. Pre-computing this data at build time keeps the JSON
+# self-describing and avoids duplicating the same logic in multiple places.
+ABBREVIATION_EXPANSIONS = {
+    'AX': 'Assessment',
+    'MX': 'Management',
+    'DX': 'Diagnosis',
+    'HX': 'History',
+    'PX': 'Prophylaxis',
+    'RX': 'Prescription',
+    'TX': 'Treatment',
+    'FX': 'Fracture',
+    'IV': 'Intravenous',
+    'IM': 'Intramuscular',
+    'PO': 'Oral',
+    'PR': 'Rectal',
+    'SC': 'Subcutaneous',
+    'MSK': 'Musculoskeletal',
+    'CV': 'Cardiovascular',
+    'GI': 'Gastrointestinal',
+    'GU': 'Genitourinary',
+    'ENT': 'Ear Nose Throat',
+    'COPD': 'Chronic Obstructive Pulmonary Disease',
+    'CHF': 'Congestive Heart Failure',
+    'MI': 'Myocardial Infarction',
+    'PE': 'Pulmonary Embolism',
+    'DVT': 'Deep Vein Thrombosis',
+    'AKI': 'Acute Kidney Injury',
+    'CKD': 'Chronic Kidney Disease',
+    'UTI': 'Urinary Tract Infection',
+    'SOB': 'Shortness Of Breath',
+    'ABG': 'Arterial Blood Gas',
+    'GCS': 'Glasgow Coma Scale',
+    'NIHSS': 'NIH Stroke Scale',
+    'MEWS': 'Modified Early Warning Score',
+    'NEWS': 'National Early Warning Score',
+    'NEWS2': 'NEWS 2',
+    'PHQ': 'Patient Health Questionnaire',
+    'GAD': 'General Anxiety Disorder',
+    'BSA': 'Body Surface Area',
+    'BMI': 'Body Mass Index',
+    'MAP': 'Mean Arterial Pressure',
+    'LRINEC': 'LRINEC Score',
+    'MELD': 'MELD Score',
+    'SOFA': 'SOFA Score',
+    'QSOFA': 'qSOFA Score',
+    'CRP': 'C-Reactive Protein',
+    'ESR': 'Erythrocyte Sedimentation Rate',
+}
+
+ALWAYS_UPPERCASE_WORDS = {
+    'ABG', 'AKI', 'ALS', 'ADHD', 'BMI', 'BSA', 'CAD', 'CKD', 'COPD', 'CT', 'CXR',
+    'DM', 'ECG', 'ENT', 'GI', 'GU', 'GFR', 'GCS', 'HIV', 'HTN', 'IBD', 'IBS',
+    'INR', 'IV', 'MRI', 'MSK', 'NIHSS', 'NSAID', 'PE', 'PO', 'PR', 'PTT', 'PT',
+    'PTA', 'PTSD', 'PVC', 'RX', 'SC', 'SOB', 'TIA', 'UTI', 'WBC', 'NEWS',
+    'NEWS2', 'MEWS', 'LRINEC', 'MELD', 'SOFA', 'QSOFA'
+}
+
+
+def split_identifier(value):
+    """Split CamelCase or snake_case identifiers into words."""
+    if not value:
+        return []
+
+    text = re.sub(r'[\-_]+', ' ', value)
+    text = re.sub(r'(?<=[a-z])(?=[A-Z0-9])', ' ', text)
+    text = re.sub(r'(?<=[0-9])(?=[A-Za-z])', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    return [chunk.strip() for chunk in text.split(' ') if chunk.strip()]
+
+
+def normalize_word(word):
+    cleaned = re.sub(r'[^A-Za-z0-9]', '', word)
+    if not cleaned:
+        return ''
+    upper = cleaned.upper()
+    if upper in ALWAYS_UPPERCASE_WORDS or re.fullmatch(r'[IVXLCDM]{1,4}', upper):
+        return upper
+    if re.fullmatch(r'\d+', cleaned):
+        return cleaned
+    if upper in ABBREVIATION_EXPANSIONS:
+        # Return the expansion instead of the abbreviation
+        return ABBREVIATION_EXPANSIONS[upper]
+    return cleaned.capitalize()
+
+
+def format_display_title(entry):
+    """Derive a human-friendly title for metadata consumers."""
+    title = (entry.get('subjectTitle') or '').strip()
+    if title:
+        return title
+
+    pdf_name = (entry.get('pdf') or '').replace('.pdf', '').strip()
+    parts = split_identifier(pdf_name)
+    if not parts:
+        return pdf_name or 'Medical Reference'
+
+    formatted_parts = []
+    for part in parts:
+        normalized = normalize_word(part)
+        if not normalized:
+            continue
+        if ' ' in normalized:
+            formatted_parts.extend(normalized.split(' '))
+        else:
+            formatted_parts.append(normalized)
+    return ' '.join(formatted_parts) if formatted_parts else pdf_name
+
+
+def format_display_tagline(entry):
+    tagline = (entry.get('subjectTagline') or '').strip()
+    if not tagline:
+        keywords = entry.get('keywords') or []
+        if keywords:
+            title_case = [normalize_word(k) for k in keywords[:3] if k]
+            tagline = ' • '.join(filter(None, title_case))
+    if not tagline:
+        return ''
+    tagline = tagline[0].upper() + tagline[1:]
+    if tagline and tagline[-1] not in '.!?':
+        tagline += '.'
+    return tagline
+
+
+def build_keyword_summary(keywords):
+    if not keywords:
+        return ''
+    formatted = []
+    for keyword in keywords:
+        cleaned = normalize_word(keyword)
+        if cleaned:
+            formatted.append(cleaned)
+        if len(formatted) == 4:
+            break
+    return ' • '.join(formatted)
+
+
+def enhance_entry(entry):
+    """Return a copy of ``entry`` augmented with friendly display helpers."""
+    keywords = entry.get('keywords') or []
+    enhanced = entry.copy()
+    enhanced['subjectTitle'] = entry.get('subjectTitle', '').strip()
+    enhanced['subjectTagline'] = entry.get('subjectTagline', '').strip()
+    enhanced['keywords'] = keywords
+    enhanced['displayTitle'] = format_display_title(enhanced)
+    enhanced['displayTagline'] = format_display_tagline(enhanced)
+    keyword_summary = build_keyword_summary(keywords)
+    if keyword_summary:
+        enhanced['keywordSummary'] = keyword_summary
+    return enhanced
+
 def normalize_key(value):
     if not value:
         return ''
@@ -89,12 +240,12 @@ def main():
                     filters = [k.strip() for k in re.split(r'[;,\|]|\s+', filters_raw) if k.strip()]
 
                 # Use pdfinfo as authoritative values (overwrite existing)
-                entry = {
+                entry = enhance_entry({
                     'pdf': filename_field,
                     'subjectTitle': filetitle,
                     'subjectTagline': fileinfo,
                     'keywords': filters
-                }
+                })
                 add_with_aliases(metadata, key, entry, overwrite=True)
     else:
         print('Warning: pdfinfo.csv not found at', PDFINFO_CSV)
@@ -117,12 +268,12 @@ def main():
                 if keywords_raw:
                     keywords = [k for k in re.split(r"[\s,;]+", keywords_raw) if k]
 
-                entry = {
+                entry = enhance_entry({
                     'pdf': pdf_field,
                     'subjectTitle': subject_title,
                     'subjectTagline': subject_tagline,
                     'keywords': keywords
-                }
+                })
                 # Only add aliases for missing keys (do not overwrite authoritative pdfinfo)
                 add_with_aliases(metadata, key, entry, overwrite=False)
     else:
@@ -143,12 +294,12 @@ def main():
                 if keywords_raw:
                     keywords = [k for k in re.split(r"[\s,;]+", keywords_raw) if k]
 
-                entry = {
+                entry = enhance_entry({
                     'pdf': form_info,
                     'subjectTitle': title,
                     'subjectTagline': tagLine,
                     'keywords': keywords
-                }
+                })
 
                 # Add aliases for the calculator form identifier/title without overwriting
                 if form_info:

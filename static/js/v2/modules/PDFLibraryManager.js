@@ -742,8 +742,8 @@ export class PDFLibraryManager {
                 const metaKey = normalizePdfTitleKey(filenameBase);
                 if (this.metadataMap && this.metadataMap.has(metaKey)) {
                     const meta = this.metadataMap.get(metaKey);
-                    if (meta && meta.subjectTitle && meta.subjectTitle.trim()) {
-                        const titleFromMeta = meta.subjectTitle.trim();
+                    const titleFromMeta = meta && (meta.displayTitle || meta.subjectTitle || '').trim();
+                    if (titleFromMeta) {
                         this.titleCache.set(cacheKey, titleFromMeta);
                         return titleFromMeta;
                     }
@@ -1297,12 +1297,15 @@ export class PDFLibraryManager {
             // Try to enrich with metadata for tagline; fall back silently
             const filenameBase = String(pdf.filename || '').replace(/\.pdf$/i, '').trim();
             const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(filenameBase)) : null;
-            const tagline = meta && meta.subjectTagline ? this.escapeHtml(meta.subjectTagline) : '';
+            const taglineRaw = meta && (meta.displayTagline || meta.subjectTagline) ? (meta.displayTagline || meta.subjectTagline) : '';
+            const tagline = taglineRaw ? this.escapeHtml(taglineRaw) : '';
 
             // For Revision items we prefer not to show a category label; for others keep previous behavior
             let categoryLabel = '';
             if (pdf.category !== 'revision') {
-                if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
+                if (meta && meta.keywordSummary) {
+                    categoryLabel = this.escapeHtml(meta.keywordSummary);
+                } else if (meta && Array.isArray(meta.keywords) && meta.keywords.length) {
                     const kws = meta.keywords.slice(0, 3).map(k => this.escapeHtml(this.titleCaseWord(String(k))));
                     categoryLabel = kws.join(' • ');
                 } else {
