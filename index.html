@@ -152,6 +152,10 @@
             overflow: hidden;
         }
 
+        .nav-left {
+            overflow: visible;
+        }
+
         .nav-center {
             display: flex;
             align-items: center;
@@ -9857,6 +9861,7 @@
     <nav class="navbar">
         <div class="nav-left">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
+            <button type="button" id="global-search-toggle" class="nav-icon-btn" title="Search across the app" aria-label="Open global search">🔍</button>
         </div>
         <div class="nav-center">
             <h1 id="navTitle">MLA Quiz</h1>
@@ -11753,6 +11758,71 @@
             }, 100);
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openOverlayFallback = () => {
+                const overlay = document.getElementById('global-search-overlay');
+                if (!overlay) return;
+                overlay.classList.add('active');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('global-search-open');
+                setTimeout(() => document.getElementById('global-search-input')?.focus(), 60);
+            };
+
+            const closeOverlayFallback = () => {
+                const overlay = document.getElementById('global-search-overlay');
+                if (!overlay) return;
+                overlay.classList.remove('active');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('global-search-open');
+            };
+
+            const ensureGlobalSearchBindings = () => {
+                const toggleBtn = document.getElementById('global-search-toggle');
+                if (toggleBtn && !toggleBtn.dataset.searchBound) {
+                    toggleBtn.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.openPanel === 'function') {
+                            window.globalSearchManager.openPanel();
+                        } else {
+                            openOverlayFallback();
+                        }
+                    });
+                    toggleBtn.dataset.searchBound = 'true';
+                }
+
+                const closeBtn = document.getElementById('global-search-close');
+                if (closeBtn && !closeBtn.dataset.searchBound) {
+                    closeBtn.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
+                            window.globalSearchManager.closePanel();
+                        } else {
+                            closeOverlayFallback();
+                        }
+                    });
+                    closeBtn.dataset.searchBound = 'true';
+                }
+
+                const overlay = document.getElementById('global-search-overlay');
+                if (overlay && !overlay.dataset.searchBound) {
+                    overlay.addEventListener('click', (event) => {
+                        if (event.target !== overlay) return;
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
+                            window.globalSearchManager.closePanel();
+                        } else {
+                            closeOverlayFallback();
+                        }
+                    });
+                    overlay.dataset.searchBound = 'true';
+                }
+            };
+
+            ensureGlobalSearchBindings();
+            document.addEventListener('global-search:ready', ensureGlobalSearchBindings);
+        });
     </script>
 </body>
 </html>
