@@ -928,7 +928,8 @@ class MLAQuizApp {
             'quiz-practice': 'quiz-panel',
             'case-studies': 'case-studies-panel',
             'learning-pathways': 'learning-pathways-panel',
-            'pdf-library': 'pdf-library-panel'
+            'pdf-library': 'pdf-library-panel',
+            'contraception-hrt': 'contraception-hrt-panel'
         };
         
         // Show selected panel

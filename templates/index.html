@@ -1025,6 +1025,55 @@
             background: var(--bg-secondary);
             border-color: var(--border-color);
         }
+
+        /* Hormone & Contraception helper layout */
+        .contraception-hrt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .contraception-hrt-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .contraception-hrt-card h5 {
+            margin: 0 0 8px 0;
+            font-size: 1.05rem;
+            color: var(--v2-text-primary);
+        }
+
+        .contraception-hrt-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--v2-text-secondary);
+        }
+
+        .contraception-hrt-note {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(99, 102, 241, 0.08);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            font-size: 0.9rem;
+        }
+
+        .contraception-hrt-card.highlight {
+            border-color: var(--v2-secondary);
+            box-shadow: 0 4px 18px rgba(6, 182, 212, 0.15);
+        }
+
+        .contraception-hrt-card.emergency {
+            border-color: var(--v2-warning);
+        }
+
+        .contraception-hrt-card.postpartum {
+            border-color: var(--v2-primary-light);
+        }
         
         /* Tools Header */
         .tools-header {
@@ -10002,6 +10051,7 @@
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
             <button class="tool-nav-btn" data-tool="genetics">🧬 Genetics</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
+            <button class="tool-nav-btn" data-tool="contraception-hrt">⚖️ Hormones &amp; Contraception</button>
             <button class="tool-nav-btn" data-tool="vaccinations">💉 Vaccinations</button>
             <button class="tool-nav-btn" data-tool="mnemonics">🧠 Mnemonics</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
@@ -10377,6 +10427,65 @@
             <div id="guidelines-panel" class="tool-panel">
                 <!-- Content loaded dynamically by JavaScript -->
                 <div class="loading-message">📋 Loading guidelines...</div>
+            </div>
+
+            <!-- Hormone & Contraception Panel -->
+            <div id="contraception-hrt-panel" class="tool-panel">
+                <div class="contraception-hrt-intro" style="margin-bottom: 18px;">
+                    <h4>Hormones &amp; Contraception Navigator</h4>
+                    <p style="color: var(--v2-text-secondary);">Compare routine contraception, hormone replacement choices, emergency cover and post-partum considerations in one reference card.</p>
+                </div>
+                <div class="contraception-hrt-grid">
+                    <section class="contraception-hrt-card">
+                        <h5>Long-Acting Reversible (LARC)</h5>
+                        <ul>
+                            <li><strong>Levonorgestrel IUS</strong>: 5–6 yrs, reduces menorrhagia/dysmenorrhoea, caution with distorted cavities.</li>
+                            <li><strong>Copper IUD</strong>: hormone-free, effective 5–10 yrs, may increase bleeding/pain.</li>
+                            <li><strong>Etonogestrel implant</strong>: 3 yrs, rapid return to fertility, irregular bleeding common.</li>
+                            <li><strong>Depo-Provera/Sayana Press</strong>: 12 weekly progestogen injection, delayed fertility return (~1 yr).</li>
+                        </ul>
+                        <div class="contraception-hrt-note">Best for those wanting “fit and forget” contraception or where oestrogen contraindicated.</div>
+                    </section>
+                    <section class="contraception-hrt-card">
+                        <h5>Combined Hormonal Methods</h5>
+                        <ul>
+                            <li><strong>COCP</strong>: cycle control, acne benefit. Avoid if BMI ≥35, migraine with aura, VTE risk or smoker ≥35 yrs.</li>
+                            <li><strong>Patch</strong> (weekly) &amp; <strong>Vaginal ring</strong> (monthly) share COCP contraindications.</li>
+                            <li>Requires daily/weekly adherence and counselling on missed doses &amp; ACHES symptoms.</li>
+                        </ul>
+                        <div class="contraception-hrt-note">Assess medical eligibility (UKMEC), BP &amp; BMI at initiation and annual review.</div>
+                    </section>
+                    <section class="contraception-hrt-card highlight">
+                        <h5>HRT Options</h5>
+                        <ul>
+                            <li><strong>Oestrogen-only</strong> (patch/gel/oral) for hysterectomised patients; transdermal routes lower VTE risk.</li>
+                            <li><strong>Combined continuous</strong> HRT when &gt;1 yr post-menopause; <strong>sequential</strong> if peri-menopausal.</li>
+                            <li><strong>Micronised progesterone</strong> (body-identical) favoured for endometrial protection; consider Mirena IUS for dual use (HRT + contraception).</li>
+                            <li>Add vaginal oestrogens for GSM symptoms irrespective of systemic regimen.</li>
+                        </ul>
+                        <div class="contraception-hrt-note">Review breast risk, VTE history, migraine and cardiovascular risk prior to prescribing. Counsel on gradual tapering when discontinuing.</div>
+                    </section>
+                    <section class="contraception-hrt-card emergency">
+                        <h5>Emergency Contraception</h5>
+                        <ul>
+                            <li><strong>Copper IUD</strong>: up to 120h after UPSI or 5 days after earliest ovulation; offers ongoing contraception.</li>
+                            <li><strong>Ulipristal acetate 30mg</strong>: up to 120h; delay restarting hormonal contraception for 5 days and use barrier protection for 7 additional days.</li>
+                            <li><strong>Levonorgestrel 1.5mg</strong>: within 72h (off-label 120h with reduced efficacy); double dose if BMI &gt;26 or weight &gt;70kg.</li>
+                            <li>Always perform pregnancy test if no withdrawal bleed within 3 weeks.</li>
+                        </ul>
+                        <div class="contraception-hrt-note">Check for enzyme-inducing drugs and offer bridging contraception where needed.</div>
+                    </section>
+                    <section class="contraception-hrt-card postpartum">
+                        <h5>Post-partum Advice</h5>
+                        <ul>
+                            <li><strong>Breastfeeding</strong>: progestogen-only methods safe immediately (POP, implant, IUS/IUD ≥4 weeks, injection ≥6 weeks).</li>
+                            <li><strong>Non-breastfeeding</strong>: combined hormonal methods from 21 days if low VTE risk; otherwise defer to 6 weeks.</li>
+                            <li>Discuss quick-start of LARC before discharge, manage contraception in perinatal mental health plans.</li>
+                            <li>Advise pelvic rest for 2 weeks after vaginal delivery and until healing after caesarean.</li>
+                        </ul>
+                        <div class="contraception-hrt-note">Assess VTE risk, breastfeeding goals, and contraception needs during routine postnatal checks.</div>
+                    </section>
+                </div>
             </div>
 
             <!-- Vaccinations Panel -->
