@@ -1909,20 +1909,37 @@ class MLAQuizApp {
             return;
         }
 
-        const renderVaccineList = (vaccines = []) => {
+        const escapeAttr = (value) => {
+            if (value === null || value === undefined) {
+                return '';
+            }
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/'/g, '&#39;');
+        };
+
+        const renderVaccineList = (vaccines = [], ageKey = '') => {
             if (!Array.isArray(vaccines) || vaccines.length === 0) {
                 return '<div class="no-content">No vaccine information recorded.</div>';
             }
 
             return `
                 <ul class="vaccination-list">
-                    ${vaccines.map(vaccine => `
-                        <li>
-                            <div><strong>${vaccine.name || 'Vaccine'}</strong></div>
+                    ${vaccines.map(vaccine => {
+                        const vaccineName = vaccine.name || 'Vaccine';
+                        const keyValue = `${ageKey || ''}::${vaccineName}`;
+                        const keyAttr = vaccineName ? ` data-vaccination-key="${escapeAttr(keyValue)}"` : '';
+                        return `
+                        <li${keyAttr}>
+                            <div><strong>${vaccineName}</strong></div>
                             ${vaccine.summary ? `<div class="vaccination-note">${vaccine.summary}</div>` : ''}
                             ${vaccine.notes ? `<div class="vaccination-note"><em>${vaccine.notes}</em></div>` : ''}
                         </li>
-                    `).join('')}
+                    `;
+                    }).join('')}
                 </ul>
             `;
         };
@@ -1930,23 +1947,28 @@ class MLAQuizApp {
         const renderRoutineSchedule = (vaccinationData.routineChildhood || []).map(entry => `
             <div class="vaccination-card">
                 <div class="vaccination-age">${entry.age || 'Schedule point'}</div>
-                ${renderVaccineList(entry.vaccines)}
+                ${renderVaccineList(entry.vaccines, entry.age || '')}
                 ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
             </div>
         `).join('') || '<div class="no-content">Routine childhood schedule not available.</div>';
 
         const renderAdolescentAdult = (vaccinationData.adolescentAdult || []).map(entry => `
-            <div class="vaccination-card">
+            <div class="vaccination-card"${entry.group ? ` data-vaccination-key="${escapeAttr(entry.group)}"` : ''}>
                 <h3>🧑 ${entry.group || 'Adolescent/Adult group'}</h3>
                 <ul class="vaccination-list">
-                    ${(entry.details || []).map(detail => `<li>${detail}</li>`).join('')}
+                    ${(entry.details || []).map(detail => {
+                        const trimmed = (detail || '').trim();
+                        if (!trimmed) return '';
+                        const detailKey = `${entry.group || ''}::${trimmed.slice(0, 40)}`;
+                        return `<li data-vaccination-key="${escapeAttr(detailKey)}">${trimmed}</li>`;
+                    }).filter(Boolean).join('')}
                 </ul>
                 ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
             </div>
         `).join('') || '<div class="no-content">No adolescent or adult booster information available.</div>';
 
         const renderRiskGroups = (vaccinationData.riskGroups || []).map(entry => `
-            <div class="vaccination-card">
+            <div class="vaccination-card"${entry.group ? ` data-vaccination-key="${escapeAttr(entry.group)}"` : ''}>
                 <h3>⚠️ ${entry.group || 'Clinical risk group'}</h3>
                 <ul class="vaccination-list">
                     ${(entry.recommendations || []).map(rec => `<li>${rec}</li>`).join('')}
@@ -1956,7 +1978,7 @@ class MLAQuizApp {
         `).join('') || '<div class="no-content">Risk group guidance will appear here once added.</div>';
 
         const renderSeasonalCampaigns = (vaccinationData.seasonalCampaigns || []).map(entry => `
-            <div class="vaccination-card">
+            <div class="vaccination-card"${entry.season ? ` data-vaccination-key="${escapeAttr(entry.season)}"` : ''}>
                 <h3>🍂 ${entry.season || 'Seasonal campaign'}</h3>
                 <div class="vaccination-note">${entry.detail || 'Follow national guidance for campaign eligibility and timing.'}</div>
                 ${entry.notes ? `<div class="vaccination-extra">💡 ${entry.notes}</div>` : ''}
@@ -1983,10 +2005,10 @@ class MLAQuizApp {
                 </div>
                 ${keyPoints ? `<div class="vaccination-key-points">${keyPoints}</div>` : ''}
                 <div class="vaccination-tabs">
-                    <button class="vaccination-tab active" data-tab="childhood">🧒 Routine Childhood</button>
-                    <button class="vaccination-tab" data-tab="adolescent">🧑 Adolescents & Adults</button>
-                    <button class="vaccination-tab" data-tab="risk">⚠️ Clinical Risk Groups</button>
-                    <button class="vaccination-tab" data-tab="seasonal">🍂 Seasonal & Campaigns</button>
+                    <button class="vaccination-tab active" data-tab="childhood" data-vaccination-tab="childhood">🧒 Routine Childhood</button>
+                    <button class="vaccination-tab" data-tab="adolescent" data-vaccination-tab="adolescent">🧑 Adolescents & Adults</button>
+                    <button class="vaccination-tab" data-tab="risk" data-vaccination-tab="risk">⚠️ Clinical Risk Groups</button>
+                    <button class="vaccination-tab" data-tab="seasonal" data-vaccination-tab="seasonal">🍂 Seasonal & Campaigns</button>
                 </div>
                 <div class="vaccination-content">
                     <div class="vaccination-section active" data-tab="childhood">
