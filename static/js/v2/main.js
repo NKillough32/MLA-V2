@@ -787,10 +787,35 @@ class MLAQuizApp {
      * Setup navigation
      */
     setupNavigation() {
-        // Handle browser back button
+        const supportsHistoryAPI = typeof window !== 'undefined' && window.history && 'pushState' in window.history;
+
+        const pushBackSentinel = () => {
+            if (!supportsHistoryAPI) {
+                return;
+            }
+            try {
+                window.history.pushState({ mlaBackSentinel: true }, document.title, window.location.href);
+            } catch (error) {
+                console.warn('Unable to push back-button sentinel state:', error);
+            }
+        };
+
+        if (supportsHistoryAPI) {
+            pushBackSentinel();
+        }
+
+        // Handle browser/system back button
         window.addEventListener('popstate', (event) => {
             if (event.state && event.state.view) {
                 uiManager.showView(event.state.view, false);
+                return;
+            }
+
+            if (uiManager.goBack()) {
+                pushBackSentinel();
+                if (event && typeof event.preventDefault === 'function') {
+                    event.preventDefault();
+                }
             }
         });
     }
