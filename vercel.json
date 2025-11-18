@@ -11,5 +11,19 @@
     { "src": "/favicon.ico", "dest": "/static/icons/icon.png" },
     { "src": "/static/assets/pdfs/(.*)", "dest": "/static/assets/$1" },
     { "src": "^/$", "dest": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/static/(.*)\\.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
   ]
 }
