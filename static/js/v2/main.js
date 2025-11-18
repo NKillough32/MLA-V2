@@ -1746,6 +1746,23 @@ class MLAQuizApp {
                 </div>
         `;
         
+        // Track which guideline keys we've rendered to avoid duplicates
+        const processedKeys = new Set();
+        const metadataKeys = new Set([
+            'title', 'name', 'category', 'id', 'evidenceLevel', 'lastUpdated',
+            'organisation', 'organization', 'summary', 'description'
+        ]);
+
+        // Helper to format camelCase/snake_case keys into readable section titles
+        const formatTitle = (key = '') => {
+            return key
+                .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+                .replace(/[-_]/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .replace(/\b\w/g, char => char.toUpperCase());
+        };
+
         // Helper function to render sections
         const renderSection = (title, icon, data, color = 'var(--accent)') => {
             if (!data) return '';
@@ -1769,35 +1786,57 @@ class MLAQuizApp {
                 </div>
             `;
         };
-        
-        // Render all possible sections
-        contentHtml += renderSection('Diagnosis', '🔍', guideline.diagnosis);
-        contentHtml += renderSection('Stages/Classification', '📊', guideline.stages);
-        contentHtml += renderSection('Patient Groups', '👥', guideline.groups);
-        contentHtml += renderSection('Treatment Targets', '🎯', guideline.targets, '#10b981');
-        contentHtml += renderSection('Treatment Recommendations', '💊', guideline.treatment);
-        contentHtml += renderSection('Treatment Algorithm', '🔄', guideline.algorithm);
-        contentHtml += renderSection('Medication Classes', '💊', guideline.medications);
-        contentHtml += renderSection('First-line Therapy', '🥇', guideline.firstLine, '#10b981');
-        contentHtml += renderSection('Second-line Options', '🥈', guideline.secondLine);
-        contentHtml += renderSection('Acute Management', '🚨', guideline.acute, '#ef4444');
-        contentHtml += renderSection('Exacerbations', '⚠️', guideline.exacerbations, '#f59e0b');
-        contentHtml += renderSection('Lifestyle Modifications', '🏃‍♂️', guideline.lifestyle);
-        contentHtml += renderSection('Monitoring', '📊', guideline.monitoring);
-        contentHtml += renderSection('Special Populations', '👥', guideline.specialPopulations);
-        contentHtml += renderSection('Investigations', '🔬', guideline.investigations);
-        contentHtml += renderSection('Inhalers', '💨', guideline.inhalers);
-        contentHtml += renderSection('Triggers', '⚡', guideline.triggers);
-        contentHtml += renderSection('Complications', '⚠️', guideline.complications, '#ef4444');
-        contentHtml += renderSection('Red Flags', '🚩', guideline.redFlags, '#ef4444');
-        contentHtml += renderSection('Follow-up', '📅', guideline.followUp);
-        contentHtml += renderSection('Criteria', '📋', guideline.criteria);
-        contentHtml += renderSection('Prevention', '�️', guideline.prevention);
-        contentHtml += renderSection('Infection Overview', '🦠', guideline.infectionOverview, '#0891b2');
-        contentHtml += renderSection('Bacterial Infection Therapy', '🧫', guideline.bacterialInfections, '#16a34a');
-        contentHtml += renderSection('Viral Infection Therapy', '🧬', guideline.viralInfections, '#c026d3');
-        contentHtml += renderSection('Fungal Infection Therapy', '🍄', guideline.fungalInfections, '#ea580c');
-        contentHtml += renderSection('Antimicrobial Stewardship', '📏', guideline.stewardship, '#6366f1');
+
+        // Helper to append section HTML and track processed keys
+        const appendSection = (title, icon, key, color) => {
+            const html = renderSection(title, icon, guideline[key], color);
+            if (html) {
+                processedKeys.add(key);
+                contentHtml += html;
+            }
+        };
+
+        // Render all core sections in a consistent order
+        const coreSections = [
+            { key: 'diagnosis', title: 'Diagnosis', icon: '🔍' },
+            { key: 'stages', title: 'Stages/Classification', icon: '📊' },
+            { key: 'groups', title: 'Patient Groups', icon: '👥' },
+            { key: 'targets', title: 'Treatment Targets', icon: '🎯', color: '#10b981' },
+            { key: 'treatment', title: 'Treatment Recommendations', icon: '💊' },
+            { key: 'algorithm', title: 'Treatment Algorithm', icon: '🔄' },
+            { key: 'medications', title: 'Medication Classes', icon: '💊' },
+            { key: 'firstLine', title: 'First-line Therapy', icon: '🥇', color: '#10b981' },
+            { key: 'secondLine', title: 'Second-line Options', icon: '🥈' },
+            { key: 'acute', title: 'Acute Management', icon: '🚨', color: '#ef4444' },
+            { key: 'exacerbations', title: 'Exacerbations', icon: '⚠️', color: '#f59e0b' },
+            { key: 'lifestyle', title: 'Lifestyle Modifications', icon: '🏃‍♂️' },
+            { key: 'monitoring', title: 'Monitoring', icon: '📊' },
+            { key: 'specialPopulations', title: 'Special Populations', icon: '👥' },
+            { key: 'investigations', title: 'Investigations', icon: '🔬' },
+            { key: 'inhalers', title: 'Inhalers', icon: '💨' },
+            { key: 'triggers', title: 'Triggers', icon: '⚡' },
+            { key: 'complications', title: 'Complications', icon: '⚠️', color: '#ef4444' },
+            { key: 'redFlags', title: 'Red Flags', icon: '🚩', color: '#ef4444' },
+            { key: 'followUp', title: 'Follow-up', icon: '📅' },
+            { key: 'criteria', title: 'Criteria', icon: '📋' },
+            { key: 'prevention', title: 'Prevention', icon: '�️' },
+            { key: 'infectionOverview', title: 'Infection Overview', icon: '🦠', color: '#0891b2' },
+            { key: 'bacterialInfections', title: 'Bacterial Infection Therapy', icon: '🧫', color: '#16a34a' },
+            { key: 'viralInfections', title: 'Viral Infection Therapy', icon: '🧬', color: '#c026d3' },
+            { key: 'fungalInfections', title: 'Fungal Infection Therapy', icon: '🍄', color: '#ea580c' },
+            { key: 'stewardship', title: 'Antimicrobial Stewardship', icon: '📏', color: '#6366f1' }
+        ];
+
+        coreSections.forEach(section => appendSection(section.title, section.icon, section.key, section.color));
+
+        // Render any additional sections defined in the guideline entry
+        Object.entries(guideline).forEach(([key, value]) => {
+            if (!value || processedKeys.has(key) || metadataKeys.has(key)) {
+                return;
+            }
+
+            appendSection(formatTitle(key), '📋', key);
+        });
 
         contentHtml += '</div>';
 
