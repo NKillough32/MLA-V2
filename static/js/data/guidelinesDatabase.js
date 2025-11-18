@@ -391,6 +391,53 @@ window.guidelinesDatabase = {
         },
         monitoring: 'Hourly observations, fluid balance, lactate, organ function, consider HDU/ICU if deteriorating'
     },
+    'common-infections': {
+        title: 'Common Infection Syndromes & Empiric Therapy (UK 2024)',
+        category: 'infectious-diseases',
+        evidenceLevel: 'NICE / UKHSA antimicrobial guidance',
+        lastUpdated: '2024',
+        organisation: 'NICE | UKHSA | BSAC',
+        infectionOverview: {
+            'Scope': 'High-frequency community and inpatient bacterial, viral, and fungal infections requiring empiric therapy. Adult dosing shown unless stated; always adjust for renal function, pregnancy, and paediatrics.',
+            'Red flags': 'Suspected sepsis, meningism, haemodynamic instability, pregnancy, device-related infection, and immunosuppression require urgent senior review and early IV therapy.',
+            'Cultures before drugs': 'Obtain blood cultures, urine, sputum, or wound samples before first dose where safe—but never delay antibiotics in life-threatening infection. De-escalate promptly with microbiology advice.'
+        },
+        bacterialInfections: {
+            'ENT – Streptococcal tonsillitis': '1st line: Phenoxymethylpenicillin 500mg QDS (or 1g BD) for 10 days. 2nd line: Clarithromycin 500mg BD or clindamycin 300mg QDS for 5-10 days if penicillin allergy/recurrent infection.',
+            'Respiratory – Community-acquired pneumonia (CURB-65 0-1 outpatient)': '1st line: Amoxicillin 500mg TDS for 5 days (add clarithromycin if atypical risk). 2nd line: Doxycycline 200mg stat then 100mg OD 4 days or clarithromycin 500mg BD for 5 days when penicillin-allergic.',
+            'Respiratory – Moderate/severe CAP (CURB-65 ≥2 inpatient)': '1st line: IV co-amoxiclav 1.2g TDS + clarithromycin 500mg BD. 2nd line: Ceftriaxone 2g OD + doxycycline 100mg BD or levofloxacin 500mg BD if severe beta-lactam allergy—seek ID/microbiology advice.',
+            'CNS – Suspected meningococcal meningitis': '1st line: Pre-hospital benzylpenicillin 1.2g IM/IV followed by ceftriaxone 2g IV BD + dexamethasone; add ampicillin 2g IV Q4h if >60 years, pregnant, or immunocompromised. 2nd line: Cefotaxime 2g IV Q4-6h ± vancomycin if recent healthcare exposure/penicillin-resistant pneumococcus risk.',
+            'Urinary – Uncomplicated cystitis (non-pregnant female)': '1st line: Nitrofurantoin MR 100mg BD for 3 days. 2nd line: Trimethoprim 200mg BD for 3 days (only if resistance <20%) or pivmecillinam 400mg TDS for 3 days.',
+            'Urinary – Pyelonephritis/urosepsis': '1st line: IV ceftriaxone 1-2g OD or co-amoxiclav 1.2g TDS with step-down to oral ciprofloxacin 500mg BD for 7 days when afebrile. 2nd line: Gentamicin 5-7mg/kg OD + amoxicillin 1g TDS, or oral levofloxacin 500mg BD for 10 days if IV therapy unsuitable.',
+            'Reproductive – Pelvic inflammatory disease': '1st line: Ceftriaxone 1g IM single dose + doxycycline 100mg BD + metronidazole 400mg BD for 14 days. 2nd line: Ofloxacin 400mg BD + metronidazole 400mg BD for 14 days if cephalosporin unsuitable (avoid if gonorrhoea likely).',
+            'Skin/soft tissue – Cellulitis (non-purulent limb)': '1st line: Flucloxacillin 500mg–1g QDS for 5-7 days. 2nd line: Clarithromycin 500mg BD or doxycycline 100mg BD; escalate to IV flucloxacillin 1-2g QDS if systemic features or lymphangitis.',
+            'Skin/soft tissue – Diabetic foot infection': '1st line: Co-amoxiclav 625mg TDS orally (or 1.2g IV TDS) ± metronidazole for anaerobic cover; urgent MDT review. 2nd line: Piperacillin-tazobactam 4.5g IV Q6-8h or ceftriaxone 2g OD + metronidazole when limb/life-threatening.',
+            'Gastrointestinal – C. difficile infection (non-severe)': '1st line: Oral vancomycin 125mg QDS for 10 days. 2nd line: Fidaxomicin 200mg BD for 10 days (preferred for recurrence) or bezlotoxumab adjunct in high-risk relapse—follow NICE NG199.',
+            'Hepatobiliary – Acute cholecystitis/cholangitis': '1st line: Co-amoxiclav 1.2g IV TDS or ceftriaxone 2g OD + metronidazole 500mg TDS with early source control. 2nd line: Piperacillin-tazobactam 4.5g Q6h or meropenem 1g TDS for severe sepsis or ESBL/healthcare-associated risk.'
+        },
+        viralInfections: {
+            'Seasonal influenza (high-risk or severe)': '1st line: Oseltamivir 75mg BD for 5 days (extend to 10 days in critical illness). 2nd line: Zanamivir 10mg inhaled BD for 5 days or IV zanamivir if unable to inhale; supportive care for low-risk cases.',
+            'COVID-19 (non-hospitalised high risk)': '1st line: Nirmatrelvir/ritonavir 300/100mg BD for 5 days within 5 days of symptom onset (check interactions). 2nd line: 3-day IV remdesivir course (200mg day 1, then 100mg days 2-3) or molnupiravir 800mg BD for 5 days when ritonavir contraindicated.',
+            'HSV-1/2 first episode or severe recurrence': '1st line: Aciclovir 400mg TDS for 5-10 days. 2nd line: Valaciclovir 500mg BD or famciclovir 250mg TDS for 5-10 days; consider suppressive therapy if ≥6 recurrences/year.',
+            'Varicella zoster (shingles, >50 or ophthalmic)': '1st line: Aciclovir 800mg five times daily for 7 days (start within 72h or while new lesions appearing). 2nd line: Valaciclovir 1g TDS or famciclovir 500mg TDS for 7 days; IV aciclovir 10mg/kg TDS for immunocompromised/disseminated disease.',
+            'Respiratory syncytial virus (infants/high-risk adults)': '1st line: Supportive care—oxygen, hydration, nasal suction, nutrition. 2nd line: Palivizumab prophylaxis for eligible infants or aerosolised ribavirin for severe immunocompromised cases following specialist guidance.',
+            'Hepatitis B flare/reactivation': '1st line: Tenofovir alafenamide 25mg OD or entecavir 0.5mg OD if nucleos(t)ide-naïve. 2nd line: Switch to tenofovir disoproxil 245mg OD or add-on therapy guided by HBV DNA levels/resistance with hepatology input.'
+        },
+        fungalInfections: {
+            'Oropharyngeal candidiasis': '1st line: Miconazole 2.5ml oral gel QDS for 7-14 days. 2nd line: Fluconazole 50mg OD for 7-14 days (systemic therapy) or itraconazole solution 100mg BD for azole-resistant cases.',
+            'Vulvovaginal candidiasis': '1st line: Clotrimazole 500mg pessary single dose or 10% cream for 1-2 nights (topical preferred in pregnancy). 2nd line: Fluconazole 150mg single oral dose or boric acid 600mg PV nightly for 14 days for non-albicans species (specialist).',
+            'Dermatophyte tinea pedis/corporis': '1st line: Topical terbinafine 1% OD for 1-2 weeks (continue 1 week after clearance). 2nd line: Oral terbinafine 250mg OD for 2-4 weeks or itraconazole 100mg BD for 1 week if extensive/refractory.',
+            'Onychomycosis': '1st line: Oral terbinafine 250mg OD for 6 weeks (fingers) or 12 weeks (toes). 2nd line: Itraconazole pulse 200mg BD for 1 week/month (2 pulses fingers, 3-4 pulses toes) or topical amorolfine 5% lacquer weekly when oral therapy unsuitable.',
+            'Invasive candidiasis (non-neutropenic)': '1st line: Echinocandin (e.g., anidulafungin 200mg IV load then 100mg OD). 2nd line: Step down to fluconazole 400-800mg OD once susceptible and clinically improved, or use liposomal amphotericin B 3mg/kg OD if echinocandin contraindicated.',
+            'Invasive aspergillosis/chronic pulmonary aspergillosis': '1st line: Voriconazole 6mg/kg IV BD for 2 doses then 4mg/kg BD (switch to 200mg PO BD). 2nd line: Isavuconazole 200mg TDS for 2 days then OD or liposomal amphotericin B 3-5mg/kg OD when azoles not tolerated; coordinate with respiratory/ID specialists.'
+        },
+        stewardship: {
+            '48-hour review': 'Reassess need for IV therapy at 48 hours—switch to oral, narrow spectrum, or stop if infection unlikely. Document indication, route, and planned duration on drug chart.',
+            'Dosing considerations': 'Adjust for weight, renal/hepatic function, and drug interactions (e.g., DOACs, QT-prolonging agents). Use local dosing nomograms for aminoglycosides and vancomycin.',
+            'Safety monitoring': 'Arrange baseline and follow-up FBC/U&E/LFT for prolonged therapy, monitor QT interval with macrolides/fluoroquinolones, check trough levels for vancomycin/aminoglycosides.',
+            'Patient advice': 'Explain expected course, red flags requiring review, and importance of adherence. Counsel on contraception interactions (e.g., enzyme inducers), photosensitivity, and C. difficile risk.'
+        }
+    },
     'dvt-pe': {
         title: 'DVT & Pulmonary Embolism (NICE NG158 2024)',
         category: 'cardiovascular',
