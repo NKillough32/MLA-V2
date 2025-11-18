@@ -216,17 +216,254 @@ export class GlobalSearchManager {
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
             this.buildGuidelineResults(query),
+            this.buildVaccinationResults(query),
+            this.buildContraceptionResults(query),
+            this.buildGeneticsResults(query),
+            this.buildDevelopmentalResults(query),
             this.buildDifferentialResults(query),
             this.buildTriadResults(query),
             this.buildMnemonicResults(query),
             this.buildExaminationResults(query),
             this.buildInterpretationResults(query),
             this.buildEmergencyResults(query),
-            this.buildPdfResults(query)
+            this.buildPdfResults(query),
+            this.buildLaddersResults(query)
         ];
 
         const results = await Promise.all(operations);
         return results.filter(Boolean);
+    }
+
+    async buildVaccinationResults(query) {
+        const data = window.ukVaccinationProgramme;
+        if (!data) return null;
+
+        const term = query.toLowerCase();
+        const matches = [];
+
+        // Search routine childhood schedule
+        (data.routineChildhood || []).forEach(entry => {
+            const age = entry.age || '';
+            (entry.vaccines || []).forEach(v => {
+                const hay = `${v.name} ${v.summary || ''} ${v.notes || ''} ${age}`.toLowerCase();
+                if (hay.includes(term)) {
+                    matches.push({
+                        title: v.name,
+                        subtitle: age,
+                        meta: v.summary || v.notes || '',
+                        source: 'childhood',
+                        action: { type: 'vaccination', tab: 'childhood', key: `${age}::${v.name}` }
+                    });
+                }
+            });
+        });
+
+        // Search adolescent/adult groups
+        (data.adolescentAdult || []).forEach(entry => {
+            const group = entry.group || '';
+            (entry.details || []).forEach(detail => {
+                if ((detail || '').toLowerCase().includes(term) || group.toLowerCase().includes(term)) {
+                    matches.push({
+                        title: group,
+                        subtitle: detail.slice(0, 80),
+                        meta: 'Adolescent / Adult guidance',
+                        source: 'adolescent',
+                        action: { type: 'vaccination', tab: 'adolescent', key: `${group}::${detail.slice(0,40)}` }
+                    });
+                }
+            });
+        });
+
+        // Risk groups
+        (data.riskGroups || []).forEach(entry => {
+            const group = entry.group || '';
+            const hay = `${group} ${(entry.recommendations || []).join(' ')}`.toLowerCase();
+            if (hay.includes(term)) {
+                matches.push({
+                    title: group,
+                    subtitle: (entry.recommendations || []).slice(0,2).join(' · '),
+                    meta: 'Risk group recommendations',
+                    source: 'risk',
+                    action: { type: 'vaccination', tab: 'risk', key: group }
+                });
+            }
+        });
+
+        // Seasonal campaigns
+        (data.seasonalCampaigns || []).forEach(entry => {
+            const hay = `${entry.season} ${entry.detail || ''}`.toLowerCase();
+            if (hay.includes(term)) {
+                matches.push({
+                    title: entry.season,
+                    subtitle: entry.detail?.slice(0, 80) || '',
+                    meta: 'Seasonal campaign',
+                    source: 'seasonal',
+                    action: { type: 'vaccination', tab: 'seasonal', key: entry.season }
+                });
+            }
+        });
+
+        if (!matches.length) return null;
+
+        return {
+            id: 'vaccinations',
+            label: 'Vaccinations',
+            icon: '💉',
+            total: matches.length,
+            matches: matches.slice(0, this.options.defaultLimit)
+        };
+    }
+
+    async buildContraceptionResults(query) {
+        const container = document.getElementById('contraception-hrt-panel');
+        if (!container) return null;
+
+        const cards = Array.from(container.querySelectorAll('.contraception-hrt-card'));
+        if (!cards.length) return null;
+
+        const term = query.toLowerCase();
+        const results = [];
+
+        cards.forEach((card, idx) => {
+            const titleEl = card.querySelector('h5');
+            const title = titleEl ? titleEl.textContent.trim() : `Contraception ${idx + 1}`;
+            const text = (card.textContent || '').toLowerCase();
+            if (title.toLowerCase().includes(term) || text.includes(term)) {
+                results.push({
+                    title,
+                    subtitle: text.split('\n').find(s => s.trim())?.slice(0, 80) || '',
+                    meta: 'Hormone & contraception',
+                    action: { type: 'contraception', index: idx, key: title }
+                });
+            }
+        });
+
+        if (!results.length) return null;
+
+        return {
+            id: 'contraception',
+            label: 'Contraception & HRT',
+            icon: '🩺',
+            total: results.length,
+            matches: results.slice(0, this.options.defaultLimit)
+        };
+    }
+
+    async buildGeneticsResults(query) {
+        const grid = document.getElementById('genetics-grid');
+        if (!grid) return null;
+
+        const cards = Array.from(grid.querySelectorAll('.genetics-card'));
+        if (!cards.length) return null;
+
+        const term = query.toLowerCase();
+        const results = [];
+
+        cards.forEach((card) => {
+            const key = card.dataset.key || '';
+            const titleEl = card.querySelector('h4');
+            const title = titleEl ? titleEl.textContent.trim() : key;
+            const text = (card.textContent || '').toLowerCase();
+            if (title.toLowerCase().includes(term) || text.includes(term)) {
+                results.push({
+                    title,
+                    subtitle: card.querySelector('.genetics-tags')?.textContent?.trim() || '',
+                    meta: 'Genetics reference',
+                    action: { type: 'genetics', key }
+                });
+            }
+        });
+
+        if (!results.length) return null;
+
+        return {
+            id: 'genetics',
+            label: 'Genetics',
+            icon: '🧬',
+            total: results.length,
+            matches: results.slice(0, this.options.defaultLimit)
+        };
+    }
+
+    async buildDevelopmentalResults(query) {
+        const table = document.querySelector('#developmental-panel .milestone-table');
+        if (!table) return null;
+
+        const rows = Array.from(table.querySelectorAll('.milestone-row'));
+        if (!rows.length) return null;
+
+        const term = query.toLowerCase();
+        const results = [];
+
+        rows.forEach((row, idx) => {
+            const cellsText = row.textContent.trim().toLowerCase();
+            if (cellsText.includes(term)) {
+                const age = row.querySelector('td') ? row.querySelector('td').textContent.trim() : '';
+                const domain = row.dataset.domain || '';
+                const expected = row.cells && row.cells[2] ? row.cells[2].textContent.trim() : '';
+                results.push({
+                    title: expected || `${domain} milestone`,
+                    subtitle: `${age} • ${domain}`,
+                    meta: row.cells && row.cells[3] ? row.cells[3].textContent.trim() : '',
+                    action: { type: 'developmental', index: idx }
+                });
+            }
+        });
+
+        if (!results.length) return null;
+
+        return {
+            id: 'developmental',
+            label: 'Developmental Milestones',
+            icon: '🧒',
+            total: results.length,
+            matches: results.slice(0, this.options.defaultLimit)
+        };
+    }
+
+    async buildLaddersResults(query) {
+        const manager = this.managers.laddersManager;
+        if (!manager) return null;
+
+        // Prefer a manager-provided search method if available
+        const searchFn = typeof manager.searchLadders === 'function'
+            ? () => manager.searchLadders(query)
+            : () => {
+                const term = query.toLowerCase();
+                const results = [];
+                try {
+                    const data = manager.laddersData || {};
+                    Object.entries(data).forEach(([key, ladder]) => {
+                        const hay = [ladder.name, ladder.description, (ladder.icon || '')].join(' ').toLowerCase();
+                        if (hay.includes(term)) {
+                            results.push({ key, ...ladder });
+                        } else {
+                            // Check nested arrays (medications, steps)
+                            const nested = JSON.stringify(ladder).toLowerCase();
+                            if (nested.includes(term)) {
+                                results.push({ key, ...ladder });
+                            }
+                        }
+                    });
+                } catch (e) {
+                    console.warn('GlobalSearchManager: ladders search failed', e);
+                }
+                return results;
+            };
+
+        return this.buildGroup({
+            id: 'ladders',
+            label: 'Treatment Ladders',
+            icon: '🪜',
+            limit: this.options.limits.ladders || this.options.defaultLimit,
+            searchFn,
+            mapFn: (ladder) => ({
+                title: ladder.name || ladder.title || ladder.key,
+                subtitle: ladder.description || '',
+                meta: (ladder.steps && ladder.steps.length) ? `${ladder.steps.length} steps` : (ladder.medications ? `${(ladder.medications||[]).length} meds` : ''),
+                action: { type: 'ladder', key: ladder.key || ladder.id || ladder.name }
+            })
+        });
     }
 
     async buildDrugResults(query) {
@@ -743,6 +980,84 @@ export class GlobalSearchManager {
                 break;
             case 'protocol':
                 navigate('emergency-protocols', () => this.app?.showProtocolDetail?.(action.key));
+                break;
+            case 'ladder':
+                navigate('ladders', () => this.managers.laddersManager?.switchToLadder?.(action.key));
+                break;
+            case 'vaccination':
+                navigate('vaccinations', () => {
+                    try {
+                        const panel = document.getElementById('vaccinations-panel');
+                        if (!panel) return;
+                        // If a tab was provided try to open it
+                        if (action.tab) {
+                            const tabBtn = panel.querySelector(`[data-vaccination-tab="${action.tab}"]`);
+                            if (tabBtn?.click) tabBtn.click();
+                        }
+                        // Find element by constructed key if present
+                        if (action.key) {
+                            const el = panel.querySelector(`[data-vaccination-key="${CSS.escape(action.key)}"]`) || panel.querySelector(`[data-key="${CSS.escape(action.key)}"]`);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                el.classList.add('global-search-highlight');
+                                setTimeout(() => el.classList.remove('global-search-highlight'), 2500);
+                            }
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'contraception':
+                navigate('contraception-hrt', () => {
+                    try {
+                        const panel = document.getElementById('contraception-hrt-panel');
+                        if (!panel) return;
+                        let el = null;
+                        if (typeof action.index === 'number') {
+                            el = panel.querySelectorAll('.contraception-hrt-card')[action.index];
+                        }
+                        if (!el && action.key) {
+                            el = Array.from(panel.querySelectorAll('.contraception-hrt-card')).find(c => (c.textContent || '').includes(action.key));
+                        }
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            el.classList.add('global-search-highlight');
+                            setTimeout(() => el.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'genetics':
+                navigate('genetics', () => {
+                    try {
+                        const panel = document.getElementById('genetics-panel');
+                        if (!panel) return;
+                        let el = panel.querySelector(`[data-key="${CSS.escape(action.key || '')}"]`);
+                        if (!el) {
+                            el = panel.querySelector('.genetics-card');
+                        }
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            el.classList.add('global-search-highlight');
+                            setTimeout(() => el.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'developmental':
+                navigate('developmental', () => {
+                    try {
+                        const panel = document.getElementById('developmental-panel');
+                        if (!panel) return;
+                        const rows = Array.from(panel.querySelectorAll('.milestone-row'));
+                        const idx = typeof action.index === 'number' ? action.index : -1;
+                        const el = rows[idx] || rows.find(r => (r.textContent || '').includes(action.key || ''));
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            el.classList.add('global-search-highlight');
+                            setTimeout(() => el.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
                 break;
             case 'pdf':
                 navigate('pdf-library', () => this.managers.pdfLibraryManager?.showPDF?.(action.filename));

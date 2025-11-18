@@ -790,6 +790,7 @@ class MLAQuizApp {
                 calculatorManager,
                 mnemonicsManager: this.mnemonicsManager,
                 triadsManager: this.triadsManager,
+                laddersManager: this.laddersManager,
                 differentialDxManager: this.differentialDxManager,
                 examinationManager: this.examinationManager,
                 interpretationToolsManager: this.interpretationToolsManager,
