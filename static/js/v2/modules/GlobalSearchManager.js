@@ -653,13 +653,29 @@ export class GlobalSearchManager {
 
     handleResultAction(action) {
         if (!action) return;
-        const defer = (callback) => requestAnimationFrame(() => {
-            try {
-                callback();
-            } catch (error) {
-                console.warn('GlobalSearchManager action failed', error);
+        const frameScheduler = (typeof window !== 'undefined' &&
+            (window.requestAnimationFrame ||
+             window.webkitRequestAnimationFrame ||
+             window.mozRequestAnimationFrame ||
+             window.msRequestAnimationFrame)) || null;
+
+        const defer = (callback) => {
+            if (typeof callback !== 'function') {
+                return;
             }
-        });
+
+            const runner = frameScheduler
+                ? (cb) => frameScheduler.call(window, cb)
+                : (cb) => setTimeout(cb, 16);
+
+            runner(() => {
+                try {
+                    callback();
+                } catch (error) {
+                    console.warn('GlobalSearchManager action failed', error);
+                }
+            });
+        };
 
         const navigate = (tool, callback) => {
             if (this.app?.switchTool && tool) {
