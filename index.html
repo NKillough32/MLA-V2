@@ -100,9 +100,21 @@
         /* Base sizing */
         *,
         *::before,
-        *::after { 
+        *::after {
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
         }
 
         html, body { 
@@ -193,11 +205,17 @@
             background: rgba(255, 255, 255, 0.3);
         }
 
+        .nav-icon-btn .nav-label {
+            font-weight: 600;
+            margin-left: 6px;
+        }
+
         @media (max-width: 420px) {
             .navbar { padding: 8px 12px; min-height: 52px; }
             .navbar h1 { font-size: 16px; }
             .nav-left, .nav-right { gap: 8px; }
             .navbar button, .font-controls button { padding: 6px 10px; font-size: 13px; }
+            .nav-icon-btn .nav-label { display: none; }
             .font-controls { gap: 4px; }
         }
 
@@ -9861,6 +9879,9 @@
     <nav class="navbar">
         <div class="nav-left">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
+            <button class="nav-icon-btn" id="global-search-toggle" type="button" title="Search all tools">
+                🔍 <span class="nav-label">Search</span>
+            </button>
         </div>
         <div class="nav-center">
             <h1 id="navTitle">MLA Quiz</h1>
@@ -9876,6 +9897,25 @@
             <button class="next-btn" id="nextNavBtn" style="display: none;">Next →</button>
         </div>
     </nav>
+
+    <!-- Global Search Overlay -->
+    <div id="global-search-overlay" class="global-search-overlay" aria-hidden="true">
+        <section class="global-search-panel" role="dialog" aria-modal="true" aria-labelledby="global-search-heading">
+            <header class="global-search-header">
+                <div class="global-search-input-row">
+                    <label for="global-search-input" class="visually-hidden" id="global-search-heading">Search MLA</label>
+                    <input type="search" id="global-search-input" name="global-search"
+                        placeholder="Search drugs, calculators, triads, PDFs and more" autocomplete="off" />
+                    <button class="ghost-btn" id="global-search-clear" type="button">Clear</button>
+                </div>
+                <button class="global-search-close" id="global-search-close" type="button" aria-label="Close search">
+                    Esc
+                </button>
+            </header>
+            <p id="global-search-meta" class="global-search-meta"></p>
+            <div id="global-search-results" class="global-search-results"></div>
+        </section>
+    </div>
 
     <!-- Main Container -->
     <div class="container">
