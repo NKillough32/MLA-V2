@@ -3709,16 +3709,24 @@
             .tool-nav-btn {
                 font-size: 11px;
                 padding: 10px 12px;
-                width: 100%;
-                min-width: 0;
-                justify-content: flex-start;
             }
 
             .tools-navigation {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                overflow: visible;
-                gap: 6px;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                gap: 8px;
+                padding-bottom: 4px;
+                scroll-snap-type: x proximity;
+            }
+
+            .tools-navigation::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .tools-navigation::-webkit-scrollbar-thumb {
+                background: var(--v2-primary-light);
+                border-radius: 999px;
             }
         }
 
