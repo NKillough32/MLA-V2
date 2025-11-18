@@ -332,6 +332,51 @@ export const emergencyProtocols = {
         ukGuideline: 'Association of Paediatric Emergency Medicine Status Epilepticus Guideline 2020',
         criticalActions: ['Give benzodiazepines promptly', 'Use weight-based dosing throughout', 'Escalate to anaesthesia for refractory seizures']
     },
+    'early-pregnancy-bleeding': {
+        name: 'Early Pregnancy Bleeding & Miscarriage Definitions',
+        category: 'obstetric',
+        urgency: 'urgent',
+        steps: [
+            'Threatened miscarriage: vaginal bleeding with closed cervix and confirmed fetal heartbeat. Offer reassurance, repeat scan in 7–14 days, and advise anti-D if rhesus negative ≥10 weeks',
+            'Inevitable miscarriage: heavy bleeding with open cervix and products visible. Arrange urgent evacuation or expectant/medical management depending on haemodynamic status',
+            'Incomplete miscarriage: retained products on ultrasound with bleeding or pain. Offer misoprostol 600 mcg PO or 800 mcg PV and provide analgesia/anti-D; escalate for surgical management if unstable',
+            'Complete miscarriage: previous bleeding with closed cervix and empty uterus on scan. Provide counselling, perform pregnancy test in 3 weeks, and safety-net for heavy bleeding, fever, or persistent pain',
+            'Septic miscarriage: bleeding with fever, offensive discharge, tachycardia. Start broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam + metronidazole), resuscitate, and arrange urgent surgical evacuation'
+        ],
+        drugs: ['Misoprostol 600–800 mcg as per regimen', 'Mifepristone 200 mg PO 24–48 h before misoprostol when medical management chosen', 'Anti-D immunoglobulin 250 IU IM for rhesus negative ≥10 weeks', 'Broad-spectrum IV antibiotics for suspected sepsis'],
+        ukGuideline: 'NICE NG126 (Ectopic pregnancy and miscarriage) 2023 update',
+        criticalActions: ['Confirm location of pregnancy to exclude ectopic', 'Assess haemodynamic stability and haemoglobin', 'Offer anti-D and analgesia', 'Provide clear return/safety-net advice']
+    },
+    'emergency-birth-support': {
+        name: 'Unplanned or Rapid Birth Outside Delivery Suite',
+        category: 'obstetric',
+        urgency: 'emergency',
+        steps: [
+            'Call for obstetric/neonatal support and prepare resuscitation equipment while performing ABC assessment on the birthing person',
+            'Position patient semi-recumbent or on left lateral tilt, apply warm clean towels, and encourage steady breathing with contractions',
+            'During crowning, support perineum with gentle counter-pressure, check for nuchal cord (slip over head or clamp and cut if tight)',
+            'After birth, dry newborn, stimulate, assess tone/breathing, and clamp/cut cord after 1 minute unless resuscitation needed',
+            'Actively manage third stage: administer oxytocin 10 IU IM, massage uterus, monitor bleeding, and prepare for postpartum haemorrhage protocol if loss ≥500 ml'
+        ],
+        drugs: ['Oxytocin 10 IU IM once shoulders delivered', 'Tranexamic acid 1 g IV if postpartum haemorrhage suspected', 'Analgesia/Entonox if available'],
+        ukGuideline: 'NICE CG190 Intrapartum Care & RCOG/BEmONC emergency birth drills',
+        criticalActions: ['Summon help immediately', 'Protect airway/circulation of both patients', 'Document timings (birth of head/body/placenta)', 'Ensure neonatal thermoregulation and Apgar recording']
+    },
+    'emergency-caesarean': {
+        name: 'Category 1 Emergency Caesarean Section Response',
+        category: 'obstetric',
+        urgency: 'emergency',
+        steps: [
+            'Activate obstetric theatre alert with obstetrician, anaesthetist, midwife, ODP, neonatal team; target decision-to-delivery interval <30 minutes (aim 15 min)',
+            'Simultaneously optimise mother: left lateral tilt, IV access x2, cross-match blood, antacid prophylaxis (ranitidine 50 mg IV or sodium citrate 30 ml PO)',
+            'Fetal assessment: continuous CTG, confirm indication (e.g., fetal bradycardia, cord prolapse, placental abruption) and document maternal consent if possible',
+            'Anaesthetic plan: rapid sequence spinal if no contraindications; general anaesthesia with RSI if fetal compromise severe or coagulopathy present. Use PONV/VTE prophylaxis per protocol',
+            'Post-delivery: administer uterotonics (oxytocin infusion), monitor haemodynamics, consider broad-spectrum prophylactic antibiotics (co-amoxiclav 1.2 g IV) and venous thromboprophylaxis'
+        ],
+        drugs: ['Oxytocin 5 IU IV bolus then 40 IU in 500 ml infusion', 'Tranexamic acid 1 g IV if bleeding high risk', 'Co-amoxiclav 1.2 g IV for surgical prophylaxis', 'Antacid prophylaxis (sodium citrate 30 ml PO, ranitidine 50 mg IV)'],
+        ukGuideline: 'NICE CG132 Caesarean Birth 2021 update',
+        criticalActions: ['Decision-to-delivery <30 minutes for category 1', 'Ensure WHO surgical safety checklist completed', 'Document maternal consent and indication', 'Prepare for neonatal resuscitation']
+    },
     'postpartum-haemorrhage': {
         name: 'Postpartum Haemorrhage (PPH) Protocol',
         category: 'obstetric',
