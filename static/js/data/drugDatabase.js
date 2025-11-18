@@ -2869,6 +2869,20 @@ const drugDatabase = {
                 clinicalPearls: 'Use with caution in cardiac disease; often second-line or adjunct to oxytocin',
                 indication: 'Management of postpartum haemorrhage'
             },
+            'mifepristone': {
+                name: 'Mifepristone',
+                class: 'Anti-progestogen (progesterone receptor modulator)',
+                mechanism: 'Competitively blocks progesterone receptors causing decidual breakdown and increased uterine sensitivity to prostaglandins',
+                dosing: 'Medical abortion/miscarriage: 200 mg orally followed 24–48 h later by misoprostol regimen. Cervical priming prior to surgical evacuation: 200 mg orally 24 h pre-procedure',
+                contraindications: 'Chronic adrenal failure, long-term systemic corticosteroid therapy, inherited porphyria, anticoagulation disorders without specialist input, hypersensitivity',
+                interactions: 'CYP3A4 inhibitors/inducers alter levels; corticosteroids may require dose adjustment due to receptor antagonism',
+                monitoring: 'Bleeding pattern, haemoglobin if heavy bleeding, confirmation of pregnancy resolution via low-sensitivity test/ultrasound',
+                pregnancy: 'Used intentionally for pregnancy termination; if pregnancy continues after exposure discuss teratogenic risk and offer additional counselling',
+                sideEffects: 'Uterine cramping, bleeding, nausea, vomiting, diarrhoea, headache, rare infection',
+                pharmacokinetics: 'High oral bioavailability, peak 1-2 h, half-life 18-25 h, hepatic metabolism (CYP3A4)',
+                clinicalPearls: 'Always pair with misoprostol for medical abortion and most miscarriage regimens; advise patients to carry emergency contact info and access to clinical support',
+                indication: 'Medical abortion up to 24 weeks (with prostaglandin), management of miscarriage, cervical priming before surgical uterine evacuation'
+            },
             'misoprostol': {
                 name: 'Misoprostol',
                 class: 'Prostaglandin E1 analogue (uterotonic)',
@@ -2881,6 +2895,19 @@ const drugDatabase = {
                 sideEffects: 'Fever, diarrhoea, uterine hyperstimulation',
                 clinicalPearls: 'Widely used in global obstetric protocols; dosing and route vary by setting',
                 indication: 'Prevention/treatment of PPH, induction of labour in select contexts'
+            },
+            'anti-d-immunoglobulin': {
+                name: 'Anti-D Immunoglobulin (RhD prophylaxis)',
+                class: 'Human immunoglobulin preparation',
+                mechanism: 'Binds fetal RhD-positive erythrocytes in maternal circulation to prevent maternal sensitisation',
+                dosing: 'Standard 250 IU IM for sensitising events up to 20 weeks (e.g., miscarriage, ectopic, TOP); 500 IU IM after 20 weeks or following delivery of RhD-positive infant',
+                contraindications: 'RhD-positive or previously sensitised individuals, IgA deficiency with anti-IgA antibodies (use specialist products)',
+                interactions: 'Live vaccines (MMR, varicella) efficacy may be reduced—delay vaccines for 3 months if possible',
+                monitoring: 'Observe for 20 minutes post-injection for anaphylaxis; check Kleihauer test if significant fetomaternal haemorrhage suspected',
+                pregnancy: 'Indicated for RhD-negative pregnant patients following sensitising events and routinely at 28 weeks and post-delivery',
+                sideEffects: 'Local pain, mild pyrexia, rare anaphylaxis',
+                clinicalPearls: 'Administer as soon as possible and within 72 hours of event; document batch number and consent',
+                indication: 'Prevention of RhD alloimmunisation after miscarriage, abortion, ectopic pregnancy, abdominal trauma, or delivery'
             },
             'vitamin-k': {
                 name: 'Vitamin K (phytonadione)',

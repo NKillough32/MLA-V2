@@ -886,6 +886,37 @@ window.guidelinesDatabase = {
             'Psychological support': 'Offer counselling, peer support networks, occupational health review for work adjustments'
         }
     },
+    'abortion-care': {
+        title: 'Abortion Care (NICE NG140 2019, refreshed 2022)',
+        category: 'obstetrics',
+        evidenceLevel: 'NICE Guideline',
+        lastUpdated: '2022',
+        organisation: 'NICE',
+        indications: {
+            'Legal framework (England/Wales)': 'Requires certification by 2 registered medical practitioners per Abortion Act 1967 with grounds recorded (Sections A–E)',
+            'Gestational limits': 'Medical abortion recommended up to 24 weeks in line with legislation; consider feticide if ≥22 weeks prior to surgical procedures'
+        },
+        assessment: {
+            'Access': 'Offer self-referral routes and direct access to services without need for GP letter; provide telephone/telemedicine consultations when appropriate',
+            'Dating': 'Use ultrasound to confirm gestational age when LMP uncertain, symptoms atypical, or ectopic pregnancy risk factors present',
+            'Safeguarding': 'Screen for domestic/sexual abuse, coercion, trafficking and mental health issues at every contact'
+        },
+        medicalAbortion: {
+            'Early medical (<10 weeks)': 'Mifepristone 200 mg PO followed 24–48 h later by misoprostol 800 micrograms buccal, sublingual, or vaginal (repeat 400 micrograms doses if incomplete). Offer home use of both medicines when clinically suitable',
+            '10–23+6 weeks': 'Mifepristone 200 mg PO then misoprostol 800 micrograms PV/SL followed by 400 micrograms every 3 hours (max 5 doses in 24 h). Monitor in clinic after 14 weeks',
+            'Anti-D prophylaxis': 'Offer 250 IU anti-D immunoglobulin to rhesus-negative women from 10 weeks gestation or earlier if surgical/medical evacuation required'
+        },
+        surgicalAbortion: {
+            '<14 weeks': 'Vacuum aspiration under local or conscious sedation where possible. Offer cervical priming with misoprostol 400 micrograms SL 1–2 h pre-procedure (or mifepristone 200 mg 24 h prior) if nulliparous or 12–14 weeks',
+            '≥14 weeks': 'Dilataion and evacuation by trained surgeons with ultrasound guidance where feasible; administer prophylactic antibiotics (e.g., doxycycline 100 mg BD 3 days)',
+            'Anaesthesia': 'Use local anaesthesia plus sedation when safe to maximise choice; general anaesthesia reserved for complex cases'
+        },
+        aftercare: {
+            'Contraception': 'Offer immediate contraception (LARC, pills, condoms) including same-visit fitting of implant or IUS when not contraindicated',
+            'Follow-up': 'Routine review not required after uncomplicated early medical abortion; advise self-performed low-sensitivity pregnancy test at 2–3 weeks and provide helpline access',
+            'Safety net': 'Inform patients about expected bleeding (up to 2 weeks), warning signs (soaking ≥2 pads/hour, fever, severe abdominal pain) and when to seek urgent care'
+        }
+    },
     'postpartum-haemorrhage': {
         title: 'Postpartum Haemorrhage (RCOG Green-top Guideline No. 52, 2016, reaffirmed 2021)',
         category: 'obstetrics',
