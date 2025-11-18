@@ -916,6 +916,14 @@ export class GlobalSearchManager {
              window.mozRequestAnimationFrame ||
              window.msRequestAnimationFrame)) || null;
 
+        const ensureToolsPanelVisible = () => {
+            try {
+                this.app?.ensureMedicalToolsPanelOpen?.();
+            } catch (error) {
+                console.warn('GlobalSearchManager: unable to open medical tools panel', error);
+            }
+        };
+
         const defer = (callback) => {
             if (typeof callback !== 'function') {
                 return;
@@ -935,6 +943,7 @@ export class GlobalSearchManager {
         };
 
         const navigate = (tool, callback) => {
+            ensureToolsPanelVisible();
             if (this.app?.switchTool && tool) {
                 this.app.switchTool(tool);
             }

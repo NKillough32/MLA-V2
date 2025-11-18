@@ -310,16 +310,24 @@ class MLAQuizApp {
 
         // Medical tools toggle button
         const medicalToolsToggle = document.getElementById('medical-tools-toggle');
+        const setMedicalToolsToggleState = (isOpen) => {
+            if (medicalToolsToggle) {
+                medicalToolsToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            }
+        };
+
         if (medicalToolsToggle) {
             medicalToolsToggle.addEventListener('click', () => {
                 if (medicalToolsPanel) {
                     const isOpen = medicalToolsPanel.classList.contains('open');
-                    
+
                     if (isOpen) {
                         medicalToolsPanel.classList.remove('open');
+                        setMedicalToolsToggleState(false);
                     } else {
                         medicalToolsPanel.classList.add('open');
-                        
+                        setMedicalToolsToggleState(true);
+
                         // Auto-switch to the currently active tool or default to calculators
                         const activeBtn = medicalToolsPanel.querySelector('.tool-nav-btn.active');
                         if (activeBtn) {
@@ -346,6 +354,7 @@ class MLAQuizApp {
                 if (medicalToolsPanel) {
                     if (!medicalToolsPanel.classList.contains('open')) {
                         medicalToolsPanel.classList.add('open');
+                        setMedicalToolsToggleState(true);
                     }
                     this.switchTool('pdf-library');
                 } else {
@@ -360,6 +369,7 @@ class MLAQuizApp {
             toolsCloseBtn.addEventListener('click', () => {
                 if (medicalToolsPanel) {
                     medicalToolsPanel.classList.remove('open');
+                    setMedicalToolsToggleState(false);
                 }
             });
         }
@@ -892,6 +902,23 @@ class MLAQuizApp {
         }
         const tag = target.tagName ? target.tagName.toLowerCase() : '';
         return ['input', 'textarea', 'select'].includes(tag);
+    }
+
+    ensureMedicalToolsPanelOpen() {
+        const medicalToolsPanel = document.getElementById('medical-tools-panel');
+        if (!medicalToolsPanel) {
+            console.warn('ensureMedicalToolsPanelOpen: panel not found');
+            return;
+        }
+
+        if (!medicalToolsPanel.classList.contains('open')) {
+            medicalToolsPanel.classList.add('open');
+        }
+
+        const medicalToolsToggle = document.getElementById('medical-tools-toggle');
+        if (medicalToolsToggle) {
+            medicalToolsToggle.setAttribute('aria-expanded', 'true');
+        }
     }
 
     /**
