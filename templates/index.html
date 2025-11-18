@@ -3879,23 +3879,25 @@
             .tool-nav-btn {
                 font-size: 11px;
                 padding: 10px 12px;
-                width: 100%;
-                min-width: 0;
-                justify-content: flex-start;
+                flex: 0 0 auto;
+                min-width: max-content;
+                width: auto;
+                white-space: nowrap;
             }
 
             .tools-navigation {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+                display: flex;
+                flex-wrap: nowrap;
                 gap: 6px;
-                max-height: 60vh;
-                overflow-y: auto;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
             }
         }
 
         @media (max-width: 360px) {
             .tool-nav-btn {
-                grid-column: span 2;
+                font-size: 10px;
             }
         }
         
