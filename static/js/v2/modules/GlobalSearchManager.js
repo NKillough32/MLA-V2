@@ -82,7 +82,12 @@ export class GlobalSearchManager {
         });
 
         this.resultsContainer.addEventListener('click', (event) => {
-            const target = event.target.closest('[data-action-id]');
+            // Some browsers can surface text nodes as event targets. Ensure we
+            // always work with an Element before calling closest().
+            const eventTarget = event.target instanceof Element
+                ? event.target
+                : event.target?.parentElement || null;
+            const target = eventTarget?.closest('[data-action-id]');
             if (!target) return;
             const action = this.resultActions.get(target.dataset.actionId);
             if (action) {
