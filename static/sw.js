@@ -10,7 +10,7 @@ const RUNTIME_CACHE = 'mla-quiz-runtime-v1';
 // Files to cache immediately
 const STATIC_FILES = [
     '/',
-    '/static/manifest.json',
+    '/manifest.json',
     '/static/js/v2/main.js',
     '/static/js/v2/modules/QuizManager.js',
     '/static/js/v2/modules/StorageManager.js',
