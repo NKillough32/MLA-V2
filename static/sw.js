@@ -37,17 +37,41 @@ const OFFLINE_SUBMISSIONS = 'mla-offline-submissions-v1';
 self.addEventListener('install', (event) => {
     event.waitUntil(
         Promise.all([
-            caches.open(STATIC_CACHE).then((cache) => {
+            caches.open(STATIC_CACHE).then(async (cache) => {
                 console.log('Caching static files');
-                // Only cache files that actually exist to avoid 404 errors
-                return Promise.allSettled(
-                    STATIC_FILES.map(file => 
-                        cache.add(file).catch(error => {
-                            console.warn(`Failed to cache ${file}:`, error);
-                            return null;
-                        })
-                    )
-                );
+                // Cache files individually and handle special cases (manifest may require credentials)
+                const results = [];
+                for (const file of STATIC_FILES) {
+                    try {
+                        if (file === '/manifest.json') {
+                            // Some hosts may protect the manifest or require cookies/auth; use fetch with credentials
+                            try {
+                                const resp = await fetch(file, { credentials: 'include' });
+                                if (resp && resp.status === 200) {
+                                    await cache.put(file, resp.clone());
+                                    results.push({ file, ok: true });
+                                } else {
+                                    console.warn(`Failed to fetch manifest (${file}) - status: ${resp && resp.status}`);
+                                    results.push({ file, ok: false });
+                                }
+                            } catch (e) {
+                                console.warn(`Failed to fetch and cache manifest ${file}:`, e);
+                                results.push({ file, ok: false });
+                            }
+                        } else {
+                            // Normal cache.add for other static assets
+                            await cache.add(file).catch(error => {
+                                console.warn(`Failed to cache ${file}:`, error);
+                                return null;
+                            });
+                            results.push({ file, ok: true });
+                        }
+                    } catch (e) {
+                        console.warn('Unexpected error caching file', file, e);
+                        results.push({ file, ok: false });
+                    }
+                }
+                return results;
             }).catch(error => {
                 console.warn('Failed to open static cache:', error);
                 return null;
