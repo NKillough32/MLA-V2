@@ -143,6 +143,26 @@ export class GlobalSearchManager {
         if (!this.overlay) {
             return;
         }
+        // If focus is currently inside the overlay, move it to a safe place
+        // before setting aria-hidden to avoid browsers blocking the change
+        try {
+            const activeEl = document.activeElement;
+            if (activeEl && this.overlay.contains(activeEl)) {
+                if (this.toggleBtn instanceof HTMLElement) {
+                    this.toggleBtn.focus();
+                } else if (this.closeBtn instanceof HTMLElement) {
+                    this.closeBtn.focus();
+                } else if (document.body instanceof HTMLElement) {
+                    document.body.focus?.();
+                } else {
+                    try { activeEl.blur?.(); } catch (e) { /* ignore */ }
+                }
+            }
+        } catch (e) {
+            // Defensive: don't let focus handling break close behaviour
+            console.warn('GlobalSearchManager: focus restore failed', e);
+        }
+
         this.overlay.classList.remove('active');
         this.overlay.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('global-search-open');
