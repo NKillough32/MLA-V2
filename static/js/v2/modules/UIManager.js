@@ -184,7 +184,7 @@ export class UIManager {
     /**
      * Show view (screen/section)
      */
-    showView(viewName) {
+    showView(viewName, recordHistory = true) {
         const views = document.querySelectorAll('.view, .screen');
         views.forEach(view => {
             if (view.id === viewName || view.dataset.view === viewName) {
@@ -197,7 +197,7 @@ export class UIManager {
         });
 
         // Update navigation history
-        if (this.currentView !== viewName) {
+        if (recordHistory && this.currentView !== viewName) {
             this.navigationHistory.push(this.currentView);
             this.currentView = viewName;
         }
@@ -211,7 +211,7 @@ export class UIManager {
     goBack() {
         if (this.navigationHistory.length > 0) {
             const previousView = this.navigationHistory.pop();
-            this.showView(previousView);
+            this.showView(previousView, false);
             return true;
         }
         return false;
