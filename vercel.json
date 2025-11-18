@@ -6,24 +6,24 @@
     { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
+    {
+      "src": "/static/(.*)\\.json",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)\\.json",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
+      "continue": true
+    },
     { "src": "/api/(.*)", "dest": "api/index.py" },
     { "src": "/sw.js", "dest": "/static/sw.js" },
     { "src": "/favicon.ico", "dest": "/static/icons/icon.png" },
     { "src": "/static/assets/pdfs/(.*)", "dest": "/static/assets/$1" },
     { "src": "^/$", "dest": "/index.html" }
-  ],
-  "headers": [
-    {
-      "source": "/static/(.*)\\.json",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
-      ]
-    },
-    {
-      "source": "/(.*)\\.json",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
-      ]
-    }
   ]
 }
