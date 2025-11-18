@@ -152,6 +152,10 @@
             overflow: hidden;
         }
 
+        .nav-left {
+            overflow: visible;
+        }
+
         .nav-center {
             display: flex;
             align-items: center;
@@ -171,6 +175,26 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        .nav-left > * {
+            flex-shrink: 0;
+        }
+
+        .nav-icon-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: transform var(--v2-transition-fast), background var(--v2-transition-fast);
+        }
+
+        .nav-icon-btn:hover {
+            transform: translateY(var(--v2-hover-lift));
+            background: rgba(255, 255, 255, 0.3);
         }
 
         @media (max-width: 420px) {
@@ -7577,7 +7601,241 @@
         [data-theme="dark"] .tag.endocrine { background: #4a4626; color: #fff59d; }
         [data-theme="dark"] .tag.primary-care { background: #334a26; color: #dcedc8; }
         [data-theme="dark"] .tag.chronic { background: #4a264a; color: #f8bbd9; }
-    </style>
+    
+        body.global-search-open {
+            overflow: hidden;
+        }
+
+        .global-search-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 80px 16px 24px;
+            z-index: 1500;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity var(--v2-transition-base);
+        }
+
+        .global-search-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .global-search-panel {
+            width: min(960px, 100%);
+            background: var(--v2-bg-card);
+            border-radius: 24px;
+            box-shadow: var(--v2-shadow-2xl);
+            padding: 24px;
+            max-height: calc(100vh - 120px);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .global-search-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .global-search-input-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .global-search-input-row input {
+            flex: 1;
+            border-radius: 14px;
+            border: 1px solid var(--v2-border);
+            padding: 14px 16px;
+            font-size: 1rem;
+            background: var(--v2-bg-elevated);
+            color: var(--v2-text-primary);
+        }
+
+        .ghost-btn,
+        .global-search-close {
+            border-radius: 12px;
+            border: 1px solid var(--v2-border);
+            background: transparent;
+            color: var(--v2-text-secondary);
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background var(--v2-transition-fast);
+        }
+
+        .ghost-btn:hover,
+        .global-search-close:hover {
+            background: rgba(99, 102, 241, 0.08);
+            color: var(--v2-text-primary);
+        }
+
+        .global-search-meta {
+            font-size: 0.9rem;
+            color: var(--v2-text-secondary);
+        }
+
+        .global-search-results {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 6px;
+        }
+
+        .global-search-group {
+            background: var(--v2-bg-elevated);
+            border-radius: 18px;
+            border: 1px solid var(--v2-border);
+            margin-bottom: 16px;
+        }
+
+        .global-search-group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--v2-border);
+            font-weight: 600;
+        }
+
+        .group-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .group-count {
+            font-size: 0.85rem;
+            color: var(--v2-text-secondary);
+        }
+
+        .global-search-group-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .global-search-result {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            text-align: left;
+            padding: 14px 18px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid var(--v2-border);
+            cursor: pointer;
+            transition: background var(--v2-transition-fast);
+        }
+
+        .global-search-result:last-child {
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            border-bottom: none;
+        }
+
+        .global-search-result:hover {
+            background: rgba(99, 102, 241, 0.05);
+        }
+
+        .result-icon {
+            font-size: 1.3rem;
+            width: 32px;
+        }
+
+        .result-title-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .result-badge {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--v2-primary-dark);
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 999px;
+        }
+
+        .result-subtitle {
+            font-size: 0.95rem;
+            color: var(--v2-text-secondary);
+        }
+
+        .result-meta {
+            font-size: 0.85rem;
+            color: var(--v2-text-tertiary);
+        }
+
+        .global-search-empty {
+            text-align: center;
+            padding: 40px 16px;
+            color: var(--v2-text-secondary);
+        }
+
+        .global-search-empty .hint {
+            font-size: 0.9rem;
+            color: var(--v2-text-tertiary);
+        }
+
+        .global-search-empty kbd {
+            background: var(--v2-bg-elevated);
+            border: 1px solid var(--v2-border);
+            border-radius: 6px;
+            padding: 4px 6px;
+            font-size: 0.85rem;
+        }
+
+        .global-search-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 32px 0;
+        }
+
+        .global-search-loading .spinner {
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            border: 4px solid var(--v2-border);
+            border-top-color: var(--v2-primary);
+            animation: global-search-spin 0.85s linear infinite;
+        }
+
+        @keyframes global-search-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 640px) {
+            .global-search-panel {
+                padding: 18px;
+                border-radius: 18px;
+                max-height: calc(100vh - 80px);
+            }
+
+            .global-search-input-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .ghost-btn,
+            .global-search-close {
+                width: 100%;
+            }
+        }
+
+</style>
     <style>
         /* ========================================
            Blue-theme overrides for protocol & interpretation cards
@@ -9607,6 +9865,7 @@
     <nav class="navbar">
         <div class="nav-left">
             <button class="back-btn" id="backBtn" style="display: none;">← Back</button>
+            <button type="button" id="global-search-toggle" class="nav-icon-btn" title="Search across the app" aria-label="Open global search">🔍</button>
         </div>
         <div class="nav-center">
             <h1 id="navTitle">MLA Quiz</h1>
@@ -9622,7 +9881,27 @@
             <button class="next-btn" id="nextNavBtn" style="display: none;">Next →</button>
         </div>
     </nav>
-    
+
+    <div id="global-search-overlay" class="global-search-overlay" aria-hidden="true">
+        <div class="global-search-panel" role="dialog" aria-modal="true" aria-labelledby="global-search-title">
+            <div class="global-search-header">
+                <div>
+                    <h2 id="global-search-title">Search MLA</h2>
+                    <p style="margin: 4px 0 0; color: var(--v2-text-secondary);">Find calculators, guidelines, drugs, labs and tools instantly.</p>
+                </div>
+                <button type="button" id="global-search-close" class="global-search-close" aria-label="Close search">✕</button>
+            </div>
+            <div class="global-search-input-row">
+                <input type="search" id="global-search-input" placeholder="Search calculators, medications, lab tests, PDFs..." autocomplete="off">
+                <button type="button" id="global-search-clear" class="ghost-btn">Clear</button>
+            </div>
+            <div id="global-search-meta" class="global-search-meta">
+                Search across quizzes, calculators, drugs, labs, mnemonics, protocols and PDFs.
+            </div>
+            <div id="global-search-results" class="global-search-results" aria-live="polite"></div>
+        </div>
+    </div>
+
     <!-- Main Container -->
     <div class="container">
         <!-- Quiz Selection Screen -->
@@ -11482,6 +11761,71 @@
             }, 100);
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const openOverlayFallback = () => {
+                const overlay = document.getElementById('global-search-overlay');
+                if (!overlay) return;
+                overlay.classList.add('active');
+                overlay.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('global-search-open');
+                setTimeout(() => document.getElementById('global-search-input')?.focus(), 60);
+            };
+
+            const closeOverlayFallback = () => {
+                const overlay = document.getElementById('global-search-overlay');
+                if (!overlay) return;
+                overlay.classList.remove('active');
+                overlay.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('global-search-open');
+            };
+
+            const ensureGlobalSearchBindings = () => {
+                const toggleBtn = document.getElementById('global-search-toggle');
+                if (toggleBtn && !toggleBtn.dataset.searchBound) {
+                    toggleBtn.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.openPanel === 'function') {
+                            window.globalSearchManager.openPanel();
+                        } else {
+                            openOverlayFallback();
+                        }
+                    });
+                    toggleBtn.dataset.searchBound = 'true';
+                }
+
+                const closeBtn = document.getElementById('global-search-close');
+                if (closeBtn && !closeBtn.dataset.searchBound) {
+                    closeBtn.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
+                            window.globalSearchManager.closePanel();
+                        } else {
+                            closeOverlayFallback();
+                        }
+                    });
+                    closeBtn.dataset.searchBound = 'true';
+                }
+
+                const overlay = document.getElementById('global-search-overlay');
+                if (overlay && !overlay.dataset.searchBound) {
+                    overlay.addEventListener('click', (event) => {
+                        if (event.target !== overlay) return;
+                        event.preventDefault();
+                        if (window.globalSearchManager && typeof window.globalSearchManager.closePanel === 'function') {
+                            window.globalSearchManager.closePanel();
+                        } else {
+                            closeOverlayFallback();
+                        }
+                    });
+                    overlay.dataset.searchBound = 'true';
+                }
+            };
+
+            ensureGlobalSearchBindings();
+            document.addEventListener('global-search:ready', ensureGlobalSearchBindings);
+        });
     </script>
 </body>
 </html>

@@ -26,6 +26,7 @@ import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
+import GlobalSearchManager from './modules/GlobalSearchManager.js';
 
 // Clinical Feature Modules (bridge to V1)
 import { differentialDxManager } from './modules/DifferentialDxManager.js';
@@ -65,6 +66,7 @@ class MLAQuizApp {
         this.calculatorBridge = calculatorBridge;
         this.offlineManager = new OfflineManager();
         this.toolsPreloaded = false;
+        this.globalSearchManager = new GlobalSearchManager();
         this.setupEventListeners();
     }
 
@@ -779,6 +781,23 @@ class MLAQuizApp {
         // Setup navigation
         this.setupNavigation();
 
+        await this.globalSearchManager?.initialize({
+            app: this,
+            managers: {
+                drugManager: this.drugManager,
+                labManager: this.labManager,
+                guidelinesManager: this.guidelinesManager,
+                calculatorManager,
+                mnemonicsManager: this.mnemonicsManager,
+                triadsManager: this.triadsManager,
+                differentialDxManager: this.differentialDxManager,
+                examinationManager: this.examinationManager,
+                interpretationToolsManager: this.interpretationToolsManager,
+                emergencyProtocolsManager: this.emergencyProtocolsManager,
+                pdfLibraryManager: this.pdfLibraryManager
+            }
+        });
+
         // Setup global keyboard shortcuts
         this.setupKeyboardShortcuts();
     }
@@ -825,14 +844,15 @@ class MLAQuizApp {
      */
     setupKeyboardShortcuts() {
         document.addEventListener('keydown', (e) => {
+            const key = typeof e.key === 'string' ? e.key.toLowerCase() : '';
             // Ctrl/Cmd + D: Toggle dark mode
-            if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
+            if ((e.ctrlKey || e.metaKey) && key === 'd') {
                 e.preventDefault();
                 uiManager.toggleDarkMode();
             }
 
             // Ctrl/Cmd + F: Focus search (if search exists)
-            if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
+            if ((e.ctrlKey || e.metaKey) && key === 'f') {
                 const searchInput = document.querySelector('#search-input, .search-input');
                 if (searchInput) {
                     e.preventDefault();
@@ -840,11 +860,37 @@ class MLAQuizApp {
                 }
             }
 
+            // Ctrl/Cmd + K: Open global search
+            if ((e.ctrlKey || e.metaKey) && key === 'k') {
+                e.preventDefault();
+                this.globalSearchManager?.openPanel();
+            }
+
+            // Forward slash: quick open global search when not typing in an input
+            if (key === '/' && !this.isTypingInField(e.target)) {
+                e.preventDefault();
+                this.globalSearchManager?.openPanel();
+            }
+
             // Escape: Close modals
-            if (e.key === 'Escape') {
+            if (key === 'escape') {
                 uiManager.hideModal();
+                if (this.globalSearchManager?.active) {
+                    this.globalSearchManager.closePanel();
+                }
             }
         });
+    }
+
+    isTypingInField(target) {
+        if (!target) {
+            return false;
+        }
+        if (target.isContentEditable) {
+            return true;
+        }
+        const tag = target.tagName ? target.tagName.toLowerCase() : '';
+        return ['input', 'textarea', 'select'].includes(tag);
     }
 
     /**
@@ -5199,6 +5245,7 @@ window.mnemonicsManager = app.mnemonicsManager;
 window.interpretationToolsManager = app.interpretationToolsManager;
 window.laddersManager = app.laddersManager;
 window.pdfLibraryManager = app.pdfLibraryManager;
+window.globalSearchManager = app.globalSearchManager;
 window.differentialDxManager = differentialDxManager;
 window.triadsManager = triadsManager;
 window.examinationManager = examinationManager;
@@ -5219,7 +5266,8 @@ window.initializeV2Integration = function(v1AppInstance) {
         window.interpretationToolsManager = app.interpretationToolsManager;
         window.laddersManager = app.laddersManager;
         window.pdfLibraryManager = app.pdfLibraryManager;
-        
+        window.globalSearchManager = app.globalSearchManager;
+
         return true;
     }
     console.error('❌ Failed to initialize V2 integration - missing V1 app or V2 integration');
