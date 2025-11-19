@@ -51,10 +51,12 @@ def _load_asset_targets() -> List[str]:
 
 
 ASSET_TARGETS = _load_asset_targets()
+ASSET_MANIFEST_DATA: Dict[str, str] = {}
 
 
 def ensure_asset_manifest() -> None:
     """Create cache-busted asset copies and manifest if missing/outdated."""
+    global ASSET_MANIFEST_DATA
     if not ASSET_TARGETS:
         logger.info('No asset targets configured; skipping manifest generation.')
         return
@@ -84,34 +86,93 @@ def ensure_asset_manifest() -> None:
         hashed_name = f"{source_path.stem}.{digest}{source_path.suffix}"
         hashed_path = source_path.with_name(hashed_name)
 
-        if not hashed_path.exists() or hashed_path.stat().st_size != source_path.stat().st_size:
-            hashed_path.write_bytes(file_bytes)
-            logger.info('Generated hashed asset %s', hashed_path)
+        hashed_entry_available = False
+        try:
+            hashed_exists = hashed_path.exists()
+            hashed_matches_size = hashed_exists and (
+                hashed_path.stat().st_size == source_path.stat().st_size
+            )
+        except OSError as exc:
+            logger.warning('Unable to inspect hashed asset %s: %s', hashed_path, exc)
+            hashed_exists = False
+            hashed_matches_size = False
 
-        # Clean up stale hashed variants
-        hashed_pattern = re.compile(rf"^{re.escape(source_path.stem)}\.[a-f0-9]{{8}}{re.escape(source_path.suffix)}$", re.IGNORECASE)
-        for candidate in source_path.parent.iterdir():
-            if candidate.is_file() and hashed_pattern.match(candidate.name) and candidate.name != hashed_name:
-                try:
-                    candidate.unlink()
-                except OSError:
-                    logger.warning('Unable to remove old hashed asset %s', candidate)
+        if not hashed_exists or not hashed_matches_size:
+            try:
+                hashed_path.write_bytes(file_bytes)
+                logger.info('Generated hashed asset %s', hashed_path)
+                hashed_entry_available = True
+            except OSError as exc:
+                logger.warning(
+                    'Unable to write hashed asset %s: %s. Falling back to the original file path.',
+                    hashed_path,
+                    exc,
+                )
+        else:
+            hashed_entry_available = True
 
-        hashed_relative = hashed_path.relative_to(PROJECT_ROOT).as_posix()
-        manifest_value = f"/{hashed_relative}"
+        manifest_value: str
+        if hashed_entry_available:
+            # Clean up stale hashed variants only when we could successfully create/update the hashed asset.
+            hashed_pattern = re.compile(
+                rf"^{re.escape(source_path.stem)}\.[a-f0-9]{{8}}{re.escape(source_path.suffix)}$",
+                re.IGNORECASE,
+            )
+            for candidate in source_path.parent.iterdir():
+                if candidate.is_file() and hashed_pattern.match(candidate.name) and candidate.name != hashed_name:
+                    try:
+                        candidate.unlink()
+                    except OSError:
+                        logger.warning('Unable to remove old hashed asset %s', candidate)
+
+            hashed_relative = hashed_path.relative_to(PROJECT_ROOT).as_posix()
+            manifest_value = f"/{hashed_relative}"
+        else:
+            manifest_value = public_path
+
         manifest_entries[public_path] = manifest_value
 
         if existing_manifest.get(public_path) != manifest_value:
             manifest_changed = True
 
+    if manifest_entries:
+        ASSET_MANIFEST_DATA = dict(manifest_entries)
+    elif existing_manifest and not ASSET_MANIFEST_DATA:
+        # Preserve whatever was on disk previously when no targets yielded entries
+        ASSET_MANIFEST_DATA = dict(existing_manifest)
+
     if manifest_entries and manifest_changed:
-        with ASSET_MANIFEST_PATH.open('w', encoding='utf-8') as manifest_file:
-            json.dump(manifest_entries, manifest_file, indent=2)
-            manifest_file.write('\n')
-        logger.info('Asset manifest updated at %s', ASSET_MANIFEST_PATH)
+        try:
+            ASSET_MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+            with ASSET_MANIFEST_PATH.open('w', encoding='utf-8') as manifest_file:
+                json.dump(manifest_entries, manifest_file, indent=2)
+                manifest_file.write('\n')
+            logger.info('Asset manifest updated at %s', ASSET_MANIFEST_PATH)
+        except OSError as exc:
+            logger.warning('Unable to update asset manifest at %s: %s', ASSET_MANIFEST_PATH, exc)
 
 
 ensure_asset_manifest()
+
+
+def get_asset_manifest_data() -> Dict[str, str]:
+    """Return the current asset manifest data, rebuilding if required."""
+    global ASSET_MANIFEST_DATA
+    if ASSET_MANIFEST_DATA:
+        return dict(ASSET_MANIFEST_DATA)
+
+    if ASSET_MANIFEST_PATH.exists():
+        try:
+            with ASSET_MANIFEST_PATH.open('r', encoding='utf-8') as manifest_file:
+                data = json.load(manifest_file)
+            if isinstance(data, dict):
+                ASSET_MANIFEST_DATA = dict(data)
+                return dict(ASSET_MANIFEST_DATA)
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning('Unable to load asset manifest from disk: %s', exc)
+
+    ensure_asset_manifest()
+    return dict(ASSET_MANIFEST_DATA)
 
 # Reuse the QuizLoader logic from your existing main.py
 class PWAQuizLoader:
@@ -904,6 +965,18 @@ class PWAQuizLoader:
 def home():
     """Serve the main PWA application."""
     return render_template('index.html')
+
+
+@app.route('/api/asset-manifest')
+def asset_manifest():
+    """Expose asset manifest data even when the static file is unavailable."""
+    try:
+        manifest = get_asset_manifest_data()
+        return jsonify(manifest)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.error('Error serving asset manifest: %s', exc)
+        return jsonify({}), 500
+
 
 @app.route('/api/quizzes')
 def get_quizzes():

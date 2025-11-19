@@ -6,7 +6,7 @@
 const CACHE_NAME = 'mla-quiz-v1';
 const STATIC_CACHE = 'mla-quiz-static-v1';
 const RUNTIME_CACHE = 'mla-quiz-runtime-v1';
-const ASSET_MANIFEST_URL = '/static/asset-manifest.json';
+const ASSET_MANIFEST_URL = '/api/asset-manifest';
 
 // Files to cache immediately
 const BASE_STATIC_FILES = [
