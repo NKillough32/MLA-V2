@@ -576,31 +576,47 @@ class LaddersManager {
                 return;
             }
 
+            const guidelineLadders = (this.laddersData.guidelines && Array.isArray(this.laddersData.guidelines.ladders))
+                ? this.laddersData.guidelines.ladders
+                : [];
+
+            const ladderTabsHtml = [
+                { key: 'steroids', label: '💊 Steroid Ladder', active: true },
+                { key: 'pain', label: '🎚️ Pain Ladder' },
+                ...guidelineLadders.map(ladder => ({
+                    key: ladder.key,
+                    label: `🧭 ${ladder.shortTitle || ladder.title || ladder.key}`
+                }))
+            ].map(tab => `
+                <button class="ladder-tab-btn${tab.active ? ' active' : ''}" data-ladder="${tab.key}">${tab.label}</button>
+            `).join('');
+
+            const guidelineSectionsHtml = guidelineLadders.map(ladder => `
+                <div id="${ladder.key}-ladder" class="ladder-tab-content">
+                    ${this.renderGuidelineLadder(ladder)}
+                </div>
+            `).join('');
+
             container.innerHTML = `
                 <div class="ladders-container">
                     <h2>🪜 Clinical Treatment Ladders</h2>
-                    
+
                     <!-- Tab Navigation -->
                     <div class="ladder-tabs" aria-label="Treatment ladder tabs">
-                        <button class="ladder-tab-btn active" data-ladder="steroids">💊 Steroid Ladder</button>
-                        <button class="ladder-tab-btn" data-ladder="pain">🎚️ Pain Ladder</button>
-                        <button class="ladder-tab-btn" data-ladder="guidelines">🧭 NICE Ladders</button>
+                        ${ladderTabsHtml}
                     </div>
-                    
+
                     <!-- Steroid Ladder Tab Content -->
                     <div id="steroids-ladder" class="ladder-tab-content active">
                         ${this.renderSteroidLadder()}
                     </div>
-                    
+
                     <!-- Pain Ladder Tab Content -->
                     <div id="pain-ladder" class="ladder-tab-content">
                         ${this.renderPainLadder()}
                     </div>
 
-                    <!-- Guideline Ladders Tab Content -->
-                    <div id="guidelines-ladder" class="ladder-tab-content">
-                        ${this.renderGuidelineLadders()}
-                    </div>
+                    ${guidelineSectionsHtml}
                 </div>
             `;
             
@@ -664,7 +680,9 @@ class LaddersManager {
                         .guideline-ladder-tabs::-webkit-scrollbar-thumb { background: var(--border-color,#d4d4d8); border-radius:999px; }
 
                         .guideline-ladders-grid { margin-top:16px; }
-                        .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+                        .guideline-ladders-list { width: 100%; }
+                        .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; width: 100%; }
+                        .guideline-table-wrapper { width: 100%; }
                         .guideline-ladder-card h4 { margin:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
                         .guideline-meta { font-size:0.9em; color:var(--secondary-text,#555); }
                         .guideline-steps-table { width:100%; border-collapse:collapse; font-size:0.92em; }
@@ -846,58 +864,80 @@ class LaddersManager {
     }
 
     /**
+     * Render a single NICE guideline ladder
+     * @param {Object} ladder - Ladder configuration object
+     * @returns {string} HTML content for the ladder
+     */
+    renderGuidelineLadder(ladder) {
+        if (!ladder) return '';
+
+        const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
+            ? this.laddersData.guidelines.clinicalPearls
+            : [];
+
+        return `
+            <div class="ladder-section">
+                <h3>${ladder.title || ladder.shortTitle || '🧭 NICE Clinical Ladder'}</h3>
+                <p class="ladder-intro">${ladder.summary || ''}</p>
+                <div class="guideline-ladders-list">
+                    <article class="guideline-ladder-card" id="guideline-${ladder.key}">
+                        <div class="guideline-ladder-header">
+                            <h4>${ladder.shortTitle || ladder.title}</h4>
+                            ${ladder.reference ? `<span class="guideline-badge">${ladder.reference}</span>` : ''}
+                        </div>
+                        ${ladder.summary ? `<p class="guideline-meta">${ladder.summary}</p>` : ''}
+                        ${Array.isArray(ladder.steps) ? `
+                            <div class="guideline-table-wrapper">
+                                <table class="guideline-steps-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Stage</th>
+                                            <th>When to escalate</th>
+                                            <th>Therapy</th>
+                                            <th>Key notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        ${ladder.steps.map(step => `
+                                            <tr>
+                                                <td><strong>${step.stage}</strong></td>
+                                                <td>${step.trigger}</td>
+                                                <td>${step.therapy}</td>
+                                                <td>${step.notes || ''}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        ` : ''}
+                    </article>
+                </div>
+                ${pearls.length ? `
+                    <div class="clinical-pearl">
+                        <h4>💡 Implementation Pearls</h4>
+                        <ul>
+                            ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
+    /**
      * Render NICE guideline ladders content
      * @returns {string} HTML content for guideline ladders
      */
     renderGuidelineLadders() {
         const guidelineData = this.laddersData.guidelines || {};
         const laddersArr = Array.isArray(guidelineData.ladders) ? guidelineData.ladders : [];
-        const pearls = Array.isArray(guidelineData.clinicalPearls) ? guidelineData.clinicalPearls : [];
 
         return `
             <div class="ladder-section">
                 <h3>🧭 NICE Clinical Treatment Ladders</h3>
                 <p class="ladder-intro">${guidelineData.description || 'Concise, guideline-aligned stepwise escalation pathways for common long-term conditions.'}</p>
                 <div class="guideline-ladders-list">
-                    ${laddersArr.map(ladder => `
-                        <article class="guideline-ladder-card" id="guideline-${ladder.key}">
-                            <div class="guideline-ladder-header">
-                                <h4>${ladder.shortTitle || ladder.title}</h4>
-                                <span class="guideline-badge">${ladder.reference}</span>
-                            </div>
-                            <p class="guideline-meta">${ladder.summary}</p>
-                            ${Array.isArray(ladder.steps) ? `
-                                <div class="guideline-table-wrapper">
-                                    <table class="guideline-steps-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Stage</th>
-                                                <th>When to escalate</th>
-                                                <th>Therapy</th>
-                                                <th>Key notes</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            ${ladder.steps.map(step => `
-                                                <tr>
-                                                    <td><strong>${step.stage}</strong></td>
-                                                    <td>${step.trigger}</td>
-                                                    <td>${step.therapy}</td>
-                                                    <td>${step.notes || ''}</td>
-                                                </tr>
-                                            `).join('')}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            ` : ''}
-                        </article>
-                    `).join('')}
-                </div>
-                <div class="clinical-pearl">
-                    <h4>💡 Implementation Pearls</h4>
-                    <ul>
-                        ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
-                    </ul>
+                    ${laddersArr.map(ladder => this.renderGuidelineLadder(ladder)).join('')}
                 </div>
             </div>
         `;
