@@ -1917,22 +1917,46 @@ class MLAQuizApp {
                 .replace(/\b\w/g, char => char.toUpperCase());
         };
 
+        const renderNestedValue = (value) => {
+            if (value === null || value === undefined) {
+                return '';
+            }
+
+            if (Array.isArray(value)) {
+                return `
+                    <ul class="guideline-sublist" style="margin: 6px 0; padding-left: 20px; list-style: disc; color: var(--text-primary);">
+                        ${value.map(item => `<li style="margin-bottom: 6px;">${renderNestedValue(item)}</li>`).join('')}
+                    </ul>
+                `;
+            }
+
+            if (typeof value === 'object') {
+                return `
+                    <div class="guideline-sublist" style="margin: 6px 0; display: flex; flex-direction: column; gap: 6px;">
+                        ${Object.entries(value).map(([childKey, childValue]) => `
+                            <div class="guideline-subitem" style="display: block;">
+                                <strong style="color: var(--text-primary);">${childKey}:</strong>
+                                <span style="color: var(--text-primary); margin-left: 6px;">${renderNestedValue(childValue)}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            return typeof value === 'string' ? value : String(value);
+        };
+
         // Helper function to render sections
         const renderSection = (title, icon, data, color = 'var(--accent)') => {
             if (!data) return '';
-            
+
             let content = '';
             if (typeof data === 'string') {
                 content = `<p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${data}</p>`;
-            } else if (typeof data === 'object') {
-                content = Object.entries(data).map(([key, value]) => `
-                    <div style="margin-bottom: 12px;">
-                        <strong style="color: var(--text-primary);">${key}:</strong>
-                        <span style="color: var(--text-primary); margin-left: 8px;">${value}</span>
-                    </div>
-                `).join('');
+            } else {
+                content = renderNestedValue(data);
             }
-            
+
             return `
                 <div class="info-section" style="margin-bottom: 20px; padding: 15px; background: var(--bg); border-radius: 8px; border-left: 3px solid ${color};">
                     <h4 style="margin: 0 0 12px 0; color: ${color}; font-size: 1.1em;">${icon} ${title}</h4>
@@ -1974,6 +1998,7 @@ class MLAQuizApp {
             { key: 'followUp', title: 'Follow-up', icon: '📅' },
             { key: 'criteria', title: 'Criteria', icon: '📋' },
             { key: 'prevention', title: 'Prevention', icon: '�️' },
+            { key: 'bishopScore', title: 'Bishop Score', icon: '📏', color: '#8B5CF6' },
             { key: 'infectionOverview', title: 'Infection Overview', icon: '🦠', color: '#0891b2' },
             { key: 'bacterialInfections', title: 'Bacterial Infection Therapy', icon: '🧫', color: '#16a34a' },
             { key: 'viralInfections', title: 'Viral Infection Therapy', icon: '🧬', color: '#c026d3' },
@@ -3113,6 +3138,28 @@ class MLAQuizApp {
         const container = document.getElementById('emergency-protocols-container');
         if (!container) return;
         
+        const normaliseToArray = (value) => {
+            if (!value) return [];
+            return Array.isArray(value) ? value.filter(Boolean) : [value];
+        };
+
+        const renderExtraList = (items, title, icon) => {
+            const list = normaliseToArray(items);
+            if (!list.length) return '';
+            return `
+                <div class="protocol-extra" style="margin-bottom: 20px;">
+                    <h4>${icon} ${title}</h4>
+                    <ul class="action-list">
+                        ${list.map(entry => `<li>${entry}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        };
+
+        const symptomsHtml = renderExtraList(protocol.symptoms, 'Common Symptoms', '👁️');
+        const fundoscopyHtml = renderExtraList(protocol.fundoscopyFindings, 'Fundoscopy Findings', '🔬');
+        const managementHtml = renderExtraList(protocol.management, 'Treatment & Management', '💊');
+
         const detailHtml = `
             <div class="protocol-detail" onclick="event.stopPropagation();">
                 <div class="protocol-detail-header">
@@ -3120,7 +3167,10 @@ class MLAQuizApp {
                     <h3>${protocol.name}</h3>
                     <span class="protocol-urgency ${protocol.urgency}">${protocol.urgency.toUpperCase()}</span>
                 </div>
-                
+
+                ${symptomsHtml}
+                ${fundoscopyHtml}
+
                 <div class="protocol-steps">
                     <h4>📋 Protocol Steps</h4>
                     <ol class="step-list">
@@ -3141,7 +3191,9 @@ class MLAQuizApp {
                         ${protocol.criticalActions.map(action => `<li>${action}</li>`).join('')}
                     </ul>
                 </div>
-                
+
+                ${managementHtml}
+
                 <div class="protocol-guideline">
                     <h4>📚 UK Guideline</h4>
                     <p>${protocol.ukGuideline}</p>

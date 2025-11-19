@@ -538,6 +538,45 @@ class InterpretationToolsManager {
                     'Subacute (de Quervain) thyroiditis: Transient thyrotoxicosis, raised ESR, tender thyroid, low uptake scan',
                     'Central hypothyroidism: Low/normal TSH with low T4, pituitary pathology on MRI'
                 ]
+            },
+            'sti-syndromic-guide': {
+                name: 'Sexually Transmitted Infection (STI) Syndromic Guide',
+                category: 'sexual-health',
+                type: 'syndromic',
+                steps: [
+                    'Take focussed sexual history: partners, practices, protection, PrEP/PEP use, last sexual contact',
+                    'Screen for red flags: severe pelvic/testicular pain, neuro/ocular symptoms, pregnancy, assault',
+                    'Offer full NAAT screening (urine or swabs) plus HIV, syphilis and hepatitis serology',
+                    'Provide immediate treatment for syndromic diagnoses – do not delay for test results when red flags present',
+                    'Ensure partner notification, safeguarding assessment, and follow-up test of cure when indicated'
+                ],
+                presentations: [
+                    'Urethritis: Dysuria and mucopurulent discharge – usually Chlamydia trachomatis or Neisseria gonorrhoeae',
+                    'Cervicitis/post-coital bleeding: Mucopus, friable cervix; think chlamydia/gonorrhoea ± Mycoplasma genitalium',
+                    'Genital ulceration: Painful vesicles/ulcers (HSV) vs painless chancre (syphilis). Consider chancroid/lymphogranuloma venereum in travellers.',
+                    'Pelvic inflammatory disease: Lower abdominal pain, cervical motion tenderness, fever, discharge',
+                    'Epididymo-orchitis in <35 years: Gradual unilateral testicular pain/swelling, often STI-related',
+                    'Generalised rash, mucosal lesions, hepatitis or neurological signs: Consider secondary/tertiary syphilis or HIV seroconversion'
+                ],
+                treatments: {
+                    'Uncomplicated chlamydia (non-pregnant)': 'Doxycycline 100 mg PO BD for 7 days (Azithromycin 1 g stat if adherence uncertain)',
+                    'Chlamydia in pregnancy': 'Azithromycin 1 g PO stat then 500 mg daily for 2 days or Amoxicillin 500 mg TDS for 7 days',
+                    'Uncomplicated gonorrhoea': 'Ceftriaxone 1 g IM stat PLUS Doxycycline 100 mg BD for 7 days unless chlamydia excluded',
+                    'Pelvic inflammatory disease (outpatient)': 'Ceftriaxone 1 g IM stat + Doxycycline 100 mg BD 14 days + Metronidazole 400 mg BD 14 days',
+                    'Primary/secondary syphilis': 'Benzathine penicillin G 2.4 million units IM single dose (Doxycycline 100 mg BD 14 days if penicillin-allergic)',
+                    'First episode genital herpes': 'Aciclovir 400 mg PO TDS for 5–10 days with analgesia and STI clinic follow-up',
+                    'Trichomonas vaginalis/BV': 'Metronidazole 2 g PO stat or 400 mg BD for 5–7 days; advise no alcohol during therapy'
+                },
+                redFlags: [
+                    'Pelvic or testicular pain with systemic upset – consider admission for IV therapy and torsion exclusion',
+                    'Visual disturbance, hearing loss or neurological symptoms in syphilis – urgent ophthalmology/neurology input',
+                    'Pregnancy with suspected STI – involve obstetrics and treat promptly to prevent vertical transmission'
+                ],
+                commonPathologicalFindings: [
+                    'NAAT positive but microscopy negative in asymptomatic carriers – still treat and arrange contact tracing',
+                    'Co-infection common; always test for HIV, syphilis, hepatitis B/C when any STI diagnosed',
+                    'Test of cure required for gonorrhoea, pharyngeal chlamydia, and all Mycoplasma genitalium infections'
+                ]
             }
         };
     }
@@ -567,6 +606,7 @@ class InterpretationToolsManager {
                     <button class="category-btn" data-category="urine" onclick="window.interpretationToolsManager.showInterpretationCategory('urine'); event.stopPropagation();">Urine</button>
                     <button class="category-btn" data-category="fluids" onclick="window.interpretationToolsManager.showInterpretationCategory('fluids'); event.stopPropagation();">Fluids</button>
                     <button class="category-btn" data-category="labs" onclick="window.interpretationToolsManager.showInterpretationCategory('labs'); event.stopPropagation();">Lab Tests</button>
+                    <button class="category-btn" data-category="sexual-health" onclick="window.interpretationToolsManager.showInterpretationCategory('sexual-health'); event.stopPropagation();">Sexual Health</button>
                 </div>
                 <div id="interpretation-tools-list" class="interpretation-grid"></div>
             `;
@@ -640,12 +680,22 @@ class InterpretationToolsManager {
         
         const matches = Object.keys(this.interpretationTools).filter(key => {
             const tool = this.interpretationTools[key];
+            const presentationMatch = tool.presentations && tool.presentations.some(item => item.toLowerCase().includes(query));
+            const treatmentMatch = tool.treatments && (
+                Array.isArray(tool.treatments)
+                    ? tool.treatments.some(item => item.toLowerCase().includes(query))
+                    : Object.entries(tool.treatments).some(([treatKey, treatValue]) =>
+                        treatKey.toLowerCase().includes(query) || treatValue.toLowerCase().includes(query)
+                    )
+            );
             return tool.name.toLowerCase().includes(query) ||
                    tool.category.toLowerCase().includes(query) ||
                    tool.type.toLowerCase().includes(query) ||
                    tool.steps.some(step => step.toLowerCase().includes(query)) ||
                    (tool.commonAbnormalities && tool.commonAbnormalities.some(item => item.toLowerCase().includes(query))) ||
-                   (tool.commonPathologicalFindings && tool.commonPathologicalFindings.some(item => item.toLowerCase().includes(query)));
+                   (tool.commonPathologicalFindings && tool.commonPathologicalFindings.some(item => item.toLowerCase().includes(query))) ||
+                   presentationMatch ||
+                   treatmentMatch;
         });
         
         let html = '';
@@ -830,6 +880,34 @@ class InterpretationToolsManager {
                     <h4>🔍 Common Findings</h4>
                     <ul class="findings-list">
                         ${tool.commonFindings.map(finding => `<li>${finding}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        if (tool.presentations) {
+            additionalSections += `
+                <div class="presentations-section">
+                    <h4>🩺 Common Presentations</h4>
+                    <ul class="presentations-list">
+                        ${tool.presentations.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        if (tool.treatments) {
+            const treatmentEntries = Array.isArray(tool.treatments)
+                ? tool.treatments.map(entry => ['', entry])
+                : Object.entries(tool.treatments);
+
+            additionalSections += `
+                <div class="treatment-section">
+                    <h4>💊 Recommended Treatments</h4>
+                    <ul class="treatment-list">
+                        ${treatmentEntries.map(([label, value]) =>
+                            label ? `<li><strong>${label}:</strong> ${value}</li>` : `<li>${value}</li>`
+                        ).join('')}
                     </ul>
                 </div>
             `;

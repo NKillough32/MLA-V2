@@ -221,6 +221,24 @@ export class EmergencyProtocolsManager {
         const protocol = this.emergencyProtocols[key];
         if (!protocol) return;
 
+        const toArray = (value) => {
+            if (!value) return [];
+            return Array.isArray(value) ? value.filter(Boolean) : [value];
+        };
+
+        const renderExtraSection = (items, title, icon) => {
+            const list = toArray(items);
+            if (!list.length) return '';
+            return `
+                <div class="protocol-section">
+                    <h3>${icon} ${title}</h3>
+                    <ul class="critical-actions">
+                        ${list.map(entry => `<li class="critical-action">${entry}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        };
+
         // Create modal for detailed protocol view
         const modal = document.createElement('div');
         modal.className = 'protocol-modal-overlay';
@@ -238,8 +256,11 @@ export class EmergencyProtocolsManager {
                             <span class="guideline-badge">${protocol.ukGuideline}</span>
                         </div>
                     </div>
-                    
+
                     <div class="protocol-sections">
+                        ${renderExtraSection(protocol.symptoms, 'Common Symptoms', '👁️')}
+                        ${renderExtraSection(protocol.fundoscopyFindings, 'Fundoscopy Findings', '🔬')}
+
                         <div class="protocol-section">
                             <h3>📋 Protocol Steps</h3>
                             <ol class="protocol-steps">
@@ -274,6 +295,8 @@ export class EmergencyProtocolsManager {
                             <h3>📖 UK Guideline</h3>
                             <p class="guideline-reference">${protocol.ukGuideline}</p>
                         </div>
+
+                        ${renderExtraSection(protocol.management, 'Treatment & Management', '💊')}
                     </div>
                 </div>
             </div>

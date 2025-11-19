@@ -396,6 +396,99 @@ export const emergencyProtocols = {
         ukGuideline: 'RCOG Green-top Guideline No. 52 (2016, reaffirmed 2021)',
         criticalActions: ['Early senior involvement', 'Rapid uterotonic therapy', 'Activate massive transfusion', 'Escalate to surgical control if ongoing bleeding']
     },
+    'acute-angle-closure-glaucoma': {
+        name: 'Acute Angle-Closure Glaucoma',
+        category: 'ophthalmology',
+        urgency: 'emergency',
+        symptoms: [
+            'Sudden, painful monocular visual loss with blurred vision or halos around lights',
+            'Severe frontal headache, nausea/vomiting, photophobia',
+            'Red eye with fixed mid-dilated pupil and rock-hard globe on palpation'
+        ],
+        fundoscopyFindings: [
+            'Hazy cornea and shallow anterior chamber limiting fundus view',
+            'Ciliary flush, conjunctival injection, steamy cornea',
+            'Optic disc hyperaemia or oedema once corneal oedema clears'
+        ],
+        steps: [
+            'Urgent ophthalmology referral – vision-threatening emergency',
+            'Place patient supine; avoid patching the eye',
+            'Give Acetazolamide 500mg IV/PO stat (contraindicated if severe renal failure)',
+            'Instil topical beta-blocker (Timolol 0.5%) and alpha-agonist (Apraclonidine 1%)',
+            'Once IOP <40 mmHg, give Pilocarpine 2% drops every 15 minutes for 1 hour',
+            'Consider IV Mannitol 1-2 g/kg if IOP remains high or cornea remains hazy',
+            'Arrange definitive laser peripheral iridotomy to both eyes when stable'
+        ],
+        management: [
+            'Analgesia/antiemetics while waiting for specialist review',
+            'Treat fellow eye prophylactically if anatomically narrow angle',
+            'Avoid anticholinergics and sympathomimetics until cleared by ophthalmology'
+        ],
+        drugs: ['Acetazolamide 500mg IV/PO stat', 'Timolol 0.5% drops', 'Apraclonidine 1% drops', 'Pilocarpine 2% drops', 'Mannitol 20% 1-2 g/kg IV over 30-60 min if needed'],
+        ukGuideline: 'Royal College of Ophthalmologists Acute Angle Closure pathway (2021)',
+        criticalActions: ['Lower intraocular pressure within hours', 'Urgent ophthalmology involvement', 'Plan bilateral iridotomy once IOP controlled']
+    },
+    'central-retinal-artery-occlusion': {
+        name: 'Central Retinal Artery Occlusion (CRAO)',
+        category: 'ophthalmology',
+        urgency: 'emergency',
+        symptoms: [
+            'Sudden, profound painless monocular vision loss',
+            'Relative afferent pupillary defect and pale retina',
+            'History of cardiovascular risk factors, embolic source, or giant cell arteritis symptoms'
+        ],
+        fundoscopyFindings: [
+            'Pale, oedematous retina with cherry-red spot at macula',
+            'Attenuated arteries with box-carring (segmentation) of blood column',
+            'Possible embolus at optic disc or carotid plaques on vascular imaging'
+        ],
+        steps: [
+            'Call ophthalmology/stroke team immediately – treat as retinal stroke',
+            'Check blood pressure, capillary glucose, and arrange urgent ECG',
+            'Exclude giant cell arteritis (temporal tenderness, ESR/CRP) in >50s; start IV methylprednisolone if suspected',
+            'Initiate ocular massage (10-15 seconds on/off) while awaiting specialist review',
+            'Lower intraocular pressure: Acetazolamide 500mg IV/PO, topical beta-blocker ± anterior chamber paracentesis',
+            'Arrange urgent carotid/echocardiography and stroke prevention (antiplatelet + statin)'
+        ],
+        management: [
+            'Admit for stroke work-up and secondary prevention',
+            'Start antiplatelet therapy (Aspirin 300mg loading) unless contraindicated',
+            'Consider hyperbaric oxygen or intra-arterial thrombolysis in specialist centres (<12h onset)'
+        ],
+        drugs: ['Acetazolamide 500mg IV/PO', 'Topical beta-blocker (Timolol 0.5%)', 'Aspirin 300mg loading then 75mg daily', 'IV methylprednisolone 500-1000mg if giant cell arteritis suspected'],
+        ukGuideline: 'Royal College of Ophthalmologists Retinal Artery Occlusion guideline (2020)',
+        criticalActions: ['Treat as stroke with immediate referral', 'Exclude temporal arteritis and start steroids if suspected', 'Begin secondary cardiovascular prevention']
+    },
+    'retinal-detachment-emergency': {
+        name: 'Retinal Detachment Warning & Transfer',
+        category: 'ophthalmology',
+        urgency: 'emergency',
+        symptoms: [
+            'Sudden onset flashes/floaters or shower of black spots',
+            'Peripheral field defect/“curtain” progressing centrally',
+            'Blurred or distorted vision; may follow trauma or high myopia'
+        ],
+        fundoscopyFindings: [
+            'Corrugated, elevated retina with undulating folds',
+            'Possible retinal tear or horseshoe break with vitreous haemorrhage',
+            'Shafer sign (tobacco dust) on slit-lamp exam'
+        ],
+        steps: [
+            'Advise urgent same-day ophthalmology assessment even if vision still good',
+            'Check visual acuity in each eye, pupil reactions, and document fields',
+            'Keep patient nil by mouth anticipating theatre; protect eye from further trauma',
+            'Avoid topical miotics/dilators unless instructed by ophthalmology',
+            'Arrange transport to vitreoretinal centre; provide written handover'
+        ],
+        management: [
+            'Surgical repair (pneumatic retinopexy, scleral buckle, or vitrectomy) ideally within 24 hours if macula-on',
+            'If macula already off, operate within a few days but still urgent',
+            'Advise patient to avoid flying or heavy lifting until cleared'
+        ],
+        drugs: ['Analgesia and antiemetics as required', 'Cycloplegic drops only on specialist advice'],
+        ukGuideline: 'Royal College of Ophthalmologists Retinal Detachment Standards (2018)',
+        criticalActions: ['Same-day referral to vitreoretinal service', 'Keep patient fasted for possible surgery', 'Document baseline vision/fields before transfer']
+    },
     'labour-stages-emergency': {
         name: 'Labour Stages & Obstetric Emergency Escalation',
         category: 'obstetrics',
