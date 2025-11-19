@@ -510,6 +510,46 @@ class LaddersManager {
     }
 
     /**
+     * Initialize NICE guideline ladder sub-tabs
+     */
+    initializeGuidelineTabs() {
+        try {
+            const tabsContainer = document.querySelector('.guideline-ladder-tabs');
+            if (!tabsContainer) return;
+
+            if (this._guidelineTabsHandler) {
+                try { tabsContainer.removeEventListener('click', this._guidelineTabsHandler); } catch (e) {/* ignore */}
+                this._guidelineTabsHandler = null;
+            }
+
+            this._guidelineTabsHandler = (e) => {
+                const btn = e.target.closest && e.target.closest('.guideline-tab-btn');
+                if (!btn) return;
+                e.stopPropagation();
+                const targetKey = btn.getAttribute('data-guideline');
+
+                const buttons = tabsContainer.querySelectorAll('.guideline-tab-btn');
+                const contents = document.querySelectorAll('.guideline-ladder-content');
+                buttons.forEach(b => b.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                btn.classList.add('active');
+                const targetContent = document.getElementById(`guideline-${targetKey}`);
+                if (targetContent) {
+                    targetContent.classList.add('active');
+                } else {
+                    console.warn(`⚠️ Guideline ladder content not found for key: ${targetKey}`);
+                }
+            };
+
+            tabsContainer.addEventListener('click', this._guidelineTabsHandler);
+            console.log('✅ Guideline ladder tabs handler attached');
+        } catch (err) {
+            console.error('❌ Error initializing guideline ladder tabs:', err);
+        }
+    }
+
+    /**
      * Load and display ladders panel
      */
     loadLadders() {
@@ -525,7 +565,7 @@ class LaddersManager {
                     <h2>🪜 Clinical Treatment Ladders</h2>
                     
                     <!-- Tab Navigation -->
-                    <div class="ladder-tabs">
+                    <div class="ladder-tabs" aria-label="Treatment ladder tabs">
                         <button class="ladder-tab-btn active" data-ladder="steroids">💊 Steroid Ladder</button>
                         <button class="ladder-tab-btn" data-ladder="pain">🎚️ Pain Ladder</button>
                         <button class="ladder-tab-btn" data-ladder="guidelines">🧭 NICE Ladders</button>
@@ -553,6 +593,7 @@ class LaddersManager {
             console.log('🪜 Ladders data stats:', this.getStatistics());
             setTimeout(() => {
                 this.initializeLadderTabs();
+                this.initializeGuidelineTabs();
                 // Verify tab elements exist after initialization
                 const btns = document.querySelectorAll('.ladder-tab-btn');
                 const contents = document.querySelectorAll('.ladder-tab-content');
@@ -595,7 +636,18 @@ class LaddersManager {
                         .opioid-conversion-table table { width:100%; border-collapse:collapse }
                         .opioid-conversion-table td, .opioid-conversion-table th { padding:8px; border-bottom:1px solid var(--border) }
 
-                        .guideline-ladders-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:16px; }
+                        .ladder-tabs { display:flex; gap:8px; margin-bottom:16px; border-bottom: 2px solid var(--border-color, #e0e0e0); padding: 0 6px 6px; overflow-x:auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+                        .ladder-tab-btn { flex:0 0 auto; white-space: nowrap; }
+                        .ladder-tabs::-webkit-scrollbar { height:6px; }
+                        .ladder-tabs::-webkit-scrollbar-thumb { background: var(--border-color,#d4d4d8); border-radius:999px; }
+
+                        .guideline-ladder-tabs { display:flex; gap:8px; margin: 12px 0 16px; padding: 0 6px 6px; overflow-x:auto; border-bottom:1px solid var(--border-color,#e4e4e7); scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+                        .guideline-tab-btn { background:var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-bottom:3px solid transparent; border-radius:10px; padding:10px 14px; font-weight:600; color:var(--text-primary,#1f2937); cursor:pointer; transition:all 0.2s ease; flex:0 0 auto; white-space: nowrap; }
+                        .guideline-tab-btn.active { border-color: var(--primary-color); border-bottom-color: var(--primary-color); color: var(--primary-color); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+                        .guideline-ladder-tabs::-webkit-scrollbar { height:6px; }
+                        .guideline-ladder-tabs::-webkit-scrollbar-thumb { background: var(--border-color,#d4d4d8); border-radius:999px; }
+
+                        .guideline-ladders-grid { margin-top:16px; }
                         .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; }
                         .guideline-ladder-card h4 { margin:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
                         .guideline-meta { font-size:0.9em; color:var(--secondary-text,#555); }
@@ -603,6 +655,8 @@ class LaddersManager {
                         .guideline-steps-table th, .guideline-steps-table td { padding:6px; border-bottom:1px solid var(--border-color,#e4e4e7); vertical-align:top; }
                         .guideline-steps-table th { background:var(--table-header-bg,rgba(0,0,0,0.03)); font-weight:600; }
                         .guideline-badge { display:inline-flex; align-items:center; background:var(--pill-bg,#eef2ff); color:var(--pill-text,#4338ca); border-radius:999px; padding:2px 10px; font-size:0.85em; }
+                        .guideline-ladder-content { display:none; }
+                        .guideline-ladder-content.active { display:block; }
 
                         @media (max-width: 640px) {
                             .ladder-step { grid-template-columns: 48px 1fr; }
@@ -784,8 +838,14 @@ class LaddersManager {
         const laddersArr = Array.isArray(guidelineData.ladders) ? guidelineData.ladders : [];
         const pearls = Array.isArray(guidelineData.clinicalPearls) ? guidelineData.clinicalPearls : [];
 
-        const ladderCards = laddersArr.map(ladder => `
-            <article class="guideline-ladder-card" id="ladder-${ladder.key}">
+        const ladderTabs = laddersArr.map((ladder, idx) => `
+            <button class="guideline-tab-btn ${idx === 0 ? 'active' : ''}" data-guideline="${ladder.key}">
+                ${ladder.title}
+            </button>
+        `).join('');
+
+        const ladderCards = laddersArr.map((ladder, idx) => `
+            <article class="guideline-ladder-card guideline-ladder-content ${idx === 0 ? 'active' : ''}" id="guideline-${ladder.key}">
                 <h4>${ladder.title} <span class="guideline-badge">${ladder.reference}</span></h4>
                 <p class="guideline-meta">${ladder.summary}</p>
                 ${Array.isArray(ladder.steps) ? `
@@ -819,6 +879,9 @@ class LaddersManager {
             <div class="ladder-section">
                 <h3>🧭 NICE Clinical Treatment Ladders</h3>
                 <p class="ladder-intro">${guidelineData.description || 'Concise, guideline-aligned stepwise escalation pathways for common long-term conditions.'}</p>
+                <div class="guideline-ladder-tabs" aria-label="NICE ladder list">
+                    ${ladderTabs}
+                </div>
                 <div class="guideline-ladders-grid">
                     ${ladderCards}
                 </div>
