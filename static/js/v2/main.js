@@ -1535,28 +1535,31 @@ class MLAQuizApp {
 
         // Create modern lab interface with search
         let html = `
-            <div class="draw-order-card" style="border: 1px solid var(--border); border-radius: 16px; padding: 20px; background: var(--card-bg); margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
-                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-                    <span style="font-size: 1.2em;">📌</span>
-                    <div>
-                        <h3 style="margin: 0; font-size: 1.1em; color: var(--text-primary);">Venipuncture Draw Order</h3>
-                        <p style="margin: 4px 0 0 0; font-size: 0.9em; color: var(--text-secondary);">Blood cultures go first when ordered, followed by tubes in the sequence below.</p>
+            <div class="draw-order-wrapper">
+                <button type="button" class="draw-order-toggle" id="draw-order-toggle" aria-expanded="false">
+                    <div class="draw-order-toggle-text">
+                        <span class="draw-order-title">📌 Venipuncture Draw Order</span>
+                        <span class="draw-order-subtitle">Tap to view the recommended tube sequence</span>
                     </div>
-                </div>
-                <div class="draw-order-list" style="display: flex; flex-direction: column; gap: 10px;">
-                    ${drawOrderGuide.map((tube, index) => `
-                        <div class="draw-order-row" style="display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border-radius: 12px; background: var(--bg-secondary);">
-                            <div style="width: 32px; height: 32px; border-radius: 8px; background: ${tube.color}; flex-shrink: 0;"></div>
-                            <div style="flex: 1;">
-                                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                                    <strong style="color: var(--text-primary);">${index + 1}. ${tube.name}</strong>
-                                    <span style="font-size: 0.85em; color: var(--text-secondary);">${tube.colorLabel}</span>
+                    <span class="draw-order-chevron" aria-hidden="true">▼</span>
+                </button>
+                <div class="draw-order-card" id="draw-order-card" hidden>
+                    <p class="draw-order-intro">Blood cultures go first when ordered, followed by tubes in the sequence below.</p>
+                    <div class="draw-order-list">
+                        ${drawOrderGuide.map((tube, index) => `
+                            <div class="draw-order-row">
+                                <div class="draw-order-color" style="background: ${tube.color};"></div>
+                                <div class="draw-order-detail">
+                                    <div class="draw-order-meta">
+                                        <strong>${index + 1}. ${tube.name}</strong>
+                                        <span>${tube.colorLabel}</span>
+                                    </div>
+                                    <div class="draw-order-tests">${tube.tests}</div>
+                                    ${tube.note ? `<div class="draw-order-note">${tube.note}</div>` : ''}
                                 </div>
-                                <div style="margin-top: 4px; color: var(--text-primary); font-size: 0.92em; line-height: 1.4;">${tube.tests}</div>
-                                ${tube.note ? `<div style="margin-top: 4px; font-size: 0.85em; color: var(--text-secondary);">${tube.note}</div>` : ''}
                             </div>
-                        </div>
-                    `).join('')}
+                        `).join('')}
+                    </div>
                 </div>
             </div>
             <div class="search-container">
@@ -1584,6 +1587,19 @@ class MLAQuizApp {
         // Add search functionality
         const searchInput = document.getElementById('lab-search');
         const searchBtn = document.getElementById('lab-search-btn');
+        const drawOrderToggle = document.getElementById('draw-order-toggle');
+        const drawOrderCard = document.getElementById('draw-order-card');
+
+        if (drawOrderToggle && drawOrderCard) {
+            drawOrderToggle.addEventListener('click', () => {
+                const expanded = drawOrderToggle.getAttribute('aria-expanded') === 'true';
+                drawOrderToggle.setAttribute('aria-expanded', (!expanded).toString());
+                drawOrderToggle.classList.toggle('open', !expanded);
+                drawOrderCard.hidden = expanded;
+                drawOrderCard.classList.toggle('open', !expanded);
+            });
+        }
+
         if (searchInput && searchBtn) {
             const performSearch = () => {
                 const query = searchInput.value.toLowerCase();
@@ -2696,7 +2712,7 @@ class MLAQuizApp {
         };
         
         return `
-            <div class="triad-card" style="border-left: 4px solid ${urgencyColors[triad.urgency]}">
+            <button type="button" class="triad-card" style="border-left: 4px solid ${urgencyColors[triad.urgency]}" aria-label="${triad.name} triad for ${triad.condition}">
                 <div class="triad-header">
                     <h3>
                         ${categoryIcons[triad.category] || '🔺'} ${triad.name}
@@ -2706,31 +2722,31 @@ class MLAQuizApp {
                     </h3>
                     <div class="condition-name">${triad.condition}</div>
                 </div>
-                
+
                 <div class="triad-components">
                     <h4>🔺 Classic Triad:</h4>
                     <div class="components-list">
                         ${triad.components.map(comp => `<span class="component-item">${comp}</span>`).join('')}
                     </div>
                 </div>
-                
+
                 <div class="triad-details">
                     <div class="detail-section">
                         <h4>🔬 Mechanism:</h4>
                         <p>${triad.mechanism}</p>
                     </div>
-                    
+
                     <div class="detail-section">
                         <h4>🎯 Clinical Significance:</h4>
                         <p>${triad.clinicalSignificance}</p>
                     </div>
-                    
+
                     <div class="detail-section uk-guidelines">
                         <h4>🇬🇧 UK Guidelines:</h4>
                         <p>${triad.ukGuidelines}</p>
                     </div>
                 </div>
-            </div>
+            </button>
         `;
     }
 
