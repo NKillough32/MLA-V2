@@ -713,9 +713,18 @@ class LaddersManager {
             const ladderTabsHtml = [
                 { key: 'steroids', label: '💊 Steroid Ladder', active: true },
                 { key: 'pain', label: '🎚️ Pain Ladder' },
-                { key: 'guidelines', label: '🧭 NICE Treatment Pathways' }
+                ...guidelineLadders.map(ladder => ({
+                    key: ladder.key,
+                    label: `🧭 ${ladder.shortTitle || ladder.title || ladder.key}`
+                }))
             ].map(tab => `
                 <button class="ladder-tab-btn${tab.active ? ' active' : ''}" data-ladder="${tab.key}">${tab.label}</button>
+            `).join('');
+
+            const guidelineSectionsHtml = guidelineLadders.map(ladder => `
+                <div id="${ladder.key}-ladder" class="ladder-tab-content">
+                    ${this.renderGuidelineLadder(ladder)}
+                </div>
             `).join('');
 
             container.innerHTML = `
@@ -737,9 +746,7 @@ class LaddersManager {
                         ${this.renderPainLadder()}
                     </div>
 
-                    <div id="guidelines-ladder" class="ladder-tab-content">
-                        ${this.renderGuidelineLadders()}
-                    </div>
+                    ${guidelineSectionsHtml}
                 </div>
             `;
             
@@ -1128,40 +1135,12 @@ class LaddersManager {
         const guidelineData = this.laddersData.guidelines || {};
         const laddersArr = Array.isArray(guidelineData.ladders) ? guidelineData.ladders : [];
 
-        if (!laddersArr.length) {
-            return `
-                <div class="ladder-section">
-                    <h3>🧭 NICE Clinical Treatment Ladders</h3>
-                    <p class="ladder-intro">No guideline ladders available.</p>
-                </div>
-            `;
-        }
-
-        const tabButtonsHtml = laddersArr.map((ladder, idx) => `
-            <button
-                class="guideline-tab-btn${idx === 0 ? ' active' : ''}"
-                data-guideline="${ladder.key}"
-                type="button"
-            >
-                ${ladder.shortTitle || ladder.title || ladder.key}
-            </button>
-        `).join('');
-
-        const guidelineSectionsHtml = laddersArr.map((ladder, idx) => `
-            <div id="guideline-${ladder.key}" class="guideline-ladder-content${idx === 0 ? ' active' : ''}">
-                ${this.renderGuidelineLadder(ladder)}
-            </div>
-        `).join('');
-
         return `
             <div class="ladder-section">
                 <h3>🧭 NICE Clinical Treatment Ladders</h3>
                 <p class="ladder-intro">${guidelineData.description || 'Concise, guideline-aligned stepwise escalation pathways for common long-term conditions.'}</p>
-                <div class="guideline-ladder-tabs" role="tablist" aria-label="Guideline ladders">
-                    ${tabButtonsHtml}
-                </div>
-                <div class="guideline-ladders-grid">
-                    ${guidelineSectionsHtml}
+                <div class="guideline-ladders-list">
+                    ${laddersArr.map(ladder => this.renderGuidelineLadder(ladder)).join('')}
                 </div>
             </div>
         `;
