@@ -1166,7 +1166,7 @@ class LaddersManager {
             targetButton.classList.add('active');
             targetContent.classList.add('active');
             this.activeLadder = ladderType;
-            console.log(`🪜 Switched to ${ladderType} ladder`);
+            console.log(`🪜 Switched to ${ladderType} ladders`);
         }
     }
 
