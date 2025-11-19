@@ -9194,9 +9194,21 @@
             .ladder-tabs {
                 display: flex;
                 gap: 8px;
-                margin-bottom: 24px;
+                margin-bottom: 16px;
                 border-bottom: 2px solid var(--border-color, #e0e0e0);
-                padding-bottom: 0;
+                padding: 0 8px 8px;
+                overflow-x: auto;
+                scrollbar-width: thin;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .ladder-tabs::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            .ladder-tabs::-webkit-scrollbar-thumb {
+                background: var(--border-color, #d4d4d8);
+                border-radius: 999px;
             }
 
             .ladder-tab-btn {
@@ -9211,6 +9223,8 @@
                 transition: all 0.3s ease;
                 position: relative;
                 bottom: -2px;
+                flex: 0 0 auto;
+                white-space: nowrap;
             }
 
             .ladder-tab-btn:hover {
@@ -9230,6 +9244,55 @@
             }
 
             .ladder-tab-content.active {
+                display: block;
+            }
+
+            .guideline-ladder-tabs {
+                display: flex;
+                gap: 8px;
+                margin: 12px 0 16px;
+                padding: 0 6px 6px;
+                overflow-x: auto;
+                border-bottom: 1px solid var(--border-color, #e4e4e7);
+                scrollbar-width: thin;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .guideline-ladder-tabs::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            .guideline-ladder-tabs::-webkit-scrollbar-thumb {
+                background: var(--border-color, #d4d4d8);
+                border-radius: 999px;
+            }
+
+            .guideline-tab-btn {
+                background: var(--card-bg);
+                border: 1px solid var(--border-color, #e4e4e7);
+                border-bottom: 3px solid transparent;
+                border-radius: 10px;
+                padding: 10px 14px;
+                font-weight: 600;
+                color: var(--text-primary, #1f2937);
+                cursor: pointer;
+                transition: all 0.2s ease;
+                flex: 0 0 auto;
+                white-space: nowrap;
+            }
+
+            .guideline-tab-btn.active {
+                border-color: var(--primary-color);
+                border-bottom-color: var(--primary-color);
+                color: var(--primary-color);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            }
+
+            .guideline-ladder-content {
+                display: none;
+            }
+
+            .guideline-ladder-content.active {
                 display: block;
             }
 
