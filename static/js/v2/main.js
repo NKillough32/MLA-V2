@@ -1493,8 +1493,72 @@ class MLAQuizApp {
             return;
         }
         
+        const drawOrderGuide = [
+            {
+                name: 'Blood Cultures',
+                colorLabel: 'Aerobic/Anaerobic bottles',
+                color: '#0f172a',
+                tests: 'Sepsis workup, microbiology cultures',
+                note: 'Always collected first when ordered to prevent contamination.'
+            },
+            {
+                name: 'Light Blue',
+                colorLabel: 'Sodium citrate',
+                color: '#38bdf8',
+                tests: 'Coagulation studies (PT/INR, aPTT, D-dimer)'
+            },
+            {
+                name: 'Red / Gold (SST)',
+                colorLabel: 'Serum separator',
+                color: '#f97316',
+                tests: 'Chemistry, serology, drug levels'
+            },
+            {
+                name: 'Green',
+                colorLabel: 'Heparin',
+                color: '#10b981',
+                tests: 'Plasma chemistry, troponin, ammonia'
+            },
+            {
+                name: 'Lavender / Pink',
+                colorLabel: 'EDTA',
+                color: '#a855f7',
+                tests: 'Full blood count, ESR, crossmatch'
+            },
+            {
+                name: 'Grey',
+                colorLabel: 'Fluoride oxalate',
+                color: '#94a3b8',
+                tests: 'Glucose, lactate'
+            }
+        ];
+
         // Create modern lab interface with search
         let html = `
+            <div class="draw-order-card" style="border: 1px solid var(--border); border-radius: 16px; padding: 20px; background: var(--card-bg); margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                    <span style="font-size: 1.2em;">📌</span>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.1em; color: var(--text-primary);">Venipuncture Draw Order</h3>
+                        <p style="margin: 4px 0 0 0; font-size: 0.9em; color: var(--text-secondary);">Blood cultures go first when ordered, followed by tubes in the sequence below.</p>
+                    </div>
+                </div>
+                <div class="draw-order-list" style="display: flex; flex-direction: column; gap: 10px;">
+                    ${drawOrderGuide.map((tube, index) => `
+                        <div class="draw-order-row" style="display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border-radius: 12px; background: var(--bg-secondary);">
+                            <div style="width: 32px; height: 32px; border-radius: 8px; background: ${tube.color}; flex-shrink: 0;"></div>
+                            <div style="flex: 1;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                                    <strong style="color: var(--text-primary);">${index + 1}. ${tube.name}</strong>
+                                    <span style="font-size: 0.85em; color: var(--text-secondary);">${tube.colorLabel}</span>
+                                </div>
+                                <div style="margin-top: 4px; color: var(--text-primary); font-size: 0.92em; line-height: 1.4;">${tube.tests}</div>
+                                ${tube.note ? `<div style="margin-top: 4px; font-size: 0.85em; color: var(--text-secondary);">${tube.note}</div>` : ''}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
             <div class="search-container">
                 <input type="text" id="lab-search" placeholder="Search lab tests..." class="tool-search">
                 <button id="lab-search-btn">🔍</button>
