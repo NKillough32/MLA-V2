@@ -9,14 +9,33 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 
-const ASSETS_TO_HASH = [
-  '/static/js/v2/main.js'
-];
+const TARGETS_FILE = path.join(__dirname, 'asset-hash-targets.json');
+
+async function loadAssetTargets() {
+  try {
+    const fileContents = await fs.readFile(TARGETS_FILE, 'utf-8');
+    const parsed = JSON.parse(fileContents);
+    if (!Array.isArray(parsed)) {
+      throw new Error('Asset target file must contain an array');
+    }
+    return parsed;
+  } catch (error) {
+    console.warn(`Unable to read asset targets from ${TARGETS_FILE}. Falling back to default list.`, error);
+    return [
+      '/static/js/v2/main.js'
+    ];
+  }
+}
 
 const MANIFEST_PATH = path.join(projectRoot, 'static', 'asset-manifest.json');
 
 (async () => {
   try {
+    const ASSETS_TO_HASH = await loadAssetTargets();
+    if (!ASSETS_TO_HASH.length) {
+      console.warn('No asset targets defined. Nothing to hash.');
+      return;
+    }
     const manifestEntries = {};
 
     for (const asset of ASSETS_TO_HASH) {
