@@ -19,7 +19,7 @@ class LaddersManager {
         this.activeLadder = 'steroids';
         this.laddersData = this.initializeLaddersData();
         
-        console.log('🪜 LaddersManager initialized with steroid and pain ladders');
+        console.log('🪜 LaddersManager initialized with Clinical Treatment Ladders');
     }
 
     /**
