@@ -6,9 +6,10 @@
 const CACHE_NAME = 'mla-quiz-v1';
 const STATIC_CACHE = 'mla-quiz-static-v1';
 const RUNTIME_CACHE = 'mla-quiz-runtime-v1';
+const ASSET_MANIFEST_URL = '/static/asset-manifest.json';
 
 // Files to cache immediately
-const STATIC_FILES = [
+const BASE_STATIC_FILES = [
     '/',
     '/manifest.json',
     '/static/js/v2/main.js',
@@ -16,11 +17,40 @@ const STATIC_FILES = [
     '/static/js/v2/modules/StorageManager.js',
     '/static/js/v2/modules/EventBus.js',
     '/static/js/v2/modules/Constants.js',
-    '/static/assets/pdf_index.json'
+    '/static/assets/pdf_index.json',
+    ASSET_MANIFEST_URL
     // Icons are inline SVG data URIs, no need to cache external files
     // V2 modules load dynamically, don't pre-cache
     // V1 app.js removed as we're using V2 system
 ];
+
+let assetManifest = {};
+let resolvedStaticFiles = BASE_STATIC_FILES.slice();
+let staticFilesSet = new Set(resolvedStaticFiles);
+async function refreshAssetManifest() {
+    try {
+        const response = await fetch(ASSET_MANIFEST_URL, { cache: 'no-store' });
+        if (response && response.ok) {
+            assetManifest = await response.json();
+        } else {
+            assetManifest = {};
+        }
+    } catch (error) {
+        console.warn('Asset manifest unavailable, falling back to base paths', error);
+        assetManifest = {};
+    }
+
+    resolvedStaticFiles = BASE_STATIC_FILES.map(resolveStaticAssetPath);
+    staticFilesSet = new Set(resolvedStaticFiles);
+}
+
+function resolveStaticAssetPath(pathname) {
+    return assetManifest[pathname] || pathname;
+}
+
+function getStaticFiles() {
+    return resolvedStaticFiles;
+}
 
 // API endpoints to cache
 const API_CACHE_PATTERNS = [
@@ -38,10 +68,12 @@ self.addEventListener('install', (event) => {
     event.waitUntil(
         Promise.all([
             caches.open(STATIC_CACHE).then(async (cache) => {
+                await refreshAssetManifest();
                 console.log('Caching static files');
                 // Cache files individually and handle special cases (manifest may require credentials)
                 const results = [];
-                for (const file of STATIC_FILES) {
+                const filesToCache = getStaticFiles();
+                for (const file of filesToCache) {
                     try {
                         if (file === '/manifest.json') {
                             // Some hosts may protect the manifest or require cookies/auth; use fetch with credentials
@@ -171,7 +203,7 @@ self.addEventListener('fetch', (event) => {
     }
 
     // Handle static files (CSS, JS, images) - cache-first as before
-    if (STATIC_FILES.some(file => url.pathname === file) || url.pathname.startsWith('/static/')) {
+    if (staticFilesSet.has(url.pathname) || url.pathname.startsWith('/static/')) {
         event.respondWith(
             caches.match(request).then((cachedResponse) => {
                 if (cachedResponse) {
@@ -611,7 +643,8 @@ self.addEventListener('message', (event) => {
 async function updateCaches() {
     try {
         const cache = await caches.open(STATIC_CACHE);
-        await cache.addAll(STATIC_FILES);
+        await refreshAssetManifest();
+        await cache.addAll(getStaticFiles());
         console.log('Cache updated successfully');
     } catch (error) {
         console.error('Cache update failed:', error);

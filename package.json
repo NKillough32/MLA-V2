@@ -6,7 +6,7 @@
   "scripts": {
     "start": "python api/index.py",
     "dev": "python api/index.py",
-    "build": "echo 'V2 uses native ES6 modules - no build step required'",
+    "build": "node scripts/hash-assets.mjs",
     "deploy": "vercel --prod",
     "test": "echo 'No tests specified'"
   },
