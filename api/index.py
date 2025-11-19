@@ -36,18 +36,101 @@ ASSET_TARGETS_FILE = PROJECT_ROOT / 'scripts' / 'asset-hash-targets.json'
 
 
 def _load_asset_targets() -> List[str]:
-    """Load the list of asset paths that should be fingerprinted."""
+    """Load and normalize the list of asset paths that should be fingerprinted."""
     try:
         with ASSET_TARGETS_FILE.open('r', encoding='utf-8') as fp:
             data = json.load(fp)
-        if not isinstance(data, list):
-            raise ValueError('Asset targets file must contain a list of paths')
-        return data
+        normalized = _normalize_asset_targets(data)
+        if not normalized:
+            raise ValueError('Asset targets configuration did not resolve to any files')
+        return normalized
     except FileNotFoundError:
         logger.warning('Asset targets file %s not found; defaulting to main bundle only.', ASSET_TARGETS_FILE)
     except Exception as exc:  # pragma: no cover - defensive logging
         logger.warning('Unable to read asset targets: %s', exc)
     return ['/static/js/v2/main.js']
+
+
+def _normalize_asset_targets(config: Any) -> List[str]:
+    if isinstance(config, list):
+        return [_normalize_public_path(entry) for entry in config]
+
+    if not isinstance(config, dict):
+        raise ValueError('Asset target configuration must be a list or object')
+
+    files = config.get('files') or []
+    directories = config.get('directories') or []
+    resolved: Dict[str, None] = {}
+
+    for entry in files:
+        resolved[_normalize_public_path(entry)] = None
+
+    for directory_entry in directories:
+        for expanded in _expand_directory_entry(directory_entry):
+            resolved[expanded] = None
+
+    return sorted(resolved.keys())
+
+
+def _normalize_public_path(value: Any) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValueError(f'Invalid asset path entry: {value!r}')
+    return value if value.startswith('/') else f'/{value}'
+
+
+def _expand_directory_entry(entry: Any) -> List[str]:
+    descriptor = _normalize_directory_descriptor(entry)
+    relative = descriptor['path'].lstrip('/')
+    base_path = PROJECT_ROOT / relative
+
+    if not base_path.exists():
+        logger.warning('Configured asset directory %s does not exist', base_path)
+        return []
+
+    if not base_path.is_dir():
+        logger.warning('Configured asset directory %s is not a directory', base_path)
+        return []
+
+    files: List[str] = []
+    iterator = base_path.rglob('*') if descriptor['recursive'] else base_path.iterdir()
+    for candidate in iterator:
+        if candidate.is_dir():
+            continue
+        if not candidate.is_file():
+            continue
+        if descriptor['extensions']:
+            if candidate.suffix.lower() not in descriptor['extensions']:
+                continue
+        files.append('/' + candidate.relative_to(PROJECT_ROOT).as_posix())
+
+    return files
+
+
+def _normalize_directory_descriptor(entry: Any) -> Dict[str, Any]:
+    if isinstance(entry, str):
+        return {
+            'path': entry,
+            'recursive': True,
+            'extensions': []
+        }
+
+    if not isinstance(entry, dict) or 'path' not in entry:
+        raise ValueError(f'Invalid directory configuration: {entry!r}')
+
+    extensions = []
+    for ext in entry.get('extensions') or []:
+        if not isinstance(ext, str) or not ext:
+            continue
+        normalized = ext.lower()
+        if not normalized.startswith('.'):
+            normalized = f'.{normalized}'
+        extensions.append(normalized)
+
+    return {
+        'path': entry['path'],
+        'recursive': bool(entry.get('recursive', True)),
+        'extensions': extensions
+    }
 
 
 ASSET_TARGETS = _load_asset_targets()

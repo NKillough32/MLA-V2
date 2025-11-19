@@ -15,16 +15,125 @@ async function loadAssetTargets() {
   try {
     const fileContents = await fs.readFile(TARGETS_FILE, 'utf-8');
     const parsed = JSON.parse(fileContents);
-    if (!Array.isArray(parsed)) {
-      throw new Error('Asset target file must contain an array');
+    const normalized = await normalizeAssetTargets(parsed);
+    if (!normalized.length) {
+      throw new Error('Asset target configuration did not resolve to any files.');
     }
-    return parsed;
+    return normalized;
   } catch (error) {
     console.warn(`Unable to read asset targets from ${TARGETS_FILE}. Falling back to default list.`, error);
     return [
       '/static/js/v2/main.js'
     ];
   }
+}
+
+async function normalizeAssetTargets(rawConfig) {
+  if (Array.isArray(rawConfig)) {
+    return rawConfig.map(normalizePublicPath);
+  }
+
+  if (!rawConfig || typeof rawConfig !== 'object') {
+    throw new Error('Asset target file must contain either an array or an object configuration.');
+  }
+
+  const { files = [], directories = [] } = rawConfig;
+  const resolved = new Set();
+
+  for (const entry of files) {
+    resolved.add(normalizePublicPath(entry));
+  }
+
+  for (const directoryEntry of directories) {
+    const expanded = await expandDirectoryEntry(directoryEntry);
+    expanded.forEach((assetPath) => resolved.add(assetPath));
+  }
+
+  return Array.from(resolved);
+}
+
+function normalizePublicPath(value) {
+  if (typeof value !== 'string' || !value.trim()) {
+    throw new Error(`Invalid asset path entry: ${value}`);
+  }
+  return value.startsWith('/') ? value : `/${value}`;
+}
+
+async function expandDirectoryEntry(entry) {
+  const descriptor = normalizeDirectoryDescriptor(entry);
+  const relativeDir = descriptor.path.replace(/^\//, '');
+  const absoluteDir = path.join(projectRoot, relativeDir);
+  let stats;
+  try {
+    stats = await fs.stat(absoluteDir);
+  } catch (error) {
+    throw new Error(`Missing asset directory: ${descriptor.path} (${absoluteDir})`);
+  }
+
+  if (!stats.isDirectory()) {
+    throw new Error(`Configured directory ${descriptor.path} (${absoluteDir}) is not a directory`);
+  }
+
+  const collected = [];
+  await walkDirectory(absoluteDir, descriptor, collected);
+  return collected;
+}
+
+async function walkDirectory(currentDir, descriptor, collector) {
+  const entries = await fs.readdir(currentDir, { withFileTypes: true });
+  await Promise.all(entries.map(async (entry) => {
+    const entryPath = path.join(currentDir, entry.name);
+    if (entry.isDirectory()) {
+      if (descriptor.recursive !== false) {
+        await walkDirectory(entryPath, descriptor, collector);
+      }
+      return;
+    }
+
+    if (!entry.isFile()) {
+      return;
+    }
+
+    if (descriptor.extensions.length) {
+      const ext = path.extname(entry.name).toLowerCase();
+      if (!descriptor.extensions.includes(ext)) {
+        return;
+      }
+    }
+
+    const relativePath = path.relative(projectRoot, entryPath).split(path.sep).join('/');
+    collector.push(`/${relativePath}`);
+  }));
+}
+
+function normalizeDirectoryDescriptor(entry) {
+  if (!entry) {
+    throw new Error('Directory configuration entries must define a path');
+  }
+
+  if (typeof entry === 'string') {
+    return {
+      path: entry,
+      recursive: true,
+      extensions: []
+    };
+  }
+
+  if (typeof entry !== 'object' || !entry.path) {
+    throw new Error(`Invalid directory configuration: ${JSON.stringify(entry)}`);
+  }
+
+  const extensions = Array.isArray(entry.extensions)
+    ? entry.extensions
+        .filter(Boolean)
+        .map((ext) => ext.startsWith('.') ? ext.toLowerCase() : `.${ext.toLowerCase()}`)
+    : [];
+
+  return {
+    path: entry.path,
+    recursive: entry.recursive !== false,
+    extensions
+  };
 }
 
 const MANIFEST_PATH = path.join(projectRoot, 'static', 'asset-manifest.json');
