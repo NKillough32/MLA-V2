@@ -144,6 +144,7 @@ class LaddersManager {
                     {
                         key: 'asthma',
                         title: 'Asthma (Adults & Children) – Step-Up/Step-Down',
+                        shortTitle: 'Asthma Step-Up/Down',
                         reference: 'NICE NG245 / BTS-SIGN 2024',
                         summary: 'Progress from reliever-only therapy to maintenance-and-reliever treatment, then add-on controllers and biologics while reviewing inhaler technique and adherence at each step.',
                         steps: [
@@ -157,6 +158,7 @@ class LaddersManager {
                     {
                         key: 'copd',
                         title: 'COPD Stepwise Pharmacological Escalation',
+                        shortTitle: 'COPD Escalation',
                         reference: 'NICE NG115 (2023 update)',
                         summary: 'Escalate based on breathlessness/exacerbation risk, guided by eosinophil count and inhaler optimisation.',
                         steps: [
@@ -170,6 +172,7 @@ class LaddersManager {
                     {
                         key: 'hfref',
                         title: 'Heart Failure with Reduced EF – Disease-Modifying Core',
+                        shortTitle: 'HFrEF Optimisation',
                         reference: 'NICE NG106 (2024 surveillance)',
                         summary: 'Initiate foundational quadruple therapy promptly, titrating every 2–4 weeks to target doses before considering devices or advanced options.',
                         steps: [
@@ -183,6 +186,7 @@ class LaddersManager {
                     {
                         key: 'hypertension',
                         title: 'Hypertension Stepwise Therapy',
+                        shortTitle: 'Hypertension',
                         reference: 'NICE NG136 (2023 update)',
                         summary: 'Tailor first-line agent by age/ethnicity, then combine complementary mechanisms before considering resistant hypertension strategies.',
                         steps: [
@@ -195,6 +199,7 @@ class LaddersManager {
                     {
                         key: 't2dm',
                         title: 'Type 2 Diabetes – First-line to Intensification',
+                        shortTitle: 'Type 2 Diabetes',
                         reference: 'NICE NG28 (2024 amendment)',
                         summary: 'Prioritise cardiovascular and renal protection with SGLT2 inhibitors for high-risk groups, layering therapies according to HbA1c and comorbidity burden.',
                         steps: [
@@ -208,6 +213,7 @@ class LaddersManager {
                     {
                         key: 'mental-health',
                         title: 'Depression & Anxiety – Stepped Care',
+                        shortTitle: 'Depression & Anxiety',
                         reference: 'NICE NG222 / CG113',
                         summary: 'Match intervention intensity to symptom severity, escalating to combined pharmacological and psychological input for complex cases.',
                         steps: [
@@ -220,6 +226,7 @@ class LaddersManager {
                     {
                         key: 'epilepsy',
                         title: 'Epilepsy – Antiseizure Medication Pathway',
+                        shortTitle: 'Epilepsy ASM Pathway',
                         reference: 'NICE NG217 (2022)',
                         summary: 'Optimise monotherapy before combining agents; involve tertiary services for refractory epilepsy or surgical evaluation.',
                         steps: [
@@ -232,6 +239,7 @@ class LaddersManager {
                     {
                         key: 'osteoporosis',
                         title: 'Osteoporosis Management Ladder',
+                        shortTitle: 'Osteoporosis',
                         reference: 'NICE NG226 (2023)',
                         summary: 'Stratify fracture risk, optimise calcium/vitamin D, and escalate antiresorptive/anabolic therapy with specialist input for very high-risk cohorts.',
                         steps: [
@@ -245,6 +253,7 @@ class LaddersManager {
                     {
                         key: 'chronic-pain',
                         title: 'Chronic Primary Pain (Non-cancer) Measures',
+                        shortTitle: 'Chronic Primary Pain',
                         reference: 'NICE NG193 (2021)',
                         summary: 'Emphasise non-pharmacological management, reserving medicines and interventional options for carefully selected neuropathic presentations.',
                         steps: [
@@ -257,6 +266,7 @@ class LaddersManager {
                     {
                         key: 'ckd',
                         title: 'Chronic Kidney Disease Intervention Algorithm',
+                        shortTitle: 'CKD Intervention',
                         reference: 'NICE NG203 (2021)',
                         summary: 'Slow progression through renoprotective drugs, cardiovascular risk reduction, and timely referral for advanced therapies.',
                         steps: [
@@ -269,6 +279,7 @@ class LaddersManager {
                     {
                         key: 'alcohol',
                         title: 'Alcohol Dependence – Stepped Interventions',
+                        shortTitle: 'Alcohol Dependence',
                         reference: 'NICE CG115',
                         summary: 'Start with identification and brief advice, progressing to pharmacological support or inpatient detox according to dependence severity.',
                         steps: [
@@ -281,6 +292,7 @@ class LaddersManager {
                     {
                         key: 'smoking',
                         title: 'Smoking Cessation Ladder',
+                        shortTitle: 'Smoking Cessation',
                         reference: 'NICE NG209 (2021)',
                         summary: 'Combine very brief advice with behavioural support and pharmacotherapy; escalate to specialist services for complex cases.',
                         steps: [
@@ -515,7 +527,11 @@ class LaddersManager {
     initializeGuidelineTabs() {
         try {
             const tabsContainer = document.querySelector('.guideline-ladder-tabs');
-            if (!tabsContainer) return;
+            if (!tabsContainer) {
+                this._guidelineTabsHandler = null;
+                console.log('ℹ️ Guideline ladders rendered in stacked layout (no tabs to initialise).');
+                return;
+            }
 
             if (this._guidelineTabsHandler) {
                 try { tabsContainer.removeEventListener('click', this._guidelineTabsHandler); } catch (e) {/* ignore */}
@@ -838,52 +854,44 @@ class LaddersManager {
         const laddersArr = Array.isArray(guidelineData.ladders) ? guidelineData.ladders : [];
         const pearls = Array.isArray(guidelineData.clinicalPearls) ? guidelineData.clinicalPearls : [];
 
-        const ladderTabs = laddersArr.map((ladder, idx) => `
-            <button class="guideline-tab-btn ${idx === 0 ? 'active' : ''}" data-guideline="${ladder.key}">
-                ${ladder.title}
-            </button>
-        `).join('');
-
-        const ladderCards = laddersArr.map((ladder, idx) => `
-            <article class="guideline-ladder-card guideline-ladder-content ${idx === 0 ? 'active' : ''}" id="guideline-${ladder.key}">
-                <h4>${ladder.title} <span class="guideline-badge">${ladder.reference}</span></h4>
-                <p class="guideline-meta">${ladder.summary}</p>
-                ${Array.isArray(ladder.steps) ? `
-                    <div class="guideline-table-wrapper">
-                        <table class="guideline-steps-table">
-                            <thead>
-                                <tr>
-                                    <th>Stage</th>
-                                    <th>When to escalate</th>
-                                    <th>Therapy</th>
-                                    <th>Key notes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${ladder.steps.map(step => `
-                                    <tr>
-                                        <td><strong>${step.stage}</strong></td>
-                                        <td>${step.trigger}</td>
-                                        <td>${step.therapy}</td>
-                                        <td>${step.notes || ''}</td>
-                                    </tr>
-                                `).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-                ` : ''}
-            </article>
-        `).join('');
-
         return `
             <div class="ladder-section">
                 <h3>🧭 NICE Clinical Treatment Ladders</h3>
                 <p class="ladder-intro">${guidelineData.description || 'Concise, guideline-aligned stepwise escalation pathways for common long-term conditions.'}</p>
-                <div class="guideline-ladder-tabs" aria-label="NICE ladder list">
-                    ${ladderTabs}
-                </div>
-                <div class="guideline-ladders-grid">
-                    ${ladderCards}
+                <div class="guideline-ladders-list">
+                    ${laddersArr.map(ladder => `
+                        <article class="guideline-ladder-card" id="guideline-${ladder.key}">
+                            <div class="guideline-ladder-header">
+                                <h4>${ladder.shortTitle || ladder.title}</h4>
+                                <span class="guideline-badge">${ladder.reference}</span>
+                            </div>
+                            <p class="guideline-meta">${ladder.summary}</p>
+                            ${Array.isArray(ladder.steps) ? `
+                                <div class="guideline-table-wrapper">
+                                    <table class="guideline-steps-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Stage</th>
+                                                <th>When to escalate</th>
+                                                <th>Therapy</th>
+                                                <th>Key notes</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            ${ladder.steps.map(step => `
+                                                <tr>
+                                                    <td><strong>${step.stage}</strong></td>
+                                                    <td>${step.trigger}</td>
+                                                    <td>${step.therapy}</td>
+                                                    <td>${step.notes || ''}</td>
+                                                </tr>
+                                            `).join('')}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            ` : ''}
+                        </article>
+                    `).join('')}
                 </div>
                 <div class="clinical-pearl">
                     <h4>💡 Implementation Pearls</h4>
