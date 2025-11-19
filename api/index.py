@@ -24,10 +24,94 @@ from flask_cors import CORS
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__, 
+app = Flask(__name__,
            template_folder=os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates'),
            static_folder=os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static'))
 CORS(app)  # Enable CORS for development
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+STATIC_ROOT = PROJECT_ROOT / 'static'
+ASSET_MANIFEST_PATH = STATIC_ROOT / 'asset-manifest.json'
+ASSET_TARGETS_FILE = PROJECT_ROOT / 'scripts' / 'asset-hash-targets.json'
+
+
+def _load_asset_targets() -> List[str]:
+    """Load the list of asset paths that should be fingerprinted."""
+    try:
+        with ASSET_TARGETS_FILE.open('r', encoding='utf-8') as fp:
+            data = json.load(fp)
+        if not isinstance(data, list):
+            raise ValueError('Asset targets file must contain a list of paths')
+        return data
+    except FileNotFoundError:
+        logger.warning('Asset targets file %s not found; defaulting to main bundle only.', ASSET_TARGETS_FILE)
+    except Exception as exc:  # pragma: no cover - defensive logging
+        logger.warning('Unable to read asset targets: %s', exc)
+    return ['/static/js/v2/main.js']
+
+
+ASSET_TARGETS = _load_asset_targets()
+
+
+def ensure_asset_manifest() -> None:
+    """Create cache-busted asset copies and manifest if missing/outdated."""
+    if not ASSET_TARGETS:
+        logger.info('No asset targets configured; skipping manifest generation.')
+        return
+
+    existing_manifest: Dict[str, str] = {}
+    if ASSET_MANIFEST_PATH.exists():
+        try:
+            with ASSET_MANIFEST_PATH.open('r', encoding='utf-8') as manifest_file:
+                existing_manifest = json.load(manifest_file)
+        except json.JSONDecodeError:
+            logger.warning('Asset manifest is invalid JSON. Rebuilding...')
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning('Unable to read existing asset manifest: %s', exc)
+
+    manifest_entries: Dict[str, str] = {}
+    manifest_changed = not ASSET_MANIFEST_PATH.exists()
+
+    for public_path in ASSET_TARGETS:
+        relative_path = public_path.lstrip('/')
+        source_path = PROJECT_ROOT / relative_path
+        if not source_path.exists():
+            logger.warning('Configured asset %s is missing on disk (%s)', public_path, source_path)
+            continue
+
+        file_bytes = source_path.read_bytes()
+        digest = hashlib.sha256(file_bytes).hexdigest()[:8]
+        hashed_name = f"{source_path.stem}.{digest}{source_path.suffix}"
+        hashed_path = source_path.with_name(hashed_name)
+
+        if not hashed_path.exists() or hashed_path.stat().st_size != source_path.stat().st_size:
+            hashed_path.write_bytes(file_bytes)
+            logger.info('Generated hashed asset %s', hashed_path)
+
+        # Clean up stale hashed variants
+        hashed_pattern = re.compile(rf"^{re.escape(source_path.stem)}\.[a-f0-9]{{8}}{re.escape(source_path.suffix)}$", re.IGNORECASE)
+        for candidate in source_path.parent.iterdir():
+            if candidate.is_file() and hashed_pattern.match(candidate.name) and candidate.name != hashed_name:
+                try:
+                    candidate.unlink()
+                except OSError:
+                    logger.warning('Unable to remove old hashed asset %s', candidate)
+
+        hashed_relative = hashed_path.relative_to(PROJECT_ROOT).as_posix()
+        manifest_value = f"/{hashed_relative}"
+        manifest_entries[public_path] = manifest_value
+
+        if existing_manifest.get(public_path) != manifest_value:
+            manifest_changed = True
+
+    if manifest_entries and manifest_changed:
+        with ASSET_MANIFEST_PATH.open('w', encoding='utf-8') as manifest_file:
+            json.dump(manifest_entries, manifest_file, indent=2)
+            manifest_file.write('\n')
+        logger.info('Asset manifest updated at %s', ASSET_MANIFEST_PATH)
+
+
+ensure_asset_manifest()
 
 # Reuse the QuizLoader logic from your existing main.py
 class PWAQuizLoader:
