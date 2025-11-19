@@ -10029,7 +10029,7 @@
                         <button class="btn" id="uploadBtn" style="margin-bottom: 8px; background: #34c759;">
                             📁 Choose Quiz Files
                         </button>
-                        <button class="btn btn-secondary" id="clearUploaded" style="margin-bottom: 8px; background: #ff3b30;" onclick="if(confirm('Clear all uploaded quizzes? This will free up browser storage space.')) { 
+                        <button class="btn btn-secondary" id="clearUploaded" style="margin-bottom: 8px; background: #ff3b30;" onclick="if(confirm('Clear all uploaded quizzes? This will free up browser storage space.')) {
                             // Call the robust clear function from V2 app
                             if (window.MLAQuizApp && window.MLAQuizApp.quizManager && typeof window.MLAQuizApp.quizManager.clearAllUploaded === 'function') {
                                 window.MLAQuizApp.quizManager.clearAllUploaded().then(() => {
@@ -10050,6 +10050,12 @@
                         }">
                             🗑️ Clear Uploaded
                         </button>
+                        <button class="btn btn-secondary" id="purgeAppBtn" style="margin-bottom: 8px; background: #6366F1; color: #fff;">
+                            🔄 Purge App Cache
+                        </button>
+                        <div id="purgeStatus" style="font-size: 12px; color: #8e8e93; margin-bottom: 8px;">
+                            Clears offline data, caches, and service workers so the next load starts fresh.
+                        </div>
                         <div id="uploadStatus" style="font-size: 14px; color: #8e8e93; margin-top: 8px;"></div>
                         <div style="font-size: 12px; color: #8e8e93; margin-top: 8px; font-style: italic;">
                             💡 Tip: Right-click (or long-press on mobile) answer options to rule them out with a strikethrough
@@ -11876,7 +11882,106 @@
             // Check periodically for screen changes
             setInterval(updateFloatingButton, 500);
             updateFloatingButton(); // Initial check
-            
+
+            const purgeBtn = document.getElementById('purgeAppBtn');
+            const purgeStatusEl = document.getElementById('purgeStatus');
+
+            const setPurgeStatus = (message, isError = false) => {
+                if (purgeStatusEl) {
+                    purgeStatusEl.textContent = message;
+                    purgeStatusEl.style.color = isError ? '#ff3b30' : '#8e8e93';
+                }
+            };
+
+            const deleteIndexedDBDatabases = async () => {
+                if (!window.indexedDB) {
+                    return 'IndexedDB not supported';
+                }
+
+                if (typeof indexedDB.databases !== 'function') {
+                    return 'IndexedDB purge not supported in this browser';
+                }
+
+                const databases = await indexedDB.databases();
+                await Promise.all(databases.map(db => {
+                    if (!db.name) return Promise.resolve();
+                    return new Promise((resolve) => {
+                        const request = indexedDB.deleteDatabase(db.name);
+                        request.onsuccess = request.onerror = request.onblocked = () => resolve();
+                    });
+                }));
+
+                return `Deleted ${databases.length} IndexedDB ${(databases.length === 1 ? 'database' : 'databases')}`;
+            };
+
+            const purgeAppData = async () => {
+                const steps = [];
+
+                if (window.MLAQuizApp && window.MLAQuizApp.quizManager && typeof window.MLAQuizApp.quizManager.clearAllUploaded === 'function') {
+                    try {
+                        await window.MLAQuizApp.quizManager.clearAllUploaded();
+                        steps.push('Removed uploaded quiz data');
+                    } catch (err) {
+                        console.warn('⚠️ Failed to clear uploaded quizzes during purge', err);
+                    }
+                }
+
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    await Promise.all(cacheNames.map(name => caches.delete(name)));
+                    steps.push(`Deleted ${cacheNames.length} ${(cacheNames.length === 1 ? 'cache' : 'caches')}`);
+                }
+
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    await Promise.all(registrations.map(reg => reg.unregister()));
+                    steps.push(`Unregistered ${registrations.length} service worker${registrations.length === 1 ? '' : 's'}`);
+                }
+
+                try {
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    steps.push('Cleared local & session storage');
+                } catch (storageErr) {
+                    console.warn('⚠️ Unable to clear web storage', storageErr);
+                }
+
+                try {
+                    const indexedDbResult = await deleteIndexedDBDatabases();
+                    if (indexedDbResult) {
+                        steps.push(indexedDbResult);
+                    }
+                } catch (dbErr) {
+                    console.warn('⚠️ Unable to delete IndexedDB databases', dbErr);
+                }
+
+                return steps;
+            };
+
+            if (purgeBtn) {
+                purgeBtn.addEventListener('click', async () => {
+                    if (!confirm('This will clear all locally cached MLA data and force the app to reload fresh. Continue?')) {
+                        return;
+                    }
+
+                    purgeBtn.disabled = true;
+                    purgeBtn.textContent = 'Purging…';
+                    setPurgeStatus('Clearing cached data, service workers, and offline files…');
+
+                    try {
+                        const steps = await purgeAppData();
+                        const summary = steps.length ? steps.join(' • ') : 'Cleared cached data';
+                        setPurgeStatus(`${summary}. Reloading…`);
+                        setTimeout(() => window.location.reload(), 600);
+                    } catch (err) {
+                        console.error('❌ Failed to purge MLA data', err);
+                        setPurgeStatus('Error clearing caches. Please try again.', true);
+                        purgeBtn.disabled = false;
+                        purgeBtn.textContent = '🔄 Purge App Cache';
+                    }
+                });
+            }
+
             // Initialize quiz length selection
             setTimeout(() => {
                 if (window.MLAQuizApp && window.MLAQuizApp.quizManager) {
