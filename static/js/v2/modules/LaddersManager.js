@@ -187,6 +187,7 @@ class LaddersManager {
                             { stage: 'Step 4 — Symptomatic or high-risk despite foundational therapy', trigger: 'Persistent NYHA II–IV symptoms or hospitalisation despite optimal medical therapy', therapy: 'Consider sacubitril/valsartan swap for ACEI/ARB where appropriate; consider ivabradine if sinus rhythm and resting HR ≥75 bpm; refer to HF MDT for device assessment and advanced therapies.', notes: 'Assess for reversible causes (ischaemia, arrhythmia, valvular disease) before device decisions.' },
                             { stage: 'Devices & advanced therapy — ICD/CRT criteria', trigger: 'Consider device therapy based on LVEF, QRS and symptoms', therapy: 'ICD: consider for primary prevention if LVEF ≤35% after ≥3 months of optimal therapy and expected survival >1 year; secondary prevention indicated after cardiac arrest or sustained VT. CRT: recommend if LVEF ≤35%, NYHA II–IV symptoms and QRS ≥150 ms with LBBB morphology; consider CRT if QRS 130–149 ms with LBBB and persistent symptoms; consider CRT for non-LBBB with QRS ≥150 ms in selected patients after specialist assessment.', notes: 'Refer early to HF MDT/electrophysiology for device eligibility, and consider mechanical dyssynchrony assessment where available.' },
                             { stage: 'Advanced HF / Referral triggers', trigger: 'Recurrent admissions, progressive symptoms, syncope or inotrope dependence', therapy: 'Refer to tertiary HF centre for assessment of LVAD, transplant, or palliative strategies when persistent NYHA III–IV symptoms despite optimisation, recurrent HF admissions, or intolerance to therapies.', notes: 'Triggers for urgent referral: worsening renal function with escalating diuretics, refractory congestion, frequent IV diuretic requirements, or recurrent ventricular arrhythmia.' }
+                            ,{ stage: 'Acute decompensated / red-flag HF', trigger: 'Any HF phenotype with haemodynamic compromise or acute pulmonary oedema', therapy: 'Urgent admission; IV loop diuretics (eg furosemide IV bolus ± infusion), oxygen to target SpO2 94–98% (monitor for COPD overlap), consider non-invasive ventilation or intubation if respiratory failure; treat precipitants (ACS, sepsis, arrhythmia). Seek senior cardiology/ICU input early.', notes: 'Red flags: new pulmonary oedema, SpO₂ < 92% on air or rising O₂ requirement, systolic BP < 90 mmHg, new or worsening chest pain suggestive of ACS, new rapid AF with haemodynamic compromise, syncope, or suspected cardiogenic shock. Manage as medical emergency and admit.' }
                         ]
                     },
                     {
@@ -198,6 +199,7 @@ class LaddersManager {
                         steps: [
                             { stage: 'Assessment', trigger: 'LVEF 41–49%', therapy: 'Treat comorbidities; consider ACEI/ARB/ARNI and β-blocker where indicated', notes: 'Consider SGLT2 inhibitor in symptomatic patients given emerging evidence.' },
                             { stage: 'Referral', trigger: 'Ongoing symptoms or deterioration', therapy: 'Referral to HF specialist for consideration of advanced therapies or trial eligibility', notes: 'Shared decision-making important due to less definitive evidence base.' }
+                            ,{ stage: 'Acute decompensated / red-flag HF', trigger: 'Any HF phenotype with haemodynamic compromise or acute pulmonary oedema', therapy: 'Urgent admission; IV loop diuretics; oxygen and cardiorespiratory support as indicated; treat precipitants and seek senior cardiology/ICU review.', notes: 'Red flags: SpO₂ <92% on air, hypotension (SBP <90 mmHg), new chest pain, syncope, worsening renal function with escalating diuretics, or arrhythmia causing instability. Manage as emergency.' }
                         ]
                     },
                     {
@@ -210,6 +212,7 @@ class LaddersManager {
                             { stage: 'Symptom control', trigger: 'Clinical signs of congestion', therapy: 'Diuretics to control fluid overload', notes: 'Monitor renal function and electrolytes.' },
                             { stage: 'Comorbidity optimisation', trigger: 'AF, hypertension, IHD, CKD', therapy: 'Control AF rate/rhythm, strict BP control, address ischaemia', notes: 'ACEI/ARB/β-blocker only if other indications present.' },
                             { stage: 'Disease-modifying', trigger: 'Suitable patients', therapy: 'Consider SGLT2 inhibitor for symptomatic HFpEF per license and guidance', notes: 'Evidence supports reduction in HF hospitalisations in selected cohorts.' }
+                            ,{ stage: 'Acute decompensated / red-flag HF', trigger: 'Any HF phenotype with haemodynamic compromise or acute pulmonary oedema', therapy: 'Urgent admission; IV loop diuretics and oxygen as required; consider NIV or intubation if respiratory failure; treat precipitants and seek senior cardiology/ICU input.', notes: 'Red flags: new pulmonary oedema, SpO₂ <92% on air or increasing O₂ needs, hypotension, severe chest pain or arrhythmia, syncope. Manage as medical emergency.' }
                         ]
                     },
                     {
@@ -768,12 +771,30 @@ class LaddersManager {
                 ? this.laddersData.guidelines.ladders
                 : [];
 
+            // Match icons used in renderGuidelineLadder so tabs and cards stay consistent
+            const guidelineIconMap = {
+                asthma: '🌬️',
+                copd: '🫁',
+                hfref: '❤️‍🩹',
+                hfmr: '❤️‍🩹',
+                hfpef: '💓',
+                epilepsy: '⚡',
+                t2dm: '🩸',
+                hypertension: '📈',
+                ckd: '🧪',
+                alcohol: '🍺',
+                smoking: '🚬',
+                'chronic-pain': '💥',
+                'mental-health': '🧠',
+                osteoporosis: '🦴'
+            };
+
             const ladderTabsHtml = [
                 { key: 'steroids', label: '💊 Steroid Ladder', active: true },
                 { key: 'pain', label: '🎚️ Pain Ladder' },
                 ...guidelineLadders.map(ladder => ({
                     key: ladder.key,
-                    label: `🧭 ${ladder.shortTitle || ladder.title || ladder.key}`
+                    label: `${guidelineIconMap[ladder.key] || '🧭'} ${ladder.shortTitle || ladder.title || ladder.key}`
                 }))
             ].map(tab => `
                 <button class="ladder-tab-btn${tab.active ? ' active' : ''}" data-ladder="${tab.key}">${tab.label}</button>
@@ -1266,40 +1287,93 @@ class LaddersManager {
      * @returns {string} HTML content for the ladder
      */
     renderGuidelineLadder(ladder) {
-        if (!ladder) return '';
+    if (!ladder) return '';
 
-        const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
-            ? this.laddersData.guidelines.clinicalPearls
-            : [];
+    const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
+        ? this.laddersData.guidelines.clinicalPearls
+        : [];
 
-        const iconMap = {
-            asthma: '🌬️',
-            copd: '🫁',
-            hfref: '❤️',
-            hfmr: '❤️',
-            hfpef: '❤️',
-            epilepsy: '🧠',
-            t2dm: '🍬',
-            hypertension: '🩺',
-            alcohol: '🍷',
-            'chronic-pain': '🩺',
-            osteoporosis: '🦴',
-            ckd: '🧪',
-            smoking: '🚬'
-        };
-        const ladderIcon = iconMap[ladder.key] || this.laddersData.guidelines?.icon || '🧭';
+    // Per-condition icons (used in card header)
+    const iconMap = {
+        asthma: '🌬️',
+        copd: '🫁',
+        hfref: '❤️‍🩹',
+        hfmr: '❤️‍🩹',
+        hfpef: '💓',
+        epilepsy: '⚡',
+        t2dm: '🩸',
+        hypertension: '📈',
+        ckd: '🧪',
+        alcohol: '🍺',
+        smoking: '🚬',
+        'chronic-pain': '💥',
+        'mental-health': '🧠',
+        osteoporosis: '🦴'
+    };
 
-        const makeStepHtml = (step, idx) => {
-            const title = step.stage || ('Stage ' + (idx + 1));
-            const trigger = step.trigger || '';
-            const therapy = step.therapy || '';
-            const notes = step.notes || '';
+    const ladderIcon =
+        iconMap[ladder.key] ||
+        this.laddersData.guidelines?.icon ||
+        '🧭';
 
-            const textForSafety = (notes + ' ' + therapy + ' ' + trigger).toLowerCase();
-            const safetyKeywords = ['refer', 'referral', 'icu', 'oxygen', 'stop', 'contraindic', 'life-threatening', 'hospital', 'admit', 'emergency'];
-            const isSafety = safetyKeywords.some(k => textForSafety.includes(k));
+    const makeStepHtml = (step, idx) => {
+        const title = step.stage || ('Stage ' + (idx + 1));
+        const trigger = step.trigger || '';
+        const therapy = step.therapy || '';
+        const notes = step.notes || '';
 
-            return `
+        const textForSafety = (
+            notes + ' ' + therapy + ' ' + trigger
+        ).toLowerCase();
+
+        // Broader set of “safety” words – catches crisis / emergency content
+        const safetyKeywords = [
+            'refer',
+            'referral',
+            'icu',
+            'high dependency',
+            'hdu',
+            'oxygen',
+            'ventilation',
+            'intubation',
+            'stop',
+            'withhold',
+            'omit',
+            'contraindic',
+            'life-threatening',
+            'emergency',
+            'admit',
+            'same-day',
+            'urgent',
+            'crisis',
+            'status',
+            'hyperkalaem',
+            'hyperkalaemia',
+            'accelerated',
+            'malignant hypertension',
+            'hypertensive crisis',
+            'pulmonary oedema',
+            'flash oedema',
+            'shock',
+            'sepsis',
+            'septic',
+            'dka',
+            'ketoacidosis',
+            'hhs',
+            'hyperosmolar',
+            'delirium tremens',
+            'withdrawal seizure',
+            'airway compromise',
+            'respiratory failure',
+            'syncope',
+            'chest pain'
+        ];
+
+        const isSafety = safetyKeywords.some(k =>
+            textForSafety.includes(k)
+        );
+
+        return `
             <div class="accordion-item" data-step-index="${idx}">
                 <button class="accordion-header" type="button" aria-expanded="false">
                     <span style="display:flex;flex-direction:column;align-items:flex-start;">
@@ -1313,77 +1387,135 @@ class LaddersManager {
                         <strong>Therapy:</strong>
                         <div style="margin-top:6px">${therapy}</div>
                     </div>
-                    ${notes ? (
-                        isSafety
-                            ? `<div class="nice-warning"><strong>Safety:</strong><div style="margin-top:6px">${notes}</div></div>`
-                            : `<div class="accordion-notes" style="margin-top:10px"><strong>Notes:</strong><div style="margin-top:6px">${notes}</div></div>`
-                    ) : ''}
+                    ${
+                        notes
+                            ? (
+                                isSafety
+                                    ? `<div class="nice-warning"><strong>Safety:</strong><div style="margin-top:6px">${notes}</div></div>`
+                                    : `<div class="accordion-notes" style="margin-top:10px"><strong>Notes:</strong><div style="margin-top:6px">${notes}</div></div>`
+                              )
+                            : ''
+                    }
                 </div>
             </div>
         `;
-        };
+    };
 
-        const stepsHtml = Array.isArray(ladder.steps)
-            ? ladder.steps.map((s, i) => makeStepHtml(s, i)).join('')
-            : '';
+    const stepsHtml = Array.isArray(ladder.steps)
+        ? ladder.steps.map((s, i) => makeStepHtml(s, i)).join('')
+        : '';
 
-        const overviewHtml = ladder.summary || '';
+    const overviewHtml = ladder.summary || '';
 
-        const redFlags = Array.isArray(ladder.steps)
-            ? ladder.steps.filter(s => {
-                const stage = (s.stage || '').toLowerCase();
-                const trig = (s.trigger || '').toLowerCase();
-                const note = (s.notes || '').toLowerCase();
-                return (
-                    stage.includes('life') ||
-                    stage.includes('emergency') ||
-                    trig.includes('life') ||
-                    trig.includes('spo2') ||
-                    note.includes('icu') ||
-                    note.includes('admit') ||
-                    note.includes('emergency')
-                );
-            })
-            : [];
+    // RED-FLAG filter – now uses a richer keyword set across stage / trigger / therapy / notes
+    const redFlags = Array.isArray(ladder.steps)
+        ? ladder.steps.filter(s => {
+            const blob = (
+                (s.stage || '') + ' ' +
+                (s.trigger || '') + ' ' +
+                (s.therapy || '') + ' ' +
+                (s.notes || '')
+            ).toLowerCase();
 
-        const complexFlags = Array.isArray(ladder.steps)
-            ? ladder.steps.filter(s => {
-                const stage = (s.stage || '').toLowerCase();
-                const note = (s.notes || '').toLowerCase();
-                return (
-                    stage.includes('severe') ||
-                    stage.includes('difficult') ||
-                    note.includes('phenotype') ||
-                    note.includes('biomarker') ||
-                    note.includes('refractory')
-                );
-            })
-            : [];
+            const redKeywords = [
+                'life-threatening',
+                'status',
+                'status epilepticus',
+                'emergency',
+                'acute severe',
+                'acute decompensated',
+                'shock',
+                'septic',
+                'sepsis',
+                'cardiogenic',
+                'pulmonary oedema',
+                'flash oedema',
+                'respiratory failure',
+                'spo2',
+                'sats <',
+                'hypoxia',
+                'accelerated',
+                'malignant hypertension',
+                'hypertensive crisis',
+                'hyperkalaem',
+                'hyperkalaemia',
+                'k+ ≥',
+                'dka',
+                'ketoacidosis',
+                'hhs',
+                'hyperosmolar',
+                'delirium tremens',
+                'withdrawal seizure',
+                'suicidal',
+                'overdose',
+                'airway compromise',
+                'stridor',
+                'chest pain',
+                'syncope'
+            ];
 
-        const redFlagsHtml = redFlags.length
-            ? redFlags.map(s => `
+            return redKeywords.some(k => blob.includes(k));
+        })
+        : [];
+
+    // COMPLEX-case filter – for “hard” scenarios but not time-critical emergencies
+    const complexFlags = Array.isArray(ladder.steps)
+        ? ladder.steps.filter(s => {
+            const blob = (
+                (s.stage || '') + ' ' +
+                (s.trigger || '') + ' ' +
+                (s.notes || '')
+            ).toLowerCase();
+
+            const complexKeywords = [
+                'severe',
+                'difficult',
+                'refractory',
+                'resistant',
+                'advanced',
+                'frail',
+                'frailty',
+                'multimorbidity',
+                'mdt',
+                'specialist',
+                'tertiary',
+                'device therapy',
+                'biologic',
+                'multiple fractures',
+                'high risk',
+                'very high risk'
+            ];
+
+            return complexKeywords.some(k => blob.includes(k));
+        })
+        : [];
+
+    const redFlagsHtml = redFlags.length
+        ? redFlags.map(s => `
             <div class="pill-flag">
-                <strong>${s.stage || 'Red flag'}</strong> – ${s.trigger || ''}
+                <strong>${s.stage || 'Red flag'}</strong>${s.trigger ? ` – ${s.trigger}` : ''}
+                ${s.therapy ? `<div style="margin-top:4px">${s.therapy}</div>` : ''}
                 ${s.notes ? `<div class="nice-warning" style="margin-top:6px">${s.notes}</div>` : ''}
             </div>
         `).join('')
-            : '<div class="pill-flag">No immediate red flags listed.</div>';
+        : '<div class="pill-flag">No immediate red flags listed.</div>';
 
-        const complexHtml = complexFlags.length
-            ? complexFlags.map(s => `
+    const complexHtml = complexFlags.length
+        ? complexFlags.map(s => `
             <div class="pill-complex">
                 <strong>${s.stage}</strong>
                 <div>${s.therapy || ''}</div>
                 ${s.notes ? `<div style="font-size:0.95em;color:var(--muted,#9ca3af);margin-top:4px">${s.notes}</div>` : ''}
             </div>
         `).join('')
-            : '<div class="pill-complex">No specific complex-case notes listed; consider MDT or specialist input for refractory disease.</div>';
+        : '<div class="pill-complex">No specific complex-case notes listed; consider MDT or specialist input for refractory disease.</div>';
 
-        const miniSummary = ladder.summary
-            ? `<div class="mini-summary" style="background:var(--pill-bg,#1118270d);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600;color:var(--text-primary,#0f172a)">Core objective: ${ladder.summary.split('.').slice(0,1).join('').trim()}</div>`
-            : '';
+    // Mini-summary – change fallback colour so it looks correct in dark mode
+    const miniSummary = ladder.summary
+        ? `<div class="mini-summary" style="background:var(--pill-bg,#1118270d);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600;color:var(--text-primary,#e5e7eb)">Core objective: ${ladder.summary.split('.').slice(0, 1).join('').trim()}</div>`
+        : '';
 
-        return `
+    return `
         <div class="ladder-section">
             <h3>${ladder.title || ladder.shortTitle || '🧭 NICE Clinical Ladder'}</h3>
             ${ladder.reference ? `<div style="margin-bottom:8px"><span class="guideline-badge">${ladder.reference}</span></div>` : ''}
@@ -1423,17 +1555,21 @@ class LaddersManager {
                     </div>
                 </article>
             </div>
-            ${pearls.length ? `
+            ${
+                pearls.length
+                    ? `
                 <div class="clinical-pearl">
                     <h4>💡 Implementation Pearls</h4>
                     <ul>
                         ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
                     </ul>
                 </div>
-            ` : ''}
+            `
+                    : ''
+            }
         </div>
     `;
-    }
+}
 
     /**
      * Render NICE guideline ladders content
