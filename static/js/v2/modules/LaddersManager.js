@@ -43,36 +43,12 @@ class LaddersManager {
                 icon: '💊',
                 medications: [
                     {
-                        name: 'Betamethasone',
-                        potency: '25-30x',
-                        equivalentDose: '0.75 mg',
-                        duration: '36-54h',
-                        clinicalUses: 'Fetal lung maturation, severe inflammation',
-                        category: 'ultra-high'
-                    },
-                    {
-                        name: 'Dexamethasone',
-                        potency: '25-30x',
-                        equivalentDose: '0.75 mg',
-                        duration: '36-54h',
-                        clinicalUses: 'Cerebral oedema, croup, severe asthma, COVID-19',
-                        category: 'ultra-high'
-                    },
-                    {
-                        name: 'Methylprednisolone',
-                        potency: '5x',
-                        equivalentDose: '4 mg',
-                        duration: '12-36h',
-                        clinicalUses: 'Acute asthma, COPD, spinal cord injury',
-                        category: 'high'
-                    },
-                    {
-                        name: 'Prednisolone',
-                        potency: '4x',
-                        equivalentDose: '5 mg',
-                        duration: '12-36h',
-                        clinicalUses: 'Asthma, COPD, polymyalgia rheumatica, IBD',
-                        category: 'high'
+                        name: 'Cortisone',
+                        potency: '0.8x',
+                        equivalentDose: '25 mg',
+                        duration: '8-12h',
+                        clinicalUses: 'Rarely used (requires hepatic conversion)',
+                        category: 'low'
                     },
                     {
                         name: 'Hydrocortisone',
@@ -83,12 +59,36 @@ class LaddersManager {
                         category: 'medium'
                     },
                     {
-                        name: 'Cortisone',
-                        potency: '0.8x',
-                        equivalentDose: '25 mg',
-                        duration: '8-12h',
-                        clinicalUses: 'Rarely used (requires hepatic conversion)',
-                        category: 'low'
+                        name: 'Prednisolone',
+                        potency: '4x',
+                        equivalentDose: '5 mg',
+                        duration: '12-36h',
+                        clinicalUses: 'Asthma, COPD, polymyalgia rheumatica, IBD',
+                        category: 'high'
+                    },
+                    {
+                        name: 'Methylprednisolone',
+                        potency: '5x',
+                        equivalentDose: '4 mg',
+                        duration: '12-36h',
+                        clinicalUses: 'Acute asthma, COPD, spinal cord injury',
+                        category: 'high'
+                    },
+                    {
+                        name: 'Dexamethasone',
+                        potency: '25-30x',
+                        equivalentDose: '0.75 mg',
+                        duration: '36-54h',
+                        clinicalUses: 'Cerebral oedema, croup, severe asthma, COVID-19',
+                        category: 'ultra-high'
+                    },
+                    {
+                        name: 'Betamethasone',
+                        potency: '25-30x',
+                        equivalentDose: '0.75 mg',
+                        duration: '36-54h',
+                        clinicalUses: 'Fetal lung maturation, severe inflammation',
+                        category: 'ultra-high'
                     }
                 ],
                 categories: {
@@ -141,30 +141,30 @@ class LaddersManager {
                 icon: '🎚️',
                 steps: [
                     {
-                        step: 3,
-                        severity: 'Severe Pain (7-10/10)',
-                        color: '#dc3545',
-                        approach: 'Strong Opioids ± Non-opioid ± Adjuvant',
+                        step: 1,
+                        severity: 'Mild Pain (1-3/10)',
+                        color: '#28a745',
+                        approach: 'Non-opioid ± Adjuvant',
                         medications: [
                             {
-                                name: 'Morphine',
-                                dose: '5-10mg PO/2.5-5mg SC/IV 4-hourly (immediate release)',
-                                note: 'Gold standard, predictable'
+                                name: 'Paracetamol',
+                                dose: '1g PO/IV 6-hourly (max 4g/day)',
+                                note: 'Safe, minimal side effects'
                             },
                             {
-                                name: 'Oxycodone',
-                                dose: '5-10mg PO 4-6 hourly',
-                                note: '1.5x potency of morphine'
+                                name: 'Ibuprofen',
+                                dose: '400mg PO 8-hourly (max 2.4g/day)',
+                                note: 'Anti-inflammatory, GI risk'
                             },
                             {
-                                name: 'Fentanyl',
-                                dose: '12-25mcg/hr patch (change 72-hourly)',
-                                note: '100x morphine potency, for stable pain'
+                                name: 'Naproxen',
+                                dose: '250-500mg PO 12-hourly',
+                                note: 'Longer-acting NSAID'
                             },
                             {
-                                name: 'Buprenorphine',
-                                dose: '5-20mcg/hr patch (change weekly)',
-                                note: 'Partial agonist, ceiling effect'
+                                name: 'Diclofenac',
+                                dose: '50mg PO 8-hourly',
+                                note: 'Potent NSAID, CV risk'
                             }
                         ]
                     },
@@ -192,30 +192,30 @@ class LaddersManager {
                         ]
                     },
                     {
-                        step: 1,
-                        severity: 'Mild Pain (1-3/10)',
-                        color: '#28a745',
-                        approach: 'Non-opioid ± Adjuvant',
+                        step: 3,
+                        severity: 'Severe Pain (7-10/10)',
+                        color: '#dc3545',
+                        approach: 'Strong Opioids ± Non-opioid ± Adjuvant',
                         medications: [
                             {
-                                name: 'Paracetamol',
-                                dose: '1g PO/IV 6-hourly (max 4g/day)',
-                                note: 'Safe, minimal side effects'
+                                name: 'Morphine',
+                                dose: '5-10mg PO/2.5-5mg SC/IV 4-hourly (immediate release)',
+                                note: 'Gold standard, predictable'
                             },
                             {
-                                name: 'Ibuprofen',
-                                dose: '400mg PO 8-hourly (max 2.4g/day)',
-                                note: 'Anti-inflammatory, GI risk'
+                                name: 'Oxycodone',
+                                dose: '5-10mg PO 4-6 hourly',
+                                note: '1.5x potency of morphine'
                             },
                             {
-                                name: 'Naproxen',
-                                dose: '250-500mg PO 12-hourly',
-                                note: 'Longer-acting NSAID'
+                                name: 'Fentanyl',
+                                dose: '12-25mcg/hr patch (change 72-hourly)',
+                                note: '100x morphine potency, for stable pain'
                             },
                             {
-                                name: 'Diclofenac',
-                                dose: '50mg PO 8-hourly',
-                                note: 'Potent NSAID, CV risk'
+                                name: 'Buprenorphine',
+                                dose: '5-20mcg/hr patch (change weekly)',
+                                note: 'Partial agonist, ceiling effect'
                             }
                         ]
                     }
