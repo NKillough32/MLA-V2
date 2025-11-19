@@ -146,27 +146,32 @@ class LaddersManager {
                         title: 'Asthma (Adults & Children) – Step-Up/Step-Down',
                         shortTitle: 'Asthma Step-Up/Down',
                         reference: 'NICE NG245 / BTS-SIGN 2024',
-                        summary: 'Progress from reliever-only therapy to maintenance-and-reliever treatment, then add-on controllers and biologics while reviewing inhaler technique and adherence at each step.',
+                        summary: 'Progress from reliever-only therapy to maintenance-and-reliever treatment, then add-on controllers and biologics while reviewing inhaler technique and adherence at each step. MART (maintenance-and-reliever therapy) licensed inhalers in the UK include Fostair (beclometasone/formoterol) and Symbicort (budesonide/formoterol). Always check the product SPC for the maximum licensed daily formoterol dose (some preparations have maxima ≈ 54 µg/day); avoid exceeding licensed formoterol limits.',
                         steps: [
-                            { stage: 'Initial', trigger: 'Infrequent symptoms, no night waking', therapy: 'SABA as needed ± intermittent low-dose ICS whenever SABA used', notes: 'Educate on trigger avoidance and technique before escalation.' },
-                            { stage: 'Step 2', trigger: 'Symptoms ≥3/week or night waking', therapy: 'Daily low-dose ICS (or MART with low-dose ICS/formoterol if ≥12y)', notes: 'Consider leukotriene receptor antagonist (LTRA) in children <5y.' },
-                            { stage: 'Step 3', trigger: 'Persistent symptoms despite low-dose ICS', therapy: 'Add LABA via fixed-dose ICS/LABA inhaler; offer MART (ICS-formoterol) for adults/adolescents.', notes: 'Ensure adherence before stepping up.' },
-                            { stage: 'Step 4', trigger: 'Uncontrolled on MART or low-dose ICS/LABA', therapy: 'Increase ICS to medium/high dose and/or add LTRA, LAMA (tiotropium) from 6y.', notes: 'Assess for phenotype-directed biologics if exacerbations continue.' },
-                            { stage: 'Step 5', trigger: 'Severe asthma with frequent exacerbations', therapy: 'Add-on biologics (omalizumab, mepolizumab, benralizumab, dupilumab) ± maintenance oral corticosteroids.', notes: 'Regularly attempt step-down after ≥3 months of good control.' }
+                            { stage: 'Paediatric pathways', trigger: '<5y / 5–11y / ≥12y', therapy: '<5y: focus on as-needed SABA and consider specialist review before any controller; trial of low-dose nebulised/low-dose inhaled ICS under paediatric advice. 5–11y: consider daily low-dose ICS, LTRA (montelukast) or MART where licensed for the age and inhaler device. ≥12y: consider MART (licensed ICS/formoterol inhalers such as Fostair, Symbicort) as maintenance-and-reliever therapy when appropriate; tailor device and dosing by age and ability.', notes: 'Involve paediatric respiratory team for recurrent or severe disease; ensure spacer/device education.' },
+                            { stage: 'Initial', trigger: 'Infrequent symptoms, no night waking', therapy: 'SABA PRN ± intermittent low-dose ICS when SABA used', notes: 'Educate on trigger avoidance, inhaler technique and adherence; review smoking exposure.' },
+                            { stage: 'Step 2', trigger: 'Symptoms ≥3/week or night waking', therapy: 'Daily low-dose ICS OR MART (low-dose ICS/formoterol) if patient ≥12y and a licensed product is suitable (eg Fostair, Symbicort).', notes: 'Observe maximum daily formoterol dose per SPC; use caution with repeated high reliever use.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms despite low-dose ICS', therapy: 'Add LABA via fixed-dose ICS/LABA or continue MART where licensed; consider add-on LAMA (tiotropium) from age-appropriate thresholds.', notes: 'Check adherence, inhaler technique, comorbidities (rhinitis, reflux, obesity) and smoking; consider phenotyping.' },
+                            { stage: 'Step 4', trigger: 'Uncontrolled on MART or medium-dose ICS/LABA', therapy: 'Increase ICS to medium/high dose; consider LAMA, treat comorbidities, and assess for biologic eligibility if type 2 inflammation suspected.', notes: 'Biomarkers: FeNO ≥25 ppb and/or blood eosinophils ≥0.3 ×10^9/L indicate type 2 inflammation and higher chance of response to anti-IL/anti-IgE biologics.' },
+                            { stage: 'Step 5 — Severe / Difficult-to-treat', trigger: 'Frequent exacerbations or severe symptoms despite optimized therapy', therapy: 'Refer to specialist severe asthma service for multidisciplinary assessment and consideration of biologics (omalizumab, mepolizumab, benralizumab, dupilumab) or maintenance oral corticosteroids where unavoidable.', notes: 'Referral triggers: ≥2 steroid-requiring exacerbations in 12 months, hospital admission for asthma, continuous or frequent oral corticosteroid use, FeNO ≥25 ppb, blood eosinophils ≥0.3 ×10^9/L, documented allergic phenotype, or persistently poor lung function despite optimization.' },
+                            { stage: 'Acute severe asthma', trigger: 'Severe dyspnoea, inability to speak in sentences, SpO2 <92% or PEFR <50% predicted', therapy: 'Oxygen to target SpO2 94–98% (adults); high-flow if required. Nebulised salbutamol 5 mg repeat 5–15 min ± ipratropium 500 mcg if severe. Give oral prednisolone 40 mg PO (or IV hydrocortisone 100–200 mg if unable to take PO). Consider IV magnesium sulphate 2 g IV over 20 minutes if poor response to inhaled therapy.', notes: 'Monitor for hypercapnia; prepare for continuous nebulisation, consider IV bronchodilators and escalation to ICU if worsening or PaCO2 rising.' },
+                            { stage: 'Life-threatening asthma', trigger: 'Silent chest, cyanosis, bradycardia, altered consciousness, or rising PaCO2', therapy: 'Immediate senior/anaesthetic/ICU review; consider intubation and mechanical ventilation, continuous bronchodilator therapy, and IV bronchodilators or ketamine as per local critical care protocols.', notes: 'ICU triggers: worsening hypoxia despite oxygen, hypercapnia, respiratory acidosis, exhaustion, reduced conscious level, or haemodynamic instability.' }
                         ]
                     },
                     {
                         key: 'copd',
-                        title: 'COPD Stepwise Pharmacological Escalation',
+                        title: 'COPD Stepwise Pharmacological Escalation & AECOPD',
                         shortTitle: 'COPD Escalation',
                         reference: 'NICE NG115 (2023 update)',
-                        summary: 'Escalate based on breathlessness/exacerbation risk, guided by eosinophil count and inhaler optimisation.',
+                        summary: 'Escalate based on symptoms, exacerbation risk and eosinophil phenotype. Treat exacerbations promptly with controlled oxygen, short course steroids and selected antibiotics when indicated.',
                         steps: [
-                            { stage: 'Initial', trigger: 'New diagnosis with intermittent symptoms', therapy: 'Short-acting bronchodilator (SABA or SAMA) PRN', notes: 'Offer pulmonary rehabilitation and smoking cessation concurrently.' },
-                            { stage: 'Step 2', trigger: 'Persistent breathlessness', therapy: 'Long-acting bronchodilator (LABA or LAMA) monotherapy', notes: 'Select device patient can use reliably.' },
-                            { stage: 'Step 3', trigger: 'Persistent symptoms or exacerbations', therapy: 'Dual bronchodilation with LABA/LAMA', notes: 'Review within 3 months and check eosinophils.' },
-                            { stage: 'Step 4', trigger: 'Exacerbations with eosinophils ≥300 or asthma features', therapy: 'Triple therapy LABA/LAMA/ICS', notes: 'Monitor pneumonia risk and continue non-pharmacological support.' },
-                            { stage: 'Step 5', trigger: 'Severe exacerbations despite triple therapy', therapy: 'Add roflumilast (chronic bronchitis, FEV1 <50%) or long-term macrolide (azithromycin)', notes: 'Consider specialist referral for lung volume reduction/oxygen.' }
+                            { stage: 'Initial', trigger: 'New diagnosis with intermittent symptoms', therapy: 'SABA or SAMA PRN; offer smoking cessation and pulmonary rehabilitation', notes: 'Ensure accurate inhaler technique and review comorbidities.' },
+                            { stage: 'Step 2', trigger: 'Persistent breathlessness', therapy: 'Start single long-acting bronchodilator (LABA or LAMA) and review', notes: 'Choose device patient can use reliably.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms or exacerbations', therapy: 'Dual bronchodilation (LABA + LAMA)', notes: 'Review within 3 months; check blood eosinophils to guide ICS decisions.' },
+                            { stage: 'Step 4', trigger: 'Exacerbations or eosinophilic phenotype', therapy: 'Consider LABA/LAMA/ICS (triple therapy) when eosinophils ≥300 cells/µL or asthma features present', notes: 'Discuss pneumonia risk with ICS and monitor.' },
+                            { stage: 'Phenotype-targeted therapy', trigger: 'Chronic bronchitis phenotype or frequent exacerbations', therapy: 'Consider roflumilast for severe chronic bronchitis with FEV1 <50% and frequent exacerbations; consider long-term macrolide (azithromycin) in selected patients after specialist review.', notes: 'Patients with eosinophils ≥300 cells/µL derive more benefit from ICS-containing regimens.' },
+                            { stage: 'AECOPD (acute exacerbation)', trigger: 'Worsening dyspnoea, sputum change +/- systemic features', therapy: 'Controlled oxygen target SpO2 88–92% (unless other indication); give prednisolone 30 mg PO for 5 days; consider antibiotics if increased sputum purulence or severity — first-line amoxicillin, doxycycline or (if severe/high-risk) co-amoxiclav.', notes: 'Reserve co-amoxiclav for severe infection or risk factors for gram-negative organisms; reassess need for antibiotics within 48–72 hours.' },
+                            { stage: 'LTOT criteria', trigger: 'Assessment after stabilization', therapy: 'Long-term oxygen therapy indicated when PaO2 ≤7.3 kPa on air (≤55 mmHg) or PaO2 7.3–8.0 kPa (55–60 mmHg) with evidence of cor pulmonale, polycythaemia (haemoglobin/haematocrit), or nocturnal desaturation.', notes: 'Ensure appropriate oxygen assessment after a period of clinical stability and smoking cessation counselling.' }
                         ]
                     },
                     {
@@ -174,13 +179,35 @@ class LaddersManager {
                         title: 'Heart Failure with Reduced EF – Disease-Modifying Core',
                         shortTitle: 'HFrEF Optimisation',
                         reference: 'NICE NG106 (2024 surveillance)',
-                        summary: 'Initiate foundational quadruple therapy promptly, titrating every 2–4 weeks to target doses before considering devices or advanced options.',
+                        summary: 'Initiate foundational therapy promptly (ACEI/ARB/ARNI, β-blocker, MRA, SGLT2) and titrate to target doses as tolerated; consider devices and specialist referral for advanced therapies.',
                         steps: [
-                            { stage: 'Step 1', trigger: 'Confirmed HFrEF (LVEF ≤40%)', therapy: 'Start ACEI (or ARB) and titrate upwards as tolerated', notes: 'Assess renal function and potassium after each change.' },
-                            { stage: 'Step 2', trigger: 'Within days of ACEI/ARB initiation', therapy: 'Add evidence-based β-blocker (bisoprolol, carvedilol, nebivolol)', notes: 'Delay only if fluid overloaded—optimise diuretics first.' },
-                            { stage: 'Step 3', trigger: 'Persistent symptoms', therapy: 'Add mineralocorticoid receptor antagonist (spironolactone or eplerenone)', notes: 'Monitor U&Es 1 week after dose change.' },
-                            { stage: 'Step 4', trigger: 'All above tolerated', therapy: 'Add SGLT2 inhibitor (dapagliflozin or empagliflozin) regardless of diabetes', notes: 'Benefits occur without titration; monitor renal function.' },
-                            { stage: 'Step 5', trigger: 'Ongoing symptoms despite quadruple therapy', therapy: 'Consider sacubitril/valsartan swap for ACEI/ARB, ivabradine if sinus rhythm HR ≥75, CRT/ICD for QRS ≥130ms.', notes: 'Refer to HF multidisciplinary team for device eligibility.' }
+                            { stage: 'Step 1', trigger: 'Confirmed HFrEF (LVEF ≤40%)', therapy: 'Start ACEI (or ARB) and titrate; consider sacubitril/valsartan where indicated and after stopping ACEI with washout.', notes: 'Assess renal function and potassium after each change.' },
+                            { stage: 'Step 2', trigger: 'Early follow-up', therapy: 'Add evidence-based β-blocker (bisoprolol, carvedilol, nebivolol) and uptitrate as tolerated', notes: 'Delay only if unstable or fluid overloaded—optimise diuretics first.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms or at-risk', therapy: 'Add MRA (spironolactone or eplerenone) and SGLT2 inhibitor (dapagliflozin/empagliflozin) regardless of diabetes status', notes: 'Monitor U&Es and renal function; SGLT2 provides mortality and HF hospitalisation benefit.' },
+                            { stage: 'Step 4', trigger: 'Refractory symptoms', therapy: 'Consider sacubitril/valsartan swap for ACEI/ARB, ivabradine if sinus rhythm and HR ≥75, and evaluate for device therapy (CRT/ICD) as per criteria.', notes: 'Refer to HF MDT for complex optimisation.' }
+                        ]
+                    },
+                    {
+                        key: 'hfmr',
+                        title: 'Heart Failure with Mid-Range EF (HFmrEF)',
+                        shortTitle: 'HFmrEF (EF 41–49%)',
+                        reference: 'NICE / ESC consensus',
+                        summary: 'Patients with LVEF 41–49% may benefit from similar therapies to HFrEF; evidence is less robust but consider disease-modifying therapy guided by symptoms and comorbidities.',
+                        steps: [
+                            { stage: 'Assessment', trigger: 'LVEF 41–49%', therapy: 'Treat comorbidities; consider ACEI/ARB/ARNI and β-blocker where indicated', notes: 'Consider SGLT2 inhibitor in symptomatic patients given emerging evidence.' },
+                            { stage: 'Referral', trigger: 'Ongoing symptoms or deterioration', therapy: 'Referral to HF specialist for consideration of advanced therapies or trial eligibility', notes: 'Shared decision-making important due to less definitive evidence base.' }
+                        ]
+                    },
+                    {
+                        key: 'hfpef',
+                        title: 'Heart Failure with Preserved EF (HFpEF)',
+                        shortTitle: 'HFpEF',
+                        reference: 'NICE / ESC 2023-24 updates',
+                        summary: 'Management focuses on targeted therapy for congestion, BP control, rate control for AF and SGLT2 inhibitors for outcome benefit in selected patients.',
+                        steps: [
+                            { stage: 'Symptom control', trigger: 'Clinical signs of congestion', therapy: 'Diuretics to control fluid overload', notes: 'Monitor renal function and electrolytes.' },
+                            { stage: 'Comorbidity optimisation', trigger: 'AF, hypertension, IHD, CKD', therapy: 'Control AF rate/rhythm, strict BP control, address ischaemia', notes: 'ACEI/ARB/β-blocker only if other indications present.' },
+                            { stage: 'Disease-modifying', trigger: 'Suitable patients', therapy: 'Consider SGLT2 inhibitor for symptomatic HFpEF per license and guidance', notes: 'Evidence supports reduction in HF hospitalisations in selected cohorts.' }
                         ]
                     },
                     {
@@ -188,52 +215,53 @@ class LaddersManager {
                         title: 'Hypertension Stepwise Therapy',
                         shortTitle: 'Hypertension',
                         reference: 'NICE NG136 (2023 update)',
-                        summary: 'Tailor first-line agent by age/ethnicity, then combine complementary mechanisms before considering resistant hypertension strategies.',
+                        summary: 'Tailor therapy by age, ethnicity and pregnancy status; escalate using complementary drug classes and investigate secondary causes for resistant hypertension.',
                         steps: [
-                            { stage: 'Step 1', trigger: 'Clinic BP ≥140/90 mmHg with confirmed diagnosis', therapy: 'ACEI/ARB if <55y; CCB (dihydropyridine) if ≥55y or Black African/Caribbean origin', notes: 'Offer lifestyle optimisation in parallel.' },
-                            { stage: 'Step 2', trigger: 'BP uncontrolled on Step 1', therapy: 'Combine ACEI/ARB + CCB', notes: 'Swap to thiazide-like diuretic if CCB not tolerated (ankle swelling).' },
-                            { stage: 'Step 3', trigger: 'BP ≥140/90 after Step 2', therapy: 'Triple therapy ACEI/ARB + CCB + thiazide-like diuretic (indapamide/chlortalidone)', notes: 'Check adherence, secondary causes.' },
-                            { stage: 'Step 4', trigger: 'Resistant hypertension (BP ≥140/90 on triple therapy)', therapy: 'Add low-dose spironolactone (if K+ ≤4.5 mmol/L) or α-/β-blocker if hyperkalaemia risk', notes: 'Seek specialist advice if still uncontrolled.' }
+                            { stage: 'Step 1', trigger: 'Clinic BP ≥140/90 mmHg', therapy: 'ACEI/ARB if <55y; CCB if ≥55y or Black African/Caribbean origin', notes: 'Avoid ACEI/ARB in pregnancy; discuss lifestyle interventions.' },
+                            { stage: 'Step 2', trigger: 'BP uncontrolled on Step 1', therapy: 'Combine ACEI/ARB + CCB', notes: 'Swap to thiazide-like diuretic if CCB not tolerated.' },
+                            { stage: 'Step 3', trigger: 'BP ≥140/90 after Step 2', therapy: 'Triple therapy ACEI/ARB + CCB + thiazide-like diuretic', notes: 'Check adherence and secondary causes.' },
+                            { stage: 'Step 4 / Resistant', trigger: 'BP uncontrolled on triple therapy', therapy: 'Add low-dose spironolactone (if K+ ≤4.5 mmol/L) or consider α-/β-blocker where spironolactone contraindicated', notes: 'Seek specialist advice for resistant cases; avoid combining ACEI + ARB.' },
+                            { stage: 'Pregnancy hypertension', trigger: 'Pregnancy with hypertension', therapy: 'First-line: labetalol or nifedipine modified-release; methyldopa as alternative', notes: 'Avoid ACEI/ARB; liaise with obstetric services for shared care.' },
+                            { stage: 'Accelerated/malignant hypertension', trigger: 'Severe BP with end-organ signs', therapy: 'Immediate same-day assessment/admission; urgent BP lowering as guided by specialist', notes: 'Red flags: papilloedema, malignant headache, visual changes, chest pain—admit immediately.' }
                         ]
                     },
                     {
                         key: 't2dm',
-                        title: 'Type 2 Diabetes – First-line to Intensification',
+                        title: 'Type 2 Diabetes – First-line to Intensification and Complex Cases',
                         shortTitle: 'Type 2 Diabetes',
                         reference: 'NICE NG28 (2024 amendment)',
-                        summary: 'Prioritise cardiovascular and renal protection with SGLT2 inhibitors for high-risk groups, layering therapies according to HbA1c and comorbidity burden.',
+                        summary: 'Prioritise cardiovascular and renal protection with SGLT2 inhibitors for high-risk groups; modify therapy across renal function, CVD and hypoglycaemia risk profiles.',
                         steps: [
-                            { stage: 'Foundation', trigger: 'New diagnosis', therapy: 'Lifestyle measures (dietary, physical activity) + structured education', notes: 'Review HbA1c at 3–6 months.' },
-                            { stage: 'Step 1', trigger: 'HbA1c above individualised target', therapy: 'Metformin (if eGFR ≥30); consider SGLT2 inhibitor first-line if CVD, CKD, or HF present', notes: 'Use modified-release if GI side effects.' },
-                            { stage: 'Step 2', trigger: 'HbA1c remains above target', therapy: 'Add SGLT2 inhibitor to metformin (or first-line if indicated); consider dual therapy with DPP-4 if SGLT2 unsuitable', notes: 'Monitor for ketoacidosis risk situations.' },
-                            { stage: 'Step 3', trigger: 'Further HbA1c elevation', therapy: 'Add GLP-1 receptor agonist (semaglutide, dulaglutide) especially with obesity/CVD', notes: 'Assess for weight-loss benefits and GI tolerance.' },
-                            { stage: 'Step 4', trigger: 'Persistent uncontrolled HbA1c', therapy: 'Initiate basal insulin (NPH or degludec) then progress to basal-bolus/mixed regimens if needed', notes: 'Continue metformin/SGLT2 if tolerated; review driving guidance.' }
+                            { stage: 'Foundation', trigger: 'New diagnosis', therapy: 'Lifestyle measures + structured education', notes: 'Review HbA1c at 3–6 months.' },
+                            { stage: 'Step 1', trigger: 'HbA1c above target', therapy: 'Metformin (if eGFR ≥30); consider SGLT2 first-line if CVD, HF or CKD present', notes: 'Stop metformin if eGFR <30 mL/min/1.73m²; SGLT2s (eg dapagliflozin) may be continued/initiated down to eGFR thresholds stated in product guidance (some agents to eGFR 20).' },
+                            { stage: 'CVD/CKD pathway', trigger: 'Established ASCVD, HF or CKD stage 3+', therapy: 'Prioritise SGLT2 inhibitor; add GLP-1 RA (semaglutide, dulaglutide) if additional weight loss/CV benefit needed or SGLT2 unsuitable', notes: 'Individualise therapy considering renal dosing and adverse effects.' },
+                            { stage: 'Hypoglycaemia risk', trigger: 'Older adults or drivers', therapy: 'Avoid or use low-dose sulfonylureas cautiously; consider agents with low hypoglycaemia risk (SGLT2, DPP-4, GLP-1)', notes: 'Provide DVLA/driver guidance for hypoglycaemia risk and self-monitoring.' },
+                            { stage: 'Insulin initiation', trigger: 'Persistent high HbA1c despite oral/injectable therapy', therapy: 'Start basal insulin and titrate; continue metformin if tolerated and not contraindicated', notes: 'Provide hypoglycaemia education and driving advice.' }
                         ]
                     },
                     {
                         key: 'mental-health',
-                        title: 'Depression & Anxiety – Stepped Care',
+                        title: 'Depression & Anxiety – Stepped Care + Complex Pathways',
                         shortTitle: 'Depression & Anxiety',
                         reference: 'NICE NG222 / CG113',
-                        summary: 'Match intervention intensity to symptom severity, escalating to combined pharmacological and psychological input for complex cases.',
+                        summary: 'Match intervention intensity to symptom severity; escalate to combined pharmacological and psychological input for complex or treatment-resistant cases.',
                         steps: [
-                            { stage: 'Step 1', trigger: 'Recognition in primary care or community settings', therapy: 'Detection, psychoeducation, active monitoring, signposting', notes: 'Address social needs and comorbidities.' },
-                            { stage: 'Step 2', trigger: 'Persistent mild to moderate symptoms', therapy: 'Low-intensity psychological interventions (guided self-help, digital CBT, group CBT)', notes: 'Offer perinatal-specific options where relevant.' },
-                            { stage: 'Step 3', trigger: 'Moderate to severe symptoms or insufficient response', therapy: 'SSRIs (sertraline first-line) plus high-intensity therapy (CBT/IPT/BA)', notes: 'Review risk, concordance, and side effects regularly.' },
-                            { stage: 'Step 4', trigger: 'Severe, chronic, or treatment-resistant presentations', therapy: 'Multidisciplinary psychiatric care, combined pharmacotherapy (augmentation, antipsychotics), crisis planning', notes: 'Consider ECT or specialist services.' }
+                            { stage: 'Step 1', trigger: 'Mild symptoms', therapy: 'Detection, psychoeducation, active monitoring', notes: 'Address social needs and refer to low-intensity psychological interventions.' },
+                            { stage: 'Step 2', trigger: 'Moderate symptoms', therapy: 'High-intensity psychological therapy (CBT, IPT) ± SSRI (sertraline first-line)', notes: 'Consider pregnancy/perinatal choices: sertraline preferred; avoid paroxetine where possible and discuss risks in pregnancy/breastfeeding.' },
+                            { stage: 'Treatment-resistant depression', trigger: 'Insufficient response to adequate therapy', therapy: 'Consider augmentation with mirtazapine or atypical antipsychotic (quetiapine, aripiprazole) and refer to secondary care', notes: 'Evaluate for bipolar disorder, adherence, and psychosocial factors.' },
+                            { stage: 'Crisis management', trigger: 'Suicidal ideation, severe risk, or psychiatric emergency', therapy: 'Immediate safety planning, urgent referral to crisis/home treatment team or emergency services', notes: 'Arrange 2-week urgent psychiatric review for high-risk but non-emergent presentations and ensure safety planning.' }
                         ]
                     },
                     {
                         key: 'epilepsy',
-                        title: 'Epilepsy – Antiseizure Medication Pathway',
+                        title: 'Epilepsy – Antiseizure Pathway & Emergencies',
                         shortTitle: 'Epilepsy ASM Pathway',
                         reference: 'NICE NG217 (2022)',
-                        summary: 'Optimise monotherapy before combining agents; involve tertiary services for refractory epilepsy or surgical evaluation.',
+                        summary: 'Optimise monotherapy before combining agents; manage emergencies with time-critical benzodiazepine administration and escalate to second-line IV agents and ICU when required.',
                         steps: [
-                            { stage: 'Step 1', trigger: 'New diagnosis of focal or generalised epilepsy', therapy: 'First-line monotherapy (lamotrigine, levetiracetam, carbamazepine per seizure type)', notes: 'Educate regarding adherence and SUDEP risk.' },
-                            { stage: 'Step 2', trigger: 'Seizures persist on therapeutic monotherapy', therapy: 'Switch to an alternative monotherapy appropriate for seizure classification', notes: 'Avoid abrupt withdrawal; overlap during transition.' },
-                            { stage: 'Step 3', trigger: 'Seizures persist after two monotherapies', therapy: 'Introduce dual therapy tailored to seizure type (e.g., lamotrigine + levetiracetam)', notes: 'Consider drug interactions and teratogenicity.' },
-                            { stage: 'Step 4', trigger: 'Drug-resistant epilepsy', therapy: 'Refer for epilepsy surgery evaluation, vagus nerve stimulation, ketogenic diet', notes: 'Access tertiary multidisciplinary team.' }
+                            { stage: 'Step 1', trigger: 'New diagnosis', therapy: 'Begin appropriate monotherapy (lamotrigine, levetiracetam, carbamazepine) per seizure type', notes: 'Counsel on adherence and driving restrictions.' },
+                            { stage: 'Status epilepticus (emergency)', trigger: 'Ongoing seizure >5 minutes or repeated seizures without recovery', therapy: 'First-line: buccal midazolam 10 mg (adult) or rectal diazepam per local dosing; IV lorazepam if IV access. Second-line: load levetiracetam or valproate IV; proceed to anaesthetic/ICU if refractory.', notes: 'Call critical care early for refractory status epilepticus; secure airway and consider continuous EEG.' },
+                            { stage: 'Refractory epilepsy', trigger: 'Two or more ASM failures', therapy: 'Refer for tertiary review, consider epilepsy surgery/VNS/keto diet', notes: 'Discuss specialist options and pregnancy considerations.' }
                         ]
                     },
                     {
@@ -255,11 +283,15 @@ class LaddersManager {
                         title: 'Chronic Primary Pain (Non-cancer) Measures',
                         shortTitle: 'Chronic Primary Pain',
                         reference: 'NICE NG193 (2021)',
-                        summary: 'Emphasise non-pharmacological management, reserving medicines and interventional options for carefully selected neuropathic presentations.',
+                        summary: 'Emphasise non-pharmacological management, reserving medicines and interventional options for carefully selected neuropathic presentations. Provide condition-specific neuropathic sub-pathways for common syndromes.',
                         steps: [
                             { stage: 'Step 1', trigger: 'Initial presentation', therapy: 'Education, supported self-management, graded exercise/physiotherapy', notes: 'Discuss realistic goals and flare management.' },
                             { stage: 'Step 2', trigger: 'Ongoing functional impairment', therapy: 'Psychological interventions (CBT, ACT, mindfulness)', notes: 'Encourage group programmes where available.' },
-                            { stage: 'Step 3', trigger: 'Neuropathic component identified', therapy: 'Neuropathic agents (duloxetine first-line; amitriptyline/gabapentinoids as alternatives)', notes: 'Avoid initiating strong opioids for chronic primary pain.' },
+                            { stage: 'Neuropathic sub-ladders', trigger: 'Neuropathic pain phenotype', therapy: 'Tailor first-line neuropathic agents to syndrome', notes: 'See sub-rows: Diabetic neuropathy, Post-herpetic neuralgia, Trigeminal neuralgia, CRPS.' },
+                            { stage: 'Diabetic neuropathy', trigger: 'Distal symmetric painful neuropathy', therapy: 'First-line: duloxetine or amitriptyline; alternatives: pregabalin/gabapentin; consider topical capsaicin 8% for localized pain', notes: 'Optimize glycaemic control and treat comorbid depression/anxiety.' },
+                            { stage: 'Post-herpetic neuralgia', trigger: 'Persistent neuropathic pain post-shingles', therapy: 'First-line: gabapentin/pregabalin or TCAs; consider topical lidocaine or capsaicin patches', notes: 'Refer for specialist pain therapies if refractory.' },
+                            { stage: 'Trigeminal neuralgia', trigger: 'Paroxysmal facial pain', therapy: 'First-line: carbamazepine or oxcarbazepine; neurosurgical review for refractory cases', notes: 'Avoid tricyclics where cardiovascular risk present; consider specialist neurologist referral early.' },
+                            { stage: 'CRPS (complex regional pain syndrome)', trigger: 'Severe regional pain with autonomic changes', therapy: 'Multidisciplinary approach: physiotherapy, analgesia, neuropathic agents and pain specialist review; consider sympathetic block where indicated', notes: 'Early specialist involvement improves outcomes.' },
                             { stage: 'Step 4', trigger: 'Persistent disabling pain despite above', therapy: 'Specialist interventional procedures (nerve blocks, spinal cord stimulation) or multidisciplinary pain service review', notes: 'Review opioid use—avoid long-term high-dose therapy.' }
                         ]
                     },
@@ -268,12 +300,14 @@ class LaddersManager {
                         title: 'Chronic Kidney Disease Intervention Algorithm',
                         shortTitle: 'CKD Intervention',
                         reference: 'NICE NG203 (2021)',
-                        summary: 'Slow progression through renoprotective drugs, cardiovascular risk reduction, and timely referral for advanced therapies.',
+                        summary: 'Slow progression through renoprotective drugs, cardiovascular risk reduction, and timely referral for advanced therapies. Include acute management for hyperkalaemia, anaemia algorithms and renal bone disease guidance.',
                         steps: [
                             { stage: 'Step 1', trigger: 'Albuminuria (ACR ≥3 mg/mmol) or hypertension', therapy: 'ACEI/ARB titrated to maximum tolerated dose', notes: 'Monitor creatinine and potassium within 2 weeks.' },
-                            { stage: 'Step 2', trigger: 'Type 2 diabetes or eGFR 20–45 with albuminuria', therapy: 'Add SGLT2 inhibitor (dapagliflozin, empagliflozin)', notes: 'Continue unless eGFR <20 and symptomatic.' },
-                            { stage: 'Step 3', trigger: 'BP above target or cardiovascular risk', therapy: 'Optimise BP control (target <140/90; <130/80 if ACR ≥70) + statin (atorvastatin 20mg)', notes: 'Include lifestyle and vaccination review.' },
-                            { stage: 'Step 4', trigger: 'Declining eGFR (<30) or complications', therapy: 'Refer to nephrology, plan for renal replacement, assess for anaemia, metabolic bone disease', notes: 'Discuss conservative management options.' }
+                            { stage: 'SGLT2 in CKD', trigger: 'Type 2 diabetes or eGFR 20–45 with albuminuria', therapy: 'Add SGLT2 inhibitor (dapagliflozin, empagliflozin) where indicated', notes: 'Continue unless eGFR drops below agent-specific thresholds; coordinate with nephrology if eGFR <20.' },
+                            { stage: 'Anaemia of CKD', trigger: 'Hb below target for CKD stage', therapy: 'Assess iron (ferritin, TSAT) and correct iron deficiency; consider ESA referral when appropriate', notes: 'Typical targets: ferritin >100 µg/L and TSAT >20% before ESA; refer to nephrology for ESA initiation per local protocol.' },
+                            { stage: 'Hyperkalaemia — immediate', trigger: 'K+ ≥6.0 mmol/L or ECG changes', therapy: 'Stabilise with IV calcium, shift K+ intracellularly with insulin + dextrose and nebulised salbutamol; consider sodium zirconium cyclosilicate for ongoing reduction and urgent nephrology advice for dialysis threshold', notes: 'Review ACEI/ARB use and potassium-sparing agents; balance long-term cardio-renal benefits vs hyperkalaemia risk.' },
+                            { stage: 'Renal bone disease', trigger: 'CKD-MBD biochemical abnormalities', therapy: 'Manage phosphate with binders, consider active vitamin D (calcitriol) if indicated and monitor PTH', notes: 'Refer to nephrology/endocrine for severe derangements.' },
+                            { stage: 'Step 4', trigger: 'Declining eGFR (<30) or complications', therapy: 'Refer to nephrology, plan for renal replacement therapy or conservative care', notes: 'Assess for anaemia, metabolic bone disease and prepare for RRT if required.' }
                         ]
                     },
                     {
@@ -566,6 +600,102 @@ class LaddersManager {
     }
 
     /**
+     * Initialize accessible accordion behavior for guideline ladder steps
+     */
+    initializeGuidelineAccordions() {
+        try {
+            // Inject minimal accordion styles if not already present
+            if (!document.getElementById('ladders-accordion-styles')) {
+                const s = document.createElement('style');
+                s.id = 'ladders-accordion-styles';
+                s.textContent = `
+                    .accordion-item { border-top: 1px solid var(--border-color,#e6e6e6); }
+                    .accordion-header { display:flex; align-items:center; justify-content:space-between; width:100%; padding:10px 12px; background:transparent; border:0; text-align:left; cursor:pointer; font-weight:700; }
+                    .accordion-header .chev { transition: transform 0.18s ease; }
+                    .accordion-item.open .accordion-header .chev { transform: rotate(90deg); }
+                    .accordion-body { padding: 8px 12px 16px 12px; display:none; font-size:0.95em; color:var(--secondary-text,#444); }
+                    .accordion-item.open .accordion-body { display:block; }
+                    .accordion-meta { font-size:0.9em; color:var(--muted,#666); margin-top:6px; }
+                `;
+                document.head.appendChild(s);
+            }
+
+            // Delegate clicks for accordions to container for robustness
+            const container = document.querySelector('.guideline-ladders-list');
+            if (!container) return;
+
+            if (this._guidelineAccordionHandler) {
+                try { container.removeEventListener('click', this._guidelineAccordionHandler); } catch (e) {}
+                this._guidelineAccordionHandler = null;
+            }
+
+            this._guidelineAccordionHandler = (e) => {
+                const btn = e.target.closest && e.target.closest('.accordion-header');
+                if (!btn) return;
+                const item = btn.closest('.accordion-item');
+                if (!item) return;
+                const willOpen = !item.classList.contains('open');
+                // Close other opened items in the same card (accordion behavior)
+                const siblings = item.parentElement.querySelectorAll('.accordion-item.open');
+                siblings.forEach(sib => {
+                    if (sib !== item) {
+                        sib.classList.remove('open');
+                        const sibBtn = sib.querySelector('.accordion-header');
+                        if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                if (willOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                } else {
+                    item.classList.remove('open');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            };
+
+            container.addEventListener('click', this._guidelineAccordionHandler);
+            console.log('✅ Guideline accordions initialized');
+        } catch (err) {
+            console.warn('⚠️ Failed to initialize guideline accordions', err);
+        }
+    }
+
+    /**
+     * Initialize pill-style tabs inside each guideline card (Overview / Step-by-step / Red flags / Complex cases)
+     */
+    initializeGuidelinePillTabs() {
+        try {
+            const container = document.querySelector('.guideline-ladders-list');
+            if (!container) return;
+
+            if (this._guidelinePillHandler) {
+                try { container.removeEventListener('click', this._guidelinePillHandler); } catch (e) {}
+                this._guidelinePillHandler = null;
+            }
+
+            this._guidelinePillHandler = (e) => {
+                const btn = e.target.closest && e.target.closest('.guideline-pill-btn');
+                if (!btn) return;
+                const card = btn.closest('.guideline-ladder-card');
+                if (!card) return;
+                const key = btn.getAttribute('data-pill');
+                const buttons = card.querySelectorAll('.guideline-pill-btn');
+                const contents = card.querySelectorAll('.pill-content');
+                buttons.forEach(b => b.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                const target = card.querySelector(`.pill-content[data-pill="${key}"]`);
+                if (target) target.classList.add('active');
+            };
+
+            container.addEventListener('click', this._guidelinePillHandler);
+            console.log('✅ Guideline pill tabs initialized');
+        } catch (err) {
+            console.warn('⚠️ Failed to initialize guideline pill tabs', err);
+        }
+    }
+
+    /**
      * Load and display ladders panel
      */
     loadLadders() {
@@ -626,6 +756,14 @@ class LaddersManager {
             setTimeout(() => {
                 this.initializeLadderTabs();
                 this.initializeGuidelineTabs();
+                // Initialize collapsible accordions for guideline steps
+                if (typeof this.initializeGuidelineAccordions === 'function') {
+                    try { this.initializeGuidelineAccordions(); } catch (e) { console.warn('Could not init guideline accordions', e); }
+                }
+                // Initialize pill tabs inside guidelines
+                if (typeof this.initializeGuidelinePillTabs === 'function') {
+                    try { this.initializeGuidelinePillTabs(); } catch (e) { console.warn('Could not init guideline pill tabs', e); }
+                }
                 // Verify tab elements exist after initialization
                 const btns = document.querySelectorAll('.ladder-tab-btn');
                 const contents = document.querySelectorAll('.ladder-tab-content');
@@ -681,6 +819,15 @@ class LaddersManager {
 
                         .guideline-ladders-grid { margin-top:16px; }
                         .guideline-ladders-list { width: 100%; }
+                            /* Pill tabs inside guideline cards */
+                            .guideline-pill-tabs { display:flex; gap:8px; overflow-x:auto; padding:6px 0 12px; }
+                            .guideline-pill-btn { background:var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:999px; padding:8px 12px; font-weight:600; cursor:pointer; white-space:nowrap; flex:0 0 auto; }
+                            .guideline-pill-btn.active { background:var(--primary-color); color:#fff; border-color:var(--primary-color); box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+                            .pill-content { display:none; }
+                            .pill-content.active { display:block; }
+
+                            /* Safety callout */
+                            .nice-warning { background: #ffe9e3; border-left: 4px solid #d73720; padding: 8px; border-radius: 6px; margin:8px 0; }
                         .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; width: 100%; }
                         .guideline-table-wrapper { width: 100%; }
                         .guideline-ladder-card h4 { margin:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
@@ -874,42 +1021,98 @@ class LaddersManager {
         const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
             ? this.laddersData.guidelines.clinicalPearls
             : [];
+        // Render as accessible accordion-style card for better mobile readability
+        const iconMap = {
+            asthma: '🌬️',
+            copd: '🫁',
+            hfref: '❤️',
+            hfmr: '❤️',
+            hfpef: '❤️',
+            epilepsy: '🧠',
+            t2dm: '🍬',
+            hypertension: '🩺',
+            alcohol: '🍷',
+            'chronic-pain': '🩺'
+        };
+
+        const ladderIcon = iconMap[ladder.key] || (this.laddersData.guidelines && this.laddersData.guidelines.icon) || '🧭';
+
+        const makeStepHtml = (step, idx) => {
+            const title = step.stage || ('Stage ' + (idx + 1));
+            const trigger = step.trigger || '';
+            const therapy = step.therapy || '';
+            const notes = step.notes || '';
+
+            // Determine if note is safety-critical and should be a callout
+            const safetyKeywords = ['refer', 'referral', 'icu', 'oxygen', 'stop', 'contraindic', 'life-threatening', 'hospital', 'admit'];
+            const isSafety = safetyKeywords.some(k => (notes + ' ' + therapy + ' ' + trigger).toLowerCase().includes(k));
+
+            return `
+                <div class="accordion-item" data-step-index="${idx}">
+                    <button class="accordion-header" type="button" aria-expanded="false">
+                        <span style="display:flex;flex-direction:column;align-items:flex-start;">
+                            <strong>${ladderIcon} ${title}</strong>
+                            <small class="accordion-meta">${trigger}</small>
+                        </span>
+                        <span class="chev">›</span>
+                    </button>
+                    <div class="accordion-body" role="region">
+                        <div class="accordion-therapy"><strong>Therapy:</strong><div style="margin-top:6px">${therapy}</div></div>
+                        ${notes ? (isSafety ? `<div class="nice-warning"><strong>Safety:</strong><div style="margin-top:6px">${notes}</div></div>` : `<div class="accordion-notes" style="margin-top:10px"><strong>Notes:</strong><div style="margin-top:6px">${notes}</div></div>`) : ''}
+                    </div>
+                </div>
+            `;
+        };
+
+        const stepsHtml = Array.isArray(ladder.steps) ? ladder.steps.map((s, i) => makeStepHtml(s, i)).join('') : '';
+
+        // Build filtered sections for pill tabs
+        const overviewHtml = `${ladder.summary || ''}`;
+        const redFlags = (Array.isArray(ladder.steps) ? ladder.steps.filter(s => (s.stage || '').toLowerCase().includes('life') || (s.trigger || '').toLowerCase().includes('life') || (s.notes || '').toLowerCase().includes('icu') || (s.trigger || '').toLowerCase().includes('spO2'.toLowerCase()) ) : []);
+        const complexFlags = (Array.isArray(ladder.steps) ? ladder.steps.filter(s => (s.stage || '').toLowerCase().includes('severe') || (s.stage || '').toLowerCase().includes('difficult') || (s.notes || '').toLowerCase().includes('phenotype') || (s.notes || '').toLowerCase().includes('biomarker')) : []);
+
+        const redFlagsHtml = redFlags.length ? redFlags.map((s, i) => `<div class="pill-flag">${s.stage}: ${s.trigger || ''} — ${s.therapy || ''} ${s.notes ? `<div class="nice-warning">${s.notes}</div>` : ''}</div>`).join('') : '<div class="pill-flag">No immediate red flags listed.</div>';
+        const complexHtml = complexFlags.length ? complexFlags.map((s, i) => `<div class="pill-complex"><strong>${s.stage}</strong><div>${s.therapy || ''}</div><div style="font-size:0.95em;color:var(--muted)">${s.notes || ''}</div></div>`).join('') : '<div class="pill-complex">No complex cases listed.</div>';
+
+        // Mini-summary box (one-line high-yield)
+        const miniSummary = ladder.summary ? `<div class="mini-summary" style="background:var(--pill-bg,#f3f4f6);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600">Core objective: ${ladder.summary.split('.').slice(0,1).join('').trim()}</div>` : '';
 
         return `
             <div class="ladder-section">
                 <h3>${ladder.title || ladder.shortTitle || '🧭 NICE Clinical Ladder'}</h3>
-                <p class="ladder-intro">${ladder.summary || ''}</p>
+                ${ladder.reference ? `<div style="margin-bottom:8px"><span class="guideline-badge">${ladder.reference}</span></div>` : ''}
+                ${miniSummary}
                 <div class="guideline-ladders-list">
                     <article class="guideline-ladder-card" id="guideline-${ladder.key}">
                         <div class="guideline-ladder-header">
-                            <h4>${ladder.shortTitle || ladder.title}</h4>
-                            ${ladder.reference ? `<span class="guideline-badge">${ladder.reference}</span>` : ''}
+                            <h4 style="margin:0">${ladderIcon} ${ladder.shortTitle || ladder.title}</h4>
                         </div>
-                        ${ladder.summary ? `<p class="guideline-meta">${ladder.summary}</p>` : ''}
-                        ${Array.isArray(ladder.steps) ? `
-                            <div class="guideline-table-wrapper">
-                                <table class="guideline-steps-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Stage</th>
-                                            <th>When to escalate</th>
-                                            <th>Therapy</th>
-                                            <th>Key notes</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        ${ladder.steps.map(step => `
-                                            <tr>
-                                                <td><strong>${step.stage}</strong></td>
-                                                <td>${step.trigger}</td>
-                                                <td>${step.therapy}</td>
-                                                <td>${step.notes || ''}</td>
-                                            </tr>
-                                        `).join('')}
-                                    </tbody>
-                                </table>
+
+                        <div class="guideline-pill-tabs" role="tablist" aria-label="Guideline sections">
+                            <button class="guideline-pill-btn active" data-pill="overview">Overview</button>
+                            <button class="guideline-pill-btn" data-pill="steps">Step-by-step</button>
+                            <button class="guideline-pill-btn" data-pill="redflags">Red flags</button>
+                            <button class="guideline-pill-btn" data-pill="complex">Complex cases</button>
+                        </div>
+
+                        <div class="pill-content active" data-pill="overview">
+                            <div class="guideline-meta">${overviewHtml}</div>
+                        </div>
+
+                        <div class="pill-content" data-pill="steps">
+                            <div class="guideline-accordion">
+                                ${stepsHtml}
                             </div>
-                        ` : ''}
+                        </div>
+
+                        <div class="pill-content" data-pill="redflags">
+                            ${redFlagsHtml}
+                        </div>
+
+                        <div class="pill-content" data-pill="complex">
+                            ${complexHtml}
+                        </div>
+
                     </article>
                 </div>
                 ${pearls.length ? `
