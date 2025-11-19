@@ -135,6 +135,169 @@ class LaddersManager {
                     'PPI protection: Consider if high-dose, elderly, or GI risk factors'
                 ]
             },
+            guidelines: {
+                name: 'NICE Treatment Pathways',
+                description: 'Stepwise escalation and de-escalation sequences aligned with current UK NICE/BTS-SIGN guidance.',
+                icon: '🧭',
+                steps: new Array(12).fill(null),
+                ladders: [
+                    {
+                        key: 'asthma',
+                        title: 'Asthma (Adults & Children) – Step-Up/Step-Down',
+                        reference: 'NICE NG245 / BTS-SIGN 2024',
+                        summary: 'Progress from reliever-only therapy to maintenance-and-reliever treatment, then add-on controllers and biologics while reviewing inhaler technique and adherence at each step.',
+                        steps: [
+                            { stage: 'Initial', trigger: 'Infrequent symptoms, no night waking', therapy: 'SABA as needed ± intermittent low-dose ICS whenever SABA used', notes: 'Educate on trigger avoidance and technique before escalation.' },
+                            { stage: 'Step 2', trigger: 'Symptoms ≥3/week or night waking', therapy: 'Daily low-dose ICS (or MART with low-dose ICS/formoterol if ≥12y)', notes: 'Consider leukotriene receptor antagonist (LTRA) in children <5y.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms despite low-dose ICS', therapy: 'Add LABA via fixed-dose ICS/LABA inhaler; offer MART (ICS-formoterol) for adults/adolescents.', notes: 'Ensure adherence before stepping up.' },
+                            { stage: 'Step 4', trigger: 'Uncontrolled on MART or low-dose ICS/LABA', therapy: 'Increase ICS to medium/high dose and/or add LTRA, LAMA (tiotropium) from 6y.', notes: 'Assess for phenotype-directed biologics if exacerbations continue.' },
+                            { stage: 'Step 5', trigger: 'Severe asthma with frequent exacerbations', therapy: 'Add-on biologics (omalizumab, mepolizumab, benralizumab, dupilumab) ± maintenance oral corticosteroids.', notes: 'Regularly attempt step-down after ≥3 months of good control.' }
+                        ]
+                    },
+                    {
+                        key: 'copd',
+                        title: 'COPD Stepwise Pharmacological Escalation',
+                        reference: 'NICE NG115 (2023 update)',
+                        summary: 'Escalate based on breathlessness/exacerbation risk, guided by eosinophil count and inhaler optimisation.',
+                        steps: [
+                            { stage: 'Initial', trigger: 'New diagnosis with intermittent symptoms', therapy: 'Short-acting bronchodilator (SABA or SAMA) PRN', notes: 'Offer pulmonary rehabilitation and smoking cessation concurrently.' },
+                            { stage: 'Step 2', trigger: 'Persistent breathlessness', therapy: 'Long-acting bronchodilator (LABA or LAMA) monotherapy', notes: 'Select device patient can use reliably.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms or exacerbations', therapy: 'Dual bronchodilation with LABA/LAMA', notes: 'Review within 3 months and check eosinophils.' },
+                            { stage: 'Step 4', trigger: 'Exacerbations with eosinophils ≥300 or asthma features', therapy: 'Triple therapy LABA/LAMA/ICS', notes: 'Monitor pneumonia risk and continue non-pharmacological support.' },
+                            { stage: 'Step 5', trigger: 'Severe exacerbations despite triple therapy', therapy: 'Add roflumilast (chronic bronchitis, FEV1 <50%) or long-term macrolide (azithromycin)', notes: 'Consider specialist referral for lung volume reduction/oxygen.' }
+                        ]
+                    },
+                    {
+                        key: 'hfref',
+                        title: 'Heart Failure with Reduced EF – Disease-Modifying Core',
+                        reference: 'NICE NG106 (2024 surveillance)',
+                        summary: 'Initiate foundational quadruple therapy promptly, titrating every 2–4 weeks to target doses before considering devices or advanced options.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Confirmed HFrEF (LVEF ≤40%)', therapy: 'Start ACEI (or ARB) and titrate upwards as tolerated', notes: 'Assess renal function and potassium after each change.' },
+                            { stage: 'Step 2', trigger: 'Within days of ACEI/ARB initiation', therapy: 'Add evidence-based β-blocker (bisoprolol, carvedilol, nebivolol)', notes: 'Delay only if fluid overloaded—optimise diuretics first.' },
+                            { stage: 'Step 3', trigger: 'Persistent symptoms', therapy: 'Add mineralocorticoid receptor antagonist (spironolactone or eplerenone)', notes: 'Monitor U&Es 1 week after dose change.' },
+                            { stage: 'Step 4', trigger: 'All above tolerated', therapy: 'Add SGLT2 inhibitor (dapagliflozin or empagliflozin) regardless of diabetes', notes: 'Benefits occur without titration; monitor renal function.' },
+                            { stage: 'Step 5', trigger: 'Ongoing symptoms despite quadruple therapy', therapy: 'Consider sacubitril/valsartan swap for ACEI/ARB, ivabradine if sinus rhythm HR ≥75, CRT/ICD for QRS ≥130ms.', notes: 'Refer to HF multidisciplinary team for device eligibility.' }
+                        ]
+                    },
+                    {
+                        key: 'hypertension',
+                        title: 'Hypertension Stepwise Therapy',
+                        reference: 'NICE NG136 (2023 update)',
+                        summary: 'Tailor first-line agent by age/ethnicity, then combine complementary mechanisms before considering resistant hypertension strategies.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Clinic BP ≥140/90 mmHg with confirmed diagnosis', therapy: 'ACEI/ARB if <55y; CCB (dihydropyridine) if ≥55y or Black African/Caribbean origin', notes: 'Offer lifestyle optimisation in parallel.' },
+                            { stage: 'Step 2', trigger: 'BP uncontrolled on Step 1', therapy: 'Combine ACEI/ARB + CCB', notes: 'Swap to thiazide-like diuretic if CCB not tolerated (ankle swelling).' },
+                            { stage: 'Step 3', trigger: 'BP ≥140/90 after Step 2', therapy: 'Triple therapy ACEI/ARB + CCB + thiazide-like diuretic (indapamide/chlortalidone)', notes: 'Check adherence, secondary causes.' },
+                            { stage: 'Step 4', trigger: 'Resistant hypertension (BP ≥140/90 on triple therapy)', therapy: 'Add low-dose spironolactone (if K+ ≤4.5 mmol/L) or α-/β-blocker if hyperkalaemia risk', notes: 'Seek specialist advice if still uncontrolled.' }
+                        ]
+                    },
+                    {
+                        key: 't2dm',
+                        title: 'Type 2 Diabetes – First-line to Intensification',
+                        reference: 'NICE NG28 (2024 amendment)',
+                        summary: 'Prioritise cardiovascular and renal protection with SGLT2 inhibitors for high-risk groups, layering therapies according to HbA1c and comorbidity burden.',
+                        steps: [
+                            { stage: 'Foundation', trigger: 'New diagnosis', therapy: 'Lifestyle measures (dietary, physical activity) + structured education', notes: 'Review HbA1c at 3–6 months.' },
+                            { stage: 'Step 1', trigger: 'HbA1c above individualised target', therapy: 'Metformin (if eGFR ≥30); consider SGLT2 inhibitor first-line if CVD, CKD, or HF present', notes: 'Use modified-release if GI side effects.' },
+                            { stage: 'Step 2', trigger: 'HbA1c remains above target', therapy: 'Add SGLT2 inhibitor to metformin (or first-line if indicated); consider dual therapy with DPP-4 if SGLT2 unsuitable', notes: 'Monitor for ketoacidosis risk situations.' },
+                            { stage: 'Step 3', trigger: 'Further HbA1c elevation', therapy: 'Add GLP-1 receptor agonist (semaglutide, dulaglutide) especially with obesity/CVD', notes: 'Assess for weight-loss benefits and GI tolerance.' },
+                            { stage: 'Step 4', trigger: 'Persistent uncontrolled HbA1c', therapy: 'Initiate basal insulin (NPH or degludec) then progress to basal-bolus/mixed regimens if needed', notes: 'Continue metformin/SGLT2 if tolerated; review driving guidance.' }
+                        ]
+                    },
+                    {
+                        key: 'mental-health',
+                        title: 'Depression & Anxiety – Stepped Care',
+                        reference: 'NICE NG222 / CG113',
+                        summary: 'Match intervention intensity to symptom severity, escalating to combined pharmacological and psychological input for complex cases.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Recognition in primary care or community settings', therapy: 'Detection, psychoeducation, active monitoring, signposting', notes: 'Address social needs and comorbidities.' },
+                            { stage: 'Step 2', trigger: 'Persistent mild to moderate symptoms', therapy: 'Low-intensity psychological interventions (guided self-help, digital CBT, group CBT)', notes: 'Offer perinatal-specific options where relevant.' },
+                            { stage: 'Step 3', trigger: 'Moderate to severe symptoms or insufficient response', therapy: 'SSRIs (sertraline first-line) plus high-intensity therapy (CBT/IPT/BA)', notes: 'Review risk, concordance, and side effects regularly.' },
+                            { stage: 'Step 4', trigger: 'Severe, chronic, or treatment-resistant presentations', therapy: 'Multidisciplinary psychiatric care, combined pharmacotherapy (augmentation, antipsychotics), crisis planning', notes: 'Consider ECT or specialist services.' }
+                        ]
+                    },
+                    {
+                        key: 'epilepsy',
+                        title: 'Epilepsy – Antiseizure Medication Pathway',
+                        reference: 'NICE NG217 (2022)',
+                        summary: 'Optimise monotherapy before combining agents; involve tertiary services for refractory epilepsy or surgical evaluation.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'New diagnosis of focal or generalised epilepsy', therapy: 'First-line monotherapy (lamotrigine, levetiracetam, carbamazepine per seizure type)', notes: 'Educate regarding adherence and SUDEP risk.' },
+                            { stage: 'Step 2', trigger: 'Seizures persist on therapeutic monotherapy', therapy: 'Switch to an alternative monotherapy appropriate for seizure classification', notes: 'Avoid abrupt withdrawal; overlap during transition.' },
+                            { stage: 'Step 3', trigger: 'Seizures persist after two monotherapies', therapy: 'Introduce dual therapy tailored to seizure type (e.g., lamotrigine + levetiracetam)', notes: 'Consider drug interactions and teratogenicity.' },
+                            { stage: 'Step 4', trigger: 'Drug-resistant epilepsy', therapy: 'Refer for epilepsy surgery evaluation, vagus nerve stimulation, ketogenic diet', notes: 'Access tertiary multidisciplinary team.' }
+                        ]
+                    },
+                    {
+                        key: 'osteoporosis',
+                        title: 'Osteoporosis Management Ladder',
+                        reference: 'NICE NG226 (2023)',
+                        summary: 'Stratify fracture risk, optimise calcium/vitamin D, and escalate antiresorptive/anabolic therapy with specialist input for very high-risk cohorts.',
+                        steps: [
+                            { stage: 'Assessment', trigger: 'Adults ≥50y with risk factors', therapy: 'FRAX/QFracture assessment + DEXA where indicated', notes: 'Address falls risk and secondary causes.' },
+                            { stage: 'Foundation', trigger: 'Confirmed vitamin D deficiency or inadequate intake', therapy: 'Vitamin D (800 IU) + calcium supplementation', notes: 'Advise weight-bearing exercise.' },
+                            { stage: 'Step 1', trigger: 'High fracture risk', therapy: 'First-line oral bisphosphonate (alendronate/risedronate) for 5 years', notes: 'Check renal function and dental status.' },
+                            { stage: 'Step 2', trigger: 'Oral therapy intolerance or very high risk', therapy: 'IV zoledronate yearly or denosumab 60mg SC q6m', notes: 'Plan transition to avoid rebound vertebral fractures.' },
+                            { stage: 'Step 3', trigger: 'Severe osteoporosis (multiple fractures/very high risk)', therapy: 'Specialist anabolic options (romosozumab for 12 months, teriparatide for 24 months)', notes: 'Follow with antiresorptive to maintain gains.' }
+                        ]
+                    },
+                    {
+                        key: 'chronic-pain',
+                        title: 'Chronic Primary Pain (Non-cancer) Measures',
+                        reference: 'NICE NG193 (2021)',
+                        summary: 'Emphasise non-pharmacological management, reserving medicines and interventional options for carefully selected neuropathic presentations.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Initial presentation', therapy: 'Education, supported self-management, graded exercise/physiotherapy', notes: 'Discuss realistic goals and flare management.' },
+                            { stage: 'Step 2', trigger: 'Ongoing functional impairment', therapy: 'Psychological interventions (CBT, ACT, mindfulness)', notes: 'Encourage group programmes where available.' },
+                            { stage: 'Step 3', trigger: 'Neuropathic component identified', therapy: 'Neuropathic agents (duloxetine first-line; amitriptyline/gabapentinoids as alternatives)', notes: 'Avoid initiating strong opioids for chronic primary pain.' },
+                            { stage: 'Step 4', trigger: 'Persistent disabling pain despite above', therapy: 'Specialist interventional procedures (nerve blocks, spinal cord stimulation) or multidisciplinary pain service review', notes: 'Review opioid use—avoid long-term high-dose therapy.' }
+                        ]
+                    },
+                    {
+                        key: 'ckd',
+                        title: 'Chronic Kidney Disease Intervention Algorithm',
+                        reference: 'NICE NG203 (2021)',
+                        summary: 'Slow progression through renoprotective drugs, cardiovascular risk reduction, and timely referral for advanced therapies.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Albuminuria (ACR ≥3 mg/mmol) or hypertension', therapy: 'ACEI/ARB titrated to maximum tolerated dose', notes: 'Monitor creatinine and potassium within 2 weeks.' },
+                            { stage: 'Step 2', trigger: 'Type 2 diabetes or eGFR 20–45 with albuminuria', therapy: 'Add SGLT2 inhibitor (dapagliflozin, empagliflozin)', notes: 'Continue unless eGFR <20 and symptomatic.' },
+                            { stage: 'Step 3', trigger: 'BP above target or cardiovascular risk', therapy: 'Optimise BP control (target <140/90; <130/80 if ACR ≥70) + statin (atorvastatin 20mg)', notes: 'Include lifestyle and vaccination review.' },
+                            { stage: 'Step 4', trigger: 'Declining eGFR (<30) or complications', therapy: 'Refer to nephrology, plan for renal replacement, assess for anaemia, metabolic bone disease', notes: 'Discuss conservative management options.' }
+                        ]
+                    },
+                    {
+                        key: 'alcohol',
+                        title: 'Alcohol Dependence – Stepped Interventions',
+                        reference: 'NICE CG115',
+                        summary: 'Start with identification and brief advice, progressing to pharmacological support or inpatient detox according to dependence severity.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Opportunistic contact', therapy: 'Identification and brief advice (AUDIT-C screening, motivational interviewing)', notes: 'Document units and readiness to change.' },
+                            { stage: 'Step 2', trigger: 'Hazardous/harmful use', therapy: 'Extended brief interventions, psychosocial therapy, facilitated self-help', notes: 'Involve family/support networks.' },
+                            { stage: 'Step 3', trigger: 'Moderate to severe dependence', therapy: 'Structured community psychological programmes + pharmacotherapy (acamprosate, disulfiram, naltrexone)', notes: 'Ensure thiamine supplementation.' },
+                            { stage: 'Step 4', trigger: 'High-risk withdrawal or failed community detox', therapy: 'Inpatient medically assisted withdrawal/detoxification', notes: 'Plan relapse prevention and aftercare on discharge.' }
+                        ]
+                    },
+                    {
+                        key: 'smoking',
+                        title: 'Smoking Cessation Ladder',
+                        reference: 'NICE NG209 (2021)',
+                        summary: 'Combine very brief advice with behavioural support and pharmacotherapy; escalate to specialist services for complex cases.',
+                        steps: [
+                            { stage: 'Step 1', trigger: 'Every clinical encounter', therapy: 'Very brief advice (ASK-ADVISE-ACT) + offer referral', notes: 'Document smoking status as vital sign.' },
+                            { stage: 'Step 2', trigger: 'Ready to quit', therapy: 'Behavioural support (face-to-face, telephone, digital) with personalised quit plan', notes: 'Set quit date within 2 weeks.' },
+                            { stage: 'Step 3', trigger: 'Pharmacotherapy decision', therapy: 'NRT combination therapy, varenicline, or nicotine-containing e-cigarettes', notes: 'Continue for ≥12 weeks with follow-up.' },
+                            { stage: 'Step 4', trigger: 'Complex dependence or repeated relapse', therapy: 'Referral to specialist tobacco dependence services', notes: 'Consider dual therapy (varenicline + NRT) with close monitoring.' }
+                        ]
+                    }
+                ],
+                clinicalPearls: [
+                    'Always review inhaler technique, adherence, and comorbidities before stepping up respiratory ladders.',
+                    'Escalation should be paired with a plan to reassess and step down once control is maintained for ≥3 months.',
+                    'Use multidisciplinary teams (HF nurses, diabetes specialist teams, pain services) to optimise complex therapy.',
+                    'Document shared decision-making, especially when initiating biologics, advanced devices, or high-cost agents.'
+                ]
+            },
             pain: {
                 name: 'WHO Analgesic Ladder',
                 description: 'Stepwise approach to pain management',
@@ -365,6 +528,7 @@ class LaddersManager {
                     <div class="ladder-tabs">
                         <button class="ladder-tab-btn active" data-ladder="steroids">💊 Steroid Ladder</button>
                         <button class="ladder-tab-btn" data-ladder="pain">🎚️ Pain Ladder</button>
+                        <button class="ladder-tab-btn" data-ladder="guidelines">🧭 NICE Ladders</button>
                     </div>
                     
                     <!-- Steroid Ladder Tab Content -->
@@ -375,6 +539,11 @@ class LaddersManager {
                     <!-- Pain Ladder Tab Content -->
                     <div id="pain-ladder" class="ladder-tab-content">
                         ${this.renderPainLadder()}
+                    </div>
+
+                    <!-- Guideline Ladders Tab Content -->
+                    <div id="guidelines-ladder" class="ladder-tab-content">
+                        ${this.renderGuidelineLadders()}
                     </div>
                 </div>
             `;
@@ -425,6 +594,15 @@ class LaddersManager {
 
                         .opioid-conversion-table table { width:100%; border-collapse:collapse }
                         .opioid-conversion-table td, .opioid-conversion-table th { padding:8px; border-bottom:1px solid var(--border) }
+
+                        .guideline-ladders-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:16px; }
+                        .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+                        .guideline-ladder-card h4 { margin:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+                        .guideline-meta { font-size:0.9em; color:var(--secondary-text,#555); }
+                        .guideline-steps-table { width:100%; border-collapse:collapse; font-size:0.92em; }
+                        .guideline-steps-table th, .guideline-steps-table td { padding:6px; border-bottom:1px solid var(--border-color,#e4e4e7); vertical-align:top; }
+                        .guideline-steps-table th { background:var(--table-header-bg,rgba(0,0,0,0.03)); font-weight:600; }
+                        .guideline-badge { display:inline-flex; align-items:center; background:var(--pill-bg,#eef2ff); color:var(--pill-text,#4338ca); border-radius:999px; padding:2px 10px; font-size:0.85em; }
 
                         @media (max-width: 640px) {
                             .ladder-step { grid-template-columns: 48px 1fr; }
@@ -598,8 +776,65 @@ class LaddersManager {
     }
 
     /**
+     * Render NICE guideline ladders content
+     * @returns {string} HTML content for guideline ladders
+     */
+    renderGuidelineLadders() {
+        const guidelineData = this.laddersData.guidelines || {};
+        const laddersArr = Array.isArray(guidelineData.ladders) ? guidelineData.ladders : [];
+        const pearls = Array.isArray(guidelineData.clinicalPearls) ? guidelineData.clinicalPearls : [];
+
+        const ladderCards = laddersArr.map(ladder => `
+            <article class="guideline-ladder-card" id="ladder-${ladder.key}">
+                <h4>${ladder.title} <span class="guideline-badge">${ladder.reference}</span></h4>
+                <p class="guideline-meta">${ladder.summary}</p>
+                ${Array.isArray(ladder.steps) ? `
+                    <div class="guideline-table-wrapper">
+                        <table class="guideline-steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Stage</th>
+                                    <th>When to escalate</th>
+                                    <th>Therapy</th>
+                                    <th>Key notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${ladder.steps.map(step => `
+                                    <tr>
+                                        <td><strong>${step.stage}</strong></td>
+                                        <td>${step.trigger}</td>
+                                        <td>${step.therapy}</td>
+                                        <td>${step.notes || ''}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                ` : ''}
+            </article>
+        `).join('');
+
+        return `
+            <div class="ladder-section">
+                <h3>🧭 NICE Clinical Treatment Ladders</h3>
+                <p class="ladder-intro">${guidelineData.description || 'Concise, guideline-aligned stepwise escalation pathways for common long-term conditions.'}</p>
+                <div class="guideline-ladders-grid">
+                    ${ladderCards}
+                </div>
+                <div class="clinical-pearl">
+                    <h4>💡 Implementation Pearls</h4>
+                    <ul>
+                        ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
      * Switch to a specific ladder tab
-     * @param {string} ladderType - Type of ladder ('steroids' or 'pain')
+     * @param {string} ladderType - Type of ladder (e.g. 'steroids', 'pain', 'guidelines')
      */
     switchToLadder(ladderType) {
         const tabButtons = document.querySelectorAll('.ladder-tab-btn');
@@ -706,7 +941,8 @@ class LaddersManager {
         const painStepsCount = this.laddersData.pain.steps.length;
         const adjuvantCount = Object.keys(this.laddersData.pain.adjuvants).length;
         const conversionCount = this.laddersData.pain.conversions.length;
-        
+        const guidelineCount = (this.laddersData.guidelines.ladders || []).length;
+
         return {
             totalLadders: Object.keys(this.laddersData).length,
             steroids: {
@@ -717,6 +953,9 @@ class LaddersManager {
                 steps: painStepsCount,
                 adjuvantTypes: adjuvantCount,
                 conversions: conversionCount
+            },
+            guidelines: {
+                ladders: guidelineCount
             }
         };
     }
