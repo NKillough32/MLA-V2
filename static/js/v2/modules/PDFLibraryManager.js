@@ -539,16 +539,68 @@ export class PDFLibraryManager {
             return [];
         }
 
-        const searchTerm = query.toLowerCase();
+        const searchTerm = String(query).toLowerCase();
         const results = [];
 
-        for (const filename of this.pdfIndex) {
-            if (filename.toLowerCase().includes(searchTerm)) {
-                results.push({
-                    filename: filename,
-                    title: this.getDisplayTitle(filename),
-                    category: this.categorizePDF(filename)
-                });
+        for (const filename of (this.pdfIndex || [])) {
+            try {
+                const lowerFilename = String(filename || '').toLowerCase();
+                let matched = false;
+
+                // 1) Match against filename
+                if (lowerFilename.includes(searchTerm)) {
+                    matched = true;
+                }
+
+                // 2) Match against formatted/display title
+                if (!matched) {
+                    const displayTitle = String(this.getDisplayTitle(filename) || '').toLowerCase();
+                    if (displayTitle.includes(searchTerm)) matched = true;
+                }
+
+                // 3) Match against metadata if available (displayTitle, subjectTagline, keywordSummary, keywords)
+                if (!matched && this.metadataMap && typeof this.metadataMap.get === 'function') {
+                    try {
+                        const filenameBase = String(filename || '').replace(/\.pdf$/i, '').trim();
+                        const metaKey = normalizePdfTitleKey(filenameBase);
+                        if (this.metadataMap.has(metaKey)) {
+                            const meta = this.metadataMap.get(metaKey) || {};
+                            const fieldsToCheck = [];
+
+                            if (meta.displayTitle) fieldsToCheck.push(String(meta.displayTitle));
+                            if (meta.subjectTitle) fieldsToCheck.push(String(meta.subjectTitle));
+                            if (meta.subjectTagline) fieldsToCheck.push(String(meta.subjectTagline));
+                            if (meta.displayTagline) fieldsToCheck.push(String(meta.displayTagline));
+                            if (meta.keywordSummary) fieldsToCheck.push(String(meta.keywordSummary));
+
+                            if (Array.isArray(meta.keywords)) {
+                                for (const kw of meta.keywords) fieldsToCheck.push(String(kw));
+                            } else if (meta.keywords && typeof meta.keywords === 'string') {
+                                fieldsToCheck.push(String(meta.keywords));
+                            }
+
+                            for (const txt of fieldsToCheck) {
+                                if (!txt) continue;
+                                if (txt.toLowerCase().includes(searchTerm)) {
+                                    matched = true;
+                                    break;
+                                }
+                            }
+                        }
+                    } catch (metaErr) {
+                        console.debug('PDF search metadata check failed for', filename, metaErr);
+                    }
+                }
+
+                if (matched) {
+                    results.push({
+                        filename: filename,
+                        title: this.getDisplayTitle(filename),
+                        category: this.categorizePDF(filename)
+                    });
+                }
+            } catch (e) {
+                console.warn('⚠️ searchPDFs entry check failed for', filename, e);
             }
         }
 
