@@ -147,6 +147,11 @@ class LaddersManager {
                         shortTitle: 'Asthma Step-Up/Down',
                         reference: 'NICE NG245 / BTS-SIGN 2024',
                         summary: 'Progress from reliever-only therapy to maintenance-and-reliever treatment, then add-on controllers and biologics while reviewing inhaler technique and adherence at each step. MART (maintenance-and-reliever therapy) licensed inhalers in the UK include Fostair (beclometasone/formoterol) and Symbicort (budesonide/formoterol). Always check the product SPC for the maximum licensed daily formoterol dose (some preparations have maxima ≈ 54 µg/day); avoid exceeding licensed formoterol limits.',
+                        clinicalPearls: [
+                            'Check inhaler technique and adherence before stepping up; address triggers and smoking/vaping exposure.',
+                            'Use licensed MART products and stay within maximum daily formoterol doses when combining maintenance and reliever use.',
+                            'Plan step-down once control is maintained for >=3 months and ensure spacer availability for ICS devices.'
+                        ],
                         steps: [
                             { stage: 'Paediatric pathways', trigger: '<5y / 5–11y / ≥12y', therapy: '<5y: focus on as-needed SABA and consider specialist review before any controller; trial of low-dose nebulised/low-dose inhaled ICS under paediatric advice. 5–11y: consider daily low-dose ICS, LTRA (montelukast) or MART where licensed for the age and inhaler device. ≥12y: consider MART (licensed ICS/formoterol inhalers such as Fostair, Symbicort) as maintenance-and-reliever therapy when appropriate; tailor device and dosing by age and ability.', notes: 'Involve paediatric respiratory team for recurrent or severe disease; ensure spacer/device education.' },
                             { stage: 'Initial', trigger: 'Infrequent symptoms, no night waking', therapy: 'SABA PRN ± intermittent low-dose ICS when SABA used', notes: 'Educate on trigger avoidance, inhaler technique and adherence; review smoking exposure.' },
@@ -164,6 +169,11 @@ class LaddersManager {
                         shortTitle: 'COPD Escalation',
                         reference: 'NICE NG115 (2023 update)',
                         summary: 'Escalate based on symptoms, exacerbation risk and eosinophil phenotype. Treat exacerbations promptly with controlled oxygen, short course steroids and selected antibiotics when indicated.',
+                        clinicalPearls: [
+                            'Repeat eosinophils before adding ICS or triple therapy; prioritise dual bronchodilation first.',
+                            'Pulmonary rehabilitation, vaccination, and inhaler training reduce exacerbations as much as medication changes.',
+                            'Arrange post-exacerbation review within 4-6 weeks to reassess device technique and recovery.'
+                        ],
                         steps: [
                             { stage: 'Initial', trigger: 'New diagnosis with intermittent symptoms', therapy: 'SABA or SAMA PRN; offer smoking cessation and pulmonary rehabilitation', notes: 'Ensure accurate inhaler technique and review comorbidities.' },
                             { stage: 'Step 2', trigger: 'Persistent breathlessness', therapy: 'Start single long-acting bronchodilator (LABA or LAMA) and review', notes: 'Choose device patient can use reliably.' },
@@ -180,6 +190,12 @@ class LaddersManager {
                         shortTitle: 'HFrEF Optimisation',
                         reference: 'NICE NG106 (2024 surveillance)',
                         summary: 'Initiate foundational therapy promptly (ACEI/ARB/ARNI, β-blocker, MRA, SGLT2) and titrate to target doses as tolerated; consider devices and specialist referral for advanced therapies.',
+                        
+                        clinicalPearls: [
+                            'Start all four pillars early at low dose and uptitrate every 2-4 weeks rather than perfecting one agent at a time.',
+                            'Check U&Es and potassium 1-2 weeks after ACEI/ARB/ARNI or MRA changes; avoid stopping for <30% creatinine rise unless symptomatic.',
+                            'Maintain euvolaemia with loop diuretics but avoid stopping disease-modifying therapy unless true intolerance.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Confirmed HFrEF (LVEF ≤40%)', therapy: 'Start ACEI (or ARB) and titrate; where appropriate consider sacubitril/valsartan (ARNI) after stopping ACEI with recommended washout.', notes: 'Assess renal function and potassium within 1–2 weeks of dose changes; consider early initiation of other foundational agents.' },
                             { stage: 'Step 2', trigger: 'Early follow-up', therapy: 'Add evidence-based β-blocker (bisoprolol, carvedilol, nebivolol) and uptitrate as tolerated; initiate mineralocorticoid receptor antagonist (spironolactone/eplerenone) when indicated.', notes: 'Delay initiation only if unstable or fluid overloaded—optimise diuretics first; monitor U&Es.' },
@@ -196,6 +212,11 @@ class LaddersManager {
                         shortTitle: 'HFmrEF (EF 41–49%)',
                         reference: 'NICE / ESC consensus',
                         summary: 'Patients with LVEF 41–49% may benefit from similar therapies to HFrEF; evidence is less robust but consider disease-modifying therapy guided by symptoms and comorbidities.',
+                        
+                        clinicalPearls: [
+                            'Treat like HFrEF where tolerated; SGLT2 inhibitors and ACEI/ARB/ARNI are reasonable for symptomatic patients.',
+                            'Hunt for reversible drivers (uncontrolled hypertension, AF with rapid rate, ischaemia) before assuming refractory disease.',
+                        ],
                         steps: [
                             { stage: 'Assessment', trigger: 'LVEF 41–49%', therapy: 'Treat comorbidities; consider ACEI/ARB/ARNI and β-blocker where indicated', notes: 'Consider SGLT2 inhibitor in symptomatic patients given emerging evidence.' },
                             { stage: 'Referral', trigger: 'Ongoing symptoms or deterioration', therapy: 'Referral to HF specialist for consideration of advanced therapies or trial eligibility', notes: 'Shared decision-making important due to less definitive evidence base.' }
@@ -208,6 +229,12 @@ class LaddersManager {
                         shortTitle: 'HFpEF',
                         reference: 'NICE / ESC 2023-24 updates',
                         summary: 'Management focuses on targeted therapy for congestion, BP control, rate control for AF and SGLT2 inhibitors for outcome benefit in selected patients.',
+                        
+                        clinicalPearls: [
+                            'Tight BP control and judicious diuresis are the core levers; avoid hypovolaemia in older adults.',
+                            'Manage AF aggressively (rate or rhythm) to reduce decompensation risk.',
+                            'Use SGLT2 inhibitors for symptomatic HFpEF if licensed and eGFR allows.',
+                        ],
                         steps: [
                             { stage: 'Symptom control', trigger: 'Clinical signs of congestion', therapy: 'Diuretics to control fluid overload', notes: 'Monitor renal function and electrolytes.' },
                             { stage: 'Comorbidity optimisation', trigger: 'AF, hypertension, IHD, CKD', therapy: 'Control AF rate/rhythm, strict BP control, address ischaemia', notes: 'ACEI/ARB/β-blocker only if other indications present.' },
@@ -221,6 +248,12 @@ class LaddersManager {
                         shortTitle: 'Hypertension',
                         reference: 'NICE NG136 (2023 update)',
                         summary: 'Tailor therapy by age, ethnicity and pregnancy status; escalate using complementary drug classes and investigate secondary causes for resistant hypertension.',
+                        
+                        clinicalPearls: [
+                            'Confirm diagnosis and escalation decisions with home or ambulatory readings, not single clinic values.',
+                            'Recheck creatinine and electrolytes 2-4 weeks after starting or increasing RAAS blockade or thiazide-like diuretics.',
+                            'Avoid ACEI + ARB combinations; counsel on NSAID use and pregnancy risks when choosing agents.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Clinic BP ≥140/90 mmHg', therapy: 'ACEI/ARB if <55y; CCB if ≥55y or Black African/Caribbean origin', notes: 'Avoid ACEI/ARB in pregnancy; discuss lifestyle interventions.' },
                             { stage: 'Step 2', trigger: 'BP uncontrolled on Step 1', therapy: 'Combine ACEI/ARB + CCB', notes: 'Swap to thiazide-like diuretic if CCB not tolerated.' },
@@ -236,6 +269,12 @@ class LaddersManager {
                         shortTitle: 'Type 2 Diabetes',
                         reference: 'NICE NG28 (2024 amendment)',
                         summary: 'Prioritise cardiovascular and renal protection with SGLT2 inhibitors for high-risk groups; modify therapy across renal function, CVD and hypoglycaemia risk profiles.',
+                        
+                        clinicalPearls: [
+                            'Prioritise an SGLT2 inhibitor if CVD, CKD, or HF is present, even if metformin is not tolerated.',
+                            'Individualise HbA1c targets - relax goals in frailty or high hypoglycaemia risk - and review every 3-6 months.',
+                            'Teach sick-day rules, foot care, and injection technique (GLP-1/insulin); reassess adherence before intensifying.',
+                        ],
                         steps: [
                             { stage: 'Foundation', trigger: 'New diagnosis', therapy: 'Lifestyle measures + structured education', notes: 'Review HbA1c at 3–6 months.' },
                             { stage: 'Step 1', trigger: 'HbA1c above target', therapy: 'Metformin (if eGFR ≥30); consider SGLT2 first-line if CVD, HF or CKD present', notes: 'Stop metformin if eGFR <30 mL/min/1.73m²; SGLT2s (eg dapagliflozin) may be continued/initiated down to eGFR thresholds stated in product guidance (some agents to eGFR 20).' },
@@ -250,6 +289,12 @@ class LaddersManager {
                         shortTitle: 'Depression & Anxiety',
                         reference: 'NICE NG222 / CG113',
                         summary: 'Match intervention intensity to symptom severity; escalate to combined pharmacological and psychological input for complex or treatment-resistant cases.',
+                        
+                        clinicalPearls: [
+                            'Screen for suicide risk and bipolar features before and after starting antidepressants.',
+                            'Allow 4-6 weeks at a therapeutic dose before switching; avoid multi-drug augmentation without specialist input.',
+                            'Pair medication with structured psychological therapy and plan early follow-up after initiation or dose change.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Mild symptoms', therapy: 'Detection, psychoeducation, active monitoring', notes: 'Address social needs and refer to low-intensity psychological interventions.' },
                             { stage: 'Step 2', trigger: 'Moderate symptoms', therapy: 'High-intensity psychological therapy (CBT, IPT) ± SSRI (sertraline first-line)', notes: 'Consider pregnancy/perinatal choices: sertraline preferred; avoid paroxetine where possible and discuss risks in pregnancy/breastfeeding.' },
@@ -263,6 +308,12 @@ class LaddersManager {
                         shortTitle: 'Epilepsy ASM Pathway',
                         reference: 'NICE NG217 (2022)',
                         summary: 'Optimise monotherapy before combining agents; manage emergencies with time-critical benzodiazepine administration and escalate to second-line IV agents and ICU when required.',
+                        
+                        clinicalPearls: [
+                            'Reinforce adherence and avoidance of triggers (sleep loss, alcohol excess); check for interacting medicines.',
+                            'Discuss contraception and folic acid with women of childbearing potential; avoid valproate where alternatives exist.',
+                            'Revisit driving, occupation, and safety advice after seizures and when adjusting therapy.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'New diagnosis', therapy: 'Begin appropriate monotherapy (lamotrigine, levetiracetam, carbamazepine) per seizure type', notes: 'Counsel on adherence and driving restrictions.' },
                             { stage: 'Status epilepticus (emergency)', trigger: 'Ongoing seizure >5 minutes or repeated seizures without recovery', therapy: 'First-line: buccal midazolam 10 mg (adult) or rectal diazepam per local dosing; IV lorazepam if IV access. Second-line: load levetiracetam or valproate IV; proceed to anaesthetic/ICU if refractory.', notes: 'Call critical care early for refractory status epilepticus; secure airway and consider continuous EEG.' },
@@ -275,6 +326,12 @@ class LaddersManager {
                         shortTitle: 'Osteoporosis',
                         reference: 'NICE NG226 (2023)',
                         summary: 'Stratify fracture risk, optimise calcium/vitamin D, and escalate antiresorptive/anabolic therapy with specialist input for very high-risk cohorts.',
+                        
+                        clinicalPearls: [
+                            'Ensure adequate calcium/vitamin D before and during bisphosphonate or denosumab therapy.',
+                            'Arrange dental review before IV bisphosphonate/denosumab and advise on jaw pain or dental issues promptly.',
+                            'Plan duration/drug holidays by fracture risk; reassess renal function and BMD before extending therapy.',
+                        ],
                         steps: [
                             { stage: 'Assessment', trigger: 'Adults ≥50y with risk factors', therapy: 'FRAX/QFracture assessment + DEXA where indicated', notes: 'Address falls risk and secondary causes.' },
                             { stage: 'Foundation', trigger: 'Confirmed vitamin D deficiency or inadequate intake', therapy: 'Vitamin D (800 IU) + calcium supplementation', notes: 'Advise weight-bearing exercise.' },
@@ -289,6 +346,12 @@ class LaddersManager {
                         shortTitle: 'Chronic Primary Pain',
                         reference: 'NICE NG193 (2021)',
                         summary: 'Emphasise non-pharmacological management, reserving medicines and interventional options for carefully selected neuropathic presentations. Provide condition-specific neuropathic sub-pathways for common syndromes.',
+                        
+                        clinicalPearls: [
+                            'Agree functional goals and pacing plans up front; avoid escalating long-term opioid doses for chronic primary pain.',
+                            'Screen and treat mood and sleep disorders that perpetuate pain; use psychologically informed therapy early.',
+                            'Reassess gabapentinoid/TCA benefit regularly and taper if ineffective or causing sedation or falls risk.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Initial presentation', therapy: 'Education, supported self-management, graded exercise/physiotherapy', notes: 'Discuss realistic goals and flare management.' },
                             { stage: 'Step 2', trigger: 'Ongoing functional impairment', therapy: 'Psychological interventions (CBT, ACT, mindfulness)', notes: 'Encourage group programmes where available.' },
@@ -306,6 +369,12 @@ class LaddersManager {
                         shortTitle: 'CKD Intervention',
                         reference: 'NICE NG203 (2021)',
                         summary: 'Slow progression through renoprotective drugs, cardiovascular risk reduction, and timely referral for advanced therapies. Include acute management for hyperkalaemia, anaemia algorithms and renal bone disease guidance.',
+                        
+                        clinicalPearls: [
+                            'Optimise BP (target <130/80 with albuminuria) and RAAS blockade; titrate slowly with close monitoring.',
+                            'Recheck potassium and creatinine 1-2 weeks after RAAS/MRA or SGLT2 changes and stop NSAIDs where possible.',
+                            'Dose-adjust renally cleared drugs and keep vaccinations (influenza, pneumococcal, hepatitis B) up to date.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Albuminuria (ACR ≥3 mg/mmol) or hypertension', therapy: 'ACEI/ARB titrated to maximum tolerated dose', notes: 'Monitor creatinine and potassium within 2 weeks.' },
                             { stage: 'SGLT2 in CKD', trigger: 'Type 2 diabetes or eGFR 20–45 with albuminuria', therapy: 'Add SGLT2 inhibitor (dapagliflozin, empagliflozin) where indicated', notes: 'Continue unless eGFR drops below agent-specific thresholds; coordinate with nephrology if eGFR <20.' },
@@ -321,6 +390,12 @@ class LaddersManager {
                         shortTitle: 'Alcohol Dependence',
                         reference: 'NICE CG115',
                         summary: 'Start with identification and brief advice, progressing to pharmacological support or inpatient detox according to dependence severity.',
+                        
+                        clinicalPearls: [
+                            'Give prophylactic thiamine (oral or IV) in dependence, malnutrition, or before withdrawal to prevent Wernicke\'s.',
+                            'Assess withdrawal risk (history of seizures/DTs, high AUDIT score) to decide on community versus inpatient detox.',
+                            'Pair pharmacotherapy with psychosocial support and relapse-prevention follow-up soon after detox.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Opportunistic contact', therapy: 'Identification and brief advice (AUDIT-C screening, motivational interviewing)', notes: 'Document units and readiness to change.' },
                             { stage: 'Step 2', trigger: 'Hazardous/harmful use', therapy: 'Extended brief interventions, psychosocial therapy, facilitated self-help', notes: 'Involve family/support networks.' },
@@ -334,6 +409,12 @@ class LaddersManager {
                         shortTitle: 'Smoking Cessation',
                         reference: 'NICE NG209 (2021)',
                         summary: 'Combine very brief advice with behavioural support and pharmacotherapy; escalate to specialist services for complex cases.',
+                        
+                        clinicalPearls: [
+                            'Set a quit date and combine pharmacotherapy with behavioural support - success rates double when paired.',
+                            'Use combination NRT or varenicline when not contraindicated; plan for around 12 weeks of support and monitor side effects.',
+                            'Arrange follow-up at 1, 4, and 12 weeks to adjust therapy and troubleshoot lapses early.',
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Every clinical encounter', therapy: 'Very brief advice (ASK-ADVISE-ACT) + offer referral', notes: 'Document smoking status as vital sign.' },
                             { stage: 'Step 2', trigger: 'Ready to quit', therapy: 'Behavioural support (face-to-face, telephone, digital) with personalised quit plan', notes: 'Set quit date within 2 weeks.' },
@@ -1103,6 +1184,49 @@ class LaddersManager {
         margin-bottom:6px;
     }
 
+    /* Dark-mode contrast tweaks for guideline cards */
+    body.dark-mode .guideline-ladder-card,
+    [data-theme="dark"] .guideline-ladder-card {
+        background: #0f172a;
+        border-color: #1f2937;
+    }
+    body.dark-mode .guideline-pill-btn,
+    [data-theme="dark"] .guideline-pill-btn {
+        background: #111827;
+        border-color: #1f2937;
+        color: #e5e7eb;
+    }
+    body.dark-mode .guideline-pill-btn.active,
+    [data-theme="dark"] .guideline-pill-btn.active {
+        color: #eaf2ff;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+    body.dark-mode .guideline-meta,
+    [data-theme="dark"] .guideline-meta {
+        color: #cbd5e1;
+    }
+    body.dark-mode .guideline-accordion .accordion-header,
+    [data-theme="dark"] .guideline-accordion .accordion-header {
+        color: #e5e7eb;
+        background: rgba(255,255,255,0.03);
+    }
+    body.dark-mode .guideline-accordion .accordion-body,
+    [data-theme="dark"] .guideline-accordion .accordion-body {
+        color: #e2e8f0;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 10px;
+    }
+    body.dark-mode .guideline-accordion .accordion-meta,
+    [data-theme="dark"] .guideline-accordion .accordion-meta {
+        color: #a5b4fc;
+    }
+    body.dark-mode .nice-warning,
+    [data-theme="dark"] .nice-warning {
+        background: rgba(248,113,113,0.12);
+        border-left-color: #fca5a5;
+    }
+
     @media (max-width: 640px) {
         .ladder-step {
             grid-template-columns: 48px 1fr;
@@ -1289,9 +1413,11 @@ class LaddersManager {
     renderGuidelineLadder(ladder) {
     if (!ladder) return '';
 
-    const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
+    const ladderPearls = Array.isArray(ladder.clinicalPearls) ? ladder.clinicalPearls : [];
+    const defaultPearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
         ? this.laddersData.guidelines.clinicalPearls
         : [];
+    const pearls = ladderPearls.length ? ladderPearls : defaultPearls;
 
     // Per-condition icons (used in card header)
     const iconMap = {
