@@ -1,3 +1,14 @@
-[
-  "/static/js/v2/main.js"
-]
+{
+  "files": [
+    "/static/js/v2/main.js",
+    "/static/js/v2/extracted-calculators.js",
+    "/static/js/v2/pdf.worker.min.js"
+  ],
+  "directories": [
+    {
+      "path": "/static/js/v2/modules",
+      "extensions": [".js"],
+      "recursive": true
+    }
+  ]
+}
