@@ -11554,17 +11554,45 @@
          to a legacy V1 script (if available) and show a brief notice. -->
     <script>
         (function() {
+            var MAIN_ENTRY = '/static/js/v2/main.js';
+            var MANIFEST_URL = '/static/asset-manifest.json';
+
+            function resolveAssetPath(defaultPath) {
+                if (typeof fetch !== 'function' || typeof Promise === 'undefined') {
+                    return Promise.resolve(defaultPath);
+                }
+
+                return fetch(MANIFEST_URL, { cache: 'no-store' })
+                    .then(function(response) {
+                        if (!response || !response.ok) {
+                            return {};
+                        }
+                        return response.json();
+                    })
+                    .then(function(manifest) {
+                        if (manifest && manifest[defaultPath]) {
+                            return manifest[defaultPath];
+                        }
+                        return defaultPath;
+                    })
+                    .catch(function() {
+                        return defaultPath;
+                    });
+            }
+
             // Quick parse-test for modern class field syntax (used heavily in V2).
             // Use Function constructor to avoid transpiler/minifier issues with eval.
             try {
                 new Function("class TestClass { field = 1 }");
-                // Modern JS supported -> load V2 module
-                var s = document.createElement('script');
-                s.type = 'module';
-                s.src = '/static/js/v2/main.js';
-                s.async = false;
-                document.head.appendChild(s);
-                console.log('✅ Modern JS supported: loading V2 app');
+
+                resolveAssetPath(MAIN_ENTRY).then(function(resolvedPath) {
+                    var s = document.createElement('script');
+                    s.type = 'module';
+                    s.src = resolvedPath;
+                    s.async = false;
+                    document.head.appendChild(s);
+                    console.log('✅ Modern JS supported: loading V2 app from', resolvedPath);
+                });
             } catch (err) {
                 // Parsing failed -> older browser (likely older iOS). Load legacy V1 script
                 console.warn('⚠️ Modern JS unsupported in this browser. Falling back to legacy app.', err);
