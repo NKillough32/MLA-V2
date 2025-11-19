@@ -611,41 +611,79 @@ class LaddersManager {
                 const s = document.createElement('style');
                 s.id = 'ladders-accordion-styles';
                 s.textContent = `
-                    .accordion-item { border-top: 1px solid var(--border-color,#e6e6e6); }
-                    .accordion-header { display:flex; align-items:center; justify-content:space-between; width:100%; padding:10px 12px; background:transparent; border:0; text-align:left; cursor:pointer; font-weight:700; }
-                    .accordion-header .chev { transition: transform 0.18s ease; }
-                    .accordion-item.open .accordion-header .chev { transform: rotate(90deg); }
-                    .accordion-body { padding: 8px 12px 16px 12px; display:none; font-size:0.95em; color:var(--secondary-text,#444); }
-                    .accordion-item.open .accordion-body { display:block; }
-                    .accordion-meta { font-size:0.9em; color:var(--muted,#666); margin-top:6px; }
-                `;
+                .accordion-item {
+                    border-top: 1px solid var(--border-color, #e5e7eb);
+                }
+                .accordion-header {
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+                    width:100%;
+                    padding:10px 12px;
+                    background:transparent;
+                    border:0;
+                    text-align:left;
+                    cursor:pointer;
+                    font-weight:700;
+                    color: var(--text-primary, #0f172a);
+                }
+                .accordion-header .chev {
+                    transition: transform 0.18s ease;
+                }
+                .accordion-item.open .accordion-header .chev {
+                    transform: rotate(90deg);
+                }
+                .accordion-body {
+                    padding: 8px 12px 16px 12px;
+                    display:none;
+                    font-size:0.95em;
+                    color: var(--secondary-text, #64748b);
+                    background: var(--bg-subtle, transparent);
+                }
+                .accordion-item.open .accordion-body {
+                    display:block;
+                }
+                .accordion-meta {
+                    font-size:0.9em;
+                    color: var(--muted, #9ca3af);
+                    margin-top:6px;
+                }
+            `;
                 document.head.appendChild(s);
             }
 
-            // Delegate clicks for accordions to container for robustness
-            const container = document.querySelector('.guideline-ladders-list');
-            if (!container) return;
+            // Delegate clicks from the ladders panel (covers ALL guideline cards)
+            const root = document.getElementById('ladders-panel') || document;
 
-            if (this._guidelineAccordionHandler) {
-                try { container.removeEventListener('click', this._guidelineAccordionHandler); } catch (e) {}
-                this._guidelineAccordionHandler = null;
+            if (this._guidelineAccordionHandler && this._guidelineAccordionRoot) {
+                try {
+                    this._guidelineAccordionRoot.removeEventListener('click', this._guidelineAccordionHandler);
+                } catch (e) {}
             }
+
+            this._guidelineAccordionRoot = root;
 
             this._guidelineAccordionHandler = (e) => {
                 const btn = e.target.closest && e.target.closest('.accordion-header');
                 if (!btn) return;
                 const item = btn.closest('.accordion-item');
                 if (!item) return;
+
                 const willOpen = !item.classList.contains('open');
-                // Close other opened items in the same card (accordion behavior)
-                const siblings = item.parentElement.querySelectorAll('.accordion-item.open');
-                siblings.forEach(sib => {
-                    if (sib !== item) {
-                        sib.classList.remove('open');
-                        const sibBtn = sib.querySelector('.accordion-header');
-                        if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
-                    }
-                });
+
+                // Close other opened items in the same card (true accordion behaviour)
+                const card = item.closest('.guideline-ladder-card');
+                if (card) {
+                    const openItems = card.querySelectorAll('.accordion-item.open');
+                    openItems.forEach(sib => {
+                        if (sib !== item) {
+                            sib.classList.remove('open');
+                            const sibBtn = sib.querySelector('.accordion-header');
+                            if (sibBtn) sibBtn.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                }
+
                 if (willOpen) {
                     item.classList.add('open');
                     btn.setAttribute('aria-expanded', 'true');
@@ -655,8 +693,8 @@ class LaddersManager {
                 }
             };
 
-            container.addEventListener('click', this._guidelineAccordionHandler);
-            console.log('✅ Guideline accordions initialized');
+            root.addEventListener('click', this._guidelineAccordionHandler);
+            console.log('✅ Guideline accordions initialized (global delegation)');
         } catch (err) {
             console.warn('⚠️ Failed to initialize guideline accordions', err);
         }
@@ -667,31 +705,49 @@ class LaddersManager {
      */
     initializeGuidelinePillTabs() {
         try {
-            const container = document.querySelector('.guideline-ladders-list');
-            if (!container) return;
+            const root = document.getElementById('ladders-panel') || document;
 
-            if (this._guidelinePillHandler) {
-                try { container.removeEventListener('click', this._guidelinePillHandler); } catch (e) {}
-                this._guidelinePillHandler = null;
+            if (this._guidelinePillHandler && this._guidelinePillRoot) {
+                try {
+                    this._guidelinePillRoot.removeEventListener('click', this._guidelinePillHandler);
+                } catch (e) {}
             }
+
+            this._guidelinePillRoot = root;
 
             this._guidelinePillHandler = (e) => {
                 const btn = e.target.closest && e.target.closest('.guideline-pill-btn');
                 if (!btn) return;
+
                 const card = btn.closest('.guideline-ladder-card');
                 if (!card) return;
+
                 const key = btn.getAttribute('data-pill');
                 const buttons = card.querySelectorAll('.guideline-pill-btn');
                 const contents = card.querySelectorAll('.pill-content');
+
                 buttons.forEach(b => b.classList.remove('active'));
                 contents.forEach(c => c.classList.remove('active'));
+
                 btn.classList.add('active');
                 const target = card.querySelector(`.pill-content[data-pill="${key}"]`);
-                if (target) target.classList.add('active');
+                if (target) {
+                    target.classList.add('active');
+                }
+
+                // Optional: when switching to Step-by-step, open the first accordion step by default
+                if (key === 'steps') {
+                    const firstItem = card.querySelector('.guideline-accordion .accordion-item');
+                    if (firstItem) {
+                        firstItem.classList.add('open');
+                        const firstBtn = firstItem.querySelector('.accordion-header');
+                        if (firstBtn) firstBtn.setAttribute('aria-expanded', 'true');
+                    }
+                }
             };
 
-            container.addEventListener('click', this._guidelinePillHandler);
-            console.log('✅ Guideline pill tabs initialized');
+            root.addEventListener('click', this._guidelinePillHandler);
+            console.log('✅ Guideline pill tabs initialized (global delegation)');
         } catch (err) {
             console.warn('⚠️ Failed to initialize guideline pill tabs', err);
         }
@@ -783,70 +839,262 @@ class LaddersManager {
                     const s = document.createElement('style');
                     s.id = 'ladders-styles';
                     s.textContent = `
-                        .ladders-container { padding: 12px 8px; }
-                        .ladder-section { margin-bottom: 18px; }
+    .ladders-container { padding: 12px 8px; }
+    .ladder-section { margin-bottom: 18px; }
 
-                        /* Pain ladder layout improvements */
-                        .pain-ladder-visual { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+    /* Pain ladder layout improvements */
+    .pain-ladder-visual { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
 
-                        /* Each step is a two-column layout: badge + content */
-                        .ladder-step { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: start; margin-bottom: 12px; }
-                        .ladder-step .step-number { width:56px; height:56px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .ladder-step {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 12px;
+        align-items: start;
+        margin-bottom: 12px;
+    }
+    .ladder-step .step-number {
+        width:56px;
+        height:56px;
+        border-radius:8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight:700;
+        color:#fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
 
-                        .ladder-step .step-content { min-width: 0; }
-                        .ladder-step .step-content h4 { margin: 0 0 8px 0; }
+    .ladder-step .step-content { min-width: 0; }
+    .ladder-step .step-content h4 { margin: 0 0 8px 0; }
 
-                        /* Make medication list responsive and tidy */
-                        .medication-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; margin-top: 8px; }
-                        .med-item { background: var(--card-bg); padding: 12px; border-radius:8px; display:flex; flex-direction:column; gap:6px; border: 1px solid var(--border-color, #eaeaea); min-width:0; }
-                        .med-item strong { font-size: 0.98em; display:block; margin-bottom:4px; }
-                        .med-dose { display:block; color: var(--secondary-text, #666); font-size: 0.95em; line-height:1.2; overflow-wrap: anywhere; word-break: break-word; }
+    /* Make medication list responsive and tidy */
+    .medication-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 8px;
+        margin-top: 8px;
+    }
+    .med-item {
+        background: var(--card-bg, #0b1120);
+        padding: 12px;
+        border-radius:8px;
+        display:flex;
+        flex-direction:column;
+        gap:6px;
+        border: 1px solid var(--border-color, #1f2937);
+        min-width:0;
+    }
+    .med-item strong { font-size: 0.98em; display:block; margin-bottom:4px; }
+    .med-dose {
+        display:block;
+        color: var(--secondary-text, #9ca3af);
+        font-size: 0.95em;
+        line-height:1.2;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
 
-                        .adjuvant-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px; }
-                        .adjuvant-card { background:var(--card-bg); padding:12px; border-radius:8px; }
+    .adjuvant-grid {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:12px;
+    }
+    .adjuvant-card {
+        background:var(--card-bg, #0b1120);
+        padding:12px;
+        border-radius:8px;
+        border: 1px solid var(--border-color, #1f2937);
+    }
 
-                        .opioid-conversion-table table { width:100%; border-collapse:collapse }
-                        .opioid-conversion-table td, .opioid-conversion-table th { padding:8px; border-bottom:1px solid var(--border) }
+    .opioid-conversion-table table {
+        width:100%;
+        border-collapse:collapse;
+    }
+    .opioid-conversion-table td,
+    .opioid-conversion-table th {
+        padding:8px;
+        border-bottom:1px solid var(--border-color, #1f2937);
+    }
 
-                        .ladder-tabs { display:flex; gap:8px; margin-bottom:16px; border-bottom: 2px solid var(--border-color, #e0e0e0); padding: 0 6px 6px; overflow-x:auto; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
-                        .ladder-tab-btn { flex:0 0 auto; white-space: nowrap; }
-                        .ladder-tabs::-webkit-scrollbar { height:6px; }
-                        .ladder-tabs::-webkit-scrollbar-thumb { background: var(--border-color,#d4d4d8); border-radius:999px; }
+    /* Top-level ladder tabs */
+    .ladder-tabs {
+        display:flex;
+        gap:8px;
+        margin-bottom:16px;
+        border-bottom: 2px solid var(--border-color, #1f2937);
+        padding: 0 6px 6px;
+        overflow-x:auto;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+    .ladder-tab-btn {
+        flex:0 0 auto;
+        white-space: nowrap;
+        background: var(--card-bg, #020617);
+        border-radius:999px;
+        border:1px solid var(--border-color,#1f2937);
+        padding:8px 14px;
+        color: var(--text-primary,#e5e7eb);
+        cursor:pointer;
+        font-weight:600;
+    }
+    .ladder-tab-btn.active {
+        background: var(--primary-color,#2563eb);
+        color: var(--bg-default,#020617);
+        border-color: var(--primary-color,#2563eb);
+    }
+    .ladder-tabs::-webkit-scrollbar { height:6px; }
+    .ladder-tabs::-webkit-scrollbar-thumb {
+        background: var(--border-color,#4b5563);
+        border-radius:999px;
+    }
 
-                        .guideline-ladder-tabs { display:flex; gap:8px; margin: 12px 0 16px; padding: 0 6px 6px; overflow-x:auto; border-bottom:1px solid var(--border-color,#e4e4e7); scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
-                        .guideline-tab-btn { background:var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-bottom:3px solid transparent; border-radius:10px; padding:10px 14px; font-weight:600; color:var(--text-primary,#1f2937); cursor:pointer; transition:all 0.2s ease; flex:0 0 auto; white-space: nowrap; }
-                        .guideline-tab-btn.active { border-color: var(--primary-color); border-bottom-color: var(--primary-color); color: var(--primary-color); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-                        .guideline-ladder-tabs::-webkit-scrollbar { height:6px; }
-                        .guideline-ladder-tabs::-webkit-scrollbar-thumb { background: var(--border-color,#d4d4d8); border-radius:999px; }
+    /* NICE guideline tabs (per-condition) */
+    .guideline-ladder-tabs {
+        display:flex;
+        gap:8px;
+        margin: 12px 0 16px;
+        padding: 0 6px 6px;
+        overflow-x:auto;
+        border-bottom:1px solid var(--border-color,#1f2937);
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+    .guideline-tab-btn {
+        background:var(--card-bg,#020617);
+        border:1px solid var(--border-color,#1f2937);
+        border-bottom:3px solid transparent;
+        border-radius:10px;
+        padding:10px 14px;
+        font-weight:600;
+        color:var(--text-primary,#e5e7eb);
+        cursor:pointer;
+        transition:all 0.2s ease;
+        flex:0 0 auto;
+        white-space: nowrap;
+    }
+    .guideline-tab-btn.active {
+        border-color: var(--primary-color,#2563eb);
+        border-bottom-color: var(--primary-color,#2563eb);
+        color: var(--primary-color,#60a5fa);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .guideline-ladder-tabs::-webkit-scrollbar { height:6px; }
+    .guideline-ladder-tabs::-webkit-scrollbar-thumb {
+        background: var(--border-color,#4b5563);
+        border-radius:999px;
+    }
 
-                        .guideline-ladders-grid { margin-top:16px; }
-                        .guideline-ladders-list { width: 100%; }
-                            /* Pill tabs inside guideline cards */
-                            .guideline-pill-tabs { display:flex; gap:8px; overflow-x:auto; padding:6px 0 12px; }
-                            .guideline-pill-btn { background:var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:999px; padding:8px 12px; font-weight:600; cursor:pointer; white-space:nowrap; flex:0 0 auto; }
-                            .guideline-pill-btn.active { background:var(--primary-color); color:#fff; border-color:var(--primary-color); box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-                            .pill-content { display:none; }
-                            .pill-content.active { display:block; }
+    .guideline-ladders-grid { margin-top:16px; }
+    .guideline-ladders-list { width: 100%; }
 
-                            /* Safety callout */
-                            .nice-warning { background: #ffe9e3; border-left: 4px solid #d73720; padding: 8px; border-radius: 6px; margin:8px 0; }
-                        .guideline-ladder-card { background: var(--card-bg); border:1px solid var(--border-color,#e4e4e7); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:12px; width: 100%; }
-                        .guideline-table-wrapper { width: 100%; }
-                        .guideline-ladder-card h4 { margin:0; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
-                        .guideline-meta { font-size:0.9em; color:var(--secondary-text,#555); }
-                        .guideline-steps-table { width:100%; border-collapse:collapse; font-size:0.92em; }
-                        .guideline-steps-table th, .guideline-steps-table td { padding:6px; border-bottom:1px solid var(--border-color,#e4e4e7); vertical-align:top; }
-                        .guideline-steps-table th { background:var(--table-header-bg,rgba(0,0,0,0.03)); font-weight:600; }
-                        .guideline-badge { display:inline-flex; align-items:center; background:var(--pill-bg,#eef2ff); color:var(--pill-text,#4338ca); border-radius:999px; padding:2px 10px; font-size:0.85em; }
-                        .guideline-ladder-content { display:none; }
-                        .guideline-ladder-content.active { display:block; }
+    /* Pill tabs inside guideline cards */
+    .guideline-pill-tabs {
+        display:flex;
+        gap:8px;
+        overflow-x:auto;
+        padding:6px 0 12px;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+    .guideline-pill-btn {
+        background:var(--card-bg,#020617);
+        border:1px solid var(--border-color,#1f2937);
+        border-radius:999px;
+        padding:8px 12px;
+        font-weight:600;
+        cursor:pointer;
+        white-space:nowrap;
+        flex:0 0 auto;
+        color: var(--text-primary,#e5e7eb);
+    }
+    .guideline-pill-btn.active {
+        background:var(--primary-color,#2563eb);
+        color:var(--bg-default,#020617);
+        border-color:var(--primary-color,#2563eb);
+        box-shadow:0 6px 18px rgba(0,0,0,0.5);
+    }
+    .pill-content { display:none; }
+    .pill-content.active { display:block; }
 
-                        @media (max-width: 640px) {
-                            .ladder-step { grid-template-columns: 48px 1fr; }
-                            .ladder-step .step-number { width:48px; height:48px; }
-                            .medication-list { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
-                        }
-                    `;
+    /* Safety callout */
+    .nice-warning {
+        background: var(--warning-bg, rgba(248,113,113,0.08));
+        border-left: 4px solid var(--warning-border,#f97373);
+        padding: 8px;
+        border-radius: 6px;
+        margin:8px 0;
+        color: var(--text-primary,#e5e7eb);
+    }
+
+    .guideline-ladder-card {
+        background: var(--card-bg,#020617);
+        border:1px solid var(--border-color,#1f2937);
+        border-radius:12px;
+        padding:16px;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        width: 100%;
+    }
+
+    .guideline-ladder-card h4 { margin:0; }
+    .guideline-meta {
+        font-size:0.9em;
+        color:var(--secondary-text,#9ca3af);
+    }
+
+    .guideline-steps-table {
+        width:100%;
+        border-collapse:collapse;
+        font-size:0.92em;
+    }
+    .guideline-steps-table th,
+    .guideline-steps-table td {
+        padding:6px;
+        border-bottom:1px solid var(--border-color,#1f2937);
+        vertical-align:top;
+    }
+    .guideline-steps-table th {
+        background:var(--table-header-bg, rgba(148,163,184,0.08));
+        font-weight:600;
+    }
+
+    .guideline-badge {
+        display:inline-flex;
+        align-items:center;
+        background:var(--pill-bg,rgba(37,99,235,0.12));
+        color:var(--pill-text,#bfdbfe);
+        border-radius:999px;
+        padding:2px 10px;
+        font-size:0.85em;
+    }
+
+    .guideline-ladder-content { display:none; }
+    .guideline-ladder-content.active { display:block; }
+
+    .pill-flag,
+    .pill-complex {
+        background: var(--bg-subtle, rgba(15,23,42,0.6));
+        border-radius:8px;
+        padding:8px 10px;
+        border:1px solid var(--border-color,#1f2937);
+        margin-bottom:6px;
+    }
+
+    @media (max-width: 640px) {
+        .ladder-step {
+            grid-template-columns: 48px 1fr;
+        }
+        .ladder-step .step-number {
+            width:48px;
+            height:48px;
+        }
+        .medication-list {
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        }
+    }
+`;
                     document.head.appendChild(s);
                 }
             } catch (e) {
@@ -1023,7 +1271,7 @@ class LaddersManager {
         const pearls = Array.isArray(this.laddersData.guidelines?.clinicalPearls)
             ? this.laddersData.guidelines.clinicalPearls
             : [];
-        // Render as accessible accordion-style card for better mobile readability
+
         const iconMap = {
             asthma: '🌬️',
             copd: '🫁',
@@ -1034,10 +1282,12 @@ class LaddersManager {
             t2dm: '🍬',
             hypertension: '🩺',
             alcohol: '🍷',
-            'chronic-pain': '🩺'
+            'chronic-pain': '🩺',
+            osteoporosis: '🦴',
+            ckd: '🧪',
+            smoking: '🚬'
         };
-
-        const ladderIcon = iconMap[ladder.key] || (this.laddersData.guidelines && this.laddersData.guidelines.icon) || '🧭';
+        const ladderIcon = iconMap[ladder.key] || this.laddersData.guidelines?.icon || '🧭';
 
         const makeStepHtml = (step, idx) => {
             const title = step.stage || ('Stage ' + (idx + 1));
@@ -1045,88 +1295,144 @@ class LaddersManager {
             const therapy = step.therapy || '';
             const notes = step.notes || '';
 
-            // Determine if note is safety-critical and should be a callout
-            const safetyKeywords = ['refer', 'referral', 'icu', 'oxygen', 'stop', 'contraindic', 'life-threatening', 'hospital', 'admit'];
-            const isSafety = safetyKeywords.some(k => (notes + ' ' + therapy + ' ' + trigger).toLowerCase().includes(k));
+            const textForSafety = (notes + ' ' + therapy + ' ' + trigger).toLowerCase();
+            const safetyKeywords = ['refer', 'referral', 'icu', 'oxygen', 'stop', 'contraindic', 'life-threatening', 'hospital', 'admit', 'emergency'];
+            const isSafety = safetyKeywords.some(k => textForSafety.includes(k));
 
             return `
-                <div class="accordion-item" data-step-index="${idx}">
-                    <button class="accordion-header" type="button" aria-expanded="false">
-                        <span style="display:flex;flex-direction:column;align-items:flex-start;">
-                            <strong>${ladderIcon} ${title}</strong>
-                            <small class="accordion-meta">${trigger}</small>
-                        </span>
-                        <span class="chev">›</span>
-                    </button>
-                    <div class="accordion-body" role="region">
-                        <div class="accordion-therapy"><strong>Therapy:</strong><div style="margin-top:6px">${therapy}</div></div>
-                        ${notes ? (isSafety ? `<div class="nice-warning"><strong>Safety:</strong><div style="margin-top:6px">${notes}</div></div>` : `<div class="accordion-notes" style="margin-top:10px"><strong>Notes:</strong><div style="margin-top:6px">${notes}</div></div>`) : ''}
+            <div class="accordion-item" data-step-index="${idx}">
+                <button class="accordion-header" type="button" aria-expanded="false">
+                    <span style="display:flex;flex-direction:column;align-items:flex-start;">
+                        <strong>${ladderIcon} ${title}</strong>
+                        ${trigger ? `<small class="accordion-meta">${trigger}</small>` : ''}
+                    </span>
+                    <span class="chev">›</span>
+                </button>
+                <div class="accordion-body" role="region">
+                    <div class="accordion-therapy">
+                        <strong>Therapy:</strong>
+                        <div style="margin-top:6px">${therapy}</div>
                     </div>
+                    ${notes ? (
+                        isSafety
+                            ? `<div class="nice-warning"><strong>Safety:</strong><div style="margin-top:6px">${notes}</div></div>`
+                            : `<div class="accordion-notes" style="margin-top:10px"><strong>Notes:</strong><div style="margin-top:6px">${notes}</div></div>`
+                    ) : ''}
                 </div>
-            `;
-        };
-
-        const stepsHtml = Array.isArray(ladder.steps) ? ladder.steps.map((s, i) => makeStepHtml(s, i)).join('') : '';
-
-        // Build filtered sections for pill tabs
-        const overviewHtml = `${ladder.summary || ''}`;
-        const redFlags = (Array.isArray(ladder.steps) ? ladder.steps.filter(s => (s.stage || '').toLowerCase().includes('life') || (s.trigger || '').toLowerCase().includes('life') || (s.notes || '').toLowerCase().includes('icu') || (s.trigger || '').toLowerCase().includes('spO2'.toLowerCase()) ) : []);
-        const complexFlags = (Array.isArray(ladder.steps) ? ladder.steps.filter(s => (s.stage || '').toLowerCase().includes('severe') || (s.stage || '').toLowerCase().includes('difficult') || (s.notes || '').toLowerCase().includes('phenotype') || (s.notes || '').toLowerCase().includes('biomarker')) : []);
-
-        const redFlagsHtml = redFlags.length ? redFlags.map((s, i) => `<div class="pill-flag">${s.stage}: ${s.trigger || ''} — ${s.therapy || ''} ${s.notes ? `<div class="nice-warning">${s.notes}</div>` : ''}</div>`).join('') : '<div class="pill-flag">No immediate red flags listed.</div>';
-        const complexHtml = complexFlags.length ? complexFlags.map((s, i) => `<div class="pill-complex"><strong>${s.stage}</strong><div>${s.therapy || ''}</div><div style="font-size:0.95em;color:var(--muted)">${s.notes || ''}</div></div>`).join('') : '<div class="pill-complex">No complex cases listed.</div>';
-
-        // Mini-summary box (one-line high-yield)
-        const miniSummary = ladder.summary ? `<div class="mini-summary" style="background:var(--pill-bg,#f3f4f6);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600">Core objective: ${ladder.summary.split('.').slice(0,1).join('').trim()}</div>` : '';
-
-        return `
-            <div class="ladder-section">
-                <h3>${ladder.title || ladder.shortTitle || '🧭 NICE Clinical Ladder'}</h3>
-                ${ladder.reference ? `<div style="margin-bottom:8px"><span class="guideline-badge">${ladder.reference}</span></div>` : ''}
-                ${miniSummary}
-                <div class="guideline-ladders-list">
-                    <article class="guideline-ladder-card" id="guideline-${ladder.key}">
-                        <div class="guideline-ladder-header">
-                            <h4 style="margin:0">${ladderIcon} ${ladder.shortTitle || ladder.title}</h4>
-                        </div>
-
-                        <div class="guideline-pill-tabs" role="tablist" aria-label="Guideline sections">
-                            <button class="guideline-pill-btn active" data-pill="overview">Overview</button>
-                            <button class="guideline-pill-btn" data-pill="steps">Step-by-step</button>
-                            <button class="guideline-pill-btn" data-pill="redflags">Red flags</button>
-                            <button class="guideline-pill-btn" data-pill="complex">Complex cases</button>
-                        </div>
-
-                        <div class="pill-content active" data-pill="overview">
-                            <div class="guideline-meta">${overviewHtml}</div>
-                        </div>
-
-                        <div class="pill-content" data-pill="steps">
-                            <div class="guideline-accordion">
-                                ${stepsHtml}
-                            </div>
-                        </div>
-
-                        <div class="pill-content" data-pill="redflags">
-                            ${redFlagsHtml}
-                        </div>
-
-                        <div class="pill-content" data-pill="complex">
-                            ${complexHtml}
-                        </div>
-
-                    </article>
-                </div>
-                ${pearls.length ? `
-                    <div class="clinical-pearl">
-                        <h4>💡 Implementation Pearls</h4>
-                        <ul>
-                            ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
-                        </ul>
-                    </div>
-                ` : ''}
             </div>
         `;
+        };
+
+        const stepsHtml = Array.isArray(ladder.steps)
+            ? ladder.steps.map((s, i) => makeStepHtml(s, i)).join('')
+            : '';
+
+        const overviewHtml = ladder.summary || '';
+
+        const redFlags = Array.isArray(ladder.steps)
+            ? ladder.steps.filter(s => {
+                const stage = (s.stage || '').toLowerCase();
+                const trig = (s.trigger || '').toLowerCase();
+                const note = (s.notes || '').toLowerCase();
+                return (
+                    stage.includes('life') ||
+                    stage.includes('emergency') ||
+                    trig.includes('life') ||
+                    trig.includes('spo2') ||
+                    note.includes('icu') ||
+                    note.includes('admit') ||
+                    note.includes('emergency')
+                );
+            })
+            : [];
+
+        const complexFlags = Array.isArray(ladder.steps)
+            ? ladder.steps.filter(s => {
+                const stage = (s.stage || '').toLowerCase();
+                const note = (s.notes || '').toLowerCase();
+                return (
+                    stage.includes('severe') ||
+                    stage.includes('difficult') ||
+                    note.includes('phenotype') ||
+                    note.includes('biomarker') ||
+                    note.includes('refractory')
+                );
+            })
+            : [];
+
+        const redFlagsHtml = redFlags.length
+            ? redFlags.map(s => `
+            <div class="pill-flag">
+                <strong>${s.stage || 'Red flag'}</strong> – ${s.trigger || ''}
+                ${s.notes ? `<div class="nice-warning" style="margin-top:6px">${s.notes}</div>` : ''}
+            </div>
+        `).join('')
+            : '<div class="pill-flag">No immediate red flags listed.</div>';
+
+        const complexHtml = complexFlags.length
+            ? complexFlags.map(s => `
+            <div class="pill-complex">
+                <strong>${s.stage}</strong>
+                <div>${s.therapy || ''}</div>
+                ${s.notes ? `<div style="font-size:0.95em;color:var(--muted,#9ca3af);margin-top:4px">${s.notes}</div>` : ''}
+            </div>
+        `).join('')
+            : '<div class="pill-complex">No specific complex-case notes listed; consider MDT or specialist input for refractory disease.</div>';
+
+        const miniSummary = ladder.summary
+            ? `<div class="mini-summary" style="background:var(--pill-bg,#1118270d);padding:8px 12px;border-radius:8px;margin:8px 0;font-weight:600;color:var(--text-primary,#0f172a)">Core objective: ${ladder.summary.split('.').slice(0,1).join('').trim()}</div>`
+            : '';
+
+        return `
+        <div class="ladder-section">
+            <h3>${ladder.title || ladder.shortTitle || '🧭 NICE Clinical Ladder'}</h3>
+            ${ladder.reference ? `<div style="margin-bottom:8px"><span class="guideline-badge">${ladder.reference}</span></div>` : ''}
+            ${miniSummary}
+            <div class="guideline-ladders-list">
+                <article class="guideline-ladder-card" id="guideline-${ladder.key}">
+                    <div class="guideline-ladder-header">
+                        <h4 style="margin:0;display:flex;gap:8px;align-items:center;">
+                            <span>${ladderIcon}</span>
+                            <span>${ladder.shortTitle || ladder.title}</span>
+                        </h4>
+                    </div>
+
+                    <div class="guideline-pill-tabs" role="tablist" aria-label="Guideline sections">
+                        <button class="guideline-pill-btn active" data-pill="overview">Overview</button>
+                        <button class="guideline-pill-btn" data-pill="steps">Step-by-step</button>
+                        <button class="guideline-pill-btn" data-pill="redflags">Red flags</button>
+                        <button class="guideline-pill-btn" data-pill="complex">Complex cases</button>
+                    </div>
+
+                    <div class="pill-content active" data-pill="overview">
+                        <div class="guideline-meta">${overviewHtml}</div>
+                    </div>
+
+                    <div class="pill-content" data-pill="steps">
+                        <div class="guideline-accordion">
+                            ${stepsHtml}
+                        </div>
+                    </div>
+
+                    <div class="pill-content" data-pill="redflags">
+                        ${redFlagsHtml}
+                    </div>
+
+                    <div class="pill-content" data-pill="complex">
+                        ${complexHtml}
+                    </div>
+                </article>
+            </div>
+            ${pearls.length ? `
+                <div class="clinical-pearl">
+                    <h4>💡 Implementation Pearls</h4>
+                    <ul>
+                        ${pearls.map(pearl => `<li>${pearl}</li>`).join('')}
+                    </ul>
+                </div>
+            ` : ''}
+        </div>
+    `;
     }
 
     /**
