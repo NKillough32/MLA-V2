@@ -92,20 +92,20 @@ class LaddersManager {
                     }
                 ],
                 categories: {
-                    'ultra-high': {
-                        name: 'High Potency (Long-acting)',
-                        color: '#dc3545',
-                        medications: 'Dexamethasone, Betamethasone',
+                    'medium': {
+                        name: 'Low Potency (Short-acting)',
+                        color: '#f8c837ff',
+                        medications: 'Hydrocortisone',
                         features: [
-                            'Minimal mineralocorticoid activity',
-                            'Suitable for cerebral oedema',
-                            'Used in fetal lung maturation',
-                            'Severe inflammatory conditions'
+                            'Physiological replacement therapy',
+                            'Addison\'s disease',
+                            'Adrenal crisis',
+                            'Has mineralocorticoid activity'
                         ]
                     },
                     'high': {
                         name: 'Intermediate Potency',
-                        color: '#fd7e14',
+                        color: '#db6707ff',
                         medications: 'Prednisolone, Methylprednisolone',
                         features: [
                             'Most common for systemic use',
@@ -115,15 +115,15 @@ class LaddersManager {
                             'IBD flares'
                         ]
                     },
-                    'medium': {
-                        name: 'Low Potency (Short-acting)',
-                        color: '#ffc107',
-                        medications: 'Hydrocortisone',
+                    'ultra-high': {
+                        name: 'High Potency (Long-acting)',
+                        color: '#f33043ff',
+                        medications: 'Dexamethasone, Betamethasone',
                         features: [
-                            'Physiological replacement therapy',
-                            'Addison\'s disease',
-                            'Adrenal crisis',
-                            'Has mineralocorticoid activity'
+                            'Minimal mineralocorticoid activity',
+                            'Suitable for cerebral oedema',
+                            'Used in fetal lung maturation',
+                            'Severe inflammatory conditions'
                         ]
                     }
                 },
