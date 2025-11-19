@@ -127,6 +127,7 @@ export class GuidelinesManager {
             { id: 'rheumatologic', name: 'Rheumatology', icon: '🦴', count: 0 },
             { id: 'hematologic', name: 'Haematology', icon: '🩸', count: 0 },
             { id: 'emergency', name: 'Emergency', icon: '🚨', count: 0 },
+            { id: 'obstetrics', name: 'Obstetrics', icon: '🤰', count: 0 },
             { id: 'mental-health', name: 'Mental Health', icon: '🧠', count: 0 },
             { id: 'neurological', name: 'Neurological', icon: '🧬', count: 0 },
             { id: 'infectious-diseases', name: 'Infectious Diseases', icon: '🦠', count: 0 }

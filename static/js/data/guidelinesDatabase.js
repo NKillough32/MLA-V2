@@ -795,6 +795,73 @@ window.guidelinesDatabase = {
             'Cardiovascular': 'Assess QRISK3 score, manage risk factors aggressively'
         }
     },
+    'labour-care-overview': {
+        title: 'Labour Induction, Progression & Emergency Escalation (NICE NG207 / RCOG 2023)',
+        category: 'obstetrics',
+        evidenceLevel: 'NICE Guideline | RCOG Green-top | NHS England Safer Births',
+        lastUpdated: '2023',
+        organisation: 'NICE / RCOG',
+        overview: {
+            'Scope': 'Covers planned and emergency management of labour from cervical ripening to delivery, including Bishop score assessment, staged progress parameters, and escalation pathways.',
+            'Key tools': 'Document baseline Bishop score (use in-app Bishop Score calculator) and partogram. Reassess maternal observations 4-hourly in latent labour and hourly in active labour.',
+            'When to escalate': 'Failure to progress, abnormal CTG, vaginal bleeding, suspected infection, scar tenderness, cord prolapse or maternal collapse require immediate obstetric review and consideration of operative birth.'
+        },
+        inductionIndications: {
+            'Prolonged pregnancy': 'Offer induction at 41+0 weeks (or by 42 weeks) to reduce stillbirth risk. Provide membrane sweep at 40 and 41 weeks if nulliparous (41 weeks if multiparous).',
+            'Pre-labour rupture of membranes': 'If labour does not start spontaneously within 24 hours, offer induction with PGE2 or oxytocin/amniotomy. Consider immediate induction if GBS positive.',
+            'Maternal conditions': 'Induce at 37-38 weeks for well-controlled pre-eclampsia, obstetric cholestasis with bile acids ≥40 µmol/L, or insulin-treated diabetes at 38-39 weeks. Individualise for fetal growth restriction or intrauterine fetal death.',
+            'Safety checklist': 'Confirm cephalic presentation, exclude placenta previa, ensure CTG reassuring, consent documented, cannula sited and bloods grouped & saved before prostaglandins or oxytocin.'
+        },
+        bishopScore: {
+            components: {
+                'Cervical position': 'Posterior (0) / Mid (1) / Anterior (2)',
+                'Consistency': 'Firm (0) / Intermediate (1) / Soft (2)',
+                'Effacement': '0-30% (0) / 40-50% (1) / 60-70% (2) / ≥80% (3)',
+                'Dilation': '<1 cm (0) / 1-2 cm (1) / 3-4 cm (2) / ≥5 cm (3)',
+                'Fetal station': '-3 (0) / -2 (1) / -1 to 0 (2) / +1 or +2 (3)'
+            },
+            interpretation: {
+                '<5': 'Unfavourable cervix – low chance of spontaneous labour; prioritise cervical ripening before amniotomy/oxytocin.',
+                '5-7': 'Intermediate – consider combined methods and close review after each intervention.',
+                '≥8': 'Favourable cervix – high likelihood of spontaneous labour or rapid response to amniotomy with oxytocin.'
+            },
+            managementLinks: {
+                '≤6 (ripening required)': 'Offer prostaglandin E2 pessary/gel or oral misoprostol as per local policy; mechanical balloon catheter if prior caesarean or high hyperstimulation risk. Reassess Bishop score 6 hours after gel or 24 hours after pessary.',
+                '>6 (ripe cervix)': 'Proceed to amniotomy followed by IV oxytocin infusion titrated to 4 contractions per 10 minutes. Start continuous CTG if oxytocin used or risk factors present.',
+                'Failed ripening': 'After 2 prostaglandin cycles (or 24 hours with balloon) discuss repeat attempt versus caesarean, weighing maternal preference, parity, and fetal status.'
+            }
+        },
+        cervicalRipeningOptions: {
+            'Membrane sweep': 'Digital separation of membranes from lower uterine segment; can be offered from 40 weeks (nulliparous) or 41 weeks (multiparous). Reduces need for formal induction but may cause cramping/spotting.',
+            'Dinoprostone (PGE2)': 'Vaginal tablet/gel (1-2 mg) or slow-release pessary (10 mg). Observe for uterine tachysystole; remove pessary and consider tocolysis (terbutaline 0.25 mg SC) if hyperstimulation with fetal compromise.',
+            'Misoprostol (PGE1)': '25-50 micrograms orally 2-hourly (off-label UK) mainly for IUFD or when dinoprostone contraindicated. Avoid with previous uterine scar.',
+            'Mechanical balloon': 'Double-balloon catheter inflated 30-80 ml each side for 12-24 h. Useful after caesarean or when prostaglandins contraindicated; combine with oxytocin if cervix favourable.',
+            'Oxytocin + amniotomy': 'After Bishop >6, perform artificial rupture of membranes ensuring presenting part engaged, then start oxytocin 1-2 mU/min increasing every 30 minutes to achieve adequate contractions.'
+        },
+        labourStages: {
+            'Latent first stage': 'Painful contractions with cervical change up to 3-4 cm. Offer supportive care, analgesia, hydration, and encourage mobilisation. Assess maternal obs 4-hourly; consider discharge if reassuring.',
+            'Active first stage': 'Regular contractions with dilation ≥4 cm progressing ≥2 cm over 4 hours in nulliparas (≥1 cm in multiparas). Continuous CTG if risk factors. Failure to progress or oxytocin need triggers obstetric review.',
+            'Transition/second stage': 'Full dilation to birth. Passive phase (up to 2 h) if no urge to push, then active pushing ≤2 h (nullip) or ≤1 h (multip) before senior review. Monitor fetal heart every 5 min (or continuous CTG if risk).',
+            'Third stage': 'From birth of baby to placenta delivery. Active management with oxytocin 10 IU IM, controlled cord traction, uterine massage. Escalate for haemorrhage >500 ml.'
+        },
+        emergencySituations: {
+            'Failure to progress': 'Confirm adequate contractions (via palpation or intrauterine pressure catheter). Correct hypotension, offer bladder emptying, escalate to oxytocin or operative delivery if no dilation progress ≥4 h.',
+            'Fetal compromise': 'Continuous CTG with abnormal features (late decelerations, reduced variability). Actions: reposition (left lateral), stop oxytocin, treat tachysystole with tocolysis, give IV fluids/oxygen as per local policy, prepare for operative birth within 30 minutes if category-1.',
+            'Cord prolapse': 'Call for help, elevate presenting part, place mother knee-chest, fill bladder with 500 ml saline, avoid handling cord, expedite caesarean unless imminent vaginal birth safe.',
+            'Uterine rupture risk': 'Scar tenderness, sudden pain, fetal distress, loss of station. Stop oxytocin, prepare for emergency laparotomy and blood products.',
+            'Infection/chorioamnionitis': 'Maternal fever >38°C, fetal tachycardia. Start broad-spectrum IV antibiotics (co-amoxiclav or cefuroxime + metronidazole) and expedite delivery.'
+        },
+        caesareanSection: {
+            'Immediate (category 1)': 'Persistent fetal bradycardia, cord prolapse with fetal compromise, placental abruption with maternal instability, uterine rupture. Target decision-to-delivery ≤30 minutes.',
+            'Urgent (category 2)': 'Failure to progress despite adequate contractions, failed instrumental delivery, failed induction after multiple ripening cycles, or maternal comorbidities worsening (e.g., severe pre-eclampsia). Aim ≤75 minutes.',
+            'Elective/Planned': 'Malpresentation, placenta previa, ≥2 previous caesareans, macrosomia with diabetes, HIV with high viral load. Ensure VTE prophylaxis and antibiotic prophylaxis (e.g., cefuroxime + metronidazole).'
+        },
+        escalationBundles: {
+            'Hyperstimulation management': 'Remove prostaglandin pessary or stop oxytocin, position lateral, give tocolysis (terbutaline 0.25 mg SC or IV salbutamol), continuous CTG until reassuring.',
+            'Operative vaginal birth checklist': 'Confirm full dilation, engaged head, adequate analgesia, empty bladder, informed consent, neonatal team alerted, and theatre on standby.',
+            'Documentation & debrief': 'Record Bishop score, interventions, CTG category, discussions about caesarean, and provide post-event counselling especially after emergencies or IUFD.'
+        }
+    },
     'preeclampsia': {
         title: 'Hypertension in Pregnancy & Preeclampsia (NICE NG133 2023 update)',
         category: 'obstetrics',

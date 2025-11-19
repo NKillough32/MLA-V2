@@ -396,6 +396,44 @@ export const emergencyProtocols = {
         ukGuideline: 'RCOG Green-top Guideline No. 52 (2016, reaffirmed 2021)',
         criticalActions: ['Early senior involvement', 'Rapid uterotonic therapy', 'Activate massive transfusion', 'Escalate to surgical control if ongoing bleeding']
     },
+    'labour-stages-emergency': {
+        name: 'Labour Stages & Obstetric Emergency Escalation',
+        category: 'obstetrics',
+        urgency: 'urgent',
+        stages: [
+            'Latent first stage (0-3 cm dilation): irregular contractions; provide analgesia, hydration, and 4-hourly maternal observations. Offer home care only with robust safety-net advice and reassuring CTG.',
+            'Active first stage (≥4 cm to full dilation): expect ≥2 cm progress in 4 hours for nulliparous or ≥1 cm for multiparous women. Commence partogram, hourly maternal observations, and continuous CTG when risk factors or oxytocin present.',
+            'Second stage: passive descent up to 2 hours, then active pushing (≤2 h nullip / ≤1 h multip) before senior review. Consider earlier intervention if fetal compromise or malposition is suspected.',
+            'Third stage: placenta delivery within 30 minutes (active management) or 60 minutes (physiological). Monitor for postpartum haemorrhage, retained placenta, or inversion.'
+        ],
+        steps: [
+            'Initial triage: confirm presentation, membranes, Bishop score trend, and review antenatal plan (VBAC, previous CS, placenta praevia). Site IV access and send group & save when risk factors identified.',
+            'Latent-stage escalation triggers: contractions >1/2 min, meconium, maternal pyrexia, vaginal bleeding, or reduced fetal movements. Admit, obtain CTG, start IV antibiotics if chorioamnionitis suspected.',
+            'Active-stage management: if dilation <2 cm over 4 h (nullip) or <1 cm (multip), perform amniotomy (if safe) and commence oxytocin infusion titrated to 4 contractions/10 min. Reassess Bishop score and uterine activity 4-hourly.',
+            'Failure to progress despite oxytocin: optimise bladder emptying, analgesia, maternal position; perform bedside scan for malposition. Escalate for operative delivery if two assessments show no change or oxytocin at maximum dose.',
+            'Fetal compromise bundle: stop oxytocin, left lateral tilt, IV fluids ± oxygen, consider tocolysis (terbutaline 0.25 mg SC) for tachysystole, prepare theatre for category-1 caesarean if abnormal CTG persists.',
+            'Cord prolapse/antepartum haemorrhage: call obstetric emergency bell, elevate presenting part, fill bladder with 500 ml saline, avoid manipulating cord, expedite delivery (usually immediate caesarean).',
+            'Second-stage plan: check prerequisites before forceps/ventouse (full dilation, engaged head, adequate analgesia, empty bladder, theatre readiness). Limit attempts to 3 pulls or 15 minutes; proceed to caesarean if unsuccessful.',
+            'Third-stage haemorrhage: activate major haemorrhage protocol, continue uterine massage, give additional uterotonics (ergometrine if no hypertension, carboprost, misoprostol) and tranexamic acid. Prepare for balloon tamponade, surgical repair, or hysterectomy if bleeding persists.',
+            'Post-event care: debrief woman, document indication/Bishop score/interventions, assess safeguarding, thrombosis risk, and arrange follow-up.'
+        ],
+        drugs: [
+            'Oxytocin infusion (1-20 mU/min titrated to contractions)',
+            'Dinoprostone or misoprostol for cervical ripening per NICE NG207',
+            'Terbutaline 0.25 mg SC (or IV salbutamol) for uterine tachysystole',
+            'Tranexamic acid 1 g IV (repeat once) for significant haemorrhage',
+            'Broad-spectrum IV antibiotics (e.g., cefuroxime + metronidazole) for suspected chorioamnionitis'
+        ],
+        redFlags: [
+            'No cervical change ≥4 h with adequate contractions',
+            'Pathological CTG or persistent fetal bradycardia',
+            'Fresh vaginal bleeding, suspected abruption, or scar tenderness',
+            'Cord prolapse or sudden loss of presenting part station',
+            'Maternal sepsis, hypotension, or collapse'
+        ],
+        ukGuideline: 'NICE NG207 Intrapartum Care (2023) | RCOG Labour Ward Emergencies',
+        criticalActions: ['Call senior obstetric, anaesthetic, neonatal teams early', 'Use Bishop score/partogram to time escalation', 'Prepare theatre for operative birth when red flags occur', 'Document decisions and provide post-event debrief']
+    },
     'acute-hyperkalaemia': {
         name: 'Acute Hyperkalaemia Management',
         category: 'metabolic',
