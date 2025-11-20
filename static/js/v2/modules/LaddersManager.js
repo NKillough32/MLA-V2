@@ -152,6 +152,25 @@ class LaddersManager {
                             'Use licensed MART products and stay within maximum daily formoterol doses when combining maintenance and reliever use.',
                             'Plan step-down once control is maintained for >=3 months and ensure spacer availability for ICS devices.'
                         ],
+                        redFlags: [
+                            { stage: 'Silent chest or inability to speak full sentences' },
+                            { stage: 'SpO2 <92% on air or rising oxygen requirement' },
+                            { stage: 'PEFR <33% of predicted/best' },
+                            { stage: 'Cyanosis, exhaustion, confusion, reduced consciousness' },
+                            { stage: 'Hypotension or arrhythmia' },
+                            { stage: 'Poor response to repeated bronchodilators' },
+                            { stage: 'Signs of pneumothorax after acute deterioration' },
+                            { stage: 'Previous ICU admission or near-fatal asthma' }
+                        ],
+                        complexCases: [
+                            { stage: 'Severe asthma requiring biologics or continuous/frequent steroids' },
+                            { stage: 'Asthma + pregnancy' },
+                            { stage: 'Occupational or allergen-driven asthma requiring specialist assessment' },
+                            { stage: 'Asthma–COPD overlap' },
+                            { stage: 'Poor adherence or inability to use inhaler devices' },
+                            { stage: 'Frequent exacerbations (≥2 steroid courses/year)' },
+                            { stage: 'Type 2 inflammatory phenotype requiring FeNO/eosinophil-guided therapy' }
+                        ],
                         steps: [
                             { stage: 'Paediatric pathways', trigger: '<5y / 5–11y / ≥12y', therapy: '<5y: focus on as-needed SABA and consider specialist review before any controller; trial of low-dose nebulised/low-dose inhaled ICS under paediatric advice. 5–11y: consider daily low-dose ICS, LTRA (montelukast) or MART where licensed for the age and inhaler device. ≥12y: consider MART (licensed ICS/formoterol inhalers such as Fostair, Symbicort) as maintenance-and-reliever therapy when appropriate; tailor device and dosing by age and ability.', notes: 'Involve paediatric respiratory team for recurrent or severe disease; ensure spacer/device education.' },
                             { stage: 'Initial', trigger: 'Infrequent symptoms, no night waking', therapy: 'SABA PRN ± intermittent low-dose ICS when SABA used', notes: 'Educate on trigger avoidance, inhaler technique and adherence; review smoking exposure.' },
@@ -173,6 +192,25 @@ class LaddersManager {
                             'Repeat eosinophils before adding ICS or triple therapy; prioritise dual bronchodilation first.',
                             'Pulmonary rehabilitation, vaccination, and inhaler training reduce exacerbations as much as medication changes.',
                             'Arrange post-exacerbation review within 4-6 weeks to reassess device technique and recovery.'
+                        ],
+                        redFlags: [
+                            { stage: 'SpO2 <88% or acute respiratory acidosis' },
+                            { stage: 'Altered mental state or CO2 retention symptoms' },
+                            { stage: 'New onset severe tachypnoea or use of accessory muscles' },
+                            { stage: 'Haemodynamic instability or hypotension' },
+                            { stage: 'Suspected pneumothorax' },
+                            { stage: 'New arrhythmia triggered by exacerbation' },
+                            { stage: 'Rapidly worsening hypercapnia (chronically high CO2 patients)' },
+                            { stage: 'Signs of pneumonia with sepsis physiology' }
+                        ],
+                        complexCases: [
+                            { stage: 'Frequent exacerbations despite triple therapy' },
+                            { stage: 'Chronic bronchitis phenotype needing roflumilast or macrolides' },
+                            { stage: 'Coexisting bronchiectasis' },
+                            { stage: 'Severe hypoxaemia requiring LTOT/HOT assessment' },
+                            { stage: 'ACBI/bullous disease requiring surgical assessment' },
+                            { stage: 'Pulmonary hypertension or cor pulmonale' },
+                            { stage: 'COPD + HF or COPD + asthma overlap' }
                         ],
                         steps: [
                             {
@@ -231,6 +269,25 @@ class LaddersManager {
                             'Check U&Es and potassium 1-2 weeks after ACEI/ARB/ARNI or MRA changes; avoid stopping for <30% creatinine rise unless symptomatic.',
                             'Maintain euvolaemia with loop diuretics but avoid stopping disease-modifying therapy unless true intolerance.',
                         ],
+                        redFlags: [
+                            { stage: 'Acute pulmonary oedema' },
+                            { stage: 'Systolic BP <90 mmHg' },
+                            { stage: 'SpO2 <92% or rising oxygen requirement' },
+                            { stage: 'New chest pain suspicious for ACS' },
+                            { stage: 'Syncope or pre-syncope' },
+                            { stage: 'Rapid AF with haemodynamic compromise' },
+                            { stage: 'Worsening renal function with oliguria' },
+                            { stage: 'Suspected cardiogenic shock' }
+                        ],
+                        complexCases: [
+                            { stage: 'HF + CKD stage 4–5 or recurrent hyperkalaemia' },
+                            { stage: 'Intolerance to RAAS/MRA therapies' },
+                            { stage: 'Frequent HF admissions despite optimal therapy' },
+                            { stage: 'Candidates for ICD/CRT' },
+                            { stage: 'HF with significant valvular disease' },
+                            { stage: 'Suspected infiltrative cardiomyopathy' },
+                            { stage: 'Palliative HF requiring symptom-focused planning' }
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Confirmed HFrEF (LVEF ≤40%)', therapy: 'Start ACEI (or ARB) and titrate; where appropriate consider sacubitril/valsartan (ARNI) after stopping ACEI with recommended washout.', notes: 'Assess renal function and potassium within 1–2 weeks of dose changes; consider early initiation of other foundational agents.' },
                             { stage: 'Step 2', trigger: 'Early follow-up', therapy: 'Add evidence-based β-blocker (bisoprolol, carvedilol, nebivolol) and uptitrate as tolerated; initiate mineralocorticoid receptor antagonist (spironolactone/eplerenone) when indicated.', notes: 'Delay initiation only if unstable or fluid overloaded—optimise diuretics first; monitor U&Es.' },
@@ -252,6 +309,20 @@ class LaddersManager {
                             'Treat like HFrEF where tolerated; SGLT2 inhibitors and ACEI/ARB/ARNI are reasonable for symptomatic patients.',
                             'Hunt for reversible drivers (uncontrolled hypertension, AF with rapid rate, ischaemia) before assuming refractory disease.',
                         ],
+                        redFlags: [
+                            { stage: 'New pulmonary oedema' },
+                            { stage: 'Hypotension or arrhythmia with instability' },
+                            { stage: 'SpO2 <92% or increased oxygen need' },
+                            { stage: 'Syncope, collapse, or acute ischaemia' },
+                            { stage: 'Severe congestion refractory to oral diuretics' }
+                        ],
+                        complexCases: [
+                            { stage: 'HFmrEF + AF requiring rhythm control' },
+                            { stage: 'HFmrEF + uncontrolled hypertension' },
+                            { stage: 'Ischaemic disease needing revascularisation assessment' },
+                            { stage: 'Mixed restrictive/diastolic patterns' },
+                            { stage: 'Diagnostic uncertainty (HFpEF vs early HFrEF)' }
+                        ],
                         steps: [
                             { stage: 'Assessment', trigger: 'LVEF 41–49%', therapy: 'Treat comorbidities; consider ACEI/ARB/ARNI and β-blocker where indicated', notes: 'Consider SGLT2 inhibitor in symptomatic patients given emerging evidence.' },
                             { stage: 'Referral', trigger: 'Ongoing symptoms or deterioration', therapy: 'Referral to HF specialist for consideration of advanced therapies or trial eligibility', notes: 'Shared decision-making important due to less definitive evidence base.' }
@@ -269,6 +340,20 @@ class LaddersManager {
                             'Tight BP control and judicious diuresis are the core levers; avoid hypovolaemia in older adults.',
                             'Manage AF aggressively (rate or rhythm) to reduce decompensation risk.',
                             'Use SGLT2 inhibitors for symptomatic HFpEF if licensed and eGFR allows.',
+                        ],
+                        redFlags: [
+                            { stage: 'Acute pulmonary oedema' },
+                            { stage: 'Severe uncontrolled hypertension' },
+                            { stage: 'Syncope, acute arrhythmia, or new AF with instability' },
+                            { stage: 'Worsening AKI from over-diuresis' },
+                            { stage: 'Severe exertional desaturation' }
+                        ],
+                        complexCases: [
+                            { stage: 'HFpEF with frailty/polymorbidity' },
+                            { stage: 'HFpEF + obesity hypoventilation' },
+                            { stage: 'HFpEF + pulmonary hypertension' },
+                            { stage: 'Recurrent admissions despite stable dosing' },
+                            { stage: 'HFpEF with diastolic restrictive physiology needing advanced imaging' }
                         ],
                         steps: [
                             { stage: 'Symptom control', trigger: 'Clinical signs of congestion', therapy: 'Diuretics to control fluid overload', notes: 'Monitor renal function and electrolytes.' },
@@ -288,6 +373,19 @@ class LaddersManager {
                             'Confirm diagnosis and escalation decisions with home or ambulatory readings, not single clinic values.',
                             'Recheck creatinine and electrolytes 2-4 weeks after starting or increasing RAAS blockade or thiazide-like diuretics.',
                             'Avoid ACEI + ARB combinations; counsel on NSAID use and pregnancy risks when choosing agents.',
+                        ],
+                        redFlags: [
+                            { stage: 'Accelerated/malignant hypertension (papilloedema, retinal haemorrhages)' },
+                            { stage: 'BP ≥180/120 with acute chest pain, neurological deficit, or AKI' },
+                            { stage: 'Suspected pre-eclampsia in pregnancy' },
+                            { stage: 'Hypertensive encephalopathy (headache, seizures, confusion)' }
+                        ],
+                        complexCases: [
+                            { stage: 'Resistant hypertension on triple therapy' },
+                            { stage: 'Suspected secondary causes (renal artery stenosis, endocrine disease)' },
+                            { stage: 'Pregnancy/postpartum hypertension' },
+                            { stage: 'Hypertension + CKD stage ≥3b' },
+                            { stage: 'Hypertension with orthostatic hypotension or autonomic failure' }
                         ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Clinic BP ≥140/90 mmHg', therapy: 'ACEI/ARB if <55y; CCB if ≥55y or Black African/Caribbean origin', notes: 'Avoid ACEI/ARB in pregnancy; discuss lifestyle interventions.' },
@@ -310,6 +408,21 @@ class LaddersManager {
                             'Individualise HbA1c targets - relax goals in frailty or high hypoglycaemia risk - and review every 3-6 months.',
                             'Teach sick-day rules, foot care, and injection technique (GLP-1/insulin); reassess adherence before intensifying.',
                         ],
+                        redFlags: [
+                            { stage: 'Hyperglycaemic emergencies: DKA, HHS' },
+                            { stage: 'Severe hypoglycaemia or recurrent unrecognised episodes' },
+                            { stage: 'Rapid unexplained weight loss → consider pancreatic cancer' },
+                            { stage: 'New foot ulcer with systemic illness' },
+                            { stage: 'Ketosis in established T2DM' }
+                        ],
+                        complexCases: [
+                            { stage: 'T2DM + CKD (eGFR <30)' },
+                            { stage: 'T2DM + HF requiring SGLT2 prioritisation' },
+                            { stage: 'Polypharmacy with high hypoglycaemia risk' },
+                            { stage: 'Frailty requiring relaxed HbA1c targets' },
+                            { stage: 'Post-bariatric surgery glycaemic instability' },
+                            { stage: 'T2DM in pregnancy or pre-conception planning' }
+                        ],
                         steps: [
                             { stage: 'Foundation', trigger: 'New diagnosis', therapy: 'Lifestyle measures + structured education', notes: 'Review HbA1c at 3–6 months.' },
                             { stage: 'Step 1', trigger: 'HbA1c above target', therapy: 'Metformin (if eGFR ≥30); consider SGLT2 first-line if CVD, HF or CKD present', notes: 'Stop metformin if eGFR <30 mL/min/1.73m²; SGLT2s (eg dapagliflozin) may be continued/initiated down to eGFR thresholds stated in product guidance (some agents to eGFR 20).' },
@@ -330,6 +443,22 @@ class LaddersManager {
                             'Allow 4-6 weeks at a therapeutic dose before switching; avoid multi-drug augmentation without specialist input.',
                             'Pair medication with structured psychological therapy and plan early follow-up after initiation or dose change.',
                         ],
+                        redFlags: [
+                            { stage: 'Active suicidal ideation or self-harm plans' },
+                            { stage: 'Psychotic symptoms' },
+                            { stage: 'Acute behavioural disturbance' },
+                            { stage: 'Severe functional impairment or inability to self-care' },
+                            { stage: 'Rapid deterioration or mixed affective state' },
+                            { stage: 'Suspected undiagnosed bipolar disorder' }
+                        ],
+                        complexCases: [
+                            { stage: 'Treatment-resistant depression (≥2 adequate trials)' },
+                            { stage: 'Perinatal depression' },
+                            { stage: 'Depression with comorbid substance misuse' },
+                            { stage: 'Depression in complex trauma/PTSD' },
+                            { stage: 'Anxiety disorders with significant physical comorbidity' },
+                            { stage: 'SSRI non-response requiring augmentation or combination therapy' }
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Mild symptoms', therapy: 'Detection, psychoeducation, active monitoring', notes: 'Address social needs and refer to low-intensity psychological interventions.' },
                             { stage: 'Step 2', trigger: 'Moderate symptoms', therapy: 'High-intensity psychological therapy (CBT, IPT) ± SSRI (sertraline first-line)', notes: 'Consider pregnancy/perinatal choices: sertraline preferred; avoid paroxetine where possible and discuss risks in pregnancy/breastfeeding.' },
@@ -349,6 +478,21 @@ class LaddersManager {
                             'Discuss contraception and folic acid with women of childbearing potential; avoid valproate where alternatives exist.',
                             'Revisit driving, occupation, and safety advice after seizures and when adjusting therapy.',
                         ],
+                        redFlags: [
+                            { stage: 'First seizure with red features (head injury, infection, malignancy, focal deficits)' },
+                            { stage: 'Status epilepticus (>5 minutes)' },
+                            { stage: 'Recurrent seizures without recovery' },
+                            { stage: 'Focal neurological deficit post-seizure → consider stroke' },
+                            { stage: 'Suspected non-convulsive status in confusion' }
+                        ],
+                        complexCases: [
+                            { stage: 'Drug-resistant epilepsy (failure of two ASMs)' },
+                            { stage: 'Women of childbearing age requiring preconception planning' },
+                            { stage: 'Structural lesions requiring neurosurgical review' },
+                            { stage: 'Epilepsy + learning disability' },
+                            { stage: 'Epilepsy with psychiatric comorbidity' },
+                            { stage: 'VNS, ketogenic diet or surgical pathway consideration' }
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'New diagnosis', therapy: 'Begin appropriate monotherapy (lamotrigine, levetiracetam, carbamazepine) per seizure type', notes: 'Counsel on adherence and driving restrictions.' },
                             { stage: 'Status epilepticus (emergency)', trigger: 'Ongoing seizure >5 minutes or repeated seizures without recovery', therapy: 'First-line: buccal midazolam 10 mg (adult) or rectal diazepam per local dosing; IV lorazepam if IV access. Second-line: load levetiracetam or valproate IV; proceed to anaesthetic/ICU if refractory.', notes: 'Call critical care early for refractory status epilepticus; secure airway and consider continuous EEG.' },
@@ -366,6 +510,19 @@ class LaddersManager {
                             'Ensure adequate calcium/vitamin D before and during bisphosphonate or denosumab therapy.',
                             'Arrange dental review before IV bisphosphonate/denosumab and advise on jaw pain or dental issues promptly.',
                             'Plan duration/drug holidays by fracture risk; reassess renal function and BMD before extending therapy.',
+                        ],
+                        redFlags: [
+                            { stage: 'Suspected vertebral fracture (acute severe back pain, height loss, kyphosis)' },
+                            { stage: 'Hip fracture symptoms' },
+                            { stage: 'Spinal cord compression signs (weakness, saddle anaesthesia)' },
+                            { stage: 'Atypical femoral fracture symptoms in long-term bisphosphonates' }
+                        ],
+                        complexCases: [
+                            { stage: 'Severe/multiple fragility fractures' },
+                            { stage: 'Long-term glucocorticoid therapy' },
+                            { stage: 'Renal impairment requiring modified therapy' },
+                            { stage: 'Transition off denosumab (risk of rebound fractures)' },
+                            { stage: 'Young adults with suspected secondary osteoporosis' }
                         ],
                         steps: [
                             { stage: 'Assessment', trigger: 'Adults ≥50y with risk factors', therapy: 'FRAX/QFracture assessment + DEXA where indicated', notes: 'Address falls risk and secondary causes.' },
@@ -386,6 +543,19 @@ class LaddersManager {
                             'Agree functional goals and pacing plans up front; avoid escalating long-term opioid doses for chronic primary pain.',
                             'Screen and treat mood and sleep disorders that perpetuate pain; use psychologically informed therapy early.',
                             'Reassess gabapentinoid/TCA benefit regularly and taper if ineffective or causing sedation or falls risk.',
+                        ],
+                        redFlags: [
+                            { stage: 'New neurological deficit or cauda equina symptoms' },
+                            { stage: 'Unexplained weight loss, fever, or systemic illness' },
+                            { stage: 'Pain following trauma with suspicion of fracture' },
+                            { stage: 'Progressive weakness, saddle anaesthesia, or bladder/bowel dysfunction' }
+                        ],
+                        complexCases: [
+                            { stage: 'Neuropathic phenotypes requiring targeted therapy' },
+                            { stage: 'Chronic pain with severe depression/anxiety' },
+                            { stage: 'Patients on long-term high-dose opioids' },
+                            { stage: 'Complex regional pain syndrome' },
+                            { stage: 'Pain + complex social/psychological circumstances' }
                         ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Initial presentation', therapy: 'Education, supported self-management, graded exercise/physiotherapy', notes: 'Discuss realistic goals and flare management.' },
@@ -410,6 +580,22 @@ class LaddersManager {
                             'Recheck potassium and creatinine 1-2 weeks after RAAS/MRA or SGLT2 changes and stop NSAIDs where possible.',
                             'Dose-adjust renally cleared drugs and keep vaccinations (influenza, pneumococcal, hepatitis B) up to date.',
                         ],
+                        redFlags: [
+                            { stage: 'Potassium ≥6.0 mmol/L or ECG changes' },
+                            { stage: 'Pulmonary oedema due to fluid overload' },
+                            { stage: 'Rapid eGFR drop (>25% unexplained)' },
+                            { stage: 'Suspected acute GN (blood + protein + systemic symptoms)' },
+                            { stage: 'Severe metabolic acidosis' },
+                            { stage: 'Uraemic symptoms (pericarditis, encephalopathy)' }
+                        ],
+                        complexCases: [
+                            { stage: 'CKD with refractory hyperkalaemia' },
+                            { stage: 'CKD + diabetes + HF requiring multi-drug optimisation' },
+                            { stage: 'CKD stage 4–5 requiring RRT planning' },
+                            { stage: 'Resistant hypertension with CKD' },
+                            { stage: 'Renal bone disease requiring specialist input' },
+                            { stage: 'Anaemia unresponsive to iron therapy' }
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Albuminuria (ACR ≥3 mg/mmol) or hypertension', therapy: 'ACEI/ARB titrated to maximum tolerated dose', notes: 'Monitor creatinine and potassium within 2 weeks.' },
                             { stage: 'SGLT2 in CKD', trigger: 'Type 2 diabetes or eGFR 20–45 with albuminuria', therapy: 'Add SGLT2 inhibitor (dapagliflozin, empagliflozin) where indicated', notes: 'Continue unless eGFR drops below agent-specific thresholds; coordinate with nephrology if eGFR <20.' },
@@ -431,6 +617,20 @@ class LaddersManager {
                             'Assess withdrawal risk (history of seizures/DTs, high AUDIT score) to decide on community versus inpatient detox.',
                             'Pair pharmacotherapy with psychosocial support and relapse-prevention follow-up soon after detox.',
                         ],
+                        redFlags: [
+                            { stage: 'Alcohol withdrawal seizures' },
+                            { stage: 'Delirium tremens (agitation, hallucinations, autonomic instability)' },
+                            { stage: 'Suspected Wernicke’s encephalopathy' },
+                            { stage: 'Severe dehydration, electrolyte disturbance, or malnutrition' },
+                            { stage: 'Suicidal ideation or unsafe home withdrawal setting' }
+                        ],
+                        complexCases: [
+                            { stage: 'Dual diagnosis: alcohol + severe mental illness' },
+                            { stage: 'Alcohol-related liver disease' },
+                            { stage: 'Repeated failed community detox attempts' },
+                            { stage: 'Pregnancy and alcohol dependence' },
+                            { stage: 'High AUDIT score with safeguarding concerns' }
+                        ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Opportunistic contact', therapy: 'Identification and brief advice (AUDIT-C screening, motivational interviewing)', notes: 'Document units and readiness to change.' },
                             { stage: 'Step 2', trigger: 'Hazardous/harmful use', therapy: 'Extended brief interventions, psychosocial therapy, facilitated self-help', notes: 'Involve family/support networks.' },
@@ -449,6 +649,18 @@ class LaddersManager {
                             'Set a quit date and combine pharmacotherapy with behavioural support - success rates double when paired.',
                             'Use combination NRT or varenicline when not contraindicated; plan for around 12 weeks of support and monitor side effects.',
                             'Arrange follow-up at 1, 4, and 12 weeks to adjust therapy and troubleshoot lapses early.',
+                        ],
+                        redFlags: [
+                            { stage: 'Acute nicotine toxicity from overuse' },
+                            { stage: 'Severe psychiatric destabilisation after quit attempt (rare but noted with varenicline/withdrawal)' },
+                            { stage: 'Chest pain or acute breathlessness requiring emergency assessment' }
+                        ],
+                        complexCases: [
+                            { stage: 'COPD/asthma with heavy dependency' },
+                            { stage: 'Patients with severe mental illness' },
+                            { stage: 'Recurrent relapses despite pharmacotherapy' },
+                            { stage: 'Pregnancy and smoking' },
+                            { stage: 'Adolescents or vulnerable adults requiring safeguarding-oriented support' }
                         ],
                         steps: [
                             { stage: 'Step 1', trigger: 'Every clinical encounter', therapy: 'Very brief advice (ASK-ADVISE-ACT) + offer referral', notes: 'Document smoking status as vital sign.' },
@@ -1587,88 +1799,94 @@ class LaddersManager {
 
     const overviewHtml = ladder.summary || '';
 
-    // RED-FLAG filter – now uses a richer keyword set across stage / trigger / therapy / notes
-    const redFlags = Array.isArray(ladder.steps)
-        ? ladder.steps.filter(s => {
-            const blob = (
-                (s.stage || '') + ' ' +
-                (s.trigger || '') + ' ' +
-                (s.therapy || '') + ' ' +
-                (s.notes || '')
-            ).toLowerCase();
+    const normalizeFlags = (arr) => arr.map(flag => typeof flag === 'string' ? { stage: flag } : flag);
 
-            const redKeywords = [
-                'life-threatening',
-                'status',
-                'status epilepticus',
-                'emergency',
-                'acute severe',
-                'acute decompensated',
-                'shock',
-                'septic',
-                'sepsis',
-                'cardiogenic',
-                'pulmonary oedema',
-                'flash oedema',
-                'respiratory failure',
-                'spo2',
-                'sats <',
-                'hypoxia',
-                'accelerated',
-                'malignant hypertension',
-                'hypertensive crisis',
-                'hyperkalaem',
-                'hyperkalaemia',
-                'k+ ≥',
-                'dka',
-                'ketoacidosis',
-                'hhs',
-                'hyperosmolar',
-                'delirium tremens',
-                'withdrawal seizure',
-                'suicidal',
-                'overdose',
-                'airway compromise',
-                'stridor',
-                'chest pain',
-                'syncope'
-            ];
+    // RED-FLAG filter – prefer explicit entries, otherwise use keyword heuristic
+    const redFlags = Array.isArray(ladder.redFlags) && ladder.redFlags.length
+        ? normalizeFlags(ladder.redFlags)
+        : (Array.isArray(ladder.steps)
+            ? ladder.steps.filter(s => {
+                const blob = (
+                    (s.stage || '') + ' ' +
+                    (s.trigger || '') + ' ' +
+                    (s.therapy || '') + ' ' +
+                    (s.notes || '')
+                ).toLowerCase();
 
-            return redKeywords.some(k => blob.includes(k));
-        })
-        : [];
+                const redKeywords = [
+                    'life-threatening',
+                    'status',
+                    'status epilepticus',
+                    'emergency',
+                    'acute severe',
+                    'acute decompensated',
+                    'shock',
+                    'septic',
+                    'sepsis',
+                    'cardiogenic',
+                    'pulmonary oedema',
+                    'flash oedema',
+                    'respiratory failure',
+                    'spo2',
+                    'sats <',
+                    'hypoxia',
+                    'accelerated',
+                    'malignant hypertension',
+                    'hypertensive crisis',
+                    'hyperkalaem',
+                    'hyperkalaemia',
+                    'k+ ≥',
+                    'dka',
+                    'ketoacidosis',
+                    'hhs',
+                    'hyperosmolar',
+                    'delirium tremens',
+                    'withdrawal seizure',
+                    'suicidal',
+                    'overdose',
+                    'airway compromise',
+                    'stridor',
+                    'chest pain',
+                    'syncope'
+                ];
 
-    // COMPLEX-case filter – for “hard” scenarios but not time-critical emergencies
-    const complexFlags = Array.isArray(ladder.steps)
-        ? ladder.steps.filter(s => {
-            const blob = (
-                (s.stage || '') + ' ' +
-                (s.trigger || '') + ' ' +
-                (s.notes || '')
-            ).toLowerCase();
+                return redKeywords.some(k => blob.includes(k));
+            })
+            : []);
 
-            const complexKeywords = [
-                'severe',
-                'difficult',
-                'refractory',
-                'resistant',
-                'advanced',
-                'frail',
-                'frailty',
-                'multimorbidity',
-                'mdt',
-                'specialist',
-                'tertiary',
-                'device therapy',
-                'biologic',
-                'multiple fractures',
-                'high risk',
-                'very high risk'
-            ];
+    // COMPLEX-case filter – prefer explicit entries, otherwise use heuristic
+    const complexFlags = Array.isArray(ladder.complexCases) && ladder.complexCases.length
+        ? normalizeFlags(ladder.complexCases)
+        : (Array.isArray(ladder.steps)
+            ? ladder.steps.filter(s => {
+                const blob = (
+                    (s.stage || '') + ' ' +
+                    (s.trigger || '') + ' ' +
+                    (s.notes || '')
+                ).toLowerCase();
 
-            return complexKeywords.some(k => blob.includes(k));
-        })
-        : [];
+                const complexKeywords = [
+                    'severe',
+                    'difficult',
+                    'refractory',
+                    'resistant',
+                    'advanced',
+                    'frail',
+                    'frailty',
+                    'multimorbidity',
+                    'mdt',
+                    'specialist',
+                    'tertiary',
+                    'device therapy',
+                    'biologic',
+                    'multiple fractures',
+                    'high risk',
+                    'very high risk'
+                ];
+
+                return complexKeywords.some(k => blob.includes(k));
+            })
+            : []);
 
     const redFlagsHtml = redFlags.length
         ? redFlags.map(s => `
