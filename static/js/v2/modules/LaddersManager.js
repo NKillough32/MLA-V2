@@ -803,24 +803,43 @@ class LaddersManager {
                 const btn = e.target.closest && e.target.closest('.guideline-pill-btn');
                 if (!btn) return;
 
+                // Find the owning guideline card and key
                 const card = btn.closest('.guideline-ladder-card');
                 if (!card) return;
-
+                const guidelineKey = card.getAttribute('data-guideline') || card.id || '';
                 const key = btn.getAttribute('data-pill');
-                const buttons = card.querySelectorAll('.guideline-pill-btn');
-                const contents = card.querySelectorAll('.pill-content');
 
-                buttons.forEach(b => b.classList.remove('active'));
+                // Scope selectors to the specific card/guideline to avoid cross-card collisions
+                const buttons = card.querySelectorAll(`.guideline-pill-btn[data-guideline="${guidelineKey}"]`);
+                const contents = card.querySelectorAll(`.pill-content[data-guideline="${guidelineKey}"]`);
+
+                buttons.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
                 contents.forEach(c => c.classList.remove('active'));
 
                 btn.classList.add('active');
-                const target = card.querySelector(`.pill-content[data-pill="${key}"]`);
+                btn.setAttribute('aria-selected', 'true');
+
+                // Use id-based lookup for the target panel when available (more robust)
+                const targetId = `pillcontent-${guidelineKey}-${key}`;
+                let target = card.querySelector(`#${targetId}`);
+                if (!target) {
+                    // fallback to data-pill within same card
+                    target = card.querySelector(`.pill-content[data-pill="${key}"]`);
+                }
+
                 if (target) {
                     target.classList.add('active');
                 }
 
                 // Optional: when switching to Step-by-step, open the first accordion step by default
                 if (key === 'steps') {
+                    // Close other open items in this card first
+                    const openItems = card.querySelectorAll('.guideline-accordion .accordion-item.open');
+                    openItems.forEach(it => it.classList.remove('open'));
+
                     const firstItem = card.querySelector('.guideline-accordion .accordion-item');
                     if (firstItem) {
                         firstItem.classList.add('open');
@@ -1647,36 +1666,35 @@ class LaddersManager {
             ${ladder.reference ? `<div style="margin-bottom:8px"><span class="guideline-badge">${ladder.reference}</span></div>` : ''}
             ${miniSummary}
             <div class="guideline-ladders-list">
-                <article class="guideline-ladder-card" id="guideline-${ladder.key}">
+                <article class="guideline-ladder-card" id="guideline-${ladder.key}" data-guideline="${ladder.key}">
                     <div class="guideline-ladder-header">
                         <h4 style="margin:0;display:flex;gap:8px;align-items:center;">
                             <span>${ladderIcon}</span>
                             <span>${ladder.shortTitle || ladder.title}</span>
                         </h4>
                     </div>
-
                     <div class="guideline-pill-tabs" role="tablist" aria-label="Guideline sections">
-                        <button class="guideline-pill-btn active" data-pill="overview">Overview</button>
-                        <button class="guideline-pill-btn" data-pill="steps">Step-by-step</button>
-                        <button class="guideline-pill-btn" data-pill="redflags">Red flags</button>
-                        <button class="guideline-pill-btn" data-pill="complex">Complex cases</button>
+                        <button class="guideline-pill-btn active" data-guideline="${ladder.key}" data-pill="overview" id="pill-${ladder.key}-overview" role="tab" aria-selected="true" aria-controls="pillcontent-${ladder.key}-overview">Overview</button>
+                        <button class="guideline-pill-btn" data-guideline="${ladder.key}" data-pill="steps" id="pill-${ladder.key}-steps" role="tab" aria-selected="false" aria-controls="pillcontent-${ladder.key}-steps">Step-by-step</button>
+                        <button class="guideline-pill-btn" data-guideline="${ladder.key}" data-pill="redflags" id="pill-${ladder.key}-redflags" role="tab" aria-selected="false" aria-controls="pillcontent-${ladder.key}-redflags">Red flags</button>
+                        <button class="guideline-pill-btn" data-guideline="${ladder.key}" data-pill="complex" id="pill-${ladder.key}-complex" role="tab" aria-selected="false" aria-controls="pillcontent-${ladder.key}-complex">Complex cases</button>
                     </div>
 
-                    <div class="pill-content active" data-pill="overview">
+                    <div class="pill-content active" data-guideline="${ladder.key}" data-pill="overview" id="pillcontent-${ladder.key}-overview" role="tabpanel" aria-labelledby="pill-${ladder.key}-overview">
                         <div class="guideline-meta">${overviewHtml}</div>
                     </div>
 
-                    <div class="pill-content" data-pill="steps">
+                    <div class="pill-content" data-guideline="${ladder.key}" data-pill="steps" id="pillcontent-${ladder.key}-steps" role="tabpanel" aria-labelledby="pill-${ladder.key}-steps">
                         <div class="guideline-accordion">
                             ${stepsHtml}
                         </div>
                     </div>
 
-                    <div class="pill-content" data-pill="redflags">
+                    <div class="pill-content" data-guideline="${ladder.key}" data-pill="redflags" id="pillcontent-${ladder.key}-redflags" role="tabpanel" aria-labelledby="pill-${ladder.key}-redflags">
                         ${redFlagsHtml}
                     </div>
 
-                    <div class="pill-content" data-pill="complex">
+                    <div class="pill-content" data-guideline="${ladder.key}" data-pill="complex" id="pillcontent-${ladder.key}-complex" role="tabpanel" aria-labelledby="pill-${ladder.key}-complex">
                         ${complexHtml}
                     </div>
                 </article>
