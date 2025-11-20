@@ -175,13 +175,48 @@ class LaddersManager {
                             'Arrange post-exacerbation review within 4-6 weeks to reassess device technique and recovery.'
                         ],
                         steps: [
-                            { stage: 'Initial', trigger: 'New diagnosis with intermittent symptoms', therapy: 'SABA or SAMA PRN; offer smoking cessation and pulmonary rehabilitation', notes: 'Ensure accurate inhaler technique and review comorbidities.' },
-                            { stage: 'Step 2', trigger: 'Persistent breathlessness', therapy: 'Start single long-acting bronchodilator (LABA or LAMA) and review', notes: 'Choose device patient can use reliably.' },
-                            { stage: 'Step 3', trigger: 'Persistent symptoms or exacerbations', therapy: 'Dual bronchodilation (LABA + LAMA)', notes: 'Review within 3 months; check blood eosinophils to guide ICS decisions.' },
-                            { stage: 'Step 4', trigger: 'Exacerbations or eosinophilic phenotype', therapy: 'Consider LABA/LAMA/ICS (triple therapy) when eosinophils ≥300 cells/µL or asthma features present', notes: 'Discuss pneumonia risk with ICS and monitor.' },
-                            { stage: 'Phenotype-targeted therapy', trigger: 'Chronic bronchitis phenotype or frequent exacerbations', therapy: 'Consider roflumilast for severe chronic bronchitis with FEV1 <50% and frequent exacerbations; consider long-term macrolide (azithromycin) in selected patients after specialist review.', notes: 'Patients with eosinophils ≥300 cells/µL derive more benefit from ICS-containing regimens.' },
-                            { stage: 'AECOPD (acute exacerbation)', trigger: 'Worsening dyspnoea, sputum change +/- systemic features', therapy: 'Controlled oxygen target SpO2 88–92% (unless other indication); give prednisolone 30 mg PO for 5 days; consider antibiotics if increased sputum purulence or severity — first-line amoxicillin, doxycycline or (if severe/high-risk) co-amoxiclav.', notes: 'Reserve co-amoxiclav for severe infection or risk factors for gram-negative organisms; reassess need for antibiotics within 48–72 hours.' },
-                            { stage: 'LTOT criteria', trigger: 'Assessment after stabilization', therapy: 'Long-term oxygen therapy indicated when PaO2 ≤7.3 kPa on air (≤55 mmHg) or PaO2 7.3–8.0 kPa (55–60 mmHg) with evidence of cor pulmonale, polycythaemia (haemoglobin/haematocrit), or nocturnal desaturation.', notes: 'Ensure appropriate oxygen assessment after a period of clinical stability and smoking cessation counselling.' }
+                            {
+                                stage: 'Initial',
+                                trigger: 'New diagnosis with intermittent symptoms',
+                                therapy: 'SABA or SAMA PRN; offer smoking cessation and pulmonary rehabilitation',
+                                notes: 'Ensure accurate inhaler technique and review comorbidities.'
+                            },
+                            {
+                                stage: 'Step 2',
+                                trigger: 'Persistent breathlessness',
+                                therapy: 'Start single long-acting bronchodilator (LABA or LAMA) and review',
+                                notes: 'Choose device patient can use reliably.'
+                            },
+                            {
+                                stage: 'Step 3',
+                                trigger: 'Persistent symptoms or exacerbations',
+                                therapy: 'Dual bronchodilation (LABA + LAMA)',
+                                notes: 'Review within 3 months; check blood eosinophils to guide ICS decisions.'
+                            },
+                            {
+                                stage: 'Step 4',
+                                trigger: 'Exacerbations or eosinophilic phenotype',
+                                therapy: 'Consider LABA/LAMA/ICS (triple therapy) when eosinophils ≥300 cells/µL or asthma features present',
+                                notes: 'Discuss pneumonia risk with ICS and monitor.'
+                            },
+                            {
+                                stage: 'Phenotype-targeted therapy',
+                                trigger: 'Chronic bronchitis phenotype or frequent exacerbations',
+                                therapy: 'Consider roflumilast (severe chronic bronchitis + FEV1 <50% + recurrent exacerbations) or long-term macrolide (azithromycin) in selected patients after specialist review.',
+                                notes: 'Patients with eosinophils ≥300 cells/µL derive more benefit from ICS-containing regimens.'
+                            },
+                            {
+                                stage: 'AECOPD (acute exacerbation)',
+                                trigger: 'Worsening dyspnoea, sputum change +/- systemic features',
+                                therapy: 'Controlled oxygen target SpO2 88–92% (unless CO₂ retainers assessed separately); prednisolone 30 mg PO for 5 days; consider antibiotics — amoxicillin, doxycycline or co-amoxiclav depending on severity.',
+                                notes: 'Reassess within 48–72 hours; avoid unnecessary prolonged steroids.'
+                            },
+                            {
+                                stage: 'LTOT criteria',
+                                trigger: 'Assessment after stabilization',
+                                therapy: 'LTOT when PaO₂ ≤7.3 kPa on air, or 7.3–8.0 kPa with cor pulmonale, polycythaemia or nocturnal desaturation.',
+                                notes: 'Ensure smoking cessation advice before oxygen therapy initiation.'
+                            }
                         ]
                     },
                     {
