@@ -1133,7 +1133,59 @@
         .contraception-hrt-card.postpartum {
             border-color: var(--v2-primary-light);
         }
-        
+
+        /* Medical statistics, epidemiology & ethics helper cards */
+        .med-knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .med-knowledge-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 14px;
+            padding: 16px;
+            box-shadow: var(--v2-shadow-sm);
+            transition: transform var(--v2-transition-base), box-shadow var(--v2-transition-base);
+        }
+
+        .med-knowledge-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        .med-knowledge-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.05rem;
+            color: var(--v2-text-primary);
+        }
+
+        .med-knowledge-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--v2-text-secondary);
+        }
+
+        .med-knowledge-note {
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background: rgba(14, 165, 233, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            color: var(--v2-text-primary);
+            font-size: 0.95rem;
+        }
+
+        [data-theme="dark"] .med-knowledge-card {
+            border-color: var(--v2-border-hover);
+        }
+
+        [data-theme="dark"] .med-knowledge-note {
+            background: rgba(14, 165, 233, 0.15);
+            border-color: rgba(14, 165, 233, 0.4);
+        }
+
         /* Tools Header */
         .tools-header {
             padding: 16px 20px;
@@ -10412,6 +10464,7 @@
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
+            <button class="tool-nav-btn" data-tool="med-stats-ethics">📈 Stats &amp; Ethics</button>
             <button class="tool-nav-btn" data-tool="emergency-protocols">🚨 Emergency</button>
             <button class="tool-nav-btn" data-tool="interpretation">📋 Interpretation</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Clinical Treatment Ladders</button>
@@ -10790,6 +10843,13 @@
             <div id="guidelines-panel" class="tool-panel">
                 <!-- Content loaded dynamically by JavaScript -->
                 <div class="loading-message">📋 Loading guidelines...</div>
+            </div>
+
+            <!-- Medical Statistics, Epidemiology & Ethics Panel -->
+            <div id="med-stats-ethics-panel" class="tool-panel">
+                <div id="med-stats-ethics-container" class="med-knowledge-grid">
+                    <div class="loading-message">📈 Loading medical statistics, epidemiology and ethics...</div>
+                </div>
             </div>
 
             <!-- Hormone & Contraception Panel -->
