@@ -24,6 +24,7 @@ import { LabValuesManager } from './modules/LabValuesManager.js';
 import { GuidelinesManager } from './modules/GuidelinesManager.js';
 import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
+import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
@@ -49,6 +50,7 @@ class MLAQuizApp {
         this.guidelinesManager = new GuidelinesManager();
         this.mnemonicsManager = mnemonicsManager;
         this.interpretationToolsManager = interpretationToolsManager;
+        this.medStatsEthicsManager = medStatsEthicsManager;
         this.laddersManager = laddersManager;
         this.differentialDxManager = differentialDxManager;
         this.triadsManager = triadsManager;
@@ -122,6 +124,7 @@ class MLAQuizApp {
             this.guidelinesManager.initialize(),
             this.mnemonicsManager.initialize(),
             this.interpretationToolsManager.initialize(),
+            this.medStatsEthicsManager.initialize(),
             this.laddersManager.initialize()
         ];
 
@@ -129,12 +132,13 @@ class MLAQuizApp {
 
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
 
-        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, ladderStats] = await Promise.all([
+        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats] = await Promise.all([
             this.drugManager.getStatistics(),
             Promise.resolve(this.labManager.getStatistics() || { totalPanels: 0, totalTests: 0 }),
             this.guidelinesManager.getStatistics(),
             this.mnemonicsManager.getStatistics(),
             this.interpretationToolsManager.getStatistics(),
+            Promise.resolve(this.medStatsEthicsManager.getStatistics()),
             this.laddersManager.getStatistics()
         ]);
 
@@ -142,6 +146,7 @@ class MLAQuizApp {
         const safeGuidelinesStats = guidelinesStats || { total: 0 };
         const safeMnemonicStats = mnemonicStats || { totalMnemonics: 0 };
         const safeInterpretationStats = interpretationStats || { totalTools: 0 };
+        const safeMedStatsStats = medStatsStats || { totalSections: 0 };
         const safeLadderStats = ladderStats || { totalLadders: 0 };
 
         this.scheduleToolPreload();
@@ -223,6 +228,7 @@ class MLAQuizApp {
             { id: 'examination-panel', log: '👨‍⚕️ Preloading examination content...', loader: panel => this.loadExaminationContent(panel) },
             { id: 'emergency-protocols-panel', log: '🚨 Preloading emergency protocols content...', loader: panel => this.loadEmergencyProtocolsContent(panel) },
             { id: 'interpretation-panel', log: '📊 Preloading interpretation tools content...', loader: panel => this.loadInterpretationToolsContent(panel) },
+            { id: 'med-stats-ethics-panel', log: '📈 Preloading medical statistics content...', loader: panel => this.loadMedStatsEthicsContent(panel) },
             { id: 'ladders-panel', log: '🪜 Preloading treatment ladders content...', loader: panel => this.loadLaddersContent(panel) }
         ];
 
@@ -1069,6 +1075,9 @@ class MLAQuizApp {
                 break;
             case 'pdf-library':
                 this.loadPDFLibraryContent(panel);
+                break;
+            case 'med-stats-ethics':
+                this.loadMedStatsEthicsContent(panel);
                 break;
         }
     }
@@ -2023,6 +2032,28 @@ class MLAQuizApp {
         container.innerHTML = contentHtml;
         container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load medical statistics, epidemiology and ethics cards
+     */
+    loadMedStatsEthicsContent(panel) {
+        if (!panel) {
+            console.error('loadMedStatsEthicsContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#med-stats-ethics-container') || panel;
+        if (!container) {
+            console.error('loadMedStatsEthicsContent: container not found');
+            return;
+        }
+
+        if (this.medStatsEthicsManager && typeof this.medStatsEthicsManager.render === 'function') {
+            this.medStatsEthicsManager.render(panel);
+        } else {
+            container.innerHTML = '<div class="no-content">Medical statistics module unavailable</div>';
+        }
     }
 
     /**
