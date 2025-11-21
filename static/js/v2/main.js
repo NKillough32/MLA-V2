@@ -1003,7 +1003,8 @@ class MLAQuizApp {
             'case-studies': 'case-studies-panel',
             'learning-pathways': 'learning-pathways-panel',
             'pdf-library': 'pdf-library-panel',
-            'contraception-hrt': 'contraception-hrt-panel'
+            'contraception-hrt': 'contraception-hrt-panel',
+            'med-stats-ethics': 'med-stats-ethics-panel'
         };
         
         // Show selected panel
