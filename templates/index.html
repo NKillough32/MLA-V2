@@ -1074,6 +1074,58 @@
         .contraception-hrt-card.postpartum {
             border-color: var(--v2-primary-light);
         }
+
+        /* Medical statistics, epidemiology & ethics helper cards */
+        .med-knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .med-knowledge-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 14px;
+            padding: 16px;
+            box-shadow: var(--v2-shadow-sm);
+            transition: transform var(--v2-transition-base), box-shadow var(--v2-transition-base);
+        }
+
+        .med-knowledge-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        .med-knowledge-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.05rem;
+            color: var(--v2-text-primary);
+        }
+
+        .med-knowledge-card ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--v2-text-secondary);
+        }
+
+        .med-knowledge-note {
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 12px;
+            background: rgba(14, 165, 233, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            color: var(--v2-text-primary);
+            font-size: 0.95rem;
+        }
+
+        [data-theme="dark"] .med-knowledge-card {
+            border-color: var(--v2-border-hover);
+        }
+
+        [data-theme="dark"] .med-knowledge-note {
+            background: rgba(14, 165, 233, 0.15);
+            border-color: rgba(14, 165, 233, 0.4);
+        }
         
         /* Tools Header */
         .tools-header {
@@ -10337,6 +10389,7 @@
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
             <button class="tool-nav-btn" data-tool="genetics">🧬 Genetics</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
+            <button class="tool-nav-btn" data-tool="med-stats-ethics">📈 Stats &amp; Ethics</button>
             <button class="tool-nav-btn" data-tool="contraception-hrt">⚖️ Hormones &amp; Contraception</button>
             <button class="tool-nav-btn" data-tool="vaccinations">💉 Vaccinations</button>
             <button class="tool-nav-btn" data-tool="mnemonics">🧠 Mnemonics</button>
@@ -10713,6 +10766,44 @@
             <div id="guidelines-panel" class="tool-panel">
                 <!-- Content loaded dynamically by JavaScript -->
                 <div class="loading-message">📋 Loading guidelines...</div>
+            </div>
+
+            <!-- Medical Statistics, Epidemiology & Ethics Panel -->
+            <div id="med-stats-ethics-panel" class="tool-panel">
+                <div class="med-knowledge-grid">
+                    <section class="med-knowledge-card">
+                        <h4>Medical Statistics Essentials</h4>
+                        <ul>
+                            <li><strong>Study design</strong>: RCTs for causality, cohort for risk, case-control for rare outcomes; use intention-to-treat unless safety demands per-protocol.</li>
+                            <li><strong>Hypothesis testing</strong>: p&lt;0.05 ≠ clinical importance—check effect size and 95% CI for direction, precision and overlap with null.</li>
+                            <li><strong>Diagnostic accuracy</strong>: sensitivity = TP/(TP+FN); specificity = TN/(TN+FP); PPV and NPV shift with prevalence.</li>
+                            <li><strong>Effect measures</strong>: relative risk &amp; odds ratio describe magnitude; report absolute risk reduction and number needed to treat (1/ARR) for context.</li>
+                        </ul>
+                        <div class="med-knowledge-note">Flag multiple testing adjustments (e.g., Bonferroni/FDR) and pre-specify primary outcomes to avoid data dredging.</div>
+                    </section>
+
+                    <section class="med-knowledge-card">
+                        <h4>Epidemiology &amp; Screening</h4>
+                        <ul>
+                            <li><strong>Incidence vs prevalence</strong>: incidence = new cases/population/time; prevalence rises with longer survival or chronicity.</li>
+                            <li><strong>Screening performance</strong>: sensitivity supports rule-out; specificity supports rule-in. Use ROC/AUC for discriminatory ability.</li>
+                            <li><strong>Population metrics</strong>: attack rate (cases/exposed), basic reproduction number (R₀) &gt;1 signals expansion, effective Re reflects controls/immunity.</li>
+                            <li><strong>Harms &amp; yield</strong>: track overdiagnosis, interval cancers, number needed to screen to prevent one adverse outcome.</li>
+                        </ul>
+                        <div class="med-knowledge-note">During outbreaks, define a clear case definition, establish line lists, and time-stamp exposures to map epidemic curves.</div>
+                    </section>
+
+                    <section class="med-knowledge-card">
+                        <h4>Medical Ethics &amp; Governance</h4>
+                        <ul>
+                            <li><strong>Core principles</strong>: autonomy (informed, voluntary decisions), beneficence, non-maleficence, justice (fair access &amp; resource allocation).</li>
+                            <li><strong>Consent &amp; capacity</strong>: presume capacity; support understanding with plain language. If lacking, follow best-interest decision-making with documented consultation.</li>
+                            <li><strong>Confidentiality</strong>: share minimum necessary information, use de-identification for teaching/research, and record lawful disclosures (safeguarding, public health).</li>
+                            <li><strong>Data stewardship</strong>: store data securely, limit access, and note data controllers/processors for audits and incident reporting.</li>
+                        </ul>
+                        <div class="med-knowledge-note">Escalate ethical conflicts early via senior review or ethics committee, documenting rationale and patient representation.</div>
+                    </section>
+                </div>
             </div>
 
             <!-- Hormone & Contraception Panel -->
