@@ -7681,6 +7681,36 @@
             }
         }
 
+        /* Keep navbar controls fixed in place on mobile & fullscreen */
+        .navbar .font-controls,
+        .navbar .haptics-controls {
+            position: static !important;
+            top: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            left: auto !important;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .navbar .font-controls .font-size-btn,
+        .navbar .haptics-controls .haptics-btn {
+            padding: 6px 8px;
+        }
+
+        @media (max-width: 480px) {
+            .navbar .font-controls,
+            .navbar .haptics-controls {
+                gap: 4px;
+            }
+
+            .navbar .font-controls .font-size-btn,
+            .navbar .haptics-controls .haptics-btn {
+                padding: 4px 6px;
+            }
+        }
+
         /* Haptics (bell) button -- compact but with a rounded box and smaller glyph */
         .haptics-controls {
             display: inline-flex;
