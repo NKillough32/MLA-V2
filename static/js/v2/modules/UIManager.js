@@ -612,17 +612,17 @@ export class UIManager {
         if (!themeToggle) {
             console.warn('⚠️ Theme toggle button not found in navbar - will retry on next interaction');
             // Try to add the button dynamically if navbar exists
-            const navRight = document.querySelector('.navbar .nav-right');
-            if (navRight) {
+            const utilityBar = document.querySelector('.nav-utility-bar') || document.querySelector('.navbar .nav-right');
+            if (utilityBar) {
                 const btn = document.createElement('button');
                 btn.id = 'themeToggle';
                 btn.title = this.darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-                btn.style.cssText = 'background:none;border:none;color:white;font-size:20px;padding:6px;margin-right:8px;cursor:pointer;';
+                btn.classList.add('nav-utility-btn');
                 btn.textContent = this.darkMode ? '☀️' : '🌙';
-                
-                // Insert as first child of nav-right
-                navRight.insertBefore(btn, navRight.firstChild);
-                
+
+                // Insert into the utility bar
+                utilityBar.appendChild(btn);
+
                 // Add click handler
                 btn.addEventListener('click', () => {
                     this.toggleDarkMode();
@@ -637,6 +637,7 @@ export class UIManager {
         }
 
         // Button already exists in HTML - just add handler
+        themeToggle.classList.add('nav-utility-btn');
         themeToggle.textContent = this.darkMode ? '☀️' : '🌙';
         themeToggle.title = this.darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 
@@ -660,6 +661,8 @@ export class UIManager {
             console.warn('⚠️ Rotation lock button not found');
             return;
         }
+
+        rotLockBtn.classList.add('nav-utility-btn');
 
         // Set initial icon based on OrientationManager state
         this.updateRotationLockIcon(rotLockBtn);

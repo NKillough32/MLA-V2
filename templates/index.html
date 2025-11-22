@@ -75,6 +75,10 @@
             --v2-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
             --v2-transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
             --v2-transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Layout sizing */
+            --navbar-height: 64px;
+            --nav-utility-height: 48px;
         }
         
         /* Dark Mode Variables */
@@ -132,7 +136,7 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            min-height: 64px;
+            min-height: var(--navbar-height);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -176,12 +180,70 @@
             text-overflow: ellipsis;
         }
 
+        .nav-utility-bar {
+            position: fixed;
+            top: var(--navbar-height);
+            left: 0;
+            right: 0;
+            z-index: 980;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 8px 20px 10px;
+            background: rgba(255, 255, 255, 0.92);
+            border-bottom: 1px solid var(--v2-border);
+            box-shadow: var(--v2-shadow-sm);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        [data-theme="dark"] .nav-utility-bar {
+            background: rgba(30, 41, 59, 0.9);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-utility-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 44px;
+            border-radius: 14px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+            color: var(--v2-primary-dark);
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: var(--v2-shadow-sm);
+            transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), filter var(--v2-transition-fast);
+        }
+
+        .nav-utility-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        .nav-utility-btn:active {
+            transform: translateY(0);
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        [data-theme="dark"] .nav-utility-btn {
+            background: rgba(255, 255, 255, 0.08);
+            color: #e0e7ff;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
         @media (max-width: 420px) {
+            :root { --navbar-height: 52px; --nav-utility-height: 44px; }
             .navbar { padding: 8px 12px; min-height: 52px; }
             .navbar h1 { font-size: 16px; }
             .nav-left, .nav-right { gap: 8px; }
             .navbar button, .font-controls button { padding: 6px 10px; font-size: 13px; }
             .font-controls { gap: 4px; }
+            .nav-utility-bar { padding: 6px 12px 8px; gap: 10px; }
+            .nav-utility-btn { width: 44px; height: 40px; font-size: 18px; border-radius: 12px; }
         }
 
         /* Compact layout helpers for navbar controls */
@@ -267,20 +329,20 @@
         /* Content Container */
         .container {
             min-height: 100vh;
-            margin-top: 64px;
+            margin-top: calc(var(--navbar-height) + var(--nav-utility-height));
             padding-top: 12px;
         }
 
         @media (min-width: 1200px) {
             .navbar {
                 padding: 10px 20px;
-                min-height: 56px;
+                min-height: var(--navbar-height);
             }
             .navbar h1 {
                 font-size: 20px;
             }
             .container {
-                margin-top: 64px;
+                margin-top: calc(var(--navbar-height) + var(--nav-utility-height));
             }
         }
         
@@ -10185,11 +10247,14 @@
                 <span id="cached-count" class="status-text">0</span>
                 <span id="pending-count" class="status-text" style="display: none;">⚠️</span>
             </div>
-            <button id="themeToggle" title="Toggle Dark Mode" style="background:none;border:none;color:white;font-size:20px;padding:6px;margin-right:8px;">🌙</button>
-            <button id="rotLock" title="Toggle Lock" style="background:none;border:none;color:white;font-size:16px;padding:6px;margin-right:8px;">🔒</button>
             <button class="next-btn" id="nextNavBtn" style="display: none;">Next →</button>
         </div>
     </nav>
+
+    <div class="nav-utility-bar">
+        <button id="themeToggle" class="nav-utility-btn" title="Toggle Dark Mode">🌙</button>
+        <button id="rotLock" class="nav-utility-btn" title="Toggle Lock">🔒</button>
+    </div>
     
     <!-- Main Container -->
     <div class="container">
