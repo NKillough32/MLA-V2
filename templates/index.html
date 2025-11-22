@@ -77,8 +77,8 @@
             --v2-transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
             /* Layout sizing */
-            --navbar-height: 64px;
-            --nav-utility-height: 48px;
+            --navbar-height: 56px;
+            --nav-utility-height: 42px;
         }
         
         /* Dark Mode Variables */
@@ -130,18 +130,18 @@
         .navbar {
             background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-primary-dark) 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 12px 20px;
+            padding: 10px 16px;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
+            z-index: 1200;
             min-height: var(--navbar-height);
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 8px 12px;
+            gap: 8px 10px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -152,7 +152,7 @@
         .nav-right {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             flex: 1;
             min-width: 0;
             overflow: hidden;
@@ -185,12 +185,12 @@
             top: var(--navbar-height);
             left: 0;
             right: 0;
-            z-index: 980;
+            z-index: 1190;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
-            padding: 8px 20px 10px;
+            gap: 10px;
+            padding: 6px 16px 8px;
             background: rgba(255, 255, 255, 0.92);
             border-bottom: 1px solid var(--v2-border);
             box-shadow: var(--v2-shadow-sm);
@@ -203,7 +203,7 @@
         .nav-utility-right {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex: 1;
             min-width: 0;
         }
@@ -235,13 +235,13 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 44px;
-            border-radius: 14px;
+            width: 44px;
+            height: 38px;
+            border-radius: 12px;
             border: 1px solid rgba(99, 102, 241, 0.2);
             background: linear-gradient(135deg, #eef2ff, #e0f2fe);
             color: var(--v2-primary-dark);
-            font-size: 20px;
+            font-size: 18px;
             cursor: pointer;
             box-shadow: var(--v2-shadow-sm);
             transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), filter var(--v2-transition-fast);
@@ -264,14 +264,14 @@
         }
 
         @media (max-width: 420px) {
-            :root { --navbar-height: 52px; --nav-utility-height: 44px; }
-            .navbar { padding: 8px 12px; min-height: 52px; }
+            :root { --navbar-height: 50px; --nav-utility-height: 38px; }
+            .navbar { padding: 8px 12px; min-height: 50px; }
             .navbar h1 { font-size: 16px; }
             .nav-left, .nav-right { gap: 8px; }
             .navbar button, .font-controls button { padding: 6px 10px; font-size: 13px; }
             .font-controls { gap: 4px; }
-            .nav-utility-bar { padding: 6px 12px 8px; gap: 10px; }
-            .nav-utility-btn { width: 44px; height: 40px; font-size: 18px; border-radius: 12px; }
+            .nav-utility-bar { padding: 6px 12px 8px; gap: 8px; }
+            .nav-utility-btn { width: 40px; height: 34px; font-size: 16px; border-radius: 10px; }
         }
 
         /* Compact layout helpers for navbar controls */
@@ -797,6 +797,7 @@
         :-ms-fullscreen .navbar {
             padding: 8px 12px;
             min-height: 48px;
+            z-index: 1300;
         }
 
         :fullscreen .nav-left,
@@ -837,6 +838,21 @@
         :-moz-full-screen .font-controls,
         :-moz-full-screen .haptics-controls {
             gap: 4px;
+        }
+
+        :fullscreen .nav-utility-bar,
+        :-webkit-full-screen .nav-utility-bar,
+        :-moz-full-screen .nav-utility-bar {
+            top: var(--navbar-height);
+            padding: 6px 12px 8px;
+            gap: 8px;
+            z-index: 1280;
+        }
+
+        :fullscreen .container,
+        :-webkit-full-screen .container,
+        :-moz-full-screen .container {
+            margin-top: calc(var(--navbar-height) + var(--nav-utility-height));
         }
 
 
