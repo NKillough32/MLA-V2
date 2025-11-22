@@ -68,9 +68,9 @@ class MedStatsEthicsManager {
                     {
                         heading: 'Study Design',
                         items: [
-                            'RCTs, cohort, case-control, cross-sectional and ecological designs; choose design to match causal question and feasibility.',
-                            'Example: To test if a new drug reduces heart attacks, use RCT (gold standard for causality) over observational cohort (confounding risk).',
-                            'Worked example: Investigating smoking and lung cancer - case-control study compares 500 lung cancer patients (cases) vs 500 healthy controls, finding OR=5.2 for smoking history.'
+                            'RCTs, cohort, case-control, cross-sectional and ecological designs; choose design to match causal question, timelines and feasibility.',
+                            'Example: To test if a new drug reduces heart attacks, use RCT (gold standard for causality) over observational cohort (confounding risk); pragmatic trials help when strict controls are impractical.',
+                            'Worked example: Investigating smoking and lung cancer - case-control study compares 500 lung cancer patients (cases) vs 500 healthy controls, finding OR=5.2 for smoking history. Matching on age/sex and adjusting for asbestos exposure strengthens causal interpretation.'
                         ]
                     },
                     {
@@ -78,18 +78,18 @@ class MedStatsEthicsManager {
                         items: [
                             'Phase I: safety and dose-finding; Phase II: signal and dose-ranging; Phase III: definitive efficacy; Phase IV: post-marketing surveillance.',
                             'Drug development moves from preclinical safety through phased human trials with increasing sample sizes and endpoints.',
-                            'Example: Phase I (n=20-100 healthy volunteers) tests safety; Phase II (n=100-500 patients) tests efficacy signal; Phase III (n=1000-5000) confirms benefits.',
-                            'Worked example: COVID-19 vaccine trials progressed from Phase I (safety in 45 volunteers) to Phase II/III (efficacy in 43,000+ participants) in months.'
+                            'Example: Phase I (n=20-100 healthy volunteers) tests safety; Phase II (n=100-500 patients) tests efficacy signal; Phase III (n=1000-5000) confirms benefits with predefined endpoints.',
+                            'Worked example: COVID-19 vaccine trials progressed from Phase I (safety in 45 volunteers) to Phase II/III (efficacy in 43,000+ participants) in months, using DSMB oversight, adaptive stopping rules, and global recruitment to shorten timelines while preserving rigour.'
                         ]
                     },
                     {
                         heading: 'Significance Tests  -  Types & Interpretation',
                         items: [
                             'Parametric tests: t-test, ANOVA, linear regression; non-parametric: Mann–Whitney, Kruskal–Wallis.',
-                            'Categorical tests: chi-square, Fisher exact; time-to-event: log-rank and Cox proportional hazards (yields hazard ratios).',
-                            'Interpret p-values alongside effect sizes and CIs; avoid dichotomous thinking (significant vs not).',
-                            'Example: Compare mean blood pressure between two groups - paired t-test if same patients before/after; unpaired t-test for different groups.',
-                            'Worked example: Drug A vs placebo for cholesterol reduction. t-test shows mean difference -25mg/dL (95% CI: -30 to -20), p<0.001. Clinically meaningful despite small p-value.'
+                            'Categorical tests: chi-square, Fisher exact; time-to-event: log-rank and Cox proportional hazards (yields hazard ratios). Check assumptions (normality, proportional hazards, independence).',
+                            'Interpret p-values alongside effect sizes and CIs; avoid dichotomous thinking (significant vs not). Pre-specify primary endpoints and adjust for multiple comparisons.',
+                            'Example: Compare mean blood pressure between two groups - paired t-test if same patients before/after; unpaired t-test for different groups; Wilcoxon alternatives if skewed.',
+                            'Worked example: Drug A vs placebo for cholesterol reduction. t-test shows mean difference -25mg/dL (95% CI: -30 to -20), p<0.001. Clinically meaningful despite small p-value. Sensitivity analysis excluding statin users yields -22mg/dL (95% CI: -27 to -17) reinforcing robustness.'
                         ]
                     },
                     {
@@ -97,8 +97,8 @@ class MedStatsEthicsManager {
                         items: [
                             'CIs quantify estimate precision; SEM describes sampling variability of the mean (SD / √n).',
                             'Use 95% CIs for typical reporting and highlight clinical as well as statistical relevance.',
-                            'Example: Mean cholesterol 180mg/dL ± 5mg/dL (SEM) vs 95% CI 170-190mg/dL (precision around estimate).',
-                            'Worked example: Survey of 100 patients shows 65% satisfaction. 95% CI = 65% ± 9.8% (55.2-74.8%). Wider CI indicates less precision than if n=400 (CI ±4.9%).'
+                            'Example: Mean cholesterol 180mg/dL ± 5mg/dL (SEM) vs 95% CI 170-190mg/dL (precision around estimate) reminds that SEM is not directly interpretable as patient-level variation.',
+                            'Worked example: Survey of 100 patients shows 65% satisfaction. 95% CI = 65% ± 9.8% (55.2-74.8%). Wider CI indicates less precision than if n=400 (CI ±4.9%). Reporting both absolute and relative margins helps stakeholders understand uncertainty.'
                         ]
                     },
                     {
@@ -328,32 +328,36 @@ class MedStatsEthicsManager {
                         heading: 'Intimate Examinations & Chaperones',
                         items: [
                             'Offer a chaperone for intimate examinations, document consent/refusal, and respect patient dignity and gender preferences.',
-                            'Example: Vaginal examination - offer chaperone, document patient\'s choice, ensure privacy and comfort.',
-                            'Worked example: Male patient requests female chaperone for prostate exam. Doctor arranges appropriate chaperone, documents consent, proceeds with examination respecting patient preferences.'
+                            'Example: Vaginal examination - offer chaperone, document patient\'s choice, ensure privacy and comfort; explain steps aloud to maintain transparency.',
+                            'Worked example: Male patient requests female chaperone for prostate exam. Doctor arranges appropriate chaperone, documents consent, proceeds with examination respecting patient preferences.',
+                            'Scenario: Patient declines chaperone but appears uncertain. Clinician pauses, revisits explanation of role, offers rescheduling with trusted staff, and records the discussion to demonstrate respectful consent.'
                         ]
                     },
                     {
                         heading: 'Patients Who Refuse Treatment',
                         items: [
                             'Explore reasons, ensure informed refusal (capacity + information), document discussion, and offer alternatives or escalation when safety concerns exist.',
-                            'Example: Patient refuses life-saving surgery. Explore fears, confirm understanding, document discussion, involve family if appropriate.',
-                            'Worked example: Patient with pneumonia refuses antibiotics. Doctor explores concerns (side effects, natural healing belief), confirms capacity, documents discussion, offers oral alternatives before considering MCA assessment.'
+                            'Example: Patient refuses life-saving surgery. Explore fears, confirm understanding, document discussion, involve family if appropriate; safety-net with clear advice on when to return.',
+                            'Worked example: Patient with pneumonia refuses antibiotics. Doctor explores concerns (side effects, natural healing belief), confirms capacity, documents discussion, offers oral alternatives before considering MCA assessment.',
+                            'Scenario: Capacity borderline after head injury. Team repeats explanation at different times of day, involves next of kin, and escalates to senior/liaison psychiatry before concluding patient lacks capacity and proceeding in best interests.'
                         ]
                     },
                     {
                         heading: 'Advance Directives & Advance Care Planning',
                         items: [
                             'Respect valid advance directives and advance decisions to refuse treatment; check applicability and record in the notes.',
-                            'Example: Patient has DNACPR order. Confirm validity, applicability to current situation, document review in notes.',
-                            'Worked example: Elderly patient admitted with chest infection has advance directive refusing ventilation. Team reviews directive, confirms it applies, documents decision, provides palliative care instead.'
+                            'Example: Patient has DNACPR order. Confirm validity, applicability to current situation, document review in notes and communicate clearly at handover.',
+                            'Worked example: Elderly patient admitted with chest infection has advance directive refusing ventilation. Team reviews directive, confirms it applies, documents decision, provides palliative care instead.',
+                            'Scenario: Advance directive unclear about non-invasive ventilation. Clinician discusses with family, checks prior conversations, and documents a time-limited NIV trial aligned with patient values.'
                         ]
                     },
                     {
                         heading: 'GMC: Confidentiality (General)',
                         items: [
                             'Keep information confidential except where disclosure is required by law or justified in the public interest; share on a need-to-know basis.',
-                            'Example: Patient\'s HIV status - only share with treating team; never discuss in public areas or with family without consent.',
-                            'Worked example: Patient discloses domestic abuse. Doctor maintains confidentiality but discusses with patient the option of involving social services. No disclosure without consent.'
+                            'Example: Patient\'s HIV status - only share with treating team; never discuss in public areas or with family without consent. Consider anonymised teaching only when risk of identification is minimal.',
+                            'Worked example: Patient discloses domestic abuse. Doctor maintains confidentiality but discusses with patient the option of involving social services. No disclosure without consent.',
+                            'Scenario: Journalist requests comment about local celebrity admission. Clinician declines to confirm or deny, escalates to communications team, and documents the request/refusal to protect confidentiality.'
                         ]
                     },
                     {
@@ -368,24 +372,27 @@ class MedStatsEthicsManager {
                         heading: 'Reporting Criminal Proceedings',
                         items: [
                             'Follow local policies and legal requirements when reporting criminal activity; balance confidentiality with safety and legal duties.',
-                            'Example: Patient admits to drink-driving. Report to authorities if poses ongoing risk; document decision-making.',
-                            'Worked example: Patient confesses child abuse. Doctor reports to social services and police as required by law, documents actions taken, supports patient through process.'
+                            'Example: Patient admits to drink-driving. Report to authorities if poses ongoing risk; document decision-making and rationale with senior review.',
+                            'Worked example: Patient confesses child abuse. Doctor reports to social services and police as required by law, documents actions taken, supports patient through process.',
+                            'Scenario: Gang-related knife injury with suspected retaliation risk. Team informs safeguarding lead, completes weapon injury reporting, and coordinates with police liaison while maintaining necessary clinical confidentiality.'
                         ]
                     },
                     {
                         heading: 'Mental Capacity Act',
                         items: [
                             'Assess capacity for specific decisions, apply best interests principles, involve consultees and document reasoning carefully.',
-                            'Example: Patient with dementia - assess capacity for treatment decision using MCA framework; involve family as consultees if appropriate.',
-                            'Worked example: Confused patient needs surgery. Doctor assesses capacity (understand information, retain, weigh up, communicate), finds lacks capacity, applies best interests, documents assessment.'
+                            'Example: Patient with dementia - assess capacity for treatment decision using MCA framework; involve family as consultees if appropriate; assume capacity unless proven otherwise.',
+                            'Worked example: Confused patient needs surgery. Doctor assesses capacity (understand information, retain, weigh up, communicate), finds lacks capacity, applies best interests, documents assessment.',
+                            'Scenario: Fluctuating capacity in delirium. Team schedules consent discussions when alert, documents improvements/declines, and uses best-interests meeting when capacity cannot be sustained for the decision.'
                         ]
                     },
                     {
                         heading: 'Consent (Including Capacity Issues)',
                         items: [
                             'Obtain informed consent: explain nature, benefits, risks and alternatives; for incapacity follow MCA and involve appropriate surrogates.',
-                            'Example: Surgery consent - explain procedure, risks, benefits, alternatives; document discussion and consent.',
-                            'Worked example: Patient consents to chemotherapy. Doctor explains treatment, side effects, alternatives (palliative care), addresses questions, obtains written consent, documents discussion.'
+                            'Example: Surgery consent - explain procedure, risks, benefits, alternatives; document discussion and consent; provide written materials and time for questions.',
+                            'Worked example: Patient consents to chemotherapy. Doctor explains treatment, side effects, alternatives (palliative care), addresses questions, obtains written consent, documents discussion.',
+                            'Scenario: Language barrier and no family present. Clinician arranges professional interpreter, repeats explanations to confirm understanding, and defers consent until patient can engage meaningfully.'
                         ]
                     },
                     {
