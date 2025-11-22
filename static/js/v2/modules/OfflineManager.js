@@ -6,6 +6,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 import { EVENTS, STORAGE_KEYS } from './Constants.js';
+import { resolveServiceWorkerUrl } from './ServiceWorkerUtils.js';
 
 export class OfflineManager {
     constructor() {
@@ -78,8 +79,9 @@ export class OfflineManager {
     async registerServiceWorker() {
         if ('serviceWorker' in navigator) {
             try {
-                this.serviceWorker = await navigator.serviceWorker.register('/sw.js');
-                console.log('✅ Service worker registered for offline support');
+                const swUrl = await resolveServiceWorkerUrl('/static/sw.js');
+                this.serviceWorker = await navigator.serviceWorker.register(swUrl);
+                console.log('✅ Service worker registered for offline support via', swUrl);
                 
                 // Listen for service worker updates
                 this.serviceWorker.addEventListener('updatefound', () => {
