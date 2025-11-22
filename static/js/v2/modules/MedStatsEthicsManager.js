@@ -44,10 +44,10 @@ class MedStatsEthicsManager {
             @media (prefers-color-scheme: dark) {
                 .med-knowledge-subsection {
                     border: 1px solid rgba(255,255,255,0.04);
-                    background: rgba(255,255,255,0.02);
+                    background: rgba(54, 83, 177, 0.62);
                 }
                 .med-knowledge-subsection summary { color: var(--v2-primary, #93c5fd); }
-                .med-knowledge-subnote { color: rgba(255,255,255,0.72); }
+                .med-knowledge-subnote { color: rgba(255, 255, 255, 0.96); }
             }
         `;
         const style = document.createElement('style');
