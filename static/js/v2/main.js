@@ -10,6 +10,7 @@ import { orientationManager } from './modules/OrientationManager.js';
 import { analytics } from './modules/AnalyticsManager.js';
 import { EVENTS, STORAGE_KEYS, UI_CONFIG } from './modules/Constants.js';
 import UIHelpers from './modules/UIHelpers.js';
+import { resolveServiceWorkerUrl } from './modules/ServiceWorkerUtils.js';
 
 // Feature Modules
 import { anatomyManager } from './modules/AnatomyManager.js';
@@ -243,14 +244,17 @@ class MLAQuizApp {
     /**
      * Register service worker after critical initialization
      */
-    registerServiceWorker() {
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/static/sw.js')
-                .then(registration => {
-                })
-                .catch(error => {
-                    console.warn('⚠️ Service Worker registration failed:', error);
-                });
+    async registerServiceWorker() {
+        if (!('serviceWorker' in navigator)) {
+            return;
+        }
+
+        try {
+            const swUrl = await resolveServiceWorkerUrl('/static/sw.js');
+            await navigator.serviceWorker.register(swUrl);
+            console.log('✅ Service Worker registered at', swUrl);
+        } catch (error) {
+            console.warn('⚠️ Service Worker registration failed:', error);
         }
     }
 
