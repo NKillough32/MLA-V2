@@ -46,7 +46,7 @@ class MedStatsEthicsManager {
                     border: 1px solid rgba(255,255,255,0.04);
                     background: rgba(54, 83, 177, 0.62);
                 }
-                .med-knowledge-subsection summary { color: var(--v2-primary, #93c5fd); }
+                .med-knowledge-subsection summary { color: var(--v2-primary, #f3f5f8ff); }
                 .med-knowledge-subnote { color: rgba(255, 255, 255, 0.96); }
             }
         `;
@@ -570,7 +570,7 @@ class MedStatsEthicsManager {
         const fallback = {
             primary: '#6366f1',
             primaryRgb: '99, 102, 241',
-            subtext: '#c0d6f5ff',
+            subtext: '#ffffffff',
             summaryColor: '#111827'
         };
 
