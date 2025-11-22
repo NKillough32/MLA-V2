@@ -542,13 +542,13 @@ class MedStatsEthicsManager {
         let subsectionsHtml = '';
         if (Array.isArray(section.subsections)) {
             subsectionsHtml = section.subsections.map(ss => `
-                <div class="med-knowledge-subsection">
-                    <h5>${ss.heading || ''}</h5>
-                    <ul>
+                <details class="med-knowledge-subsection" style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px; margin-bottom: 8px; background: #f9fafb;">
+                    <summary style="cursor: pointer; font-weight: 600; color: var(--v2-primary); margin-bottom: 8px;">${ss.heading || ''}</summary>
+                    <ul style="margin: 0; padding-left: 20px;">
                         ${(ss.items || []).map(item => `<li>${item}</li>`).join('')}
                     </ul>
-                    ${ss.note ? `<div class="med-knowledge-subnote">${ss.note}</div>` : ''}
-                </div>
+                    ${ss.note ? `<div class="med-knowledge-subnote" style="margin-top: 8px; font-style: italic; color: #6b7280;">${ss.note}</div>` : ''}
+                </details>
             `).join('');
         } else {
             // Legacy fallback
