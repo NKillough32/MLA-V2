@@ -77,6 +77,14 @@ export class UIManager {
         window.addEventListener('resize', UIHelpers.debounce(() => {
             this.handleResize();
         }, UI_CONFIG.DEBOUNCE_DELAY));
+
+        // Track orientation changes to reposition utility controls
+        if (window.matchMedia) {
+            const portraitQuery = window.matchMedia('(orientation: portrait)');
+            if (portraitQuery?.addEventListener) {
+                portraitQuery.addEventListener('change', () => this.updateNavControlPlacement());
+            }
+        }
     }
 
     /**
@@ -482,8 +490,63 @@ export class UIManager {
         document.body.classList.toggle('mobile', width < 768);
         document.body.classList.toggle('tablet', width >= 768 && width < 1024);
         document.body.classList.toggle('desktop', width >= 1024);
-        
+
         eventBus.emit('ui:resize', { width, height: window.innerHeight });
+
+        this.updateNavControlPlacement();
+    }
+
+    /**
+     * Decide whether to use the stacked portrait layout
+     */
+    isPortraitLayout() {
+        if (window.matchMedia) {
+            return window.matchMedia('(orientation: portrait)').matches;
+        }
+        return window.innerHeight >= window.innerWidth;
+    }
+
+    /**
+     * Move navbar utility controls into the portrait utility bar when needed
+     */
+    updateNavControlPlacement() {
+        const navbar = document.querySelector('.navbar');
+        const navRight = navbar?.querySelector('.nav-right');
+        const utilityBar = document.querySelector('.nav-utility-bar');
+        const utilityLeft = utilityBar?.querySelector('.nav-utility-left');
+        const utilityRight = utilityBar?.querySelector('.nav-utility-right');
+
+        const fontControls = document.querySelector('.font-controls');
+        const hapticsControls = document.querySelector('.haptics-controls');
+
+        if (!fontControls && !hapticsControls) return;
+
+        const useUtilityBar = this.isPortraitLayout() && utilityBar;
+
+        if (useUtilityBar) {
+            if (hapticsControls && utilityLeft && hapticsControls.parentElement !== utilityLeft) {
+                utilityLeft.appendChild(hapticsControls);
+            }
+
+            if (fontControls && utilityRight && fontControls.parentElement !== utilityRight) {
+                utilityRight.appendChild(fontControls);
+            }
+
+            return;
+        }
+
+        if (navRight) {
+            if (hapticsControls && hapticsControls.parentElement !== navRight) {
+                const insertBeforeNode = (fontControls && fontControls.parentElement === navRight)
+                    ? fontControls
+                    : null;
+                navRight.insertBefore(hapticsControls, insertBeforeNode);
+            }
+
+            if (fontControls && fontControls.parentElement !== navRight) {
+                navRight.appendChild(fontControls);
+            }
+        }
     }
 
     /**
@@ -584,6 +647,7 @@ export class UIManager {
 
         // Update active state
         this.updateFontSizeButtons();
+        this.updateNavControlPlacement();
         console.log('✅ Font size controls added to navbar');
     }
 
@@ -791,6 +855,7 @@ export class UIManager {
         // Apply initial state to analytics manager
         analytics.setVibrationSetting(this.hapticsEnabled);
 
+        this.updateNavControlPlacement();
         console.log('✅ Haptics toggle added to navbar');
     }
 

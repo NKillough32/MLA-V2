@@ -198,6 +198,34 @@
             -webkit-backdrop-filter: blur(10px);
         }
 
+        .nav-utility-left,
+        .nav-utility-center,
+        .nav-utility-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .nav-utility-center {
+            justify-content: center;
+            flex: 0 0 auto;
+        }
+
+        .nav-utility-left { justify-content: flex-start; }
+        .nav-utility-right { justify-content: flex-end; }
+
+        .nav-utility-bar .font-controls,
+        .nav-utility-bar .haptics-controls {
+            width: 100%;
+        }
+
+        @media (orientation: portrait) {
+            .nav-utility-bar .haptics-controls { justify-content: flex-start; }
+            .nav-utility-bar .font-controls { justify-content: flex-end; }
+        }
+
         [data-theme="dark"] .nav-utility-bar {
             background: rgba(30, 41, 59, 0.9);
             border-color: rgba(255, 255, 255, 0.08);
@@ -10252,8 +10280,12 @@
     </nav>
 
     <div class="nav-utility-bar">
-        <button id="themeToggle" class="nav-utility-btn" title="Toggle Dark Mode">🌙</button>
-        <button id="rotLock" class="nav-utility-btn" title="Toggle Lock">🔒</button>
+        <div class="nav-utility-left" aria-label="Haptics and utility left region"></div>
+        <div class="nav-utility-center">
+            <button id="themeToggle" class="nav-utility-btn" title="Toggle Dark Mode">🌙</button>
+            <button id="rotLock" class="nav-utility-btn" title="Toggle Lock">🔒</button>
+        </div>
+        <div class="nav-utility-right" aria-label="Font size utility region"></div>
     </div>
     
     <!-- Main Container -->
