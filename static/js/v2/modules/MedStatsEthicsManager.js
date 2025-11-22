@@ -570,7 +570,7 @@ class MedStatsEthicsManager {
         const fallback = {
             primary: '#6366f1',
             primaryRgb: '99, 102, 241',
-            subtext: '#809cc2ff',
+            subtext: '#c0d6f5ff',
             summaryColor: '#111827'
         };
 
@@ -578,7 +578,7 @@ class MedStatsEthicsManager {
             return {
                 badgeBg: `rgba(${fallback.primaryRgb}, 0.12)`,
                 badgeColor: fallback.primary,
-                subsectionBg: 'rgba(75, 102, 163, 0.14)',
+                subsectionBg: 'rgba(75, 101, 163, 0.76)',
                 subsectionBorder: 'rgba(15, 23, 42, 0.1)',
                 subnoteColor: 'rgba(55, 65, 81, 0.85)',
                 summaryColor: fallback.summaryColor,
