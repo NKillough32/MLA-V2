@@ -595,11 +595,11 @@ class MedStatsEthicsManager {
             badgeBg: `rgba(${primaryRgb}, ${isDark ? 0.18 : 0.12})`,
             badgeColor: primary,
             // Subtle surfaces for dark mode to preserve contrast but avoid high-contrast boxes
-            subsectionBg: isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(15, 23, 42, 0.03)',
+            subsectionBg: isDark ? 'rgba(69, 70, 133, 0.6)' : 'rgba(15, 23, 42, 0.03)',
             subsectionBorder: isDark ? 'rgba(255, 255, 255, 0.06)' : 'rgba(15, 23, 42, 0.1)',
             subnoteColor: isDark ? 'rgba(226, 232, 240, 0.9)' : 'rgba(55, 65, 81, 0.85)',
             summaryColor,
-            subtext: isDark ? 'rgba(226,232,240,0.92)' : this.getCssVar('--v2-text-secondary', fallback.subtext)
+            subtext: isDark ? 'rgba(226, 232, 240, 1)' : this.getCssVar('--v2-text-secondary', fallback.subtext)
         };
     }
 
