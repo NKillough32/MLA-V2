@@ -1047,7 +1047,9 @@ class PWAQuizLoader:
 @app.route('/')
 def home():
     """Serve the main PWA application."""
-    return render_template('index.html')
+    # Serve the canonical root `index.html` so the single, up-to-date file
+    # is used for both static and server deployments.
+    return send_from_directory(str(PROJECT_ROOT), 'index.html')
 
 
 @app.route('/api/asset-manifest')
