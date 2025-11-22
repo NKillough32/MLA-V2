@@ -18,6 +18,45 @@ class MedStatsEthicsManager {
     }
 
     /**
+     * Ensure the component CSS is injected once. Uses prefers-color-scheme to
+     * provide improved dark-mode colours instead of relying on inline RGBA.
+     */
+    ensureStyles() {
+        if (document.getElementById('med-stats-ethics-styles')) return;
+        const css = `
+            .med-knowledge-subsection { 
+                border: 1px solid rgba(0,0,0,0.06);
+                border-radius: 6px;
+                padding: 12px;
+                margin-bottom: 8px;
+                background: #f9fafb;
+            }
+            .med-knowledge-subsection summary {
+                cursor: pointer;
+                font-weight: 600;
+                color: var(--v2-primary, #6366f1);
+                margin-bottom: 8px;
+                list-style: none;
+            }
+            .med-knowledge-subsection ul { margin: 0; padding-left: 20px; }
+            .med-knowledge-subnote { margin-top: 8px; font-style: italic; color: #6b7280; }
+            /* Dark mode adjustments */
+            @media (prefers-color-scheme: dark) {
+                .med-knowledge-subsection {
+                    border: 1px solid rgba(255,255,255,0.04);
+                    background: rgba(255,255,255,0.02);
+                }
+                .med-knowledge-subsection summary { color: var(--v2-primary, #93c5fd); }
+                .med-knowledge-subnote { color: rgba(255,255,255,0.72); }
+            }
+        `;
+        const style = document.createElement('style');
+        style.id = 'med-stats-ethics-styles';
+        style.appendChild(document.createTextNode(css));
+        document.head.appendChild(style);
+    }
+
+    /**
      * Structured knowledge deck used in the Medical Tools panel
      */
     buildSections() {
