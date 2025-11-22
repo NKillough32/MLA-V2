@@ -46,6 +46,7 @@
             --v2-primary: #6366F1;
             --v2-primary-dark: #4F46E5;
             --v2-primary-light: #818CF8;
+            --v2-primary-rgb: 99, 102, 241;
             --v2-secondary: #06B6D4;
             --v2-secondary-dark: #0891B2;
             --v2-accent: #F59E0B;
@@ -92,7 +93,11 @@
             --v2-text-tertiary: #64748B;
             --v2-border: #334155;
             --v2-border-hover: #475569;
-            
+            --v2-primary: #4C51BF;
+            --v2-primary-dark: #3B4B9F;
+            --v2-primary-light: #6B7AD6;
+            --v2-primary-rgb: 76, 81, 191;
+
             /* Dark Mode Shadows */
             --v2-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
             --v2-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
@@ -251,13 +256,13 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 44px;
-            border-radius: 14px;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+            width: 36px;
+            height: 36px;
+            border-radius: 12px;
+            border: none;
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.08);
             color: var(--v2-primary-dark);
-            font-size: 20px;
+            font-size: 18px;
             cursor: pointer;
             box-shadow: var(--v2-shadow-sm);
             transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), filter var(--v2-transition-fast);
@@ -274,9 +279,8 @@
         }
 
         [data-theme="dark"] .nav-utility-btn {
-            background: rgba(255, 255, 255, 0.08);
-            color: #e0e7ff;
-            border-color: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.06);
+            color: #c7d2fe;
         }
 
         .nav-icon-btn {
@@ -309,7 +313,7 @@
             .nav-icon-btn .nav-label { display: none; }
             .font-controls { gap: 4px; }
             .nav-utility-bar { padding: 6px 12px 8px; gap: 10px; }
-            .nav-utility-btn { width: 44px; height: 40px; font-size: 18px; border-radius: 12px; }
+            .nav-utility-btn { width: 36px; height: 36px; font-size: 16px; border-radius: 12px; }
         }
 
         /* Compact layout helpers for navbar controls */
@@ -7632,18 +7636,18 @@
         }
 
         .haptics-controls .haptics-btn {
-            padding: 6px; /* balanced padding for the box */
-            font-size: 10px; /* base font-size for button content */
-            width: 20px;
-            height: 20px;
+            padding: 0;
+            font-size: 16px; /* base font-size for button content */
+            width: 36px;
+            height: 36px;
             line-height: 1;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             border-radius: 10px; /* slightly rounder box */
-            background: #f1f3f4; /* light card background to form a visible box */
-            border: 1px solid var(--border-color); /* subtle border matching site style */
-            color: #007AFF;
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.08); /* light card background to form a visible box */
+            border: none; /* remove borders in light mode */
+            color: var(--v2-primary-dark);
             cursor: pointer;
             box-shadow: 0 1px 2px rgba(0,0,0,0.04);
             transition: transform 0.06s ease, box-shadow 0.06s ease, background 0.06s;
@@ -7662,9 +7666,8 @@
 
         /* Dark theme variant */
         [data-theme="dark"] .haptics-controls .haptics-btn {
-            background: #2a2a2a;
-            border-color: #444;
-            color: #63b3ed;
+            background: rgba(255, 255, 255, 0.06);
+            color: #c7d2fe;
         }
 
         /* Quiz Practice Panel Styles */
@@ -8025,7 +8028,7 @@
 
         .ghost-btn:hover,
         .global-search-close:hover {
-            background: rgba(99, 102, 241, 0.08);
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.1);
             color: var(--v2-text-primary);
         }
 
@@ -8092,7 +8095,7 @@
         }
 
         .global-search-result:hover {
-            background: rgba(99, 102, 241, 0.05);
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.08);
         }
 
         .result-icon {
@@ -8108,7 +8111,7 @@
         }
 
         .result-badge {
-            background: rgba(99, 102, 241, 0.15);
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.2);
             color: var(--v2-primary-dark);
             font-size: 0.75rem;
             padding: 2px 8px;
