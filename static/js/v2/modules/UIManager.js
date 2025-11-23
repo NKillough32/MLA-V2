@@ -38,7 +38,10 @@ export class UIManager {
         this.addFontSizeControls();
         this.setupRotationLock();
         this.addHapticsToggle();
-        
+
+        // Apply initial layout sizing based on rendered navbar heights
+        this.handleResize();
+
         console.log('🎨 UI Manager initialized');
     }
 
@@ -82,7 +85,10 @@ export class UIManager {
         if (window.matchMedia) {
             const portraitQuery = window.matchMedia('(orientation: portrait)');
             if (portraitQuery?.addEventListener) {
-                portraitQuery.addEventListener('change', () => this.updateNavControlPlacement());
+                portraitQuery.addEventListener('change', () => {
+                    this.updateLayoutOffsets();
+                    this.updateNavControlPlacement();
+                });
             }
         }
     }
@@ -481,11 +487,33 @@ export class UIManager {
     }
 
     /**
+     * Measure navbar + utility bar and update CSS offsets so controls stay aligned
+     */
+    updateLayoutOffsets() {
+        const root = document.documentElement;
+        const computedRoot = getComputedStyle(root);
+        const navbar = document.querySelector('.navbar');
+        const utilityBar = document.querySelector('.nav-utility-bar');
+
+        const baseNavbarHeight = parseFloat(computedRoot.getPropertyValue('--navbar-height')) || 64;
+        const baseUtilityHeight = parseFloat(computedRoot.getPropertyValue('--nav-utility-height')) || 48;
+
+        const navbarHeight = navbar?.getBoundingClientRect().height || baseNavbarHeight;
+        const utilityHeight = utilityBar?.getBoundingClientRect().height || baseUtilityHeight;
+
+        root.style.setProperty('--navbar-offset', `${navbarHeight}px`);
+        root.style.setProperty('--nav-utility-offset', `${utilityHeight}px`);
+        root.style.setProperty('--nav-stack-offset', `${navbarHeight + utilityHeight}px`);
+    }
+
+    /**
      * Handle window resize
      */
     handleResize() {
         const width = window.innerWidth;
-        
+
+        this.updateLayoutOffsets();
+
         // Update body classes for responsive design
         document.body.classList.toggle('mobile', width < 768);
         document.body.classList.toggle('tablet', width >= 768 && width < 1024);
