@@ -80,6 +80,9 @@
             /* Layout sizing */
             --navbar-height: 64px;
             --nav-utility-height: 48px;
+            --navbar-offset: var(--navbar-height);
+            --nav-utility-offset: var(--nav-utility-height);
+            --nav-stack-offset: calc(var(--navbar-offset) + var(--nav-utility-offset));
         }
         
         /* Dark Mode Variables */
@@ -203,7 +206,7 @@
 
         .nav-utility-bar {
             position: fixed;
-            top: var(--navbar-height);
+            top: var(--navbar-offset);
             left: 0;
             right: 0;
             z-index: 980;
@@ -399,7 +402,7 @@
         /* Content Container */
         .container {
             min-height: 100vh;
-            margin-top: calc(var(--navbar-height) + var(--nav-utility-height));
+            margin-top: var(--nav-stack-offset);
             padding-top: 12px;
         }
 
@@ -412,7 +415,7 @@
                 font-size: 20px;
             }
             .container {
-                margin-top: calc(var(--navbar-height) + var(--nav-utility-height));
+                margin-top: var(--nav-stack-offset);
             }
         }
         
