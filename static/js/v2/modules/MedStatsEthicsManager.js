@@ -2,9 +2,10 @@
  * MedStatsEthicsManager.js - Centralized renderer for medical statistics,
  * epidemiology, and ethics reference content.
  *
+                            'Bayes conversion (practical): pre-test odds = p / (1 - p). post-test odds = pre-test odds * LR. post-test probability = post-test odds / (1 + post-test odds).',
  * Keeps the knowledge cards modular and reusable across the Medical Tools
  * panel without hard-coding them into HTML templates.
- */
+                            'Worked example: PSA test LR+ = 2.5, LR- = 0.6. Pre-test probability 10% → pre-test odds = 0.1 / 0.9 = 0.111. Positive: post odds = 0.111*2.5=0.277 → post-prob = 0.277/(1+0.277)=0.217 → 21.7%. Negative: post odds = 0.111*0.6=0.067 → post-prob = 6.2%.',
 class MedStatsEthicsManager {
     constructor() {
         this.sections = this.buildSections();
@@ -97,8 +98,9 @@ class MedStatsEthicsManager {
                         items: [
                             'CIs quantify estimate precision; SEM describes sampling variability of the mean (SD / √n).',
                             'Use 95% CIs for typical reporting and highlight clinical as well as statistical relevance.',
-                            'Example: Mean cholesterol 180mg/dL ± 5mg/dL (SEM) vs 95% CI 170-190mg/dL (precision around estimate) reminds that SEM is not directly interpretable as patient-level variation.',
-                            'Worked example: Survey of 100 patients shows 65% satisfaction. 95% CI = 65% ± 9.8% (55.2-74.8%). Wider CI indicates less precision than if n=400 (CI ±4.9%). Reporting both absolute and relative margins helps stakeholders understand uncertainty.'
+                            'Practical formulas: SE(mean) = SD / sqrt(n). 95% CI(mean) ≈ mean ± 1.96 * SE (use the t_{n-1} quantile for small n). SE(proportion) = sqrt(p*(1-p)/n). For small n or p near 0 or 1, prefer Wilson or exact (Clopper–Pearson) CIs.',
+                            'Example: Mean cholesterol 180 mg/dL with SD=25 and n=100 → SE = 25/√100 = 2.5. 95% CI ≈ 180 ± 1.96*2.5 = (175.1, 184.9).',
+                            'Worked example (proportion): 65/100 satisfied → p=0.65, SE = sqrt(0.65*0.35/100)=0.0477. 95% CI ≈ 0.65 ± 1.96*0.0477 = (0.556, 0.744) i.e. 55.6%–74.4%. Use exact/Wilson intervals when n small.'
                         ]
                     },
                     {
@@ -106,7 +108,8 @@ class MedStatsEthicsManager {
                         items: [
                             'Relative Risk and Odds Ratio describe relative differences; Hazard Ratio describes instantaneous event-rate ratios in survival analysis.',
                             'Absolute Risk Reduction = control risk − treatment risk; NNT = 1 / ARR (use absolute measures for patient communication).',
-                            'Example: Vaccine reduces infection risk from 10% to 2%: RR=0.2, ARR=8%, NNT=12.5 (treat 13 to prevent 1 infection).',
+                            'Formulas & guidance: ARR = Rc − Rt. NNT = 1 / ARR (express ARR as a proportion, e.g. 0.08). When computing CIs for NNT, derive limits from the CI of ARR; if ARR CI crosses zero, NNT is not meaningful. Round NNT up to the next integer for benefit interpretation.',
+                            'Example: Vaccine reduces infection risk from 10% to 2%: RR = 0.2. ARR = 0.10 − 0.02 = 0.08 → NNT = 1 / 0.08 = 12.5 → round up to 13. If 95% CI for ARR = (0.04, 0.12), NNT CI ≈ (8.3, 25) (interpret with caution).',
                             'Worked example: Statin trial: control group 10% heart attacks/year, treatment 6%. ARR=4%, NNT=25. OR=0.57 (odds of event reduced by 43%).'
                         ]
                     },
@@ -123,8 +126,9 @@ class MedStatsEthicsManager {
                         items: [
                             'Variance (SD²) drives precision and sample-size calculations; power is the probability to detect an effect of a given size (1−β).',
                             'Underpowered studies risk false negatives; overpowered studies may detect trivial differences.',
-                            'Example: SD=10 for outcome, want to detect 5-unit difference - need n=64 per group for 80% power (2×(1.96+0.84)²×SD²/effect²).',
-                            'Worked example: Pilot study (n=30) shows SD=15 for pain score. To detect 3-point difference with 80% power: n=392 per group. Pilot was underpowered.'
+                            'Key formula (two-sample means, equal n per group): n per group ≈ 2 * (Z_{1−α/2} + Z_{1−β})^2 * σ^2 / δ^2. For α=0.05 (Z≈1.96) and 80% power (Z≈0.84) this simplifies to the common approximation shown in worked examples below. Round up and inflate for expected dropout.',
+                            'Worked numeric example: SD=10, δ=5, α=0.05, power=80% → n ≈ 2*(1.96+0.84)^2*(10^2)/(5^2) = 2*(2.8)^2*100/25 = 2*7.84*4 = 62.72 → round up to 63 per group; inflate by 10% → 70 per group.',
+                            'Two-proportion approx. formula: n ≈ (Z_{1−α/2}^2 * (p1(1−p1)+p2(1−p2))) / (p1−p2)^2 — always round up and account for loss to follow-up.'
                         ]
                     }
                 ],
@@ -258,6 +262,7 @@ class MedStatsEthicsManager {
                         heading: 'Time-to-Event & Composite Outcomes',
                         items: [
                             'Report hazard ratios with median follow-up and proportional hazards checks (Cox models).',
+                            'Interpretation note: HR is a relative measure of instantaneous risk—do not directly convert HR to absolute risk without a baseline hazard. Check proportional-hazards assumption (e.g., Schoenfeld residuals) and present median/absolute risks alongside HR where possible.',
                             'Composite outcomes: list dominant components; avoid masking single-outcome harm signals.',
                             'Example: Cardiovascular trial: composite of death, MI, stroke. HR=0.75 (25% risk reduction) but stroke increased - composite masks harm.',
                             'Worked example: Diabetes trial: composite endpoint (retinopathy, nephropathy, neuropathy). Treatment HR=0.7 but neuropathy worsened. Individual outcomes revealed trade-offs.'
