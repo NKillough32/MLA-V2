@@ -20,19 +20,26 @@ export class GlobalSearchManager {
         this.resultActions = new Map();
         this.currentSearchToken = null;
         this.options = {
-            defaultLimit: 5,
+            // Global default for groups that don't specify an explicit limit
+            defaultLimit: 4,
+            // Per-group limits (all set to 4 as requested)
             limits: {
-                drugs: 6,
-                calculators: 6,
-                labs: 6,
+                drugs: 4,
+                calculators: 4,
+                labs: 4,
                 guidelines: 4,
-                mnemonics: 5,
+                mnemonics: 4,
                 triads: 4,
-                differentials: 6,
-                examinations: 5,
+                differentials: 4,
+                examinations: 4,
                 interpretations: 4,
                 emergency: 4,
-                pdf: 6
+                pdf: 4,
+                ladders: 4,
+                vaccinations: 4,
+                contraception: 4,
+                genetics: 4,
+                developmental: 4
             }
         };
     }
@@ -211,22 +218,24 @@ export class GlobalSearchManager {
      * Execute category searches in parallel
      */
     async performSearch(query) {
+        // Order determines group rendering order in the UI. Adjusted to:
+        // PDFs -> Guidelines -> Differential -> Drugs -> Calculators -> ...
         const operations = [
+            this.buildPdfResults(query),
+            this.buildGuidelineResults(query),
+            this.buildDifferentialResults(query),
             this.buildDrugResults(query),
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
-            this.buildGuidelineResults(query),
             this.buildVaccinationResults(query),
             this.buildContraceptionResults(query),
             this.buildGeneticsResults(query),
             this.buildDevelopmentalResults(query),
-            this.buildDifferentialResults(query),
             this.buildTriadResults(query),
             this.buildMnemonicResults(query),
             this.buildExaminationResults(query),
             this.buildInterpretationResults(query),
             this.buildEmergencyResults(query),
-            this.buildPdfResults(query),
             this.buildLaddersResults(query)
         ];
 
