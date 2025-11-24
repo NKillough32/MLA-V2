@@ -2,7 +2,7 @@
 // Extracted from app.js for better organization
 
 const drugDatabase = {
-            'aciclovir': {
+'aciclovir': {
                 name: 'Aciclovir',
                 class: 'Antiviral drugs',
                 mechanism: 'Nucleoside analogue - inhibits viral DNA polymerase after phosphorylation by viral thymidine kinase',
@@ -16,7 +16,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most effective when started within 72h of rash onset. Maintain good hydration',
                 indication: 'Herpes simplex, varicella zoster, prophylaxis in immunocompromised'
             },
-            'adenosine': {
+
+'adenosine': {
                 name: 'Adenosine',
                 class: 'Antiarrhythmic (Purine nucleoside)',
                 mechanism: 'Blocks AV node conduction by activating adenosine A1 receptors',
@@ -30,7 +31,8 @@ const drugDatabase = {
                 clinicalPearls: 'Give fast IV push followed by saline flush. Warn patient of chest discomfort',
                 indication: 'SVT termination, diagnostic test for broad complex tachycardia'
             },
-            'adrenaline': {
+
+'adrenaline': {
                 name: 'Adrenaline (Epinephrine)',
                 class: 'Emergency drugs',
                 mechanism: 'Non-selective α and β adrenergic agonist causing vasoconstriction and inotropy',
@@ -44,7 +46,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line for anaphylaxis. IM route for anaphylaxis, IV for cardiac arrest. Check expiry dates',
                 indication: 'Anaphylaxis, cardiac arrest, severe asthma (nebulised), local anaesthetic adjunct'
             },
-            'alendronic acid': {
+
+'alendronic acid': {
                 name: 'Alendronic Acid',
                 class: 'Bisphosphonates',
                 mechanism: 'Inhibits osteoclast-mediated bone resorption by binding to hydroxyapatite',
@@ -58,7 +61,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take on empty stomach with full glass water. Stay upright 30min. Weekly dosing improves compliance',
                 indication: 'Osteoporosis treatment/prevention, Paget\'s disease, steroid-induced osteoporosis'
             },
-            'allopurinol': {
+
+'allopurinol': {
                 name: 'Allopurinol',
                 class: 'Xanthine oxidase inhibitor',
                 mechanism: 'Inhibits xanthine oxidase, decreasing uric acid synthesis',
@@ -72,7 +76,8 @@ const drugDatabase = {
                 clinicalPearls: 'Test HLA-B*58:01 in patients of Han Chinese, Thai or Korean descent. Continue during intercurrent flares once established; co-prescribe prophylactic colchicine for first 3 months.',
                 indication: 'Gout prophylaxis, hyperuricaemia, tumour-lysis-syndrome prevention'
             },
-            'amiodarone': {
+
+'amiodarone': {
                 name: 'Amiodarone',
                 class: 'Antiarrhythmic drugs (Class III)',
                 mechanism: 'Blocks potassium channels, prolongs action potential and refractory period',
@@ -86,7 +91,8 @@ const drugDatabase = {
                 clinicalPearls: 'Many serious side effects. Regular monitoring essential (TFTs/LFTs 6-monthly, CXR annually). Ophthalmology review if visual symptoms. Sun protection (photosensitivity)',
                 indication: 'Life-threatening arrhythmias, AF (when other drugs fail), VT/VF'
             },
-            'amlodipine': {
+
+'amlodipine': {
                 name: 'Amlodipine',
                 class: 'Calcium channel blockers',
                 mechanism: 'Blocks L-type calcium channels in vascular smooth muscle and myocardium, causing vasodilation',
@@ -100,21 +106,8 @@ const drugDatabase = {
                 clinicalPearls: 'Long half-life allows once daily dosing. Ankle oedema not due to fluid retention. Preferred CCB in UK',
                 indication: 'Hypertension, stable angina. Often used as add-on therapy'
             },
-            'apixaban': {
-                name: 'Apixaban',
-                class: 'Direct oral anticoagulant (Factor Xa inhibitor)',
-                mechanism: 'Selectively inhibits Factor Xa, reducing thrombin generation and clot formation',
-                dosing: 'AF stroke prevention: 5mg BD (reduce to 2.5mg BD if ≥2 of: age ≥80, weight ≤60kg, creatinine ≥133μmol/L). VTE treatment: 10mg BD for 7 days then 5mg BD',
-                contraindications: 'Active bleeding, hepatic disease with coagulopathy, prosthetic heart valves, pregnancy/breastfeeding',
-                interactions: 'Strong CYP3A4/P-gp inhibitors (ketoconazole, ritonavir) increase levels; inducers (rifampicin, carbamazepine) decrease effect',
-                monitoring: 'Renal function baseline then annually (more frequent if CKD), assess bleeding risk, no routine coagulation monitoring required',
-                pregnancy: 'Avoid – insufficient safety data; switch to LMWH if anticoagulation needed',
-                sideEffects: 'Bleeding, bruising, anaemia, nausea. Rare: hypersensitivity, liver enzyme elevation',
-                pharmacokinetics: 'Oral bioavailability ~50%, peak 3-4h, half-life 12h, dual hepatic and renal elimination',
-                clinicalPearls: 'Ensure adherence (short half-life). Hold 48-72h pre-surgery depending on bleeding risk. Specific reversal agent: andexanet alfa (limited availability), otherwise PCC',
-                indication: 'Stroke prevention in non-valvular AF, treatment and prevention of DVT/PE'
-            },
-            'amitriptyline': {
+
+'amitriptyline': {
                 name: 'Amitriptyline',
                 class: 'Tricyclic antidepressant (TCA)',
                 mechanism: 'Inhibits serotonin and noradrenaline reuptake; antagonises muscarinic, histamine H₁, and α₁-adrenergic receptors',
@@ -128,7 +121,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start low and go slow. Cardiotoxic in overdose – dispense small quantities. Avoid in combination with SSRIs or tramadol (serotonin syndrome).',
                 indication: 'Depression, neuropathic pain, migraine prophylaxis, nocturnal enuresis'
             },
-            'amoxicillin': {
+
+'amoxicillin': {
                 name: 'Amoxicillin',
                 class: 'Penicillins, broad-spectrum',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -142,7 +136,8 @@ const drugDatabase = {
                 clinicalPearls: 'Broad spectrum penicillin. Good oral bioavailability. Reduce dose in severe renal impairment (CrCl <30)',
                 coverage: 'Gram-positive: Streptococci, some Staphylococci. Gram-negative: E. coli, H. influenzae. No MRSA/Pseudomonas cover'
             },
-            'apixaban': {
+
+'apixaban': {
                 name: 'Apixaban',
                 class: 'Direct oral anticoagulant (DOAC) - Factor Xa inhibitor',
                 mechanism: 'Direct, selective inhibition of factor Xa in coagulation cascade',
@@ -158,7 +153,8 @@ const drugDatabase = {
                 ,
                 reversal: 'Life-threatening bleeding: andexanet alfa where available; if not available or contraindicated consider 4-factor PCC. For non-life-threatening bleeding consider local protocols. Avoid routine bridging with heparin when stopping for procedures unless high thrombotic risk.'
             },
-            'aspirin': {
+
+'aspirin': {
                 name: 'Aspirin',
                 class: 'Antiplatelet drug (COX-1 inhibitor)',
                 mechanism: 'Irreversibly inhibits cyclo-oxygenase-1 (COX-1), preventing thromboxane A₂ formation and platelet aggregation',
@@ -172,7 +168,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always consider PPI cover if age > 65 or on anticoagulant. Stop 7 days pre-surgery unless indicated by cardiology.',
                 indication: 'Secondary prevention after MI/stroke, post-PCI dual therapy, stable angina, ACS'
             },
-            'atorvastatin': {
+
+'atorvastatin': {
                 name: 'Atorvastatin',
                 class: 'Statins',
                 mechanism: 'Competitively inhibits HMG-CoA reductase, rate-limiting enzyme in cholesterol synthesis',
@@ -186,7 +183,8 @@ const drugDatabase = {
                 clinicalPearls: 'High-intensity statin. NICE preferred high-intensity option. Can take any time due to long half-life. Manage intolerance with dose adjustments or switch; consider specialist input for recurrent myopathy',
                 targets: 'Primary prevention: 20mg daily. Secondary prevention: 80mg daily. Target >40% LDL-C reduction'
             },
-            'atropine': {
+
+'atropine': {
                 name: 'Atropine',
                 class: 'Antimuscarinic',
                 mechanism: 'Competitive antagonist at muscarinic acetylcholine receptors',
@@ -200,7 +198,8 @@ const drugDatabase = {
                 clinicalPearls: 'Antidote for organophosphate poisoning. May cause paradoxical bradycardia at low doses',
                 indication: 'Symptomatic bradycardia, organophosphate poisoning, pre-medication'
             },
-            'azithromycin': {
+
+'azithromycin': {
                 name: 'Azithromycin',
                 class: 'Antibiotic (Macrolide)',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit',
@@ -214,7 +213,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once daily dosing. Good atypical coverage. Short course therapy',
                 indication: 'Atypical pneumonia, COPD exacerbations, chlamydia, URTI, skin infections'
             },
-            'beclomethasone': {
+
+'beclomethasone': {
                 name: 'Beclomethasone',
                 class: 'Inhaled corticosteroid',
                 mechanism: 'Synthetic glucocorticoid with anti-inflammatory effects in airways',
@@ -228,7 +228,8 @@ const drugDatabase = {
                 clinicalPearls: 'Brown/red preventer inhaler. Rinse mouth after use. Use spacer device. Regular use essential',
                 indication: 'Asthma prophylaxis, COPD (in combination inhalers)'
             },
-            'bendroflumethiazide': {
+
+'bendroflumethiazide': {
                 name: 'Bendroflumethiazide',
                 class: 'Diuretics, thiazide and thiazide-like',
                 mechanism: 'Inhibits sodium-chloride cotransporter in distal convoluted tubule',
@@ -242,7 +243,8 @@ const drugDatabase = {
                 clinicalPearls: 'Historically commonly used, but NICE NG136 prefers thiazide-like diuretics (e.g., indapamide or chlortalidone) as first-line for hypertension; bendroflumethiazide is not considered first-line for HTN under current NICE guidance. Take in morning. 2.5mg often sufficient',
                 indication: 'Hypertension, mild heart failure, oedema'
             },
-            'benzylpenicillin': {
+
+'benzylpenicillin': {
                 name: 'Benzylpenicillin',
                 class: 'Penicillins, narrow-spectrum',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -256,7 +258,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line for streptococcal infections. Give IV for serious infections',
                 indication: 'Meningitis, cellulitis, pneumonia, endocarditis, necrotizing fasciitis'
             },
-            'bisoprolol': {
+
+'bisoprolol': {
                 name: 'Bisoprolol',
                 class: 'Beta-blockers',
                 mechanism: 'Selective antagonist of cardiac beta-1 adrenoreceptors',
@@ -270,7 +273,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most cardioselective beta-blocker. Evidence-based for heart failure',
                 indication: 'Heart failure, post-MI, hypertension, angina, atrial fibrillation'
             },
-            'bumetanide': {
+
+'bumetanide': {
                 name: 'Bumetanide',
                 class: 'Loop diuretics',
                 mechanism: 'Inhibits Na+-K+-2Cl- transporter in the thick ascending limb of the loop of Henle',
@@ -284,7 +288,8 @@ const drugDatabase = {
                 clinicalPearls: 'More potent than furosemide mg-for-mg (≈40× stronger). Useful when oral absorption of furosemide unreliable or in diuretic resistance. Monitor electrolytes closely. Beware ototoxicity with rapid/high-dose IV administration and when combined with aminoglycosides',
                 indication: 'Acute pulmonary oedema, chronic heart failure with fluid overload, peripheral oedema'
             },
-            'oxycodone': {
+
+'oxycodone': {
                 name: 'Oxycodone',
                 class: 'Opioid analgesic',
                 mechanism: 'μ-opioid receptor agonist',
@@ -298,7 +303,8 @@ const drugDatabase = {
                 clinicalPearls: 'Good oral alternative to morphine for moderate-severe pain. Always prescribe laxative when used regularly. Adjust for opioid-tolerant patients',
                 indication: 'Moderate to severe acute or chronic pain, breakthrough pain in opioid-treated patients'
             },
-            'lisinopril': {
+
+'lisinopril': {
                 name: 'Lisinopril',
                 class: 'ACE inhibitor',
                 mechanism: 'Inhibits angiotensin-converting enzyme (ACE), reducing angiotensin II and aldosterone',
@@ -312,7 +318,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start low and titrate; check renal function and K+ after initiation. Substitute with ARB if cough troublesome',
                 indication: 'Hypertension, heart failure, post-MI, diabetic nephropathy'
             },
-            'co-trimoxazole': {
+
+'co-trimoxazole': {
                 name: 'Co-trimoxazole (Trimethoprim + Sulfamethoxazole)',
                 class: 'Antibacterial combination (folate synthesis inhibitors)',
                 mechanism: 'Sequential blockade of folate synthesis pathway (trimethoprim inhibits dihydrofolate reductase; sulfamethoxazole inhibits dihydropteroate synthase)',
@@ -325,9 +332,9 @@ const drugDatabase = {
                 pharmacokinetics: 'Well absorbed orally; renal excretion of metabolites; half-lives differ between components',
                 clinicalPearls: 'Check local resistance patterns for UTI use. Can potentiate warfarin — monitor INR closely',
                 indication: 'UTI (where susceptible), PCP prophylaxis/treatment, certain systemic infections'
-            }
-            ,
-            'calcium-gluconate': {
+            },
+
+'calcium-gluconate': {
                 name: 'Calcium Gluconate',
                 class: 'Mineral replacement/Antidote',
                 mechanism: 'Provides calcium ions essential for cardiac, skeletal muscle function and nerve transmission',
@@ -341,7 +348,8 @@ const drugDatabase = {
                 clinicalPearls: 'Preferred over calcium chloride peripherally. Give slowly to avoid arrhythmias',
                 indication: 'Hypocalcemia, hyperkalemia, hypermagnesemia, calcium channel blocker overdose'
             },
-            'carbamazepine': {
+
+'carbamazepine': {
                 name: 'Carbamazepine',
                 class: 'Antiepileptic drug',
                 mechanism: 'Blocks voltage-gated sodium channels, stabilizes neuronal membranes',
@@ -355,7 +363,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start low, go slow. Monitor for hyponatraemia. Screen for HLA-B*1502 in people of Asian ancestry where relevant prior to initiation. Many drug interactions',
                 indication: 'Epilepsy, trigeminal neuralgia, bipolar disorder (second-line)'
             },
-            'cefalexin': {
+
+'cefalexin': {
                 name: 'Cefalexin',
                 class: 'Cephalosporins and carbapenems',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -369,21 +378,8 @@ const drugDatabase = {
                 clinicalPearls: 'Good oral bioavailability. First-line for cellulitis in UK. Take with food if GI upset',
                 indication: 'Skin/soft tissue infections, UTI, respiratory tract infections, prophylaxis'
             },
-            'ceftriaxone': {
-                name: 'Ceftriaxone',
-                class: 'Cephalosporins and carbapenems',
-                mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
-                dosing: 'Adult: 1-2g daily IV/IM. Severe infections: 2g BD. Meningitis: 2g BD. Max 4g/day',
-                contraindications: 'Hypersensitivity to cephalosporins, premature neonates, hyperbilirubinemia',
-                interactions: 'Calcium-containing solutions (precipitation), warfarin (↑ INR), probenecid (↑ levels)',
-                monitoring: 'Signs of infection resolution, renal function, LFTs, FBC, C.diff surveillance',
-                pregnancy: 'Generally considered compatible in pregnancy; consult UKTIS or SmPC for details',
-                sideEffects: 'Diarrhea, rash, injection site reactions, gallbladder sludging, C.diff',
-                pharmacokinetics: 'Good tissue penetration including CSF. t½ 6-9h. 50% renal excretion',
-                clinicalPearls: 'Excellent CNS penetration. Once daily dosing. Avoid calcium solutions',
-                indication: 'Pneumonia, meningitis, sepsis, gonorrhea, cellulitis, intra-abdominal infections'
-            },
-            'cetirizine': {
+
+'cetirizine': {
                 name: 'Cetirizine',
                 class: 'Second-generation antihistamine (H1 antagonist)',
                 mechanism: 'Selective peripheral H1 receptor antagonist with minimal CNS penetration',
@@ -397,7 +393,8 @@ const drugDatabase = {
                 clinicalPearls: 'Less sedating than chlorphenamine. Reduce dose in renal impairment. Available OTC',
                 indication: 'Allergic rhinitis, chronic urticaria, allergic conjunctivitis, atopic dermatitis'
             },
-            'chlorphenamine': {
+
+'chlorphenamine': {
                 name: 'Chlorphenamine',
                 class: 'First-generation antihistamine (H1-receptor antagonist)',
                 mechanism: 'H1-receptor antagonist with anticholinergic and sedative properties',
@@ -411,8 +408,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for acute allergic reactions. IM/IV route available for anaphylaxis adjunct',
                 indication: 'Allergic reactions, urticaria, hay fever, insomnia (short-term)'
             },
-            /* earlier duplicate ciprofloxacin entry removed — canonical MHRA-updated entry retained later in file */
-            'citalopram': {
+
+'citalopram': {
                 name: 'Citalopram',
                 class: 'Selective serotonin reuptake inhibitor (SSRI)',
                 mechanism: 'Selective inhibition of serotonin reuptake with minimal effect on other neurotransmitters',
@@ -426,7 +423,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lowest interaction profile of SSRIs. Dose reduction needed in elderly. ECG if >40mg or cardiac risk',
                 indication: 'Depression, panic disorder (unlicensed but effective)'
             },
-            'clarithromycin': {
+
+'clarithromycin': {
                 name: 'Clarithromycin',
                 class: 'Macrolide antibiotic',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit',
@@ -440,7 +438,8 @@ const drugDatabase = {
                 clinicalPearls: 'Part of triple therapy for H.pylori. Good tissue penetration. Many drug interactions via CYP3A4',
                 indication: 'Respiratory tract infections, H.pylori eradication, skin infections, atypical pneumonia'
             },
-            'clindamycin': {
+
+'clindamycin': {
                 name: 'Clindamycin',
                 class: 'Clindamycin',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit',
@@ -455,7 +454,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent bone penetration. High C.diff risk. Stop if diarrhea develops',
                 indication: 'Bone/joint infections, anaerobic infections, skin/soft tissue, dental infections'
             },
-            'clopidogrel': {
+
+'clopidogrel': {
                 name: 'Clopidogrel',
                 class: 'Antiplatelet drugs, ADP-receptor antagonists',
                 mechanism: 'Irreversibly inhibits P2Y12 ADP receptor on platelets',
@@ -469,21 +469,8 @@ const drugDatabase = {
                 clinicalPearls: 'Dual antiplatelet therapy with aspirin post-ACS. Genetic testing for CYP2C19 variants',
                 indication: 'Acute coronary syndromes, stroke prevention, peripheral vascular disease'
             },
-            'co-amoxiclav': {
-                name: 'Co-amoxiclav',
-                class: 'Penicillins, broad-spectrum',
-                mechanism: 'Amoxicillin inhibits cell wall synthesis, clavulanic acid protects against beta-lactamases',
-                dosing: 'Adults: 625mg TDS or 1g BD. Severe infections: 1.2g TDS IV. Available as 375mg, 625mg tablets',
-                contraindications: 'Penicillin allergy, previous cholestatic jaundice with co-amoxiclav',
-                interactions: 'Warfarin (↑ INR), methotrexate (↑ toxicity), probenecid (↑ levels)',
-                monitoring: 'LFTs (risk of cholestatic jaundice), signs of C.difficile colitis',
-                pregnancy: 'Safe - no increased risk of congenital abnormalities',
-                sideEffects: 'GI upset, diarrhoea, cholestatic jaundice (rare), skin reactions',
-                pharmacokinetics: 'Well absorbed, Half-life: 1h, mainly renal excretion',
-                clinicalPearls: 'Broad spectrum including beta-lactamase producers. Take with food to ↓ GI upset. Monitor LFTs',
-                indication: 'Respiratory tract infections, skin/soft tissue infections, dental infections, UTI'
-            },
-            'co-codamol': {
+
+'co-codamol': {
                 name: 'Co-codamol',
                 class: 'Opioid/paracetamol combination analgesic',
                 mechanism: 'Codeine acts on μ-opioid receptors, paracetamol inhibits COX enzymes centrally',
@@ -497,7 +484,8 @@ const drugDatabase = {
                 clinicalPearls: 'Popular UK combination. 8/500mg available OTC. 30/500mg prescription only. Maximum 3 days OTC use',
                 indication: 'Moderate pain where paracetamol alone insufficient. Post-operative pain, dental pain'
             },
-            'codeine': {
+
+'codeine': {
                 name: 'Codeine',
                 class: 'Opioid analgesic',
                 mechanism: 'Prodrug converted to morphine by CYP2D6, mu-opioid receptor agonist',
@@ -511,7 +499,8 @@ const drugDatabase = {
                 clinicalPearls: 'Variable efficacy due to CYP2D6 polymorphisms. Always prescribe laxatives for regular use',
                 indication: 'Mild to moderate pain, dry cough, diarrhoea'
             },
-            'colecalciferol': {
+
+'colecalciferol': {
                 name: 'Colecalciferol (Vitamin D3)',
                 class: 'Vitamin supplement',
                 mechanism: 'Precursor to active vitamin D, essential for calcium absorption and bone health',
@@ -525,7 +514,8 @@ const drugDatabase = {
                 clinicalPearls: 'Increasingly prescribed due to widespread deficiency. Take with fatty meal for absorption',
                 indication: 'Vitamin D deficiency, osteoporosis prevention, general health maintenance'
             },
-            'cyclizine': {
+
+'cyclizine': {
                 name: 'Cyclizine',
                 class: 'Antihistamine antiemetic',
                 mechanism: 'H1 receptor antagonist with anticholinergic properties, acts on vestibular system',
@@ -539,7 +529,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent for motion sickness and vertigo. Less sedating than promethazine',
                 indication: 'Motion sickness, vertigo, nausea/vomiting, pregnancy sickness'
             },
-            'dexamethasone': {
+
+'dexamethasone': {
                 name: 'Dexamethasone',
                 class: 'Corticosteroid (glucocorticoid)',
                 mechanism: 'Potent synthetic glucocorticoid with anti-inflammatory and immunosuppressive effects',
@@ -553,7 +544,8 @@ const drugDatabase = {
                 clinicalPearls: '4x more potent than prednisolone. Minimal mineralocorticoid activity. Use tapering for prolonged courses to avoid adrenal suppression. COVID-19: 6 mg once daily for up to 10 days (RECOVERY trial)',
                 indication: 'Cerebral oedema, severe COVID-19, croup, severe inflammatory conditions'
             },
-            'diazepam': {
+
+'diazepam': {
                 name: 'Diazepam',
                 class: 'Benzodiazepines',
                 mechanism: 'Enhances GABA-A receptor activity, increasing chloride influx and neuronal inhibition',
@@ -567,7 +559,8 @@ const drugDatabase = {
                 clinicalPearls: 'Long-acting benzodiazepine. High dependence potential. Flumazenil reverses effects',
                 indication: 'Status epilepticus, severe anxiety, alcohol withdrawal, muscle spasm'
             },
-            'diclofenac': {
+
+'diclofenac': {
                 name: 'Diclofenac',
                 class: 'Non-steroidal anti-inflammatory drug (NSAID)',
                 mechanism: 'Non-selective COX inhibitor, reducing prostaglandin synthesis',
@@ -581,7 +574,8 @@ const drugDatabase = {
                 clinicalPearls: 'Oral diclofenac contraindicated in established CVD or moderate–severe HF (MHRA 2015). Topical formulation preferred for local pain.',
                 indication: 'Short-term pain/inflammation when lower-risk NSAIDs ineffective (topical preferred)'
             },
-            'digoxin': {
+
+'digoxin': {
                 name: 'Digoxin',
                 class: 'Digoxin',
                 mechanism: 'Inhibits Na+/K+-ATPase pump, increases intracellular Ca2+, ↑ contractility, ↓ AV conduction',
@@ -595,7 +589,8 @@ const drugDatabase = {
                 clinicalPearls: 'Narrow therapeutic window. Target level 1.0-2.0 micrograms/L. Toxicity common in elderly',
                 indication: 'AF (rate control), heart failure (symptom control). No mortality benefit'
             },
-            'domperidone': {
+
+'domperidone': {
                 name: 'Domperidone',
                 class: 'Antiemetic (Dopamine antagonist)',
                 mechanism: 'Selective D2 receptor antagonist at CTZ, prokinetic effect on upper GI tract',
@@ -609,7 +604,8 @@ const drugDatabase = {
                 clinicalPearls: 'MHRA guidance: restrict use to short-term symptomatic treatment (max 7 days). Maximum 30 mg/day. Contraindicated under 12 years or <35 kg. Avoid combinations with other QT-prolonging drugs and strong CYP3A4 inhibitors; consider alternatives in cardiac risk',
                 indication: 'Nausea and vomiting (short-term use only), selected gastroparesis after specialist advice'
             },
-            'doxycycline': {
+
+'doxycycline': {
                 name: 'Doxycycline',
                 class: 'Tetracyclines and glycylcyclines',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to 30S ribosomal subunit',
@@ -623,7 +619,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take with food, avoid dairy 2h before/after. Stay upright 30min after dose. First-line for atypical pneumonia',
                 indication: 'Respiratory tract infections, acne, chlamydia, malaria prophylaxis, Lyme disease'
             },
-            'empagliflozin': {
+
+'empagliflozin': {
                 name: 'Empagliflozin',
                 class: 'Sodium-glucose co-transporter 2 inhibitors',
                 mechanism: 'Inhibits sodium-glucose co-transporter 2 in proximal renal tubules',
@@ -637,7 +634,8 @@ const drugDatabase = {
                 clinicalPearls: 'Cardiovascular and renal benefits: recommended as an add-on in T2DM with CVD and in HFrEF/CKD where indicated. See NICE guidance (NG136/NG17 and NG238) for specific pathways. Monitor renal function; consider patient education on volume status',
                 indication: 'Type 2 diabetes (with CVD benefits), heart failure with reduced ejection fraction, chronic kidney disease as per guideline indications'
             },
-            'enoxaparin': {
+
+'enoxaparin': {
                 name: 'Enoxaparin',
                 class: 'Heparins and fondaparinux',
                 mechanism: 'Enhances antithrombin III activity, preferentially inhibiting factor Xa',
@@ -651,7 +649,8 @@ const drugDatabase = {
                 clinicalPearls: 'More predictable than unfractionated heparin. Pregnancy anticoagulant of choice',
                 indication: 'VTE prophylaxis/treatment, acute coronary syndromes, pregnancy anticoagulation'
             },
-            'erythromycin': {
+
+'erythromycin': {
                 name: 'Erythromycin',
                 class: 'Macrolide antibiotic',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit',
@@ -665,7 +664,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take before food to improve absorption. Many drug interactions via CYP3A4',
                 indication: 'Respiratory tract infections, skin infections, chlamydia, legionella'
             },
-            'ferrous sulfate': {
+
+'ferrous sulfate': {
                 name: 'Ferrous Sulfate',
                 class: 'Iron',
                 mechanism: 'Provides elemental iron for haemoglobin synthesis and correction of iron deficiency',
@@ -679,7 +679,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take with orange juice (vitamin C). Black stools are normal. Continue 3 months after Hb normal',
                 indication: 'Iron deficiency anaemia, prophylaxis in pregnancy/menorrhagia'
             },
-            'fexofenadine': {
+
+'fexofenadine': {
                 name: 'Fexofenadine',
                 class: 'Second-generation antihistamine (H1 antagonist)',
                 mechanism: 'Selective peripheral H1 receptor antagonist with no CNS penetration',
@@ -693,7 +694,8 @@ const drugDatabase = {
                 clinicalPearls: 'Least sedating antihistamine. No cardiotoxicity. Take on empty stomach',
                 indication: 'Seasonal allergic rhinitis, chronic idiopathic urticaria, allergic skin conditions'
             },
-            'flucloxacillin': {
+
+'flucloxacillin': {
                 name: 'Flucloxacillin',
                 class: 'Penicillins, narrow-spectrum',
                 mechanism: 'β-lactam antibiotic - inhibits cell wall synthesis, resistant to β-lactamases',
@@ -707,7 +709,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line for staphylococcal infections. Take on empty stomach. Monitor LFTs',
                 indication: 'Staphylococcal infections (cellulitis, bone/joint infections), endocarditis prophylaxis'
             },
-            'fluconazole': {
+
+'fluconazole': {
                 name: 'Fluconazole',
                 class: 'Triazole antifungal',
                 mechanism: 'Inhibits fungal cytochrome P450 enzyme 14α-demethylase, disrupting ergosterol synthesis',
@@ -721,7 +724,8 @@ const drugDatabase = {
                 clinicalPearls: 'Single 150mg dose appropriate for uncomplicated vulvovaginal candidiasis; avoid prolonged or high-dose therapy in pregnancy. For systemic infections, specialist guidance and monitoring required',
                 indication: 'Candidiasis (vaginal, oral, systemic), cryptococcal meningitis, fungal prophylaxis'
             },
-            'fluoxetine': {
+
+'fluoxetine': {
                 name: 'Fluoxetine',
                 class: 'Selective serotonin reuptake inhibitor (SSRI)',
                 mechanism: 'Inhibits serotonin reuptake at synaptic cleft, increasing serotonin availability',
@@ -735,7 +739,8 @@ const drugDatabase = {
                 clinicalPearls: 'Longest half-life SSRI - less withdrawal symptoms. May initially increase anxiety. Monitor under 25s weekly',
                 indication: 'Depression, panic disorder, OCD, bulimia nervosa, premenstrual dysphoric disorder'
             },
-            'folic acid': {
+
+'folic acid': {
                 name: 'Folic Acid',
                 class: 'Vitamin supplement',
                 mechanism: 'Synthetic form of folate, essential for DNA synthesis and red cell production',
@@ -749,7 +754,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always check B12 before treating megaloblastic anaemia. Take with methotrexate day+1',
                 indication: 'Folate deficiency, pregnancy/pre-conception, with methotrexate therapy'
             },
-            'furosemide': {
+
+'furosemide': {
                 name: 'Furosemide',
                 class: 'Diuretics, loop',
                 mechanism: 'Inhibits Na+/K+/2Cl- co-transporter in ascending limb of loop of Henle',
@@ -763,7 +769,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take in morning to avoid nocturia. Monitor K+ closely. Ototoxicity with high IV doses; IV infusion rate should not exceed 4 mg/min. Ensure renal function and electrolytes monitored after initiation/titration',
                 indication: 'Heart failure, pulmonary oedema, hypertension (rarely used), ascites'
             },
-            'gabapentin': {
+
+'gabapentin': {
                 name: 'Gabapentin',
                 class: 'Gabapentinoids',
                 mechanism: 'Binds to voltage-gated calcium channel α2δ subunit, reducing neurotransmitter release',
@@ -777,21 +784,8 @@ const drugDatabase = {
                 clinicalPearls: 'Gradual dose escalation needed. Reduce dose in renal impairment. Potential for abuse. In the UK gabapentin is classed as a Schedule 3 controlled drug (since 2019); prescribers should record supply and be cautious with repeat prescriptions',
                 indication: 'Neuropathic pain, epilepsy, restless leg syndrome (unlicensed)'
             },
-            'gentamicin': {
-                name: 'Gentamicin',
-                class: 'Aminoglycoside',
-                mechanism: 'Inhibits bacterial protein synthesis by binding to 30S ribosomal subunit',
-                dosing: 'Adult: 5-7mg/kg daily IV/IM. Adjust for renal function. Monitor levels - trough <2mg/L',
-                contraindications: 'Myasthenia gravis, previous 8th nerve damage, severe renal impairment',
-                interactions: 'Loop diuretics (↑ ototoxicity), vancomycin (↑ nephrotoxicity), muscle relaxants',
-                monitoring: 'Renal function, hearing, balance, drug levels (peak/trough), urine output',
-                pregnancy: 'Avoid in pregnancy due to fetal risk (see SmPC/UKTIS); specialist advice required if exposure occurs',
-                sideEffects: 'Nephrotoxicity, ototoxicity (vestibular/auditory), neuromuscular blockade',
-                pharmacokinetics: 'Poor oral absorption. Good tissue penetration. t½ 2-3h. 95% renal excretion',
-                clinicalPearls: 'Once daily dosing preferred. Synergistic with beta-lactams. Monitor levels',
-                indication: 'Serious gram-negative infections, endocarditis, sepsis, UTI, pneumonia'
-            },
-            'gliclazide': {
+
+'gliclazide': {
                 name: 'Gliclazide',
                 class: 'Sulfonylurea',
                 mechanism: 'Stimulates insulin release from pancreatic β-cells by blocking K-ATP channels',
@@ -805,7 +799,8 @@ const drugDatabase = {
                 clinicalPearls: 'Second-line after metformin. Take with food. Lower hypoglycaemia risk than glibenclamide. Driving advice: inform DVLA if recurrent hypoglycaemia; provide hypoglycaemia education and arrange follow-up',
                 indication: 'Type 2 diabetes (when metformin contraindicated/not tolerated or as add-on)'
             },
-            'glyceryl-trinitrate': {
+
+'glyceryl-trinitrate': {
                 name: 'Glyceryl Trinitrate (GTN)',
                 class: 'Nitrates',
                 mechanism: 'Releases nitric oxide causing smooth muscle relaxation and vasodilation',
@@ -819,7 +814,8 @@ const drugDatabase = {
                 clinicalPearls: 'Nitrate-free period needed to prevent tolerance. Keep tablets in original container',
                 indication: 'Angina, heart failure, hypertensive emergency, anal fissure'
             },
-            'haloperidol': {
+
+'haloperidol': {
                 name: 'Haloperidol',
                 class: 'Antipsychotic (First-generation, typical)',
                 mechanism: 'Potent dopamine D2 receptor antagonist in mesolimbic and mesocortical pathways; also blocks α1-adrenergic and 5-HT2 receptors',
@@ -833,7 +829,8 @@ const drugDatabase = {
                 clinicalPearls: 'Avoid in dementia-related psychosis (↑ mortality). Always use the lowest effective dose for the shortest duration. ECG before initiation and after dose increases',
                 indication: 'Schizophrenia, acute psychosis, delirium, short-term control of severe agitation, Tourette syndrome'
             },
-            'heparin': {
+
+'heparin': {
                 name: 'Heparin',
                 class: 'Heparins and fondaparinux',
                 mechanism: 'Binds to antithrombin III, enhancing inactivation of thrombin and factor Xa',
@@ -847,7 +844,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor for HIT. Reverse with protamine. Use anti-Xa levels if APTT unreliable',
                 indication: 'DVT/PE treatment, ACS, AF, cardiac surgery, dialysis, stroke prevention'
             },
-            'hydrocortisone': {
+
+'hydrocortisone': {
                 name: 'Hydrocortisone',
                 class: 'Corticosteroids, topical',
                 mechanism: 'Anti-inflammatory glucocorticoid effects via cytoplasmic receptors',
@@ -861,7 +859,8 @@ const drugDatabase = {
                 clinicalPearls: 'Mildest topical steroid. Available OTC in low concentrations. Safe for face/children',
                 indication: 'Eczema, dermatitis, insect bites, adrenal insufficiency (oral)'
             },
-            'hyoscine': {
+
+'hyoscine': {
                 name: 'Hyoscine (Scopolamine)',
                 class: 'Anticholinergic/Antimuscarinic',
                 mechanism: 'Competitive antagonist of muscarinic acetylcholine receptors',
@@ -875,7 +874,8 @@ const drugDatabase = {
                 clinicalPearls: 'Patches for motion sickness. Excellent for respiratory secretions in palliative care',
                 indication: 'Motion sickness, excessive respiratory secretions, smooth muscle spasm'
             },
-            'ibuprofen': {
+
+'ibuprofen': {
                 name: 'Ibuprofen',
                 class: 'Non-steroidal anti-inflammatory drug (NSAID)',
                 mechanism: 'Non-selective cyclooxygenase (COX) inhibitor, reducing prostaglandin synthesis',
@@ -889,7 +889,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most widely used NSAID in UK. Always take with food. Use lowest effective dose for shortest time',
                 indication: 'Pain and inflammation, particularly musculoskeletal conditions, fever, dysmenorrhoea'
             },
-            'insulin': {
+
+'insulin': {
                 name: 'Insulin (soluble/regular; e.g., Actrapid/Humulin S)',
                 class: 'Short-acting insulin',
                 mechanism: 'Replaces endogenous insulin to facilitate cellular glucose uptake and inhibit hepatic glucose output',
@@ -903,7 +904,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use IV only in monitored settings per protocol. Educate on hypo recognition and treatment; driving advice per DVLA.',
                 indication: 'Type 1 and Type 2 diabetes (as part of regimens); DKA/HHS (IV)'
             },
-            'ipratropium': {
+
+'ipratropium': {
                 name: 'Ipratropium',
                 class: 'Short-acting muscarinic antagonist (SAMA)',
                 mechanism: 'Competitive antagonist of muscarinic receptors in bronchial smooth muscle',
@@ -917,7 +919,8 @@ const drugDatabase = {
                 clinicalPearls: 'Additive effect with beta-2 agonists. Avoid contact with eyes (glaucoma risk)',
                 indication: 'COPD, severe asthma (add-on therapy), acute exacerbations'
             },
-            'ketamine': {
+
+'ketamine': {
                 name: 'Ketamine',
                 class: 'Dissociative Anaesthetic/Analgesic',
                 mechanism: 'NMDA receptor antagonist causing dissociative anaesthesia and analgesia',
@@ -931,7 +934,8 @@ const drugDatabase = {
                 clinicalPearls: 'Maintains airway reflexes. Good for unstable patients. Pre-treat with benzodiazepine',
                 indication: 'Emergency anaesthesia, procedural sedation, severe asthma, treatment-resistant depression'
             },
-            'lactulose': {
+
+'lactulose': {
                 name: 'Lactulose',
                 class: 'Osmotic laxative',
                 mechanism: 'Non-absorbable disaccharide, osmotically active, acidifies colon reducing ammonia absorption',
@@ -945,7 +949,8 @@ const drugDatabase = {
                 clinicalPearls: 'Safe in pregnancy and elderly. Takes 2-3 days for full effect. Sweet taste',
                 indication: 'Constipation, hepatic encephalopathy, preparation for procedures'
             },
-            'lansoprazole': {
+
+'lansoprazole': {
                 name: 'Lansoprazole',
                 class: 'Proton pump inhibitor (PPI)',
                 mechanism: 'Irreversibly inhibits gastric H+/K+-ATPase (proton pump)',
@@ -959,7 +964,8 @@ const drugDatabase = {
                 clinicalPearls: 'Alternative to omeprazole. Take before food. Orodispersible tablets available',
                 indication: 'GORD, peptic ulcer disease, H.pylori eradication, Zollinger-Ellison syndrome'
             },
-            'levodopa': {
+
+'levodopa': {
                 name: 'Levodopa/Carbidopa (Co-careldopa)',
                 class: 'Dopaminergic drug for Parkinson\'s disease',
                 mechanism: 'Levodopa converted to dopamine in brain; carbidopa prevents peripheral conversion',
@@ -973,7 +979,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take 30min before food. Wearing-off effects develop over time. Protein meals reduce absorption',
                 indication: 'Parkinson\'s disease, restless legs syndrome'
             },
-            'levonorgestrel': {
+
+'levonorgestrel': {
                 name: 'Levonorgestrel',
                 class: 'Synthetic progestogen',
                 mechanism: 'Progesterone receptor agonist, prevents/delays ovulation and affects endometrium',
@@ -987,7 +994,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most effective within 12h of unprotected intercourse. Available OTC as emergency contraception',
                 indication: 'Emergency contraception, long-term contraception (IUS), menorrhagia'
             },
-            'levothyroxine': {
+
+'levothyroxine': {
                 name: 'Levothyroxine',
                 class: 'Thyroid hormones',
                 mechanism: 'Synthetic L-thyroxine (T4) hormone, converted to active T3 in peripheral tissues',
@@ -1001,7 +1009,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take on empty stomach 30-60min before breakfast. Consistent brand/timing. TSH target 0.4-4.0 mU/L',
                 indication: 'Primary hypothyroidism, secondary hypothyroidism, thyroid cancer (TSH suppression)'
             },
-            'lidocaine': {
+
+'lidocaine': {
                 name: 'Lidocaine',
                 class: 'Local anaesthetic (amide type)',
                 mechanism: 'Blocks voltage-gated sodium channels, preventing nerve conduction',
@@ -1015,7 +1024,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most common local anaesthetic. Adrenaline prolongs duration. IV form for arrhythmias',
                 indication: 'Local anaesthesia, topical anaesthesia, ventricular arrhythmias (IV)'
             },
-            'lithium': {
+
+'lithium': {
                 name: 'Lithium carbonate',
                 class: 'Mood stabiliser',
                 mechanism: 'Unclear - affects neurotransmitter function and cellular signalling',
@@ -1029,7 +1039,8 @@ const drugDatabase = {
                 clinicalPearls: 'Regular level monitoring essential. Toxicity >1.5mmol/L. Maintain good hydration',
                 indication: 'Bipolar disorder (acute treatment and prophylaxis), treatment-resistant depression'
             },
-            'loperamide': {
+
+'loperamide': {
                 name: 'Loperamide',
                 class: 'Opioid antidiarrhoeal agent',
                 mechanism: 'Mu-opioid receptor agonist in GI tract, slows intestinal motility',
@@ -1043,7 +1054,8 @@ const drugDatabase = {
                 clinicalPearls: 'Available OTC (max 2 days). Does not cross blood-brain barrier at therapeutic doses',
                 indication: 'Acute diarrhoea, chronic diarrhoea, IBS with diarrhoea'
             },
-            'loratadine': {
+
+'loratadine': {
                 name: 'Loratadine',
                 class: 'Second-generation antihistamine (H1 antagonist)',
                 mechanism: 'Selective peripheral H1 receptor antagonist, minimal CNS and anticholinergic effects',
@@ -1057,7 +1069,8 @@ const drugDatabase = {
                 clinicalPearls: 'Non-sedating antihistamine. Once daily dosing. Available OTC. No dose adjustment in renal disease',
                 indication: 'Allergic rhinitis, chronic idiopathic urticaria, allergic skin conditions'
             },
-            'lorazepam': {
+
+'lorazepam': {
                 name: 'Lorazepam',
                 class: 'Short-acting benzodiazepine',
                 mechanism: 'Enhances GABA-A receptor activity, increasing neuronal inhibition',
@@ -1071,7 +1084,8 @@ const drugDatabase = {
                 clinicalPearls: 'Shorter-acting than diazepam. Less affected by hepatic impairment. High dependence risk',
                 indication: 'Short-term anxiety, status epilepticus, premedication'
             },
-            'losartan': {
+
+'losartan': {
                 name: 'Losartan',
                 class: 'Angiotensin receptor blockers',
                 mechanism: 'Selective antagonist of angiotensin II at AT1 receptors',
@@ -1085,7 +1099,8 @@ const drugDatabase = {
                 clinicalPearls: 'Alternative to ACE inhibitor if cough. Less cough than ACE-I but more expensive',
                 indication: 'Hypertension, heart failure, diabetic nephropathy, post-MI (ACE-I intolerant)'
             },
-            'magnesium-sulfate': {
+
+'magnesium-sulfate': {
                 name: 'Magnesium Sulfate',
                 class: 'Mineral supplement/Antiarrhythmic',
                 mechanism: 'Essential cofactor for enzymes, membrane stabilizer, calcium channel blocker',
@@ -1099,7 +1114,8 @@ const drugDatabase = {
                 clinicalPearls: 'Check reflexes before each dose. Have calcium gluconate ready as antidote',
                 indication: 'Eclampsia, torsades de pointes, hypomagnesemia, severe asthma'
             },
-            'meropenem': {
+
+'meropenem': {
                 name: 'Meropenem',
                 class: 'Antibiotic (Carbapenem)',
                 mechanism: 'Inhibits bacterial cell wall synthesis, stable to most beta-lactamases',
@@ -1113,7 +1129,8 @@ const drugDatabase = {
                 clinicalPearls: 'Broad spectrum including ESBL producers. Lower seizure risk than imipenem',
                 indication: 'Severe sepsis, complicated UTI, intra-abdominal infections, meningitis'
             },
-            'metformin': {
+
+'metformin': {
                 name: 'Metformin',
                 class: 'Biguanide (oral hypoglycaemic)',
                 mechanism: 'Reduces hepatic gluconeogenesis, increases insulin sensitivity and reduces intestinal glucose absorption',
@@ -1127,7 +1144,8 @@ const drugDatabase = {
                 clinicalPearls: 'Withhold before and for 48 hours after iodinated contrast or major procedures if renal function may be compromised; consider restarting when eGFR stable. Use lowest effective dose in elderly with declining renal function. Counsel regarding GI effects and slow titration. Consider alternative agents in significant CKD.',
                 efficacy: 'Effective first-line therapy for type 2 diabetes; reduces HbA1c and has favourable weight and CV profile'
             },
-            'methotrexate': {
+
+'methotrexate': {
                 name: 'Methotrexate',
                 class: 'Methotrexate',
                 mechanism: 'Inhibits dihydrofolate reductase, interfering with folate metabolism',
@@ -1141,7 +1159,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always prescribe with folic acid. Stop if infection/illness. DMARD monitoring essential',
                 indication: 'Rheumatoid arthritis, psoriasis, cancer (various), ectopic pregnancy'
             },
-            'metoclopramide': {
+
+'metoclopramide': {
                 name: 'Metoclopramide',
                 class: 'Antiemetic/Prokinetic (Dopamine antagonist)',
                 mechanism: 'Blocks dopamine D2 receptors in CTZ and enhances GI motility',
@@ -1155,7 +1174,8 @@ const drugDatabase = {
                 clinicalPearls: 'Limit to 5 days to reduce tardive dyskinesia risk. Give procyclidine for dystonia',
                 indication: 'Nausea/vomiting, gastroparesis, migraine-associated nausea, postoperative nausea'
             },
-            'metronidazole': {
+
+'metronidazole': {
                 name: 'Metronidazole',
                 class: 'Nitroimidazole (antibacterial/antiprotozoal)',
                 mechanism: 'Forms reactive metabolites that damage DNA in anaerobic bacteria and certain protozoa',
@@ -1169,7 +1189,8 @@ const drugDatabase = {
                 clinicalPearls: 'Avoid alcohol during treatment and for 48 hours afterwards. Not first-line for initial C. difficile per current NICE guidance — use oral vancomycin/fidaxomicin where indicated. Prolonged therapy risks peripheral neuropathy and should prompt review',
                 indication: 'Anaerobic infections, bacterial vaginosis, H. pylori eradication (as part of combination therapy), giardiasis/trichomoniasis, limited/alternative role in C. difficile infection'
             },
-            'midazolam': {
+
+'midazolam': {
                 name: 'Midazolam',
                 class: 'Benzodiazepine (short-acting)',
                 mechanism: 'Positive allosteric modulator at GABA-A receptors causing sedation, anxiolysis and amnesia',
@@ -1183,7 +1204,8 @@ const drugDatabase = {
                 clinicalPearls: 'Have airway equipment and reversal (flumazenil) available where clinically indicated. Intranasal and buccal routes useful for prehospital/seizure rescue. Reduce dose in older adults and those with hepatic impairment.',
                 indication: 'Seizure control (status epilepticus), conscious sedation, procedural sedation, premedication, ICU sedation'
             },
-            'mirtazapine': {
+
+'mirtazapine': {
                 name: 'Mirtazapine',
                 class: 'Noradrenergic and specific serotonergic antidepressant (NaSSA)',
                 mechanism: 'Blocks α2-adrenergic autoreceptors and 5-HT2/5-HT3 receptors, enhancing noradrenaline and serotonin',
@@ -1197,7 +1219,8 @@ const drugDatabase = {
                 clinicalPearls: 'Paradoxical effect: more sedating at lower doses. Good for depression with insomnia/weight loss',
                 indication: 'Depression (especially with anxiety, insomnia, or weight loss)'
             },
-            'montelukast': {
+
+'montelukast': {
                 name: 'Montelukast',
                 class: 'Leukotriene receptor antagonist',
                 mechanism: 'Selective antagonist of cysteinyl leukotriene (CysLT1) receptors',
@@ -1211,7 +1234,8 @@ const drugDatabase = {
                 clinicalPearls: 'Add-on therapy in asthma step 3. Take at bedtime. Monitor for mood changes',
                 indication: 'Asthma prophylaxis, allergic rhinitis, exercise-induced bronchospasm'
             },
-            'morphine': {
+
+'morphine': {
                 name: 'Morphine',
                 class: 'Opioid analgesic (strong opioid)',
                 mechanism: 'μ-opioid receptor agonist producing analgesia, sedation, and respiratory depression',
@@ -1225,7 +1249,8 @@ const drugDatabase = {
                 clinicalPearls: 'Co-prescribe laxative and consider antiemetic for initiation; start low and titrate. Use caution with concomitant sedatives and in the elderly. Naloxone reverses opioid toxicity—titrate to restore ventilation rather than full reversal. For PCA/infusions, follow local policies and monitor closely.',
                 indication: 'Moderate to severe acute pain, chronic severe pain, palliative care'
             },
-            'naloxone': {
+
+'naloxone': {
                 name: 'Naloxone',
                 class: 'Opioid antagonist',
                 mechanism: 'Competitive antagonist at μ‑opioid receptors, rapidly reversing opioid-induced respiratory depression',
@@ -1239,7 +1264,8 @@ const drugDatabase = {
                 clinicalPearls: 'Titrate to restore adequate spontaneous ventilation rather than full reversal to avoid severe withdrawal. Community kits commonly use intranasal formulations (400 mcg). Ensure plan for transfer to ED after reversal and consider need for repeat dosing or infusion for long-acting opioids.',
                 indication: 'Opioid overdose with respiratory depression, reversal of opioid-induced respiratory depression in clinical settings'
             },
-            'naproxen': {
+
+'naproxen': {
                 name: 'Naproxen',
                 class: 'Non-steroidal anti-inflammatory drug (NSAID)',
                 mechanism: 'Non-selective COX inhibitor with longer half-life than other NSAIDs',
@@ -1253,7 +1279,8 @@ const drugDatabase = {
                 clinicalPearls: 'Longer half-life allows BD dosing. Lower GI toxicity than some NSAIDs',
                 indication: 'Inflammatory conditions, musculoskeletal pain, dysmenorrhoea, acute gout'
             },
-            'nitrofurantoin': {
+
+'nitrofurantoin': {
                 name: 'Nitrofurantoin',
                 class: 'Nitrofurantoin',
                 mechanism: 'Inhibits bacterial enzymes involved in carbohydrate metabolism',
@@ -1267,7 +1294,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent for uncomplicated UTI. Take with food. Avoid if eGFR <45. Urine may turn brown',
                 indication: 'UTI treatment and prophylaxis. Not effective for pyelonephritis'
             },
-            'noradrenaline': {
+
+'noradrenaline': {
                 name: 'Noradrenaline',
                 class: 'Sympathomimetic (Alpha/Beta agonist)',
                 mechanism: 'Potent α1 and moderate β1 agonist causing vasoconstriction and increased contractility',
@@ -1281,7 +1309,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line vasopressor in septic shock. Give via central line. Have phentolamine ready',
                 indication: 'Septic shock, cardiogenic shock, severe hypotension, cardiac arrest'
             },
-            'olanzapine': {
+
+'olanzapine': {
                 name: 'Olanzapine',
                 class: 'Antipsychotics, second-generation (atypical)',
                 mechanism: 'Dopamine D2, serotonin 5-HT2A receptor antagonist with multiple receptor activity',
@@ -1295,7 +1324,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower EPS risk than haloperidol but significant metabolic effects. Regular monitoring essential',
                 indication: 'Schizophrenia, bipolar disorder (acute mania), treatment-resistant depression'
             },
-            'omeprazole': {
+
+'omeprazole': {
                 name: 'Omeprazole',
                 class: 'Proton pump inhibitor (PPI)',
                 mechanism: 'Irreversibly inhibits gastric H+/K+-ATPase (proton pump)',
@@ -1309,7 +1339,8 @@ const drugDatabase = {
                 clinicalPearls: 'First PPI available OTC in UK. Take 30min before food',
                 indication: 'GORD, peptic ulcer disease, H.pylori eradication'
             },
-            'ondansetron': {
+
+'ondansetron': {
                 name: 'Ondansetron',
                 class: 'Antiemetic (Selective 5-HT₃ receptor antagonist)',
                 mechanism: 'Blocks serotonin 5-HT₃ receptors in the chemoreceptor trigger zone and GI tract',
@@ -1323,7 +1354,8 @@ const drugDatabase = {
                 clinicalPearls: 'Avoid single IV doses > 16 mg; monitor QT; good alternative to dopamine-blocking antiemetics in Parkinson’s disease',
                 indication: 'Chemotherapy, radiotherapy, or post-operative nausea and vomiting; pregnancy sickness (second-line)'
             },
-            'pantoprazole': {
+
+'pantoprazole': {
                 name: 'Pantoprazole',
                 class: 'Proton Pump Inhibitor',
                 mechanism: 'Irreversibly inhibits gastric H+/K+-ATPase (proton pump)',
@@ -1337,7 +1369,8 @@ const drugDatabase = {
                 clinicalPearls: 'IV formulation available. Less drug interactions than omeprazole',
                 indication: 'GORD, peptic ulcer disease, H.pylori eradication, stress ulcer prophylaxis'
             },
-            'paracetamol': {
+
+'paracetamol': {
                 name: 'Paracetamol',
                 class: 'Paracetamol',
                 mechanism: 'Inhibits COX enzymes centrally, affects prostaglandin synthesis in hypothalamus',
@@ -1351,7 +1384,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line analgesic in UK. No anti-inflammatory effect. Overdose antidote: N-acetylcysteine. Safe in asthma',
                 indication: 'Pain relief, fever reduction. Safe alternative to NSAIDs'
             },
-            'phenytoin': {
+
+'phenytoin': {
                 name: 'Phenytoin',
                 class: 'Antiepileptic drug',
                 mechanism: 'Blocks voltage-gated sodium channels, stabilizing neuronal membranes',
@@ -1365,7 +1399,8 @@ const drugDatabase = {
                 clinicalPearls: 'Narrow therapeutic window. Many drug interactions. IV administration requires cardiac monitoring',
                 indication: 'Epilepsy, status epilepticus, trigeminal neuralgia'
             },
-            'piperacillin-tazobactam': {
+
+'piperacillin-tazobactam': {
                 name: 'Piperacillin–tazobactam',
                 class: 'Penicillin/β-lactamase inhibitor combination (broad-spectrum)',
                 mechanism: 'Piperacillin inhibits cell wall synthesis; tazobactam inhibits many β-lactamases',
@@ -1382,7 +1417,8 @@ const drugDatabase = {
                 treatmentDuration: 'Neutropenic sepsis: continue until afebrile and neutrophil recovery; complicated intra-abdominal infection: typically 5–7 days post source-control unless ongoing sepsis.',
                 indication: 'Severe healthcare-associated infections, intra-abdominal sepsis, neutropenic sepsis and other indications per local policy'
             },
-            'prednisolone': {
+
+'prednisolone': {
                 name: 'Prednisolone',
                 class: 'Corticosteroid (glucocorticoid)',
                 mechanism: 'Synthetic glucocorticoid with anti-inflammatory and immunosuppressive effects',
@@ -1396,7 +1432,8 @@ const drugDatabase = {
                 clinicalPearls: 'Never stop abruptly. Take with food. Consider bone protection',
                 indication: 'Asthma, COPD exacerbation, inflammatory conditions'
             },
-            'pregabalin': {
+
+'pregabalin': {
                 name: 'Pregabalin',
                 class: 'Gabapentinoids',
                 mechanism: 'Binds to the α2δ subunit of voltage-gated calcium channels, reducing excitatory neurotransmitter release',
@@ -1410,7 +1447,8 @@ const drugDatabase = {
                 clinicalPearls: 'Class C controlled drug in the UK (special prescribing considerations). Warn patients about driving and alcohol. Taper gradually when discontinuing to reduce withdrawal symptoms. Use lowest effective dose in the elderly and those with renal impairment.',
                 indication: 'Neuropathic pain (diabetic neuropathy, postherpetic neuralgia), adjunctive therapy for partial seizures, generalized anxiety disorder (licensed in some countries)'
             },
-            'prochlorperazine': {
+
+'prochlorperazine': {
                 name: 'Prochlorperazine',
                 class: 'Phenothiazine antiemetic/antipsychotic',
                 mechanism: 'Dopamine D2 receptor antagonist in the chemoreceptor trigger zone with additional anticholinergic effects',
@@ -1424,7 +1462,8 @@ const drugDatabase = {
                 clinicalPearls: 'Avoid in elderly patients with dementia due to increased mortality and stroke risk. Acute dystonic reactions respond to anticholinergics (e.g. procyclidine). Reserve for severe nausea when other agents are unsuitable; consider alternatives in young children and in Parkinson\'s disease.',
                 indication: 'Severe nausea and vomiting, vertigo-associated nausea, migraine-related nausea (short courses)'
             },
-            'propofol': {
+
+'propofol': {
                 name: 'Propofol',
                 class: 'General Anaesthetic (Phenolic compound)',
                 mechanism: 'GABA-A receptor agonist causing rapid onset anaesthesia',
@@ -1438,7 +1477,8 @@ const drugDatabase = {
                 clinicalPearls: 'Painful injection - use lidocaine. Quick recovery. Risk of PRIS with prolonged use',
                 indication: 'General anaesthesia induction/maintenance, ICU sedation, procedural sedation'
             },
-            'quinine': {
+
+'quinine': {
                 name: 'Quinine',
                 class: 'Quinine',
                 mechanism: 'Interferes with parasitic DNA replication, affects calcium distribution in muscle',
@@ -1452,7 +1492,8 @@ const drugDatabase = {
                 clinicalPearls: 'Unlicensed use for nocturnal cramps. Monitor for cinchonism. Resistance common',
                 indication: 'Complicated malaria, nocturnal leg cramps (second-line)'
             },
-            'ramipril': {
+
+'ramipril': {
                 name: 'Ramipril',
                 class: 'Angiotensin-converting enzyme (ACE) inhibitors',
                 mechanism: 'Inhibits ACE, preventing conversion of angiotensin I to II, reducing aldosterone secretion',
@@ -1466,7 +1507,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most commonly prescribed ACE inhibitor in UK. Renoprotective in diabetes. Stop immediately if pregnant',
                 indication: 'Hypertension, heart failure, post-MI, diabetic nephropathy, primary prevention in high CV risk'
             },
-            'ranitidine': {
+
+'ranitidine': {
                 name: 'Ranitidine',
                 class: 'H2-receptor antagonist',
                 mechanism: 'Competitive antagonist of histamine H2-receptors in gastric parietal cells',
@@ -1480,7 +1522,8 @@ const drugDatabase = {
                 clinicalPearls: 'Less effective than PPIs. Withdrawn in many countries due to NDMA contamination concerns',
                 indication: 'GORD, peptic ulcer disease, stress ulcer prophylaxis'
             },
-            'rivaroxaban': {
+
+'rivaroxaban': {
                 name: 'Rivaroxaban',
                 class: 'Direct oral anticoagulant (Factor Xa inhibitor)',
                 mechanism: 'Direct, selective inhibition of factor Xa, interrupting thrombin generation and clot formation',
@@ -1494,7 +1537,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take doses ≥15 mg with food. Hold ≥24 h pre-low bleed-risk procedures (longer if renal impairment). Reversal: andexanet alfa (where available) or PCC for life-threatening bleed.',
                 indication: 'Non-valvular AF stroke prevention; treatment and secondary prevention of DVT/PE; VTE prophylaxis after hip/knee replacement'
             },
-            'salbutamol': {
+
+'salbutamol': {
                 name: 'Salbutamol',
                 class: 'Short-acting β2-agonist (SABA)',
                 mechanism: 'Selective β2-adrenoreceptor agonist causing bronchodilation',
@@ -1508,7 +1552,8 @@ const drugDatabase = {
                 clinicalPearls: 'Blue inhaler. If using >3x/week, need preventer. Use spacer',
                 indication: 'Asthma, COPD, hyperkalaemia (nebulised)'
             },
-            'salmeterol': {
+
+'salmeterol': {
                 name: 'Salmeterol',
                 class: 'Long-acting β2-agonist (LABA)',
                 mechanism: 'Selective β2-adrenoreceptor agonist with 12-hour duration of action',
@@ -1522,7 +1567,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always combined with ICS. Not for acute relief. Green accuhaler common in UK',
                 indication: 'Asthma (step 3+ therapy with ICS), COPD (combination inhalers)'
             },
-            'senna': {
+
+'senna': {
                 name: 'Senna',
                 class: 'Stimulant laxative',
                 mechanism: 'Anthraquinone glycosides stimulate colonic peristalsis and inhibit water/electrolyte absorption',
@@ -1536,7 +1582,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most widely used stimulant laxative in UK. Avoid prolonged use >1 week',
                 indication: 'Constipation, bowel preparation, opioid-induced constipation'
             },
-            'sertraline': {
+
+'sertraline': {
                 name: 'Sertraline',
                 class: 'Selective serotonin reuptake inhibitor (SSRI)',
                 mechanism: 'Potent and selective inhibition of serotonin reuptake',
@@ -1550,7 +1597,8 @@ const drugDatabase = {
                 clinicalPearls: 'NICE first-line SSRI choice. Take with food to ↓ GI upset. Lower drug interaction potential',
                 indication: 'Depression, panic disorder, OCD, PTSD, social anxiety disorder'
             },
-            'sildenafil': {
+
+'sildenafil': {
                 name: 'Sildenafil',
                 class: 'Phosphodiesterase type 5 inhibitor',
                 mechanism: 'Inhibits PDE5, increasing cGMP levels and causing smooth muscle relaxation',
@@ -1564,7 +1612,8 @@ const drugDatabase = {
                 clinicalPearls: 'Never with nitrates. High-fat meals delay absorption. Seek help if erection >4h',
                 indication: 'Erectile dysfunction, pulmonary arterial hypertension'
             },
-            'simvastatin': {
+
+'simvastatin': {
                 name: 'Simvastatin',
                 class: 'Statins',
                 mechanism: 'Competitively inhibits HMG-CoA reductase, rate-limiting enzyme in cholesterol synthesis',
@@ -1578,7 +1627,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take at night (cholesterol synthesis peaks). Many drug interactions. Generic statin',
                 indication: 'Hypercholesterolaemia, cardiovascular disease prevention'
             },
-            'spironolactone': {
+
+'spironolactone': {
                 name: 'Spironolactone',
                 class: 'Aldosterone antagonists',
                 mechanism: 'Competitive antagonist of aldosterone at mineralocorticoid receptors',
@@ -1592,7 +1642,8 @@ const drugDatabase = {
                 clinicalPearls: 'K+-sparing effect. Check K+ before starting and monitor closely. Mortality benefit in heart failure',
                 indication: 'Heart failure (with ACE-I + β-blocker), primary hyperaldosteronism, ascites'
             },
-            'sumatriptan': {
+
+'sumatriptan': {
                 name: 'Sumatriptan',
                 class: 'Serotonin 5-HT1-receptor agonists (triptans)',
                 mechanism: 'Selective 5-HT1B/1D receptor agonist causing vasoconstriction and neuronal inhibition',
@@ -1606,7 +1657,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most effective when taken early in attack. Limit to 2 days/week to avoid medication overuse',
                 indication: 'Acute migraine treatment, cluster headache (subcutaneous)'
             },
-            'theophylline': {
+
+'theophylline': {
                 name: 'Theophylline',
                 class: 'Methylxanthine bronchodilator',
                 mechanism: 'Phosphodiesterase inhibition and adenosine receptor antagonism',
@@ -1620,7 +1672,8 @@ const drugDatabase = {
                 clinicalPearls: 'Narrow therapeutic window. Many factors affect levels (smoking, infections, drugs)',
                 indication: 'Asthma/COPD (when other treatments inadequate), acute severe asthma'
             },
-            'tramadol': {
+
+'tramadol': {
                 name: 'Tramadol',
                 class: 'Opioids',
                 mechanism: 'Weak mu-opioid agonist + inhibits serotonin/noradrenaline reuptake',
@@ -1634,7 +1687,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower respiratory depression than other opioids. Seizure risk especially with SSRIs',
                 indication: 'Moderate pain when paracetamol/NSAIDs insufficient'
             },
-            'tranexamic-acid': {
+
+'tranexamic-acid': {
                 name: 'Tranexamic Acid',
                 class: 'Antifibrinolytic',
                 mechanism: 'Lysine analog that inhibits plasminogen activation and plasmin activity',
@@ -1648,7 +1702,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most effective within 3h of trauma. Reduces mortality in major bleeding',
                 indication: 'Major bleeding, trauma, menorrhagia, hereditary angioedema'
             },
-            'trimethoprim': {
+
+'trimethoprim': {
                 name: 'Trimethoprim',
                 class: 'Folate synthesis inhibitor antibiotic',
                 mechanism: 'Inhibits bacterial dihydrofolate reductase, preventing folate synthesis',
@@ -1662,21 +1717,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line for uncomplicated UTI in women. Can cause hyperkalaemia especially with ACE-I',
                 indication: 'UTI treatment and prophylaxis, pneumocystis pneumonia prophylaxis'
             },
-            'vancomycin': {
-                name: 'Vancomycin',
-                class: 'Glycopeptide antibiotic',
-                mechanism: 'Inhibits cell-wall synthesis by binding D-Ala-D-Ala termini of peptidoglycan precursors',
-                dosing: 'IV: 15–20 mg/kg every 8–12 h (use local protocol for loading/maintenance based on weight/renal function). Oral: 125 mg QDS for C. difficile (dose varies with severity).',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Other nephrotoxins (aminoglycosides, amphotericin), loop diuretics (↑ ototoxicity risk)',
-                monitoring: 'Renal function; therapeutic levels per local protocol (AUC-guided or troughs); infusion reactions',
-                pregnancy: 'Generally acceptable if indicated (IV); oral not systemically absorbed',
-                sideEffects: 'Nephrotoxicity, ototoxicity (rare), “red man” syndrome with rapid infusion',
-                pharmacokinetics: 'IV distributes widely; renal elimination; negligible oral absorption for systemic effect',
-                clinicalPearls: 'Infuse over ≥60 min to minimise infusion reactions. Adjust dose to renal function and target levels.',
-                indication: 'Serious Gram-positive infections (incl. MRSA); oral therapy for C. difficile infection'
-            },
-            'warfarin': {
+
+'warfarin': {
                 name: 'Warfarin',
                 class: 'Vitamin K antagonist (oral anticoagulant)',
                 mechanism: 'Inhibits vitamin K epoxide reductase (VKORC1), reducing synthesis of clotting factors II, VII, IX and X and proteins C and S',
@@ -1690,7 +1732,8 @@ const drugDatabase = {
                 clinicalPearls: 'Stop ~5 days before elective procedures; consider bridging with LMWH only for high thrombotic risk patients. Reversal: oral/IV vitamin K for elevated INR without major bleeding; prothrombin complex concentrate (PCC) ± IV vitamin K for major bleeding or urgent reversal. Liaise with haematology/anticoagulation service for complex cases.',
                 indication: 'Stroke prevention in AF (where DOACs unsuitable), VTE treatment and secondary prevention, mechanical prosthetic valves (depending on type)',
             },
-            'zopiclone': {
+
+'zopiclone': {
                 name: 'Zopiclone',
                 class: 'Z-drug (non-benzodiazepine hypnotic)',
                 mechanism: 'Selective GABA-A receptor modulator at benzodiazepine binding site',
@@ -1704,7 +1747,8 @@ const drugDatabase = {
                 clinicalPearls: 'Shorter course than benzodiazepines but still dependence risk. Distinctive metallic taste',
                 indication: 'Short-term insomnia (max 4 weeks). Second-line to sleep hygiene measures'
             },
-            'sitagliptin': {
+
+'sitagliptin': {
                 name: 'Sitagliptin',
                 class: 'Dipeptidylpeptidase-4 inhibitors',
                 mechanism: 'Inhibits DPP-4 enzyme, increasing incretin hormone levels (GLP-1 and GIP)',
@@ -1718,7 +1762,8 @@ const drugDatabase = {
                 clinicalPearls: 'Weight neutral. Low hypoglycaemia risk as monotherapy. Good add-on to metformin',
                 indication: 'Type 2 diabetes as monotherapy or combination therapy'
             },
-            'venlafaxine': {
+
+'venlafaxine': {
                 name: 'Venlafaxine',
                 class: 'Antidepressants, tetracyclic and serotonin-noradrenaline reuptake inhibitors',
                 mechanism: 'Inhibits reuptake of serotonin and noradrenaline (SNRI)',
@@ -1732,7 +1777,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor BP regularly. Severe withdrawal syndrome - taper slowly. Effective for anxiety',
                 indication: 'Depression, generalized anxiety disorder, social anxiety disorder, panic disorder'
             },
-            'quetiapine': {
+
+'quetiapine': {
                 name: 'Quetiapine',
                 class: 'Antipsychotics, second-generation (atypical)',
                 mechanism: 'Dopamine D2 and serotonin 5-HT2A receptor antagonist',
@@ -1746,7 +1792,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower EPS risk than typical antipsychotics. Significant metabolic effects. Take with food',
                 indication: 'Schizophrenia, bipolar disorder, adjunctive treatment in depression'
             },
-            'glucagon': {
+
+'glucagon': {
                 name: 'Glucagon',
                 class: 'Emergency drugs',
                 mechanism: 'Hormone that stimulates hepatic glucose production and glycogenolysis',
@@ -1760,7 +1807,8 @@ const drugDatabase = {
                 clinicalPearls: 'Give glucose orally when conscious. Ineffective if glycogen stores depleted. Train family/carers',
                 indication: 'Severe hypoglycaemia when IV glucose not possible, diagnostic use'
             },
-            'diltiazem': {
+
+'diltiazem': {
                 name: 'Diltiazem',
                 class: 'Calcium channel blockers',
                 mechanism: 'Non-dihydropyridine CCB - blocks L-type calcium channels in heart and vessels',
@@ -1774,7 +1822,8 @@ const drugDatabase = {
                 clinicalPearls: 'Rate-limiting CCB. Good for AF rate control. Avoid with beta-blockers',
                 indication: 'Hypertension, angina, atrial fibrillation (rate control)'
             },
-            'glimepiride': {
+
+'glimepiride': {
                 name: 'Glimepiride',
                 class: 'Sulfonylureas',
                 mechanism: 'Stimulates insulin release from pancreatic β-cells by blocking K-ATP channels',
@@ -1788,7 +1837,8 @@ const drugDatabase = {
                 clinicalPearls: 'Longer acting than gliclazide. Take with breakfast. Lower hypoglycaemia risk than glibenclamide',
                 indication: 'Type 2 diabetes (when metformin contraindicated/not tolerated or as add-on)'
             },
-            'pioglitazone': {
+
+'pioglitazone': {
                 name: 'Pioglitazone',
                 class: 'Thiazolidinediones',
                 mechanism: 'PPAR-γ agonist, improves insulin sensitivity in muscle and adipose tissue',
@@ -1802,7 +1852,8 @@ const drugDatabase = {
                 clinicalPearls: 'May take 2-3 months for full effect. Monitor for heart failure. Avoid in osteoporosis',
                 indication: 'Type 2 diabetes as monotherapy or combination therapy'
             },
-            'escitalopram': {
+
+'escitalopram': {
                 name: 'Escitalopram',
                 class: 'Antidepressants, selective serotonin reuptake inhibitors',
                 mechanism: 'Selective inhibition of serotonin reuptake with high selectivity',
@@ -1816,7 +1867,8 @@ const drugDatabase = {
                 clinicalPearls: 'S-enantiomer of citalopram. Often better tolerated than citalopram. Take any time of day',
                 indication: 'Depression, generalized anxiety disorder, panic disorder, social anxiety'
             },
-            'tiotropium': {
+
+'tiotropium': {
                 name: 'Tiotropium',
                 class: 'Antimuscarinics, bronchodilators',
                 mechanism: 'Long-acting muscarinic antagonist (LAMA) - blocks M3 receptors in airways',
@@ -1830,7 +1882,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once daily LAMA for COPD. Different devices deliver different doses. Avoid contact with eyes',
                 indication: 'COPD maintenance therapy, add-on to bronchodilators'
             },
-            'mesalazine': {
+
+'mesalazine': {
                 name: 'Mesalazine',
                 class: 'Aminosalicylates',
                 mechanism: 'Anti-inflammatory action in gut mucosa, exact mechanism unknown',
@@ -1844,21 +1897,8 @@ const drugDatabase = {
                 clinicalPearls: 'Take with food. Multiple formulations with different release characteristics',
                 indication: 'Ulcerative colitis treatment and maintenance, Crohn\'s disease (limited efficacy)'
             },
-            'loperamide': {
-                name: 'Loperamide',
-                class: 'Antidiarrhoeal drugs',
-                mechanism: 'Mu-opioid receptor agonist in GI tract, slows intestinal motility',
-                dosing: 'Adults: 4mg initially, then 2mg after each loose stool (max 16mg daily). Children >4 years: weight-based',
-                contraindications: 'Acute dysentery, acute ulcerative colitis, bacterial enterocolitis, children <4 years',
-                interactions: 'P-glycoprotein inhibitors (↑ CNS effects), quinidine, ritonavir',
-                monitoring: 'Stool frequency, abdominal pain, signs of toxic megacolon',
-                pregnancy: 'Safe - limited systemic absorption, no increased malformation risk',
-                sideEffects: 'Constipation, abdominal cramps, drowsiness, dry mouth, nausea',
-                pharmacokinetics: 'Poor oral absorption, minimal CNS penetration, Half-life: 10-14h',
-                clinicalPearls: 'Available OTC (max 2 days). Does not cross blood-brain barrier at therapeutic doses',
-                indication: 'Acute diarrhoea, chronic diarrhoea, IBS with diarrhoea'
-            },
-            'topiramate': {
+
+'topiramate': {
                 name: 'Topiramate',
                 class: 'Antiepileptic drugs',
                 mechanism: 'Multiple mechanisms: blocks sodium channels, enhances GABA, blocks glutamate receptors',
@@ -1872,7 +1912,8 @@ const drugDatabase = {
                 clinicalPearls: 'Weight loss common (beneficial in some). Cognitive effects dose-related. Slow titration essential',
                 indication: 'Epilepsy, migraine prophylaxis, bipolar disorder (unlicensed)'
             },
-            'candesartan': {
+
+'candesartan': {
                 name: 'Candesartan',
                 class: 'Angiotensin receptor blockers',
                 mechanism: 'Selective antagonist of angiotensin II at AT1 receptors',
@@ -1886,7 +1927,8 @@ const drugDatabase = {
                 clinicalPearls: 'Alternative to ACE inhibitor if cough. Often better tolerated than other ARBs',
                 indication: 'Hypertension, heart failure, diabetic nephropathy, post-MI'
             },
-            'formoterol': {
+
+'formoterol': {
                 name: 'Formoterol',
                 class: 'Beta2-agonists',
                 mechanism: 'Selective β2-adrenoreceptor agonist with rapid onset and long duration',
@@ -1900,7 +1942,8 @@ const drugDatabase = {
                 clinicalPearls: 'Rapid onset unlike salmeterol. Always combined with ICS. Available in combination inhalers',
                 indication: 'Asthma (step 3+ with ICS), COPD (combination inhalers)'
             },
-            'budesonide': {
+
+'budesonide': {
                 name: 'Budesonide',
                 class: 'Corticosteroids, inhaled',
                 mechanism: 'Synthetic glucocorticoid with potent anti-inflammatory effects in airways',
@@ -1914,7 +1957,8 @@ const drugDatabase = {
                 clinicalPearls: 'High potency ICS. Good safety profile. Rinse mouth after use',
                 indication: 'Asthma prophylaxis, COPD (in combination inhalers), Crohn\'s disease (oral)'
             },
-            'norethisterone': {
+
+'norethisterone': {
                 name: 'Norethisterone',
                 class: 'Oestrogens and progestogens',
                 mechanism: 'Synthetic progestogen with weak androgenic and estrogenic activity',
@@ -1928,7 +1972,8 @@ const drugDatabase = {
                 clinicalPearls: 'Multiple indications and doses. Weak androgenic effects. Can delay menstruation',
                 indication: 'Menorrhagia, endometriosis, contraception (POP), HRT, delayed menstruation'
             },
-            'hydroxychloroquine': {
+
+'hydroxychloroquine': {
                 name: 'Hydroxychloroquine',
                 class: 'Disease-modifying antirheumatic drugs',
                 mechanism: 'Antimalarial with immunomodulatory effects, exact mechanism in rheumatic disease unknown',
@@ -1942,7 +1987,8 @@ const drugDatabase = {
                 clinicalPearls: 'Takes 2-3 months for effect. Retinopathy related to cumulative dose. Generally well tolerated',
                 indication: 'Rheumatoid arthritis, SLE, malaria prophylaxis and treatment'
             },
-            'phenoxymethylpenicillin': {
+
+'phenoxymethylpenicillin': {
                 name: 'Phenoxymethylpenicillin (Penicillin V)',
                 class: 'Penicillins, narrow-spectrum',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -1957,7 +2003,8 @@ const drugDatabase = {
                 coverage: 'Gram-positive: Streptococci, pneumococci. Limited gram-negative cover. No staphylococcal cover',
                 indication: 'Streptococcal pharyngitis, pneumococcal infections, rheumatic fever prophylaxis, endocarditis prophylaxis'
             },
-            'dihydrocodeine': {
+
+'dihydrocodeine': {
                 name: 'Dihydrocodeine',
                 class: 'Opioid analgesic',
                 mechanism: 'Mu-opioid receptor agonist, weaker than morphine but stronger than codeine',
@@ -1971,7 +2018,8 @@ const drugDatabase = {
                 clinicalPearls: 'Step 2 analgesic (WHO ladder). Always prescribe laxatives. Less euphoric than morphine',
                 indication: 'Moderate to severe pain, persistent cough (unlicensed)'
             },
-            'flumazenil': {
+
+'flumazenil': {
                 name: 'Flumazenil',
                 class: 'Benzodiazepine antagonist',
                 mechanism: 'Competitive antagonist at benzodiazepine binding site on GABA-A receptor',
@@ -1985,7 +2033,8 @@ const drugDatabase = {
                 clinicalPearls: 'Short half-life - may need repeated doses. Risk of seizures in mixed overdose. Monitor for re-sedation',
                 indication: 'Benzodiazepine overdose reversal, procedural sedation reversal, hepatic encephalopathy (unlicensed)'
             },
-            'atenolol': {
+
+'atenolol': {
                 name: 'Atenolol',
                 class: 'Beta-blockers',
                 mechanism: 'Selective beta-1 adrenergic receptor antagonist',
@@ -1999,7 +2048,8 @@ const drugDatabase = {
                 clinicalPearls: 'Less CNS side effects than lipophilic beta-blockers. Reduce dose in renal impairment. Water-soluble',
                 indication: 'Hypertension, angina, post-MI, arrhythmias, anxiety (short-term)'
             },
-            'carbimazole': {
+
+'carbimazole': {
                 name: 'Carbimazole',
                 class: 'Antithyroid drugs',
                 mechanism: 'Inhibits thyroid peroxidase, blocking iodine organification and thyroid hormone synthesis',
@@ -2013,7 +2063,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor for sore throat/fever (agranulocytosis). Switch to propylthiouracil in pregnancy. Block-and-replace regimen option',
                 indication: 'Hyperthyroidism (Graves disease, toxic multinodular goitre), pre-operative preparation'
             },
-            'paroxetine': {
+
+'paroxetine': {
                 name: 'Paroxetine',
                 class: 'Selective serotonin reuptake inhibitors',
                 mechanism: 'Selective inhibition of serotonin reuptake, minimal effect on noradrenaline and dopamine',
@@ -2027,7 +2078,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most sedating SSRI. Worst withdrawal syndrome - taper slowly. Strong CYP2D6 inhibitor',
                 indication: 'Depression, panic disorder, OCD, social anxiety disorder, PTSD'
             },
-            'risperidone': {
+
+'risperidone': {
                 name: 'Risperidone',
                 class: 'Atypical antipsychotics',
                 mechanism: 'Dopamine D2 and serotonin 5-HT2A receptor antagonist',
@@ -2041,7 +2093,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower risk of metabolic effects than olanzapine. Monitor for tardive dyskinesia. Depot formulation available',
                 indication: 'Schizophrenia, bipolar mania, behavioural disturbance in dementia (short-term)'
             },
-            'nifedipine': {
+
+'nifedipine': {
                 name: 'Nifedipine',
                 class: 'Calcium channel blockers',
                 mechanism: 'Blocks L-type calcium channels, causing vasodilation and reduced peripheral resistance',
@@ -2055,7 +2108,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use modified-release preparations only. Sublingual immediate-release can cause stroke. Peripheral oedema dose-related',
                 indication: 'Hypertension, angina, Raynaud phenomenon'
             },
-            'sulfasalazine': {
+
+'sulfasalazine': {
                 name: 'Sulfasalazine',
                 class: 'Disease-modifying antirheumatic drugs',
                 mechanism: 'Cleaved in colon to 5-aminosalicylic acid and sulfapyridine, anti-inflammatory action',
@@ -2069,7 +2123,8 @@ const drugDatabase = {
                 clinicalPearls: 'DMARD with dual action (RA and IBD). Take with food. Supplement folate. Check G6PD deficiency',
                 indication: 'Rheumatoid arthritis, ulcerative colitis, Crohn disease'
             },
-            'bisacodyl': {
+
+'bisacodyl': {
                 name: 'Bisacodyl',
                 class: 'Stimulant laxatives',
                 mechanism: 'Stimulates colonic nerve plexus, increasing peristalsis and secretion',
@@ -2082,9 +2137,9 @@ const drugDatabase = {
                 pharmacokinetics: 'Enteric-coated tablets, activated in alkaline environment of small intestine',
                 clinicalPearls: 'Take tablets whole, avoid milk within 1h. Suppositories work within 30min. Short-term use only',
                 indication: 'Constipation, bowel preparation for procedures'
-            }
-            ,
-            'enalapril': {
+            },
+
+'enalapril': {
                 name: 'Enalapril',
                 class: 'ACE inhibitor',
                 mechanism: 'Inhibits angiotensin-converting enzyme, lowering angiotensin II production',
@@ -2098,7 +2153,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start low and titrate, check renal function after initiation. Substitute with ARB if cough occurs',
                 indication: 'Hypertension, heart failure, post-MI'
             },
-            'levetiracetam': {
+
+'levetiracetam': {
                 name: 'Levetiracetam',
                 class: 'Antiepileptic',
                 mechanism: 'Binds to synaptic vesicle protein SV2A, modulating neurotransmitter release',
@@ -2112,7 +2168,8 @@ const drugDatabase = {
                 clinicalPearls: 'Favourable interaction profile; widely used for acute and chronic seizure control',
                 indication: 'Focal and generalized seizures, status epilepticus adjunct'
             },
-            'nitroglycerin': {
+
+'nitroglycerin': {
                 name: 'Nitroglycerin (GTN)',
                 class: 'Nitrate vasodilator',
                 mechanism: 'Releases nitric oxide causing venodilation and coronary artery dilation',
@@ -2126,7 +2183,8 @@ const drugDatabase = {
                 clinicalPearls: 'Sublingual GTN for acute angina; remove patch at night to reduce tolerance. Avoid with PDE5 inhibitors',
                 indication: 'Acute angina, acute pulmonary oedema (IV), myocardial ischaemia'
             },
-            'potassium-chloride': {
+
+'potassium-chloride': {
                 name: 'Potassium Chloride (KCl)',
                 class: 'Electrolyte replacement',
                 mechanism: 'Provides potassium ions to correct hypokalaemia',
@@ -2140,22 +2198,8 @@ const drugDatabase = {
                 clinicalPearls: 'Never give concentrated IV KCl as bolus. Dilute and infuse slowly with cardiac monitoring for significant deficits',
                 indication: 'Hypokalaemia replacement and prevention'
             },
-            'clindamycin': {
-                name: 'Clindamycin',
-                class: 'Lincosamide antibiotic',
-                mechanism: 'Inhibits 50S ribosomal subunit, preventing bacterial protein synthesis',
-                dosing: 'Adults: 300-450mg TDS PO or 600-900mg IV in divided doses depending on infection severity',
-                contraindications: 'History of C. difficile colitis associated with prior clindamycin use',
-                interactions: 'Neuromuscular blockers (may potentiate blockade), erythromycin (antagonism)',
-                monitoring: 'GI symptoms, signs of C. difficile infection, LFTs for prolonged therapy',
-                pregnancy: 'Generally considered safe in pregnancy when needed',
-                sideEffects: 'Diarrhoea, risk of C. difficile, rash, metallic taste',
-                pharmacokinetics: 'Good tissue penetration including bone; hepatic metabolism',
-                clinicalPearls: 'Good for skin/soft tissue infections and anaerobic coverage when beta-lactams cannot be used',
-                indication: 'Skin/soft tissue infections, anaerobic infections, aspiration pneumonia (in combination)'
-            }
-            ,
-            'cefuroxime': {
+
+'cefuroxime': {
                 name: 'Cefuroxime',
                 class: 'Second-generation cephalosporin',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -2169,7 +2213,8 @@ const drugDatabase = {
                 clinicalPearls: 'Good for respiratory tract infections and some soft tissue infections; check local susceptibility',
                 indication: 'Respiratory tract infections, pyelonephritis (IV), skin/soft tissue infections'
             },
-            'dalteparin': {
+
+'dalteparin': {
                 name: 'Dalteparin',
                 class: 'Low molecular weight heparin (LMWH)',
                 mechanism: 'Enhances antithrombin-mediated inhibition of factor Xa',
@@ -2183,7 +2228,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use dose adjustment for renal impairment and obesity. Monitor anti-Xa in special populations',
                 indication: 'VTE prophylaxis and treatment, bridging for high-risk patients'
             },
-            'celecoxib': {
+
+'celecoxib': {
                 name: 'Celecoxib',
                 class: 'COX-2 selective NSAID',
                 mechanism: 'Selective inhibition of cyclooxygenase-2 enzyme, reducing prostaglandin synthesis',
@@ -2197,7 +2243,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower GI risk than non-selective NSAIDs but may increase CV risk. Use lowest effective dose for the shortest duration',
                 indication: 'Osteoarthritis, acute pain where NSAID indicated and GI risk a concern'
             },
-            'ketorolac': {
+
+'ketorolac': {
                 name: 'Ketorolac',
                 class: 'Non-selective NSAID',
                 mechanism: 'Inhibits COX-1 and COX-2, reducing prostaglandin synthesis',
@@ -2211,7 +2258,8 @@ const drugDatabase = {
                 clinicalPearls: 'Powerful analgesic for short-term use (≤5 days). Avoid with other NSAIDs and in renal impairment',
                 indication: 'Moderate to severe acute pain (short-term postoperative pain)'
             },
-            'moxifloxacin': {
+
+'moxifloxacin': {
                 name: 'Moxifloxacin',
                 class: 'Fluoroquinolone antibiotic',
                 mechanism: 'Inhibits bacterial DNA gyrase and topoisomerase IV',
@@ -2225,7 +2273,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserve for specific indications due to safety concerns and rising resistance',
                 indication: 'Certain respiratory and intra-abdominal infections where indicated'
             },
-            'oxytocin': {
+
+'oxytocin': {
                 name: 'Oxytocin',
                 class: 'Uterotonic',
                 mechanism: 'Stimulates uterine smooth muscle contraction via oxytocin receptors',
@@ -2239,7 +2288,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use with careful monitoring in labour wards and for PPH management',
                 indication: 'Labour induction/augmentation, postpartum haemorrhage'
             },
-            'clotrimazole': {
+
+'clotrimazole': {
                 name: 'Clotrimazole',
                 class: 'Azole antifungal (topical)',
                 mechanism: 'Inhibits ergosterol synthesis by blocking fungal CYP450 enzymes',
@@ -2252,9 +2302,9 @@ const drugDatabase = {
                 pharmacokinetics: 'Poor systemic absorption when used topically',
                 clinicalPearls: 'Useful topical antifungal; choose formulation based on site of infection',
                 indication: 'Vaginal thrush, cutaneous fungal infections'
-            }
-            ,
-            'linezolid': {
+            },
+
+'linezolid': {
                 name: 'Linezolid',
                 class: 'Oxazolidinone antibiotic',
                 mechanism: 'Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit and preventing formation of the initiation complex',
@@ -2268,7 +2318,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserve for resistant Gram-positive infections including MRSA and VRE where appropriate. Limit duration where possible and monitor blood counts',
                 indication: 'Serious Gram-positive infections including MRSA, VRE, complicated skin and soft tissue infections, some pneumonia'
             },
-            'colistin': {
+
+'colistin': {
                 name: 'Colistin (polymyxin E)',
                 class: 'Polymyxin antibiotic',
                 mechanism: 'Cationic detergent that disrupts bacterial cell membrane integrity (Gram-negative bacteria)',
@@ -2282,7 +2333,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often used as a last-resort agent for multidrug-resistant Gram-negative infections; dosing regimens vary—consult infectious diseases/pharmacy',
                 indication: 'Severe infections due to MDR Pseudomonas, Acinetobacter, Klebsiella species when other options exhausted'
             },
-            'amikacin': {
+
+'amikacin': {
                 name: 'Amikacin',
                 class: 'Aminoglycoside antibiotic',
                 mechanism: 'Binds 30S ribosomal subunit inhibiting protein synthesis and causing bacterial cell death (concentration-dependent)',
@@ -2296,7 +2348,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use TDM and once-daily dosing where possible. Adjust dose interval in renal impairment',
                 indication: 'Serious Gram-negative infections, synergy for some Gram-positive infections in combination therapy'
             },
-            'ertapenem': {
+
+'ertapenem': {
                 name: 'Ertapenem',
                 class: 'Carbapenem antibiotic',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins',
@@ -2310,7 +2363,8 @@ const drugDatabase = {
                 clinicalPearls: 'Does NOT reliably cover Pseudomonas or Acinetobacter (unlike meropenem). Useful for community severe infections and intra-abdominal sepsis in some protocols',
                 indication: 'Intra-abdominal infections, complicated skin/soft tissue infections, community-acquired severe infections, some UTIs'
             },
-            'cefepime': {
+
+'cefepime': {
                 name: 'Cefepime',
                 class: 'Fourth-generation cephalosporin',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to PBPs; increased Gram-negative and Pseudomonas coverage',
@@ -2324,7 +2378,8 @@ const drugDatabase = {
                 clinicalPearls: 'Strong anti-pseudomonal activity; dose adjust in renal impairment; watch for neurotoxicity in elderly/renal failure',
                 indication: 'Serious Gram-negative infections including Pseudomonas, hospital-acquired pneumonia, febrile neutropenia'
             },
-            'tigecycline': {
+
+'tigecycline': {
                 name: 'Tigecycline',
                 class: 'Glycylcycline antibiotic',
                 mechanism: 'Binds 30S ribosomal subunit inhibiting protein synthesis',
@@ -2338,7 +2393,8 @@ const drugDatabase = {
                 clinicalPearls: 'Not ideal for bloodstream infections due to low serum levels. Use for complicated intra-abdominal and skin infections where organisms resistant to other agents',
                 indication: 'Complicated intra-abdominal infections, complicated skin/soft tissue infections, some MDR organisms when options limited'
             },
-            'daptomycin': {
+
+'daptomycin': {
                 name: 'Daptomycin',
                 class: 'Lipopeptide antibiotic',
                 mechanism: 'Causes rapid depolarization of bacterial cell membrane leading to cell death (concentration-dependent)',
@@ -2352,7 +2408,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent for Gram-positive bacteraemia and endocarditis including MRSA and VRE; monitor CK and avoid concurrent statin use if possible',
                 indication: 'Serious Gram-positive infections including MRSA bacteraemia, right-sided endocarditis, complicated skin/soft tissue infections'
             },
-            'teicoplanin': {
+
+'teicoplanin': {
                 name: 'Teicoplanin',
                 class: 'Glycopeptide antibiotic',
                 mechanism: 'Inhibits bacterial cell wall synthesis by binding to D-ala-D-ala termini',
@@ -2366,7 +2423,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used similarly to vancomycin in some settings; local dosing/monitoring protocols vary',
                 indication: 'Gram-positive infections including MRSA and serious staphylococcal infections'
             },
-            'ticagrelor': {
+
+'ticagrelor': {
                 name: 'Ticagrelor',
                 class: 'Antiplatelet - P2Y12 receptor antagonist (reversible)',
                 mechanism: 'Direct-acting reversible P2Y12 ADP receptor antagonist, prevents platelet aggregation',
@@ -2380,8 +2438,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used in acute coronary syndromes and after PCI; do not give with ticlopidine/clopidogrel concurrently',
                 indication: 'Acute coronary syndrome (with or without PCI) and secondary prevention when indicated'
             },
-            /* --- High-yield omitted drugs (added) --- */
-            'fentanyl': {
+
+'fentanyl': {
                 name: 'Fentanyl',
                 class: 'Opioid analgesic (synthetic)',
                 mechanism: 'Potent μ-opioid receptor agonist',
@@ -2394,7 +2452,8 @@ const drugDatabase = {
                 clinicalPearls: 'Short-acting and potent — useful for ED analgesia and procedural analgesia. Titrate slowly and monitor closely',
                 indication: 'Severe acute pain, procedural sedation/analgesia, peri-intubation analgesia'
             },
-            'buprenorphine': {
+
+'buprenorphine': {
                 name: 'Buprenorphine',
                 class: 'Partial opioid agonist',
                 mechanism: 'Partial μ-opioid receptor agonist, κ-antagonist',
@@ -2407,7 +2466,8 @@ const drugDatabase = {
                 clinicalPearls: 'Partial agonist: risk of precipitated withdrawal in opioid-tolerant patients. Used for opioid substitution and some pain formulations',
                 indication: 'Opioid dependence (OST), chronic pain management under specialist guidance'
             },
-            'methadone': {
+
+'methadone': {
                 name: 'Methadone',
                 class: 'Long-acting opioid agonist',
                 mechanism: 'Full μ-opioid agonist; NMDA receptor antagonist properties',
@@ -2420,7 +2480,8 @@ const drugDatabase = {
                 clinicalPearls: 'Long half-life and accumulation risk; specialist prescribing and community OST pathways apply',
                 indication: 'Opioid substitution therapy, severe chronic pain under specialist supervision'
             },
-            'thiamine': {
+
+'thiamine': {
                 name: 'Thiamine (B1) / Pabrinex',
                 class: 'Vitamin / metabolic therapy',
                 mechanism: 'Cofactor in carbohydrate metabolism (pyruvate dehydrogenase, transketolase)',
@@ -2433,7 +2494,8 @@ const drugDatabase = {
                 clinicalPearls: 'Give thiamine prior to/during glucose administration in malnourished or alcohol-dependent patients to avoid precipitating Wernicke',
                 indication: 'Prevention/treatment of Wernicke encephalopathy; thiamine deficiency'
             },
-            'prasugrel': {
+
+'prasugrel': {
                 name: 'Prasugrel',
                 class: 'Antiplatelet - irreversible P2Y12 inhibitor',
                 mechanism: 'Irreversible P2Y12 receptor antagonist',
@@ -2446,7 +2508,8 @@ const drugDatabase = {
                 clinicalPearls: 'Preferentially used in PCI populations; avoid in prior stroke/TIA',
                 indication: 'ACS patients undergoing PCI (per cardiology guidance)'
             },
-            'edoxaban': {
+
+'edoxaban': {
                 name: 'Edoxaban',
                 class: 'Direct oral anticoagulant (DOAC) – factor Xa inhibitor',
                 mechanism: 'Selective inhibition of factor Xa, reducing thrombin generation',
@@ -2460,7 +2523,8 @@ const drugDatabase = {
                 clinicalPearls: 'Assess renal function and body weight before initiating. Missed doses should be taken as soon as remembered on the same day but do not double doses. Use caution with concomitant antiplatelet therapy.',
                 indication: 'Stroke prevention in non-valvular AF, treatment and secondary prevention of VTE'
             },
-            'dabigatran': {
+
+'dabigatran': {
                 name: 'Dabigatran etexilate (dabigatran)',
                 class: 'Direct oral anticoagulant (direct thrombin inhibitor)',
                 mechanism: 'Prodrug converted to dabigatran which directly and reversibly inhibits thrombin (factor IIa), preventing fibrin formation',
@@ -2474,7 +2538,8 @@ const drugDatabase = {
                 clinicalPearls: 'Capsules must be swallowed whole (acidic core). For life‑threatening bleeding or urgent reversal: idarucizumab 5 g IV (two 2.5 g boluses) as per SmPC and local major haemorrhage protocols. Stop 24–48 h pre-procedure depending on renal function and bleeding risk; involve haematology/local major haemorrhage team for complex cases.',
                 indication: 'Stroke prevention in non-valvular AF; treatment and secondary prevention of VTE'
             },
-            'fondaparinux': {
+
+'fondaparinux': {
                 name: 'Fondaparinux',
                 class: 'Synthetic pentasaccharide (indirect anti‑Xa)',
                 mechanism: 'Antithrombin-mediated selective factor Xa inhibition',
@@ -2487,7 +2552,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once-daily subcutaneous injection; check weight-based dose and renal function',
                 indication: 'VTE prophylaxis/treatment, used in certain ACS pathways per protocol'
             },
-            'valsartan': {
+
+'valsartan': {
                 name: 'Valsartan',
                 class: 'Angiotensin receptor blocker (ARB)',
                 mechanism: 'Selective AT1 receptor antagonist',
@@ -2500,7 +2566,8 @@ const drugDatabase = {
                 clinicalPearls: 'Alternative to ACE inhibitors when cough/intolerance occurs',
                 indication: 'Hypertension, heart failure (where indicated)'
             },
-            'irbesartan': {
+
+'irbesartan': {
                 name: 'Irbesartan',
                 class: 'Angiotensin receptor blocker (ARB)',
                 mechanism: 'Selective AT1 receptor antagonist',
@@ -2513,7 +2580,8 @@ const drugDatabase = {
                 clinicalPearls: 'Common ARB for hypertension and nephropathy',
                 indication: 'Hypertension, proteinuric CKD'
             },
-            'perindopril': {
+
+'perindopril': {
                 name: 'Perindopril',
                 class: 'ACE inhibitor',
                 mechanism: 'ACE inhibition reducing angiotensin II and aldosterone',
@@ -2526,7 +2594,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used widely in UK cardiology/HTN pathways',
                 indication: 'Hypertension, heart failure, post-MI'
             },
-            'eplerenone': {
+
+'eplerenone': {
                 name: 'Eplerenone',
                 class: 'Mineralocorticoid receptor antagonist (MRA)',
                 mechanism: 'Selective aldosterone receptor antagonist',
@@ -2539,7 +2608,8 @@ const drugDatabase = {
                 clinicalPearls: 'Less anti-androgenic effects than spironolactone; used in heart failure with reduced ejection fraction',
                 indication: 'Heart failure (HFrEF) as per guideline; alternative MRA'
             },
-            'isosorbide-mononitrate': {
+
+'isosorbide-mononitrate': {
                 name: 'Isosorbide mononitrate',
                 class: 'Nitrate (long-acting)',
                 mechanism: 'NO donor causing venodilation and reduced preload',
@@ -2552,7 +2622,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use nitrate-free interval to avoid tolerance',
                 indication: 'Chronic stable angina, heart failure symptom control in some patients'
             },
-            'isosorbide-dinitrate': {
+
+'isosorbide-dinitrate': {
                 name: 'Isosorbide dinitrate',
                 class: 'Nitrate (shorter-acting)',
                 mechanism: 'NO donor — venodilation and preload reduction',
@@ -2565,60 +2636,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used less commonly than ISMN for chronic management',
                 indication: 'Angina, acute heart failure symptom relief in some settings'
             },
-            /* --- Additional high-yield drugs (respiratory, diabetes, antimicrobials, obstetrics, vitamin K) --- */
-            'salbutamol': {
-                name: 'Salbutamol (albuterol)',
-                class: 'Short-acting β2-agonist (SABA)',
-                mechanism: 'β2-adrenoceptor agonist causing bronchodilation',
-                dosing: 'Inhaler 100mcg per puff (usual 1-2 puffs as needed); nebuliser 2.5–5mg for severe bronchospasm',
-                contraindications: 'Tachyarrhythmia (relative)',
-                interactions: 'β-blockers may antagonise effect; hypokalaemia risk with diuretics',
-                monitoring: 'Respiratory status, HR, potassium in high-dose therapy',
-                pregnancy: 'Considered safe for use in pregnancy when indicated',
-                sideEffects: 'Tachycardia, tremor, hypokalaemia',
-                clinicalPearls: 'First-line reliever inhaler for asthma and COPD exacerbations',
-                indication: 'Relief of bronchospasm in asthma/COPD'
-            },
-            'ipratropium': {
-                name: 'Ipratropium',
-                class: 'Short-acting muscarinic antagonist (SAMA)',
-                mechanism: 'Antagonises M3 receptors causing bronchodilation',
-                dosing: 'Inhaler/nebuliser formulations — commonly added to salbutamol in severe exacerbations',
-                contraindications: 'Hypersensitivity to atropine derivatives',
-                interactions: 'Additive anticholinergic effects with other antimuscarinics',
-                monitoring: 'Symptom response',
-                pregnancy: 'Use if clinically needed',
-                sideEffects: 'Dry mouth, blurred vision (if sprayed into eyes)',
-                clinicalPearls: 'Useful adjunct in severe COPD/asthma exacerbations',
-                indication: 'Bronchodilation in exacerbations, particularly COPD'
-            },
-            'salmeterol': {
-                name: 'Salmeterol',
-                class: 'Long-acting β2-agonist (LABA)',
-                mechanism: 'Long-acting β2 agonist for maintenance bronchodilation',
-                dosing: 'Inhaled via DPI/Breath-actuated; usually 50mcg BD (product-specific)',
-                contraindications: 'Use without inhaled corticosteroid in asthma (increases risk of severe exacerbations)',
-                interactions: 'β-blockers, CYP3A4 inhibitors may increase levels',
-                monitoring: 'Asthma control and exacerbation frequency',
-                pregnancy: 'Use with inhaled steroid as indicated',
-                sideEffects: 'Tremor, palpitations',
-                clinicalPearls: 'Always ensure concomitant inhaled corticosteroid for asthma',
-                indication: 'Maintenance therapy for asthma/COPD'
-            },
-            'formoterol': {
-                name: 'Formoterol',
-                class: 'Long-acting β2-agonist (LABA)',
-                mechanism: 'Rapid-onset LABA used for maintenance and sometimes as part of SMART regimens with budesonide',
-                dosing: 'Typical dosing via inhaler; follow product labelling',
-                contraindications: 'As for other LABAs — not monotherapy in asthma',
-                interactions: 'β-blockers, CYP3A4 inhibitors',
-                monitoring: 'Asthma control',
-                pregnancy: 'Use with ICS when indicated',
-                sideEffects: 'Tremor, palpitations',
-                clinicalPearls: 'Used in combination inhalers and as reliever in some SMART strategies',
-                indication: 'Maintenance therapy in asthma and COPD'
-            },
-            'budesonide-inhaled': {
+
+'budesonide-inhaled': {
                 name: 'Budesonide (inhaled)',
                 class: 'Inhaled corticosteroid (ICS)',
                 mechanism: 'Anti-inflammatory glucocorticoid receptor agonist',
@@ -2631,7 +2650,8 @@ const drugDatabase = {
                 clinicalPearls: 'Mainstay of maintenance asthma therapy',
                 indication: 'Maintenance anti-inflammatory therapy for asthma'
             },
-            'fluticasone-inhaled': {
+
+'fluticasone-inhaled': {
                 name: 'Fluticasone (inhaled)',
                 class: 'Inhaled corticosteroid (ICS)',
                 mechanism: 'Anti-inflammatory corticosteroid',
@@ -2644,46 +2664,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often used in combination inhalers with LABA',
                 indication: 'Maintenance asthma/COPD (as appropriate)'
             },
-            'tiotropium': {
-                name: 'Tiotropium',
-                class: 'Long-acting muscarinic antagonist (LAMA)',
-                mechanism: 'M3 receptor antagonist producing long-acting bronchodilation',
-                dosing: 'Once-daily inhaler (18mcg via HandiHaler or 5mcg Respimat per product)',
-                contraindications: 'Hypersensitivity to atropine derivatives',
-                interactions: 'Additive anticholinergic effects',
-                monitoring: 'Symptom response, anticholinergic side-effects',
-                pregnancy: 'Use if necessary',
-                sideEffects: 'Dry mouth, urinary retention, constipation',
-                clinicalPearls: 'Mainstay maintenance bronchodilator in COPD and add-on in asthma',
-                indication: 'COPD maintenance; some asthma indications as add-on'
-            },
-            'montelukast': {
-                name: 'Montelukast',
-                class: 'Leukotriene receptor antagonist',
-                mechanism: 'Blocks CysLT1 receptors reducing leukotriene-mediated bronchoconstriction',
-                dosing: '10mg daily (adults); paediatric dosing variable',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Minimal',
-                monitoring: 'Mood/behaviour changes (rare neuropsychiatric effects)',
-                pregnancy: 'Use if clinically indicated',
-                sideEffects: 'Rare neuropsychiatric effects, headache',
-                clinicalPearls: 'Useful in aspirin-exacerbated respiratory disease and as adjunct in allergic asthma',
-                indication: 'Adjunct asthma therapy, allergic rhinitis in some cases'
-            },
-            'empagliflozin': {
-                name: 'Empagliflozin',
-                class: 'SGLT2 inhibitor',
-                mechanism: 'Inhibits SGLT2 in proximal renal tubule to promote glucosuria',
-                dosing: '10-25mg once daily (depending on indication)',
-                contraindications: 'Type 1 diabetes, active bladder cancer (caution), severe renal impairment',
-                interactions: 'Diuretics (volume depletion), insulin/secretagogues (hypoglycaemia risk)',
-                monitoring: 'Renal function, ketones if unwell, BP, genital infections',
-                pregnancy: 'Avoid',
-                sideEffects: 'Genital mycotic infections, volume depletion, rare euglycaemic DKA',
-                clinicalPearls: 'Shown to reduce HF hospitalisations and renal outcomes in specific populations',
-                indication: 'Type 2 diabetes; cardio-renal protective indications per guidance'
-            },
-            'dapagliflozin': {
+
+'dapagliflozin': {
                 name: 'Dapagliflozin',
                 class: 'SGLT2 inhibitor',
                 mechanism: 'Promotes glucosuria by inhibiting renal SGLT2',
@@ -2696,7 +2678,8 @@ const drugDatabase = {
                 clinicalPearls: 'Cardiorenal benefit in selected patients',
                 indication: 'Type 2 diabetes; heart failure/CKD indications per guidance'
             },
-            'liraglutide': {
+
+'liraglutide': {
                 name: 'Liraglutide',
                 class: 'GLP-1 receptor agonist',
                 mechanism: 'GLP-1 analogue increasing insulin secretion and reducing appetite',
@@ -2709,7 +2692,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for weight loss and glycaemic control; specialist initiation often',
                 indication: 'Type 2 diabetes; weight management in some licensed indications'
             },
-            'semaglutide': {
+
+'semaglutide': {
                 name: 'Semaglutide',
                 class: 'GLP-1 receptor agonist',
                 mechanism: 'GLP-1 analogue with potent glycaemic and weight loss effects',
@@ -2722,20 +2706,8 @@ const drugDatabase = {
                 clinicalPearls: 'Increasingly used for weight and glucose control; cost and access vary',
                 indication: 'Type 2 diabetes; weight management in select settings'
             },
-            'sitagliptin': {
-                name: 'Sitagliptin',
-                class: 'DPP-4 inhibitor',
-                mechanism: 'Inhibits DPP-4 to increase endogenous incretins',
-                dosing: '100mg once daily (adjust for renal impairment)',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Minimal',
-                monitoring: 'Renal function, glycaemic control',
-                pregnancy: 'Avoid',
-                sideEffects: 'Rare pancreatitis, joint pain',
-                clinicalPearls: 'Generally weight neutral and well tolerated',
-                indication: 'Type 2 diabetes adjunct therapy'
-            },
-            'insulin-aspart': {
+
+'insulin-aspart': {
                 name: 'Insulin aspart',
                 class: 'Rapid-acting insulin analogue',
                 mechanism: 'Rapid-onset insulin for prandial glucose control',
@@ -2748,7 +2720,8 @@ const drugDatabase = {
                 clinicalPearls: 'Short-acting prandial insulin used in multiple regimens',
                 indication: 'Prandial insulin therapy in type 1 and type 2 diabetes as required'
             },
-            'insulin-glargine': {
+
+'insulin-glargine': {
                 name: 'Insulin glargine (long-acting analogue)',
                 class: 'Basal insulin analogue',
                 mechanism: 'Long-acting basal insulin providing relatively flat 24-hour coverage',
@@ -2761,7 +2734,8 @@ const drugDatabase = {
                 clinicalPearls: 'Common basal insulin; counsel patients on hypoglycaemia recognition and dose adjustment during intercurrent illness',
                 indication: 'Basal insulin therapy in type 1 and type 2 diabetes'
             },
-            'gentamicin': {
+
+'gentamicin': {
                 name: 'Gentamicin',
                 class: 'Aminoglycoside antibiotic',
                 mechanism: 'Binds 30S ribosomal subunit causing misreading and inhibition of protein synthesis',
@@ -2777,7 +2751,8 @@ const drugDatabase = {
                 antimicrobialStewardship: 'Limit course to ≤7 days where possible. Review for IV-to-oral step-down once cultures identify a susceptible agent.',
                 indication: 'Severe Gram-negative infections, synergistic therapy in endocarditis'
             },
-            'vancomycin': {
+
+'vancomycin': {
                 name: 'Vancomycin',
                 class: 'Glycopeptide antibiotic',
                 mechanism: 'Inhibits cell wall synthesis by binding D-Ala-D-Ala termini of peptidoglycan precursors',
@@ -2793,8 +2768,8 @@ const drugDatabase = {
                 antimicrobialStewardship: 'Review MRSA screen and cultures at 48 h. Step down to oral linezolid/doxycycline if appropriate once stable and organism susceptible.',
                 indication: 'Serious Gram-positive infections including MRSA, endocarditis, bone and joint infections; oral vancomycin for C. difficile colitis'
             },
-            /* duplicate piperacillin-tazobactam removed (consolidated earlier) */
-            'co-amoxiclav': {
+
+'co-amoxiclav': {
                 name: 'Co-amoxiclav (amoxicillin + clavulanic acid)',
                 class: 'Aminopenicillin + β-lactamase inhibitor',
                 mechanism: 'Inhibits cell wall synthesis with β-lactamase protection',
@@ -2812,7 +2787,8 @@ const drugDatabase = {
                 ivToOralSwitch: 'Switch to oral once afebrile for 24 h, tolerating diet, and inflammatory markers improving.',
                 indication: 'Respiratory, ENT, skin/soft tissue, intra-abdominal infections as indicated'
             },
-            'ceftriaxone': {
+
+'ceftriaxone': {
                 name: 'Ceftriaxone',
                 class: 'Third-generation cephalosporin',
                 mechanism: 'Inhibits bacterial cell wall synthesis',
@@ -2829,7 +2805,8 @@ const drugDatabase = {
                 treatmentDuration: 'Meningitis 10–14 days; severe CAP 5–7 days; gonorrhoea single 1 g IM.',
                 indication: 'Severe community infections, meningitis, gonorrhoea (depending on guidance)'
             },
-            'ciprofloxacin': {
+
+'ciprofloxacin': {
                 name: 'Ciprofloxacin',
                 class: 'Fluoroquinolone antibiotic',
                 mechanism: 'Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication',
@@ -2843,20 +2820,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserve for resistant infections; avoid in patients with history of tendon disorders or aortic aneurysm. Discontinue immediately if tendon pain, neuropathy, or mental disturbance.',
                 indication: 'Complicated UTI, severe GI/respiratory infections, Pseudomonal infections (per microbiology advice)'
             },
-            'oxytocin': {
-                name: 'Oxytocin',
-                class: 'Uterotonic (peptide hormone)',
-                mechanism: 'Stimulates uterine smooth muscle contraction',
-                dosing: 'IV infusion or IM bolus as per obstetric protocols for labour augmentation or postpartum haemorrhage',
-                contraindications: 'Active genital herpes, previous classical caesarean section (relative for induction)',
-                interactions: 'Other uterotonics (additive effect)',
-                monitoring: 'Maternal vitals, uterine tone, fetal monitoring in labour',
-                pregnancy: 'Used in labour and postpartum as indicated',
-                sideEffects: 'Tachysystole, hypotension with rapid IV bolus, water retention',
-                clinicalPearls: 'Primary uterotonic for prevention and treatment of postpartum haemorrhage',
-                indication: 'Induction/augmentation of labour; prevention/treatment of postpartum haemorrhage'
-            },
-            'ergometrine': {
+
+'ergometrine': {
                 name: 'Ergometrine (ergonovine)',
                 class: 'Ergot alkaloid uterotonic',
                 mechanism: 'Stimulates uterine smooth muscle causing sustained contraction',
@@ -2869,7 +2834,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use with caution in cardiac disease; often second-line or adjunct to oxytocin',
                 indication: 'Management of postpartum haemorrhage'
             },
-            'mifepristone': {
+
+'mifepristone': {
                 name: 'Mifepristone',
                 class: 'Anti-progestogen (progesterone receptor modulator)',
                 mechanism: 'Competitively blocks progesterone receptors causing decidual breakdown and increased uterine sensitivity to prostaglandins',
@@ -2883,7 +2849,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always pair with misoprostol for medical abortion and most miscarriage regimens; advise patients to carry emergency contact info and access to clinical support',
                 indication: 'Medical abortion up to 24 weeks (with prostaglandin), management of miscarriage, cervical priming before surgical uterine evacuation'
             },
-            'misoprostol': {
+
+'misoprostol': {
                 name: 'Misoprostol',
                 class: 'Prostaglandin E1 analogue (uterotonic)',
                 mechanism: 'Causes uterine contractions and cervical ripening',
@@ -2896,7 +2863,8 @@ const drugDatabase = {
                 clinicalPearls: 'Widely used in global obstetric protocols; dosing and route vary by setting',
                 indication: 'Prevention/treatment of PPH, induction of labour in select contexts'
             },
-            'anti-d-immunoglobulin': {
+
+'anti-d-immunoglobulin': {
                 name: 'Anti-D Immunoglobulin (RhD prophylaxis)',
                 class: 'Human immunoglobulin preparation',
                 mechanism: 'Binds fetal RhD-positive erythrocytes in maternal circulation to prevent maternal sensitisation',
@@ -2909,7 +2877,8 @@ const drugDatabase = {
                 clinicalPearls: 'Administer as soon as possible and within 72 hours of event; document batch number and consent',
                 indication: 'Prevention of RhD alloimmunisation after miscarriage, abortion, ectopic pregnancy, abdominal trauma, or delivery'
             },
-            'vitamin-k': {
+
+'vitamin-k': {
                 name: 'Vitamin K (phytonadione)',
                 class: 'Fat-soluble vitamin / antidote',
                 mechanism: 'Required for γ-carboxylation of clotting factors II, VII, IX and X',
@@ -2922,34 +2891,8 @@ const drugDatabase = {
                 clinicalPearls: 'Essential antidote for warfarin over-anticoagulation; route/dose depend on urgency',
                 indication: 'Reversal of vitamin K antagonist (warfarin) effects, neonatal prophylaxis'
             },
-            /* --- More high-yield drugs (reversal agents, antifungals, PPIs, laxatives, psychotropics, etc.) --- */
-            'naloxone': {
-                name: 'Naloxone',
-                class: 'Opioid antagonist',
-                mechanism: 'Competitive opioid receptor antagonist (μ-opioid receptors)',
-                dosing: 'IV/IM/SC 0.4-2 mg bolus (titrate to effect) or intranasal 400mcg-2mg depending on formulation; may require infusion for long-acting opioids',
-                contraindications: 'None absolute in opioid overdose',
-                interactions: 'Precipitates withdrawal in opioid-dependent patients',
-                monitoring: 'Respiratory rate, consciousness, recurrence of respiratory depression',
-                pregnancy: 'Use when maternal respiratory depression due to opioids occurs',
-                sideEffects: 'Acute withdrawal, agitation, vomiting',
-                clinicalPearls: 'Short-acting—monitor for re-sedation after effect wears off',
-                indication: 'Opioid overdose reversal'
-            },
-            'flumazenil': {
-                name: 'Flumazenil',
-                class: 'Benzodiazepine antagonist',
-                mechanism: 'Competitive antagonist at benzodiazepine binding site on GABA-A receptor',
-                dosing: 'IV bolus 0.2mg, repeat to max 1-3mg per local protocol',
-                contraindications: 'Chronic benzodiazepine dependence, mixed overdose with proconvulsant agents or TCA overdose',
-                interactions: 'May precipitate seizures in chronic benzodiazepine users',
-                monitoring: 'Conscious level, seizure activity',
-                pregnancy: 'Use only if benefits outweigh risks',
-                sideEffects: 'Seizures (rare), agitation',
-                clinicalPearls: 'Use cautiously; only where benzo reversal indicated and risk of seizures low',
-                indication: 'Reversal of benzodiazepine sedation/overdose in selected patients'
-            },
-            'idarucizumab': {
+
+'idarucizumab': {
                 name: 'Idarucizumab',
                 class: 'Dabigatran reversal agent (monoclonal antibody fragment)',
                 mechanism: 'Binds dabigatran and neutralises its anticoagulant effect',
@@ -2962,7 +2905,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserved for emergency reversal of dabigatran in life‑threatening bleeding or urgent procedures. Contact haematology and follow local major haemorrhage protocols. Re-dosing is rarely required; consider dabigatran plasma level testing if available.',
                 indication: 'Rapid reversal of dabigatran anticoagulation'
             },
-            'prothrombin-concentrate': {
+
+'prothrombin-concentrate': {
                 name: 'Prothrombin complex concentrate (PCC)',
                 class: 'Coagulation factor concentrate',
                 mechanism: 'Contains factors II, VII, IX, X (and variable protein C/S) to rapidly reverse vitamin K antagonists',
@@ -2975,7 +2919,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for rapid reversal of warfarin in major bleeding or emergency surgery',
                 indication: 'Rapid warfarin reversal'
             },
-            'n-acetylcysteine': {
+
+'n-acetylcysteine': {
                 name: 'N-acetylcysteine (NAC)',
                 class: 'Antidote / mucolytic',
                 mechanism: 'Replenishes glutathione to detoxify NAPQI in paracetamol overdose',
@@ -2988,21 +2933,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start empirically if uncertain timing for paracetamol overdose and NAC is available',
                 indication: 'Paracetamol overdose'
             },
-            'fluconazole': {
-                // Note: fluconazole was updated earlier; include another antifungal entry for broader coverage
-                name: 'Fluconazole (antifungal)',
-                class: 'Triazole antifungal',
-                mechanism: 'Inhibits fungal ergosterol synthesis via 14α-demethylase inhibition',
-                dosing: 'Oral/IV dosing varies by indication (e.g., single 150mg dose for vaginal candidiasis)',
-                contraindications: 'Known QT prolongation, significant hepatic impairment',
-                interactions: 'Many CYP-mediated interactions (CYP3A4, CYP2C9)',
-                monitoring: 'LFTs for prolonged therapy',
-                pregnancy: 'Avoid high/prolonged doses in pregnancy; single 150mg dose for thrush is unlikely to increase risk',
-                sideEffects: 'Nausea, headache, hepatotoxicity (rare)',
-                clinicalPearls: 'Consider local guidance for systemic vs topical therapy',
-                indication: 'Candidiasis and other systemic fungal infections as indicated'
-            },
-            'amphotericin-b': {
+
+'amphotericin-b': {
                 name: 'Amphotericin B',
                 class: 'Polyenes (antifungal)',
                 mechanism: 'Binds ergosterol and disrupts fungal cell membranes',
@@ -3015,246 +2947,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserved for serious systemic fungal infections',
                 indication: 'Serious systemic fungal infections'
             },
-            'omeprazole': {
-                name: 'Omeprazole',
-                class: 'Proton pump inhibitor (PPI)',
-                mechanism: 'Inhibits H+/K+ ATPase in gastric parietal cells',
-                dosing: '20-40mg once daily depending on indication',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Clopidogrel activation may be reduced (CYP2C19 interaction for some PPIs)',
-                monitoring: 'Symptom response, magnesium with long-term use',
-                pregnancy: 'Use if clinically indicated',
-                sideEffects: 'Headache, GI upset, long-term risk: B12 deficiency, hypomagnesaemia',
-                clinicalPearls: 'Use for stress ulcer prophylaxis in selected critically ill patients',
-                indication: 'GORD, peptic ulcer disease, PPI prophylaxis'
-            },
-            'lansoprazole': {
-                name: 'Lansoprazole',
-                class: 'Proton pump inhibitor (PPI)',
-                mechanism: 'Inhibits gastric H+/K+ ATPase',
-                dosing: '15-30mg once daily',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Potential CYP interactions',
-                monitoring: 'Symptom response',
-                pregnancy: 'Use if necessary',
-                sideEffects: 'GI upset, headache',
-                clinicalPearls: 'Alternative PPI option',
-                indication: 'GORD, ulcer disease'
-            },
-            'senna': {
-                name: 'Senna',
-                class: 'Stimulant laxative',
-                mechanism: 'Increases colonic motility via mucosal irritation and fluid secretion',
-                dosing: '7.5-15mg at night (adults), follow local dosing',
-                contraindications: 'Obstructive bowel disease, acute surgical abdomen',
-                interactions: 'None significant',
-                monitoring: 'Electrolytes with prolonged use',
-                pregnancy: 'Use with caution',
-                sideEffects: 'Abdominal cramp, diarrhoea',
-                clinicalPearls: 'Useful for opioid-induced constipation when combined with laxative regimens',
-                indication: 'Constipation'
-            },
-            'lactulose': {
-                name: 'Lactulose',
-                class: 'Osmotic laxative',
-                mechanism: 'Increases colonic osmotic load and softens stool',
-                dosing: '15-30ml daily titrated to effect',
-                contraindications: 'Galactosaemia (some formulations)',
-                interactions: 'None clinically significant',
-                monitoring: 'Electrolytes if used long-term',
-                pregnancy: 'Considered safe when needed',
-                sideEffects: 'Flatulence, bloating',
-                clinicalPearls: 'Also used to reduce ammonia absorption in hepatic encephalopathy',
-                indication: 'Constipation, hepatic encephalopathy'
-            },
-            'sertraline': {
-                name: 'Sertraline',
-                class: 'Selective serotonin reuptake inhibitor (SSRI)',
-                mechanism: 'Inhibits serotonin reuptake increasing synaptic serotonin',
-                dosing: '50mg daily (start low and titrate)',
-                contraindications: 'Concomitant MAOI use, acute mania',
-                interactions: 'Other serotonergic drugs (risk serotonin syndrome), anticoagulants (↑ bleeding)',
-                monitoring: 'Mood, suicidality (esp. initiation), hyponatraemia in elderly',
-                pregnancy: 'Assess risks/benefits with obstetrics',
-                sideEffects: 'Nausea, sexual dysfunction, insomnia',
-                clinicalPearls: 'Common first-line antidepressant',
-                indication: 'Depression, anxiety disorders, OCD'
-            },
-            'mirtazapine': {
-                name: 'Mirtazapine',
-                class: 'Noradrenergic and specific serotonergic antidepressant (NaSSA)',
-                mechanism: 'Antagonises central α2-adrenergic and certain 5-HT receptors',
-                dosing: '15-45mg at night',
-                contraindications: 'Concurrent MAOI use',
-                interactions: 'Other serotonergic agents',
-                monitoring: 'Mood and weight (appetite increases)',
-                pregnancy: 'Use with specialist advice',
-                sideEffects: 'Sedation, increased appetite, weight gain',
-                clinicalPearls: 'Useful when insomnia and poor appetite are comorbid',
-                indication: 'Depression (second-line/alternative)'
-            },
-            'haloperidol': {
-                name: 'Haloperidol',
-                class: 'Typical antipsychotic',
-                mechanism: 'D2 receptor antagonist',
-                dosing: 'Oral/IM formulations; acute agitation IM dosing varies (e.g., 2.5-10mg)',
-                contraindications: 'Parkinson disease, severe CNS depression',
-                interactions: 'QT-prolonging drugs, other sedatives',
-                monitoring: 'EPS, QT interval if IV/rapid dosing, sedation',
-                pregnancy: 'Use only if necessary',
-                sideEffects: 'Extrapyramidal symptoms, QT prolongation, sedation',
-                clinicalPearls: 'Effective for acute psychosis and agitation; use lowest effective dose',
-                indication: 'Acute psychosis, agitation'
-            },
-            /* --- Batch added: Cardiovascular, Endocrine, Respiratory, ID, GI, Neuro/Psych, Analgesia, Obstetrics, Haem/Onc --- */
-            /* Cardiovascular */
-            'prasugrel': {
-                name: 'Prasugrel',
-                class: 'P2Y12 inhibitor (antiplatelet)',
-                mechanism: 'Irreversible P2Y12 receptor blockade',
-                dosing: 'Loading 60mg then 10mg daily (consider 5mg for elderly/low body weight per local guidance)',
-                contraindications: 'History of stroke/TIA, active bleeding',
-                interactions: 'Other antithrombotics (↑ bleeding)',
-                monitoring: 'Signs of bleeding, FBC',
-                pregnancy: 'Specialist decision',
-                sideEffects: 'Bleeding, bruising',
-                clinicalPearls: 'Avoid in prior stroke/TIA; used in ACS/PCI per cardiology guidance',
-                indication: 'ACS with PCI'
-            },
-            'fondaparinux': {
-                name: 'Fondaparinux',
-                class: 'Indirect factor Xa inhibitor (synthetic pentasaccharide)',
-                mechanism: 'Enhances antithrombin action against factor Xa',
-                dosing: 'Weight-dependent dosing for VTE prophylaxis/treatment; see local guideline',
-                contraindications: 'Severe renal impairment (CrCl <30 mL/min), active bleeding',
-                interactions: 'Other anticoagulants (↑ bleeding risk)',
-                monitoring: 'Renal function, bleeding signs',
-                pregnancy: 'Use with specialist advice',
-                sideEffects: 'Bleeding',
-                clinicalPearls: 'Once-daily subcutaneous injection; check weight-based dosing',
-                indication: 'VTE prophylaxis/treatment'
-            },
-            'edoxaban': {
-                name: 'Edoxaban',
-                class: 'DOAC - factor Xa inhibitor',
-                mechanism: 'Direct inhibition of factor Xa',
-                dosing: 'AF: 60mg once daily (reduce to 30mg with renal impairment, low body weight or P-gp inhibitors)',
-                contraindications: 'Active bleeding, mechanical heart valves',
-                interactions: 'P-gp inhibitors/inducers, other anticoagulants',
-                monitoring: 'Renal function, bleeding',
-                pregnancy: 'Avoid',
-                sideEffects: 'Bleeding, anaemia',
-                clinicalPearls: 'Dose adjustments required per SmPC',
-                indication: 'AF stroke prevention, VTE'
-            },
-            'dabigatran': {
-                name: 'Dabigatran',
-                class: 'DOAC - direct thrombin inhibitor',
-                mechanism: 'Direct inhibition of thrombin (factor IIa)',
-                dosing: 'AF: 150mg BD (110mg BD for selected patients/renal impairment); VTE dosing per guideline',
-                contraindications: 'Active bleeding, mechanical heart valves, severe renal impairment',
-                interactions: 'P-gp modulators',
-                monitoring: 'Renal function; idarucizumab is specific antidote',
-                pregnancy: 'Avoid',
-                sideEffects: 'Bleeding, dyspepsia',
-                clinicalPearls: 'Observe renal dosing and adherence',
-                indication: 'AF, VTE'
-            },
-            'eplerenone': {
-                name: 'Eplerenone',
-                class: 'Mineralocorticoid receptor antagonist (MRA)',
-                mechanism: 'Selective aldosterone receptor antagonist',
-                dosing: '25mg daily, titrate to 50mg as tolerated in heart failure',
-                contraindications: 'Hyperkalaemia, severe renal impairment',
-                interactions: 'ACEi/ARBs, potassium supplements (↑ hyperkalaemia risk), CYP3A4 inhibitors',
-                monitoring: 'U&Es after initiation and dose changes',
-                pregnancy: 'Avoid',
-                sideEffects: 'Hyperkalaemia',
-                clinicalPearls: 'Alternative to spironolactone with fewer endocrine side effects',
-                indication: 'Heart failure with reduced EF'
-            },
-            'valsartan': {
-                name: 'Valsartan',
-                class: 'ARB',
-                mechanism: 'Selective antagonist at AT1 receptor',
-                dosing: '80-160mg daily',
-                contraindications: 'Pregnancy, bilateral renal artery stenosis',
-                interactions: 'NSAIDs, potassium supplements',
-                monitoring: 'eGFR and potassium',
-                pregnancy: 'Contraindicated',
-                sideEffects: 'Dizziness, hyperkalaemia',
-                clinicalPearls: 'Alternative to ACEi for cough intolerance',
-                indication: 'Hypertension, HF'
-            },
-            'irbesartan': {
-                name: 'Irbesartan',
-                class: 'ARB',
-                mechanism: 'AT1 receptor antagonist',
-                dosing: '150-300mg daily',
-                contraindications: 'Pregnancy',
-                interactions: 'NSAIDs, lithium',
-                monitoring: 'eGFR, K+',
-                pregnancy: 'Contraindicated',
-                sideEffects: 'Hyperkalaemia, hypotension',
-                clinicalPearls: 'Used in HTN and diabetic nephropathy',
-                indication: 'Hypertension, CKD'
-            },
-            'perindopril': {
-                name: 'Perindopril',
-                class: 'ACE inhibitor',
-                mechanism: 'Inhibits ACE',
-                dosing: 'Start 2-4mg daily and titrate',
-                contraindications: 'Pregnancy, bilateral renal artery stenosis',
-                interactions: 'NSAIDs, potassium supplements',
-                monitoring: 'Renal function, potassium',
-                pregnancy: 'Contraindicated',
-                sideEffects: 'Cough, hyperkalaemia',
-                clinicalPearls: 'Commonly used ACE inhibitor',
-                indication: 'HTN, HF'
-            },
-            'isosorbide-mononitrate': {
-                name: 'Isosorbide mononitrate',
-                class: 'Nitrate',
-                mechanism: 'NO donor causing venodilation',
-                dosing: '20-60mg daily depending on formulation',
-                contraindications: 'Concurrent PDE5 inhibitors, hypotension',
-                interactions: 'PDE5 inhibitors',
-                monitoring: 'BP',
-                pregnancy: 'Use if essential',
-                sideEffects: 'Headache, hypotension',
-                clinicalPearls: 'Avoid tolerance with nitrate-free interval',
-                indication: 'Angina'
-            },
-            'isosorbide-dinitrate': {
-                name: 'Isosorbide dinitrate',
-                class: 'Nitrate',
-                mechanism: 'NO donor',
-                dosing: 'Variable by formulation',
-                contraindications: 'PDE5 inhibitors',
-                interactions: 'PDE5 inhibitors',
-                monitoring: 'BP',
-                pregnancy: 'Use if essential',
-                sideEffects: 'Headache, hypotension',
-                clinicalPearls: 'Shorter acting than ISMN',
-                indication: 'Angina'
-            },
-            /* End cardiovascular */
 
-            /* Endocrine / Diabetes */
-            'dapagliflozin': {
-                name: 'Dapagliflozin',
-                class: 'SGLT2 inhibitor',
-                mechanism: 'Inhibits SGLT2 causing glucosuria',
-                dosing: '10mg once daily',
-                contraindications: 'Type 1 diabetes, severe renal impairment',
-                interactions: 'Diuretics (volume depletion), insulin (hypoglycaemia risk)',
-                monitoring: 'Renal function, ketones if unwell',
-                pregnancy: 'Avoid',
-                sideEffects: 'Genital mycotic infections, volume depletion, DKA (rare)',
-                clinicalPearls: 'Cardio-renal benefit in selected patients',
-                indication: 'T2DM, HF/CKD indications per guidance'
-            },
-            'canagliflozin': {
+'canagliflozin': {
                 name: 'Canagliflozin',
                 class: 'SGLT2 inhibitor',
                 mechanism: 'Inhibits SGLT2',
@@ -3267,7 +2961,8 @@ const drugDatabase = {
                 clinicalPearls: 'Watch for foot infections/amputation signal in older studies',
                 indication: 'T2DM'
             },
-            'ertugliflozin': {
+
+'ertugliflozin': {
                 name: 'Ertugliflozin',
                 class: 'SGLT2 inhibitor',
                 mechanism: 'Inhibits SGLT2',
@@ -3279,31 +2974,8 @@ const drugDatabase = {
                 clinicalPearls: 'One of the SGLT2 class; follow SmPC for indications',
                 indication: 'T2DM'
             },
-            'semaglutide': {
-                name: 'Semaglutide',
-                class: 'GLP-1 receptor agonist',
-                mechanism: 'GLP-1 analogue',
-                dosing: 'Subcutaneous or oral titration per product',
-                contraindications: 'MTC/MEN2 history',
-                monitoring: 'GI tolerance, glycaemic control',
-                pregnancy: 'Avoid',
-                sideEffects: 'Nausea, pancreatitis (rare)',
-                clinicalPearls: 'Powerful weight and glycaemic effects; specialist initiation often',
-                indication: 'T2DM, weight management in specific settings'
-            },
-            'liraglutide': {
-                name: 'Liraglutide',
-                class: 'GLP-1 receptor agonist',
-                mechanism: 'GLP-1 analogue',
-                dosing: 'Titrated SC per product',
-                contraindications: 'MTC/MEN2',
-                monitoring: 'GI tolerance',
-                pregnancy: 'Avoid',
-                sideEffects: 'Nausea',
-                clinicalPearls: 'Used for glycaemic control and weight management',
-                indication: 'T2DM'
-            },
-            'dulaglutide': {
+
+'dulaglutide': {
                 name: 'Dulaglutide',
                 class: 'GLP-1 receptor agonist',
                 mechanism: 'GLP-1 analogue',
@@ -3314,7 +2986,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once-weekly option',
                 indication: 'T2DM'
             },
-            'linagliptin': {
+
+'linagliptin': {
                 name: 'Linagliptin',
                 class: 'DPP-4 inhibitor',
                 mechanism: 'Inhibits DPP-4 increasing incretins',
@@ -3326,7 +2999,8 @@ const drugDatabase = {
                 clinicalPearls: 'No dose adjustment usually required in renal impairment',
                 indication: 'T2DM'
             },
-            'saxagliptin': {
+
+'saxagliptin': {
                 name: 'Saxagliptin',
                 class: 'DPP-4 inhibitor',
                 mechanism: 'Inhibits DPP-4',
@@ -3338,7 +3012,8 @@ const drugDatabase = {
                 clinicalPearls: 'Well-tolerated, weight neutral',
                 indication: 'T2DM'
             },
-            'insulin-degludec': {
+
+'insulin-degludec': {
                 name: 'Insulin degludec',
                 class: 'Ultra-long acting insulin analogue',
                 mechanism: 'Basal insulin replacement with very long duration',
@@ -3350,7 +3025,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very long-acting basal insulin',
                 indication: 'Basal insulin therapy'
             },
-            'insulin-detemir': {
+
+'insulin-detemir': {
                 name: 'Insulin detemir',
                 class: 'Long-acting insulin analogue',
                 mechanism: 'Basal insulin',
@@ -3362,20 +3038,8 @@ const drugDatabase = {
                 clinicalPearls: 'Basal insulin option',
                 indication: 'Basal insulin therapy'
             },
-            /* duplicate insulin-glargine removed - consolidated to canonical entry earlier */
-            'insulin-aspart': {
-                name: 'Insulin aspart',
-                class: 'Rapid-acting insulin analogue',
-                mechanism: 'Prandial insulin',
-                dosing: 'Individualized at mealtimes',
-                contraindications: 'Hypoglycaemia',
-                monitoring: 'BG',
-                pregnancy: 'Used in pregnancy when required',
-                sideEffects: 'Hypoglycaemia',
-                clinicalPearls: 'Prandial insulin option',
-                indication: 'Prandial insulin'
-            },
-            'insulin-lispro': {
+
+'insulin-lispro': {
                 name: 'Insulin lispro',
                 class: 'Rapid-acting insulin analogue',
                 mechanism: 'Prandial insulin',
@@ -3387,7 +3051,8 @@ const drugDatabase = {
                 clinicalPearls: 'Rapid onset prandial insulin',
                 indication: 'Prandial insulin'
             },
-            'propylthiouracil': {
+
+'propylthiouracil': {
                 name: 'Propylthiouracil (PTU)',
                 class: 'Antithyroid drug',
                 mechanism: 'Inhibits thyroid peroxidase and peripheral conversion of T4 to T3',
@@ -3400,10 +3065,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use specialist guidance for thyroid storm and pregnancy',
                 indication: 'Hyperthyroidism, thyroid storm'
             },
-            /* End endocrine */
 
-            /* Respiratory */
-            'fluticasone': {
+'fluticasone': {
                 name: 'Fluticasone (inhaled)',
                 class: 'Inhaled corticosteroid',
                 mechanism: 'Anti-inflammatory corticosteroid',
@@ -3415,7 +3078,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often combined with LABA',
                 indication: 'Asthma maintenance'
             },
-            'mometasone': {
+
+'mometasone': {
                 name: 'Mometasone (inhaled)',
                 class: 'Inhaled corticosteroid',
                 mechanism: 'Anti-inflammatory',
@@ -3427,7 +3091,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once-daily options exist',
                 indication: 'Asthma'
             },
-            'budesonide-formoterol': {
+
+'budesonide-formoterol': {
                 name: 'Budesonide/formoterol',
                 class: 'ICS/LABA combination',
                 mechanism: 'Anti-inflammatory + bronchodilator',
@@ -3439,7 +3104,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used in maintenance and SMART regimens',
                 indication: 'Asthma maintenance; COPD in select cases'
             },
-            'fluticasone-salmeterol': {
+
+'fluticasone-salmeterol': {
                 name: 'Fluticasone/salmeterol',
                 class: 'ICS/LABA combination',
                 mechanism: 'Anti-inflammatory + bronchodilator',
@@ -3451,22 +3117,8 @@ const drugDatabase = {
                 clinicalPearls: 'Common combination inhaler',
                 indication: 'Asthma, COPD (as appropriate)'
             },
-            'montelukast': {
-                name: 'Montelukast',
-                class: 'Leukotriene receptor antagonist',
-                mechanism: 'Blocks CysLT1 receptor',
-                dosing: '10mg daily (adults)',
-                contraindications: 'Hypersensitivity',
-                monitoring: 'Mood/behaviour changes',
-                pregnancy: 'Use if needed',
-                sideEffects: 'Rare neuropsychiatric effects',
-                clinicalPearls: 'Useful in aspirin-exacerbated respiratory disease',
-                indication: 'Adjunct asthma therapy'
-            },
-            /* End respiratory */
 
-            /* Infectious Diseases */
-            'rifampicin': {
+'rifampicin': {
                 name: 'Rifampicin',
                 class: 'Rifamycin antibiotic',
                 mechanism: 'Inhibits DNA-dependent RNA polymerase',
@@ -3479,7 +3131,8 @@ const drugDatabase = {
                 clinicalPearls: 'Powerful CYP inducer — review all meds',
                 indication: 'TB (part of multi-drug regimens)'
             },
-            'isoniazid': {
+
+'isoniazid': {
                 name: 'Isoniazid',
                 class: 'Antitubercular',
                 mechanism: 'Inhibits mycolic acid synthesis',
@@ -3492,7 +3145,8 @@ const drugDatabase = {
                 clinicalPearls: 'Give pyridoxine to prevent neuropathy',
                 indication: 'TB'
             },
-            'pyrazinamide': {
+
+'pyrazinamide': {
                 name: 'Pyrazinamide',
                 class: 'Antitubercular',
                 mechanism: 'Prodrug active in acidic environments',
@@ -3505,7 +3159,8 @@ const drugDatabase = {
                 clinicalPearls: 'Part of standard TB regimen',
                 indication: 'TB'
             },
-            'ethambutol': {
+
+'ethambutol': {
                 name: 'Ethambutol',
                 class: 'Antitubercular',
                 mechanism: 'Inhibits arabinosyl transferase (cell wall synthesis)',
@@ -3518,7 +3173,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor vision regularly',
                 indication: 'TB'
             },
-            'oseltamivir': {
+
+'oseltamivir': {
                 name: 'Oseltamivir',
                 class: 'Neuraminidase inhibitor',
                 mechanism: 'Inhibits influenza neuraminidase',
@@ -3531,7 +3187,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start within 48h of symptom onset for greatest benefit',
                 indication: 'Influenza treatment/prophylaxis'
             },
-            'chloramphenicol': {
+
+'chloramphenicol': {
                 name: 'Chloramphenicol',
                 class: 'Broad-spectrum antibiotic',
                 mechanism: 'Inhibits 50S ribosomal subunit',
@@ -3544,20 +3201,8 @@ const drugDatabase = {
                 clinicalPearls: 'Topical ophthalmic use for conjunctivitis; systemic use limited due to toxicity',
                 indication: 'Ophthalmic infections, selected systemic infections'
             },
-            'fosfomycin': {
-                name: 'Fosfomycin',
-                class: 'Cell wall synthesis inhibitor (phosphonic acid derivative)',
-                mechanism: 'Inhibits early stage peptidoglycan synthesis',
-                dosing: 'Single-dose oral 3g sachet for uncomplicated UTI (women)',
-                contraindications: 'Hypersensitivity',
-                interactions: 'None major',
-                monitoring: 'Clinical response',
-                pregnancy: 'Use if needed',
-                sideEffects: 'GI upset, headache',
-                clinicalPearls: 'Useful for resistant UTI pathogens where appropriate',
-                indication: 'Uncomplicated UTI'
-            },
-            'voriconazole': {
+
+'voriconazole': {
                 name: 'Voriconazole',
                 class: 'Triazole antifungal',
                 mechanism: 'Inhibits fungal 14α-demethylase',
@@ -3570,7 +3215,8 @@ const drugDatabase = {
                 clinicalPearls: 'First-line for invasive aspergillosis in many settings',
                 indication: 'Serious invasive fungal infections'
             },
-            'posaconazole': {
+
+'posaconazole': {
                 name: 'Posaconazole',
                 class: 'Triazole antifungal',
                 mechanism: 'Inhibits ergosterol synthesis',
@@ -3583,7 +3229,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for prophylaxis in neutropenic patients and resistant infections',
                 indication: 'Invasive fungal infections'
             },
-            'caspofungin': {
+
+'caspofungin': {
                 name: 'Caspofungin',
                 class: 'Echinocandin antifungal',
                 mechanism: 'Inhibits β-(1,3)-D-glucan synthesis in fungal cell wall',
@@ -3596,7 +3243,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for invasive Candida and salvage therapy',
                 indication: 'Invasive fungal infections'
             },
-            'anidulafungin': {
+
+'anidulafungin': {
                 name: 'Anidulafungin',
                 class: 'Echinocandin antifungal',
                 mechanism: 'Inhibits β-(1,3)-D-glucan synthesis',
@@ -3608,7 +3256,8 @@ const drugDatabase = {
                 clinicalPearls: 'Another echinocandin option for invasive fungal infections',
                 indication: 'Invasive Candida'
             },
-            'itraconazole': {
+
+'itraconazole': {
                 name: 'Itraconazole',
                 class: 'Triazole antifungal',
                 mechanism: 'Inhibits fungal ergosterol synthesis',
@@ -3621,20 +3270,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for certain systemic mycoses',
                 indication: 'Systemic fungal infections'
             },
-            /* GI / Hepatology */
-            'macrogol': {
-                name: 'Macrogol (polyethylene glycol)',
-                class: 'Osmotic laxative',
-                mechanism: 'Osmotic water retention in colon',
-                dosing: 'Constipation: sachet daily; bowel prep doses higher per protocol',
-                contraindications: 'Bowel obstruction',
-                monitoring: 'Electrolytes if prolonged use',
-                pregnancy: 'Use if necessary',
-                sideEffects: 'Bloating, diarrhoea',
-                clinicalPearls: 'First-line for chronic constipation',
-                indication: 'Constipation'
-            },
-            'docusate': {
+
+'docusate': {
                 name: 'Docusate (stool softener)',
                 class: 'Stool softener',
                 mechanism: 'Surfactant reducing stool surface tension',
@@ -3646,7 +3283,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often combined with stimulant laxatives',
                 indication: 'Constipation'
             },
-            'sodium-picosulfate': {
+
+'sodium-picosulfate': {
                 name: 'Sodium picosulfate',
                 class: 'Stimulant laxative (prodrug)',
                 mechanism: 'Converted by gut bacteria to active stimulant',
@@ -3658,7 +3296,8 @@ const drugDatabase = {
                 clinicalPearls: 'Common in bowel prep formulations',
                 indication: 'Constipation, bowel prep'
             },
-            'rabeprazole': {
+
+'rabeprazole': {
                 name: 'Rabeprazole',
                 class: 'PPI',
                 mechanism: 'Proton pump inhibitor',
@@ -3670,7 +3309,8 @@ const drugDatabase = {
                 clinicalPearls: 'Alternative PPI',
                 indication: 'GORD, PUD'
             },
-            'ursodeoxycholic-acid': {
+
+'ursodeoxycholic-acid': {
                 name: 'Ursodeoxycholic acid (UDCA)',
                 class: 'Bile acid',
                 mechanism: 'Decreases cholesterol absorption and bile toxicity',
@@ -3682,7 +3322,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used in cholestatic liver disease and gallstone dissolution in select cases',
                 indication: 'Primary biliary cholangitis, cholestasis'
             },
-            'misoprostol-gastro': {
+
+'misoprostol-gastro': {
                 name: 'Misoprostol (GI use)',
                 class: 'Prostaglandin E1 analogue',
                 mechanism: 'Protects gastric mucosa and reduces acid secretion',
@@ -3694,86 +3335,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for NSAID ulcer prevention in some contexts',
                 indication: 'GI mucosal protection'
             },
-            /* Neurology / Psychiatry */
-            'sodium-valproate': {
-                name: 'Sodium valproate',
-                class: 'Antiepileptic',
-                mechanism: 'Multiple mechanisms incl. GABAergic effects',
-                dosing: 'Loading/maintenance dosing per indication',
-                contraindications: 'Pregnancy (teratogenic), hepatic disease',
-                interactions: 'Many CYP interactions, lamotrigine levels affected',
-                monitoring: 'LFTs, FBC, plasma levels where indicated',
-                pregnancy: 'Contraindicated in pregnancy for many indications (teratogenic risk) - specialist advice',
-                sideEffects: 'Weight gain, tremor, hair loss, hepatotoxicity, teratogenicity',
-                clinicalPearls: 'Avoid in women of childbearing potential if possible',
-                indication: 'Epilepsy, bipolar disorder (some indications)'
-            },
-            'lamotrigine': {
-                name: 'Lamotrigine',
-                class: 'Antiepileptic',
-                mechanism: 'Inhibits voltage-gated sodium channels, reduces glutamate release',
-                dosing: 'Slow titration to reduce rash risk',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Valproate increases lamotrigine levels',
-                monitoring: 'Skin reactions, clinical efficacy',
-                pregnancy: 'Use with specialist advice',
-                sideEffects: 'Rash (SJS risk), dizziness, ataxia',
-                clinicalPearls: 'Slow titration required',
-                indication: 'Epilepsy, bipolar maintenance'
-            },
-            'levetiracetam': {
-                name: 'Levetiracetam',
-                class: 'Antiepileptic',
-                mechanism: 'Binds synaptic vesicle protein SV2A',
-                dosing: '500-1500mg BD; adjust in renal impairment',
-                contraindications: 'Hypersensitivity',
-                interactions: 'Few significant interactions',
-                monitoring: 'Mood changes, renal function',
-                pregnancy: 'Use with specialist advice',
-                sideEffects: 'Irritability, mood changes, somnolence',
-                clinicalPearls: 'Well tolerated and widely used',
-                indication: 'Epilepsy'
-            },
-            'clozapine': {
-                name: 'Clozapine',
-                class: 'Atypical antipsychotic',
-                mechanism: 'Multiple receptor actions incl. D2 partial, 5-HT2A antagonism',
-                dosing: 'Specialist initiation only with monitoring',
-                contraindications: 'Uncontrolled epilepsy, myocarditis',
-                interactions: 'Many CYP interactions',
-                monitoring: 'Mandatory blood monitoring for neutropenia (ANC), ECG, metabolic monitoring',
-                pregnancy: 'Specialist decision',
-                sideEffects: 'Agranulocytosis risk, weight gain, sedation, myocarditis',
-                clinicalPearls: 'Reserved for treatment-resistant schizophrenia with strict monitoring',
-                indication: 'Treatment-resistant schizophrenia'
-            },
-            'quetiapine': {
-                name: 'Quetiapine',
-                class: 'Atypical antipsychotic',
-                mechanism: 'D2 and 5-HT2 receptor antagonism',
-                dosing: 'Dose varies by indication',
-                contraindications: 'Hypersensitivity',
-                interactions: 'CYP3A4 inhibitors',
-                monitoring: 'Metabolic parameters, sedation',
-                pregnancy: 'Specialist advice',
-                sideEffects: 'Sedation, weight gain, metabolic syndrome',
-                clinicalPearls: 'Used for psychosis, bipolar disorder, adjunct in depression',
-                indication: 'Schizophrenia, bipolar disorder'
-            },
-            'olanzapine': {
-                name: 'Olanzapine',
-                class: 'Atypical antipsychotic',
-                mechanism: 'D2 and 5-HT2 receptor antagonism',
-                dosing: 'Dose varies by indication',
-                contraindications: 'Hypersensitivity',
-                interactions: 'CYP1A2 inducers/inhibitors',
-                monitoring: 'Metabolic parameters',
-                pregnancy: 'Specialist advice',
-                sideEffects: 'Weight gain, metabolic syndrome, sedation',
-                clinicalPearls: 'High metabolic risk',
-                indication: 'Schizophrenia, bipolar disorder'
-            },
-            'clonazepam': {
+
+'clonazepam': {
                 name: 'Clonazepam',
                 class: 'Benzodiazepine',
                 mechanism: 'Enhances GABA-A receptor activity',
@@ -3786,86 +3349,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for panic disorder, some seizure types',
                 indication: 'Seizures, anxiety'
             },
-            'sumatriptan': {
-                name: 'Sumatriptan',
-                class: 'Triptan (5-HT1 agonist)',
-                mechanism: '5-HT1B/1D agonist causing cranial vasoconstriction and reduced trigeminal transmission',
-                dosing: '50-100mg oral or 6mg SC; repeat per guidance',
-                contraindications: 'IHD, uncontrolled hypertension, hemiplegic migraine',
-                interactions: 'MAOIs, other triptans (avoid within 24h)',
-                monitoring: 'Blood pressure in patients with CV risk',
-                pregnancy: 'Use with caution',
-                sideEffects: 'Chest tightness, paraesthesia, dizziness',
-                clinicalPearls: 'Effective for acute migraine attack',
-                indication: 'Acute migraine'
-            },
-            'topiramate': {
-                name: 'Topiramate',
-                class: 'Antiepileptic and migraine prophylactic',
-                mechanism: 'Multiple mechanisms including sodium channel blockade and GABAergic effects',
-                dosing: 'Titrate slowly up to typical prophylactic doses',
-                contraindications: 'Pregnancy (cleft risk), severe hepatic impairment',
-                interactions: 'CYP interactions',
-                monitoring: 'Weight, mood, cognitive side effects',
-                pregnancy: 'Avoid if possible',
-                sideEffects: 'Cognitive impairment, weight loss, paresthesia',
-                clinicalPearls: 'Useful for migraine prophylaxis and adjunct in epilepsy',
-                indication: 'Migraine prophylaxis, epilepsy'
-            },
-            /* Analgesia / Anaesthesia */
-            'fentanyl': {
-                name: 'Fentanyl',
-                class: 'Synthetic opioid agonist',
-                mechanism: 'Potent μ-opioid receptor agonist',
-                dosing: 'IV 25-100mcg titrated; intranasal and patch formulations per product',
-                contraindications: 'Respiratory depression, severe asthma',
-                interactions: 'CNS depressants, CYP3A4 inhibitors',
-                monitoring: 'Respiratory rate, sedation',
-                pregnancy: 'Use with caution',
-                sideEffects: 'Respiratory depression, bradycardia, chest wall rigidity (rare)',
-                clinicalPearls: 'Short-acting and potent; titrate carefully',
-                indication: 'Severe pain, anaesthesia adjunct'
-            },
-            'buprenorphine': {
-                name: 'Buprenorphine',
-                class: 'Partial opioid agonist',
-                mechanism: 'Partial μ-opioid receptor agonist',
-                dosing: 'Sublingual or patch formulations per indication',
-                contraindications: 'Acute severe respiratory depression',
-                interactions: 'CNS depressants',
-                monitoring: 'Respiratory rate',
-                pregnancy: 'Use under specialist care for OST',
-                sideEffects: 'Constipation, sedation',
-                clinicalPearls: 'Risks of precipitated withdrawal in opioid-dependent patients',
-                indication: 'OST, pain management'
-            },
-            'methadone': {
-                name: 'Methadone',
-                class: 'Long-acting opioid agonist',
-                mechanism: 'Full μ-opioid receptor agonist',
-                dosing: 'Specialist OST dosing; analgesic dosing individualized',
-                contraindications: 'Respiratory depression, QT prolongation',
-                interactions: 'Many CYP interactions',
-                monitoring: 'ECG (QT), respiratory status',
-                pregnancy: 'Used in pregnancy for OST',
-                sideEffects: 'QT prolongation, sedation, dependence',
-                clinicalPearls: 'Long half-life — risk of accumulation',
-                indication: 'OST, chronic pain (specialist)'
-            },
-            'ketamine': {
-                name: 'Ketamine',
-                class: 'NMDA antagonist / dissociative anaesthetic',
-                mechanism: 'NMDA receptor antagonist producing dissociative anaesthesia and analgesia',
-                dosing: 'Analgesic/ED doses: 0.1-0.5mg/kg IV (subanaesthetic) or 0.25-0.5mg/kg IM for induction depending on use',
-                contraindications: 'Severe hypertension, aneurysm, raised intracranial pressure (relative)',
-                interactions: 'CNS stimulants/depressants',
-                monitoring: 'BP, consciousness, psychotomimetic effects',
-                pregnancy: 'Use with caution',
-                sideEffects: 'Hypertension, tachycardia, emergence reactions',
-                clinicalPearls: 'Useful for analgesia and procedural sedation; preserves airway reflexes',
-                indication: 'Analgesia, induction of anaesthesia, procedural sedation'
-            },
-            'lidocaine-systemic': {
+
+'lidocaine-systemic': {
                 name: 'Lidocaine (systemic)',
                 class: 'Local anaesthetic / antiarrhythmic',
                 mechanism: 'Blocks voltage-gated sodium channels',
@@ -3878,33 +3363,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor levels with infusion; treat LAST with lipid emulsion therapy',
                 indication: 'Arrhythmias (IV), analgesia (topical/infiltration)'
             },
-            /* Antidotes */
-            'naloxone': {
-                name: 'Naloxone',
-                class: 'Opioid antagonist',
-                mechanism: 'Competitive opioid receptor antagonist',
-                dosing: 'IV/IM 0.4-2mg titrated; intranasal options available',
-                contraindications: 'None in overdose',
-                interactions: 'Precipitates withdrawal',
-                monitoring: 'Respiratory rate',
-                pregnancy: 'Use if maternal opioid toxicity',
-                sideEffects: 'Acute withdrawal symptoms',
-                clinicalPearls: 'Short-acting — monitor for re-sedation',
-                indication: 'Opioid overdose'
-            },
-            'flumazenil': {
-                name: 'Flumazenil',
-                class: 'Benzodiazepine antagonist',
-                mechanism: 'GABA-A benzodiazepine site antagonist',
-                dosing: 'IV bolus 0.2mg increments to effect',
-                contraindications: 'Chronic benzodiazepine use, mixed overdose with proconvulsants',
-                monitoring: 'Seizure activity',
-                sideEffects: 'Seizures (rare)',
-                clinicalPearls: 'Use cautiously',
-                indication: 'Benzodiazepine reversal'
-            },
-            /* Obstetrics / Gynaecology */
-            'carboprost': {
+
+'carboprost': {
                 name: 'Carboprost',
                 class: 'Prostaglandin F2α analogue (uterotonic)',
                 mechanism: 'Stimulates uterine contraction',
@@ -3917,21 +3377,8 @@ const drugDatabase = {
                 clinicalPearls: 'Avoid in severe asthma',
                 indication: 'PPH management'
             },
-            'magnesium-sulfate': {
-                name: 'Magnesium sulfate',
-                class: 'Anticonvulsant / tocolytic adjunct',
-                mechanism: 'Multiple mechanisms including NMDA antagonism and calcium channel modulation',
-                dosing: 'Severe pre-eclampsia: 4g IV loading then 1g/hr infusion (local protocols vary)',
-                contraindications: 'Myasthenia gravis',
-                interactions: 'CNS depressants, neuromuscular blockers',
-                monitoring: 'Reflexes, respiratory rate, urine output, magnesium levels',
-                pregnancy: 'Indicated for eclampsia prophylaxis and treatment',
-                sideEffects: 'Flushing, hypotension, respiratory depression at high levels',
-                clinicalPearls: 'Monitor closely; calcium gluconate is antidote',
-                indication: 'Eclampsia prophylaxis/treatment'
-            },
-            /* Haematology / Oncology */
-            'hydroxycarbamide': {
+
+'hydroxycarbamide': {
                 name: 'Hydroxycarbamide (hydroxyurea)',
                 class: 'Antimetabolite / cytoreductive',
                 mechanism: 'Inhibits ribonucleotide reductase',
@@ -3944,7 +3391,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used for myeloproliferative neoplasms and sickle cell to reduce crises',
                 indication: 'Polycythaemia vera, essential thrombocythaemia, sickle cell disease'
             },
-            'azathioprine': {
+
+'azathioprine': {
                 name: 'Azathioprine',
                 class: 'Immunosuppressant/antimetabolite',
                 mechanism: 'Purine analogue inhibiting DNA synthesis',
@@ -3957,20 +3405,8 @@ const drugDatabase = {
                 clinicalPearls: 'Check TPMT before prescribing',
                 indication: 'Autoimmune diseases, transplant'
             },
-            'methotrexate': {
-                name: 'Methotrexate',
-                class: 'Antimetabolite/antifolate',
-                mechanism: 'Inhibits dihydrofolate reductase',
-                dosing: 'Low-dose weekly regimens for rheumatologic use; higher doses in oncology',
-                contraindications: 'Pregnancy, breastfeeding, severe hepatic/renal impairment',
-                interactions: 'NSAIDs (may ↑ levels), folic acid supplementation recommended',
-                monitoring: 'FBC, LFTs, renal function',
-                pregnancy: 'Contraindicated',
-                sideEffects: 'Myelosuppression, hepatotoxicity, mucositis',
-                clinicalPearls: 'Weekly dosing for rheumatology; ensure folic acid cover',
-                indication: 'Rheumatologic disease, oncology'
-            },
-            'filgrastim': {
+
+'filgrastim': {
                 name: 'Filgrastim (G-CSF)',
                 class: 'Hematopoietic growth factor',
                 mechanism: 'Stimulates neutrophil production',
@@ -3983,7 +3419,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used to reduce duration of neutropenia',
                 indication: 'Chemotherapy-induced neutropenia'
             },
-            'tamoxifen': {
+
+'tamoxifen': {
                 name: 'Tamoxifen',
                 class: 'Selective oestrogen receptor modulator (SERM)',
                 mechanism: 'Oestrogen receptor antagonist in breast tissue',
@@ -3996,7 +3433,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used as adjuvant therapy in ER+ breast cancer',
                 indication: 'Breast cancer'
             },
-            'letrozole': {
+
+'letrozole': {
                 name: 'Letrozole',
                 class: 'Aromatase inhibitor',
                 mechanism: 'Inhibits peripheral conversion of androgens to oestrogens',
@@ -4009,7 +3447,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used in postmenopausal ER+ breast cancer',
                 indication: 'Breast cancer'
             },
-            'anastrozole': {
+
+'anastrozole': {
                 name: 'Anastrozole',
                 class: 'Aromatase inhibitor',
                 mechanism: 'Inhibits aromatase',
@@ -4021,8 +3460,8 @@ const drugDatabase = {
                 clinicalPearls: 'Postmenopausal breast cancer therapy',
                 indication: 'Breast cancer'
             },
-            /* Infectious prophylaxis / antidotes */
-            'pabrinex': {
+
+'pabrinex': {
                 name: 'Pabrinex (Multivitamin infusion)',
                 class: 'Vitamin replacement',
                 mechanism: 'High-dose parenteral vitamins including thiamine',
@@ -4034,19 +3473,8 @@ const drugDatabase = {
                 clinicalPearls: 'Used in malnutrition and alcohol withdrawal; provides parenteral thiamine',
                 indication: 'Vitamin replacement in deficiency'
             },
-            'thiamine': {
-                name: 'Thiamine (Vitamin B1)',
-                class: 'Vitamin',
-                mechanism: 'Cofactor for carbohydrate metabolism',
-                dosing: 'Often 200mg IV daily or per local protocol for deficiency/Wernicke',
-                contraindications: 'Hypersensitivity',
-                monitoring: 'Clinical response, magnesium status',
-                pregnancy: 'Safe when indicated',
-                sideEffects: 'Rare hypersensitivity',
-                clinicalPearls: 'Give prior to glucose in malnourished/alcohol-dependent patients',
-                indication: 'Prevention/treatment of Wernicke encephalopathy'
-            },
-            'activated-charcoal': {
+
+'activated-charcoal': {
                 name: 'Activated charcoal',
                 class: 'Adsorbent (decontamination)',
                 mechanism: 'Adsorbs many toxins in GI tract reducing absorption',
@@ -4059,7 +3487,8 @@ const drugDatabase = {
                 clinicalPearls: 'Most effective when given early after ingestion',
                 indication: 'Acute poisoning (selected cases)'
             },
-            'metoprolol': {
+
+'metoprolol': {
                 name: 'Metoprolol',
                 class: 'Beta-blocker (β1 selective)',
                 mechanism: 'Selective β1-adrenoceptor antagonist reducing heart rate and myocardial contractility',
@@ -4073,7 +3502,8 @@ const drugDatabase = {
                 clinicalPearls: 'Cardioselective at low doses; useful for rate control in AF/flutter and post-MI management',
                 indication: 'Hypertension, angina, rate control in atrial fibrillation, secondary prevention post-MI'
             },
-            'propranolol': {
+
+'propranolol': {
                 name: 'Propranolol',
                 class: 'Non-selective beta-blocker',
                 mechanism: 'Non-selective β1 and β2 antagonist reducing heart rate, myocardial contractility and peripheral vasodilation',
@@ -4087,7 +3517,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for migraine prophylaxis, essential tremor, thyrotoxicosis symptoms; avoid in reactive airways disease',
                 indication: 'Hypertension, angina, arrhythmias, migraine prophylaxis, essential tremor'
             },
-            'trametinib': {
+
+'trametinib': {
                 name: 'Trametinib',
                 class: 'MEK inhibitor (targeted anticancer therapy)',
                 mechanism: 'Inhibits MEK1 and MEK2, blocking MAPK pathway signalling in tumours with BRAF/MEK pathway activation',
@@ -4101,7 +3532,8 @@ const drugDatabase = {
                 clinicalPearls: 'Specialist oncology drug - use as part of targeted therapy in selected cancers; not a routine ward antimicrobial or cardiovascular drug',
                 indication: 'Metastatic melanoma and other BRAF/MEK pathway-driven malignancies as per oncology guidance'
             },
-            'pravastatin': {
+
+'pravastatin': {
                 name: 'Pravastatin',
                 class: 'Statin',
                 mechanism: 'HMG-CoA reductase inhibitor reducing cholesterol synthesis',
@@ -4115,7 +3547,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful when drug interactions with CYP3A4-metabolised statins are a concern',
                 indication: 'Hyperlipidaemia, cardiovascular risk reduction where appropriate'
             },
-            'hydralazine': {
+
+'hydralazine': {
                 name: 'Hydralazine',
                 class: 'Vasodilator (direct arteriolar dilator)',
                 mechanism: 'Direct relaxation of arteriolar smooth muscle reducing afterload',
@@ -4129,7 +3562,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often used in combination with a β-blocker and diuretic to counter reflex tachycardia; consider in pregnancy with severe hypertension under guidance',
                 indication: 'Severe hypertension (including in pregnancy under specialist care), refractory hypertension'
             },
-            'doxazosin': {
+
+'doxazosin': {
                 name: 'Doxazosin',
                 class: 'Alpha-1 blocker',
                 mechanism: 'Selective α1-adrenoceptor antagonist causing vasodilation and relaxation of bladder neck/prostate',
@@ -4143,7 +3577,8 @@ const drugDatabase = {
                 clinicalPearls: 'Always start at bedtime due to first-dose hypotension. Modified-release formulation available',
                 indication: 'Hypertension (4th line), benign prostatic hyperplasia (BPH)'
             },
-            'indapamide': {
+
+'indapamide': {
                 name: 'Indapamide',
                 class: 'Thiazide-like diuretic',
                 mechanism: 'Acts on distal convoluted tubule causing natriuresis and vasodilation',
@@ -4157,7 +3592,8 @@ const drugDatabase = {
                 clinicalPearls: 'Preferred thiazide-like in UK for hypertension. Less metabolic disturbance than bendroflumethiazide',
                 indication: 'Hypertension (first-line with ACEi/ARB or CCB), mild heart failure'
             },
-            'telmisartan': {
+
+'telmisartan': {
                 name: 'Telmisartan',
                 class: 'Angiotensin II receptor blocker (ARB)',
                 mechanism: 'Blocks AT1 receptors preventing vasoconstriction and aldosterone release',
@@ -4171,21 +3607,8 @@ const drugDatabase = {
                 clinicalPearls: 'Good option for once-daily dosing. Also has PPAR-gamma agonist activity',
                 indication: 'Hypertension, cardiovascular risk reduction in high-risk patients'
             },
-            'propranolol': {
-                name: 'Propranolol',
-                class: 'Non-selective beta blocker',
-                mechanism: 'Non-selective β1 and β2 antagonist reducing heart rate and contractility',
-                dosing: 'Hypertension: 80-160mg BD. Migraine prophylaxis: 80-240mg daily. Anxiety: 40mg PRN',
-                contraindications: 'Asthma, COPD, heart block, severe peripheral vascular disease',
-                interactions: 'Verapamil/diltiazem (heart block), insulin (masks hypoglycaemia)',
-                monitoring: 'Heart rate, blood pressure, respiratory status',
-                pregnancy: 'Use with caution - risk of fetal growth restriction',
-                sideEffects: 'Bradycardia, bronchospasm, fatigue, cold extremities, vivid dreams',
-                pharmacokinetics: 'High first-pass metabolism, lipophilic (crosses BBB)',
-                clinicalPearls: 'Useful for migraine, anxiety, essential tremor, thyrotoxicosis. Avoid abrupt withdrawal',
-                indication: 'Hypertension, angina, arrhythmias, migraine prophylaxis, anxiety, essential tremor'
-            },
-            'carvedilol': {
+
+'carvedilol': {
                 name: 'Carvedilol',
                 class: 'Non-selective beta blocker with alpha-blocking activity',
                 mechanism: 'β1, β2, and α1 antagonist providing vasodilation and reduced cardiac workload',
@@ -4199,7 +3622,8 @@ const drugDatabase = {
                 clinicalPearls: 'Evidence-based for heart failure. Start low, go slow with careful titration',
                 indication: 'Heart failure, post-MI, hypertension'
             },
-            'ivabradine': {
+
+'ivabradine': {
                 name: 'Ivabradine',
                 class: 'If channel inhibitor',
                 mechanism: 'Inhibits If channels in SA node reducing heart rate without affecting contractility',
@@ -4213,7 +3637,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful when beta blockers contraindicated. Licensed for angina and heart failure',
                 indication: 'Chronic heart failure (LVEF ≤35%, HR ≥70 in sinus rhythm), angina if beta blockers unsuitable'
             },
-            'sacubitril-valsartan': {
+
+'sacubitril-valsartan': {
                 name: 'Sacubitril-Valsartan (Entresto)',
                 class: 'Angiotensin receptor-neprilysin inhibitor (ARNI)',
                 mechanism: 'Neprilysin inhibitor + ARB - increases natriuretic peptides while blocking angiotensin II',
@@ -4227,7 +3652,8 @@ const drugDatabase = {
                 clinicalPearls: 'Superior to enalapril in heart failure. Must have 36h ACEi washout. Specialist initiation often required',
                 indication: 'Chronic heart failure with reduced ejection fraction (HFrEF)'
             },
-            'carbocisteine': {
+
+'carbocisteine': {
                 name: 'Carbocisteine',
                 class: 'Mucolytic',
                 mechanism: 'Reduces viscosity of mucus by breaking disulfide bonds in mucoproteins',
@@ -4241,7 +3667,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very commonly prescribed in UK for COPD. Consider stopping if no benefit after 4 weeks',
                 indication: 'COPD with productive cough, chronic bronchitis, bronchiectasis'
             },
-            'aminophylline': {
+
+'aminophylline': {
                 name: 'Aminophylline',
                 class: 'Methylxanthine bronchodilator',
                 mechanism: 'Phosphodiesterase inhibitor causing bronchodilation and anti-inflammatory effects',
@@ -4255,7 +3682,8 @@ const drugDatabase = {
                 clinicalPearls: 'IV form for acute severe asthma. Therapeutic drug monitoring essential. Many drug interactions',
                 indication: 'Acute severe asthma (IV), chronic asthma/COPD (oral) when other treatments inadequate'
             },
-            'levofloxacin': {
+
+'levofloxacin': {
                 name: 'Levofloxacin',
                 class: 'Fluoroquinolone antibiotic',
                 mechanism: 'Inhibits bacterial DNA gyrase and topoisomerase IV',
@@ -4269,7 +3697,8 @@ const drugDatabase = {
                 clinicalPearls: 'Reserve for resistant infections. Warn about tendon rupture risk. Sun protection advised',
                 indication: 'Community-acquired pneumonia, complicated UTI, chronic prostatitis, anthrax (as per guidelines)'
             },
-            'fosfomycin': {
+
+'fosfomycin': {
                 name: 'Fosfomycin',
                 class: 'Phosphonic acid antibiotic',
                 mechanism: 'Inhibits bacterial cell wall synthesis by blocking MurA enzyme',
@@ -4283,7 +3712,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent for uncomplicated UTI including E. coli. Taken on empty stomach. Increasingly used for resistant organisms',
                 indication: 'Uncomplicated lower UTI, particularly when first-line antibiotics unsuitable or resistant'
             },
-            'macrogol': {
+
+'macrogol': {
                 name: 'Macrogol (Movicol/Laxido)',
                 class: 'Osmotic laxative',
                 mechanism: 'Polyethylene glycol increases water content of stool via osmosis',
@@ -4297,7 +3727,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very commonly prescribed in UK. Safe for long-term use. Can be used in pregnancy',
                 indication: 'Chronic constipation (first-line), faecal impaction, bowel preparation'
             },
-            'colchicine': {
+
+'colchicine': {
                 name: 'Colchicine',
                 class: 'Anti-inflammatory (microtubule inhibitor)',
                 mechanism: 'Inhibits neutrophil chemotaxis and phagocytosis by disrupting microtubules',
@@ -4311,7 +3742,8 @@ const drugDatabase = {
                 clinicalPearls: 'Start at first sign of acute gout. High dose regimens no longer recommended due to toxicity. Stop if diarrhoea develops',
                 indication: 'Acute gout, gout prophylaxis during urate-lowering therapy initiation, familial Mediterranean fever'
             },
-            'sodium-valproate': {
+
+'sodium-valproate': {
                 name: 'Sodium Valproate',
                 class: 'Antiepileptic/mood stabiliser',
                 mechanism: 'Increases GABA levels, blocks voltage-gated sodium channels',
@@ -4325,7 +3757,8 @@ const drugDatabase = {
                 clinicalPearls: 'Valproate Pregnancy Prevention Programme essential for women of childbearing potential. Annual risk acknowledgement form. Contraception mandatory',
                 indication: 'Epilepsy (generalised seizures), bipolar disorder, migraine prophylaxis (not in women of childbearing potential)'
             },
-            'lamotrigine': {
+
+'lamotrigine': {
                 name: 'Lamotrigine',
                 class: 'Antiepileptic/mood stabiliser',
                 mechanism: 'Blocks voltage-gated sodium channels, inhibits glutamate release',
@@ -4339,7 +3772,8 @@ const drugDatabase = {
                 clinicalPearls: 'SLOW titration essential to reduce rash risk. Stop immediately if rash appears. Useful for bipolar depression',
                 indication: 'Epilepsy (focal and generalised), bipolar disorder (especially depression prevention)'
             },
-            'duloxetine': {
+
+'duloxetine': {
                 name: 'Duloxetine',
                 class: 'SNRI (serotonin-norepinephrine reuptake inhibitor)',
                 mechanism: 'Inhibits serotonin and norepinephrine reuptake, modulates pain pathways',
@@ -4353,7 +3787,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for diabetic neuropathy and fibromyalgia. Monitor BP - can cause hypertension. Withdraw gradually',
                 indication: 'Depression, generalised anxiety disorder, diabetic neuropathy, fibromyalgia, stress urinary incontinence'
             },
-            'aripiprazole': {
+
+'aripiprazole': {
                 name: 'Aripiprazole',
                 class: 'Atypical antipsychotic',
                 mechanism: 'Partial D2 and 5-HT1A agonist, 5-HT2A antagonist',
@@ -4367,7 +3802,8 @@ const drugDatabase = {
                 clinicalPearls: 'Lower weight gain/metabolic risk than olanzapine. Akathisia common - may need propranolol',
                 indication: 'Schizophrenia, bipolar disorder (mania/mixed episodes), adjunct in treatment-resistant depression'
             },
-            'clozapine': {
+
+'clozapine': {
                 name: 'Clozapine',
                 class: 'Atypical antipsychotic',
                 mechanism: 'Multiple receptor antagonism (D2, D4, 5-HT2A, muscarinic, α-adrenergic)',
@@ -4381,7 +3817,8 @@ const drugDatabase = {
                 clinicalPearls: 'Treatment-resistant schizophrenia only. Clozapine Monitoring Service mandatory. Most effective antipsychotic but highest risk',
                 indication: 'Treatment-resistant schizophrenia (failed ≥2 antipsychotics), psychosis in Parkinsons disease (specialist use)'
             },
-            'nefopam': {
+
+'nefopam': {
                 name: 'Nefopam',
                 class: 'Non-opioid analgesic',
                 mechanism: 'Centrally acting analgesic - inhibits monoamine reuptake, no opioid receptor activity',
@@ -4395,7 +3832,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful opioid-sparing analgesic. Anticholinergic - caution in elderly. Pink urine is normal',
                 indication: 'Moderate pain when opioids inappropriate or as adjunct to other analgesics'
             },
-            'finasteride': {
+
+'finasteride': {
                 name: 'Finasteride',
                 class: '5α-reductase inhibitor',
                 mechanism: 'Inhibits conversion of testosterone to dihydrotestosterone (DHT)',
@@ -4409,7 +3847,8 @@ const drugDatabase = {
                 clinicalPearls: 'Takes 6 months for BPH benefit. PSA reduced ~50% - adjust when screening. Sexual side effects may persist after stopping',
                 indication: 'Benign prostatic hyperplasia (BPH), male pattern baldness (1mg dose)'
             },
-            'tamsulosin': {
+
+'tamsulosin': {
                 name: 'Tamsulosin',
                 class: 'Selective α1A-blocker',
                 mechanism: 'Selectively blocks α1A receptors in prostate and bladder neck causing relaxation',
@@ -4423,7 +3862,8 @@ const drugDatabase = {
                 clinicalPearls: 'More uroselective than doxazosin - less hypotension. Must inform anaesthetist/ophthalmologist. Take same time daily',
                 indication: 'Lower urinary tract symptoms associated with BPH, ureteric stone expulsion (off-label)'
             },
-            'oxybutynin': {
+
+'oxybutynin': {
                 name: 'Oxybutynin',
                 class: 'Antimuscarinic (anticholinergic)',
                 mechanism: 'M3 muscarinic receptor antagonist reducing detrusor muscle contractions',
@@ -4437,7 +3877,8 @@ const drugDatabase = {
                 clinicalPearls: 'Modified-release better tolerated. High anticholinergic burden - caution elderly. Consider alternatives in dementia',
                 indication: 'Urge incontinence, overactive bladder, nocturnal enuresis in children >5y'
             },
-            'solifenacin': {
+
+'solifenacin': {
                 name: 'Solifenacin',
                 class: 'Antimuscarinic (anticholinergic)',
                 mechanism: 'M3 selective muscarinic receptor antagonist reducing bladder contractions',
@@ -4451,7 +3892,8 @@ const drugDatabase = {
                 clinicalPearls: 'Once daily dosing. More M3-selective than oxybutynin. Still caution in elderly re: anticholinergic burden',
                 indication: 'Urge incontinence, overactive bladder syndrome'
             },
-            'alfacalcidol': {
+
+'alfacalcidol': {
                 name: 'Alfacalcidol',
                 class: 'Vitamin D analogue',
                 mechanism: '1α-hydroxylated vitamin D - converted to active 1,25-dihydroxyvitamin D in liver',
@@ -4465,7 +3907,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful in renal failure (doesnt need kidney activation). Monitor calcium closely - narrow therapeutic window',
                 indication: 'Hypocalcaemia in CKD, hypoparathyroidism, vitamin D-dependent rickets'
             },
-            'adcal-d3': {
+
+'adcal-d3': {
                 name: 'Adcal-D3 (Calcium Carbonate + Colecalciferol)',
                 class: 'Calcium and vitamin D supplement',
                 mechanism: 'Provides supplemental calcium (1500mg) and vitamin D3 (400IU) per 2 tablets',
@@ -4479,7 +3922,8 @@ const drugDatabase = {
                 clinicalPearls: 'Extremely commonly prescribed in UK. Chewable or dispersible. Take 2h away from bisphosphonates',
                 indication: 'Osteoporosis prevention/treatment adjunct, vitamin D deficiency, calcium supplementation'
             },
-            'liothyronine': {
+
+'liothyronine': {
                 name: 'Liothyronine (T3)',
                 class: 'Thyroid hormone',
                 mechanism: 'Synthetic tri-iodothyronine - active form of thyroid hormone',
@@ -4493,7 +3937,8 @@ const drugDatabase = {
                 clinicalPearls: 'Rarely used - mainly myxoedema coma or specialist T3 requirement. Very expensive. Most hypothyroid patients need levothyroxine only',
                 indication: 'Myxoedema coma (emergency), rarely for hypothyroidism (specialist endocrinology use only)'
             },
-            'desmopressin': {
+
+'desmopressin': {
                 name: 'Desmopressin',
                 class: 'Vasopressin analogue',
                 mechanism: 'Synthetic ADH analogue increasing water reabsorption and factor VIII/vWF release',
@@ -4507,7 +3952,8 @@ const drugDatabase = {
                 clinicalPearls: 'Monitor sodium closely - hyponatraemia risk especially with oral route and elderly. Fluid restrict while using',
                 indication: 'Cranial diabetes insipidus, primary nocturnal enuresis (>7y), von Willebrand disease, mild haemophilia A'
             },
-            'co-dydramol': {
+
+'co-dydramol': {
                 name: 'Co-dydramol (Dihydrocodeine + Paracetamol)',
                 class: 'Compound analgesic (opioid + non-opioid)',
                 mechanism: 'Dihydrocodeine 10mg + paracetamol 500mg per tablet - combined analgesic effect',
@@ -4521,7 +3967,8 @@ const drugDatabase = {
                 clinicalPearls: 'Common step-up from co-codamol. Risk of dependence. Prescribe laxatives. Max 4g paracetamol daily from all sources',
                 indication: 'Moderate pain not controlled by paracetamol or NSAIDs alone'
             },
-            'nasal-fluticasone': {
+
+'nasal-fluticasone': {
                 name: 'Fluticasone Nasal Spray',
                 class: 'Corticosteroid (intranasal)',
                 mechanism: 'Topical corticosteroid reducing nasal inflammation',
@@ -4535,7 +3982,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very commonly prescribed. OTC available. Takes few days for full effect. Shake before use',
                 indication: 'Allergic rhinitis, nasal polyps'
             },
-            'mometasone-nasal': {
+
+'mometasone-nasal': {
                 name: 'Mometasone Nasal Spray',
                 class: 'Corticosteroid (intranasal)',
                 mechanism: 'Potent topical corticosteroid for nasal inflammation',
@@ -4549,7 +3997,8 @@ const drugDatabase = {
                 clinicalPearls: 'Often preferred over fluticasone for once-daily dosing. Licensed from age 3',
                 indication: 'Allergic rhinitis, nasal polyps'
             },
-            'chloramphenicol-eye': {
+
+'chloramphenicol-eye': {
                 name: 'Chloramphenicol Eye Drops/Ointment',
                 class: 'Antibiotic (topical ophthalmic)',
                 mechanism: 'Bacteriostatic - inhibits bacterial protein synthesis',
@@ -4563,7 +4012,8 @@ const drugDatabase = {
                 clinicalPearls: 'Available OTC. First-line for bacterial conjunctivitis. Use drops during day, ointment at night. 5 days treatment usually sufficient',
                 indication: 'Bacterial conjunctivitis, superficial eye infections'
             },
-            'fusidic-acid': {
+
+'fusidic-acid': {
                 name: 'Fusidic Acid',
                 class: 'Antibiotic',
                 mechanism: 'Inhibits bacterial protein synthesis - particularly effective against staphylococci',
@@ -4577,7 +4027,8 @@ const drugDatabase = {
                 clinicalPearls: 'Excellent for impetigo/infected eczema. STOP statins during oral fusidic acid. Often combined with hydrocortisone for infected eczema',
                 indication: 'Skin infections (impetigo, infected eczema), staphylococcal infections, bacterial conjunctivitis'
             },
-            'hydrocortisone-topical': {
+
+'hydrocortisone-topical': {
                 name: 'Hydrocortisone Cream/Ointment 1%',
                 class: 'Mild topical corticosteroid',
                 mechanism: 'Anti-inflammatory via glucocorticoid receptor activation',
@@ -4591,7 +4042,8 @@ const drugDatabase = {
                 clinicalPearls: 'Available OTC. Mild steroid - safe for face/flexures. Fingertip unit (FTU) dosing. Can use in children',
                 indication: 'Mild eczema, insect bites, contact dermatitis, mild inflammatory skin conditions'
             },
-            'betamethasone': {
+
+'betamethasone': {
                 name: 'Betamethasone Valerate',
                 class: 'Potent topical corticosteroid',
                 mechanism: 'Potent anti-inflammatory via glucocorticoid receptor',
@@ -4605,7 +4057,8 @@ const drugDatabase = {
                 clinicalPearls: 'Potent steroid - not for face or children <1y. Use short courses. Step down to weaker steroid. Use ointment for dry/thick skin',
                 indication: 'Severe eczema, psoriasis, severe inflammatory skin conditions'
             },
-            'eumovate': {
+
+'eumovate': {
                 name: 'Clobetasone Butyrate (Eumovate)',
                 class: 'Moderate potency topical corticosteroid',
                 mechanism: 'Moderate anti-inflammatory corticosteroid',
@@ -4619,7 +4072,8 @@ const drugDatabase = {
                 clinicalPearls: 'Moderate potency - safer for face/flexures than potent steroids. Good step between mild and potent steroids. Brand name Eumovate commonly used',
                 indication: 'Moderate eczema, dermatitis, suitable for sensitive sites (face, flexures)'
             },
-            'doublebase': {
+
+'doublebase': {
                 name: 'Emollients (Doublebase/Diprobase/Cetraben)',
                 class: 'Emollient/moisturiser',
                 mechanism: 'Hydrates and protects skin barrier',
@@ -4633,7 +4087,8 @@ const drugDatabase = {
                 clinicalPearls: 'Foundation of eczema management. Apply separate from steroids (20-30min gap). FIRE HAZARD - paraffin-based emollients on fabric. Use soap substitutes',
                 indication: 'Eczema, dry skin conditions, psoriasis (adjunct), ichthyosis'
             },
-            'dermol-500': {
+
+'dermol-500': {
                 name: 'Antimicrobial Emollient (Dermol 500)',
                 class: 'Antimicrobial emollient',
                 mechanism: 'Emollient with benzalkonium chloride and chlorhexidine (antimicrobial)',
@@ -4647,7 +4102,8 @@ const drugDatabase = {
                 clinicalPearls: 'Useful for infection-prone eczema. Contains antiseptics. Doubles as wash product. Fire hazard warning applies',
                 indication: 'Eczema with recurrent infection, dry skin prone to bacterial colonisation'
             },
-            'hydromol': {
+
+'hydromol': {
                 name: 'Hydromol Ointment/Cream',
                 class: 'Emollient',
                 mechanism: 'Occlusive emollient providing skin barrier',
@@ -4661,7 +4117,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very greasy - excellent for very dry skin. Ointment more occlusive than cream. Paraffin-based - fire hazard. Patient preference important for adherence',
                 indication: 'Severe dry skin, eczema, ichthyosis, psoriasis'
             },
-            'benzydamine': {
+
+'benzydamine': {
                 name: 'Benzydamine (Difflam)',
                 class: 'NSAID (topical oral)',
                 mechanism: 'Local anti-inflammatory analgesic for oral/throat use',
@@ -4675,7 +4132,8 @@ const drugDatabase = {
                 clinicalPearls: 'Brand name Difflam commonly used. Useful for sore throat, oral ulcers, post-dental procedure. Can dilute mouthwash if stings',
                 indication: 'Painful oral/throat conditions, mouth ulcers, post-dental procedure, tonsillitis adjunct'
             },
-            'corsodyl': {
+
+'corsodyl': {
                 name: 'Chlorhexidine Mouthwash (Corsodyl)',
                 class: 'Antiseptic mouthwash',
                 mechanism: 'Broad-spectrum antimicrobial - disrupts bacterial cell membranes',
@@ -4689,7 +4147,8 @@ const drugDatabase = {
                 clinicalPearls: 'Brand name Corsodyl. Staining reversible but needs dental cleaning. Use AFTER toothpaste (30min gap) or before meals. Short courses (<4 weeks) to reduce staining',
                 indication: 'Gingivitis, oral hygiene (when brushing difficult), post-oral surgery, mouth ulcers'
             },
-            'gaviscon': {
+
+'gaviscon': {
                 name: 'Alginates (Gaviscon)',
                 class: 'Alginate antacid',
                 mechanism: 'Forms viscous gel/raft on stomach contents preventing reflux',
@@ -4703,7 +4162,8 @@ const drugDatabase = {
                 clinicalPearls: 'Very commonly used OTC. Advance formulation more effective. High sodium in some - Gaviscon Advance lower. Safe in pregnancy for reflux',
                 indication: 'GERD, heartburn, hiatus hernia symptoms, pregnancy-related reflux'
             },
-            'salbutamol-nebulised': {
+
+'salbutamol-nebulised': {
                 name: 'Salbutamol Nebuliser Solution',
                 class: 'Short-acting β2-agonist (nebulised)',
                 mechanism: 'β2-agonist causing bronchodilation',
@@ -4717,7 +4177,8 @@ const drugDatabase = {
                 clinicalPearls: 'Use oxygen-driven in hypoxia, air-driven in COPD (with controlled O2). Back-to-back nebulisers in severe asthma. Monitor K+ in severe asthma',
                 indication: 'Acute asthma/COPD exacerbation, severe bronchospasm, hyperkalemia (with insulin-dextrose)'
             },
-            'ipratropium-nebulised': {
+
+'ipratropium-nebulised': {
                 name: 'Ipratropium Nebuliser Solution',
                 class: 'Antimuscarinic bronchodilator (nebulised)',
                 mechanism: 'Muscarinic antagonist causing bronchodilation',
@@ -4731,7 +4192,8 @@ const drugDatabase = {
                 clinicalPearls: 'Add to salbutamol in severe asthma/COPD. Protect eyes during nebulisation (mouthpiece better than mask). Slower onset than salbutamol but longer duration',
                 indication: 'Acute asthma (adjunct to β2-agonists), COPD exacerbation'
             },
-            'carbomer-eye-gel': {
+
+'carbomer-eye-gel': {
                 name: 'Carbomer Eye Gel (Viscotears/Clinitas)',
                 class: 'Ocular lubricant',
                 mechanism: 'High-viscosity eye lubricant for dry eyes',
@@ -4745,7 +4207,8 @@ const drugDatabase = {
                 clinicalPearls: 'Gel formulation lasts longer than drops. Apply other eye medications 5min before gel. Useful for nocturnal use. Many brands available',
                 indication: 'Dry eye syndrome, keratitis sicca, insufficient tear production'
             },
-            'hypromellose': {
+
+'hypromellose': {
                 name: 'Hypromellose Eye Drops',
                 class: 'Ocular lubricant',
                 mechanism: 'Artificial tears - lubricates ocular surface',
