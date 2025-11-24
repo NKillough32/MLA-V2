@@ -26,30 +26,35 @@ class MedStatsEthicsManager {
     ensureStyles() {
         if (document.getElementById('med-stats-ethics-styles')) return;
         const css = `
-            .med-knowledge-subsection { 
-                border: 1px solid rgba(0,0,0,0.06);
+            /* Subsection card - neutral surface with accessible defaults */
+            .med-knowledge-subsection {
+                border: 1px solid rgba(15,23,42,0.06);
                 border-radius: 6px;
                 padding: 12px;
                 margin-bottom: 8px;
-                background: #f9fafb;
+                background: #ffffff;
+                color: #0f172a; /* default text colour for good contrast on light surfaces */
             }
+            /* Let inline styles / computed palette provide the precise summary colour - use inherit as a safe default */
             .med-knowledge-subsection summary {
                 cursor: pointer;
                 font-weight: 600;
-                color: var(--v2-primary, #e0e1ecff);
+                color: inherit;
                 margin-bottom: 8px;
                 list-style: none;
             }
-            .med-knowledge-subsection ul { margin: 0; padding-left: 20px; }
-            .med-knowledge-subnote { margin-top: 8px; font-style: italic; color: #6b7280; }
-            /* Dark mode adjustments */
+            .med-knowledge-subsection ul { margin: 0; padding-left: 20px; color: inherit; }
+            .med-knowledge-subnote { margin-top: 8px; font-style: italic; color: rgba(15,23,42,0.65); }
+
+            /* Dark mode adjustments: ensure high contrast text on dark surfaces */
             @media (prefers-color-scheme: dark) {
                 .med-knowledge-subsection {
-                    border: 1px solid rgba(255,255,255,0.04);
-                    background: rgba(54, 83, 177, 0.62);
+                    border: 1px solid rgba(255,255,255,0.06);
+                    background: rgba(6, 10, 26, 0.72);
+                    color: rgba(226,232,240,0.98); /* near-white text for contrast */
                 }
-                .med-knowledge-subsection summary { color: var(--v2-primary, #f3f5f8ff); }
-                .med-knowledge-subnote { color: rgba(255, 255, 255, 0.96); }
+                .med-knowledge-subsection summary { color: inherit; }
+                .med-knowledge-subnote { color: rgba(226,232,240,0.86); }
             }
         `;
         const style = document.createElement('style');
@@ -583,10 +588,10 @@ class MedStatsEthicsManager {
      */
     getThemeContext() {
         const fallback = {
-            primary: '#cfd0faff',
-            primaryRgb: '99, 102, 241',
-            subtext: '#ffffffff',
-            summaryColor: '#111827'
+            primary: '#4f46e5',
+            primaryRgb: '79, 70, 229',
+            subtext: '#0f172a',
+            summaryColor: '#0f172a'
         };
 
         if (typeof window === 'undefined' || typeof document === 'undefined') {
@@ -604,17 +609,15 @@ class MedStatsEthicsManager {
         const primary = this.getCssVar('--v2-primary', fallback.primary);
         const primaryRgb = this.getCssVar('--v2-primary-rgb', fallback.primaryRgb);
         const isDark = (document.documentElement?.dataset?.theme || '').toLowerCase() === 'dark';
-        const summaryColor = isDark ? this.getCssVar('--v2-primary-light', primary) : primary;
 
         return {
             badgeBg: `rgba(${primaryRgb}, ${isDark ? 0.18 : 0.12})`,
             badgeColor: primary,
-            // Subtle surfaces for dark mode to preserve contrast but avoid high-contrast boxes
-            subsectionBg: isDark ? 'rgba(69, 70, 133, 0.6)' : 'rgba(49, 65, 100, 0.77)',
-            subsectionBorder: isDark ? 'rgba(255, 255, 255, 0.06)' : 'rgba(15, 23, 42, 0.1)',
-            subnoteColor: isDark ? 'rgba(226, 232, 240, 0.9)' : 'rgba(255, 255, 255, 0.85)',
-            summaryColor,
-            subtext: isDark ? 'rgba(226, 232, 240, 1)' : 'rgba(233, 233, 240, 0.96)'
+            subsectionBg: isDark ? 'rgba(6, 10, 26, 0.72)' : '#ffffff',
+            subsectionBorder: isDark ? 'rgba(255, 255, 255, 0.06)' : 'rgba(15, 23, 42, 0.06)',
+            subnoteColor: isDark ? 'rgba(226, 232, 240, 0.86)' : 'rgba(15, 23, 42, 0.65)',
+            summaryColor: isDark ? 'rgba(255,255,255,0.98)' : 'rgba(15,23,42,0.95)',
+            subtext: isDark ? 'rgba(226,232,240,0.98)' : 'rgba(15,23,42,0.95)'
         };
     }
 
