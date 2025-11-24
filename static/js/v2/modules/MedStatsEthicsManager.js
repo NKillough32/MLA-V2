@@ -2,10 +2,11 @@
  * MedStatsEthicsManager.js - Centralized renderer for medical statistics,
  * epidemiology, and ethics reference content.
  *
-                            'Bayes conversion (practical): pre-test odds = p / (1 - p). post-test odds = pre-test odds * LR. post-test probability = post-test odds / (1 + post-test odds).',
+ * Bayes conversion (practical): pre-test odds = p / (1 - p). post-test odds = pre-test odds * LR. post-test probability = post-test odds / (1 + post-test odds).
+ * Worked example: PSA test LR+ = 2.5, LR- = 0.6. Pre-test probability 10% → pre-test odds = 0.1 / 0.9 = 0.111. Positive: post odds = 0.111*2.5=0.277 → post-prob = 0.277/(1+0.277)=0.217 → 21.7%. Negative: post odds = 0.111*0.6=0.067 → post-prob = 6.2%.
  * Keeps the knowledge cards modular and reusable across the Medical Tools
  * panel without hard-coding them into HTML templates.
-                            'Worked example: PSA test LR+ = 2.5, LR- = 0.6. Pre-test probability 10% → pre-test odds = 0.1 / 0.9 = 0.111. Positive: post odds = 0.111*2.5=0.277 → post-prob = 0.277/(1+0.277)=0.217 → 21.7%. Negative: post odds = 0.111*0.6=0.067 → post-prob = 6.2%.',
+ */
 class MedStatsEthicsManager {
     constructor() {
         this.sections = this.buildSections();
