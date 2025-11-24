@@ -188,6 +188,15 @@ class LaddersManager {
                         shortTitle: 'COPD Escalation',
                         reference: 'NICE NG115 (2023 update)',
                         summary: 'Escalate based on symptoms, exacerbation risk and eosinophil phenotype. Treat exacerbations promptly with controlled oxygen, short course steroids and selected antibiotics when indicated.',
+                        spirometryClassification: {
+                            note: "The severity of COPD is categorised by using the patient's FEV1. This man's COPD is categorised as Stage 1 (Mild) as his FEV1 is >80% of the predicted value.",
+                            stages: [
+                                { stage: 'Stage 1 (Mild)', criteria: 'FEV1 > 80% of predicted' },
+                                { stage: 'Stage 2 (Moderate)', criteria: 'FEV1 50-79% of predicted' },
+                                { stage: 'Stage 3 (Severe)', criteria: 'FEV1 30-49% of predicted' },
+                                { stage: 'Stage 4 (Very severe)', criteria: 'FEV1 < 30% of predicted' }
+                            ]
+                        },
                         clinicalPearls: [
                             'Repeat eosinophils before adding ICS or triple therapy; prioritise dual bronchodilation first.',
                             'Pulmonary rehabilitation, vaccination, and inhaler training reduce exacerbations as much as medication changes.',
