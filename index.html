@@ -10362,27 +10362,7 @@
                         <button class="btn" id="uploadBtn" style="margin-bottom: 8px; background: #34c759;">
                             📁 Choose Quiz Files
                         </button>
-                        <button class="btn btn-secondary" id="clearUploaded" style="margin-bottom: 8px; background: #ff3b30;" onclick="if(confirm('Clear all uploaded quizzes? This will free up browser storage space.')) {
-                            // Call the robust clear function from V2 app
-                            if (window.MLAQuizApp && window.MLAQuizApp.quizManager && typeof window.MLAQuizApp.quizManager.clearAllUploaded === 'function') {
-                                window.MLAQuizApp.quizManager.clearAllUploaded().then(() => {
-                                    console.log('✅ All uploaded quiz data cleared successfully');
-                                    // Show confirmation and reload
-                                    alert('✅ All uploaded quizzes and their storage have been cleared.');
-                                    location.reload();
-                                }).catch(err => {
-                                    console.error('❌ Error during clear:', err);
-                                    alert('❌ Error clearing quizzes. Check console for details.');
-                                });
-                            } else {
-                                console.warn('⚠️ V2 Quiz Manager not available, falling back to basic clear');
-                                localStorage.removeItem('uploadedQuizzes');
-                                if (window.tempUploadedQuizzes) window.tempUploadedQuizzes = [];
-                                location.reload();
-                            }
-                        }">
-                            🗑️ Clear Uploaded
-                        </button>
+                        <!-- Clear Uploaded button removed (intentional) -->
                         <button class="btn btn-secondary" id="purgeAppBtn" style="margin-bottom: 8px; background: #6366F1; color: #fff;">
                             🔄 Purge App Cache
                         </button>
