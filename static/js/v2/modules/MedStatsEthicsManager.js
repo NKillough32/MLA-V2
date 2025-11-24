@@ -224,7 +224,9 @@ class MedStatsEthicsManager {
                         heading: 'Screening Test Statistics',
                         items: [
                             'Sensitivity, specificity, PPV, NPV, likelihood ratios and area under ROC; consider spectrum effects and reference-standard bias.',
+                            'Formulas (2x2 table): Sensitivity = TP/(TP+FN); Specificity = TN/(TN+FP); PPV = TP/(TP+FP); NPV = TN/(TN+FN); LR+ = Sensitivity/(1−Specificity); LR− = (1−Sensitivity)/Specificity.',
                             'Example: Mammography for breast cancer: sensitivity 85% (detects 85% of cancers), specificity 90% (90% of normals are negative).',
+                            'Worked example with data: 1,000 patients tested; disease prevalence 10% → TP=80, FN=20, FP=18, TN=882. Sensitivity = 80/(80+20)=0.80; Specificity = 882/(882+18)=0.98; PPV = 80/(80+18)=0.82; NPV = 882/(882+20)=0.98; LR+ ≈ 40; LR− ≈ 0.20.',
                             'Worked example: COVID test: sensitivity 95%, specificity 98%. In low prevalence (1%), PPV=16% (many false positives); in high prevalence (20%), PPV=83%.'
                         ]
                     },
