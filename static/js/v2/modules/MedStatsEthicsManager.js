@@ -577,7 +577,7 @@ class MedStatsEthicsManager {
      */
     getThemeContext() {
         const fallback = {
-            primary: '#6366f1',
+            primary: '#a5a6ecff',
             primaryRgb: '99, 102, 241',
             subtext: '#ffffffff',
             summaryColor: '#111827'
