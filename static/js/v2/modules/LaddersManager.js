@@ -1808,6 +1808,34 @@ class LaddersManager {
 
     const overviewHtml = ladder.summary || '';
 
+    // Render spirometry classification (eg. COPD FEV1 staging) when present
+    const spirometryHtml = ladder.spirometryClassification ? (() => {
+        try {
+            const sc = ladder.spirometryClassification;
+            const note = sc.note ? `<div style="margin-top:8px">${sc.note}</div>` : '';
+            const stages = Array.isArray(sc.stages) ? sc.stages : [];
+            const rows = stages.map(s => `<tr><td style="padding:6px;min-width:180px"><strong>${s.stage}</strong></td><td style="padding:6px">${s.criteria}</td></tr>`).join('');
+            const table = stages.length ? `
+                <div style="margin-top:10px">
+                    <h5 style="margin:6px 0">Spirometry classification</h5>
+                    <table class="guideline-steps-table" style="width:auto;max-width:100%">
+                        <thead><tr><th style="text-align:left">Stage</th><th style="text-align:left">Criteria</th></tr></thead>
+                        <tbody>${rows}</tbody>
+                    </table>
+                </div>
+            ` : '';
+
+            return `
+                <div class="guideline-spirometry">
+                    ${note}
+                    ${table}
+                </div>
+            `;
+        } catch (e) {
+            return '';
+        }
+    })() : '';
+
     const normalizeFlags = (arr) => arr.map(flag => typeof flag === 'string' ? { stage: flag } : flag);
 
     // RED-FLAG filter – prefer explicit entries, otherwise use keyword heuristic
@@ -1943,7 +1971,7 @@ class LaddersManager {
                     </div>
 
                     <div class="pill-content active" data-guideline="${ladder.key}" data-pill="overview" id="pillcontent-${ladder.key}-overview" role="tabpanel" aria-labelledby="pill-${ladder.key}-overview">
-                        <div class="guideline-meta">${overviewHtml}</div>
+                        <div class="guideline-meta">${overviewHtml}${spirometryHtml}</div>
                     </div>
 
                     <div class="pill-content" data-guideline="${ladder.key}" data-pill="steps" id="pillcontent-${ladder.key}-steps" role="tabpanel" aria-labelledby="pill-${ladder.key}-steps">
