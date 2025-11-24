@@ -149,8 +149,7 @@ const drugDatabase = {
                 sideEffects: 'Bleeding, anaemia, nausea, hypotension',
                 pharmacokinetics: 'Peak: 3-4h, Half-life: 12h, multiple elimination pathways',
                 clinicalPearls: 'Can be taken with or without food. Less renal clearance than rivaroxaban',
-                indication: 'Atrial fibrillation stroke prevention, VTE treatment and prophylaxis'
-                ,
+                indication: 'Atrial fibrillation stroke prevention, VTE treatment and prophylaxis',
                 reversal: 'Life-threatening bleeding: andexanet alfa where available; if not available or contraindicated consider 4-factor PCC. For non-life-threatening bleeding consider local protocols. Avoid routine bridging with heparin when stopping for procedures unless high thrombotic risk.'
             },
 
