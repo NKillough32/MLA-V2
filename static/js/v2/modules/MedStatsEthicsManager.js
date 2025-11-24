@@ -34,7 +34,7 @@ class MedStatsEthicsManager {
             .med-knowledge-subsection summary {
                 cursor: pointer;
                 font-weight: 600;
-                color: var(--v2-primary, #9395dfff);
+                color: var(--v2-primary, #e0e1ecff);
                 margin-bottom: 8px;
                 list-style: none;
             }
