@@ -529,6 +529,45 @@ export class PDFLibraryManager {
             }));
         }
 
+        /**
+         * Retrieve metadata for a filename, handling path-based revision entries.
+         * @param {string} filename - PDF filename or path
+         * @returns {Object|null} Metadata record if found
+         */
+        getMetadataForFilename(filename) {
+            if (!filename || !this.metadataMap || typeof this.metadataMap.get !== 'function') {
+                return null;
+            }
+
+            try {
+                const filenameBase = String(filename).replace(/\.pdf$/i, '').trim();
+                const candidates = [filenameBase];
+
+                const leaf = filenameBase.split('/').pop();
+                if (leaf && leaf !== filenameBase) {
+                    candidates.push(leaf);
+                }
+
+                if (leaf) {
+                    const withoutPrefix = leaf.replace(/^\d+\.?\s*/, '').trim();
+                    if (withoutPrefix && withoutPrefix !== leaf) {
+                        candidates.push(withoutPrefix);
+                    }
+                }
+
+                for (const candidate of candidates) {
+                    const metaKey = normalizePdfTitleKey(candidate);
+                    if (this.metadataMap.has(metaKey)) {
+                        return this.metadataMap.get(metaKey) || null;
+                    }
+                }
+            } catch (e) {
+                console.debug('Metadata lookup failed for', filename, e);
+            }
+
+            return null;
+        }
+
     /**
      * Search PDFs by filename
      * @param {string} query - Search query
@@ -542,7 +581,11 @@ export class PDFLibraryManager {
         const searchTerm = String(query).toLowerCase();
         const results = [];
 
-        for (const filename of (this.pdfIndex || [])) {
+        const revisionFiles = (this.revisionAvailable && Array.isArray(this.revisionIndex)) ? this.revisionIndex : [];
+        const revisionSet = new Set(revisionFiles);
+        const filenames = [...new Set([...(this.pdfIndex || []), ...revisionFiles])];
+
+        for (const filename of filenames) {
             try {
                 const lowerFilename = String(filename || '').toLowerCase();
                 let matched = false;
@@ -559,32 +602,28 @@ export class PDFLibraryManager {
                 }
 
                 // 3) Match against metadata if available (displayTitle, subjectTagline, keywordSummary, keywords)
-                if (!matched && this.metadataMap && typeof this.metadataMap.get === 'function') {
+                if (!matched) {
                     try {
-                        const filenameBase = String(filename || '').replace(/\.pdf$/i, '').trim();
-                        const metaKey = normalizePdfTitleKey(filenameBase);
-                        if (this.metadataMap.has(metaKey)) {
-                            const meta = this.metadataMap.get(metaKey) || {};
-                            const fieldsToCheck = [];
+                        const meta = this.getMetadataForFilename(filename) || {};
+                        const fieldsToCheck = [];
 
-                            if (meta.displayTitle) fieldsToCheck.push(String(meta.displayTitle));
-                            if (meta.subjectTitle) fieldsToCheck.push(String(meta.subjectTitle));
-                            if (meta.subjectTagline) fieldsToCheck.push(String(meta.subjectTagline));
-                            if (meta.displayTagline) fieldsToCheck.push(String(meta.displayTagline));
-                            if (meta.keywordSummary) fieldsToCheck.push(String(meta.keywordSummary));
+                        if (meta.displayTitle) fieldsToCheck.push(String(meta.displayTitle));
+                        if (meta.subjectTitle) fieldsToCheck.push(String(meta.subjectTitle));
+                        if (meta.subjectTagline) fieldsToCheck.push(String(meta.subjectTagline));
+                        if (meta.displayTagline) fieldsToCheck.push(String(meta.displayTagline));
+                        if (meta.keywordSummary) fieldsToCheck.push(String(meta.keywordSummary));
 
-                            if (Array.isArray(meta.keywords)) {
-                                for (const kw of meta.keywords) fieldsToCheck.push(String(kw));
-                            } else if (meta.keywords && typeof meta.keywords === 'string') {
-                                fieldsToCheck.push(String(meta.keywords));
-                            }
+                        if (Array.isArray(meta.keywords)) {
+                            for (const kw of meta.keywords) fieldsToCheck.push(String(kw));
+                        } else if (meta.keywords && typeof meta.keywords === 'string') {
+                            fieldsToCheck.push(String(meta.keywords));
+                        }
 
-                            for (const txt of fieldsToCheck) {
-                                if (!txt) continue;
-                                if (txt.toLowerCase().includes(searchTerm)) {
-                                    matched = true;
-                                    break;
-                                }
+                        for (const txt of fieldsToCheck) {
+                            if (!txt) continue;
+                            if (txt.toLowerCase().includes(searchTerm)) {
+                                matched = true;
+                                break;
                             }
                         }
                     } catch (metaErr) {
@@ -596,7 +635,7 @@ export class PDFLibraryManager {
                     results.push({
                         filename: filename,
                         title: this.getDisplayTitle(filename),
-                        category: this.categorizePDF(filename)
+                        category: revisionSet.has(filename) ? 'revision' : this.categorizePDF(filename)
                     });
                 }
             } catch (e) {
@@ -790,15 +829,11 @@ export class PDFLibraryManager {
             // the filename base (strip the `.pdf` extension) so CSV keys
             // generated at build-time match filenames in the index.
             try {
-                const filenameBase = String(filename).replace(/\.pdf$/i, '').trim();
-                const metaKey = normalizePdfTitleKey(filenameBase);
-                if (this.metadataMap && this.metadataMap.has(metaKey)) {
-                    const meta = this.metadataMap.get(metaKey);
-                    const titleFromMeta = meta && (meta.displayTitle || meta.subjectTitle || '').trim();
-                    if (titleFromMeta) {
-                        this.titleCache.set(cacheKey, titleFromMeta);
-                        return titleFromMeta;
-                    }
+                const meta = this.getMetadataForFilename(filename);
+                const titleFromMeta = meta && (meta.displayTitle || meta.subjectTitle || '').trim();
+                if (titleFromMeta) {
+                    this.titleCache.set(cacheKey, titleFromMeta);
+                    return titleFromMeta;
                 }
             } catch (e) {
                 // Continue to fallback behavior below
@@ -1347,8 +1382,7 @@ export class PDFLibraryManager {
             }
 
             // Try to enrich with metadata for tagline; fall back silently
-            const filenameBase = String(pdf.filename || '').replace(/\.pdf$/i, '').trim();
-            const meta = this.metadataMap ? this.metadataMap.get(normalizePdfTitleKey(filenameBase)) : null;
+            const meta = this.getMetadataForFilename(pdf.filename);
             const taglineRaw = meta && (meta.displayTagline || meta.subjectTagline) ? (meta.displayTagline || meta.subjectTagline) : '';
             const tagline = taglineRaw ? this.escapeHtml(taglineRaw) : '';
 

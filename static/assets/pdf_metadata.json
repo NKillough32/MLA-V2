@@ -8256,5 +8256,501 @@
     "displayTitle": "Sgarbossa Criteria",
     "displayTagline": "ECG criteria for MI in LBBB.",
     "keywordSummary": "ECG • MI • Lbbb"
+  },
+  "criticalcare": {
+    "pdf": "static/revision/1. Critical Care",
+    "subjectTitle": "Critical Care (PLAB Revision)",
+    "subjectTagline": "Resuscitation, shock, ventilation, and ICU organ support aligned to MLA topics.",
+    "keywords": [
+      "Critical care",
+      "Resuscitation",
+      "Sepsis",
+      "Ventilation",
+      "Shock",
+      "Airway"
+    ],
+    "displayTitle": "Critical Care Revision Guide",
+    "displayTagline": "PLAB-aligned critical care revision for resuscitation, ventilation, and shock management.",
+    "keywordSummary": "Critical care • Resuscitation • Sepsis • Ventilation"
+  },
+  "dermatology": {
+    "pdf": "static/revision/2. Dermatology",
+    "subjectTitle": "Dermatology (PLAB Revision)",
+    "subjectTagline": "Rashes, infections, skin tumours, and dermatological emergencies matched to MLA coverage.",
+    "keywords": [
+      "Dermatology",
+      "Rash",
+      "Skin cancer",
+      "Infection",
+      "Eczema",
+      "Psoriasis"
+    ],
+    "displayTitle": "Dermatology Revision Guide",
+    "displayTagline": "PLAB-focused dermatology revision on inflammatory, infectious, and malignant skin disease.",
+    "keywordSummary": "Dermatology • Rash • Infection • Skin cancer"
+  },
+  "emergencymedicine": {
+    "pdf": "static/revision/3. Emergency Medicine",
+    "subjectTitle": "Emergency Medicine (PLAB Revision)",
+    "subjectTagline": "Major presentations, trauma, and ED decision-making reflecting MLA expectations.",
+    "keywords": [
+      "Emergency",
+      "Trauma",
+      "Triage",
+      "Resuscitation",
+      "Shock",
+      "Poisoning"
+    ],
+    "displayTitle": "Emergency Medicine Revision Guide",
+    "displayTagline": "PLAB revision for common ED scenarios, trauma calls, and time-critical decisions.",
+    "keywordSummary": "Emergency • Trauma • Triage • Resuscitation"
+  },
+  "endocrine": {
+    "pdf": "static/revision/4. Endocrine",
+    "subjectTitle": "Endocrine (PLAB Revision)",
+    "subjectTagline": "Diabetes, thyroid disease, adrenal crises, and electrolyte disorders as per MLA topics.",
+    "keywords": [
+      "Endocrine",
+      "Diabetes",
+      "Thyroid",
+      "Adrenal",
+      "Calcium",
+      "Electrolytes"
+    ],
+    "displayTitle": "Endocrine Revision Guide",
+    "displayTagline": "PLAB-oriented endocrine revision covering diabetes, thyroid, adrenal, and calcium balance disorders.",
+    "keywordSummary": "Endocrine • Diabetes • Thyroid • Adrenal"
+  },
+  "ent": {
+    "pdf": "static/revision/5. ENT",
+    "subjectTitle": "ENT (PLAB Revision)",
+    "subjectTagline": "Ear, nose, and throat infections, airway risks, and urgent presentations mapped to MLA content.",
+    "keywords": [
+      "ENT",
+      "Airway",
+      "Epistaxis",
+      "Otitis",
+      "Tonsillitis",
+      "Sinusitis"
+    ],
+    "displayTitle": "ENT Revision Guide",
+    "displayTagline": "PLAB-focused ENT revision covering airway risks, epistaxis, otitis, and throat emergencies.",
+    "keywordSummary": "ENT • Airway • Epistaxis • Infection"
+  },
+  "gastroenterology": {
+    "pdf": "static/revision/6. Gastroenterology",
+    "subjectTitle": "Gastroenterology (PLAB Revision)",
+    "subjectTagline": "Upper and lower GI disease, liver pathology, and acute abdomen topics aligned to MLA.",
+    "keywords": [
+      "Gastroenterology",
+      "Liver",
+      "IBD",
+      "Pancreatitis",
+      "GI bleed",
+      "Hepatitis"
+    ],
+    "displayTitle": "Gastroenterology Revision Guide",
+    "displayTagline": "PLAB-style gastroenterology revision for GI bleeding, IBD, hepatology, and acute abdomen.",
+    "keywordSummary": "Gastroenterology • Liver • IBD • GI bleed"
+  },
+  "haematology": {
+    "pdf": "static/revision/7. Haematology",
+    "subjectTitle": "Haematology (PLAB Revision)",
+    "subjectTagline": "Anaemia, coagulation, transfusion, and haematological malignancy review for MLA.",
+    "keywords": [
+      "Haematology",
+      "Anaemia",
+      "Coagulation",
+      "Transfusion",
+      "Thrombosis",
+      "Malignancy"
+    ],
+    "displayTitle": "Haematology Revision Guide",
+    "displayTagline": "PLAB revision covering anaemia, clotting disorders, transfusion, and malignant haematology.",
+    "keywordSummary": "Haematology • Anaemia • Coagulation • Transfusion"
+  },
+  "neurology": {
+    "pdf": "static/revision/8. Neurology",
+    "subjectTitle": "Neurology (PLAB Revision)",
+    "subjectTagline": "Stroke, seizures, neuropathies, and neurology examination in line with MLA themes.",
+    "keywords": [
+      "Neurology",
+      "Stroke",
+      "Seizure",
+      "Headache",
+      "Neuropathy",
+      "Movement"
+    ],
+    "displayTitle": "Neurology Revision Guide",
+    "displayTagline": "PLAB-ready neurology revision for stroke, seizures, headaches, and neurological examination.",
+    "keywordSummary": "Neurology • Stroke • Seizure • Headache"
+  },
+  "urology": {
+    "pdf": "static/revision/9. Urology",
+    "subjectTitle": "Urology (PLAB Revision)",
+    "subjectTagline": "Renal colic, retention, prostate disease, and UTIs reflecting MLA scope.",
+    "keywords": [
+      "Urology",
+      "Renal colic",
+      "Retention",
+      "UTI",
+      "Prostate",
+      "Stone"
+    ],
+    "displayTitle": "Urology Revision Guide",
+    "displayTagline": "PLAB revision on urinary obstruction, stones, prostate disease, and infection.",
+    "keywordSummary": "Urology • Renal colic • Retention • UTI"
+  },
+  "obstetricsandgynaecology": {
+    "pdf": "static/revision/10. Obstetrics and Gynaecology",
+    "subjectTitle": "Obstetrics and Gynaecology (PLAB Revision)",
+    "subjectTagline": "Antenatal care, obstetric emergencies, contraception, and common gynae issues for MLA.",
+    "keywords": [
+      "Obstetrics",
+      "Gynaecology",
+      "Pregnancy",
+      "Contraception",
+      "Labour",
+      "Postpartum"
+    ],
+    "displayTitle": "Obstetrics and Gynaecology Revision Guide",
+    "displayTagline": "PLAB-aligned obstetrics and gynaecology revision covering pregnancy care and acute gynae problems.",
+    "keywordSummary": "Obstetrics • Gynaecology • Pregnancy • Contraception"
+  },
+  "radiology": {
+    "pdf": "static/revision/11. Radiology",
+    "subjectTitle": "Radiology (PLAB Revision)",
+    "subjectTagline": "Imaging interpretation, modality choice, and radiation safety aligned with MLA.",
+    "keywords": [
+      "Radiology",
+      "Imaging",
+      "X-ray",
+      "CT",
+      "MRI",
+      "Ultrasound"
+    ],
+    "displayTitle": "Radiology Revision Guide",
+    "displayTagline": "PLAB-focused radiology revision on interpreting common studies and selecting safe imaging.",
+    "keywordSummary": "Radiology • Imaging • X-ray • CT"
+  },
+  "ophthalmology": {
+    "pdf": "static/revision/12. Ophthalmology",
+    "subjectTitle": "Ophthalmology (PLAB Revision)",
+    "subjectTagline": "Red eye, acute vision loss, trauma, and ocular examinations aligned to MLA outcomes.",
+    "keywords": [
+      "Ophthalmology",
+      "Red eye",
+      "Vision loss",
+      "Trauma",
+      "Glaucoma",
+      "Retina"
+    ],
+    "displayTitle": "Ophthalmology Revision Guide",
+    "displayTagline": "PLAB revision for red eye, acute vision loss, ocular trauma, and key eye examinations.",
+    "keywordSummary": "Ophthalmology • Red eye • Vision loss • Trauma"
+  },
+  "orthopaedics": {
+    "pdf": "static/revision/13. Orthopaedics",
+    "subjectTitle": "Orthopaedics (PLAB Revision)",
+    "subjectTagline": "Fractures, dislocations, immobilisation, and MSK infection in MLA scope.",
+    "keywords": [
+      "Orthopaedics",
+      "Fracture",
+      "Dislocation",
+      "Immobilisation",
+      "MSK infection",
+      "Back pain"
+    ],
+    "displayTitle": "Orthopaedics Revision Guide",
+    "displayTagline": "PLAB-oriented orthopaedics revision on fractures, MSK emergencies, and postoperative care.",
+    "keywordSummary": "Orthopaedics • Fracture • Dislocation • MSK"
+  },
+  "paediatrics": {
+    "pdf": "static/revision/14. Paediatrics",
+    "subjectTitle": "Paediatrics (PLAB Revision)",
+    "subjectTagline": "Childhood emergencies, safeguarding, growth, and common infections mapped to MLA content.",
+    "keywords": [
+      "Paediatrics",
+      "Fever",
+      "Respiratory",
+      "Sepsis",
+      "Safeguarding",
+      "Dosing"
+    ],
+    "displayTitle": "Paediatrics Revision Guide",
+    "displayTagline": "PLAB-style paediatrics revision for acute illness, safeguarding, and paediatric prescribing.",
+    "keywordSummary": "Paediatrics • Fever • Safeguarding • Dosing"
+  },
+  "geriatric": {
+    "pdf": "static/revision/15. Geriatric",
+    "subjectTitle": "Geriatric Medicine (PLAB Revision)",
+    "subjectTagline": "Frailty, falls, delirium, and polypharmacy considerations aligned with MLA.",
+    "keywords": [
+      "Geriatrics",
+      "Frailty",
+      "Falls",
+      "Delirium",
+      "Polypharmacy",
+      "Capacity"
+    ],
+    "displayTitle": "Geriatric Medicine Revision Guide",
+    "displayTagline": "PLAB-aligned geriatrics revision on frailty syndromes, cognition, and medicines optimisation.",
+    "keywordSummary": "Geriatrics • Frailty • Falls • Delirium"
+  },
+  "rheumatology": {
+    "pdf": "static/revision/16. Rheumatology",
+    "subjectTitle": "Rheumatology (PLAB Revision)",
+    "subjectTagline": "Inflammatory arthritis, connective tissue disease, vasculitis, and MSK assessment.",
+    "keywords": [
+      "Rheumatology",
+      "Arthritis",
+      "Autoimmune",
+      "Vasculitis",
+      "Back pain",
+      "MSK"
+    ],
+    "displayTitle": "Rheumatology Revision Guide",
+    "displayTagline": "PLAB-focused rheumatology revision for arthritis patterns, autoimmune disease, and MSK examination.",
+    "keywordSummary": "Rheumatology • Arthritis • Autoimmune • Vasculitis"
+  },
+  "genetics": {
+    "pdf": "static/revision/17. Genetics",
+    "subjectTitle": "Genetics (PLAB Revision)",
+    "subjectTagline": "Inheritance patterns, screening, and counselling topics aligned to MLA expectations.",
+    "keywords": [
+      "Genetics",
+      "Inheritance",
+      "Counselling",
+      "Screening",
+      "Genomic",
+      "Risk"
+    ],
+    "displayTitle": "Genetics Revision Guide",
+    "displayTagline": "PLAB revision for inheritance patterns, genetic screening, and counselling conversations.",
+    "keywordSummary": "Genetics • Inheritance • Screening • Counselling"
+  },
+  "vascularsurgery": {
+    "pdf": "static/revision/18. Vascular surgery",
+    "subjectTitle": "Vascular Surgery (PLAB Revision)",
+    "subjectTagline": "Peripheral vascular disease, aneurysms, acute limb ischaemia, and postoperative issues.",
+    "keywords": [
+      "Vascular",
+      "Peripheral arterial disease",
+      "Aneurysm",
+      "Limb ischaemia",
+      "Bypass",
+      "Claudication"
+    ],
+    "displayTitle": "Vascular Surgery Revision Guide",
+    "displayTagline": "PLAB-oriented vascular surgery revision covering aneurysms, PAD, and acute limb ischaemia.",
+    "keywordSummary": "Vascular • PAD • Aneurysm • Limb ischaemia"
+  },
+  "cardiology": {
+    "pdf": "static/revision/19. Cardiology",
+    "subjectTitle": "Cardiology (PLAB Revision)",
+    "subjectTagline": "Chest pain, arrhythmias, heart failure, and valvular disease aligned with MLA topics.",
+    "keywords": [
+      "Cardiology",
+      "ACS",
+      "Arrhythmia",
+      "Heart failure",
+      "Valve",
+      "Hypertension"
+    ],
+    "displayTitle": "Cardiology Revision Guide",
+    "displayTagline": "PLAB-ready cardiology revision on ACS, arrhythmias, heart failure, and valve disease.",
+    "keywordSummary": "Cardiology • ACS • Arrhythmia • Heart failure"
+  },
+  "epidemiology": {
+    "pdf": "static/revision/20. Epidemiology",
+    "subjectTitle": "Epidemiology (PLAB Revision)",
+    "subjectTagline": "Study design, screening metrics, biases, and population health calculations for MLA.",
+    "keywords": [
+      "Epidemiology",
+      "Screening",
+      "Biostatistics",
+      "Bias",
+      "Study design",
+      "Risk"
+    ],
+    "displayTitle": "Epidemiology Revision Guide",
+    "displayTagline": "PLAB-style epidemiology revision covering screening performance, study types, and bias.",
+    "keywordSummary": "Epidemiology • Screening • Biostatistics • Bias"
+  },
+  "oncology": {
+    "pdf": "static/revision/21. Oncology",
+    "subjectTitle": "Oncology (PLAB Revision)",
+    "subjectTagline": "Cancer red flags, staging, treatment complications, and symptom control per MLA content.",
+    "keywords": [
+      "Oncology",
+      "Cancer",
+      "Staging",
+      "Chemotherapy",
+      "Radiotherapy",
+      "Palliative"
+    ],
+    "displayTitle": "Oncology Revision Guide",
+    "displayTagline": "PLAB-focused oncology revision for cancer recognition, staging principles, and treatment effects.",
+    "keywordSummary": "Oncology • Cancer • Staging • Chemotherapy"
+  },
+  "anatomy": {
+    "pdf": "static/revision/22. Anatomy",
+    "subjectTitle": "Anatomy (PLAB Revision)",
+    "subjectTagline": "Regional anatomy, surface landmarks, and nerve/vascular supply aligned with MLA structures.",
+    "keywords": [
+      "Anatomy",
+      "Musculoskeletal",
+      "Neuroanatomy",
+      "Vascular",
+      "Surface marking",
+      "Nerves"
+    ],
+    "displayTitle": "Anatomy Revision Guide",
+    "displayTagline": "PLAB-style anatomy revision on regional structures, key nerves, and surface landmarks.",
+    "keywordSummary": "Anatomy • Musculoskeletal • Neuroanatomy • Vascular"
+  },
+  "psychiatry": {
+    "pdf": "static/revision/23. Psychiatry",
+    "subjectTitle": "Psychiatry (PLAB Revision)",
+    "subjectTagline": "Mood disorders, psychosis, risk assessment, capacity, and substance misuse per MLA.",
+    "keywords": [
+      "Psychiatry",
+      "Depression",
+      "Psychosis",
+      "Risk",
+      "Capacity",
+      "Addiction"
+    ],
+    "displayTitle": "Psychiatry Revision Guide",
+    "displayTagline": "PLAB-focused psychiatry revision on mood, psychosis, risk, and capacity assessments.",
+    "keywordSummary": "Psychiatry • Depression • Psychosis • Risk"
+  },
+  "ethics": {
+    "pdf": "static/revision/24. Ethics",
+    "subjectTitle": "Ethics and Law (PLAB Revision)",
+    "subjectTagline": "Consent, confidentiality, safeguarding, and GMC-aligned ethical frameworks.",
+    "keywords": [
+      "Ethics",
+      "Consent",
+      "Confidentiality",
+      "Capacity",
+      "Safeguarding",
+      "Law"
+    ],
+    "displayTitle": "Ethics Revision Guide",
+    "displayTagline": "PLAB-ready ethics revision for consent, confidentiality, safeguarding, and legal duties.",
+    "keywordSummary": "Ethics • Consent • Confidentiality • Safeguarding"
+  },
+  "generalsurgery": {
+    "pdf": "static/revision/25.General Surgery",
+    "subjectTitle": "General Surgery (PLAB Revision)",
+    "subjectTagline": "Abdominal emergencies, perioperative care, hernias, and postoperative complications.",
+    "keywords": [
+      "Surgery",
+      "Appendicitis",
+      "Hernia",
+      "Perioperative",
+      "Gallbladder",
+      "Bowel obstruction"
+    ],
+    "displayTitle": "General Surgery Revision Guide",
+    "displayTagline": "PLAB-aligned general surgery revision on acute abdomen, hernias, and perioperative issues.",
+    "keywordSummary": "Surgery • Acute abdomen • Hernia • Perioperative"
+  },
+  "genitourinary": {
+    "pdf": "static/revision/26. Genitourinary",
+    "subjectTitle": "Genitourinary (PLAB Revision)",
+    "subjectTagline": "Genital and urinary tract infections, STIs, and reproductive tract disorders as per MLA.",
+    "keywords": [
+      "Genitourinary",
+      "STI",
+      "UTI",
+      "Pelvic pain",
+      "Renal",
+      "Reproductive"
+    ],
+    "displayTitle": "Genitourinary Revision Guide",
+    "displayTagline": "PLAB-focused genitourinary revision covering UTIs, STIs, pelvic pain, and renal tract issues.",
+    "keywordSummary": "Genitourinary • STI • UTI • Pelvic pain"
+  },
+  "palliativecare": {
+    "pdf": "static/revision/27. Palliative Care",
+    "subjectTitle": "Palliative Care (PLAB Revision)",
+    "subjectTagline": "Symptom control, communication, advance care planning, and end-of-life care per MLA.",
+    "keywords": [
+      "Palliative",
+      "End of life",
+      "Pain",
+      "Nausea",
+      "Communication",
+      "Advance care"
+    ],
+    "displayTitle": "Palliative Care Revision Guide",
+    "displayTagline": "PLAB-ready palliative care revision for symptom control and end-of-life decision-making.",
+    "keywordSummary": "Palliative • End of life • Pain • Communication"
+  },
+  "pharmacology": {
+    "pdf": "static/revision/28. Pharmacology",
+    "subjectTitle": "Pharmacology (PLAB Revision)",
+    "subjectTagline": "Drug classes, mechanisms, interactions, and safe prescribing mapped to MLA outcomes.",
+    "keywords": [
+      "Pharmacology",
+      "Prescribing",
+      "Side effects",
+      "Interactions",
+      "Dosing",
+      "Monitoring"
+    ],
+    "displayTitle": "Pharmacology Revision Guide",
+    "displayTagline": "PLAB-focused pharmacology revision covering mechanisms, side effects, and safe prescribing.",
+    "keywordSummary": "Pharmacology • Prescribing • Side effects • Interactions"
+  },
+  "infectiousdiseases": {
+    "pdf": "static/revision/29. Infectious Diseases",
+    "subjectTitle": "Infectious Diseases (PLAB Revision)",
+    "subjectTagline": "Sepsis, antimicrobial stewardship, vaccination, and travel infections aligned to MLA topics.",
+    "keywords": [
+      "Infection",
+      "Sepsis",
+      "Antibiotics",
+      "Vaccination",
+      "Travel",
+      "Isolation"
+    ],
+    "displayTitle": "Infectious Diseases Revision Guide",
+    "displayTagline": "PLAB revision for infection recognition, sepsis pathways, and antimicrobial stewardship.",
+    "keywordSummary": "Infection • Sepsis • Antibiotics • Vaccination"
+  },
+  "nephrology": {
+    "pdf": "static/revision/30. Nephrology",
+    "subjectTitle": "Nephrology (PLAB Revision)",
+    "subjectTagline": "AKI, CKD, electrolyte disorders, dialysis, and hypertension within MLA scope.",
+    "keywords": [
+      "Nephrology",
+      "AKI",
+      "CKD",
+      "Electrolytes",
+      "Dialysis",
+      "Hypertension"
+    ],
+    "displayTitle": "Nephrology Revision Guide",
+    "displayTagline": "PLAB-style nephrology revision on kidney injury, CKD, electrolytes, and renal replacement.",
+    "keywordSummary": "Nephrology • AKI • CKD • Electrolytes"
+  },
+  "respiratory": {
+    "pdf": "static/revision/31. Respiratory",
+    "subjectTitle": "Respiratory (PLAB Revision)",
+    "subjectTagline": "Asthma, COPD, pneumonia, pleural disease, and respiratory failure aligned with MLA content.",
+    "keywords": [
+      "Respiratory",
+      "Asthma",
+      "COPD",
+      "Pneumonia",
+      "Pleural",
+      "Respiratory failure"
+    ],
+    "displayTitle": "Respiratory Revision Guide",
+    "displayTagline": "PLAB-focused respiratory revision covering airway disease, infection, and pleural pathology.",
+    "keywordSummary": "Respiratory • Asthma • COPD • Pneumonia"
   }
 }
