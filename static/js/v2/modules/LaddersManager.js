@@ -2153,6 +2153,80 @@ class LaddersManager {
     }
 
     /**
+     * Search ladders for global search results
+     * @param {string} query - User search term
+     * @returns {Array} Matched ladder entries with metadata
+     */
+    searchLadders(query = '') {
+        const term = (query || '').toLowerCase();
+        const results = [];
+
+        const addResult = ({ key, title, description, meta }) => {
+            if (!key || results.some(r => r.key === key)) return;
+            results.push({ key, title, description, meta });
+        };
+
+        try {
+            // Steroid ladder
+            const steroidData = this.laddersData?.steroids;
+            if (steroidData) {
+                const haystack = JSON.stringify(steroidData).toLowerCase();
+                if (haystack.includes(term)) {
+                    addResult({
+                        key: 'steroids',
+                        title: steroidData.name || 'Steroid ladder',
+                        description: steroidData.description || '',
+                        meta: `${(steroidData.medications || []).length} medications`
+                    });
+                }
+            }
+
+            // Pain ladder
+            const painData = this.laddersData?.pain;
+            if (painData) {
+                const haystack = JSON.stringify(painData).toLowerCase();
+                if (haystack.includes(term)) {
+                    addResult({
+                        key: 'pain',
+                        title: painData.name || 'Pain ladder',
+                        description: painData.description || '',
+                        meta: `${(painData.steps || []).length} steps`
+                    });
+                }
+            }
+
+            // NICE guideline ladders
+            const guidelineGroup = this.laddersData?.guidelines;
+            const guidelineLadders = Array.isArray(guidelineGroup?.ladders)
+                ? guidelineGroup.ladders
+                : [];
+
+            guidelineLadders.forEach(ladder => {
+                const haystack = [
+                    ladder.title,
+                    ladder.shortTitle,
+                    ladder.summary,
+                    ladder.reference
+                ].filter(Boolean).join(' ').toLowerCase();
+
+                const nested = JSON.stringify(ladder).toLowerCase();
+                if (haystack.includes(term) || nested.includes(term)) {
+                    addResult({
+                        key: ladder.key,
+                        title: ladder.title || ladder.shortTitle || ladder.key,
+                        description: ladder.summary || guidelineGroup?.description || '',
+                        meta: `${guidelineGroup?.name || 'NICE ladder'} • ${(ladder.steps || []).length || 'multi-step'}`
+                    });
+                }
+            });
+        } catch (error) {
+            console.warn('LaddersManager.searchLadders failed', error);
+        }
+
+        return results;
+    }
+
+    /**
      * Show error message
      * @param {string} message - Error message to display
      */

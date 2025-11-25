@@ -467,9 +467,9 @@ export class GlobalSearchManager {
             limit: this.options.limits.ladders || this.options.defaultLimit,
             searchFn,
             mapFn: (ladder) => ({
-                title: ladder.name || ladder.title || ladder.key,
-                subtitle: ladder.description || '',
-                meta: (ladder.steps && ladder.steps.length) ? `${ladder.steps.length} steps` : (ladder.medications ? `${(ladder.medications||[]).length} meds` : ''),
+                title: ladder.title || ladder.name || ladder.key,
+                subtitle: ladder.description || ladder.summary || '',
+                meta: ladder.meta || ((ladder.steps && ladder.steps.length) ? `${ladder.steps.length} steps` : (ladder.medications ? `${(ladder.medications||[]).length} meds` : '')),
                 action: { type: 'ladder', key: ladder.key || ladder.id || ladder.name }
             })
         });
