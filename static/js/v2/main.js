@@ -71,6 +71,8 @@ class MLAQuizApp {
         this.toolsPreloaded = false;
         this.globalSearchManager = new GlobalSearchManager();
         this.questionHighlights = {};
+        this.screenHistory = [];
+        this.currentScreen = null;
         this.setupEventListeners();
     }
 
@@ -389,14 +391,9 @@ class MLAQuizApp {
         const backBtn = document.getElementById('backBtn');
         if (backBtn) {
             backBtn.addEventListener('click', () => {
-                if (window.history.length > 1) {
-                    window.history.back();
-                } else {
-                    // Fallback to home screen
-                    const quizSelection = document.getElementById('quizSelection');
-                    if (quizSelection) {
-                        this.showScreen('quizSelection');
-                    }
+                if (!this.navigateBack()) {
+                    this.screenHistory = [];
+                    this.showScreen('quizSelection', false);
                 }
             });
         }
@@ -603,7 +600,8 @@ class MLAQuizApp {
         const homeBtn = document.getElementById('homeBtn');
         if (homeBtn) {
             homeBtn.addEventListener('click', () => {
-                this.showScreen('quizSelection');
+                this.screenHistory = [];
+                this.showScreen('quizSelection', false);
             });
         }
 
@@ -818,6 +816,9 @@ class MLAQuizApp {
     async initializeUI() {
         // Setup navigation
         this.setupNavigation();
+
+        // Track initial screen state for back navigation
+        this.initializeScreenState();
 
         await this.globalSearchManager?.initialize({
             app: this,
@@ -3569,8 +3570,15 @@ class MLAQuizApp {
     /**
      * Show screen (main navigation between quiz, results, etc.)
      */
-    showScreen(screenId) {
+    showScreen(screenId, recordHistory = true) {
         const screens = document.querySelectorAll('.screen');
+
+        if (recordHistory && this.currentScreen && this.currentScreen !== screenId) {
+            this.screenHistory.push(this.currentScreen);
+        }
+
+        this.currentScreen = screenId;
+
         screens.forEach(screen => {
             if (screen.id === screenId) {
                 screen.classList.add('active');
@@ -3580,6 +3588,59 @@ class MLAQuizApp {
                 screen.style.display = 'none';
             }
         });
+
+        this.updateBackButtonVisibility();
+    }
+
+    /**
+     * Initialize the current screen and back button visibility
+     */
+    initializeScreenState() {
+        const activeScreen = this.getActiveScreenId();
+        if (activeScreen) {
+            this.currentScreen = activeScreen;
+        }
+        this.updateBackButtonVisibility();
+    }
+
+    /**
+     * Determine which screen is currently visible
+     */
+    getActiveScreenId() {
+        const activeScreen = document.querySelector('.screen.active');
+        if (activeScreen?.id) {
+            return activeScreen.id;
+        }
+
+        const visibleScreen = Array.from(document.querySelectorAll('.screen'))
+            .find(screen => screen.style.display !== 'none');
+
+        return visibleScreen?.id || null;
+    }
+
+    /**
+     * Navigate back to the previous screen if available
+     */
+    navigateBack() {
+        if (this.screenHistory.length === 0) {
+            return false;
+        }
+
+        const previousScreen = this.screenHistory.pop();
+        this.showScreen(previousScreen, false);
+        return true;
+    }
+
+    /**
+     * Update the back button visibility based on navigation history
+     */
+    updateBackButtonVisibility() {
+        const backBtn = document.getElementById('backBtn');
+        if (!backBtn) {
+            return;
+        }
+
+        backBtn.style.display = this.screenHistory.length > 0 ? 'inline-flex' : 'none';
     }
 
     /**
