@@ -6546,10 +6546,10 @@
         .highlight-toolbar {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
             margin: 0 0 12px;
-            padding: 8px 12px;
+            padding: 6px 10px;
             background: #f8fafc;
             border: 1px solid #e5e7eb;
             border-radius: 10px;
@@ -6557,7 +6557,7 @@
 
         .highlight-actions {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             flex-wrap: wrap;
             align-items: center;
         }
@@ -6566,9 +6566,10 @@
             background: linear-gradient(135deg, #e0f2fe, #dbeafe);
             color: #0ea5e9;
             border: 1px solid #bfdbfe;
-            border-radius: 8px;
-            padding: 8px 14px;
+            border-radius: 6px;
+            padding: 6px 12px;
             font-weight: 600;
+            font-size: 0.9rem;
             cursor: pointer;
             transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), background var(--v2-transition-fast);
             box-shadow: var(--v2-shadow-sm);
@@ -6584,11 +6585,6 @@
             background: #fff;
             color: #475569;
             border-color: #e2e8f0;
-        }
-
-        .highlight-hint {
-            color: #64748b;
-            font-size: 0.95rem;
         }
 
         .text-highlight {
@@ -6613,10 +6609,6 @@
             background: transparent;
             border-color: #334155;
             color: #e2e8f0;
-        }
-
-        [data-theme="dark"] .highlight-hint {
-            color: #cbd5e1;
         }
 
         [data-theme="dark"] .text-highlight {
@@ -10519,7 +10511,6 @@
                               <button id="highlightBtn" class="highlight-btn" type="button">🖍️ Highlight selection</button>
                               <button id="clearHighlightsBtn" class="highlight-btn secondary" type="button">Clear highlights</button>
                           </div>
-                          <span class="highlight-hint">Select any question text and tap “Highlight selection” to mark it for review.</span>
                       </div>
 
                       <div id="questionContainer" class="question-container active">
