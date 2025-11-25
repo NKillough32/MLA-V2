@@ -1528,6 +1528,13 @@ def upload_quiz():
                     'error': 'Unsupported file type. Please upload .md or .zip files'
                 }), 400
 
+        except Exception as e:
+            logger.error(f"Error processing uploaded file: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Error processing uploaded file: {str(e)}'
+            }), 500
+
     except Exception as e:
         logger.error(f"Error uploading quiz: {e}")
         return jsonify({
