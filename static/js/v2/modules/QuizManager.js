@@ -1114,54 +1114,67 @@ export class QuizManager {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
                 // Show a persistent status message for the current file (V1-style feedback)
                 this.setUploadStatus(`Reading file: ${file.name}`);
-                
-                // Client-side size limits: keep small limit for markdown files but
-                // allow larger ZIP uploads (images inside zips commonly exceed 5MB)
-                if (file.name.endsWith('.md')) {
-                    if (file.size > 5 * 1024 * 1024) { // 5MB limit for .md
-                        uploadResults.push({
-                            filename: file.name,
-                            success: false,
-                            error: 'File too large (max 5MB for markdown files)'
-                        });
-                        continue;
-                    }
-                } else if (file.name.endsWith('.zip')) {
-                    // Allow larger zip uploads but enforce a reasonable cap client-side
-                    // to avoid accidental huge uploads from mobile devices. Server still
-                    // validates size and will reject if too large.
-                    const ZIP_CLIENT_LIMIT = 50 * 1024 * 1024; // 50MB
-                    if (file.size > ZIP_CLIENT_LIMIT) {
-                        uploadResults.push({
-                            filename: file.name,
-                            success: false,
-                            error: `ZIP file too large (max ${Math.round(ZIP_CLIENT_LIMIT / (1024*1024))}MB)`
-                        });
-                        continue;
-                    }
-                } else {
-                    // For unknown types, still enforce a reasonable cap
-                    if (file.size > 50 * 1024 * 1024) {
-                        uploadResults.push({
-                            filename: file.name,
-                            success: false,
-                            error: 'File too large (max 50MB)'
-                        });
-                        continue;
-                    }
-                }
 
-                if (file.name.endsWith('.md')) {
-                    const result = await this.processMarkdownFile(file);
-                    uploadResults.push(result);
-                } else if (file.name.endsWith('.zip')) {
-                    const result = await this.processZipFile(file);
-                    uploadResults.push(result);
-                } else {
+                try {
+                    // Client-side size limits: keep small limit for markdown files but
+                    // allow larger ZIP uploads (images inside zips commonly exceed 5MB)
+                    if (file.name.endsWith('.md')) {
+                        if (file.size > 5 * 1024 * 1024) { // 5MB limit for .md
+                            uploadResults.push({
+                                filename: file.name,
+                                success: false,
+                                error: 'File too large (max 5MB for markdown files)'
+                            });
+                            continue;
+                        }
+                    } else if (file.name.endsWith('.zip')) {
+                        // Allow larger zip uploads but enforce a reasonable cap client-side
+                        // to avoid accidental huge uploads from mobile devices. Server still
+                        // validates size and will reject if too large.
+                        const ZIP_CLIENT_LIMIT = 50 * 1024 * 1024; // 50MB
+                        if (file.size > ZIP_CLIENT_LIMIT) {
+                            uploadResults.push({
+                                filename: file.name,
+                                success: false,
+                                error: `ZIP file too large (max ${Math.round(ZIP_CLIENT_LIMIT / (1024*1024))}MB)`
+                            });
+                            continue;
+                        }
+                    } else {
+                        // For unknown types, still enforce a reasonable cap
+                        if (file.size > 50 * 1024 * 1024) {
+                            uploadResults.push({
+                                filename: file.name,
+                                success: false,
+                                error: 'File too large (max 50MB)'
+                            });
+                            continue;
+                        }
+                    }
+
+                    if (file.name.endsWith('.md')) {
+                        const result = await this.processMarkdownFile(file);
+                        uploadResults.push(result);
+                    } else if (file.name.endsWith('.zip')) {
+                        const result = await this.processZipFile(file);
+                        uploadResults.push(result);
+                    } else {
+                        uploadResults.push({
+                            filename: file.name,
+                            success: false,
+                            error: 'Unsupported file type (only .md and .zip allowed)'
+                        });
+                    }
+                } catch (error) {
+                    console.error(`❌ Failed to process ${file.name}:`, error);
+                    UIHelpers.showToast(`❌ Failed to process ${file.name}: ${error.message}`, 'error');
+                    this.setUploadStatus(`Failed to process ${file.name}: ${error.message}`, 'error', 4000);
+
                     uploadResults.push({
                         filename: file.name,
+                        name: file.name,
                         success: false,
-                        error: 'Unsupported file type (only .md and .zip allowed)'
+                        error: error.message
                     });
                 }
 
@@ -1181,50 +1194,56 @@ export class QuizManager {
             for (let file of files) {
                 if (file.name.endsWith('.md') || file.name.endsWith('.zip')) {
                     console.log('📄 Processing file:', file.name);
-                    
+
                     const formData = new FormData();
                     formData.append('quiz_file', file);
-                    
-                    // Show upload/transfer status
-                    this.setUploadStatus(`Uploading ${file.name} to server...`);
-                    const response = await fetch('/api/upload-quiz', {
-                        method: 'POST',
-                        body: formData
-                    });
-                    
-                    if (!response.ok) {
-                        const errorText = await response.text();
-                        throw new Error(`Upload failed: ${response.status} - ${errorText}`);
+
+                    try {
+                        // Show upload/transfer status
+                        this.setUploadStatus(`Uploading ${file.name} to server...`);
+                        const response = await fetch('/api/upload-quiz', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        if (!response.ok) {
+                            const errorText = await response.text();
+                            throw new Error(`Upload failed: ${response.status} - ${errorText}`);
+                        }
+
+                        const data = await response.json();
+
+                        if (!data.success) {
+                            throw new Error(data.error || 'Upload failed');
+                        }
+
+                        // Store quiz data
+                        const quizData = {
+                            name: data.quiz_name,
+                            questions: data.questions,
+                            questionCount: data.total_questions,
+                            isUploaded: true,
+                            images: data.images || {},
+                            uploadTimestamp: Date.now()
+                        };
+
+                        // Add to uploaded quizzes in storage
+                        let uploadedQuizzes = await this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+                        uploadedQuizzes = uploadedQuizzes.filter(q => q.name !== quizData.name);
+                        uploadedQuizzes.push(quizData);
+                        const storageSuccess = await this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
+
+                        if (!storageSuccess) {
+                            UIHelpers.showToast(`⚠️ Quiz uploaded but storage failed. Quiz may not persist on page reload.`, 'warning');
+                        }
+
+                        console.log(`✅ Quiz uploaded: ${quizData.name} (${quizData.questionCount} questions)`);
+                        this.setUploadStatus(`Uploaded ${quizData.name} (${quizData.questionCount} questions)`, 'success', 2500);
+                    } catch (error) {
+                        console.error(`❌ Failed to upload ${file.name} to server:`, error);
+                        UIHelpers.showToast(`⚠️ Unable to upload ${file.name} to server. Saved locally for now.`, 'warning');
+                        this.setUploadStatus(`Upload deferred for ${file.name}: ${error.message}`, 'warning', 4000);
                     }
-                    
-                    const data = await response.json();
-                    
-                    if (!data.success) {
-                        throw new Error(data.error || 'Upload failed');
-                    }
-                    
-                    // Store quiz data
-                    const quizData = {
-                        name: data.quiz_name,
-                        questions: data.questions,
-                        questionCount: data.total_questions,
-                        isUploaded: true,
-                        images: data.images || {},
-                        uploadTimestamp: Date.now()
-                    };
-                    
-                    // Add to uploaded quizzes in storage
-                    let uploadedQuizzes = await this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
-                    uploadedQuizzes = uploadedQuizzes.filter(q => q.name !== quizData.name);
-                    uploadedQuizzes.push(quizData);
-                    const storageSuccess = await this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
-                    
-                    if (!storageSuccess) {
-                        UIHelpers.showToast(`⚠️ Quiz uploaded but storage failed. Quiz may not persist on page reload.`, 'warning');
-                    }
-                    
-                    console.log(`✅ Quiz uploaded: ${quizData.name} (${quizData.questionCount} questions)`);
-                    this.setUploadStatus(`Uploaded ${quizData.name} (${quizData.questionCount} questions)`, 'success', 2500);
                 }
             }
             
@@ -1233,7 +1252,8 @@ export class QuizManager {
             
         } catch (error) {
             console.error('❌ Error handling file upload:', error);
-            throw error;
+            UIHelpers.showToast(`❌ Upload failed: ${error.message}`, 'error');
+            this.setUploadStatus(`Upload failed: ${error.message}`, 'error', 4000);
         }
     }
 
@@ -1382,7 +1402,13 @@ export class QuizManager {
             // Clear loading toast and show error
             UIHelpers.showToast(`❌ Failed to process ZIP file: ${error.message}`, 'error');
             this.setUploadStatus(`Failed to process ZIP: ${error.message}`, 'error', 4000);
-            throw error;
+            return {
+                filename: file.name,
+                name: file.name,
+                success: false,
+                error: error.message,
+                uploadTimestamp: Date.now()
+            };
         }
     }
 
