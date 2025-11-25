@@ -6542,6 +6542,87 @@
         .q-text {
             margin: 0 0 12px 0;
         }
+
+        .highlight-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 0 0 12px;
+            padding: 8px 12px;
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .highlight-actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .highlight-btn {
+            background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+            color: #0ea5e9;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast), background var(--v2-transition-fast);
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .highlight-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--v2-shadow-md);
+            background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+        }
+
+        .highlight-btn.secondary {
+            background: #fff;
+            color: #475569;
+            border-color: #e2e8f0;
+        }
+
+        .highlight-hint {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .text-highlight {
+            background: rgba(99, 102, 241, 0.2);
+            border-radius: 6px;
+            padding: 0 2px;
+            box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.15);
+        }
+
+        [data-theme="dark"] .highlight-toolbar {
+            background: #1f2937;
+            border-color: #334155;
+        }
+
+        [data-theme="dark"] .highlight-btn {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-color: #334155;
+            color: #cbd5e1;
+        }
+
+        [data-theme="dark"] .highlight-btn.secondary {
+            background: transparent;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        [data-theme="dark"] .highlight-hint {
+            color: #cbd5e1;
+        }
+
+        [data-theme="dark"] .text-highlight {
+            background: rgba(14, 165, 233, 0.25);
+            box-shadow: inset 0 0 0 1px rgba(14, 165, 233, 0.25);
+        }
         
         .q-text p { 
             margin: 0 0 1px;
@@ -10416,9 +10497,9 @@
         <div id="quizScreen" class="screen" style="display: none;">
             <div class="quiz-page">
                 <main class="card">
-                    <div class="q-header">
-                        <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
-                            <button id="prevBtnTop" class="nav-btn-small" style="display: none;">← Prev</button>
+                  <div class="q-header">
+                      <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+                          <button id="prevBtnTop" class="nav-btn-small" style="display: none;">← Prev</button>
 
                             <div style="flex:1; text-align:center; display:flex; flex-direction:column; align-items:center;">
                                 <h2 style="margin:0;" id="questionTitle">Question 1</h2>
@@ -10429,13 +10510,21 @@
                                 <button id="nextBtnTop" class="nav-btn-small" style="display: none;">Next →</button>
                                 <button id="flagBtn" class="flag-btn" title="Flag this question">🚩</button>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card-body">
-                        <div id="questionContainer" class="question-container active">
-                            <!-- Questions will be loaded here -->
-                        </div>
+                      </div>
+                  </div>
+
+                  <div class="card-body">
+                      <div class="highlight-toolbar" aria-live="polite">
+                          <div class="highlight-actions">
+                              <button id="highlightBtn" class="highlight-btn" type="button">🖍️ Highlight selection</button>
+                              <button id="clearHighlightsBtn" class="highlight-btn secondary" type="button">Clear highlights</button>
+                          </div>
+                          <span class="highlight-hint">Select any question text and tap “Highlight selection” to mark it for review.</span>
+                      </div>
+
+                      <div id="questionContainer" class="question-container active">
+                          <!-- Questions will be loaded here -->
+                      </div>
                         
                         <div id="feedbackContainer" class="feedback-container" style="display: none;">
                             <!-- Feedback will be shown here -->
