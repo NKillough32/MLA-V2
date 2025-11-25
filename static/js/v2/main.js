@@ -70,6 +70,7 @@ class MLAQuizApp {
         this.offlineManager = new OfflineManager();
         this.toolsPreloaded = false;
         this.globalSearchManager = new GlobalSearchManager();
+        this.questionHighlights = {};
         this.setupEventListeners();
     }
 
@@ -554,6 +555,22 @@ class MLAQuizApp {
             });
         }
 
+        // Highlight controls
+        const highlightBtn = document.getElementById('highlightBtn');
+        const clearHighlightsBtn = document.getElementById('clearHighlightsBtn');
+
+        if (highlightBtn) {
+            highlightBtn.addEventListener('click', () => {
+                this.applyHighlightToSelection();
+            });
+        }
+
+        if (clearHighlightsBtn) {
+            clearHighlightsBtn.addEventListener('click', () => {
+                this.clearHighlightsForCurrentQuestion();
+            });
+        }
+
         // Finish quiz button
         const finishBtn = document.getElementById('finishBtn');
         if (finishBtn) {
@@ -647,6 +664,7 @@ class MLAQuizApp {
         eventBus.on(EVENTS.QUIZ_STARTED, (data) => {
             this.showScreen('quizScreen');
             document.getElementById('navTitle').textContent = data.quizName || 'Quiz';
+            this.questionHighlights = {};
         });
 
         // Question rendered → Update UI
@@ -3669,7 +3687,7 @@ class MLAQuizApp {
 
         // Add scenario if present and different from prompt (V1-style blue background)
         if (question.scenario && question.scenario !== question.prompt && question.scenario !== question.text) {
-            html += `<div class="q-text" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #0369a1;">Scenario:</h4><div>${this.formatText(question.scenario)}</div></div>`;
+            html += `<div class="q-text" data-highlight-section="scenario" style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #0369a1;">Scenario:</h4><div>${this.formatText(question.scenario)}</div></div>`;
         }
 
         // Add image if present (after scenario/stem, matching V1 order)
@@ -3680,13 +3698,13 @@ class MLAQuizApp {
         // Add investigations if present (V1-style green background)
         if (question.investigations) {
             const formattedInvestigations = this.formatInvestigations(question.investigations);
-            html += `<div class="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">Investigations:</h4><div>${formattedInvestigations}</div></div>`;
+            html += `<div class="investigations" data-highlight-section="investigations" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 12px; border-radius: 6px; margin-bottom: 8px;"><h4 style="margin: 0 0 8px 0; color: #15803d;">Investigations:</h4><div>${formattedInvestigations}</div></div>`;
         }
 
         // Add question prompt (V1-style yellow background)
         const questionText = question.prompt || (question.scenario ? '' : question.text) || '';
         if (questionText) {
-            html += `<div class="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-weight: 500;"><h4 style="margin: 0 0 8px 0; color: #a16207;">Question:</h4><div>${this.formatText(questionText)}</div></div>`;
+            html += `<div class="prompt" data-highlight-section="prompt" style="background: #fefce8; border-left: 4px solid #eab308; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-weight: 500;"><h4 style="margin: 0 0 8px 0; color: #a16207;">Question:</h4><div>${this.formatText(questionText)}</div></div>`;
         }
 
         // Add options
@@ -3750,7 +3768,7 @@ class MLAQuizApp {
                 html += `
                     <div class="explanation-container">
                         <div class="explanation-title">📚 Explanation</div>
-                        <div class="explanation-content">${explanationText}</div>
+                        <div class="explanation-content" data-highlight-section="explanation">${explanationText}</div>
                     </div>
                 `;
             }
@@ -3777,6 +3795,8 @@ class MLAQuizApp {
         }
 
         questionContainer.innerHTML = html;
+
+        this.restoreHighlightsForQuestion(index);
 
         // Bind option click events
         const options = questionContainer.querySelectorAll('.option, .new-option');
@@ -3865,6 +3885,130 @@ class MLAQuizApp {
         } catch (err) {
             console.warn('Could not render question progress grid:', err);
         }
+    }
+
+    getActiveQuestionIndex(fallbackIndex = 0) {
+        if (quizManager && typeof quizManager.currentQuestionIndex === 'number') {
+            return quizManager.currentQuestionIndex;
+        }
+        return fallbackIndex;
+    }
+
+    applyHighlightToSelection() {
+        const questionContainer = document.getElementById('questionContainer');
+        if (!questionContainer) {
+            console.warn('❌ Question container missing, cannot add highlight');
+            return;
+        }
+
+        const selection = window.getSelection();
+        if (!selection || selection.isCollapsed) {
+            uiManager.showToast('Select some question text to highlight.', 'info');
+            return;
+        }
+
+        const range = selection.getRangeAt(0);
+        const commonAncestor = range.commonAncestorContainer;
+        if (!questionContainer.contains(commonAncestor)) {
+            uiManager.showToast('Highlights can only be added inside the current question.', 'warning');
+            return;
+        }
+
+        const anchorElement = commonAncestor.nodeType === Node.ELEMENT_NODE
+            ? commonAncestor
+            : commonAncestor.parentElement;
+        const highlightableSection = anchorElement?.closest?.('[data-highlight-section]');
+        if (!highlightableSection) {
+            uiManager.showToast('Select text inside the question stem or explanation to highlight.', 'warning');
+            return;
+        }
+
+        const highlightWrapper = document.createElement('span');
+        highlightWrapper.className = 'text-highlight';
+        const extracted = range.extractContents();
+        highlightWrapper.appendChild(extracted);
+        range.insertNode(highlightWrapper);
+        selection.removeAllRanges();
+
+        const questionIndex = this.getActiveQuestionIndex();
+        this.saveHighlightsForQuestion(questionIndex);
+        uiManager.showToast('Highlight added to this question.', 'success');
+    }
+
+    clearHighlightsForCurrentQuestion() {
+        const questionContainer = document.getElementById('questionContainer');
+        if (!questionContainer) {
+            return;
+        }
+
+        const highlights = questionContainer.querySelectorAll('.text-highlight');
+        if (!highlights.length) {
+            uiManager.showToast('No highlights to clear on this question.', 'info');
+            return;
+        }
+
+        highlights.forEach((span) => {
+            const parent = span.parentNode;
+            while (span.firstChild) {
+                parent.insertBefore(span.firstChild, span);
+            }
+            parent.removeChild(span);
+            parent.normalize();
+        });
+
+        const questionIndex = this.getActiveQuestionIndex();
+        delete this.questionHighlights[questionIndex];
+        this.saveHighlightsForQuestion(questionIndex);
+        uiManager.showToast('Highlights cleared.', 'info');
+    }
+
+    saveHighlightsForQuestion(questionIndex) {
+        if (questionIndex === undefined || questionIndex === null) {
+            return;
+        }
+
+        const questionContainer = document.getElementById('questionContainer');
+        if (!questionContainer) {
+            return;
+        }
+
+        const sections = questionContainer.querySelectorAll('[data-highlight-section]');
+        const hasHighlights = Array.from(sections).some((section) => section.querySelector('.text-highlight'));
+
+        if (!hasHighlights) {
+            delete this.questionHighlights[questionIndex];
+            return;
+        }
+
+        const stored = {};
+        sections.forEach((section) => {
+            const key = section.getAttribute('data-highlight-section');
+            if (key) {
+                stored[key] = section.innerHTML;
+            }
+        });
+
+        this.questionHighlights[questionIndex] = stored;
+    }
+
+    restoreHighlightsForQuestion(questionIndex) {
+        const effectiveIndex = questionIndex ?? this.getActiveQuestionIndex();
+        const storedHighlights = this.questionHighlights[effectiveIndex];
+        if (!storedHighlights) {
+            return;
+        }
+
+        const questionContainer = document.getElementById('questionContainer');
+        if (!questionContainer) {
+            return;
+        }
+
+        Object.entries(storedHighlights).forEach(([sectionKey, content]) => {
+            const section = questionContainer.querySelector(`[data-highlight-section="${sectionKey}"]`);
+            if (section) {
+                section.innerHTML = content;
+            }
+        });
     }
 
     /**
