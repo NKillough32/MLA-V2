@@ -1106,10 +1106,10 @@ export class QuizManager {
     async handleFileUpload(files) {
         try {
             console.log('📁 Processing file upload...', files.length, 'files');
-            
+
             // V2 Native Implementation with V1 fallback
             const uploadResults = [];
-            
+
             for (let file of files) {
                 console.log('📄 Processing file:', file.name, 'Size:', file.size, 'bytes');
                 // Show a persistent status message for the current file (V1-style feedback)
@@ -1168,11 +1168,15 @@ export class QuizManager {
                 // Clear transient status for this file after processing (keep final toast from processX methods)
                 this.clearUploadStatus(1500);
             }
-            
+
+            // Persist successfully processed quizzes locally so they show up even if
+            // the server upload fails (offline mode, network errors, etc.)
+            await this.persistUploadedQuizzes(uploadResults);
+
             // Update quiz list and show results
             eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
             this.showUploadResults(uploadResults);
-            
+
             // V2 implementation: upload to server
             for (let file of files) {
                 if (file.name.endsWith('.md') || file.name.endsWith('.zip')) {
@@ -1426,17 +1430,75 @@ export class QuizManager {
         }
     }
 
+    /**
+     * Persist locally processed quizzes so they appear in the list even if
+     * server upload fails or the app is offline.
+     */
+    async persistUploadedQuizzes(uploadResults) {
+        try {
+            const successfulResults = (uploadResults || []).filter(result => {
+                return result && result.success !== false && Array.isArray(result.questions) && result.questions.length > 0;
+            });
+
+            if (successfulResults.length === 0) {
+                console.log('ℹ️ No successful quiz uploads to persist');
+                return;
+            }
+
+            let uploadedQuizzes = await this.storage.getItem(STORAGE_KEYS.UPLOADED_QUIZZES, []);
+            if (!Array.isArray(uploadedQuizzes)) {
+                console.warn('⚠️ Uploaded quizzes storage corrupted, resetting');
+                uploadedQuizzes = [];
+            }
+
+            for (const quizData of successfulResults) {
+                const normalizedQuiz = {
+                    name: quizData.name,
+                    questions: quizData.questions,
+                    questionCount: quizData.questionCount || (quizData.questions?.length ?? 0),
+                    isUploaded: true,
+                    images: quizData.images || {},
+                    uploadTimestamp: quizData.uploadTimestamp || Date.now(),
+                    dataStored: quizData.dataStored,
+                    storageKey: quizData.storageKey
+                };
+
+                // Remove any existing quiz with the same name before adding the new one
+                uploadedQuizzes = uploadedQuizzes.filter(q => q.name !== normalizedQuiz.name);
+                uploadedQuizzes.push(normalizedQuiz);
+            }
+
+            const storageSuccess = await this.storage.setItem(STORAGE_KEYS.UPLOADED_QUIZZES, uploadedQuizzes);
+            if (!storageSuccess) {
+                UIHelpers.showToast('⚠️ Uploaded quiz saved temporarily. It may not persist after reload.', 'warning');
+            }
+
+            console.log(`✅ Persisted ${successfulResults.length} uploaded quiz(es) locally`);
+        } catch (error) {
+            console.error('❌ Failed to persist uploaded quizzes locally:', error);
+        }
+    }
+
     showUploadResults(results) {
         if (!results || results.length === 0) {
             UIHelpers.showToast('No quizzes uploaded', 'warning');
             return;
         }
-        
-        const totalQuestions = results.reduce((sum, r) => sum + r.questionCount, 0);
-        const quizNames = results.map(r => r.name).join(', ');
-        
+
+        const successfulResults = results.filter(r => r && r.success !== false);
+
+        if (successfulResults.length === 0) {
+            UIHelpers.showToast('❌ Upload failed. No quizzes were saved.', 'error');
+            return;
+        }
+
+        const totalQuestions = successfulResults.reduce((sum, r) => {
+            return sum + (r.questionCount || (r.questions?.length ?? 0));
+        }, 0);
+        const quizNames = successfulResults.map(r => r.name).join(', ');
+
         UIHelpers.showToast(
-            `Successfully uploaded ${results.length} quiz(es): ${quizNames} (${totalQuestions} questions total)`,
+            `Successfully uploaded ${successfulResults.length} quiz(es): ${quizNames} (${totalQuestions} questions total)`,
             'success'
         );
         
