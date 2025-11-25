@@ -14,7 +14,7 @@ import base64
 import zipfile
 import threading
 from io import BytesIO
-from tempfile import SpooledTemporaryFile
+import codecs
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from flask import Flask, render_template, jsonify, request, send_from_directory
@@ -131,6 +131,92 @@ def _normalize_directory_descriptor(entry: Any) -> Dict[str, Any]:
         'recursive': bool(entry.get('recursive', True)),
         'extensions': extensions
     }
+
+
+def _normalize_image_key(key: str) -> str:
+    """Normalize image references for consistent lookup."""
+    return key.replace('\\', '/').lstrip('./').lower()
+
+
+def _build_image_lookup(image_data: Dict[str, str]) -> Dict[str, str]:
+    """Build a normalized lookup of image references to resolved data URLs."""
+    lookup: Dict[str, str] = {}
+
+    for key, value in image_data.items():
+        resolved = value
+        seen: set[str] = set()
+
+        while isinstance(resolved, str) and resolved.startswith('__REF__:'):
+            target = resolved.split(':', 1)[1]
+            if target in seen:
+                break
+            seen.add(target)
+            resolved = image_data.get(target, resolved)
+
+        normalized_key = _normalize_image_key(key)
+        lookup.setdefault(normalized_key, resolved)
+
+        filename_only = key.replace('\\', '/').split('/')[-1]
+        normalized_basename = _normalize_image_key(filename_only)
+        lookup.setdefault(normalized_basename, resolved)
+
+    return lookup
+
+
+def _replace_image_references(content: str, image_lookup: Dict[str, str]) -> tuple[str, int]:
+    """Replace image references in markdown content using a single regex pass."""
+    if not image_lookup:
+        return content, 0
+
+    image_pattern = re.compile(
+        r"""
+        (?P<image>!\[[^\]]*\]\((?P<image_path>[^)]+)\))|
+        (?P<link>\((?P<link_path>[^)]+)\))|
+        (?P<double>"(?P<double_path>[^"]+)")|
+        (?P<single>'(?P<single_path>[^']+)')|
+        (?P<bracket>\[IMAGE:\s*(?P<bracket_path>[^\]]+)\])
+        """,
+        re.IGNORECASE | re.VERBOSE,
+    )
+
+    def resolve(path: str) -> Optional[str]:
+        normalized = _normalize_image_key(path)
+        if normalized in image_lookup:
+            return image_lookup[normalized]
+
+        trimmed = normalized.lstrip('./')
+        return image_lookup.get(trimmed)
+
+    replacements = 0
+
+    def replacer(match: re.Match[str]) -> str:
+        nonlocal replacements
+        path = (
+            match.group('image_path')
+            or match.group('link_path')
+            or match.group('double_path')
+            or match.group('single_path')
+            or match.group('bracket_path')
+            or ''
+        )
+
+        replacement = resolve(path.strip())
+        if not replacement:
+            return match.group(0)
+
+        replacements += 1
+
+        if match.group('bracket'):
+            return f"![Image]({replacement})"
+
+        if match.group('double'):
+            return f'"{replacement}"'
+        if match.group('single'):
+            return f"'{replacement}'"
+        return f"({replacement})"
+
+    new_content = image_pattern.sub(replacer, content)
+    return new_content, replacements
 
 
 ASSET_TARGETS = _load_asset_targets()
@@ -1204,38 +1290,38 @@ def upload_quiz():
             }), 400
 
         max_bytes = int(4.5 * 1024 * 1024)
-        temp_file = SpooledTemporaryFile(max_size=max_bytes + 1024, mode='w+b')
+
         try:
             try:
                 file.stream.seek(0)
             except (AttributeError, OSError):
                 pass
 
-            total_bytes = 0
-            while True:
-                chunk = file.stream.read(64 * 1024)
-                if not chunk:
-                    break
-                total_bytes += len(chunk)
-                if total_bytes > max_bytes:
-                    return jsonify({
-                        'success': False,
-                        'error': 'File too large. Maximum size is 4.5MB.'
-                    }), 400
-                temp_file.write(chunk)
+            raw_bytes = file.stream.read(max_bytes + 1)
+            if len(raw_bytes) > max_bytes:
+                return jsonify({
+                    'success': False,
+                    'error': 'File too large. Maximum size is 4.5MB.'
+                }), 400
 
-            logger.info(f"File size: {total_bytes} bytes")
-            temp_file.seek(0)
+            if not raw_bytes:
+                return jsonify({
+                    'success': False,
+                    'error': 'Uploaded file is empty'
+                }), 400
+
+            logger.info(f"File size: {len(raw_bytes)} bytes")
+            upload_buffer = BytesIO(raw_bytes)
 
             if file.filename.lower().endswith('.zip'):
                 logger.info("Processing ZIP file")
 
                 try:
-                    temp_file.seek(0)
                     quiz_data = []
                     image_data = {}  # Store images from zip
 
-                    with zipfile.ZipFile(temp_file, 'r') as zip_ref:
+                    upload_buffer.seek(0)
+                    with zipfile.ZipFile(upload_buffer, 'r') as zip_ref:
                         # Get all files in the zip
                         all_files = zip_ref.namelist()
                         # Filter out directories and hidden files
@@ -1294,6 +1380,8 @@ def upload_quiz():
                                 logger.warning(f"Could not process image {image_file}: {e}")
                                 continue
 
+                        image_lookup = _build_image_lookup(image_data)
+
                         for filename in md_files:
                             try:
                                 logger.debug(f"Processing MD file: {filename}")
@@ -1301,8 +1389,12 @@ def upload_quiz():
                                     raw_content = md_file.read()
                                     logger.debug(f"Raw content length: {len(raw_content)} bytes")
 
+                                    if raw_content.startswith(codecs.BOM_UTF16_LE) or raw_content.startswith(codecs.BOM_UTF16_BE):
+                                        encodings_to_try = ['utf-16']
+                                    else:
+                                        encodings_to_try = ['utf-8', 'utf-8-sig', 'latin1', 'cp1252']
+
                                     content = None
-                                    encodings_to_try = ['utf-8', 'utf-8-sig', 'latin1', 'cp1252']
 
                                     for encoding in encodings_to_try:
                                         try:
@@ -1332,49 +1424,7 @@ def upload_quiz():
                                         logger.debug(f"First 20 lines: {sample_lines}")
 
                                     original_content = content
-                                    replacements_made = 0
-
-                                    for image_path, data_url in image_data.items():
-                                        old_content = content
-                                        content = content.replace(f"({image_path})", f"({data_url})")
-                                        content = content.replace(f'"{image_path}"', f'"{data_url}"')
-                                        content = content.replace(f"'{image_path}'", f"'{data_url}'")
-                                        content = content.replace(f"(./{image_path})", f"({data_url})")
-                                        content = content.replace(f"(../{image_path})", f"({data_url})")
-                                        content = content.replace(f"[IMAGE: {image_path}]", f"![Image]({data_url})")
-                                        content = content.replace(f"[IMAGE:{image_path}]", f"![Image]({data_url})")
-                                        content = content.replace(f"[IMAGE:  {image_path}]", f"![Image]({data_url})")
-                                        content = content.replace(f"[IMAGE:   {image_path}]", f"![Image]({data_url})")
-
-                                        if content != old_content:
-                                            replacements_made += 1
-                                            logger.debug(f"Replaced image reference: {image_path}")
-
-                                    image_pattern = re.compile(r'\[IMAGE:\s*([^\]]+)\]', re.IGNORECASE)
-                                    matches = image_pattern.findall(content)
-
-                                    for match in matches:
-                                        match_clean = match.strip()
-                                        found_replacement = None
-
-                                        for image_path, data_url in image_data.items():
-                                            if (match_clean.lower() == image_path.lower() or
-                                                match_clean.lower() in image_path.lower() or
-                                                image_path.lower() in match_clean.lower()):
-                                                found_replacement = data_url
-                                                logger.debug(f"Found case-insensitive match: '{match_clean}' -> '{image_path}'")
-                                                break
-
-                                        if found_replacement:
-                                            old_content = content
-                                            pattern = re.compile(re.escape(f"[IMAGE: {match_clean}]"), re.IGNORECASE)
-                                            content = pattern.sub(f"![Image]({found_replacement})", content)
-                                            pattern = re.compile(re.escape(f"[IMAGE:{match_clean}]"), re.IGNORECASE)
-                                            content = pattern.sub(f"![Image]({found_replacement})", content)
-
-                                            if content != old_content:
-                                                replacements_made += 1
-                                                logger.debug(f"Case-insensitive replacement: {match_clean}")
+                                    content, replacements_made = _replace_image_references(content, image_lookup)
 
                                     logger.debug(f"Made {replacements_made} image replacements in {filename}")
                                     if replacements_made == 0 and len(image_data) > 0:
@@ -1442,8 +1492,8 @@ def upload_quiz():
             elif file.filename.lower().endswith('.md'):
                 logger.info("Processing MD file")
                 try:
-                    temp_file.seek(0)
-                    content = temp_file.read().decode('utf-8')
+                    upload_buffer.seek(0)
+                    content = upload_buffer.read().decode('utf-8')
                     questions = PWAQuizLoader.parse_markdown_content(content, file.filename)
 
                     if not questions:
@@ -1477,8 +1527,6 @@ def upload_quiz():
                     'success': False,
                     'error': 'Unsupported file type. Please upload .md or .zip files'
                 }), 400
-        finally:
-            temp_file.close()
 
     except Exception as e:
         logger.error(f"Error uploading quiz: {e}")
