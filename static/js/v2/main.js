@@ -3655,7 +3655,29 @@ class MLAQuizApp {
 
         // Get uploaded quizzes with V1-compatible reconstruction
         const uploadedQuizzes = await quizManager.getUploadedQuizzes();
-        
+
+        const renderUploadedQuizzes = quizzes => quizzes.map(quiz => {
+            const questionCount = quiz.questions?.length || quiz.questionCount || quiz.total_questions || 0;
+            return `
+                <div class="quiz-item uploaded-quiz" data-quiz-name="${quiz.name}" data-is-uploaded="true">
+                    <div class="quiz-info">
+                        <h3 class="quiz-name">📁 ${quiz.name}</h3>
+                        <p class="quiz-details">Uploaded • ${questionCount} questions</p>
+                    </div>
+                    <span class="chevron">›</span>
+                </div>
+            `;
+        }).join('');
+
+        // Render uploaded quizzes immediately while server quizzes load
+        const loadingPlaceholder = `
+            <div style="padding: 16px; text-align: center; color: #8e8e93;">
+                Loading server quizzes...
+            </div>
+        `;
+
+        quizList.innerHTML = `${renderUploadedQuizzes(uploadedQuizzes)}${loadingPlaceholder}`;
+
         // Get server quizzes (if available)
         let serverQuizzes = [];
         try {
@@ -3685,21 +3707,7 @@ class MLAQuizApp {
         }
 
         // Render list
-        let html = '';
-
-        // Add uploaded quizzes first (with special styling)
-        uploadedQuizzes.forEach(quiz => {
-            const questionCount = quiz.questions?.length || quiz.questionCount || quiz.total_questions || 0;
-            html += `
-                <div class="quiz-item uploaded-quiz" data-quiz-name="${quiz.name}" data-is-uploaded="true">
-                    <div class="quiz-info">
-                        <h3 class="quiz-name">📁 ${quiz.name}</h3>
-                        <p class="quiz-details">Uploaded • ${questionCount} questions</p>
-                    </div>
-                    <span class="chevron">›</span>
-                </div>
-            `;
-        });
+        let html = renderUploadedQuizzes(uploadedQuizzes);
 
         // Add server quizzes
         serverQuizzes.forEach(quiz => {
