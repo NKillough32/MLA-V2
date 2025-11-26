@@ -1515,8 +1515,115 @@ class MLAQuizApp {
      * Load calculators list
      */
     loadCalculatorsContent(panel) {
-        const calculators = calculatorManager.getAllCalculators();
-        // Calculators should already be rendered in the HTML panel
+        const calculators = calculatorManager.getAllCalculators()
+            .sort((a, b) => a.name.localeCompare(b.name));
+        const grid = panel.querySelector('#calculator-grid');
+        const emptyState = panel.querySelector('#calculator-empty');
+        const countEl = panel.querySelector('#calculator-count');
+        const searchInput = panel.querySelector('#calculator-search');
+        const searchBtn = panel.querySelector('#calculator-search-btn');
+
+        if (!grid) {
+            console.warn('Calculator grid not found in panel');
+            return;
+        }
+
+        const categoryIcons = {
+            CARDIOLOGY: '💗',
+            NEUROLOGY: '🧠',
+            RESPIRATORY: '🫁',
+            CRITICAL_CARE: '🏥',
+            NEPHROLOGY: '🫘',
+            RENAL: '🫘',
+            GASTROENTEROLOGY: '🩸',
+            HEPATOLOGY: '🫀',
+            LABORATORY: '🧪',
+            CHEMISTRY: '🧪',
+            ASSESSMENT: '🧮',
+            RISK: '⚖️',
+            VASCULAR: '🩺',
+            INFECTIOUS_DISEASE: '🦠',
+            SURGERY: '🩹',
+            PSYCHIATRY: '🧠',
+            NUTRITION: '🍽️',
+            GERIATRICS: '🧓',
+            OBSTETRICS: '🤰',
+            PAEDIATRICS: '👶',
+            PHARMACOLOGY: '💊',
+            ENDOCRINOLOGY: '🦋',
+            UTILITIES: '🧰',
+            PALLIATIVE: '🌸',
+            ORTHOPAEDICS: '🦴',
+            EMERGENCY: '🚨',
+            OTHER: '🧮',
+            BODY_METRICS: '⚖️'
+        };
+
+        const getCategoryLabel = (category) => {
+            if (!category) return 'Calculator';
+            return category
+                .toString()
+                .replace(/_/g, ' ')
+                .toLowerCase()
+                .replace(/\b\w/g, c => c.toUpperCase());
+        };
+
+        const renderCalculators = (list) => {
+            if (countEl) {
+                countEl.textContent = `${list.length} calculator${list.length === 1 ? '' : 's'}`;
+            }
+
+            if (list.length === 0) {
+                grid.innerHTML = '';
+                if (emptyState) emptyState.style.display = 'block';
+                return;
+            }
+
+            if (emptyState) emptyState.style.display = 'none';
+
+            grid.innerHTML = list.map(calc => {
+                const icon = categoryIcons[calc.category] || '🧮';
+                const description = calc.description || 'Clinical calculator';
+                const categoryLabel = getCategoryLabel(calc.category);
+
+                return `
+                    <button class="calculator-btn" data-calc="${calc.id}" aria-label="Open ${calc.name} calculator">
+                        <div class="calc-icon">${icon}</div>
+                        <div class="calc-meta">
+                            <div class="calc-name">${calc.name}</div>
+                            <div class="calc-description">${description}</div>
+                            <div class="calc-category">${categoryLabel}</div>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+        };
+
+        const performSearch = () => {
+            if (!searchInput) {
+                renderCalculators(calculators);
+                return;
+            }
+
+            const term = searchInput.value.trim();
+            if (!term) {
+                renderCalculators(calculators);
+                return;
+            }
+
+            const results = calculatorManager.searchCalculators(term);
+            renderCalculators(results);
+        };
+
+        renderCalculators(calculators);
+
+        if (searchInput && !panel.dataset.calculatorSearchBound) {
+            searchInput.addEventListener('input', performSearch);
+            if (searchBtn) {
+                searchBtn.addEventListener('click', performSearch);
+            }
+            panel.dataset.calculatorSearchBound = 'true';
+        }
     }
 
     /**

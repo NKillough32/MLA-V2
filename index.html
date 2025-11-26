@@ -2923,47 +2923,166 @@
         }
         
         /* Calculator Grid */
+        .calculator-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .calculator-intro {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .calculator-intro h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .calculator-intro p {
+            margin: 0;
+            color: var(--v2-text-secondary);
+            font-size: 14px;
+        }
+
+        .calculator-search {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            width: 100%;
+            max-width: 360px;
+        }
+
+        .calculator-search input {
+            flex: 1;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--v2-border);
+            background: var(--v2-bg-card);
+            color: var(--v2-text-primary);
+        }
+
+        .calculator-search button {
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--v2-border);
+            background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-secondary) 100%);
+            color: #fff;
+            cursor: pointer;
+            transition: transform var(--v2-transition-fast), box-shadow var(--v2-transition-fast);
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .calculator-search button:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        .calculator-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+            color: var(--v2-text-secondary);
+            font-size: 14px;
+        }
+
         .calculator-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 12px;
             margin-bottom: 16px;
         }
-        
+
         .calculator-btn {
-            padding: 16px 12px;
-            background: #f8f9fa;
-            border: 1px solid #e5e5ea;
-            border-radius: 12px;
+            padding: 14px 12px;
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 14px;
             cursor: pointer;
-            transition: all 0.2s;
-            text-align: center;
+            transition: all var(--v2-transition-base);
+            text-align: left;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            box-shadow: var(--v2-shadow-sm);
         }
-        
+
         .calculator-btn:hover {
-            background: #e3f2fd;
-            border-color: #007AFF;
+            background: linear-gradient(135deg, rgba(var(--v2-primary-rgb), 0.05) 0%, rgba(var(--v2-primary-rgb), 0.12) 100%);
+            border-color: var(--v2-primary);
             transform: translateY(-2px);
+            box-shadow: var(--v2-shadow-md);
         }
-        
+
         .calc-icon {
             font-size: 24px;
-            margin-bottom: 8px;
+            width: 36px;
+            height: 36px;
+            display: grid;
+            place-items: center;
+            background: rgba(var(--v2-primary-rgb), 0.12);
+            border-radius: 10px;
+            flex-shrink: 0;
         }
-        
+
+        .calc-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
         .calc-name {
-            font-size: 12px;
-            font-weight: 600;
-            color: #1c1c1e;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--v2-text-primary);
         }
-        
+
+        .calc-description {
+            font-size: 12px;
+            color: var(--v2-text-secondary);
+            line-height: 1.4;
+        }
+
+        .calc-category {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--v2-primary);
+            background: rgba(var(--v2-primary-rgb), 0.12);
+            padding: 6px 8px;
+            border-radius: 999px;
+            margin-top: 4px;
+            width: fit-content;
+        }
+
+        .calculator-empty {
+            text-align: center;
+            padding: 20px;
+            border: 1px dashed var(--v2-border);
+            border-radius: 12px;
+            color: var(--v2-text-secondary);
+            background: var(--v2-bg-elevated);
+        }
+
         [data-theme="dark"] .calculator-btn {
             background: var(--bg-tertiary);
             border-color: var(--border-color);
         }
-        
+
         [data-theme="dark"] .calc-name {
             color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .calculator-search input {
+            border-color: var(--border-color);
+            background: var(--bg-tertiary);
         }
 
         /* Lab Value Buttons - Modern Card Design with Gradients */
@@ -10651,297 +10770,28 @@
             
             <!-- Calculator Panel -->
             <div id="calculator-panel" class="tool-panel">
-                <div class="calculator-grid">
-                    <button class="calculator-btn" data-calc="bmi">
-                        <div class="calc-icon">⚖️</div>
-                        <div class="calc-name">BMI Calculator</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="chads2vasc">
-                        <div class="calc-icon">💗</div>
-                        <div class="calc-name">CHA2DS2-VASc</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="hasbled">
-                        <div class="calc-icon">🩸</div>
-                        <div class="calc-name">HAS-BLED</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="gcs">
-                        <div class="calc-icon">🧠</div>
-                        <div class="calc-name">Glasgow Coma</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="apache">
-                        <div class="calc-icon">🏥</div>
-                        <div class="calc-name">APACHE II</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="wells">
-                        <div class="calc-icon">🫁</div>
-                        <div class="calc-name">Wells PE Score</div>
-                    </button>
-                    <!-- Unofficial QRISK removed from UI temporarily -->
-                    <button class="calculator-btn" data-calc="frailty">
-                        <div class="calc-icon">🧓</div>
-                        <div class="calc-name">Frailty (Rockwood)</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="barthel">
-                        <div class="calc-icon">🛏️</div>
-                        <div class="calc-name">Barthel Index</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="madders">
-                        <div class="calc-icon">🧮</div>
-                        <div class="calc-name">MADDERS</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="mews">
-                        <div class="calc-icon">⚡</div>
-                        <div class="calc-name">MEWS</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="crb65">
-                        <div class="calc-icon">🦠</div>
-                        <div class="calc-name">CRB-65</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="rockall">
-                        <div class="calc-icon">🩸</div>
-                        <div class="calc-name">Rockall Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="child-pugh">
-                        <div class="calc-icon">🫀</div>
-                        <div class="calc-name">Child-Pugh</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="ottawa-ankle">
-                        <div class="calc-icon">🦴</div>
-                        <div class="calc-name">Ottawa Ankle</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="egfr">
-                        <div class="calc-icon">🫘</div>
-                        <div class="calc-name">eGFR Calculator</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="urea-creatinine">
-                        <div class="calc-icon">🧪</div>
-                        <div class="calc-name">Urea:Creatinine Ratio</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="abcd2">
-                        <div class="calc-icon">🧠</div>
-                        <div class="calc-name">ABCD² Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="must">
-                        <div class="calc-icon">🍽️</div>
-                        <div class="calc-name">MUST Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="waterlow">
-                        <div class="calc-icon">🛏️</div>
-                        <div class="calc-name">Waterlow Score</div>
-                    </button>
-                    <!-- NEW CALCULATORS FROM APP2.JS -->
-                    <button class="calculator-btn" data-calc="grace">
-                        <div class="calc-icon">💗</div>
-                        <div class="calc-name">GRACE Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="crusade">
-                        <div class="calc-icon">🩸</div>
-                        <div class="calc-name">CRUSADE Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="phq9">
-                        <div class="calc-icon">🧠</div>
-                        <div class="calc-name">PHQ-9 Depression</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="gad7">
-                        <div class="calc-icon">😰</div>
-                        <div class="calc-name">GAD-7 Anxiety</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="insulin-sliding">
-                        <div class="calc-icon">💉</div>
-                        <div class="calc-name">Insulin Sliding</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="vasopressor">
-                        <div class="calc-icon">💊</div>
-                        <div class="calc-name">Vasopressor Dosing</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="unit-converter">
-                        <div class="calc-icon">🔄</div>
-                        <div class="calc-name">Unit Converter</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="drug-volume">
-                        <div class="calc-icon">💉</div>
-                        <div class="calc-name">Drug Volume</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="news2">
-                        <div class="calc-icon">⚡</div>
-                        <div class="calc-name">NEWS2</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="curb65">
-                        <div class="calc-icon">🦠</div>
-                        <div class="calc-name">CURB-65</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="palliative">
-                        <div class="calc-icon">🌸</div>
-                        <div class="calc-name">Palliative Care</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="timi">
-                        <div class="calc-icon">❤️</div>
-                        <div class="calc-name">TIMI Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="nihss">
-                        <div class="calc-icon">🧠</div>
-                        <div class="calc-name">NIH Stroke Scale</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="rankin">
-                        <div class="calc-icon">🚶</div>
-                        <div class="calc-name">Modified Rankin</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="mse">
-                        <div class="calc-icon">🧠</div>
-                        <div class="calc-name">Mental State Exam</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="mmse">
-                        <div class="calc-icon">🧩</div>
-                        <div class="calc-name">MMSE</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="paediatric-dosing">
-                        <div class="calc-icon">👶</div>
-                        <div class="calc-name">Paediatric Dosing</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="infusion-rate">
-                        <div class="calc-icon">💧</div>
-                        <div class="calc-name">Infusion Rate</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="cockcroft-gault">
-                        <div class="calc-icon">🫘</div>
-                        <div class="calc-name">Cockcroft-Gault</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="bsa">
-                        <div class="calc-icon">📐</div>
-                        <div class="calc-name">Body Surface Area</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="fluid-balance">
-                        <div class="calc-icon">🌊</div>
-                        <div class="calc-name">Fluid Balance</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="rass">
-                        <div class="calc-icon">😴</div>
-                        <div class="calc-name">RASS Scale</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="frax-fracture">
-                        <div class="calc-icon">🦴</div>
-                        <div class="calc-name">FRAX Fracture Risk</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="anion-gap">
-                        <div class="calc-icon">🧪</div>
-                        <div class="calc-name">Anion Gap</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="wells-dvt">
-                        <div class="calc-icon">🦵</div>
-                        <div class="calc-name">Wells DVT Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="perc">
-                        <div class="calc-icon">✅</div>
-                        <div class="calc-name">PERC Rule</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="rcri">
-                        <div class="calc-icon">🏥</div>
-                        <div class="calc-name">RCRI (Cardiac Risk)</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="qtc">
-                        <div class="calc-icon">📈</div>
-                        <div class="calc-name">Corrected QT (QTc)</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="corrected-sodium">
-                        <div class="calc-icon">🧪</div>
-                        <div class="calc-name">Corrected Sodium</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="osmolal-gap">
-                        <div class="calc-icon">🧪</div>
-                        <div class="calc-name">Osmolal Gap</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="centor">
-                        <div class="calc-icon">🤒</div>
-                        <div class="calc-name">Centor Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="alvarado">
-                        <div class="calc-icon">🤕</div>
-                        <div class="calc-name">Alvarado Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="glasgow-blatchford">
-                        <div class="calc-icon">🩸</div>
-                        <div class="calc-name">Glasgow-Blatchford</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="apgar">
-                        <div class="calc-icon">👶</div>
-                        <div class="calc-name">APGAR Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="bishop">
-                        <div class="calc-icon">🤰</div>
-                        <div class="calc-name">Bishop Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="map">
-                        <div class="calc-icon">💉</div>
-                        <div class="calc-name">Mean Arterial Pressure</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="aa-gradient">
-                        <div class="calc-icon">🫁</div>
-                        <div class="calc-name">A-a Gradient</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="corrected-calcium">
-                        <div class="calc-icon">🦴</div>
-                        <div class="calc-name">Corrected Calcium</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="ldl-calc">
-                        <div class="calc-icon">❤️</div>
-                        <div class="calc-name">LDL Calculator</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="winters">
-                        <div class="calc-icon">🫁</div>
-                        <div class="calc-name">Winters Formula</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="asthma">
-                        <div class="calc-icon">💨</div>
-                        <div class="calc-name">Asthma Severity</div>
-                    </button>
-                    <!-- NEW CALCULATORS (November 2025) -->
-                    <button class="calculator-btn" data-calc="meld">
-                        <div class="calc-icon">🫀</div>
-                        <div class="calc-name">MELD Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="sofa">
-                        <div class="calc-icon">🏥</div>
-                        <div class="calc-name">SOFA Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="fena">
-                        <div class="calc-icon">🫘</div>
-                        <div class="calc-name">FENa</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="caprini">
-                        <div class="calc-icon">🩸</div>
-                        <div class="calc-name">Caprini VTE Risk</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="heart">
-                        <div class="calc-icon">❤️</div>
-                        <div class="calc-name">HEART Score</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="ciwa">
-                        <div class="calc-icon">🍺</div>
-                        <div class="calc-name">CIWA-Ar</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="stopbang">
-                        <div class="calc-icon">😴</div>
-                        <div class="calc-name">STOP-BANG</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="maintenance-fluids">
-                        <div class="calc-icon">💧</div>
-                        <div class="calc-name">Maintenance Fluids</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="free-water-deficit">
-                        <div class="calc-icon">💧</div>
-                        <div class="calc-name">Free Water Deficit</div>
-                    </button>
-                    <button class="calculator-btn" data-calc="qrisk3-official">
-                        <div class="calc-icon">📊</div>
-                        <div class="calc-name">QRISK3 (Official)</div>
-                    </button>
+                <div class="calculator-toolbar">
+                    <div class="calculator-intro">
+                        <h4>🧮 Calculator Finder</h4>
+                        <p>Search and browse clinical calculators with quick explanations.</p>
+                    </div>
+                    <div class="calculator-search">
+                        <input id="calculator-search" type="text" placeholder="Search by name, specialty, or keyword">
+                        <button id="calculator-search-btn" type="button">🔍</button>
+                    </div>
                 </div>
-                <div id="calculator-workspace" class="calculator-workspace">
-                    <!-- Dynamic calculator content loads here -->
+
+                <div class="calculator-meta">
+                    <span id="calculator-count">Loading calculators...</span>
+                    <span>Type to filter, then tap to open a calculator.</span>
+                </div>
+
+                <div id="calculator-grid" class="calculator-grid"></div>
+                <div id="calculator-empty" class="calculator-empty" style="display: none;">
+                    <div style="font-size:20px;">🔎</div>
+                    <div>No calculators match your search. Try a different keyword.</div>
                 </div>
             </div>
-            
-            <!-- Calculator Detail Panel -->
             <div id="calculator-detail" class="tool-panel">
                 <div id="calculator-detail-container">
                     <!-- Individual calculator content loads here -->
