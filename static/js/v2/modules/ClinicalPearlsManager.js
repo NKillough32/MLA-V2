@@ -19,7 +19,7 @@ class ClinicalPearlsManager {
             .knowledge-card-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 16px;
+                gap: 20px;
                 width: 100%;
             }
 
@@ -88,7 +88,7 @@ class ClinicalPearlsManager {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 8px;
-                padding: 0 16px 12px 16px;
+                padding: 0 16px 14px 16px;
             }
 
             .section-tag {
@@ -102,7 +102,7 @@ class ClinicalPearlsManager {
             }
 
             .knowledge-card-body {
-                padding: 0 16px 16px 16px;
+                padding: 2px 18px 18px 18px;
                 position: relative;
                 z-index: 1;
             }
@@ -150,16 +150,17 @@ class ClinicalPearlsManager {
 
             .section-meta {
                 display: flex;
-                gap: 12px;
+                gap: 10px;
                 align-items: center;
                 padding: 0 16px 12px;
+                margin: 12px 0 14px;
                 color: rgba(15,23,42,0.6);
                 font-size: 0.9rem;
             }
 
             .section-meta .pill {
-                padding: 4px 10px;
-                border-radius: 999px;
+                padding: 6px 10px;
+                border-radius: 9999px;
                 background: rgba(15,23,42,0.05);
                 border: 1px solid rgba(15,23,42,0.06);
                 color: inherit;
@@ -170,24 +171,42 @@ class ClinicalPearlsManager {
 
             @media (prefers-color-scheme: dark) {
                 .med-knowledge-subsection {
-                    border: 1px solid rgba(255,255,255,0.08);
-                    background: rgba(6, 10, 26, 0.72);
+                    border: 1px solid #2e2e2e;
+                    background: #1a1a1a;
                     color: rgba(226,232,240,0.98);
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.28);
                 }
                 .med-knowledge-subsection summary { color: inherit; }
                 .med-knowledge-subnote { color: rgba(226,232,240,0.86); }
                 .section-tag, .section-meta .pill {
-                    background: rgba(255,255,255,0.04);
-                    border-color: rgba(255,255,255,0.08);
-                    color: rgba(226,232,240,0.95);
+                    background: #262626;
+                    border-color: #2e2e2e;
+                    color: #e8e8e8;
                 }
                 .knowledge-card {
-                    border-color: rgba(255,255,255,0.08);
-                    background: linear-gradient(145deg, rgba(79,70,229,0.09), rgba(59,130,246,0.06));
-                    box-shadow: 0 16px 55px rgba(0,0,0,0.35);
+                    border: 1px solid #2e2e2e;
+                    background: #1f1f1f;
+                    box-shadow: 0 12px 32px rgba(0,0,0,0.28);
+                    transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
                 }
-                .knowledge-card .card-summary { color: rgba(226,232,240,0.82); }
-                .section-meta { color: rgba(226,232,240,0.65); }
+                .knowledge-card:hover {
+                    background: #2a2a2a;
+                    border-color: #3a3a3a;
+                    box-shadow: 0 16px 36px rgba(0,0,0,0.32);
+                    transform: translateY(-3px);
+                }
+                .knowledge-card h3 { color: #f1f1f1; }
+                .knowledge-card .card-summary { color: #cfcfcf; }
+                .section-meta { color: rgba(226,232,240,0.72); }
+                .section-meta .pill {
+                    background: #262626;
+                    border-color: #2e2e2e;
+                    color: #e8e8e8;
+                }
+                .section-meta .pill:hover {
+                    background: #2a2a2a;
+                    border-color: #3a3a3a;
+                }
             }
         `;
         const style = document.createElement('style');
