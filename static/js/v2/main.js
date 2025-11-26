@@ -26,6 +26,7 @@ import { GuidelinesManager } from './modules/GuidelinesManager.js';
 import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
+import { clinicalPearlsManager } from './modules/ClinicalPearlsManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
@@ -52,6 +53,7 @@ class MLAQuizApp {
         this.mnemonicsManager = mnemonicsManager;
         this.interpretationToolsManager = interpretationToolsManager;
         this.medStatsEthicsManager = medStatsEthicsManager;
+        this.clinicalPearlsManager = clinicalPearlsManager;
         this.laddersManager = laddersManager;
         this.differentialDxManager = differentialDxManager;
         this.triadsManager = triadsManager;
@@ -129,6 +131,7 @@ class MLAQuizApp {
             this.mnemonicsManager.initialize(),
             this.interpretationToolsManager.initialize(),
             this.medStatsEthicsManager.initialize(),
+            this.clinicalPearlsManager.initialize(),
             this.laddersManager.initialize()
         ];
 
@@ -233,6 +236,7 @@ class MLAQuizApp {
             { id: 'emergency-protocols-panel', log: '🚨 Preloading emergency protocols content...', loader: panel => this.loadEmergencyProtocolsContent(panel) },
             { id: 'interpretation-panel', log: '📊 Preloading interpretation tools content...', loader: panel => this.loadInterpretationToolsContent(panel) },
             { id: 'med-stats-ethics-panel', log: '📈 Preloading medical statistics content...', loader: panel => this.loadMedStatsEthicsContent(panel) },
+            { id: 'clinical-pearls-panel', log: '💡 Preloading clinical pearls content...', loader: panel => this.loadClinicalPearlsContent(panel) },
             { id: 'ladders-panel', log: '🪜 Preloading treatment ladders content...', loader: panel => this.loadLaddersContent(panel) }
         ];
 
@@ -1033,7 +1037,8 @@ class MLAQuizApp {
             'learning-pathways': 'learning-pathways-panel',
             'pdf-library': 'pdf-library-panel',
             'contraception-hrt': 'contraception-hrt-panel',
-            'med-stats-ethics': 'med-stats-ethics-panel'
+            'med-stats-ethics': 'med-stats-ethics-panel',
+            'clinical-pearls': 'clinical-pearls-panel'
         };
         
         // Show selected panel
@@ -1101,6 +1106,9 @@ class MLAQuizApp {
                 break;
             case 'med-stats-ethics':
                 this.loadMedStatsEthicsContent(panel);
+                break;
+            case 'clinical-pearls':
+                this.loadClinicalPearlsContent(panel);
                 break;
         }
     }
@@ -2076,6 +2084,28 @@ class MLAQuizApp {
             this.medStatsEthicsManager.render(panel);
         } else {
             container.innerHTML = '<div class="no-content">Medical statistics module unavailable</div>';
+        }
+    }
+
+    /**
+     * Load clinical pearls content
+     */
+    loadClinicalPearlsContent(panel) {
+        if (!panel) {
+            console.error('loadClinicalPearlsContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#clinical-pearls-container') || panel;
+        if (!container) {
+            console.error('loadClinicalPearlsContent: container not found');
+            return;
+        }
+
+        if (this.clinicalPearlsManager && typeof this.clinicalPearlsManager.render === 'function') {
+            this.clinicalPearlsManager.render(panel);
+        } else {
+            container.innerHTML = '<div class="no-content">Clinical pearls module unavailable</div>';
         }
     }
 

@@ -560,7 +560,7 @@ class MedStatsEthicsManager {
                     }
                 ],
                 note: 'Close the loop with “act” steps - adopt, adapt, or abandon based on run-chart signals and SPC rules.'
-            }
+            },
         ];
     }
 
