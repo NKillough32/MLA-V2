@@ -608,7 +608,8 @@ class MedStatsEthicsManager {
             return {
                 badgeBg: `rgba(${fallback.primaryRgb}, 0.12)`,
                 badgeColor: fallback.primary,
-                subsectionBg: 'rgba(75, 101, 163, 0.76)',
+                // keep SSR output consistent with CSS defaults (light surface)
+                subsectionBg: '#ffffff',
                 subsectionBorder: 'rgba(15, 23, 42, 0.1)',
                 subnoteColor: 'rgba(55, 65, 81, 0.85)',
                 summaryColor: fallback.summaryColor,
@@ -618,7 +619,12 @@ class MedStatsEthicsManager {
 
         const primary = this.getCssVar('--v2-primary', fallback.primary);
         const primaryRgb = this.getCssVar('--v2-primary-rgb', fallback.primaryRgb);
-        const isDark = (document.documentElement?.dataset?.theme || '').toLowerCase() === 'dark';
+        // Respect either the explicit in-app theme toggle or the user's OS/UA
+        // preference so JS-driven inline styles won't force light colours when
+        // the system prefers dark mode.
+        const dataTheme = (document.documentElement?.dataset?.theme || '').toLowerCase();
+        const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = dataTheme === 'dark' || prefersDark;
 
         return {
             badgeBg: `rgba(${primaryRgb}, ${isDark ? 0.18 : 0.12})`,
