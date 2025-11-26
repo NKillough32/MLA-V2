@@ -1536,7 +1536,7 @@ class MLAQuizApp {
             NEPHROLOGY: '🫘',
             RENAL: '🫘',
             GASTROENTEROLOGY: '🩸',
-            HEPATOLOGY: '🫀',
+            HEPATOLOGY: '🧫',
             LABORATORY: '🧪',
             CHEMISTRY: '🧪',
             ASSESSMENT: '🧮',
@@ -1556,16 +1556,62 @@ class MLAQuizApp {
             ORTHOPAEDICS: '🦴',
             EMERGENCY: '🚨',
             OTHER: '🧮',
-            BODY_METRICS: '⚖️'
+            BODY_METRICS: '⚖️',
+            GENERAL: '🧮'
         };
 
-        const getCategoryLabel = (category) => {
+        const specialtyMap = {
+            CARDIOLOGY: { icon: '💗', label: 'Cardiology', slug: 'cardiology' },
+            NEUROLOGY: { icon: '🧠', label: 'Neurology', slug: 'neurology' },
+            RESPIRATORY: { icon: '🫁', label: 'Respiratory', slug: 'respiratory' },
+            CRITICAL_CARE: { icon: '🏥', label: 'Critical Care', slug: 'critical-care' },
+            RENAL: { icon: '🫘', label: 'Nephrology', slug: 'renal' },
+            NEPHROLOGY: { icon: '🫘', label: 'Nephrology', slug: 'renal' },
+            GASTROENTEROLOGY: { icon: '🩸', label: 'Gastroenterology', slug: 'gastro' },
+            HEPATOLOGY: { icon: '🧫', label: 'Hepatology', slug: 'gastro' },
+            LABORATORY: { icon: '🧪', label: 'Laboratory', slug: 'endocrine' },
+            CHEMISTRY: { icon: '🧪', label: 'Metabolic', slug: 'endocrine' },
+            ASSESSMENT: { icon: '🧮', label: 'Assessment', slug: 'general' },
+            RISK: { icon: '⚖️', label: 'Risk Scoring', slug: 'general' },
+            VASCULAR: { icon: '🩺', label: 'Vascular', slug: 'cardiology' },
+            INFECTIOUS_DISEASE: { icon: '🦠', label: 'Infectious Disease', slug: 'general' },
+            SURGERY: { icon: '🩹', label: 'Surgery', slug: 'general' },
+            PSYCHIATRY: { icon: '🧠', label: 'Psychiatry', slug: 'psychiatry' },
+            NUTRITION: { icon: '🍽️', label: 'Nutrition', slug: 'nutrition' },
+            GERIATRICS: { icon: '🧓', label: 'Geriatrics', slug: 'geriatrics' },
+            OBSTETRICS: { icon: '🤰', label: 'Obstetrics', slug: 'obstetrics' },
+            PAEDIATRICS: { icon: '👶', label: 'Paediatrics', slug: 'pediatrics' },
+            PHARMACOLOGY: { icon: '💊', label: 'Pharmacy', slug: 'pharmacy' },
+            ENDOCRINOLOGY: { icon: '🦋', label: 'Endocrinology', slug: 'endocrine' },
+            UTILITIES: { icon: '🧰', label: 'Utilities', slug: 'general' },
+            PALLIATIVE: { icon: '🌸', label: 'Palliative', slug: 'palliative' },
+            ORTHOPAEDICS: { icon: '🦴', label: 'Orthopaedics', slug: 'orthopedics' },
+            EMERGENCY: { icon: '🚨', label: 'Emergency', slug: 'critical-care' },
+            BODY_METRICS: { icon: '⚖️', label: 'Body Metrics', slug: 'body-metrics' },
+            GENERAL: { icon: '🧮', label: 'General Tools', slug: 'general' }
+        };
+
+        const formatCategoryLabel = (category) => {
             if (!category) return 'Calculator';
             return category
                 .toString()
                 .replace(/_/g, ' ')
                 .toLowerCase()
                 .replace(/\b\w/g, c => c.toUpperCase());
+        };
+
+        const normalizeCategory = (category) => {
+            if (!category) return 'GENERAL';
+            return category.toString().trim().toUpperCase().replace(/[^A-Z0-9]+/g, '_');
+        };
+
+        const resolveSpecialty = (calculator) => {
+            const normalizedCategory = normalizeCategory(calculator.category);
+            const specialty = specialtyMap[normalizedCategory] || specialtyMap.GENERAL;
+            const icon = specialty.icon || categoryIcons[normalizedCategory] || categoryIcons.GENERAL;
+            const label = specialty.label || formatCategoryLabel(calculator.category);
+            const slug = specialty.slug || normalizedCategory.toLowerCase();
+            return { icon, label, slug };
         };
 
         const renderCalculators = (list) => {
@@ -1582,12 +1628,13 @@ class MLAQuizApp {
             if (emptyState) emptyState.style.display = 'none';
 
             grid.innerHTML = list.map(calc => {
-                const icon = categoryIcons[calc.category] || '🧮';
+                const { icon, label, slug } = resolveSpecialty(calc);
                 const description = calc.description || 'Clinical calculator';
-                const categoryLabel = getCategoryLabel(calc.category);
+                const categoryLabel = label || formatCategoryLabel(calc.category);
+                const specialtyAttr = slug ? `data-specialty="${slug}"` : '';
 
                 return `
-                    <button class="calculator-btn" data-calc="${calc.id}" aria-label="Open ${calc.name} calculator">
+                    <button class="calculator-btn" data-calc="${calc.id}" ${specialtyAttr} aria-label="Open ${calc.name} calculator">
                         <div class="calc-icon">${icon}</div>
                         <div class="calc-meta">
                             <div class="calc-name">${calc.name}</div>
