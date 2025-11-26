@@ -161,9 +161,9 @@ class ClinicalPearlsManager {
             .section-meta .pill {
                 padding: 6px 10px;
                 border-radius: 9999px;
-                background: rgba(15,23,42,0.05);
-                border: 1px solid rgba(15,23,42,0.06);
-                color: inherit;
+                background: rgba(79,70,229,0.08);
+                border: 1px solid rgba(79,70,229,0.12);
+                color: #0f172a;
                 font-weight: 600;
             }
 
@@ -179,9 +179,9 @@ class ClinicalPearlsManager {
                 .med-knowledge-subsection summary { color: inherit; }
                 .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
                 .section-tag, .section-meta .pill {
-                    background: #262626;
-                    border-color: #2e2e2e;
-                    color: #e8e8e8;
+                    background: #1f2533;
+                    border-color: #2f3a50;
+                    color: #e8edff;
                 }
                 .knowledge-card {
                     border: 1px solid #2e2e2e;
@@ -199,13 +199,13 @@ class ClinicalPearlsManager {
                 .knowledge-card .card-summary { color: #cfcfcf; }
                 .section-meta { color: rgba(226,232,240,0.72); }
                 .section-meta .pill {
-                    background: #262626;
-                    border-color: #2e2e2e;
-                    color: #e8e8e8;
+                    background: #1f2533;
+                    border-color: #2f3a50;
+                    color: #e8edff;
                 }
                 .section-meta .pill:hover {
-                    background: #2a2a2a;
-                    border-color: #3a3a3a;
+                    background: #252d3f;
+                    border-color: #3a4b6b;
                 }
             }
 
@@ -220,9 +220,9 @@ class ClinicalPearlsManager {
             [data-theme="dark"] .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
             [data-theme="dark"] .section-tag,
             [data-theme="dark"] .section-meta .pill {
-                background: #1c1c24;
-                border-color: #343434;
-                color: #eef2ff;
+                background: #1c2130;
+                border-color: #31405a;
+                color: #e8edff;
             }
             [data-theme="dark"] .knowledge-card {
                 border: 1px solid #343434;
@@ -240,8 +240,8 @@ class ClinicalPearlsManager {
             [data-theme="dark"] .knowledge-card .card-summary { color: #dce3ff; }
             [data-theme="dark"] .section-meta { color: rgba(226,232,240,0.76); }
             [data-theme="dark"] .section-meta .pill:hover {
-                background: #1f202a;
-                border-color: #3d3d3d;
+                background: #242c3d;
+                border-color: #3a4b6b;
             }
         `;
         const style = document.createElement('style');
