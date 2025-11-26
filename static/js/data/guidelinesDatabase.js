@@ -366,7 +366,10 @@ window.guidelinesDatabase = {
             'OGTT': '2-hour glucose ≥11.1 mmol/L (≥200 mg/dL)'
         },
         targets: {
-            'HbA1c': '<48 mmol/mol (<6.5%) for newly diagnosed, <53 mmol/mol (<7.0%) for most adults',
+            'HbA1c – general': 'Aim ≤48 mmol/mol (≤6.5%) for most adults with type 1 or type 2 diabetes (NICE NG17/NG28) when achievable without problematic hypoglycaemia.',
+            'HbA1c – risk of hypoglycaemia': 'If on insulin/sulfonylurea or hypos are a concern, individualise to ≤53 mmol/mol (≤7.0%) and prioritise hypo avoidance.',
+            'HbA1c – older adults/frailty (UK consensus)': 'Mild frailty: target ≤58–64 mmol/mol (7.5–8.0%). Moderate–severe frailty: ≤64–70 mmol/mol (8.0–8.5%) with focus on safety and quality of life.',
+            'HbA1c – review cadence': 'Review regimen if HbA1c rises >58 mmol/mol (7.5%); check every 3–6 months until stable, then 6-monthly.',
             'Blood pressure': '<130/80 mmHg',
             'Cholesterol': 'Non-HDL <2.5 mmol/L'
         },
@@ -771,8 +774,10 @@ window.guidelinesDatabase = {
             'Screening': 'Offer testing to adults with BMI ≥25 (≥23 in South Asian) plus risk factors'
         },
         glycaemicTargets: {
-            'General target': 'HbA1c ≤48 mmol/mol (6.5%) for most adults',
-            'Relaxed target': '≤58 mmol/mol (7.5%) if risk of hypoglycaemia or limited life expectancy',
+            'General target': 'HbA1c ≤48 mmol/mol (6.5%) for most adults (including type 1) when safe and achievable',
+            'On hypoglycaemia-causing therapy': '≤53 mmol/mol (≤7.0%) when using insulin or sulfonylureas, or if problematic hypos occur',
+            'Frailty/limited life expectancy': 'Consider ≤58–64 mmol/mol (7.5–8.0%) for mild frailty and ≤64–70 mmol/mol (8.0–8.5%) for moderate–severe frailty to avoid hypos and preserve quality of life',
+            'Review triggers & frequency': 'If HbA1c >58 mmol/mol (7.5%), review adherence and intensify therapy. Recheck every 3–6 months until stable, then 6-monthly',
             'Self-monitoring': 'Offer SMBG if on insulin or sulfonylurea, or evidence of hypoglycaemia'
         },
         treatment: {
