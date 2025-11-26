@@ -442,7 +442,8 @@ class ClinicalPearlsManager {
             return {
                 badgeBg: `rgba(${fallback.primaryRgb}, 0.12)`,
                 badgeColor: fallback.primary,
-                subsectionBg: 'rgba(75, 101, 163, 0.76)',
+                // match the CSS default surface for server-rendered content
+                subsectionBg: '#ffffff',
                 subsectionBorder: 'rgba(15, 23, 42, 0.1)',
                 subnoteColor: 'rgba(55, 65, 81, 0.85)',
                 summaryColor: fallback.summaryColor,
@@ -452,7 +453,12 @@ class ClinicalPearlsManager {
 
         const primary = this.getCssVar('--v2-primary', fallback.primary);
         const primaryRgb = this.getCssVar('--v2-primary-rgb', fallback.primaryRgb);
-        const isDark = (document.documentElement?.dataset?.theme || '').toLowerCase() === 'dark';
+        // Determine dark mode from either explicit data-theme or the user's
+        // system preference. Relying only on dataset.theme means JS can force
+        // light-mode inline styles even if the user prefers dark via media query.
+        const dataTheme = (document.documentElement?.dataset?.theme || '').toLowerCase();
+        const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = dataTheme === 'dark' || prefersDark;
 
         return {
             badgeBg: `rgba(${primaryRgb}, ${isDark ? 0.18 : 0.12})`,
