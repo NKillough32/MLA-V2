@@ -262,8 +262,10 @@ class ClinicalPearlsManager {
                         heading: 'Endocrine & Metabolic',
                         items: [
                             "Graves' orbitopathy worsens with smoking; radioactive iodine can transiently aggravate eye disease—pre-treat with steroids if severe.",
+                            'Graves disease is the commonest cause of thyrotoxicosis and is autoimmune — IgG antibodies to the TSH receptor drive hormone excess.',
                             'Toxic multinodular goitre → radioactive iodine is first-line in older adults; surgery is preferred for large goitres with compressive symptoms.',
                             'Primary hyperaldosteronism typically presents with hypertension + hypokalaemia; confirm with aldosterone:renin ratio then CT adrenals.',
+                            'Primary hyperaldosteronism is commonly managed medically with a mineralocorticoid receptor antagonist (eg spironolactone or eplerenone) while arranging confirmatory testing and possible adrenalectomy for unilateral disease.',
                             'Measure PTH first when investigating unexplained hypercalcaemia; primary hyperparathyroidism is usually due to a solitary adenoma.',
                             'Over-replacement with thyroxine accelerates bone loss—always re-check TSH 6–8 weeks after dose changes.',
                             'In suspected adrenal insufficiency, draw cortisol and ACTH before steroids if safe; hydrocortisone 100 mg IV/IM is the emergency dose.'
@@ -277,6 +279,7 @@ class ClinicalPearlsManager {
                             'SGLT2 inhibitors should follow metformin titration unless contraindicated; consider DPP-4 inhibitor where weight gain is a concern.',
                             'DKA: start with isotonic saline even if acidotic; once glucose <14 mmol/L, add 10% dextrose at 125 mL/hr while continuing insulin.',
                             'Cerebral oedema is the feared complication of DKA fluid therapy—watch for headache, bradycardia or reduced GCS.',
+                            'HHS (hyperosmolar hyperglycaemic state) commonly presents with profound hyperglycaemia (>30 mmol/L), severe dehydration and marked hyperosmolarity without significant ketosis—manage mainly with aggressive IV fluids, correct electrolytes and start insulin once volume resuscitation has begun; consider ICU for severe cases.',
                             'Two hypoglycaemic episodes requiring third-party help mandate licence surrender to the DVLA/authorities.'
                         ]
                     },
@@ -286,8 +289,15 @@ class ClinicalPearlsManager {
                             'Acute onset AF ≥48 hours or uncertain onset → rate control; rhythm control only after stroke risk has been addressed.',
                             'HFrEF: add an MRA on top of ACEi/ARB + beta-blocker if symptoms persist; start SGLT2 inhibitor early for mortality benefit.',
                             'Posterior MI: reciprocal ST depression with tall R waves in V1–V3—order posterior leads (V7–V9) to confirm.',
+                            'Hypertension is the most common predisposing association for aortic dissection; suspect dissection with sudden severe chest/back pain and unequal pulses.',
+                            'CT angiography is the investigation of choice for suspected aortic dissection in clinically stable patients; unstable patients require immediate resuscitation and specialist input.',
+                            'Massive pulmonary embolism causing hypotension or shock should prompt urgent consideration of thrombolysis in the appropriate setting.',
+                            'Airway first: always follow the airway‑breathing‑circulation sequence — call for help early, position, suction and oxygenate while preparing definitive airway plans.',
+                            'Difficult airway: follow the DAS/rural airway algorithm — optimise positioning, consider awake intubation or videolaryngoscopy, use supraglottic device if intubation fails and proceed to emergency front‑of‑neck access (cricothyroidotomy) if you cannot ventilate.',
                             'COPD exacerbation with PaCO2 >6 kPa and pH <7.35 (≥7.26) despite maximal therapy → consider NIV early.',
+                            'Oxygen therapy in COPD: target saturation 88–92% in patients at risk of CO2 retention; use ABGs to guide oxygen titration if hypercapnia suspected.',
                             'Legionella often causes hyponatraemia and relative bradycardia; urinary antigen test is the diagnostic shortcut.',
+                            'In non-smokers presenting with lung cancer, adenocarcinoma is the most common histological subtype.',
                             'MI related to cocaine: give IV benzodiazepines; avoid pure beta-blockade due to unopposed alpha effect.'
                         ]
                     },
@@ -295,20 +305,33 @@ class ClinicalPearlsManager {
                         heading: 'Gastroenterology & Hepatology',
                         items: [
                             'Crohn’s disease: transmural skip lesions and fistulae; perforation risk is higher than in ulcerative colitis.',
+                            'New iron deficiency anaemia in adults aged >60 should prompt investigation for colorectal cancer (eg colonoscopy) unless another clear cause is identified.',
                             'AST:ALT >2:1 suggests alcoholic liver disease; check GGT to support heavy alcohol intake.',
                             'Primary sclerosing cholangitis is strongly linked to ulcerative colitis; monitor for cholangiocarcinoma.',
                             'Painless jaundice + weight loss → suspect pancreatic cancer; Courvoisier sign (palpable gallbladder) points to malignant obstruction.',
+                            'Pancreatic cancer may present with cholestatic LFTs (raised ALP/bilirubin) and unexplained weight-loss — arrange urgent imaging and specialist referral.',
+                            'Oesophago-gastro-duodenoscopy (OGD/upper GI endoscopy) with biopsy is the investigation of choice for suspected gastric cancer — histology is required for definitive diagnosis and staging.',
+                            'ERCP can cause post-procedural pancreatitis — acute pancreatitis is the commonest complication following ERCP and should be considered after new or worsening abdominal pain post-procedure.',
+                            'A disproportional rise in urea relative to creatinine may suggest an upper GI source of bleeding (e.g., haematemesis) rather than a lower GI bleed.',
                             'Acute mesenteric ischaemia causes severe pain out of proportion to exam findings—do not delay CT angiography.',
-                            'Upper GI bleed with haemodynamic instability → follow massive transfusion protocol rather than large-volume crystalloid.'
+                            'Large-bowel obstruction typically presents with abdominal distension, failure to pass flatus or stool and later-onset vomiting — suspect colonic obstruction and image appropriately (AXR/CT).',
+                            'Upper GI bleed with haemodynamic instability → follow massive transfusion protocol rather than large-volume crystalloid.',
+                            'Use scoring systems (eg Glasgow-Blatchford / Rockall) to triage urgency of endoscopy and predict need for intervention in upper GI bleeds.'
                         ]
                     },
                     {
                         heading: 'Obstetrics, Gynaecology & Paediatrics',
                         items: [
                             'PCOS diagnosis needs 2 of 3: oligo/anovulation, clinical/biochemical hyperandrogenism, or polycystic ovaries on scan.',
+                            'Women at moderate or high risk of pre-eclampsia should be offered aspirin 75–150 mg daily from 12 weeks until delivery according to local guidance.',
+                            'If placental abruption occurs and the fetus is alive and <36 weeks without distress, admit for monitoring and give antenatal corticosteroids for fetal lung maturation while planning delivery based on maternal and fetal condition.',
+                            'Neonatology: cyanotic congenital heart disease presenting in the first days of life suggests transposition of the great arteries (TGA); cyanosis developing at 1–2 months suggests tetralogy of Fallot (TOF).',
+                            'Chickenpox commonly has a prodrome of fever and systemic symptoms before the characteristic vesicular rash that begins on the trunk and face.' ,
                             'Breastfed infants who lose >10% birth weight in week 1 require urgent lactation support review.',
                             'Avoid oral isotretinoin in pregnancy; erythromycin is the systemic acne option if needed.',
                             'Youth mental health: patients ≤25 years started on SSRIs should be reviewed after 1 week for suicidality.',
+                            'Severe obsessive-compulsive disorder causing major functional impairment should prompt referral to secondary mental health services; pharmacological or psychological treatment may be started while waiting for assessment according to local pathways.',
+                            'If trauma-focused psychotherapy (eg CBT or EMDR) is unsuccessful for PTSD, consider first-line pharmacotherapy options such as an SSRI or venlafaxine according to local guidance and specialist advice.',
                             'Uncertain tetanus status with non-trivial wounds → give booster + immunoglobulin unless fully immunised within 10 years.',
                             'Obesity increases endometrial cancer risk; combined oral contraceptive pill is protective.'
                         ]
@@ -317,22 +340,34 @@ class ClinicalPearlsManager {
                         heading: 'Renal, Vascular & Acute Medicine',
                         items: [
                             'NICE AKI: creatinine rise >26 µmol/L in 48 h, >50% in 7 days, or urine output <0.5 mL/kg/hr for >6 h.',
+                            'Uraemia causing encephalopathy, pericarditis or refractory metabolic disturbance is an indication to consider urgent dialysis and nephrology review.',
+                            'Following head injury more than one episode of vomiting (or new focal neurological signs) is an indication to arrange CT head within 1 hour — escalate as an emergency.',
                             'Low Wells (≤4) with negative D-dimer → stop anticoagulation and consider alternative diagnoses.',
+                            'Age-adjusted D-dimer: in patients >50y consider using an age-adjusted threshold (eg age × 10 in the same units as your lab) to increase specificity; always interpret results with assay-specific reference ranges.',
                             'Negative CTPA but ongoing DVT concern → arrange proximal leg vein ultrasound; if D-dimer positive with negative scan, repeat in 1 week.',
                             'Send MSU in all women >65 with suspected UTI; overtreatment of asymptomatic bacteriuria is common.',
                             'Right-sided tenderness on PR exam should raise suspicion of appendicitis even with atypical labs.',
-                            'Fast-acting oral carbohydrate is first-line for conscious hypoglycaemia; glucagon if no IV access.'
+                            'Fast-acting oral carbohydrate is first-line for conscious hypoglycaemia; glucagon if no IV access. If the patient has an impaired level of consciousness or cannot swallow, give IV glucose (50% glucose bolus or as per local protocol) and consider critical care escalation.',
+                            'Paracetamol (acetaminophen) overdose: use the nomogram for single acute ingestions and start N‑acetylcysteine within recommended time windows — for staggered/suspected repeated overdoses treat empirically and seek toxicology advice.',
+                            'TCA overdose with widened QRS or arrhythmia: give bolus sodium bicarbonate and proceed per toxicology guidance; monitor for seizures and arrhythmias.',
+                            'Opioid overdose: prioritise airway and ventilation; naloxone reverses respiratory depression but titrate cautiously to avoid abrupt withdrawal and re-sedation may require repeated dosing or infusion.'
                         ]
                     },
                     {
                         heading: 'Dermatology, Musculoskeletal & General Practice',
                         items: [
                             'Plantar fasciitis: morning heel pain improves with stretching + rolling; weight loss and calf strengthening reduce recurrence.',
+                            'Propranolol remains the first-line drug treatment for symptomatic essential tremor where pharmacotherapy is indicated.',
+                            'Diabetes is a risk factor for retinal detachment (tractional detachments in proliferative diabetic retinopathy) — screen and refer early for visual change.',
+                            'Myxoedema coma is a life-threatening hypothyroid emergency treated with IV levothyroxine and intravenous hydrocortisone; suspect when hypothermia, hypoventilation, marked bradycardia or reduced consciousness occur.',
+                            'Temporal (giant cell) arteritis: begin high-dose glucocorticoids immediately if suspected to prevent irreversible visual loss — do not wait for temporal artery biopsy to start treatment.',
                             'Haemoarthroses are classic for haemophilia; aspirate a first presentation to confirm and exclude sepsis.',
                             'Erythema nodosum warrants chest X-ray to screen for sarcoidosis or TB.',
                             'Non-sedating antihistamines are first-line for urticaria; up-titrate to 4x dose before considering omalizumab.',
                             'Most metatarsal stress fractures occur at the 2nd metatarsal shaft; offload early to prevent non-union.',
                             'Lichen planus: potent topical steroids first-line; consider wick-insertion for oral lesions if symptomatic.'
+                            ,
+                            'Parkinson\'s disease typically causes an asymmetric resting tremor that often improves with voluntary movement; remember associated non-motor features and functional impact.'
                         ]
                     }
                 ],
@@ -348,6 +383,8 @@ class ClinicalPearlsManager {
                         heading: 'Neurology & Stroke',
                         items: [
                             'Thunderclap headache + neck stiffness → exclude subarachnoid haemorrhage even if initial CT is normal (LP after 12 hours).',
+                            'Acute ischaemic stroke: consider IV alteplase within 4.5 hours for eligible patients — perform urgent CT and NIHSS pre-treatment.',
+                            'Posterior strokes may present with vomiting, vertigo or ataxia — do not rely solely on FAST for posterior circulation infarcts.',
                             'Painful third nerve palsy implies posterior communicating artery aneurysm until proven otherwise.',
                             'Suspected cauda equina: saddle anaesthesia, urinary retention, bilateral radiculopathy → urgent MRI + neurosurgical review.',
                             'Acute unilateral pupil-involving ptosis with diplopia could be an aneurysm—urgent imaging beats outpatient follow-up.'
@@ -358,7 +395,9 @@ class ClinicalPearlsManager {
                         items: [
                             'Bilateral mid-to-lower zone patchy consolidation in older adults suggests Legionella—treat with macrolide/fluoroquinolone.',
                             'Non-blanching rash + fever → treat as meningococcal sepsis immediately with IM/IV benzylpenicillin pre-hospital.',
+                            'Sepsis early management (eg 1‑hour bundle): draw blood cultures, give broad-spectrum IV antibiotics promptly and give 30 mL/kg crystalloid for hypotension or lactate ≥4 mmol/L; arrange urgent source control where indicated.',
                             'Post-influenza deterioration with cavitating pneumonia → think Staphylococcus aureus and escalate antimicrobials.',
+                            'Severe C. difficile (toxic megacolon/ileus, rising lactate, hypotension): stop offending antibiotics, isolate the patient, start oral vancomycin or fidaxomicin promptly; if ileus consider oral vancomycin ± rectal administration and IV metronidazole while arranging early surgical/ICU escalation for fulminant disease.',
                             'Diabetic foot with disproportionate pain or crepitus → urgent imaging and surgical opinion for necrotising infection.'
                         ]
                     },
@@ -386,7 +425,8 @@ class ClinicalPearlsManager {
                             'DOACs are contraindicated in mechanical valves—use warfarin with target INR per valve type.',
                             'Clopidogrel non-responders post-stent may benefit from ticagrelor; always check for drug interactions (e.g. carbamazepine).',
                             'ACEi/ARB in AKI: hold during sepsis/hypovolaemia; restart once euvolaemic and renal function recovering.',
-                            'Perioperative AF: avoid amiodarone in patients with severe asthma/COPD—opt for beta-blocker or digoxin for rate control.'
+                            'Perioperative AF: avoid amiodarone in patients with severe asthma/COPD—opt for beta-blocker or digoxin for rate control.',
+                            'For stable, regular broad-complex tachycardias without adverse features, IV amiodarone is a commonly used first-line antiarrhythmic — follow local algorithms for unstable or polymorphic rhythms.'
                         ]
                     },
                     {

@@ -2,8 +2,14 @@
  * MedStatsEthicsManager.js - Centralized renderer for medical statistics,
  * epidemiology, and ethics reference content.
  *
- * Bayes conversion (practical): pre-test odds = p / (1 - p). post-test odds = pre-test odds * LR. post-test probability = post-test odds / (1 + post-test odds).
- * Worked example: PSA test LR+ = 2.5, LR- = 0.6. Pre-test probability 10% → pre-test odds = 0.1 / 0.9 = 0.111. Positive: post odds = 0.111*2.5=0.277 → post-prob = 0.277/(1+0.277)=0.217 → 21.7%. Negative: post odds = 0.111*0.6=0.067 → post-prob = 6.2%.
+ * Bayes conversion (practical):
+ *  - pre-test odds = p / (1 - p)
+ *  - post-test odds = pre-test odds × LR
+ *  - post-test probability = post-test odds / (1 + post-test odds)
+ * Worked example (PSA): LR+ = 2.5, LR− = 0.6. For a 10% pre-test probability:
+ *  - pre-test odds = 0.10 / 0.90 = 0.111
+ *  - positive test → post odds = 0.111 × 2.5 = 0.277 → post-prob ≈ 0.217 (21.7%)
+ *  - negative test → post odds = 0.111 × 0.6 = 0.067 → post-prob ≈ 6.2%
  * Keeps the knowledge cards modular and reusable across the Medical Tools
  * panel without hard-coding them into HTML templates.
  */
@@ -96,7 +102,7 @@ class MedStatsEthicsManager {
                             'Phase I: safety and dose-finding; Phase II: signal and dose-ranging; Phase III: definitive efficacy; Phase IV: post-marketing surveillance.',
                             'Drug development moves from preclinical safety through phased human trials with increasing sample sizes and endpoints.',
                             'Example: Phase I (n=20-100 healthy volunteers) tests safety; Phase II (n=100-500 patients) tests efficacy signal; Phase III (n=1000-5000) confirms benefits with predefined endpoints.',
-                            'Worked example: COVID-19 vaccine trials progressed from Phase I (safety in 45 volunteers) to Phase II/III (efficacy in 43,000+ participants) in months, using DSMB oversight, adaptive stopping rules, and global recruitment to shorten timelines while preserving rigour.'
+                            'Worked example: COVID-19 vaccine trials progressed from Phase I (safety in ~45 volunteers) to Phase II/III (efficacy in tens of thousands of participants) in months — speed achieved by adaptive designs, DSMB oversight and large-scale global recruitment while maintaining scientific rigour.'
                         ]
                     },
                     {
@@ -104,7 +110,7 @@ class MedStatsEthicsManager {
                         items: [
                             'Parametric tests: t-test, ANOVA, linear regression; non-parametric: Mann–Whitney, Kruskal–Wallis.',
                             'Categorical tests: chi-square, Fisher exact; time-to-event: log-rank and Cox proportional hazards (yields hazard ratios). Check assumptions (normality, proportional hazards, independence).',
-                            'Interpret p-values alongside effect sizes and CIs; avoid dichotomous thinking (significant vs not). Pre-specify primary endpoints and adjust for multiple comparisons.',
+                            'Interpret p-values together with effect sizes and confidence intervals; avoid dichotomous thinking ("significant" vs "not significant"). Pre-specify primary endpoints and adjust for multiple comparisons when appropriate.',
                             'Example: Compare mean blood pressure between two groups - paired t-test if same patients before/after; unpaired t-test for different groups; Wilcoxon alternatives if skewed.',
                             'Worked example: Drug A vs placebo for cholesterol reduction. t-test shows mean difference -25mg/dL (95% CI: -30 to -20), p<0.001. Clinically meaningful despite small p-value. Sensitivity analysis excluding statin users yields -22mg/dL (95% CI: -27 to -17) reinforcing robustness.'
                         ]
@@ -113,7 +119,7 @@ class MedStatsEthicsManager {
                         heading: 'Confidence Intervals & Standard Error',
                         items: [
                             'CIs quantify estimate precision; SEM describes sampling variability of the mean (SD / √n).',
-                            'Use 95% CIs for typical reporting and highlight clinical as well as statistical relevance.',
+                            'Use 95% confidence intervals for standard reporting and always consider clinical relevance in addition to statistical significance.',
                             'Practical formulas: SE(mean) = SD / sqrt(n). 95% CI(mean) ≈ mean ± 1.96 * SE (use the t_{n-1} quantile for small n). SE(proportion) = sqrt(p*(1-p)/n). For small n or p near 0 or 1, prefer Wilson or exact (Clopper–Pearson) CIs.',
                             'Example: Mean cholesterol 180 mg/dL with SD=25 and n=100 → SE = 25/√100 = 2.5. 95% CI ≈ 180 ± 1.96*2.5 = (175.1, 184.9).',
                             'Worked example (proportion): 65/100 satisfied → p=0.65, SE = sqrt(0.65*0.35/100)=0.0477. 95% CI ≈ 0.65 ± 1.96*0.0477 = (0.556, 0.744) i.e. 55.6%–74.4%. Use exact/Wilson intervals when n small.'
@@ -124,7 +130,7 @@ class MedStatsEthicsManager {
                         items: [
                             'Relative Risk and Odds Ratio describe relative differences; Hazard Ratio describes instantaneous event-rate ratios in survival analysis.',
                             'Absolute Risk Reduction = control risk − treatment risk; NNT = 1 / ARR (use absolute measures for patient communication).',
-                            'Formulas & guidance: ARR = Rc − Rt. NNT = 1 / ARR (express ARR as a proportion, e.g. 0.08). When computing CIs for NNT, derive limits from the CI of ARR; if ARR CI crosses zero, NNT is not meaningful. Round NNT up to the next integer for benefit interpretation.',
+                            'Formulas & guidance: ARR = Rc − Rt. NNT = 1 / ARR (express ARR as a proportion, e.g. 0.08). When computing confidence intervals for the NNT, derive limits from the CI of the ARR — if the ARR CI crosses zero then the NNT is not meaningful. For benefit interpretation, round the NNT up to the next integer.',
                             'Example: Vaccine reduces infection risk from 10% to 2%: RR = 0.2. ARR = 0.10 − 0.02 = 0.08 → NNT = 1 / 0.08 = 12.5 → round up to 13. If 95% CI for ARR = (0.04, 0.12), NNT CI ≈ (8.3, 25) (interpret with caution).',
                             'Worked example: Statin trial: control group 10% heart attacks/year, treatment 6%. ARR=4%, NNT=25. OR=0.57 (odds of event reduced by 43%).'
                         ]
@@ -132,7 +138,7 @@ class MedStatsEthicsManager {
                     {
                         heading: 'Intention-To-Treat & Analysis Populations',
                         items: [
-                            'Intention-to-treat preserves randomization by analysing participants in assigned groups; per-protocol and as-treated are complementary but prone to bias.',
+                            'Intention-to-treat (ITT) preserves the benefits of randomisation by analysing participants in the groups to which they were originally assigned regardless of adherence. Per-protocol and as-treated analyses can be useful as sensitivity analyses but are prone to selection bias.',
                             'Example: Drug trial where 20% stop treatment - ITT includes all (preserves randomization); per-protocol excludes non-adherent (overestimates effect).',
                             'Worked example: Weight loss trial: ITT shows 3kg loss (includes dropouts); per-protocol shows 5kg loss (only completers). ITT is more conservative and realistic.'
                         ]
@@ -140,15 +146,15 @@ class MedStatsEthicsManager {
                     {
                         heading: 'Variance & Power',
                         items: [
-                            'Variance (SD²) drives precision and sample-size calculations; power is the probability to detect an effect of a given size (1−β).',
+                            'Variance (SD²) drives precision and sample-size calculations. Power is the probability of detecting a prespecified effect size (1 − β).',
                             'Underpowered studies risk false negatives; overpowered studies may detect trivial differences.',
-                            'Key formula (two-sample means, equal n per group): n per group ≈ 2 * (Z_{1−α/2} + Z_{1−β})^2 * σ^2 / δ^2. For α=0.05 (Z≈1.96) and 80% power (Z≈0.84) this simplifies to the common approximation shown in worked examples below. Round up and inflate for expected dropout.',
+                            'Key formula (two-sample means, equal n per group): n per group ≈ 2 × (Z_{1−α/2} + Z_{1−β})^2 × σ^2 / δ^2 — where σ is the assumed standard deviation and δ the minimum clinically important difference. For α=0.05 (Z≈1.96) and 80% power (Z≈0.84) the formula yields the common approximation used in worked examples. Always round up and inflate for expected dropout.',
                             'Worked numeric example: SD=10, δ=5, α=0.05, power=80% → n ≈ 2*(1.96+0.84)^2*(10^2)/(5^2) = 2*(2.8)^2*100/25 = 2*7.84*4 = 62.72 → round up to 63 per group; inflate by 10% → 70 per group.',
-                            'Two-proportion approx. formula: n ≈ (Z_{1−α/2}^2 * (p1(1−p1)+p2(1−p2))) / (p1−p2)^2 — always round up and account for loss to follow-up.'
+                            'Two-proportion approximate formula: n ≈ (Z_{1−α/2}^2 × (p1(1−p1) + p2(1−p2))) / (p1 − p2)^2 — round up and account for loss to follow-up.'
                         ]
                     }
                 ],
-                note: 'Adjust for multiple testing (Bonferroni/FDR), prespecify endpoints and sample-size justification in protocols and SAPs.'
+                note: 'Adjust for multiple testing (Bonferroni/FDR), pre-specify primary endpoints and include a sample-size justification in trial protocols and SAPs.'
             },
             {
                 title: 'Graphical Representations & Distributions',
@@ -158,6 +164,7 @@ class MedStatsEthicsManager {
                         heading: 'Normal Distribution & Summary Plots',
                         items: [
                             'Histogram, density plots and boxplots visualise distribution; normal distribution underpins many parametric tests.',
+                            'When data deviate from normality consider transformations (eg. log), non-parametric tests, or robust summaries. Look for skew and outliers, consider trimming or winsorising only when justified, and visualise uncertainty using confidence intervals, bootstrapped intervals or violin plots where appropriate.',
                             'Example: Blood pressure data - histogram shows bell-shaped curve; boxplot displays median, quartiles, outliers.',
                             'Worked example: 1000 patients\' cholesterol levels: mean 200mg/dL, SD 40mg/dL. 68% within 1SD (160-240), 95% within 2SD (120-280). Normal Q-Q plot confirms normality.'
                         ]
@@ -263,6 +270,7 @@ class MedStatsEthicsManager {
                         heading: 'Screening Programmes & Metrics',
                         items: [
                             'Monitor uptake, interval cancers, lead-time and length-time bias; calculate number needed to screen when possible.',
+                            'Be explicit about screening harms (false positives, overdiagnosis and unnecessary downstream procedures). Ensure program governance, audit and balanced participant information; apply established criteria (eg. Wilson & Jungner) when designing or endorsing a screening programme.',
                             'Example: Breast screening: uptake 70%, interval cancers 20% of expected, lead-time bias overestimates survival benefit.',
                             'Worked example: Cervical screening program: screens 1000 women/year, detects 8 cancers. NNS = 125. Interval cancers = 2/year. Program sensitivity = 80%.'
                         ]
@@ -387,14 +395,16 @@ class MedStatsEthicsManager {
                         heading: 'Using & Disclosing Patient Information for Direct Care',
                         items: [
                             'Share information accurately and securely with the team involved in direct care; obtain consent where appropriate and log disclosures.',
+                            'When sharing, follow the "minimum necessary" principle: share only what the recipient needs. Use secure transfer methods (encrypted systems, secure portals) and data-sharing agreements where required. For emergencies where consent cannot be obtained, document the legal basis for sharing and the decision rationale.',
                             'Example: Share radiology results with surgical team; log all disclosures in patient record.',
-                            'Worked example: Patient transferred between hospitals. Doctor obtains consent for information sharing, securely transmits records, documents disclosure in notes.'
+                            'Worked example: Patient transferred between hospitals. Doctor obtains consent for information sharing, securely transmits records, documents disclosure in notes and retains an audit trail.'
                         ]
                     },
                     {
                         heading: 'Reporting Criminal Proceedings',
                         items: [
                             'Follow local policies and legal requirements when reporting criminal activity; balance confidentiality with safety and legal duties.',
+                            'When mandatory reporting or safeguarding concerns arise (children, vulnerable adults, or imminent risk of serious harm), contact local safeguarding leads or police immediately. Preserve evidence where appropriate, document the decision and rationale in the record, and escalate for senior or legal advice as needed.',
                             'Example: Patient admits to drink-driving. Report to authorities if poses ongoing risk; document decision-making and rationale with senior review.',
                             'Worked example: Patient confesses child abuse. Doctor reports to social services and police as required by law, documents actions taken, supports patient through process.',
                             'Scenario: Gang-related knife injury with suspected retaliation risk. Team informs safeguarding lead, completes weapon injury reporting, and coordinates with police liaison while maintaining necessary clinical confidentiality.'
@@ -413,6 +423,7 @@ class MedStatsEthicsManager {
                         heading: 'Consent (Including Capacity Issues)',
                         items: [
                             'Obtain informed consent: explain nature, benefits, risks and alternatives; for incapacity follow MCA and involve appropriate surrogates.',
+                            'When assessing capacity, use the four-stage test: can the person understand, retain, weigh up and communicate their decision? Offer information in accessible formats, use professional interpreters when needed, document the assessment and outcome, and follow best‑interests pathways if capacity is lacking.',
                             'Example: Surgery consent - explain procedure, risks, benefits, alternatives; document discussion and consent; provide written materials and time for questions.',
                             'Worked example: Patient consents to chemotherapy. Doctor explains treatment, side effects, alternatives (palliative care), addresses questions, obtains written consent, documents discussion.',
                             'Scenario: Language barrier and no family present. Clinician arranges professional interpreter, repeats explanations to confirm understanding, and defers consent until patient can engage meaningfully.'
@@ -422,6 +433,7 @@ class MedStatsEthicsManager {
                         heading: 'Death Certification & Notifiable Deaths',
                         items: [
                             'Complete death certification accurately; notify coroners or public health authorities for reportable deaths as required by law.',
+                            'Refer promptly to the coroner/medical examiner when death is sudden, unexplained, violent, or the cause is uncertain — follow local timeframes and procedures. Document a clear timeline of events, times and any conversations with relatives; involve bereavement services and notify next-of-kin according to local policy.',
                             'Example: Cancer patient dies - certify if cause clear; refer to coroner if sudden, unexplained, or suspicious.',
                             'Worked example: Elderly patient dies after fall. Doctor reviews history, examines body, certifies natural causes. If suspicious bruising noted, refers to coroner instead.'
                         ]
@@ -430,6 +442,7 @@ class MedStatsEthicsManager {
                         heading: 'Controlled Drugs',
                         items: [
                             'Prescribe, record and store controlled drugs following legal/regulatory requirements; monitor for diversion and document rationale for use.',
+                            'Maintain secure storage and accurate controlled-drug registers; report theft or loss immediately, use approved waste/destruction pathways, and escalate concerns to the local Controlled Drugs Accountable Officer as required.',
                             'Example: Opioid prescription - follow guidelines, monitor for misuse signs, document indications and monitoring.',
                             'Worked example: Patient needs morphine for pain. Doctor prescribes minimal effective dose, documents rationale, arranges follow-up, monitors for dependence signs.'
                         ]
@@ -454,6 +467,7 @@ class MedStatsEthicsManager {
                         heading: 'Clinical Audit & Quality Improvement',
                         items: [
                             'Engage in audit cycles and QI projects to improve care; ensure governance and patient data safeguards during review.',
+                            'Clarify whether activity requires research ethics or is a service evaluation/quality improvement activity and follow local governance routes. Actively involve patients or public representatives where possible, define measurement and success criteria up front, and close the loop by implementing, monitoring and re-auditing change.',
                             'Example: Audit antibiotic prescribing - collect data, benchmark against standards, implement changes, re-audit.',
                             'Worked example: Ward audit shows 30% inappropriate antibiotic use. Team implements education and guidelines, re-audit shows improvement to 10%.'
                         ]
@@ -470,6 +484,7 @@ class MedStatsEthicsManager {
                         heading: 'DVLA: Psychiatric Disorders',
                         items: [
                             'Advise patients about driving and report to DVLA where statutory duties require, balancing patient confidentiality with public safety.',
+                            'Check local/licensing guidance (eg. DVLA in the UK) for examples of conditions requiring reporting — recurrent seizures, psychosis with impaired awareness, or sedating medication are common triggers. Provide written advice, arrange follow-up and notify licensing authorities where required; document the discussion and your clinical reasoning.',
                             'Example: Patient with psychosis - advise about driving risks, report to DVLA if poses danger to public.',
                             'Worked example: Patient develops severe depression. Doctor advises stopping driving, discusses with patient, reports to DVLA as required for safety.'
                         ]
@@ -477,15 +492,16 @@ class MedStatsEthicsManager {
                     {
                         heading: 'Gifts from Patients',
                         items: [
-                            'Accept small gifts with courtesy but decline large or influential gifts; declare and seek advice for potential conflicts.',
-                            'Example: Patient offers bottle of wine - accept with thanks; expensive watch - politely decline and explain policy.',
-                            'Worked example: Grateful patient offers £500 gift. Doctor declines politely, explains GMC guidance, suggests donation to charity instead.'
+                            'Accept small, non-monetary tokens of appreciation if they do not influence clinical decision-making; decline substantial gifts (or repeated expensive gifts) that could create a real or perceived conflict of interest. Follow employer/local policy and your professional regulator guidance (e.g. GMC "Gifts and Hospitality"), and seek advice when unsure.',
+                            'Example: A modest box of chocolates or a single bottle of wine given as thanks may be accepted and shared with the team. An expensive watch or frequent high-value presents should be politely declined with a short explanation.',
+                            'Worked example: A patient offers a £500 monetary gift. Explain you cannot accept large monetary gifts, reference the regulator and local policy, suggest donating the sum to a nominated charity instead, and document the conversation and decision in the clinical notes (and any local declaration/finance system if required).'
                         ]
                     },
                     {
                         heading: 'Teaching, Training & Assessment',
                         items: [
                             'Supervise and assess trainees fairly, document feedback, and maintain patient safety during teaching encounters.',
+                            'Obtain patient consent for trainee involvement and explain the trainee\'s level of supervision. Use appropriate supervision grades for procedures, anonymise patient data used in teaching, and provide structured remediation and feedback pathways for learners.',
                             'Example: Medical student examination - supervise closely, provide constructive feedback, ensure patient comfort.',
                             'Worked example: Student performs venipuncture. Supervisor guides technique, provides immediate feedback, documents competency assessment.'
                         ]
@@ -509,6 +525,7 @@ class MedStatsEthicsManager {
                         heading: 'Data Principles',
                         items: [
                             'Data minimisation: collect only necessary fields; de-identify for teaching/research when possible.',
+                            'Follow applicable legal frameworks (eg. GDPR or local law): identify a lawful basis for processing, use data-sharing agreements for transfers, apply pseudonymisation or anonymisation when possible, retain audit trails and obtain research ethics approvals where required.',
                             'Example: Research database - collect only age, sex, diagnosis; remove names, addresses, full dates.',
                             'Worked example: COVID study needs vaccination status and outcomes. Collect minimal identifiers (study ID only), de-identify data for analysis, destroy identifiers after linkage.'
                         ]
@@ -533,6 +550,7 @@ class MedStatsEthicsManager {
                         heading: 'AI/ML & Bias Guardrails',
                         items: [
                             'Audit datasets for imbalance, drift, missingness, and label quality before model training; refresh cohorts regularly.',
+                            'Model governance: document model design and performance (model card), validate on held-out data, test external validity and predefine monitoring thresholds for drift. Maintain an incident and rollback plan for model failures and ensure human oversight for high-risk decisions.',
                             'Fairness review: track subgroup performance (sex, age, ethnicity), document mitigation steps, and set go/no-go thresholds.',
                             'Operational safety: keep humans in the loop for overrides, log model-assisted decisions, and roll back or retrain on alert triggers.'
                         ]
