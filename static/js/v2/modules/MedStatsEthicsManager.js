@@ -54,8 +54,18 @@ class MedStatsEthicsManager {
                     color: rgba(226,232,240,0.98); /* near-white text for contrast */
                 }
                 .med-knowledge-subsection summary { color: inherit; }
-                .med-knowledge-subnote { color: rgba(226,232,240,0.86); }
+                .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
             }
+
+            /* Explicit theme toggle support (data-theme="dark") to match in-app switch */
+            [data-theme="dark"] .med-knowledge-subsection {
+                border: 1px solid rgba(255,255,255,0.08);
+                background: rgba(6, 10, 26, 0.82);
+                color: rgba(226,232,240,0.98);
+                box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+            }
+            [data-theme="dark"] .med-knowledge-subsection summary { color: inherit; }
+            [data-theme="dark"] .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
         `;
         const style = document.createElement('style');
         style.id = 'med-stats-ethics-styles';

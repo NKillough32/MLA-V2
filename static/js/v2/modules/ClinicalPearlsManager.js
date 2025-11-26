@@ -177,7 +177,7 @@ class ClinicalPearlsManager {
                     box-shadow: 0 6px 20px rgba(0,0,0,0.28);
                 }
                 .med-knowledge-subsection summary { color: inherit; }
-                .med-knowledge-subnote { color: rgba(226,232,240,0.86); }
+                .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
                 .section-tag, .section-meta .pill {
                     background: #262626;
                     border-color: #2e2e2e;
@@ -207,6 +207,41 @@ class ClinicalPearlsManager {
                     background: #2a2a2a;
                     border-color: #3a3a3a;
                 }
+            }
+
+            /* Explicit theme toggle support (data-theme="dark") for in-app dark mode */
+            [data-theme="dark"] .med-knowledge-subsection {
+                border: 1px solid #343434;
+                background: #11131c;
+                color: rgba(226,232,240,0.98);
+                box-shadow: 0 10px 28px rgba(0,0,0,0.38);
+            }
+            [data-theme="dark"] .med-knowledge-subsection summary { color: inherit; }
+            [data-theme="dark"] .med-knowledge-subnote { color: rgba(226,232,240,0.9); }
+            [data-theme="dark"] .section-tag,
+            [data-theme="dark"] .section-meta .pill {
+                background: #1c1c24;
+                border-color: #343434;
+                color: #eef2ff;
+            }
+            [data-theme="dark"] .knowledge-card {
+                border: 1px solid #343434;
+                background: #12141d;
+                box-shadow: 0 14px 32px rgba(0,0,0,0.34);
+                transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+            }
+            [data-theme="dark"] .knowledge-card:hover {
+                background: #191b26;
+                border-color: #3d3d3d;
+                box-shadow: 0 18px 38px rgba(0,0,0,0.38);
+                transform: translateY(-3px);
+            }
+            [data-theme="dark"] .knowledge-card h3 { color: #f5f7ff; }
+            [data-theme="dark"] .knowledge-card .card-summary { color: #dce3ff; }
+            [data-theme="dark"] .section-meta { color: rgba(226,232,240,0.76); }
+            [data-theme="dark"] .section-meta .pill:hover {
+                background: #1f202a;
+                border-color: #3d3d3d;
             }
         `;
         const style = document.createElement('style');
