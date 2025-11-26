@@ -15,33 +15,179 @@ class ClinicalPearlsManager {
     ensureStyles() {
         if (document.getElementById('clinical-pearls-styles')) return;
         const css = `
+            /* Grid + card shell */
+            .knowledge-card-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 16px;
+                width: 100%;
+            }
+
+            .knowledge-card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 14px;
+                background: linear-gradient(145deg, rgba(79,70,229,0.04), rgba(59,130,246,0.03));
+                border: 1px solid rgba(15,23,42,0.08);
+                box-shadow: 0 10px 40px rgba(15,23,42,0.08);
+                transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+            }
+
+            .knowledge-card::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: radial-gradient(circle at 12% 18%, rgba(59,130,246,0.08), transparent 28%),
+                            radial-gradient(circle at 88% 12%, rgba(236,72,153,0.08), transparent 26%);
+                pointer-events: none;
+            }
+
+            .knowledge-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 16px 55px rgba(15,23,42,0.12);
+                border-color: rgba(79,70,229,0.18);
+            }
+
+            .knowledge-card-header {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 16px 16px 8px 16px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .knowledge-card h3 {
+                margin: 0;
+                font-size: 1.05rem;
+                letter-spacing: -0.01em;
+            }
+
+            .knowledge-card .card-summary {
+                margin: 4px 0 0;
+                color: #475569;
+                font-size: 0.94rem;
+                line-height: 1.5;
+            }
+
+            .badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 10px;
+                border-radius: 999px;
+                font-weight: 600;
+                font-size: 0.82rem;
+                letter-spacing: 0.01em;
+                background: rgba(79,70,229,0.1);
+                color: #4f46e5;
+                border: 1px solid rgba(79,70,229,0.22);
+            }
+
+            .section-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 0 16px 12px 16px;
+            }
+
+            .section-tag {
+                padding: 6px 10px;
+                border-radius: 999px;
+                background: rgba(15,23,42,0.05);
+                color: #0f172a;
+                font-weight: 600;
+                font-size: 0.85rem;
+                letter-spacing: 0.01em;
+            }
+
+            .knowledge-card-body {
+                padding: 0 16px 16px 16px;
+                position: relative;
+                z-index: 1;
+            }
+
             /* Subsection card - neutral surface with accessible defaults */
             .med-knowledge-subsection {
-                border: 1px solid rgba(15,23,42,0.06);
-                border-radius: 6px;
-                padding: 12px;
-                margin-bottom: 8px;
+                border: 1px solid rgba(15,23,42,0.08);
+                border-radius: 12px;
+                padding: 12px 12px 10px;
+                margin-bottom: 10px;
                 background: #ffffff;
                 color: #0f172a; /* default text colour for good contrast on light surfaces */
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
             }
             .med-knowledge-subsection summary {
                 cursor: pointer;
-                font-weight: 600;
+                font-weight: 700;
                 color: inherit;
                 margin-bottom: 8px;
                 list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
             }
-            .med-knowledge-subsection ul { margin: 0; padding-left: 20px; color: inherit; }
-            .med-knowledge-subnote { margin-top: 8px; font-style: italic; color: rgba(15,23,42,0.65); }
+            .med-knowledge-subsection summary .chevron {
+                transition: transform 160ms ease;
+                font-size: 0.9rem;
+                color: rgba(15,23,42,0.5);
+            }
+            .med-knowledge-subsection[open] summary .chevron {
+                transform: rotate(90deg);
+                color: rgba(79,70,229,0.85);
+            }
+            .med-knowledge-subsection ul {
+                margin: 0;
+                padding-left: 20px;
+                color: inherit;
+                display: grid;
+                gap: 6px;
+            }
+            .med-knowledge-subsection li {
+                line-height: 1.5;
+            }
+            .med-knowledge-subnote { margin-top: 10px; font-style: italic; color: rgba(15,23,42,0.65); }
+
+            .section-meta {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+                padding: 0 16px 12px;
+                color: rgba(15,23,42,0.6);
+                font-size: 0.9rem;
+            }
+
+            .section-meta .pill {
+                padding: 4px 10px;
+                border-radius: 999px;
+                background: rgba(15,23,42,0.05);
+                border: 1px solid rgba(15,23,42,0.06);
+                color: inherit;
+                font-weight: 600;
+            }
+
+            .section-meta strong { color: #0f172a; }
 
             @media (prefers-color-scheme: dark) {
                 .med-knowledge-subsection {
-                    border: 1px solid rgba(255,255,255,0.06);
+                    border: 1px solid rgba(255,255,255,0.08);
                     background: rgba(6, 10, 26, 0.72);
                     color: rgba(226,232,240,0.98);
                 }
                 .med-knowledge-subsection summary { color: inherit; }
                 .med-knowledge-subnote { color: rgba(226,232,240,0.86); }
+                .section-tag, .section-meta .pill {
+                    background: rgba(255,255,255,0.04);
+                    border-color: rgba(255,255,255,0.08);
+                    color: rgba(226,232,240,0.95);
+                }
+                .knowledge-card {
+                    border-color: rgba(255,255,255,0.08);
+                    background: linear-gradient(145deg, rgba(79,70,229,0.09), rgba(59,130,246,0.06));
+                    box-shadow: 0 16px 55px rgba(0,0,0,0.35);
+                }
+                .knowledge-card .card-summary { color: rgba(226,232,240,0.82); }
+                .section-meta { color: rgba(226,232,240,0.65); }
             }
         `;
         const style = document.createElement('style');
@@ -55,142 +201,164 @@ class ClinicalPearlsManager {
             {
                 title: 'High-Yield Clinical Pearls',
                 badge: 'Clinical',
+                summary: 'Concise reminders that fast-track bedside decision making and oral recall.',
+                tags: ['Rounds-ready', 'Recall cues', 'Rapid review'],
                 subsections: [
                     {
                         heading: 'Endocrine & Metabolic',
                         items: [
-                            'Toxic multinodular goitre – radioactive iodine is the treatment of choice.',
-                            "Graves' disease is the most common cause of thyrotoxicosis and is driven by IgG antibodies to the TSH receptor.",
-                            'Over-replacement with thyroxine increases osteoporosis risk; myxoedemic coma is treated with thyroxine and hydrocortisone.',
-                            "Cushing's disease: cortisol is not suppressed by low-dose dexamethasone but is suppressed by high-dose dexamethasone.",
-                            'Primary hyperaldosteronism typically presents with hypertension and hypokalaemia and is managed with spironolactone.',
-                            'Measuring PTH is the first step when investigating hypercalcaemia; primary hyperparathyroidism is usually due to a solitary adenoma.',
-                            'Depression, nausea, constipation and bone pain point toward primary hyperparathyroidism; pepperpot skull is a classic radiological sign.'
+                            "Graves' orbitopathy worsens with smoking; radioactive iodine can transiently aggravate eye disease—pre-treat with steroids if severe.",
+                            'Toxic multinodular goitre → radioactive iodine is first-line in older adults; surgery is preferred for large goitres with compressive symptoms.',
+                            'Primary hyperaldosteronism typically presents with hypertension + hypokalaemia; confirm with aldosterone:renin ratio then CT adrenals.',
+                            'Measure PTH first when investigating unexplained hypercalcaemia; primary hyperparathyroidism is usually due to a solitary adenoma.',
+                            'Over-replacement with thyroxine accelerates bone loss—always re-check TSH 6–8 weeks after dose changes.',
+                            'In suspected adrenal insufficiency, draw cortisol and ACTH before steroids if safe; hydrocortisone 100 mg IV/IM is the emergency dose.'
                         ]
                     },
                     {
                         heading: 'Diabetes & Metabolic Emergencies',
                         items: [
-                            'Asymptomatic abnormal HbA1c or fasting glucose requires a second abnormal reading before confirming type 2 diabetes.',
-                            'Standard HbA1c target in type 2 diabetes is 48 mmol/mol; if on a drug that can cause hypoglycaemia (e.g. sulfonylurea) aim for 53 mmol/mol.',
-                            'If starting an SGLT-2 inhibitor as initial therapy, ensure metformin has been titrated first; DPP-4 inhibitors are helpful in obese T2DM patients.',
-                            'When metformin is contraindicated and there is no CVD/HF risk, initial T2DM therapy can be a DPP-4 inhibitor, pioglitazone, sulfonylurea or SGLT-2 (if NICE criteria met).',
-                            'Hypoglycaemia when conscious: give fast-acting oral carbohydrate; if GCS is impaired and IV access available: give IV glucose.',
-                            'DKA: start with isotonic saline even if acidotic; once glucose is <14 mmol/L, add 10% dextrose at 125 mL/hr alongside saline.',
-                            'Cerebral oedema is an important complication of fluid resuscitation in DKA, especially in young patients.',
-                            'A patient with diabetes who has two hypoglycaemic episodes requiring help must surrender their driving licence.'
+                            'Two abnormal HbA1c or fasting glucose readings are required to diagnose asymptomatic type 2 diabetes.',
+                            'Standard HbA1c target in T2DM is 48 mmol/mol; if on hypoglycaemia-inducing agents (e.g. sulfonylurea) aim for 53 mmol/mol.',
+                            'SGLT2 inhibitors should follow metformin titration unless contraindicated; consider DPP-4 inhibitor where weight gain is a concern.',
+                            'DKA: start with isotonic saline even if acidotic; once glucose <14 mmol/L, add 10% dextrose at 125 mL/hr while continuing insulin.',
+                            'Cerebral oedema is the feared complication of DKA fluid therapy—watch for headache, bradycardia or reduced GCS.',
+                            'Two hypoglycaemic episodes requiring third-party help mandate licence surrender to the DVLA/authorities.'
                         ]
                     },
                     {
                         heading: 'Cardio-Respiratory',
                         items: [
-                            'Acute onset atrial fibrillation ≥48 hours or uncertain onset → rate control.',
-                            'Offer a mineralocorticoid receptor antagonist in addition to an ACE inhibitor (or ARB) and beta-blocker for HFrEF if symptoms persist.',
-                            'Adenocarcinoma accounts for the majority of lung cancer cases in non-smokers.',
-                            'Rheumatic fever is the most common cause of mitral stenosis worldwide.',
-                            'Posterior MIs show reciprocal horizontal ST depression, tall broad R waves, upright T waves and a dominant R wave in V2.',
-                            'Patients with MI secondary to cocaine use should be given IV benzodiazepines as part of acute coronary treatment.',
-                            'COPD severity is based on FEV1; azithromycin prophylaxis is an option in selected patients with ongoing exacerbations.',
-                            'NIV should be considered in acute COPD exacerbations with PaCO2 >6 kPa and pH <7.35 (≥7.26) despite maximal medical therapy.',
-                            'Bilateral mid-to-lower zone patchy consolidation in an older patient suggests Legionella; the urinary antigen test is the best diagnostic tool.',
-                            'Painful third nerve palsy indicates a posterior communicating artery aneurysm; smokers may normally have carboxyhaemoglobin levels up to 10%.',
-                            'Use of large volumes of 0.9% sodium chloride risks hyperchloraemic metabolic acidosis; beta-blockers should be avoided where possible in myasthenia gravis.'
+                            'Acute onset AF ≥48 hours or uncertain onset → rate control; rhythm control only after stroke risk has been addressed.',
+                            'HFrEF: add an MRA on top of ACEi/ARB + beta-blocker if symptoms persist; start SGLT2 inhibitor early for mortality benefit.',
+                            'Posterior MI: reciprocal ST depression with tall R waves in V1–V3—order posterior leads (V7–V9) to confirm.',
+                            'COPD exacerbation with PaCO2 >6 kPa and pH <7.35 (≥7.26) despite maximal therapy → consider NIV early.',
+                            'Legionella often causes hyponatraemia and relative bradycardia; urinary antigen test is the diagnostic shortcut.',
+                            'MI related to cocaine: give IV benzodiazepines; avoid pure beta-blockade due to unopposed alpha effect.'
                         ]
                     },
                     {
                         heading: 'Gastroenterology & Hepatology',
                         items: [
-                            'Patients over 60 with iron deficiency anaemia should be investigated for colorectal cancer.',
-                            'Acute pancreatitis is the most common complication of ERCP; abdominal distension with absent stool/flatus and minimal vomiting suggests large bowel obstruction.',
-                            'Oesophago-gastro-duodenoscopy with biopsy is the investigation of choice for suspected gastric cancer.',
-                            "Glucocorticoids are generally used to induce remission of Crohn's disease; mild–moderate distal ulcerative colitis responds first-line to topical rectal aminosalicylates.",
-                            'Pancreatic cancer may present with cholestatic LFTs; AST/ALT ratio of 2:1 suggests alcoholic hepatitis.',
-                            'Isolated rise in GGT with a macrocytic anaemia points toward alcohol excess as the cause.',
-                            'High urea levels can indicate an upper GI bleed; arterial pH is the key prognostic marker in paracetamol overdose.',
-                            'Early signs of haemochromatosis include fatigue, erectile dysfunction and arthralgia; ursodeoxycholic acid is first-line in primary biliary cholangitis to slow progression.'
-                        ]
-                    },
-                    {
-                        heading: 'Infectious Diseases & Antimicrobials',
-                        items: [
-                            'Chickenpox has a prodrome of fever before a torso/face rash.',
-                            'History of rash with penicillin is not a contraindication to benzylpenicillin or ceftriaxone in meningococcal sepsis; true anaphylaxis warrants IV chloramphenicol and urgent transfer.',
-                            'Patients suffering from C. difficile need isolation for at least 48 hours; oral vancomycin is first-line therapy.',
-                            'Life-threatening C. difficile infection: oral vancomycin plus IV metronidazole, and opioids should be stopped.',
-                            'Preventing C. difficile spread requires hand washing and disposable gloves/apron for all contacts.',
-                            'Campylobacter infection is often self-limiting, but severe cases merit clarithromycin; azithromycin is the treatment of choice for chlamydia in pregnancy (erythromycin or amoxicillin are alternatives).',
-                            'Co-trimoxazole contains trimethoprim and must never be prescribed with methotrexate.',
-                            'Positive IGRA with normal CXR and no symptoms should be treated as latent tuberculosis.',
-                            'Mothers with previous Group B Streptococcus carriage should receive intrapartum antibiotics or late-pregnancy testing; a multi-level pregnancy test is required 2 weeks after a medical termination of pregnancy.',
-                            'Jarisch-Herxheimer reaction: fever, rash, chills and headache after antibiotics for syphilis.',
-                            'Genital ulcers: painful ulcers are more commonly herpes than chancroid; painless ulcers are more often syphilis than lymphogranuloma venereum.'
-                        ]
-                    },
-                    {
-                        heading: 'Haematology & Oncology',
-                        items: [
-                            'The combined oral contraceptive pill is a protective factor for endometrial cancer, whereas obesity is a significant risk factor.',
-                            'Aspirin is given in polycythaemia vera to reduce thrombotic events; platelet transfusions have a higher risk of bacterial contamination because they are stored at room temperature.',
-                            "Stage III Ann-Arbor lymphoma involves lymph nodes on both sides of the diaphragm; nodular sclerosing Hodgkin's lymphoma is the most common subtype.",
-                            'Nasopharyngeal carcinoma may present as painless lymphadenopathy due to early spread.',
-                            'Renal transplant patients most commonly develop skin cancer (particularly squamous cell) as a malignancy related to immunosuppression.',
-                            'Disproportionate microcytic anaemia should prompt suspicion of beta-thalassaemia trait.',
-                            'Persistent mouth ulceration should raise concern for squamous cell carcinoma.'
-                        ]
-                    },
-                    {
-                        heading: 'Neurology & Psychiatry',
-                        items: [
-                            'Flight of ideas is a feature of mania; OCD with severe functional impairment should be referred to secondary care (treatment can start while waiting).',
-                            'More than one episode of vomiting after a head injury is an indication for CT head within 1 hour.',
-                            "Wernicke's aphasia localises to a lesion of the superior temporal gyrus; cranial nerves V, VII and VIII are affected in vestibular schwannomas.",
-                            'Chronic fatigue syndrome requires symptoms for at least 3 months before diagnosis.',
-                            'Hiccups in palliative care can be treated with chlorpromazine or haloperidol.',
-                            'Cyclizine is a good first-line anti-emetic for intracranial causes of nausea and vomiting.',
-                            'Stopping SSRIs abruptly can cause discontinuation syndrome with gastrointestinal upset such as diarrhoea.',
-                            'Subacute combined degeneration affects the dorsal columns and lateral corticospinal tracts of the spinal cord.'
+                            'Crohn’s disease: transmural skip lesions and fistulae; perforation risk is higher than in ulcerative colitis.',
+                            'AST:ALT >2:1 suggests alcoholic liver disease; check GGT to support heavy alcohol intake.',
+                            'Primary sclerosing cholangitis is strongly linked to ulcerative colitis; monitor for cholangiocarcinoma.',
+                            'Painless jaundice + weight loss → suspect pancreatic cancer; Courvoisier sign (palpable gallbladder) points to malignant obstruction.',
+                            'Acute mesenteric ischaemia causes severe pain out of proportion to exam findings—do not delay CT angiography.',
+                            'Upper GI bleed with haemodynamic instability → follow massive transfusion protocol rather than large-volume crystalloid.'
                         ]
                     },
                     {
                         heading: 'Obstetrics, Gynaecology & Paediatrics',
                         items: [
-                            'PCOS diagnosis requires 2 of 3: oligomenorrhoea, clinical/biochemical hyperandrogenism, or polycystic ovaries on ultrasound.',
-                            'Breastfed infants who lose >10% of birth weight in the first week should be referred to a midwife-led breastfeeding clinic.',
-                            'Acne vulgaris in pregnancy can be treated with oral erythromycin if needed; oral isotretinoin must only be used under specialist supervision.',
-                            'Patients ≤25 years started on an SSRI should be reviewed after 1 week.',
-                            'Pityriasis rosea often follows a viral infection; acute tear-drop scaly papules on the trunk/limbs suggest guttate psoriasis.',
-                            'If tetanus vaccination history is uncertain, give a booster and immunoglobulin unless the wound is very minor and <6 hours old; if five doses with the last <10 years have been received, no booster or immunoglobulin is needed regardless of wound severity.',
-                            'Obesity is a significant risk factor for endometrial cancer, while the combined oral contraceptive pill is protective.'
+                            'PCOS diagnosis needs 2 of 3: oligo/anovulation, clinical/biochemical hyperandrogenism, or polycystic ovaries on scan.',
+                            'Breastfed infants who lose >10% birth weight in week 1 require urgent lactation support review.',
+                            'Avoid oral isotretinoin in pregnancy; erythromycin is the systemic acne option if needed.',
+                            'Youth mental health: patients ≤25 years started on SSRIs should be reviewed after 1 week for suicidality.',
+                            'Uncertain tetanus status with non-trivial wounds → give booster + immunoglobulin unless fully immunised within 10 years.',
+                            'Obesity increases endometrial cancer risk; combined oral contraceptive pill is protective.'
                         ]
                     },
                     {
                         heading: 'Renal, Vascular & Acute Medicine',
                         items: [
-                            'NICE AKI criteria: creatinine rise >26µmol/L in 48 hours, or >50% in 7 days, or urine output <0.5 mL/kg/hr for >6 hours.',
-                            'Investigating suspected PE: Wells score ≤4 with a negative D-dimer → stop anticoagulation and consider alternative diagnoses.',
-                            'If CTPA is negative but DVT is suspected, arrange a proximal leg vein ultrasound; if initial DVT scan is negative but D-dimer positive, stop anticoagulation and repeat the scan in 1 week.',
-                            'MSU should be sent for all women over 65 with suspected UTI.',
-                            'High urea levels can indicate an upper GI bleed; right-sided tenderness on PR examination should prompt consideration of appendicitis.',
-                            'Use fast-acting oral carbohydrate as first-line treatment for conscious hypoglycaemia; non-sedating antihistamines are first-line for acute urticaria.'
+                            'NICE AKI: creatinine rise >26 µmol/L in 48 h, >50% in 7 days, or urine output <0.5 mL/kg/hr for >6 h.',
+                            'Low Wells (≤4) with negative D-dimer → stop anticoagulation and consider alternative diagnoses.',
+                            'Negative CTPA but ongoing DVT concern → arrange proximal leg vein ultrasound; if D-dimer positive with negative scan, repeat in 1 week.',
+                            'Send MSU in all women >65 with suspected UTI; overtreatment of asymptomatic bacteriuria is common.',
+                            'Right-sided tenderness on PR exam should raise suspicion of appendicitis even with atypical labs.',
+                            'Fast-acting oral carbohydrate is first-line for conscious hypoglycaemia; glucagon if no IV access.'
                         ]
                     },
                     {
                         heading: 'Dermatology, Musculoskeletal & General Practice',
                         items: [
-                            'Plantar fasciitis is best managed initially with rest, stretching and weight loss if overweight.',
-                            'Haemoarthroses are a common feature of haemophilia.',
-                            'Chest X-ray should be performed in all patients with erythema nodosum.',
-                            'Non-sedating antihistamines are first-line for acute urticaria.',
-                            "Most metatarsal stress fractures occur at the 2nd metatarsal shaft; Parkinson's disease is associated with seborrhoeic dermatitis.",
-                            'HBsAg negative, anti-HBs positive, IgG anti-HBc negative indicates previous hepatitis B immunisation.',
-                            'Potent topical steroids are first-line treatment for lichen planus; brimonidine gel can help rosacea with predominant flushing.',
-                            'Right-sided tenderness on PR examination should prompt consideration of appendicitis.'
+                            'Plantar fasciitis: morning heel pain improves with stretching + rolling; weight loss and calf strengthening reduce recurrence.',
+                            'Haemoarthroses are classic for haemophilia; aspirate a first presentation to confirm and exclude sepsis.',
+                            'Erythema nodosum warrants chest X-ray to screen for sarcoidosis or TB.',
+                            'Non-sedating antihistamines are first-line for urticaria; up-titrate to 4x dose before considering omalizumab.',
+                            'Most metatarsal stress fractures occur at the 2nd metatarsal shaft; offload early to prevent non-union.',
+                            'Lichen planus: potent topical steroids first-line; consider wick-insertion for oral lesions if symptomatic.'
                         ]
                     }
-                ]
+                ],
+                note: 'Built from high-yield exam stems and frontline scenarios—use tags to target the right pearl set before rounds.'
+            },
+            {
+                title: 'Critical Differentials & Red Flags',
+                badge: 'Safety',
+                summary: 'Signal serious pathology early with pattern-recognition prompts.',
+                tags: ['Do not miss', 'Rapid escalation'],
+                subsections: [
+                    {
+                        heading: 'Neurology & Stroke',
+                        items: [
+                            'Thunderclap headache + neck stiffness → exclude subarachnoid haemorrhage even if initial CT is normal (LP after 12 hours).',
+                            'Painful third nerve palsy implies posterior communicating artery aneurysm until proven otherwise.',
+                            'Suspected cauda equina: saddle anaesthesia, urinary retention, bilateral radiculopathy → urgent MRI + neurosurgical review.',
+                            'Acute unilateral pupil-involving ptosis with diplopia could be an aneurysm—urgent imaging beats outpatient follow-up.'
+                        ]
+                    },
+                    {
+                        heading: 'Infection & Sepsis',
+                        items: [
+                            'Bilateral mid-to-lower zone patchy consolidation in older adults suggests Legionella—treat with macrolide/fluoroquinolone.',
+                            'Non-blanching rash + fever → treat as meningococcal sepsis immediately with IM/IV benzylpenicillin pre-hospital.',
+                            'Post-influenza deterioration with cavitating pneumonia → think Staphylococcus aureus and escalate antimicrobials.',
+                            'Diabetic foot with disproportionate pain or crepitus → urgent imaging and surgical opinion for necrotising infection.'
+                        ]
+                    },
+                    {
+                        heading: 'Obstetric Red Flags',
+                        items: [
+                            'Painless per vaginam bleeding in late pregnancy → suspect placenta praevia—avoid digital exam, arrange urgent ultrasound.',
+                            'Severe epigastric/RUQ pain + headache after 20 weeks → consider HELLP/preeclampsia; check platelets and LFTs promptly.',
+                            'Reduced fetal movements warrant same-day assessment with CTG; never defer to routine clinic.',
+                            'Suspected ectopic: shoulder tip pain, syncope or positive pregnancy test with abdominal pain → treat as emergency.'
+                        ]
+                    }
+                ],
+                note: 'Use these as huddle prompts on post-take ward rounds—aim to spot the outlier before the chart does.'
+            },
+            {
+                title: 'Therapeutics at the Bedside',
+                badge: 'Pharm',
+                summary: 'Dose, de-risk and de-prescribe with confidence.',
+                tags: ['Practical dosing', 'Interactions'],
+                subsections: [
+                    {
+                        heading: 'Cardio & Antithrombotics',
+                        items: [
+                            'DOACs are contraindicated in mechanical valves—use warfarin with target INR per valve type.',
+                            'Clopidogrel non-responders post-stent may benefit from ticagrelor; always check for drug interactions (e.g. carbamazepine).',
+                            'ACEi/ARB in AKI: hold during sepsis/hypovolaemia; restart once euvolaemic and renal function recovering.',
+                            'Perioperative AF: avoid amiodarone in patients with severe asthma/COPD—opt for beta-blocker or digoxin for rate control.'
+                        ]
+                    },
+                    {
+                        heading: 'Antimicrobials',
+                        items: [
+                            'Azithromycin prophylaxis in COPD: ensure optimised inhaler therapy first; check QTc and hearing before starting.',
+                            'Penicillin allergy labels are wrong ~90% of the time—consider formal testing to widen antimicrobial options.',
+                            'Vancomycin dosing should be weight + renal-function based; check trough just before 4th dose or earlier if renal impairment.',
+                            'When switching from IV to oral antibiotics, ensure the oral bioavailability is high (e.g. levofloxacin, metronidazole).'
+                        ]
+                    },
+                    {
+                        heading: 'Deprescribing Signals',
+                        items: [
+                            'Falls + antihypertensives in older adults: review for postural drop and simplify to once-daily agents where possible.',
+                            'Stop PPIs without indication; taper if long-term use to avoid rebound symptoms.',
+                            'Long-term benzodiazepines: convert to diazepam equivalent and taper slowly (10–25% every 1–2 weeks).',
+                            'Target HbA1c can be relaxed (≤58 mmol/mol) in frail adults or limited life expectancy—avoid hypoglycaemia at all costs.'
+                        ]
+                    }
+                ],
+                note: 'Pair with local antimicrobial guides for exact dosing; these cues focus on decision direction, not substitution for guidelines.'
             }
         ];
     }
+
 
     getStatistics() {
         const subsectionCount = this.sections.reduce((acc, s) => acc + (s.subsections ? s.subsections.length : (s.items ? 1 : 0)), 0);
@@ -271,14 +439,29 @@ class ClinicalPearlsManager {
             const subsectionsHtml = (section.subsections || []).map(subsection => {
                 const itemsHtml = (subsection.items || []).map(item => `<li>${item}</li>`).join('');
                 return `
-                    <div class="med-knowledge-subsection" style="border-color:${theme.subsectionBorder};background:${theme.subsectionBg};color:${theme.subtext};">
-                        <summary style="color:${theme.summaryColor};">${subsection.heading}</summary>
+                    <details class="med-knowledge-subsection" style="border-color:${theme.subsectionBorder};background:${theme.subsectionBg};color:${theme.subtext};">
+                        <summary style="color:${theme.summaryColor};">
+                            <span class="chevron">›</span>
+                            ${subsection.heading}
+                        </summary>
                         <ul>${itemsHtml}</ul>
-                    </div>
+                    </details>
                 `;
             }).join('');
 
             const noteHtml = section.note ? `<div class="med-knowledge-subnote" style="color:${theme.subnoteColor};">${section.note}</div>` : '';
+            const summaryHtml = section.summary ? `<div class="card-summary">${section.summary}</div>` : '';
+            const tagsHtml = Array.isArray(section.tags) && section.tags.length
+                ? `<div class="section-tags">${section.tags.map(tag => `<span class="section-tag">${tag}</span>`).join('')}</div>`
+                : '';
+            const stats = this.getStatistics();
+            const metaHtml = `
+                <div class="section-meta">
+                    <span class="pill">${section.subsections?.length || 0} topic blocks</span>
+                    <span class="pill">${(section.subsections || []).reduce((c, s) => c + (s.items?.length || 0), 0)} pearls</span>
+                    <span class="pill">${stats.totalPoints} total pearls</span>
+                </div>
+            `;
 
             return `
                 <section class="knowledge-card">
@@ -286,8 +469,13 @@ class ClinicalPearlsManager {
                         <span class="badge" style="background:${theme.badgeBg};color:${theme.badgeColor};">${section.badge}</span>
                         <h3>${section.title}</h3>
                     </div>
-                    ${subsectionsHtml}
-                    ${noteHtml}
+                    <div class="knowledge-card-body">
+                        ${summaryHtml}
+                        ${tagsHtml}
+                        ${subsectionsHtml}
+                        ${metaHtml}
+                        ${noteHtml}
+                    </div>
                 </section>
             `;
         }).join('');
