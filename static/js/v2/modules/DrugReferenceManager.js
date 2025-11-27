@@ -17,6 +17,27 @@ export class DrugReferenceManager {
         this.dataLoaded = false;
     }
 
+    buildBnfUrl(drugName) {
+        if (!drugName) return '';
+
+        const normalized = drugName
+            .toLowerCase()
+            .replace(/[’']/g, '')
+            .replace(/[^a-z0-9\s\-()/]/g, '')
+            .trim()
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+
+        return normalized ? `https://bnf.nice.org.uk/drugs/${encodeURIComponent(normalized)}/` : '';
+    }
+
+    withBnfLink(drugKey, drug) {
+        if (!drug) return null;
+
+        const bnfUrl = drug.bnfUrl || this.buildBnfUrl(drug.name || drugKey);
+        return { key: drugKey, ...drug, bnfUrl };
+    }
+
     async initialize() {
         if (this.initialized) {
             console.log('🏥 DrugReferenceManager already initialized, skipping...');
@@ -99,8 +120,10 @@ export class DrugReferenceManager {
         });
 
         this.eventBus.emit('DRUG_SEARCHED', { query, resultCount: matches.length });
-        
-        return matches.map(([key, drug]) => ({ key, ...drug }));
+
+        return matches
+            .map(([key, drug]) => this.withBnfLink(key, drug))
+            .filter(drug => drug !== null);
     }
 
     /**
@@ -188,7 +211,8 @@ export class DrugReferenceManager {
         
         if (category === 'all' || category === 'alphabetical') {
             return drugs
-                .map(([key, drug]) => ({ key, ...drug }))
+                .map(([key, drug]) => this.withBnfLink(key, drug))
+                .filter(drug => drug !== null)
                 .sort((a, b) => a.name.localeCompare(b.name));
         }
 
@@ -255,7 +279,8 @@ export class DrugReferenceManager {
 
         return drugs
             .filter(([, drug]) => filter(drug))
-            .map(([key, drug]) => ({ key, ...drug }))
+            .map(([key, drug]) => this.withBnfLink(key, drug))
+            .filter(drug => drug !== null)
             .sort((a, b) => a.name.localeCompare(b.name));
     }
 
@@ -271,7 +296,7 @@ export class DrugReferenceManager {
         
         this.eventBus.emit('DRUG_VIEWED', { drugKey, drug: this.drugDatabase[drugKey] });
         
-        return { key: drugKey, ...this.drugDatabase[drugKey] };
+        return this.withBnfLink(drugKey, this.drugDatabase[drugKey]);
     }
 
     /**
@@ -305,7 +330,7 @@ export class DrugReferenceManager {
         }
         
         return this.recentDrugs
-            .map(key => this.drugDatabase[key] ? { key, ...this.drugDatabase[key] } : null)
+            .map(key => this.withBnfLink(key, this.drugDatabase[key]))
             .filter(drug => drug !== null);
     }
 

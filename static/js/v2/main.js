@@ -1207,6 +1207,7 @@ class MLAQuizApp {
                         <div>
                             <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                             <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
+                            ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
                         </div>
                         <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                             🔊
@@ -1310,7 +1311,9 @@ class MLAQuizApp {
             console.warn('showDrugCategory: expected array from drugManager.getDrugsByCategory, got:', drugs);
             // Fallback: try to read raw database if available
             if (this.drugManager && this.drugManager.drugDatabase) {
-                drugs = Object.entries(this.drugManager.drugDatabase).map(([key, d]) => ({ key, ...d }));
+                drugs = Object.entries(this.drugManager.drugDatabase)
+                    .map(([key, d]) => this.drugManager.withBnfLink(key, d))
+                    .filter(d => d !== null);
             } else {
                 drugs = [];
             }
@@ -1325,6 +1328,7 @@ class MLAQuizApp {
                     <div>
                         <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                         <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
+                        ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
                     </div>
                     <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                         🔊
@@ -1355,6 +1359,7 @@ class MLAQuizApp {
             <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border);">
                     <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1;">${drugName}</h3>
+                    ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="padding: 10px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--accent); font-weight: 700; text-decoration: none;">View on BNF ↗</a>` : ''}
                     <button class="speak-name-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drugName.replace(/'/g, "\\'")}')" style="padding: 10px 16px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                         🔊 Hear pronunciation
                     </button>
