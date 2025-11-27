@@ -236,6 +236,46 @@ export const clinicalTriads = {
         urgency: 'moderate',
         clinicalSignificance: 'ENT referral for audiometry and symptomatic management; vestibular rehabilitation may help',
         ukGuidelines: 'Refer to ENT for specialist assessment and audiological testing'
+    },
+    'horners-syndrome': {
+        name: "Horner's Syndrome Triad",
+        category: 'neurologic',
+        components: ['Ptosis', 'Miosis', 'Anhidrosis'],
+        condition: "Horner's syndrome",
+        mechanism: 'Disruption of the oculosympathetic pathway from hypothalamus to eye',
+        urgency: 'high',
+        clinicalSignificance: 'May indicate carotid artery dissection, brainstem stroke, or apical lung tumour; requires urgent evaluation',
+        ukGuidelines: 'Urgent imaging (CTA/MRA or MRI) if acute onset or painful; consider oncology referral if Pancoast tumour suspected'
+    },
+    'bacterial-meningitis': {
+        name: 'Bacterial Meningitis Classic Triad',
+        category: 'infectious',
+        components: ['Fever', 'Neck stiffness', 'Altered mental status'],
+        condition: 'Acute bacterial meningitis',
+        mechanism: 'Pyogenic infection causing meningeal inflammation and raised intracranial pressure',
+        urgency: 'emergency',
+        clinicalSignificance: 'High mortality without prompt antibiotics and source control; do not delay treatment for imaging unless indicated',
+        ukGuidelines: 'Immediate IV broad-spectrum antibiotics after blood cultures; consider lumbar puncture if no contraindication (NICE CG102)'
+    },
+    'intussusception-triad': {
+        name: 'Intussusception Triad',
+        category: 'gastrointestinal',
+        components: ['Colicky abdominal pain', 'Sausage-shaped abdominal mass', 'Currant jelly stool'],
+        condition: 'Intussusception (often paediatric)',
+        mechanism: 'Telescoping bowel segment causing obstruction and ischaemia',
+        urgency: 'emergency',
+        clinicalSignificance: 'Requires urgent imaging and reduction to prevent bowel necrosis',
+        ukGuidelines: 'Urgent ultrasound and enema reduction where appropriate; involve paediatric surgery'
+    },
+    'ttp-triad': {
+        name: 'Thrombotic Thrombocytopenic Purpura Triad',
+        category: 'haematology',
+        components: ['Microangiopathic haemolytic anaemia', 'Thrombocytopenia', 'Neurological symptoms'],
+        condition: 'Thrombotic thrombocytopenic purpura (TTP)',
+        mechanism: 'ADAMTS13 deficiency leading to widespread microthrombi',
+        urgency: 'emergency',
+        clinicalSignificance: 'Medical emergency with high mortality; early plasma exchange is lifesaving',
+        ukGuidelines: 'Initiate urgent plasma exchange and haematology consultation; start steroids as per local protocol'
     }
 };
 
