@@ -5660,7 +5660,8 @@ const ExtractedCalculators = {
         }
 
         // Corrected sodium formula: add 0.3 mmol/L for every 1 mmol/L glucose above 5
-        const correctedNa = measuredNa + (0.3 * (glucose - 5));
+        const glucoseOffset = Math.max(glucose - 5, 0);
+        const correctedNa = measuredNa + (0.3 * glucoseOffset);
 
         let interpretation = '';
         let cssClass = 'calc-success';

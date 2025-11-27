@@ -60,6 +60,12 @@ const resolveCategory = (identifier) => {
     return toTitleCase(identifier);
 };
 
+const EXCLUDED_BRIDGE_IDS = new Set([
+    'bishop', // Covered by native Bishop Score
+    'wells', // Covered by native Wells PE implementation
+    'wells-pe' // Covered by native Wells PE implementation
+]);
+
 export const BRIDGE_CALCULATOR_DEFINITIONS = [
     {
         id: 'bmi',
@@ -1166,6 +1172,10 @@ const addBridgeMetadata = (definition) => ({
 const shouldIncludeDefinition = (definition, options) => {
     if (!definition || !options) {
         return true;
+    }
+
+    if (EXCLUDED_BRIDGE_IDS.has(definition.id)) {
+        return false;
     }
 
     if (definition.requiresUnofficialQrisk && options.disableUnofficialQrisk) {
