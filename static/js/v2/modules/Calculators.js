@@ -1477,6 +1477,127 @@ class V2Calculators {
     }
 
     /**
+     * Edinburgh Postnatal Depression Scale (EPDS)
+     */
+    getEPDSTemplate() {
+        const forwardOptions = [
+            { label: 'As much as I always could (0)', value: 0 },
+            { label: 'Not quite so much now (1)', value: 1 },
+            { label: 'Definitely not so much now (2)', value: 2 },
+            { label: 'Not at all (3)', value: 3 }
+        ];
+
+        const reverseOptions = [
+            { label: 'Yes, most of the time (3)', value: 3 },
+            { label: 'Yes, some of the time (2)', value: 2 },
+            { label: 'Not very often (1)', value: 1 },
+            { label: 'No, never (0)', value: 0 }
+        ];
+
+        const questions = [
+            { id: 'epds-q1', text: 'I have been able to laugh and see the funny side of things', options: forwardOptions },
+            { id: 'epds-q2', text: 'I have looked forward with enjoyment to things', options: forwardOptions },
+            { id: 'epds-q3', text: 'I have blamed myself unnecessarily when things went wrong', options: reverseOptions },
+            { id: 'epds-q4', text: 'I have been anxious or worried for no good reason', options: forwardOptions },
+            { id: 'epds-q5', text: 'I have felt scared or panicky without good reason', options: reverseOptions },
+            { id: 'epds-q6', text: 'Things have been getting on top of me', options: reverseOptions },
+            { id: 'epds-q7', text: 'I have been so unhappy that I have had difficulty sleeping', options: reverseOptions },
+            { id: 'epds-q8', text: 'I have felt sad or miserable', options: reverseOptions },
+            { id: 'epds-q9', text: 'I have been so unhappy that I have been crying', options: reverseOptions },
+            { id: 'epds-q10', text: 'The thought of harming myself has occurred to me', options: reverseOptions }
+        ];
+
+        const renderOptions = (opts) => opts.map((opt) => `<option value="${opt.value}">${opt.label}</option>`).join('');
+
+        return `
+            <div class="calculator-form">
+                <h4>Edinburgh Postnatal Depression Scale (EPDS)</h4>
+                <p><small>Reflect on how you have felt <strong>in the past 7 days</strong>.</small></p>
+                ${questions.map((question) => `
+                    <div class="calc-select-group">
+                        <label>${question.text}</label>
+                        <select id="${question.id}">
+                            ${renderOptions(question.options)}
+                        </select>
+                    </div>
+                `).join('')}
+                <button class="calc-button" data-calc="epds">Calculate EPDS</button>
+                <div id="epds-result" class="calc-result"></div>
+                <div class="calc-reference">
+                    <small>Cox JL et al. Br J Psychiatry. 1987. A score ≥13 suggests probable depression; any non-zero response to the self-harm item warrants urgent safety assessment.</small>
+                </div>
+            </div>
+        `;
+    }
+
+    calculateEPDS() {
+        const questionIds = [
+            'epds-q1', 'epds-q2', 'epds-q3', 'epds-q4', 'epds-q5',
+            'epds-q6', 'epds-q7', 'epds-q8', 'epds-q9', 'epds-q10'
+        ];
+
+        let total = 0;
+        let selfHarmRisk = false;
+
+        const responses = questionIds.map((id) => {
+            const value = parseInt(document.getElementById(id)?.value, 10);
+            const safeValue = Number.isFinite(value) ? value : 0;
+            if (id === 'epds-q10' && safeValue > 0) {
+                selfHarmRisk = true;
+            }
+            total += safeValue;
+            return safeValue;
+        });
+
+        let severity = '';
+        let recommendation = '';
+        let color = '';
+
+        if (total <= 9) {
+            severity = 'Low likelihood of depression';
+            recommendation = 'Provide reassurance, routine support, and consider repeat screening if symptoms persist.';
+            color = '#4CAF50';
+        } else if (total <= 12) {
+            severity = 'Possible mild depression';
+            recommendation = 'Offer additional support, repeat EPDS in 1–2 weeks, and consider primary care review if symptoms impact function.';
+            color = '#FFC107';
+        } else if (total <= 14) {
+            severity = 'Probable moderate depression';
+            recommendation = 'Arrange timely assessment with GP or perinatal mental health services; consider psychotherapy.';
+            color = '#FF9800';
+        } else {
+            severity = 'Probable major depression';
+            recommendation = 'Recommend prompt referral to perinatal mental health team for comprehensive review and treatment plan.';
+            color = '#F44336';
+        }
+
+        if (selfHarmRisk) {
+            recommendation = 'Positive self-harm response: undertake same-day safety assessment and escalate according to local crisis pathway.';
+            color = '#D32F2F';
+        }
+
+        document.getElementById('epds-result').innerHTML = `
+            <div class="score-result">
+                <div class="score-value" style="color: ${color};">EPDS total: <strong>${total}</strong> / 30</div>
+                <div class="score-risk">${severity}</div>
+                <div class="score-recommendation" style="color: ${color};">${recommendation}</div>
+                <div style="margin-top: 8px; font-size: 0.8em; color: #666;">
+                    ${selfHarmRisk ? 'Immediate action required due to self-harm thoughts.' : 'Monitor for anxiety, sleep disturbance, and functional impact when planning follow-up.'}
+                </div>
+            </div>
+        `;
+
+        return { total, severity, recommendation, responses, selfHarmRisk };
+    }
+
+    bindEPDSEvents() {
+        const button = document.querySelector('.calc-button[data-calc="epds"]');
+        if (button) {
+            button.addEventListener('click', () => this.calculateEPDS());
+        }
+    }
+
+    /**
      * Endocrine – HbA1c to eAG
      */
     getHba1cTemplate() {
@@ -2093,6 +2214,17 @@ class V2Calculators {
             getTemplate: () => this.getPHQ9Template(),
             calculate: () => this.calculatePHQ9(),
             bindEvents: () => this.bindPHQ9Events()
+        });
+
+        this.calculators.set('epds', {
+            id: 'epds',
+            name: 'Edinburgh Postnatal Depression Scale (EPDS)',
+            category: TOOL_CATEGORIES.PSYCHIATRY,
+            description: 'Screen for perinatal depressive symptoms over the last 7 days',
+            keywords: ['epds', 'postnatal', 'postpartum', 'depression'],
+            getTemplate: () => this.getEPDSTemplate(),
+            calculate: () => this.calculateEPDS(),
+            bindEvents: () => this.bindEPDSEvents()
         });
     }
 
