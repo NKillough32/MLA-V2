@@ -20,10 +20,32 @@ export class DrugReferenceManager {
     buildBnfUrl(drugName) {
         if (!drugName) return '';
 
-        const normalized = drugName
+        // Manual overrides for common aliases/abbreviations that don't match the BNF slug pattern
+        const overrides = {
+            'glyceryl trinitrate gtn': 'glyceryl-trinitrate',
+            'glyceryl trinitrate': 'glyceryl-trinitrate',
+            'hydrocortisone 1': 'hydrocortisone',
+            'hydrocortisone 1%': 'hydrocortisone'
+        };
+
+        const overrideKey = drugName
             .toLowerCase()
             .replace(/[’']/g, '')
-            .replace(/[^a-z0-9\s\-()/]/g, '')
+            .replace(/[^a-z0-9]+/g, ' ')
+            .trim();
+
+        if (overrides[overrideKey]) {
+            return `https://bnf.nice.org.uk/drugs/${overrides[overrideKey]}/`;
+        }
+
+        const normalized = drugName
+            .toLowerCase()
+            // Remove parenthetical acronyms (e.g. "(GTN)") and strengths (e.g. "1%")
+            .replace(/\([^)]*\)/g, ' ')
+            .replace(/\b\d+(\.\d+)?\s*%/g, ' ')
+            .replace(/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|units)\b/g, ' ')
+            .replace(/[’']/g, '')
+            .replace(/[^a-z0-9\s\-]/g, ' ')
             .trim()
             .replace(/\s+/g, '-')
             .replace(/-+/g, '-');
