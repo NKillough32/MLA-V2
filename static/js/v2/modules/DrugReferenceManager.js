@@ -18,8 +18,26 @@ export class DrugReferenceManager {
         this.bnfValidationCache = new Map();
     }
 
+    normalizeDrugNameForLink(drugName) {
+        if (!drugName) return '';
+
+        // If the drug name ends with an abbreviation in parentheses (e.g. "Adrenaline (E)"),
+        // drop the abbreviation so the link is built from the core drug name.
+        const trimmed = drugName.trim();
+        const abbreviationPattern = /^(.+?)\s+\(([A-Za-z0-9]{1,6})\)$/;
+        const match = trimmed.match(abbreviationPattern);
+
+        if (match) {
+            return match[1].trim();
+        }
+
+        return drugName;
+    }
+
     buildBnfUrl(drugName) {
         if (!drugName) return '';
+
+        const normalizedName = this.normalizeDrugNameForLink(drugName);
 
         // Manual overrides for common aliases/abbreviations that don't match the BNF slug pattern
         const overrides = {
@@ -29,7 +47,7 @@ export class DrugReferenceManager {
             'hydrocortisone 1%': 'hydrocortisone'
         };
 
-        const overrideKey = drugName
+        const overrideKey = normalizedName
             .toLowerCase()
             .replace(/[’']/g, '')
             .replace(/[^a-z0-9]+/g, ' ')
@@ -39,7 +57,7 @@ export class DrugReferenceManager {
             return `https://bnf.nice.org.uk/drugs/${overrides[overrideKey]}/`;
         }
 
-        const normalized = drugName
+        const normalized = normalizedName
             .toLowerCase()
             // Remove parenthetical acronyms (e.g. "(GTN)") and strengths (e.g. "1%")
             .replace(/\([^)]*\)/g, ' ')
