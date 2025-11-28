@@ -15,6 +15,7 @@ export class DrugReferenceManager {
         this.recentDrugs = [];
         this.initialized = false;
         this.dataLoaded = false;
+        this.bnfValidationCache = new Map();
     }
 
     buildBnfUrl(drugName) {
@@ -58,6 +59,55 @@ export class DrugReferenceManager {
 
         const bnfUrl = drug.bnfUrl || this.buildBnfUrl(drug.name || drugKey);
         return { key: drugKey, ...drug, bnfUrl };
+    }
+
+    async withValidatedBnfLink(drugKey, drug) {
+        const enrichedDrug = this.withBnfLink(drugKey, drug);
+        if (!enrichedDrug || !enrichedDrug.bnfUrl) return enrichedDrug;
+
+        const isValid = await this.validateBnfUrl(enrichedDrug.bnfUrl);
+        return {
+            ...enrichedDrug,
+            bnfUrl: isValid ? enrichedDrug.bnfUrl : ''
+        };
+    }
+
+    async validateBnfUrl(bnfUrl) {
+        if (!bnfUrl) return false;
+
+        if (this.bnfValidationCache.has(bnfUrl)) {
+            const cached = this.bnfValidationCache.get(bnfUrl);
+            if (typeof cached === 'boolean') return cached;
+            return cached;
+        }
+
+        const validationPromise = (async () => {
+            try {
+                let isValid = await this.checkBnfUrl(bnfUrl, 'HEAD');
+                if (!isValid) {
+                    isValid = await this.checkBnfUrl(bnfUrl, 'GET');
+                }
+
+                this.bnfValidationCache.set(bnfUrl, isValid);
+                return isValid;
+            } catch (error) {
+                console.warn('⚠️ Error validating BNF link', bnfUrl, error);
+                // If validation fails due to network/CORS, preserve the link instead of blocking it
+                this.bnfValidationCache.set(bnfUrl, true);
+                return true;
+            }
+        })();
+
+        this.bnfValidationCache.set(bnfUrl, validationPromise);
+        return validationPromise;
+    }
+
+    async checkBnfUrl(url, method = 'HEAD') {
+        const response = await fetch(url, {
+            method,
+            redirect: 'follow'
+        });
+        return response.ok && response.status < 400;
     }
 
     async initialize() {
@@ -143,9 +193,11 @@ export class DrugReferenceManager {
 
         this.eventBus.emit('DRUG_SEARCHED', { query, resultCount: matches.length });
 
-        return matches
-            .map(([key, drug]) => this.withBnfLink(key, drug))
-            .filter(drug => drug !== null);
+        const drugsWithLinks = await Promise.all(
+            matches.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+        );
+
+        return drugsWithLinks.filter(drug => drug !== null);
     }
 
     /**
@@ -230,10 +282,13 @@ export class DrugReferenceManager {
         if (!this.drugDatabase) return [];
 
         const drugs = Object.entries(this.drugDatabase);
-        
+
         if (category === 'all' || category === 'alphabetical') {
-            return drugs
-                .map(([key, drug]) => this.withBnfLink(key, drug))
+            const enrichedDrugs = await Promise.all(
+                drugs.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+            );
+
+            return enrichedDrugs
                 .filter(drug => drug !== null)
                 .sort((a, b) => a.name.localeCompare(b.name));
         }
@@ -299,9 +354,14 @@ export class DrugReferenceManager {
         const filter = filters[category];
         if (!filter) return [];
 
-        return drugs
-            .filter(([, drug]) => filter(drug))
-            .map(([key, drug]) => this.withBnfLink(key, drug))
+        const filteredDrugs = drugs
+            .filter(([, drug]) => filter(drug));
+
+        const enrichedDrugs = await Promise.all(
+            filteredDrugs.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+        );
+
+        return enrichedDrugs
             .filter(drug => drug !== null)
             .sort((a, b) => a.name.localeCompare(b.name));
     }
@@ -318,7 +378,7 @@ export class DrugReferenceManager {
         
         this.eventBus.emit('DRUG_VIEWED', { drugKey, drug: this.drugDatabase[drugKey] });
         
-        return this.withBnfLink(drugKey, this.drugDatabase[drugKey]);
+        return this.withValidatedBnfLink(drugKey, this.drugDatabase[drugKey]);
     }
 
     /**
@@ -351,9 +411,11 @@ export class DrugReferenceManager {
             this.recentDrugs = [];
         }
         
-        return this.recentDrugs
-            .map(key => this.withBnfLink(key, this.drugDatabase[key]))
-            .filter(drug => drug !== null);
+        const recentWithLinks = await Promise.all(
+            this.recentDrugs.map(key => this.withValidatedBnfLink(key, this.drugDatabase[key]))
+        );
+
+        return recentWithLinks.filter(drug => drug !== null);
     }
 
     /**
