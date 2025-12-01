@@ -20,6 +20,7 @@ export class QuizManager {
         this.submittedAnswers = {};
         this.ruledOutAnswers = {};
         this.questions = [];
+        this.fullQuestionBank = [];
         this.quizName = '';
         this.flaggedQuestions = new Set();
         this.selectedQuizLength = QUIZ_CONFIG.DEFAULT_LENGTH;
@@ -108,7 +109,8 @@ export class QuizManager {
             // Store current quiz for image lookups (V1 compatibility)
             this.currentQuiz = quizData;
             this.quizName = quizName;
-            this.questions = quizData.questions || [];
+            this.fullQuestionBank = quizData.questions || [];
+            this.questions = [...this.fullQuestionBank];
             
             // Filter questions based on selected length (V1 compatibility)
             this.questions = this.filterQuestionsByLength(this.questions);
@@ -383,6 +385,65 @@ export class QuizManager {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Search the current quiz questions for a term (used by GlobalSearch)
+     */
+    searchQuestions(query) {
+        if (!query || typeof query !== 'string') return [];
+        const term = query.trim().toLowerCase();
+        if (term.length < 2 || !Array.isArray(this.questions) || this.questions.length === 0) {
+            return [];
+        }
+
+        const results = [];
+        this.questions.forEach((question, index) => {
+            const haystackParts = [
+                question.prompt,
+                question.scenario,
+                question.text,
+                ...(question.options || []),
+                question.explanation,
+                ...(question.explanations || [])
+            ].filter(Boolean).join(' ').toLowerCase();
+
+            if (haystackParts.includes(term)) {
+                const snippetSource = question.prompt || question.text || question.scenario || '';
+                const snippet = snippetSource.length > 140 ? `${snippetSource.slice(0, 140)}…` : snippetSource;
+                results.push({
+                    index,
+                    quizName: this.quizName,
+                    snippet,
+                    question
+                });
+            }
+        });
+
+        return results;
+    }
+
+    /**
+     * Flag a set of questions (e.g., all search matches) for quick navigation
+     */
+    selectQuestionsByIndices(indices = []) {
+        if (!Array.isArray(indices) || !indices.length) {
+            return { count: 0, indices: [] };
+        }
+
+        const valid = Array.from(new Set(indices.filter((idx) => idx >= 0 && idx < this.questions.length)));
+        if (!valid.length) {
+            return { count: 0, indices: [] };
+        }
+
+        valid.forEach((idx) => this.flaggedQuestions.add(idx));
+
+        // Update UI to reflect bulk flagging
+        eventBus.emit(EVENTS.QUESTION_FLAGGED, { bulk: true, indices: valid });
+        eventBus.emit('quiz:progressUpdated', this.getProgress());
+        this.renderQuestion();
+
+        return { count: valid.length, indices: valid };
     }
 
     /**
