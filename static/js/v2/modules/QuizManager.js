@@ -411,7 +411,13 @@ export class QuizManager {
 
         pools.forEach((pool) => {
             (pool.questions || []).forEach((question, index) => {
-                const haystack = this.buildAnswerSearchText(question);
+                const haystack = [
+                    this.buildSearchableText(question),
+                    this.buildAnswerSearchText(question)
+                ]
+                    .filter(Boolean)
+                    .join(' ')
+                    .toLowerCase();
                 if (!haystack || !haystack.includes(term)) return;
 
                 const snippetSource = question.prompt || question.text || question.scenario || question.title || question.question || '';
