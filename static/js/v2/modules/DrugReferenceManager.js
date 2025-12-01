@@ -16,6 +16,8 @@ export class DrugReferenceManager {
         this.initialized = false;
         this.dataLoaded = false;
         this.bnfValidationCache = new Map();
+        this.enableBnfValidation = false;
+        this.hasLoggedValidationSkip = false;
     }
 
     normalizeDrugNameForLink(drugName) {
@@ -92,6 +94,15 @@ export class DrugReferenceManager {
 
     async validateBnfUrl(bnfUrl) {
         if (!bnfUrl) return false;
+
+        if (!this.enableBnfValidation) {
+            if (!this.hasLoggedValidationSkip) {
+                console.info('ℹ️ Skipping BNF link validation (disabled to avoid CORS failures)');
+                this.hasLoggedValidationSkip = true;
+            }
+            this.bnfValidationCache.set(bnfUrl, true);
+            return true;
+        }
 
         if (this.bnfValidationCache.has(bnfUrl)) {
             const cached = this.bnfValidationCache.get(bnfUrl);
