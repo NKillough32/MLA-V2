@@ -6283,8 +6283,12 @@ window.handleEscapeKey = handleEscapeKey;
 function initializeEnhancedSections() {
     // Quiz Practice functionality
     document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('start-quiz-btn')) {
-            const category = e.target.getAttribute('data-category');
+        const quizButton = e.target instanceof Element
+            ? e.target.closest('.start-quiz-btn')
+            : null;
+
+        if (quizButton?.dataset.category) {
+            const category = quizButton.dataset.category;
             const length = document.getElementById('quiz-length')?.value || '25';
 
             console.log(`Starting ${category} quiz: ${length} questions (keyword curated)`);
