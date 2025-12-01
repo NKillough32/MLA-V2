@@ -411,7 +411,7 @@ export class QuizManager {
 
         pools.forEach((pool) => {
             (pool.questions || []).forEach((question, index) => {
-                const haystack = this.buildSearchableText(question);
+                const haystack = this.buildAnswerSearchText(question);
                 if (!haystack || !haystack.includes(term)) return;
 
                 const snippetSource = question.prompt || question.text || question.scenario || question.title || question.question || '';
@@ -428,6 +428,28 @@ export class QuizManager {
         });
 
         return results;
+    }
+
+    buildAnswerSearchText(question = {}) {
+        const correctAnswerOption =
+            typeof question.correct_answer === 'number'
+                ? question.options?.[question.correct_answer]
+                : null;
+
+        const parts = [
+            ...(question.options || []),
+            ...(Array.isArray(question.answers) ? question.answers : []),
+            ...(Array.isArray(question.correctAnswers) ? question.correctAnswers : []),
+            ...(Array.isArray(question.acceptableAnswers) ? question.acceptableAnswers : []),
+            question.answer,
+            question.answerText,
+            question.correctAnswer,
+            question.correct_answer,
+            question.correct_answer_text,
+            correctAnswerOption
+        ].filter(Boolean);
+
+        return parts.join(' ').toLowerCase();
     }
 
     buildSearchableText(question = {}) {
