@@ -831,6 +831,7 @@ class MLAQuizApp {
                 labManager: this.labManager,
                 guidelinesManager: this.guidelinesManager,
                 calculatorManager,
+                quizManager,
                 mnemonicsManager: this.mnemonicsManager,
                 triadsManager: this.triadsManager,
                 laddersManager: this.laddersManager,

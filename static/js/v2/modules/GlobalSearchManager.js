@@ -35,6 +35,7 @@ export class GlobalSearchManager {
                 interpretations: 4,
                 emergency: 4,
                 pdf: 4,
+                quizQuestions: 4,
                 ladders: 4,
                 vaccinations: 4,
                 contraception: 4,
@@ -227,6 +228,7 @@ export class GlobalSearchManager {
             this.buildDrugResults(query),
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
+            this.buildQuizQuestionResults(query),
             this.buildVaccinationResults(query),
             this.buildContraceptionResults(query),
             this.buildGeneticsResults(query),
@@ -689,6 +691,40 @@ export class GlobalSearchManager {
         });
     }
 
+    async buildQuizQuestionResults(query) {
+        const manager = this.managers.quizManager;
+        if (!manager?.searchQuestions) return null;
+
+        const matches = manager.searchQuestions(query);
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.quizQuestions || this.options.defaultLimit;
+        const quizName = manager.quizName || 'Current quiz';
+        const mappedMatches = matches.slice(0, limit).map((match) => ({
+            title: match.question?.prompt || match.question?.text || match.question?.scenario || `Question ${match.index + 1}`,
+            subtitle: `${quizName} • Question ${match.index + 1}`,
+            meta: match.snippet,
+            action: { type: 'quiz-question', index: match.index, quizName }
+        }));
+
+        // Add a bulk selection helper at the top
+        const bulkAction = {
+            title: `Select all ${matches.length} matching question${matches.length === 1 ? '' : 's'}`,
+            subtitle: quizName,
+            meta: 'Flag all matches for quick review in the quiz navigator.',
+            badge: 'Bulk',
+            action: { type: 'quiz-question-select', indices: matches.map((m) => m.index), quizName }
+        };
+
+        return {
+            id: 'quiz-questions',
+            label: 'Quiz Questions',
+            icon: '❓',
+            total: matches.length,
+            matches: [bulkAction, ...mappedMatches]
+        };
+    }
+
     async buildGroup({ id, label, icon, searchFn, mapFn, limit }) {
         if (typeof searchFn !== 'function' || typeof mapFn !== 'function') {
             return null;
@@ -1079,6 +1115,21 @@ export class GlobalSearchManager {
                 break;
             case 'pdf':
                 navigate('pdf-library', () => this.managers.pdfLibraryManager?.showPDF?.(action.filename));
+                break;
+            case 'quiz-question':
+                defer(() => {
+                    if (!this.app) return;
+                    this.app.showScreen?.('quizScreen');
+                    this.managers.quizManager?.goToQuestion?.(action.index);
+                });
+                break;
+            case 'quiz-question-select':
+                defer(() => {
+                    const selection = this.managers.quizManager?.selectQuestionsByIndices?.(action.indices || []);
+                    if (selection?.count) {
+                        this.app?.showScreen?.('quizScreen');
+                    }
+                });
                 break;
             default:
                 console.warn('GlobalSearchManager: Unknown action type', action);
