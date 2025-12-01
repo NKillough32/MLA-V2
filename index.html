@@ -7935,6 +7935,125 @@
             padding: 20px;
         }
 
+        .quiz-search-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin: 12px 0 4px;
+        }
+
+        .quiz-search-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .quiz-search-controls label {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .quiz-search-input {
+            flex: 1 1 260px;
+            min-width: 0;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 1rem;
+            background: var(--card-background);
+            color: var(--text-primary);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .quiz-search-input:focus {
+            outline: 2px solid rgba(0, 122, 255, 0.25);
+            border-color: #007aff;
+        }
+
+        .quiz-search-btn {
+            width: auto;
+            padding: 10px 16px;
+            white-space: nowrap;
+        }
+
+        .quiz-search-hint {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .quiz-search-results {
+            margin-top: 10px;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--card-background);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .quiz-search-results[hidden] {
+            display: none;
+        }
+
+        .quiz-search-results-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .quiz-search-result {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: rgba(0, 122, 255, 0.04);
+        }
+
+        .quiz-search-result-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .quiz-search-result-title {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .quiz-search-result-snippet {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.45;
+        }
+
+        .quiz-search-jump-btn {
+            border: none;
+            background: linear-gradient(135deg, #007AFF, #0051D0);
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .quiz-search-jump-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+        }
+
+        .quiz-search-meta {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
         .quiz-categories {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -8015,6 +8134,18 @@
             border-radius: 6px;
             background: var(--background);
             color: var(--text-primary);
+        }
+
+        @media (max-width: 640px) {
+            .quiz-search-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .quiz-search-btn {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         /* Case Studies Panel Styles */
@@ -11726,7 +11857,17 @@
                 <div class="quiz-practice-container">
                     <h2>📝 Quiz Practice</h2>
                     <p class="section-description">Interactive medical quizzes to test your knowledge across different specialties and difficulty levels.</p>
-                    
+
+                    <div class="quiz-search-row">
+                        <div class="quiz-search-controls">
+                            <label for="quiz-search-input">Search current quiz</label>
+                            <input type="search" id="quiz-search-input" class="quiz-search-input" placeholder="Find questions by topic, symptom, or keyword">
+                            <button id="quiz-search-btn" class="start-quiz-btn quiz-search-btn" type="button">Search Questions</button>
+                        </div>
+                        <p class="quiz-search-hint">Search within the loaded quiz and jump straight to any matching question.</p>
+                    </div>
+                    <div id="quiz-search-results" class="quiz-search-results" hidden aria-live="polite"></div>
+
                     <div class="quiz-categories">
                         <div class="quiz-category-card" data-category="general">
                             <div class="category-icon">🏥</div>

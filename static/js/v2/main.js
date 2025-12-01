@@ -1096,6 +1096,9 @@ class MLAQuizApp {
             case 'anatomy':
                 anatomyManager.initialize();
                 break;
+            case 'quiz-practice':
+                this.initializeQuizPracticePanel(panel);
+                break;
             case 'developmental':
                 this.initializeDevelopmentalPanel(panel);
                 break;
@@ -3755,6 +3758,142 @@ class MLAQuizApp {
 
         applyFilter('all');
         panel.dataset.initialized = 'true';
+    }
+
+    /**
+     * Initialize quiz practice helpers (inline search and bindings)
+     */
+    initializeQuizPracticePanel(panel) {
+        if (!panel || panel.dataset.quizSearchInitialized === 'true') {
+            return;
+        }
+
+        const searchInput = panel.querySelector('#quiz-search-input');
+        const searchButton = panel.querySelector('#quiz-search-btn');
+        const resultsContainer = panel.querySelector('#quiz-search-results');
+        const maxResults = 6;
+
+        const showMessage = (message) => {
+            if (!resultsContainer) return;
+            resultsContainer.innerHTML = '';
+            if (!message) {
+                resultsContainer.hidden = true;
+                return;
+            }
+            const note = document.createElement('p');
+            note.className = 'quiz-search-meta';
+            note.textContent = message;
+            resultsContainer.appendChild(note);
+            resultsContainer.hidden = false;
+        };
+
+        const renderResults = (matches, query) => {
+            if (!resultsContainer) return;
+            resultsContainer.innerHTML = '';
+
+            const list = document.createElement('ul');
+            list.className = 'quiz-search-results-list';
+
+            matches.slice(0, maxResults).forEach((match) => {
+                const listItem = document.createElement('li');
+                listItem.className = 'quiz-search-result';
+
+                const textWrapper = document.createElement('div');
+                textWrapper.className = 'quiz-search-result-text';
+
+                const title = document.createElement('div');
+                title.className = 'quiz-search-result-title';
+                const questionLabel = match.index >= 0 ? `Question ${match.index + 1}` : 'Question';
+                title.textContent = `${match.quizName || 'Current quiz'} • ${questionLabel}`;
+
+                const snippet = document.createElement('div');
+                snippet.className = 'quiz-search-result-snippet';
+                snippet.textContent = match.snippet || 'Match found in question text.';
+
+                textWrapper.appendChild(title);
+                textWrapper.appendChild(snippet);
+
+                const jumpBtn = document.createElement('button');
+                jumpBtn.className = 'quiz-search-jump-btn';
+                jumpBtn.type = 'button';
+                jumpBtn.dataset.questionIndex = match.index;
+                jumpBtn.textContent = 'Go';
+
+                listItem.appendChild(textWrapper);
+                listItem.appendChild(jumpBtn);
+                list.appendChild(listItem);
+            });
+
+            const meta = document.createElement('div');
+            meta.className = 'quiz-search-meta';
+            meta.textContent = matches.length > maxResults
+                ? `Showing first ${maxResults} of ${matches.length} matches for “${query}”.`
+                : `${matches.length} match${matches.length === 1 ? '' : 'es'} found for “${query}”.`;
+
+            resultsContainer.appendChild(list);
+            resultsContainer.appendChild(meta);
+            resultsContainer.hidden = false;
+        };
+
+        const handleSearch = () => {
+            const query = (searchInput?.value || '').trim();
+
+            if (!query || query.length < 2) {
+                showMessage('Enter at least 2 characters to search within your loaded quiz.');
+                return;
+            }
+
+            if (!quizManager?.questions?.length) {
+                showMessage('Start a quiz to search and jump to specific questions.');
+                return;
+            }
+
+            const matches = quizManager.searchQuestions(query);
+            if (!matches.length) {
+                showMessage(`No matches found for “${query}”.`);
+                return;
+            }
+
+            renderResults(matches, query);
+        };
+
+        searchButton?.addEventListener('click', (event) => {
+            event.preventDefault();
+            handleSearch();
+        });
+
+        searchInput?.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                handleSearch();
+            }
+        });
+
+        searchInput?.addEventListener('input', () => {
+            if (searchInput.value.trim() === '' && resultsContainer) {
+                resultsContainer.hidden = true;
+                resultsContainer.innerHTML = '';
+            }
+        });
+
+        resultsContainer?.addEventListener('click', (event) => {
+            const target = event.target instanceof Element
+                ? event.target.closest('.quiz-search-jump-btn')
+                : null;
+            if (!target) return;
+
+            const questionIndex = parseInt(target.dataset.questionIndex, 10);
+            if (Number.isNaN(questionIndex)) return;
+
+            const moved = quizManager.goToQuestion(questionIndex);
+            if (moved) {
+                this.showScreen('quizScreen');
+            } else if (uiManager?.showToast) {
+                uiManager.showToast('Unable to open that question right now.', 'error');
+            }
+        });
+
+        panel.dataset.quizSearchInitialized = 'true';
     }
 
     /**
