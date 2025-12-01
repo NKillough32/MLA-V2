@@ -3817,6 +3817,8 @@ class MLAQuizApp {
                 jumpBtn.className = 'quiz-search-jump-btn';
                 jumpBtn.type = 'button';
                 jumpBtn.dataset.questionIndex = match.index;
+                jumpBtn.dataset.quizName = match.quizName || '';
+                jumpBtn.dataset.uploaded = match.isUploaded ? 'true' : 'false';
                 jumpBtn.textContent = 'Go';
 
                 listItem.appendChild(textWrapper);
@@ -3835,20 +3837,15 @@ class MLAQuizApp {
             resultsContainer.hidden = false;
         };
 
-        const handleSearch = () => {
+        const handleSearch = async () => {
             const query = (searchInput?.value || '').trim();
 
             if (!query || query.length < 2) {
-                showMessage('Enter at least 2 characters to search within your loaded quiz.');
+                showMessage('Enter at least 2 characters to search across your quizzes, including uploads.');
                 return;
             }
 
-            if (!quizManager?.questions?.length) {
-                showMessage('Start a quiz to search and jump to specific questions.');
-                return;
-            }
-
-            const matches = quizManager.searchQuestions(query);
+            const matches = await quizManager.searchQuestions(query, { includeUploaded: true });
             if (!matches.length) {
                 showMessage(`No matches found for “${query}”.`);
                 return;
@@ -3876,14 +3873,21 @@ class MLAQuizApp {
             }
         });
 
-        resultsContainer?.addEventListener('click', (event) => {
+        resultsContainer?.addEventListener('click', async (event) => {
             const target = event.target instanceof Element
                 ? event.target.closest('.quiz-search-jump-btn')
                 : null;
             if (!target) return;
 
             const questionIndex = parseInt(target.dataset.questionIndex, 10);
+            const quizName = target.dataset.quizName;
+            const isUploaded = target.dataset.uploaded === 'true';
             if (Number.isNaN(questionIndex)) return;
+
+            if (quizName && quizName !== quizManager.quizName) {
+                const loaded = await quizManager.loadQuiz(quizName, isUploaded);
+                if (!loaded) return;
+            }
 
             const moved = quizManager.goToQuestion(questionIndex);
             if (moved) {
@@ -6282,16 +6286,15 @@ function initializeEnhancedSections() {
         if (e.target.classList.contains('start-quiz-btn')) {
             const category = e.target.getAttribute('data-category');
             const length = document.getElementById('quiz-length')?.value || '25';
-            const difficulty = document.getElementById('quiz-difficulty')?.value || 'mixed';
-            
-            console.log(`Starting ${category} quiz: ${length} questions, ${difficulty} difficulty`);
-            
+
+            console.log(`Starting ${category} quiz: ${length} questions (keyword curated)`);
+
             // Integration with existing quiz system
-            if (window.QuizManager && window.QuizManager.startCategoryQuiz) {
-                window.QuizManager.startCategoryQuiz(category, parseInt(length), difficulty);
+            if (window.quizManager && window.quizManager.startCategoryQuiz) {
+                window.quizManager.startCategoryQuiz(category, length);
             } else {
                 // Fallback to general quiz functionality
-                alert(`Starting ${category} quiz with ${length} questions at ${difficulty} difficulty level!`);
+                alert(`Starting ${category} quiz with ${length} questions.`);
             }
         }
         
