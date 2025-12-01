@@ -24,6 +24,13 @@ export class QuizManager {
         this.quizName = '';
         this.flaggedQuestions = new Set();
         this.selectedQuizLength = QUIZ_CONFIG.DEFAULT_LENGTH;
+
+        this.categoryKeywords = {
+            general: ['general medicine', 'internal medicine', 'primary care', 'ward round', 'clinic'],
+            emergency: ['emergency', 'resuscitation', 'acute', 'trauma', 'aed', 'shock', 'crash'],
+            cardiology: ['cardiology', 'heart', 'ecg', 'arrhythmia', 'cardiac', 'angina', 'myocardial infarction', 'heart failure'],
+            respiratory: ['respiratory', 'asthma', 'copd', 'lung', 'pneumonia', 'breathlessness', 'pleural']
+        };
         
         // Time tracking
         this.questionStartTime = null;
@@ -390,40 +397,122 @@ export class QuizManager {
     /**
      * Search the current quiz questions for a term (used by GlobalSearch)
      */
-    searchQuestions(query) {
+    async searchQuestions(query, options = {}) {
+        const { includeUploaded = false } = options;
+
         if (!query || typeof query !== 'string') return [];
         const term = query.trim().toLowerCase();
-        if (term.length < 2 || !Array.isArray(this.questions) || this.questions.length === 0) {
+        if (term.length < 2) {
             return [];
         }
 
+        const pools = await this.buildQuestionPools(includeUploaded);
         const results = [];
-        this.questions.forEach((question, index) => {
-            const haystackParts = [
-                question.title,
-                question.specialty,
-                question.prompt,
-                question.investigations,
-                question.scenario,
-                question.text,
-                ...(question.options || []),
-                question.explanation,
-                ...(question.explanations || [])
-            ].filter(Boolean).join(' ').toLowerCase();
 
-            if (haystackParts.includes(term)) {
-                const snippetSource = question.prompt || question.text || question.scenario || question.title || '';
+        pools.forEach((pool) => {
+            (pool.questions || []).forEach((question, index) => {
+                const haystack = this.buildSearchableText(question);
+                if (!haystack || !haystack.includes(term)) return;
+
+                const snippetSource = question.prompt || question.text || question.scenario || question.title || question.question || '';
                 const snippet = snippetSource.length > 140 ? `${snippetSource.slice(0, 140)}…` : snippetSource;
+
                 results.push({
                     index,
-                    quizName: this.quizName,
+                    quizName: pool.quizName,
                     snippet,
-                    question
+                    question,
+                    isUploaded: pool.isUploaded
                 });
-            }
+            });
         });
 
         return results;
+    }
+
+    buildSearchableText(question = {}) {
+        const parts = [
+            question.title,
+            question.question,
+            question.prompt,
+            question.specialty,
+            question.investigations,
+            question.scenario,
+            question.text,
+            ...(question.options || []),
+            question.correctAnswer,
+            question.answer,
+            question.explanation,
+            ...(question.explanations || [])
+        ].filter(Boolean);
+
+        return parts.join(' ').toLowerCase();
+    }
+
+    async buildQuestionPools(includeUploaded = false) {
+        const pools = [];
+
+        const currentQuestions = Array.isArray(this.fullQuestionBank) && this.fullQuestionBank.length
+            ? this.fullQuestionBank
+            : (Array.isArray(this.questions) ? this.questions : []);
+
+        if (currentQuestions.length) {
+            pools.push({ quizName: this.quizName || 'Current quiz', questions: currentQuestions, isUploaded: false });
+        }
+
+        if (includeUploaded) {
+            const uploadedQuizzes = await this.getUploadedQuizzes();
+            uploadedQuizzes.forEach((quiz) => {
+                if (quiz?.questions?.length) {
+                    pools.push({ quizName: quiz.name || 'Uploaded quiz', questions: quiz.questions, isUploaded: true });
+                }
+            });
+        }
+
+        return pools;
+    }
+
+    async startCategoryQuiz(category, lengthOverride = null) {
+        const key = (category || '').toLowerCase();
+        const keywords = this.categoryKeywords[key];
+
+        if (!keywords || !keywords.length) {
+            UIHelpers.showToast('⚠️ Unknown quiz category selected.', 'warning');
+            return false;
+        }
+
+        const pools = await this.buildQuestionPools(true);
+        const matches = [];
+
+        pools.forEach((pool) => {
+            (pool.questions || []).forEach((question) => {
+                const haystack = this.buildSearchableText(question);
+                if (!haystack) return;
+
+                if (keywords.some(keyword => haystack.includes(keyword))) {
+                    matches.push({ question, quizName: pool.quizName });
+                }
+            });
+        });
+
+        if (!matches.length) {
+            UIHelpers.showToast('No questions matched this category. Try uploading more quizzes.', 'warning');
+            return false;
+        }
+
+        const lengthSetting = lengthOverride === 'all' ? 'all' : parseInt(lengthOverride || this.selectedQuizLength);
+        await this.setQuizLength(Number.isNaN(lengthSetting) ? QUIZ_CONFIG.DEFAULT_LENGTH : lengthSetting);
+
+        const shuffled = this.shuffleArray(matches.map(match => match.question));
+        const filtered = this.filterQuestionsByLength(shuffled);
+
+        this.currentQuiz = { name: `${category} curated`, questions: shuffled };
+        this.quizName = `${category} mix`;
+        this.fullQuestionBank = shuffled;
+        this.questions = [...filtered];
+
+        await this.startQuiz();
+        return true;
     }
 
     /**

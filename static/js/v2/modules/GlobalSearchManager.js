@@ -695,33 +695,44 @@ export class GlobalSearchManager {
         const manager = this.managers.quizManager;
         if (!manager?.searchQuestions) return null;
 
-        const matches = manager.searchQuestions(query);
+        const matches = await manager.searchQuestions(query, { includeUploaded: true });
         if (!matches.length) return null;
 
         const limit = this.options.limits.quizQuestions || this.options.defaultLimit;
-        const quizName = manager.quizName || 'Current quiz';
         const mappedMatches = matches.slice(0, limit).map((match) => ({
             title: match.question?.prompt || match.question?.text || match.question?.scenario || `Question ${match.index + 1}`,
-            subtitle: `${quizName} • Question ${match.index + 1}`,
+            subtitle: `${match.quizName || manager.quizName || 'Current quiz'} • Question ${match.index + 1}`,
             meta: match.snippet,
-            action: { type: 'quiz-question', index: match.index, quizName }
+            action: { type: 'quiz-question', index: match.index, quizName: match.quizName, isUploaded: match.isUploaded }
         }));
 
-        // Add a bulk selection helper at the top
-        const bulkAction = {
-            title: `Select all ${matches.length} matching question${matches.length === 1 ? '' : 's'}`,
-            subtitle: quizName,
-            meta: 'Flag all matches for quick review in the quiz navigator.',
-            badge: 'Bulk',
-            action: { type: 'quiz-question-select', indices: matches.map((m) => m.index), quizName }
-        };
+        const uniqueQuizNames = new Set(matches.map((m) => m.quizName || manager.quizName));
+        const matchesList = [...mappedMatches];
+
+        // Add a bulk selection helper when all matches come from the same quiz
+        if (uniqueQuizNames.size === 1) {
+            const singleQuizName = matches[0]?.quizName || manager.quizName;
+            const bulkAction = {
+                title: `Select all ${matches.length} matching question${matches.length === 1 ? '' : 's'}`,
+                subtitle: singleQuizName,
+                meta: 'Flag all matches for quick review in the quiz navigator.',
+                badge: 'Bulk',
+                action: {
+                    type: 'quiz-question-select',
+                    indices: matches.map((m) => m.index),
+                    quizName: singleQuizName,
+                    isUploaded: matches[0]?.isUploaded
+                }
+            };
+            matchesList.unshift(bulkAction);
+        }
 
         return {
             id: 'quiz-questions',
             label: 'Quiz Questions',
             icon: '❓',
             total: matches.length,
-            matches: [bulkAction, ...mappedMatches]
+            matches: matchesList
         };
     }
 
@@ -1117,14 +1128,22 @@ export class GlobalSearchManager {
                 navigate('pdf-library', () => this.managers.pdfLibraryManager?.showPDF?.(action.filename));
                 break;
             case 'quiz-question':
-                defer(() => {
+                defer(async () => {
                     if (!this.app) return;
+                    if (action.quizName && action.quizName !== this.managers.quizManager?.quizName) {
+                        const loaded = await this.managers.quizManager?.loadQuiz?.(action.quizName, action.isUploaded);
+                        if (!loaded) return;
+                    }
                     this.app.showScreen?.('quizScreen');
                     this.managers.quizManager?.goToQuestion?.(action.index);
                 });
                 break;
             case 'quiz-question-select':
-                defer(() => {
+                defer(async () => {
+                    if (action.quizName && action.quizName !== this.managers.quizManager?.quizName) {
+                        const loaded = await this.managers.quizManager?.loadQuiz?.(action.quizName, action.isUploaded);
+                        if (!loaded) return;
+                    }
                     const selection = this.managers.quizManager?.selectQuestionsByIndices?.(action.indices || []);
                     if (selection?.count) {
                         this.app?.showScreen?.('quizScreen');
