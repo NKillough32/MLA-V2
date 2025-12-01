@@ -400,7 +400,10 @@ export class QuizManager {
         const results = [];
         this.questions.forEach((question, index) => {
             const haystackParts = [
+                question.title,
+                question.specialty,
                 question.prompt,
+                question.investigations,
                 question.scenario,
                 question.text,
                 ...(question.options || []),
@@ -409,7 +412,7 @@ export class QuizManager {
             ].filter(Boolean).join(' ').toLowerCase();
 
             if (haystackParts.includes(term)) {
-                const snippetSource = question.prompt || question.text || question.scenario || '';
+                const snippetSource = question.prompt || question.text || question.scenario || question.title || '';
                 const snippet = snippetSource.length > 140 ? `${snippetSource.slice(0, 140)}…` : snippetSource;
                 results.push({
                     index,
