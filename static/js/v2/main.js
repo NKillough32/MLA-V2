@@ -3771,11 +3771,17 @@ class MLAQuizApp {
         const searchInput = panel.querySelector('#quiz-search-input');
         const searchButton = panel.querySelector('#quiz-search-btn');
         const resultsContainer = panel.querySelector('#quiz-search-results');
-        const maxResults = 6;
+        let latestMatches = [];
+        let selectedMatchIndices = new Set();
+        let lastQuery = '';
+        let startCustomQuizBtn = null;
+        let selectionMetaEl = null;
 
         const showMessage = (message) => {
             if (!resultsContainer) return;
             resultsContainer.innerHTML = '';
+            latestMatches = [];
+            selectedMatchIndices.clear();
             if (!message) {
                 resultsContainer.hidden = true;
                 return;
@@ -3787,14 +3793,32 @@ class MLAQuizApp {
             resultsContainer.hidden = false;
         };
 
+        const updateSelectionState = (queryText = '') => {
+            if (startCustomQuizBtn) {
+                startCustomQuizBtn.disabled = selectedMatchIndices.size === 0;
+            }
+
+            if (selectionMetaEl) {
+                const total = latestMatches.length;
+                const selected = selectedMatchIndices.size;
+                const queryLabel = queryText ? ` for “${queryText}”` : '';
+                selectionMetaEl.textContent = total
+                    ? `${selected} of ${total} matches selected${queryLabel}.`
+                    : 'No matches to display yet. Search to begin building a custom quiz.';
+            }
+        };
+
         const renderResults = (matches, query) => {
             if (!resultsContainer) return;
             resultsContainer.innerHTML = '';
 
+            latestMatches = matches;
+            selectedMatchIndices = new Set(matches.map((_, idx) => idx));
+
             const list = document.createElement('ul');
             list.className = 'quiz-search-results-list';
 
-            matches.slice(0, maxResults).forEach((match) => {
+            matches.forEach((match, matchIndex) => {
                 const listItem = document.createElement('li');
                 listItem.className = 'quiz-search-result';
 
@@ -3813,6 +3837,15 @@ class MLAQuizApp {
                 textWrapper.appendChild(title);
                 textWrapper.appendChild(snippet);
 
+                const controls = document.createElement('div');
+                controls.className = 'quiz-search-result-controls';
+
+                const selectBox = document.createElement('input');
+                selectBox.type = 'checkbox';
+                selectBox.className = 'quiz-search-select';
+                selectBox.checked = true;
+                selectBox.dataset.matchIndex = matchIndex;
+
                 const jumpBtn = document.createElement('button');
                 jumpBtn.className = 'quiz-search-jump-btn';
                 jumpBtn.type = 'button';
@@ -3821,24 +3854,48 @@ class MLAQuizApp {
                 jumpBtn.dataset.uploaded = match.isUploaded ? 'true' : 'false';
                 jumpBtn.textContent = 'Go';
 
+                controls.appendChild(selectBox);
+                controls.appendChild(jumpBtn);
+
                 listItem.appendChild(textWrapper);
-                listItem.appendChild(jumpBtn);
+                listItem.appendChild(controls);
                 list.appendChild(listItem);
             });
 
-            const meta = document.createElement('div');
-            meta.className = 'quiz-search-meta';
-            meta.textContent = matches.length > maxResults
-                ? `Showing first ${maxResults} of ${matches.length} matches for “${query}”.`
-                : `${matches.length} match${matches.length === 1 ? '' : 'es'} found for “${query}”.`;
+            selectionMetaEl = document.createElement('div');
+            selectionMetaEl.className = 'quiz-search-meta';
+
+            startCustomQuizBtn = document.createElement('button');
+            startCustomQuizBtn.className = 'quiz-search-start-btn';
+            startCustomQuizBtn.type = 'button';
+            startCustomQuizBtn.textContent = 'Start custom quiz from selected';
+            startCustomQuizBtn.addEventListener('click', async () => {
+                const selected = Array.from(selectedMatchIndices)
+                    .map(idx => latestMatches[idx])
+                    .filter(Boolean);
+
+                const started = await quizManager.startCustomQuizFromSearch(selected, query);
+                if (started) {
+                    this.showScreen('quizScreen');
+                } else if (uiManager?.showToast) {
+                    uiManager.showToast('Unable to start a custom quiz right now.', 'error');
+                }
+            });
+
+            const actions = document.createElement('div');
+            actions.className = 'quiz-search-actions';
+            actions.appendChild(startCustomQuizBtn);
 
             resultsContainer.appendChild(list);
-            resultsContainer.appendChild(meta);
+            resultsContainer.appendChild(selectionMetaEl);
+            resultsContainer.appendChild(actions);
             resultsContainer.hidden = false;
+            updateSelectionState(query);
         };
 
         const handleSearch = async () => {
             const query = (searchInput?.value || '').trim();
+            lastQuery = query;
 
             if (!query || query.length < 2) {
                 showMessage('Enter at least 2 characters to search across your quizzes, including uploads.');
@@ -3847,7 +3904,7 @@ class MLAQuizApp {
 
             const matches = await quizManager.searchQuestions(query, { includeUploaded: true });
             if (!matches.length) {
-                showMessage(`No matches found for “${query}”.`);
+                showMessage(`No matches found for “${query}”. Load or upload a quiz to search its questions.`);
                 return;
             }
 
@@ -3895,6 +3952,24 @@ class MLAQuizApp {
             } else if (uiManager?.showToast) {
                 uiManager.showToast('Unable to open that question right now.', 'error');
             }
+        });
+
+        resultsContainer?.addEventListener('change', (event) => {
+            const checkbox = event.target instanceof Element
+                ? event.target.closest('.quiz-search-select')
+                : null;
+            if (!checkbox) return;
+
+            const matchIndex = parseInt(checkbox.dataset.matchIndex, 10);
+            if (Number.isNaN(matchIndex)) return;
+
+            if (checkbox.checked) {
+                selectedMatchIndices.add(matchIndex);
+            } else {
+                selectedMatchIndices.delete(matchIndex);
+            }
+
+            updateSelectionState(lastQuery);
         });
 
         panel.dataset.quizSearchInitialized = 'true';
