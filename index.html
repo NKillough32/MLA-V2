@@ -8120,6 +8120,78 @@
             cursor: pointer;
         }
 
+        /* Search Filter Toggles */
+        .quiz-search-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+            padding: 12px;
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        .quiz-search-filters-label {
+            width: 100%;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .quiz-search-filter {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: rgba(0, 122, 255, 0.08);
+            border: 1px solid rgba(0, 122, 255, 0.2);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .quiz-search-filter:hover {
+            background: rgba(0, 122, 255, 0.12);
+            border-color: rgba(0, 122, 255, 0.3);
+        }
+
+        .quiz-search-filter input[type="checkbox"] {
+            width: 14px;
+            height: 14px;
+            margin: 0;
+            accent-color: #007AFF;
+            cursor: pointer;
+        }
+
+        .quiz-search-filter.disabled {
+            opacity: 0.5;
+            background: var(--border-color);
+            border-color: var(--border-color);
+        }
+
+        .quiz-search-filter.disabled:hover {
+            background: var(--border-color);
+        }
+
+        [data-theme="dark"] .quiz-search-filters {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        [data-theme="dark"] .quiz-search-filter {
+            background: rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        [data-theme="dark"] .quiz-search-filter:hover {
+            background: rgba(99, 102, 241, 0.25);
+        }
+
         @media (max-width: 640px) {
             .quiz-search-controls {
                 flex-direction: column;
@@ -11964,6 +12036,31 @@
                             <button id="quiz-search-btn" class="quiz-search-btn" type="button">Search Questions</button>
                         </div>
                         <p class="quiz-search-hint">Search within the loaded quiz and jump straight to any matching question.</p>
+                        
+                        <!-- Search Filter Toggles -->
+                        <div class="quiz-search-filters">
+                            <span class="quiz-search-filters-label">🔍 Search in:</span>
+                            <label class="quiz-search-filter">
+                                <input type="checkbox" id="filter-scenario" checked>
+                                <span>Question/Scenario</span>
+                            </label>
+                            <label class="quiz-search-filter">
+                                <input type="checkbox" id="filter-investigations" checked>
+                                <span>Investigations</span>
+                            </label>
+                            <label class="quiz-search-filter">
+                                <input type="checkbox" id="filter-options" checked>
+                                <span>Answer Options</span>
+                            </label>
+                            <label class="quiz-search-filter">
+                                <input type="checkbox" id="filter-explanation" checked>
+                                <span>Explanations</span>
+                            </label>
+                            <label class="quiz-search-filter">
+                                <input type="checkbox" id="filter-specialty" checked>
+                                <span>Specialty</span>
+                            </label>
+                        </div>
                     </div>
                     <div id="quiz-search-results" class="quiz-search-results" hidden aria-live="polite"></div>
 

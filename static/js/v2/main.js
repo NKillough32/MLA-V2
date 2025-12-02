@@ -3909,7 +3909,16 @@ class MLAQuizApp {
                 return;
             }
 
-            const matches = await quizManager.searchQuestions(query, { includeUploaded: true });
+            const matches = await quizManager.searchQuestions(query, { 
+                includeUploaded: true, 
+                filters: {
+                    scenario: document.getElementById('filter-scenario')?.checked ?? true,
+                    investigations: document.getElementById('filter-investigations')?.checked ?? true,
+                    options: document.getElementById('filter-options')?.checked ?? true,
+                    explanation: document.getElementById('filter-explanation')?.checked ?? true,
+                    specialty: document.getElementById('filter-specialty')?.checked ?? true
+                }
+            });
             if (!matches.length) {
                 showMessage(`No matches found for “${query}”. Load or upload a quiz to search its questions.`);
                 return;
@@ -3935,6 +3944,27 @@ class MLAQuizApp {
                 resultsContainer.hidden = true;
                 resultsContainer.innerHTML = '';
             }
+        });
+
+        // Update filter label styling based on checked state
+        const updateFilterStyles = () => {
+            document.querySelectorAll('.quiz-search-filter').forEach(label => {
+                const checkbox = label.querySelector('input[type="checkbox"]');
+                if (checkbox) {
+                    label.classList.toggle('disabled', !checkbox.checked);
+                }
+            });
+        };
+
+        // Add listeners to filter checkboxes to update styles and re-search
+        document.querySelectorAll('.quiz-search-filters input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updateFilterStyles();
+                // Re-run search if there's an active query
+                if (searchInput?.value?.trim().length >= 2) {
+                    handleSearch();
+                }
+            });
         });
 
         resultsContainer?.addEventListener('click', async (event) => {

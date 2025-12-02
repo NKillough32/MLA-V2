@@ -453,7 +453,16 @@ export class QuizManager {
      * Search the current quiz questions for a term (used by GlobalSearch)
      */
     async searchQuestions(query, options = {}) {
-        const { includeUploaded = false } = options;
+        const { 
+            includeUploaded = false,
+            filters = {
+                scenario: true,
+                investigations: true,
+                options: true,
+                explanation: true,
+                specialty: true
+            }
+        } = options;
 
         if (!query || typeof query !== 'string') return [];
         const term = query.trim().toLowerCase();
@@ -466,13 +475,7 @@ export class QuizManager {
 
         pools.forEach((pool) => {
             (pool.questions || []).forEach((question, index) => {
-                const haystack = [
-                    this.buildSearchableText(question),
-                    this.buildAnswerSearchText(question)
-                ]
-                    .filter(Boolean)
-                    .join(' ')
-                    .toLowerCase();
+                const haystack = this.buildFilteredSearchText(question, filters).toLowerCase();
                 if (!haystack || !haystack.includes(term)) return;
 
                 const snippetSource = question.prompt || question.text || question.scenario || question.title || question.question || '';
@@ -490,6 +493,57 @@ export class QuizManager {
         });
 
         return results;
+    }
+
+    /**
+     * Build search text based on active filters
+     */
+    buildFilteredSearchText(question = {}, filters = {}) {
+        const parts = [];
+
+        // Question/Scenario text
+        if (filters.scenario !== false) {
+            parts.push(
+                question.title,
+                question.question,
+                question.prompt,
+                question.scenario,
+                question.text
+            );
+        }
+
+        // Investigations
+        if (filters.investigations !== false) {
+            parts.push(question.investigations);
+        }
+
+        // Answer options
+        if (filters.options !== false) {
+            if (question.options) parts.push(...question.options);
+            parts.push(
+                question.correctAnswer,
+                question.answer,
+                question.answerText,
+                question.correct_answer,
+                question.correct_answer_text
+            );
+            if (Array.isArray(question.answers)) parts.push(...question.answers);
+            if (Array.isArray(question.correctAnswers)) parts.push(...question.correctAnswers);
+            if (Array.isArray(question.acceptableAnswers)) parts.push(...question.acceptableAnswers);
+        }
+
+        // Explanations
+        if (filters.explanation !== false) {
+            parts.push(question.explanation);
+            if (Array.isArray(question.explanations)) parts.push(...question.explanations);
+        }
+
+        // Specialty
+        if (filters.specialty !== false) {
+            parts.push(question.specialty);
+        }
+
+        return parts.filter(Boolean).join(' ');
     }
 
     buildAnswerSearchText(question = {}) {
