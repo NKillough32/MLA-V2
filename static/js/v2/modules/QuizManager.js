@@ -544,6 +544,40 @@ export class QuizManager {
     }
 
     /**
+     * Start a custom quiz from selected search matches
+     */
+    async startCustomQuizFromSearch(matches = [], query = '') {
+        if (!Array.isArray(matches) || !matches.length) {
+            UIHelpers.showToast('Select at least one question to start a custom quiz.', 'warning');
+            return false;
+        }
+
+        const questions = matches
+            .map(match => match?.question)
+            .filter(Boolean);
+
+        if (!questions.length) {
+            UIHelpers.showToast('No valid questions were found in your selection.', 'warning');
+            return false;
+        }
+
+        const quizTitle = query ? `Search: ${query}` : 'Custom search quiz';
+        const previousLength = this.selectedQuizLength;
+
+        this.currentQuiz = { name: quizTitle, questions };
+        this.quizName = quizTitle;
+        this.fullQuestionBank = [...questions];
+        this.questions = [...questions];
+        this.selectedQuizLength = 'all';
+
+        await this.startQuiz();
+
+        // Restore previous length preference for subsequent quizzes
+        this.selectedQuizLength = previousLength;
+        return true;
+    }
+
+    /**
      * Flag a set of questions (e.g., all search matches) for quick navigation
      */
     selectQuestionsByIndices(indices = []) {
