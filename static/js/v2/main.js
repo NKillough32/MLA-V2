@@ -845,6 +845,13 @@ class MLAQuizApp {
 
         // Setup global keyboard shortcuts
         this.setupKeyboardShortcuts();
+
+        // Ensure the quiz search UI is wired up even if the quiz panel
+        // is visible by default (e.g., when loaded via a deep link)
+        const quizPanel = document.getElementById('quiz-panel');
+        if (quizPanel) {
+            this.initializeQuizPracticePanel(quizPanel);
+        }
     }
 
     /**
