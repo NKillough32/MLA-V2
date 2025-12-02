@@ -26,10 +26,65 @@ export class QuizManager {
         this.selectedQuizLength = QUIZ_CONFIG.DEFAULT_LENGTH;
 
         this.categoryKeywords = {
-            general: ['general medicine', 'internal medicine', 'primary care', 'ward round', 'clinic'],
-            emergency: ['emergency', 'resuscitation', 'acute', 'trauma', 'aed', 'shock', 'crash'],
-            cardiology: ['cardiology', 'heart', 'ecg', 'arrhythmia', 'cardiac', 'angina', 'myocardial infarction', 'heart failure'],
-            respiratory: ['respiratory', 'asthma', 'copd', 'lung', 'pneumonia', 'breathlessness', 'pleural']
+            // General / Internal Medicine
+            general: ['general medicine', 'internal medicine', 'primary care', 'ward round', 'clinic', 'outpatient', 'inpatient', 'admission', 'discharge', 'history taking', 'examination', 'diagnosis', 'management', 'treatment'],
+            
+            // Emergency Medicine
+            emergency: ['emergency', 'resuscitation', 'acute', 'trauma', 'aed', 'shock', 'crash', 'cardiac arrest', 'cpr', 'airway', 'anaphylaxis', 'sepsis', 'unconscious', 'collapse', 'overdose', 'poisoning', 'burns', 'fracture', 'haemorrhage', 'bleeding', 'a&e', 'accident'],
+            
+            // Cardiology
+            cardiology: ['cardiology', 'heart', 'ecg', 'arrhythmia', 'cardiac', 'angina', 'myocardial infarction', 'heart failure', 'atrial fibrillation', 'ventricular', 'pacemaker', 'murmur', 'valve', 'coronary', 'hypertension', 'blood pressure', 'chest pain', 'palpitations', 'stemi', 'nstemi', 'troponin', 'bnp'],
+            
+            // Respiratory
+            respiratory: ['respiratory', 'asthma', 'copd', 'lung', 'pneumonia', 'breathlessness', 'pleural', 'bronchitis', 'emphysema', 'tuberculosis', 'pulmonary', 'cough', 'sputum', 'dyspnoea', 'oxygen', 'spirometry', 'chest x-ray', 'fibrosis', 'embolism', 'ards'],
+            
+            // Neurology
+            neurology: ['neurology', 'neurological', 'brain', 'stroke', 'seizure', 'epilepsy', 'headache', 'migraine', 'meningitis', 'encephalitis', 'parkinson', 'dementia', 'alzheimer', 'multiple sclerosis', 'neuropathy', 'nerve', 'paralysis', 'weakness', 'tremor', 'consciousness', 'gcs', 'lumbar puncture', 'ct head', 'mri brain'],
+            
+            // Gastroenterology
+            gastroenterology: ['gastroenterology', 'gastrointestinal', 'gi', 'abdominal', 'liver', 'hepatic', 'cirrhosis', 'hepatitis', 'pancreas', 'pancreatitis', 'bowel', 'colon', 'crohn', 'ulcerative colitis', 'ibd', 'diarrhoea', 'constipation', 'vomiting', 'nausea', 'dysphagia', 'reflux', 'gord', 'peptic ulcer', 'gi bleed', 'melaena', 'haematemesis', 'ascites', 'jaundice', 'bilirubin'],
+            
+            // Endocrinology & Diabetes
+            endocrinology: ['endocrine', 'endocrinology', 'diabetes', 'diabetic', 'insulin', 'glucose', 'hba1c', 'thyroid', 'hyperthyroid', 'hypothyroid', 'adrenal', 'cushing', 'addison', 'pituitary', 'hormone', 'calcium', 'parathyroid', 'osteoporosis', 'dka', 'hypoglycaemia', 'hyperglycaemia'],
+            
+            // Renal / Nephrology
+            renal: ['renal', 'kidney', 'nephrology', 'dialysis', 'creatinine', 'egfr', 'ckd', 'aki', 'acute kidney injury', 'chronic kidney disease', 'proteinuria', 'haematuria', 'uti', 'urinary', 'electrolyte', 'sodium', 'potassium', 'urea', 'glomerulonephritis', 'nephrotic', 'nephritic'],
+            
+            // Haematology
+            haematology: ['haematology', 'blood', 'anaemia', 'haemoglobin', 'platelet', 'clotting', 'coagulation', 'warfarin', 'anticoagulant', 'dvt', 'pe', 'thrombosis', 'embolism', 'leukaemia', 'lymphoma', 'myeloma', 'transfusion', 'bleeding', 'bruising', 'sickle cell', 'thalassaemia', 'iron', 'b12', 'folate'],
+            
+            // Infectious Diseases
+            infectious: ['infection', 'infectious', 'sepsis', 'antibiotic', 'bacteria', 'viral', 'fungal', 'fever', 'pyrexia', 'hiv', 'aids', 'tuberculosis', 'tb', 'malaria', 'pneumonia', 'meningitis', 'cellulitis', 'abscess', 'mrsa', 'c diff', 'clostridium', 'vaccination', 'immunisation'],
+            
+            // Rheumatology / MSK
+            rheumatology: ['rheumatology', 'rheumatoid', 'arthritis', 'joint', 'osteoarthritis', 'gout', 'lupus', 'sle', 'autoimmune', 'connective tissue', 'vasculitis', 'fibromyalgia', 'back pain', 'musculoskeletal', 'msk', 'bone', 'muscle', 'tendon', 'inflammation', 'swelling', 'stiffness', 'dmard'],
+            
+            // Dermatology
+            dermatology: ['dermatology', 'skin', 'rash', 'eczema', 'psoriasis', 'dermatitis', 'urticaria', 'melanoma', 'skin cancer', 'acne', 'wound', 'ulcer', 'cellulitis', 'fungal', 'itching', 'pruritus', 'biopsy', 'lesion', 'mole', 'pigmented'],
+            
+            // Psychiatry / Mental Health
+            psychiatry: ['psychiatry', 'psychiatric', 'mental health', 'depression', 'anxiety', 'bipolar', 'schizophrenia', 'psychosis', 'suicide', 'self-harm', 'eating disorder', 'anorexia', 'bulimia', 'ptsd', 'ocd', 'personality disorder', 'addiction', 'substance', 'alcohol', 'delirium', 'dementia', 'capacity', 'section', 'mental health act'],
+            
+            // Geriatrics / Elderly Care
+            geriatrics: ['geriatric', 'elderly', 'older', 'frailty', 'falls', 'delirium', 'dementia', 'polypharmacy', 'care home', 'nursing home', 'mobility', 'continence', 'pressure sore', 'osteoporosis', 'hip fracture', 'discharge planning', 'cga', 'comprehensive geriatric assessment'],
+            
+            // Paediatrics
+            paediatrics: ['paediatric', 'pediatric', 'child', 'children', 'infant', 'baby', 'neonatal', 'newborn', 'developmental', 'growth', 'immunisation', 'vaccination', 'fever', 'rash', 'safeguarding', 'child protection', 'bronchiolitis', 'croup', 'febrile', 'otitis media'],
+            
+            // Obstetrics & Gynaecology
+            obstetrics: ['obstetric', 'gynaecology', 'gynecology', 'pregnancy', 'pregnant', 'antenatal', 'postnatal', 'labour', 'delivery', 'caesarean', 'c-section', 'miscarriage', 'ectopic', 'pre-eclampsia', 'gestational', 'menstrual', 'menopause', 'contraception', 'fertility', 'ovarian', 'uterine', 'cervical', 'pelvic'],
+            
+            // Surgery
+            surgery: ['surgery', 'surgical', 'operation', 'operative', 'pre-operative', 'post-operative', 'appendicitis', 'cholecystitis', 'hernia', 'bowel obstruction', 'laparoscopic', 'wound', 'incision', 'drainage', 'anastomosis', 'resection', 'consent', 'theatre'],
+            
+            // Oncology
+            oncology: ['oncology', 'cancer', 'malignancy', 'tumour', 'tumor', 'chemotherapy', 'radiotherapy', 'metastasis', 'staging', 'palliative', 'hospice', 'terminal', 'biopsy', 'histology', 'carcinoma', 'sarcoma', 'lymphoma', 'leukaemia'],
+            
+            // Pharmacology
+            pharmacology: ['pharmacology', 'drug', 'medication', 'prescribing', 'dose', 'side effect', 'adverse', 'interaction', 'contraindication', 'overdose', 'toxicity', 'therapeutic', 'mechanism', 'antibiotic', 'analgesic', 'opioid', 'nsaid', 'ace inhibitor', 'beta blocker', 'statin'],
+            
+            // Ethics & Law
+            ethics: ['ethics', 'ethical', 'consent', 'capacity', 'confidentiality', 'gdpr', 'data protection', 'safeguarding', 'mental health act', 'deprivation of liberty', 'dols', 'best interests', 'advance directive', 'dnacpr', 'end of life', 'gmc', 'fitness to practise', 'duty of candour']
         };
         
         // Time tracking
@@ -428,7 +483,8 @@ export class QuizManager {
                     quizName: pool.quizName,
                     snippet,
                     question,
-                    isUploaded: pool.isUploaded
+                    isUploaded: pool.isUploaded,
+                    images: pool.images || {} // Include source quiz images for later merging
                 });
             });
         });
@@ -485,14 +541,24 @@ export class QuizManager {
             : (Array.isArray(this.questions) ? this.questions : []);
 
         if (currentQuestions.length) {
-            pools.push({ quizName: this.quizName || 'Current quiz', questions: currentQuestions, isUploaded: false });
+            pools.push({ 
+                quizName: this.quizName || 'Current quiz', 
+                questions: currentQuestions, 
+                images: this.currentQuiz?.images || {},
+                isUploaded: false 
+            });
         }
 
         if (includeUploaded) {
             const uploadedQuizzes = await this.getUploadedQuizzes();
             uploadedQuizzes.forEach((quiz) => {
                 if (quiz?.questions?.length) {
-                    pools.push({ quizName: quiz.name || 'Uploaded quiz', questions: quiz.questions, isUploaded: true });
+                    pools.push({ 
+                        quizName: quiz.name || 'Uploaded quiz', 
+                        questions: quiz.questions, 
+                        images: quiz.images || {},
+                        isUploaded: true 
+                    });
                 }
             });
         }
@@ -511,16 +577,24 @@ export class QuizManager {
 
         const pools = await this.buildQuestionPools(true);
         const matches = [];
+        const mergedImages = {}; // Collect images from all matched pools
 
         pools.forEach((pool) => {
+            let poolHasMatch = false;
             (pool.questions || []).forEach((question) => {
                 const haystack = this.buildSearchableText(question);
                 if (!haystack) return;
 
                 if (keywords.some(keyword => haystack.includes(keyword))) {
                     matches.push({ question, quizName: pool.quizName });
+                    poolHasMatch = true;
                 }
             });
+            
+            // If this pool contributed any questions, merge its images
+            if (poolHasMatch && pool.images) {
+                Object.assign(mergedImages, pool.images);
+            }
         });
 
         if (!matches.length) {
@@ -534,10 +608,13 @@ export class QuizManager {
         const shuffled = this.shuffleArray(matches.map(match => match.question));
         const filtered = this.filterQuestionsByLength(shuffled);
 
-        this.currentQuiz = { name: `${category} curated`, questions: shuffled };
+        // Include merged images from all contributing quizzes
+        this.currentQuiz = { name: `${category} curated`, questions: shuffled, images: mergedImages };
         this.quizName = `${category} mix`;
         this.fullQuestionBank = shuffled;
         this.questions = [...filtered];
+
+        console.log(`📚 Category quiz created with ${Object.keys(mergedImages).length} images from source quizzes`);
 
         await this.startQuiz();
         return true;
@@ -561,14 +638,25 @@ export class QuizManager {
             return false;
         }
 
+        // Merge images from all source quizzes in the matches
+        const mergedImages = {};
+        matches.forEach(match => {
+            if (match?.images) {
+                Object.assign(mergedImages, match.images);
+            }
+        });
+
         const quizTitle = query ? `Search: ${query}` : 'Custom search quiz';
         const previousLength = this.selectedQuizLength;
 
-        this.currentQuiz = { name: quizTitle, questions };
+        // Include merged images from all contributing quizzes
+        this.currentQuiz = { name: quizTitle, questions, images: mergedImages };
         this.quizName = quizTitle;
         this.fullQuestionBank = [...questions];
         this.questions = [...questions];
         this.selectedQuizLength = 'all';
+
+        console.log(`📚 Custom search quiz created with ${Object.keys(mergedImages).length} images from source quizzes`);
 
         await this.startQuiz();
 

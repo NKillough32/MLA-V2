@@ -8132,10 +8132,12 @@
 
             .quiz-search-input,
             .quiz-search-btn {
-                width: 100%;
-                height: 44px;
-                min-height: 44px;
-                box-sizing: border-box;
+                width: 100% !important;
+                height: 44px !important;
+                min-height: 44px !important;
+                max-height: 44px !important;
+                flex: 0 0 44px !important;
+                box-sizing: border-box !important;
             }
 
             .quiz-search-result {
@@ -8238,7 +8240,9 @@
             }
 
             .quiz-search-btn {
-                width: 100%;
+                width: 100% !important;
+                height: 44px !important;
+                max-height: 44px !important;
                 text-align: center;
             }
         }
@@ -11990,6 +11994,118 @@
                             <h3>Respiratory</h3>
                             <p>Lung conditions, breathing disorders, and chest medicine</p>
                             <button class="start-quiz-btn" data-category="respiratory">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="neurology">
+                            <div class="category-icon">🧠</div>
+                            <h3>Neurology</h3>
+                            <p>Brain, stroke, seizures, and neurological conditions</p>
+                            <button class="start-quiz-btn" data-category="neurology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="gastroenterology">
+                            <div class="category-icon">🫃</div>
+                            <h3>Gastroenterology</h3>
+                            <p>GI tract, liver, pancreas, and abdominal conditions</p>
+                            <button class="start-quiz-btn" data-category="gastroenterology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="endocrinology">
+                            <div class="category-icon">💉</div>
+                            <h3>Endocrinology</h3>
+                            <p>Diabetes, thyroid, hormones, and metabolic disorders</p>
+                            <button class="start-quiz-btn" data-category="endocrinology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="renal">
+                            <div class="category-icon">🫘</div>
+                            <h3>Renal Medicine</h3>
+                            <p>Kidney disease, electrolytes, and fluid balance</p>
+                            <button class="start-quiz-btn" data-category="renal">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="haematology">
+                            <div class="category-icon">🩸</div>
+                            <h3>Haematology</h3>
+                            <p>Blood disorders, anaemia, clotting, and transfusion</p>
+                            <button class="start-quiz-btn" data-category="haematology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="infectious">
+                            <div class="category-icon">🦠</div>
+                            <h3>Infectious Diseases</h3>
+                            <p>Infections, sepsis, antibiotics, and microbiology</p>
+                            <button class="start-quiz-btn" data-category="infectious">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="rheumatology">
+                            <div class="category-icon">🦴</div>
+                            <h3>Rheumatology & MSK</h3>
+                            <p>Joints, arthritis, autoimmune, and connective tissue</p>
+                            <button class="start-quiz-btn" data-category="rheumatology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="dermatology">
+                            <div class="category-icon">🧴</div>
+                            <h3>Dermatology</h3>
+                            <p>Skin conditions, rashes, and dermatological medicine</p>
+                            <button class="start-quiz-btn" data-category="dermatology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="psychiatry">
+                            <div class="category-icon">🧘</div>
+                            <h3>Psychiatry</h3>
+                            <p>Mental health, mood disorders, and psychological medicine</p>
+                            <button class="start-quiz-btn" data-category="psychiatry">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="geriatrics">
+                            <div class="category-icon">👴</div>
+                            <h3>Geriatrics</h3>
+                            <p>Elderly care, frailty, falls, and comprehensive assessment</p>
+                            <button class="start-quiz-btn" data-category="geriatrics">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="paediatrics">
+                            <div class="category-icon">👶</div>
+                            <h3>Paediatrics</h3>
+                            <p>Child health, development, and paediatric conditions</p>
+                            <button class="start-quiz-btn" data-category="paediatrics">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="obstetrics">
+                            <div class="category-icon">🤰</div>
+                            <h3>Obstetrics & Gynaecology</h3>
+                            <p>Pregnancy, women's health, and reproductive medicine</p>
+                            <button class="start-quiz-btn" data-category="obstetrics">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="surgery">
+                            <div class="category-icon">🔪</div>
+                            <h3>Surgery</h3>
+                            <p>Surgical conditions, pre/post-operative care</p>
+                            <button class="start-quiz-btn" data-category="surgery">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="oncology">
+                            <div class="category-icon">🎗️</div>
+                            <h3>Oncology</h3>
+                            <p>Cancer, chemotherapy, and palliative care</p>
+                            <button class="start-quiz-btn" data-category="oncology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="pharmacology">
+                            <div class="category-icon">💊</div>
+                            <h3>Pharmacology</h3>
+                            <p>Drugs, prescribing, mechanisms, and interactions</p>
+                            <button class="start-quiz-btn" data-category="pharmacology">Start Quiz</button>
+                        </div>
+                        
+                        <div class="quiz-category-card" data-category="ethics">
+                            <div class="category-icon">⚖️</div>
+                            <h3>Ethics & Law</h3>
+                            <p>Medical ethics, consent, capacity, and legal issues</p>
+                            <button class="start-quiz-btn" data-category="ethics">Start Quiz</button>
                         </div>
                     </div>
                     
