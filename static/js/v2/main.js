@@ -6358,9 +6358,10 @@ window.handleEscapeKey = handleEscapeKey;
 function initializeEnhancedSections() {
     // Quiz Practice functionality
     document.addEventListener('click', (e) => {
-        const quizButton = e.target instanceof Element
-            ? e.target.closest('.start-quiz-btn')
-            : null;
+        const target = e.target instanceof Element ? e.target : null;
+        if (!target) return;
+
+        const quizButton = target.closest('.start-quiz-btn');
 
         if (quizButton?.dataset.category) {
             const category = quizButton.dataset.category;
@@ -6378,8 +6379,8 @@ function initializeEnhancedSections() {
         }
         
         // Case Studies functionality
-        if (e.target.classList.contains('case-btn')) {
-            const caseCard = e.target.closest('.case-card');
+        if (target.classList.contains('case-btn')) {
+            const caseCard = target.closest('.case-card');
             const caseTitle = caseCard.querySelector('h4')?.textContent || 'Unknown Case';
             
             console.log(`Opening case study: ${caseTitle}`);
@@ -6387,8 +6388,8 @@ function initializeEnhancedSections() {
         }
         
         // Learning Pathways functionality
-        if (e.target.classList.contains('pathway-btn')) {
-            const pathwayCard = e.target.closest('.pathway-card');
+        if (target.classList.contains('pathway-btn')) {
+            const pathwayCard = target.closest('.pathway-card');
             const pathwayTitle = pathwayCard.querySelector('h3')?.textContent || 'Unknown Pathway';
             
             console.log(`Opening learning pathway: ${pathwayTitle}`);
