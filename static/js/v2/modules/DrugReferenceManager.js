@@ -165,6 +165,51 @@ export class DrugReferenceManager {
         return normalized ? `https://bnf.nice.org.uk/drugs/${encodeURIComponent(normalized)}/` : '';
     }
 
+    /**
+     * Build a BNF search URL as a fallback when direct drug page might not exist
+     * @param {string} drugName - The drug name to search for
+     * @returns {string} BNF search URL
+     */
+    buildBnfSearchUrl(drugName) {
+        if (!drugName) return '';
+        const searchTerm = this.normalizeDrugNameForLink(drugName)
+            .replace(/\([^)]*\)/g, '') // Remove parenthetical content
+            .trim();
+        return `https://bnf.nice.org.uk/search/?q=${encodeURIComponent(searchTerm)}`;
+    }
+
+    /**
+     * Get both direct and search BNF URLs for a drug
+     * @param {string} drugName - The drug name
+     * @returns {{directUrl: string, searchUrl: string, isOverride: boolean}}
+     */
+    getBnfUrls(drugName) {
+        const directUrl = this.buildBnfUrl(drugName);
+        const searchUrl = this.buildBnfSearchUrl(drugName);
+        
+        // Check if this drug has a manual override (higher confidence)
+        const normalizedName = this.normalizeDrugNameForLink(drugName);
+        const overrideKey = normalizedName
+            .toLowerCase()
+            .replace(/['']/g, '')
+            .replace(/[^a-z0-9]+/g, ' ')
+            .trim();
+        
+        // These are verified overrides from buildBnfUrl
+        const verifiedOverrides = [
+            'adcal d3', 'calceos', 'calcichew d3', 'co amoxiclav', 'augmentin',
+            'co codamol', 'co dydramol', 'co trimoxazole', 'sinemet', 'dianette',
+            'lomotil', 'humalog', 'novorapid', 'apidra', 'lantus', 'levemir',
+            'tresiba', 'adrenaline', 'epinephrine', 'epipen', 'gtn', 'ventolin',
+            'calpol', 'nurofen', 'losec', 'zoton', 'glucophage', 'lipitor',
+            'zocor', 'tritace', 'istin', 'cardicor', 'levothyroxine'
+        ];
+        
+        const isOverride = verifiedOverrides.some(v => overrideKey.includes(v));
+        
+        return { directUrl, searchUrl, isOverride };
+    }
+
     withBnfLink(drugKey, drug) {
         if (!drug) return null;
 

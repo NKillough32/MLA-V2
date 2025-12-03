@@ -1232,20 +1232,28 @@ class MLAQuizApp {
                 return;
             }
             
-            drugListContainer.innerHTML = results.map(drug => `
+            drugListContainer.innerHTML = results.map(drug => {
+                const searchUrl = `https://bnf.nice.org.uk/search/?q=${encodeURIComponent(drug.name.replace(/\([^)]*\)/g, '').trim())}`;
+                const escapedName = drug.name.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                return `
                 <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.handleDrugClick('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                             <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
-                            ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
+                            ${drug.bnfUrl ? `
+                                <span style="display: inline-flex; gap: 8px; margin-top: 6px; align-items: center;">
+                                    <a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>
+                                    <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="color: var(--text-secondary); font-size: 0.85em;" title="Search BNF if direct link fails">🔍</a>
+                                </span>
+                            ` : ''}
                         </div>
-                        <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
+                        <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${escapedName}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                             🔊
                         </button>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         };
         
         searchInput.addEventListener('input', handleSearch);
@@ -1353,20 +1361,28 @@ class MLAQuizApp {
         const drugListContainer = container.querySelector('#drug-list-v2');
         if (!drugListContainer) return;
 
-        drugListContainer.innerHTML = drugs.map(drug => `
+        drugListContainer.innerHTML = drugs.map(drug => {
+            const searchUrl = `https://bnf.nice.org.uk/search/?q=${encodeURIComponent(drug.name.replace(/\([^)]*\)/g, '').trim())}`;
+            const escapedName = drug.name.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            return `
             <div class="drug-card" onclick="event.stopPropagation(); window.quizApp.handleDrugClick('${drug.key}');" style="cursor: pointer; padding: 15px; margin-bottom: 10px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                         <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
-                        ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
+                        ${drug.bnfUrl ? `
+                            <span style="display: inline-flex; gap: 8px; margin-top: 6px; align-items: center;">
+                                <a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>
+                                <a href="${searchUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="color: var(--text-secondary); font-size: 0.85em;" title="Search BNF if direct link fails">🔍</a>
+                            </span>
+                        ` : ''}
                     </div>
-                    <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
+                    <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${escapedName}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                         🔊
                     </button>
                 </div>
             </div>
-        `).join('');
+        `}).join('');
     }
     
     async showDrugDetail(drugKey) {
@@ -1382,15 +1398,21 @@ class MLAQuizApp {
         
         // Ensure drug name exists, fallback to key if not
         const drugName = drug.name || drugKey;
+        const bnfSearchUrl = `https://bnf.nice.org.uk/search/?q=${encodeURIComponent(drugName.replace(/\([^)]*\)/g, '').trim())}`;
         
         panel.innerHTML = `
             <button class="back-btn" onclick="event.stopPropagation(); window.quizApp.loadDrugReferenceContent(document.getElementById('drug-panel'));" style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 0.95em;">
                 ← Back to Drug List
             </button>
             <div class="drug-detail" style="background: var(--card-bg); border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border);">
-                    <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1;">${drugName}</h3>
-                    ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="padding: 10px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--accent); font-weight: 700; text-decoration: none;">View on BNF ↗</a>` : ''}
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px; padding-bottom: 20px; border-bottom: 2px solid var(--border); flex-wrap: wrap;">
+                    <h3 style="margin: 0; font-size: 1.8em; color: var(--text-primary); flex: 1; min-width: 200px;">${drugName}</h3>
+                    ${drug.bnfUrl ? `
+                        <div style="display: flex; gap: 8px; align-items: center;">
+                            <a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="padding: 10px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--accent); font-weight: 700; text-decoration: none;">View on BNF ↗</a>
+                            <a href="${bnfSearchUrl}" target="_blank" rel="noopener noreferrer" style="padding: 10px 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); text-decoration: none;" title="Search BNF if direct link fails">🔍</a>
+                        </div>
+                    ` : `<a href="${bnfSearchUrl}" target="_blank" rel="noopener noreferrer" style="padding: 10px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--accent); font-weight: 700; text-decoration: none;">Search on BNF 🔍</a>`}
                     <button class="speak-name-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drugName.replace(/'/g, "\\'")}')" style="padding: 10px 16px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1em; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
                         🔊 Hear pronunciation
                     </button>
@@ -1541,6 +1563,25 @@ class MLAQuizApp {
     
     handleDrugClick(drugKey) {
         this.showDrugDetail(drugKey);
+    }
+    
+    /**
+     * Open BNF link with search fallback
+     * @param {string} directUrl - Direct BNF drug page URL
+     * @param {string} searchUrl - BNF search URL as fallback
+     * @param {string} drugName - Drug name for display
+     */
+    openBnfLink(directUrl, searchUrl, drugName) {
+        // Open the direct link
+        const newWindow = window.open(directUrl, '_blank', 'noopener,noreferrer');
+        
+        // Show a toast with fallback option
+        if (window.uiManager && window.uiManager.showToast) {
+            const message = `Opening BNF for ${drugName}. If page not found, `;
+            const toast = document.createElement('div');
+            toast.innerHTML = `${message}<a href="${searchUrl}" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: underline;">search BNF instead</a>`;
+            window.uiManager.showToast(toast.innerHTML, 'info', 5000);
+        }
     }
     
     speakDrugName(drugName) {
