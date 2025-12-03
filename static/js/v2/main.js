@@ -963,6 +963,25 @@ class MLAQuizApp {
     }
 
     /**
+     * Close the medical tools panel (used when starting quizzes)
+     */
+    closeMedicalToolsPanel() {
+        const medicalToolsPanel = document.getElementById('medical-tools-panel');
+        if (!medicalToolsPanel) {
+            return;
+        }
+
+        if (medicalToolsPanel.classList.contains('open')) {
+            medicalToolsPanel.classList.remove('open');
+        }
+
+        const medicalToolsToggle = document.getElementById('medical-tools-toggle');
+        if (medicalToolsToggle) {
+            medicalToolsToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    /**
      * Save application state
      */
     saveState() {
@@ -3881,6 +3900,11 @@ class MLAQuizApp {
                     .map(idx => latestMatches[idx])
                     .filter(Boolean);
 
+                // Close medical tools panel when starting quiz
+                if (window.app && window.app.closeMedicalToolsPanel) {
+                    window.app.closeMedicalToolsPanel();
+                }
+
                 const started = await quizManager.startCustomQuizFromSearch(selected, query);
                 if (started) {
                     this.showScreen('quizScreen');
@@ -6405,6 +6429,11 @@ function initializeEnhancedSections() {
             const length = document.getElementById('quiz-length')?.value || '25';
 
             console.log(`Starting ${category} quiz: ${length} questions (keyword curated)`);
+
+            // Close the medical tools panel when starting a quiz
+            if (window.app && window.app.closeMedicalToolsPanel) {
+                window.app.closeMedicalToolsPanel();
+            }
 
             // Integration with existing quiz system
             if (window.quizManager && window.quizManager.startCategoryQuiz) {

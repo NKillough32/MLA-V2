@@ -629,6 +629,15 @@ export class QuizManager {
             return false;
         }
 
+        // Read filter states from DOM checkboxes (same as search)
+        const filters = {
+            scenario: document.getElementById('filter-scenario')?.checked ?? true,
+            investigations: document.getElementById('filter-investigations')?.checked ?? true,
+            options: document.getElementById('filter-options')?.checked ?? true,
+            explanation: document.getElementById('filter-explanation')?.checked ?? true,
+            specialty: document.getElementById('filter-specialty')?.checked ?? true
+        };
+
         const pools = await this.buildQuestionPools(true);
         const matches = [];
         const mergedImages = {}; // Collect images from all matched pools
@@ -636,7 +645,8 @@ export class QuizManager {
         pools.forEach((pool) => {
             let poolHasMatch = false;
             (pool.questions || []).forEach((question) => {
-                const haystack = this.buildSearchableText(question);
+                // Use filtered search text based on checkbox states
+                const haystack = this.buildFilteredSearchText(question, filters).toLowerCase();
                 if (!haystack) return;
 
                 if (keywords.some(keyword => haystack.includes(keyword))) {
