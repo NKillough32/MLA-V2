@@ -1557,10 +1557,16 @@ export class QuizManager {
             eventBus.emit(EVENTS.QUIZ_LIST_UPDATED);
             this.showUploadResults(uploadResults);
 
-            // V2 implementation: upload to server
+            // NOTE: ZIP files are already uploaded to server in processZipFile()
+            // Only upload markdown files here (they are parsed client-side but may need server backup)
             for (let file of files) {
-                if (file.name.endsWith('.md') || file.name.endsWith('.zip')) {
-                    console.log('📄 Processing file:', file.name);
+                // Skip ZIP files - already handled by processZipFile()
+                if (file.name.endsWith('.zip')) {
+                    continue;
+                }
+                
+                if (file.name.endsWith('.md')) {
+                    console.log('📄 Uploading markdown file to server:', file.name);
 
                     const formData = new FormData();
                     formData.append('quiz_file', file);
