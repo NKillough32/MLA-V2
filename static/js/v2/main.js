@@ -731,8 +731,9 @@ class MLAQuizApp {
 
         const { isOnline, cachedQuizzes, offlineSubmissions } = data;
 
-        // Update visibility
-        offlineStatus.style.display = 'flex';
+        // Keep offline status hidden (disabled feature)
+        // offlineStatus.style.display = 'flex';
+        offlineStatus.style.display = 'none';
 
         // Update connection status
         if (isOnline) {
