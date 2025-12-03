@@ -1238,7 +1238,7 @@ class MLAQuizApp {
                         <div>
                             <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                             <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
-                            ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
+                            ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
                         </div>
                         <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                             🔊
@@ -1359,7 +1359,7 @@ class MLAQuizApp {
                     <div>
                         <div class="drug-name" style="font-weight: 600; font-size: 1.1em; color: var(--text-primary); margin-bottom: 4px;">${drug.name}</div>
                         <div class="drug-class" style="color: var(--text-secondary); font-size: 0.9em;">${drug.class}</div>
-                        ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
+                        ${drug.bnfUrl ? `<a href="${drug.bnfUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="display: inline-block; margin-top: 6px; color: var(--accent); font-weight: 600; font-size: 0.9em;">Open in BNF ↗</a>` : ''}
                     </div>
                     <button class="speak-btn" onclick="event.stopPropagation(); window.quizApp.speakDrugName('${drug.name.replace(/'/g, "\\'")}');" title="Hear pronunciation" style="padding: 8px 12px; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1em;">
                         🔊
@@ -3902,8 +3902,8 @@ class MLAQuizApp {
                     .filter(Boolean);
 
                 // Close medical tools panel when starting quiz
-                if (window.app && window.app.closeMedicalToolsPanel) {
-                    window.app.closeMedicalToolsPanel();
+                if (window.quizApp && window.quizApp.closeMedicalToolsPanel) {
+                    window.quizApp.closeMedicalToolsPanel();
                 }
 
                 const started = await quizManager.startCustomQuizFromSearch(selected, query);
@@ -4002,6 +4002,11 @@ class MLAQuizApp {
             const quizName = target.dataset.quizName;
             const isUploaded = target.dataset.uploaded === 'true';
             if (Number.isNaN(questionIndex)) return;
+
+            // Close medical tools panel when jumping to a question
+            if (window.quizApp && window.quizApp.closeMedicalToolsPanel) {
+                window.quizApp.closeMedicalToolsPanel();
+            }
 
             if (quizName && quizName !== quizManager.quizName) {
                 const loaded = await quizManager.loadQuiz(quizName, isUploaded);
@@ -6432,8 +6437,8 @@ function initializeEnhancedSections() {
             console.log(`Starting ${category} quiz: ${length} questions (keyword curated)`);
 
             // Close the medical tools panel when starting a quiz
-            if (window.app && window.app.closeMedicalToolsPanel) {
-                window.app.closeMedicalToolsPanel();
+            if (window.quizApp && window.quizApp.closeMedicalToolsPanel) {
+                window.quizApp.closeMedicalToolsPanel();
             }
 
             // Integration with existing quiz system

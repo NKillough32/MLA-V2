@@ -41,17 +41,95 @@ export class DrugReferenceManager {
 
         const normalizedName = this.normalizeDrugNameForLink(drugName);
 
-        // Manual overrides for common aliases/abbreviations that don't match the BNF slug pattern
+        // Manual overrides for drugs that don't match the BNF slug pattern
+        // Includes combination drugs, brand names, and common aliases
         const overrides = {
+            // Combination drugs (brand name -> BNF component format)
+            'adcal d3': 'colecalciferol-with-calcium-carbonate',
+            'adcal d3 calcium carbonate colecalciferol': 'colecalciferol-with-calcium-carbonate',
+            'calceos': 'colecalciferol-with-calcium-carbonate',
+            'calcichew d3': 'colecalciferol-with-calcium-carbonate',
+            'calcichew d3 forte': 'colecalciferol-with-calcium-carbonate',
+            
+            // Co-prefixed combination drugs
+            'co amoxiclav': 'co-amoxiclav',
+            'co amoxiclav amoxicillin clavulanic acid': 'co-amoxiclav',
+            'augmentin': 'co-amoxiclav',
+            'co codamol': 'co-codamol',
+            'co codamol codeine paracetamol': 'co-codamol',
+            'co dydramol': 'co-dydramol',
+            'co dydramol dihydrocodeine paracetamol': 'co-dydramol',
+            'co trimoxazole': 'co-trimoxazole',
+            'co trimoxazole sulfamethoxazole trimethoprim': 'co-trimoxazole',
+            'co beneldopa': 'co-beneldopa',
+            'co careldopa': 'co-careldopa',
+            'sinemet': 'co-careldopa',
+            'co cyprindiol': 'co-cyprindiol',
+            'dianette': 'co-cyprindiol',
+            'co fluampicil': 'co-fluampicil',
+            'co flumactone': 'co-flumactone',
+            'co magaldrox': 'co-magaldrox',
+            'co phenotrope': 'co-phenotrope',
+            'lomotil': 'co-phenotrope',
+            'co simalcite': 'co-simalcite',
+            'co zidocapt': 'co-zidocapt',
+            
+            // Insulin products
+            'insulin lispro': 'insulin-lispro',
+            'humalog': 'insulin-lispro',
+            'insulin aspart': 'insulin-aspart',
+            'novorapid': 'insulin-aspart',
+            'insulin glulisine': 'insulin-glulisine',
+            'apidra': 'insulin-glulisine',
+            'insulin glargine': 'insulin-glargine',
+            'lantus': 'insulin-glargine',
+            'insulin detemir': 'insulin-detemir',
+            'levemir': 'insulin-detemir',
+            'insulin degludec': 'insulin-degludec',
+            'tresiba': 'insulin-degludec',
+            
+            // Adrenaline/epinephrine variants
+            'adrenaline': 'adrenaline-epinephrine',
+            'epinephrine': 'adrenaline-epinephrine',
+            'epipen': 'adrenaline-epinephrine',
+            'emerade': 'adrenaline-epinephrine',
+            'jext': 'adrenaline-epinephrine',
+            
+            // Common aliases
             'glyceryl trinitrate gtn': 'glyceryl-trinitrate',
             'glyceryl trinitrate': 'glyceryl-trinitrate',
+            'gtn': 'glyceryl-trinitrate',
             'hydrocortisone 1': 'hydrocortisone',
-            'hydrocortisone 1%': 'hydrocortisone'
+            'hydrocortisone 1%': 'hydrocortisone',
+            'salbutamol': 'salbutamol',
+            'ventolin': 'salbutamol',
+            'paracetamol': 'paracetamol',
+            'calpol': 'paracetamol',
+            'ibuprofen': 'ibuprofen',
+            'nurofen': 'ibuprofen',
+            'omeprazole': 'omeprazole',
+            'losec': 'omeprazole',
+            'lansoprazole': 'lansoprazole',
+            'zoton': 'lansoprazole',
+            'metformin': 'metformin',
+            'glucophage': 'metformin',
+            'atorvastatin': 'atorvastatin',
+            'lipitor': 'atorvastatin',
+            'simvastatin': 'simvastatin',
+            'zocor': 'simvastatin',
+            'ramipril': 'ramipril',
+            'tritace': 'ramipril',
+            'amlodipine': 'amlodipine',
+            'istin': 'amlodipine',
+            'bisoprolol': 'bisoprolol',
+            'cardicor': 'bisoprolol',
+            'levothyroxine': 'levothyroxine-sodium',
+            'levothyroxine sodium': 'levothyroxine-sodium'
         };
 
         const overrideKey = normalizedName
             .toLowerCase()
-            .replace(/[’']/g, '')
+            .replace(/['']/g, '')
             .replace(/[^a-z0-9]+/g, ' ')
             .trim();
 
@@ -59,13 +137,26 @@ export class DrugReferenceManager {
             return `https://bnf.nice.org.uk/drugs/${overrides[overrideKey]}/`;
         }
 
+        // Handle combination drugs with "+" in the name (e.g., "Calcium Carbonate + Colecalciferol")
+        // BNF uses format like "colecalciferol-with-calcium-carbonate"
+        if (normalizedName.includes('+')) {
+            const parts = normalizedName.split('+').map(p => p.trim().toLowerCase());
+            if (parts.length === 2) {
+                // Try both orderings as BNF sometimes uses different component order
+                const slug1 = `${parts[0].replace(/\s+/g, '-')}-with-${parts[1].replace(/\s+/g, '-')}`;
+                const slug2 = `${parts[1].replace(/\s+/g, '-')}-with-${parts[0].replace(/\s+/g, '-')}`;
+                // Return the first variant - could add validation later
+                return `https://bnf.nice.org.uk/drugs/${encodeURIComponent(slug1)}/`;
+            }
+        }
+
         const normalized = normalizedName
             .toLowerCase()
-            // Remove parenthetical acronyms (e.g. "(GTN)") and strengths (e.g. "1%")
+            // Remove parenthetical content like acronyms "(GTN)" or component names "(Calcium...)"
             .replace(/\([^)]*\)/g, ' ')
             .replace(/\b\d+(\.\d+)?\s*%/g, ' ')
             .replace(/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|units)\b/g, ' ')
-            .replace(/[’']/g, '')
+            .replace(/['']/g, '')
             .replace(/[^a-z0-9\s\-]/g, ' ')
             .trim()
             .replace(/\s+/g, '-')
