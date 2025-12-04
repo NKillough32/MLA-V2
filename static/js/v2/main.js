@@ -652,8 +652,8 @@ class MLAQuizApp {
         eventBus.on(EVENTS.QUIZ_COMPLETED, (data) => {
             const score = data.score;
             const total = data.totalQuestions;
-            const percentage = Math.round((score / total) * 100);
-            
+            const percentage = data.percentage ?? Math.round((score / total) * 100);
+
             uiManager.showToast(
                 `Quiz completed! Score: ${score}/${total} (${percentage}%)`,
                 'success'
@@ -4853,7 +4853,7 @@ class MLAQuizApp {
         const resultsContainer = document.getElementById('results-summary');
         if (!resultsContainer) return;
 
-        const percentage = Math.round((data.score / data.totalQuestions) * 100);
+        const percentage = data.percentage ?? Math.round((data.score / data.totalQuestions) * 100);
         
         let html = `
             <div class="results-header">
