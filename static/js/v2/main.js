@@ -494,8 +494,9 @@ class MLAQuizApp {
                         quizManager.isReviewMode = false;
                         this.showResults();
                     } else {
-                        // Finish the quiz
+                        // Finish the quiz and show results
                         await quizManager.finishQuiz();
+                        this.showResults();
                     }
                 }
                 // Note: In review mode, feedback is automatically shown by shouldShowFeedback()
@@ -525,8 +526,9 @@ class MLAQuizApp {
                         quizManager.isReviewMode = false;
                         this.showResults();
                     } else {
-                        // Finish the quiz
+                        // Finish the quiz and show results
                         await quizManager.finishQuiz();
+                        this.showResults();
                     }
                 }
                 // Note: In review mode, feedback is automatically shown by shouldShowFeedback()

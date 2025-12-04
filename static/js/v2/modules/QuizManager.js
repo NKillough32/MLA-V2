@@ -99,6 +99,9 @@ export class QuizManager {
             averageTimePerQuestion: 0
         };
 
+        // Review mode flag
+        this.isReviewMode = false;
+
         // Upload status element id (used to show V1-style persistent messages during file processing)
         this.uploadStatusId = 'upload-status';
     }
@@ -1086,6 +1089,7 @@ export class QuizManager {
         this.questionTimes = {};
         this.quizStartTime = null;
         this.questionStartTime = null;
+        this.isReviewMode = false;
         
         console.log('🔄 Quiz reset');
     }
@@ -1515,7 +1519,7 @@ export class QuizManager {
             const reportText = `📊 Study Report for ${report.quiz}\n\n` +
                 `Questions: ${report.answeredQuestions}/${report.totalQuestions}\n` +
                 `Score: ${report.correctAnswers}/${report.totalQuestions} (${report.percentage}%)\n` +
-                `Time: ${Math.round(report.totalTime / 1000)}s total, ${Math.round(report.averageTime / 1000)}s avg\n` +
+                `Time: ${report.totalTime}s total, ${report.averageTime}s avg\n` +
                 `Flagged: ${report.flaggedQuestions} questions`;
             
             alert(reportText);
