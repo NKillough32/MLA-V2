@@ -2391,69 +2391,16 @@ export class QuizManager {
                 
                 <div class="stat-card">
                     <h3>⏱️ Time Analysis</h3>
-                    <p><strong>Total Time:</strong> ${this.formatTime(Math.round(data.totalTime / 1000))}</p>
-                    <p><strong>Average per Question:</strong> ${Math.round(data.averageTime / 1000)}s</p>
+                    <p><strong>Total Time:</strong> ${this.formatTime(data.totalTime)}</p>
+                    <p><strong>Average per Question:</strong> ${Math.round(data.averageTime)}s</p>
                     <p><strong>Questions Timed:</strong> ${data.questionsAnswered}</p>
                     ${isPartialReport ? '<p><em>Note: Times for answered questions only</em></p>' : ''}
                 </div>
             </div>
-            
-            <div class="weak-areas">
-                <h3>🎯 Areas for Improvement</h3>
-                ${data.incorrectQuestionsList.length > 0 ? 
-                    data.incorrectQuestionsList.map(q => `
-                        <div class="incorrect-question">
-                            <div class="question-header">
-                                <strong>Question ${q.index + 1}:</strong>
-                            </div>
-                            ${q.question.scenario ? `
-                                <div class="question-scenario">
-                                    <strong>Scenario:</strong>
-                                    <div class="scenario-text">${this.cleanTextForPDF(q.question.scenario)}</div>
-                                </div>
-                            ` : ''}
-                            ${q.question.investigations ? `
-                                <div class="question-investigations">
-                                    <strong>Investigations:</strong>
-                                    <div class="investigations-text">${this.cleanTextForPDF(q.question.investigations)}</div>
-                                </div>
-                            ` : ''}
-                            ${q.question.prompt ? `
-                                <div class="question-prompt">
-                                    <strong>Question:</strong>
-                                    <div class="prompt-text">${this.cleanTextForPDF(q.question.prompt)}</div>
-                                </div>
-                            ` : ''}
-                            ${q.question.options ? `
-                                <div class="question-options">
-                                    <strong>Options:</strong>
-                                    <ol type="A">
-                                        ${q.question.options.map((option, idx) => `
-                                            <li class="${idx === q.yourAnswer ? 'your-answer' : ''} ${idx === q.correctAnswer ? 'correct-answer' : ''}">${this.cleanTextForPDF(option)}</li>
-                                        `).join('')}
-                                    </ol>
-                                </div>
-                            ` : ''}
-                            <div class="answer-analysis">
-                                <p><strong>Your Answer:</strong> ${this.cleanTextForPDF(q.question.options[q.yourAnswer] || 'N/A')}</p>
-                                <p><strong>Correct Answer:</strong> ${this.cleanTextForPDF(q.question.options[q.correctAnswer] || 'N/A')}</p>
-                            </div>
-                            ${includeExplanations && ((q.question.explanations && q.question.explanations.length) || q.question.explanation) ? `
-                                <div class="explanation-section">
-                                    <strong>Explanation:</strong>
-                                    <div class="explanation-text">${this.cleanTextForPDF(Array.isArray(q.question.explanations) && q.question.explanations.length ? q.question.explanations.join('\n') : (q.question.explanation || ''))}</div>
-                                </div>
-                            ` : ''}
-                        </div>
-                    `).join('') : 
-                    '<p>🎉 Great job! No incorrect answers to review so far.</p>'
-                }
-                ${isPartialReport ? '<p><em>Note: Only showing answered questions. Continue the quiz for complete analysis.</em></p>' : ''}
-            </div>
 
             <div class="answered-questions">
-                <h3>📝 All Answered Questions & Explanations</h3>
-                ${includeExplanations && data.answeredQuestionsList.length > 0 ? data.answeredQuestionsList.map(q => `
+                <h3>📝 Question Review</h3>
+                ${data.answeredQuestionsList.length > 0 ? data.answeredQuestionsList.map(q => `
                     <div class="incorrect-question">
                         <div class="question-header" style="color: ${q.yourAnswer === q.correctAnswer ? '#059669' : '#dc2626'};">
                             <strong>Question ${q.index + 1}:</strong> ${q.yourAnswer === q.correctAnswer ? '✅ Correct' : '❌ Incorrect'}
@@ -2498,6 +2445,7 @@ export class QuizManager {
                         ` : ''}
                     </div>
                 `).join('') : '<p>No answered questions available.</p>'}
+                ${isPartialReport ? '<p><em>Note: Only showing answered questions. Continue the quiz for complete analysis.</em></p>' : ''}
             </div>
         `;
     }
