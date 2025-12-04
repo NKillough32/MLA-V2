@@ -944,16 +944,23 @@ export class QuizManager {
      */
     async finishQuiz() {
         const score = this.calculateScore();
-        const totalTime = this.quizStartTime ? 
+        const totalTime = this.quizStartTime ?
             Math.floor((Date.now() - this.quizStartTime) / 1000) : 0;
+
+        const averageTime = score.answered > 0 ?
+            Math.round(totalTime / score.answered) : 0;
 
         const results = {
             name: this.quizName,
-            score: score.percentage,
+            score: score.correct,
             correct: score.correct,
             answered: score.answered,
             total: score.total,
+            totalQuestions: score.total,
+            percentage: score.percentage,
             time: totalTime,
+            totalTime,
+            averageTime,
             questionTimes: this.questionTimes,
             flagged: Array.from(this.flaggedQuestions),
             completedAt: new Date().toISOString()
@@ -1035,7 +1042,8 @@ export class QuizManager {
         }
 
         // Calculate total time spent (already in seconds)
-        const totalTime = this.sessionStats?.totalTime || 0;
+        // Use elapsed time to provide live tracking during the quiz
+        const totalTime = this.getTotalTime();
 
         return {
             current: this.currentQuestionIndex + 1,
@@ -1240,7 +1248,7 @@ export class QuizManager {
     exportResults(format = 'download') {
         const score = this.calculateScore();
         const totalQuestions = this.questions.length;
-        const percentage = Math.round((score / totalQuestions) * 100);
+        const percentage = Math.round((score.correct / totalQuestions) * 100);
         
         const results = {
             quizName: this.quizName,
@@ -1259,7 +1267,7 @@ export class QuizManager {
                     yourAnswer: this.answers[i],
                     correctAnswer: correctAnswerIdx,
                     isCorrect: this.answers[i] === correctAnswerIdx,
-                    timeSpent: Math.round((this.questionTimes[i] || 0) / 1000), // Convert to seconds
+                    timeSpent: this.questionTimes[i] || 0,
                     flagged: this.flaggedQuestions.has(i),
                     ruledOutOptions: this.ruledOutAnswers[i]?.length || 0
                 };
