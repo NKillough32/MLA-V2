@@ -4697,11 +4697,19 @@ class MLAQuizApp {
             completedCount.textContent = `${data.answered}/${data.total}`;
         }
 
-        // Update correct count
+        // Update correct count - only show in immediate mode or review mode
         const correctCount = document.getElementById('correctCount');
         if (correctCount) {
-            const correctPercentage = data.answered > 0 ? Math.round((data.correct / data.answered) * 100) : 0;
-            correctCount.textContent = `${data.correct} (${correctPercentage}%)`;
+            const shouldRevealAnswers = quizManager.feedbackMode === 'immediate' || quizManager.isReviewMode;
+            if (shouldRevealAnswers) {
+                const correctPercentage = data.answered > 0 ? Math.round((data.correct / data.answered) * 100) : 0;
+                correctCount.textContent = `${data.correct} (${correctPercentage}%)`;
+                correctCount.style.display = '';
+            } else {
+                // In "end" mode, hide the correct count
+                correctCount.textContent = '—';
+                correctCount.title = 'Results shown at end of quiz';
+            }
         }
 
         // Update time display
@@ -4727,6 +4735,7 @@ class MLAQuizApp {
     /**
      * Render a V1-style clickable question-number grid in the sidebar
      * Shows per-question state: unanswered / correct / incorrect / flagged
+     * Respects feedback mode - only shows correct/incorrect in immediate mode or review mode
      */
     renderQuestionProgressGrid(data) {
         try {
@@ -4738,6 +4747,9 @@ class MLAQuizApp {
                 container.innerHTML = '';
                 return;
             }
+
+            // Check if we should reveal correct/incorrect status
+            const shouldRevealAnswers = quizManager.feedbackMode === 'immediate' || quizManager.isReviewMode;
 
             // Build grid
             let html = '<div id="questionProgressGrid" class="question-progress-grid" style="display:grid; grid-template-columns: repeat(5, 1fr); gap:6px;">';
@@ -4756,7 +4768,8 @@ class MLAQuizApp {
                     title += ' • Flagged';
                 }
                 if (isSubmitted) {
-                    if (yourAnswer !== undefined && correctIdx !== undefined) {
+                    // Only show correct/incorrect if feedback mode allows it
+                    if (shouldRevealAnswers && yourAnswer !== undefined && correctIdx !== undefined) {
                         if (yourAnswer === correctIdx) {
                             classes += ' pq-correct';
                             title += ' • Correct';
