@@ -480,6 +480,74 @@ export const BRIDGE_CALCULATOR_DEFINITIONS = [
         calculator: 'calculateChildPugh'
     },
     {
+        id: 'maddrey-df',
+        name: "Maddrey's Discriminant Function",
+        category: 'HEPATOLOGY',
+        description: 'Predicts prognosis and guides steroid therapy in alcoholic hepatitis',
+        keywords: [
+            'maddrey',
+            'discriminant',
+            'alcoholic',
+            'hepatitis',
+            'steroids',
+            'liver',
+            'cirrhosis'
+        ],
+        getter: 'getMaddreyDFCalculator',
+        calculator: 'calculateMaddreyDF'
+    },
+    {
+        id: 'fib4',
+        name: 'FIB-4 Index',
+        category: 'HEPATOLOGY',
+        description: 'Non-invasive assessment of liver fibrosis',
+        keywords: [
+            'fib4',
+            'fib-4',
+            'fibrosis',
+            'liver',
+            'cirrhosis',
+            'nafld',
+            'hepatitis'
+        ],
+        getter: 'getFIB4Calculator',
+        calculator: 'calculateFIB4'
+    },
+    {
+        id: 'apri',
+        name: 'APRI Score',
+        category: 'HEPATOLOGY',
+        description: 'AST-to-Platelet Ratio Index for fibrosis assessment',
+        keywords: [
+            'apri',
+            'ast',
+            'platelet',
+            'fibrosis',
+            'hepatitis',
+            'liver',
+            'cirrhosis'
+        ],
+        getter: 'getAPRICalculator',
+        calculator: 'calculateAPRI'
+    },
+    {
+        id: 'lille-model',
+        name: 'Lille Model Score',
+        category: 'HEPATOLOGY',
+        description: 'Assesses steroid response in severe alcoholic hepatitis at Day 7',
+        keywords: [
+            'lille',
+            'alcoholic',
+            'hepatitis',
+            'steroids',
+            'response',
+            'prednisolone',
+            'liver'
+        ],
+        getter: 'getLilleModelCalculator',
+        calculator: 'calculateLilleModel'
+    },
+    {
         id: 'anion-gap',
         name: 'Anion Gap',
         category: 'LABORATORY',

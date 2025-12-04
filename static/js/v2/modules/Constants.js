@@ -20,7 +20,8 @@ export const STORAGE_KEYS = {
     LAST_QUIZ: 'lastQuiz',
     SESSION_STATS: 'sessionStats',
     ORIENTATION_LOCK: 'orientationLock',
-    CACHED_QUIZZES: 'cachedQuizzes'
+    CACHED_QUIZZES: 'cachedQuizzes',
+    FEEDBACK_MODE: 'feedbackMode'
 };
 
 // IndexedDB Configuration

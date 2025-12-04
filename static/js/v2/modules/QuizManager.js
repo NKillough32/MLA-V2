@@ -24,6 +24,7 @@ export class QuizManager {
         this.quizName = '';
         this.flaggedQuestions = new Set();
         this.selectedQuizLength = QUIZ_CONFIG.DEFAULT_LENGTH;
+        this.feedbackMode = 'immediate'; // 'immediate' or 'end'
 
         this.categoryKeywords = {
             // General / Internal Medicine
@@ -111,8 +112,14 @@ export class QuizManager {
         // Load quiz length from storage
         this.selectedQuizLength = await storage.getItem(STORAGE_KEYS.QUIZ_LENGTH, QUIZ_CONFIG.DEFAULT_LENGTH);
         
+        // Load feedback mode from storage
+        this.feedbackMode = await storage.getItem(STORAGE_KEYS.FEEDBACK_MODE, 'immediate');
+        
         // Update quiz length info display
         this.updateQuizLengthInfo();
+        
+        // Update feedback mode info display
+        this.updateFeedbackModeInfo();
         
         return Promise.resolve();
     }
@@ -376,12 +383,14 @@ export class QuizManager {
         this.questionStartTime = Date.now();
 
         // Emit event for UI to handle rendering
+        // Use shouldShowFeedback to determine if feedback should be displayed
         eventBus.emit('quiz:renderQuestion', {
             question,
             index: this.currentQuestionIndex,
             total: this.questions.length,
             answer: this.answers[this.currentQuestionIndex],
-            submitted: this.submittedAnswers[this.currentQuestionIndex],
+            submitted: this.shouldShowFeedback(this.currentQuestionIndex),
+            answerRecorded: this.submittedAnswers[this.currentQuestionIndex],
             ruledOut: this.ruledOutAnswers[this.currentQuestionIndex] || [],
             flagged: this.flaggedQuestions.has(this.currentQuestionIndex)
         });
@@ -909,6 +918,76 @@ export class QuizManager {
         }
         
         console.log(`🎯 Updated quiz length info: ${infoText}`);
+    }
+
+    /**
+     * Set feedback mode preference
+     */
+    async setFeedbackMode(mode) {
+        this.feedbackMode = mode;
+        await storage.setItem(STORAGE_KEYS.FEEDBACK_MODE, this.feedbackMode);
+        console.log(`💡 Selected feedback mode: ${this.feedbackMode}`);
+        
+        // Update UI display
+        this.updateFeedbackModeInfo();
+    }
+
+    /**
+     * Get feedback mode
+     */
+    getFeedbackMode() {
+        return this.feedbackMode;
+    }
+
+    /**
+     * Check if feedback should be shown for current question
+     * Returns true if in immediate mode, or if quiz is complete (review mode)
+     */
+    shouldShowFeedback(questionIndex) {
+        // Always show feedback in review mode
+        if (this.isReviewMode) {
+            return true;
+        }
+        
+        // In immediate mode, show feedback as soon as submitted
+        if (this.feedbackMode === 'immediate') {
+            return this.submittedAnswers[questionIndex] === true;
+        }
+        
+        // In end mode, don't show feedback until quiz is complete
+        // Feedback will be shown in review mode after quiz completion
+        return false;
+    }
+
+    /**
+     * Update feedback mode info display
+     */
+    updateFeedbackModeInfo() {
+        let infoText = '';
+        if (this.feedbackMode === 'immediate') {
+            infoText = '💡 Immediate: See if you\'re right or wrong after submitting each answer';
+        } else {
+            infoText = '📋 End of Quiz: Answers will be revealed when you finish the quiz';
+        }
+        
+        // Update info display if element exists
+        const infoElement = document.getElementById('feedback-mode-info');
+        if (infoElement) {
+            infoElement.textContent = infoText;
+        }
+        
+        // Update button active states
+        const buttons = document.querySelectorAll('.feedback-mode-btn');
+        buttons.forEach(btn => {
+            const mode = btn.getAttribute('data-mode');
+            if (mode === this.feedbackMode) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
+        console.log(`💡 Updated feedback mode info: ${infoText}`);
     }
 
     /**

@@ -6617,6 +6617,92 @@
             }
         }
         
+        /* Feedback Mode Selection Styling */
+        .feedback-mode-btn {
+            padding: 12px 8px;
+            border: 2px solid #e5e5ea;
+            border-radius: 8px;
+            background: white;
+            color: #1c1c1e;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            font-family: inherit;
+        }
+        
+        .feedback-mode-btn .btn-icon {
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+        
+        .feedback-mode-btn .btn-label {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        
+        .feedback-mode-btn .btn-description {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 4px;
+            line-height: 1.3;
+        }
+        
+        .feedback-mode-btn:hover {
+            border-color: #007AFF;
+            background: #f0f8ff;
+            color: #007AFF;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.2);
+        }
+        
+        .feedback-mode-btn.active {
+            border-color: #007AFF;
+            background: #007AFF;
+            color: white;
+            box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+        }
+        
+        .feedback-mode-btn.active .btn-description {
+            opacity: 0.9;
+        }
+        
+        .feedback-mode-btn.active:hover {
+            background: #0056cc;
+            border-color: #0056cc;
+        }
+        
+        [data-theme="dark"] .feedback-mode-btn {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+        
+        [data-theme="dark"] .feedback-mode-btn:hover {
+            border-color: var(--button-bg);
+            background: var(--bg-tertiary);
+            color: var(--button-bg);
+        }
+        
+        [data-theme="dark"] .feedback-mode-btn.active {
+            background: var(--button-bg);
+            border-color: var(--button-bg);
+            color: white;
+        }
+        
+        @media (max-width: 480px) {
+            .feedback-mode-options {
+                grid-template-columns: 1fr !important;
+                gap: 8px !important;
+            }
+            
+            .feedback-mode-btn {
+                padding: 10px 12px;
+            }
+        }
+        
         /* Responsive font controls for mobile */
         .font-controls {
             position: static;
@@ -7126,6 +7212,35 @@
             background: #fef2f2;
             color: #991b1b;
             border: 1px solid #ef4444;
+        }
+
+        /* Answer recorded container (for end-of-quiz feedback mode) */
+        .answer-recorded-container {
+            margin: 16px 0;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #3b82f6;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .answer-recorded-container .recorded-icon {
+            font-size: 18px;
+            color: #3b82f6;
+        }
+
+        .answer-recorded-container .recorded-text {
+            font-size: 14px;
+        }
+
+        [data-theme="dark"] .answer-recorded-container {
+            background: #1e3a5f;
+            color: #93c5fd;
+            border-color: #3b82f6;
         }
 
         .explanation-container {
@@ -10959,6 +11074,30 @@
                     
                     <div id="quiz-length-info" style="font-size: 13px; color: #8e8e93; margin-top: 12px; text-align: center;">
                         📝 Selected: 20 questions for quick practice session
+                    </div>
+                </div>
+                
+                <!-- Feedback Mode Selection -->
+                <div class="card-content" style="border-bottom: 1px solid #e5e5ea; margin-bottom: 16px;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin: 0 0 8px 0; color: #1c1c1e;">Feedback Mode</h3>
+                    <p style="font-size: 15px; color: #8e8e93; margin: 0 0 16px 0;">Choose when to see answers and explanations</p>
+                    
+                    <div class="feedback-mode-options" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                        <button class="feedback-mode-btn active" data-mode="immediate">
+                            <div class="btn-icon">💡</div>
+                            <div class="btn-label">Immediate</div>
+                            <div class="btn-description">See feedback after each question</div>
+                        </button>
+                        
+                        <button class="feedback-mode-btn" data-mode="end">
+                            <div class="btn-icon">📋</div>
+                            <div class="btn-label">End of Quiz</div>
+                            <div class="btn-description">Review all answers at the end</div>
+                        </button>
+                    </div>
+                    
+                    <div id="feedback-mode-info" style="font-size: 13px; color: #8e8e93; margin-top: 12px; text-align: center;">
+                        💡 Immediate: See if you're right or wrong after submitting each answer
                     </div>
                 </div>
                 

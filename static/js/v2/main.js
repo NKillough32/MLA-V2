@@ -434,6 +434,20 @@ class MLAQuizApp {
             });
         });
 
+        // Quiz selection screen - feedback mode buttons
+        const feedbackModeBtns = document.querySelectorAll('.feedback-mode-btn');
+        feedbackModeBtns.forEach(btn => {
+            btn.addEventListener('click', async () => {
+                // Remove active from all
+                feedbackModeBtns.forEach(b => b.classList.remove('active'));
+                // Add to clicked
+                btn.classList.add('active');
+                
+                const mode = btn.getAttribute('data-mode');
+                await quizManager.setFeedbackMode(mode);
+            });
+        });
+
         // Quiz list item clicks (event delegation)
         const quizList = document.getElementById('quiz-list');
         if (quizList) {
@@ -483,20 +497,15 @@ class MLAQuizApp {
                         // Finish the quiz
                         await quizManager.finishQuiz();
                     }
-                } else if (quizManager.isReviewMode) {
-                    // Auto-show answer in review mode
-                    setTimeout(() => this.showAnswer(true), 100);
                 }
+                // Note: In review mode, feedback is automatically shown by shouldShowFeedback()
             });
         }
 
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
                 quizManager.previousQuestion();
-                if (quizManager.isReviewMode) {
-                    // Auto-show answer in review mode
-                    setTimeout(() => this.showAnswer(true), 100);
-                }
+                // Note: In review mode, feedback is automatically shown by shouldShowFeedback()
             });
         }
 
@@ -519,10 +528,8 @@ class MLAQuizApp {
                         // Finish the quiz
                         await quizManager.finishQuiz();
                     }
-                } else if (quizManager.isReviewMode) {
-                    // Auto-show answer in review mode
-                    setTimeout(() => this.showAnswer(true), 100);
                 }
+                // Note: In review mode, feedback is automatically shown by shouldShowFeedback()
                 setTimeout(() => {
                     nextBtnDebounce = false;
                 }, 300);
@@ -538,10 +545,7 @@ class MLAQuizApp {
                 }
                 prevBtnDebounce = true;
                 quizManager.previousQuestion();
-                if (quizManager.isReviewMode) {
-                    // Auto-show answer in review mode
-                    setTimeout(() => this.showAnswer(true), 100);
-                }
+                // Note: In review mode, feedback is automatically shown by shouldShowFeedback()
                 setTimeout(() => {
                     prevBtnDebounce = false;
                 }, 300);
@@ -4247,7 +4251,7 @@ class MLAQuizApp {
      * Render current question
      */
     renderQuestion(data) {
-        const { question, index, total, answer, submitted, ruledOut, flagged } = data;
+        const { question, index, total, answer, submitted, answerRecorded, ruledOut, flagged } = data;
         
         // Update existing header elements
         const questionTitle = document.getElementById('questionTitle');
@@ -4357,6 +4361,14 @@ class MLAQuizApp {
                     </div>
                 `;
             }
+        } else if (answerRecorded && !submitted) {
+            // In "end of quiz" mode - show answer recorded confirmation
+            html += `
+                <div class="answer-recorded-container">
+                    <span class="recorded-icon">✓</span>
+                    <span class="recorded-text">Answer recorded - feedback will be shown at the end of the quiz</span>
+                </div>
+            `;
         }
 
         // Ensure explanation text is rendered with normal font weight (not bold)
@@ -4607,8 +4619,12 @@ class MLAQuizApp {
         const nextBtnTop = document.getElementById('nextBtnTop');
         const flagBtn = document.getElementById('flagBtn');
 
+        // Use answerRecorded (whether answer was submitted) for button logic
+        // data.submitted indicates whether feedback should be shown
+        const answerRecorded = data.answerRecorded !== undefined ? data.answerRecorded : data.submitted;
+
         if (submitBtn && nextBtn) {
-            if (data.submitted) {
+            if (answerRecorded) {
                 submitBtn.style.display = 'none';
                 nextBtn.style.display = 'inline-block';
             } else if (data.answer !== undefined) {
@@ -4919,13 +4935,8 @@ class MLAQuizApp {
         if (nextBtn) nextBtn.style.display = 'block';
         if (prevBtn) prevBtn.style.display = 'block';
         
-        // Render first question in review mode
-        this.renderQuestion();
-        
-        // Auto-show the answer
-        setTimeout(() => {
-            this.showAnswer(true);
-        }, 100);
+        // Render first question in review mode (feedback will be shown due to isReviewMode)
+        quizManager.showCurrentQuestion();
     }
 
     /**

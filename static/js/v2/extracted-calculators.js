@@ -8035,6 +8035,203 @@ const ExtractedCalculators = {
         `;
     },
 
+    getMaddreyDFCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>Maddrey's Discriminant Function (mDF)</h4>
+                <p><small>Predicts prognosis and guides steroid therapy in alcoholic hepatitis</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Patient's Prothrombin Time (PT) in seconds:</label>
+                    <input type="number" id="mdf-pt-patient" placeholder="18" step="0.1" min="8" max="100">
+                    <small>Normal: 11-13.5 seconds</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Control PT (seconds):</label>
+                    <input type="number" id="mdf-pt-control" placeholder="12" step="0.1" min="8" max="20">
+                    <small>Usually 12-14 seconds (lab dependent)</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Serum Bilirubin:</label>
+                    <input type="number" id="mdf-bilirubin" placeholder="85" step="1" min="1" max="1000">
+                </div>
+                <div class="calc-input-group">
+                    <label>Bilirubin Units:</label>
+                    <select id="mdf-bili-units">
+                        <option value="umol">μmol/L (UK units)</option>
+                        <option value="mgdl">mg/dL (US units)</option>
+                    </select>
+                </div>
+                
+                <button onclick="window.quizApp.calculateMaddreyDF()">Calculate mDF</button>
+                <div id="mdf-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Formula:</strong> mDF = 4.6 × (PT - Control PT) + Bilirubin (mg/dL)<br>
+                        <strong>Interpretation:</strong><br>
+                        • mDF &lt;32: Mild disease, supportive care<br>
+                        • mDF ≥32: Severe alcoholic hepatitis, consider corticosteroids<br>
+                        <strong>Reference:</strong> Maddrey WC et al. Gastroenterology 1978
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getFIB4Calculator() {
+        return `
+            <div class="calculator-form">
+                <h4>FIB-4 Index (Fibrosis-4)</h4>
+                <p><small>Non-invasive assessment of liver fibrosis</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Age (years):</label>
+                    <input type="number" id="fib4-age" placeholder="55" step="1" min="18" max="120">
+                </div>
+                <div class="calc-input-group">
+                    <label>AST (U/L):</label>
+                    <input type="number" id="fib4-ast" placeholder="45" step="1" min="1" max="5000">
+                    <small>Normal: 10-40 U/L</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>ALT (U/L):</label>
+                    <input type="number" id="fib4-alt" placeholder="50" step="1" min="1" max="5000">
+                    <small>Normal: 7-56 U/L</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Platelet Count (×10⁹/L):</label>
+                    <input type="number" id="fib4-platelets" placeholder="200" step="1" min="10" max="1000">
+                    <small>Normal: 150-400 ×10⁹/L</small>
+                </div>
+                
+                <button onclick="window.quizApp.calculateFIB4()">Calculate FIB-4</button>
+                <div id="fib4-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Formula:</strong> FIB-4 = (Age × AST) / (Platelets × √ALT)<br>
+                        <strong>Interpretation:</strong><br>
+                        • &lt;1.30: Low risk of advanced fibrosis (F3-F4) - NPV 90%<br>
+                        • 1.30-2.67: Indeterminate - consider further testing<br>
+                        • &gt;2.67: High risk of advanced fibrosis - PPV 80%<br>
+                        <strong>Note:</strong> Less accurate in patients &lt;35 or &gt;65 years
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getAPRICalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>APRI Score (AST-to-Platelet Ratio Index)</h4>
+                <p><small>Simple fibrosis marker - especially useful in hepatitis C</small></p>
+                
+                <div class="calc-input-group">
+                    <label>AST (U/L):</label>
+                    <input type="number" id="apri-ast" placeholder="45" step="1" min="1" max="5000">
+                    <small>Normal: 10-40 U/L</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>AST Upper Limit of Normal (U/L):</label>
+                    <input type="number" id="apri-ast-uln" placeholder="40" step="1" min="20" max="60">
+                    <small>Usually 40 U/L (check your lab's reference)</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Platelet Count (×10⁹/L):</label>
+                    <input type="number" id="apri-platelets" placeholder="200" step="1" min="10" max="1000">
+                    <small>Normal: 150-400 ×10⁹/L</small>
+                </div>
+                
+                <button onclick="window.quizApp.calculateAPRI()">Calculate APRI</button>
+                <div id="apri-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Formula:</strong> APRI = [(AST / AST ULN) / Platelets (10⁹/L)] × 100<br>
+                        <strong>For Significant Fibrosis (≥F2):</strong><br>
+                        • &lt;0.5: Rules out (NPV 86%)<br>
+                        • &gt;1.5: Rules in (PPV 88%)<br>
+                        <strong>For Cirrhosis (F4):</strong><br>
+                        • &lt;1.0: Rules out (NPV 91%)<br>
+                        • &gt;2.0: Rules in (PPV 65%)<br>
+                        <strong>Reference:</strong> Wai CT et al. Hepatology 2003
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
+    getLilleModelCalculator() {
+        return `
+            <div class="calculator-form">
+                <h4>Lille Model Score</h4>
+                <p><small>Assesses steroid response in severe alcoholic hepatitis at Day 7</small></p>
+                
+                <div class="calc-input-group">
+                    <label>Age (years):</label>
+                    <input type="number" id="lille-age" placeholder="50" step="1" min="18" max="120">
+                </div>
+                <div class="calc-input-group">
+                    <label>Albumin at Day 0 (g/L):</label>
+                    <input type="number" id="lille-albumin" placeholder="28" step="0.1" min="5" max="60">
+                    <small>Normal: 35-50 g/L</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Bilirubin at Day 0:</label>
+                    <input type="number" id="lille-bili-d0" placeholder="200" step="1" min="1" max="1000">
+                </div>
+                <div class="calc-input-group">
+                    <label>Bilirubin at Day 7:</label>
+                    <input type="number" id="lille-bili-d7" placeholder="150" step="1" min="1" max="1000">
+                </div>
+                <div class="calc-input-group">
+                    <label>Bilirubin Units:</label>
+                    <select id="lille-bili-units">
+                        <option value="umol">μmol/L (UK units)</option>
+                        <option value="mgdl">mg/dL (US units)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>Creatinine:</label>
+                    <input type="number" id="lille-creatinine" placeholder="90" step="1" min="10" max="2000">
+                </div>
+                <div class="calc-input-group">
+                    <label>Creatinine Units:</label>
+                    <select id="lille-creat-units">
+                        <option value="umol">μmol/L (UK units)</option>
+                        <option value="mgdl">mg/dL (US units)</option>
+                    </select>
+                </div>
+                <div class="calc-input-group">
+                    <label>PT (seconds):</label>
+                    <input type="number" id="lille-pt" placeholder="18" step="0.1" min="8" max="100">
+                    <small>Or enter INR below instead</small>
+                </div>
+                <div class="calc-input-group">
+                    <label>Or INR (if PT not available):</label>
+                    <input type="number" id="lille-inr" placeholder="" step="0.1" min="0.8" max="10">
+                    <small>Will be converted to approximate PT</small>
+                </div>
+                
+                <button onclick="window.quizApp.calculateLilleModel()">Calculate Lille Score</button>
+                <div id="lille-result" class="calc-result"></div>
+                
+                <div class="calc-reference">
+                    <small>
+                        <strong>Interpretation:</strong><br>
+                        • &lt;0.45: Steroid responder - continue prednisolone to Day 28<br>
+                        • ≥0.45: Non-responder - consider stopping steroids<br>
+                        • &gt;0.56: Complete non-responder, high mortality<br>
+                        <strong>Note:</strong> Used AFTER 7 days of prednisolone 40mg/day<br>
+                        <strong>Reference:</strong> Louvet A et al. Hepatology 2007
+                    </small>
+                </div>
+            </div>
+        `;
+    },
+
     getSOFACalculator() {
         return `
             <div class="calculator-form">
@@ -8662,6 +8859,317 @@ const ExtractedCalculators = {
         document.getElementById('meld-result').innerHTML = resultHTML;
     },
 
+    calculateMaddreyDF() {
+        const ptPatient = parseFloat(document.getElementById('mdf-pt-patient').value);
+        const ptControl = parseFloat(document.getElementById('mdf-pt-control').value);
+        let bilirubin = parseFloat(document.getElementById('mdf-bilirubin').value);
+        const biliUnits = document.getElementById('mdf-bili-units').value;
+
+        if (!ptPatient || !ptControl || !bilirubin) {
+            document.getElementById('mdf-result').innerHTML = '<p class="error">Please enter PT values and bilirubin</p>';
+            return;
+        }
+
+        // Convert bilirubin to mg/dL if in μmol/L (divide by 17.1)
+        let bilirubinMgDl = bilirubin;
+        if (biliUnits === 'umol') {
+            bilirubinMgDl = bilirubin / 17.1;
+        }
+
+        // mDF = 4.6 × (PT - Control PT) + Bilirubin (mg/dL)
+        const mdf = (4.6 * (ptPatient - ptControl)) + bilirubinMgDl;
+        const mdfRounded = Math.round(mdf * 10) / 10;
+
+        let color, interpretation, management;
+
+        if (mdfRounded < 32) {
+            color = '#4CAF50';
+            interpretation = 'Mild-Moderate Alcoholic Hepatitis';
+            management = 'Supportive care, nutrition, abstinence. Steroids NOT indicated.';
+        } else {
+            color = '#F44336';
+            interpretation = 'Severe Alcoholic Hepatitis';
+            management = 'Consider prednisolone 40mg daily for 28 days (if no contraindications). Check Lille score at Day 7.';
+        }
+
+        const contraindications = mdfRounded >= 32 ? `
+            <div style="margin-top: 10px; padding: 10px; background: rgba(244,67,54,0.1); border-radius: 5px;">
+                <strong>Steroid Contraindications:</strong>
+                <ul style="margin: 5px 0; padding-left: 20px;">
+                    <li>Active GI bleeding</li>
+                    <li>Uncontrolled infection/sepsis</li>
+                    <li>Hepatorenal syndrome (creatinine >221 μmol/L)</li>
+                    <li>Active hepatitis B</li>
+                    <li>Pancreatitis</li>
+                </ul>
+            </div>
+        ` : '';
+
+        document.getElementById('mdf-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>Maddrey's DF: ${mdfRounded}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    ${interpretation}
+                </div>
+            </div>
+            <div class="calculation-details" style="margin-top: 12px;">
+                <h5>Calculation:</h5>
+                <p>mDF = 4.6 × (${ptPatient} - ${ptControl}) + ${bilirubinMgDl.toFixed(1)} mg/dL</p>
+                <p>= 4.6 × ${(ptPatient - ptControl).toFixed(1)} + ${bilirubinMgDl.toFixed(1)}</p>
+                <p>= <strong>${mdfRounded}</strong></p>
+                ${biliUnits === 'umol' ? `<p><small>Bilirubin converted: ${bilirubin} μmol/L → ${bilirubinMgDl.toFixed(1)} mg/dL</small></p>` : ''}
+            </div>
+            <div class="management-plan" style="margin-top: 12px; padding: 12px; background: rgba(${mdfRounded >= 32 ? '244,67,54' : '76,175,80'}, 0.1); border-radius: 5px;">
+                <h5>Management:</h5>
+                <p>${management}</p>
+            </div>
+            ${contraindications}
+        `;
+    },
+
+    calculateFIB4() {
+        const age = parseFloat(document.getElementById('fib4-age').value);
+        const ast = parseFloat(document.getElementById('fib4-ast').value);
+        const alt = parseFloat(document.getElementById('fib4-alt').value);
+        const platelets = parseFloat(document.getElementById('fib4-platelets').value);
+
+        if (!age || !ast || !alt || !platelets) {
+            document.getElementById('fib4-result').innerHTML = '<p class="error">Please enter all values</p>';
+            return;
+        }
+
+        // FIB-4 = (Age × AST) / (Platelets × √ALT)
+        const fib4 = (age * ast) / (platelets * Math.sqrt(alt));
+        const fib4Rounded = Math.round(fib4 * 100) / 100;
+
+        let color, interpretation, recommendation;
+        let ageWarning = '';
+
+        if (fib4Rounded < 1.30) {
+            color = '#4CAF50';
+            interpretation = 'Low Risk of Advanced Fibrosis (F3-F4)';
+            recommendation = 'Low probability of advanced fibrosis. Repeat in 1-3 years or if clinical change.';
+        } else if (fib4Rounded <= 2.67) {
+            color = '#FF9800';
+            interpretation = 'Indeterminate Risk';
+            recommendation = 'Consider FibroScan, ELF test, or liver biopsy for further assessment.';
+        } else {
+            color = '#F44336';
+            interpretation = 'High Risk of Advanced Fibrosis (F3-F4)';
+            recommendation = 'High probability of advanced fibrosis/cirrhosis. Refer to hepatology. Consider surveillance for complications.';
+        }
+
+        if (age < 35 || age > 65) {
+            ageWarning = `
+                <div style="margin-top: 10px; padding: 10px; background: rgba(255,152,0,0.1); border-radius: 5px;">
+                    <strong>⚠️ Age Warning:</strong> FIB-4 is less validated in patients &lt;35 or &gt;65 years. 
+                    Consider alternative assessment methods.
+                </div>
+            `;
+        }
+
+        document.getElementById('fib4-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>FIB-4 Score: ${fib4Rounded}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    ${interpretation}
+                </div>
+            </div>
+            <div class="calculation-details" style="margin-top: 12px;">
+                <h5>Calculation:</h5>
+                <p>FIB-4 = (Age × AST) / (Platelets × √ALT)</p>
+                <p>= (${age} × ${ast}) / (${platelets} × √${alt})</p>
+                <p>= ${(age * ast).toFixed(0)} / ${(platelets * Math.sqrt(alt)).toFixed(1)}</p>
+                <p>= <strong>${fib4Rounded}</strong></p>
+            </div>
+            <div class="recommendation" style="margin-top: 12px; padding: 12px; background: rgba(${color === '#4CAF50' ? '76,175,80' : color === '#FF9800' ? '255,152,0' : '244,67,54'}, 0.1); border-radius: 5px;">
+                <h5>Recommendation:</h5>
+                <p>${recommendation}</p>
+            </div>
+            ${ageWarning}
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>Cut-offs:</strong> &lt;1.30 low risk | 1.30-2.67 indeterminate | &gt;2.67 high risk<br>
+                <strong>NPV for F3-F4:</strong> 90% at cut-off &lt;1.30<br>
+                <strong>PPV for F3-F4:</strong> 80% at cut-off &gt;2.67
+            </div>
+        `;
+    },
+
+    calculateAPRI() {
+        const ast = parseFloat(document.getElementById('apri-ast').value);
+        const astUln = parseFloat(document.getElementById('apri-ast-uln').value);
+        const platelets = parseFloat(document.getElementById('apri-platelets').value);
+
+        if (!ast || !astUln || !platelets) {
+            document.getElementById('apri-result').innerHTML = '<p class="error">Please enter all values</p>';
+            return;
+        }
+
+        // APRI = [(AST / AST ULN) / Platelets (10⁹/L)] × 100
+        const apri = ((ast / astUln) / platelets) * 100;
+        const apriRounded = Math.round(apri * 100) / 100;
+
+        let fibrosisColor, fibrosisInterpretation;
+        let cirrhosisColor, cirrhosisInterpretation;
+
+        // Significant fibrosis (≥F2) interpretation
+        if (apriRounded < 0.5) {
+            fibrosisColor = '#4CAF50';
+            fibrosisInterpretation = 'Low probability of significant fibrosis (≥F2)';
+        } else if (apriRounded <= 1.5) {
+            fibrosisColor = '#FF9800';
+            fibrosisInterpretation = 'Indeterminate for significant fibrosis';
+        } else {
+            fibrosisColor = '#F44336';
+            fibrosisInterpretation = 'High probability of significant fibrosis (≥F2)';
+        }
+
+        // Cirrhosis (F4) interpretation
+        if (apriRounded < 1.0) {
+            cirrhosisColor = '#4CAF50';
+            cirrhosisInterpretation = 'Low probability of cirrhosis';
+        } else if (apriRounded <= 2.0) {
+            cirrhosisColor = '#FF9800';
+            cirrhosisInterpretation = 'Indeterminate for cirrhosis';
+        } else {
+            cirrhosisColor = '#F44336';
+            cirrhosisInterpretation = 'High probability of cirrhosis';
+        }
+
+        document.getElementById('apri-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${fibrosisColor}">
+                    <strong>APRI Score: ${apriRounded}</strong>
+                </div>
+            </div>
+            <div class="calculation-details" style="margin-top: 12px;">
+                <h5>Calculation:</h5>
+                <p>APRI = [(AST / AST ULN) / Platelets] × 100</p>
+                <p>= [(${ast} / ${astUln}) / ${platelets}] × 100</p>
+                <p>= [${(ast / astUln).toFixed(2)} / ${platelets}] × 100</p>
+                <p>= <strong>${apriRounded}</strong></p>
+            </div>
+            <div class="interpretation-grid" style="margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div style="padding: 12px; background: rgba(${fibrosisColor === '#4CAF50' ? '76,175,80' : fibrosisColor === '#FF9800' ? '255,152,0' : '244,67,54'}, 0.1); border-radius: 5px;">
+                    <h5 style="margin: 0 0 5px 0;">Significant Fibrosis (≥F2)</h5>
+                    <p style="color: ${fibrosisColor}; margin: 0;">${fibrosisInterpretation}</p>
+                </div>
+                <div style="padding: 12px; background: rgba(${cirrhosisColor === '#4CAF50' ? '76,175,80' : cirrhosisColor === '#FF9800' ? '255,152,0' : '244,67,54'}, 0.1); border-radius: 5px;">
+                    <h5 style="margin: 0 0 5px 0;">Cirrhosis (F4)</h5>
+                    <p style="color: ${cirrhosisColor}; margin: 0;">${cirrhosisInterpretation}</p>
+                </div>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>Cut-offs for Fibrosis (≥F2):</strong> &lt;0.5 rules out | &gt;1.5 rules in<br>
+                <strong>Cut-offs for Cirrhosis:</strong> &lt;1.0 rules out | &gt;2.0 rules in<br>
+                <strong>Best validated in:</strong> Chronic Hepatitis C
+            </div>
+        `;
+    },
+
+    calculateLilleModel() {
+        const age = parseFloat(document.getElementById('lille-age').value);
+        const albumin = parseFloat(document.getElementById('lille-albumin').value);
+        let biliD0 = parseFloat(document.getElementById('lille-bili-d0').value);
+        let biliD7 = parseFloat(document.getElementById('lille-bili-d7').value);
+        const biliUnits = document.getElementById('lille-bili-units').value;
+        let creatinine = parseFloat(document.getElementById('lille-creatinine').value);
+        const creatUnits = document.getElementById('lille-creat-units').value;
+        let pt = parseFloat(document.getElementById('lille-pt').value);
+        const inr = parseFloat(document.getElementById('lille-inr').value);
+
+        // If INR provided but not PT, estimate PT
+        if (!pt && inr) {
+            pt = inr * 12; // Rough conversion
+        }
+
+        if (!age || !albumin || !biliD0 || !biliD7 || !creatinine || !pt) {
+            document.getElementById('lille-result').innerHTML = '<p class="error">Please enter all required values (PT or INR)</p>';
+            return;
+        }
+
+        // Convert units to μmol/L for bilirubin and mg/dL for creatinine (formula uses mixed units)
+        let biliD0umol = biliD0;
+        let biliD7umol = biliD7;
+        if (biliUnits === 'mgdl') {
+            biliD0umol = biliD0 * 17.1;
+            biliD7umol = biliD7 * 17.1;
+        }
+
+        let creatMgDl = creatinine;
+        if (creatUnits === 'umol') {
+            creatMgDl = creatinine / 88.4;
+        }
+
+        // Lille formula uses specific variable encoding
+        // R = 3.19 - 0.101 × age + 0.147 × albumin + 0.0165 × (biliD0 - biliD7) - 0.206 × (renal_insufficiency) - 0.0065 × biliD0 - 0.0096 × PT
+        // Where renal_insufficiency = 1 if creatinine > 1.3 mg/dL, else 0
+        // Lille Score = exp(-R) / (1 + exp(-R))
+
+        const renalInsuff = creatMgDl > 1.3 ? 1 : 0;
+        const deltaBili = biliD0umol - biliD7umol;
+
+        const R = 3.19 
+            - (0.101 * age) 
+            + (0.147 * albumin) 
+            + (0.0165 * deltaBili) 
+            - (0.206 * renalInsuff) 
+            - (0.0065 * biliD0umol) 
+            - (0.0096 * pt);
+
+        const lilleScore = Math.exp(-R) / (1 + Math.exp(-R));
+        const lilleRounded = Math.round(lilleScore * 1000) / 1000;
+
+        let color, interpretation, management;
+
+        if (lilleRounded < 0.45) {
+            color = '#4CAF50';
+            interpretation = 'Steroid Responder';
+            management = 'Continue prednisolone to complete 28-day course. 6-month survival ~85%.';
+        } else if (lilleRounded < 0.56) {
+            color = '#FF9800';
+            interpretation = 'Partial Non-Responder';
+            management = 'Consider stopping steroids. Discuss with hepatology. 6-month survival ~50%.';
+        } else {
+            color = '#F44336';
+            interpretation = 'Complete Non-Responder';
+            management = 'Stop steroids - no benefit. Consider transplant evaluation if appropriate. 6-month survival ~25%.';
+        }
+
+        const biliChange = ((biliD0umol - biliD7umol) / biliD0umol * 100).toFixed(1);
+
+        document.getElementById('lille-result').innerHTML = `
+            <div class="result-summary">
+                <div class="result-value" style="color: ${color}">
+                    <strong>Lille Score: ${lilleRounded}</strong>
+                </div>
+                <div class="result-interpretation" style="color: ${color}">
+                    ${interpretation}
+                </div>
+            </div>
+            <div class="bilirubin-change" style="margin-top: 12px; padding: 12px; background: rgba(33,150,243,0.1); border-radius: 5px;">
+                <h5>Bilirubin Response:</h5>
+                <p>Day 0: ${biliD0umol.toFixed(0)} μmol/L → Day 7: ${biliD7umol.toFixed(0)} μmol/L</p>
+                <p><strong>${biliChange > 0 ? '↓' : '↑'} ${Math.abs(biliChange)}% change</strong></p>
+            </div>
+            <div class="management-plan" style="margin-top: 12px; padding: 12px; background: rgba(${lilleRounded < 0.45 ? '76,175,80' : lilleRounded < 0.56 ? '255,152,0' : '244,67,54'}, 0.1); border-radius: 5px;">
+                <h5>Management:</h5>
+                <p>${management}</p>
+            </div>
+            <div class="clinical-note" style="margin-top: 12px; font-size: 0.9em; color: #666;">
+                <strong>Cut-offs:</strong><br>
+                • &lt;0.45: Responder (continue steroids)<br>
+                • 0.45-0.56: Partial non-responder<br>
+                • &gt;0.56: Complete non-responder (stop steroids)<br>
+                <strong>Key:</strong> Bilirubin drop by Day 7 is the strongest predictor of response
+            </div>
+        `;
+    },
+
     calculateSOFA() {
         const resp = parseInt(document.getElementById('sofa-resp').value);
         const coag = parseInt(document.getElementById('sofa-coag').value);
@@ -9149,4 +9657,4 @@ if (typeof window !== 'undefined') {
     window.ExtractedCalculators = ExtractedCalculators;
 }
 
-console.log('✅ ExtractedCalculators loaded: 72 calculators (includes 10 new + QRISK3 Official)');
+console.log('✅ ExtractedCalculators loaded: 76 calculators (includes hepatology: Maddrey DF, FIB-4, APRI, Lille)');
