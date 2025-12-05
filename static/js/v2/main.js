@@ -27,6 +27,7 @@ import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
 import { clinicalPearlsManager } from './modules/ClinicalPearlsManager.js';
+import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
@@ -54,6 +55,7 @@ class MLAQuizApp {
         this.interpretationToolsManager = interpretationToolsManager;
         this.medStatsEthicsManager = medStatsEthicsManager;
         this.clinicalPearlsManager = clinicalPearlsManager;
+        this.ophthalmologyManager = ophthalmologyManager;
         this.laddersManager = laddersManager;
         this.differentialDxManager = differentialDxManager;
         this.triadsManager = triadsManager;
@@ -132,6 +134,7 @@ class MLAQuizApp {
             this.interpretationToolsManager.initialize(),
             this.medStatsEthicsManager.initialize(),
             this.clinicalPearlsManager.initialize(),
+            this.ophthalmologyManager.initialize(),
             this.laddersManager.initialize()
         ];
 
@@ -139,14 +142,15 @@ class MLAQuizApp {
 
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
 
-        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats] = await Promise.all([
+        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats, ophthalmologyStats] = await Promise.all([
             this.drugManager.getStatistics(),
             Promise.resolve(this.labManager.getStatistics() || { totalPanels: 0, totalTests: 0 }),
             this.guidelinesManager.getStatistics(),
             this.mnemonicsManager.getStatistics(),
             this.interpretationToolsManager.getStatistics(),
             Promise.resolve(this.medStatsEthicsManager.getStatistics()),
-            this.laddersManager.getStatistics()
+            this.laddersManager.getStatistics(),
+            Promise.resolve(this.ophthalmologyManager.getStatistics())
         ]);
 
         const safeLabStats = labStats || { totalPanels: 0, totalTests: 0 };
@@ -155,6 +159,7 @@ class MLAQuizApp {
         const safeInterpretationStats = interpretationStats || { totalTools: 0 };
         const safeMedStatsStats = medStatsStats || { totalSections: 0 };
         const safeLadderStats = ladderStats || { totalLadders: 0 };
+        const safeOphthalmologyStats = ophthalmologyStats || { totalSections: 0 };
 
         this.scheduleToolPreload();
 
@@ -237,6 +242,7 @@ class MLAQuizApp {
             { id: 'interpretation-panel', log: '📊 Preloading interpretation tools content...', loader: panel => this.loadInterpretationToolsContent(panel) },
             { id: 'med-stats-ethics-panel', log: '📈 Preloading medical statistics content...', loader: panel => this.loadMedStatsEthicsContent(panel) },
             { id: 'clinical-pearls-panel', log: '💡 Preloading clinical pearls content...', loader: panel => this.loadClinicalPearlsContent(panel) },
+            { id: 'ophthalmology-panel', log: '👁️ Preloading ophthalmology content...', loader: panel => this.loadOphthalmologyContent(panel) },
             { id: 'ladders-panel', log: '🪜 Preloading treatment ladders content...', loader: panel => this.loadLaddersContent(panel) }
         ];
 
@@ -1072,7 +1078,8 @@ class MLAQuizApp {
             'pdf-library': 'pdf-library-panel',
             'contraception-hrt': 'contraception-hrt-panel',
             'med-stats-ethics': 'med-stats-ethics-panel',
-            'clinical-pearls': 'clinical-pearls-panel'
+            'clinical-pearls': 'clinical-pearls-panel',
+            'ophthalmology': 'ophthalmology-panel'
         };
         
         // Show selected panel
@@ -1146,6 +1153,9 @@ class MLAQuizApp {
                 break;
             case 'clinical-pearls':
                 this.loadClinicalPearlsContent(panel);
+                break;
+            case 'ophthalmology':
+                this.loadOphthalmologyContent(panel);
                 break;
         }
     }
@@ -2343,6 +2353,28 @@ class MLAQuizApp {
             this.clinicalPearlsManager.render(panel);
         } else {
             container.innerHTML = '<div class="no-content">Clinical pearls module unavailable</div>';
+        }
+    }
+
+    /**
+     * Load ophthalmology knowledge deck
+     */
+    loadOphthalmologyContent(panel) {
+        if (!panel) {
+            console.error('loadOphthalmologyContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#ophthalmology-container') || panel;
+        if (!container) {
+            console.error('loadOphthalmologyContent: container not found');
+            return;
+        }
+
+        if (this.ophthalmologyManager && typeof this.ophthalmologyManager.render === 'function') {
+            this.ophthalmologyManager.render(container);
+        } else {
+            container.innerHTML = '<div class="no-content">Ophthalmology module unavailable</div>';
         }
     }
 
