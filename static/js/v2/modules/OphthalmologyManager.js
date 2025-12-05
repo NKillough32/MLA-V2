@@ -8,7 +8,8 @@ class OphthalmologyManager {
     constructor() {
         this.sections = this.buildSections();
         this.localImages = this.buildLocalImages();
-        this.placeholderImage = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240" role="img" aria-label="Ophthalmology image placeholder"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="%23bfdbfe" offset="0"/><stop stop-color="%2393c5fd" offset="1"/></linearGradient></defs><rect width="400" height="240" fill="url(%23g)"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%231d4ed8" font-family="Arial, sans-serif" font-size="18">Ophthalmology</text></svg>';
+        // Placeholder image using base64 encoding to avoid escaping issues in HTML attributes
+        this.placeholderImage = 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bfdbfe" offset="0"/><stop stop-color="#93c5fd" offset="1"/></linearGradient></defs><rect width="400" height="240" fill="url(#g)"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="18">Image not available</text></svg>');
         this.searchTerm = '';
     }
 
@@ -632,7 +633,7 @@ class OphthalmologyManager {
         modal.innerHTML = `
             <div class="ophthal-modal-content">
                 <button class="ophthal-modal-close">&times;</button>
-                <img src="${image.src}" alt="${image.title}" onerror="this.src='${this.placeholderImage}'">
+                <img src="${image.src}" alt="${image.title}" onerror="this.onerror=null; this.src='${this.placeholderImage}'">
                 <div class="ophthal-modal-caption">
                     <strong>${image.title}</strong><br>
                     ${image.description}<br>
