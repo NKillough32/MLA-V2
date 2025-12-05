@@ -7,7 +7,9 @@
 class OphthalmologyManager {
     constructor() {
         this.sections = this.buildSections();
+        this.localImages = this.buildLocalImages();
         this.placeholderImage = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240" role="img" aria-label="Ophthalmology image placeholder"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="%23bfdbfe" offset="0"/><stop stop-color="%2393c5fd" offset="1"/></linearGradient></defs><rect width="400" height="240" fill="url(%23g)"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%231d4ed8" font-family="Arial, sans-serif" font-size="18">Ophthalmology</text></svg>';
+        this.searchTerm = '';
     }
 
     async initialize() {
@@ -15,18 +17,79 @@ class OphthalmologyManager {
     }
 
     getStatistics() {
-        const imageSection = this.sections.find(section => Array.isArray(section.images));
-        const totalImages = imageSection ? imageSection.images.length : 0;
+        const conditionSection = this.sections.find(s => Array.isArray(s.conditions));
+        const totalConditions = conditionSection ? conditionSection.conditions.length : 0;
         return {
             totalSections: this.sections.length,
-            totalImages
+            totalImages: this.localImages.length,
+            totalConditions
         };
+    }
+
+    buildLocalImages() {
+        // Local images stored in static/assets/ophthalmology/
+        const basePath = '/static/assets/ophthalmology/';
+        return [
+            { filename: 'diabetic-retinopathy.jpg', title: 'Diabetic Retinopathy', category: 'Retina', description: 'Fundus showing scatter laser photocoagulation scars for proliferative diabetic retinopathy', credit: 'Wikimedia Commons (Public Domain)' },
+            { filename: 'amd-drusen.jpg', title: 'Age-related Macular Degeneration', category: 'Retina', description: 'Intermediate AMD with drusen deposits in the macula', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'papilloedema.jpg', title: 'Papilloedema', category: 'Optic Nerve', description: 'Bilateral optic disc swelling due to raised intracranial pressure', credit: 'Wikimedia Commons (CC BY 2.0)' },
+            { filename: 'cataract.png', title: 'Cataract', category: 'Lens', description: 'Dense nuclear cataract visible through dilated pupil', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'acute-angle-closure.jpg', title: 'Acute Angle Closure Glaucoma', category: 'Glaucoma', description: 'Mid-dilated fixed pupil with corneal oedema in acute angle closure', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'hyphema.jpg', title: 'Hyphema', category: 'Anterior Segment', description: 'Blood layering in the anterior chamber following trauma', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'corneal-ulcer.jpg', title: 'Corneal Ulcer', category: 'Cornea', description: 'Corneal ulcer with stromal infiltrate and epithelial defect', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'dendritic-ulcer.jpg', title: 'Dendritic Ulcer (HSV Keratitis)', category: 'Cornea', description: 'Characteristic branching dendritic pattern with fluorescein staining in herpes simplex keratitis', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'pterygium.jpg', title: 'Pterygium', category: 'Conjunctiva', description: 'Fleshy triangular growth extending from conjunctiva onto cornea', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'subconjunctival-haemorrhage.jpg', title: 'Subconjunctival Haemorrhage', category: 'Conjunctiva', description: 'Bright red blood beneath the conjunctiva, often spontaneous or post-trauma', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'conjunctivitis.jpg', title: 'Conjunctivitis', category: 'Conjunctiva', description: 'Red eye with conjunctival injection and lid swelling', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'episcleritis.jpg', title: 'Episcleritis', category: 'Sclera', description: 'Sectoral redness of episcleral vessels - typically benign and self-limiting', credit: 'Wikimedia Commons (CC BY-SA 4.0)' },
+            { filename: 'chalazion.jpg', title: 'Chalazion', category: 'Eyelid', description: 'Painless meibomian gland lipogranuloma in upper eyelid', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'stye.jpg', title: 'Stye (Hordeolum)', category: 'Eyelid', description: 'Acute painful staphylococcal infection of eyelid gland', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'ptosis.jpg', title: 'Ptosis', category: 'Eyelid', description: 'Drooping of the upper eyelid - can be congenital, aponeurotic, or neurogenic', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'orbital-cellulitis.jpg', title: 'Orbital Cellulitis', category: 'Orbit', description: 'Periorbital swelling with proptosis and restricted eye movements - ophthalmological emergency', credit: 'Wikimedia Commons (CC BY-SA 3.0)' },
+            { filename: 'herpes-zoster-ophthalmicus.jpg', title: 'Herpes Zoster Ophthalmicus', category: 'Infection', description: 'V1 dermatomal vesicular rash - risk of ocular involvement with Hutchinson sign', credit: 'Wikimedia Commons (CC BY-SA 3.0)' }
+        ].map(img => ({ ...img, src: basePath + img.filename }));
     }
 
     ensureStyles() {
         if (document.getElementById('ophthalmology-styles')) return;
 
         const css = `
+            /* Search box */
+            .ophthal-search-container {
+                margin-bottom: 20px;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                background: var(--v2-bg-card, #fff);
+                padding: 12px;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            }
+            .ophthal-search-input {
+                width: 100%;
+                padding: 12px 16px;
+                border: 2px solid rgba(59,130,246,0.2);
+                border-radius: 10px;
+                font-size: 1rem;
+                background: var(--v2-bg-main, #f8fafc);
+                color: var(--v2-text-primary, #0f172a);
+                transition: border-color 200ms, box-shadow 200ms;
+            }
+            .ophthal-search-input:focus {
+                outline: none;
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+            }
+            .ophthal-search-input::placeholder {
+                color: #94a3b8;
+            }
+            .ophthal-search-stats {
+                margin-top: 8px;
+                font-size: 0.85rem;
+                color: #64748b;
+            }
+            
+            /* Card grid */
             .ophthal-card-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -46,6 +109,7 @@ class OphthalmologyManager {
                 border-color: rgba(59,130,246,0.26);
                 box-shadow: 0 14px 46px rgba(15,23,42,0.12);
             }
+            .ophthal-card.hidden { display: none; }
             .ophthal-card h3 { margin: 0 0 6px 0; font-size: 1.05rem; letter-spacing: -0.01em; }
             .ophthal-card .card-summary { margin: 0 0 10px 0; color: #475569; line-height: 1.55; }
             .ophthal-badge {
@@ -73,10 +137,12 @@ class OphthalmologyManager {
             .ophthal-subsection h4 { margin: 0 0 6px 0; font-size: 0.96rem; }
             .ophthal-subsection ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
             .ophthal-subsection li { line-height: 1.5; }
+            
+            /* Image gallery */
             .ophthal-image-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 12px;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: 16px;
                 margin-top: 10px;
             }
             .ophthal-image-card {
@@ -86,28 +152,196 @@ class OphthalmologyManager {
                 background: #fff;
                 display: flex;
                 flex-direction: column;
+                cursor: pointer;
+                transition: transform 180ms, box-shadow 180ms;
             }
-            .ophthal-image-card img { width: 100%; height: 140px; object-fit: cover; display: block; }
-            .ophthal-image-card .image-meta { padding: 10px; font-size: 0.9rem; color: #0f172a; }
+            .ophthal-image-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            }
+            .ophthal-image-card img { 
+                width: 100%; 
+                height: 180px; 
+                object-fit: cover; 
+                display: block;
+                background: #f1f5f9;
+            }
+            .ophthal-image-card .image-meta { 
+                padding: 12px; 
+                font-size: 0.9rem; 
+                color: #0f172a;
+            }
+            .ophthal-image-card .image-meta strong {
+                display: block;
+                margin-bottom: 4px;
+                color: #1e40af;
+            }
+            .ophthal-image-card .image-meta .category {
+                display: inline-block;
+                background: rgba(59,130,246,0.1);
+                color: #2563eb;
+                padding: 2px 8px;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                margin-bottom: 6px;
+            }
+            .ophthal-image-card .image-meta .description {
+                color: #475569;
+                font-size: 0.85rem;
+                line-height: 1.4;
+            }
+            .ophthal-image-card .image-meta .credit {
+                color: #94a3b8;
+                font-size: 0.75rem;
+                margin-top: 6px;
+                font-style: italic;
+            }
+            
             .ophthal-note { margin-top: 8px; color: #475569; font-style: italic; }
-            .ophthal-condition-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
-            .ophthal-condition-card { border: 1px solid rgba(15,23,42,0.08); border-radius: 12px; padding: 10px 12px; background: #fff; box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); display: grid; gap: 6px; }
-            .ophthal-condition-card h4 { margin: 0; font-size: 1rem; color: #0f172a; }
-            .ophthal-condition-card .condition-section { margin: 0; padding-left: 16px; display: grid; gap: 4px; }
-            .ophthal-condition-card strong { color: #1d4ed8; font-size: 0.92rem; }
-            .ophthal-condition-card li { line-height: 1.45; }
+            
+            /* Condition cards */
+            .ophthal-condition-grid { 
+                display: grid; 
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+                gap: 14px; 
+            }
+            .ophthal-condition-card { 
+                border: 1px solid rgba(15,23,42,0.08); 
+                border-radius: 12px; 
+                padding: 14px 16px; 
+                background: #fff; 
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); 
+                display: grid; 
+                gap: 8px;
+                transition: border-color 180ms, box-shadow 180ms;
+            }
+            .ophthal-condition-card:hover {
+                border-color: rgba(59,130,246,0.3);
+                box-shadow: 0 4px 12px rgba(59,130,246,0.08);
+            }
+            .ophthal-condition-card.hidden { display: none; }
+            .ophthal-condition-card h4 { 
+                margin: 0; 
+                font-size: 1.05rem; 
+                color: #0f172a;
+                border-bottom: 1px solid rgba(15,23,42,0.06);
+                padding-bottom: 8px;
+            }
+            .ophthal-condition-card .condition-section { 
+                margin: 0; 
+                padding-left: 16px; 
+                display: grid; 
+                gap: 4px; 
+            }
+            .ophthal-condition-card strong { 
+                color: #1d4ed8; 
+                font-size: 0.88rem;
+                display: block;
+                margin-bottom: 4px;
+            }
+            .ophthal-condition-card li { line-height: 1.45; font-size: 0.92rem; }
 
-            @media (prefers-color-scheme: dark) {
-                .ophthal-card { border-color: #2e2e2e; background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(37,99,235,0.06)); box-shadow: 0 12px 32px rgba(0,0,0,0.32); }
-                .ophthal-card .card-summary { color: #cbd5e1; }
-                .ophthal-subsection { border: 1px solid #303030; background: #1c1c1c; color: #e2e8f0; }
-                .ophthal-subsection h4 { color: #e2e8f0; }
-                .ophthal-image-card { border-color: #303030; background: #1c1c1c; color: #e2e8f0; }
-                .ophthal-image-card .image-meta { color: #e2e8f0; }
-                .ophthal-note { color: #cbd5e1; }
-                .ophthal-condition-card { border-color: #303030; background: #1c1c1c; color: #e2e8f0; }
-                .ophthal-condition-card h4 { color: #e2e8f0; }
-                .ophthal-condition-card strong { color: #93c5fd; }
+            /* Dark mode - using app's data-theme attribute */
+            [data-theme="dark"] .ophthal-search-container {
+                background: var(--v2-bg-card, #1e293b);
+            }
+            [data-theme="dark"] .ophthal-search-input {
+                background: var(--v2-bg-elevated, #334155);
+                border-color: rgba(148,163,184,0.2);
+                color: #f1f5f9;
+            }
+            [data-theme="dark"] .ophthal-search-input::placeholder {
+                color: #64748b;
+            }
+            [data-theme="dark"] .ophthal-search-stats {
+                color: #94a3b8;
+            }
+            [data-theme="dark"] .ophthal-card { 
+                border-color: #334155; 
+                background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(37,99,235,0.06)); 
+                box-shadow: 0 12px 32px rgba(0,0,0,0.32); 
+            }
+            [data-theme="dark"] .ophthal-card .card-summary { color: #cbd5e1; }
+            [data-theme="dark"] .ophthal-badge {
+                background: rgba(59,130,246,0.2);
+                border-color: rgba(59,130,246,0.4);
+                color: #93c5fd;
+            }
+            [data-theme="dark"] .ophthal-subsection { 
+                border: 1px solid #475569; 
+                background: #1e293b; 
+                color: #e2e8f0; 
+            }
+            [data-theme="dark"] .ophthal-subsection h4 { color: #e2e8f0; }
+            [data-theme="dark"] .ophthal-image-card { 
+                border-color: #475569; 
+                background: #1e293b; 
+                color: #e2e8f0; 
+            }
+            [data-theme="dark"] .ophthal-image-card img {
+                background: #334155;
+            }
+            [data-theme="dark"] .ophthal-image-card .image-meta { color: #e2e8f0; }
+            [data-theme="dark"] .ophthal-image-card .image-meta strong { color: #93c5fd; }
+            [data-theme="dark"] .ophthal-image-card .image-meta .category {
+                background: rgba(59,130,246,0.2);
+                color: #93c5fd;
+            }
+            [data-theme="dark"] .ophthal-image-card .image-meta .description { color: #cbd5e1; }
+            [data-theme="dark"] .ophthal-image-card .image-meta .credit { color: #64748b; }
+            [data-theme="dark"] .ophthal-note { color: #cbd5e1; }
+            [data-theme="dark"] .ophthal-condition-card { 
+                border-color: #475569; 
+                background: #1e293b; 
+                color: #e2e8f0; 
+            }
+            [data-theme="dark"] .ophthal-condition-card h4 { 
+                color: #e2e8f0;
+                border-bottom-color: rgba(255,255,255,0.1);
+            }
+            [data-theme="dark"] .ophthal-condition-card strong { color: #93c5fd; }
+            [data-theme="dark"] .ophthal-condition-card li { color: #cbd5e1; }
+            
+            /* Image modal */
+            .ophthal-modal-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.85);
+                z-index: 9999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                cursor: zoom-out;
+            }
+            .ophthal-modal-content {
+                max-width: 90vw;
+                max-height: 90vh;
+                position: relative;
+            }
+            .ophthal-modal-content img {
+                max-width: 100%;
+                max-height: 85vh;
+                border-radius: 8px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            }
+            .ophthal-modal-caption {
+                color: #fff;
+                text-align: center;
+                margin-top: 12px;
+                font-size: 1rem;
+            }
+            .ophthal-modal-close {
+                position: absolute;
+                top: -40px;
+                right: 0;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 2rem;
+                cursor: pointer;
+                padding: 8px;
             }
         `;
 
@@ -360,39 +594,95 @@ class OphthalmologyManager {
                         ]
                     }
                 ]
-            },
-            {
-                title: 'Open-Access Teaching Images',
-                badge: 'Images',
-                summary: 'Free-to-use reference photos; always retain attribution and verify licence before reuse.',
-                images: [
-                    {
-                        title: 'Fundus photo – diabetic retinopathy',
-                        src: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Diabetic_retinopathy.jpg',
-                        credit: 'Wikimedia Commons (CC BY-SA 3.0)',
-                        alt: 'Fundus photograph showing diabetic retinopathy with multiple dot-blot haemorrhages'
-                    },
-                    {
-                        title: 'Optic disc – glaucoma cupping',
-                        src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Glaucoma_cupping.jpg',
-                        credit: 'Wikimedia Commons (CC BY 3.0)',
-                        alt: 'Optic disc photograph demonstrating glaucomatous cupping with enlarged cup-to-disc ratio'
-                    },
-                    {
-                        title: 'Cornea – keratoconus topography',
-                        src: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Keratoconus_cornea.png',
-                        credit: 'Wikimedia Commons (CC BY-SA 4.0)',
-                        alt: 'Colour-coded corneal topography map indicating keratoconus with inferior steepening'
-                    }
-                ],
-                note: 'Links reference openly licensed assets—check the stated Creative Commons terms for local reuse policies.'
             }
         ];
+    }
+
+    filterConditions(searchTerm) {
+        this.searchTerm = searchTerm.toLowerCase().trim();
+        const conditionCards = document.querySelectorAll('.ophthal-condition-card');
+        let visibleCount = 0;
+        
+        conditionCards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            const matches = !this.searchTerm || text.includes(this.searchTerm);
+            card.classList.toggle('hidden', !matches);
+            if (matches) visibleCount++;
+        });
+        
+        // Update stats
+        const statsEl = document.querySelector('.ophthal-search-stats');
+        if (statsEl) {
+            const total = conditionCards.length;
+            if (this.searchTerm) {
+                statsEl.textContent = `Showing ${visibleCount} of ${total} conditions`;
+            } else {
+                statsEl.textContent = `${total} conditions available`;
+            }
+        }
+    }
+
+    openImageModal(image) {
+        // Remove existing modal
+        const existing = document.querySelector('.ophthal-modal-overlay');
+        if (existing) existing.remove();
+        
+        const modal = document.createElement('div');
+        modal.className = 'ophthal-modal-overlay';
+        modal.innerHTML = `
+            <div class="ophthal-modal-content">
+                <button class="ophthal-modal-close">&times;</button>
+                <img src="${image.src}" alt="${image.title}" onerror="this.src='${this.placeholderImage}'">
+                <div class="ophthal-modal-caption">
+                    <strong>${image.title}</strong><br>
+                    ${image.description}<br>
+                    <small>${image.credit}</small>
+                </div>
+            </div>
+        `;
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('ophthal-modal-close')) {
+                modal.remove();
+            }
+        });
+        
+        document.body.appendChild(modal);
     }
 
     render(container) {
         if (!container) return;
         this.ensureStyles();
+
+        // Search box HTML
+        const searchHtml = `
+            <div class="ophthal-search-container">
+                <input type="text" class="ophthal-search-input" placeholder="🔍 Search conditions (e.g., glaucoma, red eye, uveitis...)" />
+                <div class="ophthal-search-stats">${this.sections.find(s => s.conditions)?.conditions.length || 0} conditions available</div>
+            </div>
+        `;
+
+        // Local images gallery HTML
+        const imageGalleryHtml = `
+            <article class="ophthal-card">
+                <span class="ophthal-badge">📷 Clinical Images</span>
+                <h3>Teaching Image Gallery</h3>
+                <p class="card-summary">Click any image to enlarge. All images are from Wikimedia Commons under Creative Commons licenses.</p>
+                <div class="ophthal-image-grid">
+                    ${this.localImages.map((img, idx) => `
+                        <figure class="ophthal-image-card" data-image-idx="${idx}">
+                            <img src="${img.src}" alt="${img.title}" loading="lazy" onerror="this.onerror=null; this.src='${this.placeholderImage}'">
+                            <figcaption class="image-meta">
+                                <span class="category">${img.category}</span>
+                                <strong>${img.title}</strong>
+                                <div class="description">${img.description}</div>
+                                <div class="credit">${img.credit}</div>
+                            </figcaption>
+                        </figure>
+                    `).join('')}
+                </div>
+            </article>
+        `;
 
         const sectionHtml = this.sections.map(section => {
             const badge = `<span class="ophthal-badge">${section.badge}</span>`;
@@ -407,19 +697,6 @@ class OphthalmologyManager {
                     </div>
                 `).join('');
                 body = `<div class="ophthal-columns">${columns}</div>`;
-            }
-
-            if (Array.isArray(section.images)) {
-                const images = section.images.map(image => `
-                    <figure class="ophthal-image-card">
-                        <img src="${image.src}" alt="${image.alt}" loading="lazy" onerror="this.onerror=null; this.src='${this.placeholderImage}'">
-                        <figcaption class="image-meta">
-                            <strong>${image.title}</strong><br>
-                            <span>${image.credit}</span>
-                        </figcaption>
-                    </figure>
-                `).join('');
-                body += `<div class="ophthal-image-grid">${images}</div>`;
             }
 
             if (Array.isArray(section.conditions)) {
@@ -454,7 +731,31 @@ class OphthalmologyManager {
             `;
         }).join('');
 
-        container.innerHTML = `<div class="ophthal-card-grid">${sectionHtml}</div>`;
+        // Combine: search box, image gallery, then section cards
+        container.innerHTML = `
+            ${searchHtml}
+            ${imageGalleryHtml}
+            <div class="ophthal-card-grid">${sectionHtml}</div>
+        `;
+
+        // Bind search functionality
+        const searchInput = container.querySelector('.ophthal-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                this.filterConditions(e.target.value);
+            });
+        }
+
+        // Bind image click to open modal
+        const imageCards = container.querySelectorAll('.ophthal-image-card[data-image-idx]');
+        imageCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const idx = parseInt(card.dataset.imageIdx, 10);
+                if (this.localImages[idx]) {
+                    this.openImageModal(this.localImages[idx]);
+                }
+            });
+        });
     }
 }
 
