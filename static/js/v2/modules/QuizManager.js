@@ -322,6 +322,9 @@ export class QuizManager {
             return;
         }
 
+        // Reset quiz state before starting (clear previous answers, etc.)
+        this.resetQuiz();
+
         // Randomly select questions if needed
         const totalQuestions = this.questions.length;
         const shouldKeepAll = !this.selectedQuizLength
