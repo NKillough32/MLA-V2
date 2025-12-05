@@ -4956,30 +4956,68 @@ class MLAQuizApp {
 
     /**
      * Format investigations text with proper line breaks
+     * Handles lab values, reference ranges, and maintains readability
      */
     formatInvestigations(investigationsText) {
         if (!investigationsText) return '';
         
         let formatted = investigationsText.trim();
         
-        // First, handle lines that start with "- " to ensure they stay on separate lines
-        // Replace newlines followed by "- " with a placeholder that won't be collapsed
-        formatted = formatted.replace(/\n-\s+/g, '<br>- ');
+        // Preserve existing line breaks first by converting to placeholder
+        formatted = formatted.replace(/\n/g, '{{NEWLINE}}');
         
-        // Split investigations at natural break points:
-        // 1. After reference ranges in parentheses followed by any letter (capital or lowercase)
-        // 2. After test results with colons followed by a capital letter
-        formatted = formatted
-            // Pattern: "Value unit (range) nextTest" -> "Value unit (range)<br>nextTest"
-            // Updated to handle both uppercase and lowercase letters after closing bracket
-            .replace(/(\([^)]+\))\s+([A-Za-z])/g, '$1<br>$2')
-            // Pattern: "Test: result NextTest" -> "Test: result<br>NextTest" 
-            .replace(/(:\s*[a-z][^:]*?)\s+([A-Z][A-Za-z])/g, '$1<br>$2')
-            // Collapse multiple spaces but preserve <br> tags
-            .replace(/\s+/g, ' ')
-            .trim();
-            
-        return this.formatText(formatted);
+        // Normalize all bullet styles to •
+        formatted = formatted.replace(/{{NEWLINE}}[-•]\s*/g, '{{NEWLINE}}• ');
+        formatted = formatted.replace(/^[-•]\s*/, '• '); // Handle first line bullet
+        
+        // Convert remaining preserved newlines to <br>
+        formatted = formatted.replace(/{{NEWLINE}}/g, '<br>');
+        
+        // Fix missing space after reference range when followed immediately by capital letter
+        // e.g., "(135-180)Female" -> "(135-180) Female" then will break properly
+        formatted = formatted.replace(/(\([^)]+\))([A-Z])/g, '$1 $2');
+        
+        // Break after reference ranges followed by a new test/category starting with capital
+        // e.g., "(135-180) Female" or "(135-145) K+" or "(4.0-11.0) Platelets"
+        formatted = formatted.replace(
+            /(\([^)]+\))\s+([A-Z][a-z]*[\+\-]?:?\s|[A-Z][a-z]{2,})/g,
+            '$1<br>$2'
+        );
+        
+        // Smart line breaking for lab values - after reference ranges that look like lab values
+        // Pattern: "number unit (range)" followed by a new test name starting with capital
+        // e.g., "12.5 g/dL (13-17) WBC" or "140 mmol/L (135-145) Potassium"
+        formatted = formatted.replace(
+            /(\d+\.?\d*\s*[a-zA-Z/%µμ·×\^]+(?:\/[a-zA-Z]+)?\s*\([^)]+\))\s+([A-Z][a-z])/g,
+            '$1<br>$2'
+        );
+        
+        // Break after numeric results followed by a new capitalized test name
+        // e.g., "WBC: 8.0 x10^9/L RBC:" or "pH: 7.4 Lactate:"
+        // Must have a number/decimal before the next test name
+        formatted = formatted.replace(
+            /(:[\s]*[\d.]+[^A-Z]*?)\s{2,}([A-Z][a-z]{2,})/g,
+            '$1<br>$2'
+        );
+        
+        // Break at common lab value separators (multiple spaces or tabs between values)
+        formatted = formatted.replace(
+            /(\d+\.?\d*\s*[a-zA-Z/%µμ·×\^]*(?:\/[a-zA-Z]+)?)\s{3,}([A-Z])/g,
+            '$1<br>$2'
+        );
+        
+        // Clean up: collapse multiple spaces to single (but preserve <br>)
+        formatted = formatted.replace(/(<br>)\s+/g, '$1');
+        formatted = formatted.replace(/\s+(<br>)/g, '$1');
+        formatted = formatted.replace(/\s{2,}/g, ' ');
+        
+        // Clean up multiple consecutive <br> tags
+        formatted = formatted.replace(/(<br>\s*){2,}/g, '<br>');
+        
+        // Remove leading/trailing <br>
+        formatted = formatted.replace(/^(<br>)+/, '').replace(/(<br>)+$/, '');
+        
+        return this.formatText(formatted.trim());
     }
 
     /**
