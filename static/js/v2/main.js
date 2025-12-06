@@ -5016,6 +5016,10 @@ class MLAQuizApp {
             '$1<br>$2'
         );
 
+        // Handle uppercase acronym-style test names immediately after reference ranges
+        // e.g., "(50-125) ALT" or "(135-145) CRP" should break cleanly onto a new line
+        formatted = formatted.replace(/(\([^)]+\))\s+([A-Z]{2,}(?![a-z]))/g, '$1<br>$2');
+
         // Specifically handle lowercase-led test names immediately after ranges
         // e.g., "(50-125) egfr" or "(0.7-1.3) troponin"
         formatted = formatted.replace(
