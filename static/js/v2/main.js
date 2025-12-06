@@ -5005,14 +5005,21 @@ class MLAQuizApp {
         // Convert remaining preserved newlines to <br>
         formatted = formatted.replace(/{{NEWLINE}}/g, '<br>');
         
-        // Fix missing space after reference range when followed immediately by capital letter
+        // Fix missing space after reference range when followed immediately by a letter
         // e.g., "(135-180)Female" -> "(135-180) Female" then will break properly
-        formatted = formatted.replace(/(\([^)]+\))([A-Z])/g, '$1 $2');
-        
-        // Break after reference ranges followed by a new test/category starting with capital
-        // e.g., "(135-180) Female" or "(135-145) K+" or "(4.0-11.0) Platelets"
+        formatted = formatted.replace(/(\([^)]+\))([A-Za-z])/g, '$1 $2');
+
+        // Break after reference ranges followed by a new test/category starting with a letter
+        // Handles both capitalised and lowercase test names (e.g., eGFR, troponin)
         formatted = formatted.replace(
-            /(\([^)]+\))\s+([A-Z][a-z]*[\+\-]?:?\s|[A-Z][a-z]{2,})/g,
+            /(\([^)]+\))\s+([A-Za-z][a-z]*[\+\-]?:?\s|[A-Za-z][a-z]{2,})/g,
+            '$1<br>$2'
+        );
+
+        // Specifically handle lowercase-led test names immediately after ranges
+        // e.g., "(50-125) egfr" or "(0.7-1.3) troponin"
+        formatted = formatted.replace(
+            /(\([^)]+\))\s+([a-z][a-z0-9\+\-\/]*:?)/g,
             '$1<br>$2'
         );
         
