@@ -91,6 +91,7 @@ export class QuizManager {
         // Time tracking
         this.questionStartTime = null;
         this.questionTimes = {};
+        this.quizEndTime = null;
         this.quizStartTime = null;
         this.totalStudyTime = 0;
         this.sessionStats = {
@@ -342,6 +343,7 @@ export class QuizManager {
 
         // Start timing
         this.quizStartTime = Date.now();
+        this.quizEndTime = null;
         this.questionStartTime = Date.now();
         
         // Scroll to top when quiz starts
@@ -1029,8 +1031,9 @@ export class QuizManager {
      */
     async finishQuiz() {
         const score = this.calculateScore();
-        const totalTime = this.quizStartTime ?
-            Math.floor((Date.now() - this.quizStartTime) / 1000) : 0;
+        this.quizEndTime = Date.now();
+
+        const totalTime = this.getTotalTime();
 
         const averageTime = score.answered > 0 ?
             Math.round(totalTime / score.answered) : 0;
@@ -1090,6 +1093,7 @@ export class QuizManager {
         this.ruledOutAnswers = {};
         this.flaggedQuestions = new Set();
         this.questionTimes = {};
+        this.quizEndTime = null;
         this.quizStartTime = null;
         this.questionStartTime = null;
         this.isReviewMode = false;
@@ -1190,7 +1194,8 @@ export class QuizManager {
      */
     getTotalTime() {
         if (!this.quizStartTime) return 0;
-        return Math.floor((Date.now() - this.quizStartTime) / 1000);
+        const endTime = this.quizEndTime || Date.now();
+        return Math.floor((endTime - this.quizStartTime) / 1000);
     }
 
     /**
@@ -1229,6 +1234,7 @@ export class QuizManager {
             this.flaggedQuestions = new Set(progress.flaggedQuestions || []);
             this.questionTimes = progress.questionTimes || {};
             this.quizStartTime = progress.quizStartTime || Date.now();
+            this.quizEndTime = null;
             
             console.log('📂 Quiz progress loaded');
             return true;
@@ -2286,10 +2292,7 @@ export class QuizManager {
         const accuracy = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
         
         // Calculate total time and average
-        let totalTime = 0;
-        Object.values(this.questionTimes).forEach(time => {
-            totalTime += time;
-        });
+        const totalTime = this.getTotalTime();
         const averageTime = totalQuestions > 0 ? totalTime / totalQuestions : 0;
         
         return {
