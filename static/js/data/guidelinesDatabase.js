@@ -269,6 +269,97 @@ window.guidelinesDatabase = {
         duration: 'Continue antidepressant for ≥6 months after remission. Consider longer if recurrent episodes',
         riskFactors: 'Discontinuation symptoms, suicide risk (especially early treatment), drug interactions'
     },
+    'psychiatric-presentations': {
+        title: 'Psychiatric Presentations & Treatment Ladder (2024 overview)',
+        category: 'mental-health',
+        evidenceLevel: 'Evidence-based summary (educational)',
+        lastUpdated: '2024',
+        organisation: 'Consensus summary',
+        scope: 'Common psychiatric conditions with distinguishing features, stepped pharmacological/psychological options, investigations, and involuntary care triggers. Always follow local protocols.',
+        conditions: {
+            'Major depressive disorder': {
+                presentation: '≥2 weeks of low mood/anhedonia, sleep/appetite change, fatigue, guilt, poor concentration; no mania/hypomania history',
+                distinguishing: 'Episode length, anhedonia, psychomotor change; exclude bipolarity and substance causes',
+                firstLine: 'SSRI/SNRI + evidence-based psychotherapy (CBT/IPT/behavioral activation); safety planning',
+                secondLine: 'Switch SSRI/SNRI, mirtazapine or bupropion; augmentation with atypical antipsychotic or lithium in selected cases',
+                treatmentResistant: 'ECT for severe/psychotic or resistant cases; consider rTMS where available',
+                investigations: 'CBC, CMP, TSH, B12/folate, glucose/lipids (if starting some meds), pregnancy test if relevant; vitals, BMI',
+                involuntaryCare: 'Risk to self/others or grave disability + impaired capacity; document assessment and consider least restrictive option'
+            },
+            'Bipolar disorder': {
+                presentation: 'Episodic elevated/irritable mood, ↓need for sleep, pressured speech, risky behavior; depressive episodes common',
+                distinguishing: 'History of mania/hypomania, family history, antidepressant-induced switches',
+                firstLine: 'Mood stabilizer (lithium, valproate) or atypical antipsychotic; psychoeducation and sleep hygiene',
+                secondLine: 'Alternative mood stabilizer or combo mood stabilizer + atypical antipsychotic; cautious antidepressant use only with mood stabilizer',
+                treatmentResistant: 'Lithium or clozapine for refractory mania; ECT for severe mania/depression or catatonia',
+                investigations: 'Renal/thyroid baseline for lithium, LFTs/platelets for valproate, pregnancy test if teratogenic risk, ECG if QT risk, glucose/lipids/weight',
+                involuntaryCare: 'Dangerousness or inability to care for self due to mania/psychosis may justify detention per statute'
+            },
+            'Schizophrenia spectrum': {
+                presentation: '≥6 months psychosis with functional decline; hallucinations, delusions, disorganized speech/behavior, negative symptoms',
+                distinguishing: 'Chronicity, formal thought disorder, negative symptoms; rule out substance/medical causes',
+                firstLine: 'Atypical antipsychotic + psychoeducation and social support',
+                secondLine: 'Switch antipsychotic; consider long-acting injectable for adherence; psychosocial rehabilitation',
+                treatmentResistant: 'Clozapine after two adequate antipsychotic trials; ECT for catatonia or select cases',
+                investigations: 'CBC, CMP, fasting glucose/lipids, prolactin if symptomatic, ECG for QT risk, weight/BMI, waist circumference',
+                involuntaryCare: 'When risk to self/others or grave disability; follow formal assessment, time-limited holds, appeal rights'
+            },
+            'Generalised anxiety disorder': {
+                presentation: 'Excessive, hard-to-control worry ≥6 months with restlessness, muscle tension, sleep disturbance',
+                distinguishing: 'Worry not limited to specific triggers; persistent somatic tension; exclude hyperthyroidism/substance use',
+                firstLine: 'SSRI/SNRI plus CBT (worry exposure, cognitive restructuring)',
+                secondLine: 'Buspirone or pregabalin per guidelines; switch SSRI/SNRI; short hydroxyzine where appropriate',
+                treatmentResistant: 'Specialist review for augmentation strategies and comorbidities',
+                investigations: 'TSH, CBC, CMP as indicated; substance use screen; consider GAD-7 monitoring',
+                involuntaryCare: 'Rare—only if severe risk (e.g., suicidality) or inability to care for self'
+            },
+            'Panic disorder': {
+                presentation: 'Recurrent unexpected panic attacks + persistent concern/avoidance; may have agoraphobia',
+                distinguishing: 'Abrupt surges of intense fear with autonomic symptoms; fear of future attacks',
+                firstLine: 'SSRI/SNRI and CBT with interoceptive exposure',
+                secondLine: 'Switch SSRI/SNRI; short benzodiazepine bridge only if appropriate and brief',
+                treatmentResistant: 'Higher-intensity CBT or medication adjustments with specialist input',
+                investigations: 'Rule out mimics: ECG, TSH, glucose, CBC/CMP; urine tox if substance use suspected',
+                involuntaryCare: 'Uncommon; consider only with acute safety risk'
+            },
+            'Post-traumatic stress disorder': {
+                presentation: 'Trauma exposure with intrusion, avoidance, negative cognition/mood, and hyperarousal >1 month',
+                distinguishing: 'Clear trauma link; re-experiencing and avoidance clusters',
+                firstLine: 'Trauma-focused psychotherapy (TF-CBT, EMDR) plus SSRI/SNRI if needed',
+                secondLine: 'Alternative SSRI/SNRI; prazosin for nightmares per guidelines',
+                treatmentResistant: 'Specialist trauma programs; combined pharmacotherapy and psychotherapy',
+                investigations: 'Labs guided by medication choice; screen for TBI and substance use; monitor BP if prazosin',
+                involuntaryCare: 'Only if acute risk (suicidality/self-neglect) otherwise voluntary care preferred'
+            },
+            'Obsessive-compulsive disorder': {
+                presentation: 'Intrusive obsessions with compulsions to reduce anxiety; insight varies',
+                distinguishing: 'Time-consuming rituals, ego-dystonic thoughts; differentiate from psychosis',
+                firstLine: 'High-dose SSRI plus CBT with exposure and response prevention',
+                secondLine: 'Clomipramine or SSRI switch; augment with atypical antipsychotic in select cases; intensify ERP',
+                treatmentResistant: 'Specialist OCD programs; rTMS (SMA target) in some settings; DBS in exceptional cases',
+                investigations: 'ECG if clomipramine, CMP/Na for SSRIs when indicated; Y-BOCS for severity tracking',
+                involuntaryCare: 'Rare unless severe risk or inability to self-care'
+            },
+            'ADHD (adult)': {
+                presentation: 'Inattention and/or hyperactivity-impulsivity across settings since childhood with impairment',
+                distinguishing: 'Developmental history, executive dysfunction; differentiate from anxiety/depression burnout',
+                firstLine: 'Stimulants (methylphenidate/amphetamine classes) where suitable or atomoxetine; psychoeducation/organizational strategies',
+                secondLine: 'Switch stimulant class or atomoxetine; consider guanfacine ER per guidelines',
+                treatmentResistant: 'Behavioral coaching, workplace/school accommodations; specialist consultation',
+                investigations: 'Baseline vitals/weight, cardiac history; ECG if cardiac risk, BP/HR monitoring',
+                involuntaryCare: 'Not typically applicable'
+            },
+            'Eating disorders': {
+                presentation: 'AN: restriction, low weight, fear of weight gain, body image disturbance. BN: binge/purge with normal weight and compensatory behaviors',
+                distinguishing: 'Weight trajectory, compensatory behaviors, medical instability signs (bradycardia, hypotension)',
+                firstLine: 'AN: nutritional rehabilitation + psychotherapy (FBT, CBT-E). BN: CBT-E + SSRI (fluoxetine)',
+                secondLine: 'BN: alternative SSRI/SNRI or psychotherapy intensification. AN: specialist-led psychotherapy; olanzapine in some cases',
+                treatmentResistant: 'Higher level of care (day/inpatient), NG feeding when indicated, multidisciplinary team',
+                investigations: 'CBC, CMP, Mg/Phos, Ca, LFTs, glucose, ECG (QT risk), vitals, weight/BMI, orthostatics, pregnancy test if relevant; bone density in AN',
+                involuntaryCare: 'May be used for life-threatening malnutrition/instability per local statutes with capacity review'
+            }
+        }
+    },
     'obesity': {
         title: 'Obesity Management (NICE NG189 2024)',
         category: 'endocrine',
