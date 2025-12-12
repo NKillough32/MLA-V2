@@ -5172,6 +5172,9 @@ class MLAQuizApp {
             '$1<br>$2'
         );
 
+        // Break after reference ranges when the next value starts with a digit (e.g., "(0.8-1.5) 24 hour urinary calcium")
+        formatted = formatted.replace(/(\([^)]+\))\s+(\d)/g, '$1<br>$2');
+
         // Handle uppercase acronym-style test names immediately after reference ranges
         // e.g., "(50-125) ALT" or "(135-145) CRP" should break cleanly onto a new line
         formatted = formatted.replace(/(\([^)]+\))\s+([A-Z]{2,}(?![a-z]))/g, '$1<br>$2');
