@@ -1298,6 +1298,245 @@
             border-color: rgba(14, 165, 233, 0.4);
         }
 
+        /* Psychiatry Playbook */
+        .psychiatry-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .psychiatry-hero {
+            display: grid;
+            grid-template-columns: 2fr 1.1fr;
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .psychiatry-hero-copy {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(6, 182, 212, 0.08));
+            border: 1px solid var(--v2-border);
+            border-radius: 16px;
+            padding: 18px;
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .psychiatry-eyebrow {
+            margin: 0 0 6px 0;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--v2-text-tertiary);
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .psychiatry-lede {
+            margin: 6px 0 10px 0;
+            color: var(--v2-text-secondary);
+        }
+
+        .psychiatry-hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .psychiatry-hero-stats span {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 30px;
+            padding: 8px 12px;
+            font-weight: 600;
+            color: var(--v2-text-primary);
+        }
+
+        .psychiatry-hero-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 16px;
+            padding: 18px;
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .psychiatry-hero-card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .psychiatry-hero-card ul {
+            margin: 0 0 10px 18px;
+            color: var(--v2-text-secondary);
+            padding-left: 0;
+        }
+
+        .psychiatry-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 999px;
+            font-weight: 600;
+            color: var(--v2-text-primary);
+        }
+
+        .psychiatry-controls {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .psychiatry-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .psychiatry-filter-btn {
+            border: 1px solid var(--v2-border);
+            background: var(--v2-bg-card);
+            border-radius: 999px;
+            padding: 8px 12px;
+            cursor: pointer;
+            color: var(--v2-text-primary);
+            transition: all var(--v2-transition-fast);
+        }
+
+        .psychiatry-filter-btn.active,
+        .psychiatry-filter-btn:hover {
+            background: linear-gradient(135deg, rgba(var(--v2-primary-rgb), 0.12), rgba(6, 182, 212, 0.12));
+            border-color: var(--v2-primary);
+            color: var(--v2-primary-dark);
+            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .psychiatry-search {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .psychiatry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .psychiatry-card {
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: var(--v2-shadow-sm);
+            transition: transform var(--v2-transition-base), box-shadow var(--v2-transition-base);
+        }
+
+        .psychiatry-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--v2-shadow-md);
+        }
+
+        .psychiatry-card-header {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .psychiatry-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: rgba(var(--v2-primary-rgb), 0.08);
+            border: 1px solid rgba(var(--v2-primary-rgb), 0.2);
+            font-size: 22px;
+        }
+
+        .psychiatry-card-meta {
+            flex: 1;
+        }
+
+        .psychiatry-summary {
+            margin: 6px 0;
+            color: var(--v2-text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .psychiatry-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .psychiatry-badge {
+            background: rgba(var(--v2-primary-rgb), 0.08);
+            color: var(--v2-primary-dark);
+            border: 1px solid rgba(var(--v2-primary-rgb), 0.18);
+            border-radius: 10px;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .psychiatry-chip {
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-weight: 700;
+            border: 1px solid var(--v2-border);
+            color: var(--v2-text-primary);
+            white-space: nowrap;
+        }
+
+        .psychiatry-chip.danger {
+            background: rgba(239, 68, 68, 0.08);
+            border-color: rgba(239, 68, 68, 0.3);
+            color: #b91c1c;
+        }
+
+        .psychiatry-chip.neutral {
+            background: rgba(var(--v2-primary-rgb), 0.05);
+            border-color: rgba(var(--v2-primary-rgb), 0.2);
+            color: var(--v2-primary-dark);
+        }
+
+        .psychiatry-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .psychiatry-section {
+            background: var(--v2-bg-elevated);
+            border: 1px solid var(--v2-border);
+            border-radius: 12px;
+            padding: 10px 12px;
+        }
+
+        .psychiatry-section-title {
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--v2-text-primary);
+        }
+
+        .psychiatry-section ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--v2-text-secondary);
+        }
+
+        @media (max-width: 900px) {
+            .psychiatry-hero {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Tools Header */
         .tools-header {
             padding: 16px 20px;
@@ -11251,6 +11490,7 @@
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
             <button class="tool-nav-btn" data-tool="calculators">🧮 Calculators</button>
             <button class="tool-nav-btn" data-tool="guidelines">📋 Guidelines</button>
+            <button class="tool-nav-btn" data-tool="psychiatry">🧠 Psychiatry Playbook</button>
             <button class="tool-nav-btn" data-tool="med-stats-ethics">📈 Stats &amp; Ethics</button>
             <button class="tool-nav-btn" data-tool="clinical-pearls">💡 Clinical Pearls</button>
             <button class="tool-nav-btn" data-tool="ophthalmology">👁️ Ophthalmology</button>
@@ -11363,6 +11603,13 @@
             <div id="guidelines-panel" class="tool-panel">
                 <!-- Content loaded dynamically by JavaScript -->
                 <div class="loading-message">📋 Loading guidelines...</div>
+            </div>
+
+            <!-- Psychiatry Playbook Panel -->
+            <div id="psychiatry-panel" class="tool-panel">
+                <div id="psychiatry-container" class="psychiatry-container">
+                    <div class="loading-message">🧠 Loading psychiatry playbook...</div>
+                </div>
             </div>
 
             <!-- Medical Statistics, Epidemiology & Ethics Panel -->
