@@ -89,6 +89,16 @@ class MedStatsEthicsManager {
                 badge: 'Statistics',
                 subsections: [
                     {
+                        heading: 'Plain-language Core Terms',
+                        items: [
+                            'Confidence interval: range of values that likely contains the true effect (e.g., 95% CI 0.80–0.95 means the true effect probably lies between 0.80 and 0.95).',
+                            'P-value: probability of seeing the observed effect (or more extreme) if there is no true effect — a small p-value suggests the data are unlikely under the “no effect” assumption but does not measure effect size.',
+                            'Effect size: the magnitude of the difference (mean difference, risk difference, odds ratio, hazard ratio); pair with CIs to judge both size and precision.',
+                            'Absolute vs relative risk: absolute uses real-world numbers (10% → 5% is 5% absolute reduction), relative compares proportions (50% relative reduction); always share both when counselling patients.',
+                            'Likelihood ratio: how much a test shifts probability; LR+ >10 rules in strongly, LR− <0.1 rules out strongly when combined with pre-test probability via Bayes.'
+                        ]
+                    },
+                    {
                         heading: 'Study Design',
                         items: [
                             'RCTs, cohort, case-control, cross-sectional and ecological designs; choose design to match causal question, timelines and feasibility.',
@@ -347,6 +357,16 @@ class MedStatsEthicsManager {
                 title: 'Medical Ethics & Governance',
                 badge: 'Ethics',
                 subsections: [
+                    {
+                        heading: 'Plain-language Ethics Anchors',
+                        items: [
+                            'Capacity: decision-specific ability to understand, retain, weigh information and communicate a choice; presume capacity unless evidence shows otherwise.',
+                            'Consent: a voluntary, informed agreement by someone with capacity (or via best-interests/legal proxy if capacity is lacking); share material risks, benefits and alternatives in clear language.',
+                            'Best interests: choose the least restrictive option that aligns with the person’s values, past wishes, and current preferences; involve family/advocates and document reasoning.',
+                            'Duty of candour: be open and honest when things go wrong, explain what happened, apologise, and outline next steps or redress.',
+                            'Confidentiality vs safeguarding: protect patient information but disclose without consent when law or serious risk of harm requires it—record your rationale and who was informed.'
+                        ]
+                    },
                     {
                         heading: 'GMC: Good Medical Practice  -  Maintaining Trust',
                         items: [
