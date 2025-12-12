@@ -432,5 +432,36 @@ export const psychiatryLibrary = [
             'Sleep diary, wearable data where available',
             'Reassess after 4–6 weeks of behavioural intervention'
         ]
+    },
+    {
+        id: 'uk-mental-health-law',
+        title: 'UK & Northern Ireland mental health law',
+        icon: '⚖️',
+        tags: ['Legal', 'High risk', 'Safeguarding'],
+        summary: 'Quick reference for detention, deprivation of liberty and police powers across UK nations and Northern Ireland.',
+        distinguishing: [
+            'England/Wales: Mental Health Act 1983 (as amended) and Mental Capacity Act 2005; NI: Mental Health (Northern Ireland) Order 1986 plus MCA (NI) 2016',
+            'Always document capacity, least restrictive option, consultation with nearest relative/nominee, and right to appeal'
+        ],
+        firstLine: [
+            'England/Wales detention: Section 2 (assessment up to 28d, 2 doctors + AMHP), Section 3 (treatment up to 6mo, renewable), Section 4 emergency (72h, 1 doctor + AMHP), Section 5(2)/(4) holding powers in hospital; CTOs under Section 17A with recall.',
+            'Northern Ireland detention: Article 4 admission for assessment (up to 14d with 2 medical recommendations + ASW/nearest relative application), Article 12 detention for treatment (up to 6mo, renewable), Article 7 emergency (48h by a medical practitioner), guardianship alternatives under Article 15.'
+        ],
+        secondLine: [
+            'Deprivation of liberty (England/Wales): MCA 2005 Schedule A1 DoLS or forthcoming LPS—requires lack of capacity, best interests, necessity/proportionality; supervisory body authorises, person/representative may challenge via Court of Protection.',
+            'Deprivation of liberty (Northern Ireland): MCA (NI) 2016 DoLS—care plan must show lack of capacity, best interests and least restriction; Trust panel authorises, offers IMCA, and access to Review Tribunal for appeal.'
+        ],
+        investigations: [
+            'Record capacity assessment, reasons alternatives are unsuitable, consultation with nearest relative/nominee and views of carers.',
+            'Ensure medical recommendations, AMHP/ASW applications, authorisation forms and rights information are filed in notes.'
+        ],
+        crisis: [
+            'Police powers (England/Wales): Section 136 remove from public place to a health-based place of safety (max 24h +12h extension); Section 135 warrant to enter private premises with AMHP/doctor to remove to place of safety.',
+            'Police powers (Northern Ireland): Mental Health (NI) Order Article 129 removal from public place to place of safety (up to 24h); Article 130 warrant to enter and remove from private premises with medical practitioner/ASW involvement; notify on-call psychiatry immediately.'
+        ],
+        monitoring: [
+            'On admission give rights information, offer IMHA/IMCA, and document consent to treatment safeguards (e.g., SOAD after 3 months Section 58).',
+            'Track detention/authorisation expiry dates, tribunal/hearing timelines, and regular capacity reviews to move to least restrictive care.'
+        ]
     }
 ];
