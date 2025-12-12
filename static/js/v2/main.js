@@ -31,6 +31,7 @@ import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
+import { psychiatryLibrary } from '../data/psychiatryLibrary.js';
 
 // Clinical Feature Modules (bridge to V1)
 import { differentialDxManager } from './modules/DifferentialDxManager.js';
@@ -1079,6 +1080,7 @@ class MLAQuizApp {
             'contraception-hrt': 'contraception-hrt-panel',
             'med-stats-ethics': 'med-stats-ethics-panel',
             'clinical-pearls': 'clinical-pearls-panel',
+            'psychiatry': 'psychiatry-panel',
             'ophthalmology': 'ophthalmology-panel'
         };
         
@@ -1153,6 +1155,9 @@ class MLAQuizApp {
                 break;
             case 'clinical-pearls':
                 this.loadClinicalPearlsContent(panel);
+                break;
+            case 'psychiatry':
+                this.loadPsychiatryContent(panel);
                 break;
             case 'ophthalmology':
                 this.loadOphthalmologyContent(panel);
@@ -2310,6 +2315,157 @@ class MLAQuizApp {
         container.innerHTML = contentHtml;
         container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load dedicated psychiatry library with enhanced visuals
+     */
+    loadPsychiatryContent(panel) {
+        if (!panel) {
+            console.error('loadPsychiatryContent: panel is null');
+            return;
+        }
+
+        const container = panel.querySelector('#psychiatry-container') || panel;
+        const conditions = psychiatryLibrary || [];
+
+        if (!conditions.length) {
+            container.innerHTML = '<div class="no-content">Psychiatry library not loaded</div>';
+            return;
+        }
+
+        const allTags = Array.from(new Set(conditions.flatMap(condition => condition.tags || [])));
+        const conditionCount = conditions.length;
+
+        container.innerHTML = `
+            <div class="psychiatry-hero">
+                <div class="psychiatry-hero-copy">
+                    <p class="psychiatry-eyebrow">Mental health quick board</p>
+                    <h2>🧠 Psychiatry Playbook</h2>
+                    <p class="psychiatry-lede">Stepped care, risk flags, and rapid investigations for common psychiatric presentations.</p>
+                    <div class="psychiatry-hero-stats">
+                        <span><strong data-psychiatry-count>${conditionCount}</strong> conditions</span>
+                        <span><strong>6</strong> crisis prompts</span>
+                        <span><strong>Stepped</strong> pharmacological & therapy plans</span>
+                    </div>
+                </div>
+                <div class="psychiatry-hero-card">
+                    <h3>When to escalate</h3>
+                    <ul>
+                        <li>🚨 Immediate risk to self/others or grave self-neglect</li>
+                        <li>🤱 Postpartum onset of psychosis or rapid cycling mood</li>
+                        <li>🍃 Severe withdrawal, delirium, or uncontrolled agitation</li>
+                        <li>📋 Document capacity, safeguarding, and least restrictive plans</li>
+                    </ul>
+                    <div class="psychiatry-pill">Liaison psychiatry • Crisis team • Mother & baby unit</div>
+                </div>
+            </div>
+            <div class="psychiatry-controls">
+                <div class="psychiatry-filters">
+                    ${['All', ...allTags].map(tag => `<button class="psychiatry-filter-btn${tag === 'All' ? ' active' : ''}" data-tag="${tag}">${tag}</button>`).join('')}
+                </div>
+                <div class="psychiatry-search">
+                    <input id="psychiatry-search" class="tool-search" type="text" placeholder="Search symptoms, therapies, risks..." aria-label="Search psychiatry library">
+                    <button id="psychiatry-search-btn">🔍</button>
+                </div>
+            </div>
+            <div id="psychiatry-cards" class="psychiatry-grid"></div>
+        `;
+
+        const cardsContainer = container.querySelector('#psychiatry-cards');
+        const searchInput = container.querySelector('#psychiatry-search');
+        const searchBtn = container.querySelector('#psychiatry-search-btn');
+        let activeTag = 'All';
+
+        const renderSection = (title, icon, items = []) => {
+            if (!items.length) return '';
+            return `
+                <div class="psychiatry-section">
+                    <div class="psychiatry-section-title">${icon} ${title}</div>
+                    <ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>
+                </div>
+            `;
+        };
+
+        const renderCards = () => {
+            const query = (searchInput?.value || '').toLowerCase();
+
+            const filtered = conditions.filter(condition => {
+                const matchesTag = activeTag === 'All' || (condition.tags || []).includes(activeTag);
+                if (!matchesTag) return false;
+
+                if (!query) return true;
+
+                const haystack = [
+                    condition.title,
+                    condition.summary,
+                    ...(condition.tags || []),
+                    ...(condition.distinguishing || []),
+                    ...(condition.firstLine || []),
+                    ...(condition.secondLine || []),
+                    ...(condition.investigations || []),
+                    ...(condition.crisis || []),
+                    ...(condition.monitoring || [])
+                ].join(' ').toLowerCase();
+
+                return haystack.includes(query);
+            });
+
+            if (!cardsContainer) return;
+
+            if (filtered.length === 0) {
+                cardsContainer.innerHTML = '<div class="no-results"><h3>No psychiatry topics found</h3><p>Try another tag or search term.</p></div>';
+                return;
+            }
+
+            cardsContainer.innerHTML = filtered.map(condition => {
+                const badgeHtml = (condition.tags || []).map(tag => `<span class="psychiatry-badge">${tag}</span>`).join('');
+                const riskChip = (condition.tags || []).includes('High risk')
+                    ? '<span class="psychiatry-chip danger">🚨 High risk</span>'
+                    : '<span class="psychiatry-chip neutral">🧠 Core topic</span>';
+
+                return `
+                    <article class="psychiatry-card">
+                        <div class="psychiatry-card-header">
+                            <div class="psychiatry-icon">${condition.icon || '🧠'}</div>
+                            <div class="psychiatry-card-meta">
+                                <div class="psychiatry-tags">${badgeHtml}</div>
+                                <h3>${condition.title}</h3>
+                                <p class="psychiatry-summary">${condition.summary}</p>
+                            </div>
+                            ${riskChip}
+                        </div>
+                        <div class="psychiatry-card-grid">
+                            ${renderSection('Distinguishing features', '🧭', condition.distinguishing)}
+                            ${renderSection('First-line plan', '🥇', condition.firstLine)}
+                            ${renderSection('Second-line options', '🥈', condition.secondLine)}
+                        </div>
+                        <div class="psychiatry-card-grid">
+                            ${renderSection('Investigations & baselines', '🔬', condition.investigations)}
+                            ${renderSection('Crisis or safeguarding', '🚨', condition.crisis)}
+                            ${renderSection('Monitoring & follow-up', '📅', condition.monitoring)}
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        };
+
+        const filterButtons = container.querySelectorAll('.psychiatry-filter-btn');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeTag = btn.dataset.tag || 'All';
+                renderCards();
+            });
+        });
+
+        if (searchInput && searchBtn) {
+            searchInput.addEventListener('input', () => requestAnimationFrame(renderCards));
+            searchBtn.addEventListener('click', renderCards);
+        }
+
+        renderCards();
     }
 
     /**
