@@ -39,7 +39,8 @@ export const psychiatryLibrary = [
         summary: 'Episodes of mania/hypomania with reduced sleep, pressured speech, risk-taking; depressive episodes common.',
         distinguishing: [
             'History of mania/hypomania or antidepressant-induced switches',
-            'Family history, seasonal patterns, clear episodicity'
+            'Family history, seasonal patterns, clear episodicity',
+            'Type I: ≥1 manic episode (may have psychosis); Type II: hypomania + major depression without full mania'
         ],
         firstLine: [
             'Mood stabiliser (lithium 400–1200mg/day in divided doses or valproate 500–2000mg/day) or atypical antipsychotic',
