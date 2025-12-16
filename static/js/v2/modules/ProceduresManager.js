@@ -304,17 +304,18 @@ export class ProceduresManager {
      * Render procedure list for a category
      */
     renderProcedureList(category = 'all') {
+        const allProcedures = Object.entries(this.procedures || {}).map(([id, proc]) => ({ id, ...proc }));
         const procedures = category === 'all' 
-            ? Object.entries(this.procedures || {}).map(([id, proc]) => ({ id, ...proc }))
+            ? allProcedures
             : this.getProceduresByCategory(category);
         
-        if (procedures.length === 0) {
+        if (allProcedures.length === 0) {
             return '<p class="no-results">No procedures found.</p>';
         }
 
         const categories = this.getCategories();
         const categoryFilters = categories.map(cat => `
-            <button class="category-filter-btn" data-category="${cat.category}" 
+            <button class="category-filter-btn ${category === cat.category ? 'active' : ''}" data-category="${cat.category}" 
                     onclick="window.proceduresManager.filterByCategory('${cat.category}')">
                 ${this.formatCategoryName(cat.category)} (${cat.count})
             </button>
@@ -327,9 +328,9 @@ export class ProceduresManager {
             </div>
             
             <div class="category-filters" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <button class="category-filter-btn active" data-category="all" 
+                <button class="category-filter-btn ${category === 'all' ? 'active' : ''}" data-category="all" 
                         onclick="window.proceduresManager.filterByCategory('all')">
-                    All Procedures (${procedures.length})
+                    All Procedures (${allProcedures.length})
                 </button>
                 ${categoryFilters}
             </div>
@@ -518,11 +519,6 @@ export class ProceduresManager {
         if (!container) return;
         
         container.innerHTML = this.renderProcedureList(category);
-        
-        // Update active filter button
-        document.querySelectorAll('.category-filter-btn').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.category === category);
-        });
     }
 
     /**
