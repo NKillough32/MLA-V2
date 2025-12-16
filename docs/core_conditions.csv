@@ -1,0 +1,712 @@
+Domain,Core Conditionsÿ
+Cardiology,Acute coronary syndromeÿ
+Cardiology,Cardiac arrestÿ
+Cardiology,Anginaÿ
+Cardiology,Atrial fibrillationÿ
+Cardiology,Atrial arrhythmiasÿ
+Cardiology,Complete heart blockÿ
+Cardiology,Ventricular tachycardiaÿ
+Cardiology,Acute Heart failureÿ
+Cardiology,Chronic Heart Failure
+Cardiology,Essential and Secondary Hypertension
+Cardiology,Infective?Endocarditis
+Cardiology,Cardiac tamponade
+Cardiology,Acute pericarditis?
+Cardiology,Pericardial effusion
+Cardiology,Constrictive pericarditis
+Cardiology,Aortic valve disease
+Cardiology,Mitral valve disease?
+Cardiology,Right heart valve
+Cardiology,Myocarditis
+Cardiology,Cardiomyopathy?
+Dermatology,Atopic dermatitis
+Dermatology,Irritant contact dermatitis
+Dermatology,Allergic contact dermatitis
+Dermatology,Erythroderma
+Dermatology,Other eczema
+Dermatology,Melanoma?
+Dermatology,Squamous cell carcinoma
+Dermatology,Basal cell carcinoma
+Dermatology,Actinic Keratosis
+Dermatology,Bowen's Disease
+Dermatology,Cutaneous Lymphoma
+Dermatology,Melanocytic naevi?
+Dermatology,Seborrhoeic keratoses
+Dermatology,Impetigo
+Dermatology,Erysipelas?
+Dermatology,Cellulitis?
+Dermatology,Necrotising fasciitis?
+Dermatology,Folliculitis
+Dermatology,Herpes simplex?virus
+Dermatology,Varicella zoster
+Dermatology,Viral warts
+Dermatology,Scabies?
+Dermatology,Head lice
+Dermatology,Urticaria
+Dermatology,Steven-Johnson syndrome
+Dermatology,Toxic epidermal necrolysis?
+Dermatology,Drug eruptions?
+Dermatology,Erythema nodosum
+Dermatology,Erythema multiforme
+Dermatology,Venous ulcers
+Dermatology,Pemphigus vulgaris?
+Dermatology,Bullous pemphigoid
+Dermatology,Rosacea
+Dermatology,Psoroasis 
+Dermatology,Acne Vulgaris
+Endocrine ,Type 1 diabetesÿ
+Endocrine ,Type 2 diabetesÿ
+Endocrine ,Diabetes in pregnancyÿ-Gestational
+Endocrine ,Diabetes in pregnancyÿ-pre existing
+Endocrine ,Diabetic ketoacidosisÿ
+Endocrine ,Hyperosmolar hyperglycaemic state?
+Endocrine ,Diabetic nephropathy
+Endocrine ,Diabetic neuropathy
+Endocrine ,Diabetic retinopathy
+Endocrine ,Hypoglycaemia
+Endocrine ,Hypothyroidismÿ
+Endocrine ,Thyrotoxicosisÿÿ
+Endocrine ,Thyroid cancerÿ
+Endocrine ,Thyroid eye diseaseÿ
+Endocrine ,Thyroid nodulesÿ
+Endocrine ,Addison?s diseaseÿ
+Endocrine ,Cushing?s syndromeÿ
+Endocrine ,Conn?s syndromeÿ
+Endocrine ,Cushing?s diseaseÿ
+Endocrine ,Pituitary tumoursÿ
+Endocrine ,Diabetes insipidusÿ
+Endocrine ,Hyperparathyroidism
+Endocrine ,Hypoparathyroidism
+Endocrine ,Hypercalcaemia?
+Endocrine ,Hypocalcaemia
+Endocrine ,Obesity 
+Endocrine ,Polycystic Ovarian Syndrome (PCOS) and Hirsutism
+Endocrine ,Hyperlipidaemia
+Endocrine ,SIADH
+Endocrine ,Hypothermia and hyperthermia
+,Adverse Drug Reactions
+Endocrine ,Poisoning and overdose
+Gastrointestinal ,Gastric cancer?
+Gastrointestinal ,Gastro-oesophageal reflux disease and hiatus hernia
+Gastrointestinal ,Peptic ulcer disease and gastritis
+Gastrointestinal ,Oesophageal cancer
+Gastrointestinal ,Gallstones and biliary colic
+Gastrointestinal ,Acute pancreatitis
+Gastrointestinal ,Chronic pancreatitis
+Gastrointestinal ,Pancreatic cancer
+Gastrointestinal ,Acute hepatic failure
+Gastrointestinal ,Acute hepatitis
+Gastrointestinal ,Alcoholic hepatitis
+Gastrointestinal ,Cirrhosis
+Gastrointestinal ,Non-Alcoholic fatty liver
+Gastrointestinal ,Viral hepatitis
+Gastrointestinal ,Autoimmune hepatitis
+Gastrointestinal ,Drug-induced hepatitis
+Gastrointestinal ,Ascites
+Gastrointestinal ,Haemochromatosis
+Gastrointestinal ,Hepatocellular cancer and Liver metastasis
+Gastrointestinal ,Metastatic disease 
+Gastrointestinal ,Colorectal tumours
+Gastrointestinal ,Inflammatory bowel disease
+Gastrointestinal ,Diverticular disease
+Gastrointestinal ,Malabsorption
+Gastrointestinal ,Malabsorption -Coeliac disease
+Gastrointestinal ,Helicobacter pyloriÿ
+Gastrointestinal ,Infectious colitisÿ
+Gastrointestinal ,Irritable bowel syndromeÿ
+Gastrointestinal ,Malnutrition
+Gastrointestinal ,Eating disorders?
+Haematology,Blood transfusionÿ
+Haematology,Transfusion reactionsÿ
+Haematology,Anticoagulated patient and bleedingÿ
+Haematology,High INR and bleedingÿ
+Haematology,Anaemiaÿof coagulation and its disorders
+Haematology,Disseminated intravascular coagulationÿ
+Haematology,Inherited thrombophiliaÿ
+Haematology,Acquired factors for VTEÿ
+Haematology,Thrombotic thrombocytopenic purpuraÿ
+Haematology,Haemophiliaÿ
+Haematology,Von Willebrand's disorderÿ
+Haematology,Microcytic anaemiaÿÿ
+Haematology,Macrocytic anaemiaÿ
+Haematology,Haemolytic anaemiaÿ
+Haematology,Haemolytic anaemia - Sickle cell diseaseÿ
+Haematology,Haemolytic anaemia - Thalassaemiaÿ
+Haematology,Haemolytic anaemia - Autoimmune haemolytic anaemiaÿ
+Haematology,Pancytopeniaÿ
+Haematology,Neutropenic sepsisÿ
+Haematology,Neutropeniaÿ
+Haematology,"Lymphocytosis, lymphadenopathy, splenomegalyÿ"
+Haematology,Leukaemiaÿ
+Haematology,Lymphomaÿ
+Haematology,Multiple myelomaÿ
+Haematology,Myeloproliferative/ myelodysplastic disordersÿ
+Haematology,Polycythaemiaÿ
+Haematology,Essential thrombocythaemiaÿ
+Haematology,Anaemia of chronic diseaseÿ
+Haematology,Cancerÿ
+Haematology,Chronic kidney diseaseÿ
+Haematology,Chronic liver diseaseÿ
+Haematology,Haemochromatosis/ iron overloadÿ
+Haematology,Anaemiaÿin pregnancy
+Haematology,Immune thrombocytopaenia (gestational)ÿ
+Haematology,Pulmonary embolism and deep vein thrombosis
+Haematology,Haemolytic disease of the newbornÿ
+Haematology,Immune thrombocytopaenia (neonatal)ÿ
+Haematology,Hyposplenism and splenectomy
+Immunology,Anaphylaxisÿ
+Immunology,Allergic disordersÿ
+Infection,Antibiotic stewardshipÿ
+Infection,Healthcare associated infectionsÿ
+Infection,Notifiable diseasesÿ
+Infection,Vaccination and immunisation
+Infection,Sepsis
+Infection,Tuberculosis
+Infection,HIV/ AIDS
+Infection,Human herpes viruses
+Infection,Viral hepatitisÿ
+Infection,COVID-19ÿÿ
+Infection,Influenzaÿ
+Infection,Upper respiratory tract infectionsÿ
+Infection,Lower respiratory tract infectionsÿ
+Infection,Bacterial and viral GI infectionsÿ
+Infection,Chlamydiaÿ
+Infection,Gonorrhoeaÿ
+Infection,Syphilisÿ
+Infection,"Human papilloma virus,ÿ"
+Infection,Herpes simplex virusÿ
+Infection,Trichomonas vaginalisÿ
+Infection,Bacterial vaginosisÿ
+Infection,Candidiasisÿ
+Infection,Pyrexia of unknown originÿ
+Infection,Traveller?s diarrhoeaÿ
+Infection,Malariaÿ
+Infection,Lyme disease
+Oncology,Squamous cell carcinoma
+Oncology,Basal cell carcinoma
+Oncology,Malignant melanoma
+Oncology,Gastrointestinal Malignanciesÿ
+Oncology,Colorectal tumours?
+Oncology,Gastric cancer?
+Oncology,Hepatocellular cancer
+Oncology,Pancreatic cancer?ÿ
+Oncology,Oesophageal cancerÿ
+Oncology,Lymphoma?
+Oncology,Leukaemia?
+Oncology,Multiple myeloma
+Oncology,Prostate cancer
+Oncology,Testicular cancer?
+Oncology,Bladder cancer?
+Oncology,Cervical cancer?
+Oncology,Ovarian cancer?
+Oncology,Endometrial cancer?
+Oncology,Breast cancer
+Oncology,Primary lung cancer
+Oncology,Thyroid cancer?
+Oncology,Spinal cord compression 
+Oncology,Hypercalcaemia 
+Oncology,Neutropaenic sepsis?
+Oncology,Brain metastases?
+Oncology,Metastatic Disease 
+Renal,Hyponatraemiaÿ
+Renal,Hypernatraemiaÿ
+Renal,Hypokalaemiaÿ
+Renal,Hyperkalaemiaÿ
+Renal,Isotonic fluid lossÿ
+Renal,Other electrolyte imbalances
+Renal,Urinary tract infectionÿ
+Renal,Acute pyelonephritisÿ
+Renal,Urethral syndromeÿ
+Renal,Chronic kidney diseaseÿ
+Renal,Diabetic nephropathyÿ
+Renal,Hypertensive kidney disease 
+Renal,Nephrotic syndrome?
+Renal,Glomerulonephritis?
+Renal,Polycystic kidney disease
+Respiratory,Asthmaÿ
+Respiratory,Anaphylaxisÿ
+Respiratory,COPDÿ
+Respiratory,Asthmaÿ/COPD Overalp 
+Respiratory,Allergic disordersÿ
+Respiratory,Respiratory failureÿ
+Respiratory,Pulmonary embolism and deep vein thrombosisÿ
+Respiratory,Primary lung cancersÿ
+Respiratory,Metastatic disease
+Respiratory,Lower respiratory tract infectionÿ
+Respiratory,Pneumoniaÿ
+Respiratory,Upper respiratory tract infections
+Respiratory,Pulmonary tuberculosisÿ
+Respiratory,Bronchiectasis?
+Respiratory,Cystic Fibrosisÿ
+Respiratory,Pneumothoraxÿ
+Respiratory,Pleural effusion
+Respiratory,Sarcoidosis?
+Respiratory,Idiopathic pulmonary fibrosis
+Respiratory,Connective tissue and autoimmune diseases
+Rheumatologyÿ,Septic arthritis
+Rheumatologyÿ,Osteomyelitis?
+Rheumatologyÿ,Osteoporosis?
+Rheumatologyÿ,Rickets/Osteomalacia?
+Rheumatologyÿ,Rheumatoid arthritisÿ
+Rheumatologyÿ,Psoriatic arthritisÿ
+Rheumatologyÿ,Idiopathic/Seronegative arthritis
+Rheumatologyÿ,Ankylosing spondylitis?
+Rheumatologyÿ,Inflammatory bowel disease arthropathy
+Rheumatologyÿ,Reactive arthritisÿ
+Rheumatologyÿ,Rotator cuff pathology
+Rheumatologyÿ,Impingement syndrome/subacromial bursitis?
+Rheumatologyÿ,Medial and lateral epicondylitis
+Rheumatologyÿ,Carpal Tunnel syndrome
+Rheumatologyÿ,DeQuervain?s tenosynovitis?ÿ
+Rheumatologyÿ,Greater trochanter bursitis?
+Rheumatologyÿ,Spinal fracture
+Rheumatologyÿ,Systemic sclerosis (Scleroderma)
+Rheumatologyÿ,Sjogren's syndrome?ÿ
+Rheumatologyÿ,Vasculitis
+Rheumatologyÿ,Inherited connective tissue diseases?
+Rheumatologyÿ,Polymyalgia rheumatica (PMR) 
+Rheumatologyÿ,Giant cell arteritis (GCA) ÿ
+Rheumatologyÿ,Systemic lupus erythematosus (SLE) 
+Rheumatologyÿ,Osteoarthritis 
+Rheumatologyÿ,Crystal arthritis 
+Rheumatologyÿ,Fibromyalgia 
+Rheumatologyÿ,Chronic pain
+Rheumatologyÿ,Bursitis 
+Rheumatologyÿ,Anaphylaxis 
+Rheumatologyÿ,Allergic disorders 
+Care of the Elderly,Fluid and electrolyte imbalance?
+Care of the Elderly,Breakdown in social circumstances?
+Care of the Elderly,Blackouts and faints?
+Care of the Elderly,Dizziness?ÿ
+Care of the Elderly,Vertigo?
+Care of the Elderly,Multifactorial falls management?
+Care of the Elderly,Falls?ÿ
+Care of the Elderly,Immobility
+Care of the Elderly,Mental capacity concerns?
+Care of the Elderly,Dementia?
+Care of the Elderly,Delirium (Acute Confusional State)?
+Care of the Elderly,Chronic cognitive impairment
+Care of the Elderly,Urinary incontinence?
+Care of the Elderly,Faecal incontinence
+Care of the Elderly,Elder abuse
+Care of the Elderly,Stroke
+Care of the Elderly,Parkinson's disease
+Care of the Elderly,Assessment of Needs and Discharge Planning 
+Care of the Elderly,Frailty and Comprehensive Geriatric Assessment?
+Care of the Elderly,Frailty
+Care of the Elderly,Pressure sores and skin ulcers?
+Care of the Elderly,Malnutrition
+Care of the Elderly,"Sensory Impairment ? hearing loss, visual loss?"
+Care of the Elderly,Osteoporosis?ÿ
+Neurology,ÿIschaemic stroke
+Neurology,Intraparenchymal haemorrhage?
+Neurology,Transient ischaemic attack?
+Neurology,Subarachnoid haemorrhage
+Neurology,Subdural haemorrhage 
+Neurology,Extradural haemorrhage?
+Neurology,Head injury and coma?
+Neurology,Cerebral palsy and hypoxic ischaemic encephalopathy?
+Neurology,Meningitis?
+Neurology,Encephalitis
+Neurology,Brain abscess?
+Neurology,Multiple sclerosis?
+Neurology,Acoustic neuroma?
+Neurology,Brain metastases
+Neurology,Raised intracranial pressure 
+Neurology,Spinal cord compression?
+Neurology,Radiculopathies (single nerve root lesion)
+Neurology,Cauda equina syndrome 
+Neurology,Muscle disorders - Inherited muscular dystrophies
+Neurology,Muscle disorders - Acquired muscle disorders (e.g. polymyositis or drug-induced myopathies)
+Neurology,?Myasthenia gravis?
+Neurology,Peripheral nerve injuries/palsies - Carpal Tunnel syndrome
+Neurology,Peripheral nerve injuries/palsies - Bell's Palsy
+Neurology,Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies?
+Neurology,Polyneuropathies - Diabetic neuropathy?
+Neurology,Polyneuropathies - Guillain-Barre syndrome
+Neurology,Motor neurone disease?
+Neurology,?Neuromuscular respiratory failure?
+Neurology,Migraine 
+Neurology,Tension headache?
+Neurology,?Trigeminal neuralgia
+Neurology,Idiopathic intracranial hypertension
+Neurology,Chronic pain?
+Neurology,Syncope
+Neurology,Epilepsy?
+Neurology,Epilepsy -?Status epilepticus?
+Neurology,?Febrile convulsions
+Neurology,Parkinson's disease?ÿ
+Neurology,Essential tremor?
+Neurology,Cerebellar disorders
+Neurology,Chronic fatigue syndrome
+Neurology, Dementiaÿ
+Neurology, Wernicke?s encephalopathyÿ
+Neurology,Vestibular migrain
+Neurology,Posterior circulation strokeÿ
+Neurology, Vestibular neuronitisÿ
+Neurology,Benign paroxysmal positional vertigoÿ
+Neurology,Myasthenia gravis 
+Neurology, Motor neurone disease 
+Neurology, Neuromuscular respiratory failure 
+Palliative Care,Chronic painÿ
+Palliative Care,Breathlessnessÿ
+Palliative Care,Respiratory secretionsÿ
+Palliative Care,Coughÿ
+Palliative Care,Intestinal obstruction and ileus 
+Palliative Care,Nausea and vomiting
+Palliative Care,Depressionÿ
+Palliative Care,Suicidal ideation and Suicide
+Palliative Care,End of life careÿ
+Palliative Care,Terminal agitationÿ
+Anaesthesia and Critical Care,Atrial fibrillation 
+Anaesthesia and Critical Care,Atrial arrhythmias 
+Anaesthesia and Critical Care,Complete heart block 
+Anaesthesia and Critical Care,Ventricular tachycardia 
+Anaesthesia and Critical Care,Cardiac arrest
+Anaesthesia and Critical Care,Respiratory arrest
+Anaesthesia and Critical Care,Cardiac arrest
+Anaesthesia and Critical Care,Heart failure 
+Anaesthesia and Critical Care,Respiratory arrest 
+Anaesthesia and Critical Care,Evaluation of deteriorating patient 
+Anaesthesia and Critical Care,Multi-organ dysfunction syndrome
+Anaesthesia and Critical Care,Hypovolaemic 
+Anaesthesia and Critical Care,Cardiogenic 
+Anaesthesia and Critical Care,Distributive 
+Anaesthesia and Critical Care,Obstructive
+Anaesthesia and Critical Care,Acute pain management 
+Anaesthesia and Critical Care,Post-operative pain
+Anaesthesia and Critical Care,Asthma 
+Anaesthesia and Critical Care,Chronic obstructive pulmonary disease 
+Anaesthesia and Critical Care,Type 1 diabetes 
+Anaesthesia and Critical Care,Type 2 diabetes 
+Anaesthesia and Critical Care,Chronic kidney disease 
+Anaesthesia and Critical Care,Anaemia 
+Anaesthesia and Critical Care,Ischaemic heart disease
+Anaesthesia and Critical Care,Substance misuse disorder 
+Anaesthesia and Critical Care,Valvular heart disease 
+Anaesthesia and Critical Care,Essential and Secondary Hypertension 
+Anaesthesia and Critical Care,Respiratory Failure 
+Anaesthesia and Critical Care,Obesity
+Anaesthesia and Critical Care,Obstructive Sleep Apnoea 
+Anaesthesia and Critical Care,Type 1 diabetes 
+Anaesthesia and Critical Care,Type 2 diabetes 
+Anaesthesia and Critical Care,Fluid and electrolyte balance 
+Anaesthesia and Critical Care,Anaemia
+Anaesthesia and Critical Care,Sepsis 
+Anaesthesia and Critical Care,Pulmonary embolism and deep vein thrombosis 
+Anaesthesia and Critical Care,Fluid and electrolyte balance 
+Psychiatry,Self-harm 
+Psychiatry,Suicidal ideation and suicide 
+Psychiatry,Substance misuse disorderÿ
+Psychiatry,Alcoholÿ
+Psychiatry,Smokingÿ
+Psychiatry,Drugsÿ
+Psychiatry,Delirium (acute confusional state)ÿ
+Psychiatry,Dementiaÿ
+Psychiatry,Wernicke?s encephalopathyÿ
+Psychiatry,Bipolar effective disorderÿ
+Psychiatry,Depressionÿ
+Psychiatry,Perinatal mental healthÿ
+Psychiatry,Acute stress reactionÿ
+Psychiatry,Generalised anxietyÿ
+Psychiatry,Panic disorderÿ
+Psychiatry,OCDÿ
+Psychiatry,Phobiasÿ
+Psychiatry,Post Traumatic Stress Disorderÿ
+Psychiatry,Somatoformÿ
+Psychiatry,Chronic Pain
+Psychiatry,Schizophrenia and Psychosisÿ
+Pre-operative Care,Asthma 
+Pre-operative Care,Chronic obstructive pulmonary disease 
+Pre-operative Care,Obesity 
+Pre-operative Care,Obstructive sleep apnoea 
+Pre-operative Care,Essential or secondary hypertension 
+Pre-operative Care,Arrhythmias
+Pre-operative Care,Valvular heart disease
+Pre-operative Care,Anaemia 
+Pre-operative Care,Chronic kidney disease 
+Pre-operative Care,Diabetes mellitus 
+Pre-operative Care,Type 1 diabetes 
+Pre-operative Care,Type 2 diabetes 
+Pre-operative Care,Medication considerations- Patient on antiplatelet therapy 
+Pre-operative Care,Medication considerations - Patient on anticoagulant 
+Pre-operative Care,Medication considerations - Patient on oral contraceptive pill 
+Pre-operative Care,Medication considerations - Substance misuse disorder
+Post-operative careÿ,Sepsis 
+Post-operative careÿ,Acute kidney injury 
+Post-operative careÿ,Fluid and electrolyte balanceÿ
+Post-operative careÿ,Anaemiaÿ
+Post-operative careÿ,Type 1 diabetes 
+Post-operative careÿ,Type 2 diabetes 
+Post-operative careÿ,Intestinal obstruction and ileusÿ
+Post-operative careÿ,Surgical site infectionÿ
+Post-operative careÿ,Pulmonary embolism and deep vein thrombosis 
+Nutrition,Malnutritionÿ
+Gastrointestinal Surgery,Appendicitisÿ
+Gastrointestinal Surgery,Acute pancreatitisÿ
+Gastrointestinal Surgery,Cholecystitisÿ
+Gastrointestinal Surgery,Acute cholangitisÿ
+Gastrointestinal Surgery,Gastrointestinal perforationÿ
+Gastrointestinal Surgery,Peritonitisÿ
+Gastrointestinal Surgery,Intestinal ischaemiaÿ
+Gastrointestinal Surgery,Intestinal Obstruction and ileus
+Gastrointestinal Surgery,Volvulusÿ
+Gastrointestinal Surgery,Gallstones and biliary colicÿ
+Gastrointestinal Surgery,Peptic ulcer disease and gastritis 
+Gastrointestinal Surgery,Gastric cancer
+Gastrointestinal Surgery,Gastro-oesophageal reflux disease and hiatus hernia 
+Gastrointestinal Surgery,Oesophageal cancer 
+Gastrointestinal Surgery,Hiatus Hernia
+Gastrointestinal Surgery,Pancreatic Cancer
+Gastrointestinal Surgery,Colorectal tumoursÿ
+Gastrointestinal Surgery,Diverticular diseaseÿ
+Gastrointestinal Surgery,Inflammatory bowel disease 
+Gastrointestinal Surgery, Anal and Perianal Lesions - Anal Fissure 
+Gastrointestinal Surgery,Anal and Perianal Lesions - Haemorrhoids 
+Gastrointestinal Surgery,Anal and Perianal Lesions - Perianal abscesses and fistulae 
+Gastrointestinal Surgery,Hernias
+Urology,Testicular torsionÿ
+Urology,Urinary tract calculi
+Urology,Prostate cancerÿ
+Urology,Bladder cancerÿ
+Urology,Testicular cancerÿÿ
+Urology,Urinary tract infectionÿÿ
+Urology,Acute pyelonephritisÿ
+Urology,Epididymitis and orchitisÿ
+Urology,Urinary incontinence 
+Urology,Erectile dysfunction 
+Breastÿ,Breast cystsÿÿ
+Breastÿ,Fibroadenoma 
+Breastÿ,Breast abscess/mastitis 
+Vascular,Aortic aneurysm
+Vascular,Aortic dissection 
+Vascular,Acute ischaemic limb 
+Vascular,Peripheral vascular Disease
+Vascular,Varicose veins
+Vascular,Arterial ulcers 
+Vascular,Venous ulcers 
+Vascular,Gangrene and necrotising fasciitisÿ
+Trauma and Orthopaedics,Compartment syndrome 
+Trauma and Orthopaedics,Septic arthritis
+Trauma and Orthopaedics,Osteomyelitis 
+Trauma and Orthopaedics,Pathological fracture 
+Trauma and Orthopaedics,Major trauma 
+Trauma and Orthopaedics,Hip fracture
+Trauma and Orthopaedics,Ankle fracture 
+Trauma and Orthopaedics,Pubic ramus fracture
+Trauma and Orthopaedics,Metatarsal stress fracture 
+Trauma and Orthopaedics,Meniscus tears 
+Trauma and Orthopaedics,Anterior cruciate ligament (ACL) tear 
+Trauma and Orthopaedics,Medical collateral ligament (MCL) sprain 
+Trauma and Orthopaedics,Achilles tendon rupture 
+Trauma and Orthopaedics, Foot and ankle - Achilles? tendinitis
+Trauma and Orthopaedics,Clavicle fractureÿ
+Trauma and Orthopaedics,Humeral fractureÿ
+Trauma and Orthopaedics,Olecranon fractureÿ
+Trauma and Orthopaedics,Radial head fracture
+Trauma and Orthopaedics,Distal radius fracture
+Trauma and Orthopaedics,Scaphoid fracture
+Trauma and Orthopaedics,Metacarpal/phalangeal fractures
+Trauma and Orthopaedics,Upper limb soft tissue injury
+Trauma and Orthopaedics,Shoulder dislocation
+Trauma and Orthopaedics,Biceps tendon ruptureÿ
+Trauma and Orthopaedics,Elbow dislocationÿ
+Trauma and Orthopaedics, Shoulder - Adhesive capsulitis 
+Trauma and Orthopaedics,Shoulder - Impingement syndrome/Subacromial bursitis
+Trauma and Orthopaedics,Shoulder - Biceps tendinopathy
+Trauma and Orthopaedics, Elbow - Olecranon bursitis 
+Trauma and Orthopaedics,Elbow - Ulnar nerve entrapment (cubital tunnel syndrome) 
+Trauma and Orthopaedics,Hand and wrist - Carpal Tunnel syndrome 
+Trauma and Orthopaedics,Spinal fracture 
+Trauma and Orthopaedics,Spinal cord injury 
+Trauma and Orthopaedics,Degenerative disc disease
+Trauma and Orthopaedics,Nerve root entrapment/sciatica 
+Plastics,Complications of wound healing 
+Plastics,Arterial ulcer 
+Plastics,Venous ulcer 
+Plastics,Burns
+Plastics,Scarring and abnormal scarring 
+ENT,Presbycusis 
+ENT,Acoustic neuroma 
+ENT,Benign paroxysmal positional vertigo 
+ENT,M‚niŠre's disease 
+ENT,Otitis media 
+ENT,Otitis externa 
+ENT,Tonsillitis and pharyngitis 
+ENT,Laryngitis 
+ENT,Infectious mononucleosis 
+ENT,Rhinosinusitis and nasal polyps 
+ENT,Epistaxis
+ENT,Epiglottitis 
+Opthalmolgy,Acute glaucoma 
+Opthalmolgy,Conjunctivitis 
+Opthalmolgy,Infective keratitis 
+Opthalmolgy,Uveitis 
+Opthalmolgy,Iritis 
+Opthalmolgy,Scleritis
+Opthalmolgy,Giant cell arteritis 
+Opthalmolgy,Vitreous haemorrhage
+Opthalmolgy,Retinal detachment 
+Opthalmolgy,Central retinal artery occlusion 
+Opthalmolgy,Central retinal vein occlusion 
+Opthalmolgy,Optic neuritis 
+Opthalmolgy,Chronic glaucoma 
+Opthalmolgy,Cataract 
+Opthalmolgy,Age-related macular degeneration 
+Opthalmolgy,Visual field defect 
+Opthalmolgy,Diabetic retinopathy 
+Opthalmolgy,Thyroid eye disease 
+Opthalmolgy,Benign eyelid disorders 
+Opthalmolgy,Blepharitis
+Opthalmolgy,Orbital and periorbital cellulitis
+Opthalmolgy,"Ocular motor nerve palsies (3,4,6) "
+Obstetrics ,Ectopic pregnancyÿ
+Obstetrics ,Hyperemesis gravidarumÿ
+Obstetrics ,Anaemiaÿ
+Obstetrics ,Pre-existing and gestational diabetes
+Obstetrics ,Essential and secondary hypertensionÿ
+Obstetrics ,Pregnancy-induced hypertensionÿ
+Obstetrics ,Urinary tract Infectionÿ
+Obstetrics ,Depressionÿ
+Obstetrics ,Obesity
+Obstetrics ,Pre-existing diabetes in pregnancy 
+Obstetrics ,Varicella zosterÿ
+Obstetrics ,Syphilisÿ
+Obstetrics ,TORCHÿ
+Obstetrics ,Labourÿ
+Obstetrics ,Cord prolapseÿ
+Obstetrics ,Shoulder dystocia 
+Obstetrics ,Pulmonary Embolism and Deep Vein Thrombosis 
+Obstetrics ,Pre-eclampsiaÿ
+Obstetrics ,Placenta praevia
+Obstetrics ,Vasa praeviaÿ
+Obstetrics ,Placental abruptionÿ
+Obstetrics ,Post-partum haemorrhageÿ
+Obstetrics ,Puerperal infection and sepsisÿ
+Obstetrics ,Post-natal mental healthÿ
+Obstetrics ,Stillbirth
+Gynaecology,Endometriosis
+Gynaecology,Adenomyosisÿ
+Gynaecology,Dysfunctional uterine bleedingÿ
+Gynaecology,Fibroids
+Gynaecology,Anovulatory cyclesÿ
+Gynaecology,Bacterial vaginosis
+Gynaecology,Trichomonas vaginalisÿ
+Gynaecology,Chlamydia
+Gynaecology,Gonorrhoeaÿ
+Gynaecology,Syphilisÿ
+Gynaecology,Pelvic inflammatory diseaseÿ
+Gynaecology,Toxic shock syndrome 
+Gynaecology,Contraception
+Gynaecology,Unwanted pregnancy and terminationÿ
+Gynaecology,Fertility and subfertilityÿ
+Gynaecology,Cervical screening (HPV) 
+Gynaecology,Cervical cancerÿ
+Gynaecology,Endometrial cancerÿ
+Gynaecology,Ovarian cancer
+Gynaecology,Vulval and vaginal cancerÿ
+Gynaecology,Menopauseÿ
+Gynaecology,Atrophic vaginitisÿ
+Gynaecology,Vaginal prolapse
+Gynaecology,Urinary incontinenceÿ
+Gynaecology,Urinary tract infection
+Paediatrics,Cardiac arrestÿ
+Paediatrics,Respiratory arrest
+Paediatrics,Congenital heart diseaseÿ
+Paediatrics,Asthma 
+Paediatrics,Bronchiectasisÿ
+Paediatrics,Upper respiratory tract infection - Croupÿ
+Paediatrics,Upper respiratory tract infection - Epiglottitis
+Paediatrics,ÿUpper respiratory tract infection - Tonsillitis 
+Paediatrics, Lower respiratory tract infection - Bronchiolitis 
+Paediatrics, Lower respiratory tract infection - Pulmonary tuberculosisÿ
+Paediatrics,Pneumothoraxÿ
+Paediatrics,Obstructive sleep apnoeaÿ
+Paediatrics,Gastro-oesophageal reflux disorderÿ
+Paediatrics,Peptic ulcer disease and gastritisÿ
+Paediatrics,Biliary atresiaÿ
+Paediatrics,Acute hepatitisÿ
+Paediatrics,Constipationÿ
+Paediatrics,Hirschsprung's diseaseÿ
+Paediatrics,Viral gastroenteritisÿ
+Paediatrics,Functional abdominal pain 
+Paediatrics,Coeliac disease
+Paediatrics,Inflammatory bowel disease
+Paediatrics,Necrotising enterocolitis
+Paediatrics,Nutrition and hydration - Dehydrationÿ
+Paediatrics,Nutrition and hydration - Malnutritionÿ
+Paediatrics,Nutrition and hydration - Obesity
+Paediatrics,Appendicitis
+Paediatrics,Mesenteric adenitisÿ
+Paediatrics,Intussusceptionÿ
+Paediatrics,Intestinal obstruction and ileusÿ
+Paediatrics,Volvulusÿ
+Paediatrics,Peritonitisÿ
+Paediatrics,Pyloric stenosisÿ
+Paediatrics,Acute kidney injuryÿ
+Paediatrics,Chronic kidney disease
+Paediatrics,Nephrotic syndrome 
+Paediatrics,Testicular torsion 
+Paediatrics,GU infection - Urinary tract infection
+Paediatrics,GU infection - Epididymitis and orchitisÿ
+Paediatrics,Type 1 diabetes 
+Paediatrics,Type 2 diabetes 
+Paediatrics,Diabetic ketoacidosis 
+Paediatrics,Hypoglycaemiaÿ
+Paediatrics,Hypothyroidismÿ
+Paediatrics,Thyrotoxicosisÿ
+Paediatrics,Cushing's syndromeÿ
+Paediatrics,Developmental delayÿ
+Paediatrics,Cerebral palsy and hypoxic-ischaemic encephalopathyÿ
+Paediatrics,Downs syndrome
+Paediatrics,Febrile convulsionÿ
+Paediatrics,Meningitisÿ
+Paediatrics,Migraineÿ
+Paediatrics,Tension headaches
+Paediatrics,Subarachnoid haemorrhage
+Paediatrics,Subdural haematomaÿ
+Paediatrics,Peripheral nerve injuries/palsiesÿ
+Paediatrics,Visual field defects
+Paediatrics,Idiopathic arthritisÿ
+Paediatrics,Reactive arthritisÿ
+Paediatrics,Septic arthritisÿ
+Paediatrics,Inherited muscular dystrophiesÿ
+Paediatrics,Congenital dislocation of the hip 
+Paediatrics,Slipped upper femoral epiphysisÿ
+Paediatrics,Perthes' disease
+Paediatrics,Rickets/Osteomalacia
+Paediatrics,Talipes 
+Paediatrics,Anaemiaÿ
+Paediatrics,Sickle cell disease
+Paediatrics,Leukaemia
+Paediatrics,Lymphomaÿ
+Paediatrics,Pancytopaenia
+Paediatrics,Disseminated intravascular coagulationÿ
+Paediatrics,Hyposplenism and splenectomyÿ
+Paediatrics,Atopic dermatitis
+Paediatrics,Urticariaÿ
+Paediatrics,Henoch-Schoenlein purpura 
+Paediatrics,Sepsis
+Paediatrics,Rubellaÿ
+Paediatrics,Varicella zoster 
+Paediatrics,Measlesÿ
+Paediatrics,Mumpsÿ
+Paediatrics,Viral exanthema
+Paediatrics,Cellulitis
+Paediatrics,Tonsillitis and pharyngitis
+Paediatrics,Impetigo
+Paediatrics,Candidiasis
+Paediatrics,Herpes simplex virus
+Paediatrics,Human papilloma virus 
+Paediatrics,Kawasaki diseaseÿ
+Paediatrics,Malariaÿ
+Paediatrics,Toxic shock syndrome
+Paediatrics,Otitis mediaÿ
+Paediatrics,Conjunctivitisÿ
+Paediatrics,Orbital and periorbital cellulitisÿ
+Paediatrics,Self-harm
+Paediatrics,Eating disorders 
+Paediatrics,Attention deficit hyperactivity disorder (ADHD)ÿ
+Paediatrics,Autistic spectrum disorder
+Paediatrics,Non-accidental injuryÿ
+,Disease Prevention Screening
