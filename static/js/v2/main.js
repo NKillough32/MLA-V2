@@ -23,6 +23,7 @@ import { OfflineManager } from './modules/OfflineManager.js';
 import { DrugReferenceManager } from './modules/DrugReferenceManager.js';
 import { LabValuesManager } from './modules/LabValuesManager.js';
 import { GuidelinesManager } from './modules/GuidelinesManager.js';
+import { proceduresManager } from './modules/ProceduresManager.js';
 import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
@@ -52,6 +53,7 @@ class MLAQuizApp {
         this.drugManager = new DrugReferenceManager();
         this.labManager = new LabValuesManager();
         this.guidelinesManager = new GuidelinesManager();
+        this.proceduresManager = proceduresManager;
         this.mnemonicsManager = mnemonicsManager;
         this.interpretationToolsManager = interpretationToolsManager;
         this.medStatsEthicsManager = medStatsEthicsManager;
@@ -131,6 +133,7 @@ class MLAQuizApp {
             this.drugManager.initialize(),
             this.labManager.initialize(),
             this.guidelinesManager.initialize(),
+            this.proceduresManager.initialize(),
             this.mnemonicsManager.initialize(),
             this.interpretationToolsManager.initialize(),
             this.medStatsEthicsManager.initialize(),
@@ -143,10 +146,11 @@ class MLAQuizApp {
 
         await this.initializeCalculatorBridge(eventBus, storageManager, analytics);
 
-        const [drugStats, labStats, guidelinesStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats, ophthalmologyStats] = await Promise.all([
+        const [drugStats, labStats, guidelinesStats, proceduresStats, mnemonicStats, interpretationStats, medStatsStats, ladderStats, ophthalmologyStats] = await Promise.all([
             this.drugManager.getStatistics(),
             Promise.resolve(this.labManager.getStatistics() || { totalPanels: 0, totalTests: 0 }),
             this.guidelinesManager.getStatistics(),
+            Promise.resolve(this.proceduresManager.getStatistics()),
             this.mnemonicsManager.getStatistics(),
             this.interpretationToolsManager.getStatistics(),
             Promise.resolve(this.medStatsEthicsManager.getStatistics()),
@@ -156,6 +160,7 @@ class MLAQuizApp {
 
         const safeLabStats = labStats || { totalPanels: 0, totalTests: 0 };
         const safeGuidelinesStats = guidelinesStats || { total: 0 };
+        const safeProceduresStats = proceduresStats || { totalProcedures: 0 };
         const safeMnemonicStats = mnemonicStats || { totalMnemonics: 0 };
         const safeInterpretationStats = interpretationStats || { totalTools: 0 };
         const safeMedStatsStats = medStatsStats || { totalSections: 0 };
