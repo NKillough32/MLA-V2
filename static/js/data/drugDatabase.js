@@ -4220,6 +4220,1535 @@ const drugDatabase = {
                 pharmacokinetics: 'Local action, no systemic absorption',
                 clinicalPearls: 'First-line for dry eyes. Preservative-free if using >4 times daily or contact lens wearer. Very safe, can use frequently. Many brands available OTC',
                 indication: 'Dry eyes, tear deficiency, contact lens discomfort'
+            },
+
+'acetylcysteine': {
+                name: 'Acetylcysteine',
+                class: 'Mucolytic / Antidote',
+                mechanism: 'Mucolytic: breaks disulfide bonds in mucus. Antidote: replenishes glutathione in paracetamol overdose',
+                dosing: 'Paracetamol OD: 150mg/kg in 200ml glucose 5% over 1h, then 50mg/kg over 4h, then 100mg/kg over 16h. Nebuliser: 3-5ml of 20% solution TDS-QDS',
+                contraindications: 'Caution in asthma (bronchospasm risk with nebulised form)',
+                interactions: 'None significant',
+                monitoring: 'Anaphylactoid reactions (common with IV), LFTs in paracetamol overdose',
+                pregnancy: 'Safe - essential in paracetamol overdose',
+                sideEffects: 'IV: anaphylactoid reactions (flushing, urticaria, bronchospasm), nausea. Nebulised: bronchospasm, unpleasant taste',
+                pharmacokinetics: 'IV: peak effect immediate. Nebulised: local airway action',
+                clinicalPearls: 'Life-saving in paracetamol overdose - start if >150mg/kg ingested even before levels back. Slow infusion rate if anaphylactoid reaction occurs',
+                indication: 'Paracetamol overdose (IV), viscous airway secretions (nebulised)'
+            },
+
+'adalimumab': {
+                name: 'Adalimumab',
+                class: 'Monoclonal antibodies (Anti-TNF)',
+                mechanism: 'Fully human monoclonal antibody against TNF-alpha, reducing inflammation',
+                dosing: 'Rheumatoid arthritis: 40mg SC every 2 weeks. Crohn\'s: 160mg initial, then 80mg week 2, then 40mg fortnightly',
+                contraindications: 'Active infection, TB, severe heart failure, demyelinating disease',
+                interactions: 'Other immunosuppressants (↑ infection risk), live vaccines (avoid)',
+                monitoring: 'TB screening pre-treatment, FBC, LFTs, infection signs',
+                pregnancy: 'Use only if essential - limited data but other anti-TNFs used',
+                sideEffects: 'Injection site reactions, infections, reactivation of TB/hepatitis B, malignancy risk, lupus-like syndrome',
+                pharmacokinetics: 'SC administration, half-life ~2 weeks',
+                clinicalPearls: 'Screen for latent TB before starting. Counsel on infection risk. Stop if serious infection. Biosimilars widely available',
+                indication: 'Rheumatoid arthritis, Crohn\'s disease, ulcerative colitis, psoriasis, ankylosing spondylitis'
+            },
+
+'albumin': {
+                name: 'Human Albumin Solution',
+                class: 'Colloid (Plasma substitute)',
+                mechanism: 'Increases oncotic pressure, expanding intravascular volume',
+                dosing: '4.5% (iso-oncotic): 500ml over 30min-4h. 20% (hyperoncotic): 100ml over 30-60min. Adjust to response',
+                contraindications: 'Severe anaemia, cardiac failure (relative), pulmonary oedema',
+                interactions: 'None significant',
+                monitoring: 'CVP, BP, fluid balance, pulmonary oedema signs, electrolytes',
+                pregnancy: 'Safe if clinically indicated',
+                sideEffects: 'Fluid overload, allergic reactions (rare), transient hypotension',
+                pharmacokinetics: 'Remains intravascular, half-life ~16-20 days',
+                clinicalPearls: 'More expensive than crystalloids. Consider for severe hypoalbuminaemia, ascites drainage, burns. 20% useful when fluid restricted',
+                indication: 'Severe hypoalbuminaemia, large volume paracentesis, burns, hepatorenal syndrome'
+            },
+
+'alteplase': {
+                name: 'Alteplase (rt-PA)',
+                class: 'Thrombolytic (Emergency drug)',
+                mechanism: 'Tissue plasminogen activator - converts plasminogen to plasmin, dissolving fibrin clots',
+                dosing: 'Ischaemic stroke: 0.9mg/kg (max 90mg) - 10% bolus, rest over 60min. MI: accelerated regime over 90min',
+                contraindications: 'Haemorrhagic stroke, recent major surgery/trauma, active bleeding, BP >185/110',
+                interactions: 'Anticoagulants/antiplatelets (↑ bleeding risk)',
+                monitoring: 'Neuro obs every 15min, BP, bleeding signs, ECG if MI',
+                pregnancy: 'Avoid unless life-threatening - limited data',
+                sideEffects: 'Intracranial haemorrhage (6-7% in stroke), systemic bleeding, reperfusion arrhythmias',
+                pharmacokinetics: 'IV only, rapid clearance (half-life 4-5min), effect within minutes',
+                clinicalPearls: 'Time-critical: stroke <4.5h from onset, STEMI <12h. Strict BP control essential. Major bleeding risk - have reversal agents ready',
+                indication: 'Acute ischaemic stroke (<4.5h), STEMI, massive PE'
+            },
+
+'streptokinase': {
+                name: 'Streptokinase',
+                class: 'Thrombolytic (Emergency drug)',
+                mechanism: 'Bacterial protein that activates plasminogen to plasmin, lysing fibrin clots',
+                dosing: 'MI: 1.5 million units IV over 60min. PE: 250,000 units over 30min then 100,000 units/h for 24-72h',
+                contraindications: 'Recent streptococcal infection, previous streptokinase use, active bleeding, recent surgery',
+                interactions: 'Anticoagulants/antiplatelets (↑ bleeding), NSAIDs',
+                monitoring: 'BP, bleeding, reperfusion arrhythmias, allergic reactions',
+                pregnancy: 'Avoid - can cause placental separation',
+                sideEffects: 'Bleeding, allergic reactions, hypotension, reperfusion arrhythmias',
+                pharmacokinetics: 'IV infusion, antigenic (cannot repeat), half-life ~20min',
+                clinicalPearls: 'Give hydrocortisone + chlorphenamine pre-treatment. Cannot use if previous dose (antibodies). Largely replaced by alteplase in stroke',
+                indication: 'STEMI (where PCI unavailable), massive PE, DVT'
+            },
+
+'oxygen': {
+                name: 'Oxygen',
+                class: 'Emergency drug / Respiratory support',
+                mechanism: 'Increases alveolar and arterial oxygen concentration',
+                dosing: 'Target sats: 94-98% (88-92% if COPD risk). Acute: 15L/min via non-rebreathe. Titrate to target',
+                contraindications: 'None in emergency. Caution in COPD (target 88-92%)',
+                interactions: 'None',
+                monitoring: 'SpO2, ABG if type 2 respiratory failure risk, respiratory rate',
+                pregnancy: 'Safe',
+                sideEffects: 'CO2 retention in COPD, oxygen toxicity (prolonged high FiO2), absorption atelectasis',
+                pharmacokinetics: 'Inhaled, immediate effect',
+                clinicalPearls: 'Prescribe target saturations. COPD: risk of CO2 retention - target 88-92%. Use Venturi masks for precise FiO2. Humidify if >4L/min',
+                indication: 'Hypoxaemia, acute breathlessness, cardiac arrest, major trauma, shock'
+            },
+
+'esomeprazole': {
+                name: 'Esomeprazole',
+                class: 'Proton pump inhibitors',
+                mechanism: 'S-isomer of omeprazole - inhibits gastric H+/K+ ATPase (proton pump)',
+                dosing: 'GORD: 20-40mg OD. GI bleed: 40mg BD. H.pylori: 20mg BD with antibiotics',
+                contraindications: 'Hypersensitivity to PPIs',
+                interactions: 'Clopidogrel (↓ effect), warfarin, phenytoin, methotrexate, digoxin',
+                monitoring: 'Symptom control, Mg2+ if long-term, vitamin B12 if >3 years',
+                pregnancy: 'Safe - widely used',
+                sideEffects: 'Headache, GI upset, hypomagnesaemia (long-term), increased fracture risk, C.diff risk',
+                pharmacokinetics: 'Better bioavailability than omeprazole, half-life 1-1.5h, hepatic metabolism',
+                clinicalPearls: 'Take 30-60min before food. Slightly more potent than omeprazole. Review need after 8 weeks unless clear indication',
+                indication: 'GORD, peptic ulcer disease, H.pylori eradication, NSAID prophylaxis'
+            },
+
+'co-amoxiclav': {
+                name: 'Co-amoxiclav (Amoxicillin + Clavulanic acid)',
+                class: 'Penicillins, broad-spectrum',
+                mechanism: 'Beta-lactam + beta-lactamase inhibitor - broader spectrum than amoxicillin alone',
+                dosing: 'Standard: 500/125mg TDS or 875/125mg BD. Severe: 1.2g TDS IV',
+                contraindications: 'Penicillin allergy, co-amoxiclav-associated jaundice history',
+                interactions: 'Warfarin (↑ INR), methotrexate, allopurinol (rash)',
+                monitoring: 'LFTs if prolonged use, signs of cholestatic jaundice',
+                pregnancy: 'Safe',
+                sideEffects: 'Diarrhoea (common), cholestatic jaundice (rare), rash, C.diff',
+                pharmacokinetics: 'Well absorbed orally, renal excretion, dose reduce in renal impairment',
+                clinicalPearls: 'Higher diarrhoea rate than amoxicillin. Cholestatic jaundice can occur weeks after stopping. Good for bite wounds, aspiration pneumonia',
+                indication: 'Cellulitis, animal bites, aspiration pneumonia, dental infections, UTI (if resistant)'
+            },
+
+'tranexamic acid': {
+                name: 'Tranexamic Acid',
+                class: 'Antifibrinolytic',
+                mechanism: 'Inhibits plasminogen activation and plasmin, reducing fibrinolysis',
+                dosing: 'Major haemorrhage: 1g IV over 10min, then 1g over 8h. Menorrhagia: 1g TDS-QDS PO for 4 days. Trauma: 1g over 10min within 3h of injury',
+                contraindications: 'Thromboembolic disease history, DIC, subarachnoid haemorrhage',
+                interactions: 'Combined hormonal contraceptives (↑ VTE risk - relative), factor concentrates',
+                monitoring: 'Bleeding control, thromboembolic events',
+                pregnancy: 'Generally safe - used for antepartum haemorrhage',
+                sideEffects: 'GI upset, thrombosis (rare), seizures (high dose, renal impairment), visual disturbances',
+                pharmacokinetics: 'Oral bioavailability ~45%, renal excretion, half-life 2-3h',
+                clinicalPearls: 'Give within 3h of trauma to reduce mortality. Essential in major haemorrhage protocol. Highly effective for menorrhagia. Dose reduce in renal impairment',
+                indication: 'Trauma haemorrhage, menorrhagia, dental procedures in haemophilia, epistaxis, post-partum haemorrhage'
+            },
+
+'glyceryl trinitrate': {
+                name: 'Glyceryl Trinitrate (GTN)',
+                class: 'Nitrates',
+                mechanism: 'Nitric oxide donor - venodilation (↓ preload) and coronary vasodilation',
+                dosing: 'Sublingual: 300-600mcg PRN (repeat after 5min up to 3 doses). IV: 10-200mcg/min. Patch: 5-10mg daily',
+                contraindications: 'Hypotension, hypovolaemia, raised ICP, severe aortic stenosis, PDE5 inhibitor use (24h sildenafil, 48h tadalafil)',
+                interactions: 'PDE5 inhibitors (severe hypotension), antihypertensives (↑ hypotension), alcohol',
+                monitoring: 'BP, HR, headache, nitrate tolerance',
+                pregnancy: 'Use if benefits outweigh risks',
+                sideEffects: 'Headache (common), flushing, dizziness, hypotension, reflex tachycardia, tolerance',
+                pharmacokinetics: 'Sublingual: onset 1-3min. IV: immediate. Extensive first-pass metabolism. Short half-life',
+                clinicalPearls: 'Sublingual for acute angina. Patch-free interval (10-12h) prevents tolerance. Warn about postural hypotension. Ask about sildenafil before giving',
+                indication: 'Angina, acute coronary syndrome, acute heart failure, anal fissure (topical)'
+            },
+
+'isosorbide mononitrate': {
+                name: 'Isosorbide Mononitrate',
+                class: 'Nitrates',
+                mechanism: 'Nitric oxide donor - predominantly venodilation, reducing preload',
+                dosing: 'Standard release: 20mg BD (8am and 2pm for nitrate-free interval). Modified release: 60mg OD',
+                contraindications: 'Hypotension, hypovolaemia, raised ICP, severe anaemia, PDE5 inhibitor use',
+                interactions: 'PDE5 inhibitors (profound hypotension), antihypertensives, alcohol',
+                monitoring: 'BP, angina frequency, headache, tolerance',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Headache (very common initially), flushing, dizziness, hypotension',
+                pharmacokinetics: 'Better oral bioavailability than isosorbide dinitrate, half-life 4-5h',
+                clinicalPearls: 'Asymmetric dosing (not 12-hourly) maintains nitrate-free interval to prevent tolerance. Headache improves with continued use. Less useful than beta-blockers/CCBs for angina prophylaxis',
+                indication: 'Angina prophylaxis, left ventricular failure (with hydralazine)'
+            },
+
+'alendronic acid': {
+                name: 'Alendronic Acid (Alendronate)',
+                class: 'Bisphosphonates',
+                mechanism: 'Inhibits osteoclast-mediated bone resorption',
+                dosing: 'Osteoporosis: 70mg weekly. Ensure calcium/vitamin D replete',
+                contraindications: 'Oesophageal abnormalities, hypocalcaemia, inability to stand/sit upright for 30min',
+                interactions: 'Calcium/iron (↓ absorption - separate by 2h), NSAIDs (↑ GI irritation)',
+                monitoring: 'Calcium, vitamin D, renal function, dental health, atypical fractures',
+                pregnancy: 'Avoid - persists in bone for years',
+                sideEffects: 'Oesophagitis, oesophageal ulcer, musculoskeletal pain, atypical femoral fractures (rare), osteonecrosis of jaw (rare)',
+                pharmacokinetics: 'Poor oral absorption, accumulates in bone (half-life years)',
+                clinicalPearls: 'Take with full glass of water on empty stomach. Stay upright 30min. Dental check before starting. Review need after 5 years',
+                indication: 'Osteoporosis, Paget\'s disease, steroid-induced osteoporosis'
+            },
+
+'risedronate': {
+                name: 'Risedronate',
+                class: 'Bisphosphonates',
+                mechanism: 'Inhibits osteoclast activity, reducing bone resorption',
+                dosing: 'Osteoporosis: 35mg weekly or 150mg monthly',
+                contraindications: 'Hypocalcaemia, severe renal impairment (eGFR <30)',
+                interactions: 'Calcium/antacids (↓ absorption), NSAIDs (↑ GI side effects)',
+                monitoring: 'Calcium, vitamin D, renal function, BMD, jaw health',
+                pregnancy: 'Avoid',
+                sideEffects: 'GI upset, oesophagitis, headache, musculoskeletal pain, atypical fractures (rare), ONJ (rare)',
+                pharmacokinetics: 'Oral, poor absorption, accumulates in bone',
+                clinicalPearls: 'Take 30min before food with water only. Sit upright 30min. Monthly dosing may improve adherence. Similar efficacy to alendronate',
+                indication: 'Osteoporosis, Paget\'s disease, glucocorticoid-induced osteoporosis'
+            },
+
+'zoledronic acid': {
+                name: 'Zoledronic Acid',
+                class: 'Bisphosphonates',
+                mechanism: 'Potent inhibitor of osteoclastic bone resorption',
+                dosing: 'Osteoporosis: 5mg IV once yearly. Paget\'s: 5mg single dose. Hypercalcaemia: 4mg IV',
+                contraindications: 'Hypocalcaemia, severe renal impairment (eGFR <35 for osteoporosis)',
+                interactions: 'Nephrotoxic drugs, aminoglycosides (↑ hypocalcaemia)',
+                monitoring: 'Calcium, phosphate, magnesium, creatinine, vitamin D before each dose. Hydration status',
+                pregnancy: 'Avoid',
+                sideEffects: 'Acute phase reaction (fever, myalgia post-infusion), renal impairment, hypocalcaemia, atypical fractures, ONJ',
+                pharmacokinetics: 'IV infusion over 15min, long bone half-life',
+                clinicalPearls: 'Ensure vitamin D replete before giving. Pre-treat with paracetamol/ibuprofen for acute phase reaction. Hydrate well. Once-yearly dosing improves adherence',
+                indication: 'Osteoporosis, Paget\'s disease, malignant hypercalcaemia, bone metastases'
+            },
+
+'insulin aspart': {
+                name: 'Insulin Aspart (Novorapid)',
+                class: 'Insulin - rapid-acting analogue',
+                mechanism: 'Rapid-acting insulin analogue - promotes glucose uptake',
+                dosing: 'SC: give immediately before or with meals. Typical 4-12 units per meal. Adjust to BG and carbs',
+                contraindications: 'Hypoglycaemia',
+                interactions: 'Steroids/thiazides (↓ effect), beta-blockers (mask hypo), ACEi (↑ hypo risk)',
+                monitoring: 'Capillary glucose pre-meals and bedtime, HbA1c, hypoglycaemia frequency, injection sites',
+                pregnancy: 'Safe - insulin of choice in pregnancy',
+                sideEffects: 'Hypoglycaemia, weight gain, lipohypertrophy, allergic reactions (rare)',
+                pharmacokinetics: 'Onset 10-20min, peak 1-3h, duration 3-5h',
+                clinicalPearls: 'Inject 0-15min before eating. Faster onset than regular insulin. Part of basal-bolus regimes. Rotate injection sites',
+                indication: 'Type 1 diabetes, type 2 diabetes (basal-bolus regime), DKA (IV)'
+            },
+
+'insulin glargine': {
+                name: 'Insulin Glargine (Lantus, Toujeo)',
+                class: 'Insulin - long-acting analogue',
+                mechanism: 'Long-acting insulin analogue - provides basal glucose control for ~24h',
+                dosing: 'SC: typically 10 units OD initially, titrate to fasting glucose. Give same time daily',
+                contraindications: 'Hypoglycaemia',
+                interactions: 'As other insulins',
+                monitoring: 'Fasting glucose, HbA1c, hypoglycaemia, injection sites',
+                pregnancy: 'Safe - suitable for pregnancy',
+                sideEffects: 'Hypoglycaemia, weight gain, injection site reactions, lipohypertrophy',
+                pharmacokinetics: 'Onset 1-2h, no pronounced peak, duration ~24h (U-300 longer)',
+                clinicalPearls: 'Peakless profile reduces nocturnal hypos. Once daily dosing. Cannot mix with other insulins. U-100 (Lantus) vs U-300 (Toujeo) - different concentrations',
+                indication: 'Type 1 and type 2 diabetes - basal insulin requirement'
+            },
+
+'soluble insulin': {
+                name: 'Soluble Insulin (Actrapid, Humulin S)',
+                class: 'Insulin - short-acting',
+                mechanism: 'Short-acting regular insulin - promotes glucose uptake into cells',
+                dosing: 'SC: 15-30min before meals. IV: DKA/HHS - 0.1 units/kg/h infusion',
+                contraindications: 'Hypoglycaemia',
+                interactions: 'As other insulins',
+                monitoring: 'Capillary glucose, HbA1c, hypoglycaemia',
+                pregnancy: 'Safe',
+                sideEffects: 'Hypoglycaemia, weight gain, injection site reactions',
+                pharmacokinetics: 'SC: onset 30min, peak 2-4h, duration 6-8h. IV: onset immediate',
+                clinicalPearls: 'Only insulin suitable for IV use. Slower than rapid analogues - need to inject 30min before eating. Used in sliding scales (IV) and DKA treatment',
+                indication: 'Type 1/2 diabetes, DKA, hyperkalaemia (with glucose), HHS'
+            },
+
+'biphasic insulin': {
+                name: 'Biphasic Insulin (Novomix, Humalog Mix)',
+                class: 'Insulin - premixed combinations',
+                mechanism: 'Combination of rapid/short-acting + intermediate-acting insulin in fixed ratios',
+                dosing: 'SC: typically BD before breakfast and evening meal. Common ratios: 30/70, 50/50',
+                contraindications: 'Hypoglycaemia',
+                interactions: 'As other insulins',
+                monitoring: 'Pre-meal and bedtime glucose, HbA1c, hypoglycaemia',
+                pregnancy: 'Safe but basal-bolus preferred for tighter control',
+                sideEffects: 'Hypoglycaemia, weight gain, lipohypertrophy',
+                pharmacokinetics: 'Dual profile: rapid component peaks 1-3h, longer component provides basal coverage',
+                clinicalPearls: 'Convenient but less flexible than basal-bolus. Requires regular meal timings. Roll/mix gently before injection. Not suitable for DKA',
+                indication: 'Type 2 diabetes requiring simpler insulin regime, some type 1 patients'
+            },
+
+'co-careldopa': {
+                name: 'Co-careldopa (Levodopa + Carbidopa)',
+                class: 'Dopaminergic drugs for Parkinson\'s disease',
+                mechanism: 'Levodopa (dopamine precursor) + carbidopa (peripheral dopa-decarboxylase inhibitor)',
+                dosing: 'Start 25/100mg TDS, increase gradually. Max ~200/2000mg daily in divided doses',
+                contraindications: 'Closed-angle glaucoma, MAOIs (within 2 weeks), malignant melanoma',
+                interactions: 'MAOIs (hypertensive crisis), iron (↓ absorption), antipsychotics (↓ effect)',
+                monitoring: 'Motor function, wearing-off/dyskinesia, psychiatric effects, postural BP',
+                pregnancy: 'Use only if essential - limited data',
+                sideEffects: 'Dyskinesia, wearing-off, on-off fluctuations, nausea, psychiatric effects (hallucinations, impulse control), postural hypotension',
+                pharmacokinetics: 'Oral, crosses BBB, short half-life (1-3h)',
+                clinicalPearls: 'Gold standard for PD. Start low, go slow. Take 30min before food for better absorption. Motor complications inevitable long-term. Domperidone helps nausea',
+                indication: 'Parkinson\'s disease, restless legs syndrome (specialist use)'
+            },
+
+'co-beneldopa': {
+                name: 'Co-beneldopa (Levodopa + Benserazide)',
+                class: 'Dopaminergic drugs for Parkinson\'s disease',
+                mechanism: 'Levodopa + benserazide (peripheral dopa-decarboxylase inhibitor)',
+                dosing: 'Start 50/12.5mg TDS-QDS, titrate to response. Max 200/800mg daily',
+                contraindications: 'As co-careldopa',
+                interactions: 'As co-careldopa',
+                monitoring: 'As co-careldopa',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'As co-careldopa',
+                pharmacokinetics: 'Similar to co-careldopa',
+                clinicalPearls: 'Alternative to co-careldopa - same efficacy. Some patients prefer one over the other. Also available as dispersible Madopar',
+                indication: 'Parkinson\'s disease'
+            },
+
+'ropinirole': {
+                name: 'Ropinirole',
+                class: 'Dopaminergic drugs - dopamine agonist',
+                mechanism: 'Non-ergot dopamine D2/D3 receptor agonist',
+                dosing: 'Start 0.25mg TDS, increase gradually. Usual maintenance 3-9mg TDS. Modified release: start 2mg OD',
+                contraindications: 'Severe cardiovascular disease, psychosis',
+                interactions: 'Ciprofloxacin (↑ levels), antipsychotics (antagonism), smoking (↑ clearance)',
+                monitoring: 'Motor symptoms, impulse control disorders, hallucinations, daytime sleepiness, BP',
+                pregnancy: 'Avoid - inhibits lactation',
+                sideEffects: 'Nausea, somnolence, sudden sleep attacks, impulse control disorders (gambling, hypersexuality), hallucinations, postural hypotension, leg oedema',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 6h',
+                clinicalPearls: 'Can delay need for levodopa. Warn about sudden sleep attacks (driving). Screen for impulse control disorders regularly. Domperidone for nausea',
+                indication: 'Parkinson\'s disease, restless legs syndrome'
+            },
+
+'pramipexole': {
+                name: 'Pramipexole',
+                class: 'Dopaminergic drugs - dopamine agonist',
+                mechanism: 'Non-ergot dopamine D2/D3 receptor agonist',
+                dosing: 'Start 88mcg TDS (or 260mcg OD modified release), titrate weekly. Max 3.3mg daily',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Cimetidine (↑ levels), antipsychotics, levodopa (↑ dyskinesia)',
+                monitoring: 'Motor symptoms, impulse control, somnolence, hallucinations, BP',
+                pregnancy: 'Avoid',
+                sideEffects: 'As ropinirole - nausea, impulse control disorders, sleep attacks, hallucinations, postural hypotension',
+                pharmacokinetics: 'Oral, minimal metabolism, renal excretion, half-life 8-12h',
+                clinicalPearls: 'Similar to ropinirole. Some evidence for neuroprotection in early PD. Dose reduce in renal impairment. Warn about impulse control disorders',
+                indication: 'Parkinson\'s disease, restless legs syndrome'
+            },
+
+'tadalafil': {
+                name: 'Tadalafil',
+                class: 'Phosphodiesterase type-5 inhibitors',
+                mechanism: 'Inhibits PDE5, increasing cGMP causing smooth muscle relaxation and vasodilation',
+                dosing: 'Erectile dysfunction: 10mg PRN (up to 20mg) 30min before sexual activity. Daily: 2.5-5mg OD. Pulmonary hypertension: 40mg OD',
+                contraindications: 'Nitrates (within 48h), severe cardiovascular disease, recent stroke/MI, hypotension, hereditary retinal disorders',
+                interactions: 'Nitrates (fatal hypotension), alpha-blockers (hypotension), CYP3A4 inhibitors (↑ levels)',
+                monitoring: 'BP, visual changes, priapism',
+                pregnancy: 'Not applicable for erectile dysfunction. Pulmonary hypertension: avoid',
+                sideEffects: 'Headache, flushing, dyspepsia, nasal congestion, back pain, visual disturbances, priapism (rare)',
+                pharmacokinetics: 'Oral, hepatic metabolism, very long half-life (17.5h)',
+                clinicalPearls: 'Longest acting PDE5 inhibitor. Can be taken with food. Warn about nitrate interaction. If erection >4h, seek emergency help',
+                indication: 'Erectile dysfunction, pulmonary arterial hypertension, benign prostatic hyperplasia'
+            },
+
+'vardenafil': {
+                name: 'Vardenafil',
+                class: 'Phosphodiesterase type-5 inhibitors',
+                mechanism: 'Selective PDE5 inhibitor - enhances erectile function',
+                dosing: '10mg PRN 25-60min before sexual activity (range 5-20mg)',
+                contraindications: 'As other PDE5 inhibitors',
+                interactions: 'Nitrates (contraindicated), alpha-blockers, CYP3A4 inhibitors',
+                monitoring: 'BP, cardiovascular symptoms, priapism',
+                pregnancy: 'Not applicable',
+                sideEffects: 'Headache, flushing, nasal congestion, dyspepsia, dizziness, visual changes',
+                pharmacokinetics: 'Rapid absorption, onset 30-60min, half-life 4-5h',
+                clinicalPearls: 'Intermediate duration between sildenafil and tadalafil. Take on empty stomach for faster effect. Avoid grapefruit juice',
+                indication: 'Erectile dysfunction'
+            },
+
+'rosuvastatin': {
+                name: 'Rosuvastatin',
+                class: 'Statins',
+                mechanism: 'HMG-CoA reductase inhibitor - reduces cholesterol synthesis',
+                dosing: 'Start 5-10mg OD at night, increase to 20mg if needed. Max 40mg (only in high-risk patients)',
+                contraindications: 'Active liver disease, pregnancy, breastfeeding, myopathy',
+                interactions: 'Fibrates (↑ myopathy), ciclosporin, warfarin, CYP3A4 inhibitors (less than other statins)',
+                monitoring: 'Lipid profile (3 months), LFTs pre-treatment, creatine kinase if myalgia',
+                pregnancy: 'Contraindicated',
+                sideEffects: 'Myalgia, GI upset, headache, myopathy/rhabdomyolysis (rare), DM risk',
+                pharmacokinetics: 'Oral, minimal hepatic metabolism, renal excretion ~10%',
+                clinicalPearls: 'Most potent statin - greatest LDL reduction per mg. Start 5mg in Asian patients and CKD. Less drug interactions than atorvastatin',
+                indication: 'Primary and secondary prevention of cardiovascular disease, hypercholesterolaemia'
+            },
+
+'folic acid': {
+                name: 'Folic Acid',
+                class: 'Vitamins',
+                mechanism: 'Essential for DNA synthesis and cell division',
+                dosing: 'Folate deficiency: 5mg OD for 4 months. Prophylaxis: 400mcg OD. Pregnancy: 400mcg (5mg if high risk). Methotrexate: 5mg weekly',
+                contraindications: 'Undiagnosed megaloblastic anaemia (can mask B12 deficiency)',
+                interactions: 'Phenytoin (↓ levels), sulfasalazine, methotrexate',
+                monitoring: 'FBC, reticulocyte count, vitamin B12',
+                pregnancy: 'Essential - prevents neural tube defects. 400mcg preconception to 12 weeks (5mg if previous NTD)',
+                sideEffects: 'Rare - GI upset, allergic reactions',
+                pharmacokinetics: 'Well absorbed orally, stored in liver',
+                clinicalPearls: 'Check B12 before treating megaloblastic anaemia (folic acid can worsen subacute combined degeneration). 5mg weekly with methotrexate reduces toxicity',
+                indication: 'Folate deficiency anaemia, pregnancy/preconception, methotrexate therapy, chronic haemolytic anaemia'
+            },
+
+'hydroxocobalamin': {
+                name: 'Hydroxocobalamin',
+                class: 'Vitamins',
+                mechanism: 'Vitamin B12 - essential cofactor for cell metabolism and DNA synthesis',
+                dosing: 'Pernicious anaemia: 1mg IM 3x weekly for 2 weeks, then every 3 months for life. Deficiency: 1mg IM 3x weekly for 2 weeks, then review',
+                contraindications: 'Hypersensitivity, cobalt allergy',
+                interactions: 'Chloramphenicol (↓ response)',
+                monitoring: 'FBC, reticulocyte count, K+ (initial treatment can cause hypokalaemia), neurological symptoms',
+                pregnancy: 'Safe - essential vitamin',
+                sideEffects: 'Injection site reactions, hypokalaemia (initial treatment), red discolouration of urine, rash',
+                pharmacokinetics: 'IM injection, stored in liver, slow release',
+                clinicalPearls: 'Don\'t wait for B12 result if PA suspected with neuro symptoms - start immediately. Red urine is benign. Check folate too. Lifelong treatment for PA',
+                indication: 'Pernicious anaemia, B12 deficiency, neuropathy, cyanide poisoning (high dose)'
+            },
+
+'phytomenadione': {
+                name: 'Phytomenadione (Vitamin K1)',
+                class: 'Vitamins',
+                mechanism: 'Cofactor for synthesis of clotting factors II, VII, IX, X',
+                dosing: 'Warfarin reversal: 1-5mg IV/PO depending on INR and bleeding. Neonates: 1mg IM at birth. Deficiency: 10mg IV/PO',
+                contraindications: 'Hypersensitivity (IV can cause anaphylaxis)',
+                interactions: 'Warfarin (antagonises effect), antibiotics (↓ gut synthesis)',
+                monitoring: 'INR, PT, bleeding',
+                pregnancy: 'Safe',
+                sideEffects: 'Anaphylactoid reactions (IV, rare), injection site reactions, transient hyperbilirubinaemia (neonates)',
+                pharmacokinetics: 'Oral/IV/IM, onset hours (oral) to 6-12h for INR correction',
+                clinicalPearls: 'Give IV slowly to reduce anaphylaxis risk. For major warfarin bleed, give with PCC. Oral as effective as IV if no emergency. All neonates receive prophylaxis',
+                indication: 'Warfarin reversal, vitamin K deficiency, newborn haemorrhagic disease prophylaxis'
+            },
+
+'zopiclone': {
+                name: 'Zopiclone',
+                class: 'Z-drugs (Hypnotics)',
+                mechanism: 'Cyclopyrrolone - acts on GABA-A receptors (benzodiazepine site)',
+                dosing: '7.5mg at bedtime (3.75mg in elderly/hepatic impairment). Maximum 2-4 weeks',
+                contraindications: 'Myasthenia gravis, severe respiratory failure, sleep apnoea, severe hepatic impairment',
+                interactions: 'CNS depressants (↑ sedation), CYP3A4 inhibitors (↑ levels), alcohol',
+                monitoring: 'Dependence, daytime drowsiness, cognitive impairment',
+                pregnancy: 'Avoid - neonatal withdrawal, floppy infant syndrome',
+                sideEffects: 'Metallic taste (very common), drowsiness, dizziness, dependence, withdrawal, amnesia, falls (elderly)',
+                pharmacokinetics: 'Rapid absorption, onset 30min, half-life 5h',
+                clinicalPearls: 'Shorter course better than benzodiazepines but still addictive. Bitter metallic taste very common. Taper to stop after >2 weeks. Review regularly - CBT-I more effective long-term',
+                indication: 'Short-term insomnia (2-4 weeks max)'
+            },
+
+'zolpidem': {
+                name: 'Zolpidem',
+                class: 'Z-drugs (Hypnotics)',
+                mechanism: 'Imidazopyridine - selective GABA-A receptor agonist',
+                dosing: '10mg at bedtime (5mg in elderly). Maximum 4 weeks',
+                contraindications: 'As zopiclone',
+                interactions: 'As zopiclone',
+                monitoring: 'Dependence, complex sleep behaviours',
+                pregnancy: 'Avoid',
+                sideEffects: 'Drowsiness, dizziness, headache, complex sleep behaviours (sleep-walking, sleep-eating), dependence, amnesia',
+                pharmacokinetics: 'Rapid onset, short half-life (2-3h)',
+                clinicalPearls: 'More hypnotic-selective than benzodiazepines. Risk of complex sleep behaviours - warn patients. Short duration reduces morning hangover but can cause early waking',
+                indication: 'Short-term insomnia'
+            },
+
+'tazobactam': {
+                name: 'Piperacillin with Tazobactam (Tazocin)',
+                class: 'Penicillins, antipseudomonal',
+                mechanism: 'Extended-spectrum penicillin + beta-lactamase inhibitor - covers Pseudomonas and anaerobes',
+                dosing: '4.5g TDS IV (piperacillin 4g + tazobactam 500mg). Severe: QDS',
+                contraindications: 'Penicillin allergy',
+                interactions: 'Aminoglycosides (inactivation in vitro - don\'t mix), methotrexate, anticoagulants',
+                monitoring: 'Renal function, electrolytes (contains sodium), signs of C.diff',
+                pregnancy: 'Use if benefit outweighs risk - limited data',
+                sideEffects: 'Diarrhoea, rash, hypersensitivity, C.diff, hypokalaemia, eosinophilia',
+                pharmacokinetics: 'IV only, renal excretion, dose adjust in renal impairment',
+                clinicalPearls: 'Broad-spectrum including Pseudomonas. Hospital-acquired pneumonia, neutropenic sepsis, intra-abdominal sepsis. High sodium content - caution in heart failure',
+                indication: 'Hospital-acquired pneumonia, neutropenic sepsis, intra-abdominal infections, severe UTI/pyelonephritis'
+            },
+
+'donepezil': {
+                name: 'Donepezil',
+                class: 'Acetylcholinesterase inhibitors',
+                mechanism: 'Reversible acetylcholinesterase inhibitor - increases acetylcholine in brain',
+                dosing: 'Start 5mg OD at night, increase to 10mg after 4-6 weeks if tolerated',
+                contraindications: 'Sick sinus syndrome, supraventricular conduction abnormalities',
+                interactions: 'Beta-blockers (↑ bradycardia), anticholinergics (antagonism), NSAIDs (↑ GI bleeding)',
+                monitoring: 'Cognitive function, weight, behavioural changes, HR, GI side effects',
+                pregnancy: 'Avoid - not indicated',
+                sideEffects: 'Nausea, diarrhoea, insomnia, muscle cramps, bradycardia, syncope, vivid dreams',
+                pharmacokinetics: 'Oral, long half-life (70h), hepatic metabolism',
+                clinicalPearls: 'Modest benefit in Alzheimer\'s (delays decline 6-12 months). Start low dose. Take at night may reduce insomnia. Review after 3 months - stop if no benefit',
+                indication: 'Mild-moderate Alzheimer\'s disease, dementia in Parkinson\'s disease'
+            },
+
+'rivastigmine': {
+                name: 'Rivastigmine',
+                class: 'Acetylcholinesterase inhibitors',
+                mechanism: 'Reversible cholinesterase inhibitor (both acetylcholinesterase and butyrylcholinesterase)',
+                dosing: 'Oral: start 1.5mg BD, increase gradually to 3-6mg BD. Transdermal patch: 4.6mg/24h initially',
+                contraindications: 'Hypersensitivity',
+                interactions: 'As donepezil',
+                monitoring: 'As donepezil',
+                pregnancy: 'Avoid',
+                sideEffects: 'Nausea, vomiting, diarrhoea, anorexia, weight loss, dizziness, headache. Patch: skin reactions',
+                pharmacokinetics: 'Oral or transdermal, short half-life (1.5h)',
+                clinicalPearls: 'Patch formulation reduces GI side effects and improves compliance. Useful in Parkinson\'s disease dementia. Titrate slowly to minimize nausea',
+                indication: 'Mild-moderate Alzheimer\'s disease, dementia in Parkinson\'s disease'
+            },
+
+'pyridostigmine': {
+                name: 'Pyridostigmine',
+                class: 'Acetylcholinesterase inhibitors',
+                mechanism: 'Reversible cholinesterase inhibitor - enhances neuromuscular transmission',
+                dosing: 'Myasthenia: 30-120mg TDS-QDS (total usually 0.3-1.2g daily). Start low, titrate to response',
+                contraindications: 'Mechanical bowel obstruction, urinary obstruction',
+                interactions: 'Aminoglycosides (↓ effect), beta-blockers, anticholinergics',
+                monitoring: 'Muscle strength, cholinergic crisis signs, respiratory function',
+                pregnancy: 'Use if benefit outweighs risk - increase dose in pregnancy',
+                sideEffects: 'Cholinergic effects: nausea, vomiting, diarrhoea, abdominal cramps, hypersalivation, sweating, bradycardia, miosis',
+                pharmacokinetics: 'Oral, onset 30-60min, duration 3-6h',
+                clinicalPearls: 'Mainstay of myasthenia gravis treatment. Take 30-60min before meals if swallowing difficulty. Atropine reverses cholinergic crisis. Beware over-treatment (cholinergic crisis mimics myasthenic crisis)',
+                indication: 'Myasthenia gravis, reversal of non-depolarising muscle relaxants'
+            },
+
+'dutasteride': {
+                name: 'Dutasteride',
+                class: '5 alpha-reductase inhibitors',
+                mechanism: 'Inhibits both type 1 and type 2 5α-reductase, reducing dihydrotestosterone (DHT)',
+                dosing: '500mcg OD',
+                contraindications: 'Women of childbearing age, children, severe hepatic impairment',
+                interactions: 'CYP3A4 inhibitors (↑ levels)',
+                monitoring: 'PSA (halves after 6 months), prostate symptoms, sexual function',
+                pregnancy: 'Contraindicated - teratogenic (feminisation of male fetus). Men should not donate blood',
+                sideEffects: 'Impotence, reduced libido, ejaculation disorders, gynaecomastia, depression',
+                pharmacokinetics: 'Oral, very long half-life (3-5 weeks), extensively protein bound',
+                clinicalPearls: 'More potent than finasteride. Takes 3-6 months for full effect. Persistent sexual dysfunction reported. Women and children should not handle crushed tablets. PSA halved - double value for screening',
+                indication: 'Benign prostatic hyperplasia, male pattern baldness (off-label)'
+            },
+
+'finasteride': {
+                name: 'Finasteride',
+                class: '5 alpha-reductase inhibitors',
+                mechanism: 'Inhibits type 2 5α-reductase, reducing DHT',
+                dosing: 'BPH: 5mg OD. Male pattern baldness: 1mg OD',
+                contraindications: 'Women of childbearing age, children, pregnancy',
+                interactions: 'None significant',
+                monitoring: 'PSA, prostate symptoms, hair growth (if used for alopecia)',
+                pregnancy: 'Contraindicated - teratogenic',
+                sideEffects: 'Sexual dysfunction (impotence, reduced libido, ejaculation disorders), gynaecomastia, depression',
+                pharmacokinetics: 'Oral, half-life 5-6h (metabolites longer)',
+                clinicalPearls: 'Takes 3-6 months for BPH benefit. Reduces PSA by ~50% - need to double PSA value for screening. Post-finasteride syndrome controversial but reported. Avoid contact with crushed tablets if pregnant',
+                indication: 'Benign prostatic hyperplasia, male pattern baldness'
+            },
+
+'verapamil': {
+                name: 'Verapamil',
+                class: 'Calcium channel blockers',
+                mechanism: 'Non-dihydropyridine CCB - blocks L-type calcium channels in heart and vasculature',
+                dosing: 'Oral: 40-120mg TDS initially (MR: 240-480mg daily). IV: 5-10mg over 2min for SVT',
+                contraindications: 'Hypotension, heart failure, 2nd/3rd degree heart block, sick sinus, WPW with AF, concurrent beta-blocker',
+                interactions: 'Beta-blockers (severe bradycardia/asystole - avoid), digoxin (↑ levels), statins (↑ myopathy), grapefruit juice',
+                monitoring: 'BP, HR, ECG, constipation, LFTs',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Constipation (very common), bradycardia, AV block, hypotension, ankle oedema, headache, gingival hyperplasia',
+                pharmacokinetics: 'Oral or IV, extensive first-pass metabolism, half-life 4-7h',
+                clinicalPearls: 'Rate-limiting CCB (unlike amlodipine). Useful for SVT, AF rate control, hypertension. Severe constipation common. NEVER with beta-blockers (heart block/asystole)',
+                indication: 'Angina, hypertension, SVT, AF rate control, cluster headache prophylaxis'
+            },
+
+'felodipine': {
+                name: 'Felodipine',
+                class: 'Calcium channel blockers',
+                mechanism: 'Dihydropyridine CCB - peripheral vasodilation',
+                dosing: 'Start 5mg OD, increase to 10mg if needed',
+                contraindications: 'Unstable angina, MI within 1 month, significant aortic stenosis, uncontrolled heart failure',
+                interactions: 'CYP3A4 inhibitors (↑ levels), grapefruit juice (↑ levels)',
+                monitoring: 'BP, ankle oedema, HR',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Flushing, headache, ankle oedema, palpitations, dizziness',
+                pharmacokinetics: 'Oral, extensive first-pass, half-life 25h',
+                clinicalPearls: 'Long-acting dihydropyridine. Similar to amlodipine but less commonly used. Once daily dosing. Avoid grapefruit',
+                indication: 'Hypertension, angina prophylaxis'
+            },
+
+'chlordiazepoxide': {
+                name: 'Chlordiazepoxide',
+                class: 'Benzodiazepines',
+                mechanism: 'Benzodiazepine - enhances GABA-A receptor activity',
+                dosing: 'Anxiety: 5-10mg TDS. Alcohol withdrawal: reducing regime starting 10-50mg QDS',
+                contraindications: 'Respiratory depression, sleep apnoea, severe hepatic impairment, myasthenia gravis',
+                interactions: 'CNS depressants (↑ sedation), CYP3A4 inhibitors',
+                monitoring: 'Sedation, falls risk, dependence, liver function',
+                pregnancy: 'Avoid - neonatal withdrawal, floppy infant syndrome',
+                sideEffects: 'Drowsiness, confusion (elderly), ataxia, dependence, withdrawal, falls, amnesia',
+                pharmacokinetics: 'Oral, long-acting (half-life 24-48h), hepatic metabolism',
+                clinicalPearls: 'Preferred benzodiazepine for alcohol detox (long half-life = smoother withdrawal). Reducing regime over 5-7 days. Accumulates in elderly/liver disease. Pabrinex alongside alcohol withdrawal',
+                indication: 'Alcohol withdrawal, short-term anxiety (rarely used now)'
+            },
+
+'cotrimoxazole': {
+                name: 'Co-trimoxazole (Trimethoprim + Sulfamethoxazole)',
+                class: 'Trimethoprim',
+                mechanism: 'Synergistic inhibition of folate synthesis - sequential blockade',
+                dosing: 'Standard: 960mg BD. PCP treatment: 120mg/kg/day in 2-4 divided doses for 14-21 days. PCP prophylaxis: 960mg OD or 3x weekly',
+                contraindications: 'Severe renal/hepatic impairment, porphyria, blood dyscrasias, G6PD deficiency',
+                interactions: 'Warfarin (↑ INR), methotrexate (↑ toxicity), phenytoin, sulfonylureas',
+                monitoring: 'FBC, U&Es (risk of hyperkalaemia), LFTs. Watch for rash',
+                pregnancy: 'Avoid - teratogenic (folate antagonist). Contraindicated in 1st trimester',
+                sideEffects: 'Rash (common, can be severe Stevens-Johnson), nausea, hyperkalaemia, bone marrow suppression, crystalluria',
+                pharmacokinetics: 'Oral, renal excretion, dose reduce in renal impairment',
+                clinicalPearls: 'Higher side effect rate than trimethoprim alone. Reserved for PCP (treatment/prophylaxis), nocardia, toxoplasmosis. HIV patients high risk of rash. Ensure good hydration',
+                indication: 'Pneumocystis pneumonia (PCP), toxoplasmosis, nocardia, some resistant UTIs'
+            },
+
+'beclometasone': {
+                name: 'Beclometasone (Beclomethasone)',
+                class: 'Corticosteroids, inhaled / nasal',
+                mechanism: 'Inhaled corticosteroid - reduces airway inflammation',
+                dosing: 'Asthma: 200-800mcg daily in divided doses (higher if extra-fine particles). Nasal: 2 sprays each nostril BD',
+                contraindications: 'Untreated infection, hypersensitivity',
+                interactions: 'None significant (minimal systemic absorption)',
+                monitoring: 'Asthma control, growth (children), oral candidiasis, bone density if high dose long-term',
+                pregnancy: 'Safe - inhaled corticosteroids of choice in pregnancy',
+                sideEffects: 'Oral candidiasis, hoarse voice, sore throat, paradoxical bronchospasm (rare). High dose: adrenal suppression, osteoporosis',
+                pharmacokinetics: 'Inhaled, minimal systemic absorption, hepatic metabolism',
+                clinicalPearls: 'Rinse mouth after use to prevent candidiasis. Extra-fine particle formulations (Qvar, Kbihaler) ~2x more potent. Spacer device improves delivery and reduces oral candidiasis',
+                indication: 'Asthma (preventer), COPD (with LABA), allergic rhinitis (nasal)'
+            },
+
+'sodium valproate': {
+                name: 'Sodium Valproate',
+                class: 'Valproate (Antiepileptic)',
+                mechanism: 'Enhances GABA activity, blocks voltage-gated sodium channels',
+                dosing: 'Epilepsy: start 600mg daily in divided doses, increase weekly to 1-2g daily (max 2.5g). Bipolar: 750mg daily initially',
+                contraindications: 'Active liver disease, porphyria, mitochondrial disorders, pregnancy (unless no alternative)',
+                interactions: 'Enzyme inhibitor - increases lamotrigine, phenytoin levels. Aspirin (↑ valproate levels). Carbapenems (↓ valproate)',
+                monitoring: 'LFTs and FBC at baseline then 6-monthly, ammonia if encephalopathy suspected, pregnancy prevention (annual risk acknowledgement)',
+                pregnancy: 'Highly teratogenic (10% major malformations, neurodevelopmental effects). Contraindicated unless last resort - Pregnancy Prevention Programme mandatory',
+                sideEffects: 'Weight gain, tremor, hair loss (regrows curly), hepatotoxicity, thrombocytopenia, pancreatitis, hyperammonaemic encephalopathy, PCOS',
+                pharmacokinetics: 'Oral, hepatic metabolism, highly protein bound, half-life 9-18h',
+                clinicalPearls: 'Broad-spectrum antiepileptic. Pregnancy Prevention Programme essential for women of childbearing potential - annual signed form. Monitor LFTs closely first 6 months. Stop if unexplained lethargy/vomiting (hepatotoxicity)',
+                indication: 'Generalised and focal epilepsy, bipolar disorder, migraine prophylaxis'
+            },
+
+'valproic acid': {
+                name: 'Valproic Acid (Valproate Semisodium)',
+                class: 'Valproate',
+                mechanism: 'As sodium valproate',
+                dosing: 'As sodium valproate (doses expressed as valproic acid)',
+                contraindications: 'As sodium valproate',
+                interactions: 'As sodium valproate',
+                monitoring: 'As sodium valproate',
+                pregnancy: 'As sodium valproate - highly teratogenic',
+                sideEffects: 'As sodium valproate',
+                pharmacokinetics: 'As sodium valproate',
+                clinicalPearls: 'Mixture of sodium valproate and valproic acid (as Depakote, Epilim Chrono). Same precautions as sodium valproate. Pregnancy Prevention Programme applies',
+                indication: 'As sodium valproate'
+            },
+
+'chlorpromazine': {
+                name: 'Chlorpromazine',
+                class: 'Antipsychotics, first-generation (typical)',
+                mechanism: 'Dopamine D2 receptor antagonist + antimuscarinic + antihistamine + alpha-blocking effects',
+                dosing: 'Schizophrenia: start 25mg TDS, increase gradually to 75-300mg daily. Nausea: 10-25mg TDS',
+                contraindications: 'CNS depression, phaeochromocytoma, bone marrow depression',
+                interactions: 'CNS depressants, drugs prolonging QT, antihypertensives (↑ hypotension)',
+                monitoring: 'FBC, U&Es, LFTs, lipids, glucose, weight, BP, ECG (QTc), EPS, sedation',
+                pregnancy: 'Use only if essential - EPS in neonate',
+                sideEffects: 'Sedation (very common), extrapyramidal side effects, hypotension, antimuscarinic effects, hyperprolactinaemia, neuroleptic malignant syndrome, QT prolongation',
+                pharmacokinetics: 'Oral/IM, hepatic metabolism, long half-life',
+                clinicalPearls: 'First antipsychotic (1950s) - now rarely first-line. Very sedating. Useful for intractable hiccups. Monitor for EPS and tardive dyskinesia. Photosensitivity - advise sun protection',
+                indication: 'Schizophrenia (rarely first-line), acute mania, severe anxiety, intractable hiccups, nausea/vomiting'
+            },
+
+'flupentixol': {
+                name: 'Flupentixol (Flupenthixol)',
+                class: 'Antipsychotics, first-generation',
+                mechanism: 'Dopamine D1/D2 receptor antagonist',
+                dosing: 'Oral: 3-18mg daily in divided doses. Depot: 20-40mg IM every 2-4 weeks',
+                contraindications: 'CNS depression, circulatory collapse, phaeochromocytoma',
+                interactions: 'As other antipsychotics',
+                monitoring: 'As chlorpromazine',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'EPS, sedation, weight gain, hyperprolactinaemia, hypotension, QT prolongation',
+                pharmacokinetics: 'Oral or depot injection, long half-life (depot lasts 2-4 weeks)',
+                clinicalPearls: 'Depot useful for adherence. Low dose (0.5-1mg) used for depression (off-label). Monitor for tardive dyskinesia',
+                indication: 'Schizophrenia, psychosis, depression (low dose)'
+            },
+
+'promethazine': {
+                name: 'Promethazine',
+                class: 'Antihistamine H1-receptor antagonist (sedating)',
+                mechanism: 'H1 antagonist + antimuscarinic + sedative effects',
+                dosing: 'Allergy: 25mg nocte (up to 25mg BD). Motion sickness: 25mg night before travel then 25mg BD. Insomnia: 25-50mg nocte',
+                contraindications: 'Infants <2 years (respiratory depression risk), porphyria',
+                interactions: 'CNS depressants (↑ sedation), antimuscarinics, MAOIs',
+                monitoring: 'Sedation, antimuscarinic effects',
+                pregnancy: 'Generally avoid - if used, lowest dose shortest time',
+                sideEffects: 'Sedation (very common), antimuscarinic effects (dry mouth, urinary retention, blurred vision), headache, nightmares',
+                pharmacokinetics: 'Oral/IM, long duration of action (12-24h)',
+                clinicalPearls: 'Very sedating antihistamine. Useful for night-time allergy symptoms. Avoid driving. Not recommended routinely for insomnia (tolerance develops). Avoid in elderly (confusion risk)',
+                indication: 'Allergic conditions, motion sickness, short-term insomnia, nausea/vomiting'
+            },
+
+'cinnarizine': {
+                name: 'Cinnarizine',
+                class: 'Antihistamine H1-receptor antagonist',
+                mechanism: 'H1 antagonist + calcium channel blocking effects',
+                dosing: 'Motion sickness: 30mg 2h before travel, then 15mg every 8h. Vestibular disorders: 30mg TDS',
+                contraindications: 'Porphyria',
+                interactions: 'CNS depressants, alcohol',
+                monitoring: 'Drowsiness, extrapyramidal symptoms (rare but reported)',
+                pregnancy: 'Avoid',
+                sideEffects: 'Drowsiness, GI upset, weight gain, extrapyramidal effects (rare, long-term)',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 3-6h',
+                clinicalPearls: 'Effective for motion sickness and vertigo. Less sedating than promethazine. Take 2h before travel. Rare reports of parkinsonism with long-term use',
+                indication: 'Motion sickness, vertigo, Ménière\'s disease, tinnitus'
+            },
+
+'granisetron': {
+                name: 'Granisetron',
+                class: 'Antiemetic, 5-HT3 receptor antagonist',
+                mechanism: 'Blocks 5-HT3 receptors in CTZ and GI tract',
+                dosing: 'Chemotherapy: 1-2mg PO/IV before chemo. PONV prevention: 1mg before induction',
+                contraindications: 'Hypersensitivity, QT prolongation',
+                interactions: 'Drugs prolonging QT, SSRIs (serotonin syndrome rare)',
+                monitoring: 'QTc, constipation, serotonin syndrome',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Headache, constipation, QT prolongation, serotonin syndrome (rare)',
+                pharmacokinetics: 'Oral/IV, hepatic metabolism, half-life 5-9h',
+                clinicalPearls: 'Similar to ondansetron but less commonly used. Very effective for chemotherapy-induced nausea. Often combined with dexamethasone. Watch for constipation',
+                indication: 'Chemotherapy-induced nausea/vomiting, radiotherapy-induced nausea, post-operative nausea'
+            },
+
+'nystatin': {
+                name: 'Nystatin',
+                class: 'Antifungal drugs (Polyene)',
+                mechanism: 'Binds to fungal cell membrane ergosterol, causing cell death',
+                dosing: 'Oral thrush: 100,000 units QDS (swish and swallow or retain in mouth). Intestinal: 500,000 units QDS',
+                contraindications: 'Hypersensitivity',
+                interactions: 'None (not absorbed)',
+                monitoring: 'Clinical response',
+                pregnancy: 'Safe',
+                sideEffects: 'Nausea, oral irritation (if suspension), diarrhoea',
+                pharmacokinetics: 'Not absorbed from GI tract - acts topically',
+                clinicalPearls: 'Topical antifungal only (not absorbed). For oral thrush: hold in mouth as long as possible before swallowing. Continue for 48h after symptoms resolve. Denture hygiene important',
+                indication: 'Oral and intestinal candidiasis, candidal skin infections (topical)'
+            },
+
+'trazodone': {
+                name: 'Trazodone',
+                class: 'Antidepressants, tricyclics and related drugs',
+                mechanism: 'Serotonin antagonist and reuptake inhibitor (SARI) + α1-antagonist',
+                dosing: 'Depression: start 100-150mg daily (can divide doses), increase to 300mg. Insomnia: 50-100mg nocte',
+                contraindications: 'Recent MI, mania, severe hepatic impairment',
+                interactions: 'MAOIs (serotonin syndrome), CYP3A4 inhibitors, antihypertensives (↑ hypotension)',
+                monitoring: 'Mood, suicidality, postural BP, priapism, sedation',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Drowsiness (very common), postural hypotension, dizziness, dry mouth, priapism (rare but serious)',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 5-9h',
+                clinicalPearls: 'Sedating antidepressant - often used for depression with insomnia. Lower seizure risk than tricyclics. Warn male patients about priapism (seek help if >2h). Useful off-label for insomnia',
+                indication: 'Depression (especially with anxiety/insomnia), insomnia (off-label low dose)'
+            },
+
+'nortriptyline': {
+                name: 'Nortriptyline',
+                class: 'Antidepressants, tricyclics',
+                mechanism: 'Noradrenaline reuptake inhibitor (metabolite of amitriptyline)',
+                dosing: 'Depression: 50-150mg daily in divided doses or at night. Neuropathic pain: 10-25mg nocte, titrate to 75mg',
+                contraindications: 'Recent MI, arrhythmias, mania, severe liver disease',
+                interactions: 'MAOIs (contraindicated), SSRIs (↑ levels), anticholinergics, adrenaline (arrhythmias)',
+                monitoring: 'ECG (QTc), mood, suicidality, antimuscarinic effects, BP',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Antimuscarionic effects (dry mouth, constipation, urinary retention, blurred vision), sedation, arrhythmias, weight gain, postural hypotension',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 18-95h',
+                clinicalPearls: 'Less sedating and fewer antimuscarinic effects than amitriptyline. Narrow therapeutic index - levels can be monitored. Useful for neuropathic pain. Takes 2-4 weeks for antidepressant effect',
+                indication: 'Depression, neuropathic pain'
+            },
+
+'lofepramine': {
+                name: 'Lofepramine',
+                class: 'Antidepressants, tricyclics',
+                mechanism: 'Noradrenaline reuptake inhibitor',
+                dosing: 'Depression: 70mg BD-TDS',
+                contraindications: 'As other tricyclics',
+                interactions: 'As other tricyclics',
+                monitoring: 'As other tricyclics',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Fewer antimuscarinic and cardiotoxic effects than older tricyclics. Less dangerous in overdose',
+                pharmacokinetics: 'Oral, hepatic metabolism',
+                clinicalPearls: 'Safest tricyclic in overdose - less cardiotoxic. Better tolerated than older tricyclics. Less sedating. Good choice if tricyclic needed in elderly',
+                indication: 'Depression'
+            },
+
+'tolterodine': {
+                name: 'Tolterodine',
+                class: 'Antimuscarinics, genitourinary',
+                mechanism: 'Muscarinic receptor antagonist - reduces detrusor overactivity',
+                dosing: 'Standard: 2mg BD. Modified release: 4mg OD',
+                contraindications: 'Urinary retention, gastric retention, uncontrolled angle-closure glaucoma, myasthenia gravis',
+                interactions: 'CYP3A4 inhibitors (↑ levels), other antimuscarinics (↑ effects)',
+                monitoring: 'Residual urine volume, antimuscarinic side effects, cognitive effects (elderly)',
+                pregnancy: 'Avoid',
+                sideEffects: 'Dry mouth, constipation, blurred vision, drowsiness, cognitive impairment (elderly), urinary retention',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 2-10h',
+                clinicalPearls: 'Less selective than solifenacin. Similar efficacy to oxybutynin but better tolerated. Avoid in elderly due to cognitive effects. Advise on fluid restriction and bladder training',
+                indication: 'Overactive bladder, urge incontinence'
+            },
+
+'hyoscine butylbromide': {
+                name: 'Hyoscine Butylbromide (Buscopan)',
+                class: 'Antimuscarinics, GI',
+                mechanism: 'Antimuscarinic - reduces GI smooth muscle spasm',
+                dosing: 'Oral: 20mg QDS. IV: 20mg (can repeat)',
+                contraindications: 'Paralytic ileus, pyloric stenosis, closed-angle glaucoma, myasthenia gravis',
+                interactions: 'Other antimuscarinics (↑ effects)',
+                monitoring: 'GI symptoms, antimuscarinic effects',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Dry mouth, constipation, blurred vision, urinary retention, tachycardia',
+                pharmacokinetics: 'Oral/IV, poorly crosses BBB (quaternary amine)',
+                clinicalPearls: 'Doesn\'t cross BBB - fewer CNS effects than hyoscine hydrobromide. Useful for IBS, renal/biliary colic. Available OTC. Consider in palliative care for bowel obstruction',
+                indication: 'Irritable bowel syndrome, GI/renal/biliary colic, palliative care (bowel obstruction)'
+            },
+
+'glycopyrronium': {
+                name: 'Glycopyrronium (Glycopyrrolate)',
+                class: 'Antimuscarinics',
+                mechanism: 'Muscarinic antagonist (quaternary ammonium) - bronchodilator when inhaled, reduces secretions when systemic',
+                dosing: 'COPD (inhaled): 44-50mcg OD. Excessive secretions: 200mcg TDS-QDS SC/IM. Reversal of muscle relaxants: 200-600mcg IV',
+                contraindications: 'As other antimuscarinics',
+                interactions: 'Other antimuscarinics',
+                monitoring: 'Respiratory function (if COPD), secretions, antimuscarinic effects',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Dry mouth (very common), constipation, urinary retention, blurred vision',
+                pharmacokinetics: 'Inhaled or parenteral, quaternary amine (doesn\'t cross BBB), renal excretion',
+                clinicalPearls: 'Inhaled LAMA for COPD (with LABA). Parenteral use in palliative care for death rattle, hypersalivation. Doesn\'t cross BBB - no CNS effects. Used to reverse neuromuscular blockade',
+                indication: 'COPD (inhaled), excessive salivation/secretions, reversal of neuromuscular blockade'
+            },
+
+'umeclidinium': {
+                name: 'Umeclidinium',
+                class: 'Antimuscarinics, bronchodilators (LAMA)',
+                mechanism: 'Long-acting muscarinic antagonist - bronchodilation',
+                dosing: 'Inhaled: 55mcg OD (often combined with vilanterol as Anoro)',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Other antimuscarinics (↑ effects)',
+                monitoring: 'Respiratory function, antimuscarinic effects',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Dry mouth, nasopharyngitis, upper respiratory tract infection, cough',
+                pharmacokinetics: 'Inhaled, minimal systemic absorption',
+                clinicalPearls: 'Once-daily LAMA for COPD. Usually combined with LABA (vilanterol). Alternative to tiotropium. Similar efficacy to other LAMAs',
+                indication: 'COPD maintenance'
+            },
+
+'indacaterol': {
+                name: 'Indacaterol',
+                class: 'Beta2-agonists (LABA)',
+                mechanism: 'Long-acting β2-agonist - bronchodilation',
+                dosing: 'Inhaled: 150-300mcg OD',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Beta-blockers (antagonism), sympathomimetics (↑ cardiovascular effects)',
+                monitoring: 'Respiratory function, HR, tremor, K+',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Headache, cough, nasopharyngitis, tremor, palpitations, hypokalaemia',
+                pharmacokinetics: 'Inhaled, 24h duration',
+                clinicalPearls: 'Ultra-long-acting LABA - once daily dosing. Must use with ICS in asthma. Monotherapy OK in COPD. Often combined with LAMA (glycopyrronium)',
+                indication: 'COPD, asthma (with ICS only)'
+            },
+
+'alogliptin': {
+                name: 'Alogliptin',
+                class: 'DPP-4 inhibitors (Gliptins)',
+                mechanism: 'Inhibits dipeptidyl peptidase-4, increasing incretin levels',
+                dosing: '25mg OD (12.5mg if moderate renal impairment, 6.25mg if severe)',
+                contraindications: 'Type 1 diabetes, DKA',
+                interactions: 'None significant',
+                monitoring: 'HbA1c, renal function, pancreatitis symptoms, heart failure',
+                pregnancy: 'Avoid - insufficient data',
+                sideEffects: 'Nasopharyngitis, pancreatitis (rare), heart failure (controversial), hypersensitivity reactions',
+                pharmacokinetics: 'Oral, renal excretion (dose adjust in CKD)',
+                clinicalPearls: 'Similar efficacy to other DPP-4 inhibitors. Weight-neutral. Low hypo risk. Dose reduction needed in renal impairment. Some concern about heart failure risk',
+                indication: 'Type 2 diabetes (add-on therapy)'
+            },
+
+'chlortalidone': {
+                name: 'Chlortalidone (Chlorthalidone)',
+                class: 'Diuretics, thiazide-like',
+                mechanism: 'Thiazide-like diuretic - inhibits Na+/Cl- cotransporter in distal tubule',
+                dosing: 'Hypertension: 12.5-25mg OD (morning). Oedema: 50mg OD initially',
+                contraindications: 'Hypokalaemia, hyponatraemia, hypercalcaemia, severe renal/hepatic impairment, Addison\'s',
+                interactions: 'As bendroflumethiazide',
+                monitoring: 'U&Es, glucose, lipids, uric acid',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Hypokalaemia, hyponatraemia, hyperuricaemia, hyperglycaemia, hypercalcaemia, postural hypotension, impotence',
+                pharmacokinetics: 'Oral, very long half-life (40-60h), renal excretion',
+                clinicalPearls: 'Longer acting than bendroflumethiazide. Some evidence for superior cardiovascular outcomes. Used in major hypertension trials. Start low dose',
+                indication: 'Hypertension, oedema'
+            },
+
+'cimetidine': {
+                name: 'Cimetidine',
+                class: 'H2-receptor antagonists',
+                mechanism: 'Histamine H2 receptor antagonist - reduces gastric acid secretion',
+                dosing: 'Peptic ulcer: 400mg BD or 800mg nocte. Reflux: 400mg QDS',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Multiple - inhibits CYP450. ↑ warfarin, phenytoin, theophylline, carbamazepine levels. ↓ ketoconazole absorption',
+                monitoring: 'Symptom control, drug interactions',
+                pregnancy: 'Use ranitidine in preference',
+                sideEffects: 'Diarrhoea, dizziness, rash, gynaecomastia, confusion (elderly), impotence',
+                pharmacokinetics: 'Oral, renal excretion',
+                clinicalPearls: 'Less commonly used than ranitidine due to drug interactions. Can cause confusion in elderly. Gynaecomastia due to antiandrogenic effects. PPIs now preferred',
+                indication: 'Peptic ulcer disease, GORD, dyspepsia (rarely used now - PPIs preferred)'
+            },
+
+'famotidine': {
+                name: 'Famotidine',
+                class: 'H2-receptor antagonists',
+                mechanism: 'Histamine H2 receptor antagonist',
+                dosing: 'Peptic ulcer: 40mg nocte or 20mg BD. GORD: 20-40mg BD',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Fewer than cimetidine. Ketoconazole/itraconazole (↓ absorption)',
+                monitoring: 'Symptom control, renal function',
+                pregnancy: 'Use only if essential',
+                sideEffects: 'Headache, dizziness, constipation, diarrhoea',
+                pharmacokinetics: 'Oral, renal excretion',
+                clinicalPearls: 'Fewer interactions than cimetidine. Less commonly used since ranitidine recall. PPIs now generally preferred for acid suppression',
+                indication: 'Peptic ulcer disease, GORD, dyspepsia'
+            },
+
+'ferrous sulfate': {
+                name: 'Ferrous Sulfate',
+                class: 'Iron supplement',
+                mechanism: 'Provides supplemental elemental iron',
+                dosing: 'Prophylaxis: 200mg (65mg elemental Fe) OD. Treatment: 200mg BD-TDS',
+                contraindications: 'Haemochromatosis, haemosiderosis, anaemias not due to iron deficiency',
+                interactions: 'Levothyroxine (↓ absorption - separate by 4h), bisphosphonates, antibiotics (tetracyclines, quinolones)',
+                monitoring: 'FBC, ferritin, tolerance of GI side effects',
+                pregnancy: 'Safe - prophylaxis recommended',
+                sideEffects: 'GI upset (nausea, constipation/diarrhoea, abdominal pain), black stools, tooth staining (liquid)',
+                pharmacokinetics: 'Oral, absorption increased in iron deficiency, take on empty stomach for best absorption',
+                clinicalPearls: 'Constipation very common - consider lactulose. Take on empty stomach (or with vitamin C) for better absorption, but worse GI side effects. Black stools normal. Takes 3 months to replete stores',
+                indication: 'Iron deficiency anaemia, prophylaxis in pregnancy'
+            },
+
+'ferrous fumarate': {
+                name: 'Ferrous Fumarate',
+                class: 'Iron supplement',
+                mechanism: 'Provides supplemental elemental iron',
+                dosing: '200-400mg OD-TDS (containing 65-130mg elemental iron per tablet)',
+                contraindications: 'As ferrous sulfate',
+                interactions: 'As ferrous sulfate',
+                monitoring: 'As ferrous sulfate',
+                pregnancy: 'Safe',
+                sideEffects: 'As ferrous sulfate (possibly better tolerated)',
+                pharmacokinetics: 'As ferrous sulfate',
+                clinicalPearls: 'Higher elemental iron content than ferrous sulfate per mg. Some patients tolerate better. Otherwise equivalent to ferrous sulfate',
+                indication: 'Iron deficiency anaemia'
+            },
+
+'macrogol 3350': {
+                name: 'Macrogol 3350 (Polyethylene Glycol)',
+                class: 'Laxatives, osmotic',
+                mechanism: 'Osmotic laxative - retains water in bowel',
+                dosing: 'Constipation: 1-3 sachets daily. Faecal impaction: 8 sachets in 1L water over 6h',
+                contraindications: 'Bowel obstruction, perforation, toxic megacolon, severe inflammatory bowel disease',
+                interactions: 'None significant',
+                monitoring: 'Bowel frequency, hydration, electrolytes (if high dose)',
+                pregnancy: 'Safe',
+                sideEffects: 'Abdominal pain, bloating, nausea, diarrhoea',
+                pharmacokinetics: 'Not absorbed - acts locally in bowel',
+                clinicalPearls: 'Very effective and well tolerated. First-line for chronic constipation. Can be used in faecal impaction (higher doses). Better tolerated than lactulose. Safe in pregnancy',
+                indication: 'Chronic constipation, faecal impaction, bowel preparation'
+            },
+
+'docusate sodium': {
+                name: 'Docusate Sodium',
+                class: 'Laxatives, stimulant and stool softener',
+                mechanism: 'Stimulant + stool softener - reduces surface tension, stimulates peristalsis',
+                dosing: 'Oral: 100-200mg TDS. Rectal: 120mg enema',
+                contraindications: 'Bowel obstruction',
+                interactions: 'Liquid paraffin (↑ absorption - avoid)',
+                monitoring: 'Bowel frequency, abdominal cramps',
+                pregnancy: 'Generally safe',
+                sideEffects: 'Abdominal cramps, diarrhoea, nausea',
+                pharmacokinetics: 'Oral/rectal, onset 1-3 days (oral), 20min (rectal)',
+                clinicalPearls: 'Combined stimulant and softener. Useful in opioid-induced constipation. Rectal preparation good for rapid relief. Less effective than senna alone as stimulant',
+                indication: 'Constipation (especially with hard stools), opioid-induced constipation'
+            },
+
+'glycerol': {
+                name: 'Glycerol Suppositories',
+                class: 'Laxatives, rectal',
+                mechanism: 'Osmotic effect + mild irritant - promotes bowel movement',
+                dosing: '1-2 suppositories PR, repeat after 1h if no result',
+                contraindications: 'Bowel obstruction, inflammatory bowel disease (acute)',
+                interactions: 'None',
+                monitoring: 'Bowel evacuation',
+                pregnancy: 'Safe',
+                sideEffects: 'Local irritation, abdominal cramps',
+                pharmacokinetics: 'Local rectal action, onset 15-60min',
+                clinicalPearls: 'Simple, safe, rapid onset. Useful for quick relief or before procedures. Moisten with water before insertion. Generally well tolerated',
+                indication: 'Acute constipation, before procedures'
+            },
+
+'sodium citrate': {
+                name: 'Sodium Citrate Enema (Micralax)',
+                class: 'Laxatives, rectal',
+                mechanism: 'Osmotic + softening - draws water into rectum',
+                dosing: '1 micro-enema (5ml) PR',
+                contraindications: 'Bowel obstruction',
+                interactions: 'None',
+                monitoring: 'Bowel evacuation',
+                pregnancy: 'Safe',
+                sideEffects: 'Local irritation, cramps',
+                pharmacokinetics: 'Local rectal action, onset 5-30min',
+                clinicalPearls: 'Very quick onset. Small volume enema. Useful before procedures or for acute constipation. Often preferred to phosphate enemas (less systemic absorption)',
+                indication: 'Acute constipation, pre-procedure bowel evacuation'
+            },
+
+'phosphate enema': {
+                name: 'Phosphate Enema',
+                class: 'Laxatives, rectal',
+                mechanism: 'Osmotic laxative - draws water into bowel',
+                dosing: '1 enema (133ml) PR',
+                contraindications: 'Heart failure, ascites, renal impairment, inflammatory bowel disease',
+                interactions: 'None',
+                monitoring: 'Electrolytes (especially if renal impairment), bowel evacuation',
+                pregnancy: 'Avoid',
+                sideEffects: 'Local irritation, electrolyte disturbances (hyperphosphataemia, hypocalcaemia, hyperkalaemia), arrhythmias',
+                pharmacokinetics: 'Local + systemic absorption, onset 5-20min',
+                clinicalPearls: 'Rapid and effective but can cause serious electrolyte disturbances, especially in renal impairment, elderly, bowel disease. Avoid in CKD. Use sodium citrate or docusate enemas as safer alternatives',
+                indication: 'Severe constipation, pre-procedure bowel clearance (when other methods ineffective)'
+            },
+
+'zafirlukast': {
+                name: 'Zafirlukast',
+                class: 'Leukotriene receptor antagonists',
+                mechanism: 'Blocks cysteinyl leukotriene receptors - anti-inflammatory',
+                dosing: '20mg BD (1h before or 2h after food)',
+                contraindications: 'Hepatic impairment, hypersensitivity',
+                interactions: 'Warfarin (↑ INR), theophylline (↓ levels), aspirin (↑ levels)',
+                monitoring: 'LFTs (Churg-Strauss syndrome), respiratory function',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Headache, GI upset, hepatotoxicity (rare), Churg-Strauss syndrome',
+                pharmacokinetics: 'Oral, hepatic metabolism',
+                clinicalPearls: 'Less commonly used than montelukast (BD dosing, more interactions, hepatotoxicity). Monitor LFTs. Can unmask Churg-Strauss when steroids reduced. Take on empty stomach',
+                indication: 'Asthma prophylaxis (add-on), exercise-induced asthma'
+            },
+
+'zolmitriptan': {
+                name: 'Zolmitriptan',
+                class: 'Triptans (5-HT1B/1D agonists)',
+                mechanism: 'Serotonin 5-HT1B/1D receptor agonist - vasoconstriction, inhibits neuropeptide release',
+                dosing: 'Oral: 2.5mg (repeat after 2h if needed, max 10mg/24h). Nasal: 5mg (one spray)',
+                contraindications: 'IHD, previous MI, uncontrolled hypertension, CVA/TIA, peripheral vascular disease',
+                interactions: 'Ergotamine (↑ vasospasm - avoid within 24h), SSRIs/SNRIs (serotonin syndrome), MAOIs',
+                monitoring: 'Cardiovascular status, medication overuse headache',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Tingling, warm sensation, heaviness, tightness (chest/throat), dizziness, drowsiness, nausea',
+                pharmacokinetics: 'Oral or nasal spray, onset 30min (oral), 15min (nasal), half-life 2.5-3h',
+                clinicalPearls: 'Similar to sumatriptan but better oral bioavailability. Nasal spray useful if vomiting. Take early in attack. Max 2 doses/attack. Limit to 10 days/month to avoid medication overuse headache',
+                indication: 'Acute migraine, cluster headache'
+            },
+
+'alfuzosin': {
+                name: 'Alfuzosin',
+                class: 'Alpha-blockers',
+                mechanism: 'Selective α1-adrenoceptor antagonist - relaxes prostatic and bladder neck smooth muscle',
+                dosing: '10mg OD (modified release)',
+                contraindications: 'Hypotension, postural hypotension history, severe hepatic impairment',
+                interactions: 'Antihypertensives (↑ hypotension), CYP3A4 inhibitors (↑ levels), PDE5 inhibitors (caution)',
+                monitoring: 'BP (especially after first dose), urinary symptoms, postural hypotension',
+                pregnancy: 'Not applicable (male indication)',
+                sideEffects: 'Dizziness, postural hypotension, headache, fatigue, retrograde ejaculation, floppy iris syndrome (cataract surgery)',
+                pharmacokinetics: 'Oral, hepatic metabolism, half-life 10h',
+                clinicalPearls: 'Once-daily uroselective α-blocker. Less postural hypotension than doxazosin. Warn about first-dose hypotension. Inform ophthalmologist before cataract surgery (floppy iris). Effects within 48h',
+                indication: 'Benign prostatic hyperplasia'
+            },
+
+'bupivacaine': {
+                name: 'Bupivacaine',
+                class: 'Local anaesthetics',
+                mechanism: 'Amide local anaesthetic - blocks voltage-gated sodium channels',
+                dosing: 'Dose depends on site/technique. Max 2mg/kg (3mg/kg with adrenaline). Epidural: 0.25-0.5%. Spinal: 0.5%',
+                contraindications: 'Hypersensitivity to amide anaesthetics, IV regional anaesthesia (Bier\'s block), complete heart block',
+                interactions: 'Antiarrhythmics (↑ myocardial depression), beta-blockers',
+                monitoring: 'Signs of toxicity (perioral tingling, tinnitus, seizures, arrhythmias), BP, HR',
+                pregnancy: 'Safe - widely used for epidural analgesia in labour',
+                sideEffects: 'CNS toxicity (at high doses): tinnitus, perioral tingling, seizures. Cardiac toxicity: arrhythmias, cardiac arrest. Hypotension (epidural/spinal)',
+                pharmacokinetics: 'Duration 2-8h (longer than lidocaine), metabolised hepatically',
+                clinicalPearls: 'Long-acting local anaesthetic. More cardiotoxic than lidocaine - inadvertent IV injection can cause cardiac arrest. Have lipid emulsion (Intralipid) ready for toxicity. Levobupivacaine less cardiotoxic',
+                indication: 'Regional anaesthesia, epidural analgesia (labour/post-op), peripheral nerve blocks'
+            },
+
+'levobupivacaine': {
+                name: 'Levobupivacaine',
+                class: 'Local anaesthetics',
+                mechanism: 'S-enantiomer of bupivacaine - amide local anaesthetic',
+                dosing: 'As bupivacaine. Max 2mg/kg. Epidural: 0.125-0.75%',
+                contraindications: 'As bupivacaine',
+                interactions: 'As bupivacaine',
+                monitoring: 'As bupivacaine',
+                pregnancy: 'Safe - preferred over bupivacaine in obstetrics',
+                sideEffects: 'Less cardiotoxic than bupivacaine. Otherwise similar side effects',
+                pharmacokinetics: 'Similar to bupivacaine but less cardiotoxic',
+                clinicalPearls: 'Safer than bupivacaine - less CNS and cardiac toxicity. Preferred in obstetrics. More expensive than bupivacaine. Same efficacy but improved safety margin',
+                indication: 'As bupivacaine - preferred when safety margin important (obstetrics, cardiovascular disease)'
+            },
+
+'brivaracetam': {
+                name: 'Brivaracetam',
+                class: 'Antiepileptics (Racetams)',
+                mechanism: 'Binds to synaptic vesicle protein SV2A with higher affinity than levetiracetam',
+                dosing: 'Start 25-50mg BD, usual 50-100mg BD (max 200mg daily)',
+                contraindications: 'Hypersensitivity',
+                interactions: 'Carbamazepine (↓ brivaracetam levels), rifampicin. Weak enzyme inducer',
+                monitoring: 'Seizure frequency, psychiatric symptoms, LFTs',
+                pregnancy: 'Avoid unless essential - limited data',
+                sideEffects: 'Somnolence, dizziness, fatigue, psychiatric effects (aggression, anxiety, irritability)',
+                pharmacokinetics: 'Oral/IV, hepatic metabolism, half-life 9h',
+                clinicalPearls: 'Similar to levetiracetam but more potent (lower doses). Less behavioural side effects than levetiracetam in some patients. Rapid titration possible. Useful if levetiracetam causes irritability',
+                indication: 'Focal seizures (adjunctive or monotherapy)'
+            },
+
+'neomycin': {
+                name: 'Neomycin',
+                class: 'Aminoglycosides',
+                mechanism: 'Aminoglycoside - inhibits bacterial protein synthesis',
+                dosing: 'Hepatic encephalopathy: 4-6g daily in divided doses PO. Bowel prep: 1g hourly for 4 doses then 6-hourly. Topical: as cream/ointment',
+                contraindications: 'Myasthenia gravis, intestinal obstruction',
+                interactions: 'Other ototoxic/nephrotoxic drugs (avoid systemic use)',
+                monitoring: 'Minimal absorption from GI tract but monitor for malabsorption, superinfection',
+                pregnancy: 'Avoid systemic use. Topical use acceptable',
+                sideEffects: 'GI upset, malabsorption (prolonged use), ototoxicity/nephrotoxicity (minimal with oral but systemic if gut damaged)',
+                pharmacokinetics: 'Poorly absorbed orally (topical GI effect)',
+                clinicalPearls: 'Oral form poorly absorbed - used to reduce ammonia-producing gut bacteria in hepatic encephalopathy. Too toxic for systemic use. Prolonged use can cause malabsorption. Topical preparations common in combination with steroids',
+                indication: 'Hepatic encephalopathy, bowel preparation, topical skin infections'
+            },
+
+'thiopental': {
+                name: 'Thiopental (Thiopentone)',
+                class: 'Anaesthetics, general (Barbiturate)',
+                mechanism: 'GABA-A receptor agonist - rapid onset general anaesthesia',
+                dosing: 'Induction: 3-5mg/kg IV. Status epilepticus: loading dose then infusion',
+                contraindications: 'Porphyria, airway obstruction, severe cardiovascular disease',
+                interactions: 'CNS depressants (↑ effects), vasopressors',
+                monitoring: 'Anaesthetic depth, BP (hypotension common), respiratory function, extravasation (causes tissue necrosis)',
+                pregnancy: 'Use only for emergency (e.g., status epilepticus)',
+                sideEffects: 'Hypotension, respiratory depression, laryngospasm, tissue necrosis if extravasated',
+                pharmacokinetics: 'IV only, very rapid onset (30 sec), short duration (5-10min), hepatic metabolism',
+                clinicalPearls: 'Rapid sequence induction agent (less used now - propofol preferred). Still used for status epilepticus refractory to other treatments. Severe hypotension common. Extravasation causes necrosis - ensure good IV access. Triggers porphyria',
+                indication: 'Anaesthesia induction (rarely used), refractory status epilepticus, raised ICP reduction'
+            },
+
+'sevoflurane': {
+                name: 'Sevoflurane',
+                class: 'Anaesthetics, general (Volatile)',
+                mechanism: 'Volatile anaesthetic - mechanism unclear (GABA-A modulation, others)',
+                dosing: 'Inhalational: induction 0.5-1% increasing to 5-8%. Maintenance 0.5-3% in O2/N2O',
+                contraindications: 'Malignant hyperthermia susceptibility, severe hepatic impairment',
+                interactions: 'Neuromuscular blockers (↑ effect), antihypertensives',
+                monitoring: 'Anaesthetic depth, BP, HR, temperature (malignant hyperthermia), respiratory function',
+                pregnancy: 'Safe - commonly used',
+                sideEffects: 'Hypotension, respiratory depression, malignant hyperthermia (rare), postoperative nausea, emergence delirium (children)',
+                pharmacokinetics: 'Inhaled, rapid onset/offset (low blood:gas solubility), metabolised minimally',
+                clinicalPearls: 'Most commonly used volatile anaesthetic. Pleasant smell - good for gas induction (children). Rapid onset/recovery. Minimal metabolism. Can cause compound A (nephrotoxic in rats - not clinically significant in humans at recommended flows)',
+                indication: 'General anaesthesia (induction and maintenance)'
+            },
+
+'nitrous oxide': {
+                name: 'Nitrous Oxide',
+                class: 'Anaesthetics, general (Inhalational)',
+                mechanism: 'NMDA receptor antagonist, other mechanisms - weak anaesthetic, analgesic',
+                dosing: 'Anaesthesia: 50-70% with O2. Analgesia (Entonox): 50% with 50% O2',
+                contraindications: 'Pneumothorax, bowel obstruction, head injury, severe respiratory disease, vitamin B12 deficiency',
+                interactions: 'Volatile anaesthetics (additive), methotrexate',
+                monitoring: 'SpO2, anaesthetic depth, avoid >4h use (bone marrow suppression)',
+                pregnancy: 'Safe for short-term use (labour analgesia)',
+                sideEffects: 'Nausea/vomiting, megaloblastic anaemia (prolonged exposure), bone marrow suppression, diffusion into closed spaces (expands pneumothorax), occupational exposure hazards',
+                pharmacokinetics: 'Inhaled, very rapid onset/offset (low blood:gas solubility), not metabolised',
+                clinicalPearls: 'Weak anaesthetic - used with other agents or 50:50 with O2 for analgesia (Entonox in labour). Expands closed gas spaces - avoid in pneumothorax, bowel obstruction. Inactivates vitamin B12 - chronic use causes subacute combined degeneration',
+                indication: 'Adjunct to general anaesthesia, labour analgesia (Entonox), dental procedures'
+            },
+
+'glimepiride': {
+                name: 'Glimepiride',
+                class: 'Sulfonylureas',
+                mechanism: 'Stimulates pancreatic insulin release by closing K-ATP channels on beta cells',
+                dosing: 'Start 1mg OD with breakfast, increase gradually. Max 6mg daily',
+                contraindications: 'Type 1 diabetes, DKA, severe renal/hepatic impairment',
+                interactions: 'As gliclazide',
+                monitoring: 'Blood glucose, HbA1c, hypoglycaemia, weight',
+                pregnancy: 'Avoid - switch to insulin',
+                sideEffects: 'Hypoglycaemia, weight gain, GI upset, rash, hepatotoxicity (rare)',
+                pharmacokinetics: 'Oral, once daily dosing, hepatic metabolism',
+                clinicalPearls: 'Once-daily sulfonylurea. Similar efficacy to gliclazide but longer acting. Risk of hypoglycaemia (especially in elderly/renal impairment). Counsel on hypoglycaemia symptoms',
+                indication: 'Type 2 diabetes'
+            },
+
+'glipizide': {
+                name: 'Glipizide',
+                class: 'Sulfonylureas',
+                mechanism: 'Stimulates insulin release from pancreatic beta cells',
+                dosing: 'Start 2.5-5mg daily before breakfast, increase gradually. Max 20mg daily (can divide doses)',
+                contraindications: 'As other sulfonylureas',
+                interactions: 'As other sulfonylureas',
+                monitoring: 'As other sulfonylureas',
+                pregnancy: 'Avoid - use insulin',
+                sideEffects: 'As other sulfonylureas',
+                pharmacokinetics: 'Oral, shorter acting than glimepiride, hepatic metabolism',
+                clinicalPearls: 'Shorter-acting sulfonylurea. Can be given BD if needed. Less commonly used in UK than gliclazide. Similar efficacy and side effects',
+                indication: 'Type 2 diabetes'
+            },
+
+'tenofovir': {
+                name: 'Tenofovir Disoproxil (TDF)',
+                class: 'Antiviral drugs - Nucleotide reverse transcriptase inhibitor',
+                mechanism: 'Inhibits HIV reverse transcriptase and HBV polymerase',
+                dosing: 'HIV: 245mg OD (as part of combination therapy). HBV: 245mg OD',
+                contraindications: 'Hypersensitivity. Caution in renal impairment',
+                interactions: 'Didanosine (↑ toxicity - avoid), nephrotoxic drugs, boosted PIs (↑ levels)',
+                monitoring: 'Renal function (calculate eGFR pre-treatment and regularly), bone density (long-term), viral load, CD4 count',
+                pregnancy: 'Safe - preferred NRTI in pregnancy',
+                sideEffects: 'Renal impairment (tubular dysfunction, Fanconi syndrome), osteoporosis, nausea, diarrhoea, lactic acidosis (rare)',
+                pharmacokinetics: 'Oral, renal excretion, dose adjust in CKD',
+                clinicalPearls: 'Backbone of many HIV regimens. Also effective for HBV. Monitor renal function closely. Newer formulation (tenofovir alafenamide - TAF) has less renal/bone toxicity. Part of PrEP regime',
+                indication: 'HIV infection (combination therapy), chronic hepatitis B, HIV pre-exposure prophylaxis (PrEP)'
+            },
+
+'efavirenz': {
+                name: 'Efavirenz',
+                class: 'Antiviral drugs - Non-nucleoside reverse transcriptase inhibitor (NNRTI)',
+                mechanism: 'Inhibits HIV-1 reverse transcriptase',
+                dosing: '600mg OD at bedtime (on empty stomach)',
+                contraindications: 'Pregnancy (1st trimester - teratogenic), severe hepatic impairment',
+                interactions: 'Multiple CYP450 interactions. ↓ levels of many drugs including contraceptives, warfarin, statins',
+                monitoring: 'Viral load, CD4 count, LFTs, psychiatric symptoms, lipids',
+                pregnancy: 'Avoid in 1st trimester (neural tube defects). Barrier contraception essential in women of childbearing age',
+                sideEffects: 'CNS effects (vivid dreams, dizziness, confusion - usually resolve after 2-4 weeks), rash, psychiatric symptoms, hepatotoxicity, teratogenic',
+                pharmacokinetics: 'Oral, take at bedtime to reduce CNS side effects, hepatic metabolism, long half-life',
+                clinicalPearls: 'Take at bedtime to minimize CNS side effects (usually transient). Neuropsychiatric effects common initially. Many drug interactions - check before prescribing anything else. False positive cannabis tests. Less commonly used now (newer agents better tolerated)',
+                indication: 'HIV-1 infection (combination therapy)'
+            },
+
+'atazanavir': {
+                name: 'Atazanavir',
+                class: 'Antiviral drugs - Protease inhibitor',
+                mechanism: 'Inhibits HIV protease, preventing viral maturation',
+                dosing: '300mg OD with ritonavir 100mg (boosted regimen). Take with food',
+                contraindications: 'Severe hepatic impairment, concurrent rifampicin, PPIs (↓ absorption)',
+                interactions: 'Multiple - inhibits CYP3A4 and UGT1A1. Avoid PPIs. ↑ statins, CCBs. Rifampicin (contraindicated)',
+                monitoring: 'Viral load, CD4 count, bilirubin (unconjugated hyperbilirubinaemia common), glucose, lipids, renal function',
+                pregnancy: 'Use with caution - specialist advice',
+                sideEffects: 'Jaundice (unconjugated hyperbilirubinaemia - benign but cosmetic), nausea, nephrolithiasis, PR interval prolongation, hyperglycaemia',
+                pharmacokinetics: 'Oral with food, boosted with ritonavir, hepatic metabolism',
+                clinicalPearls: 'Boosted PI. Causes benign jaundice (Gilbert-like) in ~10% - warn patients about yellow eyes/skin. Cannot use with PPIs (↓ absorption - acid needed). Less lipid disturbance than other PIs. Once daily dosing. Nephrolithiasis risk',
+                indication: 'HIV infection (combination therapy)'
+            },
+
+'nirmatrelvir': {
+                name: 'Nirmatrelvir (with Ritonavir - Paxlovid)',
+                class: 'Antiviral drugs - Protease inhibitor',
+                mechanism: 'Inhibits SARS-CoV-2 main protease (Mpro), preventing viral replication',
+                dosing: 'COVID-19: nirmatrelvir 300mg + ritonavir 100mg BD for 5 days (start within 5 days of symptoms)',
+                contraindications: 'Severe renal/hepatic impairment, drugs highly dependent on CYP3A clearance (many interactions)',
+                interactions: 'Extensive - ritonavir is potent CYP3A4 inhibitor. Check all medications. Avoid statins, midazolam, many others',
+                monitoring: 'Drug interactions, renal function, clinical response, rebound symptoms',
+                pregnancy: 'Use only if benefit outweighs risk',
+                sideEffects: 'Dysgeusia (altered taste - very common), diarrhoea, hypertension, myalgia, rebound COVID symptoms (5-10% after stopping)',
+                pharmacokinetics: 'Oral, ritonavir boosts nirmatrelvir levels via CYP3A4 inhibition',
+                clinicalPearls: 'Reduces hospitalization/death in high-risk COVID patients if started early (<5 days). Metallic taste very common. Extensive drug interactions due to ritonavir - check carefully. Rebound symptoms possible after completion. Reserved for high-risk patients',
+                indication: 'COVID-19 (mild-moderate in high-risk patients within 5 days of symptom onset)'
+            },
+
+'infliximab': {
+                name: 'Infliximab',
+                class: 'Monoclonal antibodies (Anti-TNF)',
+                mechanism: 'Chimeric monoclonal antibody against TNF-alpha',
+                dosing: 'IV infusion: 5mg/kg at 0, 2, 6 weeks then every 8 weeks. Pre-medicate with antihistamine ± paracetamol/hydrocortisone',
+                contraindications: 'Active infection, TB, severe heart failure, demyelinating disease',
+                interactions: 'Live vaccines (avoid), other immunosuppressants (↑ infection risk)',
+                monitoring: 'TB screening pre-treatment, FBC, LFTs, infusion reactions, infections, malignancy screening',
+                pregnancy: 'Avoid if possible - crosses placenta especially in 3rd trimester. Stop 6-10 weeks before delivery if possible',
+                sideEffects: 'Infusion reactions (fever, chills, urticaria), infections (including TB reactivation, opportunistic), malignancy risk, heart failure exacerbation, lupus-like syndrome, hepatotoxicity',
+                pharmacokinetics: 'IV infusion over 2h, half-life ~8-10 days',
+                clinicalPearls: 'Chimeric antibody (mouse-human) - more immunogenic than adalimumab. Screen for latent TB before starting. Pre-medicate to reduce infusion reactions. Hospital administration needed. Biosimilars available. Stop if serious infection',
+                indication: 'Crohn\'s disease, ulcerative colitis, rheumatoid arthritis, ankylosing spondylitis, psoriasis, psoriatic arthritis'
+            },
+
+'rituximab': {
+                name: 'Rituximab',
+                class: 'Monoclonal antibodies (Anti-CD20)',
+                mechanism: 'Monoclonal antibody targeting CD20 on B-lymphocytes, causing B-cell depletion',
+                dosing: 'Varies by indication. Lymphoma: 375mg/m² IV weekly. RA: 1g IV on days 1 and 15',
+                contraindications: 'Active severe infection, severe heart failure',
+                interactions: 'Live vaccines (avoid - contraindicated for 12 months after), antihypertensives (stop before infusion)',
+                monitoring: 'FBC, immunoglobulins, infections, infusion reactions, hepatitis B reactivation (screen first), PML',
+                pregnancy: 'Avoid - B-cell depletion in neonate',
+                sideEffects: 'Infusion reactions (very common first infusion), infections, progressive multifocal leukoencephalopathy (PML - rare but serious), hepatitis B reactivation, tumour lysis syndrome, cardiac arrhythmias',
+                pharmacokinetics: 'IV infusion (first dose over 4-6h), B-cell depletion lasts 6-12 months',
+                clinicalPearls: 'Pre-medicate with paracetamol, antihistamine, corticosteroid. First infusion reactions common - slow infusion rate. Screen for hepatitis B before starting. Causes profound immunosuppression - B-cells depleted for months. PML risk - warn about neurological symptoms',
+                indication: 'Non-Hodgkin lymphoma, CLL, rheumatoid arthritis, vasculitis (GPA, MPA), pemphigus'
+            },
+
+'omalizumab': {
+                name: 'Omalizumab',
+                class: 'Monoclonal antibodies (Anti-IgE)',
+                mechanism: 'Monoclonal antibody against IgE, reducing allergic inflammation',
+                dosing: 'SC injection every 2-4 weeks. Dose based on body weight and baseline IgE (150-600mg)',
+                contraindications: 'Hypersensitivity, acute asthma/bronchospasm',
+                interactions: 'None significant',
+                monitoring: 'Asthma control, exacerbation frequency, anaphylaxis (observe 2h after first 3 doses)',
+                pregnancy: 'Use only if essential - limited data',
+                sideEffects: 'Injection site reactions, headache, anaphylaxis (rare but can occur hours after injection), parasitic infections (theoretical)',
+                pharmacokinetics: 'SC, slow absorption, half-life ~26 days',
+                clinicalPearls: 'For severe allergic asthma inadequately controlled despite high-dose ICS + LABA. Expensive. Observe for anaphylaxis for 2h after first 3 injections. Effects take 12-16 weeks. Requires high IgE levels and proven allergic component. Also used for chronic spontaneous urticaria',
+                indication: 'Severe persistent allergic asthma, chronic spontaneous urticaria'
+            },
+
+'denosumab': {
+                name: 'Denosumab',
+                class: 'Monoclonal antibodies (RANKL inhibitor)',
+                mechanism: 'Monoclonal antibody against RANKL, inhibiting osteoclast formation/function',
+                dosing: 'Osteoporosis: 60mg SC every 6 months. Cancer: 120mg SC every 4 weeks',
+                contraindications: 'Hypocalcaemia (correct first), pregnancy, breastfeeding',
+                interactions: 'None significant but can use with bisphosphonates',
+                monitoring: 'Calcium, vitamin D, dental health, atypical fractures, ONJ, hypocalcaemia after stopping (rebound)',
+                pregnancy: 'Contraindicated - teratogenic',
+                sideEffects: 'Hypocalcaemia (especially if vitamin D deficient), osteonecrosis of jaw, atypical femoral fractures, musculoskeletal pain, serious infections, dermatological reactions',
+                pharmacokinetics: 'SC injection, half-life ~25 days, not renally excreted (safe in CKD)',
+                clinicalPearls: 'Alternative to bisphosphonates. Useful in renal impairment (not renally excreted). Ensure vitamin D replete and adequate calcium intake. Dental check before starting. Stopping can cause rebound increased bone turnover - consider bridging with bisphosphonate. More rapid offset than bisphosphonates',
+                indication: 'Osteoporosis, bone metastases, giant cell tumour of bone, hypercalcaemia of malignancy'
+            },
+
+'goserelin': {
+                name: 'Goserelin',
+                class: 'Hormone antagonists - GnRH agonist',
+                mechanism: 'GnRH agonist - initially stimulates then suppresses gonadotrophin release, reducing sex hormones',
+                dosing: 'SC implant: 3.6mg monthly or 10.8mg every 3 months',
+                contraindications: 'Pregnancy, undiagnosed vaginal bleeding',
+                interactions: 'QT-prolonging drugs (caution)',
+                monitoring: 'PSA (prostate cancer), bone density (long-term use), QTc, testosterone/oestrogen levels',
+                pregnancy: 'Contraindicated',
+                sideEffects: 'Tumour flare (first 2 weeks - give antiandrogen cover in prostate cancer), hot flushes, decreased libido, erectile dysfunction, osteoporosis, mood changes, QT prolongation',
+                pharmacokinetics: 'SC depot implant, slow release over 1-3 months',
+                clinicalPearls: 'Medical castration. Initial flare can worsen symptoms - co-prescribe anti-androgen for first 2-3 weeks in prostate cancer. Causes menopausal symptoms. Long-term use → osteoporosis - monitor bone density. Reversible after stopping but may take months',
+                indication: 'Prostate cancer, breast cancer, endometriosis, endometrial thinning before surgery, IVF'
+            },
+
+'dinoprostone': {
+                name: 'Dinoprostone (Prostaglandin E2)',
+                class: 'Prostaglandins',
+                mechanism: 'Prostaglandin E2 - ripens cervix and induces uterine contractions',
+                dosing: 'Vaginal gel/pessary: 1-2mg. Vaginal tablet: 3mg (repeat after 6h if needed)',
+                contraindications: 'Unexplained vaginal bleeding, placenta praevia, fetal distress, cephalopelvic disproportion, previous C-section',
+                interactions: 'Oxytocin (delay oxytocin for 6h after dinoprostone)',
+                monitoring: 'Fetal heart rate, uterine activity, vaginal bleeding, progression of labour',
+                pregnancy: 'Indicated for labour induction',
+                sideEffects: 'Uterine hyperstimulation, fetal distress, nausea, vomiting, diarrhoea, fever, vaginal bleeding',
+                pharmacokinetics: 'Vaginal administration, local and systemic effects',
+                clinicalPearls: 'For cervical ripening and labour induction. Used when Bishop score unfavourable. Remove pessary if hyperstimulation occurs. Delay oxytocin infusion for 6h after last dose. Can cause fever (not necessarily infection)',
+                indication: 'Induction of labour, cervical ripening'
+            },
+
+'alprostadil': {
+                name: 'Alprostadil (Prostaglandin E1)',
+                mechanism: 'Prostaglandin E1 - maintains ductus arteriosus patency (neonates), causes vasodilation (erectile dysfunction)',
+                dosing: 'PDA maintenance: 5-20 nanograms/kg/min IV. Erectile dysfunction: intracavernosal 2.5-20mcg or urethral 125-1000mcg',
+                contraindications: 'Conditions where sexual activity inadvisable, anatomical penile deformities, predisposition to priapism',
+                interactions: 'Antihypertensives (↑ hypotension)',
+                monitoring: 'Neonates: respiratory function, BP, temp. Erectile: priapism, penile fibrosis',
+                pregnancy: 'Not applicable (used in neonates or male erectile dysfunction)',
+                sideEffects: 'Neonates: apnoea, fever, seizures, flushing. Erectile: penile pain, priapism, fibrosis, urethral bleeding',
+                pharmacokinetics: 'IV infusion (neonates) or local (intracavernosal/urethral)',
+                clinicalPearls: 'Maintains ductus arteriosus patency in duct-dependent congenital heart disease until surgery. For erectile dysfunction: intracavernosal injection more effective than urethral. Warn about priapism (>4h - emergency). Can cause penile fibrosis with repeated use',
+                indication: 'Maintain patent ductus arteriosus (neonates), erectile dysfunction'
+            },
+
+'iloprost': {
+                name: 'Iloprost',
+                class: 'Prostaglandins (Prostacyclin analogue)',
+                mechanism: 'Prostacyclin analogue - vasodilation and inhibits platelet aggregation',
+                dosing: 'Pulmonary hypertension: 2.5-5mcg inhaled 6-9 times daily. Critical limb ischaemia: 0.5-2ng/kg/min IV for 6h daily',
+                contraindications: 'Unstable angina, MI within 6 months, severe arrhythmias, conditions increasing bleeding risk',
+                interactions: 'Antihypertensives (↑ hypotension), anticoagulants (↑ bleeding)',
+                monitoring: 'BP, HR, bleeding, respiratory function (if inhaled)',
+                pregnancy: 'Avoid unless essential',
+                sideEffects: 'Hypotension, flushing, headache, jaw pain, cough (inhaled), bleeding tendency',
+                pharmacokinetics: 'Inhaled or IV, short half-life (20-30min)',
+                clinicalPearls: 'For pulmonary hypertension when oral therapies inadequate. Inhaled route reduces systemic side effects. Frequent dosing needed (short half-life). Also used in critical limb ischaemia when revascularization not possible',
+                indication: 'Pulmonary arterial hypertension, critical limb ischaemia, Raynaud\'s phenomenon (severe)'
+            },
+
+'disodium pamidronate': {
+                name: 'Disodium Pamidronate (Pamidronate)',
+                class: 'Bisphosphonates',
+                mechanism: 'Inhibits osteoclast-mediated bone resorption',
+                dosing: 'Hypercalcaemia: 30-90mg IV over 2-4h. Paget\'s: 30mg IV weekly. Myeloma: 90mg IV monthly',
+                contraindications: 'Hypocalcaemia, severe renal impairment',
+                interactions: 'Aminoglycosides (↑ hypocalcaemia), NSAIDs (↑ renal toxicity)',
+                monitoring: 'Calcium, phosphate, magnesium, U&Es, temperature (acute phase reaction), dental health',
+                pregnancy: 'Avoid',
+                sideEffects: 'Acute phase reaction (fever, myalgia - give paracetamol), hypocalcaemia, osteonecrosis of jaw, renal impairment, atrial fibrillation',
+                pharmacokinetics: 'IV infusion only, long bone half-life',
+                clinicalPearls: 'IV bisphosphonate. Ensure adequate hydration before/during infusion. Pre-treat with paracetamol for acute phase reaction. Correct vitamin D deficiency first. Screen for dental problems. Slow infusion (≥2h) to reduce renal toxicity. Largely replaced by zoledronic acid',
+                indication: 'Hypercalcaemia of malignancy, bone pain in myeloma/metastases, Paget\'s disease, osteoporosis (less common)'
+            },
+
+'clobetasone': {
+                name: 'Clobetasone Butyrate',
+                class: 'Corticosteroids, topical',
+                mechanism: 'Moderate potency topical corticosteroid - anti-inflammatory',
+                dosing: 'Apply thinly BD-TDS to affected area',
+                contraindications: 'Untreated infection, rosacea, acne',
+                interactions: 'None significant (minimal systemic absorption)',
+                monitoring: 'Skin thinning (if prolonged use), infection',
+                pregnancy: 'Safe for limited areas',
+                sideEffects: 'Skin atrophy (less than potent steroids), striae, telangiectasia, contact dermatitis, local infection',
+                pharmacokinetics: 'Topical, minimal systemic absorption',
+                clinicalPearls: 'Moderate potency steroid. Safer than potent steroids for facial use (though hydrocortisone preferred for face). "Fingertip unit" dosing. Good for eczema when hydrocortisone insufficient. Less skin thinning than betamethasone',
+                indication: 'Eczema, dermatitis (moderate severity)'
+            },
+
+'calcium carbonate': {
+                name: 'Calcium Carbonate',
+                class: 'Calcium supplement',
+                mechanism: 'Provides supplemental calcium; also acts as antacid and phosphate binder',
+                dosing: 'Supplement: 1.25g (500mg elemental Ca) OD-TDS with meals. CKD phosphate binder: 1-3g with meals',
+                contraindications: 'Hypercalcaemia, hypercalciuria, renal calculi, severe renal impairment (unless for phosphate binding)',
+                interactions: 'Levothyroxine (↓ absorption - separate by 4h), bisphosphonates (separate by 2h), iron, tetracyclines, quinolones',
+                monitoring: 'Serum calcium, phosphate (if CKD), kidney function',
+                pregnancy: 'Safe - supplement recommended if dietary intake low',
+                sideEffects: 'Constipation (common), flatulence, GI upset, hypercalcaemia (if excessive)',
+                pharmacokinetics: 'Oral, requires acid for absorption (take with food), excreted renally',
+                clinicalPearls: 'Most calcium per tablet (40% elemental calcium). Requires gastric acid - less well absorbed with PPIs. Take with food for better absorption. Also acts as antacid. Used as phosphate binder in CKD. Constipation very common - may need laxative',
+                indication: 'Calcium supplement (osteoporosis prevention/treatment, pregnancy), phosphate binder (CKD), antacid'
+            },
+
+'liquid paraffin': {
+                name: 'Liquid Paraffin',
+                class: 'Emollients / Laxatives',
+                mechanism: 'Skin: occlusive emollient. Oral: lubricant laxative',
+                dosing: 'Topical: apply liberally as needed. Oral (rarely used): 10-30ml at bedtime',
+                contraindications: 'Oral use: intestinal obstruction, children (aspiration risk). Avoid oral use generally',
+                interactions: 'Oral: ↓ absorption of fat-soluble vitamins, warfarin',
+                monitoring: 'Skin hydration, anal seepage (if oral)',
+                pregnancy: 'Topical safe. Avoid oral use',
+                sideEffects: 'Topical: greasy, stains clothing. Oral: anal seepage, granulomas, impairs fat-soluble vitamin absorption',
+                pharmacokinetics: 'Topical: not absorbed. Oral: not absorbed',
+                clinicalPearls: 'Emollient: often combined with white soft paraffin (50:50). Very effective for dry skin. Fire hazard - residues on fabric can ignite. Oral use obsolete (better laxatives available). Aspiration risk if vomited',
+                indication: 'Topical: dry skin conditions, eczema. Oral: constipation (rarely used now)'
+            },
+
+'white soft paraffin': {
+                name: 'White Soft Paraffin',
+                class: 'Emollients',
+                mechanism: 'Occlusive emollient - reduces transepidermal water loss',
+                dosing: 'Apply liberally and frequently',
+                contraindications: 'None',
+                interactions: 'None',
+                monitoring: 'Skin hydration',
+                pregnancy: 'Safe',
+                sideEffects: 'Greasy, stains clothing, fire hazard',
+                pharmacokinetics: 'Not absorbed - acts as barrier',
+                clinicalPearls: 'Very effective occlusive emollient. Often mixed with liquid paraffin. Base for many ointments. FIRE HAZARD - warn patients that fabric with residues can ignite. Apply generously and often for eczema',
+                indication: 'Dry skin, eczema, psoriasis, ichthyosis'
+            },
+
+'carbomer': {
+                name: 'Carbomer (Carbomers)',
+                class: 'Ocular lubricants',
+                mechanism: 'Viscous polymer - lubricates ocular surface, prolongs tear film retention',
+                dosing: 'Eye drops: 1 drop TDS-QDS or as needed. Gel: apply at bedtime',
+                contraindications: 'Hypersensitivity',
+                interactions: 'None',
+                monitoring: 'Symptom relief, visual blurring (transient)',
+                pregnancy: 'Safe',
+                sideEffects: 'Transient blurring (gel), mild stinging, eyelid stickiness',
+                pharmacokinetics: 'Not absorbed systemically',
+                clinicalPearls: 'Gel formulation longer lasting than drops. Useful for nocturnal symptoms. Can cause temporary blurring - warn patients. Preservative-free formulations available. Commonly used brands: Viscotears, GelTears',
+                indication: 'Dry eyes, tear deficiency'
+            },
+
+'sodium bicarbonate': {
+                name: 'Sodium Bicarbonate',
+                class: 'Antacids / Alkalinizing agent',
+                mechanism: 'Neutralizes gastric acid (antacid), alkalinizes urine, corrects metabolic acidosis',
+                dosing: 'Antacid: 1-5g PRN. Acidosis: IV 8.4% (1mmol/ml) dose calculated. Alkalinize urine: 3g TDS PO',
+                contraindications: 'Metabolic/respiratory alkalosis, hypocalcaemia (if IV), hypokalaemia',
+                interactions: 'Lithium (↑ excretion), aspirin (↑ excretion), many drugs (affects absorption)',
+                monitoring: 'pH, U&Es, bicarbonate levels, calcium (if IV)',
+                pregnancy: 'Safe but avoid regular use (sodium load)',
+                sideEffects: 'Belching, flatulence, sodium overload, metabolic alkalosis, hypokalaemia (if excessive)',
+                pharmacokinetics: 'Oral or IV, systemic alkalinizing effects',
+                clinicalPearls: 'Rapid-acting antacid but short duration. Releases CO2 (belching). High sodium content. Used to alkalinize urine (renal stones, overdoses). IV form for metabolic acidosis (calculate deficit). Can cause rebound acid hypersecretion',
+                indication: 'Antacid (short-term), metabolic acidosis, alkalinize urine (uric acid stones, salicylate/methotrexate OD)'
+            },
+
+'unfractionated heparin': {
+                name: 'Unfractionated Heparin (UFH)',
+                class: 'Heparins',
+                mechanism: 'Enhances antithrombin activity - anticoagulation',
+                dosing: 'Treatment: 80 units/kg bolus then 18 units/kg/h IV (adjust to APTT). Prophylaxis: 5000 units SC BD-TDS',
+                contraindications: 'Active bleeding, haemophilia, thrombocytopenia, recent hemorrhagic stroke',
+                interactions: 'Antiplatelet agents (↑ bleeding), NSAIDs, SSRIs',
+                monitoring: 'APTT (target 1.5-2.5× control for therapeutic), platelet count (HIT), bleeding',
+                pregnancy: 'Safe - does not cross placenta',
+                sideEffects: 'Bleeding, heparin-induced thrombocytopenia (HIT), osteoporosis (long-term), hyperkalaemia',
+                pharmacokinetics: 'IV or SC, onset immediate (IV), short half-life (1-2h), requires monitoring',
+                clinicalPearls: 'Preferred over LMWH when rapid reversal may be needed (surgery, bleeding). Monitored with APTT. Check platelets for HIT (days 5-10). Reversed with protamine. Used in VTE, ACS, cardiac surgery. LMWH easier (no monitoring) so preferred when possible',
+                indication: 'VTE treatment/prophylaxis, ACS, AF, during dialysis, cardiac surgery, when rapid reversal capability needed'
+            },
+
+'lymecycline': {
+                name: 'Lymecycline',
+                class: 'Tetracyclines',
+                mechanism: 'Tetracycline antibiotic - inhibits bacterial protein synthesis',
+                dosing: 'Acne: 408mg OD-BD. Rosacea: 408mg OD. Infections: 408mg BD',
+                contraindications: 'Pregnancy, breastfeeding, children <12 years, renal failure',
+                interactions: 'Iron, calcium, antacids (↓ absorption - separate by 2h), retinoids (↑ ICP), warfarin',
+                monitoring: 'Clinical response, photosensitivity',
+                pregnancy: 'Contraindicated - teeth/bone effects',
+                sideEffects: 'GI upset, oesophageal ulceration (take with water, sit upright), photosensitivity, teeth staining (children), hepatotoxicity (rare)',
+                pharmacokinetics: 'Oral, take with water (not milk), avoid lying down 30min',
+                clinicalPearls: 'Tetracycline for acne/rosacea. Take with plenty of water. Avoid dairy products. Sun protection essential. Minimum 6-8 weeks for acne improvement. Similar to doxycycline but less commonly used',
+                indication: 'Acne vulgaris, rosacea, respiratory infections, Lyme disease'
+            },
+
+'ofloxacin': {
+                name: 'Ofloxacin',
+                class: 'Quinolones',
+                mechanism: 'Fluoroquinolone - inhibits bacterial DNA gyrase',
+                dosing: 'Oral: 200-400mg BD. UTI: 200mg BD for 3 days. Topical (ear/eye): 1-2 drops BD-QDS',
+                contraindications: 'Tendon disorders, epilepsy, G6PD deficiency, pregnancy, children (except topical)',
+                interactions: 'NSAIDs (↑ seizure risk), corticosteroids (↑ tendon rupture), theophylline, warfarin',
+                monitoring: 'Tendonitis symptoms, CNS effects, QTc',
+                pregnancy: 'Avoid - arthropathy in animals',
+                sideEffects: 'Nausea, diarrhoea, tendonitis/rupture, QT prolongation, photosensitivity, CNS effects',
+                pharmacokinetics: 'Oral/topical, renal excretion',
+                clinicalPearls: 'Broad-spectrum quinolone. Less commonly used systemically than ciprofloxacin. Topical preparations for ear/eye infections useful. Warn about tendon rupture risk (especially with steroids). Stop if tendon pain',
+                indication: 'UTI, respiratory infections, topical: bacterial conjunctivitis, otitis externa'
             }
 }
 
