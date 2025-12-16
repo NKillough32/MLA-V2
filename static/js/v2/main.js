@@ -28,6 +28,7 @@ import { mnemonicsManager } from './modules/MnemonicsManager.js';
 import { interpretationToolsManager } from './modules/InterpretationToolsManager.js';
 import { medStatsEthicsManager } from './modules/MedStatsEthicsManager.js';
 import { clinicalPearlsManager } from './modules/ClinicalPearlsManager.js';
+import { coreConditionsManager } from './modules/CoreConditionsManager.js';
 import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
@@ -58,6 +59,7 @@ class MLAQuizApp {
         this.interpretationToolsManager = interpretationToolsManager;
         this.medStatsEthicsManager = medStatsEthicsManager;
         this.clinicalPearlsManager = clinicalPearlsManager;
+        this.coreConditionsManager = coreConditionsManager;
         this.ophthalmologyManager = ophthalmologyManager;
         this.laddersManager = laddersManager;
         this.differentialDxManager = differentialDxManager;
@@ -138,6 +140,7 @@ class MLAQuizApp {
             this.interpretationToolsManager.initialize(),
             this.medStatsEthicsManager.initialize(),
             this.clinicalPearlsManager.initialize(),
+            this.coreConditionsManager.initialize(),
             this.ophthalmologyManager.initialize(),
             this.laddersManager.initialize()
         ];
@@ -237,6 +240,7 @@ class MLAQuizApp {
 
         const preloadTargets = [
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
+            { id: 'core-conditions-panel', log: '📖 Preloading Core Conditions...', loader: panel => this.loadCoreConditionsContent(panel) },
             { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
             { id: 'procedures-panel', log: '🏥 Preloading procedures content...', loader: panel => this.loadProceduresContent(panel) },
             { id: 'guidelines-panel', log: '📋 Preloading guidelines content...', loader: panel => this.loadGuidelinesContent(panel) },
@@ -1065,6 +1069,7 @@ class MLAQuizApp {
         // Map navigation data-tool values to actual panel IDs
         const panelIdMap = {
             'drug-reference': 'drug-panel',
+            'core-conditions': 'core-conditions-panel',
             'calculators': 'calculator-panel',
             'calculator-detail': 'calculator-detail',
             'lab-values': 'lab-panel',
@@ -1111,6 +1116,9 @@ class MLAQuizApp {
         switch(toolType) {
             case 'drug-reference':
                 this.loadDrugReferenceContent(panel);
+                break;
+            case 'core-conditions':
+                this.loadCoreConditionsContent(panel);
                 break;
             case 'calculators':
                 this.loadCalculatorsContent(panel);
@@ -1617,6 +1625,330 @@ class MLAQuizApp {
     
     speakDrugName(drugName) {
         this.drugManager.speakDrugName(drugName);
+    }
+
+    /**
+     * Load Core Conditions content
+     */
+    loadCoreConditionsContent(panel) {
+        const container = panel.querySelector('#core-conditions-container');
+        if (!container) return;
+
+        // Initialize UI elements
+        const searchInput = container.querySelector('#cc-search-input');
+        const domainFilterContainer = container.querySelector('#cc-domain-filter');
+        const statsContainer = container.querySelector('#cc-stats');
+        const conditionsGrid = container.querySelector('#cc-conditions-grid');
+        const emptyState = container.querySelector('#cc-empty-state');
+        const listView = container.querySelector('#cc-list-view');
+        const detailView = container.querySelector('#cc-detail-view');
+        const backBtn = container.querySelector('#cc-back-btn');
+
+        // Get all domains and stats
+        const domains = this.coreConditionsManager.getDomains();
+        const stats = this.coreConditionsManager.getStats();
+
+        // Render domain filters
+        const domainButtons = [
+            { id: 'all', label: 'All' },
+            ...domains.map(domain => ({ id: domain, label: domain }))
+        ];
+
+        domainFilterContainer.innerHTML = domainButtons.map(btn => 
+            `<button class="cc-domain-btn ${btn.id === 'all' ? 'active' : ''}" data-domain="${btn.id}">${btn.label}</button>`
+        ).join('');
+
+        // Render stats
+        statsContainer.innerHTML = `
+            <div class="cc-stat-card">
+                <span class="cc-stat-value">${stats.total}</span>
+                <span class="cc-stat-label">Total Conditions</span>
+            </div>
+            <div class="cc-stat-card">
+                <span class="cc-stat-value">${domains.length}</span>
+                <span class="cc-stat-label">Domains</span>
+            </div>
+            <div class="cc-stat-card">
+                <span class="cc-stat-value">${this.coreConditionsManager.getFavoriteConditions().length}</span>
+                <span class="cc-stat-label">Favorites</span>
+            </div>
+        `;
+
+        // Render initial conditions list
+        const renderConditionsList = () => {
+            const query = searchInput.value.trim();
+            const conditions = query ? this.coreConditionsManager.search(query) : this.coreConditionsManager.getConditionsByCurrentDomain();
+
+            if (conditions.length === 0) {
+                conditionsGrid.style.display = 'none';
+                emptyState.style.display = 'block';
+                return;
+            }
+
+            conditionsGrid.style.display = 'grid';
+            emptyState.style.display = 'none';
+
+            conditionsGrid.innerHTML = conditions.map(condition => {
+                const isFavorite = this.coreConditionsManager.isFavorite(condition.id);
+                const preview = condition.recognition.typical.slice(0, 3).join('; ');
+                
+                return `
+                    <div class="cc-condition-card" data-condition-id="${condition.id}">
+                        <div class="cc-condition-card-header">
+                            <h4 class="cc-condition-title">${condition.name}</h4>
+                            <button class="cc-favorite-btn ${isFavorite ? 'favorited' : ''}" data-action="favorite" data-condition-id="${condition.id}">
+                                ${isFavorite ? '⭐' : '☆'}
+                            </button>
+                        </div>
+                        <span class="cc-domain-badge">${condition.domain}</span>
+                        <div class="cc-condition-preview">${preview}</div>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        // Initial render
+        renderConditionsList();
+
+        // Event: Search input
+        searchInput.addEventListener('input', () => {
+            renderConditionsList();
+        });
+
+        // Event: Domain filter
+        domainFilterContainer.addEventListener('click', (e) => {
+            const btn = e.target.closest('.cc-domain-btn');
+            if (!btn) return;
+
+            // Update active state
+            domainFilterContainer.querySelectorAll('.cc-domain-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Set domain and re-render
+            const domain = btn.dataset.domain;
+            this.coreConditionsManager.setDomain(domain);
+            renderConditionsList();
+        });
+
+        // Event: Condition card click
+        conditionsGrid.addEventListener('click', async (e) => {
+            const favoriteBtn = e.target.closest('[data-action="favorite"]');
+            if (favoriteBtn) {
+                e.stopPropagation();
+                const conditionId = favoriteBtn.dataset.conditionId;
+                await this.coreConditionsManager.toggleFavorite(conditionId);
+                renderConditionsList();
+                // Update stats
+                statsContainer.querySelector('.cc-stat-value:last-child').textContent = this.coreConditionsManager.getFavoriteConditions().length;
+                return;
+            }
+
+            const card = e.target.closest('.cc-condition-card');
+            if (!card) return;
+
+            const conditionId = card.dataset.conditionId;
+            await this.showConditionDetail(conditionId, listView, detailView);
+        });
+
+        // Event: Back button
+        backBtn.addEventListener('click', () => {
+            detailView.classList.remove('active');
+            listView.style.display = 'block';
+        });
+    }
+
+    /**
+     * Show detailed condition view
+     */
+    async showConditionDetail(conditionId, listView, detailView) {
+        const condition = await this.coreConditionsManager.viewCondition(conditionId);
+        if (!condition) return;
+
+        // Hide list, show detail
+        listView.style.display = 'none';
+        detailView.classList.add('active');
+
+        // Render detailed content
+        const detailContent = detailView.querySelector('#cc-detail-content');
+        const isFavorite = this.coreConditionsManager.isFavorite(conditionId);
+
+        let html = `
+            <div class="cc-detail-header">
+                <div class="cc-detail-title-row">
+                    <h2 class="cc-detail-title">${condition.name}</h2>
+                    <div class="cc-detail-actions">
+                        <button class="cc-action-btn" onclick="window.quizApp.coreConditionsManager.toggleFavorite('${conditionId}').then(() => window.location.reload())">
+                            ${isFavorite ? '⭐ Favorited' : '☆ Favorite'}
+                        </button>
+                        <button class="cc-action-btn" onclick="window.quizApp.coreConditionsManager.copyToClipboard('${conditionId}')">📋 Copy</button>
+                        <button class="cc-action-btn" onclick="window.quizApp.coreConditionsManager.printCondition('${conditionId}')">🖨️ Print</button>
+                    </div>
+                </div>
+                <span class="cc-domain-badge">${condition.domain}</span>
+                ${condition.synonyms && condition.synonyms.length > 0 ? `<p class="cc-synonyms">Also known as: ${condition.synonyms.join(', ')}</p>` : ''}
+            </div>
+
+            <!-- Recognition -->
+            <div class="cc-section">
+                <h3 class="cc-section-title">👁️ Recognition</h3>
+                
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Typical Presentation</h4>
+                    <ul class="cc-list">
+                        ${condition.recognition.typical.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+
+                ${condition.recognition.atypical && condition.recognition.atypical.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Atypical Presentation</h4>
+                    <ul class="cc-list">
+                        ${condition.recognition.atypical.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.recognition.examination && condition.recognition.examination.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Examination Findings</h4>
+                    <ul class="cc-list">
+                        ${condition.recognition.examination.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.recognition.redFlags && condition.recognition.redFlags.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">🚩 Red Flags</h4>
+                    <ul class="cc-list cc-red-flag-list">
+                        ${condition.recognition.redFlags.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            </div>
+
+            <!-- Investigation -->
+            <div class="cc-section">
+                <h3 class="cc-section-title">🔬 Investigation</h3>
+                
+                ${condition.investigation.immediate ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Immediate Investigations</h4>
+                    <ul class="cc-list">
+                        ${condition.investigation.immediate.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.investigation.further ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Further Investigations</h4>
+                    <ul class="cc-list">
+                        ${condition.investigation.further.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.investigation.interpretation ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Interpretation</h4>
+                    <ul class="cc-list">
+                        ${condition.investigation.interpretation.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            </div>
+
+            <!-- Diagnosis -->
+            <div class="cc-section">
+                <h3 class="cc-section-title">🎯 Diagnosis</h3>
+                
+                ${condition.diagnosis.criteria ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Diagnostic Criteria</h4>
+                    <p>${condition.diagnosis.criteria}</p>
+                </div>
+                ` : ''}
+
+                ${condition.diagnosis.differential && condition.diagnosis.differential.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Differential Diagnoses</h4>
+                    <div class="cc-differential-list">
+                        ${condition.diagnosis.differential.map(diff => {
+                            const parts = diff.split(':');
+                            if (parts.length > 1) {
+                                return `<div class="cc-differential-item">
+                                    <div class="cc-differential-name">${parts[0]}</div>
+                                    <div class="cc-differential-detail">${parts.slice(1).join(':').trim()}</div>
+                                </div>`;
+                            }
+                            return `<div class="cc-differential-item"><div class="cc-differential-detail">${diff}</div></div>`;
+                        }).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            </div>
+
+            <!-- Management -->
+            <div class="cc-section">
+                <h3 class="cc-section-title">💊 Management</h3>
+                
+                <h4 class="cc-subsection-title">First-Line Management</h4>
+                <div class="cc-management-grid">
+                    ${Object.entries(condition.management.firstLine || {}).map(([key, items]) => {
+                        if (!Array.isArray(items) || items.length === 0) return '';
+                        return `
+                            <div class="cc-management-card">
+                                <h5 class="cc-management-card-title">${key.replace(/([A-Z])/g, ' $1').trim()}</h5>
+                                <ul class="cc-list">
+                                    ${items.map(item => `<li>${item}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+
+                ${condition.management.secondLine && condition.management.secondLine.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Second-Line Management</h4>
+                    <ul class="cc-list">
+                        ${condition.management.secondLine.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.complications && condition.management.complications.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Complications</h4>
+                    <ul class="cc-list">
+                        ${condition.management.complications.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+            </div>
+
+            ${condition.clinicalPearls && condition.clinicalPearls.length > 0 ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">💎 Clinical Pearls</h3>
+                <ul class="cc-list cc-pearl-list">
+                    ${condition.clinicalPearls.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+
+            ${condition.prognosis ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">📊 Prognosis</h3>
+                <div class="cc-prognosis-box">${condition.prognosis}</div>
+            </div>
+            ` : ''}
+        `;
+
+        detailContent.innerHTML = html;
+        
+        // Scroll to top
+        detailView.scrollTop = 0;
+        window.scrollTo(0, 0);
     }
 
     /**

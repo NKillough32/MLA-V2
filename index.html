@@ -11360,6 +11360,434 @@
                 background: rgba(255, 204, 0, 0.9);
                 border-color: rgba(255, 204, 0, 0.5);
             }
+
+            /* Core Conditions Styles */
+            #core-conditions-container {
+                padding: 20px;
+            }
+
+            .cc-header {
+                margin-bottom: 24px;
+            }
+
+            .cc-header h3 {
+                color: var(--v2-primary);
+                margin: 0 0 8px 0;
+                font-size: 24px;
+            }
+
+            .cc-header p {
+                color: var(--v2-text-secondary);
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            .cc-controls {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+
+            .cc-search-box {
+                flex: 1;
+                min-width: 200px;
+                position: relative;
+            }
+
+            .cc-search-box input {
+                width: 100%;
+                padding: 12px 40px 12px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 12px;
+                font-size: 15px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                transition: all 0.2s ease;
+            }
+
+            .cc-search-box input:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            }
+
+            .cc-search-icon {
+                position: absolute;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 18px;
+                color: var(--v2-text-tertiary);
+                pointer-events: none;
+            }
+
+            .cc-domain-filter {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .cc-domain-btn {
+                padding: 8px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 20px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-secondary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .cc-domain-btn:hover {
+                border-color: var(--v2-primary);
+                color: var(--v2-primary);
+                transform: translateY(-1px);
+            }
+
+            .cc-domain-btn.active {
+                background: var(--v2-primary);
+                border-color: var(--v2-primary);
+                color: white;
+            }
+
+            .cc-stats {
+                display: flex;
+                gap: 12px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+
+            .cc-stat-card {
+                flex: 1;
+                min-width: 120px;
+                padding: 12px;
+                background: var(--v2-bg-elevated);
+                border: 1px solid var(--v2-border);
+                border-radius: 12px;
+                text-align: center;
+            }
+
+            .cc-stat-value {
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--v2-primary);
+                display: block;
+            }
+
+            .cc-stat-label {
+                font-size: 12px;
+                color: var(--v2-text-tertiary);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .cc-conditions-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 16px;
+                margin-top: 20px;
+            }
+
+            .cc-condition-card {
+                background: var(--v2-bg-card);
+                border: 2px solid var(--v2-border);
+                border-radius: 12px;
+                padding: 16px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                position: relative;
+            }
+
+            .cc-condition-card:hover {
+                border-color: var(--v2-primary);
+                transform: translateY(-2px);
+                box-shadow: var(--v2-shadow-md);
+            }
+
+            .cc-condition-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 12px;
+            }
+
+            .cc-condition-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                margin: 0;
+            }
+
+            .cc-favorite-btn {
+                background: none;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                padding: 4px;
+                transition: transform 0.2s ease;
+            }
+
+            .cc-favorite-btn:hover {
+                transform: scale(1.2);
+            }
+
+            .cc-favorite-btn.favorited {
+                filter: drop-shadow(0 0 4px rgba(255, 193, 7, 0.5));
+            }
+
+            .cc-domain-badge {
+                display: inline-block;
+                padding: 4px 12px;
+                background: rgba(99, 102, 241, 0.1);
+                color: var(--v2-primary);
+                border-radius: 12px;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+
+            .cc-condition-preview {
+                font-size: 14px;
+                color: var(--v2-text-secondary);
+                line-height: 1.5;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .cc-detail-view {
+                display: none;
+                padding: 20px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .cc-detail-view.active {
+                display: block;
+            }
+
+            .cc-detail-header {
+                margin-bottom: 24px;
+                padding-bottom: 16px;
+                border-bottom: 2px solid var(--v2-border);
+            }
+
+            .cc-detail-title-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 12px;
+            }
+
+            .cc-detail-title {
+                font-size: 28px;
+                font-weight: 700;
+                color: var(--v2-text-primary);
+                margin: 0;
+            }
+
+            .cc-detail-actions {
+                display: flex;
+                gap: 8px;
+            }
+
+            .cc-action-btn {
+                padding: 8px 16px;
+                background: var(--v2-bg-elevated);
+                border: 1px solid var(--v2-border);
+                border-radius: 8px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .cc-action-btn:hover {
+                background: var(--v2-primary);
+                border-color: var(--v2-primary);
+                color: white;
+                transform: translateY(-1px);
+            }
+
+            .cc-synonyms {
+                font-size: 14px;
+                color: var(--v2-text-tertiary);
+                margin: 8px 0;
+            }
+
+            .cc-section {
+                margin-bottom: 32px;
+            }
+
+            .cc-section-title {
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--v2-primary);
+                margin: 0 0 16px 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .cc-subsection {
+                margin-bottom: 20px;
+            }
+
+            .cc-subsection-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                margin: 0 0 12px 0;
+            }
+
+            .cc-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .cc-list li {
+                padding: 8px 0 8px 24px;
+                position: relative;
+                color: var(--v2-text-secondary);
+                line-height: 1.6;
+            }
+
+            .cc-list li:before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: var(--v2-primary);
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .cc-red-flag-list li:before {
+                content: "🚩";
+                font-size: 16px;
+            }
+
+            .cc-pearl-list li:before {
+                content: "💎";
+                font-size: 16px;
+            }
+
+            .cc-differential-list {
+                display: grid;
+                gap: 12px;
+            }
+
+            .cc-differential-item {
+                padding: 12px;
+                background: var(--v2-bg-elevated);
+                border-left: 3px solid var(--v2-secondary);
+                border-radius: 6px;
+            }
+
+            .cc-differential-name {
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                margin-bottom: 4px;
+            }
+
+            .cc-differential-detail {
+                font-size: 14px;
+                color: var(--v2-text-secondary);
+            }
+
+            .cc-management-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 16px;
+            }
+
+            .cc-management-card {
+                padding: 16px;
+                background: var(--v2-bg-elevated);
+                border: 1px solid var(--v2-border);
+                border-radius: 12px;
+            }
+
+            .cc-management-card-title {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--v2-primary);
+                margin: 0 0 12px 0;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .cc-prognosis-box {
+                padding: 16px;
+                background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+                border-left: 4px solid var(--v2-primary);
+                border-radius: 8px;
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--v2-text-secondary);
+            }
+
+            .cc-empty-state {
+                text-align: center;
+                padding: 60px 20px;
+                color: var(--v2-text-tertiary);
+            }
+
+            .cc-empty-state-icon {
+                font-size: 48px;
+                margin-bottom: 16px;
+            }
+
+            .cc-back-btn {
+                padding: 10px 20px;
+                background: var(--v2-bg-elevated);
+                border: 1px solid var(--v2-border);
+                border-radius: 8px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                margin-bottom: 20px;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .cc-back-btn:hover {
+                background: var(--v2-primary);
+                border-color: var(--v2-primary);
+                color: white;
+                transform: translateX(-2px);
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                .cc-conditions-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .cc-management-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .cc-detail-title-row {
+                    flex-direction: column;
+                    gap: 12px;
+                }
+            }
+
+            [data-theme="dark"] .cc-domain-btn {
+                background: var(--v2-bg-elevated);
+            }
+
+            [data-theme="dark"] .cc-condition-card {
+                background: var(--v2-bg-elevated);
+            }
+
+            [data-theme="dark"] .cc-management-card {
+                background: var(--v2-bg-card);
+            }
         </style>
 </head>
 <body>
@@ -11641,6 +12069,7 @@
         <div class="tools-navigation">
             <button class="tool-nav-btn" data-tool="quiz">📝 Quiz Practice</button>
             <button class="tool-nav-btn" data-tool="pdf-library">📚 PDF Library</button>
+            <button class="tool-nav-btn" data-tool="core-conditions">📖 Core Conditions</button>
             <button class="tool-nav-btn active" data-tool="drug-reference">💊 Drug Reference</button>
             <button class="tool-nav-btn" data-tool="examination">🩺 Examination</button>
             <button class="tool-nav-btn" data-tool="differential-dx">🔍 Differential Dx</button>
@@ -11672,6 +12101,51 @@
                 <div id="drug-reference-container">
                     <!-- Content loaded dynamically by JavaScript -->
                     <div class="loading-message">📊 Loading drug reference...</div>
+                </div>
+            </div>
+
+            <!-- Core Conditions Panel -->
+            <div id="core-conditions-panel" class="tool-panel">
+                <div id="core-conditions-container">
+                    <div class="cc-header">
+                        <h3>📖 MLA Core Conditions</h3>
+                        <p>Comprehensive clinical reference for Foundation practice. Recognition, investigation, diagnosis, and management (first & second line) with atypical presentations.</p>
+                    </div>
+
+                    <div class="cc-controls">
+                        <div class="cc-search-box">
+                            <input type="text" id="cc-search-input" placeholder="Search conditions by name, domain, or keyword..." />
+                            <span class="cc-search-icon">🔍</span>
+                        </div>
+                    </div>
+
+                    <div class="cc-domain-filter" id="cc-domain-filter">
+                        <!-- Domain filter buttons will be populated by JavaScript -->
+                    </div>
+
+                    <div class="cc-stats" id="cc-stats">
+                        <!-- Statistics will be populated by JavaScript -->
+                    </div>
+
+                    <!-- List View -->
+                    <div id="cc-list-view" class="cc-list-view">
+                        <div class="cc-conditions-grid" id="cc-conditions-grid">
+                            <!-- Condition cards will be populated by JavaScript -->
+                        </div>
+                        <div id="cc-empty-state" class="cc-empty-state" style="display: none;">
+                            <div class="cc-empty-state-icon">🔍</div>
+                            <h4>No conditions found</h4>
+                            <p>Try adjusting your search or filter criteria.</p>
+                        </div>
+                    </div>
+
+                    <!-- Detail View -->
+                    <div id="cc-detail-view" class="cc-detail-view">
+                        <button class="cc-back-btn" id="cc-back-btn">← Back to List</button>
+                        <div id="cc-detail-content">
+                            <!-- Detailed condition content will be populated by JavaScript -->
+                        </div>
+                    </div>
                 </div>
             </div>
             
