@@ -432,22 +432,44 @@ export class ProceduresManager {
                     <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Complications</h3>
             `;
             
-            if (comps.immediate) {
+            // Handle complications as string (simple format)
+            if (typeof comps === 'string') {
                 html += `
-                    <div style="margin-bottom: 12px;">
-                        <h4 style="margin: 0 0 8px 0; color: var(--text-primary);">Immediate</h4>
-                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps.immediate}</p>
-                    </div>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps}</p>
                 `;
-            }
-            
-            if (comps.delayed) {
-                html += `
-                    <div style="margin-bottom: 12px;">
-                        <h4 style="margin: 0 0 8px 0; color: var(--text-primary);">Delayed</h4>
-                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps.delayed}</p>
-                    </div>
-                `;
+            } else {
+                // Handle complications as object (categorized format)
+                const compTypes = [
+                    { key: 'immediate', label: 'Immediate' },
+                    { key: 'early', label: 'Early' },
+                    { key: 'delayed', label: 'Delayed' },
+                    { key: 'late', label: 'Late' },
+                    { key: 'general', label: 'General' }
+                ];
+                
+                compTypes.forEach(({ key, label }) => {
+                    if (comps[key]) {
+                        html += `
+                            <div style="margin-bottom: 12px;">
+                                <h4 style="margin: 0 0 8px 0; color: var(--text-primary); font-weight: 600;">${label}</h4>
+                                <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps[key]}</p>
+                            </div>
+                        `;
+                    }
+                });
+                
+                // Handle any other custom keys that might exist
+                Object.keys(comps).forEach(key => {
+                    if (!compTypes.some(t => t.key === key)) {
+                        const formattedLabel = key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
+                        html += `
+                            <div style="margin-bottom: 12px;">
+                                <h4 style="margin: 0 0 8px 0; color: var(--text-primary); font-weight: 600;">${formattedLabel}</h4>
+                                <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps[key]}</p>
+                            </div>
+                        `;
+                    }
+                });
             }
             
             html += '</div>';
@@ -466,9 +488,9 @@ export class ProceduresManager {
         // Clinical Pearls
         if (proc.clinicalPearls) {
             html += `
-                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: #FFF9E6; border: 1px solid #FFE066; border-radius: 12px;">
-                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: #856404;">💡 Clinical Pearls</h3>
-                    <p style="margin: 0; color: #856404; line-height: 1.6;">${proc.clinicalPearls}</p>
+                <div class="detail-section clinical-pearls-section" style="margin: 20px 0; padding: 16px; border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em;">💡 Clinical Pearls</h3>
+                    <p style="margin: 0; line-height: 1.6;">${proc.clinicalPearls}</p>
                 </div>
             `;
         }
