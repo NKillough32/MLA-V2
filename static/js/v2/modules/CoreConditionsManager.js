@@ -13,7 +13,7 @@ import {
     getConditionsByDomain,
     getAllDomains,
     getStatistics 
-} from '../data/coreConditions.js';
+} from '../../data/coreConditions.js';
 
 export class CoreConditionsManager {
     constructor() {
