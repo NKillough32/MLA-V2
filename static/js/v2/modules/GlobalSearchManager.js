@@ -228,6 +228,7 @@ export class GlobalSearchManager {
             this.buildDrugResults(query),
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
+            this.buildProcedureResults(query),
             this.buildQuizQuestionResults(query),
             this.buildVaccinationResults(query),
             this.buildContraceptionResults(query),
@@ -613,6 +614,24 @@ export class GlobalSearchManager {
                 meta: item.meta,
                 badge: item.badge,
                 action: item.action
+            })
+        });
+    }
+
+    async buildProcedureResults(query) {
+        const manager = this.managers.proceduresManager;
+        if (!manager?.searchProcedures) return null;
+        return this.buildGroup({
+            id: 'procedures',
+            label: 'Procedures',
+            icon: '🏥',
+            limit: this.options.limits.procedures || this.options.defaultLimit,
+            searchFn: () => manager.searchProcedures(query),
+            mapFn: (procedure) => ({
+                title: procedure.name,
+                subtitle: procedure.indication,
+                badge: procedure.category,
+                action: { type: 'procedure', id: procedure.id }
             })
         });
     }
@@ -1027,6 +1046,9 @@ export class GlobalSearchManager {
                 break;
             case 'triad':
                 navigate('triads', () => this.managers.triadsManager?.showTriadDetails?.(action.key));
+                break;
+            case 'procedure':
+                navigate('procedures', () => this.managers.proceduresManager?.showProcedureDetail?.(action.id));
                 break;
             case 'ddx-symptom':
                 navigate('differential-dx', () => this.app?.showDdxDetail?.(action.key));

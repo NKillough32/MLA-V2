@@ -303,7 +303,268 @@ export class ProceduresManager {
     /**
      * Render procedure list for a category
      */
-    renderProcedureList(category, containerId) {
+    renderProcedureList(category = 'all') {
+        const procedures = category === 'all' 
+            ? Object.entries(this.procedures || {}).map(([id, proc]) => ({ id, ...proc }))
+            : this.getProceduresByCategory(category);
+        
+        if (procedures.length === 0) {
+            return '<p class="no-results">No procedures found.</p>';
+        }
+
+        const categories = this.getCategories();
+        const categoryFilters = categories.map(cat => `
+            <button class="category-filter-btn" data-category="${cat.category}" 
+                    onclick="window.proceduresManager.filterByCategory('${cat.category}')">
+                ${this.formatCategoryName(cat.category)} (${cat.count})
+            </button>
+        `).join('');
+
+        let html = `
+            <div class="search-container">
+                <input type="text" id="procedures-search" placeholder="Search procedures..." class="tool-search">
+                <button id="procedures-search-btn" onclick="window.proceduresManager.handleSearch()">🔍</button>
+            </div>
+            
+            <div class="category-filters" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <button class="category-filter-btn active" data-category="all" 
+                        onclick="window.proceduresManager.filterByCategory('all')">
+                    All Procedures (${procedures.length})
+                </button>
+                ${categoryFilters}
+            </div>
+
+            <div id="procedures-grid" class="lab-grid">
+        `;
+        
+        html += procedures.map(proc => `
+            <button class="lab-value-btn" onclick="window.proceduresManager.showProcedureDetail('${proc.id}'); event.stopPropagation();" style="cursor: pointer; text-align: left;">
+                <div class="lab-name">${proc.name}</div>
+                <div class="lab-count">${this.formatCategoryName(proc.category)}</div>
+                <p style="font-size: 12px; margin-top: 8px; opacity: 0.9;">${proc.indication || ''}</p>
+            </button>
+        `).join('');
+        
+        html += '</div>';
+        return html;
+    }
+
+    /**
+     * Show procedure detail in the container
+     */
+    showProcedureDetail(procedureId) {
+        const container = document.getElementById('procedures-container');
+        if (!container) {
+            console.error('procedures-container not found');
+            return;
+        }
+        
+        const proc = this.getProcedure(procedureId);
+        if (!proc) {
+            container.innerHTML = '<p class="error">Procedure not found.</p>';
+            return;
+        }
+        
+        // Add to recent
+        this.addToRecent(procedureId);
+        
+        let html = `
+            <button class="back-btn" onclick="window.quizApp.loadProceduresContent(document.getElementById('procedures-panel')); event.stopPropagation();" 
+                    style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to Procedures
+            </button>
+            <div class="procedure-detail">
+                <div class="procedure-detail-header">
+                    <h2 style="margin-bottom: 10px; font-size: 1.8em; color: var(--text-primary);">${proc.name}</h2>
+                    <span class="category-badge" style="padding: 6px 12px; background: #007AFF; color: white; border-radius: 20px; font-size: 0.85em;">${this.formatCategoryName(proc.category)}</span>
+                </div>
+        `;
+        
+        // Indication
+        if (proc.indication) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Indication</h3>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${proc.indication}</p>
+                </div>
+            `;
+        }
+        
+        // Contraindications
+        if (proc.contraindications) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Contraindications</h3>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${proc.contraindications}</p>
+                </div>
+            `;
+        }
+        
+        // Equipment
+        if (proc.equipment && Array.isArray(proc.equipment)) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Equipment Required</h3>
+                    <ul class="equipment-list" style="margin: 0; padding-left: 20px; list-style: disc; color: var(--text-primary);">
+                        ${proc.equipment.map(item => `<li style="margin-bottom: 6px;">${item}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+        
+        // Procedure steps
+        if (proc.procedure && Array.isArray(proc.procedure)) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Procedure Steps</h3>
+                    <ol class="procedure-steps" style="margin: 0; padding-left: 20px; counter-reset: step-counter; list-style: decimal; color: var(--text-primary);">
+                        ${proc.procedure.map(step => `<li style="margin-bottom: 12px; line-height: 1.6;">${step}</li>`).join('')}
+                    </ol>
+                </div>
+            `;
+        }
+        
+        // Complications
+        if (proc.complications) {
+            const comps = proc.complications;
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Complications</h3>
+            `;
+            
+            if (comps.immediate) {
+                html += `
+                    <div style="margin-bottom: 12px;">
+                        <h4 style="margin: 0 0 8px 0; color: var(--text-primary);">Immediate</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps.immediate}</p>
+                    </div>
+                `;
+            }
+            
+            if (comps.delayed) {
+                html += `
+                    <div style="margin-bottom: 12px;">
+                        <h4 style="margin: 0 0 8px 0; color: var(--text-primary);">Delayed</h4>
+                        <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${comps.delayed}</p>
+                    </div>
+                `;
+            }
+            
+            html += '</div>';
+        }
+        
+        // Monitoring
+        if (proc.monitoring) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Post-Procedure Monitoring</h3>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${proc.monitoring}</p>
+                </div>
+            `;
+        }
+        
+        // Clinical Pearls
+        if (proc.clinicalPearls) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: #FFF9E6; border: 1px solid #FFE066; border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: #856404;">💡 Clinical Pearls</h3>
+                    <p style="margin: 0; color: #856404; line-height: 1.6;">${proc.clinicalPearls}</p>
+                </div>
+            `;
+        }
+        
+        // Supervision
+        if (proc.supervision) {
+            html += `
+                <div class="detail-section" style="margin: 20px 0; padding: 16px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;">
+                    <h3 style="margin: 0 0 12px 0; font-size: 1.2em; color: var(--text-primary);">Supervision Level</h3>
+                    <p style="margin: 0; color: var(--text-primary); line-height: 1.6;">${proc.supervision}</p>
+                </div>
+            `;
+        }
+        
+        html += '</div>';
+        container.innerHTML = html;
+        container.scrollTop = 0;
+    }
+
+    /**
+     * Filter procedures by category
+     */
+    filterByCategory(category) {
+        const container = document.getElementById('procedures-container');
+        if (!container) return;
+        
+        container.innerHTML = this.renderProcedureList(category);
+        
+        // Update active filter button
+        document.querySelectorAll('.category-filter-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.category === category);
+        });
+    }
+
+    /**
+     * Handle search from input
+     */
+    handleSearch() {
+        const input = document.getElementById('procedures-search');
+        if (!input) return;
+        
+        const query = input.value.trim();
+        if (!query) {
+            this.filterByCategory('all');
+            return;
+        }
+        
+        const results = this.searchProcedures(query);
+        const container = document.getElementById('procedures-container');
+        if (!container) return;
+        
+        if (results.length === 0) {
+            container.innerHTML = `
+                <div class="search-container">
+                    <input type="text" id="procedures-search" placeholder="Search procedures..." class="tool-search" value="${query}">
+                    <button id="procedures-search-btn" onclick="window.proceduresManager.handleSearch()">🔍</button>
+                </div>
+                <p class="no-results">No procedures found matching "${query}".</p>
+            `;
+            return;
+        }
+        
+        let html = `
+            <div class="search-container">
+                <input type="text" id="procedures-search" placeholder="Search procedures..." class="tool-search" value="${query}">
+                <button id="procedures-search-btn" onclick="window.proceduresManager.handleSearch()">🔍</button>
+            </div>
+            <button class="back-btn" onclick="window.quizApp.loadProceduresContent(document.getElementById('procedures-panel')); event.stopPropagation();" 
+                    style="margin-bottom: 20px; padding: 10px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer;">
+                ← Back to All Procedures
+            </button>
+            <div class="search-results-header" style="margin-bottom: 16px;">
+                <p>Found ${results.length} procedure(s) matching "${query}"</p>
+            </div>
+            <div class="lab-grid">
+        `;
+        
+        html += results.map(result => `
+            <button class="lab-value-btn" onclick="window.proceduresManager.showProcedureDetail('${result.id}'); event.stopPropagation();" style="cursor: pointer; text-align: left;">
+                <div class="lab-name">${result.procedure.name}</div>
+                <div class="lab-count">${this.formatCategoryName(result.procedure.category)}</div>
+                <p style="font-size: 12px; margin-top: 8px; opacity: 0.9;">${result.procedure.indication || ''}</p>
+                <div style="font-size: 11px; color: #007AFF; margin-top: 4px;">
+                    Matched in: ${result.matchedIn.join(', ')}
+                </div>
+            </button>
+        `).join('');
+        
+        html += '</div>';
+        container.innerHTML = html;
+    }
+
+    /**
+     * Render procedure list for a category (legacy DOM manipulation)
+     */
+    renderProcedureListLegacy(category, containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
         
@@ -331,9 +592,39 @@ export class ProceduresManager {
     }
 
     /**
-     * Render procedure detail view
+     * Render procedure detail view (legacy DOM manipulation)
      */
-    renderProcedureDetail(procedureId, containerId) {
+    renderProcedureDetailLegacy(procedureId, containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        
+        const procedures = category === 'all' 
+            ? Object.entries(this.procedures).map(([id, proc]) => ({ id, ...proc }))
+            : this.getProceduresByCategory(category);
+        
+        if (procedures.length === 0) {
+            container.innerHTML = '<p class="no-results">No procedures found in this category.</p>';
+            return;
+        }
+        
+        container.innerHTML = procedures.map(proc => `
+            <div class="procedure-card" data-procedure-id="${proc.id}">
+                <div class="procedure-header">
+                    <h3>${proc.name}</h3>
+                    <span class="category-badge">${this.formatCategoryName(proc.category)}</span>
+                </div>
+                <p class="procedure-indication">${proc.indication || 'No indication specified'}</p>
+                <button class="btn-view-procedure" onclick="window.viewProcedure('${proc.id}')">
+                    View Details
+                </button>
+            </div>
+        `).join('');
+    }
+
+    /**
+     * Render procedure detail view (legacy DOM manipulation)
+     */
+    renderProcedureDetailLegacy(procedureId, containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
         
@@ -451,9 +742,129 @@ export class ProceduresManager {
     }
 
     /**
-     * Render search results
+     * Render search results (legacy)
      */
-    renderSearchResults(query, containerId) {
+    renderSearchResultsLegacy(query, containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        
+        const proc = this.getProcedure(procedureId);
+        if (!proc) {
+            container.innerHTML = '<p class="error">Procedure not found.</p>';
+            return;
+        }
+        
+        // Add to recent
+        this.addToRecent(procedureId);
+        
+        let html = `
+            <div class="procedure-detail">
+                <div class="procedure-detail-header">
+                    <h2>${proc.name}</h2>
+                    <span class="category-badge">${this.formatCategoryName(proc.category)}</span>
+                </div>
+        `;
+        
+        // Indication
+        if (proc.indication) {
+            html += `
+                <div class="detail-section">
+                    <h3>Indication</h3>
+                    <p>${proc.indication}</p>
+                </div>
+            `;
+        }
+        
+        // Contraindications
+        if (proc.contraindications) {
+            html += `
+                <div class="detail-section">
+                    <h3>Contraindications</h3>
+                    <p>${proc.contraindications}</p>
+                </div>
+            `;
+        }
+        
+        // Equipment
+        if (proc.equipment && Array.isArray(proc.equipment)) {
+            html += `
+                <div class="detail-section">
+                    <h3>Equipment Required</h3>
+                    <ul class="equipment-list">
+                        ${proc.equipment.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+        
+        // Procedure steps
+        if (proc.procedure && Array.isArray(proc.procedure)) {
+            html += `
+                <div class="detail-section">
+                    <h3>Procedure</h3>
+                    <ol class="procedure-steps">
+                        ${proc.procedure.map(step => `<li>${step}</li>`).join('')}
+                    </ol>
+                </div>
+            `;
+        }
+        
+        // Complications
+        if (proc.complications) {
+            html += `
+                <div class="detail-section">
+                    <h3>Complications</h3>
+            `;
+            if (typeof proc.complications === 'string') {
+                html += `<p>${proc.complications}</p>`;
+            } else {
+                html += '<dl class="complications-list">';
+                Object.entries(proc.complications).forEach(([type, desc]) => {
+                    html += `<dt>${type}</dt><dd>${desc}</dd>`;
+                });
+                html += '</dl>';
+            }
+            html += '</div>';
+        }
+        
+        // Monitoring
+        if (proc.monitoring) {
+            html += `
+                <div class="detail-section">
+                    <h3>Monitoring</h3>
+                    <p>${proc.monitoring}</p>
+                </div>
+            `;
+        }
+        
+        // Clinical Pearls
+        if (proc.clinicalPearls) {
+            html += `
+                <div class="detail-section clinical-pearls">
+                    <h3>💎 Clinical Pearls</h3>
+                    <p>${proc.clinicalPearls}</p>
+                </div>
+            `;
+        }
+        
+        // Supervision
+        if (proc.supervision) {
+            html += `
+                <div class="detail-section supervision-info">
+                    <h3>Supervision Required</h3>
+                    <p>${proc.supervision}</p>
+                </div>
+            `;
+        }
+        
+        html += '</div>';
+        container.innerHTML = html;
+    }
+
+    /**
+     * Render search results (legacy)
+     */
+    renderSearchResultsLegacy(query, containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
         
@@ -485,6 +896,7 @@ export class ProceduresManager {
             `).join('')}
         `;
     }
+
 }
 
 // Create singleton instance

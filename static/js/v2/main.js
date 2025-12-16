@@ -238,6 +238,7 @@ class MLAQuizApp {
         const preloadTargets = [
             { id: 'drug-panel', log: '🏥 Preloading drug reference content...', loader: panel => this.loadDrugReferenceContent(panel) },
             { id: 'lab-panel', log: '🧪 Preloading lab values content...', loader: panel => this.loadLabValuesContent(panel) },
+            { id: 'procedures-panel', log: '🏥 Preloading procedures content...', loader: panel => this.loadProceduresContent(panel) },
             { id: 'guidelines-panel', log: '📋 Preloading guidelines content...', loader: panel => this.loadGuidelinesContent(panel) },
             { id: 'vaccinations-panel', log: '💉 Preloading vaccination programme...', loader: panel => this.loadVaccinationsContent(panel) },
             { id: 'mnemonics-panel', log: '🧠 Preloading mnemonics content...', loader: panel => this.loadMnemonicsContent(panel) },
@@ -1067,6 +1068,7 @@ class MLAQuizApp {
             'calculators': 'calculator-panel',
             'calculator-detail': 'calculator-detail',
             'lab-values': 'lab-panel',
+            'procedures': 'procedures-panel',
             'guidelines': 'guidelines-panel',
             'vaccinations': 'vaccinations-panel',
             'differential-dx': 'differential-panel',
@@ -1115,6 +1117,9 @@ class MLAQuizApp {
                 break;
             case 'lab-values':
                 this.loadLabValuesContent(panel);
+                break;
+            case 'procedures':
+                this.loadProceduresContent(panel);
                 break;
             case 'guidelines':
                 this.loadGuidelinesContent(panel);
@@ -2696,6 +2701,24 @@ class MLAQuizApp {
 
         container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load Procedures content
+     */
+    loadProceduresContent(panel) {
+        if (!panel) {
+            console.error('loadProceduresContent: panel is null');
+            return;
+        }
+        const container = panel.querySelector('#procedures-container') || panel;
+        
+        if (!this.proceduresManager) {
+            container.innerHTML = '<div class="no-content">Procedures manager not initialized</div>';
+            return;
+        }
+        
+        container.innerHTML = this.proceduresManager.renderProcedureList();
     }
 
     /**

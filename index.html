@@ -9113,6 +9113,142 @@
             }
         }
 
+        /* ========================================
+           Procedures Section Styles
+           ======================================== */
+        
+        .category-filter-btn {
+            padding: 8px 16px;
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 20px;
+            font-size: 14px;
+            color: var(--v2-text-primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .category-filter-btn:hover {
+            background: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+        
+        .category-filter-btn.active {
+            background: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+        
+        .procedure-detail-header {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--v2-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #007AFF;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .detail-section {
+            margin: 20px 0;
+            padding: 16px;
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 12px;
+        }
+        
+        .detail-section h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.2em;
+            color: var(--v2-text-primary);
+        }
+        
+        .detail-section p {
+            margin: 0;
+            color: var(--v2-text-primary);
+            line-height: 1.6;
+        }
+        
+        .equipment-list,
+        .procedure-steps {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--v2-text-primary);
+        }
+        
+        .equipment-list li,
+        .procedure-steps li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .procedure-steps {
+            list-style: decimal;
+            counter-reset: step-counter;
+        }
+        
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--v2-bg-card);
+            border: 1px solid var(--v2-border);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--v2-text-primary);
+            transition: all 0.2s ease;
+        }
+        
+        .back-btn:hover {
+            background: var(--v2-bg);
+            border-color: #007AFF;
+        }
+        
+        [data-theme="dark"] .category-filter-btn {
+            background: #1c1c1e;
+            border-color: #38383a;
+            color: #e5e5e7;
+        }
+        
+        [data-theme="dark"] .category-filter-btn:hover {
+            background: #0a84ff;
+            border-color: #0a84ff;
+        }
+        
+        [data-theme="dark"] .category-filter-btn.active {
+            background: #0a84ff;
+            border-color: #0a84ff;
+        }
+        
+        [data-theme="dark"] .category-badge {
+            background: #0a84ff;
+        }
+        
+        [data-theme="dark"] .back-btn {
+            background: #1c1c1e;
+            border-color: #38383a;
+            color: #e5e5e7;
+        }
+        
+        [data-theme="dark"] .back-btn:hover {
+            background: #2c2c2e;
+            border-color: #0a84ff;
+        }
+
 </style>
     <style>
         /* ========================================
@@ -11498,6 +11634,7 @@
             <button class="tool-nav-btn" data-tool="interpretation">📋 Interpretation</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Clinical Treatment Ladders</button>
             <button class="tool-nav-btn" data-tool="lab-values">📊 Lab Values</button>
+            <button class="tool-nav-btn" data-tool="procedures">🏥 Procedures</button>
             <button class="tool-nav-btn" data-tool="genetics">🧬 Genetics</button>
             <button class="tool-nav-btn" data-tool="contraception-hrt">⚖️ Hormones &amp; Contraception</button>
             <button class="tool-nav-btn" data-tool="vaccinations">💉 Vaccinations</button>
@@ -11553,6 +11690,14 @@
                 <div id="lab-values-container">
                     <!-- Content loaded dynamically by JavaScript -->
                     <div class="loading-message">📊 Loading lab values...</div>
+                </div>
+            </div>
+
+            <!-- Procedures Panel -->
+            <div id="procedures-panel" class="tool-panel">
+                <div id="procedures-container">
+                    <!-- Content loaded dynamically by JavaScript -->
+                    <div class="loading-message">🏥 Loading procedures reference...</div>
                 </div>
             </div>
 
