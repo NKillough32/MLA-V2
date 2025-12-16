@@ -563,5 +563,419 @@ window.labDatabase = {
                 clinicalSignificance: 'Levels rise rapidly with CYP inhibitors and in sepsis. Obtain immediately in toxicity or after dose changes.'
             }
         }
+    },
+    'blood_film': {
+        name: 'Blood Film',
+        indication: 'Detailed examination of blood cells under microscopy',
+        clinicalSignificance: 'Ordered when CBC shows abnormalities or when specific conditions suspected (malaria, leukaemia, haemolysis)',
+        findings: {
+            'Normal': 'RBCs: normocytic, normochromic, central pallor. WBCs: normal distribution. Platelets: adequate.',
+            'Microcytic anaemia': 'Hypochromic, microcytic RBCs, pencil cells (iron deficiency). Target cells (thalassaemia)',
+            'Macrocytic anaemia': 'Macrocytes, hypersegmented neutrophils (B12/folate deficiency). Megaloblasts if severe',
+            'Haemolytic anaemia': 'Spherocytes (hereditary spherocytosis, AIHA), schistocytes (MAHA), sickle cells',
+            'Leukaemia': 'Blast cells, immature WBCs, Auer rods (AML)',
+            'Infection': 'Toxic granulation, left shift, reactive lymphocytes (viral)',
+            'Malaria': 'Parasites within RBCs, ring forms, gametocytes',
+            'Others': 'Howell-Jolly bodies (hyposplenism), Heinz bodies (G6PD deficiency), rouleaux (myeloma)'
+        }
+    },
+    'group_save_crossmatch': {
+        name: 'Group & Save / Crossmatch',
+        indication: 'Pre-operative or before transfusion',
+        clinicalSignificance: 'Group & Save: blood group (ABO, Rh) identified and antibodies screened, no blood reserved. Crossmatch: compatible blood units reserved for patient',
+        values: {
+            'Blood Group': {
+                normal: 'O, A, B, AB with Rh +ve or -ve',
+                clinicalSignificance: 'O -ve is universal donor. AB +ve is universal recipient. Rh -ve mothers need anti-D prophylaxis if baby Rh +ve'
+            },
+            'Antibody Screen': {
+                normal: 'Negative',
+                positive: 'Indicates atypical antibodies (from previous transfusions, pregnancy). Extended crossmatch needed',
+                clinicalSignificance: 'Positive screen may delay transfusion while compatible units located'
+            }
+        }
+    },
+    'hba1c': {
+        name: 'Haemoglobin A1c (Glycated Haemoglobin)',
+        values: {
+            'HbA1c': {
+                normal: '<42 mmol/mol (<6.0%)',
+                high: 'Prediabetes: 42-47 mmol/mol (6.0-6.4%). Diabetes: ≥48 mmol/mol (≥6.5%)',
+                target: 'Diabetes target: 48-53 mmol/mol (6.5-7.0%) for most. <53 if diet/single agent. <75 if elderly/frail',
+                critical: '>86 mmol/mol (>10%) indicates very poor control - review urgently',
+                clinicalSignificance: 'Reflects average glucose over 2-3 months. Not affected by recent meals. Invalid in haemolysis, recent transfusion, haemoglobinopathies. Check every 3-6 months in diabetes'
+            }
+        }
+    },
+    'tumour_markers': {
+        name: 'Tumour Markers',
+        values: {
+            'PSA (Prostate Specific Antigen)': {
+                normal: '<3 ng/mL (age-dependent: <50y: <2.5, 50-59y: <3.5, 60-69y: <4.5, >70y: <6.5)',
+                high: 'Prostate cancer, BPH, prostatitis, recent ejaculation, recent DRE',
+                critical: '>10 ng/mL suggests malignancy. >20 ng/mL suggests locally advanced/metastatic disease',
+                clinicalSignificance: 'Not diagnostic alone - combine with DRE, MRI, biopsy. Rising PSA on surveillance suggests progression. Avoid ejaculation/cycling for 48h, DRE for 1 week before test'
+            },
+            'CA125': {
+                normal: '<35 U/mL',
+                high: 'Ovarian cancer (>200 U/mL suspicious), endometriosis, PID, menstruation, pregnancy, heart failure, cirrhosis',
+                critical: '>200 U/mL with pelvic mass highly suspicious for ovarian malignancy',
+                clinicalSignificance: 'Used with RMI (risk of malignancy index) in ovarian masses. Monitor response to treatment and recurrence. Not specific - many benign causes'
+            },
+            'CEA (Carcinoembryonic Antigen)': {
+                normal: '<5 ng/mL (higher in smokers)',
+                high: 'Colorectal cancer, pancreatic cancer, lung cancer, cirrhosis, IBD, smoking',
+                critical: '>20 ng/mL suggests advanced malignancy or metastases',
+                clinicalSignificance: 'Monitor colorectal cancer recurrence post-resection. Rising levels suggest recurrence. Not suitable for screening due to poor specificity'
+            },
+            'CA19-9': {
+                normal: '<37 U/mL',
+                high: 'Pancreatic cancer, cholangiocarcinoma, gastric cancer, pancreatitis, biliary obstruction',
+                critical: '>1000 U/mL suggests unresectable pancreatic cancer',
+                clinicalSignificance: 'Elevated in 80% pancreatic cancers. Correlates with tumour burden. False negative in Lewis antigen-negative patients (5-10%). Not diagnostic alone - needs imaging correlation'
+            },
+            'AFP (Alpha-fetoprotein)': {
+                normal: '<10 ng/mL',
+                high: 'Hepatocellular carcinoma, germ cell tumours, pregnancy, hepatitis, cirrhosis',
+                critical: '>400 ng/mL highly suspicious for HCC',
+                clinicalSignificance: 'Monitor HCC in cirrhosis (6-monthly with ultrasound). Elevated in 60-70% HCC. Also elevated in testicular non-seminomatous germ cell tumours'
+            }
+        }
+    },
+    'faecal_calprotectin': {
+        name: 'Faecal Calprotectin',
+        values: {
+            'Calprotectin': {
+                normal: '<50 μg/g',
+                borderline: '50-200 μg/g - consider repeat or further investigation',
+                high: '>200 μg/g suggests IBD (Crohn\'s, UC), infection, malignancy, NSAID enteropathy',
+                critical: '>250 μg/g highly suspicious for IBD',
+                clinicalSignificance: 'Distinguishes IBD from IBS (high sensitivity/specificity). Monitor IBD disease activity and response to treatment. Avoid if GI bleeding, recent NSAIDs, or diarrhoea <3 days'
+            }
+        }
+    },
+    'autoantibodies': {
+        name: 'Autoantibodies & Immunology',
+        values: {
+            'ANA (Anti-Nuclear Antibodies)': {
+                normal: 'Negative or titre <1:40',
+                positive: 'SLE (high titre), drug-induced lupus, Sjögren syndrome, scleroderma, 5-10% healthy population (low titre)',
+                clinicalSignificance: 'Screening test for connective tissue diseases. Titre >1:160 more significant. Positive ANA requires ENA panel to identify specific antibodies. Pattern (homogeneous, speckled, centromere) guides diagnosis'
+            },
+            'Anti-dsDNA': {
+                normal: 'Negative or <30 IU/mL',
+                positive: 'SLE (60-70% sensitivity, 95% specificity). Titre correlates with disease activity and nephritis risk',
+                clinicalSignificance: 'Highly specific for SLE. Rising titres suggest flare. Monitor every 3 months in active disease'
+            },
+            'Anti-ENA (Extractable Nuclear Antigens)': {
+                'Anti-Ro (SS-A)': 'Sjögren syndrome, SLE, subacute cutaneous lupus, congenital heart block',
+                'Anti-La (SS-B)': 'Sjögren syndrome (usually with anti-Ro), SLE',
+                'Anti-Sm (Smith)': 'SLE (highly specific but only 30% sensitive)',
+                'Anti-RNP': 'Mixed connective tissue disease, SLE',
+                'Anti-Scl-70': 'Diffuse systemic sclerosis (scleroderma)',
+                'Anti-Jo-1': 'Polymyositis, dermatomyositis, antisynthetase syndrome',
+                'Anti-centromere': 'Limited systemic sclerosis (CREST syndrome)',
+                clinicalSignificance: 'Ordered after positive ANA to identify specific disease. Multiple antibodies may be present'
+            },
+            'Rheumatoid Factor (RF)': {
+                normal: '<15 IU/mL',
+                positive: 'Rheumatoid arthritis (70-80%), Sjögren syndrome, SLE, cryoglobulinaemia, chronic infections (hepatitis C, TB), 5% healthy elderly',
+                clinicalSignificance: 'Positive in 70-80% RA but not specific. High titres (>100 IU/mL) more specific. Presence correlates with erosive disease and extra-articular manifestations'
+            },
+            'Anti-CCP (Cyclic Citrullinated Peptide)': {
+                normal: '<7 U/mL',
+                positive: 'Rheumatoid arthritis (70% sensitive, 95% specific)',
+                critical: 'High titres (>100 U/mL) predict aggressive erosive disease',
+                clinicalSignificance: 'More specific than RF for RA. Can be positive before clinical symptoms (pre-RA). Helps distinguish RA from other inflammatory arthritis. High titre = worse prognosis'
+            },
+            'Coeliac Serology': {
+                'tTG-IgA (Tissue Transglutaminase)': 'Normal: <7 U/mL. High: >10 U/mL (98% sensitive for coeliac disease)',
+                'Total IgA': 'Check to exclude IgA deficiency (2-3% coeliacs) which causes false negative tTG-IgA',
+                'EMA-IgA (Endomysial Antibody)': '99% specific for coeliac disease but less sensitive than tTG',
+                'DGP-IgG (Deamidated Gliadin Peptide)': 'Useful if IgA deficient or age <2 years',
+                clinicalSignificance: 'Test on gluten-containing diet (6 weeks). Positive serology → duodenal biopsy for diagnosis. Repeat serology yearly to monitor adherence to gluten-free diet'
+            },
+            'Thyroid Autoantibodies': {
+                'Anti-TPO (Thyroid Peroxidase)': 'Normal: <35 IU/mL. Positive: Hashimoto thyroiditis (90%), Graves disease (70%), postpartum thyroiditis',
+                'Anti-Thyroglobulin': 'Hashimoto thyroiditis, Graves disease (less sensitive than TPO)',
+                'TSH Receptor Antibodies (TRAb)': 'Graves disease (98% sensitivity/specificity). Stimulating antibodies cause hyperthyroidism',
+                clinicalSignificance: 'Anti-TPO positive predicts progression to hypothyroidism. TRAb diagnostic for Graves disease. Monitor TRAb in pregnancy (crosses placenta - risk of neonatal thyrotoxicosis)'
+            },
+            'Liver Autoantibodies': {
+                'AMA (Anti-Mitochondrial)': 'Primary biliary cholangitis (95% sensitive/specific). M2 subtype most specific',
+                'ANA in liver disease': 'Autoimmune hepatitis, PBC',
+                'Anti-SMA (Smooth Muscle)': 'Autoimmune hepatitis type 1',
+                'Anti-LKM (Liver-Kidney Microsomal)': 'Autoimmune hepatitis type 2 (children/young adults)',
+                'pANCA': 'Primary sclerosing cholangitis, autoimmune hepatitis',
+                clinicalSignificance: 'AMA highly specific for PBC. Autoimmune hepatitis requires ANA/SMA + elevated IgG + histology. Check before diagnosing "cryptogenic" hepatitis'
+            }
+        }
+    },
+    'microbiology': {
+        name: 'Microbiology Investigations',
+        values: {
+            'Blood Cultures': {
+                indication: 'Suspected bacteraemia/sepsis, endocarditis, fever of unknown origin',
+                sampling: 'Draw 2-3 sets (aerobic + anaobic bottles each) from different sites before antibiotics if possible. Take when spiking temperature',
+                results: {
+                    'Positive': 'Identifies organism and sensitivities. May take 24-48h for organism, 48-72h for full sensitivities',
+                    'Negative': 'Does not exclude infection (sensitivity 70-80%). May be negative if prior antibiotics, fastidious organisms, non-bacteraemic infections',
+                    'Contamination': 'Coagulase-negative Staph, Corynebacterium, Bacillus, Propionibacterium - usually contaminants unless ≥2 sets positive or prosthetic material present'
+                },
+                clinicalSignificance: 'Always draw before antibiotics. Positive blood cultures with same organism in ≥2 sets or ≥1 set with typical pathogen = true bacteraemia'
+            },
+            'Urine Culture': {
+                normal: '<10^5 CFU/mL',
+                positive: '≥10^5 CFU/mL single organism = UTI. Lower counts (10^4) significant if symptomatic or straight catheter sample',
+                contamination: 'Mixed growth (≥3 organisms) suggests contamination - repeat MSU',
+                clinicalSignificance: 'Always send before antibiotics in suspected pyelonephritis. Asymptomatic bacteriuria (positive culture, no symptoms) usually does not need treatment except in pregnancy'
+            },
+            'Sputum Culture': {
+                indication: 'Pneumonia, COPD exacerbation, TB, suspected atypical organism',
+                results: {
+                    'Common pathogens': 'Strep pneumoniae, H. influenzae, Moraxella, Staph aureus (including MRSA)',
+                    'Atypical': 'Mycoplasma, Legionella, Chlamydia (require special tests - not routine culture)',
+                    'TB': 'Requires 3 sputum samples on consecutive days. Smear (Ziehl-Neelsen) gives rapid result. Culture takes 6 weeks. PCR/GeneXpert rapid'
+                },
+                clinicalSignificance: 'Quality assessed by microscopy (<10 epithelial cells/field = good sample). Difficult to distinguish colonization from infection especially in COPD'
+            },
+            'Stool Culture & Testing': {
+                'Standard Culture': 'Detects Salmonella, Shigella, Campylobacter, E. coli O157',
+                'Stool Antigen Tests': 'Rapid tests for C. difficile toxin, Giardia, Cryptosporidium, H. pylori',
+                'C. difficile': 'Test for toxin (GDH + toxin or PCR). Send sample if diarrhoea ≥3 loose stools in 24h and recent antibiotics or hospital stay',
+                'Ova, Cysts & Parasites': 'Requires 3 samples. For persistent diarrhoea especially if travel history',
+                clinicalSignificance: 'Only send if diarrhoea ≥3 days (unless bloody, severe, immunocompromised, or recent travel). C. diff testing only valid with diarrhoea'
+            },
+            'Wound & Skin Swabs': {
+                indication: 'Infected wounds, cellulitis (aspirate if fluctuant), MRSA screening',
+                'MRSA Screening': 'Nasal swab ± groin/perineum. Pre-op for high-risk surgery or if previous MRSA. Decolonize with nasal mupirocin + chlorhexidine washes if positive',
+                results: 'Common pathogens: Staph aureus (including MRSA), Strep pyogenes, Pseudomonas (chronic wounds), anaerobes (diabetic foot)',
+                clinicalSignificance: 'Superficial swabs often grow skin commensals. Aspirate or deep tissue sample better if possible. Diabetic foot ulcers need deep swab or bone biopsy if osteomyelitis suspected'
+            },
+            'Viral Serology': {
+                'HIV': 'Combined antigen/antibody test (4th generation). Window period 45 days. Positive screen needs confirmatory test. CD4 count and viral load if positive',
+                'Hepatitis B': 'HBsAg (acute infection), Anti-HBs (immunity from vaccine/recovery), Anti-HBc (past/current infection), HBeAg (high infectivity)',
+                'Hepatitis C': 'Anti-HCV antibody (screen), HCV RNA PCR (confirms active infection). Treat if RNA positive',
+                'EBV': 'Monospot/Paul-Bunnell (heterophile antibodies) - positive by week 2. VCA-IgM (acute), VCA-IgG + EBNA (past infection)',
+                'CMV': 'CMV IgM (acute), CMV IgG (past). Check in transplant recipients, HIV, pregnancy',
+                clinicalSignificance: 'Always interpret with clinical context. IgM suggests recent infection, IgG indicates past exposure/immunity'
+            }
+        }
+    },
+    'csf_analysis': {
+        name: 'Cerebrospinal Fluid (CSF) Analysis',
+        indication: 'Suspected meningitis, encephalitis, subarachnoid haemorrhage, MS, GBS, CNS malignancy',
+        contraindications: 'Raised ICP with mass effect, coagulopathy, local infection at LP site, cardiorespiratory compromise',
+        values: {
+            'Opening Pressure': {
+                normal: '10-20 cmH2O (lateral decubitus)',
+                high: '>25 cmH2O suggests raised ICP (idiopathic intracranial hypertension, meningitis, SAH, malignancy)',
+                low: '<5 cmH2O suggests CSF leak, dehydration',
+                clinicalSignificance: 'Always measure if no contraindications. Essential for diagnosis of idiopathic intracranial hypertension'
+            },
+            'Appearance': {
+                'Clear': 'Normal or viral meningitis',
+                'Turbid/cloudy': 'Bacterial meningitis (high WCC)',
+                'Bloody': 'Traumatic tap vs SAH (distinguish with xanthochromia, three-tube test)',
+                'Yellow (xanthochromia)': 'SAH (bilirubin from RBC breakdown - takes 12h to develop)',
+                clinicalSignificance: 'Xanthochromia by spectrophotometry confirms SAH if LP >12h post headache onset. Turbid CSF = bacterial meningitis until proven otherwise'
+            },
+            'White Cell Count': {
+                normal: '<5 cells/μL',
+                'Viral meningitis': '10-1000 cells/μL (lymphocyte predominance)',
+                'Bacterial meningitis': '100-5000 cells/μL (neutrophil predominance)',
+                'TB meningitis': '10-500 cells/μL (lymphocyte predominance)',
+                'Fungal meningitis': '10-500 cells/μL (lymphocyte predominance)',
+                clinicalSignificance: 'Bacterial meningitis = neutrophils >50%. TB/viral = lymphocytes >50%. Early viral can be neutrophilic (repeat LP)'
+            },
+            'Protein': {
+                normal: '0.15-0.45 g/L',
+                'Viral meningitis': '0.4-0.8 g/L',
+                'Bacterial meningitis': '1-5 g/L',
+                'TB meningitis': '1-5 g/L',
+                'GBS': '>1 g/L with normal WCC (albuminocytologic dissociation)',
+                clinicalSignificance: 'Elevated in most CNS pathology. Very high (>5 g/L) suggests bacterial meningitis, spinal block, or Froin syndrome'
+            },
+            'Glucose': {
+                normal: '2.8-4.2 mmol/L (CSF:serum ratio >0.6)',
+                'Viral meningitis': 'Normal or slightly low (ratio >0.6)',
+                'Bacterial meningitis': '<2.2 mmol/L (ratio <0.4)',
+                'TB meningitis': '<2.2 mmol/L (ratio <0.4)',
+                clinicalSignificance: 'Always compare to paired blood glucose (taken within 1h). Low CSF glucose with high protein = bacterial or TB meningitis'
+            },
+            'Microbiology': {
+                'Gram stain': 'Immediate result. Positive in 60-90% bacterial meningitis. Guides initial antibiotics',
+                'Culture': 'Gold standard but takes 24-48h. Sensitivity reduced if antibiotics given',
+                'PCR': 'Meningococcal/pneumococcal PCR rapid. Viral PCR (HSV, VZV, enteroviruses) - 95% sensitive',
+                clinicalSignificance: 'Never delay antibiotics for LP in bacterial meningitis. PCR useful if prior antibiotics given. HSV PCR essential in encephalitis'
+            },
+            'Oligoclonal Bands': {
+                normal: 'Negative or present equally in serum and CSF',
+                positive: 'Present in CSF but not serum - suggests MS (90% sensitive), neurosarcoidosis, Lyme disease, SSPE',
+                clinicalSignificance: 'Demonstrates intrathecal IgG synthesis. Positive in 90% MS but not specific. Combine with MRI findings and clinical history'
+            }
+        },
+        interpretation: {
+            'Bacterial meningitis': 'Turbid, ↑↑WCC (neutrophils), ↑↑protein, ↓↓glucose. Give antibiotics immediately before LP if delayed',
+            'Viral meningitis': 'Clear, ↑WCC (lymphocytes), normal/↑protein, normal glucose. Supportive care',
+            'TB meningitis': 'Fibrin web, ↑WCC (lymphocytes), ↑↑protein, ↓glucose. AFB rare on microscopy - high suspicion needed',
+            'SAH': 'Bloody/xanthochromia (after 12h), normal biochemistry. RBC count similar in bottles 1 and 3 (vs traumatic tap)',
+            'MS': 'Normal cells/glucose, ↑protein, +ve oligoclonal bands (CSF only), ↑IgG index',
+            'GBS': '↑↑protein, normal WCC (albuminocytologic dissociation). Usually week 2 of illness'
+        }
+    },
+    'ecg': {
+        name: 'Electrocardiogram (ECG)',
+        indication: 'Chest pain, palpitations, breathlessness, syncope, pre-op assessment, cardiovascular screening',
+        normalValues: {
+            'Heart Rate': '60-100 bpm',
+            'PR interval': '120-200 ms (3-5 small squares)',
+            'QRS duration': '<120 ms (<3 small squares)',
+            'QT interval': 'QTc <440 ms (men), <460 ms (women). Calculate QTc = QT / √RR',
+            'Axis': '-30° to +90° (normal)',
+            'R wave progression': 'R wave increases V1→V6. Transition zone V3-V4'
+        },
+        commonAbnormalities: {
+            'STEMI': 'ST elevation ≥1mm (limb leads) or ≥2mm (chest leads) in contiguous leads + reciprocal ST depression. Activate cath lab immediately',
+            'NSTEMI/Unstable Angina': 'ST depression, T wave inversion, dynamic changes. Troponin positive in NSTEMI',
+            'Atrial Fibrillation': 'Irregularly irregular rhythm, absent P waves, fibrillation waves',
+            'Atrial Flutter': 'Sawtooth flutter waves (best in II, III, aVF), regular rate ~150 bpm (2:1 block) or irregular',
+            'SVT': 'Narrow complex tachycardia, rate 150-220 bpm, no visible P waves or retrograde P waves',
+            'VT': 'Broad complex tachycardia, rate 120-250 bpm, AV dissociation, capture/fusion beats',
+            'Complete Heart Block': 'AV dissociation, P waves and QRS independent, escape rhythm 30-50 bpm',
+            'Left Bundle Branch Block': 'QRS ≥120ms, broad R wave V5-V6, deep S wave V1-V2, no septal Q waves',
+            'Right Bundle Branch Block': 'QRS ≥120ms, RSR\' pattern V1-V2 (M-shaped), wide S wave V5-V6',
+            'Left Ventricular Hypertrophy': 'Sokolow-Lyon: S(V1) + R(V5 or V6) >35mm. Strain pattern: ST depression + T wave inversion lateral leads',
+            'PE': 'S1Q3T3 pattern, right heart strain, sinus tachycardia, RBBB, right axis deviation',
+            'Pericarditis': 'Widespread ST elevation (saddle-shaped), PR depression, no reciprocal changes',
+            'Hyperkalaemia': 'Peaked T waves (K+ 5.5-6.5), broad QRS (K+ 6.5-7.5), sine wave (K+ >8)',
+            'Hypokalaemia': 'U waves, flat T waves, ST depression, prolonged QT',
+            'Digoxin effect': 'Downsloping ST depression (Salvador Dali moustache), short QT, T wave inversion'
+        },
+        clinicalSignificance: 'Always compare with old ECGs. Serial ECGs essential in chest pain. ST elevation in contiguous leads = STEMI until proven otherwise - call cardiology immediately'
+    },
+    'imaging_radiology': {
+        name: 'Radiology & Imaging',
+        modalities: {
+            'Chest X-ray (CXR)': {
+                indication: 'Pneumonia, heart failure, pneumothorax, malignancy, TB, trauma',
+                views: 'PA (standard), AP (portable - heart enlarged), lateral',
+                approach: 'Systematic: ABCDEFGHI - Airway, Breathing (lungs), Cardiac (size/shape), Diaphragm, Everything else, Fields, Great vessels, Hardware, Impressions',
+                commonFindings: {
+                    'Pneumonia': 'Consolidation (airspace opacification), air bronchograms, effusion',
+                    'Pulmonary oedema': 'Bat wing shadowing, Kerley B lines, cardiomegaly, effusions, upper lobe diversion',
+                    'Pneumothorax': 'Absent lung markings peripherally, visible lung edge',
+                    'Pleural effusion': 'Meniscus sign, blunted costophrenic angles. >500ml visible on erect CXR',
+                    'Lung cancer': 'Mass, hilar enlargement, collapse, effusion',
+                    'COPD': 'Hyperinflation (>6 anterior ribs, flat diaphragms), bullae'
+                }
+            },
+            'Abdominal X-ray (AXR)': {
+                indication: 'Bowel obstruction, perforation, constipation, renal calculi',
+                approach: 'Gas pattern, bowel loops, organs, bones, foreign bodies. Supine view standard',
+                commonFindings: {
+                    'Small bowel obstruction': 'Central gas, >3cm diameter, valvulae conniventes (lines cross full width)',
+                    'Large bowel obstruction': 'Peripheral gas, >6cm diameter (>9cm caecum), haustra (incomplete lines)',
+                    'Perforation': 'Free gas under diaphragm (erect CXR better)',
+                    'Toxic megacolon': 'Colon >6cm with mucosal oedema (thumbprinting)',
+                    'Volvulus': 'Coffee bean sign (sigmoid), dilated caecum (caecal)'
+                }
+            },
+            'CT Head': {
+                indication: 'Stroke, head injury, raised ICP, seizures, headache with red flags',
+                nonContrast: 'First-line for stroke (<4.5h for thrombolysis), haemorrhage, fractures',
+                findings: {
+                    'Acute stroke': 'Loss of grey-white differentiation, hyperdense MCA sign, obscured lentiform nucleus',
+                    'Haemorrhage': 'Hyperdense (white) blood. Subarachnoid, subdural, extradural, intracerebral',
+                    'Raised ICP': 'Midline shift, effacement of sulci/ventricles, herniation',
+                    'Hydrocephalus': 'Dilated ventricles'
+                },
+                clinicalSignificance: 'CT within 1h for head injury (GCS <13, focal neurology, skull fracture). Within 4.5h for thrombolysis in stroke'
+            },
+            'CT Chest/Abdomen/Pelvis (CTAP)': {
+                indication: 'Malignancy staging, trauma, PE, AAA, appendicitis, diverticulitis',
+                contrast: 'IV contrast for vascular/organ enhancement. Oral contrast less used now',
+                'CT PE Protocol': 'Contrast-enhanced, timed for pulmonary arteries. Filling defect = PE',
+                'CT KUB (non-contrast)': 'Renal stones (90% visible), hydronephrosis',
+                clinicalSignificance: 'CT gold standard for trauma, PE, AAA, malignancy. Radiation dose significant - justify use'
+            },
+            'Ultrasound': {
+                advantages: 'No radiation, bedside, real-time, cheap, safe in pregnancy',
+                indications: {
+                    'Abdominal': 'Gallstones, AAA, hepatobiliary, renal, ascites',
+                    'Renal': 'Hydronephrosis (obstructive uropathy), stones (not all visible), cysts, masses',
+                    'Pelvic': 'Pregnancy, ovarian masses, fibroids',
+                    'Vascular': 'DVT (compression ultrasound), carotid stenosis',
+                    'Cardiac (Echo)': 'Ejection fraction, valves, pericardial effusion'
+                },
+                limitations: 'Operator-dependent, gas/obesity reduce image quality'
+            },
+            'MRI': {
+                advantages: 'No radiation, excellent soft tissue contrast, multiplanar',
+                indications: {
+                    'Brain': 'MS, stroke (DWI for acute), tumours, pituitary, infection',
+                    'Spine': 'Cord compression, disc prolapse, infection, tumour',
+                    'MSK': 'Soft tissue injuries, joints, osteomyelitis',
+                    'Cardiac': 'Myocarditis, cardiomyopathy, congenital'
+                },
+                contraindications: 'Pacemakers (most now MRI-safe), metallic foreign bodies (orbital), cochlear implants, claustrophobia',
+                clinicalSignificance: 'Gold standard for brain and spinal cord. DWI sequence detects acute stroke. Takes 30-60 min'
+            },
+            'DEXA Scan': {
+                indication: 'Osteoporosis screening: ≥75 years, previous fragility fracture, steroids ≥3 months',
+                measurement: 'Bone mineral density at lumbar spine and hip',
+                interpretation: {
+                    'T-score ≥-1.0': 'Normal',
+                    'T-score -1.0 to -2.5': 'Osteopenia',
+                    'T-score ≤-2.5': 'Osteoporosis',
+                    'T-score ≤-2.5 + fracture': 'Severe osteoporosis'
+                },
+                clinicalSignificance: 'T-score compares to young adult peak bone mass. Z-score compares to age-matched. Treat if T-score ≤-2.5 or ≤-1.5 with risk factors'
+            }
+        },
+        ultrasoundVsCT: {
+            'Use ultrasound first': 'Pregnancy, children, gallstones, AAA screening, renal obstruction, ascites, DVT',
+            'Use CT when': 'Trauma, PE, acute abdomen (if ultrasound negative), malignancy staging, renal stones (if ultrasound shows hydronephrosis)',
+            'Principle': 'Ultrasound first where appropriate to avoid radiation. CT if ultrasound inadequate or time-critical'
+        }
+    },
+    'neurophysiology': {
+        name: 'Neurophysiology Studies',
+        values: {
+            'Electroencephalography (EEG)': {
+                indication: 'Seizures, encephalopathy, encephalitis, brain death',
+                findings: {
+                    'Normal': 'Posterior dominant rhythm 8-13 Hz (alpha), symmetrical',
+                    'Epilepsy': 'Focal spikes/sharp waves (focal epilepsy), generalized spike-wave (absence - 3Hz, JME - 4-6Hz)',
+                    'Status epilepticus': 'Continuous seizure activity',
+                    'Encephalopathy': 'Diffuse slowing, triphasic waves (hepatic)',
+                    'Encephalitis': 'Focal slowing, PLEDS (herpes)',
+                    'CJD': 'Periodic sharp wave complexes'
+                },
+                clinicalSignificance: 'Normal EEG does not exclude epilepsy (50% sensitivity). Repeat or sleep-deprived EEG increases yield. Video-telemetry gold standard'
+            },
+            'Nerve Conduction Studies (NCS)': {
+                indication: 'Peripheral neuropathy, radiculopathy, carpal tunnel syndrome, GBS',
+                measurements: 'Sensory and motor nerve conduction velocities, amplitudes, latencies',
+                findings: {
+                    'Axonal neuropathy': 'Reduced amplitudes, normal/mildly slow velocities (diabetes, toxins, chemotherapy)',
+                    'Demyelinating neuropathy': 'Slow velocities, prolonged latencies, conduction block (GBS, CIDP, CMT1)',
+                    'Carpal tunnel': 'Prolonged median sensory latency at wrist',
+                    'Radiculopathy': 'Normal (lesion proximal to DRG)'
+                },
+                clinicalSignificance: 'Distinguishes axonal from demyelinating neuropathy - guides treatment. Delay 2-3 weeks post injury for Wallerian degeneration'
+            },
+            'Electromyography (EMG)': {
+                indication: 'Myopathy, anterior horn cell disease (MND), radiculopathy',
+                technique: 'Needle electrode inserted into muscle - records spontaneous and voluntary activity',
+                findings: {
+                    'Normal': 'Insertional activity only, no spontaneous activity, normal motor unit potentials',
+                    'Denervation': 'Fibrillations, positive sharp waves, fasciculations (MND, radiculopathy)',
+                    'Myopathy': 'Small polyphasic motor units, early recruitment',
+                    'Myotonia': 'Dive bomber sound (myotonic dystrophy)'
+                },
+                clinicalSignificance: 'Combined with NCS to localize lesion. EMG changes appear 2-3 weeks after denervation'
+            }
+        }
     }
 };
