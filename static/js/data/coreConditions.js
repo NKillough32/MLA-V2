@@ -344,7 +344,7 @@ export const coreConditionsDatabase = {
                 'Spirometry: Obstructive pattern (FEV1/FVC <0.7) that reverses',
                 'Peak flow variability: >20% suggests asthma',
                 'FeNO: Helps identify steroid-responsive asthma',
-                'Normal tests don't exclude asthma - repeat when symptomatic'
+                "Normal tests don't exclude asthma - repeat when symptomatic"
             ]
         },
         
