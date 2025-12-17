@@ -1788,6 +1788,34 @@ class MLAQuizApp {
                 ${condition.synonyms && condition.synonyms.length > 0 ? `<p class="cc-synonyms">Also known as: ${condition.synonyms.join(', ')}</p>` : ''}
             </div>
 
+            <!-- Overview -->
+            ${condition.overview ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">📖 Overview</h3>
+                
+                ${condition.overview.definition ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Definition</h4>
+                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.definition}</p>
+                </div>
+                ` : ''}
+
+                ${condition.overview.epidemiology ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Epidemiology</h4>
+                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.epidemiology}</p>
+                </div>
+                ` : ''}
+
+                ${condition.overview.pathophysiology ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Pathophysiology</h4>
+                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.overview.pathophysiology}</p>
+                </div>
+                ` : ''}
+            </div>
+            ` : ''}
+
             <!-- Recognition -->
             <div class="cc-section">
                 <h3 class="cc-section-title">👁️ Recognition</h3>
@@ -1927,6 +1955,46 @@ class MLAQuizApp {
                 ` : ''}
             </div>
 
+            <!-- Drugs & Procedures -->
+            ${(condition.drugs && condition.drugs.length > 0) || (condition.procedures && condition.procedures.length > 0) ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">💊 Drugs & Procedures</h3>
+                
+                ${condition.drugs && condition.drugs.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Key Medications</h4>
+                    ${condition.drugs.map(drug => `
+                        <div class="cc-differential-item" style="margin-bottom: 16px;">
+                            <div class="cc-differential-name">${drug.name}</div>
+                            <div style="margin-top: 8px; display: grid; gap: 8px;">
+                                <p style="margin: 0;"><strong>Mechanism:</strong> ${drug.mechanism}</p>
+                                <p style="margin: 0;"><strong>Dosing:</strong> ${drug.dosing}</p>
+                                <p style="margin: 0;"><strong>Side Effects:</strong> ${drug.sideEffects}</p>
+                                <p style="margin: 0;"><strong>Clinical Notes:</strong> ${drug.notes}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+
+                ${condition.procedures && condition.procedures.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Procedures</h4>
+                    ${condition.procedures.map(proc => `
+                        <div class="cc-differential-item" style="margin-bottom: 16px;">
+                            <div class="cc-differential-name">${proc.name}</div>
+                            <div style="margin-top: 8px; display: grid; gap: 8px;">
+                                <p style="margin: 0;"><strong>Description:</strong> ${proc.description}</p>
+                                <p style="margin: 0;"><strong>Indications:</strong> ${proc.indications}</p>
+                                <p style="margin: 0;"><strong>Risks:</strong> ${proc.risks}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+            </div>
+            ` : ''}
+
             ${condition.clinicalPearls && condition.clinicalPearls.length > 0 ? `
             <div class="cc-section">
                 <h3 class="cc-section-title">💎 Clinical Pearls</h3>
@@ -1940,6 +2008,34 @@ class MLAQuizApp {
             <div class="cc-section">
                 <h3 class="cc-section-title">📊 Prognosis</h3>
                 <div class="cc-prognosis-box">${condition.prognosis}</div>
+            </div>
+            ` : ''}
+
+            <!-- Foundation Doctor Role -->
+            ${condition.foundationRole || condition.escalation || condition.safetyConsiderations ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">👨‍⚕️ Foundation Doctor Role</h3>
+                
+                ${condition.foundationRole ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Responsibilities & Limitations</h4>
+                    <p style="padding: 12px 16px; background: var(--v2-bg-card); border-radius: 8px; line-height: 1.8;">${condition.foundationRole}</p>
+                </div>
+                ` : ''}
+
+                ${condition.escalation ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">⚠️ When to Escalate</h4>
+                    <p style="padding: 12px 16px; background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; border-radius: 8px; line-height: 1.8;">${condition.escalation}</p>
+                </div>
+                ` : ''}
+
+                ${condition.safetyConsiderations ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">🛡️ Key Safety Considerations</h4>
+                    <p style="padding: 12px 16px; background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; border-radius: 8px; line-height: 1.8;">${condition.safetyConsiderations}</p>
+                </div>
+                ` : ''}
             </div>
             ` : ''}
         `;
