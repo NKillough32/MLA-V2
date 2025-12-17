@@ -201,6 +201,13 @@ class EnhancedConditionProcessor:
             condition = row['Core Conditions']
             domain = row['Domain']
             
+            # Clean condition name - remove leading special characters
+            condition = condition.lstrip('?').strip()
+            
+            # Skip invalid domains
+            if pd.isna(domain) or domain.lower() in ['nan', 'undefined', '']:
+                continue
+            
             if condition not in conditions:
                 conditions[condition] = []
             

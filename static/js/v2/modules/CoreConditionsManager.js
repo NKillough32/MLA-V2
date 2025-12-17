@@ -238,7 +238,12 @@ export class CoreConditionsManager {
         
         const domainsSet = new Set();
         this.enhancedIndex.conditions.forEach(condition => {
-            condition.domains.forEach(domain => domainsSet.add(domain));
+            condition.domains.forEach(domain => {
+                // Filter out invalid domains
+                if (domain && domain !== 'nan' && domain !== 'undefined' && domain.toLowerCase() !== 'nan') {
+                    domainsSet.add(domain);
+                }
+            });
         });
         
         return Array.from(domainsSet).sort();
@@ -636,39 +641,36 @@ export class CoreConditionsManager {
             name: enhanced.name,
             domains: enhanced.domains,
             recognition: {
-                typical: content.recognition.keySymptoms || [],
+                typical: content.recognition.symptoms || [],
                 atypical: content.recognition.atypicalPresentations || [],
-                examination: content.recognition.keySigns || [],
+                examination: content.recognition.signs || [],
                 redFlags: content.recognition.redFlags || []
             },
             investigation: {
                 immediate: content.investigation.firstLine || [],
                 further: content.investigation.secondLine || [],
-                specialist: content.investigation.specialistTests || []
+                specialist: content.investigation.specialistTests || [],
+                interpretation: []
             },
             diagnosis: {
                 criteria: content.diagnosis.criteria || '',
                 differential: content.diagnosis.differentials || []
             },
             management: {
-                acute: {
-                    firstLine: content.management.acute.firstLine || [],
-                    secondLine: content.management.acute.secondLine || [],
-                    procedures: content.management.acute.procedures || []
+                firstLine: {
+                    acute: content.management.acute.firstLine || [],
+                    chronic: content.management.chronic.firstLine || []
                 },
-                chronic: {
-                    firstLine: content.management.chronic.firstLine || [],
-                    secondLine: content.management.chronic.secondLine || [],
-                    monitoring: content.management.chronic.monitoring || []
-                },
-                drugs: content.management.drugs || [],
-                procedures: content.management.procedures || []
+                secondLine: content.management.acute.secondLine.concat(content.management.chronic.secondLine || []),
+                complications: content.complications || []
             },
+            clinicalPearls: [],
             prognosis: content.prognosis || '',
-            complications: content.complications || [],
             foundationRole: content.foundationDoctorRole || '',
             escalation: content.escalation || '',
             safetyConsiderations: content.keySafetyConsiderations || '',
+            drugs: content.management.drugs || [],
+            procedures: content.management.procedures || [],
             enhanced: true // Flag to indicate this is enhanced content
         };
     }

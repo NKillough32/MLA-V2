@@ -1784,7 +1784,7 @@ class MLAQuizApp {
                         <button class="cc-action-btn" onclick="window.quizApp.coreConditionsManager.printCondition('${conditionId}')">🖨️ Print</button>
                     </div>
                 </div>
-                <span class="cc-domain-badge">${condition.domain}</span>
+                <span class="cc-domain-badge">${condition.domains ? condition.domains[0] : (condition.domain || 'General')}</span>
                 ${condition.synonyms && condition.synonyms.length > 0 ? `<p class="cc-synonyms">Also known as: ${condition.synonyms.join(', ')}</p>` : ''}
             </div>
 
