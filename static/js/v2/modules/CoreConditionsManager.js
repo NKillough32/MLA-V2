@@ -6,14 +6,29 @@
 import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
-import { 
-    coreConditions as coreConditionsDatabase, 
-    getCondition, 
-    searchConditions, 
-    getConditionsByDomain,
-    getAllDomains,
-    getStatistics 
-} from '../../data/coreConditions.js';
+
+// Legacy fallback functions (if coreConditions.js exists)
+let coreConditionsDatabase = [];
+let getCondition = (id) => null;
+let searchConditions = (query) => [];
+let getConditionsByDomain = (domain) => [];
+let getAllDomains = () => [];
+let getStatistics = () => ({ total: 0, domains: [] });
+
+// Legacy module loading promise
+const legacyModulePromise = import('../../data/coreConditions.js')
+    .then(legacyModule => {
+        coreConditionsDatabase = legacyModule.coreConditions || [];
+        getCondition = legacyModule.getCondition || getCondition;
+        searchConditions = legacyModule.searchConditions || searchConditions;
+        getConditionsByDomain = legacyModule.getConditionsByDomain || getConditionsByDomain;
+        getAllDomains = legacyModule.getAllDomains || getAllDomains;
+        getStatistics = legacyModule.getStatistics || getStatistics;
+        console.log('Legacy coreConditions.js loaded');
+    })
+    .catch(error => {
+        console.log('Legacy coreConditions.js not found - using enhanced JSON system only');
+    });
 
 export class CoreConditionsManager {
     constructor() {
