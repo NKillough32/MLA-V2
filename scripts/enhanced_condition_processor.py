@@ -201,8 +201,8 @@ class EnhancedConditionProcessor:
             condition = row['Core Conditions']
             domain = row['Domain']
             
-            # Clean condition name - remove leading special characters
-            condition = condition.lstrip('?').strip()
+            # Clean condition name - remove all question marks
+            condition = condition.replace('?', '').strip()
             
             # Skip invalid domains
             if pd.isna(domain) or domain.lower() in ['nan', 'undefined', '']:
@@ -376,25 +376,23 @@ class EnhancedConditionProcessor:
         """Generate comprehensive prompt for OpenAI with structured output instructions"""
         domains_text = ", ".join(domains)
         
-        return f"""Create comprehensive medical education content for Foundation Year doctors about "{condition_name}".
+        return f"""Create an educational clinical reference for medical students and junior doctors about "{condition_name}".
 
-Domains: {domains_text}
+Medical specialty: {domains_text}
 
-Provide detailed, practical information to help Foundation doctors recognize, investigate, diagnose and manage this condition with confidence.
+Provide comprehensive educational content covering:
+- Medical definition and pathophysiology
+- Clinical presentation and examination findings
+- Investigation approaches
+- Diagnosis and differential diagnosis
+- Management principles
+- Pharmacotherapy details
+- Common procedures
+- Clinical outcomes
+- Junior doctor guidance
+- Safety protocols
 
-Include:
-- Clear definitions and essential pathophysiology
-- Key symptoms, signs, atypical presentations, and red flags
-- First-line, second-line, and specialist investigations  
-- Diagnostic criteria and important differential diagnoses
-- Acute and chronic management approaches
-- Detailed drug information (mechanism, dosing, side effects, clinical notes)
-- Detailed procedure information (description, indications, risks)
-- Prognosis and complications
-- Foundation doctor responsibilities and escalation criteria
-- Critical safety considerations
-
-Focus on practical Foundation-level knowledge."""
+This is for medical education purposes only."""
     
     def call_openai_api(self, prompt: str, max_retries: int = 3, is_repair_retry: bool = False) -> Dict:
         """Call OpenAI API with structured outputs"""
@@ -411,7 +409,7 @@ Focus on practical Foundation-level knowledge."""
                         {"role": "system", "content": system_message},
                         {"role": "user", "content": prompt}
                     ],
-                    max_tokens=4000,
+                    max_tokens=8000,  # Increased for comprehensive conditions
                     temperature=0,  # Set to 0 for maximum consistency
                     response_format={
                         "type": "json_schema",

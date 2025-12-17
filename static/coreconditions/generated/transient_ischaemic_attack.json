@@ -1,0 +1,130 @@
+{
+  "id": "transient_ischaemic_attack",
+  "name": "Transient ischaemic attack",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T23:01:41.858396",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Transient ischaemic attack: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA Transient Ischaemic Attack (TIA) is a temporary period of symptoms similar to those of a stroke. A TIA doesn't cause permanent damage and is often referred to as a 'mini-stroke'.\n\n### Epidemiology\nTIAs are common, with an estimated incidence of 200,000 cases per year in the UK. They are more prevalent in older adults, particularly those over 65, and are associated with risk factors such as hypertension, diabetes, and smoking.\n\n### Essential Pathophysiology\nTIAs occur due to a temporary reduction in blood flow to a part of the brain, often caused by a blood clot or embolism. The ischemia leads to neurological deficits that resolve within 24 hours, typically within minutes to hours.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden weakness or numbness in the face, arm, or leg, especially on one side of the body\n- Sudden confusion, trouble speaking, or difficulty understanding speech\n- Sudden trouble seeing in one or both eyes\n- Sudden trouble walking, dizziness, loss of balance, or coordination\n\n### Key Signs\n- Neurological deficits on examination (e.g., hemiparesis, aphasia)\n- Normal neurological examination may occur if the TIA has resolved by the time of assessment\n\n### Atypical Presentations\n- Transient visual disturbances without other neurological signs\n- Dizziness or vertigo without focal neurological signs\n\n### Red Flags Requiring Immediate Action\n- Symptoms lasting longer than 24 hours\n- Severe headache with no known cause\n- Altered level of consciousness\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head to rule out hemorrhagic stroke\n- MRI of the brain if available, to assess for ischemic changes\n\n### Second-line Investigations\n- Carotid Doppler ultrasound to assess for stenosis or occlusion\n- Echocardiogram to evaluate cardiac sources of emboli\n\n### Specialist Tests\n- CT angiography or MR angiography to visualize cerebral vasculature\n- Holter monitor for arrhythmias\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of TIA is based on clinical presentation and the exclusion of other causes of symptoms. The symptoms must resolve within 24 hours, and imaging studies should show no acute ischemic changes.\n\n### Key Differential Diagnoses to Exclude\n- Stroke (ischemic or hemorrhagic)\n- Seizure\n- Migraine with aura\n- Hypoglycemia\n- Multiple sclerosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate assessment and stabilization of the patient\n- Initiate antiplatelet therapy (e.g., aspirin 300 mg orally)\n\n#### Second-line Treatments\n- Consider admission for further monitoring and evaluation\n- Start secondary prevention measures\n\n#### Emergency Procedures\n- Carotid endarterectomy if significant stenosis is found and the patient is symptomatic\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, smoking cessation)\n- Antiplatelet therapy (e.g., aspirin, clopidogrel)\n\n#### Second-line Treatments\n- Anticoagulation if cardioembolic source is identified (e.g., atrial fibrillation)\n- Statin therapy for cholesterol management\n\n#### Monitoring Requirements\n- Regular follow-up to assess risk factors and medication adherence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation\n- **Typical Dosing Range**: 300 mg loading dose, then 75 mg daily\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions\n- **When to Use vs. Alternatives**: First-line treatment for TIA and stroke prevention.\n\n#### Clopidogrel\n- **Mechanism of Action**: Inhibits platelet aggregation via ADP receptor blockade\n- **Typical Dosing Range**: Loading dose of 300 mg, then 75 mg daily\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, bleeding\n- **When to Use vs. Alternatives**: Used in patients who cannot tolerate aspirin.\n\n#### Statins (e.g., Atorvastatin)\n- **Mechanism of Action**: Reduces cholesterol synthesis and stabilizes atherosclerotic plaques\n- **Typical Dosing Range**: 10-80 mg daily depending on the target LDL\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation\n- **When to Use vs. Alternatives**: Recommended for secondary prevention.\n\n### Procedures\n\n#### Carotid Endarterectomy\n- **What it Involves**: Surgical procedure to remove plaque from the carotid artery\n- **Indications**: Significant carotid artery stenosis (≥70%) in symptomatic patients\n- **Key Risks/Complications**: Stroke, myocardial infarction, cranial nerve injury\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe risk of stroke after a TIA is significant, with approximately 10-15% of patients experiencing a stroke within 90 days. Early intervention and management can significantly reduce this risk.\n\n### Important Complications to Watch For\n- Increased risk of subsequent stroke\n- Cognitive impairment\n- Increased risk of cardiovascular events\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize TIA symptoms, initiate appropriate investigations, and manage acute care while ensuring timely referral to neurology for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with TIA symptoms, escalate care to a senior doctor for further assessment and management, especially if symptoms are persistent or if there are concerning features.\n\n### Key Safety Considerations\nEnsure rapid assessment and management to minimize the risk of subsequent stroke. Educate patients on recognizing symptoms and the importance of seeking immediate medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "A Transient Ischaemic Attack (TIA) is a temporary period of symptoms similar to those of a stroke. A TIA doesn't cause permanent damage and is often referred to as a 'mini-stroke'.",
+      "epidemiology": "TIAs are common, with an estimated incidence of 200,000 cases per year in the UK. They are more prevalent in older adults, particularly those over 65, and are associated with risk factors such as hypertension, diabetes, and smoking.",
+      "pathophysiology": "TIAs occur due to a temporary reduction in blood flow to a part of the brain, often caused by a blood clot or embolism. The ischemia leads to neurological deficits that resolve within 24 hours, typically within minutes to hours."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden weakness or numbness in the face, arm, or leg, especially on one side of the body",
+        "Sudden confusion, trouble speaking, or difficulty understanding speech",
+        "Sudden trouble seeing in one or both eyes",
+        "Sudden trouble walking, dizziness, loss of balance, or coordination"
+      ],
+      "signs": [
+        "Neurological deficits on examination (e.g., hemiparesis, aphasia)",
+        "Normal neurological examination may occur if the TIA has resolved by the time of assessment"
+      ],
+      "atypicalPresentations": [
+        "Transient visual disturbances without other neurological signs",
+        "Dizziness or vertigo without focal neurological signs"
+      ],
+      "redFlags": [
+        "Symptoms lasting longer than 24 hours",
+        "Severe headache with no known cause",
+        "Altered level of consciousness"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head to rule out hemorrhagic stroke",
+        "MRI of the brain if available, to assess for ischemic changes"
+      ],
+      "secondLine": [
+        "Carotid Doppler ultrasound to assess for stenosis or occlusion",
+        "Echocardiogram to evaluate cardiac sources of emboli"
+      ],
+      "specialistTests": [
+        "CT angiography or MR angiography to visualize cerebral vasculature",
+        "Holter monitor for arrhythmias"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of TIA is based on clinical presentation and the exclusion of other causes of symptoms. The symptoms must resolve within 24 hours, and imaging studies should show no acute ischemic changes.",
+      "differentials": [
+        "Stroke (ischemic or hemorrhagic)",
+        "Seizure",
+        "Migraine with aura",
+        "Hypoglycemia",
+        "Multiple sclerosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate assessment and stabilization of the patient",
+          "Initiate antiplatelet therapy (e.g., aspirin 300 mg orally)"
+        ],
+        "secondLine": [
+          "Consider admission for further monitoring and evaluation",
+          "Start secondary prevention measures"
+        ],
+        "procedures": [
+          "Carotid endarterectomy if significant stenosis is found and the patient is symptomatic"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, smoking cessation)",
+          "Antiplatelet therapy (e.g., aspirin, clopidogrel)"
+        ],
+        "secondLine": [
+          "Anticoagulation if cardioembolic source is identified (e.g., atrial fibrillation)",
+          "Statin therapy for cholesterol management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess risk factors and medication adherence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation",
+          "dosing": "300 mg loading dose, then 75 mg daily",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions",
+          "notes": "First-line treatment for TIA and stroke prevention."
+        },
+        {
+          "name": "Clopidogrel",
+          "mechanism": "Inhibits platelet aggregation via ADP receptor blockade",
+          "dosing": "Loading dose of 300 mg, then 75 mg daily",
+          "sideEffects": "Gastrointestinal upset, bleeding",
+          "notes": "Used in patients who cannot tolerate aspirin."
+        },
+        {
+          "name": "Statins (e.g., Atorvastatin)",
+          "mechanism": "Reduces cholesterol synthesis and stabilizes atherosclerotic plaques",
+          "dosing": "10-80 mg daily depending on the target LDL",
+          "sideEffects": "Myopathy, liver enzyme elevation",
+          "notes": "Recommended for secondary prevention."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Carotid Endarterectomy",
+          "description": "Surgical procedure to remove plaque from the carotid artery",
+          "indications": "Significant carotid artery stenosis (≥70%) in symptomatic patients",
+          "risks": "Stroke, myocardial infarction, cranial nerve injury"
+        }
+      ]
+    },
+    "prognosis": "The risk of stroke after a TIA is significant, with approximately 10-15% of patients experiencing a stroke within 90 days. Early intervention and management can significantly reduce this risk.",
+    "complications": [
+      "Increased risk of subsequent stroke",
+      "Cognitive impairment",
+      "Increased risk of cardiovascular events"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize TIA symptoms, initiate appropriate investigations, and manage acute care while ensuring timely referral to neurology for further evaluation and management.",
+    "escalation": "If a patient presents with TIA symptoms, escalate care to a senior doctor for further assessment and management, especially if symptoms are persistent or if there are concerning features.",
+    "keySafetyConsiderations": "Ensure rapid assessment and management to minimize the risk of subsequent stroke. Educate patients on recognizing symptoms and the importance of seeking immediate medical attention."
+  }
+}

@@ -1,45 +1,9 @@
 {
-  "generatedAt": "2025-12-17T22:11:18.978125",
-  "totalConditions": 581,
-  "processedCount": 579,
+  "generatedAt": "2025-12-17T23:02:39.679696",
+  "totalConditions": 538,
+  "processedCount": 538,
   "model": "gpt-4o-mini",
   "conditions": [
-    {
-      "id": "febrile_convulsions",
-      "name": "?Febrile convulsions",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "febrile_convulsions.json",
-      "processed": true
-    },
-    {
-      "id": "myasthenia_gravis",
-      "name": "?Myasthenia gravis?",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "myasthenia_gravis.json",
-      "processed": true
-    },
-    {
-      "id": "neuromuscular_respiratory_failure",
-      "name": "?Neuromuscular respiratory failure?",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "neuromuscular_respiratory_failure.json",
-      "processed": true
-    },
-    {
-      "id": "trigeminal_neuralgia",
-      "name": "?Trigeminal neuralgia",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "trigeminal_neuralgia.json",
-      "processed": true
-    },
     {
       "id": "achilles_tendon_rupture",
       "name": "Achilles tendon rupture",
@@ -61,15 +25,6 @@
     {
       "id": "acoustic_neuroma",
       "name": "Acoustic neuroma",
-      "domains": [
-        "ENT"
-      ],
-      "filename": "acoustic_neuroma.json",
-      "processed": true
-    },
-    {
-      "id": "acoustic_neuroma",
-      "name": "Acoustic neuroma?",
       "domains": [
         "Neurology"
       ],
@@ -189,7 +144,7 @@
     },
     {
       "id": "acute_pericarditis",
-      "name": "Acute pericarditis?",
+      "name": "Acute pericarditis",
       "domains": [
         "Cardiology"
       ],
@@ -217,7 +172,7 @@
     },
     {
       "id": "addisons_disease",
-      "name": "Addison?s disease",
+      "name": "Addisons disease",
       "domains": [
         "Endocrine"
       ],
@@ -387,7 +342,7 @@
     },
     {
       "id": "ankylosing_spondylitis",
-      "name": "Ankylosing spondylitis?",
+      "name": "Ankylosing spondylitis",
       "domains": [
         "Rheumatology"
       ],
@@ -676,7 +631,7 @@
     },
     {
       "id": "blackouts_and_faints",
-      "name": "Blackouts and faints?",
+      "name": "Blackouts and faints",
       "domains": [
         "Care of the Elderly"
       ],
@@ -686,15 +641,6 @@
     {
       "id": "bladder_cancer",
       "name": "Bladder cancer",
-      "domains": [
-        "Urology"
-      ],
-      "filename": "bladder_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "bladder_cancer",
-      "name": "Bladder cancer?",
       "domains": [
         "Oncology"
       ],
@@ -730,7 +676,7 @@
     },
     {
       "id": "brain_abscess",
-      "name": "Brain abscess?",
+      "name": "Brain abscess",
       "domains": [
         "Neurology"
       ],
@@ -741,15 +687,6 @@
       "id": "brain_metastases",
       "name": "Brain metastases",
       "domains": [
-        "Neurology"
-      ],
-      "filename": "brain_metastases.json",
-      "processed": true
-    },
-    {
-      "id": "brain_metastases",
-      "name": "Brain metastases?",
-      "domains": [
         "Oncology"
       ],
       "filename": "brain_metastases.json",
@@ -757,7 +694,7 @@
     },
     {
       "id": "breakdown_in_social_circumstances",
-      "name": "Breakdown in social circumstances?",
+      "name": "Breakdown in social circumstances",
       "domains": [
         "Care of the Elderly"
       ],
@@ -803,15 +740,6 @@
     {
       "id": "bronchiectasis",
       "name": "Bronchiectasis",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "bronchiectasis.json",
-      "processed": true
-    },
-    {
-      "id": "bronchiectasis",
-      "name": "Bronchiectasis?",
       "domains": [
         "Respiratory"
       ],
@@ -913,7 +841,7 @@
     },
     {
       "id": "cardiomyopathy",
-      "name": "Cardiomyopathy?",
+      "name": "Cardiomyopathy",
       "domains": [
         "Cardiology"
       ],
@@ -951,15 +879,6 @@
       "id": "cellulitis",
       "name": "Cellulitis",
       "domains": [
-        "Paediatrics"
-      ],
-      "filename": "cellulitis.json",
-      "processed": true
-    },
-    {
-      "id": "cellulitis",
-      "name": "Cellulitis?",
-      "domains": [
         "Dermatology"
       ],
       "filename": "cellulitis.json",
@@ -994,7 +913,7 @@
     },
     {
       "id": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy",
-      "name": "Cerebral palsy and hypoxic ischaemic encephalopathy?",
+      "name": "Cerebral palsy and hypoxic ischaemic encephalopathy",
       "domains": [
         "Neurology"
       ],
@@ -1002,26 +921,8 @@
       "processed": true
     },
     {
-      "id": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy",
-      "name": "Cerebral palsy and hypoxic-ischaemic encephalopathy",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy.json",
-      "processed": true
-    },
-    {
       "id": "cervical_cancer",
       "name": "Cervical cancer",
-      "domains": [
-        "Gynaecology"
-      ],
-      "filename": "cervical_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "cervical_cancer",
-      "name": "Cervical cancer?",
       "domains": [
         "Oncology"
       ],
@@ -1063,15 +964,6 @@
         "Cardiology"
       ],
       "filename": "chronic_heart_failure.json",
-      "processed": true
-    },
-    {
-      "id": "chronic_pain",
-      "name": "Chronic Pain",
-      "domains": [
-        "Psychiatry"
-      ],
-      "filename": "chronic_pain.json",
       "processed": true
     },
     {
@@ -1144,15 +1036,6 @@
       "processed": true
     },
     {
-      "id": "chronic_pain",
-      "name": "Chronic pain?",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "chronic_pain.json",
-      "processed": true
-    },
-    {
       "id": "chronic_pancreatitis",
       "name": "Chronic pancreatitis",
       "domains": [
@@ -1194,15 +1077,6 @@
       "domains": [
         "Gastrointestinal",
         "Gastrointestinal Surgery"
-      ],
-      "filename": "colorectal_tumours.json",
-      "processed": true
-    },
-    {
-      "id": "colorectal_tumours",
-      "name": "Colorectal tumours?",
-      "domains": [
-        "Oncology"
       ],
       "filename": "colorectal_tumours.json",
       "processed": true
@@ -1264,21 +1138,21 @@
       "processed": true
     },
     {
-      "id": "conns_syndrome",
-      "name": "Conn?s syndrome",
-      "domains": [
-        "Endocrine"
-      ],
-      "filename": "conns_syndrome.json",
-      "processed": true
-    },
-    {
       "id": "connective_tissue_and_autoimmune_diseases",
       "name": "Connective tissue and autoimmune diseases",
       "domains": [
         "Respiratory"
       ],
       "filename": "connective_tissue_and_autoimmune_diseases.json",
+      "processed": true
+    },
+    {
+      "id": "conns_syndrome",
+      "name": "Conns syndrome",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "conns_syndrome.json",
       "processed": true
     },
     {
@@ -1336,17 +1210,8 @@
       "processed": true
     },
     {
-      "id": "cushings_syndrome",
-      "name": "Cushing's syndrome",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "cushings_syndrome.json",
-      "processed": true
-    },
-    {
       "id": "cushings_disease",
-      "name": "Cushing?s disease",
+      "name": "Cushings disease",
       "domains": [
         "Endocrine"
       ],
@@ -1355,7 +1220,7 @@
     },
     {
       "id": "cushings_syndrome",
-      "name": "Cushing?s syndrome",
+      "name": "Cushings syndrome",
       "domains": [
         "Endocrine"
       ],
@@ -1382,7 +1247,7 @@
     },
     {
       "id": "dequervains_tenosynovitis",
-      "name": "DeQuervain?s tenosynovitis?",
+      "name": "DeQuervains tenosynovitis",
       "domains": [
         "Rheumatology"
       ],
@@ -1400,7 +1265,7 @@
     },
     {
       "id": "delirium_acute_confusional_state",
-      "name": "Delirium (Acute Confusional State)?",
+      "name": "Delirium (Acute Confusional State)",
       "domains": [
         "Care of the Elderly"
       ],
@@ -1408,27 +1273,8 @@
       "processed": true
     },
     {
-      "id": "delirium_acute_confusional_state",
-      "name": "Delirium (acute confusional state)",
-      "domains": [
-        "Psychiatry"
-      ],
-      "filename": "delirium_acute_confusional_state.json",
-      "processed": true
-    },
-    {
       "id": "dementia",
       "name": "Dementia",
-      "domains": [
-        "Neurology",
-        "Psychiatry"
-      ],
-      "filename": "dementia.json",
-      "processed": true
-    },
-    {
-      "id": "dementia",
-      "name": "Dementia?",
       "domains": [
         "Care of the Elderly"
       ],
@@ -1579,7 +1425,7 @@
     },
     {
       "id": "dizziness",
-      "name": "Dizziness?",
+      "name": "Dizziness",
       "domains": [
         "Care of the Elderly"
       ],
@@ -1597,7 +1443,7 @@
     },
     {
       "id": "drug_eruptions",
-      "name": "Drug eruptions?",
+      "name": "Drug eruptions",
       "domains": [
         "Dermatology"
       ],
@@ -1634,15 +1480,6 @@
     {
       "id": "eating_disorders",
       "name": "Eating disorders",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "eating_disorders.json",
-      "processed": true
-    },
-    {
-      "id": "eating_disorders",
-      "name": "Eating disorders?",
       "domains": [
         "Gastrointestinal"
       ],
@@ -1716,15 +1553,6 @@
       "id": "endometrial_cancer",
       "name": "Endometrial cancer",
       "domains": [
-        "Gynaecology"
-      ],
-      "filename": "endometrial_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "endometrial_cancer",
-      "name": "Endometrial cancer?",
-      "domains": [
         "Oncology"
       ],
       "filename": "endometrial_cancer.json",
@@ -1758,21 +1586,21 @@
       "processed": true
     },
     {
-      "id": "epilepsy_status_epilepticus",
-      "name": "Epilepsy -?Status epilepticus?",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "epilepsy_status_epilepticus.json",
-      "processed": true
-    },
-    {
       "id": "epilepsy",
-      "name": "Epilepsy?",
+      "name": "Epilepsy",
       "domains": [
         "Neurology"
       ],
       "filename": "epilepsy.json",
+      "processed": true
+    },
+    {
+      "id": "epilepsy_status_epilepticus",
+      "name": "Epilepsy -Status epilepticus",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "epilepsy_status_epilepticus.json",
       "processed": true
     },
     {
@@ -1795,7 +1623,7 @@
     },
     {
       "id": "erysipelas",
-      "name": "Erysipelas?",
+      "name": "Erysipelas",
       "domains": [
         "Dermatology"
       ],
@@ -1840,15 +1668,6 @@
       "processed": true
     },
     {
-      "id": "essential_and_secondary_hypertension",
-      "name": "Essential and secondary hypertension",
-      "domains": [
-        "Obstetrics"
-      ],
-      "filename": "essential_and_secondary_hypertension.json",
-      "processed": true
-    },
-    {
       "id": "essential_or_secondary_hypertension",
       "name": "Essential or secondary hypertension",
       "domains": [
@@ -1868,7 +1687,7 @@
     },
     {
       "id": "essential_tremor",
-      "name": "Essential tremor?",
+      "name": "Essential tremor",
       "domains": [
         "Neurology"
       ],
@@ -1886,7 +1705,7 @@
     },
     {
       "id": "extradural_haemorrhage",
-      "name": "Extradural haemorrhage?",
+      "name": "Extradural haemorrhage",
       "domains": [
         "Neurology"
       ],
@@ -1904,7 +1723,7 @@
     },
     {
       "id": "falls",
-      "name": "Falls?",
+      "name": "Falls",
       "domains": [
         "Care of the Elderly"
       ],
@@ -1918,6 +1737,15 @@
         "Paediatrics"
       ],
       "filename": "febrile_convulsion.json",
+      "processed": true
+    },
+    {
+      "id": "febrile_convulsions",
+      "name": "Febrile convulsions",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "febrile_convulsions.json",
       "processed": true
     },
     {
@@ -1968,7 +1796,7 @@
     },
     {
       "id": "fluid_and_electrolyte_imbalance",
-      "name": "Fluid and electrolyte imbalance?",
+      "name": "Fluid and electrolyte imbalance",
       "domains": [
         "Care of the Elderly"
       ],
@@ -1986,7 +1814,7 @@
     },
     {
       "id": "foot_and_ankle_achilles_tendinitis",
-      "name": "Foot and ankle - Achilles? tendinitis",
+      "name": "Foot and ankle - Achilles tendinitis",
       "domains": [
         "Trauma and Orthopaedics"
       ],
@@ -2004,7 +1832,7 @@
     },
     {
       "id": "frailty_and_comprehensive_geriatric_assessment",
-      "name": "Frailty and Comprehensive Geriatric Assessment?",
+      "name": "Frailty and Comprehensive Geriatric Assessment",
       "domains": [
         "Care of the Elderly"
       ],
@@ -2060,15 +1888,6 @@
     {
       "id": "gastric_cancer",
       "name": "Gastric cancer",
-      "domains": [
-        "Gastrointestinal Surgery"
-      ],
-      "filename": "gastric_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "gastric_cancer",
-      "name": "Gastric cancer?",
       "domains": [
         "Gastrointestinal",
         "Oncology"
@@ -2132,17 +1951,18 @@
       "processed": true
     },
     {
-      "id": "giant_cell_arteritis_gca_",
-      "name": "Giant cell arteritis (GCA) ",
+      "id": "giant_cell_arteritis_gca",
+      "name": "Giant cell arteritis (GCA)",
       "domains": [
-        "Rheumatology"
+        "Rheumatology",
+        "Opthalmolgy"
       ],
-      "filename": "giant_cell_arteritis_gca_.json",
+      "filename": "giant_cell_arteritis_gca.json",
       "processed": true
     },
     {
       "id": "glomerulonephritis",
-      "name": "Glomerulonephritis?",
+      "name": "Glomerulonephritis",
       "domains": [
         "Renal"
       ],
@@ -2161,7 +1981,7 @@
     },
     {
       "id": "greater_trochanter_bursitis",
-      "name": "Greater trochanter bursitis?",
+      "name": "Greater trochanter bursitis",
       "domains": [
         "Rheumatology"
       ],
@@ -2260,7 +2080,7 @@
     },
     {
       "id": "head_injury_and_coma",
-      "name": "Head injury and coma?",
+      "name": "Head injury and coma",
       "domains": [
         "Neurology"
       ],
@@ -2351,7 +2171,7 @@
     },
     {
       "id": "herpes_simplexvirus",
-      "name": "Herpes simplex?virus",
+      "name": "Herpes simplexvirus",
       "domains": [
         "Dermatology"
       ],
@@ -2405,15 +2225,6 @@
     },
     {
       "id": "human_papilloma_virus",
-      "name": "Human papilloma virus",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "human_papilloma_virus.json",
-      "processed": true
-    },
-    {
-      "id": "human_papilloma_virus",
       "name": "Human papilloma virus,",
       "domains": [
         "Infection"
@@ -2433,15 +2244,6 @@
     {
       "id": "hypercalcaemia",
       "name": "Hypercalcaemia",
-      "domains": [
-        "Oncology"
-      ],
-      "filename": "hypercalcaemia.json",
-      "processed": true
-    },
-    {
-      "id": "hypercalcaemia",
-      "name": "Hypercalcaemia?",
       "domains": [
         "Endocrine"
       ],
@@ -2486,7 +2288,7 @@
     },
     {
       "id": "hyperosmolar_hyperglycaemic_state",
-      "name": "Hyperosmolar hyperglycaemic state?",
+      "name": "Hyperosmolar hyperglycaemic state",
       "domains": [
         "Endocrine"
       ],
@@ -2670,7 +2472,7 @@
     },
     {
       "id": "impingement_syndromesubacromial_bursitis",
-      "name": "Impingement syndrome/subacromial bursitis?",
+      "name": "Impingement syndrome/subacromial bursitis",
       "domains": [
         "Rheumatology"
       ],
@@ -2706,7 +2508,7 @@
     },
     {
       "id": "infectiveendocarditis",
-      "name": "Infective?Endocarditis",
+      "name": "InfectiveEndocarditis",
       "domains": [
         "Cardiology"
       ],
@@ -2744,7 +2546,7 @@
     },
     {
       "id": "inherited_connective_tissue_diseases",
-      "name": "Inherited connective tissue diseases?",
+      "name": "Inherited connective tissue diseases",
       "domains": [
         "Rheumatology"
       ],
@@ -2770,15 +2572,6 @@
       "processed": true
     },
     {
-      "id": "intestinal_obstruction_and_ileus",
-      "name": "Intestinal Obstruction and ileus",
-      "domains": [
-        "Gastrointestinal Surgery"
-      ],
-      "filename": "intestinal_obstruction_and_ileus.json",
-      "processed": true
-    },
-    {
       "id": "intestinal_ischaemia",
       "name": "Intestinal ischaemia",
       "domains": [
@@ -2800,7 +2593,7 @@
     },
     {
       "id": "intraparenchymal_haemorrhage",
-      "name": "Intraparenchymal haemorrhage?",
+      "name": "Intraparenchymal haemorrhage",
       "domains": [
         "Neurology"
       ],
@@ -2908,15 +2701,6 @@
       "processed": true
     },
     {
-      "id": "leukaemia",
-      "name": "Leukaemia?",
-      "domains": [
-        "Oncology"
-      ],
-      "filename": "leukaemia.json",
-      "processed": true
-    },
-    {
       "id": "lower_respiratory_tract_infection",
       "name": "Lower respiratory tract infection",
       "domains": [
@@ -2976,15 +2760,6 @@
       "domains": [
         "Haematology",
         "Paediatrics"
-      ],
-      "filename": "lymphoma.json",
-      "processed": true
-    },
-    {
-      "id": "lymphoma",
-      "name": "Lymphoma?",
-      "domains": [
-        "Oncology"
       ],
       "filename": "lymphoma.json",
       "processed": true
@@ -3120,7 +2895,7 @@
     },
     {
       "id": "melanocytic_naevi",
-      "name": "Melanocytic naevi?",
+      "name": "Melanocytic naevi",
       "domains": [
         "Dermatology"
       ],
@@ -3129,7 +2904,7 @@
     },
     {
       "id": "melanoma",
-      "name": "Melanoma?",
+      "name": "Melanoma",
       "domains": [
         "Dermatology"
       ],
@@ -3139,15 +2914,6 @@
     {
       "id": "meningitis",
       "name": "Meningitis",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "meningitis.json",
-      "processed": true
-    },
-    {
-      "id": "meningitis",
-      "name": "Meningitis?",
       "domains": [
         "Neurology"
       ],
@@ -3174,7 +2940,7 @@
     },
     {
       "id": "mental_capacity_concerns",
-      "name": "Mental capacity concerns?",
+      "name": "Mental capacity concerns",
       "domains": [
         "Care of the Elderly"
       ],
@@ -3197,15 +2963,6 @@
         "Trauma and Orthopaedics"
       ],
       "filename": "metacarpalphalangeal_fractures.json",
-      "processed": true
-    },
-    {
-      "id": "metastatic_disease",
-      "name": "Metastatic Disease",
-      "domains": [
-        "Oncology"
-      ],
-      "filename": "metastatic_disease.json",
       "processed": true
     },
     {
@@ -3248,7 +3005,7 @@
     },
     {
       "id": "mitral_valve_disease",
-      "name": "Mitral valve disease?",
+      "name": "Mitral valve disease",
       "domains": [
         "Cardiology"
       ],
@@ -3258,15 +3015,6 @@
     {
       "id": "motor_neurone_disease",
       "name": "Motor neurone disease",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "motor_neurone_disease.json",
-      "processed": true
-    },
-    {
-      "id": "motor_neurone_disease",
-      "name": "Motor neurone disease?",
       "domains": [
         "Neurology"
       ],
@@ -3284,7 +3032,7 @@
     },
     {
       "id": "multifactorial_falls_management",
-      "name": "Multifactorial falls management?",
+      "name": "Multifactorial falls management",
       "domains": [
         "Care of the Elderly"
       ],
@@ -3303,7 +3051,7 @@
     },
     {
       "id": "multiple_sclerosis",
-      "name": "Multiple sclerosis?",
+      "name": "Multiple sclerosis",
       "domains": [
         "Neurology"
       ],
@@ -3365,12 +3113,12 @@
       "processed": true
     },
     {
-      "id": "mnires_disease",
-      "name": "Mnire's disease",
+      "id": "menieres_disease",
+      "name": "Ménière's disease",
       "domains": [
         "ENT"
       ],
-      "filename": "mnires_disease.json",
+      "filename": "menieres_disease.json",
       "processed": true
     },
     {
@@ -3393,7 +3141,7 @@
     },
     {
       "id": "necrotising_fasciitis",
-      "name": "Necrotising fasciitis?",
+      "name": "Necrotising fasciitis",
       "domains": [
         "Dermatology"
       ],
@@ -3403,15 +3151,6 @@
     {
       "id": "nephrotic_syndrome",
       "name": "Nephrotic syndrome",
-      "domains": [
-        "Paediatrics"
-      ],
-      "filename": "nephrotic_syndrome.json",
-      "processed": true
-    },
-    {
-      "id": "nephrotic_syndrome",
-      "name": "Nephrotic syndrome?",
       "domains": [
         "Renal"
       ],
@@ -3438,7 +3177,7 @@
     },
     {
       "id": "neutropaenic_sepsis",
-      "name": "Neutropaenic sepsis?",
+      "name": "Neutropaenic sepsis",
       "domains": [
         "Oncology"
       ],
@@ -3557,16 +3296,6 @@
       "processed": true
     },
     {
-      "id": "obstructive_sleep_apnoea",
-      "name": "Obstructive sleep apnoea",
-      "domains": [
-        "Pre-operative Care",
-        "Paediatrics"
-      ],
-      "filename": "obstructive_sleep_apnoea.json",
-      "processed": true
-    },
-    {
       "id": "ocular_motor_nerve_palsies_346",
       "name": "Ocular motor nerve palsies (3,4,6)",
       "domains": [
@@ -3627,15 +3356,6 @@
       "id": "osteomyelitis",
       "name": "Osteomyelitis",
       "domains": [
-        "Trauma and Orthopaedics"
-      ],
-      "filename": "osteomyelitis.json",
-      "processed": true
-    },
-    {
-      "id": "osteomyelitis",
-      "name": "Osteomyelitis?",
-      "domains": [
         "Rheumatology"
       ],
       "filename": "osteomyelitis.json",
@@ -3643,7 +3363,7 @@
     },
     {
       "id": "osteoporosis",
-      "name": "Osteoporosis?",
+      "name": "Osteoporosis",
       "domains": [
         "Rheumatology",
         "Care of the Elderly"
@@ -3692,27 +3412,9 @@
       "id": "ovarian_cancer",
       "name": "Ovarian cancer",
       "domains": [
-        "Gynaecology"
-      ],
-      "filename": "ovarian_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "ovarian_cancer",
-      "name": "Ovarian cancer?",
-      "domains": [
         "Oncology"
       ],
       "filename": "ovarian_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "pancreatic_cancer",
-      "name": "Pancreatic Cancer",
-      "domains": [
-        "Gastrointestinal Surgery"
-      ],
-      "filename": "pancreatic_cancer.json",
       "processed": true
     },
     {
@@ -3720,15 +3422,6 @@
       "name": "Pancreatic cancer",
       "domains": [
         "Gastrointestinal"
-      ],
-      "filename": "pancreatic_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "pancreatic_cancer",
-      "name": "Pancreatic cancer?",
-      "domains": [
-        "Oncology"
       ],
       "filename": "pancreatic_cancer.json",
       "processed": true
@@ -3770,15 +3463,6 @@
       "processed": true
     },
     {
-      "id": "parkinsons_disease",
-      "name": "Parkinson's disease?",
-      "domains": [
-        "Neurology"
-      ],
-      "filename": "parkinsons_disease.json",
-      "processed": true
-    },
-    {
       "id": "pathological_fracture",
       "name": "Pathological fracture",
       "domains": [
@@ -3798,7 +3482,7 @@
     },
     {
       "id": "pemphigus_vulgaris",
-      "name": "Pemphigus vulgaris?",
+      "name": "Pemphigus vulgaris",
       "domains": [
         "Dermatology"
       ],
@@ -3863,7 +3547,7 @@
     },
     {
       "id": "peripheral_nerve_injuriespalsies_other_mononeuropathiescranial_neuropathies",
-      "name": "Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies?",
+      "name": "Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies",
       "domains": [
         "Neurology"
       ],
@@ -4009,7 +3693,7 @@
     },
     {
       "id": "polyneuropathies_diabetic_neuropathy",
-      "name": "Polyneuropathies - Diabetic neuropathy?",
+      "name": "Polyneuropathies - Diabetic neuropathy",
       "domains": [
         "Neurology"
       ],
@@ -4117,7 +3801,7 @@
     },
     {
       "id": "pressure_sores_and_skin_ulcers",
-      "name": "Pressure sores and skin ulcers?",
+      "name": "Pressure sores and skin ulcers",
       "domains": [
         "Care of the Elderly"
       ],
@@ -4186,15 +3870,6 @@
         "Obstetrics"
       ],
       "filename": "puerperal_infection_and_sepsis.json",
-      "processed": true
-    },
-    {
-      "id": "pulmonary_embolism_and_deep_vein_thrombosis",
-      "name": "Pulmonary Embolism and Deep Vein Thrombosis",
-      "domains": [
-        "Obstetrics"
-      ],
-      "filename": "pulmonary_embolism_and_deep_vein_thrombosis.json",
       "processed": true
     },
     {
@@ -4274,15 +3949,6 @@
       "processed": true
     },
     {
-      "id": "respiratory_failure",
-      "name": "Respiratory Failure",
-      "domains": [
-        "Anaesthesia and Critical Care"
-      ],
-      "filename": "respiratory_failure.json",
-      "processed": true
-    },
-    {
       "id": "respiratory_arrest",
       "name": "Respiratory arrest",
       "domains": [
@@ -4341,15 +4007,6 @@
       "id": "ricketsosteomalacia",
       "name": "Rickets/Osteomalacia",
       "domains": [
-        "Paediatrics"
-      ],
-      "filename": "ricketsosteomalacia.json",
-      "processed": true
-    },
-    {
-      "id": "ricketsosteomalacia",
-      "name": "Rickets/Osteomalacia?",
-      "domains": [
         "Rheumatology"
       ],
       "filename": "ricketsosteomalacia.json",
@@ -4402,7 +4059,7 @@
     },
     {
       "id": "sarcoidosis",
-      "name": "Sarcoidosis?",
+      "name": "Sarcoidosis",
       "domains": [
         "Respiratory"
       ],
@@ -4411,7 +4068,7 @@
     },
     {
       "id": "scabies",
-      "name": "Scabies?",
+      "name": "Scabies",
       "domains": [
         "Dermatology"
       ],
@@ -4475,7 +4132,7 @@
     },
     {
       "id": "sensory_impairment_hearing_loss_visual_loss",
-      "name": "Sensory Impairment ? hearing loss, visual loss?",
+      "name": "Sensory Impairment  hearing loss, visual loss",
       "domains": [
         "Care of the Elderly"
       ],
@@ -4561,7 +4218,7 @@
     },
     {
       "id": "sjogrens_syndrome",
-      "name": "Sjogren's syndrome?",
+      "name": "Sjogren's syndrome",
       "domains": [
         "Rheumatology"
       ],
@@ -4600,15 +4257,6 @@
       "name": "Spinal cord compression",
       "domains": [
         "Oncology"
-      ],
-      "filename": "spinal_cord_compression.json",
-      "processed": true
-    },
-    {
-      "id": "spinal_cord_compression",
-      "name": "Spinal cord compression?",
-      "domains": [
-        "Neurology"
       ],
       "filename": "spinal_cord_compression.json",
       "processed": true
@@ -4664,10 +4312,11 @@
       "id": "stroke",
       "name": "Stroke",
       "domains": [
+        "Neurology",
         "Care of the Elderly"
       ],
       "filename": "stroke.json",
-      "processed": false
+      "processed": true
     },
     {
       "id": "subarachnoid_haemorrhage",
@@ -4712,15 +4361,6 @@
       "name": "Suicidal ideation and Suicide",
       "domains": [
         "Palliative Care"
-      ],
-      "filename": "suicidal_ideation_and_suicide.json",
-      "processed": true
-    },
-    {
-      "id": "suicidal_ideation_and_suicide",
-      "name": "Suicidal ideation and suicide",
-      "domains": [
-        "Psychiatry"
       ],
       "filename": "suicidal_ideation_and_suicide.json",
       "processed": true
@@ -4792,7 +4432,7 @@
     },
     {
       "id": "tension_headache",
-      "name": "Tension headache?",
+      "name": "Tension headache",
       "domains": [
         "Neurology"
       ],
@@ -4820,15 +4460,6 @@
     {
       "id": "testicular_cancer",
       "name": "Testicular cancer",
-      "domains": [
-        "Urology"
-      ],
-      "filename": "testicular_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "testicular_cancer",
-      "name": "Testicular cancer?",
       "domains": [
         "Oncology"
       ],
@@ -4859,15 +4490,6 @@
       "name": "Thyroid cancer",
       "domains": [
         "Endocrine"
-      ],
-      "filename": "thyroid_cancer.json",
-      "processed": true
-    },
-    {
-      "id": "thyroid_cancer",
-      "name": "Thyroid cancer?",
-      "domains": [
-        "Oncology"
       ],
       "filename": "thyroid_cancer.json",
       "processed": true
@@ -4913,7 +4535,7 @@
     },
     {
       "id": "toxic_epidermal_necrolysis",
-      "name": "Toxic epidermal necrolysis?",
+      "name": "Toxic epidermal necrolysis",
       "domains": [
         "Dermatology"
       ],
@@ -4941,16 +4563,16 @@
     },
     {
       "id": "transient_ischaemic_attack",
-      "name": "Transient ischaemic attack?",
+      "name": "Transient ischaemic attack",
       "domains": [
         "Neurology"
       ],
       "filename": "transient_ischaemic_attack.json",
-      "processed": false
+      "processed": true
     },
     {
       "id": "travellers_diarrhoea",
-      "name": "Traveller?s diarrhoea",
+      "name": "Travellers diarrhoea",
       "domains": [
         "Infection"
       ],
@@ -4965,6 +4587,15 @@
         "Gynaecology"
       ],
       "filename": "trichomonas_vaginalis.json",
+      "processed": true
+    },
+    {
+      "id": "trigeminal_neuralgia",
+      "name": "Trigeminal neuralgia",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "trigeminal_neuralgia.json",
       "processed": true
     },
     {
@@ -5070,28 +4701,9 @@
       "id": "urinary_incontinence",
       "name": "Urinary incontinence",
       "domains": [
-        "Urology",
-        "Gynaecology"
-      ],
-      "filename": "urinary_incontinence.json",
-      "processed": true
-    },
-    {
-      "id": "urinary_incontinence",
-      "name": "Urinary incontinence?",
-      "domains": [
         "Care of the Elderly"
       ],
       "filename": "urinary_incontinence.json",
-      "processed": true
-    },
-    {
-      "id": "urinary_tract_infection",
-      "name": "Urinary tract Infection",
-      "domains": [
-        "Obstetrics"
-      ],
-      "filename": "urinary_tract_infection.json",
       "processed": true
     },
     {
@@ -5230,7 +4842,7 @@
     },
     {
       "id": "vertigo",
-      "name": "Vertigo?",
+      "name": "Vertigo",
       "domains": [
         "Care of the Elderly"
       ],
@@ -5349,7 +4961,7 @@
     },
     {
       "id": "wernickes_encephalopathy",
-      "name": "Wernicke?s encephalopathy",
+      "name": "Wernickes encephalopathy",
       "domains": [
         "Neurology",
         "Psychiatry"

@@ -1,6 +1,6 @@
 {
   "started_at": "2025-12-17T18:56:34.855952",
-  "processed_count": 579,
+  "processed_count": 580,
   "total_conditions": 581,
   "processed_conditions": [
     "Acute coronary syndrome",
@@ -581,7 +581,8 @@
     "Attention deficit hyperactivity disorder (ADHD)",
     "Autistic spectrum disorder",
     "Non-accidental injury",
-    "Disease Prevention Screening"
+    "Disease Prevention Screening",
+    "Transient ischaemic attack"
   ],
   "failed_conditions": [
     {
@@ -593,9 +594,29 @@
       "name": "Transient ischaemic attack?",
       "error": "Unterminated string starting at: line 1 column 1020 (char 1019)",
       "timestamp": "2025-12-17T20:45:07.065030"
+    },
+    {
+      "name": "Stroke",
+      "error": "Unterminated string starting at: line 1 column 1125 (char 1124)",
+      "timestamp": "2025-12-17T22:58:01.160737"
+    },
+    {
+      "name": "Transient ischaemic attack?",
+      "error": "Unterminated string starting at: line 1 column 964 (char 963)",
+      "timestamp": "2025-12-17T22:58:14.178424"
+    },
+    {
+      "name": "Stroke",
+      "error": "Unterminated string starting at: line 1 column 1125 (char 1124)",
+      "timestamp": "2025-12-17T22:59:32.805823"
+    },
+    {
+      "name": "Transient ischaemic attack?",
+      "error": "Unterminated string starting at: line 1 column 1003 (char 1002)",
+      "timestamp": "2025-12-17T22:59:48.605041"
     }
   ],
   "estimated_cost": 0.0,
-  "actual_cost": 0.3987483000000004,
-  "last_updated": "2025-12-17T22:11:18.973311"
+  "actual_cost": 0.39946380000000037,
+  "last_updated": "2025-12-17T23:01:41.860403"
 }
