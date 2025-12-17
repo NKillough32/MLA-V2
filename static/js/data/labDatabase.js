@@ -838,117 +838,48 @@ window.labDatabase = {
     },
     'ecg': {
         name: 'Electrocardiogram (ECG)',
-        indication: 'Chest pain, palpitations, breathlessness, syncope, pre-op assessment, cardiovascular screening',
-        normalValues: {
-            'Heart Rate': '60-100 bpm',
-            'PR interval': '120-200 ms (3-5 small squares)',
-            'QRS duration': '<120 ms (<3 small squares)',
-            'QT interval': 'QTc <440 ms (men), <460 ms (women). Calculate QTc = QT / √RR',
-            'Axis': '-30° to +90° (normal)',
-            'R wave progression': 'R wave increases V1→V6. Transition zone V3-V4'
-        },
-        commonAbnormalities: {
-            'STEMI': 'ST elevation ≥1mm (limb leads) or ≥2mm (chest leads) in contiguous leads + reciprocal ST depression. Activate cath lab immediately',
-            'NSTEMI/Unstable Angina': 'ST depression, T wave inversion, dynamic changes. Troponin positive in NSTEMI',
-            'Atrial Fibrillation': 'Irregularly irregular rhythm, absent P waves, fibrillation waves',
-            'Atrial Flutter': 'Sawtooth flutter waves (best in II, III, aVF), regular rate ~150 bpm (2:1 block) or irregular',
-            'SVT': 'Narrow complex tachycardia, rate 150-220 bpm, no visible P waves or retrograde P waves',
-            'VT': 'Broad complex tachycardia, rate 120-250 bpm, AV dissociation, capture/fusion beats',
-            'Complete Heart Block': 'AV dissociation, P waves and QRS independent, escape rhythm 30-50 bpm',
-            'Left Bundle Branch Block': 'QRS ≥120ms, broad R wave V5-V6, deep S wave V1-V2, no septal Q waves',
-            'Right Bundle Branch Block': 'QRS ≥120ms, RSR\' pattern V1-V2 (M-shaped), wide S wave V5-V6',
-            'Left Ventricular Hypertrophy': 'Sokolow-Lyon: S(V1) + R(V5 or V6) >35mm. Strain pattern: ST depression + T wave inversion lateral leads',
-            'PE': 'S1Q3T3 pattern, right heart strain, sinus tachycardia, RBBB, right axis deviation',
-            'Pericarditis': 'Widespread ST elevation (saddle-shaped), PR depression, no reciprocal changes',
-            'Hyperkalaemia': 'Peaked T waves (K+ 5.5-6.5), broad QRS (K+ 6.5-7.5), sine wave (K+ >8)',
-            'Hypokalaemia': 'U waves, flat T waves, ST depression, prolonged QT',
-            'Digoxin effect': 'Downsloping ST depression (Salvador Dali moustache), short QT, T wave inversion'
-        },
-        clinicalSignificance: 'Always compare with old ECGs. Serial ECGs essential in chest pain. ST elevation in contiguous leads = STEMI until proven otherwise - call cardiology immediately'
+        values: {
+            'Indications': {
+                normal: 'Chest pain, palpitations, breathlessness, syncope, pre-op assessment, cardiovascular screening'
+            },
+            'Normal Parameters': {
+                normal: 'Heart rate 60-100 bpm; PR 120-200 ms (3-5 small squares); QRS <120 ms (<3 small squares); QTc <440 ms (men) <460 ms (women) using QT/√RR; Axis -30° to +90°; R wave progression increases V1→V6 with transition V3-V4'
+            },
+            'Common Abnormalities': {
+                normal: 'STEMI: ST elevation ≥1mm limb or ≥2mm chest leads in contiguous leads with reciprocal depression—activate cath lab. NSTEMI/UA: ST depression/T wave inversion with troponin rise. AF: irregularly irregular rhythm without P waves. Flutter: sawtooth waves (II/III/aVF) with regular ~150 bpm or variable block. SVT: narrow complex tachycardia 150-220 bpm. VT: broad complex 120-250 bpm with AV dissociation/capture beats. Complete heart block: AV dissociation with escape 30-50 bpm. LBBB: QRS ≥120ms, broad R V5-6, deep S V1-2, no septal Q. RBBB: QRS ≥120ms, RSR\' V1-2, wide S V5-6. LVH: S(V1)+R(V5/6)>35mm ± strain. PE: S1Q3T3/right heart strain/RBBB/right axis. Pericarditis: widespread saddle-shaped ST elevation with PR depression and no reciprocal changes. Hyperkalaemia: peaked T >5.5, broad QRS 6.5-7.5, sine wave >8. Hypokalaemia: U waves, flat T, ST depression, prolonged QT. Digoxin effect: downsloping ST (Salvador Dalí moustache), short QT, T inversion.'
+            },
+            'Clinical Significance': {
+                normal: 'Always compare with prior ECGs and obtain serial tracings in chest pain. Treat ST elevation in contiguous leads as STEMI until proven otherwise and call cardiology immediately.'
+            }
+        }
     },
     'imaging_radiology': {
         name: 'Radiology & Imaging',
-        modalities: {
+        values: {
             'Chest X-ray (CXR)': {
-                indication: 'Pneumonia, heart failure, pneumothorax, malignancy, TB, trauma',
-                views: 'PA (standard), AP (portable - heart enlarged), lateral',
-                approach: 'Systematic: ABCDEFGHI - Airway, Breathing (lungs), Cardiac (size/shape), Diaphragm, Everything else, Fields, Great vessels, Hardware, Impressions',
-                commonFindings: {
-                    'Pneumonia': 'Consolidation (airspace opacification), air bronchograms, effusion',
-                    'Pulmonary oedema': 'Bat wing shadowing, Kerley B lines, cardiomegaly, effusions, upper lobe diversion',
-                    'Pneumothorax': 'Absent lung markings peripherally, visible lung edge',
-                    'Pleural effusion': 'Meniscus sign, blunted costophrenic angles. >500ml visible on erect CXR',
-                    'Lung cancer': 'Mass, hilar enlargement, collapse, effusion',
-                    'COPD': 'Hyperinflation (>6 anterior ribs, flat diaphragms), bullae'
-                }
+                normal: 'Indications: pneumonia, heart failure, pneumothorax, malignancy, TB, trauma. Views: PA standard, AP portable (apparent cardiomegaly), lateral. Approach: ABCDEFGHI (Airway, Breathing, Cardiac, Diaphragm, Everything else, Fields, Great vessels, Hardware, Impression). Typical findings—Pneumonia: consolidation/air bronchograms/effusion. Pulmonary oedema: bat wing shadowing, Kerley B lines, cardiomegaly, effusions, upper lobe diversion. Pneumothorax: absent peripheral markings, visible lung edge. Effusion: meniscus sign, blunted costophrenic angles (>500 ml erect). Lung cancer: mass/hilar enlargement/collapse/effusion. COPD: hyperinflation >6 anterior ribs, flat diaphragms, bullae.'
             },
             'Abdominal X-ray (AXR)': {
-                indication: 'Bowel obstruction, perforation, constipation, renal calculi',
-                approach: 'Gas pattern, bowel loops, organs, bones, foreign bodies. Supine view standard',
-                commonFindings: {
-                    'Small bowel obstruction': 'Central gas, >3cm diameter, valvulae conniventes (lines cross full width)',
-                    'Large bowel obstruction': 'Peripheral gas, >6cm diameter (>9cm caecum), haustra (incomplete lines)',
-                    'Perforation': 'Free gas under diaphragm (erect CXR better)',
-                    'Toxic megacolon': 'Colon >6cm with mucosal oedema (thumbprinting)',
-                    'Volvulus': 'Coffee bean sign (sigmoid), dilated caecum (caecal)'
-                }
+                normal: 'Indications: bowel obstruction, perforation, constipation, renal calculi. Approach: gas pattern, bowel loops, organs, bones, foreign bodies; supine view standard. Findings—Small bowel obstruction: central gas >3 cm with valvulae crossing full width. Large bowel obstruction: peripheral gas >6 cm (>9 cm caecum) with haustra. Perforation: free gas under diaphragm (erect CXR better). Toxic megacolon: colon >6 cm with mucosal oedema/thumbprinting. Volvulus: coffee bean sign (sigmoid) or dilated caecum.'
             },
             'CT Head': {
-                indication: 'Stroke, head injury, raised ICP, seizures, headache with red flags',
-                nonContrast: 'First-line for stroke (<4.5h for thrombolysis), haemorrhage, fractures',
-                findings: {
-                    'Acute stroke': 'Loss of grey-white differentiation, hyperdense MCA sign, obscured lentiform nucleus',
-                    'Haemorrhage': 'Hyperdense (white) blood. Subarachnoid, subdural, extradural, intracerebral',
-                    'Raised ICP': 'Midline shift, effacement of sulci/ventricles, herniation',
-                    'Hydrocephalus': 'Dilated ventricles'
-                },
-                clinicalSignificance: 'CT within 1h for head injury (GCS <13, focal neurology, skull fracture). Within 4.5h for thrombolysis in stroke'
+                normal: 'Indications: stroke, head injury, raised ICP, seizures, headache with red flags. Non-contrast first-line for stroke (<4.5 h thrombolysis), haemorrhage, fractures. Findings—Acute stroke: loss of grey-white differentiation, hyperdense MCA sign, obscured lentiform nucleus. Haemorrhage: hyperdense blood (subarachnoid, subdural, extradural, intracerebral). Raised ICP: midline shift, sulcal/ventricular effacement, herniation. Hydrocephalus: dilated ventricles. Clinical significance: perform within 1 h for head injury (GCS <13, focal neurology, skull fracture) and within thrombolysis window for stroke.'
             },
             'CT Chest/Abdomen/Pelvis (CTAP)': {
-                indication: 'Malignancy staging, trauma, PE, AAA, appendicitis, diverticulitis',
-                contrast: 'IV contrast for vascular/organ enhancement. Oral contrast less used now',
-                'CT PE Protocol': 'Contrast-enhanced, timed for pulmonary arteries. Filling defect = PE',
-                'CT KUB (non-contrast)': 'Renal stones (90% visible), hydronephrosis',
-                clinicalSignificance: 'CT gold standard for trauma, PE, AAA, malignancy. Radiation dose significant - justify use'
+                normal: 'Indications: malignancy staging, trauma, PE, AAA, appendicitis, diverticulitis. Contrast: IV contrast for vascular/organ detail; oral contrast less common. CT PE protocol: contrast-timed pulmonary arteries—filling defect = PE. CT KUB (non-contrast): renal stones (≈90% visible), hydronephrosis. Clinical significance: CT is gold standard for trauma/PE/AAA/malignancy but carries radiation—justify use.'
             },
             'Ultrasound': {
-                advantages: 'No radiation, bedside, real-time, cheap, safe in pregnancy',
-                indications: {
-                    'Abdominal': 'Gallstones, AAA, hepatobiliary, renal, ascites',
-                    'Renal': 'Hydronephrosis (obstructive uropathy), stones (not all visible), cysts, masses',
-                    'Pelvic': 'Pregnancy, ovarian masses, fibroids',
-                    'Vascular': 'DVT (compression ultrasound), carotid stenosis',
-                    'Cardiac (Echo)': 'Ejection fraction, valves, pericardial effusion'
-                },
-                limitations: 'Operator-dependent, gas/obesity reduce image quality'
+                normal: 'Advantages: no radiation, bedside, real-time, inexpensive, safe in pregnancy. Indications—Abdominal: gallstones, AAA, hepatobiliary, renal, ascites. Renal: hydronephrosis/obstructive uropathy, stones (not all visible), cysts, masses. Pelvic: pregnancy, ovarian masses, fibroids. Vascular: DVT compression ultrasound, carotid stenosis. Cardiac: EF, valves, pericardial effusion. Limitations: operator dependent; gas/obesity reduce image quality.'
             },
             'MRI': {
-                advantages: 'No radiation, excellent soft tissue contrast, multiplanar',
-                indications: {
-                    'Brain': 'MS, stroke (DWI for acute), tumours, pituitary, infection',
-                    'Spine': 'Cord compression, disc prolapse, infection, tumour',
-                    'MSK': 'Soft tissue injuries, joints, osteomyelitis',
-                    'Cardiac': 'Myocarditis, cardiomyopathy, congenital'
-                },
-                contraindications: 'Pacemakers (most now MRI-safe), metallic foreign bodies (orbital), cochlear implants, claustrophobia',
-                clinicalSignificance: 'Gold standard for brain and spinal cord. DWI sequence detects acute stroke. Takes 30-60 min'
+                normal: 'Advantages: no radiation, excellent soft tissue contrast, multiplanar imaging. Indications—Brain: MS, acute stroke (DWI), tumours, pituitary, infection. Spine: cord compression, disc prolapse, infection, tumour. MSK: soft tissue injuries, joints, osteomyelitis. Cardiac: myocarditis, cardiomyopathy, congenital heart disease. Contraindications: non-MRI-safe pacemakers, metallic foreign bodies (orbital), cochlear implants, severe claustrophobia. Clinical significance: gold standard for brain/spinal cord; DWI detects acute stroke; 30-60 min study.'
             },
             'DEXA Scan': {
-                indication: 'Osteoporosis screening: ≥75 years, previous fragility fracture, steroids ≥3 months',
-                measurement: 'Bone mineral density at lumbar spine and hip',
-                interpretation: {
-                    'T-score ≥-1.0': 'Normal',
-                    'T-score -1.0 to -2.5': 'Osteopenia',
-                    'T-score ≤-2.5': 'Osteoporosis',
-                    'T-score ≤-2.5 + fracture': 'Severe osteoporosis'
-                },
-                clinicalSignificance: 'T-score compares to young adult peak bone mass. Z-score compares to age-matched. Treat if T-score ≤-2.5 or ≤-1.5 with risk factors'
+                normal: 'Indications: osteoporosis screening ≥75 years, previous fragility fracture, steroids ≥3 months. Measurement: bone mineral density at lumbar spine and hip. Interpretation—T-score ≥-1.0 normal; -1.0 to -2.5 osteopenia; ≤-2.5 osteoporosis; ≤-2.5 plus fracture severe osteoporosis. Clinical significance: treat if T-score ≤-2.5 or ≤-1.5 with risk factors.'
+            },
+            'Ultrasound vs CT': {
+                normal: 'Use ultrasound first for pregnancy, children, gallstones, AAA screening, renal obstruction, ascites, DVT. Use CT for trauma, PE, acute abdomen if ultrasound negative, malignancy staging, renal stones with hydronephrosis. Principle: minimize radiation when safe and escalate to CT when ultrasound is inadequate or time-critical.'
             }
-        },
-        ultrasoundVsCT: {
-            'Use ultrasound first': 'Pregnancy, children, gallstones, AAA screening, renal obstruction, ascites, DVT',
-            'Use CT when': 'Trauma, PE, acute abdomen (if ultrasound negative), malignancy staging, renal stones (if ultrasound shows hydronephrosis)',
-            'Principle': 'Ultrasound first where appropriate to avoid radiation. CT if ultrasound inadequate or time-critical'
         }
     },
     'neurophysiology': {
