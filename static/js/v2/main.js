@@ -1649,14 +1649,19 @@ class MLAQuizApp {
         const stats = this.coreConditionsManager.getStats();
 
         // Render domain filters
-        const domainButtons = [
-            { id: 'all', label: 'All' },
+        const domainOptions = [
+            { id: 'all', label: 'All Specialties' },
             ...domains.map(domain => ({ id: domain, label: domain }))
         ];
 
-        domainFilterContainer.innerHTML = domainButtons.map(btn => 
-            `<button class="cc-domain-btn ${btn.id === 'all' ? 'active' : ''}" data-domain="${btn.id}">${btn.label}</button>`
-        ).join('');
+        domainFilterContainer.innerHTML = `
+            <label class="cc-domain-filter-label" for="cc-domain-select">🏥 Filter by Specialty:</label>
+            <select class="cc-domain-select" id="cc-domain-select">
+                ${domainOptions.map(opt => 
+                    `<option value="${opt.id}" ${opt.id === 'all' ? 'selected' : ''}>${opt.label}</option>`
+                ).join('')}
+            </select>
+        `;
 
         // Render stats
         statsContainer.innerHTML = `
@@ -1716,16 +1721,10 @@ class MLAQuizApp {
         });
 
         // Event: Domain filter
-        domainFilterContainer.addEventListener('click', (e) => {
-            const btn = e.target.closest('.cc-domain-btn');
-            if (!btn) return;
-
-            // Update active state
-            domainFilterContainer.querySelectorAll('.cc-domain-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
+        const domainSelect = domainFilterContainer.querySelector('#cc-domain-select');
+        domainSelect.addEventListener('change', (e) => {
             // Set domain and re-render
-            const domain = btn.dataset.domain;
+            const domain = e.target.value;
             this.coreConditionsManager.setDomain(domain);
             renderConditionsList();
         });

@@ -11424,32 +11424,44 @@
 
             .cc-domain-filter {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 8px;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
             }
 
-            .cc-domain-btn {
-                padding: 8px 16px;
-                border: 2px solid var(--v2-border);
-                border-radius: 20px;
-                background: var(--v2-bg-card);
+            .cc-domain-filter-label {
+                font-size: 14px;
+                font-weight: 600;
                 color: var(--v2-text-secondary);
+                white-space: nowrap;
+            }
+
+            .cc-domain-select {
+                flex: 1;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
                 font-size: 14px;
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s ease;
+                appearance: none;
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
             }
 
-            .cc-domain-btn:hover {
+            .cc-domain-select:hover {
                 border-color: var(--v2-primary);
-                color: var(--v2-primary);
-                transform: translateY(-1px);
             }
 
-            .cc-domain-btn.active {
-                background: var(--v2-primary);
+            .cc-domain-select:focus {
+                outline: none;
                 border-color: var(--v2-primary);
-                color: white;
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
             }
 
             .cc-stats {
