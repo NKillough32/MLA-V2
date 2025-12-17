@@ -1690,7 +1690,7 @@ class MLAQuizApp {
 
             conditionsGrid.innerHTML = conditions.map(condition => {
                 const isFavorite = this.coreConditionsManager.isFavorite(condition.id);
-                const preview = condition.recognition.typical.slice(0, 3).join('; ');
+                const domainDisplay = condition.domains ? condition.domains[0] : (condition.domain || 'General');
                 
                 return `
                     <div class="cc-condition-card" data-condition-id="${condition.id}">
@@ -1700,8 +1700,8 @@ class MLAQuizApp {
                                 ${isFavorite ? '⭐' : '☆'}
                             </button>
                         </div>
-                        <span class="cc-domain-badge">${condition.domain}</span>
-                        <div class="cc-condition-preview">${preview}</div>
+                        <span class="cc-domain-badge">${domainDisplay}</span>
+                        <div class="cc-condition-preview">Click to view comprehensive clinical reference</div>
                     </div>
                 `;
             }).join('');

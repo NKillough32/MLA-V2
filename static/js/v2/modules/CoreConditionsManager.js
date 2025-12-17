@@ -7,29 +7,6 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 
-// Legacy fallback functions (if coreConditions.js exists)
-let coreConditionsDatabase = [];
-let getCondition = (id) => null;
-let searchConditions = (query) => [];
-let getConditionsByDomain = (domain) => [];
-let getAllDomains = () => [];
-let getStatistics = () => ({ total: 0, domains: [] });
-
-// Legacy module loading promise
-const legacyModulePromise = import('../../data/coreConditions.js')
-    .then(legacyModule => {
-        coreConditionsDatabase = legacyModule.coreConditions || [];
-        getCondition = legacyModule.getCondition || getCondition;
-        searchConditions = legacyModule.searchConditions || searchConditions;
-        getConditionsByDomain = legacyModule.getConditionsByDomain || getConditionsByDomain;
-        getAllDomains = legacyModule.getAllDomains || getAllDomains;
-        getStatistics = legacyModule.getStatistics || getStatistics;
-        console.log('Legacy coreConditions.js loaded');
-    })
-    .catch(error => {
-        console.log('Legacy coreConditions.js not found - using enhanced JSON system only');
-    });
-
 export class CoreConditionsManager {
     constructor() {
         this.initialized = false;
@@ -40,10 +17,9 @@ export class CoreConditionsManager {
         this.recentConditions = [];
         this.maxRecentConditions = 20;
         
-        // Enhanced content system
+        // Enhanced JSON-based content system
         this.enhancedConditions = new Map();
         this.enhancedIndex = null;
-        this.useEnhancedContent = true; // Prefer enhanced content when available
     }
 
     /**
@@ -66,15 +42,15 @@ export class CoreConditionsManager {
             this.initialized = true;
             console.log('📚 Core Conditions Manager initialized');
             
-            const legacyStats = getStatistics();
-            const enhancedStats = this.enhancedIndex ? {
+            const stats = this.enhancedIndex ? {
                 totalConditions: this.enhancedIndex.totalConditions,
-                enhancedAvailable: true
-            } : { enhancedAvailable: false };
+                processedCount: this.enhancedIndex.processedCount,
+                domains: this.getAllDomains()
+            } : { totalConditions: 0, domains: [] };
             
             return {
                 success: true,
-                stats: { ...legacyStats, enhanced: enhancedStats }
+                stats: stats
             };
         } catch (error) {
             console.error('Failed to initialize CoreConditionsManager:', error);
@@ -134,9 +110,11 @@ export class CoreConditionsManager {
      * Get all favorite conditions
      */
     getFavoriteConditions() {
+        if (!this.enhancedIndex) return [];
+        
         return Array.from(this.favoriteConditions)
-            .map(id => ({ id, ...getCondition(id) }))
-            .filter(c => c.name); // Filter out any invalid IDs
+            .map(id => this.enhancedIndex.conditions.find(c => c.id === id))
+            .filter(c => c); // Filter out any invalid IDs
     }
 
     /**
@@ -186,9 +164,11 @@ export class CoreConditionsManager {
      * Get recent conditions
      */
     getRecentConditions() {
+        if (!this.enhancedIndex) return [];
+        
         return this.recentConditions
-            .map(id => ({ id, ...getCondition(id) }))
-            .filter(c => c.name); // Filter out any invalid IDs
+            .map(id => this.enhancedIndex.conditions.find(c => c.id === id))
+            .filter(c => c); // Filter out any invalid IDs
     }
 
     /**
@@ -209,11 +189,11 @@ export class CoreConditionsManager {
             return this.getConditionsByCurrentDomain();
         }
 
-        const results = searchConditions(query);
+        const results = this.searchEnhancedConditions(query);
         
         // Filter by domain if not 'all'
         if (this.currentDomain !== 'all') {
-            return results.filter(c => c.domain === this.currentDomain);
+            return results.filter(c => c.domains.includes(this.currentDomain));
         }
         
         analytics.trackEvent('core_condition_searched', { query, results: results.length });
@@ -232,27 +212,53 @@ export class CoreConditionsManager {
      * Get conditions by current domain
      */
     getConditionsByCurrentDomain() {
+        if (!this.enhancedIndex) return [];
+        
         if (this.currentDomain === 'all') {
-            return Object.entries(coreConditionsDatabase).map(([id, condition]) => ({ id, ...condition }));
+            return this.enhancedIndex.conditions;
         }
-        return getConditionsByDomain(this.currentDomain);
+        
+        return this.enhancedIndex.conditions.filter(c => 
+            c.domains.includes(this.currentDomain)
+        );
     }
 
     /**
      * Get all available domains
      */
     getDomains() {
-        return getAllDomains();
+        return this.getAllDomains();
+    }
+
+    /**
+     * Get all available domains from enhanced index
+     */
+    getAllDomains() {
+        if (!this.enhancedIndex) return [];
+        
+        const domainsSet = new Set();
+        this.enhancedIndex.conditions.forEach(condition => {
+            condition.domains.forEach(domain => domainsSet.add(domain));
+        });
+        
+        return Array.from(domainsSet).sort();
     }
 
     /**
      * Get a specific condition
      */
-    getConditionById(conditionId) {
-        const condition = getCondition(conditionId);
-        if (condition) {
-            return { id: conditionId, ...condition };
+    async getConditionById(conditionId) {
+        if (!this.enhancedIndex) return null;
+        
+        const indexEntry = this.enhancedIndex.conditions.find(c => c.id === conditionId);
+        if (!indexEntry) return null;
+        
+        // Load full condition data
+        const enhanced = await this.getEnhancedCondition(indexEntry.name);
+        if (enhanced) {
+            return this.formatEnhancedCondition(enhanced);
         }
+        
         return null;
     }
 
@@ -591,19 +597,20 @@ export class CoreConditionsManager {
     }
 
     /**
-     * Get condition with enhanced data if available, fallback to legacy
+     * Get condition data from enhanced JSON system
      */
     async getConditionData(conditionId) {
-        // Try enhanced first if available
-        if (this.useEnhancedContent && this.enhancedIndex) {
-            const enhanced = await this.getEnhancedCondition(conditionId);
-            if (enhanced) {
-                return this.formatEnhancedCondition(enhanced);
-            }
+        if (!this.enhancedIndex) return null;
+        
+        const indexEntry = this.enhancedIndex.conditions.find(c => c.id === conditionId);
+        if (!indexEntry) return null;
+        
+        const enhanced = await this.getEnhancedCondition(indexEntry.name);
+        if (enhanced) {
+            return this.formatEnhancedCondition(enhanced);
         }
-
-        // Fallback to legacy system
-        return getCondition(conditionId);
+        
+        return null;
     }
 
     /**
