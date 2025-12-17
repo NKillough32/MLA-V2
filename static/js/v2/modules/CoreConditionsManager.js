@@ -296,7 +296,20 @@ export class CoreConditionsManager {
      * Get statistics
      */
     getStats() {
-        return getStatistics();
+        if (!this.enhancedIndex) {
+            return {
+                total: 0,
+                domains: [],
+                processed: 0
+            };
+        }
+        
+        return {
+            total: this.enhancedIndex.totalConditions,
+            domains: this.getAllDomains(),
+            processed: this.enhancedIndex.processedCount,
+            cached: this.enhancedConditions.size
+        };
     }
 
     /**
