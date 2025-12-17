@@ -1,0 +1,150 @@
+{
+  "id": "obstructive",
+  "name": "Obstructive",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:04:21.819313",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Obstructive: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nObstructive conditions in the context of anaesthesia and critical care refer to a range of disorders characterized by the obstruction of airflow in the respiratory tract, leading to impaired gas exchange and respiratory distress.\n\n### Epidemiology\nObstructive airway diseases, such as asthma and chronic obstructive pulmonary disease (COPD), are prevalent worldwide, affecting millions. Asthma affects approximately 300 million people globally, while COPD affects around 251 million individuals, with increasing incidence due to smoking and environmental factors.\n\n### Essential Pathophysiology\nObstructive conditions are primarily caused by inflammation, bronchoconstriction, and structural changes in the airways, leading to increased resistance to airflow during expiration. This results in air trapping, decreased lung volumes, and impaired gas exchange.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shortness of breath (dyspnea)\n- Wheezing\n- Cough (often chronic)\n- Chest tightness\n- Increased sputum production\n\n### Key Signs\n- Prolonged expiration\n- Use of accessory muscles for breathing\n- Cyanosis\n- Decreased breath sounds\n- Tachypnea\n\n### Atypical Presentations\n- Fatigue\n- Anxiety or panic attacks\n- Sleep disturbances due to nocturnal symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Altered mental status\n- Cyanosis\n- Inability to speak full sentences\n- History of frequent hospitalizations for respiratory issues\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pulse oximetry\n- Peak expiratory flow rate (PEFR)\n- Arterial blood gas (ABG) analysis\n\n### Second-line Investigations\n- Spirometry (to assess airflow obstruction)\n- Chest X-ray (to rule out other causes)\n- CT scan of the chest (if indicated)\n\n### Specialist Tests\n- Bronchial provocation tests (e.g., methacholine challenge)\n- Exhaled nitric oxide (FeNO) testing\n- Sputum analysis for eosinophils\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of obstructive airway disease is based on clinical history, physical examination, and spirometry showing a reduced FEV1/FVC ratio (<0.7).\n\n### Key Differential Diagnoses to Exclude\n- Restrictive lung disease\n- Pulmonary embolism\n- Pneumonia\n- Heart failure\n- Anxiety disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (target SpO2 94-98%)\n- Short-acting beta-agonists (SABAs) such as Salbutamol via nebulizer or metered-dose inhaler (MDI)\n\n#### Second-line Treatments\n- Systemic corticosteroids (e.g., Prednisolone) for exacerbations\n- Anticholinergics (e.g., Ipratropium bromide)\n\n#### Emergency Procedures\n- Non-invasive ventilation (NIV) for severe respiratory failure\n- Intubation and mechanical ventilation if necessary\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Inhaled corticosteroids (ICS) for asthma management\n- Long-acting beta-agonists (LABAs) for COPD management\n\n#### Second-line Treatments\n- Long-acting muscarinic antagonists (LAMAs) for COPD\n- Oral corticosteroids for severe cases\n\n#### Monitoring Requirements\n- Regular spirometry to assess lung function\n- Monitoring for exacerbations and medication adherence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Salbutamol\n- **Mechanism of Action**: Short-acting beta-2 adrenergic agonist causing bronchodilation\n- **Typical Dosing Range**: 2.5-5 mg via nebulizer or 100-200 mcg via MDI every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia\n- **When to Use vs. Alternatives**: First-line treatment for acute asthma exacerbations.\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation in the airways\n- **Typical Dosing Range**: 40-60 mg orally once daily for 5-7 days in acute exacerbations\n- **Key Side Effects/Contraindications**: Hyperglycemia, weight gain, mood changes\n- **When to Use vs. Alternatives**: Used in acute exacerbations of asthma and COPD.\n\n#### Ipratropium bromide\n- **Mechanism of Action**: Anticholinergic that causes bronchodilation by inhibiting vagal reflexes\n- **Typical Dosing Range**: 500 mcg via nebulizer every 6-8 hours\n- **Key Side Effects/Contraindications**: Dry mouth, urinary retention\n- **When to Use vs. Alternatives**: Used in combination with SABAs for acute exacerbations.\n\n### Procedures\n\n#### Non-invasive ventilation (NIV)\n- **What it Involves**: Use of a ventilatory support system that provides positive pressure to the airways without the need for intubation.\n- **Indications**: Severe respiratory distress, hypercapnic respiratory failure, COPD exacerbations.\n- **Key Risks/Complications**: Barotrauma, aspiration, discomfort from the mask.\n\n#### Intubation and mechanical ventilation\n- **What it Involves**: Insertion of an endotracheal tube to secure the airway and provide mechanical ventilation.\n- **Indications**: Severe respiratory failure, inability to maintain oxygenation or ventilation.\n- **Key Risks/Complications**: Injury to the airway, infection, ventilator-associated pneumonia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for obstructive airway diseases varies; asthma can be well-controlled with treatment, while COPD is progressive and can lead to significant morbidity and mortality if not managed appropriately.\n\n### Important Complications to Watch For\n- Respiratory failure\n- Pneumonia\n- Pulmonary hypertension\n- Cor pulmonale\n- Frequent exacerbations leading to hospitalization\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing obstructive airway diseases, initiating appropriate investigations, managing acute exacerbations, and understanding the importance of follow-up care and patient education.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of severe respiratory distress, altered mental status, or does not respond to initial treatment, escalate care to senior medical staff and consider intensive care referral.\n\n### Key Safety Considerations\nEnsure proper monitoring of oxygen saturation and vital signs during treatment. Be aware of the potential for rapid deterioration in obstructive airway disease and the need for timely intervention.\n",
+  "content": {
+    "overview": {
+      "definition": "Obstructive conditions in the context of anaesthesia and critical care refer to a range of disorders characterized by the obstruction of airflow in the respiratory tract, leading to impaired gas exchange and respiratory distress.",
+      "epidemiology": "Obstructive airway diseases, such as asthma and chronic obstructive pulmonary disease (COPD), are prevalent worldwide, affecting millions. Asthma affects approximately 300 million people globally, while COPD affects around 251 million individuals, with increasing incidence due to smoking and environmental factors.",
+      "pathophysiology": "Obstructive conditions are primarily caused by inflammation, bronchoconstriction, and structural changes in the airways, leading to increased resistance to airflow during expiration. This results in air trapping, decreased lung volumes, and impaired gas exchange."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shortness of breath (dyspnea)",
+        "Wheezing",
+        "Cough (often chronic)",
+        "Chest tightness",
+        "Increased sputum production"
+      ],
+      "signs": [
+        "Prolonged expiration",
+        "Use of accessory muscles for breathing",
+        "Cyanosis",
+        "Decreased breath sounds",
+        "Tachypnea"
+      ],
+      "atypicalPresentations": [
+        "Fatigue",
+        "Anxiety or panic attacks",
+        "Sleep disturbances due to nocturnal symptoms"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Altered mental status",
+        "Cyanosis",
+        "Inability to speak full sentences",
+        "History of frequent hospitalizations for respiratory issues"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pulse oximetry",
+        "Peak expiratory flow rate (PEFR)",
+        "Arterial blood gas (ABG) analysis"
+      ],
+      "secondLine": [
+        "Spirometry (to assess airflow obstruction)",
+        "Chest X-ray (to rule out other causes)",
+        "CT scan of the chest (if indicated)"
+      ],
+      "specialistTests": [
+        "Bronchial provocation tests (e.g., methacholine challenge)",
+        "Exhaled nitric oxide (FeNO) testing",
+        "Sputum analysis for eosinophils"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of obstructive airway disease is based on clinical history, physical examination, and spirometry showing a reduced FEV1/FVC ratio (<0.7).",
+      "differentials": [
+        "Restrictive lung disease",
+        "Pulmonary embolism",
+        "Pneumonia",
+        "Heart failure",
+        "Anxiety disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (target SpO2 94-98%)",
+          "Short-acting beta-agonists (SABAs) such as Salbutamol via nebulizer or metered-dose inhaler (MDI)"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids (e.g., Prednisolone) for exacerbations",
+          "Anticholinergics (e.g., Ipratropium bromide)"
+        ],
+        "procedures": [
+          "Non-invasive ventilation (NIV) for severe respiratory failure",
+          "Intubation and mechanical ventilation if necessary"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Inhaled corticosteroids (ICS) for asthma management",
+          "Long-acting beta-agonists (LABAs) for COPD management"
+        ],
+        "secondLine": [
+          "Long-acting muscarinic antagonists (LAMAs) for COPD",
+          "Oral corticosteroids for severe cases"
+        ],
+        "monitoring": [
+          "Regular spirometry to assess lung function",
+          "Monitoring for exacerbations and medication adherence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Salbutamol",
+          "mechanism": "Short-acting beta-2 adrenergic agonist causing bronchodilation",
+          "dosing": "2.5-5 mg via nebulizer or 100-200 mcg via MDI every 4-6 hours as needed",
+          "sideEffects": "Tachycardia, tremors, hypokalemia",
+          "notes": "First-line treatment for acute asthma exacerbations."
+        },
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation in the airways",
+          "dosing": "40-60 mg orally once daily for 5-7 days in acute exacerbations",
+          "sideEffects": "Hyperglycemia, weight gain, mood changes",
+          "notes": "Used in acute exacerbations of asthma and COPD."
+        },
+        {
+          "name": "Ipratropium bromide",
+          "mechanism": "Anticholinergic that causes bronchodilation by inhibiting vagal reflexes",
+          "dosing": "500 mcg via nebulizer every 6-8 hours",
+          "sideEffects": "Dry mouth, urinary retention",
+          "notes": "Used in combination with SABAs for acute exacerbations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Non-invasive ventilation (NIV)",
+          "description": "Use of a ventilatory support system that provides positive pressure to the airways without the need for intubation.",
+          "indications": "Severe respiratory distress, hypercapnic respiratory failure, COPD exacerbations.",
+          "risks": "Barotrauma, aspiration, discomfort from the mask."
+        },
+        {
+          "name": "Intubation and mechanical ventilation",
+          "description": "Insertion of an endotracheal tube to secure the airway and provide mechanical ventilation.",
+          "indications": "Severe respiratory failure, inability to maintain oxygenation or ventilation.",
+          "risks": "Injury to the airway, infection, ventilator-associated pneumonia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for obstructive airway diseases varies; asthma can be well-controlled with treatment, while COPD is progressive and can lead to significant morbidity and mortality if not managed appropriately.",
+    "complications": [
+      "Respiratory failure",
+      "Pneumonia",
+      "Pulmonary hypertension",
+      "Cor pulmonale",
+      "Frequent exacerbations leading to hospitalization"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing obstructive airway diseases, initiating appropriate investigations, managing acute exacerbations, and understanding the importance of follow-up care and patient education.",
+    "escalation": "If a patient shows signs of severe respiratory distress, altered mental status, or does not respond to initial treatment, escalate care to senior medical staff and consider intensive care referral.",
+    "keySafetyConsiderations": "Ensure proper monitoring of oxygen saturation and vital signs during treatment. Be aware of the potential for rapid deterioration in obstructive airway disease and the need for timely intervention."
+  }
+}

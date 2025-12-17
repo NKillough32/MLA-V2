@@ -1,0 +1,132 @@
+{
+  "id": "diabetic_nephropathy",
+  "name": "Diabetic nephropathy",
+  "domains": [
+    "Endocrine",
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T19:30:54.245473",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetic nephropathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetic nephropathy is a progressive kidney disease caused by damage to the capillaries in the kidneys due to long-standing diabetes mellitus, leading to proteinuria, declining renal function, and ultimately end-stage renal disease.\n\n### Epidemiology\nDiabetic nephropathy affects approximately 30-40% of patients with diabetes, with a higher prevalence in type 1 diabetes compared to type 2. It is a leading cause of chronic kidney disease (CKD) and end-stage renal disease (ESRD) worldwide.\n\n### Essential Pathophysiology\nThe pathophysiology involves hyperglycemia leading to the accumulation of advanced glycation end-products (AGEs), activation of the renin-angiotensin-aldosterone system (RAAS), and increased glomerular pressure and hyperfiltration. This results in glomerulosclerosis, tubulointerstitial fibrosis, and ultimately nephron loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased urination (polyuria)\n- Increased thirst (polydipsia)\n- Fatigue\n- Nausea\n- Loss of appetite\n\n### Key Signs\n- Hypertension\n- Edema (swelling)\n- Proteinuria (detected on urinalysis)\n- Elevated serum creatinine\n- Anemia\n\n### Atypical Presentations\n- Asymptomatic until advanced stages\n- Acute kidney injury in the context of dehydration or infection\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in renal function\n- Severe hypertension\n- Signs of volume overload (e.g., pulmonary edema)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for proteinuria)\n- Serum creatinine and estimated glomerular filtration rate (eGFR)\n- Blood glucose and HbA1c levels\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Renal ultrasound (to assess kidney size and exclude other causes)\n\n### Specialist Tests\n- Renal biopsy (rarely indicated, usually in atypical cases)\n- Serum electrolytes and lipid profile\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of persistent proteinuria (≥30 mg/day) in a patient with diabetes, along with evidence of declining renal function (eGFR <60 mL/min/1.73m²).\n\n### Key Differential Diagnoses to Exclude\n- Hypertensive nephropathy\n- Glomerulonephritis\n- Polycystic kidney disease\n- Acute kidney injury from other causes\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Optimize blood glucose control\n- Manage hypertension (ACE inhibitors or ARBs)\n- Monitor renal function closely\n\n#### Second-line Treatments\n- Consider diuretics for volume overload\n- Adjust medications based on renal function\n\n#### Emergency Procedures\n- None specific for diabetic nephropathy, but dialysis may be required in end-stage renal disease\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Strict glycemic control (target HbA1c <7%)\n- Blood pressure control (target <130/80 mmHg) using ACE inhibitors or ARBs\n- Dietary modifications (low protein, low sodium)\n\n#### Second-line Treatments\n- Consider SGLT2 inhibitors for renal protection\n- Statins for dyslipidemia management\n\n#### Monitoring Requirements\n- Regular monitoring of renal function (eGFR) and proteinuria\n- Screening for cardiovascular disease\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces glomerular pressure and proteinuria\n- **Typical Dosing Range**: Start at 5-10 mg daily, titrate to target BP\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels after initiation.\n\n#### Metformin\n- **Mechanism of Action**: Improves insulin sensitivity and reduces hepatic glucose production\n- **Typical Dosing Range**: Start at 500 mg daily, titrate to max 2000 mg daily\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, risk of lactic acidosis in renal impairment\n- **When to Use vs. Alternatives**: Contraindicated if eGFR <30 mL/min.\n\n#### Canagliflozin\n- **Mechanism of Action**: SGLT2 inhibitor that reduces glucose reabsorption and has renal protective effects\n- **Typical Dosing Range**: Start at 100 mg daily, can increase to 300 mg\n- **Key Side Effects/Contraindications**: Genital infections, dehydration, risk of AKI\n- **When to Use vs. Alternatives**: Monitor renal function and adjust dosing accordingly.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of diabetic nephropathy varies; with early detection and management, progression can be slowed. However, many patients may progress to end-stage renal disease requiring dialysis or transplantation.\n\n### Important Complications to Watch For\n- End-stage renal disease\n- Cardiovascular disease\n- Electrolyte imbalances (e.g., hyperkalemia)\n- Increased risk of infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize early signs of diabetic nephropathy, initiate appropriate investigations, manage blood glucose and blood pressure, and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to nephrology if there is rapid decline in renal function, persistent proteinuria despite optimal management, or if dialysis is required.\n\n### Key Safety Considerations\nMonitor renal function and electrolytes when initiating or adjusting medications, especially ACE inhibitors, ARBs, and SGLT2 inhibitors. Be vigilant for signs of volume overload and adjust diuretics as necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetic nephropathy is a progressive kidney disease caused by damage to the capillaries in the kidneys due to long-standing diabetes mellitus, leading to proteinuria, declining renal function, and ultimately end-stage renal disease.",
+      "epidemiology": "Diabetic nephropathy affects approximately 30-40% of patients with diabetes, with a higher prevalence in type 1 diabetes compared to type 2. It is a leading cause of chronic kidney disease (CKD) and end-stage renal disease (ESRD) worldwide.",
+      "pathophysiology": "The pathophysiology involves hyperglycemia leading to the accumulation of advanced glycation end-products (AGEs), activation of the renin-angiotensin-aldosterone system (RAAS), and increased glomerular pressure and hyperfiltration. This results in glomerulosclerosis, tubulointerstitial fibrosis, and ultimately nephron loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased urination (polyuria)",
+        "Increased thirst (polydipsia)",
+        "Fatigue",
+        "Nausea",
+        "Loss of appetite"
+      ],
+      "signs": [
+        "Hypertension",
+        "Edema (swelling)",
+        "Proteinuria (detected on urinalysis)",
+        "Elevated serum creatinine",
+        "Anemia"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic until advanced stages",
+        "Acute kidney injury in the context of dehydration or infection"
+      ],
+      "redFlags": [
+        "Rapid deterioration in renal function",
+        "Severe hypertension",
+        "Signs of volume overload (e.g., pulmonary edema)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for proteinuria)",
+        "Serum creatinine and estimated glomerular filtration rate (eGFR)",
+        "Blood glucose and HbA1c levels"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Renal ultrasound (to assess kidney size and exclude other causes)"
+      ],
+      "specialistTests": [
+        "Renal biopsy (rarely indicated, usually in atypical cases)",
+        "Serum electrolytes and lipid profile"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of persistent proteinuria (≥30 mg/day) in a patient with diabetes, along with evidence of declining renal function (eGFR <60 mL/min/1.73m²).",
+      "differentials": [
+        "Hypertensive nephropathy",
+        "Glomerulonephritis",
+        "Polycystic kidney disease",
+        "Acute kidney injury from other causes"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Optimize blood glucose control",
+          "Manage hypertension (ACE inhibitors or ARBs)",
+          "Monitor renal function closely"
+        ],
+        "secondLine": [
+          "Consider diuretics for volume overload",
+          "Adjust medications based on renal function"
+        ],
+        "procedures": [
+          "None specific for diabetic nephropathy, but dialysis may be required in end-stage renal disease"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Strict glycemic control (target HbA1c <7%)",
+          "Blood pressure control (target <130/80 mmHg) using ACE inhibitors or ARBs",
+          "Dietary modifications (low protein, low sodium)"
+        ],
+        "secondLine": [
+          "Consider SGLT2 inhibitors for renal protection",
+          "Statins for dyslipidemia management"
+        ],
+        "monitoring": [
+          "Regular monitoring of renal function (eGFR) and proteinuria",
+          "Screening for cardiovascular disease"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces glomerular pressure and proteinuria",
+          "dosing": "Start at 5-10 mg daily, titrate to target BP",
+          "sideEffects": "Cough, hyperkalemia, renal impairment",
+          "notes": "Monitor renal function and potassium levels after initiation."
+        },
+        {
+          "name": "Metformin",
+          "mechanism": "Improves insulin sensitivity and reduces hepatic glucose production",
+          "dosing": "Start at 500 mg daily, titrate to max 2000 mg daily",
+          "sideEffects": "Gastrointestinal upset, risk of lactic acidosis in renal impairment",
+          "notes": "Contraindicated if eGFR <30 mL/min."
+        },
+        {
+          "name": "Canagliflozin",
+          "mechanism": "SGLT2 inhibitor that reduces glucose reabsorption and has renal protective effects",
+          "dosing": "Start at 100 mg daily, can increase to 300 mg",
+          "sideEffects": "Genital infections, dehydration, risk of AKI",
+          "notes": "Monitor renal function and adjust dosing accordingly."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "The prognosis of diabetic nephropathy varies; with early detection and management, progression can be slowed. However, many patients may progress to end-stage renal disease requiring dialysis or transplantation.",
+    "complications": [
+      "End-stage renal disease",
+      "Cardiovascular disease",
+      "Electrolyte imbalances (e.g., hyperkalemia)",
+      "Increased risk of infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize early signs of diabetic nephropathy, initiate appropriate investigations, manage blood glucose and blood pressure, and refer to specialists when necessary.",
+    "escalation": "Refer to nephrology if there is rapid decline in renal function, persistent proteinuria despite optimal management, or if dialysis is required.",
+    "keySafetyConsiderations": "Monitor renal function and electrolytes when initiating or adjusting medications, especially ACE inhibitors, ARBs, and SGLT2 inhibitors. Be vigilant for signs of volume overload and adjust diuretics as necessary."
+  }
+}

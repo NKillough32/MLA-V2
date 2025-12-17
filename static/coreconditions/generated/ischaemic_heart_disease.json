@@ -1,0 +1,162 @@
+{
+  "id": "ischaemic_heart_disease",
+  "name": "Ischaemic heart disease",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:06:46.027080",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ischaemic heart disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIschaemic heart disease (IHD), also known as coronary artery disease (CAD), is a condition characterized by reduced blood flow to the heart muscle due to narrowing or blockage of the coronary arteries, often caused by atherosclerosis.\n\n### Epidemiology\nIHD is one of the leading causes of morbidity and mortality worldwide. It accounts for approximately 16% of all deaths globally, with higher prevalence in older adults and those with risk factors such as hypertension, diabetes, smoking, and hyperlipidaemia.\n\n### Essential Pathophysiology\nThe pathophysiology of IHD involves the accumulation of atheromatous plaques in the coronary arteries, leading to luminal narrowing and reduced blood flow. This can result in myocardial ischaemia, which may manifest as angina or myocardial infarction (MI) when blood flow is critically reduced.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chest pain (angina)\n- Shortness of breath\n- Fatigue\n- Palpitations\n- Nausea\n\n### Key Signs\n- Tachycardia\n- Hypertension\n- Diaphoresis\n- Pallor\n- S3 or S4 heart sounds\n\n### Atypical Presentations\n- Epigastric pain\n- Jaw pain\n- Back pain\n- Fatigue without chest pain\n\n### Red Flags Requiring Immediate Action\n- Severe, sudden onset chest pain\n- Chest pain radiating to the arm, neck, or jaw\n- Syncope or near-syncope\n- Signs of heart failure (e.g., peripheral oedema, jugular venous distension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Cardiac biomarkers (e.g., troponin)\n- Chest X-ray\n\n### Second-line Investigations\n- Exercise tolerance test (ETT)\n- Echocardiography\n- Coronary angiography\n\n### Specialist Tests\n- Cardiac MRI\n- CT coronary angiography\n- Nuclear stress testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of IHD is based on clinical presentation, ECG changes, and elevated cardiac biomarkers in the context of chest pain. A definitive diagnosis may require coronary angiography showing significant stenosis.\n\n### Key Differential Diagnoses to Exclude\n- Pulmonary embolism\n- Aortic dissection\n- Pneumothorax\n- Gastroesophageal reflux disease (GERD)\n- Pericarditis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Aspirin 300 mg (chewed)\n- Nitroglycerin (sublingual)\n- Oxygen therapy if hypoxic\n\n#### Second-line Treatments\n- Morphine for pain relief\n- Beta-blockers (if not contraindicated)\n- Antiplatelet therapy (e.g., clopidogrel)\n\n#### Emergency Procedures\n- Coronary angioplasty and stenting (PCI)\n- Coronary artery bypass grafting (CABG)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, smoking cessation)\n- Beta-blockers\n- ACE inhibitors\n\n#### Second-line Treatments\n- Statins\n- Calcium channel blockers\n- Long-acting nitrates\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control\n- Assessment of cardiovascular risk factors\n- Adherence to medication\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking thromboxane A2 production.\n- **Typical Dosing Range**: 75-325 mg daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions.\n- **When to Use vs. Alternatives**: Use with caution in patients with a history of peptic ulcer disease.\n\n#### Nitroglycerin\n- **Mechanism of Action**: Vasodilator that reduces myocardial oxygen demand by decreasing preload.\n- **Typical Dosing Range**: 0.3-0.6 mg sublingually as needed for angina.\n- **Key Side Effects/Contraindications**: Headache, hypotension, tachycardia.\n- **When to Use vs. Alternatives**: Avoid use with phosphodiesterase inhibitors.\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and myocardial contractility, decreasing oxygen demand.\n- **Typical Dosing Range**: Metoprolol 25-100 mg daily, titrate as needed.\n- **Key Side Effects/Contraindications**: Bradycardia, fatigue, depression.\n- **When to Use vs. Alternatives**: Contraindicated in severe asthma.\n\n#### Statins\n- **Mechanism of Action**: Lower cholesterol levels and stabilize atherosclerotic plaques.\n- **Typical Dosing Range**: Atorvastatin 10-80 mg daily.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Monitor liver function tests.\n\n### Procedures\n\n#### Coronary Angioplasty and Stenting (PCI)\n- **What it Involves**: A minimally invasive procedure to open narrowed coronary arteries using a balloon and placing a stent.\n- **Indications**: Acute coronary syndrome, significant coronary artery stenosis.\n- **Key Risks/Complications**: Bleeding, vascular complications, restenosis.\n\n#### Coronary Artery Bypass Grafting (CABG)\n- **What it Involves**: Surgical procedure to bypass blocked coronary arteries using grafts from other vessels.\n- **Indications**: Severe coronary artery disease not amenable to PCI.\n- **Key Risks/Complications**: Infection, stroke, graft failure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of IHD varies based on the severity of the disease, presence of comorbidities, and adherence to treatment. Early intervention and lifestyle changes can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Myocardial infarction\n- Heart failure\n- Arrhythmias\n- Sudden cardiac death\n- Recurrent angina\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of IHD, performing initial assessments, and initiating management. They should also be aware of when to escalate care to senior colleagues or specialists.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with acute chest pain and signs of ischaemia or myocardial infarction, immediate escalation to a senior clinician and activation of the cardiac emergency protocol is essential.\n\n### Key Safety Considerations\nEnsure timely administration of antiplatelet therapy in acute settings, monitor for signs of complications, and maintain clear communication with the multidisciplinary team regarding patient management.\n",
+  "content": {
+    "overview": {
+      "definition": "Ischaemic heart disease (IHD), also known as coronary artery disease (CAD), is a condition characterized by reduced blood flow to the heart muscle due to narrowing or blockage of the coronary arteries, often caused by atherosclerosis.",
+      "epidemiology": "IHD is one of the leading causes of morbidity and mortality worldwide. It accounts for approximately 16% of all deaths globally, with higher prevalence in older adults and those with risk factors such as hypertension, diabetes, smoking, and hyperlipidaemia.",
+      "pathophysiology": "The pathophysiology of IHD involves the accumulation of atheromatous plaques in the coronary arteries, leading to luminal narrowing and reduced blood flow. This can result in myocardial ischaemia, which may manifest as angina or myocardial infarction (MI) when blood flow is critically reduced."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chest pain (angina)",
+        "Shortness of breath",
+        "Fatigue",
+        "Palpitations",
+        "Nausea"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypertension",
+        "Diaphoresis",
+        "Pallor",
+        "S3 or S4 heart sounds"
+      ],
+      "atypicalPresentations": [
+        "Epigastric pain",
+        "Jaw pain",
+        "Back pain",
+        "Fatigue without chest pain"
+      ],
+      "redFlags": [
+        "Severe, sudden onset chest pain",
+        "Chest pain radiating to the arm, neck, or jaw",
+        "Syncope or near-syncope",
+        "Signs of heart failure (e.g., peripheral oedema, jugular venous distension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Cardiac biomarkers (e.g., troponin)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "Exercise tolerance test (ETT)",
+        "Echocardiography",
+        "Coronary angiography"
+      ],
+      "specialistTests": [
+        "Cardiac MRI",
+        "CT coronary angiography",
+        "Nuclear stress testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of IHD is based on clinical presentation, ECG changes, and elevated cardiac biomarkers in the context of chest pain. A definitive diagnosis may require coronary angiography showing significant stenosis.",
+      "differentials": [
+        "Pulmonary embolism",
+        "Aortic dissection",
+        "Pneumothorax",
+        "Gastroesophageal reflux disease (GERD)",
+        "Pericarditis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Aspirin 300 mg (chewed)",
+          "Nitroglycerin (sublingual)",
+          "Oxygen therapy if hypoxic"
+        ],
+        "secondLine": [
+          "Morphine for pain relief",
+          "Beta-blockers (if not contraindicated)",
+          "Antiplatelet therapy (e.g., clopidogrel)"
+        ],
+        "procedures": [
+          "Coronary angioplasty and stenting (PCI)",
+          "Coronary artery bypass grafting (CABG)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, smoking cessation)",
+          "Beta-blockers",
+          "ACE inhibitors"
+        ],
+        "secondLine": [
+          "Statins",
+          "Calcium channel blockers",
+          "Long-acting nitrates"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control",
+          "Assessment of cardiovascular risk factors",
+          "Adherence to medication"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation by blocking thromboxane A2 production.",
+          "dosing": "75-325 mg daily.",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions.",
+          "notes": "Use with caution in patients with a history of peptic ulcer disease."
+        },
+        {
+          "name": "Nitroglycerin",
+          "mechanism": "Vasodilator that reduces myocardial oxygen demand by decreasing preload.",
+          "dosing": "0.3-0.6 mg sublingually as needed for angina.",
+          "sideEffects": "Headache, hypotension, tachycardia.",
+          "notes": "Avoid use with phosphodiesterase inhibitors."
+        },
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and myocardial contractility, decreasing oxygen demand.",
+          "dosing": "Metoprolol 25-100 mg daily, titrate as needed.",
+          "sideEffects": "Bradycardia, fatigue, depression.",
+          "notes": "Contraindicated in severe asthma."
+        },
+        {
+          "name": "Statins",
+          "mechanism": "Lower cholesterol levels and stabilize atherosclerotic plaques.",
+          "dosing": "Atorvastatin 10-80 mg daily.",
+          "sideEffects": "Myopathy, liver enzyme elevation.",
+          "notes": "Monitor liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Coronary Angioplasty and Stenting (PCI)",
+          "description": "A minimally invasive procedure to open narrowed coronary arteries using a balloon and placing a stent.",
+          "indications": "Acute coronary syndrome, significant coronary artery stenosis.",
+          "risks": "Bleeding, vascular complications, restenosis."
+        },
+        {
+          "name": "Coronary Artery Bypass Grafting (CABG)",
+          "description": "Surgical procedure to bypass blocked coronary arteries using grafts from other vessels.",
+          "indications": "Severe coronary artery disease not amenable to PCI.",
+          "risks": "Infection, stroke, graft failure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of IHD varies based on the severity of the disease, presence of comorbidities, and adherence to treatment. Early intervention and lifestyle changes can significantly improve outcomes.",
+    "complications": [
+      "Myocardial infarction",
+      "Heart failure",
+      "Arrhythmias",
+      "Sudden cardiac death",
+      "Recurrent angina"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of IHD, performing initial assessments, and initiating management. They should also be aware of when to escalate care to senior colleagues or specialists.",
+    "escalation": "If a patient presents with acute chest pain and signs of ischaemia or myocardial infarction, immediate escalation to a senior clinician and activation of the cardiac emergency protocol is essential.",
+    "keySafetyConsiderations": "Ensure timely administration of antiplatelet therapy in acute settings, monitor for signs of complications, and maintain clear communication with the multidisciplinary team regarding patient management."
+  }
+}

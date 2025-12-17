@@ -1,0 +1,129 @@
+{
+  "id": "inherited_thrombophilia",
+  "name": "Inherited thrombophilia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:51:36.316218",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Inherited thrombophilia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInherited thrombophilia refers to a genetic predisposition to develop thrombosis due to abnormalities in the coagulation cascade. Common inherited thrombophilias include Factor V Leiden mutation, Prothrombin gene mutation, and deficiencies in natural anticoagulants such as Protein C, Protein S, and Antithrombin.\n\n### Epidemiology\nInherited thrombophilia affects approximately 1-5% of the general population, with varying prevalence among different ethnic groups. Factor V Leiden is the most common inherited thrombophilia, particularly in Caucasians, while Antithrombin deficiency is rarer.\n\n### Essential Pathophysiology\nInherited thrombophilia results from genetic mutations that lead to an imbalance in the coagulation system, promoting a hypercoagulable state. For example, Factor V Leiden mutation causes resistance to activated Protein C, leading to increased thrombin generation and clot formation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Deep vein thrombosis (DVT)\n- Pulmonary embolism (PE)\n- Recurrent miscarriages\n- Thrombosis at unusual sites (e.g., cerebral veins)\n\n### Key Signs\n- Swelling, pain, and tenderness in the affected limb (DVT)\n- Hypoxia or chest pain (PE)\n- Signs of venous insufficiency\n\n### Atypical Presentations\n- Thrombosis in young patients (<45 years)\n- Recurrent thrombotic events despite anticoagulation\n- Thrombosis during pregnancy or postpartum\n\n### Red Flags Requiring Immediate Action\n- Family history of thrombosis\n- Unexplained recurrent miscarriages\n- Thrombosis in unusual sites (e.g., mesenteric vein)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- D-dimer (to rule out acute thrombosis)\n- Ultrasound Doppler (for DVT)\n- CT pulmonary angiography (for PE)\n\n### Second-line Investigations\n- Genetic testing for Factor V Leiden, Prothrombin mutation, Protein C, Protein S, and Antithrombin levels\n\n### Specialist Tests\n- Thrombin time\n- Activated partial thromboplastin time (aPTT)\n- Prothrombin time (PT)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of inherited thrombophilia is based on the presence of a genetic mutation or deficiency in natural anticoagulants, along with a clinical history of thrombosis or related complications.\n\n### Key Differential Diagnoses to Exclude\n- Acquired thrombophilia (e.g., antiphospholipid syndrome, malignancy)\n- Hyperhomocysteinemia\n- Myeloproliferative disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Anticoagulation with low molecular weight heparin (LMWH) or unfractionated heparin\n\n#### Second-line Treatments\n- Transition to oral anticoagulants (e.g., warfarin, direct oral anticoagulants)\n\n#### Emergency Procedures\n- Thrombectomy (in cases of massive PE or limb-threatening DVT)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term anticoagulation therapy (e.g., warfarin, direct oral anticoagulants)\n\n#### Second-line Treatments\n- Consideration of inferior vena cava (IVC) filter in patients with recurrent thrombosis despite anticoagulation\n\n#### Monitoring Requirements\n- Regular INR checks for warfarin therapy\n- Assessment of bleeding risk and thrombotic events\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist that inhibits factors II, VII, IX, and X\n- **Typical Dosing Range**: Initial: 5-10 mg daily; maintenance: adjust to achieve INR 2-3\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, teratogenic effects\n- **When to Use vs. Alternatives**: Requires regular INR monitoring; interactions with many medications and foods.\n\n#### Rivaroxaban\n- **Mechanism of Action**: Direct factor Xa inhibitor\n- **Typical Dosing Range**: Initial: 15 mg twice daily for 3 weeks, then 20 mg once daily\n- **Key Side Effects/Contraindications**: Bleeding, liver enzyme elevation\n- **When to Use vs. Alternatives**: No routine monitoring required.\n\n#### Dabigatran\n- **Mechanism of Action**: Direct thrombin inhibitor\n- **Typical Dosing Range**: Initial: 150 mg twice daily after 5-10 days of parenteral anticoagulation\n- **Key Side Effects/Contraindications**: Bleeding, gastrointestinal upset\n- **When to Use vs. Alternatives**: No routine monitoring required; use with caution in renal impairment.\n\n### Procedures\n\n#### Thrombectomy\n- **What it Involves**: Surgical removal of a thrombus from a blood vessel\n- **Indications**: Massive pulmonary embolism or limb-threatening DVT\n- **Key Risks/Complications**: Bleeding, infection, vascular injury\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, patients with inherited thrombophilia can lead normal lives, but they remain at increased risk for recurrent thrombotic events. Lifelong anticoagulation may be necessary in some cases.\n\n### Important Complications to Watch For\n- Recurrent venous thromboembolism\n- Post-thrombotic syndrome\n- Chronic venous insufficiency\n- Pregnancy complications (e.g., preeclampsia, placental abruption)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of thrombosis, initiate appropriate investigations, and manage anticoagulation therapy. They should also educate patients about the importance of adherence to treatment and lifestyle modifications to reduce thrombotic risk.\n\n### When to Escalate to Senior/Specialist\nRefer to a hematologist for complex cases, especially those with recurrent thrombosis or complications during pregnancy. Escalate care for patients with significant bleeding or complications from anticoagulation.\n\n### Key Safety Considerations\nMonitor for signs of bleeding, especially in patients on anticoagulation. Educate patients on recognizing symptoms of thrombosis and the importance of adherence to therapy. Ensure appropriate follow-up for INR monitoring in patients on warfarin.\n",
+  "content": {
+    "overview": {
+      "definition": "Inherited thrombophilia refers to a genetic predisposition to develop thrombosis due to abnormalities in the coagulation cascade. Common inherited thrombophilias include Factor V Leiden mutation, Prothrombin gene mutation, and deficiencies in natural anticoagulants such as Protein C, Protein S, and Antithrombin.",
+      "epidemiology": "Inherited thrombophilia affects approximately 1-5% of the general population, with varying prevalence among different ethnic groups. Factor V Leiden is the most common inherited thrombophilia, particularly in Caucasians, while Antithrombin deficiency is rarer.",
+      "pathophysiology": "Inherited thrombophilia results from genetic mutations that lead to an imbalance in the coagulation system, promoting a hypercoagulable state. For example, Factor V Leiden mutation causes resistance to activated Protein C, leading to increased thrombin generation and clot formation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Deep vein thrombosis (DVT)",
+        "Pulmonary embolism (PE)",
+        "Recurrent miscarriages",
+        "Thrombosis at unusual sites (e.g., cerebral veins)"
+      ],
+      "signs": [
+        "Swelling, pain, and tenderness in the affected limb (DVT)",
+        "Hypoxia or chest pain (PE)",
+        "Signs of venous insufficiency"
+      ],
+      "atypicalPresentations": [
+        "Thrombosis in young patients (<45 years)",
+        "Recurrent thrombotic events despite anticoagulation",
+        "Thrombosis during pregnancy or postpartum"
+      ],
+      "redFlags": [
+        "Family history of thrombosis",
+        "Unexplained recurrent miscarriages",
+        "Thrombosis in unusual sites (e.g., mesenteric vein)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "D-dimer (to rule out acute thrombosis)",
+        "Ultrasound Doppler (for DVT)",
+        "CT pulmonary angiography (for PE)"
+      ],
+      "secondLine": [
+        "Genetic testing for Factor V Leiden, Prothrombin mutation, Protein C, Protein S, and Antithrombin levels"
+      ],
+      "specialistTests": [
+        "Thrombin time",
+        "Activated partial thromboplastin time (aPTT)",
+        "Prothrombin time (PT)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of inherited thrombophilia is based on the presence of a genetic mutation or deficiency in natural anticoagulants, along with a clinical history of thrombosis or related complications.",
+      "differentials": [
+        "Acquired thrombophilia (e.g., antiphospholipid syndrome, malignancy)",
+        "Hyperhomocysteinemia",
+        "Myeloproliferative disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Anticoagulation with low molecular weight heparin (LMWH) or unfractionated heparin"
+        ],
+        "secondLine": [
+          "Transition to oral anticoagulants (e.g., warfarin, direct oral anticoagulants)"
+        ],
+        "procedures": [
+          "Thrombectomy (in cases of massive PE or limb-threatening DVT)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term anticoagulation therapy (e.g., warfarin, direct oral anticoagulants)"
+        ],
+        "secondLine": [
+          "Consideration of inferior vena cava (IVC) filter in patients with recurrent thrombosis despite anticoagulation"
+        ],
+        "monitoring": [
+          "Regular INR checks for warfarin therapy",
+          "Assessment of bleeding risk and thrombotic events"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist that inhibits factors II, VII, IX, and X",
+          "dosing": "Initial: 5-10 mg daily; maintenance: adjust to achieve INR 2-3",
+          "sideEffects": "Bleeding, skin necrosis, teratogenic effects",
+          "notes": "Requires regular INR monitoring; interactions with many medications and foods."
+        },
+        {
+          "name": "Rivaroxaban",
+          "mechanism": "Direct factor Xa inhibitor",
+          "dosing": "Initial: 15 mg twice daily for 3 weeks, then 20 mg once daily",
+          "sideEffects": "Bleeding, liver enzyme elevation",
+          "notes": "No routine monitoring required."
+        },
+        {
+          "name": "Dabigatran",
+          "mechanism": "Direct thrombin inhibitor",
+          "dosing": "Initial: 150 mg twice daily after 5-10 days of parenteral anticoagulation",
+          "sideEffects": "Bleeding, gastrointestinal upset",
+          "notes": "No routine monitoring required; use with caution in renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thrombectomy",
+          "description": "Surgical removal of a thrombus from a blood vessel",
+          "indications": "Massive pulmonary embolism or limb-threatening DVT",
+          "risks": "Bleeding, infection, vascular injury"
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, patients with inherited thrombophilia can lead normal lives, but they remain at increased risk for recurrent thrombotic events. Lifelong anticoagulation may be necessary in some cases.",
+    "complications": [
+      "Recurrent venous thromboembolism",
+      "Post-thrombotic syndrome",
+      "Chronic venous insufficiency",
+      "Pregnancy complications (e.g., preeclampsia, placental abruption)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of thrombosis, initiate appropriate investigations, and manage anticoagulation therapy. They should also educate patients about the importance of adherence to treatment and lifestyle modifications to reduce thrombotic risk.",
+    "escalation": "Refer to a hematologist for complex cases, especially those with recurrent thrombosis or complications during pregnancy. Escalate care for patients with significant bleeding or complications from anticoagulation.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding, especially in patients on anticoagulation. Educate patients on recognizing symptoms of thrombosis and the importance of adherence to therapy. Ensure appropriate follow-up for INR monitoring in patients on warfarin."
+  }
+}

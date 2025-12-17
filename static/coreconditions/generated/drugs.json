@@ -1,0 +1,144 @@
+{
+  "id": "drugs",
+  "name": "Drugs",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:09:03.192139",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Drugs: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDrugs in psychiatry refer to pharmacological agents used to treat various mental health disorders, including mood disorders, anxiety disorders, psychotic disorders, and neurodevelopmental disorders.\n\n### Epidemiology\nMental health disorders are prevalent worldwide, affecting approximately 1 in 4 individuals at some point in their lives. The use of psychiatric drugs is common, with millions prescribed annually for conditions such as depression, anxiety, and schizophrenia.\n\n### Essential Pathophysiology\nPsychiatric disorders often involve dysregulation of neurotransmitters in the brain, including serotonin, dopamine, norepinephrine, and gamma-aminobutyric acid (GABA). Drugs target these neurotransmitter systems to alleviate symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Depressed mood\n- Anxiety\n- Hallucinations\n- Delusions\n- Mood swings\n- Social withdrawal\n- Changes in appetite or sleep patterns\n\n### Key Signs\n- Poor concentration\n- Affect changes\n- Psychomotor agitation or retardation\n- Neglect of personal hygiene\n- Increased or decreased speech\n\n### Atypical Presentations\n- Somatic complaints without clear medical cause\n- Irritability in children and adolescents\n- Substance use as a coping mechanism\n\n### Red Flags Requiring Immediate Action\n- Suicidal ideation\n- Self-harm behaviors\n- Severe agitation or aggression\n- Psychotic symptoms (e.g., hallucinations, delusions)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental status examination\n- Standardized screening tools (e.g., PHQ-9 for depression, GAD-7 for anxiety)\n\n### Second-line Investigations\n- Laboratory tests (e.g., thyroid function tests, complete blood count) to rule out medical causes\n- Substance use screening\n\n### Specialist Tests\n- Neuroimaging (e.g., MRI, CT) if indicated by atypical presentations or severe symptoms\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 or ICD-10 criteria, which include specific symptom patterns and duration for each disorder.\n\n### Key Differential Diagnoses to Exclude\n- Bipolar disorder vs. unipolar depression\n- Generalized anxiety disorder vs. panic disorder\n- Schizophrenia vs. schizoaffective disorder\n- Substance-induced mood disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Benzodiazepines for acute anxiety or agitation\n- Antipsychotics for acute psychosis\n\n#### Second-line Treatments\n- Mood stabilizers for acute mania\n- Antidepressants for severe depression\n\n#### Emergency Procedures\n- Electroconvulsive therapy (ECT) for severe depression or mania unresponsive to medications\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- SSRIs (Selective Serotonin Reuptake Inhibitors) for depression and anxiety\n- SNRIs (Serotonin-Norepinephrine Reuptake Inhibitors) for chronic pain and depression\n\n#### Second-line Treatments\n- Atypical antipsychotics for schizophrenia or bipolar disorder\n- Mood stabilizers for bipolar disorder\n\n#### Monitoring Requirements\n- Regular follow-up for medication adherence and side effects\n- Assessment of treatment efficacy and adjustment of dosages as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine\n- **Mechanism of Action**: SSRI that increases serotonin levels in the brain\n- **Typical Dosing Range**: Starting dose 20 mg daily, can increase to 60 mg\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, weight gain\n- **When to Use vs. Alternatives**: First-line treatment for major depressive disorder and anxiety disorders.\n\n#### Sertraline\n- **Mechanism of Action**: SSRI that inhibits serotonin reuptake\n- **Typical Dosing Range**: Starting dose 50 mg daily, can increase to 200 mg\n- **Key Side Effects/Contraindications**: Diarrhea, insomnia, sexual dysfunction\n- **When to Use vs. Alternatives**: Effective for depression, OCD, and PTSD.\n\n#### Lithium\n- **Mechanism of Action**: Mood stabilizer that affects neurotransmitter release\n- **Typical Dosing Range**: Initial dose 300 mg bid, adjust based on serum levels (therapeutic range 0.6-1.2 mEq/L)\n- **Key Side Effects/Contraindications**: Tremor, weight gain, renal impairment\n- **When to Use vs. Alternatives**: Gold standard for bipolar disorder.\n\n#### Olanzapine\n- **Mechanism of Action**: Atypical antipsychotic that blocks dopamine and serotonin receptors\n- **Typical Dosing Range**: Starting dose 10 mg daily, can increase to 20 mg\n- **Key Side Effects/Contraindications**: Weight gain, metabolic syndrome, sedation\n- **When to Use vs. Alternatives**: Used for schizophrenia and bipolar disorder.\n\n### Procedures\n\n#### Electroconvulsive Therapy (ECT)\n- **What it Involves**: A procedure that involves sending small electric currents through the brain to trigger a brief seizure, used to treat severe depression and other mental illnesses.\n- **Indications**: Severe depression, treatment-resistant depression, catatonia, severe mania.\n- **Key Risks/Complications**: Memory loss, confusion, physical side effects such as headache or muscle soreness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many patients experience significant improvement in symptoms and quality of life. However, some may have chronic conditions requiring long-term management.\n\n### Important Complications to Watch For\n- Medication side effects (e.g., metabolic syndrome, tardive dyskinesia)\n- Relapse of mental health symptoms\n- Suicidal ideation or behavior in severe cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should conduct thorough assessments, initiate treatment under supervision, monitor for side effects, and provide psychoeducation to patients and families.\n\n### When to Escalate to Senior/Specialist\nIf a patient exhibits severe symptoms, such as suicidal ideation or significant side effects from medications, escalate care to a psychiatrist or senior clinician immediately.\n\n### Key Safety Considerations\nMonitor for side effects, especially in the early stages of treatment. Assess for risk of self-harm or harm to others, and ensure regular follow-up appointments to evaluate treatment efficacy and adherence.\n",
+  "content": {
+    "overview": {
+      "definition": "Drugs in psychiatry refer to pharmacological agents used to treat various mental health disorders, including mood disorders, anxiety disorders, psychotic disorders, and neurodevelopmental disorders.",
+      "epidemiology": "Mental health disorders are prevalent worldwide, affecting approximately 1 in 4 individuals at some point in their lives. The use of psychiatric drugs is common, with millions prescribed annually for conditions such as depression, anxiety, and schizophrenia.",
+      "pathophysiology": "Psychiatric disorders often involve dysregulation of neurotransmitters in the brain, including serotonin, dopamine, norepinephrine, and gamma-aminobutyric acid (GABA). Drugs target these neurotransmitter systems to alleviate symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Depressed mood",
+        "Anxiety",
+        "Hallucinations",
+        "Delusions",
+        "Mood swings",
+        "Social withdrawal",
+        "Changes in appetite or sleep patterns"
+      ],
+      "signs": [
+        "Poor concentration",
+        "Affect changes",
+        "Psychomotor agitation or retardation",
+        "Neglect of personal hygiene",
+        "Increased or decreased speech"
+      ],
+      "atypicalPresentations": [
+        "Somatic complaints without clear medical cause",
+        "Irritability in children and adolescents",
+        "Substance use as a coping mechanism"
+      ],
+      "redFlags": [
+        "Suicidal ideation",
+        "Self-harm behaviors",
+        "Severe agitation or aggression",
+        "Psychotic symptoms (e.g., hallucinations, delusions)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental status examination",
+        "Standardized screening tools (e.g., PHQ-9 for depression, GAD-7 for anxiety)"
+      ],
+      "secondLine": [
+        "Laboratory tests (e.g., thyroid function tests, complete blood count) to rule out medical causes",
+        "Substance use screening"
+      ],
+      "specialistTests": [
+        "Neuroimaging (e.g., MRI, CT) if indicated by atypical presentations or severe symptoms"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 or ICD-10 criteria, which include specific symptom patterns and duration for each disorder.",
+      "differentials": [
+        "Bipolar disorder vs. unipolar depression",
+        "Generalized anxiety disorder vs. panic disorder",
+        "Schizophrenia vs. schizoaffective disorder",
+        "Substance-induced mood disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Benzodiazepines for acute anxiety or agitation",
+          "Antipsychotics for acute psychosis"
+        ],
+        "secondLine": [
+          "Mood stabilizers for acute mania",
+          "Antidepressants for severe depression"
+        ],
+        "procedures": [
+          "Electroconvulsive therapy (ECT) for severe depression or mania unresponsive to medications"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "SSRIs (Selective Serotonin Reuptake Inhibitors) for depression and anxiety",
+          "SNRIs (Serotonin-Norepinephrine Reuptake Inhibitors) for chronic pain and depression"
+        ],
+        "secondLine": [
+          "Atypical antipsychotics for schizophrenia or bipolar disorder",
+          "Mood stabilizers for bipolar disorder"
+        ],
+        "monitoring": [
+          "Regular follow-up for medication adherence and side effects",
+          "Assessment of treatment efficacy and adjustment of dosages as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine",
+          "mechanism": "SSRI that increases serotonin levels in the brain",
+          "dosing": "Starting dose 20 mg daily, can increase to 60 mg",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, weight gain",
+          "notes": "First-line treatment for major depressive disorder and anxiety disorders."
+        },
+        {
+          "name": "Sertraline",
+          "mechanism": "SSRI that inhibits serotonin reuptake",
+          "dosing": "Starting dose 50 mg daily, can increase to 200 mg",
+          "sideEffects": "Diarrhea, insomnia, sexual dysfunction",
+          "notes": "Effective for depression, OCD, and PTSD."
+        },
+        {
+          "name": "Lithium",
+          "mechanism": "Mood stabilizer that affects neurotransmitter release",
+          "dosing": "Initial dose 300 mg bid, adjust based on serum levels (therapeutic range 0.6-1.2 mEq/L)",
+          "sideEffects": "Tremor, weight gain, renal impairment",
+          "notes": "Gold standard for bipolar disorder."
+        },
+        {
+          "name": "Olanzapine",
+          "mechanism": "Atypical antipsychotic that blocks dopamine and serotonin receptors",
+          "dosing": "Starting dose 10 mg daily, can increase to 20 mg",
+          "sideEffects": "Weight gain, metabolic syndrome, sedation",
+          "notes": "Used for schizophrenia and bipolar disorder."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electroconvulsive Therapy (ECT)",
+          "description": "A procedure that involves sending small electric currents through the brain to trigger a brief seizure, used to treat severe depression and other mental illnesses.",
+          "indications": "Severe depression, treatment-resistant depression, catatonia, severe mania.",
+          "risks": "Memory loss, confusion, physical side effects such as headache or muscle soreness."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many patients experience significant improvement in symptoms and quality of life. However, some may have chronic conditions requiring long-term management.",
+    "complications": [
+      "Medication side effects (e.g., metabolic syndrome, tardive dyskinesia)",
+      "Relapse of mental health symptoms",
+      "Suicidal ideation or behavior in severe cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should conduct thorough assessments, initiate treatment under supervision, monitor for side effects, and provide psychoeducation to patients and families.",
+    "escalation": "If a patient exhibits severe symptoms, such as suicidal ideation or significant side effects from medications, escalate care to a psychiatrist or senior clinician immediately.",
+    "keySafetyConsiderations": "Monitor for side effects, especially in the early stages of treatment. Assess for risk of self-harm or harm to others, and ensure regular follow-up appointments to evaluate treatment efficacy and adherence."
+  }
+}

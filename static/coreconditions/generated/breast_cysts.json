@@ -1,0 +1,112 @@
+{
+  "id": "breast_cysts",
+  "name": "Breast cysts",
+  "domains": [
+    "Breast"
+  ],
+  "generatedAt": "2025-12-17T21:20:00.325367",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Breast cysts: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBreast cysts are fluid-filled sacs within the breast tissue, commonly benign and often asymptomatic. They can vary in size and may be single or multiple.\n\n### Epidemiology\nBreast cysts are most prevalent in women aged 30-50 years, particularly those with fibrocystic breast changes. They are less common in postmenopausal women unless on hormone replacement therapy.\n\n### Essential Pathophysiology\nBreast cysts develop due to the dilation of terminal duct lobular units, often influenced by hormonal changes during the menstrual cycle. They can be simple (thin-walled, anechoic on ultrasound) or complex (thicker walls, internal echoes).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Breast lump or mass\n- Breast pain or tenderness\n- Changes in breast size or shape\n\n### Key Signs\n- Palpable, smooth, mobile lump\n- Possible tenderness on palpation\n- May be associated with nipple discharge\n\n### Atypical Presentations\n- Cysts may be asymptomatic and found incidentally on imaging\n- Complex cysts may present with more significant symptoms or concerns\n\n### Red Flags Requiring Immediate Action\n- Persistent lump that does not resolve\n- Nipple discharge that is bloody or unilateral\n- Skin changes over the breast or nipple\n- Lump in a woman over 50 years old\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical breast examination\n- Ultrasound of the breast\n\n### Second-line Investigations\n- Mammography (if over 30 years or concerning features)\n- Fine needle aspiration (FNA) for cytology or fluid analysis\n\n### Specialist Tests\n- MRI of the breast (if complex cysts or further evaluation needed)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. A simple cyst is typically anechoic on ultrasound, while complex cysts may require further evaluation.\n\n### Key Differential Diagnoses to Exclude\n- Fibroadenoma\n- Breast abscess\n- Phyllodes tumor\n- Malignant breast lesions\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and reassurance for simple cysts\n- Fine needle aspiration (FNA) for symptomatic cysts\n\n#### Second-line Treatments\n- Surgical excision for complex cysts or if malignancy is suspected\n\n#### Emergency Procedures\n- Fine needle aspiration (FNA): a minimally invasive procedure to drain fluid from the cyst, providing symptomatic relief and diagnostic information.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of cysts with follow-up imaging as needed\n\n#### Second-line Treatments\n- Surgical intervention if cysts are recurrent or symptomatic\n\n#### Monitoring Requirements\n- Regular breast self-examinations and clinical follow-ups\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics (e.g., paracetamol, NSAIDs)\n- **Mechanism of Action**: Pain relief through inhibition of prostaglandin synthesis\n- **Typical Dosing Range**: Paracetamol 500-1000 mg every 4-6 hours as needed; NSAIDs as per package instructions\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment (NSAIDs)\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal issues or gastrointestinal history.\n\n### Procedures\n\n#### Fine Needle Aspiration (FNA)\n- **What it Involves**: A thin needle is inserted into the cyst to withdraw fluid for analysis and relieve symptoms.\n- **Indications**: Symptomatic cysts, complex cysts, or to rule out malignancy.\n- **Key Risks/Complications**: Infection, bleeding, and potential for incomplete drainage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for breast cysts is generally excellent, especially for simple cysts, which are benign and often resolve spontaneously. Complex cysts may require closer monitoring due to a higher risk of associated malignancy.\n\n### Important Complications to Watch For\n- Infection (if cyst becomes abscessed)\n- Recurrence of cysts\n- Anxiety related to breast lumps\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough clinical assessments, provide patient education, and refer to specialists when necessary. They should also be aware of the importance of follow-up for any concerning findings.\n\n### When to Escalate to Senior/Specialist\nRefer to a breast specialist if there are red flags, complex cysts, or if the patient has persistent symptoms despite initial management.\n\n### Key Safety Considerations\nEnsure proper technique during FNA to minimize risks, educate patients on self-examination, and emphasize the importance of follow-up for any changes in breast health.\n",
+  "content": {
+    "overview": {
+      "definition": "Breast cysts are fluid-filled sacs within the breast tissue, commonly benign and often asymptomatic. They can vary in size and may be single or multiple.",
+      "epidemiology": "Breast cysts are most prevalent in women aged 30-50 years, particularly those with fibrocystic breast changes. They are less common in postmenopausal women unless on hormone replacement therapy.",
+      "pathophysiology": "Breast cysts develop due to the dilation of terminal duct lobular units, often influenced by hormonal changes during the menstrual cycle. They can be simple (thin-walled, anechoic on ultrasound) or complex (thicker walls, internal echoes)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Breast lump or mass",
+        "Breast pain or tenderness",
+        "Changes in breast size or shape"
+      ],
+      "signs": [
+        "Palpable, smooth, mobile lump",
+        "Possible tenderness on palpation",
+        "May be associated with nipple discharge"
+      ],
+      "atypicalPresentations": [
+        "Cysts may be asymptomatic and found incidentally on imaging",
+        "Complex cysts may present with more significant symptoms or concerns"
+      ],
+      "redFlags": [
+        "Persistent lump that does not resolve",
+        "Nipple discharge that is bloody or unilateral",
+        "Skin changes over the breast or nipple",
+        "Lump in a woman over 50 years old"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical breast examination",
+        "Ultrasound of the breast"
+      ],
+      "secondLine": [
+        "Mammography (if over 30 years or concerning features)",
+        "Fine needle aspiration (FNA) for cytology or fluid analysis"
+      ],
+      "specialistTests": [
+        "MRI of the breast (if complex cysts or further evaluation needed)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. A simple cyst is typically anechoic on ultrasound, while complex cysts may require further evaluation.",
+      "differentials": [
+        "Fibroadenoma",
+        "Breast abscess",
+        "Phyllodes tumor",
+        "Malignant breast lesions"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and reassurance for simple cysts",
+          "Fine needle aspiration (FNA) for symptomatic cysts"
+        ],
+        "secondLine": [
+          "Surgical excision for complex cysts or if malignancy is suspected"
+        ],
+        "procedures": [
+          "Fine needle aspiration (FNA): a minimally invasive procedure to drain fluid from the cyst, providing symptomatic relief and diagnostic information."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of cysts with follow-up imaging as needed"
+        ],
+        "secondLine": [
+          "Surgical intervention if cysts are recurrent or symptomatic"
+        ],
+        "monitoring": [
+          "Regular breast self-examinations and clinical follow-ups"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics (e.g., paracetamol, NSAIDs)",
+          "mechanism": "Pain relief through inhibition of prostaglandin synthesis",
+          "dosing": "Paracetamol 500-1000 mg every 4-6 hours as needed; NSAIDs as per package instructions",
+          "sideEffects": "Gastrointestinal upset, renal impairment (NSAIDs)",
+          "notes": "Use cautiously in patients with renal issues or gastrointestinal history."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fine Needle Aspiration (FNA)",
+          "description": "A thin needle is inserted into the cyst to withdraw fluid for analysis and relieve symptoms.",
+          "indications": "Symptomatic cysts, complex cysts, or to rule out malignancy.",
+          "risks": "Infection, bleeding, and potential for incomplete drainage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for breast cysts is generally excellent, especially for simple cysts, which are benign and often resolve spontaneously. Complex cysts may require closer monitoring due to a higher risk of associated malignancy.",
+    "complications": [
+      "Infection (if cyst becomes abscessed)",
+      "Recurrence of cysts",
+      "Anxiety related to breast lumps"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough clinical assessments, provide patient education, and refer to specialists when necessary. They should also be aware of the importance of follow-up for any concerning findings.",
+    "escalation": "Refer to a breast specialist if there are red flags, complex cysts, or if the patient has persistent symptoms despite initial management.",
+    "keySafetyConsiderations": "Ensure proper technique during FNA to minimize risks, educate patients on self-examination, and emphasize the importance of follow-up for any changes in breast health."
+  }
+}

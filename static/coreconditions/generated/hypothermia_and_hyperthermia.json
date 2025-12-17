@@ -1,0 +1,141 @@
+{
+  "id": "hypothermia_and_hyperthermia",
+  "name": "Hypothermia and hyperthermia",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:38:10.184007",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypothermia and hyperthermia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypothermia is a medical emergency characterized by a core body temperature below 35°C (95°F), while hyperthermia refers to an elevated body temperature due to failed thermoregulation, often exceeding 38°C (100.4°F).\n\n### Epidemiology\nHypothermia is more common in elderly individuals, those with chronic illnesses, and during extreme weather conditions. Hyperthermia can occur in any age group but is particularly dangerous in infants, the elderly, and those with certain medical conditions or on specific medications.\n\n### Essential Pathophysiology\nIn hypothermia, the body's thermoregulatory mechanisms fail, leading to decreased metabolic rate, impaired neurological function, and potential cardiovascular collapse. Hyperthermia results from excessive heat production or inadequate heat dissipation, leading to cellular dysfunction, dehydration, and multi-organ failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shivering\n- Confusion or altered mental status\n- Fatigue\n- Weakness\n- Dizziness\n- Nausea\n- Headache\n- Increased heart rate (initially)\n\n### Key Signs\n- Core temperature <35°C for hypothermia; >38°C for hyperthermia\n- Bradycardia (hypothermia)\n- Hypotension (hypothermia)\n- Dry skin (hyperthermia)\n- Hot, dry skin (in cases of heat stroke)\n- Altered level of consciousness\n\n### Atypical Presentations\n- Elderly patients may not exhibit shivering in hypothermia\n- Hyperthermia may present with seizures or altered mental status without fever\n\n### Red Flags Requiring Immediate Action\n- Core temperature <30°C (hypothermia)\n- Core temperature >40°C (hyperthermia)\n- Severe confusion or coma\n- Cardiac arrhythmias\n- Severe dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Core temperature measurement (rectal preferred)\n- Basic metabolic panel\n- Complete blood count (CBC)\n- Electrocardiogram (ECG)\n\n### Second-line Investigations\n- Arterial blood gas (ABG)\n- Liver function tests\n- Coagulation profile\n\n### Specialist Tests\n- Toxicology screen (if drug overdose suspected)\n- Thyroid function tests (if endocrine cause suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation and core temperature measurement. Hypothermia is defined as a core temperature <35°C; hyperthermia is defined as a core temperature >38°C with clinical signs of heat-related illness.\n\n### Key Differential Diagnoses to Exclude\n- Hypothermia: Sepsis, hypothyroidism, adrenal insufficiency, drug overdose (e.g., opioids, alcohol)\n- Hyperthermia: Infection, heat exhaustion, heat stroke, malignant hyperthermia, thyroid storm\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rewarming techniques (hypothermia): passive rewarming, active external rewarming (blankets, heating pads)\n- Cooling measures (hyperthermia): remove excess clothing, cool environment, hydration\n\n#### Second-line Treatments\n- Intravenous fluids (for hypothermia and hyperthermia)\n- Consider medications for shivering (e.g., benzodiazepines)\n\n#### Emergency Procedures\n- Endotracheal intubation (if airway protection needed in severe cases)\n- Intravenous access for fluid resuscitation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on prevention (e.g., appropriate clothing, hydration)\n- Regular monitoring of at-risk patients\n\n#### Second-line Treatments\n- Referral to endocrinology for underlying endocrine disorders\n\n#### Monitoring Requirements\n- Regular temperature checks in at-risk populations\n- Monitoring for complications (e.g., renal failure, cardiac issues)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Benzodiazepines\n- **Mechanism of Action**: Centrally acting muscle relaxant that can reduce shivering\n- **Typical Dosing Range**: Lorazepam 1-2 mg IV as needed\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, hypotension\n- **When to Use vs. Alternatives**: Use cautiously in elderly or those with respiratory compromise.\n\n#### Intravenous fluids\n- **Mechanism of Action**: Rehydration and correction of electrolyte imbalances\n- **Typical Dosing Range**: Normal saline or lactated Ringer's solution, 1-2 liters IV bolus as needed\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances\n- **When to Use vs. Alternatives**: Monitor for signs of fluid overload.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway\n- **Indications**: Severe hypothermia with altered mental status or respiratory failure\n- **Key Risks/Complications**: Esophageal intubation, trauma to the airway, infection\n\n#### Intravenous rewarming\n- **What it Involves**: Administration of warmed IV fluids to increase core temperature\n- **Indications**: Severe hypothermia (core temperature <30°C)\n- **Key Risks/Complications**: Infection, fluid overload, electrolyte imbalances\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies; mild hypothermia can be reversed with appropriate treatment, while severe hypothermia can lead to death. Hyperthermia can lead to serious complications such as heat stroke, renal failure, and death if not treated promptly.\n\n### Important Complications to Watch For\n- Arrhythmias (hypothermia)\n- Multi-organ failure (hyperthermia)\n- Rhabdomyolysis (hyperthermia)\n- Hypotension and shock (both conditions)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize symptoms, initiate immediate management, and escalate care as needed. They should also educate patients on prevention strategies.\n\n### When to Escalate to Senior/Specialist\nIf core temperature is <30°C or >40°C, or if the patient exhibits severe symptoms (e.g., altered mental status, arrhythmias), escalate to senior medical staff and consider intensive care referral.\n\n### Key Safety Considerations\nAlways monitor vital signs closely, especially in severe cases. Be cautious with rewarming techniques to avoid rapid temperature changes that can lead to complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypothermia is a medical emergency characterized by a core body temperature below 35°C (95°F), while hyperthermia refers to an elevated body temperature due to failed thermoregulation, often exceeding 38°C (100.4°F).",
+      "epidemiology": "Hypothermia is more common in elderly individuals, those with chronic illnesses, and during extreme weather conditions. Hyperthermia can occur in any age group but is particularly dangerous in infants, the elderly, and those with certain medical conditions or on specific medications.",
+      "pathophysiology": "In hypothermia, the body's thermoregulatory mechanisms fail, leading to decreased metabolic rate, impaired neurological function, and potential cardiovascular collapse. Hyperthermia results from excessive heat production or inadequate heat dissipation, leading to cellular dysfunction, dehydration, and multi-organ failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shivering",
+        "Confusion or altered mental status",
+        "Fatigue",
+        "Weakness",
+        "Dizziness",
+        "Nausea",
+        "Headache",
+        "Increased heart rate (initially)"
+      ],
+      "signs": [
+        "Core temperature <35°C for hypothermia; >38°C for hyperthermia",
+        "Bradycardia (hypothermia)",
+        "Hypotension (hypothermia)",
+        "Dry skin (hyperthermia)",
+        "Hot, dry skin (in cases of heat stroke)",
+        "Altered level of consciousness"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may not exhibit shivering in hypothermia",
+        "Hyperthermia may present with seizures or altered mental status without fever"
+      ],
+      "redFlags": [
+        "Core temperature <30°C (hypothermia)",
+        "Core temperature >40°C (hyperthermia)",
+        "Severe confusion or coma",
+        "Cardiac arrhythmias",
+        "Severe dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Core temperature measurement (rectal preferred)",
+        "Basic metabolic panel",
+        "Complete blood count (CBC)",
+        "Electrocardiogram (ECG)"
+      ],
+      "secondLine": [
+        "Arterial blood gas (ABG)",
+        "Liver function tests",
+        "Coagulation profile"
+      ],
+      "specialistTests": [
+        "Toxicology screen (if drug overdose suspected)",
+        "Thyroid function tests (if endocrine cause suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation and core temperature measurement. Hypothermia is defined as a core temperature <35°C; hyperthermia is defined as a core temperature >38°C with clinical signs of heat-related illness.",
+      "differentials": [
+        "Hypothermia: Sepsis, hypothyroidism, adrenal insufficiency, drug overdose (e.g., opioids, alcohol)",
+        "Hyperthermia: Infection, heat exhaustion, heat stroke, malignant hyperthermia, thyroid storm"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rewarming techniques (hypothermia): passive rewarming, active external rewarming (blankets, heating pads)",
+          "Cooling measures (hyperthermia): remove excess clothing, cool environment, hydration"
+        ],
+        "secondLine": [
+          "Intravenous fluids (for hypothermia and hyperthermia)",
+          "Consider medications for shivering (e.g., benzodiazepines)"
+        ],
+        "procedures": [
+          "Endotracheal intubation (if airway protection needed in severe cases)",
+          "Intravenous access for fluid resuscitation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on prevention (e.g., appropriate clothing, hydration)",
+          "Regular monitoring of at-risk patients"
+        ],
+        "secondLine": [
+          "Referral to endocrinology for underlying endocrine disorders"
+        ],
+        "monitoring": [
+          "Regular temperature checks in at-risk populations",
+          "Monitoring for complications (e.g., renal failure, cardiac issues)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Benzodiazepines",
+          "mechanism": "Centrally acting muscle relaxant that can reduce shivering",
+          "dosing": "Lorazepam 1-2 mg IV as needed",
+          "sideEffects": "Sedation, respiratory depression, hypotension",
+          "notes": "Use cautiously in elderly or those with respiratory compromise."
+        },
+        {
+          "name": "Intravenous fluids",
+          "mechanism": "Rehydration and correction of electrolyte imbalances",
+          "dosing": "Normal saline or lactated Ringer's solution, 1-2 liters IV bolus as needed",
+          "sideEffects": "Fluid overload, electrolyte imbalances",
+          "notes": "Monitor for signs of fluid overload."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway",
+          "indications": "Severe hypothermia with altered mental status or respiratory failure",
+          "risks": "Esophageal intubation, trauma to the airway, infection"
+        },
+        {
+          "name": "Intravenous rewarming",
+          "description": "Administration of warmed IV fluids to increase core temperature",
+          "indications": "Severe hypothermia (core temperature <30°C)",
+          "risks": "Infection, fluid overload, electrolyte imbalances"
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies; mild hypothermia can be reversed with appropriate treatment, while severe hypothermia can lead to death. Hyperthermia can lead to serious complications such as heat stroke, renal failure, and death if not treated promptly.",
+    "complications": [
+      "Arrhythmias (hypothermia)",
+      "Multi-organ failure (hyperthermia)",
+      "Rhabdomyolysis (hyperthermia)",
+      "Hypotension and shock (both conditions)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize symptoms, initiate immediate management, and escalate care as needed. They should also educate patients on prevention strategies.",
+    "escalation": "If core temperature is <30°C or >40°C, or if the patient exhibits severe symptoms (e.g., altered mental status, arrhythmias), escalate to senior medical staff and consider intensive care referral.",
+    "keySafetyConsiderations": "Always monitor vital signs closely, especially in severe cases. Be cautious with rewarming techniques to avoid rapid temperature changes that can lead to complications."
+  }
+}

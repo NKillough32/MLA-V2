@@ -1,0 +1,130 @@
+{
+  "id": "endometriosis",
+  "name": "Endometriosis",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:51:09.308901",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Endometriosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEndometriosis is a chronic, often painful condition in which tissue similar to the lining of the uterus (endometrium) grows outside the uterus, commonly on the ovaries, fallopian tubes, and the tissue lining the pelvis.\n\n### Epidemiology\nEndometriosis affects approximately 10% of women of reproductive age, with a higher prevalence in those with infertility. It is estimated that 30-50% of women with infertility have endometriosis.\n\n### Essential Pathophysiology\nThe exact cause of endometriosis is unknown, but theories include retrograde menstruation, immune system disorders, and genetic predisposition. The ectopic endometrial tissue responds to hormonal changes, leading to inflammation, scarring, and adhesions.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pelvic pain, often associated with menstrual periods\n- Pain during intercourse (dyspareunia)\n- Pain with bowel movements or urination during menstrual periods\n- Excessive bleeding (heavy periods or bleeding between periods)\n- Infertility\n\n### Key Signs\n- Tenderness in the pelvic area on examination\n- Ovarian cysts (endometriomas) may be palpable\n- Adhesions may be detected during pelvic examination\n\n### Atypical Presentations\n- Chronic fatigue\n- Gastrointestinal symptoms (bloating, diarrhea, constipation)\n- Urinary symptoms (frequency, urgency)\n\n### Red Flags Requiring Immediate Action\n- Severe pelvic pain that interferes with daily activities\n- Infertility\n- Unexplained weight loss\n- Signs of bowel obstruction\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pelvic ultrasound (transvaginal or abdominal) to assess for cysts or masses\n- MRI of the pelvis for detailed imaging of endometriosis lesions\n\n### Second-line Investigations\n- Laparoscopy with biopsy for definitive diagnosis and staging\n\n### Specialist Tests\n- CA-125 blood test (not specific for endometriosis but can be elevated in cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through laparoscopy, which allows direct visualization of endometrial implants and possibly biopsy. The American Society for Reproductive Medicine (ASRM) classification system stages endometriosis from I (minimal) to IV (severe).\n\n### Key Differential Diagnoses to Exclude\n- Pelvic inflammatory disease (PID)\n- Ovarian cysts\n- Uterine fibroids\n- Irritable bowel syndrome (IBS)\n- Interstitial cystitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (e.g., ibuprofen) for pain relief\n- Hormonal therapy (e.g., combined oral contraceptives) to suppress menstruation\n\n#### Second-line Treatments\n- GnRH agonists (e.g., leuprolide) for more severe pain\n\n#### Emergency Procedures\n- Laparoscopic surgery for diagnosis and treatment (excision or ablation of endometrial tissue)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term hormonal therapy (e.g., progestins, hormonal IUDs) to manage symptoms\n\n#### Second-line Treatments\n- Surgical management for severe cases or when conservative measures fail\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom control and side effects of treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed, max 3200 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with peptic ulcer disease or renal issues.\n\n#### Leuprolide\n- **Mechanism of Action**: GnRH agonist that suppresses ovarian hormone production, leading to reduced endometrial tissue\n- **Typical Dosing Range**: 3.75 mg IM monthly or 11.25 mg every 3 months\n- **Key Side Effects/Contraindications**: Hot flashes, decreased bone density, mood changes\n- **When to Use vs. Alternatives**: Consider add-back therapy with estrogen/progestin to mitigate side effects.\n\n#### Combined oral contraceptives\n- **Mechanism of Action**: Suppress ovulation and menstruation, reducing endometrial tissue growth\n- **Typical Dosing Range**: One pill daily, continuous or cyclic regimens\n- **Key Side Effects/Contraindications**: Nausea, breast tenderness, increased risk of thromboembolism\n- **When to Use vs. Alternatives**: Consider in patients desiring contraception.\n\n### Procedures\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgical procedure to visualize and treat endometriosis\n- **Indications**: Diagnosis of endometriosis, severe pain unresponsive to medical therapy, infertility\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding organs, anesthesia complications\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nEndometriosis is a chronic condition that can significantly impact quality of life. Symptoms may improve with treatment, but some women may experience persistent symptoms or recurrence after treatment.\n\n### Important Complications to Watch For\n- Infertility\n- Ovarian cysts (endometriomas)\n- Chronic pelvic pain\n- Adhesions leading to bowel obstruction\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of endometriosis, initiate appropriate investigations, provide initial management, and refer to specialists when necessary. They should also educate patients about the condition and treatment options.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynaecologist if there is severe pain, suspected complications, or if the patient is experiencing infertility after 12 months of trying to conceive.\n\n### Key Safety Considerations\nMonitor for signs of complications such as bowel obstruction or severe pain. Ensure appropriate follow-up for patients on hormonal therapies to manage side effects and assess treatment efficacy.\n",
+  "content": {
+    "overview": {
+      "definition": "Endometriosis is a chronic, often painful condition in which tissue similar to the lining of the uterus (endometrium) grows outside the uterus, commonly on the ovaries, fallopian tubes, and the tissue lining the pelvis.",
+      "epidemiology": "Endometriosis affects approximately 10% of women of reproductive age, with a higher prevalence in those with infertility. It is estimated that 30-50% of women with infertility have endometriosis.",
+      "pathophysiology": "The exact cause of endometriosis is unknown, but theories include retrograde menstruation, immune system disorders, and genetic predisposition. The ectopic endometrial tissue responds to hormonal changes, leading to inflammation, scarring, and adhesions."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pelvic pain, often associated with menstrual periods",
+        "Pain during intercourse (dyspareunia)",
+        "Pain with bowel movements or urination during menstrual periods",
+        "Excessive bleeding (heavy periods or bleeding between periods)",
+        "Infertility"
+      ],
+      "signs": [
+        "Tenderness in the pelvic area on examination",
+        "Ovarian cysts (endometriomas) may be palpable",
+        "Adhesions may be detected during pelvic examination"
+      ],
+      "atypicalPresentations": [
+        "Chronic fatigue",
+        "Gastrointestinal symptoms (bloating, diarrhea, constipation)",
+        "Urinary symptoms (frequency, urgency)"
+      ],
+      "redFlags": [
+        "Severe pelvic pain that interferes with daily activities",
+        "Infertility",
+        "Unexplained weight loss",
+        "Signs of bowel obstruction"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pelvic ultrasound (transvaginal or abdominal) to assess for cysts or masses",
+        "MRI of the pelvis for detailed imaging of endometriosis lesions"
+      ],
+      "secondLine": [
+        "Laparoscopy with biopsy for definitive diagnosis and staging"
+      ],
+      "specialistTests": [
+        "CA-125 blood test (not specific for endometriosis but can be elevated in cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through laparoscopy, which allows direct visualization of endometrial implants and possibly biopsy. The American Society for Reproductive Medicine (ASRM) classification system stages endometriosis from I (minimal) to IV (severe).",
+      "differentials": [
+        "Pelvic inflammatory disease (PID)",
+        "Ovarian cysts",
+        "Uterine fibroids",
+        "Irritable bowel syndrome (IBS)",
+        "Interstitial cystitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (e.g., ibuprofen) for pain relief",
+          "Hormonal therapy (e.g., combined oral contraceptives) to suppress menstruation"
+        ],
+        "secondLine": [
+          "GnRH agonists (e.g., leuprolide) for more severe pain"
+        ],
+        "procedures": [
+          "Laparoscopic surgery for diagnosis and treatment (excision or ablation of endometrial tissue)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term hormonal therapy (e.g., progestins, hormonal IUDs) to manage symptoms"
+        ],
+        "secondLine": [
+          "Surgical management for severe cases or when conservative measures fail"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom control and side effects of treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-800 mg every 6-8 hours as needed, max 3200 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with peptic ulcer disease or renal issues."
+        },
+        {
+          "name": "Leuprolide",
+          "mechanism": "GnRH agonist that suppresses ovarian hormone production, leading to reduced endometrial tissue",
+          "dosing": "3.75 mg IM monthly or 11.25 mg every 3 months",
+          "sideEffects": "Hot flashes, decreased bone density, mood changes",
+          "notes": "Consider add-back therapy with estrogen/progestin to mitigate side effects."
+        },
+        {
+          "name": "Combined oral contraceptives",
+          "mechanism": "Suppress ovulation and menstruation, reducing endometrial tissue growth",
+          "dosing": "One pill daily, continuous or cyclic regimens",
+          "sideEffects": "Nausea, breast tenderness, increased risk of thromboembolism",
+          "notes": "Consider in patients desiring contraception."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgical procedure to visualize and treat endometriosis",
+          "indications": "Diagnosis of endometriosis, severe pain unresponsive to medical therapy, infertility",
+          "risks": "Infection, bleeding, damage to surrounding organs, anesthesia complications"
+        }
+      ]
+    },
+    "prognosis": "Endometriosis is a chronic condition that can significantly impact quality of life. Symptoms may improve with treatment, but some women may experience persistent symptoms or recurrence after treatment.",
+    "complications": [
+      "Infertility",
+      "Ovarian cysts (endometriomas)",
+      "Chronic pelvic pain",
+      "Adhesions leading to bowel obstruction"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of endometriosis, initiate appropriate investigations, provide initial management, and refer to specialists when necessary. They should also educate patients about the condition and treatment options.",
+    "escalation": "Refer to a gynaecologist if there is severe pain, suspected complications, or if the patient is experiencing infertility after 12 months of trying to conceive.",
+    "keySafetyConsiderations": "Monitor for signs of complications such as bowel obstruction or severe pain. Ensure appropriate follow-up for patients on hormonal therapies to manage side effects and assess treatment efficacy."
+  }
+}

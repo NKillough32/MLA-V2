@@ -1,0 +1,145 @@
+{
+  "id": "infectiveendocarditis",
+  "name": "Infective?Endocarditis",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:11:27.847714",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Infective?Endocarditis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInfective endocarditis is an infection of the endocardial surface of the heart, typically involving the heart valves, caused by microorganisms, most commonly bacteria.\n\n### Epidemiology\nThe incidence of infective endocarditis is approximately 3-10 cases per 100,000 person-years. It is more common in males and in individuals with predisposing heart conditions or intravenous drug use.\n\n### Essential Pathophysiology\nInfective endocarditis occurs when bacteria enter the bloodstream and adhere to damaged heart valves or endocardial surfaces. This leads to the formation of vegetations, which can cause valve dysfunction, embolization, and systemic infection.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Chills\n- Night sweats\n- Fatigue\n- Malaise\n- Weight loss\n- New or changing heart murmur\n- Petechiae\n- Osler's nodes\n- Janeway lesions\n- Splinter hemorrhages\n\n### Key Signs\n- Fever (often low-grade)\n- Heart murmur (new or changed)\n- Splenomegaly\n- Petechiae\n- Osler's nodes (painful nodules on fingers/toes)\n- Janeway lesions (painless erythematous lesions on palms/soles)\n- Clubbing\n\n### Atypical Presentations\n- Stroke or transient ischemic attack (due to emboli)\n- Renal failure (due to emboli or glomerulonephritis)\n- Septicemia without clear source\n\n### Red Flags Requiring Immediate Action\n- Acute onset of fever with new murmur\n- Signs of embolic phenomena (e.g., stroke, splenic infarct)\n- Severe heart failure symptoms\n- Persistent bacteremia despite appropriate antibiotics\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood cultures (3 sets from different sites)\n- Echocardiography (transthoracic echocardiogram - TTE)\n\n### Second-line Investigations\n- Transesophageal echocardiogram (TEE) if TTE is inconclusive or high suspicion of endocarditis\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Urinalysis\n\n### Specialist Tests\n- Cardiac MRI or CT if there is suspicion of abscess or other complications\n- Serological tests for specific pathogens (e.g., Coxiella burnetii)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the modified Duke criteria, which include major criteria (positive blood cultures, evidence of endocardial involvement) and minor criteria (predisposing heart condition, fever, vascular phenomena, immunological phenomena).\n\n### Key Differential Diagnoses to Exclude\n- Acute rheumatic fever\n- Myocarditis\n- Pericarditis\n- Non-infective endocarditis (e.g., Libman-Sacks endocarditis)\n- Vascular embolic events\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Start empirical intravenous antibiotics (e.g., vancomycin + gentamicin)\n\n#### Second-line Treatments\n- Adjust antibiotics based on culture results and sensitivities\n\n#### Emergency Procedures\n- Consider surgical intervention for severe valve dysfunction, abscess formation, or persistent infection despite appropriate antibiotics.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term antibiotic therapy based on culture results (typically 4-6 weeks)\n\n#### Second-line Treatments\n- Regular follow-up with echocardiography to monitor for complications\n\n#### Monitoring Requirements\n- Monitor for signs of heart failure, embolic events, and renal function.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Vancomycin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours, adjusted based on renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, red man syndrome.\n- **When to Use vs. Alternatives**: Monitor trough levels to ensure therapeutic range.\n\n#### Gentamicin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 3 mg/kg IV once daily, adjusted based on renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity.\n- **When to Use vs. Alternatives**: Monitor renal function and drug levels.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 2 g IV once daily.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Consider in patients with penicillin allergy.\n\n### Procedures\n\n#### Valve replacement surgery\n- **What it Involves**: Surgical removal of infected valve and replacement with prosthetic valve.\n- **Indications**: Severe valve dysfunction, heart failure, persistent infection despite antibiotics, large vegetations.\n- **Key Risks/Complications**: Bleeding, infection, prosthetic valve endocarditis, thromboembolism.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of infective endocarditis varies based on the causative organism, presence of complications, and underlying heart conditions. Early diagnosis and treatment improve outcomes significantly.\n\n### Important Complications to Watch For\n- Heart failure\n- Embolic events (stroke, pulmonary embolism)\n- Abscess formation\n- Chronic kidney disease\n- Prosthetic valve endocarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of infective endocarditis, initiate investigations, start empirical antibiotic therapy, and refer to senior colleagues for further management and potential surgical intervention.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there is a high suspicion of infective endocarditis, if the patient is unstable, or if there are complications such as heart failure or embolic events.\n\n### Key Safety Considerations\nEnsure timely collection of blood cultures before starting antibiotics, monitor for signs of deterioration, and be vigilant for complications such as embolic events or heart failure.\n",
+  "content": {
+    "overview": {
+      "definition": "Infective endocarditis is an infection of the endocardial surface of the heart, typically involving the heart valves, caused by microorganisms, most commonly bacteria.",
+      "epidemiology": "The incidence of infective endocarditis is approximately 3-10 cases per 100,000 person-years. It is more common in males and in individuals with predisposing heart conditions or intravenous drug use.",
+      "pathophysiology": "Infective endocarditis occurs when bacteria enter the bloodstream and adhere to damaged heart valves or endocardial surfaces. This leads to the formation of vegetations, which can cause valve dysfunction, embolization, and systemic infection."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Chills",
+        "Night sweats",
+        "Fatigue",
+        "Malaise",
+        "Weight loss",
+        "New or changing heart murmur",
+        "Petechiae",
+        "Osler's nodes",
+        "Janeway lesions",
+        "Splinter hemorrhages"
+      ],
+      "signs": [
+        "Fever (often low-grade)",
+        "Heart murmur (new or changed)",
+        "Splenomegaly",
+        "Petechiae",
+        "Osler's nodes (painful nodules on fingers/toes)",
+        "Janeway lesions (painless erythematous lesions on palms/soles)",
+        "Clubbing"
+      ],
+      "atypicalPresentations": [
+        "Stroke or transient ischemic attack (due to emboli)",
+        "Renal failure (due to emboli or glomerulonephritis)",
+        "Septicemia without clear source"
+      ],
+      "redFlags": [
+        "Acute onset of fever with new murmur",
+        "Signs of embolic phenomena (e.g., stroke, splenic infarct)",
+        "Severe heart failure symptoms",
+        "Persistent bacteremia despite appropriate antibiotics"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood cultures (3 sets from different sites)",
+        "Echocardiography (transthoracic echocardiogram - TTE)"
+      ],
+      "secondLine": [
+        "Transesophageal echocardiogram (TEE) if TTE is inconclusive or high suspicion of endocarditis",
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Urinalysis"
+      ],
+      "specialistTests": [
+        "Cardiac MRI or CT if there is suspicion of abscess or other complications",
+        "Serological tests for specific pathogens (e.g., Coxiella burnetii)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the modified Duke criteria, which include major criteria (positive blood cultures, evidence of endocardial involvement) and minor criteria (predisposing heart condition, fever, vascular phenomena, immunological phenomena).",
+      "differentials": [
+        "Acute rheumatic fever",
+        "Myocarditis",
+        "Pericarditis",
+        "Non-infective endocarditis (e.g., Libman-Sacks endocarditis)",
+        "Vascular embolic events"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Start empirical intravenous antibiotics (e.g., vancomycin + gentamicin)"
+        ],
+        "secondLine": [
+          "Adjust antibiotics based on culture results and sensitivities"
+        ],
+        "procedures": [
+          "Consider surgical intervention for severe valve dysfunction, abscess formation, or persistent infection despite appropriate antibiotics."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term antibiotic therapy based on culture results (typically 4-6 weeks)"
+        ],
+        "secondLine": [
+          "Regular follow-up with echocardiography to monitor for complications"
+        ],
+        "monitoring": [
+          "Monitor for signs of heart failure, embolic events, and renal function."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Vancomycin",
+          "mechanism": "Inhibits bacterial cell wall synthesis.",
+          "dosing": "15-20 mg/kg IV every 8-12 hours, adjusted based on renal function.",
+          "sideEffects": "Nephrotoxicity, ototoxicity, red man syndrome.",
+          "notes": "Monitor trough levels to ensure therapeutic range."
+        },
+        {
+          "name": "Gentamicin",
+          "mechanism": "Inhibits bacterial protein synthesis.",
+          "dosing": "3 mg/kg IV once daily, adjusted based on renal function.",
+          "sideEffects": "Nephrotoxicity, ototoxicity.",
+          "notes": "Monitor renal function and drug levels."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Inhibits bacterial cell wall synthesis.",
+          "dosing": "2 g IV once daily.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset.",
+          "notes": "Consider in patients with penicillin allergy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Valve replacement surgery",
+          "description": "Surgical removal of infected valve and replacement with prosthetic valve.",
+          "indications": "Severe valve dysfunction, heart failure, persistent infection despite antibiotics, large vegetations.",
+          "risks": "Bleeding, infection, prosthetic valve endocarditis, thromboembolism."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of infective endocarditis varies based on the causative organism, presence of complications, and underlying heart conditions. Early diagnosis and treatment improve outcomes significantly.",
+    "complications": [
+      "Heart failure",
+      "Embolic events (stroke, pulmonary embolism)",
+      "Abscess formation",
+      "Chronic kidney disease",
+      "Prosthetic valve endocarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of infective endocarditis, initiate investigations, start empirical antibiotic therapy, and refer to senior colleagues for further management and potential surgical intervention.",
+    "escalation": "Escalate care to a senior clinician if there is a high suspicion of infective endocarditis, if the patient is unstable, or if there are complications such as heart failure or embolic events.",
+    "keySafetyConsiderations": "Ensure timely collection of blood cultures before starting antibiotics, monitor for signs of deterioration, and be vigilant for complications such as embolic events or heart failure."
+  }
+}

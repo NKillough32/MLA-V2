@@ -1,0 +1,152 @@
+{
+  "id": "cardiomyopathy",
+  "name": "Cardiomyopathy?",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:14:36.338667",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cardiomyopathy?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCardiomyopathy is a group of diseases that affect the heart muscle, leading to impaired cardiac function. It can result in heart failure, arrhythmias, and sudden cardiac death.\n\n### Epidemiology\nCardiomyopathy affects approximately 1 in 500 individuals, with varying prevalence based on type. Dilated cardiomyopathy is the most common form, while hypertrophic cardiomyopathy is often seen in younger populations, particularly athletes.\n\n### Essential Pathophysiology\nCardiomyopathy can be caused by genetic factors, chronic hypertension, ischemic heart disease, or toxins. The heart muscle becomes structurally and functionally abnormal, leading to decreased contractility, impaired relaxation, and potential heart failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Fatigue\n- Palpitations\n- Chest pain\n- Syncope\n\n### Key Signs\n- S3 gallop\n- Elevated jugular venous pressure\n- Peripheral edema\n- Pulmonary crackles\n- Ascites\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Symptoms mimicking asthma or COPD\n- Syncope during exertion\n\n### Red Flags Requiring Immediate Action\n- Severe chest pain\n- Acute shortness of breath\n- Syncope\n- Rapidly worsening symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Echocardiogram\n- Chest X-ray\n- Blood tests (BNP, troponin)\n\n### Second-line Investigations\n- Cardiac MRI\n- Holter monitor\n- Exercise stress testing\n\n### Specialist Tests\n- Endomyocardial biopsy\n- Genetic testing\n- Nuclear imaging\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, echocardiographic findings, and exclusion of other causes of heart failure. Specific criteria may vary by type of cardiomyopathy.\n\n### Key Differential Diagnoses to Exclude\n- Ischemic heart disease\n- Hypertensive heart disease\n- Valvular heart disease\n- Myocarditis\n- Pericardial disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy\n- Diuretics (e.g., furosemide)\n- ACE inhibitors (e.g., lisinopril)\n\n#### Second-line Treatments\n- Beta-blockers (e.g., carvedilol)\n- Inotropes (e.g., dobutamine)\n\n#### Emergency Procedures\n- Cardioversion for arrhythmias\n- Temporary pacing for bradycardia\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- ACE inhibitors\n- Beta-blockers\n\n#### Second-line Treatments\n- Aldosterone antagonists (e.g., spironolactone)\n- SGLT2 inhibitors\n\n#### Monitoring Requirements\n- Regular follow-up with echocardiograms\n- Monitoring of renal function and electrolytes\n- Assessment of functional capacity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the loop of Henle.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO, titrate based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, hypotension.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes.\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.\n- **Typical Dosing Range**: Initial: 5-10 mg daily, titrate to 20-40 mg daily.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Carvedilol\n- **Mechanism of Action**: Non-selective beta-blocker with alpha-blocking activity, reducing heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Initial: 3.125 mg twice daily, titrate to 25 mg twice daily.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue.\n- **When to Use vs. Alternatives**: Monitor heart rate and blood pressure.\n\n### Procedures\n\n#### Cardioversion\n- **What it Involves**: Delivery of electrical shocks to restore normal heart rhythm.\n- **Indications**: Atrial fibrillation or flutter with rapid ventricular response, symptomatic tachyarrhythmias.\n- **Key Risks/Complications**: Arrhythmias, skin burns, thromboembolism.\n\n#### Endomyocardial biopsy\n- **What it Involves**: Sampling of heart muscle tissue to assess for inflammatory or infiltrative processes.\n- **Indications**: Unexplained heart failure, suspected myocarditis or infiltrative disease.\n- **Key Risks/Complications**: Bleeding, infection, arrhythmias.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies by type of cardiomyopathy; dilated cardiomyopathy has a 5-year survival rate of approximately 50%, while hypertrophic cardiomyopathy has a better prognosis but carries a risk of sudden cardiac death.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias (e.g., atrial fibrillation, ventricular tachycardia)\n- Thromboembolic events\n- Sudden cardiac death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of cardiomyopathy, perform initial assessments, order appropriate investigations, and initiate management. They should also be aware of when to escalate care to a cardiologist.\n\n### When to Escalate to Senior/Specialist\nRefer to cardiology for patients with severe symptoms, new-onset heart failure, or those requiring advanced therapies (e.g., device therapy, transplant evaluation).\n\n### Key Safety Considerations\nMonitor for signs of heart failure exacerbation, electrolyte imbalances, and medication side effects. Ensure timely follow-up and patient education on recognizing worsening symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Cardiomyopathy is a group of diseases that affect the heart muscle, leading to impaired cardiac function. It can result in heart failure, arrhythmias, and sudden cardiac death.",
+      "epidemiology": "Cardiomyopathy affects approximately 1 in 500 individuals, with varying prevalence based on type. Dilated cardiomyopathy is the most common form, while hypertrophic cardiomyopathy is often seen in younger populations, particularly athletes.",
+      "pathophysiology": "Cardiomyopathy can be caused by genetic factors, chronic hypertension, ischemic heart disease, or toxins. The heart muscle becomes structurally and functionally abnormal, leading to decreased contractility, impaired relaxation, and potential heart failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Fatigue",
+        "Palpitations",
+        "Chest pain",
+        "Syncope"
+      ],
+      "signs": [
+        "S3 gallop",
+        "Elevated jugular venous pressure",
+        "Peripheral edema",
+        "Pulmonary crackles",
+        "Ascites"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Symptoms mimicking asthma or COPD",
+        "Syncope during exertion"
+      ],
+      "redFlags": [
+        "Severe chest pain",
+        "Acute shortness of breath",
+        "Syncope",
+        "Rapidly worsening symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Echocardiogram",
+        "Chest X-ray",
+        "Blood tests (BNP, troponin)"
+      ],
+      "secondLine": [
+        "Cardiac MRI",
+        "Holter monitor",
+        "Exercise stress testing"
+      ],
+      "specialistTests": [
+        "Endomyocardial biopsy",
+        "Genetic testing",
+        "Nuclear imaging"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, echocardiographic findings, and exclusion of other causes of heart failure. Specific criteria may vary by type of cardiomyopathy.",
+      "differentials": [
+        "Ischemic heart disease",
+        "Hypertensive heart disease",
+        "Valvular heart disease",
+        "Myocarditis",
+        "Pericardial disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy",
+          "Diuretics (e.g., furosemide)",
+          "ACE inhibitors (e.g., lisinopril)"
+        ],
+        "secondLine": [
+          "Beta-blockers (e.g., carvedilol)",
+          "Inotropes (e.g., dobutamine)"
+        ],
+        "procedures": [
+          "Cardioversion for arrhythmias",
+          "Temporary pacing for bradycardia"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "ACE inhibitors",
+          "Beta-blockers"
+        ],
+        "secondLine": [
+          "Aldosterone antagonists (e.g., spironolactone)",
+          "SGLT2 inhibitors"
+        ],
+        "monitoring": [
+          "Regular follow-up with echocardiograms",
+          "Monitoring of renal function and electrolytes",
+          "Assessment of functional capacity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the loop of Henle.",
+          "dosing": "Initial: 20-40 mg IV/PO, titrate based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, hypotension.",
+          "notes": "Monitor renal function and electrolytes."
+        },
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.",
+          "dosing": "Initial: 5-10 mg daily, titrate to 20-40 mg daily.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment.",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Carvedilol",
+          "mechanism": "Non-selective beta-blocker with alpha-blocking activity, reducing heart rate and myocardial oxygen demand.",
+          "dosing": "Initial: 3.125 mg twice daily, titrate to 25 mg twice daily.",
+          "sideEffects": "Bradycardia, hypotension, fatigue.",
+          "notes": "Monitor heart rate and blood pressure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardioversion",
+          "description": "Delivery of electrical shocks to restore normal heart rhythm.",
+          "indications": "Atrial fibrillation or flutter with rapid ventricular response, symptomatic tachyarrhythmias.",
+          "risks": "Arrhythmias, skin burns, thromboembolism."
+        },
+        {
+          "name": "Endomyocardial biopsy",
+          "description": "Sampling of heart muscle tissue to assess for inflammatory or infiltrative processes.",
+          "indications": "Unexplained heart failure, suspected myocarditis or infiltrative disease.",
+          "risks": "Bleeding, infection, arrhythmias."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies by type of cardiomyopathy; dilated cardiomyopathy has a 5-year survival rate of approximately 50%, while hypertrophic cardiomyopathy has a better prognosis but carries a risk of sudden cardiac death.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias (e.g., atrial fibrillation, ventricular tachycardia)",
+      "Thromboembolic events",
+      "Sudden cardiac death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of cardiomyopathy, perform initial assessments, order appropriate investigations, and initiate management. They should also be aware of when to escalate care to a cardiologist.",
+    "escalation": "Refer to cardiology for patients with severe symptoms, new-onset heart failure, or those requiring advanced therapies (e.g., device therapy, transplant evaluation).",
+    "keySafetyConsiderations": "Monitor for signs of heart failure exacerbation, electrolyte imbalances, and medication side effects. Ensure timely follow-up and patient education on recognizing worsening symptoms."
+  }
+}

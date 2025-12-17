@@ -1,0 +1,127 @@
+{
+  "id": "ascites",
+  "name": "Ascites",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:44:46.776935",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ascites: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAscites is the pathological accumulation of fluid in the peritoneal cavity, often associated with liver disease, malignancy, or heart failure.\n\n### Epidemiology\nAscites is most commonly seen in patients with cirrhosis, affecting approximately 50% of patients with advanced liver disease. It can also occur in patients with malignancies, heart failure, and infections such as tuberculosis.\n\n### Essential Pathophysiology\nAscites results from increased hydrostatic pressure in the portal circulation (portal hypertension), decreased oncotic pressure due to hypoalbuminemia, and increased capillary permeability. This leads to an imbalance in fluid homeostasis, causing fluid to leak into the peritoneal cavity.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal distension\n- Discomfort or pain in the abdomen\n- Early satiety\n- Weight gain due to fluid retention\n\n### Key Signs\n- Abdominal distension on examination\n- Fluid wave test positive\n- Shifting dullness on percussion\n- Bulging flanks\n\n### Atypical Presentations\n- Minimal abdominal distension despite significant fluid accumulation\n- Acute respiratory distress due to diaphragmatic elevation\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Fever\n- Signs of infection (e.g., spontaneous bacterial peritonitis)\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal ultrasound to assess fluid volume and location\n- Paracentesis for fluid analysis\n\n### Second-line Investigations\n- CT scan of the abdomen to evaluate underlying causes\n- Liver function tests\n- Serum-ascites albumin gradient (SAAG)\n\n### Specialist Tests\n- Cytology of ascitic fluid for malignancy\n- Culture of ascitic fluid for infection\n- Liver biopsy if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ascites is confirmed by physical examination and imaging (ultrasound or CT) showing fluid in the peritoneal cavity, often supported by paracentesis findings.\n\n### Key Differential Diagnoses to Exclude\n- Cirrhosis\n- Heart failure\n- Malignancy (e.g., ovarian cancer, pancreatic cancer)\n- Tuberculosis\n- Nephrotic syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Paracentesis for symptomatic relief and fluid analysis\n- Diuretics (e.g., spironolactone)\n\n#### Second-line Treatments\n- TIPS (transjugular intrahepatic portosystemic shunt) if indicated\n\n#### Emergency Procedures\n- Paracentesis: A procedure to remove fluid from the peritoneal cavity, indicated for symptomatic relief, diagnostic purposes, or therapeutic drainage. Risks include bleeding, infection, and bowel perforation.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Diuretics (spironolactone and furosemide) for fluid management\n- Dietary sodium restriction\n\n#### Second-line Treatments\n- Consideration of TIPS or liver transplantation in refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up for fluid status, renal function, and electrolyte balance\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Spironolactone\n- **Mechanism of Action**: A potassium-sparing diuretic that inhibits aldosterone, promoting sodium and water excretion.\n- **Typical Dosing Range**: Start at 100 mg daily, titrate up to 400 mg based on response.\n- **Key Side Effects/Contraindications**: Hyperkalemia, renal impairment, gynecomastia.\n- **When to Use vs. Alternatives**: Monitor potassium levels regularly.\n\n#### Furosemide\n- **Mechanism of Action**: A loop diuretic that inhibits sodium reabsorption in the loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Start at 20-40 mg daily, titrate based on response.\n- **Key Side Effects/Contraindications**: Dehydration, electrolyte imbalances, renal impairment.\n- **When to Use vs. Alternatives**: Use in combination with spironolactone for synergistic effect.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: A procedure to remove excess fluid from the abdominal cavity using a needle and catheter.\n- **Indications**: Symptomatic relief, diagnostic analysis of ascitic fluid, therapeutic drainage.\n- **Key Risks/Complications**: Bleeding, infection, bowel perforation, hypotension due to rapid fluid removal.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of ascites depends on the underlying cause. In patients with cirrhosis, the presence of ascites indicates a poorer prognosis, with a median survival of 1-2 years without liver transplantation.\n\n### Important Complications to Watch For\n- Spontaneous bacterial peritonitis (SBP)\n- Infection\n- Hernias due to increased abdominal pressure\n- Renal impairment due to diuretic use\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate investigations, manage diuretics, and refer to specialists as needed. They should also educate patients about dietary modifications and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nEscalate care if there are signs of infection, severe abdominal pain, or altered mental status. Refer to gastroenterology or surgery for refractory cases or complications.\n\n### Key Safety Considerations\nMonitor vital signs and fluid balance closely, especially during paracentesis. Be vigilant for signs of infection and renal impairment in patients receiving diuretics.\n",
+  "content": {
+    "overview": {
+      "definition": "Ascites is the pathological accumulation of fluid in the peritoneal cavity, often associated with liver disease, malignancy, or heart failure.",
+      "epidemiology": "Ascites is most commonly seen in patients with cirrhosis, affecting approximately 50% of patients with advanced liver disease. It can also occur in patients with malignancies, heart failure, and infections such as tuberculosis.",
+      "pathophysiology": "Ascites results from increased hydrostatic pressure in the portal circulation (portal hypertension), decreased oncotic pressure due to hypoalbuminemia, and increased capillary permeability. This leads to an imbalance in fluid homeostasis, causing fluid to leak into the peritoneal cavity."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal distension",
+        "Discomfort or pain in the abdomen",
+        "Early satiety",
+        "Weight gain due to fluid retention"
+      ],
+      "signs": [
+        "Abdominal distension on examination",
+        "Fluid wave test positive",
+        "Shifting dullness on percussion",
+        "Bulging flanks"
+      ],
+      "atypicalPresentations": [
+        "Minimal abdominal distension despite significant fluid accumulation",
+        "Acute respiratory distress due to diaphragmatic elevation"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Fever",
+        "Signs of infection (e.g., spontaneous bacterial peritonitis)",
+        "Altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal ultrasound to assess fluid volume and location",
+        "Paracentesis for fluid analysis"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen to evaluate underlying causes",
+        "Liver function tests",
+        "Serum-ascites albumin gradient (SAAG)"
+      ],
+      "specialistTests": [
+        "Cytology of ascitic fluid for malignancy",
+        "Culture of ascitic fluid for infection",
+        "Liver biopsy if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ascites is confirmed by physical examination and imaging (ultrasound or CT) showing fluid in the peritoneal cavity, often supported by paracentesis findings.",
+      "differentials": [
+        "Cirrhosis",
+        "Heart failure",
+        "Malignancy (e.g., ovarian cancer, pancreatic cancer)",
+        "Tuberculosis",
+        "Nephrotic syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Paracentesis for symptomatic relief and fluid analysis",
+          "Diuretics (e.g., spironolactone)"
+        ],
+        "secondLine": [
+          "TIPS (transjugular intrahepatic portosystemic shunt) if indicated"
+        ],
+        "procedures": [
+          "Paracentesis: A procedure to remove fluid from the peritoneal cavity, indicated for symptomatic relief, diagnostic purposes, or therapeutic drainage. Risks include bleeding, infection, and bowel perforation."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Diuretics (spironolactone and furosemide) for fluid management",
+          "Dietary sodium restriction"
+        ],
+        "secondLine": [
+          "Consideration of TIPS or liver transplantation in refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for fluid status, renal function, and electrolyte balance"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Spironolactone",
+          "mechanism": "A potassium-sparing diuretic that inhibits aldosterone, promoting sodium and water excretion.",
+          "dosing": "Start at 100 mg daily, titrate up to 400 mg based on response.",
+          "sideEffects": "Hyperkalemia, renal impairment, gynecomastia.",
+          "notes": "Monitor potassium levels regularly."
+        },
+        {
+          "name": "Furosemide",
+          "mechanism": "A loop diuretic that inhibits sodium reabsorption in the loop of Henle, promoting diuresis.",
+          "dosing": "Start at 20-40 mg daily, titrate based on response.",
+          "sideEffects": "Dehydration, electrolyte imbalances, renal impairment.",
+          "notes": "Use in combination with spironolactone for synergistic effect."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "A procedure to remove excess fluid from the abdominal cavity using a needle and catheter.",
+          "indications": "Symptomatic relief, diagnostic analysis of ascitic fluid, therapeutic drainage.",
+          "risks": "Bleeding, infection, bowel perforation, hypotension due to rapid fluid removal."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of ascites depends on the underlying cause. In patients with cirrhosis, the presence of ascites indicates a poorer prognosis, with a median survival of 1-2 years without liver transplantation.",
+    "complications": [
+      "Spontaneous bacterial peritonitis (SBP)",
+      "Infection",
+      "Hernias due to increased abdominal pressure",
+      "Renal impairment due to diuretic use"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate investigations, manage diuretics, and refer to specialists as needed. They should also educate patients about dietary modifications and monitor for complications.",
+    "escalation": "Escalate care if there are signs of infection, severe abdominal pain, or altered mental status. Refer to gastroenterology or surgery for refractory cases or complications.",
+    "keySafetyConsiderations": "Monitor vital signs and fluid balance closely, especially during paracentesis. Be vigilant for signs of infection and renal impairment in patients receiving diuretics."
+  }
+}

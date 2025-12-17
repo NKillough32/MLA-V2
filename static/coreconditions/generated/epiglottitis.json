@@ -1,0 +1,128 @@
+{
+  "id": "epiglottitis",
+  "name": "Epiglottitis",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:39:18.996689",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Epiglottitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEpiglottitis is an inflammation of the epiglottis, a flap of tissue that sits at the base of the tongue and covers the trachea during swallowing. It can lead to airway obstruction and is considered a medical emergency.\n\n### Epidemiology\nHistorically, epiglottitis was primarily caused by Haemophilus influenzae type b (Hib) in children. However, with the introduction of the Hib vaccine, the incidence has decreased significantly. It can occur in all age groups, with a higher prevalence in unvaccinated children and adults, particularly those with underlying health conditions.\n\n### Essential Pathophysiology\nThe inflammation of the epiglottis can be due to bacterial, viral, or fungal infections, with bacteria being the most common cause. The swelling can obstruct the airway, leading to respiratory distress. The condition can progress rapidly, often within hours.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe sore throat\n- Difficulty swallowing (dysphagia)\n- Drooling due to inability to swallow\n- Fever\n- Stridor (high-pitched wheezing sound)\n- Muffled voice (hot potato voice)\n\n### Key Signs\n- Tripod position (sitting forward to breathe easier)\n- Cyanosis (bluish discoloration of lips or face)\n- Respiratory distress\n- Swollen epiglottis on examination\n\n### Atypical Presentations\n- Absence of fever in some cases\n- Gradual onset in adults compared to rapid onset in children\n\n### Red Flags Requiring Immediate Action\n- Stridor at rest\n- Severe respiratory distress\n- Drooling\n- Tripod position\n- Cyanosis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Lateral neck X-ray (to assess for epiglottic swelling)\n\n### Second-line Investigations\n- Flexible laryngoscopy (if safe and necessary)\n- Blood cultures\n\n### Specialist Tests\n- CT scan of the neck (if complications are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings (e.g., lateral neck X-ray showing a 'thumbprint sign').\n\n### Key Differential Diagnoses to Exclude\n- Croup\n- Peritonsillar abscess\n- Retropharyngeal abscess\n- Anaphylaxis\n- Foreign body obstruction\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Secure airway (intubation if necessary)\n- Administer IV antibiotics (e.g., ceftriaxone or cefotaxime)\n- Corticosteroids (e.g., dexamethasone) to reduce inflammation\n\n#### Second-line Treatments\n- Consideration of adjunctive therapies such as nebulized epinephrine in severe cases\n\n#### Emergency Procedures\n- Endotracheal intubation (if airway compromise is imminent)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Identify and treat underlying causes (if applicable)\n\n#### Second-line Treatments\n- Follow-up with ENT specialist for recurrent cases\n\n#### Monitoring Requirements\n- Regular assessment of airway patency and respiratory function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic effective against common pathogens in epiglottitis.\n- **Typical Dosing Range**: 1-2 g IV every 12-24 hours depending on severity.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Consider in combination with vancomycin for suspected MRSA.\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema.\n- **Typical Dosing Range**: 4-10 mg IV/PO once, may repeat based on clinical response.\n- **Key Side Effects/Contraindications**: Hyperglycemia, increased risk of infection, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Administer early to improve airway outcomes.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway.\n- **Indications**: Severe airway obstruction or respiratory distress due to epiglottitis.\n- **Key Risks/Complications**: Trauma to the airway, accidental extubation, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and management, the prognosis is generally good. However, delayed treatment can lead to significant morbidity and mortality due to airway obstruction.\n\n### Important Complications to Watch For\n- Airway obstruction\n- Respiratory failure\n- Sepsis\n- Pneumonia\n- Long-term airway issues (e.g., stridor)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of epiglottitis, initiate emergency management, and escalate care appropriately. They should also be familiar with the importance of airway management and the use of antibiotics.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to ENT and anesthesia for airway management is critical. If the patient shows signs of respiratory distress or failure, rapid escalation to emergency intubation is necessary.\n\n### Key Safety Considerations\nAlways assess airway patency in suspected cases. Avoid unnecessary examination of the throat (e.g., using a tongue depressor) as it may provoke airway spasm. Ensure that resuscitation equipment is readily available.\n",
+  "content": {
+    "overview": {
+      "definition": "Epiglottitis is an inflammation of the epiglottis, a flap of tissue that sits at the base of the tongue and covers the trachea during swallowing. It can lead to airway obstruction and is considered a medical emergency.",
+      "epidemiology": "Historically, epiglottitis was primarily caused by Haemophilus influenzae type b (Hib) in children. However, with the introduction of the Hib vaccine, the incidence has decreased significantly. It can occur in all age groups, with a higher prevalence in unvaccinated children and adults, particularly those with underlying health conditions.",
+      "pathophysiology": "The inflammation of the epiglottis can be due to bacterial, viral, or fungal infections, with bacteria being the most common cause. The swelling can obstruct the airway, leading to respiratory distress. The condition can progress rapidly, often within hours."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe sore throat",
+        "Difficulty swallowing (dysphagia)",
+        "Drooling due to inability to swallow",
+        "Fever",
+        "Stridor (high-pitched wheezing sound)",
+        "Muffled voice (hot potato voice)"
+      ],
+      "signs": [
+        "Tripod position (sitting forward to breathe easier)",
+        "Cyanosis (bluish discoloration of lips or face)",
+        "Respiratory distress",
+        "Swollen epiglottis on examination"
+      ],
+      "atypicalPresentations": [
+        "Absence of fever in some cases",
+        "Gradual onset in adults compared to rapid onset in children"
+      ],
+      "redFlags": [
+        "Stridor at rest",
+        "Severe respiratory distress",
+        "Drooling",
+        "Tripod position",
+        "Cyanosis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Lateral neck X-ray (to assess for epiglottic swelling)"
+      ],
+      "secondLine": [
+        "Flexible laryngoscopy (if safe and necessary)",
+        "Blood cultures"
+      ],
+      "specialistTests": [
+        "CT scan of the neck (if complications are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings (e.g., lateral neck X-ray showing a 'thumbprint sign').",
+      "differentials": [
+        "Croup",
+        "Peritonsillar abscess",
+        "Retropharyngeal abscess",
+        "Anaphylaxis",
+        "Foreign body obstruction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Secure airway (intubation if necessary)",
+          "Administer IV antibiotics (e.g., ceftriaxone or cefotaxime)",
+          "Corticosteroids (e.g., dexamethasone) to reduce inflammation"
+        ],
+        "secondLine": [
+          "Consideration of adjunctive therapies such as nebulized epinephrine in severe cases"
+        ],
+        "procedures": [
+          "Endotracheal intubation (if airway compromise is imminent)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Identify and treat underlying causes (if applicable)"
+        ],
+        "secondLine": [
+          "Follow-up with ENT specialist for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular assessment of airway patency and respiratory function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic effective against common pathogens in epiglottitis.",
+          "dosing": "1-2 g IV every 12-24 hours depending on severity.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.",
+          "notes": "Consider in combination with vancomycin for suspected MRSA."
+        },
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema.",
+          "dosing": "4-10 mg IV/PO once, may repeat based on clinical response.",
+          "sideEffects": "Hyperglycemia, increased risk of infection, gastrointestinal bleeding.",
+          "notes": "Administer early to improve airway outcomes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway.",
+          "indications": "Severe airway obstruction or respiratory distress due to epiglottitis.",
+          "risks": "Trauma to the airway, accidental extubation, infection."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and management, the prognosis is generally good. However, delayed treatment can lead to significant morbidity and mortality due to airway obstruction.",
+    "complications": [
+      "Airway obstruction",
+      "Respiratory failure",
+      "Sepsis",
+      "Pneumonia",
+      "Long-term airway issues (e.g., stridor)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of epiglottitis, initiate emergency management, and escalate care appropriately. They should also be familiar with the importance of airway management and the use of antibiotics.",
+    "escalation": "Immediate referral to ENT and anesthesia for airway management is critical. If the patient shows signs of respiratory distress or failure, rapid escalation to emergency intubation is necessary.",
+    "keySafetyConsiderations": "Always assess airway patency in suspected cases. Avoid unnecessary examination of the throat (e.g., using a tongue depressor) as it may provoke airway spasm. Ensure that resuscitation equipment is readily available."
+  }
+}

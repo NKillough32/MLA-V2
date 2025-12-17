@@ -1,0 +1,143 @@
+{
+  "id": "menopause",
+  "name": "Menopause",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:55:04.622015",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Menopause: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMenopause is the natural cessation of menstruation resulting from the loss of ovarian follicular activity, typically occurring between the ages of 45 and 55, characterized by the absence of menstrual periods for 12 consecutive months.\n\n### Epidemiology\nApproximately 80% of women experience menopausal symptoms, with the average age of onset being 51 years. The transition phase, known as perimenopause, can last several years before menopause is reached.\n\n### Essential Pathophysiology\nMenopause results from a decline in ovarian hormone production, particularly estrogen and progesterone, leading to the cessation of ovulation and menstruation. This hormonal change affects various body systems, leading to symptoms such as hot flashes, mood changes, and vaginal dryness.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hot flashes\n- Night sweats\n- Vaginal dryness\n- Mood swings\n- Sleep disturbances\n- Decreased libido\n- Urinary incontinence\n\n### Key Signs\n- Atrophic vaginitis\n- Thinning hair\n- Skin changes (dryness, loss of elasticity)\n- Weight gain (especially around the abdomen)\n\n### Atypical Presentations\n- Severe anxiety or depression\n- Cognitive changes (memory issues)\n- Joint pain\n\n### Red Flags Requiring Immediate Action\n- Heavy or prolonged bleeding after menopause\n- Bleeding between periods during perimenopause\n- Severe symptoms affecting quality of life\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Menstrual history assessment\n- Symptom assessment (e.g., hot flashes, mood changes)\n- Physical examination\n\n### Second-line Investigations\n- Serum FSH (follicle-stimulating hormone) levels (elevated in menopause)\n- Serum estradiol levels (low in menopause)\n\n### Specialist Tests\n- Bone density scan (DEXA) for osteoporosis risk\n- Thyroid function tests if symptoms suggest thyroid dysfunction\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of menopause is primarily clinical, based on the history of amenorrhea for 12 months in a woman over 45 years of age, along with typical symptoms. Laboratory tests may be used to confirm the diagnosis in women under 45 or with atypical presentations.\n\n### Key Differential Diagnoses to Exclude\n- Pregnancy\n- Thyroid disorders (hypothyroidism, hyperthyroidism)\n- Hyperprolactinemia\n- Adrenal insufficiency\n- Chronic illness (e.g., diabetes, cancer)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- Patient education about menopause and its symptoms\n\n#### Second-line Treatments\n- Hormone replacement therapy (HRT) for moderate to severe symptoms\n\n#### Emergency Procedures\n- Counseling for lifestyle changes and symptom management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term HRT for symptom management and prevention of osteoporosis\n\n#### Second-line Treatments\n- Non-hormonal medications (e.g., SSRIs for mood symptoms, gabapentin for hot flashes)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and side effects of HRT\n- Bone density monitoring for osteoporosis risk\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Estrogen (e.g., estradiol)\n- **Mechanism of Action**: Replaces estrogen to alleviate menopausal symptoms and prevent osteoporosis.\n- **Typical Dosing Range**: Typically 1-2 mg daily, adjusted based on symptoms and side effects.\n- **Key Side Effects/Contraindications**: Nausea, headache, breast tenderness, increased risk of thromboembolic events.\n- **When to Use vs. Alternatives**: Consider transdermal routes to reduce thromboembolic risk.\n\n#### Progesterone (e.g., medroxyprogesterone acetate)\n- **Mechanism of Action**: Used in combination with estrogen to protect the endometrium in women with an intact uterus.\n- **Typical Dosing Range**: 5-10 mg daily or 200 mg for 12 days per month.\n- **Key Side Effects/Contraindications**: Mood changes, bloating, breast tenderness.\n- **When to Use vs. Alternatives**: Essential for women with a uterus to prevent endometrial hyperplasia.\n\n#### SSRIs (e.g., fluoxetine)\n- **Mechanism of Action**: Used for mood stabilization and can help with hot flashes.\n- **Typical Dosing Range**: 20 mg daily, may adjust based on response.\n- **Key Side Effects/Contraindications**: Nausea, sexual dysfunction, insomnia.\n- **When to Use vs. Alternatives**: Consider in women who cannot take HRT.\n\n#### Gabapentin\n- **Mechanism of Action**: Anticonvulsant that can reduce hot flashes.\n- **Typical Dosing Range**: 300 mg at bedtime, may increase to 900 mg daily.\n- **Key Side Effects/Contraindications**: Dizziness, fatigue, weight gain.\n- **When to Use vs. Alternatives**: Useful for women with contraindications to HRT.\n\n### Procedures\n\n#### Bone density scan (DEXA)\n- **What it Involves**: A test to measure bone mineral density and assess osteoporosis risk.\n- **Indications**: Recommended for women over 65 or younger women with risk factors for osteoporosis.\n- **Key Risks/Complications**: Radiation exposure (minimal), false positives/negatives.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost women experience a gradual improvement in symptoms over time, with many reporting significant relief after the first few years post-menopause. Long-term health risks include osteoporosis and cardiovascular disease, which should be monitored.\n\n### Important Complications to Watch For\n- Osteoporosis and increased fracture risk\n- Cardiovascular disease\n- Urinary incontinence\n- Vaginal atrophy leading to dyspareunia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize menopausal symptoms, provide initial management advice, and refer to specialists when necessary. They should also educate patients about lifestyle modifications and the risks and benefits of HRT.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynaecologist or menopause specialist if symptoms are severe, if there are complications, or if the patient has significant risk factors for osteoporosis or cardiovascular disease.\n\n### Key Safety Considerations\nMonitor for side effects of HRT, including thromboembolic events and breast cancer risk. Ensure appropriate screening for breast and cervical cancer is up to date. Educate patients on lifestyle modifications to mitigate risks associated with menopause.\n",
+  "content": {
+    "overview": {
+      "definition": "Menopause is the natural cessation of menstruation resulting from the loss of ovarian follicular activity, typically occurring between the ages of 45 and 55, characterized by the absence of menstrual periods for 12 consecutive months.",
+      "epidemiology": "Approximately 80% of women experience menopausal symptoms, with the average age of onset being 51 years. The transition phase, known as perimenopause, can last several years before menopause is reached.",
+      "pathophysiology": "Menopause results from a decline in ovarian hormone production, particularly estrogen and progesterone, leading to the cessation of ovulation and menstruation. This hormonal change affects various body systems, leading to symptoms such as hot flashes, mood changes, and vaginal dryness."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hot flashes",
+        "Night sweats",
+        "Vaginal dryness",
+        "Mood swings",
+        "Sleep disturbances",
+        "Decreased libido",
+        "Urinary incontinence"
+      ],
+      "signs": [
+        "Atrophic vaginitis",
+        "Thinning hair",
+        "Skin changes (dryness, loss of elasticity)",
+        "Weight gain (especially around the abdomen)"
+      ],
+      "atypicalPresentations": [
+        "Severe anxiety or depression",
+        "Cognitive changes (memory issues)",
+        "Joint pain"
+      ],
+      "redFlags": [
+        "Heavy or prolonged bleeding after menopause",
+        "Bleeding between periods during perimenopause",
+        "Severe symptoms affecting quality of life"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Menstrual history assessment",
+        "Symptom assessment (e.g., hot flashes, mood changes)",
+        "Physical examination"
+      ],
+      "secondLine": [
+        "Serum FSH (follicle-stimulating hormone) levels (elevated in menopause)",
+        "Serum estradiol levels (low in menopause)"
+      ],
+      "specialistTests": [
+        "Bone density scan (DEXA) for osteoporosis risk",
+        "Thyroid function tests if symptoms suggest thyroid dysfunction"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of menopause is primarily clinical, based on the history of amenorrhea for 12 months in a woman over 45 years of age, along with typical symptoms. Laboratory tests may be used to confirm the diagnosis in women under 45 or with atypical presentations.",
+      "differentials": [
+        "Pregnancy",
+        "Thyroid disorders (hypothyroidism, hyperthyroidism)",
+        "Hyperprolactinemia",
+        "Adrenal insufficiency",
+        "Chronic illness (e.g., diabetes, cancer)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "Patient education about menopause and its symptoms"
+        ],
+        "secondLine": [
+          "Hormone replacement therapy (HRT) for moderate to severe symptoms"
+        ],
+        "procedures": [
+          "Counseling for lifestyle changes and symptom management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term HRT for symptom management and prevention of osteoporosis"
+        ],
+        "secondLine": [
+          "Non-hormonal medications (e.g., SSRIs for mood symptoms, gabapentin for hot flashes)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and side effects of HRT",
+          "Bone density monitoring for osteoporosis risk"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Estrogen (e.g., estradiol)",
+          "mechanism": "Replaces estrogen to alleviate menopausal symptoms and prevent osteoporosis.",
+          "dosing": "Typically 1-2 mg daily, adjusted based on symptoms and side effects.",
+          "sideEffects": "Nausea, headache, breast tenderness, increased risk of thromboembolic events.",
+          "notes": "Consider transdermal routes to reduce thromboembolic risk."
+        },
+        {
+          "name": "Progesterone (e.g., medroxyprogesterone acetate)",
+          "mechanism": "Used in combination with estrogen to protect the endometrium in women with an intact uterus.",
+          "dosing": "5-10 mg daily or 200 mg for 12 days per month.",
+          "sideEffects": "Mood changes, bloating, breast tenderness.",
+          "notes": "Essential for women with a uterus to prevent endometrial hyperplasia."
+        },
+        {
+          "name": "SSRIs (e.g., fluoxetine)",
+          "mechanism": "Used for mood stabilization and can help with hot flashes.",
+          "dosing": "20 mg daily, may adjust based on response.",
+          "sideEffects": "Nausea, sexual dysfunction, insomnia.",
+          "notes": "Consider in women who cannot take HRT."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Anticonvulsant that can reduce hot flashes.",
+          "dosing": "300 mg at bedtime, may increase to 900 mg daily.",
+          "sideEffects": "Dizziness, fatigue, weight gain.",
+          "notes": "Useful for women with contraindications to HRT."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone density scan (DEXA)",
+          "description": "A test to measure bone mineral density and assess osteoporosis risk.",
+          "indications": "Recommended for women over 65 or younger women with risk factors for osteoporosis.",
+          "risks": "Radiation exposure (minimal), false positives/negatives."
+        }
+      ]
+    },
+    "prognosis": "Most women experience a gradual improvement in symptoms over time, with many reporting significant relief after the first few years post-menopause. Long-term health risks include osteoporosis and cardiovascular disease, which should be monitored.",
+    "complications": [
+      "Osteoporosis and increased fracture risk",
+      "Cardiovascular disease",
+      "Urinary incontinence",
+      "Vaginal atrophy leading to dyspareunia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize menopausal symptoms, provide initial management advice, and refer to specialists when necessary. They should also educate patients about lifestyle modifications and the risks and benefits of HRT.",
+    "escalation": "Refer to a gynaecologist or menopause specialist if symptoms are severe, if there are complications, or if the patient has significant risk factors for osteoporosis or cardiovascular disease.",
+    "keySafetyConsiderations": "Monitor for side effects of HRT, including thromboembolic events and breast cancer risk. Ensure appropriate screening for breast and cervical cancer is up to date. Educate patients on lifestyle modifications to mitigate risks associated with menopause."
+  }
+}

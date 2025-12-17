@@ -1,0 +1,117 @@
+{
+  "id": "wernickes_encephalopathy",
+  "name": "Wernicke?s encephalopathy",
+  "domains": [
+    "Neurology",
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T20:56:35.038468",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Wernicke?s encephalopathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nWernicke's encephalopathy is an acute neurological condition caused by thiamine (vitamin B1) deficiency, often associated with chronic alcoholism, malnutrition, or certain medical conditions that impair absorption or utilization of thiamine.\n\n### Epidemiology\nWernicke's encephalopathy is most commonly seen in individuals with chronic alcoholism, affecting approximately 1-2% of this population. It can also occur in patients with malabsorption syndromes, prolonged vomiting, or those receiving parenteral nutrition without adequate thiamine supplementation.\n\n### Essential Pathophysiology\nThiamine is a cofactor for several enzymes involved in carbohydrate metabolism. Its deficiency leads to impaired glucose metabolism, particularly in the brain, resulting in neuronal injury and cell death, especially in areas such as the thalamus, hypothalamus, and brainstem.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Confusion or altered mental status\n- Ocular abnormalities (ophthalmoplegia, nystagmus)\n- Ataxia (gait disturbances)\n\n### Key Signs\n- Altered consciousness (drowsiness, stupor)\n- Nystagmus or ophthalmoplegia\n- Gait ataxia\n- Hypotension or tachycardia in severe cases\n\n### Atypical Presentations\n- Memory disturbances (Korsakoff syndrome)\n- Seizures\n- Peripheral neuropathy\n\n### Red Flags Requiring Immediate Action\n- Recent history of alcohol use or malnutrition\n- Rapid onset of confusion and ataxia\n- Ocular symptoms (especially nystagmus)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and examination)\n- Thiamine level (though not routinely available)\n- Blood tests (CBC, electrolytes, liver function tests)\n\n### Second-line Investigations\n- MRI of the brain (may show characteristic changes in the thalamus and mammillary bodies)\n- Lumbar puncture (if infection is suspected)\n\n### Specialist Tests\n- Neuropsychological assessment (if cognitive impairment is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the classic triad of confusion, ophthalmoplegia, and ataxia. However, not all symptoms need to be present for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Korsakoff syndrome\n- Delirium tremens\n- Cerebellar degeneration\n- Thalamic hemorrhage\n- Hypoglycemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate thiamine supplementation (IV thiamine 200-500 mg TID for 2-3 days)\n- Supportive care (hydration, nutrition)\n\n#### Second-line Treatments\n- Monitor for improvement in symptoms and adjust thiamine dosing as needed\n\n#### Emergency Procedures\n- Nutritional support (if indicated, via enteral or parenteral routes)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral thiamine supplementation (100 mg daily) for maintenance after acute treatment\n\n#### Second-line Treatments\n- Psychiatric support and rehabilitation for cognitive deficits\n\n#### Monitoring Requirements\n- Regular follow-up for cognitive function and nutritional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Thiamine (Vitamin B1)\n- **Mechanism of Action**: Essential cofactor for carbohydrate metabolism; prevents neuronal injury due to glucose metabolism impairment.\n- **Typical Dosing Range**: 200-500 mg IV TID for 2-3 days, then switch to oral 100 mg daily for maintenance.\n- **Key Side Effects/Contraindications**: Allergic reactions (rare), hypotension if given too rapidly.\n- **When to Use vs. Alternatives**: Thiamine should be administered before glucose in at-risk patients to prevent Wernicke's encephalopathy.\n\n### Procedures\n\n#### Nutritional support\n- **What it Involves**: Provision of adequate nutrition, either enterally or parenterally, to prevent further deficiencies.\n- **Indications**: In patients unable to eat or absorb nutrients adequately, especially in chronic alcoholism or malnutrition.\n- **Key Risks/Complications**: Infection (if parenteral), electrolyte imbalances, refeeding syndrome.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis is generally good, with many patients showing significant improvement. However, if untreated, it can lead to permanent neurological damage or death.\n\n### Important Complications to Watch For\n- Korsakoff syndrome (chronic memory disorder)\n- Persistent ataxia\n- Cognitive impairment\n- Increased risk of falls and injuries\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the signs and symptoms of Wernicke's encephalopathy, especially in at-risk populations. They should initiate thiamine supplementation promptly and ensure appropriate referrals to specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with symptoms suggestive of Wernicke's encephalopathy, escalate care to a senior clinician for immediate thiamine administration and further management.\n\n### Key Safety Considerations\nAlways administer thiamine before glucose in at-risk patients to prevent precipitating Wernicke's encephalopathy. Monitor for signs of improvement or deterioration in neurological status.\n",
+  "content": {
+    "overview": {
+      "definition": "Wernicke's encephalopathy is an acute neurological condition caused by thiamine (vitamin B1) deficiency, often associated with chronic alcoholism, malnutrition, or certain medical conditions that impair absorption or utilization of thiamine.",
+      "epidemiology": "Wernicke's encephalopathy is most commonly seen in individuals with chronic alcoholism, affecting approximately 1-2% of this population. It can also occur in patients with malabsorption syndromes, prolonged vomiting, or those receiving parenteral nutrition without adequate thiamine supplementation.",
+      "pathophysiology": "Thiamine is a cofactor for several enzymes involved in carbohydrate metabolism. Its deficiency leads to impaired glucose metabolism, particularly in the brain, resulting in neuronal injury and cell death, especially in areas such as the thalamus, hypothalamus, and brainstem."
+    },
+    "recognition": {
+      "symptoms": [
+        "Confusion or altered mental status",
+        "Ocular abnormalities (ophthalmoplegia, nystagmus)",
+        "Ataxia (gait disturbances)"
+      ],
+      "signs": [
+        "Altered consciousness (drowsiness, stupor)",
+        "Nystagmus or ophthalmoplegia",
+        "Gait ataxia",
+        "Hypotension or tachycardia in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Memory disturbances (Korsakoff syndrome)",
+        "Seizures",
+        "Peripheral neuropathy"
+      ],
+      "redFlags": [
+        "Recent history of alcohol use or malnutrition",
+        "Rapid onset of confusion and ataxia",
+        "Ocular symptoms (especially nystagmus)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and examination)",
+        "Thiamine level (though not routinely available)",
+        "Blood tests (CBC, electrolytes, liver function tests)"
+      ],
+      "secondLine": [
+        "MRI of the brain (may show characteristic changes in the thalamus and mammillary bodies)",
+        "Lumbar puncture (if infection is suspected)"
+      ],
+      "specialistTests": [
+        "Neuropsychological assessment (if cognitive impairment is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the classic triad of confusion, ophthalmoplegia, and ataxia. However, not all symptoms need to be present for diagnosis.",
+      "differentials": [
+        "Korsakoff syndrome",
+        "Delirium tremens",
+        "Cerebellar degeneration",
+        "Thalamic hemorrhage",
+        "Hypoglycemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate thiamine supplementation (IV thiamine 200-500 mg TID for 2-3 days)",
+          "Supportive care (hydration, nutrition)"
+        ],
+        "secondLine": [
+          "Monitor for improvement in symptoms and adjust thiamine dosing as needed"
+        ],
+        "procedures": [
+          "Nutritional support (if indicated, via enteral or parenteral routes)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral thiamine supplementation (100 mg daily) for maintenance after acute treatment"
+        ],
+        "secondLine": [
+          "Psychiatric support and rehabilitation for cognitive deficits"
+        ],
+        "monitoring": [
+          "Regular follow-up for cognitive function and nutritional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Thiamine (Vitamin B1)",
+          "mechanism": "Essential cofactor for carbohydrate metabolism; prevents neuronal injury due to glucose metabolism impairment.",
+          "dosing": "200-500 mg IV TID for 2-3 days, then switch to oral 100 mg daily for maintenance.",
+          "sideEffects": "Allergic reactions (rare), hypotension if given too rapidly.",
+          "notes": "Thiamine should be administered before glucose in at-risk patients to prevent Wernicke's encephalopathy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nutritional support",
+          "description": "Provision of adequate nutrition, either enterally or parenterally, to prevent further deficiencies.",
+          "indications": "In patients unable to eat or absorb nutrients adequately, especially in chronic alcoholism or malnutrition.",
+          "risks": "Infection (if parenteral), electrolyte imbalances, refeeding syndrome."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis is generally good, with many patients showing significant improvement. However, if untreated, it can lead to permanent neurological damage or death.",
+    "complications": [
+      "Korsakoff syndrome (chronic memory disorder)",
+      "Persistent ataxia",
+      "Cognitive impairment",
+      "Increased risk of falls and injuries"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the signs and symptoms of Wernicke's encephalopathy, especially in at-risk populations. They should initiate thiamine supplementation promptly and ensure appropriate referrals to specialists as needed.",
+    "escalation": "If a patient presents with symptoms suggestive of Wernicke's encephalopathy, escalate care to a senior clinician for immediate thiamine administration and further management.",
+    "keySafetyConsiderations": "Always administer thiamine before glucose in at-risk patients to prevent precipitating Wernicke's encephalopathy. Monitor for signs of improvement or deterioration in neurological status."
+  }
+}

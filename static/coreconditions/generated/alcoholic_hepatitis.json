@@ -1,0 +1,138 @@
+{
+  "id": "alcoholic_hepatitis",
+  "name": "Alcoholic hepatitis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:42:45.174069",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Alcoholic hepatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAlcoholic hepatitis is an inflammatory condition of the liver caused by excessive alcohol consumption, characterized by hepatocyte injury and necrosis, leading to liver dysfunction.\n\n### Epidemiology\nAlcoholic hepatitis is prevalent in individuals with chronic alcohol use, particularly in those consuming more than 50g of alcohol per day. It is more common in men and often occurs in middle-aged adults. The incidence is increasing globally, particularly in regions with rising alcohol consumption.\n\n### Essential Pathophysiology\nThe pathophysiology involves the metabolism of alcohol in the liver, leading to the production of toxic metabolites such as acetaldehyde. This causes oxidative stress, inflammation, and apoptosis of hepatocytes. The inflammatory response leads to the activation of Kupffer cells and the release of pro-inflammatory cytokines, resulting in further liver damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Jaundice\n- Abdominal pain (right upper quadrant)\n- Nausea and vomiting\n- Anorexia\n- Fever\n- Fatigue\n- Weight loss\n\n### Key Signs\n- Hepatomegaly\n- Ascites\n- Splenomegaly\n- Palmar erythema\n- Spider angiomata\n- Asterixis\n- Signs of liver failure (e.g., confusion, coagulopathy)\n\n### Atypical Presentations\n- Acute liver failure\n- Severe hypoglycemia\n- Gastrointestinal bleeding\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration of liver function\n- Severe jaundice\n- Confusion or altered mental status\n- Coagulopathy (e.g., INR > 1.5)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Complete blood count (CBC)\n- Electrolytes\n- Coagulation profile (INR)\n- Blood alcohol level\n\n### Second-line Investigations\n- Ultrasound abdomen (to assess liver size, ascites, and portal hypertension)\n- CT abdomen (if ultrasound inconclusive)\n- Liver biopsy (if diagnosis uncertain and to assess severity)\n\n### Specialist Tests\n- Liver function tests (specific markers for alcoholic liver disease)\n- Serum ammonia levels (in cases of encephalopathy)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history of alcohol consumption, characteristic symptoms, and laboratory findings (elevated AST/ALT ratio > 2:1, elevated bilirubin, and signs of liver dysfunction).\n\n### Key Differential Diagnoses to Exclude\n- Viral hepatitis (A, B, C)\n- Non-alcoholic fatty liver disease (NAFLD)\n- Autoimmune hepatitis\n- Drug-induced liver injury\n- Hemochromatosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, nutrition)\n- Corticosteroids (e.g., prednisolone 40mg daily for 28 days) if severe (Maddrey's discriminant function > 32)\n\n#### Second-line Treatments\n- Pentoxifylline (if corticosteroids contraindicated or ineffective)\n\n#### Emergency Procedures\n- Paracentesis (for diagnostic and therapeutic purposes in cases of tense ascites)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Alcohol cessation support (counseling, rehabilitation programs)\n- Nutritional support (high-calorie diet, vitamin supplementation)\n\n#### Second-line Treatments\n- Consider referral to hepatology for liver transplant evaluation if severe liver disease develops\n\n#### Monitoring Requirements\n- Regular follow-up for liver function tests and signs of liver failure\n- Screening for hepatocellular carcinoma in patients with cirrhosis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects reduce liver inflammation.\n- **Typical Dosing Range**: 40mg orally daily for 28 days, then tapering based on clinical response.\n- **Key Side Effects/Contraindications**: Increased risk of infections, gastrointestinal bleeding, hyperglycemia, and mood changes.\n- **When to Use vs. Alternatives**: Monitor for signs of infection and gastrointestinal bleeding during treatment.\n\n#### Pentoxifylline\n- **Mechanism of Action**: Improves microcirculation and reduces inflammation.\n- **Typical Dosing Range**: 400mg orally three times daily.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, headache, and dizziness.\n- **When to Use vs. Alternatives**: Consider in patients who cannot tolerate corticosteroids.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: A procedure to remove fluid from the abdominal cavity using a needle.\n- **Indications**: Tense ascites, diagnostic evaluation of ascitic fluid, or therapeutic relief of symptoms.\n- **Key Risks/Complications**: Infection, bleeding, and bowel perforation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of alcoholic hepatitis varies; mild cases may resolve with abstinence, while severe cases can lead to liver failure and increased mortality. The 28-day mortality rate can be as high as 30-50% in severe cases without treatment.\n\n### Important Complications to Watch For\n- Cirrhosis\n- Portal hypertension\n- Hepatic encephalopathy\n- Gastrointestinal bleeding (variceal hemorrhage)\n- Hepatocellular carcinoma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of alcoholic hepatitis, initiate investigations, provide supportive care, and refer to specialists as needed. They should also educate patients on alcohol cessation and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology/hepatology for severe cases, those with rapid deterioration, or when considering liver transplantation.\n\n### Key Safety Considerations\nMonitor vital signs, liver function tests, and signs of complications closely. Ensure safe alcohol withdrawal protocols are in place for patients with alcohol dependence.\n",
+  "content": {
+    "overview": {
+      "definition": "Alcoholic hepatitis is an inflammatory condition of the liver caused by excessive alcohol consumption, characterized by hepatocyte injury and necrosis, leading to liver dysfunction.",
+      "epidemiology": "Alcoholic hepatitis is prevalent in individuals with chronic alcohol use, particularly in those consuming more than 50g of alcohol per day. It is more common in men and often occurs in middle-aged adults. The incidence is increasing globally, particularly in regions with rising alcohol consumption.",
+      "pathophysiology": "The pathophysiology involves the metabolism of alcohol in the liver, leading to the production of toxic metabolites such as acetaldehyde. This causes oxidative stress, inflammation, and apoptosis of hepatocytes. The inflammatory response leads to the activation of Kupffer cells and the release of pro-inflammatory cytokines, resulting in further liver damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Jaundice",
+        "Abdominal pain (right upper quadrant)",
+        "Nausea and vomiting",
+        "Anorexia",
+        "Fever",
+        "Fatigue",
+        "Weight loss"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Ascites",
+        "Splenomegaly",
+        "Palmar erythema",
+        "Spider angiomata",
+        "Asterixis",
+        "Signs of liver failure (e.g., confusion, coagulopathy)"
+      ],
+      "atypicalPresentations": [
+        "Acute liver failure",
+        "Severe hypoglycemia",
+        "Gastrointestinal bleeding"
+      ],
+      "redFlags": [
+        "Rapid deterioration of liver function",
+        "Severe jaundice",
+        "Confusion or altered mental status",
+        "Coagulopathy (e.g., INR > 1.5)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Complete blood count (CBC)",
+        "Electrolytes",
+        "Coagulation profile (INR)",
+        "Blood alcohol level"
+      ],
+      "secondLine": [
+        "Ultrasound abdomen (to assess liver size, ascites, and portal hypertension)",
+        "CT abdomen (if ultrasound inconclusive)",
+        "Liver biopsy (if diagnosis uncertain and to assess severity)"
+      ],
+      "specialistTests": [
+        "Liver function tests (specific markers for alcoholic liver disease)",
+        "Serum ammonia levels (in cases of encephalopathy)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history of alcohol consumption, characteristic symptoms, and laboratory findings (elevated AST/ALT ratio > 2:1, elevated bilirubin, and signs of liver dysfunction).",
+      "differentials": [
+        "Viral hepatitis (A, B, C)",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Autoimmune hepatitis",
+        "Drug-induced liver injury",
+        "Hemochromatosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, nutrition)",
+          "Corticosteroids (e.g., prednisolone 40mg daily for 28 days) if severe (Maddrey's discriminant function > 32)"
+        ],
+        "secondLine": [
+          "Pentoxifylline (if corticosteroids contraindicated or ineffective)"
+        ],
+        "procedures": [
+          "Paracentesis (for diagnostic and therapeutic purposes in cases of tense ascites)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Alcohol cessation support (counseling, rehabilitation programs)",
+          "Nutritional support (high-calorie diet, vitamin supplementation)"
+        ],
+        "secondLine": [
+          "Consider referral to hepatology for liver transplant evaluation if severe liver disease develops"
+        ],
+        "monitoring": [
+          "Regular follow-up for liver function tests and signs of liver failure",
+          "Screening for hepatocellular carcinoma in patients with cirrhosis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects reduce liver inflammation.",
+          "dosing": "40mg orally daily for 28 days, then tapering based on clinical response.",
+          "sideEffects": "Increased risk of infections, gastrointestinal bleeding, hyperglycemia, and mood changes.",
+          "notes": "Monitor for signs of infection and gastrointestinal bleeding during treatment."
+        },
+        {
+          "name": "Pentoxifylline",
+          "mechanism": "Improves microcirculation and reduces inflammation.",
+          "dosing": "400mg orally three times daily.",
+          "sideEffects": "Nausea, vomiting, headache, and dizziness.",
+          "notes": "Consider in patients who cannot tolerate corticosteroids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "A procedure to remove fluid from the abdominal cavity using a needle.",
+          "indications": "Tense ascites, diagnostic evaluation of ascitic fluid, or therapeutic relief of symptoms.",
+          "risks": "Infection, bleeding, and bowel perforation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of alcoholic hepatitis varies; mild cases may resolve with abstinence, while severe cases can lead to liver failure and increased mortality. The 28-day mortality rate can be as high as 30-50% in severe cases without treatment.",
+    "complications": [
+      "Cirrhosis",
+      "Portal hypertension",
+      "Hepatic encephalopathy",
+      "Gastrointestinal bleeding (variceal hemorrhage)",
+      "Hepatocellular carcinoma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of alcoholic hepatitis, initiate investigations, provide supportive care, and refer to specialists as needed. They should also educate patients on alcohol cessation and monitor for complications.",
+    "escalation": "Refer to gastroenterology/hepatology for severe cases, those with rapid deterioration, or when considering liver transplantation.",
+    "keySafetyConsiderations": "Monitor vital signs, liver function tests, and signs of complications closely. Ensure safe alcohol withdrawal protocols are in place for patients with alcohol dependence."
+  }
+}

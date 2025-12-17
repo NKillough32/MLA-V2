@@ -1,0 +1,132 @@
+{
+  "id": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy",
+  "name": "Cerebral palsy and hypoxic ischaemic encephalopathy?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:46:57.251451",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cerebral palsy and hypoxic ischaemic encephalopathy?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCerebral palsy (CP) is a group of permanent movement disorders that appear in early childhood, characterized by abnormal motor function due to non-progressive disturbances in the developing brain. Hypoxic ischaemic encephalopathy (HIE) is a type of brain injury that occurs when the brain does not receive enough oxygen and blood flow, often leading to neurological impairment.\n\n### Epidemiology\nCerebral palsy affects approximately 2-3 per 1,000 live births. HIE is a significant cause of CP, particularly in preterm infants, with an incidence of 1-3 per 1,000 live births, and is more common in cases of birth asphyxia.\n\n### Essential Pathophysiology\nCerebral palsy results from various factors affecting brain development, including prenatal, perinatal, and postnatal insults. HIE typically results from a combination of hypoxia (lack of oxygen) and ischaemia (lack of blood flow), leading to neuronal cell death, particularly in vulnerable areas such as the basal ganglia and cortex.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Delayed motor milestones\n- Abnormal muscle tone (hypertonia or hypotonia)\n- Poor coordination and balance\n- Involuntary movements (dystonia)\n- Speech and language delays\n\n### Key Signs\n- Asymmetrical movements\n- Reflex abnormalities (e.g., hyperreflexia)\n- Postural abnormalities (e.g., scissoring of legs)\n- Visual and hearing impairments\n\n### Atypical Presentations\n- Seizures\n- Cognitive impairment\n- Behavioral issues\n\n### Red Flags Requiring Immediate Action\n- Failure to meet developmental milestones by 6 months\n- Persistent primitive reflexes beyond expected age\n- Abnormal tone or posture at 12 months\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Developmental screening tools (e.g., Denver Developmental Screening Test)\n- Neuroimaging (MRI or CT scan)\n\n### Second-line Investigations\n- Electroencephalogram (EEG) if seizures are suspected\n- Genetic testing if a hereditary condition is suspected\n\n### Specialist Tests\n- Functional MRI to assess brain function\n- Metabolic testing for underlying conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of CP is primarily clinical, based on the presence of motor dysfunction and the exclusion of other conditions. HIE diagnosis is based on clinical history, evidence of perinatal asphyxia, and neuroimaging findings.\n\n### Key Differential Diagnoses to Exclude\n- Developmental coordination disorder\n- Muscular dystrophy\n- Spinal muscular atrophy\n- Neurodegenerative disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (maintaining airway, breathing, circulation)\n- Therapeutic hypothermia for HIE within 6 hours of birth\n\n#### Second-line Treatments\n- Anticonvulsants for seizure management (e.g., phenobarbital)\n- Nutritional support (enteral feeding if necessary)\n\n#### Emergency Procedures\n- Intubation and ventilation if respiratory failure occurs\n- Lumbar puncture if infection is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy and occupational therapy\n- Speech and language therapy\n- Orthotic devices for mobility support\n\n#### Second-line Treatments\n- Botulinum toxin injections for spasticity\n- Surgical interventions (e.g., selective dorsal rhizotomy)\n\n#### Monitoring Requirements\n- Regular developmental assessments\n- Multidisciplinary team reviews (neurology, physiotherapy, occupational therapy)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Phenobarbital\n- **Mechanism of Action**: Anticonvulsant that enhances GABA activity\n- **Typical Dosing Range**: Loading dose: 15-20 mg/kg IV; Maintenance: 5-10 mg/kg/day\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, hypotension\n- **When to Use vs. Alternatives**: Monitor for signs of toxicity, especially in neonates.\n\n#### Botulinum toxin\n- **Mechanism of Action**: Inhibits acetylcholine release at the neuromuscular junction\n- **Typical Dosing Range**: Dosing varies by muscle group; typically 2-10 units/kg\n- **Key Side Effects/Contraindications**: Local muscle weakness, pain at injection site\n- **When to Use vs. Alternatives**: Consider in spasticity management.\n\n### Procedures\n\n#### Selective dorsal rhizotomy\n- **What it Involves**: Surgical procedure to cut specific nerve roots in the spinal cord to reduce spasticity\n- **Indications**: Severe spasticity affecting mobility and quality of life\n- **Key Risks/Complications**: Infection, nerve damage, loss of sensation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies widely; some children may achieve independence, while others may require lifelong care. Early intervention improves outcomes significantly.\n\n### Important Complications to Watch For\n- Seizures\n- Musculoskeletal problems (e.g., scoliosis)\n- Feeding difficulties\n- Cognitive impairment\n- Behavioral issues\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform developmental assessments, recognize red flags, provide initial management, and refer to specialists as needed. They should also educate families about the condition and available resources.\n\n### When to Escalate to Senior/Specialist\nRefer to pediatric neurology for persistent developmental concerns, severe spasticity, or if surgical intervention is considered.\n\n### Key Safety Considerations\nEnsure timely recognition of red flags, monitor for complications of treatment (e.g., side effects of medications), and maintain clear communication with the multidisciplinary team.\n",
+  "content": {
+    "overview": {
+      "definition": "Cerebral palsy (CP) is a group of permanent movement disorders that appear in early childhood, characterized by abnormal motor function due to non-progressive disturbances in the developing brain. Hypoxic ischaemic encephalopathy (HIE) is a type of brain injury that occurs when the brain does not receive enough oxygen and blood flow, often leading to neurological impairment.",
+      "epidemiology": "Cerebral palsy affects approximately 2-3 per 1,000 live births. HIE is a significant cause of CP, particularly in preterm infants, with an incidence of 1-3 per 1,000 live births, and is more common in cases of birth asphyxia.",
+      "pathophysiology": "Cerebral palsy results from various factors affecting brain development, including prenatal, perinatal, and postnatal insults. HIE typically results from a combination of hypoxia (lack of oxygen) and ischaemia (lack of blood flow), leading to neuronal cell death, particularly in vulnerable areas such as the basal ganglia and cortex."
+    },
+    "recognition": {
+      "symptoms": [
+        "Delayed motor milestones",
+        "Abnormal muscle tone (hypertonia or hypotonia)",
+        "Poor coordination and balance",
+        "Involuntary movements (dystonia)",
+        "Speech and language delays"
+      ],
+      "signs": [
+        "Asymmetrical movements",
+        "Reflex abnormalities (e.g., hyperreflexia)",
+        "Postural abnormalities (e.g., scissoring of legs)",
+        "Visual and hearing impairments"
+      ],
+      "atypicalPresentations": [
+        "Seizures",
+        "Cognitive impairment",
+        "Behavioral issues"
+      ],
+      "redFlags": [
+        "Failure to meet developmental milestones by 6 months",
+        "Persistent primitive reflexes beyond expected age",
+        "Abnormal tone or posture at 12 months"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Developmental screening tools (e.g., Denver Developmental Screening Test)",
+        "Neuroimaging (MRI or CT scan)"
+      ],
+      "secondLine": [
+        "Electroencephalogram (EEG) if seizures are suspected",
+        "Genetic testing if a hereditary condition is suspected"
+      ],
+      "specialistTests": [
+        "Functional MRI to assess brain function",
+        "Metabolic testing for underlying conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of CP is primarily clinical, based on the presence of motor dysfunction and the exclusion of other conditions. HIE diagnosis is based on clinical history, evidence of perinatal asphyxia, and neuroimaging findings.",
+      "differentials": [
+        "Developmental coordination disorder",
+        "Muscular dystrophy",
+        "Spinal muscular atrophy",
+        "Neurodegenerative disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (maintaining airway, breathing, circulation)",
+          "Therapeutic hypothermia for HIE within 6 hours of birth"
+        ],
+        "secondLine": [
+          "Anticonvulsants for seizure management (e.g., phenobarbital)",
+          "Nutritional support (enteral feeding if necessary)"
+        ],
+        "procedures": [
+          "Intubation and ventilation if respiratory failure occurs",
+          "Lumbar puncture if infection is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy and occupational therapy",
+          "Speech and language therapy",
+          "Orthotic devices for mobility support"
+        ],
+        "secondLine": [
+          "Botulinum toxin injections for spasticity",
+          "Surgical interventions (e.g., selective dorsal rhizotomy)"
+        ],
+        "monitoring": [
+          "Regular developmental assessments",
+          "Multidisciplinary team reviews (neurology, physiotherapy, occupational therapy)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Phenobarbital",
+          "mechanism": "Anticonvulsant that enhances GABA activity",
+          "dosing": "Loading dose: 15-20 mg/kg IV; Maintenance: 5-10 mg/kg/day",
+          "sideEffects": "Sedation, respiratory depression, hypotension",
+          "notes": "Monitor for signs of toxicity, especially in neonates."
+        },
+        {
+          "name": "Botulinum toxin",
+          "mechanism": "Inhibits acetylcholine release at the neuromuscular junction",
+          "dosing": "Dosing varies by muscle group; typically 2-10 units/kg",
+          "sideEffects": "Local muscle weakness, pain at injection site",
+          "notes": "Consider in spasticity management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Selective dorsal rhizotomy",
+          "description": "Surgical procedure to cut specific nerve roots in the spinal cord to reduce spasticity",
+          "indications": "Severe spasticity affecting mobility and quality of life",
+          "risks": "Infection, nerve damage, loss of sensation."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies widely; some children may achieve independence, while others may require lifelong care. Early intervention improves outcomes significantly.",
+    "complications": [
+      "Seizures",
+      "Musculoskeletal problems (e.g., scoliosis)",
+      "Feeding difficulties",
+      "Cognitive impairment",
+      "Behavioral issues"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform developmental assessments, recognize red flags, provide initial management, and refer to specialists as needed. They should also educate families about the condition and available resources.",
+    "escalation": "Refer to pediatric neurology for persistent developmental concerns, severe spasticity, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Ensure timely recognition of red flags, monitor for complications of treatment (e.g., side effects of medications), and maintain clear communication with the multidisciplinary team."
+  }
+}

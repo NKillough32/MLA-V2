@@ -1,0 +1,123 @@
+{
+  "id": "hernias",
+  "name": "Hernias",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:18:28.508135",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hernias: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA hernia is the abnormal protrusion of an organ or tissue through the wall of the cavity that normally contains it. Common types include inguinal, femoral, umbilical, and incisional hernias.\n\n### Epidemiology\nHernias are common, with an estimated lifetime risk of 27% for men and 3% for women. Inguinal hernias are the most prevalent, particularly in males, while umbilical hernias are more common in females and children.\n\n### Essential Pathophysiology\nHernias occur due to a combination of increased intra-abdominal pressure and a weakness in the abdominal wall. Factors contributing to this weakness include congenital defects, previous surgical incisions, and age-related degeneration of connective tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Visible bulge in the abdomen or groin\n- Pain or discomfort at the site of the hernia\n- Symptoms may worsen with coughing, straining, or lifting\n\n### Key Signs\n- Palpable mass in the groin or abdomen\n- Reduced or absent bowel sounds in strangulated hernias\n- Tenderness on palpation\n\n### Atypical Presentations\n- Hernia may be asymptomatic\n- Chronic pain without a visible bulge\n\n### Red Flags Requiring Immediate Action\n- Signs of strangulation (severe pain, nausea, vomiting, inability to pass gas or stool)\n- Fever or signs of infection at the site\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Ultrasound of the abdomen or groin\n\n### Second-line Investigations\n- CT scan of the abdomen/pelvis if diagnosis is uncertain\n\n### Specialist Tests\n- MRI for complex cases or when soft tissue detail is required\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination. Imaging may be used to confirm or clarify the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Lipoma\n- Lymphadenopathy\n- Abscess\n- Testicular torsion (in males)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate surgical consultation for strangulated hernia\n- Pain management with analgesics\n\n#### Second-line Treatments\n- Consideration of emergency surgery for incarcerated or strangulated hernias\n\n#### Emergency Procedures\n- Herniorrhaphy (surgical repair of the hernia)\n- Laparoscopic hernia repair\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Elective surgical repair for symptomatic hernias\n\n#### Second-line Treatments\n- Observation for asymptomatic hernias in low-risk patients\n\n#### Monitoring Requirements\n- Regular follow-up to assess for complications or changes in symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics\n- **Mechanism of Action**: Pain relief through inhibition of prostaglandin synthesis\n- **Typical Dosing Range**: Paracetamol 500-1000 mg every 4-6 hours as needed; NSAIDs as per protocol\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment (NSAIDs)\n- **When to Use vs. Alternatives**: Use caution in patients with renal disease or gastrointestinal issues.\n\n#### Antibiotics (if infection is suspected)\n- **Mechanism of Action**: Bacterial infection control\n- **Typical Dosing Range**: Cefazolin 1g IV preoperatively; adjust based on culture results\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal disturbances\n- **When to Use vs. Alternatives**: Consider patient allergies and local guidelines.\n\n### Procedures\n\n#### Herniorrhaphy\n- **What it Involves**: Surgical procedure to repair the hernia by closing the defect in the abdominal wall\n- **Indications**: Symptomatic hernias, incarcerated or strangulated hernias\n- **Key Risks/Complications**: Infection, bleeding, recurrence of hernia, injury to surrounding structures.\n\n#### Laparoscopic hernia repair\n- **What it Involves**: Minimally invasive technique using small incisions and a camera to repair the hernia\n- **Indications**: Elective repair of inguinal hernias, especially in active patients\n- **Key Risks/Complications**: Similar to open repair but with potential for less postoperative pain and quicker recovery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost hernias can be successfully repaired with low complication rates. Recurrence rates vary based on the type of hernia and surgical technique used.\n\n### Important Complications to Watch For\n- Strangulation leading to bowel necrosis\n- Infection at the surgical site\n- Chronic pain or discomfort post-surgery\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, recognize red flags, initiate appropriate investigations, and refer patients for surgical evaluation when necessary. They should also provide preoperative and postoperative care, including pain management and monitoring for complications.\n\n### When to Escalate to Senior/Specialist\nEscalate to surgical team for any patient with signs of strangulation, severe pain, or systemic symptoms such as fever or tachycardia.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and aseptic technique during examinations and procedures. Monitor for signs of infection or complications postoperatively, and educate patients on signs of complications to report.\n",
+  "content": {
+    "overview": {
+      "definition": "A hernia is the abnormal protrusion of an organ or tissue through the wall of the cavity that normally contains it. Common types include inguinal, femoral, umbilical, and incisional hernias.",
+      "epidemiology": "Hernias are common, with an estimated lifetime risk of 27% for men and 3% for women. Inguinal hernias are the most prevalent, particularly in males, while umbilical hernias are more common in females and children.",
+      "pathophysiology": "Hernias occur due to a combination of increased intra-abdominal pressure and a weakness in the abdominal wall. Factors contributing to this weakness include congenital defects, previous surgical incisions, and age-related degeneration of connective tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Visible bulge in the abdomen or groin",
+        "Pain or discomfort at the site of the hernia",
+        "Symptoms may worsen with coughing, straining, or lifting"
+      ],
+      "signs": [
+        "Palpable mass in the groin or abdomen",
+        "Reduced or absent bowel sounds in strangulated hernias",
+        "Tenderness on palpation"
+      ],
+      "atypicalPresentations": [
+        "Hernia may be asymptomatic",
+        "Chronic pain without a visible bulge"
+      ],
+      "redFlags": [
+        "Signs of strangulation (severe pain, nausea, vomiting, inability to pass gas or stool)",
+        "Fever or signs of infection at the site"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Ultrasound of the abdomen or groin"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen/pelvis if diagnosis is uncertain"
+      ],
+      "specialistTests": [
+        "MRI for complex cases or when soft tissue detail is required"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination. Imaging may be used to confirm or clarify the diagnosis.",
+      "differentials": [
+        "Lipoma",
+        "Lymphadenopathy",
+        "Abscess",
+        "Testicular torsion (in males)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate surgical consultation for strangulated hernia",
+          "Pain management with analgesics"
+        ],
+        "secondLine": [
+          "Consideration of emergency surgery for incarcerated or strangulated hernias"
+        ],
+        "procedures": [
+          "Herniorrhaphy (surgical repair of the hernia)",
+          "Laparoscopic hernia repair"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Elective surgical repair for symptomatic hernias"
+        ],
+        "secondLine": [
+          "Observation for asymptomatic hernias in low-risk patients"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for complications or changes in symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics",
+          "mechanism": "Pain relief through inhibition of prostaglandin synthesis",
+          "dosing": "Paracetamol 500-1000 mg every 4-6 hours as needed; NSAIDs as per protocol",
+          "sideEffects": "Gastrointestinal upset, renal impairment (NSAIDs)",
+          "notes": "Use caution in patients with renal disease or gastrointestinal issues."
+        },
+        {
+          "name": "Antibiotics (if infection is suspected)",
+          "mechanism": "Bacterial infection control",
+          "dosing": "Cefazolin 1g IV preoperatively; adjust based on culture results",
+          "sideEffects": "Allergic reactions, gastrointestinal disturbances",
+          "notes": "Consider patient allergies and local guidelines."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Herniorrhaphy",
+          "description": "Surgical procedure to repair the hernia by closing the defect in the abdominal wall",
+          "indications": "Symptomatic hernias, incarcerated or strangulated hernias",
+          "risks": "Infection, bleeding, recurrence of hernia, injury to surrounding structures."
+        },
+        {
+          "name": "Laparoscopic hernia repair",
+          "description": "Minimally invasive technique using small incisions and a camera to repair the hernia",
+          "indications": "Elective repair of inguinal hernias, especially in active patients",
+          "risks": "Similar to open repair but with potential for less postoperative pain and quicker recovery."
+        }
+      ]
+    },
+    "prognosis": "Most hernias can be successfully repaired with low complication rates. Recurrence rates vary based on the type of hernia and surgical technique used.",
+    "complications": [
+      "Strangulation leading to bowel necrosis",
+      "Infection at the surgical site",
+      "Chronic pain or discomfort post-surgery"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, recognize red flags, initiate appropriate investigations, and refer patients for surgical evaluation when necessary. They should also provide preoperative and postoperative care, including pain management and monitoring for complications.",
+    "escalation": "Escalate to surgical team for any patient with signs of strangulation, severe pain, or systemic symptoms such as fever or tachycardia.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and aseptic technique during examinations and procedures. Monitor for signs of infection or complications postoperatively, and educate patients on signs of complications to report."
+  }
+}

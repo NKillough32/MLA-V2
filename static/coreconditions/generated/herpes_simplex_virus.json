@@ -1,0 +1,128 @@
+{
+  "id": "herpes_simplex_virus",
+  "name": "Herpes simplex virus",
+  "domains": [
+    "Infection",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:09:19.657297",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Herpes simplex virus: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHerpes simplex virus (HSV) is a viral infection caused by the herpes simplex virus, which is categorized into two types: HSV-1, primarily associated with oral herpes, and HSV-2, primarily associated with genital herpes.\n\n### Epidemiology\nHSV-1 is commonly acquired in childhood, with a prevalence of 60-90% in adults worldwide. HSV-2 is more prevalent in sexually active adults, with about 11-20% of the population affected in developed countries.\n\n### Essential Pathophysiology\nHSV infects epithelial cells, leading to lytic infection and cell death. The virus can establish latency in sensory ganglia, reactivating during times of stress or immunosuppression.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painful vesicular lesions on the skin or mucous membranes\n- Itching or burning sensation\n- Fever and malaise (especially in primary infections)\n- Lymphadenopathy\n\n### Key Signs\n- Grouped vesicles on an erythematous base\n- Crusting lesions\n- Swollen lymph nodes in the groin or neck\n\n### Atypical Presentations\n- Asymptomatic shedding\n- Herpes keratitis (eye involvement)\n- Herpes encephalitis (neurological symptoms)\n\n### Red Flags Requiring Immediate Action\n- Severe headache or altered mental status (possible encephalitis)\n- Immunocompromised status\n- Widespread lesions or systemic symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and examination\n- Swab of vesicular fluid for PCR or viral culture\n\n### Second-line Investigations\n- Serological testing for HSV antibodies (IgG and IgM)\n\n### Specialist Tests\n- Lumbar puncture for CSF analysis in suspected herpes encephalitis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by laboratory confirmation (PCR or serology).\n\n### Key Differential Diagnoses to Exclude\n- Contact dermatitis\n- Impetigo\n- Syphilis\n- Candidiasis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Acyclovir 400 mg orally three times daily for 7-10 days (primary infection)\n- Acyclovir 200 mg orally five times daily for 5 days (recurrent infection)\n\n#### Second-line Treatments\n- Valacyclovir 1 g orally twice daily for 7-10 days (primary infection)\n- Famciclovir 250 mg orally three times daily for 7-10 days\n\n#### Emergency Procedures\n- Incision and drainage of large vesicles if secondary infection is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term suppressive therapy with acyclovir or valacyclovir for recurrent infections\n\n#### Second-line Treatments\n- Consider alternative antivirals if resistance is suspected\n\n#### Monitoring Requirements\n- Monitor for frequency of outbreaks and side effects of antiviral therapy\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate and incorporating into viral DNA.\n- **Typical Dosing Range**: 400 mg orally three times daily for primary infection; 200 mg five times daily for recurrent infection.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache, renal toxicity (especially with rapid infusion).\n- **When to Use vs. Alternatives**: Hydration is important to prevent renal toxicity.\n\n#### Valacyclovir\n- **Mechanism of Action**: Prodrug of acyclovir, converted to acyclovir in the body, inhibits viral DNA synthesis.\n- **Typical Dosing Range**: 1 g orally twice daily for primary infection; 500 mg once daily for suppressive therapy.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal pain, renal toxicity.\n- **When to Use vs. Alternatives**: More convenient dosing compared to acyclovir.\n\n#### Famciclovir\n- **Mechanism of Action**: Prodrug of penciclovir, inhibits viral DNA synthesis.\n- **Typical Dosing Range**: 250 mg orally three times daily for primary infection; 125 mg twice daily for suppressive therapy.\n- **Key Side Effects/Contraindications**: Headache, nausea, diarrhea.\n- **When to Use vs. Alternatives**: Effective for resistant strains.\n\n### Procedures\n\n#### Incision and drainage of vesicles\n- **What it Involves**: Surgical procedure to drain large, painful vesicles that may be infected.\n- **Indications**: Severe pain, secondary infection, or large vesicles causing discomfort.\n- **Key Risks/Complications**: Infection, scarring, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience recurrent episodes that decrease in frequency and severity over time. Complications can occur, especially in immunocompromised individuals.\n\n### Important Complications to Watch For\n- Herpes encephalitis\n- Secondary bacterial infections\n- Neonatal herpes (if transmitted during delivery)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, initiate treatment, and provide education on the condition. They should also be aware of when to escalate care for severe cases or complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are signs of encephalitis, severe immunocompromised status, or if the patient does not respond to initial treatment.\n\n### Key Safety Considerations\nMonitor renal function in patients receiving intravenous acyclovir, ensure adequate hydration, and educate patients on the importance of safe sexual practices to prevent transmission.\n",
+  "content": {
+    "overview": {
+      "definition": "Herpes simplex virus (HSV) is a viral infection caused by the herpes simplex virus, which is categorized into two types: HSV-1, primarily associated with oral herpes, and HSV-2, primarily associated with genital herpes.",
+      "epidemiology": "HSV-1 is commonly acquired in childhood, with a prevalence of 60-90% in adults worldwide. HSV-2 is more prevalent in sexually active adults, with about 11-20% of the population affected in developed countries.",
+      "pathophysiology": "HSV infects epithelial cells, leading to lytic infection and cell death. The virus can establish latency in sensory ganglia, reactivating during times of stress or immunosuppression."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painful vesicular lesions on the skin or mucous membranes",
+        "Itching or burning sensation",
+        "Fever and malaise (especially in primary infections)",
+        "Lymphadenopathy"
+      ],
+      "signs": [
+        "Grouped vesicles on an erythematous base",
+        "Crusting lesions",
+        "Swollen lymph nodes in the groin or neck"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic shedding",
+        "Herpes keratitis (eye involvement)",
+        "Herpes encephalitis (neurological symptoms)"
+      ],
+      "redFlags": [
+        "Severe headache or altered mental status (possible encephalitis)",
+        "Immunocompromised status",
+        "Widespread lesions or systemic symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and examination",
+        "Swab of vesicular fluid for PCR or viral culture"
+      ],
+      "secondLine": [
+        "Serological testing for HSV antibodies (IgG and IgM)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for CSF analysis in suspected herpes encephalitis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by laboratory confirmation (PCR or serology).",
+      "differentials": [
+        "Contact dermatitis",
+        "Impetigo",
+        "Syphilis",
+        "Candidiasis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Acyclovir 400 mg orally three times daily for 7-10 days (primary infection)",
+          "Acyclovir 200 mg orally five times daily for 5 days (recurrent infection)"
+        ],
+        "secondLine": [
+          "Valacyclovir 1 g orally twice daily for 7-10 days (primary infection)",
+          "Famciclovir 250 mg orally three times daily for 7-10 days"
+        ],
+        "procedures": [
+          "Incision and drainage of large vesicles if secondary infection is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term suppressive therapy with acyclovir or valacyclovir for recurrent infections"
+        ],
+        "secondLine": [
+          "Consider alternative antivirals if resistance is suspected"
+        ],
+        "monitoring": [
+          "Monitor for frequency of outbreaks and side effects of antiviral therapy"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate and incorporating into viral DNA.",
+          "dosing": "400 mg orally three times daily for primary infection; 200 mg five times daily for recurrent infection.",
+          "sideEffects": "Nausea, diarrhea, headache, renal toxicity (especially with rapid infusion).",
+          "notes": "Hydration is important to prevent renal toxicity."
+        },
+        {
+          "name": "Valacyclovir",
+          "mechanism": "Prodrug of acyclovir, converted to acyclovir in the body, inhibits viral DNA synthesis.",
+          "dosing": "1 g orally twice daily for primary infection; 500 mg once daily for suppressive therapy.",
+          "sideEffects": "Headache, nausea, abdominal pain, renal toxicity.",
+          "notes": "More convenient dosing compared to acyclovir."
+        },
+        {
+          "name": "Famciclovir",
+          "mechanism": "Prodrug of penciclovir, inhibits viral DNA synthesis.",
+          "dosing": "250 mg orally three times daily for primary infection; 125 mg twice daily for suppressive therapy.",
+          "sideEffects": "Headache, nausea, diarrhea.",
+          "notes": "Effective for resistant strains."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage of vesicles",
+          "description": "Surgical procedure to drain large, painful vesicles that may be infected.",
+          "indications": "Severe pain, secondary infection, or large vesicles causing discomfort.",
+          "risks": "Infection, scarring, bleeding."
+        }
+      ]
+    },
+    "prognosis": "Most patients experience recurrent episodes that decrease in frequency and severity over time. Complications can occur, especially in immunocompromised individuals.",
+    "complications": [
+      "Herpes encephalitis",
+      "Secondary bacterial infections",
+      "Neonatal herpes (if transmitted during delivery)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, initiate treatment, and provide education on the condition. They should also be aware of when to escalate care for severe cases or complications.",
+    "escalation": "Refer to a specialist if there are signs of encephalitis, severe immunocompromised status, or if the patient does not respond to initial treatment.",
+    "keySafetyConsiderations": "Monitor renal function in patients receiving intravenous acyclovir, ensure adequate hydration, and educate patients on the importance of safe sexual practices to prevent transmission."
+  }
+}

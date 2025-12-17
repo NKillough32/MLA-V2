@@ -1,0 +1,132 @@
+{
+  "id": "pathological_fracture",
+  "name": "Pathological fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:23:45.081177",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pathological fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA pathological fracture is a bone fracture that occurs in a bone that has been weakened by disease, such as osteoporosis, cancer, or infection, rather than by trauma or injury.\n\n### Epidemiology\nPathological fractures are more common in older adults, particularly those with osteoporosis. They can also occur in patients with malignancies, particularly metastatic bone disease, and in conditions such as osteogenesis imperfecta and Paget's disease.\n\n### Essential Pathophysiology\nPathological fractures occur when the structural integrity of the bone is compromised due to underlying disease processes. Conditions such as osteoporosis lead to decreased bone density, while malignancies can cause bone destruction or replacement with tumor tissue, weakening the bone.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain at the fracture site\n- Swelling and tenderness\n- Decreased range of motion\n- Deformity of the affected limb\n\n### Key Signs\n- Localized tenderness\n- Swelling or bruising over the fracture site\n- Abnormal positioning of the limb\n- Crepitus on movement\n\n### Atypical Presentations\n- Fractures occurring with minimal or no trauma\n- Multiple fractures in different stages of healing\n- Fractures in unusual locations (e.g., vertebrae, ribs)\n\n### Red Flags Requiring Immediate Action\n- History of malignancy\n- Unexplained weight loss\n- Persistent pain not relieved by rest\n- Neurological symptoms (e.g., numbness, weakness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the affected area\n- Bone density scan (DEXA)\n\n### Second-line Investigations\n- MRI to assess for soft tissue involvement or occult fractures\n- CT scan for detailed imaging of complex fractures\n\n### Specialist Tests\n- Bone biopsy if malignancy is suspected\n- Blood tests (calcium, phosphate, alkaline phosphatase) to assess metabolic bone disease\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination, and imaging studies that reveal a fracture in a pathologically weakened bone.\n\n### Key Differential Diagnoses to Exclude\n- Osteoporotic fracture\n- Stress fracture\n- Malignant bone lesion\n- Infection (osteomyelitis)\n- Paget's disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization of the fracture site\n\n#### Second-line Treatments\n- Surgical intervention (e.g., internal fixation, external fixation) if indicated\n\n#### Emergency Procedures\n- Surgical stabilization of the fracture (e.g., intramedullary nailing, plating)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Calcium and vitamin D supplementation\n- Bisphosphonates for osteoporosis management\n\n#### Second-line Treatments\n- Surgical intervention for stabilization or to address underlying pathology\n\n#### Monitoring Requirements\n- Regular follow-up with imaging to assess healing and bone density\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Alendronate\n- **Mechanism of Action**: Inhibits osteoclast-mediated bone resorption, increasing bone density.\n- **Typical Dosing Range**: 10 mg daily or 70 mg weekly.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, osteonecrosis of the jaw, atypical femoral fractures.\n- **When to Use vs. Alternatives**: Ensure adequate calcium and vitamin D intake before starting.\n\n#### Calcitonin\n- **Mechanism of Action**: Inhibits osteoclast activity and promotes bone formation.\n- **Typical Dosing Range**: 200 IU intranasally daily or 100 IU subcutaneously.\n- **Key Side Effects/Contraindications**: Nasal irritation, flushing, nausea.\n- **When to Use vs. Alternatives**: Used in acute pain management for vertebral fractures.\n\n### Procedures\n\n#### Internal fixation\n- **What it Involves**: Surgical procedure to stabilize a fracture using plates, screws, or rods.\n- **Indications**: Indicated for unstable fractures or when there is significant displacement.\n- **Key Risks/Complications**: Infection, non-union, malunion, damage to surrounding structures.\n\n#### External fixation\n- **What it Involves**: A surgical procedure that stabilizes a fracture using an external frame connected to the bone.\n- **Indications**: Used in cases of severe soft tissue injury or when internal fixation is not possible.\n- **Key Risks/Complications**: Infection, pin loosening, discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for pathological fractures depends on the underlying cause. Fractures due to osteoporosis may heal well with appropriate management, while those due to malignancy may have a poorer prognosis depending on the extent of disease.\n\n### Important Complications to Watch For\n- Non-union or malunion of the fracture\n- Infection at the fracture site\n- Chronic pain\n- Increased risk of subsequent fractures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate imaging, manage acute pain, and refer to orthopaedic specialists when necessary. They should also educate patients on lifestyle modifications to prevent further fractures.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with a pathological fracture and there are signs of malignancy or significant comorbidities, escalate care to an orthopaedic surgeon or oncologist promptly.\n\n### Key Safety Considerations\nEnsure proper pain management and monitor for signs of complications such as infection or non-union. Educate patients on the importance of follow-up appointments and adherence to treatment plans.\n",
+  "content": {
+    "overview": {
+      "definition": "A pathological fracture is a bone fracture that occurs in a bone that has been weakened by disease, such as osteoporosis, cancer, or infection, rather than by trauma or injury.",
+      "epidemiology": "Pathological fractures are more common in older adults, particularly those with osteoporosis. They can also occur in patients with malignancies, particularly metastatic bone disease, and in conditions such as osteogenesis imperfecta and Paget's disease.",
+      "pathophysiology": "Pathological fractures occur when the structural integrity of the bone is compromised due to underlying disease processes. Conditions such as osteoporosis lead to decreased bone density, while malignancies can cause bone destruction or replacement with tumor tissue, weakening the bone."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain at the fracture site",
+        "Swelling and tenderness",
+        "Decreased range of motion",
+        "Deformity of the affected limb"
+      ],
+      "signs": [
+        "Localized tenderness",
+        "Swelling or bruising over the fracture site",
+        "Abnormal positioning of the limb",
+        "Crepitus on movement"
+      ],
+      "atypicalPresentations": [
+        "Fractures occurring with minimal or no trauma",
+        "Multiple fractures in different stages of healing",
+        "Fractures in unusual locations (e.g., vertebrae, ribs)"
+      ],
+      "redFlags": [
+        "History of malignancy",
+        "Unexplained weight loss",
+        "Persistent pain not relieved by rest",
+        "Neurological symptoms (e.g., numbness, weakness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the affected area",
+        "Bone density scan (DEXA)"
+      ],
+      "secondLine": [
+        "MRI to assess for soft tissue involvement or occult fractures",
+        "CT scan for detailed imaging of complex fractures"
+      ],
+      "specialistTests": [
+        "Bone biopsy if malignancy is suspected",
+        "Blood tests (calcium, phosphate, alkaline phosphatase) to assess metabolic bone disease"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination, and imaging studies that reveal a fracture in a pathologically weakened bone.",
+      "differentials": [
+        "Osteoporotic fracture",
+        "Stress fracture",
+        "Malignant bone lesion",
+        "Infection (osteomyelitis)",
+        "Paget's disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization of the fracture site"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., internal fixation, external fixation) if indicated"
+        ],
+        "procedures": [
+          "Surgical stabilization of the fracture (e.g., intramedullary nailing, plating)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Calcium and vitamin D supplementation",
+          "Bisphosphonates for osteoporosis management"
+        ],
+        "secondLine": [
+          "Surgical intervention for stabilization or to address underlying pathology"
+        ],
+        "monitoring": [
+          "Regular follow-up with imaging to assess healing and bone density"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Alendronate",
+          "mechanism": "Inhibits osteoclast-mediated bone resorption, increasing bone density.",
+          "dosing": "10 mg daily or 70 mg weekly.",
+          "sideEffects": "Gastrointestinal upset, osteonecrosis of the jaw, atypical femoral fractures.",
+          "notes": "Ensure adequate calcium and vitamin D intake before starting."
+        },
+        {
+          "name": "Calcitonin",
+          "mechanism": "Inhibits osteoclast activity and promotes bone formation.",
+          "dosing": "200 IU intranasally daily or 100 IU subcutaneously.",
+          "sideEffects": "Nasal irritation, flushing, nausea.",
+          "notes": "Used in acute pain management for vertebral fractures."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Internal fixation",
+          "description": "Surgical procedure to stabilize a fracture using plates, screws, or rods.",
+          "indications": "Indicated for unstable fractures or when there is significant displacement.",
+          "risks": "Infection, non-union, malunion, damage to surrounding structures."
+        },
+        {
+          "name": "External fixation",
+          "description": "A surgical procedure that stabilizes a fracture using an external frame connected to the bone.",
+          "indications": "Used in cases of severe soft tissue injury or when internal fixation is not possible.",
+          "risks": "Infection, pin loosening, discomfort."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for pathological fractures depends on the underlying cause. Fractures due to osteoporosis may heal well with appropriate management, while those due to malignancy may have a poorer prognosis depending on the extent of disease.",
+    "complications": [
+      "Non-union or malunion of the fracture",
+      "Infection at the fracture site",
+      "Chronic pain",
+      "Increased risk of subsequent fractures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate imaging, manage acute pain, and refer to orthopaedic specialists when necessary. They should also educate patients on lifestyle modifications to prevent further fractures.",
+    "escalation": "If a patient presents with a pathological fracture and there are signs of malignancy or significant comorbidities, escalate care to an orthopaedic surgeon or oncologist promptly.",
+    "keySafetyConsiderations": "Ensure proper pain management and monitor for signs of complications such as infection or non-union. Educate patients on the importance of follow-up appointments and adherence to treatment plans."
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "trichomonas_vaginalis",
+  "name": "Trichomonas vaginalis",
+  "domains": [
+    "Infection",
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T20:09:39.654714",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Trichomonas vaginalis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTrichomonas vaginalis is a protozoan parasite that causes trichomoniasis, a sexually transmitted infection (STI) primarily affecting the urogenital tract.\n\n### Epidemiology\nTrichomoniasis is one of the most common STIs worldwide, with an estimated 3.7 million infections in the United States alone. It is more prevalent in women than men and is often asymptomatic in men.\n\n### Essential Pathophysiology\nThe infection is caused by the flagellated protozoan Trichomonas vaginalis, which colonizes the urogenital tract, leading to inflammation and disruption of the normal flora.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Vaginal discharge (frothy, yellow-green)\n- Vulvar itching and irritation\n- Dyspareunia (painful intercourse)\n- Dysuria (painful urination)\n- Lower abdominal pain\n\n### Key Signs\n- Vaginal erythema and edema\n- Cervical petechiae (strawberry cervix)\n- Frothy discharge on examination\n\n### Atypical Presentations\n- Asymptomatic in men\n- Chronic pelvic pain\n- Recurrent urinary tract infections\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Fever\n- Signs of systemic infection\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Microscopic examination of vaginal discharge (wet mount)\n- Nucleic acid amplification tests (NAATs)\n\n### Second-line Investigations\n- Culture of Trichomonas vaginalis from vaginal or urethral swabs\n\n### Specialist Tests\n- Serological tests for other STIs (e.g., HIV, syphilis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by the presence of Trichomonas vaginalis in vaginal discharge or urine, along with characteristic symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Bacterial vaginosis\n- Candidiasis\n- Chlamydia infection\n- Gonorrhea\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Metronidazole 2g orally in a single dose\n- Tinidazole 2g orally in a single dose\n\n#### Second-line Treatments\n- Metronidazole 500mg orally twice daily for 7 days\n\n#### Emergency Procedures\n- None specific for trichomoniasis; however, pelvic examination may be performed to assess for other conditions.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Metronidazole 2g orally in a single dose\n\n#### Second-line Treatments\n- Tinidazole 2g orally in a single dose\n\n#### Monitoring Requirements\n- Follow-up after treatment to ensure resolution of symptoms and repeat testing if necessary.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metronidazole\n- **Mechanism of Action**: Antimicrobial agent that disrupts DNA synthesis in anaerobic bacteria and protozoa.\n- **Typical Dosing Range**: 2g orally in a single dose or 500mg twice daily for 7 days.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, metallic taste, headache.\n- **When to Use vs. Alternatives**: Avoid alcohol during treatment and for 48 hours after due to disulfiram-like reaction.\n\n#### Tinidazole\n- **Mechanism of Action**: Similar to metronidazole, it disrupts DNA synthesis in protozoa.\n- **Typical Dosing Range**: 2g orally in a single dose.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness, metallic taste.\n- **When to Use vs. Alternatives**: Avoid alcohol during treatment and for 72 hours after.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis is excellent, and most patients recover fully without complications.\n\n### Important Complications to Watch For\n- Increased risk of HIV transmission\n- Pelvic inflammatory disease (PID)\n- Infertility due to untreated infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, perform initial assessments, and initiate treatment for trichomoniasis. They should also provide education on safe sexual practices and STI prevention.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are complications, persistent symptoms, or if the patient is immunocompromised.\n\n### Key Safety Considerations\nEnsure to screen for other STIs, provide counseling on safe sex practices, and educate patients about the importance of notifying sexual partners.\n",
+  "content": {
+    "overview": {
+      "definition": "Trichomonas vaginalis is a protozoan parasite that causes trichomoniasis, a sexually transmitted infection (STI) primarily affecting the urogenital tract.",
+      "epidemiology": "Trichomoniasis is one of the most common STIs worldwide, with an estimated 3.7 million infections in the United States alone. It is more prevalent in women than men and is often asymptomatic in men.",
+      "pathophysiology": "The infection is caused by the flagellated protozoan Trichomonas vaginalis, which colonizes the urogenital tract, leading to inflammation and disruption of the normal flora."
+    },
+    "recognition": {
+      "symptoms": [
+        "Vaginal discharge (frothy, yellow-green)",
+        "Vulvar itching and irritation",
+        "Dyspareunia (painful intercourse)",
+        "Dysuria (painful urination)",
+        "Lower abdominal pain"
+      ],
+      "signs": [
+        "Vaginal erythema and edema",
+        "Cervical petechiae (strawberry cervix)",
+        "Frothy discharge on examination"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in men",
+        "Chronic pelvic pain",
+        "Recurrent urinary tract infections"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Fever",
+        "Signs of systemic infection",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Microscopic examination of vaginal discharge (wet mount)",
+        "Nucleic acid amplification tests (NAATs)"
+      ],
+      "secondLine": [
+        "Culture of Trichomonas vaginalis from vaginal or urethral swabs"
+      ],
+      "specialistTests": [
+        "Serological tests for other STIs (e.g., HIV, syphilis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by the presence of Trichomonas vaginalis in vaginal discharge or urine, along with characteristic symptoms.",
+      "differentials": [
+        "Bacterial vaginosis",
+        "Candidiasis",
+        "Chlamydia infection",
+        "Gonorrhea"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Metronidazole 2g orally in a single dose",
+          "Tinidazole 2g orally in a single dose"
+        ],
+        "secondLine": [
+          "Metronidazole 500mg orally twice daily for 7 days"
+        ],
+        "procedures": [
+          "None specific for trichomoniasis; however, pelvic examination may be performed to assess for other conditions."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Metronidazole 2g orally in a single dose"
+        ],
+        "secondLine": [
+          "Tinidazole 2g orally in a single dose"
+        ],
+        "monitoring": [
+          "Follow-up after treatment to ensure resolution of symptoms and repeat testing if necessary."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antimicrobial agent that disrupts DNA synthesis in anaerobic bacteria and protozoa.",
+          "dosing": "2g orally in a single dose or 500mg twice daily for 7 days.",
+          "sideEffects": "Nausea, vomiting, diarrhea, metallic taste, headache.",
+          "notes": "Avoid alcohol during treatment and for 48 hours after due to disulfiram-like reaction."
+        },
+        {
+          "name": "Tinidazole",
+          "mechanism": "Similar to metronidazole, it disrupts DNA synthesis in protozoa.",
+          "dosing": "2g orally in a single dose.",
+          "sideEffects": "Nausea, headache, dizziness, metallic taste.",
+          "notes": "Avoid alcohol during treatment and for 72 hours after."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "With appropriate treatment, the prognosis is excellent, and most patients recover fully without complications.",
+    "complications": [
+      "Increased risk of HIV transmission",
+      "Pelvic inflammatory disease (PID)",
+      "Infertility due to untreated infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, perform initial assessments, and initiate treatment for trichomoniasis. They should also provide education on safe sexual practices and STI prevention.",
+    "escalation": "Refer to a specialist if there are complications, persistent symptoms, or if the patient is immunocompromised.",
+    "keySafetyConsiderations": "Ensure to screen for other STIs, provide counseling on safe sex practices, and educate patients about the importance of notifying sexual partners."
+  }
+}

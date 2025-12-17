@@ -1,0 +1,125 @@
+{
+  "id": "placental_abruption",
+  "name": "Placental abruption",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:49:36.160133",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Placental abruption: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPlacental abruption is the premature separation of the placenta from the uterine wall before delivery, which can lead to significant maternal and fetal morbidity and mortality.\n\n### Epidemiology\nIt occurs in approximately 1% of pregnancies, with higher incidence in women with risk factors such as hypertension, trauma, or previous history of abruption.\n\n### Essential Pathophysiology\nThe exact cause is often unknown, but it may involve vascular compromise, trauma, or increased uterine tone leading to bleeding between the placenta and the uterine wall.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Vaginal bleeding (may be dark red)\n- Abdominal pain (often sudden onset)\n- Uterine tenderness or rigidity\n- Fetal distress (decreased fetal movement)\n\n### Key Signs\n- Tachycardia or hypotension in the mother\n- Signs of shock (pallor, diaphoresis)\n- Uterine contractions or hypertonicity\n- Fetal heart rate abnormalities\n\n### Atypical Presentations\n- Minimal bleeding with severe abdominal pain\n- Bleeding without pain (in cases of concealed abruption)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Heavy vaginal bleeding\n- Signs of maternal shock\n- Fetal heart rate abnormalities\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Ultrasound (to assess placental location and fetal well-being)\n\n### Second-line Investigations\n- CTG (Cardiotocography) to monitor fetal heart rate patterns\n- Complete blood count (CBC) to assess for anemia or coagulopathy\n\n### Specialist Tests\n- MRI (in rare cases for further evaluation)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of vaginal bleeding, abdominal pain, and uterine tenderness, along with fetal heart rate abnormalities.\n\n### Key Differential Diagnoses to Exclude\n- Placenta previa\n- Uterine rupture\n- Ectopic pregnancy\n- Miscarriage\n- Vasa previa\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate stabilization of the mother (IV fluids, oxygen, monitoring vital signs)\n- Delivery of the fetus if there is significant maternal or fetal compromise\n\n#### Second-line Treatments\n- Consider tocolytics if preterm and no fetal distress (e.g., nifedipine)\n- Corticosteroids for fetal lung maturity if preterm\n\n#### Emergency Procedures\n- Emergency cesarean section if fetal distress or severe maternal bleeding occurs.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of maternal and fetal well-being in cases of mild abruption without distress\n\n#### Second-line Treatments\n- Consider hospitalization for close monitoring if there are concerns about progression\n\n#### Monitoring Requirements\n- Frequent fetal heart rate monitoring and maternal vital signs.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Nifedipine\n- **Mechanism of Action**: Calcium channel blocker that relaxes uterine smooth muscle.\n- **Typical Dosing Range**: 10 mg orally, may repeat after 30 minutes if contractions persist, max 30 mg in 24 hours.\n- **Key Side Effects/Contraindications**: Hypotension, headache, flushing, dizziness.\n- **When to Use vs. Alternatives**: Use with caution in patients with hypotension.\n\n#### Betamethasone\n- **Mechanism of Action**: Corticosteroid that promotes fetal lung maturity.\n- **Typical Dosing Range**: 12 mg IM every 24 hours for 2 doses.\n- **Key Side Effects/Contraindications**: Increased blood sugar, infection risk, fluid retention.\n- **When to Use vs. Alternatives**: Administer if delivery is anticipated within 7 days.\n\n### Procedures\n\n#### Emergency Cesarean Section\n- **What it Involves**: Surgical delivery of the fetus through an incision in the abdominal wall and uterus.\n- **Indications**: Severe maternal or fetal compromise, significant bleeding, or if the fetus is in distress.\n- **Key Risks/Complications**: Infection, hemorrhage, injury to surrounding organs, anesthesia complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the severity of the abruption and the gestational age at delivery. Early recognition and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Maternal hemorrhage\n- Fetal distress or demise\n- Preterm birth\n- Disseminated intravascular coagulation (DIC)\n- Future pregnancy complications (e.g., recurrent abruption)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of placental abruption, initiate appropriate investigations, provide initial management, and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to obstetrician if there are signs of severe abruption, maternal shock, or fetal distress.\n\n### Key Safety Considerations\nEnsure rapid assessment and stabilization of the mother, monitor for signs of shock, and maintain communication with the obstetric team for timely intervention.\n",
+  "content": {
+    "overview": {
+      "definition": "Placental abruption is the premature separation of the placenta from the uterine wall before delivery, which can lead to significant maternal and fetal morbidity and mortality.",
+      "epidemiology": "It occurs in approximately 1% of pregnancies, with higher incidence in women with risk factors such as hypertension, trauma, or previous history of abruption.",
+      "pathophysiology": "The exact cause is often unknown, but it may involve vascular compromise, trauma, or increased uterine tone leading to bleeding between the placenta and the uterine wall."
+    },
+    "recognition": {
+      "symptoms": [
+        "Vaginal bleeding (may be dark red)",
+        "Abdominal pain (often sudden onset)",
+        "Uterine tenderness or rigidity",
+        "Fetal distress (decreased fetal movement)"
+      ],
+      "signs": [
+        "Tachycardia or hypotension in the mother",
+        "Signs of shock (pallor, diaphoresis)",
+        "Uterine contractions or hypertonicity",
+        "Fetal heart rate abnormalities"
+      ],
+      "atypicalPresentations": [
+        "Minimal bleeding with severe abdominal pain",
+        "Bleeding without pain (in cases of concealed abruption)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Heavy vaginal bleeding",
+        "Signs of maternal shock",
+        "Fetal heart rate abnormalities"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Ultrasound (to assess placental location and fetal well-being)"
+      ],
+      "secondLine": [
+        "CTG (Cardiotocography) to monitor fetal heart rate patterns",
+        "Complete blood count (CBC) to assess for anemia or coagulopathy"
+      ],
+      "specialistTests": [
+        "MRI (in rare cases for further evaluation)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of vaginal bleeding, abdominal pain, and uterine tenderness, along with fetal heart rate abnormalities.",
+      "differentials": [
+        "Placenta previa",
+        "Uterine rupture",
+        "Ectopic pregnancy",
+        "Miscarriage",
+        "Vasa previa"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate stabilization of the mother (IV fluids, oxygen, monitoring vital signs)",
+          "Delivery of the fetus if there is significant maternal or fetal compromise"
+        ],
+        "secondLine": [
+          "Consider tocolytics if preterm and no fetal distress (e.g., nifedipine)",
+          "Corticosteroids for fetal lung maturity if preterm"
+        ],
+        "procedures": [
+          "Emergency cesarean section if fetal distress or severe maternal bleeding occurs."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of maternal and fetal well-being in cases of mild abruption without distress"
+        ],
+        "secondLine": [
+          "Consider hospitalization for close monitoring if there are concerns about progression"
+        ],
+        "monitoring": [
+          "Frequent fetal heart rate monitoring and maternal vital signs."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Nifedipine",
+          "mechanism": "Calcium channel blocker that relaxes uterine smooth muscle.",
+          "dosing": "10 mg orally, may repeat after 30 minutes if contractions persist, max 30 mg in 24 hours.",
+          "sideEffects": "Hypotension, headache, flushing, dizziness.",
+          "notes": "Use with caution in patients with hypotension."
+        },
+        {
+          "name": "Betamethasone",
+          "mechanism": "Corticosteroid that promotes fetal lung maturity.",
+          "dosing": "12 mg IM every 24 hours for 2 doses.",
+          "sideEffects": "Increased blood sugar, infection risk, fluid retention.",
+          "notes": "Administer if delivery is anticipated within 7 days."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Emergency Cesarean Section",
+          "description": "Surgical delivery of the fetus through an incision in the abdominal wall and uterus.",
+          "indications": "Severe maternal or fetal compromise, significant bleeding, or if the fetus is in distress.",
+          "risks": "Infection, hemorrhage, injury to surrounding organs, anesthesia complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the severity of the abruption and the gestational age at delivery. Early recognition and management can improve outcomes significantly.",
+    "complications": [
+      "Maternal hemorrhage",
+      "Fetal distress or demise",
+      "Preterm birth",
+      "Disseminated intravascular coagulation (DIC)",
+      "Future pregnancy complications (e.g., recurrent abruption)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of placental abruption, initiate appropriate investigations, provide initial management, and escalate care as needed.",
+    "escalation": "Immediate referral to obstetrician if there are signs of severe abruption, maternal shock, or fetal distress.",
+    "keySafetyConsiderations": "Ensure rapid assessment and stabilization of the mother, monitor for signs of shock, and maintain communication with the obstetric team for timely intervention."
+  }
+}

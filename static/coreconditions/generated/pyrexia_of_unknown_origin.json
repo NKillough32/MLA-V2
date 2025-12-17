@@ -1,0 +1,145 @@
+{
+  "id": "pyrexia_of_unknown_origin",
+  "name": "Pyrexia of unknown origin",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:10:35.098730",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pyrexia of unknown origin: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPyrexia of unknown origin (PUO) is defined as a fever greater than 38.3°C (101°F) on several occasions, lasting for more than three weeks, without an identified cause after initial investigation.\n\n### Epidemiology\nPUO is more common in adults, particularly in those with underlying chronic diseases or immunocompromised states. It accounts for approximately 20% of fever cases in hospitalized patients.\n\n### Essential Pathophysiology\nThe pathophysiology of PUO can be multifactorial, including infections, malignancies, autoimmune diseases, and drug fevers. The immune response to these conditions can lead to the release of pyrogens, resulting in elevated body temperature.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever (temperature > 38.3°C)\n- Chills\n- Night sweats\n- Weight loss\n- Fatigue\n\n### Key Signs\n- Tachycardia\n- Tachypnea\n- Hypotension (in severe cases)\n- Lymphadenopathy\n- Splenomegaly\n\n### Atypical Presentations\n- Elderly patients may present with confusion or altered mental status instead of fever.\n- Immunocompromised patients may have subtle signs of infection.\n\n### Red Flags Requiring Immediate Action\n- Severe headache\n- Stiff neck (suggestive of meningitis)\n- Persistent vomiting\n- Altered consciousness\n- Severe abdominal pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures (x2)\n- Urinalysis and urine culture\n- Chest X-ray\n- Liver function tests\n\n### Second-line Investigations\n- CT scan of the abdomen and pelvis\n- Ultrasound of the abdomen\n- Serum electrolytes\n- HIV test\n- Autoimmune screening (ANA, rheumatoid factor)\n\n### Specialist Tests\n- Bone marrow biopsy (if hematological malignancy suspected)\n- PET scan (for malignancy or infection)\n- Lumbar puncture (if CNS infection suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PUO is made when fever persists for more than three weeks with no identifiable cause after initial investigations.\n\n### Key Differential Diagnoses to Exclude\n- Infectious diseases (e.g., tuberculosis, endocarditis)\n- Malignancies (e.g., lymphoma, leukemia)\n- Autoimmune diseases (e.g., systemic lupus erythematosus, rheumatoid arthritis)\n- Drug fever\n- Thyroid disorders (e.g., hyperthyroidism)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Empirical antibiotics (e.g., piperacillin-tazobactam) if infection suspected\n- Supportive care (hydration, antipyretics)\n\n#### Second-line Treatments\n- Consider broadening antibiotic coverage based on clinical suspicion\n- Consult infectious disease specialist\n\n#### Emergency Procedures\n- Lumbar puncture (if CNS infection suspected)\n- Ultrasound-guided drainage (if abscess suspected)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor temperature and symptoms regularly\n- Continue investigations based on clinical findings\n\n#### Second-line Treatments\n- Consider referral to specialist clinics (infectious disease, rheumatology)\n- Start immunosuppressive therapy if autoimmune disease is diagnosed\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess response to treatment\n- Repeat laboratory tests as indicated\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.\n- **Typical Dosing Range**: Piperacillin 4g and tazobactam 0.5g IV every 6-8 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic effective against gram-negative bacteria.\n- **Typical Dosing Range**: 500mg orally every 12 hours or 400mg IV every 12 hours.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, tendonitis, QT prolongation.\n- **When to Use vs. Alternatives**: Avoid in pregnancy and children.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected meningitis or encephalitis.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n#### Ultrasound-guided drainage\n- **What it Involves**: A procedure to drain abscesses or fluid collections.\n- **Indications**: Suspected abscess or significant fluid collection.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding structures. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of PUO depends on the underlying cause. Early identification and treatment of the cause can lead to favorable outcomes, while delayed diagnosis may result in complications or chronic illness.\n\n### Important Complications to Watch For\n- Sepsis\n- Organ failure\n- Chronic infection\n- Increased morbidity and mortality in underlying conditions.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, and manage supportive care. They should also recognize when to escalate care to senior clinicians or specialists.\n\n### When to Escalate to Senior/Specialist\nIf the patient shows signs of deterioration, persistent fever without diagnosis, or if there is a high suspicion of a serious underlying condition, escalate to a senior clinician or infectious disease specialist.\n\n### Key Safety Considerations\nEnsure thorough hand hygiene and infection control measures. Monitor for signs of sepsis and other complications. Maintain clear communication with the healthcare team regarding changes in patient status.\n",
+  "content": {
+    "overview": {
+      "definition": "Pyrexia of unknown origin (PUO) is defined as a fever greater than 38.3°C (101°F) on several occasions, lasting for more than three weeks, without an identified cause after initial investigation.",
+      "epidemiology": "PUO is more common in adults, particularly in those with underlying chronic diseases or immunocompromised states. It accounts for approximately 20% of fever cases in hospitalized patients.",
+      "pathophysiology": "The pathophysiology of PUO can be multifactorial, including infections, malignancies, autoimmune diseases, and drug fevers. The immune response to these conditions can lead to the release of pyrogens, resulting in elevated body temperature."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever (temperature > 38.3°C)",
+        "Chills",
+        "Night sweats",
+        "Weight loss",
+        "Fatigue"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Tachypnea",
+        "Hypotension (in severe cases)",
+        "Lymphadenopathy",
+        "Splenomegaly"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion or altered mental status instead of fever.",
+        "Immunocompromised patients may have subtle signs of infection."
+      ],
+      "redFlags": [
+        "Severe headache",
+        "Stiff neck (suggestive of meningitis)",
+        "Persistent vomiting",
+        "Altered consciousness",
+        "Severe abdominal pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures (x2)",
+        "Urinalysis and urine culture",
+        "Chest X-ray",
+        "Liver function tests"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen and pelvis",
+        "Ultrasound of the abdomen",
+        "Serum electrolytes",
+        "HIV test",
+        "Autoimmune screening (ANA, rheumatoid factor)"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy (if hematological malignancy suspected)",
+        "PET scan (for malignancy or infection)",
+        "Lumbar puncture (if CNS infection suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PUO is made when fever persists for more than three weeks with no identifiable cause after initial investigations.",
+      "differentials": [
+        "Infectious diseases (e.g., tuberculosis, endocarditis)",
+        "Malignancies (e.g., lymphoma, leukemia)",
+        "Autoimmune diseases (e.g., systemic lupus erythematosus, rheumatoid arthritis)",
+        "Drug fever",
+        "Thyroid disorders (e.g., hyperthyroidism)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Empirical antibiotics (e.g., piperacillin-tazobactam) if infection suspected",
+          "Supportive care (hydration, antipyretics)"
+        ],
+        "secondLine": [
+          "Consider broadening antibiotic coverage based on clinical suspicion",
+          "Consult infectious disease specialist"
+        ],
+        "procedures": [
+          "Lumbar puncture (if CNS infection suspected)",
+          "Ultrasound-guided drainage (if abscess suspected)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor temperature and symptoms regularly",
+          "Continue investigations based on clinical findings"
+        ],
+        "secondLine": [
+          "Consider referral to specialist clinics (infectious disease, rheumatology)",
+          "Start immunosuppressive therapy if autoimmune disease is diagnosed"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess response to treatment",
+          "Repeat laboratory tests as indicated"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.",
+          "dosing": "Piperacillin 4g and tazobactam 0.5g IV every 6-8 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic effective against gram-negative bacteria.",
+          "dosing": "500mg orally every 12 hours or 400mg IV every 12 hours.",
+          "sideEffects": "Nausea, diarrhea, tendonitis, QT prolongation.",
+          "notes": "Avoid in pregnancy and children."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected meningitis or encephalitis.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        },
+        {
+          "name": "Ultrasound-guided drainage",
+          "description": "A procedure to drain abscesses or fluid collections.",
+          "indications": "Suspected abscess or significant fluid collection.",
+          "risks": "Infection, bleeding, injury to surrounding structures. "
+        }
+      ]
+    },
+    "prognosis": "The prognosis of PUO depends on the underlying cause. Early identification and treatment of the cause can lead to favorable outcomes, while delayed diagnosis may result in complications or chronic illness.",
+    "complications": [
+      "Sepsis",
+      "Organ failure",
+      "Chronic infection",
+      "Increased morbidity and mortality in underlying conditions."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, and manage supportive care. They should also recognize when to escalate care to senior clinicians or specialists.",
+    "escalation": "If the patient shows signs of deterioration, persistent fever without diagnosis, or if there is a high suspicion of a serious underlying condition, escalate to a senior clinician or infectious disease specialist.",
+    "keySafetyConsiderations": "Ensure thorough hand hygiene and infection control measures. Monitor for signs of sepsis and other complications. Maintain clear communication with the healthcare team regarding changes in patient status."
+  }
+}

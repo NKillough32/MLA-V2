@@ -1,0 +1,125 @@
+{
+  "id": "non_alcoholic_fatty_liver",
+  "name": "Non-Alcoholic fatty liver",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:43:24.596310",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Non-Alcoholic fatty liver: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNon-Alcoholic Fatty Liver Disease (NAFLD) is a spectrum of liver conditions characterized by the accumulation of fat in the liver of individuals who consume little to no alcohol. It includes simple steatosis and non-alcoholic steatohepatitis (NASH), which can progress to cirrhosis and liver failure.\n\n### Epidemiology\nNAFLD is the most common liver disorder worldwide, affecting approximately 25% of the global population. It is particularly prevalent in individuals with obesity, type 2 diabetes, and metabolic syndrome.\n\n### Essential Pathophysiology\nThe pathophysiology of NAFLD involves a complex interplay of insulin resistance, oxidative stress, and inflammation. Insulin resistance leads to increased lipolysis and free fatty acid influx to the liver, resulting in fat accumulation. This can progress to inflammation (NASH) and fibrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Right upper quadrant discomfort\n- Weight loss\n- Nausea\n\n### Key Signs\n- Hepatomegaly\n- Elevated liver enzymes (ALT, AST)\n- Signs of metabolic syndrome (e.g., obesity, hypertension)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute liver failure in advanced cases\n\n### Red Flags Requiring Immediate Action\n- Jaundice\n- Severe abdominal pain\n- Signs of portal hypertension (e.g., ascites, variceal bleeding)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Ultrasound abdomen (to assess for steatosis)\n- Metabolic panel (to assess for metabolic syndrome)\n\n### Second-line Investigations\n- FibroScan (to assess liver stiffness)\n- MRI or CT scan (for detailed imaging)\n\n### Specialist Tests\n- Liver biopsy (to confirm NASH and assess fibrosis)\n- Serum biomarkers (e.g., NASH test)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of NAFLD is made based on imaging findings of hepatic steatosis in the absence of significant alcohol consumption and other liver diseases.\n\n### Key Differential Diagnoses to Exclude\n- Alcoholic liver disease\n- Viral hepatitis\n- Hemochromatosis\n- Autoimmune hepatitis\n- Drug-induced liver injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care\n- Management of complications (e.g., ascites, hepatic encephalopathy)\n\n#### Second-line Treatments\n- Consider referral to gastroenterology or hepatology for severe cases\n\n#### Emergency Procedures\n- Paracentesis (for symptomatic ascites)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- Management of comorbidities (e.g., diabetes, hyperlipidemia)\n\n#### Second-line Treatments\n- Consider pharmacotherapy (e.g., vitamin E, pioglitazone)\n- Referral for weight loss surgery in severe obesity\n\n#### Monitoring Requirements\n- Regular follow-up with LFTs and imaging to assess liver status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Vitamin E\n- **Mechanism of Action**: Antioxidant that reduces oxidative stress in the liver.\n- **Typical Dosing Range**: 800 IU daily.\n- **Key Side Effects/Contraindications**: Increased risk of bleeding, especially in patients on anticoagulants.\n- **When to Use vs. Alternatives**: Consider in non-diabetic adults with NASH.\n\n#### Pioglitazone\n- **Mechanism of Action**: Thiazolidinedione that improves insulin sensitivity.\n- **Typical Dosing Range**: 15-45 mg daily.\n- **Key Side Effects/Contraindications**: Weight gain, edema, increased risk of heart failure.\n- **When to Use vs. Alternatives**: Consider in patients with type 2 diabetes.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: A procedure to remove fluid from the abdominal cavity.\n- **Indications**: Symptomatic ascites, diagnostic evaluation of fluid.\n- **Key Risks/Complications**: Infection, bleeding, perforation of abdominal organs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of NAFLD varies; simple steatosis is generally benign, while NASH can progress to cirrhosis and liver-related complications. Early intervention can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Cirrhosis\n- Hepatocellular carcinoma\n- Cardiovascular disease\n- Liver failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize risk factors, perform initial assessments, and manage lifestyle modifications. They should also be aware of when to escalate care to specialists.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology if there are signs of liver failure, significant fibrosis on imaging, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nMonitor for signs of liver decompensation, especially in patients with advanced disease. Ensure regular follow-up for patients with NAFLD to prevent progression.\n",
+  "content": {
+    "overview": {
+      "definition": "Non-Alcoholic Fatty Liver Disease (NAFLD) is a spectrum of liver conditions characterized by the accumulation of fat in the liver of individuals who consume little to no alcohol. It includes simple steatosis and non-alcoholic steatohepatitis (NASH), which can progress to cirrhosis and liver failure.",
+      "epidemiology": "NAFLD is the most common liver disorder worldwide, affecting approximately 25% of the global population. It is particularly prevalent in individuals with obesity, type 2 diabetes, and metabolic syndrome.",
+      "pathophysiology": "The pathophysiology of NAFLD involves a complex interplay of insulin resistance, oxidative stress, and inflammation. Insulin resistance leads to increased lipolysis and free fatty acid influx to the liver, resulting in fat accumulation. This can progress to inflammation (NASH) and fibrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Right upper quadrant discomfort",
+        "Weight loss",
+        "Nausea"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Elevated liver enzymes (ALT, AST)",
+        "Signs of metabolic syndrome (e.g., obesity, hypertension)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute liver failure in advanced cases"
+      ],
+      "redFlags": [
+        "Jaundice",
+        "Severe abdominal pain",
+        "Signs of portal hypertension (e.g., ascites, variceal bleeding)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Ultrasound abdomen (to assess for steatosis)",
+        "Metabolic panel (to assess for metabolic syndrome)"
+      ],
+      "secondLine": [
+        "FibroScan (to assess liver stiffness)",
+        "MRI or CT scan (for detailed imaging)"
+      ],
+      "specialistTests": [
+        "Liver biopsy (to confirm NASH and assess fibrosis)",
+        "Serum biomarkers (e.g., NASH test)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of NAFLD is made based on imaging findings of hepatic steatosis in the absence of significant alcohol consumption and other liver diseases.",
+      "differentials": [
+        "Alcoholic liver disease",
+        "Viral hepatitis",
+        "Hemochromatosis",
+        "Autoimmune hepatitis",
+        "Drug-induced liver injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care",
+          "Management of complications (e.g., ascites, hepatic encephalopathy)"
+        ],
+        "secondLine": [
+          "Consider referral to gastroenterology or hepatology for severe cases"
+        ],
+        "procedures": [
+          "Paracentesis (for symptomatic ascites)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "Management of comorbidities (e.g., diabetes, hyperlipidemia)"
+        ],
+        "secondLine": [
+          "Consider pharmacotherapy (e.g., vitamin E, pioglitazone)",
+          "Referral for weight loss surgery in severe obesity"
+        ],
+        "monitoring": [
+          "Regular follow-up with LFTs and imaging to assess liver status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Vitamin E",
+          "mechanism": "Antioxidant that reduces oxidative stress in the liver.",
+          "dosing": "800 IU daily.",
+          "sideEffects": "Increased risk of bleeding, especially in patients on anticoagulants.",
+          "notes": "Consider in non-diabetic adults with NASH."
+        },
+        {
+          "name": "Pioglitazone",
+          "mechanism": "Thiazolidinedione that improves insulin sensitivity.",
+          "dosing": "15-45 mg daily.",
+          "sideEffects": "Weight gain, edema, increased risk of heart failure.",
+          "notes": "Consider in patients with type 2 diabetes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "A procedure to remove fluid from the abdominal cavity.",
+          "indications": "Symptomatic ascites, diagnostic evaluation of fluid.",
+          "risks": "Infection, bleeding, perforation of abdominal organs."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of NAFLD varies; simple steatosis is generally benign, while NASH can progress to cirrhosis and liver-related complications. Early intervention can improve outcomes significantly.",
+    "complications": [
+      "Cirrhosis",
+      "Hepatocellular carcinoma",
+      "Cardiovascular disease",
+      "Liver failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize risk factors, perform initial assessments, and manage lifestyle modifications. They should also be aware of when to escalate care to specialists.",
+    "escalation": "Refer to gastroenterology if there are signs of liver failure, significant fibrosis on imaging, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of liver decompensation, especially in patients with advanced disease. Ensure regular follow-up for patients with NAFLD to prevent progression."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "elder_abuse",
+  "name": "Elder abuse",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:41:46.529390",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Elder abuse: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nElder abuse refers to the intentional or negligent acts by a caregiver or trusted individual that cause harm or serious risk of harm to an older adult. It can take various forms, including physical, emotional, sexual, financial abuse, and neglect.\n\n### Epidemiology\nElder abuse is a significant public health issue, affecting an estimated 1 in 10 older adults in the community and up to 60% in institutional settings. It is often underreported due to fear, shame, or lack of awareness.\n\n### Essential Pathophysiology\nElder abuse can stem from various factors, including caregiver stress, social isolation of the elder, cognitive impairment, and societal attitudes towards aging. The consequences can lead to physical injuries, psychological trauma, and deterioration of health.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unexplained injuries or bruises\n- Withdrawal from social activities\n- Fearfulness or anxiety around certain individuals\n- Sudden changes in financial situation\n- Poor hygiene or malnutrition\n\n### Key Signs\n- Frequent hospital visits with vague explanations\n- Signs of neglect (e.g., dirty clothing, unkempt appearance)\n- Changes in mental status or cognitive function\n- Unexplained weight loss\n- Presence of controlling behavior from caregivers\n\n### Atypical Presentations\n- Sudden onset of depression or anxiety in an elder\n- Increased confusion or disorientation without clear medical cause\n- Unexplained changes in living conditions or care arrangements\n\n### Red Flags Requiring Immediate Action\n- Elder expresses fear of a caregiver\n- Caregiver refuses to leave the room during examinations\n- Inconsistencies between the elder's account and the caregiver's account of events\n- Frequent emergency room visits for minor injuries\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Comprehensive history taking (including direct questioning of the elder)\n- Physical examination focusing on signs of abuse or neglect\n- Assessment of mental health status\n\n### Second-line Investigations\n- Screening tools for elder abuse (e.g., Elder Abuse Suspicion Index)\n- Consultation with social services for home assessments\n\n### Specialist Tests\n- Psychological evaluation if mental health issues are suspected\n- Financial audits if financial abuse is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of elder abuse is primarily based on the identification of signs and symptoms consistent with abuse or neglect, corroborated by history and context.\n\n### Key Differential Diagnoses to Exclude\n- Dementia or cognitive impairment\n- Accidental injuries due to falls or frailty\n- Mental health disorders (e.g., depression, anxiety)\n- Social isolation or neglect without abuse\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate safety assessment and removal from the abusive environment if necessary\n- Referral to social services or adult protective services\n\n#### Second-line Treatments\n- Psychiatric evaluation and support for mental health issues\n- Legal intervention if necessary\n\n#### Emergency Procedures\n- Mandatory reporting to authorities if abuse is suspected or confirmed\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ongoing support and monitoring by social services\n- Regular follow-up appointments to assess the elder's well-being\n\n#### Second-line Treatments\n- Engagement with community resources (e.g., meal delivery, social activities)\n- Counseling for both the elder and the caregiver if appropriate\n\n#### Monitoring Requirements\n- Regular assessments for signs of continued abuse or neglect\n- Monitoring of caregiver stress and support needs\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Antidepressants (e.g., Sertraline)\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor that helps alleviate symptoms of depression and anxiety.\n- **Typical Dosing Range**: Start at 50 mg once daily, may increase to 100 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, increased risk of bleeding.\n- **When to Use vs. Alternatives**: Consider in cases where elder shows signs of depression due to abuse.\n\n#### Anxiolytics (e.g., Lorazepam)\n- **Mechanism of Action**: Benzodiazepine that provides short-term relief of anxiety symptoms.\n- **Typical Dosing Range**: Start at 0.5 mg to 1 mg as needed, not to exceed 2-3 mg per day.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, dependence, withdrawal symptoms.\n- **When to Use vs. Alternatives**: Use cautiously due to risk of sedation and falls in elderly.\n\n### Procedures\n\n#### Mandatory Reporting\n- **What it Involves**: Legal obligation to report suspected elder abuse to appropriate authorities.\n- **Indications**: When there is reasonable suspicion of abuse or neglect.\n- **Key Risks/Complications**: Potential backlash from caregivers, emotional distress for the elder.\n\n#### Psychiatric Evaluation\n- **What it Involves**: Assessment by a mental health professional to evaluate the elder's mental health status.\n- **Indications**: When there are signs of depression, anxiety, or cognitive impairment.\n- **Key Risks/Complications**: Stigmatization, potential for misdiagnosis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for victims of elder abuse varies widely depending on the type and duration of abuse, the elder's overall health, and the support systems available. Early intervention can lead to improved outcomes.\n\n### Important Complications to Watch For\n- Physical injuries (fractures, bruises)\n- Psychological trauma (PTSD, depression)\n- Increased risk of mortality\n- Deterioration of physical health due to neglect\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing signs of elder abuse, conducting thorough assessments, and ensuring appropriate referrals to social services and protective agencies. They should also be aware of their legal obligations regarding mandatory reporting.\n\n### When to Escalate to Senior/Specialist\nIf elder abuse is suspected, escalate to senior medical staff and social services immediately. In cases of immediate danger, contact emergency services.\n\n### Key Safety Considerations\nEnsure the elder's immediate safety, maintain confidentiality, and approach the situation sensitively to avoid further trauma. Be aware of the legal implications of reporting and the potential for retaliation against the elder.\n",
+  "content": {
+    "overview": {
+      "definition": "Elder abuse refers to the intentional or negligent acts by a caregiver or trusted individual that cause harm or serious risk of harm to an older adult. It can take various forms, including physical, emotional, sexual, financial abuse, and neglect.",
+      "epidemiology": "Elder abuse is a significant public health issue, affecting an estimated 1 in 10 older adults in the community and up to 60% in institutional settings. It is often underreported due to fear, shame, or lack of awareness.",
+      "pathophysiology": "Elder abuse can stem from various factors, including caregiver stress, social isolation of the elder, cognitive impairment, and societal attitudes towards aging. The consequences can lead to physical injuries, psychological trauma, and deterioration of health."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unexplained injuries or bruises",
+        "Withdrawal from social activities",
+        "Fearfulness or anxiety around certain individuals",
+        "Sudden changes in financial situation",
+        "Poor hygiene or malnutrition"
+      ],
+      "signs": [
+        "Frequent hospital visits with vague explanations",
+        "Signs of neglect (e.g., dirty clothing, unkempt appearance)",
+        "Changes in mental status or cognitive function",
+        "Unexplained weight loss",
+        "Presence of controlling behavior from caregivers"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of depression or anxiety in an elder",
+        "Increased confusion or disorientation without clear medical cause",
+        "Unexplained changes in living conditions or care arrangements"
+      ],
+      "redFlags": [
+        "Elder expresses fear of a caregiver",
+        "Caregiver refuses to leave the room during examinations",
+        "Inconsistencies between the elder's account and the caregiver's account of events",
+        "Frequent emergency room visits for minor injuries"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Comprehensive history taking (including direct questioning of the elder)",
+        "Physical examination focusing on signs of abuse or neglect",
+        "Assessment of mental health status"
+      ],
+      "secondLine": [
+        "Screening tools for elder abuse (e.g., Elder Abuse Suspicion Index)",
+        "Consultation with social services for home assessments"
+      ],
+      "specialistTests": [
+        "Psychological evaluation if mental health issues are suspected",
+        "Financial audits if financial abuse is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of elder abuse is primarily based on the identification of signs and symptoms consistent with abuse or neglect, corroborated by history and context.",
+      "differentials": [
+        "Dementia or cognitive impairment",
+        "Accidental injuries due to falls or frailty",
+        "Mental health disorders (e.g., depression, anxiety)",
+        "Social isolation or neglect without abuse"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate safety assessment and removal from the abusive environment if necessary",
+          "Referral to social services or adult protective services"
+        ],
+        "secondLine": [
+          "Psychiatric evaluation and support for mental health issues",
+          "Legal intervention if necessary"
+        ],
+        "procedures": [
+          "Mandatory reporting to authorities if abuse is suspected or confirmed"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ongoing support and monitoring by social services",
+          "Regular follow-up appointments to assess the elder's well-being"
+        ],
+        "secondLine": [
+          "Engagement with community resources (e.g., meal delivery, social activities)",
+          "Counseling for both the elder and the caregiver if appropriate"
+        ],
+        "monitoring": [
+          "Regular assessments for signs of continued abuse or neglect",
+          "Monitoring of caregiver stress and support needs"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Antidepressants (e.g., Sertraline)",
+          "mechanism": "Selective serotonin reuptake inhibitor that helps alleviate symptoms of depression and anxiety.",
+          "dosing": "Start at 50 mg once daily, may increase to 100 mg based on response.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, increased risk of bleeding.",
+          "notes": "Consider in cases where elder shows signs of depression due to abuse."
+        },
+        {
+          "name": "Anxiolytics (e.g., Lorazepam)",
+          "mechanism": "Benzodiazepine that provides short-term relief of anxiety symptoms.",
+          "dosing": "Start at 0.5 mg to 1 mg as needed, not to exceed 2-3 mg per day.",
+          "sideEffects": "Drowsiness, dizziness, dependence, withdrawal symptoms.",
+          "notes": "Use cautiously due to risk of sedation and falls in elderly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Mandatory Reporting",
+          "description": "Legal obligation to report suspected elder abuse to appropriate authorities.",
+          "indications": "When there is reasonable suspicion of abuse or neglect.",
+          "risks": "Potential backlash from caregivers, emotional distress for the elder."
+        },
+        {
+          "name": "Psychiatric Evaluation",
+          "description": "Assessment by a mental health professional to evaluate the elder's mental health status.",
+          "indications": "When there are signs of depression, anxiety, or cognitive impairment.",
+          "risks": "Stigmatization, potential for misdiagnosis."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for victims of elder abuse varies widely depending on the type and duration of abuse, the elder's overall health, and the support systems available. Early intervention can lead to improved outcomes.",
+    "complications": [
+      "Physical injuries (fractures, bruises)",
+      "Psychological trauma (PTSD, depression)",
+      "Increased risk of mortality",
+      "Deterioration of physical health due to neglect"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing signs of elder abuse, conducting thorough assessments, and ensuring appropriate referrals to social services and protective agencies. They should also be aware of their legal obligations regarding mandatory reporting.",
+    "escalation": "If elder abuse is suspected, escalate to senior medical staff and social services immediately. In cases of immediate danger, contact emergency services.",
+    "keySafetyConsiderations": "Ensure the elder's immediate safety, maintain confidentiality, and approach the situation sensitively to avoid further trauma. Be aware of the legal implications of reporting and the potential for retaliation against the elder."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "shoulder_dislocation",
+  "name": "Shoulder dislocation",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:30:49.508157",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Shoulder dislocation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nShoulder dislocation occurs when the head of the humerus is displaced from the glenoid cavity of the scapula, resulting in loss of normal joint alignment.\n\n### Epidemiology\nShoulder dislocations are common, particularly in young adults aged 18-25, often due to sports injuries or trauma. An estimated incidence is 1.7 per 1,000 person-years.\n\n### Essential Pathophysiology\nThe shoulder joint is a ball-and-socket joint that relies on soft tissue structures (ligaments, tendons, and the joint capsule) for stability. Dislocation typically occurs due to excessive force or trauma, leading to the humeral head being forced out of the glenoid cavity.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe shoulder pain\n- Inability to move the shoulder\n- Swelling and bruising around the shoulder joint\n- Numbness or tingling in the arm or hand\n\n### Key Signs\n- Deformity of the shoulder (squared appearance)\n- Prominence of the acromion\n- Limited range of motion\n- Tenderness over the shoulder joint\n\n### Atypical Presentations\n- Recurrent dislocations may present with less severe symptoms or a feeling of instability rather than acute pain.\n- Dislocation may be associated with fractures, leading to atypical presentations.\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (weakness, numbness, or loss of pulse in the arm)\n- Signs of fracture (crepitus, severe deformity)\n- Persistent pain despite reduction attempts\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the shoulder (AP and lateral views) to confirm dislocation and rule out fractures.\n\n### Second-line Investigations\n- CT scan if there is suspicion of associated fractures or complex injuries.\n\n### Specialist Tests\n- MRI may be indicated for assessing soft tissue injuries or recurrent dislocations.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging. A dislocated shoulder is confirmed by the presence of characteristic symptoms and signs, along with radiological evidence of dislocation.\n\n### Key Differential Diagnoses to Exclude\n- Fracture of the humerus or scapula\n- Acromioclavicular joint dislocation\n- Rotator cuff tear\n- Brachial plexus injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate reduction of the dislocated shoulder (either closed reduction or, in some cases, surgical intervention).\n- Analgesia (e.g., paracetamol, NSAIDs) for pain management.\n\n#### Second-line Treatments\n- Post-reduction imaging to confirm proper alignment and rule out fractures.\n- Immobilization in a sling for 1-2 weeks.\n\n#### Emergency Procedures\n- Closed reduction: A non-surgical procedure to realign the humeral head into the glenoid cavity.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy focusing on strengthening and stabilizing shoulder muscles.\n\n#### Second-line Treatments\n- Surgical intervention (e.g., Bankart repair) for recurrent dislocations.\n\n#### Monitoring Requirements\n- Regular follow-up to assess shoulder stability and function.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, reduces inflammation and pain.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Consider in patients without contraindications.\n\n### Procedures\n\n#### Closed Reduction\n- **What it Involves**: A manual technique to reposition the humeral head back into the glenoid cavity.\n- **Indications**: Acute shoulder dislocation without significant fracture or soft tissue injury.\n- **Key Risks/Complications**: Neurovascular injury, fracture, recurrence of dislocation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients recover well with appropriate management, but there is a risk of recurrent dislocations, particularly in younger patients or those with significant soft tissue injury.\n\n### Important Complications to Watch For\n- Recurrent dislocation\n- Rotator cuff tears\n- Axillary nerve injury\n- Glenoid labrum tears (Bankart lesions)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize shoulder dislocation, provide initial management, and facilitate timely referral to orthopaedics for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics if there are complications, such as neurovascular compromise, or if the dislocation cannot be reduced in a timely manner.\n\n### Key Safety Considerations\nEnsure neurovascular status is assessed before and after reduction. Monitor for signs of complications post-reduction.\n",
+  "content": {
+    "overview": {
+      "definition": "Shoulder dislocation occurs when the head of the humerus is displaced from the glenoid cavity of the scapula, resulting in loss of normal joint alignment.",
+      "epidemiology": "Shoulder dislocations are common, particularly in young adults aged 18-25, often due to sports injuries or trauma. An estimated incidence is 1.7 per 1,000 person-years.",
+      "pathophysiology": "The shoulder joint is a ball-and-socket joint that relies on soft tissue structures (ligaments, tendons, and the joint capsule) for stability. Dislocation typically occurs due to excessive force or trauma, leading to the humeral head being forced out of the glenoid cavity."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe shoulder pain",
+        "Inability to move the shoulder",
+        "Swelling and bruising around the shoulder joint",
+        "Numbness or tingling in the arm or hand"
+      ],
+      "signs": [
+        "Deformity of the shoulder (squared appearance)",
+        "Prominence of the acromion",
+        "Limited range of motion",
+        "Tenderness over the shoulder joint"
+      ],
+      "atypicalPresentations": [
+        "Recurrent dislocations may present with less severe symptoms or a feeling of instability rather than acute pain.",
+        "Dislocation may be associated with fractures, leading to atypical presentations."
+      ],
+      "redFlags": [
+        "Neurovascular compromise (weakness, numbness, or loss of pulse in the arm)",
+        "Signs of fracture (crepitus, severe deformity)",
+        "Persistent pain despite reduction attempts"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the shoulder (AP and lateral views) to confirm dislocation and rule out fractures."
+      ],
+      "secondLine": [
+        "CT scan if there is suspicion of associated fractures or complex injuries."
+      ],
+      "specialistTests": [
+        "MRI may be indicated for assessing soft tissue injuries or recurrent dislocations."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging. A dislocated shoulder is confirmed by the presence of characteristic symptoms and signs, along with radiological evidence of dislocation.",
+      "differentials": [
+        "Fracture of the humerus or scapula",
+        "Acromioclavicular joint dislocation",
+        "Rotator cuff tear",
+        "Brachial plexus injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate reduction of the dislocated shoulder (either closed reduction or, in some cases, surgical intervention).",
+          "Analgesia (e.g., paracetamol, NSAIDs) for pain management."
+        ],
+        "secondLine": [
+          "Post-reduction imaging to confirm proper alignment and rule out fractures.",
+          "Immobilization in a sling for 1-2 weeks."
+        ],
+        "procedures": [
+          "Closed reduction: A non-surgical procedure to realign the humeral head into the glenoid cavity."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy focusing on strengthening and stabilizing shoulder muscles."
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., Bankart repair) for recurrent dislocations."
+        ],
+        "monitoring": [
+          "Regular follow-up to assess shoulder stability and function."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic.",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, reduces inflammation and pain.",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Consider in patients without contraindications."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed Reduction",
+          "description": "A manual technique to reposition the humeral head back into the glenoid cavity.",
+          "indications": "Acute shoulder dislocation without significant fracture or soft tissue injury.",
+          "risks": "Neurovascular injury, fracture, recurrence of dislocation."
+        }
+      ]
+    },
+    "prognosis": "Most patients recover well with appropriate management, but there is a risk of recurrent dislocations, particularly in younger patients or those with significant soft tissue injury.",
+    "complications": [
+      "Recurrent dislocation",
+      "Rotator cuff tears",
+      "Axillary nerve injury",
+      "Glenoid labrum tears (Bankart lesions)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize shoulder dislocation, provide initial management, and facilitate timely referral to orthopaedics for further management.",
+    "escalation": "Refer to orthopaedics if there are complications, such as neurovascular compromise, or if the dislocation cannot be reduced in a timely manner.",
+    "keySafetyConsiderations": "Ensure neurovascular status is assessed before and after reduction. Monitor for signs of complications post-reduction."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "von_willebrands_disorder",
+  "name": "Von Willebrand's disorder",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:52:51.338070",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Von Willebrand's disorder: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVon Willebrand's disorder is a genetic bleeding disorder caused by a deficiency or dysfunction of von Willebrand factor (vWF), a protein crucial for platelet adhesion and aggregation, leading to increased bleeding tendency.\n\n### Epidemiology\nIt is the most common inherited bleeding disorder, affecting approximately 1% of the population, with varying severity. It can affect both males and females equally.\n\n### Essential Pathophysiology\nVon Willebrand factor is produced by endothelial cells and megakaryocytes. It plays a key role in hemostasis by mediating platelet adhesion to sites of vascular injury and stabilizing factor VIII in circulation. Deficiency or dysfunction of vWF leads to impaired platelet function and increased bleeding.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Easy bruising\n- Frequent nosebleeds (epistaxis)\n- Heavy or prolonged menstrual bleeding (menorrhagia)\n- Gastrointestinal bleeding\n- Prolonged bleeding after surgery or dental work\n\n### Key Signs\n- Petechiae\n- Ecchymosis\n- Mucosal bleeding (e.g., oral cavity, gastrointestinal tract)\n- Menorrhagia in females\n\n### Atypical Presentations\n- Bleeding after minor trauma\n- Bleeding in the absence of obvious cause\n- Family history of bleeding disorders\n\n### Red Flags Requiring Immediate Action\n- Severe bleeding episodes\n- Bleeding requiring transfusion\n- Bleeding associated with surgery or trauma\n- Family history of severe bleeding disorders\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- PT (Prothrombin Time)\n- aPTT (Activated Partial Thromboplastin Time)\n- Platelet count\n- Von Willebrand factor antigen (vWF:Ag)\n- Ristocetin cofactor activity (vWF:RCo)\n\n### Second-line Investigations\n- Factor VIII activity\n- Genetic testing for vWF mutations\n\n### Specialist Tests\n- Platelet aggregation studies\n- Multimer analysis of vWF\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, laboratory findings of low vWF levels, and prolonged aPTT with normal PT and platelet count. Genetic testing may confirm the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Hemophilia A\n- Thrombocytopenic purpura\n- Acquired von Willebrand syndrome (e.g., due to myeloproliferative disorders)\n- Platelet function disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Desmopressin (DDAVP) for mild to moderate cases\n- Transfusion of vWF/FVIII concentrates for severe cases\n\n#### Second-line Treatments\n- Antifibrinolytics (e.g., tranexamic acid) for mucosal bleeding\n\n#### Emergency Procedures\n- Platelet transfusion in severe bleeding if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Desmopressin (DDAVP) for mild to moderate cases before procedures\n- Regular monitoring of vWF levels and bleeding symptoms\n\n#### Second-line Treatments\n- vWF/FVIII concentrates for severe cases or when DDAVP is ineffective\n- Antifibrinolytics for menorrhagia\n\n#### Monitoring Requirements\n- Regular follow-up for bleeding symptoms and vWF levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Desmopressin (DDAVP)\n- **Mechanism of Action**: Stimulates the release of vWF from endothelial cells, increasing vWF levels and platelet function.\n- **Typical Dosing Range**: 0.3 mcg/kg IV or SC, may repeat every 12-24 hours as needed.\n- **Key Side Effects/Contraindications**: Headache, flushing, hyponatremia, water retention.\n- **When to Use vs. Alternatives**: Effective for mild to moderate cases; not suitable for severe cases.\n\n#### vWF/FVIII concentrate\n- **Mechanism of Action**: Provides exogenous vWF and factor VIII to restore hemostasis.\n- **Typical Dosing Range**: Dosing varies based on severity and weight; consult product guidelines.\n- **Key Side Effects/Contraindications**: Allergic reactions, thromboembolic events.\n- **When to Use vs. Alternatives**: Used in severe cases or when DDAVP is ineffective.\n\n#### Tranexamic acid\n- **Mechanism of Action**: Antifibrinolytic agent that inhibits fibrinolysis, stabilizing clots.\n- **Typical Dosing Range**: 1 g orally 2-3 times daily during bleeding episodes.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, risk of thrombosis.\n- **When to Use vs. Alternatives**: Useful for menorrhagia and mucosal bleeding.\n\n### Procedures\n\n#### Platelet transfusion\n- **What it Involves**: Administration of platelets to increase platelet count and function.\n- **Indications**: Severe bleeding episodes, especially in the context of surgery or trauma.\n- **Key Risks/Complications**: Allergic reactions, transfusion-related acute lung injury (TRALI), infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients with von Willebrand's disorder can lead normal lives. However, the severity of the disorder can vary, and some patients may experience significant bleeding complications.\n\n### Important Complications to Watch For\n- Severe bleeding episodes\n- Anemia due to chronic blood loss\n- Joint damage from recurrent bleeding (in severe cases)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of von Willebrand's disorder, perform initial investigations, and manage acute bleeding episodes. They should also be aware of when to refer to a hematologist for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to a hematologist for severe cases, patients with significant bleeding, or when there is uncertainty in diagnosis or management.\n\n### Key Safety Considerations\nMonitor for signs of bleeding, especially after procedures. Ensure appropriate dosing of medications, particularly in patients with renal impairment. Be aware of potential drug interactions with anticoagulants.\n",
+  "content": {
+    "overview": {
+      "definition": "Von Willebrand's disorder is a genetic bleeding disorder caused by a deficiency or dysfunction of von Willebrand factor (vWF), a protein crucial for platelet adhesion and aggregation, leading to increased bleeding tendency.",
+      "epidemiology": "It is the most common inherited bleeding disorder, affecting approximately 1% of the population, with varying severity. It can affect both males and females equally.",
+      "pathophysiology": "Von Willebrand factor is produced by endothelial cells and megakaryocytes. It plays a key role in hemostasis by mediating platelet adhesion to sites of vascular injury and stabilizing factor VIII in circulation. Deficiency or dysfunction of vWF leads to impaired platelet function and increased bleeding."
+    },
+    "recognition": {
+      "symptoms": [
+        "Easy bruising",
+        "Frequent nosebleeds (epistaxis)",
+        "Heavy or prolonged menstrual bleeding (menorrhagia)",
+        "Gastrointestinal bleeding",
+        "Prolonged bleeding after surgery or dental work"
+      ],
+      "signs": [
+        "Petechiae",
+        "Ecchymosis",
+        "Mucosal bleeding (e.g., oral cavity, gastrointestinal tract)",
+        "Menorrhagia in females"
+      ],
+      "atypicalPresentations": [
+        "Bleeding after minor trauma",
+        "Bleeding in the absence of obvious cause",
+        "Family history of bleeding disorders"
+      ],
+      "redFlags": [
+        "Severe bleeding episodes",
+        "Bleeding requiring transfusion",
+        "Bleeding associated with surgery or trauma",
+        "Family history of severe bleeding disorders"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "PT (Prothrombin Time)",
+        "aPTT (Activated Partial Thromboplastin Time)",
+        "Platelet count",
+        "Von Willebrand factor antigen (vWF:Ag)",
+        "Ristocetin cofactor activity (vWF:RCo)"
+      ],
+      "secondLine": [
+        "Factor VIII activity",
+        "Genetic testing for vWF mutations"
+      ],
+      "specialistTests": [
+        "Platelet aggregation studies",
+        "Multimer analysis of vWF"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, laboratory findings of low vWF levels, and prolonged aPTT with normal PT and platelet count. Genetic testing may confirm the diagnosis.",
+      "differentials": [
+        "Hemophilia A",
+        "Thrombocytopenic purpura",
+        "Acquired von Willebrand syndrome (e.g., due to myeloproliferative disorders)",
+        "Platelet function disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Desmopressin (DDAVP) for mild to moderate cases",
+          "Transfusion of vWF/FVIII concentrates for severe cases"
+        ],
+        "secondLine": [
+          "Antifibrinolytics (e.g., tranexamic acid) for mucosal bleeding"
+        ],
+        "procedures": [
+          "Platelet transfusion in severe bleeding if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Desmopressin (DDAVP) for mild to moderate cases before procedures",
+          "Regular monitoring of vWF levels and bleeding symptoms"
+        ],
+        "secondLine": [
+          "vWF/FVIII concentrates for severe cases or when DDAVP is ineffective",
+          "Antifibrinolytics for menorrhagia"
+        ],
+        "monitoring": [
+          "Regular follow-up for bleeding symptoms and vWF levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Desmopressin (DDAVP)",
+          "mechanism": "Stimulates the release of vWF from endothelial cells, increasing vWF levels and platelet function.",
+          "dosing": "0.3 mcg/kg IV or SC, may repeat every 12-24 hours as needed.",
+          "sideEffects": "Headache, flushing, hyponatremia, water retention.",
+          "notes": "Effective for mild to moderate cases; not suitable for severe cases."
+        },
+        {
+          "name": "vWF/FVIII concentrate",
+          "mechanism": "Provides exogenous vWF and factor VIII to restore hemostasis.",
+          "dosing": "Dosing varies based on severity and weight; consult product guidelines.",
+          "sideEffects": "Allergic reactions, thromboembolic events.",
+          "notes": "Used in severe cases or when DDAVP is ineffective."
+        },
+        {
+          "name": "Tranexamic acid",
+          "mechanism": "Antifibrinolytic agent that inhibits fibrinolysis, stabilizing clots.",
+          "dosing": "1 g orally 2-3 times daily during bleeding episodes.",
+          "sideEffects": "Nausea, diarrhea, risk of thrombosis.",
+          "notes": "Useful for menorrhagia and mucosal bleeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Platelet transfusion",
+          "description": "Administration of platelets to increase platelet count and function.",
+          "indications": "Severe bleeding episodes, especially in the context of surgery or trauma.",
+          "risks": "Allergic reactions, transfusion-related acute lung injury (TRALI), infection."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients with von Willebrand's disorder can lead normal lives. However, the severity of the disorder can vary, and some patients may experience significant bleeding complications.",
+    "complications": [
+      "Severe bleeding episodes",
+      "Anemia due to chronic blood loss",
+      "Joint damage from recurrent bleeding (in severe cases)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of von Willebrand's disorder, perform initial investigations, and manage acute bleeding episodes. They should also be aware of when to refer to a hematologist for further evaluation and management.",
+    "escalation": "Refer to a hematologist for severe cases, patients with significant bleeding, or when there is uncertainty in diagnosis or management.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding, especially after procedures. Ensure appropriate dosing of medications, particularly in patients with renal impairment. Be aware of potential drug interactions with anticoagulants."
+  }
+}

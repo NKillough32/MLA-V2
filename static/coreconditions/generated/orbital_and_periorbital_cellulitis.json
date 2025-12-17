@@ -1,0 +1,133 @@
+{
+  "id": "orbital_and_periorbital_cellulitis",
+  "name": "Orbital and periorbital cellulitis",
+  "domains": [
+    "Opthalmolgy",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:45:21.638996",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Orbital and periorbital cellulitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOrbital and periorbital cellulitis are infections characterized by inflammation of the eyelid and surrounding tissues (periorbital cellulitis) or the orbit (orbital cellulitis), which can lead to serious complications if not treated promptly.\n\n### Epidemiology\nPeriorbital cellulitis is more common in children, often following upper respiratory infections or sinusitis. Orbital cellulitis, while less common, can occur in all age groups and is often associated with sinus infections, particularly in children.\n\n### Essential Pathophysiology\nInfection typically arises from the spread of bacteria from adjacent structures, such as the sinuses or skin. In periorbital cellulitis, the infection is limited to the eyelid and surrounding tissues, while in orbital cellulitis, the infection extends into the orbit, potentially affecting the optic nerve and ocular muscles.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Swelling of the eyelid\n- Redness of the eyelid\n- Pain or tenderness around the eye\n- Fever\n- Decreased vision\n- Proptosis (bulging of the eye)\n- Diplopia (double vision)\n\n### Key Signs\n- Erythema and edema of the eyelid\n- Limited ocular movement\n- Visual acuity changes\n- Pupil reaction abnormalities\n- Systemic signs of infection (fever, malaise)\n\n### Atypical Presentations\n- Absence of fever in some cases\n- Mild symptoms that rapidly worsen\n- Unilateral symptoms in bilateral cases\n\n### Red Flags Requiring Immediate Action\n- Severe headache\n- Altered mental status\n- Rapid progression of symptoms\n- Vision loss\n- Proptosis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Blood tests (CBC, CRP)\n- CT scan of the orbit and sinuses\n\n### Second-line Investigations\n- MRI of the orbit (if complications suspected)\n- Cultures of any drainage if present\n\n### Specialist Tests\n- Sinus endoscopy (if sinusitis is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms and signs, supported by imaging studies to assess the extent of the infection.\n\n### Key Differential Diagnoses to Exclude\n- Conjunctivitis\n- Dacryocystitis\n- Preseptal cellulitis\n- Orbital abscess\n- Thyroid eye disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous antibiotics (e.g., ceftriaxone, vancomycin)\n- Supportive care (analgesia, hydration)\n\n#### Second-line Treatments\n- Consideration of surgical intervention if abscess formation is suspected\n\n#### Emergency Procedures\n- Incision and drainage of abscess if present\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral antibiotics for mild cases or after IV therapy\n- Regular follow-up to monitor symptoms\n\n#### Second-line Treatments\n- Referral to ophthalmology for persistent cases\n\n#### Monitoring Requirements\n- Regular assessment of visual acuity and ocular movements\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic effective against many bacteria causing cellulitis.\n- **Typical Dosing Range**: 1-2 g IV every 24 hours depending on severity.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Consider in combination with vancomycin for MRSA coverage.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against Gram-positive bacteria, including MRSA.\n- **Typical Dosing Range**: 15 mg/kg IV every 12 hours, adjusted for renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, infusion-related reactions (red man syndrome).\n- **When to Use vs. Alternatives**: Essential for suspected or confirmed MRSA infections.\n\n### Procedures\n\n#### Incision and drainage\n- **What it Involves**: Surgical procedure to drain any abscess that has formed in the orbit or periorbital area.\n- **Indications**: Presence of a significant abscess or failure to respond to medical management.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures, recurrence of infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis is generally good, but complications can lead to vision loss or systemic infection if not addressed quickly.\n\n### Important Complications to Watch For\n- Vision loss\n- Orbital abscess\n- Meningitis\n- Cavernous sinus thrombosis\n- Sepsis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, initiate investigations, and start empirical antibiotic therapy while ensuring timely referral to specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of severe infection, neurological involvement, or lack of improvement within 24-48 hours of treatment, escalate care to an ophthalmologist or infectious disease specialist.\n\n### Key Safety Considerations\nMonitor for signs of deterioration, including changes in vision, worsening headache, or systemic symptoms. Ensure timely imaging and specialist referral to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Orbital and periorbital cellulitis are infections characterized by inflammation of the eyelid and surrounding tissues (periorbital cellulitis) or the orbit (orbital cellulitis), which can lead to serious complications if not treated promptly.",
+      "epidemiology": "Periorbital cellulitis is more common in children, often following upper respiratory infections or sinusitis. Orbital cellulitis, while less common, can occur in all age groups and is often associated with sinus infections, particularly in children.",
+      "pathophysiology": "Infection typically arises from the spread of bacteria from adjacent structures, such as the sinuses or skin. In periorbital cellulitis, the infection is limited to the eyelid and surrounding tissues, while in orbital cellulitis, the infection extends into the orbit, potentially affecting the optic nerve and ocular muscles."
+    },
+    "recognition": {
+      "symptoms": [
+        "Swelling of the eyelid",
+        "Redness of the eyelid",
+        "Pain or tenderness around the eye",
+        "Fever",
+        "Decreased vision",
+        "Proptosis (bulging of the eye)",
+        "Diplopia (double vision)"
+      ],
+      "signs": [
+        "Erythema and edema of the eyelid",
+        "Limited ocular movement",
+        "Visual acuity changes",
+        "Pupil reaction abnormalities",
+        "Systemic signs of infection (fever, malaise)"
+      ],
+      "atypicalPresentations": [
+        "Absence of fever in some cases",
+        "Mild symptoms that rapidly worsen",
+        "Unilateral symptoms in bilateral cases"
+      ],
+      "redFlags": [
+        "Severe headache",
+        "Altered mental status",
+        "Rapid progression of symptoms",
+        "Vision loss",
+        "Proptosis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Blood tests (CBC, CRP)",
+        "CT scan of the orbit and sinuses"
+      ],
+      "secondLine": [
+        "MRI of the orbit (if complications suspected)",
+        "Cultures of any drainage if present"
+      ],
+      "specialistTests": [
+        "Sinus endoscopy (if sinusitis is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms and signs, supported by imaging studies to assess the extent of the infection.",
+      "differentials": [
+        "Conjunctivitis",
+        "Dacryocystitis",
+        "Preseptal cellulitis",
+        "Orbital abscess",
+        "Thyroid eye disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous antibiotics (e.g., ceftriaxone, vancomycin)",
+          "Supportive care (analgesia, hydration)"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if abscess formation is suspected"
+        ],
+        "procedures": [
+          "Incision and drainage of abscess if present"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral antibiotics for mild cases or after IV therapy",
+          "Regular follow-up to monitor symptoms"
+        ],
+        "secondLine": [
+          "Referral to ophthalmology for persistent cases"
+        ],
+        "monitoring": [
+          "Regular assessment of visual acuity and ocular movements"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic effective against many bacteria causing cellulitis.",
+          "dosing": "1-2 g IV every 24 hours depending on severity.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.",
+          "notes": "Consider in combination with vancomycin for MRSA coverage."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against Gram-positive bacteria, including MRSA.",
+          "dosing": "15 mg/kg IV every 12 hours, adjusted for renal function.",
+          "sideEffects": "Nephrotoxicity, infusion-related reactions (red man syndrome).",
+          "notes": "Essential for suspected or confirmed MRSA infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage",
+          "description": "Surgical procedure to drain any abscess that has formed in the orbit or periorbital area.",
+          "indications": "Presence of a significant abscess or failure to respond to medical management.",
+          "risks": "Infection, bleeding, damage to surrounding structures, recurrence of infection."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis is generally good, but complications can lead to vision loss or systemic infection if not addressed quickly.",
+    "complications": [
+      "Vision loss",
+      "Orbital abscess",
+      "Meningitis",
+      "Cavernous sinus thrombosis",
+      "Sepsis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, initiate investigations, and start empirical antibiotic therapy while ensuring timely referral to specialists as needed.",
+    "escalation": "If there are signs of severe infection, neurological involvement, or lack of improvement within 24-48 hours of treatment, escalate care to an ophthalmologist or infectious disease specialist.",
+    "keySafetyConsiderations": "Monitor for signs of deterioration, including changes in vision, worsening headache, or systemic symptoms. Ensure timely imaging and specialist referral to prevent complications."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "chronic_kidney_disease",
+  "name": "Chronic kidney disease",
+  "domains": [
+    "Haematology",
+    "Renal",
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:59:03.724286",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic kidney disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic kidney disease (CKD) is a progressive loss of kidney function over a period of months or years, defined by a decrease in glomerular filtration rate (GFR) to less than 60 mL/min/1.73 m² for three months or more, or the presence of kidney damage markers (e.g., proteinuria).\n\n### Epidemiology\nCKD affects approximately 10-15% of the adult population globally, with higher prevalence in older adults, those with diabetes, hypertension, and cardiovascular disease.\n\n### Essential Pathophysiology\nCKD results from various underlying conditions that damage the kidneys, leading to a decline in nephron function. This can be due to glomerular diseases, tubulointerstitial diseases, vascular diseases, or obstructive uropathy. As kidney function declines, waste products accumulate, leading to uremia and associated complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Anorexia\n- Nausea and vomiting\n- Pruritus\n- Fluid retention (edema)\n- Shortness of breath\n\n### Key Signs\n- Hypertension\n- Anemia (pallor, fatigue)\n- Peripheral edema\n- Uremic frost (in advanced cases)\n- Altered mental status (in severe cases)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute kidney injury superimposed on CKD\n- Bone pain due to renal osteodystrophy\n\n### Red Flags Requiring Immediate Action\n- Rapid decline in renal function\n- Severe electrolyte imbalances (e.g., hyperkalemia)\n- Persistent proteinuria or hematuria\n- Signs of uremia (e.g., confusion, seizures)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum creatinine and estimated GFR (eGFR)\n- Urinalysis (for proteinuria, hematuria)\n- Blood pressure measurement\n- Electrolytes (sodium, potassium, bicarbonate)\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Renal ultrasound (to assess kidney size and structure)\n- Serum albumin levels\n\n### Specialist Tests\n- Renal biopsy (if glomerular disease is suspected)\n- Imaging studies (CT/MRI) for obstructive uropathy\n- Autoimmune markers (e.g., ANA, ANCA) if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of CKD is based on the presence of kidney damage (e.g., proteinuria, hematuria) or a GFR <60 mL/min/1.73 m² for three months or more, with confirmation through repeat testing.\n\n### Key Differential Diagnoses to Exclude\n- Acute kidney injury\n- Diabetic nephropathy\n- Hypertensive nephropathy\n- Polycystic kidney disease\n- Glomerulonephritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Identify and treat underlying cause (e.g., control blood pressure, manage diabetes)\n- Fluid management (restrict fluid intake if necessary)\n- Electrolyte management (e.g., treat hyperkalemia)\n\n#### Second-line Treatments\n- Consider renal replacement therapy (dialysis) if indicated\n- Referral to nephrology for further management\n\n#### Emergency Procedures\n- Dialysis (hemodialysis or peritoneal dialysis) - indicated in severe cases of CKD with uremic symptoms or electrolyte imbalances. Risks include infection, vascular access complications, and fluid overload.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (dietary changes, smoking cessation)\n- Control of blood pressure (target <130/80 mmHg)\n- Management of diabetes (if applicable)\n\n#### Second-line Treatments\n- Phosphate binders (e.g., sevelamer)\n- Erythropoiesis-stimulating agents (e.g., epoetin alfa) for anemia management\n- Referral to nephrology for advanced CKD\n\n#### Monitoring Requirements\n- Regular monitoring of renal function (eGFR, creatinine)\n- Monitoring of electrolytes (especially potassium)\n- Assessment of anemia and bone mineral metabolism\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces blood pressure and proteinuria.\n- **Typical Dosing Range**: Start at 5-10 mg daily, titrate to target BP or maximum tolerated dose.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels after initiation.\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that promotes diuresis and reduces fluid overload.\n- **Typical Dosing Range**: Start at 20-40 mg daily, adjust based on response.\n- **Key Side Effects/Contraindications**: Dehydration, electrolyte imbalances (hypokalemia), ototoxicity (rare).\n- **When to Use vs. Alternatives**: Monitor electrolytes and renal function.\n\n#### Epoetin alfa\n- **Mechanism of Action**: Stimulates erythropoiesis in the bone marrow.\n- **Typical Dosing Range**: Start at 50-100 units/kg subcutaneously 1-3 times weekly, adjust based on hemoglobin levels.\n- **Key Side Effects/Contraindications**: Hypertension, thromboembolic events, pure red cell aplasia (rare).\n- **When to Use vs. Alternatives**: Monitor hemoglobin levels regularly.\n\n### Procedures\n\n#### Hemodialysis\n- **What it Involves**: A procedure that uses a machine to filter waste and excess fluid from the blood when the kidneys are no longer able to do so.\n- **Indications**: Severe CKD with uremic symptoms, electrolyte imbalances, or fluid overload.\n- **Key Risks/Complications**: Infection, hypotension, vascular access complications, and dialysis disequilibrium syndrome.\n\n#### Peritoneal dialysis\n- **What it Involves**: A dialysis method that uses the lining of the abdomen (peritoneum) to filter waste from the blood.\n- **Indications**: Patients who prefer home treatment or have contraindications to hemodialysis.\n- **Key Risks/Complications**: Peritonitis, catheter-related infections, and fluid overload.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nCKD is a progressive disease that can lead to end-stage renal disease (ESRD) requiring dialysis or kidney transplantation. The prognosis depends on the underlying cause, comorbidities, and adherence to management.\n\n### Important Complications to Watch For\n- Cardiovascular disease\n- Anemia\n- Bone disease (renal osteodystrophy)\n- Electrolyte imbalances (e.g., hyperkalemia)\n- Acidosis\n- Increased risk of infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage stable patients, recognize complications, and escalate care to nephrology when necessary. They should also educate patients about lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to nephrology for patients with rapidly declining renal function, severe electrolyte imbalances, or those requiring dialysis.\n\n### Key Safety Considerations\nMonitor renal function and electrolytes closely, especially when initiating or adjusting medications. Be vigilant for signs of uremia and complications of CKD.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic kidney disease (CKD) is a progressive loss of kidney function over a period of months or years, defined by a decrease in glomerular filtration rate (GFR) to less than 60 mL/min/1.73 m² for three months or more, or the presence of kidney damage markers (e.g., proteinuria).",
+      "epidemiology": "CKD affects approximately 10-15% of the adult population globally, with higher prevalence in older adults, those with diabetes, hypertension, and cardiovascular disease.",
+      "pathophysiology": "CKD results from various underlying conditions that damage the kidneys, leading to a decline in nephron function. This can be due to glomerular diseases, tubulointerstitial diseases, vascular diseases, or obstructive uropathy. As kidney function declines, waste products accumulate, leading to uremia and associated complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Anorexia",
+        "Nausea and vomiting",
+        "Pruritus",
+        "Fluid retention (edema)",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Hypertension",
+        "Anemia (pallor, fatigue)",
+        "Peripheral edema",
+        "Uremic frost (in advanced cases)",
+        "Altered mental status (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute kidney injury superimposed on CKD",
+        "Bone pain due to renal osteodystrophy"
+      ],
+      "redFlags": [
+        "Rapid decline in renal function",
+        "Severe electrolyte imbalances (e.g., hyperkalemia)",
+        "Persistent proteinuria or hematuria",
+        "Signs of uremia (e.g., confusion, seizures)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum creatinine and estimated GFR (eGFR)",
+        "Urinalysis (for proteinuria, hematuria)",
+        "Blood pressure measurement",
+        "Electrolytes (sodium, potassium, bicarbonate)"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Renal ultrasound (to assess kidney size and structure)",
+        "Serum albumin levels"
+      ],
+      "specialistTests": [
+        "Renal biopsy (if glomerular disease is suspected)",
+        "Imaging studies (CT/MRI) for obstructive uropathy",
+        "Autoimmune markers (e.g., ANA, ANCA) if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of CKD is based on the presence of kidney damage (e.g., proteinuria, hematuria) or a GFR <60 mL/min/1.73 m² for three months or more, with confirmation through repeat testing.",
+      "differentials": [
+        "Acute kidney injury",
+        "Diabetic nephropathy",
+        "Hypertensive nephropathy",
+        "Polycystic kidney disease",
+        "Glomerulonephritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Identify and treat underlying cause (e.g., control blood pressure, manage diabetes)",
+          "Fluid management (restrict fluid intake if necessary)",
+          "Electrolyte management (e.g., treat hyperkalemia)"
+        ],
+        "secondLine": [
+          "Consider renal replacement therapy (dialysis) if indicated",
+          "Referral to nephrology for further management"
+        ],
+        "procedures": [
+          "Dialysis (hemodialysis or peritoneal dialysis) - indicated in severe cases of CKD with uremic symptoms or electrolyte imbalances. Risks include infection, vascular access complications, and fluid overload."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (dietary changes, smoking cessation)",
+          "Control of blood pressure (target <130/80 mmHg)",
+          "Management of diabetes (if applicable)"
+        ],
+        "secondLine": [
+          "Phosphate binders (e.g., sevelamer)",
+          "Erythropoiesis-stimulating agents (e.g., epoetin alfa) for anemia management",
+          "Referral to nephrology for advanced CKD"
+        ],
+        "monitoring": [
+          "Regular monitoring of renal function (eGFR, creatinine)",
+          "Monitoring of electrolytes (especially potassium)",
+          "Assessment of anemia and bone mineral metabolism"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces blood pressure and proteinuria.",
+          "dosing": "Start at 5-10 mg daily, titrate to target BP or maximum tolerated dose.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema.",
+          "notes": "Monitor renal function and potassium levels after initiation."
+        },
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that promotes diuresis and reduces fluid overload.",
+          "dosing": "Start at 20-40 mg daily, adjust based on response.",
+          "sideEffects": "Dehydration, electrolyte imbalances (hypokalemia), ototoxicity (rare).",
+          "notes": "Monitor electrolytes and renal function."
+        },
+        {
+          "name": "Epoetin alfa",
+          "mechanism": "Stimulates erythropoiesis in the bone marrow.",
+          "dosing": "Start at 50-100 units/kg subcutaneously 1-3 times weekly, adjust based on hemoglobin levels.",
+          "sideEffects": "Hypertension, thromboembolic events, pure red cell aplasia (rare).",
+          "notes": "Monitor hemoglobin levels regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Hemodialysis",
+          "description": "A procedure that uses a machine to filter waste and excess fluid from the blood when the kidneys are no longer able to do so.",
+          "indications": "Severe CKD with uremic symptoms, electrolyte imbalances, or fluid overload.",
+          "risks": "Infection, hypotension, vascular access complications, and dialysis disequilibrium syndrome."
+        },
+        {
+          "name": "Peritoneal dialysis",
+          "description": "A dialysis method that uses the lining of the abdomen (peritoneum) to filter waste from the blood.",
+          "indications": "Patients who prefer home treatment or have contraindications to hemodialysis.",
+          "risks": "Peritonitis, catheter-related infections, and fluid overload."
+        }
+      ]
+    },
+    "prognosis": "CKD is a progressive disease that can lead to end-stage renal disease (ESRD) requiring dialysis or kidney transplantation. The prognosis depends on the underlying cause, comorbidities, and adherence to management.",
+    "complications": [
+      "Cardiovascular disease",
+      "Anemia",
+      "Bone disease (renal osteodystrophy)",
+      "Electrolyte imbalances (e.g., hyperkalemia)",
+      "Acidosis",
+      "Increased risk of infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage stable patients, recognize complications, and escalate care to nephrology when necessary. They should also educate patients about lifestyle modifications and medication adherence.",
+    "escalation": "Refer to nephrology for patients with rapidly declining renal function, severe electrolyte imbalances, or those requiring dialysis.",
+    "keySafetyConsiderations": "Monitor renal function and electrolytes closely, especially when initiating or adjusting medications. Be vigilant for signs of uremia and complications of CKD."
+  }
+}

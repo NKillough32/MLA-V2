@@ -1,0 +1,132 @@
+{
+  "id": "haemochromatosis_iron_overload",
+  "name": "Haemochromatosis/ iron overload",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T20:00:03.244506",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Haemochromatosis/ iron overload: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHaemochromatosis is a genetic disorder characterized by excessive iron accumulation in the body, leading to potential damage to various organs, particularly the liver, heart, and pancreas.\n\n### Epidemiology\nHaemochromatosis is most common in individuals of Northern European descent, with an estimated prevalence of 1 in 200-300 individuals. It is often underdiagnosed due to its variable presentation.\n\n### Essential Pathophysiology\nThe condition is primarily caused by mutations in the HFE gene, leading to increased intestinal absorption of iron. Over time, excess iron deposits in tissues, causing oxidative stress and damage to organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Joint pain (arthralgia)\n- Abdominal pain\n- Weight loss\n- Skin changes (bronze or slate-gray discoloration)\n- Diabetes mellitus (secondary to pancreatic damage)\n- Heart failure (due to cardiomyopathy)\n\n### Key Signs\n- Hepatomegaly\n- Splenomegaly\n- Skin pigmentation changes\n- Diabetes (elevated blood glucose levels)\n- Cardiomyopathy (e.g., arrhythmias)\n- Hypogonadism (testicular atrophy, loss of libido)\n\n### Atypical Presentations\n- Asymptomatic until late stages\n- Presentation with liver cirrhosis or hepatocellular carcinoma\n- Symptoms mimicking other conditions (e.g., arthritis, diabetes)\n\n### Red Flags Requiring Immediate Action\n- New-onset diabetes in middle-aged individuals\n- Signs of liver disease (jaundice, ascites)\n- Severe joint pain with no clear cause\n- Family history of liver disease or diabetes\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum ferritin\n- Transferrin saturation (TS)\n- Liver function tests (LFTs)\n\n### Second-line Investigations\n- Genetic testing for HFE mutations (C282Y, H63D)\n- Liver biopsy (if indicated)\n\n### Specialist Tests\n- MRI for liver iron concentration\n- Liver ultrasound for cirrhosis assessment\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by elevated serum ferritin and transferrin saturation, along with genetic testing for HFE mutations. Liver biopsy may be performed to assess iron overload and liver damage.\n\n### Key Differential Diagnoses to Exclude\n- Secondary iron overload (e.g., from repeated blood transfusions)\n- Chronic liver disease (e.g., hepatitis, cirrhosis)\n- Hemolytic anemia\n- Sideroblastic anemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Phlebotomy (therapeutic venesection) to reduce iron levels\n\n#### Second-line Treatments\n- Iron chelation therapy (e.g., Deferoxamine) if phlebotomy is not possible\n\n#### Emergency Procedures\n- Therapeutic phlebotomy: Removal of blood to decrease iron levels. Indicated in symptomatic patients or those with high ferritin levels. Risks include hypotension, infection, and fatigue.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular phlebotomy every 1-3 months to maintain ferritin levels <50 ng/mL\n\n#### Second-line Treatments\n- Iron chelation therapy if phlebotomy is not tolerated or ineffective\n\n#### Monitoring Requirements\n- Regular monitoring of serum ferritin and transferrin saturation\n- Liver function tests and liver ultrasound for cirrhosis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Deferoxamine\n- **Mechanism of Action**: Iron chelator that binds free iron and promotes its excretion via urine.\n- **Typical Dosing Range**: Typically 20-40 mg/kg/day via subcutaneous infusion for 5-7 days a week.\n- **Key Side Effects/Contraindications**: Hypotension, allergic reactions, vision changes, and hearing loss with long-term use.\n- **When to Use vs. Alternatives**: Used in patients who cannot undergo phlebotomy.\n\n#### Deferasirox\n- **Mechanism of Action**: Oral iron chelator that binds excess iron and facilitates its excretion through the gastrointestinal tract.\n- **Typical Dosing Range**: Initial dose of 20 mg/kg/day, adjusted based on serum ferritin levels.\n- **Key Side Effects/Contraindications**: Gastrointestinal disturbances, renal impairment, and liver function abnormalities.\n- **When to Use vs. Alternatives**: Preferred for patients with chronic iron overload who cannot tolerate phlebotomy.\n\n### Procedures\n\n#### Therapeutic Phlebotomy\n- **What it Involves**: A procedure to remove blood from the body to reduce iron levels.\n- **Indications**: Indicated in patients with symptomatic haemochromatosis or elevated ferritin levels.\n- **Key Risks/Complications**: Risks include hypotension, infection at the venipuncture site, and fatigue post-procedure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and appropriate management, patients can lead normal lives. However, untreated haemochromatosis can lead to serious complications such as cirrhosis, liver cancer, diabetes, and heart failure.\n\n### Important Complications to Watch For\n- Cirrhosis\n- Hepatocellular carcinoma\n- Diabetes mellitus\n- Cardiomyopathy\n- Hypogonadism\n- Arthropathy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of haemochromatosis, initiate appropriate investigations, and refer patients for specialist management. They should also educate patients about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist or gastroenterologist for patients with confirmed haemochromatosis requiring management, especially if there are complications or if the patient is symptomatic.\n\n### Key Safety Considerations\nMonitor for signs of iron overload and complications during treatment. Ensure regular follow-up for patients undergoing phlebotomy or iron chelation therapy to prevent adverse effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Haemochromatosis is a genetic disorder characterized by excessive iron accumulation in the body, leading to potential damage to various organs, particularly the liver, heart, and pancreas.",
+      "epidemiology": "Haemochromatosis is most common in individuals of Northern European descent, with an estimated prevalence of 1 in 200-300 individuals. It is often underdiagnosed due to its variable presentation.",
+      "pathophysiology": "The condition is primarily caused by mutations in the HFE gene, leading to increased intestinal absorption of iron. Over time, excess iron deposits in tissues, causing oxidative stress and damage to organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Joint pain (arthralgia)",
+        "Abdominal pain",
+        "Weight loss",
+        "Skin changes (bronze or slate-gray discoloration)",
+        "Diabetes mellitus (secondary to pancreatic damage)",
+        "Heart failure (due to cardiomyopathy)"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Skin pigmentation changes",
+        "Diabetes (elevated blood glucose levels)",
+        "Cardiomyopathy (e.g., arrhythmias)",
+        "Hypogonadism (testicular atrophy, loss of libido)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic until late stages",
+        "Presentation with liver cirrhosis or hepatocellular carcinoma",
+        "Symptoms mimicking other conditions (e.g., arthritis, diabetes)"
+      ],
+      "redFlags": [
+        "New-onset diabetes in middle-aged individuals",
+        "Signs of liver disease (jaundice, ascites)",
+        "Severe joint pain with no clear cause",
+        "Family history of liver disease or diabetes"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum ferritin",
+        "Transferrin saturation (TS)",
+        "Liver function tests (LFTs)"
+      ],
+      "secondLine": [
+        "Genetic testing for HFE mutations (C282Y, H63D)",
+        "Liver biopsy (if indicated)"
+      ],
+      "specialistTests": [
+        "MRI for liver iron concentration",
+        "Liver ultrasound for cirrhosis assessment"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by elevated serum ferritin and transferrin saturation, along with genetic testing for HFE mutations. Liver biopsy may be performed to assess iron overload and liver damage.",
+      "differentials": [
+        "Secondary iron overload (e.g., from repeated blood transfusions)",
+        "Chronic liver disease (e.g., hepatitis, cirrhosis)",
+        "Hemolytic anemia",
+        "Sideroblastic anemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Phlebotomy (therapeutic venesection) to reduce iron levels"
+        ],
+        "secondLine": [
+          "Iron chelation therapy (e.g., Deferoxamine) if phlebotomy is not possible"
+        ],
+        "procedures": [
+          "Therapeutic phlebotomy: Removal of blood to decrease iron levels. Indicated in symptomatic patients or those with high ferritin levels. Risks include hypotension, infection, and fatigue."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular phlebotomy every 1-3 months to maintain ferritin levels <50 ng/mL"
+        ],
+        "secondLine": [
+          "Iron chelation therapy if phlebotomy is not tolerated or ineffective"
+        ],
+        "monitoring": [
+          "Regular monitoring of serum ferritin and transferrin saturation",
+          "Liver function tests and liver ultrasound for cirrhosis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Deferoxamine",
+          "mechanism": "Iron chelator that binds free iron and promotes its excretion via urine.",
+          "dosing": "Typically 20-40 mg/kg/day via subcutaneous infusion for 5-7 days a week.",
+          "sideEffects": "Hypotension, allergic reactions, vision changes, and hearing loss with long-term use.",
+          "notes": "Used in patients who cannot undergo phlebotomy."
+        },
+        {
+          "name": "Deferasirox",
+          "mechanism": "Oral iron chelator that binds excess iron and facilitates its excretion through the gastrointestinal tract.",
+          "dosing": "Initial dose of 20 mg/kg/day, adjusted based on serum ferritin levels.",
+          "sideEffects": "Gastrointestinal disturbances, renal impairment, and liver function abnormalities.",
+          "notes": "Preferred for patients with chronic iron overload who cannot tolerate phlebotomy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Therapeutic Phlebotomy",
+          "description": "A procedure to remove blood from the body to reduce iron levels.",
+          "indications": "Indicated in patients with symptomatic haemochromatosis or elevated ferritin levels.",
+          "risks": "Risks include hypotension, infection at the venipuncture site, and fatigue post-procedure."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and appropriate management, patients can lead normal lives. However, untreated haemochromatosis can lead to serious complications such as cirrhosis, liver cancer, diabetes, and heart failure.",
+    "complications": [
+      "Cirrhosis",
+      "Hepatocellular carcinoma",
+      "Diabetes mellitus",
+      "Cardiomyopathy",
+      "Hypogonadism",
+      "Arthropathy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of haemochromatosis, initiate appropriate investigations, and refer patients for specialist management. They should also educate patients about the condition and its management.",
+    "escalation": "Refer to a haematologist or gastroenterologist for patients with confirmed haemochromatosis requiring management, especially if there are complications or if the patient is symptomatic.",
+    "keySafetyConsiderations": "Monitor for signs of iron overload and complications during treatment. Ensure regular follow-up for patients undergoing phlebotomy or iron chelation therapy to prevent adverse effects."
+  }
+}

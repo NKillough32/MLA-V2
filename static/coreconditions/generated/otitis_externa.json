@@ -1,0 +1,125 @@
+{
+  "id": "otitis_externa",
+  "name": "Otitis externa",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:37:40.433584",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Otitis externa: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOtitis externa, commonly known as swimmer's ear, is an inflammation of the external auditory canal, which can be caused by infection, allergic reactions, or irritants.\n\n### Epidemiology\nOtitis externa is prevalent, particularly in warm, humid climates. It affects all age groups but is more common in children and adolescents. Risk factors include swimming, moisture exposure, and trauma to the ear canal.\n\n### Essential Pathophysiology\nThe condition arises when the skin of the external auditory canal becomes inflamed, often due to bacterial or fungal infections. The normal protective barrier of the ear canal is disrupted, allowing pathogens to invade.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching in the ear canal\n- Ear pain (otalgia)\n- Discharge from the ear\n- Hearing loss (conductive)\n- Swelling of the ear canal\n\n### Key Signs\n- Tenderness on pulling the pinna or tragus\n- Redness and swelling of the ear canal\n- Purulent or serous discharge\n- Narrowing of the ear canal due to edema\n\n### Atypical Presentations\n- Fever (in severe cases)\n- Persistent symptoms despite treatment\n- Erythema or swelling extending beyond the ear canal\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by analgesics\n- Fever or systemic symptoms\n- Signs of mastoiditis (postauricular pain, swelling)\n- Neurological symptoms (e.g., facial weakness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of the ear canal\n- History taking to identify risk factors\n\n### Second-line Investigations\n- Ear swab for culture and sensitivity (if discharge is present)\n\n### Specialist Tests\n- CT scan of the temporal bone (if complications are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and examination findings. The presence of ear canal inflammation and discharge is key.\n\n### Key Differential Diagnoses to Exclude\n- Acute otitis media\n- Chronic otitis media\n- Eczema of the ear canal\n- Fungal ear infections (otomycosis)\n- Foreign body in the ear canal\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical antibiotic drops (e.g., ciprofloxacin/dexamethasone)\n- Analgesics for pain relief\n\n#### Second-line Treatments\n- Consider oral antibiotics if there is extensive infection or cellulitis\n\n#### Emergency Procedures\n- Ear canal cleaning (aural toilet) to remove debris and discharge\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular cleaning of the ear canal\n- Topical corticosteroids to reduce inflammation\n\n#### Second-line Treatments\n- Long-term topical antifungal or antibiotic therapy if recurrent infections occur\n\n#### Monitoring Requirements\n- Regular follow-up to assess for recurrence and manage any underlying conditions (e.g., eczema)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ciprofloxacin/dexamethasone ear drops\n- **Mechanism of Action**: Ciprofloxacin is a fluoroquinolone antibiotic that inhibits bacterial DNA gyrase; dexamethasone is a corticosteroid that reduces inflammation.\n- **Typical Dosing Range**: Instill 4 drops into the affected ear twice daily for 7 days.\n- **Key Side Effects/Contraindications**: Local irritation, itching, or allergic reactions.\n- **When to Use vs. Alternatives**: Effective for both bacterial infection and inflammation.\n\n#### Oral antibiotics (e.g., amoxicillin-clavulanate)\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 500 mg every 8 hours for 7-10 days, depending on severity.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Consider if there is extensive infection or systemic symptoms.\n\n### Procedures\n\n#### Aural toilet (ear cleaning)\n- **What it Involves**: Gentle cleaning of the ear canal to remove debris and discharge, often performed under direct visualization.\n- **Indications**: Severe discharge, obstructed ear canal, or when topical treatments are ineffective due to debris.\n- **Key Risks/Complications**: Potential for trauma to the ear canal, exacerbation of symptoms, or introduction of infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of otitis externa resolve with appropriate treatment. Chronic cases may require ongoing management and can lead to complications if untreated.\n\n### Important Complications to Watch For\n- Chronic otitis externa\n- Cellulitis of the ear canal\n- Mastoiditis\n- Osteomyelitis of the skull base (malignant otitis externa in diabetics)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide symptomatic relief, and initiate treatment. They should also educate patients on preventive measures and recognize when to escalate care.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT specialist if there are signs of complications, persistent symptoms despite treatment, or if the patient is immunocompromised.\n\n### Key Safety Considerations\nEnsure proper technique when administering ear drops to avoid further trauma. Monitor for signs of complications, especially in high-risk patients (e.g., diabetics). Educate patients on avoiding moisture in the ear during recovery.\n",
+  "content": {
+    "overview": {
+      "definition": "Otitis externa, commonly known as swimmer's ear, is an inflammation of the external auditory canal, which can be caused by infection, allergic reactions, or irritants.",
+      "epidemiology": "Otitis externa is prevalent, particularly in warm, humid climates. It affects all age groups but is more common in children and adolescents. Risk factors include swimming, moisture exposure, and trauma to the ear canal.",
+      "pathophysiology": "The condition arises when the skin of the external auditory canal becomes inflamed, often due to bacterial or fungal infections. The normal protective barrier of the ear canal is disrupted, allowing pathogens to invade."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching in the ear canal",
+        "Ear pain (otalgia)",
+        "Discharge from the ear",
+        "Hearing loss (conductive)",
+        "Swelling of the ear canal"
+      ],
+      "signs": [
+        "Tenderness on pulling the pinna or tragus",
+        "Redness and swelling of the ear canal",
+        "Purulent or serous discharge",
+        "Narrowing of the ear canal due to edema"
+      ],
+      "atypicalPresentations": [
+        "Fever (in severe cases)",
+        "Persistent symptoms despite treatment",
+        "Erythema or swelling extending beyond the ear canal"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by analgesics",
+        "Fever or systemic symptoms",
+        "Signs of mastoiditis (postauricular pain, swelling)",
+        "Neurological symptoms (e.g., facial weakness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of the ear canal",
+        "History taking to identify risk factors"
+      ],
+      "secondLine": [
+        "Ear swab for culture and sensitivity (if discharge is present)"
+      ],
+      "specialistTests": [
+        "CT scan of the temporal bone (if complications are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and examination findings. The presence of ear canal inflammation and discharge is key.",
+      "differentials": [
+        "Acute otitis media",
+        "Chronic otitis media",
+        "Eczema of the ear canal",
+        "Fungal ear infections (otomycosis)",
+        "Foreign body in the ear canal"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical antibiotic drops (e.g., ciprofloxacin/dexamethasone)",
+          "Analgesics for pain relief"
+        ],
+        "secondLine": [
+          "Consider oral antibiotics if there is extensive infection or cellulitis"
+        ],
+        "procedures": [
+          "Ear canal cleaning (aural toilet) to remove debris and discharge"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular cleaning of the ear canal",
+          "Topical corticosteroids to reduce inflammation"
+        ],
+        "secondLine": [
+          "Long-term topical antifungal or antibiotic therapy if recurrent infections occur"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for recurrence and manage any underlying conditions (e.g., eczema)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ciprofloxacin/dexamethasone ear drops",
+          "mechanism": "Ciprofloxacin is a fluoroquinolone antibiotic that inhibits bacterial DNA gyrase; dexamethasone is a corticosteroid that reduces inflammation.",
+          "dosing": "Instill 4 drops into the affected ear twice daily for 7 days.",
+          "sideEffects": "Local irritation, itching, or allergic reactions.",
+          "notes": "Effective for both bacterial infection and inflammation."
+        },
+        {
+          "name": "Oral antibiotics (e.g., amoxicillin-clavulanate)",
+          "mechanism": "Inhibits bacterial cell wall synthesis.",
+          "dosing": "500 mg every 8 hours for 7-10 days, depending on severity.",
+          "sideEffects": "Nausea, diarrhea, allergic reactions.",
+          "notes": "Consider if there is extensive infection or systemic symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Aural toilet (ear cleaning)",
+          "description": "Gentle cleaning of the ear canal to remove debris and discharge, often performed under direct visualization.",
+          "indications": "Severe discharge, obstructed ear canal, or when topical treatments are ineffective due to debris.",
+          "risks": "Potential for trauma to the ear canal, exacerbation of symptoms, or introduction of infection."
+        }
+      ]
+    },
+    "prognosis": "Most cases of otitis externa resolve with appropriate treatment. Chronic cases may require ongoing management and can lead to complications if untreated.",
+    "complications": [
+      "Chronic otitis externa",
+      "Cellulitis of the ear canal",
+      "Mastoiditis",
+      "Osteomyelitis of the skull base (malignant otitis externa in diabetics)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide symptomatic relief, and initiate treatment. They should also educate patients on preventive measures and recognize when to escalate care.",
+    "escalation": "Refer to ENT specialist if there are signs of complications, persistent symptoms despite treatment, or if the patient is immunocompromised.",
+    "keySafetyConsiderations": "Ensure proper technique when administering ear drops to avoid further trauma. Monitor for signs of complications, especially in high-risk patients (e.g., diabetics). Educate patients on avoiding moisture in the ear during recovery."
+  }
+}

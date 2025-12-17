@@ -1,0 +1,138 @@
+{
+  "id": "thyrotoxicosis",
+  "name": "Thyrotoxicosis",
+  "domains": [
+    "Endocrine",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:32:27.439017",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thyrotoxicosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThyrotoxicosis is a clinical syndrome resulting from elevated levels of thyroid hormones (T3 and T4) in the bloodstream, leading to increased metabolic activity.\n\n### Epidemiology\nThyrotoxicosis is more common in women, with a prevalence of 1-2% in the general population. It can occur at any age but is most frequently diagnosed in individuals aged 20-50 years.\n\n### Essential Pathophysiology\nThyrotoxicosis can result from various conditions, including Graves' disease (autoimmune hyperthyroidism), toxic multinodular goiter, and thyroiditis. The excess thyroid hormones increase the basal metabolic rate, affecting multiple organ systems.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weight loss despite increased appetite\n- Heat intolerance\n- Increased sweating\n- Nervousness or anxiety\n- Tremors\n- Palpitations\n- Fatigue\n- Menstrual irregularities\n\n### Key Signs\n- Tachycardia\n- Goiter (enlarged thyroid gland)\n- Exophthalmos (protruding eyes) in Graves' disease\n- Warm, moist skin\n- Fine tremors\n- Hyperreflexia\n\n### Atypical Presentations\n- Elderly patients may present with atypical symptoms such as confusion or depression (apathetic hyperthyroidism).\n- In children, symptoms may include growth acceleration and behavioral changes.\n\n### Red Flags Requiring Immediate Action\n- Severe agitation or confusion\n- Signs of thyroid storm (fever, tachycardia, altered mental status)\n- Severe palpitations or chest pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- TSH (Thyroid Stimulating Hormone) - typically low in thyrotoxicosis\n- Free T4 and Free T3 levels\n\n### Second-line Investigations\n- Thyroid autoantibodies (TSI, TPO)\n- Radioactive iodine uptake test\n\n### Specialist Tests\n- Thyroid ultrasound (to assess nodules)\n- CT scan of the neck (if structural abnormalities are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of thyrotoxicosis is based on clinical symptoms, low TSH, and elevated Free T4 and/or Free T3 levels.\n\n### Key Differential Diagnoses to Exclude\n- Hyperthyroidism (Graves' disease, toxic nodular goiter)\n- Thyroiditis (subacute, postpartum)\n- Exogenous thyroid hormone intake (iatrogenic)\n- Pituitary adenoma (rare)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Beta-blockers (e.g., propranolol) for symptomatic relief of palpitations and tremors\n- Antithyroid medications (e.g., carbimazole)\n\n#### Second-line Treatments\n- Iodine solutions (e.g., Lugol's iodine) for rapid control of symptoms\n\n#### Emergency Procedures\n- Radioactive iodine therapy for definitive treatment in hyperthyroidism\n- Thyroidectomy in cases of large goiter or malignancy\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antithyroid drugs (e.g., carbimazole, propylthiouracil) for long-term management\n\n#### Second-line Treatments\n- Radioactive iodine therapy for patients who do not respond to medications\n\n#### Monitoring Requirements\n- Regular monitoring of thyroid function tests (every 6-12 weeks initially, then every 6-12 months once stable)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Carbimazole\n- **Mechanism of Action**: Inhibits thyroid hormone synthesis by blocking the enzyme thyroid peroxidase.\n- **Typical Dosing Range**: Initially 15-40 mg daily, adjusted based on thyroid function tests.\n- **Key Side Effects/Contraindications**: Rash, agranulocytosis, liver dysfunction.\n- **When to Use vs. Alternatives**: Monitor for signs of infection due to agranulocytosis.\n\n#### Propranolol\n- **Mechanism of Action**: Non-selective beta-adrenergic antagonist that reduces symptoms of hyperthyroidism.\n- **Typical Dosing Range**: 40-160 mg daily, divided doses.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue, bronchospasm.\n- **When to Use vs. Alternatives**: Useful for symptomatic control, especially in thyroid storm.\n\n#### Radioactive iodine (I-131)\n- **Mechanism of Action**: Destroys overactive thyroid tissue through localized radiation.\n- **Typical Dosing Range**: Single oral dose, typically 5-15 mCi.\n- **Key Side Effects/Contraindications**: Hypothyroidism, radiation thyroiditis.\n- **When to Use vs. Alternatives**: Contraindicated in pregnancy and breastfeeding.\n\n### Procedures\n\n#### Thyroidectomy\n- **What it Involves**: Surgical removal of part or all of the thyroid gland.\n- **Indications**: Large goiter causing compressive symptoms, suspicion of malignancy, or failure of medical therapy.\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding structures (e.g., recurrent laryngeal nerve, parathyroid glands).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, most patients achieve good control of symptoms and thyroid hormone levels. Long-term management may be required, especially in cases of Graves' disease.\n\n### Important Complications to Watch For\n- Thyroid storm (acute exacerbation of symptoms)\n- Atrial fibrillation\n- Osteoporosis (due to prolonged hyperthyroidism)\n- Myopathy\n- Psychiatric symptoms (anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of thyrotoxicosis, perform initial investigations, and initiate management. They should also be aware of when to refer to an endocrinologist or surgeon.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for persistent symptoms despite treatment, suspicion of malignancy, or severe thyrotoxicosis requiring hospitalization.\n\n### Key Safety Considerations\nMonitor for signs of agranulocytosis in patients on antithyroid medications, especially during the first few months of treatment. Ensure regular follow-up for thyroid function tests to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Thyrotoxicosis is a clinical syndrome resulting from elevated levels of thyroid hormones (T3 and T4) in the bloodstream, leading to increased metabolic activity.",
+      "epidemiology": "Thyrotoxicosis is more common in women, with a prevalence of 1-2% in the general population. It can occur at any age but is most frequently diagnosed in individuals aged 20-50 years.",
+      "pathophysiology": "Thyrotoxicosis can result from various conditions, including Graves' disease (autoimmune hyperthyroidism), toxic multinodular goiter, and thyroiditis. The excess thyroid hormones increase the basal metabolic rate, affecting multiple organ systems."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weight loss despite increased appetite",
+        "Heat intolerance",
+        "Increased sweating",
+        "Nervousness or anxiety",
+        "Tremors",
+        "Palpitations",
+        "Fatigue",
+        "Menstrual irregularities"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Goiter (enlarged thyroid gland)",
+        "Exophthalmos (protruding eyes) in Graves' disease",
+        "Warm, moist skin",
+        "Fine tremors",
+        "Hyperreflexia"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with atypical symptoms such as confusion or depression (apathetic hyperthyroidism).",
+        "In children, symptoms may include growth acceleration and behavioral changes."
+      ],
+      "redFlags": [
+        "Severe agitation or confusion",
+        "Signs of thyroid storm (fever, tachycardia, altered mental status)",
+        "Severe palpitations or chest pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "TSH (Thyroid Stimulating Hormone) - typically low in thyrotoxicosis",
+        "Free T4 and Free T3 levels"
+      ],
+      "secondLine": [
+        "Thyroid autoantibodies (TSI, TPO)",
+        "Radioactive iodine uptake test"
+      ],
+      "specialistTests": [
+        "Thyroid ultrasound (to assess nodules)",
+        "CT scan of the neck (if structural abnormalities are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of thyrotoxicosis is based on clinical symptoms, low TSH, and elevated Free T4 and/or Free T3 levels.",
+      "differentials": [
+        "Hyperthyroidism (Graves' disease, toxic nodular goiter)",
+        "Thyroiditis (subacute, postpartum)",
+        "Exogenous thyroid hormone intake (iatrogenic)",
+        "Pituitary adenoma (rare)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Beta-blockers (e.g., propranolol) for symptomatic relief of palpitations and tremors",
+          "Antithyroid medications (e.g., carbimazole)"
+        ],
+        "secondLine": [
+          "Iodine solutions (e.g., Lugol's iodine) for rapid control of symptoms"
+        ],
+        "procedures": [
+          "Radioactive iodine therapy for definitive treatment in hyperthyroidism",
+          "Thyroidectomy in cases of large goiter or malignancy"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antithyroid drugs (e.g., carbimazole, propylthiouracil) for long-term management"
+        ],
+        "secondLine": [
+          "Radioactive iodine therapy for patients who do not respond to medications"
+        ],
+        "monitoring": [
+          "Regular monitoring of thyroid function tests (every 6-12 weeks initially, then every 6-12 months once stable)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Carbimazole",
+          "mechanism": "Inhibits thyroid hormone synthesis by blocking the enzyme thyroid peroxidase.",
+          "dosing": "Initially 15-40 mg daily, adjusted based on thyroid function tests.",
+          "sideEffects": "Rash, agranulocytosis, liver dysfunction.",
+          "notes": "Monitor for signs of infection due to agranulocytosis."
+        },
+        {
+          "name": "Propranolol",
+          "mechanism": "Non-selective beta-adrenergic antagonist that reduces symptoms of hyperthyroidism.",
+          "dosing": "40-160 mg daily, divided doses.",
+          "sideEffects": "Bradycardia, hypotension, fatigue, bronchospasm.",
+          "notes": "Useful for symptomatic control, especially in thyroid storm."
+        },
+        {
+          "name": "Radioactive iodine (I-131)",
+          "mechanism": "Destroys overactive thyroid tissue through localized radiation.",
+          "dosing": "Single oral dose, typically 5-15 mCi.",
+          "sideEffects": "Hypothyroidism, radiation thyroiditis.",
+          "notes": "Contraindicated in pregnancy and breastfeeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thyroidectomy",
+          "description": "Surgical removal of part or all of the thyroid gland.",
+          "indications": "Large goiter causing compressive symptoms, suspicion of malignancy, or failure of medical therapy.",
+          "risks": "Bleeding, infection, damage to surrounding structures (e.g., recurrent laryngeal nerve, parathyroid glands)."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, most patients achieve good control of symptoms and thyroid hormone levels. Long-term management may be required, especially in cases of Graves' disease.",
+    "complications": [
+      "Thyroid storm (acute exacerbation of symptoms)",
+      "Atrial fibrillation",
+      "Osteoporosis (due to prolonged hyperthyroidism)",
+      "Myopathy",
+      "Psychiatric symptoms (anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of thyrotoxicosis, perform initial investigations, and initiate management. They should also be aware of when to refer to an endocrinologist or surgeon.",
+    "escalation": "Refer to endocrinology for persistent symptoms despite treatment, suspicion of malignancy, or severe thyrotoxicosis requiring hospitalization.",
+    "keySafetyConsiderations": "Monitor for signs of agranulocytosis in patients on antithyroid medications, especially during the first few months of treatment. Ensure regular follow-up for thyroid function tests to prevent complications."
+  }
+}

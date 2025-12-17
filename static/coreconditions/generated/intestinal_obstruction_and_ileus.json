@@ -1,0 +1,137 @@
+{
+  "id": "intestinal_obstruction_and_ileus",
+  "name": "Intestinal obstruction and ileus",
+  "domains": [
+    "Palliative Care",
+    "Post-operative care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:58:38.730029",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Intestinal obstruction and ileus: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIntestinal obstruction is a blockage that prevents the normal flow of contents through the digestive tract. Ileus refers to a temporary cessation of bowel activity, leading to similar symptoms as obstruction but without a physical blockage.\n\n### Epidemiology\nIntestinal obstruction is a common surgical emergency, with a higher incidence in older adults and post-operative patients. It can occur in all age groups, with specific causes varying by age (e.g., adhesions in adults, intussusception in children).\n\n### Essential Pathophysiology\nObstruction can be mechanical (e.g., adhesions, tumors, hernias) or functional (e.g., ileus). Mechanical obstruction leads to increased intraluminal pressure, bowel distension, and potential ischemia. Ileus is often due to decreased peristalsis, commonly seen post-surgery or in response to medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain\n- Nausea and vomiting\n- Abdominal distension\n- Constipation or obstipation\n- Failure to pass gas\n\n### Key Signs\n- Abdominal tenderness\n- Bowel sounds (high-pitched or absent)\n- Distended abdomen\n- Dehydration signs (dry mucous membranes, tachycardia)\n\n### Atypical Presentations\n- Diarrhea in partial obstruction\n- Minimal abdominal pain in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Signs of peritonitis (rigidity, rebound tenderness)\n- Persistent vomiting\n- Signs of shock (hypotension, altered mental status)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal X-ray (supine and upright)\n- CT abdomen/pelvis with contrast\n\n### Second-line Investigations\n- Ultrasound (especially in children)\n- MRI (if CT is contraindicated)\n\n### Specialist Tests\n- Endoscopy (if suspected obstruction due to a mass)\n- Laparoscopy (for direct visualization and intervention)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and exclusion of other conditions. Key imaging findings include air-fluid levels and dilated bowel loops on X-ray or CT.\n\n### Key Differential Diagnoses to Exclude\n- Bowel perforation\n- Gastroenteritis\n- Diverticulitis\n- Mesenteric ischemia\n- Pancreatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NPO (nothing by mouth)\n- IV fluids (hydration and electrolyte balance)\n- Nasogastric tube decompression\n\n#### Second-line Treatments\n- Surgical intervention (if no improvement or signs of strangulation)\n\n#### Emergency Procedures\n- Laparotomy or laparoscopy for obstruction release or resection\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (high fiber, hydration)\n- Medications to stimulate bowel motility (e.g., metoclopramide)\n\n#### Second-line Treatments\n- Surgical intervention for recurrent obstructions\n\n#### Monitoring Requirements\n- Regular abdominal examinations\n- Monitoring for signs of dehydration or electrolyte imbalance\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metoclopramide\n- **Mechanism of Action**: Dopamine receptor antagonist that increases gastrointestinal motility.\n- **Typical Dosing Range**: 10 mg IV/PO every 6-8 hours as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, fatigue, restlessness, extrapyramidal symptoms.\n- **When to Use vs. Alternatives**: Use cautiously in patients with Parkinson's disease.\n\n#### Lactulose\n- **Mechanism of Action**: Osmotic laxative that draws water into the bowel.\n- **Typical Dosing Range**: 15-30 mL PO once daily, can be increased as needed.\n- **Key Side Effects/Contraindications**: Bloating, diarrhea, abdominal cramps.\n- **When to Use vs. Alternatives**: Useful in chronic constipation management.\n\n### Procedures\n\n#### Laparotomy\n- **What it Involves**: Surgical opening of the abdominal cavity to access the intestines.\n- **Indications**: Severe obstruction, suspected strangulation, or perforation.\n- **Key Risks/Complications**: Infection, bleeding, bowel injury, adhesions.\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgery using small incisions and a camera.\n- **Indications**: Diagnostic and therapeutic for certain obstructions.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the cause and timeliness of intervention. Early diagnosis and management lead to better outcomes. Complications can arise from delayed treatment.\n\n### Important Complications to Watch For\n- Bowel ischemia or necrosis\n- Perforation\n- Sepsis\n- Electrolyte imbalances\n- Adhesive bowel obstruction post-surgery\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, initiate investigations, and manage supportive care. They should communicate findings to senior staff and assist in planning further management.\n\n### When to Escalate to Senior/Specialist\nEscalate to surgical team if there are signs of perforation, strangulation, or if the patient does not improve with conservative management.\n\n### Key Safety Considerations\nMonitor for signs of deterioration, ensure timely imaging, and maintain fluid balance. Be vigilant for signs of sepsis or shock, especially in post-operative patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Intestinal obstruction is a blockage that prevents the normal flow of contents through the digestive tract. Ileus refers to a temporary cessation of bowel activity, leading to similar symptoms as obstruction but without a physical blockage.",
+      "epidemiology": "Intestinal obstruction is a common surgical emergency, with a higher incidence in older adults and post-operative patients. It can occur in all age groups, with specific causes varying by age (e.g., adhesions in adults, intussusception in children).",
+      "pathophysiology": "Obstruction can be mechanical (e.g., adhesions, tumors, hernias) or functional (e.g., ileus). Mechanical obstruction leads to increased intraluminal pressure, bowel distension, and potential ischemia. Ileus is often due to decreased peristalsis, commonly seen post-surgery or in response to medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain",
+        "Nausea and vomiting",
+        "Abdominal distension",
+        "Constipation or obstipation",
+        "Failure to pass gas"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Bowel sounds (high-pitched or absent)",
+        "Distended abdomen",
+        "Dehydration signs (dry mucous membranes, tachycardia)"
+      ],
+      "atypicalPresentations": [
+        "Diarrhea in partial obstruction",
+        "Minimal abdominal pain in elderly patients"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Signs of peritonitis (rigidity, rebound tenderness)",
+        "Persistent vomiting",
+        "Signs of shock (hypotension, altered mental status)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal X-ray (supine and upright)",
+        "CT abdomen/pelvis with contrast"
+      ],
+      "secondLine": [
+        "Ultrasound (especially in children)",
+        "MRI (if CT is contraindicated)"
+      ],
+      "specialistTests": [
+        "Endoscopy (if suspected obstruction due to a mass)",
+        "Laparoscopy (for direct visualization and intervention)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and exclusion of other conditions. Key imaging findings include air-fluid levels and dilated bowel loops on X-ray or CT.",
+      "differentials": [
+        "Bowel perforation",
+        "Gastroenteritis",
+        "Diverticulitis",
+        "Mesenteric ischemia",
+        "Pancreatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NPO (nothing by mouth)",
+          "IV fluids (hydration and electrolyte balance)",
+          "Nasogastric tube decompression"
+        ],
+        "secondLine": [
+          "Surgical intervention (if no improvement or signs of strangulation)"
+        ],
+        "procedures": [
+          "Laparotomy or laparoscopy for obstruction release or resection"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (high fiber, hydration)",
+          "Medications to stimulate bowel motility (e.g., metoclopramide)"
+        ],
+        "secondLine": [
+          "Surgical intervention for recurrent obstructions"
+        ],
+        "monitoring": [
+          "Regular abdominal examinations",
+          "Monitoring for signs of dehydration or electrolyte imbalance"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metoclopramide",
+          "mechanism": "Dopamine receptor antagonist that increases gastrointestinal motility.",
+          "dosing": "10 mg IV/PO every 6-8 hours as needed.",
+          "sideEffects": "Drowsiness, fatigue, restlessness, extrapyramidal symptoms.",
+          "notes": "Use cautiously in patients with Parkinson's disease."
+        },
+        {
+          "name": "Lactulose",
+          "mechanism": "Osmotic laxative that draws water into the bowel.",
+          "dosing": "15-30 mL PO once daily, can be increased as needed.",
+          "sideEffects": "Bloating, diarrhea, abdominal cramps.",
+          "notes": "Useful in chronic constipation management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparotomy",
+          "description": "Surgical opening of the abdominal cavity to access the intestines.",
+          "indications": "Severe obstruction, suspected strangulation, or perforation.",
+          "risks": "Infection, bleeding, bowel injury, adhesions."
+        },
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgery using small incisions and a camera.",
+          "indications": "Diagnostic and therapeutic for certain obstructions.",
+          "risks": "Infection, bleeding, injury to surrounding organs."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the cause and timeliness of intervention. Early diagnosis and management lead to better outcomes. Complications can arise from delayed treatment.",
+    "complications": [
+      "Bowel ischemia or necrosis",
+      "Perforation",
+      "Sepsis",
+      "Electrolyte imbalances",
+      "Adhesive bowel obstruction post-surgery"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, initiate investigations, and manage supportive care. They should communicate findings to senior staff and assist in planning further management.",
+    "escalation": "Escalate to surgical team if there are signs of perforation, strangulation, or if the patient does not improve with conservative management.",
+    "keySafetyConsiderations": "Monitor for signs of deterioration, ensure timely imaging, and maintain fluid balance. Be vigilant for signs of sepsis or shock, especially in post-operative patients."
+  }
+}

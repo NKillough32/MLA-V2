@@ -1,0 +1,138 @@
+{
+  "id": "retinal_detachment",
+  "name": "Retinal detachment",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:42:13.491330",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Retinal detachment: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRetinal detachment is a medical emergency characterized by the separation of the retina from the underlying retinal pigment epithelium, leading to potential vision loss.\n\n### Epidemiology\nRetinal detachment occurs in approximately 1 in 10,000 people per year, with higher incidence in individuals over 50 years of age, those with myopia, and after cataract surgery.\n\n### Essential Pathophysiology\nRetinal detachment can occur due to three main mechanisms: rhegmatogenous (due to a tear or break in the retina), tractional (due to pulling on the retina from fibrous tissue), and exudative (due to fluid accumulation beneath the retina without a tear).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of flashes of light (photopsia)\n- Floaters (spots or cobwebs in vision)\n- A shadow or curtain effect over part of the visual field\n- Sudden vision loss\n\n### Key Signs\n- Visual field defects\n- Relative afferent pupillary defect (RAPD) in affected eye\n- Fundoscopic examination may reveal a retinal tear or detachment\n\n### Atypical Presentations\n- Visual disturbances without acute symptoms\n- Gradual vision loss over days to weeks\n\n### Red Flags Requiring Immediate Action\n- Sudden vision loss\n- Flashes and floaters in a patient with high myopia\n- History of eye trauma or recent eye surgery\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fundoscopy (direct or indirect) to visualize the retina\n- Visual acuity assessment\n\n### Second-line Investigations\n- Ultrasound B-scan if the view of the retina is obscured (e.g., cataract, vitreous hemorrhage)\n- Optical coherence tomography (OCT) for detailed imaging\n\n### Specialist Tests\n- Fluorescein angiography to assess retinal blood flow and identify tears\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical based on history and examination findings, supported by imaging if necessary.\n\n### Key Differential Diagnoses to Exclude\n- Vitreous hemorrhage\n- Retinal vein occlusion\n- Central retinal artery occlusion\n- Migraine aura\n- Ocular ischemic syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to ophthalmology for surgical intervention\n- Positioning the patient to prevent further detachment (e.g., lying flat)\n\n#### Second-line Treatments\n- Laser photocoagulation or cryotherapy to seal retinal tears\n- Pneumatic retinopexy for certain types of detachment\n\n#### Emergency Procedures\n- Scleral buckle surgery to reattach the retina\n- Vitrectomy to remove vitreous gel and relieve traction\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with ophthalmology to monitor for recurrence\n- Patient education on recognizing symptoms of recurrence\n\n#### Second-line Treatments\n- Consideration of further surgical options if detachment recurs\n\n#### Monitoring Requirements\n- Visual acuity assessments at follow-up visits\n- Monitoring for complications such as cataract or glaucoma post-surgery\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Topical anesthetics (e.g., proparacaine)\n- **Mechanism of Action**: Provides local anesthesia for examination or procedures\n- **Typical Dosing Range**: 1-2 drops in the affected eye before examination\n- **Key Side Effects/Contraindications**: Transient stinging, redness, allergic reactions\n- **When to Use vs. Alternatives**: Use with caution in patients with known allergies.\n\n#### NSAIDs (e.g., ketorolac)\n- **Mechanism of Action**: Reduces inflammation and pain post-operatively\n- **Typical Dosing Range**: 1 drop in the affected eye 4 times daily for 1-2 weeks post-surgery\n- **Key Side Effects/Contraindications**: Corneal toxicity, burning sensation\n- **When to Use vs. Alternatives**: Monitor for signs of corneal epithelial defects.\n\n#### Antibiotics (e.g., moxifloxacin)\n- **Mechanism of Action**: Prevents infection post-operatively\n- **Typical Dosing Range**: 1 drop in the affected eye 3 times daily for 1 week post-surgery\n- **Key Side Effects/Contraindications**: Allergic reactions, irritation\n- **When to Use vs. Alternatives**: Ensure proper aseptic technique during administration.\n\n### Procedures\n\n#### Scleral buckle surgery\n- **What it Involves**: A silicone band is placed around the eye to indent the sclera and relieve traction on the retina.\n- **Indications**: Rhegmatogenous retinal detachment with identifiable tears.\n- **Key Risks/Complications**: Infection, bleeding, retinal re-detachment, vision changes.\n\n#### Vitrectomy\n- **What it Involves**: Surgical removal of the vitreous gel to relieve traction on the retina and allow for reattachment.\n- **Indications**: Tractional retinal detachment or when the retina cannot be reattached with buckle alone.\n- **Key Risks/Complications**: Infection, bleeding, cataract formation, retinal re-detachment.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for retinal detachment depends on the duration of the detachment and the promptness of treatment. Early intervention can lead to good visual outcomes, while delayed treatment may result in permanent vision loss.\n\n### Important Complications to Watch For\n- Re-detachment of the retina\n- Cataract formation post-surgery\n- Glaucoma\n- Persistent visual field defects\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize the signs and symptoms of retinal detachment, perform initial assessments, and ensure timely referral to ophthalmology. They should also educate patients on the importance of reporting any new visual symptoms post-surgery.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to ophthalmology is required for any patient suspected of having a retinal detachment. If the patient presents with sudden vision loss and red flags, escalate care urgently.\n\n### Key Safety Considerations\nEnsure proper patient positioning to prevent further detachment, monitor for signs of infection post-operatively, and educate patients on recognizing symptoms of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Retinal detachment is a medical emergency characterized by the separation of the retina from the underlying retinal pigment epithelium, leading to potential vision loss.",
+      "epidemiology": "Retinal detachment occurs in approximately 1 in 10,000 people per year, with higher incidence in individuals over 50 years of age, those with myopia, and after cataract surgery.",
+      "pathophysiology": "Retinal detachment can occur due to three main mechanisms: rhegmatogenous (due to a tear or break in the retina), tractional (due to pulling on the retina from fibrous tissue), and exudative (due to fluid accumulation beneath the retina without a tear)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of flashes of light (photopsia)",
+        "Floaters (spots or cobwebs in vision)",
+        "A shadow or curtain effect over part of the visual field",
+        "Sudden vision loss"
+      ],
+      "signs": [
+        "Visual field defects",
+        "Relative afferent pupillary defect (RAPD) in affected eye",
+        "Fundoscopic examination may reveal a retinal tear or detachment"
+      ],
+      "atypicalPresentations": [
+        "Visual disturbances without acute symptoms",
+        "Gradual vision loss over days to weeks"
+      ],
+      "redFlags": [
+        "Sudden vision loss",
+        "Flashes and floaters in a patient with high myopia",
+        "History of eye trauma or recent eye surgery"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fundoscopy (direct or indirect) to visualize the retina",
+        "Visual acuity assessment"
+      ],
+      "secondLine": [
+        "Ultrasound B-scan if the view of the retina is obscured (e.g., cataract, vitreous hemorrhage)",
+        "Optical coherence tomography (OCT) for detailed imaging"
+      ],
+      "specialistTests": [
+        "Fluorescein angiography to assess retinal blood flow and identify tears"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical based on history and examination findings, supported by imaging if necessary.",
+      "differentials": [
+        "Vitreous hemorrhage",
+        "Retinal vein occlusion",
+        "Central retinal artery occlusion",
+        "Migraine aura",
+        "Ocular ischemic syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to ophthalmology for surgical intervention",
+          "Positioning the patient to prevent further detachment (e.g., lying flat)"
+        ],
+        "secondLine": [
+          "Laser photocoagulation or cryotherapy to seal retinal tears",
+          "Pneumatic retinopexy for certain types of detachment"
+        ],
+        "procedures": [
+          "Scleral buckle surgery to reattach the retina",
+          "Vitrectomy to remove vitreous gel and relieve traction"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with ophthalmology to monitor for recurrence",
+          "Patient education on recognizing symptoms of recurrence"
+        ],
+        "secondLine": [
+          "Consideration of further surgical options if detachment recurs"
+        ],
+        "monitoring": [
+          "Visual acuity assessments at follow-up visits",
+          "Monitoring for complications such as cataract or glaucoma post-surgery"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Topical anesthetics (e.g., proparacaine)",
+          "mechanism": "Provides local anesthesia for examination or procedures",
+          "dosing": "1-2 drops in the affected eye before examination",
+          "sideEffects": "Transient stinging, redness, allergic reactions",
+          "notes": "Use with caution in patients with known allergies."
+        },
+        {
+          "name": "NSAIDs (e.g., ketorolac)",
+          "mechanism": "Reduces inflammation and pain post-operatively",
+          "dosing": "1 drop in the affected eye 4 times daily for 1-2 weeks post-surgery",
+          "sideEffects": "Corneal toxicity, burning sensation",
+          "notes": "Monitor for signs of corneal epithelial defects."
+        },
+        {
+          "name": "Antibiotics (e.g., moxifloxacin)",
+          "mechanism": "Prevents infection post-operatively",
+          "dosing": "1 drop in the affected eye 3 times daily for 1 week post-surgery",
+          "sideEffects": "Allergic reactions, irritation",
+          "notes": "Ensure proper aseptic technique during administration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Scleral buckle surgery",
+          "description": "A silicone band is placed around the eye to indent the sclera and relieve traction on the retina.",
+          "indications": "Rhegmatogenous retinal detachment with identifiable tears.",
+          "risks": "Infection, bleeding, retinal re-detachment, vision changes."
+        },
+        {
+          "name": "Vitrectomy",
+          "description": "Surgical removal of the vitreous gel to relieve traction on the retina and allow for reattachment.",
+          "indications": "Tractional retinal detachment or when the retina cannot be reattached with buckle alone.",
+          "risks": "Infection, bleeding, cataract formation, retinal re-detachment."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for retinal detachment depends on the duration of the detachment and the promptness of treatment. Early intervention can lead to good visual outcomes, while delayed treatment may result in permanent vision loss.",
+    "complications": [
+      "Re-detachment of the retina",
+      "Cataract formation post-surgery",
+      "Glaucoma",
+      "Persistent visual field defects"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize the signs and symptoms of retinal detachment, perform initial assessments, and ensure timely referral to ophthalmology. They should also educate patients on the importance of reporting any new visual symptoms post-surgery.",
+    "escalation": "Immediate referral to ophthalmology is required for any patient suspected of having a retinal detachment. If the patient presents with sudden vision loss and red flags, escalate care urgently.",
+    "keySafetyConsiderations": "Ensure proper patient positioning to prevent further detachment, monitor for signs of infection post-operatively, and educate patients on recognizing symptoms of complications."
+  }
+}

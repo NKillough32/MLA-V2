@@ -1,0 +1,151 @@
+{
+  "id": "vasculitis",
+  "name": "Vasculitis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:33:27.299155",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vasculitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVasculitis is a group of disorders characterized by inflammation of blood vessels, which can lead to vessel damage, organ ischemia, and a variety of systemic symptoms.\n\n### Epidemiology\nVasculitis can affect individuals of any age, but certain types are more common in specific demographics. For example, Granulomatosis with polyangiitis (Wegener's) is more common in middle-aged adults, while Kawasaki disease primarily affects children.\n\n### Essential Pathophysiology\nThe pathophysiology of vasculitis involves immune-mediated inflammation of blood vessel walls, leading to necrosis and damage. This can result from autoimmune processes, infections, or drug reactions, causing a range of clinical manifestations depending on the vessels involved.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Fatigue\n- Weight loss\n- Myalgias\n- Arthralgias\n- Skin rashes\n- Nasal symptoms (e.g., epistaxis)\n- Neurological symptoms (e.g., headaches, seizures)\n\n### Key Signs\n- Skin lesions (e.g., purpura, ulcers)\n- Arthritis or arthralgia\n- Hypertension\n- Organ dysfunction (e.g., renal impairment, respiratory symptoms)\n- Neurological deficits\n\n### Atypical Presentations\n- Isolated renal failure\n- Pulmonary hemorrhage\n- Mononeuritis multiplex\n- Gastrointestinal symptoms (e.g., abdominal pain, bleeding)\n\n### Red Flags Requiring Immediate Action\n- Rapidly progressive renal failure\n- Severe headache with neurological signs\n- Acute respiratory distress\n- Severe abdominal pain with gastrointestinal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Urinalysis\n- Liver function tests (LFTs)\n\n### Second-line Investigations\n- Antineutrophil cytoplasmic antibodies (ANCA)\n- Antinuclear antibodies (ANA)\n- Complement levels (C3, C4)\n- Imaging studies (e.g., CT angiography)\n\n### Specialist Tests\n- Biopsy of affected tissue (e.g., skin, kidney)\n- Lumbar puncture if neurological symptoms present\n- Vascular imaging (e.g., MRI, PET scan)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of vasculitis is based on clinical presentation, laboratory findings, and often tissue biopsy. The presence of systemic symptoms, organ involvement, and specific autoantibodies supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Infections (e.g., endocarditis, vasculitis mimics)\n- Malignancies (e.g., lymphoma)\n- Connective tissue diseases (e.g., lupus, rheumatoid arthritis)\n- Drug-induced vasculitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., prednisone)\n- Supportive care (hydration, pain management)\n\n#### Second-line Treatments\n- Immunosuppressive agents (e.g., cyclophosphamide, azathioprine)\n\n#### Emergency Procedures\n- Plasmapheresis for severe cases (e.g., ANCA-associated vasculitis)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term immunosuppressive therapy (e.g., methotrexate, mycophenolate mofetil)\n- Regular monitoring of organ function\n\n#### Second-line Treatments\n- Biologic agents (e.g., rituximab) for refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and medication side effects\n- Routine blood tests (CBC, renal function, liver function)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial: 1 mg/kg/day; taper based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hyperglycemia, osteoporosis, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially with long-term use.\n\n#### Cyclophosphamide\n- **Mechanism of Action**: Alkylating agent that suppresses immune response.\n- **Typical Dosing Range**: IV: 0.5-1 g/m2 every 1-3 months; oral: 2-3 mg/kg/day.\n- **Key Side Effects/Contraindications**: Nausea, bone marrow suppression, bladder toxicity.\n- **When to Use vs. Alternatives**: Hydration and mesna may be needed to prevent bladder toxicity.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B cells, depleting them.\n- **Typical Dosing Range**: 1 g IV on days 1 and 15; repeat every 6 months as needed.\n- **Key Side Effects/Contraindications**: Infusion reactions, infections, hypogammaglobulinemia.\n- **When to Use vs. Alternatives**: Pre-medicate with antihistamines and corticosteroids.\n\n### Procedures\n\n#### Tissue biopsy\n- **What it Involves**: Obtaining a sample of affected tissue to confirm diagnosis.\n- **Indications**: Suspected vasculitis with organ involvement (e.g., skin, kidney).\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n#### Plasmapheresis\n- **What it Involves**: A procedure to remove antibodies from the blood.\n- **Indications**: Severe cases of vasculitis, especially with renal involvement.\n- **Key Risks/Complications**: Hypotension, infection, allergic reactions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of vasculitis varies widely depending on the type and severity of the disease. Early diagnosis and treatment can improve outcomes significantly. Some forms can lead to chronic organ damage or be life-threatening if untreated.\n\n### Important Complications to Watch For\n- Chronic kidney disease\n- Pulmonary fibrosis\n- Neurological deficits\n- Increased risk of infections due to immunosuppression\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of vasculitis, performing initial investigations, and managing acute presentations. They should also ensure timely referrals to specialists for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms or complications of vasculitis, such as renal failure or respiratory distress, immediate escalation to a senior clinician or rheumatologist is essential.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess renal function and blood counts in patients receiving long-term treatment.\n",
+  "content": {
+    "overview": {
+      "definition": "Vasculitis is a group of disorders characterized by inflammation of blood vessels, which can lead to vessel damage, organ ischemia, and a variety of systemic symptoms.",
+      "epidemiology": "Vasculitis can affect individuals of any age, but certain types are more common in specific demographics. For example, Granulomatosis with polyangiitis (Wegener's) is more common in middle-aged adults, while Kawasaki disease primarily affects children.",
+      "pathophysiology": "The pathophysiology of vasculitis involves immune-mediated inflammation of blood vessel walls, leading to necrosis and damage. This can result from autoimmune processes, infections, or drug reactions, causing a range of clinical manifestations depending on the vessels involved."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Fatigue",
+        "Weight loss",
+        "Myalgias",
+        "Arthralgias",
+        "Skin rashes",
+        "Nasal symptoms (e.g., epistaxis)",
+        "Neurological symptoms (e.g., headaches, seizures)"
+      ],
+      "signs": [
+        "Skin lesions (e.g., purpura, ulcers)",
+        "Arthritis or arthralgia",
+        "Hypertension",
+        "Organ dysfunction (e.g., renal impairment, respiratory symptoms)",
+        "Neurological deficits"
+      ],
+      "atypicalPresentations": [
+        "Isolated renal failure",
+        "Pulmonary hemorrhage",
+        "Mononeuritis multiplex",
+        "Gastrointestinal symptoms (e.g., abdominal pain, bleeding)"
+      ],
+      "redFlags": [
+        "Rapidly progressive renal failure",
+        "Severe headache with neurological signs",
+        "Acute respiratory distress",
+        "Severe abdominal pain with gastrointestinal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Urinalysis",
+        "Liver function tests (LFTs)"
+      ],
+      "secondLine": [
+        "Antineutrophil cytoplasmic antibodies (ANCA)",
+        "Antinuclear antibodies (ANA)",
+        "Complement levels (C3, C4)",
+        "Imaging studies (e.g., CT angiography)"
+      ],
+      "specialistTests": [
+        "Biopsy of affected tissue (e.g., skin, kidney)",
+        "Lumbar puncture if neurological symptoms present",
+        "Vascular imaging (e.g., MRI, PET scan)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of vasculitis is based on clinical presentation, laboratory findings, and often tissue biopsy. The presence of systemic symptoms, organ involvement, and specific autoantibodies supports the diagnosis.",
+      "differentials": [
+        "Infections (e.g., endocarditis, vasculitis mimics)",
+        "Malignancies (e.g., lymphoma)",
+        "Connective tissue diseases (e.g., lupus, rheumatoid arthritis)",
+        "Drug-induced vasculitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., prednisone)",
+          "Supportive care (hydration, pain management)"
+        ],
+        "secondLine": [
+          "Immunosuppressive agents (e.g., cyclophosphamide, azathioprine)"
+        ],
+        "procedures": [
+          "Plasmapheresis for severe cases (e.g., ANCA-associated vasculitis)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term immunosuppressive therapy (e.g., methotrexate, mycophenolate mofetil)",
+          "Regular monitoring of organ function"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., rituximab) for refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and medication side effects",
+          "Routine blood tests (CBC, renal function, liver function)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and immune response.",
+          "dosing": "Initial: 1 mg/kg/day; taper based on response.",
+          "sideEffects": "Weight gain, hyperglycemia, osteoporosis, increased infection risk.",
+          "notes": "Monitor for side effects, especially with long-term use."
+        },
+        {
+          "name": "Cyclophosphamide",
+          "mechanism": "Alkylating agent that suppresses immune response.",
+          "dosing": "IV: 0.5-1 g/m2 every 1-3 months; oral: 2-3 mg/kg/day.",
+          "sideEffects": "Nausea, bone marrow suppression, bladder toxicity.",
+          "notes": "Hydration and mesna may be needed to prevent bladder toxicity."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B cells, depleting them.",
+          "dosing": "1 g IV on days 1 and 15; repeat every 6 months as needed.",
+          "sideEffects": "Infusion reactions, infections, hypogammaglobulinemia.",
+          "notes": "Pre-medicate with antihistamines and corticosteroids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tissue biopsy",
+          "description": "Obtaining a sample of affected tissue to confirm diagnosis.",
+          "indications": "Suspected vasculitis with organ involvement (e.g., skin, kidney).",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        },
+        {
+          "name": "Plasmapheresis",
+          "description": "A procedure to remove antibodies from the blood.",
+          "indications": "Severe cases of vasculitis, especially with renal involvement.",
+          "risks": "Hypotension, infection, allergic reactions."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of vasculitis varies widely depending on the type and severity of the disease. Early diagnosis and treatment can improve outcomes significantly. Some forms can lead to chronic organ damage or be life-threatening if untreated.",
+    "complications": [
+      "Chronic kidney disease",
+      "Pulmonary fibrosis",
+      "Neurological deficits",
+      "Increased risk of infections due to immunosuppression"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of vasculitis, performing initial investigations, and managing acute presentations. They should also ensure timely referrals to specialists for further evaluation and treatment.",
+    "escalation": "If a patient presents with severe symptoms or complications of vasculitis, such as renal failure or respiratory distress, immediate escalation to a senior clinician or rheumatologist is essential.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess renal function and blood counts in patients receiving long-term treatment."
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "idiopathic_pulmonary_fibrosis",
+  "name": "Idiopathic pulmonary fibrosis",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:25:58.955207",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Idiopathic pulmonary fibrosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIdiopathic pulmonary fibrosis (IPF) is a chronic, progressive lung disease characterized by the accumulation of fibrous tissue in the lungs, leading to a decline in lung function and respiratory failure. The term 'idiopathic' indicates that the cause of the fibrosis is unknown.\n\n### Epidemiology\nIPF primarily affects older adults, with a peak incidence between the ages of 60 and 70. It is more common in men than women, with a prevalence of approximately 13-20 cases per 100,000 people in the general population.\n\n### Essential Pathophysiology\nThe pathophysiology of IPF involves repeated injury to the alveolar epithelium, leading to aberrant wound healing and excessive deposition of extracellular matrix components, particularly collagen. This results in the formation of scar tissue (fibrosis) that impairs gas exchange and lung compliance.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive dyspnea (shortness of breath) on exertion\n- Chronic dry cough\n- Fatigue\n- Weight loss\n- Clubbing of fingers and toes\n\n### Key Signs\n- Inspiratory crackles (velcro-like rales) on auscultation\n- Digital clubbing\n- Cyanosis in advanced disease\n\n### Atypical Presentations\n- Acute exacerbations of dyspnea\n- Symptoms mimicking other respiratory conditions (e.g., asthma, COPD)\n\n### Red Flags Requiring Immediate Action\n- Rapidly progressive symptoms\n- Severe hypoxemia\n- History of environmental or occupational exposures (e.g., asbestos, silica)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- High-resolution computed tomography (HRCT) scan of the chest\n- Pulmonary function tests (PFTs)\n\n### Second-line Investigations\n- Serum biomarkers (e.g., KL-6, SP-D)\n- Bronchoscopy with bronchoalveolar lavage (BAL)\n\n### Specialist Tests\n- Lung biopsy (surgical or transbronchial) if diagnosis is uncertain\n- Genetic testing for familial cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of IPF is based on clinical, radiological, and histopathological criteria, including a compatible clinical history, HRCT findings of reticular opacities and honeycombing, and exclusion of other interstitial lung diseases.\n\n### Key Differential Diagnoses to Exclude\n- Other interstitial lung diseases (e.g., sarcoidosis, hypersensitivity pneumonitis)\n- Chronic obstructive pulmonary disease (COPD)\n- Pulmonary hypertension\n- Lung cancer\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy for hypoxemia\n- Supportive care (e.g., corticosteroids for acute exacerbations)\n\n#### Second-line Treatments\n- Consideration of mechanical ventilation in severe cases\n\n#### Emergency Procedures\n- Intubation and mechanical ventilation in acute respiratory failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antifibrotic agents (e.g., pirfenidone, nintedanib)\n- Pulmonary rehabilitation\n\n#### Second-line Treatments\n- Long-term oxygen therapy for patients with chronic hypoxemia\n- Lung transplantation in eligible patients\n\n#### Monitoring Requirements\n- Regular follow-up with pulmonary function tests and HRCT scans to assess disease progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pirfenidone\n- **Mechanism of Action**: Antifibrotic agent that inhibits fibroblast proliferation and reduces collagen synthesis.\n- **Typical Dosing Range**: Starting dose of 267 mg three times daily, increasing to 801 mg three times daily after 14 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, fatigue, rash, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly.\n\n#### Nintedanib\n- **Mechanism of Action**: Tyrosine kinase inhibitor that targets multiple pathways involved in fibrosis.\n- **Typical Dosing Range**: 150 mg twice daily, with food.\n- **Key Side Effects/Contraindications**: Diarrhea, nausea, vomiting, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Monitor liver function tests and manage diarrhea proactively.\n\n### Procedures\n\n#### Lung biopsy\n- **What it Involves**: Surgical or transbronchial biopsy to obtain lung tissue for histopathological examination.\n- **Indications**: Indicated when the diagnosis of IPF is uncertain after non-invasive investigations.\n- **Key Risks/Complications**: Bleeding, pneumothorax, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of IPF is generally poor, with a median survival of 3-5 years after diagnosis. Disease progression can be variable, with some patients experiencing rapid decline and others more stable courses.\n\n### Important Complications to Watch For\n- Acute exacerbations leading to respiratory failure\n- Pulmonary hypertension\n- Cor pulmonale\n- Increased risk of lung cancer\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of IPF, conducting initial assessments, and coordinating investigations. They should also provide supportive care and education to patients regarding disease management and lifestyle modifications.\n\n### When to Escalate to Senior/Specialist\nPatients with rapidly worsening symptoms, significant hypoxemia, or acute exacerbations should be escalated to a senior clinician or respiratory specialist for further management.\n\n### Key Safety Considerations\nMonitor patients for signs of acute exacerbation, ensure appropriate oxygen therapy is provided, and be vigilant for potential side effects of antifibrotic medications.\n",
+  "content": {
+    "overview": {
+      "definition": "Idiopathic pulmonary fibrosis (IPF) is a chronic, progressive lung disease characterized by the accumulation of fibrous tissue in the lungs, leading to a decline in lung function and respiratory failure. The term 'idiopathic' indicates that the cause of the fibrosis is unknown.",
+      "epidemiology": "IPF primarily affects older adults, with a peak incidence between the ages of 60 and 70. It is more common in men than women, with a prevalence of approximately 13-20 cases per 100,000 people in the general population.",
+      "pathophysiology": "The pathophysiology of IPF involves repeated injury to the alveolar epithelium, leading to aberrant wound healing and excessive deposition of extracellular matrix components, particularly collagen. This results in the formation of scar tissue (fibrosis) that impairs gas exchange and lung compliance."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive dyspnea (shortness of breath) on exertion",
+        "Chronic dry cough",
+        "Fatigue",
+        "Weight loss",
+        "Clubbing of fingers and toes"
+      ],
+      "signs": [
+        "Inspiratory crackles (velcro-like rales) on auscultation",
+        "Digital clubbing",
+        "Cyanosis in advanced disease"
+      ],
+      "atypicalPresentations": [
+        "Acute exacerbations of dyspnea",
+        "Symptoms mimicking other respiratory conditions (e.g., asthma, COPD)"
+      ],
+      "redFlags": [
+        "Rapidly progressive symptoms",
+        "Severe hypoxemia",
+        "History of environmental or occupational exposures (e.g., asbestos, silica)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "High-resolution computed tomography (HRCT) scan of the chest",
+        "Pulmonary function tests (PFTs)"
+      ],
+      "secondLine": [
+        "Serum biomarkers (e.g., KL-6, SP-D)",
+        "Bronchoscopy with bronchoalveolar lavage (BAL)"
+      ],
+      "specialistTests": [
+        "Lung biopsy (surgical or transbronchial) if diagnosis is uncertain",
+        "Genetic testing for familial cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of IPF is based on clinical, radiological, and histopathological criteria, including a compatible clinical history, HRCT findings of reticular opacities and honeycombing, and exclusion of other interstitial lung diseases.",
+      "differentials": [
+        "Other interstitial lung diseases (e.g., sarcoidosis, hypersensitivity pneumonitis)",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Pulmonary hypertension",
+        "Lung cancer"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy for hypoxemia",
+          "Supportive care (e.g., corticosteroids for acute exacerbations)"
+        ],
+        "secondLine": [
+          "Consideration of mechanical ventilation in severe cases"
+        ],
+        "procedures": [
+          "Intubation and mechanical ventilation in acute respiratory failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antifibrotic agents (e.g., pirfenidone, nintedanib)",
+          "Pulmonary rehabilitation"
+        ],
+        "secondLine": [
+          "Long-term oxygen therapy for patients with chronic hypoxemia",
+          "Lung transplantation in eligible patients"
+        ],
+        "monitoring": [
+          "Regular follow-up with pulmonary function tests and HRCT scans to assess disease progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pirfenidone",
+          "mechanism": "Antifibrotic agent that inhibits fibroblast proliferation and reduces collagen synthesis.",
+          "dosing": "Starting dose of 267 mg three times daily, increasing to 801 mg three times daily after 14 days.",
+          "sideEffects": "Nausea, diarrhea, fatigue, rash, liver enzyme elevation.",
+          "notes": "Monitor liver function tests regularly."
+        },
+        {
+          "name": "Nintedanib",
+          "mechanism": "Tyrosine kinase inhibitor that targets multiple pathways involved in fibrosis.",
+          "dosing": "150 mg twice daily, with food.",
+          "sideEffects": "Diarrhea, nausea, vomiting, liver enzyme elevation.",
+          "notes": "Monitor liver function tests and manage diarrhea proactively."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lung biopsy",
+          "description": "Surgical or transbronchial biopsy to obtain lung tissue for histopathological examination.",
+          "indications": "Indicated when the diagnosis of IPF is uncertain after non-invasive investigations.",
+          "risks": "Bleeding, pneumothorax, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of IPF is generally poor, with a median survival of 3-5 years after diagnosis. Disease progression can be variable, with some patients experiencing rapid decline and others more stable courses.",
+    "complications": [
+      "Acute exacerbations leading to respiratory failure",
+      "Pulmonary hypertension",
+      "Cor pulmonale",
+      "Increased risk of lung cancer"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of IPF, conducting initial assessments, and coordinating investigations. They should also provide supportive care and education to patients regarding disease management and lifestyle modifications.",
+    "escalation": "Patients with rapidly worsening symptoms, significant hypoxemia, or acute exacerbations should be escalated to a senior clinician or respiratory specialist for further management.",
+    "keySafetyConsiderations": "Monitor patients for signs of acute exacerbation, ensure appropriate oxygen therapy is provided, and be vigilant for potential side effects of antifibrotic medications."
+  }
+}

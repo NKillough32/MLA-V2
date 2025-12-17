@@ -1,0 +1,140 @@
+{
+  "id": "epilepsy_status_epilepticus",
+  "name": "Epilepsy -?Status epilepticus?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:54:56.470046",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Epilepsy -?Status epilepticus?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nStatus epilepticus (SE) is a neurological emergency defined as a seizure lasting longer than 5 minutes or recurrent seizures without recovery of consciousness between episodes. It can be convulsive (generalized tonic-clonic seizures) or non-convulsive (prolonged absence or focal seizures).\n\n### Epidemiology\nSE occurs in approximately 10-20 cases per 100,000 people per year. It is more common in children and the elderly, with a higher incidence in those with pre-existing epilepsy. The mortality rate can be as high as 20% in some studies, particularly in the elderly or those with significant comorbidities.\n\n### Essential Pathophysiology\nSE results from a failure of the mechanisms that normally terminate seizures, leading to prolonged neuronal hyperexcitability. This can cause neuronal injury, metabolic derangements, and systemic complications due to prolonged muscle activity and autonomic instability.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Prolonged seizure activity (lasting >5 minutes)\n- Altered consciousness\n- Postictal confusion or drowsiness\n\n### Key Signs\n- Tonic-clonic movements\n- Incontinence\n- Tongue biting\n- Autonomic signs (e.g., sweating, tachycardia)\n\n### Atypical Presentations\n- Non-convulsive status epilepticus may present with altered mental status without overt seizures, often mistaken for other conditions.\n\n### Red Flags Requiring Immediate Action\n- Seizure lasting longer than 5 minutes\n- Multiple seizures without recovery\n- Severe headache or neurological deficits post-seizure\n- History of recent head trauma or CNS infection\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Blood glucose level\n- Electrolyte panel (sodium, calcium, magnesium)\n- Toxicology screen (if indicated)\n- CT/MRI of the brain (if new onset or concerning features)\n\n### Second-line Investigations\n- EEG (electroencephalogram) to assess for ongoing seizure activity\n\n### Specialist Tests\n- Lumbar puncture (if infection is suspected)\n- Further imaging (MRI) if structural causes are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of status epilepticus is based on clinical criteria: a seizure lasting more than 5 minutes or two or more seizures without full recovery of consciousness in between.\n\n### Key Differential Diagnoses to Exclude\n- Seizure vs. psychogenic non-epileptic seizures\n- Metabolic disturbances (e.g., hypoglycemia, hyponatremia)\n- CNS infections (e.g., meningitis, encephalitis)\n- Stroke or intracranial hemorrhage\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Benzodiazepines (e.g., Lorazepam 4 mg IV over 2 minutes, may repeat after 10-15 minutes)\n- Phenytoin or Fosphenytoin (loading dose 20 mg/kg IV at a rate of 50 mg/min)\n\n#### Second-line Treatments\n- Valproate (loading dose 20-30 mg/kg IV)\n- Levetiracetam (loading dose 1000-3000 mg IV)\n\n#### Emergency Procedures\n- Intubation and ventilation if airway protection is needed\n- Consideration for continuous EEG monitoring in refractory cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antiepileptic drugs (AEDs) for long-term management, tailored to the patient's seizure type and etiology\n\n#### Second-line Treatments\n- Consideration of surgical options for refractory epilepsy\n\n#### Monitoring Requirements\n- Regular follow-up for medication adherence, side effects, and seizure control\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lorazepam\n- **Mechanism of Action**: Enhances GABA-A receptor activity, leading to increased inhibitory neurotransmission.\n- **Typical Dosing Range**: 4 mg IV over 2 minutes, may repeat after 10-15 minutes if seizures persist.\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, hypotension.\n- **When to Use vs. Alternatives**: First-line treatment for acute seizures.\n\n#### Phenytoin\n- **Mechanism of Action**: Stabilizes neuronal membranes and decreases seizure activity by inhibiting sodium channels.\n- **Typical Dosing Range**: Loading dose of 20 mg/kg IV at a rate of 50 mg/min, maintenance dose adjusted based on serum levels.\n- **Key Side Effects/Contraindications**: Gingival hyperplasia, hirsutism, ataxia, arrhythmias.\n- **When to Use vs. Alternatives**: Monitor serum levels due to nonlinear kinetics.\n\n#### Levetiracetam\n- **Mechanism of Action**: Modulates synaptic neurotransmitter release through binding to the SV2A protein.\n- **Typical Dosing Range**: Loading dose of 1000-3000 mg IV, followed by maintenance dosing.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, behavioral changes.\n- **When to Use vs. Alternatives**: Well-tolerated and does not require monitoring of serum levels.\n\n#### Valproate\n- **Mechanism of Action**: Increases GABA levels and inhibits sodium channels.\n- **Typical Dosing Range**: Loading dose of 20-30 mg/kg IV, maintenance dosing based on serum levels.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, teratogenicity, weight gain.\n- **When to Use vs. Alternatives**: Monitor liver function tests.\n\n### Procedures\n\n#### Intubation\n- **What it Involves**: Insertion of an endotracheal tube to secure the airway in patients unable to protect their airway due to prolonged seizures.\n- **Indications**: Severe respiratory distress, inability to maintain airway, or prolonged seizures unresponsive to treatment.\n- **Key Risks/Complications**: Aspiration, trauma to the airway, hypotension.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of status epilepticus depends on the underlying cause, duration of seizures, and promptness of treatment. Early intervention can significantly improve outcomes. Long-term complications may include cognitive impairment and increased risk of subsequent seizures.\n\n### Important Complications to Watch For\n- Cerebral hypoxia\n- Metabolic derangements (e.g., lactic acidosis)\n- Rhabdomyolysis\n- Aspiration pneumonia\n- Injury from prolonged seizures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs of status epilepticus, initiate first-line treatment, and ensure timely escalation of care. They should also monitor vital signs and neurological status closely during management.\n\n### When to Escalate to Senior/Specialist\nIf seizures persist after initial treatment with benzodiazepines, escalate care to senior medical staff and consider further interventions such as continuous EEG monitoring or consultation with a neurologist.\n\n### Key Safety Considerations\nEnsure airway protection, monitor vital signs, and be prepared for potential respiratory depression from sedative medications. Always assess for and address any underlying causes of seizures.\n",
+  "content": {
+    "overview": {
+      "definition": "Status epilepticus (SE) is a neurological emergency defined as a seizure lasting longer than 5 minutes or recurrent seizures without recovery of consciousness between episodes. It can be convulsive (generalized tonic-clonic seizures) or non-convulsive (prolonged absence or focal seizures).",
+      "epidemiology": "SE occurs in approximately 10-20 cases per 100,000 people per year. It is more common in children and the elderly, with a higher incidence in those with pre-existing epilepsy. The mortality rate can be as high as 20% in some studies, particularly in the elderly or those with significant comorbidities.",
+      "pathophysiology": "SE results from a failure of the mechanisms that normally terminate seizures, leading to prolonged neuronal hyperexcitability. This can cause neuronal injury, metabolic derangements, and systemic complications due to prolonged muscle activity and autonomic instability."
+    },
+    "recognition": {
+      "symptoms": [
+        "Prolonged seizure activity (lasting >5 minutes)",
+        "Altered consciousness",
+        "Postictal confusion or drowsiness"
+      ],
+      "signs": [
+        "Tonic-clonic movements",
+        "Incontinence",
+        "Tongue biting",
+        "Autonomic signs (e.g., sweating, tachycardia)"
+      ],
+      "atypicalPresentations": [
+        "Non-convulsive status epilepticus may present with altered mental status without overt seizures, often mistaken for other conditions."
+      ],
+      "redFlags": [
+        "Seizure lasting longer than 5 minutes",
+        "Multiple seizures without recovery",
+        "Severe headache or neurological deficits post-seizure",
+        "History of recent head trauma or CNS infection"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Blood glucose level",
+        "Electrolyte panel (sodium, calcium, magnesium)",
+        "Toxicology screen (if indicated)",
+        "CT/MRI of the brain (if new onset or concerning features)"
+      ],
+      "secondLine": [
+        "EEG (electroencephalogram) to assess for ongoing seizure activity"
+      ],
+      "specialistTests": [
+        "Lumbar puncture (if infection is suspected)",
+        "Further imaging (MRI) if structural causes are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of status epilepticus is based on clinical criteria: a seizure lasting more than 5 minutes or two or more seizures without full recovery of consciousness in between.",
+      "differentials": [
+        "Seizure vs. psychogenic non-epileptic seizures",
+        "Metabolic disturbances (e.g., hypoglycemia, hyponatremia)",
+        "CNS infections (e.g., meningitis, encephalitis)",
+        "Stroke or intracranial hemorrhage"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Benzodiazepines (e.g., Lorazepam 4 mg IV over 2 minutes, may repeat after 10-15 minutes)",
+          "Phenytoin or Fosphenytoin (loading dose 20 mg/kg IV at a rate of 50 mg/min)"
+        ],
+        "secondLine": [
+          "Valproate (loading dose 20-30 mg/kg IV)",
+          "Levetiracetam (loading dose 1000-3000 mg IV)"
+        ],
+        "procedures": [
+          "Intubation and ventilation if airway protection is needed",
+          "Consideration for continuous EEG monitoring in refractory cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antiepileptic drugs (AEDs) for long-term management, tailored to the patient's seizure type and etiology"
+        ],
+        "secondLine": [
+          "Consideration of surgical options for refractory epilepsy"
+        ],
+        "monitoring": [
+          "Regular follow-up for medication adherence, side effects, and seizure control"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lorazepam",
+          "mechanism": "Enhances GABA-A receptor activity, leading to increased inhibitory neurotransmission.",
+          "dosing": "4 mg IV over 2 minutes, may repeat after 10-15 minutes if seizures persist.",
+          "sideEffects": "Sedation, respiratory depression, hypotension.",
+          "notes": "First-line treatment for acute seizures."
+        },
+        {
+          "name": "Phenytoin",
+          "mechanism": "Stabilizes neuronal membranes and decreases seizure activity by inhibiting sodium channels.",
+          "dosing": "Loading dose of 20 mg/kg IV at a rate of 50 mg/min, maintenance dose adjusted based on serum levels.",
+          "sideEffects": "Gingival hyperplasia, hirsutism, ataxia, arrhythmias.",
+          "notes": "Monitor serum levels due to nonlinear kinetics."
+        },
+        {
+          "name": "Levetiracetam",
+          "mechanism": "Modulates synaptic neurotransmitter release through binding to the SV2A protein.",
+          "dosing": "Loading dose of 1000-3000 mg IV, followed by maintenance dosing.",
+          "sideEffects": "Drowsiness, dizziness, behavioral changes.",
+          "notes": "Well-tolerated and does not require monitoring of serum levels."
+        },
+        {
+          "name": "Valproate",
+          "mechanism": "Increases GABA levels and inhibits sodium channels.",
+          "dosing": "Loading dose of 20-30 mg/kg IV, maintenance dosing based on serum levels.",
+          "sideEffects": "Hepatotoxicity, teratogenicity, weight gain.",
+          "notes": "Monitor liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intubation",
+          "description": "Insertion of an endotracheal tube to secure the airway in patients unable to protect their airway due to prolonged seizures.",
+          "indications": "Severe respiratory distress, inability to maintain airway, or prolonged seizures unresponsive to treatment.",
+          "risks": "Aspiration, trauma to the airway, hypotension."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of status epilepticus depends on the underlying cause, duration of seizures, and promptness of treatment. Early intervention can significantly improve outcomes. Long-term complications may include cognitive impairment and increased risk of subsequent seizures.",
+    "complications": [
+      "Cerebral hypoxia",
+      "Metabolic derangements (e.g., lactic acidosis)",
+      "Rhabdomyolysis",
+      "Aspiration pneumonia",
+      "Injury from prolonged seizures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs of status epilepticus, initiate first-line treatment, and ensure timely escalation of care. They should also monitor vital signs and neurological status closely during management.",
+    "escalation": "If seizures persist after initial treatment with benzodiazepines, escalate care to senior medical staff and consider further interventions such as continuous EEG monitoring or consultation with a neurologist.",
+    "keySafetyConsiderations": "Ensure airway protection, monitor vital signs, and be prepared for potential respiratory depression from sedative medications. Always assess for and address any underlying causes of seizures."
+  }
+}

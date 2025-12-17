@@ -1,0 +1,157 @@
+{
+  "id": "cystic_fibrosis",
+  "name": "Cystic Fibrosis",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:24:34.980520",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cystic Fibrosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCystic Fibrosis (CF) is a genetic disorder caused by mutations in the CFTR gene, leading to the production of thick, sticky mucus that affects various organs, particularly the lungs and digestive system.\n\n### Epidemiology\nCF is one of the most common life-limiting genetic disorders in Caucasians, with an incidence of approximately 1 in 2,500 live births in the UK. It affects both genders equally.\n\n### Essential Pathophysiology\nThe CFTR gene mutation results in dysfunctional chloride channels, leading to impaired ion transport across epithelial cells. This causes thick mucus production, obstructing airways and glands, leading to chronic respiratory infections, pancreatic insufficiency, and other complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic cough\n- Recurrent lung infections\n- Wheezing\n- Shortness of breath\n- Poor growth and weight gain\n- Salty-tasting skin\n- Frequent greasy stools\n\n### Key Signs\n- Clubbing of fingers and toes\n- Wheezing on auscultation\n- Decreased breath sounds\n- Signs of malnutrition\n- Abdominal distension\n\n### Atypical Presentations\n- Infertility in males (due to congenital absence of the vas deferens)\n- Meconium ileus in newborns\n- Pancreatitis\n- Diabetes mellitus\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Failure to thrive\n- Recurrent pneumonia\n- Hemoptysis\n- Abdominal pain with distension\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Sweat test (to measure chloride levels)\n- Newborn screening (IRT and DNA testing)\n- Clinical assessment and history\n\n### Second-line Investigations\n- Pulmonary function tests (PFTs)\n- Chest X-ray or CT scan\n- Sputum culture for pathogens\n\n### Specialist Tests\n- Genetic testing for CFTR mutations\n- Bronchoscopy for airway assessment\n- Nutritional assessment (e.g., stool fat analysis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of CF is confirmed by the presence of two positive sweat tests or identification of two CFTR mutations, along with clinical symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Asthma\n- Bronchiectasis\n- Primary ciliary dyskinesia\n- Chronic obstructive pulmonary disease (COPD)\n- Tuberculosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy for hypoxia\n- Bronchodilators (e.g., salbutamol)\n- Antibiotics for acute infections\n\n#### Second-line Treatments\n- Corticosteroids for exacerbations\n- Mucolytics (e.g., dornase alfa)\n\n#### Emergency Procedures\n- Chest physiotherapy to clear mucus\n- Inhaled antibiotics (e.g., tobramycin) for Pseudomonas aeruginosa infections\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular physiotherapy and airway clearance techniques\n- Nutritional support (high-calorie diet, pancreatic enzyme replacement)\n- Regular monitoring of lung function\n\n#### Second-line Treatments\n- Inhaled corticosteroids for inflammation\n- Long-term antibiotics for chronic infections\n\n#### Monitoring Requirements\n- Regular follow-up with a CF specialist team\n- Annual lung function tests\n- Nutritional assessments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dornase alfa\n- **Mechanism of Action**: Recombinant human DNase that cleaves extracellular DNA in mucus, reducing viscosity.\n- **Typical Dosing Range**: 2.5 mg inhaled once daily.\n- **Key Side Effects/Contraindications**: Voice alteration, sore throat, laryngitis.\n- **When to Use vs. Alternatives**: Improves lung function and reduces exacerbations.\n\n#### Pancreatic enzymes (e.g., Creon)\n- **Mechanism of Action**: Replaces digestive enzymes to aid in nutrient absorption.\n- **Typical Dosing Range**: 1-2 capsules with each meal, adjusted based on stool fat content.\n- **Key Side Effects/Contraindications**: Abdominal discomfort, diarrhea, constipation.\n- **When to Use vs. Alternatives**: Essential for managing malabsorption.\n\n#### Azithromycin\n- **Mechanism of Action**: Macrolide antibiotic with anti-inflammatory properties.\n- **Typical Dosing Range**: 250 mg orally three times a week.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, potential for QT prolongation.\n- **When to Use vs. Alternatives**: Used for chronic Pseudomonas infections.\n\n### Procedures\n\n#### Chest physiotherapy\n- **What it Involves**: Manual or mechanical techniques to help clear mucus from the lungs.\n- **Indications**: Chronic lung disease, recurrent infections.\n- **Key Risks/Complications**: Discomfort, rib fractures in severe cases.\n\n#### Bronchoscopy\n- **What it Involves**: Endoscopic procedure to visualize and potentially clear airways.\n- **Indications**: Severe airway obstruction, persistent infections.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith advances in treatment, life expectancy for individuals with CF has improved significantly, with many living into their 30s and beyond. However, lung disease remains the primary cause of morbidity and mortality.\n\n### Important Complications to Watch For\n- Chronic lung infections (e.g., Pseudomonas aeruginosa)\n- Respiratory failure\n- Pancreatic insufficiency\n- Diabetes mellitus\n- Liver disease (cirrhosis)\n- Infertility in males\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be familiar with the management of acute exacerbations, recognize signs of respiratory distress, and coordinate care with the CF team. They should also provide education on the importance of adherence to treatment regimens.\n\n### When to Escalate to Senior/Specialist\nRefer to a CF specialist team for any acute exacerbations, significant weight loss, or complications such as respiratory failure or diabetes.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress, ensure appropriate infection control measures are in place, and be aware of the potential for drug interactions, especially with antibiotics.\n",
+  "content": {
+    "overview": {
+      "definition": "Cystic Fibrosis (CF) is a genetic disorder caused by mutations in the CFTR gene, leading to the production of thick, sticky mucus that affects various organs, particularly the lungs and digestive system.",
+      "epidemiology": "CF is one of the most common life-limiting genetic disorders in Caucasians, with an incidence of approximately 1 in 2,500 live births in the UK. It affects both genders equally.",
+      "pathophysiology": "The CFTR gene mutation results in dysfunctional chloride channels, leading to impaired ion transport across epithelial cells. This causes thick mucus production, obstructing airways and glands, leading to chronic respiratory infections, pancreatic insufficiency, and other complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic cough",
+        "Recurrent lung infections",
+        "Wheezing",
+        "Shortness of breath",
+        "Poor growth and weight gain",
+        "Salty-tasting skin",
+        "Frequent greasy stools"
+      ],
+      "signs": [
+        "Clubbing of fingers and toes",
+        "Wheezing on auscultation",
+        "Decreased breath sounds",
+        "Signs of malnutrition",
+        "Abdominal distension"
+      ],
+      "atypicalPresentations": [
+        "Infertility in males (due to congenital absence of the vas deferens)",
+        "Meconium ileus in newborns",
+        "Pancreatitis",
+        "Diabetes mellitus"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Failure to thrive",
+        "Recurrent pneumonia",
+        "Hemoptysis",
+        "Abdominal pain with distension"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Sweat test (to measure chloride levels)",
+        "Newborn screening (IRT and DNA testing)",
+        "Clinical assessment and history"
+      ],
+      "secondLine": [
+        "Pulmonary function tests (PFTs)",
+        "Chest X-ray or CT scan",
+        "Sputum culture for pathogens"
+      ],
+      "specialistTests": [
+        "Genetic testing for CFTR mutations",
+        "Bronchoscopy for airway assessment",
+        "Nutritional assessment (e.g., stool fat analysis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of CF is confirmed by the presence of two positive sweat tests or identification of two CFTR mutations, along with clinical symptoms.",
+      "differentials": [
+        "Asthma",
+        "Bronchiectasis",
+        "Primary ciliary dyskinesia",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Tuberculosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy for hypoxia",
+          "Bronchodilators (e.g., salbutamol)",
+          "Antibiotics for acute infections"
+        ],
+        "secondLine": [
+          "Corticosteroids for exacerbations",
+          "Mucolytics (e.g., dornase alfa)"
+        ],
+        "procedures": [
+          "Chest physiotherapy to clear mucus",
+          "Inhaled antibiotics (e.g., tobramycin) for Pseudomonas aeruginosa infections"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular physiotherapy and airway clearance techniques",
+          "Nutritional support (high-calorie diet, pancreatic enzyme replacement)",
+          "Regular monitoring of lung function"
+        ],
+        "secondLine": [
+          "Inhaled corticosteroids for inflammation",
+          "Long-term antibiotics for chronic infections"
+        ],
+        "monitoring": [
+          "Regular follow-up with a CF specialist team",
+          "Annual lung function tests",
+          "Nutritional assessments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dornase alfa",
+          "mechanism": "Recombinant human DNase that cleaves extracellular DNA in mucus, reducing viscosity.",
+          "dosing": "2.5 mg inhaled once daily.",
+          "sideEffects": "Voice alteration, sore throat, laryngitis.",
+          "notes": "Improves lung function and reduces exacerbations."
+        },
+        {
+          "name": "Pancreatic enzymes (e.g., Creon)",
+          "mechanism": "Replaces digestive enzymes to aid in nutrient absorption.",
+          "dosing": "1-2 capsules with each meal, adjusted based on stool fat content.",
+          "sideEffects": "Abdominal discomfort, diarrhea, constipation.",
+          "notes": "Essential for managing malabsorption."
+        },
+        {
+          "name": "Azithromycin",
+          "mechanism": "Macrolide antibiotic with anti-inflammatory properties.",
+          "dosing": "250 mg orally three times a week.",
+          "sideEffects": "Gastrointestinal upset, potential for QT prolongation.",
+          "notes": "Used for chronic Pseudomonas infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Chest physiotherapy",
+          "description": "Manual or mechanical techniques to help clear mucus from the lungs.",
+          "indications": "Chronic lung disease, recurrent infections.",
+          "risks": "Discomfort, rib fractures in severe cases."
+        },
+        {
+          "name": "Bronchoscopy",
+          "description": "Endoscopic procedure to visualize and potentially clear airways.",
+          "indications": "Severe airway obstruction, persistent infections.",
+          "risks": "Bleeding, infection, pneumothorax."
+        }
+      ]
+    },
+    "prognosis": "With advances in treatment, life expectancy for individuals with CF has improved significantly, with many living into their 30s and beyond. However, lung disease remains the primary cause of morbidity and mortality.",
+    "complications": [
+      "Chronic lung infections (e.g., Pseudomonas aeruginosa)",
+      "Respiratory failure",
+      "Pancreatic insufficiency",
+      "Diabetes mellitus",
+      "Liver disease (cirrhosis)",
+      "Infertility in males"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be familiar with the management of acute exacerbations, recognize signs of respiratory distress, and coordinate care with the CF team. They should also provide education on the importance of adherence to treatment regimens.",
+    "escalation": "Refer to a CF specialist team for any acute exacerbations, significant weight loss, or complications such as respiratory failure or diabetes.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress, ensure appropriate infection control measures are in place, and be aware of the potential for drug interactions, especially with antibiotics."
+  }
+}

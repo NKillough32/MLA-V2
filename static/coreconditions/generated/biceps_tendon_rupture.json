@@ -1,0 +1,122 @@
+{
+  "id": "biceps_tendon_rupture",
+  "name": "Biceps tendon rupture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:31:07.194704",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Biceps tendon rupture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA biceps tendon rupture refers to the tearing of the biceps tendon, which can occur at either the proximal (near the shoulder) or distal (near the elbow) attachment. Proximal ruptures are more common and often occur due to degenerative changes or acute trauma.\n\n### Epidemiology\nBiceps tendon ruptures are more prevalent in individuals aged 40-60 years, particularly in those engaged in repetitive overhead activities or heavy lifting. They are more common in males than females, with an incidence of approximately 2.5 per 100,000 per year.\n\n### Essential Pathophysiology\nThe biceps tendon can rupture due to chronic degeneration, acute trauma, or a combination of both. Proximal ruptures often occur at the bicipital groove due to impingement or rotator cuff pathology, while distal ruptures typically result from sudden eccentric loading of the biceps muscle.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden pain in the upper arm or shoulder\n- A popping or snapping sensation at the time of injury\n- Swelling and bruising in the upper arm\n- Weakness in elbow flexion and forearm supination\n\n### Key Signs\n- Visible deformity (Popeye sign) in the upper arm\n- Tenderness over the biceps tendon\n- Limited range of motion in the shoulder or elbow\n- Weakness on resisted elbow flexion\n\n### Atypical Presentations\n- Chronic pain without a clear history of trauma\n- Gradual onset of weakness over time without acute injury\n\n### Red Flags Requiring Immediate Action\n- Severe pain that does not improve with rest\n- Signs of neurovascular compromise (numbness, tingling, weakness in the hand)\n- Inability to perform daily activities due to pain or weakness\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Ultrasound of the shoulder or elbow\n\n### Second-line Investigations\n- MRI of the shoulder or elbow to assess tendon integrity and associated injuries\n\n### Specialist Tests\n- Arthroscopy for direct visualization and possible repair of the tendon\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. A positive hook test (resisted supination with elbow flexed) indicates a proximal biceps tendon rupture.\n\n### Key Differential Diagnoses to Exclude\n- Rotator cuff tear\n- Shoulder dislocation\n- Elbow fracture\n- Tendonitis or tendinopathy of the biceps\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and ice application\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization with a sling if necessary\n\n#### Second-line Treatments\n- Referral to orthopaedics for assessment of surgical options if significant functional impairment is present\n\n#### Emergency Procedures\n- Surgical repair of the tendon (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy focusing on strengthening and range of motion exercises\n- Activity modification to avoid exacerbation of symptoms\n\n#### Second-line Treatments\n- Consideration of surgical intervention if conservative management fails\n\n#### Monitoring Requirements\n- Regular follow-up to assess functional recovery and pain levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider for inflammatory pain.\n\n### Procedures\n\n#### Biceps tendon repair\n- **What it Involves**: Surgical procedure to reattach the torn tendon to the bone or to the muscle belly\n- **Indications**: Significant functional impairment, young active patients, or those with a complete rupture\n- **Key Risks/Complications**: Infection, nerve injury, stiffness, re-rupture\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience good functional recovery with appropriate management. Surgical repair can restore strength and function, especially in younger patients. Chronic pain may persist in some cases.\n\n### Important Complications to Watch For\n- Persistent pain or weakness\n- Stiffness in the shoulder or elbow\n- Re-rupture of the tendon\n- Development of shoulder impingement syndrome\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide conservative management, and refer to orthopaedics when surgical intervention is indicated. They should also educate patients on rehabilitation and activity modification.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics if there are signs of neurovascular compromise, significant functional impairment, or if conservative management fails after 6-8 weeks.\n\n### Key Safety Considerations\nMonitor for signs of infection post-surgery, ensure appropriate pain management, and educate patients on the importance of rehabilitation exercises to prevent stiffness.\n",
+  "content": {
+    "overview": {
+      "definition": "A biceps tendon rupture refers to the tearing of the biceps tendon, which can occur at either the proximal (near the shoulder) or distal (near the elbow) attachment. Proximal ruptures are more common and often occur due to degenerative changes or acute trauma.",
+      "epidemiology": "Biceps tendon ruptures are more prevalent in individuals aged 40-60 years, particularly in those engaged in repetitive overhead activities or heavy lifting. They are more common in males than females, with an incidence of approximately 2.5 per 100,000 per year.",
+      "pathophysiology": "The biceps tendon can rupture due to chronic degeneration, acute trauma, or a combination of both. Proximal ruptures often occur at the bicipital groove due to impingement or rotator cuff pathology, while distal ruptures typically result from sudden eccentric loading of the biceps muscle."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden pain in the upper arm or shoulder",
+        "A popping or snapping sensation at the time of injury",
+        "Swelling and bruising in the upper arm",
+        "Weakness in elbow flexion and forearm supination"
+      ],
+      "signs": [
+        "Visible deformity (Popeye sign) in the upper arm",
+        "Tenderness over the biceps tendon",
+        "Limited range of motion in the shoulder or elbow",
+        "Weakness on resisted elbow flexion"
+      ],
+      "atypicalPresentations": [
+        "Chronic pain without a clear history of trauma",
+        "Gradual onset of weakness over time without acute injury"
+      ],
+      "redFlags": [
+        "Severe pain that does not improve with rest",
+        "Signs of neurovascular compromise (numbness, tingling, weakness in the hand)",
+        "Inability to perform daily activities due to pain or weakness"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Ultrasound of the shoulder or elbow"
+      ],
+      "secondLine": [
+        "MRI of the shoulder or elbow to assess tendon integrity and associated injuries"
+      ],
+      "specialistTests": [
+        "Arthroscopy for direct visualization and possible repair of the tendon"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. A positive hook test (resisted supination with elbow flexed) indicates a proximal biceps tendon rupture.",
+      "differentials": [
+        "Rotator cuff tear",
+        "Shoulder dislocation",
+        "Elbow fracture",
+        "Tendonitis or tendinopathy of the biceps"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and ice application",
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization with a sling if necessary"
+        ],
+        "secondLine": [
+          "Referral to orthopaedics for assessment of surgical options if significant functional impairment is present"
+        ],
+        "procedures": [
+          "Surgical repair of the tendon (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy focusing on strengthening and range of motion exercises",
+          "Activity modification to avoid exacerbation of symptoms"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if conservative management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess functional recovery and pain levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider for inflammatory pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Biceps tendon repair",
+          "description": "Surgical procedure to reattach the torn tendon to the bone or to the muscle belly",
+          "indications": "Significant functional impairment, young active patients, or those with a complete rupture",
+          "risks": "Infection, nerve injury, stiffness, re-rupture"
+        }
+      ]
+    },
+    "prognosis": "Most patients experience good functional recovery with appropriate management. Surgical repair can restore strength and function, especially in younger patients. Chronic pain may persist in some cases.",
+    "complications": [
+      "Persistent pain or weakness",
+      "Stiffness in the shoulder or elbow",
+      "Re-rupture of the tendon",
+      "Development of shoulder impingement syndrome"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide conservative management, and refer to orthopaedics when surgical intervention is indicated. They should also educate patients on rehabilitation and activity modification.",
+    "escalation": "Refer to orthopaedics if there are signs of neurovascular compromise, significant functional impairment, or if conservative management fails after 6-8 weeks.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-surgery, ensure appropriate pain management, and educate patients on the importance of rehabilitation exercises to prevent stiffness."
+  }
+}

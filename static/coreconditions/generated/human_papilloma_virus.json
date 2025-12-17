@@ -1,0 +1,136 @@
+{
+  "id": "human_papilloma_virus",
+  "name": "Human papilloma virus,",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:09:05.657605",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Human papilloma virus,: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHuman papillomavirus (HPV) is a group of more than 200 related viruses, of which over 40 can be transmitted through direct sexual contact. HPV is the most common sexually transmitted infection (STI) worldwide.\n\n### Epidemiology\nHPV is extremely common; most sexually active individuals will contract at least one type of HPV in their lifetime. High-risk types (e.g., HPV 16 and 18) are associated with cervical cancer and other anogenital cancers. The prevalence of HPV is highest in young adults aged 15-24 years.\n\n### Essential Pathophysiology\nHPV infects the basal epithelial cells of the skin and mucous membranes. The virus can remain dormant or cause benign lesions (warts) or malignant transformations (cervical dysplasia and cancer) through the integration of viral DNA into the host genome, leading to uncontrolled cell proliferation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asymptomatic in most cases\n- Genital warts (condylomata acuminata)\n- Cervical dysplasia (often asymptomatic)\n- Anogenital cancers (e.g., cervical, anal, oropharyngeal)\n\n### Key Signs\n- Visible genital warts\n- Abnormal Pap smear results\n- Cervical lesions on examination\n\n### Atypical Presentations\n- Warts in unusual locations (e.g., oral cavity, throat)\n- Persistent anal or genital discomfort\n\n### Red Flags Requiring Immediate Action\n- Abnormal vaginal bleeding\n- Pelvic pain\n- Unexplained weight loss\n- Persistent lesions that do not resolve\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pap smear (cervical screening)\n- HPV DNA testing (for high-risk types)\n\n### Second-line Investigations\n- Colposcopy (for abnormal Pap results)\n- Biopsy of suspicious lesions\n\n### Specialist Tests\n- HPV genotyping\n- Histopathological examination of biopsy samples\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, Pap smear results, and HPV testing. A positive HPV test in conjunction with abnormal cytology indicates the need for further investigation.\n\n### Key Differential Diagnoses to Exclude\n- Other STIs (e.g., herpes, syphilis)\n- Benign skin lesions (e.g., molluscum contagiosum)\n- Cervical cancer\n- Anal cancer\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Patient education about HPV and its transmission\n- Treatment of genital warts (e.g., topical agents)\n\n#### Second-line Treatments\n- Cryotherapy or surgical excision for persistent warts\n\n#### Emergency Procedures\n- Cryotherapy: freezing of warts using liquid nitrogen; indicated for external genital warts; risks include pain, blistering, and scarring.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular cervical screening (Pap smears) for women aged 25-64 years\n- HPV vaccination for prevention\n\n#### Second-line Treatments\n- Follow-up colposcopy for abnormal findings\n\n#### Monitoring Requirements\n- Regular follow-up for patients with cervical dysplasia or cancer\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Imiquimod\n- **Mechanism of Action**: Immune response modifier that stimulates local immune response against HPV.\n- **Typical Dosing Range**: Apply to affected area 3 times a week at bedtime for up to 16 weeks.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and ulceration.\n- **When to Use vs. Alternatives**: Not recommended for use in pregnant women.\n\n#### Podophyllotoxin\n- **Mechanism of Action**: Antimitotic agent that prevents cell division in warts.\n- **Typical Dosing Range**: Apply twice daily for 3 days, followed by 4 days of no treatment; repeat if necessary.\n- **Key Side Effects/Contraindications**: Local irritation, burning sensation.\n- **When to Use vs. Alternatives**: Avoid in pregnancy.\n\n#### Sinecatechins\n- **Mechanism of Action**: Topical treatment derived from green tea extract that has antiviral properties.\n- **Typical Dosing Range**: Apply 3 times daily until warts are cleared (up to 16 weeks).\n- **Key Side Effects/Contraindications**: Local irritation, erythema.\n- **When to Use vs. Alternatives**: Not for internal use.\n\n### Procedures\n\n#### Cryotherapy\n- **What it Involves**: Freezing of warts using liquid nitrogen to destroy the tissue.\n- **Indications**: External genital warts, especially if topical treatments are ineffective.\n- **Key Risks/Complications**: Pain, blistering, scarring, and potential for infection.\n\n#### Excisional surgery\n- **What it Involves**: Surgical removal of large or persistent warts.\n- **Indications**: Large warts or those that do not respond to other treatments.\n- **Key Risks/Complications**: Bleeding, infection, scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost HPV infections resolve spontaneously within 1-2 years. However, persistent infection with high-risk types can lead to cervical cancer and other malignancies over time.\n\n### Important Complications to Watch For\n- Cervical cancer\n- Anal cancer\n- Oropharyngeal cancer\n- Psychosocial impact due to stigma and anxiety about STIs.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should educate patients about HPV, perform cervical screening, manage warts, and refer to specialists for abnormal findings or cancer management.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynecologist or dermatologist for persistent or atypical lesions, abnormal Pap results, or suspected malignancy.\n\n### Key Safety Considerations\nEnsure informed consent for treatments, educate patients about the importance of follow-up screenings, and discuss the HPV vaccine as a preventive measure.\n",
+  "content": {
+    "overview": {
+      "definition": "Human papillomavirus (HPV) is a group of more than 200 related viruses, of which over 40 can be transmitted through direct sexual contact. HPV is the most common sexually transmitted infection (STI) worldwide.",
+      "epidemiology": "HPV is extremely common; most sexually active individuals will contract at least one type of HPV in their lifetime. High-risk types (e.g., HPV 16 and 18) are associated with cervical cancer and other anogenital cancers. The prevalence of HPV is highest in young adults aged 15-24 years.",
+      "pathophysiology": "HPV infects the basal epithelial cells of the skin and mucous membranes. The virus can remain dormant or cause benign lesions (warts) or malignant transformations (cervical dysplasia and cancer) through the integration of viral DNA into the host genome, leading to uncontrolled cell proliferation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asymptomatic in most cases",
+        "Genital warts (condylomata acuminata)",
+        "Cervical dysplasia (often asymptomatic)",
+        "Anogenital cancers (e.g., cervical, anal, oropharyngeal)"
+      ],
+      "signs": [
+        "Visible genital warts",
+        "Abnormal Pap smear results",
+        "Cervical lesions on examination"
+      ],
+      "atypicalPresentations": [
+        "Warts in unusual locations (e.g., oral cavity, throat)",
+        "Persistent anal or genital discomfort"
+      ],
+      "redFlags": [
+        "Abnormal vaginal bleeding",
+        "Pelvic pain",
+        "Unexplained weight loss",
+        "Persistent lesions that do not resolve"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pap smear (cervical screening)",
+        "HPV DNA testing (for high-risk types)"
+      ],
+      "secondLine": [
+        "Colposcopy (for abnormal Pap results)",
+        "Biopsy of suspicious lesions"
+      ],
+      "specialistTests": [
+        "HPV genotyping",
+        "Histopathological examination of biopsy samples"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, Pap smear results, and HPV testing. A positive HPV test in conjunction with abnormal cytology indicates the need for further investigation.",
+      "differentials": [
+        "Other STIs (e.g., herpes, syphilis)",
+        "Benign skin lesions (e.g., molluscum contagiosum)",
+        "Cervical cancer",
+        "Anal cancer"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Patient education about HPV and its transmission",
+          "Treatment of genital warts (e.g., topical agents)"
+        ],
+        "secondLine": [
+          "Cryotherapy or surgical excision for persistent warts"
+        ],
+        "procedures": [
+          "Cryotherapy: freezing of warts using liquid nitrogen; indicated for external genital warts; risks include pain, blistering, and scarring."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular cervical screening (Pap smears) for women aged 25-64 years",
+          "HPV vaccination for prevention"
+        ],
+        "secondLine": [
+          "Follow-up colposcopy for abnormal findings"
+        ],
+        "monitoring": [
+          "Regular follow-up for patients with cervical dysplasia or cancer"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Imiquimod",
+          "mechanism": "Immune response modifier that stimulates local immune response against HPV.",
+          "dosing": "Apply to affected area 3 times a week at bedtime for up to 16 weeks.",
+          "sideEffects": "Local irritation, erythema, and ulceration.",
+          "notes": "Not recommended for use in pregnant women."
+        },
+        {
+          "name": "Podophyllotoxin",
+          "mechanism": "Antimitotic agent that prevents cell division in warts.",
+          "dosing": "Apply twice daily for 3 days, followed by 4 days of no treatment; repeat if necessary.",
+          "sideEffects": "Local irritation, burning sensation.",
+          "notes": "Avoid in pregnancy."
+        },
+        {
+          "name": "Sinecatechins",
+          "mechanism": "Topical treatment derived from green tea extract that has antiviral properties.",
+          "dosing": "Apply 3 times daily until warts are cleared (up to 16 weeks).",
+          "sideEffects": "Local irritation, erythema.",
+          "notes": "Not for internal use."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cryotherapy",
+          "description": "Freezing of warts using liquid nitrogen to destroy the tissue.",
+          "indications": "External genital warts, especially if topical treatments are ineffective.",
+          "risks": "Pain, blistering, scarring, and potential for infection."
+        },
+        {
+          "name": "Excisional surgery",
+          "description": "Surgical removal of large or persistent warts.",
+          "indications": "Large warts or those that do not respond to other treatments.",
+          "risks": "Bleeding, infection, scarring."
+        }
+      ]
+    },
+    "prognosis": "Most HPV infections resolve spontaneously within 1-2 years. However, persistent infection with high-risk types can lead to cervical cancer and other malignancies over time.",
+    "complications": [
+      "Cervical cancer",
+      "Anal cancer",
+      "Oropharyngeal cancer",
+      "Psychosocial impact due to stigma and anxiety about STIs."
+    ],
+    "foundationDoctorRole": "Foundation doctors should educate patients about HPV, perform cervical screening, manage warts, and refer to specialists for abnormal findings or cancer management.",
+    "escalation": "Refer to a gynecologist or dermatologist for persistent or atypical lesions, abnormal Pap results, or suspected malignancy.",
+    "keySafetyConsiderations": "Ensure informed consent for treatments, educate patients about the importance of follow-up screenings, and discuss the HPV vaccine as a preventive measure."
+  }
+}

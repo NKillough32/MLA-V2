@@ -1,0 +1,140 @@
+{
+  "id": "cardiogenic",
+  "name": "Cardiogenic",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:03:33.865560",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cardiogenic: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCardiogenic shock is a state of inadequate tissue perfusion due to the heart's inability to pump sufficient blood, often resulting from severe heart failure, myocardial infarction, or other cardiac conditions.\n\n### Epidemiology\nCardiogenic shock occurs in approximately 5-10% of patients with acute myocardial infarction and has a high mortality rate, ranging from 40-70%.\n\n### Essential Pathophysiology\nIn cardiogenic shock, the heart's reduced cardiac output leads to decreased perfusion of vital organs, resulting in tissue hypoxia. This can be due to various factors such as myocardial ischemia, valvular heart disease, or arrhythmias.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shortness of breath\n- Chest pain\n- Fatigue\n- Confusion or altered mental status\n- Nausea\n\n### Key Signs\n- Hypotension (systolic BP < 90 mmHg)\n- Tachycardia (heart rate > 100 bpm)\n- Cold, clammy skin\n- Cyanosis\n- Oliguria (urine output < 0.5 mL/kg/hr)\n\n### Atypical Presentations\n- Elderly patients may present with altered mental status rather than classic symptoms.\n- Diabetic patients may have atypical chest pain or silent ischemia.\n\n### Red Flags Requiring Immediate Action\n- Persistent hypotension despite fluid resuscitation\n- Rapid deterioration in clinical status\n- Signs of multi-organ failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- Cardiac biomarkers (e.g., troponin)\n- Complete blood count (CBC)\n- Basic metabolic panel\n\n### Second-line Investigations\n- Echocardiography (to assess cardiac function)\n- Chest CT (if pulmonary embolism is suspected)\n- Cardiac catheterization\n\n### Specialist Tests\n- Transesophageal echocardiography (TEE)\n- Cardiac MRI (for detailed cardiac assessment)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cardiogenic shock is based on clinical presentation (hypotension, signs of poor perfusion) and evidence of cardiac dysfunction (e.g., elevated cardiac biomarkers, echocardiographic findings).\n\n### Key Differential Diagnoses to Exclude\n- Hypovolemic shock\n- Obstructive shock (e.g., tension pneumothorax, cardiac tamponade)\n- Distributive shock (e.g., septic shock)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer oxygen to maintain SpO2 > 94%\n- IV fluids (carefully, to avoid fluid overload)\n- Inotropic agents (e.g., dobutamine)\n\n#### Second-line Treatments\n- Vasopressors (e.g., norepinephrine) if hypotension persists\n- Mechanical support (e.g., intra-aortic balloon pump)\n\n#### Emergency Procedures\n- Cardiac catheterization for revascularization in STEMI\n- ECMO (extracorporeal membrane oxygenation) in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Beta-blockers (if stable)\n- ACE inhibitors\n- Antiplatelet therapy\n\n#### Second-line Treatments\n- Aldosterone antagonists (e.g., spironolactone)\n- Sodium-glucose cotransporter-2 (SGLT2) inhibitors\n\n#### Monitoring Requirements\n- Regular follow-up with echocardiography to assess cardiac function\n- Monitoring of renal function and electrolytes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dobutamine\n- **Mechanism of Action**: Increases cardiac contractility and heart rate, improving cardiac output.\n- **Typical Dosing Range**: 2-20 mcg/kg/min IV infusion, titrate to effect.\n- **Key Side Effects/Contraindications**: Tachycardia, arrhythmias, hypotension.\n- **When to Use vs. Alternatives**: Use cautiously in patients with arrhythmias.\n\n#### Norepinephrine\n- **Mechanism of Action**: Alpha-1 agonist causing vasoconstriction, increasing systemic vascular resistance and blood pressure.\n- **Typical Dosing Range**: 0.05-0.5 mcg/kg/min IV infusion, titrate to maintain MAP > 65 mmHg.\n- **Key Side Effects/Contraindications**: Tissue ischemia, arrhythmias, reflex bradycardia.\n- **When to Use vs. Alternatives**: Monitor peripheral circulation closely.\n\n### Procedures\n\n#### Cardiac Catheterization\n- **What it Involves**: Invasive procedure to visualize coronary arteries and assess for blockages.\n- **Indications**: Suspected acute coronary syndrome, severe heart failure, or cardiogenic shock.\n- **Key Risks/Complications**: Bleeding, infection, contrast-induced nephropathy, arrhythmias.\n\n#### Intra-aortic Balloon Pump (IABP)\n- **What it Involves**: Mechanical device that increases myocardial oxygen supply and decreases workload by inflating and deflating in sync with the cardiac cycle.\n- **Indications**: Severe cardiogenic shock, especially post-MI.\n- **Key Risks/Complications**: Vascular complications, limb ischemia, infection. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of cardiogenic shock is poor, with a mortality rate of 40-70%. Early recognition and treatment are crucial for improving outcomes.\n\n### Important Complications to Watch For\n- Multi-organ failure\n- Acute renal failure\n- Cardiac arrest\n- Arrhythmias\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of cardiogenic shock, initiate basic management, and escalate care to senior clinicians promptly.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of cardiogenic shock, escalate to a senior clinician immediately, and consider intensive care referral for advanced monitoring and management.\n\n### Key Safety Considerations\nEnsure continuous monitoring of vital signs, especially blood pressure and heart rate. Be vigilant for signs of fluid overload and adjust fluid resuscitation accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Cardiogenic shock is a state of inadequate tissue perfusion due to the heart's inability to pump sufficient blood, often resulting from severe heart failure, myocardial infarction, or other cardiac conditions.",
+      "epidemiology": "Cardiogenic shock occurs in approximately 5-10% of patients with acute myocardial infarction and has a high mortality rate, ranging from 40-70%.",
+      "pathophysiology": "In cardiogenic shock, the heart's reduced cardiac output leads to decreased perfusion of vital organs, resulting in tissue hypoxia. This can be due to various factors such as myocardial ischemia, valvular heart disease, or arrhythmias."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shortness of breath",
+        "Chest pain",
+        "Fatigue",
+        "Confusion or altered mental status",
+        "Nausea"
+      ],
+      "signs": [
+        "Hypotension (systolic BP < 90 mmHg)",
+        "Tachycardia (heart rate > 100 bpm)",
+        "Cold, clammy skin",
+        "Cyanosis",
+        "Oliguria (urine output < 0.5 mL/kg/hr)"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with altered mental status rather than classic symptoms.",
+        "Diabetic patients may have atypical chest pain or silent ischemia."
+      ],
+      "redFlags": [
+        "Persistent hypotension despite fluid resuscitation",
+        "Rapid deterioration in clinical status",
+        "Signs of multi-organ failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "Cardiac biomarkers (e.g., troponin)",
+        "Complete blood count (CBC)",
+        "Basic metabolic panel"
+      ],
+      "secondLine": [
+        "Echocardiography (to assess cardiac function)",
+        "Chest CT (if pulmonary embolism is suspected)",
+        "Cardiac catheterization"
+      ],
+      "specialistTests": [
+        "Transesophageal echocardiography (TEE)",
+        "Cardiac MRI (for detailed cardiac assessment)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cardiogenic shock is based on clinical presentation (hypotension, signs of poor perfusion) and evidence of cardiac dysfunction (e.g., elevated cardiac biomarkers, echocardiographic findings).",
+      "differentials": [
+        "Hypovolemic shock",
+        "Obstructive shock (e.g., tension pneumothorax, cardiac tamponade)",
+        "Distributive shock (e.g., septic shock)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer oxygen to maintain SpO2 > 94%",
+          "IV fluids (carefully, to avoid fluid overload)",
+          "Inotropic agents (e.g., dobutamine)"
+        ],
+        "secondLine": [
+          "Vasopressors (e.g., norepinephrine) if hypotension persists",
+          "Mechanical support (e.g., intra-aortic balloon pump)"
+        ],
+        "procedures": [
+          "Cardiac catheterization for revascularization in STEMI",
+          "ECMO (extracorporeal membrane oxygenation) in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Beta-blockers (if stable)",
+          "ACE inhibitors",
+          "Antiplatelet therapy"
+        ],
+        "secondLine": [
+          "Aldosterone antagonists (e.g., spironolactone)",
+          "Sodium-glucose cotransporter-2 (SGLT2) inhibitors"
+        ],
+        "monitoring": [
+          "Regular follow-up with echocardiography to assess cardiac function",
+          "Monitoring of renal function and electrolytes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dobutamine",
+          "mechanism": "Increases cardiac contractility and heart rate, improving cardiac output.",
+          "dosing": "2-20 mcg/kg/min IV infusion, titrate to effect.",
+          "sideEffects": "Tachycardia, arrhythmias, hypotension.",
+          "notes": "Use cautiously in patients with arrhythmias."
+        },
+        {
+          "name": "Norepinephrine",
+          "mechanism": "Alpha-1 agonist causing vasoconstriction, increasing systemic vascular resistance and blood pressure.",
+          "dosing": "0.05-0.5 mcg/kg/min IV infusion, titrate to maintain MAP > 65 mmHg.",
+          "sideEffects": "Tissue ischemia, arrhythmias, reflex bradycardia.",
+          "notes": "Monitor peripheral circulation closely."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardiac Catheterization",
+          "description": "Invasive procedure to visualize coronary arteries and assess for blockages.",
+          "indications": "Suspected acute coronary syndrome, severe heart failure, or cardiogenic shock.",
+          "risks": "Bleeding, infection, contrast-induced nephropathy, arrhythmias."
+        },
+        {
+          "name": "Intra-aortic Balloon Pump (IABP)",
+          "description": "Mechanical device that increases myocardial oxygen supply and decreases workload by inflating and deflating in sync with the cardiac cycle.",
+          "indications": "Severe cardiogenic shock, especially post-MI.",
+          "risks": "Vascular complications, limb ischemia, infection. "
+        }
+      ]
+    },
+    "prognosis": "The prognosis of cardiogenic shock is poor, with a mortality rate of 40-70%. Early recognition and treatment are crucial for improving outcomes.",
+    "complications": [
+      "Multi-organ failure",
+      "Acute renal failure",
+      "Cardiac arrest",
+      "Arrhythmias"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of cardiogenic shock, initiate basic management, and escalate care to senior clinicians promptly.",
+    "escalation": "If a patient shows signs of cardiogenic shock, escalate to a senior clinician immediately, and consider intensive care referral for advanced monitoring and management.",
+    "keySafetyConsiderations": "Ensure continuous monitoring of vital signs, especially blood pressure and heart rate. Be vigilant for signs of fluid overload and adjust fluid resuscitation accordingly."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "humeral_fracture",
+  "name": "Humeral fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:28:23.876563",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Humeral fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA humeral fracture is a break in the humerus, the long bone of the upper arm, which can occur in various locations including the proximal, mid-shaft, or distal regions.\n\n### Epidemiology\nHumeral fractures are common, particularly in older adults due to falls, and in younger individuals due to high-energy trauma such as sports injuries or accidents. They account for approximately 5-10% of all fractures.\n\n### Essential Pathophysiology\nFractures can occur due to direct trauma (e.g., a fall onto an outstretched hand) or indirect trauma (e.g., a direct blow to the arm). The fracture may disrupt the surrounding soft tissue, including muscles, nerves, and blood vessels.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain in the upper arm\n- Swelling and bruising around the fracture site\n- Limited range of motion in the shoulder or elbow\n- Deformity of the arm\n\n### Key Signs\n- Tenderness over the fracture site\n- Swelling and possible ecchymosis\n- Abnormal positioning of the arm\n- Crepitus on movement\n\n### Atypical Presentations\n- Fracture may be occult on initial X-ray, especially in the case of stress fractures or in elderly patients with osteoporosis.\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (e.g., numbness, weakness, or loss of pulse in the arm)\n- Open fractures with skin laceration\n- Signs of compartment syndrome (severe pain, swelling, and tense compartments)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the humerus (AP and lateral views)\n\n### Second-line Investigations\n- CT scan if complex fracture or intra-articular involvement is suspected\n- MRI for occult fractures or soft tissue evaluation\n\n### Specialist Tests\n- Ultrasound for soft tissue assessment\n- Bone density scan if osteoporosis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical examination and radiological findings. A fracture is confirmed by the presence of a break in the continuity of the bone on X-ray.\n\n### Key Differential Diagnoses to Exclude\n- Proximal humeral fracture\n- Humeral shaft fracture\n- Distal humeral fracture\n- Shoulder dislocation\n- Soft tissue injury (e.g., rotator cuff tear)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immobilization with a sling or splint\n- Pain management with NSAIDs or acetaminophen\n\n#### Second-line Treatments\n- Reduction (if displaced) and stabilization with a brace or surgical intervention if necessary\n\n#### Emergency Procedures\n- Closed reduction and percutaneous pinning for displaced fractures\n- Open reduction and internal fixation (ORIF) for complex fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to restore range of motion and strength\n\n#### Second-line Treatments\n- Surgical intervention if non-union or malunion occurs\n\n#### Monitoring Requirements\n- Regular follow-up with X-rays to assess healing and alignment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal issues.\n\n#### Acetaminophen\n- **Mechanism of Action**: Analgesic that reduces pain but not inflammation\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, max 3000 mg/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Preferred in patients with gastrointestinal issues.\n\n### Procedures\n\n#### Closed reduction and percutaneous pinning\n- **What it Involves**: A minimally invasive procedure to realign the fractured bone and stabilize it with pins.\n- **Indications**: Displaced fractures that can be reduced without open surgery.\n- **Key Risks/Complications**: Infection, nerve injury, pin migration.\n\n#### Open reduction and internal fixation (ORIF)\n- **What it Involves**: Surgical procedure to directly visualize the fracture and stabilize it with plates and screws.\n- **Indications**: Complex fractures, fractures with significant displacement, or those involving the joint surface.\n- **Key Risks/Complications**: Infection, non-union, malunion, stiffness, and nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost humeral fractures heal well with appropriate management, typically within 6-12 weeks. However, complications such as non-union, malunion, or stiffness can occur, particularly in older patients or those with comorbidities.\n\n### Important Complications to Watch For\n- Non-union or malunion of the fracture\n- Stiffness or loss of range of motion in the shoulder or elbow\n- Nerve injury (e.g., radial nerve palsy)\n- Infection (especially in open fractures)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, manage pain, and provide education on activity modification and rehabilitation. They should also recognize red flags that require urgent referral to a senior clinician or orthopedic specialist.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurovascular compromise, open fractures, or if the fracture is unstable, escalate to an orthopedic surgeon immediately. Also, refer if there is no improvement in symptoms or if complications arise during follow-up.\n\n### Key Safety Considerations\nEnsure proper immobilization to prevent further injury, monitor for signs of compartment syndrome, and assess for neurovascular status regularly. Educate patients on the importance of follow-up appointments and adherence to rehabilitation protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "A humeral fracture is a break in the humerus, the long bone of the upper arm, which can occur in various locations including the proximal, mid-shaft, or distal regions.",
+      "epidemiology": "Humeral fractures are common, particularly in older adults due to falls, and in younger individuals due to high-energy trauma such as sports injuries or accidents. They account for approximately 5-10% of all fractures.",
+      "pathophysiology": "Fractures can occur due to direct trauma (e.g., a fall onto an outstretched hand) or indirect trauma (e.g., a direct blow to the arm). The fracture may disrupt the surrounding soft tissue, including muscles, nerves, and blood vessels."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain in the upper arm",
+        "Swelling and bruising around the fracture site",
+        "Limited range of motion in the shoulder or elbow",
+        "Deformity of the arm"
+      ],
+      "signs": [
+        "Tenderness over the fracture site",
+        "Swelling and possible ecchymosis",
+        "Abnormal positioning of the arm",
+        "Crepitus on movement"
+      ],
+      "atypicalPresentations": [
+        "Fracture may be occult on initial X-ray, especially in the case of stress fractures or in elderly patients with osteoporosis."
+      ],
+      "redFlags": [
+        "Neurovascular compromise (e.g., numbness, weakness, or loss of pulse in the arm)",
+        "Open fractures with skin laceration",
+        "Signs of compartment syndrome (severe pain, swelling, and tense compartments)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the humerus (AP and lateral views)"
+      ],
+      "secondLine": [
+        "CT scan if complex fracture or intra-articular involvement is suspected",
+        "MRI for occult fractures or soft tissue evaluation"
+      ],
+      "specialistTests": [
+        "Ultrasound for soft tissue assessment",
+        "Bone density scan if osteoporosis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical examination and radiological findings. A fracture is confirmed by the presence of a break in the continuity of the bone on X-ray.",
+      "differentials": [
+        "Proximal humeral fracture",
+        "Humeral shaft fracture",
+        "Distal humeral fracture",
+        "Shoulder dislocation",
+        "Soft tissue injury (e.g., rotator cuff tear)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immobilization with a sling or splint",
+          "Pain management with NSAIDs or acetaminophen"
+        ],
+        "secondLine": [
+          "Reduction (if displaced) and stabilization with a brace or surgical intervention if necessary"
+        ],
+        "procedures": [
+          "Closed reduction and percutaneous pinning for displaced fractures",
+          "Open reduction and internal fixation (ORIF) for complex fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to restore range of motion and strength"
+        ],
+        "secondLine": [
+          "Surgical intervention if non-union or malunion occurs"
+        ],
+        "monitoring": [
+          "Regular follow-up with X-rays to assess healing and alignment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal issues."
+        },
+        {
+          "name": "Acetaminophen",
+          "mechanism": "Analgesic that reduces pain but not inflammation",
+          "dosing": "500-1000 mg every 4-6 hours as needed, max 3000 mg/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Preferred in patients with gastrointestinal issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction and percutaneous pinning",
+          "description": "A minimally invasive procedure to realign the fractured bone and stabilize it with pins.",
+          "indications": "Displaced fractures that can be reduced without open surgery.",
+          "risks": "Infection, nerve injury, pin migration."
+        },
+        {
+          "name": "Open reduction and internal fixation (ORIF)",
+          "description": "Surgical procedure to directly visualize the fracture and stabilize it with plates and screws.",
+          "indications": "Complex fractures, fractures with significant displacement, or those involving the joint surface.",
+          "risks": "Infection, non-union, malunion, stiffness, and nerve injury."
+        }
+      ]
+    },
+    "prognosis": "Most humeral fractures heal well with appropriate management, typically within 6-12 weeks. However, complications such as non-union, malunion, or stiffness can occur, particularly in older patients or those with comorbidities.",
+    "complications": [
+      "Non-union or malunion of the fracture",
+      "Stiffness or loss of range of motion in the shoulder or elbow",
+      "Nerve injury (e.g., radial nerve palsy)",
+      "Infection (especially in open fractures)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, manage pain, and provide education on activity modification and rehabilitation. They should also recognize red flags that require urgent referral to a senior clinician or orthopedic specialist.",
+    "escalation": "If there are signs of neurovascular compromise, open fractures, or if the fracture is unstable, escalate to an orthopedic surgeon immediately. Also, refer if there is no improvement in symptoms or if complications arise during follow-up.",
+    "keySafetyConsiderations": "Ensure proper immobilization to prevent further injury, monitor for signs of compartment syndrome, and assess for neurovascular status regularly. Educate patients on the importance of follow-up appointments and adherence to rehabilitation protocols."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "bipolar_effective_disorder",
+  "name": "Bipolar effective disorder",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:09:22.079256",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Bipolar effective disorder: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBipolar affective disorder (BPAD) is a mood disorder characterized by episodes of mania, hypomania, and depression. It is classified into several types, including Bipolar I, Bipolar II, and Cyclothymic Disorder.\n\n### Epidemiology\nThe lifetime prevalence of bipolar disorder is approximately 1-3% in the general population, with a similar prevalence in men and women. The onset typically occurs in late adolescence or early adulthood, but it can occur at any age.\n\n### Essential Pathophysiology\nThe exact pathophysiology of bipolar disorder is not fully understood, but it is believed to involve a combination of genetic, neurobiological, and environmental factors. Neurotransmitter dysregulation (particularly serotonin, norepinephrine, and dopamine) and structural brain changes have been implicated.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Manic episodes (elevated mood, increased energy, decreased need for sleep)\n- Hypomanic episodes (less severe than mania)\n- Depressive episodes (low mood, anhedonia, fatigue)\n\n### Key Signs\n- Increased talkativeness\n- Racing thoughts\n- Distractibility\n- Impulsivity\n- Psychomotor agitation\n\n### Atypical Presentations\n- Mixed episodes (simultaneous symptoms of mania and depression)\n- Rapid cycling (four or more mood episodes in a year)\n\n### Red Flags Requiring Immediate Action\n- Suicidal ideation or behavior\n- Severe impairment in functioning\n- Psychotic features (delusions, hallucinations)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental status examination\n- Mood charting (tracking mood changes over time)\n\n### Second-line Investigations\n- Standardized rating scales (e.g., Young Mania Rating Scale, Hamilton Depression Rating Scale)\n- Laboratory tests to rule out medical causes (e.g., thyroid function tests, toxicology screening)\n\n### Specialist Tests\n- Neuroimaging (MRI or CT) if indicated to rule out structural brain abnormalities\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the DSM-5 criteria, which require the presence of at least one manic episode for Bipolar I and one hypomanic episode and one major depressive episode for Bipolar II.\n\n### Key Differential Diagnoses to Exclude\n- Major depressive disorder\n- Schizoaffective disorder\n- Personality disorders (e.g., borderline personality disorder)\n- Substance-induced mood disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Mood stabilizers (e.g., lithium, valproate)\n- Atypical antipsychotics (e.g., olanzapine, quetiapine)\n\n#### Second-line Treatments\n- Benzodiazepines for acute agitation\n- Electroconvulsive therapy (ECT) in severe cases\n\n#### Emergency Procedures\n- ECT: Indicated for severe depression or mania unresponsive to medication; risks include memory loss and confusion.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term mood stabilizers (e.g., lithium, lamotrigine, valproate)\n- Psychotherapy (e.g., cognitive behavioral therapy, family-focused therapy)\n\n#### Second-line Treatments\n- Atypical antipsychotics for maintenance therapy\n\n#### Monitoring Requirements\n- Regular monitoring of mood symptoms and medication side effects\n- Routine blood tests for lithium levels and renal function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lithium\n- **Mechanism of Action**: Mood stabilizer that modulates neurotransmitter release and promotes neuroprotective effects.\n- **Typical Dosing Range**: Initial: 600-900 mg/day; maintenance: 900-1200 mg/day, adjusted based on serum levels (therapeutic range: 0.6-1.2 mEq/L).\n- **Key Side Effects/Contraindications**: Tremor, weight gain, hypothyroidism, renal impairment.\n- **When to Use vs. Alternatives**: Requires regular monitoring of serum levels and renal function.\n\n#### Valproate\n- **Mechanism of Action**: Anticonvulsant with mood-stabilizing properties, enhances GABAergic activity.\n- **Typical Dosing Range**: Initial: 750 mg/day; maintenance: 1000-2000 mg/day, adjusted based on serum levels (therapeutic range: 50-125 mcg/mL).\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, weight gain, hair loss, hepatotoxicity.\n- **When to Use vs. Alternatives**: Monitor liver function tests and platelet counts.\n\n#### Lamotrigine\n- **Mechanism of Action**: Mood stabilizer that inhibits glutamate release and stabilizes neuronal membranes.\n- **Typical Dosing Range**: Initial: 25 mg/day; maintenance: 100-200 mg/day, titrated slowly to reduce risk of rash.\n- **Key Side Effects/Contraindications**: Rash (risk of Stevens-Johnson syndrome), dizziness, headache.\n- **When to Use vs. Alternatives**: Titrate slowly to avoid serious skin reactions.\n\n#### Olanzapine\n- **Mechanism of Action**: Atypical antipsychotic that blocks dopamine and serotonin receptors.\n- **Typical Dosing Range**: Initial: 10 mg/day; can be increased to 20 mg/day as needed.\n- **Key Side Effects/Contraindications**: Sedation, weight gain, metabolic syndrome.\n- **When to Use vs. Alternatives**: Monitor metabolic parameters.\n\n### Procedures\n\n#### Electroconvulsive Therapy (ECT)\n- **What it Involves**: A procedure that involves delivering small electric currents to the brain to induce a seizure, used primarily for severe depression or mania.\n- **Indications**: Severe, treatment-resistant depression or mania, especially with suicidal ideation or catatonia.\n- **Key Risks/Complications**: Memory loss, confusion, cardiovascular complications, headache.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nBipolar disorder is a chronic condition with a variable course. With appropriate treatment, many individuals can achieve significant symptom control and lead fulfilling lives. However, there is a risk of recurrent episodes and comorbid conditions.\n\n### Important Complications to Watch For\n- Suicide risk\n- Substance abuse\n- Comorbid anxiety disorders\n- Cardiovascular disease due to lifestyle factors\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of bipolar disorder, conduct initial assessments, initiate treatment, and refer to psychiatry for further management. They should also monitor for side effects of medications and provide psychoeducation to patients and families.\n\n### When to Escalate to Senior/Specialist\nRefer to psychiatry if there are concerns about safety, severe symptoms, or treatment resistance. Escalate care for patients with suicidal ideation or severe functional impairment.\n\n### Key Safety Considerations\nEnsure regular monitoring of mood symptoms and medication side effects. Be vigilant for signs of mania or depression worsening, and assess for suicidal ideation regularly.\n",
+  "content": {
+    "overview": {
+      "definition": "Bipolar affective disorder (BPAD) is a mood disorder characterized by episodes of mania, hypomania, and depression. It is classified into several types, including Bipolar I, Bipolar II, and Cyclothymic Disorder.",
+      "epidemiology": "The lifetime prevalence of bipolar disorder is approximately 1-3% in the general population, with a similar prevalence in men and women. The onset typically occurs in late adolescence or early adulthood, but it can occur at any age.",
+      "pathophysiology": "The exact pathophysiology of bipolar disorder is not fully understood, but it is believed to involve a combination of genetic, neurobiological, and environmental factors. Neurotransmitter dysregulation (particularly serotonin, norepinephrine, and dopamine) and structural brain changes have been implicated."
+    },
+    "recognition": {
+      "symptoms": [
+        "Manic episodes (elevated mood, increased energy, decreased need for sleep)",
+        "Hypomanic episodes (less severe than mania)",
+        "Depressive episodes (low mood, anhedonia, fatigue)"
+      ],
+      "signs": [
+        "Increased talkativeness",
+        "Racing thoughts",
+        "Distractibility",
+        "Impulsivity",
+        "Psychomotor agitation"
+      ],
+      "atypicalPresentations": [
+        "Mixed episodes (simultaneous symptoms of mania and depression)",
+        "Rapid cycling (four or more mood episodes in a year)"
+      ],
+      "redFlags": [
+        "Suicidal ideation or behavior",
+        "Severe impairment in functioning",
+        "Psychotic features (delusions, hallucinations)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental status examination",
+        "Mood charting (tracking mood changes over time)"
+      ],
+      "secondLine": [
+        "Standardized rating scales (e.g., Young Mania Rating Scale, Hamilton Depression Rating Scale)",
+        "Laboratory tests to rule out medical causes (e.g., thyroid function tests, toxicology screening)"
+      ],
+      "specialistTests": [
+        "Neuroimaging (MRI or CT) if indicated to rule out structural brain abnormalities"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the DSM-5 criteria, which require the presence of at least one manic episode for Bipolar I and one hypomanic episode and one major depressive episode for Bipolar II.",
+      "differentials": [
+        "Major depressive disorder",
+        "Schizoaffective disorder",
+        "Personality disorders (e.g., borderline personality disorder)",
+        "Substance-induced mood disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Mood stabilizers (e.g., lithium, valproate)",
+          "Atypical antipsychotics (e.g., olanzapine, quetiapine)"
+        ],
+        "secondLine": [
+          "Benzodiazepines for acute agitation",
+          "Electroconvulsive therapy (ECT) in severe cases"
+        ],
+        "procedures": [
+          "ECT: Indicated for severe depression or mania unresponsive to medication; risks include memory loss and confusion."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term mood stabilizers (e.g., lithium, lamotrigine, valproate)",
+          "Psychotherapy (e.g., cognitive behavioral therapy, family-focused therapy)"
+        ],
+        "secondLine": [
+          "Atypical antipsychotics for maintenance therapy"
+        ],
+        "monitoring": [
+          "Regular monitoring of mood symptoms and medication side effects",
+          "Routine blood tests for lithium levels and renal function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lithium",
+          "mechanism": "Mood stabilizer that modulates neurotransmitter release and promotes neuroprotective effects.",
+          "dosing": "Initial: 600-900 mg/day; maintenance: 900-1200 mg/day, adjusted based on serum levels (therapeutic range: 0.6-1.2 mEq/L).",
+          "sideEffects": "Tremor, weight gain, hypothyroidism, renal impairment.",
+          "notes": "Requires regular monitoring of serum levels and renal function."
+        },
+        {
+          "name": "Valproate",
+          "mechanism": "Anticonvulsant with mood-stabilizing properties, enhances GABAergic activity.",
+          "dosing": "Initial: 750 mg/day; maintenance: 1000-2000 mg/day, adjusted based on serum levels (therapeutic range: 50-125 mcg/mL).",
+          "sideEffects": "Gastrointestinal upset, weight gain, hair loss, hepatotoxicity.",
+          "notes": "Monitor liver function tests and platelet counts."
+        },
+        {
+          "name": "Lamotrigine",
+          "mechanism": "Mood stabilizer that inhibits glutamate release and stabilizes neuronal membranes.",
+          "dosing": "Initial: 25 mg/day; maintenance: 100-200 mg/day, titrated slowly to reduce risk of rash.",
+          "sideEffects": "Rash (risk of Stevens-Johnson syndrome), dizziness, headache.",
+          "notes": "Titrate slowly to avoid serious skin reactions."
+        },
+        {
+          "name": "Olanzapine",
+          "mechanism": "Atypical antipsychotic that blocks dopamine and serotonin receptors.",
+          "dosing": "Initial: 10 mg/day; can be increased to 20 mg/day as needed.",
+          "sideEffects": "Sedation, weight gain, metabolic syndrome.",
+          "notes": "Monitor metabolic parameters."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electroconvulsive Therapy (ECT)",
+          "description": "A procedure that involves delivering small electric currents to the brain to induce a seizure, used primarily for severe depression or mania.",
+          "indications": "Severe, treatment-resistant depression or mania, especially with suicidal ideation or catatonia.",
+          "risks": "Memory loss, confusion, cardiovascular complications, headache."
+        }
+      ]
+    },
+    "prognosis": "Bipolar disorder is a chronic condition with a variable course. With appropriate treatment, many individuals can achieve significant symptom control and lead fulfilling lives. However, there is a risk of recurrent episodes and comorbid conditions.",
+    "complications": [
+      "Suicide risk",
+      "Substance abuse",
+      "Comorbid anxiety disorders",
+      "Cardiovascular disease due to lifestyle factors"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of bipolar disorder, conduct initial assessments, initiate treatment, and refer to psychiatry for further management. They should also monitor for side effects of medications and provide psychoeducation to patients and families.",
+    "escalation": "Refer to psychiatry if there are concerns about safety, severe symptoms, or treatment resistance. Escalate care for patients with suicidal ideation or severe functional impairment.",
+    "keySafetyConsiderations": "Ensure regular monitoring of mood symptoms and medication side effects. Be vigilant for signs of mania or depression worsening, and assess for suicidal ideation regularly."
+  }
+}

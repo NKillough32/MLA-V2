@@ -1,0 +1,141 @@
+{
+  "id": "chronic_pancreatitis",
+  "name": "Chronic pancreatitis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:41:19.387096",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic pancreatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic pancreatitis is a progressive inflammatory condition of the pancreas characterized by irreversible damage to the pancreatic tissue, leading to fibrosis and loss of exocrine and endocrine function.\n\n### Epidemiology\nChronic pancreatitis has an estimated prevalence of 50-100 cases per 100,000 people, with a higher incidence in males and those aged 30-50 years. Alcohol consumption is a significant risk factor, accounting for approximately 70% of cases in Western countries.\n\n### Essential Pathophysiology\nThe pathophysiology involves repeated episodes of inflammation leading to fibrosis and calcification of the pancreas. This results in the destruction of acinar cells (exocrine function) and islet cells (endocrine function), leading to malabsorption and diabetes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often epigastric, may radiate to the back)\n- Nausea and vomiting\n- Weight loss\n- Steatorrhea (fatty stools)\n- Diabetes mellitus (in advanced cases)\n\n### Key Signs\n- Tenderness in the epigastric region\n- Palpable mass (pseudocyst)\n- Signs of malnutrition\n- Jaundice (if bile duct is compressed)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute exacerbations of abdominal pain\n- Diabetes presenting as polyuria and polydipsia\n\n### Red Flags Requiring Immediate Action\n- Severe, persistent abdominal pain\n- Signs of dehydration or shock\n- New-onset diabetes in older adults\n- Signs of biliary obstruction (jaundice, dark urine)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum amylase and lipase (may be normal in chronic cases)\n- Liver function tests\n- Fecal elastase (to assess exocrine function)\n\n### Second-line Investigations\n- Abdominal ultrasound (to assess for calcifications, pseudocysts)\n- CT scan of the abdomen (to evaluate pancreatic structure)\n- MRCP (to assess for biliary obstruction)\n\n### Specialist Tests\n- Endoscopic ultrasound (EUS)\n- Pancreatic function tests (direct stimulation tests)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, imaging findings, and functional tests indicating pancreatic insufficiency. A combination of abdominal pain, imaging evidence of pancreatic damage, and exocrine insufficiency is typically required.\n\n### Key Differential Diagnoses to Exclude\n- Acute pancreatitis\n- Pancreatic cancer\n- Biliary colic\n- Peptic ulcer disease\n- Gastroesophageal reflux disease (GERD)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management (opioids if necessary)\n- Hydration (IV fluids)\n- Nutritional support (enteral feeding if severe)\n\n#### Second-line Treatments\n- Consideration of ERCP if there is a biliary obstruction\n- Management of complications (e.g., pseudocyst drainage)\n\n#### Emergency Procedures\n- Endoscopic retrograde cholangiopancreatography (ERCP) - to relieve obstruction or remove stones. Risks include pancreatitis, perforation, and infection.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (alcohol cessation, dietary changes)\n- Pancreatic enzyme replacement therapy (PERT)\n\n#### Second-line Treatments\n- Insulin therapy for diabetes management\n- Consideration of surgical options (e.g., Whipple procedure, drainage of pseudocysts)\n\n#### Monitoring Requirements\n- Regular follow-up for diabetes management\n- Nutritional status assessment\n- Monitoring for complications (e.g., pancreatic cancer risk)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pancrelipase\n- **Mechanism of Action**: Replaces pancreatic enzymes to aid digestion.\n- **Typical Dosing Range**: Typically 1-2 capsules with meals, adjusted based on symptoms and fecal fat excretion.\n- **Key Side Effects/Contraindications**: Abdominal discomfort, diarrhea, constipation, and potential for fibrosing colonopathy.\n- **When to Use vs. Alternatives**: Monitor for efficacy and adjust dosage as needed.\n\n#### Insulin\n- **Mechanism of Action**: Replaces insulin in patients with diabetes due to pancreatic insufficiency.\n- **Typical Dosing Range**: Individualized based on blood glucose levels; may start with long-acting insulin at bedtime.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain, injection site reactions.\n- **When to Use vs. Alternatives**: Educate patients on blood glucose monitoring.\n\n### Procedures\n\n#### Endoscopic retrograde cholangiopancreatography (ERCP)\n- **What it Involves**: A procedure to visualize the bile and pancreatic ducts using contrast dye and X-ray.\n- **Indications**: Used for diagnosing and treating obstructions in the bile duct or pancreatic duct.\n- **Key Risks/Complications**: Pancreatitis, perforation, infection, bleeding.\n\n#### Pancreatic duct stenting\n- **What it Involves**: Placement of a stent in the pancreatic duct to relieve obstruction.\n- **Indications**: Used in cases of strictures or stones causing pain or pancreatitis.\n- **Key Risks/Complications**: Infection, stent migration, pancreatitis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of chronic pancreatitis varies; some patients may have stable disease with lifestyle modifications, while others may progress to complications such as diabetes, malnutrition, and pancreatic cancer.\n\n### Important Complications to Watch For\n- Diabetes mellitus\n- Malabsorption and nutritional deficiencies\n- Pancreatic pseudocysts\n- Pancreatic cancer\n- Chronic pain syndromes\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of chronic pancreatitis, initiate investigations, manage acute exacerbations, and provide education on lifestyle modifications. They should also be aware of when to refer to specialists for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology for persistent symptoms, complications, or if surgical intervention is considered. Escalate care for severe pain, signs of infection, or acute complications.\n\n### Key Safety Considerations\nMonitor for signs of dehydration, electrolyte imbalances, and complications such as infection or bleeding post-procedures. Ensure appropriate pain management and nutritional support.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic pancreatitis is a progressive inflammatory condition of the pancreas characterized by irreversible damage to the pancreatic tissue, leading to fibrosis and loss of exocrine and endocrine function.",
+      "epidemiology": "Chronic pancreatitis has an estimated prevalence of 50-100 cases per 100,000 people, with a higher incidence in males and those aged 30-50 years. Alcohol consumption is a significant risk factor, accounting for approximately 70% of cases in Western countries.",
+      "pathophysiology": "The pathophysiology involves repeated episodes of inflammation leading to fibrosis and calcification of the pancreas. This results in the destruction of acinar cells (exocrine function) and islet cells (endocrine function), leading to malabsorption and diabetes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often epigastric, may radiate to the back)",
+        "Nausea and vomiting",
+        "Weight loss",
+        "Steatorrhea (fatty stools)",
+        "Diabetes mellitus (in advanced cases)"
+      ],
+      "signs": [
+        "Tenderness in the epigastric region",
+        "Palpable mass (pseudocyst)",
+        "Signs of malnutrition",
+        "Jaundice (if bile duct is compressed)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute exacerbations of abdominal pain",
+        "Diabetes presenting as polyuria and polydipsia"
+      ],
+      "redFlags": [
+        "Severe, persistent abdominal pain",
+        "Signs of dehydration or shock",
+        "New-onset diabetes in older adults",
+        "Signs of biliary obstruction (jaundice, dark urine)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum amylase and lipase (may be normal in chronic cases)",
+        "Liver function tests",
+        "Fecal elastase (to assess exocrine function)"
+      ],
+      "secondLine": [
+        "Abdominal ultrasound (to assess for calcifications, pseudocysts)",
+        "CT scan of the abdomen (to evaluate pancreatic structure)",
+        "MRCP (to assess for biliary obstruction)"
+      ],
+      "specialistTests": [
+        "Endoscopic ultrasound (EUS)",
+        "Pancreatic function tests (direct stimulation tests)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, imaging findings, and functional tests indicating pancreatic insufficiency. A combination of abdominal pain, imaging evidence of pancreatic damage, and exocrine insufficiency is typically required.",
+      "differentials": [
+        "Acute pancreatitis",
+        "Pancreatic cancer",
+        "Biliary colic",
+        "Peptic ulcer disease",
+        "Gastroesophageal reflux disease (GERD)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management (opioids if necessary)",
+          "Hydration (IV fluids)",
+          "Nutritional support (enteral feeding if severe)"
+        ],
+        "secondLine": [
+          "Consideration of ERCP if there is a biliary obstruction",
+          "Management of complications (e.g., pseudocyst drainage)"
+        ],
+        "procedures": [
+          "Endoscopic retrograde cholangiopancreatography (ERCP) - to relieve obstruction or remove stones. Risks include pancreatitis, perforation, and infection."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (alcohol cessation, dietary changes)",
+          "Pancreatic enzyme replacement therapy (PERT)"
+        ],
+        "secondLine": [
+          "Insulin therapy for diabetes management",
+          "Consideration of surgical options (e.g., Whipple procedure, drainage of pseudocysts)"
+        ],
+        "monitoring": [
+          "Regular follow-up for diabetes management",
+          "Nutritional status assessment",
+          "Monitoring for complications (e.g., pancreatic cancer risk)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pancrelipase",
+          "mechanism": "Replaces pancreatic enzymes to aid digestion.",
+          "dosing": "Typically 1-2 capsules with meals, adjusted based on symptoms and fecal fat excretion.",
+          "sideEffects": "Abdominal discomfort, diarrhea, constipation, and potential for fibrosing colonopathy.",
+          "notes": "Monitor for efficacy and adjust dosage as needed."
+        },
+        {
+          "name": "Insulin",
+          "mechanism": "Replaces insulin in patients with diabetes due to pancreatic insufficiency.",
+          "dosing": "Individualized based on blood glucose levels; may start with long-acting insulin at bedtime.",
+          "sideEffects": "Hypoglycemia, weight gain, injection site reactions.",
+          "notes": "Educate patients on blood glucose monitoring."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endoscopic retrograde cholangiopancreatography (ERCP)",
+          "description": "A procedure to visualize the bile and pancreatic ducts using contrast dye and X-ray.",
+          "indications": "Used for diagnosing and treating obstructions in the bile duct or pancreatic duct.",
+          "risks": "Pancreatitis, perforation, infection, bleeding."
+        },
+        {
+          "name": "Pancreatic duct stenting",
+          "description": "Placement of a stent in the pancreatic duct to relieve obstruction.",
+          "indications": "Used in cases of strictures or stones causing pain or pancreatitis.",
+          "risks": "Infection, stent migration, pancreatitis."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of chronic pancreatitis varies; some patients may have stable disease with lifestyle modifications, while others may progress to complications such as diabetes, malnutrition, and pancreatic cancer.",
+    "complications": [
+      "Diabetes mellitus",
+      "Malabsorption and nutritional deficiencies",
+      "Pancreatic pseudocysts",
+      "Pancreatic cancer",
+      "Chronic pain syndromes"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of chronic pancreatitis, initiate investigations, manage acute exacerbations, and provide education on lifestyle modifications. They should also be aware of when to refer to specialists for further management.",
+    "escalation": "Refer to gastroenterology for persistent symptoms, complications, or if surgical intervention is considered. Escalate care for severe pain, signs of infection, or acute complications.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration, electrolyte imbalances, and complications such as infection or bleeding post-procedures. Ensure appropriate pain management and nutritional support."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "peripheral_nerve_injuriespalsies_bells_palsy",
+  "name": "Peripheral nerve injuries/palsies - Bell's Palsy",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:50:25.570677",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peripheral nerve injuries/palsies - Bell's Palsy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBell's Palsy is an acute, unilateral facial nerve (cranial nerve VII) palsy characterized by sudden onset of facial weakness or paralysis, typically resolving within weeks to months.\n\n### Epidemiology\nBell's Palsy affects approximately 20-30 people per 100,000 annually, with a higher incidence in individuals aged 15-60 years. It is more common in pregnant women and individuals with a history of respiratory infections.\n\n### Essential Pathophysiology\nThe exact cause of Bell's Palsy is unknown, but it is believed to be related to viral infections (e.g., herpes simplex virus) leading to inflammation and demyelination of the facial nerve, resulting in motor dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of facial weakness or paralysis on one side of the face\n- Inability to close the eye on the affected side\n- Loss of the ability to smile or frown symmetrically\n- Altered taste sensation on the anterior two-thirds of the tongue\n- Increased sensitivity to sound (hyperacusis)\n\n### Key Signs\n- Asymmetry of the face\n- Drooping of the mouth and eyelid on the affected side\n- Inability to raise the eyebrow on the affected side\n- Loss of nasolabial fold on the affected side\n\n### Atypical Presentations\n- Bilateral facial weakness (rare)\n- Facial spasms or twitching\n- Associated symptoms such as ear pain or headache\n\n### Red Flags Requiring Immediate Action\n- Presence of other neurological deficits\n- Onset after trauma or surgery\n- Persistent symptoms beyond 3 months\n- Signs of a more serious underlying condition (e.g., tumors, infections)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment based on history and physical examination\n\n### Second-line Investigations\n- MRI or CT scan if atypical features are present or to rule out other causes\n\n### Specialist Tests\n- Electromyography (EMG) may be used to assess the degree of nerve damage\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the sudden onset of unilateral facial weakness with no other neurological signs.\n\n### Key Differential Diagnoses to Exclude\n- Stroke (CVA)\n- Transient Ischemic Attack (TIA)\n- Multiple Sclerosis (MS)\n- Tumors affecting the facial nerve\n- Lyme disease\n- Sarcoidosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., Prednisolone) within 72 hours of symptom onset to reduce inflammation\n\n#### Second-line Treatments\n- Analgesics for pain management\n- Eye care (e.g., artificial tears, eye patching) to protect the cornea\n\n#### Emergency Procedures\n- None specific for Bell's Palsy, but surgical decompression may be considered in severe cases with poor prognosis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to improve facial muscle function and prevent contractures\n\n#### Second-line Treatments\n- Consideration of surgical options if significant functional impairment persists\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and manage complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema around the facial nerve.\n- **Typical Dosing Range**: Initial dose of 60-80 mg daily for 5-7 days, then tapering off over 10 days.\n- **Key Side Effects/Contraindications**: Increased appetite, weight gain, mood changes, insomnia, gastrointestinal upset, increased risk of infection.\n- **When to Use vs. Alternatives**: Start within 72 hours of symptom onset for maximum benefit.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients (70-85%) recover completely within 3-6 months, but some may experience residual weakness or synkinesis (involuntary facial movements).\n\n### Important Complications to Watch For\n- Persistent facial weakness\n- Synkinesis (involuntary facial movements)\n- Corneal exposure and damage due to inability to close the eye\n- Psychosocial impact due to facial disfigurement\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform a thorough clinical assessment, initiate treatment with corticosteroids, provide supportive care, and ensure appropriate follow-up. They should also educate patients about the condition and its prognosis.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if there are atypical features, lack of improvement after 3 months, or if there are concerns about other neurological conditions.\n\n### Key Safety Considerations\nEnsure eye protection in patients unable to close their eyelids, monitor for signs of complications, and provide clear follow-up instructions.\n",
+  "content": {
+    "overview": {
+      "definition": "Bell's Palsy is an acute, unilateral facial nerve (cranial nerve VII) palsy characterized by sudden onset of facial weakness or paralysis, typically resolving within weeks to months.",
+      "epidemiology": "Bell's Palsy affects approximately 20-30 people per 100,000 annually, with a higher incidence in individuals aged 15-60 years. It is more common in pregnant women and individuals with a history of respiratory infections.",
+      "pathophysiology": "The exact cause of Bell's Palsy is unknown, but it is believed to be related to viral infections (e.g., herpes simplex virus) leading to inflammation and demyelination of the facial nerve, resulting in motor dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of facial weakness or paralysis on one side of the face",
+        "Inability to close the eye on the affected side",
+        "Loss of the ability to smile or frown symmetrically",
+        "Altered taste sensation on the anterior two-thirds of the tongue",
+        "Increased sensitivity to sound (hyperacusis)"
+      ],
+      "signs": [
+        "Asymmetry of the face",
+        "Drooping of the mouth and eyelid on the affected side",
+        "Inability to raise the eyebrow on the affected side",
+        "Loss of nasolabial fold on the affected side"
+      ],
+      "atypicalPresentations": [
+        "Bilateral facial weakness (rare)",
+        "Facial spasms or twitching",
+        "Associated symptoms such as ear pain or headache"
+      ],
+      "redFlags": [
+        "Presence of other neurological deficits",
+        "Onset after trauma or surgery",
+        "Persistent symptoms beyond 3 months",
+        "Signs of a more serious underlying condition (e.g., tumors, infections)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment based on history and physical examination"
+      ],
+      "secondLine": [
+        "MRI or CT scan if atypical features are present or to rule out other causes"
+      ],
+      "specialistTests": [
+        "Electromyography (EMG) may be used to assess the degree of nerve damage"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the sudden onset of unilateral facial weakness with no other neurological signs.",
+      "differentials": [
+        "Stroke (CVA)",
+        "Transient Ischemic Attack (TIA)",
+        "Multiple Sclerosis (MS)",
+        "Tumors affecting the facial nerve",
+        "Lyme disease",
+        "Sarcoidosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., Prednisolone) within 72 hours of symptom onset to reduce inflammation"
+        ],
+        "secondLine": [
+          "Analgesics for pain management",
+          "Eye care (e.g., artificial tears, eye patching) to protect the cornea"
+        ],
+        "procedures": [
+          "None specific for Bell's Palsy, but surgical decompression may be considered in severe cases with poor prognosis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to improve facial muscle function and prevent contractures"
+        ],
+        "secondLine": [
+          "Consideration of surgical options if significant functional impairment persists"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and manage complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema around the facial nerve.",
+          "dosing": "Initial dose of 60-80 mg daily for 5-7 days, then tapering off over 10 days.",
+          "sideEffects": "Increased appetite, weight gain, mood changes, insomnia, gastrointestinal upset, increased risk of infection.",
+          "notes": "Start within 72 hours of symptom onset for maximum benefit."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Most patients (70-85%) recover completely within 3-6 months, but some may experience residual weakness or synkinesis (involuntary facial movements).",
+    "complications": [
+      "Persistent facial weakness",
+      "Synkinesis (involuntary facial movements)",
+      "Corneal exposure and damage due to inability to close the eye",
+      "Psychosocial impact due to facial disfigurement"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform a thorough clinical assessment, initiate treatment with corticosteroids, provide supportive care, and ensure appropriate follow-up. They should also educate patients about the condition and its prognosis.",
+    "escalation": "Refer to a neurologist if there are atypical features, lack of improvement after 3 months, or if there are concerns about other neurological conditions.",
+    "keySafetyConsiderations": "Ensure eye protection in patients unable to close their eyelids, monitor for signs of complications, and provide clear follow-up instructions."
+  }
+}

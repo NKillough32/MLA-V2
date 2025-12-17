@@ -1,0 +1,153 @@
+{
+  "id": "systemic_lupus_erythematosus_sle",
+  "name": "Systemic lupus erythematosus (SLE)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:35:01.659603",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Systemic lupus erythematosus (SLE): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSystemic lupus erythematosus (SLE) is a chronic autoimmune disease characterized by the production of autoantibodies and widespread inflammation affecting multiple organ systems.\n\n### Epidemiology\nSLE predominantly affects women of childbearing age, with a prevalence of approximately 20-150 cases per 100,000 people. It is more common in individuals of African, Asian, and Hispanic descent.\n\n### Essential Pathophysiology\nThe pathophysiology of SLE involves a complex interplay of genetic, environmental, and hormonal factors leading to immune dysregulation. This results in the production of autoantibodies against nuclear antigens, causing inflammation and damage to various tissues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Fever\n- Weight loss\n- Joint pain and swelling\n- Skin rashes (e.g., butterfly rash)\n- Photosensitivity\n- Oral ulcers\n- Hair loss\n\n### Key Signs\n- Malar rash (butterfly rash)\n- Discoid rash\n- Arthritis (swelling and tenderness in joints)\n- Serositis (pleuritis or pericarditis)\n- Raynaud's phenomenon\n- Lymphadenopathy\n- Splenomegaly\n\n### Atypical Presentations\n- Neuropsychiatric symptoms (e.g., seizures, psychosis)\n- Renal involvement (lupus nephritis)\n- Hematological abnormalities (e.g., anemia, thrombocytopenia)\n\n### Red Flags Requiring Immediate Action\n- Severe headache or visual disturbances (possible CNS involvement)\n- Chest pain or dyspnea (possible pleuritis or pericarditis)\n- Acute kidney injury (possible lupus nephritis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Urinalysis (to check for proteinuria and hematuria)\n- Antinuclear antibody (ANA) test\n\n### Second-line Investigations\n- Anti-double-stranded DNA (anti-dsDNA) antibodies\n- Anti-Smith (anti-Sm) antibodies\n- Complement levels (C3, C4)\n- Urine protein-to-creatinine ratio\n\n### Specialist Tests\n- Kidney biopsy (if lupus nephritis is suspected)\n- Imaging studies (e.g., chest X-ray for pleuritis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nThe diagnosis of SLE is based on the 2019 EULAR/ACR classification criteria, which include clinical and immunological criteria. A patient must meet at least 4 of the 11 criteria, with at least one clinical and one immunological criterion.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Sjögren's syndrome\n- Dermatomyositis\n- Mixed connective tissue disease\n- Vasculitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs for pain and inflammation\n- Corticosteroids for acute flares\n\n#### Second-line Treatments\n- Hydroxychloroquine for skin and joint symptoms\n\n#### Emergency Procedures\n- Joint aspiration (for diagnostic and therapeutic purposes)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hydroxychloroquine for long-term management\n- Low-dose corticosteroids for maintenance\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine, mycophenolate mofetil) for severe cases\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity assessment\n- Monitoring for drug side effects (e.g., liver function tests for immunosuppressants)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydroxychloroquine\n- **Mechanism of Action**: Antimalarial that modulates immune response and reduces inflammation.\n- **Typical Dosing Range**: 200-400 mg daily.\n- **Key Side Effects/Contraindications**: Retinal toxicity, gastrointestinal upset, skin rash.\n- **When to Use vs. Alternatives**: Regular eye examinations are recommended due to the risk of retinal damage.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.\n- **Typical Dosing Range**: 1-3 mg/kg/day.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor complete blood counts regularly.\n\n#### Mycophenolate mofetil\n- **Mechanism of Action**: Inhibits lymphocyte proliferation by blocking purine synthesis.\n- **Typical Dosing Range**: 1-3 g daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, increased infection risk, teratogenicity.\n- **When to Use vs. Alternatives**: Use with caution in women of childbearing age.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects.\n- **Typical Dosing Range**: Tapered doses based on disease severity.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, hypertension, diabetes.\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: A procedure to remove synovial fluid from a joint space for diagnostic or therapeutic purposes.\n- **Indications**: Swollen, painful joints to assess for infection, crystals, or inflammatory changes.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of SLE varies widely; with appropriate management, many patients can lead normal lives. However, severe organ involvement can lead to significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Lupus nephritis\n- Cardiovascular disease\n- Infections due to immunosuppression\n- Pulmonary hypertension\n- CNS involvement (seizures, psychosis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of SLE, perform initial investigations, and manage acute flares. They should also be aware of the need for multidisciplinary care involving rheumatology, nephrology, and dermatology.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist for patients with suspected SLE, especially if there is significant organ involvement or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess for potential drug side effects, particularly with long-term corticosteroid use.\n",
+  "content": {
+    "overview": {
+      "definition": "Systemic lupus erythematosus (SLE) is a chronic autoimmune disease characterized by the production of autoantibodies and widespread inflammation affecting multiple organ systems.",
+      "epidemiology": "SLE predominantly affects women of childbearing age, with a prevalence of approximately 20-150 cases per 100,000 people. It is more common in individuals of African, Asian, and Hispanic descent.",
+      "pathophysiology": "The pathophysiology of SLE involves a complex interplay of genetic, environmental, and hormonal factors leading to immune dysregulation. This results in the production of autoantibodies against nuclear antigens, causing inflammation and damage to various tissues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Fever",
+        "Weight loss",
+        "Joint pain and swelling",
+        "Skin rashes (e.g., butterfly rash)",
+        "Photosensitivity",
+        "Oral ulcers",
+        "Hair loss"
+      ],
+      "signs": [
+        "Malar rash (butterfly rash)",
+        "Discoid rash",
+        "Arthritis (swelling and tenderness in joints)",
+        "Serositis (pleuritis or pericarditis)",
+        "Raynaud's phenomenon",
+        "Lymphadenopathy",
+        "Splenomegaly"
+      ],
+      "atypicalPresentations": [
+        "Neuropsychiatric symptoms (e.g., seizures, psychosis)",
+        "Renal involvement (lupus nephritis)",
+        "Hematological abnormalities (e.g., anemia, thrombocytopenia)"
+      ],
+      "redFlags": [
+        "Severe headache or visual disturbances (possible CNS involvement)",
+        "Chest pain or dyspnea (possible pleuritis or pericarditis)",
+        "Acute kidney injury (possible lupus nephritis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Urinalysis (to check for proteinuria and hematuria)",
+        "Antinuclear antibody (ANA) test"
+      ],
+      "secondLine": [
+        "Anti-double-stranded DNA (anti-dsDNA) antibodies",
+        "Anti-Smith (anti-Sm) antibodies",
+        "Complement levels (C3, C4)",
+        "Urine protein-to-creatinine ratio"
+      ],
+      "specialistTests": [
+        "Kidney biopsy (if lupus nephritis is suspected)",
+        "Imaging studies (e.g., chest X-ray for pleuritis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "The diagnosis of SLE is based on the 2019 EULAR/ACR classification criteria, which include clinical and immunological criteria. A patient must meet at least 4 of the 11 criteria, with at least one clinical and one immunological criterion.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Sjögren's syndrome",
+        "Dermatomyositis",
+        "Mixed connective tissue disease",
+        "Vasculitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs for pain and inflammation",
+          "Corticosteroids for acute flares"
+        ],
+        "secondLine": [
+          "Hydroxychloroquine for skin and joint symptoms"
+        ],
+        "procedures": [
+          "Joint aspiration (for diagnostic and therapeutic purposes)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hydroxychloroquine for long-term management",
+          "Low-dose corticosteroids for maintenance"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine, mycophenolate mofetil) for severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity assessment",
+          "Monitoring for drug side effects (e.g., liver function tests for immunosuppressants)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydroxychloroquine",
+          "mechanism": "Antimalarial that modulates immune response and reduces inflammation.",
+          "dosing": "200-400 mg daily.",
+          "sideEffects": "Retinal toxicity, gastrointestinal upset, skin rash.",
+          "notes": "Regular eye examinations are recommended due to the risk of retinal damage."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.",
+          "dosing": "1-3 mg/kg/day.",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk.",
+          "notes": "Monitor complete blood counts regularly."
+        },
+        {
+          "name": "Mycophenolate mofetil",
+          "mechanism": "Inhibits lymphocyte proliferation by blocking purine synthesis.",
+          "dosing": "1-3 g daily.",
+          "sideEffects": "Gastrointestinal upset, increased infection risk, teratogenicity.",
+          "notes": "Use with caution in women of childbearing age."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects.",
+          "dosing": "Tapered doses based on disease severity.",
+          "sideEffects": "Weight gain, osteoporosis, hypertension, diabetes.",
+          "notes": "Long-term use requires monitoring for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "A procedure to remove synovial fluid from a joint space for diagnostic or therapeutic purposes.",
+          "indications": "Swollen, painful joints to assess for infection, crystals, or inflammatory changes.",
+          "risks": "Infection, bleeding, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of SLE varies widely; with appropriate management, many patients can lead normal lives. However, severe organ involvement can lead to significant morbidity and mortality.",
+    "complications": [
+      "Lupus nephritis",
+      "Cardiovascular disease",
+      "Infections due to immunosuppression",
+      "Pulmonary hypertension",
+      "CNS involvement (seizures, psychosis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of SLE, perform initial investigations, and manage acute flares. They should also be aware of the need for multidisciplinary care involving rheumatology, nephrology, and dermatology.",
+    "escalation": "Refer to a rheumatologist for patients with suspected SLE, especially if there is significant organ involvement or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess for potential drug side effects, particularly with long-term corticosteroid use."
+  }
+}

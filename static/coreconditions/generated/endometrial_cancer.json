@@ -1,0 +1,137 @@
+{
+  "id": "endometrial_cancer",
+  "name": "Endometrial cancer?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:14:30.249277",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Endometrial cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEndometrial cancer is a malignancy that arises from the endometrial lining of the uterus, most commonly presenting as abnormal uterine bleeding in postmenopausal women.\n\n### Epidemiology\nIt is the most common gynecological cancer in developed countries, with an incidence rate of approximately 25 per 100,000 women. The risk increases with age, obesity, and certain hormonal factors.\n\n### Essential Pathophysiology\nEndometrial cancer typically arises from the endometrial glands and is often associated with prolonged estrogen exposure without adequate progesterone. This can lead to hyperplasia and eventually malignant transformation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abnormal uterine bleeding (postmenopausal or intermenstrual)\n- Pelvic pain\n- Weight loss\n- Fatigue\n- Changes in bowel or bladder habits\n\n### Key Signs\n- Enlarged uterus on examination\n- Abnormalities on pelvic examination\n- Possible ascites in advanced disease\n\n### Atypical Presentations\n- Vaginal discharge (clear or bloody)\n- Anemia due to chronic blood loss\n\n### Red Flags Requiring Immediate Action\n- Postmenopausal bleeding\n- Bleeding in women on tamoxifen therapy\n- Rapidly growing pelvic mass\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Transvaginal ultrasound (TVUS) to assess endometrial thickness\n- Endometrial biopsy (office procedure)\n\n### Second-line Investigations\n- Hysteroscopy with biopsy\n- MRI pelvis for staging\n\n### Specialist Tests\n- CT scan of abdomen and pelvis for staging\n- PET scan if metastatic disease is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of endometrial tissue showing malignant cells.\n\n### Key Differential Diagnoses to Exclude\n- Endometrial hyperplasia\n- Uterine fibroids\n- Cervical cancer\n- Ovarian cancer\n- Pelvic inflammatory disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to gynecological oncology for suspected malignancy\n- Pain management as needed\n\n#### Second-line Treatments\n- Consideration of imaging studies for staging\n\n#### Emergency Procedures\n- D&C (Dilation and Curettage) for diagnostic purposes if biopsy inconclusive\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical management (hysterectomy with bilateral salpingo-oophorectomy) is the mainstay for localized disease\n- Adjuvant therapy (radiation therapy) for high-risk patients\n\n#### Second-line Treatments\n- Hormonal therapy (progestins) for advanced or recurrent disease\n\n#### Monitoring Requirements\n- Regular follow-up with gynecological oncology for recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Progestins (e.g., Medroxyprogesterone acetate)\n- **Mechanism of Action**: Inhibits endometrial proliferation and induces differentiation\n- **Typical Dosing Range**: 10-20 mg orally daily for 10-14 days per month\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, breast tenderness\n- **When to Use vs. Alternatives**: Used in cases of advanced disease or for patients who wish to preserve fertility.\n\n#### Tamoxifen\n- **Mechanism of Action**: Selective estrogen receptor modulator (SERM)\n- **Typical Dosing Range**: 20 mg orally daily\n- **Key Side Effects/Contraindications**: Hot flashes, risk of endometrial cancer, thromboembolic events\n- **When to Use vs. Alternatives**: Used in patients with ER-positive tumors.\n\n#### Chemotherapy (e.g., Carboplatin and Paclitaxel)\n- **Mechanism of Action**: Cytotoxic agents that inhibit cancer cell division\n- **Typical Dosing Range**: Carboplatin AUC 5-6 and Paclitaxel 175 mg/m2 IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, myelosuppression, neuropathy\n- **When to Use vs. Alternatives**: Used in advanced or recurrent disease.\n\n### Procedures\n\n#### Hysterectomy\n- **What it Involves**: Surgical removal of the uterus, often with removal of ovaries and fallopian tubes.\n- **Indications**: Stage I endometrial cancer, high-risk hyperplasia\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs, anesthesia risks.\n\n#### Radiation therapy\n- **What it Involves**: Use of high-energy rays to kill cancer cells, can be external beam or brachytherapy.\n- **Indications**: Adjuvant treatment for high-risk patients or palliative care for advanced disease\n- **Key Risks/Complications**: Fatigue, skin irritation, potential damage to surrounding tissues.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe 5-year survival rate for localized endometrial cancer is approximately 95%, but this decreases significantly with advanced disease.\n\n### Important Complications to Watch For\n- Recurrence of cancer\n- Metastasis to other organs\n- Surgical complications (infection, bleeding)\n- Psychosocial impact of cancer diagnosis and treatment.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of endometrial cancer, perform initial assessments, and refer patients appropriately. They should also be aware of the importance of follow-up care and monitoring for recurrence.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected endometrial cancer should be escalated to gynecological oncology for further evaluation and management. Any patient with significant symptoms or red flags should be referred urgently.\n\n### Key Safety Considerations\nEnsure informed consent is obtained for all procedures, monitor for signs of complications post-surgery, and provide appropriate patient education regarding symptoms of recurrence.\n",
+  "content": {
+    "overview": {
+      "definition": "Endometrial cancer is a malignancy that arises from the endometrial lining of the uterus, most commonly presenting as abnormal uterine bleeding in postmenopausal women.",
+      "epidemiology": "It is the most common gynecological cancer in developed countries, with an incidence rate of approximately 25 per 100,000 women. The risk increases with age, obesity, and certain hormonal factors.",
+      "pathophysiology": "Endometrial cancer typically arises from the endometrial glands and is often associated with prolonged estrogen exposure without adequate progesterone. This can lead to hyperplasia and eventually malignant transformation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abnormal uterine bleeding (postmenopausal or intermenstrual)",
+        "Pelvic pain",
+        "Weight loss",
+        "Fatigue",
+        "Changes in bowel or bladder habits"
+      ],
+      "signs": [
+        "Enlarged uterus on examination",
+        "Abnormalities on pelvic examination",
+        "Possible ascites in advanced disease"
+      ],
+      "atypicalPresentations": [
+        "Vaginal discharge (clear or bloody)",
+        "Anemia due to chronic blood loss"
+      ],
+      "redFlags": [
+        "Postmenopausal bleeding",
+        "Bleeding in women on tamoxifen therapy",
+        "Rapidly growing pelvic mass"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Transvaginal ultrasound (TVUS) to assess endometrial thickness",
+        "Endometrial biopsy (office procedure)"
+      ],
+      "secondLine": [
+        "Hysteroscopy with biopsy",
+        "MRI pelvis for staging"
+      ],
+      "specialistTests": [
+        "CT scan of abdomen and pelvis for staging",
+        "PET scan if metastatic disease is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of endometrial tissue showing malignant cells.",
+      "differentials": [
+        "Endometrial hyperplasia",
+        "Uterine fibroids",
+        "Cervical cancer",
+        "Ovarian cancer",
+        "Pelvic inflammatory disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to gynecological oncology for suspected malignancy",
+          "Pain management as needed"
+        ],
+        "secondLine": [
+          "Consideration of imaging studies for staging"
+        ],
+        "procedures": [
+          "D&C (Dilation and Curettage) for diagnostic purposes if biopsy inconclusive"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical management (hysterectomy with bilateral salpingo-oophorectomy) is the mainstay for localized disease",
+          "Adjuvant therapy (radiation therapy) for high-risk patients"
+        ],
+        "secondLine": [
+          "Hormonal therapy (progestins) for advanced or recurrent disease"
+        ],
+        "monitoring": [
+          "Regular follow-up with gynecological oncology for recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Progestins (e.g., Medroxyprogesterone acetate)",
+          "mechanism": "Inhibits endometrial proliferation and induces differentiation",
+          "dosing": "10-20 mg orally daily for 10-14 days per month",
+          "sideEffects": "Weight gain, mood changes, breast tenderness",
+          "notes": "Used in cases of advanced disease or for patients who wish to preserve fertility."
+        },
+        {
+          "name": "Tamoxifen",
+          "mechanism": "Selective estrogen receptor modulator (SERM)",
+          "dosing": "20 mg orally daily",
+          "sideEffects": "Hot flashes, risk of endometrial cancer, thromboembolic events",
+          "notes": "Used in patients with ER-positive tumors."
+        },
+        {
+          "name": "Chemotherapy (e.g., Carboplatin and Paclitaxel)",
+          "mechanism": "Cytotoxic agents that inhibit cancer cell division",
+          "dosing": "Carboplatin AUC 5-6 and Paclitaxel 175 mg/m2 IV every 3 weeks",
+          "sideEffects": "Nausea, vomiting, myelosuppression, neuropathy",
+          "notes": "Used in advanced or recurrent disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Hysterectomy",
+          "description": "Surgical removal of the uterus, often with removal of ovaries and fallopian tubes.",
+          "indications": "Stage I endometrial cancer, high-risk hyperplasia",
+          "risks": "Infection, bleeding, injury to surrounding organs, anesthesia risks."
+        },
+        {
+          "name": "Radiation therapy",
+          "description": "Use of high-energy rays to kill cancer cells, can be external beam or brachytherapy.",
+          "indications": "Adjuvant treatment for high-risk patients or palliative care for advanced disease",
+          "risks": "Fatigue, skin irritation, potential damage to surrounding tissues."
+        }
+      ]
+    },
+    "prognosis": "The 5-year survival rate for localized endometrial cancer is approximately 95%, but this decreases significantly with advanced disease.",
+    "complications": [
+      "Recurrence of cancer",
+      "Metastasis to other organs",
+      "Surgical complications (infection, bleeding)",
+      "Psychosocial impact of cancer diagnosis and treatment."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of endometrial cancer, perform initial assessments, and refer patients appropriately. They should also be aware of the importance of follow-up care and monitoring for recurrence.",
+    "escalation": "Patients with suspected endometrial cancer should be escalated to gynecological oncology for further evaluation and management. Any patient with significant symptoms or red flags should be referred urgently.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained for all procedures, monitor for signs of complications post-surgery, and provide appropriate patient education regarding symptoms of recurrence."
+  }
+}

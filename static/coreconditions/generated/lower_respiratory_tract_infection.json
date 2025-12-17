@@ -1,0 +1,151 @@
+{
+  "id": "lower_respiratory_tract_infection",
+  "name": "Lower respiratory tract infection",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:22:48.225154",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lower respiratory tract infection: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLower respiratory tract infection (LRTI) refers to infections that affect the airways and lungs, including conditions such as pneumonia, bronchitis, and bronchiolitis.\n\n### Epidemiology\nLRTIs are a leading cause of morbidity and mortality worldwide, particularly in children, the elderly, and immunocompromised individuals. They account for significant healthcare costs and hospital admissions.\n\n### Essential Pathophysiology\nLRTIs are typically caused by viral or bacterial pathogens that invade the lower respiratory tract, leading to inflammation, increased mucus production, and impaired gas exchange. The inflammatory response can result in alveolar damage and consolidation in pneumonia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cough (productive or non-productive)\n- Shortness of breath\n- Chest pain (pleuritic)\n- Fever\n- Chills\n- Fatigue\n- Wheezing\n- Sputum production (color may vary)\n\n### Key Signs\n- Tachypnea\n- Tachycardia\n- Hypoxia (low oxygen saturation)\n- Crackles or wheezes on auscultation\n- Dullness to percussion (in pneumonia)\n- Increased respiratory effort\n\n### Atypical Presentations\n- Confusion or altered mental status (especially in elderly)\n- Gastrointestinal symptoms (nausea, vomiting)\n- Exacerbation of chronic respiratory conditions (e.g., asthma, COPD)\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Cyanosis\n- Hypotension\n- Altered consciousness\n- Persistent high fever despite treatment\n- Signs of sepsis (e.g., high heart rate, low blood pressure)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (to assess for pneumonia or other abnormalities)\n- Pulse oximetry (to assess oxygen saturation)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Sputum culture and sensitivity (if productive cough)\n- Blood cultures (if sepsis is suspected)\n- CT chest (if complications or atypical presentation)\n\n### Specialist Tests\n- Bronchoscopy (for suspected foreign body or malignancy)\n- Viral PCR (for specific viral pathogens)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of LRTI is based on clinical presentation, history, and supportive investigations (e.g., chest X-ray findings). Pneumonia is often diagnosed with the presence of new infiltrates on imaging and clinical symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Acute bronchitis\n- Chronic obstructive pulmonary disease (COPD) exacerbation\n- Asthma exacerbation\n- Pulmonary embolism\n- Lung cancer\n- Tuberculosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antibiotics (if bacterial pneumonia is suspected)\n- Bronchodilators (for wheezing or bronchospasm)\n- Oxygen therapy (if hypoxic)\n\n#### Second-line Treatments\n- Corticosteroids (for severe inflammation or COPD exacerbation)\n- Intravenous fluids (if dehydrated)\n\n#### Emergency Procedures\n- Chest physiotherapy (to aid sputum clearance)\n- Thoracentesis (if pleural effusion is present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Smoking cessation (if applicable)\n- Long-acting bronchodilators (for COPD)\n- Inhaled corticosteroids (for asthma)\n\n#### Second-line Treatments\n- Pulmonary rehabilitation programs\n- Long-term oxygen therapy (if indicated)\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess lung function\n- Vaccination status (e.g., influenza, pneumococcal vaccines)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 500 mg TID for mild pneumonia; higher doses for severe cases\n- **Key Side Effects/Contraindications**: Diarrhea, rash, allergic reactions\n- **When to Use vs. Alternatives**: Consider in community-acquired pneumonia.\n\n#### Azithromycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis\n- **Typical Dosing Range**: 500 mg on day 1, then 250 mg daily for 4 days\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, QT prolongation\n- **When to Use vs. Alternatives**: Useful for atypical pathogens.\n\n#### Salbutamol (Albuterol)\n- **Mechanism of Action**: Beta-2 agonist causing bronchodilation\n- **Typical Dosing Range**: Inhaler: 100-200 mcg as needed; nebulizer: 2.5 mg in 2.5 mL saline\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia\n- **When to Use vs. Alternatives**: Used for wheezing and bronchospasm.\n\n### Procedures\n\n#### Thoracentesis\n- **What it Involves**: Needle insertion into the pleural space to remove fluid or air\n- **Indications**: Pleural effusion, suspected empyema\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of LRTIs varies based on the causative organism, patient age, and comorbidities. Most patients recover with appropriate treatment, but complications can arise, especially in high-risk groups.\n\n### Important Complications to Watch For\n- Pleural effusion\n- Empyema\n- Respiratory failure\n- Sepsis\n- Lung abscess\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate treatment, and monitor patient progress. They should also recognize when to escalate care to senior clinicians.\n\n### When to Escalate to Senior/Specialist\nEscalate care if the patient shows signs of severe respiratory distress, persistent hypoxia, or if there is a lack of clinical improvement despite treatment.\n\n### Key Safety Considerations\nEnsure appropriate hand hygiene and infection control measures are in place. Monitor for adverse drug reactions, especially in patients receiving antibiotics or bronchodilators. Be vigilant for signs of deterioration in respiratory status.\n",
+  "content": {
+    "overview": {
+      "definition": "Lower respiratory tract infection (LRTI) refers to infections that affect the airways and lungs, including conditions such as pneumonia, bronchitis, and bronchiolitis.",
+      "epidemiology": "LRTIs are a leading cause of morbidity and mortality worldwide, particularly in children, the elderly, and immunocompromised individuals. They account for significant healthcare costs and hospital admissions.",
+      "pathophysiology": "LRTIs are typically caused by viral or bacterial pathogens that invade the lower respiratory tract, leading to inflammation, increased mucus production, and impaired gas exchange. The inflammatory response can result in alveolar damage and consolidation in pneumonia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cough (productive or non-productive)",
+        "Shortness of breath",
+        "Chest pain (pleuritic)",
+        "Fever",
+        "Chills",
+        "Fatigue",
+        "Wheezing",
+        "Sputum production (color may vary)"
+      ],
+      "signs": [
+        "Tachypnea",
+        "Tachycardia",
+        "Hypoxia (low oxygen saturation)",
+        "Crackles or wheezes on auscultation",
+        "Dullness to percussion (in pneumonia)",
+        "Increased respiratory effort"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status (especially in elderly)",
+        "Gastrointestinal symptoms (nausea, vomiting)",
+        "Exacerbation of chronic respiratory conditions (e.g., asthma, COPD)"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Cyanosis",
+        "Hypotension",
+        "Altered consciousness",
+        "Persistent high fever despite treatment",
+        "Signs of sepsis (e.g., high heart rate, low blood pressure)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (to assess for pneumonia or other abnormalities)",
+        "Pulse oximetry (to assess oxygen saturation)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Sputum culture and sensitivity (if productive cough)",
+        "Blood cultures (if sepsis is suspected)",
+        "CT chest (if complications or atypical presentation)"
+      ],
+      "specialistTests": [
+        "Bronchoscopy (for suspected foreign body or malignancy)",
+        "Viral PCR (for specific viral pathogens)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of LRTI is based on clinical presentation, history, and supportive investigations (e.g., chest X-ray findings). Pneumonia is often diagnosed with the presence of new infiltrates on imaging and clinical symptoms.",
+      "differentials": [
+        "Acute bronchitis",
+        "Chronic obstructive pulmonary disease (COPD) exacerbation",
+        "Asthma exacerbation",
+        "Pulmonary embolism",
+        "Lung cancer",
+        "Tuberculosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antibiotics (if bacterial pneumonia is suspected)",
+          "Bronchodilators (for wheezing or bronchospasm)",
+          "Oxygen therapy (if hypoxic)"
+        ],
+        "secondLine": [
+          "Corticosteroids (for severe inflammation or COPD exacerbation)",
+          "Intravenous fluids (if dehydrated)"
+        ],
+        "procedures": [
+          "Chest physiotherapy (to aid sputum clearance)",
+          "Thoracentesis (if pleural effusion is present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Smoking cessation (if applicable)",
+          "Long-acting bronchodilators (for COPD)",
+          "Inhaled corticosteroids (for asthma)"
+        ],
+        "secondLine": [
+          "Pulmonary rehabilitation programs",
+          "Long-term oxygen therapy (if indicated)"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess lung function",
+          "Vaccination status (e.g., influenza, pneumococcal vaccines)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "500 mg TID for mild pneumonia; higher doses for severe cases",
+          "sideEffects": "Diarrhea, rash, allergic reactions",
+          "notes": "Consider in community-acquired pneumonia."
+        },
+        {
+          "name": "Azithromycin",
+          "mechanism": "Inhibits bacterial protein synthesis",
+          "dosing": "500 mg on day 1, then 250 mg daily for 4 days",
+          "sideEffects": "Gastrointestinal upset, QT prolongation",
+          "notes": "Useful for atypical pathogens."
+        },
+        {
+          "name": "Salbutamol (Albuterol)",
+          "mechanism": "Beta-2 agonist causing bronchodilation",
+          "dosing": "Inhaler: 100-200 mcg as needed; nebulizer: 2.5 mg in 2.5 mL saline",
+          "sideEffects": "Tachycardia, tremors, hypokalemia",
+          "notes": "Used for wheezing and bronchospasm."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thoracentesis",
+          "description": "Needle insertion into the pleural space to remove fluid or air",
+          "indications": "Pleural effusion, suspected empyema",
+          "risks": "Pneumothorax, bleeding, infection"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of LRTIs varies based on the causative organism, patient age, and comorbidities. Most patients recover with appropriate treatment, but complications can arise, especially in high-risk groups.",
+    "complications": [
+      "Pleural effusion",
+      "Empyema",
+      "Respiratory failure",
+      "Sepsis",
+      "Lung abscess"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate treatment, and monitor patient progress. They should also recognize when to escalate care to senior clinicians.",
+    "escalation": "Escalate care if the patient shows signs of severe respiratory distress, persistent hypoxia, or if there is a lack of clinical improvement despite treatment.",
+    "keySafetyConsiderations": "Ensure appropriate hand hygiene and infection control measures are in place. Monitor for adverse drug reactions, especially in patients receiving antibiotics or bronchodilators. Be vigilant for signs of deterioration in respiratory status."
+  }
+}

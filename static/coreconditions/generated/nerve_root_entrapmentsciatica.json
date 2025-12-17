@@ -1,0 +1,134 @@
+{
+  "id": "nerve_root_entrapmentsciatica",
+  "name": "Nerve root entrapment/sciatica",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:34:48.072296",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nerve root entrapment/sciatica: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNerve root entrapment, commonly referred to as sciatica, is a condition characterized by pain that radiates along the path of the sciatic nerve, which extends from the lower back through the hips and buttocks and down each leg. It typically occurs due to compression or irritation of the nerve roots in the lumbar spine.\n\n### Epidemiology\nSciatica affects approximately 5-10% of the population at some point in their lives, with a higher prevalence in individuals aged 30-50 years. It is more common in those with occupations involving heavy lifting or prolonged sitting.\n\n### Essential Pathophysiology\nNerve root entrapment occurs when a nerve root is compressed, often due to a herniated disc, spinal stenosis, or degenerative disc disease. This compression leads to inflammation and irritation of the nerve, resulting in pain, numbness, and weakness in the areas supplied by the affected nerve.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unilateral leg pain that may radiate down the back of the leg\n- Numbness or tingling in the leg or foot\n- Muscle weakness in the affected leg\n- Pain that worsens with sitting, coughing, or sneezing\n\n### Key Signs\n- Positive straight leg raise test\n- Reduced reflexes in the affected leg\n- Muscle atrophy in severe cases\n- Sensory deficits in the dermatomes corresponding to the affected nerve root\n\n### Atypical Presentations\n- Bilateral sciatica (may indicate a more serious underlying condition)\n- Pain primarily in the foot or ankle rather than the back or thigh\n\n### Red Flags Requiring Immediate Action\n- Bowel or bladder dysfunction\n- Progressive neurological deficits\n- Severe or worsening pain unresponsive to analgesia\n- History of cancer or unexplained weight loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- X-rays of the lumbar spine (to rule out fractures or structural abnormalities)\n\n### Second-line Investigations\n- MRI of the lumbar spine (to visualize disc herniation or nerve root compression)\n- CT scan if MRI is contraindicated\n\n### Specialist Tests\n- Electromyography (EMG) and nerve conduction studies (to assess nerve function and rule out other conditions)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the history of pain radiating along the sciatic nerve distribution and positive physical examination findings. Imaging may be used to confirm the diagnosis and assess the severity of nerve root compression.\n\n### Key Differential Diagnoses to Exclude\n- Lumbar disc herniation\n- Spinal stenosis\n- Sacroiliac joint dysfunction\n- Piriformis syndrome\n- Tumors or infections in the spine\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- NSAIDs (e.g., ibuprofen, naproxen) for pain relief\n- Physical therapy focusing on stretching and strengthening\n\n#### Second-line Treatments\n- Oral corticosteroids for severe inflammation\n- Short-term opioid analgesics if pain is severe\n\n#### Emergency Procedures\n- Epidural steroid injection for persistent pain not relieved by conservative measures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy and rehabilitation\n- Long-term NSAIDs or acetaminophen for pain management\n\n#### Second-line Treatments\n- Consideration of surgical options if conservative management fails after 6-12 weeks\n- Cognitive behavioral therapy for chronic pain management\n\n#### Monitoring Requirements\n- Regular follow-up to assess pain levels and functional status\n- Monitoring for signs of complications or progression of symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective NSAID that reduces inflammation and pain by inhibiting cyclooxygenase enzymes (COX-1 and COX-2).\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed, not exceeding 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased risk of bleeding.\n- **When to Use vs. Alternatives**: Use with caution in patients with a history of peptic ulcer disease.\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Starting dose of 10-20 mg orally daily, tapering over 1-2 weeks as symptoms improve.\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, increased blood sugar, osteoporosis with long-term use.\n- **When to Use vs. Alternatives**: Monitor for signs of infection and adrenal insufficiency.\n\n#### Gabapentin\n- **Mechanism of Action**: Anticonvulsant that modulates neurotransmitter release and reduces neuropathic pain.\n- **Typical Dosing Range**: Start at 300 mg orally at bedtime, titrate up to 900-1800 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema.\n- **When to Use vs. Alternatives**: Consider for neuropathic pain if NSAIDs are ineffective.\n\n### Procedures\n\n#### Epidural steroid injection\n- **What it Involves**: Injection of corticosteroids into the epidural space to reduce inflammation around the nerve roots.\n- **Indications**: Persistent radicular pain not relieved by conservative measures.\n- **Key Risks/Complications**: Infection, bleeding, nerve damage, transient increase in pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for sciatica is generally good, with most patients experiencing significant improvement within 6-12 weeks with conservative management. However, some may develop chronic pain or recurrent episodes.\n\n### Important Complications to Watch For\n- Chronic pain syndromes\n- Permanent nerve damage leading to weakness or sensory loss\n- Cauda equina syndrome (rare but serious complication requiring urgent intervention)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate conservative management, and recognize red flags that necessitate urgent referral. They should also educate patients about the condition and the importance of physical activity in recovery.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are red flags, lack of improvement after 6-12 weeks of conservative management, or if surgical intervention is being considered.\n\n### Key Safety Considerations\nEnsure appropriate imaging is performed to rule out serious underlying conditions. Monitor for signs of complications, especially in patients with red flags. Educate patients on the importance of follow-up and adherence to treatment plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Nerve root entrapment, commonly referred to as sciatica, is a condition characterized by pain that radiates along the path of the sciatic nerve, which extends from the lower back through the hips and buttocks and down each leg. It typically occurs due to compression or irritation of the nerve roots in the lumbar spine.",
+      "epidemiology": "Sciatica affects approximately 5-10% of the population at some point in their lives, with a higher prevalence in individuals aged 30-50 years. It is more common in those with occupations involving heavy lifting or prolonged sitting.",
+      "pathophysiology": "Nerve root entrapment occurs when a nerve root is compressed, often due to a herniated disc, spinal stenosis, or degenerative disc disease. This compression leads to inflammation and irritation of the nerve, resulting in pain, numbness, and weakness in the areas supplied by the affected nerve."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unilateral leg pain that may radiate down the back of the leg",
+        "Numbness or tingling in the leg or foot",
+        "Muscle weakness in the affected leg",
+        "Pain that worsens with sitting, coughing, or sneezing"
+      ],
+      "signs": [
+        "Positive straight leg raise test",
+        "Reduced reflexes in the affected leg",
+        "Muscle atrophy in severe cases",
+        "Sensory deficits in the dermatomes corresponding to the affected nerve root"
+      ],
+      "atypicalPresentations": [
+        "Bilateral sciatica (may indicate a more serious underlying condition)",
+        "Pain primarily in the foot or ankle rather than the back or thigh"
+      ],
+      "redFlags": [
+        "Bowel or bladder dysfunction",
+        "Progressive neurological deficits",
+        "Severe or worsening pain unresponsive to analgesia",
+        "History of cancer or unexplained weight loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "X-rays of the lumbar spine (to rule out fractures or structural abnormalities)"
+      ],
+      "secondLine": [
+        "MRI of the lumbar spine (to visualize disc herniation or nerve root compression)",
+        "CT scan if MRI is contraindicated"
+      ],
+      "specialistTests": [
+        "Electromyography (EMG) and nerve conduction studies (to assess nerve function and rule out other conditions)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the history of pain radiating along the sciatic nerve distribution and positive physical examination findings. Imaging may be used to confirm the diagnosis and assess the severity of nerve root compression.",
+      "differentials": [
+        "Lumbar disc herniation",
+        "Spinal stenosis",
+        "Sacroiliac joint dysfunction",
+        "Piriformis syndrome",
+        "Tumors or infections in the spine"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "NSAIDs (e.g., ibuprofen, naproxen) for pain relief",
+          "Physical therapy focusing on stretching and strengthening"
+        ],
+        "secondLine": [
+          "Oral corticosteroids for severe inflammation",
+          "Short-term opioid analgesics if pain is severe"
+        ],
+        "procedures": [
+          "Epidural steroid injection for persistent pain not relieved by conservative measures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy and rehabilitation",
+          "Long-term NSAIDs or acetaminophen for pain management"
+        ],
+        "secondLine": [
+          "Consideration of surgical options if conservative management fails after 6-12 weeks",
+          "Cognitive behavioral therapy for chronic pain management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pain levels and functional status",
+          "Monitoring for signs of complications or progression of symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective NSAID that reduces inflammation and pain by inhibiting cyclooxygenase enzymes (COX-1 and COX-2).",
+          "dosing": "400-800 mg orally every 6-8 hours as needed, not exceeding 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased risk of bleeding.",
+          "notes": "Use with caution in patients with a history of peptic ulcer disease."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Starting dose of 10-20 mg orally daily, tapering over 1-2 weeks as symptoms improve.",
+          "sideEffects": "Weight gain, mood changes, increased blood sugar, osteoporosis with long-term use.",
+          "notes": "Monitor for signs of infection and adrenal insufficiency."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Anticonvulsant that modulates neurotransmitter release and reduces neuropathic pain.",
+          "dosing": "Start at 300 mg orally at bedtime, titrate up to 900-1800 mg/day as tolerated.",
+          "sideEffects": "Dizziness, sedation, peripheral edema.",
+          "notes": "Consider for neuropathic pain if NSAIDs are ineffective."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epidural steroid injection",
+          "description": "Injection of corticosteroids into the epidural space to reduce inflammation around the nerve roots.",
+          "indications": "Persistent radicular pain not relieved by conservative measures.",
+          "risks": "Infection, bleeding, nerve damage, transient increase in pain."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for sciatica is generally good, with most patients experiencing significant improvement within 6-12 weeks with conservative management. However, some may develop chronic pain or recurrent episodes.",
+    "complications": [
+      "Chronic pain syndromes",
+      "Permanent nerve damage leading to weakness or sensory loss",
+      "Cauda equina syndrome (rare but serious complication requiring urgent intervention)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate conservative management, and recognize red flags that necessitate urgent referral. They should also educate patients about the condition and the importance of physical activity in recovery.",
+    "escalation": "Refer to a specialist if there are red flags, lack of improvement after 6-12 weeks of conservative management, or if surgical intervention is being considered.",
+    "keySafetyConsiderations": "Ensure appropriate imaging is performed to rule out serious underlying conditions. Monitor for signs of complications, especially in patients with red flags. Educate patients on the importance of follow-up and adherence to treatment plans."
+  }
+}

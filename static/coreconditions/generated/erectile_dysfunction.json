@@ -1,0 +1,140 @@
+{
+  "id": "erectile_dysfunction",
+  "name": "Erectile dysfunction",
+  "domains": [
+    "Urology"
+  ],
+  "generatedAt": "2025-12-17T21:19:46.631022",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Erectile dysfunction: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nErectile dysfunction (ED) is the inability to achieve or maintain an erection sufficient for satisfactory sexual performance.\n\n### Epidemiology\nED affects approximately 40% of men at age 40 and nearly 70% at age 70. It is more common in men with chronic diseases such as diabetes, hypertension, and cardiovascular disease.\n\n### Essential Pathophysiology\nED can result from a variety of factors including vascular, neurological, hormonal, and psychological causes. Vascular issues can lead to inadequate blood flow to the penis, while neurological problems can affect the nerve signals necessary for an erection. Hormonal imbalances, particularly low testosterone, and psychological factors such as anxiety and depression can also contribute.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Inability to achieve an erection\n- Inability to maintain an erection during sexual activity\n- Reduced sexual desire\n\n### Key Signs\n- Reduced penile rigidity\n- Decreased frequency of erections (spontaneous or nocturnal)\n- Signs of underlying conditions (e.g., obesity, diabetes, hypertension)\n\n### Atypical Presentations\n- Erectile dysfunction occurring only in certain situations (e.g., with a partner but not during masturbation)\n- Sudden onset of ED after a stressful event\n\n### Red Flags Requiring Immediate Action\n- Age over 50 with sudden onset ED\n- Presence of cardiovascular symptoms (chest pain, shortness of breath)\n- History of prostate surgery or trauma\n- Signs of hormonal imbalance (gynecomastia, loss of libido)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed medical history and sexual history\n- Physical examination (including genital examination)\n- Assessment of risk factors (diabetes, hypertension, smoking)\n\n### Second-line Investigations\n- Blood tests (e.g., testosterone levels, lipid profile, glucose levels)\n- Nocturnal penile tumescence test (to assess for physiological erections)\n\n### Specialist Tests\n- Doppler ultrasound (to assess blood flow to the penis)\n- Psychological assessment (if psychological causes are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the patient's history and symptoms. The International Index of Erectile Function (IIEF) can be used to quantify severity.\n\n### Key Differential Diagnoses to Exclude\n- Psychogenic ED\n- Vascular ED (arterial insufficiency)\n- Neurological causes (e.g., multiple sclerosis, spinal cord injury)\n- Hormonal causes (e.g., hypogonadism)\n- Medication side effects (e.g., antihypertensives, antidepressants)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Counseling and reassurance\n- Lifestyle modifications (diet, exercise, smoking cessation)\n\n#### Second-line Treatments\n- Oral phosphodiesterase type 5 inhibitors (PDE5i)\n\n#### Emergency Procedures\n- Referral for psychological therapy if indicated\n- Consideration of vacuum erection devices or penile injections if PDE5i are ineffective\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued lifestyle modifications\n- Regular follow-up to monitor response to treatment\n\n#### Second-line Treatments\n- Intracavernosal injections (e.g., alprostadil)\n- Intraurethral therapy (e.g., alprostadil suppositories)\n\n#### Monitoring Requirements\n- Regular assessment of erectile function and side effects of treatments\n- Monitoring for underlying conditions (e.g., diabetes, cardiovascular health)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sildenafil (Viagra)\n- **Mechanism of Action**: Inhibits phosphodiesterase type 5, increasing cGMP levels and promoting vasodilation in the corpus cavernosum.\n- **Typical Dosing Range**: 50 mg taken 1 hour before sexual activity; may increase to 100 mg or decrease to 25 mg based on efficacy and tolerability.\n- **Key Side Effects/Contraindications**: Headache, flushing, dyspepsia, nasal congestion, visual disturbances.\n- **When to Use vs. Alternatives**: Contraindicated in patients taking nitrates.\n\n#### Tadalafil (Cialis)\n- **Mechanism of Action**: Similar to sildenafil, it inhibits phosphodiesterase type 5 but has a longer duration of action.\n- **Typical Dosing Range**: 10 mg taken at least 30 minutes before sexual activity; can be taken daily at 2.5-5 mg for continuous use.\n- **Key Side Effects/Contraindications**: Headache, back pain, flushing, dyspepsia.\n- **When to Use vs. Alternatives**: Can be taken with or without food.\n\n#### Alprostadil (Caverject, Muse)\n- **Mechanism of Action**: Prostaglandin E1, which causes vasodilation and increased blood flow to the penis.\n- **Typical Dosing Range**: Intracavernosal injection (10-20 mcg) or intraurethral suppository (125-1000 mcg).\n- **Key Side Effects/Contraindications**: Penile pain, priapism, and urethral irritation.\n- **When to Use vs. Alternatives**: Requires careful patient education on administration.\n\n### Procedures\n\n#### Vacuum erection device (VED)\n- **What it Involves**: A device that creates a vacuum around the penis, drawing blood into the penis to induce an erection.\n- **Indications**: Used for men who prefer non-invasive options or cannot take medications.\n- **Key Risks/Complications**: Potential for bruising, discomfort, or loss of sensation.\n\n#### Penile prosthesis implantation\n- **What it Involves**: Surgical insertion of a device that allows for the mechanical creation of an erection.\n- **Indications**: Severe ED unresponsive to other treatments.\n- **Key Risks/Complications**: Infection, device malfunction, and erosion.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for erectile dysfunction varies based on the underlying cause. Psychological causes may resolve with therapy, while vascular causes may require ongoing management of cardiovascular risk factors. Many patients respond well to treatment.\n\n### Important Complications to Watch For\n- Psychological distress (anxiety, depression)\n- Relationship issues\n- Decreased quality of life\n- Potential for progression of underlying cardiovascular disease\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should take a thorough history, perform a physical examination, and initiate appropriate investigations. They should also provide education on lifestyle modifications and discuss treatment options with patients.\n\n### When to Escalate to Senior/Specialist\nRefer to urology for patients with severe ED, those unresponsive to first-line treatments, or those with significant underlying health issues.\n\n### Key Safety Considerations\nEnsure to assess for contraindications to PDE5 inhibitors (e.g., nitrates, severe cardiovascular disease). Monitor for side effects and educate patients on the proper use of medications and devices.\n",
+  "content": {
+    "overview": {
+      "definition": "Erectile dysfunction (ED) is the inability to achieve or maintain an erection sufficient for satisfactory sexual performance.",
+      "epidemiology": "ED affects approximately 40% of men at age 40 and nearly 70% at age 70. It is more common in men with chronic diseases such as diabetes, hypertension, and cardiovascular disease.",
+      "pathophysiology": "ED can result from a variety of factors including vascular, neurological, hormonal, and psychological causes. Vascular issues can lead to inadequate blood flow to the penis, while neurological problems can affect the nerve signals necessary for an erection. Hormonal imbalances, particularly low testosterone, and psychological factors such as anxiety and depression can also contribute."
+    },
+    "recognition": {
+      "symptoms": [
+        "Inability to achieve an erection",
+        "Inability to maintain an erection during sexual activity",
+        "Reduced sexual desire"
+      ],
+      "signs": [
+        "Reduced penile rigidity",
+        "Decreased frequency of erections (spontaneous or nocturnal)",
+        "Signs of underlying conditions (e.g., obesity, diabetes, hypertension)"
+      ],
+      "atypicalPresentations": [
+        "Erectile dysfunction occurring only in certain situations (e.g., with a partner but not during masturbation)",
+        "Sudden onset of ED after a stressful event"
+      ],
+      "redFlags": [
+        "Age over 50 with sudden onset ED",
+        "Presence of cardiovascular symptoms (chest pain, shortness of breath)",
+        "History of prostate surgery or trauma",
+        "Signs of hormonal imbalance (gynecomastia, loss of libido)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed medical history and sexual history",
+        "Physical examination (including genital examination)",
+        "Assessment of risk factors (diabetes, hypertension, smoking)"
+      ],
+      "secondLine": [
+        "Blood tests (e.g., testosterone levels, lipid profile, glucose levels)",
+        "Nocturnal penile tumescence test (to assess for physiological erections)"
+      ],
+      "specialistTests": [
+        "Doppler ultrasound (to assess blood flow to the penis)",
+        "Psychological assessment (if psychological causes are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the patient's history and symptoms. The International Index of Erectile Function (IIEF) can be used to quantify severity.",
+      "differentials": [
+        "Psychogenic ED",
+        "Vascular ED (arterial insufficiency)",
+        "Neurological causes (e.g., multiple sclerosis, spinal cord injury)",
+        "Hormonal causes (e.g., hypogonadism)",
+        "Medication side effects (e.g., antihypertensives, antidepressants)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Counseling and reassurance",
+          "Lifestyle modifications (diet, exercise, smoking cessation)"
+        ],
+        "secondLine": [
+          "Oral phosphodiesterase type 5 inhibitors (PDE5i)"
+        ],
+        "procedures": [
+          "Referral for psychological therapy if indicated",
+          "Consideration of vacuum erection devices or penile injections if PDE5i are ineffective"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued lifestyle modifications",
+          "Regular follow-up to monitor response to treatment"
+        ],
+        "secondLine": [
+          "Intracavernosal injections (e.g., alprostadil)",
+          "Intraurethral therapy (e.g., alprostadil suppositories)"
+        ],
+        "monitoring": [
+          "Regular assessment of erectile function and side effects of treatments",
+          "Monitoring for underlying conditions (e.g., diabetes, cardiovascular health)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sildenafil (Viagra)",
+          "mechanism": "Inhibits phosphodiesterase type 5, increasing cGMP levels and promoting vasodilation in the corpus cavernosum.",
+          "dosing": "50 mg taken 1 hour before sexual activity; may increase to 100 mg or decrease to 25 mg based on efficacy and tolerability.",
+          "sideEffects": "Headache, flushing, dyspepsia, nasal congestion, visual disturbances.",
+          "notes": "Contraindicated in patients taking nitrates."
+        },
+        {
+          "name": "Tadalafil (Cialis)",
+          "mechanism": "Similar to sildenafil, it inhibits phosphodiesterase type 5 but has a longer duration of action.",
+          "dosing": "10 mg taken at least 30 minutes before sexual activity; can be taken daily at 2.5-5 mg for continuous use.",
+          "sideEffects": "Headache, back pain, flushing, dyspepsia.",
+          "notes": "Can be taken with or without food."
+        },
+        {
+          "name": "Alprostadil (Caverject, Muse)",
+          "mechanism": "Prostaglandin E1, which causes vasodilation and increased blood flow to the penis.",
+          "dosing": "Intracavernosal injection (10-20 mcg) or intraurethral suppository (125-1000 mcg).",
+          "sideEffects": "Penile pain, priapism, and urethral irritation.",
+          "notes": "Requires careful patient education on administration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vacuum erection device (VED)",
+          "description": "A device that creates a vacuum around the penis, drawing blood into the penis to induce an erection.",
+          "indications": "Used for men who prefer non-invasive options or cannot take medications.",
+          "risks": "Potential for bruising, discomfort, or loss of sensation."
+        },
+        {
+          "name": "Penile prosthesis implantation",
+          "description": "Surgical insertion of a device that allows for the mechanical creation of an erection.",
+          "indications": "Severe ED unresponsive to other treatments.",
+          "risks": "Infection, device malfunction, and erosion."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for erectile dysfunction varies based on the underlying cause. Psychological causes may resolve with therapy, while vascular causes may require ongoing management of cardiovascular risk factors. Many patients respond well to treatment.",
+    "complications": [
+      "Psychological distress (anxiety, depression)",
+      "Relationship issues",
+      "Decreased quality of life",
+      "Potential for progression of underlying cardiovascular disease"
+    ],
+    "foundationDoctorRole": "Foundation doctors should take a thorough history, perform a physical examination, and initiate appropriate investigations. They should also provide education on lifestyle modifications and discuss treatment options with patients.",
+    "escalation": "Refer to urology for patients with severe ED, those unresponsive to first-line treatments, or those with significant underlying health issues.",
+    "keySafetyConsiderations": "Ensure to assess for contraindications to PDE5 inhibitors (e.g., nitrates, severe cardiovascular disease). Monitor for side effects and educate patients on the proper use of medications and devices."
+  }
+}

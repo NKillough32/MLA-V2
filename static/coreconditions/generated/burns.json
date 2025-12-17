@@ -1,0 +1,149 @@
+{
+  "id": "burns",
+  "name": "Burns",
+  "domains": [
+    "Plastics"
+  ],
+  "generatedAt": "2025-12-17T21:36:08.640152",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Burns: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBurns are injuries to the skin or other tissues caused by heat, chemicals, electricity, radiation, or friction. They are classified by depth and severity, which determines treatment and prognosis.\n\n### Epidemiology\nBurns are a significant cause of morbidity and mortality worldwide, with an estimated 11 million burn injuries occurring annually. They are more prevalent in children and the elderly, with scalds being the most common type in young children.\n\n### Essential Pathophysiology\nBurns cause damage to the skin and underlying tissues, leading to loss of protective barriers, fluid loss, and potential infection. The depth of the burn (first, second, or third degree) determines the extent of tissue damage and the body's response.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain\n- Swelling\n- Redness\n- Blistering\n- Peeling skin\n- Itching\n\n### Key Signs\n- Erythema\n- Blisters\n- Eschar formation\n- Swelling\n- Hypo/hyperpigmentation\n\n### Atypical Presentations\n- Delayed onset of symptoms (chemical burns)\n- Inhalation injury (singed nasal hairs, hoarseness)\n- Electrical burns may not show external signs\n\n### Red Flags Requiring Immediate Action\n- Burns covering more than 10% of total body surface area (TBSA)\n- Burns on face, hands, feet, genitalia, or major joints\n- Inhalation injury\n- Electrical burns\n- Chemical burns with unknown substances\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of burn depth and extent\n- Vital signs monitoring\n- Fluid resuscitation assessment\n\n### Second-line Investigations\n- Laboratory tests (CBC, electrolytes, renal function)\n- Imaging if fractures or foreign bodies are suspected\n\n### Specialist Tests\n- Referral to a burn unit for severe burns\n- Wound cultures if infection is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical assessment of burn depth (first, second, third degree) and total body surface area (TBSA) affected, using the Rule of Nines or Lund and Browder chart.\n\n### Key Differential Diagnoses to Exclude\n- Friction burns\n- Chemical burns\n- Electrical burns\n- Frostbite\n- Skin infections (cellulitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Cool the burn with running water for at least 10-20 minutes\n- Cover the burn with a sterile, non-adhesive dressing\n- Pain management (e.g., paracetamol, ibuprofen)\n- Fluid resuscitation (Parkland formula for >10% TBSA)\n\n#### Second-line Treatments\n- Topical antibiotics (e.g., silver sulfadiazine)\n- Tetanus prophylaxis if indicated\n\n#### Emergency Procedures\n- Debridement of necrotic tissue\n- Skin grafting for deep burns\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Wound care and dressing changes\n- Physical therapy to prevent contractures\n\n#### Second-line Treatments\n- Surgical intervention for scar management (e.g., laser therapy)\n\n#### Monitoring Requirements\n- Regular follow-up for infection signs and healing progress\n- Psychosocial support for burn survivors\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n#### Silver sulfadiazine\n- **Mechanism of Action**: Topical antimicrobial\n- **Typical Dosing Range**: Apply 1-2 times daily to burn area\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions\n- **When to Use vs. Alternatives**: Effective for preventing infection in partial-thickness burns.\n\n### Procedures\n\n#### Debridement\n- **What it Involves**: Surgical removal of necrotic tissue to promote healing\n- **Indications**: Deep burns, infected wounds\n- **Key Risks/Complications**: Bleeding, infection, pain\n\n#### Skin grafting\n- **What it Involves**: Transplantation of skin to cover burn areas\n- **Indications**: Full-thickness burns, large surface area burns\n- **Key Risks/Complications**: Graft failure, infection, scarring\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis depends on burn depth, TBSA affected, and presence of inhalation injury. Superficial burns heal well, while deep burns may require extensive treatment and can lead to complications.\n\n### Important Complications to Watch For\n- Infection\n- Scarring and contractures\n- Hypovolemia and shock\n- Psychological impact (PTSD, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute care, and refer to specialists as needed. They should also provide education on burn prevention and care.\n\n### When to Escalate to Senior/Specialist\nRefer to a burn unit for burns covering >10% TBSA, burns on critical areas (face, hands, feet), or any signs of inhalation injury.\n\n### Key Safety Considerations\nEnsure proper hand hygiene when managing burns, monitor for signs of infection, and provide adequate pain relief. Educate patients on wound care and signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Burns are injuries to the skin or other tissues caused by heat, chemicals, electricity, radiation, or friction. They are classified by depth and severity, which determines treatment and prognosis.",
+      "epidemiology": "Burns are a significant cause of morbidity and mortality worldwide, with an estimated 11 million burn injuries occurring annually. They are more prevalent in children and the elderly, with scalds being the most common type in young children.",
+      "pathophysiology": "Burns cause damage to the skin and underlying tissues, leading to loss of protective barriers, fluid loss, and potential infection. The depth of the burn (first, second, or third degree) determines the extent of tissue damage and the body's response."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain",
+        "Swelling",
+        "Redness",
+        "Blistering",
+        "Peeling skin",
+        "Itching"
+      ],
+      "signs": [
+        "Erythema",
+        "Blisters",
+        "Eschar formation",
+        "Swelling",
+        "Hypo/hyperpigmentation"
+      ],
+      "atypicalPresentations": [
+        "Delayed onset of symptoms (chemical burns)",
+        "Inhalation injury (singed nasal hairs, hoarseness)",
+        "Electrical burns may not show external signs"
+      ],
+      "redFlags": [
+        "Burns covering more than 10% of total body surface area (TBSA)",
+        "Burns on face, hands, feet, genitalia, or major joints",
+        "Inhalation injury",
+        "Electrical burns",
+        "Chemical burns with unknown substances"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of burn depth and extent",
+        "Vital signs monitoring",
+        "Fluid resuscitation assessment"
+      ],
+      "secondLine": [
+        "Laboratory tests (CBC, electrolytes, renal function)",
+        "Imaging if fractures or foreign bodies are suspected"
+      ],
+      "specialistTests": [
+        "Referral to a burn unit for severe burns",
+        "Wound cultures if infection is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical assessment of burn depth (first, second, third degree) and total body surface area (TBSA) affected, using the Rule of Nines or Lund and Browder chart.",
+      "differentials": [
+        "Friction burns",
+        "Chemical burns",
+        "Electrical burns",
+        "Frostbite",
+        "Skin infections (cellulitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Cool the burn with running water for at least 10-20 minutes",
+          "Cover the burn with a sterile, non-adhesive dressing",
+          "Pain management (e.g., paracetamol, ibuprofen)",
+          "Fluid resuscitation (Parkland formula for >10% TBSA)"
+        ],
+        "secondLine": [
+          "Topical antibiotics (e.g., silver sulfadiazine)",
+          "Tetanus prophylaxis if indicated"
+        ],
+        "procedures": [
+          "Debridement of necrotic tissue",
+          "Skin grafting for deep burns"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Wound care and dressing changes",
+          "Physical therapy to prevent contractures"
+        ],
+        "secondLine": [
+          "Surgical intervention for scar management (e.g., laser therapy)"
+        ],
+        "monitoring": [
+          "Regular follow-up for infection signs and healing progress",
+          "Psychosocial support for burn survivors"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Useful for pain and inflammation."
+        },
+        {
+          "name": "Silver sulfadiazine",
+          "mechanism": "Topical antimicrobial",
+          "dosing": "Apply 1-2 times daily to burn area",
+          "sideEffects": "Local irritation, allergic reactions",
+          "notes": "Effective for preventing infection in partial-thickness burns."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debridement",
+          "description": "Surgical removal of necrotic tissue to promote healing",
+          "indications": "Deep burns, infected wounds",
+          "risks": "Bleeding, infection, pain"
+        },
+        {
+          "name": "Skin grafting",
+          "description": "Transplantation of skin to cover burn areas",
+          "indications": "Full-thickness burns, large surface area burns",
+          "risks": "Graft failure, infection, scarring"
+        }
+      ]
+    },
+    "prognosis": "Prognosis depends on burn depth, TBSA affected, and presence of inhalation injury. Superficial burns heal well, while deep burns may require extensive treatment and can lead to complications.",
+    "complications": [
+      "Infection",
+      "Scarring and contractures",
+      "Hypovolemia and shock",
+      "Psychological impact (PTSD, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute care, and refer to specialists as needed. They should also provide education on burn prevention and care.",
+    "escalation": "Refer to a burn unit for burns covering >10% TBSA, burns on critical areas (face, hands, feet), or any signs of inhalation injury.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene when managing burns, monitor for signs of infection, and provide adequate pain relief. Educate patients on wound care and signs of complications."
+  }
+}

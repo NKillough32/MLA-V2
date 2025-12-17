@@ -1,0 +1,149 @@
+{
+  "id": "chronic_pain",
+  "name": "Chronic pain",
+  "domains": [
+    "Rheumatology",
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:36:18.586201",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic pain: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic pain is defined as pain that persists for longer than three months, often beyond the expected period of healing. It can arise from various conditions and may not always have a clear underlying cause.\n\n### Epidemiology\nChronic pain affects approximately 20% of adults globally, with higher prevalence in older populations. It is a significant cause of disability and can impact quality of life.\n\n### Essential Pathophysiology\nChronic pain involves complex interactions between peripheral and central nervous systems. It may result from ongoing tissue damage, nerve injury, or changes in pain processing pathways, leading to heightened sensitivity (central sensitization) and altered pain perception.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent pain lasting more than three months\n- Fatigue\n- Sleep disturbances\n- Mood changes (anxiety, depression)\n- Reduced physical function\n\n### Key Signs\n- Tenderness on examination\n- Reduced range of motion\n- Muscle stiffness\n- Swelling in affected areas\n\n### Atypical Presentations\n- Pain without identifiable physical cause\n- Pain that fluctuates in intensity\n- Pain that is disproportionate to the injury\n\n### Red Flags Requiring Immediate Action\n- Unexplained weight loss\n- Fever or chills\n- Recent trauma or injury\n- Neurological symptoms (numbness, weakness)\n- History of cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed history and physical examination\n- Pain assessment tools (e.g., visual analog scale)\n- Basic blood tests (CBC, ESR, CRP)\n\n### Second-line Investigations\n- Imaging studies (X-ray, MRI, CT) if indicated\n- Nerve conduction studies or electromyography for neuropathic pain\n\n### Specialist Tests\n- Referral to pain management clinic\n- Psychological assessment for chronic pain syndromes\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of chronic pain is primarily clinical, based on history, symptom duration, and impact on function. Consideration of red flags is essential to rule out serious underlying conditions.\n\n### Key Differential Diagnoses to Exclude\n- Osteoarthritis\n- Rheumatoid arthritis\n- Fibromyalgia\n- Neuropathic pain syndromes\n- Myofascial pain syndrome\n- Cancer-related pain\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-steroidal anti-inflammatory drugs (NSAIDs)\n- Acetaminophen (paracetamol)\n- Physical therapy\n\n#### Second-line Treatments\n- Opioids for severe pain (short-term use)\n- Adjuvant medications (e.g., gabapentin, pregabalin)\n\n#### Emergency Procedures\n- Nerve blocks for localized pain\n- Trigger point injections for myofascial pain\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Multidisciplinary approach including physical therapy, psychological support, and lifestyle modifications\n- Regular follow-up and reassessment\n\n#### Second-line Treatments\n- Consideration of chronic opioid therapy with caution\n- Referral to pain management specialists\n\n#### Monitoring Requirements\n- Regular assessment of pain levels and functional status\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed, max 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Gabapentin\n- **Mechanism of Action**: Modulates calcium channels, reducing excitatory neurotransmitter release.\n- **Typical Dosing Range**: Start at 300 mg at bedtime, titrate up to 900-1800 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema.\n- **When to Use vs. Alternatives**: Monitor for signs of sedation, especially in elderly patients.\n\n#### Oxycodone\n- **Mechanism of Action**: Opioid receptor agonist, providing analgesia by altering pain perception.\n- **Typical Dosing Range**: 5-15 mg every 4-6 hours as needed, titrate based on response.\n- **Key Side Effects/Contraindications**: Constipation, sedation, respiratory depression.\n- **When to Use vs. Alternatives**: Use lowest effective dose and monitor for signs of misuse.\n\n### Procedures\n\n#### Nerve block\n- **What it Involves**: Injection of anesthetic near a nerve to block pain transmission.\n- **Indications**: Localized pain not responsive to medications, diagnostic purposes.\n- **Key Risks/Complications**: Infection, bleeding, nerve damage.\n\n#### Trigger point injection\n- **What it Involves**: Injection of local anesthetic or corticosteroid into a trigger point in muscle.\n- **Indications**: Myofascial pain syndrome, muscle spasms.\n- **Key Risks/Complications**: Pain at injection site, temporary weakness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nChronic pain can be managed effectively, but it may not be completely resolved. Patients may experience fluctuations in pain levels and functional ability. Early intervention and a multidisciplinary approach improve outcomes.\n\n### Important Complications to Watch For\n- Depression and anxiety\n- Reduced quality of life\n- Increased healthcare utilization\n- Risk of opioid dependence or misuse\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should conduct thorough assessments, initiate appropriate investigations, and manage acute pain effectively. They should also recognize when to refer to specialists and provide education on pain management strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to pain management specialists for patients with refractory pain, significant psychological distress, or complex pain syndromes. Escalate care for red flag symptoms or significant deterioration in the patient's condition.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially opioids. Assess for signs of misuse or dependency. Ensure appropriate follow-up and support for patients with chronic pain.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic pain is defined as pain that persists for longer than three months, often beyond the expected period of healing. It can arise from various conditions and may not always have a clear underlying cause.",
+      "epidemiology": "Chronic pain affects approximately 20% of adults globally, with higher prevalence in older populations. It is a significant cause of disability and can impact quality of life.",
+      "pathophysiology": "Chronic pain involves complex interactions between peripheral and central nervous systems. It may result from ongoing tissue damage, nerve injury, or changes in pain processing pathways, leading to heightened sensitivity (central sensitization) and altered pain perception."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent pain lasting more than three months",
+        "Fatigue",
+        "Sleep disturbances",
+        "Mood changes (anxiety, depression)",
+        "Reduced physical function"
+      ],
+      "signs": [
+        "Tenderness on examination",
+        "Reduced range of motion",
+        "Muscle stiffness",
+        "Swelling in affected areas"
+      ],
+      "atypicalPresentations": [
+        "Pain without identifiable physical cause",
+        "Pain that fluctuates in intensity",
+        "Pain that is disproportionate to the injury"
+      ],
+      "redFlags": [
+        "Unexplained weight loss",
+        "Fever or chills",
+        "Recent trauma or injury",
+        "Neurological symptoms (numbness, weakness)",
+        "History of cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed history and physical examination",
+        "Pain assessment tools (e.g., visual analog scale)",
+        "Basic blood tests (CBC, ESR, CRP)"
+      ],
+      "secondLine": [
+        "Imaging studies (X-ray, MRI, CT) if indicated",
+        "Nerve conduction studies or electromyography for neuropathic pain"
+      ],
+      "specialistTests": [
+        "Referral to pain management clinic",
+        "Psychological assessment for chronic pain syndromes"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of chronic pain is primarily clinical, based on history, symptom duration, and impact on function. Consideration of red flags is essential to rule out serious underlying conditions.",
+      "differentials": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Fibromyalgia",
+        "Neuropathic pain syndromes",
+        "Myofascial pain syndrome",
+        "Cancer-related pain"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-steroidal anti-inflammatory drugs (NSAIDs)",
+          "Acetaminophen (paracetamol)",
+          "Physical therapy"
+        ],
+        "secondLine": [
+          "Opioids for severe pain (short-term use)",
+          "Adjuvant medications (e.g., gabapentin, pregabalin)"
+        ],
+        "procedures": [
+          "Nerve blocks for localized pain",
+          "Trigger point injections for myofascial pain"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Multidisciplinary approach including physical therapy, psychological support, and lifestyle modifications",
+          "Regular follow-up and reassessment"
+        ],
+        "secondLine": [
+          "Consideration of chronic opioid therapy with caution",
+          "Referral to pain management specialists"
+        ],
+        "monitoring": [
+          "Regular assessment of pain levels and functional status",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.",
+          "dosing": "400-800 mg every 6-8 hours as needed, max 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Modulates calcium channels, reducing excitatory neurotransmitter release.",
+          "dosing": "Start at 300 mg at bedtime, titrate up to 900-1800 mg/day in divided doses.",
+          "sideEffects": "Dizziness, sedation, peripheral edema.",
+          "notes": "Monitor for signs of sedation, especially in elderly patients."
+        },
+        {
+          "name": "Oxycodone",
+          "mechanism": "Opioid receptor agonist, providing analgesia by altering pain perception.",
+          "dosing": "5-15 mg every 4-6 hours as needed, titrate based on response.",
+          "sideEffects": "Constipation, sedation, respiratory depression.",
+          "notes": "Use lowest effective dose and monitor for signs of misuse."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nerve block",
+          "description": "Injection of anesthetic near a nerve to block pain transmission.",
+          "indications": "Localized pain not responsive to medications, diagnostic purposes.",
+          "risks": "Infection, bleeding, nerve damage."
+        },
+        {
+          "name": "Trigger point injection",
+          "description": "Injection of local anesthetic or corticosteroid into a trigger point in muscle.",
+          "indications": "Myofascial pain syndrome, muscle spasms.",
+          "risks": "Pain at injection site, temporary weakness."
+        }
+      ]
+    },
+    "prognosis": "Chronic pain can be managed effectively, but it may not be completely resolved. Patients may experience fluctuations in pain levels and functional ability. Early intervention and a multidisciplinary approach improve outcomes.",
+    "complications": [
+      "Depression and anxiety",
+      "Reduced quality of life",
+      "Increased healthcare utilization",
+      "Risk of opioid dependence or misuse"
+    ],
+    "foundationDoctorRole": "Foundation doctors should conduct thorough assessments, initiate appropriate investigations, and manage acute pain effectively. They should also recognize when to refer to specialists and provide education on pain management strategies.",
+    "escalation": "Refer to pain management specialists for patients with refractory pain, significant psychological distress, or complex pain syndromes. Escalate care for red flag symptoms or significant deterioration in the patient's condition.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially opioids. Assess for signs of misuse or dependency. Ensure appropriate follow-up and support for patients with chronic pain."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "toxic_epidermal_necrolysis",
+  "name": "Toxic epidermal necrolysis?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:24:15.950300",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Toxic epidermal necrolysis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nToxic epidermal necrolysis (TEN) is a severe, life-threatening skin condition characterized by widespread detachment of the epidermis and mucosal surfaces, often triggered by medications.\n\n### Epidemiology\nTEN is rare, with an incidence of approximately 1-2 cases per million people per year. It predominantly affects adults, with a higher incidence in those over 60 years of age. It is often associated with certain medications, particularly sulfonamides, anticonvulsants, and allopurinol.\n\n### Essential Pathophysiology\nTEN is thought to be an immune-mediated reaction, often involving a hypersensitivity response to drugs. This leads to keratinocyte apoptosis and extensive skin and mucosal necrosis, resulting in loss of the protective barrier and increased risk of infection.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Malaise\n- Sore throat\n- Burning sensation of the skin\n\n### Key Signs\n- Widespread erythema\n- Nikolsky's sign positive (skin sloughing with gentle pressure)\n- Blistering and desquamation\n- Mucosal involvement (oral, ocular, genital)\n\n### Atypical Presentations\n- Localized TEN (less than 10% body surface area affected)\n- TEN-like reactions without full criteria met\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of skin lesions\n- Severe mucosal involvement\n- Signs of sepsis or systemic infection\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Renal function tests (RFTs)\n\n### Second-line Investigations\n- Skin biopsy (to confirm diagnosis)\n- Serum electrolytes\n- Cultures of skin lesions (to rule out infection)\n\n### Specialist Tests\n- Histopathology (to assess for keratinocyte apoptosis)\n- Immunological tests (if autoimmune etiology suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of widespread skin detachment (>30% body surface area) and mucosal involvement, often following drug exposure.\n\n### Key Differential Diagnoses to Exclude\n- Stevens-Johnson syndrome (SJS)\n- Burns\n- Other drug eruptions\n- Infectious causes (e.g., staphylococcal scalded skin syndrome)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate withdrawal of the offending drug\n- Supportive care (fluid resuscitation, electrolyte management)\n- Wound care (dressings, topical antimicrobials)\n\n#### Second-line Treatments\n- Consider transfer to a burn unit or specialized dermatology unit\n- Pain management (opioids if necessary)\n- Nutritional support (enteral feeding if indicated)\n\n#### Emergency Procedures\n- Debridement of necrotic tissue (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term follow-up for skin care and management of complications\n- Psychological support for patients and families\n\n#### Second-line Treatments\n- Management of sequelae (e.g., ocular complications, scarring)\n- Referral to specialists (dermatology, ophthalmology)\n\n#### Monitoring Requirements\n- Regular skin assessments for complications\n- Monitoring for infections\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Intravenous immunoglobulin (IVIG)\n- **Mechanism of Action**: Modulates immune response and reduces inflammation\n- **Typical Dosing Range**: 2 g/kg over 2-5 days\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions\n- **When to Use vs. Alternatives**: Considered in severe cases, but evidence is variable.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: High-dose IV steroids (e.g., methylprednisolone 1-2 mg/kg/day)\n- **Key Side Effects/Contraindications**: Infection risk, hyperglycemia, gastrointestinal bleeding\n- **When to Use vs. Alternatives**: Use with caution; may be controversial.\n\n#### Cyclosporine\n- **Mechanism of Action**: Immunosuppressant that inhibits T-cell activation\n- **Typical Dosing Range**: 3-5 mg/kg/day\n- **Key Side Effects/Contraindications**: Nephrotoxicity, hypertension, increased infection risk\n- **When to Use vs. Alternatives**: Consider in refractory cases.\n\n### Procedures\n\n#### Wound care and dressing\n- **What it Involves**: Application of specialized dressings to protect denuded skin and promote healing\n- **Indications**: Extensive skin loss due to TEN\n- **Key Risks/Complications**: Infection, delayed healing\n\n#### Debridement\n- **What it Involves**: Surgical removal of necrotic tissue\n- **Indications**: Infected or non-healing wounds\n- **Key Risks/Complications**: Bleeding, infection, pain\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of TEN is variable, with mortality rates ranging from 25% to 35%. Early recognition and management are crucial for improving outcomes. Long-term complications may include scarring, ocular problems, and psychological impact.\n\n### Important Complications to Watch For\n- Secondary infections (sepsis)\n- Fluid and electrolyte imbalances\n- Nutritional deficiencies\n- Long-term skin changes (hyperpigmentation, scarring)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of TEN, initiate immediate management, and coordinate care with specialists. They should also monitor for complications and provide supportive care.\n\n### When to Escalate to Senior/Specialist\nIf a patient is suspected of having TEN, immediate referral to a dermatology or burn unit is essential. Escalate care if there are signs of sepsis, significant fluid loss, or if the patient is deteriorating.\n\n### Key Safety Considerations\nEnsure thorough medication history to identify potential triggers. Monitor for signs of infection, fluid overload, and electrolyte imbalances. Provide psychological support and education to patients and families regarding the condition and its implications.\n",
+  "content": {
+    "overview": {
+      "definition": "Toxic epidermal necrolysis (TEN) is a severe, life-threatening skin condition characterized by widespread detachment of the epidermis and mucosal surfaces, often triggered by medications.",
+      "epidemiology": "TEN is rare, with an incidence of approximately 1-2 cases per million people per year. It predominantly affects adults, with a higher incidence in those over 60 years of age. It is often associated with certain medications, particularly sulfonamides, anticonvulsants, and allopurinol.",
+      "pathophysiology": "TEN is thought to be an immune-mediated reaction, often involving a hypersensitivity response to drugs. This leads to keratinocyte apoptosis and extensive skin and mucosal necrosis, resulting in loss of the protective barrier and increased risk of infection."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Malaise",
+        "Sore throat",
+        "Burning sensation of the skin"
+      ],
+      "signs": [
+        "Widespread erythema",
+        "Nikolsky's sign positive (skin sloughing with gentle pressure)",
+        "Blistering and desquamation",
+        "Mucosal involvement (oral, ocular, genital)"
+      ],
+      "atypicalPresentations": [
+        "Localized TEN (less than 10% body surface area affected)",
+        "TEN-like reactions without full criteria met"
+      ],
+      "redFlags": [
+        "Rapid progression of skin lesions",
+        "Severe mucosal involvement",
+        "Signs of sepsis or systemic infection"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Renal function tests (RFTs)"
+      ],
+      "secondLine": [
+        "Skin biopsy (to confirm diagnosis)",
+        "Serum electrolytes",
+        "Cultures of skin lesions (to rule out infection)"
+      ],
+      "specialistTests": [
+        "Histopathology (to assess for keratinocyte apoptosis)",
+        "Immunological tests (if autoimmune etiology suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of widespread skin detachment (>30% body surface area) and mucosal involvement, often following drug exposure.",
+      "differentials": [
+        "Stevens-Johnson syndrome (SJS)",
+        "Burns",
+        "Other drug eruptions",
+        "Infectious causes (e.g., staphylococcal scalded skin syndrome)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate withdrawal of the offending drug",
+          "Supportive care (fluid resuscitation, electrolyte management)",
+          "Wound care (dressings, topical antimicrobials)"
+        ],
+        "secondLine": [
+          "Consider transfer to a burn unit or specialized dermatology unit",
+          "Pain management (opioids if necessary)",
+          "Nutritional support (enteral feeding if indicated)"
+        ],
+        "procedures": [
+          "Debridement of necrotic tissue (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term follow-up for skin care and management of complications",
+          "Psychological support for patients and families"
+        ],
+        "secondLine": [
+          "Management of sequelae (e.g., ocular complications, scarring)",
+          "Referral to specialists (dermatology, ophthalmology)"
+        ],
+        "monitoring": [
+          "Regular skin assessments for complications",
+          "Monitoring for infections"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Intravenous immunoglobulin (IVIG)",
+          "mechanism": "Modulates immune response and reduces inflammation",
+          "dosing": "2 g/kg over 2-5 days",
+          "sideEffects": "Headache, fever, chills, allergic reactions",
+          "notes": "Considered in severe cases, but evidence is variable."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "High-dose IV steroids (e.g., methylprednisolone 1-2 mg/kg/day)",
+          "sideEffects": "Infection risk, hyperglycemia, gastrointestinal bleeding",
+          "notes": "Use with caution; may be controversial."
+        },
+        {
+          "name": "Cyclosporine",
+          "mechanism": "Immunosuppressant that inhibits T-cell activation",
+          "dosing": "3-5 mg/kg/day",
+          "sideEffects": "Nephrotoxicity, hypertension, increased infection risk",
+          "notes": "Consider in refractory cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound care and dressing",
+          "description": "Application of specialized dressings to protect denuded skin and promote healing",
+          "indications": "Extensive skin loss due to TEN",
+          "risks": "Infection, delayed healing"
+        },
+        {
+          "name": "Debridement",
+          "description": "Surgical removal of necrotic tissue",
+          "indications": "Infected or non-healing wounds",
+          "risks": "Bleeding, infection, pain"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of TEN is variable, with mortality rates ranging from 25% to 35%. Early recognition and management are crucial for improving outcomes. Long-term complications may include scarring, ocular problems, and psychological impact.",
+    "complications": [
+      "Secondary infections (sepsis)",
+      "Fluid and electrolyte imbalances",
+      "Nutritional deficiencies",
+      "Long-term skin changes (hyperpigmentation, scarring)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of TEN, initiate immediate management, and coordinate care with specialists. They should also monitor for complications and provide supportive care.",
+    "escalation": "If a patient is suspected of having TEN, immediate referral to a dermatology or burn unit is essential. Escalate care if there are signs of sepsis, significant fluid loss, or if the patient is deteriorating.",
+    "keySafetyConsiderations": "Ensure thorough medication history to identify potential triggers. Monitor for signs of infection, fluid overload, and electrolyte imbalances. Provide psychological support and education to patients and families regarding the condition and its implications."
+  }
+}

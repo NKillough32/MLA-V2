@@ -1,0 +1,140 @@
+{
+  "id": "ischaemic_stroke",
+  "name": "Ischaemic stroke",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:44:29.572372",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ischaemic stroke: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIschaemic stroke is a type of stroke that occurs when a blood vessel supplying blood to the brain is obstructed, leading to a reduction in blood flow and subsequent brain tissue damage.\n\n### Epidemiology\nIschaemic strokes account for approximately 87% of all strokes. The incidence increases with age, with a higher prevalence in individuals over 65 years. Risk factors include hypertension, diabetes, smoking, atrial fibrillation, and hyperlipidaemia.\n\n### Essential Pathophysiology\nIschaemic stroke occurs due to the occlusion of cerebral arteries, often caused by thrombosis (formation of a blood clot within a blood vessel) or embolism (a clot that travels from another part of the body). This leads to a cascade of cellular events, including energy failure, excitotoxicity, inflammation, and apoptosis, resulting in brain tissue necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of weakness or numbness in the face, arm, or leg, especially on one side of the body\n- Difficulty speaking or understanding speech (aphasia)\n- Sudden vision problems in one or both eyes\n- Loss of balance or coordination\n- Severe headache with no known cause\n\n### Key Signs\n- Facial droop (asymmetry when smiling)\n- Arm drift (weakness in one arm when raised)\n- Speech difficulties (slurred or incoherent speech)\n- Altered level of consciousness\n\n### Atypical Presentations\n- Confusion or altered mental status without focal neurological signs\n- Seizures as a presenting symptom\n- Transient symptoms that resolve quickly (Transient Ischaemic Attack - TIA)\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration of neurological status\n- Severe headache (thunderclap headache)\n- Signs of increased intracranial pressure (e.g., vomiting, altered consciousness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Non-contrast CT scan of the head to rule out haemorrhage\n- Blood glucose level to exclude hypoglycaemia\n- Full blood count, electrolytes, renal function tests\n\n### Second-line Investigations\n- MRI of the brain for better visualization of ischaemic areas\n- Carotid Doppler ultrasound to assess for stenosis or occlusion\n- ECG to identify atrial fibrillation\n\n### Specialist Tests\n- CT angiography or MR angiography to visualize cerebral blood vessels\n- Transcranial Doppler ultrasound to assess blood flow in cerebral arteries\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ischaemic stroke is based on clinical presentation and imaging findings consistent with acute cerebral ischaemia. The FAST (Face, Arms, Speech, Time) acronym is a useful tool for recognition.\n\n### Key Differential Diagnoses to Exclude\n- Haemorrhagic stroke\n- Transient Ischaemic Attack (TIA)\n- Brain tumour\n- Migraine with aura\n- Seizure\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Aspirin 300 mg orally (if no contraindications)\n- Thrombolysis with alteplase (tPA) within 4.5 hours of symptom onset if eligible\n\n#### Second-line Treatments\n- Mechanical thrombectomy for large vessel occlusion within 6-24 hours of symptom onset if eligible\n- Anticoagulation for atrial fibrillation after initial management\n\n#### Emergency Procedures\n- Thrombectomy: a minimally invasive procedure to remove a clot from a blood vessel in the brain, indicated for patients with large vessel occlusion and significant neurological deficit. Risks include bleeding, vessel perforation, and infection.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Secondary prevention with antiplatelet therapy (e.g., aspirin or clopidogrel)\n- Management of risk factors (hypertension, diabetes, hyperlipidaemia)\n\n#### Second-line Treatments\n- Consideration of anticoagulation for patients with atrial fibrillation\n- Rehabilitation services (physiotherapy, occupational therapy)\n\n#### Monitoring Requirements\n- Regular follow-up for risk factor management and rehabilitation progress\n- Assessment for depression and cognitive impairment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking cyclooxygenase-1 (COX-1) enzyme.\n- **Typical Dosing Range**: 300 mg loading dose, then 75 mg daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, dyspepsia, allergic reactions.\n- **When to Use vs. Alternatives**: First-line treatment for secondary prevention.\n\n#### Alteplase (tPA)\n- **Mechanism of Action**: Recombinant tissue plasminogen activator that dissolves blood clots.\n- **Typical Dosing Range**: 0.9 mg/kg (max 90 mg), 10% as a bolus over 1 minute, remainder over 60 minutes.\n- **Key Side Effects/Contraindications**: Intracranial haemorrhage, systemic bleeding, allergic reactions.\n- **When to Use vs. Alternatives**: Must be administered within 4.5 hours of symptom onset.\n\n#### Clopidogrel\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking the P2Y12 receptor.\n- **Typical Dosing Range**: Loading dose of 300 mg, then 75 mg daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, rash, thrombocytopenia.\n- **When to Use vs. Alternatives**: Used for secondary prevention, especially in patients intolerant to aspirin.\n\n### Procedures\n\n#### Thrombectomy\n- **What it Involves**: Endovascular procedure to remove a clot from a cerebral artery using a stent retriever or aspiration device.\n- **Indications**: Large vessel occlusion with significant neurological deficit, within 6-24 hours of symptom onset.\n- **Key Risks/Complications**: Bleeding, vessel perforation, infection, contrast nephropathy.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of ischaemic stroke varies based on the extent of brain damage, the speed of treatment, and the patient's overall health. Approximately one-third of patients recover with minimal or no disability, one-third have moderate to severe disability, and one-third die within a year.\n\n### Important Complications to Watch For\n- Recurrent stroke\n- Seizures\n- Deep vein thrombosis (DVT)\n- Pulmonary embolism (PE)\n- Pressure ulcers\n- Aspiration pneumonia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in the initial assessment, recognition, and management of ischaemic stroke. They should be proficient in using the FAST assessment, initiating investigations, and understanding the urgency of treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with symptoms suggestive of stroke, immediate escalation to a senior clinician is required. Timely referral to a stroke unit is essential for optimal management.\n\n### Key Safety Considerations\nEnsure timely recognition and treatment of stroke symptoms. Monitor for signs of deterioration, especially after thrombolysis or thrombectomy. Be vigilant for complications such as bleeding and ensure appropriate follow-up for secondary prevention.\n",
+  "content": {
+    "overview": {
+      "definition": "Ischaemic stroke is a type of stroke that occurs when a blood vessel supplying blood to the brain is obstructed, leading to a reduction in blood flow and subsequent brain tissue damage.",
+      "epidemiology": "Ischaemic strokes account for approximately 87% of all strokes. The incidence increases with age, with a higher prevalence in individuals over 65 years. Risk factors include hypertension, diabetes, smoking, atrial fibrillation, and hyperlipidaemia.",
+      "pathophysiology": "Ischaemic stroke occurs due to the occlusion of cerebral arteries, often caused by thrombosis (formation of a blood clot within a blood vessel) or embolism (a clot that travels from another part of the body). This leads to a cascade of cellular events, including energy failure, excitotoxicity, inflammation, and apoptosis, resulting in brain tissue necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of weakness or numbness in the face, arm, or leg, especially on one side of the body",
+        "Difficulty speaking or understanding speech (aphasia)",
+        "Sudden vision problems in one or both eyes",
+        "Loss of balance or coordination",
+        "Severe headache with no known cause"
+      ],
+      "signs": [
+        "Facial droop (asymmetry when smiling)",
+        "Arm drift (weakness in one arm when raised)",
+        "Speech difficulties (slurred or incoherent speech)",
+        "Altered level of consciousness"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status without focal neurological signs",
+        "Seizures as a presenting symptom",
+        "Transient symptoms that resolve quickly (Transient Ischaemic Attack - TIA)"
+      ],
+      "redFlags": [
+        "Rapid deterioration of neurological status",
+        "Severe headache (thunderclap headache)",
+        "Signs of increased intracranial pressure (e.g., vomiting, altered consciousness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Non-contrast CT scan of the head to rule out haemorrhage",
+        "Blood glucose level to exclude hypoglycaemia",
+        "Full blood count, electrolytes, renal function tests"
+      ],
+      "secondLine": [
+        "MRI of the brain for better visualization of ischaemic areas",
+        "Carotid Doppler ultrasound to assess for stenosis or occlusion",
+        "ECG to identify atrial fibrillation"
+      ],
+      "specialistTests": [
+        "CT angiography or MR angiography to visualize cerebral blood vessels",
+        "Transcranial Doppler ultrasound to assess blood flow in cerebral arteries"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ischaemic stroke is based on clinical presentation and imaging findings consistent with acute cerebral ischaemia. The FAST (Face, Arms, Speech, Time) acronym is a useful tool for recognition.",
+      "differentials": [
+        "Haemorrhagic stroke",
+        "Transient Ischaemic Attack (TIA)",
+        "Brain tumour",
+        "Migraine with aura",
+        "Seizure"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Aspirin 300 mg orally (if no contraindications)",
+          "Thrombolysis with alteplase (tPA) within 4.5 hours of symptom onset if eligible"
+        ],
+        "secondLine": [
+          "Mechanical thrombectomy for large vessel occlusion within 6-24 hours of symptom onset if eligible",
+          "Anticoagulation for atrial fibrillation after initial management"
+        ],
+        "procedures": [
+          "Thrombectomy: a minimally invasive procedure to remove a clot from a blood vessel in the brain, indicated for patients with large vessel occlusion and significant neurological deficit. Risks include bleeding, vessel perforation, and infection."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Secondary prevention with antiplatelet therapy (e.g., aspirin or clopidogrel)",
+          "Management of risk factors (hypertension, diabetes, hyperlipidaemia)"
+        ],
+        "secondLine": [
+          "Consideration of anticoagulation for patients with atrial fibrillation",
+          "Rehabilitation services (physiotherapy, occupational therapy)"
+        ],
+        "monitoring": [
+          "Regular follow-up for risk factor management and rehabilitation progress",
+          "Assessment for depression and cognitive impairment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation by blocking cyclooxygenase-1 (COX-1) enzyme.",
+          "dosing": "300 mg loading dose, then 75 mg daily.",
+          "sideEffects": "Gastrointestinal bleeding, dyspepsia, allergic reactions.",
+          "notes": "First-line treatment for secondary prevention."
+        },
+        {
+          "name": "Alteplase (tPA)",
+          "mechanism": "Recombinant tissue plasminogen activator that dissolves blood clots.",
+          "dosing": "0.9 mg/kg (max 90 mg), 10% as a bolus over 1 minute, remainder over 60 minutes.",
+          "sideEffects": "Intracranial haemorrhage, systemic bleeding, allergic reactions.",
+          "notes": "Must be administered within 4.5 hours of symptom onset."
+        },
+        {
+          "name": "Clopidogrel",
+          "mechanism": "Inhibits platelet aggregation by blocking the P2Y12 receptor.",
+          "dosing": "Loading dose of 300 mg, then 75 mg daily.",
+          "sideEffects": "Gastrointestinal bleeding, rash, thrombocytopenia.",
+          "notes": "Used for secondary prevention, especially in patients intolerant to aspirin."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thrombectomy",
+          "description": "Endovascular procedure to remove a clot from a cerebral artery using a stent retriever or aspiration device.",
+          "indications": "Large vessel occlusion with significant neurological deficit, within 6-24 hours of symptom onset.",
+          "risks": "Bleeding, vessel perforation, infection, contrast nephropathy."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of ischaemic stroke varies based on the extent of brain damage, the speed of treatment, and the patient's overall health. Approximately one-third of patients recover with minimal or no disability, one-third have moderate to severe disability, and one-third die within a year.",
+    "complications": [
+      "Recurrent stroke",
+      "Seizures",
+      "Deep vein thrombosis (DVT)",
+      "Pulmonary embolism (PE)",
+      "Pressure ulcers",
+      "Aspiration pneumonia"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in the initial assessment, recognition, and management of ischaemic stroke. They should be proficient in using the FAST assessment, initiating investigations, and understanding the urgency of treatment.",
+    "escalation": "If a patient presents with symptoms suggestive of stroke, immediate escalation to a senior clinician is required. Timely referral to a stroke unit is essential for optimal management.",
+    "keySafetyConsiderations": "Ensure timely recognition and treatment of stroke symptoms. Monitor for signs of deterioration, especially after thrombolysis or thrombectomy. Be vigilant for complications such as bleeding and ensure appropriate follow-up for secondary prevention."
+  }
+}

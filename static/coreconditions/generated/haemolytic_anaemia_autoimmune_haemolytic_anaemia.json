@@ -1,0 +1,139 @@
+{
+  "id": "haemolytic_anaemia_autoimmune_haemolytic_anaemia",
+  "name": "Haemolytic anaemia - Autoimmune haemolytic anaemia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:54:47.056062",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Haemolytic anaemia - Autoimmune haemolytic anaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAutoimmune haemolytic anaemia (AIHA) is a condition characterized by the premature destruction of red blood cells (RBCs) due to the immune system producing antibodies against its own RBCs, leading to anaemia.\n\n### Epidemiology\nAIHA can occur at any age but is more common in adults, particularly those aged 50-70 years. It can be idiopathic or secondary to other conditions such as lymphoproliferative disorders, autoimmune diseases, or infections.\n\n### Essential Pathophysiology\nIn AIHA, the immune system mistakenly identifies RBCs as foreign and produces antibodies (IgG or IgM) that bind to the RBCs. This leads to their destruction primarily in the spleen (extravascular hemolysis) or in the circulation (intravascular hemolysis). The destruction of RBCs results in a decrease in their lifespan and subsequent anaemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath\n- Jaundice\n\n### Key Signs\n- Pallor\n- Jaundice\n- Splenomegaly\n- Tachycardia\n- Systolic murmur due to increased cardiac output\n\n### Atypical Presentations\n- Severe anaemia with minimal symptoms\n- Acute onset of symptoms in previously healthy individuals\n\n### Red Flags Requiring Immediate Action\n- Severe anaemia (Hb < 7 g/dL)\n- Signs of acute hemolysis (dark urine, back pain)\n- Associated symptoms of underlying malignancy (weight loss, night sweats)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- Reticulocyte count\n- Peripheral blood smear\n- Direct Coombs test (DAT)\n\n### Second-line Investigations\n- Liver function tests (LFTs)\n- Haptoglobin level\n- LDH (lactate dehydrogenase)\n- Bilirubin levels\n\n### Specialist Tests\n- Bone marrow biopsy (if suspected underlying malignancy)\n- Antibody specificity testing (to identify the type of antibody involved)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of AIHA is confirmed by the presence of anaemia, reticulocytosis, positive direct Coombs test, and evidence of hemolysis (elevated LDH, low haptoglobin, elevated indirect bilirubin).\n\n### Key Differential Diagnoses to Exclude\n- Hereditary spherocytosis\n- Thalassemia\n- Sickle cell disease\n- Chronic kidney disease\n- Hypersplenism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., prednisone 1 mg/kg/day)\n- Supportive care (transfusions if necessary)\n\n#### Second-line Treatments\n- Intravenous immunoglobulin (IVIG) if severe\n- Rituximab (if refractory cases)\n\n#### Emergency Procedures\n- Splenectomy (in cases of chronic AIHA unresponsive to medical therapy)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Corticosteroids (tapering dose based on response)\n- Immunosuppressive agents (e.g., azathioprine, mycophenolate mofetil)\n\n#### Second-line Treatments\n- Rituximab (for refractory cases)\n- Eculizumab (in cases of complement-mediated hemolysis)\n\n#### Monitoring Requirements\n- Regular FBC to monitor hemoglobin levels and reticulocyte count\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that suppresses the immune response and reduces antibody production.\n- **Typical Dosing Range**: 1 mg/kg/day, taper based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hyperglycemia, osteoporosis, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially with long-term use.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B-cells, reducing antibody production.\n- **Typical Dosing Range**: 375 mg/m² weekly for 4 weeks.\n- **Key Side Effects/Contraindications**: Infusion reactions, infections, reactivation of hepatitis B.\n- **When to Use vs. Alternatives**: Consider premedication with antihistamines and corticosteroids.\n\n#### IVIG\n- **Mechanism of Action**: Provides passive immunity and modulates immune response.\n- **Typical Dosing Range**: 1 g/kg IV over 2-5 days.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, thromboembolic events.\n- **When to Use vs. Alternatives**: Monitor for renal function and fluid overload.\n\n### Procedures\n\n#### Splenectomy\n- **What it Involves**: Surgical removal of the spleen, which is responsible for the destruction of antibody-coated RBCs.\n- **Indications**: Chronic AIHA unresponsive to medical therapy, significant splenomegaly.\n- **Key Risks/Complications**: Infection risk (especially encapsulated organisms), bleeding, thrombosis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of AIHA varies; many patients respond well to treatment, but some may have chronic disease requiring ongoing management. Secondary AIHA may have a worse prognosis depending on the underlying condition.\n\n### Important Complications to Watch For\n- Severe anaemia requiring transfusion\n- Thromboembolic events due to increased blood viscosity\n- Infections post-splenectomy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of AIHA, perform initial investigations, and initiate treatment. They should also be aware of when to escalate care to a specialist.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist if there is severe anaemia, lack of response to initial treatment, or suspicion of an underlying malignancy.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients receiving immunosuppressive therapy or post-splenectomy. Regularly assess for signs of hemolysis and adjust treatment as necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Autoimmune haemolytic anaemia (AIHA) is a condition characterized by the premature destruction of red blood cells (RBCs) due to the immune system producing antibodies against its own RBCs, leading to anaemia.",
+      "epidemiology": "AIHA can occur at any age but is more common in adults, particularly those aged 50-70 years. It can be idiopathic or secondary to other conditions such as lymphoproliferative disorders, autoimmune diseases, or infections.",
+      "pathophysiology": "In AIHA, the immune system mistakenly identifies RBCs as foreign and produces antibodies (IgG or IgM) that bind to the RBCs. This leads to their destruction primarily in the spleen (extravascular hemolysis) or in the circulation (intravascular hemolysis). The destruction of RBCs results in a decrease in their lifespan and subsequent anaemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath",
+        "Jaundice"
+      ],
+      "signs": [
+        "Pallor",
+        "Jaundice",
+        "Splenomegaly",
+        "Tachycardia",
+        "Systolic murmur due to increased cardiac output"
+      ],
+      "atypicalPresentations": [
+        "Severe anaemia with minimal symptoms",
+        "Acute onset of symptoms in previously healthy individuals"
+      ],
+      "redFlags": [
+        "Severe anaemia (Hb < 7 g/dL)",
+        "Signs of acute hemolysis (dark urine, back pain)",
+        "Associated symptoms of underlying malignancy (weight loss, night sweats)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "Reticulocyte count",
+        "Peripheral blood smear",
+        "Direct Coombs test (DAT)"
+      ],
+      "secondLine": [
+        "Liver function tests (LFTs)",
+        "Haptoglobin level",
+        "LDH (lactate dehydrogenase)",
+        "Bilirubin levels"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy (if suspected underlying malignancy)",
+        "Antibody specificity testing (to identify the type of antibody involved)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of AIHA is confirmed by the presence of anaemia, reticulocytosis, positive direct Coombs test, and evidence of hemolysis (elevated LDH, low haptoglobin, elevated indirect bilirubin).",
+      "differentials": [
+        "Hereditary spherocytosis",
+        "Thalassemia",
+        "Sickle cell disease",
+        "Chronic kidney disease",
+        "Hypersplenism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., prednisone 1 mg/kg/day)",
+          "Supportive care (transfusions if necessary)"
+        ],
+        "secondLine": [
+          "Intravenous immunoglobulin (IVIG) if severe",
+          "Rituximab (if refractory cases)"
+        ],
+        "procedures": [
+          "Splenectomy (in cases of chronic AIHA unresponsive to medical therapy)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Corticosteroids (tapering dose based on response)",
+          "Immunosuppressive agents (e.g., azathioprine, mycophenolate mofetil)"
+        ],
+        "secondLine": [
+          "Rituximab (for refractory cases)",
+          "Eculizumab (in cases of complement-mediated hemolysis)"
+        ],
+        "monitoring": [
+          "Regular FBC to monitor hemoglobin levels and reticulocyte count",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that suppresses the immune response and reduces antibody production.",
+          "dosing": "1 mg/kg/day, taper based on response.",
+          "sideEffects": "Weight gain, hyperglycemia, osteoporosis, increased infection risk.",
+          "notes": "Monitor for side effects, especially with long-term use."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B-cells, reducing antibody production.",
+          "dosing": "375 mg/m² weekly for 4 weeks.",
+          "sideEffects": "Infusion reactions, infections, reactivation of hepatitis B.",
+          "notes": "Consider premedication with antihistamines and corticosteroids."
+        },
+        {
+          "name": "IVIG",
+          "mechanism": "Provides passive immunity and modulates immune response.",
+          "dosing": "1 g/kg IV over 2-5 days.",
+          "sideEffects": "Headache, fever, chills, thromboembolic events.",
+          "notes": "Monitor for renal function and fluid overload."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Splenectomy",
+          "description": "Surgical removal of the spleen, which is responsible for the destruction of antibody-coated RBCs.",
+          "indications": "Chronic AIHA unresponsive to medical therapy, significant splenomegaly.",
+          "risks": "Infection risk (especially encapsulated organisms), bleeding, thrombosis."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of AIHA varies; many patients respond well to treatment, but some may have chronic disease requiring ongoing management. Secondary AIHA may have a worse prognosis depending on the underlying condition.",
+    "complications": [
+      "Severe anaemia requiring transfusion",
+      "Thromboembolic events due to increased blood viscosity",
+      "Infections post-splenectomy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of AIHA, perform initial investigations, and initiate treatment. They should also be aware of when to escalate care to a specialist.",
+    "escalation": "Refer to a haematologist if there is severe anaemia, lack of response to initial treatment, or suspicion of an underlying malignancy.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients receiving immunosuppressive therapy or post-splenectomy. Regularly assess for signs of hemolysis and adjust treatment as necessary."
+  }
+}

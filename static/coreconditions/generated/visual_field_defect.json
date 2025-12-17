@@ -1,0 +1,134 @@
+{
+  "id": "visual_field_defect",
+  "name": "Visual field defect",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:44:28.910984",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Visual field defect: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVisual field defect refers to a partial or complete loss of vision in a specific area of the visual field, which can be caused by various ocular or neurological conditions.\n\n### Epidemiology\nVisual field defects can occur in a wide range of populations, with prevalence varying based on underlying causes such as glaucoma, stroke, or optic neuropathy. It is estimated that about 2% of the population may have some form of visual field defect, with higher rates in older adults.\n\n### Essential Pathophysiology\nVisual field defects arise from damage to the visual pathways, which include the retina, optic nerve, optic chiasm, and visual cortex. The specific location of the defect depends on the site of the lesion or pathology affecting these structures.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Loss of vision in part of the visual field\n- Difficulty reading or recognizing faces\n- Bumping into objects on one side\n\n### Key Signs\n- Defects identified during visual field testing (e.g., perimetry)\n- Relative afferent pupillary defect (RAPD) in unilateral cases\n- Optic disc pallor or swelling on fundoscopic examination\n\n### Atypical Presentations\n- Homonymous hemianopia without other neurological signs\n- Bitemporal hemianopia with normal visual acuity\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of visual field loss\n- Associated neurological symptoms (e.g., headache, weakness, speech changes)\n- History of trauma or recent eye surgery\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual field testing (perimetry)\n- Fundoscopy\n- Optical coherence tomography (OCT)\n\n### Second-line Investigations\n- MRI of the brain and orbits\n- Visual evoked potentials (VEP)\n- Ultrasound of the eye\n\n### Specialist Tests\n- Fluorescein angiography\n- Electroretinography (ERG)\n- Lumbar puncture if intracranial pathology is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of a visual field defect confirmed by perimetry, along with clinical correlation to potential underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Glaucoma\n- Retinal detachment\n- Optic neuritis\n- Stroke (ischemic or hemorrhagic)\n- Brain tumors (e.g., pituitary adenoma)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to ophthalmology or neurology depending on the suspected cause\n- Consider corticosteroids if optic neuritis is suspected\n\n#### Second-line Treatments\n- Monitor for progression of symptoms\n- Consider imaging if not already done\n\n#### Emergency Procedures\n- Laser therapy for retinal tears\n- Surgical intervention for tumors or hemorrhages\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of visual fields and visual acuity\n- Patient education on coping strategies for visual impairment\n\n#### Second-line Treatments\n- Consider low vision aids and rehabilitation services\n- Referral to occupational therapy for adaptation strategies\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess progression of visual field defects\n- Assessment of quality of life and functional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Reduce inflammation and edema in optic neuritis or other inflammatory conditions\n- **Typical Dosing Range**: Methylprednisolone 1 g IV daily for 3 days, followed by oral taper\n- **Key Side Effects/Contraindications**: Increased blood sugar, mood changes, gastrointestinal upset\n- **When to Use vs. Alternatives**: Monitor for signs of infection and metabolic changes.\n\n#### Carbonic anhydrase inhibitors (e.g., Acetazolamide)\n- **Mechanism of Action**: Reduce intraocular pressure in glaucoma\n- **Typical Dosing Range**: 250 mg orally 1-2 times daily\n- **Key Side Effects/Contraindications**: Paresthesia, metabolic acidosis, renal stones\n- **When to Use vs. Alternatives**: Monitor electrolytes and renal function.\n\n### Procedures\n\n#### Visual field testing (perimetry)\n- **What it Involves**: A test to map the visual field and identify areas of vision loss.\n- **Indications**: To assess and quantify visual field defects in patients with suspected ocular or neurological conditions.\n- **Key Risks/Complications**: Minimal; may cause discomfort or fatigue during prolonged testing.\n\n#### Laser photocoagulation\n- **What it Involves**: A procedure to treat retinal tears or diabetic retinopathy by using laser to seal leaking blood vessels.\n- **Indications**: Retinal detachment, proliferative diabetic retinopathy.\n- **Key Risks/Complications**: Vision loss, retinal damage, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of visual field defects varies widely depending on the underlying cause. Some conditions, like glaucoma, can be managed effectively to prevent further loss, while others, like certain types of stroke, may lead to permanent deficits.\n\n### Important Complications to Watch For\n- Progressive vision loss\n- Increased risk of falls and accidents\n- Psychosocial impact, including depression and anxiety\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, and refer patients appropriately. They should also provide education on visual impairment and support services.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to ophthalmology or neurology is warranted for sudden onset visual field defects, especially with associated neurological symptoms.\n\n### Key Safety Considerations\nEnsure thorough history-taking to identify red flags, monitor for signs of deterioration, and provide appropriate patient education on safety measures to prevent accidents.\n",
+  "content": {
+    "overview": {
+      "definition": "Visual field defect refers to a partial or complete loss of vision in a specific area of the visual field, which can be caused by various ocular or neurological conditions.",
+      "epidemiology": "Visual field defects can occur in a wide range of populations, with prevalence varying based on underlying causes such as glaucoma, stroke, or optic neuropathy. It is estimated that about 2% of the population may have some form of visual field defect, with higher rates in older adults.",
+      "pathophysiology": "Visual field defects arise from damage to the visual pathways, which include the retina, optic nerve, optic chiasm, and visual cortex. The specific location of the defect depends on the site of the lesion or pathology affecting these structures."
+    },
+    "recognition": {
+      "symptoms": [
+        "Loss of vision in part of the visual field",
+        "Difficulty reading or recognizing faces",
+        "Bumping into objects on one side"
+      ],
+      "signs": [
+        "Defects identified during visual field testing (e.g., perimetry)",
+        "Relative afferent pupillary defect (RAPD) in unilateral cases",
+        "Optic disc pallor or swelling on fundoscopic examination"
+      ],
+      "atypicalPresentations": [
+        "Homonymous hemianopia without other neurological signs",
+        "Bitemporal hemianopia with normal visual acuity"
+      ],
+      "redFlags": [
+        "Sudden onset of visual field loss",
+        "Associated neurological symptoms (e.g., headache, weakness, speech changes)",
+        "History of trauma or recent eye surgery"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual field testing (perimetry)",
+        "Fundoscopy",
+        "Optical coherence tomography (OCT)"
+      ],
+      "secondLine": [
+        "MRI of the brain and orbits",
+        "Visual evoked potentials (VEP)",
+        "Ultrasound of the eye"
+      ],
+      "specialistTests": [
+        "Fluorescein angiography",
+        "Electroretinography (ERG)",
+        "Lumbar puncture if intracranial pathology is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of a visual field defect confirmed by perimetry, along with clinical correlation to potential underlying causes.",
+      "differentials": [
+        "Glaucoma",
+        "Retinal detachment",
+        "Optic neuritis",
+        "Stroke (ischemic or hemorrhagic)",
+        "Brain tumors (e.g., pituitary adenoma)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to ophthalmology or neurology depending on the suspected cause",
+          "Consider corticosteroids if optic neuritis is suspected"
+        ],
+        "secondLine": [
+          "Monitor for progression of symptoms",
+          "Consider imaging if not already done"
+        ],
+        "procedures": [
+          "Laser therapy for retinal tears",
+          "Surgical intervention for tumors or hemorrhages"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of visual fields and visual acuity",
+          "Patient education on coping strategies for visual impairment"
+        ],
+        "secondLine": [
+          "Consider low vision aids and rehabilitation services",
+          "Referral to occupational therapy for adaptation strategies"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess progression of visual field defects",
+          "Assessment of quality of life and functional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Reduce inflammation and edema in optic neuritis or other inflammatory conditions",
+          "dosing": "Methylprednisolone 1 g IV daily for 3 days, followed by oral taper",
+          "sideEffects": "Increased blood sugar, mood changes, gastrointestinal upset",
+          "notes": "Monitor for signs of infection and metabolic changes."
+        },
+        {
+          "name": "Carbonic anhydrase inhibitors (e.g., Acetazolamide)",
+          "mechanism": "Reduce intraocular pressure in glaucoma",
+          "dosing": "250 mg orally 1-2 times daily",
+          "sideEffects": "Paresthesia, metabolic acidosis, renal stones",
+          "notes": "Monitor electrolytes and renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Visual field testing (perimetry)",
+          "description": "A test to map the visual field and identify areas of vision loss.",
+          "indications": "To assess and quantify visual field defects in patients with suspected ocular or neurological conditions.",
+          "risks": "Minimal; may cause discomfort or fatigue during prolonged testing."
+        },
+        {
+          "name": "Laser photocoagulation",
+          "description": "A procedure to treat retinal tears or diabetic retinopathy by using laser to seal leaking blood vessels.",
+          "indications": "Retinal detachment, proliferative diabetic retinopathy.",
+          "risks": "Vision loss, retinal damage, bleeding."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of visual field defects varies widely depending on the underlying cause. Some conditions, like glaucoma, can be managed effectively to prevent further loss, while others, like certain types of stroke, may lead to permanent deficits.",
+    "complications": [
+      "Progressive vision loss",
+      "Increased risk of falls and accidents",
+      "Psychosocial impact, including depression and anxiety"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, and refer patients appropriately. They should also provide education on visual impairment and support services.",
+    "escalation": "Immediate referral to ophthalmology or neurology is warranted for sudden onset visual field defects, especially with associated neurological symptoms.",
+    "keySafetyConsiderations": "Ensure thorough history-taking to identify red flags, monitor for signs of deterioration, and provide appropriate patient education on safety measures to prevent accidents."
+  }
+}

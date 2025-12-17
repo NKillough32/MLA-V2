@@ -1,0 +1,122 @@
+{
+  "id": "greater_trochanter_bursitis",
+  "name": "Greater trochanter bursitis?",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:32:01.917970",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Greater trochanter bursitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGreater trochanter bursitis, also known as trochanteric bursitis, is an inflammation of the bursa located over the greater trochanter of the femur, which can cause lateral hip pain.\n\n### Epidemiology\nIt is most common in middle-aged women and is often associated with overuse, trauma, or underlying conditions such as osteoarthritis or tendinopathy.\n\n### Essential Pathophysiology\nThe condition arises from irritation or inflammation of the bursa due to repetitive friction from the gluteus medius and minimus tendons, leading to pain and swelling.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Lateral hip pain, especially when lying on the affected side\n- Pain with activities such as walking, climbing stairs, or standing up from a seated position\n- Tenderness over the greater trochanter\n\n### Key Signs\n- Localized tenderness over the greater trochanter\n- Pain on resisted abduction of the hip\n- Positive Ober's test (inability to adduct the leg when the hip is flexed)\n\n### Atypical Presentations\n- Pain may radiate down the lateral thigh\n- Symptoms may mimic sciatica or lumbar radiculopathy\n\n### Red Flags Requiring Immediate Action\n- Severe pain that does not improve with rest\n- Signs of infection (fever, redness, swelling)\n- History of recent trauma or fall\n- Inability to bear weight on the affected leg\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment based on history and physical examination\n- X-ray to rule out fractures or other bony abnormalities\n\n### Second-line Investigations\n- Ultrasound to assess for bursal fluid or tendon pathology\n- MRI if there is suspicion of associated tendon tears or other complications\n\n### Specialist Tests\n- Aspiration of the bursa for analysis if infection or gout is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on characteristic symptoms and physical examination findings. Imaging may be used to rule out other conditions.\n\n### Key Differential Diagnoses to Exclude\n- Hip osteoarthritis\n- Iliotibial band syndrome\n- Lumbar radiculopathy\n- Snapping hip syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce inflammation\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on stretching and strengthening exercises\n- Corticosteroid injection into the bursa if symptoms persist\n\n#### Emergency Procedures\n- Bursal aspiration for diagnostic or therapeutic purposes\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy and rehabilitation exercises\n- Gradual return to activity with modifications\n\n#### Second-line Treatments\n- Consideration of surgical options if conservative management fails\n\n#### Monitoring Requirements\n- Regular follow-up to assess pain levels and functional improvement\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Corticosteroid injection\n- **Mechanism of Action**: Reduces inflammation and pain at the site of injection\n- **Typical Dosing Range**: 10-40 mg of triamcinolone or similar, injected into the bursa\n- **Key Side Effects/Contraindications**: Local pain, infection, skin atrophy, systemic effects with repeated use\n- **When to Use vs. Alternatives**: Limit to 2-3 injections per year.\n\n### Procedures\n\n#### Bursal aspiration\n- **What it Involves**: A needle is inserted into the bursa to remove excess fluid and relieve pressure\n- **Indications**: Persistent pain, suspected infection, or diagnostic purposes\n- **Key Risks/Complications**: Infection, bleeding, pain at the injection site\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients respond well to conservative management, with significant improvement in symptoms. Chronic cases may take longer to resolve and may require more intensive treatment.\n\n### Important Complications to Watch For\n- Persistent pain or disability\n- Recurrence of symptoms\n- Infection following injection or aspiration\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also recognize red flags that necessitate further investigation or specialist referral.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopedics or rheumatology if there is no improvement with conservative management after 6-8 weeks, or if red flags are present.\n\n### Key Safety Considerations\nMonitor for signs of infection post-injection, educate patients on activity modification to prevent exacerbation, and ensure appropriate follow-up for chronic cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Greater trochanter bursitis, also known as trochanteric bursitis, is an inflammation of the bursa located over the greater trochanter of the femur, which can cause lateral hip pain.",
+      "epidemiology": "It is most common in middle-aged women and is often associated with overuse, trauma, or underlying conditions such as osteoarthritis or tendinopathy.",
+      "pathophysiology": "The condition arises from irritation or inflammation of the bursa due to repetitive friction from the gluteus medius and minimus tendons, leading to pain and swelling."
+    },
+    "recognition": {
+      "symptoms": [
+        "Lateral hip pain, especially when lying on the affected side",
+        "Pain with activities such as walking, climbing stairs, or standing up from a seated position",
+        "Tenderness over the greater trochanter"
+      ],
+      "signs": [
+        "Localized tenderness over the greater trochanter",
+        "Pain on resisted abduction of the hip",
+        "Positive Ober's test (inability to adduct the leg when the hip is flexed)"
+      ],
+      "atypicalPresentations": [
+        "Pain may radiate down the lateral thigh",
+        "Symptoms may mimic sciatica or lumbar radiculopathy"
+      ],
+      "redFlags": [
+        "Severe pain that does not improve with rest",
+        "Signs of infection (fever, redness, swelling)",
+        "History of recent trauma or fall",
+        "Inability to bear weight on the affected leg"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment based on history and physical examination",
+        "X-ray to rule out fractures or other bony abnormalities"
+      ],
+      "secondLine": [
+        "Ultrasound to assess for bursal fluid or tendon pathology",
+        "MRI if there is suspicion of associated tendon tears or other complications"
+      ],
+      "specialistTests": [
+        "Aspiration of the bursa for analysis if infection or gout is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on characteristic symptoms and physical examination findings. Imaging may be used to rule out other conditions.",
+      "differentials": [
+        "Hip osteoarthritis",
+        "Iliotibial band syndrome",
+        "Lumbar radiculopathy",
+        "Snapping hip syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce inflammation",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on stretching and strengthening exercises",
+          "Corticosteroid injection into the bursa if symptoms persist"
+        ],
+        "procedures": [
+          "Bursal aspiration for diagnostic or therapeutic purposes"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy and rehabilitation exercises",
+          "Gradual return to activity with modifications"
+        ],
+        "secondLine": [
+          "Consideration of surgical options if conservative management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pain levels and functional improvement"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Corticosteroid injection",
+          "mechanism": "Reduces inflammation and pain at the site of injection",
+          "dosing": "10-40 mg of triamcinolone or similar, injected into the bursa",
+          "sideEffects": "Local pain, infection, skin atrophy, systemic effects with repeated use",
+          "notes": "Limit to 2-3 injections per year."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bursal aspiration",
+          "description": "A needle is inserted into the bursa to remove excess fluid and relieve pressure",
+          "indications": "Persistent pain, suspected infection, or diagnostic purposes",
+          "risks": "Infection, bleeding, pain at the injection site"
+        }
+      ]
+    },
+    "prognosis": "Most patients respond well to conservative management, with significant improvement in symptoms. Chronic cases may take longer to resolve and may require more intensive treatment.",
+    "complications": [
+      "Persistent pain or disability",
+      "Recurrence of symptoms",
+      "Infection following injection or aspiration"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also recognize red flags that necessitate further investigation or specialist referral.",
+    "escalation": "Refer to orthopedics or rheumatology if there is no improvement with conservative management after 6-8 weeks, or if red flags are present.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-injection, educate patients on activity modification to prevent exacerbation, and ensure appropriate follow-up for chronic cases."
+  }
+}

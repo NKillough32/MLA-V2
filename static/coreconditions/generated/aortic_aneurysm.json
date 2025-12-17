@@ -1,0 +1,141 @@
+{
+  "id": "aortic_aneurysm",
+  "name": "Aortic aneurysm",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:20:57.958706",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Aortic aneurysm: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAn aortic aneurysm is an abnormal dilation of the aorta, the largest blood vessel in the body, which can lead to rupture and life-threatening hemorrhage.\n\n### Epidemiology\nAortic aneurysms are more common in older adults, particularly men over 65 years of age. The prevalence is approximately 2-8% in this population, with risk factors including smoking, hypertension, and a family history of vascular disease.\n\n### Essential Pathophysiology\nAortic aneurysms typically result from a combination of degenerative changes in the vessel wall, including loss of elastic fibers and smooth muscle cells, leading to weakening and dilation. Risk factors such as atherosclerosis, hypertension, and genetic conditions (e.g., Marfan syndrome) contribute to this process.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Often asymptomatic until rupture\n- Abdominal or back pain (if symptomatic)\n- Pulsatile abdominal mass (if large)\n- Chest pain (for thoracic aneurysms)\n\n### Key Signs\n- Pulsatile mass in the abdomen (for abdominal aortic aneurysm)\n- Hypotension (if ruptured)\n- Tachycardia (if ruptured)\n- Decreased peripheral pulses (if embolization occurs)\n\n### Atypical Presentations\n- Renal colic-like pain\n- Leg ischemia (if embolization occurs)\n- Chest pain mimicking myocardial infarction (for thoracic aneurysms)\n\n### Red Flags Requiring Immediate Action\n- Sudden onset severe back or abdominal pain\n- Syncope or near-syncope\n- Signs of shock (hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound (abdominal ultrasound for AAA)\n- CT scan (CT angiography for thoracic and abdominal aneurysms)\n\n### Second-line Investigations\n- MRI (for detailed imaging, especially in complex cases)\n- Chest X-ray (may show widening of the mediastinum for thoracic aneurysms)\n\n### Specialist Tests\n- Angiography (less commonly used now due to non-invasive imaging advancements)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on imaging findings of aortic dilation (≥3 cm for abdominal aortic aneurysm, ≥4 cm for thoracic aortic aneurysm) and clinical presentation.\n\n### Key Differential Diagnoses to Exclude\n- Aortic dissection\n- Renal colic\n- Pancreatitis\n- Mesenteric ischemia\n- Abdominal mass (tumor)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate surgical consultation\n- Fluid resuscitation and stabilization\n- Pain management\n\n#### Second-line Treatments\n- Transfusion if significant blood loss\n- Antibiotics if infection is suspected\n\n#### Emergency Procedures\n- Emergency surgical repair (open or endovascular) for ruptured aneurysms\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with ultrasound (for small aneurysms <5.5 cm)\n- Control of blood pressure and cholesterol\n\n#### Second-line Treatments\n- Surgical repair (elective for AAA ≥5.5 cm or symptomatic)\n- Endovascular aneurysm repair (EVAR) for suitable candidates\n\n#### Monitoring Requirements\n- Regular imaging follow-up (ultrasound or CT) every 6-12 months for small aneurysms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and blood pressure, decreasing wall stress on the aorta.\n- **Typical Dosing Range**: Metoprolol 25-100 mg orally daily, titrate as needed.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue, dizziness.\n- **When to Use vs. Alternatives**: Consider in patients with hypertension or a history of dissection.\n\n#### ACE inhibitors\n- **Mechanism of Action**: Lower blood pressure and reduce strain on the aorta.\n- **Typical Dosing Range**: Lisinopril 10-40 mg orally daily.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Useful in hypertensive patients.\n\n#### Statins\n- **Mechanism of Action**: Stabilize atherosclerotic plaques and reduce cardiovascular risk.\n- **Typical Dosing Range**: Atorvastatin 10-80 mg orally daily.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Consider in patients with dyslipidemia.\n\n### Procedures\n\n#### Open surgical repair\n- **What it Involves**: Involves resection of the aneurysm and replacement with a synthetic graft.\n- **Indications**: Large or symptomatic aneurysms, ruptured aneurysms.\n- **Key Risks/Complications**: Infection, bleeding, organ ischemia, mortality.\n\n#### Endovascular aneurysm repair (EVAR)\n- **What it Involves**: Minimally invasive procedure using a stent graft placed via the femoral artery.\n- **Indications**: Suitable for patients with AAA <5.5 cm and favorable anatomy.\n- **Key Risks/Complications**: Endoleak, graft migration, need for re-intervention.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of an untreated aortic aneurysm is poor, with a high risk of rupture. Surgical repair significantly improves survival rates, especially if performed electively before rupture occurs.\n\n### Important Complications to Watch For\n- Rupture leading to massive hemorrhage\n- Thromboembolism\n- Infection (especially with grafts)\n- Renal failure (post-surgical)\n- Aortoenteric fistula (rare)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of aortic aneurysm, performing initial assessments, and facilitating timely referrals to surgical teams. They should also manage risk factors and provide education on lifestyle modifications.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to surgical teams is required for suspected ruptured aneurysms or significant symptomatic cases. Ensure rapid transport to a facility capable of surgical intervention.\n\n### Key Safety Considerations\nMonitor vital signs closely in suspected cases, ensure rapid access to imaging, and maintain a high index of suspicion in at-risk populations. Be aware of the signs of shock and prepare for emergency interventions.\n",
+  "content": {
+    "overview": {
+      "definition": "An aortic aneurysm is an abnormal dilation of the aorta, the largest blood vessel in the body, which can lead to rupture and life-threatening hemorrhage.",
+      "epidemiology": "Aortic aneurysms are more common in older adults, particularly men over 65 years of age. The prevalence is approximately 2-8% in this population, with risk factors including smoking, hypertension, and a family history of vascular disease.",
+      "pathophysiology": "Aortic aneurysms typically result from a combination of degenerative changes in the vessel wall, including loss of elastic fibers and smooth muscle cells, leading to weakening and dilation. Risk factors such as atherosclerosis, hypertension, and genetic conditions (e.g., Marfan syndrome) contribute to this process."
+    },
+    "recognition": {
+      "symptoms": [
+        "Often asymptomatic until rupture",
+        "Abdominal or back pain (if symptomatic)",
+        "Pulsatile abdominal mass (if large)",
+        "Chest pain (for thoracic aneurysms)"
+      ],
+      "signs": [
+        "Pulsatile mass in the abdomen (for abdominal aortic aneurysm)",
+        "Hypotension (if ruptured)",
+        "Tachycardia (if ruptured)",
+        "Decreased peripheral pulses (if embolization occurs)"
+      ],
+      "atypicalPresentations": [
+        "Renal colic-like pain",
+        "Leg ischemia (if embolization occurs)",
+        "Chest pain mimicking myocardial infarction (for thoracic aneurysms)"
+      ],
+      "redFlags": [
+        "Sudden onset severe back or abdominal pain",
+        "Syncope or near-syncope",
+        "Signs of shock (hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound (abdominal ultrasound for AAA)",
+        "CT scan (CT angiography for thoracic and abdominal aneurysms)"
+      ],
+      "secondLine": [
+        "MRI (for detailed imaging, especially in complex cases)",
+        "Chest X-ray (may show widening of the mediastinum for thoracic aneurysms)"
+      ],
+      "specialistTests": [
+        "Angiography (less commonly used now due to non-invasive imaging advancements)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on imaging findings of aortic dilation (≥3 cm for abdominal aortic aneurysm, ≥4 cm for thoracic aortic aneurysm) and clinical presentation.",
+      "differentials": [
+        "Aortic dissection",
+        "Renal colic",
+        "Pancreatitis",
+        "Mesenteric ischemia",
+        "Abdominal mass (tumor)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate surgical consultation",
+          "Fluid resuscitation and stabilization",
+          "Pain management"
+        ],
+        "secondLine": [
+          "Transfusion if significant blood loss",
+          "Antibiotics if infection is suspected"
+        ],
+        "procedures": [
+          "Emergency surgical repair (open or endovascular) for ruptured aneurysms"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with ultrasound (for small aneurysms <5.5 cm)",
+          "Control of blood pressure and cholesterol"
+        ],
+        "secondLine": [
+          "Surgical repair (elective for AAA ≥5.5 cm or symptomatic)",
+          "Endovascular aneurysm repair (EVAR) for suitable candidates"
+        ],
+        "monitoring": [
+          "Regular imaging follow-up (ultrasound or CT) every 6-12 months for small aneurysms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and blood pressure, decreasing wall stress on the aorta.",
+          "dosing": "Metoprolol 25-100 mg orally daily, titrate as needed.",
+          "sideEffects": "Bradycardia, hypotension, fatigue, dizziness.",
+          "notes": "Consider in patients with hypertension or a history of dissection."
+        },
+        {
+          "name": "ACE inhibitors",
+          "mechanism": "Lower blood pressure and reduce strain on the aorta.",
+          "dosing": "Lisinopril 10-40 mg orally daily.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment.",
+          "notes": "Useful in hypertensive patients."
+        },
+        {
+          "name": "Statins",
+          "mechanism": "Stabilize atherosclerotic plaques and reduce cardiovascular risk.",
+          "dosing": "Atorvastatin 10-80 mg orally daily.",
+          "sideEffects": "Myopathy, liver enzyme elevation.",
+          "notes": "Consider in patients with dyslipidemia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Open surgical repair",
+          "description": "Involves resection of the aneurysm and replacement with a synthetic graft.",
+          "indications": "Large or symptomatic aneurysms, ruptured aneurysms.",
+          "risks": "Infection, bleeding, organ ischemia, mortality."
+        },
+        {
+          "name": "Endovascular aneurysm repair (EVAR)",
+          "description": "Minimally invasive procedure using a stent graft placed via the femoral artery.",
+          "indications": "Suitable for patients with AAA <5.5 cm and favorable anatomy.",
+          "risks": "Endoleak, graft migration, need for re-intervention."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of an untreated aortic aneurysm is poor, with a high risk of rupture. Surgical repair significantly improves survival rates, especially if performed electively before rupture occurs.",
+    "complications": [
+      "Rupture leading to massive hemorrhage",
+      "Thromboembolism",
+      "Infection (especially with grafts)",
+      "Renal failure (post-surgical)",
+      "Aortoenteric fistula (rare)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of aortic aneurysm, performing initial assessments, and facilitating timely referrals to surgical teams. They should also manage risk factors and provide education on lifestyle modifications.",
+    "escalation": "Immediate escalation to surgical teams is required for suspected ruptured aneurysms or significant symptomatic cases. Ensure rapid transport to a facility capable of surgical intervention.",
+    "keySafetyConsiderations": "Monitor vital signs closely in suspected cases, ensure rapid access to imaging, and maintain a high index of suspicion in at-risk populations. Be aware of the signs of shock and prepare for emergency interventions."
+  }
+}

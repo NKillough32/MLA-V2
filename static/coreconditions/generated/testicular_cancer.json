@@ -1,0 +1,131 @@
+{
+  "id": "testicular_cancer",
+  "name": "Testicular cancer?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:13:08.217626",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Testicular cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTesticular cancer is a malignant neoplasm that arises from the germ cells of the testis. It is the most common cancer in young men aged 15-35 years.\n\n### Epidemiology\nTesticular cancer accounts for approximately 1% of all male cancers but is the most common cancer in men aged 15-34. The incidence has been rising over the past few decades, particularly in developed countries.\n\n### Essential Pathophysiology\nTesticular cancer primarily arises from germ cells, which are responsible for sperm production. The most common types include seminomas and non-seminomas (which include embryonal carcinoma, yolk sac tumor, choriocarcinoma, and teratoma). Genetic factors, cryptorchidism, and family history are significant risk factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless testicular mass or swelling\n- Testicular discomfort or pain\n- Change in size or shape of the testis\n- Gynecomastia (breast tissue enlargement)\n- Lower abdominal pain\n\n### Key Signs\n- Palpable testicular mass\n- Lymphadenopathy (especially supraclavicular or abdominal)\n- Hydrocele (fluid accumulation around the testis)\n- Signs of metastasis (e.g., back pain, respiratory symptoms)\n\n### Atypical Presentations\n- Bilateral testicular masses\n- Testicular atrophy\n- Acute scrotal pain (rare)\n\n### Red Flags Requiring Immediate Action\n- Any new testicular mass in a young male\n- Rapidly enlarging testicular mass\n- Signs of metastasis (e.g., respiratory symptoms, back pain)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound of the scrotum (to confirm the presence of a mass)\n- Serum tumor markers (AFP, hCG, LDH)\n\n### Second-line Investigations\n- CT scan of the abdomen and pelvis (to assess for metastasis)\n- MRI if CT is contraindicated\n\n### Specialist Tests\n- Biopsy is generally avoided due to risk of spreading cancer; however, histological confirmation is obtained post-orchiectomy.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histological examination of the testicular tissue following surgical removal (orchiectomy). Tumor markers are also used to aid in diagnosis and monitoring.\n\n### Key Differential Diagnoses to Exclude\n- Epididymitis\n- Orchitis\n- Hydrocele\n- Varicocele\n- Testicular torsion\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to urology for suspected testicular cancer\n- Orchiectomy (surgical removal of the affected testis)\n\n#### Second-line Treatments\n- Consideration of chemotherapy or radiotherapy based on staging and histology\n\n#### Emergency Procedures\n- Orchiectomy: surgical removal of the affected testis, which is both diagnostic and therapeutic.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with serum tumor markers and imaging as indicated\n\n#### Second-line Treatments\n- Adjuvant chemotherapy or radiotherapy based on staging and histology\n\n#### Monitoring Requirements\n- Regular follow-up appointments every 3-6 months for the first 2 years, then annually for 5 years.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Bleomycin\n- **Mechanism of Action**: Antitumor antibiotic that induces DNA strand breaks.\n- **Typical Dosing Range**: 15-30 units IV weekly for 3 weeks, then 15 units every 2 weeks for 2 additional cycles.\n- **Key Side Effects/Contraindications**: Pulmonary toxicity, skin reactions, fever, and anaphylaxis.\n- **When to Use vs. Alternatives**: Monitor pulmonary function tests due to risk of pneumonitis.\n\n#### Etoposide\n- **Mechanism of Action**: Topoisomerase II inhibitor that prevents DNA replication.\n- **Typical Dosing Range**: 100 mg/m² IV on days 1-5 of a 21-day cycle.\n- **Key Side Effects/Contraindications**: Myelosuppression, alopecia, and hypersensitivity reactions.\n- **When to Use vs. Alternatives**: Monitor blood counts regularly.\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that cross-links DNA, leading to apoptosis.\n- **Typical Dosing Range**: 20 mg/m² IV daily for 5 days in a 21-day cycle.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, and nausea/vomiting.\n- **When to Use vs. Alternatives**: Hydration is crucial to prevent nephrotoxicity.\n\n### Procedures\n\n#### Orchiectomy\n- **What it Involves**: Surgical removal of the affected testis, typically performed under general anesthesia.\n- **Indications**: Confirmed or suspected testicular cancer.\n- **Key Risks/Complications**: Bleeding, infection, and potential psychological impact of loss of a testis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for testicular cancer is generally excellent, with a 5-year survival rate exceeding 95% for localized disease. The prognosis decreases with advanced disease.\n\n### Important Complications to Watch For\n- Metastatic disease (lung, liver, brain)\n- Infertility (especially after chemotherapy)\n- Psychological impact of diagnosis and treatment\n- Secondary malignancies due to chemotherapy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of testicular cancer, perform initial assessments, and refer patients appropriately. They should also be aware of the importance of follow-up care and monitoring for recurrence.\n\n### When to Escalate to Senior/Specialist\nRefer to urology for any suspected testicular mass or concerning symptoms. Escalate care for any signs of metastasis or complications during follow-up.\n\n### Key Safety Considerations\nEnsure informed consent is obtained for procedures. Monitor for side effects of chemotherapy and manage them promptly. Provide psychological support and counseling for patients and families.\n",
+  "content": {
+    "overview": {
+      "definition": "Testicular cancer is a malignant neoplasm that arises from the germ cells of the testis. It is the most common cancer in young men aged 15-35 years.",
+      "epidemiology": "Testicular cancer accounts for approximately 1% of all male cancers but is the most common cancer in men aged 15-34. The incidence has been rising over the past few decades, particularly in developed countries.",
+      "pathophysiology": "Testicular cancer primarily arises from germ cells, which are responsible for sperm production. The most common types include seminomas and non-seminomas (which include embryonal carcinoma, yolk sac tumor, choriocarcinoma, and teratoma). Genetic factors, cryptorchidism, and family history are significant risk factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless testicular mass or swelling",
+        "Testicular discomfort or pain",
+        "Change in size or shape of the testis",
+        "Gynecomastia (breast tissue enlargement)",
+        "Lower abdominal pain"
+      ],
+      "signs": [
+        "Palpable testicular mass",
+        "Lymphadenopathy (especially supraclavicular or abdominal)",
+        "Hydrocele (fluid accumulation around the testis)",
+        "Signs of metastasis (e.g., back pain, respiratory symptoms)"
+      ],
+      "atypicalPresentations": [
+        "Bilateral testicular masses",
+        "Testicular atrophy",
+        "Acute scrotal pain (rare)"
+      ],
+      "redFlags": [
+        "Any new testicular mass in a young male",
+        "Rapidly enlarging testicular mass",
+        "Signs of metastasis (e.g., respiratory symptoms, back pain)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound of the scrotum (to confirm the presence of a mass)",
+        "Serum tumor markers (AFP, hCG, LDH)"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen and pelvis (to assess for metastasis)",
+        "MRI if CT is contraindicated"
+      ],
+      "specialistTests": [
+        "Biopsy is generally avoided due to risk of spreading cancer; however, histological confirmation is obtained post-orchiectomy."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histological examination of the testicular tissue following surgical removal (orchiectomy). Tumor markers are also used to aid in diagnosis and monitoring.",
+      "differentials": [
+        "Epididymitis",
+        "Orchitis",
+        "Hydrocele",
+        "Varicocele",
+        "Testicular torsion"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to urology for suspected testicular cancer",
+          "Orchiectomy (surgical removal of the affected testis)"
+        ],
+        "secondLine": [
+          "Consideration of chemotherapy or radiotherapy based on staging and histology"
+        ],
+        "procedures": [
+          "Orchiectomy: surgical removal of the affected testis, which is both diagnostic and therapeutic."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with serum tumor markers and imaging as indicated"
+        ],
+        "secondLine": [
+          "Adjuvant chemotherapy or radiotherapy based on staging and histology"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments every 3-6 months for the first 2 years, then annually for 5 years."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Bleomycin",
+          "mechanism": "Antitumor antibiotic that induces DNA strand breaks.",
+          "dosing": "15-30 units IV weekly for 3 weeks, then 15 units every 2 weeks for 2 additional cycles.",
+          "sideEffects": "Pulmonary toxicity, skin reactions, fever, and anaphylaxis.",
+          "notes": "Monitor pulmonary function tests due to risk of pneumonitis."
+        },
+        {
+          "name": "Etoposide",
+          "mechanism": "Topoisomerase II inhibitor that prevents DNA replication.",
+          "dosing": "100 mg/m² IV on days 1-5 of a 21-day cycle.",
+          "sideEffects": "Myelosuppression, alopecia, and hypersensitivity reactions.",
+          "notes": "Monitor blood counts regularly."
+        },
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that cross-links DNA, leading to apoptosis.",
+          "dosing": "20 mg/m² IV daily for 5 days in a 21-day cycle.",
+          "sideEffects": "Nephrotoxicity, ototoxicity, and nausea/vomiting.",
+          "notes": "Hydration is crucial to prevent nephrotoxicity."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Orchiectomy",
+          "description": "Surgical removal of the affected testis, typically performed under general anesthesia.",
+          "indications": "Confirmed or suspected testicular cancer.",
+          "risks": "Bleeding, infection, and potential psychological impact of loss of a testis."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for testicular cancer is generally excellent, with a 5-year survival rate exceeding 95% for localized disease. The prognosis decreases with advanced disease.",
+    "complications": [
+      "Metastatic disease (lung, liver, brain)",
+      "Infertility (especially after chemotherapy)",
+      "Psychological impact of diagnosis and treatment",
+      "Secondary malignancies due to chemotherapy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of testicular cancer, perform initial assessments, and refer patients appropriately. They should also be aware of the importance of follow-up care and monitoring for recurrence.",
+    "escalation": "Refer to urology for any suspected testicular mass or concerning symptoms. Escalate care for any signs of metastasis or complications during follow-up.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained for procedures. Monitor for side effects of chemotherapy and manage them promptly. Provide psychological support and counseling for patients and families."
+  }
+}

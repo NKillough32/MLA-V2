@@ -1,0 +1,139 @@
+{
+  "id": "infectious_colitis",
+  "name": "Infectious colitis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:48:11.597757",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Infectious colitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInfectious colitis is an inflammation of the colon caused by infectious agents, including bacteria, viruses, and parasites, leading to diarrhea, abdominal pain, and systemic symptoms.\n\n### Epidemiology\nInfectious colitis is common worldwide, with higher incidence in developing countries. It can occur in outbreaks, particularly in settings such as daycare centers, nursing homes, and during travel. Common pathogens include Salmonella, Shigella, Campylobacter, and Clostridium difficile.\n\n### Essential Pathophysiology\nInfectious colitis occurs when pathogens invade the colonic mucosa, leading to inflammation and ulceration. This results in increased secretion of fluids and electrolytes, decreased absorption, and ultimately diarrhea. The immune response to the infection can also contribute to symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Diarrhea (often bloody or mucoid)\n- Abdominal pain and cramping\n- Fever\n- Nausea and vomiting\n- Tenesmus (feeling of incomplete evacuation)\n\n### Key Signs\n- Abdominal tenderness\n- Fever\n- Dehydration signs (dry mucous membranes, decreased skin turgor)\n- Hypotension in severe cases\n\n### Atypical Presentations\n- Asymptomatic carriage (especially in cases of C. difficile)\n- Severe abdominal distension\n- Sepsis or septic shock in severe infections\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- High fever (>38.5°C)\n- Signs of dehydration\n- Bloody diarrhea\n- Recent antibiotic use (risk for C. difficile)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Stool culture (for bacterial pathogens)\n- Stool assay for C. difficile toxin\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- CT abdomen/pelvis (to assess for complications)\n- Stool PCR (for viral pathogens)\n\n### Specialist Tests\n- Colonoscopy (if severe or persistent symptoms)\n- Biopsy (if inflammatory bowel disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, stool tests confirming the presence of pathogens, and exclusion of other causes of colitis.\n\n### Key Differential Diagnoses to Exclude\n- Inflammatory bowel disease (IBD)\n- Ischemic colitis\n- Diverticulitis\n- Non-infectious causes (e.g., medication-induced)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rehydration (oral or IV fluids)\n- Antibiotics (if bacterial cause is confirmed or suspected)\n\n#### Second-line Treatments\n- Antimotility agents (caution in bloody diarrhea)\n- Probiotics (adjunctive therapy)\n\n#### Emergency Procedures\n- Colonoscopy (for severe cases or to rule out other conditions)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (e.g., low-residue diet during flare-ups)\n- Probiotics\n\n#### Second-line Treatments\n- Long-term antibiotics (for recurrent C. difficile)\n- Immunosuppressive therapy (if IBD is diagnosed)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom resolution\n- Monitoring for complications (e.g., toxic megacolon)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metronidazole\n- **Mechanism of Action**: Antimicrobial agent effective against anaerobic bacteria and protozoa.\n- **Typical Dosing Range**: 500 mg orally three times daily for 10-14 days.\n- **Key Side Effects/Contraindications**: Nausea, metallic taste, peripheral neuropathy (long-term use).\n- **When to Use vs. Alternatives**: First-line for mild to moderate C. difficile infection.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against Gram-positive bacteria, including C. difficile.\n- **Typical Dosing Range**: 125 mg orally four times daily for 10 days.\n- **Key Side Effects/Contraindications**: Nausea, abdominal pain, headache.\n- **When to Use vs. Alternatives**: Used for severe C. difficile infections.\n\n#### Loperamide\n- **Mechanism of Action**: Opioid receptor agonist that decreases gut motility.\n- **Typical Dosing Range**: 4 mg initially, then 2 mg after each loose stool (max 16 mg/day).\n- **Key Side Effects/Contraindications**: Constipation, abdominal distension, risk of toxic megacolon in infectious colitis.\n- **When to Use vs. Alternatives**: Use with caution in infectious diarrhea.\n\n### Procedures\n\n#### Colonoscopy\n- **What it Involves**: Endoscopic examination of the colon to visualize mucosal abnormalities and obtain biopsies.\n- **Indications**: Severe or persistent symptoms, suspicion of IBD or malignancy, or to assess complications.\n- **Key Risks/Complications**: Perforation, bleeding, infection, sedation-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of infectious colitis resolve with appropriate management. However, complications such as dehydration, toxic megacolon, or recurrent infections can occur, particularly in vulnerable populations.\n\n### Important Complications to Watch For\n- Dehydration\n- Electrolyte imbalances\n- Toxic megacolon\n- Sepsis\n- Recurrent infections (especially C. difficile)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate rehydration therapy, and start empirical antibiotics if indicated. They should also monitor for complications and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there are signs of severe dehydration, persistent high fever, severe abdominal pain, or if the patient is not improving with initial management.\n\n### Key Safety Considerations\nEnsure appropriate isolation precautions for suspected infectious colitis to prevent transmission. Monitor for signs of dehydration and electrolyte imbalances, especially in vulnerable populations.\n",
+  "content": {
+    "overview": {
+      "definition": "Infectious colitis is an inflammation of the colon caused by infectious agents, including bacteria, viruses, and parasites, leading to diarrhea, abdominal pain, and systemic symptoms.",
+      "epidemiology": "Infectious colitis is common worldwide, with higher incidence in developing countries. It can occur in outbreaks, particularly in settings such as daycare centers, nursing homes, and during travel. Common pathogens include Salmonella, Shigella, Campylobacter, and Clostridium difficile.",
+      "pathophysiology": "Infectious colitis occurs when pathogens invade the colonic mucosa, leading to inflammation and ulceration. This results in increased secretion of fluids and electrolytes, decreased absorption, and ultimately diarrhea. The immune response to the infection can also contribute to symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Diarrhea (often bloody or mucoid)",
+        "Abdominal pain and cramping",
+        "Fever",
+        "Nausea and vomiting",
+        "Tenesmus (feeling of incomplete evacuation)"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Fever",
+        "Dehydration signs (dry mucous membranes, decreased skin turgor)",
+        "Hypotension in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic carriage (especially in cases of C. difficile)",
+        "Severe abdominal distension",
+        "Sepsis or septic shock in severe infections"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "High fever (>38.5°C)",
+        "Signs of dehydration",
+        "Bloody diarrhea",
+        "Recent antibiotic use (risk for C. difficile)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Stool culture (for bacterial pathogens)",
+        "Stool assay for C. difficile toxin",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "CT abdomen/pelvis (to assess for complications)",
+        "Stool PCR (for viral pathogens)"
+      ],
+      "specialistTests": [
+        "Colonoscopy (if severe or persistent symptoms)",
+        "Biopsy (if inflammatory bowel disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, stool tests confirming the presence of pathogens, and exclusion of other causes of colitis.",
+      "differentials": [
+        "Inflammatory bowel disease (IBD)",
+        "Ischemic colitis",
+        "Diverticulitis",
+        "Non-infectious causes (e.g., medication-induced)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rehydration (oral or IV fluids)",
+          "Antibiotics (if bacterial cause is confirmed or suspected)"
+        ],
+        "secondLine": [
+          "Antimotility agents (caution in bloody diarrhea)",
+          "Probiotics (adjunctive therapy)"
+        ],
+        "procedures": [
+          "Colonoscopy (for severe cases or to rule out other conditions)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (e.g., low-residue diet during flare-ups)",
+          "Probiotics"
+        ],
+        "secondLine": [
+          "Long-term antibiotics (for recurrent C. difficile)",
+          "Immunosuppressive therapy (if IBD is diagnosed)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom resolution",
+          "Monitoring for complications (e.g., toxic megacolon)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antimicrobial agent effective against anaerobic bacteria and protozoa.",
+          "dosing": "500 mg orally three times daily for 10-14 days.",
+          "sideEffects": "Nausea, metallic taste, peripheral neuropathy (long-term use).",
+          "notes": "First-line for mild to moderate C. difficile infection."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against Gram-positive bacteria, including C. difficile.",
+          "dosing": "125 mg orally four times daily for 10 days.",
+          "sideEffects": "Nausea, abdominal pain, headache.",
+          "notes": "Used for severe C. difficile infections."
+        },
+        {
+          "name": "Loperamide",
+          "mechanism": "Opioid receptor agonist that decreases gut motility.",
+          "dosing": "4 mg initially, then 2 mg after each loose stool (max 16 mg/day).",
+          "sideEffects": "Constipation, abdominal distension, risk of toxic megacolon in infectious colitis.",
+          "notes": "Use with caution in infectious diarrhea."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colonoscopy",
+          "description": "Endoscopic examination of the colon to visualize mucosal abnormalities and obtain biopsies.",
+          "indications": "Severe or persistent symptoms, suspicion of IBD or malignancy, or to assess complications.",
+          "risks": "Perforation, bleeding, infection, sedation-related complications."
+        }
+      ]
+    },
+    "prognosis": "Most cases of infectious colitis resolve with appropriate management. However, complications such as dehydration, toxic megacolon, or recurrent infections can occur, particularly in vulnerable populations.",
+    "complications": [
+      "Dehydration",
+      "Electrolyte imbalances",
+      "Toxic megacolon",
+      "Sepsis",
+      "Recurrent infections (especially C. difficile)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate rehydration therapy, and start empirical antibiotics if indicated. They should also monitor for complications and escalate care as needed.",
+    "escalation": "Escalate care to a senior clinician if there are signs of severe dehydration, persistent high fever, severe abdominal pain, or if the patient is not improving with initial management.",
+    "keySafetyConsiderations": "Ensure appropriate isolation precautions for suspected infectious colitis to prevent transmission. Monitor for signs of dehydration and electrolyte imbalances, especially in vulnerable populations."
+  }
+}

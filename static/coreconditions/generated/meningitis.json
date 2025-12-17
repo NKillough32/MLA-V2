@@ -1,0 +1,146 @@
+{
+  "id": "meningitis",
+  "name": "Meningitis?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:47:24.483298",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Meningitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMeningitis is an inflammation of the protective membranes (meninges) covering the brain and spinal cord, typically caused by infection.\n\n### Epidemiology\nMeningitis can occur at any age but is most common in infants, young children, and adolescents. Bacterial meningitis has a higher mortality rate compared to viral meningitis. The incidence varies by region and vaccination status.\n\n### Essential Pathophysiology\nMeningitis occurs when pathogens invade the meninges, leading to an inflammatory response. This can result in increased intracranial pressure, neuronal injury, and potential complications such as seizures and brain damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Headache\n- Nausea and vomiting\n- Photophobia\n- Stiff neck\n- Altered mental status\n\n### Key Signs\n- Kernig's sign (inability to straighten the leg when the hip is flexed)\n- Brudzinski's sign (involuntary lifting of the legs when the neck is flexed)\n- Rash (in cases of meningococcal meningitis)\n- Signs of increased intracranial pressure (e.g., papilledema)\n\n### Atypical Presentations\n- Seizures\n- Focal neurological deficits\n- Rapid deterioration in consciousness\n\n### Red Flags Requiring Immediate Action\n- Severe headache with sudden onset\n- Altered level of consciousness\n- Severe neck stiffness\n- Presence of a rash (petechiae or purpura)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Lumbar puncture (LP) for cerebrospinal fluid (CSF) analysis\n\n### Second-line Investigations\n- CT scan of the head (to rule out mass lesions before LP)\n- PCR testing of CSF\n- Serology for specific pathogens\n\n### Specialist Tests\n- MRI of the brain (if complications are suspected)\n- Culture and sensitivity testing of CSF\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of meningitis is confirmed by the presence of inflammatory cells in the CSF, elevated protein levels, and low glucose levels compared to serum glucose.\n\n### Key Differential Diagnoses to Exclude\n- Encephalitis\n- Subarachnoid hemorrhage\n- Brain abscess\n- Cerebral venous sinus thrombosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate IV antibiotics (e.g., ceftriaxone, vancomycin)\n- Corticosteroids (e.g., dexamethasone) to reduce inflammation\n\n#### Second-line Treatments\n- Consider antiviral therapy (e.g., acyclovir for suspected viral meningitis)\n- Supportive care including fluids and analgesia\n\n#### Emergency Procedures\n- Lumbar puncture for CSF analysis\n- CT scan if neurological deterioration occurs\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term follow-up for neurological sequelae\n- Rehabilitation services as needed\n\n#### Second-line Treatments\n- Consider prophylactic antibiotics for close contacts in bacterial meningitis cases\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- Monitoring for complications such as hearing loss or cognitive deficits\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic effective against many bacteria causing meningitis.\n- **Typical Dosing Range**: 2g IV every 12 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Consider in combination with vancomycin for suspected resistant organisms.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against Gram-positive bacteria, including MRSA.\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours, adjusted based on renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, infusion-related reactions.\n- **When to Use vs. Alternatives**: Use in cases of suspected or confirmed meningitis caused by resistant organisms.\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and cerebral edema.\n- **Typical Dosing Range**: 10 mg IV every 6 hours for 4 days.\n- **Key Side Effects/Contraindications**: Increased risk of infection, gastrointestinal bleeding, hyperglycemia.\n- **When to Use vs. Alternatives**: Administer with antibiotics in suspected bacterial meningitis.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: To confirm diagnosis of meningitis and analyze CSF for pathogens, glucose, and protein levels.\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage.\n\n#### CT scan of the head\n- **What it Involves**: Imaging to assess for structural abnormalities before lumbar puncture.\n- **Indications**: To rule out mass lesions or other contraindications to LP.\n- **Key Risks/Complications**: Radiation exposure, contrast reactions (if contrast is used).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of meningitis varies based on the causative organism, timeliness of treatment, and presence of complications. Bacterial meningitis has a higher mortality rate and potential for long-term sequelae compared to viral meningitis, which is generally self-limiting.\n\n### Important Complications to Watch For\n- Hearing loss\n- Seizures\n- Cognitive deficits\n- Hydrocephalus\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of meningitis, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with suspected meningitis, escalate care immediately to a senior clinician, especially if there are red flags or signs of deterioration.\n\n### Key Safety Considerations\nEnsure timely administration of antibiotics and corticosteroids, monitor for signs of increased intracranial pressure, and be vigilant for complications such as seizures or altered mental status.\n",
+  "content": {
+    "overview": {
+      "definition": "Meningitis is an inflammation of the protective membranes (meninges) covering the brain and spinal cord, typically caused by infection.",
+      "epidemiology": "Meningitis can occur at any age but is most common in infants, young children, and adolescents. Bacterial meningitis has a higher mortality rate compared to viral meningitis. The incidence varies by region and vaccination status.",
+      "pathophysiology": "Meningitis occurs when pathogens invade the meninges, leading to an inflammatory response. This can result in increased intracranial pressure, neuronal injury, and potential complications such as seizures and brain damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Headache",
+        "Nausea and vomiting",
+        "Photophobia",
+        "Stiff neck",
+        "Altered mental status"
+      ],
+      "signs": [
+        "Kernig's sign (inability to straighten the leg when the hip is flexed)",
+        "Brudzinski's sign (involuntary lifting of the legs when the neck is flexed)",
+        "Rash (in cases of meningococcal meningitis)",
+        "Signs of increased intracranial pressure (e.g., papilledema)"
+      ],
+      "atypicalPresentations": [
+        "Seizures",
+        "Focal neurological deficits",
+        "Rapid deterioration in consciousness"
+      ],
+      "redFlags": [
+        "Severe headache with sudden onset",
+        "Altered level of consciousness",
+        "Severe neck stiffness",
+        "Presence of a rash (petechiae or purpura)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Lumbar puncture (LP) for cerebrospinal fluid (CSF) analysis"
+      ],
+      "secondLine": [
+        "CT scan of the head (to rule out mass lesions before LP)",
+        "PCR testing of CSF",
+        "Serology for specific pathogens"
+      ],
+      "specialistTests": [
+        "MRI of the brain (if complications are suspected)",
+        "Culture and sensitivity testing of CSF"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of meningitis is confirmed by the presence of inflammatory cells in the CSF, elevated protein levels, and low glucose levels compared to serum glucose.",
+      "differentials": [
+        "Encephalitis",
+        "Subarachnoid hemorrhage",
+        "Brain abscess",
+        "Cerebral venous sinus thrombosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate IV antibiotics (e.g., ceftriaxone, vancomycin)",
+          "Corticosteroids (e.g., dexamethasone) to reduce inflammation"
+        ],
+        "secondLine": [
+          "Consider antiviral therapy (e.g., acyclovir for suspected viral meningitis)",
+          "Supportive care including fluids and analgesia"
+        ],
+        "procedures": [
+          "Lumbar puncture for CSF analysis",
+          "CT scan if neurological deterioration occurs"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term follow-up for neurological sequelae",
+          "Rehabilitation services as needed"
+        ],
+        "secondLine": [
+          "Consider prophylactic antibiotics for close contacts in bacterial meningitis cases"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "Monitoring for complications such as hearing loss or cognitive deficits"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic effective against many bacteria causing meningitis.",
+          "dosing": "2g IV every 12 hours.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, potential for Clostridium difficile infection.",
+          "notes": "Consider in combination with vancomycin for suspected resistant organisms."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against Gram-positive bacteria, including MRSA.",
+          "dosing": "15-20 mg/kg IV every 8-12 hours, adjusted based on renal function.",
+          "sideEffects": "Nephrotoxicity, ototoxicity, infusion-related reactions.",
+          "notes": "Use in cases of suspected or confirmed meningitis caused by resistant organisms."
+        },
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and cerebral edema.",
+          "dosing": "10 mg IV every 6 hours for 4 days.",
+          "sideEffects": "Increased risk of infection, gastrointestinal bleeding, hyperglycemia.",
+          "notes": "Administer with antibiotics in suspected bacterial meningitis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "To confirm diagnosis of meningitis and analyze CSF for pathogens, glucose, and protein levels.",
+          "risks": "Headache, infection, bleeding, nerve damage."
+        },
+        {
+          "name": "CT scan of the head",
+          "description": "Imaging to assess for structural abnormalities before lumbar puncture.",
+          "indications": "To rule out mass lesions or other contraindications to LP.",
+          "risks": "Radiation exposure, contrast reactions (if contrast is used)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of meningitis varies based on the causative organism, timeliness of treatment, and presence of complications. Bacterial meningitis has a higher mortality rate and potential for long-term sequelae compared to viral meningitis, which is generally self-limiting.",
+    "complications": [
+      "Hearing loss",
+      "Seizures",
+      "Cognitive deficits",
+      "Hydrocephalus",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of meningitis, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to senior medical staff.",
+    "escalation": "If a patient presents with suspected meningitis, escalate care immediately to a senior clinician, especially if there are red flags or signs of deterioration.",
+    "keySafetyConsiderations": "Ensure timely administration of antibiotics and corticosteroids, monitor for signs of increased intracranial pressure, and be vigilant for complications such as seizures or altered mental status."
+  }
+}

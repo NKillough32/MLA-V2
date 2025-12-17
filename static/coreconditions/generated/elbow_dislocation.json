@@ -1,0 +1,128 @@
+{
+  "id": "elbow_dislocation",
+  "name": "Elbow dislocation",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:31:41.286553",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Elbow dislocation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nElbow dislocation is a traumatic injury characterized by the displacement of the ulna and/or radius from their normal articulation with the humerus at the elbow joint.\n\n### Epidemiology\nElbow dislocations are the second most common dislocation in adults and the most common in children, often occurring due to falls or direct trauma. They account for approximately 10-25% of all dislocations.\n\n### Essential Pathophysiology\nElbow dislocations typically occur due to a fall on an outstretched hand (FOOSH injury) or direct trauma. The most common type is posterior dislocation, where the ulna and radius are displaced posteriorly relative to the humerus. This injury can also involve associated fractures, particularly of the radial head or coronoid process.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe pain in the elbow region\n- Inability to move the elbow\n- Swelling and bruising around the elbow\n- Deformity of the elbow joint\n\n### Key Signs\n- Visible deformity of the elbow\n- Swelling and tenderness over the joint\n- Limited range of motion\n- Neurovascular compromise (e.g., diminished pulse, numbness)\n\n### Atypical Presentations\n- Elbow dislocation without obvious deformity (especially in children)\n- Associated fractures may mask the dislocation\n\n### Red Flags Requiring Immediate Action\n- Signs of neurovascular compromise (e.g., pulselessness, paralysis)\n- Open dislocation (exposed bone or joint)\n- Severe swelling or compartment syndrome\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the elbow (AP and lateral views) to confirm dislocation and assess for associated fractures\n\n### Second-line Investigations\n- CT scan if complex fracture patterns are suspected or if surgical intervention is being considered\n\n### Specialist Tests\n- MRI may be used to assess soft tissue injuries or ligamentous structures if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings of dislocation and any associated fractures.\n\n### Key Differential Diagnoses to Exclude\n- Fracture of the radial head\n- Fracture of the olecranon\n- Soft tissue injury (e.g., ligament sprain)\n- Other joint dislocations (e.g., shoulder)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate reduction of the dislocation (preferably under sedation or anesthesia)\n- Immobilization in a splint or brace post-reduction\n\n#### Second-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs) for pain management\n- Physiotherapy referral for rehabilitation\n\n#### Emergency Procedures\n- Closed reduction under sedation or anesthesia\n- Open reduction if closed reduction fails or if there are associated fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation exercises to restore range of motion and strength\n\n#### Second-line Treatments\n- Surgical intervention for persistent instability or failure to regain function\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and function of the elbow joint\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n### Procedures\n\n#### Closed reduction of elbow dislocation\n- **What it Involves**: A non-surgical procedure to realign the dislocated bones of the elbow joint.\n- **Indications**: Acute elbow dislocation without significant fracture or soft tissue injury.\n- **Key Risks/Complications**: Neurovascular injury, fracture, recurrence of dislocation.\n\n#### Open reduction and internal fixation (ORIF)\n- **What it Involves**: Surgical procedure to realign and stabilize the elbow joint, often used when there are associated fractures.\n- **Indications**: Complex dislocations with fractures, failed closed reduction.\n- **Key Risks/Complications**: Infection, stiffness, nerve injury, non-union.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients recover well with appropriate management, but complications such as stiffness, instability, or chronic pain can occur, particularly if there are associated fractures or if the dislocation is not managed promptly.\n\n### Important Complications to Watch For\n- Joint stiffness\n- Chronic pain\n- Nerve injury (e.g., ulnar nerve)\n- Recurrent dislocation\n- Compartment syndrome\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize elbow dislocation, provide initial management including analgesia, and facilitate timely referral for reduction and further management.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurovascular compromise, open dislocation, or failure of closed reduction, escalate to an orthopedic surgeon immediately.\n\n### Key Safety Considerations\nEnsure neurovascular status is assessed before and after reduction. Monitor for signs of compartment syndrome post-reduction. Provide appropriate analgesia and ensure patient understanding of the procedure and follow-up care.\n",
+  "content": {
+    "overview": {
+      "definition": "Elbow dislocation is a traumatic injury characterized by the displacement of the ulna and/or radius from their normal articulation with the humerus at the elbow joint.",
+      "epidemiology": "Elbow dislocations are the second most common dislocation in adults and the most common in children, often occurring due to falls or direct trauma. They account for approximately 10-25% of all dislocations.",
+      "pathophysiology": "Elbow dislocations typically occur due to a fall on an outstretched hand (FOOSH injury) or direct trauma. The most common type is posterior dislocation, where the ulna and radius are displaced posteriorly relative to the humerus. This injury can also involve associated fractures, particularly of the radial head or coronoid process."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe pain in the elbow region",
+        "Inability to move the elbow",
+        "Swelling and bruising around the elbow",
+        "Deformity of the elbow joint"
+      ],
+      "signs": [
+        "Visible deformity of the elbow",
+        "Swelling and tenderness over the joint",
+        "Limited range of motion",
+        "Neurovascular compromise (e.g., diminished pulse, numbness)"
+      ],
+      "atypicalPresentations": [
+        "Elbow dislocation without obvious deformity (especially in children)",
+        "Associated fractures may mask the dislocation"
+      ],
+      "redFlags": [
+        "Signs of neurovascular compromise (e.g., pulselessness, paralysis)",
+        "Open dislocation (exposed bone or joint)",
+        "Severe swelling or compartment syndrome"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the elbow (AP and lateral views) to confirm dislocation and assess for associated fractures"
+      ],
+      "secondLine": [
+        "CT scan if complex fracture patterns are suspected or if surgical intervention is being considered"
+      ],
+      "specialistTests": [
+        "MRI may be used to assess soft tissue injuries or ligamentous structures if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings of dislocation and any associated fractures.",
+      "differentials": [
+        "Fracture of the radial head",
+        "Fracture of the olecranon",
+        "Soft tissue injury (e.g., ligament sprain)",
+        "Other joint dislocations (e.g., shoulder)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate reduction of the dislocation (preferably under sedation or anesthesia)",
+          "Immobilization in a splint or brace post-reduction"
+        ],
+        "secondLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs) for pain management",
+          "Physiotherapy referral for rehabilitation"
+        ],
+        "procedures": [
+          "Closed reduction under sedation or anesthesia",
+          "Open reduction if closed reduction fails or if there are associated fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation exercises to restore range of motion and strength"
+        ],
+        "secondLine": [
+          "Surgical intervention for persistent instability or failure to regain function"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and function of the elbow joint"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Useful for pain and inflammation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction of elbow dislocation",
+          "description": "A non-surgical procedure to realign the dislocated bones of the elbow joint.",
+          "indications": "Acute elbow dislocation without significant fracture or soft tissue injury.",
+          "risks": "Neurovascular injury, fracture, recurrence of dislocation."
+        },
+        {
+          "name": "Open reduction and internal fixation (ORIF)",
+          "description": "Surgical procedure to realign and stabilize the elbow joint, often used when there are associated fractures.",
+          "indications": "Complex dislocations with fractures, failed closed reduction.",
+          "risks": "Infection, stiffness, nerve injury, non-union."
+        }
+      ]
+    },
+    "prognosis": "Most patients recover well with appropriate management, but complications such as stiffness, instability, or chronic pain can occur, particularly if there are associated fractures or if the dislocation is not managed promptly.",
+    "complications": [
+      "Joint stiffness",
+      "Chronic pain",
+      "Nerve injury (e.g., ulnar nerve)",
+      "Recurrent dislocation",
+      "Compartment syndrome"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize elbow dislocation, provide initial management including analgesia, and facilitate timely referral for reduction and further management.",
+    "escalation": "If there are signs of neurovascular compromise, open dislocation, or failure of closed reduction, escalate to an orthopedic surgeon immediately.",
+    "keySafetyConsiderations": "Ensure neurovascular status is assessed before and after reduction. Monitor for signs of compartment syndrome post-reduction. Provide appropriate analgesia and ensure patient understanding of the procedure and follow-up care."
+  }
+}

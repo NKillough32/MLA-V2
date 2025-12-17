@@ -1,0 +1,137 @@
+{
+  "id": "labour",
+  "name": "Labour",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:48:00.186782",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Labour: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLabour is the physiological process by which a pregnant woman delivers her baby, involving a series of uterine contractions that lead to cervical dilation and the eventual expulsion of the fetus and placenta.\n\n### Epidemiology\nApproximately 4 million births occur annually in the United States, with the majority of women experiencing labour. The onset of labour typically occurs between 37 and 42 weeks of gestation, with preterm labour occurring before 37 weeks in about 12% of pregnancies.\n\n### Essential Pathophysiology\nLabour is initiated by a complex interplay of hormonal changes, including increased levels of oxytocin, prostaglandins, and a decrease in progesterone. These changes lead to uterine contractions, cervical effacement, and dilation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Regular uterine contractions\n- Lower abdominal pain or cramping\n- Back pain\n- Pelvic pressure\n- Rupture of membranes (water breaking)\n\n### Key Signs\n- Cervical dilation and effacement on examination\n- Fetal heart rate changes\n- Presence of bloody show\n\n### Atypical Presentations\n- Prolonged latent phase of labour\n- Back labour (pain primarily in the back)\n- Preterm labour symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Heavy vaginal bleeding\n- Signs of fetal distress (e.g., abnormal fetal heart rate)\n- Signs of infection (fever, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of contractions and cervical dilation\n- Fetal heart rate monitoring\n- Ultrasound if indicated (to assess fetal position and wellbeing)\n\n### Second-line Investigations\n- Vaginal examination to assess cervical status\n- CTG (Cardiotocography) for fetal monitoring\n\n### Specialist Tests\n- Biophysical profile (BPP) if fetal distress is suspected\n- Amniocentesis if infection or other complications are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of labour is based on the presence of regular uterine contractions accompanied by cervical changes (dilation and effacement).\n\n### Key Differential Diagnoses to Exclude\n- False labour (Braxton Hicks contractions)\n- Preterm labour\n- Placental abruption\n- Uterine rupture\n- Ectopic pregnancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, pain relief)\n- Monitoring of maternal and fetal status\n\n#### Second-line Treatments\n- Administration of oxytocin if contractions are inadequate\n- Epidural analgesia for pain management\n\n#### Emergency Procedures\n- Artificial rupture of membranes (ARM) to augment labour\n- C-section if indicated (e.g., fetal distress, failure to progress)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on signs of labour and when to seek help\n- Regular prenatal visits to monitor pregnancy progress\n\n#### Second-line Treatments\n- Management of pre-existing conditions (e.g., diabetes, hypertension) that may complicate labour\n\n#### Monitoring Requirements\n- Continuous fetal monitoring during labour\n- Postpartum monitoring for complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxytocin\n- **Mechanism of Action**: Stimulates uterine contractions and helps with cervical dilation.\n- **Typical Dosing Range**: IV infusion starting at 1-2 mU/min, increasing by 1-2 mU/min every 30-60 minutes as needed.\n- **Key Side Effects/Contraindications**: Uterine hyperstimulation, water retention, hypotension.\n- **When to Use vs. Alternatives**: Careful monitoring of uterine activity and fetal heart rate is essential.\n\n#### Epidural analgesia\n- **Mechanism of Action**: Provides regional anesthesia to reduce pain during labour.\n- **Typical Dosing Range**: Administered by an anesthetist, typically a continuous infusion or bolus.\n- **Key Side Effects/Contraindications**: Hypotension, urinary retention, headache, risk of infection.\n- **When to Use vs. Alternatives**: Informed consent is required, and monitoring for complications is necessary.\n\n### Procedures\n\n#### Artificial Rupture of Membranes (ARM)\n- **What it Involves**: A procedure to rupture the amniotic sac to induce or augment labour.\n- **Indications**: Prolonged labour, to facilitate monitoring of fetal heart rate, or to increase the effectiveness of contractions.\n- **Key Risks/Complications**: Infection, umbilical cord prolapse, increased likelihood of cesarean delivery.\n\n#### Cesarean Section\n- **What it Involves**: Surgical delivery of the baby through an incision in the abdominal wall and uterus.\n- **Indications**: Fetal distress, failure to progress, maternal health concerns, or previous cesarean delivery.\n- **Key Risks/Complications**: Infection, hemorrhage, injury to surrounding organs, longer recovery time.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost women will have a successful vaginal delivery with appropriate management. Complications can arise, but with timely intervention, outcomes are generally favorable.\n\n### Important Complications to Watch For\n- Postpartum hemorrhage\n- Infection (chorioamnionitis, endometritis)\n- Uterine atony\n- Fetal distress or injury\n- Psychological impact (postpartum depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs of labour, perform initial assessments, provide supportive care, and escalate care as needed. They should also be familiar with the management of complications that may arise during labour.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of fetal distress, heavy bleeding, or maternal instability, immediate escalation to senior obstetric staff is required. Continuous monitoring and timely intervention are critical.\n\n### Key Safety Considerations\nEnsure proper monitoring of both maternal and fetal well-being during labour. Be vigilant for signs of complications and maintain clear communication with the obstetric team.\n",
+  "content": {
+    "overview": {
+      "definition": "Labour is the physiological process by which a pregnant woman delivers her baby, involving a series of uterine contractions that lead to cervical dilation and the eventual expulsion of the fetus and placenta.",
+      "epidemiology": "Approximately 4 million births occur annually in the United States, with the majority of women experiencing labour. The onset of labour typically occurs between 37 and 42 weeks of gestation, with preterm labour occurring before 37 weeks in about 12% of pregnancies.",
+      "pathophysiology": "Labour is initiated by a complex interplay of hormonal changes, including increased levels of oxytocin, prostaglandins, and a decrease in progesterone. These changes lead to uterine contractions, cervical effacement, and dilation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Regular uterine contractions",
+        "Lower abdominal pain or cramping",
+        "Back pain",
+        "Pelvic pressure",
+        "Rupture of membranes (water breaking)"
+      ],
+      "signs": [
+        "Cervical dilation and effacement on examination",
+        "Fetal heart rate changes",
+        "Presence of bloody show"
+      ],
+      "atypicalPresentations": [
+        "Prolonged latent phase of labour",
+        "Back labour (pain primarily in the back)",
+        "Preterm labour symptoms"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Heavy vaginal bleeding",
+        "Signs of fetal distress (e.g., abnormal fetal heart rate)",
+        "Signs of infection (fever, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of contractions and cervical dilation",
+        "Fetal heart rate monitoring",
+        "Ultrasound if indicated (to assess fetal position and wellbeing)"
+      ],
+      "secondLine": [
+        "Vaginal examination to assess cervical status",
+        "CTG (Cardiotocography) for fetal monitoring"
+      ],
+      "specialistTests": [
+        "Biophysical profile (BPP) if fetal distress is suspected",
+        "Amniocentesis if infection or other complications are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of labour is based on the presence of regular uterine contractions accompanied by cervical changes (dilation and effacement).",
+      "differentials": [
+        "False labour (Braxton Hicks contractions)",
+        "Preterm labour",
+        "Placental abruption",
+        "Uterine rupture",
+        "Ectopic pregnancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, pain relief)",
+          "Monitoring of maternal and fetal status"
+        ],
+        "secondLine": [
+          "Administration of oxytocin if contractions are inadequate",
+          "Epidural analgesia for pain management"
+        ],
+        "procedures": [
+          "Artificial rupture of membranes (ARM) to augment labour",
+          "C-section if indicated (e.g., fetal distress, failure to progress)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on signs of labour and when to seek help",
+          "Regular prenatal visits to monitor pregnancy progress"
+        ],
+        "secondLine": [
+          "Management of pre-existing conditions (e.g., diabetes, hypertension) that may complicate labour"
+        ],
+        "monitoring": [
+          "Continuous fetal monitoring during labour",
+          "Postpartum monitoring for complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxytocin",
+          "mechanism": "Stimulates uterine contractions and helps with cervical dilation.",
+          "dosing": "IV infusion starting at 1-2 mU/min, increasing by 1-2 mU/min every 30-60 minutes as needed.",
+          "sideEffects": "Uterine hyperstimulation, water retention, hypotension.",
+          "notes": "Careful monitoring of uterine activity and fetal heart rate is essential."
+        },
+        {
+          "name": "Epidural analgesia",
+          "mechanism": "Provides regional anesthesia to reduce pain during labour.",
+          "dosing": "Administered by an anesthetist, typically a continuous infusion or bolus.",
+          "sideEffects": "Hypotension, urinary retention, headache, risk of infection.",
+          "notes": "Informed consent is required, and monitoring for complications is necessary."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Artificial Rupture of Membranes (ARM)",
+          "description": "A procedure to rupture the amniotic sac to induce or augment labour.",
+          "indications": "Prolonged labour, to facilitate monitoring of fetal heart rate, or to increase the effectiveness of contractions.",
+          "risks": "Infection, umbilical cord prolapse, increased likelihood of cesarean delivery."
+        },
+        {
+          "name": "Cesarean Section",
+          "description": "Surgical delivery of the baby through an incision in the abdominal wall and uterus.",
+          "indications": "Fetal distress, failure to progress, maternal health concerns, or previous cesarean delivery.",
+          "risks": "Infection, hemorrhage, injury to surrounding organs, longer recovery time."
+        }
+      ]
+    },
+    "prognosis": "Most women will have a successful vaginal delivery with appropriate management. Complications can arise, but with timely intervention, outcomes are generally favorable.",
+    "complications": [
+      "Postpartum hemorrhage",
+      "Infection (chorioamnionitis, endometritis)",
+      "Uterine atony",
+      "Fetal distress or injury",
+      "Psychological impact (postpartum depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs of labour, perform initial assessments, provide supportive care, and escalate care as needed. They should also be familiar with the management of complications that may arise during labour.",
+    "escalation": "If there are signs of fetal distress, heavy bleeding, or maternal instability, immediate escalation to senior obstetric staff is required. Continuous monitoring and timely intervention are critical.",
+    "keySafetyConsiderations": "Ensure proper monitoring of both maternal and fetal well-being during labour. Be vigilant for signs of complications and maintain clear communication with the obstetric team."
+  }
+}

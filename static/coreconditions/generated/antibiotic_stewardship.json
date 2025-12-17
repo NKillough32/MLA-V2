@@ -1,0 +1,145 @@
+{
+  "id": "antibiotic_stewardship",
+  "name": "Antibiotic stewardship",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:03:36.591586",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Antibiotic stewardship: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAntibiotic stewardship refers to a set of coordinated strategies to improve the use of antibiotic medications, ensuring their effectiveness for future generations while minimizing adverse effects and the development of antibiotic resistance.\n\n### Epidemiology\nAntibiotic resistance is a global health crisis, with an estimated 700,000 deaths annually due to resistant infections. The overuse and misuse of antibiotics in both healthcare and agriculture contribute significantly to this issue.\n\n### Essential Pathophysiology\nAntibiotic resistance occurs when bacteria evolve mechanisms to resist the effects of drugs that once killed them or inhibited their growth. This can happen through genetic mutations or acquiring resistance genes from other bacteria.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Chills\n- Fatigue\n- Localized pain or swelling\n- Signs of systemic infection (e.g., sepsis)\n\n### Key Signs\n- Elevated white blood cell count\n- Focal tenderness\n- Erythema or swelling at infection site\n- Hypotension in severe cases\n\n### Atypical Presentations\n- Absence of fever in elderly or immunocompromised patients\n- Chronic infections presenting with vague symptoms\n- Non-specific abdominal pain in intra-abdominal infections\n\n### Red Flags Requiring Immediate Action\n- Severe sepsis or septic shock\n- Rapid deterioration of clinical status\n- Immunocompromised state\n- History of recent antibiotic use\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Urinalysis and urine culture\n- Chest X-ray (if respiratory symptoms present)\n\n### Second-line Investigations\n- CT scan or MRI for suspected deep-seated infections\n- Liver function tests (if hepatobiliary infection suspected)\n- Lumbar puncture (if meningitis is suspected)\n\n### Specialist Tests\n- PCR for specific pathogens\n- Serological tests for atypical infections (e.g., viral, fungal)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of infections requiring antibiotics is based on clinical presentation, laboratory findings, and imaging studies, with consideration of local resistance patterns.\n\n### Key Differential Diagnoses to Exclude\n- Viral infections (e.g., influenza, COVID-19)\n- Fungal infections\n- Non-infectious inflammatory conditions (e.g., autoimmune diseases)\n- Malignancies\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate empirical antibiotic therapy based on local guidelines and resistance patterns\n- Supportive care (hydration, antipyretics)\n\n#### Second-line Treatments\n- Adjust antibiotics based on culture results and sensitivity testing\n- Consider consultation with infectious disease specialists\n\n#### Emergency Procedures\n- Drainage of abscesses or infected fluid collections\n- Surgical intervention for source control in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term management of chronic infections may require prolonged antibiotic courses, guided by specialist input\n- Regular monitoring for side effects and effectiveness\n\n#### Second-line Treatments\n- Consideration of alternative therapies (e.g., surgery, immunotherapy) if antibiotics are ineffective\n- Multidisciplinary team involvement for complex cases\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess treatment response\n- Monitoring for adverse effects of long-term antibiotic use\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 500 mg every 8 hours or 875 mg every 12 hours\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions\n- **When to Use vs. Alternatives**: Commonly used for respiratory and urinary tract infections.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Inhibits bacterial DNA gyrase and topoisomerase IV\n- **Typical Dosing Range**: 500 mg every 12 hours\n- **Key Side Effects/Contraindications**: Nausea, dizziness, tendon rupture\n- **When to Use vs. Alternatives**: Used for urinary tract infections and some gastrointestinal infections.\n\n#### Vancomycin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 15 mg/kg every 12 hours (adjust for renal function)\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, red man syndrome\n- **When to Use vs. Alternatives**: Used for serious Gram-positive infections, including MRSA.\n\n### Procedures\n\n#### Abscess drainage\n- **What it Involves**: Surgical procedure to remove pus from an infected area\n- **Indications**: Presence of a localized collection of pus causing pain or systemic symptoms\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures.\n\n#### Central line placement\n- **What it Involves**: Insertion of a catheter into a large vein for prolonged antibiotic therapy\n- **Indications**: Need for long-term intravenous antibiotics\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate antibiotic stewardship, the prognosis for infections is generally good; however, antibiotic resistance can complicate treatment and lead to increased morbidity and mortality.\n\n### Important Complications to Watch For\n- Development of antibiotic-resistant infections\n- Adverse drug reactions\n- Clostridium difficile infection due to disruption of normal gut flora\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in antibiotic stewardship by adhering to guidelines, educating patients about appropriate antibiotic use, and monitoring for adverse effects and treatment efficacy.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows no improvement within 48-72 hours of appropriate antibiotic therapy, or if they deteriorate, escalate care to a senior clinician or infectious disease specialist.\n\n### Key Safety Considerations\nAlways consider the risk of antibiotic resistance when prescribing; ensure appropriate dosing and duration of therapy; monitor for side effects and drug interactions.\n",
+  "content": {
+    "overview": {
+      "definition": "Antibiotic stewardship refers to a set of coordinated strategies to improve the use of antibiotic medications, ensuring their effectiveness for future generations while minimizing adverse effects and the development of antibiotic resistance.",
+      "epidemiology": "Antibiotic resistance is a global health crisis, with an estimated 700,000 deaths annually due to resistant infections. The overuse and misuse of antibiotics in both healthcare and agriculture contribute significantly to this issue.",
+      "pathophysiology": "Antibiotic resistance occurs when bacteria evolve mechanisms to resist the effects of drugs that once killed them or inhibited their growth. This can happen through genetic mutations or acquiring resistance genes from other bacteria."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Chills",
+        "Fatigue",
+        "Localized pain or swelling",
+        "Signs of systemic infection (e.g., sepsis)"
+      ],
+      "signs": [
+        "Elevated white blood cell count",
+        "Focal tenderness",
+        "Erythema or swelling at infection site",
+        "Hypotension in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Absence of fever in elderly or immunocompromised patients",
+        "Chronic infections presenting with vague symptoms",
+        "Non-specific abdominal pain in intra-abdominal infections"
+      ],
+      "redFlags": [
+        "Severe sepsis or septic shock",
+        "Rapid deterioration of clinical status",
+        "Immunocompromised state",
+        "History of recent antibiotic use"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Urinalysis and urine culture",
+        "Chest X-ray (if respiratory symptoms present)"
+      ],
+      "secondLine": [
+        "CT scan or MRI for suspected deep-seated infections",
+        "Liver function tests (if hepatobiliary infection suspected)",
+        "Lumbar puncture (if meningitis is suspected)"
+      ],
+      "specialistTests": [
+        "PCR for specific pathogens",
+        "Serological tests for atypical infections (e.g., viral, fungal)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of infections requiring antibiotics is based on clinical presentation, laboratory findings, and imaging studies, with consideration of local resistance patterns.",
+      "differentials": [
+        "Viral infections (e.g., influenza, COVID-19)",
+        "Fungal infections",
+        "Non-infectious inflammatory conditions (e.g., autoimmune diseases)",
+        "Malignancies"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate empirical antibiotic therapy based on local guidelines and resistance patterns",
+          "Supportive care (hydration, antipyretics)"
+        ],
+        "secondLine": [
+          "Adjust antibiotics based on culture results and sensitivity testing",
+          "Consider consultation with infectious disease specialists"
+        ],
+        "procedures": [
+          "Drainage of abscesses or infected fluid collections",
+          "Surgical intervention for source control in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term management of chronic infections may require prolonged antibiotic courses, guided by specialist input",
+          "Regular monitoring for side effects and effectiveness"
+        ],
+        "secondLine": [
+          "Consideration of alternative therapies (e.g., surgery, immunotherapy) if antibiotics are ineffective",
+          "Multidisciplinary team involvement for complex cases"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess treatment response",
+          "Monitoring for adverse effects of long-term antibiotic use"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "500 mg every 8 hours or 875 mg every 12 hours",
+          "sideEffects": "Nausea, diarrhea, allergic reactions",
+          "notes": "Commonly used for respiratory and urinary tract infections."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Inhibits bacterial DNA gyrase and topoisomerase IV",
+          "dosing": "500 mg every 12 hours",
+          "sideEffects": "Nausea, dizziness, tendon rupture",
+          "notes": "Used for urinary tract infections and some gastrointestinal infections."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "15 mg/kg every 12 hours (adjust for renal function)",
+          "sideEffects": "Nephrotoxicity, ototoxicity, red man syndrome",
+          "notes": "Used for serious Gram-positive infections, including MRSA."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Abscess drainage",
+          "description": "Surgical procedure to remove pus from an infected area",
+          "indications": "Presence of a localized collection of pus causing pain or systemic symptoms",
+          "risks": "Infection, bleeding, damage to surrounding structures."
+        },
+        {
+          "name": "Central line placement",
+          "description": "Insertion of a catheter into a large vein for prolonged antibiotic therapy",
+          "indications": "Need for long-term intravenous antibiotics",
+          "risks": "Infection, thrombosis, pneumothorax."
+        }
+      ]
+    },
+    "prognosis": "With appropriate antibiotic stewardship, the prognosis for infections is generally good; however, antibiotic resistance can complicate treatment and lead to increased morbidity and mortality.",
+    "complications": [
+      "Development of antibiotic-resistant infections",
+      "Adverse drug reactions",
+      "Clostridium difficile infection due to disruption of normal gut flora"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in antibiotic stewardship by adhering to guidelines, educating patients about appropriate antibiotic use, and monitoring for adverse effects and treatment efficacy.",
+    "escalation": "If a patient shows no improvement within 48-72 hours of appropriate antibiotic therapy, or if they deteriorate, escalate care to a senior clinician or infectious disease specialist.",
+    "keySafetyConsiderations": "Always consider the risk of antibiotic resistance when prescribing; ensure appropriate dosing and duration of therapy; monitor for side effects and drug interactions."
+  }
+}

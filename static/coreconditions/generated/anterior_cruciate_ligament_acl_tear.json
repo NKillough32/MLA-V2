@@ -1,0 +1,131 @@
+{
+  "id": "anterior_cruciate_ligament_acl_tear",
+  "name": "Anterior cruciate ligament (ACL) tear",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:26:18.309833",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anterior cruciate ligament (ACL) tear: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAn anterior cruciate ligament (ACL) tear is a common knee injury that occurs when the ACL, a key ligament that helps stabilize the knee joint, is partially or completely torn. This injury often occurs during sports activities that involve sudden stops, jumps, or changes in direction.\n\n### Epidemiology\nACL injuries are prevalent in athletes, particularly in sports such as soccer, basketball, and skiing. They account for approximately 40% of all knee injuries, with a higher incidence in females due to anatomical and hormonal factors.\n\n### Essential Pathophysiology\nThe ACL is composed of dense connective tissue that provides stability to the knee by preventing anterior translation of the tibia relative to the femur. A tear can occur due to excessive force, often during pivoting or landing, leading to instability, pain, and swelling.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Acute knee pain\n- Swelling of the knee joint\n- Instability or 'giving way' sensation\n- Difficulty bearing weight on the affected leg\n- Reduced range of motion\n\n### Key Signs\n- Positive Lachman test\n- Positive anterior drawer test\n- Swelling and effusion in the knee\n- Tenderness along the joint line\n- Decreased range of motion\n\n### Atypical Presentations\n- Chronic knee pain without acute injury history\n- Recurrent episodes of knee instability\n- Delayed swelling after initial injury\n\n### Red Flags Requiring Immediate Action\n- Inability to bear weight on the affected leg\n- Signs of vascular compromise (pallor, pulselessness)\n- Severe joint deformity\n- Persistent swelling despite rest and ice\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- X-ray to rule out fractures\n\n### Second-line Investigations\n- MRI of the knee to confirm ACL tear and assess associated injuries\n\n### Specialist Tests\n- Arthroscopy for direct visualization and possible repair of the ACL\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by positive physical examination tests (Lachman test, anterior drawer test) and MRI findings confirming ACL tear.\n\n### Key Differential Diagnoses to Exclude\n- Meniscal tear\n- Collateral ligament injury\n- Patellar dislocation\n- Knee osteoarthritis\n- Fractures around the knee\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest, Ice, Compression, Elevation (RICE)\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Knee immobilization if necessary\n\n#### Second-line Treatments\n- Physiotherapy for range of motion and strengthening exercises\n- Consideration of surgical intervention if instability persists\n\n#### Emergency Procedures\n- Arthroscopic ACL reconstruction, indicated for active individuals with significant instability or associated injuries.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physiotherapy focusing on strengthening and proprioception\n- Activity modification to avoid high-risk activities\n\n#### Second-line Treatments\n- Surgical reconstruction if conservative management fails and instability persists\n- Consideration of bracing for support during activities\n\n#### Monitoring Requirements\n- Regular follow-up to assess knee function and stability\n- Rehabilitation progress and return to sport guidelines\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID that reduces inflammation and pain by inhibiting cyclooxygenase (COX) enzymes.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for inflammatory pain.\n\n### Procedures\n\n#### Arthroscopic ACL Reconstruction\n- **What it Involves**: A minimally invasive surgical procedure to reconstruct the torn ACL using a graft (autograft or allograft).\n- **Indications**: Significant knee instability, high activity level, associated meniscal injuries.\n- **Key Risks/Complications**: Infection, bleeding, graft failure, stiffness, and persistent instability.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for ACL tears varies; non-surgical management may lead to satisfactory outcomes in low-demand individuals, while surgical reconstruction typically allows for a return to pre-injury activity levels in athletes. However, there is a risk of developing osteoarthritis in the long term.\n\n### Important Complications to Watch For\n- Recurrent instability\n- Meniscal tears\n- Osteoarthritis\n- Graft failure or re-tear\n- Chronic pain\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide appropriate analgesia, and refer to orthopaedics for further management. They should also educate patients on rehabilitation and activity modification.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics if there are signs of significant instability, inability to bear weight, or if surgical intervention is being considered.\n\n### Key Safety Considerations\nEnsure proper assessment of vascular and neurological status of the limb, monitor for signs of compartment syndrome, and educate patients on the importance of rehabilitation to prevent re-injury.\n",
+  "content": {
+    "overview": {
+      "definition": "An anterior cruciate ligament (ACL) tear is a common knee injury that occurs when the ACL, a key ligament that helps stabilize the knee joint, is partially or completely torn. This injury often occurs during sports activities that involve sudden stops, jumps, or changes in direction.",
+      "epidemiology": "ACL injuries are prevalent in athletes, particularly in sports such as soccer, basketball, and skiing. They account for approximately 40% of all knee injuries, with a higher incidence in females due to anatomical and hormonal factors.",
+      "pathophysiology": "The ACL is composed of dense connective tissue that provides stability to the knee by preventing anterior translation of the tibia relative to the femur. A tear can occur due to excessive force, often during pivoting or landing, leading to instability, pain, and swelling."
+    },
+    "recognition": {
+      "symptoms": [
+        "Acute knee pain",
+        "Swelling of the knee joint",
+        "Instability or 'giving way' sensation",
+        "Difficulty bearing weight on the affected leg",
+        "Reduced range of motion"
+      ],
+      "signs": [
+        "Positive Lachman test",
+        "Positive anterior drawer test",
+        "Swelling and effusion in the knee",
+        "Tenderness along the joint line",
+        "Decreased range of motion"
+      ],
+      "atypicalPresentations": [
+        "Chronic knee pain without acute injury history",
+        "Recurrent episodes of knee instability",
+        "Delayed swelling after initial injury"
+      ],
+      "redFlags": [
+        "Inability to bear weight on the affected leg",
+        "Signs of vascular compromise (pallor, pulselessness)",
+        "Severe joint deformity",
+        "Persistent swelling despite rest and ice"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "X-ray to rule out fractures"
+      ],
+      "secondLine": [
+        "MRI of the knee to confirm ACL tear and assess associated injuries"
+      ],
+      "specialistTests": [
+        "Arthroscopy for direct visualization and possible repair of the ACL"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by positive physical examination tests (Lachman test, anterior drawer test) and MRI findings confirming ACL tear.",
+      "differentials": [
+        "Meniscal tear",
+        "Collateral ligament injury",
+        "Patellar dislocation",
+        "Knee osteoarthritis",
+        "Fractures around the knee"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest, Ice, Compression, Elevation (RICE)",
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Knee immobilization if necessary"
+        ],
+        "secondLine": [
+          "Physiotherapy for range of motion and strengthening exercises",
+          "Consideration of surgical intervention if instability persists"
+        ],
+        "procedures": [
+          "Arthroscopic ACL reconstruction, indicated for active individuals with significant instability or associated injuries."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physiotherapy focusing on strengthening and proprioception",
+          "Activity modification to avoid high-risk activities"
+        ],
+        "secondLine": [
+          "Surgical reconstruction if conservative management fails and instability persists",
+          "Consideration of bracing for support during activities"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess knee function and stability",
+          "Rehabilitation progress and return to sport guidelines"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID that reduces inflammation and pain by inhibiting cyclooxygenase (COX) enzymes.",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Useful for inflammatory pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Arthroscopic ACL Reconstruction",
+          "description": "A minimally invasive surgical procedure to reconstruct the torn ACL using a graft (autograft or allograft).",
+          "indications": "Significant knee instability, high activity level, associated meniscal injuries.",
+          "risks": "Infection, bleeding, graft failure, stiffness, and persistent instability."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for ACL tears varies; non-surgical management may lead to satisfactory outcomes in low-demand individuals, while surgical reconstruction typically allows for a return to pre-injury activity levels in athletes. However, there is a risk of developing osteoarthritis in the long term.",
+    "complications": [
+      "Recurrent instability",
+      "Meniscal tears",
+      "Osteoarthritis",
+      "Graft failure or re-tear",
+      "Chronic pain"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide appropriate analgesia, and refer to orthopaedics for further management. They should also educate patients on rehabilitation and activity modification.",
+    "escalation": "Refer to orthopaedics if there are signs of significant instability, inability to bear weight, or if surgical intervention is being considered.",
+    "keySafetyConsiderations": "Ensure proper assessment of vascular and neurological status of the limb, monitor for signs of compartment syndrome, and educate patients on the importance of rehabilitation to prevent re-injury."
+  }
+}

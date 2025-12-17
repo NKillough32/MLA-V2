@@ -1,0 +1,157 @@
+{
+  "id": "inflammatory_bowel_disease",
+  "name": "Inflammatory bowel disease",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:46:35.652135",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Inflammatory bowel disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInflammatory bowel disease (IBD) is a term primarily used to describe two chronic inflammatory conditions of the gastrointestinal tract: Crohn's disease and ulcerative colitis. These conditions are characterized by periods of exacerbation and remission, leading to significant morbidity.\n\n### Epidemiology\nIBD affects approximately 1 in 250 people in the UK, with a higher prevalence in Northern Europe. The peak incidence occurs in young adults aged 15-30 years, but it can occur at any age. There is a slight male predominance in Crohn's disease, while ulcerative colitis is more common in females.\n\n### Essential Pathophysiology\nThe exact cause of IBD is unknown, but it is believed to involve a combination of genetic predisposition, environmental factors, and an inappropriate immune response to intestinal microbiota. In Crohn's disease, inflammation can occur anywhere along the gastrointestinal tract, often affecting the terminal ileum, while ulcerative colitis is limited to the colon and rectum.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain\n- Diarrhea (often bloody in ulcerative colitis)\n- Weight loss\n- Fatigue\n- Fever\n- Tenesmus (feeling of incomplete evacuation)\n- Nausea and vomiting\n\n### Key Signs\n- Abdominal tenderness\n- Fever\n- Signs of dehydration\n- Perianal disease (fistulas, abscesses)\n- Extraintestinal manifestations (e.g., arthritis, skin lesions)\n\n### Atypical Presentations\n- Growth retardation in children\n- Severe anemia\n- Acute abdomen mimicking surgical emergencies\n- Perforation or abscess formation\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- High fever\n- Persistent vomiting\n- Signs of bowel obstruction\n- Severe dehydration\n- Weight loss >10% of body weight\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- C-reactive protein (CRP)\n- Stool tests (to rule out infection)\n- Abdominal ultrasound\n\n### Second-line Investigations\n- Colonoscopy with biopsy (for ulcerative colitis)\n- CT enterography or MRI enterography (for Crohn's disease)\n- Flexible sigmoidoscopy\n\n### Specialist Tests\n- Serological markers (e.g., ASCA, pANCA)\n- Capsule endoscopy (for small bowel Crohn's disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, endoscopic findings, and histological confirmation. The Montreal classification is often used to categorize the disease based on location and behavior.\n\n### Key Differential Diagnoses to Exclude\n- Infectious colitis (e.g., C. difficile)\n- Irritable bowel syndrome (IBS)\n- Diverticulitis\n- Colorectal cancer\n- Ischemic colitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids\n- Corticosteroids (e.g., hydrocortisone)\n- Antibiotics (if infection suspected)\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine)\n- Biologics (e.g., infliximab)\n\n#### Emergency Procedures\n- Bowel resection (for complications like strictures or perforation)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- 5-ASA compounds (e.g., mesalazine) for ulcerative colitis\n- Immunomodulators (e.g., azathioprine)\n\n#### Second-line Treatments\n- Biologics (e.g., anti-TNF agents like infliximab)\n- Corticosteroids for flare-ups\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity\n- Screening for colorectal cancer (especially in long-standing ulcerative colitis)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mesalazine\n- **Mechanism of Action**: 5-ASA compound that reduces inflammation in the gut\n- **Typical Dosing Range**: 2.4-4.8 g/day in divided doses\n- **Key Side Effects/Contraindications**: Nausea, headache, abdominal pain, renal impairment\n- **When to Use vs. Alternatives**: First-line treatment for mild to moderate ulcerative colitis.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis\n- **Typical Dosing Range**: 1-2.5 mg/kg/day\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, pancreatitis\n- **When to Use vs. Alternatives**: Used for maintenance therapy in IBD.\n\n#### Infliximab\n- **Mechanism of Action**: Anti-TNF monoclonal antibody that reduces inflammation\n- **Typical Dosing Range**: 5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks\n- **Key Side Effects/Contraindications**: Infection risk, infusion reactions, malignancy risk\n- **When to Use vs. Alternatives**: Used for moderate to severe IBD.\n\n### Procedures\n\n#### Colonoscopy\n- **What it Involves**: Endoscopic examination of the colon to visualize and biopsy lesions\n- **Indications**: Diagnosis and monitoring of ulcerative colitis and Crohn's disease\n- **Key Risks/Complications**: Perforation, bleeding, sedation-related complications\n\n#### Bowel resection\n- **What it Involves**: Surgical removal of affected bowel segments\n- **Indications**: Severe disease, strictures, fistulas, or malignancy\n- **Key Risks/Complications**: Infection, anastomotic leak, short bowel syndrome\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies; many patients can achieve remission with appropriate treatment. However, IBD is a lifelong condition with potential complications such as colorectal cancer, strictures, and fistulas.\n\n### Important Complications to Watch For\n- Colorectal cancer\n- Strictures\n- Fistulas\n- Abscesses\n- Toxic megacolon\n- Malnutrition\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of IBD, perform initial assessments, order appropriate investigations, and manage acute exacerbations. They should also provide education and support to patients regarding their condition and treatment options.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology for persistent symptoms, suspected complications, or if the patient requires advanced therapies (e.g., biologics).\n\n### Key Safety Considerations\nMonitor for signs of dehydration, bowel obstruction, and complications of treatment (e.g., infection risk with immunosuppressants). Ensure appropriate follow-up for cancer screening in long-standing ulcerative colitis.\n",
+  "content": {
+    "overview": {
+      "definition": "Inflammatory bowel disease (IBD) is a term primarily used to describe two chronic inflammatory conditions of the gastrointestinal tract: Crohn's disease and ulcerative colitis. These conditions are characterized by periods of exacerbation and remission, leading to significant morbidity.",
+      "epidemiology": "IBD affects approximately 1 in 250 people in the UK, with a higher prevalence in Northern Europe. The peak incidence occurs in young adults aged 15-30 years, but it can occur at any age. There is a slight male predominance in Crohn's disease, while ulcerative colitis is more common in females.",
+      "pathophysiology": "The exact cause of IBD is unknown, but it is believed to involve a combination of genetic predisposition, environmental factors, and an inappropriate immune response to intestinal microbiota. In Crohn's disease, inflammation can occur anywhere along the gastrointestinal tract, often affecting the terminal ileum, while ulcerative colitis is limited to the colon and rectum."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain",
+        "Diarrhea (often bloody in ulcerative colitis)",
+        "Weight loss",
+        "Fatigue",
+        "Fever",
+        "Tenesmus (feeling of incomplete evacuation)",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Fever",
+        "Signs of dehydration",
+        "Perianal disease (fistulas, abscesses)",
+        "Extraintestinal manifestations (e.g., arthritis, skin lesions)"
+      ],
+      "atypicalPresentations": [
+        "Growth retardation in children",
+        "Severe anemia",
+        "Acute abdomen mimicking surgical emergencies",
+        "Perforation or abscess formation"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "High fever",
+        "Persistent vomiting",
+        "Signs of bowel obstruction",
+        "Severe dehydration",
+        "Weight loss >10% of body weight"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "C-reactive protein (CRP)",
+        "Stool tests (to rule out infection)",
+        "Abdominal ultrasound"
+      ],
+      "secondLine": [
+        "Colonoscopy with biopsy (for ulcerative colitis)",
+        "CT enterography or MRI enterography (for Crohn's disease)",
+        "Flexible sigmoidoscopy"
+      ],
+      "specialistTests": [
+        "Serological markers (e.g., ASCA, pANCA)",
+        "Capsule endoscopy (for small bowel Crohn's disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, endoscopic findings, and histological confirmation. The Montreal classification is often used to categorize the disease based on location and behavior.",
+      "differentials": [
+        "Infectious colitis (e.g., C. difficile)",
+        "Irritable bowel syndrome (IBS)",
+        "Diverticulitis",
+        "Colorectal cancer",
+        "Ischemic colitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids",
+          "Corticosteroids (e.g., hydrocortisone)",
+          "Antibiotics (if infection suspected)"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine)",
+          "Biologics (e.g., infliximab)"
+        ],
+        "procedures": [
+          "Bowel resection (for complications like strictures or perforation)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "5-ASA compounds (e.g., mesalazine) for ulcerative colitis",
+          "Immunomodulators (e.g., azathioprine)"
+        ],
+        "secondLine": [
+          "Biologics (e.g., anti-TNF agents like infliximab)",
+          "Corticosteroids for flare-ups"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity",
+          "Screening for colorectal cancer (especially in long-standing ulcerative colitis)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mesalazine",
+          "mechanism": "5-ASA compound that reduces inflammation in the gut",
+          "dosing": "2.4-4.8 g/day in divided doses",
+          "sideEffects": "Nausea, headache, abdominal pain, renal impairment",
+          "notes": "First-line treatment for mild to moderate ulcerative colitis."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis",
+          "dosing": "1-2.5 mg/kg/day",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, pancreatitis",
+          "notes": "Used for maintenance therapy in IBD."
+        },
+        {
+          "name": "Infliximab",
+          "mechanism": "Anti-TNF monoclonal antibody that reduces inflammation",
+          "dosing": "5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks",
+          "sideEffects": "Infection risk, infusion reactions, malignancy risk",
+          "notes": "Used for moderate to severe IBD."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colonoscopy",
+          "description": "Endoscopic examination of the colon to visualize and biopsy lesions",
+          "indications": "Diagnosis and monitoring of ulcerative colitis and Crohn's disease",
+          "risks": "Perforation, bleeding, sedation-related complications"
+        },
+        {
+          "name": "Bowel resection",
+          "description": "Surgical removal of affected bowel segments",
+          "indications": "Severe disease, strictures, fistulas, or malignancy",
+          "risks": "Infection, anastomotic leak, short bowel syndrome"
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies; many patients can achieve remission with appropriate treatment. However, IBD is a lifelong condition with potential complications such as colorectal cancer, strictures, and fistulas.",
+    "complications": [
+      "Colorectal cancer",
+      "Strictures",
+      "Fistulas",
+      "Abscesses",
+      "Toxic megacolon",
+      "Malnutrition"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of IBD, perform initial assessments, order appropriate investigations, and manage acute exacerbations. They should also provide education and support to patients regarding their condition and treatment options.",
+    "escalation": "Refer to gastroenterology for persistent symptoms, suspected complications, or if the patient requires advanced therapies (e.g., biologics).",
+    "keySafetyConsiderations": "Monitor for signs of dehydration, bowel obstruction, and complications of treatment (e.g., infection risk with immunosuppressants). Ensure appropriate follow-up for cancer screening in long-standing ulcerative colitis."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "cervical_screening_hpv",
+  "name": "Cervical screening (HPV)",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:54:14.390856",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cervical screening (HPV): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCervical screening (HPV) is a preventive health measure aimed at detecting precancerous changes in the cervix caused by human papillomavirus (HPV) infection. It involves testing for HPV and, if positive, further evaluation through cytology (Pap smear).\n\n### Epidemiology\nCervical cancer is the fourth most common cancer in women worldwide. In the UK, cervical screening is offered to women aged 25-64, with the highest incidence in women aged 30-34. HPV is responsible for over 99% of cervical cancer cases.\n\n### Essential Pathophysiology\nPersistent infection with high-risk HPV types leads to the development of cervical intraepithelial neoplasia (CIN), which can progress to invasive cervical cancer if not detected and treated early.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asymptomatic in early stages\n- Abnormal vaginal bleeding (post-coital, intermenstrual, or post-menopausal)\n- Unusual vaginal discharge\n- Pelvic pain\n\n### Key Signs\n- Cervical lesions on examination\n- Abnormal Pap smear results\n\n### Atypical Presentations\n- Cervical cancer may present with systemic symptoms such as weight loss, fatigue, or leg swelling in advanced stages.\n\n### Red Flags Requiring Immediate Action\n- Severe pelvic pain\n- Heavy or prolonged vaginal bleeding\n- Signs of metastasis (e.g., bone pain, neurological symptoms)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- HPV testing (primary screening)\n- Pap smear (cervical cytology)\n\n### Second-line Investigations\n- Colposcopy with biopsy if HPV positive or Pap results are abnormal\n\n### Specialist Tests\n- Endocervical curettage (ECC)\n- Cone biopsy for definitive diagnosis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cervical cancer is confirmed through histological examination of biopsy specimens showing invasive cancer or high-grade CIN.\n\n### Key Differential Diagnoses to Exclude\n- Endometrial cancer\n- Vaginal cancer\n- Pelvic inflammatory disease (PID)\n- Benign cervical lesions (e.g., polyps)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to gynecology for abnormal findings\n- Pain management as needed\n\n#### Second-line Treatments\n- Consideration of surgical options if invasive cancer is diagnosed\n\n#### Emergency Procedures\n- Colposcopy\n- Biopsy\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular cervical screening as per guidelines (every 3 years for ages 25-49, every 5 years for ages 50-64)\n\n#### Second-line Treatments\n- Follow-up colposcopy for abnormal results\n\n#### Monitoring Requirements\n- Regular follow-up appointments to monitor for recurrence or progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Antiviral agent that inhibits viral DNA synthesis.\n- **Typical Dosing Range**: 400 mg orally three times daily for 7-10 days for genital herpes; not directly used for HPV.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache, vertigo.\n- **When to Use vs. Alternatives**: Used in the context of managing HPV-related lesions if secondary infections occur.\n\n#### Imiquimod\n- **Mechanism of Action**: Topical immune response modifier that stimulates local immune response against HPV.\n- **Typical Dosing Range**: Apply to affected area three times a week at bedtime for up to 16 weeks.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, ulceration.\n- **When to Use vs. Alternatives**: Used for external genital warts caused by HPV.\n\n### Procedures\n\n#### Colposcopy\n- **What it Involves**: A procedure to closely examine the cervix using a colposcope after abnormal Pap or HPV results.\n- **Indications**: Abnormal Pap smear, positive HPV test, or visible lesions.\n- **Key Risks/Complications**: Discomfort, bleeding, infection, and anxiety.\n\n#### Loop Electrosurgical Excision Procedure (LEEP)\n- **What it Involves**: A surgical procedure to remove abnormal cervical tissue using a thin wire loop that carries an electric current.\n- **Indications**: High-grade CIN or early-stage cervical cancer.\n- **Key Risks/Complications**: Bleeding, infection, cervical incompetence in future pregnancies.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early detection and treatment, the prognosis for cervical cancer is good, with a 5-year survival rate of over 90% for localized disease. Regular screening significantly reduces the incidence of cervical cancer.\n\n### Important Complications to Watch For\n- Invasive cervical cancer\n- Recurrence of CIN\n- Psychological impact of diagnosis and treatment\n- Infertility or complications in future pregnancies due to surgical interventions.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should ensure patients are informed about cervical screening, assist in the collection of samples, and provide education on HPV vaccination. They should also recognize red flags and refer appropriately.\n\n### When to Escalate to Senior/Specialist\nRefer to gynecology for any abnormal screening results, significant symptoms, or if there is suspicion of invasive disease.\n\n### Key Safety Considerations\nEnsure informed consent is obtained before procedures, monitor for complications post-procedure, and provide appropriate follow-up care.\n",
+  "content": {
+    "overview": {
+      "definition": "Cervical screening (HPV) is a preventive health measure aimed at detecting precancerous changes in the cervix caused by human papillomavirus (HPV) infection. It involves testing for HPV and, if positive, further evaluation through cytology (Pap smear).",
+      "epidemiology": "Cervical cancer is the fourth most common cancer in women worldwide. In the UK, cervical screening is offered to women aged 25-64, with the highest incidence in women aged 30-34. HPV is responsible for over 99% of cervical cancer cases.",
+      "pathophysiology": "Persistent infection with high-risk HPV types leads to the development of cervical intraepithelial neoplasia (CIN), which can progress to invasive cervical cancer if not detected and treated early."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asymptomatic in early stages",
+        "Abnormal vaginal bleeding (post-coital, intermenstrual, or post-menopausal)",
+        "Unusual vaginal discharge",
+        "Pelvic pain"
+      ],
+      "signs": [
+        "Cervical lesions on examination",
+        "Abnormal Pap smear results"
+      ],
+      "atypicalPresentations": [
+        "Cervical cancer may present with systemic symptoms such as weight loss, fatigue, or leg swelling in advanced stages."
+      ],
+      "redFlags": [
+        "Severe pelvic pain",
+        "Heavy or prolonged vaginal bleeding",
+        "Signs of metastasis (e.g., bone pain, neurological symptoms)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "HPV testing (primary screening)",
+        "Pap smear (cervical cytology)"
+      ],
+      "secondLine": [
+        "Colposcopy with biopsy if HPV positive or Pap results are abnormal"
+      ],
+      "specialistTests": [
+        "Endocervical curettage (ECC)",
+        "Cone biopsy for definitive diagnosis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cervical cancer is confirmed through histological examination of biopsy specimens showing invasive cancer or high-grade CIN.",
+      "differentials": [
+        "Endometrial cancer",
+        "Vaginal cancer",
+        "Pelvic inflammatory disease (PID)",
+        "Benign cervical lesions (e.g., polyps)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to gynecology for abnormal findings",
+          "Pain management as needed"
+        ],
+        "secondLine": [
+          "Consideration of surgical options if invasive cancer is diagnosed"
+        ],
+        "procedures": [
+          "Colposcopy",
+          "Biopsy"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular cervical screening as per guidelines (every 3 years for ages 25-49, every 5 years for ages 50-64)"
+        ],
+        "secondLine": [
+          "Follow-up colposcopy for abnormal results"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to monitor for recurrence or progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Antiviral agent that inhibits viral DNA synthesis.",
+          "dosing": "400 mg orally three times daily for 7-10 days for genital herpes; not directly used for HPV.",
+          "sideEffects": "Nausea, diarrhea, headache, vertigo.",
+          "notes": "Used in the context of managing HPV-related lesions if secondary infections occur."
+        },
+        {
+          "name": "Imiquimod",
+          "mechanism": "Topical immune response modifier that stimulates local immune response against HPV.",
+          "dosing": "Apply to affected area three times a week at bedtime for up to 16 weeks.",
+          "sideEffects": "Local irritation, erythema, ulceration.",
+          "notes": "Used for external genital warts caused by HPV."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colposcopy",
+          "description": "A procedure to closely examine the cervix using a colposcope after abnormal Pap or HPV results.",
+          "indications": "Abnormal Pap smear, positive HPV test, or visible lesions.",
+          "risks": "Discomfort, bleeding, infection, and anxiety."
+        },
+        {
+          "name": "Loop Electrosurgical Excision Procedure (LEEP)",
+          "description": "A surgical procedure to remove abnormal cervical tissue using a thin wire loop that carries an electric current.",
+          "indications": "High-grade CIN or early-stage cervical cancer.",
+          "risks": "Bleeding, infection, cervical incompetence in future pregnancies."
+        }
+      ]
+    },
+    "prognosis": "With early detection and treatment, the prognosis for cervical cancer is good, with a 5-year survival rate of over 90% for localized disease. Regular screening significantly reduces the incidence of cervical cancer.",
+    "complications": [
+      "Invasive cervical cancer",
+      "Recurrence of CIN",
+      "Psychological impact of diagnosis and treatment",
+      "Infertility or complications in future pregnancies due to surgical interventions."
+    ],
+    "foundationDoctorRole": "Foundation doctors should ensure patients are informed about cervical screening, assist in the collection of samples, and provide education on HPV vaccination. They should also recognize red flags and refer appropriately.",
+    "escalation": "Refer to gynecology for any abnormal screening results, significant symptoms, or if there is suspicion of invasive disease.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained before procedures, monitor for complications post-procedure, and provide appropriate follow-up care."
+  }
+}

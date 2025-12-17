@@ -1,0 +1,142 @@
+{
+  "id": "acute_hepatic_failure",
+  "name": "Acute hepatic failure",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:42:00.453902",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute hepatic failure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute hepatic failure (AHF) is a rapid deterioration of liver function, typically occurring within days to weeks, characterized by the development of hepatic encephalopathy and coagulopathy in a patient with previously normal liver function or chronic liver disease.\n\n### Epidemiology\nThe incidence of acute hepatic failure is approximately 4-10 cases per 100,000 population per year. It is more common in young adults and can be caused by various factors including viral hepatitis, drug-induced liver injury, and metabolic disorders.\n\n### Essential Pathophysiology\nAcute hepatic failure results from the loss of hepatocyte function, leading to impaired detoxification, protein synthesis, and metabolic processes. This can be due to direct hepatocyte injury (e.g., toxins, infections) or indirect mechanisms (e.g., ischemia). The accumulation of toxic metabolites, such as ammonia, leads to hepatic encephalopathy.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Jaundice\n- Nausea and vomiting\n- Abdominal pain\n- Fatigue\n- Confusion or altered mental status\n- Pruritus\n\n### Key Signs\n- Hepatomegaly\n- Ascites\n- Asterixis (flapping tremor)\n- Fetor hepaticus (musty odor of breath)\n- Coagulopathy (e.g., easy bruising, bleeding)\n\n### Atypical Presentations\n- Severe hypoglycemia\n- Acute kidney injury\n- Sepsis\n\n### Red Flags Requiring Immediate Action\n- Rapid onset of confusion or altered mental status\n- Severe coagulopathy\n- Persistent vomiting\n- Severe abdominal pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Coagulation profile (PT/INR)\n- Electrolytes\n- Ammonia levels\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Viral hepatitis serologies (e.g., HAV, HBV, HCV)\n- Autoimmune markers (e.g., ANA, ASMA)\n- Toxicology screen\n- Ultrasound abdomen\n\n### Specialist Tests\n- Liver biopsy (if indicated)\n- CT/MRI abdomen for structural abnormalities\n- Metabolic workup (e.g., Wilson's disease, hemochromatosis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of acute hepatic failure is based on the presence of hepatic encephalopathy and coagulopathy (PT > 15 seconds or INR > 1.5) in a patient with previously normal liver function or chronic liver disease.\n\n### Key Differential Diagnoses to Exclude\n- Acute viral hepatitis\n- Drug-induced liver injury\n- Acute biliary obstruction\n- Ischemic hepatitis\n- Wilson's disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (IV fluids, electrolyte management)\n- Nutritional support (high-calorie diet)\n- Lactulose for hepatic encephalopathy\n\n#### Second-line Treatments\n- N-acetylcysteine (for acetaminophen overdose)\n- Antiviral therapy (for viral hepatitis)\n- Consideration for liver transplant\n\n#### Emergency Procedures\n- Intensive monitoring in ICU setting\n- Liver transplant evaluation if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of liver function tests and INR\n- Management of underlying cause (e.g., antiviral therapy for hepatitis)\n- Patient education on avoiding hepatotoxic substances\n\n#### Second-line Treatments\n- Consideration for liver transplant if chronic liver failure develops\n\n#### Monitoring Requirements\n- Regular follow-up with hepatology\n- Monitoring for complications such as variceal bleeding or hepatocellular carcinoma\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### N-acetylcysteine\n- **Mechanism of Action**: Acts as a precursor to glutathione, helping to detoxify harmful metabolites in the liver.\n- **Typical Dosing Range**: Loading dose: 150 mg/kg IV over 15 minutes, followed by 50 mg/kg IV over 4 hours, then 100 mg/kg IV over 16 hours.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, allergic reactions, anaphylactoid reactions.\n- **When to Use vs. Alternatives**: Most effective within 8 hours of acetaminophen ingestion.\n\n#### Lactulose\n- **Mechanism of Action**: Non-absorbable disaccharide that reduces ammonia levels by promoting its excretion in the stool.\n- **Typical Dosing Range**: Initial: 30-45 mL orally every 1-2 hours until diarrhea occurs, then adjust to 2-3 soft stools per day.\n- **Key Side Effects/Contraindications**: Diarrhea, abdominal cramps, electrolyte imbalance.\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly.\n\n### Procedures\n\n#### Liver transplant\n- **What it Involves**: Surgical procedure to replace a diseased liver with a healthy liver from a donor.\n- **Indications**: Acute hepatic failure with poor prognosis, severe hepatic encephalopathy, or coagulopathy unresponsive to medical management.\n- **Key Risks/Complications**: Surgical complications, rejection of the transplanted liver, infection, and complications from immunosuppressive therapy.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of acute hepatic failure varies widely depending on the underlying cause, the speed of diagnosis and treatment, and the presence of complications. Overall mortality rates can be as high as 50% without liver transplantation.\n\n### Important Complications to Watch For\n- Hepatic encephalopathy\n- Acute kidney injury\n- Sepsis\n- Coagulopathy leading to bleeding\n- Multi-organ failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of acute hepatic failure, initiate appropriate investigations, provide supportive care, and escalate care to senior clinicians or specialists as needed. They should also be aware of the importance of monitoring for complications and the need for urgent intervention in severe cases.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to a senior clinician or hepatology specialist is required if there are signs of severe hepatic encephalopathy, significant coagulopathy, or if the patient is deteriorating rapidly.\n\n### Key Safety Considerations\nEnsure close monitoring of vital signs, neurological status, and laboratory values. Be vigilant for signs of bleeding or infection, and maintain a high index of suspicion for complications. Ensure timely referral for liver transplant evaluation if indicated.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute hepatic failure (AHF) is a rapid deterioration of liver function, typically occurring within days to weeks, characterized by the development of hepatic encephalopathy and coagulopathy in a patient with previously normal liver function or chronic liver disease.",
+      "epidemiology": "The incidence of acute hepatic failure is approximately 4-10 cases per 100,000 population per year. It is more common in young adults and can be caused by various factors including viral hepatitis, drug-induced liver injury, and metabolic disorders.",
+      "pathophysiology": "Acute hepatic failure results from the loss of hepatocyte function, leading to impaired detoxification, protein synthesis, and metabolic processes. This can be due to direct hepatocyte injury (e.g., toxins, infections) or indirect mechanisms (e.g., ischemia). The accumulation of toxic metabolites, such as ammonia, leads to hepatic encephalopathy."
+    },
+    "recognition": {
+      "symptoms": [
+        "Jaundice",
+        "Nausea and vomiting",
+        "Abdominal pain",
+        "Fatigue",
+        "Confusion or altered mental status",
+        "Pruritus"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Ascites",
+        "Asterixis (flapping tremor)",
+        "Fetor hepaticus (musty odor of breath)",
+        "Coagulopathy (e.g., easy bruising, bleeding)"
+      ],
+      "atypicalPresentations": [
+        "Severe hypoglycemia",
+        "Acute kidney injury",
+        "Sepsis"
+      ],
+      "redFlags": [
+        "Rapid onset of confusion or altered mental status",
+        "Severe coagulopathy",
+        "Persistent vomiting",
+        "Severe abdominal pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Coagulation profile (PT/INR)",
+        "Electrolytes",
+        "Ammonia levels",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Viral hepatitis serologies (e.g., HAV, HBV, HCV)",
+        "Autoimmune markers (e.g., ANA, ASMA)",
+        "Toxicology screen",
+        "Ultrasound abdomen"
+      ],
+      "specialistTests": [
+        "Liver biopsy (if indicated)",
+        "CT/MRI abdomen for structural abnormalities",
+        "Metabolic workup (e.g., Wilson's disease, hemochromatosis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of acute hepatic failure is based on the presence of hepatic encephalopathy and coagulopathy (PT > 15 seconds or INR > 1.5) in a patient with previously normal liver function or chronic liver disease.",
+      "differentials": [
+        "Acute viral hepatitis",
+        "Drug-induced liver injury",
+        "Acute biliary obstruction",
+        "Ischemic hepatitis",
+        "Wilson's disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (IV fluids, electrolyte management)",
+          "Nutritional support (high-calorie diet)",
+          "Lactulose for hepatic encephalopathy"
+        ],
+        "secondLine": [
+          "N-acetylcysteine (for acetaminophen overdose)",
+          "Antiviral therapy (for viral hepatitis)",
+          "Consideration for liver transplant"
+        ],
+        "procedures": [
+          "Intensive monitoring in ICU setting",
+          "Liver transplant evaluation if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of liver function tests and INR",
+          "Management of underlying cause (e.g., antiviral therapy for hepatitis)",
+          "Patient education on avoiding hepatotoxic substances"
+        ],
+        "secondLine": [
+          "Consideration for liver transplant if chronic liver failure develops"
+        ],
+        "monitoring": [
+          "Regular follow-up with hepatology",
+          "Monitoring for complications such as variceal bleeding or hepatocellular carcinoma"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "N-acetylcysteine",
+          "mechanism": "Acts as a precursor to glutathione, helping to detoxify harmful metabolites in the liver.",
+          "dosing": "Loading dose: 150 mg/kg IV over 15 minutes, followed by 50 mg/kg IV over 4 hours, then 100 mg/kg IV over 16 hours.",
+          "sideEffects": "Nausea, vomiting, allergic reactions, anaphylactoid reactions.",
+          "notes": "Most effective within 8 hours of acetaminophen ingestion."
+        },
+        {
+          "name": "Lactulose",
+          "mechanism": "Non-absorbable disaccharide that reduces ammonia levels by promoting its excretion in the stool.",
+          "dosing": "Initial: 30-45 mL orally every 1-2 hours until diarrhea occurs, then adjust to 2-3 soft stools per day.",
+          "sideEffects": "Diarrhea, abdominal cramps, electrolyte imbalance.",
+          "notes": "Monitor electrolytes regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Liver transplant",
+          "description": "Surgical procedure to replace a diseased liver with a healthy liver from a donor.",
+          "indications": "Acute hepatic failure with poor prognosis, severe hepatic encephalopathy, or coagulopathy unresponsive to medical management.",
+          "risks": "Surgical complications, rejection of the transplanted liver, infection, and complications from immunosuppressive therapy."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of acute hepatic failure varies widely depending on the underlying cause, the speed of diagnosis and treatment, and the presence of complications. Overall mortality rates can be as high as 50% without liver transplantation.",
+    "complications": [
+      "Hepatic encephalopathy",
+      "Acute kidney injury",
+      "Sepsis",
+      "Coagulopathy leading to bleeding",
+      "Multi-organ failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of acute hepatic failure, initiate appropriate investigations, provide supportive care, and escalate care to senior clinicians or specialists as needed. They should also be aware of the importance of monitoring for complications and the need for urgent intervention in severe cases.",
+    "escalation": "Immediate escalation to a senior clinician or hepatology specialist is required if there are signs of severe hepatic encephalopathy, significant coagulopathy, or if the patient is deteriorating rapidly.",
+    "keySafetyConsiderations": "Ensure close monitoring of vital signs, neurological status, and laboratory values. Be vigilant for signs of bleeding or infection, and maintain a high index of suspicion for complications. Ensure timely referral for liver transplant evaluation if indicated."
+  }
+}

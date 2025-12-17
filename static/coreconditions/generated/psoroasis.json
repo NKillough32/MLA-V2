@@ -1,0 +1,142 @@
+{
+  "id": "psoroasis",
+  "name": "Psoroasis",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:27:21.480884",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Psoroasis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPsoriasis is a chronic autoimmune skin condition characterized by the rapid proliferation of skin cells leading to thick, red, scaly patches on the skin. It is often associated with systemic inflammation and can affect joints (psoriatic arthritis).\n\n### Epidemiology\nPsoriasis affects approximately 2-3% of the population worldwide, with onset typically occurring in early adulthood, although it can develop at any age. It has a genetic component, with a higher prevalence in individuals with a family history of the condition.\n\n### Essential Pathophysiology\nPsoriasis is driven by an immune-mediated process involving T cells and dendritic cells, leading to the overproduction of skin cells (keratinocytes) and inflammation. The condition is associated with increased levels of pro-inflammatory cytokines such as TNF-alpha, IL-17, and IL-23.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Red, raised patches of skin covered with thick, silvery scales\n- Dry, cracked skin that may bleed\n- Itching, burning, or soreness\n- Thickened, pitted, or ridged nails\n- Swollen and stiff joints (in cases of psoriatic arthritis)\n\n### Key Signs\n- Well-defined erythematous plaques with silvery scales\n- Auspitz sign (bleeding when scales are removed)\n- Nail changes (pitting, onycholysis)\n- Joint swelling and tenderness\n\n### Atypical Presentations\n- Inverse psoriasis (affecting skin folds)\n- Guttate psoriasis (small, drop-shaped lesions)\n- Erythrodermic psoriasis (widespread redness and shedding of skin)\n\n### Red Flags Requiring Immediate Action\n- Severe itching or pain\n- Rapidly spreading lesions\n- Joint pain or swelling\n- Signs of infection (fever, increased redness, pus)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination and history taking\n- Assessment of severity using PASI (Psoriasis Area and Severity Index)\n\n### Second-line Investigations\n- Skin biopsy (if diagnosis is uncertain or to rule out other conditions)\n\n### Specialist Tests\n- Blood tests for inflammatory markers (e.g., ESR, CRP)\n- Imaging studies for suspected psoriatic arthritis (X-rays, MRI)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on characteristic skin findings and patient history. A skin biopsy may be performed if the diagnosis is uncertain.\n\n### Key Differential Diagnoses to Exclude\n- Eczema\n- Seborrheic dermatitis\n- Lichen planus\n- Fungal infections (tinea)\n- Pityriasis rosea\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (high-potency for acute flares)\n- Emollients to hydrate the skin\n\n#### Second-line Treatments\n- Topical vitamin D analogs (e.g., calcipotriene)\n- Coal tar preparations\n\n#### Emergency Procedures\n- Phototherapy (UVB or PUVA) for widespread disease\n- Systemic therapy (methotrexate, cyclosporine) for severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term topical treatments (steroids, vitamin D analogs)\n- Regular use of emollients\n\n#### Second-line Treatments\n- Systemic treatments (methotrexate, biologics) for moderate to severe cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess treatment efficacy and side effects\n- Monitoring for comorbidities (e.g., cardiovascular disease, metabolic syndrome)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis and reduces inflammation\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response\n- **Key Side Effects/Contraindications**: Nausea, hepatotoxicity, bone marrow suppression, teratogenicity\n- **When to Use vs. Alternatives**: Monitor liver function tests and complete blood counts regularly.\n\n#### Adalimumab (Humira)\n- **Mechanism of Action**: Monoclonal antibody that inhibits TNF-alpha\n- **Typical Dosing Range**: Initial dose of 80 mg subcutaneously, followed by 40 mg every other week\n- **Key Side Effects/Contraindications**: Injection site reactions, increased risk of infections, malignancy\n- **When to Use vs. Alternatives**: Screen for tuberculosis before starting therapy.\n\n#### Calcipotriene\n- **Mechanism of Action**: Vitamin D analog that inhibits keratinocyte proliferation\n- **Typical Dosing Range**: Apply to affected areas twice daily\n- **Key Side Effects/Contraindications**: Skin irritation, hypercalcemia (rare)\n- **When to Use vs. Alternatives**: Use in conjunction with topical steroids for enhanced effect.\n\n### Procedures\n\n#### Phototherapy (UVB/PUVA)\n- **What it Involves**: Exposure to ultraviolet light to reduce skin cell turnover and inflammation\n- **Indications**: Moderate to severe psoriasis not responding to topical treatments\n- **Key Risks/Complications**: Skin burns, increased risk of skin cancer with long-term use.\n\n#### Systemic therapy (e.g., methotrexate)\n- **What it Involves**: Use of oral or injectable medications to control severe psoriasis\n- **Indications**: Severe psoriasis or psoriatic arthritis\n- **Key Risks/Complications**: Liver toxicity, bone marrow suppression, gastrointestinal side effects.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPsoriasis is a chronic condition with periods of exacerbation and remission. With appropriate management, many patients can achieve significant improvement in their symptoms. However, it can have a substantial impact on quality of life and may be associated with comorbidities such as obesity, diabetes, and cardiovascular disease.\n\n### Important Complications to Watch For\n- Psoriatic arthritis (in 30% of patients)\n- Increased risk of cardiovascular disease\n- Metabolic syndrome\n- Depression and anxiety due to chronic skin condition\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize psoriasis, initiate appropriate topical treatments, and refer to dermatology for severe cases or those with suspected psoriatic arthritis. They should also educate patients about the chronic nature of the disease and the importance of adherence to treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology if: 1) The patient has severe psoriasis not responding to first-line treatments, 2) There are signs of psoriatic arthritis, 3) The patient has significant psychological distress related to their condition.\n\n### Key Safety Considerations\nMonitor for side effects of systemic treatments, including liver function tests for methotrexate and screening for infections before starting biologics. Educate patients on the importance of sun protection during phototherapy.\n",
+  "content": {
+    "overview": {
+      "definition": "Psoriasis is a chronic autoimmune skin condition characterized by the rapid proliferation of skin cells leading to thick, red, scaly patches on the skin. It is often associated with systemic inflammation and can affect joints (psoriatic arthritis).",
+      "epidemiology": "Psoriasis affects approximately 2-3% of the population worldwide, with onset typically occurring in early adulthood, although it can develop at any age. It has a genetic component, with a higher prevalence in individuals with a family history of the condition.",
+      "pathophysiology": "Psoriasis is driven by an immune-mediated process involving T cells and dendritic cells, leading to the overproduction of skin cells (keratinocytes) and inflammation. The condition is associated with increased levels of pro-inflammatory cytokines such as TNF-alpha, IL-17, and IL-23."
+    },
+    "recognition": {
+      "symptoms": [
+        "Red, raised patches of skin covered with thick, silvery scales",
+        "Dry, cracked skin that may bleed",
+        "Itching, burning, or soreness",
+        "Thickened, pitted, or ridged nails",
+        "Swollen and stiff joints (in cases of psoriatic arthritis)"
+      ],
+      "signs": [
+        "Well-defined erythematous plaques with silvery scales",
+        "Auspitz sign (bleeding when scales are removed)",
+        "Nail changes (pitting, onycholysis)",
+        "Joint swelling and tenderness"
+      ],
+      "atypicalPresentations": [
+        "Inverse psoriasis (affecting skin folds)",
+        "Guttate psoriasis (small, drop-shaped lesions)",
+        "Erythrodermic psoriasis (widespread redness and shedding of skin)"
+      ],
+      "redFlags": [
+        "Severe itching or pain",
+        "Rapidly spreading lesions",
+        "Joint pain or swelling",
+        "Signs of infection (fever, increased redness, pus)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination and history taking",
+        "Assessment of severity using PASI (Psoriasis Area and Severity Index)"
+      ],
+      "secondLine": [
+        "Skin biopsy (if diagnosis is uncertain or to rule out other conditions)"
+      ],
+      "specialistTests": [
+        "Blood tests for inflammatory markers (e.g., ESR, CRP)",
+        "Imaging studies for suspected psoriatic arthritis (X-rays, MRI)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on characteristic skin findings and patient history. A skin biopsy may be performed if the diagnosis is uncertain.",
+      "differentials": [
+        "Eczema",
+        "Seborrheic dermatitis",
+        "Lichen planus",
+        "Fungal infections (tinea)",
+        "Pityriasis rosea"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (high-potency for acute flares)",
+          "Emollients to hydrate the skin"
+        ],
+        "secondLine": [
+          "Topical vitamin D analogs (e.g., calcipotriene)",
+          "Coal tar preparations"
+        ],
+        "procedures": [
+          "Phototherapy (UVB or PUVA) for widespread disease",
+          "Systemic therapy (methotrexate, cyclosporine) for severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term topical treatments (steroids, vitamin D analogs)",
+          "Regular use of emollients"
+        ],
+        "secondLine": [
+          "Systemic treatments (methotrexate, biologics) for moderate to severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess treatment efficacy and side effects",
+          "Monitoring for comorbidities (e.g., cardiovascular disease, metabolic syndrome)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis and reduces inflammation",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response",
+          "sideEffects": "Nausea, hepatotoxicity, bone marrow suppression, teratogenicity",
+          "notes": "Monitor liver function tests and complete blood counts regularly."
+        },
+        {
+          "name": "Adalimumab (Humira)",
+          "mechanism": "Monoclonal antibody that inhibits TNF-alpha",
+          "dosing": "Initial dose of 80 mg subcutaneously, followed by 40 mg every other week",
+          "sideEffects": "Injection site reactions, increased risk of infections, malignancy",
+          "notes": "Screen for tuberculosis before starting therapy."
+        },
+        {
+          "name": "Calcipotriene",
+          "mechanism": "Vitamin D analog that inhibits keratinocyte proliferation",
+          "dosing": "Apply to affected areas twice daily",
+          "sideEffects": "Skin irritation, hypercalcemia (rare)",
+          "notes": "Use in conjunction with topical steroids for enhanced effect."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Phototherapy (UVB/PUVA)",
+          "description": "Exposure to ultraviolet light to reduce skin cell turnover and inflammation",
+          "indications": "Moderate to severe psoriasis not responding to topical treatments",
+          "risks": "Skin burns, increased risk of skin cancer with long-term use."
+        },
+        {
+          "name": "Systemic therapy (e.g., methotrexate)",
+          "description": "Use of oral or injectable medications to control severe psoriasis",
+          "indications": "Severe psoriasis or psoriatic arthritis",
+          "risks": "Liver toxicity, bone marrow suppression, gastrointestinal side effects."
+        }
+      ]
+    },
+    "prognosis": "Psoriasis is a chronic condition with periods of exacerbation and remission. With appropriate management, many patients can achieve significant improvement in their symptoms. However, it can have a substantial impact on quality of life and may be associated with comorbidities such as obesity, diabetes, and cardiovascular disease.",
+    "complications": [
+      "Psoriatic arthritis (in 30% of patients)",
+      "Increased risk of cardiovascular disease",
+      "Metabolic syndrome",
+      "Depression and anxiety due to chronic skin condition"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize psoriasis, initiate appropriate topical treatments, and refer to dermatology for severe cases or those with suspected psoriatic arthritis. They should also educate patients about the chronic nature of the disease and the importance of adherence to treatment.",
+    "escalation": "Refer to dermatology if: 1) The patient has severe psoriasis not responding to first-line treatments, 2) There are signs of psoriatic arthritis, 3) The patient has significant psychological distress related to their condition.",
+    "keySafetyConsiderations": "Monitor for side effects of systemic treatments, including liver function tests for methotrexate and screening for infections before starting biologics. Educate patients on the importance of sun protection during phototherapy."
+  }
+}

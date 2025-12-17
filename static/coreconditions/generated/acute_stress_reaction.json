@@ -1,0 +1,129 @@
+{
+  "id": "acute_stress_reaction",
+  "name": "Acute stress reaction",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:09:54.731645",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute stress reaction: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute stress reaction (ASR) is a psychological response to a traumatic event that occurs within hours to days after the event. It is characterized by a range of symptoms including anxiety, dissociation, and emotional distress, which can significantly impair functioning.\n\n### Epidemiology\nASR can occur in individuals of any age and is particularly prevalent in those exposed to traumatic events such as accidents, natural disasters, or violent incidents. The prevalence varies, with estimates suggesting that 10-20% of individuals exposed to trauma may experience ASR.\n\n### Essential Pathophysiology\nThe pathophysiology of ASR involves a complex interplay of neurobiological, psychological, and environmental factors. The acute stress response is mediated by the hypothalamic-pituitary-adrenal (HPA) axis, leading to the release of stress hormones such as cortisol and adrenaline, which prepare the body for a 'fight or flight' response. This can result in heightened arousal, anxiety, and changes in cognition.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Intense anxiety or fear\n- Dissociation (feeling detached from reality)\n- Intrusive thoughts or memories of the trauma\n- Emotional numbness or detachment\n- Sleep disturbances (insomnia or nightmares)\n- Irritability or anger\n- Hypervigilance\n\n### Key Signs\n- Increased heart rate\n- Elevated blood pressure\n- Sweating\n- Tremors\n- Avoidance of reminders of the trauma\n- Changes in appetite\n\n### Atypical Presentations\n- Physical symptoms such as gastrointestinal distress or headaches\n- Substance misuse as a coping mechanism\n- Social withdrawal or isolation\n\n### Red Flags Requiring Immediate Action\n- Suicidal ideation or self-harm\n- Severe functional impairment (inability to work or care for oneself)\n- Persistent symptoms lasting longer than a month\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview to assess symptoms and history of trauma\n- Standardized assessment tools (e.g., Impact of Event Scale)\n\n### Second-line Investigations\n- Physical examination to rule out medical causes of symptoms\n- Screening for co-morbid psychiatric conditions (e.g., depression, PTSD)\n\n### Specialist Tests\n- Referral to a psychiatrist or psychologist for further evaluation if symptoms are severe or persistent\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ASR is based on the presence of symptoms occurring within three days to four weeks following exposure to a traumatic event, as per DSM-5 criteria. Symptoms must cause significant distress or impairment in social, occupational, or other important areas of functioning.\n\n### Key Differential Diagnoses to Exclude\n- Post-Traumatic Stress Disorder (PTSD)\n- Acute Anxiety Disorder\n- Adjustment Disorder\n- Major Depressive Disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Psychological first aid (supportive care)\n- Reassurance and education about normal stress responses\n- Encouragement of social support\n\n#### Second-line Treatments\n- Cognitive Behavioral Therapy (CBT) for acute stress reactions\n\n#### Emergency Procedures\n- Crisis intervention services may be indicated in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive Behavioral Therapy (CBT)\n- Eye Movement Desensitization and Reprocessing (EMDR)\n\n#### Second-line Treatments\n- Medication management (SSRIs or SNRIs) if symptoms persist\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sertraline\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain, improving mood and anxiety.\n- **Typical Dosing Range**: Starting dose of 50 mg daily, can be increased to a maximum of 200 mg based on response and tolerability.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, weight gain.\n- **When to Use vs. Alternatives**: Considered first-line for chronic management of anxiety and depressive symptoms.\n\n#### Venlafaxine\n- **Mechanism of Action**: Serotonin-norepinephrine reuptake inhibitor (SNRI) that increases serotonin and norepinephrine levels, helping to alleviate anxiety and depressive symptoms.\n- **Typical Dosing Range**: Starting dose of 75 mg daily, can be increased to a maximum of 375 mg based on response and tolerability.\n- **Key Side Effects/Contraindications**: Nausea, dizziness, increased blood pressure, sexual dysfunction.\n- **When to Use vs. Alternatives**: Useful in cases where SSRIs are ineffective.\n\n### Procedures\n\n#### Crisis intervention\n- **What it Involves**: A short-term, immediate response to individuals in acute distress following a traumatic event, aimed at stabilizing the individual and providing support.\n- **Indications**: Severe distress, suicidal ideation, or inability to function in daily life.\n- **Key Risks/Complications**: Potential for exacerbation of symptoms if not handled appropriately, dependency on crisis services.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for acute stress reaction is generally favorable, with many individuals recovering within a few weeks. However, if symptoms persist beyond a month, there is a risk of developing PTSD or other chronic mental health conditions.\n\n### Important Complications to Watch For\n- Development of Post-Traumatic Stress Disorder (PTSD)\n- Chronic anxiety or depression\n- Substance use disorders\n- Impaired social and occupational functioning\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of ASR, provide initial support and reassurance, and refer patients for further psychological assessment and management as needed. They should also monitor for any red flags indicating severe distress or risk of self-harm.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, suicidal ideation, or significant functional impairment, immediate referral to mental health services or crisis intervention is necessary.\n\n### Key Safety Considerations\nEnsure patient safety by assessing for suicidal ideation and risk factors. Provide a supportive environment and encourage the patient to engage with social support systems. Monitor for signs of deterioration in mental health.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute stress reaction (ASR) is a psychological response to a traumatic event that occurs within hours to days after the event. It is characterized by a range of symptoms including anxiety, dissociation, and emotional distress, which can significantly impair functioning.",
+      "epidemiology": "ASR can occur in individuals of any age and is particularly prevalent in those exposed to traumatic events such as accidents, natural disasters, or violent incidents. The prevalence varies, with estimates suggesting that 10-20% of individuals exposed to trauma may experience ASR.",
+      "pathophysiology": "The pathophysiology of ASR involves a complex interplay of neurobiological, psychological, and environmental factors. The acute stress response is mediated by the hypothalamic-pituitary-adrenal (HPA) axis, leading to the release of stress hormones such as cortisol and adrenaline, which prepare the body for a 'fight or flight' response. This can result in heightened arousal, anxiety, and changes in cognition."
+    },
+    "recognition": {
+      "symptoms": [
+        "Intense anxiety or fear",
+        "Dissociation (feeling detached from reality)",
+        "Intrusive thoughts or memories of the trauma",
+        "Emotional numbness or detachment",
+        "Sleep disturbances (insomnia or nightmares)",
+        "Irritability or anger",
+        "Hypervigilance"
+      ],
+      "signs": [
+        "Increased heart rate",
+        "Elevated blood pressure",
+        "Sweating",
+        "Tremors",
+        "Avoidance of reminders of the trauma",
+        "Changes in appetite"
+      ],
+      "atypicalPresentations": [
+        "Physical symptoms such as gastrointestinal distress or headaches",
+        "Substance misuse as a coping mechanism",
+        "Social withdrawal or isolation"
+      ],
+      "redFlags": [
+        "Suicidal ideation or self-harm",
+        "Severe functional impairment (inability to work or care for oneself)",
+        "Persistent symptoms lasting longer than a month"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview to assess symptoms and history of trauma",
+        "Standardized assessment tools (e.g., Impact of Event Scale)"
+      ],
+      "secondLine": [
+        "Physical examination to rule out medical causes of symptoms",
+        "Screening for co-morbid psychiatric conditions (e.g., depression, PTSD)"
+      ],
+      "specialistTests": [
+        "Referral to a psychiatrist or psychologist for further evaluation if symptoms are severe or persistent"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ASR is based on the presence of symptoms occurring within three days to four weeks following exposure to a traumatic event, as per DSM-5 criteria. Symptoms must cause significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "differentials": [
+        "Post-Traumatic Stress Disorder (PTSD)",
+        "Acute Anxiety Disorder",
+        "Adjustment Disorder",
+        "Major Depressive Disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Psychological first aid (supportive care)",
+          "Reassurance and education about normal stress responses",
+          "Encouragement of social support"
+        ],
+        "secondLine": [
+          "Cognitive Behavioral Therapy (CBT) for acute stress reactions"
+        ],
+        "procedures": [
+          "Crisis intervention services may be indicated in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive Behavioral Therapy (CBT)",
+          "Eye Movement Desensitization and Reprocessing (EMDR)"
+        ],
+        "secondLine": [
+          "Medication management (SSRIs or SNRIs) if symptoms persist"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sertraline",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain, improving mood and anxiety.",
+          "dosing": "Starting dose of 50 mg daily, can be increased to a maximum of 200 mg based on response and tolerability.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, weight gain.",
+          "notes": "Considered first-line for chronic management of anxiety and depressive symptoms."
+        },
+        {
+          "name": "Venlafaxine",
+          "mechanism": "Serotonin-norepinephrine reuptake inhibitor (SNRI) that increases serotonin and norepinephrine levels, helping to alleviate anxiety and depressive symptoms.",
+          "dosing": "Starting dose of 75 mg daily, can be increased to a maximum of 375 mg based on response and tolerability.",
+          "sideEffects": "Nausea, dizziness, increased blood pressure, sexual dysfunction.",
+          "notes": "Useful in cases where SSRIs are ineffective."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Crisis intervention",
+          "description": "A short-term, immediate response to individuals in acute distress following a traumatic event, aimed at stabilizing the individual and providing support.",
+          "indications": "Severe distress, suicidal ideation, or inability to function in daily life.",
+          "risks": "Potential for exacerbation of symptoms if not handled appropriately, dependency on crisis services."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for acute stress reaction is generally favorable, with many individuals recovering within a few weeks. However, if symptoms persist beyond a month, there is a risk of developing PTSD or other chronic mental health conditions.",
+    "complications": [
+      "Development of Post-Traumatic Stress Disorder (PTSD)",
+      "Chronic anxiety or depression",
+      "Substance use disorders",
+      "Impaired social and occupational functioning"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of ASR, provide initial support and reassurance, and refer patients for further psychological assessment and management as needed. They should also monitor for any red flags indicating severe distress or risk of self-harm.",
+    "escalation": "If a patient presents with severe symptoms, suicidal ideation, or significant functional impairment, immediate referral to mental health services or crisis intervention is necessary.",
+    "keySafetyConsiderations": "Ensure patient safety by assessing for suicidal ideation and risk factors. Provide a supportive environment and encourage the patient to engage with social support systems. Monitor for signs of deterioration in mental health."
+  }
+}

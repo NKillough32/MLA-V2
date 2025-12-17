@@ -1,0 +1,142 @@
+{
+  "id": "medication_considerations_substance_misuse_disorder",
+  "name": "Medication considerations - Substance misuse disorder",
+  "domains": [
+    "Pre-operative Care"
+  ],
+  "generatedAt": "2025-12-17T21:14:30.993765",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Medication considerations - Substance misuse disorder: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSubstance misuse disorder (SMD) is a condition characterized by an individual's harmful or hazardous use of psychoactive substances, including alcohol and illicit drugs, leading to significant impairment or distress.\n\n### Epidemiology\nSMD affects millions globally, with prevalence rates varying by substance and population. In the UK, approximately 1 in 11 adults are estimated to have experienced a substance misuse problem at some point in their lives.\n\n### Essential Pathophysiology\nSMD involves complex interactions between genetic, environmental, and psychological factors. Neurobiological changes occur in the brain's reward pathways, leading to compulsive drug-seeking behavior and altered mood regulation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cravings for the substance\n- Withdrawal symptoms when not using\n- Inability to cut down or control use\n- Continued use despite negative consequences\n- Neglecting responsibilities\n\n### Key Signs\n- Changes in behavior or mood\n- Physical health issues (e.g., liver disease, respiratory problems)\n- Social withdrawal or isolation\n- Neglect of personal hygiene\n- Legal issues related to substance use\n\n### Atypical Presentations\n- Substance use may be hidden or minimized by the patient\n- Co-occurring mental health disorders (e.g., depression, anxiety)\n- Use of multiple substances simultaneously\n\n### Red Flags Requiring Immediate Action\n- Severe withdrawal symptoms (e.g., seizures, delirium tremens)\n- Overdose risk (e.g., respiratory depression, altered consciousness)\n- History of previous treatment failures\n- Suicidal ideation or self-harm\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Comprehensive history and physical examination\n- Screening tools (e.g., AUDIT, CAGE for alcohol use)\n- Urine drug screening\n\n### Second-line Investigations\n- Blood tests (e.g., liver function tests, full blood count)\n- Psychiatric assessment\n\n### Specialist Tests\n- CT/MRI of the brain if neurological symptoms present\n- Liver biopsy if liver disease suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 criteria, which include a pattern of substance use leading to significant impairment or distress, with at least two of the following occurring within a 12-month period: tolerance, withdrawal, using larger amounts over a longer period, unsuccessful attempts to cut down, significant time spent obtaining or using the substance, and continued use despite problems.\n\n### Key Differential Diagnoses to Exclude\n- Alcohol use disorder\n- Opioid use disorder\n- Cocaine use disorder\n- Benzodiazepine dependence\n- Mental health disorders (e.g., depression, anxiety)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (monitor vital signs, hydration)\n- Benzodiazepines for alcohol withdrawal\n- Naloxone for opioid overdose\n\n#### Second-line Treatments\n- Thiamine supplementation to prevent Wernicke's encephalopathy\n- Antipsychotics for severe agitation or psychosis\n\n#### Emergency Procedures\n- Intubation for severe respiratory depression\n- IV fluids for dehydration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Counseling and behavioral therapies (e.g., CBT, motivational interviewing)\n- Medications (e.g., methadone, buprenorphine for opioid use disorder)\n\n#### Second-line Treatments\n- Referral to specialist addiction services\n- Consideration of residential rehabilitation programs\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess progress\n- Monitoring for relapse and co-occurring disorders\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methadone\n- **Mechanism of Action**: Long-acting opioid agonist that reduces withdrawal symptoms and cravings.\n- **Typical Dosing Range**: Initial dose typically 10-30 mg, adjusted based on response.\n- **Key Side Effects/Contraindications**: Sedation, constipation, respiratory depression, potential for overdose.\n- **When to Use vs. Alternatives**: Requires careful monitoring and is usually dispensed through specialized clinics.\n\n#### Buprenorphine\n- **Mechanism of Action**: Partial opioid agonist that alleviates withdrawal symptoms with a ceiling effect to reduce overdose risk.\n- **Typical Dosing Range**: Initial dose 8-12 mg, can be adjusted based on clinical response.\n- **Key Side Effects/Contraindications**: Nausea, headache, constipation, potential for withdrawal if misused.\n- **When to Use vs. Alternatives**: Can be prescribed in outpatient settings.\n\n#### Naltrexone\n- **Mechanism of Action**: Opioid antagonist that blocks the effects of opioids and reduces cravings.\n- **Typical Dosing Range**: Oral form 50 mg daily; injectable form (Vivitrol) every 28 days.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness, potential liver toxicity.\n- **When to Use vs. Alternatives**: Not to be used in patients currently using opioids.\n\n### Procedures\n\n#### Detoxification\n- **What it Involves**: A medically supervised process to safely manage withdrawal symptoms as the patient stops using substances.\n- **Indications**: Severe dependence on alcohol or opioids, high risk of withdrawal complications.\n- **Key Risks/Complications**: Withdrawal seizures, delirium tremens, complications from co-occurring medical conditions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many individuals can achieve significant recovery and improve their quality of life. However, SMD is often a chronic condition with a risk of relapse.\n\n### Important Complications to Watch For\n- Liver disease (e.g., cirrhosis from alcohol)\n- Cardiovascular issues (e.g., heart disease from cocaine)\n- Infectious diseases (e.g., HIV, hepatitis from needle sharing)\n- Mental health disorders (e.g., depression, anxiety)\n- Overdose and death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of substance misuse, conduct initial assessments, provide supportive care, and refer patients to appropriate services. They should also be aware of the potential for withdrawal symptoms and manage them appropriately.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe withdrawal symptoms, overdose, or co-occurring medical issues, immediate escalation to senior medical staff or addiction specialists is necessary.\n\n### Key Safety Considerations\nAlways assess for co-occurring medical and psychiatric conditions. Monitor for signs of withdrawal and overdose, especially in patients with a history of substance misuse. Ensure safe prescribing practices and avoid polypharmacy that may exacerbate substance misuse.\n",
+  "content": {
+    "overview": {
+      "definition": "Substance misuse disorder (SMD) is a condition characterized by an individual's harmful or hazardous use of psychoactive substances, including alcohol and illicit drugs, leading to significant impairment or distress.",
+      "epidemiology": "SMD affects millions globally, with prevalence rates varying by substance and population. In the UK, approximately 1 in 11 adults are estimated to have experienced a substance misuse problem at some point in their lives.",
+      "pathophysiology": "SMD involves complex interactions between genetic, environmental, and psychological factors. Neurobiological changes occur in the brain's reward pathways, leading to compulsive drug-seeking behavior and altered mood regulation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cravings for the substance",
+        "Withdrawal symptoms when not using",
+        "Inability to cut down or control use",
+        "Continued use despite negative consequences",
+        "Neglecting responsibilities"
+      ],
+      "signs": [
+        "Changes in behavior or mood",
+        "Physical health issues (e.g., liver disease, respiratory problems)",
+        "Social withdrawal or isolation",
+        "Neglect of personal hygiene",
+        "Legal issues related to substance use"
+      ],
+      "atypicalPresentations": [
+        "Substance use may be hidden or minimized by the patient",
+        "Co-occurring mental health disorders (e.g., depression, anxiety)",
+        "Use of multiple substances simultaneously"
+      ],
+      "redFlags": [
+        "Severe withdrawal symptoms (e.g., seizures, delirium tremens)",
+        "Overdose risk (e.g., respiratory depression, altered consciousness)",
+        "History of previous treatment failures",
+        "Suicidal ideation or self-harm"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Comprehensive history and physical examination",
+        "Screening tools (e.g., AUDIT, CAGE for alcohol use)",
+        "Urine drug screening"
+      ],
+      "secondLine": [
+        "Blood tests (e.g., liver function tests, full blood count)",
+        "Psychiatric assessment"
+      ],
+      "specialistTests": [
+        "CT/MRI of the brain if neurological symptoms present",
+        "Liver biopsy if liver disease suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 criteria, which include a pattern of substance use leading to significant impairment or distress, with at least two of the following occurring within a 12-month period: tolerance, withdrawal, using larger amounts over a longer period, unsuccessful attempts to cut down, significant time spent obtaining or using the substance, and continued use despite problems.",
+      "differentials": [
+        "Alcohol use disorder",
+        "Opioid use disorder",
+        "Cocaine use disorder",
+        "Benzodiazepine dependence",
+        "Mental health disorders (e.g., depression, anxiety)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (monitor vital signs, hydration)",
+          "Benzodiazepines for alcohol withdrawal",
+          "Naloxone for opioid overdose"
+        ],
+        "secondLine": [
+          "Thiamine supplementation to prevent Wernicke's encephalopathy",
+          "Antipsychotics for severe agitation or psychosis"
+        ],
+        "procedures": [
+          "Intubation for severe respiratory depression",
+          "IV fluids for dehydration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Counseling and behavioral therapies (e.g., CBT, motivational interviewing)",
+          "Medications (e.g., methadone, buprenorphine for opioid use disorder)"
+        ],
+        "secondLine": [
+          "Referral to specialist addiction services",
+          "Consideration of residential rehabilitation programs"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess progress",
+          "Monitoring for relapse and co-occurring disorders"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methadone",
+          "mechanism": "Long-acting opioid agonist that reduces withdrawal symptoms and cravings.",
+          "dosing": "Initial dose typically 10-30 mg, adjusted based on response.",
+          "sideEffects": "Sedation, constipation, respiratory depression, potential for overdose.",
+          "notes": "Requires careful monitoring and is usually dispensed through specialized clinics."
+        },
+        {
+          "name": "Buprenorphine",
+          "mechanism": "Partial opioid agonist that alleviates withdrawal symptoms with a ceiling effect to reduce overdose risk.",
+          "dosing": "Initial dose 8-12 mg, can be adjusted based on clinical response.",
+          "sideEffects": "Nausea, headache, constipation, potential for withdrawal if misused.",
+          "notes": "Can be prescribed in outpatient settings."
+        },
+        {
+          "name": "Naltrexone",
+          "mechanism": "Opioid antagonist that blocks the effects of opioids and reduces cravings.",
+          "dosing": "Oral form 50 mg daily; injectable form (Vivitrol) every 28 days.",
+          "sideEffects": "Nausea, headache, dizziness, potential liver toxicity.",
+          "notes": "Not to be used in patients currently using opioids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Detoxification",
+          "description": "A medically supervised process to safely manage withdrawal symptoms as the patient stops using substances.",
+          "indications": "Severe dependence on alcohol or opioids, high risk of withdrawal complications.",
+          "risks": "Withdrawal seizures, delirium tremens, complications from co-occurring medical conditions."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many individuals can achieve significant recovery and improve their quality of life. However, SMD is often a chronic condition with a risk of relapse.",
+    "complications": [
+      "Liver disease (e.g., cirrhosis from alcohol)",
+      "Cardiovascular issues (e.g., heart disease from cocaine)",
+      "Infectious diseases (e.g., HIV, hepatitis from needle sharing)",
+      "Mental health disorders (e.g., depression, anxiety)",
+      "Overdose and death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of substance misuse, conduct initial assessments, provide supportive care, and refer patients to appropriate services. They should also be aware of the potential for withdrawal symptoms and manage them appropriately.",
+    "escalation": "If a patient presents with severe withdrawal symptoms, overdose, or co-occurring medical issues, immediate escalation to senior medical staff or addiction specialists is necessary.",
+    "keySafetyConsiderations": "Always assess for co-occurring medical and psychiatric conditions. Monitor for signs of withdrawal and overdose, especially in patients with a history of substance misuse. Ensure safe prescribing practices and avoid polypharmacy that may exacerbate substance misuse."
+  }
+}

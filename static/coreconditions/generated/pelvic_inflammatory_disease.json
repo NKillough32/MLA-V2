@@ -1,0 +1,131 @@
+{
+  "id": "pelvic_inflammatory_disease",
+  "name": "Pelvic inflammatory disease",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:52:45.832780",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pelvic inflammatory disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPelvic inflammatory disease (PID) is an infection of the female reproductive organs, including the uterus, fallopian tubes, and ovaries, often caused by sexually transmitted infections (STIs) such as Chlamydia trachomatis and Neisseria gonorrhoeae.\n\n### Epidemiology\nPID is a common condition affecting women of reproductive age, with an estimated incidence of 1 million cases annually in the United States. It is more prevalent in sexually active women under 25 years old and those with multiple sexual partners.\n\n### Essential Pathophysiology\nPID typically begins with the ascent of pathogens from the cervix into the upper reproductive tract, leading to inflammation and infection. This can result in scarring, abscess formation, and potential infertility due to damage to the fallopian tubes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Lower abdominal pain\n- Abnormal vaginal discharge\n- Fever\n- Dyspareunia (painful intercourse)\n- Menstrual irregularities\n\n### Key Signs\n- Tenderness on pelvic examination\n- Cervical motion tenderness\n- Adnexal tenderness\n- Fever (≥38°C)\n- Abdominal tenderness\n\n### Atypical Presentations\n- Asymptomatic PID\n- Severe abdominal pain without fever\n- Nausea and vomiting without fever\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- High fever\n- Signs of peritonitis (e.g., rebound tenderness)\n- Persistent vomiting\n- Signs of septic shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pelvic examination\n- Urine pregnancy test (to rule out ectopic pregnancy)\n- Cervical swabs for STI testing (Chlamydia and Gonorrhea)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Transvaginal ultrasound (to assess for abscess or other complications)\n- Laparoscopy (for direct visualization and possible treatment)\n\n### Specialist Tests\n- Endometrial biopsy (if endometritis is suspected)\n- MRI (if complicated PID is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PID is primarily clinical, based on the presence of lower abdominal pain and one or more of the following: cervical motion tenderness, uterine tenderness, or adnexal tenderness, in the absence of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Ectopic pregnancy\n- Appendicitis\n- Ovarian cyst rupture\n- Endometriosis\n- Urinary tract infection (UTI)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Empirical broad-spectrum antibiotics (e.g., Ceftriaxone 250 mg IM plus Doxycycline 100 mg orally twice daily for 14 days)\n- Pain management (NSAIDs)\n\n#### Second-line Treatments\n- Consider hospitalization for IV antibiotics if severe symptoms or complications are present.\n\n#### Emergency Procedures\n- Laparoscopy for drainage of abscess or if diagnosis is uncertain.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term follow-up and monitoring for complications such as infertility or chronic pelvic pain.\n\n#### Second-line Treatments\n- Referral to a specialist for persistent symptoms or complications.\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess for resolution of symptoms and complications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic effective against Gram-negative bacteria.\n- **Typical Dosing Range**: 250 mg IM as a single dose.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, and potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Often used in combination with Doxycycline for PID.\n\n#### Doxycycline\n- **Mechanism of Action**: Tetracycline antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 100 mg orally twice daily for 14 days.\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset, and potential for esophageal irritation.\n- **When to Use vs. Alternatives**: Effective against Chlamydia and Mycoplasma.\n\n### Procedures\n\n#### Laparoscopy\n- **What it Involves**: A minimally invasive surgical procedure to visualize the pelvic organs and potentially treat complications such as abscesses.\n- **Indications**: Uncertain diagnosis, severe PID, or failure to respond to medical management.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs, and anesthesia-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis for PID is generally good, but complications such as infertility, chronic pelvic pain, and ectopic pregnancy can occur, especially if treatment is delayed.\n\n### Important Complications to Watch For\n- Infertility\n- Chronic pelvic pain\n- Ectopic pregnancy\n- Abscess formation\n- Peritonitis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of PID, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, signs of peritonitis, or does not respond to initial treatment, escalate care to a senior clinician or gynecologist.\n\n### Key Safety Considerations\nEnsure to rule out ectopic pregnancy in any woman of childbearing age presenting with abdominal pain. Monitor for signs of severe infection or complications, and provide patient education on STI prevention and safe sexual practices.\n",
+  "content": {
+    "overview": {
+      "definition": "Pelvic inflammatory disease (PID) is an infection of the female reproductive organs, including the uterus, fallopian tubes, and ovaries, often caused by sexually transmitted infections (STIs) such as Chlamydia trachomatis and Neisseria gonorrhoeae.",
+      "epidemiology": "PID is a common condition affecting women of reproductive age, with an estimated incidence of 1 million cases annually in the United States. It is more prevalent in sexually active women under 25 years old and those with multiple sexual partners.",
+      "pathophysiology": "PID typically begins with the ascent of pathogens from the cervix into the upper reproductive tract, leading to inflammation and infection. This can result in scarring, abscess formation, and potential infertility due to damage to the fallopian tubes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Lower abdominal pain",
+        "Abnormal vaginal discharge",
+        "Fever",
+        "Dyspareunia (painful intercourse)",
+        "Menstrual irregularities"
+      ],
+      "signs": [
+        "Tenderness on pelvic examination",
+        "Cervical motion tenderness",
+        "Adnexal tenderness",
+        "Fever (≥38°C)",
+        "Abdominal tenderness"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic PID",
+        "Severe abdominal pain without fever",
+        "Nausea and vomiting without fever"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "High fever",
+        "Signs of peritonitis (e.g., rebound tenderness)",
+        "Persistent vomiting",
+        "Signs of septic shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pelvic examination",
+        "Urine pregnancy test (to rule out ectopic pregnancy)",
+        "Cervical swabs for STI testing (Chlamydia and Gonorrhea)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Transvaginal ultrasound (to assess for abscess or other complications)",
+        "Laparoscopy (for direct visualization and possible treatment)"
+      ],
+      "specialistTests": [
+        "Endometrial biopsy (if endometritis is suspected)",
+        "MRI (if complicated PID is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PID is primarily clinical, based on the presence of lower abdominal pain and one or more of the following: cervical motion tenderness, uterine tenderness, or adnexal tenderness, in the absence of other causes.",
+      "differentials": [
+        "Ectopic pregnancy",
+        "Appendicitis",
+        "Ovarian cyst rupture",
+        "Endometriosis",
+        "Urinary tract infection (UTI)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Empirical broad-spectrum antibiotics (e.g., Ceftriaxone 250 mg IM plus Doxycycline 100 mg orally twice daily for 14 days)",
+          "Pain management (NSAIDs)"
+        ],
+        "secondLine": [
+          "Consider hospitalization for IV antibiotics if severe symptoms or complications are present."
+        ],
+        "procedures": [
+          "Laparoscopy for drainage of abscess or if diagnosis is uncertain."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term follow-up and monitoring for complications such as infertility or chronic pelvic pain."
+        ],
+        "secondLine": [
+          "Referral to a specialist for persistent symptoms or complications."
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess for resolution of symptoms and complications."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic effective against Gram-negative bacteria.",
+          "dosing": "250 mg IM as a single dose.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, and potential for Clostridium difficile infection.",
+          "notes": "Often used in combination with Doxycycline for PID."
+        },
+        {
+          "name": "Doxycycline",
+          "mechanism": "Tetracycline antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "100 mg orally twice daily for 14 days.",
+          "sideEffects": "Photosensitivity, gastrointestinal upset, and potential for esophageal irritation.",
+          "notes": "Effective against Chlamydia and Mycoplasma."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparoscopy",
+          "description": "A minimally invasive surgical procedure to visualize the pelvic organs and potentially treat complications such as abscesses.",
+          "indications": "Uncertain diagnosis, severe PID, or failure to respond to medical management.",
+          "risks": "Infection, bleeding, injury to surrounding organs, and anesthesia-related complications."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis for PID is generally good, but complications such as infertility, chronic pelvic pain, and ectopic pregnancy can occur, especially if treatment is delayed.",
+    "complications": [
+      "Infertility",
+      "Chronic pelvic pain",
+      "Ectopic pregnancy",
+      "Abscess formation",
+      "Peritonitis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of PID, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to specialists when necessary.",
+    "escalation": "If a patient presents with severe symptoms, signs of peritonitis, or does not respond to initial treatment, escalate care to a senior clinician or gynecologist.",
+    "keySafetyConsiderations": "Ensure to rule out ectopic pregnancy in any woman of childbearing age presenting with abdominal pain. Monitor for signs of severe infection or complications, and provide patient education on STI prevention and safe sexual practices."
+  }
+}

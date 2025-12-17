@@ -1,0 +1,119 @@
+{
+  "id": "thyroid_nodules",
+  "name": "Thyroid nodules",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:33:11.679984",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thyroid nodules: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThyroid nodules are abnormal growths or lumps in the thyroid gland, which can be solid or fluid-filled. They are common and can be benign or malignant.\n\n### Epidemiology\nThyroid nodules are prevalent, with an estimated prevalence of 4-7% in the general population, increasing with age. They are more common in women than men, with a ratio of approximately 4:1.\n\n### Essential Pathophysiology\nThyroid nodules can arise from various causes, including hyperplasia, adenomas, cysts, and malignancies. Factors such as iodine deficiency, autoimmune diseases (like Hashimoto's thyroiditis), and genetic predispositions can contribute to their development.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Often asymptomatic; discovered incidentally on imaging or physical exam\n- Possible neck swelling or discomfort\n- Dysphagia (difficulty swallowing)\n- Hoarseness or voice changes\n- Thyroid dysfunction symptoms (hyperthyroidism or hypothyroidism)\n\n### Key Signs\n- Palpable nodule on physical examination\n- Thyroid enlargement (goiter)\n- Lymphadenopathy in the neck\n\n### Atypical Presentations\n- Nodules may be discovered incidentally on imaging for unrelated issues\n- Large nodules may cause compressive symptoms without significant thyroid dysfunction\n\n### Red Flags Requiring Immediate Action\n- Rapid growth of the nodule\n- Hard or fixed nodule on examination\n- Associated lymphadenopathy\n- History of radiation exposure to the neck\n- Family history of thyroid cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Thyroid function tests (TFTs) to assess for hyperthyroidism or hypothyroidism\n- Ultrasound of the thyroid to evaluate nodule characteristics (size, composition, vascularity)\n\n### Second-line Investigations\n- Fine needle aspiration (FNA) biopsy for cytological evaluation of suspicious nodules\n- Thyroid scan (radioactive iodine uptake) if hyperthyroidism is suspected\n\n### Specialist Tests\n- Thyroid hormone levels (T3, T4)\n- Calcitonin levels if medullary thyroid carcinoma is suspected\n- Genetic testing for familial syndromes (e.g., RET proto-oncogene for MEN2)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of thyroid nodules is based on clinical evaluation, imaging findings, and cytological analysis from FNA biopsy. A nodule is considered suspicious for malignancy based on size, ultrasound characteristics, and cytology results.\n\n### Key Differential Diagnoses to Exclude\n- Benign thyroid nodule (adenoma, colloid nodule)\n- Thyroid cyst\n- Thyroid cancer (papillary, follicular, medullary, anaplastic)\n- Lymphadenopathy (metastatic disease)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation for asymptomatic benign nodules\n- Thyroid hormone suppression therapy (levothyroxine) for large benign nodules to reduce size\n\n#### Second-line Treatments\n- Surgical consultation for nodules with suspicious features or significant symptoms\n\n#### Emergency Procedures\n- Fine needle aspiration (FNA) biopsy to obtain cytological samples for diagnosis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with ultrasound for benign nodules\n- Levothyroxine therapy for symptomatic benign nodules\n\n#### Second-line Treatments\n- Surgical intervention (lobectomy or total thyroidectomy) for malignant nodules or those with high suspicion of malignancy\n- Radioactive iodine therapy for hyperfunctioning nodules\n\n#### Monitoring Requirements\n- Regular follow-up with ultrasound every 6-12 months for benign nodules, depending on size and characteristics\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levothyroxine\n- **Mechanism of Action**: Synthetic form of thyroxine (T4) that regulates metabolism and growth\n- **Typical Dosing Range**: Initial: 1.6 mcg/kg/day; adjust based on TSH levels every 6-8 weeks\n- **Key Side Effects/Contraindications**: Hyperthyroidism symptoms (palpitations, weight loss, anxiety), osteoporosis with long-term use\n- **When to Use vs. Alternatives**: Monitor TSH levels regularly to ensure appropriate dosing.\n\n### Procedures\n\n#### Fine Needle Aspiration (FNA) Biopsy\n- **What it Involves**: A thin needle is inserted into the nodule to obtain cells for cytological examination.\n- **Indications**: Suspicious nodules based on size or ultrasound characteristics, or if there are concerning clinical features.\n- **Key Risks/Complications**: Bleeding, infection, discomfort at the site, false-negative results.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for thyroid nodules is generally good, especially for benign nodules. Malignant nodules have a variable prognosis depending on the type of cancer and stage at diagnosis.\n\n### Important Complications to Watch For\n- Malignancy (if the nodule is cancerous)\n- Compression symptoms (difficulty swallowing, breathing issues)\n- Hypothyroidism or hyperthyroidism due to treatment or underlying disease\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, and refer to specialists when necessary. They should also educate patients about the condition and management options.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist or surgeon if there are concerns about malignancy, rapid growth of the nodule, or significant compressive symptoms.\n\n### Key Safety Considerations\nEnsure appropriate follow-up for patients with thyroid nodules, especially those with suspicious features. Monitor for signs of thyroid dysfunction and educate patients on symptoms that warrant immediate medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Thyroid nodules are abnormal growths or lumps in the thyroid gland, which can be solid or fluid-filled. They are common and can be benign or malignant.",
+      "epidemiology": "Thyroid nodules are prevalent, with an estimated prevalence of 4-7% in the general population, increasing with age. They are more common in women than men, with a ratio of approximately 4:1.",
+      "pathophysiology": "Thyroid nodules can arise from various causes, including hyperplasia, adenomas, cysts, and malignancies. Factors such as iodine deficiency, autoimmune diseases (like Hashimoto's thyroiditis), and genetic predispositions can contribute to their development."
+    },
+    "recognition": {
+      "symptoms": [
+        "Often asymptomatic; discovered incidentally on imaging or physical exam",
+        "Possible neck swelling or discomfort",
+        "Dysphagia (difficulty swallowing)",
+        "Hoarseness or voice changes",
+        "Thyroid dysfunction symptoms (hyperthyroidism or hypothyroidism)"
+      ],
+      "signs": [
+        "Palpable nodule on physical examination",
+        "Thyroid enlargement (goiter)",
+        "Lymphadenopathy in the neck"
+      ],
+      "atypicalPresentations": [
+        "Nodules may be discovered incidentally on imaging for unrelated issues",
+        "Large nodules may cause compressive symptoms without significant thyroid dysfunction"
+      ],
+      "redFlags": [
+        "Rapid growth of the nodule",
+        "Hard or fixed nodule on examination",
+        "Associated lymphadenopathy",
+        "History of radiation exposure to the neck",
+        "Family history of thyroid cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Thyroid function tests (TFTs) to assess for hyperthyroidism or hypothyroidism",
+        "Ultrasound of the thyroid to evaluate nodule characteristics (size, composition, vascularity)"
+      ],
+      "secondLine": [
+        "Fine needle aspiration (FNA) biopsy for cytological evaluation of suspicious nodules",
+        "Thyroid scan (radioactive iodine uptake) if hyperthyroidism is suspected"
+      ],
+      "specialistTests": [
+        "Thyroid hormone levels (T3, T4)",
+        "Calcitonin levels if medullary thyroid carcinoma is suspected",
+        "Genetic testing for familial syndromes (e.g., RET proto-oncogene for MEN2)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of thyroid nodules is based on clinical evaluation, imaging findings, and cytological analysis from FNA biopsy. A nodule is considered suspicious for malignancy based on size, ultrasound characteristics, and cytology results.",
+      "differentials": [
+        "Benign thyroid nodule (adenoma, colloid nodule)",
+        "Thyroid cyst",
+        "Thyroid cancer (papillary, follicular, medullary, anaplastic)",
+        "Lymphadenopathy (metastatic disease)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation for asymptomatic benign nodules",
+          "Thyroid hormone suppression therapy (levothyroxine) for large benign nodules to reduce size"
+        ],
+        "secondLine": [
+          "Surgical consultation for nodules with suspicious features or significant symptoms"
+        ],
+        "procedures": [
+          "Fine needle aspiration (FNA) biopsy to obtain cytological samples for diagnosis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with ultrasound for benign nodules",
+          "Levothyroxine therapy for symptomatic benign nodules"
+        ],
+        "secondLine": [
+          "Surgical intervention (lobectomy or total thyroidectomy) for malignant nodules or those with high suspicion of malignancy",
+          "Radioactive iodine therapy for hyperfunctioning nodules"
+        ],
+        "monitoring": [
+          "Regular follow-up with ultrasound every 6-12 months for benign nodules, depending on size and characteristics"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levothyroxine",
+          "mechanism": "Synthetic form of thyroxine (T4) that regulates metabolism and growth",
+          "dosing": "Initial: 1.6 mcg/kg/day; adjust based on TSH levels every 6-8 weeks",
+          "sideEffects": "Hyperthyroidism symptoms (palpitations, weight loss, anxiety), osteoporosis with long-term use",
+          "notes": "Monitor TSH levels regularly to ensure appropriate dosing."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fine Needle Aspiration (FNA) Biopsy",
+          "description": "A thin needle is inserted into the nodule to obtain cells for cytological examination.",
+          "indications": "Suspicious nodules based on size or ultrasound characteristics, or if there are concerning clinical features.",
+          "risks": "Bleeding, infection, discomfort at the site, false-negative results."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for thyroid nodules is generally good, especially for benign nodules. Malignant nodules have a variable prognosis depending on the type of cancer and stage at diagnosis.",
+    "complications": [
+      "Malignancy (if the nodule is cancerous)",
+      "Compression symptoms (difficulty swallowing, breathing issues)",
+      "Hypothyroidism or hyperthyroidism due to treatment or underlying disease"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, and refer to specialists when necessary. They should also educate patients about the condition and management options.",
+    "escalation": "Refer to an endocrinologist or surgeon if there are concerns about malignancy, rapid growth of the nodule, or significant compressive symptoms.",
+    "keySafetyConsiderations": "Ensure appropriate follow-up for patients with thyroid nodules, especially those with suspicious features. Monitor for signs of thyroid dysfunction and educate patients on symptoms that warrant immediate medical attention."
+  }
+}

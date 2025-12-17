@@ -1,0 +1,132 @@
+{
+  "id": "subdural_haemorrhage",
+  "name": "Subdural haemorrhage",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:45:38.164551",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Subdural haemorrhage: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSubdural haemorrhage (SDH) is a collection of blood between the dura mater and the arachnoid mater, typically resulting from tearing of bridging veins due to trauma or other causes.\n\n### Epidemiology\nSDH is more common in the elderly, particularly those on anticoagulants, and in individuals with a history of head trauma. It can occur in both acute and chronic forms, with chronic SDH being more prevalent in older adults.\n\n### Essential Pathophysiology\nThe pathophysiology involves the rupture of bridging veins, leading to blood accumulation in the subdural space. This can occur acutely after a traumatic event or chronically due to gradual venous tearing, often exacerbated by atrophy of the brain in older patients.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headache\n- Confusion\n- Dizziness\n- Nausea and vomiting\n- Altered consciousness\n- Seizures\n\n### Key Signs\n- Altered mental status\n- Focal neurological deficits\n- Signs of increased intracranial pressure (e.g., papilledema)\n- Bradycardia and hypertension (Cushing's triad)\n\n### Atypical Presentations\n- Asymptomatic in chronic cases\n- Subacute presentation with gradual worsening of symptoms\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration of consciousness\n- Severe headache with sudden onset\n- Focal neurological signs\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (non-contrast)\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive)\n- Coagulation profile (PT, aPTT, INR)\n\n### Specialist Tests\n- Angiography (if vascular injury is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on imaging findings of crescent-shaped hyperdense areas on CT, along with clinical symptoms and history of trauma.\n\n### Key Differential Diagnoses to Exclude\n- Epidural haemorrhage\n- Intracerebral haemorrhage\n- Subarachnoid haemorrhage\n- Brain tumor\n- Meningitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Neurosurgical consultation for possible evacuation\n- Monitoring in a high-dependency unit\n\n#### Second-line Treatments\n- Medical management of intracranial pressure (e.g., mannitol)\n\n#### Emergency Procedures\n- Craniotomy or burr hole drainage for significant SDH\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Observation if asymptomatic or mild symptoms\n- Surgical intervention if symptomatic\n\n#### Second-line Treatments\n- Repeat imaging to monitor progression\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- CT scans to evaluate size of the haematoma\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30-60 minutes, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal failure.\n- **When to Use vs. Alternatives**: Monitor serum osmolality and renal function.\n\n#### Antiepileptics (e.g., Phenytoin)\n- **Mechanism of Action**: Prevention of seizures in patients with significant SDH.\n- **Typical Dosing Range**: Loading dose of 15-20 mg/kg IV, followed by maintenance of 300 mg/day.\n- **Key Side Effects/Contraindications**: Gingival hyperplasia, ataxia, rash.\n- **When to Use vs. Alternatives**: Monitor levels and adjust dosing based on serum concentration.\n\n### Procedures\n\n#### Craniotomy\n- **What it Involves**: Surgical procedure to remove a portion of the skull to access the brain for evacuation of the haematoma.\n- **Indications**: Significant mass effect, deteriorating neurological status, or large SDH.\n- **Key Risks/Complications**: Infection, bleeding, neurological deficits, seizures.\n\n#### Burr hole drainage\n- **What it Involves**: Minimally invasive procedure to create a small hole in the skull to drain the haematoma.\n- **Indications**: Chronic SDH with symptoms or significant mass effect.\n- **Key Risks/Complications**: Infection, recurrence of haematoma, neurological deficits.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of SDH varies; acute SDH has a higher mortality rate, especially in the elderly, while chronic SDH can have a good outcome with appropriate management.\n\n### Important Complications to Watch For\n- Rebleeding\n- Infection\n- Seizures\n- Chronic headache\n- Neurological deficits\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of SDH, performing initial assessments, and ensuring timely imaging and referral to neurosurgery. They should also monitor patients post-operatively for complications.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to a senior clinician or neurosurgical team is required for patients with deteriorating neurological status, significant mass effect on imaging, or those presenting with red flags.\n\n### Key Safety Considerations\nEnsure proper monitoring of neurological status, watch for signs of increased intracranial pressure, and be aware of anticoagulant use in patients. Prompt imaging and surgical intervention are critical in acute cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Subdural haemorrhage (SDH) is a collection of blood between the dura mater and the arachnoid mater, typically resulting from tearing of bridging veins due to trauma or other causes.",
+      "epidemiology": "SDH is more common in the elderly, particularly those on anticoagulants, and in individuals with a history of head trauma. It can occur in both acute and chronic forms, with chronic SDH being more prevalent in older adults.",
+      "pathophysiology": "The pathophysiology involves the rupture of bridging veins, leading to blood accumulation in the subdural space. This can occur acutely after a traumatic event or chronically due to gradual venous tearing, often exacerbated by atrophy of the brain in older patients."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headache",
+        "Confusion",
+        "Dizziness",
+        "Nausea and vomiting",
+        "Altered consciousness",
+        "Seizures"
+      ],
+      "signs": [
+        "Altered mental status",
+        "Focal neurological deficits",
+        "Signs of increased intracranial pressure (e.g., papilledema)",
+        "Bradycardia and hypertension (Cushing's triad)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in chronic cases",
+        "Subacute presentation with gradual worsening of symptoms"
+      ],
+      "redFlags": [
+        "Rapid deterioration of consciousness",
+        "Severe headache with sudden onset",
+        "Focal neurological signs"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (non-contrast)"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive)",
+        "Coagulation profile (PT, aPTT, INR)"
+      ],
+      "specialistTests": [
+        "Angiography (if vascular injury is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on imaging findings of crescent-shaped hyperdense areas on CT, along with clinical symptoms and history of trauma.",
+      "differentials": [
+        "Epidural haemorrhage",
+        "Intracerebral haemorrhage",
+        "Subarachnoid haemorrhage",
+        "Brain tumor",
+        "Meningitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Neurosurgical consultation for possible evacuation",
+          "Monitoring in a high-dependency unit"
+        ],
+        "secondLine": [
+          "Medical management of intracranial pressure (e.g., mannitol)"
+        ],
+        "procedures": [
+          "Craniotomy or burr hole drainage for significant SDH"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Observation if asymptomatic or mild symptoms",
+          "Surgical intervention if symptomatic"
+        ],
+        "secondLine": [
+          "Repeat imaging to monitor progression"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "CT scans to evaluate size of the haematoma"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.",
+          "dosing": "1-2 g/kg IV over 30-60 minutes, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal failure.",
+          "notes": "Monitor serum osmolality and renal function."
+        },
+        {
+          "name": "Antiepileptics (e.g., Phenytoin)",
+          "mechanism": "Prevention of seizures in patients with significant SDH.",
+          "dosing": "Loading dose of 15-20 mg/kg IV, followed by maintenance of 300 mg/day.",
+          "sideEffects": "Gingival hyperplasia, ataxia, rash.",
+          "notes": "Monitor levels and adjust dosing based on serum concentration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Craniotomy",
+          "description": "Surgical procedure to remove a portion of the skull to access the brain for evacuation of the haematoma.",
+          "indications": "Significant mass effect, deteriorating neurological status, or large SDH.",
+          "risks": "Infection, bleeding, neurological deficits, seizures."
+        },
+        {
+          "name": "Burr hole drainage",
+          "description": "Minimally invasive procedure to create a small hole in the skull to drain the haematoma.",
+          "indications": "Chronic SDH with symptoms or significant mass effect.",
+          "risks": "Infection, recurrence of haematoma, neurological deficits."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of SDH varies; acute SDH has a higher mortality rate, especially in the elderly, while chronic SDH can have a good outcome with appropriate management.",
+    "complications": [
+      "Rebleeding",
+      "Infection",
+      "Seizures",
+      "Chronic headache",
+      "Neurological deficits"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of SDH, performing initial assessments, and ensuring timely imaging and referral to neurosurgery. They should also monitor patients post-operatively for complications.",
+    "escalation": "Immediate escalation to a senior clinician or neurosurgical team is required for patients with deteriorating neurological status, significant mass effect on imaging, or those presenting with red flags.",
+    "keySafetyConsiderations": "Ensure proper monitoring of neurological status, watch for signs of increased intracranial pressure, and be aware of anticoagulant use in patients. Prompt imaging and surgical intervention are critical in acute cases."
+  }
+}

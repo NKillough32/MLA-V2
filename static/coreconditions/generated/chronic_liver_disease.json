@@ -1,0 +1,155 @@
+{
+  "id": "chronic_liver_disease",
+  "name": "Chronic liver disease",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:59:37.013443",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic liver disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic liver disease (CLD) refers to a spectrum of liver disorders characterized by progressive liver damage and dysfunction over a period of six months or longer. It encompasses conditions such as cirrhosis, hepatitis, fatty liver disease, and liver fibrosis.\n\n### Epidemiology\nCLD is a significant global health issue, affecting approximately 1 in 10 adults. Common causes include viral hepatitis (B and C), alcohol-related liver disease, non-alcoholic fatty liver disease (NAFLD), and autoimmune liver diseases. The prevalence is increasing due to rising obesity rates and viral infections.\n\n### Essential Pathophysiology\nChronic liver disease results from ongoing liver injury leading to inflammation, fibrosis, and ultimately cirrhosis. The liver's regenerative capacity is overwhelmed, leading to scarring and impaired function. This can result in portal hypertension, liver failure, and hepatocellular carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Jaundice\n- Abdominal pain\n- Nausea and vomiting\n- Pruritus\n- Weight loss\n- Ascites\n\n### Key Signs\n- Hepatomegaly\n- Splenomegaly\n- Palmar erythema\n- Spider angiomata\n- Asterixis\n- Caput medusae\n- Ascites\n\n### Atypical Presentations\n- Cognitive changes (hepatic encephalopathy)\n- Bleeding tendencies (coagulopathy)\n- Gynecomastia in males\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in liver function\n- Severe abdominal pain\n- Signs of hepatic encephalopathy\n- Gastrointestinal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Full blood count (FBC)\n- Coagulation profile\n- Hepatitis serology (HBV, HCV)\n- Ultrasound abdomen\n\n### Second-line Investigations\n- Liver biopsy (if indicated)\n- CT or MRI abdomen\n- FibroScan (transient elastography)\n\n### Specialist Tests\n- Alpha-1 antitrypsin level\n- Ceruloplasmin (for Wilson's disease)\n- Autoimmune markers (ANA, ASMA)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of chronic liver disease is based on clinical history, laboratory tests, imaging studies, and sometimes liver biopsy. Key indicators include persistent elevation of liver enzymes, presence of fibrosis on imaging or biopsy, and clinical signs of liver dysfunction.\n\n### Key Differential Diagnoses to Exclude\n- Acute liver failure\n- Alcoholic liver disease\n- Non-alcoholic fatty liver disease (NAFLD)\n- Hepatitis (viral, autoimmune)\n- Hemochromatosis\n- Wilson's disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, nutrition)\n- Management of complications (e.g., diuretics for ascites)\n\n#### Second-line Treatments\n- Consideration for liver transplant evaluation if acute on chronic liver failure\n\n#### Emergency Procedures\n- Paracentesis for ascites\n- Endoscopy for variceal bleeding\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (alcohol cessation, weight loss)\n- Management of underlying cause (e.g., antiviral therapy for hepatitis)\n\n#### Second-line Treatments\n- Consideration for liver transplant evaluation in advanced disease\n\n#### Monitoring Requirements\n- Regular LFTs and imaging to assess liver function and complications\n- Screening for hepatocellular carcinoma (HCC) in cirrhosis patients\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sofosbuvir\n- **Mechanism of Action**: Direct-acting antiviral for hepatitis C\n- **Typical Dosing Range**: 400 mg orally once daily\n- **Key Side Effects/Contraindications**: Fatigue, headache, nausea\n- **When to Use vs. Alternatives**: Used in combination with other antivirals for hepatitis C treatment.\n\n#### Ursodeoxycholic acid\n- **Mechanism of Action**: Improves bile flow and reduces liver inflammation\n- **Typical Dosing Range**: 13-15 mg/kg/day\n- **Key Side Effects/Contraindications**: Diarrhea, abdominal pain\n- **When to Use vs. Alternatives**: Used in primary biliary cholangitis.\n\n#### Diuretics (e.g., Spironolactone)\n- **Mechanism of Action**: Aldosterone antagonist, reduces fluid retention\n- **Typical Dosing Range**: Start at 100 mg daily, titrate as needed\n- **Key Side Effects/Contraindications**: Hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: Used for managing ascites.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: Procedure to remove fluid from the abdominal cavity\n- **Indications**: Diagnostic or therapeutic for ascites\n- **Key Risks/Complications**: Infection, bleeding, bowel perforation\n\n#### Endoscopy (variceal band ligation)\n- **What it Involves**: Procedure to ligate esophageal varices to prevent bleeding\n- **Indications**: Presence of varices in portal hypertension\n- **Key Risks/Complications**: Bleeding, perforation, infection\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of chronic liver disease varies widely depending on the underlying cause, stage of disease, and presence of complications. Early detection and management can significantly improve outcomes. Cirrhosis carries a high risk of liver failure and hepatocellular carcinoma.\n\n### Important Complications to Watch For\n- Portal hypertension\n- Ascites\n- Hepatic encephalopathy\n- Variceal bleeding\n- Liver cancer (hepatocellular carcinoma)\n- Coagulopathy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs and symptoms of chronic liver disease, perform initial investigations, manage acute complications, and refer patients for specialist care when necessary. They should also educate patients on lifestyle modifications and the importance of follow-up care.\n\n### When to Escalate to Senior/Specialist\nPatients with signs of acute liver failure, severe hepatic encephalopathy, or significant gastrointestinal bleeding should be escalated to a senior clinician or gastroenterologist immediately.\n\n### Key Safety Considerations\nMonitor for signs of liver failure, manage electrolyte imbalances, and ensure appropriate follow-up for patients with chronic liver disease. Be vigilant for complications such as variceal bleeding and hepatic encephalopathy.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic liver disease (CLD) refers to a spectrum of liver disorders characterized by progressive liver damage and dysfunction over a period of six months or longer. It encompasses conditions such as cirrhosis, hepatitis, fatty liver disease, and liver fibrosis.",
+      "epidemiology": "CLD is a significant global health issue, affecting approximately 1 in 10 adults. Common causes include viral hepatitis (B and C), alcohol-related liver disease, non-alcoholic fatty liver disease (NAFLD), and autoimmune liver diseases. The prevalence is increasing due to rising obesity rates and viral infections.",
+      "pathophysiology": "Chronic liver disease results from ongoing liver injury leading to inflammation, fibrosis, and ultimately cirrhosis. The liver's regenerative capacity is overwhelmed, leading to scarring and impaired function. This can result in portal hypertension, liver failure, and hepatocellular carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Jaundice",
+        "Abdominal pain",
+        "Nausea and vomiting",
+        "Pruritus",
+        "Weight loss",
+        "Ascites"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Palmar erythema",
+        "Spider angiomata",
+        "Asterixis",
+        "Caput medusae",
+        "Ascites"
+      ],
+      "atypicalPresentations": [
+        "Cognitive changes (hepatic encephalopathy)",
+        "Bleeding tendencies (coagulopathy)",
+        "Gynecomastia in males"
+      ],
+      "redFlags": [
+        "Rapid deterioration in liver function",
+        "Severe abdominal pain",
+        "Signs of hepatic encephalopathy",
+        "Gastrointestinal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Full blood count (FBC)",
+        "Coagulation profile",
+        "Hepatitis serology (HBV, HCV)",
+        "Ultrasound abdomen"
+      ],
+      "secondLine": [
+        "Liver biopsy (if indicated)",
+        "CT or MRI abdomen",
+        "FibroScan (transient elastography)"
+      ],
+      "specialistTests": [
+        "Alpha-1 antitrypsin level",
+        "Ceruloplasmin (for Wilson's disease)",
+        "Autoimmune markers (ANA, ASMA)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of chronic liver disease is based on clinical history, laboratory tests, imaging studies, and sometimes liver biopsy. Key indicators include persistent elevation of liver enzymes, presence of fibrosis on imaging or biopsy, and clinical signs of liver dysfunction.",
+      "differentials": [
+        "Acute liver failure",
+        "Alcoholic liver disease",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Hepatitis (viral, autoimmune)",
+        "Hemochromatosis",
+        "Wilson's disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, nutrition)",
+          "Management of complications (e.g., diuretics for ascites)"
+        ],
+        "secondLine": [
+          "Consideration for liver transplant evaluation if acute on chronic liver failure"
+        ],
+        "procedures": [
+          "Paracentesis for ascites",
+          "Endoscopy for variceal bleeding"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (alcohol cessation, weight loss)",
+          "Management of underlying cause (e.g., antiviral therapy for hepatitis)"
+        ],
+        "secondLine": [
+          "Consideration for liver transplant evaluation in advanced disease"
+        ],
+        "monitoring": [
+          "Regular LFTs and imaging to assess liver function and complications",
+          "Screening for hepatocellular carcinoma (HCC) in cirrhosis patients"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sofosbuvir",
+          "mechanism": "Direct-acting antiviral for hepatitis C",
+          "dosing": "400 mg orally once daily",
+          "sideEffects": "Fatigue, headache, nausea",
+          "notes": "Used in combination with other antivirals for hepatitis C treatment."
+        },
+        {
+          "name": "Ursodeoxycholic acid",
+          "mechanism": "Improves bile flow and reduces liver inflammation",
+          "dosing": "13-15 mg/kg/day",
+          "sideEffects": "Diarrhea, abdominal pain",
+          "notes": "Used in primary biliary cholangitis."
+        },
+        {
+          "name": "Diuretics (e.g., Spironolactone)",
+          "mechanism": "Aldosterone antagonist, reduces fluid retention",
+          "dosing": "Start at 100 mg daily, titrate as needed",
+          "sideEffects": "Hyperkalemia, renal impairment",
+          "notes": "Used for managing ascites."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "Procedure to remove fluid from the abdominal cavity",
+          "indications": "Diagnostic or therapeutic for ascites",
+          "risks": "Infection, bleeding, bowel perforation"
+        },
+        {
+          "name": "Endoscopy (variceal band ligation)",
+          "description": "Procedure to ligate esophageal varices to prevent bleeding",
+          "indications": "Presence of varices in portal hypertension",
+          "risks": "Bleeding, perforation, infection"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of chronic liver disease varies widely depending on the underlying cause, stage of disease, and presence of complications. Early detection and management can significantly improve outcomes. Cirrhosis carries a high risk of liver failure and hepatocellular carcinoma.",
+    "complications": [
+      "Portal hypertension",
+      "Ascites",
+      "Hepatic encephalopathy",
+      "Variceal bleeding",
+      "Liver cancer (hepatocellular carcinoma)",
+      "Coagulopathy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs and symptoms of chronic liver disease, perform initial investigations, manage acute complications, and refer patients for specialist care when necessary. They should also educate patients on lifestyle modifications and the importance of follow-up care.",
+    "escalation": "Patients with signs of acute liver failure, severe hepatic encephalopathy, or significant gastrointestinal bleeding should be escalated to a senior clinician or gastroenterologist immediately.",
+    "keySafetyConsiderations": "Monitor for signs of liver failure, manage electrolyte imbalances, and ensure appropriate follow-up for patients with chronic liver disease. Be vigilant for complications such as variceal bleeding and hepatic encephalopathy."
+  }
+}

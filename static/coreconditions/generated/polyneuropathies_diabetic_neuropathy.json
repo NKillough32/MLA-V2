@@ -1,0 +1,138 @@
+{
+  "id": "polyneuropathies_diabetic_neuropathy",
+  "name": "Polyneuropathies - Diabetic neuropathy?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:51:07.829464",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polyneuropathies - Diabetic neuropathy?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetic neuropathy is a type of nerve damage that occurs in individuals with diabetes, primarily due to prolonged hyperglycemia leading to metabolic and vascular changes affecting peripheral nerves.\n\n### Epidemiology\nDiabetic neuropathy affects approximately 50% of patients with diabetes, with prevalence increasing with the duration of diabetes and poor glycemic control.\n\n### Essential Pathophysiology\nThe pathophysiology involves a combination of metabolic factors (such as hyperglycemia, oxidative stress, and advanced glycation end-products) and vascular factors (such as ischemia due to small vessel disease), leading to nerve damage and dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Numbness or tingling in the extremities\n- Burning pain\n- Loss of sensation\n- Muscle weakness\n- Impaired balance\n\n### Key Signs\n- Decreased deep tendon reflexes\n- Sensory loss (vibration, pinprick, temperature)\n- Muscle atrophy in advanced cases\n- Autonomic dysfunction (e.g., orthostatic hypotension, gastroparesis)\n\n### Atypical Presentations\n- Painful diabetic neuropathy (more severe pain symptoms)\n- Mononeuropathy (single nerve involvement, e.g., carpal tunnel syndrome)\n- Diabetic amyotrophy (proximal muscle weakness)\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe pain\n- Signs of infection (e.g., foot ulcers)\n- Acute weakness or paralysis\n- Signs of autonomic dysfunction (e.g., severe orthostatic hypotension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and examination\n- Monofilament test\n- Vibration perception threshold (VPT) testing\n\n### Second-line Investigations\n- Nerve conduction studies (NCS)\n- Electromyography (EMG)\n\n### Specialist Tests\n- Skin biopsy for intraepidermal nerve fiber density\n- Quantitative sensory testing (QST)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical symptoms, neurological examination findings, and supportive tests (e.g., NCS).\n\n### Key Differential Diagnoses to Exclude\n- Peripheral vascular disease\n- Multiple sclerosis\n- Vitamin B12 deficiency\n- Hypothyroidism\n- Alcoholic neuropathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Optimize glycemic control\n- Pain management (e.g., gabapentin, pregabalin)\n\n#### Second-line Treatments\n- Consider tricyclic antidepressants (e.g., amitriptyline)\n- Topical treatments (e.g., capsaicin cream)\n\n#### Emergency Procedures\n- Nerve blocks for severe pain management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued glycemic control\n- Regular foot care and monitoring\n\n#### Second-line Treatments\n- Physical therapy for muscle weakness\n- Occupational therapy for daily living skills\n\n#### Monitoring Requirements\n- Regular follow-up for glycemic control and neuropathy progression\n- Foot examinations every 6-12 months\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Gabapentin\n- **Mechanism of Action**: Calcium channel modulator that inhibits excitatory neurotransmitter release.\n- **Typical Dosing Range**: Start at 300 mg/day, titrate up to 900-1800 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema.\n- **When to Use vs. Alternatives**: Monitor renal function; adjust dose in renal impairment.\n\n#### Pregabalin\n- **Mechanism of Action**: Calcium channel alpha-2-delta ligand that reduces neurotransmitter release.\n- **Typical Dosing Range**: Start at 150 mg/day, titrate up to 300-600 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Dizziness, somnolence, weight gain.\n- **When to Use vs. Alternatives**: Monitor for signs of misuse or dependence.\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that inhibits norepinephrine and serotonin reuptake.\n- **Typical Dosing Range**: Start at 10-25 mg at bedtime, titrate up to 75-150 mg as tolerated.\n- **Key Side Effects/Contraindications**: Dry mouth, constipation, sedation, weight gain.\n- **When to Use vs. Alternatives**: Caution in elderly and those with cardiac issues.\n\n### Procedures\n\n#### Nerve block\n- **What it Involves**: Injection of anesthetic near a nerve to relieve pain.\n- **Indications**: Severe neuropathic pain not controlled by medications.\n- **Key Risks/Complications**: Infection, bleeding, nerve damage, temporary weakness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies; early detection and management can slow progression. Some patients may experience significant improvement with treatment, while others may have persistent symptoms.\n\n### Important Complications to Watch For\n- Foot ulcers and infections\n- Charcot joint disease\n- Increased risk of falls due to balance issues\n- Autonomic dysfunction leading to cardiovascular issues\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage glycemic control, recognize complications, and refer to specialists as needed. They should also educate patients on foot care and lifestyle modifications.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist for severe cases, atypical presentations, or when there is a lack of response to initial management.\n\n### Key Safety Considerations\nMonitor for signs of foot ulcers and infections, especially in patients with loss of sensation. Ensure regular follow-up for glycemic control and neuropathy progression.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetic neuropathy is a type of nerve damage that occurs in individuals with diabetes, primarily due to prolonged hyperglycemia leading to metabolic and vascular changes affecting peripheral nerves.",
+      "epidemiology": "Diabetic neuropathy affects approximately 50% of patients with diabetes, with prevalence increasing with the duration of diabetes and poor glycemic control.",
+      "pathophysiology": "The pathophysiology involves a combination of metabolic factors (such as hyperglycemia, oxidative stress, and advanced glycation end-products) and vascular factors (such as ischemia due to small vessel disease), leading to nerve damage and dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Numbness or tingling in the extremities",
+        "Burning pain",
+        "Loss of sensation",
+        "Muscle weakness",
+        "Impaired balance"
+      ],
+      "signs": [
+        "Decreased deep tendon reflexes",
+        "Sensory loss (vibration, pinprick, temperature)",
+        "Muscle atrophy in advanced cases",
+        "Autonomic dysfunction (e.g., orthostatic hypotension, gastroparesis)"
+      ],
+      "atypicalPresentations": [
+        "Painful diabetic neuropathy (more severe pain symptoms)",
+        "Mononeuropathy (single nerve involvement, e.g., carpal tunnel syndrome)",
+        "Diabetic amyotrophy (proximal muscle weakness)"
+      ],
+      "redFlags": [
+        "Sudden onset of severe pain",
+        "Signs of infection (e.g., foot ulcers)",
+        "Acute weakness or paralysis",
+        "Signs of autonomic dysfunction (e.g., severe orthostatic hypotension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and examination",
+        "Monofilament test",
+        "Vibration perception threshold (VPT) testing"
+      ],
+      "secondLine": [
+        "Nerve conduction studies (NCS)",
+        "Electromyography (EMG)"
+      ],
+      "specialistTests": [
+        "Skin biopsy for intraepidermal nerve fiber density",
+        "Quantitative sensory testing (QST)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical symptoms, neurological examination findings, and supportive tests (e.g., NCS).",
+      "differentials": [
+        "Peripheral vascular disease",
+        "Multiple sclerosis",
+        "Vitamin B12 deficiency",
+        "Hypothyroidism",
+        "Alcoholic neuropathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Optimize glycemic control",
+          "Pain management (e.g., gabapentin, pregabalin)"
+        ],
+        "secondLine": [
+          "Consider tricyclic antidepressants (e.g., amitriptyline)",
+          "Topical treatments (e.g., capsaicin cream)"
+        ],
+        "procedures": [
+          "Nerve blocks for severe pain management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued glycemic control",
+          "Regular foot care and monitoring"
+        ],
+        "secondLine": [
+          "Physical therapy for muscle weakness",
+          "Occupational therapy for daily living skills"
+        ],
+        "monitoring": [
+          "Regular follow-up for glycemic control and neuropathy progression",
+          "Foot examinations every 6-12 months"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Gabapentin",
+          "mechanism": "Calcium channel modulator that inhibits excitatory neurotransmitter release.",
+          "dosing": "Start at 300 mg/day, titrate up to 900-1800 mg/day as tolerated.",
+          "sideEffects": "Dizziness, sedation, peripheral edema.",
+          "notes": "Monitor renal function; adjust dose in renal impairment."
+        },
+        {
+          "name": "Pregabalin",
+          "mechanism": "Calcium channel alpha-2-delta ligand that reduces neurotransmitter release.",
+          "dosing": "Start at 150 mg/day, titrate up to 300-600 mg/day as tolerated.",
+          "sideEffects": "Dizziness, somnolence, weight gain.",
+          "notes": "Monitor for signs of misuse or dependence."
+        },
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that inhibits norepinephrine and serotonin reuptake.",
+          "dosing": "Start at 10-25 mg at bedtime, titrate up to 75-150 mg as tolerated.",
+          "sideEffects": "Dry mouth, constipation, sedation, weight gain.",
+          "notes": "Caution in elderly and those with cardiac issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nerve block",
+          "description": "Injection of anesthetic near a nerve to relieve pain.",
+          "indications": "Severe neuropathic pain not controlled by medications.",
+          "risks": "Infection, bleeding, nerve damage, temporary weakness."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies; early detection and management can slow progression. Some patients may experience significant improvement with treatment, while others may have persistent symptoms.",
+    "complications": [
+      "Foot ulcers and infections",
+      "Charcot joint disease",
+      "Increased risk of falls due to balance issues",
+      "Autonomic dysfunction leading to cardiovascular issues"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage glycemic control, recognize complications, and refer to specialists as needed. They should also educate patients on foot care and lifestyle modifications.",
+    "escalation": "Refer to a neurologist for severe cases, atypical presentations, or when there is a lack of response to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of foot ulcers and infections, especially in patients with loss of sensation. Ensure regular follow-up for glycemic control and neuropathy progression."
+  }
+}

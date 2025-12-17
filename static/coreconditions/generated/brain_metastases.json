@@ -1,0 +1,127 @@
+{
+  "id": "brain_metastases",
+  "name": "Brain metastases?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:16:03.789303",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Brain metastases?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBrain metastases are secondary brain tumors that arise from cancer cells originating in other parts of the body. They are the most common type of brain tumor in adults.\n\n### Epidemiology\nBrain metastases occur in approximately 20-40% of patients with systemic cancer, with lung, breast, and melanoma being the most common primary sources.\n\n### Essential Pathophysiology\nCancer cells spread to the brain through the bloodstream or lymphatic system. Once in the brain, they can proliferate and form tumors, leading to increased intracranial pressure and neurological deficits.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Seizures\n- Cognitive changes (confusion, memory loss)\n- Focal neurological deficits (weakness, sensory loss)\n- Nausea and vomiting\n\n### Key Signs\n- Altered mental status\n- Neurological deficits (e.g., hemiparesis, aphasia)\n- Papilledema\n- Cranial nerve deficits\n\n### Atypical Presentations\n- Personality changes\n- Behavioral changes\n- Visual disturbances\n\n### Red Flags Requiring Immediate Action\n- New-onset seizures in adults\n- Rapidly progressive neurological symptoms\n- Severe headache with sudden onset\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- MRI of the brain with contrast\n- CT scan of the brain\n\n### Second-line Investigations\n- PET scan\n- CT chest/abdomen/pelvis to identify primary malignancy\n\n### Specialist Tests\n- Biopsy of brain lesion (if indicated)\n- Lumbar puncture (if leptomeningeal disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on imaging findings consistent with metastatic lesions, clinical history of cancer, and exclusion of primary brain tumors.\n\n### Key Differential Diagnoses to Exclude\n- Primary brain tumors (e.g., glioblastoma)\n- Cerebral abscess\n- Multiple sclerosis\n- Vascular malformations (e.g., arteriovenous malformations)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., dexamethasone) to reduce edema\n- Anticonvulsants for seizure prophylaxis\n\n#### Second-line Treatments\n- Surgical intervention (e.g., craniotomy for resection) if accessible and indicated\n- Radiation therapy (e.g., whole brain radiation therapy or stereotactic radiosurgery)\n\n#### Emergency Procedures\n- Stereotactic radiosurgery (SRS): A non-invasive procedure that delivers high doses of radiation to the tumor while sparing surrounding healthy tissue. Indicated for patients with limited brain metastases and good performance status. Risks include radiation necrosis and fatigue.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Systemic therapy targeting the primary cancer (e.g., chemotherapy, targeted therapy, immunotherapy)\n\n#### Second-line Treatments\n- Palliative care for symptom management\n\n#### Monitoring Requirements\n- Regular follow-up imaging to assess for progression or new lesions\n- Neurological assessments to monitor for changes in function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema around tumors.\n- **Typical Dosing Range**: Initial dose: 4-10 mg orally or IV, taper based on clinical response.\n- **Key Side Effects/Contraindications**: Increased blood sugar, mood changes, immunosuppression, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in long-term use.\n\n#### Anticonvulsants (e.g., levetiracetam)\n- **Mechanism of Action**: Prevent seizures by stabilizing neuronal membranes.\n- **Typical Dosing Range**: Initial dose: 500 mg twice daily, adjust based on clinical response.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, mood changes.\n- **When to Use vs. Alternatives**: Consider for patients with seizures.\n\n### Procedures\n\n#### Stereotactic radiosurgery (SRS)\n- **What it Involves**: A non-invasive procedure that delivers focused radiation beams to the tumor.\n- **Indications**: Multiple brain metastases, limited life expectancy, or poor surgical candidacy.\n- **Key Risks/Complications**: Radiation necrosis, fatigue, headache.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for patients with brain metastases varies widely based on the primary cancer type, number of metastases, and overall health. Median survival ranges from a few months to several years depending on these factors.\n\n### Important Complications to Watch For\n- Increased intracranial pressure\n- Seizures\n- Neurological deficits\n- Cognitive decline\n- Radiation necrosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of brain metastases, initiate appropriate imaging, manage acute symptoms, and refer to oncology and neurosurgery as needed.\n\n### When to Escalate to Senior/Specialist\nRefer to oncology for systemic therapy and to neurosurgery for surgical evaluation if indicated. Escalate care for new neurological deficits or worsening symptoms.\n\n### Key Safety Considerations\nMonitor for signs of increased intracranial pressure, manage corticosteroid side effects, and ensure appropriate seizure prophylaxis.\n",
+  "content": {
+    "overview": {
+      "definition": "Brain metastases are secondary brain tumors that arise from cancer cells originating in other parts of the body. They are the most common type of brain tumor in adults.",
+      "epidemiology": "Brain metastases occur in approximately 20-40% of patients with systemic cancer, with lung, breast, and melanoma being the most common primary sources.",
+      "pathophysiology": "Cancer cells spread to the brain through the bloodstream or lymphatic system. Once in the brain, they can proliferate and form tumors, leading to increased intracranial pressure and neurological deficits."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Seizures",
+        "Cognitive changes (confusion, memory loss)",
+        "Focal neurological deficits (weakness, sensory loss)",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Altered mental status",
+        "Neurological deficits (e.g., hemiparesis, aphasia)",
+        "Papilledema",
+        "Cranial nerve deficits"
+      ],
+      "atypicalPresentations": [
+        "Personality changes",
+        "Behavioral changes",
+        "Visual disturbances"
+      ],
+      "redFlags": [
+        "New-onset seizures in adults",
+        "Rapidly progressive neurological symptoms",
+        "Severe headache with sudden onset"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "MRI of the brain with contrast",
+        "CT scan of the brain"
+      ],
+      "secondLine": [
+        "PET scan",
+        "CT chest/abdomen/pelvis to identify primary malignancy"
+      ],
+      "specialistTests": [
+        "Biopsy of brain lesion (if indicated)",
+        "Lumbar puncture (if leptomeningeal disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on imaging findings consistent with metastatic lesions, clinical history of cancer, and exclusion of primary brain tumors.",
+      "differentials": [
+        "Primary brain tumors (e.g., glioblastoma)",
+        "Cerebral abscess",
+        "Multiple sclerosis",
+        "Vascular malformations (e.g., arteriovenous malformations)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., dexamethasone) to reduce edema",
+          "Anticonvulsants for seizure prophylaxis"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., craniotomy for resection) if accessible and indicated",
+          "Radiation therapy (e.g., whole brain radiation therapy or stereotactic radiosurgery)"
+        ],
+        "procedures": [
+          "Stereotactic radiosurgery (SRS): A non-invasive procedure that delivers high doses of radiation to the tumor while sparing surrounding healthy tissue. Indicated for patients with limited brain metastases and good performance status. Risks include radiation necrosis and fatigue."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Systemic therapy targeting the primary cancer (e.g., chemotherapy, targeted therapy, immunotherapy)"
+        ],
+        "secondLine": [
+          "Palliative care for symptom management"
+        ],
+        "monitoring": [
+          "Regular follow-up imaging to assess for progression or new lesions",
+          "Neurological assessments to monitor for changes in function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema around tumors.",
+          "dosing": "Initial dose: 4-10 mg orally or IV, taper based on clinical response.",
+          "sideEffects": "Increased blood sugar, mood changes, immunosuppression, gastrointestinal bleeding.",
+          "notes": "Monitor for side effects, especially in long-term use."
+        },
+        {
+          "name": "Anticonvulsants (e.g., levetiracetam)",
+          "mechanism": "Prevent seizures by stabilizing neuronal membranes.",
+          "dosing": "Initial dose: 500 mg twice daily, adjust based on clinical response.",
+          "sideEffects": "Drowsiness, dizziness, mood changes.",
+          "notes": "Consider for patients with seizures."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Stereotactic radiosurgery (SRS)",
+          "description": "A non-invasive procedure that delivers focused radiation beams to the tumor.",
+          "indications": "Multiple brain metastases, limited life expectancy, or poor surgical candidacy.",
+          "risks": "Radiation necrosis, fatigue, headache."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for patients with brain metastases varies widely based on the primary cancer type, number of metastases, and overall health. Median survival ranges from a few months to several years depending on these factors.",
+    "complications": [
+      "Increased intracranial pressure",
+      "Seizures",
+      "Neurological deficits",
+      "Cognitive decline",
+      "Radiation necrosis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of brain metastases, initiate appropriate imaging, manage acute symptoms, and refer to oncology and neurosurgery as needed.",
+    "escalation": "Refer to oncology for systemic therapy and to neurosurgery for surgical evaluation if indicated. Escalate care for new neurological deficits or worsening symptoms.",
+    "keySafetyConsiderations": "Monitor for signs of increased intracranial pressure, manage corticosteroid side effects, and ensure appropriate seizure prophylaxis."
+  }
+}

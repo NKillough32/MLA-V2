@@ -1,0 +1,128 @@
+{
+  "id": "clavicle_fracture",
+  "name": "Clavicle fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:27:56.577260",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Clavicle fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA clavicle fracture is a break in the collarbone, typically occurring in the middle third of the bone. It is one of the most common fractures in adults and children, often resulting from falls or direct trauma to the shoulder.\n\n### Epidemiology\nClavicle fractures account for approximately 5% of all fractures and are more common in males, particularly in younger individuals aged 15-30 years. They are also prevalent in newborns during delivery (birth trauma).\n\n### Essential Pathophysiology\nThe clavicle serves as a strut between the shoulder blade and the sternum, and its fracture can occur due to direct impact (e.g., falling onto the shoulder) or indirect forces (e.g., falling onto an outstretched hand). The fracture typically results in displacement due to the pull of the sternocleidomastoid muscle and the weight of the arm.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain at the site of the fracture\n- Swelling and bruising over the clavicle\n- Limited range of motion in the shoulder\n- Deformity or abnormal positioning of the shoulder\n\n### Key Signs\n- Tenderness over the clavicle\n- Crepitus on movement\n- Visible deformity or step-off at the fracture site\n- Abnormal shoulder position (drooping of the shoulder)\n\n### Atypical Presentations\n- Fracture in elderly patients may present with minimal symptoms due to osteoporotic bone\n- Fractures in children may present with less swelling and pain due to the plasticity of their bones\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (numbness, tingling, weakness in the arm)\n- Open fracture (bone protruding through the skin)\n- Signs of respiratory distress (if associated with rib or lung injury)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the clavicle (AP view)\n- X-ray of the shoulder joint to assess for associated injuries\n\n### Second-line Investigations\n- CT scan if there is suspicion of complex fractures or associated injuries\n\n### Specialist Tests\n- MRI may be used in cases of suspected soft tissue injury or non-union\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical examination and confirmed by X-ray findings showing a fracture of the clavicle.\n\n### Key Differential Diagnoses to Exclude\n- Acromioclavicular joint injury\n- Sternoclavicular joint injury\n- Fracture of the scapula\n- Fracture of the humerus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and immobilization with a sling\n- Ice application to reduce swelling\n- Analgesia (e.g., paracetamol, NSAIDs)\n\n#### Second-line Treatments\n- Consideration of surgical intervention for displaced fractures or those with neurovascular compromise\n\n#### Emergency Procedures\n- Closed reduction and immobilization if indicated\n- Surgical fixation (plate and screws) for significantly displaced fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to restore range of motion and strength after immobilization\n\n#### Second-line Treatments\n- Surgical intervention for non-union or malunion after appropriate assessment\n\n#### Monitoring Requirements\n- Regular follow-up with X-rays to assess healing and alignment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for inflammation and pain management.\n\n### Procedures\n\n#### Closed reduction\n- **What it Involves**: Non-surgical technique to realign the fractured ends of the clavicle.\n- **Indications**: Displaced fractures without neurovascular compromise.\n- **Key Risks/Complications**: Re-displacement, pain, and discomfort during the procedure.\n\n#### Surgical fixation\n- **What it Involves**: Involves the use of plates and screws to stabilize the fracture.\n- **Indications**: Significantly displaced fractures, fractures with neurovascular compromise, or those failing conservative management.\n- **Key Risks/Complications**: Infection, non-union, hardware failure, and nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost clavicle fractures heal well with conservative management, with a return to normal function in 6-12 weeks. Surgical intervention may be required for complex cases, but overall prognosis is good.\n\n### Important Complications to Watch For\n- Non-union or malunion of the fracture\n- Neurovascular injury\n- Infection (if surgical intervention is performed)\n- Post-traumatic arthritis of the acromioclavicular joint\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, provide analgesia, and refer to orthopaedics for surgical evaluation if indicated. They should also educate patients on the importance of follow-up and rehabilitation.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedic team for any suspected neurovascular compromise, open fractures, or if the patient is not improving with conservative management.\n\n### Key Safety Considerations\nEnsure proper immobilization to prevent further injury, monitor for signs of neurovascular compromise, and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "A clavicle fracture is a break in the collarbone, typically occurring in the middle third of the bone. It is one of the most common fractures in adults and children, often resulting from falls or direct trauma to the shoulder.",
+      "epidemiology": "Clavicle fractures account for approximately 5% of all fractures and are more common in males, particularly in younger individuals aged 15-30 years. They are also prevalent in newborns during delivery (birth trauma).",
+      "pathophysiology": "The clavicle serves as a strut between the shoulder blade and the sternum, and its fracture can occur due to direct impact (e.g., falling onto the shoulder) or indirect forces (e.g., falling onto an outstretched hand). The fracture typically results in displacement due to the pull of the sternocleidomastoid muscle and the weight of the arm."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain at the site of the fracture",
+        "Swelling and bruising over the clavicle",
+        "Limited range of motion in the shoulder",
+        "Deformity or abnormal positioning of the shoulder"
+      ],
+      "signs": [
+        "Tenderness over the clavicle",
+        "Crepitus on movement",
+        "Visible deformity or step-off at the fracture site",
+        "Abnormal shoulder position (drooping of the shoulder)"
+      ],
+      "atypicalPresentations": [
+        "Fracture in elderly patients may present with minimal symptoms due to osteoporotic bone",
+        "Fractures in children may present with less swelling and pain due to the plasticity of their bones"
+      ],
+      "redFlags": [
+        "Neurovascular compromise (numbness, tingling, weakness in the arm)",
+        "Open fracture (bone protruding through the skin)",
+        "Signs of respiratory distress (if associated with rib or lung injury)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the clavicle (AP view)",
+        "X-ray of the shoulder joint to assess for associated injuries"
+      ],
+      "secondLine": [
+        "CT scan if there is suspicion of complex fractures or associated injuries"
+      ],
+      "specialistTests": [
+        "MRI may be used in cases of suspected soft tissue injury or non-union"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical examination and confirmed by X-ray findings showing a fracture of the clavicle.",
+      "differentials": [
+        "Acromioclavicular joint injury",
+        "Sternoclavicular joint injury",
+        "Fracture of the scapula",
+        "Fracture of the humerus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and immobilization with a sling",
+          "Ice application to reduce swelling",
+          "Analgesia (e.g., paracetamol, NSAIDs)"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention for displaced fractures or those with neurovascular compromise"
+        ],
+        "procedures": [
+          "Closed reduction and immobilization if indicated",
+          "Surgical fixation (plate and screws) for significantly displaced fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to restore range of motion and strength after immobilization"
+        ],
+        "secondLine": [
+          "Surgical intervention for non-union or malunion after appropriate assessment"
+        ],
+        "monitoring": [
+          "Regular follow-up with X-rays to assess healing and alignment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours as needed, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600 mg every 6-8 hours as needed, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Useful for inflammation and pain management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction",
+          "description": "Non-surgical technique to realign the fractured ends of the clavicle.",
+          "indications": "Displaced fractures without neurovascular compromise.",
+          "risks": "Re-displacement, pain, and discomfort during the procedure."
+        },
+        {
+          "name": "Surgical fixation",
+          "description": "Involves the use of plates and screws to stabilize the fracture.",
+          "indications": "Significantly displaced fractures, fractures with neurovascular compromise, or those failing conservative management.",
+          "risks": "Infection, non-union, hardware failure, and nerve injury."
+        }
+      ]
+    },
+    "prognosis": "Most clavicle fractures heal well with conservative management, with a return to normal function in 6-12 weeks. Surgical intervention may be required for complex cases, but overall prognosis is good.",
+    "complications": [
+      "Non-union or malunion of the fracture",
+      "Neurovascular injury",
+      "Infection (if surgical intervention is performed)",
+      "Post-traumatic arthritis of the acromioclavicular joint"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, provide analgesia, and refer to orthopaedics for surgical evaluation if indicated. They should also educate patients on the importance of follow-up and rehabilitation.",
+    "escalation": "Refer to orthopaedic team for any suspected neurovascular compromise, open fractures, or if the patient is not improving with conservative management.",
+    "keySafetyConsiderations": "Ensure proper immobilization to prevent further injury, monitor for signs of neurovascular compromise, and educate patients on the importance of follow-up appointments."
+  }
+}

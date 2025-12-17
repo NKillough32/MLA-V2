@@ -1,0 +1,131 @@
+{
+  "id": "psoriatic_arthritis",
+  "name": "Psoriatic arthritis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:28:20.352549",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Psoriatic arthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPsoriatic arthritis (PsA) is a chronic inflammatory arthritis associated with psoriasis, characterized by joint pain, stiffness, and swelling, as well as potential skin and nail involvement.\n\n### Epidemiology\nPsA affects approximately 0.1% to 0.3% of the general population, with a higher prevalence in individuals with psoriasis (up to 30%). It can occur at any age but commonly presents between the ages of 30 and 50.\n\n### Essential Pathophysiology\nPsA is an autoimmune condition where the immune system mistakenly attacks healthy joint and skin tissues. It involves a combination of genetic predisposition, environmental triggers, and immune dysregulation, leading to inflammation and joint damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Joint pain and stiffness\n- Swelling of joints\n- Fatigue\n- Nail changes (pitting, onycholysis)\n- Skin lesions (psoriasis)\n\n### Key Signs\n- Swollen joints (dactylitis)\n- Tenderness on palpation\n- Reduced range of motion\n- Enthesitis (inflammation at tendon insertions)\n- Skin plaques of psoriasis\n\n### Atypical Presentations\n- Sacroiliitis without skin lesions\n- Nail involvement without joint symptoms\n- Acute flares mimicking gout\n\n### Red Flags Requiring Immediate Action\n- Severe joint pain or swelling\n- Rapid onset of symptoms\n- Persistent fever or systemic symptoms\n- Signs of infection (e.g., fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- X-rays of affected joints\n\n### Second-line Investigations\n- MRI of joints (to assess for early changes)\n- Ultrasound of joints (to detect synovitis)\n- HLA-B27 testing (if suspecting axial involvement)\n\n### Specialist Tests\n- Joint aspiration and synovial fluid analysis (to rule out infection or gout)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of inflammatory arthritis in a patient with psoriasis or a family history of psoriasis, along with at least 3 of the following: nail changes, dactylitis, enthesitis, or a positive HLA-B27 test.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Gout\n- Ankylosing spondylitis\n- Reactive arthritis\n- Osteoarthritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Nonsteroidal anti-inflammatory drugs (NSAIDs) for pain relief\n- Corticosteroids (intra-articular injections)\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate\n\n#### Emergency Procedures\n- Joint aspiration for symptomatic relief and diagnostic purposes\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- DMARDs (e.g., methotrexate, sulfasalazine)\n- Biologics (e.g., TNF inhibitors) for moderate to severe cases\n\n#### Second-line Treatments\n- Switching to alternative DMARDs or biologics if inadequate response\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and medication side effects\n- Routine blood tests (CBC, liver function tests)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to reduced DNA synthesis and immune response.\n- **Typical Dosing Range**: Start at 7.5-15 mg weekly, titrate up to 25 mg as tolerated.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, teratogenic effects.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Adalimumab (Humira)\n- **Mechanism of Action**: TNF-alpha inhibitor that reduces inflammation.\n- **Typical Dosing Range**: Initial dose of 80 mg subcutaneously, followed by 40 mg every other week.\n- **Key Side Effects/Contraindications**: Injection site reactions, increased risk of infections, malignancy.\n- **When to Use vs. Alternatives**: Screen for tuberculosis before starting.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: Involves using a needle to withdraw synovial fluid from a joint.\n- **Indications**: To relieve swelling, pain, and to analyze fluid for infection or crystals.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPsA is a chronic condition that can lead to joint damage and disability if untreated. Early diagnosis and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Joint damage and deformity\n- Increased cardiovascular risk\n- Psoriasis flares\n- Osteoporosis due to chronic inflammation and steroid use\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of PsA, initiate investigations, and refer to rheumatology for specialist management. They should also monitor patients on DMARDs for side effects and disease activity.\n\n### When to Escalate to Senior/Specialist\nRefer to rheumatology if there is a lack of response to initial treatment, severe disease, or complications arise.\n\n### Key Safety Considerations\nMonitor for signs of infection in patients on immunosuppressive therapy, ensure regular blood tests for those on DMARDs, and educate patients about the importance of adherence to therapy and follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Psoriatic arthritis (PsA) is a chronic inflammatory arthritis associated with psoriasis, characterized by joint pain, stiffness, and swelling, as well as potential skin and nail involvement.",
+      "epidemiology": "PsA affects approximately 0.1% to 0.3% of the general population, with a higher prevalence in individuals with psoriasis (up to 30%). It can occur at any age but commonly presents between the ages of 30 and 50.",
+      "pathophysiology": "PsA is an autoimmune condition where the immune system mistakenly attacks healthy joint and skin tissues. It involves a combination of genetic predisposition, environmental triggers, and immune dysregulation, leading to inflammation and joint damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Joint pain and stiffness",
+        "Swelling of joints",
+        "Fatigue",
+        "Nail changes (pitting, onycholysis)",
+        "Skin lesions (psoriasis)"
+      ],
+      "signs": [
+        "Swollen joints (dactylitis)",
+        "Tenderness on palpation",
+        "Reduced range of motion",
+        "Enthesitis (inflammation at tendon insertions)",
+        "Skin plaques of psoriasis"
+      ],
+      "atypicalPresentations": [
+        "Sacroiliitis without skin lesions",
+        "Nail involvement without joint symptoms",
+        "Acute flares mimicking gout"
+      ],
+      "redFlags": [
+        "Severe joint pain or swelling",
+        "Rapid onset of symptoms",
+        "Persistent fever or systemic symptoms",
+        "Signs of infection (e.g., fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "X-rays of affected joints"
+      ],
+      "secondLine": [
+        "MRI of joints (to assess for early changes)",
+        "Ultrasound of joints (to detect synovitis)",
+        "HLA-B27 testing (if suspecting axial involvement)"
+      ],
+      "specialistTests": [
+        "Joint aspiration and synovial fluid analysis (to rule out infection or gout)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of inflammatory arthritis in a patient with psoriasis or a family history of psoriasis, along with at least 3 of the following: nail changes, dactylitis, enthesitis, or a positive HLA-B27 test.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Gout",
+        "Ankylosing spondylitis",
+        "Reactive arthritis",
+        "Osteoarthritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Nonsteroidal anti-inflammatory drugs (NSAIDs) for pain relief",
+          "Corticosteroids (intra-articular injections)"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate"
+        ],
+        "procedures": [
+          "Joint aspiration for symptomatic relief and diagnostic purposes"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "DMARDs (e.g., methotrexate, sulfasalazine)",
+          "Biologics (e.g., TNF inhibitors) for moderate to severe cases"
+        ],
+        "secondLine": [
+          "Switching to alternative DMARDs or biologics if inadequate response"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and medication side effects",
+          "Routine blood tests (CBC, liver function tests)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to reduced DNA synthesis and immune response.",
+          "dosing": "Start at 7.5-15 mg weekly, titrate up to 25 mg as tolerated.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, teratogenic effects.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Adalimumab (Humira)",
+          "mechanism": "TNF-alpha inhibitor that reduces inflammation.",
+          "dosing": "Initial dose of 80 mg subcutaneously, followed by 40 mg every other week.",
+          "sideEffects": "Injection site reactions, increased risk of infections, malignancy.",
+          "notes": "Screen for tuberculosis before starting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "Involves using a needle to withdraw synovial fluid from a joint.",
+          "indications": "To relieve swelling, pain, and to analyze fluid for infection or crystals.",
+          "risks": "Infection, bleeding, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "PsA is a chronic condition that can lead to joint damage and disability if untreated. Early diagnosis and management can improve outcomes significantly.",
+    "complications": [
+      "Joint damage and deformity",
+      "Increased cardiovascular risk",
+      "Psoriasis flares",
+      "Osteoporosis due to chronic inflammation and steroid use"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of PsA, initiate investigations, and refer to rheumatology for specialist management. They should also monitor patients on DMARDs for side effects and disease activity.",
+    "escalation": "Refer to rheumatology if there is a lack of response to initial treatment, severe disease, or complications arise.",
+    "keySafetyConsiderations": "Monitor for signs of infection in patients on immunosuppressive therapy, ensure regular blood tests for those on DMARDs, and educate patients about the importance of adherence to therapy and follow-up."
+  }
+}

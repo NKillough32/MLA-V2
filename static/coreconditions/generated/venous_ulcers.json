@@ -1,0 +1,123 @@
+{
+  "id": "venous_ulcers",
+  "name": "Venous ulcers",
+  "domains": [
+    "Dermatology",
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T19:25:29.477002",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Venous ulcers: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVenous ulcers are chronic wounds that occur due to inadequate venous return, leading to increased venous pressure and subsequent skin breakdown, typically located on the lower legs.\n\n### Epidemiology\nVenous ulcers account for approximately 70-90% of all leg ulcers, with a prevalence of 1-2% in the general population, increasing with age. They are more common in women and in individuals with a history of venous disease.\n\n### Essential Pathophysiology\nVenous ulcers result from venous hypertension, often due to valvular incompetence or obstruction in the venous system. This leads to increased interstitial fluid pressure, tissue hypoxia, and inflammation, ultimately causing skin breakdown and ulceration.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic leg pain, especially when standing or sitting for long periods\n- Swelling in the legs and ankles\n- Itching or a feeling of heaviness in the legs\n\n### Key Signs\n- Irregularly shaped ulcer with a shallow base\n- Surrounding skin may be discolored (brownish or reddish) and edematous\n- Presence of varicosities or signs of venous insufficiency\n\n### Atypical Presentations\n- Ulcers may be located on the medial or lateral aspect of the leg, not just the ankle area\n- Ulcers may be mistaken for arterial ulcers if there is significant ischemia\n\n### Red Flags Requiring Immediate Action\n- Signs of infection (increased pain, redness, warmth, purulent discharge)\n- Rapidly enlarging ulcer\n- Presence of systemic symptoms (fever, malaise)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination including assessment of the ulcer and surrounding skin\n- Doppler ultrasound to assess venous reflux and patency of veins\n\n### Second-line Investigations\n- Ankle-brachial index (ABI) to rule out arterial disease\n- Venography or duplex ultrasound for detailed venous mapping if surgery is considered\n\n### Specialist Tests\n- Referral to a vascular surgeon for further evaluation if surgical intervention is needed\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the appearance of the ulcer, history of venous disease, and exclusion of arterial insufficiency.\n\n### Key Differential Diagnoses to Exclude\n- Arterial ulcers\n- Diabetic ulcers\n- Pressure ulcers\n- Malignant ulcers\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Compression therapy (e.g., compression bandages or stockings)\n- Wound care with appropriate dressings to maintain a moist environment\n\n#### Second-line Treatments\n- Topical antiseptics if infection is suspected\n- Consideration of systemic antibiotics if infection is confirmed\n\n#### Emergency Procedures\n- Debridement of necrotic tissue to promote healing\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued compression therapy and regular dressing changes\n- Education on leg elevation and lifestyle modifications (e.g., weight management, exercise)\n\n#### Second-line Treatments\n- Consideration of sclerotherapy or surgical options (e.g., vein stripping, endovenous laser therapy) if conservative measures fail\n- Referral to a specialist for advanced management\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing progress and adjust treatment as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pentoxifylline\n- **Mechanism of Action**: Improves blood flow and reduces blood viscosity\n- **Typical Dosing Range**: 400 mg orally three times daily\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness\n- **When to Use vs. Alternatives**: Consider in patients with chronic venous ulcers to enhance healing.\n\n#### Topical antibiotics (e.g., silver sulfadiazine)\n- **Mechanism of Action**: Antimicrobial action to prevent infection\n- **Typical Dosing Range**: Apply to ulcer site as directed, usually once or twice daily\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions\n- **When to Use vs. Alternatives**: Use in cases of suspected infection.\n\n### Procedures\n\n#### Debridement\n- **What it Involves**: Removal of necrotic or non-viable tissue from the ulcer to promote healing\n- **Indications**: Presence of necrotic tissue, signs of infection\n- **Key Risks/Complications**: Bleeding, pain, infection\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, venous ulcers can heal within 12-24 weeks, but recurrence is common, with up to 70% of patients experiencing recurrence within 5 years.\n\n### Important Complications to Watch For\n- Infection (cellulitis, osteomyelitis)\n- Chronic pain\n- Scarring and skin changes\n- Recurrence of ulcers\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, initiate compression therapy, manage wound care, and refer to specialists as needed. They should also educate patients on lifestyle modifications to prevent recurrence.\n\n### When to Escalate to Senior/Specialist\nRefer to a vascular specialist if there is no improvement after 4-6 weeks of appropriate management, or if there are signs of complications such as infection or significant pain.\n\n### Key Safety Considerations\nEnsure proper assessment of arterial supply before initiating compression therapy; monitor for signs of infection and adjust management accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Venous ulcers are chronic wounds that occur due to inadequate venous return, leading to increased venous pressure and subsequent skin breakdown, typically located on the lower legs.",
+      "epidemiology": "Venous ulcers account for approximately 70-90% of all leg ulcers, with a prevalence of 1-2% in the general population, increasing with age. They are more common in women and in individuals with a history of venous disease.",
+      "pathophysiology": "Venous ulcers result from venous hypertension, often due to valvular incompetence or obstruction in the venous system. This leads to increased interstitial fluid pressure, tissue hypoxia, and inflammation, ultimately causing skin breakdown and ulceration."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic leg pain, especially when standing or sitting for long periods",
+        "Swelling in the legs and ankles",
+        "Itching or a feeling of heaviness in the legs"
+      ],
+      "signs": [
+        "Irregularly shaped ulcer with a shallow base",
+        "Surrounding skin may be discolored (brownish or reddish) and edematous",
+        "Presence of varicosities or signs of venous insufficiency"
+      ],
+      "atypicalPresentations": [
+        "Ulcers may be located on the medial or lateral aspect of the leg, not just the ankle area",
+        "Ulcers may be mistaken for arterial ulcers if there is significant ischemia"
+      ],
+      "redFlags": [
+        "Signs of infection (increased pain, redness, warmth, purulent discharge)",
+        "Rapidly enlarging ulcer",
+        "Presence of systemic symptoms (fever, malaise)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination including assessment of the ulcer and surrounding skin",
+        "Doppler ultrasound to assess venous reflux and patency of veins"
+      ],
+      "secondLine": [
+        "Ankle-brachial index (ABI) to rule out arterial disease",
+        "Venography or duplex ultrasound for detailed venous mapping if surgery is considered"
+      ],
+      "specialistTests": [
+        "Referral to a vascular surgeon for further evaluation if surgical intervention is needed"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the appearance of the ulcer, history of venous disease, and exclusion of arterial insufficiency.",
+      "differentials": [
+        "Arterial ulcers",
+        "Diabetic ulcers",
+        "Pressure ulcers",
+        "Malignant ulcers"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Compression therapy (e.g., compression bandages or stockings)",
+          "Wound care with appropriate dressings to maintain a moist environment"
+        ],
+        "secondLine": [
+          "Topical antiseptics if infection is suspected",
+          "Consideration of systemic antibiotics if infection is confirmed"
+        ],
+        "procedures": [
+          "Debridement of necrotic tissue to promote healing"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued compression therapy and regular dressing changes",
+          "Education on leg elevation and lifestyle modifications (e.g., weight management, exercise)"
+        ],
+        "secondLine": [
+          "Consideration of sclerotherapy or surgical options (e.g., vein stripping, endovenous laser therapy) if conservative measures fail",
+          "Referral to a specialist for advanced management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing progress and adjust treatment as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pentoxifylline",
+          "mechanism": "Improves blood flow and reduces blood viscosity",
+          "dosing": "400 mg orally three times daily",
+          "sideEffects": "Nausea, headache, dizziness",
+          "notes": "Consider in patients with chronic venous ulcers to enhance healing."
+        },
+        {
+          "name": "Topical antibiotics (e.g., silver sulfadiazine)",
+          "mechanism": "Antimicrobial action to prevent infection",
+          "dosing": "Apply to ulcer site as directed, usually once or twice daily",
+          "sideEffects": "Local irritation, allergic reactions",
+          "notes": "Use in cases of suspected infection."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debridement",
+          "description": "Removal of necrotic or non-viable tissue from the ulcer to promote healing",
+          "indications": "Presence of necrotic tissue, signs of infection",
+          "risks": "Bleeding, pain, infection"
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, venous ulcers can heal within 12-24 weeks, but recurrence is common, with up to 70% of patients experiencing recurrence within 5 years.",
+    "complications": [
+      "Infection (cellulitis, osteomyelitis)",
+      "Chronic pain",
+      "Scarring and skin changes",
+      "Recurrence of ulcers"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, initiate compression therapy, manage wound care, and refer to specialists as needed. They should also educate patients on lifestyle modifications to prevent recurrence.",
+    "escalation": "Refer to a vascular specialist if there is no improvement after 4-6 weeks of appropriate management, or if there are signs of complications such as infection or significant pain.",
+    "keySafetyConsiderations": "Ensure proper assessment of arterial supply before initiating compression therapy; monitor for signs of infection and adjust management accordingly."
+  }
+}

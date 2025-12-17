@@ -1,0 +1,134 @@
+{
+  "id": "perinatal_mental_health",
+  "name": "Perinatal mental health",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:09:36.924148",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Perinatal mental health: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPerinatal mental health refers to the mental health of women during pregnancy and the first year after childbirth. It encompasses a range of mental health issues, including depression, anxiety, and psychosis, that can affect women during this critical period.\n\n### Epidemiology\nApproximately 10-20% of women experience mental health issues during the perinatal period, with postpartum depression affecting about 10-15% of new mothers. Anxiety disorders are also common, affecting up to 15% of women during this time.\n\n### Essential Pathophysiology\nThe pathophysiology of perinatal mental health disorders is multifactorial, involving hormonal changes, psychosocial stressors, and biological predispositions. Changes in estrogen and progesterone levels can affect mood regulation, while the stress of new motherhood and potential history of mental illness can exacerbate symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Low mood\n- Anxiety\n- Irritability\n- Fatigue\n- Changes in appetite\n- Sleep disturbances\n- Loss of interest in activities\n- Difficulty bonding with the baby\n\n### Key Signs\n- Poor hygiene\n- Social withdrawal\n- Increased crying\n- Difficulty concentrating\n- Neglect of self-care or baby care\n\n### Atypical Presentations\n- Physical complaints without clear medical cause (e.g., chronic pain)\n- Obsessive thoughts about the baby or parenting\n- Panic attacks\n\n### Red Flags Requiring Immediate Action\n- Suicidal thoughts or self-harm\n- Inability to care for oneself or the baby\n- Severe mood swings\n- Hallucinations or delusions\n- Severe anxiety or panic attacks\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental status examination\n- Edinburgh Postnatal Depression Scale (EPDS)\n- Generalized Anxiety Disorder 7-item scale (GAD-7)\n\n### Second-line Investigations\n- Structured clinical interview for DSM-5 (SCID-5)\n- Beck Depression Inventory (BDI)\n\n### Specialist Tests\n- Referral to a psychiatrist or psychologist for further assessment\n- Consideration of blood tests to rule out thyroid dysfunction or anemia\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 criteria for specific disorders such as Major Depressive Disorder or Generalized Anxiety Disorder, with consideration of the perinatal context.\n\n### Key Differential Diagnoses to Exclude\n- Postpartum psychosis\n- Bipolar disorder\n- Adjustment disorder\n- Generalized anxiety disorder\n- Obsessive-compulsive disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Psychological support and counseling\n- Cognitive Behavioral Therapy (CBT)\n- Education about the condition\n\n#### Second-line Treatments\n- Antidepressants (SSRIs) if symptoms are moderate to severe\n\n#### Emergency Procedures\n- Referral to mental health services for intensive support or inpatient care if necessary\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued psychological support and therapy\n- Support groups for new mothers\n\n#### Second-line Treatments\n- Long-term antidepressant therapy if indicated\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess mental health status and medication adherence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sertraline\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose: 50 mg daily; may increase to 100-200 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, insomnia, sexual dysfunction, weight gain.\n- **When to Use vs. Alternatives**: Considered safe in breastfeeding; monitor for side effects.\n\n#### Fluoxetine\n- **Mechanism of Action**: SSRI that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose: 20 mg daily; may increase to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, anxiety, sexual dysfunction.\n- **When to Use vs. Alternatives**: Safe in breastfeeding; monitor for side effects.\n\n### Procedures\n\n#### Psychiatric assessment\n- **What it Involves**: Comprehensive evaluation by a psychiatrist to assess mental health status and determine the need for treatment.\n- **Indications**: Severe symptoms, risk of self-harm or harm to the baby, lack of response to initial management.\n- **Key Risks/Complications**: Potential for hospitalization if severe symptoms are present.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, most women experience significant improvement in symptoms. However, untreated perinatal mental health issues can lead to chronic mental health problems and affect mother-infant bonding.\n\n### Important Complications to Watch For\n- Chronic depression or anxiety\n- Increased risk of future mental health disorders\n- Impaired mother-infant bonding\n- Negative impact on child development\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in screening for perinatal mental health issues during routine check-ups, provide initial support, and refer to mental health services as needed. They should also educate patients about the signs and symptoms of perinatal mental health disorders.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, suicidal ideation, or inability to care for themselves or their baby, immediate referral to mental health services or emergency care is necessary.\n\n### Key Safety Considerations\nEnsure safety of the mother and baby; assess for risk of self-harm or harm to the baby. Provide a supportive environment and involve family members when appropriate.\n",
+  "content": {
+    "overview": {
+      "definition": "Perinatal mental health refers to the mental health of women during pregnancy and the first year after childbirth. It encompasses a range of mental health issues, including depression, anxiety, and psychosis, that can affect women during this critical period.",
+      "epidemiology": "Approximately 10-20% of women experience mental health issues during the perinatal period, with postpartum depression affecting about 10-15% of new mothers. Anxiety disorders are also common, affecting up to 15% of women during this time.",
+      "pathophysiology": "The pathophysiology of perinatal mental health disorders is multifactorial, involving hormonal changes, psychosocial stressors, and biological predispositions. Changes in estrogen and progesterone levels can affect mood regulation, while the stress of new motherhood and potential history of mental illness can exacerbate symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Low mood",
+        "Anxiety",
+        "Irritability",
+        "Fatigue",
+        "Changes in appetite",
+        "Sleep disturbances",
+        "Loss of interest in activities",
+        "Difficulty bonding with the baby"
+      ],
+      "signs": [
+        "Poor hygiene",
+        "Social withdrawal",
+        "Increased crying",
+        "Difficulty concentrating",
+        "Neglect of self-care or baby care"
+      ],
+      "atypicalPresentations": [
+        "Physical complaints without clear medical cause (e.g., chronic pain)",
+        "Obsessive thoughts about the baby or parenting",
+        "Panic attacks"
+      ],
+      "redFlags": [
+        "Suicidal thoughts or self-harm",
+        "Inability to care for oneself or the baby",
+        "Severe mood swings",
+        "Hallucinations or delusions",
+        "Severe anxiety or panic attacks"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental status examination",
+        "Edinburgh Postnatal Depression Scale (EPDS)",
+        "Generalized Anxiety Disorder 7-item scale (GAD-7)"
+      ],
+      "secondLine": [
+        "Structured clinical interview for DSM-5 (SCID-5)",
+        "Beck Depression Inventory (BDI)"
+      ],
+      "specialistTests": [
+        "Referral to a psychiatrist or psychologist for further assessment",
+        "Consideration of blood tests to rule out thyroid dysfunction or anemia"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 criteria for specific disorders such as Major Depressive Disorder or Generalized Anxiety Disorder, with consideration of the perinatal context.",
+      "differentials": [
+        "Postpartum psychosis",
+        "Bipolar disorder",
+        "Adjustment disorder",
+        "Generalized anxiety disorder",
+        "Obsessive-compulsive disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Psychological support and counseling",
+          "Cognitive Behavioral Therapy (CBT)",
+          "Education about the condition"
+        ],
+        "secondLine": [
+          "Antidepressants (SSRIs) if symptoms are moderate to severe"
+        ],
+        "procedures": [
+          "Referral to mental health services for intensive support or inpatient care if necessary"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued psychological support and therapy",
+          "Support groups for new mothers"
+        ],
+        "secondLine": [
+          "Long-term antidepressant therapy if indicated"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess mental health status and medication adherence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sertraline",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Starting dose: 50 mg daily; may increase to 100-200 mg based on response.",
+          "sideEffects": "Nausea, diarrhea, insomnia, sexual dysfunction, weight gain.",
+          "notes": "Considered safe in breastfeeding; monitor for side effects."
+        },
+        {
+          "name": "Fluoxetine",
+          "mechanism": "SSRI that increases serotonin levels in the brain.",
+          "dosing": "Starting dose: 20 mg daily; may increase to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, anxiety, sexual dysfunction.",
+          "notes": "Safe in breastfeeding; monitor for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Psychiatric assessment",
+          "description": "Comprehensive evaluation by a psychiatrist to assess mental health status and determine the need for treatment.",
+          "indications": "Severe symptoms, risk of self-harm or harm to the baby, lack of response to initial management.",
+          "risks": "Potential for hospitalization if severe symptoms are present."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, most women experience significant improvement in symptoms. However, untreated perinatal mental health issues can lead to chronic mental health problems and affect mother-infant bonding.",
+    "complications": [
+      "Chronic depression or anxiety",
+      "Increased risk of future mental health disorders",
+      "Impaired mother-infant bonding",
+      "Negative impact on child development"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in screening for perinatal mental health issues during routine check-ups, provide initial support, and refer to mental health services as needed. They should also educate patients about the signs and symptoms of perinatal mental health disorders.",
+    "escalation": "If a patient presents with severe symptoms, suicidal ideation, or inability to care for themselves or their baby, immediate referral to mental health services or emergency care is necessary.",
+    "keySafetyConsiderations": "Ensure safety of the mother and baby; assess for risk of self-harm or harm to the baby. Provide a supportive environment and involve family members when appropriate."
+  }
+}

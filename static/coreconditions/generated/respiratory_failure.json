@@ -1,0 +1,142 @@
+{
+  "id": "respiratory_failure",
+  "name": "Respiratory failure",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:22:08.557800",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Respiratory failure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRespiratory failure is a clinical syndrome characterized by the inability of the respiratory system to maintain adequate gas exchange, leading to hypoxemia (low oxygen levels) and/or hypercapnia (elevated carbon dioxide levels).\n\n### Epidemiology\nRespiratory failure can occur in various populations, with prevalence rates varying based on underlying conditions. It is common in patients with chronic lung diseases, acute respiratory distress syndrome (ARDS), and during exacerbations of chronic obstructive pulmonary disease (COPD).\n\n### Essential Pathophysiology\nRespiratory failure can be classified into two main types: Type 1 (hypoxemic) and Type 2 (hypercapnic). Type 1 occurs due to ventilation-perfusion mismatch, shunting, or diffusion impairment, leading to low arterial oxygen levels. Type 2 occurs when there is inadequate ventilation, resulting in elevated carbon dioxide levels, often due to respiratory muscle fatigue or central nervous system depression.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shortness of breath (dyspnea)\n- Cyanosis (bluish discoloration of skin)\n- Confusion or altered mental status\n- Fatigue\n- Chest pain\n\n### Key Signs\n- Tachypnea (rapid breathing)\n- Use of accessory muscles of respiration\n- Hypoxemia (low oxygen saturation)\n- Hypercapnia (elevated CO2 levels)\n- Auscultation may reveal wheezing or crackles\n\n### Atypical Presentations\n- Silent hypoxia (normal respiratory rate but low oxygen saturation)\n- Respiratory failure in the absence of significant dyspnea\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Altered level of consciousness\n- Persistent hypoxemia despite supplemental oxygen\n- Rapid deterioration in clinical status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pulse oximetry to assess oxygen saturation\n- Arterial blood gas (ABG) analysis to evaluate oxygen and carbon dioxide levels\n- Chest X-ray to identify underlying pathology\n\n### Second-line Investigations\n- CT chest for detailed imaging of lung pathology\n- Spirometry to assess lung function in chronic cases\n\n### Specialist Tests\n- Bronchoscopy for direct visualization of airways\n- Sleep studies for suspected sleep apnea\n- Serum lactate levels in cases of suspected sepsis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of respiratory failure is based on ABG results: Type 1 is indicated by PaO2 < 60 mmHg with normal or low PaCO2; Type 2 is indicated by PaCO2 > 50 mmHg with or without hypoxemia.\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD) exacerbation\n- Asthma exacerbation\n- Pneumonia\n- Pulmonary embolism\n- Acute respiratory distress syndrome (ARDS)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supplemental oxygen therapy to maintain SpO2 > 92%\n- Non-invasive ventilation (NIV) for Type 2 respiratory failure\n\n#### Second-line Treatments\n- Intubation and mechanical ventilation if non-invasive measures fail\n\n#### Emergency Procedures\n- Endotracheal intubation for airway protection and mechanical ventilation in severe cases.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term oxygen therapy for patients with chronic hypoxemia\n- Pulmonary rehabilitation programs\n\n#### Second-line Treatments\n- Consideration of non-invasive ventilation for chronic hypercapnic respiratory failure\n\n#### Monitoring Requirements\n- Regular follow-up with ABG analysis and spirometry to assess treatment efficacy.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Bronchodilators (e.g., Salbutamol)\n- **Mechanism of Action**: Relaxation of bronchial smooth muscle leading to bronchodilation.\n- **Typical Dosing Range**: Inhaled as needed, typically 100-200 mcg via metered-dose inhaler.\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia.\n- **When to Use vs. Alternatives**: Monitor for cardiovascular effects.\n\n#### Corticosteroids (e.g., Prednisolone)\n- **Mechanism of Action**: Anti-inflammatory effects reduce airway inflammation.\n- **Typical Dosing Range**: Oral: 30-60 mg daily for acute exacerbations.\n- **Key Side Effects/Contraindications**: Hyperglycemia, immunosuppression, fluid retention.\n- **When to Use vs. Alternatives**: Taper dose to avoid adrenal insufficiency.\n\n#### Antibiotics (e.g., Amoxicillin)\n- **Mechanism of Action**: Bacterial infection treatment to prevent respiratory failure due to pneumonia.\n- **Typical Dosing Range**: 500 mg TID for 5-7 days.\n- **Key Side Effects/Contraindications**: Diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Consider local resistance patterns.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway and facilitate mechanical ventilation.\n- **Indications**: Severe respiratory failure, inability to protect airway, or need for prolonged ventilation.\n- **Key Risks/Complications**: Esophageal intubation, injury to teeth or airway structures, infection.\n\n#### Non-invasive ventilation (NIV)\n- **What it Involves**: Use of a ventilatory support system without endotracheal intubation, typically via a face mask.\n- **Indications**: Acute exacerbations of COPD, cardiogenic pulmonary edema.\n- **Key Risks/Complications**: Facial skin breakdown, aspiration, discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of respiratory failure depends on the underlying cause, the patient's overall health, and the timeliness of intervention. Early recognition and management can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Ventilator-associated pneumonia (VAP)\n- Barotrauma from mechanical ventilation\n- Muscle weakness from prolonged ventilation\n- Psychological effects such as anxiety and depression.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing signs of respiratory failure, initiating oxygen therapy, performing basic airway management, and understanding the need for escalation to senior medical staff for advanced interventions.\n\n### When to Escalate to Senior/Specialist\nIf a patient exhibits signs of respiratory failure, escalate care to a senior clinician or intensivist, especially if there is rapid deterioration, altered mental status, or failure to respond to initial treatments.\n\n### Key Safety Considerations\nEnsure proper monitoring of oxygen saturation and vital signs during treatment. Be vigilant for signs of deterioration and be prepared to escalate care. Maintain a high index of suspicion for underlying causes and complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Respiratory failure is a clinical syndrome characterized by the inability of the respiratory system to maintain adequate gas exchange, leading to hypoxemia (low oxygen levels) and/or hypercapnia (elevated carbon dioxide levels).",
+      "epidemiology": "Respiratory failure can occur in various populations, with prevalence rates varying based on underlying conditions. It is common in patients with chronic lung diseases, acute respiratory distress syndrome (ARDS), and during exacerbations of chronic obstructive pulmonary disease (COPD).",
+      "pathophysiology": "Respiratory failure can be classified into two main types: Type 1 (hypoxemic) and Type 2 (hypercapnic). Type 1 occurs due to ventilation-perfusion mismatch, shunting, or diffusion impairment, leading to low arterial oxygen levels. Type 2 occurs when there is inadequate ventilation, resulting in elevated carbon dioxide levels, often due to respiratory muscle fatigue or central nervous system depression."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shortness of breath (dyspnea)",
+        "Cyanosis (bluish discoloration of skin)",
+        "Confusion or altered mental status",
+        "Fatigue",
+        "Chest pain"
+      ],
+      "signs": [
+        "Tachypnea (rapid breathing)",
+        "Use of accessory muscles of respiration",
+        "Hypoxemia (low oxygen saturation)",
+        "Hypercapnia (elevated CO2 levels)",
+        "Auscultation may reveal wheezing or crackles"
+      ],
+      "atypicalPresentations": [
+        "Silent hypoxia (normal respiratory rate but low oxygen saturation)",
+        "Respiratory failure in the absence of significant dyspnea"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Altered level of consciousness",
+        "Persistent hypoxemia despite supplemental oxygen",
+        "Rapid deterioration in clinical status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pulse oximetry to assess oxygen saturation",
+        "Arterial blood gas (ABG) analysis to evaluate oxygen and carbon dioxide levels",
+        "Chest X-ray to identify underlying pathology"
+      ],
+      "secondLine": [
+        "CT chest for detailed imaging of lung pathology",
+        "Spirometry to assess lung function in chronic cases"
+      ],
+      "specialistTests": [
+        "Bronchoscopy for direct visualization of airways",
+        "Sleep studies for suspected sleep apnea",
+        "Serum lactate levels in cases of suspected sepsis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of respiratory failure is based on ABG results: Type 1 is indicated by PaO2 < 60 mmHg with normal or low PaCO2; Type 2 is indicated by PaCO2 > 50 mmHg with or without hypoxemia.",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD) exacerbation",
+        "Asthma exacerbation",
+        "Pneumonia",
+        "Pulmonary embolism",
+        "Acute respiratory distress syndrome (ARDS)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supplemental oxygen therapy to maintain SpO2 > 92%",
+          "Non-invasive ventilation (NIV) for Type 2 respiratory failure"
+        ],
+        "secondLine": [
+          "Intubation and mechanical ventilation if non-invasive measures fail"
+        ],
+        "procedures": [
+          "Endotracheal intubation for airway protection and mechanical ventilation in severe cases."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term oxygen therapy for patients with chronic hypoxemia",
+          "Pulmonary rehabilitation programs"
+        ],
+        "secondLine": [
+          "Consideration of non-invasive ventilation for chronic hypercapnic respiratory failure"
+        ],
+        "monitoring": [
+          "Regular follow-up with ABG analysis and spirometry to assess treatment efficacy."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Bronchodilators (e.g., Salbutamol)",
+          "mechanism": "Relaxation of bronchial smooth muscle leading to bronchodilation.",
+          "dosing": "Inhaled as needed, typically 100-200 mcg via metered-dose inhaler.",
+          "sideEffects": "Tachycardia, tremors, hypokalemia.",
+          "notes": "Monitor for cardiovascular effects."
+        },
+        {
+          "name": "Corticosteroids (e.g., Prednisolone)",
+          "mechanism": "Anti-inflammatory effects reduce airway inflammation.",
+          "dosing": "Oral: 30-60 mg daily for acute exacerbations.",
+          "sideEffects": "Hyperglycemia, immunosuppression, fluid retention.",
+          "notes": "Taper dose to avoid adrenal insufficiency."
+        },
+        {
+          "name": "Antibiotics (e.g., Amoxicillin)",
+          "mechanism": "Bacterial infection treatment to prevent respiratory failure due to pneumonia.",
+          "dosing": "500 mg TID for 5-7 days.",
+          "sideEffects": "Diarrhea, allergic reactions.",
+          "notes": "Consider local resistance patterns."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway and facilitate mechanical ventilation.",
+          "indications": "Severe respiratory failure, inability to protect airway, or need for prolonged ventilation.",
+          "risks": "Esophageal intubation, injury to teeth or airway structures, infection."
+        },
+        {
+          "name": "Non-invasive ventilation (NIV)",
+          "description": "Use of a ventilatory support system without endotracheal intubation, typically via a face mask.",
+          "indications": "Acute exacerbations of COPD, cardiogenic pulmonary edema.",
+          "risks": "Facial skin breakdown, aspiration, discomfort."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of respiratory failure depends on the underlying cause, the patient's overall health, and the timeliness of intervention. Early recognition and management can significantly improve outcomes.",
+    "complications": [
+      "Ventilator-associated pneumonia (VAP)",
+      "Barotrauma from mechanical ventilation",
+      "Muscle weakness from prolonged ventilation",
+      "Psychological effects such as anxiety and depression."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing signs of respiratory failure, initiating oxygen therapy, performing basic airway management, and understanding the need for escalation to senior medical staff for advanced interventions.",
+    "escalation": "If a patient exhibits signs of respiratory failure, escalate care to a senior clinician or intensivist, especially if there is rapid deterioration, altered mental status, or failure to respond to initial treatments.",
+    "keySafetyConsiderations": "Ensure proper monitoring of oxygen saturation and vital signs during treatment. Be vigilant for signs of deterioration and be prepared to escalate care. Maintain a high index of suspicion for underlying causes and complications."
+  }
+}

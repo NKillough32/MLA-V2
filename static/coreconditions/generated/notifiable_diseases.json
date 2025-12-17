@@ -1,0 +1,154 @@
+{
+  "id": "notifiable_diseases",
+  "name": "Notifiable diseases",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:04:35.220012",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Notifiable diseases: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNotifiable diseases are infectious diseases that, by law, must be reported to public health authorities upon diagnosis. This is crucial for monitoring, controlling, and preventing outbreaks.\n\n### Epidemiology\nThe epidemiology of notifiable diseases varies widely depending on the disease, geographic location, and population. Common notifiable diseases include tuberculosis, measles, and sexually transmitted infections, with varying incidence rates globally.\n\n### Essential Pathophysiology\nThe pathophysiology of notifiable diseases is diverse, as they can be caused by bacteria, viruses, parasites, or fungi. Each pathogen has its own mechanism of infection and disease progression, which can lead to systemic effects and complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Chills\n- Cough\n- Rash\n- Diarrhea\n- Fatigue\n- Nausea\n- Vomiting\n\n### Key Signs\n- Lymphadenopathy\n- Jaundice\n- Skin lesions\n- Respiratory distress\n- Abdominal tenderness\n\n### Atypical Presentations\n- Asymptomatic carriers (e.g., hepatitis B)\n- Severe manifestations in immunocompromised patients\n- Unusual rash patterns in viral infections\n\n### Red Flags Requiring Immediate Action\n- High fever persisting for more than 3 days\n- Severe dehydration\n- Altered mental status\n- Respiratory failure\n- Sepsis signs\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Basic metabolic panel\n- Rapid antigen tests (e.g., for influenza)\n- PCR tests for specific pathogens\n\n### Second-line Investigations\n- Serological tests (e.g., HIV, hepatitis)\n- Cultures (blood, urine, throat)\n- Imaging studies (e.g., chest X-ray for pneumonia)\n\n### Specialist Tests\n- Lumbar puncture for suspected meningitis\n- Biopsy for suspected viral infections\n- Advanced imaging (CT/MRI) for complications\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, laboratory findings, and epidemiological context. Specific criteria may vary by disease (e.g., positive culture for tuberculosis).\n\n### Key Differential Diagnoses to Exclude\n- Viral infections (e.g., influenza, COVID-19)\n- Bacterial infections (e.g., strep throat, pneumonia)\n- Parasitic infections (e.g., malaria)\n- Non-infectious causes (e.g., autoimmune diseases)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, antipyretics)\n- Antibiotics for bacterial infections\n- Antivirals for specific viral infections (e.g., oseltamivir for influenza)\n\n#### Second-line Treatments\n- Intravenous fluids for severe dehydration\n- Corticosteroids for severe inflammatory responses\n\n#### Emergency Procedures\n- Lumbar puncture for meningitis\n- Drainage of abscesses\n- Intubation for respiratory failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term antiviral therapy for chronic hepatitis B/C\n- Regular monitoring for complications (e.g., liver function tests)\n\n#### Second-line Treatments\n- Immunomodulators for chronic infections (e.g., HIV)\n- Referral to infectious disease specialists for complex cases\n\n#### Monitoring Requirements\n- Regular follow-up appointments\n- Screening for complications (e.g., cancer screening in chronic hepatitis)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oseltamivir\n- **Mechanism of Action**: Inhibits viral neuraminidase, preventing viral replication\n- **Typical Dosing Range**: 75 mg orally twice daily for 5 days\n- **Key Side Effects/Contraindications**: Nausea, vomiting, headache\n- **When to Use vs. Alternatives**: Most effective when started within 48 hours of symptom onset.\n\n#### Rifampicin\n- **Mechanism of Action**: Inhibits bacterial RNA synthesis\n- **Typical Dosing Range**: 10 mg/kg orally once daily\n- **Key Side Effects/Contraindications**: Hepatotoxicity, orange discoloration of bodily fluids\n- **When to Use vs. Alternatives**: Used in tuberculosis treatment.\n\n#### Acyclovir\n- **Mechanism of Action**: Inhibits viral DNA synthesis\n- **Typical Dosing Range**: 400 mg orally three times daily for herpes simplex\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, renal toxicity\n- **When to Use vs. Alternatives**: Hydration is important to prevent renal complications.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: Insertion of a needle into the spinal canal to collect cerebrospinal fluid (CSF)\n- **Indications**: Suspected meningitis or encephalitis\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage\n\n#### Abscess drainage\n- **What it Involves**: Surgical procedure to remove pus from an abscess\n- **Indications**: Fever with localized swelling and fluctuance\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of notifiable diseases varies widely; many are treatable with good outcomes, while others can lead to significant morbidity and mortality if not managed promptly.\n\n### Important Complications to Watch For\n- Sepsis\n- Organ failure\n- Chronic infection (e.g., HIV, hepatitis)\n- Neurological complications (e.g., meningitis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors are responsible for recognizing symptoms of notifiable diseases, initiating investigations, providing initial management, and ensuring timely reporting to public health authorities.\n\n### When to Escalate to Senior/Specialist\nIf a notifiable disease is suspected, escalate to a senior clinician and notify the local health protection team immediately. Follow local protocols for reporting and management.\n\n### Key Safety Considerations\nEnsure proper infection control measures are in place to prevent transmission. Be aware of personal protective equipment (PPE) requirements when dealing with suspected infectious patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Notifiable diseases are infectious diseases that, by law, must be reported to public health authorities upon diagnosis. This is crucial for monitoring, controlling, and preventing outbreaks.",
+      "epidemiology": "The epidemiology of notifiable diseases varies widely depending on the disease, geographic location, and population. Common notifiable diseases include tuberculosis, measles, and sexually transmitted infections, with varying incidence rates globally.",
+      "pathophysiology": "The pathophysiology of notifiable diseases is diverse, as they can be caused by bacteria, viruses, parasites, or fungi. Each pathogen has its own mechanism of infection and disease progression, which can lead to systemic effects and complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Chills",
+        "Cough",
+        "Rash",
+        "Diarrhea",
+        "Fatigue",
+        "Nausea",
+        "Vomiting"
+      ],
+      "signs": [
+        "Lymphadenopathy",
+        "Jaundice",
+        "Skin lesions",
+        "Respiratory distress",
+        "Abdominal tenderness"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic carriers (e.g., hepatitis B)",
+        "Severe manifestations in immunocompromised patients",
+        "Unusual rash patterns in viral infections"
+      ],
+      "redFlags": [
+        "High fever persisting for more than 3 days",
+        "Severe dehydration",
+        "Altered mental status",
+        "Respiratory failure",
+        "Sepsis signs"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Basic metabolic panel",
+        "Rapid antigen tests (e.g., for influenza)",
+        "PCR tests for specific pathogens"
+      ],
+      "secondLine": [
+        "Serological tests (e.g., HIV, hepatitis)",
+        "Cultures (blood, urine, throat)",
+        "Imaging studies (e.g., chest X-ray for pneumonia)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for suspected meningitis",
+        "Biopsy for suspected viral infections",
+        "Advanced imaging (CT/MRI) for complications"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, laboratory findings, and epidemiological context. Specific criteria may vary by disease (e.g., positive culture for tuberculosis).",
+      "differentials": [
+        "Viral infections (e.g., influenza, COVID-19)",
+        "Bacterial infections (e.g., strep throat, pneumonia)",
+        "Parasitic infections (e.g., malaria)",
+        "Non-infectious causes (e.g., autoimmune diseases)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, antipyretics)",
+          "Antibiotics for bacterial infections",
+          "Antivirals for specific viral infections (e.g., oseltamivir for influenza)"
+        ],
+        "secondLine": [
+          "Intravenous fluids for severe dehydration",
+          "Corticosteroids for severe inflammatory responses"
+        ],
+        "procedures": [
+          "Lumbar puncture for meningitis",
+          "Drainage of abscesses",
+          "Intubation for respiratory failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term antiviral therapy for chronic hepatitis B/C",
+          "Regular monitoring for complications (e.g., liver function tests)"
+        ],
+        "secondLine": [
+          "Immunomodulators for chronic infections (e.g., HIV)",
+          "Referral to infectious disease specialists for complex cases"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments",
+          "Screening for complications (e.g., cancer screening in chronic hepatitis)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oseltamivir",
+          "mechanism": "Inhibits viral neuraminidase, preventing viral replication",
+          "dosing": "75 mg orally twice daily for 5 days",
+          "sideEffects": "Nausea, vomiting, headache",
+          "notes": "Most effective when started within 48 hours of symptom onset."
+        },
+        {
+          "name": "Rifampicin",
+          "mechanism": "Inhibits bacterial RNA synthesis",
+          "dosing": "10 mg/kg orally once daily",
+          "sideEffects": "Hepatotoxicity, orange discoloration of bodily fluids",
+          "notes": "Used in tuberculosis treatment."
+        },
+        {
+          "name": "Acyclovir",
+          "mechanism": "Inhibits viral DNA synthesis",
+          "dosing": "400 mg orally three times daily for herpes simplex",
+          "sideEffects": "Nausea, diarrhea, renal toxicity",
+          "notes": "Hydration is important to prevent renal complications."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "Insertion of a needle into the spinal canal to collect cerebrospinal fluid (CSF)",
+          "indications": "Suspected meningitis or encephalitis",
+          "risks": "Headache, infection, bleeding, nerve damage"
+        },
+        {
+          "name": "Abscess drainage",
+          "description": "Surgical procedure to remove pus from an abscess",
+          "indications": "Fever with localized swelling and fluctuance",
+          "risks": "Infection, bleeding, damage to surrounding structures"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of notifiable diseases varies widely; many are treatable with good outcomes, while others can lead to significant morbidity and mortality if not managed promptly.",
+    "complications": [
+      "Sepsis",
+      "Organ failure",
+      "Chronic infection (e.g., HIV, hepatitis)",
+      "Neurological complications (e.g., meningitis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors are responsible for recognizing symptoms of notifiable diseases, initiating investigations, providing initial management, and ensuring timely reporting to public health authorities.",
+    "escalation": "If a notifiable disease is suspected, escalate to a senior clinician and notify the local health protection team immediately. Follow local protocols for reporting and management.",
+    "keySafetyConsiderations": "Ensure proper infection control measures are in place to prevent transmission. Be aware of personal protective equipment (PPE) requirements when dealing with suspected infectious patients."
+  }
+}

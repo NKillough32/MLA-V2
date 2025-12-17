@@ -1,0 +1,134 @@
+{
+  "id": "ankylosing_spondylitis",
+  "name": "Ankylosing spondylitis?",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:29:15.943321",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ankylosing spondylitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnkylosing spondylitis (AS) is a chronic inflammatory disease primarily affecting the axial skeleton, leading to pain and stiffness in the spine and sacroiliac joints, and can result in fusion of the vertebrae over time.\n\n### Epidemiology\nAS typically presents in young adults, with a peak onset between ages 15 and 30. It is more common in males (3:1 ratio) and has a strong genetic association with HLA-B27 antigen, with a prevalence of 0.1% to 1% in the general population, but higher in certain ethnic groups.\n\n### Essential Pathophysiology\nThe pathophysiology involves an autoimmune response leading to inflammation of the entheses (sites where tendons and ligaments attach to bone), resulting in pain, stiffness, and eventual bony fusion due to new bone formation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic low back pain and stiffness, particularly in the morning or after periods of inactivity\n- Improvement of pain with exercise\n- Reduced spinal mobility\n- Peripheral arthritis (in some cases)\n- Fatigue\n\n### Key Signs\n- Limited range of motion in the lumbar spine\n- Positive Schober's test (reduced lumbar flexion)\n- Tenderness over the sacroiliac joints\n- Postural changes (e.g., kyphosis)\n\n### Atypical Presentations\n- Uveitis (inflammation of the eye)\n- Psoriasis or inflammatory bowel disease (IBD) may coexist\n- Fatigue and systemic symptoms may predominate\n\n### Red Flags Requiring Immediate Action\n- Onset of symptoms before age 40\n- Symptoms persisting for more than 3 months\n- Family history of spondyloarthritis\n- Acute anterior uveitis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the pelvis to assess for sacroiliitis\n- MRI of the sacroiliac joints if X-ray is inconclusive\n\n### Second-line Investigations\n- Blood tests for inflammatory markers (ESR, CRP)\n- HLA-B27 antigen testing\n\n### Specialist Tests\n- MRI of the spine to assess for active inflammation\n- Bone scans in selected cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the modified New York criteria, which include: 1) low back pain and stiffness for more than 3 months, 2) limitation of motion of the lumbar spine, 3) limitation of chest expansion, and 4) radiographic evidence of sacroiliitis.\n\n### Key Differential Diagnoses to Exclude\n- Mechanical back pain\n- Other spondyloarthropathies (e.g., psoriatic arthritis, reactive arthritis)\n- Infectious spondylitis\n- Discitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (e.g., ibuprofen, naproxen) for pain relief\n\n#### Second-line Treatments\n- Corticosteroids for severe flares\n\n#### Emergency Procedures\n- Physical therapy and exercise programs to improve mobility\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular physical activity and exercise\n- NSAIDs for ongoing pain management\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) like sulfasalazine for peripheral arthritis\n- Biologics (e.g., TNF inhibitors) for severe cases\n\n#### Monitoring Requirements\n- Regular assessment of disease activity and functional status\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor reducing inflammation and pain\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, cardiovascular risks\n- **When to Use vs. Alternatives**: Monitor for GI bleeding, especially in long-term use.\n\n#### Etanercept\n- **Mechanism of Action**: TNF-alpha inhibitor reducing inflammation\n- **Typical Dosing Range**: 50 mg subcutaneously once a week\n- **Key Side Effects/Contraindications**: Injection site reactions, increased risk of infections\n- **When to Use vs. Alternatives**: Screen for latent tuberculosis before starting.\n\n#### Sulfasalazine\n- **Mechanism of Action**: DMARD with anti-inflammatory properties\n- **Typical Dosing Range**: 500 mg to 1 g twice daily, increasing to 2-3 g daily\n- **Key Side Effects/Contraindications**: Nausea, headache, rash, liver function abnormalities\n- **When to Use vs. Alternatives**: Monitor blood counts and liver function.\n\n### Procedures\n\n#### Physical therapy\n- **What it Involves**: Structured exercise program focusing on spinal mobility and posture\n- **Indications**: To improve function and reduce stiffness\n- **Key Risks/Complications**: Potential for exacerbation of pain if not tailored to the patient.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies; many patients experience periods of remission and exacerbation. Early diagnosis and treatment can improve quality of life and functional outcomes. Long-term complications may include spinal fusion and increased risk of osteoporosis.\n\n### Important Complications to Watch For\n- Spinal deformity (kyphosis)\n- Osteoporosis and fractures\n- Uveitis leading to vision problems\n- Cardiovascular disease risk may be increased\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of AS, initiate investigations, manage acute flares, and refer to rheumatology for ongoing management. They should also educate patients on the importance of exercise and adherence to treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to rheumatology if there is uncertainty in diagnosis, if symptoms are severe or unresponsive to initial management, or if there are complications such as uveitis or significant functional impairment.\n\n### Key Safety Considerations\nMonitor for side effects of NSAIDs and DMARDs, including renal function and liver enzymes. Educate patients on signs of infection when on biologics, and ensure vaccinations are up to date.\n",
+  "content": {
+    "overview": {
+      "definition": "Ankylosing spondylitis (AS) is a chronic inflammatory disease primarily affecting the axial skeleton, leading to pain and stiffness in the spine and sacroiliac joints, and can result in fusion of the vertebrae over time.",
+      "epidemiology": "AS typically presents in young adults, with a peak onset between ages 15 and 30. It is more common in males (3:1 ratio) and has a strong genetic association with HLA-B27 antigen, with a prevalence of 0.1% to 1% in the general population, but higher in certain ethnic groups.",
+      "pathophysiology": "The pathophysiology involves an autoimmune response leading to inflammation of the entheses (sites where tendons and ligaments attach to bone), resulting in pain, stiffness, and eventual bony fusion due to new bone formation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic low back pain and stiffness, particularly in the morning or after periods of inactivity",
+        "Improvement of pain with exercise",
+        "Reduced spinal mobility",
+        "Peripheral arthritis (in some cases)",
+        "Fatigue"
+      ],
+      "signs": [
+        "Limited range of motion in the lumbar spine",
+        "Positive Schober's test (reduced lumbar flexion)",
+        "Tenderness over the sacroiliac joints",
+        "Postural changes (e.g., kyphosis)"
+      ],
+      "atypicalPresentations": [
+        "Uveitis (inflammation of the eye)",
+        "Psoriasis or inflammatory bowel disease (IBD) may coexist",
+        "Fatigue and systemic symptoms may predominate"
+      ],
+      "redFlags": [
+        "Onset of symptoms before age 40",
+        "Symptoms persisting for more than 3 months",
+        "Family history of spondyloarthritis",
+        "Acute anterior uveitis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the pelvis to assess for sacroiliitis",
+        "MRI of the sacroiliac joints if X-ray is inconclusive"
+      ],
+      "secondLine": [
+        "Blood tests for inflammatory markers (ESR, CRP)",
+        "HLA-B27 antigen testing"
+      ],
+      "specialistTests": [
+        "MRI of the spine to assess for active inflammation",
+        "Bone scans in selected cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the modified New York criteria, which include: 1) low back pain and stiffness for more than 3 months, 2) limitation of motion of the lumbar spine, 3) limitation of chest expansion, and 4) radiographic evidence of sacroiliitis.",
+      "differentials": [
+        "Mechanical back pain",
+        "Other spondyloarthropathies (e.g., psoriatic arthritis, reactive arthritis)",
+        "Infectious spondylitis",
+        "Discitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (e.g., ibuprofen, naproxen) for pain relief"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe flares"
+        ],
+        "procedures": [
+          "Physical therapy and exercise programs to improve mobility"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular physical activity and exercise",
+          "NSAIDs for ongoing pain management"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) like sulfasalazine for peripheral arthritis",
+          "Biologics (e.g., TNF inhibitors) for severe cases"
+        ],
+        "monitoring": [
+          "Regular assessment of disease activity and functional status",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor reducing inflammation and pain",
+          "dosing": "400-800 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, cardiovascular risks",
+          "notes": "Monitor for GI bleeding, especially in long-term use."
+        },
+        {
+          "name": "Etanercept",
+          "mechanism": "TNF-alpha inhibitor reducing inflammation",
+          "dosing": "50 mg subcutaneously once a week",
+          "sideEffects": "Injection site reactions, increased risk of infections",
+          "notes": "Screen for latent tuberculosis before starting."
+        },
+        {
+          "name": "Sulfasalazine",
+          "mechanism": "DMARD with anti-inflammatory properties",
+          "dosing": "500 mg to 1 g twice daily, increasing to 2-3 g daily",
+          "sideEffects": "Nausea, headache, rash, liver function abnormalities",
+          "notes": "Monitor blood counts and liver function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Physical therapy",
+          "description": "Structured exercise program focusing on spinal mobility and posture",
+          "indications": "To improve function and reduce stiffness",
+          "risks": "Potential for exacerbation of pain if not tailored to the patient."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies; many patients experience periods of remission and exacerbation. Early diagnosis and treatment can improve quality of life and functional outcomes. Long-term complications may include spinal fusion and increased risk of osteoporosis.",
+    "complications": [
+      "Spinal deformity (kyphosis)",
+      "Osteoporosis and fractures",
+      "Uveitis leading to vision problems",
+      "Cardiovascular disease risk may be increased"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of AS, initiate investigations, manage acute flares, and refer to rheumatology for ongoing management. They should also educate patients on the importance of exercise and adherence to treatment.",
+    "escalation": "Refer to rheumatology if there is uncertainty in diagnosis, if symptoms are severe or unresponsive to initial management, or if there are complications such as uveitis or significant functional impairment.",
+    "keySafetyConsiderations": "Monitor for side effects of NSAIDs and DMARDs, including renal function and liver enzymes. Educate patients on signs of infection when on biologics, and ensure vaccinations are up to date."
+  }
+}

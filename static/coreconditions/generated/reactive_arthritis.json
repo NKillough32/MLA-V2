@@ -1,0 +1,133 @@
+{
+  "id": "reactive_arthritis",
+  "name": "Reactive arthritis",
+  "domains": [
+    "Rheumatology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:29:56.660382",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Reactive arthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nReactive arthritis is a type of inflammatory arthritis that occurs as a reaction to an infection in another part of the body, commonly following genitourinary or gastrointestinal infections.\n\n### Epidemiology\nReactive arthritis is more common in young adults, particularly males aged 20-40 years. It is associated with certain HLA-B27 antigen positivity and can occur after infections such as Chlamydia, Salmonella, Shigella, and Yersinia.\n\n### Essential Pathophysiology\nThe pathophysiology involves an immune-mediated response triggered by an infection, leading to inflammation in the joints. The exact mechanism is not fully understood, but it is thought to involve molecular mimicry and the activation of T-cells.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asymmetric joint pain and swelling\n- Morning stiffness\n- Enthesitis (inflammation at tendon insertion points)\n- Dactylitis (sausage digit)\n- Constitutional symptoms (fever, malaise)\n\n### Key Signs\n- Swollen joints (often knees, ankles, and feet)\n- Tenderness on palpation of affected joints\n- Limited range of motion in affected joints\n- Signs of enthesitis (e.g., heel pain)\n\n### Atypical Presentations\n- Ocular symptoms (conjunctivitis, uveitis)\n- Skin lesions (keratoderma blennorrhagicum, circinate balanitis)\n- Nail changes (pitting, onycholysis)\n\n### Red Flags Requiring Immediate Action\n- Severe joint pain and swelling\n- Persistent fever\n- Signs of systemic illness\n- Involvement of multiple joints\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Joint aspiration and synovial fluid analysis\n\n### Second-line Investigations\n- X-rays of affected joints\n- Ultrasound of joints\n- HLA-B27 antigen testing\n\n### Specialist Tests\n- Stool culture for gastrointestinal pathogens\n- Urethral swab for sexually transmitted infections (STIs)\n- Serological tests for Chlamydia and other pathogens\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by the presence of arthritis following an infection, and the exclusion of other causes of arthritis. The presence of HLA-B27 can support the diagnosis but is not definitive.\n\n### Key Differential Diagnoses to Exclude\n- Infectious arthritis\n- Gout\n- Psoriatic arthritis\n- Rheumatoid arthritis\n- Systemic lupus erythematosus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief\n- Corticosteroids (intra-articular injections)\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) if symptoms persist\n\n#### Emergency Procedures\n- Joint aspiration for diagnostic and therapeutic purposes.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued NSAIDs for symptom control\n- Physical therapy to maintain joint function\n\n#### Second-line Treatments\n- DMARDs such as sulfasalazine or methotrexate if there is persistent disease activity\n\n#### Monitoring Requirements\n- Regular follow-up for joint function and medication side effects\n- Monitoring for potential complications such as chronic arthritis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID that inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed, max 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Monitor renal function and gastrointestinal symptoms.\n\n#### Methotrexate\n- **Mechanism of Action**: DMARD that inhibits dihydrofolate reductase, leading to anti-inflammatory effects.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, bone marrow suppression, gastrointestinal toxicity.\n- **When to Use vs. Alternatives**: Regular monitoring of liver function tests and complete blood counts.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: A procedure to remove synovial fluid from a joint space for diagnostic and therapeutic purposes.\n- **Indications**: Swollen, painful joints to relieve pressure and obtain fluid for analysis.\n- **Key Risks/Complications**: Infection, bleeding, and damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for reactive arthritis is generally good, with many patients experiencing resolution of symptoms within 3-12 months. However, some may develop chronic arthritis.\n\n### Important Complications to Watch For\n- Chronic arthritis\n- Ocular complications (uveitis)\n- Skin lesions\n- Nail changes\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of reactive arthritis, perform initial investigations, and initiate management. They should also be aware of when to refer to a rheumatologist for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist if there is persistent joint pain despite initial management, signs of systemic illness, or if there are complications such as uveitis.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially if joint aspiration is performed. Be vigilant for potential side effects of medications, particularly NSAIDs and DMARDs.\n",
+  "content": {
+    "overview": {
+      "definition": "Reactive arthritis is a type of inflammatory arthritis that occurs as a reaction to an infection in another part of the body, commonly following genitourinary or gastrointestinal infections.",
+      "epidemiology": "Reactive arthritis is more common in young adults, particularly males aged 20-40 years. It is associated with certain HLA-B27 antigen positivity and can occur after infections such as Chlamydia, Salmonella, Shigella, and Yersinia.",
+      "pathophysiology": "The pathophysiology involves an immune-mediated response triggered by an infection, leading to inflammation in the joints. The exact mechanism is not fully understood, but it is thought to involve molecular mimicry and the activation of T-cells."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asymmetric joint pain and swelling",
+        "Morning stiffness",
+        "Enthesitis (inflammation at tendon insertion points)",
+        "Dactylitis (sausage digit)",
+        "Constitutional symptoms (fever, malaise)"
+      ],
+      "signs": [
+        "Swollen joints (often knees, ankles, and feet)",
+        "Tenderness on palpation of affected joints",
+        "Limited range of motion in affected joints",
+        "Signs of enthesitis (e.g., heel pain)"
+      ],
+      "atypicalPresentations": [
+        "Ocular symptoms (conjunctivitis, uveitis)",
+        "Skin lesions (keratoderma blennorrhagicum, circinate balanitis)",
+        "Nail changes (pitting, onycholysis)"
+      ],
+      "redFlags": [
+        "Severe joint pain and swelling",
+        "Persistent fever",
+        "Signs of systemic illness",
+        "Involvement of multiple joints"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Joint aspiration and synovial fluid analysis"
+      ],
+      "secondLine": [
+        "X-rays of affected joints",
+        "Ultrasound of joints",
+        "HLA-B27 antigen testing"
+      ],
+      "specialistTests": [
+        "Stool culture for gastrointestinal pathogens",
+        "Urethral swab for sexually transmitted infections (STIs)",
+        "Serological tests for Chlamydia and other pathogens"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by the presence of arthritis following an infection, and the exclusion of other causes of arthritis. The presence of HLA-B27 can support the diagnosis but is not definitive.",
+      "differentials": [
+        "Infectious arthritis",
+        "Gout",
+        "Psoriatic arthritis",
+        "Rheumatoid arthritis",
+        "Systemic lupus erythematosus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief",
+          "Corticosteroids (intra-articular injections)"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) if symptoms persist"
+        ],
+        "procedures": [
+          "Joint aspiration for diagnostic and therapeutic purposes."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued NSAIDs for symptom control",
+          "Physical therapy to maintain joint function"
+        ],
+        "secondLine": [
+          "DMARDs such as sulfasalazine or methotrexate if there is persistent disease activity"
+        ],
+        "monitoring": [
+          "Regular follow-up for joint function and medication side effects",
+          "Monitoring for potential complications such as chronic arthritis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID that inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.",
+          "dosing": "400-800 mg orally every 6-8 hours as needed, max 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Monitor renal function and gastrointestinal symptoms."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "DMARD that inhibits dihydrofolate reductase, leading to anti-inflammatory effects.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response.",
+          "sideEffects": "Hepatotoxicity, bone marrow suppression, gastrointestinal toxicity.",
+          "notes": "Regular monitoring of liver function tests and complete blood counts."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "A procedure to remove synovial fluid from a joint space for diagnostic and therapeutic purposes.",
+          "indications": "Swollen, painful joints to relieve pressure and obtain fluid for analysis.",
+          "risks": "Infection, bleeding, and damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for reactive arthritis is generally good, with many patients experiencing resolution of symptoms within 3-12 months. However, some may develop chronic arthritis.",
+    "complications": [
+      "Chronic arthritis",
+      "Ocular complications (uveitis)",
+      "Skin lesions",
+      "Nail changes"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of reactive arthritis, perform initial investigations, and initiate management. They should also be aware of when to refer to a rheumatologist for further evaluation and management.",
+    "escalation": "Refer to a rheumatologist if there is persistent joint pain despite initial management, signs of systemic illness, or if there are complications such as uveitis.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially if joint aspiration is performed. Be vigilant for potential side effects of medications, particularly NSAIDs and DMARDs."
+  }
+}

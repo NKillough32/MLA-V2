@@ -1,0 +1,147 @@
+{
+  "id": "gastric_cancer",
+  "name": "Gastric cancer?",
+  "domains": [
+    "Gastrointestinal",
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T19:39:09.267573",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastric cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastric cancer, also known as stomach cancer, is a malignant neoplasm that arises from the lining of the stomach. It is characterized by the uncontrolled growth of abnormal cells in the gastric mucosa, which can invade surrounding tissues and metastasize to distant sites.\n\n### Epidemiology\nGastric cancer is the fifth most common cancer worldwide and the third leading cause of cancer-related deaths. It is more prevalent in East Asia, Eastern Europe, and South America, with a higher incidence in males than females. Risk factors include age (most common in those over 50), smoking, dietary factors (high salt intake, low fruit and vegetable consumption), and certain infections (notably Helicobacter pylori).\n\n### Essential Pathophysiology\nThe pathophysiology of gastric cancer involves a multistep process of carcinogenesis, often starting with chronic gastritis, leading to intestinal metaplasia, dysplasia, and ultimately invasive cancer. Genetic mutations, environmental factors, and the presence of H. pylori contribute to this progression.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Early satiety\n- Unexplained weight loss\n- Abdominal pain or discomfort\n- Nausea and vomiting\n- Dysphagia (difficulty swallowing)\n- Anorexia\n- Fatigue\n\n### Key Signs\n- Palpable abdominal mass\n- Ascites\n- Lymphadenopathy (especially supraclavicular or periumbilical)\n- Signs of anemia (pallor, tachycardia)\n\n### Atypical Presentations\n- Gastric outlet obstruction\n- Gastric perforation\n- Metastatic symptoms (e.g., bone pain, jaundice)\n\n### Red Flags Requiring Immediate Action\n- Persistent abdominal pain\n- Unexplained weight loss >5% of body weight\n- Dysphagia\n- New onset anemia\n- Family history of gastric cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Upper gastrointestinal endoscopy (OGD) with biopsy\n- Barium swallow (less common)\n\n### Second-line Investigations\n- CT scan of the abdomen and pelvis\n- Endoscopic ultrasound (EUS)\n\n### Specialist Tests\n- PET scan for staging\n- Laparoscopy for staging and possible resection\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of biopsy specimens obtained during endoscopy. The presence of malignant cells in the gastric mucosa is essential for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Peptic ulcer disease\n- Gastritis\n- Gastroesophageal reflux disease (GERD)\n- Esophageal cancer\n- Pancreatic cancer\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (IV fluids, pain management)\n- Nutritional support if indicated\n\n#### Second-line Treatments\n- Chemotherapy (if indicated for advanced disease)\n- Palliative care measures\n\n#### Emergency Procedures\n- Endoscopic stenting for gastric outlet obstruction\n- Surgical intervention for perforation or obstruction\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection (gastrectomy) for localized disease\n- Chemotherapy (e.g., FOLFOX, CAPOX) for advanced disease\n\n#### Second-line Treatments\n- Radiation therapy for palliation or in combination with chemotherapy\n\n#### Monitoring Requirements\n- Regular follow-up with endoscopy and imaging for recurrence\n- Monitoring for treatment side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 75 mg/m² IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Often used in combination regimens.\n\n#### 5-Fluorouracil (5-FU)\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 400 mg/m² IV bolus followed by 600 mg/m² continuous infusion over 22 hours\n- **Key Side Effects/Contraindications**: Diarrhea, mucositis, myelosuppression\n- **When to Use vs. Alternatives**: Commonly used in combination with leucovorin.\n\n#### Trastuzumab\n- **Mechanism of Action**: Monoclonal antibody targeting HER2/neu receptor\n- **Typical Dosing Range**: 8 mg/kg loading dose, then 6 mg/kg every 3 weeks\n- **Key Side Effects/Contraindications**: Cardiotoxicity, infusion reactions\n- **When to Use vs. Alternatives**: Used in HER2-positive gastric cancer.\n\n### Procedures\n\n#### Gastrectomy\n- **What it Involves**: Surgical removal of part or all of the stomach\n- **Indications**: Curative treatment for localized gastric cancer\n- **Key Risks/Complications**: Bleeding, infection, anastomotic leak, nutritional deficiencies\n\n#### Endoscopic Mucosal Resection (EMR)\n- **What it Involves**: Endoscopic technique to remove early-stage cancer or precancerous lesions\n- **Indications**: Early gastric cancer without deep invasion\n- **Key Risks/Complications**: Perforation, bleeding, incomplete resection\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of gastric cancer depends on the stage at diagnosis. Early-stage gastric cancer has a better prognosis with a 5-year survival rate of over 90%, while advanced-stage disease has a significantly lower survival rate, often below 30%.\n\n### Important Complications to Watch For\n- Metastasis to liver, lungs, or peritoneum\n- Gastric outlet obstruction\n- Perforation of the stomach\n- Malnutrition and cachexia due to poor intake\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of gastric cancer, perform initial assessments, and refer patients for appropriate investigations. They should also be involved in the management of patients undergoing treatment, including monitoring for side effects and providing supportive care.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected gastric cancer should be referred to a gastroenterologist for endoscopy and biopsy. If advanced disease is suspected, referral to an oncologist for further management is essential.\n\n### Key Safety Considerations\nEnsure proper consent is obtained for procedures, monitor for signs of complications post-surgery, and manage side effects of chemotherapy effectively. Regularly assess nutritional status and provide dietary support as needed.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastric cancer, also known as stomach cancer, is a malignant neoplasm that arises from the lining of the stomach. It is characterized by the uncontrolled growth of abnormal cells in the gastric mucosa, which can invade surrounding tissues and metastasize to distant sites.",
+      "epidemiology": "Gastric cancer is the fifth most common cancer worldwide and the third leading cause of cancer-related deaths. It is more prevalent in East Asia, Eastern Europe, and South America, with a higher incidence in males than females. Risk factors include age (most common in those over 50), smoking, dietary factors (high salt intake, low fruit and vegetable consumption), and certain infections (notably Helicobacter pylori).",
+      "pathophysiology": "The pathophysiology of gastric cancer involves a multistep process of carcinogenesis, often starting with chronic gastritis, leading to intestinal metaplasia, dysplasia, and ultimately invasive cancer. Genetic mutations, environmental factors, and the presence of H. pylori contribute to this progression."
+    },
+    "recognition": {
+      "symptoms": [
+        "Early satiety",
+        "Unexplained weight loss",
+        "Abdominal pain or discomfort",
+        "Nausea and vomiting",
+        "Dysphagia (difficulty swallowing)",
+        "Anorexia",
+        "Fatigue"
+      ],
+      "signs": [
+        "Palpable abdominal mass",
+        "Ascites",
+        "Lymphadenopathy (especially supraclavicular or periumbilical)",
+        "Signs of anemia (pallor, tachycardia)"
+      ],
+      "atypicalPresentations": [
+        "Gastric outlet obstruction",
+        "Gastric perforation",
+        "Metastatic symptoms (e.g., bone pain, jaundice)"
+      ],
+      "redFlags": [
+        "Persistent abdominal pain",
+        "Unexplained weight loss >5% of body weight",
+        "Dysphagia",
+        "New onset anemia",
+        "Family history of gastric cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Upper gastrointestinal endoscopy (OGD) with biopsy",
+        "Barium swallow (less common)"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen and pelvis",
+        "Endoscopic ultrasound (EUS)"
+      ],
+      "specialistTests": [
+        "PET scan for staging",
+        "Laparoscopy for staging and possible resection"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of biopsy specimens obtained during endoscopy. The presence of malignant cells in the gastric mucosa is essential for diagnosis.",
+      "differentials": [
+        "Peptic ulcer disease",
+        "Gastritis",
+        "Gastroesophageal reflux disease (GERD)",
+        "Esophageal cancer",
+        "Pancreatic cancer"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (IV fluids, pain management)",
+          "Nutritional support if indicated"
+        ],
+        "secondLine": [
+          "Chemotherapy (if indicated for advanced disease)",
+          "Palliative care measures"
+        ],
+        "procedures": [
+          "Endoscopic stenting for gastric outlet obstruction",
+          "Surgical intervention for perforation or obstruction"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection (gastrectomy) for localized disease",
+          "Chemotherapy (e.g., FOLFOX, CAPOX) for advanced disease"
+        ],
+        "secondLine": [
+          "Radiation therapy for palliation or in combination with chemotherapy"
+        ],
+        "monitoring": [
+          "Regular follow-up with endoscopy and imaging for recurrence",
+          "Monitoring for treatment side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "75 mg/m² IV every 3 weeks",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, myelosuppression",
+          "notes": "Often used in combination regimens."
+        },
+        {
+          "name": "5-Fluorouracil (5-FU)",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "400 mg/m² IV bolus followed by 600 mg/m² continuous infusion over 22 hours",
+          "sideEffects": "Diarrhea, mucositis, myelosuppression",
+          "notes": "Commonly used in combination with leucovorin."
+        },
+        {
+          "name": "Trastuzumab",
+          "mechanism": "Monoclonal antibody targeting HER2/neu receptor",
+          "dosing": "8 mg/kg loading dose, then 6 mg/kg every 3 weeks",
+          "sideEffects": "Cardiotoxicity, infusion reactions",
+          "notes": "Used in HER2-positive gastric cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Gastrectomy",
+          "description": "Surgical removal of part or all of the stomach",
+          "indications": "Curative treatment for localized gastric cancer",
+          "risks": "Bleeding, infection, anastomotic leak, nutritional deficiencies"
+        },
+        {
+          "name": "Endoscopic Mucosal Resection (EMR)",
+          "description": "Endoscopic technique to remove early-stage cancer or precancerous lesions",
+          "indications": "Early gastric cancer without deep invasion",
+          "risks": "Perforation, bleeding, incomplete resection"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of gastric cancer depends on the stage at diagnosis. Early-stage gastric cancer has a better prognosis with a 5-year survival rate of over 90%, while advanced-stage disease has a significantly lower survival rate, often below 30%.",
+    "complications": [
+      "Metastasis to liver, lungs, or peritoneum",
+      "Gastric outlet obstruction",
+      "Perforation of the stomach",
+      "Malnutrition and cachexia due to poor intake"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of gastric cancer, perform initial assessments, and refer patients for appropriate investigations. They should also be involved in the management of patients undergoing treatment, including monitoring for side effects and providing supportive care.",
+    "escalation": "Patients with suspected gastric cancer should be referred to a gastroenterologist for endoscopy and biopsy. If advanced disease is suspected, referral to an oncologist for further management is essential.",
+    "keySafetyConsiderations": "Ensure proper consent is obtained for procedures, monitor for signs of complications post-surgery, and manage side effects of chemotherapy effectively. Regularly assess nutritional status and provide dietary support as needed."
+  }
+}

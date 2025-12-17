@@ -1,0 +1,135 @@
+{
+  "id": "cholecystitis",
+  "name": "Cholecystitis",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:15:36.498247",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cholecystitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCholecystitis is the inflammation of the gallbladder, often due to obstruction of the cystic duct by gallstones, leading to bile accumulation and infection.\n\n### Epidemiology\nCholecystitis is common, affecting approximately 10-15% of the population, with a higher incidence in women and individuals over 40 years of age.\n\n### Essential Pathophysiology\nThe condition typically arises from the obstruction of the cystic duct by gallstones, leading to increased pressure within the gallbladder, ischemia, and inflammation. Bacterial infection may also occur, contributing to the inflammatory process.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Right upper quadrant pain\n- Nausea and vomiting\n- Fever\n- Jaundice (in some cases)\n- Anorexia\n\n### Key Signs\n- Tenderness in the right upper quadrant\n- Murphy's sign (pain on inspiration when palpating the gallbladder)\n- Fever\n- Tachycardia\n\n### Atypical Presentations\n- Elderly patients may present with confusion or altered mental status\n- Diabetic patients may have atypical symptoms due to neuropathy\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Signs of sepsis (fever, tachycardia, hypotension)\n- Jaundice\n- Persistent vomiting\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound of the abdomen (to assess for gallstones and gallbladder wall thickening)\n- Laboratory tests (CBC, liver function tests)\n\n### Second-line Investigations\n- CT scan of the abdomen (if ultrasound is inconclusive)\n- HIDA scan (to assess gallbladder function)\n\n### Specialist Tests\n- Endoscopic retrograde cholangiopancreatography (ERCP) if biliary obstruction is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically based on clinical presentation, ultrasound findings (gallstones, thickened gallbladder wall, pericholecystic fluid), and laboratory results (elevated white blood cell count, liver enzymes).\n\n### Key Differential Diagnoses to Exclude\n- Biliary colic\n- Pancreatitis\n- Peptic ulcer disease\n- Acute hepatitis\n- Renal colic\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NPO (nothing by mouth)\n- IV fluids\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Antibiotics (e.g., piperacillin-tazobactam or ceftriaxone plus metronidazole)\n\n#### Second-line Treatments\n- Surgical consultation for cholecystectomy (laparoscopic preferred)\n\n#### Emergency Procedures\n- Laparoscopic cholecystectomy (removal of the gallbladder)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (low-fat diet)\n- Monitoring for symptoms\n\n#### Second-line Treatments\n- Elective cholecystectomy if symptomatic\n\n#### Monitoring Requirements\n- Regular follow-up for symptom management and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria\n- **Typical Dosing Range**: 3.375 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Third-generation cephalosporin antibiotic effective against gram-negative bacteria\n- **Typical Dosing Range**: 1-2 g IV daily\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, biliary sludging\n- **When to Use vs. Alternatives**: Monitor for signs of biliary sludging in prolonged use.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic effective against anaerobic bacteria\n- **Typical Dosing Range**: 500 mg IV every 8 hours\n- **Key Side Effects/Contraindications**: Nausea, headache, metallic taste\n- **When to Use vs. Alternatives**: Avoid alcohol during treatment.\n\n### Procedures\n\n#### Laparoscopic cholecystectomy\n- **What it Involves**: Minimally invasive surgery to remove the gallbladder using small incisions and a camera.\n- **Indications**: Acute cholecystitis, chronic cholecystitis, symptomatic gallstones.\n- **Key Risks/Complications**: Bleeding, infection, injury to surrounding structures (bile ducts, intestines).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis is generally good with timely surgical intervention. Complications can arise if untreated, including perforation, abscess formation, and pancreatitis.\n\n### Important Complications to Watch For\n- Perforation of the gallbladder\n- Cholecystenteric fistula\n- Pancreatitis\n- Biliary obstruction\n- Sepsis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate management, and refer to surgical teams as needed. They should also monitor for complications and provide supportive care.\n\n### When to Escalate to Senior/Specialist\nEscalate care to surgical teams for patients with severe symptoms, signs of sepsis, or those not improving with initial management.\n\n### Key Safety Considerations\nEnsure timely recognition of red flags, monitor vital signs closely, and maintain clear communication with the surgical team regarding patient status.\n",
+  "content": {
+    "overview": {
+      "definition": "Cholecystitis is the inflammation of the gallbladder, often due to obstruction of the cystic duct by gallstones, leading to bile accumulation and infection.",
+      "epidemiology": "Cholecystitis is common, affecting approximately 10-15% of the population, with a higher incidence in women and individuals over 40 years of age.",
+      "pathophysiology": "The condition typically arises from the obstruction of the cystic duct by gallstones, leading to increased pressure within the gallbladder, ischemia, and inflammation. Bacterial infection may also occur, contributing to the inflammatory process."
+    },
+    "recognition": {
+      "symptoms": [
+        "Right upper quadrant pain",
+        "Nausea and vomiting",
+        "Fever",
+        "Jaundice (in some cases)",
+        "Anorexia"
+      ],
+      "signs": [
+        "Tenderness in the right upper quadrant",
+        "Murphy's sign (pain on inspiration when palpating the gallbladder)",
+        "Fever",
+        "Tachycardia"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion or altered mental status",
+        "Diabetic patients may have atypical symptoms due to neuropathy"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Signs of sepsis (fever, tachycardia, hypotension)",
+        "Jaundice",
+        "Persistent vomiting"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound of the abdomen (to assess for gallstones and gallbladder wall thickening)",
+        "Laboratory tests (CBC, liver function tests)"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen (if ultrasound is inconclusive)",
+        "HIDA scan (to assess gallbladder function)"
+      ],
+      "specialistTests": [
+        "Endoscopic retrograde cholangiopancreatography (ERCP) if biliary obstruction is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically based on clinical presentation, ultrasound findings (gallstones, thickened gallbladder wall, pericholecystic fluid), and laboratory results (elevated white blood cell count, liver enzymes).",
+      "differentials": [
+        "Biliary colic",
+        "Pancreatitis",
+        "Peptic ulcer disease",
+        "Acute hepatitis",
+        "Renal colic"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NPO (nothing by mouth)",
+          "IV fluids",
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Antibiotics (e.g., piperacillin-tazobactam or ceftriaxone plus metronidazole)"
+        ],
+        "secondLine": [
+          "Surgical consultation for cholecystectomy (laparoscopic preferred)"
+        ],
+        "procedures": [
+          "Laparoscopic cholecystectomy (removal of the gallbladder)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (low-fat diet)",
+          "Monitoring for symptoms"
+        ],
+        "secondLine": [
+          "Elective cholecystectomy if symptomatic"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom management and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria",
+          "dosing": "3.375 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Third-generation cephalosporin antibiotic effective against gram-negative bacteria",
+          "dosing": "1-2 g IV daily",
+          "sideEffects": "Allergic reactions, diarrhea, biliary sludging",
+          "notes": "Monitor for signs of biliary sludging in prolonged use."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic effective against anaerobic bacteria",
+          "dosing": "500 mg IV every 8 hours",
+          "sideEffects": "Nausea, headache, metallic taste",
+          "notes": "Avoid alcohol during treatment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparoscopic cholecystectomy",
+          "description": "Minimally invasive surgery to remove the gallbladder using small incisions and a camera.",
+          "indications": "Acute cholecystitis, chronic cholecystitis, symptomatic gallstones.",
+          "risks": "Bleeding, infection, injury to surrounding structures (bile ducts, intestines)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis is generally good with timely surgical intervention. Complications can arise if untreated, including perforation, abscess formation, and pancreatitis.",
+    "complications": [
+      "Perforation of the gallbladder",
+      "Cholecystenteric fistula",
+      "Pancreatitis",
+      "Biliary obstruction",
+      "Sepsis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate management, and refer to surgical teams as needed. They should also monitor for complications and provide supportive care.",
+    "escalation": "Escalate care to surgical teams for patients with severe symptoms, signs of sepsis, or those not improving with initial management.",
+    "keySafetyConsiderations": "Ensure timely recognition of red flags, monitor vital signs closely, and maintain clear communication with the surgical team regarding patient status."
+  }
+}

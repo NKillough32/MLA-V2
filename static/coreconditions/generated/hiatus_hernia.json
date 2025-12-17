@@ -1,0 +1,129 @@
+{
+  "id": "hiatus_hernia",
+  "name": "Hiatus Hernia",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:17:23.468728",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hiatus Hernia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA hiatus hernia occurs when a part of the stomach protrudes through the diaphragm into the thoracic cavity. It is classified into two main types: sliding (type I) and paraesophageal (type II).\n\n### Epidemiology\nHiatus hernias are common, particularly in individuals over 50 years of age, with a prevalence of approximately 10-20% in the general population. Risk factors include obesity, age, and smoking.\n\n### Essential Pathophysiology\nThe diaphragm normally helps to keep the stomach in place. In a hiatus hernia, the weakening of the diaphragm or increased intra-abdominal pressure allows the stomach to move upward. Sliding hernias are characterized by the gastroesophageal junction moving above the diaphragm, while paraesophageal hernias involve the stomach pushing through the diaphragm alongside the esophagus.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Heartburn\n- Regurgitation\n- Dysphagia\n- Chest pain\n- Bloating\n- Nausea\n\n### Key Signs\n- Epigastric tenderness\n- Signs of esophagitis on endoscopy\n\n### Atypical Presentations\n- Chronic cough\n- Asthma-like symptoms\n- Laryngeal symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe chest pain\n- Unintentional weight loss\n- Dysphagia that worsens\n- Vomiting blood or black stools\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Upper gastrointestinal endoscopy (OGD)\n- Barium swallow study\n\n### Second-line Investigations\n- Esophageal manometry\n- 24-hour pH monitoring\n\n### Specialist Tests\n- CT scan of the abdomen and chest\n- Esophageal ultrasound\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically made based on clinical history, symptoms, and imaging studies such as endoscopy or barium swallow. A sliding hernia is confirmed if the gastroesophageal junction is above the diaphragm, while a paraesophageal hernia is confirmed if the stomach is seen alongside the esophagus in the thoracic cavity.\n\n### Key Differential Diagnoses to Exclude\n- Gastroesophageal reflux disease (GERD)\n- Esophageal cancer\n- Peptic ulcer disease\n- Cholecystitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Proton pump inhibitors (PPIs)\n- Antacids\n\n#### Second-line Treatments\n- H2 receptor antagonists\n- Prokinetic agents\n\n#### Emergency Procedures\n- Endoscopic dilation for strictures\n- Surgical repair for incarcerated hernias\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (dietary changes, weight loss, smoking cessation)\n- PPIs for symptom control\n\n#### Second-line Treatments\n- Surgical intervention (Nissen fundoplication) for refractory cases or complications\n- Esophageal dilation if strictures are present\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and medication side effects\n- Endoscopic surveillance if Barrett's esophagus is suspected\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Omeprazole\n- **Mechanism of Action**: Proton pump inhibitor that reduces gastric acid secretion.\n- **Typical Dosing Range**: 20-40 mg once daily before meals.\n- **Key Side Effects/Contraindications**: Headache, nausea, diarrhea, abdominal pain, risk of Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Long-term use may lead to vitamin B12 deficiency and osteoporosis.\n\n#### Ranitidine\n- **Mechanism of Action**: H2 receptor antagonist that decreases gastric acid production.\n- **Typical Dosing Range**: 150 mg twice daily or 300 mg once daily at bedtime.\n- **Key Side Effects/Contraindications**: Headache, dizziness, gastrointestinal disturbances.\n- **When to Use vs. Alternatives**: Less effective than PPIs for severe GERD.\n\n### Procedures\n\n#### Nissen fundoplication\n- **What it Involves**: Surgical procedure that involves wrapping the top of the stomach around the lower esophagus to prevent reflux.\n- **Indications**: Severe GERD not responsive to medical therapy, large paraesophageal hernias, or complications like esophagitis.\n- **Key Risks/Complications**: Infection, bleeding, dysphagia, gas bloat syndrome, and recurrence of hernia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for hiatus hernia is generally good with appropriate management. Many patients respond well to lifestyle modifications and medications. Surgical intervention can provide relief for those with severe symptoms or complications.\n\n### Important Complications to Watch For\n- Esophagitis\n- Strangulation of the hernia\n- Barrett's esophagus\n- Esophageal cancer\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hiatus hernia, initiate appropriate investigations, manage acute symptoms, and refer patients for specialist care when necessary. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to a gastroenterologist or surgeon if there are red flags, severe symptoms, or if the patient does not respond to initial management.\n\n### Key Safety Considerations\nMonitor for signs of complications such as strangulation or severe esophagitis. Ensure appropriate follow-up for patients on long-term PPIs to prevent potential side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "A hiatus hernia occurs when a part of the stomach protrudes through the diaphragm into the thoracic cavity. It is classified into two main types: sliding (type I) and paraesophageal (type II).",
+      "epidemiology": "Hiatus hernias are common, particularly in individuals over 50 years of age, with a prevalence of approximately 10-20% in the general population. Risk factors include obesity, age, and smoking.",
+      "pathophysiology": "The diaphragm normally helps to keep the stomach in place. In a hiatus hernia, the weakening of the diaphragm or increased intra-abdominal pressure allows the stomach to move upward. Sliding hernias are characterized by the gastroesophageal junction moving above the diaphragm, while paraesophageal hernias involve the stomach pushing through the diaphragm alongside the esophagus."
+    },
+    "recognition": {
+      "symptoms": [
+        "Heartburn",
+        "Regurgitation",
+        "Dysphagia",
+        "Chest pain",
+        "Bloating",
+        "Nausea"
+      ],
+      "signs": [
+        "Epigastric tenderness",
+        "Signs of esophagitis on endoscopy"
+      ],
+      "atypicalPresentations": [
+        "Chronic cough",
+        "Asthma-like symptoms",
+        "Laryngeal symptoms"
+      ],
+      "redFlags": [
+        "Severe chest pain",
+        "Unintentional weight loss",
+        "Dysphagia that worsens",
+        "Vomiting blood or black stools"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Upper gastrointestinal endoscopy (OGD)",
+        "Barium swallow study"
+      ],
+      "secondLine": [
+        "Esophageal manometry",
+        "24-hour pH monitoring"
+      ],
+      "specialistTests": [
+        "CT scan of the abdomen and chest",
+        "Esophageal ultrasound"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically made based on clinical history, symptoms, and imaging studies such as endoscopy or barium swallow. A sliding hernia is confirmed if the gastroesophageal junction is above the diaphragm, while a paraesophageal hernia is confirmed if the stomach is seen alongside the esophagus in the thoracic cavity.",
+      "differentials": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Esophageal cancer",
+        "Peptic ulcer disease",
+        "Cholecystitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Proton pump inhibitors (PPIs)",
+          "Antacids"
+        ],
+        "secondLine": [
+          "H2 receptor antagonists",
+          "Prokinetic agents"
+        ],
+        "procedures": [
+          "Endoscopic dilation for strictures",
+          "Surgical repair for incarcerated hernias"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (dietary changes, weight loss, smoking cessation)",
+          "PPIs for symptom control"
+        ],
+        "secondLine": [
+          "Surgical intervention (Nissen fundoplication) for refractory cases or complications",
+          "Esophageal dilation if strictures are present"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and medication side effects",
+          "Endoscopic surveillance if Barrett's esophagus is suspected"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Omeprazole",
+          "mechanism": "Proton pump inhibitor that reduces gastric acid secretion.",
+          "dosing": "20-40 mg once daily before meals.",
+          "sideEffects": "Headache, nausea, diarrhea, abdominal pain, risk of Clostridium difficile infection.",
+          "notes": "Long-term use may lead to vitamin B12 deficiency and osteoporosis."
+        },
+        {
+          "name": "Ranitidine",
+          "mechanism": "H2 receptor antagonist that decreases gastric acid production.",
+          "dosing": "150 mg twice daily or 300 mg once daily at bedtime.",
+          "sideEffects": "Headache, dizziness, gastrointestinal disturbances.",
+          "notes": "Less effective than PPIs for severe GERD."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nissen fundoplication",
+          "description": "Surgical procedure that involves wrapping the top of the stomach around the lower esophagus to prevent reflux.",
+          "indications": "Severe GERD not responsive to medical therapy, large paraesophageal hernias, or complications like esophagitis.",
+          "risks": "Infection, bleeding, dysphagia, gas bloat syndrome, and recurrence of hernia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for hiatus hernia is generally good with appropriate management. Many patients respond well to lifestyle modifications and medications. Surgical intervention can provide relief for those with severe symptoms or complications.",
+    "complications": [
+      "Esophagitis",
+      "Strangulation of the hernia",
+      "Barrett's esophagus",
+      "Esophageal cancer"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hiatus hernia, initiate appropriate investigations, manage acute symptoms, and refer patients for specialist care when necessary. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to a gastroenterologist or surgeon if there are red flags, severe symptoms, or if the patient does not respond to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of complications such as strangulation or severe esophagitis. Ensure appropriate follow-up for patients on long-term PPIs to prevent potential side effects."
+  }
+}

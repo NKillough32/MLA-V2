@@ -1,0 +1,149 @@
+{
+  "id": "infective_keratitis",
+  "name": "Infective keratitis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:40:20.064802",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Infective keratitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInfective keratitis is an inflammation of the cornea caused by infectious agents, including bacteria, viruses, fungi, or parasites, leading to corneal ulceration and potential vision loss.\n\n### Epidemiology\nInfective keratitis is a significant cause of ocular morbidity worldwide, particularly in developing countries. It is more common in contact lens wearers, individuals with ocular surface disease, and those with compromised immune systems.\n\n### Essential Pathophysiology\nInfective keratitis occurs when pathogens invade the corneal epithelium, leading to inflammation and ulceration. The cornea's avascular nature and the presence of immune cells in the stroma play a crucial role in the pathophysiology, as the immune response can lead to further tissue damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Redness of the eye\n- Pain or discomfort in the eye\n- Decreased vision\n- Photophobia (sensitivity to light)\n- Tearing or discharge\n\n### Key Signs\n- Corneal opacity or ulceration\n- Increased lacrimation\n- Conjunctival injection\n- Hypopyon (pus in the anterior chamber)\n- Corneal infiltrates\n\n### Atypical Presentations\n- Minimal pain despite significant corneal involvement\n- Chronic keratitis with intermittent symptoms\n- Presence of systemic symptoms in cases of viral or fungal infections\n\n### Red Flags Requiring Immediate Action\n- Severe pain or discomfort\n- Rapid vision loss\n- Presence of hypopyon\n- History of recent eye surgery or trauma\n- Contact lens use\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Slit-lamp examination\n- Corneal scraping for microbiological analysis\n- Fluorescein staining to assess corneal integrity\n\n### Second-line Investigations\n- Culture and sensitivity testing of corneal scrapings\n- PCR for viral infections (e.g., herpes simplex virus)\n- Topical anesthetic to facilitate examination\n\n### Specialist Tests\n- Confocal microscopy for early detection of fungal keratitis\n- Anterior segment optical coherence tomography (OCT)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical findings, including symptoms, signs, and microbiological confirmation from corneal scrapings.\n\n### Key Differential Diagnoses to Exclude\n- Herpes simplex keratitis\n- Acanthamoeba keratitis\n- Bacterial keratitis (e.g., Pseudomonas, Staphylococcus)\n- Fungal keratitis (e.g., Fusarium, Aspergillus)\n- Non-infectious keratitis (e.g., autoimmune conditions)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical broad-spectrum antibiotics (e.g., ciprofloxacin)\n- Topical antiviral agents (e.g., acyclovir for herpes simplex keratitis)\n\n#### Second-line Treatments\n- Topical antifungal agents (e.g., natamycin for fungal keratitis)\n- Systemic antibiotics or antivirals if indicated\n\n#### Emergency Procedures\n- Corneal scraping for culture\n- Therapeutic contact lens fitting to protect the cornea\n- Possible surgical intervention (e.g., corneal transplant) if severe\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with slit-lamp examination\n- Topical lubricants to manage symptoms\n\n#### Second-line Treatments\n- Consideration of immunosuppressive therapy in autoimmune cases\n- Referral to corneal specialist for persistent cases\n\n#### Monitoring Requirements\n- Visual acuity assessments\n- Monitoring for complications such as scarring or perforation\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Broad-spectrum fluoroquinolone antibiotic effective against gram-negative bacteria.\n- **Typical Dosing Range**: 1 drop every 1-2 hours for the first 48 hours, then tapering based on clinical response.\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions, potential for corneal toxicity with prolonged use.\n- **When to Use vs. Alternatives**: Consider in cases of suspected bacterial keratitis.\n\n#### Acyclovir\n- **Mechanism of Action**: Antiviral agent effective against herpes simplex virus.\n- **Typical Dosing Range**: Topical: 5 times daily; Systemic: 400 mg orally 5 times daily for 7-10 days.\n- **Key Side Effects/Contraindications**: Local irritation, systemic effects include nausea, diarrhea, headache.\n- **When to Use vs. Alternatives**: Essential for herpes simplex keratitis.\n\n#### Natamycin\n- **Mechanism of Action**: Antifungal agent effective against filamentous fungi.\n- **Typical Dosing Range**: 1 drop every hour for the first 48 hours, then taper based on clinical response.\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions.\n- **When to Use vs. Alternatives**: Used in cases of fungal keratitis.\n\n### Procedures\n\n#### Corneal scraping\n- **What it Involves**: A procedure to obtain samples from the corneal surface for microbiological analysis.\n- **Indications**: Suspected infective keratitis to identify the causative organism.\n- **Key Risks/Complications**: Corneal perforation, infection, bleeding.\n\n#### Therapeutic contact lens fitting\n- **What it Involves**: Fitting of a contact lens to protect the cornea and promote healing.\n- **Indications**: Severe keratitis with epithelial defects.\n- **Key Risks/Complications**: Risk of further infection, discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of infective keratitis varies depending on the causative organism, promptness of treatment, and the presence of underlying conditions. Early diagnosis and treatment can lead to good outcomes, while delayed treatment may result in significant vision loss or corneal scarring.\n\n### Important Complications to Watch For\n- Corneal scarring\n- Corneal perforation\n- Endophthalmitis (infection of the interior of the eye)\n- Vision loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms and signs of infective keratitis, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to an ophthalmologist for further management.\n\n### When to Escalate to Senior/Specialist\nIf there is rapid deterioration in vision, severe pain, or signs of corneal perforation, immediate referral to an ophthalmologist is necessary.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and use of personal protective equipment when examining patients. Educate patients on the importance of compliance with treatment and follow-up appointments to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Infective keratitis is an inflammation of the cornea caused by infectious agents, including bacteria, viruses, fungi, or parasites, leading to corneal ulceration and potential vision loss.",
+      "epidemiology": "Infective keratitis is a significant cause of ocular morbidity worldwide, particularly in developing countries. It is more common in contact lens wearers, individuals with ocular surface disease, and those with compromised immune systems.",
+      "pathophysiology": "Infective keratitis occurs when pathogens invade the corneal epithelium, leading to inflammation and ulceration. The cornea's avascular nature and the presence of immune cells in the stroma play a crucial role in the pathophysiology, as the immune response can lead to further tissue damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Redness of the eye",
+        "Pain or discomfort in the eye",
+        "Decreased vision",
+        "Photophobia (sensitivity to light)",
+        "Tearing or discharge"
+      ],
+      "signs": [
+        "Corneal opacity or ulceration",
+        "Increased lacrimation",
+        "Conjunctival injection",
+        "Hypopyon (pus in the anterior chamber)",
+        "Corneal infiltrates"
+      ],
+      "atypicalPresentations": [
+        "Minimal pain despite significant corneal involvement",
+        "Chronic keratitis with intermittent symptoms",
+        "Presence of systemic symptoms in cases of viral or fungal infections"
+      ],
+      "redFlags": [
+        "Severe pain or discomfort",
+        "Rapid vision loss",
+        "Presence of hypopyon",
+        "History of recent eye surgery or trauma",
+        "Contact lens use"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Slit-lamp examination",
+        "Corneal scraping for microbiological analysis",
+        "Fluorescein staining to assess corneal integrity"
+      ],
+      "secondLine": [
+        "Culture and sensitivity testing of corneal scrapings",
+        "PCR for viral infections (e.g., herpes simplex virus)",
+        "Topical anesthetic to facilitate examination"
+      ],
+      "specialistTests": [
+        "Confocal microscopy for early detection of fungal keratitis",
+        "Anterior segment optical coherence tomography (OCT)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical findings, including symptoms, signs, and microbiological confirmation from corneal scrapings.",
+      "differentials": [
+        "Herpes simplex keratitis",
+        "Acanthamoeba keratitis",
+        "Bacterial keratitis (e.g., Pseudomonas, Staphylococcus)",
+        "Fungal keratitis (e.g., Fusarium, Aspergillus)",
+        "Non-infectious keratitis (e.g., autoimmune conditions)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical broad-spectrum antibiotics (e.g., ciprofloxacin)",
+          "Topical antiviral agents (e.g., acyclovir for herpes simplex keratitis)"
+        ],
+        "secondLine": [
+          "Topical antifungal agents (e.g., natamycin for fungal keratitis)",
+          "Systemic antibiotics or antivirals if indicated"
+        ],
+        "procedures": [
+          "Corneal scraping for culture",
+          "Therapeutic contact lens fitting to protect the cornea",
+          "Possible surgical intervention (e.g., corneal transplant) if severe"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with slit-lamp examination",
+          "Topical lubricants to manage symptoms"
+        ],
+        "secondLine": [
+          "Consideration of immunosuppressive therapy in autoimmune cases",
+          "Referral to corneal specialist for persistent cases"
+        ],
+        "monitoring": [
+          "Visual acuity assessments",
+          "Monitoring for complications such as scarring or perforation"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Broad-spectrum fluoroquinolone antibiotic effective against gram-negative bacteria.",
+          "dosing": "1 drop every 1-2 hours for the first 48 hours, then tapering based on clinical response.",
+          "sideEffects": "Local irritation, allergic reactions, potential for corneal toxicity with prolonged use.",
+          "notes": "Consider in cases of suspected bacterial keratitis."
+        },
+        {
+          "name": "Acyclovir",
+          "mechanism": "Antiviral agent effective against herpes simplex virus.",
+          "dosing": "Topical: 5 times daily; Systemic: 400 mg orally 5 times daily for 7-10 days.",
+          "sideEffects": "Local irritation, systemic effects include nausea, diarrhea, headache.",
+          "notes": "Essential for herpes simplex keratitis."
+        },
+        {
+          "name": "Natamycin",
+          "mechanism": "Antifungal agent effective against filamentous fungi.",
+          "dosing": "1 drop every hour for the first 48 hours, then taper based on clinical response.",
+          "sideEffects": "Local irritation, allergic reactions.",
+          "notes": "Used in cases of fungal keratitis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Corneal scraping",
+          "description": "A procedure to obtain samples from the corneal surface for microbiological analysis.",
+          "indications": "Suspected infective keratitis to identify the causative organism.",
+          "risks": "Corneal perforation, infection, bleeding."
+        },
+        {
+          "name": "Therapeutic contact lens fitting",
+          "description": "Fitting of a contact lens to protect the cornea and promote healing.",
+          "indications": "Severe keratitis with epithelial defects.",
+          "risks": "Risk of further infection, discomfort."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of infective keratitis varies depending on the causative organism, promptness of treatment, and the presence of underlying conditions. Early diagnosis and treatment can lead to good outcomes, while delayed treatment may result in significant vision loss or corneal scarring.",
+    "complications": [
+      "Corneal scarring",
+      "Corneal perforation",
+      "Endophthalmitis (infection of the interior of the eye)",
+      "Vision loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms and signs of infective keratitis, initiate appropriate investigations, and start empirical treatment while ensuring timely referral to an ophthalmologist for further management.",
+    "escalation": "If there is rapid deterioration in vision, severe pain, or signs of corneal perforation, immediate referral to an ophthalmologist is necessary.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and use of personal protective equipment when examining patients. Educate patients on the importance of compliance with treatment and follow-up appointments to prevent complications."
+  }
+}

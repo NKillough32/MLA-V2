@@ -1,0 +1,151 @@
+{
+  "id": "post_operative_pain",
+  "name": "Post-operative pain",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:05:26.712098",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Post-operative pain: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPost-operative pain is the discomfort experienced by patients following surgical procedures, which can vary in intensity and duration depending on the type of surgery, individual pain tolerance, and management strategies employed.\n\n### Epidemiology\nPost-operative pain affects a significant proportion of surgical patients, with studies indicating that 20-80% of patients experience moderate to severe pain after surgery, depending on the procedure and patient factors.\n\n### Essential Pathophysiology\nPost-operative pain arises from a combination of nociceptive (somatic and visceral) and neuropathic mechanisms. Tissue injury during surgery activates nociceptors, leading to the release of inflammatory mediators (e.g., prostaglandins, bradykinin) that sensitize pain pathways. Central sensitization may also occur, amplifying pain perception.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Localized pain at the surgical site\n- Radiating pain\n- Muscle spasms\n- Nausea and vomiting (due to pain)\n- Anxiety and restlessness\n\n### Key Signs\n- Increased heart rate\n- Elevated blood pressure\n- Facial grimacing\n- Guarding behavior\n- Reduced mobility\n\n### Atypical Presentations\n- Chronic pain development (post-surgical chronic pain syndrome)\n- Pain out of proportion to the surgical procedure\n- Psychological distress manifesting as pain\n\n### Red Flags Requiring Immediate Action\n- Severe, unrelenting pain not responsive to analgesia\n- Signs of infection (fever, redness, swelling)\n- Neurological deficits (e.g., weakness, numbness)\n- Signs of compartment syndrome (severe pain, pallor, pulselessness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of pain (using pain scales)\n- Review of surgical notes and procedure details\n\n### Second-line Investigations\n- Imaging studies (e.g., X-ray, ultrasound) if complications are suspected\n- Laboratory tests (e.g., CBC, CRP) to rule out infection\n\n### Specialist Tests\n- Referral to pain management services for complex cases\n- Nerve blocks or other interventional pain management techniques\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of post-operative pain is primarily clinical, based on patient-reported pain levels and the context of recent surgical intervention.\n\n### Key Differential Diagnoses to Exclude\n- Infection (e.g., abscess, cellulitis)\n- Hemorrhage or hematoma\n- Nerve injury or neuropathic pain\n- Visceral pain from internal organ complications (e.g., bowel obstruction)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-opioid analgesics (e.g., paracetamol, NSAIDs)\n- Opioids (e.g., morphine, oxycodone) for severe pain\n\n#### Second-line Treatments\n- Adjunctive medications (e.g., gabapentin, pregabalin) for neuropathic pain\n- Regional anesthesia techniques (e.g., nerve blocks)\n\n#### Emergency Procedures\n- Epidural analgesia for major surgeries (e.g., thoracic, abdominal)\n- Patient-controlled analgesia (PCA) for self-administered pain relief\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Multimodal analgesia approach (combining medications)\n- Physical therapy and rehabilitation\n\n#### Second-line Treatments\n- Cognitive behavioral therapy for pain management\n- Referral to pain specialists for chronic pain management\n\n#### Monitoring Requirements\n- Regular assessment of pain levels and functional status\n- Monitoring for side effects of analgesics\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor, reducing inflammation and pain.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal irritation, renal impairment, cardiovascular risks.\n- **When to Use vs. Alternatives**: Useful for inflammatory pain.\n\n#### Morphine\n- **Mechanism of Action**: Opioid receptor agonist, altering pain perception and response.\n- **Typical Dosing Range**: 2.5-10 mg IV/PO every 4 hours as needed, titrate based on pain relief.\n- **Key Side Effects/Contraindications**: Respiratory depression, constipation, sedation.\n- **When to Use vs. Alternatives**: Consider for moderate to severe pain.\n\n#### Gabapentin\n- **Mechanism of Action**: Modulates excitatory neurotransmitter release, effective for neuropathic pain.\n- **Typical Dosing Range**: 300 mg on day 1, increase to 900-1800 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema.\n- **When to Use vs. Alternatives**: Consider for neuropathic pain adjunct.\n\n### Procedures\n\n#### Epidural analgesia\n- **What it Involves**: Placement of a catheter in the epidural space to deliver local anesthetics and/or opioids.\n- **Indications**: Major abdominal or thoracic surgeries, labor pain management.\n- **Key Risks/Complications**: Infection, hematoma, nerve injury, urinary retention.\n\n#### Patient-controlled analgesia (PCA)\n- **What it Involves**: Device allowing patients to self-administer predetermined doses of analgesics.\n- **Indications**: Post-operative pain management, especially in opioid-tolerant patients.\n- **Key Risks/Complications**: Overdose, under-treatment, potential for misuse.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience resolution of post-operative pain within a few days to weeks, but some may develop chronic pain syndromes requiring ongoing management.\n\n### Important Complications to Watch For\n- Chronic pain syndromes\n- Opioid dependence or misuse\n- Infection at the surgical site\n- Delayed recovery due to unmanaged pain\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and manage post-operative pain, ensuring appropriate analgesia is provided, monitoring for complications, and escalating care when necessary.\n\n### When to Escalate to Senior/Specialist\nIf pain is unmanageable or associated with red flags, escalate to the surgical team or pain management specialists.\n\n### Key Safety Considerations\nMonitor for signs of opioid overdose (e.g., respiratory depression), ensure appropriate dosing of analgesics, and assess for potential drug interactions.\n",
+  "content": {
+    "overview": {
+      "definition": "Post-operative pain is the discomfort experienced by patients following surgical procedures, which can vary in intensity and duration depending on the type of surgery, individual pain tolerance, and management strategies employed.",
+      "epidemiology": "Post-operative pain affects a significant proportion of surgical patients, with studies indicating that 20-80% of patients experience moderate to severe pain after surgery, depending on the procedure and patient factors.",
+      "pathophysiology": "Post-operative pain arises from a combination of nociceptive (somatic and visceral) and neuropathic mechanisms. Tissue injury during surgery activates nociceptors, leading to the release of inflammatory mediators (e.g., prostaglandins, bradykinin) that sensitize pain pathways. Central sensitization may also occur, amplifying pain perception."
+    },
+    "recognition": {
+      "symptoms": [
+        "Localized pain at the surgical site",
+        "Radiating pain",
+        "Muscle spasms",
+        "Nausea and vomiting (due to pain)",
+        "Anxiety and restlessness"
+      ],
+      "signs": [
+        "Increased heart rate",
+        "Elevated blood pressure",
+        "Facial grimacing",
+        "Guarding behavior",
+        "Reduced mobility"
+      ],
+      "atypicalPresentations": [
+        "Chronic pain development (post-surgical chronic pain syndrome)",
+        "Pain out of proportion to the surgical procedure",
+        "Psychological distress manifesting as pain"
+      ],
+      "redFlags": [
+        "Severe, unrelenting pain not responsive to analgesia",
+        "Signs of infection (fever, redness, swelling)",
+        "Neurological deficits (e.g., weakness, numbness)",
+        "Signs of compartment syndrome (severe pain, pallor, pulselessness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of pain (using pain scales)",
+        "Review of surgical notes and procedure details"
+      ],
+      "secondLine": [
+        "Imaging studies (e.g., X-ray, ultrasound) if complications are suspected",
+        "Laboratory tests (e.g., CBC, CRP) to rule out infection"
+      ],
+      "specialistTests": [
+        "Referral to pain management services for complex cases",
+        "Nerve blocks or other interventional pain management techniques"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of post-operative pain is primarily clinical, based on patient-reported pain levels and the context of recent surgical intervention.",
+      "differentials": [
+        "Infection (e.g., abscess, cellulitis)",
+        "Hemorrhage or hematoma",
+        "Nerve injury or neuropathic pain",
+        "Visceral pain from internal organ complications (e.g., bowel obstruction)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-opioid analgesics (e.g., paracetamol, NSAIDs)",
+          "Opioids (e.g., morphine, oxycodone) for severe pain"
+        ],
+        "secondLine": [
+          "Adjunctive medications (e.g., gabapentin, pregabalin) for neuropathic pain",
+          "Regional anesthesia techniques (e.g., nerve blocks)"
+        ],
+        "procedures": [
+          "Epidural analgesia for major surgeries (e.g., thoracic, abdominal)",
+          "Patient-controlled analgesia (PCA) for self-administered pain relief"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Multimodal analgesia approach (combining medications)",
+          "Physical therapy and rehabilitation"
+        ],
+        "secondLine": [
+          "Cognitive behavioral therapy for pain management",
+          "Referral to pain specialists for chronic pain management"
+        ],
+        "monitoring": [
+          "Regular assessment of pain levels and functional status",
+          "Monitoring for side effects of analgesics"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor, reducing inflammation and pain.",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal irritation, renal impairment, cardiovascular risks.",
+          "notes": "Useful for inflammatory pain."
+        },
+        {
+          "name": "Morphine",
+          "mechanism": "Opioid receptor agonist, altering pain perception and response.",
+          "dosing": "2.5-10 mg IV/PO every 4 hours as needed, titrate based on pain relief.",
+          "sideEffects": "Respiratory depression, constipation, sedation.",
+          "notes": "Consider for moderate to severe pain."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Modulates excitatory neurotransmitter release, effective for neuropathic pain.",
+          "dosing": "300 mg on day 1, increase to 900-1800 mg/day in divided doses.",
+          "sideEffects": "Dizziness, sedation, peripheral edema.",
+          "notes": "Consider for neuropathic pain adjunct."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epidural analgesia",
+          "description": "Placement of a catheter in the epidural space to deliver local anesthetics and/or opioids.",
+          "indications": "Major abdominal or thoracic surgeries, labor pain management.",
+          "risks": "Infection, hematoma, nerve injury, urinary retention."
+        },
+        {
+          "name": "Patient-controlled analgesia (PCA)",
+          "description": "Device allowing patients to self-administer predetermined doses of analgesics.",
+          "indications": "Post-operative pain management, especially in opioid-tolerant patients.",
+          "risks": "Overdose, under-treatment, potential for misuse."
+        }
+      ]
+    },
+    "prognosis": "Most patients experience resolution of post-operative pain within a few days to weeks, but some may develop chronic pain syndromes requiring ongoing management.",
+    "complications": [
+      "Chronic pain syndromes",
+      "Opioid dependence or misuse",
+      "Infection at the surgical site",
+      "Delayed recovery due to unmanaged pain"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and manage post-operative pain, ensuring appropriate analgesia is provided, monitoring for complications, and escalating care when necessary.",
+    "escalation": "If pain is unmanageable or associated with red flags, escalate to the surgical team or pain management specialists.",
+    "keySafetyConsiderations": "Monitor for signs of opioid overdose (e.g., respiratory depression), ensure appropriate dosing of analgesics, and assess for potential drug interactions."
+  }
+}

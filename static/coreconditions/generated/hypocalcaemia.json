@@ -1,0 +1,142 @@
+{
+  "id": "hypocalcaemia",
+  "name": "Hypocalcaemia",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:36:18.604738",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypocalcaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypocalcaemia is defined as a serum calcium level below 2.2 mmol/L (8.8 mg/dL). It can be classified as acute or chronic and may result from various underlying conditions affecting calcium metabolism.\n\n### Epidemiology\nHypocalcaemia is relatively common, particularly in hospitalized patients, with an estimated prevalence of 1-2% in the general population. It is more frequently observed in patients with chronic kidney disease, post-surgical patients, and those with malabsorption syndromes.\n\n### Essential Pathophysiology\nHypocalcaemia can occur due to decreased parathyroid hormone (PTH) secretion, vitamin D deficiency, renal failure, or increased calcium binding to proteins. It can also result from medications that affect calcium metabolism, such as bisphosphonates or certain diuretics.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Paresthesia (tingling in fingers, toes, or around the mouth)\n- Muscle cramps or spasms\n- Fatigue\n- Seizures\n- Irritability or anxiety\n- Cardiac symptoms (palpitations, arrhythmias)\n\n### Key Signs\n- Chvostek's sign (facial twitching upon tapping the facial nerve)\n- Trousseau's sign (carpopedal spasm after occlusion of the brachial artery)\n- Prolonged QT interval on ECG\n- Dry skin and brittle nails\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Psychiatric symptoms (depression, confusion)\n\n### Red Flags Requiring Immediate Action\n- Severe hypocalcaemia (<1.9 mmol/L)\n- Cardiac arrhythmias\n- Seizures\n- Severe muscle spasms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum calcium (total and ionized)\n- Serum albumin\n- Serum phosphate\n- Serum magnesium\n- Parathyroid hormone (PTH) level\n\n### Second-line Investigations\n- Vitamin D levels (25-hydroxyvitamin D)\n- Renal function tests (creatinine, urea)\n- Thyroid function tests\n\n### Specialist Tests\n- 24-hour urinary calcium excretion\n- Genetic testing for familial hypoparathyroidism\n- Bone density scan (DEXA) if osteoporosis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypocalcaemia is based on serum calcium levels below 2.2 mmol/L, alongside clinical symptoms and signs. It is important to consider the patient's albumin level when interpreting total calcium.\n\n### Key Differential Diagnoses to Exclude\n- Hypoparathyroidism\n- Vitamin D deficiency\n- Chronic kidney disease\n- Pseudohypoparathyroidism\n- Acute pancreatitis\n- Magnesium deficiency\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous calcium gluconate (1-2 g over 10-20 minutes)\n- Monitor ECG for arrhythmias\n\n#### Second-line Treatments\n- Intravenous calcium chloride (if calcium gluconate is unavailable)\n\n#### Emergency Procedures\n- Cardiac monitoring during treatment to detect arrhythmias\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral calcium supplements (1-2 g/day)\n- Vitamin D supplementation (ergocalciferol or cholecalciferol)\n\n#### Second-line Treatments\n- Calcitriol (active form of vitamin D) if severe deficiency is present\n\n#### Monitoring Requirements\n- Regular serum calcium and vitamin D levels\n- Monitor for symptoms of hypercalcaemia during treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Calcium gluconate\n- **Mechanism of Action**: Calcium gluconate provides elemental calcium, which is essential for various physiological functions including muscle contraction and neurotransmission.\n- **Typical Dosing Range**: 1-2 g IV over 10-20 minutes for acute hypocalcaemia; 1-2 g orally for chronic management.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, local irritation at injection site, hypercalcaemia if overdosed.\n- **When to Use vs. Alternatives**: Calcium gluconate is preferred over calcium chloride due to lower risk of venous irritation.\n\n#### Vitamin D (ergocalciferol/cholecalciferol)\n- **Mechanism of Action**: Increases intestinal absorption of calcium and phosphate, and promotes bone mineralization.\n- **Typical Dosing Range**: 800-2000 IU/day for maintenance; higher doses may be required for deficiency.\n- **Key Side Effects/Contraindications**: Hypercalcaemia, hyperphosphataemia, renal impairment.\n- **When to Use vs. Alternatives**: Monitor serum calcium and phosphate levels during treatment.\n\n#### Calcitriol\n- **Mechanism of Action**: Active form of vitamin D that increases calcium absorption from the gut and mobilizes calcium from bones.\n- **Typical Dosing Range**: 0.25-1 mcg/day, adjusted based on serum calcium levels.\n- **Key Side Effects/Contraindications**: Hypercalcaemia, hyperphosphataemia, nephrotoxicity.\n- **When to Use vs. Alternatives**: Used in cases of severe hypocalcaemia or when oral vitamin D is insufficient.\n\n### Procedures\n\n#### Cardiac monitoring\n- **What it Involves**: Continuous ECG monitoring during acute treatment of hypocalcaemia to detect arrhythmias.\n- **Indications**: Severe hypocalcaemia, symptomatic patients, or patients with cardiac risk factors.\n- **Key Risks/Complications**: False alarms due to movement artifacts, potential for missed arrhythmias if monitoring is not continuous.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hypocalcaemia depends on the underlying cause. Acute hypocalcaemia can be life-threatening if not treated promptly, while chronic hypocalcaemia can lead to complications such as osteoporosis and increased fracture risk if not managed appropriately.\n\n### Important Complications to Watch For\n- Tetany\n- Seizures\n- Cardiac arrhythmias\n- Chronic bone pain\n- Osteoporosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize the signs and symptoms of hypocalcaemia, initiate appropriate investigations, and manage acute cases under supervision. They should also educate patients on the importance of follow-up and adherence to treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hypocalcaemia or shows signs of cardiac instability, immediate escalation to a senior clinician or specialist is required. Continuous monitoring and potential admission to a higher level of care may be necessary.\n\n### Key Safety Considerations\nEnsure proper monitoring of serum calcium levels during treatment, especially in patients receiving intravenous calcium. Be vigilant for signs of hypercalcaemia during chronic management, and educate patients on recognizing symptoms of both hypocalcaemia and hypercalcaemia.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypocalcaemia is defined as a serum calcium level below 2.2 mmol/L (8.8 mg/dL). It can be classified as acute or chronic and may result from various underlying conditions affecting calcium metabolism.",
+      "epidemiology": "Hypocalcaemia is relatively common, particularly in hospitalized patients, with an estimated prevalence of 1-2% in the general population. It is more frequently observed in patients with chronic kidney disease, post-surgical patients, and those with malabsorption syndromes.",
+      "pathophysiology": "Hypocalcaemia can occur due to decreased parathyroid hormone (PTH) secretion, vitamin D deficiency, renal failure, or increased calcium binding to proteins. It can also result from medications that affect calcium metabolism, such as bisphosphonates or certain diuretics."
+    },
+    "recognition": {
+      "symptoms": [
+        "Paresthesia (tingling in fingers, toes, or around the mouth)",
+        "Muscle cramps or spasms",
+        "Fatigue",
+        "Seizures",
+        "Irritability or anxiety",
+        "Cardiac symptoms (palpitations, arrhythmias)"
+      ],
+      "signs": [
+        "Chvostek's sign (facial twitching upon tapping the facial nerve)",
+        "Trousseau's sign (carpopedal spasm after occlusion of the brachial artery)",
+        "Prolonged QT interval on ECG",
+        "Dry skin and brittle nails"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Psychiatric symptoms (depression, confusion)"
+      ],
+      "redFlags": [
+        "Severe hypocalcaemia (<1.9 mmol/L)",
+        "Cardiac arrhythmias",
+        "Seizures",
+        "Severe muscle spasms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum calcium (total and ionized)",
+        "Serum albumin",
+        "Serum phosphate",
+        "Serum magnesium",
+        "Parathyroid hormone (PTH) level"
+      ],
+      "secondLine": [
+        "Vitamin D levels (25-hydroxyvitamin D)",
+        "Renal function tests (creatinine, urea)",
+        "Thyroid function tests"
+      ],
+      "specialistTests": [
+        "24-hour urinary calcium excretion",
+        "Genetic testing for familial hypoparathyroidism",
+        "Bone density scan (DEXA) if osteoporosis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypocalcaemia is based on serum calcium levels below 2.2 mmol/L, alongside clinical symptoms and signs. It is important to consider the patient's albumin level when interpreting total calcium.",
+      "differentials": [
+        "Hypoparathyroidism",
+        "Vitamin D deficiency",
+        "Chronic kidney disease",
+        "Pseudohypoparathyroidism",
+        "Acute pancreatitis",
+        "Magnesium deficiency"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous calcium gluconate (1-2 g over 10-20 minutes)",
+          "Monitor ECG for arrhythmias"
+        ],
+        "secondLine": [
+          "Intravenous calcium chloride (if calcium gluconate is unavailable)"
+        ],
+        "procedures": [
+          "Cardiac monitoring during treatment to detect arrhythmias"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral calcium supplements (1-2 g/day)",
+          "Vitamin D supplementation (ergocalciferol or cholecalciferol)"
+        ],
+        "secondLine": [
+          "Calcitriol (active form of vitamin D) if severe deficiency is present"
+        ],
+        "monitoring": [
+          "Regular serum calcium and vitamin D levels",
+          "Monitor for symptoms of hypercalcaemia during treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Calcium gluconate",
+          "mechanism": "Calcium gluconate provides elemental calcium, which is essential for various physiological functions including muscle contraction and neurotransmission.",
+          "dosing": "1-2 g IV over 10-20 minutes for acute hypocalcaemia; 1-2 g orally for chronic management.",
+          "sideEffects": "Hypotension, bradycardia, local irritation at injection site, hypercalcaemia if overdosed.",
+          "notes": "Calcium gluconate is preferred over calcium chloride due to lower risk of venous irritation."
+        },
+        {
+          "name": "Vitamin D (ergocalciferol/cholecalciferol)",
+          "mechanism": "Increases intestinal absorption of calcium and phosphate, and promotes bone mineralization.",
+          "dosing": "800-2000 IU/day for maintenance; higher doses may be required for deficiency.",
+          "sideEffects": "Hypercalcaemia, hyperphosphataemia, renal impairment.",
+          "notes": "Monitor serum calcium and phosphate levels during treatment."
+        },
+        {
+          "name": "Calcitriol",
+          "mechanism": "Active form of vitamin D that increases calcium absorption from the gut and mobilizes calcium from bones.",
+          "dosing": "0.25-1 mcg/day, adjusted based on serum calcium levels.",
+          "sideEffects": "Hypercalcaemia, hyperphosphataemia, nephrotoxicity.",
+          "notes": "Used in cases of severe hypocalcaemia or when oral vitamin D is insufficient."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardiac monitoring",
+          "description": "Continuous ECG monitoring during acute treatment of hypocalcaemia to detect arrhythmias.",
+          "indications": "Severe hypocalcaemia, symptomatic patients, or patients with cardiac risk factors.",
+          "risks": "False alarms due to movement artifacts, potential for missed arrhythmias if monitoring is not continuous."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hypocalcaemia depends on the underlying cause. Acute hypocalcaemia can be life-threatening if not treated promptly, while chronic hypocalcaemia can lead to complications such as osteoporosis and increased fracture risk if not managed appropriately.",
+    "complications": [
+      "Tetany",
+      "Seizures",
+      "Cardiac arrhythmias",
+      "Chronic bone pain",
+      "Osteoporosis"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize the signs and symptoms of hypocalcaemia, initiate appropriate investigations, and manage acute cases under supervision. They should also educate patients on the importance of follow-up and adherence to treatment.",
+    "escalation": "If a patient presents with severe hypocalcaemia or shows signs of cardiac instability, immediate escalation to a senior clinician or specialist is required. Continuous monitoring and potential admission to a higher level of care may be necessary.",
+    "keySafetyConsiderations": "Ensure proper monitoring of serum calcium levels during treatment, especially in patients receiving intravenous calcium. Be vigilant for signs of hypercalcaemia during chronic management, and educate patients on recognizing symptoms of both hypocalcaemia and hypercalcaemia."
+  }
+}

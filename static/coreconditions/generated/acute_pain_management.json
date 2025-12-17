@@ -1,0 +1,141 @@
+{
+  "id": "acute_pain_management",
+  "name": "Acute pain management",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:04:55.641805",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute pain management: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute pain is a type of pain that typically lasts less than three months and is often a direct result of injury, surgery, or illness. It serves as a protective mechanism, alerting the body to potential harm.\n\n### Epidemiology\nAcute pain is a common clinical presentation in emergency departments and surgical wards, affecting a significant proportion of patients. It can arise from various causes, including trauma, surgical procedures, and acute medical conditions.\n\n### Essential Pathophysiology\nAcute pain is mediated by nociceptive pathways that transmit signals from damaged tissues to the central nervous system. This involves the activation of nociceptors, which are specialized sensory receptors that respond to harmful stimuli.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sharp or stabbing pain\n- Dull or aching pain\n- Localized pain\n- Radiating pain\n\n### Key Signs\n- Increased heart rate\n- Elevated blood pressure\n- Facial grimacing\n- Guarding or rigidity in the affected area\n\n### Atypical Presentations\n- Pain without obvious injury\n- Pain that is disproportionate to the injury\n- Psychosomatic pain\n\n### Red Flags Requiring Immediate Action\n- Severe pain unresponsive to analgesia\n- Signs of infection (fever, chills)\n- Neurological deficits (weakness, numbness)\n- Signs of internal bleeding (hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including pain history and physical examination\n- Vital signs monitoring\n\n### Second-line Investigations\n- Imaging studies (X-ray, CT, MRI) if indicated based on clinical suspicion\n- Laboratory tests (CBC, electrolytes, liver function tests)\n\n### Specialist Tests\n- Ultrasound for specific conditions (e.g., gallbladder disease)\n- Nerve conduction studies for neuropathic pain\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of acute pain is primarily clinical, based on the history and physical examination, with consideration of the underlying cause.\n\n### Key Differential Diagnoses to Exclude\n- Musculoskeletal injury\n- Visceral pain (e.g., appendicitis, pancreatitis)\n- Neuropathic pain (e.g., herniated disc)\n- Infections (e.g., pyelonephritis, pneumonia)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-opioid analgesics (e.g., paracetamol, NSAIDs)\n- Opioids for moderate to severe pain (e.g., morphine)\n\n#### Second-line Treatments\n- Adjunctive medications (e.g., gabapentin for neuropathic pain)\n- Regional anesthesia techniques (e.g., nerve blocks)\n\n#### Emergency Procedures\n- Epidural analgesia for postoperative pain management\n- Nerve blocks for localized pain control\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Multimodal analgesia approach (combination of medications)\n- Physical therapy and rehabilitation\n\n#### Second-line Treatments\n- Referral to pain management specialists\n- Cognitive behavioral therapy for chronic pain management\n\n#### Monitoring Requirements\n- Regular assessment of pain levels and functional status\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Inhibits prostaglandin synthesis in the CNS and peripherally\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor, reducing inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal irritation, renal impairment\n- **When to Use vs. Alternatives**: Effective for inflammatory pain.\n\n#### Morphine\n- **Mechanism of Action**: Opioid receptor agonist, providing analgesia\n- **Typical Dosing Range**: 2.5-10 mg IV/SC every 2-4 hours as needed\n- **Key Side Effects/Contraindications**: Respiratory depression, constipation, sedation\n- **When to Use vs. Alternatives**: Used for moderate to severe pain.\n\n### Procedures\n\n#### Epidural Analgesia\n- **What it Involves**: Injection of anesthetic into the epidural space to block pain transmission\n- **Indications**: Postoperative pain management, labor analgesia\n- **Key Risks/Complications**: Infection, hematoma, nerve injury\n\n#### Nerve Block\n- **What it Involves**: Injection of local anesthetic near a nerve to provide pain relief\n- **Indications**: Localized pain control (e.g., for fractures, surgical sites)\n- **Key Risks/Complications**: Nerve damage, infection, bleeding\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of acute pain resolve with appropriate management, but some may progress to chronic pain if not treated effectively.\n\n### Important Complications to Watch For\n- Chronic pain development\n- Opioid dependence or misuse\n- Infection at injection sites (for procedures)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors are responsible for initial assessment, pain management, and monitoring of patients with acute pain. They should ensure effective communication with the multidisciplinary team and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nIf pain is unmanageable or associated with red flags, escalate to senior medical staff or pain management specialists.\n\n### Key Safety Considerations\nMonitor for signs of opioid overdose (e.g., respiratory depression), ensure appropriate dosing of analgesics, and assess for potential drug interactions.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute pain is a type of pain that typically lasts less than three months and is often a direct result of injury, surgery, or illness. It serves as a protective mechanism, alerting the body to potential harm.",
+      "epidemiology": "Acute pain is a common clinical presentation in emergency departments and surgical wards, affecting a significant proportion of patients. It can arise from various causes, including trauma, surgical procedures, and acute medical conditions.",
+      "pathophysiology": "Acute pain is mediated by nociceptive pathways that transmit signals from damaged tissues to the central nervous system. This involves the activation of nociceptors, which are specialized sensory receptors that respond to harmful stimuli."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sharp or stabbing pain",
+        "Dull or aching pain",
+        "Localized pain",
+        "Radiating pain"
+      ],
+      "signs": [
+        "Increased heart rate",
+        "Elevated blood pressure",
+        "Facial grimacing",
+        "Guarding or rigidity in the affected area"
+      ],
+      "atypicalPresentations": [
+        "Pain without obvious injury",
+        "Pain that is disproportionate to the injury",
+        "Psychosomatic pain"
+      ],
+      "redFlags": [
+        "Severe pain unresponsive to analgesia",
+        "Signs of infection (fever, chills)",
+        "Neurological deficits (weakness, numbness)",
+        "Signs of internal bleeding (hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including pain history and physical examination",
+        "Vital signs monitoring"
+      ],
+      "secondLine": [
+        "Imaging studies (X-ray, CT, MRI) if indicated based on clinical suspicion",
+        "Laboratory tests (CBC, electrolytes, liver function tests)"
+      ],
+      "specialistTests": [
+        "Ultrasound for specific conditions (e.g., gallbladder disease)",
+        "Nerve conduction studies for neuropathic pain"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of acute pain is primarily clinical, based on the history and physical examination, with consideration of the underlying cause.",
+      "differentials": [
+        "Musculoskeletal injury",
+        "Visceral pain (e.g., appendicitis, pancreatitis)",
+        "Neuropathic pain (e.g., herniated disc)",
+        "Infections (e.g., pyelonephritis, pneumonia)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-opioid analgesics (e.g., paracetamol, NSAIDs)",
+          "Opioids for moderate to severe pain (e.g., morphine)"
+        ],
+        "secondLine": [
+          "Adjunctive medications (e.g., gabapentin for neuropathic pain)",
+          "Regional anesthesia techniques (e.g., nerve blocks)"
+        ],
+        "procedures": [
+          "Epidural analgesia for postoperative pain management",
+          "Nerve blocks for localized pain control"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Multimodal analgesia approach (combination of medications)",
+          "Physical therapy and rehabilitation"
+        ],
+        "secondLine": [
+          "Referral to pain management specialists",
+          "Cognitive behavioral therapy for chronic pain management"
+        ],
+        "monitoring": [
+          "Regular assessment of pain levels and functional status",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Inhibits prostaglandin synthesis in the CNS and peripherally",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor, reducing inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal irritation, renal impairment",
+          "notes": "Effective for inflammatory pain."
+        },
+        {
+          "name": "Morphine",
+          "mechanism": "Opioid receptor agonist, providing analgesia",
+          "dosing": "2.5-10 mg IV/SC every 2-4 hours as needed",
+          "sideEffects": "Respiratory depression, constipation, sedation",
+          "notes": "Used for moderate to severe pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epidural Analgesia",
+          "description": "Injection of anesthetic into the epidural space to block pain transmission",
+          "indications": "Postoperative pain management, labor analgesia",
+          "risks": "Infection, hematoma, nerve injury"
+        },
+        {
+          "name": "Nerve Block",
+          "description": "Injection of local anesthetic near a nerve to provide pain relief",
+          "indications": "Localized pain control (e.g., for fractures, surgical sites)",
+          "risks": "Nerve damage, infection, bleeding"
+        }
+      ]
+    },
+    "prognosis": "Most cases of acute pain resolve with appropriate management, but some may progress to chronic pain if not treated effectively.",
+    "complications": [
+      "Chronic pain development",
+      "Opioid dependence or misuse",
+      "Infection at injection sites (for procedures)"
+    ],
+    "foundationDoctorRole": "Foundation doctors are responsible for initial assessment, pain management, and monitoring of patients with acute pain. They should ensure effective communication with the multidisciplinary team and escalate care as needed.",
+    "escalation": "If pain is unmanageable or associated with red flags, escalate to senior medical staff or pain management specialists.",
+    "keySafetyConsiderations": "Monitor for signs of opioid overdose (e.g., respiratory depression), ensure appropriate dosing of analgesics, and assess for potential drug interactions."
+  }
+}

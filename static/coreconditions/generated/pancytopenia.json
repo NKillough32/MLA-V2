@@ -1,0 +1,143 @@
+{
+  "id": "pancytopenia",
+  "name": "Pancytopenia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:55:06.659570",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pancytopenia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPancytopenia is a hematological condition characterized by a reduction in the number of red blood cells, white blood cells, and platelets in the peripheral blood.\n\n### Epidemiology\nPancytopenia can occur in various populations, with incidence rates varying based on underlying causes. It is commonly seen in patients with bone marrow disorders, hypersplenism, and certain infections.\n\n### Essential Pathophysiology\nPancytopenia can result from decreased production of blood cells in the bone marrow (e.g., aplastic anemia, malignancies), increased destruction (e.g., hypersplenism, autoimmune disorders), or sequestration (e.g., splenomegaly).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Increased susceptibility to infections\n- Easy bruising or bleeding\n\n### Key Signs\n- Pallor\n- Petechiae\n- Ecchymosis\n- Splenomegaly\n- Hepatomegaly\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Severe infections without leukocytosis\n- Thrombosis in cases of myeloproliferative disorders\n\n### Red Flags Requiring Immediate Action\n- Severe anemia (Hb < 8 g/dL)\n- Severe thrombocytopenia (platelets < 20,000/µL)\n- Signs of bleeding or infection\n- Rapid deterioration in clinical status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Peripheral blood smear\n- Reticulocyte count\n\n### Second-line Investigations\n- Bone marrow biopsy\n- Liver function tests\n- Vitamin B12 and folate levels\n- HIV, hepatitis serologies\n\n### Specialist Tests\n- Flow cytometry\n- Cytogenetic analysis\n- Autoantibody tests (e.g., anti-nuclear antibody)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of pancytopenia is based on the presence of low levels of all three blood cell lines (red cells, white cells, and platelets) on a complete blood count, along with clinical correlation and exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Aplastic anemia\n- Leukemia\n- Myelodysplastic syndromes\n- Hypersplenism\n- Autoimmune disorders (e.g., systemic lupus erythematosus)\n- Infections (e.g., HIV, hepatitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Transfusion of red blood cells\n- Platelet transfusion if < 20,000/µL and bleeding\n- Supportive care (e.g., antibiotics for infections)\n\n#### Second-line Treatments\n- Consideration of corticosteroids in autoimmune causes\n- Consideration of growth factors (e.g., erythropoietin)\n\n#### Emergency Procedures\n- Bone marrow aspiration and biopsy for diagnosis\n- Splenectomy in cases of hypersplenism\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying cause (e.g., vitamin supplementation, treatment of infections)\n- Regular monitoring of blood counts\n\n#### Second-line Treatments\n- Immunosuppressive therapy for aplastic anemia (e.g., antithymocyte globulin)\n- Bone marrow transplant for eligible patients\n\n#### Monitoring Requirements\n- Regular CBCs to monitor blood counts\n- Monitoring for complications of anemia and thrombocytopenia\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Erythropoietin\n- **Mechanism of Action**: Stimulates red blood cell production in the bone marrow.\n- **Typical Dosing Range**: Typically 50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on response.\n- **Key Side Effects/Contraindications**: Hypertension, headache, thrombotic events.\n- **When to Use vs. Alternatives**: Monitor hemoglobin levels to avoid rapid increases.\n\n#### Antithymocyte globulin (ATG)\n- **Mechanism of Action**: Immunosuppressive therapy that targets T-lymphocytes to reduce bone marrow suppression.\n- **Typical Dosing Range**: Administered as an infusion, dosing varies based on protocol.\n- **Key Side Effects/Contraindications**: Infusion reactions, serum sickness, infections.\n- **When to Use vs. Alternatives**: Requires premedication with steroids and antihistamines.\n\n### Procedures\n\n#### Bone marrow biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: To evaluate the cause of pancytopenia, assess for malignancy or aplastic anemia.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n#### Splenectomy\n- **What it Involves**: Surgical removal of the spleen.\n- **Indications**: In cases of hypersplenism causing significant cytopenias.\n- **Key Risks/Complications**: Infection risk post-splenectomy, bleeding, and anesthesia risks. Vaccination against encapsulated organisms is required pre-operatively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of pancytopenia depends on the underlying cause. Aplastic anemia and malignancies have a poorer prognosis, while cases due to vitamin deficiencies may have a good prognosis with appropriate treatment.\n\n### Important Complications to Watch For\n- Severe infections due to leukopenia\n- Hemorrhage due to thrombocytopenia\n- Anemia-related complications (e.g., heart failure)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of pancytopenia, perform initial investigations, manage acute complications, and refer to specialists for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nEscalate care for patients with severe symptoms, rapid deterioration, or those requiring transfusions or specialist interventions.\n\n### Key Safety Considerations\nMonitor for signs of bleeding and infection, ensure appropriate transfusion protocols are followed, and be aware of the need for vaccinations in patients undergoing splenectomy.\n",
+  "content": {
+    "overview": {
+      "definition": "Pancytopenia is a hematological condition characterized by a reduction in the number of red blood cells, white blood cells, and platelets in the peripheral blood.",
+      "epidemiology": "Pancytopenia can occur in various populations, with incidence rates varying based on underlying causes. It is commonly seen in patients with bone marrow disorders, hypersplenism, and certain infections.",
+      "pathophysiology": "Pancytopenia can result from decreased production of blood cells in the bone marrow (e.g., aplastic anemia, malignancies), increased destruction (e.g., hypersplenism, autoimmune disorders), or sequestration (e.g., splenomegaly)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Increased susceptibility to infections",
+        "Easy bruising or bleeding"
+      ],
+      "signs": [
+        "Pallor",
+        "Petechiae",
+        "Ecchymosis",
+        "Splenomegaly",
+        "Hepatomegaly"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Severe infections without leukocytosis",
+        "Thrombosis in cases of myeloproliferative disorders"
+      ],
+      "redFlags": [
+        "Severe anemia (Hb < 8 g/dL)",
+        "Severe thrombocytopenia (platelets < 20,000/µL)",
+        "Signs of bleeding or infection",
+        "Rapid deterioration in clinical status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Peripheral blood smear",
+        "Reticulocyte count"
+      ],
+      "secondLine": [
+        "Bone marrow biopsy",
+        "Liver function tests",
+        "Vitamin B12 and folate levels",
+        "HIV, hepatitis serologies"
+      ],
+      "specialistTests": [
+        "Flow cytometry",
+        "Cytogenetic analysis",
+        "Autoantibody tests (e.g., anti-nuclear antibody)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of pancytopenia is based on the presence of low levels of all three blood cell lines (red cells, white cells, and platelets) on a complete blood count, along with clinical correlation and exclusion of other causes.",
+      "differentials": [
+        "Aplastic anemia",
+        "Leukemia",
+        "Myelodysplastic syndromes",
+        "Hypersplenism",
+        "Autoimmune disorders (e.g., systemic lupus erythematosus)",
+        "Infections (e.g., HIV, hepatitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Transfusion of red blood cells",
+          "Platelet transfusion if < 20,000/µL and bleeding",
+          "Supportive care (e.g., antibiotics for infections)"
+        ],
+        "secondLine": [
+          "Consideration of corticosteroids in autoimmune causes",
+          "Consideration of growth factors (e.g., erythropoietin)"
+        ],
+        "procedures": [
+          "Bone marrow aspiration and biopsy for diagnosis",
+          "Splenectomy in cases of hypersplenism"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying cause (e.g., vitamin supplementation, treatment of infections)",
+          "Regular monitoring of blood counts"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy for aplastic anemia (e.g., antithymocyte globulin)",
+          "Bone marrow transplant for eligible patients"
+        ],
+        "monitoring": [
+          "Regular CBCs to monitor blood counts",
+          "Monitoring for complications of anemia and thrombocytopenia"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Erythropoietin",
+          "mechanism": "Stimulates red blood cell production in the bone marrow.",
+          "dosing": "Typically 50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on response.",
+          "sideEffects": "Hypertension, headache, thrombotic events.",
+          "notes": "Monitor hemoglobin levels to avoid rapid increases."
+        },
+        {
+          "name": "Antithymocyte globulin (ATG)",
+          "mechanism": "Immunosuppressive therapy that targets T-lymphocytes to reduce bone marrow suppression.",
+          "dosing": "Administered as an infusion, dosing varies based on protocol.",
+          "sideEffects": "Infusion reactions, serum sickness, infections.",
+          "notes": "Requires premedication with steroids and antihistamines."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone marrow biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "To evaluate the cause of pancytopenia, assess for malignancy or aplastic anemia.",
+          "risks": "Bleeding, infection, pain at the site."
+        },
+        {
+          "name": "Splenectomy",
+          "description": "Surgical removal of the spleen.",
+          "indications": "In cases of hypersplenism causing significant cytopenias.",
+          "risks": "Infection risk post-splenectomy, bleeding, and anesthesia risks. Vaccination against encapsulated organisms is required pre-operatively."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of pancytopenia depends on the underlying cause. Aplastic anemia and malignancies have a poorer prognosis, while cases due to vitamin deficiencies may have a good prognosis with appropriate treatment.",
+    "complications": [
+      "Severe infections due to leukopenia",
+      "Hemorrhage due to thrombocytopenia",
+      "Anemia-related complications (e.g., heart failure)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of pancytopenia, perform initial investigations, manage acute complications, and refer to specialists for further evaluation and treatment.",
+    "escalation": "Escalate care for patients with severe symptoms, rapid deterioration, or those requiring transfusions or specialist interventions.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding and infection, ensure appropriate transfusion protocols are followed, and be aware of the need for vaccinations in patients undergoing splenectomy."
+  }
+}

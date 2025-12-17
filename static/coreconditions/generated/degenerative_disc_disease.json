@@ -1,0 +1,144 @@
+{
+  "id": "degenerative_disc_disease",
+  "name": "Degenerative disc disease",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:34:28.228167",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Degenerative disc disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDegenerative disc disease (DDD) is a condition characterized by the degeneration of intervertebral discs, leading to pain, reduced mobility, and potential nerve compression.\n\n### Epidemiology\nDDD is common, particularly in individuals aged 30-60 years. It affects both genders equally and is often associated with aging and repetitive stress on the spine.\n\n### Essential Pathophysiology\nThe intervertebral discs consist of a gel-like nucleus pulposus surrounded by a tough annulus fibrosus. With age or injury, the discs lose hydration and elasticity, leading to disc height loss, annular tears, and potential herniation, which can compress adjacent nerves.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic back pain\n- Pain that worsens with activity and improves with rest\n- Radiating pain to the legs (sciatica)\n- Numbness or tingling in the extremities\n- Muscle weakness\n\n### Key Signs\n- Reduced range of motion in the spine\n- Tenderness on palpation of the spine\n- Positive straight leg raise test\n- Neurological deficits (e.g., reflex changes)\n\n### Atypical Presentations\n- Pain localized to the buttocks or thighs without back pain\n- Acute exacerbation of chronic pain after minor trauma\n\n### Red Flags Requiring Immediate Action\n- Severe, unrelenting pain not relieved by rest\n- Neurological deficits (e.g., bowel or bladder dysfunction)\n- History of cancer\n- Unexplained weight loss\n- Fever or signs of infection\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the spine to assess disc height and alignment\n- MRI of the spine to evaluate disc degeneration and nerve compression\n\n### Second-line Investigations\n- CT scan if MRI is contraindicated or inconclusive\n- Electromyography (EMG) to assess nerve function\n\n### Specialist Tests\n- Discography to assess disc pain\n- Bone scans to evaluate for other pathologies\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings of disc degeneration and symptoms consistent with nerve root compression.\n\n### Key Differential Diagnoses to Exclude\n- Herniated disc\n- Spinal stenosis\n- Spondylolisthesis\n- Osteoarthritis of the spine\n- Myofascial pain syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- NSAIDs for pain relief\n- Physical therapy focusing on core strengthening\n\n#### Second-line Treatments\n- Oral corticosteroids for inflammation\n- Muscle relaxants for muscle spasms\n\n#### Emergency Procedures\n- Epidural steroid injection for pain relief\n- Facet joint injections for localized pain management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy focusing on strengthening and flexibility\n- Cognitive behavioral therapy for pain management\n\n#### Second-line Treatments\n- Surgical options such as discectomy or spinal fusion if conservative management fails\n- Chiropractic care\n\n#### Monitoring Requirements\n- Regular follow-up to assess pain levels and functional status\n- Adjusting management plan based on response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Gabapentin\n- **Mechanism of Action**: Anticonvulsant that modulates neurotransmitter release to reduce neuropathic pain\n- **Typical Dosing Range**: 300 mg orally at bedtime, titrate up to 1200 mg/day\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema\n- **When to Use vs. Alternatives**: Monitor for signs of sedation, especially in elderly patients.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory agents that reduce swelling and pain\n- **Typical Dosing Range**: Prednisone 10-20 mg orally daily, tapering as needed\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, adrenal suppression\n- **When to Use vs. Alternatives**: Short-term use recommended; monitor for side effects.\n\n### Procedures\n\n#### Epidural steroid injection\n- **What it Involves**: Injection of corticosteroids into the epidural space to reduce inflammation around spinal nerves\n- **Indications**: Severe radicular pain not responsive to conservative management\n- **Key Risks/Complications**: Infection, bleeding, nerve damage, transient increase in pain.\n\n#### Discectomy\n- **What it Involves**: Surgical removal of herniated disc material to relieve nerve compression\n- **Indications**: Persistent pain or neurological deficits despite conservative treatment\n- **Key Risks/Complications**: Infection, bleeding, recurrence of herniation, nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for DDD varies; many patients experience significant improvement with conservative management, while others may require surgical intervention. Chronic pain can persist in some cases.\n\n### Important Complications to Watch For\n- Chronic pain syndrome\n- Nerve root compression leading to permanent neurological deficits\n- Reduced quality of life due to pain and disability\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate conservative management, and refer to specialists when red flags are present or if symptoms persist despite treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedic or neurosurgery if there are neurological deficits, severe pain unresponsive to treatment, or if surgical intervention is considered.\n\n### Key Safety Considerations\nMonitor for signs of neurological compromise, ensure appropriate imaging is performed before invasive procedures, and educate patients on the importance of follow-up and adherence to treatment plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Degenerative disc disease (DDD) is a condition characterized by the degeneration of intervertebral discs, leading to pain, reduced mobility, and potential nerve compression.",
+      "epidemiology": "DDD is common, particularly in individuals aged 30-60 years. It affects both genders equally and is often associated with aging and repetitive stress on the spine.",
+      "pathophysiology": "The intervertebral discs consist of a gel-like nucleus pulposus surrounded by a tough annulus fibrosus. With age or injury, the discs lose hydration and elasticity, leading to disc height loss, annular tears, and potential herniation, which can compress adjacent nerves."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic back pain",
+        "Pain that worsens with activity and improves with rest",
+        "Radiating pain to the legs (sciatica)",
+        "Numbness or tingling in the extremities",
+        "Muscle weakness"
+      ],
+      "signs": [
+        "Reduced range of motion in the spine",
+        "Tenderness on palpation of the spine",
+        "Positive straight leg raise test",
+        "Neurological deficits (e.g., reflex changes)"
+      ],
+      "atypicalPresentations": [
+        "Pain localized to the buttocks or thighs without back pain",
+        "Acute exacerbation of chronic pain after minor trauma"
+      ],
+      "redFlags": [
+        "Severe, unrelenting pain not relieved by rest",
+        "Neurological deficits (e.g., bowel or bladder dysfunction)",
+        "History of cancer",
+        "Unexplained weight loss",
+        "Fever or signs of infection"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the spine to assess disc height and alignment",
+        "MRI of the spine to evaluate disc degeneration and nerve compression"
+      ],
+      "secondLine": [
+        "CT scan if MRI is contraindicated or inconclusive",
+        "Electromyography (EMG) to assess nerve function"
+      ],
+      "specialistTests": [
+        "Discography to assess disc pain",
+        "Bone scans to evaluate for other pathologies"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings of disc degeneration and symptoms consistent with nerve root compression.",
+      "differentials": [
+        "Herniated disc",
+        "Spinal stenosis",
+        "Spondylolisthesis",
+        "Osteoarthritis of the spine",
+        "Myofascial pain syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "NSAIDs for pain relief",
+          "Physical therapy focusing on core strengthening"
+        ],
+        "secondLine": [
+          "Oral corticosteroids for inflammation",
+          "Muscle relaxants for muscle spasms"
+        ],
+        "procedures": [
+          "Epidural steroid injection for pain relief",
+          "Facet joint injections for localized pain management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy focusing on strengthening and flexibility",
+          "Cognitive behavioral therapy for pain management"
+        ],
+        "secondLine": [
+          "Surgical options such as discectomy or spinal fusion if conservative management fails",
+          "Chiropractic care"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pain levels and functional status",
+          "Adjusting management plan based on response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-800 mg orally every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Anticonvulsant that modulates neurotransmitter release to reduce neuropathic pain",
+          "dosing": "300 mg orally at bedtime, titrate up to 1200 mg/day",
+          "sideEffects": "Dizziness, sedation, peripheral edema",
+          "notes": "Monitor for signs of sedation, especially in elderly patients."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory agents that reduce swelling and pain",
+          "dosing": "Prednisone 10-20 mg orally daily, tapering as needed",
+          "sideEffects": "Weight gain, osteoporosis, adrenal suppression",
+          "notes": "Short-term use recommended; monitor for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epidural steroid injection",
+          "description": "Injection of corticosteroids into the epidural space to reduce inflammation around spinal nerves",
+          "indications": "Severe radicular pain not responsive to conservative management",
+          "risks": "Infection, bleeding, nerve damage, transient increase in pain."
+        },
+        {
+          "name": "Discectomy",
+          "description": "Surgical removal of herniated disc material to relieve nerve compression",
+          "indications": "Persistent pain or neurological deficits despite conservative treatment",
+          "risks": "Infection, bleeding, recurrence of herniation, nerve injury."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for DDD varies; many patients experience significant improvement with conservative management, while others may require surgical intervention. Chronic pain can persist in some cases.",
+    "complications": [
+      "Chronic pain syndrome",
+      "Nerve root compression leading to permanent neurological deficits",
+      "Reduced quality of life due to pain and disability"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate conservative management, and refer to specialists when red flags are present or if symptoms persist despite treatment.",
+    "escalation": "Refer to orthopaedic or neurosurgery if there are neurological deficits, severe pain unresponsive to treatment, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Monitor for signs of neurological compromise, ensure appropriate imaging is performed before invasive procedures, and educate patients on the importance of follow-up and adherence to treatment plans."
+  }
+}

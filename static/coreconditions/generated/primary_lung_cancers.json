@@ -1,0 +1,150 @@
+{
+  "id": "primary_lung_cancers",
+  "name": "Primary lung cancers",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:22:29.431335",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Primary lung cancers: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPrimary lung cancers are malignancies that originate in the lung tissue, primarily arising from the epithelial cells of the airways. The two main types are non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC).\n\n### Epidemiology\nLung cancer is the leading cause of cancer-related deaths worldwide. In the UK, it accounts for approximately 21% of all cancer deaths. The incidence is higher in males than females, with a significant correlation to smoking history.\n\n### Essential Pathophysiology\nLung cancer develops through a series of genetic mutations in lung epithelial cells, often triggered by carcinogens such as tobacco smoke. These mutations lead to uncontrolled cell proliferation, evasion of apoptosis, and the ability to invade surrounding tissues and metastasize.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent cough\n- Hemoptysis (coughing up blood)\n- Chest pain\n- Shortness of breath (dyspnea)\n- Unexplained weight loss\n- Fatigue\n- Wheezing\n\n### Key Signs\n- Clubbing of fingers\n- Cyanosis\n- Decreased breath sounds\n- Lymphadenopathy (especially supraclavicular)\n- Pleural effusion\n\n### Atypical Presentations\n- Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)\n- Bone pain due to metastasis\n- Neurological symptoms due to brain metastases\n\n### Red Flags Requiring Immediate Action\n- New cough in a smoker or ex-smoker\n- Hemoptysis\n- Unexplained weight loss >5%\n- Persistent chest pain not relieved by analgesia\n- Signs of respiratory distress\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray\n- CT scan of the chest\n\n### Second-line Investigations\n- Bronchoscopy with biopsy\n- CT-guided lung biopsy\n- PET scan for staging\n\n### Specialist Tests\n- Molecular testing for EGFR, ALK, and ROS1 mutations\n- Immunohistochemistry for PD-L1 expression\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histological examination of tissue obtained via biopsy. Imaging studies help in staging the disease.\n\n### Key Differential Diagnoses to Exclude\n- Metastatic lung disease\n- Pneumonia\n- Tuberculosis\n- Interstitial lung disease\n- Benign lung tumors (e.g., hamartomas)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy for hypoxia\n- Bronchodilators for wheezing\n- Analgesia for pain management\n\n#### Second-line Treatments\n- Chemotherapy initiation for SCLC\n- Consideration of palliative care\n\n#### Emergency Procedures\n- Thoracentesis for pleural effusion\n- Chest tube insertion for pneumothorax\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection (lobectomy, pneumonectomy) for localized NSCLC\n- Radiotherapy for local control or palliation\n\n#### Second-line Treatments\n- Targeted therapy for specific mutations (e.g., EGFR inhibitors)\n- Immunotherapy for advanced disease\n\n#### Monitoring Requirements\n- Regular imaging for recurrence\n- Pulmonary function tests for surgical candidates\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 75 mg/m² IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Often used in combination with other agents for NSCLC.\n\n#### Erlotinib\n- **Mechanism of Action**: EGFR tyrosine kinase inhibitor that blocks cancer cell growth\n- **Typical Dosing Range**: 150 mg orally once daily\n- **Key Side Effects/Contraindications**: Diarrhea, rash, fatigue\n- **When to Use vs. Alternatives**: Indicated for patients with EGFR mutations.\n\n#### Nivolumab\n- **Mechanism of Action**: PD-1 inhibitor that enhances immune response against cancer cells\n- **Typical Dosing Range**: 3 mg/kg IV every 2 weeks\n- **Key Side Effects/Contraindications**: Fatigue, rash, immune-mediated side effects\n- **When to Use vs. Alternatives**: Used in advanced NSCLC with high PD-L1 expression.\n\n### Procedures\n\n#### Bronchoscopy\n- **What it Involves**: A procedure using a thin tube with a camera to visualize the airways and obtain tissue samples.\n- **Indications**: Suspected lung cancer, abnormal imaging findings, persistent cough.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax.\n\n#### Thoracentesis\n- **What it Involves**: A procedure to remove fluid from the pleural space for diagnostic and therapeutic purposes.\n- **Indications**: Pleural effusion suspected to be malignant.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of lung cancer varies significantly based on the type, stage at diagnosis, and response to treatment. Overall 5-year survival rates are approximately 15% for all stages combined, but can be much higher for localized disease.\n\n### Important Complications to Watch For\n- Metastasis to other organs (brain, liver, bones)\n- Pleural effusion\n- Respiratory failure\n- Paraneoplastic syndromes (e.g., hypercalcemia, SIADH)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of lung cancer, conducting initial assessments, ordering appropriate investigations, and understanding the management options. They should also be aware of the importance of smoking cessation advice and palliative care discussions.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected lung cancer should be referred to a respiratory physician or oncologist for further evaluation and management. Escalation is necessary for patients with significant respiratory distress or complications such as pleural effusion requiring drainage.\n\n### Key Safety Considerations\nEnsure appropriate imaging and biopsy techniques are used to minimize complications. Monitor for signs of respiratory distress and manage pain effectively. Be aware of the potential for rapid deterioration in patients with advanced disease.\n",
+  "content": {
+    "overview": {
+      "definition": "Primary lung cancers are malignancies that originate in the lung tissue, primarily arising from the epithelial cells of the airways. The two main types are non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC).",
+      "epidemiology": "Lung cancer is the leading cause of cancer-related deaths worldwide. In the UK, it accounts for approximately 21% of all cancer deaths. The incidence is higher in males than females, with a significant correlation to smoking history.",
+      "pathophysiology": "Lung cancer develops through a series of genetic mutations in lung epithelial cells, often triggered by carcinogens such as tobacco smoke. These mutations lead to uncontrolled cell proliferation, evasion of apoptosis, and the ability to invade surrounding tissues and metastasize."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent cough",
+        "Hemoptysis (coughing up blood)",
+        "Chest pain",
+        "Shortness of breath (dyspnea)",
+        "Unexplained weight loss",
+        "Fatigue",
+        "Wheezing"
+      ],
+      "signs": [
+        "Clubbing of fingers",
+        "Cyanosis",
+        "Decreased breath sounds",
+        "Lymphadenopathy (especially supraclavicular)",
+        "Pleural effusion"
+      ],
+      "atypicalPresentations": [
+        "Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)",
+        "Bone pain due to metastasis",
+        "Neurological symptoms due to brain metastases"
+      ],
+      "redFlags": [
+        "New cough in a smoker or ex-smoker",
+        "Hemoptysis",
+        "Unexplained weight loss >5%",
+        "Persistent chest pain not relieved by analgesia",
+        "Signs of respiratory distress"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray",
+        "CT scan of the chest"
+      ],
+      "secondLine": [
+        "Bronchoscopy with biopsy",
+        "CT-guided lung biopsy",
+        "PET scan for staging"
+      ],
+      "specialistTests": [
+        "Molecular testing for EGFR, ALK, and ROS1 mutations",
+        "Immunohistochemistry for PD-L1 expression"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histological examination of tissue obtained via biopsy. Imaging studies help in staging the disease.",
+      "differentials": [
+        "Metastatic lung disease",
+        "Pneumonia",
+        "Tuberculosis",
+        "Interstitial lung disease",
+        "Benign lung tumors (e.g., hamartomas)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy for hypoxia",
+          "Bronchodilators for wheezing",
+          "Analgesia for pain management"
+        ],
+        "secondLine": [
+          "Chemotherapy initiation for SCLC",
+          "Consideration of palliative care"
+        ],
+        "procedures": [
+          "Thoracentesis for pleural effusion",
+          "Chest tube insertion for pneumothorax"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection (lobectomy, pneumonectomy) for localized NSCLC",
+          "Radiotherapy for local control or palliation"
+        ],
+        "secondLine": [
+          "Targeted therapy for specific mutations (e.g., EGFR inhibitors)",
+          "Immunotherapy for advanced disease"
+        ],
+        "monitoring": [
+          "Regular imaging for recurrence",
+          "Pulmonary function tests for surgical candidates"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "75 mg/m² IV every 3 weeks",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, myelosuppression",
+          "notes": "Often used in combination with other agents for NSCLC."
+        },
+        {
+          "name": "Erlotinib",
+          "mechanism": "EGFR tyrosine kinase inhibitor that blocks cancer cell growth",
+          "dosing": "150 mg orally once daily",
+          "sideEffects": "Diarrhea, rash, fatigue",
+          "notes": "Indicated for patients with EGFR mutations."
+        },
+        {
+          "name": "Nivolumab",
+          "mechanism": "PD-1 inhibitor that enhances immune response against cancer cells",
+          "dosing": "3 mg/kg IV every 2 weeks",
+          "sideEffects": "Fatigue, rash, immune-mediated side effects",
+          "notes": "Used in advanced NSCLC with high PD-L1 expression."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bronchoscopy",
+          "description": "A procedure using a thin tube with a camera to visualize the airways and obtain tissue samples.",
+          "indications": "Suspected lung cancer, abnormal imaging findings, persistent cough.",
+          "risks": "Bleeding, infection, pneumothorax."
+        },
+        {
+          "name": "Thoracentesis",
+          "description": "A procedure to remove fluid from the pleural space for diagnostic and therapeutic purposes.",
+          "indications": "Pleural effusion suspected to be malignant.",
+          "risks": "Pneumothorax, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of lung cancer varies significantly based on the type, stage at diagnosis, and response to treatment. Overall 5-year survival rates are approximately 15% for all stages combined, but can be much higher for localized disease.",
+    "complications": [
+      "Metastasis to other organs (brain, liver, bones)",
+      "Pleural effusion",
+      "Respiratory failure",
+      "Paraneoplastic syndromes (e.g., hypercalcemia, SIADH)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of lung cancer, conducting initial assessments, ordering appropriate investigations, and understanding the management options. They should also be aware of the importance of smoking cessation advice and palliative care discussions.",
+    "escalation": "Patients with suspected lung cancer should be referred to a respiratory physician or oncologist for further evaluation and management. Escalation is necessary for patients with significant respiratory distress or complications such as pleural effusion requiring drainage.",
+    "keySafetyConsiderations": "Ensure appropriate imaging and biopsy techniques are used to minimize complications. Monitor for signs of respiratory distress and manage pain effectively. Be aware of the potential for rapid deterioration in patients with advanced disease."
+  }
+}

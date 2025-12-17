@@ -1,0 +1,124 @@
+{
+  "id": "gallstones_and_biliary_colic",
+  "name": "Gallstones and biliary colic",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:40:34.698514",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gallstones and biliary colic: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGallstones are solid particles that form from bile cholesterol and bilirubin in the gallbladder. Biliary colic refers to the pain caused by the temporary obstruction of the cystic duct by a gallstone.\n\n### Epidemiology\nGallstones are common, affecting approximately 10-15% of the adult population, with higher prevalence in women, particularly those over 40 years of age. Risk factors include obesity, rapid weight loss, pregnancy, and certain diets.\n\n### Essential Pathophysiology\nGallstones can be classified into cholesterol stones (most common) and pigment stones. They form when there is an imbalance in the substances that make up bile, leading to crystallization. Biliary colic occurs when a gallstone temporarily obstructs the cystic duct, causing increased pressure in the gallbladder and resulting in pain.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe, intermittent abdominal pain in the right upper quadrant\n- Nausea and vomiting\n- Pain may radiate to the right shoulder or back\n- Episodes often triggered by fatty meals\n\n### Key Signs\n- Tenderness in the right upper quadrant\n- Murphy's sign (pain on inspiration when the gallbladder is palpated)\n- Jaundice (if there is common bile duct obstruction)\n\n### Atypical Presentations\n- Pain may be located in the epigastric region\n- Symptoms may mimic peptic ulcer disease or pancreatitis\n\n### Red Flags Requiring Immediate Action\n- Persistent jaundice\n- Fever and chills (suggestive of cholecystitis or cholangitis)\n- Severe, unrelenting pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound abdomen (to detect gallstones and assess gallbladder inflammation)\n- Liver function tests (to assess for biliary obstruction)\n\n### Second-line Investigations\n- CT abdomen (if ultrasound is inconclusive)\n- MRCP (Magnetic Resonance Cholangiopancreatography) for biliary tree assessment\n\n### Specialist Tests\n- Endoscopic retrograde cholangiopancreatography (ERCP) for therapeutic intervention\n- HIDA scan (Hepatobiliary Iminodiacetic Acid scan) to assess gallbladder function\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and ultrasound findings showing gallstones and/or gallbladder wall thickening.\n\n### Key Differential Diagnoses to Exclude\n- Peptic ulcer disease\n- Pancreatitis\n- Acute appendicitis\n- Gastritis\n- Myocardial infarction (referred pain)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- NPO (nothing by mouth) until further assessment\n\n#### Second-line Treatments\n- Consider surgical consultation for cholecystectomy if symptoms persist or complications arise\n\n#### Emergency Procedures\n- Laparoscopic cholecystectomy (removal of the gallbladder) is the definitive treatment for symptomatic gallstones.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (low-fat diet)\n- Regular follow-up for symptom management\n\n#### Second-line Treatments\n- Consider elective laparoscopic cholecystectomy for recurrent symptoms\n\n#### Monitoring Requirements\n- Monitor for complications such as cholecystitis or pancreatitis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Safe in pregnancy.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal irritation, renal impairment\n- **When to Use vs. Alternatives**: Avoid in patients with peptic ulcer disease.\n\n### Procedures\n\n#### Laparoscopic cholecystectomy\n- **What it Involves**: Minimally invasive surgery to remove the gallbladder\n- **Indications**: Symptomatic gallstones, recurrent biliary colic, complications such as cholecystitis\n- **Key Risks/Complications**: Bleeding, infection, injury to bile ducts or surrounding organs\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients with gallstones remain asymptomatic. Surgical intervention is highly effective for symptomatic cases, with a low complication rate. Long-term prognosis is excellent post-cholecystectomy.\n\n### Important Complications to Watch For\n- Cholecystitis (inflammation of the gallbladder)\n- Pancreatitis (if a stone obstructs the pancreatic duct)\n- Cholangitis (infection of the bile duct)\n- Biliary obstruction leading to jaundice\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute symptoms, and coordinate care with surgical teams. They should also educate patients about dietary modifications and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to surgical team if there are signs of complications (e.g., fever, persistent pain, jaundice) or if the patient requires surgical intervention.\n\n### Key Safety Considerations\nEnsure appropriate pain management and monitor for signs of complications. Be vigilant for red flags indicating potential serious conditions.\n",
+  "content": {
+    "overview": {
+      "definition": "Gallstones are solid particles that form from bile cholesterol and bilirubin in the gallbladder. Biliary colic refers to the pain caused by the temporary obstruction of the cystic duct by a gallstone.",
+      "epidemiology": "Gallstones are common, affecting approximately 10-15% of the adult population, with higher prevalence in women, particularly those over 40 years of age. Risk factors include obesity, rapid weight loss, pregnancy, and certain diets.",
+      "pathophysiology": "Gallstones can be classified into cholesterol stones (most common) and pigment stones. They form when there is an imbalance in the substances that make up bile, leading to crystallization. Biliary colic occurs when a gallstone temporarily obstructs the cystic duct, causing increased pressure in the gallbladder and resulting in pain."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe, intermittent abdominal pain in the right upper quadrant",
+        "Nausea and vomiting",
+        "Pain may radiate to the right shoulder or back",
+        "Episodes often triggered by fatty meals"
+      ],
+      "signs": [
+        "Tenderness in the right upper quadrant",
+        "Murphy's sign (pain on inspiration when the gallbladder is palpated)",
+        "Jaundice (if there is common bile duct obstruction)"
+      ],
+      "atypicalPresentations": [
+        "Pain may be located in the epigastric region",
+        "Symptoms may mimic peptic ulcer disease or pancreatitis"
+      ],
+      "redFlags": [
+        "Persistent jaundice",
+        "Fever and chills (suggestive of cholecystitis or cholangitis)",
+        "Severe, unrelenting pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound abdomen (to detect gallstones and assess gallbladder inflammation)",
+        "Liver function tests (to assess for biliary obstruction)"
+      ],
+      "secondLine": [
+        "CT abdomen (if ultrasound is inconclusive)",
+        "MRCP (Magnetic Resonance Cholangiopancreatography) for biliary tree assessment"
+      ],
+      "specialistTests": [
+        "Endoscopic retrograde cholangiopancreatography (ERCP) for therapeutic intervention",
+        "HIDA scan (Hepatobiliary Iminodiacetic Acid scan) to assess gallbladder function"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and ultrasound findings showing gallstones and/or gallbladder wall thickening.",
+      "differentials": [
+        "Peptic ulcer disease",
+        "Pancreatitis",
+        "Acute appendicitis",
+        "Gastritis",
+        "Myocardial infarction (referred pain)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "NPO (nothing by mouth) until further assessment"
+        ],
+        "secondLine": [
+          "Consider surgical consultation for cholecystectomy if symptoms persist or complications arise"
+        ],
+        "procedures": [
+          "Laparoscopic cholecystectomy (removal of the gallbladder) is the definitive treatment for symptomatic gallstones."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (low-fat diet)",
+          "Regular follow-up for symptom management"
+        ],
+        "secondLine": [
+          "Consider elective laparoscopic cholecystectomy for recurrent symptoms"
+        ],
+        "monitoring": [
+          "Monitor for complications such as cholecystitis or pancreatitis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Safe in pregnancy."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-800 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal irritation, renal impairment",
+          "notes": "Avoid in patients with peptic ulcer disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparoscopic cholecystectomy",
+          "description": "Minimally invasive surgery to remove the gallbladder",
+          "indications": "Symptomatic gallstones, recurrent biliary colic, complications such as cholecystitis",
+          "risks": "Bleeding, infection, injury to bile ducts or surrounding organs"
+        }
+      ]
+    },
+    "prognosis": "Most patients with gallstones remain asymptomatic. Surgical intervention is highly effective for symptomatic cases, with a low complication rate. Long-term prognosis is excellent post-cholecystectomy.",
+    "complications": [
+      "Cholecystitis (inflammation of the gallbladder)",
+      "Pancreatitis (if a stone obstructs the pancreatic duct)",
+      "Cholangitis (infection of the bile duct)",
+      "Biliary obstruction leading to jaundice"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute symptoms, and coordinate care with surgical teams. They should also educate patients about dietary modifications and follow-up care.",
+    "escalation": "Refer to surgical team if there are signs of complications (e.g., fever, persistent pain, jaundice) or if the patient requires surgical intervention.",
+    "keySafetyConsiderations": "Ensure appropriate pain management and monitor for signs of complications. Be vigilant for red flags indicating potential serious conditions."
+  }
+}

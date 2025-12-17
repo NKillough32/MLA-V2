@@ -1,0 +1,130 @@
+{
+  "id": "lyme_disease",
+  "name": "Lyme disease",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:11:43.415074",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lyme disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLyme disease is an infectious disease caused by the spirochete Borrelia burgdorferi, transmitted to humans through the bite of infected Ixodes ticks.\n\n### Epidemiology\nLyme disease is most prevalent in North America and Europe, particularly in areas with high tick populations. It is estimated that tens of thousands of cases occur annually in the United States alone, with increasing incidence in certain regions due to climate change and urbanization.\n\n### Essential Pathophysiology\nThe disease is initiated when the Borrelia burgdorferi bacteria enter the human body through the skin via a tick bite. The bacteria can disseminate through the bloodstream, leading to localized skin lesions (erythema migrans), and can affect multiple organ systems, including the nervous system, joints, and heart.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Erythema migrans (bull's-eye rash)\n- Fever\n- Chills\n- Fatigue\n- Muscle and joint aches\n- Headache\n\n### Key Signs\n- Erythema migrans (typically appears 3-30 days after a tick bite)\n- Lymphadenopathy\n- Neurological signs (e.g., cranial nerve palsies)\n- Arthritis (in chronic cases)\n\n### Atypical Presentations\n- Acute Lyme carditis (heart block)\n- Neuroborreliosis (meningitis, encephalitis)\n- Lyme arthritis without a preceding rash\n\n### Red Flags Requiring Immediate Action\n- Severe headache or neck stiffness (possible meningitis)\n- Heart palpitations or syncope (possible Lyme carditis)\n- Persistent joint pain or swelling (possible chronic Lyme disease)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and physical examination\n- Serological tests (ELISA followed by Western blot for confirmation)\n\n### Second-line Investigations\n- PCR testing of synovial fluid or CSF in suspected cases of Lyme arthritis or neuroborreliosis\n\n### Specialist Tests\n- Lumbar puncture for CSF analysis in neurological cases\n- Joint aspiration for synovial fluid analysis in arthritis cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by serological testing. A positive ELISA test followed by a confirmatory Western blot is required for definitive diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatic fever\n- Viral exanthems\n- Other tick-borne diseases (e.g., anaplasmosis, babesiosis)\n- Autoimmune conditions (e.g., rheumatoid arthritis, lupus)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Doxycycline 100 mg orally twice daily for 10-21 days (depending on stage)\n- Amoxicillin 500 mg orally three times daily for 14-21 days (in children or pregnant women)\n\n#### Second-line Treatments\n- Cefuroxime axetil 500 mg orally twice daily for 14-21 days\n\n#### Emergency Procedures\n- Joint aspiration for Lyme arthritis to relieve symptoms and analyze synovial fluid\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continuation of antibiotics (Doxycycline or Amoxicillin) for persistent symptoms, duration varies based on clinical judgment\n\n#### Second-line Treatments\n- Consider referral to a specialist for persistent symptoms or complications\n\n#### Monitoring Requirements\n- Regular follow-up for symptom resolution and potential side effects of prolonged antibiotic therapy\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Doxycycline\n- **Mechanism of Action**: Tetracycline antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 100 mg orally twice daily for 10-21 days depending on the stage of the disease.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, photosensitivity, esophageal irritation.\n- **When to Use vs. Alternatives**: Contraindicated in pregnancy and children under 8 years.\n\n#### Amoxicillin\n- **Mechanism of Action**: Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 500 mg orally three times daily for 14-21 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Safe in pregnancy.\n\n#### Cefuroxime axetil\n- **Mechanism of Action**: Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 500 mg orally twice daily for 14-21 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Alternative for those allergic to penicillin.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: A procedure to remove excess fluid from a joint space, often performed in cases of Lyme arthritis.\n- **Indications**: Persistent joint swelling and pain, suspected septic arthritis.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and appropriate treatment, the prognosis for Lyme disease is excellent. However, some patients may experience persistent symptoms (Post-Treatment Lyme Disease Syndrome) even after treatment.\n\n### Important Complications to Watch For\n- Lyme arthritis (chronic joint pain)\n- Neurological complications (e.g., meningitis, encephalitis)\n- Cardiac complications (e.g., Lyme carditis leading to heart block)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize the signs and symptoms of Lyme disease, initiate appropriate investigations, and start empirical treatment while considering referral to specialists for complex cases.\n\n### When to Escalate to Senior/Specialist\nRefer to infectious disease specialists for severe cases, persistent symptoms, or complications such as neurological involvement or severe Lyme carditis.\n\n### Key Safety Considerations\nMonitor for signs of anaphylaxis in patients receiving antibiotics, especially those with a history of allergies. Ensure proper tick removal techniques are taught to patients in endemic areas to prevent transmission.\n",
+  "content": {
+    "overview": {
+      "definition": "Lyme disease is an infectious disease caused by the spirochete Borrelia burgdorferi, transmitted to humans through the bite of infected Ixodes ticks.",
+      "epidemiology": "Lyme disease is most prevalent in North America and Europe, particularly in areas with high tick populations. It is estimated that tens of thousands of cases occur annually in the United States alone, with increasing incidence in certain regions due to climate change and urbanization.",
+      "pathophysiology": "The disease is initiated when the Borrelia burgdorferi bacteria enter the human body through the skin via a tick bite. The bacteria can disseminate through the bloodstream, leading to localized skin lesions (erythema migrans), and can affect multiple organ systems, including the nervous system, joints, and heart."
+    },
+    "recognition": {
+      "symptoms": [
+        "Erythema migrans (bull's-eye rash)",
+        "Fever",
+        "Chills",
+        "Fatigue",
+        "Muscle and joint aches",
+        "Headache"
+      ],
+      "signs": [
+        "Erythema migrans (typically appears 3-30 days after a tick bite)",
+        "Lymphadenopathy",
+        "Neurological signs (e.g., cranial nerve palsies)",
+        "Arthritis (in chronic cases)"
+      ],
+      "atypicalPresentations": [
+        "Acute Lyme carditis (heart block)",
+        "Neuroborreliosis (meningitis, encephalitis)",
+        "Lyme arthritis without a preceding rash"
+      ],
+      "redFlags": [
+        "Severe headache or neck stiffness (possible meningitis)",
+        "Heart palpitations or syncope (possible Lyme carditis)",
+        "Persistent joint pain or swelling (possible chronic Lyme disease)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and physical examination",
+        "Serological tests (ELISA followed by Western blot for confirmation)"
+      ],
+      "secondLine": [
+        "PCR testing of synovial fluid or CSF in suspected cases of Lyme arthritis or neuroborreliosis"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for CSF analysis in neurological cases",
+        "Joint aspiration for synovial fluid analysis in arthritis cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by serological testing. A positive ELISA test followed by a confirmatory Western blot is required for definitive diagnosis.",
+      "differentials": [
+        "Rheumatic fever",
+        "Viral exanthems",
+        "Other tick-borne diseases (e.g., anaplasmosis, babesiosis)",
+        "Autoimmune conditions (e.g., rheumatoid arthritis, lupus)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Doxycycline 100 mg orally twice daily for 10-21 days (depending on stage)",
+          "Amoxicillin 500 mg orally three times daily for 14-21 days (in children or pregnant women)"
+        ],
+        "secondLine": [
+          "Cefuroxime axetil 500 mg orally twice daily for 14-21 days"
+        ],
+        "procedures": [
+          "Joint aspiration for Lyme arthritis to relieve symptoms and analyze synovial fluid"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continuation of antibiotics (Doxycycline or Amoxicillin) for persistent symptoms, duration varies based on clinical judgment"
+        ],
+        "secondLine": [
+          "Consider referral to a specialist for persistent symptoms or complications"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom resolution and potential side effects of prolonged antibiotic therapy"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Doxycycline",
+          "mechanism": "Tetracycline antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "100 mg orally twice daily for 10-21 days depending on the stage of the disease.",
+          "sideEffects": "Nausea, vomiting, photosensitivity, esophageal irritation.",
+          "notes": "Contraindicated in pregnancy and children under 8 years."
+        },
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "500 mg orally three times daily for 14-21 days.",
+          "sideEffects": "Nausea, diarrhea, allergic reactions.",
+          "notes": "Safe in pregnancy."
+        },
+        {
+          "name": "Cefuroxime axetil",
+          "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "500 mg orally twice daily for 14-21 days.",
+          "sideEffects": "Nausea, diarrhea, allergic reactions.",
+          "notes": "Alternative for those allergic to penicillin."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "A procedure to remove excess fluid from a joint space, often performed in cases of Lyme arthritis.",
+          "indications": "Persistent joint swelling and pain, suspected septic arthritis.",
+          "risks": "Infection, bleeding, pain at the site, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and appropriate treatment, the prognosis for Lyme disease is excellent. However, some patients may experience persistent symptoms (Post-Treatment Lyme Disease Syndrome) even after treatment.",
+    "complications": [
+      "Lyme arthritis (chronic joint pain)",
+      "Neurological complications (e.g., meningitis, encephalitis)",
+      "Cardiac complications (e.g., Lyme carditis leading to heart block)"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize the signs and symptoms of Lyme disease, initiate appropriate investigations, and start empirical treatment while considering referral to specialists for complex cases.",
+    "escalation": "Refer to infectious disease specialists for severe cases, persistent symptoms, or complications such as neurological involvement or severe Lyme carditis.",
+    "keySafetyConsiderations": "Monitor for signs of anaphylaxis in patients receiving antibiotics, especially those with a history of allergies. Ensure proper tick removal techniques are taught to patients in endemic areas to prevent transmission."
+  }
+}

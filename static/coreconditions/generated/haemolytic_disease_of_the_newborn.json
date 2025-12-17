@@ -1,0 +1,128 @@
+{
+  "id": "haemolytic_disease_of_the_newborn",
+  "name": "Haemolytic disease of the newborn",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T20:01:31.025138",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Haemolytic disease of the newborn: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHaemolytic disease of the newborn (HDN) is a condition where the red blood cells of a fetus or newborn are destroyed by maternal antibodies, leading to anemia, jaundice, and other complications.\n\n### Epidemiology\nHDN occurs in approximately 1 in 1,000 live births, with Rh incompatibility being the most common cause. It is more prevalent in populations with a high incidence of Rh-negative blood types.\n\n### Essential Pathophysiology\nHDN typically occurs when an Rh-negative mother carries an Rh-positive fetus. Maternal immune response leads to the production of IgG antibodies against the Rh antigen, which cross the placenta and attack fetal red blood cells, causing hemolysis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Jaundice within the first 24 hours of life\n- Pallor\n- Lethargy\n- Poor feeding\n- Respiratory distress\n\n### Key Signs\n- Hepatosplenomegaly\n- Edema (hydrops fetalis)\n- Increased heart rate\n- Pallor\n\n### Atypical Presentations\n- Severe anemia without jaundice\n- Late-onset jaundice after 24 hours\n\n### Red Flags Requiring Immediate Action\n- Severe jaundice within the first 24 hours\n- Signs of heart failure or hydrops fetalis\n- Persistent anemia despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood group and Rh typing of mother and newborn\n- Direct Coombs test (DAT)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Bilirubin levels (total and direct)\n- Reticulocyte count\n- Peripheral blood smear\n\n### Specialist Tests\n- Amniocentesis for fetal blood type\n- Ultrasound for assessing hydrops\n- Cord blood analysis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on maternal history, blood group incompatibility, positive direct Coombs test, and clinical signs of hemolysis in the newborn.\n\n### Key Differential Diagnoses to Exclude\n- Physiological jaundice\n- Breast milk jaundice\n- Infection (e.g., sepsis)\n- Metabolic disorders (e.g., galactosemia)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Phototherapy for jaundice\n- Exchange transfusion in severe cases\n- Supportive care (hydration, monitoring)\n\n#### Second-line Treatments\n- Intravenous immunoglobulin (IVIG) if indicated\n\n#### Emergency Procedures\n- Exchange transfusion: a procedure to replace the infant's blood with donor blood to reduce bilirubin levels and remove antibodies. Indicated in severe hemolytic disease. Risks include infection, electrolyte imbalance, and volume overload.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of bilirubin levels and hemoglobin\n- Supportive care and management of anemia\n\n#### Second-line Treatments\n- Consideration of erythropoietin in severe cases\n\n#### Monitoring Requirements\n- Regular follow-up for developmental milestones and potential complications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Phototherapy\n- **Mechanism of Action**: Uses light to convert bilirubin into water-soluble isomers that can be excreted.\n- **Typical Dosing Range**: Initiate when bilirubin levels exceed threshold based on age and weight.\n- **Key Side Effects/Contraindications**: Dehydration, skin rash, transient increase in temperature.\n- **When to Use vs. Alternatives**: Monitor bilirubin levels closely during treatment.\n\n#### Intravenous Immunoglobulin (IVIG)\n- **Mechanism of Action**: Reduces hemolysis by neutralizing maternal antibodies.\n- **Typical Dosing Range**: 0.5-1 g/kg IV, may repeat based on clinical response.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions.\n- **When to Use vs. Alternatives**: Monitor for signs of anaphylaxis.\n\n### Procedures\n\n#### Exchange transfusion\n- **What it Involves**: A procedure where the infant's blood is replaced with donor blood to reduce bilirubin levels and remove antibodies.\n- **Indications**: Severe hemolytic disease with high bilirubin levels or significant anemia.\n- **Key Risks/Complications**: Infection, electrolyte imbalance, volume overload, and transfusion reactions. Risks are higher in premature infants.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early recognition and management, the prognosis for infants with HDN is generally good. However, severe cases can lead to significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Kernicterus (bilirubin encephalopathy)\n- Anemia requiring transfusion\n- Hydrops fetalis\n- Long-term developmental delays\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs of HDN, initiate investigations, and manage phototherapy and supportive care. They should also be aware of when to escalate care to a pediatrician or neonatologist.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of severe hemolysis, significant jaundice within the first 24 hours, or if the infant is unstable, escalate to a senior clinician or pediatric specialist immediately.\n\n### Key Safety Considerations\nEnsure accurate blood typing and cross-matching, monitor bilirubin levels closely, and be vigilant for signs of complications such as kernicterus or severe anemia.\n",
+  "content": {
+    "overview": {
+      "definition": "Haemolytic disease of the newborn (HDN) is a condition where the red blood cells of a fetus or newborn are destroyed by maternal antibodies, leading to anemia, jaundice, and other complications.",
+      "epidemiology": "HDN occurs in approximately 1 in 1,000 live births, with Rh incompatibility being the most common cause. It is more prevalent in populations with a high incidence of Rh-negative blood types.",
+      "pathophysiology": "HDN typically occurs when an Rh-negative mother carries an Rh-positive fetus. Maternal immune response leads to the production of IgG antibodies against the Rh antigen, which cross the placenta and attack fetal red blood cells, causing hemolysis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Jaundice within the first 24 hours of life",
+        "Pallor",
+        "Lethargy",
+        "Poor feeding",
+        "Respiratory distress"
+      ],
+      "signs": [
+        "Hepatosplenomegaly",
+        "Edema (hydrops fetalis)",
+        "Increased heart rate",
+        "Pallor"
+      ],
+      "atypicalPresentations": [
+        "Severe anemia without jaundice",
+        "Late-onset jaundice after 24 hours"
+      ],
+      "redFlags": [
+        "Severe jaundice within the first 24 hours",
+        "Signs of heart failure or hydrops fetalis",
+        "Persistent anemia despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood group and Rh typing of mother and newborn",
+        "Direct Coombs test (DAT)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Bilirubin levels (total and direct)",
+        "Reticulocyte count",
+        "Peripheral blood smear"
+      ],
+      "specialistTests": [
+        "Amniocentesis for fetal blood type",
+        "Ultrasound for assessing hydrops",
+        "Cord blood analysis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on maternal history, blood group incompatibility, positive direct Coombs test, and clinical signs of hemolysis in the newborn.",
+      "differentials": [
+        "Physiological jaundice",
+        "Breast milk jaundice",
+        "Infection (e.g., sepsis)",
+        "Metabolic disorders (e.g., galactosemia)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Phototherapy for jaundice",
+          "Exchange transfusion in severe cases",
+          "Supportive care (hydration, monitoring)"
+        ],
+        "secondLine": [
+          "Intravenous immunoglobulin (IVIG) if indicated"
+        ],
+        "procedures": [
+          "Exchange transfusion: a procedure to replace the infant's blood with donor blood to reduce bilirubin levels and remove antibodies. Indicated in severe hemolytic disease. Risks include infection, electrolyte imbalance, and volume overload."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of bilirubin levels and hemoglobin",
+          "Supportive care and management of anemia"
+        ],
+        "secondLine": [
+          "Consideration of erythropoietin in severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for developmental milestones and potential complications."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Phototherapy",
+          "mechanism": "Uses light to convert bilirubin into water-soluble isomers that can be excreted.",
+          "dosing": "Initiate when bilirubin levels exceed threshold based on age and weight.",
+          "sideEffects": "Dehydration, skin rash, transient increase in temperature.",
+          "notes": "Monitor bilirubin levels closely during treatment."
+        },
+        {
+          "name": "Intravenous Immunoglobulin (IVIG)",
+          "mechanism": "Reduces hemolysis by neutralizing maternal antibodies.",
+          "dosing": "0.5-1 g/kg IV, may repeat based on clinical response.",
+          "sideEffects": "Headache, fever, chills, allergic reactions.",
+          "notes": "Monitor for signs of anaphylaxis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Exchange transfusion",
+          "description": "A procedure where the infant's blood is replaced with donor blood to reduce bilirubin levels and remove antibodies.",
+          "indications": "Severe hemolytic disease with high bilirubin levels or significant anemia.",
+          "risks": "Infection, electrolyte imbalance, volume overload, and transfusion reactions. Risks are higher in premature infants."
+        }
+      ]
+    },
+    "prognosis": "With early recognition and management, the prognosis for infants with HDN is generally good. However, severe cases can lead to significant morbidity and mortality.",
+    "complications": [
+      "Kernicterus (bilirubin encephalopathy)",
+      "Anemia requiring transfusion",
+      "Hydrops fetalis",
+      "Long-term developmental delays"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs of HDN, initiate investigations, and manage phototherapy and supportive care. They should also be aware of when to escalate care to a pediatrician or neonatologist.",
+    "escalation": "If there are signs of severe hemolysis, significant jaundice within the first 24 hours, or if the infant is unstable, escalate to a senior clinician or pediatric specialist immediately.",
+    "keySafetyConsiderations": "Ensure accurate blood typing and cross-matching, monitor bilirubin levels closely, and be vigilant for signs of complications such as kernicterus or severe anemia."
+  }
+}

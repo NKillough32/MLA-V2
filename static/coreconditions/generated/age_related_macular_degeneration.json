@@ -1,0 +1,125 @@
+{
+  "id": "age_related_macular_degeneration",
+  "name": "Age-related macular degeneration",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:44:10.621969",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Age-related macular degeneration: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAge-related macular degeneration (AMD) is a progressive eye disease that affects the macula, the central part of the retina, leading to loss of central vision. It is primarily associated with aging and is a leading cause of vision loss in older adults.\n\n### Epidemiology\nAMD affects approximately 10% of individuals over the age of 65, with prevalence increasing with age. It is more common in Caucasians and has a higher incidence in females. Risk factors include family history, smoking, obesity, and cardiovascular disease.\n\n### Essential Pathophysiology\nAMD is characterized by the degeneration of retinal pigment epithelium (RPE) and photoreceptors in the macula. There are two forms: dry (non-exudative) AMD, which involves drusen formation and gradual vision loss, and wet (exudative) AMD, which involves choroidal neovascularization leading to rapid vision loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Blurred or distorted central vision\n- Difficulty recognizing faces\n- Need for increased light when reading\n- Difficulty adapting to low light conditions\n- A dark or empty area in the center of vision\n\n### Key Signs\n- Drusen (yellow deposits) in the retina\n- Retinal pigmentary changes\n- Subretinal fluid or hemorrhage in wet AMD\n- RPE atrophy\n\n### Atypical Presentations\n- Sudden onset of vision loss in one eye (wet AMD)\n- Visual hallucinations (Charles Bonnet syndrome)\n\n### Red Flags Requiring Immediate Action\n- Sudden changes in vision\n- New onset of central scotoma\n- Visual distortion (metamorphopsia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual acuity testing\n- Fundoscopy (dilated eye exam)\n- Amsler grid test\n\n### Second-line Investigations\n- Optical coherence tomography (OCT)\n- Fluorescein angiography (FA)\n- Fundus autofluorescence\n\n### Specialist Tests\n- Indocyanine green angiography (ICGA)\n- Visual field testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical findings from history, visual acuity tests, and imaging studies (OCT, FA). The presence of drusen and RPE changes in dry AMD or neovascularization in wet AMD confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Diabetic retinopathy\n- Retinal vein occlusion\n- Central serous chorioretinopathy\n- Myopic degeneration\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to ophthalmology for wet AMD\n- Intravitreal anti-VEGF injections (e.g., Ranibizumab, Aflibercept)\n\n#### Second-line Treatments\n- Photodynamic therapy (PDT) for specific cases of wet AMD\n\n#### Emergency Procedures\n- Intravitreal injection: A procedure to deliver medication directly into the vitreous cavity of the eye. Indicated for wet AMD to inhibit neovascularization. Risks include infection, retinal detachment, and bleeding.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (smoking cessation, diet rich in antioxidants)\n- Regular monitoring with visual acuity and OCT\n\n#### Second-line Treatments\n- Low vision rehabilitation services\n\n#### Monitoring Requirements\n- Regular follow-up appointments every 3-6 months depending on disease progression.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ranibizumab\n- **Mechanism of Action**: Anti-VEGF monoclonal antibody that inhibits vascular endothelial growth factor, reducing neovascularization.\n- **Typical Dosing Range**: 0.5 mg intravitreal injection every month for the first three months, then as needed based on disease activity.\n- **Key Side Effects/Contraindications**: Intraocular inflammation, retinal detachment, endophthalmitis, increased intraocular pressure.\n- **When to Use vs. Alternatives**: Most commonly used for wet AMD.\n\n#### Aflibercept\n- **Mechanism of Action**: Fusion protein that acts as a decoy receptor for VEGF, preventing its action.\n- **Typical Dosing Range**: 2 mg intravitreal injection every month for the first three months, then every 2 months thereafter.\n- **Key Side Effects/Contraindications**: Similar to Ranibizumab, with potential for systemic effects.\n- **When to Use vs. Alternatives**: Effective for both wet AMD and diabetic macular edema.\n\n### Procedures\n\n#### Intravitreal injection\n- **What it Involves**: A minimally invasive procedure where medication is injected into the vitreous humor of the eye.\n- **Indications**: Wet AMD, diabetic macular edema, retinal vein occlusion.\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, transient increase in intraocular pressure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for dry AMD varies, with many patients maintaining some vision for years. Wet AMD can lead to rapid vision loss if untreated, but timely intervention can stabilize or improve vision in many cases.\n\n### Important Complications to Watch For\n- Choroidal neovascularization (wet AMD)\n- Severe vision loss\n- Psychosocial impact due to vision impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology for further evaluation and management. They should also educate patients about lifestyle modifications and the importance of regular eye examinations.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology urgently if there are sudden changes in vision or signs of wet AMD. Regular follow-up is essential for monitoring disease progression.\n\n### Key Safety Considerations\nEnsure proper aseptic technique during intravitreal injections to minimize infection risk. Monitor for signs of complications post-injection, such as increased intraocular pressure or retinal detachment.\n",
+  "content": {
+    "overview": {
+      "definition": "Age-related macular degeneration (AMD) is a progressive eye disease that affects the macula, the central part of the retina, leading to loss of central vision. It is primarily associated with aging and is a leading cause of vision loss in older adults.",
+      "epidemiology": "AMD affects approximately 10% of individuals over the age of 65, with prevalence increasing with age. It is more common in Caucasians and has a higher incidence in females. Risk factors include family history, smoking, obesity, and cardiovascular disease.",
+      "pathophysiology": "AMD is characterized by the degeneration of retinal pigment epithelium (RPE) and photoreceptors in the macula. There are two forms: dry (non-exudative) AMD, which involves drusen formation and gradual vision loss, and wet (exudative) AMD, which involves choroidal neovascularization leading to rapid vision loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "Blurred or distorted central vision",
+        "Difficulty recognizing faces",
+        "Need for increased light when reading",
+        "Difficulty adapting to low light conditions",
+        "A dark or empty area in the center of vision"
+      ],
+      "signs": [
+        "Drusen (yellow deposits) in the retina",
+        "Retinal pigmentary changes",
+        "Subretinal fluid or hemorrhage in wet AMD",
+        "RPE atrophy"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of vision loss in one eye (wet AMD)",
+        "Visual hallucinations (Charles Bonnet syndrome)"
+      ],
+      "redFlags": [
+        "Sudden changes in vision",
+        "New onset of central scotoma",
+        "Visual distortion (metamorphopsia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual acuity testing",
+        "Fundoscopy (dilated eye exam)",
+        "Amsler grid test"
+      ],
+      "secondLine": [
+        "Optical coherence tomography (OCT)",
+        "Fluorescein angiography (FA)",
+        "Fundus autofluorescence"
+      ],
+      "specialistTests": [
+        "Indocyanine green angiography (ICGA)",
+        "Visual field testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical findings from history, visual acuity tests, and imaging studies (OCT, FA). The presence of drusen and RPE changes in dry AMD or neovascularization in wet AMD confirms the diagnosis.",
+      "differentials": [
+        "Diabetic retinopathy",
+        "Retinal vein occlusion",
+        "Central serous chorioretinopathy",
+        "Myopic degeneration"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to ophthalmology for wet AMD",
+          "Intravitreal anti-VEGF injections (e.g., Ranibizumab, Aflibercept)"
+        ],
+        "secondLine": [
+          "Photodynamic therapy (PDT) for specific cases of wet AMD"
+        ],
+        "procedures": [
+          "Intravitreal injection: A procedure to deliver medication directly into the vitreous cavity of the eye. Indicated for wet AMD to inhibit neovascularization. Risks include infection, retinal detachment, and bleeding."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (smoking cessation, diet rich in antioxidants)",
+          "Regular monitoring with visual acuity and OCT"
+        ],
+        "secondLine": [
+          "Low vision rehabilitation services"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments every 3-6 months depending on disease progression."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ranibizumab",
+          "mechanism": "Anti-VEGF monoclonal antibody that inhibits vascular endothelial growth factor, reducing neovascularization.",
+          "dosing": "0.5 mg intravitreal injection every month for the first three months, then as needed based on disease activity.",
+          "sideEffects": "Intraocular inflammation, retinal detachment, endophthalmitis, increased intraocular pressure.",
+          "notes": "Most commonly used for wet AMD."
+        },
+        {
+          "name": "Aflibercept",
+          "mechanism": "Fusion protein that acts as a decoy receptor for VEGF, preventing its action.",
+          "dosing": "2 mg intravitreal injection every month for the first three months, then every 2 months thereafter.",
+          "sideEffects": "Similar to Ranibizumab, with potential for systemic effects.",
+          "notes": "Effective for both wet AMD and diabetic macular edema."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravitreal injection",
+          "description": "A minimally invasive procedure where medication is injected into the vitreous humor of the eye.",
+          "indications": "Wet AMD, diabetic macular edema, retinal vein occlusion.",
+          "risks": "Infection, bleeding, retinal detachment, transient increase in intraocular pressure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for dry AMD varies, with many patients maintaining some vision for years. Wet AMD can lead to rapid vision loss if untreated, but timely intervention can stabilize or improve vision in many cases.",
+    "complications": [
+      "Choroidal neovascularization (wet AMD)",
+      "Severe vision loss",
+      "Psychosocial impact due to vision impairment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology for further evaluation and management. They should also educate patients about lifestyle modifications and the importance of regular eye examinations.",
+    "escalation": "Refer to ophthalmology urgently if there are sudden changes in vision or signs of wet AMD. Regular follow-up is essential for monitoring disease progression.",
+    "keySafetyConsiderations": "Ensure proper aseptic technique during intravitreal injections to minimize infection risk. Monitor for signs of complications post-injection, such as increased intraocular pressure or retinal detachment."
+  }
+}

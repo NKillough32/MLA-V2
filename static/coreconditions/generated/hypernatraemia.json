@@ -1,0 +1,134 @@
+{
+  "id": "hypernatraemia",
+  "name": "Hypernatraemia",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:16:40.065775",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypernatraemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypernatraemia is defined as an elevated serum sodium concentration, typically greater than 145 mmol/L. It indicates a relative deficit of water in relation to sodium in the body.\n\n### Epidemiology\nHypernatraemia is relatively uncommon in the general population but can occur in specific settings, particularly in elderly patients, those with impaired thirst mechanisms, or in cases of excessive fluid loss. It is more prevalent in hospitalized patients, especially in intensive care units.\n\n### Essential Pathophysiology\nHypernatraemia occurs when there is a net loss of water from the body or an excess of sodium. This can result from inadequate water intake, excessive water loss (e.g., through sweating, diarrhea, or diuresis), or hypertonic saline administration. The body attempts to compensate through mechanisms such as increased thirst and secretion of antidiuretic hormone (ADH), but these may be insufficient in certain populations.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Thirst\n- Dry mucous membranes\n- Lethargy\n- Confusion\n- Irritability\n- Muscle twitching\n- Seizures\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Decreased skin turgor\n- Altered mental status\n- Hyperreflexia\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Neurological symptoms may dominate in severe cases\n\n### Red Flags Requiring Immediate Action\n- Severe hypernatraemia (>160 mmol/L)\n- Rapid onset of symptoms\n- Presence of seizures or coma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum sodium concentration\n- Serum osmolality\n- Urine osmolality\n- Urine sodium concentration\n\n### Second-line Investigations\n- Serum electrolytes\n- Renal function tests\n- Thirst response assessment\n\n### Specialist Tests\n- ADH levels (if appropriate)\n- 24-hour urine collection for sodium and osmolality\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypernatraemia is based on serum sodium levels greater than 145 mmol/L, with consideration of clinical symptoms and underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Dehydration (hypovolemic)\n- Diabetes insipidus (central or nephrogenic)\n- Excessive sodium intake (e.g., hypertonic saline)\n- Renal failure\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer hypotonic fluids (e.g., 5% dextrose in water)\n- Monitor serum sodium levels closely\n\n#### Second-line Treatments\n- Consider isotonic fluids if hypovolemic shock is present\n- Use desmopressin for central diabetes insipidus\n\n#### Emergency Procedures\n- IV fluid administration\n- Monitoring of vital signs and neurological status\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Gradual correction of sodium levels (no more than 0.5 mmol/L/hour)\n- Encourage oral fluid intake if possible\n\n#### Second-line Treatments\n- Consider diuretics if fluid overload occurs\n- Evaluate for underlying causes\n\n#### Monitoring Requirements\n- Frequent monitoring of serum sodium and osmolality\n- Neurological status assessment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Desmopressin\n- **Mechanism of Action**: Synthetic analog of ADH, increases water reabsorption in the kidneys.\n- **Typical Dosing Range**: 0.1 to 0.4 mg intranasally or subcutaneously, depending on the condition.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal cramps, water retention.\n- **When to Use vs. Alternatives**: Used primarily in central diabetes insipidus.\n\n#### Sodium bicarbonate\n- **Mechanism of Action**: Alkalinizing agent that can help in cases of metabolic acidosis.\n- **Typical Dosing Range**: 1-2 mEq/kg IV, adjusted based on arterial blood gas results.\n- **Key Side Effects/Contraindications**: Metabolic alkalosis, hypokalemia, fluid overload.\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n### Procedures\n\n#### IV fluid administration\n- **What it Involves**: Administering intravenous fluids to correct hypernatraemia.\n- **Indications**: Severe hypernatraemia (>160 mmol/L), symptomatic patients, or those unable to take oral fluids.\n- **Key Risks/Complications**: Fluid overload, rapid correction leading to cerebral edema.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hypernatraemia depends on the underlying cause and the speed of correction. If treated appropriately, most patients can recover without long-term complications. However, rapid correction can lead to serious neurological complications.\n\n### Important Complications to Watch For\n- Cerebral edema (if corrected too quickly)\n- Seizures\n- Coma\n- Permanent neurological damage\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of hypernatraemia, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for careful monitoring during treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hypernatraemia or neurological symptoms, immediate escalation to a senior clinician is required. Continuous monitoring and potential transfer to a higher level of care may be necessary.\n\n### Key Safety Considerations\nAvoid rapid correction of sodium levels to prevent cerebral edema. Monitor serum sodium levels frequently during treatment, especially in acute cases. Ensure adequate hydration and consider the patient's overall clinical picture when managing hypernatraemia.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypernatraemia is defined as an elevated serum sodium concentration, typically greater than 145 mmol/L. It indicates a relative deficit of water in relation to sodium in the body.",
+      "epidemiology": "Hypernatraemia is relatively uncommon in the general population but can occur in specific settings, particularly in elderly patients, those with impaired thirst mechanisms, or in cases of excessive fluid loss. It is more prevalent in hospitalized patients, especially in intensive care units.",
+      "pathophysiology": "Hypernatraemia occurs when there is a net loss of water from the body or an excess of sodium. This can result from inadequate water intake, excessive water loss (e.g., through sweating, diarrhea, or diuresis), or hypertonic saline administration. The body attempts to compensate through mechanisms such as increased thirst and secretion of antidiuretic hormone (ADH), but these may be insufficient in certain populations."
+    },
+    "recognition": {
+      "symptoms": [
+        "Thirst",
+        "Dry mucous membranes",
+        "Lethargy",
+        "Confusion",
+        "Irritability",
+        "Muscle twitching",
+        "Seizures"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Decreased skin turgor",
+        "Altered mental status",
+        "Hyperreflexia"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Neurological symptoms may dominate in severe cases"
+      ],
+      "redFlags": [
+        "Severe hypernatraemia (>160 mmol/L)",
+        "Rapid onset of symptoms",
+        "Presence of seizures or coma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum sodium concentration",
+        "Serum osmolality",
+        "Urine osmolality",
+        "Urine sodium concentration"
+      ],
+      "secondLine": [
+        "Serum electrolytes",
+        "Renal function tests",
+        "Thirst response assessment"
+      ],
+      "specialistTests": [
+        "ADH levels (if appropriate)",
+        "24-hour urine collection for sodium and osmolality"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypernatraemia is based on serum sodium levels greater than 145 mmol/L, with consideration of clinical symptoms and underlying causes.",
+      "differentials": [
+        "Dehydration (hypovolemic)",
+        "Diabetes insipidus (central or nephrogenic)",
+        "Excessive sodium intake (e.g., hypertonic saline)",
+        "Renal failure"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer hypotonic fluids (e.g., 5% dextrose in water)",
+          "Monitor serum sodium levels closely"
+        ],
+        "secondLine": [
+          "Consider isotonic fluids if hypovolemic shock is present",
+          "Use desmopressin for central diabetes insipidus"
+        ],
+        "procedures": [
+          "IV fluid administration",
+          "Monitoring of vital signs and neurological status"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Gradual correction of sodium levels (no more than 0.5 mmol/L/hour)",
+          "Encourage oral fluid intake if possible"
+        ],
+        "secondLine": [
+          "Consider diuretics if fluid overload occurs",
+          "Evaluate for underlying causes"
+        ],
+        "monitoring": [
+          "Frequent monitoring of serum sodium and osmolality",
+          "Neurological status assessment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Desmopressin",
+          "mechanism": "Synthetic analog of ADH, increases water reabsorption in the kidneys.",
+          "dosing": "0.1 to 0.4 mg intranasally or subcutaneously, depending on the condition.",
+          "sideEffects": "Headache, nausea, abdominal cramps, water retention.",
+          "notes": "Used primarily in central diabetes insipidus."
+        },
+        {
+          "name": "Sodium bicarbonate",
+          "mechanism": "Alkalinizing agent that can help in cases of metabolic acidosis.",
+          "dosing": "1-2 mEq/kg IV, adjusted based on arterial blood gas results.",
+          "sideEffects": "Metabolic alkalosis, hypokalemia, fluid overload.",
+          "notes": "Use cautiously in patients with renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "IV fluid administration",
+          "description": "Administering intravenous fluids to correct hypernatraemia.",
+          "indications": "Severe hypernatraemia (>160 mmol/L), symptomatic patients, or those unable to take oral fluids.",
+          "risks": "Fluid overload, rapid correction leading to cerebral edema."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hypernatraemia depends on the underlying cause and the speed of correction. If treated appropriately, most patients can recover without long-term complications. However, rapid correction can lead to serious neurological complications.",
+    "complications": [
+      "Cerebral edema (if corrected too quickly)",
+      "Seizures",
+      "Coma",
+      "Permanent neurological damage"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of hypernatraemia, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for careful monitoring during treatment.",
+    "escalation": "If a patient presents with severe hypernatraemia or neurological symptoms, immediate escalation to a senior clinician is required. Continuous monitoring and potential transfer to a higher level of care may be necessary.",
+    "keySafetyConsiderations": "Avoid rapid correction of sodium levels to prevent cerebral edema. Monitor serum sodium levels frequently during treatment, especially in acute cases. Ensure adequate hydration and consider the patient's overall clinical picture when managing hypernatraemia."
+  }
+}

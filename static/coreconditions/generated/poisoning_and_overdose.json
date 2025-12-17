@@ -1,0 +1,154 @@
+{
+  "id": "poisoning_and_overdose",
+  "name": "Poisoning and overdose",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:38:50.695250",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Poisoning and overdose: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPoisoning and overdose refer to the harmful effects that occur when a person ingests, inhales, or absorbs a substance in quantities that exceed the body's ability to metabolize or eliminate it safely.\n\n### Epidemiology\nPoisoning is a significant public health issue, with thousands of cases reported annually. The most common substances involved include medications, household products, and illicit drugs. Overdose is particularly prevalent among young adults and can lead to significant morbidity and mortality.\n\n### Essential Pathophysiology\nThe pathophysiology of poisoning and overdose varies depending on the substance involved. Generally, toxic substances can disrupt normal physiological processes, leading to cellular injury, metabolic derangements, and multi-organ dysfunction. Mechanisms may include receptor antagonism, enzyme inhibition, and direct cellular toxicity.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nausea and vomiting\n- Dizziness\n- Confusion\n- Altered mental status\n- Respiratory distress\n- Seizures\n- Abdominal pain\n\n### Key Signs\n- Altered vital signs (e.g., tachycardia, hypotension)\n- Pupillary changes (e.g., miosis or mydriasis)\n- Skin changes (e.g., flushing, diaphoresis)\n- Neurological deficits\n- Gastrointestinal bleeding\n\n### Atypical Presentations\n- Psychiatric symptoms (e.g., agitation, hallucinations)\n- Cardiac arrhythmias without obvious cause\n- Unexplained metabolic acidosis or alkalosis\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory depression\n- Unconsciousness or coma\n- Seizures\n- Cardiac arrest\n- Signs of severe dehydration or shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Blood glucose level\n- Basic metabolic panel\n- Toxicology screening (urine or serum)\n\n### Second-line Investigations\n- Liver function tests\n- Coagulation profile\n- Electrocardiogram (ECG)\n- Chest X-ray\n\n### Specialist Tests\n- Serum drug levels (e.g., acetaminophen, salicylates)\n- Specific antidote testing (e.g., digoxin levels)\n- CT scan if head injury is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history of exposure, symptoms, and signs. Laboratory tests may support the diagnosis but are not always necessary.\n\n### Key Differential Diagnoses to Exclude\n- Acute gastroenteritis\n- Infections (e.g., meningitis)\n- Metabolic disorders (e.g., diabetic ketoacidosis)\n- Neurological conditions (e.g., stroke)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (airway, breathing, circulation)\n- Activated charcoal (if within 1 hour of ingestion)\n- Fluids for hydration\n\n#### Second-line Treatments\n- Antidotes (e.g., naloxone for opioids, N-acetylcysteine for acetaminophen)\n- Gastric lavage (in select cases)\n- Hemodialysis (for severe cases of certain toxins)\n\n#### Emergency Procedures\n- Endotracheal intubation for airway protection\n- Intravenous access for fluid resuscitation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on safe medication use and storage\n- Regular follow-up for patients with a history of substance use disorder\n\n#### Second-line Treatments\n- Psychiatric evaluation and management for underlying mental health issues\n- Referral to addiction services if necessary\n\n#### Monitoring Requirements\n- Regular assessment of liver and kidney function in chronic users of hepatotoxic substances\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Naloxone\n- **Mechanism of Action**: Opioid receptor antagonist that reverses the effects of opioid overdose.\n- **Typical Dosing Range**: 0.4 to 2 mg IV/IM/SC every 2-3 minutes as needed, up to 10 mg; if no response, reconsider diagnosis.\n- **Key Side Effects/Contraindications**: Withdrawal symptoms in opioid-dependent patients, agitation, nausea.\n- **When to Use vs. Alternatives**: Can be administered intranasally; consider in any suspected opioid overdose.\n\n#### N-acetylcysteine\n- **Mechanism of Action**: Glutathione precursor that detoxifies acetaminophen metabolites.\n- **Typical Dosing Range**: Loading dose of 140 mg/kg followed by 70 mg/kg every 4 hours for 17 doses.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, allergic reactions.\n- **When to Use vs. Alternatives**: Most effective within 8 hours of ingestion.\n\n#### Activated charcoal\n- **Mechanism of Action**: Adsorbs toxins in the gastrointestinal tract, preventing absorption.\n- **Typical Dosing Range**: 50-100 g in adults, 1 g/kg in children, within 1 hour of ingestion.\n- **Key Side Effects/Contraindications**: Aspiration risk, gastrointestinal obstruction.\n- **When to Use vs. Alternatives**: Contraindicated in patients with decreased consciousness or risk of aspiration.\n\n### Procedures\n\n#### Gastric Lavage\n- **What it Involves**: Washing out the stomach to remove ingested toxins.\n- **Indications**: Recent ingestion of a toxic substance (usually within 1 hour).\n- **Key Risks/Complications**: Aspiration, esophageal injury, electrolyte imbalances.\n\n#### Endotracheal Intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway.\n- **Indications**: Severe respiratory depression or inability to protect the airway.\n- **Key Risks/Complications**: Trauma to the airway, infection, misplacement.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of poisoning and overdose varies widely depending on the substance, the amount ingested, the time to treatment, and the patient's overall health. Early recognition and management can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Organ failure (e.g., liver, kidney)\n- Seizures\n- Cardiac arrhythmias\n- Long-term neurological deficits\n- Psychiatric disorders\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of poisoning and overdose, initiate basic management, and escalate care as needed. They should also be familiar with local protocols for toxicology consultations and antidote administration.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, such as altered mental status, respiratory distress, or cardiovascular instability, immediate escalation to senior medical staff and toxicology services is required.\n\n### Key Safety Considerations\nAlways consider the possibility of co-ingestion of multiple substances. Ensure safety measures are in place to prevent self-harm in patients with a history of substance use disorder.\n",
+  "content": {
+    "overview": {
+      "definition": "Poisoning and overdose refer to the harmful effects that occur when a person ingests, inhales, or absorbs a substance in quantities that exceed the body's ability to metabolize or eliminate it safely.",
+      "epidemiology": "Poisoning is a significant public health issue, with thousands of cases reported annually. The most common substances involved include medications, household products, and illicit drugs. Overdose is particularly prevalent among young adults and can lead to significant morbidity and mortality.",
+      "pathophysiology": "The pathophysiology of poisoning and overdose varies depending on the substance involved. Generally, toxic substances can disrupt normal physiological processes, leading to cellular injury, metabolic derangements, and multi-organ dysfunction. Mechanisms may include receptor antagonism, enzyme inhibition, and direct cellular toxicity."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nausea and vomiting",
+        "Dizziness",
+        "Confusion",
+        "Altered mental status",
+        "Respiratory distress",
+        "Seizures",
+        "Abdominal pain"
+      ],
+      "signs": [
+        "Altered vital signs (e.g., tachycardia, hypotension)",
+        "Pupillary changes (e.g., miosis or mydriasis)",
+        "Skin changes (e.g., flushing, diaphoresis)",
+        "Neurological deficits",
+        "Gastrointestinal bleeding"
+      ],
+      "atypicalPresentations": [
+        "Psychiatric symptoms (e.g., agitation, hallucinations)",
+        "Cardiac arrhythmias without obvious cause",
+        "Unexplained metabolic acidosis or alkalosis"
+      ],
+      "redFlags": [
+        "Severe respiratory depression",
+        "Unconsciousness or coma",
+        "Seizures",
+        "Cardiac arrest",
+        "Signs of severe dehydration or shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Blood glucose level",
+        "Basic metabolic panel",
+        "Toxicology screening (urine or serum)"
+      ],
+      "secondLine": [
+        "Liver function tests",
+        "Coagulation profile",
+        "Electrocardiogram (ECG)",
+        "Chest X-ray"
+      ],
+      "specialistTests": [
+        "Serum drug levels (e.g., acetaminophen, salicylates)",
+        "Specific antidote testing (e.g., digoxin levels)",
+        "CT scan if head injury is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history of exposure, symptoms, and signs. Laboratory tests may support the diagnosis but are not always necessary.",
+      "differentials": [
+        "Acute gastroenteritis",
+        "Infections (e.g., meningitis)",
+        "Metabolic disorders (e.g., diabetic ketoacidosis)",
+        "Neurological conditions (e.g., stroke)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (airway, breathing, circulation)",
+          "Activated charcoal (if within 1 hour of ingestion)",
+          "Fluids for hydration"
+        ],
+        "secondLine": [
+          "Antidotes (e.g., naloxone for opioids, N-acetylcysteine for acetaminophen)",
+          "Gastric lavage (in select cases)",
+          "Hemodialysis (for severe cases of certain toxins)"
+        ],
+        "procedures": [
+          "Endotracheal intubation for airway protection",
+          "Intravenous access for fluid resuscitation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on safe medication use and storage",
+          "Regular follow-up for patients with a history of substance use disorder"
+        ],
+        "secondLine": [
+          "Psychiatric evaluation and management for underlying mental health issues",
+          "Referral to addiction services if necessary"
+        ],
+        "monitoring": [
+          "Regular assessment of liver and kidney function in chronic users of hepatotoxic substances"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Naloxone",
+          "mechanism": "Opioid receptor antagonist that reverses the effects of opioid overdose.",
+          "dosing": "0.4 to 2 mg IV/IM/SC every 2-3 minutes as needed, up to 10 mg; if no response, reconsider diagnosis.",
+          "sideEffects": "Withdrawal symptoms in opioid-dependent patients, agitation, nausea.",
+          "notes": "Can be administered intranasally; consider in any suspected opioid overdose."
+        },
+        {
+          "name": "N-acetylcysteine",
+          "mechanism": "Glutathione precursor that detoxifies acetaminophen metabolites.",
+          "dosing": "Loading dose of 140 mg/kg followed by 70 mg/kg every 4 hours for 17 doses.",
+          "sideEffects": "Nausea, vomiting, allergic reactions.",
+          "notes": "Most effective within 8 hours of ingestion."
+        },
+        {
+          "name": "Activated charcoal",
+          "mechanism": "Adsorbs toxins in the gastrointestinal tract, preventing absorption.",
+          "dosing": "50-100 g in adults, 1 g/kg in children, within 1 hour of ingestion.",
+          "sideEffects": "Aspiration risk, gastrointestinal obstruction.",
+          "notes": "Contraindicated in patients with decreased consciousness or risk of aspiration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Gastric Lavage",
+          "description": "Washing out the stomach to remove ingested toxins.",
+          "indications": "Recent ingestion of a toxic substance (usually within 1 hour).",
+          "risks": "Aspiration, esophageal injury, electrolyte imbalances."
+        },
+        {
+          "name": "Endotracheal Intubation",
+          "description": "Placement of a tube into the trachea to secure the airway.",
+          "indications": "Severe respiratory depression or inability to protect the airway.",
+          "risks": "Trauma to the airway, infection, misplacement."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of poisoning and overdose varies widely depending on the substance, the amount ingested, the time to treatment, and the patient's overall health. Early recognition and management can significantly improve outcomes.",
+    "complications": [
+      "Organ failure (e.g., liver, kidney)",
+      "Seizures",
+      "Cardiac arrhythmias",
+      "Long-term neurological deficits",
+      "Psychiatric disorders"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of poisoning and overdose, initiate basic management, and escalate care as needed. They should also be familiar with local protocols for toxicology consultations and antidote administration.",
+    "escalation": "If a patient presents with severe symptoms, such as altered mental status, respiratory distress, or cardiovascular instability, immediate escalation to senior medical staff and toxicology services is required.",
+    "keySafetyConsiderations": "Always consider the possibility of co-ingestion of multiple substances. Ensure safety measures are in place to prevent self-harm in patients with a history of substance use disorder."
+  }
+}

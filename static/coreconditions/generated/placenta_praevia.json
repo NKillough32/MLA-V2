@@ -1,0 +1,119 @@
+{
+  "id": "placenta_praevia",
+  "name": "Placenta praevia",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:49:03.291242",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Placenta praevia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPlacenta praevia is a condition in pregnancy where the placenta is abnormally implanted in the lower uterine segment, covering or being near the internal cervical os.\n\n### Epidemiology\nIt occurs in approximately 1 in 200 pregnancies, with higher incidence in women with previous cesarean sections, multiparity, and advanced maternal age.\n\n### Essential Pathophysiology\nThe abnormal implantation of the placenta occurs due to factors such as uterine scarring, previous surgeries, or anatomical abnormalities, leading to potential complications during labor.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless vaginal bleeding in the second or third trimester\n- Abnormal fetal position\n- Preterm labor symptoms\n\n### Key Signs\n- Visible bleeding upon examination\n- Fetal heart rate abnormalities\n\n### Atypical Presentations\n- Bleeding may be minimal or absent until labor begins\n- May present with contractions or preterm labor symptoms\n\n### Red Flags Requiring Immediate Action\n- Heavy vaginal bleeding\n- Signs of shock (tachycardia, hypotension)\n- Severe abdominal pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Transabdominal ultrasound\n- Transvaginal ultrasound\n\n### Second-line Investigations\n- MRI (if ultrasound findings are inconclusive)\n\n### Specialist Tests\n- Doppler ultrasound to assess placental blood flow\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on ultrasound findings showing the placenta's location in relation to the cervical os.\n\n### Key Differential Diagnoses to Exclude\n- Placental abruption\n- Vasa previa\n- Cervical polyp\n- Uterine fibroids\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate stabilization of the patient\n- IV fluids and blood products if necessary\n- Monitoring of fetal heart rate\n\n#### Second-line Treatments\n- Consideration of corticosteroids for fetal lung maturity if preterm labor is imminent\n\n#### Emergency Procedures\n- Emergency cesarean section if there is significant bleeding or fetal distress\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with ultrasound to assess placental position and fetal growth\n\n#### Second-line Treatments\n- Plan for delivery at 36-37 weeks if placenta is still low-lying\n\n#### Monitoring Requirements\n- Frequent follow-up appointments to monitor for bleeding and fetal well-being\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Betamethasone\n- **Mechanism of Action**: Corticosteroid that promotes fetal lung maturity\n- **Typical Dosing Range**: 12 mg IM every 24 hours for 2 doses\n- **Key Side Effects/Contraindications**: Increased blood sugar, infection risk, gastrointestinal bleeding\n- **When to Use vs. Alternatives**: Administer if preterm delivery is anticipated to enhance fetal lung development.\n\n#### Magnesium sulfate\n- **Mechanism of Action**: Neuroprotective agent for the fetus\n- **Typical Dosing Range**: 4-6 g IV loading dose followed by 1-2 g/hour infusion\n- **Key Side Effects/Contraindications**: Flushing, hypotension, respiratory depression\n- **When to Use vs. Alternatives**: Consider for neuroprotection in preterm labor.\n\n### Procedures\n\n#### Cesarean section\n- **What it Involves**: Surgical delivery of the baby through an incision in the abdominal wall and uterus\n- **Indications**: Severe placenta praevia, significant bleeding, fetal distress\n- **Key Risks/Complications**: Infection, hemorrhage, injury to surrounding organs, longer recovery time\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, the prognosis is generally good, but complications can arise, especially with significant bleeding or preterm delivery.\n\n### Important Complications to Watch For\n- Hemorrhage\n- Preterm birth\n- Placenta accreta\n- Infection\n- Maternal shock\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of placenta praevia, initiate appropriate investigations, provide initial management, and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to obstetricians for any significant bleeding, fetal distress, or if the patient is unstable.\n\n### Key Safety Considerations\nAlways assess the amount and nature of vaginal bleeding, monitor vital signs closely, and ensure rapid access to surgical intervention if necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Placenta praevia is a condition in pregnancy where the placenta is abnormally implanted in the lower uterine segment, covering or being near the internal cervical os.",
+      "epidemiology": "It occurs in approximately 1 in 200 pregnancies, with higher incidence in women with previous cesarean sections, multiparity, and advanced maternal age.",
+      "pathophysiology": "The abnormal implantation of the placenta occurs due to factors such as uterine scarring, previous surgeries, or anatomical abnormalities, leading to potential complications during labor."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless vaginal bleeding in the second or third trimester",
+        "Abnormal fetal position",
+        "Preterm labor symptoms"
+      ],
+      "signs": [
+        "Visible bleeding upon examination",
+        "Fetal heart rate abnormalities"
+      ],
+      "atypicalPresentations": [
+        "Bleeding may be minimal or absent until labor begins",
+        "May present with contractions or preterm labor symptoms"
+      ],
+      "redFlags": [
+        "Heavy vaginal bleeding",
+        "Signs of shock (tachycardia, hypotension)",
+        "Severe abdominal pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Transabdominal ultrasound",
+        "Transvaginal ultrasound"
+      ],
+      "secondLine": [
+        "MRI (if ultrasound findings are inconclusive)"
+      ],
+      "specialistTests": [
+        "Doppler ultrasound to assess placental blood flow"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on ultrasound findings showing the placenta's location in relation to the cervical os.",
+      "differentials": [
+        "Placental abruption",
+        "Vasa previa",
+        "Cervical polyp",
+        "Uterine fibroids"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate stabilization of the patient",
+          "IV fluids and blood products if necessary",
+          "Monitoring of fetal heart rate"
+        ],
+        "secondLine": [
+          "Consideration of corticosteroids for fetal lung maturity if preterm labor is imminent"
+        ],
+        "procedures": [
+          "Emergency cesarean section if there is significant bleeding or fetal distress"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with ultrasound to assess placental position and fetal growth"
+        ],
+        "secondLine": [
+          "Plan for delivery at 36-37 weeks if placenta is still low-lying"
+        ],
+        "monitoring": [
+          "Frequent follow-up appointments to monitor for bleeding and fetal well-being"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Betamethasone",
+          "mechanism": "Corticosteroid that promotes fetal lung maturity",
+          "dosing": "12 mg IM every 24 hours for 2 doses",
+          "sideEffects": "Increased blood sugar, infection risk, gastrointestinal bleeding",
+          "notes": "Administer if preterm delivery is anticipated to enhance fetal lung development."
+        },
+        {
+          "name": "Magnesium sulfate",
+          "mechanism": "Neuroprotective agent for the fetus",
+          "dosing": "4-6 g IV loading dose followed by 1-2 g/hour infusion",
+          "sideEffects": "Flushing, hypotension, respiratory depression",
+          "notes": "Consider for neuroprotection in preterm labor."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cesarean section",
+          "description": "Surgical delivery of the baby through an incision in the abdominal wall and uterus",
+          "indications": "Severe placenta praevia, significant bleeding, fetal distress",
+          "risks": "Infection, hemorrhage, injury to surrounding organs, longer recovery time"
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, the prognosis is generally good, but complications can arise, especially with significant bleeding or preterm delivery.",
+    "complications": [
+      "Hemorrhage",
+      "Preterm birth",
+      "Placenta accreta",
+      "Infection",
+      "Maternal shock"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of placenta praevia, initiate appropriate investigations, provide initial management, and escalate care as needed.",
+    "escalation": "Immediate referral to obstetricians for any significant bleeding, fetal distress, or if the patient is unstable.",
+    "keySafetyConsiderations": "Always assess the amount and nature of vaginal bleeding, monitor vital signs closely, and ensure rapid access to surgical intervention if necessary."
+  }
+}

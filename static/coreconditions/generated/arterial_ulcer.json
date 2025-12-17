@@ -1,0 +1,138 @@
+{
+  "id": "arterial_ulcer",
+  "name": "Arterial ulcer",
+  "domains": [
+    "Plastics"
+  ],
+  "generatedAt": "2025-12-17T21:35:26.802234",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Arterial ulcer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nArterial ulcers are chronic wounds that occur due to inadequate blood supply to the tissues, typically resulting from peripheral arterial disease (PAD). They are often located on the lower extremities, particularly the feet and toes.\n\n### Epidemiology\nArterial ulcers are more common in older adults, particularly those with risk factors such as diabetes, hypertension, hyperlipidemia, and smoking. The prevalence of PAD increases with age, affecting approximately 12-20% of individuals over 60 years old.\n\n### Essential Pathophysiology\nArterial ulcers develop due to ischemia caused by narrowed or blocked arteries, leading to reduced oxygen and nutrient delivery to the tissues. This ischemia results in tissue necrosis and ulceration, often exacerbated by external factors such as trauma or pressure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain in the affected area, especially with elevation or at rest\n- Coldness in the lower extremities\n- Numbness or tingling in the feet\n- Skin changes such as pallor or cyanosis\n\n### Key Signs\n- Well-defined, punched-out ulcers with a necrotic base\n- Surrounding skin may be shiny and hairless\n- Weak or absent pulses in the affected limb\n- Possible gangrene in severe cases\n\n### Atypical Presentations\n- Ulcers may occur in atypical locations such as the lateral malleolus or toes\n- Presence of coexisting venous ulcers may complicate the clinical picture\n\n### Red Flags Requiring Immediate Action\n- Rapidly worsening pain or ulcer size\n- Signs of infection (e.g., increased redness, warmth, purulent discharge)\n- Systemic symptoms such as fever or chills\n- Presence of gangrene\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Doppler ultrasound to assess blood flow and arterial patency\n- Ankle-brachial index (ABI) to evaluate the severity of arterial disease\n\n### Second-line Investigations\n- CT angiography or MR angiography for detailed vascular imaging\n- Transcutaneous oxygen pressure (TcPO2) measurement to assess tissue perfusion\n\n### Specialist Tests\n- Angiography for direct visualization of arterial blockages\n- Biopsy if malignancy is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, history of risk factors for arterial disease, and confirmatory tests such as ABI and Doppler ultrasound.\n\n### Key Differential Diagnoses to Exclude\n- Venous ulcers\n- Diabetic ulcers\n- Pressure ulcers\n- Malignant ulcers\n- Infectious ulcers (e.g., pyoderma gangrenosum)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to a vascular surgeon for assessment and intervention\n- Pain management with analgesics\n\n#### Second-line Treatments\n- Consideration of revascularization procedures (e.g., angioplasty, bypass surgery) if indicated\n\n#### Emergency Procedures\n- Debridement of necrotic tissue to promote healing and prevent infection\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Wound care with appropriate dressings to maintain a moist environment\n- Management of underlying arterial disease (e.g., lifestyle modifications, smoking cessation)\n\n#### Second-line Treatments\n- Consideration of hyperbaric oxygen therapy in selected cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing progress and adjust management as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Antiplatelet agents (e.g., Aspirin)\n- **Mechanism of Action**: Inhibits platelet aggregation to improve blood flow\n- **Typical Dosing Range**: 75-325 mg orally once daily\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions\n- **When to Use vs. Alternatives**: Consider in all patients with arterial ulcers to reduce cardiovascular events.\n\n#### Statins (e.g., Atorvastatin)\n- **Mechanism of Action**: Lowers cholesterol levels and stabilizes atherosclerotic plaques\n- **Typical Dosing Range**: 10-80 mg orally once daily\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation\n- **When to Use vs. Alternatives**: Indicated for patients with dyslipidemia.\n\n#### Analgesics (e.g., Paracetamol, NSAIDs)\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: Paracetamol 500-1000 mg every 4-6 hours; NSAIDs as per guidelines\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal disease.\n\n### Procedures\n\n#### Debridement\n- **What it Involves**: Surgical removal of necrotic tissue to promote healing\n- **Indications**: Presence of necrotic tissue, infection, or non-healing ulcers\n- **Key Risks/Complications**: Bleeding, infection, pain, potential for further tissue loss.\n\n#### Revascularization procedures (e.g., angioplasty, bypass surgery)\n- **What it Involves**: Surgical interventions to restore blood flow to the affected limb\n- **Indications**: Severe arterial occlusion causing critical limb ischemia\n- **Key Risks/Complications**: Surgical complications, graft failure, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for arterial ulcers is variable and depends on the extent of arterial disease, comorbidities, and adherence to treatment. Healing can take weeks to months, and recurrence is common if risk factors are not managed.\n\n### Important Complications to Watch For\n- Infection leading to cellulitis or osteomyelitis\n- Gangrene and potential limb loss\n- Chronic pain and disability\n- Psychosocial impact due to chronic wounds\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, manage basic wound care, and refer to specialists as needed. They should also educate patients on lifestyle modifications to improve vascular health.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a vascular surgeon for patients with non-healing ulcers, signs of infection, or worsening ischemia. Immediate referral is necessary for patients with critical limb ischemia or gangrene.\n\n### Key Safety Considerations\nEnsure proper wound care techniques to prevent infection, monitor for signs of systemic infection, and manage pain effectively. Regularly assess vascular status and document findings accurately.\n",
+  "content": {
+    "overview": {
+      "definition": "Arterial ulcers are chronic wounds that occur due to inadequate blood supply to the tissues, typically resulting from peripheral arterial disease (PAD). They are often located on the lower extremities, particularly the feet and toes.",
+      "epidemiology": "Arterial ulcers are more common in older adults, particularly those with risk factors such as diabetes, hypertension, hyperlipidemia, and smoking. The prevalence of PAD increases with age, affecting approximately 12-20% of individuals over 60 years old.",
+      "pathophysiology": "Arterial ulcers develop due to ischemia caused by narrowed or blocked arteries, leading to reduced oxygen and nutrient delivery to the tissues. This ischemia results in tissue necrosis and ulceration, often exacerbated by external factors such as trauma or pressure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain in the affected area, especially with elevation or at rest",
+        "Coldness in the lower extremities",
+        "Numbness or tingling in the feet",
+        "Skin changes such as pallor or cyanosis"
+      ],
+      "signs": [
+        "Well-defined, punched-out ulcers with a necrotic base",
+        "Surrounding skin may be shiny and hairless",
+        "Weak or absent pulses in the affected limb",
+        "Possible gangrene in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Ulcers may occur in atypical locations such as the lateral malleolus or toes",
+        "Presence of coexisting venous ulcers may complicate the clinical picture"
+      ],
+      "redFlags": [
+        "Rapidly worsening pain or ulcer size",
+        "Signs of infection (e.g., increased redness, warmth, purulent discharge)",
+        "Systemic symptoms such as fever or chills",
+        "Presence of gangrene"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Doppler ultrasound to assess blood flow and arterial patency",
+        "Ankle-brachial index (ABI) to evaluate the severity of arterial disease"
+      ],
+      "secondLine": [
+        "CT angiography or MR angiography for detailed vascular imaging",
+        "Transcutaneous oxygen pressure (TcPO2) measurement to assess tissue perfusion"
+      ],
+      "specialistTests": [
+        "Angiography for direct visualization of arterial blockages",
+        "Biopsy if malignancy is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, history of risk factors for arterial disease, and confirmatory tests such as ABI and Doppler ultrasound.",
+      "differentials": [
+        "Venous ulcers",
+        "Diabetic ulcers",
+        "Pressure ulcers",
+        "Malignant ulcers",
+        "Infectious ulcers (e.g., pyoderma gangrenosum)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to a vascular surgeon for assessment and intervention",
+          "Pain management with analgesics"
+        ],
+        "secondLine": [
+          "Consideration of revascularization procedures (e.g., angioplasty, bypass surgery) if indicated"
+        ],
+        "procedures": [
+          "Debridement of necrotic tissue to promote healing and prevent infection"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Wound care with appropriate dressings to maintain a moist environment",
+          "Management of underlying arterial disease (e.g., lifestyle modifications, smoking cessation)"
+        ],
+        "secondLine": [
+          "Consideration of hyperbaric oxygen therapy in selected cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing progress and adjust management as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Antiplatelet agents (e.g., Aspirin)",
+          "mechanism": "Inhibits platelet aggregation to improve blood flow",
+          "dosing": "75-325 mg orally once daily",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions",
+          "notes": "Consider in all patients with arterial ulcers to reduce cardiovascular events."
+        },
+        {
+          "name": "Statins (e.g., Atorvastatin)",
+          "mechanism": "Lowers cholesterol levels and stabilizes atherosclerotic plaques",
+          "dosing": "10-80 mg orally once daily",
+          "sideEffects": "Myopathy, liver enzyme elevation",
+          "notes": "Indicated for patients with dyslipidemia."
+        },
+        {
+          "name": "Analgesics (e.g., Paracetamol, NSAIDs)",
+          "mechanism": "Pain relief",
+          "dosing": "Paracetamol 500-1000 mg every 4-6 hours; NSAIDs as per guidelines",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Use cautiously in patients with renal disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debridement",
+          "description": "Surgical removal of necrotic tissue to promote healing",
+          "indications": "Presence of necrotic tissue, infection, or non-healing ulcers",
+          "risks": "Bleeding, infection, pain, potential for further tissue loss."
+        },
+        {
+          "name": "Revascularization procedures (e.g., angioplasty, bypass surgery)",
+          "description": "Surgical interventions to restore blood flow to the affected limb",
+          "indications": "Severe arterial occlusion causing critical limb ischemia",
+          "risks": "Surgical complications, graft failure, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for arterial ulcers is variable and depends on the extent of arterial disease, comorbidities, and adherence to treatment. Healing can take weeks to months, and recurrence is common if risk factors are not managed.",
+    "complications": [
+      "Infection leading to cellulitis or osteomyelitis",
+      "Gangrene and potential limb loss",
+      "Chronic pain and disability",
+      "Psychosocial impact due to chronic wounds"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, manage basic wound care, and refer to specialists as needed. They should also educate patients on lifestyle modifications to improve vascular health.",
+    "escalation": "Escalate care to a vascular surgeon for patients with non-healing ulcers, signs of infection, or worsening ischemia. Immediate referral is necessary for patients with critical limb ischemia or gangrene.",
+    "keySafetyConsiderations": "Ensure proper wound care techniques to prevent infection, monitor for signs of systemic infection, and manage pain effectively. Regularly assess vascular status and document findings accurately."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "vertigo",
+  "name": "Vertigo?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:38:29.976705",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vertigo?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVertigo is a sensation of spinning or dizziness that occurs when there is a mismatch between the vestibular, visual, and proprioceptive systems. It is often described as a false sense of motion, typically triggered by changes in head position or movement.\n\n### Epidemiology\nVertigo is a common complaint, particularly in the elderly population, with an estimated prevalence of 30% in those over 65 years. It can significantly impact quality of life and increase the risk of falls.\n\n### Essential Pathophysiology\nVertigo can arise from peripheral causes (e.g., benign paroxysmal positional vertigo (BPPV), vestibular neuritis, Meniere's disease) or central causes (e.g., stroke, multiple sclerosis). Peripheral causes often involve dysfunction of the inner ear structures, while central causes involve the brainstem or cerebellum.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Spinning sensation (subjective or objective)\n- Nausea and vomiting\n- Imbalance or unsteadiness\n- Visual disturbances (e.g., blurred vision)\n\n### Key Signs\n- Nystagmus (involuntary eye movements)\n- Postural instability\n- Positive Dix-Hallpike maneuver (for BPPV)\n- Neurological deficits (in central causes)\n\n### Atypical Presentations\n- Persistent dizziness without spinning\n- Dizziness triggered by specific movements\n- Accompanying auditory symptoms (e.g., tinnitus, hearing loss)\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of vertigo\n- Neurological symptoms (e.g., weakness, slurred speech)\n- Severe headache (thunderclap headache)\n- Visual field deficits\n- Recent head trauma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and examination\n- Dix-Hallpike maneuver (for BPPV)\n- Neurological examination\n\n### Second-line Investigations\n- Audiometry (to assess hearing loss)\n- Vestibular function tests (e.g., caloric testing)\n- MRI of the brain (if central cause suspected)\n\n### Specialist Tests\n- Electronystagmography (ENG)\n- Vestibular evoked myogenic potentials (VEMP)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history, examination findings, and response to positional maneuvers. Specific tests may confirm peripheral causes.\n\n### Key Differential Diagnoses to Exclude\n- Benign paroxysmal positional vertigo (BPPV)\n- Vestibular neuritis\n- Meniere's disease\n- Acoustic neuroma\n- Cerebellar stroke\n- Multiple sclerosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and education about vertigo\n- Vestibular suppressants (e.g., prochlorperazine)\n\n#### Second-line Treatments\n- Antihistamines (e.g., meclizine)\n- Benzodiazepines (e.g., diazepam)\n\n#### Emergency Procedures\n- Epley maneuver (for BPPV) - repositioning maneuver to relieve symptoms.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vestibular rehabilitation therapy (VRT)\n- Lifestyle modifications (e.g., avoiding triggers)\n\n#### Second-line Treatments\n- Consider referral to ENT or neurology for persistent symptoms\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom control and functional status.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prochlorperazine\n- **Mechanism of Action**: Dopamine antagonist that reduces nausea and vertigo\n- **Typical Dosing Range**: 5-10 mg orally 3 times daily as needed\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, extrapyramidal symptoms\n- **When to Use vs. Alternatives**: Use with caution in elderly patients due to sedation.\n\n#### Meclizine\n- **Mechanism of Action**: Antihistamine that reduces vestibular stimulation\n- **Typical Dosing Range**: 25-50 mg orally 1 hour before travel or as needed\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, blurred vision\n- **When to Use vs. Alternatives**: Less sedating than prochlorperazine.\n\n#### Diazepam\n- **Mechanism of Action**: Benzodiazepine that acts as a central nervous system depressant\n- **Typical Dosing Range**: 2-10 mg orally 2-4 times daily as needed\n- **Key Side Effects/Contraindications**: Sedation, dependence, cognitive impairment\n- **When to Use vs. Alternatives**: Use with caution in elderly patients.\n\n### Procedures\n\n#### Epley Maneuver\n- **What it Involves**: A series of head movements to reposition displaced otoliths in the inner ear.\n- **Indications**: Used for treating BPPV.\n- **Key Risks/Complications**: Transient dizziness during the maneuver, potential for falls.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for vertigo varies depending on the underlying cause. BPPV often resolves with treatment, while central causes may have a more variable prognosis depending on the severity of the underlying condition.\n\n### Important Complications to Watch For\n- Increased risk of falls and associated injuries\n- Chronic dizziness leading to anxiety and depression\n- Impact on daily activities and quality of life\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide reassurance, and manage acute symptoms. They should recognize red flags and refer appropriately to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT or neurology if there are red flags, persistent symptoms, or if the patient does not respond to initial management.\n\n### Key Safety Considerations\nEnsure patient safety to prevent falls, especially in the elderly. Provide education on managing symptoms and when to seek further medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Vertigo is a sensation of spinning or dizziness that occurs when there is a mismatch between the vestibular, visual, and proprioceptive systems. It is often described as a false sense of motion, typically triggered by changes in head position or movement.",
+      "epidemiology": "Vertigo is a common complaint, particularly in the elderly population, with an estimated prevalence of 30% in those over 65 years. It can significantly impact quality of life and increase the risk of falls.",
+      "pathophysiology": "Vertigo can arise from peripheral causes (e.g., benign paroxysmal positional vertigo (BPPV), vestibular neuritis, Meniere's disease) or central causes (e.g., stroke, multiple sclerosis). Peripheral causes often involve dysfunction of the inner ear structures, while central causes involve the brainstem or cerebellum."
+    },
+    "recognition": {
+      "symptoms": [
+        "Spinning sensation (subjective or objective)",
+        "Nausea and vomiting",
+        "Imbalance or unsteadiness",
+        "Visual disturbances (e.g., blurred vision)"
+      ],
+      "signs": [
+        "Nystagmus (involuntary eye movements)",
+        "Postural instability",
+        "Positive Dix-Hallpike maneuver (for BPPV)",
+        "Neurological deficits (in central causes)"
+      ],
+      "atypicalPresentations": [
+        "Persistent dizziness without spinning",
+        "Dizziness triggered by specific movements",
+        "Accompanying auditory symptoms (e.g., tinnitus, hearing loss)"
+      ],
+      "redFlags": [
+        "Sudden onset of vertigo",
+        "Neurological symptoms (e.g., weakness, slurred speech)",
+        "Severe headache (thunderclap headache)",
+        "Visual field deficits",
+        "Recent head trauma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and examination",
+        "Dix-Hallpike maneuver (for BPPV)",
+        "Neurological examination"
+      ],
+      "secondLine": [
+        "Audiometry (to assess hearing loss)",
+        "Vestibular function tests (e.g., caloric testing)",
+        "MRI of the brain (if central cause suspected)"
+      ],
+      "specialistTests": [
+        "Electronystagmography (ENG)",
+        "Vestibular evoked myogenic potentials (VEMP)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history, examination findings, and response to positional maneuvers. Specific tests may confirm peripheral causes.",
+      "differentials": [
+        "Benign paroxysmal positional vertigo (BPPV)",
+        "Vestibular neuritis",
+        "Meniere's disease",
+        "Acoustic neuroma",
+        "Cerebellar stroke",
+        "Multiple sclerosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and education about vertigo",
+          "Vestibular suppressants (e.g., prochlorperazine)"
+        ],
+        "secondLine": [
+          "Antihistamines (e.g., meclizine)",
+          "Benzodiazepines (e.g., diazepam)"
+        ],
+        "procedures": [
+          "Epley maneuver (for BPPV) - repositioning maneuver to relieve symptoms."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vestibular rehabilitation therapy (VRT)",
+          "Lifestyle modifications (e.g., avoiding triggers)"
+        ],
+        "secondLine": [
+          "Consider referral to ENT or neurology for persistent symptoms"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom control and functional status."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prochlorperazine",
+          "mechanism": "Dopamine antagonist that reduces nausea and vertigo",
+          "dosing": "5-10 mg orally 3 times daily as needed",
+          "sideEffects": "Sedation, dry mouth, extrapyramidal symptoms",
+          "notes": "Use with caution in elderly patients due to sedation."
+        },
+        {
+          "name": "Meclizine",
+          "mechanism": "Antihistamine that reduces vestibular stimulation",
+          "dosing": "25-50 mg orally 1 hour before travel or as needed",
+          "sideEffects": "Drowsiness, dry mouth, blurred vision",
+          "notes": "Less sedating than prochlorperazine."
+        },
+        {
+          "name": "Diazepam",
+          "mechanism": "Benzodiazepine that acts as a central nervous system depressant",
+          "dosing": "2-10 mg orally 2-4 times daily as needed",
+          "sideEffects": "Sedation, dependence, cognitive impairment",
+          "notes": "Use with caution in elderly patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epley Maneuver",
+          "description": "A series of head movements to reposition displaced otoliths in the inner ear.",
+          "indications": "Used for treating BPPV.",
+          "risks": "Transient dizziness during the maneuver, potential for falls."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for vertigo varies depending on the underlying cause. BPPV often resolves with treatment, while central causes may have a more variable prognosis depending on the severity of the underlying condition.",
+    "complications": [
+      "Increased risk of falls and associated injuries",
+      "Chronic dizziness leading to anxiety and depression",
+      "Impact on daily activities and quality of life"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide reassurance, and manage acute symptoms. They should recognize red flags and refer appropriately to specialists when necessary.",
+    "escalation": "Refer to ENT or neurology if there are red flags, persistent symptoms, or if the patient does not respond to initial management.",
+    "keySafetyConsiderations": "Ensure patient safety to prevent falls, especially in the elderly. Provide education on managing symptoms and when to seek further medical attention."
+  }
+}

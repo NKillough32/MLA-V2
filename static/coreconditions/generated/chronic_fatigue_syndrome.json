@@ -1,0 +1,126 @@
+{
+  "id": "chronic_fatigue_syndrome",
+  "name": "Chronic fatigue syndrome",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:56:13.981075",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic fatigue syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic Fatigue Syndrome (CFS), also known as Myalgic Encephalomyelitis (ME), is a complex, debilitating disorder characterized by profound fatigue that lasts for at least six months and is not improved by rest. It is often accompanied by a range of other symptoms affecting multiple body systems.\n\n### Epidemiology\nCFS affects approximately 0.2% to 2.6% of the population, with a higher prevalence in women than men. It can occur at any age but is most commonly diagnosed in young to middle-aged adults.\n\n### Essential Pathophysiology\nThe exact pathophysiology of CFS is not fully understood. It is thought to involve a combination of genetic, environmental, and psychological factors. Proposed mechanisms include immune dysregulation, neuroendocrine dysfunction, and mitochondrial abnormalities.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent fatigue lasting more than six months\n- Post-exertional malaise (worsening of symptoms after physical or mental exertion)\n- Sleep disturbances (unrefreshing sleep)\n- Cognitive difficulties (memory problems, difficulty concentrating)\n- Muscle and joint pain\n- Headaches of a new type or severity\n- Sore throat\n- Swollen lymph nodes in the neck or armpits\n\n### Key Signs\n- No specific physical signs; may have mild tachycardia or orthostatic intolerance\n- Tender lymph nodes may be palpated\n- Muscle tenderness on examination\n\n### Atypical Presentations\n- Symptoms may fluctuate in severity\n- Some patients may present with gastrointestinal symptoms or psychiatric symptoms such as anxiety or depression\n\n### Red Flags Requiring Immediate Action\n- Onset of symptoms following an infectious illness\n- Severe cognitive impairment\n- Significant weight loss\n- Neurological symptoms such as weakness or sensory loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Thorough history and physical examination\n- Fatigue severity scales (e.g., Chalder Fatigue Scale)\n- Exclusion of other conditions (e.g., thyroid function tests, complete blood count, liver function tests, renal function tests)\n\n### Second-line Investigations\n- Sleep studies if sleep disorders are suspected\n- Neuropsychological testing for cognitive impairment\n\n### Specialist Tests\n- MRI brain if neurological symptoms are present\n- Autoimmune screening if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of persistent fatigue and associated symptoms. The Fukuda criteria are commonly used, which require: 1) severe chronic fatigue for at least 6 months, 2) concurrent symptoms (e.g., post-exertional malaise, sleep disturbances), and 3) exclusion of other medical conditions.\n\n### Key Differential Diagnoses to Exclude\n- Hypothyroidism\n- Depression\n- Anemia\n- Chronic infections (e.g., HIV, Lyme disease)\n- Sleep apnea\n- Fibromyalgia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Education about the condition and reassurance\n- Encouragement of gradual increase in activity levels (pacing)\n- Cognitive Behavioral Therapy (CBT)\n\n#### Second-line Treatments\n- Referral to a specialist in CFS/ME for multidisciplinary management\n- Consideration of graded exercise therapy (GET) if appropriate\n\n#### Emergency Procedures\n- None specific for CFS; focus is on supportive care and rehabilitation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued pacing and CBT\n- Sleep hygiene education\n\n#### Second-line Treatments\n- Consider pharmacological management for associated symptoms (e.g., antidepressants for mood disorders)\n- Referral to occupational therapy for functional rehabilitation\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and treatment response\n- Monitoring for potential complications such as depression or anxiety\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain\n- **Typical Dosing Range**: Starting dose 20 mg daily, can be increased based on response\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, increased anxiety\n- **When to Use vs. Alternatives**: May help with associated depressive symptoms and improve overall functioning.\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that modulates neurotransmitter levels and has sedative properties\n- **Typical Dosing Range**: Starting dose 10-25 mg at bedtime, can be increased as tolerated\n- **Key Side Effects/Contraindications**: Dry mouth, sedation, weight gain, constipation\n- **When to Use vs. Alternatives**: Useful for pain management and improving sleep quality.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of CFS varies; some patients may experience significant improvement over time, while others may have persistent symptoms. A small percentage may recover completely, but many continue to experience varying degrees of fatigue and functional impairment.\n\n### Important Complications to Watch For\n- Depression and anxiety disorders\n- Social isolation due to chronic illness\n- Increased risk of other chronic conditions due to inactivity\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of CFS, conduct a thorough assessment to rule out other conditions, provide education and reassurance, and initiate management strategies. They should also be aware of when to refer to specialists.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, significant functional impairment, or red flags indicating possible serious underlying conditions, immediate referral to a specialist is warranted.\n\n### Key Safety Considerations\nEnsure thorough assessment to rule out other serious conditions, monitor for worsening symptoms, and provide appropriate support for mental health issues.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic Fatigue Syndrome (CFS), also known as Myalgic Encephalomyelitis (ME), is a complex, debilitating disorder characterized by profound fatigue that lasts for at least six months and is not improved by rest. It is often accompanied by a range of other symptoms affecting multiple body systems.",
+      "epidemiology": "CFS affects approximately 0.2% to 2.6% of the population, with a higher prevalence in women than men. It can occur at any age but is most commonly diagnosed in young to middle-aged adults.",
+      "pathophysiology": "The exact pathophysiology of CFS is not fully understood. It is thought to involve a combination of genetic, environmental, and psychological factors. Proposed mechanisms include immune dysregulation, neuroendocrine dysfunction, and mitochondrial abnormalities."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent fatigue lasting more than six months",
+        "Post-exertional malaise (worsening of symptoms after physical or mental exertion)",
+        "Sleep disturbances (unrefreshing sleep)",
+        "Cognitive difficulties (memory problems, difficulty concentrating)",
+        "Muscle and joint pain",
+        "Headaches of a new type or severity",
+        "Sore throat",
+        "Swollen lymph nodes in the neck or armpits"
+      ],
+      "signs": [
+        "No specific physical signs; may have mild tachycardia or orthostatic intolerance",
+        "Tender lymph nodes may be palpated",
+        "Muscle tenderness on examination"
+      ],
+      "atypicalPresentations": [
+        "Symptoms may fluctuate in severity",
+        "Some patients may present with gastrointestinal symptoms or psychiatric symptoms such as anxiety or depression"
+      ],
+      "redFlags": [
+        "Onset of symptoms following an infectious illness",
+        "Severe cognitive impairment",
+        "Significant weight loss",
+        "Neurological symptoms such as weakness or sensory loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Thorough history and physical examination",
+        "Fatigue severity scales (e.g., Chalder Fatigue Scale)",
+        "Exclusion of other conditions (e.g., thyroid function tests, complete blood count, liver function tests, renal function tests)"
+      ],
+      "secondLine": [
+        "Sleep studies if sleep disorders are suspected",
+        "Neuropsychological testing for cognitive impairment"
+      ],
+      "specialistTests": [
+        "MRI brain if neurological symptoms are present",
+        "Autoimmune screening if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of persistent fatigue and associated symptoms. The Fukuda criteria are commonly used, which require: 1) severe chronic fatigue for at least 6 months, 2) concurrent symptoms (e.g., post-exertional malaise, sleep disturbances), and 3) exclusion of other medical conditions.",
+      "differentials": [
+        "Hypothyroidism",
+        "Depression",
+        "Anemia",
+        "Chronic infections (e.g., HIV, Lyme disease)",
+        "Sleep apnea",
+        "Fibromyalgia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Education about the condition and reassurance",
+          "Encouragement of gradual increase in activity levels (pacing)",
+          "Cognitive Behavioral Therapy (CBT)"
+        ],
+        "secondLine": [
+          "Referral to a specialist in CFS/ME for multidisciplinary management",
+          "Consideration of graded exercise therapy (GET) if appropriate"
+        ],
+        "procedures": [
+          "None specific for CFS; focus is on supportive care and rehabilitation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued pacing and CBT",
+          "Sleep hygiene education"
+        ],
+        "secondLine": [
+          "Consider pharmacological management for associated symptoms (e.g., antidepressants for mood disorders)",
+          "Referral to occupational therapy for functional rehabilitation"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and treatment response",
+          "Monitoring for potential complications such as depression or anxiety"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain",
+          "dosing": "Starting dose 20 mg daily, can be increased based on response",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, increased anxiety",
+          "notes": "May help with associated depressive symptoms and improve overall functioning."
+        },
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that modulates neurotransmitter levels and has sedative properties",
+          "dosing": "Starting dose 10-25 mg at bedtime, can be increased as tolerated",
+          "sideEffects": "Dry mouth, sedation, weight gain, constipation",
+          "notes": "Useful for pain management and improving sleep quality."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "The prognosis of CFS varies; some patients may experience significant improvement over time, while others may have persistent symptoms. A small percentage may recover completely, but many continue to experience varying degrees of fatigue and functional impairment.",
+    "complications": [
+      "Depression and anxiety disorders",
+      "Social isolation due to chronic illness",
+      "Increased risk of other chronic conditions due to inactivity"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of CFS, conduct a thorough assessment to rule out other conditions, provide education and reassurance, and initiate management strategies. They should also be aware of when to refer to specialists.",
+    "escalation": "If a patient presents with severe symptoms, significant functional impairment, or red flags indicating possible serious underlying conditions, immediate referral to a specialist is warranted.",
+    "keySafetyConsiderations": "Ensure thorough assessment to rule out other serious conditions, monitor for worsening symptoms, and provide appropriate support for mental health issues."
+  }
+}

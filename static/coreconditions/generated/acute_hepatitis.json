@@ -1,0 +1,148 @@
+{
+  "id": "acute_hepatitis",
+  "name": "Acute hepatitis",
+  "domains": [
+    "Gastrointestinal",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:42:21.094727",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute hepatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute hepatitis is the inflammation of the liver that occurs suddenly and lasts for less than six months. It can be caused by viral infections, toxins, autoimmune diseases, or other factors.\n\n### Epidemiology\nAcute hepatitis is common worldwide, with viral hepatitis (especially hepatitis A and E) being prevalent in developing countries. Hepatitis B and C are also significant causes, particularly in high-risk populations. The incidence varies by region and population demographics.\n\n### Essential Pathophysiology\nThe liver becomes inflamed due to the immune response to the causative agent (e.g., virus, toxin). This inflammation can lead to hepatocyte injury, necrosis, and impaired liver function, which may manifest as jaundice, coagulopathy, and metabolic disturbances.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Jaundice (yellowing of skin and eyes)\n- Fatigue\n- Nausea and vomiting\n- Abdominal pain (especially in the right upper quadrant)\n- Loss of appetite\n- Dark urine\n- Pale stools\n- Fever\n\n### Key Signs\n- Hepatomegaly (enlarged liver)\n- Splenomegaly (enlarged spleen)\n- Ascites (fluid in the abdomen)\n- Asterixis (flapping tremor)\n- Icterus (jaundice)\n\n### Atypical Presentations\n- Asymptomatic in some cases\n- Acute liver failure with encephalopathy\n- Severe coagulopathy leading to bleeding\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration of liver function\n- Signs of hepatic encephalopathy (confusion, altered consciousness)\n- Severe coagulopathy (e.g., bleeding diathesis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Hepatitis serology (A, B, C, D, E)\n- Complete blood count (CBC)\n- Coagulation profile\n\n### Second-line Investigations\n- Ultrasound abdomen (to assess liver size and rule out biliary obstruction)\n- Viral load tests (for hepatitis B and C)\n- Autoimmune markers (if autoimmune hepatitis is suspected)\n\n### Specialist Tests\n- Liver biopsy (if diagnosis is uncertain or to assess severity)\n- MRI or CT scan (if complications are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of acute hepatitis is based on clinical presentation, elevated liver enzymes (ALT, AST), and positive serology for viral hepatitis or other causative agents.\n\n### Key Differential Diagnoses to Exclude\n- Alcoholic hepatitis\n- Drug-induced liver injury\n- Autoimmune hepatitis\n- Non-alcoholic fatty liver disease (NAFLD)\n- Wilson's disease\n- Hemochromatosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, nutrition)\n- Avoidance of hepatotoxic substances (alcohol, certain medications)\n\n#### Second-line Treatments\n- N-acetylcysteine (if acetaminophen overdose is suspected)\n- Antiviral therapy (for specific viral hepatitis, e.g., hepatitis B)\n\n#### Emergency Procedures\n- Liver transplant (in cases of acute liver failure)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of liver function tests and serology for chronic hepatitis B and C\n\n#### Second-line Treatments\n- Antiviral therapy for chronic hepatitis B and C as indicated\n\n#### Monitoring Requirements\n- Regular follow-up for liver function tests, screening for hepatocellular carcinoma (HCC) in chronic cases\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### N-acetylcysteine\n- **Mechanism of Action**: Acts as a precursor to glutathione, helping to detoxify harmful metabolites in the liver.\n- **Typical Dosing Range**: 140 mg/kg loading dose, followed by 70 mg/kg every 4 hours for 17 doses.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, abdominal pain, allergic reactions.\n- **When to Use vs. Alternatives**: Effective in acetaminophen overdose; may also have a role in other forms of acute liver injury.\n\n#### Tenofovir\n- **Mechanism of Action**: Nucleotide reverse transcriptase inhibitor that suppresses hepatitis B viral replication.\n- **Typical Dosing Range**: 300 mg orally once daily.\n- **Key Side Effects/Contraindications**: Renal toxicity, bone mineral density loss.\n- **When to Use vs. Alternatives**: Used in chronic hepatitis B management.\n\n#### Sofosbuvir\n- **Mechanism of Action**: Direct-acting antiviral that inhibits the hepatitis C virus polymerase.\n- **Typical Dosing Range**: 400 mg orally once daily.\n- **Key Side Effects/Contraindications**: Fatigue, headache, nausea.\n- **When to Use vs. Alternatives**: Used in combination therapy for chronic hepatitis C.\n\n### Procedures\n\n#### Liver biopsy\n- **What it Involves**: A procedure to obtain a small sample of liver tissue for histological examination.\n- **Indications**: To assess the degree of liver inflammation and fibrosis, especially in chronic hepatitis cases.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n#### Liver transplant\n- **What it Involves**: Surgical procedure to replace a diseased liver with a healthy liver from a donor.\n- **Indications**: Acute liver failure or end-stage liver disease not amenable to other treatments.\n- **Key Risks/Complications**: Rejection of the transplanted liver, infection, complications from surgery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of acute hepatitis varies depending on the cause. Viral hepatitis A typically resolves completely, while hepatitis B and C can lead to chronic infection and complications. Acute liver failure has a high mortality rate without transplantation.\n\n### Important Complications to Watch For\n- Acute liver failure\n- Chronic hepatitis (especially with hepatitis B and C)\n- Cirrhosis\n- Hepatocellular carcinoma (HCC)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of acute hepatitis, perform initial investigations, provide supportive care, and refer to specialists when necessary. They should also educate patients about avoiding hepatotoxic substances and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there are signs of acute liver failure, severe coagulopathy, or if the patient is not improving with initial management.\n\n### Key Safety Considerations\nMonitor liver function tests closely, be aware of signs of hepatic encephalopathy, and ensure that patients are not taking hepatotoxic medications. Educate patients on the importance of avoiding alcohol and other liver toxins.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute hepatitis is the inflammation of the liver that occurs suddenly and lasts for less than six months. It can be caused by viral infections, toxins, autoimmune diseases, or other factors.",
+      "epidemiology": "Acute hepatitis is common worldwide, with viral hepatitis (especially hepatitis A and E) being prevalent in developing countries. Hepatitis B and C are also significant causes, particularly in high-risk populations. The incidence varies by region and population demographics.",
+      "pathophysiology": "The liver becomes inflamed due to the immune response to the causative agent (e.g., virus, toxin). This inflammation can lead to hepatocyte injury, necrosis, and impaired liver function, which may manifest as jaundice, coagulopathy, and metabolic disturbances."
+    },
+    "recognition": {
+      "symptoms": [
+        "Jaundice (yellowing of skin and eyes)",
+        "Fatigue",
+        "Nausea and vomiting",
+        "Abdominal pain (especially in the right upper quadrant)",
+        "Loss of appetite",
+        "Dark urine",
+        "Pale stools",
+        "Fever"
+      ],
+      "signs": [
+        "Hepatomegaly (enlarged liver)",
+        "Splenomegaly (enlarged spleen)",
+        "Ascites (fluid in the abdomen)",
+        "Asterixis (flapping tremor)",
+        "Icterus (jaundice)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in some cases",
+        "Acute liver failure with encephalopathy",
+        "Severe coagulopathy leading to bleeding"
+      ],
+      "redFlags": [
+        "Rapid deterioration of liver function",
+        "Signs of hepatic encephalopathy (confusion, altered consciousness)",
+        "Severe coagulopathy (e.g., bleeding diathesis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Hepatitis serology (A, B, C, D, E)",
+        "Complete blood count (CBC)",
+        "Coagulation profile"
+      ],
+      "secondLine": [
+        "Ultrasound abdomen (to assess liver size and rule out biliary obstruction)",
+        "Viral load tests (for hepatitis B and C)",
+        "Autoimmune markers (if autoimmune hepatitis is suspected)"
+      ],
+      "specialistTests": [
+        "Liver biopsy (if diagnosis is uncertain or to assess severity)",
+        "MRI or CT scan (if complications are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of acute hepatitis is based on clinical presentation, elevated liver enzymes (ALT, AST), and positive serology for viral hepatitis or other causative agents.",
+      "differentials": [
+        "Alcoholic hepatitis",
+        "Drug-induced liver injury",
+        "Autoimmune hepatitis",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Wilson's disease",
+        "Hemochromatosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, nutrition)",
+          "Avoidance of hepatotoxic substances (alcohol, certain medications)"
+        ],
+        "secondLine": [
+          "N-acetylcysteine (if acetaminophen overdose is suspected)",
+          "Antiviral therapy (for specific viral hepatitis, e.g., hepatitis B)"
+        ],
+        "procedures": [
+          "Liver transplant (in cases of acute liver failure)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of liver function tests and serology for chronic hepatitis B and C"
+        ],
+        "secondLine": [
+          "Antiviral therapy for chronic hepatitis B and C as indicated"
+        ],
+        "monitoring": [
+          "Regular follow-up for liver function tests, screening for hepatocellular carcinoma (HCC) in chronic cases"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "N-acetylcysteine",
+          "mechanism": "Acts as a precursor to glutathione, helping to detoxify harmful metabolites in the liver.",
+          "dosing": "140 mg/kg loading dose, followed by 70 mg/kg every 4 hours for 17 doses.",
+          "sideEffects": "Nausea, vomiting, abdominal pain, allergic reactions.",
+          "notes": "Effective in acetaminophen overdose; may also have a role in other forms of acute liver injury."
+        },
+        {
+          "name": "Tenofovir",
+          "mechanism": "Nucleotide reverse transcriptase inhibitor that suppresses hepatitis B viral replication.",
+          "dosing": "300 mg orally once daily.",
+          "sideEffects": "Renal toxicity, bone mineral density loss.",
+          "notes": "Used in chronic hepatitis B management."
+        },
+        {
+          "name": "Sofosbuvir",
+          "mechanism": "Direct-acting antiviral that inhibits the hepatitis C virus polymerase.",
+          "dosing": "400 mg orally once daily.",
+          "sideEffects": "Fatigue, headache, nausea.",
+          "notes": "Used in combination therapy for chronic hepatitis C."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Liver biopsy",
+          "description": "A procedure to obtain a small sample of liver tissue for histological examination.",
+          "indications": "To assess the degree of liver inflammation and fibrosis, especially in chronic hepatitis cases.",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        },
+        {
+          "name": "Liver transplant",
+          "description": "Surgical procedure to replace a diseased liver with a healthy liver from a donor.",
+          "indications": "Acute liver failure or end-stage liver disease not amenable to other treatments.",
+          "risks": "Rejection of the transplanted liver, infection, complications from surgery."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of acute hepatitis varies depending on the cause. Viral hepatitis A typically resolves completely, while hepatitis B and C can lead to chronic infection and complications. Acute liver failure has a high mortality rate without transplantation.",
+    "complications": [
+      "Acute liver failure",
+      "Chronic hepatitis (especially with hepatitis B and C)",
+      "Cirrhosis",
+      "Hepatocellular carcinoma (HCC)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of acute hepatitis, perform initial investigations, provide supportive care, and refer to specialists when necessary. They should also educate patients about avoiding hepatotoxic substances and the importance of follow-up.",
+    "escalation": "Escalate care to a senior clinician if there are signs of acute liver failure, severe coagulopathy, or if the patient is not improving with initial management.",
+    "keySafetyConsiderations": "Monitor liver function tests closely, be aware of signs of hepatic encephalopathy, and ensure that patients are not taking hepatotoxic medications. Educate patients on the importance of avoiding alcohol and other liver toxins."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "alcohol",
+  "name": "Alcohol",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:08:28.108035",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Alcohol: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAlcohol use disorder (AUD) is a chronic relapsing brain disorder characterized by an inability to control or stop drinking despite negative consequences, leading to significant impairment or distress.\n\n### Epidemiology\nAUD affects approximately 14.1 million adults in the United States, with a higher prevalence in men than women. It is associated with various comorbidities, including mental health disorders and chronic diseases.\n\n### Essential Pathophysiology\nAlcohol acts primarily on the central nervous system, affecting neurotransmitter systems, particularly gamma-aminobutyric acid (GABA) and glutamate. Chronic alcohol use leads to neuroadaptations, resulting in tolerance, dependence, and withdrawal symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Craving alcohol\n- Loss of control over drinking\n- Continued use despite negative consequences\n- Withdrawal symptoms (e.g., tremors, anxiety, nausea)\n- Increased tolerance to alcohol\n\n### Key Signs\n- Physical signs of intoxication (slurred speech, unsteady gait)\n- Withdrawal signs (tremors, sweating, agitation)\n- Neglect of responsibilities (work, family)\n- Social or interpersonal problems related to alcohol use\n\n### Atypical Presentations\n- Alcohol-related blackouts without memory of events\n- Aggressive behavior or mood swings\n- Physical health issues (e.g., liver disease, pancreatitis)\n\n### Red Flags Requiring Immediate Action\n- Severe withdrawal symptoms (e.g., seizures, delirium tremens)\n- History of alcohol-related accidents or injuries\n- Co-occurring mental health disorders (e.g., depression, anxiety)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- CAGE questionnaire (Cut down, Annoyed, Guilty, Eye-opener)\n- AUDIT (Alcohol Use Disorders Identification Test)\n\n### Second-line Investigations\n- Liver function tests (LFTs)\n- Carbohydrate-deficient transferrin (CDT)\n- Gamma-glutamyl transferase (GGT)\n\n### Specialist Tests\n- Psychiatric evaluation\n- CT/MRI of the brain if neurological symptoms present\n- Screening for co-occurring substance use disorders\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of AUD is based on the DSM-5 criteria, which include a pattern of alcohol use leading to significant impairment or distress, with at least two of the following criteria met within a 12-month period: tolerance, withdrawal, drinking more than intended, unsuccessful attempts to cut down, significant time spent obtaining or using alcohol, and continued use despite problems.\n\n### Key Differential Diagnoses to Exclude\n- Substance use disorders (other than alcohol)\n- Bipolar disorder\n- Depression\n- Anxiety disorders\n- Personality disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Benzodiazepines (e.g., lorazepam) for withdrawal management\n- Thiamine supplementation to prevent Wernicke's encephalopathy\n\n#### Second-line Treatments\n- Antipsychotics for severe agitation or psychosis\n- Adjunctive medications (e.g., carbamazepine)\n\n#### Emergency Procedures\n- Supportive care in a safe environment\n- Monitoring for withdrawal symptoms and complications\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive-behavioral therapy (CBT)\n- Motivational interviewing\n- Support groups (e.g., Alcoholics Anonymous)\n\n#### Second-line Treatments\n- Pharmacotherapy (e.g., naltrexone, acamprosate)\n- Referral to specialized addiction services\n\n#### Monitoring Requirements\n- Regular follow-up for relapse prevention\n- Monitoring for comorbid conditions (e.g., liver disease)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Naltrexone\n- **Mechanism of Action**: Opioid receptor antagonist that reduces cravings and the rewarding effects of alcohol.\n- **Typical Dosing Range**: 50 mg orally once daily.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness, fatigue.\n- **When to Use vs. Alternatives**: Monitor liver function; contraindicated in acute hepatitis or liver failure.\n\n#### Acamprosate\n- **Mechanism of Action**: Modulates glutamate neurotransmission to reduce cravings.\n- **Typical Dosing Range**: 666 mg orally three times daily.\n- **Key Side Effects/Contraindications**: Diarrhea, nausea, anxiety.\n- **When to Use vs. Alternatives**: Renal function should be monitored; contraindicated in severe renal impairment.\n\n### Procedures\n\n#### Detoxification\n- **What it Involves**: Medical management of withdrawal symptoms in a controlled environment.\n- **Indications**: Severe alcohol dependence with withdrawal symptoms; history of withdrawal seizures or delirium tremens.\n- **Key Risks/Complications**: Seizures, delirium tremens, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many individuals can achieve long-term recovery. However, AUD is a chronic condition with a risk of relapse.\n\n### Important Complications to Watch For\n- Liver disease (cirrhosis, hepatitis)\n- Pancreatitis\n- Cardiovascular disease\n- Neurological complications (Wernicke's encephalopathy, Korsakoff syndrome)\n- Increased risk of accidents and injuries\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should conduct thorough assessments, initiate management, provide education on alcohol use, and refer to specialist services as needed. They should also monitor for withdrawal symptoms and complications during detoxification.\n\n### When to Escalate to Senior/Specialist\nRefer to addiction services for patients with severe AUD, those with comorbid mental health issues, or those who have not responded to initial management.\n\n### Key Safety Considerations\nEnsure patient safety during detoxification, monitor for withdrawal symptoms, provide thiamine supplementation to prevent Wernicke's encephalopathy, and assess for co-occurring mental health disorders.\n",
+  "content": {
+    "overview": {
+      "definition": "Alcohol use disorder (AUD) is a chronic relapsing brain disorder characterized by an inability to control or stop drinking despite negative consequences, leading to significant impairment or distress.",
+      "epidemiology": "AUD affects approximately 14.1 million adults in the United States, with a higher prevalence in men than women. It is associated with various comorbidities, including mental health disorders and chronic diseases.",
+      "pathophysiology": "Alcohol acts primarily on the central nervous system, affecting neurotransmitter systems, particularly gamma-aminobutyric acid (GABA) and glutamate. Chronic alcohol use leads to neuroadaptations, resulting in tolerance, dependence, and withdrawal symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Craving alcohol",
+        "Loss of control over drinking",
+        "Continued use despite negative consequences",
+        "Withdrawal symptoms (e.g., tremors, anxiety, nausea)",
+        "Increased tolerance to alcohol"
+      ],
+      "signs": [
+        "Physical signs of intoxication (slurred speech, unsteady gait)",
+        "Withdrawal signs (tremors, sweating, agitation)",
+        "Neglect of responsibilities (work, family)",
+        "Social or interpersonal problems related to alcohol use"
+      ],
+      "atypicalPresentations": [
+        "Alcohol-related blackouts without memory of events",
+        "Aggressive behavior or mood swings",
+        "Physical health issues (e.g., liver disease, pancreatitis)"
+      ],
+      "redFlags": [
+        "Severe withdrawal symptoms (e.g., seizures, delirium tremens)",
+        "History of alcohol-related accidents or injuries",
+        "Co-occurring mental health disorders (e.g., depression, anxiety)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "CAGE questionnaire (Cut down, Annoyed, Guilty, Eye-opener)",
+        "AUDIT (Alcohol Use Disorders Identification Test)"
+      ],
+      "secondLine": [
+        "Liver function tests (LFTs)",
+        "Carbohydrate-deficient transferrin (CDT)",
+        "Gamma-glutamyl transferase (GGT)"
+      ],
+      "specialistTests": [
+        "Psychiatric evaluation",
+        "CT/MRI of the brain if neurological symptoms present",
+        "Screening for co-occurring substance use disorders"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of AUD is based on the DSM-5 criteria, which include a pattern of alcohol use leading to significant impairment or distress, with at least two of the following criteria met within a 12-month period: tolerance, withdrawal, drinking more than intended, unsuccessful attempts to cut down, significant time spent obtaining or using alcohol, and continued use despite problems.",
+      "differentials": [
+        "Substance use disorders (other than alcohol)",
+        "Bipolar disorder",
+        "Depression",
+        "Anxiety disorders",
+        "Personality disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Benzodiazepines (e.g., lorazepam) for withdrawal management",
+          "Thiamine supplementation to prevent Wernicke's encephalopathy"
+        ],
+        "secondLine": [
+          "Antipsychotics for severe agitation or psychosis",
+          "Adjunctive medications (e.g., carbamazepine)"
+        ],
+        "procedures": [
+          "Supportive care in a safe environment",
+          "Monitoring for withdrawal symptoms and complications"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive-behavioral therapy (CBT)",
+          "Motivational interviewing",
+          "Support groups (e.g., Alcoholics Anonymous)"
+        ],
+        "secondLine": [
+          "Pharmacotherapy (e.g., naltrexone, acamprosate)",
+          "Referral to specialized addiction services"
+        ],
+        "monitoring": [
+          "Regular follow-up for relapse prevention",
+          "Monitoring for comorbid conditions (e.g., liver disease)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Naltrexone",
+          "mechanism": "Opioid receptor antagonist that reduces cravings and the rewarding effects of alcohol.",
+          "dosing": "50 mg orally once daily.",
+          "sideEffects": "Nausea, headache, dizziness, fatigue.",
+          "notes": "Monitor liver function; contraindicated in acute hepatitis or liver failure."
+        },
+        {
+          "name": "Acamprosate",
+          "mechanism": "Modulates glutamate neurotransmission to reduce cravings.",
+          "dosing": "666 mg orally three times daily.",
+          "sideEffects": "Diarrhea, nausea, anxiety.",
+          "notes": "Renal function should be monitored; contraindicated in severe renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Detoxification",
+          "description": "Medical management of withdrawal symptoms in a controlled environment.",
+          "indications": "Severe alcohol dependence with withdrawal symptoms; history of withdrawal seizures or delirium tremens.",
+          "risks": "Seizures, delirium tremens, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many individuals can achieve long-term recovery. However, AUD is a chronic condition with a risk of relapse.",
+    "complications": [
+      "Liver disease (cirrhosis, hepatitis)",
+      "Pancreatitis",
+      "Cardiovascular disease",
+      "Neurological complications (Wernicke's encephalopathy, Korsakoff syndrome)",
+      "Increased risk of accidents and injuries"
+    ],
+    "foundationDoctorRole": "Foundation doctors should conduct thorough assessments, initiate management, provide education on alcohol use, and refer to specialist services as needed. They should also monitor for withdrawal symptoms and complications during detoxification.",
+    "escalation": "Refer to addiction services for patients with severe AUD, those with comorbid mental health issues, or those who have not responded to initial management.",
+    "keySafetyConsiderations": "Ensure patient safety during detoxification, monitor for withdrawal symptoms, provide thiamine supplementation to prevent Wernicke's encephalopathy, and assess for co-occurring mental health disorders."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "polymyalgia_rheumatica_pmr",
+  "name": "Polymyalgia rheumatica (PMR)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:34:15.722223",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polymyalgia rheumatica (PMR): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPolymyalgia rheumatica (PMR) is an inflammatory disorder characterized by muscle pain and stiffness, particularly in the shoulders, hips, and neck, typically affecting individuals over the age of 50.\n\n### Epidemiology\nPMR is more common in individuals over 50 years of age, with a higher prevalence in women than men. It is often associated with giant cell arteritis (GCA), and the incidence is higher in Northern European populations.\n\n### Essential Pathophysiology\nThe exact pathophysiology of PMR is not fully understood, but it is believed to involve an autoimmune response leading to synovial inflammation and pain in the proximal muscles. Elevated levels of inflammatory markers such as ESR and CRP are commonly observed.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Bilateral shoulder pain and stiffness\n- Hip pain and stiffness\n- Morning stiffness lasting more than 30 minutes\n- Fatigue\n- Weight loss\n- Low-grade fever\n\n### Key Signs\n- Reduced range of motion in the shoulders and hips\n- Tenderness over the shoulder girdle and pelvic girdle\n- Normal neurological examination\n\n### Atypical Presentations\n- Unilateral symptoms\n- Symptoms in younger patients (under 50)\n- Presence of systemic symptoms like fever or rash\n\n### Red Flags Requiring Immediate Action\n- New headache or visual disturbances (suggestive of giant cell arteritis)\n- Severe or persistent symptoms unresponsive to treatment\n- Signs of systemic illness (e.g., significant weight loss, fever)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Liver function tests (LFTs)\n\n### Second-line Investigations\n- Creatine kinase (CK) to rule out myopathy\n- Thyroid function tests (TFTs)\n- Rheumatoid factor (RF) and anti-CCP antibodies\n\n### Specialist Tests\n- Ultrasound of the shoulder or hip to assess for bursitis or synovitis\n- MRI if there is suspicion of other underlying conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PMR is primarily clinical, based on the presence of bilateral shoulder and hip pain, morning stiffness, and elevated inflammatory markers. The absence of other conditions that could explain the symptoms is also crucial.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Polymyositis\n- Giant cell arteritis\n- Fibromyalgia\n- Hypothyroidism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., Prednisolone 15-20 mg daily)\n\n#### Second-line Treatments\n- Tapering of corticosteroids after symptom control, typically over 1-2 years\n\n#### Emergency Procedures\n- None specific for PMR, but joint injections may be considered for symptomatic relief in specific joints.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continuation of corticosteroids with gradual tapering\n\n#### Second-line Treatments\n- Methotrexate or other DMARDs if corticosteroid-sparing is needed\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and side effects of corticosteroids\n- Monitoring of blood pressure, blood glucose, and bone density due to long-term steroid use.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial dose of 15-20 mg daily, tapering based on clinical response.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, hypertension, diabetes, increased risk of infections.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially with long-term use.\n\n#### Methotrexate\n- **Mechanism of Action**: DMARD that inhibits immune cell proliferation and reduces inflammation.\n- **Typical Dosing Range**: Typically 7.5-15 mg weekly, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Requires regular monitoring of liver function and blood counts.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPMR generally has a good prognosis with appropriate treatment. Most patients respond well to corticosteroids, and symptoms typically resolve within a few weeks. However, relapses can occur, and long-term management may be necessary.\n\n### Important Complications to Watch For\n- Giant cell arteritis (GCA) leading to vision loss\n- Osteoporosis due to long-term corticosteroid use\n- Increased risk of cardiovascular disease due to chronic inflammation and steroid use.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of PMR, initiate investigations, and start treatment with corticosteroids. They should also monitor for side effects and complications of treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist if there is uncertainty in diagnosis, lack of response to treatment, or if there are concerning symptoms suggestive of GCA.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients on corticosteroids. Regularly assess for side effects of long-term steroid use, including osteoporosis and cardiovascular risk.\n",
+  "content": {
+    "overview": {
+      "definition": "Polymyalgia rheumatica (PMR) is an inflammatory disorder characterized by muscle pain and stiffness, particularly in the shoulders, hips, and neck, typically affecting individuals over the age of 50.",
+      "epidemiology": "PMR is more common in individuals over 50 years of age, with a higher prevalence in women than men. It is often associated with giant cell arteritis (GCA), and the incidence is higher in Northern European populations.",
+      "pathophysiology": "The exact pathophysiology of PMR is not fully understood, but it is believed to involve an autoimmune response leading to synovial inflammation and pain in the proximal muscles. Elevated levels of inflammatory markers such as ESR and CRP are commonly observed."
+    },
+    "recognition": {
+      "symptoms": [
+        "Bilateral shoulder pain and stiffness",
+        "Hip pain and stiffness",
+        "Morning stiffness lasting more than 30 minutes",
+        "Fatigue",
+        "Weight loss",
+        "Low-grade fever"
+      ],
+      "signs": [
+        "Reduced range of motion in the shoulders and hips",
+        "Tenderness over the shoulder girdle and pelvic girdle",
+        "Normal neurological examination"
+      ],
+      "atypicalPresentations": [
+        "Unilateral symptoms",
+        "Symptoms in younger patients (under 50)",
+        "Presence of systemic symptoms like fever or rash"
+      ],
+      "redFlags": [
+        "New headache or visual disturbances (suggestive of giant cell arteritis)",
+        "Severe or persistent symptoms unresponsive to treatment",
+        "Signs of systemic illness (e.g., significant weight loss, fever)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Liver function tests (LFTs)"
+      ],
+      "secondLine": [
+        "Creatine kinase (CK) to rule out myopathy",
+        "Thyroid function tests (TFTs)",
+        "Rheumatoid factor (RF) and anti-CCP antibodies"
+      ],
+      "specialistTests": [
+        "Ultrasound of the shoulder or hip to assess for bursitis or synovitis",
+        "MRI if there is suspicion of other underlying conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PMR is primarily clinical, based on the presence of bilateral shoulder and hip pain, morning stiffness, and elevated inflammatory markers. The absence of other conditions that could explain the symptoms is also crucial.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Polymyositis",
+        "Giant cell arteritis",
+        "Fibromyalgia",
+        "Hypothyroidism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., Prednisolone 15-20 mg daily)"
+        ],
+        "secondLine": [
+          "Tapering of corticosteroids after symptom control, typically over 1-2 years"
+        ],
+        "procedures": [
+          "None specific for PMR, but joint injections may be considered for symptomatic relief in specific joints."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continuation of corticosteroids with gradual tapering"
+        ],
+        "secondLine": [
+          "Methotrexate or other DMARDs if corticosteroid-sparing is needed"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and side effects of corticosteroids",
+          "Monitoring of blood pressure, blood glucose, and bone density due to long-term steroid use."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Initial dose of 15-20 mg daily, tapering based on clinical response.",
+          "sideEffects": "Weight gain, osteoporosis, hypertension, diabetes, increased risk of infections.",
+          "notes": "Monitor for side effects, especially with long-term use."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "DMARD that inhibits immune cell proliferation and reduces inflammation.",
+          "dosing": "Typically 7.5-15 mg weekly, adjusted based on response and tolerance.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.",
+          "notes": "Requires regular monitoring of liver function and blood counts."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "PMR generally has a good prognosis with appropriate treatment. Most patients respond well to corticosteroids, and symptoms typically resolve within a few weeks. However, relapses can occur, and long-term management may be necessary.",
+    "complications": [
+      "Giant cell arteritis (GCA) leading to vision loss",
+      "Osteoporosis due to long-term corticosteroid use",
+      "Increased risk of cardiovascular disease due to chronic inflammation and steroid use."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of PMR, initiate investigations, and start treatment with corticosteroids. They should also monitor for side effects and complications of treatment.",
+    "escalation": "Refer to a rheumatologist if there is uncertainty in diagnosis, lack of response to treatment, or if there are concerning symptoms suggestive of GCA.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients on corticosteroids. Regularly assess for side effects of long-term steroid use, including osteoporosis and cardiovascular risk."
+  }
+}

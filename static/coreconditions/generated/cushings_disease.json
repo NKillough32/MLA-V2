@@ -1,0 +1,131 @@
+{
+  "id": "cushings_disease",
+  "name": "Cushing?s disease",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:34:10.779044",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cushing?s disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCushing's disease is a condition caused by an excess of cortisol due to a pituitary adenoma secreting adrenocorticotropic hormone (ACTH), leading to adrenal hyperplasia and increased cortisol production.\n\n### Epidemiology\nCushing's disease is rare, with an estimated incidence of 1-2 cases per million per year. It predominantly affects women aged 20-50 years.\n\n### Essential Pathophysiology\nThe pathophysiology involves a pituitary adenoma that secretes ACTH, stimulating the adrenal glands to produce excess cortisol. This results in a negative feedback loop where high cortisol levels suppress ACTH production from the pituitary, but the adenoma continues to secrete ACTH independently.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weight gain (central obesity)\n- Moon facies\n- Buffalo hump\n- Skin changes (thinning, easy bruising)\n- Hypertension\n- Diabetes mellitus\n- Osteoporosis\n- Menstrual irregularities in women\n- Psychiatric symptoms (depression, anxiety)\n\n### Key Signs\n- Hypertension\n- Hyperglycemia\n- Hypokalemia\n- Increased abdominal girth\n- Striae (purple striae on abdomen)\n- Acne\n- Hirsutism\n\n### Atypical Presentations\n- Adrenal insufficiency due to rapid withdrawal of corticosteroids in patients on long-term therapy\n- Cushing's syndrome due to ectopic ACTH secretion (e.g., from lung tumors)\n\n### Red Flags Requiring Immediate Action\n- Severe hypertension\n- New-onset diabetes\n- Rapid weight gain\n- Psychiatric changes (e.g., severe depression or psychosis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- 24-hour urinary free cortisol excretion\n- Late-night salivary cortisol measurement\n- Low-dose dexamethasone suppression test\n\n### Second-line Investigations\n- Plasma ACTH levels\n- High-dose dexamethasone suppression test\n- MRI of the pituitary gland\n\n### Specialist Tests\n- Inferior petrosal sinus sampling (IPSS) to differentiate pituitary from ectopic sources of ACTH\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of Cushing's disease is confirmed by demonstrating elevated cortisol levels (24-hour urinary free cortisol or late-night salivary cortisol) and suppressed cortisol levels after high-dose dexamethasone suppression test, along with elevated ACTH levels.\n\n### Key Differential Diagnoses to Exclude\n- Cushing's syndrome due to adrenal adenoma or carcinoma\n- Ectopic ACTH secretion (e.g., small cell lung cancer)\n- Pseudo-Cushing's syndrome (e.g., depression, obesity)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hydrocortisone replacement therapy in case of adrenal crisis\n\n#### Second-line Treatments\n- Consider surgical intervention if indicated\n\n#### Emergency Procedures\n- Transsphenoidal resection of pituitary adenoma\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection of the pituitary adenoma (transsphenoidal surgery)\n\n#### Second-line Treatments\n- Medical therapy (e.g., ketoconazole, metyrapone) if surgery is not possible or in cases of recurrence\n\n#### Monitoring Requirements\n- Regular follow-up with endocrinology for cortisol levels and symptom management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ketoconazole\n- **Mechanism of Action**: Inhibits cortisol synthesis by blocking steroidogenesis in the adrenal glands.\n- **Typical Dosing Range**: 400-1200 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, nausea, headache, adrenal insufficiency.\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly.\n\n#### Metyrapone\n- **Mechanism of Action**: Inhibits 11-beta-hydroxylase, reducing cortisol production.\n- **Typical Dosing Range**: 750 mg to 4.5 g/day in divided doses.\n- **Key Side Effects/Contraindications**: Hypertension, hirsutism, adrenal insufficiency.\n- **When to Use vs. Alternatives**: Monitor blood pressure and adrenal function.\n\n### Procedures\n\n#### Transsphenoidal resection\n- **What it Involves**: Surgical removal of the pituitary adenoma through the sphenoid sinus.\n- **Indications**: Confirmed Cushing's disease with a pituitary adenoma.\n- **Key Risks/Complications**: CSF leak, infection, pituitary damage leading to hypopituitarism.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for Cushing's disease is generally good, but long-term follow-up is necessary due to potential recurrence and complications of hypercortisolism.\n\n### Important Complications to Watch For\n- Cardiovascular disease\n- Osteoporosis and fractures\n- Diabetes mellitus\n- Infections due to immunosuppression\n- Psychiatric disorders\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of Cushing's disease, initiate appropriate investigations, and manage acute complications. They should also provide education to patients about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for suspected Cushing's disease after initial investigations. Escalate care for severe symptoms such as adrenal crisis or uncontrolled hypertension.\n\n### Key Safety Considerations\nMonitor for signs of adrenal insufficiency post-surgery or during medical therapy. Ensure regular follow-up for potential complications of treatment.\n",
+  "content": {
+    "overview": {
+      "definition": "Cushing's disease is a condition caused by an excess of cortisol due to a pituitary adenoma secreting adrenocorticotropic hormone (ACTH), leading to adrenal hyperplasia and increased cortisol production.",
+      "epidemiology": "Cushing's disease is rare, with an estimated incidence of 1-2 cases per million per year. It predominantly affects women aged 20-50 years.",
+      "pathophysiology": "The pathophysiology involves a pituitary adenoma that secretes ACTH, stimulating the adrenal glands to produce excess cortisol. This results in a negative feedback loop where high cortisol levels suppress ACTH production from the pituitary, but the adenoma continues to secrete ACTH independently."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weight gain (central obesity)",
+        "Moon facies",
+        "Buffalo hump",
+        "Skin changes (thinning, easy bruising)",
+        "Hypertension",
+        "Diabetes mellitus",
+        "Osteoporosis",
+        "Menstrual irregularities in women",
+        "Psychiatric symptoms (depression, anxiety)"
+      ],
+      "signs": [
+        "Hypertension",
+        "Hyperglycemia",
+        "Hypokalemia",
+        "Increased abdominal girth",
+        "Striae (purple striae on abdomen)",
+        "Acne",
+        "Hirsutism"
+      ],
+      "atypicalPresentations": [
+        "Adrenal insufficiency due to rapid withdrawal of corticosteroids in patients on long-term therapy",
+        "Cushing's syndrome due to ectopic ACTH secretion (e.g., from lung tumors)"
+      ],
+      "redFlags": [
+        "Severe hypertension",
+        "New-onset diabetes",
+        "Rapid weight gain",
+        "Psychiatric changes (e.g., severe depression or psychosis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "24-hour urinary free cortisol excretion",
+        "Late-night salivary cortisol measurement",
+        "Low-dose dexamethasone suppression test"
+      ],
+      "secondLine": [
+        "Plasma ACTH levels",
+        "High-dose dexamethasone suppression test",
+        "MRI of the pituitary gland"
+      ],
+      "specialistTests": [
+        "Inferior petrosal sinus sampling (IPSS) to differentiate pituitary from ectopic sources of ACTH"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of Cushing's disease is confirmed by demonstrating elevated cortisol levels (24-hour urinary free cortisol or late-night salivary cortisol) and suppressed cortisol levels after high-dose dexamethasone suppression test, along with elevated ACTH levels.",
+      "differentials": [
+        "Cushing's syndrome due to adrenal adenoma or carcinoma",
+        "Ectopic ACTH secretion (e.g., small cell lung cancer)",
+        "Pseudo-Cushing's syndrome (e.g., depression, obesity)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hydrocortisone replacement therapy in case of adrenal crisis"
+        ],
+        "secondLine": [
+          "Consider surgical intervention if indicated"
+        ],
+        "procedures": [
+          "Transsphenoidal resection of pituitary adenoma"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection of the pituitary adenoma (transsphenoidal surgery)"
+        ],
+        "secondLine": [
+          "Medical therapy (e.g., ketoconazole, metyrapone) if surgery is not possible or in cases of recurrence"
+        ],
+        "monitoring": [
+          "Regular follow-up with endocrinology for cortisol levels and symptom management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ketoconazole",
+          "mechanism": "Inhibits cortisol synthesis by blocking steroidogenesis in the adrenal glands.",
+          "dosing": "400-1200 mg/day in divided doses.",
+          "sideEffects": "Hepatotoxicity, nausea, headache, adrenal insufficiency.",
+          "notes": "Monitor liver function tests regularly."
+        },
+        {
+          "name": "Metyrapone",
+          "mechanism": "Inhibits 11-beta-hydroxylase, reducing cortisol production.",
+          "dosing": "750 mg to 4.5 g/day in divided doses.",
+          "sideEffects": "Hypertension, hirsutism, adrenal insufficiency.",
+          "notes": "Monitor blood pressure and adrenal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transsphenoidal resection",
+          "description": "Surgical removal of the pituitary adenoma through the sphenoid sinus.",
+          "indications": "Confirmed Cushing's disease with a pituitary adenoma.",
+          "risks": "CSF leak, infection, pituitary damage leading to hypopituitarism."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for Cushing's disease is generally good, but long-term follow-up is necessary due to potential recurrence and complications of hypercortisolism.",
+    "complications": [
+      "Cardiovascular disease",
+      "Osteoporosis and fractures",
+      "Diabetes mellitus",
+      "Infections due to immunosuppression",
+      "Psychiatric disorders"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of Cushing's disease, initiate appropriate investigations, and manage acute complications. They should also provide education to patients about the condition and its management.",
+    "escalation": "Refer to endocrinology for suspected Cushing's disease after initial investigations. Escalate care for severe symptoms such as adrenal crisis or uncontrolled hypertension.",
+    "keySafetyConsiderations": "Monitor for signs of adrenal insufficiency post-surgery or during medical therapy. Ensure regular follow-up for potential complications of treatment."
+  }
+}

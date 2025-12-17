@@ -1,0 +1,144 @@
+{
+  "id": "adverse_drug_reactions",
+  "name": "Adverse Drug Reactions",
+  "domains": [
+    "nan"
+  ],
+  "generatedAt": "2025-12-17T19:38:32.371299",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Adverse Drug Reactions: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAdverse Drug Reactions (ADRs) are harmful or unintended responses to medications that occur at normal doses used for prophylaxis, diagnosis, or therapy.\n\n### Epidemiology\nADRs are a significant cause of morbidity and mortality, accounting for approximately 5-10% of hospital admissions and 10-20% of in-hospital complications.\n\n### Essential Pathophysiology\nADRs can result from various mechanisms including pharmacological effects, allergic reactions, idiosyncratic reactions, and drug interactions. They may involve dose-dependent effects or immune-mediated responses.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nausea\n- Vomiting\n- Rash\n- Dizziness\n- Fatigue\n- Shortness of breath\n- Anaphylaxis\n\n### Key Signs\n- Urticaria\n- Angioedema\n- Jaundice\n- Tachycardia\n- Hypotension\n- Fever\n\n### Atypical Presentations\n- Delayed hypersensitivity reactions\n- Serum sickness-like reactions\n- Drug-induced lupus erythematosus\n\n### Red Flags Requiring Immediate Action\n- Severe allergic reactions (anaphylaxis)\n- Signs of liver dysfunction (jaundice, elevated liver enzymes)\n- Severe skin reactions (Stevens-Johnson syndrome)\n- Cardiovascular instability\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Patient history including medication review\n- Physical examination\n- Laboratory tests (CBC, liver function tests, renal function tests)\n\n### Second-line Investigations\n- Skin tests for suspected allergic reactions\n- Drug levels for suspected toxicity\n- Imaging studies if indicated (e.g., chest X-ray for pulmonary reactions)\n\n### Specialist Tests\n- Referral to clinical pharmacologist or allergist for complex cases\n- Patch testing for delayed hypersensitivity\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ADRs is primarily clinical, based on the temporal relationship between drug administration and the onset of symptoms, along with exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Infections (e.g., drug fever)\n- Underlying disease exacerbation\n- Toxicological reactions\n- Psychogenic reactions\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate discontinuation of the offending drug\n- Supportive care (e.g., IV fluids, oxygen)\n- Antihistamines for mild allergic reactions\n\n#### Second-line Treatments\n- Corticosteroids for severe allergic reactions or inflammation\n- Epinephrine for anaphylaxis\n\n#### Emergency Procedures\n- Airway management in cases of anaphylaxis\n- Intravenous access for fluid resuscitation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of patients on high-risk medications (e.g., anticoagulants, antiepileptics)\n- Patient education on recognizing ADRs\n\n#### Second-line Treatments\n- Adjustment of medication regimen based on tolerance and response\n- Consideration of alternative therapies\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess for ADRs\n- Laboratory monitoring as indicated (e.g., liver function tests, renal function tests)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Diphenhydramine\n- **Mechanism of Action**: H1 receptor antagonist, reduces allergic symptoms\n- **Typical Dosing Range**: 25-50 mg orally every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, dizziness\n- **When to Use vs. Alternatives**: Use caution in elderly patients due to sedation.\n\n#### Epinephrine\n- **Mechanism of Action**: Alpha and beta-adrenergic agonist, counteracts anaphylaxis\n- **Typical Dosing Range**: 0.3-0.5 mg intramuscularly (0.3-0.5 mL of 1:1000 solution) every 5-15 minutes as needed\n- **Key Side Effects/Contraindications**: Tachycardia, hypertension, anxiety\n- **When to Use vs. Alternatives**: Administer in the mid-anterolateral thigh.\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid, reduces inflammation and immune response\n- **Typical Dosing Range**: 10-60 mg orally daily, depending on severity\n- **Key Side Effects/Contraindications**: Weight gain, hyperglycemia, osteoporosis\n- **When to Use vs. Alternatives**: Taper dosage to avoid withdrawal symptoms.\n\n### Procedures\n\n#### Airway management\n- **What it Involves**: Ensuring patency of the airway in cases of severe allergic reactions\n- **Indications**: Anaphylaxis or severe respiratory distress\n- **Key Risks/Complications**: Intubation risks, potential for airway trauma.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost ADRs are mild and resolve with discontinuation of the offending drug; however, severe reactions can lead to long-term complications or death.\n\n### Important Complications to Watch For\n- Anaphylaxis\n- Organ damage (e.g., liver failure, renal failure)\n- Prolonged hospitalization\n- Increased healthcare costs\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing ADRs, conducting thorough medication histories, and providing appropriate management and referrals as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe ADRs, immediate escalation to senior medical staff is required, especially in cases of anaphylaxis or significant organ dysfunction.\n\n### Key Safety Considerations\nAlways review a patient's medication history before prescribing new medications, educate patients on potential ADRs, and ensure proper documentation of any ADRs in the patient's medical record.\n",
+  "content": {
+    "overview": {
+      "definition": "Adverse Drug Reactions (ADRs) are harmful or unintended responses to medications that occur at normal doses used for prophylaxis, diagnosis, or therapy.",
+      "epidemiology": "ADRs are a significant cause of morbidity and mortality, accounting for approximately 5-10% of hospital admissions and 10-20% of in-hospital complications.",
+      "pathophysiology": "ADRs can result from various mechanisms including pharmacological effects, allergic reactions, idiosyncratic reactions, and drug interactions. They may involve dose-dependent effects or immune-mediated responses."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nausea",
+        "Vomiting",
+        "Rash",
+        "Dizziness",
+        "Fatigue",
+        "Shortness of breath",
+        "Anaphylaxis"
+      ],
+      "signs": [
+        "Urticaria",
+        "Angioedema",
+        "Jaundice",
+        "Tachycardia",
+        "Hypotension",
+        "Fever"
+      ],
+      "atypicalPresentations": [
+        "Delayed hypersensitivity reactions",
+        "Serum sickness-like reactions",
+        "Drug-induced lupus erythematosus"
+      ],
+      "redFlags": [
+        "Severe allergic reactions (anaphylaxis)",
+        "Signs of liver dysfunction (jaundice, elevated liver enzymes)",
+        "Severe skin reactions (Stevens-Johnson syndrome)",
+        "Cardiovascular instability"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Patient history including medication review",
+        "Physical examination",
+        "Laboratory tests (CBC, liver function tests, renal function tests)"
+      ],
+      "secondLine": [
+        "Skin tests for suspected allergic reactions",
+        "Drug levels for suspected toxicity",
+        "Imaging studies if indicated (e.g., chest X-ray for pulmonary reactions)"
+      ],
+      "specialistTests": [
+        "Referral to clinical pharmacologist or allergist for complex cases",
+        "Patch testing for delayed hypersensitivity"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ADRs is primarily clinical, based on the temporal relationship between drug administration and the onset of symptoms, along with exclusion of other causes.",
+      "differentials": [
+        "Infections (e.g., drug fever)",
+        "Underlying disease exacerbation",
+        "Toxicological reactions",
+        "Psychogenic reactions"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate discontinuation of the offending drug",
+          "Supportive care (e.g., IV fluids, oxygen)",
+          "Antihistamines for mild allergic reactions"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe allergic reactions or inflammation",
+          "Epinephrine for anaphylaxis"
+        ],
+        "procedures": [
+          "Airway management in cases of anaphylaxis",
+          "Intravenous access for fluid resuscitation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of patients on high-risk medications (e.g., anticoagulants, antiepileptics)",
+          "Patient education on recognizing ADRs"
+        ],
+        "secondLine": [
+          "Adjustment of medication regimen based on tolerance and response",
+          "Consideration of alternative therapies"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess for ADRs",
+          "Laboratory monitoring as indicated (e.g., liver function tests, renal function tests)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Diphenhydramine",
+          "mechanism": "H1 receptor antagonist, reduces allergic symptoms",
+          "dosing": "25-50 mg orally every 4-6 hours as needed",
+          "sideEffects": "Drowsiness, dry mouth, dizziness",
+          "notes": "Use caution in elderly patients due to sedation."
+        },
+        {
+          "name": "Epinephrine",
+          "mechanism": "Alpha and beta-adrenergic agonist, counteracts anaphylaxis",
+          "dosing": "0.3-0.5 mg intramuscularly (0.3-0.5 mL of 1:1000 solution) every 5-15 minutes as needed",
+          "sideEffects": "Tachycardia, hypertension, anxiety",
+          "notes": "Administer in the mid-anterolateral thigh."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid, reduces inflammation and immune response",
+          "dosing": "10-60 mg orally daily, depending on severity",
+          "sideEffects": "Weight gain, hyperglycemia, osteoporosis",
+          "notes": "Taper dosage to avoid withdrawal symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Airway management",
+          "description": "Ensuring patency of the airway in cases of severe allergic reactions",
+          "indications": "Anaphylaxis or severe respiratory distress",
+          "risks": "Intubation risks, potential for airway trauma."
+        }
+      ]
+    },
+    "prognosis": "Most ADRs are mild and resolve with discontinuation of the offending drug; however, severe reactions can lead to long-term complications or death.",
+    "complications": [
+      "Anaphylaxis",
+      "Organ damage (e.g., liver failure, renal failure)",
+      "Prolonged hospitalization",
+      "Increased healthcare costs"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing ADRs, conducting thorough medication histories, and providing appropriate management and referrals as needed.",
+    "escalation": "If a patient presents with severe ADRs, immediate escalation to senior medical staff is required, especially in cases of anaphylaxis or significant organ dysfunction.",
+    "keySafetyConsiderations": "Always review a patient's medication history before prescribing new medications, educate patients on potential ADRs, and ensure proper documentation of any ADRs in the patient's medical record."
+  }
+}

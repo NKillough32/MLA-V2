@@ -1,0 +1,122 @@
+{
+  "id": "subarachnoid_haemorrhage",
+  "name": "Subarachnoid haemorrhage",
+  "domains": [
+    "Neurology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:45:22.322737",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Subarachnoid haemorrhage: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSubarachnoid haemorrhage (SAH) is a medical condition characterized by bleeding into the subarachnoid space, which is the area between the brain and the tissues covering it. This bleeding can lead to increased intracranial pressure and can be life-threatening.\n\n### Epidemiology\nSAH has an incidence of approximately 6-8 cases per 100,000 people per year. It is more common in women than men and typically occurs in individuals aged 40-60 years. Risk factors include hypertension, smoking, and a family history of aneurysms.\n\n### Essential Pathophysiology\nSAH often results from the rupture of cerebral aneurysms or arteriovenous malformations (AVMs). The blood in the subarachnoid space irritates the meninges, leading to inflammation, vasospasm, and potential ischemia of brain tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden severe headache (often described as a 'thunderclap' headache)\n- Nausea and vomiting\n- Photophobia\n- Neck stiffness\n- Altered consciousness or confusion\n\n### Key Signs\n- Meningeal signs (e.g., Kernig's sign, Brudzinski's sign)\n- Focal neurological deficits\n- Altered level of consciousness\n- Signs of increased intracranial pressure (e.g., papilledema)\n\n### Atypical Presentations\n- Headache without other neurological signs\n- Seizures as a presenting symptom\n- Transient neurological deficits\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe headache\n- Neurological deterioration\n- Signs of meningeal irritation\n- Seizures in a previously healthy individual\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (non-contrast)\n\n### Second-line Investigations\n- Lumbar puncture (if CT is negative but SAH is still suspected)\n- MRI of the brain (if CT is inconclusive)\n\n### Specialist Tests\n- Cerebral angiography (to identify aneurysms or vascular malformations)\n- CT angiography (to visualize blood vessels)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of SAH is confirmed by the presence of blood in the subarachnoid space on CT or lumbar puncture. A positive xanthochromia (yellow discoloration of cerebrospinal fluid) in lumbar puncture indicates SAH if performed more than 12 hours after the headache onset.\n\n### Key Differential Diagnoses to Exclude\n- Intracerebral hemorrhage\n- Meningitis\n- Cerebral venous sinus thrombosis\n- Migraine\n- Cervical artery dissection\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate stabilization of the patient (airway, breathing, circulation)\n- Analgesia for headache\n- Nimodipine (calcium channel blocker) to prevent vasospasm\n\n#### Second-line Treatments\n- Surgical intervention (clipping or coiling of aneurysm) if indicated\n- Endovascular therapy\n\n#### Emergency Procedures\n- Lumbar puncture (for diagnosis if CT is negative)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Nimodipine for vasospasm prevention\n\n#### Second-line Treatments\n- Rehabilitation for neurological deficits\n\n#### Monitoring Requirements\n- Regular follow-up with neurology or neurosurgery for potential complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Nimodipine\n- **Mechanism of Action**: Calcium channel blocker that reduces vasospasm and improves cerebral blood flow.\n- **Typical Dosing Range**: 60 mg orally every 4 hours for 21 days.\n- **Key Side Effects/Contraindications**: Hypotension, headache, nausea, diarrhea.\n- **When to Use vs. Alternatives**: Start as soon as SAH is diagnosed.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: To confirm SAH if CT is negative, to measure opening pressure, and to analyze CSF for xanthochromia.\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of SAH varies; approximately 30-50% of patients die within the first month. Survivors may experience significant morbidity, including cognitive deficits and physical disabilities.\n\n### Important Complications to Watch For\n- Rebleeding\n- Cerebral vasospasm leading to ischemia\n- Hydrocephalus\n- Seizures\n- Neurological deficits\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of SAH, initiate appropriate investigations, provide initial management, and escalate care to senior medical staff or neurosurgery as needed.\n\n### When to Escalate to Senior/Specialist\nIf SAH is suspected, escalate to a senior doctor immediately. If the patient shows signs of neurological deterioration or requires urgent imaging, involve neurosurgery early.\n\n### Key Safety Considerations\nEnsure rapid assessment and management of patients with suspected SAH. Monitor vital signs closely, and be vigilant for signs of increased intracranial pressure or neurological deterioration.\n",
+  "content": {
+    "overview": {
+      "definition": "Subarachnoid haemorrhage (SAH) is a medical condition characterized by bleeding into the subarachnoid space, which is the area between the brain and the tissues covering it. This bleeding can lead to increased intracranial pressure and can be life-threatening.",
+      "epidemiology": "SAH has an incidence of approximately 6-8 cases per 100,000 people per year. It is more common in women than men and typically occurs in individuals aged 40-60 years. Risk factors include hypertension, smoking, and a family history of aneurysms.",
+      "pathophysiology": "SAH often results from the rupture of cerebral aneurysms or arteriovenous malformations (AVMs). The blood in the subarachnoid space irritates the meninges, leading to inflammation, vasospasm, and potential ischemia of brain tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden severe headache (often described as a 'thunderclap' headache)",
+        "Nausea and vomiting",
+        "Photophobia",
+        "Neck stiffness",
+        "Altered consciousness or confusion"
+      ],
+      "signs": [
+        "Meningeal signs (e.g., Kernig's sign, Brudzinski's sign)",
+        "Focal neurological deficits",
+        "Altered level of consciousness",
+        "Signs of increased intracranial pressure (e.g., papilledema)"
+      ],
+      "atypicalPresentations": [
+        "Headache without other neurological signs",
+        "Seizures as a presenting symptom",
+        "Transient neurological deficits"
+      ],
+      "redFlags": [
+        "Sudden onset of severe headache",
+        "Neurological deterioration",
+        "Signs of meningeal irritation",
+        "Seizures in a previously healthy individual"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (non-contrast)"
+      ],
+      "secondLine": [
+        "Lumbar puncture (if CT is negative but SAH is still suspected)",
+        "MRI of the brain (if CT is inconclusive)"
+      ],
+      "specialistTests": [
+        "Cerebral angiography (to identify aneurysms or vascular malformations)",
+        "CT angiography (to visualize blood vessels)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of SAH is confirmed by the presence of blood in the subarachnoid space on CT or lumbar puncture. A positive xanthochromia (yellow discoloration of cerebrospinal fluid) in lumbar puncture indicates SAH if performed more than 12 hours after the headache onset.",
+      "differentials": [
+        "Intracerebral hemorrhage",
+        "Meningitis",
+        "Cerebral venous sinus thrombosis",
+        "Migraine",
+        "Cervical artery dissection"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate stabilization of the patient (airway, breathing, circulation)",
+          "Analgesia for headache",
+          "Nimodipine (calcium channel blocker) to prevent vasospasm"
+        ],
+        "secondLine": [
+          "Surgical intervention (clipping or coiling of aneurysm) if indicated",
+          "Endovascular therapy"
+        ],
+        "procedures": [
+          "Lumbar puncture (for diagnosis if CT is negative)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Nimodipine for vasospasm prevention"
+        ],
+        "secondLine": [
+          "Rehabilitation for neurological deficits"
+        ],
+        "monitoring": [
+          "Regular follow-up with neurology or neurosurgery for potential complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Nimodipine",
+          "mechanism": "Calcium channel blocker that reduces vasospasm and improves cerebral blood flow.",
+          "dosing": "60 mg orally every 4 hours for 21 days.",
+          "sideEffects": "Hypotension, headache, nausea, diarrhea.",
+          "notes": "Start as soon as SAH is diagnosed."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "To confirm SAH if CT is negative, to measure opening pressure, and to analyze CSF for xanthochromia.",
+          "risks": "Headache, infection, bleeding, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of SAH varies; approximately 30-50% of patients die within the first month. Survivors may experience significant morbidity, including cognitive deficits and physical disabilities.",
+    "complications": [
+      "Rebleeding",
+      "Cerebral vasospasm leading to ischemia",
+      "Hydrocephalus",
+      "Seizures",
+      "Neurological deficits"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of SAH, initiate appropriate investigations, provide initial management, and escalate care to senior medical staff or neurosurgery as needed.",
+    "escalation": "If SAH is suspected, escalate to a senior doctor immediately. If the patient shows signs of neurological deterioration or requires urgent imaging, involve neurosurgery early.",
+    "keySafetyConsiderations": "Ensure rapid assessment and management of patients with suspected SAH. Monitor vital signs closely, and be vigilant for signs of increased intracranial pressure or neurological deterioration."
+  }
+}

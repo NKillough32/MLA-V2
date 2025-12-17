@@ -1,0 +1,124 @@
+{
+  "id": "radial_head_fracture",
+  "name": "Radial head fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:28:56.821528",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Radial head fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA radial head fracture is a common injury that occurs at the elbow, specifically involving the radial head, which is the top part of the radius bone that forms part of the elbow joint.\n\n### Epidemiology\nRadial head fractures account for approximately 20% of all elbow fractures and are most common in adults aged 30-50 years, often resulting from falls onto an outstretched hand.\n\n### Essential Pathophysiology\nThe fracture typically occurs due to a fall on an outstretched arm, leading to axial loading and a bending moment at the elbow. This results in a fracture of the radial head, which can be classified as non-displaced or displaced.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain around the elbow\n- Swelling and tenderness at the lateral aspect of the elbow\n- Limited range of motion, especially in forearm rotation\n\n### Key Signs\n- Swelling and bruising around the elbow\n- Tenderness over the radial head\n- Pain on forearm rotation (pronation and supination)\n\n### Atypical Presentations\n- Elbow stiffness without significant pain\n- Delayed presentation with chronic pain and limited movement\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (numbness, tingling, or weakness in the hand)\n- Severe deformity of the elbow\n- Inability to move the elbow or forearm\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the elbow (AP and lateral views)\n\n### Second-line Investigations\n- CT scan if the fracture is complex or if there is suspicion of associated injuries\n\n### Specialist Tests\n- MRI may be considered for soft tissue injuries or occult fractures\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical examination and confirmed by X-ray findings showing a fracture of the radial head.\n\n### Key Differential Diagnoses to Exclude\n- Olecranon fracture\n- Distal humerus fracture\n- Lateral collateral ligament injury\n- Elbow dislocation\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization with a splint or sling\n\n#### Second-line Treatments\n- Referral to orthopaedics for assessment of fracture displacement\n\n#### Emergency Procedures\n- Closed reduction if there is a dislocation\n- Surgical fixation or radial head excision for displaced fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to improve range of motion and strength\n\n#### Second-line Treatments\n- Surgical intervention if there is persistent pain or functional impairment\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing and function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n### Procedures\n\n#### Closed reduction\n- **What it Involves**: Realignment of the fractured radial head without surgical incision.\n- **Indications**: Displaced fractures or associated dislocations.\n- **Key Risks/Complications**: Re-displacement, neurovascular injury.\n\n#### Radial head excision\n- **What it Involves**: Surgical removal of the fractured radial head.\n- **Indications**: Non-repairable fractures or significant displacement.\n- **Key Risks/Complications**: Elbow instability, post-operative stiffness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost radial head fractures heal well with appropriate management. Non-displaced fractures typically have a good prognosis, while displaced fractures may lead to complications such as stiffness or instability if not managed properly.\n\n### Important Complications to Watch For\n- Elbow stiffness\n- Post-traumatic arthritis\n- Instability of the elbow joint\n- Non-union or malunion of the fracture\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide analgesia, and refer to orthopaedics for further management. They should also educate patients about the importance of follow-up and rehabilitation.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurovascular compromise or severe pain not controlled by analgesia, escalate to senior medical staff or orthopaedic team immediately.\n\n### Key Safety Considerations\nEnsure proper immobilization of the elbow to prevent further injury. Monitor for signs of compartment syndrome or neurovascular compromise, and ensure timely referral to orthopaedics.\n",
+  "content": {
+    "overview": {
+      "definition": "A radial head fracture is a common injury that occurs at the elbow, specifically involving the radial head, which is the top part of the radius bone that forms part of the elbow joint.",
+      "epidemiology": "Radial head fractures account for approximately 20% of all elbow fractures and are most common in adults aged 30-50 years, often resulting from falls onto an outstretched hand.",
+      "pathophysiology": "The fracture typically occurs due to a fall on an outstretched arm, leading to axial loading and a bending moment at the elbow. This results in a fracture of the radial head, which can be classified as non-displaced or displaced."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain around the elbow",
+        "Swelling and tenderness at the lateral aspect of the elbow",
+        "Limited range of motion, especially in forearm rotation"
+      ],
+      "signs": [
+        "Swelling and bruising around the elbow",
+        "Tenderness over the radial head",
+        "Pain on forearm rotation (pronation and supination)"
+      ],
+      "atypicalPresentations": [
+        "Elbow stiffness without significant pain",
+        "Delayed presentation with chronic pain and limited movement"
+      ],
+      "redFlags": [
+        "Neurovascular compromise (numbness, tingling, or weakness in the hand)",
+        "Severe deformity of the elbow",
+        "Inability to move the elbow or forearm"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the elbow (AP and lateral views)"
+      ],
+      "secondLine": [
+        "CT scan if the fracture is complex or if there is suspicion of associated injuries"
+      ],
+      "specialistTests": [
+        "MRI may be considered for soft tissue injuries or occult fractures"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical examination and confirmed by X-ray findings showing a fracture of the radial head.",
+      "differentials": [
+        "Olecranon fracture",
+        "Distal humerus fracture",
+        "Lateral collateral ligament injury",
+        "Elbow dislocation"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization with a splint or sling"
+        ],
+        "secondLine": [
+          "Referral to orthopaedics for assessment of fracture displacement"
+        ],
+        "procedures": [
+          "Closed reduction if there is a dislocation",
+          "Surgical fixation or radial head excision for displaced fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to improve range of motion and strength"
+        ],
+        "secondLine": [
+          "Surgical intervention if there is persistent pain or functional impairment"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing and function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Useful for pain and inflammation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction",
+          "description": "Realignment of the fractured radial head without surgical incision.",
+          "indications": "Displaced fractures or associated dislocations.",
+          "risks": "Re-displacement, neurovascular injury."
+        },
+        {
+          "name": "Radial head excision",
+          "description": "Surgical removal of the fractured radial head.",
+          "indications": "Non-repairable fractures or significant displacement.",
+          "risks": "Elbow instability, post-operative stiffness."
+        }
+      ]
+    },
+    "prognosis": "Most radial head fractures heal well with appropriate management. Non-displaced fractures typically have a good prognosis, while displaced fractures may lead to complications such as stiffness or instability if not managed properly.",
+    "complications": [
+      "Elbow stiffness",
+      "Post-traumatic arthritis",
+      "Instability of the elbow joint",
+      "Non-union or malunion of the fracture"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide analgesia, and refer to orthopaedics for further management. They should also educate patients about the importance of follow-up and rehabilitation.",
+    "escalation": "If there are signs of neurovascular compromise or severe pain not controlled by analgesia, escalate to senior medical staff or orthopaedic team immediately.",
+    "keySafetyConsiderations": "Ensure proper immobilization of the elbow to prevent further injury. Monitor for signs of compartment syndrome or neurovascular compromise, and ensure timely referral to orthopaedics."
+  }
+}

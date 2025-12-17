@@ -1,0 +1,130 @@
+{
+  "id": "laryngitis",
+  "name": "Laryngitis",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:38:11.843388",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Laryngitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLaryngitis is the inflammation of the larynx (voice box), often resulting in hoarseness or loss of voice. It can be acute or chronic, with acute laryngitis typically caused by viral infections, while chronic laryngitis may result from irritants or underlying medical conditions.\n\n### Epidemiology\nLaryngitis is common, particularly in adults and children during the winter months when viral infections are prevalent. It can affect anyone but is more frequent in individuals with frequent voice use, such as teachers and singers.\n\n### Essential Pathophysiology\nThe inflammation of the larynx leads to swelling and irritation of the vocal cords, which affects their ability to vibrate properly, resulting in changes to the voice. In acute cases, this is often due to viral infections, while chronic cases may be due to prolonged exposure to irritants (smoking, acid reflux) or chronic infections.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hoarseness or loss of voice\n- Sore throat\n- Dry cough\n- Difficulty swallowing\n- Fever (in some cases)\n\n### Key Signs\n- Redness and swelling of the larynx on examination\n- Stridor (in severe cases)\n- Fever (if infectious)\n\n### Atypical Presentations\n- Persistent hoarseness lasting more than 2 weeks\n- Associated with significant respiratory distress\n\n### Red Flags Requiring Immediate Action\n- Difficulty breathing or stridor\n- Severe throat pain\n- Persistent hoarseness beyond 2 weeks\n- History of smoking or alcohol use\n- Presence of a neck mass\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Laryngoscopy (if hoarseness persists beyond 2 weeks)\n\n### Second-line Investigations\n- Throat swab for culture (if bacterial infection suspected)\n- Complete blood count (CBC) to check for infection\n\n### Specialist Tests\n- CT scan of the neck (if malignancy is suspected)\n- Referral to ENT specialist for further evaluation\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical based on history and examination findings. Persistent hoarseness beyond 2 weeks warrants further investigation to rule out other conditions.\n\n### Key Differential Diagnoses to Exclude\n- Viral pharyngitis\n- Bacterial laryngitis\n- Allergic laryngitis\n- Laryngeal cancer\n- Reflux laryngitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Voice rest\n- Hydration (increased fluid intake)\n- Humidified air\n\n#### Second-line Treatments\n- Topical anesthetics (e.g., lidocaine spray) for symptomatic relief\n- Corticosteroids (if significant inflammation is present)\n\n#### Emergency Procedures\n- Laryngeal suctioning (in severe cases with airway obstruction)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Avoidance of irritants (smoking cessation, avoiding allergens)\n- Voice therapy with a speech therapist\n\n#### Second-line Treatments\n- Proton pump inhibitors (if reflux is suspected)\n- Corticosteroids (if inflammation persists)\n\n#### Monitoring Requirements\n- Regular follow-up with ENT for persistent symptoms\n- Voice assessment by a speech therapist\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation\n- **Typical Dosing Range**: 30-60 mg orally once daily for 5-7 days\n- **Key Side Effects/Contraindications**: Increased appetite, weight gain, mood changes, gastrointestinal upset\n- **When to Use vs. Alternatives**: Use with caution in patients with diabetes or hypertension.\n\n#### Lidocaine\n- **Mechanism of Action**: Local anesthetic that numbs the throat\n- **Typical Dosing Range**: Spray 2% solution as needed, not exceeding 4 doses per day\n- **Key Side Effects/Contraindications**: Numbness, tingling, allergic reactions\n- **When to Use vs. Alternatives**: Avoid in patients with known allergies to local anesthetics.\n\n### Procedures\n\n#### Laryngoscopy\n- **What it Involves**: A procedure to visualize the larynx using a flexible or rigid scope\n- **Indications**: Persistent hoarseness, suspected malignancy, or airway obstruction\n- **Key Risks/Complications**: Bleeding, infection, airway injury, discomfort during the procedure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of acute laryngitis resolve within a week with appropriate management. Chronic laryngitis may require ongoing management and can lead to complications if not addressed.\n\n### Important Complications to Watch For\n- Chronic hoarseness\n- Airway obstruction (in severe cases)\n- Development of vocal cord nodules or polyps\n- Increased risk of laryngeal cancer in chronic cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide symptomatic management, and refer to ENT specialists for persistent or severe cases. They should educate patients on voice rest and avoidance of irritants.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT if hoarseness persists beyond 2 weeks, if there are red flag symptoms, or if there is significant respiratory distress.\n\n### Key Safety Considerations\nMonitor for signs of airway obstruction, especially in acute cases. Ensure proper hydration and voice rest to prevent further injury to the vocal cords.\n",
+  "content": {
+    "overview": {
+      "definition": "Laryngitis is the inflammation of the larynx (voice box), often resulting in hoarseness or loss of voice. It can be acute or chronic, with acute laryngitis typically caused by viral infections, while chronic laryngitis may result from irritants or underlying medical conditions.",
+      "epidemiology": "Laryngitis is common, particularly in adults and children during the winter months when viral infections are prevalent. It can affect anyone but is more frequent in individuals with frequent voice use, such as teachers and singers.",
+      "pathophysiology": "The inflammation of the larynx leads to swelling and irritation of the vocal cords, which affects their ability to vibrate properly, resulting in changes to the voice. In acute cases, this is often due to viral infections, while chronic cases may be due to prolonged exposure to irritants (smoking, acid reflux) or chronic infections."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hoarseness or loss of voice",
+        "Sore throat",
+        "Dry cough",
+        "Difficulty swallowing",
+        "Fever (in some cases)"
+      ],
+      "signs": [
+        "Redness and swelling of the larynx on examination",
+        "Stridor (in severe cases)",
+        "Fever (if infectious)"
+      ],
+      "atypicalPresentations": [
+        "Persistent hoarseness lasting more than 2 weeks",
+        "Associated with significant respiratory distress"
+      ],
+      "redFlags": [
+        "Difficulty breathing or stridor",
+        "Severe throat pain",
+        "Persistent hoarseness beyond 2 weeks",
+        "History of smoking or alcohol use",
+        "Presence of a neck mass"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Laryngoscopy (if hoarseness persists beyond 2 weeks)"
+      ],
+      "secondLine": [
+        "Throat swab for culture (if bacterial infection suspected)",
+        "Complete blood count (CBC) to check for infection"
+      ],
+      "specialistTests": [
+        "CT scan of the neck (if malignancy is suspected)",
+        "Referral to ENT specialist for further evaluation"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical based on history and examination findings. Persistent hoarseness beyond 2 weeks warrants further investigation to rule out other conditions.",
+      "differentials": [
+        "Viral pharyngitis",
+        "Bacterial laryngitis",
+        "Allergic laryngitis",
+        "Laryngeal cancer",
+        "Reflux laryngitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Voice rest",
+          "Hydration (increased fluid intake)",
+          "Humidified air"
+        ],
+        "secondLine": [
+          "Topical anesthetics (e.g., lidocaine spray) for symptomatic relief",
+          "Corticosteroids (if significant inflammation is present)"
+        ],
+        "procedures": [
+          "Laryngeal suctioning (in severe cases with airway obstruction)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Avoidance of irritants (smoking cessation, avoiding allergens)",
+          "Voice therapy with a speech therapist"
+        ],
+        "secondLine": [
+          "Proton pump inhibitors (if reflux is suspected)",
+          "Corticosteroids (if inflammation persists)"
+        ],
+        "monitoring": [
+          "Regular follow-up with ENT for persistent symptoms",
+          "Voice assessment by a speech therapist"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation",
+          "dosing": "30-60 mg orally once daily for 5-7 days",
+          "sideEffects": "Increased appetite, weight gain, mood changes, gastrointestinal upset",
+          "notes": "Use with caution in patients with diabetes or hypertension."
+        },
+        {
+          "name": "Lidocaine",
+          "mechanism": "Local anesthetic that numbs the throat",
+          "dosing": "Spray 2% solution as needed, not exceeding 4 doses per day",
+          "sideEffects": "Numbness, tingling, allergic reactions",
+          "notes": "Avoid in patients with known allergies to local anesthetics."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laryngoscopy",
+          "description": "A procedure to visualize the larynx using a flexible or rigid scope",
+          "indications": "Persistent hoarseness, suspected malignancy, or airway obstruction",
+          "risks": "Bleeding, infection, airway injury, discomfort during the procedure."
+        }
+      ]
+    },
+    "prognosis": "Most cases of acute laryngitis resolve within a week with appropriate management. Chronic laryngitis may require ongoing management and can lead to complications if not addressed.",
+    "complications": [
+      "Chronic hoarseness",
+      "Airway obstruction (in severe cases)",
+      "Development of vocal cord nodules or polyps",
+      "Increased risk of laryngeal cancer in chronic cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide symptomatic management, and refer to ENT specialists for persistent or severe cases. They should educate patients on voice rest and avoidance of irritants.",
+    "escalation": "Refer to ENT if hoarseness persists beyond 2 weeks, if there are red flag symptoms, or if there is significant respiratory distress.",
+    "keySafetyConsiderations": "Monitor for signs of airway obstruction, especially in acute cases. Ensure proper hydration and voice rest to prevent further injury to the vocal cords."
+  }
+}

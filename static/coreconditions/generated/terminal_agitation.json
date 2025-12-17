@@ -1,0 +1,133 @@
+{
+  "id": "terminal_agitation",
+  "name": "Terminal agitation",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T21:00:22.594663",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Terminal agitation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTerminal agitation is a state of increased restlessness, confusion, and distress that occurs in patients nearing the end of life, often characterized by physical and emotional turmoil.\n\n### Epidemiology\nIt is commonly observed in patients with advanced cancer, neurological diseases, and other terminal illnesses, affecting a significant proportion of those in palliative care settings.\n\n### Essential Pathophysiology\nThe exact pathophysiology is multifactorial, involving metabolic disturbances, pain, anxiety, delirium, and the effects of medications. Neurotransmitter imbalances, particularly involving dopamine and serotonin, may also play a role.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Restlessness\n- Increased agitation\n- Confusion\n- Hallucinations\n- Anxiety\n- Emotional distress\n\n### Key Signs\n- Increased motor activity\n- Inability to settle or relax\n- Verbal outbursts\n- Facial grimacing\n- Increased heart rate\n- Sweating\n\n### Atypical Presentations\n- Withdrawal from family or caregivers\n- Unusual quietness or lethargy in some cases\n\n### Red Flags Requiring Immediate Action\n- Severe agitation leading to potential harm to self or others\n- Persistent confusion or disorientation\n- Signs of severe pain or discomfort\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of mental status\n- Review of current medications\n- Assessment of pain and other symptoms\n\n### Second-line Investigations\n- Laboratory tests to rule out metabolic causes (e.g., electrolytes, renal function)\n- Imaging studies if neurological causes are suspected\n\n### Specialist Tests\n- Consultation with palliative care specialists or psychiatrists for complex cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of agitation in a patient with a terminal illness, alongside the exclusion of reversible causes.\n\n### Key Differential Diagnoses to Exclude\n- Delirium\n- Pain crisis\n- Medication side effects (e.g., opioids)\n- Sepsis\n- Metabolic disturbances (e.g., hypercalcemia)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and environmental modifications (quiet room, familiar faces)\n- Benzodiazepines (e.g., Lorazepam) for acute agitation\n\n#### Second-line Treatments\n- Antipsychotics (e.g., Haloperidol) if benzodiazepines are ineffective\n\n#### Emergency Procedures\n- Non-pharmacological interventions (e.g., music therapy, massage)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular assessment and adjustment of medications\n- Psychosocial support for patients and families\n\n#### Second-line Treatments\n- Consideration of long-acting medications for persistent agitation\n\n#### Monitoring Requirements\n- Regular review of symptoms and medication effects, including side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lorazepam\n- **Mechanism of Action**: Benzodiazepine that enhances GABA activity, providing anxiolytic and sedative effects.\n- **Typical Dosing Range**: 0.5-2 mg orally or sublingually, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Sedation, dizziness, confusion, respiratory depression in high doses.\n- **When to Use vs. Alternatives**: Use with caution in elderly patients due to increased sensitivity.\n\n#### Haloperidol\n- **Mechanism of Action**: Antipsychotic that blocks dopamine receptors, reducing agitation and psychotic symptoms.\n- **Typical Dosing Range**: 0.5-5 mg orally or subcutaneously, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Extrapyramidal symptoms, sedation, QT prolongation.\n- **When to Use vs. Alternatives**: Consider lower doses in frail patients.\n\n### Procedures\n\n#### Environmental modification\n- **What it Involves**: Creating a calm and familiar environment to reduce agitation.\n- **Indications**: All patients experiencing terminal agitation.\n- **Key Risks/Complications**: None, but may require staff support to implement.\n\n#### Music therapy\n- **What it Involves**: Using music to soothe and distract the patient from agitation.\n- **Indications**: Patients who respond positively to auditory stimuli.\n- **Key Risks/Complications**: None, but effectiveness may vary.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of terminal agitation is generally poor, as it often indicates a decline in overall condition. However, with appropriate management, symptoms can be alleviated, improving the quality of life in the remaining days.\n\n### Important Complications to Watch For\n- Increased distress for the patient and family\n- Potential for self-harm or harm to others\n- Inadequate symptom control leading to suffering\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing signs of terminal agitation, conducting thorough assessments, and implementing initial management strategies. They should also communicate effectively with the palliative care team and family members.\n\n### When to Escalate to Senior/Specialist\nIf symptoms are severe or unresponsive to initial management, escalate to a palliative care specialist or senior clinician for further evaluation and management.\n\n### Key Safety Considerations\nEnsure patient safety by minimizing environmental stressors, monitoring for side effects of medications, and providing emotional support to both the patient and family.\n",
+  "content": {
+    "overview": {
+      "definition": "Terminal agitation is a state of increased restlessness, confusion, and distress that occurs in patients nearing the end of life, often characterized by physical and emotional turmoil.",
+      "epidemiology": "It is commonly observed in patients with advanced cancer, neurological diseases, and other terminal illnesses, affecting a significant proportion of those in palliative care settings.",
+      "pathophysiology": "The exact pathophysiology is multifactorial, involving metabolic disturbances, pain, anxiety, delirium, and the effects of medications. Neurotransmitter imbalances, particularly involving dopamine and serotonin, may also play a role."
+    },
+    "recognition": {
+      "symptoms": [
+        "Restlessness",
+        "Increased agitation",
+        "Confusion",
+        "Hallucinations",
+        "Anxiety",
+        "Emotional distress"
+      ],
+      "signs": [
+        "Increased motor activity",
+        "Inability to settle or relax",
+        "Verbal outbursts",
+        "Facial grimacing",
+        "Increased heart rate",
+        "Sweating"
+      ],
+      "atypicalPresentations": [
+        "Withdrawal from family or caregivers",
+        "Unusual quietness or lethargy in some cases"
+      ],
+      "redFlags": [
+        "Severe agitation leading to potential harm to self or others",
+        "Persistent confusion or disorientation",
+        "Signs of severe pain or discomfort"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of mental status",
+        "Review of current medications",
+        "Assessment of pain and other symptoms"
+      ],
+      "secondLine": [
+        "Laboratory tests to rule out metabolic causes (e.g., electrolytes, renal function)",
+        "Imaging studies if neurological causes are suspected"
+      ],
+      "specialistTests": [
+        "Consultation with palliative care specialists or psychiatrists for complex cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of agitation in a patient with a terminal illness, alongside the exclusion of reversible causes.",
+      "differentials": [
+        "Delirium",
+        "Pain crisis",
+        "Medication side effects (e.g., opioids)",
+        "Sepsis",
+        "Metabolic disturbances (e.g., hypercalcemia)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and environmental modifications (quiet room, familiar faces)",
+          "Benzodiazepines (e.g., Lorazepam) for acute agitation"
+        ],
+        "secondLine": [
+          "Antipsychotics (e.g., Haloperidol) if benzodiazepines are ineffective"
+        ],
+        "procedures": [
+          "Non-pharmacological interventions (e.g., music therapy, massage)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular assessment and adjustment of medications",
+          "Psychosocial support for patients and families"
+        ],
+        "secondLine": [
+          "Consideration of long-acting medications for persistent agitation"
+        ],
+        "monitoring": [
+          "Regular review of symptoms and medication effects, including side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lorazepam",
+          "mechanism": "Benzodiazepine that enhances GABA activity, providing anxiolytic and sedative effects.",
+          "dosing": "0.5-2 mg orally or sublingually, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Sedation, dizziness, confusion, respiratory depression in high doses.",
+          "notes": "Use with caution in elderly patients due to increased sensitivity."
+        },
+        {
+          "name": "Haloperidol",
+          "mechanism": "Antipsychotic that blocks dopamine receptors, reducing agitation and psychotic symptoms.",
+          "dosing": "0.5-5 mg orally or subcutaneously, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Extrapyramidal symptoms, sedation, QT prolongation.",
+          "notes": "Consider lower doses in frail patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Environmental modification",
+          "description": "Creating a calm and familiar environment to reduce agitation.",
+          "indications": "All patients experiencing terminal agitation.",
+          "risks": "None, but may require staff support to implement."
+        },
+        {
+          "name": "Music therapy",
+          "description": "Using music to soothe and distract the patient from agitation.",
+          "indications": "Patients who respond positively to auditory stimuli.",
+          "risks": "None, but effectiveness may vary."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of terminal agitation is generally poor, as it often indicates a decline in overall condition. However, with appropriate management, symptoms can be alleviated, improving the quality of life in the remaining days.",
+    "complications": [
+      "Increased distress for the patient and family",
+      "Potential for self-harm or harm to others",
+      "Inadequate symptom control leading to suffering"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing signs of terminal agitation, conducting thorough assessments, and implementing initial management strategies. They should also communicate effectively with the palliative care team and family members.",
+    "escalation": "If symptoms are severe or unresponsive to initial management, escalate to a palliative care specialist or senior clinician for further evaluation and management.",
+    "keySafetyConsiderations": "Ensure patient safety by minimizing environmental stressors, monitoring for side effects of medications, and providing emotional support to both the patient and family."
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "anaemiain_pregnancy",
+  "name": "Anaemiain pregnancy",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T20:00:14.085145",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anaemiain pregnancy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnaemia in pregnancy is defined as a decrease in the number of red blood cells (RBCs) or hemoglobin concentration below the normal range for pregnant women, typically <11 g/dL in the first and third trimesters and <10.5 g/dL in the second trimester.\n\n### Epidemiology\nAnaemia affects approximately 15-25% of pregnant women globally, with higher prevalence in developing countries due to nutritional deficiencies and parasitic infections.\n\n### Essential Pathophysiology\nDuring pregnancy, plasma volume increases significantly, leading to hemodilution. This can mask underlying iron deficiency or other causes of anaemia. The increased demand for iron and other nutrients for fetal development can lead to deficiencies, particularly in the second and third trimesters.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath\n- Dizziness or lightheadedness\n- Palpitations\n\n### Key Signs\n- Pallor of the conjunctiva\n- Tachycardia\n- Low blood pressure\n- Systolic murmur due to increased blood flow\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Severe fatigue without significant anaemia\n- Symptoms of heart failure in severe cases\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Signs of heart failure\n- Severe pallor\n- Syncope or near-syncope\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Serum ferritin\n- Peripheral blood smear\n\n### Second-line Investigations\n- Reticulocyte count\n- Serum iron studies (iron, TIBC, transferrin saturation)\n- Vitamin B12 and folate levels\n\n### Specialist Tests\n- Bone marrow biopsy (rarely needed)\n- Hemoglobin electrophoresis (for thalassemia or sickle cell disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on hemoglobin levels, with <11 g/dL indicating anaemia. Additional tests to determine the cause are essential.\n\n### Key Differential Diagnoses to Exclude\n- Iron deficiency anaemia\n- Folate deficiency anaemia\n- Vitamin B12 deficiency anaemia\n- Thalassemia\n- Sickle cell disease\n- Aplastic anaemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Iron supplementation (oral or IV) depending on severity\n- Folic acid supplementation\n\n#### Second-line Treatments\n- Blood transfusion in severe cases (Hb <7 g/dL or symptomatic)\n\n#### Emergency Procedures\n- IV iron infusion for severe iron deficiency anaemia\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral iron supplements (ferrous sulfate 325 mg daily)\n- Folic acid 400-800 mcg daily\n\n#### Second-line Treatments\n- IV iron therapy if oral iron is not tolerated or ineffective\n\n#### Monitoring Requirements\n- Regular CBC to monitor hemoglobin levels and response to treatment\n- Monitor for side effects of iron supplementation\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ferrous sulfate\n- **Mechanism of Action**: Iron supplement that replenishes iron stores and increases hemoglobin production.\n- **Typical Dosing Range**: 325 mg orally once daily or as directed.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, constipation, dark stools.\n- **When to Use vs. Alternatives**: Take on an empty stomach for better absorption; may need to adjust dose based on tolerance.\n\n#### Folic acid\n- **Mechanism of Action**: Vitamin necessary for DNA synthesis and red blood cell production.\n- **Typical Dosing Range**: 400-800 mcg orally daily.\n- **Key Side Effects/Contraindications**: Generally well tolerated; high doses may mask B12 deficiency.\n- **When to Use vs. Alternatives**: Essential for fetal neural tube development.\n\n#### Iron sucrose\n- **Mechanism of Action**: IV iron preparation for rapid replenishment of iron stores.\n- **Typical Dosing Range**: 100-200 mg IV over 2-5 minutes, repeated as necessary.\n- **Key Side Effects/Contraindications**: Hypotension, allergic reactions, infusion-related reactions.\n- **When to Use vs. Alternatives**: Used in cases of severe anaemia or when oral iron is ineffective.\n\n### Procedures\n\n#### IV iron infusion\n- **What it Involves**: Administration of iron intravenously to rapidly replenish iron stores.\n- **Indications**: Severe iron deficiency anaemia, intolerance to oral iron, or when rapid correction is needed.\n- **Key Risks/Complications**: Allergic reactions, hypotension, infusion reactions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, the prognosis for anaemia in pregnancy is generally good. However, untreated severe anaemia can lead to complications such as preterm birth, low birth weight, and increased maternal morbidity.\n\n### Important Complications to Watch For\n- Preterm birth\n- Low birth weight\n- Increased risk of postpartum haemorrhage\n- Maternal fatigue and decreased quality of life\n- Increased risk of infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, initiate treatment, and refer to obstetricians or hematologists as needed. They should also educate patients on dietary sources of iron and the importance of adherence to supplementation.\n\n### When to Escalate to Senior/Specialist\nRefer to obstetrician for severe anaemia (Hb <7 g/dL), symptomatic anaemia, or if there is no response to initial treatment within 4 weeks.\n\n### Key Safety Considerations\nMonitor for signs of anaphylaxis during IV iron administration, ensure appropriate follow-up for patients on iron supplementation, and educate patients about potential side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Anaemia in pregnancy is defined as a decrease in the number of red blood cells (RBCs) or hemoglobin concentration below the normal range for pregnant women, typically <11 g/dL in the first and third trimesters and <10.5 g/dL in the second trimester.",
+      "epidemiology": "Anaemia affects approximately 15-25% of pregnant women globally, with higher prevalence in developing countries due to nutritional deficiencies and parasitic infections.",
+      "pathophysiology": "During pregnancy, plasma volume increases significantly, leading to hemodilution. This can mask underlying iron deficiency or other causes of anaemia. The increased demand for iron and other nutrients for fetal development can lead to deficiencies, particularly in the second and third trimesters."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath",
+        "Dizziness or lightheadedness",
+        "Palpitations"
+      ],
+      "signs": [
+        "Pallor of the conjunctiva",
+        "Tachycardia",
+        "Low blood pressure",
+        "Systolic murmur due to increased blood flow"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Severe fatigue without significant anaemia",
+        "Symptoms of heart failure in severe cases"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Signs of heart failure",
+        "Severe pallor",
+        "Syncope or near-syncope"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Serum ferritin",
+        "Peripheral blood smear"
+      ],
+      "secondLine": [
+        "Reticulocyte count",
+        "Serum iron studies (iron, TIBC, transferrin saturation)",
+        "Vitamin B12 and folate levels"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy (rarely needed)",
+        "Hemoglobin electrophoresis (for thalassemia or sickle cell disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on hemoglobin levels, with <11 g/dL indicating anaemia. Additional tests to determine the cause are essential.",
+      "differentials": [
+        "Iron deficiency anaemia",
+        "Folate deficiency anaemia",
+        "Vitamin B12 deficiency anaemia",
+        "Thalassemia",
+        "Sickle cell disease",
+        "Aplastic anaemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Iron supplementation (oral or IV) depending on severity",
+          "Folic acid supplementation"
+        ],
+        "secondLine": [
+          "Blood transfusion in severe cases (Hb <7 g/dL or symptomatic)"
+        ],
+        "procedures": [
+          "IV iron infusion for severe iron deficiency anaemia"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral iron supplements (ferrous sulfate 325 mg daily)",
+          "Folic acid 400-800 mcg daily"
+        ],
+        "secondLine": [
+          "IV iron therapy if oral iron is not tolerated or ineffective"
+        ],
+        "monitoring": [
+          "Regular CBC to monitor hemoglobin levels and response to treatment",
+          "Monitor for side effects of iron supplementation"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ferrous sulfate",
+          "mechanism": "Iron supplement that replenishes iron stores and increases hemoglobin production.",
+          "dosing": "325 mg orally once daily or as directed.",
+          "sideEffects": "Gastrointestinal upset, constipation, dark stools.",
+          "notes": "Take on an empty stomach for better absorption; may need to adjust dose based on tolerance."
+        },
+        {
+          "name": "Folic acid",
+          "mechanism": "Vitamin necessary for DNA synthesis and red blood cell production.",
+          "dosing": "400-800 mcg orally daily.",
+          "sideEffects": "Generally well tolerated; high doses may mask B12 deficiency.",
+          "notes": "Essential for fetal neural tube development."
+        },
+        {
+          "name": "Iron sucrose",
+          "mechanism": "IV iron preparation for rapid replenishment of iron stores.",
+          "dosing": "100-200 mg IV over 2-5 minutes, repeated as necessary.",
+          "sideEffects": "Hypotension, allergic reactions, infusion-related reactions.",
+          "notes": "Used in cases of severe anaemia or when oral iron is ineffective."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "IV iron infusion",
+          "description": "Administration of iron intravenously to rapidly replenish iron stores.",
+          "indications": "Severe iron deficiency anaemia, intolerance to oral iron, or when rapid correction is needed.",
+          "risks": "Allergic reactions, hypotension, infusion reactions."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, the prognosis for anaemia in pregnancy is generally good. However, untreated severe anaemia can lead to complications such as preterm birth, low birth weight, and increased maternal morbidity.",
+    "complications": [
+      "Preterm birth",
+      "Low birth weight",
+      "Increased risk of postpartum haemorrhage",
+      "Maternal fatigue and decreased quality of life",
+      "Increased risk of infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, initiate treatment, and refer to obstetricians or hematologists as needed. They should also educate patients on dietary sources of iron and the importance of adherence to supplementation.",
+    "escalation": "Refer to obstetrician for severe anaemia (Hb <7 g/dL), symptomatic anaemia, or if there is no response to initial treatment within 4 weeks.",
+    "keySafetyConsiderations": "Monitor for signs of anaphylaxis during IV iron administration, ensure appropriate follow-up for patients on iron supplementation, and educate patients about potential side effects."
+  }
+}

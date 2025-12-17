@@ -1,0 +1,118 @@
+{
+  "id": "central_retinal_artery_occlusion",
+  "name": "Central retinal artery occlusion",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:42:39.548125",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Central retinal artery occlusion: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCentral retinal artery occlusion (CRAO) is a sudden loss of vision due to obstruction of the central retinal artery, typically caused by an embolus or thrombus.\n\n### Epidemiology\nCRAO is relatively rare, with an incidence of approximately 1.5 to 2.0 cases per 100,000 people per year. It is more common in older adults, particularly those with cardiovascular risk factors.\n\n### Essential Pathophysiology\nCRAO occurs when the central retinal artery, which supplies blood to the retina, becomes occluded. This leads to ischemia and subsequent retinal cell death, particularly affecting the inner retinal layers.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden, painless loss of vision in one eye\n- Visual field defects (e.g., a central scotoma)\n\n### Key Signs\n- Pale retina with a characteristic 'cherry-red spot' at the fovea on fundoscopic examination\n- Retinal edema and cotton wool spots may be present\n\n### Atypical Presentations\n- Transient vision loss (amaurosis fugax) prior to complete occlusion\n- Bilateral CRAO, which is rare and may indicate systemic disease\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of vision loss\n- Presence of risk factors such as hypertension, diabetes, or atrial fibrillation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fundoscopy to assess retinal appearance\n- Visual acuity testing\n\n### Second-line Investigations\n- Fluorescein angiography to evaluate retinal perfusion\n- Optical coherence tomography (OCT) for detailed retinal imaging\n\n### Specialist Tests\n- Carotid Doppler ultrasound to assess for carotid artery disease\n- Echocardiography to evaluate for cardiac sources of emboli\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on sudden onset of unilateral vision loss and characteristic findings on fundoscopic examination.\n\n### Key Differential Diagnoses to Exclude\n- Retinal detachment\n- Vitreous hemorrhage\n- Optic neuritis\n- Acute glaucoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to ophthalmology\n- Positioning the patient upright to reduce intraocular pressure\n\n#### Second-line Treatments\n- Ocular massage to dislodge the embolus\n- Administration of carbonic anhydrase inhibitors (e.g., acetazolamide) to lower intraocular pressure\n\n#### Emergency Procedures\n- Anterior chamber paracentesis to relieve intraocular pressure in cases of secondary glaucoma\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying risk factors (e.g., hypertension, diabetes)\n- Regular follow-up with ophthalmology\n\n#### Second-line Treatments\n- Consideration of retinal surgery in select cases (e.g., if neovascularization occurs)\n\n#### Monitoring Requirements\n- Regular visual acuity assessments and retinal examinations\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acetazolamide\n- **Mechanism of Action**: Carbonic anhydrase inhibitor that reduces intraocular pressure\n- **Typical Dosing Range**: 250 mg orally or intravenously, may repeat every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Nausea, vomiting, electrolyte imbalances, metabolic acidosis\n- **When to Use vs. Alternatives**: Use with caution in patients with renal impairment.\n\n#### Aspirin\n- **Mechanism of Action**: Antiplatelet agent that may reduce the risk of further embolic events\n- **Typical Dosing Range**: 81-325 mg orally daily\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions\n- **When to Use vs. Alternatives**: Consider in patients with cardiovascular risk factors.\n\n### Procedures\n\n#### Anterior chamber paracentesis\n- **What it Involves**: A procedure to remove fluid from the anterior chamber of the eye to relieve pressure\n- **Indications**: Severe intraocular pressure elevation secondary to CRAO or secondary glaucoma\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for vision recovery in CRAO is generally poor, with most patients experiencing permanent vision loss. Early intervention may improve outcomes in select cases.\n\n### Important Complications to Watch For\n- Neovascular glaucoma\n- Retinal neovascularization\n- Persistent vision loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize the signs and symptoms of CRAO, initiate urgent referral to ophthalmology, and manage underlying risk factors in patients with cardiovascular disease.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to ophthalmology is required for any patient presenting with sudden vision loss, especially if CRAO is suspected.\n\n### Key Safety Considerations\nEnsure timely referral to prevent irreversible vision loss, monitor for signs of systemic embolic disease, and manage comorbidities effectively.\n",
+  "content": {
+    "overview": {
+      "definition": "Central retinal artery occlusion (CRAO) is a sudden loss of vision due to obstruction of the central retinal artery, typically caused by an embolus or thrombus.",
+      "epidemiology": "CRAO is relatively rare, with an incidence of approximately 1.5 to 2.0 cases per 100,000 people per year. It is more common in older adults, particularly those with cardiovascular risk factors.",
+      "pathophysiology": "CRAO occurs when the central retinal artery, which supplies blood to the retina, becomes occluded. This leads to ischemia and subsequent retinal cell death, particularly affecting the inner retinal layers."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden, painless loss of vision in one eye",
+        "Visual field defects (e.g., a central scotoma)"
+      ],
+      "signs": [
+        "Pale retina with a characteristic 'cherry-red spot' at the fovea on fundoscopic examination",
+        "Retinal edema and cotton wool spots may be present"
+      ],
+      "atypicalPresentations": [
+        "Transient vision loss (amaurosis fugax) prior to complete occlusion",
+        "Bilateral CRAO, which is rare and may indicate systemic disease"
+      ],
+      "redFlags": [
+        "Sudden onset of vision loss",
+        "Presence of risk factors such as hypertension, diabetes, or atrial fibrillation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fundoscopy to assess retinal appearance",
+        "Visual acuity testing"
+      ],
+      "secondLine": [
+        "Fluorescein angiography to evaluate retinal perfusion",
+        "Optical coherence tomography (OCT) for detailed retinal imaging"
+      ],
+      "specialistTests": [
+        "Carotid Doppler ultrasound to assess for carotid artery disease",
+        "Echocardiography to evaluate for cardiac sources of emboli"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on sudden onset of unilateral vision loss and characteristic findings on fundoscopic examination.",
+      "differentials": [
+        "Retinal detachment",
+        "Vitreous hemorrhage",
+        "Optic neuritis",
+        "Acute glaucoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to ophthalmology",
+          "Positioning the patient upright to reduce intraocular pressure"
+        ],
+        "secondLine": [
+          "Ocular massage to dislodge the embolus",
+          "Administration of carbonic anhydrase inhibitors (e.g., acetazolamide) to lower intraocular pressure"
+        ],
+        "procedures": [
+          "Anterior chamber paracentesis to relieve intraocular pressure in cases of secondary glaucoma"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying risk factors (e.g., hypertension, diabetes)",
+          "Regular follow-up with ophthalmology"
+        ],
+        "secondLine": [
+          "Consideration of retinal surgery in select cases (e.g., if neovascularization occurs)"
+        ],
+        "monitoring": [
+          "Regular visual acuity assessments and retinal examinations"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Carbonic anhydrase inhibitor that reduces intraocular pressure",
+          "dosing": "250 mg orally or intravenously, may repeat every 4-6 hours as needed",
+          "sideEffects": "Nausea, vomiting, electrolyte imbalances, metabolic acidosis",
+          "notes": "Use with caution in patients with renal impairment."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Antiplatelet agent that may reduce the risk of further embolic events",
+          "dosing": "81-325 mg orally daily",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions",
+          "notes": "Consider in patients with cardiovascular risk factors."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Anterior chamber paracentesis",
+          "description": "A procedure to remove fluid from the anterior chamber of the eye to relieve pressure",
+          "indications": "Severe intraocular pressure elevation secondary to CRAO or secondary glaucoma",
+          "risks": "Infection, bleeding, retinal detachment"
+        }
+      ]
+    },
+    "prognosis": "The prognosis for vision recovery in CRAO is generally poor, with most patients experiencing permanent vision loss. Early intervention may improve outcomes in select cases.",
+    "complications": [
+      "Neovascular glaucoma",
+      "Retinal neovascularization",
+      "Persistent vision loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize the signs and symptoms of CRAO, initiate urgent referral to ophthalmology, and manage underlying risk factors in patients with cardiovascular disease.",
+    "escalation": "Immediate referral to ophthalmology is required for any patient presenting with sudden vision loss, especially if CRAO is suspected.",
+    "keySafetyConsiderations": "Ensure timely referral to prevent irreversible vision loss, monitor for signs of systemic embolic disease, and manage comorbidities effectively."
+  }
+}

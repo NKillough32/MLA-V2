@@ -1,0 +1,123 @@
+{
+  "id": "bursitis",
+  "name": "Bursitis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:36:34.817564",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Bursitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBursitis is the inflammation of a bursa, a small fluid-filled sac that acts as a cushion between bones and soft tissues, such as muscles, tendons, and skin. It commonly occurs in joints such as the shoulder, elbow, hip, and knee.\n\n### Epidemiology\nBursitis is common, particularly in individuals who engage in repetitive motion activities or have occupations that require prolonged pressure on joints. It can affect people of all ages but is more prevalent in middle-aged and older adults.\n\n### Essential Pathophysiology\nBursitis occurs when the bursa becomes inflamed due to overuse, trauma, infection, or underlying conditions such as rheumatoid arthritis or gout. The inflammation leads to pain, swelling, and restricted movement in the affected area.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Localized pain at the site of the bursa\n- Swelling and tenderness\n- Limited range of motion\n- Pain that worsens with movement or pressure\n\n### Key Signs\n- Swelling over the affected joint\n- Warmth and redness in the area\n- Pain on palpation of the bursa\n- Decreased range of motion\n\n### Atypical Presentations\n- Bursitis in atypical locations (e.g., retrocalcaneal bursitis)\n- Bursitis with systemic symptoms (fever, malaise) indicating possible infection\n\n### Red Flags Requiring Immediate Action\n- Severe pain that is not relieved by rest or analgesics\n- Fever or chills suggesting infection\n- Signs of systemic illness or joint deformity\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Ultrasound of the affected area to assess for fluid accumulation\n\n### Second-line Investigations\n- X-ray to rule out fractures or other bony abnormalities\n- MRI if there is suspicion of associated soft tissue injury\n\n### Specialist Tests\n- Aspiration of bursal fluid for analysis (cell count, culture, crystals)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination findings. Imaging may support the diagnosis but is not always necessary.\n\n### Key Differential Diagnoses to Exclude\n- Tendonitis\n- Joint arthritis\n- Fracture\n- Infection (septic bursitis)\n- Soft tissue tumors\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce swelling\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Corticosteroid injection into the bursa if symptoms persist\n\n#### Emergency Procedures\n- Aspiration of the bursa to relieve pressure and obtain fluid for analysis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to improve strength and flexibility\n- Continued NSAIDs for pain management\n\n#### Second-line Treatments\n- Surgical intervention (bursectomy) in refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and adjust management as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective NSAID that inhibits cyclooxygenase enzymes, reducing inflammation and pain.\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed, not exceeding 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Monitor for signs of gastrointestinal bleeding, especially in long-term use.\n\n#### Corticosteroids (e.g., Triamcinolone)\n- **Mechanism of Action**: Anti-inflammatory effects by suppressing the immune response and reducing inflammation.\n- **Typical Dosing Range**: 10-40 mg injected directly into the bursa, depending on severity.\n- **Key Side Effects/Contraindications**: Local tissue atrophy, infection risk, transient increase in blood glucose.\n- **When to Use vs. Alternatives**: Use with caution in patients with diabetes or infections.\n\n### Procedures\n\n#### Bursal Aspiration\n- **What it Involves**: A needle is inserted into the bursa to withdraw excess fluid for analysis and relieve pressure.\n- **Indications**: Persistent swelling, suspected infection, or to obtain fluid for diagnostic purposes.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site, and potential for re-accumulation of fluid.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of bursitis resolve with appropriate treatment, but chronic bursitis may require ongoing management and can lead to recurrent symptoms.\n\n### Important Complications to Watch For\n- Septic bursitis if infection occurs\n- Chronic pain and disability if not managed properly\n- Recurrence of bursitis after initial treatment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate conservative management, and refer to specialists when necessary. They should also educate patients on activity modification and rehabilitation.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist or orthopedic specialist if there is no improvement with conservative management, if there are signs of infection, or if surgical intervention is considered.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially after aspiration or injection. Ensure appropriate follow-up for patients with chronic symptoms or those requiring corticosteroid injections.\n",
+  "content": {
+    "overview": {
+      "definition": "Bursitis is the inflammation of a bursa, a small fluid-filled sac that acts as a cushion between bones and soft tissues, such as muscles, tendons, and skin. It commonly occurs in joints such as the shoulder, elbow, hip, and knee.",
+      "epidemiology": "Bursitis is common, particularly in individuals who engage in repetitive motion activities or have occupations that require prolonged pressure on joints. It can affect people of all ages but is more prevalent in middle-aged and older adults.",
+      "pathophysiology": "Bursitis occurs when the bursa becomes inflamed due to overuse, trauma, infection, or underlying conditions such as rheumatoid arthritis or gout. The inflammation leads to pain, swelling, and restricted movement in the affected area."
+    },
+    "recognition": {
+      "symptoms": [
+        "Localized pain at the site of the bursa",
+        "Swelling and tenderness",
+        "Limited range of motion",
+        "Pain that worsens with movement or pressure"
+      ],
+      "signs": [
+        "Swelling over the affected joint",
+        "Warmth and redness in the area",
+        "Pain on palpation of the bursa",
+        "Decreased range of motion"
+      ],
+      "atypicalPresentations": [
+        "Bursitis in atypical locations (e.g., retrocalcaneal bursitis)",
+        "Bursitis with systemic symptoms (fever, malaise) indicating possible infection"
+      ],
+      "redFlags": [
+        "Severe pain that is not relieved by rest or analgesics",
+        "Fever or chills suggesting infection",
+        "Signs of systemic illness or joint deformity"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Ultrasound of the affected area to assess for fluid accumulation"
+      ],
+      "secondLine": [
+        "X-ray to rule out fractures or other bony abnormalities",
+        "MRI if there is suspicion of associated soft tissue injury"
+      ],
+      "specialistTests": [
+        "Aspiration of bursal fluid for analysis (cell count, culture, crystals)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination findings. Imaging may support the diagnosis but is not always necessary.",
+      "differentials": [
+        "Tendonitis",
+        "Joint arthritis",
+        "Fracture",
+        "Infection (septic bursitis)",
+        "Soft tissue tumors"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce swelling",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Corticosteroid injection into the bursa if symptoms persist"
+        ],
+        "procedures": [
+          "Aspiration of the bursa to relieve pressure and obtain fluid for analysis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to improve strength and flexibility",
+          "Continued NSAIDs for pain management"
+        ],
+        "secondLine": [
+          "Surgical intervention (bursectomy) in refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and adjust management as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective NSAID that inhibits cyclooxygenase enzymes, reducing inflammation and pain.",
+          "dosing": "400-800 mg orally every 6-8 hours as needed, not exceeding 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Monitor for signs of gastrointestinal bleeding, especially in long-term use."
+        },
+        {
+          "name": "Corticosteroids (e.g., Triamcinolone)",
+          "mechanism": "Anti-inflammatory effects by suppressing the immune response and reducing inflammation.",
+          "dosing": "10-40 mg injected directly into the bursa, depending on severity.",
+          "sideEffects": "Local tissue atrophy, infection risk, transient increase in blood glucose.",
+          "notes": "Use with caution in patients with diabetes or infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bursal Aspiration",
+          "description": "A needle is inserted into the bursa to withdraw excess fluid for analysis and relieve pressure.",
+          "indications": "Persistent swelling, suspected infection, or to obtain fluid for diagnostic purposes.",
+          "risks": "Infection, bleeding, pain at the site, and potential for re-accumulation of fluid."
+        }
+      ]
+    },
+    "prognosis": "Most cases of bursitis resolve with appropriate treatment, but chronic bursitis may require ongoing management and can lead to recurrent symptoms.",
+    "complications": [
+      "Septic bursitis if infection occurs",
+      "Chronic pain and disability if not managed properly",
+      "Recurrence of bursitis after initial treatment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate conservative management, and refer to specialists when necessary. They should also educate patients on activity modification and rehabilitation.",
+    "escalation": "Refer to a rheumatologist or orthopedic specialist if there is no improvement with conservative management, if there are signs of infection, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially after aspiration or injection. Ensure appropriate follow-up for patients with chronic symptoms or those requiring corticosteroid injections."
+  }
+}

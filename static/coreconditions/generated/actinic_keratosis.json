@@ -1,0 +1,125 @@
+{
+  "id": "actinic_keratosis",
+  "name": "Actinic Keratosis",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:17:52.445417",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Actinic Keratosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nActinic keratosis (AK) is a precancerous skin condition characterized by rough, scaly patches on sun-exposed areas of the skin, resulting from prolonged UV exposure.\n\n### Epidemiology\nAK is common in fair-skinned individuals, particularly those over 40 years of age, with an estimated prevalence of 10-25% in the general population and up to 60% in older adults in sunny climates.\n\n### Essential Pathophysiology\nAK arises from the proliferation of atypical keratinocytes in the epidermis due to cumulative sun damage, leading to dysplastic changes. It is considered a precursor to squamous cell carcinoma (SCC).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Rough, dry, scaly patches on the skin\n- Itching or tenderness in the affected area\n- Erythema surrounding the lesions\n\n### Key Signs\n- Erythematous, scaly macules or papules\n- Lesions may be hyperkeratotic (thickened)\n- Lesions typically measure 1-2 cm in diameter\n\n### Atypical Presentations\n- Lesions may appear as pigmented or non-pigmented\n- Can be mistaken for other skin conditions such as psoriasis or eczema\n\n### Red Flags Requiring Immediate Action\n- Rapidly growing lesions\n- Ulceration or bleeding from the lesion\n- Multiple lesions in a short time frame\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of the skin\n- Dermatoscopy to assess lesion characteristics\n\n### Second-line Investigations\n- Skin biopsy if there is uncertainty in diagnosis or suspicion of malignancy\n\n### Specialist Tests\n- Histopathological examination of biopsy samples\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the appearance of the lesions and patient history of sun exposure. A biopsy may be performed for atypical cases.\n\n### Key Differential Diagnoses to Exclude\n- Seborrheic keratosis\n- Psoriasis\n- Bowen's disease (squamous cell carcinoma in situ)\n- Basal cell carcinoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Cryotherapy (liquid nitrogen)\n- Topical 5-fluorouracil (5-FU)\n- Topical imiquimod\n\n#### Second-line Treatments\n- Photodynamic therapy (PDT)\n- Chemical peels\n\n#### Emergency Procedures\n- Cryotherapy: application of liquid nitrogen to freeze the lesion, leading to destruction of abnormal keratinocytes. Indicated for localized AK. Risks include blistering, hypopigmentation, and scarring.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular skin examinations and monitoring for new lesions\n- Patient education on sun protection and skin care\n\n#### Second-line Treatments\n- Topical retinoids for prevention of new lesions\n\n#### Monitoring Requirements\n- Regular follow-up every 6-12 months to monitor for new lesions or changes in existing lesions.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### 5-Fluorouracil (5-FU)\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.\n- **Typical Dosing Range**: Apply twice daily for 2-4 weeks depending on the lesion size and response.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and ulceration at the application site.\n- **When to Use vs. Alternatives**: Effective for multiple lesions and can be used in field treatment.\n\n#### Imiquimod\n- **Mechanism of Action**: Immune response modifier that stimulates local immune response against abnormal cells.\n- **Typical Dosing Range**: Apply 3 times a week for 16 weeks.\n- **Key Side Effects/Contraindications**: Local erythema, crusting, and ulceration.\n- **When to Use vs. Alternatives**: Useful for superficial AK and has a favorable cosmetic outcome.\n\n### Procedures\n\n#### Cryotherapy\n- **What it Involves**: Application of liquid nitrogen to freeze and destroy abnormal skin cells.\n- **Indications**: Localized actinic keratosis, especially in patients with limited lesions.\n- **Key Risks/Complications**: Blistering, hypopigmentation, and potential scarring.\n\n#### Photodynamic Therapy (PDT)\n- **What it Involves**: Application of a photosensitizing agent followed by exposure to a specific wavelength of light to destroy abnormal cells.\n- **Indications**: Multiple actinic keratosis lesions, especially in field treatment.\n- **Key Risks/Complications**: Erythema, swelling, and pain at the treatment site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for actinic keratosis is generally good with appropriate treatment. However, untreated AK can progress to squamous cell carcinoma in some cases, particularly in immunocompromised patients.\n\n### Important Complications to Watch For\n- Progression to squamous cell carcinoma (SCC)\n- Cosmetic concerns due to scarring or pigmentation changes from treatment.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize actinic keratosis, provide initial management, educate patients on sun protection, and refer to dermatology for persistent or atypical cases.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology if there are concerns about malignancy, rapid progression of lesions, or if the patient is immunocompromised.\n\n### Key Safety Considerations\nEnsure proper patient education on sun protection measures, including the use of sunscreen, protective clothing, and avoidance of peak sun hours. Monitor for signs of progression to malignancy.\n",
+  "content": {
+    "overview": {
+      "definition": "Actinic keratosis (AK) is a precancerous skin condition characterized by rough, scaly patches on sun-exposed areas of the skin, resulting from prolonged UV exposure.",
+      "epidemiology": "AK is common in fair-skinned individuals, particularly those over 40 years of age, with an estimated prevalence of 10-25% in the general population and up to 60% in older adults in sunny climates.",
+      "pathophysiology": "AK arises from the proliferation of atypical keratinocytes in the epidermis due to cumulative sun damage, leading to dysplastic changes. It is considered a precursor to squamous cell carcinoma (SCC)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Rough, dry, scaly patches on the skin",
+        "Itching or tenderness in the affected area",
+        "Erythema surrounding the lesions"
+      ],
+      "signs": [
+        "Erythematous, scaly macules or papules",
+        "Lesions may be hyperkeratotic (thickened)",
+        "Lesions typically measure 1-2 cm in diameter"
+      ],
+      "atypicalPresentations": [
+        "Lesions may appear as pigmented or non-pigmented",
+        "Can be mistaken for other skin conditions such as psoriasis or eczema"
+      ],
+      "redFlags": [
+        "Rapidly growing lesions",
+        "Ulceration or bleeding from the lesion",
+        "Multiple lesions in a short time frame"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of the skin",
+        "Dermatoscopy to assess lesion characteristics"
+      ],
+      "secondLine": [
+        "Skin biopsy if there is uncertainty in diagnosis or suspicion of malignancy"
+      ],
+      "specialistTests": [
+        "Histopathological examination of biopsy samples"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the appearance of the lesions and patient history of sun exposure. A biopsy may be performed for atypical cases.",
+      "differentials": [
+        "Seborrheic keratosis",
+        "Psoriasis",
+        "Bowen's disease (squamous cell carcinoma in situ)",
+        "Basal cell carcinoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Cryotherapy (liquid nitrogen)",
+          "Topical 5-fluorouracil (5-FU)",
+          "Topical imiquimod"
+        ],
+        "secondLine": [
+          "Photodynamic therapy (PDT)",
+          "Chemical peels"
+        ],
+        "procedures": [
+          "Cryotherapy: application of liquid nitrogen to freeze the lesion, leading to destruction of abnormal keratinocytes. Indicated for localized AK. Risks include blistering, hypopigmentation, and scarring."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular skin examinations and monitoring for new lesions",
+          "Patient education on sun protection and skin care"
+        ],
+        "secondLine": [
+          "Topical retinoids for prevention of new lesions"
+        ],
+        "monitoring": [
+          "Regular follow-up every 6-12 months to monitor for new lesions or changes in existing lesions."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "5-Fluorouracil (5-FU)",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.",
+          "dosing": "Apply twice daily for 2-4 weeks depending on the lesion size and response.",
+          "sideEffects": "Local irritation, erythema, and ulceration at the application site.",
+          "notes": "Effective for multiple lesions and can be used in field treatment."
+        },
+        {
+          "name": "Imiquimod",
+          "mechanism": "Immune response modifier that stimulates local immune response against abnormal cells.",
+          "dosing": "Apply 3 times a week for 16 weeks.",
+          "sideEffects": "Local erythema, crusting, and ulceration.",
+          "notes": "Useful for superficial AK and has a favorable cosmetic outcome."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cryotherapy",
+          "description": "Application of liquid nitrogen to freeze and destroy abnormal skin cells.",
+          "indications": "Localized actinic keratosis, especially in patients with limited lesions.",
+          "risks": "Blistering, hypopigmentation, and potential scarring."
+        },
+        {
+          "name": "Photodynamic Therapy (PDT)",
+          "description": "Application of a photosensitizing agent followed by exposure to a specific wavelength of light to destroy abnormal cells.",
+          "indications": "Multiple actinic keratosis lesions, especially in field treatment.",
+          "risks": "Erythema, swelling, and pain at the treatment site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for actinic keratosis is generally good with appropriate treatment. However, untreated AK can progress to squamous cell carcinoma in some cases, particularly in immunocompromised patients.",
+    "complications": [
+      "Progression to squamous cell carcinoma (SCC)",
+      "Cosmetic concerns due to scarring or pigmentation changes from treatment."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize actinic keratosis, provide initial management, educate patients on sun protection, and refer to dermatology for persistent or atypical cases.",
+    "escalation": "Refer to dermatology if there are concerns about malignancy, rapid progression of lesions, or if the patient is immunocompromised.",
+    "keySafetyConsiderations": "Ensure proper patient education on sun protection measures, including the use of sunscreen, protective clothing, and avoidance of peak sun hours. Monitor for signs of progression to malignancy."
+  }
+}

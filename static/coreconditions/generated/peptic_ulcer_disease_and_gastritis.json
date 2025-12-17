@@ -1,0 +1,148 @@
+{
+  "id": "peptic_ulcer_disease_and_gastritis",
+  "name": "Peptic ulcer disease and gastritis",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:39:48.855388",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peptic ulcer disease and gastritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeptic ulcer disease (PUD) refers to the formation of ulcers in the lining of the stomach (gastric ulcers) or the first part of the small intestine (duodenal ulcers). Gastritis is the inflammation of the stomach lining, which can be acute or chronic.\n\n### Epidemiology\nPUD affects approximately 10% of the population at some point in their lives. It is more common in individuals aged 40-60 years and has a higher prevalence in males. Gastritis is also common, with acute gastritis often linked to NSAID use and chronic gastritis associated with H. pylori infection.\n\n### Essential Pathophysiology\nPUD is primarily caused by an imbalance between aggressive factors (such as gastric acid and pepsin) and protective factors (such as mucus and bicarbonate). H. pylori infection and NSAID use are major contributors. Gastritis can result from similar factors, with acute gastritis often due to irritants like alcohol or NSAIDs, and chronic gastritis often due to H. pylori or autoimmune processes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often epigastric)\n- Nausea\n- Vomiting\n- Bloating\n- Early satiety\n- Heartburn\n- Dyspepsia\n\n### Key Signs\n- Epigastric tenderness\n- Signs of anemia (pallor, tachycardia)\n- Melena or hematemesis in severe cases\n\n### Atypical Presentations\n- Chest pain mimicking cardiac issues\n- Weight loss without obvious cause\n- Anorexia\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Vomiting blood or coffee-ground material\n- Black, tarry stools\n- Unexplained weight loss\n- Signs of perforation (sudden severe pain, rigidity)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Upper gastrointestinal endoscopy (OGD)\n- H. pylori testing (urea breath test, stool antigen test)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Upper GI series (barium swallow)\n- CT abdomen if perforation or complications suspected\n\n### Specialist Tests\n- Endoscopic biopsy for H. pylori and malignancy\n- Gastric acid secretion tests (rarely used)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PUD is confirmed by endoscopy showing ulcers, and gastritis is diagnosed by endoscopic findings of inflammation. H. pylori testing is essential for PUD management.\n\n### Key Differential Diagnoses to Exclude\n- Gastroesophageal reflux disease (GERD)\n- Esophagitis\n- Gastric cancer\n- Pancreatitis\n- Functional dyspepsia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Proton pump inhibitors (PPIs)\n- Antacids for symptomatic relief\n- Avoid NSAIDs and irritants\n\n#### Second-line Treatments\n- H. pylori eradication therapy (if positive)\n- Sucralfate for mucosal protection\n\n#### Emergency Procedures\n- Endoscopy for bleeding ulcers (cauterization, clipping)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term PPIs for maintenance therapy\n- H. pylori eradication regimen (PPI + amoxicillin + clarithromycin)\n\n#### Second-line Treatments\n- Consideration of surgery for refractory cases or complications (e.g., vagotomy, antrectomy)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom resolution and side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Omeprazole\n- **Mechanism of Action**: Proton pump inhibitor that reduces gastric acid secretion.\n- **Typical Dosing Range**: 20-40 mg once daily before meals.\n- **Key Side Effects/Contraindications**: Headache, nausea, diarrhea, risk of Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Monitor for long-term use complications like vitamin B12 deficiency.\n\n#### Amoxicillin\n- **Mechanism of Action**: Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 1000 mg twice daily for 7-14 days in H. pylori eradication.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Check for penicillin allergy.\n\n#### Clarithromycin\n- **Mechanism of Action**: Macrolide antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 500 mg twice daily for 7-14 days in H. pylori eradication.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, taste disturbance, potential QT prolongation.\n- **When to Use vs. Alternatives**: Avoid in patients with known macrolide allergy.\n\n### Procedures\n\n#### Upper gastrointestinal endoscopy (OGD)\n- **What it Involves**: A procedure using a flexible tube with a camera to visualize the upper GI tract and obtain biopsies if necessary.\n- **Indications**: Diagnosis of PUD, gastritis, and management of bleeding ulcers.\n- **Key Risks/Complications**: Perforation, bleeding, infection, sedation-related complications.\n\n#### Endoscopic hemostasis techniques\n- **What it Involves**: Techniques such as cauterization or clipping to control bleeding from ulcers during endoscopy.\n- **Indications**: Active bleeding from a peptic ulcer.\n- **Key Risks/Complications**: Perforation, rebleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, most patients with PUD and gastritis can expect a good prognosis. Complications can arise if untreated, including perforation, bleeding, and gastric cancer in chronic cases.\n\n### Important Complications to Watch For\n- Gastric perforation\n- Gastric outlet obstruction\n- Hemorrhage\n- Chronic anemia due to blood loss\n- Increased risk of gastric cancer (chronic gastritis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of PUD and gastritis, initiate appropriate investigations, manage acute presentations, and refer to specialists when necessary. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology for severe cases, complications, or if there is no response to initial management. Escalate care for patients with red flag symptoms or significant deterioration.\n\n### Key Safety Considerations\nMonitor for signs of bleeding or perforation in patients with PUD. Ensure appropriate use of NSAIDs and educate patients on the risks associated with self-medication. Regularly review medication regimens for potential interactions and side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Peptic ulcer disease (PUD) refers to the formation of ulcers in the lining of the stomach (gastric ulcers) or the first part of the small intestine (duodenal ulcers). Gastritis is the inflammation of the stomach lining, which can be acute or chronic.",
+      "epidemiology": "PUD affects approximately 10% of the population at some point in their lives. It is more common in individuals aged 40-60 years and has a higher prevalence in males. Gastritis is also common, with acute gastritis often linked to NSAID use and chronic gastritis associated with H. pylori infection.",
+      "pathophysiology": "PUD is primarily caused by an imbalance between aggressive factors (such as gastric acid and pepsin) and protective factors (such as mucus and bicarbonate). H. pylori infection and NSAID use are major contributors. Gastritis can result from similar factors, with acute gastritis often due to irritants like alcohol or NSAIDs, and chronic gastritis often due to H. pylori or autoimmune processes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often epigastric)",
+        "Nausea",
+        "Vomiting",
+        "Bloating",
+        "Early satiety",
+        "Heartburn",
+        "Dyspepsia"
+      ],
+      "signs": [
+        "Epigastric tenderness",
+        "Signs of anemia (pallor, tachycardia)",
+        "Melena or hematemesis in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Chest pain mimicking cardiac issues",
+        "Weight loss without obvious cause",
+        "Anorexia"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Vomiting blood or coffee-ground material",
+        "Black, tarry stools",
+        "Unexplained weight loss",
+        "Signs of perforation (sudden severe pain, rigidity)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Upper gastrointestinal endoscopy (OGD)",
+        "H. pylori testing (urea breath test, stool antigen test)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Upper GI series (barium swallow)",
+        "CT abdomen if perforation or complications suspected"
+      ],
+      "specialistTests": [
+        "Endoscopic biopsy for H. pylori and malignancy",
+        "Gastric acid secretion tests (rarely used)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PUD is confirmed by endoscopy showing ulcers, and gastritis is diagnosed by endoscopic findings of inflammation. H. pylori testing is essential for PUD management.",
+      "differentials": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Esophagitis",
+        "Gastric cancer",
+        "Pancreatitis",
+        "Functional dyspepsia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Proton pump inhibitors (PPIs)",
+          "Antacids for symptomatic relief",
+          "Avoid NSAIDs and irritants"
+        ],
+        "secondLine": [
+          "H. pylori eradication therapy (if positive)",
+          "Sucralfate for mucosal protection"
+        ],
+        "procedures": [
+          "Endoscopy for bleeding ulcers (cauterization, clipping)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term PPIs for maintenance therapy",
+          "H. pylori eradication regimen (PPI + amoxicillin + clarithromycin)"
+        ],
+        "secondLine": [
+          "Consideration of surgery for refractory cases or complications (e.g., vagotomy, antrectomy)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom resolution and side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Omeprazole",
+          "mechanism": "Proton pump inhibitor that reduces gastric acid secretion.",
+          "dosing": "20-40 mg once daily before meals.",
+          "sideEffects": "Headache, nausea, diarrhea, risk of Clostridium difficile infection.",
+          "notes": "Monitor for long-term use complications like vitamin B12 deficiency."
+        },
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "1000 mg twice daily for 7-14 days in H. pylori eradication.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset.",
+          "notes": "Check for penicillin allergy."
+        },
+        {
+          "name": "Clarithromycin",
+          "mechanism": "Macrolide antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "500 mg twice daily for 7-14 days in H. pylori eradication.",
+          "sideEffects": "Gastrointestinal upset, taste disturbance, potential QT prolongation.",
+          "notes": "Avoid in patients with known macrolide allergy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Upper gastrointestinal endoscopy (OGD)",
+          "description": "A procedure using a flexible tube with a camera to visualize the upper GI tract and obtain biopsies if necessary.",
+          "indications": "Diagnosis of PUD, gastritis, and management of bleeding ulcers.",
+          "risks": "Perforation, bleeding, infection, sedation-related complications."
+        },
+        {
+          "name": "Endoscopic hemostasis techniques",
+          "description": "Techniques such as cauterization or clipping to control bleeding from ulcers during endoscopy.",
+          "indications": "Active bleeding from a peptic ulcer.",
+          "risks": "Perforation, rebleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, most patients with PUD and gastritis can expect a good prognosis. Complications can arise if untreated, including perforation, bleeding, and gastric cancer in chronic cases.",
+    "complications": [
+      "Gastric perforation",
+      "Gastric outlet obstruction",
+      "Hemorrhage",
+      "Chronic anemia due to blood loss",
+      "Increased risk of gastric cancer (chronic gastritis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of PUD and gastritis, initiate appropriate investigations, manage acute presentations, and refer to specialists when necessary. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to gastroenterology for severe cases, complications, or if there is no response to initial management. Escalate care for patients with red flag symptoms or significant deterioration.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding or perforation in patients with PUD. Ensure appropriate use of NSAIDs and educate patients on the risks associated with self-medication. Regularly review medication regimens for potential interactions and side effects."
+  }
+}

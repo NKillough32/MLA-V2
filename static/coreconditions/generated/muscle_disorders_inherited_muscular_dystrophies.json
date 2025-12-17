@@ -1,0 +1,137 @@
+{
+  "id": "muscle_disorders_inherited_muscular_dystrophies",
+  "name": "Muscle disorders - Inherited muscular dystrophies",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:49:17.551182",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Muscle disorders - Inherited muscular dystrophies: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInherited muscular dystrophies are a group of genetic disorders characterized by progressive weakness and degeneration of the skeletal muscles, which control movement. They are caused by mutations in genes that are essential for muscle function.\n\n### Epidemiology\nMuscular dystrophies are relatively rare, with an estimated prevalence of 1 in 3,500 to 1 in 5,000 live births. Duchenne muscular dystrophy (DMD) is the most common form, affecting primarily boys, with an incidence of approximately 1 in 3,500 male births.\n\n### Essential Pathophysiology\nInherited muscular dystrophies result from mutations in genes responsible for the production of proteins that maintain muscle integrity. For example, DMD is caused by mutations in the dystrophin gene, leading to a lack of dystrophin protein, which is crucial for muscle cell stability. This results in muscle fiber damage, inflammation, and eventual replacement of muscle tissue with fibrous and fatty tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive muscle weakness\n- Difficulty walking or running\n- Frequent falls\n- Muscle cramps\n- Delayed motor milestones in children\n\n### Key Signs\n- Muscle wasting\n- Gower's sign (using hands to rise from the floor)\n- Calf hypertrophy\n- Skeletal deformities (e.g., scoliosis)\n- Reduced deep tendon reflexes\n\n### Atypical Presentations\n- Onset in adulthood (e.g., Becker muscular dystrophy)\n- Mild symptoms that progress slowly\n- Cardiac involvement without significant skeletal muscle weakness\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of weakness\n- Loss of ambulation before age 12\n- Severe respiratory compromise\n- Cardiac symptoms (e.g., arrhythmias)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Family history assessment\n- Creatine kinase (CK) levels\n\n### Second-line Investigations\n- Genetic testing for specific mutations (e.g., dystrophin gene for DMD)\n- Muscle biopsy (to assess muscle pathology)\n- Electromyography (EMG)\n\n### Specialist Tests\n- MRI of muscles (to assess muscle involvement)\n- Cardiac evaluation (echocardiogram)\n- Pulmonary function tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, elevated CK levels, and confirmation through genetic testing or muscle biopsy showing dystrophin deficiency in DMD.\n\n### Key Differential Diagnoses to Exclude\n- Spinal muscular atrophy\n- Myotonic dystrophy\n- Congenital myopathies\n- Acquired myopathies (e.g., inflammatory myopathies)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (e.g., physiotherapy)\n- Monitoring for respiratory and cardiac complications\n\n#### Second-line Treatments\n- Steroid therapy (e.g., prednisone) to slow progression\n\n#### Emergency Procedures\n- Cardiac monitoring and management (e.g., pacemaker insertion if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular physiotherapy and occupational therapy\n- Nutritional support and management of obesity\n\n#### Second-line Treatments\n- Surgical interventions for scoliosis or contractures\n\n#### Monitoring Requirements\n- Regular follow-up for respiratory function and cardiac health\n- Assessment of mobility and independence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Anti-inflammatory; slows muscle degeneration\n- **Typical Dosing Range**: 0.75 mg/kg/day (max 60 mg/day)\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, increased infection risk, osteoporosis\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n#### Eteplirsen\n- **Mechanism of Action**: Exon-skipping therapy targeting dystrophin gene mutations\n- **Typical Dosing Range**: 30 mg/kg IV once weekly\n- **Key Side Effects/Contraindications**: Injection site reactions, headache, nausea\n- **When to Use vs. Alternatives**: Used in specific genetic mutations (DMD).\n\n### Procedures\n\n#### Scoliosis surgery\n- **What it Involves**: Surgical correction of spinal deformities due to muscle weakness\n- **Indications**: Severe scoliosis affecting respiratory function or mobility\n- **Key Risks/Complications**: Infection, bleeding, nerve injury, need for revision surgery.\n\n#### Cardiac intervention (e.g., pacemaker insertion)\n- **What it Involves**: Placement of a device to regulate heart rhythm\n- **Indications**: Severe arrhythmias or heart block due to muscular dystrophy\n- **Key Risks/Complications**: Infection, lead displacement, pneumothorax.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies by type; DMD typically leads to loss of ambulation by age 12 and reduced life expectancy due to respiratory and cardiac complications. Becker muscular dystrophy has a more variable course and often a better prognosis.\n\n### Important Complications to Watch For\n- Respiratory failure\n- Cardiac complications (e.g., cardiomyopathy)\n- Contractures and joint deformities\n- Obesity and metabolic syndrome\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, and refer to specialists for genetic testing and management. They should also provide supportive care and education to patients and families.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist or a specialist in neuromuscular disorders for confirmation of diagnosis, management planning, and genetic counseling.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress and cardiac complications. Ensure regular follow-up for management of comorbidities and complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Inherited muscular dystrophies are a group of genetic disorders characterized by progressive weakness and degeneration of the skeletal muscles, which control movement. They are caused by mutations in genes that are essential for muscle function.",
+      "epidemiology": "Muscular dystrophies are relatively rare, with an estimated prevalence of 1 in 3,500 to 1 in 5,000 live births. Duchenne muscular dystrophy (DMD) is the most common form, affecting primarily boys, with an incidence of approximately 1 in 3,500 male births.",
+      "pathophysiology": "Inherited muscular dystrophies result from mutations in genes responsible for the production of proteins that maintain muscle integrity. For example, DMD is caused by mutations in the dystrophin gene, leading to a lack of dystrophin protein, which is crucial for muscle cell stability. This results in muscle fiber damage, inflammation, and eventual replacement of muscle tissue with fibrous and fatty tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive muscle weakness",
+        "Difficulty walking or running",
+        "Frequent falls",
+        "Muscle cramps",
+        "Delayed motor milestones in children"
+      ],
+      "signs": [
+        "Muscle wasting",
+        "Gower's sign (using hands to rise from the floor)",
+        "Calf hypertrophy",
+        "Skeletal deformities (e.g., scoliosis)",
+        "Reduced deep tendon reflexes"
+      ],
+      "atypicalPresentations": [
+        "Onset in adulthood (e.g., Becker muscular dystrophy)",
+        "Mild symptoms that progress slowly",
+        "Cardiac involvement without significant skeletal muscle weakness"
+      ],
+      "redFlags": [
+        "Rapid progression of weakness",
+        "Loss of ambulation before age 12",
+        "Severe respiratory compromise",
+        "Cardiac symptoms (e.g., arrhythmias)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Family history assessment",
+        "Creatine kinase (CK) levels"
+      ],
+      "secondLine": [
+        "Genetic testing for specific mutations (e.g., dystrophin gene for DMD)",
+        "Muscle biopsy (to assess muscle pathology)",
+        "Electromyography (EMG)"
+      ],
+      "specialistTests": [
+        "MRI of muscles (to assess muscle involvement)",
+        "Cardiac evaluation (echocardiogram)",
+        "Pulmonary function tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, elevated CK levels, and confirmation through genetic testing or muscle biopsy showing dystrophin deficiency in DMD.",
+      "differentials": [
+        "Spinal muscular atrophy",
+        "Myotonic dystrophy",
+        "Congenital myopathies",
+        "Acquired myopathies (e.g., inflammatory myopathies)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (e.g., physiotherapy)",
+          "Monitoring for respiratory and cardiac complications"
+        ],
+        "secondLine": [
+          "Steroid therapy (e.g., prednisone) to slow progression"
+        ],
+        "procedures": [
+          "Cardiac monitoring and management (e.g., pacemaker insertion if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular physiotherapy and occupational therapy",
+          "Nutritional support and management of obesity"
+        ],
+        "secondLine": [
+          "Surgical interventions for scoliosis or contractures"
+        ],
+        "monitoring": [
+          "Regular follow-up for respiratory function and cardiac health",
+          "Assessment of mobility and independence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Anti-inflammatory; slows muscle degeneration",
+          "dosing": "0.75 mg/kg/day (max 60 mg/day)",
+          "sideEffects": "Weight gain, mood changes, increased infection risk, osteoporosis",
+          "notes": "Long-term use requires monitoring for side effects."
+        },
+        {
+          "name": "Eteplirsen",
+          "mechanism": "Exon-skipping therapy targeting dystrophin gene mutations",
+          "dosing": "30 mg/kg IV once weekly",
+          "sideEffects": "Injection site reactions, headache, nausea",
+          "notes": "Used in specific genetic mutations (DMD)."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Scoliosis surgery",
+          "description": "Surgical correction of spinal deformities due to muscle weakness",
+          "indications": "Severe scoliosis affecting respiratory function or mobility",
+          "risks": "Infection, bleeding, nerve injury, need for revision surgery."
+        },
+        {
+          "name": "Cardiac intervention (e.g., pacemaker insertion)",
+          "description": "Placement of a device to regulate heart rhythm",
+          "indications": "Severe arrhythmias or heart block due to muscular dystrophy",
+          "risks": "Infection, lead displacement, pneumothorax."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies by type; DMD typically leads to loss of ambulation by age 12 and reduced life expectancy due to respiratory and cardiac complications. Becker muscular dystrophy has a more variable course and often a better prognosis.",
+    "complications": [
+      "Respiratory failure",
+      "Cardiac complications (e.g., cardiomyopathy)",
+      "Contractures and joint deformities",
+      "Obesity and metabolic syndrome"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, and refer to specialists for genetic testing and management. They should also provide supportive care and education to patients and families.",
+    "escalation": "Refer to a neurologist or a specialist in neuromuscular disorders for confirmation of diagnosis, management planning, and genetic counseling.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress and cardiac complications. Ensure regular follow-up for management of comorbidities and complications."
+  }
+}

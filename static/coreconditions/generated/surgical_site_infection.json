@@ -1,0 +1,142 @@
+{
+  "id": "surgical_site_infection",
+  "name": "Surgical site infection",
+  "domains": [
+    "Post-operative care"
+  ],
+  "generatedAt": "2025-12-17T21:15:06.406921",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Surgical site infection: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSurgical site infection (SSI) is an infection that occurs at or near a surgical incision within 30 days of the procedure or within one year if an implant is placed. It can involve the skin, subcutaneous tissue, fascia, and muscle layers.\n\n### Epidemiology\nSSIs occur in approximately 2-5% of all surgical procedures, with higher rates in certain types of surgeries, such as abdominal and orthopedic procedures. Risk factors include diabetes, obesity, smoking, and prolonged surgical time.\n\n### Essential Pathophysiology\nSSIs are primarily caused by bacterial contamination during surgery. Pathogens can enter the surgical site from the skin flora, the environment, or the patient's own flora. The body's immune response to the infection can lead to inflammation, pus formation, and delayed wound healing.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Redness around the incision\n- Increased pain at the surgical site\n- Swelling or warmth at the site\n- Fever\n- Pus or drainage from the incision\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Elevated white blood cell count\n- Foul odor from the wound\n\n### Atypical Presentations\n- Abscess formation without classic signs of infection\n- Delayed wound healing without obvious infection\n- Systemic symptoms like malaise or fatigue\n\n### Red Flags Requiring Immediate Action\n- Severe pain not controlled by analgesics\n- Signs of systemic infection (e.g., sepsis)\n- Rapidly spreading erythema or swelling\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of the surgical site\n- Complete blood count (CBC) to check for leukocytosis\n- Wound culture if drainage is present\n\n### Second-line Investigations\n- Ultrasound to assess for abscess formation\n- CT scan if deep infection is suspected\n\n### Specialist Tests\n- MRI for complex cases involving deep tissue or bone\n- Blood cultures if systemic infection is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical signs and symptoms, along with culture results from the surgical site. An SSI is confirmed if there is purulent drainage, positive culture, or if the patient has fever and other systemic signs of infection.\n\n### Key Differential Diagnoses to Exclude\n- Wound dehiscence\n- Seroma or hematoma\n- Deep vein thrombosis (DVT)\n- Cellulitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam)\n- Drain any abscess if present\n- Wound care and dressing changes\n\n#### Second-line Treatments\n- Switch to targeted antibiotics based on culture results\n- Consider surgical intervention for necrotizing fasciitis or deep infections\n\n#### Emergency Procedures\n- Incision and drainage of abscess\n- Debridement of necrotic tissue if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued wound care and monitoring for signs of infection\n- Long-term antibiotics if indicated based on culture results\n\n#### Second-line Treatments\n- Consider surgical revision if the wound does not heal\n\n#### Monitoring Requirements\n- Regular follow-up to assess for signs of healing or recurrence of infection\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria\n- **Typical Dosing Range**: 3.375 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against MRSA\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours\n- **Key Side Effects/Contraindications**: Nephrotoxicity, red man syndrome\n- **When to Use vs. Alternatives**: Monitor trough levels to avoid toxicity.\n\n#### Clindamycin\n- **Mechanism of Action**: Lincosamide antibiotic effective against anaerobes and some gram-positive bacteria\n- **Typical Dosing Range**: 600 mg IV every 8 hours\n- **Key Side Effects/Contraindications**: Diarrhea, risk of C. difficile infection\n- **When to Use vs. Alternatives**: Useful in penicillin-allergic patients.\n\n### Procedures\n\n#### Incision and drainage\n- **What it Involves**: Surgical procedure to open and drain an abscess or infected area\n- **Indications**: Presence of a localized collection of pus or abscess\n- **Key Risks/Complications**: Bleeding, further infection, damage to surrounding tissues.\n\n#### Debridement\n- **What it Involves**: Surgical removal of necrotic or infected tissue\n- **Indications**: Necrotizing fasciitis or non-healing wounds\n- **Key Risks/Complications**: Infection, prolonged healing time, need for further surgeries.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for SSIs varies; superficial infections often resolve with appropriate treatment, while deep infections can lead to significant morbidity and prolonged recovery. Early recognition and management are crucial for a favorable outcome.\n\n### Important Complications to Watch For\n- Sepsis\n- Prolonged hospitalization\n- Increased healthcare costs\n- Chronic pain or disability from deep infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in monitoring surgical patients for signs of infection, initiate appropriate investigations, and manage initial treatment under supervision. They should also communicate effectively with the surgical team regarding any concerns.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of systemic infection, such as fever, tachycardia, or hypotension, or if there is a significant change in the surgical site, immediate escalation to a senior clinician is required.\n\n### Key Safety Considerations\nEnsure strict aseptic technique during dressing changes, educate patients on signs of infection, and ensure timely follow-up appointments to monitor wound healing.\n",
+  "content": {
+    "overview": {
+      "definition": "Surgical site infection (SSI) is an infection that occurs at or near a surgical incision within 30 days of the procedure or within one year if an implant is placed. It can involve the skin, subcutaneous tissue, fascia, and muscle layers.",
+      "epidemiology": "SSIs occur in approximately 2-5% of all surgical procedures, with higher rates in certain types of surgeries, such as abdominal and orthopedic procedures. Risk factors include diabetes, obesity, smoking, and prolonged surgical time.",
+      "pathophysiology": "SSIs are primarily caused by bacterial contamination during surgery. Pathogens can enter the surgical site from the skin flora, the environment, or the patient's own flora. The body's immune response to the infection can lead to inflammation, pus formation, and delayed wound healing."
+    },
+    "recognition": {
+      "symptoms": [
+        "Redness around the incision",
+        "Increased pain at the surgical site",
+        "Swelling or warmth at the site",
+        "Fever",
+        "Pus or drainage from the incision"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Elevated white blood cell count",
+        "Foul odor from the wound"
+      ],
+      "atypicalPresentations": [
+        "Abscess formation without classic signs of infection",
+        "Delayed wound healing without obvious infection",
+        "Systemic symptoms like malaise or fatigue"
+      ],
+      "redFlags": [
+        "Severe pain not controlled by analgesics",
+        "Signs of systemic infection (e.g., sepsis)",
+        "Rapidly spreading erythema or swelling"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of the surgical site",
+        "Complete blood count (CBC) to check for leukocytosis",
+        "Wound culture if drainage is present"
+      ],
+      "secondLine": [
+        "Ultrasound to assess for abscess formation",
+        "CT scan if deep infection is suspected"
+      ],
+      "specialistTests": [
+        "MRI for complex cases involving deep tissue or bone",
+        "Blood cultures if systemic infection is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical signs and symptoms, along with culture results from the surgical site. An SSI is confirmed if there is purulent drainage, positive culture, or if the patient has fever and other systemic signs of infection.",
+      "differentials": [
+        "Wound dehiscence",
+        "Seroma or hematoma",
+        "Deep vein thrombosis (DVT)",
+        "Cellulitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam)",
+          "Drain any abscess if present",
+          "Wound care and dressing changes"
+        ],
+        "secondLine": [
+          "Switch to targeted antibiotics based on culture results",
+          "Consider surgical intervention for necrotizing fasciitis or deep infections"
+        ],
+        "procedures": [
+          "Incision and drainage of abscess",
+          "Debridement of necrotic tissue if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued wound care and monitoring for signs of infection",
+          "Long-term antibiotics if indicated based on culture results"
+        ],
+        "secondLine": [
+          "Consider surgical revision if the wound does not heal"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for signs of healing or recurrence of infection"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria",
+          "dosing": "3.375 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against MRSA",
+          "dosing": "15-20 mg/kg IV every 8-12 hours",
+          "sideEffects": "Nephrotoxicity, red man syndrome",
+          "notes": "Monitor trough levels to avoid toxicity."
+        },
+        {
+          "name": "Clindamycin",
+          "mechanism": "Lincosamide antibiotic effective against anaerobes and some gram-positive bacteria",
+          "dosing": "600 mg IV every 8 hours",
+          "sideEffects": "Diarrhea, risk of C. difficile infection",
+          "notes": "Useful in penicillin-allergic patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage",
+          "description": "Surgical procedure to open and drain an abscess or infected area",
+          "indications": "Presence of a localized collection of pus or abscess",
+          "risks": "Bleeding, further infection, damage to surrounding tissues."
+        },
+        {
+          "name": "Debridement",
+          "description": "Surgical removal of necrotic or infected tissue",
+          "indications": "Necrotizing fasciitis or non-healing wounds",
+          "risks": "Infection, prolonged healing time, need for further surgeries."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for SSIs varies; superficial infections often resolve with appropriate treatment, while deep infections can lead to significant morbidity and prolonged recovery. Early recognition and management are crucial for a favorable outcome.",
+    "complications": [
+      "Sepsis",
+      "Prolonged hospitalization",
+      "Increased healthcare costs",
+      "Chronic pain or disability from deep infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in monitoring surgical patients for signs of infection, initiate appropriate investigations, and manage initial treatment under supervision. They should also communicate effectively with the surgical team regarding any concerns.",
+    "escalation": "If a patient shows signs of systemic infection, such as fever, tachycardia, or hypotension, or if there is a significant change in the surgical site, immediate escalation to a senior clinician is required.",
+    "keySafetyConsiderations": "Ensure strict aseptic technique during dressing changes, educate patients on signs of infection, and ensure timely follow-up appointments to monitor wound healing."
+  }
+}

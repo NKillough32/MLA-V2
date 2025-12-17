@@ -1,0 +1,129 @@
+{
+  "id": "syphilis",
+  "name": "Syphilis",
+  "domains": [
+    "Infection",
+    "Obstetrics",
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T20:08:50.371149",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Syphilis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSyphilis is a sexually transmitted infection caused by the bacterium Treponema pallidum, characterized by distinct stages and a wide range of clinical manifestations.\n\n### Epidemiology\nSyphilis is prevalent worldwide, with increasing rates in many countries, particularly among men who have sex with men (MSM). In the UK, the incidence has risen significantly in recent years, with a notable increase in cases among young adults.\n\n### Essential Pathophysiology\nSyphilis is caused by the spirochete Treponema pallidum, which enters the body through mucous membranes or breaks in the skin. The organism disseminates through the bloodstream, leading to systemic infection and the characteristic lesions associated with its various stages.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless ulcer (chancre) at the site of infection\n- Rash (often on the trunk and extremities)\n- Fever\n- Lymphadenopathy\n- Fatigue\n- Sore throat\n\n### Key Signs\n- Painless genital ulcer (primary syphilis)\n- Rash (secondary syphilis)\n- Condylomata lata (wart-like lesions)\n- Mucous membrane lesions (e.g., mucous membrane pemphigoid)\n- Hepatosplenomegaly\n\n### Atypical Presentations\n- Asymptomatic early infection\n- Neurosyphilis presenting with neurological symptoms\n- Ocular syphilis with visual disturbances\n\n### Red Flags Requiring Immediate Action\n- Neurological symptoms (headaches, seizures, altered mental status)\n- Ocular symptoms (vision changes, eye pain)\n- Severe systemic symptoms (high fever, malaise)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serological tests (e.g., RPR, VDRL)\n- Treponemal tests (e.g., TPPA, FTA-ABS)\n\n### Second-line Investigations\n- CSF analysis if neurosyphilis is suspected\n- HIV testing\n\n### Specialist Tests\n- Lumbar puncture for CSF analysis\n- Imaging studies (e.g., MRI) for neurological involvement\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through serological testing, with a positive treponemal test and a reactive non-treponemal test (RPR or VDRL).\n\n### Key Differential Diagnoses to Exclude\n- Chancroid\n- Herpes simplex virus infection\n- Lymphogranuloma venereum\n- Granuloma inguinale\n- Other causes of genital ulcers\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Benzathine penicillin G 2.4 million units IM in a single dose for primary and secondary syphilis\n- Procaine penicillin G for those allergic to benzathine\n\n#### Second-line Treatments\n- Doxycycline 100 mg orally twice daily for 14 days (if penicillin allergic)\n\n#### Emergency Procedures\n- Lumbar puncture for CSF analysis if neurosyphilis is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with serological testing every 3 months until stable\n\n#### Second-line Treatments\n- Consider referral to sexual health services for ongoing management\n\n#### Monitoring Requirements\n- Monitor for treatment response with serological tests (RPR/VDRL)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Benzathine penicillin G\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis, leading to cell lysis.\n- **Typical Dosing Range**: 2.4 million units IM as a single dose for primary and secondary syphilis.\n- **Key Side Effects/Contraindications**: Allergic reactions, Jarisch-Herxheimer reaction (fever, chills, headache).\n- **When to Use vs. Alternatives**: Consider desensitization for patients with a history of penicillin allergy.\n\n#### Doxycycline\n- **Mechanism of Action**: Inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit.\n- **Typical Dosing Range**: 100 mg orally twice daily for 14 days.\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset, esophagitis.\n- **When to Use vs. Alternatives**: Not recommended in pregnancy.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected neurosyphilis or other central nervous system involvement.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, syphilis is curable, and most patients have a good prognosis. However, untreated syphilis can lead to serious complications, including cardiovascular and neurological damage.\n\n### Important Complications to Watch For\n- Neurosyphilis\n- Cardiovascular syphilis (aortitis)\n- Ocular syphilis\n- Congenital syphilis in pregnant women\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of syphilis, perform initial investigations, initiate treatment, and refer to specialist services as needed. They should also provide education on safe sex practices to prevent transmission.\n\n### When to Escalate to Senior/Specialist\nRefer to a sexual health clinic or infectious disease specialist for complex cases, including those with neurological involvement or treatment failure.\n\n### Key Safety Considerations\nEnsure appropriate follow-up and monitoring of treatment response. Educate patients about the importance of notifying sexual partners and practicing safe sex to prevent reinfection.\n",
+  "content": {
+    "overview": {
+      "definition": "Syphilis is a sexually transmitted infection caused by the bacterium Treponema pallidum, characterized by distinct stages and a wide range of clinical manifestations.",
+      "epidemiology": "Syphilis is prevalent worldwide, with increasing rates in many countries, particularly among men who have sex with men (MSM). In the UK, the incidence has risen significantly in recent years, with a notable increase in cases among young adults.",
+      "pathophysiology": "Syphilis is caused by the spirochete Treponema pallidum, which enters the body through mucous membranes or breaks in the skin. The organism disseminates through the bloodstream, leading to systemic infection and the characteristic lesions associated with its various stages."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless ulcer (chancre) at the site of infection",
+        "Rash (often on the trunk and extremities)",
+        "Fever",
+        "Lymphadenopathy",
+        "Fatigue",
+        "Sore throat"
+      ],
+      "signs": [
+        "Painless genital ulcer (primary syphilis)",
+        "Rash (secondary syphilis)",
+        "Condylomata lata (wart-like lesions)",
+        "Mucous membrane lesions (e.g., mucous membrane pemphigoid)",
+        "Hepatosplenomegaly"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic early infection",
+        "Neurosyphilis presenting with neurological symptoms",
+        "Ocular syphilis with visual disturbances"
+      ],
+      "redFlags": [
+        "Neurological symptoms (headaches, seizures, altered mental status)",
+        "Ocular symptoms (vision changes, eye pain)",
+        "Severe systemic symptoms (high fever, malaise)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serological tests (e.g., RPR, VDRL)",
+        "Treponemal tests (e.g., TPPA, FTA-ABS)"
+      ],
+      "secondLine": [
+        "CSF analysis if neurosyphilis is suspected",
+        "HIV testing"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for CSF analysis",
+        "Imaging studies (e.g., MRI) for neurological involvement"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through serological testing, with a positive treponemal test and a reactive non-treponemal test (RPR or VDRL).",
+      "differentials": [
+        "Chancroid",
+        "Herpes simplex virus infection",
+        "Lymphogranuloma venereum",
+        "Granuloma inguinale",
+        "Other causes of genital ulcers"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Benzathine penicillin G 2.4 million units IM in a single dose for primary and secondary syphilis",
+          "Procaine penicillin G for those allergic to benzathine"
+        ],
+        "secondLine": [
+          "Doxycycline 100 mg orally twice daily for 14 days (if penicillin allergic)"
+        ],
+        "procedures": [
+          "Lumbar puncture for CSF analysis if neurosyphilis is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with serological testing every 3 months until stable"
+        ],
+        "secondLine": [
+          "Consider referral to sexual health services for ongoing management"
+        ],
+        "monitoring": [
+          "Monitor for treatment response with serological tests (RPR/VDRL)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Benzathine penicillin G",
+          "mechanism": "Inhibits bacterial cell wall synthesis, leading to cell lysis.",
+          "dosing": "2.4 million units IM as a single dose for primary and secondary syphilis.",
+          "sideEffects": "Allergic reactions, Jarisch-Herxheimer reaction (fever, chills, headache).",
+          "notes": "Consider desensitization for patients with a history of penicillin allergy."
+        },
+        {
+          "name": "Doxycycline",
+          "mechanism": "Inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+          "dosing": "100 mg orally twice daily for 14 days.",
+          "sideEffects": "Photosensitivity, gastrointestinal upset, esophagitis.",
+          "notes": "Not recommended in pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected neurosyphilis or other central nervous system involvement.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, syphilis is curable, and most patients have a good prognosis. However, untreated syphilis can lead to serious complications, including cardiovascular and neurological damage.",
+    "complications": [
+      "Neurosyphilis",
+      "Cardiovascular syphilis (aortitis)",
+      "Ocular syphilis",
+      "Congenital syphilis in pregnant women"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of syphilis, perform initial investigations, initiate treatment, and refer to specialist services as needed. They should also provide education on safe sex practices to prevent transmission.",
+    "escalation": "Refer to a sexual health clinic or infectious disease specialist for complex cases, including those with neurological involvement or treatment failure.",
+    "keySafetyConsiderations": "Ensure appropriate follow-up and monitoring of treatment response. Educate patients about the importance of notifying sexual partners and practicing safe sex to prevent reinfection."
+  }
+}

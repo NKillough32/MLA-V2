@@ -1,0 +1,132 @@
+{
+  "id": "raised_intracranial_pressure",
+  "name": "Raised intracranial pressure",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:48:34.397703",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Raised intracranial pressure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRaised intracranial pressure (ICP) is a condition characterized by an increase in the pressure within the skull, which can lead to brain injury and dysfunction.\n\n### Epidemiology\nThe incidence of raised ICP varies, but it is commonly seen in conditions such as traumatic brain injury, stroke, and brain tumors. It can occur in both adults and children, with varying causes and outcomes.\n\n### Essential Pathophysiology\nICP is influenced by the volume of brain tissue, blood, and cerebrospinal fluid (CSF) within the cranial cavity. An increase in any of these components, or a decrease in the compliance of the cranial cavity, can lead to raised ICP. This can result in reduced cerebral perfusion, brain herniation, and ultimately, brain death.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headache\n- Nausea and vomiting\n- Visual disturbances (e.g., blurred vision)\n- Altered mental status (confusion, lethargy)\n- Seizures\n\n### Key Signs\n- Papilledema (swelling of the optic disc)\n- Cushing's triad (hypertension, bradycardia, irregular respirations)\n- Abnormal neurological examination (e.g., decreased level of consciousness, focal neurological deficits)\n- Posturing (decerebrate or decorticate)\n\n### Atypical Presentations\n- Persistent vomiting without headache\n- Sudden onset of seizures in a previously healthy individual\n- Changes in personality or behavior\n\n### Red Flags Requiring Immediate Action\n- Severe headache (thunderclap headache)\n- Rapid deterioration in consciousness\n- Focal neurological signs\n- Signs of herniation (e.g., unilateral pupil dilation, abnormal posturing)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (non-contrast)\n- Neurological examination\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive)\n- Lumbar puncture (if no signs of herniation)\n\n### Specialist Tests\n- Intracranial pressure monitoring (e.g., via an external ventricular drain)\n- Transcranial Doppler ultrasound (to assess cerebral blood flow)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of raised ICP is typically made based on clinical signs and symptoms, supported by imaging findings (e.g., CT or MRI showing mass effect or ventricular enlargement).\n\n### Key Differential Diagnoses to Exclude\n- Subarachnoid hemorrhage\n- Intracerebral hemorrhage\n- Brain tumor\n- Cerebral edema\n- Meningitis\n- Hydrocephalus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Positioning the patient (head elevated at 30 degrees)\n- Osmotic therapy (e.g., mannitol)\n- Hyperventilation (to induce respiratory alkalosis)\n\n#### Second-line Treatments\n- Sedation (e.g., propofol)\n- Neuromuscular blockade (if indicated)\n- CSF drainage (via lumbar puncture or external ventricular drain)\n\n#### Emergency Procedures\n- External ventricular drain placement (to monitor and manage ICP)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying cause (e.g., tumor resection, shunt placement for hydrocephalus)\n- Regular monitoring of neurological status\n\n#### Second-line Treatments\n- Medications (e.g., acetazolamide for idiopathic intracranial hypertension)\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- ICP monitoring if indicated\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces ICP by drawing fluid out of the brain and into the bloodstream.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30 minutes, may repeat every 6-8 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, renal failure, headache, nausea.\n- **When to Use vs. Alternatives**: Monitor serum osmolality and renal function.\n\n#### Acetazolamide\n- **Mechanism of Action**: Carbonic anhydrase inhibitor that decreases CSF production.\n- **Typical Dosing Range**: 250-500 mg orally, 2-3 times daily.\n- **Key Side Effects/Contraindications**: Paresthesia, metabolic acidosis, renal stones.\n- **When to Use vs. Alternatives**: Used in chronic management of idiopathic intracranial hypertension.\n\n### Procedures\n\n#### External Ventricular Drain (EVD)\n- **What it Involves**: A catheter placed into the ventricles of the brain to monitor ICP and drain excess CSF.\n- **Indications**: Severe raised ICP, hydrocephalus, or when ICP monitoring is required.\n- **Key Risks/Complications**: Infection, hemorrhage, catheter obstruction, misplacement.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of raised ICP depends on the underlying cause and the timeliness of intervention. Early recognition and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Brain herniation\n- Permanent neurological deficits\n- Cognitive impairment\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of raised ICP, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely escalation to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of raised ICP, escalate to a senior clinician immediately, especially if there are red flags such as altered consciousness or focal neurological signs.\n\n### Key Safety Considerations\nAlways assess for signs of herniation before performing a lumbar puncture. Monitor vital signs and neurological status closely in patients with suspected raised ICP.\n",
+  "content": {
+    "overview": {
+      "definition": "Raised intracranial pressure (ICP) is a condition characterized by an increase in the pressure within the skull, which can lead to brain injury and dysfunction.",
+      "epidemiology": "The incidence of raised ICP varies, but it is commonly seen in conditions such as traumatic brain injury, stroke, and brain tumors. It can occur in both adults and children, with varying causes and outcomes.",
+      "pathophysiology": "ICP is influenced by the volume of brain tissue, blood, and cerebrospinal fluid (CSF) within the cranial cavity. An increase in any of these components, or a decrease in the compliance of the cranial cavity, can lead to raised ICP. This can result in reduced cerebral perfusion, brain herniation, and ultimately, brain death."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headache",
+        "Nausea and vomiting",
+        "Visual disturbances (e.g., blurred vision)",
+        "Altered mental status (confusion, lethargy)",
+        "Seizures"
+      ],
+      "signs": [
+        "Papilledema (swelling of the optic disc)",
+        "Cushing's triad (hypertension, bradycardia, irregular respirations)",
+        "Abnormal neurological examination (e.g., decreased level of consciousness, focal neurological deficits)",
+        "Posturing (decerebrate or decorticate)"
+      ],
+      "atypicalPresentations": [
+        "Persistent vomiting without headache",
+        "Sudden onset of seizures in a previously healthy individual",
+        "Changes in personality or behavior"
+      ],
+      "redFlags": [
+        "Severe headache (thunderclap headache)",
+        "Rapid deterioration in consciousness",
+        "Focal neurological signs",
+        "Signs of herniation (e.g., unilateral pupil dilation, abnormal posturing)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (non-contrast)",
+        "Neurological examination"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive)",
+        "Lumbar puncture (if no signs of herniation)"
+      ],
+      "specialistTests": [
+        "Intracranial pressure monitoring (e.g., via an external ventricular drain)",
+        "Transcranial Doppler ultrasound (to assess cerebral blood flow)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of raised ICP is typically made based on clinical signs and symptoms, supported by imaging findings (e.g., CT or MRI showing mass effect or ventricular enlargement).",
+      "differentials": [
+        "Subarachnoid hemorrhage",
+        "Intracerebral hemorrhage",
+        "Brain tumor",
+        "Cerebral edema",
+        "Meningitis",
+        "Hydrocephalus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Positioning the patient (head elevated at 30 degrees)",
+          "Osmotic therapy (e.g., mannitol)",
+          "Hyperventilation (to induce respiratory alkalosis)"
+        ],
+        "secondLine": [
+          "Sedation (e.g., propofol)",
+          "Neuromuscular blockade (if indicated)",
+          "CSF drainage (via lumbar puncture or external ventricular drain)"
+        ],
+        "procedures": [
+          "External ventricular drain placement (to monitor and manage ICP)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying cause (e.g., tumor resection, shunt placement for hydrocephalus)",
+          "Regular monitoring of neurological status"
+        ],
+        "secondLine": [
+          "Medications (e.g., acetazolamide for idiopathic intracranial hypertension)"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "ICP monitoring if indicated"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces ICP by drawing fluid out of the brain and into the bloodstream.",
+          "dosing": "1-2 g/kg IV over 30 minutes, may repeat every 6-8 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, renal failure, headache, nausea.",
+          "notes": "Monitor serum osmolality and renal function."
+        },
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Carbonic anhydrase inhibitor that decreases CSF production.",
+          "dosing": "250-500 mg orally, 2-3 times daily.",
+          "sideEffects": "Paresthesia, metabolic acidosis, renal stones.",
+          "notes": "Used in chronic management of idiopathic intracranial hypertension."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "External Ventricular Drain (EVD)",
+          "description": "A catheter placed into the ventricles of the brain to monitor ICP and drain excess CSF.",
+          "indications": "Severe raised ICP, hydrocephalus, or when ICP monitoring is required.",
+          "risks": "Infection, hemorrhage, catheter obstruction, misplacement."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of raised ICP depends on the underlying cause and the timeliness of intervention. Early recognition and management can improve outcomes significantly.",
+    "complications": [
+      "Brain herniation",
+      "Permanent neurological deficits",
+      "Cognitive impairment",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of raised ICP, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely escalation to senior medical staff.",
+    "escalation": "If a patient shows signs of raised ICP, escalate to a senior clinician immediately, especially if there are red flags such as altered consciousness or focal neurological signs.",
+    "keySafetyConsiderations": "Always assess for signs of herniation before performing a lumbar puncture. Monitor vital signs and neurological status closely in patients with suspected raised ICP."
+  }
+}

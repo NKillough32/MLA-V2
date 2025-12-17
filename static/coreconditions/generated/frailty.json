@@ -1,0 +1,149 @@
+{
+  "id": "frailty",
+  "name": "Frailty",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:43:28.794533",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Frailty: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFrailty is a clinical syndrome characterized by a decrease in physiological reserve and increased vulnerability to stressors, leading to a higher risk of adverse health outcomes such as falls, hospitalization, and mortality.\n\n### Epidemiology\nFrailty affects approximately 10-15% of older adults in the community and up to 50% in long-term care settings. Its prevalence increases with age, particularly in those over 80 years.\n\n### Essential Pathophysiology\nFrailty is thought to result from a combination of age-related physiological changes, chronic diseases, and psychosocial factors. It involves multiple systems, including musculoskeletal, endocrine, and immune systems, leading to decreased muscle mass, strength, and endurance.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weight loss\n- Decreased physical activity\n- Poor endurance\n- Cognitive decline\n\n### Key Signs\n- Unintentional weight loss (>5% in the past year)\n- Weakness (grip strength)\n- Exhaustion (self-reported)\n- Slow walking speed\n- Low physical activity\n\n### Atypical Presentations\n- Confusion or delirium in the absence of infection\n- Failure to thrive without clear cause\n- Increased falls without prior history\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in functional status\n- New onset of confusion or cognitive decline\n- Significant weight loss (>10% in the past year)\n- Increased frequency of falls\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Comprehensive Geriatric Assessment (CGA)\n- Functional assessment (e.g., Timed Up and Go test)\n- Nutritional assessment (e.g., Mini Nutritional Assessment)\n\n### Second-line Investigations\n- Blood tests (CBC, electrolytes, thyroid function tests, vitamin D levels)\n- Imaging studies (e.g., DXA scan for bone density)\n\n### Specialist Tests\n- Referral to geriatrician for further assessment\n- Physical therapy evaluation\n- Occupational therapy assessment\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nThe Fried Frailty Phenotype criteria: presence of 3 or more of the following: unintentional weight loss, weakness, exhaustion, slow walking speed, low physical activity.\n\n### Key Differential Diagnoses to Exclude\n- Depression\n- Malnutrition\n- Chronic obstructive pulmonary disease (COPD)\n- Heart failure\n- Parkinson's disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rehydration and nutritional support\n- Physical rehabilitation (e.g., physiotherapy)\n- Medication review and optimization\n\n#### Second-line Treatments\n- Consideration of palliative care if appropriate\n- Referral to specialist services (e.g., geriatric medicine)\n\n#### Emergency Procedures\n- Nutritional support (e.g., enteral feeding if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular exercise programs (strength and balance training)\n- Nutritional interventions (high-protein diet)\n- Multidisciplinary team approach\n\n#### Second-line Treatments\n- Medication adjustments to minimize polypharmacy\n- Psychosocial support\n\n#### Monitoring Requirements\n- Regular follow-up assessments to monitor functional status and frailty progression\n- Screening for depression and cognitive impairment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Vitamin D\n- **Mechanism of Action**: Enhances calcium absorption and bone health, may improve muscle function.\n- **Typical Dosing Range**: 800-2000 IU daily depending on deficiency.\n- **Key Side Effects/Contraindications**: Hypercalcemia, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Consider in older adults with low levels or limited sun exposure.\n\n#### Protein supplements\n- **Mechanism of Action**: Provides essential amino acids to support muscle synthesis.\n- **Typical Dosing Range**: Varies by product; typically 20-30g per serving.\n- **Key Side Effects/Contraindications**: Gastrointestinal discomfort, potential for kidney strain in excess.\n- **When to Use vs. Alternatives**: Useful in malnourished patients.\n\n#### Antidepressants (e.g., SSRIs)\n- **Mechanism of Action**: Modulates neurotransmitters to improve mood and energy levels.\n- **Typical Dosing Range**: Varies; e.g., sertraline 50-200 mg daily.\n- **Key Side Effects/Contraindications**: Nausea, weight gain, sexual dysfunction.\n- **When to Use vs. Alternatives**: Consider in frail patients with depression.\n\n### Procedures\n\n#### Comprehensive Geriatric Assessment (CGA)\n- **What it Involves**: A multidimensional, interdisciplinary diagnostic process to determine an older person's medical, psychological, and functional capabilities.\n- **Indications**: Indicated for frail older adults to guide management and care planning.\n- **Key Risks/Complications**: Potential for over-medicalization, emotional distress during assessment.\n\n#### Nutritional support (e.g., enteral feeding)\n- **What it Involves**: Provision of nutrition via a feeding tube for those unable to eat adequately by mouth.\n- **Indications**: Indicated in severe malnutrition or swallowing difficulties.\n- **Key Risks/Complications**: Infection, aspiration pneumonia, gastrointestinal complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nFrailty is associated with increased morbidity and mortality. Early identification and management can improve outcomes and quality of life.\n\n### Important Complications to Watch For\n- Increased risk of falls and fractures\n- Hospitalization\n- Functional decline\n- Increased dependency\n- Higher mortality rates\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize frailty, initiate appropriate investigations, and coordinate care with multidisciplinary teams. They should also educate patients and families about frailty and its implications.\n\n### When to Escalate to Senior/Specialist\nRefer to geriatric services for complex cases, particularly if there is rapid deterioration or if the patient has multiple comorbidities requiring specialized management.\n\n### Key Safety Considerations\nEnsure safe prescribing practices to minimize polypharmacy, monitor for adverse drug reactions, and assess for fall risks in frail patients. Regularly review the patient's functional status and adjust care plans accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Frailty is a clinical syndrome characterized by a decrease in physiological reserve and increased vulnerability to stressors, leading to a higher risk of adverse health outcomes such as falls, hospitalization, and mortality.",
+      "epidemiology": "Frailty affects approximately 10-15% of older adults in the community and up to 50% in long-term care settings. Its prevalence increases with age, particularly in those over 80 years.",
+      "pathophysiology": "Frailty is thought to result from a combination of age-related physiological changes, chronic diseases, and psychosocial factors. It involves multiple systems, including musculoskeletal, endocrine, and immune systems, leading to decreased muscle mass, strength, and endurance."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weight loss",
+        "Decreased physical activity",
+        "Poor endurance",
+        "Cognitive decline"
+      ],
+      "signs": [
+        "Unintentional weight loss (>5% in the past year)",
+        "Weakness (grip strength)",
+        "Exhaustion (self-reported)",
+        "Slow walking speed",
+        "Low physical activity"
+      ],
+      "atypicalPresentations": [
+        "Confusion or delirium in the absence of infection",
+        "Failure to thrive without clear cause",
+        "Increased falls without prior history"
+      ],
+      "redFlags": [
+        "Rapid deterioration in functional status",
+        "New onset of confusion or cognitive decline",
+        "Significant weight loss (>10% in the past year)",
+        "Increased frequency of falls"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Comprehensive Geriatric Assessment (CGA)",
+        "Functional assessment (e.g., Timed Up and Go test)",
+        "Nutritional assessment (e.g., Mini Nutritional Assessment)"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, electrolytes, thyroid function tests, vitamin D levels)",
+        "Imaging studies (e.g., DXA scan for bone density)"
+      ],
+      "specialistTests": [
+        "Referral to geriatrician for further assessment",
+        "Physical therapy evaluation",
+        "Occupational therapy assessment"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "The Fried Frailty Phenotype criteria: presence of 3 or more of the following: unintentional weight loss, weakness, exhaustion, slow walking speed, low physical activity.",
+      "differentials": [
+        "Depression",
+        "Malnutrition",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Heart failure",
+        "Parkinson's disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rehydration and nutritional support",
+          "Physical rehabilitation (e.g., physiotherapy)",
+          "Medication review and optimization"
+        ],
+        "secondLine": [
+          "Consideration of palliative care if appropriate",
+          "Referral to specialist services (e.g., geriatric medicine)"
+        ],
+        "procedures": [
+          "Nutritional support (e.g., enteral feeding if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular exercise programs (strength and balance training)",
+          "Nutritional interventions (high-protein diet)",
+          "Multidisciplinary team approach"
+        ],
+        "secondLine": [
+          "Medication adjustments to minimize polypharmacy",
+          "Psychosocial support"
+        ],
+        "monitoring": [
+          "Regular follow-up assessments to monitor functional status and frailty progression",
+          "Screening for depression and cognitive impairment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Vitamin D",
+          "mechanism": "Enhances calcium absorption and bone health, may improve muscle function.",
+          "dosing": "800-2000 IU daily depending on deficiency.",
+          "sideEffects": "Hypercalcemia, gastrointestinal upset.",
+          "notes": "Consider in older adults with low levels or limited sun exposure."
+        },
+        {
+          "name": "Protein supplements",
+          "mechanism": "Provides essential amino acids to support muscle synthesis.",
+          "dosing": "Varies by product; typically 20-30g per serving.",
+          "sideEffects": "Gastrointestinal discomfort, potential for kidney strain in excess.",
+          "notes": "Useful in malnourished patients."
+        },
+        {
+          "name": "Antidepressants (e.g., SSRIs)",
+          "mechanism": "Modulates neurotransmitters to improve mood and energy levels.",
+          "dosing": "Varies; e.g., sertraline 50-200 mg daily.",
+          "sideEffects": "Nausea, weight gain, sexual dysfunction.",
+          "notes": "Consider in frail patients with depression."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Comprehensive Geriatric Assessment (CGA)",
+          "description": "A multidimensional, interdisciplinary diagnostic process to determine an older person's medical, psychological, and functional capabilities.",
+          "indications": "Indicated for frail older adults to guide management and care planning.",
+          "risks": "Potential for over-medicalization, emotional distress during assessment."
+        },
+        {
+          "name": "Nutritional support (e.g., enteral feeding)",
+          "description": "Provision of nutrition via a feeding tube for those unable to eat adequately by mouth.",
+          "indications": "Indicated in severe malnutrition or swallowing difficulties.",
+          "risks": "Infection, aspiration pneumonia, gastrointestinal complications."
+        }
+      ]
+    },
+    "prognosis": "Frailty is associated with increased morbidity and mortality. Early identification and management can improve outcomes and quality of life.",
+    "complications": [
+      "Increased risk of falls and fractures",
+      "Hospitalization",
+      "Functional decline",
+      "Increased dependency",
+      "Higher mortality rates"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize frailty, initiate appropriate investigations, and coordinate care with multidisciplinary teams. They should also educate patients and families about frailty and its implications.",
+    "escalation": "Refer to geriatric services for complex cases, particularly if there is rapid deterioration or if the patient has multiple comorbidities requiring specialized management.",
+    "keySafetyConsiderations": "Ensure safe prescribing practices to minimize polypharmacy, monitor for adverse drug reactions, and assess for fall risks in frail patients. Regularly review the patient's functional status and adjust care plans accordingly."
+  }
+}

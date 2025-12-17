@@ -1,0 +1,134 @@
+{
+  "id": "venous_ulcer",
+  "name": "Venous ulcer",
+  "domains": [
+    "Plastics"
+  ],
+  "generatedAt": "2025-12-17T21:35:51.120519",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Venous ulcer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVenous ulcers are chronic wounds that occur due to inadequate venous return, leading to increased venous pressure and subsequent skin breakdown, typically located on the lower legs.\n\n### Epidemiology\nVenous ulcers account for approximately 70-90% of all leg ulcers, with a prevalence of 1-2% in the general population, increasing with age and in those with a history of venous disease.\n\n### Essential Pathophysiology\nVenous ulcers result from venous hypertension, often due to valvular incompetence or obstruction in the venous system. This leads to increased interstitial fluid, tissue hypoxia, and inflammation, ultimately causing skin breakdown.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic leg pain\n- Swelling in the legs\n- Itching or irritation around the ulcer\n- Discoloration of the skin (brownish pigmentation)\n\n### Key Signs\n- Presence of a shallow, irregularly shaped ulcer on the lower leg\n- Surrounding skin may be edematous and discolored\n- Possible presence of varicosities or telangiectasia\n- Exudate from the ulcer\n\n### Atypical Presentations\n- Ulcers may be located on the medial malleolus or other atypical sites\n- Presence of multiple ulcers or ulcers that do not respond to standard treatment\n\n### Red Flags Requiring Immediate Action\n- Signs of infection (increased pain, redness, warmth, purulent discharge)\n- Rapidly enlarging ulcer\n- Systemic symptoms (fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Doppler ultrasound to assess venous reflux and patency\n\n### Second-line Investigations\n- Ankle-brachial index (ABI) to rule out arterial disease\n- Venography or duplex ultrasound for detailed venous mapping\n\n### Specialist Tests\n- MRI or CT venography in complex cases\n- Skin biopsy if malignancy is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of a characteristic ulcer and associated symptoms, with exclusion of arterial disease and other ulcer types.\n\n### Key Differential Diagnoses to Exclude\n- Arterial ulcers\n- Diabetic ulcers\n- Pressure ulcers\n- Malignant ulcers\n- Infective ulcers\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Compression therapy (e.g., compression bandaging or stockings)\n- Wound care with appropriate dressings\n\n#### Second-line Treatments\n- Topical antiseptics if infection is suspected\n- Pain management with analgesics\n\n#### Emergency Procedures\n- Debridement of necrotic tissue if present\n- Surgical intervention for underlying venous insufficiency (e.g., vein stripping, endovenous laser therapy)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued compression therapy\n- Regular wound care and dressing changes\n\n#### Second-line Treatments\n- Consideration of adjunctive therapies (e.g., growth factors, skin substitutes)\n- Referral to a specialist wound care clinic if not healing\n\n#### Monitoring Requirements\n- Regular assessment of ulcer healing progress\n- Monitoring for signs of infection or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pentoxifylline\n- **Mechanism of Action**: Improves blood flow and reduces blood viscosity\n- **Typical Dosing Range**: 400 mg orally three times daily\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness\n- **When to Use vs. Alternatives**: Consider in patients with non-healing ulcers to enhance healing.\n\n#### Topical antibiotics (e.g., silver sulfadiazine)\n- **Mechanism of Action**: Prevents infection in the ulcer\n- **Typical Dosing Range**: Apply to the ulcer site as directed\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions\n- **When to Use vs. Alternatives**: Use in cases of suspected infection.\n\n### Procedures\n\n#### Debridement\n- **What it Involves**: Removal of necrotic or non-viable tissue from the ulcer bed to promote healing\n- **Indications**: Presence of necrotic tissue, non-healing ulcers\n- **Key Risks/Complications**: Bleeding, infection, pain during the procedure.\n\n#### Surgical intervention for venous insufficiency\n- **What it Involves**: Procedures such as vein stripping or endovenous laser therapy to correct underlying venous problems\n- **Indications**: Severe venous insufficiency contributing to ulcer formation\n- **Key Risks/Complications**: Deep vein thrombosis, infection, nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, venous ulcers can heal, but recurrence is common, especially if underlying venous disease is not addressed. Healing may take weeks to months depending on the severity and treatment adherence.\n\n### Important Complications to Watch For\n- Infection (cellulitis, osteomyelitis)\n- Chronic pain\n- Recurrence of ulcers\n- Development of squamous cell carcinoma in chronic ulcers.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage wound care, apply compression therapy, and refer to specialists as needed. They should also educate patients on self-care and lifestyle modifications to prevent recurrence.\n\n### When to Escalate to Senior/Specialist\nRefer to a vascular surgeon or wound care specialist if the ulcer does not show signs of healing within 4-6 weeks, or if there are signs of infection or complications.\n\n### Key Safety Considerations\nEnsure proper application of compression therapy to avoid complications such as arterial occlusion. Monitor for signs of infection and ensure timely referral for surgical intervention if necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Venous ulcers are chronic wounds that occur due to inadequate venous return, leading to increased venous pressure and subsequent skin breakdown, typically located on the lower legs.",
+      "epidemiology": "Venous ulcers account for approximately 70-90% of all leg ulcers, with a prevalence of 1-2% in the general population, increasing with age and in those with a history of venous disease.",
+      "pathophysiology": "Venous ulcers result from venous hypertension, often due to valvular incompetence or obstruction in the venous system. This leads to increased interstitial fluid, tissue hypoxia, and inflammation, ultimately causing skin breakdown."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic leg pain",
+        "Swelling in the legs",
+        "Itching or irritation around the ulcer",
+        "Discoloration of the skin (brownish pigmentation)"
+      ],
+      "signs": [
+        "Presence of a shallow, irregularly shaped ulcer on the lower leg",
+        "Surrounding skin may be edematous and discolored",
+        "Possible presence of varicosities or telangiectasia",
+        "Exudate from the ulcer"
+      ],
+      "atypicalPresentations": [
+        "Ulcers may be located on the medial malleolus or other atypical sites",
+        "Presence of multiple ulcers or ulcers that do not respond to standard treatment"
+      ],
+      "redFlags": [
+        "Signs of infection (increased pain, redness, warmth, purulent discharge)",
+        "Rapidly enlarging ulcer",
+        "Systemic symptoms (fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Doppler ultrasound to assess venous reflux and patency"
+      ],
+      "secondLine": [
+        "Ankle-brachial index (ABI) to rule out arterial disease",
+        "Venography or duplex ultrasound for detailed venous mapping"
+      ],
+      "specialistTests": [
+        "MRI or CT venography in complex cases",
+        "Skin biopsy if malignancy is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of a characteristic ulcer and associated symptoms, with exclusion of arterial disease and other ulcer types.",
+      "differentials": [
+        "Arterial ulcers",
+        "Diabetic ulcers",
+        "Pressure ulcers",
+        "Malignant ulcers",
+        "Infective ulcers"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Compression therapy (e.g., compression bandaging or stockings)",
+          "Wound care with appropriate dressings"
+        ],
+        "secondLine": [
+          "Topical antiseptics if infection is suspected",
+          "Pain management with analgesics"
+        ],
+        "procedures": [
+          "Debridement of necrotic tissue if present",
+          "Surgical intervention for underlying venous insufficiency (e.g., vein stripping, endovenous laser therapy)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued compression therapy",
+          "Regular wound care and dressing changes"
+        ],
+        "secondLine": [
+          "Consideration of adjunctive therapies (e.g., growth factors, skin substitutes)",
+          "Referral to a specialist wound care clinic if not healing"
+        ],
+        "monitoring": [
+          "Regular assessment of ulcer healing progress",
+          "Monitoring for signs of infection or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pentoxifylline",
+          "mechanism": "Improves blood flow and reduces blood viscosity",
+          "dosing": "400 mg orally three times daily",
+          "sideEffects": "Nausea, headache, dizziness",
+          "notes": "Consider in patients with non-healing ulcers to enhance healing."
+        },
+        {
+          "name": "Topical antibiotics (e.g., silver sulfadiazine)",
+          "mechanism": "Prevents infection in the ulcer",
+          "dosing": "Apply to the ulcer site as directed",
+          "sideEffects": "Local irritation, allergic reactions",
+          "notes": "Use in cases of suspected infection."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debridement",
+          "description": "Removal of necrotic or non-viable tissue from the ulcer bed to promote healing",
+          "indications": "Presence of necrotic tissue, non-healing ulcers",
+          "risks": "Bleeding, infection, pain during the procedure."
+        },
+        {
+          "name": "Surgical intervention for venous insufficiency",
+          "description": "Procedures such as vein stripping or endovenous laser therapy to correct underlying venous problems",
+          "indications": "Severe venous insufficiency contributing to ulcer formation",
+          "risks": "Deep vein thrombosis, infection, nerve injury."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, venous ulcers can heal, but recurrence is common, especially if underlying venous disease is not addressed. Healing may take weeks to months depending on the severity and treatment adherence.",
+    "complications": [
+      "Infection (cellulitis, osteomyelitis)",
+      "Chronic pain",
+      "Recurrence of ulcers",
+      "Development of squamous cell carcinoma in chronic ulcers."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage wound care, apply compression therapy, and refer to specialists as needed. They should also educate patients on self-care and lifestyle modifications to prevent recurrence.",
+    "escalation": "Refer to a vascular surgeon or wound care specialist if the ulcer does not show signs of healing within 4-6 weeks, or if there are signs of infection or complications.",
+    "keySafetyConsiderations": "Ensure proper application of compression therapy to avoid complications such as arterial occlusion. Monitor for signs of infection and ensure timely referral for surgical intervention if necessary."
+  }
+}

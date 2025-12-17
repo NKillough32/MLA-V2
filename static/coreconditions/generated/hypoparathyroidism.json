@@ -1,0 +1,131 @@
+{
+  "id": "hypoparathyroidism",
+  "name": "Hypoparathyroidism",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:35:40.983916",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypoparathyroidism: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypoparathyroidism is a rare endocrine disorder characterized by insufficient secretion of parathyroid hormone (PTH), leading to hypocalcemia and hyperphosphatemia.\n\n### Epidemiology\nHypoparathyroidism is uncommon, with an estimated prevalence of 20-37 cases per 100,000 individuals. It can be acquired (post-surgical, autoimmune) or hereditary (e.g., DiGeorge syndrome).\n\n### Essential Pathophysiology\nThe parathyroid glands regulate calcium and phosphate metabolism through PTH. In hypoparathyroidism, low PTH levels result in decreased calcium reabsorption in the kidneys, reduced intestinal absorption of calcium, and increased phosphate retention, leading to hypocalcemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Muscle cramps\n- Tetany (involuntary muscle contractions)\n- Paresthesia (tingling)\n- Fatigue\n- Anxiety and mood changes\n- Seizures\n\n### Key Signs\n- Chvostek's sign (facial muscle spasm upon tapping the facial nerve)\n- Trousseau's sign (carpal spasm after occlusion of the brachial artery)\n- Dry skin and brittle nails\n- Cataracts (long-term)\n- Dental abnormalities\n\n### Atypical Presentations\n- Asymptomatic hypocalcemia discovered incidentally\n- Chronic fatigue syndrome-like symptoms\n- Psychiatric manifestations (depression, anxiety)\n\n### Red Flags Requiring Immediate Action\n- Severe hypocalcemia (calcium < 1.9 mmol/L)\n- Seizures or significant neurological symptoms\n- Cardiac arrhythmias (prolonged QT interval)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum calcium (total and ionized)\n- Serum phosphate\n- Serum parathyroid hormone (PTH) levels\n\n### Second-line Investigations\n- Vitamin D levels (25-hydroxyvitamin D)\n- Magnesium levels (to rule out hypomagnesemia)\n- Urinary calcium excretion\n\n### Specialist Tests\n- Genetic testing for hereditary forms (e.g., CASR, GCM2 mutations)\n- Bone density scan (DEXA) if osteoporosis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by low serum calcium, high serum phosphate, and low or inappropriately normal PTH levels.\n\n### Key Differential Diagnoses to Exclude\n- Primary hyperparathyroidism\n- Pseudohypoparathyroidism\n- Vitamin D deficiency\n- Renal failure\n- Hypomagnesemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous calcium gluconate or calcium chloride (1-2 g over 10-20 minutes)\n\n#### Second-line Treatments\n- Oral calcium supplements (calcium carbonate or calcium citrate)\n\n#### Emergency Procedures\n- Monitoring of cardiac rhythm in severe cases\n- Consideration for intravenous magnesium if hypomagnesemia is present\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral calcium supplements (1-3 g/day)\n- Active vitamin D analogs (calcitriol 0.25-1 mcg/day)\n\n#### Second-line Treatments\n- Thiazide diuretics to reduce urinary calcium loss (if hypercalciuria is present)\n\n#### Monitoring Requirements\n- Regular monitoring of serum calcium and phosphate levels every 3-6 months\n- Assessment for complications (e.g., renal stones, cataracts)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Calcium carbonate\n- **Mechanism of Action**: Calcium supplement that increases serum calcium levels.\n- **Typical Dosing Range**: 500-1000 mg orally 2-3 times daily with meals.\n- **Key Side Effects/Contraindications**: Constipation, hypercalcemia, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Monitor calcium levels regularly.\n\n#### Calcitriol (active vitamin D)\n- **Mechanism of Action**: Increases intestinal absorption of calcium and phosphate.\n- **Typical Dosing Range**: 0.25-1 mcg orally daily, adjusted based on calcium levels.\n- **Key Side Effects/Contraindications**: Hypercalcemia, hyperphosphatemia, renal impairment.\n- **When to Use vs. Alternatives**: Monitor calcium and phosphate levels frequently.\n\n### Procedures\n\n#### Calcium infusion\n- **What it Involves**: Intravenous administration of calcium gluconate or calcium chloride for acute hypocalcemia.\n- **Indications**: Severe hypocalcemia with symptoms or cardiac instability.\n- **Key Risks/Complications**: Cardiac arrhythmias, local tissue necrosis if extravasation occurs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, patients can lead normal lives. Long-term complications may include renal stones and cataracts.\n\n### Important Complications to Watch For\n- Severe hypocalcemia leading to seizures\n- Cardiac arrhythmias\n- Chronic renal impairment\n- Osteoporosis due to prolonged hypocalcemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hypoparathyroidism, initiate investigations, and manage acute hypocalcemia. They should also educate patients on chronic management and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist for persistent hypocalcemia, complex cases, or if surgical intervention is considered.\n\n### Key Safety Considerations\nEnsure regular monitoring of calcium and phosphate levels, educate patients on recognizing symptoms of hypocalcemia, and provide guidance on medication adherence.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypoparathyroidism is a rare endocrine disorder characterized by insufficient secretion of parathyroid hormone (PTH), leading to hypocalcemia and hyperphosphatemia.",
+      "epidemiology": "Hypoparathyroidism is uncommon, with an estimated prevalence of 20-37 cases per 100,000 individuals. It can be acquired (post-surgical, autoimmune) or hereditary (e.g., DiGeorge syndrome).",
+      "pathophysiology": "The parathyroid glands regulate calcium and phosphate metabolism through PTH. In hypoparathyroidism, low PTH levels result in decreased calcium reabsorption in the kidneys, reduced intestinal absorption of calcium, and increased phosphate retention, leading to hypocalcemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Muscle cramps",
+        "Tetany (involuntary muscle contractions)",
+        "Paresthesia (tingling)",
+        "Fatigue",
+        "Anxiety and mood changes",
+        "Seizures"
+      ],
+      "signs": [
+        "Chvostek's sign (facial muscle spasm upon tapping the facial nerve)",
+        "Trousseau's sign (carpal spasm after occlusion of the brachial artery)",
+        "Dry skin and brittle nails",
+        "Cataracts (long-term)",
+        "Dental abnormalities"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hypocalcemia discovered incidentally",
+        "Chronic fatigue syndrome-like symptoms",
+        "Psychiatric manifestations (depression, anxiety)"
+      ],
+      "redFlags": [
+        "Severe hypocalcemia (calcium < 1.9 mmol/L)",
+        "Seizures or significant neurological symptoms",
+        "Cardiac arrhythmias (prolonged QT interval)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum calcium (total and ionized)",
+        "Serum phosphate",
+        "Serum parathyroid hormone (PTH) levels"
+      ],
+      "secondLine": [
+        "Vitamin D levels (25-hydroxyvitamin D)",
+        "Magnesium levels (to rule out hypomagnesemia)",
+        "Urinary calcium excretion"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary forms (e.g., CASR, GCM2 mutations)",
+        "Bone density scan (DEXA) if osteoporosis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by low serum calcium, high serum phosphate, and low or inappropriately normal PTH levels.",
+      "differentials": [
+        "Primary hyperparathyroidism",
+        "Pseudohypoparathyroidism",
+        "Vitamin D deficiency",
+        "Renal failure",
+        "Hypomagnesemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous calcium gluconate or calcium chloride (1-2 g over 10-20 minutes)"
+        ],
+        "secondLine": [
+          "Oral calcium supplements (calcium carbonate or calcium citrate)"
+        ],
+        "procedures": [
+          "Monitoring of cardiac rhythm in severe cases",
+          "Consideration for intravenous magnesium if hypomagnesemia is present"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral calcium supplements (1-3 g/day)",
+          "Active vitamin D analogs (calcitriol 0.25-1 mcg/day)"
+        ],
+        "secondLine": [
+          "Thiazide diuretics to reduce urinary calcium loss (if hypercalciuria is present)"
+        ],
+        "monitoring": [
+          "Regular monitoring of serum calcium and phosphate levels every 3-6 months",
+          "Assessment for complications (e.g., renal stones, cataracts)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Calcium carbonate",
+          "mechanism": "Calcium supplement that increases serum calcium levels.",
+          "dosing": "500-1000 mg orally 2-3 times daily with meals.",
+          "sideEffects": "Constipation, hypercalcemia, gastrointestinal upset.",
+          "notes": "Monitor calcium levels regularly."
+        },
+        {
+          "name": "Calcitriol (active vitamin D)",
+          "mechanism": "Increases intestinal absorption of calcium and phosphate.",
+          "dosing": "0.25-1 mcg orally daily, adjusted based on calcium levels.",
+          "sideEffects": "Hypercalcemia, hyperphosphatemia, renal impairment.",
+          "notes": "Monitor calcium and phosphate levels frequently."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Calcium infusion",
+          "description": "Intravenous administration of calcium gluconate or calcium chloride for acute hypocalcemia.",
+          "indications": "Severe hypocalcemia with symptoms or cardiac instability.",
+          "risks": "Cardiac arrhythmias, local tissue necrosis if extravasation occurs."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, patients can lead normal lives. Long-term complications may include renal stones and cataracts.",
+    "complications": [
+      "Severe hypocalcemia leading to seizures",
+      "Cardiac arrhythmias",
+      "Chronic renal impairment",
+      "Osteoporosis due to prolonged hypocalcemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hypoparathyroidism, initiate investigations, and manage acute hypocalcemia. They should also educate patients on chronic management and monitor for complications.",
+    "escalation": "Refer to an endocrinologist for persistent hypocalcemia, complex cases, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Ensure regular monitoring of calcium and phosphate levels, educate patients on recognizing symptoms of hypocalcemia, and provide guidance on medication adherence."
+  }
+}

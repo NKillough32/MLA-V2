@@ -1,0 +1,126 @@
+{
+  "id": "vitreous_haemorrhage",
+  "name": "Vitreous haemorrhage",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:41:57.549980",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vitreous haemorrhage: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVitreous haemorrhage is the presence of blood in the vitreous cavity of the eye, which can lead to visual impairment and is often a result of retinal or vascular pathology.\n\n### Epidemiology\nVitreous haemorrhage is more common in older adults, particularly those with diabetes, retinal tears, or other retinal diseases. It can occur in any age group but is particularly prevalent in individuals with a history of eye trauma or surgery.\n\n### Essential Pathophysiology\nVitreous haemorrhage occurs when blood vessels in the retina or optic nerve rupture, leading to bleeding into the vitreous body. This can be due to conditions such as diabetic retinopathy, retinal tears, or trauma. The blood can obstruct light passage to the retina, causing visual disturbances.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of floaters\n- Flashes of light\n- Blurred vision\n- Dark spots or shadows in vision\n- Complete or partial vision loss\n\n### Key Signs\n- Visual acuity may be reduced\n- Fundoscopic examination may reveal blood in the vitreous cavity\n- Possible retinal tears or detachment may be noted\n\n### Atypical Presentations\n- Gradual onset of symptoms in chronic cases\n- Symptoms may be mistaken for other ocular conditions\n\n### Red Flags Requiring Immediate Action\n- Sudden loss of vision\n- Severe eye pain\n- History of trauma or surgery\n- Signs of retinal detachment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual acuity assessment\n- Fundoscopy to assess for retinal tears or detachment\n- B-scan ultrasonography if fundoscopic view is obscured\n\n### Second-line Investigations\n- Optical coherence tomography (OCT) to evaluate retinal structure\n- Fluorescein angiography to assess retinal blood flow\n\n### Specialist Tests\n- CT or MRI of the orbit if there is suspicion of intraocular or orbital pathology\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and examination findings, supported by imaging if necessary.\n\n### Key Differential Diagnoses to Exclude\n- Retinal detachment\n- Retinal tear\n- Diabetic retinopathy\n- Vitreous detachment\n- Uveitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and monitoring if vision is stable\n- Referral to ophthalmology for further evaluation\n\n#### Second-line Treatments\n- Laser photocoagulation if retinal tears are present\n- Vitrectomy if there is significant vision loss or persistent haemorrhage\n\n#### Emergency Procedures\n- Vitrectomy: surgical removal of the vitreous gel to clear blood and address underlying issues. Indicated for significant vision loss or persistent vitreous haemorrhage. Risks include retinal detachment, infection, and cataract formation.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of visual acuity and symptoms\n- Education on signs of complications\n\n#### Second-line Treatments\n- Surgical intervention if vision does not improve or if complications arise\n\n#### Monitoring Requirements\n- Regular follow-up with ophthalmology to assess for resolution of haemorrhage and any retinal complications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Anti-VEGF agents (e.g., Ranibizumab)\n- **Mechanism of Action**: Inhibits vascular endothelial growth factor to reduce neovascularization and leakage.\n- **Typical Dosing Range**: Typically administered as an intravitreal injection; dosing varies based on condition.\n- **Key Side Effects/Contraindications**: Possible ocular inflammation, increased intraocular pressure, retinal detachment.\n- **When to Use vs. Alternatives**: Used in cases of diabetic retinopathy or neovascular age-related macular degeneration.\n\n#### Corticosteroids (e.g., Triamcinolone)\n- **Mechanism of Action**: Reduces inflammation and can help in cases of diabetic macular edema.\n- **Typical Dosing Range**: Intravitreal injection; dosing varies based on condition.\n- **Key Side Effects/Contraindications**: Increased intraocular pressure, cataract formation, risk of infection.\n- **When to Use vs. Alternatives**: May be used in conjunction with anti-VEGF therapy.\n\n### Procedures\n\n#### Vitrectomy\n- **What it Involves**: Surgical procedure to remove the vitreous gel and any blood present in the vitreous cavity.\n- **Indications**: Significant vision loss, persistent vitreous haemorrhage, or retinal tears.\n- **Key Risks/Complications**: Retinal detachment, infection, bleeding, cataract formation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for vitreous haemorrhage varies; many cases resolve spontaneously, but some may lead to permanent vision loss, especially if associated with retinal detachment or other complications.\n\n### Important Complications to Watch For\n- Retinal detachment\n- Persistent vision loss\n- Recurrent vitreous haemorrhage\n- Cataract formation post-surgery\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology for further evaluation and management. They should also educate patients about warning signs and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with sudden vision loss, severe pain, or signs of retinal detachment, immediate referral to an ophthalmologist is necessary. In cases of trauma, consider emergency services for urgent evaluation.\n\n### Key Safety Considerations\nEnsure thorough history-taking to identify risk factors for retinal pathology. Monitor for signs of complications and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "Vitreous haemorrhage is the presence of blood in the vitreous cavity of the eye, which can lead to visual impairment and is often a result of retinal or vascular pathology.",
+      "epidemiology": "Vitreous haemorrhage is more common in older adults, particularly those with diabetes, retinal tears, or other retinal diseases. It can occur in any age group but is particularly prevalent in individuals with a history of eye trauma or surgery.",
+      "pathophysiology": "Vitreous haemorrhage occurs when blood vessels in the retina or optic nerve rupture, leading to bleeding into the vitreous body. This can be due to conditions such as diabetic retinopathy, retinal tears, or trauma. The blood can obstruct light passage to the retina, causing visual disturbances."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of floaters",
+        "Flashes of light",
+        "Blurred vision",
+        "Dark spots or shadows in vision",
+        "Complete or partial vision loss"
+      ],
+      "signs": [
+        "Visual acuity may be reduced",
+        "Fundoscopic examination may reveal blood in the vitreous cavity",
+        "Possible retinal tears or detachment may be noted"
+      ],
+      "atypicalPresentations": [
+        "Gradual onset of symptoms in chronic cases",
+        "Symptoms may be mistaken for other ocular conditions"
+      ],
+      "redFlags": [
+        "Sudden loss of vision",
+        "Severe eye pain",
+        "History of trauma or surgery",
+        "Signs of retinal detachment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual acuity assessment",
+        "Fundoscopy to assess for retinal tears or detachment",
+        "B-scan ultrasonography if fundoscopic view is obscured"
+      ],
+      "secondLine": [
+        "Optical coherence tomography (OCT) to evaluate retinal structure",
+        "Fluorescein angiography to assess retinal blood flow"
+      ],
+      "specialistTests": [
+        "CT or MRI of the orbit if there is suspicion of intraocular or orbital pathology"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and examination findings, supported by imaging if necessary.",
+      "differentials": [
+        "Retinal detachment",
+        "Retinal tear",
+        "Diabetic retinopathy",
+        "Vitreous detachment",
+        "Uveitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and monitoring if vision is stable",
+          "Referral to ophthalmology for further evaluation"
+        ],
+        "secondLine": [
+          "Laser photocoagulation if retinal tears are present",
+          "Vitrectomy if there is significant vision loss or persistent haemorrhage"
+        ],
+        "procedures": [
+          "Vitrectomy: surgical removal of the vitreous gel to clear blood and address underlying issues. Indicated for significant vision loss or persistent vitreous haemorrhage. Risks include retinal detachment, infection, and cataract formation."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of visual acuity and symptoms",
+          "Education on signs of complications"
+        ],
+        "secondLine": [
+          "Surgical intervention if vision does not improve or if complications arise"
+        ],
+        "monitoring": [
+          "Regular follow-up with ophthalmology to assess for resolution of haemorrhage and any retinal complications."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Anti-VEGF agents (e.g., Ranibizumab)",
+          "mechanism": "Inhibits vascular endothelial growth factor to reduce neovascularization and leakage.",
+          "dosing": "Typically administered as an intravitreal injection; dosing varies based on condition.",
+          "sideEffects": "Possible ocular inflammation, increased intraocular pressure, retinal detachment.",
+          "notes": "Used in cases of diabetic retinopathy or neovascular age-related macular degeneration."
+        },
+        {
+          "name": "Corticosteroids (e.g., Triamcinolone)",
+          "mechanism": "Reduces inflammation and can help in cases of diabetic macular edema.",
+          "dosing": "Intravitreal injection; dosing varies based on condition.",
+          "sideEffects": "Increased intraocular pressure, cataract formation, risk of infection.",
+          "notes": "May be used in conjunction with anti-VEGF therapy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vitrectomy",
+          "description": "Surgical procedure to remove the vitreous gel and any blood present in the vitreous cavity.",
+          "indications": "Significant vision loss, persistent vitreous haemorrhage, or retinal tears.",
+          "risks": "Retinal detachment, infection, bleeding, cataract formation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for vitreous haemorrhage varies; many cases resolve spontaneously, but some may lead to permanent vision loss, especially if associated with retinal detachment or other complications.",
+    "complications": [
+      "Retinal detachment",
+      "Persistent vision loss",
+      "Recurrent vitreous haemorrhage",
+      "Cataract formation post-surgery"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology for further evaluation and management. They should also educate patients about warning signs and the importance of follow-up.",
+    "escalation": "If a patient presents with sudden vision loss, severe pain, or signs of retinal detachment, immediate referral to an ophthalmologist is necessary. In cases of trauma, consider emergency services for urgent evaluation.",
+    "keySafetyConsiderations": "Ensure thorough history-taking to identify risk factors for retinal pathology. Monitor for signs of complications and educate patients on the importance of follow-up appointments."
+  }
+}

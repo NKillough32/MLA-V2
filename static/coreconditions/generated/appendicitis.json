@@ -1,0 +1,138 @@
+{
+  "id": "appendicitis",
+  "name": "Appendicitis",
+  "domains": [
+    "Gastrointestinal Surgery",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:15:21.900500",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Appendicitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAppendicitis is the inflammation of the appendix, a small, tube-like structure attached to the large intestine. It is a common surgical emergency that typically requires appendectomy.\n\n### Epidemiology\nAppendicitis is most common in individuals aged 10-30 years, with a lifetime risk of approximately 7-8%. It is slightly more prevalent in males than females.\n\n### Essential Pathophysiology\nAppendicitis often occurs due to obstruction of the appendiceal lumen, leading to increased intraluminal pressure, impaired venous outflow, and bacterial overgrowth. This results in inflammation, necrosis, and potential perforation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (initially periumbilical, then localizing to the right lower quadrant)\n- Nausea and vomiting\n- Loss of appetite\n- Fever\n- Constipation or diarrhea\n\n### Key Signs\n- Tenderness in the right lower quadrant (McBurney's point)\n- Rebound tenderness\n- Guarding\n- Fever (often low-grade)\n- Positive psoas or obturator sign\n\n### Atypical Presentations\n- Pain in the left lower quadrant (especially in left-sided appendicitis)\n- Abdominal pain without fever (in elderly patients)\n- Vague abdominal discomfort in children\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain with signs of peritonitis\n- Persistent vomiting\n- Signs of sepsis (e.g., tachycardia, hypotension)\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Complete blood count (CBC) showing leukocytosis\n- Urinalysis to rule out urinary tract infection\n\n### Second-line Investigations\n- Abdominal ultrasound (especially in children and pregnant women)\n- CT abdomen/pelvis with contrast (gold standard in adults)\n\n### Specialist Tests\n- MRI (in pregnant women to avoid radiation exposure)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging and laboratory findings. The presence of right lower quadrant pain, leukocytosis, and imaging findings consistent with appendicitis confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Ectopic pregnancy\n- Ovarian torsion\n- Diverticulitis\n- Gastroenteritis\n- Mesenteric adenitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NPO (nothing by mouth)\n- IV fluids\n- Analgesia (e.g., paracetamol, opioids if severe)\n- Antibiotics (e.g., piperacillin-tazobactam or ceftriaxone plus metronidazole)\n\n#### Second-line Treatments\n- Surgical consultation for appendectomy (open or laparoscopic)\n\n#### Emergency Procedures\n- Appendectomy: surgical removal of the appendix, indicated for acute appendicitis. Risks include infection, bleeding, and injury to surrounding structures.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on diet and lifestyle modifications (if recurrent episodes)\n\n#### Second-line Treatments\n- Consideration for elective appendectomy in recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up for recurrent symptoms or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic targeting gram-positive and gram-negative bacteria\n- **Typical Dosing Range**: 3.375 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment\n- **When to Use vs. Alternatives**: Consider in patients with suspected appendicitis requiring surgical intervention.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Third-generation cephalosporin antibiotic\n- **Typical Dosing Range**: 1-2 g IV once daily\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, biliary sludging\n- **When to Use vs. Alternatives**: Effective for empiric coverage in appendicitis.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic effective against anaerobic bacteria\n- **Typical Dosing Range**: 500 mg IV every 8 hours\n- **Key Side Effects/Contraindications**: Nausea, headache, metallic taste\n- **When to Use vs. Alternatives**: Used in combination with other antibiotics for appendicitis.\n\n### Procedures\n\n#### Appendectomy\n- **What it Involves**: Surgical procedure to remove the inflamed appendix, can be performed laparoscopically or via open surgery.\n- **Indications**: Confirmed acute appendicitis, recurrent appendicitis, or complications such as abscess or perforation.\n- **Key Risks/Complications**: Infection, bleeding, bowel obstruction, injury to surrounding organs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for appendicitis is generally good with timely surgical intervention. Complications can arise if the appendix perforates, leading to peritonitis or abscess formation.\n\n### Important Complications to Watch For\n- Perforation of the appendix\n- Abscess formation\n- Postoperative infection\n- Bowel obstruction\n- Sepsis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate IV fluids and antibiotics, and consult surgical teams for suspected appendicitis cases.\n\n### When to Escalate to Senior/Specialist\nIf a patient exhibits signs of sepsis, severe pain, or deteriorating clinical status, immediate escalation to senior medical staff and surgical teams is required.\n\n### Key Safety Considerations\nEnsure timely assessment and management to prevent complications. Monitor for signs of deterioration, especially in pediatric and elderly populations, who may present atypically.\n",
+  "content": {
+    "overview": {
+      "definition": "Appendicitis is the inflammation of the appendix, a small, tube-like structure attached to the large intestine. It is a common surgical emergency that typically requires appendectomy.",
+      "epidemiology": "Appendicitis is most common in individuals aged 10-30 years, with a lifetime risk of approximately 7-8%. It is slightly more prevalent in males than females.",
+      "pathophysiology": "Appendicitis often occurs due to obstruction of the appendiceal lumen, leading to increased intraluminal pressure, impaired venous outflow, and bacterial overgrowth. This results in inflammation, necrosis, and potential perforation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (initially periumbilical, then localizing to the right lower quadrant)",
+        "Nausea and vomiting",
+        "Loss of appetite",
+        "Fever",
+        "Constipation or diarrhea"
+      ],
+      "signs": [
+        "Tenderness in the right lower quadrant (McBurney's point)",
+        "Rebound tenderness",
+        "Guarding",
+        "Fever (often low-grade)",
+        "Positive psoas or obturator sign"
+      ],
+      "atypicalPresentations": [
+        "Pain in the left lower quadrant (especially in left-sided appendicitis)",
+        "Abdominal pain without fever (in elderly patients)",
+        "Vague abdominal discomfort in children"
+      ],
+      "redFlags": [
+        "Severe abdominal pain with signs of peritonitis",
+        "Persistent vomiting",
+        "Signs of sepsis (e.g., tachycardia, hypotension)",
+        "Altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Complete blood count (CBC) showing leukocytosis",
+        "Urinalysis to rule out urinary tract infection"
+      ],
+      "secondLine": [
+        "Abdominal ultrasound (especially in children and pregnant women)",
+        "CT abdomen/pelvis with contrast (gold standard in adults)"
+      ],
+      "specialistTests": [
+        "MRI (in pregnant women to avoid radiation exposure)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging and laboratory findings. The presence of right lower quadrant pain, leukocytosis, and imaging findings consistent with appendicitis confirms the diagnosis.",
+      "differentials": [
+        "Ectopic pregnancy",
+        "Ovarian torsion",
+        "Diverticulitis",
+        "Gastroenteritis",
+        "Mesenteric adenitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NPO (nothing by mouth)",
+          "IV fluids",
+          "Analgesia (e.g., paracetamol, opioids if severe)",
+          "Antibiotics (e.g., piperacillin-tazobactam or ceftriaxone plus metronidazole)"
+        ],
+        "secondLine": [
+          "Surgical consultation for appendectomy (open or laparoscopic)"
+        ],
+        "procedures": [
+          "Appendectomy: surgical removal of the appendix, indicated for acute appendicitis. Risks include infection, bleeding, and injury to surrounding structures."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on diet and lifestyle modifications (if recurrent episodes)"
+        ],
+        "secondLine": [
+          "Consideration for elective appendectomy in recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for recurrent symptoms or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic targeting gram-positive and gram-negative bacteria",
+          "dosing": "3.375 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment",
+          "notes": "Consider in patients with suspected appendicitis requiring surgical intervention."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Third-generation cephalosporin antibiotic",
+          "dosing": "1-2 g IV once daily",
+          "sideEffects": "Allergic reactions, diarrhea, biliary sludging",
+          "notes": "Effective for empiric coverage in appendicitis."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic effective against anaerobic bacteria",
+          "dosing": "500 mg IV every 8 hours",
+          "sideEffects": "Nausea, headache, metallic taste",
+          "notes": "Used in combination with other antibiotics for appendicitis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Appendectomy",
+          "description": "Surgical procedure to remove the inflamed appendix, can be performed laparoscopically or via open surgery.",
+          "indications": "Confirmed acute appendicitis, recurrent appendicitis, or complications such as abscess or perforation.",
+          "risks": "Infection, bleeding, bowel obstruction, injury to surrounding organs."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for appendicitis is generally good with timely surgical intervention. Complications can arise if the appendix perforates, leading to peritonitis or abscess formation.",
+    "complications": [
+      "Perforation of the appendix",
+      "Abscess formation",
+      "Postoperative infection",
+      "Bowel obstruction",
+      "Sepsis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate IV fluids and antibiotics, and consult surgical teams for suspected appendicitis cases.",
+    "escalation": "If a patient exhibits signs of sepsis, severe pain, or deteriorating clinical status, immediate escalation to senior medical staff and surgical teams is required.",
+    "keySafetyConsiderations": "Ensure timely assessment and management to prevent complications. Monitor for signs of deterioration, especially in pediatric and elderly populations, who may present atypically."
+  }
+}

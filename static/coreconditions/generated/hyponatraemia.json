@@ -1,0 +1,134 @@
+{
+  "id": "hyponatraemia",
+  "name": "Hyponatraemia",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:16:21.536212",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyponatraemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyponatraemia is defined as a serum sodium concentration of less than 135 mmol/L. It is a common electrolyte disturbance that can lead to significant morbidity and mortality if not recognized and treated appropriately.\n\n### Epidemiology\nHyponatraemia occurs in approximately 15-30% of hospitalized patients and is particularly common in the elderly and those with comorbidities such as heart failure, liver cirrhosis, and renal disease.\n\n### Essential Pathophysiology\nHyponatraemia can result from various mechanisms including excess water retention (e.g., in heart failure, liver cirrhosis, or SIADH), inadequate sodium intake, or excessive sodium loss (e.g., through diuretics, gastrointestinal losses, or adrenal insufficiency). The balance between sodium and water is crucial for maintaining osmotic equilibrium.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nausea\n- Headache\n- Confusion\n- Seizures\n- Coma\n- Fatigue\n- Muscle cramps\n\n### Key Signs\n- Altered mental status\n- Hypotension\n- Tachycardia\n- Decreased skin turgor\n- Edema\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Severe neurological symptoms in acute cases\n\n### Red Flags Requiring Immediate Action\n- Seizures\n- Coma\n- Rapid onset of symptoms\n- Severe hyponatraemia (<120 mmol/L)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum sodium concentration\n- Serum osmolality\n- Urine sodium concentration\n- Urine osmolality\n\n### Second-line Investigations\n- Thyroid function tests\n- Adrenal function tests (e.g., ACTH stimulation test)\n- Liver function tests\n\n### Specialist Tests\n- CT/MRI of the brain (if neurological symptoms present)\n- Water deprivation test (for SIADH)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hyponatraemia is based on serum sodium levels <135 mmol/L, with consideration of clinical symptoms and underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Hyperglycaemia (pseudohyponatraemia)\n- Diuretic use\n- Adrenal insufficiency\n- Heart failure\n- Liver cirrhosis\n- SIADH (Syndrome of Inappropriate Antidiuretic Hormone secretion)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hypertonic saline (3% NaCl) infusion\n\n#### Second-line Treatments\n- Fluid restriction\n- Vasopressin receptor antagonists (e.g., tolvaptan)\n\n#### Emergency Procedures\n- Central venous catheter placement for hypertonic saline administration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Fluid restriction (1-1.5 L/day)\n- Oral salt tablets\n\n#### Second-line Treatments\n- Vasopressin receptor antagonists (e.g., tolvaptan)\n\n#### Monitoring Requirements\n- Regular serum sodium levels (every 1-2 days during treatment)\n- Monitor for signs of overcorrection (osmotic demyelination syndrome)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hypertonic saline (3% NaCl)\n- **Mechanism of Action**: Increases serum sodium concentration by providing sodium and drawing water out of cells.\n- **Typical Dosing Range**: Administer 1-2 mL/kg over 1-2 hours; adjust based on serum sodium levels.\n- **Key Side Effects/Contraindications**: Fluid overload, central pontine myelinolysis if corrected too rapidly.\n- **When to Use vs. Alternatives**: Monitor serum sodium closely during infusion.\n\n#### Tolvaptan\n- **Mechanism of Action**: A vasopressin receptor antagonist that promotes free water excretion.\n- **Typical Dosing Range**: 15-60 mg orally once daily; adjust based on response.\n- **Key Side Effects/Contraindications**: Thirst, dry mouth, polyuria, liver function abnormalities.\n- **When to Use vs. Alternatives**: Monitor liver function tests and serum sodium.\n\n### Procedures\n\n#### Central venous catheter placement\n- **What it Involves**: Insertion of a catheter into a central vein for administration of hypertonic saline.\n- **Indications**: Severe symptomatic hyponatraemia requiring rapid correction.\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax, catheter misplacement.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hyponatraemia depends on the underlying cause and the speed of correction. Acute severe hyponatraemia can lead to significant neurological complications, while chronic hyponatraemia may be better tolerated but still requires careful management.\n\n### Important Complications to Watch For\n- Cerebral edema\n- Seizures\n- Coma\n- Osmotic demyelination syndrome (if corrected too rapidly)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of hyponatraemia, initiate appropriate investigations, and manage mild to moderate cases. They should also be aware of when to escalate care to senior clinicians for severe cases or complex underlying causes.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hyponatraemia (<120 mmol/L) or neurological symptoms, escalate to a senior clinician immediately. Continuous monitoring and potential transfer to a higher level of care may be necessary.\n\n### Key Safety Considerations\nMonitor serum sodium levels closely during treatment to avoid rapid correction. Be vigilant for signs of neurological deterioration and complications such as osmotic demyelination syndrome.\n",
+  "content": {
+    "overview": {
+      "definition": "Hyponatraemia is defined as a serum sodium concentration of less than 135 mmol/L. It is a common electrolyte disturbance that can lead to significant morbidity and mortality if not recognized and treated appropriately.",
+      "epidemiology": "Hyponatraemia occurs in approximately 15-30% of hospitalized patients and is particularly common in the elderly and those with comorbidities such as heart failure, liver cirrhosis, and renal disease.",
+      "pathophysiology": "Hyponatraemia can result from various mechanisms including excess water retention (e.g., in heart failure, liver cirrhosis, or SIADH), inadequate sodium intake, or excessive sodium loss (e.g., through diuretics, gastrointestinal losses, or adrenal insufficiency). The balance between sodium and water is crucial for maintaining osmotic equilibrium."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nausea",
+        "Headache",
+        "Confusion",
+        "Seizures",
+        "Coma",
+        "Fatigue",
+        "Muscle cramps"
+      ],
+      "signs": [
+        "Altered mental status",
+        "Hypotension",
+        "Tachycardia",
+        "Decreased skin turgor",
+        "Edema"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Severe neurological symptoms in acute cases"
+      ],
+      "redFlags": [
+        "Seizures",
+        "Coma",
+        "Rapid onset of symptoms",
+        "Severe hyponatraemia (<120 mmol/L)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum sodium concentration",
+        "Serum osmolality",
+        "Urine sodium concentration",
+        "Urine osmolality"
+      ],
+      "secondLine": [
+        "Thyroid function tests",
+        "Adrenal function tests (e.g., ACTH stimulation test)",
+        "Liver function tests"
+      ],
+      "specialistTests": [
+        "CT/MRI of the brain (if neurological symptoms present)",
+        "Water deprivation test (for SIADH)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hyponatraemia is based on serum sodium levels <135 mmol/L, with consideration of clinical symptoms and underlying causes.",
+      "differentials": [
+        "Hyperglycaemia (pseudohyponatraemia)",
+        "Diuretic use",
+        "Adrenal insufficiency",
+        "Heart failure",
+        "Liver cirrhosis",
+        "SIADH (Syndrome of Inappropriate Antidiuretic Hormone secretion)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hypertonic saline (3% NaCl) infusion"
+        ],
+        "secondLine": [
+          "Fluid restriction",
+          "Vasopressin receptor antagonists (e.g., tolvaptan)"
+        ],
+        "procedures": [
+          "Central venous catheter placement for hypertonic saline administration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Fluid restriction (1-1.5 L/day)",
+          "Oral salt tablets"
+        ],
+        "secondLine": [
+          "Vasopressin receptor antagonists (e.g., tolvaptan)"
+        ],
+        "monitoring": [
+          "Regular serum sodium levels (every 1-2 days during treatment)",
+          "Monitor for signs of overcorrection (osmotic demyelination syndrome)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hypertonic saline (3% NaCl)",
+          "mechanism": "Increases serum sodium concentration by providing sodium and drawing water out of cells.",
+          "dosing": "Administer 1-2 mL/kg over 1-2 hours; adjust based on serum sodium levels.",
+          "sideEffects": "Fluid overload, central pontine myelinolysis if corrected too rapidly.",
+          "notes": "Monitor serum sodium closely during infusion."
+        },
+        {
+          "name": "Tolvaptan",
+          "mechanism": "A vasopressin receptor antagonist that promotes free water excretion.",
+          "dosing": "15-60 mg orally once daily; adjust based on response.",
+          "sideEffects": "Thirst, dry mouth, polyuria, liver function abnormalities.",
+          "notes": "Monitor liver function tests and serum sodium."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Central venous catheter placement",
+          "description": "Insertion of a catheter into a central vein for administration of hypertonic saline.",
+          "indications": "Severe symptomatic hyponatraemia requiring rapid correction.",
+          "risks": "Infection, thrombosis, pneumothorax, catheter misplacement."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hyponatraemia depends on the underlying cause and the speed of correction. Acute severe hyponatraemia can lead to significant neurological complications, while chronic hyponatraemia may be better tolerated but still requires careful management.",
+    "complications": [
+      "Cerebral edema",
+      "Seizures",
+      "Coma",
+      "Osmotic demyelination syndrome (if corrected too rapidly)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of hyponatraemia, initiate appropriate investigations, and manage mild to moderate cases. They should also be aware of when to escalate care to senior clinicians for severe cases or complex underlying causes.",
+    "escalation": "If a patient presents with severe hyponatraemia (<120 mmol/L) or neurological symptoms, escalate to a senior clinician immediately. Continuous monitoring and potential transfer to a higher level of care may be necessary.",
+    "keySafetyConsiderations": "Monitor serum sodium levels closely during treatment to avoid rapid correction. Be vigilant for signs of neurological deterioration and complications such as osmotic demyelination syndrome."
+  }
+}

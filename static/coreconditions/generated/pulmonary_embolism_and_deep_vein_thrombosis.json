@@ -1,0 +1,144 @@
+{
+  "id": "pulmonary_embolism_and_deep_vein_thrombosis",
+  "name": "Pulmonary embolism and deep vein thrombosis",
+  "domains": [
+    "Haematology",
+    "Respiratory",
+    "Anaesthesia and Critical Care",
+    "Post-operative care"
+  ],
+  "generatedAt": "2025-12-17T20:01:05.140446",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pulmonary embolism and deep vein thrombosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPulmonary embolism (PE) is a blockage in one of the pulmonary arteries in the lungs, usually caused by blood clots that travel to the lungs from the legs (deep vein thrombosis, DVT).\n\n### Epidemiology\nPE is a common condition, with an estimated incidence of 60-70 cases per 100,000 people per year. It is a leading cause of morbidity and mortality, particularly in hospitalized patients and those with risk factors such as recent surgery, cancer, or prolonged immobility.\n\n### Essential Pathophysiology\nDVT occurs when a thrombus forms in the deep veins of the legs, which can dislodge and travel to the pulmonary circulation, causing obstruction of blood flow. This leads to impaired gas exchange, increased pulmonary vascular resistance, and potential right heart strain.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset dyspnea\n- Chest pain (pleuritic or non-pleuritic)\n- Cough (may be hemoptysis)\n- Tachycardia\n- Syncope\n\n### Key Signs\n- Tachypnea\n- Hypoxia (low oxygen saturation)\n- Cyanosis\n- Unilateral leg swelling (DVT)\n- Homan's sign (not reliable)\n\n### Atypical Presentations\n- Abdominal pain\n- Fatigue\n- Anxiety or sense of impending doom\n\n### Red Flags Requiring Immediate Action\n- Sudden collapse or syncope\n- Severe chest pain\n- Hypotension or shock\n- Signs of DVT (swelling, redness, warmth)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- D-dimer (if low risk, can rule out DVT/PE)\n- CT pulmonary angiography (CTPA)\n- Ultrasound of the legs (for DVT)\n\n### Second-line Investigations\n- Ventilation-perfusion (V/Q) scan\n- Chest X-ray (to rule out other causes)\n\n### Specialist Tests\n- Pulmonary angiography (invasive, rarely used now)\n- Echocardiography (to assess right heart strain)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PE is based on clinical probability assessment (Wells score) combined with D-dimer testing and imaging studies (CTPA or V/Q scan).\n\n### Key Differential Diagnoses to Exclude\n- Myocardial infarction\n- Pneumonia\n- Aortic dissection\n- Pneumothorax\n- Pericarditis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Anticoagulation (e.g., low molecular weight heparin or unfractionated heparin)\n- Supportive care (oxygen therapy, fluids)\n\n#### Second-line Treatments\n- Thrombolysis (in severe cases with hemodynamic instability)\n- Inferior vena cava filter (if anticoagulation is contraindicated)\n\n#### Emergency Procedures\n- Thrombectomy (surgical or catheter-based) for massive PE\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term anticoagulation (warfarin, DOACs) for at least 3-6 months\n\n#### Second-line Treatments\n- Consider thrombophilia workup if recurrent events\n\n#### Monitoring Requirements\n- Regular follow-up for anticoagulation management and assessment of symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Enoxaparin (LMWH)\n- **Mechanism of Action**: Inhibits factor Xa and thrombin, preventing clot formation\n- **Typical Dosing Range**: 1 mg/kg subcutaneously every 12 hours\n- **Key Side Effects/Contraindications**: Bleeding, thrombocytopenia, injection site reactions\n- **When to Use vs. Alternatives**: Monitor renal function; adjust dose in renal impairment.\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist, inhibits factors II, VII, IX, and X\n- **Typical Dosing Range**: Initial dose 5 mg orally, adjust based on INR (target INR 2-3)\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, teratogenicity\n- **When to Use vs. Alternatives**: Requires regular INR monitoring.\n\n#### Rivaroxaban (DOAC)\n- **Mechanism of Action**: Direct factor Xa inhibitor\n- **Typical Dosing Range**: 15 mg orally twice daily for 3 weeks, then 20 mg once daily\n- **Key Side Effects/Contraindications**: Bleeding, liver enzyme elevation\n- **When to Use vs. Alternatives**: No routine monitoring required.\n\n### Procedures\n\n#### Thrombolysis\n- **What it Involves**: Administration of thrombolytic agents (e.g., alteplase) to dissolve clots\n- **Indications**: Massive PE with hemodynamic instability\n- **Key Risks/Complications**: Major bleeding, intracranial hemorrhage\n\n#### Thrombectomy\n- **What it Involves**: Surgical or catheter-based removal of the thrombus\n- **Indications**: Severe PE not responding to anticoagulation or thrombolysis\n- **Key Risks/Complications**: Surgical complications, bleeding, infection\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of PE depends on the size of the embolism, the presence of underlying health conditions, and the promptness of treatment. Mortality rates can be as high as 30% in untreated cases but are significantly lower with appropriate management.\n\n### Important Complications to Watch For\n- Chronic thromboembolic pulmonary hypertension (CTEPH)\n- Recurrent venous thromboembolism (VTE)\n- Post-thrombotic syndrome (for DVT)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of DVT and PE, initiate appropriate investigations, and start anticoagulation therapy. They should also be aware of the need for escalation to senior medical staff in cases of suspected massive PE or hemodynamic instability.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to senior medical staff is required for patients with suspected massive PE, hemodynamic instability, or significant respiratory distress. Consideration for ICU admission may be necessary.\n\n### Key Safety Considerations\nEnsure appropriate risk assessment for VTE in all hospitalized patients. Monitor for signs of bleeding in patients on anticoagulation. Educate patients on the signs of DVT and PE for early recognition.\n",
+  "content": {
+    "overview": {
+      "definition": "Pulmonary embolism (PE) is a blockage in one of the pulmonary arteries in the lungs, usually caused by blood clots that travel to the lungs from the legs (deep vein thrombosis, DVT).",
+      "epidemiology": "PE is a common condition, with an estimated incidence of 60-70 cases per 100,000 people per year. It is a leading cause of morbidity and mortality, particularly in hospitalized patients and those with risk factors such as recent surgery, cancer, or prolonged immobility.",
+      "pathophysiology": "DVT occurs when a thrombus forms in the deep veins of the legs, which can dislodge and travel to the pulmonary circulation, causing obstruction of blood flow. This leads to impaired gas exchange, increased pulmonary vascular resistance, and potential right heart strain."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset dyspnea",
+        "Chest pain (pleuritic or non-pleuritic)",
+        "Cough (may be hemoptysis)",
+        "Tachycardia",
+        "Syncope"
+      ],
+      "signs": [
+        "Tachypnea",
+        "Hypoxia (low oxygen saturation)",
+        "Cyanosis",
+        "Unilateral leg swelling (DVT)",
+        "Homan's sign (not reliable)"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain",
+        "Fatigue",
+        "Anxiety or sense of impending doom"
+      ],
+      "redFlags": [
+        "Sudden collapse or syncope",
+        "Severe chest pain",
+        "Hypotension or shock",
+        "Signs of DVT (swelling, redness, warmth)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "D-dimer (if low risk, can rule out DVT/PE)",
+        "CT pulmonary angiography (CTPA)",
+        "Ultrasound of the legs (for DVT)"
+      ],
+      "secondLine": [
+        "Ventilation-perfusion (V/Q) scan",
+        "Chest X-ray (to rule out other causes)"
+      ],
+      "specialistTests": [
+        "Pulmonary angiography (invasive, rarely used now)",
+        "Echocardiography (to assess right heart strain)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PE is based on clinical probability assessment (Wells score) combined with D-dimer testing and imaging studies (CTPA or V/Q scan).",
+      "differentials": [
+        "Myocardial infarction",
+        "Pneumonia",
+        "Aortic dissection",
+        "Pneumothorax",
+        "Pericarditis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Anticoagulation (e.g., low molecular weight heparin or unfractionated heparin)",
+          "Supportive care (oxygen therapy, fluids)"
+        ],
+        "secondLine": [
+          "Thrombolysis (in severe cases with hemodynamic instability)",
+          "Inferior vena cava filter (if anticoagulation is contraindicated)"
+        ],
+        "procedures": [
+          "Thrombectomy (surgical or catheter-based) for massive PE"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term anticoagulation (warfarin, DOACs) for at least 3-6 months"
+        ],
+        "secondLine": [
+          "Consider thrombophilia workup if recurrent events"
+        ],
+        "monitoring": [
+          "Regular follow-up for anticoagulation management and assessment of symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Enoxaparin (LMWH)",
+          "mechanism": "Inhibits factor Xa and thrombin, preventing clot formation",
+          "dosing": "1 mg/kg subcutaneously every 12 hours",
+          "sideEffects": "Bleeding, thrombocytopenia, injection site reactions",
+          "notes": "Monitor renal function; adjust dose in renal impairment."
+        },
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist, inhibits factors II, VII, IX, and X",
+          "dosing": "Initial dose 5 mg orally, adjust based on INR (target INR 2-3)",
+          "sideEffects": "Bleeding, skin necrosis, teratogenicity",
+          "notes": "Requires regular INR monitoring."
+        },
+        {
+          "name": "Rivaroxaban (DOAC)",
+          "mechanism": "Direct factor Xa inhibitor",
+          "dosing": "15 mg orally twice daily for 3 weeks, then 20 mg once daily",
+          "sideEffects": "Bleeding, liver enzyme elevation",
+          "notes": "No routine monitoring required."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thrombolysis",
+          "description": "Administration of thrombolytic agents (e.g., alteplase) to dissolve clots",
+          "indications": "Massive PE with hemodynamic instability",
+          "risks": "Major bleeding, intracranial hemorrhage"
+        },
+        {
+          "name": "Thrombectomy",
+          "description": "Surgical or catheter-based removal of the thrombus",
+          "indications": "Severe PE not responding to anticoagulation or thrombolysis",
+          "risks": "Surgical complications, bleeding, infection"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of PE depends on the size of the embolism, the presence of underlying health conditions, and the promptness of treatment. Mortality rates can be as high as 30% in untreated cases but are significantly lower with appropriate management.",
+    "complications": [
+      "Chronic thromboembolic pulmonary hypertension (CTEPH)",
+      "Recurrent venous thromboembolism (VTE)",
+      "Post-thrombotic syndrome (for DVT)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of DVT and PE, initiate appropriate investigations, and start anticoagulation therapy. They should also be aware of the need for escalation to senior medical staff in cases of suspected massive PE or hemodynamic instability.",
+    "escalation": "Immediate escalation to senior medical staff is required for patients with suspected massive PE, hemodynamic instability, or significant respiratory distress. Consideration for ICU admission may be necessary.",
+    "keySafetyConsiderations": "Ensure appropriate risk assessment for VTE in all hospitalized patients. Monitor for signs of bleeding in patients on anticoagulation. Educate patients on the signs of DVT and PE for early recognition."
+  }
+}

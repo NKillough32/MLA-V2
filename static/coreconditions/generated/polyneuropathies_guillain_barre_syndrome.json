@@ -1,0 +1,128 @@
+{
+  "id": "polyneuropathies_guillain_barre_syndrome",
+  "name": "Polyneuropathies - Guillain-Barre syndrome",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:51:35.884905",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polyneuropathies - Guillain-Barre syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGuillain-Barré syndrome (GBS) is an acute inflammatory demyelinating polyneuropathy characterized by rapid onset of muscle weakness and areflexia, often following a viral or bacterial infection.\n\n### Epidemiology\nGBS has an incidence of approximately 1-2 cases per 100,000 people per year. It can affect individuals of any age but is more common in adults and males.\n\n### Essential Pathophysiology\nGBS is thought to be an autoimmune disorder where the body's immune system mistakenly attacks the peripheral nerves, leading to demyelination and axonal damage. This is often triggered by infections, particularly Campylobacter jejuni.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive muscle weakness (often starting in the legs)\n- Paresthesia (tingling or numbness)\n- Pain (often neuropathic in nature)\n- Fatigue\n- Respiratory difficulties (in severe cases)\n\n### Key Signs\n- Areflexia (absence of reflexes)\n- Muscle weakness (often symmetrical)\n- Cranial nerve involvement (e.g., facial weakness)\n- Autonomic dysfunction (e.g., tachycardia, blood pressure fluctuations)\n\n### Atypical Presentations\n- Mild sensory symptoms without significant motor involvement\n- Prolonged course with gradual onset\n- Presence of ataxia or sensory ataxia\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of weakness (over days to weeks)\n- Respiratory failure or significant respiratory compromise\n- Severe autonomic instability\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and neurological examination)\n- Electromyography (EMG) and nerve conduction studies (NCS)\n\n### Second-line Investigations\n- Lumbar puncture (to assess cerebrospinal fluid for albuminocytologic dissociation)\n- Blood tests (to rule out other causes)\n\n### Specialist Tests\n- MRI of the spine (to rule out compressive neuropathies)\n- Serological tests for infectious agents (e.g., Campylobacter jejuni)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by EMG findings and CSF analysis showing elevated protein with normal cell count (albuminocytologic dissociation).\n\n### Key Differential Diagnoses to Exclude\n- Chronic inflammatory demyelinating polyneuropathy (CIDP)\n- Diabetic neuropathy\n- Multiple sclerosis\n- Myasthenia gravis\n- Spinal cord lesions\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous immunoglobulin (IVIG) 0.4 g/kg/day for 5 days\n- Plasmapheresis (if IVIG is contraindicated or unavailable)\n\n#### Second-line Treatments\n- Supportive care including monitoring of respiratory function and vital signs\n\n#### Emergency Procedures\n- Plasmapheresis: A procedure to remove antibodies from the blood, indicated in severe cases of GBS. Risks include infection, hypotension, and allergic reactions.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to maintain muscle strength and function\n- Occupational therapy for daily living activities\n\n#### Second-line Treatments\n- Pain management (e.g., gabapentin, pregabalin)\n- Psychological support for coping with chronic symptoms\n\n#### Monitoring Requirements\n- Regular follow-up for functional recovery and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Intravenous Immunoglobulin (IVIG)\n- **Mechanism of Action**: Modulates immune response and reduces antibody production.\n- **Typical Dosing Range**: 0.4 g/kg/day for 5 days.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions.\n- **When to Use vs. Alternatives**: Monitor for renal function and fluid overload.\n\n#### Plasmapheresis\n- **Mechanism of Action**: Removes circulating antibodies from the plasma.\n- **Typical Dosing Range**: 5 exchanges over 1-2 weeks, depending on clinical response.\n- **Key Side Effects/Contraindications**: Hypotension, infection, electrolyte imbalances.\n- **When to Use vs. Alternatives**: Requires specialized equipment and monitoring.\n\n### Procedures\n\n#### Plasmapheresis\n- **What it Involves**: A procedure that filters the blood to remove harmful antibodies.\n- **Indications**: Severe GBS with rapid progression or respiratory involvement.\n- **Key Risks/Complications**: Infection, hypotension, allergic reactions, and access complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience significant recovery within weeks to months, but some may have residual weakness or sensory disturbances. Mortality is low but can occur due to respiratory failure or complications.\n\n### Important Complications to Watch For\n- Respiratory failure\n- Autonomic dysfunction (e.g., arrhythmias)\n- Deep vein thrombosis (DVT)\n- Pressure ulcers\n- Chronic pain syndromes\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, monitor vital signs, and recognize signs of respiratory compromise. They should also facilitate referrals to neurology and rehabilitation services.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation is required for patients with respiratory distress, significant autonomic instability, or rapid progression of weakness. Consult neurology urgently in these cases.\n\n### Key Safety Considerations\nMonitor for respiratory function, especially in the first few days of symptom onset. Be vigilant for signs of autonomic instability and ensure appropriate supportive care.\n",
+  "content": {
+    "overview": {
+      "definition": "Guillain-Barré syndrome (GBS) is an acute inflammatory demyelinating polyneuropathy characterized by rapid onset of muscle weakness and areflexia, often following a viral or bacterial infection.",
+      "epidemiology": "GBS has an incidence of approximately 1-2 cases per 100,000 people per year. It can affect individuals of any age but is more common in adults and males.",
+      "pathophysiology": "GBS is thought to be an autoimmune disorder where the body's immune system mistakenly attacks the peripheral nerves, leading to demyelination and axonal damage. This is often triggered by infections, particularly Campylobacter jejuni."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive muscle weakness (often starting in the legs)",
+        "Paresthesia (tingling or numbness)",
+        "Pain (often neuropathic in nature)",
+        "Fatigue",
+        "Respiratory difficulties (in severe cases)"
+      ],
+      "signs": [
+        "Areflexia (absence of reflexes)",
+        "Muscle weakness (often symmetrical)",
+        "Cranial nerve involvement (e.g., facial weakness)",
+        "Autonomic dysfunction (e.g., tachycardia, blood pressure fluctuations)"
+      ],
+      "atypicalPresentations": [
+        "Mild sensory symptoms without significant motor involvement",
+        "Prolonged course with gradual onset",
+        "Presence of ataxia or sensory ataxia"
+      ],
+      "redFlags": [
+        "Rapid progression of weakness (over days to weeks)",
+        "Respiratory failure or significant respiratory compromise",
+        "Severe autonomic instability"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and neurological examination)",
+        "Electromyography (EMG) and nerve conduction studies (NCS)"
+      ],
+      "secondLine": [
+        "Lumbar puncture (to assess cerebrospinal fluid for albuminocytologic dissociation)",
+        "Blood tests (to rule out other causes)"
+      ],
+      "specialistTests": [
+        "MRI of the spine (to rule out compressive neuropathies)",
+        "Serological tests for infectious agents (e.g., Campylobacter jejuni)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by EMG findings and CSF analysis showing elevated protein with normal cell count (albuminocytologic dissociation).",
+      "differentials": [
+        "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+        "Diabetic neuropathy",
+        "Multiple sclerosis",
+        "Myasthenia gravis",
+        "Spinal cord lesions"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous immunoglobulin (IVIG) 0.4 g/kg/day for 5 days",
+          "Plasmapheresis (if IVIG is contraindicated or unavailable)"
+        ],
+        "secondLine": [
+          "Supportive care including monitoring of respiratory function and vital signs"
+        ],
+        "procedures": [
+          "Plasmapheresis: A procedure to remove antibodies from the blood, indicated in severe cases of GBS. Risks include infection, hypotension, and allergic reactions."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to maintain muscle strength and function",
+          "Occupational therapy for daily living activities"
+        ],
+        "secondLine": [
+          "Pain management (e.g., gabapentin, pregabalin)",
+          "Psychological support for coping with chronic symptoms"
+        ],
+        "monitoring": [
+          "Regular follow-up for functional recovery and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Intravenous Immunoglobulin (IVIG)",
+          "mechanism": "Modulates immune response and reduces antibody production.",
+          "dosing": "0.4 g/kg/day for 5 days.",
+          "sideEffects": "Headache, fever, chills, allergic reactions.",
+          "notes": "Monitor for renal function and fluid overload."
+        },
+        {
+          "name": "Plasmapheresis",
+          "mechanism": "Removes circulating antibodies from the plasma.",
+          "dosing": "5 exchanges over 1-2 weeks, depending on clinical response.",
+          "sideEffects": "Hypotension, infection, electrolyte imbalances.",
+          "notes": "Requires specialized equipment and monitoring."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Plasmapheresis",
+          "description": "A procedure that filters the blood to remove harmful antibodies.",
+          "indications": "Severe GBS with rapid progression or respiratory involvement.",
+          "risks": "Infection, hypotension, allergic reactions, and access complications."
+        }
+      ]
+    },
+    "prognosis": "Most patients experience significant recovery within weeks to months, but some may have residual weakness or sensory disturbances. Mortality is low but can occur due to respiratory failure or complications.",
+    "complications": [
+      "Respiratory failure",
+      "Autonomic dysfunction (e.g., arrhythmias)",
+      "Deep vein thrombosis (DVT)",
+      "Pressure ulcers",
+      "Chronic pain syndromes"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, monitor vital signs, and recognize signs of respiratory compromise. They should also facilitate referrals to neurology and rehabilitation services.",
+    "escalation": "Immediate escalation is required for patients with respiratory distress, significant autonomic instability, or rapid progression of weakness. Consult neurology urgently in these cases.",
+    "keySafetyConsiderations": "Monitor for respiratory function, especially in the first few days of symptom onset. Be vigilant for signs of autonomic instability and ensure appropriate supportive care."
+  }
+}

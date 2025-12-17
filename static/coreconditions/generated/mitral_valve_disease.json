@@ -1,0 +1,144 @@
+{
+  "id": "mitral_valve_disease",
+  "name": "Mitral valve disease?",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:13:26.185712",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Mitral valve disease?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMitral valve disease refers to any disorder affecting the mitral valve, which can lead to mitral stenosis (narrowing of the valve) or mitral regurgitation (inadequate closure of the valve).\n\n### Epidemiology\nMitral valve disease is common, particularly in older adults. Mitral regurgitation is often due to degenerative changes, while mitral stenosis is frequently a result of rheumatic fever. It is estimated that about 2% of the population over 75 years has significant mitral valve disease.\n\n### Essential Pathophysiology\nIn mitral stenosis, the narrowed valve obstructs blood flow from the left atrium to the left ventricle, leading to increased left atrial pressure, pulmonary congestion, and potential atrial fibrillation. In mitral regurgitation, the valve fails to close properly during systole, causing backflow of blood into the left atrium, leading to volume overload, left atrial enlargement, and heart failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Fatigue\n- Palpitations\n- Orthopnea\n- Paroxysmal nocturnal dyspnea\n- Cough (especially when lying flat)\n\n### Key Signs\n- Heart murmur (holosystolic for regurgitation, diastolic for stenosis)\n- Atrial fibrillation\n- Signs of heart failure (e.g., elevated jugular venous pressure, pulmonary crackles)\n- Left atrial enlargement on ECG or imaging\n\n### Atypical Presentations\n- Syncope\n- Chest pain\n- Unexplained fatigue in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Acute pulmonary edema\n- Severe dyspnea at rest\n- Rapidly worsening symptoms\n- New onset atrial fibrillation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (transthoracic echocardiogram)\n- ECG\n\n### Second-line Investigations\n- Transesophageal echocardiogram (if transthoracic is inconclusive)\n- Chest X-ray (to assess heart size and pulmonary congestion)\n\n### Specialist Tests\n- Cardiac MRI (for detailed structural assessment)\n- Exercise testing (to assess functional capacity)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, echocardiographic findings, and the presence of characteristic murmurs. Mitral stenosis is diagnosed with a valve area <1.5 cm², while mitral regurgitation is assessed by the severity of regurgitant flow and left atrial size.\n\n### Key Differential Diagnoses to Exclude\n- Aortic stenosis\n- Tricuspid regurgitation\n- Pulmonary hypertension\n- Coronary artery disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Diuretics (e.g., furosemide) for fluid overload\n- Oxygen therapy for hypoxia\n- Nitrates for acute pulmonary edema\n\n#### Second-line Treatments\n- Inotropic agents (e.g., dobutamine) if in cardiogenic shock\n\n#### Emergency Procedures\n- Mitral valve repair or replacement (surgical intervention) in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with echocardiography\n- Lifestyle modifications (e.g., weight management, exercise)\n\n#### Second-line Treatments\n- Anticoagulation if atrial fibrillation is present\n- Beta-blockers for rate control\n\n#### Monitoring Requirements\n- Regular follow-up echocardiograms to assess progression\n- Monitoring for signs of heart failure\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that reduces fluid overload by inhibiting sodium reabsorption in the loop of Henle.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; adjust based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist that reduces thromboembolic events in atrial fibrillation.\n- **Typical Dosing Range**: Target INR 2.0-3.0; initial dose 5 mg daily, adjust based on INR.\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, drug interactions.\n- **When to Use vs. Alternatives**: Regular INR monitoring required.\n\n#### Beta-blockers (e.g., Metoprolol)\n- **Mechanism of Action**: Reduce heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Start at 25-50 mg daily, titrate based on heart rate and blood pressure.\n- **Key Side Effects/Contraindications**: Bradycardia, fatigue, hypotension.\n- **When to Use vs. Alternatives**: Caution in asthma/COPD patients.\n\n### Procedures\n\n#### Mitral valve repair\n- **What it Involves**: Surgical procedure to correct the mitral valve, often via annuloplasty or leaflet repair.\n- **Indications**: Severe mitral regurgitation with symptoms or left ventricular dysfunction.\n- **Key Risks/Complications**: Bleeding, infection, valve dysfunction post-repair.\n\n#### Mitral valve replacement\n- **What it Involves**: Surgical procedure to replace the diseased mitral valve with a mechanical or bioprosthetic valve.\n- **Indications**: Severe mitral stenosis or regurgitation not amenable to repair.\n- **Key Risks/Complications**: Thromboembolism, prosthetic valve endocarditis, need for lifelong anticoagulation (if mechanical).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies based on the severity of the disease and the presence of heart failure. Early intervention can significantly improve outcomes. Mitral regurgitation has a better prognosis than mitral stenosis if managed appropriately.\n\n### Important Complications to Watch For\n- Heart failure\n- Atrial fibrillation\n- Pulmonary hypertension\n- Thromboembolic events (e.g., stroke)\n- Endocarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of mitral valve disease, perform initial assessments, and manage acute presentations. They should also facilitate referrals to cardiology for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to cardiology for any patient with suspected severe mitral valve disease, new onset atrial fibrillation, or worsening heart failure symptoms. Immediate referral is necessary for acute pulmonary edema or severe symptoms.\n\n### Key Safety Considerations\nMonitor for signs of heart failure and arrhythmias. Ensure appropriate anticoagulation management in patients with atrial fibrillation. Be vigilant for signs of bleeding in patients on anticoagulants.\n",
+  "content": {
+    "overview": {
+      "definition": "Mitral valve disease refers to any disorder affecting the mitral valve, which can lead to mitral stenosis (narrowing of the valve) or mitral regurgitation (inadequate closure of the valve).",
+      "epidemiology": "Mitral valve disease is common, particularly in older adults. Mitral regurgitation is often due to degenerative changes, while mitral stenosis is frequently a result of rheumatic fever. It is estimated that about 2% of the population over 75 years has significant mitral valve disease.",
+      "pathophysiology": "In mitral stenosis, the narrowed valve obstructs blood flow from the left atrium to the left ventricle, leading to increased left atrial pressure, pulmonary congestion, and potential atrial fibrillation. In mitral regurgitation, the valve fails to close properly during systole, causing backflow of blood into the left atrium, leading to volume overload, left atrial enlargement, and heart failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Fatigue",
+        "Palpitations",
+        "Orthopnea",
+        "Paroxysmal nocturnal dyspnea",
+        "Cough (especially when lying flat)"
+      ],
+      "signs": [
+        "Heart murmur (holosystolic for regurgitation, diastolic for stenosis)",
+        "Atrial fibrillation",
+        "Signs of heart failure (e.g., elevated jugular venous pressure, pulmonary crackles)",
+        "Left atrial enlargement on ECG or imaging"
+      ],
+      "atypicalPresentations": [
+        "Syncope",
+        "Chest pain",
+        "Unexplained fatigue in elderly patients"
+      ],
+      "redFlags": [
+        "Acute pulmonary edema",
+        "Severe dyspnea at rest",
+        "Rapidly worsening symptoms",
+        "New onset atrial fibrillation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (transthoracic echocardiogram)",
+        "ECG"
+      ],
+      "secondLine": [
+        "Transesophageal echocardiogram (if transthoracic is inconclusive)",
+        "Chest X-ray (to assess heart size and pulmonary congestion)"
+      ],
+      "specialistTests": [
+        "Cardiac MRI (for detailed structural assessment)",
+        "Exercise testing (to assess functional capacity)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, echocardiographic findings, and the presence of characteristic murmurs. Mitral stenosis is diagnosed with a valve area <1.5 cm², while mitral regurgitation is assessed by the severity of regurgitant flow and left atrial size.",
+      "differentials": [
+        "Aortic stenosis",
+        "Tricuspid regurgitation",
+        "Pulmonary hypertension",
+        "Coronary artery disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Diuretics (e.g., furosemide) for fluid overload",
+          "Oxygen therapy for hypoxia",
+          "Nitrates for acute pulmonary edema"
+        ],
+        "secondLine": [
+          "Inotropic agents (e.g., dobutamine) if in cardiogenic shock"
+        ],
+        "procedures": [
+          "Mitral valve repair or replacement (surgical intervention) in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with echocardiography",
+          "Lifestyle modifications (e.g., weight management, exercise)"
+        ],
+        "secondLine": [
+          "Anticoagulation if atrial fibrillation is present",
+          "Beta-blockers for rate control"
+        ],
+        "monitoring": [
+          "Regular follow-up echocardiograms to assess progression",
+          "Monitoring for signs of heart failure"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that reduces fluid overload by inhibiting sodium reabsorption in the loop of Henle.",
+          "dosing": "Initial: 20-40 mg IV/PO; adjust based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal impairment.",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist that reduces thromboembolic events in atrial fibrillation.",
+          "dosing": "Target INR 2.0-3.0; initial dose 5 mg daily, adjust based on INR.",
+          "sideEffects": "Bleeding, skin necrosis, drug interactions.",
+          "notes": "Regular INR monitoring required."
+        },
+        {
+          "name": "Beta-blockers (e.g., Metoprolol)",
+          "mechanism": "Reduce heart rate and myocardial oxygen demand.",
+          "dosing": "Start at 25-50 mg daily, titrate based on heart rate and blood pressure.",
+          "sideEffects": "Bradycardia, fatigue, hypotension.",
+          "notes": "Caution in asthma/COPD patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Mitral valve repair",
+          "description": "Surgical procedure to correct the mitral valve, often via annuloplasty or leaflet repair.",
+          "indications": "Severe mitral regurgitation with symptoms or left ventricular dysfunction.",
+          "risks": "Bleeding, infection, valve dysfunction post-repair."
+        },
+        {
+          "name": "Mitral valve replacement",
+          "description": "Surgical procedure to replace the diseased mitral valve with a mechanical or bioprosthetic valve.",
+          "indications": "Severe mitral stenosis or regurgitation not amenable to repair.",
+          "risks": "Thromboembolism, prosthetic valve endocarditis, need for lifelong anticoagulation (if mechanical)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies based on the severity of the disease and the presence of heart failure. Early intervention can significantly improve outcomes. Mitral regurgitation has a better prognosis than mitral stenosis if managed appropriately.",
+    "complications": [
+      "Heart failure",
+      "Atrial fibrillation",
+      "Pulmonary hypertension",
+      "Thromboembolic events (e.g., stroke)",
+      "Endocarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of mitral valve disease, perform initial assessments, and manage acute presentations. They should also facilitate referrals to cardiology for further evaluation and management.",
+    "escalation": "Refer to cardiology for any patient with suspected severe mitral valve disease, new onset atrial fibrillation, or worsening heart failure symptoms. Immediate referral is necessary for acute pulmonary edema or severe symptoms.",
+    "keySafetyConsiderations": "Monitor for signs of heart failure and arrhythmias. Ensure appropriate anticoagulation management in patients with atrial fibrillation. Be vigilant for signs of bleeding in patients on anticoagulants."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "acquired_factors_for_vte",
+  "name": "Acquired factors for VTE",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:51:51.945425",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acquired factors for VTE: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcquired factors for Venous Thromboembolism (VTE) refer to non-genetic risk factors that increase the likelihood of developing blood clots in the venous system, leading to conditions such as deep vein thrombosis (DVT) and pulmonary embolism (PE).\n\n### Epidemiology\nVTE affects approximately 1 in 1,000 people annually, with higher incidence in hospitalized patients, particularly those undergoing surgery or with prolonged immobility. Risk increases with age, obesity, and certain medical conditions.\n\n### Essential Pathophysiology\nVTE occurs due to a combination of venous stasis, endothelial injury, and hypercoagulability, known as Virchow's triad. Acquired factors include prolonged immobility, surgery, trauma, malignancy, pregnancy, and certain medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Swelling in one leg\n- Pain or tenderness in the leg (DVT)\n- Shortness of breath (PE)\n- Chest pain that may worsen with deep breathing (PE)\n- Coughing up blood (PE)\n\n### Key Signs\n- Unilateral leg swelling\n- Warmth and redness over the affected area (DVT)\n- Hypoxia (PE)\n- Tachycardia (PE)\n- Cyanosis (PE)\n\n### Atypical Presentations\n- Asymptomatic DVT\n- Silent PE (no symptoms)\n- Leg pain mimicking musculoskeletal injury\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of shortness of breath\n- Chest pain with pleuritic nature\n- Leg swelling with recent surgery or immobilization\n- History of cancer or recent travel\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- D-dimer test\n- Ultrasound of the leg (for DVT)\n- CT pulmonary angiography (for PE)\n\n### Second-line Investigations\n- Venography (for DVT)\n- MRI (for DVT in special cases)\n\n### Specialist Tests\n- Coagulation profile\n- Thrombophilia screening (if recurrent VTE)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of VTE is based on clinical assessment (Wells score for DVT/PE) and imaging studies. A positive D-dimer test may support the diagnosis but is not definitive.\n\n### Key Differential Diagnoses to Exclude\n- Muscle strain\n- Cellulitis\n- Lymphangitis\n- Heart failure\n- Pneumonia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Anticoagulation (e.g., low molecular weight heparin)\n- Compression stockings\n\n#### Second-line Treatments\n- Thrombolysis (in severe cases)\n- Inferior vena cava filter (if anticoagulation is contraindicated)\n\n#### Emergency Procedures\n- Thrombectomy (in selected cases of massive PE)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term anticoagulation (e.g., warfarin, DOACs)\n\n#### Second-line Treatments\n- Consideration of thrombophilia workup for recurrent VTE\n\n#### Monitoring Requirements\n- Regular INR checks for warfarin\n- Patient education on signs of bleeding\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Enoxaparin\n- **Mechanism of Action**: Low molecular weight heparin that inhibits factor Xa and IIa.\n- **Typical Dosing Range**: 1 mg/kg subcutaneously every 12 hours or 1.5 mg/kg once daily.\n- **Key Side Effects/Contraindications**: Bleeding, thrombocytopenia, injection site reactions.\n- **When to Use vs. Alternatives**: Monitor renal function; adjust dose in renal impairment.\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist that inhibits factors II, VII, IX, and X.\n- **Typical Dosing Range**: Initial dose 5-10 mg orally, adjusted based on INR.\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, teratogenic effects.\n- **When to Use vs. Alternatives**: Requires INR monitoring; interactions with many medications and foods.\n\n#### Rivaroxaban\n- **Mechanism of Action**: Direct factor Xa inhibitor.\n- **Typical Dosing Range**: 15 mg twice daily for 3 weeks, then 20 mg once daily.\n- **Key Side Effects/Contraindications**: Bleeding, liver enzyme elevation.\n- **When to Use vs. Alternatives**: No routine monitoring required.\n\n### Procedures\n\n#### Thrombectomy\n- **What it Involves**: Surgical removal of a thrombus from a blood vessel.\n- **Indications**: Massive PE with hemodynamic instability or severe DVT causing limb ischemia.\n- **Key Risks/Complications**: Bleeding, infection, vascular injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, the prognosis for VTE is generally good, but recurrence rates can be high without long-term anticoagulation. Complications such as post-thrombotic syndrome and chronic thromboembolic pulmonary hypertension can occur.\n\n### Important Complications to Watch For\n- Post-thrombotic syndrome (chronic pain and swelling)\n- Chronic thromboembolic pulmonary hypertension\n- Recurrent VTE\n- Bleeding complications from anticoagulation\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize risk factors for VTE, perform initial assessments, order appropriate investigations, initiate anticoagulation, and educate patients on prevention and management strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if there is uncertainty in diagnosis, management, or if the patient shows signs of deterioration (e.g., sudden shortness of breath, hypotension).\n\n### Key Safety Considerations\nEnsure proper patient education on anticoagulation therapy, including signs of bleeding. Monitor renal function and INR for patients on warfarin. Be aware of drug interactions and contraindications for anticoagulants.\n",
+  "content": {
+    "overview": {
+      "definition": "Acquired factors for Venous Thromboembolism (VTE) refer to non-genetic risk factors that increase the likelihood of developing blood clots in the venous system, leading to conditions such as deep vein thrombosis (DVT) and pulmonary embolism (PE).",
+      "epidemiology": "VTE affects approximately 1 in 1,000 people annually, with higher incidence in hospitalized patients, particularly those undergoing surgery or with prolonged immobility. Risk increases with age, obesity, and certain medical conditions.",
+      "pathophysiology": "VTE occurs due to a combination of venous stasis, endothelial injury, and hypercoagulability, known as Virchow's triad. Acquired factors include prolonged immobility, surgery, trauma, malignancy, pregnancy, and certain medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Swelling in one leg",
+        "Pain or tenderness in the leg (DVT)",
+        "Shortness of breath (PE)",
+        "Chest pain that may worsen with deep breathing (PE)",
+        "Coughing up blood (PE)"
+      ],
+      "signs": [
+        "Unilateral leg swelling",
+        "Warmth and redness over the affected area (DVT)",
+        "Hypoxia (PE)",
+        "Tachycardia (PE)",
+        "Cyanosis (PE)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic DVT",
+        "Silent PE (no symptoms)",
+        "Leg pain mimicking musculoskeletal injury"
+      ],
+      "redFlags": [
+        "Sudden onset of shortness of breath",
+        "Chest pain with pleuritic nature",
+        "Leg swelling with recent surgery or immobilization",
+        "History of cancer or recent travel"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "D-dimer test",
+        "Ultrasound of the leg (for DVT)",
+        "CT pulmonary angiography (for PE)"
+      ],
+      "secondLine": [
+        "Venography (for DVT)",
+        "MRI (for DVT in special cases)"
+      ],
+      "specialistTests": [
+        "Coagulation profile",
+        "Thrombophilia screening (if recurrent VTE)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of VTE is based on clinical assessment (Wells score for DVT/PE) and imaging studies. A positive D-dimer test may support the diagnosis but is not definitive.",
+      "differentials": [
+        "Muscle strain",
+        "Cellulitis",
+        "Lymphangitis",
+        "Heart failure",
+        "Pneumonia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Anticoagulation (e.g., low molecular weight heparin)",
+          "Compression stockings"
+        ],
+        "secondLine": [
+          "Thrombolysis (in severe cases)",
+          "Inferior vena cava filter (if anticoagulation is contraindicated)"
+        ],
+        "procedures": [
+          "Thrombectomy (in selected cases of massive PE)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term anticoagulation (e.g., warfarin, DOACs)"
+        ],
+        "secondLine": [
+          "Consideration of thrombophilia workup for recurrent VTE"
+        ],
+        "monitoring": [
+          "Regular INR checks for warfarin",
+          "Patient education on signs of bleeding"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Enoxaparin",
+          "mechanism": "Low molecular weight heparin that inhibits factor Xa and IIa.",
+          "dosing": "1 mg/kg subcutaneously every 12 hours or 1.5 mg/kg once daily.",
+          "sideEffects": "Bleeding, thrombocytopenia, injection site reactions.",
+          "notes": "Monitor renal function; adjust dose in renal impairment."
+        },
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist that inhibits factors II, VII, IX, and X.",
+          "dosing": "Initial dose 5-10 mg orally, adjusted based on INR.",
+          "sideEffects": "Bleeding, skin necrosis, teratogenic effects.",
+          "notes": "Requires INR monitoring; interactions with many medications and foods."
+        },
+        {
+          "name": "Rivaroxaban",
+          "mechanism": "Direct factor Xa inhibitor.",
+          "dosing": "15 mg twice daily for 3 weeks, then 20 mg once daily.",
+          "sideEffects": "Bleeding, liver enzyme elevation.",
+          "notes": "No routine monitoring required."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thrombectomy",
+          "description": "Surgical removal of a thrombus from a blood vessel.",
+          "indications": "Massive PE with hemodynamic instability or severe DVT causing limb ischemia.",
+          "risks": "Bleeding, infection, vascular injury."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, the prognosis for VTE is generally good, but recurrence rates can be high without long-term anticoagulation. Complications such as post-thrombotic syndrome and chronic thromboembolic pulmonary hypertension can occur.",
+    "complications": [
+      "Post-thrombotic syndrome (chronic pain and swelling)",
+      "Chronic thromboembolic pulmonary hypertension",
+      "Recurrent VTE",
+      "Bleeding complications from anticoagulation"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize risk factors for VTE, perform initial assessments, order appropriate investigations, initiate anticoagulation, and educate patients on prevention and management strategies.",
+    "escalation": "Refer to a senior clinician if there is uncertainty in diagnosis, management, or if the patient shows signs of deterioration (e.g., sudden shortness of breath, hypotension).",
+    "keySafetyConsiderations": "Ensure proper patient education on anticoagulation therapy, including signs of bleeding. Monitor renal function and INR for patients on warfarin. Be aware of drug interactions and contraindications for anticoagulants."
+  }
+}

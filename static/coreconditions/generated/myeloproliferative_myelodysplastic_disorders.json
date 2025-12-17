@@ -1,0 +1,141 @@
+{
+  "id": "myeloproliferative_myelodysplastic_disorders",
+  "name": "Myeloproliferative/ myelodysplastic disorders",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:57:28.856501",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Myeloproliferative/ myelodysplastic disorders: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMyeloproliferative disorders (MPDs) are a group of hematological conditions characterized by the overproduction of blood cells due to clonal proliferation of hematopoietic stem cells. Myelodysplastic syndromes (MDS) are a group of disorders caused by poorly formed or dysfunctional blood cells, leading to ineffective hematopoiesis and a risk of progression to acute myeloid leukemia (AML).\n\n### Epidemiology\nMPDs are more common in older adults, with a peak incidence in the 60s and 70s. MDS has a higher incidence in individuals over 70 years of age. The exact prevalence varies by subtype, with polycythemia vera (PV) and essential thrombocythemia (ET) being more common than primary myelofibrosis (PMF) and MDS.\n\n### Essential Pathophysiology\nIn MPDs, mutations in hematopoietic stem cells lead to excessive production of one or more types of blood cells (e.g., red blood cells in PV, platelets in ET). In MDS, there is ineffective hematopoiesis due to genetic mutations, leading to dysplastic changes in blood cells and a risk of transformation to AML.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Night sweats\n- Weight loss\n- Pruritus (especially after bathing in PV)\n- Bleeding or bruising easily\n\n### Key Signs\n- Splenomegaly\n- Hepatomegaly\n- Cyanosis (in PV)\n- Thrombosis (in ET)\n- Pallor (in MDS)\n\n### Atypical Presentations\n- Gout (in PV)\n- Thrombotic events (in ET)\n- Cytopenias (in MDS)\n\n### Red Flags Requiring Immediate Action\n- Severe thrombocytopenia\n- Unexplained bleeding\n- Signs of acute leukemia (e.g., fever, infections, severe fatigue)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) with differential\n- Peripheral blood smear\n- Bone marrow biopsy\n\n### Second-line Investigations\n- JAK2 V617F mutation analysis (for PV and ET)\n- Cytogenetic analysis (for MDS)\n- Erythropoietin level (for PV)\n\n### Specialist Tests\n- Bone marrow aspiration and biopsy\n- Flow cytometry\n- Molecular genetic testing for other mutations (e.g., ASXL1, TP53)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, blood counts, bone marrow findings, and genetic testing. For example, PV is diagnosed with elevated hemoglobin/hematocrit, JAK2 mutation, and bone marrow hypercellularity.\n\n### Key Differential Diagnoses to Exclude\n- Acute myeloid leukemia (AML)\n- Chronic myeloid leukemia (CML)\n- Secondary erythrocytosis\n- Aplastic anemia\n- Iron deficiency anemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (transfusions, antibiotics for infections)\n- Hydration and management of hyperviscosity (in PV)\n\n#### Second-line Treatments\n- Hydroxyurea (for high-risk patients)\n- Interferon-alpha (for PV and ET)\n\n#### Emergency Procedures\n- Therapeutic phlebotomy (for PV)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Low-dose aspirin (for ET)\n- Erythropoiesis-stimulating agents (for MDS)\n\n#### Second-line Treatments\n- JAK inhibitors (e.g., ruxolitinib for PMF)\n- Hypomethylating agents (e.g., azacitidine for MDS)\n\n#### Monitoring Requirements\n- Regular CBC to monitor blood counts\n- Assessment for transformation to AML\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydroxyurea\n- **Mechanism of Action**: Inhibits DNA synthesis, reducing cell proliferation.\n- **Typical Dosing Range**: 15-20 mg/kg/day, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Myelosuppression, gastrointestinal upset, skin rash.\n- **When to Use vs. Alternatives**: Monitor blood counts regularly.\n\n#### Ruxolitinib\n- **Mechanism of Action**: JAK1/JAK2 inhibitor, reducing cytokine signaling.\n- **Typical Dosing Range**: Starting dose 15 mg twice daily, adjusted based on platelet count.\n- **Key Side Effects/Contraindications**: Thrombocytopenia, anemia, infections.\n- **When to Use vs. Alternatives**: Monitor for signs of infection and blood counts.\n\n#### Azacitidine\n- **Mechanism of Action**: Hypomethylating agent that induces differentiation of myeloid cells.\n- **Typical Dosing Range**: 75 mg/m2 subcutaneously for 7 days every 28 days.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, myelosuppression.\n- **When to Use vs. Alternatives**: Monitor for cytopenias.\n\n### Procedures\n\n#### Therapeutic phlebotomy\n- **What it Involves**: Removal of blood to reduce red cell mass in PV.\n- **Indications**: Polycythemia vera with elevated hematocrit.\n- **Key Risks/Complications**: Hypotension, infection, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies by subtype; PV and ET have a relatively good prognosis with appropriate management, while MDS has a variable prognosis and a risk of progression to AML.\n\n### Important Complications to Watch For\n- Thrombotic events (in ET)\n- Hemorrhagic complications (in MDS)\n- Transformation to acute leukemia (in MDS)\n- Myelofibrosis (in PV and ET)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of MPDs/MDS, perform initial investigations, and manage acute complications. They should also be aware of when to refer to a hematologist for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to a hematologist for severe cytopenias, suspected transformation to AML, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nMonitor for signs of thrombosis or bleeding, especially in patients with ET or MDS. Regularly assess blood counts during treatment, especially when using myelosuppressive agents.\n",
+  "content": {
+    "overview": {
+      "definition": "Myeloproliferative disorders (MPDs) are a group of hematological conditions characterized by the overproduction of blood cells due to clonal proliferation of hematopoietic stem cells. Myelodysplastic syndromes (MDS) are a group of disorders caused by poorly formed or dysfunctional blood cells, leading to ineffective hematopoiesis and a risk of progression to acute myeloid leukemia (AML).",
+      "epidemiology": "MPDs are more common in older adults, with a peak incidence in the 60s and 70s. MDS has a higher incidence in individuals over 70 years of age. The exact prevalence varies by subtype, with polycythemia vera (PV) and essential thrombocythemia (ET) being more common than primary myelofibrosis (PMF) and MDS.",
+      "pathophysiology": "In MPDs, mutations in hematopoietic stem cells lead to excessive production of one or more types of blood cells (e.g., red blood cells in PV, platelets in ET). In MDS, there is ineffective hematopoiesis due to genetic mutations, leading to dysplastic changes in blood cells and a risk of transformation to AML."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Night sweats",
+        "Weight loss",
+        "Pruritus (especially after bathing in PV)",
+        "Bleeding or bruising easily"
+      ],
+      "signs": [
+        "Splenomegaly",
+        "Hepatomegaly",
+        "Cyanosis (in PV)",
+        "Thrombosis (in ET)",
+        "Pallor (in MDS)"
+      ],
+      "atypicalPresentations": [
+        "Gout (in PV)",
+        "Thrombotic events (in ET)",
+        "Cytopenias (in MDS)"
+      ],
+      "redFlags": [
+        "Severe thrombocytopenia",
+        "Unexplained bleeding",
+        "Signs of acute leukemia (e.g., fever, infections, severe fatigue)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) with differential",
+        "Peripheral blood smear",
+        "Bone marrow biopsy"
+      ],
+      "secondLine": [
+        "JAK2 V617F mutation analysis (for PV and ET)",
+        "Cytogenetic analysis (for MDS)",
+        "Erythropoietin level (for PV)"
+      ],
+      "specialistTests": [
+        "Bone marrow aspiration and biopsy",
+        "Flow cytometry",
+        "Molecular genetic testing for other mutations (e.g., ASXL1, TP53)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, blood counts, bone marrow findings, and genetic testing. For example, PV is diagnosed with elevated hemoglobin/hematocrit, JAK2 mutation, and bone marrow hypercellularity.",
+      "differentials": [
+        "Acute myeloid leukemia (AML)",
+        "Chronic myeloid leukemia (CML)",
+        "Secondary erythrocytosis",
+        "Aplastic anemia",
+        "Iron deficiency anemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (transfusions, antibiotics for infections)",
+          "Hydration and management of hyperviscosity (in PV)"
+        ],
+        "secondLine": [
+          "Hydroxyurea (for high-risk patients)",
+          "Interferon-alpha (for PV and ET)"
+        ],
+        "procedures": [
+          "Therapeutic phlebotomy (for PV)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Low-dose aspirin (for ET)",
+          "Erythropoiesis-stimulating agents (for MDS)"
+        ],
+        "secondLine": [
+          "JAK inhibitors (e.g., ruxolitinib for PMF)",
+          "Hypomethylating agents (e.g., azacitidine for MDS)"
+        ],
+        "monitoring": [
+          "Regular CBC to monitor blood counts",
+          "Assessment for transformation to AML"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydroxyurea",
+          "mechanism": "Inhibits DNA synthesis, reducing cell proliferation.",
+          "dosing": "15-20 mg/kg/day, adjusted based on response and tolerance.",
+          "sideEffects": "Myelosuppression, gastrointestinal upset, skin rash.",
+          "notes": "Monitor blood counts regularly."
+        },
+        {
+          "name": "Ruxolitinib",
+          "mechanism": "JAK1/JAK2 inhibitor, reducing cytokine signaling.",
+          "dosing": "Starting dose 15 mg twice daily, adjusted based on platelet count.",
+          "sideEffects": "Thrombocytopenia, anemia, infections.",
+          "notes": "Monitor for signs of infection and blood counts."
+        },
+        {
+          "name": "Azacitidine",
+          "mechanism": "Hypomethylating agent that induces differentiation of myeloid cells.",
+          "dosing": "75 mg/m2 subcutaneously for 7 days every 28 days.",
+          "sideEffects": "Nausea, vomiting, myelosuppression.",
+          "notes": "Monitor for cytopenias."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Therapeutic phlebotomy",
+          "description": "Removal of blood to reduce red cell mass in PV.",
+          "indications": "Polycythemia vera with elevated hematocrit.",
+          "risks": "Hypotension, infection, bleeding."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies by subtype; PV and ET have a relatively good prognosis with appropriate management, while MDS has a variable prognosis and a risk of progression to AML.",
+    "complications": [
+      "Thrombotic events (in ET)",
+      "Hemorrhagic complications (in MDS)",
+      "Transformation to acute leukemia (in MDS)",
+      "Myelofibrosis (in PV and ET)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of MPDs/MDS, perform initial investigations, and manage acute complications. They should also be aware of when to refer to a hematologist for further evaluation and management.",
+    "escalation": "Refer to a hematologist for severe cytopenias, suspected transformation to AML, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of thrombosis or bleeding, especially in patients with ET or MDS. Regularly assess blood counts during treatment, especially when using myelosuppressive agents."
+  }
+}

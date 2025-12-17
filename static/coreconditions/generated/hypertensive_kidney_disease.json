@@ -1,0 +1,138 @@
+{
+  "id": "hypertensive_kidney_disease",
+  "name": "Hypertensive kidney disease",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:19:25.069215",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypertensive kidney disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypertensive kidney disease refers to kidney damage caused by chronic high blood pressure (hypertension), leading to progressive renal impairment and potential end-stage renal disease (ESRD).\n\n### Epidemiology\nHypertensive kidney disease is prevalent in populations with high rates of hypertension, affecting approximately 25% of adults in developed countries. It is a leading cause of chronic kidney disease (CKD) and ESRD.\n\n### Essential Pathophysiology\nChronic hypertension causes damage to the renal vasculature, leading to ischemia, glomerulosclerosis, and tubulointerstitial fibrosis. This results in decreased glomerular filtration rate (GFR) and progressive renal dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Nausea\n- Anorexia\n- Edema\n- Shortness of breath\n\n### Key Signs\n- Elevated blood pressure\n- Proteinuria\n- Hematuria\n- Decreased urine output\n- Swelling in extremities\n\n### Atypical Presentations\n- Asymptomatic until advanced stages\n- Acute kidney injury in the context of poorly controlled hypertension\n\n### Red Flags Requiring Immediate Action\n- Severe hypertension (e.g., >180/120 mmHg)\n- Rapidly declining renal function\n- Signs of acute kidney injury\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood pressure measurement\n- Urinalysis (for protein and blood)\n- Serum creatinine and electrolytes\n- Estimated GFR (eGFR)\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Renal ultrasound (to assess kidney size and structure)\n- Urine protein-to-creatinine ratio\n\n### Specialist Tests\n- Renal biopsy (if glomerular disease is suspected)\n- Imaging studies (CT/MRI) for renal artery stenosis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of hypertension (≥140/90 mmHg) and evidence of kidney damage (e.g., proteinuria, decreased GFR).\n\n### Key Differential Diagnoses to Exclude\n- Diabetic nephropathy\n- Chronic glomerulonephritis\n- Polycystic kidney disease\n- Renal artery stenosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate blood pressure control (e.g., IV labetalol, nitroprusside)\n- Fluid management (if volume overload present)\n\n#### Second-line Treatments\n- Consider diuretics for fluid overload\n- Monitor renal function closely\n\n#### Emergency Procedures\n- Dialysis (if acute kidney injury is severe and unresponsive to medical management)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, weight loss)\n- Antihypertensive medications (ACE inhibitors, ARBs)\n\n#### Second-line Treatments\n- Add diuretics or calcium channel blockers if BP targets not met\n- Consider referral to nephrology for advanced management\n\n#### Monitoring Requirements\n- Regular monitoring of blood pressure, renal function, and electrolytes\n- Assess for progression of kidney disease\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.\n- **Typical Dosing Range**: Start at 10 mg once daily, titrate to 20-40 mg based on blood pressure response.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels after initiation.\n\n#### Amlodipine\n- **Mechanism of Action**: Calcium channel blocker that relaxes vascular smooth muscle, leading to decreased peripheral resistance.\n- **Typical Dosing Range**: Start at 5 mg once daily, may increase to 10 mg if needed.\n- **Key Side Effects/Contraindications**: Peripheral edema, headache, flushing.\n- **When to Use vs. Alternatives**: Effective in patients with isolated systolic hypertension.\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium reabsorption in the loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Start at 20 mg once daily, adjust based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, ototoxicity (high doses).\n- **When to Use vs. Alternatives**: Monitor electrolytes and renal function.\n\n### Procedures\n\n#### Dialysis\n- **What it Involves**: A procedure to remove waste products and excess fluid from the blood when kidneys are unable to do so.\n- **Indications**: Severe acute kidney injury, end-stage renal disease, fluid overload unresponsive to diuretics.\n- **Key Risks/Complications**: Infection, hypotension, electrolyte imbalances, access complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hypertensive kidney disease varies; early detection and management can slow progression. Without intervention, it can lead to ESRD requiring dialysis or transplantation.\n\n### Important Complications to Watch For\n- Chronic kidney disease\n- End-stage renal disease\n- Cardiovascular disease\n- Electrolyte imbalances (e.g., hyperkalemia)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage blood pressure, monitor renal function, and refer to specialists as needed. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to nephrology if there is rapid decline in renal function, severe hypertension, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nMonitor blood pressure and renal function closely, especially after initiating or adjusting antihypertensive medications. Be vigilant for signs of acute kidney injury and electrolyte disturbances.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypertensive kidney disease refers to kidney damage caused by chronic high blood pressure (hypertension), leading to progressive renal impairment and potential end-stage renal disease (ESRD).",
+      "epidemiology": "Hypertensive kidney disease is prevalent in populations with high rates of hypertension, affecting approximately 25% of adults in developed countries. It is a leading cause of chronic kidney disease (CKD) and ESRD.",
+      "pathophysiology": "Chronic hypertension causes damage to the renal vasculature, leading to ischemia, glomerulosclerosis, and tubulointerstitial fibrosis. This results in decreased glomerular filtration rate (GFR) and progressive renal dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Nausea",
+        "Anorexia",
+        "Edema",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Elevated blood pressure",
+        "Proteinuria",
+        "Hematuria",
+        "Decreased urine output",
+        "Swelling in extremities"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic until advanced stages",
+        "Acute kidney injury in the context of poorly controlled hypertension"
+      ],
+      "redFlags": [
+        "Severe hypertension (e.g., >180/120 mmHg)",
+        "Rapidly declining renal function",
+        "Signs of acute kidney injury"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood pressure measurement",
+        "Urinalysis (for protein and blood)",
+        "Serum creatinine and electrolytes",
+        "Estimated GFR (eGFR)"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Renal ultrasound (to assess kidney size and structure)",
+        "Urine protein-to-creatinine ratio"
+      ],
+      "specialistTests": [
+        "Renal biopsy (if glomerular disease is suspected)",
+        "Imaging studies (CT/MRI) for renal artery stenosis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of hypertension (≥140/90 mmHg) and evidence of kidney damage (e.g., proteinuria, decreased GFR).",
+      "differentials": [
+        "Diabetic nephropathy",
+        "Chronic glomerulonephritis",
+        "Polycystic kidney disease",
+        "Renal artery stenosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate blood pressure control (e.g., IV labetalol, nitroprusside)",
+          "Fluid management (if volume overload present)"
+        ],
+        "secondLine": [
+          "Consider diuretics for fluid overload",
+          "Monitor renal function closely"
+        ],
+        "procedures": [
+          "Dialysis (if acute kidney injury is severe and unresponsive to medical management)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, weight loss)",
+          "Antihypertensive medications (ACE inhibitors, ARBs)"
+        ],
+        "secondLine": [
+          "Add diuretics or calcium channel blockers if BP targets not met",
+          "Consider referral to nephrology for advanced management"
+        ],
+        "monitoring": [
+          "Regular monitoring of blood pressure, renal function, and electrolytes",
+          "Assess for progression of kidney disease"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.",
+          "dosing": "Start at 10 mg once daily, titrate to 20-40 mg based on blood pressure response.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema.",
+          "notes": "Monitor renal function and potassium levels after initiation."
+        },
+        {
+          "name": "Amlodipine",
+          "mechanism": "Calcium channel blocker that relaxes vascular smooth muscle, leading to decreased peripheral resistance.",
+          "dosing": "Start at 5 mg once daily, may increase to 10 mg if needed.",
+          "sideEffects": "Peripheral edema, headache, flushing.",
+          "notes": "Effective in patients with isolated systolic hypertension."
+        },
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium reabsorption in the loop of Henle, promoting diuresis.",
+          "dosing": "Start at 20 mg once daily, adjust based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, ototoxicity (high doses).",
+          "notes": "Monitor electrolytes and renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Dialysis",
+          "description": "A procedure to remove waste products and excess fluid from the blood when kidneys are unable to do so.",
+          "indications": "Severe acute kidney injury, end-stage renal disease, fluid overload unresponsive to diuretics.",
+          "risks": "Infection, hypotension, electrolyte imbalances, access complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hypertensive kidney disease varies; early detection and management can slow progression. Without intervention, it can lead to ESRD requiring dialysis or transplantation.",
+    "complications": [
+      "Chronic kidney disease",
+      "End-stage renal disease",
+      "Cardiovascular disease",
+      "Electrolyte imbalances (e.g., hyperkalemia)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage blood pressure, monitor renal function, and refer to specialists as needed. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to nephrology if there is rapid decline in renal function, severe hypertension, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Monitor blood pressure and renal function closely, especially after initiating or adjusting antihypertensive medications. Be vigilant for signs of acute kidney injury and electrolyte disturbances."
+  }
+}

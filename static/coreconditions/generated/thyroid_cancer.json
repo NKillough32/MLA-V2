@@ -1,0 +1,123 @@
+{
+  "id": "thyroid_cancer",
+  "name": "Thyroid cancer",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:32:42.825736",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thyroid cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThyroid cancer is a malignant neoplasm arising from the thyroid gland, which is responsible for producing hormones that regulate metabolism, growth, and development.\n\n### Epidemiology\nThyroid cancer is the most common endocrine malignancy, accounting for approximately 1% of all cancers. It is more prevalent in women than men, with a lifetime risk of about 1 in 200 for men and 1 in 50 for women. The incidence has been rising, particularly for papillary thyroid carcinoma, often attributed to increased detection through imaging.\n\n### Essential Pathophysiology\nThyroid cancer arises from follicular or parafollicular cells of the thyroid gland. Genetic mutations (e.g., BRAF, RAS, RET/PTC) and environmental factors (e.g., radiation exposure) contribute to tumorigenesis. The most common types include papillary, follicular, medullary, and anaplastic thyroid carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless neck mass\n- Hoarseness or voice changes\n- Difficulty swallowing (dysphagia)\n- Thyroid dysfunction symptoms (e.g., weight changes, heat intolerance)\n\n### Key Signs\n- Palpable thyroid nodule\n- Lymphadenopathy (cervical lymph nodes)\n- Thyroid enlargement (goiter)\n\n### Atypical Presentations\n- Rapidly growing nodule\n- Nodule in a young patient\n- Nodule with associated pain\n\n### Red Flags Requiring Immediate Action\n- Family history of thyroid cancer\n- History of neck radiation\n- Nodule >1 cm in size\n- Persistent hoarseness or dysphagia\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Thyroid function tests (TFTs)\n- Ultrasound of the neck\n\n### Second-line Investigations\n- Fine needle aspiration biopsy (FNAB) of the thyroid nodule\n- CT or MRI of the neck if there is suspicion of local invasion\n\n### Specialist Tests\n- Thyroid scan (radioactive iodine uptake)\n- Genetic testing for RET mutations in medullary thyroid carcinoma\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through cytological examination of FNAB samples, which may show atypical cells or malignancy. The Bethesda System for Reporting Thyroid Cytopathology classifies FNAB results to guide management.\n\n### Key Differential Diagnoses to Exclude\n- Benign thyroid nodules (e.g., adenoma)\n- Thyroiditis (e.g., Hashimoto's thyroiditis)\n- Lymphoma\n- Metastatic disease to the thyroid\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Surgical consultation for suspected malignancy\n- Thyroidectomy (total or lobectomy) based on tumor type and size\n\n#### Second-line Treatments\n- Radioactive iodine therapy for certain types of thyroid cancer post-surgery\n\n#### Emergency Procedures\n- Thyroidectomy: surgical removal of all or part of the thyroid gland, indicated for malignant nodules or large goiters. Risks include bleeding, infection, and damage to the recurrent laryngeal nerve.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with ultrasound and serum thyroglobulin levels post-surgery\n\n#### Second-line Treatments\n- Levothyroxine suppression therapy to reduce TSH levels in differentiated thyroid cancer\n\n#### Monitoring Requirements\n- Regular imaging and lab tests to monitor for recurrence or metastasis.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levothyroxine\n- **Mechanism of Action**: Synthetic form of thyroxine (T4) that replaces or supplements thyroid hormone.\n- **Typical Dosing Range**: Individualized based on TSH levels; typically starts at 1.6 mcg/kg/day.\n- **Key Side Effects/Contraindications**: Hyperthyroidism symptoms (e.g., palpitations, weight loss), osteoporosis with long-term use.\n- **When to Use vs. Alternatives**: Monitor TSH levels regularly to adjust dosing.\n\n#### Radioactive iodine (I-131)\n- **Mechanism of Action**: Destroys thyroid tissue, including cancer cells, through radiation.\n- **Typical Dosing Range**: Administered as a single oral dose; specific dosing based on thyroid tissue uptake.\n- **Key Side Effects/Contraindications**: Nausea, dry mouth, potential for hypothyroidism.\n- **When to Use vs. Alternatives**: Contraindicated in pregnancy and breastfeeding.\n\n### Procedures\n\n#### Thyroidectomy\n- **What it Involves**: Surgical removal of the thyroid gland, either total or partial, depending on the extent of cancer.\n- **Indications**: Confirmed thyroid cancer, large goiters causing symptoms, or suspicious nodules.\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding structures (e.g., recurrent laryngeal nerve, parathyroid glands).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for thyroid cancer varies by type. Papillary thyroid carcinoma has a high survival rate (over 90% at 10 years), while anaplastic thyroid carcinoma has a poor prognosis with a median survival of less than a year.\n\n### Important Complications to Watch For\n- Hypothyroidism post-thyroidectomy\n- Recurrence of cancer\n- Lymph node metastasis\n- Distant metastasis (rare in well-differentiated types)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of thyroid cancer, perform initial investigations, and refer patients for specialist evaluation and management. They should also provide pre-operative and post-operative care for patients undergoing thyroid surgery.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist or surgeon for any patient with a suspicious thyroid nodule, abnormal thyroid function tests, or concerning symptoms such as hoarseness or dysphagia.\n\n### Key Safety Considerations\nEnsure informed consent is obtained for procedures, monitor for complications post-surgery, and provide education on signs of recurrence or complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Thyroid cancer is a malignant neoplasm arising from the thyroid gland, which is responsible for producing hormones that regulate metabolism, growth, and development.",
+      "epidemiology": "Thyroid cancer is the most common endocrine malignancy, accounting for approximately 1% of all cancers. It is more prevalent in women than men, with a lifetime risk of about 1 in 200 for men and 1 in 50 for women. The incidence has been rising, particularly for papillary thyroid carcinoma, often attributed to increased detection through imaging.",
+      "pathophysiology": "Thyroid cancer arises from follicular or parafollicular cells of the thyroid gland. Genetic mutations (e.g., BRAF, RAS, RET/PTC) and environmental factors (e.g., radiation exposure) contribute to tumorigenesis. The most common types include papillary, follicular, medullary, and anaplastic thyroid carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless neck mass",
+        "Hoarseness or voice changes",
+        "Difficulty swallowing (dysphagia)",
+        "Thyroid dysfunction symptoms (e.g., weight changes, heat intolerance)"
+      ],
+      "signs": [
+        "Palpable thyroid nodule",
+        "Lymphadenopathy (cervical lymph nodes)",
+        "Thyroid enlargement (goiter)"
+      ],
+      "atypicalPresentations": [
+        "Rapidly growing nodule",
+        "Nodule in a young patient",
+        "Nodule with associated pain"
+      ],
+      "redFlags": [
+        "Family history of thyroid cancer",
+        "History of neck radiation",
+        "Nodule >1 cm in size",
+        "Persistent hoarseness or dysphagia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Thyroid function tests (TFTs)",
+        "Ultrasound of the neck"
+      ],
+      "secondLine": [
+        "Fine needle aspiration biopsy (FNAB) of the thyroid nodule",
+        "CT or MRI of the neck if there is suspicion of local invasion"
+      ],
+      "specialistTests": [
+        "Thyroid scan (radioactive iodine uptake)",
+        "Genetic testing for RET mutations in medullary thyroid carcinoma"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through cytological examination of FNAB samples, which may show atypical cells or malignancy. The Bethesda System for Reporting Thyroid Cytopathology classifies FNAB results to guide management.",
+      "differentials": [
+        "Benign thyroid nodules (e.g., adenoma)",
+        "Thyroiditis (e.g., Hashimoto's thyroiditis)",
+        "Lymphoma",
+        "Metastatic disease to the thyroid"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Surgical consultation for suspected malignancy",
+          "Thyroidectomy (total or lobectomy) based on tumor type and size"
+        ],
+        "secondLine": [
+          "Radioactive iodine therapy for certain types of thyroid cancer post-surgery"
+        ],
+        "procedures": [
+          "Thyroidectomy: surgical removal of all or part of the thyroid gland, indicated for malignant nodules or large goiters. Risks include bleeding, infection, and damage to the recurrent laryngeal nerve."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with ultrasound and serum thyroglobulin levels post-surgery"
+        ],
+        "secondLine": [
+          "Levothyroxine suppression therapy to reduce TSH levels in differentiated thyroid cancer"
+        ],
+        "monitoring": [
+          "Regular imaging and lab tests to monitor for recurrence or metastasis."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levothyroxine",
+          "mechanism": "Synthetic form of thyroxine (T4) that replaces or supplements thyroid hormone.",
+          "dosing": "Individualized based on TSH levels; typically starts at 1.6 mcg/kg/day.",
+          "sideEffects": "Hyperthyroidism symptoms (e.g., palpitations, weight loss), osteoporosis with long-term use.",
+          "notes": "Monitor TSH levels regularly to adjust dosing."
+        },
+        {
+          "name": "Radioactive iodine (I-131)",
+          "mechanism": "Destroys thyroid tissue, including cancer cells, through radiation.",
+          "dosing": "Administered as a single oral dose; specific dosing based on thyroid tissue uptake.",
+          "sideEffects": "Nausea, dry mouth, potential for hypothyroidism.",
+          "notes": "Contraindicated in pregnancy and breastfeeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thyroidectomy",
+          "description": "Surgical removal of the thyroid gland, either total or partial, depending on the extent of cancer.",
+          "indications": "Confirmed thyroid cancer, large goiters causing symptoms, or suspicious nodules.",
+          "risks": "Bleeding, infection, damage to surrounding structures (e.g., recurrent laryngeal nerve, parathyroid glands)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for thyroid cancer varies by type. Papillary thyroid carcinoma has a high survival rate (over 90% at 10 years), while anaplastic thyroid carcinoma has a poor prognosis with a median survival of less than a year.",
+    "complications": [
+      "Hypothyroidism post-thyroidectomy",
+      "Recurrence of cancer",
+      "Lymph node metastasis",
+      "Distant metastasis (rare in well-differentiated types)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of thyroid cancer, perform initial investigations, and refer patients for specialist evaluation and management. They should also provide pre-operative and post-operative care for patients undergoing thyroid surgery.",
+    "escalation": "Refer to an endocrinologist or surgeon for any patient with a suspicious thyroid nodule, abnormal thyroid function tests, or concerning symptoms such as hoarseness or dysphagia.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained for procedures, monitor for complications post-surgery, and provide education on signs of recurrence or complications."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "hypovolaemic",
+  "name": "Hypovolaemic",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:03:04.866368",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypovolaemic: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypovolaemia is a clinical state characterized by a decrease in the volume of blood plasma, leading to reduced circulating blood volume and inadequate tissue perfusion.\n\n### Epidemiology\nHypovolaemia can occur in various clinical settings, including trauma, gastrointestinal losses (vomiting, diarrhea), burns, and sepsis. It is a common cause of shock in emergency medicine.\n\n### Essential Pathophysiology\nHypovolaemia leads to decreased venous return to the heart, reduced stroke volume, and ultimately decreased cardiac output. This triggers compensatory mechanisms such as increased heart rate and peripheral vasoconstriction, but if severe or prolonged, it can result in organ dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Thirst\n- Weakness\n- Dizziness\n- Confusion\n- Nausea\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Dry mucous membranes\n- Decreased skin turgor\n- Cold extremities\n\n### Atypical Presentations\n- Altered mental status in elderly patients\n- Minimal symptoms in chronic hypovolaemia\n\n### Red Flags Requiring Immediate Action\n- Systolic blood pressure <90 mmHg\n- Heart rate >120 bpm\n- Altered level of consciousness\n- Oliguria or anuria\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Vital signs monitoring\n- Urine output measurement\n- Blood tests (CBC, electrolytes, renal function)\n\n### Second-line Investigations\n- Lactate levels\n- Coagulation profile\n- Crossmatch for potential transfusion\n\n### Specialist Tests\n- Ultrasound (FAST exam) for internal bleeding\n- CT scan for abdominal injuries\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypovolaemia is based on clinical assessment of symptoms, signs, and laboratory findings indicating reduced blood volume and perfusion.\n\n### Key Differential Diagnoses to Exclude\n- Septic shock\n- Cardiogenic shock\n- Anaphylactic shock\n- Neurogenic shock\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (crystalloids such as Normal Saline or Lactated Ringer's)\n- Monitoring vital signs and urine output\n\n#### Second-line Treatments\n- Blood transfusion if significant hemorrhage is suspected\n- Vasopressors (e.g., norepinephrine) if hypotension persists despite fluid resuscitation\n\n#### Emergency Procedures\n- Central venous catheter placement for monitoring and fluid administration\n- Intraosseous access in emergencies\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral rehydration solutions for mild cases\n- Encouragement of fluid intake\n\n#### Second-line Treatments\n- Intravenous fluids for severe chronic hypovolaemia\n\n#### Monitoring Requirements\n- Regular assessment of vital signs and fluid balance\n- Monitoring of renal function and electrolytes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Normal Saline\n- **Mechanism of Action**: Isotonic crystalloid solution that expands extracellular fluid volume.\n- **Typical Dosing Range**: Initial bolus of 500-1000 mL over 30 minutes, reassess and repeat as necessary.\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances.\n- **When to Use vs. Alternatives**: Commonly used for initial resuscitation.\n\n#### Lactated Ringer's\n- **Mechanism of Action**: Isotonic crystalloid solution that provides electrolytes and buffers acidosis.\n- **Typical Dosing Range**: Similar to Normal Saline, initial bolus of 500-1000 mL over 30 minutes.\n- **Key Side Effects/Contraindications**: Fluid overload, potential for hyperkalemia.\n- **When to Use vs. Alternatives**: Preferred in some trauma settings.\n\n#### Norepinephrine\n- **Mechanism of Action**: Alpha-1 adrenergic agonist causing vasoconstriction and increased blood pressure.\n- **Typical Dosing Range**: Start at 0.05-0.5 mcg/kg/min, titrate to effect.\n- **Key Side Effects/Contraindications**: Tachycardia, peripheral ischemia, arrhythmias.\n- **When to Use vs. Alternatives**: Used in cases of persistent hypotension after fluid resuscitation.\n\n### Procedures\n\n#### Central Venous Catheter Placement\n- **What it Involves**: Insertion of a catheter into a large vein for fluid resuscitation and monitoring.\n- **Indications**: Severe hypovolaemia requiring large volume resuscitation or when peripheral access is difficult.\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax, arterial puncture.\n\n#### Intraosseous Access\n- **What it Involves**: Insertion of a needle into the bone marrow for emergency fluid and medication administration.\n- **Indications**: Immediate access in critically ill patients when IV access is not possible.\n- **Key Risks/Complications**: Infection, pain at the site, potential for fracture.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and management, the prognosis for hypovolaemia is generally good. However, delayed treatment can lead to multi-organ failure and increased mortality.\n\n### Important Complications to Watch For\n- Acute kidney injury\n- Shock\n- Organ dysfunction\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing signs of hypovolaemia, initiating fluid resuscitation, and monitoring patients closely. They should also be able to escalate care appropriately.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of severe hypovolaemia or shock, escalate to senior medical staff immediately. Ensure that fluid resuscitation is initiated and consider calling for a rapid response team if the patient is unstable.\n\n### Key Safety Considerations\nMonitor vital signs closely during fluid resuscitation to avoid fluid overload. Be aware of the signs of transfusion reactions if blood products are administered. Ensure accurate documentation of fluid intake and output.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypovolaemia is a clinical state characterized by a decrease in the volume of blood plasma, leading to reduced circulating blood volume and inadequate tissue perfusion.",
+      "epidemiology": "Hypovolaemia can occur in various clinical settings, including trauma, gastrointestinal losses (vomiting, diarrhea), burns, and sepsis. It is a common cause of shock in emergency medicine.",
+      "pathophysiology": "Hypovolaemia leads to decreased venous return to the heart, reduced stroke volume, and ultimately decreased cardiac output. This triggers compensatory mechanisms such as increased heart rate and peripheral vasoconstriction, but if severe or prolonged, it can result in organ dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Thirst",
+        "Weakness",
+        "Dizziness",
+        "Confusion",
+        "Nausea"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Dry mucous membranes",
+        "Decreased skin turgor",
+        "Cold extremities"
+      ],
+      "atypicalPresentations": [
+        "Altered mental status in elderly patients",
+        "Minimal symptoms in chronic hypovolaemia"
+      ],
+      "redFlags": [
+        "Systolic blood pressure <90 mmHg",
+        "Heart rate >120 bpm",
+        "Altered level of consciousness",
+        "Oliguria or anuria"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Vital signs monitoring",
+        "Urine output measurement",
+        "Blood tests (CBC, electrolytes, renal function)"
+      ],
+      "secondLine": [
+        "Lactate levels",
+        "Coagulation profile",
+        "Crossmatch for potential transfusion"
+      ],
+      "specialistTests": [
+        "Ultrasound (FAST exam) for internal bleeding",
+        "CT scan for abdominal injuries"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypovolaemia is based on clinical assessment of symptoms, signs, and laboratory findings indicating reduced blood volume and perfusion.",
+      "differentials": [
+        "Septic shock",
+        "Cardiogenic shock",
+        "Anaphylactic shock",
+        "Neurogenic shock"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (crystalloids such as Normal Saline or Lactated Ringer's)",
+          "Monitoring vital signs and urine output"
+        ],
+        "secondLine": [
+          "Blood transfusion if significant hemorrhage is suspected",
+          "Vasopressors (e.g., norepinephrine) if hypotension persists despite fluid resuscitation"
+        ],
+        "procedures": [
+          "Central venous catheter placement for monitoring and fluid administration",
+          "Intraosseous access in emergencies"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral rehydration solutions for mild cases",
+          "Encouragement of fluid intake"
+        ],
+        "secondLine": [
+          "Intravenous fluids for severe chronic hypovolaemia"
+        ],
+        "monitoring": [
+          "Regular assessment of vital signs and fluid balance",
+          "Monitoring of renal function and electrolytes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Normal Saline",
+          "mechanism": "Isotonic crystalloid solution that expands extracellular fluid volume.",
+          "dosing": "Initial bolus of 500-1000 mL over 30 minutes, reassess and repeat as necessary.",
+          "sideEffects": "Fluid overload, electrolyte imbalances.",
+          "notes": "Commonly used for initial resuscitation."
+        },
+        {
+          "name": "Lactated Ringer's",
+          "mechanism": "Isotonic crystalloid solution that provides electrolytes and buffers acidosis.",
+          "dosing": "Similar to Normal Saline, initial bolus of 500-1000 mL over 30 minutes.",
+          "sideEffects": "Fluid overload, potential for hyperkalemia.",
+          "notes": "Preferred in some trauma settings."
+        },
+        {
+          "name": "Norepinephrine",
+          "mechanism": "Alpha-1 adrenergic agonist causing vasoconstriction and increased blood pressure.",
+          "dosing": "Start at 0.05-0.5 mcg/kg/min, titrate to effect.",
+          "sideEffects": "Tachycardia, peripheral ischemia, arrhythmias.",
+          "notes": "Used in cases of persistent hypotension after fluid resuscitation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Central Venous Catheter Placement",
+          "description": "Insertion of a catheter into a large vein for fluid resuscitation and monitoring.",
+          "indications": "Severe hypovolaemia requiring large volume resuscitation or when peripheral access is difficult.",
+          "risks": "Infection, thrombosis, pneumothorax, arterial puncture."
+        },
+        {
+          "name": "Intraosseous Access",
+          "description": "Insertion of a needle into the bone marrow for emergency fluid and medication administration.",
+          "indications": "Immediate access in critically ill patients when IV access is not possible.",
+          "risks": "Infection, pain at the site, potential for fracture."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and management, the prognosis for hypovolaemia is generally good. However, delayed treatment can lead to multi-organ failure and increased mortality.",
+    "complications": [
+      "Acute kidney injury",
+      "Shock",
+      "Organ dysfunction",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing signs of hypovolaemia, initiating fluid resuscitation, and monitoring patients closely. They should also be able to escalate care appropriately.",
+    "escalation": "If a patient shows signs of severe hypovolaemia or shock, escalate to senior medical staff immediately. Ensure that fluid resuscitation is initiated and consider calling for a rapid response team if the patient is unstable.",
+    "keySafetyConsiderations": "Monitor vital signs closely during fluid resuscitation to avoid fluid overload. Be aware of the signs of transfusion reactions if blood products are administered. Ensure accurate documentation of fluid intake and output."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "basal_cell_carcinoma",
+  "name": "Basal cell carcinoma",
+  "domains": [
+    "Dermatology",
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T19:17:31.082562",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Basal cell carcinoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBasal cell carcinoma (BCC) is the most common type of skin cancer, arising from the basal cells in the epidermis. It is characterized by uncontrolled growth of these cells, often due to prolonged exposure to ultraviolet (UV) radiation.\n\n### Epidemiology\nBCC accounts for approximately 80% of non-melanoma skin cancers. It is more prevalent in fair-skinned individuals and those with a history of excessive sun exposure. The incidence is increasing, particularly in older adults.\n\n### Essential Pathophysiology\nBCC develops due to mutations in the DNA of basal cells, often triggered by UV radiation. These mutations lead to abnormal cell proliferation and the formation of tumors. BCC typically grows slowly and rarely metastasizes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pearly or waxy bump on the skin\n- Flat, flesh-colored or brown scar-like lesion\n- Bleeding or oozing sore that does not heal\n- Itching or tenderness in the affected area\n\n### Key Signs\n- Telangiectasia (small blood vessels) on the surface of the lesion\n- Ulceration or crusting of the lesion\n- Induration or raised borders around the lesion\n\n### Atypical Presentations\n- Pigmented basal cell carcinoma (brown or black lesions)\n- Infiltrative basal cell carcinoma (less defined borders)\n- Superficial basal cell carcinoma (scaly, red patches)\n\n### Red Flags Requiring Immediate Action\n- Rapid growth of the lesion\n- Bleeding or ulceration that does not heal\n- Lesions in high-risk areas (face, ears, neck)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Dermatoscopy\n\n### Second-line Investigations\n- Skin biopsy (shave or punch biopsy)\n\n### Specialist Tests\n- Mohs micrographic surgery for high-risk lesions\n- Imaging studies (if invasion is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by histological confirmation from biopsy. Key features include the appearance of the lesion and histological findings of nests of basaloid cells.\n\n### Key Differential Diagnoses to Exclude\n- Squamous cell carcinoma\n- Melanoma\n- Actinic keratosis\n- Seborrheic keratosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Cryotherapy\n- Electrodessication and curettage (ED&C)\n\n#### Second-line Treatments\n- Topical chemotherapy (e.g., 5-fluorouracil)\n- Photodynamic therapy (PDT)\n\n#### Emergency Procedures\n- Surgical excision for larger or invasive lesions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular skin checks and monitoring for new lesions\n- Education on sun protection and skin care\n\n#### Second-line Treatments\n- Re-excision or Mohs surgery for recurrent lesions\n- Consideration of systemic therapies for advanced cases\n\n#### Monitoring Requirements\n- Regular follow-up appointments every 6-12 months depending on risk factors\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### 5-Fluorouracil\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.\n- **Typical Dosing Range**: Apply twice daily for 3-6 weeks depending on the lesion.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and ulceration at the application site.\n- **When to Use vs. Alternatives**: Effective for superficial BCCs.\n\n#### Imiquimod\n- **Mechanism of Action**: Immune response modifier that stimulates local immune response against cancer cells.\n- **Typical Dosing Range**: Apply once daily for 5 days a week for 6 weeks.\n- **Key Side Effects/Contraindications**: Local inflammation, erythema, and ulceration.\n- **When to Use vs. Alternatives**: Used for superficial BCCs and actinic keratosis.\n\n### Procedures\n\n#### Surgical excision\n- **What it Involves**: Complete removal of the tumor with a margin of normal skin.\n- **Indications**: For invasive BCCs or those with high-risk features.\n- **Key Risks/Complications**: Scarring, infection, and potential for incomplete excision.\n\n#### Mohs micrographic surgery\n- **What it Involves**: A specialized surgical technique that removes cancerous skin layer by layer, examining each layer for cancer cells.\n- **Indications**: High-risk BCCs, recurrent lesions, or those in cosmetically sensitive areas.\n- **Key Risks/Complications**: Longer procedure time, potential for more extensive tissue removal.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nBCC has an excellent prognosis with a low risk of metastasis. However, recurrence is possible, especially in high-risk patients.\n\n### Important Complications to Watch For\n- Local recurrence\n- Scarring or disfigurement from surgical interventions\n- Development of new skin cancers due to UV exposure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough skin examinations, recognize suspicious lesions, and refer to dermatology for biopsy and management. They should also educate patients on sun protection and skin monitoring.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology for any suspicious lesions, especially those with rapid growth, ulceration, or in high-risk areas. Escalate care for patients with recurrent or advanced disease.\n\n### Key Safety Considerations\nEnsure proper sun protection advice is given to patients, including the use of sunscreen and protective clothing. Monitor for signs of recurrence or new lesions in patients with a history of BCC.\n",
+  "content": {
+    "overview": {
+      "definition": "Basal cell carcinoma (BCC) is the most common type of skin cancer, arising from the basal cells in the epidermis. It is characterized by uncontrolled growth of these cells, often due to prolonged exposure to ultraviolet (UV) radiation.",
+      "epidemiology": "BCC accounts for approximately 80% of non-melanoma skin cancers. It is more prevalent in fair-skinned individuals and those with a history of excessive sun exposure. The incidence is increasing, particularly in older adults.",
+      "pathophysiology": "BCC develops due to mutations in the DNA of basal cells, often triggered by UV radiation. These mutations lead to abnormal cell proliferation and the formation of tumors. BCC typically grows slowly and rarely metastasizes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pearly or waxy bump on the skin",
+        "Flat, flesh-colored or brown scar-like lesion",
+        "Bleeding or oozing sore that does not heal",
+        "Itching or tenderness in the affected area"
+      ],
+      "signs": [
+        "Telangiectasia (small blood vessels) on the surface of the lesion",
+        "Ulceration or crusting of the lesion",
+        "Induration or raised borders around the lesion"
+      ],
+      "atypicalPresentations": [
+        "Pigmented basal cell carcinoma (brown or black lesions)",
+        "Infiltrative basal cell carcinoma (less defined borders)",
+        "Superficial basal cell carcinoma (scaly, red patches)"
+      ],
+      "redFlags": [
+        "Rapid growth of the lesion",
+        "Bleeding or ulceration that does not heal",
+        "Lesions in high-risk areas (face, ears, neck)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Dermatoscopy"
+      ],
+      "secondLine": [
+        "Skin biopsy (shave or punch biopsy)"
+      ],
+      "specialistTests": [
+        "Mohs micrographic surgery for high-risk lesions",
+        "Imaging studies (if invasion is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by histological confirmation from biopsy. Key features include the appearance of the lesion and histological findings of nests of basaloid cells.",
+      "differentials": [
+        "Squamous cell carcinoma",
+        "Melanoma",
+        "Actinic keratosis",
+        "Seborrheic keratosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Cryotherapy",
+          "Electrodessication and curettage (ED&C)"
+        ],
+        "secondLine": [
+          "Topical chemotherapy (e.g., 5-fluorouracil)",
+          "Photodynamic therapy (PDT)"
+        ],
+        "procedures": [
+          "Surgical excision for larger or invasive lesions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular skin checks and monitoring for new lesions",
+          "Education on sun protection and skin care"
+        ],
+        "secondLine": [
+          "Re-excision or Mohs surgery for recurrent lesions",
+          "Consideration of systemic therapies for advanced cases"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments every 6-12 months depending on risk factors"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "5-Fluorouracil",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.",
+          "dosing": "Apply twice daily for 3-6 weeks depending on the lesion.",
+          "sideEffects": "Local irritation, erythema, and ulceration at the application site.",
+          "notes": "Effective for superficial BCCs."
+        },
+        {
+          "name": "Imiquimod",
+          "mechanism": "Immune response modifier that stimulates local immune response against cancer cells.",
+          "dosing": "Apply once daily for 5 days a week for 6 weeks.",
+          "sideEffects": "Local inflammation, erythema, and ulceration.",
+          "notes": "Used for superficial BCCs and actinic keratosis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical excision",
+          "description": "Complete removal of the tumor with a margin of normal skin.",
+          "indications": "For invasive BCCs or those with high-risk features.",
+          "risks": "Scarring, infection, and potential for incomplete excision."
+        },
+        {
+          "name": "Mohs micrographic surgery",
+          "description": "A specialized surgical technique that removes cancerous skin layer by layer, examining each layer for cancer cells.",
+          "indications": "High-risk BCCs, recurrent lesions, or those in cosmetically sensitive areas.",
+          "risks": "Longer procedure time, potential for more extensive tissue removal."
+        }
+      ]
+    },
+    "prognosis": "BCC has an excellent prognosis with a low risk of metastasis. However, recurrence is possible, especially in high-risk patients.",
+    "complications": [
+      "Local recurrence",
+      "Scarring or disfigurement from surgical interventions",
+      "Development of new skin cancers due to UV exposure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough skin examinations, recognize suspicious lesions, and refer to dermatology for biopsy and management. They should also educate patients on sun protection and skin monitoring.",
+    "escalation": "Refer to dermatology for any suspicious lesions, especially those with rapid growth, ulceration, or in high-risk areas. Escalate care for patients with recurrent or advanced disease.",
+    "keySafetyConsiderations": "Ensure proper sun protection advice is given to patients, including the use of sunscreen and protective clothing. Monitor for signs of recurrence or new lesions in patients with a history of BCC."
+  }
+}

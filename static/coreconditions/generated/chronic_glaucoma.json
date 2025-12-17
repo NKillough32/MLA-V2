@@ -1,0 +1,144 @@
+{
+  "id": "chronic_glaucoma",
+  "name": "Chronic glaucoma",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:43:36.289247",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic glaucoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic glaucoma, often referred to as primary open-angle glaucoma (POAG), is a progressive optic neuropathy characterized by the degeneration of retinal ganglion cells and their axons, leading to characteristic visual field loss and optic nerve head changes.\n\n### Epidemiology\nChronic glaucoma is one of the leading causes of irreversible blindness worldwide, affecting approximately 2% of the population over the age of 40, with prevalence increasing with age. Risk factors include family history, elevated intraocular pressure (IOP), and certain ethnic backgrounds (e.g., African descent).\n\n### Essential Pathophysiology\nThe pathophysiology of chronic glaucoma involves increased intraocular pressure due to impaired aqueous humor outflow through the trabecular meshwork, leading to optic nerve damage. The exact mechanisms of neuronal death are not fully understood but may involve excitotoxicity, inflammation, and vascular insufficiency.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Gradual loss of peripheral vision (tunnel vision)\n- Difficulty adjusting to low light conditions\n- Blurred vision\n- Halos around lights\n\n### Key Signs\n- Increased intraocular pressure (IOP)\n- Optic nerve head cupping (increased cup-to-disc ratio)\n- Visual field defects (e.g., arcuate scotomas)\n- Corneal thickness changes\n\n### Atypical Presentations\n- Acute angle-closure glaucoma (though primarily acute, can present atypically)\n- Normal-tension glaucoma (IOP within normal range but optic nerve damage present)\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe eye pain\n- Nausea and vomiting\n- Acute visual loss\n- Halos around lights\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Tonometry (IOP measurement)\n- Visual field testing (perimetry)\n- Optical coherence tomography (OCT) of the optic nerve head\n\n### Second-line Investigations\n- Gonioscopy (to assess angle status)\n- Pachymetry (corneal thickness measurement)\n- Fundus photography\n\n### Specialist Tests\n- Visual evoked potentials (VEP)\n- Electrophysiological tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of chronic glaucoma is based on the presence of characteristic optic nerve head changes, visual field loss, and elevated IOP, typically above 21 mmHg, although normal-tension glaucoma can occur with lower pressures.\n\n### Key Differential Diagnoses to Exclude\n- Secondary glaucoma (e.g., due to uveitis, trauma, or steroid use)\n- Ocular hypertension (elevated IOP without optic nerve damage)\n- Retinal diseases (e.g., retinal detachment)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical beta-blockers (e.g., Timolol)\n- Topical carbonic anhydrase inhibitors (e.g., Dorzolamide)\n- Prostaglandin analogs (e.g., Latanoprost)\n\n#### Second-line Treatments\n- Oral carbonic anhydrase inhibitors (e.g., Acetazolamide)\n- Hyperosmotic agents (e.g., Mannitol)\n\n#### Emergency Procedures\n- Laser peripheral iridotomy (for angle-closure glaucoma)\n- Trabeculectomy (surgical intervention for refractory cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Topical prostaglandin analogs (e.g., Latanoprost)\n- Topical beta-blockers (e.g., Timolol)\n- Topical alpha agonists (e.g., Brimonidine)\n\n#### Second-line Treatments\n- Oral carbonic anhydrase inhibitors (e.g., Acetazolamide)\n- Surgical options (e.g., trabeculectomy, tube shunt surgery)\n\n#### Monitoring Requirements\n- Regular IOP checks (every 3-6 months)\n- Visual field testing annually or biannually\n- Assessment of optic nerve head changes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Timolol\n- **Mechanism of Action**: Non-selective beta-adrenergic antagonist that reduces aqueous humor production.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) twice daily.\n- **Key Side Effects/Contraindications**: Burning/stinging on instillation, systemic effects (bradycardia, hypotension).\n- **When to Use vs. Alternatives**: Caution in patients with asthma or heart block.\n\n#### Latanoprost\n- **Mechanism of Action**: Prostaglandin analog that increases uveoscleral outflow of aqueous humor.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) once daily in the evening.\n- **Key Side Effects/Contraindications**: Increased pigmentation of the iris, eyelash growth, conjunctival hyperemia.\n- **When to Use vs. Alternatives**: May cause darkening of the eyelid.\n\n#### Dorzolamide\n- **Mechanism of Action**: Carbonic anhydrase inhibitor that decreases aqueous humor production.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) two to three times daily.\n- **Key Side Effects/Contraindications**: Burning/stinging, allergic reactions, systemic effects (metabolic acidosis).\n- **When to Use vs. Alternatives**: Use with caution in patients with sulfa allergies.\n\n### Procedures\n\n#### Trabeculectomy\n- **What it Involves**: Surgical procedure to create a new drainage pathway for aqueous humor to reduce IOP.\n- **Indications**: Refractory glaucoma not controlled by medical therapy.\n- **Key Risks/Complications**: Infection, bleeding, hypotony, cataract formation.\n\n#### Laser Peripheral Iridotomy\n- **What it Involves**: Laser procedure to create a hole in the peripheral iris to improve aqueous outflow.\n- **Indications**: Acute angle-closure glaucoma or at risk of angle closure.\n- **Key Risks/Complications**: Intraocular pressure spike, bleeding, retinal detachment.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early detection and appropriate management, the progression of chronic glaucoma can be slowed, preserving vision. However, it is a lifelong condition requiring ongoing monitoring and treatment.\n\n### Important Complications to Watch For\n- Progressive vision loss\n- Blindness\n- Cataract formation (from prolonged use of certain medications)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of chronic glaucoma, perform initial assessments, and refer patients for specialist evaluation and management. They should also educate patients about the importance of adherence to treatment and regular follow-up.\n\n### When to Escalate to Senior/Specialist\nRefer to an ophthalmologist if there is a significant increase in IOP, new visual field defects, or if the patient is not responding to initial medical therapy.\n\n### Key Safety Considerations\nMonitor for systemic side effects of glaucoma medications, ensure proper technique in administering eye drops, and educate patients on the importance of adherence to therapy and regular follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic glaucoma, often referred to as primary open-angle glaucoma (POAG), is a progressive optic neuropathy characterized by the degeneration of retinal ganglion cells and their axons, leading to characteristic visual field loss and optic nerve head changes.",
+      "epidemiology": "Chronic glaucoma is one of the leading causes of irreversible blindness worldwide, affecting approximately 2% of the population over the age of 40, with prevalence increasing with age. Risk factors include family history, elevated intraocular pressure (IOP), and certain ethnic backgrounds (e.g., African descent).",
+      "pathophysiology": "The pathophysiology of chronic glaucoma involves increased intraocular pressure due to impaired aqueous humor outflow through the trabecular meshwork, leading to optic nerve damage. The exact mechanisms of neuronal death are not fully understood but may involve excitotoxicity, inflammation, and vascular insufficiency."
+    },
+    "recognition": {
+      "symptoms": [
+        "Gradual loss of peripheral vision (tunnel vision)",
+        "Difficulty adjusting to low light conditions",
+        "Blurred vision",
+        "Halos around lights"
+      ],
+      "signs": [
+        "Increased intraocular pressure (IOP)",
+        "Optic nerve head cupping (increased cup-to-disc ratio)",
+        "Visual field defects (e.g., arcuate scotomas)",
+        "Corneal thickness changes"
+      ],
+      "atypicalPresentations": [
+        "Acute angle-closure glaucoma (though primarily acute, can present atypically)",
+        "Normal-tension glaucoma (IOP within normal range but optic nerve damage present)"
+      ],
+      "redFlags": [
+        "Sudden onset of severe eye pain",
+        "Nausea and vomiting",
+        "Acute visual loss",
+        "Halos around lights"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Tonometry (IOP measurement)",
+        "Visual field testing (perimetry)",
+        "Optical coherence tomography (OCT) of the optic nerve head"
+      ],
+      "secondLine": [
+        "Gonioscopy (to assess angle status)",
+        "Pachymetry (corneal thickness measurement)",
+        "Fundus photography"
+      ],
+      "specialistTests": [
+        "Visual evoked potentials (VEP)",
+        "Electrophysiological tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of chronic glaucoma is based on the presence of characteristic optic nerve head changes, visual field loss, and elevated IOP, typically above 21 mmHg, although normal-tension glaucoma can occur with lower pressures.",
+      "differentials": [
+        "Secondary glaucoma (e.g., due to uveitis, trauma, or steroid use)",
+        "Ocular hypertension (elevated IOP without optic nerve damage)",
+        "Retinal diseases (e.g., retinal detachment)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical beta-blockers (e.g., Timolol)",
+          "Topical carbonic anhydrase inhibitors (e.g., Dorzolamide)",
+          "Prostaglandin analogs (e.g., Latanoprost)"
+        ],
+        "secondLine": [
+          "Oral carbonic anhydrase inhibitors (e.g., Acetazolamide)",
+          "Hyperosmotic agents (e.g., Mannitol)"
+        ],
+        "procedures": [
+          "Laser peripheral iridotomy (for angle-closure glaucoma)",
+          "Trabeculectomy (surgical intervention for refractory cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Topical prostaglandin analogs (e.g., Latanoprost)",
+          "Topical beta-blockers (e.g., Timolol)",
+          "Topical alpha agonists (e.g., Brimonidine)"
+        ],
+        "secondLine": [
+          "Oral carbonic anhydrase inhibitors (e.g., Acetazolamide)",
+          "Surgical options (e.g., trabeculectomy, tube shunt surgery)"
+        ],
+        "monitoring": [
+          "Regular IOP checks (every 3-6 months)",
+          "Visual field testing annually or biannually",
+          "Assessment of optic nerve head changes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Timolol",
+          "mechanism": "Non-selective beta-adrenergic antagonist that reduces aqueous humor production.",
+          "dosing": "1 drop in the affected eye(s) twice daily.",
+          "sideEffects": "Burning/stinging on instillation, systemic effects (bradycardia, hypotension).",
+          "notes": "Caution in patients with asthma or heart block."
+        },
+        {
+          "name": "Latanoprost",
+          "mechanism": "Prostaglandin analog that increases uveoscleral outflow of aqueous humor.",
+          "dosing": "1 drop in the affected eye(s) once daily in the evening.",
+          "sideEffects": "Increased pigmentation of the iris, eyelash growth, conjunctival hyperemia.",
+          "notes": "May cause darkening of the eyelid."
+        },
+        {
+          "name": "Dorzolamide",
+          "mechanism": "Carbonic anhydrase inhibitor that decreases aqueous humor production.",
+          "dosing": "1 drop in the affected eye(s) two to three times daily.",
+          "sideEffects": "Burning/stinging, allergic reactions, systemic effects (metabolic acidosis).",
+          "notes": "Use with caution in patients with sulfa allergies."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Trabeculectomy",
+          "description": "Surgical procedure to create a new drainage pathway for aqueous humor to reduce IOP.",
+          "indications": "Refractory glaucoma not controlled by medical therapy.",
+          "risks": "Infection, bleeding, hypotony, cataract formation."
+        },
+        {
+          "name": "Laser Peripheral Iridotomy",
+          "description": "Laser procedure to create a hole in the peripheral iris to improve aqueous outflow.",
+          "indications": "Acute angle-closure glaucoma or at risk of angle closure.",
+          "risks": "Intraocular pressure spike, bleeding, retinal detachment."
+        }
+      ]
+    },
+    "prognosis": "With early detection and appropriate management, the progression of chronic glaucoma can be slowed, preserving vision. However, it is a lifelong condition requiring ongoing monitoring and treatment.",
+    "complications": [
+      "Progressive vision loss",
+      "Blindness",
+      "Cataract formation (from prolonged use of certain medications)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of chronic glaucoma, perform initial assessments, and refer patients for specialist evaluation and management. They should also educate patients about the importance of adherence to treatment and regular follow-up.",
+    "escalation": "Refer to an ophthalmologist if there is a significant increase in IOP, new visual field defects, or if the patient is not responding to initial medical therapy.",
+    "keySafetyConsiderations": "Monitor for systemic side effects of glaucoma medications, ensure proper technique in administering eye drops, and educate patients on the importance of adherence to therapy and regular follow-up appointments."
+  }
+}

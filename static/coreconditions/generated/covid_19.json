@@ -1,0 +1,143 @@
+{
+  "id": "covid_19",
+  "name": "COVID-19",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:06:54.770424",
+  "model": "gpt-4o-mini",
+  "rawContent": "# COVID-19: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCOVID-19 is an infectious disease caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), primarily affecting the respiratory system but can also impact multiple organ systems.\n\n### Epidemiology\nCOVID-19 was first identified in December 2019 in Wuhan, China, and has since led to a global pandemic. As of 2023, millions of cases have been reported worldwide, with varying severity and outcomes.\n\n### Essential Pathophysiology\nSARS-CoV-2 enters human cells via the ACE2 receptor, leading to viral replication and an immune response. This can result in inflammation, alveolar damage, and impaired gas exchange, contributing to respiratory distress and multi-organ dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Cough\n- Shortness of breath\n- Fatigue\n- Loss of taste or smell\n- Muscle or body aches\n- Sore throat\n- Congestion or runny nose\n- Nausea or vomiting\n- Diarrhea\n\n### Key Signs\n- Tachypnea\n- Hypoxia (low oxygen saturation)\n- Cyanosis\n- Rales or crackles on auscultation\n- Decreased breath sounds\n\n### Atypical Presentations\n- Gastrointestinal symptoms (nausea, diarrhea)\n- Neurological symptoms (headache, confusion)\n- Dermatological manifestations (rashes)\n\n### Red Flags Requiring Immediate Action\n- Severe shortness of breath\n- Chest pain\n- Confusion or inability to stay awake\n- Bluish lips or face\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- RT-PCR test for SARS-CoV-2\n- Rapid antigen tests\n\n### Second-line Investigations\n- Chest X-ray or CT scan to assess for pneumonia\n- Complete blood count (CBC)\n- C-reactive protein (CRP)\n- D-dimer\n\n### Specialist Tests\n- Bronchoscopy (if indicated)\n- Serological tests for antibodies (IgG, IgM)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by a positive RT-PCR test for SARS-CoV-2 or a positive rapid antigen test in the context of clinical symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Influenza\n- Other viral pneumonias\n- Bacterial pneumonia\n- Acute bronchitis\n- Pulmonary embolism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (oxygen therapy, hydration)\n- Antipyretics (e.g., paracetamol)\n\n#### Second-line Treatments\n- Dexamethasone (if requiring supplemental oxygen)\n- Antiviral therapy (e.g., Remdesivir)\n\n#### Emergency Procedures\n- Intubation and mechanical ventilation (for severe cases)\n- Proning (for hypoxic patients)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation programs for post-COVID syndrome\n\n#### Second-line Treatments\n- Management of ongoing symptoms (e.g., respiratory therapy)\n\n#### Monitoring Requirements\n- Regular follow-up for persistent symptoms\n- Assessment of lung function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and modulates the immune response.\n- **Typical Dosing Range**: 6 mg once daily for up to 10 days.\n- **Key Side Effects/Contraindications**: Increased risk of infections, hyperglycemia, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Effective in patients requiring oxygen or mechanical ventilation.\n\n#### Remdesivir\n- **Mechanism of Action**: Antiviral that inhibits viral RNA polymerase, reducing viral replication.\n- **Typical Dosing Range**: 200 mg IV on day 1, followed by 100 mg IV daily for 5-10 days.\n- **Key Side Effects/Contraindications**: Nausea, elevated liver enzymes, renal impairment.\n- **When to Use vs. Alternatives**: Used in hospitalized patients with severe disease.\n\n### Procedures\n\n#### Intubation\n- **What it Involves**: Insertion of an endotracheal tube to secure the airway and facilitate mechanical ventilation.\n- **Indications**: Severe respiratory failure, inability to maintain oxygenation.\n- **Key Risks/Complications**: Aspiration, injury to teeth or airway, ventilator-associated pneumonia.\n\n#### Proning\n- **What it Involves**: Positioning the patient on their stomach to improve oxygenation.\n- **Indications**: Hypoxemia despite supplemental oxygen.\n- **Key Risks/Complications**: Pressure sores, facial edema, dislodgement of lines or tubes.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies widely; many patients recover fully, while others may experience long-term effects (Long COVID). Severe cases can lead to death, particularly in older adults and those with comorbidities.\n\n### Important Complications to Watch For\n- Acute respiratory distress syndrome (ARDS)\n- Thromboembolic events (DVT, PE)\n- Secondary bacterial infections\n- Long COVID (persistent symptoms)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and manage patients with suspected or confirmed COVID-19, provide supportive care, and escalate care as needed. They should also educate patients about isolation and monitoring for red flags.\n\n### When to Escalate to Senior/Specialist\nPatients with severe symptoms (e.g., respiratory distress, confusion) should be escalated to senior medical staff or critical care teams immediately.\n\n### Key Safety Considerations\nEnsure appropriate use of personal protective equipment (PPE) when assessing suspected COVID-19 patients. Monitor for signs of deterioration and be aware of infection control protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "COVID-19 is an infectious disease caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), primarily affecting the respiratory system but can also impact multiple organ systems.",
+      "epidemiology": "COVID-19 was first identified in December 2019 in Wuhan, China, and has since led to a global pandemic. As of 2023, millions of cases have been reported worldwide, with varying severity and outcomes.",
+      "pathophysiology": "SARS-CoV-2 enters human cells via the ACE2 receptor, leading to viral replication and an immune response. This can result in inflammation, alveolar damage, and impaired gas exchange, contributing to respiratory distress and multi-organ dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Cough",
+        "Shortness of breath",
+        "Fatigue",
+        "Loss of taste or smell",
+        "Muscle or body aches",
+        "Sore throat",
+        "Congestion or runny nose",
+        "Nausea or vomiting",
+        "Diarrhea"
+      ],
+      "signs": [
+        "Tachypnea",
+        "Hypoxia (low oxygen saturation)",
+        "Cyanosis",
+        "Rales or crackles on auscultation",
+        "Decreased breath sounds"
+      ],
+      "atypicalPresentations": [
+        "Gastrointestinal symptoms (nausea, diarrhea)",
+        "Neurological symptoms (headache, confusion)",
+        "Dermatological manifestations (rashes)"
+      ],
+      "redFlags": [
+        "Severe shortness of breath",
+        "Chest pain",
+        "Confusion or inability to stay awake",
+        "Bluish lips or face"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "RT-PCR test for SARS-CoV-2",
+        "Rapid antigen tests"
+      ],
+      "secondLine": [
+        "Chest X-ray or CT scan to assess for pneumonia",
+        "Complete blood count (CBC)",
+        "C-reactive protein (CRP)",
+        "D-dimer"
+      ],
+      "specialistTests": [
+        "Bronchoscopy (if indicated)",
+        "Serological tests for antibodies (IgG, IgM)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by a positive RT-PCR test for SARS-CoV-2 or a positive rapid antigen test in the context of clinical symptoms.",
+      "differentials": [
+        "Influenza",
+        "Other viral pneumonias",
+        "Bacterial pneumonia",
+        "Acute bronchitis",
+        "Pulmonary embolism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (oxygen therapy, hydration)",
+          "Antipyretics (e.g., paracetamol)"
+        ],
+        "secondLine": [
+          "Dexamethasone (if requiring supplemental oxygen)",
+          "Antiviral therapy (e.g., Remdesivir)"
+        ],
+        "procedures": [
+          "Intubation and mechanical ventilation (for severe cases)",
+          "Proning (for hypoxic patients)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation programs for post-COVID syndrome"
+        ],
+        "secondLine": [
+          "Management of ongoing symptoms (e.g., respiratory therapy)"
+        ],
+        "monitoring": [
+          "Regular follow-up for persistent symptoms",
+          "Assessment of lung function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and modulates the immune response.",
+          "dosing": "6 mg once daily for up to 10 days.",
+          "sideEffects": "Increased risk of infections, hyperglycemia, gastrointestinal bleeding.",
+          "notes": "Effective in patients requiring oxygen or mechanical ventilation."
+        },
+        {
+          "name": "Remdesivir",
+          "mechanism": "Antiviral that inhibits viral RNA polymerase, reducing viral replication.",
+          "dosing": "200 mg IV on day 1, followed by 100 mg IV daily for 5-10 days.",
+          "sideEffects": "Nausea, elevated liver enzymes, renal impairment.",
+          "notes": "Used in hospitalized patients with severe disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intubation",
+          "description": "Insertion of an endotracheal tube to secure the airway and facilitate mechanical ventilation.",
+          "indications": "Severe respiratory failure, inability to maintain oxygenation.",
+          "risks": "Aspiration, injury to teeth or airway, ventilator-associated pneumonia."
+        },
+        {
+          "name": "Proning",
+          "description": "Positioning the patient on their stomach to improve oxygenation.",
+          "indications": "Hypoxemia despite supplemental oxygen.",
+          "risks": "Pressure sores, facial edema, dislodgement of lines or tubes."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies widely; many patients recover fully, while others may experience long-term effects (Long COVID). Severe cases can lead to death, particularly in older adults and those with comorbidities.",
+    "complications": [
+      "Acute respiratory distress syndrome (ARDS)",
+      "Thromboembolic events (DVT, PE)",
+      "Secondary bacterial infections",
+      "Long COVID (persistent symptoms)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and manage patients with suspected or confirmed COVID-19, provide supportive care, and escalate care as needed. They should also educate patients about isolation and monitoring for red flags.",
+    "escalation": "Patients with severe symptoms (e.g., respiratory distress, confusion) should be escalated to senior medical staff or critical care teams immediately.",
+    "keySafetyConsiderations": "Ensure appropriate use of personal protective equipment (PPE) when assessing suspected COVID-19 patients. Monitor for signs of deterioration and be aware of infection control protocols."
+  }
+}

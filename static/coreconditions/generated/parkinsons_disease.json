@@ -1,0 +1,138 @@
+{
+  "id": "parkinsons_disease",
+  "name": "Parkinson's disease",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:42:27.675815",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Parkinson's disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nParkinson's disease is a progressive neurodegenerative disorder characterized by the degeneration of dopaminergic neurons in the substantia nigra, leading to motor and non-motor symptoms.\n\n### Epidemiology\nParkinson's disease affects approximately 1% of the population over 60 years of age, with a higher prevalence in men than women. The incidence increases with age, and it is estimated that around 10 million people worldwide are living with the disease.\n\n### Essential Pathophysiology\nThe primary pathophysiological change in Parkinson's disease is the loss of dopaminergic neurons in the substantia nigra pars compacta, leading to decreased dopamine levels in the striatum. This imbalance affects the regulation of movement and results in the characteristic motor symptoms. The presence of Lewy bodies, which are abnormal aggregates of protein, is also a hallmark of the disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Resting tremor\n- Bradykinesia\n- Rigidity\n- Postural instability\n- Freezing of gait\n- Non-motor symptoms (e.g., depression, sleep disturbances, cognitive impairment)\n\n### Key Signs\n- Reduced arm swing\n- Shuffling gait\n- Masked facies\n- Micrographia\n- Decreased postural reflexes\n\n### Atypical Presentations\n- Early onset Parkinson's disease (before age 50)\n- Rapid progression of symptoms\n- Prominent cognitive decline early in the disease\n- Severe dysautonomia\n\n### Red Flags Requiring Immediate Action\n- Onset of symptoms before age 40\n- Rapid progression of symptoms\n- Severe dysautonomia (e.g., orthostatic hypotension)\n- Presence of atypical features (e.g., early cognitive decline)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Response to dopaminergic therapy\n\n### Second-line Investigations\n- MRI brain (to rule out other causes)\n- DaTscan (to assess dopamine transporter levels)\n\n### Specialist Tests\n- Genetic testing for familial forms (e.g., LRRK2, PARK7)\n- Neuropsychological assessment for cognitive function\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of bradykinesia plus at least one of the following: resting tremor, rigidity, or postural instability. Supportive criteria include response to dopaminergic therapy and the presence of non-motor symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Essential tremor\n- Multiple system atrophy\n- Progressive supranuclear palsy\n- Corticobasal degeneration\n- Drug-induced parkinsonism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Levodopa-carbidopa (Sinemet) for symptomatic relief\n\n#### Second-line Treatments\n- Dopamine agonists (e.g., pramipexole, ropinirole)\n\n#### Emergency Procedures\n- Deep brain stimulation (DBS) for refractory cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Levodopa-carbidopa (Sinemet) as the mainstay of treatment\n- Dopamine agonists for early treatment\n\n#### Second-line Treatments\n- MAO-B inhibitors (e.g., selegiline)\n- COMT inhibitors (e.g., entacapone)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and side effects\n- Assessment of motor fluctuations and dyskinesias\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levodopa-Carbidopa (Sinemet)\n- **Mechanism of Action**: Levodopa is converted to dopamine in the brain, while carbidopa prevents peripheral conversion, increasing central availability.\n- **Typical Dosing Range**: Initial: 100/25 mg three times daily; may increase based on response.\n- **Key Side Effects/Contraindications**: Nausea, dizziness, dyskinesias, motor fluctuations, hallucinations.\n- **When to Use vs. Alternatives**: Considered the most effective treatment for motor symptoms.\n\n#### Pramipexole\n- **Mechanism of Action**: Dopamine agonist that stimulates dopamine receptors directly.\n- **Typical Dosing Range**: Initial: 0.125 mg TID; titrate up to 1.5 mg/day based on response.\n- **Key Side Effects/Contraindications**: Nausea, dizziness, somnolence, impulse control disorders.\n- **When to Use vs. Alternatives**: Useful in younger patients or as adjunct therapy.\n\n#### Entacapone\n- **Mechanism of Action**: COMT inhibitor that prolongs the effect of levodopa by preventing its breakdown.\n- **Typical Dosing Range**: 200 mg with each dose of levodopa; max 1600 mg/day.\n- **Key Side Effects/Contraindications**: Diarrhea, abdominal pain, urine discoloration.\n- **When to Use vs. Alternatives**: Used in combination with levodopa to manage motor fluctuations.\n\n### Procedures\n\n#### Deep Brain Stimulation (DBS)\n- **What it Involves**: A neurosurgical procedure that involves implanting electrodes in specific brain areas to modulate abnormal activity.\n- **Indications**: Refractory motor symptoms despite optimal medical therapy, significant motor fluctuations, or dyskinesias.\n- **Key Risks/Complications**: Infection, hemorrhage, hardware complications, cognitive changes.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nParkinson's disease is a progressive condition with a variable course. Patients may experience a gradual decline in motor function and an increase in non-motor symptoms over time. Life expectancy is generally not significantly reduced, but quality of life can be affected.\n\n### Important Complications to Watch For\n- Dysphagia leading to aspiration pneumonia\n- Falls and fractures\n- Cognitive decline and dementia\n- Psychiatric disorders (e.g., depression, anxiety)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of Parkinson's disease, initiate appropriate investigations, and manage basic treatment regimens. They should also provide education and support to patients and families regarding the disease and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist for patients with atypical features, rapid progression, or those requiring advanced therapies such as DBS.\n\n### Key Safety Considerations\nMonitor for side effects of medications, particularly dyskinesias and psychiatric symptoms. Ensure safety measures are in place to prevent falls, and assess swallowing ability to prevent aspiration.\n",
+  "content": {
+    "overview": {
+      "definition": "Parkinson's disease is a progressive neurodegenerative disorder characterized by the degeneration of dopaminergic neurons in the substantia nigra, leading to motor and non-motor symptoms.",
+      "epidemiology": "Parkinson's disease affects approximately 1% of the population over 60 years of age, with a higher prevalence in men than women. The incidence increases with age, and it is estimated that around 10 million people worldwide are living with the disease.",
+      "pathophysiology": "The primary pathophysiological change in Parkinson's disease is the loss of dopaminergic neurons in the substantia nigra pars compacta, leading to decreased dopamine levels in the striatum. This imbalance affects the regulation of movement and results in the characteristic motor symptoms. The presence of Lewy bodies, which are abnormal aggregates of protein, is also a hallmark of the disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Resting tremor",
+        "Bradykinesia",
+        "Rigidity",
+        "Postural instability",
+        "Freezing of gait",
+        "Non-motor symptoms (e.g., depression, sleep disturbances, cognitive impairment)"
+      ],
+      "signs": [
+        "Reduced arm swing",
+        "Shuffling gait",
+        "Masked facies",
+        "Micrographia",
+        "Decreased postural reflexes"
+      ],
+      "atypicalPresentations": [
+        "Early onset Parkinson's disease (before age 50)",
+        "Rapid progression of symptoms",
+        "Prominent cognitive decline early in the disease",
+        "Severe dysautonomia"
+      ],
+      "redFlags": [
+        "Onset of symptoms before age 40",
+        "Rapid progression of symptoms",
+        "Severe dysautonomia (e.g., orthostatic hypotension)",
+        "Presence of atypical features (e.g., early cognitive decline)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Response to dopaminergic therapy"
+      ],
+      "secondLine": [
+        "MRI brain (to rule out other causes)",
+        "DaTscan (to assess dopamine transporter levels)"
+      ],
+      "specialistTests": [
+        "Genetic testing for familial forms (e.g., LRRK2, PARK7)",
+        "Neuropsychological assessment for cognitive function"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of bradykinesia plus at least one of the following: resting tremor, rigidity, or postural instability. Supportive criteria include response to dopaminergic therapy and the presence of non-motor symptoms.",
+      "differentials": [
+        "Essential tremor",
+        "Multiple system atrophy",
+        "Progressive supranuclear palsy",
+        "Corticobasal degeneration",
+        "Drug-induced parkinsonism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Levodopa-carbidopa (Sinemet) for symptomatic relief"
+        ],
+        "secondLine": [
+          "Dopamine agonists (e.g., pramipexole, ropinirole)"
+        ],
+        "procedures": [
+          "Deep brain stimulation (DBS) for refractory cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Levodopa-carbidopa (Sinemet) as the mainstay of treatment",
+          "Dopamine agonists for early treatment"
+        ],
+        "secondLine": [
+          "MAO-B inhibitors (e.g., selegiline)",
+          "COMT inhibitors (e.g., entacapone)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and side effects",
+          "Assessment of motor fluctuations and dyskinesias"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levodopa-Carbidopa (Sinemet)",
+          "mechanism": "Levodopa is converted to dopamine in the brain, while carbidopa prevents peripheral conversion, increasing central availability.",
+          "dosing": "Initial: 100/25 mg three times daily; may increase based on response.",
+          "sideEffects": "Nausea, dizziness, dyskinesias, motor fluctuations, hallucinations.",
+          "notes": "Considered the most effective treatment for motor symptoms."
+        },
+        {
+          "name": "Pramipexole",
+          "mechanism": "Dopamine agonist that stimulates dopamine receptors directly.",
+          "dosing": "Initial: 0.125 mg TID; titrate up to 1.5 mg/day based on response.",
+          "sideEffects": "Nausea, dizziness, somnolence, impulse control disorders.",
+          "notes": "Useful in younger patients or as adjunct therapy."
+        },
+        {
+          "name": "Entacapone",
+          "mechanism": "COMT inhibitor that prolongs the effect of levodopa by preventing its breakdown.",
+          "dosing": "200 mg with each dose of levodopa; max 1600 mg/day.",
+          "sideEffects": "Diarrhea, abdominal pain, urine discoloration.",
+          "notes": "Used in combination with levodopa to manage motor fluctuations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Deep Brain Stimulation (DBS)",
+          "description": "A neurosurgical procedure that involves implanting electrodes in specific brain areas to modulate abnormal activity.",
+          "indications": "Refractory motor symptoms despite optimal medical therapy, significant motor fluctuations, or dyskinesias.",
+          "risks": "Infection, hemorrhage, hardware complications, cognitive changes."
+        }
+      ]
+    },
+    "prognosis": "Parkinson's disease is a progressive condition with a variable course. Patients may experience a gradual decline in motor function and an increase in non-motor symptoms over time. Life expectancy is generally not significantly reduced, but quality of life can be affected.",
+    "complications": [
+      "Dysphagia leading to aspiration pneumonia",
+      "Falls and fractures",
+      "Cognitive decline and dementia",
+      "Psychiatric disorders (e.g., depression, anxiety)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of Parkinson's disease, initiate appropriate investigations, and manage basic treatment regimens. They should also provide education and support to patients and families regarding the disease and its management.",
+    "escalation": "Refer to a neurologist for patients with atypical features, rapid progression, or those requiring advanced therapies such as DBS.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, particularly dyskinesias and psychiatric symptoms. Ensure safety measures are in place to prevent falls, and assess swallowing ability to prevent aspiration."
+  }
+}

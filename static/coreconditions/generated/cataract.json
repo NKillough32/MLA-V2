@@ -1,0 +1,122 @@
+{
+  "id": "cataract",
+  "name": "Cataract",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:43:49.771258",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cataract: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA cataract is a clouding of the lens of the eye, leading to a decrease in vision. It is a common condition, particularly in older adults, and can affect one or both eyes.\n\n### Epidemiology\nCataracts are the leading cause of blindness worldwide. Approximately 50% of people over the age of 65 have some degree of cataract formation. Risk factors include age, diabetes, smoking, prolonged exposure to sunlight, and certain medications.\n\n### Essential Pathophysiology\nCataracts develop when proteins in the lens of the eye clump together, causing the lens to become cloudy. This clouding interferes with light passing through the lens, leading to blurred vision.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Blurred vision\n- Difficulty seeing at night\n- Sensitivity to light and glare\n- Fading or yellowing of colors\n- Double vision in one eye\n\n### Key Signs\n- Cloudy or opaque lens observed during examination\n- Decreased visual acuity\n- Increased glare sensitivity\n\n### Atypical Presentations\n- Sudden changes in vision\n- Visual disturbances that do not improve with glasses\n\n### Red Flags Requiring Immediate Action\n- Rapidly worsening vision\n- Severe eye pain\n- Signs of infection (redness, discharge)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual acuity test\n- Slit-lamp examination\n- Fundoscopy\n\n### Second-line Investigations\n- Contrast sensitivity testing\n- Amsler grid for central vision assessment\n\n### Specialist Tests\n- Optical coherence tomography (OCT)\n- Ultrasound biomicroscopy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and examination findings of lens opacification and visual impairment.\n\n### Key Differential Diagnoses to Exclude\n- Glaucoma\n- Age-related macular degeneration\n- Diabetic retinopathy\n- Retinal detachment\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to ophthalmology for assessment\n\n#### Second-line Treatments\n- Consideration of surgical intervention if vision is significantly impaired\n\n#### Emergency Procedures\n- Cataract surgery (phacoemulsification)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of visual acuity and symptoms\n\n#### Second-line Treatments\n- Consideration of corrective lenses until surgery is indicated\n\n#### Monitoring Requirements\n- Annual eye examinations to assess progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mydriatic agents (e.g., tropicamide)\n- **Mechanism of Action**: Dilates the pupil to facilitate examination\n- **Typical Dosing Range**: 1-2 drops in the affected eye 30 minutes before examination\n- **Key Side Effects/Contraindications**: Transient stinging, blurred vision, increased intraocular pressure\n- **When to Use vs. Alternatives**: Use with caution in patients with narrow-angle glaucoma.\n\n#### Topical NSAIDs (e.g., ketorolac)\n- **Mechanism of Action**: Reduces inflammation post-surgery\n- **Typical Dosing Range**: 1 drop 4 times daily for 2 weeks post-operatively\n- **Key Side Effects/Contraindications**: Burning sensation, corneal toxicity\n- **When to Use vs. Alternatives**: Monitor for signs of corneal epithelial defects.\n\n### Procedures\n\n#### Phacoemulsification\n- **What it Involves**: A minimally invasive surgery where ultrasound waves are used to break up the cloudy lens, which is then removed and replaced with an artificial intraocular lens.\n- **Indications**: Significant visual impairment affecting daily activities, patient preference for surgery.\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, persistent inflammation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis after cataract surgery is generally excellent, with over 90% of patients experiencing improved vision. However, some may develop posterior capsule opacification post-operatively, which can be treated with a YAG laser capsulotomy.\n\n### Important Complications to Watch For\n- Posterior capsule opacification\n- Intraocular lens dislocation\n- Infection (endophthalmitis)\n- Retinal detachment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, refer patients to ophthalmology, and provide pre-operative and post-operative care, including monitoring for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology if there are signs of acute complications, such as sudden vision loss, severe pain, or signs of infection.\n\n### Key Safety Considerations\nEnsure proper patient education regarding the signs of complications post-surgery, such as sudden vision changes or increased pain. Monitor for adherence to follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "A cataract is a clouding of the lens of the eye, leading to a decrease in vision. It is a common condition, particularly in older adults, and can affect one or both eyes.",
+      "epidemiology": "Cataracts are the leading cause of blindness worldwide. Approximately 50% of people over the age of 65 have some degree of cataract formation. Risk factors include age, diabetes, smoking, prolonged exposure to sunlight, and certain medications.",
+      "pathophysiology": "Cataracts develop when proteins in the lens of the eye clump together, causing the lens to become cloudy. This clouding interferes with light passing through the lens, leading to blurred vision."
+    },
+    "recognition": {
+      "symptoms": [
+        "Blurred vision",
+        "Difficulty seeing at night",
+        "Sensitivity to light and glare",
+        "Fading or yellowing of colors",
+        "Double vision in one eye"
+      ],
+      "signs": [
+        "Cloudy or opaque lens observed during examination",
+        "Decreased visual acuity",
+        "Increased glare sensitivity"
+      ],
+      "atypicalPresentations": [
+        "Sudden changes in vision",
+        "Visual disturbances that do not improve with glasses"
+      ],
+      "redFlags": [
+        "Rapidly worsening vision",
+        "Severe eye pain",
+        "Signs of infection (redness, discharge)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual acuity test",
+        "Slit-lamp examination",
+        "Fundoscopy"
+      ],
+      "secondLine": [
+        "Contrast sensitivity testing",
+        "Amsler grid for central vision assessment"
+      ],
+      "specialistTests": [
+        "Optical coherence tomography (OCT)",
+        "Ultrasound biomicroscopy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and examination findings of lens opacification and visual impairment.",
+      "differentials": [
+        "Glaucoma",
+        "Age-related macular degeneration",
+        "Diabetic retinopathy",
+        "Retinal detachment"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to ophthalmology for assessment"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if vision is significantly impaired"
+        ],
+        "procedures": [
+          "Cataract surgery (phacoemulsification)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of visual acuity and symptoms"
+        ],
+        "secondLine": [
+          "Consideration of corrective lenses until surgery is indicated"
+        ],
+        "monitoring": [
+          "Annual eye examinations to assess progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mydriatic agents (e.g., tropicamide)",
+          "mechanism": "Dilates the pupil to facilitate examination",
+          "dosing": "1-2 drops in the affected eye 30 minutes before examination",
+          "sideEffects": "Transient stinging, blurred vision, increased intraocular pressure",
+          "notes": "Use with caution in patients with narrow-angle glaucoma."
+        },
+        {
+          "name": "Topical NSAIDs (e.g., ketorolac)",
+          "mechanism": "Reduces inflammation post-surgery",
+          "dosing": "1 drop 4 times daily for 2 weeks post-operatively",
+          "sideEffects": "Burning sensation, corneal toxicity",
+          "notes": "Monitor for signs of corneal epithelial defects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Phacoemulsification",
+          "description": "A minimally invasive surgery where ultrasound waves are used to break up the cloudy lens, which is then removed and replaced with an artificial intraocular lens.",
+          "indications": "Significant visual impairment affecting daily activities, patient preference for surgery.",
+          "risks": "Infection, bleeding, retinal detachment, persistent inflammation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis after cataract surgery is generally excellent, with over 90% of patients experiencing improved vision. However, some may develop posterior capsule opacification post-operatively, which can be treated with a YAG laser capsulotomy.",
+    "complications": [
+      "Posterior capsule opacification",
+      "Intraocular lens dislocation",
+      "Infection (endophthalmitis)",
+      "Retinal detachment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, refer patients to ophthalmology, and provide pre-operative and post-operative care, including monitoring for complications.",
+    "escalation": "Refer to ophthalmology if there are signs of acute complications, such as sudden vision loss, severe pain, or signs of infection.",
+    "keySafetyConsiderations": "Ensure proper patient education regarding the signs of complications post-surgery, such as sudden vision changes or increased pain. Monitor for adherence to follow-up appointments."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "glomerulonephritis",
+  "name": "Glomerulonephritis?",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:20:17.176990",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Glomerulonephritis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGlomerulonephritis (GN) is a group of kidney diseases characterized by inflammation of the glomeruli, the filtering units of the kidney, leading to impaired renal function and various clinical manifestations.\n\n### Epidemiology\nGN can occur at any age but is more common in young adults and children. The incidence varies by type, with post-infectious GN being more common in children, while IgA nephropathy is prevalent in young adults. Overall, GN accounts for a significant proportion of end-stage renal disease (ESRD).\n\n### Essential Pathophysiology\nThe pathophysiology of GN involves immune-mediated damage to the glomeruli, which can be due to infections, autoimmune diseases, or systemic conditions. This leads to increased permeability of the glomerular capillaries, resulting in proteinuria, hematuria, and reduced glomerular filtration rate (GFR).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hematuria (blood in urine)\n- Proteinuria (excess protein in urine)\n- Edema (swelling, particularly in the face and legs)\n- Hypertension (high blood pressure)\n- Oliguria (reduced urine output)\n- Fatigue\n\n### Key Signs\n- Swelling (edema)\n- Elevated blood pressure\n- Rash (in cases of systemic disease)\n- Signs of fluid overload (e.g., pulmonary edema)\n\n### Atypical Presentations\n- Asymptomatic hematuria or proteinuria detected incidentally\n- Acute kidney injury without prior symptoms\n- Systemic symptoms like fever or joint pain in cases of systemic disease\n\n### Red Flags Requiring Immediate Action\n- Rapidly progressive renal failure\n- Severe hypertension\n- Persistent hematuria or proteinuria\n- Signs of systemic illness (e.g., rash, joint pain)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for hematuria and proteinuria)\n- Blood tests (including serum creatinine, electrolytes, and complete blood count)\n- Blood pressure measurement\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Serum albumin level\n- Immunological tests (e.g., ANA, anti-dsDNA, ANCA)\n- Complement levels (C3, C4)\n\n### Specialist Tests\n- Kidney ultrasound (to assess kidney size and structure)\n- Kidney biopsy (to determine the specific type of glomerulonephritis)\n- Serological tests for specific infections (e.g., streptococcal serology)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of glomerulonephritis is based on clinical presentation, urinalysis findings, and, when necessary, kidney biopsy results that reveal glomerular inflammation or damage.\n\n### Key Differential Diagnoses to Exclude\n- Acute kidney injury (AKI)\n- Chronic kidney disease (CKD)\n- Diabetic nephropathy\n- Hypertensive nephrosclerosis\n- Interstitial nephritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (fluid management, blood pressure control)\n- Diuretics for edema management\n- Corticosteroids in cases of severe inflammation\n\n#### Second-line Treatments\n- Immunosuppressive therapy (e.g., cyclophosphamide, mycophenolate mofetil) for specific types of GN\n\n#### Emergency Procedures\n- Dialysis (if acute kidney injury is severe and unresponsive to medical management)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying causes (e.g., hypertension, diabetes)\n- ACE inhibitors or ARBs for proteinuria reduction\n- Dietary modifications (low protein, low sodium)\n\n#### Second-line Treatments\n- Consideration of immunosuppressive therapy for progressive disease\n\n#### Monitoring Requirements\n- Regular monitoring of renal function (serum creatinine, eGFR)\n- Monitoring of blood pressure and proteinuria\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: Prednisone 0.5-1 mg/kg/day for 4-6 weeks, then taper\n- **Key Side Effects/Contraindications**: Weight gain, hyperglycemia, osteoporosis, increased infection risk\n- **When to Use vs. Alternatives**: Used in various types of glomerulonephritis, particularly in minimal change disease.\n\n#### Cyclophosphamide\n- **Mechanism of Action**: Immunosuppressive agent that inhibits DNA synthesis\n- **Typical Dosing Range**: 1-2 mg/kg/day orally or IV every 1-3 months depending on response\n- **Key Side Effects/Contraindications**: Nausea, vomiting, bone marrow suppression, bladder toxicity\n- **When to Use vs. Alternatives**: Used in severe cases of GN, especially in rapidly progressive forms.\n\n#### ACE inhibitors\n- **Mechanism of Action**: Reduce glomerular pressure and proteinuria\n- **Typical Dosing Range**: Lisinopril 10-40 mg daily\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: First-line for hypertension and proteinuria.\n\n### Procedures\n\n#### Kidney Biopsy\n- **What it Involves**: A procedure to obtain kidney tissue for histological examination.\n- **Indications**: Indicated when the type of glomerulonephritis is unclear or when specific treatment is needed.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site, and rarely, damage to surrounding structures.\n\n#### Dialysis\n- **What it Involves**: A procedure to remove waste products and excess fluid from the blood when kidneys are not functioning adequately.\n- **Indications**: Severe acute kidney injury or chronic kidney disease with symptomatic uremia.\n- **Key Risks/Complications**: Infection, hypotension, electrolyte imbalances, and access site complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of glomerulonephritis varies widely depending on the underlying cause, severity, and response to treatment. Some forms, like minimal change disease, have an excellent prognosis, while others, like rapidly progressive glomerulonephritis, can lead to end-stage renal disease if not treated promptly.\n\n### Important Complications to Watch For\n- Chronic kidney disease (CKD)\n- End-stage renal disease (ESRD)\n- Hypertensive emergencies\n- Electrolyte imbalances (e.g., hyperkalemia)\n- Infections due to immunosuppressive therapy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of glomerulonephritis, perform initial investigations, manage acute presentations, and refer to nephrology for further evaluation and management as needed.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a nephrologist if there is rapid deterioration in renal function, severe hypertension, or if the patient requires dialysis.\n\n### Key Safety Considerations\nMonitor renal function closely in patients with glomerulonephritis, especially those on immunosuppressive therapy. Be vigilant for signs of infection, electrolyte imbalances, and ensure appropriate blood pressure control.\n",
+  "content": {
+    "overview": {
+      "definition": "Glomerulonephritis (GN) is a group of kidney diseases characterized by inflammation of the glomeruli, the filtering units of the kidney, leading to impaired renal function and various clinical manifestations.",
+      "epidemiology": "GN can occur at any age but is more common in young adults and children. The incidence varies by type, with post-infectious GN being more common in children, while IgA nephropathy is prevalent in young adults. Overall, GN accounts for a significant proportion of end-stage renal disease (ESRD).",
+      "pathophysiology": "The pathophysiology of GN involves immune-mediated damage to the glomeruli, which can be due to infections, autoimmune diseases, or systemic conditions. This leads to increased permeability of the glomerular capillaries, resulting in proteinuria, hematuria, and reduced glomerular filtration rate (GFR)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hematuria (blood in urine)",
+        "Proteinuria (excess protein in urine)",
+        "Edema (swelling, particularly in the face and legs)",
+        "Hypertension (high blood pressure)",
+        "Oliguria (reduced urine output)",
+        "Fatigue"
+      ],
+      "signs": [
+        "Swelling (edema)",
+        "Elevated blood pressure",
+        "Rash (in cases of systemic disease)",
+        "Signs of fluid overload (e.g., pulmonary edema)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hematuria or proteinuria detected incidentally",
+        "Acute kidney injury without prior symptoms",
+        "Systemic symptoms like fever or joint pain in cases of systemic disease"
+      ],
+      "redFlags": [
+        "Rapidly progressive renal failure",
+        "Severe hypertension",
+        "Persistent hematuria or proteinuria",
+        "Signs of systemic illness (e.g., rash, joint pain)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for hematuria and proteinuria)",
+        "Blood tests (including serum creatinine, electrolytes, and complete blood count)",
+        "Blood pressure measurement"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Serum albumin level",
+        "Immunological tests (e.g., ANA, anti-dsDNA, ANCA)",
+        "Complement levels (C3, C4)"
+      ],
+      "specialistTests": [
+        "Kidney ultrasound (to assess kidney size and structure)",
+        "Kidney biopsy (to determine the specific type of glomerulonephritis)",
+        "Serological tests for specific infections (e.g., streptococcal serology)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of glomerulonephritis is based on clinical presentation, urinalysis findings, and, when necessary, kidney biopsy results that reveal glomerular inflammation or damage.",
+      "differentials": [
+        "Acute kidney injury (AKI)",
+        "Chronic kidney disease (CKD)",
+        "Diabetic nephropathy",
+        "Hypertensive nephrosclerosis",
+        "Interstitial nephritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (fluid management, blood pressure control)",
+          "Diuretics for edema management",
+          "Corticosteroids in cases of severe inflammation"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (e.g., cyclophosphamide, mycophenolate mofetil) for specific types of GN"
+        ],
+        "procedures": [
+          "Dialysis (if acute kidney injury is severe and unresponsive to medical management)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying causes (e.g., hypertension, diabetes)",
+          "ACE inhibitors or ARBs for proteinuria reduction",
+          "Dietary modifications (low protein, low sodium)"
+        ],
+        "secondLine": [
+          "Consideration of immunosuppressive therapy for progressive disease"
+        ],
+        "monitoring": [
+          "Regular monitoring of renal function (serum creatinine, eGFR)",
+          "Monitoring of blood pressure and proteinuria"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "Prednisone 0.5-1 mg/kg/day for 4-6 weeks, then taper",
+          "sideEffects": "Weight gain, hyperglycemia, osteoporosis, increased infection risk",
+          "notes": "Used in various types of glomerulonephritis, particularly in minimal change disease."
+        },
+        {
+          "name": "Cyclophosphamide",
+          "mechanism": "Immunosuppressive agent that inhibits DNA synthesis",
+          "dosing": "1-2 mg/kg/day orally or IV every 1-3 months depending on response",
+          "sideEffects": "Nausea, vomiting, bone marrow suppression, bladder toxicity",
+          "notes": "Used in severe cases of GN, especially in rapidly progressive forms."
+        },
+        {
+          "name": "ACE inhibitors",
+          "mechanism": "Reduce glomerular pressure and proteinuria",
+          "dosing": "Lisinopril 10-40 mg daily",
+          "sideEffects": "Cough, hyperkalemia, renal impairment",
+          "notes": "First-line for hypertension and proteinuria."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Kidney Biopsy",
+          "description": "A procedure to obtain kidney tissue for histological examination.",
+          "indications": "Indicated when the type of glomerulonephritis is unclear or when specific treatment is needed.",
+          "risks": "Bleeding, infection, pain at the biopsy site, and rarely, damage to surrounding structures."
+        },
+        {
+          "name": "Dialysis",
+          "description": "A procedure to remove waste products and excess fluid from the blood when kidneys are not functioning adequately.",
+          "indications": "Severe acute kidney injury or chronic kidney disease with symptomatic uremia.",
+          "risks": "Infection, hypotension, electrolyte imbalances, and access site complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of glomerulonephritis varies widely depending on the underlying cause, severity, and response to treatment. Some forms, like minimal change disease, have an excellent prognosis, while others, like rapidly progressive glomerulonephritis, can lead to end-stage renal disease if not treated promptly.",
+    "complications": [
+      "Chronic kidney disease (CKD)",
+      "End-stage renal disease (ESRD)",
+      "Hypertensive emergencies",
+      "Electrolyte imbalances (e.g., hyperkalemia)",
+      "Infections due to immunosuppressive therapy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of glomerulonephritis, perform initial investigations, manage acute presentations, and refer to nephrology for further evaluation and management as needed.",
+    "escalation": "Escalate care to a nephrologist if there is rapid deterioration in renal function, severe hypertension, or if the patient requires dialysis.",
+    "keySafetyConsiderations": "Monitor renal function closely in patients with glomerulonephritis, especially those on immunosuppressive therapy. Be vigilant for signs of infection, electrolyte imbalances, and ensure appropriate blood pressure control."
+  }
+}

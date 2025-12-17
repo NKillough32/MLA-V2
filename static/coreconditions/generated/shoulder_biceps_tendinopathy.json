@@ -1,0 +1,123 @@
+{
+  "id": "shoulder_biceps_tendinopathy",
+  "name": "Shoulder - Biceps tendinopathy",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:32:45.970098",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Shoulder - Biceps tendinopathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBiceps tendinopathy is a condition characterized by pain and dysfunction of the biceps tendon, typically at the shoulder, due to overuse, degeneration, or injury.\n\n### Epidemiology\nIt is common in athletes and individuals engaged in repetitive overhead activities, with a higher prevalence in those aged 40-60 years.\n\n### Essential Pathophysiology\nThe condition arises from chronic overuse leading to microtears and degeneration of the tendon, often associated with impingement or rotator cuff pathology.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Anterior shoulder pain\n- Pain with overhead activities\n- Weakness in shoulder flexion\n- Stiffness in shoulder joint\n\n### Key Signs\n- Tenderness over the biceps tendon in the bicipital groove\n- Positive Speed's test (pain with resisted flexion)\n- Positive Yergason's test (pain with resisted supination)\n- Decreased range of motion\n\n### Atypical Presentations\n- Pain radiating down the arm\n- Symptoms mimicking rotator cuff tears\n\n### Red Flags Requiring Immediate Action\n- Severe, sudden onset of pain\n- Signs of infection (fever, swelling, redness)\n- Neurological symptoms (numbness, tingling)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Ultrasound of the shoulder\n\n### Second-line Investigations\n- MRI of the shoulder\n\n### Specialist Tests\n- Arthroscopy (if surgical intervention is considered)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings of tendon degeneration or tears on ultrasound or MRI.\n\n### Key Differential Diagnoses to Exclude\n- Rotator cuff tear\n- Shoulder impingement syndrome\n- Labral tear\n- Subacromial bursitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on strengthening and flexibility\n- Corticosteroid injection if symptoms persist\n\n#### Emergency Procedures\n- Ultrasound-guided injection of corticosteroids\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy with a focus on eccentric strengthening\n- Activity modification to avoid aggravating activities\n\n#### Second-line Treatments\n- Surgical intervention (e.g., tenodesis) if conservative management fails\n- Platelet-rich plasma (PRP) injections\n\n#### Monitoring Requirements\n- Regular follow-up to assess progress and adjust treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider renal function and gastrointestinal history before prescribing.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory agents that reduce swelling and pain\n- **Typical Dosing Range**: Intra-articular injection of 10-40 mg depending on the severity\n- **Key Side Effects/Contraindications**: Local tissue atrophy, infection risk, transient increase in pain\n- **When to Use vs. Alternatives**: Use sparingly and monitor for side effects.\n\n### Procedures\n\n#### Ultrasound-guided corticosteroid injection\n- **What it Involves**: A minimally invasive procedure where corticosteroids are injected into the bicipital groove under ultrasound guidance to reduce inflammation.\n- **Indications**: Persistent pain despite conservative management, confirmed biceps tendinopathy.\n- **Key Risks/Complications**: Infection, bleeding, tendon rupture, transient increase in pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients respond well to conservative management, with significant improvement in symptoms. Surgical intervention may be required in chronic cases.\n\n### Important Complications to Watch For\n- Persistent pain and dysfunction\n- Tendon rupture\n- Development of adhesive capsulitis (frozen shoulder)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also recognize red flags that necessitate urgent referral.\n\n### When to Escalate to Senior/Specialist\nRefer to an orthopaedic specialist if there is no improvement after 6-8 weeks of conservative management or if red flags are present.\n\n### Key Safety Considerations\nMonitor for signs of infection post-injection, assess renal function before prescribing NSAIDs, and ensure proper technique during injections to minimize complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Biceps tendinopathy is a condition characterized by pain and dysfunction of the biceps tendon, typically at the shoulder, due to overuse, degeneration, or injury.",
+      "epidemiology": "It is common in athletes and individuals engaged in repetitive overhead activities, with a higher prevalence in those aged 40-60 years.",
+      "pathophysiology": "The condition arises from chronic overuse leading to microtears and degeneration of the tendon, often associated with impingement or rotator cuff pathology."
+    },
+    "recognition": {
+      "symptoms": [
+        "Anterior shoulder pain",
+        "Pain with overhead activities",
+        "Weakness in shoulder flexion",
+        "Stiffness in shoulder joint"
+      ],
+      "signs": [
+        "Tenderness over the biceps tendon in the bicipital groove",
+        "Positive Speed's test (pain with resisted flexion)",
+        "Positive Yergason's test (pain with resisted supination)",
+        "Decreased range of motion"
+      ],
+      "atypicalPresentations": [
+        "Pain radiating down the arm",
+        "Symptoms mimicking rotator cuff tears"
+      ],
+      "redFlags": [
+        "Severe, sudden onset of pain",
+        "Signs of infection (fever, swelling, redness)",
+        "Neurological symptoms (numbness, tingling)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Ultrasound of the shoulder"
+      ],
+      "secondLine": [
+        "MRI of the shoulder"
+      ],
+      "specialistTests": [
+        "Arthroscopy (if surgical intervention is considered)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings of tendon degeneration or tears on ultrasound or MRI.",
+      "differentials": [
+        "Rotator cuff tear",
+        "Shoulder impingement syndrome",
+        "Labral tear",
+        "Subacromial bursitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on strengthening and flexibility",
+          "Corticosteroid injection if symptoms persist"
+        ],
+        "procedures": [
+          "Ultrasound-guided injection of corticosteroids"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy with a focus on eccentric strengthening",
+          "Activity modification to avoid aggravating activities"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., tenodesis) if conservative management fails",
+          "Platelet-rich plasma (PRP) injections"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess progress and adjust treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider renal function and gastrointestinal history before prescribing."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory agents that reduce swelling and pain",
+          "dosing": "Intra-articular injection of 10-40 mg depending on the severity",
+          "sideEffects": "Local tissue atrophy, infection risk, transient increase in pain",
+          "notes": "Use sparingly and monitor for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ultrasound-guided corticosteroid injection",
+          "description": "A minimally invasive procedure where corticosteroids are injected into the bicipital groove under ultrasound guidance to reduce inflammation.",
+          "indications": "Persistent pain despite conservative management, confirmed biceps tendinopathy.",
+          "risks": "Infection, bleeding, tendon rupture, transient increase in pain."
+        }
+      ]
+    },
+    "prognosis": "Most patients respond well to conservative management, with significant improvement in symptoms. Surgical intervention may be required in chronic cases.",
+    "complications": [
+      "Persistent pain and dysfunction",
+      "Tendon rupture",
+      "Development of adhesive capsulitis (frozen shoulder)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also recognize red flags that necessitate urgent referral.",
+    "escalation": "Refer to an orthopaedic specialist if there is no improvement after 6-8 weeks of conservative management or if red flags are present.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-injection, assess renal function before prescribing NSAIDs, and ensure proper technique during injections to minimize complications."
+  }
+}

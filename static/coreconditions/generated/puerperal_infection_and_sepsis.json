@@ -1,0 +1,140 @@
+{
+  "id": "puerperal_infection_and_sepsis",
+  "name": "Puerperal infection and sepsis",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:50:12.167766",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Puerperal infection and sepsis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPuerperal infection, also known as postpartum infection, refers to any infection of the genital tract that occurs after childbirth. It can lead to sepsis, a life-threatening condition characterized by systemic inflammation and organ dysfunction.\n\n### Epidemiology\nPuerperal infections occur in approximately 1-8% of women after vaginal delivery and 5-15% after cesarean delivery. Risk factors include prolonged labor, multiple vaginal examinations, and retained products of conception.\n\n### Essential Pathophysiology\nPuerperal infections are primarily caused by bacteria that ascend from the vagina or cervix into the uterus. Common pathogens include Group A Streptococcus, Escherichia coli, and Staphylococcus aureus. The inflammatory response can lead to endometritis, pelvic abscesses, and systemic infection.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever (≥38°C)\n- Chills\n- Tachycardia\n- Abdominal pain\n- Foul-smelling lochia\n- Fatigue\n- Malaise\n\n### Key Signs\n- Uterine tenderness\n- Tachypnea\n- Hypotension\n- Purulent vaginal discharge\n- Signs of dehydration\n\n### Atypical Presentations\n- Nausea and vomiting\n- Diarrhea\n- Localized pain in the pelvis or abdomen\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Persistent fever despite treatment\n- Signs of septic shock (e.g., confusion, hypotension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Urinalysis and urine culture\n- Pelvic ultrasound (to assess for retained products)\n\n### Second-line Investigations\n- CT scan of the abdomen/pelvis (if abscess suspected)\n- Endometrial biopsy (if infection persists)\n\n### Specialist Tests\n- Consult obstetrics and gynecology for further evaluation\n- Consider infectious disease consultation if resistant organisms are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation (fever, uterine tenderness) and laboratory findings (elevated white blood cell count, positive cultures).\n\n### Key Differential Diagnoses to Exclude\n- Endometritis\n- Urinary tract infection\n- Thrombophlebitis\n- Pelvic inflammatory disease\n- Retained products of conception\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous antibiotics (e.g., Ampicillin and Gentamicin)\n- Fluid resuscitation for hypotension\n\n#### Second-line Treatments\n- Switch to oral antibiotics (e.g., Clindamycin) if improvement noted\n\n#### Emergency Procedures\n- Drainage of pelvic abscess if present\n- D&C (dilation and curettage) for retained products of conception\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Patient education on signs of infection\n- Follow-up appointments to monitor recovery\n\n#### Second-line Treatments\n- Referral to a specialist if recurrent infections occur\n\n#### Monitoring Requirements\n- Regular assessment of vital signs and symptoms during hospital stay\n- Post-discharge follow-up for persistent symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ampicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 1-2 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, rash\n- **When to Use vs. Alternatives**: Effective against a broad range of gram-positive and some gram-negative bacteria.\n\n#### Gentamicin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis\n- **Typical Dosing Range**: 1.5 mg/kg IV every 8 hours\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity\n- **When to Use vs. Alternatives**: Monitor renal function and drug levels.\n\n#### Clindamycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis\n- **Typical Dosing Range**: 300 mg orally every 6 hours\n- **Key Side Effects/Contraindications**: Diarrhea, C. difficile infection\n- **When to Use vs. Alternatives**: Useful for anaerobic infections.\n\n### Procedures\n\n#### D&C (Dilation and Curettage)\n- **What it Involves**: Surgical procedure to remove tissue from the uterus\n- **Indications**: Retained products of conception, severe endometritis\n- **Key Risks/Complications**: Uterine perforation, infection, bleeding\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and treatment, the prognosis is generally good. However, delayed treatment can lead to severe complications, including septic shock and hysterectomy.\n\n### Important Complications to Watch For\n- Septic shock\n- Hysterectomy\n- Infertility\n- Chronic pelvic pain\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing signs of puerperal infection, initiate appropriate investigations, and start empirical antibiotic therapy while ensuring timely referral to obstetric specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of severe infection or sepsis (e.g., persistent hypotension, altered mental status), escalate care immediately to senior medical staff and consider intensive care unit (ICU) admission.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and aseptic techniques during examinations and procedures. Monitor vital signs closely in patients with suspected infection and educate patients on warning signs to report post-discharge.\n",
+  "content": {
+    "overview": {
+      "definition": "Puerperal infection, also known as postpartum infection, refers to any infection of the genital tract that occurs after childbirth. It can lead to sepsis, a life-threatening condition characterized by systemic inflammation and organ dysfunction.",
+      "epidemiology": "Puerperal infections occur in approximately 1-8% of women after vaginal delivery and 5-15% after cesarean delivery. Risk factors include prolonged labor, multiple vaginal examinations, and retained products of conception.",
+      "pathophysiology": "Puerperal infections are primarily caused by bacteria that ascend from the vagina or cervix into the uterus. Common pathogens include Group A Streptococcus, Escherichia coli, and Staphylococcus aureus. The inflammatory response can lead to endometritis, pelvic abscesses, and systemic infection."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever (≥38°C)",
+        "Chills",
+        "Tachycardia",
+        "Abdominal pain",
+        "Foul-smelling lochia",
+        "Fatigue",
+        "Malaise"
+      ],
+      "signs": [
+        "Uterine tenderness",
+        "Tachypnea",
+        "Hypotension",
+        "Purulent vaginal discharge",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Nausea and vomiting",
+        "Diarrhea",
+        "Localized pain in the pelvis or abdomen"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Persistent fever despite treatment",
+        "Signs of septic shock (e.g., confusion, hypotension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Urinalysis and urine culture",
+        "Pelvic ultrasound (to assess for retained products)"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen/pelvis (if abscess suspected)",
+        "Endometrial biopsy (if infection persists)"
+      ],
+      "specialistTests": [
+        "Consult obstetrics and gynecology for further evaluation",
+        "Consider infectious disease consultation if resistant organisms are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation (fever, uterine tenderness) and laboratory findings (elevated white blood cell count, positive cultures).",
+      "differentials": [
+        "Endometritis",
+        "Urinary tract infection",
+        "Thrombophlebitis",
+        "Pelvic inflammatory disease",
+        "Retained products of conception"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous antibiotics (e.g., Ampicillin and Gentamicin)",
+          "Fluid resuscitation for hypotension"
+        ],
+        "secondLine": [
+          "Switch to oral antibiotics (e.g., Clindamycin) if improvement noted"
+        ],
+        "procedures": [
+          "Drainage of pelvic abscess if present",
+          "D&C (dilation and curettage) for retained products of conception"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Patient education on signs of infection",
+          "Follow-up appointments to monitor recovery"
+        ],
+        "secondLine": [
+          "Referral to a specialist if recurrent infections occur"
+        ],
+        "monitoring": [
+          "Regular assessment of vital signs and symptoms during hospital stay",
+          "Post-discharge follow-up for persistent symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ampicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "1-2 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, diarrhea, rash",
+          "notes": "Effective against a broad range of gram-positive and some gram-negative bacteria."
+        },
+        {
+          "name": "Gentamicin",
+          "mechanism": "Inhibits bacterial protein synthesis",
+          "dosing": "1.5 mg/kg IV every 8 hours",
+          "sideEffects": "Nephrotoxicity, ototoxicity",
+          "notes": "Monitor renal function and drug levels."
+        },
+        {
+          "name": "Clindamycin",
+          "mechanism": "Inhibits bacterial protein synthesis",
+          "dosing": "300 mg orally every 6 hours",
+          "sideEffects": "Diarrhea, C. difficile infection",
+          "notes": "Useful for anaerobic infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "D&C (Dilation and Curettage)",
+          "description": "Surgical procedure to remove tissue from the uterus",
+          "indications": "Retained products of conception, severe endometritis",
+          "risks": "Uterine perforation, infection, bleeding"
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and treatment, the prognosis is generally good. However, delayed treatment can lead to severe complications, including septic shock and hysterectomy.",
+    "complications": [
+      "Septic shock",
+      "Hysterectomy",
+      "Infertility",
+      "Chronic pelvic pain"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing signs of puerperal infection, initiate appropriate investigations, and start empirical antibiotic therapy while ensuring timely referral to obstetric specialists as needed.",
+    "escalation": "If a patient shows signs of severe infection or sepsis (e.g., persistent hypotension, altered mental status), escalate care immediately to senior medical staff and consider intensive care unit (ICU) admission.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and aseptic techniques during examinations and procedures. Monitor vital signs closely in patients with suspected infection and educate patients on warning signs to report post-discharge."
+  }
+}

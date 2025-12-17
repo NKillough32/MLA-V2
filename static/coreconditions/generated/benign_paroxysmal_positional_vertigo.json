@@ -1,0 +1,118 @@
+{
+  "id": "benign_paroxysmal_positional_vertigo",
+  "name": "Benign paroxysmal positional vertigo",
+  "domains": [
+    "Neurology",
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T20:57:36.637418",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Benign paroxysmal positional vertigo: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBenign paroxysmal positional vertigo (BPPV) is a common vestibular disorder characterized by brief episodes of vertigo triggered by changes in head position. It is caused by the displacement of otoliths (calcium carbonate crystals) from the utricle into the semicircular canals of the inner ear.\n\n### Epidemiology\nBPPV is the most common cause of vertigo in adults, with a lifetime prevalence of approximately 10%. It is more prevalent in older adults, particularly those over 60 years of age, and is often associated with head trauma or vestibular disorders.\n\n### Essential Pathophysiology\nBPPV occurs when otoliths become dislodged from the macula of the utricle and migrate into one of the semicircular canals, most commonly the posterior canal. This displacement leads to abnormal endolymph movement during head position changes, resulting in vertigo.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Episodes of spinning sensation (vertigo) triggered by head movements\n- Nausea\n- Balance disturbances\n\n### Key Signs\n- Nystagmus (involuntary eye movements) observed during positional testing\n- Positive Dix-Hallpike maneuver\n\n### Atypical Presentations\n- Vertigo lasting longer than a few minutes\n- Persistent imbalance without true vertigo\n- Symptoms triggered by non-positional factors\n\n### Red Flags Requiring Immediate Action\n- Severe headache (suggestive of central causes)\n- Neurological deficits (e.g., weakness, sensory loss)\n- Persistent vertigo lasting more than a few days\n- Hearing loss or tinnitus\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Dix-Hallpike maneuver to elicit nystagmus\n\n### Second-line Investigations\n- Vestibular function tests (e.g., caloric testing) if diagnosis is uncertain\n\n### Specialist Tests\n- MRI of the brain if central causes are suspected (e.g., stroke, tumors)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of BPPV is primarily clinical, based on the history of vertigo triggered by head position changes and the presence of characteristic nystagmus during the Dix-Hallpike maneuver.\n\n### Key Differential Diagnoses to Exclude\n- Vestibular neuritis\n- Meniere's disease\n- Central vestibular disorders (e.g., stroke, multiple sclerosis)\n- Acoustic neuroma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Epley maneuver (canalith repositioning procedure)\n- Patient education about the condition and reassurance\n\n#### Second-line Treatments\n- Vestibular suppressants (e.g., meclizine) for severe symptoms\n\n#### Emergency Procedures\n- Epley maneuver: A series of head movements to reposition dislodged otoliths back to the utricle. Indicated for BPPV. Risks include transient dizziness and nausea.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vestibular rehabilitation exercises (e.g., Brandt-Daroff exercises)\n\n#### Second-line Treatments\n- Consider referral to a specialist if symptoms persist despite treatment.\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom resolution and functional status.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Meclizine\n- **Mechanism of Action**: Antihistamine with anticholinergic properties that reduces vestibular excitability.\n- **Typical Dosing Range**: 25-100 mg orally, taken 1 hour before travel or as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, blurred vision, constipation.\n- **When to Use vs. Alternatives**: Use with caution in elderly patients due to sedation.\n\n#### Diazepam\n- **Mechanism of Action**: Benzodiazepine that acts as a central nervous system depressant, providing symptomatic relief from vertigo.\n- **Typical Dosing Range**: 2-10 mg orally, 2-3 times daily as needed.\n- **Key Side Effects/Contraindications**: Sedation, dizziness, dependence, withdrawal symptoms.\n- **When to Use vs. Alternatives**: Short-term use recommended due to risk of dependence.\n\n### Procedures\n\n#### Epley Maneuver\n- **What it Involves**: A series of specific head and body movements designed to reposition dislodged otoliths in the inner ear.\n- **Indications**: Confirmed diagnosis of BPPV, particularly posterior canal involvement.\n- **Key Risks/Complications**: Transient dizziness, nausea, and in rare cases, falls.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nBPPV is generally self-limiting, with most patients experiencing resolution of symptoms within weeks to months. However, recurrence is common, with up to 50% of patients experiencing another episode within 5 years.\n\n### Important Complications to Watch For\n- Increased risk of falls due to balance disturbances\n- Chronic dizziness or imbalance if untreated\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of BPPV, perform the Dix-Hallpike maneuver, provide initial management, and educate patients about the condition. They should also be aware of when to refer to a specialist for further evaluation.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT or neurology if there are atypical features, persistent symptoms, or if central causes are suspected based on red flags.\n\n### Key Safety Considerations\nEnsure patient safety during positional maneuvers to prevent falls. Educate patients about the nature of BPPV and the importance of avoiding rapid head movements.\n",
+  "content": {
+    "overview": {
+      "definition": "Benign paroxysmal positional vertigo (BPPV) is a common vestibular disorder characterized by brief episodes of vertigo triggered by changes in head position. It is caused by the displacement of otoliths (calcium carbonate crystals) from the utricle into the semicircular canals of the inner ear.",
+      "epidemiology": "BPPV is the most common cause of vertigo in adults, with a lifetime prevalence of approximately 10%. It is more prevalent in older adults, particularly those over 60 years of age, and is often associated with head trauma or vestibular disorders.",
+      "pathophysiology": "BPPV occurs when otoliths become dislodged from the macula of the utricle and migrate into one of the semicircular canals, most commonly the posterior canal. This displacement leads to abnormal endolymph movement during head position changes, resulting in vertigo."
+    },
+    "recognition": {
+      "symptoms": [
+        "Episodes of spinning sensation (vertigo) triggered by head movements",
+        "Nausea",
+        "Balance disturbances"
+      ],
+      "signs": [
+        "Nystagmus (involuntary eye movements) observed during positional testing",
+        "Positive Dix-Hallpike maneuver"
+      ],
+      "atypicalPresentations": [
+        "Vertigo lasting longer than a few minutes",
+        "Persistent imbalance without true vertigo",
+        "Symptoms triggered by non-positional factors"
+      ],
+      "redFlags": [
+        "Severe headache (suggestive of central causes)",
+        "Neurological deficits (e.g., weakness, sensory loss)",
+        "Persistent vertigo lasting more than a few days",
+        "Hearing loss or tinnitus"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Dix-Hallpike maneuver to elicit nystagmus"
+      ],
+      "secondLine": [
+        "Vestibular function tests (e.g., caloric testing) if diagnosis is uncertain"
+      ],
+      "specialistTests": [
+        "MRI of the brain if central causes are suspected (e.g., stroke, tumors)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of BPPV is primarily clinical, based on the history of vertigo triggered by head position changes and the presence of characteristic nystagmus during the Dix-Hallpike maneuver.",
+      "differentials": [
+        "Vestibular neuritis",
+        "Meniere's disease",
+        "Central vestibular disorders (e.g., stroke, multiple sclerosis)",
+        "Acoustic neuroma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Epley maneuver (canalith repositioning procedure)",
+          "Patient education about the condition and reassurance"
+        ],
+        "secondLine": [
+          "Vestibular suppressants (e.g., meclizine) for severe symptoms"
+        ],
+        "procedures": [
+          "Epley maneuver: A series of head movements to reposition dislodged otoliths back to the utricle. Indicated for BPPV. Risks include transient dizziness and nausea."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vestibular rehabilitation exercises (e.g., Brandt-Daroff exercises)"
+        ],
+        "secondLine": [
+          "Consider referral to a specialist if symptoms persist despite treatment."
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom resolution and functional status."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Meclizine",
+          "mechanism": "Antihistamine with anticholinergic properties that reduces vestibular excitability.",
+          "dosing": "25-100 mg orally, taken 1 hour before travel or as needed.",
+          "sideEffects": "Drowsiness, dry mouth, blurred vision, constipation.",
+          "notes": "Use with caution in elderly patients due to sedation."
+        },
+        {
+          "name": "Diazepam",
+          "mechanism": "Benzodiazepine that acts as a central nervous system depressant, providing symptomatic relief from vertigo.",
+          "dosing": "2-10 mg orally, 2-3 times daily as needed.",
+          "sideEffects": "Sedation, dizziness, dependence, withdrawal symptoms.",
+          "notes": "Short-term use recommended due to risk of dependence."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epley Maneuver",
+          "description": "A series of specific head and body movements designed to reposition dislodged otoliths in the inner ear.",
+          "indications": "Confirmed diagnosis of BPPV, particularly posterior canal involvement.",
+          "risks": "Transient dizziness, nausea, and in rare cases, falls."
+        }
+      ]
+    },
+    "prognosis": "BPPV is generally self-limiting, with most patients experiencing resolution of symptoms within weeks to months. However, recurrence is common, with up to 50% of patients experiencing another episode within 5 years.",
+    "complications": [
+      "Increased risk of falls due to balance disturbances",
+      "Chronic dizziness or imbalance if untreated"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of BPPV, perform the Dix-Hallpike maneuver, provide initial management, and educate patients about the condition. They should also be aware of when to refer to a specialist for further evaluation.",
+    "escalation": "Refer to ENT or neurology if there are atypical features, persistent symptoms, or if central causes are suspected based on red flags.",
+    "keySafetyConsiderations": "Ensure patient safety during positional maneuvers to prevent falls. Educate patients about the nature of BPPV and the importance of avoiding rapid head movements."
+  }
+}

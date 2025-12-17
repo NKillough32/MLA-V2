@@ -1,0 +1,113 @@
+{
+  "id": "cord_prolapse",
+  "name": "Cord prolapse",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:48:15.317696",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cord prolapse: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCord prolapse occurs when the umbilical cord slips ahead of or alongside the presenting part of the fetus during labor, leading to potential compression of the cord and fetal distress.\n\n### Epidemiology\nCord prolapse is relatively rare, occurring in approximately 0.1% to 0.6% of deliveries, with higher incidence in cases of preterm labor, multiple gestations, or abnormal fetal presentations.\n\n### Essential Pathophysiology\nCord prolapse can lead to umbilical cord compression, which may result in decreased blood flow and oxygen delivery to the fetus. This can cause fetal heart rate decelerations and, if not resolved, can lead to fetal hypoxia and acidosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fetal heart rate abnormalities (decelerations)\n- Maternal anxiety or distress\n\n### Key Signs\n- Palpable cord on vaginal examination\n- Abnormal fetal heart rate monitoring (variable decelerations)\n\n### Atypical Presentations\n- Prolapse may not be detected until fetal heart rate abnormalities are noted during monitoring.\n\n### Red Flags Requiring Immediate Action\n- Severe variable decelerations on fetal heart rate monitoring\n- Maternal reports of decreased fetal movement\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fetal heart rate monitoring (CTG)\n- Vaginal examination to assess for cord prolapse\n\n### Second-line Investigations\n- Ultrasound to assess fetal position and amniotic fluid volume\n\n### Specialist Tests\n- Fetal scalp blood sampling (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of a palpable cord during vaginal examination and associated fetal heart rate abnormalities.\n\n### Key Differential Diagnoses to Exclude\n- Fetal head engagement issues\n- Multiple gestations\n- Abnormal fetal presentation (e.g., breech)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate repositioning of the mother (e.g., knee-chest position)\n- Manual elevation of the presenting part to relieve cord compression\n\n#### Second-line Treatments\n- Consideration of emergency cesarean section if fetal distress persists\n\n#### Emergency Procedures\n- Amnioinfusion (if indicated) to relieve cord compression\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring of fetal heart rate and maternal condition during labor\n\n#### Second-line Treatments\n- Preparation for potential operative delivery (cesarean section) if fetal distress is noted\n\n#### Monitoring Requirements\n- Continuous fetal heart rate monitoring during labor\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tocolytics (e.g., Terbutaline)\n- **Mechanism of Action**: Relaxes uterine smooth muscle to reduce contractions and relieve pressure on the cord.\n- **Typical Dosing Range**: 0.25 mg subcutaneously every 20 minutes as needed, up to 3 doses.\n- **Key Side Effects/Contraindications**: Tachycardia, hypotension, nausea, and tremors.\n- **When to Use vs. Alternatives**: Use with caution in patients with cardiac disease.\n\n#### Magnesium Sulfate\n- **Mechanism of Action**: Neuroprotective agent for the fetus, also acts as a tocolytic.\n- **Typical Dosing Range**: 4-6 g IV loading dose over 20 minutes, followed by 1-2 g/hour infusion.\n- **Key Side Effects/Contraindications**: Flushing, hypotension, respiratory depression, and decreased reflexes.\n- **When to Use vs. Alternatives**: Monitor serum magnesium levels.\n\n### Procedures\n\n#### Emergency Cesarean Section\n- **What it Involves**: Surgical delivery of the fetus through an incision in the abdominal wall and uterus.\n- **Indications**: Persistent fetal distress despite conservative measures, or if cord prolapse is diagnosed.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs, and longer recovery time compared to vaginal delivery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and management, the prognosis for the fetus is generally good. However, delayed intervention can lead to significant morbidity or mortality.\n\n### Important Complications to Watch For\n- Fetal hypoxia or acidosis\n- Neonatal brain injury\n- Increased risk of cesarean delivery\n- Maternal complications from emergency surgery\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize signs of cord prolapse, initiate appropriate monitoring, and assist in the management of the laboring patient. They should also be prepared to escalate care to senior obstetric staff when necessary.\n\n### When to Escalate to Senior/Specialist\nIf fetal heart rate abnormalities are noted or if there is a confirmed cord prolapse, escalate to the obstetric registrar or consultant immediately for further management.\n\n### Key Safety Considerations\nEnsure continuous fetal monitoring during labor, maintain clear communication with the obstetric team, and be prepared for emergency interventions if fetal distress is noted.\n",
+  "content": {
+    "overview": {
+      "definition": "Cord prolapse occurs when the umbilical cord slips ahead of or alongside the presenting part of the fetus during labor, leading to potential compression of the cord and fetal distress.",
+      "epidemiology": "Cord prolapse is relatively rare, occurring in approximately 0.1% to 0.6% of deliveries, with higher incidence in cases of preterm labor, multiple gestations, or abnormal fetal presentations.",
+      "pathophysiology": "Cord prolapse can lead to umbilical cord compression, which may result in decreased blood flow and oxygen delivery to the fetus. This can cause fetal heart rate decelerations and, if not resolved, can lead to fetal hypoxia and acidosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fetal heart rate abnormalities (decelerations)",
+        "Maternal anxiety or distress"
+      ],
+      "signs": [
+        "Palpable cord on vaginal examination",
+        "Abnormal fetal heart rate monitoring (variable decelerations)"
+      ],
+      "atypicalPresentations": [
+        "Prolapse may not be detected until fetal heart rate abnormalities are noted during monitoring."
+      ],
+      "redFlags": [
+        "Severe variable decelerations on fetal heart rate monitoring",
+        "Maternal reports of decreased fetal movement"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fetal heart rate monitoring (CTG)",
+        "Vaginal examination to assess for cord prolapse"
+      ],
+      "secondLine": [
+        "Ultrasound to assess fetal position and amniotic fluid volume"
+      ],
+      "specialistTests": [
+        "Fetal scalp blood sampling (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of a palpable cord during vaginal examination and associated fetal heart rate abnormalities.",
+      "differentials": [
+        "Fetal head engagement issues",
+        "Multiple gestations",
+        "Abnormal fetal presentation (e.g., breech)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate repositioning of the mother (e.g., knee-chest position)",
+          "Manual elevation of the presenting part to relieve cord compression"
+        ],
+        "secondLine": [
+          "Consideration of emergency cesarean section if fetal distress persists"
+        ],
+        "procedures": [
+          "Amnioinfusion (if indicated) to relieve cord compression"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring of fetal heart rate and maternal condition during labor"
+        ],
+        "secondLine": [
+          "Preparation for potential operative delivery (cesarean section) if fetal distress is noted"
+        ],
+        "monitoring": [
+          "Continuous fetal heart rate monitoring during labor"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tocolytics (e.g., Terbutaline)",
+          "mechanism": "Relaxes uterine smooth muscle to reduce contractions and relieve pressure on the cord.",
+          "dosing": "0.25 mg subcutaneously every 20 minutes as needed, up to 3 doses.",
+          "sideEffects": "Tachycardia, hypotension, nausea, and tremors.",
+          "notes": "Use with caution in patients with cardiac disease."
+        },
+        {
+          "name": "Magnesium Sulfate",
+          "mechanism": "Neuroprotective agent for the fetus, also acts as a tocolytic.",
+          "dosing": "4-6 g IV loading dose over 20 minutes, followed by 1-2 g/hour infusion.",
+          "sideEffects": "Flushing, hypotension, respiratory depression, and decreased reflexes.",
+          "notes": "Monitor serum magnesium levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Emergency Cesarean Section",
+          "description": "Surgical delivery of the fetus through an incision in the abdominal wall and uterus.",
+          "indications": "Persistent fetal distress despite conservative measures, or if cord prolapse is diagnosed.",
+          "risks": "Infection, bleeding, injury to surrounding organs, and longer recovery time compared to vaginal delivery."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and management, the prognosis for the fetus is generally good. However, delayed intervention can lead to significant morbidity or mortality.",
+    "complications": [
+      "Fetal hypoxia or acidosis",
+      "Neonatal brain injury",
+      "Increased risk of cesarean delivery",
+      "Maternal complications from emergency surgery"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize signs of cord prolapse, initiate appropriate monitoring, and assist in the management of the laboring patient. They should also be prepared to escalate care to senior obstetric staff when necessary.",
+    "escalation": "If fetal heart rate abnormalities are noted or if there is a confirmed cord prolapse, escalate to the obstetric registrar or consultant immediately for further management.",
+    "keySafetyConsiderations": "Ensure continuous fetal monitoring during labor, maintain clear communication with the obstetric team, and be prepared for emergency interventions if fetal distress is noted."
+  }
+}

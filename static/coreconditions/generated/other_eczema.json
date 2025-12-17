@@ -1,0 +1,141 @@
+{
+  "id": "other_eczema",
+  "name": "Other eczema",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:16:31.284944",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Other eczema: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOther eczema refers to various forms of eczema that do not fit into the common categories of atopic dermatitis, contact dermatitis, or seborrheic dermatitis. This includes conditions like dyshidrotic eczema, nummular eczema, and stasis dermatitis.\n\n### Epidemiology\nEczema affects approximately 10-20% of children and 1-3% of adults. Other forms of eczema, such as dyshidrotic eczema, are more common in young adults and can be triggered by stress or exposure to certain metals.\n\n### Essential Pathophysiology\nThe pathophysiology of eczema involves a complex interplay of genetic, environmental, and immunological factors. In other eczema types, there may be specific triggers such as moisture, allergens, or circulatory issues that lead to inflammation and skin barrier dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching\n- Redness\n- Dryness\n- Scaling\n- Cracking\n- Blisters (in dyshidrotic eczema)\n- Weeping lesions (in acute stages)\n\n### Key Signs\n- Erythema\n- Lichenification (thickened skin)\n- Excoriations\n- Papules\n- Vesicles (in dyshidrotic eczema)\n- Crusts\n\n### Atypical Presentations\n- Localized patches of eczema (nummular eczema)\n- Eczematous changes on the palms and soles (dyshidrotic eczema)\n- Eczema in areas of venous stasis (stasis dermatitis)\n\n### Red Flags Requiring Immediate Action\n- Severe itching affecting sleep\n- Signs of secondary infection (pus, fever)\n- Rapidly worsening lesions\n- Eczema unresponsive to standard treatments\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination and history taking\n- Patch testing (if contact dermatitis is suspected)\n\n### Second-line Investigations\n- Skin scraping (to rule out fungal infections)\n- Allergy testing (if allergic component suspected)\n\n### Specialist Tests\n- Referral to dermatology for biopsy if diagnosis is uncertain\n- Phototesting (for photodermatitis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination. Specific criteria may include the presence of pruritus, typical morphology, and distribution of lesions.\n\n### Key Differential Diagnoses to Exclude\n- Atopic dermatitis\n- Contact dermatitis\n- Psoriasis\n- Fungal infections (tinea)\n- Scabies\n- Seborrheic dermatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (e.g., hydrocortisone 1% cream)\n- Cool compresses to soothe itching\n\n#### Second-line Treatments\n- Oral antihistamines for severe itching\n- Topical calcineurin inhibitors (e.g., tacrolimus)\n\n#### Emergency Procedures\n- Intralesional corticosteroid injection for localized lesions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Emollients and moisturizers to maintain skin hydration\n- Avoidance of known triggers\n\n#### Second-line Treatments\n- Phototherapy (narrowband UVB) for widespread eczema\n- Systemic immunosuppressants (e.g., methotrexate) for severe cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess treatment efficacy and side effects\n- Education on skin care and trigger avoidance\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydrocortisone\n- **Mechanism of Action**: Anti-inflammatory, reduces immune response\n- **Typical Dosing Range**: Apply to affected area 1-2 times daily\n- **Key Side Effects/Contraindications**: Skin thinning, local irritation\n- **When to Use vs. Alternatives**: Use lowest potency necessary for the shortest duration.\n\n#### Tacrolimus\n- **Mechanism of Action**: Calcineurin inhibitor, reduces T-cell activation\n- **Typical Dosing Range**: Apply to affected area twice daily\n- **Key Side Effects/Contraindications**: Burning sensation, increased risk of skin infections\n- **When to Use vs. Alternatives**: Consider for sensitive areas like the face.\n\n#### Antihistamines (e.g., cetirizine)\n- **Mechanism of Action**: H1 receptor antagonist, reduces itching\n- **Typical Dosing Range**: 10 mg orally once daily\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth\n- **When to Use vs. Alternatives**: Use sedating antihistamines at night for better sleep.\n\n### Procedures\n\n#### Intralesional corticosteroid injection\n- **What it Involves**: Injection of corticosteroid directly into the lesion\n- **Indications**: Localized eczema unresponsive to topical treatments\n- **Key Risks/Complications**: Pain at injection site, potential for skin atrophy\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for other eczema types varies; many patients experience periods of remission and exacerbation. Chronic forms may require ongoing management.\n\n### Important Complications to Watch For\n- Secondary bacterial infections (e.g., impetigo)\n- Skin thickening and lichenification\n- Psychosocial impact due to visible lesions and itching\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize and manage common forms of other eczema, provide education on skin care, and escalate care when necessary. They should also be aware of the importance of follow-up and monitoring treatment efficacy.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology if the patient has severe eczema unresponsive to first-line treatments, signs of infection, or atypical presentations.\n\n### Key Safety Considerations\nMonitor for signs of secondary infection, especially in weeping lesions. Educate patients on the importance of adherence to treatment and avoiding known triggers.\n",
+  "content": {
+    "overview": {
+      "definition": "Other eczema refers to various forms of eczema that do not fit into the common categories of atopic dermatitis, contact dermatitis, or seborrheic dermatitis. This includes conditions like dyshidrotic eczema, nummular eczema, and stasis dermatitis.",
+      "epidemiology": "Eczema affects approximately 10-20% of children and 1-3% of adults. Other forms of eczema, such as dyshidrotic eczema, are more common in young adults and can be triggered by stress or exposure to certain metals.",
+      "pathophysiology": "The pathophysiology of eczema involves a complex interplay of genetic, environmental, and immunological factors. In other eczema types, there may be specific triggers such as moisture, allergens, or circulatory issues that lead to inflammation and skin barrier dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching",
+        "Redness",
+        "Dryness",
+        "Scaling",
+        "Cracking",
+        "Blisters (in dyshidrotic eczema)",
+        "Weeping lesions (in acute stages)"
+      ],
+      "signs": [
+        "Erythema",
+        "Lichenification (thickened skin)",
+        "Excoriations",
+        "Papules",
+        "Vesicles (in dyshidrotic eczema)",
+        "Crusts"
+      ],
+      "atypicalPresentations": [
+        "Localized patches of eczema (nummular eczema)",
+        "Eczematous changes on the palms and soles (dyshidrotic eczema)",
+        "Eczema in areas of venous stasis (stasis dermatitis)"
+      ],
+      "redFlags": [
+        "Severe itching affecting sleep",
+        "Signs of secondary infection (pus, fever)",
+        "Rapidly worsening lesions",
+        "Eczema unresponsive to standard treatments"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination and history taking",
+        "Patch testing (if contact dermatitis is suspected)"
+      ],
+      "secondLine": [
+        "Skin scraping (to rule out fungal infections)",
+        "Allergy testing (if allergic component suspected)"
+      ],
+      "specialistTests": [
+        "Referral to dermatology for biopsy if diagnosis is uncertain",
+        "Phototesting (for photodermatitis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination. Specific criteria may include the presence of pruritus, typical morphology, and distribution of lesions.",
+      "differentials": [
+        "Atopic dermatitis",
+        "Contact dermatitis",
+        "Psoriasis",
+        "Fungal infections (tinea)",
+        "Scabies",
+        "Seborrheic dermatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (e.g., hydrocortisone 1% cream)",
+          "Cool compresses to soothe itching"
+        ],
+        "secondLine": [
+          "Oral antihistamines for severe itching",
+          "Topical calcineurin inhibitors (e.g., tacrolimus)"
+        ],
+        "procedures": [
+          "Intralesional corticosteroid injection for localized lesions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Emollients and moisturizers to maintain skin hydration",
+          "Avoidance of known triggers"
+        ],
+        "secondLine": [
+          "Phototherapy (narrowband UVB) for widespread eczema",
+          "Systemic immunosuppressants (e.g., methotrexate) for severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess treatment efficacy and side effects",
+          "Education on skin care and trigger avoidance"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydrocortisone",
+          "mechanism": "Anti-inflammatory, reduces immune response",
+          "dosing": "Apply to affected area 1-2 times daily",
+          "sideEffects": "Skin thinning, local irritation",
+          "notes": "Use lowest potency necessary for the shortest duration."
+        },
+        {
+          "name": "Tacrolimus",
+          "mechanism": "Calcineurin inhibitor, reduces T-cell activation",
+          "dosing": "Apply to affected area twice daily",
+          "sideEffects": "Burning sensation, increased risk of skin infections",
+          "notes": "Consider for sensitive areas like the face."
+        },
+        {
+          "name": "Antihistamines (e.g., cetirizine)",
+          "mechanism": "H1 receptor antagonist, reduces itching",
+          "dosing": "10 mg orally once daily",
+          "sideEffects": "Drowsiness, dry mouth",
+          "notes": "Use sedating antihistamines at night for better sleep."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intralesional corticosteroid injection",
+          "description": "Injection of corticosteroid directly into the lesion",
+          "indications": "Localized eczema unresponsive to topical treatments",
+          "risks": "Pain at injection site, potential for skin atrophy"
+        }
+      ]
+    },
+    "prognosis": "The prognosis for other eczema types varies; many patients experience periods of remission and exacerbation. Chronic forms may require ongoing management.",
+    "complications": [
+      "Secondary bacterial infections (e.g., impetigo)",
+      "Skin thickening and lichenification",
+      "Psychosocial impact due to visible lesions and itching"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize and manage common forms of other eczema, provide education on skin care, and escalate care when necessary. They should also be aware of the importance of follow-up and monitoring treatment efficacy.",
+    "escalation": "Refer to dermatology if the patient has severe eczema unresponsive to first-line treatments, signs of infection, or atypical presentations.",
+    "keySafetyConsiderations": "Monitor for signs of secondary infection, especially in weeping lesions. Educate patients on the importance of adherence to treatment and avoiding known triggers."
+  }
+}

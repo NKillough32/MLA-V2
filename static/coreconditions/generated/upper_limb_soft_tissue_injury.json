@@ -1,0 +1,146 @@
+{
+  "id": "upper_limb_soft_tissue_injury",
+  "name": "Upper limb soft tissue injury",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:30:21.408446",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Upper limb soft tissue injury: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUpper limb soft tissue injury refers to damage to the muscles, tendons, ligaments, fascia, and nerves in the upper extremity, often resulting from trauma or overuse.\n\n### Epidemiology\nSoft tissue injuries of the upper limb are common, particularly in sports and occupational settings. They account for a significant proportion of musculoskeletal injuries, with a higher incidence in younger, active populations.\n\n### Essential Pathophysiology\nInjuries can result from acute trauma (e.g., falls, direct blows) or chronic overuse (e.g., repetitive strain). The injury leads to inflammation, pain, and potential functional impairment due to damage to the soft tissue structures.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain at the site of injury\n- Swelling\n- Bruising\n- Limited range of motion\n- Weakness in the affected area\n\n### Key Signs\n- Tenderness on palpation\n- Swelling or deformity\n- Ecchymosis\n- Reduced strength\n- Abnormal joint movement\n\n### Atypical Presentations\n- Numbness or tingling (suggesting nerve involvement)\n- Persistent pain despite rest and conservative management\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by analgesia\n- Signs of compartment syndrome (e.g., severe pain, pallor, pulselessness)\n- Inability to move the limb\n- Signs of infection (fever, redness, warmth)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- X-ray (to rule out fractures)\n\n### Second-line Investigations\n- Ultrasound (to assess soft tissue structures)\n- MRI (for detailed imaging of soft tissue injuries)\n\n### Specialist Tests\n- Nerve conduction studies (if nerve injury is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination findings, supported by imaging as needed.\n\n### Key Differential Diagnoses to Exclude\n- Fractures\n- Dislocations\n- Tendon ruptures\n- Nerve injuries\n- Bursitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest\n- Ice application\n- Compression\n- Elevation (RICE protocol)\n- Analgesia (e.g., paracetamol, NSAIDs)\n\n#### Second-line Treatments\n- Physiotherapy referral for rehabilitation\n- Consideration of corticosteroid injections for inflammation\n\n#### Emergency Procedures\n- Aspiration of hematoma if significant swelling occurs\n- Surgical intervention for severe tendon or ligament injuries\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Activity modification\n- Physiotherapy and rehabilitation exercises\n\n#### Second-line Treatments\n- Corticosteroid injections for persistent inflammation\n- Surgical options for chronic tendon injuries\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and adjust management plan\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works centrally to inhibit prostaglandin synthesis.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for inflammation and pain.\n\n#### Corticosteroids (e.g., Triamcinolone)\n- **Mechanism of Action**: Anti-inflammatory, suppresses immune response.\n- **Typical Dosing Range**: 10-40 mg depending on the condition, administered via injection.\n- **Key Side Effects/Contraindications**: Infection risk, skin atrophy, systemic effects with repeated use.\n- **When to Use vs. Alternatives**: Used for persistent inflammation.\n\n### Procedures\n\n#### Ultrasound-guided injection\n- **What it Involves**: Injection of corticosteroids or local anesthetics into the affected area under ultrasound guidance.\n- **Indications**: Persistent pain and inflammation not responding to conservative management.\n- **Key Risks/Complications**: Infection, bleeding, nerve damage.\n\n#### Surgical repair of torn tendons\n- **What it Involves**: Surgical intervention to repair torn or ruptured tendons in cases of significant injury.\n- **Indications**: Complete tears or significant functional impairment.\n- **Key Risks/Complications**: Infection, scarring, stiffness, re-rupture.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost upper limb soft tissue injuries have a good prognosis with appropriate management, but recovery time can vary from weeks to months depending on the severity of the injury.\n\n### Important Complications to Watch For\n- Chronic pain\n- Reduced range of motion\n- Weakness\n- Recurrent injuries\n- Nerve damage leading to functional impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide first-line management, and refer to physiotherapy or specialists as needed. They should also educate patients on rehabilitation and recovery strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to an orthopaedic specialist if there are signs of severe injury, persistent symptoms despite conservative management, or if surgical intervention may be required.\n\n### Key Safety Considerations\nEnsure proper assessment to rule out fractures or dislocations, monitor for signs of compartment syndrome, and educate patients on the importance of follow-up and adherence to rehabilitation protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "Upper limb soft tissue injury refers to damage to the muscles, tendons, ligaments, fascia, and nerves in the upper extremity, often resulting from trauma or overuse.",
+      "epidemiology": "Soft tissue injuries of the upper limb are common, particularly in sports and occupational settings. They account for a significant proportion of musculoskeletal injuries, with a higher incidence in younger, active populations.",
+      "pathophysiology": "Injuries can result from acute trauma (e.g., falls, direct blows) or chronic overuse (e.g., repetitive strain). The injury leads to inflammation, pain, and potential functional impairment due to damage to the soft tissue structures."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain at the site of injury",
+        "Swelling",
+        "Bruising",
+        "Limited range of motion",
+        "Weakness in the affected area"
+      ],
+      "signs": [
+        "Tenderness on palpation",
+        "Swelling or deformity",
+        "Ecchymosis",
+        "Reduced strength",
+        "Abnormal joint movement"
+      ],
+      "atypicalPresentations": [
+        "Numbness or tingling (suggesting nerve involvement)",
+        "Persistent pain despite rest and conservative management"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by analgesia",
+        "Signs of compartment syndrome (e.g., severe pain, pallor, pulselessness)",
+        "Inability to move the limb",
+        "Signs of infection (fever, redness, warmth)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "X-ray (to rule out fractures)"
+      ],
+      "secondLine": [
+        "Ultrasound (to assess soft tissue structures)",
+        "MRI (for detailed imaging of soft tissue injuries)"
+      ],
+      "specialistTests": [
+        "Nerve conduction studies (if nerve injury is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination findings, supported by imaging as needed.",
+      "differentials": [
+        "Fractures",
+        "Dislocations",
+        "Tendon ruptures",
+        "Nerve injuries",
+        "Bursitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest",
+          "Ice application",
+          "Compression",
+          "Elevation (RICE protocol)",
+          "Analgesia (e.g., paracetamol, NSAIDs)"
+        ],
+        "secondLine": [
+          "Physiotherapy referral for rehabilitation",
+          "Consideration of corticosteroid injections for inflammation"
+        ],
+        "procedures": [
+          "Aspiration of hematoma if significant swelling occurs",
+          "Surgical intervention for severe tendon or ligament injuries"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Activity modification",
+          "Physiotherapy and rehabilitation exercises"
+        ],
+        "secondLine": [
+          "Corticosteroid injections for persistent inflammation",
+          "Surgical options for chronic tendon injuries"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and adjust management plan"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works centrally to inhibit prostaglandin synthesis.",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Useful for inflammation and pain."
+        },
+        {
+          "name": "Corticosteroids (e.g., Triamcinolone)",
+          "mechanism": "Anti-inflammatory, suppresses immune response.",
+          "dosing": "10-40 mg depending on the condition, administered via injection.",
+          "sideEffects": "Infection risk, skin atrophy, systemic effects with repeated use.",
+          "notes": "Used for persistent inflammation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ultrasound-guided injection",
+          "description": "Injection of corticosteroids or local anesthetics into the affected area under ultrasound guidance.",
+          "indications": "Persistent pain and inflammation not responding to conservative management.",
+          "risks": "Infection, bleeding, nerve damage."
+        },
+        {
+          "name": "Surgical repair of torn tendons",
+          "description": "Surgical intervention to repair torn or ruptured tendons in cases of significant injury.",
+          "indications": "Complete tears or significant functional impairment.",
+          "risks": "Infection, scarring, stiffness, re-rupture."
+        }
+      ]
+    },
+    "prognosis": "Most upper limb soft tissue injuries have a good prognosis with appropriate management, but recovery time can vary from weeks to months depending on the severity of the injury.",
+    "complications": [
+      "Chronic pain",
+      "Reduced range of motion",
+      "Weakness",
+      "Recurrent injuries",
+      "Nerve damage leading to functional impairment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide first-line management, and refer to physiotherapy or specialists as needed. They should also educate patients on rehabilitation and recovery strategies.",
+    "escalation": "Refer to an orthopaedic specialist if there are signs of severe injury, persistent symptoms despite conservative management, or if surgical intervention may be required.",
+    "keySafetyConsiderations": "Ensure proper assessment to rule out fractures or dislocations, monitor for signs of compartment syndrome, and educate patients on the importance of follow-up and adherence to rehabilitation protocols."
+  }
+}

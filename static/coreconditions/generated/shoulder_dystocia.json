@@ -1,0 +1,123 @@
+{
+  "id": "shoulder_dystocia",
+  "name": "Shoulder dystocia",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:48:32.927779",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Shoulder dystocia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nShoulder dystocia is an obstetric emergency that occurs when the fetal shoulder becomes impacted behind the maternal pubic symphysis during delivery, preventing the delivery of the fetus after the head has emerged.\n\n### Epidemiology\nShoulder dystocia occurs in approximately 0.2% to 3% of vaginal deliveries, with higher incidence in cases of macrosomia, maternal diabetes, and previous history of shoulder dystocia.\n\n### Essential Pathophysiology\nShoulder dystocia typically occurs when the fetal shoulders are larger than the pelvic inlet, often due to factors such as fetal size, maternal pelvic shape, or abnormal fetal positioning. The anterior shoulder gets stuck behind the pubic symphysis, leading to potential complications for both the mother and the infant.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Prolonged second stage of labor\n- Maternal anxiety or distress during delivery\n\n### Key Signs\n- Turtle sign: retraction of the fetal head against the perineum after delivery of the head\n- Failure of the shoulders to deliver after the head has emerged\n\n### Atypical Presentations\n- Delivery of the head with no immediate delivery of the body\n- Fetal heart rate abnormalities during labor\n\n### Red Flags Requiring Immediate Action\n- Prolonged labor (>60 minutes after head delivery)\n- Signs of fetal distress (bradycardia, meconium-stained amniotic fluid)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment during labor\n- Ultrasound for fetal size estimation (if time allows)\n\n### Second-line Investigations\n- Pelvic examination to assess for fetal position and engagement\n\n### Specialist Tests\n- MRI or CT scan of the pelvis (rarely used in acute scenarios)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the inability to deliver the fetal body after the head has emerged, often accompanied by the turtle sign.\n\n### Key Differential Diagnoses to Exclude\n- Breech presentation\n- Fetal macrosomia\n- Pelvic disproportion\n- Multiple gestation\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- McRoberts maneuver: flexing the maternal legs tightly to the abdomen to widen the pelvis\n- Suprapubic pressure: applying pressure above the pubic bone to dislodge the shoulder\n\n#### Second-line Treatments\n- Woods screw maneuver: rotating the fetal shoulder to free it from the pubic symphysis\n- Reverse Woods maneuver: rotating the shoulder in the opposite direction\n\n#### Emergency Procedures\n- Delivery of the posterior arm: reaching into the vagina to deliver the fetal arm to reduce shoulder width\n- Zavanelli maneuver: pushing the fetal head back into the vagina and proceeding to cesarean section (rarely used)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Counseling and education for future pregnancies regarding risks and management plans\n\n#### Second-line Treatments\n- Consideration of elective cesarean delivery in high-risk cases (e.g., previous shoulder dystocia)\n\n#### Monitoring Requirements\n- Regular follow-up for maternal and infant health post-delivery\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxytocin\n- **Mechanism of Action**: Stimulates uterine contractions to facilitate delivery\n- **Typical Dosing Range**: 10-40 units IV infusion, titrated to effect\n- **Key Side Effects/Contraindications**: Uterine hyperstimulation, water retention, hypotension\n- **When to Use vs. Alternatives**: Use with caution in cases of uterine atony or previous uterine surgery.\n\n#### Magnesium sulfate\n- **Mechanism of Action**: Neuroprotective agent for the fetus in cases of fetal distress\n- **Typical Dosing Range**: 4-6 g IV loading dose, followed by 1-2 g/hour infusion\n- **Key Side Effects/Contraindications**: Flushing, hypotension, respiratory depression\n- **When to Use vs. Alternatives**: Monitor for signs of toxicity.\n\n### Procedures\n\n#### McRoberts maneuver\n- **What it Involves**: Flexing the maternal legs tightly to the abdomen to increase pelvic diameter\n- **Indications**: First-line intervention for shoulder dystocia\n- **Key Risks/Complications**: Maternal discomfort, potential for pelvic injury if performed incorrectly.\n\n#### Delivery of the posterior arm\n- **What it Involves**: Inserting a hand into the vagina to grasp and deliver the fetal arm to reduce shoulder width\n- **Indications**: When other maneuvers fail\n- **Key Risks/Complications**: Fetal injury, maternal trauma.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and management, the prognosis for both mother and infant is generally good. However, complications can arise if not managed effectively.\n\n### Important Complications to Watch For\n- Brachial plexus injury (Erb's palsy)\n- Fractures (clavicle or humerus)\n- Hypoxic-ischemic encephalopathy in the infant\n- Maternal hemorrhage or trauma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs of shoulder dystocia, initiate first-line management, and escalate care to senior obstetric staff as needed. They should also be involved in post-delivery care and counseling.\n\n### When to Escalate to Senior/Specialist\nIf initial maneuvers fail or if there are signs of fetal distress, escalate to senior obstetricians immediately. Prepare for potential emergency cesarean section if necessary.\n\n### Key Safety Considerations\nEnsure clear communication with the delivery team, maintain a calm environment, and have emergency equipment readily available. Continuous fetal monitoring is essential during labor to detect signs of distress early.\n",
+  "content": {
+    "overview": {
+      "definition": "Shoulder dystocia is an obstetric emergency that occurs when the fetal shoulder becomes impacted behind the maternal pubic symphysis during delivery, preventing the delivery of the fetus after the head has emerged.",
+      "epidemiology": "Shoulder dystocia occurs in approximately 0.2% to 3% of vaginal deliveries, with higher incidence in cases of macrosomia, maternal diabetes, and previous history of shoulder dystocia.",
+      "pathophysiology": "Shoulder dystocia typically occurs when the fetal shoulders are larger than the pelvic inlet, often due to factors such as fetal size, maternal pelvic shape, or abnormal fetal positioning. The anterior shoulder gets stuck behind the pubic symphysis, leading to potential complications for both the mother and the infant."
+    },
+    "recognition": {
+      "symptoms": [
+        "Prolonged second stage of labor",
+        "Maternal anxiety or distress during delivery"
+      ],
+      "signs": [
+        "Turtle sign: retraction of the fetal head against the perineum after delivery of the head",
+        "Failure of the shoulders to deliver after the head has emerged"
+      ],
+      "atypicalPresentations": [
+        "Delivery of the head with no immediate delivery of the body",
+        "Fetal heart rate abnormalities during labor"
+      ],
+      "redFlags": [
+        "Prolonged labor (>60 minutes after head delivery)",
+        "Signs of fetal distress (bradycardia, meconium-stained amniotic fluid)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment during labor",
+        "Ultrasound for fetal size estimation (if time allows)"
+      ],
+      "secondLine": [
+        "Pelvic examination to assess for fetal position and engagement"
+      ],
+      "specialistTests": [
+        "MRI or CT scan of the pelvis (rarely used in acute scenarios)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the inability to deliver the fetal body after the head has emerged, often accompanied by the turtle sign.",
+      "differentials": [
+        "Breech presentation",
+        "Fetal macrosomia",
+        "Pelvic disproportion",
+        "Multiple gestation"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "McRoberts maneuver: flexing the maternal legs tightly to the abdomen to widen the pelvis",
+          "Suprapubic pressure: applying pressure above the pubic bone to dislodge the shoulder"
+        ],
+        "secondLine": [
+          "Woods screw maneuver: rotating the fetal shoulder to free it from the pubic symphysis",
+          "Reverse Woods maneuver: rotating the shoulder in the opposite direction"
+        ],
+        "procedures": [
+          "Delivery of the posterior arm: reaching into the vagina to deliver the fetal arm to reduce shoulder width",
+          "Zavanelli maneuver: pushing the fetal head back into the vagina and proceeding to cesarean section (rarely used)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Counseling and education for future pregnancies regarding risks and management plans"
+        ],
+        "secondLine": [
+          "Consideration of elective cesarean delivery in high-risk cases (e.g., previous shoulder dystocia)"
+        ],
+        "monitoring": [
+          "Regular follow-up for maternal and infant health post-delivery"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxytocin",
+          "mechanism": "Stimulates uterine contractions to facilitate delivery",
+          "dosing": "10-40 units IV infusion, titrated to effect",
+          "sideEffects": "Uterine hyperstimulation, water retention, hypotension",
+          "notes": "Use with caution in cases of uterine atony or previous uterine surgery."
+        },
+        {
+          "name": "Magnesium sulfate",
+          "mechanism": "Neuroprotective agent for the fetus in cases of fetal distress",
+          "dosing": "4-6 g IV loading dose, followed by 1-2 g/hour infusion",
+          "sideEffects": "Flushing, hypotension, respiratory depression",
+          "notes": "Monitor for signs of toxicity."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "McRoberts maneuver",
+          "description": "Flexing the maternal legs tightly to the abdomen to increase pelvic diameter",
+          "indications": "First-line intervention for shoulder dystocia",
+          "risks": "Maternal discomfort, potential for pelvic injury if performed incorrectly."
+        },
+        {
+          "name": "Delivery of the posterior arm",
+          "description": "Inserting a hand into the vagina to grasp and deliver the fetal arm to reduce shoulder width",
+          "indications": "When other maneuvers fail",
+          "risks": "Fetal injury, maternal trauma."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and management, the prognosis for both mother and infant is generally good. However, complications can arise if not managed effectively.",
+    "complications": [
+      "Brachial plexus injury (Erb's palsy)",
+      "Fractures (clavicle or humerus)",
+      "Hypoxic-ischemic encephalopathy in the infant",
+      "Maternal hemorrhage or trauma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs of shoulder dystocia, initiate first-line management, and escalate care to senior obstetric staff as needed. They should also be involved in post-delivery care and counseling.",
+    "escalation": "If initial maneuvers fail or if there are signs of fetal distress, escalate to senior obstetricians immediately. Prepare for potential emergency cesarean section if necessary.",
+    "keySafetyConsiderations": "Ensure clear communication with the delivery team, maintain a calm environment, and have emergency equipment readily available. Continuous fetal monitoring is essential during labor to detect signs of distress early."
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "cancer",
+  "name": "Cancer",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:58:42.846384",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCancer is a group of diseases characterized by uncontrolled cell growth and proliferation, leading to the formation of tumors that can invade surrounding tissues and metastasize to distant sites.\n\n### Epidemiology\nCancer is one of the leading causes of morbidity and mortality worldwide, with an estimated 19.3 million new cases and 10 million cancer deaths in 2020. The most common types include breast, lung, colorectal, prostate, and stomach cancers.\n\n### Essential Pathophysiology\nCancer arises from genetic mutations that disrupt normal cell cycle regulation, leading to uncontrolled proliferation. These mutations can be caused by environmental factors (e.g., carcinogens), genetic predispositions, and viral infections. Tumors can be benign (non-cancerous) or malignant (cancerous), with malignant tumors having the potential to invade local tissues and metastasize.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unexplained weight loss\n- Fatigue\n- Pain (specific to tumor location)\n- Changes in appetite\n- Fever\n- Night sweats\n- Skin changes (e.g., new moles, changes in existing moles)\n- Persistent cough or hoarseness\n- Changes in bowel or bladder habits\n\n### Key Signs\n- Palpable mass or lump\n- Lymphadenopathy (swollen lymph nodes)\n- Abnormal bleeding (e.g., hematuria, melena)\n- Jaundice\n- Ascites\n- Neurological deficits (if brain metastases present)\n\n### Atypical Presentations\n- Anemia without obvious cause\n- Hypercalcemia\n- Paraneoplastic syndromes (e.g., Cushing's syndrome, SIADH)\n\n### Red Flags Requiring Immediate Action\n- Unexplained weight loss >10% of body weight\n- Persistent pain that is not relieved by usual analgesics\n- New onset of severe headaches\n- Unexplained bleeding or bruising\n- Changes in bowel or bladder habits lasting more than 4 weeks\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Basic metabolic panel\n- Liver function tests\n- Imaging studies (e.g., X-ray, ultrasound, CT scan)\n- Biopsy of suspicious lesions\n\n### Second-line Investigations\n- Tumor markers (e.g., PSA, CA-125, CEA)\n- MRI for detailed imaging\n- PET scan for metabolic activity assessment\n\n### Specialist Tests\n- Genetic testing for hereditary cancer syndromes\n- Bone marrow biopsy for hematological malignancies\n- Cytogenetic analysis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cancer is typically confirmed through histopathological examination of tissue obtained via biopsy, alongside imaging studies to assess the extent of disease.\n\n### Key Differential Diagnoses to Exclude\n- Benign tumors (e.g., lipoma, fibroma)\n- Infectious processes (e.g., abscess, granuloma)\n- Inflammatory conditions (e.g., sarcoidosis)\n- Autoimmune diseases (e.g., lupus)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to oncology for suspected malignancy\n- Symptomatic management (e.g., analgesia, antiemetics)\n\n#### Second-line Treatments\n- Initiation of palliative care if prognosis is poor\n- Consideration of urgent imaging or intervention based on symptoms\n\n#### Emergency Procedures\n- Biopsy (fine needle aspiration, core needle biopsy, excisional biopsy) - to obtain tissue for diagnosis. Indications include suspicious masses or lesions. Risks include bleeding, infection, and pain.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Multidisciplinary team (MDT) involvement for treatment planning\n- Chemotherapy, radiotherapy, or surgical options based on cancer type and stage\n\n#### Second-line Treatments\n- Targeted therapies or immunotherapy based on specific tumor markers or genetic mutations\n- Clinical trials for novel therapies\n\n#### Monitoring Requirements\n- Regular follow-up appointments for surveillance of recurrence\n- Monitoring for treatment side effects and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: Typical dosing is 50-100 mg/m2 IV every 3-4 weeks depending on regimen\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, ototoxicity\n- **When to Use vs. Alternatives**: Hydration is crucial to prevent nephrotoxicity.\n\n#### Doxorubicin\n- **Mechanism of Action**: Anthracycline that intercalates DNA and inhibits topoisomerase II\n- **Typical Dosing Range**: 60-75 mg/m2 IV every 3 weeks\n- **Key Side Effects/Contraindications**: Cardiotoxicity, myelosuppression, nausea\n- **When to Use vs. Alternatives**: Monitor cardiac function during treatment.\n\n#### Imatinib\n- **Mechanism of Action**: Tyrosine kinase inhibitor that targets BCR-ABL fusion protein in CML\n- **Typical Dosing Range**: 400 mg orally daily\n- **Key Side Effects/Contraindications**: Edema, nausea, diarrhea, liver enzyme elevation\n- **When to Use vs. Alternatives**: Used in chronic myeloid leukemia (CML) and gastrointestinal stromal tumors (GISTs).\n\n### Procedures\n\n#### Bone marrow biopsy\n- **What it Involves**: A procedure to obtain bone marrow for examination to diagnose hematological malignancies.\n- **Indications**: Suspected leukemia, lymphoma, or myeloma.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected CNS involvement by cancer or for administering intrathecal chemotherapy.\n- **Key Risks/Complications**: Headache, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies widely depending on cancer type, stage at diagnosis, and response to treatment. Early-stage cancers generally have better outcomes than advanced-stage cancers.\n\n### Important Complications to Watch For\n- Metastasis to other organs\n- Bone marrow suppression leading to anemia, leukopenia, thrombocytopenia\n- Infection due to immunosuppression\n- Organ dysfunction due to tumor burden or treatment side effects\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing red flags for cancer, conducting initial assessments, ordering appropriate investigations, and referring patients to specialists. They should also provide supportive care and education to patients and families.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected cancer should be escalated to an oncologist or relevant specialist for further evaluation and management. Any acute complications or severe symptoms should prompt immediate medical attention.\n\n### Key Safety Considerations\nEnsure informed consent is obtained for all procedures and treatments. Monitor for side effects of chemotherapy and other treatments, and provide supportive care as needed. Maintain clear communication with the multidisciplinary team regarding patient status and treatment plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Cancer is a group of diseases characterized by uncontrolled cell growth and proliferation, leading to the formation of tumors that can invade surrounding tissues and metastasize to distant sites.",
+      "epidemiology": "Cancer is one of the leading causes of morbidity and mortality worldwide, with an estimated 19.3 million new cases and 10 million cancer deaths in 2020. The most common types include breast, lung, colorectal, prostate, and stomach cancers.",
+      "pathophysiology": "Cancer arises from genetic mutations that disrupt normal cell cycle regulation, leading to uncontrolled proliferation. These mutations can be caused by environmental factors (e.g., carcinogens), genetic predispositions, and viral infections. Tumors can be benign (non-cancerous) or malignant (cancerous), with malignant tumors having the potential to invade local tissues and metastasize."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unexplained weight loss",
+        "Fatigue",
+        "Pain (specific to tumor location)",
+        "Changes in appetite",
+        "Fever",
+        "Night sweats",
+        "Skin changes (e.g., new moles, changes in existing moles)",
+        "Persistent cough or hoarseness",
+        "Changes in bowel or bladder habits"
+      ],
+      "signs": [
+        "Palpable mass or lump",
+        "Lymphadenopathy (swollen lymph nodes)",
+        "Abnormal bleeding (e.g., hematuria, melena)",
+        "Jaundice",
+        "Ascites",
+        "Neurological deficits (if brain metastases present)"
+      ],
+      "atypicalPresentations": [
+        "Anemia without obvious cause",
+        "Hypercalcemia",
+        "Paraneoplastic syndromes (e.g., Cushing's syndrome, SIADH)"
+      ],
+      "redFlags": [
+        "Unexplained weight loss >10% of body weight",
+        "Persistent pain that is not relieved by usual analgesics",
+        "New onset of severe headaches",
+        "Unexplained bleeding or bruising",
+        "Changes in bowel or bladder habits lasting more than 4 weeks"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Basic metabolic panel",
+        "Liver function tests",
+        "Imaging studies (e.g., X-ray, ultrasound, CT scan)",
+        "Biopsy of suspicious lesions"
+      ],
+      "secondLine": [
+        "Tumor markers (e.g., PSA, CA-125, CEA)",
+        "MRI for detailed imaging",
+        "PET scan for metabolic activity assessment"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary cancer syndromes",
+        "Bone marrow biopsy for hematological malignancies",
+        "Cytogenetic analysis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cancer is typically confirmed through histopathological examination of tissue obtained via biopsy, alongside imaging studies to assess the extent of disease.",
+      "differentials": [
+        "Benign tumors (e.g., lipoma, fibroma)",
+        "Infectious processes (e.g., abscess, granuloma)",
+        "Inflammatory conditions (e.g., sarcoidosis)",
+        "Autoimmune diseases (e.g., lupus)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to oncology for suspected malignancy",
+          "Symptomatic management (e.g., analgesia, antiemetics)"
+        ],
+        "secondLine": [
+          "Initiation of palliative care if prognosis is poor",
+          "Consideration of urgent imaging or intervention based on symptoms"
+        ],
+        "procedures": [
+          "Biopsy (fine needle aspiration, core needle biopsy, excisional biopsy) - to obtain tissue for diagnosis. Indications include suspicious masses or lesions. Risks include bleeding, infection, and pain."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Multidisciplinary team (MDT) involvement for treatment planning",
+          "Chemotherapy, radiotherapy, or surgical options based on cancer type and stage"
+        ],
+        "secondLine": [
+          "Targeted therapies or immunotherapy based on specific tumor markers or genetic mutations",
+          "Clinical trials for novel therapies"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments for surveillance of recurrence",
+          "Monitoring for treatment side effects and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "Typical dosing is 50-100 mg/m2 IV every 3-4 weeks depending on regimen",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, ototoxicity",
+          "notes": "Hydration is crucial to prevent nephrotoxicity."
+        },
+        {
+          "name": "Doxorubicin",
+          "mechanism": "Anthracycline that intercalates DNA and inhibits topoisomerase II",
+          "dosing": "60-75 mg/m2 IV every 3 weeks",
+          "sideEffects": "Cardiotoxicity, myelosuppression, nausea",
+          "notes": "Monitor cardiac function during treatment."
+        },
+        {
+          "name": "Imatinib",
+          "mechanism": "Tyrosine kinase inhibitor that targets BCR-ABL fusion protein in CML",
+          "dosing": "400 mg orally daily",
+          "sideEffects": "Edema, nausea, diarrhea, liver enzyme elevation",
+          "notes": "Used in chronic myeloid leukemia (CML) and gastrointestinal stromal tumors (GISTs)."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone marrow biopsy",
+          "description": "A procedure to obtain bone marrow for examination to diagnose hematological malignancies.",
+          "indications": "Suspected leukemia, lymphoma, or myeloma.",
+          "risks": "Bleeding, infection, pain at the site."
+        },
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected CNS involvement by cancer or for administering intrathecal chemotherapy.",
+          "risks": "Headache, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies widely depending on cancer type, stage at diagnosis, and response to treatment. Early-stage cancers generally have better outcomes than advanced-stage cancers.",
+    "complications": [
+      "Metastasis to other organs",
+      "Bone marrow suppression leading to anemia, leukopenia, thrombocytopenia",
+      "Infection due to immunosuppression",
+      "Organ dysfunction due to tumor burden or treatment side effects"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing red flags for cancer, conducting initial assessments, ordering appropriate investigations, and referring patients to specialists. They should also provide supportive care and education to patients and families.",
+    "escalation": "Patients with suspected cancer should be escalated to an oncologist or relevant specialist for further evaluation and management. Any acute complications or severe symptoms should prompt immediate medical attention.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained for all procedures and treatments. Monitor for side effects of chemotherapy and other treatments, and provide supportive care as needed. Maintain clear communication with the multidisciplinary team regarding patient status and treatment plans."
+  }
+}

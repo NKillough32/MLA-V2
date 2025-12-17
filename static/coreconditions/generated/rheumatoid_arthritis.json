@@ -1,0 +1,142 @@
+{
+  "id": "rheumatoid_arthritis",
+  "name": "Rheumatoid arthritis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:27:58.628480",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Rheumatoid arthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRheumatoid arthritis (RA) is a chronic inflammatory autoimmune disorder primarily affecting the joints, characterized by synovial inflammation and subsequent joint destruction.\n\n### Epidemiology\nRA affects approximately 0.5% to 1% of the population, with a higher prevalence in women (3:1 ratio). It commonly presents between the ages of 30 and 60.\n\n### Essential Pathophysiology\nThe pathophysiology of RA involves an autoimmune response where the immune system mistakenly attacks the synovial membrane, leading to inflammation, synovitis, and ultimately joint damage. Key players include T cells, B cells, and pro-inflammatory cytokines such as TNF-alpha and IL-6.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Morning stiffness lasting more than 30 minutes\n- Symmetrical joint pain and swelling\n- Fatigue\n- Low-grade fever\n- Weight loss\n\n### Key Signs\n- Swelling and tenderness in multiple joints (especially hands and feet)\n- Deformities (e.g., ulnar deviation, swan neck deformity)\n- Subcutaneous nodules (rheumatoid nodules)\n- Reduced range of motion in affected joints\n\n### Atypical Presentations\n- Extra-articular manifestations (e.g., lung involvement, vasculitis)\n- Oligoarticular presentation (affecting fewer than 5 joints)\n- Palindromic rheumatism (intermittent flares)\n\n### Red Flags Requiring Immediate Action\n- Persistent joint pain and swelling\n- Joint deformities\n- Systemic symptoms (fever, weight loss)\n- Signs of infection (fever, redness, warmth)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Rheumatoid factor (RF)\n- Anti-citrullinated protein antibodies (ACPA)\n\n### Second-line Investigations\n- X-rays of affected joints\n- Ultrasound of joints\n- MRI if needed for complex cases\n\n### Specialist Tests\n- Joint aspiration and synovial fluid analysis\n- Bone density scan (DEXA) if considering long-term steroid use\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nThe diagnosis of RA is based on the 2010 ACR/EULAR classification criteria, which include joint involvement, serology (RF and ACPA), acute-phase reactants (ESR/CRP), and symptom duration.\n\n### Key Differential Diagnoses to Exclude\n- Osteoarthritis\n- Psoriatic arthritis\n- Gout\n- Systemic lupus erythematosus (SLE)\n- Infectious arthritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-steroidal anti-inflammatory drugs (NSAIDs)\n- Corticosteroids (e.g., prednisone) for flares\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate\n\n#### Emergency Procedures\n- Joint injection with corticosteroids for localized inflammation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Methotrexate (first-line DMARD)\n- Sulfasalazine\n- Leflunomide\n\n#### Second-line Treatments\n- Biologic agents (e.g., TNF inhibitors like etanercept, adalimumab)\n- Janus kinase inhibitors (e.g., tofacitinib)\n\n#### Monitoring Requirements\n- Regular monitoring of liver function tests and complete blood counts for DMARDs\n- Assessing disease activity using tools like DAS28\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to reduced purine synthesis and anti-inflammatory effects.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, teratogenicity.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and suppresses the immune response.\n- **Typical Dosing Range**: 5-10 mg daily, tapering as symptoms improve.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, hypertension, diabetes, adrenal suppression.\n- **When to Use vs. Alternatives**: Use the lowest effective dose for the shortest duration.\n\n#### Etanercept\n- **Mechanism of Action**: TNF-alpha inhibitor that blocks the action of tumor necrosis factor.\n- **Typical Dosing Range**: 50 mg subcutaneously once weekly.\n- **Key Side Effects/Contraindications**: Increased risk of infections, injection site reactions, possible malignancy risk.\n- **When to Use vs. Alternatives**: Screen for latent tuberculosis before starting.\n\n### Procedures\n\n#### Joint injection with corticosteroids\n- **What it Involves**: Injection of corticosteroids directly into the affected joint to reduce inflammation.\n- **Indications**: Localized joint inflammation not responding to systemic treatment.\n- **Key Risks/Complications**: Infection, joint damage, transient increase in pain post-injection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nRA is a chronic condition that can lead to significant disability if not managed effectively. Early diagnosis and treatment can improve outcomes and quality of life.\n\n### Important Complications to Watch For\n- Joint deformities and loss of function\n- Cardiovascular disease\n- Osteoporosis\n- Pulmonary complications (e.g., interstitial lung disease)\n- Increased risk of lymphoma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of RA, perform initial assessments, order appropriate investigations, and initiate treatment while ensuring regular monitoring and follow-up.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist if there is uncertainty in diagnosis, inadequate response to treatment, or if there are significant extra-articular manifestations.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially when using immunosuppressive therapies. Regularly assess for potential side effects of medications, particularly DMARDs and corticosteroids.\n",
+  "content": {
+    "overview": {
+      "definition": "Rheumatoid arthritis (RA) is a chronic inflammatory autoimmune disorder primarily affecting the joints, characterized by synovial inflammation and subsequent joint destruction.",
+      "epidemiology": "RA affects approximately 0.5% to 1% of the population, with a higher prevalence in women (3:1 ratio). It commonly presents between the ages of 30 and 60.",
+      "pathophysiology": "The pathophysiology of RA involves an autoimmune response where the immune system mistakenly attacks the synovial membrane, leading to inflammation, synovitis, and ultimately joint damage. Key players include T cells, B cells, and pro-inflammatory cytokines such as TNF-alpha and IL-6."
+    },
+    "recognition": {
+      "symptoms": [
+        "Morning stiffness lasting more than 30 minutes",
+        "Symmetrical joint pain and swelling",
+        "Fatigue",
+        "Low-grade fever",
+        "Weight loss"
+      ],
+      "signs": [
+        "Swelling and tenderness in multiple joints (especially hands and feet)",
+        "Deformities (e.g., ulnar deviation, swan neck deformity)",
+        "Subcutaneous nodules (rheumatoid nodules)",
+        "Reduced range of motion in affected joints"
+      ],
+      "atypicalPresentations": [
+        "Extra-articular manifestations (e.g., lung involvement, vasculitis)",
+        "Oligoarticular presentation (affecting fewer than 5 joints)",
+        "Palindromic rheumatism (intermittent flares)"
+      ],
+      "redFlags": [
+        "Persistent joint pain and swelling",
+        "Joint deformities",
+        "Systemic symptoms (fever, weight loss)",
+        "Signs of infection (fever, redness, warmth)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Rheumatoid factor (RF)",
+        "Anti-citrullinated protein antibodies (ACPA)"
+      ],
+      "secondLine": [
+        "X-rays of affected joints",
+        "Ultrasound of joints",
+        "MRI if needed for complex cases"
+      ],
+      "specialistTests": [
+        "Joint aspiration and synovial fluid analysis",
+        "Bone density scan (DEXA) if considering long-term steroid use"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "The diagnosis of RA is based on the 2010 ACR/EULAR classification criteria, which include joint involvement, serology (RF and ACPA), acute-phase reactants (ESR/CRP), and symptom duration.",
+      "differentials": [
+        "Osteoarthritis",
+        "Psoriatic arthritis",
+        "Gout",
+        "Systemic lupus erythematosus (SLE)",
+        "Infectious arthritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-steroidal anti-inflammatory drugs (NSAIDs)",
+          "Corticosteroids (e.g., prednisone) for flares"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate"
+        ],
+        "procedures": [
+          "Joint injection with corticosteroids for localized inflammation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Methotrexate (first-line DMARD)",
+          "Sulfasalazine",
+          "Leflunomide"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., TNF inhibitors like etanercept, adalimumab)",
+          "Janus kinase inhibitors (e.g., tofacitinib)"
+        ],
+        "monitoring": [
+          "Regular monitoring of liver function tests and complete blood counts for DMARDs",
+          "Assessing disease activity using tools like DAS28"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to reduced purine synthesis and anti-inflammatory effects.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response and tolerance.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, teratogenicity.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and suppresses the immune response.",
+          "dosing": "5-10 mg daily, tapering as symptoms improve.",
+          "sideEffects": "Weight gain, osteoporosis, hypertension, diabetes, adrenal suppression.",
+          "notes": "Use the lowest effective dose for the shortest duration."
+        },
+        {
+          "name": "Etanercept",
+          "mechanism": "TNF-alpha inhibitor that blocks the action of tumor necrosis factor.",
+          "dosing": "50 mg subcutaneously once weekly.",
+          "sideEffects": "Increased risk of infections, injection site reactions, possible malignancy risk.",
+          "notes": "Screen for latent tuberculosis before starting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint injection with corticosteroids",
+          "description": "Injection of corticosteroids directly into the affected joint to reduce inflammation.",
+          "indications": "Localized joint inflammation not responding to systemic treatment.",
+          "risks": "Infection, joint damage, transient increase in pain post-injection."
+        }
+      ]
+    },
+    "prognosis": "RA is a chronic condition that can lead to significant disability if not managed effectively. Early diagnosis and treatment can improve outcomes and quality of life.",
+    "complications": [
+      "Joint deformities and loss of function",
+      "Cardiovascular disease",
+      "Osteoporosis",
+      "Pulmonary complications (e.g., interstitial lung disease)",
+      "Increased risk of lymphoma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of RA, perform initial assessments, order appropriate investigations, and initiate treatment while ensuring regular monitoring and follow-up.",
+    "escalation": "Refer to a rheumatologist if there is uncertainty in diagnosis, inadequate response to treatment, or if there are significant extra-articular manifestations.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially when using immunosuppressive therapies. Regularly assess for potential side effects of medications, particularly DMARDs and corticosteroids."
+  }
+}

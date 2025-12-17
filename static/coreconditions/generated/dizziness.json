@@ -1,0 +1,134 @@
+{
+  "id": "dizziness",
+  "name": "Dizziness?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:38:07.609934",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Dizziness?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDizziness is a term used to describe a range of sensations, including feeling faint, woozy, weak, or unsteady. It can be classified into vertigo (a false sense of spinning), presyncope (feeling faint), and disequilibrium (loss of balance).\n\n### Epidemiology\nDizziness is a common complaint in the elderly, affecting approximately 30% of individuals over 65 years of age. It can lead to falls, decreased mobility, and increased morbidity.\n\n### Essential Pathophysiology\nDizziness can arise from various systems including vestibular (inner ear), cardiovascular (orthostatic hypotension), neurological (CNS disorders), and metabolic (hypoglycemia). The interaction of these systems can lead to the sensation of dizziness.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Vertigo (spinning sensation)\n- Lightheadedness\n- Unsteadiness\n- Nausea\n- Visual disturbances\n\n### Key Signs\n- Nystagmus (involuntary eye movement)\n- Postural instability\n- Orthostatic hypotension (drop in BP upon standing)\n- Neurological deficits (e.g., weakness, sensory loss)\n\n### Atypical Presentations\n- Dizziness without vertigo\n- Chronic dizziness lasting weeks to months\n- Dizziness triggered by specific movements\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of dizziness\n- Associated neurological symptoms (e.g., weakness, speech difficulties)\n- Severe headache (thunderclap headache)\n- Recent head trauma\n- Visual changes\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Orthostatic vital signs\n- Audiometry (if hearing loss is present)\n\n### Second-line Investigations\n- Blood tests (CBC, electrolytes, glucose, thyroid function tests)\n- MRI/CT of the brain (if neurological signs present)\n- Vestibular function tests (e.g., ENG, VNG)\n\n### Specialist Tests\n- Electrocardiogram (ECG)\n- Holter monitor (for arrhythmias)\n- Tilt table test (for syncope evaluation)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination findings, and exclusion of serious underlying conditions. Specific criteria may include the presence of vertigo, duration of symptoms, and associated features.\n\n### Key Differential Diagnoses to Exclude\n- Benign Paroxysmal Positional Vertigo (BPPV)\n- Vestibular Neuritis\n- Meniere's Disease\n- Orthostatic Hypotension\n- Cerebrovascular Accident (CVA)\n- Anemia\n- Hypoglycemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and monitoring\n- Positioning maneuvers (e.g., Epley maneuver for BPPV)\n- Hydration\n\n#### Second-line Treatments\n- Antihistamines (e.g., Meclizine)\n- Benzodiazepines (e.g., Diazepam) for severe anxiety\n\n#### Emergency Procedures\n- Epley maneuver for BPPV: A series of head movements to reposition otoliths in the inner ear. Indicated for BPPV. Risks include temporary exacerbation of symptoms.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vestibular rehabilitation therapy\n- Patient education on fall prevention\n\n#### Second-line Treatments\n- Antidepressants (e.g., Sertraline) for chronic dizziness with anxiety\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and response to treatment.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Meclizine\n- **Mechanism of Action**: Antihistamine that reduces vestibular stimulation.\n- **Typical Dosing Range**: 25-100 mg orally, 1 hour before travel or as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, blurred vision.\n- **When to Use vs. Alternatives**: Use caution in elderly patients due to sedation.\n\n#### Diazepam\n- **Mechanism of Action**: Benzodiazepine that acts as a central nervous system depressant.\n- **Typical Dosing Range**: 2-10 mg orally, 2-4 times daily as needed.\n- **Key Side Effects/Contraindications**: Sedation, dizziness, dependence.\n- **When to Use vs. Alternatives**: Short-term use recommended due to risk of dependence.\n\n### Procedures\n\n#### Epley Maneuver\n- **What it Involves**: A series of head movements to treat BPPV by moving calcium crystals in the inner ear.\n- **Indications**: Confirmed BPPV based on clinical criteria.\n- **Key Risks/Complications**: Temporary exacerbation of dizziness, nausea.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for dizziness varies depending on the underlying cause. Many cases, such as BPPV, are benign and resolve with treatment. However, dizziness can lead to falls and complications in the elderly, necessitating careful management.\n\n### Important Complications to Watch For\n- Falls leading to fractures or head injuries\n- Increased anxiety and depression\n- Decreased quality of life due to fear of falling\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, recognize red flags, initiate appropriate investigations, and manage acute cases. They should also educate patients on fall prevention strategies and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if there are red flags present, if the patient is unstable, or if the diagnosis is unclear after initial assessment.\n\n### Key Safety Considerations\nEnsure patient safety by assessing fall risk, providing appropriate supervision, and educating patients on how to manage dizziness. Monitor for signs of dehydration or hypotension, especially in elderly patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Dizziness is a term used to describe a range of sensations, including feeling faint, woozy, weak, or unsteady. It can be classified into vertigo (a false sense of spinning), presyncope (feeling faint), and disequilibrium (loss of balance).",
+      "epidemiology": "Dizziness is a common complaint in the elderly, affecting approximately 30% of individuals over 65 years of age. It can lead to falls, decreased mobility, and increased morbidity.",
+      "pathophysiology": "Dizziness can arise from various systems including vestibular (inner ear), cardiovascular (orthostatic hypotension), neurological (CNS disorders), and metabolic (hypoglycemia). The interaction of these systems can lead to the sensation of dizziness."
+    },
+    "recognition": {
+      "symptoms": [
+        "Vertigo (spinning sensation)",
+        "Lightheadedness",
+        "Unsteadiness",
+        "Nausea",
+        "Visual disturbances"
+      ],
+      "signs": [
+        "Nystagmus (involuntary eye movement)",
+        "Postural instability",
+        "Orthostatic hypotension (drop in BP upon standing)",
+        "Neurological deficits (e.g., weakness, sensory loss)"
+      ],
+      "atypicalPresentations": [
+        "Dizziness without vertigo",
+        "Chronic dizziness lasting weeks to months",
+        "Dizziness triggered by specific movements"
+      ],
+      "redFlags": [
+        "Sudden onset of dizziness",
+        "Associated neurological symptoms (e.g., weakness, speech difficulties)",
+        "Severe headache (thunderclap headache)",
+        "Recent head trauma",
+        "Visual changes"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Orthostatic vital signs",
+        "Audiometry (if hearing loss is present)"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, electrolytes, glucose, thyroid function tests)",
+        "MRI/CT of the brain (if neurological signs present)",
+        "Vestibular function tests (e.g., ENG, VNG)"
+      ],
+      "specialistTests": [
+        "Electrocardiogram (ECG)",
+        "Holter monitor (for arrhythmias)",
+        "Tilt table test (for syncope evaluation)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination findings, and exclusion of serious underlying conditions. Specific criteria may include the presence of vertigo, duration of symptoms, and associated features.",
+      "differentials": [
+        "Benign Paroxysmal Positional Vertigo (BPPV)",
+        "Vestibular Neuritis",
+        "Meniere's Disease",
+        "Orthostatic Hypotension",
+        "Cerebrovascular Accident (CVA)",
+        "Anemia",
+        "Hypoglycemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and monitoring",
+          "Positioning maneuvers (e.g., Epley maneuver for BPPV)",
+          "Hydration"
+        ],
+        "secondLine": [
+          "Antihistamines (e.g., Meclizine)",
+          "Benzodiazepines (e.g., Diazepam) for severe anxiety"
+        ],
+        "procedures": [
+          "Epley maneuver for BPPV: A series of head movements to reposition otoliths in the inner ear. Indicated for BPPV. Risks include temporary exacerbation of symptoms."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vestibular rehabilitation therapy",
+          "Patient education on fall prevention"
+        ],
+        "secondLine": [
+          "Antidepressants (e.g., Sertraline) for chronic dizziness with anxiety"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and response to treatment."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Meclizine",
+          "mechanism": "Antihistamine that reduces vestibular stimulation.",
+          "dosing": "25-100 mg orally, 1 hour before travel or as needed.",
+          "sideEffects": "Drowsiness, dry mouth, blurred vision.",
+          "notes": "Use caution in elderly patients due to sedation."
+        },
+        {
+          "name": "Diazepam",
+          "mechanism": "Benzodiazepine that acts as a central nervous system depressant.",
+          "dosing": "2-10 mg orally, 2-4 times daily as needed.",
+          "sideEffects": "Sedation, dizziness, dependence.",
+          "notes": "Short-term use recommended due to risk of dependence."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epley Maneuver",
+          "description": "A series of head movements to treat BPPV by moving calcium crystals in the inner ear.",
+          "indications": "Confirmed BPPV based on clinical criteria.",
+          "risks": "Temporary exacerbation of dizziness, nausea."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for dizziness varies depending on the underlying cause. Many cases, such as BPPV, are benign and resolve with treatment. However, dizziness can lead to falls and complications in the elderly, necessitating careful management.",
+    "complications": [
+      "Falls leading to fractures or head injuries",
+      "Increased anxiety and depression",
+      "Decreased quality of life due to fear of falling"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, recognize red flags, initiate appropriate investigations, and manage acute cases. They should also educate patients on fall prevention strategies and refer to specialists when necessary.",
+    "escalation": "Refer to a senior clinician if there are red flags present, if the patient is unstable, or if the diagnosis is unclear after initial assessment.",
+    "keySafetyConsiderations": "Ensure patient safety by assessing fall risk, providing appropriate supervision, and educating patients on how to manage dizziness. Monitor for signs of dehydration or hypotension, especially in elderly patients."
+  }
+}

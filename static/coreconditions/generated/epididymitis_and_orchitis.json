@@ -1,0 +1,134 @@
+{
+  "id": "epididymitis_and_orchitis",
+  "name": "Epididymitis and orchitis",
+  "domains": [
+    "Urology"
+  ],
+  "generatedAt": "2025-12-17T21:19:27.513093",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Epididymitis and orchitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEpididymitis is the inflammation of the epididymis, while orchitis is the inflammation of the testis. These conditions can occur separately or together (epididymo-orchitis).\n\n### Epidemiology\nEpididymitis is more common in sexually active males aged 14-35 years, often due to sexually transmitted infections (STIs) such as Chlamydia trachomatis and Neisseria gonorrhoeae. Orchitis can occur in all age groups and is often viral in origin, particularly mumps in unvaccinated individuals.\n\n### Essential Pathophysiology\nEpididymitis typically results from infection, leading to inflammation and swelling of the epididymis. Orchitis may arise from viral infections, leading to direct viral invasion of testicular tissue, resulting in inflammation and potential necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Scrotal pain and swelling\n- Dysuria\n- Fever\n- Nausea and vomiting\n- Pain during intercourse\n\n### Key Signs\n- Swollen, tender epididymis\n- Erythema and warmth over the scrotum\n- Positive Prehn's sign (relief of pain with elevation of the scrotum)\n- Possible testicular tenderness\n\n### Atypical Presentations\n- Chronic scrotal pain without acute inflammation\n- Absence of fever in some cases\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by analgesia\n- Signs of systemic infection (high fever, chills)\n- Abscess formation\n- Testicular torsion (sudden onset severe pain, high-riding testis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis\n- Urine culture\n- STI screening (urethral swab for Chlamydia and Gonorrhea)\n\n### Second-line Investigations\n- Scrotal ultrasound (to assess for abscess or torsion)\n- CBC (complete blood count) to check for leukocytosis\n\n### Specialist Tests\n- MRI of the scrotum (if torsion or malignancy is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by laboratory findings (positive cultures for pathogens, elevated white blood cell count).\n\n### Key Differential Diagnoses to Exclude\n- Testicular torsion\n- Trauma\n- Hernia\n- Tumor\n- Hydrocele\n- Varicocele\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (NSAIDs or acetaminophen)\n- Antibiotics (e.g., doxycycline or ciprofloxacin) based on culture results\n\n#### Second-line Treatments\n- Consider referral to urology if no improvement or complications arise\n\n#### Emergency Procedures\n- Scrotal ultrasound to rule out torsion or abscess\n- Surgical intervention for abscess drainage if present\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued analgesia\n- Referral to urology for chronic pain management\n\n#### Second-line Treatments\n- Consider surgical options if conservative management fails\n\n#### Monitoring Requirements\n- Regular follow-up to assess for complications or recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Doxycycline\n- **Mechanism of Action**: Inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit.\n- **Typical Dosing Range**: 100 mg orally twice daily for 10 days.\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset, esophageal irritation.\n- **When to Use vs. Alternatives**: Avoid in children and pregnant women.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Inhibits bacterial DNA gyrase, preventing DNA replication.\n- **Typical Dosing Range**: 500 mg orally twice daily for 10 days.\n- **Key Side Effects/Contraindications**: Tendonitis, gastrointestinal upset, CNS effects (dizziness, headache).\n- **When to Use vs. Alternatives**: Caution in patients with a history of tendon disorders.\n\n### Procedures\n\n#### Scrotal ultrasound\n- **What it Involves**: Ultrasound imaging to assess for abnormalities in the scrotum, including fluid collections, torsion, or tumors.\n- **Indications**: Persistent pain, suspicion of abscess or torsion.\n- **Key Risks/Complications**: Minimal; may cause discomfort during the procedure.\n\n#### Abscess drainage\n- **What it Involves**: Surgical procedure to drain a scrotal abscess if present.\n- **Indications**: Presence of a significant scrotal abscess causing pain or systemic symptoms.\n- **Key Risks/Complications**: Infection, bleeding, recurrence of abscess.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of epididymitis and orchitis respond well to treatment, with a good prognosis. Chronic pain may develop in some cases.\n\n### Important Complications to Watch For\n- Abscess formation\n- Chronic pain\n- Infertility (rare)\n- Testicular atrophy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, initiate treatment, and refer to urology for complicated cases or lack of improvement.\n\n### When to Escalate to Senior/Specialist\nRefer to urology if there is no improvement within 48-72 hours, if there are signs of abscess, or if testicular torsion is suspected.\n\n### Key Safety Considerations\nEnsure to rule out testicular torsion in any patient presenting with acute scrotal pain. Monitor for signs of systemic infection and complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Epididymitis is the inflammation of the epididymis, while orchitis is the inflammation of the testis. These conditions can occur separately or together (epididymo-orchitis).",
+      "epidemiology": "Epididymitis is more common in sexually active males aged 14-35 years, often due to sexually transmitted infections (STIs) such as Chlamydia trachomatis and Neisseria gonorrhoeae. Orchitis can occur in all age groups and is often viral in origin, particularly mumps in unvaccinated individuals.",
+      "pathophysiology": "Epididymitis typically results from infection, leading to inflammation and swelling of the epididymis. Orchitis may arise from viral infections, leading to direct viral invasion of testicular tissue, resulting in inflammation and potential necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Scrotal pain and swelling",
+        "Dysuria",
+        "Fever",
+        "Nausea and vomiting",
+        "Pain during intercourse"
+      ],
+      "signs": [
+        "Swollen, tender epididymis",
+        "Erythema and warmth over the scrotum",
+        "Positive Prehn's sign (relief of pain with elevation of the scrotum)",
+        "Possible testicular tenderness"
+      ],
+      "atypicalPresentations": [
+        "Chronic scrotal pain without acute inflammation",
+        "Absence of fever in some cases"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by analgesia",
+        "Signs of systemic infection (high fever, chills)",
+        "Abscess formation",
+        "Testicular torsion (sudden onset severe pain, high-riding testis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis",
+        "Urine culture",
+        "STI screening (urethral swab for Chlamydia and Gonorrhea)"
+      ],
+      "secondLine": [
+        "Scrotal ultrasound (to assess for abscess or torsion)",
+        "CBC (complete blood count) to check for leukocytosis"
+      ],
+      "specialistTests": [
+        "MRI of the scrotum (if torsion or malignancy is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by laboratory findings (positive cultures for pathogens, elevated white blood cell count).",
+      "differentials": [
+        "Testicular torsion",
+        "Trauma",
+        "Hernia",
+        "Tumor",
+        "Hydrocele",
+        "Varicocele"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (NSAIDs or acetaminophen)",
+          "Antibiotics (e.g., doxycycline or ciprofloxacin) based on culture results"
+        ],
+        "secondLine": [
+          "Consider referral to urology if no improvement or complications arise"
+        ],
+        "procedures": [
+          "Scrotal ultrasound to rule out torsion or abscess",
+          "Surgical intervention for abscess drainage if present"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued analgesia",
+          "Referral to urology for chronic pain management"
+        ],
+        "secondLine": [
+          "Consider surgical options if conservative management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for complications or recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Doxycycline",
+          "mechanism": "Inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit.",
+          "dosing": "100 mg orally twice daily for 10 days.",
+          "sideEffects": "Photosensitivity, gastrointestinal upset, esophageal irritation.",
+          "notes": "Avoid in children and pregnant women."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Inhibits bacterial DNA gyrase, preventing DNA replication.",
+          "dosing": "500 mg orally twice daily for 10 days.",
+          "sideEffects": "Tendonitis, gastrointestinal upset, CNS effects (dizziness, headache).",
+          "notes": "Caution in patients with a history of tendon disorders."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Scrotal ultrasound",
+          "description": "Ultrasound imaging to assess for abnormalities in the scrotum, including fluid collections, torsion, or tumors.",
+          "indications": "Persistent pain, suspicion of abscess or torsion.",
+          "risks": "Minimal; may cause discomfort during the procedure."
+        },
+        {
+          "name": "Abscess drainage",
+          "description": "Surgical procedure to drain a scrotal abscess if present.",
+          "indications": "Presence of a significant scrotal abscess causing pain or systemic symptoms.",
+          "risks": "Infection, bleeding, recurrence of abscess."
+        }
+      ]
+    },
+    "prognosis": "Most cases of epididymitis and orchitis respond well to treatment, with a good prognosis. Chronic pain may develop in some cases.",
+    "complications": [
+      "Abscess formation",
+      "Chronic pain",
+      "Infertility (rare)",
+      "Testicular atrophy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, initiate treatment, and refer to urology for complicated cases or lack of improvement.",
+    "escalation": "Refer to urology if there is no improvement within 48-72 hours, if there are signs of abscess, or if testicular torsion is suspected.",
+    "keySafetyConsiderations": "Ensure to rule out testicular torsion in any patient presenting with acute scrotal pain. Monitor for signs of systemic infection and complications."
+  }
+}

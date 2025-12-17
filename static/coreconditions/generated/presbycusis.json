@@ -1,0 +1,111 @@
+{
+  "id": "presbycusis",
+  "name": "Presbycusis",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:36:38.721454",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Presbycusis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPresbycusis is the gradual loss of hearing that occurs as people age, primarily affecting the ability to hear high-frequency sounds.\n\n### Epidemiology\nIt affects approximately one-third of adults aged 65-74 and nearly half of those over 75 years old, with a higher prevalence in men than women.\n\n### Essential Pathophysiology\nPresbycusis is caused by a combination of factors including age-related changes in the inner ear (cochlea), auditory nerve degeneration, and changes in the central auditory pathways. It often involves the loss of hair cells in the cochlea, particularly those responsible for high-frequency sound perception.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Difficulty hearing high-pitched sounds (e.g., birds chirping, women's voices)\n- Struggling to follow conversations, especially in noisy environments\n- Muffled hearing\n- Tinnitus (ringing in the ears)\n\n### Key Signs\n- Audiometric testing shows a sloping high-frequency hearing loss\n- Difficulty with speech discrimination on testing\n\n### Atypical Presentations\n- Sudden onset of hearing loss in an elderly patient (consider other causes)\n- Hearing loss accompanied by vertigo (consider Meniere's disease)\n\n### Red Flags Requiring Immediate Action\n- Sudden hearing loss\n- Unilateral hearing loss\n- Associated neurological symptoms (e.g., dizziness, tinnitus, facial weakness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Audiometry (pure tone audiometry) to assess hearing thresholds\n\n### Second-line Investigations\n- Tympanometry to assess middle ear function\n- Speech discrimination tests\n\n### Specialist Tests\n- MRI of the brain and internal auditory canal if there are red flags or atypical presentations\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on audiometric findings showing a symmetrical, sloping high-frequency hearing loss in the context of an elderly patient.\n\n### Key Differential Diagnoses to Exclude\n- Acute otitis media\n- Chronic otitis media\n- Otosclerosis\n- Meniere's disease\n- Acoustic neuroma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and education about the condition\n- Referral to audiology for hearing aids if appropriate\n\n#### Second-line Treatments\n- Consideration of assistive listening devices\n\n#### Emergency Procedures\n- None specific for presbycusis, but surgical options may be considered for other causes of hearing loss\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hearing aids to improve communication and quality of life\n\n#### Second-line Treatments\n- Cochlear implants in selected patients with severe to profound hearing loss\n\n#### Monitoring Requirements\n- Regular audiometric assessments to monitor progression of hearing loss\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### None specific for presbycusis\n- **Mechanism of Action**: N/A\n- **Typical Dosing Range**: N/A\n- **Key Side Effects/Contraindications**: N/A\n- **When to Use vs. Alternatives**: Management primarily involves non-pharmacological interventions such as hearing aids.\n\n### Procedures\n\n#### Hearing aid fitting\n- **What it Involves**: A process where a hearing aid is selected, fitted, and adjusted to the patient's hearing loss profile.\n- **Indications**: Moderate to severe presbycusis where hearing aids can improve communication.\n- **Key Risks/Complications**: Discomfort, feedback noise, and potential for skin irritation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPresbycusis is a progressive condition; while it cannot be reversed, appropriate management with hearing aids can significantly improve quality of life.\n\n### Important Complications to Watch For\n- Social isolation due to communication difficulties\n- Increased risk of cognitive decline and depression\n- Potential for falls due to impaired auditory cues\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of presbycusis, perform basic audiometric tests, and refer patients for audiology assessment and management.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT or audiology if there are red flags, atypical presentations, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nEnsure that patients understand the importance of follow-up appointments and regular hearing assessments. Be aware of the psychosocial impact of hearing loss and provide appropriate support.\n",
+  "content": {
+    "overview": {
+      "definition": "Presbycusis is the gradual loss of hearing that occurs as people age, primarily affecting the ability to hear high-frequency sounds.",
+      "epidemiology": "It affects approximately one-third of adults aged 65-74 and nearly half of those over 75 years old, with a higher prevalence in men than women.",
+      "pathophysiology": "Presbycusis is caused by a combination of factors including age-related changes in the inner ear (cochlea), auditory nerve degeneration, and changes in the central auditory pathways. It often involves the loss of hair cells in the cochlea, particularly those responsible for high-frequency sound perception."
+    },
+    "recognition": {
+      "symptoms": [
+        "Difficulty hearing high-pitched sounds (e.g., birds chirping, women's voices)",
+        "Struggling to follow conversations, especially in noisy environments",
+        "Muffled hearing",
+        "Tinnitus (ringing in the ears)"
+      ],
+      "signs": [
+        "Audiometric testing shows a sloping high-frequency hearing loss",
+        "Difficulty with speech discrimination on testing"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of hearing loss in an elderly patient (consider other causes)",
+        "Hearing loss accompanied by vertigo (consider Meniere's disease)"
+      ],
+      "redFlags": [
+        "Sudden hearing loss",
+        "Unilateral hearing loss",
+        "Associated neurological symptoms (e.g., dizziness, tinnitus, facial weakness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Audiometry (pure tone audiometry) to assess hearing thresholds"
+      ],
+      "secondLine": [
+        "Tympanometry to assess middle ear function",
+        "Speech discrimination tests"
+      ],
+      "specialistTests": [
+        "MRI of the brain and internal auditory canal if there are red flags or atypical presentations"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on audiometric findings showing a symmetrical, sloping high-frequency hearing loss in the context of an elderly patient.",
+      "differentials": [
+        "Acute otitis media",
+        "Chronic otitis media",
+        "Otosclerosis",
+        "Meniere's disease",
+        "Acoustic neuroma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and education about the condition",
+          "Referral to audiology for hearing aids if appropriate"
+        ],
+        "secondLine": [
+          "Consideration of assistive listening devices"
+        ],
+        "procedures": [
+          "None specific for presbycusis, but surgical options may be considered for other causes of hearing loss"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hearing aids to improve communication and quality of life"
+        ],
+        "secondLine": [
+          "Cochlear implants in selected patients with severe to profound hearing loss"
+        ],
+        "monitoring": [
+          "Regular audiometric assessments to monitor progression of hearing loss"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "None specific for presbycusis",
+          "mechanism": "N/A",
+          "dosing": "N/A",
+          "sideEffects": "N/A",
+          "notes": "Management primarily involves non-pharmacological interventions such as hearing aids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Hearing aid fitting",
+          "description": "A process where a hearing aid is selected, fitted, and adjusted to the patient's hearing loss profile.",
+          "indications": "Moderate to severe presbycusis where hearing aids can improve communication.",
+          "risks": "Discomfort, feedback noise, and potential for skin irritation."
+        }
+      ]
+    },
+    "prognosis": "Presbycusis is a progressive condition; while it cannot be reversed, appropriate management with hearing aids can significantly improve quality of life.",
+    "complications": [
+      "Social isolation due to communication difficulties",
+      "Increased risk of cognitive decline and depression",
+      "Potential for falls due to impaired auditory cues"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of presbycusis, perform basic audiometric tests, and refer patients for audiology assessment and management.",
+    "escalation": "Refer to ENT or audiology if there are red flags, atypical presentations, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Ensure that patients understand the importance of follow-up appointments and regular hearing assessments. Be aware of the psychosocial impact of hearing loss and provide appropriate support."
+  }
+}

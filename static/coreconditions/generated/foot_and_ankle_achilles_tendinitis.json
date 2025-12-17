@@ -1,0 +1,130 @@
+{
+  "id": "foot_and_ankle_achilles_tendinitis",
+  "name": "Foot and ankle - Achilles? tendinitis",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:27:40.477826",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Foot and ankle - Achilles? tendinitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAchilles tendinitis is an overuse injury characterized by inflammation of the Achilles tendon, which connects the calf muscles to the heel bone. It typically presents as pain and stiffness along the tendon, particularly during physical activity.\n\n### Epidemiology\nAchilles tendinitis is common among athletes, particularly runners and those involved in sports that require repetitive stress on the tendon. It is more prevalent in middle-aged individuals and can affect both recreational and professional athletes.\n\n### Essential Pathophysiology\nThe condition arises from repetitive microtrauma to the tendon, leading to degeneration of the tendon fibers (tendinopathy) rather than inflammation. This degeneration can result in pain, swelling, and impaired function.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain along the back of the heel or in the tendon itself, especially during activity\n- Stiffness in the morning or after periods of inactivity\n- Swelling or thickening of the tendon\n- Tenderness when touching the tendon\n\n### Key Signs\n- Swelling over the Achilles tendon\n- Reduced range of motion in the ankle\n- Crepitus (a crackling sound) during movement\n- Positive Thompson test (absence of plantar flexion when calf is squeezed)\n\n### Atypical Presentations\n- Pain may be localized to the mid-portion of the tendon rather than the insertion at the heel\n- Symptoms may worsen with activity but improve with rest\n\n### Red Flags Requiring Immediate Action\n- Severe pain that does not improve with rest\n- Signs of infection (fever, redness, warmth, drainage)\n- Acute rupture (sudden severe pain, inability to bear weight, a 'pop' sound)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Ultrasound to assess tendon structure and rule out tears\n\n### Second-line Investigations\n- MRI if there is suspicion of a significant tear or if conservative management fails\n\n### Specialist Tests\n- Dynamic ultrasound to assess tendon function during movement\n- X-rays to rule out other pathologies (e.g., bone spurs)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination findings. Imaging may be used to confirm the diagnosis or rule out other conditions.\n\n### Key Differential Diagnoses to Exclude\n- Achilles tendon rupture\n- Retrocalcaneal bursitis\n- Calcaneal stress fracture\n- Sever's disease (in adolescents)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce swelling\n- Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on stretching and strengthening exercises\n- Orthotic devices or heel lifts to reduce strain on the tendon\n\n#### Emergency Procedures\n- Corticosteroid injection (with caution due to risk of tendon rupture)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy with a focus on eccentric strengthening exercises\n- Gradual return to activity with proper warm-up and stretching\n\n#### Second-line Treatments\n- Extracorporeal shockwave therapy (ESWT) for persistent symptoms\n- Surgical options if conservative management fails\n\n#### Monitoring Requirements\n- Regular follow-up to assess progress and adjust treatment as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Naproxen\n- **Mechanism of Action**: NSAID that reduces inflammation and pain\n- **Typical Dosing Range**: 250-500 mg twice daily\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, headache, dizziness\n- **When to Use vs. Alternatives**: Longer half-life than ibuprofen, may be preferred for chronic pain.\n\n### Procedures\n\n#### Corticosteroid injection\n- **What it Involves**: Injection of corticosteroid into the tendon sheath to reduce inflammation\n- **Indications**: Severe pain not responsive to conservative management\n- **Key Risks/Complications**: Potential for tendon rupture, infection, and atrophy of surrounding tissues.\n\n#### Surgical debridement\n- **What it Involves**: Surgical removal of degenerated tendon tissue\n- **Indications**: Persistent symptoms despite conservative treatment for 6-12 months\n- **Key Risks/Complications**: Infection, nerve damage, prolonged recovery time.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients experience significant improvement in symptoms. Chronic cases may take longer to resolve and may require surgical intervention.\n\n### Important Complications to Watch For\n- Tendon rupture (especially with inappropriate steroid use)\n- Chronic pain and functional impairment\n- Recurrence of symptoms if activity is resumed too quickly\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also monitor for red flags and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nRefer to an orthopaedic specialist if there is suspicion of a rupture, failure of conservative management, or if red flags are present.\n\n### Key Safety Considerations\nEducate patients on the importance of gradual return to activity, proper footwear, and the risks associated with corticosteroid injections. Monitor for signs of infection post-injection.\n",
+  "content": {
+    "overview": {
+      "definition": "Achilles tendinitis is an overuse injury characterized by inflammation of the Achilles tendon, which connects the calf muscles to the heel bone. It typically presents as pain and stiffness along the tendon, particularly during physical activity.",
+      "epidemiology": "Achilles tendinitis is common among athletes, particularly runners and those involved in sports that require repetitive stress on the tendon. It is more prevalent in middle-aged individuals and can affect both recreational and professional athletes.",
+      "pathophysiology": "The condition arises from repetitive microtrauma to the tendon, leading to degeneration of the tendon fibers (tendinopathy) rather than inflammation. This degeneration can result in pain, swelling, and impaired function."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain along the back of the heel or in the tendon itself, especially during activity",
+        "Stiffness in the morning or after periods of inactivity",
+        "Swelling or thickening of the tendon",
+        "Tenderness when touching the tendon"
+      ],
+      "signs": [
+        "Swelling over the Achilles tendon",
+        "Reduced range of motion in the ankle",
+        "Crepitus (a crackling sound) during movement",
+        "Positive Thompson test (absence of plantar flexion when calf is squeezed)"
+      ],
+      "atypicalPresentations": [
+        "Pain may be localized to the mid-portion of the tendon rather than the insertion at the heel",
+        "Symptoms may worsen with activity but improve with rest"
+      ],
+      "redFlags": [
+        "Severe pain that does not improve with rest",
+        "Signs of infection (fever, redness, warmth, drainage)",
+        "Acute rupture (sudden severe pain, inability to bear weight, a 'pop' sound)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Ultrasound to assess tendon structure and rule out tears"
+      ],
+      "secondLine": [
+        "MRI if there is suspicion of a significant tear or if conservative management fails"
+      ],
+      "specialistTests": [
+        "Dynamic ultrasound to assess tendon function during movement",
+        "X-rays to rule out other pathologies (e.g., bone spurs)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination findings. Imaging may be used to confirm the diagnosis or rule out other conditions.",
+      "differentials": [
+        "Achilles tendon rupture",
+        "Retrocalcaneal bursitis",
+        "Calcaneal stress fracture",
+        "Sever's disease (in adolescents)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce swelling",
+          "Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on stretching and strengthening exercises",
+          "Orthotic devices or heel lifts to reduce strain on the tendon"
+        ],
+        "procedures": [
+          "Corticosteroid injection (with caution due to risk of tendon rupture)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy with a focus on eccentric strengthening exercises",
+          "Gradual return to activity with proper warm-up and stretching"
+        ],
+        "secondLine": [
+          "Extracorporeal shockwave therapy (ESWT) for persistent symptoms",
+          "Surgical options if conservative management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess progress and adjust treatment as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID that reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Naproxen",
+          "mechanism": "NSAID that reduces inflammation and pain",
+          "dosing": "250-500 mg twice daily",
+          "sideEffects": "Gastrointestinal upset, headache, dizziness",
+          "notes": "Longer half-life than ibuprofen, may be preferred for chronic pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Corticosteroid injection",
+          "description": "Injection of corticosteroid into the tendon sheath to reduce inflammation",
+          "indications": "Severe pain not responsive to conservative management",
+          "risks": "Potential for tendon rupture, infection, and atrophy of surrounding tissues."
+        },
+        {
+          "name": "Surgical debridement",
+          "description": "Surgical removal of degenerated tendon tissue",
+          "indications": "Persistent symptoms despite conservative treatment for 6-12 months",
+          "risks": "Infection, nerve damage, prolonged recovery time."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients experience significant improvement in symptoms. Chronic cases may take longer to resolve and may require surgical intervention.",
+    "complications": [
+      "Tendon rupture (especially with inappropriate steroid use)",
+      "Chronic pain and functional impairment",
+      "Recurrence of symptoms if activity is resumed too quickly"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also monitor for red flags and escalate care as needed.",
+    "escalation": "Refer to an orthopaedic specialist if there is suspicion of a rupture, failure of conservative management, or if red flags are present.",
+    "keySafetyConsiderations": "Educate patients on the importance of gradual return to activity, proper footwear, and the risks associated with corticosteroid injections. Monitor for signs of infection post-injection."
+  }
+}

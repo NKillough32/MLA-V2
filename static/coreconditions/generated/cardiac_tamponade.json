@@ -1,0 +1,133 @@
+{
+  "id": "cardiac_tamponade",
+  "name": "Cardiac tamponade",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:11:41.858625",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cardiac tamponade: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCardiac tamponade is a clinical syndrome characterized by the accumulation of fluid in the pericardial space, leading to impaired cardiac filling and reduced cardiac output.\n\n### Epidemiology\nIt can occur in various settings, including malignancy, trauma, uremia, and post-surgical complications. The incidence is estimated to be 2-3% in patients with malignancies and is more common in patients with pericardial disease.\n\n### Essential Pathophysiology\nThe accumulation of fluid in the pericardial space increases intrapericardial pressure, which restricts the heart's ability to expand during diastole. This leads to decreased stroke volume and cardiac output, resulting in compensatory mechanisms such as tachycardia and peripheral vasoconstriction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea\n- Chest pain\n- Palpitations\n- Fatigue\n- Lightheadedness\n\n### Key Signs\n- Hypotension\n- Tachycardia\n- Muffled heart sounds\n- Jugular venous distension\n- Pulsus paradoxus (drop in blood pressure during inspiration)\n\n### Atypical Presentations\n- Abdominal pain (due to diaphragmatic irritation)\n- Confusion or altered mental status (in elderly patients)\n\n### Red Flags Requiring Immediate Action\n- Severe hypotension\n- Rapidly progressive dyspnea\n- Signs of shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- Echocardiography (transthoracic or transesophageal)\n\n### Second-line Investigations\n- CT chest\n- MRI of the heart\n\n### Specialist Tests\n- Pericardiocentesis (for fluid analysis)\n- Cardiac catheterization (if coronary artery disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and echocardiographic findings showing fluid accumulation and diastolic collapse of cardiac chambers.\n\n### Key Differential Diagnoses to Exclude\n- Congestive heart failure\n- Myocardial infarction\n- Pulmonary embolism\n- Aortic dissection\n- Pneumothorax\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Pericardiocentesis (to relieve pressure)\n\n#### Second-line Treatments\n- Surgical intervention (pericardial window or pericardiectomy) if recurrent or persistent tamponade\n\n#### Emergency Procedures\n- Pericardiocentesis: A procedure to remove fluid from the pericardial space using a needle and catheter. Indicated for symptomatic relief and diagnostic purposes. Risks include bleeding, infection, and cardiac puncture.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Observation and monitoring for asymptomatic cases\n- Surgical intervention for recurrent cases\n\n#### Second-line Treatments\n- Medications to manage underlying causes (e.g., chemotherapy for malignancy)\n\n#### Monitoring Requirements\n- Regular echocardiograms to assess fluid status and cardiac function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Diuretics\n- **Mechanism of Action**: Reduce fluid overload and improve symptoms of heart failure.\n- **Typical Dosing Range**: Furosemide 20-40 mg IV, titrate based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, renal dysfunction, hypotension.\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n#### Steroids\n- **Mechanism of Action**: Reduce inflammation in cases of pericarditis contributing to tamponade.\n- **Typical Dosing Range**: Prednisone 20-40 mg orally, taper based on clinical response.\n- **Key Side Effects/Contraindications**: Increased infection risk, hyperglycemia, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Consider in autoimmune or inflammatory causes.\n\n### Procedures\n\n#### Pericardiocentesis\n- **What it Involves**: Insertion of a needle into the pericardial space to remove excess fluid.\n- **Indications**: Symptomatic cardiac tamponade, diagnostic evaluation of pericardial effusion.\n- **Key Risks/Complications**: Bleeding, infection, cardiac puncture, arrhythmias.\n\n#### Pericardial window\n- **What it Involves**: Surgical procedure to create a permanent opening in the pericardium to allow continuous drainage of fluid.\n- **Indications**: Recurrent cardiac tamponade, persistent effusion despite pericardiocentesis.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of cardiac tamponade depends on the underlying cause and the timeliness of intervention. Early recognition and treatment can lead to favorable outcomes, while delayed treatment can result in significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Recurrent cardiac tamponade\n- Cardiac arrest\n- Shock\n- Organ failure due to prolonged hypoperfusion\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of cardiac tamponade, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely referral to senior clinicians or cardiology for further management.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with signs of cardiac tamponade, escalate care to a senior clinician immediately, especially if there are signs of shock or rapid deterioration.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially blood pressure and heart rate. Be vigilant for signs of deterioration and ensure rapid access to emergency interventions. Ensure informed consent is obtained prior to procedures like pericardiocentesis.\n",
+  "content": {
+    "overview": {
+      "definition": "Cardiac tamponade is a clinical syndrome characterized by the accumulation of fluid in the pericardial space, leading to impaired cardiac filling and reduced cardiac output.",
+      "epidemiology": "It can occur in various settings, including malignancy, trauma, uremia, and post-surgical complications. The incidence is estimated to be 2-3% in patients with malignancies and is more common in patients with pericardial disease.",
+      "pathophysiology": "The accumulation of fluid in the pericardial space increases intrapericardial pressure, which restricts the heart's ability to expand during diastole. This leads to decreased stroke volume and cardiac output, resulting in compensatory mechanisms such as tachycardia and peripheral vasoconstriction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea",
+        "Chest pain",
+        "Palpitations",
+        "Fatigue",
+        "Lightheadedness"
+      ],
+      "signs": [
+        "Hypotension",
+        "Tachycardia",
+        "Muffled heart sounds",
+        "Jugular venous distension",
+        "Pulsus paradoxus (drop in blood pressure during inspiration)"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain (due to diaphragmatic irritation)",
+        "Confusion or altered mental status (in elderly patients)"
+      ],
+      "redFlags": [
+        "Severe hypotension",
+        "Rapidly progressive dyspnea",
+        "Signs of shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "Echocardiography (transthoracic or transesophageal)"
+      ],
+      "secondLine": [
+        "CT chest",
+        "MRI of the heart"
+      ],
+      "specialistTests": [
+        "Pericardiocentesis (for fluid analysis)",
+        "Cardiac catheterization (if coronary artery disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and echocardiographic findings showing fluid accumulation and diastolic collapse of cardiac chambers.",
+      "differentials": [
+        "Congestive heart failure",
+        "Myocardial infarction",
+        "Pulmonary embolism",
+        "Aortic dissection",
+        "Pneumothorax"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Pericardiocentesis (to relieve pressure)"
+        ],
+        "secondLine": [
+          "Surgical intervention (pericardial window or pericardiectomy) if recurrent or persistent tamponade"
+        ],
+        "procedures": [
+          "Pericardiocentesis: A procedure to remove fluid from the pericardial space using a needle and catheter. Indicated for symptomatic relief and diagnostic purposes. Risks include bleeding, infection, and cardiac puncture."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Observation and monitoring for asymptomatic cases",
+          "Surgical intervention for recurrent cases"
+        ],
+        "secondLine": [
+          "Medications to manage underlying causes (e.g., chemotherapy for malignancy)"
+        ],
+        "monitoring": [
+          "Regular echocardiograms to assess fluid status and cardiac function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Diuretics",
+          "mechanism": "Reduce fluid overload and improve symptoms of heart failure.",
+          "dosing": "Furosemide 20-40 mg IV, titrate based on response.",
+          "sideEffects": "Electrolyte imbalances, renal dysfunction, hypotension.",
+          "notes": "Use cautiously in patients with renal impairment."
+        },
+        {
+          "name": "Steroids",
+          "mechanism": "Reduce inflammation in cases of pericarditis contributing to tamponade.",
+          "dosing": "Prednisone 20-40 mg orally, taper based on clinical response.",
+          "sideEffects": "Increased infection risk, hyperglycemia, gastrointestinal bleeding.",
+          "notes": "Consider in autoimmune or inflammatory causes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pericardiocentesis",
+          "description": "Insertion of a needle into the pericardial space to remove excess fluid.",
+          "indications": "Symptomatic cardiac tamponade, diagnostic evaluation of pericardial effusion.",
+          "risks": "Bleeding, infection, cardiac puncture, arrhythmias."
+        },
+        {
+          "name": "Pericardial window",
+          "description": "Surgical procedure to create a permanent opening in the pericardium to allow continuous drainage of fluid.",
+          "indications": "Recurrent cardiac tamponade, persistent effusion despite pericardiocentesis.",
+          "risks": "Infection, bleeding, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of cardiac tamponade depends on the underlying cause and the timeliness of intervention. Early recognition and treatment can lead to favorable outcomes, while delayed treatment can result in significant morbidity and mortality.",
+    "complications": [
+      "Recurrent cardiac tamponade",
+      "Cardiac arrest",
+      "Shock",
+      "Organ failure due to prolonged hypoperfusion"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of cardiac tamponade, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely referral to senior clinicians or cardiology for further management.",
+    "escalation": "If a patient presents with signs of cardiac tamponade, escalate care to a senior clinician immediately, especially if there are signs of shock or rapid deterioration.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially blood pressure and heart rate. Be vigilant for signs of deterioration and ensure rapid access to emergency interventions. Ensure informed consent is obtained prior to procedures like pericardiocentesis."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "diabetes_insipidus",
+  "name": "Diabetes insipidus",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:35:02.831568",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetes insipidus: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetes insipidus (DI) is a disorder characterized by the inability of the kidneys to concentrate urine, leading to excessive urination (polyuria) and increased thirst (polydipsia).\n\n### Epidemiology\nDI is relatively rare, with an estimated prevalence of 1 in 25,000 individuals. It can occur in both adults and children, with central DI being more common than nephrogenic DI.\n\n### Essential Pathophysiology\nDI can be classified into two main types: central diabetes insipidus, which is due to insufficient production of antidiuretic hormone (ADH) from the posterior pituitary gland, and nephrogenic diabetes insipidus, which occurs when the kidneys are unable to respond to ADH. Causes of central DI include head trauma, tumors, and genetic disorders, while nephrogenic DI can be caused by genetic mutations, chronic kidney disease, or certain medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Excessive thirst (polydipsia)\n- Excessive urination (polyuria)\n- Nocturia\n- Dehydration symptoms (dry mouth, fatigue)\n\n### Key Signs\n- Dilute urine with low specific gravity (<1.005)\n- Signs of dehydration (dry mucous membranes, decreased skin turgor)\n- Weight loss\n\n### Atypical Presentations\n- Infants may present with irritability and poor feeding due to dehydration.\n- Elderly patients may present with confusion or altered mental status.\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- Electrolyte imbalances (hypernatremia)\n- Acute kidney injury\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urine osmolality test\n- Serum osmolality test\n- Fluid deprivation test\n\n### Second-line Investigations\n- Desmopressin stimulation test\n- MRI of the pituitary gland\n\n### Specialist Tests\n- Genetic testing for hereditary forms of DI\n- Electrolyte panel to assess for hypernatremia\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of diabetes insipidus is confirmed by demonstrating a significant increase in urine osmolality after administration of desmopressin in central DI, while nephrogenic DI will show no significant change.\n\n### Key Differential Diagnoses to Exclude\n- Diabetes mellitus\n- Psychogenic polydipsia\n- Chronic kidney disease\n- Hypercalcemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids (isotonic saline)\n- Desmopressin (if central DI is suspected)\n\n#### Second-line Treatments\n- Electrolyte replacement (if hypernatremic)\n\n#### Emergency Procedures\n- None specific for acute management, but monitoring of fluid status is critical.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Desmopressin (DDAVP) for central DI\n- Hydrochlorothiazide for nephrogenic DI\n\n#### Second-line Treatments\n- Amiloride for nephrogenic DI (if thiazide is ineffective)\n\n#### Monitoring Requirements\n- Regular monitoring of serum electrolytes and osmolality, especially sodium levels.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Desmopressin\n- **Mechanism of Action**: Synthetic analog of vasopressin (ADH) that increases water reabsorption in the kidneys.\n- **Typical Dosing Range**: 0.1 to 0.4 mg orally or intranasally, 1-2 times daily depending on response.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal cramps, hyponatremia.\n- **When to Use vs. Alternatives**: Monitor for signs of water retention and hyponatremia.\n\n#### Hydrochlorothiazide\n- **Mechanism of Action**: Thiazide diuretic that paradoxically reduces urine output in nephrogenic DI.\n- **Typical Dosing Range**: 25-50 mg orally once daily.\n- **Key Side Effects/Contraindications**: Hypokalemia, dehydration, hyperuricemia.\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly.\n\n#### Amiloride\n- **Mechanism of Action**: Potassium-sparing diuretic that can be used in nephrogenic DI.\n- **Typical Dosing Range**: 5-20 mg orally once daily.\n- **Key Side Effects/Contraindications**: Hyperkalemia, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Monitor potassium levels.\n\n### Procedures\n\n#### Fluid deprivation test\n- **What it Involves**: A test to assess the kidneys' ability to concentrate urine when deprived of fluids.\n- **Indications**: To differentiate between central and nephrogenic DI.\n- **Key Risks/Complications**: Risk of dehydration and electrolyte imbalances; should be performed under supervision.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for patients with diabetes insipidus is generally good with appropriate management. Central DI often requires lifelong treatment, while nephrogenic DI may improve with management of underlying causes.\n\n### Important Complications to Watch For\n- Severe dehydration\n- Hypernatremia\n- Electrolyte imbalances\n- Kidney damage due to chronic dehydration\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of diabetes insipidus, initiate appropriate investigations, and manage acute cases. They should also be aware of the need for patient education regarding fluid intake and monitoring for complications.\n\n### When to Escalate to Senior/Specialist\nPatients with severe dehydration, altered mental status, or significant electrolyte imbalances should be escalated to senior medical staff or specialists immediately.\n\n### Key Safety Considerations\nMonitor fluid intake and output closely, especially in acute settings. Be vigilant for signs of dehydration and electrolyte imbalances, particularly hypernatremia.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetes insipidus (DI) is a disorder characterized by the inability of the kidneys to concentrate urine, leading to excessive urination (polyuria) and increased thirst (polydipsia).",
+      "epidemiology": "DI is relatively rare, with an estimated prevalence of 1 in 25,000 individuals. It can occur in both adults and children, with central DI being more common than nephrogenic DI.",
+      "pathophysiology": "DI can be classified into two main types: central diabetes insipidus, which is due to insufficient production of antidiuretic hormone (ADH) from the posterior pituitary gland, and nephrogenic diabetes insipidus, which occurs when the kidneys are unable to respond to ADH. Causes of central DI include head trauma, tumors, and genetic disorders, while nephrogenic DI can be caused by genetic mutations, chronic kidney disease, or certain medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Excessive thirst (polydipsia)",
+        "Excessive urination (polyuria)",
+        "Nocturia",
+        "Dehydration symptoms (dry mouth, fatigue)"
+      ],
+      "signs": [
+        "Dilute urine with low specific gravity (<1.005)",
+        "Signs of dehydration (dry mucous membranes, decreased skin turgor)",
+        "Weight loss"
+      ],
+      "atypicalPresentations": [
+        "Infants may present with irritability and poor feeding due to dehydration.",
+        "Elderly patients may present with confusion or altered mental status."
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "Electrolyte imbalances (hypernatremia)",
+        "Acute kidney injury"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urine osmolality test",
+        "Serum osmolality test",
+        "Fluid deprivation test"
+      ],
+      "secondLine": [
+        "Desmopressin stimulation test",
+        "MRI of the pituitary gland"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary forms of DI",
+        "Electrolyte panel to assess for hypernatremia"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of diabetes insipidus is confirmed by demonstrating a significant increase in urine osmolality after administration of desmopressin in central DI, while nephrogenic DI will show no significant change.",
+      "differentials": [
+        "Diabetes mellitus",
+        "Psychogenic polydipsia",
+        "Chronic kidney disease",
+        "Hypercalcemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids (isotonic saline)",
+          "Desmopressin (if central DI is suspected)"
+        ],
+        "secondLine": [
+          "Electrolyte replacement (if hypernatremic)"
+        ],
+        "procedures": [
+          "None specific for acute management, but monitoring of fluid status is critical."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Desmopressin (DDAVP) for central DI",
+          "Hydrochlorothiazide for nephrogenic DI"
+        ],
+        "secondLine": [
+          "Amiloride for nephrogenic DI (if thiazide is ineffective)"
+        ],
+        "monitoring": [
+          "Regular monitoring of serum electrolytes and osmolality, especially sodium levels."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Desmopressin",
+          "mechanism": "Synthetic analog of vasopressin (ADH) that increases water reabsorption in the kidneys.",
+          "dosing": "0.1 to 0.4 mg orally or intranasally, 1-2 times daily depending on response.",
+          "sideEffects": "Headache, nausea, abdominal cramps, hyponatremia.",
+          "notes": "Monitor for signs of water retention and hyponatremia."
+        },
+        {
+          "name": "Hydrochlorothiazide",
+          "mechanism": "Thiazide diuretic that paradoxically reduces urine output in nephrogenic DI.",
+          "dosing": "25-50 mg orally once daily.",
+          "sideEffects": "Hypokalemia, dehydration, hyperuricemia.",
+          "notes": "Monitor electrolytes regularly."
+        },
+        {
+          "name": "Amiloride",
+          "mechanism": "Potassium-sparing diuretic that can be used in nephrogenic DI.",
+          "dosing": "5-20 mg orally once daily.",
+          "sideEffects": "Hyperkalemia, gastrointestinal upset.",
+          "notes": "Monitor potassium levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fluid deprivation test",
+          "description": "A test to assess the kidneys' ability to concentrate urine when deprived of fluids.",
+          "indications": "To differentiate between central and nephrogenic DI.",
+          "risks": "Risk of dehydration and electrolyte imbalances; should be performed under supervision."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for patients with diabetes insipidus is generally good with appropriate management. Central DI often requires lifelong treatment, while nephrogenic DI may improve with management of underlying causes.",
+    "complications": [
+      "Severe dehydration",
+      "Hypernatremia",
+      "Electrolyte imbalances",
+      "Kidney damage due to chronic dehydration"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of diabetes insipidus, initiate appropriate investigations, and manage acute cases. They should also be aware of the need for patient education regarding fluid intake and monitoring for complications.",
+    "escalation": "Patients with severe dehydration, altered mental status, or significant electrolyte imbalances should be escalated to senior medical staff or specialists immediately.",
+    "keySafetyConsiderations": "Monitor fluid intake and output closely, especially in acute settings. Be vigilant for signs of dehydration and electrolyte imbalances, particularly hypernatremia."
+  }
+}

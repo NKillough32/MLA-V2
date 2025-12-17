@@ -1,0 +1,132 @@
+{
+  "id": "meniscus_tears",
+  "name": "Meniscus tears",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:25:50.743559",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Meniscus tears: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA meniscus tear is a common knee injury involving a tear in the cartilage (meniscus) that cushions the knee joint, often resulting from trauma or degeneration.\n\n### Epidemiology\nMeniscus tears are prevalent in athletes and active individuals, particularly those aged 20-40. They account for approximately 60% of all knee injuries, with a higher incidence in sports involving twisting motions.\n\n### Essential Pathophysiology\nThe meniscus serves to absorb shock and stabilize the knee joint. Tears can occur due to acute trauma (e.g., twisting injury) or chronic degeneration (e.g., wear and tear). Tears can be classified as horizontal, vertical, complex, or bucket handle, affecting the stability and function of the knee.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Knee pain, especially along the joint line\n- Swelling and stiffness\n- Locking or catching sensation in the knee\n- Difficulty bending or straightening the knee\n- Instability or giving way of the knee\n\n### Key Signs\n- Joint line tenderness\n- Swelling of the knee\n- Positive McMurray's test (pain or clicking during knee flexion and rotation)\n- Positive Apley's compression test (pain during compression with rotation)\n- Limited range of motion\n\n### Atypical Presentations\n- Chronic knee pain without a clear history of trauma\n- Gradual onset of symptoms in older patients due to degenerative changes\n\n### Red Flags Requiring Immediate Action\n- Inability to bear weight on the affected leg\n- Severe swelling or deformity of the knee\n- Signs of infection (fever, redness, warmth)\n- History of significant trauma with associated vascular or neurological symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray (to rule out fractures)\n- MRI (to assess the meniscus and other knee structures)\n\n### Second-line Investigations\n- Ultrasound (to evaluate soft tissue injuries)\n\n### Specialist Tests\n- Arthroscopy (for direct visualization and potential treatment)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination findings, and imaging results, particularly MRI.\n\n### Key Differential Diagnoses to Exclude\n- Ligament injuries (ACL, PCL)\n- Patellar tendinopathy\n- Osteoarthritis\n- Bursitis\n- Fractures (patella, tibia)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- RICE (Rest, Ice, Compression, Elevation)\n- NSAIDs for pain management\n\n#### Second-line Treatments\n- Physical therapy for rehabilitation\n\n#### Emergency Procedures\n- Arthroscopic meniscectomy (removal of torn meniscus)\n- Meniscus repair (if tear is repairable)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy focusing on strengthening and stability exercises\n- Activity modification\n\n#### Second-line Treatments\n- Intra-articular corticosteroid injections for inflammation\n\n#### Monitoring Requirements\n- Regular follow-up to assess knee function and symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Consider renal function and gastrointestinal history before prescribing.\n\n#### Corticosteroids (e.g., Triamcinolone)\n- **Mechanism of Action**: Anti-inflammatory effects reduce swelling and pain.\n- **Typical Dosing Range**: 10-40 mg intra-articularly, depending on severity.\n- **Key Side Effects/Contraindications**: Infection risk, joint damage with repeated use.\n- **When to Use vs. Alternatives**: Use sparingly and monitor for complications.\n\n### Procedures\n\n#### Arthroscopic Meniscectomy\n- **What it Involves**: Minimally invasive surgery to remove the damaged part of the meniscus.\n- **Indications**: Significant pain and functional impairment with a confirmed meniscus tear.\n- **Key Risks/Complications**: Infection, bleeding, stiffness, and potential for further knee degeneration.\n\n#### Meniscus Repair\n- **What it Involves**: Surgical procedure to stitch the torn meniscus back together.\n- **Indications**: Tears in the vascular zone of the meniscus that are repairable.\n- **Key Risks/Complications**: Infection, failure of the repair, prolonged recovery time.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for meniscus tears varies; acute tears may heal well with appropriate management, while chronic tears may lead to ongoing knee problems and increased risk of osteoarthritis.\n\n### Important Complications to Watch For\n- Chronic knee pain\n- Joint instability\n- Development of osteoarthritis\n- Recurrent meniscus tears or further knee injuries\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide conservative management, and refer to orthopaedics for surgical evaluation when indicated. They should also educate patients on rehabilitation and activity modification.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics if there are red flags, significant functional impairment, or if conservative management fails after 6-8 weeks.\n\n### Key Safety Considerations\nMonitor for signs of infection post-injection or surgery, ensure appropriate follow-up for patients with significant knee injuries, and educate patients on activity restrictions to prevent further injury.\n",
+  "content": {
+    "overview": {
+      "definition": "A meniscus tear is a common knee injury involving a tear in the cartilage (meniscus) that cushions the knee joint, often resulting from trauma or degeneration.",
+      "epidemiology": "Meniscus tears are prevalent in athletes and active individuals, particularly those aged 20-40. They account for approximately 60% of all knee injuries, with a higher incidence in sports involving twisting motions.",
+      "pathophysiology": "The meniscus serves to absorb shock and stabilize the knee joint. Tears can occur due to acute trauma (e.g., twisting injury) or chronic degeneration (e.g., wear and tear). Tears can be classified as horizontal, vertical, complex, or bucket handle, affecting the stability and function of the knee."
+    },
+    "recognition": {
+      "symptoms": [
+        "Knee pain, especially along the joint line",
+        "Swelling and stiffness",
+        "Locking or catching sensation in the knee",
+        "Difficulty bending or straightening the knee",
+        "Instability or giving way of the knee"
+      ],
+      "signs": [
+        "Joint line tenderness",
+        "Swelling of the knee",
+        "Positive McMurray's test (pain or clicking during knee flexion and rotation)",
+        "Positive Apley's compression test (pain during compression with rotation)",
+        "Limited range of motion"
+      ],
+      "atypicalPresentations": [
+        "Chronic knee pain without a clear history of trauma",
+        "Gradual onset of symptoms in older patients due to degenerative changes"
+      ],
+      "redFlags": [
+        "Inability to bear weight on the affected leg",
+        "Severe swelling or deformity of the knee",
+        "Signs of infection (fever, redness, warmth)",
+        "History of significant trauma with associated vascular or neurological symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray (to rule out fractures)",
+        "MRI (to assess the meniscus and other knee structures)"
+      ],
+      "secondLine": [
+        "Ultrasound (to evaluate soft tissue injuries)"
+      ],
+      "specialistTests": [
+        "Arthroscopy (for direct visualization and potential treatment)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination findings, and imaging results, particularly MRI.",
+      "differentials": [
+        "Ligament injuries (ACL, PCL)",
+        "Patellar tendinopathy",
+        "Osteoarthritis",
+        "Bursitis",
+        "Fractures (patella, tibia)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "RICE (Rest, Ice, Compression, Elevation)",
+          "NSAIDs for pain management"
+        ],
+        "secondLine": [
+          "Physical therapy for rehabilitation"
+        ],
+        "procedures": [
+          "Arthroscopic meniscectomy (removal of torn meniscus)",
+          "Meniscus repair (if tear is repairable)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy focusing on strengthening and stability exercises",
+          "Activity modification"
+        ],
+        "secondLine": [
+          "Intra-articular corticosteroid injections for inflammation"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess knee function and symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Consider renal function and gastrointestinal history before prescribing."
+        },
+        {
+          "name": "Corticosteroids (e.g., Triamcinolone)",
+          "mechanism": "Anti-inflammatory effects reduce swelling and pain.",
+          "dosing": "10-40 mg intra-articularly, depending on severity.",
+          "sideEffects": "Infection risk, joint damage with repeated use.",
+          "notes": "Use sparingly and monitor for complications."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Arthroscopic Meniscectomy",
+          "description": "Minimally invasive surgery to remove the damaged part of the meniscus.",
+          "indications": "Significant pain and functional impairment with a confirmed meniscus tear.",
+          "risks": "Infection, bleeding, stiffness, and potential for further knee degeneration."
+        },
+        {
+          "name": "Meniscus Repair",
+          "description": "Surgical procedure to stitch the torn meniscus back together.",
+          "indications": "Tears in the vascular zone of the meniscus that are repairable.",
+          "risks": "Infection, failure of the repair, prolonged recovery time."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for meniscus tears varies; acute tears may heal well with appropriate management, while chronic tears may lead to ongoing knee problems and increased risk of osteoarthritis.",
+    "complications": [
+      "Chronic knee pain",
+      "Joint instability",
+      "Development of osteoarthritis",
+      "Recurrent meniscus tears or further knee injuries"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide conservative management, and refer to orthopaedics for surgical evaluation when indicated. They should also educate patients on rehabilitation and activity modification.",
+    "escalation": "Refer to orthopaedics if there are red flags, significant functional impairment, or if conservative management fails after 6-8 weeks.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-injection or surgery, ensure appropriate follow-up for patients with significant knee injuries, and educate patients on activity restrictions to prevent further injury."
+  }
+}

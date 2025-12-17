@@ -1,0 +1,142 @@
+{
+  "id": "osteoarthritis",
+  "name": "Osteoarthritis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:35:19.941778",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Osteoarthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOsteoarthritis (OA) is a degenerative joint disease characterized by the breakdown of cartilage, leading to pain, stiffness, and functional impairment in affected joints.\n\n### Epidemiology\nOA is the most common form of arthritis, affecting approximately 10% of men and 18% of women over the age of 60. It is a leading cause of disability worldwide.\n\n### Essential Pathophysiology\nOA involves a complex interplay of mechanical, biological, and biochemical factors leading to cartilage degradation, subchondral bone changes, and synovial inflammation. Risk factors include age, obesity, joint injury, and genetic predisposition.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Joint pain that worsens with activity and improves with rest\n- Stiffness, particularly in the morning or after prolonged inactivity\n- Swelling around the joint\n- Decreased range of motion\n- Crepitus (grating sensation) during joint movement\n\n### Key Signs\n- Joint tenderness on palpation\n- Bony enlargement of joints\n- Limited range of motion\n- Joint effusion (swelling)\n- Deformities in advanced cases\n\n### Atypical Presentations\n- Osteoarthritis in younger patients due to previous joint injuries or congenital conditions\n- Osteoarthritis affecting multiple joints (polyosteoarthritis)\n- Acute exacerbations mimicking inflammatory arthritis\n\n### Red Flags Requiring Immediate Action\n- Severe joint pain at rest or night\n- Systemic symptoms (fever, weight loss, fatigue)\n- Rapid onset of joint swelling\n- Signs of infection (erythema, warmth, fever)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the affected joint to assess for joint space narrowing, osteophytes, and subchondral sclerosis\n- Clinical assessment including history and physical examination\n\n### Second-line Investigations\n- MRI if there is suspicion of other joint pathology (e.g., meniscal tears)\n- Ultrasound for assessing joint effusion and soft tissue structures\n\n### Specialist Tests\n- Joint aspiration and analysis if there is significant effusion to rule out inflammatory arthritis or infection\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms and physical examination findings, supported by imaging studies. The American College of Rheumatology (ACR) criteria for knee OA include: age > 50 years, morning stiffness < 30 minutes, crepitus on motion, bony tenderness, bony enlargement, and no palpable warmth.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Gout\n- Pseudogout\n- Septic arthritis\n- Ankylosing spondylitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesics (e.g., paracetamol)\n- Non-steroidal anti-inflammatory drugs (NSAIDs)\n\n#### Second-line Treatments\n- Intra-articular corticosteroid injections for symptomatic relief\n\n#### Emergency Procedures\n- Joint aspiration for diagnostic and therapeutic purposes, especially in cases of effusion.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Weight management and physical therapy to improve function and reduce pain\n- Regular low-impact exercise (e.g., swimming, cycling)\n\n#### Second-line Treatments\n- Topical NSAIDs for localized pain relief\n- Oral NSAIDs for more widespread symptoms\n\n#### Monitoring Requirements\n- Regular follow-up to assess pain control and functional status, and to adjust management as necessary.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic; works centrally to inhibit prostaglandin synthesis.\n- **Typical Dosing Range**: 1g every 6 hours as needed, maximum 4g/day.\n- **Key Side Effects/Contraindications**: Generally well-tolerated; overdose can lead to hepatotoxicity.\n- **When to Use vs. Alternatives**: First-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600mg every 6-8 hours as needed, maximum 2400mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased cardiovascular risk.\n- **When to Use vs. Alternatives**: Consider gastroprotection in long-term use.\n\n#### Diclofenac\n- **Mechanism of Action**: NSAID; similar to ibuprofen but may have a higher risk of cardiovascular events.\n- **Typical Dosing Range**: 50mg two to three times daily, maximum 150mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal side effects, cardiovascular risks.\n- **When to Use vs. Alternatives**: Topical formulations available for localized pain.\n\n#### Corticosteroids (e.g., Triamcinolone)\n- **Mechanism of Action**: Anti-inflammatory; reduces inflammation and pain in the joint.\n- **Typical Dosing Range**: Intra-articular injection, typically 10-40mg depending on the joint.\n- **Key Side Effects/Contraindications**: Local pain, infection risk, potential for joint damage with repeated injections.\n- **When to Use vs. Alternatives**: Used for acute exacerbations.\n\n### Procedures\n\n#### Joint Aspiration\n- **What it Involves**: A procedure to remove excess synovial fluid from a joint using a needle and syringe.\n- **Indications**: Significant joint effusion, diagnostic purposes, or therapeutic relief of pain.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site, and potential for joint damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nOsteoarthritis is a chronic condition that can lead to progressive joint damage and disability. Early intervention and lifestyle modifications can improve outcomes and quality of life.\n\n### Important Complications to Watch For\n- Chronic pain\n- Functional impairment\n- Increased risk of falls due to joint instability\n- Psychosocial effects such as depression and anxiety due to chronic pain.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate conservative management, and refer to rheumatology for patients with atypical presentations or those not responding to initial treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are red flags, lack of response to treatment, or if the diagnosis is uncertain.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially NSAIDs and corticosteroids. Ensure appropriate use of analgesics and consider the patient's overall health status, including renal function and cardiovascular risk.\n",
+  "content": {
+    "overview": {
+      "definition": "Osteoarthritis (OA) is a degenerative joint disease characterized by the breakdown of cartilage, leading to pain, stiffness, and functional impairment in affected joints.",
+      "epidemiology": "OA is the most common form of arthritis, affecting approximately 10% of men and 18% of women over the age of 60. It is a leading cause of disability worldwide.",
+      "pathophysiology": "OA involves a complex interplay of mechanical, biological, and biochemical factors leading to cartilage degradation, subchondral bone changes, and synovial inflammation. Risk factors include age, obesity, joint injury, and genetic predisposition."
+    },
+    "recognition": {
+      "symptoms": [
+        "Joint pain that worsens with activity and improves with rest",
+        "Stiffness, particularly in the morning or after prolonged inactivity",
+        "Swelling around the joint",
+        "Decreased range of motion",
+        "Crepitus (grating sensation) during joint movement"
+      ],
+      "signs": [
+        "Joint tenderness on palpation",
+        "Bony enlargement of joints",
+        "Limited range of motion",
+        "Joint effusion (swelling)",
+        "Deformities in advanced cases"
+      ],
+      "atypicalPresentations": [
+        "Osteoarthritis in younger patients due to previous joint injuries or congenital conditions",
+        "Osteoarthritis affecting multiple joints (polyosteoarthritis)",
+        "Acute exacerbations mimicking inflammatory arthritis"
+      ],
+      "redFlags": [
+        "Severe joint pain at rest or night",
+        "Systemic symptoms (fever, weight loss, fatigue)",
+        "Rapid onset of joint swelling",
+        "Signs of infection (erythema, warmth, fever)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the affected joint to assess for joint space narrowing, osteophytes, and subchondral sclerosis",
+        "Clinical assessment including history and physical examination"
+      ],
+      "secondLine": [
+        "MRI if there is suspicion of other joint pathology (e.g., meniscal tears)",
+        "Ultrasound for assessing joint effusion and soft tissue structures"
+      ],
+      "specialistTests": [
+        "Joint aspiration and analysis if there is significant effusion to rule out inflammatory arthritis or infection"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms and physical examination findings, supported by imaging studies. The American College of Rheumatology (ACR) criteria for knee OA include: age > 50 years, morning stiffness < 30 minutes, crepitus on motion, bony tenderness, bony enlargement, and no palpable warmth.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Gout",
+        "Pseudogout",
+        "Septic arthritis",
+        "Ankylosing spondylitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesics (e.g., paracetamol)",
+          "Non-steroidal anti-inflammatory drugs (NSAIDs)"
+        ],
+        "secondLine": [
+          "Intra-articular corticosteroid injections for symptomatic relief"
+        ],
+        "procedures": [
+          "Joint aspiration for diagnostic and therapeutic purposes, especially in cases of effusion."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Weight management and physical therapy to improve function and reduce pain",
+          "Regular low-impact exercise (e.g., swimming, cycling)"
+        ],
+        "secondLine": [
+          "Topical NSAIDs for localized pain relief",
+          "Oral NSAIDs for more widespread symptoms"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pain control and functional status, and to adjust management as necessary."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic; works centrally to inhibit prostaglandin synthesis.",
+          "dosing": "1g every 6 hours as needed, maximum 4g/day.",
+          "sideEffects": "Generally well-tolerated; overdose can lead to hepatotoxicity.",
+          "notes": "First-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600mg every 6-8 hours as needed, maximum 2400mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased cardiovascular risk.",
+          "notes": "Consider gastroprotection in long-term use."
+        },
+        {
+          "name": "Diclofenac",
+          "mechanism": "NSAID; similar to ibuprofen but may have a higher risk of cardiovascular events.",
+          "dosing": "50mg two to three times daily, maximum 150mg/day.",
+          "sideEffects": "Gastrointestinal side effects, cardiovascular risks.",
+          "notes": "Topical formulations available for localized pain."
+        },
+        {
+          "name": "Corticosteroids (e.g., Triamcinolone)",
+          "mechanism": "Anti-inflammatory; reduces inflammation and pain in the joint.",
+          "dosing": "Intra-articular injection, typically 10-40mg depending on the joint.",
+          "sideEffects": "Local pain, infection risk, potential for joint damage with repeated injections.",
+          "notes": "Used for acute exacerbations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint Aspiration",
+          "description": "A procedure to remove excess synovial fluid from a joint using a needle and syringe.",
+          "indications": "Significant joint effusion, diagnostic purposes, or therapeutic relief of pain.",
+          "risks": "Infection, bleeding, pain at the site, and potential for joint damage."
+        }
+      ]
+    },
+    "prognosis": "Osteoarthritis is a chronic condition that can lead to progressive joint damage and disability. Early intervention and lifestyle modifications can improve outcomes and quality of life.",
+    "complications": [
+      "Chronic pain",
+      "Functional impairment",
+      "Increased risk of falls due to joint instability",
+      "Psychosocial effects such as depression and anxiety due to chronic pain."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate conservative management, and refer to rheumatology for patients with atypical presentations or those not responding to initial treatment.",
+    "escalation": "Refer to a specialist if there are red flags, lack of response to treatment, or if the diagnosis is uncertain.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially NSAIDs and corticosteroids. Ensure appropriate use of analgesics and consider the patient's overall health status, including renal function and cardiovascular risk."
+  }
+}

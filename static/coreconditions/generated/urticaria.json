@@ -1,0 +1,131 @@
+{
+  "id": "urticaria",
+  "name": "Urticaria",
+  "domains": [
+    "Dermatology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:23:32.478568",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Urticaria: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUrticaria, commonly known as hives, is a skin condition characterized by the sudden appearance of raised, itchy welts (wheals) on the skin. It can be acute or chronic and is often associated with an allergic reaction.\n\n### Epidemiology\nUrticaria affects approximately 20% of the population at some point in their lives. Acute urticaria is more common in children, while chronic urticaria is more prevalent in adults, particularly women.\n\n### Essential Pathophysiology\nUrticaria occurs due to the release of histamine and other inflammatory mediators from mast cells in the skin, leading to increased vascular permeability and edema. This can be triggered by various factors, including allergens, medications, infections, and physical stimuli.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itchy skin\n- Burning or stinging sensation\n- Wheals (raised, red or skin-colored bumps)\n- Angioedema (swelling of deeper layers of skin, often around the eyes and lips)\n\n### Key Signs\n- Presence of wheals on examination\n- Possible signs of angioedema\n- No signs of infection or other skin conditions\n\n### Atypical Presentations\n- Wheals that last longer than 24 hours\n- Recurrent episodes without clear triggers\n- Associated systemic symptoms (e.g., fever, malaise)\n\n### Red Flags Requiring Immediate Action\n- Severe angioedema affecting the airway\n- Signs of anaphylaxis (e.g., difficulty breathing, hypotension)\n- Wheals persisting for more than 6 weeks (suggesting chronic urticaria)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed history to identify triggers\n- Physical examination of skin lesions\n\n### Second-line Investigations\n- Skin prick tests for specific allergens\n- Serum IgE levels if allergic etiology is suspected\n\n### Specialist Tests\n- Referral to an allergist for further testing if chronic urticaria is suspected\n- Consideration of autoimmune markers (e.g., thyroid antibodies) if autoimmune urticaria is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of itchy wheals and a history of recurrent episodes. Chronic urticaria is defined as wheals lasting more than 6 weeks.\n\n### Key Differential Diagnoses to Exclude\n- Allergic contact dermatitis\n- Eczema\n- Insect bites\n- Vasculitis\n- Dermatographism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antihistamines (e.g., cetirizine, loratadine)\n- Avoidance of known triggers\n\n#### Second-line Treatments\n- Short course of oral corticosteroids (e.g., prednisone) for severe cases\n\n#### Emergency Procedures\n- Administration of epinephrine in cases of anaphylaxis or severe angioedema\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Second-generation antihistamines (e.g., desloratadine, fexofenadine) at higher than standard doses\n\n#### Second-line Treatments\n- Add-on therapies such as omalizumab (anti-IgE therapy) or cyclosporine for refractory cases\n- Consideration of leukotriene receptor antagonists\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and adjust medications as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cetirizine\n- **Mechanism of Action**: H1 receptor antagonist that reduces itching and wheal formation\n- **Typical Dosing Range**: 10 mg once daily, may increase to 20 mg for chronic urticaria\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, headache\n- **When to Use vs. Alternatives**: Generally well-tolerated; preferred for acute urticaria.\n\n#### Omalizumab\n- **Mechanism of Action**: Monoclonal antibody that binds to IgE, preventing it from triggering mast cell degranulation\n- **Typical Dosing Range**: 150-300 mg subcutaneously every 4 weeks\n- **Key Side Effects/Contraindications**: Injection site reactions, anaphylaxis (rare)\n- **When to Use vs. Alternatives**: Used for chronic urticaria that is refractory to antihistamines.\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response\n- **Typical Dosing Range**: 40-60 mg daily for 5-7 days, tapering off\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, increased blood sugar\n- **When to Use vs. Alternatives**: Short-term use only; monitor for side effects.\n\n### Procedures\n\n#### Epinephrine administration\n- **What it Involves**: Intramuscular injection of epinephrine in cases of severe allergic reactions or anaphylaxis\n- **Indications**: Severe angioedema, anaphylaxis\n- **Key Risks/Complications**: Potential for rebound anaphylaxis, cardiovascular effects (tachycardia, hypertension)\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of acute urticaria resolve spontaneously within days to weeks. Chronic urticaria can persist for months to years but often improves with appropriate management.\n\n### Important Complications to Watch For\n- Severe allergic reactions (anaphylaxis)\n- Chronic discomfort and reduced quality of life due to persistent itching and wheals\n- Psychological impact due to visible skin lesions\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize and manage acute urticaria, initiate treatment with antihistamines, and refer to specialists for chronic cases or those with red flags. They should also educate patients on trigger avoidance and the use of emergency medications if necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a dermatologist or allergist if the patient has chronic urticaria, severe symptoms, or if there is uncertainty in management. Immediate referral to emergency services is required for signs of anaphylaxis.\n\n### Key Safety Considerations\nMonitor for signs of anaphylaxis in patients with known allergies. Educate patients on the use of an epinephrine auto-injector if they have a history of severe reactions. Ensure follow-up for chronic cases to adjust treatment as needed.\n",
+  "content": {
+    "overview": {
+      "definition": "Urticaria, commonly known as hives, is a skin condition characterized by the sudden appearance of raised, itchy welts (wheals) on the skin. It can be acute or chronic and is often associated with an allergic reaction.",
+      "epidemiology": "Urticaria affects approximately 20% of the population at some point in their lives. Acute urticaria is more common in children, while chronic urticaria is more prevalent in adults, particularly women.",
+      "pathophysiology": "Urticaria occurs due to the release of histamine and other inflammatory mediators from mast cells in the skin, leading to increased vascular permeability and edema. This can be triggered by various factors, including allergens, medications, infections, and physical stimuli."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itchy skin",
+        "Burning or stinging sensation",
+        "Wheals (raised, red or skin-colored bumps)",
+        "Angioedema (swelling of deeper layers of skin, often around the eyes and lips)"
+      ],
+      "signs": [
+        "Presence of wheals on examination",
+        "Possible signs of angioedema",
+        "No signs of infection or other skin conditions"
+      ],
+      "atypicalPresentations": [
+        "Wheals that last longer than 24 hours",
+        "Recurrent episodes without clear triggers",
+        "Associated systemic symptoms (e.g., fever, malaise)"
+      ],
+      "redFlags": [
+        "Severe angioedema affecting the airway",
+        "Signs of anaphylaxis (e.g., difficulty breathing, hypotension)",
+        "Wheals persisting for more than 6 weeks (suggesting chronic urticaria)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed history to identify triggers",
+        "Physical examination of skin lesions"
+      ],
+      "secondLine": [
+        "Skin prick tests for specific allergens",
+        "Serum IgE levels if allergic etiology is suspected"
+      ],
+      "specialistTests": [
+        "Referral to an allergist for further testing if chronic urticaria is suspected",
+        "Consideration of autoimmune markers (e.g., thyroid antibodies) if autoimmune urticaria is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of itchy wheals and a history of recurrent episodes. Chronic urticaria is defined as wheals lasting more than 6 weeks.",
+      "differentials": [
+        "Allergic contact dermatitis",
+        "Eczema",
+        "Insect bites",
+        "Vasculitis",
+        "Dermatographism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antihistamines (e.g., cetirizine, loratadine)",
+          "Avoidance of known triggers"
+        ],
+        "secondLine": [
+          "Short course of oral corticosteroids (e.g., prednisone) for severe cases"
+        ],
+        "procedures": [
+          "Administration of epinephrine in cases of anaphylaxis or severe angioedema"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Second-generation antihistamines (e.g., desloratadine, fexofenadine) at higher than standard doses"
+        ],
+        "secondLine": [
+          "Add-on therapies such as omalizumab (anti-IgE therapy) or cyclosporine for refractory cases",
+          "Consideration of leukotriene receptor antagonists"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and adjust medications as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cetirizine",
+          "mechanism": "H1 receptor antagonist that reduces itching and wheal formation",
+          "dosing": "10 mg once daily, may increase to 20 mg for chronic urticaria",
+          "sideEffects": "Drowsiness, dry mouth, headache",
+          "notes": "Generally well-tolerated; preferred for acute urticaria."
+        },
+        {
+          "name": "Omalizumab",
+          "mechanism": "Monoclonal antibody that binds to IgE, preventing it from triggering mast cell degranulation",
+          "dosing": "150-300 mg subcutaneously every 4 weeks",
+          "sideEffects": "Injection site reactions, anaphylaxis (rare)",
+          "notes": "Used for chronic urticaria that is refractory to antihistamines."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response",
+          "dosing": "40-60 mg daily for 5-7 days, tapering off",
+          "sideEffects": "Weight gain, mood changes, increased blood sugar",
+          "notes": "Short-term use only; monitor for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Epinephrine administration",
+          "description": "Intramuscular injection of epinephrine in cases of severe allergic reactions or anaphylaxis",
+          "indications": "Severe angioedema, anaphylaxis",
+          "risks": "Potential for rebound anaphylaxis, cardiovascular effects (tachycardia, hypertension)"
+        }
+      ]
+    },
+    "prognosis": "Most cases of acute urticaria resolve spontaneously within days to weeks. Chronic urticaria can persist for months to years but often improves with appropriate management.",
+    "complications": [
+      "Severe allergic reactions (anaphylaxis)",
+      "Chronic discomfort and reduced quality of life due to persistent itching and wheals",
+      "Psychological impact due to visible skin lesions"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize and manage acute urticaria, initiate treatment with antihistamines, and refer to specialists for chronic cases or those with red flags. They should also educate patients on trigger avoidance and the use of emergency medications if necessary.",
+    "escalation": "Refer to a dermatologist or allergist if the patient has chronic urticaria, severe symptoms, or if there is uncertainty in management. Immediate referral to emergency services is required for signs of anaphylaxis.",
+    "keySafetyConsiderations": "Monitor for signs of anaphylaxis in patients with known allergies. Educate patients on the use of an epinephrine auto-injector if they have a history of severe reactions. Ensure follow-up for chronic cases to adjust treatment as needed."
+  }
+}

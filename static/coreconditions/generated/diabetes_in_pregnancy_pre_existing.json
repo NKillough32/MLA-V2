@@ -1,0 +1,132 @@
+{
+  "id": "diabetes_in_pregnancy_pre_existing",
+  "name": "Diabetes in pregnancy-pre existing",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:29:26.854012",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetes in pregnancy-pre existing: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetes in pregnancy refers to the presence of diabetes mellitus in a woman before conception or diagnosed during pregnancy. Pre-existing diabetes includes both Type 1 and Type 2 diabetes.\n\n### Epidemiology\nApproximately 1-2% of pregnancies are complicated by pre-existing diabetes. The prevalence is increasing due to rising obesity rates and older maternal age at conception.\n\n### Essential Pathophysiology\nIn pre-existing diabetes, the body either does not produce enough insulin (Type 1) or cannot effectively use the insulin it produces (Type 2). During pregnancy, hormonal changes can exacerbate insulin resistance, leading to hyperglycemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased thirst (polydipsia)\n- Frequent urination (polyuria)\n- Fatigue\n- Blurred vision\n- Nausea\n\n### Key Signs\n- Elevated blood glucose levels\n- Ketones in urine (in Type 1)\n- Signs of dehydration\n\n### Atypical Presentations\n- Asymptomatic hyperglycemia detected during routine screening\n- Severe hyperglycemia leading to diabetic ketoacidosis (DKA)\n\n### Red Flags Requiring Immediate Action\n- Severe hyperglycemia (>180 mg/dL)\n- Symptoms of DKA (abdominal pain, vomiting, altered mental status)\n- Signs of pre-eclampsia (hypertension, proteinuria)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fasting blood glucose\n- Random blood glucose\n- HbA1c\n\n### Second-line Investigations\n- Oral glucose tolerance test (OGTT) if not previously diagnosed\n\n### Specialist Tests\n- Continuous glucose monitoring (CGM)\n- Urine ketones\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of diabetes in pregnancy is made if: Fasting blood glucose ≥ 126 mg/dL, Random blood glucose ≥ 200 mg/dL, or HbA1c ≥ 6.5%.\n\n### Key Differential Diagnoses to Exclude\n- Gestational diabetes\n- Hyperthyroidism\n- Cushing's syndrome\n- Pancreatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Insulin therapy (if blood glucose > 180 mg/dL)\n- Hydration and electrolyte management\n\n#### Second-line Treatments\n- Consideration of intravenous insulin infusion for severe cases\n\n#### Emergency Procedures\n- Monitoring of blood glucose levels every 1-2 hours in acute settings\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Tight glycemic control (targeting HbA1c < 6.5%)\n- Regular monitoring of blood glucose levels\n\n#### Second-line Treatments\n- Dietary modifications and exercise plans\n- Referral to a diabetes specialist team\n\n#### Monitoring Requirements\n- Frequent fetal monitoring (ultrasound, non-stress tests)\n- Regular assessment of maternal blood pressure and urine for protein\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Insulin\n- **Mechanism of Action**: Replaces or supplements insulin to control blood glucose levels.\n- **Typical Dosing Range**: Individualized; typically, 0.5-1.0 units/kg/day, adjusted based on blood glucose levels.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain, injection site reactions.\n- **When to Use vs. Alternatives**: Insulin is the preferred treatment for pre-existing diabetes in pregnancy.\n\n#### Metformin\n- **Mechanism of Action**: Improves insulin sensitivity and decreases hepatic glucose production.\n- **Typical Dosing Range**: 500 mg to 2000 mg daily, titrated based on tolerance and blood glucose levels.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: May be used in Type 2 diabetes; not first-line in Type 1.\n\n### Procedures\n\n#### Continuous Glucose Monitoring (CGM)\n- **What it Involves**: A device that tracks glucose levels continuously throughout the day and night.\n- **Indications**: To provide real-time glucose data and improve glycemic control.\n- **Key Risks/Complications**: Skin irritation, inaccurate readings if not calibrated properly.\n\n#### Fetal Monitoring\n- **What it Involves**: Regular ultrasound and non-stress tests to assess fetal well-being.\n- **Indications**: To monitor for fetal growth and signs of distress due to maternal diabetes.\n- **Key Risks/Complications**: False positives leading to unnecessary interventions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith proper management, most women with pre-existing diabetes can have healthy pregnancies and outcomes. However, they are at increased risk for complications such as pre-eclampsia, cesarean delivery, and macrosomia.\n\n### Important Complications to Watch For\n- Macrosomia (large baby)\n- Preterm birth\n- Neonatal hypoglycemia\n- Preeclampsia\n- Increased risk of congenital anomalies\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in monitoring blood glucose levels, recognizing signs of hyperglycemia and DKA, and providing education on lifestyle modifications. They should also facilitate referrals to specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf blood glucose levels remain uncontrolled despite management, or if there are signs of DKA or severe complications, escalate care to an endocrinologist or obstetrician immediately.\n\n### Key Safety Considerations\nEnsure regular monitoring of blood glucose levels, educate patients on recognizing symptoms of hypo- and hyperglycemia, and maintain close communication with the obstetric team to manage any complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetes in pregnancy refers to the presence of diabetes mellitus in a woman before conception or diagnosed during pregnancy. Pre-existing diabetes includes both Type 1 and Type 2 diabetes.",
+      "epidemiology": "Approximately 1-2% of pregnancies are complicated by pre-existing diabetes. The prevalence is increasing due to rising obesity rates and older maternal age at conception.",
+      "pathophysiology": "In pre-existing diabetes, the body either does not produce enough insulin (Type 1) or cannot effectively use the insulin it produces (Type 2). During pregnancy, hormonal changes can exacerbate insulin resistance, leading to hyperglycemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased thirst (polydipsia)",
+        "Frequent urination (polyuria)",
+        "Fatigue",
+        "Blurred vision",
+        "Nausea"
+      ],
+      "signs": [
+        "Elevated blood glucose levels",
+        "Ketones in urine (in Type 1)",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hyperglycemia detected during routine screening",
+        "Severe hyperglycemia leading to diabetic ketoacidosis (DKA)"
+      ],
+      "redFlags": [
+        "Severe hyperglycemia (>180 mg/dL)",
+        "Symptoms of DKA (abdominal pain, vomiting, altered mental status)",
+        "Signs of pre-eclampsia (hypertension, proteinuria)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fasting blood glucose",
+        "Random blood glucose",
+        "HbA1c"
+      ],
+      "secondLine": [
+        "Oral glucose tolerance test (OGTT) if not previously diagnosed"
+      ],
+      "specialistTests": [
+        "Continuous glucose monitoring (CGM)",
+        "Urine ketones"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of diabetes in pregnancy is made if: Fasting blood glucose ≥ 126 mg/dL, Random blood glucose ≥ 200 mg/dL, or HbA1c ≥ 6.5%.",
+      "differentials": [
+        "Gestational diabetes",
+        "Hyperthyroidism",
+        "Cushing's syndrome",
+        "Pancreatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Insulin therapy (if blood glucose > 180 mg/dL)",
+          "Hydration and electrolyte management"
+        ],
+        "secondLine": [
+          "Consideration of intravenous insulin infusion for severe cases"
+        ],
+        "procedures": [
+          "Monitoring of blood glucose levels every 1-2 hours in acute settings"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Tight glycemic control (targeting HbA1c < 6.5%)",
+          "Regular monitoring of blood glucose levels"
+        ],
+        "secondLine": [
+          "Dietary modifications and exercise plans",
+          "Referral to a diabetes specialist team"
+        ],
+        "monitoring": [
+          "Frequent fetal monitoring (ultrasound, non-stress tests)",
+          "Regular assessment of maternal blood pressure and urine for protein"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Insulin",
+          "mechanism": "Replaces or supplements insulin to control blood glucose levels.",
+          "dosing": "Individualized; typically, 0.5-1.0 units/kg/day, adjusted based on blood glucose levels.",
+          "sideEffects": "Hypoglycemia, weight gain, injection site reactions.",
+          "notes": "Insulin is the preferred treatment for pre-existing diabetes in pregnancy."
+        },
+        {
+          "name": "Metformin",
+          "mechanism": "Improves insulin sensitivity and decreases hepatic glucose production.",
+          "dosing": "500 mg to 2000 mg daily, titrated based on tolerance and blood glucose levels.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "May be used in Type 2 diabetes; not first-line in Type 1."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Continuous Glucose Monitoring (CGM)",
+          "description": "A device that tracks glucose levels continuously throughout the day and night.",
+          "indications": "To provide real-time glucose data and improve glycemic control.",
+          "risks": "Skin irritation, inaccurate readings if not calibrated properly."
+        },
+        {
+          "name": "Fetal Monitoring",
+          "description": "Regular ultrasound and non-stress tests to assess fetal well-being.",
+          "indications": "To monitor for fetal growth and signs of distress due to maternal diabetes.",
+          "risks": "False positives leading to unnecessary interventions."
+        }
+      ]
+    },
+    "prognosis": "With proper management, most women with pre-existing diabetes can have healthy pregnancies and outcomes. However, they are at increased risk for complications such as pre-eclampsia, cesarean delivery, and macrosomia.",
+    "complications": [
+      "Macrosomia (large baby)",
+      "Preterm birth",
+      "Neonatal hypoglycemia",
+      "Preeclampsia",
+      "Increased risk of congenital anomalies"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in monitoring blood glucose levels, recognizing signs of hyperglycemia and DKA, and providing education on lifestyle modifications. They should also facilitate referrals to specialists as needed.",
+    "escalation": "If blood glucose levels remain uncontrolled despite management, or if there are signs of DKA or severe complications, escalate care to an endocrinologist or obstetrician immediately.",
+    "keySafetyConsiderations": "Ensure regular monitoring of blood glucose levels, educate patients on recognizing symptoms of hypo- and hyperglycemia, and maintain close communication with the obstetric team to manage any complications."
+  }
+}

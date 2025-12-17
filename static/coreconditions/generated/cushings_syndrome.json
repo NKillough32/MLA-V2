@@ -1,0 +1,153 @@
+{
+  "id": "cushings_syndrome",
+  "name": "Cushing?s syndrome",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:33:43.975146",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cushing?s syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCushing's syndrome is a condition characterized by excessive levels of cortisol in the blood, which can result from various causes including pituitary adenomas, adrenal tumors, or ectopic ACTH production.\n\n### Epidemiology\nCushing's syndrome is rare, with an estimated incidence of 1-2 cases per million per year. It is more common in women than men, particularly between the ages of 20 and 50.\n\n### Essential Pathophysiology\nCushing's syndrome results from prolonged exposure to high levels of cortisol, which can be due to endogenous overproduction (e.g., adrenal adenomas, pituitary adenomas) or exogenous sources (e.g., glucocorticoid medications). Cortisol affects multiple systems, leading to metabolic, cardiovascular, and immune dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weight gain (central obesity)\n- Moon facies\n- Buffalo hump\n- Skin changes (thinning, easy bruising)\n- Muscle weakness\n- Fatigue\n- Hypertension\n- Diabetes mellitus\n- Mood changes (depression, anxiety)\n\n### Key Signs\n- Hypertension\n- Hyperglycemia\n- Hypokalemia\n- Osteoporosis\n- Striae (purple abdominal striae)\n- Acne\n- Hirsutism\n\n### Atypical Presentations\n- Adrenal crisis due to abrupt withdrawal of glucocorticoids\n- Psychiatric symptoms without typical physical signs\n- Severe infections due to immunosuppression\n\n### Red Flags Requiring Immediate Action\n- New onset hypertension\n- Unexplained weight gain\n- Severe fatigue\n- Psychiatric changes\n- Signs of adrenal crisis (hypotension, confusion)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- 24-hour urinary free cortisol\n- Late-night salivary cortisol\n- Low-dose dexamethasone suppression test\n\n### Second-line Investigations\n- Plasma ACTH levels\n- High-dose dexamethasone suppression test\n- Imaging studies (CT/MRI of adrenal/pituitary)\n\n### Specialist Tests\n- Inferior petrosal sinus sampling (for pituitary source)\n- CRH stimulation test (to differentiate causes)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of Cushing's syndrome is confirmed by demonstrating hypercortisolism through biochemical tests, followed by localization of the source of excess cortisol.\n\n### Key Differential Diagnoses to Exclude\n- Primary hyperaldosteronism\n- Pheochromocytoma\n- Acromegaly\n- Obesity-related metabolic syndrome\n- Depression\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hydrocortisone (if adrenal crisis suspected)\n- Supportive care (IV fluids, monitoring)\n\n#### Second-line Treatments\n- Consider transfer to endocrinology for further management\n\n#### Emergency Procedures\n- Emergency management of adrenal crisis (IV hydrocortisone administration)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection of the tumor (if localized)\n- Medical management with steroidogenesis inhibitors (e.g., ketoconazole)\n\n#### Second-line Treatments\n- Radiation therapy (for pituitary adenomas)\n- Bilateral adrenalectomy (in selected cases)\n\n#### Monitoring Requirements\n- Regular follow-up for cortisol levels\n- Monitoring for complications (diabetes, hypertension)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ketoconazole\n- **Mechanism of Action**: Inhibits cortisol synthesis by blocking steroidogenesis\n- **Typical Dosing Range**: 400-800 mg/day in divided doses\n- **Key Side Effects/Contraindications**: Nausea, hepatotoxicity, adrenal insufficiency\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly.\n\n#### Mifepristone\n- **Mechanism of Action**: Glucocorticoid receptor antagonist\n- **Typical Dosing Range**: 300 mg/day, adjusted based on response\n- **Key Side Effects/Contraindications**: Fatigue, nausea, hypokalemia\n- **When to Use vs. Alternatives**: Used primarily for patients with hyperglycemia.\n\n#### Mitotane\n- **Mechanism of Action**: Adrenolytic agent that inhibits cortisol production\n- **Typical Dosing Range**: Starting at 1-3 g/day, titrated based on response\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, adrenal insufficiency\n- **When to Use vs. Alternatives**: Requires monitoring of adrenal function.\n\n### Procedures\n\n#### Transsphenoidal resection\n- **What it Involves**: Surgical removal of pituitary adenomas causing Cushing's disease\n- **Indications**: Confirmed pituitary adenoma causing Cushing's syndrome\n- **Key Risks/Complications**: CSF leak, pituitary damage, infection\n\n#### Adrenalectomy\n- **What it Involves**: Surgical removal of adrenal tumors\n- **Indications**: Adrenal adenoma or carcinoma causing Cushing's syndrome\n- **Key Risks/Complications**: Bleeding, infection, adrenal insufficiency post-op\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of Cushing's syndrome varies based on the underlying cause and treatment. Early diagnosis and management can lead to significant improvement in symptoms and quality of life. However, untreated Cushing's syndrome can lead to serious complications such as cardiovascular disease, diabetes, and increased mortality.\n\n### Important Complications to Watch For\n- Cardiovascular disease\n- Diabetes mellitus\n- Osteoporosis and fractures\n- Infections due to immunosuppression\n- Psychiatric disorders (depression, anxiety)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of Cushing's syndrome, initiate appropriate investigations, and manage acute complications. They should also provide education to patients regarding the condition and its management.\n\n### When to Escalate to Senior/Specialist\nIf Cushing's syndrome is suspected, escalate to an endocrinologist for further evaluation and management. In cases of adrenal crisis, immediate escalation to emergency care is critical.\n\n### Key Safety Considerations\nMonitor for signs of adrenal insufficiency in patients on glucocorticoids, especially during stress or illness. Ensure proper tapering of glucocorticoids to prevent withdrawal symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Cushing's syndrome is a condition characterized by excessive levels of cortisol in the blood, which can result from various causes including pituitary adenomas, adrenal tumors, or ectopic ACTH production.",
+      "epidemiology": "Cushing's syndrome is rare, with an estimated incidence of 1-2 cases per million per year. It is more common in women than men, particularly between the ages of 20 and 50.",
+      "pathophysiology": "Cushing's syndrome results from prolonged exposure to high levels of cortisol, which can be due to endogenous overproduction (e.g., adrenal adenomas, pituitary adenomas) or exogenous sources (e.g., glucocorticoid medications). Cortisol affects multiple systems, leading to metabolic, cardiovascular, and immune dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weight gain (central obesity)",
+        "Moon facies",
+        "Buffalo hump",
+        "Skin changes (thinning, easy bruising)",
+        "Muscle weakness",
+        "Fatigue",
+        "Hypertension",
+        "Diabetes mellitus",
+        "Mood changes (depression, anxiety)"
+      ],
+      "signs": [
+        "Hypertension",
+        "Hyperglycemia",
+        "Hypokalemia",
+        "Osteoporosis",
+        "Striae (purple abdominal striae)",
+        "Acne",
+        "Hirsutism"
+      ],
+      "atypicalPresentations": [
+        "Adrenal crisis due to abrupt withdrawal of glucocorticoids",
+        "Psychiatric symptoms without typical physical signs",
+        "Severe infections due to immunosuppression"
+      ],
+      "redFlags": [
+        "New onset hypertension",
+        "Unexplained weight gain",
+        "Severe fatigue",
+        "Psychiatric changes",
+        "Signs of adrenal crisis (hypotension, confusion)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "24-hour urinary free cortisol",
+        "Late-night salivary cortisol",
+        "Low-dose dexamethasone suppression test"
+      ],
+      "secondLine": [
+        "Plasma ACTH levels",
+        "High-dose dexamethasone suppression test",
+        "Imaging studies (CT/MRI of adrenal/pituitary)"
+      ],
+      "specialistTests": [
+        "Inferior petrosal sinus sampling (for pituitary source)",
+        "CRH stimulation test (to differentiate causes)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of Cushing's syndrome is confirmed by demonstrating hypercortisolism through biochemical tests, followed by localization of the source of excess cortisol.",
+      "differentials": [
+        "Primary hyperaldosteronism",
+        "Pheochromocytoma",
+        "Acromegaly",
+        "Obesity-related metabolic syndrome",
+        "Depression"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hydrocortisone (if adrenal crisis suspected)",
+          "Supportive care (IV fluids, monitoring)"
+        ],
+        "secondLine": [
+          "Consider transfer to endocrinology for further management"
+        ],
+        "procedures": [
+          "Emergency management of adrenal crisis (IV hydrocortisone administration)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection of the tumor (if localized)",
+          "Medical management with steroidogenesis inhibitors (e.g., ketoconazole)"
+        ],
+        "secondLine": [
+          "Radiation therapy (for pituitary adenomas)",
+          "Bilateral adrenalectomy (in selected cases)"
+        ],
+        "monitoring": [
+          "Regular follow-up for cortisol levels",
+          "Monitoring for complications (diabetes, hypertension)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ketoconazole",
+          "mechanism": "Inhibits cortisol synthesis by blocking steroidogenesis",
+          "dosing": "400-800 mg/day in divided doses",
+          "sideEffects": "Nausea, hepatotoxicity, adrenal insufficiency",
+          "notes": "Monitor liver function tests regularly."
+        },
+        {
+          "name": "Mifepristone",
+          "mechanism": "Glucocorticoid receptor antagonist",
+          "dosing": "300 mg/day, adjusted based on response",
+          "sideEffects": "Fatigue, nausea, hypokalemia",
+          "notes": "Used primarily for patients with hyperglycemia."
+        },
+        {
+          "name": "Mitotane",
+          "mechanism": "Adrenolytic agent that inhibits cortisol production",
+          "dosing": "Starting at 1-3 g/day, titrated based on response",
+          "sideEffects": "Nausea, diarrhea, adrenal insufficiency",
+          "notes": "Requires monitoring of adrenal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transsphenoidal resection",
+          "description": "Surgical removal of pituitary adenomas causing Cushing's disease",
+          "indications": "Confirmed pituitary adenoma causing Cushing's syndrome",
+          "risks": "CSF leak, pituitary damage, infection"
+        },
+        {
+          "name": "Adrenalectomy",
+          "description": "Surgical removal of adrenal tumors",
+          "indications": "Adrenal adenoma or carcinoma causing Cushing's syndrome",
+          "risks": "Bleeding, infection, adrenal insufficiency post-op"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of Cushing's syndrome varies based on the underlying cause and treatment. Early diagnosis and management can lead to significant improvement in symptoms and quality of life. However, untreated Cushing's syndrome can lead to serious complications such as cardiovascular disease, diabetes, and increased mortality.",
+    "complications": [
+      "Cardiovascular disease",
+      "Diabetes mellitus",
+      "Osteoporosis and fractures",
+      "Infections due to immunosuppression",
+      "Psychiatric disorders (depression, anxiety)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of Cushing's syndrome, initiate appropriate investigations, and manage acute complications. They should also provide education to patients regarding the condition and its management.",
+    "escalation": "If Cushing's syndrome is suspected, escalate to an endocrinologist for further evaluation and management. In cases of adrenal crisis, immediate escalation to emergency care is critical.",
+    "keySafetyConsiderations": "Monitor for signs of adrenal insufficiency in patients on glucocorticoids, especially during stress or illness. Ensure proper tapering of glucocorticoids to prevent withdrawal symptoms."
+  }
+}

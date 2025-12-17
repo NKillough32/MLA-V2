@@ -1,0 +1,153 @@
+{
+  "id": "gastrointestinal_malignancies",
+  "name": "Gastrointestinal Malignancies",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:12:13.467910",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastrointestinal Malignancies: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastrointestinal malignancies refer to cancers that arise in the gastrointestinal (GI) tract, including the esophagus, stomach, small intestine, colon, rectum, liver, pancreas, and gallbladder.\n\n### Epidemiology\nGastrointestinal cancers are among the most common cancers worldwide, with colorectal cancer being the third most common and the second leading cause of cancer-related deaths. Risk factors include age, family history, diet, and certain genetic syndromes.\n\n### Essential Pathophysiology\nGI malignancies typically arise from the epithelial cells lining the GI tract. Genetic mutations, environmental factors, and chronic inflammation contribute to the transformation of normal cells into malignant ones. The progression often follows a sequence from dysplasia to carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain\n- Unexplained weight loss\n- Changes in bowel habits (diarrhea or constipation)\n- Nausea and vomiting\n- Dysphagia (difficulty swallowing)\n- Anorexia\n- Fatigue\n\n### Key Signs\n- Palpable abdominal mass\n- Hepatomegaly\n- Ascites\n- Jaundice\n- Anemia\n- Rectal bleeding\n\n### Atypical Presentations\n- Elderly patients may present with vague abdominal discomfort\n- Anemia without obvious GI bleeding\n- Bowel obstruction symptoms without prior history\n\n### Red Flags Requiring Immediate Action\n- Age >50 with new onset of bowel symptoms\n- Family history of GI malignancies\n- Unexplained weight loss >5% of body weight\n- Persistent vomiting or dysphagia\n- Blood in stool or black tarry stools\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Carcinoembryonic antigen (CEA) for colorectal cancer screening\n- Abdominal ultrasound or CT scan\n\n### Second-line Investigations\n- Colonoscopy with biopsy for suspected colorectal cancer\n- Endoscopy for upper GI malignancies\n- CT or MRI for staging\n\n### Specialist Tests\n- PET scan for metastasis evaluation\n- Genetic testing for hereditary syndromes (e.g., Lynch syndrome)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of biopsy specimens obtained via endoscopy or colonoscopy. Imaging studies assist in staging and assessing metastasis.\n\n### Key Differential Diagnoses to Exclude\n- Peptic ulcer disease\n- Gastroesophageal reflux disease (GERD)\n- Diverticulitis\n- Inflammatory bowel disease (IBD)\n- Benign tumors (e.g., adenomas)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Stabilization of the patient (IV fluids, pain management)\n- Nutritional support if indicated\n\n#### Second-line Treatments\n- Surgical consultation for resection if indicated\n- Chemotherapy initiation for advanced cases\n\n#### Emergency Procedures\n- Endoscopic stenting for obstruction\n- Palliative care interventions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular surveillance colonoscopy for colorectal cancer\n- Nutritional counseling and support\n- Symptom management (e.g., antiemetics, analgesics)\n\n#### Second-line Treatments\n- Chemotherapy or targeted therapy based on tumor type and stage\n- Radiation therapy for localized disease\n\n#### Monitoring Requirements\n- Regular follow-up with imaging and tumor markers (e.g., CEA)\n- Monitoring for treatment side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### 5-Fluorouracil (5-FU)\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: Administered IV; dosing varies based on regimen\n- **Key Side Effects/Contraindications**: Myelosuppression, mucositis, diarrhea\n- **When to Use vs. Alternatives**: Often used in combination with leucovorin for enhanced efficacy.\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that cross-links DNA\n- **Typical Dosing Range**: IV; dosing varies based on regimen\n- **Key Side Effects/Contraindications**: Nausea, nephrotoxicity, ototoxicity\n- **When to Use vs. Alternatives**: Hydration is crucial to prevent nephrotoxicity.\n\n#### Targeted therapies (e.g., Bevacizumab)\n- **Mechanism of Action**: Monoclonal antibody that inhibits angiogenesis\n- **Typical Dosing Range**: IV; based on body weight\n- **Key Side Effects/Contraindications**: Hypertension, proteinuria, risk of bleeding\n- **When to Use vs. Alternatives**: Used in combination with chemotherapy for metastatic disease.\n\n### Procedures\n\n#### Colonoscopy\n- **What it Involves**: Endoscopic examination of the colon for diagnosis and biopsy\n- **Indications**: Screening for colorectal cancer, evaluation of GI symptoms\n- **Key Risks/Complications**: Perforation, bleeding, infection\n\n#### Endoscopic ultrasound (EUS)\n- **What it Involves**: Ultrasound performed during endoscopy to assess depth of tumor invasion\n- **Indications**: Staging of esophageal and pancreatic cancers\n- **Key Risks/Complications**: Pancreatitis, bleeding, perforation\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies widely based on cancer type, stage at diagnosis, and response to treatment. Early-stage cancers have better outcomes, while advanced-stage cancers have a poorer prognosis.\n\n### Important Complications to Watch For\n- Metastasis to liver or lungs\n- Bowel obstruction\n- Perforation of the GI tract\n- Malnutrition due to obstruction or treatment side effects\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of GI malignancies, performing initial assessments, ordering appropriate investigations, and managing acute complications. They should also facilitate referrals to specialists and provide supportive care.\n\n### When to Escalate to Senior/Specialist\nEscalate care to oncology or gastroenterology for suspected malignancies, especially in cases of significant weight loss, obstructive symptoms, or abnormal imaging findings.\n\n### Key Safety Considerations\nEnsure informed consent for procedures, monitor for complications post-procedure, and maintain a high index of suspicion for malignancy in patients with red flag symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastrointestinal malignancies refer to cancers that arise in the gastrointestinal (GI) tract, including the esophagus, stomach, small intestine, colon, rectum, liver, pancreas, and gallbladder.",
+      "epidemiology": "Gastrointestinal cancers are among the most common cancers worldwide, with colorectal cancer being the third most common and the second leading cause of cancer-related deaths. Risk factors include age, family history, diet, and certain genetic syndromes.",
+      "pathophysiology": "GI malignancies typically arise from the epithelial cells lining the GI tract. Genetic mutations, environmental factors, and chronic inflammation contribute to the transformation of normal cells into malignant ones. The progression often follows a sequence from dysplasia to carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain",
+        "Unexplained weight loss",
+        "Changes in bowel habits (diarrhea or constipation)",
+        "Nausea and vomiting",
+        "Dysphagia (difficulty swallowing)",
+        "Anorexia",
+        "Fatigue"
+      ],
+      "signs": [
+        "Palpable abdominal mass",
+        "Hepatomegaly",
+        "Ascites",
+        "Jaundice",
+        "Anemia",
+        "Rectal bleeding"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with vague abdominal discomfort",
+        "Anemia without obvious GI bleeding",
+        "Bowel obstruction symptoms without prior history"
+      ],
+      "redFlags": [
+        "Age >50 with new onset of bowel symptoms",
+        "Family history of GI malignancies",
+        "Unexplained weight loss >5% of body weight",
+        "Persistent vomiting or dysphagia",
+        "Blood in stool or black tarry stools"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Carcinoembryonic antigen (CEA) for colorectal cancer screening",
+        "Abdominal ultrasound or CT scan"
+      ],
+      "secondLine": [
+        "Colonoscopy with biopsy for suspected colorectal cancer",
+        "Endoscopy for upper GI malignancies",
+        "CT or MRI for staging"
+      ],
+      "specialistTests": [
+        "PET scan for metastasis evaluation",
+        "Genetic testing for hereditary syndromes (e.g., Lynch syndrome)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of biopsy specimens obtained via endoscopy or colonoscopy. Imaging studies assist in staging and assessing metastasis.",
+      "differentials": [
+        "Peptic ulcer disease",
+        "Gastroesophageal reflux disease (GERD)",
+        "Diverticulitis",
+        "Inflammatory bowel disease (IBD)",
+        "Benign tumors (e.g., adenomas)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Stabilization of the patient (IV fluids, pain management)",
+          "Nutritional support if indicated"
+        ],
+        "secondLine": [
+          "Surgical consultation for resection if indicated",
+          "Chemotherapy initiation for advanced cases"
+        ],
+        "procedures": [
+          "Endoscopic stenting for obstruction",
+          "Palliative care interventions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular surveillance colonoscopy for colorectal cancer",
+          "Nutritional counseling and support",
+          "Symptom management (e.g., antiemetics, analgesics)"
+        ],
+        "secondLine": [
+          "Chemotherapy or targeted therapy based on tumor type and stage",
+          "Radiation therapy for localized disease"
+        ],
+        "monitoring": [
+          "Regular follow-up with imaging and tumor markers (e.g., CEA)",
+          "Monitoring for treatment side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "5-Fluorouracil (5-FU)",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "Administered IV; dosing varies based on regimen",
+          "sideEffects": "Myelosuppression, mucositis, diarrhea",
+          "notes": "Often used in combination with leucovorin for enhanced efficacy."
+        },
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that cross-links DNA",
+          "dosing": "IV; dosing varies based on regimen",
+          "sideEffects": "Nausea, nephrotoxicity, ototoxicity",
+          "notes": "Hydration is crucial to prevent nephrotoxicity."
+        },
+        {
+          "name": "Targeted therapies (e.g., Bevacizumab)",
+          "mechanism": "Monoclonal antibody that inhibits angiogenesis",
+          "dosing": "IV; based on body weight",
+          "sideEffects": "Hypertension, proteinuria, risk of bleeding",
+          "notes": "Used in combination with chemotherapy for metastatic disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colonoscopy",
+          "description": "Endoscopic examination of the colon for diagnosis and biopsy",
+          "indications": "Screening for colorectal cancer, evaluation of GI symptoms",
+          "risks": "Perforation, bleeding, infection"
+        },
+        {
+          "name": "Endoscopic ultrasound (EUS)",
+          "description": "Ultrasound performed during endoscopy to assess depth of tumor invasion",
+          "indications": "Staging of esophageal and pancreatic cancers",
+          "risks": "Pancreatitis, bleeding, perforation"
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies widely based on cancer type, stage at diagnosis, and response to treatment. Early-stage cancers have better outcomes, while advanced-stage cancers have a poorer prognosis.",
+    "complications": [
+      "Metastasis to liver or lungs",
+      "Bowel obstruction",
+      "Perforation of the GI tract",
+      "Malnutrition due to obstruction or treatment side effects"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of GI malignancies, performing initial assessments, ordering appropriate investigations, and managing acute complications. They should also facilitate referrals to specialists and provide supportive care.",
+    "escalation": "Escalate care to oncology or gastroenterology for suspected malignancies, especially in cases of significant weight loss, obstructive symptoms, or abnormal imaging findings.",
+    "keySafetyConsiderations": "Ensure informed consent for procedures, monitor for complications post-procedure, and maintain a high index of suspicion for malignancy in patients with red flag symptoms."
+  }
+}

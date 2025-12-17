@@ -1,0 +1,133 @@
+{
+  "id": "inflammatory_bowel_disease_arthropathy",
+  "name": "Inflammatory bowel disease arthropathy",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:29:38.667037",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Inflammatory bowel disease arthropathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInflammatory bowel disease arthropathy (IBD arthropathy) refers to the musculoskeletal manifestations associated with inflammatory bowel diseases (IBD), primarily Crohn's disease and ulcerative colitis. It can present as peripheral arthritis, axial spondyloarthritis, or enthesitis.\n\n### Epidemiology\nIBD arthropathy affects approximately 20-40% of patients with IBD, with peripheral arthritis being more common in ulcerative colitis and axial involvement more prevalent in Crohn's disease. The onset can occur at any age but is most common in young adults.\n\n### Essential Pathophysiology\nThe pathophysiology involves immune-mediated inflammation that affects both the gastrointestinal tract and the joints. Cytokines such as TNF-alpha play a significant role in the inflammatory process, leading to joint inflammation and damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Joint pain and swelling\n- Stiffness, particularly in the morning\n- Fatigue\n- Reduced range of motion\n\n### Key Signs\n- Swelling and tenderness in affected joints\n- Reduced range of motion\n- Enthesitis (tenderness at tendon insertion points)\n- Sacroiliac joint tenderness\n\n### Atypical Presentations\n- Oligoarticular arthritis (affecting fewer than 5 joints)\n- Polyarticular arthritis (affecting more than 5 joints)\n- Axial pain without peripheral joint involvement\n\n### Red Flags Requiring Immediate Action\n- Severe joint pain unresponsive to analgesia\n- Signs of systemic illness (fever, weight loss)\n- Neurological symptoms (numbness, weakness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Blood tests (CBC, inflammatory markers: ESR, CRP)\n- Joint aspiration if effusion is present\n\n### Second-line Investigations\n- X-rays of affected joints\n- MRI of the sacroiliac joints for axial involvement\n- Ultrasound of joints\n\n### Specialist Tests\n- HLA-B27 testing (for axial spondyloarthritis)\n- Bone density scan if long-term corticosteroids are used\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical criteria, including the presence of IBD and musculoskeletal symptoms, along with exclusion of other causes of arthritis.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Psoriatic arthritis\n- Reactive arthritis\n- Gout\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (e.g., ibuprofen) for pain relief\n- Corticosteroids for acute exacerbations\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate or sulfasalazine\n\n#### Emergency Procedures\n- Joint injections with corticosteroids for localized arthritis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term management of IBD with 5-ASA compounds or biologics (e.g., infliximab, adalimumab)\n- Physical therapy for joint mobility\n\n#### Second-line Treatments\n- Consideration of DMARDs if symptoms persist despite IBD control\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and medication side effects\n- Screening for osteoporosis if on long-term corticosteroids\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Infliximab\n- **Mechanism of Action**: TNF-alpha inhibitor that reduces inflammation in both IBD and associated arthropathy.\n- **Typical Dosing Range**: 5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks.\n- **Key Side Effects/Contraindications**: Infection risk, infusion reactions, potential malignancy risk.\n- **When to Use vs. Alternatives**: Monitor for signs of infection and infusion reactions.\n\n#### Methotrexate\n- **Mechanism of Action**: DMARD that inhibits purine metabolism, reducing inflammation.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Sulfasalazine\n- **Mechanism of Action**: 5-ASA compound that reduces inflammation in the gut and joints.\n- **Typical Dosing Range**: 500 mg to 1 g orally, increasing to 2-3 g/day.\n- **Key Side Effects/Contraindications**: Nausea, headache, rash, potential for hypersensitivity reactions.\n- **When to Use vs. Alternatives**: Monitor liver function and blood counts.\n\n### Procedures\n\n#### Joint injection\n- **What it Involves**: Injection of corticosteroids into the affected joint to reduce inflammation and pain.\n- **Indications**: Localized arthritis unresponsive to systemic treatment.\n- **Key Risks/Complications**: Infection, joint damage, transient increase in pain post-injection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for IBD arthropathy is generally good with appropriate management of both the IBD and the arthropathy. Many patients experience significant improvement with treatment.\n\n### Important Complications to Watch For\n- Joint damage if untreated\n- Increased risk of osteoporosis due to corticosteroid use\n- Potential for systemic complications related to IBD\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of IBD arthropathy, initiate appropriate investigations, and manage acute symptoms. They should also be aware of the need for multidisciplinary care involving rheumatology and gastroenterology.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist if there is severe joint involvement, inadequate response to initial treatment, or if there are concerns about systemic illness.\n\n### Key Safety Considerations\nMonitor for signs of infection in patients on immunosuppressive therapy, assess for gastrointestinal symptoms that may indicate IBD flare, and ensure regular follow-up for medication side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Inflammatory bowel disease arthropathy (IBD arthropathy) refers to the musculoskeletal manifestations associated with inflammatory bowel diseases (IBD), primarily Crohn's disease and ulcerative colitis. It can present as peripheral arthritis, axial spondyloarthritis, or enthesitis.",
+      "epidemiology": "IBD arthropathy affects approximately 20-40% of patients with IBD, with peripheral arthritis being more common in ulcerative colitis and axial involvement more prevalent in Crohn's disease. The onset can occur at any age but is most common in young adults.",
+      "pathophysiology": "The pathophysiology involves immune-mediated inflammation that affects both the gastrointestinal tract and the joints. Cytokines such as TNF-alpha play a significant role in the inflammatory process, leading to joint inflammation and damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Joint pain and swelling",
+        "Stiffness, particularly in the morning",
+        "Fatigue",
+        "Reduced range of motion"
+      ],
+      "signs": [
+        "Swelling and tenderness in affected joints",
+        "Reduced range of motion",
+        "Enthesitis (tenderness at tendon insertion points)",
+        "Sacroiliac joint tenderness"
+      ],
+      "atypicalPresentations": [
+        "Oligoarticular arthritis (affecting fewer than 5 joints)",
+        "Polyarticular arthritis (affecting more than 5 joints)",
+        "Axial pain without peripheral joint involvement"
+      ],
+      "redFlags": [
+        "Severe joint pain unresponsive to analgesia",
+        "Signs of systemic illness (fever, weight loss)",
+        "Neurological symptoms (numbness, weakness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Blood tests (CBC, inflammatory markers: ESR, CRP)",
+        "Joint aspiration if effusion is present"
+      ],
+      "secondLine": [
+        "X-rays of affected joints",
+        "MRI of the sacroiliac joints for axial involvement",
+        "Ultrasound of joints"
+      ],
+      "specialistTests": [
+        "HLA-B27 testing (for axial spondyloarthritis)",
+        "Bone density scan if long-term corticosteroids are used"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical criteria, including the presence of IBD and musculoskeletal symptoms, along with exclusion of other causes of arthritis.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Psoriatic arthritis",
+        "Reactive arthritis",
+        "Gout"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (e.g., ibuprofen) for pain relief",
+          "Corticosteroids for acute exacerbations"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate or sulfasalazine"
+        ],
+        "procedures": [
+          "Joint injections with corticosteroids for localized arthritis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term management of IBD with 5-ASA compounds or biologics (e.g., infliximab, adalimumab)",
+          "Physical therapy for joint mobility"
+        ],
+        "secondLine": [
+          "Consideration of DMARDs if symptoms persist despite IBD control"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and medication side effects",
+          "Screening for osteoporosis if on long-term corticosteroids"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Infliximab",
+          "mechanism": "TNF-alpha inhibitor that reduces inflammation in both IBD and associated arthropathy.",
+          "dosing": "5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks.",
+          "sideEffects": "Infection risk, infusion reactions, potential malignancy risk.",
+          "notes": "Monitor for signs of infection and infusion reactions."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "DMARD that inhibits purine metabolism, reducing inflammation.",
+          "dosing": "7.5-25 mg orally once weekly.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Sulfasalazine",
+          "mechanism": "5-ASA compound that reduces inflammation in the gut and joints.",
+          "dosing": "500 mg to 1 g orally, increasing to 2-3 g/day.",
+          "sideEffects": "Nausea, headache, rash, potential for hypersensitivity reactions.",
+          "notes": "Monitor liver function and blood counts."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint injection",
+          "description": "Injection of corticosteroids into the affected joint to reduce inflammation and pain.",
+          "indications": "Localized arthritis unresponsive to systemic treatment.",
+          "risks": "Infection, joint damage, transient increase in pain post-injection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for IBD arthropathy is generally good with appropriate management of both the IBD and the arthropathy. Many patients experience significant improvement with treatment.",
+    "complications": [
+      "Joint damage if untreated",
+      "Increased risk of osteoporosis due to corticosteroid use",
+      "Potential for systemic complications related to IBD"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of IBD arthropathy, initiate appropriate investigations, and manage acute symptoms. They should also be aware of the need for multidisciplinary care involving rheumatology and gastroenterology.",
+    "escalation": "Refer to a rheumatologist if there is severe joint involvement, inadequate response to initial treatment, or if there are concerns about systemic illness.",
+    "keySafetyConsiderations": "Monitor for signs of infection in patients on immunosuppressive therapy, assess for gastrointestinal symptoms that may indicate IBD flare, and ensure regular follow-up for medication side effects."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "iritis",
+  "name": "Iritis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:41:02.904483",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Iritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIritis is an inflammation of the iris, the colored part of the eye, which can lead to pain, redness, and vision changes. It is a type of anterior uveitis.\n\n### Epidemiology\nIritis is relatively common, with an estimated incidence of 6.2 cases per 100,000 person-years. It can occur at any age but is most prevalent in individuals aged 20-50 years.\n\n### Essential Pathophysiology\nIritis is often caused by autoimmune disorders, infections, or trauma. The inflammation leads to the accumulation of inflammatory cells in the anterior chamber of the eye, resulting in symptoms such as pain and photophobia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Eye pain\n- Photophobia (sensitivity to light)\n- Redness of the eye\n- Blurred vision\n- Tearing\n\n### Key Signs\n- Conjunctival injection (redness)\n- Miosis (constricted pupil)\n- Keratic precipitates (deposits on the corneal endothelium)\n- Increased intraocular pressure (IOP)\n- Hypopyon (pus in the anterior chamber)\n\n### Atypical Presentations\n- Unilateral symptoms\n- Chronic recurrent episodes\n- Associated systemic symptoms (e.g., joint pain in ankylosing spondylitis)\n\n### Red Flags Requiring Immediate Action\n- Severe eye pain\n- Sudden vision loss\n- Presence of hypopyon\n- Systemic symptoms suggestive of infection or autoimmune disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Slit-lamp examination to assess the anterior chamber\n- Intraocular pressure measurement\n\n### Second-line Investigations\n- Fundoscopy to evaluate the retina and optic nerve\n- Blood tests for autoimmune markers (e.g., HLA-B27, ANA)\n\n### Specialist Tests\n- Anterior chamber paracentesis (if infection is suspected)\n- Imaging studies (e.g., MRI for associated systemic conditions)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms, signs, and slit-lamp examination findings. The presence of keratic precipitates and anterior chamber inflammation is indicative of iritis.\n\n### Key Differential Diagnoses to Exclude\n- Conjunctivitis\n- Scleritis\n- Glaucoma\n- Corneal ulcer\n- Uveitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (e.g., prednisolone acetate 1% eye drops)\n- Cycloplegic agents (e.g., atropine 1% eye drops)\n\n#### Second-line Treatments\n- Oral corticosteroids for severe cases or if topical treatment fails\n\n#### Emergency Procedures\n- Anterior chamber paracentesis for diagnostic or therapeutic purposes in cases of suspected infection or high intraocular pressure.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term topical corticosteroids with tapering as inflammation resolves\n- Regular follow-up with an ophthalmologist\n\n#### Second-line Treatments\n- Immunosuppressive therapy (e.g., methotrexate) for recurrent cases\n\n#### Monitoring Requirements\n- Regular visual acuity checks\n- Intraocular pressure monitoring\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone acetate\n- **Mechanism of Action**: Corticosteroid that reduces inflammation\n- **Typical Dosing Range**: 1 drop every 1-2 hours initially, tapering as symptoms improve\n- **Key Side Effects/Contraindications**: Increased intraocular pressure, cataract formation\n- **When to Use vs. Alternatives**: Monitor IOP regularly during treatment.\n\n#### Atropine\n- **Mechanism of Action**: Cycloplegic agent that dilates the pupil and relieves pain\n- **Typical Dosing Range**: 1 drop 1-2 times daily\n- **Key Side Effects/Contraindications**: Dry mouth, blurred vision, photophobia\n- **When to Use vs. Alternatives**: Use with caution in elderly patients.\n\n### Procedures\n\n#### Anterior chamber paracentesis\n- **What it Involves**: A procedure to withdraw fluid from the anterior chamber of the eye using a fine needle.\n- **Indications**: Suspected infectious uveitis, high intraocular pressure, or diagnostic purposes.\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, corneal damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for iritis is generally good with appropriate treatment, but complications such as glaucoma, cataract formation, and vision loss can occur if left untreated.\n\n### Important Complications to Watch For\n- Glaucoma\n- Cataract formation\n- Vision loss\n- Chronic uveitis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of iritis, perform initial assessments, and refer patients to ophthalmology for further management. They should also monitor patients for complications during follow-up.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology if there is severe pain, vision loss, or if the patient does not respond to initial treatment within 48 hours.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and use of personal protective equipment when examining patients. Monitor for signs of increased intraocular pressure and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "Iritis is an inflammation of the iris, the colored part of the eye, which can lead to pain, redness, and vision changes. It is a type of anterior uveitis.",
+      "epidemiology": "Iritis is relatively common, with an estimated incidence of 6.2 cases per 100,000 person-years. It can occur at any age but is most prevalent in individuals aged 20-50 years.",
+      "pathophysiology": "Iritis is often caused by autoimmune disorders, infections, or trauma. The inflammation leads to the accumulation of inflammatory cells in the anterior chamber of the eye, resulting in symptoms such as pain and photophobia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Eye pain",
+        "Photophobia (sensitivity to light)",
+        "Redness of the eye",
+        "Blurred vision",
+        "Tearing"
+      ],
+      "signs": [
+        "Conjunctival injection (redness)",
+        "Miosis (constricted pupil)",
+        "Keratic precipitates (deposits on the corneal endothelium)",
+        "Increased intraocular pressure (IOP)",
+        "Hypopyon (pus in the anterior chamber)"
+      ],
+      "atypicalPresentations": [
+        "Unilateral symptoms",
+        "Chronic recurrent episodes",
+        "Associated systemic symptoms (e.g., joint pain in ankylosing spondylitis)"
+      ],
+      "redFlags": [
+        "Severe eye pain",
+        "Sudden vision loss",
+        "Presence of hypopyon",
+        "Systemic symptoms suggestive of infection or autoimmune disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Slit-lamp examination to assess the anterior chamber",
+        "Intraocular pressure measurement"
+      ],
+      "secondLine": [
+        "Fundoscopy to evaluate the retina and optic nerve",
+        "Blood tests for autoimmune markers (e.g., HLA-B27, ANA)"
+      ],
+      "specialistTests": [
+        "Anterior chamber paracentesis (if infection is suspected)",
+        "Imaging studies (e.g., MRI for associated systemic conditions)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms, signs, and slit-lamp examination findings. The presence of keratic precipitates and anterior chamber inflammation is indicative of iritis.",
+      "differentials": [
+        "Conjunctivitis",
+        "Scleritis",
+        "Glaucoma",
+        "Corneal ulcer",
+        "Uveitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (e.g., prednisolone acetate 1% eye drops)",
+          "Cycloplegic agents (e.g., atropine 1% eye drops)"
+        ],
+        "secondLine": [
+          "Oral corticosteroids for severe cases or if topical treatment fails"
+        ],
+        "procedures": [
+          "Anterior chamber paracentesis for diagnostic or therapeutic purposes in cases of suspected infection or high intraocular pressure."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term topical corticosteroids with tapering as inflammation resolves",
+          "Regular follow-up with an ophthalmologist"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (e.g., methotrexate) for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular visual acuity checks",
+          "Intraocular pressure monitoring"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone acetate",
+          "mechanism": "Corticosteroid that reduces inflammation",
+          "dosing": "1 drop every 1-2 hours initially, tapering as symptoms improve",
+          "sideEffects": "Increased intraocular pressure, cataract formation",
+          "notes": "Monitor IOP regularly during treatment."
+        },
+        {
+          "name": "Atropine",
+          "mechanism": "Cycloplegic agent that dilates the pupil and relieves pain",
+          "dosing": "1 drop 1-2 times daily",
+          "sideEffects": "Dry mouth, blurred vision, photophobia",
+          "notes": "Use with caution in elderly patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Anterior chamber paracentesis",
+          "description": "A procedure to withdraw fluid from the anterior chamber of the eye using a fine needle.",
+          "indications": "Suspected infectious uveitis, high intraocular pressure, or diagnostic purposes.",
+          "risks": "Infection, bleeding, retinal detachment, corneal damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for iritis is generally good with appropriate treatment, but complications such as glaucoma, cataract formation, and vision loss can occur if left untreated.",
+    "complications": [
+      "Glaucoma",
+      "Cataract formation",
+      "Vision loss",
+      "Chronic uveitis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of iritis, perform initial assessments, and refer patients to ophthalmology for further management. They should also monitor patients for complications during follow-up.",
+    "escalation": "Refer to ophthalmology if there is severe pain, vision loss, or if the patient does not respond to initial treatment within 48 hours.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and use of personal protective equipment when examining patients. Monitor for signs of increased intraocular pressure and educate patients on the importance of follow-up appointments."
+  }
+}

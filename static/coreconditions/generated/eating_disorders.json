@@ -1,0 +1,135 @@
+{
+  "id": "eating_disorders",
+  "name": "Eating disorders?",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:49:10.286980",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Eating disorders?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEating disorders are a group of mental health conditions characterized by abnormal or disturbed eating habits, which can significantly impact physical health, emotional well-being, and social functioning.\n\n### Epidemiology\nEating disorders affect individuals of all ages, genders, and backgrounds, with a higher prevalence in adolescents and young adults. Anorexia nervosa has a lifetime prevalence of approximately 0.9% in women and 0.3% in men, while bulimia nervosa affects about 1.5% of women and 0.5% of men. Binge eating disorder is the most common, affecting about 3.5% of women and 2% of men.\n\n### Essential Pathophysiology\nThe pathophysiology of eating disorders is complex and multifactorial, involving genetic, biological, psychological, and sociocultural factors. Neurotransmitter imbalances (e.g., serotonin, dopamine), hormonal changes, and personality traits (e.g., perfectionism, anxiety) contribute to the development and maintenance of these disorders.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe restriction of food intake\n- Binge eating episodes\n- Purging behaviors (vomiting, laxative use)\n- Preoccupation with weight, body shape, and food\n- Extreme mood swings\n- Social withdrawal\n\n### Key Signs\n- Significant weight loss or gain\n- Bradycardia or hypotension\n- Electrolyte imbalances\n- Dental erosion (in bulimia)\n- Lanugo (fine body hair in anorexia)\n- Cold intolerance\n\n### Atypical Presentations\n- Eating disorder not otherwise specified (EDNOS)\n- Subclinical symptoms without meeting full criteria\n- Eating disorders in older adults\n\n### Red Flags Requiring Immediate Action\n- Rapid weight loss (>15% of body weight in 3 months)\n- Severe electrolyte disturbances\n- Suicidal ideation\n- Severe malnutrition\n- Cardiac arrhythmias\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Routine blood tests (CBC, electrolytes, liver function tests)\n- BMI calculation\n\n### Second-line Investigations\n- Electrocardiogram (ECG) to assess for cardiac complications\n- Psychiatric evaluation\n\n### Specialist Tests\n- Nutritional assessment by a dietitian\n- Endoscopy if gastrointestinal complications are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 criteria, which include specific behaviors and attitudes towards food, body weight, and shape. For example, anorexia nervosa is characterized by restriction of energy intake leading to significantly low body weight, intense fear of gaining weight, and disturbance in self-perceived weight.\n\n### Key Differential Diagnoses to Exclude\n- Gastrointestinal disorders (e.g., celiac disease, gastroparesis)\n- Thyroid disorders (e.g., hyperthyroidism)\n- Depression and anxiety disorders\n- Substance use disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hospitalization for severe cases (e.g., significant malnutrition, electrolyte imbalances)\n- Nutritional rehabilitation (enteral feeding if necessary)\n- Psychiatric support\n\n#### Second-line Treatments\n- Cognitive Behavioral Therapy (CBT)\n- Family-based therapy (FBT) for adolescents\n\n#### Emergency Procedures\n- Nasogastric tube placement for feeding in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Outpatient therapy (CBT, dialectical behavior therapy)\n- Nutritional counseling and support\n\n#### Second-line Treatments\n- Medication (SSRIs for bulimia and binge eating disorder)\n- Group therapy\n\n#### Monitoring Requirements\n- Regular follow-up for weight, mental health status, and nutritional intake\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose of 20 mg daily, can be increased to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, weight gain.\n- **When to Use vs. Alternatives**: Effective for bulimia nervosa and binge eating disorder.\n\n#### Olanzapine\n- **Mechanism of Action**: Atypical antipsychotic that may help with weight gain and mood stabilization.\n- **Typical Dosing Range**: Starting dose of 5 mg daily, can be adjusted based on clinical response.\n- **Key Side Effects/Contraindications**: Sedation, weight gain, metabolic syndrome.\n- **When to Use vs. Alternatives**: Considered for anorexia nervosa in cases of severe anxiety or mood disturbance.\n\n### Procedures\n\n#### Nasogastric feeding\n- **What it Involves**: Insertion of a tube through the nose into the stomach to provide nutrition.\n- **Indications**: Severe malnutrition or inability to maintain adequate oral intake.\n- **Key Risks/Complications**: Nasal trauma, esophageal injury, aspiration pneumonia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for eating disorders varies; early intervention and treatment can lead to better outcomes. Anorexia nervosa has the highest mortality rate of any psychiatric disorder, while binge eating disorder has a better prognosis with appropriate treatment.\n\n### Important Complications to Watch For\n- Cardiovascular complications (arrhythmias, heart failure)\n- Gastrointestinal issues (constipation, gastroparesis)\n- Bone density loss (osteoporosis)\n- Electrolyte imbalances leading to seizures or cardiac arrest\n- Psychiatric comorbidities (depression, anxiety)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs and symptoms of eating disorders, conduct initial assessments, provide supportive care, and refer to appropriate mental health and nutritional services. They should also monitor for complications and ensure safe discharge planning.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe malnutrition, electrolyte imbalances, or suicidal ideation, immediate referral to a specialist team (e.g., psychiatrist, dietitian) is necessary. Hospitalization may be required for stabilization.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially in patients with significant weight loss or electrolyte disturbances. Be aware of the risk of refeeding syndrome in malnourished patients when initiating nutritional rehabilitation.\n",
+  "content": {
+    "overview": {
+      "definition": "Eating disorders are a group of mental health conditions characterized by abnormal or disturbed eating habits, which can significantly impact physical health, emotional well-being, and social functioning.",
+      "epidemiology": "Eating disorders affect individuals of all ages, genders, and backgrounds, with a higher prevalence in adolescents and young adults. Anorexia nervosa has a lifetime prevalence of approximately 0.9% in women and 0.3% in men, while bulimia nervosa affects about 1.5% of women and 0.5% of men. Binge eating disorder is the most common, affecting about 3.5% of women and 2% of men.",
+      "pathophysiology": "The pathophysiology of eating disorders is complex and multifactorial, involving genetic, biological, psychological, and sociocultural factors. Neurotransmitter imbalances (e.g., serotonin, dopamine), hormonal changes, and personality traits (e.g., perfectionism, anxiety) contribute to the development and maintenance of these disorders."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe restriction of food intake",
+        "Binge eating episodes",
+        "Purging behaviors (vomiting, laxative use)",
+        "Preoccupation with weight, body shape, and food",
+        "Extreme mood swings",
+        "Social withdrawal"
+      ],
+      "signs": [
+        "Significant weight loss or gain",
+        "Bradycardia or hypotension",
+        "Electrolyte imbalances",
+        "Dental erosion (in bulimia)",
+        "Lanugo (fine body hair in anorexia)",
+        "Cold intolerance"
+      ],
+      "atypicalPresentations": [
+        "Eating disorder not otherwise specified (EDNOS)",
+        "Subclinical symptoms without meeting full criteria",
+        "Eating disorders in older adults"
+      ],
+      "redFlags": [
+        "Rapid weight loss (>15% of body weight in 3 months)",
+        "Severe electrolyte disturbances",
+        "Suicidal ideation",
+        "Severe malnutrition",
+        "Cardiac arrhythmias"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Routine blood tests (CBC, electrolytes, liver function tests)",
+        "BMI calculation"
+      ],
+      "secondLine": [
+        "Electrocardiogram (ECG) to assess for cardiac complications",
+        "Psychiatric evaluation"
+      ],
+      "specialistTests": [
+        "Nutritional assessment by a dietitian",
+        "Endoscopy if gastrointestinal complications are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 criteria, which include specific behaviors and attitudes towards food, body weight, and shape. For example, anorexia nervosa is characterized by restriction of energy intake leading to significantly low body weight, intense fear of gaining weight, and disturbance in self-perceived weight.",
+      "differentials": [
+        "Gastrointestinal disorders (e.g., celiac disease, gastroparesis)",
+        "Thyroid disorders (e.g., hyperthyroidism)",
+        "Depression and anxiety disorders",
+        "Substance use disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hospitalization for severe cases (e.g., significant malnutrition, electrolyte imbalances)",
+          "Nutritional rehabilitation (enteral feeding if necessary)",
+          "Psychiatric support"
+        ],
+        "secondLine": [
+          "Cognitive Behavioral Therapy (CBT)",
+          "Family-based therapy (FBT) for adolescents"
+        ],
+        "procedures": [
+          "Nasogastric tube placement for feeding in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Outpatient therapy (CBT, dialectical behavior therapy)",
+          "Nutritional counseling and support"
+        ],
+        "secondLine": [
+          "Medication (SSRIs for bulimia and binge eating disorder)",
+          "Group therapy"
+        ],
+        "monitoring": [
+          "Regular follow-up for weight, mental health status, and nutritional intake"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Starting dose of 20 mg daily, can be increased to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, weight gain.",
+          "notes": "Effective for bulimia nervosa and binge eating disorder."
+        },
+        {
+          "name": "Olanzapine",
+          "mechanism": "Atypical antipsychotic that may help with weight gain and mood stabilization.",
+          "dosing": "Starting dose of 5 mg daily, can be adjusted based on clinical response.",
+          "sideEffects": "Sedation, weight gain, metabolic syndrome.",
+          "notes": "Considered for anorexia nervosa in cases of severe anxiety or mood disturbance."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nasogastric feeding",
+          "description": "Insertion of a tube through the nose into the stomach to provide nutrition.",
+          "indications": "Severe malnutrition or inability to maintain adequate oral intake.",
+          "risks": "Nasal trauma, esophageal injury, aspiration pneumonia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for eating disorders varies; early intervention and treatment can lead to better outcomes. Anorexia nervosa has the highest mortality rate of any psychiatric disorder, while binge eating disorder has a better prognosis with appropriate treatment.",
+    "complications": [
+      "Cardiovascular complications (arrhythmias, heart failure)",
+      "Gastrointestinal issues (constipation, gastroparesis)",
+      "Bone density loss (osteoporosis)",
+      "Electrolyte imbalances leading to seizures or cardiac arrest",
+      "Psychiatric comorbidities (depression, anxiety)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs and symptoms of eating disorders, conduct initial assessments, provide supportive care, and refer to appropriate mental health and nutritional services. They should also monitor for complications and ensure safe discharge planning.",
+    "escalation": "If a patient presents with severe malnutrition, electrolyte imbalances, or suicidal ideation, immediate referral to a specialist team (e.g., psychiatrist, dietitian) is necessary. Hospitalization may be required for stabilization.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially in patients with significant weight loss or electrolyte disturbances. Be aware of the risk of refeeding syndrome in malnourished patients when initiating nutritional rehabilitation."
+  }
+}

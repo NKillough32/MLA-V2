@@ -1,0 +1,142 @@
+{
+  "id": "anaphylaxis",
+  "name": "Anaphylaxis",
+  "domains": [
+    "Immunology",
+    "Respiratory",
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:02:49.323441",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anaphylaxis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnaphylaxis is a severe, potentially life-threatening allergic reaction that occurs rapidly after exposure to an allergen.\n\n### Epidemiology\nAnaphylaxis affects approximately 1-2% of the population, with increasing incidence reported in recent years. Common triggers include food (e.g., peanuts, tree nuts, shellfish), insect stings, medications, and latex.\n\n### Essential Pathophysiology\nAnaphylaxis is mediated by immunological mechanisms, primarily involving IgE antibodies that trigger mast cell and basophil degranulation, leading to the release of histamine and other inflammatory mediators. This results in widespread vasodilation, increased vascular permeability, bronchoconstriction, and potential cardiovascular collapse.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Difficulty breathing\n- Swelling of the face, lips, or throat\n- Hives or rash\n- Abdominal pain or cramping\n- Nausea or vomiting\n- Dizziness or fainting\n\n### Key Signs\n- Wheezing or stridor\n- Tachycardia\n- Hypotension\n- Altered mental status\n- Urticaria or angioedema\n\n### Atypical Presentations\n- Delayed onset (up to several hours after exposure)\n- Atypical symptoms such as gastrointestinal symptoms without respiratory involvement\n\n### Red Flags Requiring Immediate Action\n- Rapid onset of symptoms after exposure to a known allergen\n- History of previous anaphylaxis\n- Signs of shock (e.g., hypotension, altered consciousness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n\n### Second-line Investigations\n- Serum tryptase levels (within 1-2 hours of reaction)\n- Allergy testing (skin prick tests or specific IgE tests)\n\n### Specialist Tests\n- Referral to an allergist for comprehensive evaluation and management\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of anaphylaxis is clinical, based on the presence of acute onset of symptoms following exposure to a known allergen, with involvement of the skin, respiratory, gastrointestinal, or cardiovascular systems.\n\n### Key Differential Diagnoses to Exclude\n- Anaphylactoid reaction\n- Vasovagal syncope\n- Asthma exacerbation\n- Acute coronary syndrome\n- Sepsis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer epinephrine intramuscularly (0.5 mg for adults, 0.01 mg/kg for children)\n\n#### Second-line Treatments\n- Administer oxygen if hypoxic\n- IV fluids for hypotension\n- Antihistamines (e.g., diphenhydramine) for adjunctive treatment\n\n#### Emergency Procedures\n- Airway management (intubation if necessary)\n- IV access for fluid resuscitation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Patient education on avoidance of known allergens\n- Prescription of an epinephrine auto-injector\n\n#### Second-line Treatments\n- Referral to an allergist for further evaluation and management\n\n#### Monitoring Requirements\n- Regular follow-up to assess for new allergies or changes in severity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Epinephrine\n- **Mechanism of Action**: Alpha and beta-adrenergic agonist, causing vasoconstriction, bronchodilation, and reduced vascular permeability.\n- **Typical Dosing Range**: 0.5 mg (0.5 mL of 1:1000 solution) intramuscularly, repeat every 5-15 minutes as needed.\n- **Key Side Effects/Contraindications**: Tachycardia, hypertension, anxiety, tremors.\n- **When to Use vs. Alternatives**: First-line treatment for anaphylaxis; administer in the mid-anterolateral thigh.\n\n#### Diphenhydramine\n- **Mechanism of Action**: H1 receptor antagonist, reducing histamine effects.\n- **Typical Dosing Range**: 25-50 mg orally or IV, repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, dizziness.\n- **When to Use vs. Alternatives**: Used as adjunctive therapy.\n\n#### Hydrocortisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: 200 mg IV for adults, 4 mg/kg for children.\n- **Key Side Effects/Contraindications**: Hyperglycemia, gastrointestinal upset, delayed wound healing.\n- **When to Use vs. Alternatives**: Used in severe cases to prevent biphasic reactions.\n\n### Procedures\n\n#### Airway management\n- **What it Involves**: Intervention to secure the airway in cases of severe respiratory distress or failure.\n- **Indications**: Severe airway compromise, inability to maintain oxygenation.\n- **Key Risks/Complications**: Intubation risks include trauma to the airway, infection, and complications from sedation.\n\n#### Intravenous access\n- **What it Involves**: Establishing IV access for fluid resuscitation and medication administration.\n- **Indications**: Hypotension, severe anaphylaxis requiring rapid intervention.\n- **Key Risks/Complications**: Infection, phlebitis, infiltration.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis for anaphylaxis is generally good. However, delayed treatment can lead to severe complications or death.\n\n### Important Complications to Watch For\n- Biphasic anaphylaxis (recurrence of symptoms after initial resolution)\n- Cardiovascular collapse\n- Respiratory failure\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of anaphylaxis, initiate immediate treatment with epinephrine, and ensure appropriate follow-up care and referral to specialists.\n\n### When to Escalate to Senior/Specialist\nIf symptoms do not improve after the first dose of epinephrine, administer a second dose and escalate care to senior medical staff or emergency services.\n\n### Key Safety Considerations\nEnsure that patients at risk of anaphylaxis have access to an epinephrine auto-injector and are educated on its use. Monitor patients closely for signs of biphasic reactions.\n",
+  "content": {
+    "overview": {
+      "definition": "Anaphylaxis is a severe, potentially life-threatening allergic reaction that occurs rapidly after exposure to an allergen.",
+      "epidemiology": "Anaphylaxis affects approximately 1-2% of the population, with increasing incidence reported in recent years. Common triggers include food (e.g., peanuts, tree nuts, shellfish), insect stings, medications, and latex.",
+      "pathophysiology": "Anaphylaxis is mediated by immunological mechanisms, primarily involving IgE antibodies that trigger mast cell and basophil degranulation, leading to the release of histamine and other inflammatory mediators. This results in widespread vasodilation, increased vascular permeability, bronchoconstriction, and potential cardiovascular collapse."
+    },
+    "recognition": {
+      "symptoms": [
+        "Difficulty breathing",
+        "Swelling of the face, lips, or throat",
+        "Hives or rash",
+        "Abdominal pain or cramping",
+        "Nausea or vomiting",
+        "Dizziness or fainting"
+      ],
+      "signs": [
+        "Wheezing or stridor",
+        "Tachycardia",
+        "Hypotension",
+        "Altered mental status",
+        "Urticaria or angioedema"
+      ],
+      "atypicalPresentations": [
+        "Delayed onset (up to several hours after exposure)",
+        "Atypical symptoms such as gastrointestinal symptoms without respiratory involvement"
+      ],
+      "redFlags": [
+        "Rapid onset of symptoms after exposure to a known allergen",
+        "History of previous anaphylaxis",
+        "Signs of shock (e.g., hypotension, altered consciousness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination"
+      ],
+      "secondLine": [
+        "Serum tryptase levels (within 1-2 hours of reaction)",
+        "Allergy testing (skin prick tests or specific IgE tests)"
+      ],
+      "specialistTests": [
+        "Referral to an allergist for comprehensive evaluation and management"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of anaphylaxis is clinical, based on the presence of acute onset of symptoms following exposure to a known allergen, with involvement of the skin, respiratory, gastrointestinal, or cardiovascular systems.",
+      "differentials": [
+        "Anaphylactoid reaction",
+        "Vasovagal syncope",
+        "Asthma exacerbation",
+        "Acute coronary syndrome",
+        "Sepsis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer epinephrine intramuscularly (0.5 mg for adults, 0.01 mg/kg for children)"
+        ],
+        "secondLine": [
+          "Administer oxygen if hypoxic",
+          "IV fluids for hypotension",
+          "Antihistamines (e.g., diphenhydramine) for adjunctive treatment"
+        ],
+        "procedures": [
+          "Airway management (intubation if necessary)",
+          "IV access for fluid resuscitation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Patient education on avoidance of known allergens",
+          "Prescription of an epinephrine auto-injector"
+        ],
+        "secondLine": [
+          "Referral to an allergist for further evaluation and management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for new allergies or changes in severity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Epinephrine",
+          "mechanism": "Alpha and beta-adrenergic agonist, causing vasoconstriction, bronchodilation, and reduced vascular permeability.",
+          "dosing": "0.5 mg (0.5 mL of 1:1000 solution) intramuscularly, repeat every 5-15 minutes as needed.",
+          "sideEffects": "Tachycardia, hypertension, anxiety, tremors.",
+          "notes": "First-line treatment for anaphylaxis; administer in the mid-anterolateral thigh."
+        },
+        {
+          "name": "Diphenhydramine",
+          "mechanism": "H1 receptor antagonist, reducing histamine effects.",
+          "dosing": "25-50 mg orally or IV, repeat every 4-6 hours as needed.",
+          "sideEffects": "Drowsiness, dry mouth, dizziness.",
+          "notes": "Used as adjunctive therapy."
+        },
+        {
+          "name": "Hydrocortisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "200 mg IV for adults, 4 mg/kg for children.",
+          "sideEffects": "Hyperglycemia, gastrointestinal upset, delayed wound healing.",
+          "notes": "Used in severe cases to prevent biphasic reactions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Airway management",
+          "description": "Intervention to secure the airway in cases of severe respiratory distress or failure.",
+          "indications": "Severe airway compromise, inability to maintain oxygenation.",
+          "risks": "Intubation risks include trauma to the airway, infection, and complications from sedation."
+        },
+        {
+          "name": "Intravenous access",
+          "description": "Establishing IV access for fluid resuscitation and medication administration.",
+          "indications": "Hypotension, severe anaphylaxis requiring rapid intervention.",
+          "risks": "Infection, phlebitis, infiltration."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis for anaphylaxis is generally good. However, delayed treatment can lead to severe complications or death.",
+    "complications": [
+      "Biphasic anaphylaxis (recurrence of symptoms after initial resolution)",
+      "Cardiovascular collapse",
+      "Respiratory failure",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of anaphylaxis, initiate immediate treatment with epinephrine, and ensure appropriate follow-up care and referral to specialists.",
+    "escalation": "If symptoms do not improve after the first dose of epinephrine, administer a second dose and escalate care to senior medical staff or emergency services.",
+    "keySafetyConsiderations": "Ensure that patients at risk of anaphylaxis have access to an epinephrine auto-injector and are educated on its use. Monitor patients closely for signs of biphasic reactions."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "varicella_zoster",
+  "name": "Varicella zoster",
+  "domains": [
+    "Dermatology",
+    "Obstetrics",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:21:54.392737",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Varicella zoster: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVaricella zoster virus (VZV) is a highly contagious virus that causes chickenpox (varicella) in children and can reactivate later in life to cause shingles (herpes zoster).\n\n### Epidemiology\nVaricella is most common in children under 12 years of age, with peak incidence between 1-5 years. In the UK, the incidence has decreased due to the introduction of the varicella vaccination program. Shingles occurs in approximately 1 in 3 people who have had chickenpox, with incidence increasing with age.\n\n### Essential Pathophysiology\nVZV is an alpha-herpesvirus that initially infects the respiratory tract and then spreads to the skin, causing a vesicular rash. After primary infection, the virus remains dormant in the sensory ganglia and can reactivate later, leading to shingles.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Malaise\n- Itchy vesicular rash\n- Loss of appetite\n\n### Key Signs\n- Maculopapular rash progressing to vesicles and crusts\n- Lymphadenopathy\n- Mild conjunctivitis\n\n### Atypical Presentations\n- Rash may be less vesicular in vaccinated individuals\n- Severe disease in immunocompromised patients\n\n### Red Flags Requiring Immediate Action\n- Severe headache or neck stiffness (meningitis)\n- Respiratory distress\n- Secondary bacterial infection of lesions\n- Immunocompromised status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and examination\n- Viral culture from vesicular fluid\n\n### Second-line Investigations\n- Serology for VZV IgM and IgG (to confirm recent infection)\n- PCR testing of vesicular fluid for VZV\n\n### Specialist Tests\n- Lumbar puncture if neurological symptoms are present (to rule out meningitis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the characteristic rash and associated symptoms. Serological tests can confirm the diagnosis in atypical cases.\n\n### Key Differential Diagnoses to Exclude\n- Herpes simplex virus infection\n- Hand, foot and mouth disease\n- Impetigo\n- Contact dermatitis\n- Scabies\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (antipyretics, antihistamines for itching)\n- Isolation to prevent spread\n\n#### Second-line Treatments\n- Acyclovir for severe cases or at-risk patients (e.g., immunocompromised)\n\n#### Emergency Procedures\n- Incision and drainage for secondary bacterial infections of vesicles\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vaccination for at-risk populations (e.g., healthcare workers, immunocompromised)\n\n#### Second-line Treatments\n- Pain management for postherpetic neuralgia (e.g., gabapentin, amitriptyline)\n\n#### Monitoring Requirements\n- Monitor for complications such as pneumonia or encephalitis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Antiviral that inhibits viral DNA synthesis\n- **Typical Dosing Range**: Initial: 10 mg/kg IV every 8 hours for 7 days (for severe cases)\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache, renal toxicity\n- **When to Use vs. Alternatives**: Effective in reducing the severity and duration of varicella in high-risk patients.\n\n#### Gabapentin\n- **Mechanism of Action**: Calcium channel modulator that reduces neuropathic pain\n- **Typical Dosing Range**: Start at 300 mg orally at bedtime, titrate as needed\n- **Key Side Effects/Contraindications**: Dizziness, fatigue, peripheral edema\n- **When to Use vs. Alternatives**: Used for postherpetic neuralgia.\n\n#### Aspirin\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 500 mg every 4-6 hours as needed (not in children due to Reye's syndrome risk)\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, renal impairment\n- **When to Use vs. Alternatives**: Avoid in children with varicella due to risk of Reye's syndrome.\n\n### Procedures\n\n#### Incision and drainage\n- **What it Involves**: Surgical procedure to drain pus from infected vesicles\n- **Indications**: Secondary bacterial infection of varicella lesions\n- **Key Risks/Complications**: Scarring, further infection, bleeding\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children recover fully from varicella without complications. However, complications can occur, especially in immunocompromised individuals, leading to pneumonia, encephalitis, or secondary bacterial infections.\n\n### Important Complications to Watch For\n- Bacterial superinfection of skin lesions\n- Pneumonia\n- Encephalitis\n- Thrombocytopenic purpura\n- Postherpetic neuralgia (in shingles)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize varicella, provide supportive care, and identify patients who require antiviral treatment or further investigation. They should also educate patients and families about the disease and its complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if the patient is immunocompromised, has severe symptoms, or if there are concerns about complications such as pneumonia or encephalitis.\n\n### Key Safety Considerations\nEnsure proper isolation of patients with varicella to prevent transmission. Be cautious in prescribing aspirin to children due to the risk of Reye's syndrome. Monitor for signs of complications, especially in high-risk groups.\n",
+  "content": {
+    "overview": {
+      "definition": "Varicella zoster virus (VZV) is a highly contagious virus that causes chickenpox (varicella) in children and can reactivate later in life to cause shingles (herpes zoster).",
+      "epidemiology": "Varicella is most common in children under 12 years of age, with peak incidence between 1-5 years. In the UK, the incidence has decreased due to the introduction of the varicella vaccination program. Shingles occurs in approximately 1 in 3 people who have had chickenpox, with incidence increasing with age.",
+      "pathophysiology": "VZV is an alpha-herpesvirus that initially infects the respiratory tract and then spreads to the skin, causing a vesicular rash. After primary infection, the virus remains dormant in the sensory ganglia and can reactivate later, leading to shingles."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Malaise",
+        "Itchy vesicular rash",
+        "Loss of appetite"
+      ],
+      "signs": [
+        "Maculopapular rash progressing to vesicles and crusts",
+        "Lymphadenopathy",
+        "Mild conjunctivitis"
+      ],
+      "atypicalPresentations": [
+        "Rash may be less vesicular in vaccinated individuals",
+        "Severe disease in immunocompromised patients"
+      ],
+      "redFlags": [
+        "Severe headache or neck stiffness (meningitis)",
+        "Respiratory distress",
+        "Secondary bacterial infection of lesions",
+        "Immunocompromised status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and examination",
+        "Viral culture from vesicular fluid"
+      ],
+      "secondLine": [
+        "Serology for VZV IgM and IgG (to confirm recent infection)",
+        "PCR testing of vesicular fluid for VZV"
+      ],
+      "specialistTests": [
+        "Lumbar puncture if neurological symptoms are present (to rule out meningitis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the characteristic rash and associated symptoms. Serological tests can confirm the diagnosis in atypical cases.",
+      "differentials": [
+        "Herpes simplex virus infection",
+        "Hand, foot and mouth disease",
+        "Impetigo",
+        "Contact dermatitis",
+        "Scabies"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (antipyretics, antihistamines for itching)",
+          "Isolation to prevent spread"
+        ],
+        "secondLine": [
+          "Acyclovir for severe cases or at-risk patients (e.g., immunocompromised)"
+        ],
+        "procedures": [
+          "Incision and drainage for secondary bacterial infections of vesicles"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vaccination for at-risk populations (e.g., healthcare workers, immunocompromised)"
+        ],
+        "secondLine": [
+          "Pain management for postherpetic neuralgia (e.g., gabapentin, amitriptyline)"
+        ],
+        "monitoring": [
+          "Monitor for complications such as pneumonia or encephalitis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Antiviral that inhibits viral DNA synthesis",
+          "dosing": "Initial: 10 mg/kg IV every 8 hours for 7 days (for severe cases)",
+          "sideEffects": "Nausea, diarrhea, headache, renal toxicity",
+          "notes": "Effective in reducing the severity and duration of varicella in high-risk patients."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Calcium channel modulator that reduces neuropathic pain",
+          "dosing": "Start at 300 mg orally at bedtime, titrate as needed",
+          "sideEffects": "Dizziness, fatigue, peripheral edema",
+          "notes": "Used for postherpetic neuralgia."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "500 mg every 4-6 hours as needed (not in children due to Reye's syndrome risk)",
+          "sideEffects": "Gastrointestinal bleeding, renal impairment",
+          "notes": "Avoid in children with varicella due to risk of Reye's syndrome."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage",
+          "description": "Surgical procedure to drain pus from infected vesicles",
+          "indications": "Secondary bacterial infection of varicella lesions",
+          "risks": "Scarring, further infection, bleeding"
+        }
+      ]
+    },
+    "prognosis": "Most children recover fully from varicella without complications. However, complications can occur, especially in immunocompromised individuals, leading to pneumonia, encephalitis, or secondary bacterial infections.",
+    "complications": [
+      "Bacterial superinfection of skin lesions",
+      "Pneumonia",
+      "Encephalitis",
+      "Thrombocytopenic purpura",
+      "Postherpetic neuralgia (in shingles)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize varicella, provide supportive care, and identify patients who require antiviral treatment or further investigation. They should also educate patients and families about the disease and its complications.",
+    "escalation": "Refer to a senior clinician if the patient is immunocompromised, has severe symptoms, or if there are concerns about complications such as pneumonia or encephalitis.",
+    "keySafetyConsiderations": "Ensure proper isolation of patients with varicella to prevent transmission. Be cautious in prescribing aspirin to children due to the risk of Reye's syndrome. Monitor for signs of complications, especially in high-risk groups."
+  }
+}

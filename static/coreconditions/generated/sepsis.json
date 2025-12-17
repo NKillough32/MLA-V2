@@ -1,0 +1,147 @@
+{
+  "id": "sepsis",
+  "name": "Sepsis",
+  "domains": [
+    "Infection",
+    "Anaesthesia and Critical Care",
+    "Post-operative care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:05:23.342380",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Sepsis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSepsis is a life-threatening organ dysfunction caused by a dysregulated host response to infection. It is characterized by a systemic inflammatory response to infection that can lead to tissue damage, organ failure, and death.\n\n### Epidemiology\nSepsis affects millions of people worldwide each year, with an estimated incidence of 48.9 cases per 100,000 population in the UK. It is more common in the elderly, immunocompromised individuals, and those with chronic illnesses.\n\n### Essential Pathophysiology\nSepsis occurs when an infection triggers a systemic inflammatory response, leading to widespread inflammation, vasodilation, increased vascular permeability, and ultimately, multi-organ dysfunction. The inflammatory response can be exacerbated by the release of pro-inflammatory cytokines and the activation of the coagulation cascade.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever or hypothermia\n- Tachycardia\n- Tachypnoea\n- Altered mental status\n- Chills\n- Malaise\n- Nausea and vomiting\n\n### Key Signs\n- Hypotension\n- Oliguria or anuria\n- Cool, clammy skin\n- Altered capillary refill time\n- Bounding pulses\n- Respiratory distress\n\n### Atypical Presentations\n- Confusion or delirium in elderly patients\n- Absence of fever in immunocompromised patients\n- Localized infection without systemic signs\n\n### Red Flags Requiring Immediate Action\n- Systolic blood pressure <90 mmHg\n- Heart rate >130 bpm\n- Respiratory rate >25 breaths/min\n- Altered mental status\n- Oliguria (<0.5 mL/kg/hr)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures (before antibiotics)\n- Lactate level\n- Basic metabolic panel (BMP)\n- Urinalysis\n\n### Second-line Investigations\n- Procalcitonin levels\n- Chest X-ray\n- CT scan of suspected infection site\n- Ultrasound if indicated\n\n### Specialist Tests\n- Bronchoscopy for suspected pneumonia\n- Lumbar puncture for suspected meningitis\n- Endoscopy for gastrointestinal sources\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nSepsis is diagnosed using the Sepsis-3 criteria, which includes a suspected or confirmed infection and an increase of 2 or more points on the Sequential Organ Failure Assessment (SOFA) score.\n\n### Key Differential Diagnoses to Exclude\n- Severe pneumonia\n- Acute pancreatitis\n- Acute myocardial infarction\n- Pulmonary embolism\n- Acute kidney injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam, ceftriaxone)\n- IV fluids (crystalloids) 30 mL/kg within the first 3 hours\n- Vasopressors if hypotensive after fluid resuscitation\n\n#### Second-line Treatments\n- Norepinephrine as first-line vasopressor\n- Consideration of additional antibiotics based on culture results\n\n#### Emergency Procedures\n- Central line placement for fluid resuscitation and medication administration\n- Intra-abdominal pressure monitoring if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of vital signs and organ function\n- Nutritional support and rehabilitation\n\n#### Second-line Treatments\n- Management of underlying chronic conditions (e.g., diabetes, COPD)\n- Psychological support for post-sepsis syndrome\n\n#### Monitoring Requirements\n- Regular assessment of renal function, liver function, and coagulation profile\n- Monitoring for signs of organ dysfunction\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider renal function when dosing.\n\n#### Norepinephrine\n- **Mechanism of Action**: Alpha-1 agonist causing vasoconstriction, increasing blood pressure.\n- **Typical Dosing Range**: Start at 0.05-0.5 mcg/kg/min IV infusion, titrate to effect.\n- **Key Side Effects/Contraindications**: Arrhythmias, peripheral ischemia, tissue necrosis at injection site.\n- **When to Use vs. Alternatives**: Monitor blood pressure and heart rate closely.\n\n### Procedures\n\n#### Central venous catheter placement\n- **What it Involves**: Insertion of a catheter into a large vein to facilitate fluid and medication administration.\n- **Indications**: Severe sepsis requiring fluid resuscitation, vasopressor therapy, or central venous pressure monitoring.\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax, arterial puncture.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of sepsis varies widely depending on the patient's age, comorbidities, and the timeliness of treatment. Early recognition and management can significantly improve outcomes, with mortality rates ranging from 10% to 40%.\n\n### Important Complications to Watch For\n- Acute respiratory distress syndrome (ARDS)\n- Acute kidney injury\n- Septic shock\n- Multi-organ failure\n- Post-sepsis syndrome (long-term physical and psychological effects)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in the early recognition and management of sepsis. They should be familiar with the signs and symptoms, initiate investigations, and start treatment promptly while ensuring timely escalation to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of sepsis, escalate care to a senior clinician immediately. If the patient is unstable or deteriorating, activate the emergency response team.\n\n### Key Safety Considerations\nEnsure timely administration of antibiotics within 1 hour of sepsis recognition. Monitor vital signs closely and reassess fluid status and organ function regularly. Maintain clear communication with the multidisciplinary team regarding the patient's condition and treatment plan.\n",
+  "content": {
+    "overview": {
+      "definition": "Sepsis is a life-threatening organ dysfunction caused by a dysregulated host response to infection. It is characterized by a systemic inflammatory response to infection that can lead to tissue damage, organ failure, and death.",
+      "epidemiology": "Sepsis affects millions of people worldwide each year, with an estimated incidence of 48.9 cases per 100,000 population in the UK. It is more common in the elderly, immunocompromised individuals, and those with chronic illnesses.",
+      "pathophysiology": "Sepsis occurs when an infection triggers a systemic inflammatory response, leading to widespread inflammation, vasodilation, increased vascular permeability, and ultimately, multi-organ dysfunction. The inflammatory response can be exacerbated by the release of pro-inflammatory cytokines and the activation of the coagulation cascade."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever or hypothermia",
+        "Tachycardia",
+        "Tachypnoea",
+        "Altered mental status",
+        "Chills",
+        "Malaise",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Hypotension",
+        "Oliguria or anuria",
+        "Cool, clammy skin",
+        "Altered capillary refill time",
+        "Bounding pulses",
+        "Respiratory distress"
+      ],
+      "atypicalPresentations": [
+        "Confusion or delirium in elderly patients",
+        "Absence of fever in immunocompromised patients",
+        "Localized infection without systemic signs"
+      ],
+      "redFlags": [
+        "Systolic blood pressure <90 mmHg",
+        "Heart rate >130 bpm",
+        "Respiratory rate >25 breaths/min",
+        "Altered mental status",
+        "Oliguria (<0.5 mL/kg/hr)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures (before antibiotics)",
+        "Lactate level",
+        "Basic metabolic panel (BMP)",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "Procalcitonin levels",
+        "Chest X-ray",
+        "CT scan of suspected infection site",
+        "Ultrasound if indicated"
+      ],
+      "specialistTests": [
+        "Bronchoscopy for suspected pneumonia",
+        "Lumbar puncture for suspected meningitis",
+        "Endoscopy for gastrointestinal sources"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Sepsis is diagnosed using the Sepsis-3 criteria, which includes a suspected or confirmed infection and an increase of 2 or more points on the Sequential Organ Failure Assessment (SOFA) score.",
+      "differentials": [
+        "Severe pneumonia",
+        "Acute pancreatitis",
+        "Acute myocardial infarction",
+        "Pulmonary embolism",
+        "Acute kidney injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam, ceftriaxone)",
+          "IV fluids (crystalloids) 30 mL/kg within the first 3 hours",
+          "Vasopressors if hypotensive after fluid resuscitation"
+        ],
+        "secondLine": [
+          "Norepinephrine as first-line vasopressor",
+          "Consideration of additional antibiotics based on culture results"
+        ],
+        "procedures": [
+          "Central line placement for fluid resuscitation and medication administration",
+          "Intra-abdominal pressure monitoring if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of vital signs and organ function",
+          "Nutritional support and rehabilitation"
+        ],
+        "secondLine": [
+          "Management of underlying chronic conditions (e.g., diabetes, COPD)",
+          "Psychological support for post-sepsis syndrome"
+        ],
+        "monitoring": [
+          "Regular assessment of renal function, liver function, and coagulation profile",
+          "Monitoring for signs of organ dysfunction"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider renal function when dosing."
+        },
+        {
+          "name": "Norepinephrine",
+          "mechanism": "Alpha-1 agonist causing vasoconstriction, increasing blood pressure.",
+          "dosing": "Start at 0.05-0.5 mcg/kg/min IV infusion, titrate to effect.",
+          "sideEffects": "Arrhythmias, peripheral ischemia, tissue necrosis at injection site.",
+          "notes": "Monitor blood pressure and heart rate closely."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Central venous catheter placement",
+          "description": "Insertion of a catheter into a large vein to facilitate fluid and medication administration.",
+          "indications": "Severe sepsis requiring fluid resuscitation, vasopressor therapy, or central venous pressure monitoring.",
+          "risks": "Infection, thrombosis, pneumothorax, arterial puncture."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of sepsis varies widely depending on the patient's age, comorbidities, and the timeliness of treatment. Early recognition and management can significantly improve outcomes, with mortality rates ranging from 10% to 40%.",
+    "complications": [
+      "Acute respiratory distress syndrome (ARDS)",
+      "Acute kidney injury",
+      "Septic shock",
+      "Multi-organ failure",
+      "Post-sepsis syndrome (long-term physical and psychological effects)"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in the early recognition and management of sepsis. They should be familiar with the signs and symptoms, initiate investigations, and start treatment promptly while ensuring timely escalation to senior medical staff.",
+    "escalation": "If a patient shows signs of sepsis, escalate care to a senior clinician immediately. If the patient is unstable or deteriorating, activate the emergency response team.",
+    "keySafetyConsiderations": "Ensure timely administration of antibiotics within 1 hour of sepsis recognition. Monitor vital signs closely and reassess fluid status and organ function regularly. Maintain clear communication with the multidisciplinary team regarding the patient's condition and treatment plan."
+  }
+}

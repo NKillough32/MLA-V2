@@ -1,0 +1,144 @@
+{
+  "id": "aortic_dissection",
+  "name": "Aortic dissection",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:21:15.253290",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Aortic dissection: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAortic dissection is a serious condition characterized by a tear in the inner layer of the aorta, leading to separation of the aortic wall layers and potential rupture.\n\n### Epidemiology\nAortic dissection is relatively rare, with an incidence of approximately 2-3 cases per 100,000 person-years. It is more common in men aged 60-70 years and is associated with conditions such as hypertension, connective tissue disorders, and a history of aortic surgery.\n\n### Essential Pathophysiology\nThe dissection occurs when a tear in the intima allows blood to flow between the layers of the aortic wall, creating a false lumen. This can lead to compromised blood flow to vital organs, rupture of the aorta, and significant morbidity and mortality.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of severe chest pain (often described as tearing or ripping)\n- Back pain\n- Abdominal pain\n- Syncope or near-syncope\n- Shortness of breath\n\n### Key Signs\n- Hypertension or hypotension\n- Unequal blood pressures in arms\n- Murmurs of aortic regurgitation\n- Neurological deficits (if carotid arteries are involved)\n- Signs of shock (pallor, tachycardia, altered mental status)\n\n### Atypical Presentations\n- Pain localized to the abdomen or back without chest pain\n- Symptoms mimicking myocardial infarction or stroke\n\n### Red Flags Requiring Immediate Action\n- Severe, sudden-onset chest or back pain\n- History of hypertension or connective tissue disease\n- Acute neurological deficits\n- Signs of shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (may show a widened mediastinum)\n- CT angiography (CT-A) of the chest and abdomen (gold standard for diagnosis)\n- Transesophageal echocardiography (TEE)\n\n### Second-line Investigations\n- MRI of the aorta (if CT is contraindicated)\n- Plain abdominal ultrasound (limited use)\n\n### Specialist Tests\n- Invasive angiography (less commonly used now due to CT-A availability)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by imaging showing a dissection flap in the aorta, with evidence of true and false lumens.\n\n### Key Differential Diagnoses to Exclude\n- Myocardial infarction\n- Pulmonary embolism\n- Aortic aneurysm rupture\n- Pericarditis\n- Esophageal rupture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate blood pressure control (IV beta-blockers such as esmolol)\n- Pain management (opioids)\n- Surgical consultation\n\n#### Second-line Treatments\n- Vasodilators (e.g., nitroprusside) if beta-blockers alone are insufficient\n\n#### Emergency Procedures\n- Surgical repair (for type A dissections)\n- Endovascular repair (for type B dissections)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Blood pressure management (ACE inhibitors, beta-blockers)\n- Regular imaging follow-up (CT or MRI)\n\n#### Second-line Treatments\n- Surgical intervention for complications or significant aortic dilation\n\n#### Monitoring Requirements\n- Regular blood pressure checks\n- Monitoring for symptoms of complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Esmolol\n- **Mechanism of Action**: Selective beta-1 adrenergic antagonist that reduces heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Initial: 500 mcg/kg IV bolus over 1 minute, followed by infusion of 50 mcg/kg/min; titrate as needed.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, heart block, nausea.\n- **When to Use vs. Alternatives**: Rapid onset and short duration; ideal for acute management.\n\n#### Labetalol\n- **Mechanism of Action**: Non-selective beta-blocker and alpha-1 blocker, reducing blood pressure and heart rate.\n- **Typical Dosing Range**: Initial: 20 mg IV over 2 minutes; may repeat or increase to 80 mg as needed.\n- **Key Side Effects/Contraindications**: Hypotension, dizziness, fatigue, bronchospasm.\n- **When to Use vs. Alternatives**: Useful in hypertensive emergencies.\n\n#### Nitroprusside\n- **Mechanism of Action**: Vasodilator that decreases systemic vascular resistance and blood pressure.\n- **Typical Dosing Range**: 0.3-0.5 mcg/kg/min IV infusion, titrate to effect.\n- **Key Side Effects/Contraindications**: Cyanide toxicity, hypotension, headache.\n- **When to Use vs. Alternatives**: Requires careful monitoring of blood pressure.\n\n### Procedures\n\n#### Surgical repair of type A dissection\n- **What it Involves**: Open surgical repair involves resection of the affected aorta and replacement with a graft.\n- **Indications**: Type A dissections, symptomatic patients, or complications such as rupture.\n- **Key Risks/Complications**: Bleeding, infection, neurological deficits, organ ischemia.\n\n#### Endovascular repair of type B dissection\n- **What it Involves**: Placement of a stent-graft via catheterization to seal the dissection.\n- **Indications**: Type B dissections, particularly in patients unfit for open surgery.\n- **Key Risks/Complications**: Endoleak, stent migration, re-dissection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of aortic dissection depends on the type (Type A vs. Type B) and the timeliness of treatment. Type A dissections have a higher mortality rate if untreated, while Type B dissections can often be managed conservatively with good outcomes.\n\n### Important Complications to Watch For\n- Rupture of the aorta\n- Organ ischemia (due to compromised blood flow)\n- Myocardial infarction\n- Stroke\n- Renal failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of aortic dissection, initiate immediate management, and ensure timely referral to surgical teams. They should also monitor vital signs and manage blood pressure in acute settings.\n\n### When to Escalate to Senior/Specialist\nIf aortic dissection is suspected, escalate care immediately to senior medical staff and surgical teams. Ensure rapid imaging and management protocols are followed.\n\n### Key Safety Considerations\nEnsure accurate and timely blood pressure monitoring, avoid excessive fluid resuscitation in suspected dissection, and maintain a high index of suspicion in patients with risk factors.\n",
+  "content": {
+    "overview": {
+      "definition": "Aortic dissection is a serious condition characterized by a tear in the inner layer of the aorta, leading to separation of the aortic wall layers and potential rupture.",
+      "epidemiology": "Aortic dissection is relatively rare, with an incidence of approximately 2-3 cases per 100,000 person-years. It is more common in men aged 60-70 years and is associated with conditions such as hypertension, connective tissue disorders, and a history of aortic surgery.",
+      "pathophysiology": "The dissection occurs when a tear in the intima allows blood to flow between the layers of the aortic wall, creating a false lumen. This can lead to compromised blood flow to vital organs, rupture of the aorta, and significant morbidity and mortality."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of severe chest pain (often described as tearing or ripping)",
+        "Back pain",
+        "Abdominal pain",
+        "Syncope or near-syncope",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Hypertension or hypotension",
+        "Unequal blood pressures in arms",
+        "Murmurs of aortic regurgitation",
+        "Neurological deficits (if carotid arteries are involved)",
+        "Signs of shock (pallor, tachycardia, altered mental status)"
+      ],
+      "atypicalPresentations": [
+        "Pain localized to the abdomen or back without chest pain",
+        "Symptoms mimicking myocardial infarction or stroke"
+      ],
+      "redFlags": [
+        "Severe, sudden-onset chest or back pain",
+        "History of hypertension or connective tissue disease",
+        "Acute neurological deficits",
+        "Signs of shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (may show a widened mediastinum)",
+        "CT angiography (CT-A) of the chest and abdomen (gold standard for diagnosis)",
+        "Transesophageal echocardiography (TEE)"
+      ],
+      "secondLine": [
+        "MRI of the aorta (if CT is contraindicated)",
+        "Plain abdominal ultrasound (limited use)"
+      ],
+      "specialistTests": [
+        "Invasive angiography (less commonly used now due to CT-A availability)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by imaging showing a dissection flap in the aorta, with evidence of true and false lumens.",
+      "differentials": [
+        "Myocardial infarction",
+        "Pulmonary embolism",
+        "Aortic aneurysm rupture",
+        "Pericarditis",
+        "Esophageal rupture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate blood pressure control (IV beta-blockers such as esmolol)",
+          "Pain management (opioids)",
+          "Surgical consultation"
+        ],
+        "secondLine": [
+          "Vasodilators (e.g., nitroprusside) if beta-blockers alone are insufficient"
+        ],
+        "procedures": [
+          "Surgical repair (for type A dissections)",
+          "Endovascular repair (for type B dissections)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Blood pressure management (ACE inhibitors, beta-blockers)",
+          "Regular imaging follow-up (CT or MRI)"
+        ],
+        "secondLine": [
+          "Surgical intervention for complications or significant aortic dilation"
+        ],
+        "monitoring": [
+          "Regular blood pressure checks",
+          "Monitoring for symptoms of complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Esmolol",
+          "mechanism": "Selective beta-1 adrenergic antagonist that reduces heart rate and myocardial oxygen demand.",
+          "dosing": "Initial: 500 mcg/kg IV bolus over 1 minute, followed by infusion of 50 mcg/kg/min; titrate as needed.",
+          "sideEffects": "Hypotension, bradycardia, heart block, nausea.",
+          "notes": "Rapid onset and short duration; ideal for acute management."
+        },
+        {
+          "name": "Labetalol",
+          "mechanism": "Non-selective beta-blocker and alpha-1 blocker, reducing blood pressure and heart rate.",
+          "dosing": "Initial: 20 mg IV over 2 minutes; may repeat or increase to 80 mg as needed.",
+          "sideEffects": "Hypotension, dizziness, fatigue, bronchospasm.",
+          "notes": "Useful in hypertensive emergencies."
+        },
+        {
+          "name": "Nitroprusside",
+          "mechanism": "Vasodilator that decreases systemic vascular resistance and blood pressure.",
+          "dosing": "0.3-0.5 mcg/kg/min IV infusion, titrate to effect.",
+          "sideEffects": "Cyanide toxicity, hypotension, headache.",
+          "notes": "Requires careful monitoring of blood pressure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical repair of type A dissection",
+          "description": "Open surgical repair involves resection of the affected aorta and replacement with a graft.",
+          "indications": "Type A dissections, symptomatic patients, or complications such as rupture.",
+          "risks": "Bleeding, infection, neurological deficits, organ ischemia."
+        },
+        {
+          "name": "Endovascular repair of type B dissection",
+          "description": "Placement of a stent-graft via catheterization to seal the dissection.",
+          "indications": "Type B dissections, particularly in patients unfit for open surgery.",
+          "risks": "Endoleak, stent migration, re-dissection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of aortic dissection depends on the type (Type A vs. Type B) and the timeliness of treatment. Type A dissections have a higher mortality rate if untreated, while Type B dissections can often be managed conservatively with good outcomes.",
+    "complications": [
+      "Rupture of the aorta",
+      "Organ ischemia (due to compromised blood flow)",
+      "Myocardial infarction",
+      "Stroke",
+      "Renal failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of aortic dissection, initiate immediate management, and ensure timely referral to surgical teams. They should also monitor vital signs and manage blood pressure in acute settings.",
+    "escalation": "If aortic dissection is suspected, escalate care immediately to senior medical staff and surgical teams. Ensure rapid imaging and management protocols are followed.",
+    "keySafetyConsiderations": "Ensure accurate and timely blood pressure monitoring, avoid excessive fluid resuscitation in suspected dissection, and maintain a high index of suspicion in patients with risk factors."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "trigeminal_neuralgia",
+  "name": "?Trigeminal neuralgia",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:53:26.892056",
+  "model": "gpt-4o-mini",
+  "rawContent": "# ?Trigeminal neuralgia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTrigeminal neuralgia (TN) is a chronic pain condition characterized by recurrent episodes of severe, stabbing pain in the distribution of the trigeminal nerve (cranial nerve V).\n\n### Epidemiology\nTrigeminal neuralgia is more common in women than men, with a peak incidence in individuals over 50 years of age. It is estimated to affect 4-5 per 100,000 people annually.\n\n### Essential Pathophysiology\nThe condition is often due to vascular compression of the trigeminal nerve root entry zone, leading to demyelination. This results in abnormal electrical discharges and hyperexcitability of the nerve, causing paroxysms of pain in response to stimuli.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe, sharp, stabbing facial pain\n- Episodes triggered by light touch, chewing, or speaking\n- Pain typically unilateral, affecting the maxillary and/or mandibular branches of the trigeminal nerve\n\n### Key Signs\n- No observable neurological deficits during the pain-free intervals\n- Possible facial grimacing or avoidance behavior during pain episodes\n\n### Atypical Presentations\n- Bilateral trigeminal neuralgia (more common in multiple sclerosis)\n- Continuous aching pain in addition to paroxysms\n\n### Red Flags Requiring Immediate Action\n- Onset of symptoms in patients under 40 years of age\n- Neurological deficits or changes in sensation\n- Progressive worsening of symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and neurological examination\n\n### Second-line Investigations\n- MRI of the brain to rule out structural causes (e.g., tumors, multiple sclerosis)\n\n### Specialist Tests\n- Electrophysiological studies (rarely used)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the characteristic pain pattern and triggers. MRI is used to exclude secondary causes.\n\n### Key Differential Diagnoses to Exclude\n- Postherpetic neuralgia\n- Multiple sclerosis\n- Dental pain\n- Temporomandibular joint disorders\n- Migraine\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Carbamazepine (Tegretol)\n\n#### Second-line Treatments\n- Oxcarbazepine (Trileptal)\n- Gabapentin\n- Pregabalin\n\n#### Emergency Procedures\n- Consider referral for neurosurgical options if medical management fails.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Carbamazepine (initially 100-200 mg/day, titrate to effect)\n- Oxcarbazepine (300-600 mg/day)\n\n#### Second-line Treatments\n- Surgical options such as microvascular decompression or rhizotomy if refractory to medical therapy.\n\n#### Monitoring Requirements\n- Regular follow-up to assess pain control and side effects of medications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Carbamazepine\n- **Mechanism of Action**: Anticonvulsant that stabilizes neuronal membranes and reduces excitability.\n- **Typical Dosing Range**: Start at 100-200 mg/day, titrate to 800-1200 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, drowsiness, nausea, potential for blood dyscrasias.\n- **When to Use vs. Alternatives**: Monitor for liver function and blood counts.\n\n#### Oxcarbazepine\n- **Mechanism of Action**: Similar to carbamazepine, but with a better side effect profile.\n- **Typical Dosing Range**: Start at 300 mg/day, titrate to 1200-2400 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, somnolence, hyponatremia.\n- **When to Use vs. Alternatives**: Less risk of blood dyscrasias compared to carbamazepine.\n\n#### Gabapentin\n- **Mechanism of Action**: Modulates the release of excitatory neurotransmitters.\n- **Typical Dosing Range**: Start at 300 mg/day, titrate to 900-1800 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, fatigue, peripheral edema.\n- **When to Use vs. Alternatives**: Useful adjunctive therapy.\n\n#### Pregabalin\n- **Mechanism of Action**: Similar to gabapentin, with a more predictable pharmacokinetic profile.\n- **Typical Dosing Range**: Start at 75 mg/day, titrate to 150-600 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, somnolence, weight gain.\n- **When to Use vs. Alternatives**: Considered for patients who do not respond to first-line agents.\n\n### Procedures\n\n#### Microvascular decompression\n- **What it Involves**: Surgical procedure to relieve pressure on the trigeminal nerve by repositioning blood vessels.\n- **Indications**: Refractory trigeminal neuralgia not responding to medical therapy.\n- **Key Risks/Complications**: Infection, cerebrospinal fluid leak, hearing loss, facial weakness.\n\n#### Rhizotomy\n- **What it Involves**: Destruction of the trigeminal nerve fibers to alleviate pain.\n- **Indications**: Severe pain unresponsive to medications.\n- **Key Risks/Complications**: Facial numbness, weakness, dysesthesia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nTrigeminal neuralgia can be well-managed with medications, but some patients may experience recurrent episodes. Surgical options can provide long-term relief for many patients.\n\n### Important Complications to Watch For\n- Chronic pain\n- Medication side effects\n- Surgical complications (if applicable)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform a thorough history and neurological examination, initiate first-line medications, and refer to neurology or pain management specialists as needed.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if there are atypical features, lack of response to first-line treatment, or if the patient is under 40 years of age with new-onset symptoms.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially carbamazepine and oxcarbazepine. Ensure regular blood tests for patients on long-term therapy to check for hematological abnormalities.\n",
+  "content": {
+    "overview": {
+      "definition": "Trigeminal neuralgia (TN) is a chronic pain condition characterized by recurrent episodes of severe, stabbing pain in the distribution of the trigeminal nerve (cranial nerve V).",
+      "epidemiology": "Trigeminal neuralgia is more common in women than men, with a peak incidence in individuals over 50 years of age. It is estimated to affect 4-5 per 100,000 people annually.",
+      "pathophysiology": "The condition is often due to vascular compression of the trigeminal nerve root entry zone, leading to demyelination. This results in abnormal electrical discharges and hyperexcitability of the nerve, causing paroxysms of pain in response to stimuli."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe, sharp, stabbing facial pain",
+        "Episodes triggered by light touch, chewing, or speaking",
+        "Pain typically unilateral, affecting the maxillary and/or mandibular branches of the trigeminal nerve"
+      ],
+      "signs": [
+        "No observable neurological deficits during the pain-free intervals",
+        "Possible facial grimacing or avoidance behavior during pain episodes"
+      ],
+      "atypicalPresentations": [
+        "Bilateral trigeminal neuralgia (more common in multiple sclerosis)",
+        "Continuous aching pain in addition to paroxysms"
+      ],
+      "redFlags": [
+        "Onset of symptoms in patients under 40 years of age",
+        "Neurological deficits or changes in sensation",
+        "Progressive worsening of symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and neurological examination"
+      ],
+      "secondLine": [
+        "MRI of the brain to rule out structural causes (e.g., tumors, multiple sclerosis)"
+      ],
+      "specialistTests": [
+        "Electrophysiological studies (rarely used)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the characteristic pain pattern and triggers. MRI is used to exclude secondary causes.",
+      "differentials": [
+        "Postherpetic neuralgia",
+        "Multiple sclerosis",
+        "Dental pain",
+        "Temporomandibular joint disorders",
+        "Migraine"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Carbamazepine (Tegretol)"
+        ],
+        "secondLine": [
+          "Oxcarbazepine (Trileptal)",
+          "Gabapentin",
+          "Pregabalin"
+        ],
+        "procedures": [
+          "Consider referral for neurosurgical options if medical management fails."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Carbamazepine (initially 100-200 mg/day, titrate to effect)",
+          "Oxcarbazepine (300-600 mg/day)"
+        ],
+        "secondLine": [
+          "Surgical options such as microvascular decompression or rhizotomy if refractory to medical therapy."
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pain control and side effects of medications."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Carbamazepine",
+          "mechanism": "Anticonvulsant that stabilizes neuronal membranes and reduces excitability.",
+          "dosing": "Start at 100-200 mg/day, titrate to 800-1200 mg/day as needed.",
+          "sideEffects": "Dizziness, drowsiness, nausea, potential for blood dyscrasias.",
+          "notes": "Monitor for liver function and blood counts."
+        },
+        {
+          "name": "Oxcarbazepine",
+          "mechanism": "Similar to carbamazepine, but with a better side effect profile.",
+          "dosing": "Start at 300 mg/day, titrate to 1200-2400 mg/day as needed.",
+          "sideEffects": "Dizziness, somnolence, hyponatremia.",
+          "notes": "Less risk of blood dyscrasias compared to carbamazepine."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Modulates the release of excitatory neurotransmitters.",
+          "dosing": "Start at 300 mg/day, titrate to 900-1800 mg/day as needed.",
+          "sideEffects": "Dizziness, fatigue, peripheral edema.",
+          "notes": "Useful adjunctive therapy."
+        },
+        {
+          "name": "Pregabalin",
+          "mechanism": "Similar to gabapentin, with a more predictable pharmacokinetic profile.",
+          "dosing": "Start at 75 mg/day, titrate to 150-600 mg/day as needed.",
+          "sideEffects": "Dizziness, somnolence, weight gain.",
+          "notes": "Considered for patients who do not respond to first-line agents."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Microvascular decompression",
+          "description": "Surgical procedure to relieve pressure on the trigeminal nerve by repositioning blood vessels.",
+          "indications": "Refractory trigeminal neuralgia not responding to medical therapy.",
+          "risks": "Infection, cerebrospinal fluid leak, hearing loss, facial weakness."
+        },
+        {
+          "name": "Rhizotomy",
+          "description": "Destruction of the trigeminal nerve fibers to alleviate pain.",
+          "indications": "Severe pain unresponsive to medications.",
+          "risks": "Facial numbness, weakness, dysesthesia."
+        }
+      ]
+    },
+    "prognosis": "Trigeminal neuralgia can be well-managed with medications, but some patients may experience recurrent episodes. Surgical options can provide long-term relief for many patients.",
+    "complications": [
+      "Chronic pain",
+      "Medication side effects",
+      "Surgical complications (if applicable)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform a thorough history and neurological examination, initiate first-line medications, and refer to neurology or pain management specialists as needed.",
+    "escalation": "Refer to a neurologist if there are atypical features, lack of response to first-line treatment, or if the patient is under 40 years of age with new-onset symptoms.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially carbamazepine and oxcarbazepine. Ensure regular blood tests for patients on long-term therapy to check for hematological abnormalities."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "gangrene_and_necrotising_fasciitis",
+  "name": "Gangrene and necrotising fasciitis",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:23:06.236996",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gangrene and necrotising fasciitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGangrene is the death of body tissue due to a lack of blood flow or a serious bacterial infection. Necrotising fasciitis is a severe, rapidly progressing soft tissue infection that leads to the death of tissue and can involve the fascial plane.\n\n### Epidemiology\nGangrene is relatively rare, with an incidence of approximately 1 in 100,000 people per year. Necrotising fasciitis has an incidence of 0.4 to 0.5 cases per 100,000 people per year, with higher rates in immunocompromised individuals and those with chronic diseases.\n\n### Essential Pathophysiology\nGangrene can be classified as dry (ischemic) or wet (infectious). Dry gangrene occurs due to reduced blood supply, often in peripheral vascular disease. Wet gangrene is associated with bacterial infection, often following trauma or surgery. Necrotising fasciitis is primarily caused by polymicrobial infections, including Group A Streptococcus, and can lead to systemic toxicity and multi-organ failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe pain at the site of infection\n- Swelling and redness\n- Fever and chills\n- Nausea and vomiting\n- Confusion or altered mental status\n\n### Key Signs\n- Skin discoloration (black, purple, or red)\n- Crepitus (subcutaneous gas)\n- Rapidly spreading erythema\n- Necrotic tissue\n- Systemic signs of sepsis (tachycardia, hypotension)\n\n### Atypical Presentations\n- Absence of fever in early stages\n- Localized pain disproportionate to physical findings\n- Presence of blisters or bullae\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of symptoms\n- Severe pain out of proportion to clinical findings\n- Signs of systemic infection (fever, tachycardia, hypotension)\n- Presence of crepitus or necrotic tissue\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Lactate levels\n- Imaging (X-ray, ultrasound)\n\n### Second-line Investigations\n- CT scan or MRI to assess extent of tissue involvement\n- Wound swabs for culture\n\n### Specialist Tests\n- Tissue biopsy for histopathology\n- Serum electrolytes and renal function tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and microbiological culture results. The presence of systemic signs of infection and rapid progression of symptoms are key indicators.\n\n### Key Differential Diagnoses to Exclude\n- Cellulitis\n- Abscess\n- Deep vein thrombosis\n- Septic arthritis\n- Osteomyelitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate surgical debridement\n- Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, vancomycin)\n- Fluid resuscitation\n\n#### Second-line Treatments\n- Consider hyperbaric oxygen therapy in select cases\n\n#### Emergency Procedures\n- Surgical debridement to remove necrotic tissue\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular wound care and monitoring for signs of infection\n- Antibiotic therapy based on culture results\n\n#### Second-line Treatments\n- Consider referral to a specialist for advanced wound care\n\n#### Monitoring Requirements\n- Regular assessment of wound healing and signs of recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria\n- **Typical Dosing Range**: 3.375 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment\n- **When to Use vs. Alternatives**: Consider in combination with vancomycin for MRSA coverage.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against gram-positive bacteria, including MRSA\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, red man syndrome\n- **When to Use vs. Alternatives**: Monitor renal function and adjust dosing accordingly.\n\n### Procedures\n\n#### Surgical debridement\n- **What it Involves**: Surgical removal of necrotic and infected tissue to halt the spread of infection\n- **Indications**: Confirmed or suspected necrotising fasciitis or gangrene\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding tissues, need for further surgeries\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the speed of diagnosis and treatment. Early intervention significantly improves outcomes, while delayed treatment can lead to high morbidity and mortality rates (up to 30-70%).\n\n### Important Complications to Watch For\n- Sepsis\n- Multi-organ failure\n- Amputation of affected limbs\n- Long-term disability due to tissue loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing early signs of gangrene and necrotising fasciitis, initiate appropriate investigations, and ensure timely referral to surgical teams. They should also monitor vital signs and support fluid resuscitation in septic patients.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to surgical teams is required for suspected necrotising fasciitis or gangrene. Notify senior medical staff if there are signs of systemic infection or rapid deterioration.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and use of personal protective equipment (PPE) when managing wounds. Monitor for signs of sepsis and ensure timely administration of antibiotics and fluids.\n",
+  "content": {
+    "overview": {
+      "definition": "Gangrene is the death of body tissue due to a lack of blood flow or a serious bacterial infection. Necrotising fasciitis is a severe, rapidly progressing soft tissue infection that leads to the death of tissue and can involve the fascial plane.",
+      "epidemiology": "Gangrene is relatively rare, with an incidence of approximately 1 in 100,000 people per year. Necrotising fasciitis has an incidence of 0.4 to 0.5 cases per 100,000 people per year, with higher rates in immunocompromised individuals and those with chronic diseases.",
+      "pathophysiology": "Gangrene can be classified as dry (ischemic) or wet (infectious). Dry gangrene occurs due to reduced blood supply, often in peripheral vascular disease. Wet gangrene is associated with bacterial infection, often following trauma or surgery. Necrotising fasciitis is primarily caused by polymicrobial infections, including Group A Streptococcus, and can lead to systemic toxicity and multi-organ failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe pain at the site of infection",
+        "Swelling and redness",
+        "Fever and chills",
+        "Nausea and vomiting",
+        "Confusion or altered mental status"
+      ],
+      "signs": [
+        "Skin discoloration (black, purple, or red)",
+        "Crepitus (subcutaneous gas)",
+        "Rapidly spreading erythema",
+        "Necrotic tissue",
+        "Systemic signs of sepsis (tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Absence of fever in early stages",
+        "Localized pain disproportionate to physical findings",
+        "Presence of blisters or bullae"
+      ],
+      "redFlags": [
+        "Rapid progression of symptoms",
+        "Severe pain out of proportion to clinical findings",
+        "Signs of systemic infection (fever, tachycardia, hypotension)",
+        "Presence of crepitus or necrotic tissue"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Lactate levels",
+        "Imaging (X-ray, ultrasound)"
+      ],
+      "secondLine": [
+        "CT scan or MRI to assess extent of tissue involvement",
+        "Wound swabs for culture"
+      ],
+      "specialistTests": [
+        "Tissue biopsy for histopathology",
+        "Serum electrolytes and renal function tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and microbiological culture results. The presence of systemic signs of infection and rapid progression of symptoms are key indicators.",
+      "differentials": [
+        "Cellulitis",
+        "Abscess",
+        "Deep vein thrombosis",
+        "Septic arthritis",
+        "Osteomyelitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate surgical debridement",
+          "Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, vancomycin)",
+          "Fluid resuscitation"
+        ],
+        "secondLine": [
+          "Consider hyperbaric oxygen therapy in select cases"
+        ],
+        "procedures": [
+          "Surgical debridement to remove necrotic tissue"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular wound care and monitoring for signs of infection",
+          "Antibiotic therapy based on culture results"
+        ],
+        "secondLine": [
+          "Consider referral to a specialist for advanced wound care"
+        ],
+        "monitoring": [
+          "Regular assessment of wound healing and signs of recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria",
+          "dosing": "3.375 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment",
+          "notes": "Consider in combination with vancomycin for MRSA coverage."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against gram-positive bacteria, including MRSA",
+          "dosing": "15-20 mg/kg IV every 8-12 hours",
+          "sideEffects": "Nephrotoxicity, ototoxicity, red man syndrome",
+          "notes": "Monitor renal function and adjust dosing accordingly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical debridement",
+          "description": "Surgical removal of necrotic and infected tissue to halt the spread of infection",
+          "indications": "Confirmed or suspected necrotising fasciitis or gangrene",
+          "risks": "Bleeding, infection, damage to surrounding tissues, need for further surgeries"
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the speed of diagnosis and treatment. Early intervention significantly improves outcomes, while delayed treatment can lead to high morbidity and mortality rates (up to 30-70%).",
+    "complications": [
+      "Sepsis",
+      "Multi-organ failure",
+      "Amputation of affected limbs",
+      "Long-term disability due to tissue loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing early signs of gangrene and necrotising fasciitis, initiate appropriate investigations, and ensure timely referral to surgical teams. They should also monitor vital signs and support fluid resuscitation in septic patients.",
+    "escalation": "Immediate escalation to surgical teams is required for suspected necrotising fasciitis or gangrene. Notify senior medical staff if there are signs of systemic infection or rapid deterioration.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and use of personal protective equipment (PPE) when managing wounds. Monitor for signs of sepsis and ensure timely administration of antibiotics and fluids."
+  }
+}

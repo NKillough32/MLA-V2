@@ -1,0 +1,123 @@
+{
+  "id": "carpal_tunnel_syndrome",
+  "name": "Carpal Tunnel syndrome",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:31:30.534258",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Carpal Tunnel syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCarpal Tunnel Syndrome (CTS) is a common entrapment neuropathy characterized by compression of the median nerve as it passes through the carpal tunnel in the wrist, leading to sensory and motor deficits in the hand.\n\n### Epidemiology\nCTS affects approximately 3-6% of the general population, with a higher prevalence in women and individuals aged 30-60 years. It is often associated with repetitive wrist movements, certain medical conditions (e.g., diabetes, hypothyroidism), and pregnancy.\n\n### Essential Pathophysiology\nThe median nerve is compressed within the carpal tunnel due to increased pressure from surrounding structures, such as tendons and ligaments. This compression leads to ischemia and demyelination of the nerve, resulting in the characteristic symptoms of pain, numbness, and weakness.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Numbness or tingling in the thumb, index, middle, and half of the ring finger\n- Pain in the wrist or hand, which may radiate up the arm\n- Weakness in grip strength\n- Symptoms often worse at night or with activities involving wrist flexion\n\n### Key Signs\n- Positive Phalen's test (numbness with wrist flexion for 60 seconds)\n- Positive Tinel's sign (tingling with tapping over the median nerve at the wrist)\n- Decreased sensation in the median nerve distribution\n- Thenar muscle atrophy in chronic cases\n\n### Atypical Presentations\n- Symptoms may be bilateral\n- Symptoms may be more pronounced in the morning or after prolonged use of the hand\n- May present with only pain without sensory changes\n\n### Red Flags Requiring Immediate Action\n- Severe weakness in hand muscles\n- Persistent symptoms despite conservative management\n- Signs of cervical radiculopathy (e.g., neck pain, arm weakness)\n- Acute onset of symptoms following trauma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Nerve conduction studies (NCS) to assess median nerve function\n\n### Second-line Investigations\n- Ultrasound of the wrist to visualize the median nerve and assess for swelling\n\n### Specialist Tests\n- Electromyography (EMG) to evaluate muscle response and rule out other conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by positive Phalen's and Tinel's tests, along with characteristic symptoms. Nerve conduction studies confirm the diagnosis by showing delayed conduction across the carpal tunnel.\n\n### Key Differential Diagnoses to Exclude\n- Cervical radiculopathy\n- Thoracic outlet syndrome\n- Peripheral neuropathy (e.g., diabetic neuropathy)\n- De Quervain's tenosynovitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Wrist splinting, especially at night\n- Activity modification to avoid exacerbating symptoms\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Corticosteroid injections into the carpal tunnel\n\n#### Emergency Procedures\n- Surgical decompression of the median nerve (carpal tunnel release) indicated for severe or persistent cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued use of wrist splints and ergonomic adjustments\n- Physical therapy focusing on stretching and strengthening exercises\n\n#### Second-line Treatments\n- Consideration of surgical intervention if conservative measures fail\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal issues.\n\n#### Corticosteroids (e.g., Methylprednisolone)\n- **Mechanism of Action**: Anti-inflammatory agent that reduces swelling and pressure on the median nerve\n- **Typical Dosing Range**: 10-40 mg injected into the carpal tunnel, depending on severity\n- **Key Side Effects/Contraindications**: Local pain, infection risk, potential for tendon rupture with repeated injections\n- **When to Use vs. Alternatives**: Limit injections to avoid complications.\n\n### Procedures\n\n#### Carpal Tunnel Release\n- **What it Involves**: Surgical procedure to cut the transverse carpal ligament and relieve pressure on the median nerve\n- **Indications**: Persistent symptoms despite conservative management, severe symptoms, or muscle atrophy\n- **Key Risks/Complications**: Infection, nerve injury, scar formation, persistent symptoms\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients experience significant improvement in symptoms. Surgical intervention has a high success rate, with many patients reporting complete relief of symptoms.\n\n### Important Complications to Watch For\n- Persistent pain or numbness\n- Recurrence of symptoms after treatment\n- Thenar muscle weakness or atrophy if untreated for a long time\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on conservative management, and refer to specialists for further evaluation and treatment as necessary. They should also monitor for red flags that may indicate more serious underlying conditions.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if symptoms are severe, persistent, or if there are concerns about differential diagnoses such as cervical radiculopathy or other neuropathies.\n\n### Key Safety Considerations\nEnsure proper ergonomic advice is given to patients to prevent exacerbation of symptoms. Monitor for signs of complications following injections or surgery, and educate patients on when to seek further medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Carpal Tunnel Syndrome (CTS) is a common entrapment neuropathy characterized by compression of the median nerve as it passes through the carpal tunnel in the wrist, leading to sensory and motor deficits in the hand.",
+      "epidemiology": "CTS affects approximately 3-6% of the general population, with a higher prevalence in women and individuals aged 30-60 years. It is often associated with repetitive wrist movements, certain medical conditions (e.g., diabetes, hypothyroidism), and pregnancy.",
+      "pathophysiology": "The median nerve is compressed within the carpal tunnel due to increased pressure from surrounding structures, such as tendons and ligaments. This compression leads to ischemia and demyelination of the nerve, resulting in the characteristic symptoms of pain, numbness, and weakness."
+    },
+    "recognition": {
+      "symptoms": [
+        "Numbness or tingling in the thumb, index, middle, and half of the ring finger",
+        "Pain in the wrist or hand, which may radiate up the arm",
+        "Weakness in grip strength",
+        "Symptoms often worse at night or with activities involving wrist flexion"
+      ],
+      "signs": [
+        "Positive Phalen's test (numbness with wrist flexion for 60 seconds)",
+        "Positive Tinel's sign (tingling with tapping over the median nerve at the wrist)",
+        "Decreased sensation in the median nerve distribution",
+        "Thenar muscle atrophy in chronic cases"
+      ],
+      "atypicalPresentations": [
+        "Symptoms may be bilateral",
+        "Symptoms may be more pronounced in the morning or after prolonged use of the hand",
+        "May present with only pain without sensory changes"
+      ],
+      "redFlags": [
+        "Severe weakness in hand muscles",
+        "Persistent symptoms despite conservative management",
+        "Signs of cervical radiculopathy (e.g., neck pain, arm weakness)",
+        "Acute onset of symptoms following trauma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Nerve conduction studies (NCS) to assess median nerve function"
+      ],
+      "secondLine": [
+        "Ultrasound of the wrist to visualize the median nerve and assess for swelling"
+      ],
+      "specialistTests": [
+        "Electromyography (EMG) to evaluate muscle response and rule out other conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by positive Phalen's and Tinel's tests, along with characteristic symptoms. Nerve conduction studies confirm the diagnosis by showing delayed conduction across the carpal tunnel.",
+      "differentials": [
+        "Cervical radiculopathy",
+        "Thoracic outlet syndrome",
+        "Peripheral neuropathy (e.g., diabetic neuropathy)",
+        "De Quervain's tenosynovitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Wrist splinting, especially at night",
+          "Activity modification to avoid exacerbating symptoms",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Corticosteroid injections into the carpal tunnel"
+        ],
+        "procedures": [
+          "Surgical decompression of the median nerve (carpal tunnel release) indicated for severe or persistent cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued use of wrist splints and ergonomic adjustments",
+          "Physical therapy focusing on stretching and strengthening exercises"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if conservative measures fail"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal issues."
+        },
+        {
+          "name": "Corticosteroids (e.g., Methylprednisolone)",
+          "mechanism": "Anti-inflammatory agent that reduces swelling and pressure on the median nerve",
+          "dosing": "10-40 mg injected into the carpal tunnel, depending on severity",
+          "sideEffects": "Local pain, infection risk, potential for tendon rupture with repeated injections",
+          "notes": "Limit injections to avoid complications."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Carpal Tunnel Release",
+          "description": "Surgical procedure to cut the transverse carpal ligament and relieve pressure on the median nerve",
+          "indications": "Persistent symptoms despite conservative management, severe symptoms, or muscle atrophy",
+          "risks": "Infection, nerve injury, scar formation, persistent symptoms"
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients experience significant improvement in symptoms. Surgical intervention has a high success rate, with many patients reporting complete relief of symptoms.",
+    "complications": [
+      "Persistent pain or numbness",
+      "Recurrence of symptoms after treatment",
+      "Thenar muscle weakness or atrophy if untreated for a long time"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on conservative management, and refer to specialists for further evaluation and treatment as necessary. They should also monitor for red flags that may indicate more serious underlying conditions.",
+    "escalation": "Refer to a specialist if symptoms are severe, persistent, or if there are concerns about differential diagnoses such as cervical radiculopathy or other neuropathies.",
+    "keySafetyConsiderations": "Ensure proper ergonomic advice is given to patients to prevent exacerbation of symptoms. Monitor for signs of complications following injections or surgery, and educate patients on when to seek further medical attention."
+  }
+}

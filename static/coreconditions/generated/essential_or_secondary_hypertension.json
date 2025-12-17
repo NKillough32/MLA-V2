@@ -1,0 +1,140 @@
+{
+  "id": "essential_or_secondary_hypertension",
+  "name": "Essential or secondary hypertension",
+  "domains": [
+    "Pre-operative Care"
+  ],
+  "generatedAt": "2025-12-17T21:12:35.348545",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Essential or secondary hypertension: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEssential hypertension, also known as primary hypertension, is a condition characterized by persistently elevated blood pressure without an identifiable secondary cause. Secondary hypertension is high blood pressure that is a result of another medical condition, such as kidney disease or hormonal disorders.\n\n### Epidemiology\nEssential hypertension affects approximately 1 in 3 adults in the UK, with prevalence increasing with age. Secondary hypertension is less common, accounting for about 5-10% of hypertension cases, often seen in younger patients or those with sudden onset hypertension.\n\n### Essential Pathophysiology\nThe pathophysiology of essential hypertension is multifactorial, involving genetic predisposition, environmental factors (such as diet and lifestyle), and neurohormonal mechanisms. Secondary hypertension can result from identifiable causes such as renal artery stenosis, endocrine disorders (e.g., Cushing's syndrome, hyperaldosteronism), or medication effects.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Dizziness\n- Palpitations\n- Fatigue\n- Blurred vision\n\n### Key Signs\n- Elevated blood pressure readings (≥140/90 mmHg)\n- Left ventricular hypertrophy on ECG\n- Retinal changes (e.g., hypertensive retinopathy)\n\n### Atypical Presentations\n- Hypertension in a young patient\n- Resistant hypertension despite treatment\n- Acute onset hypertension\n\n### Red Flags Requiring Immediate Action\n- Severe headache (thunderclap headache)\n- Visual disturbances\n- Chest pain\n- Shortness of breath\n- Signs of end-organ damage (e.g., renal failure, heart failure)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood pressure measurement (multiple readings)\n- Urinalysis\n- Blood tests (renal function, electrolytes, fasting glucose, lipid profile)\n\n### Second-line Investigations\n- 24-hour ambulatory blood pressure monitoring (ABPM)\n- ECG\n- Echocardiogram\n\n### Specialist Tests\n- Renal ultrasound\n- CT angiography of renal arteries\n- Hormonal assays (e.g., aldosterone, cortisol)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypertension is made when blood pressure readings are consistently ≥140/90 mmHg on at least two separate occasions. Secondary causes should be considered in patients with sudden onset hypertension, resistant hypertension, or hypertension at a young age.\n\n### Key Differential Diagnoses to Exclude\n- Primary hyperaldosteronism (Conn's syndrome)\n- Cushing's syndrome\n- Pheochromocytoma\n- Renal artery stenosis\n- Obstructive sleep apnea\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate blood pressure control (e.g., IV labetalol, nitroglycerin)\n- Monitoring in a high-dependency unit if severe hypertension or end-organ damage is present\n\n#### Second-line Treatments\n- Consider oral antihypertensives if stable (e.g., amlodipine, lisinopril)\n\n#### Emergency Procedures\n- Consider renal artery angioplasty for renal artery stenosis if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, weight loss, smoking cessation)\n- First-line antihypertensive medications (e.g., thiazide diuretics, ACE inhibitors)\n\n#### Second-line Treatments\n- Add-on therapy with calcium channel blockers or beta-blockers if blood pressure targets are not met\n\n#### Monitoring Requirements\n- Regular blood pressure checks (every 3-6 months)\n- Monitor for side effects of medications\n- Assess for end-organ damage\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.\n- **Typical Dosing Range**: Starting dose 10 mg once daily, can increase to 20-40 mg based on response.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes after initiation.\n\n#### Amlodipine\n- **Mechanism of Action**: Calcium channel blocker that relaxes vascular smooth muscle, leading to vasodilation.\n- **Typical Dosing Range**: Starting dose 5 mg once daily, can increase to 10 mg.\n- **Key Side Effects/Contraindications**: Peripheral edema, flushing, palpitations, dizziness.\n- **When to Use vs. Alternatives**: Effective in elderly patients and those with angina.\n\n#### Hydrochlorothiazide\n- **Mechanism of Action**: Thiazide diuretic that reduces blood volume and peripheral resistance.\n- **Typical Dosing Range**: 12.5-25 mg once daily.\n- **Key Side Effects/Contraindications**: Hypokalemia, hyperuricemia, dehydration.\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly.\n\n### Procedures\n\n#### Renal artery angioplasty\n- **What it Involves**: A minimally invasive procedure to open narrowed renal arteries to improve blood flow and reduce hypertension.\n- **Indications**: Resistant hypertension due to renal artery stenosis, significant renal impairment.\n- **Key Risks/Complications**: Bleeding, infection, renal artery dissection, contrast nephropathy.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients can achieve good blood pressure control and reduce the risk of cardiovascular complications. However, untreated hypertension can lead to serious complications such as stroke, heart attack, and kidney failure.\n\n### Important Complications to Watch For\n- Heart failure\n- Myocardial infarction\n- Stroke\n- Chronic kidney disease\n- Hypertensive retinopathy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in measuring blood pressure, recognizing signs and symptoms of hypertension, initiating investigations, and managing patients with hypertension. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if blood pressure is severely elevated (e.g., >180/110 mmHg), if there are signs of end-organ damage, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nEnsure accurate blood pressure measurement techniques, monitor for side effects of antihypertensive medications, and educate patients on the importance of adherence to treatment and follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Essential hypertension, also known as primary hypertension, is a condition characterized by persistently elevated blood pressure without an identifiable secondary cause. Secondary hypertension is high blood pressure that is a result of another medical condition, such as kidney disease or hormonal disorders.",
+      "epidemiology": "Essential hypertension affects approximately 1 in 3 adults in the UK, with prevalence increasing with age. Secondary hypertension is less common, accounting for about 5-10% of hypertension cases, often seen in younger patients or those with sudden onset hypertension.",
+      "pathophysiology": "The pathophysiology of essential hypertension is multifactorial, involving genetic predisposition, environmental factors (such as diet and lifestyle), and neurohormonal mechanisms. Secondary hypertension can result from identifiable causes such as renal artery stenosis, endocrine disorders (e.g., Cushing's syndrome, hyperaldosteronism), or medication effects."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Dizziness",
+        "Palpitations",
+        "Fatigue",
+        "Blurred vision"
+      ],
+      "signs": [
+        "Elevated blood pressure readings (≥140/90 mmHg)",
+        "Left ventricular hypertrophy on ECG",
+        "Retinal changes (e.g., hypertensive retinopathy)"
+      ],
+      "atypicalPresentations": [
+        "Hypertension in a young patient",
+        "Resistant hypertension despite treatment",
+        "Acute onset hypertension"
+      ],
+      "redFlags": [
+        "Severe headache (thunderclap headache)",
+        "Visual disturbances",
+        "Chest pain",
+        "Shortness of breath",
+        "Signs of end-organ damage (e.g., renal failure, heart failure)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood pressure measurement (multiple readings)",
+        "Urinalysis",
+        "Blood tests (renal function, electrolytes, fasting glucose, lipid profile)"
+      ],
+      "secondLine": [
+        "24-hour ambulatory blood pressure monitoring (ABPM)",
+        "ECG",
+        "Echocardiogram"
+      ],
+      "specialistTests": [
+        "Renal ultrasound",
+        "CT angiography of renal arteries",
+        "Hormonal assays (e.g., aldosterone, cortisol)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypertension is made when blood pressure readings are consistently ≥140/90 mmHg on at least two separate occasions. Secondary causes should be considered in patients with sudden onset hypertension, resistant hypertension, or hypertension at a young age.",
+      "differentials": [
+        "Primary hyperaldosteronism (Conn's syndrome)",
+        "Cushing's syndrome",
+        "Pheochromocytoma",
+        "Renal artery stenosis",
+        "Obstructive sleep apnea"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate blood pressure control (e.g., IV labetalol, nitroglycerin)",
+          "Monitoring in a high-dependency unit if severe hypertension or end-organ damage is present"
+        ],
+        "secondLine": [
+          "Consider oral antihypertensives if stable (e.g., amlodipine, lisinopril)"
+        ],
+        "procedures": [
+          "Consider renal artery angioplasty for renal artery stenosis if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, weight loss, smoking cessation)",
+          "First-line antihypertensive medications (e.g., thiazide diuretics, ACE inhibitors)"
+        ],
+        "secondLine": [
+          "Add-on therapy with calcium channel blockers or beta-blockers if blood pressure targets are not met"
+        ],
+        "monitoring": [
+          "Regular blood pressure checks (every 3-6 months)",
+          "Monitor for side effects of medications",
+          "Assess for end-organ damage"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.",
+          "dosing": "Starting dose 10 mg once daily, can increase to 20-40 mg based on response.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema.",
+          "notes": "Monitor renal function and electrolytes after initiation."
+        },
+        {
+          "name": "Amlodipine",
+          "mechanism": "Calcium channel blocker that relaxes vascular smooth muscle, leading to vasodilation.",
+          "dosing": "Starting dose 5 mg once daily, can increase to 10 mg.",
+          "sideEffects": "Peripheral edema, flushing, palpitations, dizziness.",
+          "notes": "Effective in elderly patients and those with angina."
+        },
+        {
+          "name": "Hydrochlorothiazide",
+          "mechanism": "Thiazide diuretic that reduces blood volume and peripheral resistance.",
+          "dosing": "12.5-25 mg once daily.",
+          "sideEffects": "Hypokalemia, hyperuricemia, dehydration.",
+          "notes": "Monitor electrolytes regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Renal artery angioplasty",
+          "description": "A minimally invasive procedure to open narrowed renal arteries to improve blood flow and reduce hypertension.",
+          "indications": "Resistant hypertension due to renal artery stenosis, significant renal impairment.",
+          "risks": "Bleeding, infection, renal artery dissection, contrast nephropathy."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients can achieve good blood pressure control and reduce the risk of cardiovascular complications. However, untreated hypertension can lead to serious complications such as stroke, heart attack, and kidney failure.",
+    "complications": [
+      "Heart failure",
+      "Myocardial infarction",
+      "Stroke",
+      "Chronic kidney disease",
+      "Hypertensive retinopathy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in measuring blood pressure, recognizing signs and symptoms of hypertension, initiating investigations, and managing patients with hypertension. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to a senior clinician if blood pressure is severely elevated (e.g., >180/110 mmHg), if there are signs of end-organ damage, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Ensure accurate blood pressure measurement techniques, monitor for side effects of antihypertensive medications, and educate patients on the importance of adherence to treatment and follow-up."
+  }
+}

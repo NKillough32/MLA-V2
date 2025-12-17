@@ -1,0 +1,139 @@
+{
+  "id": "urinary_incontinence",
+  "name": "Urinary incontinence?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:41:08.371845",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Urinary incontinence?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUrinary incontinence is the involuntary loss of urine, which can significantly impact quality of life. It is a common condition, particularly among the elderly, and can be classified into several types including stress, urge, overflow, and functional incontinence.\n\n### Epidemiology\nUrinary incontinence affects approximately 30% of older adults living in the community and up to 50% of those in long-term care facilities. It is more prevalent in women than men, particularly post-menopause.\n\n### Essential Pathophysiology\nThe pathophysiology of urinary incontinence varies by type. Stress incontinence is due to weakened pelvic floor muscles and urethral sphincter dysfunction. Urge incontinence is associated with overactive bladder muscles. Overflow incontinence occurs when the bladder is unable to empty completely, leading to overflow leakage. Functional incontinence is due to cognitive or physical impairments that prevent timely access to a toilet.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Involuntary leakage of urine\n- Urgency to urinate\n- Frequent urination\n- Nocturia (waking at night to urinate)\n\n### Key Signs\n- Post-void residual urine on ultrasound\n- Pelvic examination findings (e.g., pelvic organ prolapse)\n- Urinary tract infection signs (e.g., fever, dysuria)\n\n### Atypical Presentations\n- Urinary incontinence associated with cognitive decline\n- Incontinence only during physical activity or exertion\n\n### Red Flags Requiring Immediate Action\n- New onset incontinence in an elderly patient\n- Associated with hematuria (blood in urine)\n- Signs of urinary tract infection or sepsis\n- Neurological symptoms (e.g., weakness, sensory loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis to rule out urinary tract infection\n- Bladder diary (to assess frequency and volume of urination)\n- Physical examination (including pelvic examination)\n\n### Second-line Investigations\n- Post-void residual volume measurement via ultrasound or catheterization\n- Urodynamic studies (if indicated)\n\n### Specialist Tests\n- Cystoscopy (to visualize the bladder)\n- MRI of the pelvis (if anatomical abnormalities are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, symptom assessment, and exclusion of other causes. A bladder diary can help quantify symptoms and guide management.\n\n### Key Differential Diagnoses to Exclude\n- Urinary tract infection\n- Diabetes mellitus (polyuria)\n- Prostate enlargement (in men)\n- Neurological disorders (e.g., multiple sclerosis, stroke)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Catheterization for acute urinary retention\n- Treat underlying causes (e.g., urinary tract infection)\n\n#### Second-line Treatments\n- Consider referral to urology or geriatric medicine for further evaluation\n\n#### Emergency Procedures\n- Intermittent catheterization for retention\n- Placement of a urinary catheter for management of acute incontinence\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Pelvic floor muscle training (Kegel exercises)\n- Bladder training (scheduled voiding)\n- Lifestyle modifications (e.g., weight loss, fluid management)\n\n#### Second-line Treatments\n- Medications (e.g., anticholinergics for urge incontinence)\n- Referral for physical therapy or continence specialist\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom improvement and adjust management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxybutynin\n- **Mechanism of Action**: Anticholinergic agent that relaxes bladder muscle and reduces urgency.\n- **Typical Dosing Range**: Start at 5 mg orally 2-3 times daily; may increase to 10 mg if tolerated.\n- **Key Side Effects/Contraindications**: Dry mouth, constipation, dizziness, urinary retention.\n- **When to Use vs. Alternatives**: Monitor for cognitive side effects, especially in elderly patients.\n\n#### Tolterodine\n- **Mechanism of Action**: Anticholinergic that decreases bladder contractions.\n- **Typical Dosing Range**: Start at 2 mg orally twice daily; may increase to 4 mg if needed.\n- **Key Side Effects/Contraindications**: Dry mouth, headache, dizziness.\n- **When to Use vs. Alternatives**: Less sedating than oxybutynin.\n\n#### Mirabegron\n- **Mechanism of Action**: Beta-3 adrenergic agonist that relaxes bladder detrusor muscle.\n- **Typical Dosing Range**: 25 mg orally once daily; may increase to 50 mg after 8 weeks.\n- **Key Side Effects/Contraindications**: Hypertension, urinary tract infection, headache.\n- **When to Use vs. Alternatives**: Consider in patients who cannot tolerate anticholinergics.\n\n### Procedures\n\n#### Bladder training\n- **What it Involves**: A behavioral technique to increase bladder capacity and reduce urgency.\n- **Indications**: Urge incontinence, especially in patients with overactive bladder.\n- **Key Risks/Complications**: Requires patient commitment and may take time to see results.\n\n#### Sling procedures (e.g., mid-urethral sling)\n- **What it Involves**: Surgical placement of a mesh sling to support the urethra and prevent involuntary leakage during exertion.\n- **Indications**: Stress urinary incontinence not responsive to conservative measures.\n- **Key Risks/Complications**: Surgical risks include infection, bleeding, and mesh complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for urinary incontinence varies based on the underlying cause and type. Many patients can achieve significant improvement with appropriate management, while others may require ongoing treatment.\n\n### Important Complications to Watch For\n- Skin irritation or breakdown from moisture exposure\n- Urinary tract infections\n- Psychosocial impact (e.g., depression, social isolation)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute cases, and refer to specialists as needed. They should also educate patients about lifestyle modifications and conservative management options.\n\n### When to Escalate to Senior/Specialist\nRefer to urology or geriatric medicine for persistent or complicated cases, especially if there are red flags or if conservative management fails.\n\n### Key Safety Considerations\nEnsure proper assessment of urinary retention and infection. Monitor for side effects of medications, especially in elderly patients. Be aware of the psychosocial impact of incontinence on patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Urinary incontinence is the involuntary loss of urine, which can significantly impact quality of life. It is a common condition, particularly among the elderly, and can be classified into several types including stress, urge, overflow, and functional incontinence.",
+      "epidemiology": "Urinary incontinence affects approximately 30% of older adults living in the community and up to 50% of those in long-term care facilities. It is more prevalent in women than men, particularly post-menopause.",
+      "pathophysiology": "The pathophysiology of urinary incontinence varies by type. Stress incontinence is due to weakened pelvic floor muscles and urethral sphincter dysfunction. Urge incontinence is associated with overactive bladder muscles. Overflow incontinence occurs when the bladder is unable to empty completely, leading to overflow leakage. Functional incontinence is due to cognitive or physical impairments that prevent timely access to a toilet."
+    },
+    "recognition": {
+      "symptoms": [
+        "Involuntary leakage of urine",
+        "Urgency to urinate",
+        "Frequent urination",
+        "Nocturia (waking at night to urinate)"
+      ],
+      "signs": [
+        "Post-void residual urine on ultrasound",
+        "Pelvic examination findings (e.g., pelvic organ prolapse)",
+        "Urinary tract infection signs (e.g., fever, dysuria)"
+      ],
+      "atypicalPresentations": [
+        "Urinary incontinence associated with cognitive decline",
+        "Incontinence only during physical activity or exertion"
+      ],
+      "redFlags": [
+        "New onset incontinence in an elderly patient",
+        "Associated with hematuria (blood in urine)",
+        "Signs of urinary tract infection or sepsis",
+        "Neurological symptoms (e.g., weakness, sensory loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis to rule out urinary tract infection",
+        "Bladder diary (to assess frequency and volume of urination)",
+        "Physical examination (including pelvic examination)"
+      ],
+      "secondLine": [
+        "Post-void residual volume measurement via ultrasound or catheterization",
+        "Urodynamic studies (if indicated)"
+      ],
+      "specialistTests": [
+        "Cystoscopy (to visualize the bladder)",
+        "MRI of the pelvis (if anatomical abnormalities are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, symptom assessment, and exclusion of other causes. A bladder diary can help quantify symptoms and guide management.",
+      "differentials": [
+        "Urinary tract infection",
+        "Diabetes mellitus (polyuria)",
+        "Prostate enlargement (in men)",
+        "Neurological disorders (e.g., multiple sclerosis, stroke)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Catheterization for acute urinary retention",
+          "Treat underlying causes (e.g., urinary tract infection)"
+        ],
+        "secondLine": [
+          "Consider referral to urology or geriatric medicine for further evaluation"
+        ],
+        "procedures": [
+          "Intermittent catheterization for retention",
+          "Placement of a urinary catheter for management of acute incontinence"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Pelvic floor muscle training (Kegel exercises)",
+          "Bladder training (scheduled voiding)",
+          "Lifestyle modifications (e.g., weight loss, fluid management)"
+        ],
+        "secondLine": [
+          "Medications (e.g., anticholinergics for urge incontinence)",
+          "Referral for physical therapy or continence specialist"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom improvement and adjust management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxybutynin",
+          "mechanism": "Anticholinergic agent that relaxes bladder muscle and reduces urgency.",
+          "dosing": "Start at 5 mg orally 2-3 times daily; may increase to 10 mg if tolerated.",
+          "sideEffects": "Dry mouth, constipation, dizziness, urinary retention.",
+          "notes": "Monitor for cognitive side effects, especially in elderly patients."
+        },
+        {
+          "name": "Tolterodine",
+          "mechanism": "Anticholinergic that decreases bladder contractions.",
+          "dosing": "Start at 2 mg orally twice daily; may increase to 4 mg if needed.",
+          "sideEffects": "Dry mouth, headache, dizziness.",
+          "notes": "Less sedating than oxybutynin."
+        },
+        {
+          "name": "Mirabegron",
+          "mechanism": "Beta-3 adrenergic agonist that relaxes bladder detrusor muscle.",
+          "dosing": "25 mg orally once daily; may increase to 50 mg after 8 weeks.",
+          "sideEffects": "Hypertension, urinary tract infection, headache.",
+          "notes": "Consider in patients who cannot tolerate anticholinergics."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bladder training",
+          "description": "A behavioral technique to increase bladder capacity and reduce urgency.",
+          "indications": "Urge incontinence, especially in patients with overactive bladder.",
+          "risks": "Requires patient commitment and may take time to see results."
+        },
+        {
+          "name": "Sling procedures (e.g., mid-urethral sling)",
+          "description": "Surgical placement of a mesh sling to support the urethra and prevent involuntary leakage during exertion.",
+          "indications": "Stress urinary incontinence not responsive to conservative measures.",
+          "risks": "Surgical risks include infection, bleeding, and mesh complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for urinary incontinence varies based on the underlying cause and type. Many patients can achieve significant improvement with appropriate management, while others may require ongoing treatment.",
+    "complications": [
+      "Skin irritation or breakdown from moisture exposure",
+      "Urinary tract infections",
+      "Psychosocial impact (e.g., depression, social isolation)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute cases, and refer to specialists as needed. They should also educate patients about lifestyle modifications and conservative management options.",
+    "escalation": "Refer to urology or geriatric medicine for persistent or complicated cases, especially if there are red flags or if conservative management fails.",
+    "keySafetyConsiderations": "Ensure proper assessment of urinary retention and infection. Monitor for side effects of medications, especially in elderly patients. Be aware of the psychosocial impact of incontinence on patients."
+  }
+}

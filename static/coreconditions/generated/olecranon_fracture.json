@@ -1,0 +1,120 @@
+{
+  "id": "olecranon_fracture",
+  "name": "Olecranon fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:28:43.991612",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Olecranon fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAn olecranon fracture is a break in the bony prominence of the elbow, known as the olecranon, which is part of the ulna bone. It commonly occurs due to direct trauma or falls onto an outstretched hand.\n\n### Epidemiology\nOlecranon fractures account for approximately 10% of all elbow fractures and are more common in adults, particularly in those aged 20-50 years. They are often associated with other injuries, especially in the elderly.\n\n### Essential Pathophysiology\nThe olecranon serves as an attachment point for the triceps muscle, and fractures can disrupt the extensor mechanism of the elbow. Fractures can be classified as either simple (non-displaced) or complex (displaced or comminuted), affecting stability and treatment.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain at the elbow\n- Swelling around the elbow\n- Inability to extend the elbow\n- Bruising around the elbow\n\n### Key Signs\n- Deformity of the elbow\n- Tenderness over the olecranon\n- Swelling and ecchymosis\n- Limited range of motion\n\n### Atypical Presentations\n- Minimal swelling in non-displaced fractures\n- Delayed presentation due to initial misdiagnosis\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (numbness, tingling, weakness in the hand)\n- Open fracture (exposed bone)\n- Signs of compartment syndrome (severe pain, tense swelling)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the elbow (AP and lateral views)\n\n### Second-line Investigations\n- CT scan if fracture is complex or surgical planning is needed\n\n### Specialist Tests\n- MRI may be used to assess soft tissue injuries or occult fractures\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical examination and radiological findings. A fracture is confirmed by the presence of a break in the continuity of the olecranon on X-ray.\n\n### Key Differential Diagnoses to Exclude\n- Radial head fracture\n- Coronoid fracture\n- Elbow dislocation\n- Soft tissue injury (ligamentous)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization with a splint or sling\n\n#### Second-line Treatments\n- Referral to orthopaedics for assessment of fracture displacement\n\n#### Emergency Procedures\n- Closed reduction and splinting for non-displaced fractures\n- Open reduction and internal fixation (ORIF) for displaced fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physiotherapy for range of motion and strengthening exercises\n\n#### Second-line Treatments\n- Surgical intervention if there is persistent instability or pain\n\n#### Monitoring Requirements\n- Regular follow-up with X-rays to assess healing and alignment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n### Procedures\n\n#### Open Reduction and Internal Fixation (ORIF)\n- **What it Involves**: Surgical procedure to realign and stabilize the fractured olecranon using plates and screws.\n- **Indications**: Displaced fractures, unstable fractures, or fractures with associated injuries.\n- **Key Risks/Complications**: Infection, nerve injury, non-union, stiffness of the elbow.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost olecranon fractures heal well with appropriate treatment. Non-displaced fractures have a good prognosis, while displaced fractures may lead to complications such as stiffness or arthritis if not managed properly.\n\n### Important Complications to Watch For\n- Non-union or malunion of the fracture\n- Elbow stiffness or loss of range of motion\n- Post-traumatic arthritis\n- Nerve injury (e.g., ulnar nerve)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide analgesia, and refer to orthopaedics for further management. They should also monitor for complications and ensure appropriate follow-up.\n\n### When to Escalate to Senior/Specialist\nEscalate to senior medical staff if there are signs of neurovascular compromise, open fractures, or if the patient is unstable.\n\n### Key Safety Considerations\nEnsure proper immobilization of the fracture, monitor for signs of compartment syndrome, and provide adequate pain management.\n",
+  "content": {
+    "overview": {
+      "definition": "An olecranon fracture is a break in the bony prominence of the elbow, known as the olecranon, which is part of the ulna bone. It commonly occurs due to direct trauma or falls onto an outstretched hand.",
+      "epidemiology": "Olecranon fractures account for approximately 10% of all elbow fractures and are more common in adults, particularly in those aged 20-50 years. They are often associated with other injuries, especially in the elderly.",
+      "pathophysiology": "The olecranon serves as an attachment point for the triceps muscle, and fractures can disrupt the extensor mechanism of the elbow. Fractures can be classified as either simple (non-displaced) or complex (displaced or comminuted), affecting stability and treatment."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain at the elbow",
+        "Swelling around the elbow",
+        "Inability to extend the elbow",
+        "Bruising around the elbow"
+      ],
+      "signs": [
+        "Deformity of the elbow",
+        "Tenderness over the olecranon",
+        "Swelling and ecchymosis",
+        "Limited range of motion"
+      ],
+      "atypicalPresentations": [
+        "Minimal swelling in non-displaced fractures",
+        "Delayed presentation due to initial misdiagnosis"
+      ],
+      "redFlags": [
+        "Neurovascular compromise (numbness, tingling, weakness in the hand)",
+        "Open fracture (exposed bone)",
+        "Signs of compartment syndrome (severe pain, tense swelling)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the elbow (AP and lateral views)"
+      ],
+      "secondLine": [
+        "CT scan if fracture is complex or surgical planning is needed"
+      ],
+      "specialistTests": [
+        "MRI may be used to assess soft tissue injuries or occult fractures"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical examination and radiological findings. A fracture is confirmed by the presence of a break in the continuity of the olecranon on X-ray.",
+      "differentials": [
+        "Radial head fracture",
+        "Coronoid fracture",
+        "Elbow dislocation",
+        "Soft tissue injury (ligamentous)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization with a splint or sling"
+        ],
+        "secondLine": [
+          "Referral to orthopaedics for assessment of fracture displacement"
+        ],
+        "procedures": [
+          "Closed reduction and splinting for non-displaced fractures",
+          "Open reduction and internal fixation (ORIF) for displaced fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physiotherapy for range of motion and strengthening exercises"
+        ],
+        "secondLine": [
+          "Surgical intervention if there is persistent instability or pain"
+        ],
+        "monitoring": [
+          "Regular follow-up with X-rays to assess healing and alignment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Useful for pain and inflammation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Open Reduction and Internal Fixation (ORIF)",
+          "description": "Surgical procedure to realign and stabilize the fractured olecranon using plates and screws.",
+          "indications": "Displaced fractures, unstable fractures, or fractures with associated injuries.",
+          "risks": "Infection, nerve injury, non-union, stiffness of the elbow."
+        }
+      ]
+    },
+    "prognosis": "Most olecranon fractures heal well with appropriate treatment. Non-displaced fractures have a good prognosis, while displaced fractures may lead to complications such as stiffness or arthritis if not managed properly.",
+    "complications": [
+      "Non-union or malunion of the fracture",
+      "Elbow stiffness or loss of range of motion",
+      "Post-traumatic arthritis",
+      "Nerve injury (e.g., ulnar nerve)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide analgesia, and refer to orthopaedics for further management. They should also monitor for complications and ensure appropriate follow-up.",
+    "escalation": "Escalate to senior medical staff if there are signs of neurovascular compromise, open fractures, or if the patient is unstable.",
+    "keySafetyConsiderations": "Ensure proper immobilization of the fracture, monitor for signs of compartment syndrome, and provide adequate pain management."
+  }
+}

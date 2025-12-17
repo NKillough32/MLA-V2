@@ -1,0 +1,127 @@
+{
+  "id": "blepharitis",
+  "name": "Blepharitis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:45:04.231335",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Blepharitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBlepharitis is an inflammation of the eyelid margins, characterized by redness, swelling, and crusting of the eyelids. It can be caused by seborrheic dermatitis, staphylococcal infection, or meibomian gland dysfunction.\n\n### Epidemiology\nBlepharitis is a common condition, affecting people of all ages, with a higher prevalence in those with oily skin, dandruff, or other skin conditions. It is often seen in conjunction with other ocular conditions such as dry eye syndrome.\n\n### Essential Pathophysiology\nThe pathophysiology involves inflammation of the eyelid margins due to various factors including bacterial colonization (especially Staphylococcus), seborrheic dermatitis, and dysfunction of the meibomian glands leading to altered tear film stability.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching or burning sensation in the eyes\n- Redness of the eyelid margins\n- Crusty eyelids upon waking\n- Sensitivity to light\n- Dry eyes or excessive tearing\n\n### Key Signs\n- Eyelid margin erythema\n- Crusting or scaling at the eyelid margins\n- Thickened eyelid margins\n- Meibomian gland dysfunction (blocked glands)\n- Conjunctival injection\n\n### Atypical Presentations\n- Blepharitis may present with recurrent conjunctivitis\n- Chalazia or styes may develop due to blocked glands\n- Symptoms may be exacerbated by contact lens wear\n\n### Red Flags Requiring Immediate Action\n- Severe pain or vision changes\n- Persistent symptoms despite treatment\n- Signs of orbital cellulitis (proptosis, decreased vision, fever)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of eyelids and conjunctiva\n- Assessment of meibomian gland function\n\n### Second-line Investigations\n- Swabs for microbiological culture if secondary infection is suspected\n- Tear break-up time to assess for dry eye syndrome\n\n### Specialist Tests\n- Referral to an ophthalmologist for persistent or complicated cases\n- Biopsy if malignancy is suspected (rare)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and examination findings of eyelid margin inflammation.\n\n### Key Differential Diagnoses to Exclude\n- Conjunctivitis\n- Allergic blepharitis\n- Chalazion\n- Stye (hordeolum)\n- Seborrheic dermatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Warm compresses applied to the eyelids for 5-10 minutes, 2-4 times daily\n- Eyelid scrubs with diluted baby shampoo or commercially available eyelid scrub pads\n\n#### Second-line Treatments\n- Topical antibiotics (e.g., bacitracin or erythromycin ointment) if secondary infection is suspected\n\n#### Emergency Procedures\n- Lid hygiene education and instruction on proper eyelid care\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued eyelid hygiene with warm compresses and eyelid scrubs\n- Consideration of artificial tears for associated dry eye symptoms\n\n#### Second-line Treatments\n- Topical corticosteroids (e.g., fluorometholone) for inflammation if not responding to hygiene alone\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and adjust management as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Bacitracin Ointment\n- **Mechanism of Action**: Antibacterial agent effective against Staphylococcus species.\n- **Typical Dosing Range**: Apply a small amount to the eyelid margin 1-2 times daily.\n- **Key Side Effects/Contraindications**: Local irritation, allergic reaction.\n- **When to Use vs. Alternatives**: Use with caution in patients with known allergies.\n\n#### Fluorometholone Drops\n- **Mechanism of Action**: Corticosteroid that reduces inflammation.\n- **Typical Dosing Range**: 1-2 drops in the affected eye(s) 2-4 times daily.\n- **Key Side Effects/Contraindications**: Increased intraocular pressure, cataract formation with prolonged use.\n- **When to Use vs. Alternatives**: Monitor intraocular pressure if used long-term.\n\n### Procedures\n\n#### Eyelid Scrubs\n- **What it Involves**: Cleansing of the eyelid margins to remove debris and crusts.\n- **Indications**: Recommended for all patients with blepharitis as part of hygiene management.\n- **Key Risks/Complications**: Minimal; may cause temporary discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nBlepharitis is a chronic condition that can be managed effectively with proper hygiene and treatment. Recurrences are common, and long-term management may be necessary.\n\n### Important Complications to Watch For\n- Chalazia formation\n- Styes (hordeola)\n- Conjunctivitis\n- Corneal complications due to chronic inflammation\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should educate patients on eyelid hygiene, recognize symptoms of blepharitis, initiate first-line management, and refer to ophthalmology for persistent or complicated cases.\n\n### When to Escalate to Senior/Specialist\nRefer to an ophthalmologist if there is no improvement after 4-6 weeks of treatment, or if there are red flag symptoms such as vision changes or severe pain.\n\n### Key Safety Considerations\nEnsure proper hand hygiene when advising on eyelid care, and educate patients on the importance of not sharing towels or cosmetics to prevent infection.\n",
+  "content": {
+    "overview": {
+      "definition": "Blepharitis is an inflammation of the eyelid margins, characterized by redness, swelling, and crusting of the eyelids. It can be caused by seborrheic dermatitis, staphylococcal infection, or meibomian gland dysfunction.",
+      "epidemiology": "Blepharitis is a common condition, affecting people of all ages, with a higher prevalence in those with oily skin, dandruff, or other skin conditions. It is often seen in conjunction with other ocular conditions such as dry eye syndrome.",
+      "pathophysiology": "The pathophysiology involves inflammation of the eyelid margins due to various factors including bacterial colonization (especially Staphylococcus), seborrheic dermatitis, and dysfunction of the meibomian glands leading to altered tear film stability."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching or burning sensation in the eyes",
+        "Redness of the eyelid margins",
+        "Crusty eyelids upon waking",
+        "Sensitivity to light",
+        "Dry eyes or excessive tearing"
+      ],
+      "signs": [
+        "Eyelid margin erythema",
+        "Crusting or scaling at the eyelid margins",
+        "Thickened eyelid margins",
+        "Meibomian gland dysfunction (blocked glands)",
+        "Conjunctival injection"
+      ],
+      "atypicalPresentations": [
+        "Blepharitis may present with recurrent conjunctivitis",
+        "Chalazia or styes may develop due to blocked glands",
+        "Symptoms may be exacerbated by contact lens wear"
+      ],
+      "redFlags": [
+        "Severe pain or vision changes",
+        "Persistent symptoms despite treatment",
+        "Signs of orbital cellulitis (proptosis, decreased vision, fever)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of eyelids and conjunctiva",
+        "Assessment of meibomian gland function"
+      ],
+      "secondLine": [
+        "Swabs for microbiological culture if secondary infection is suspected",
+        "Tear break-up time to assess for dry eye syndrome"
+      ],
+      "specialistTests": [
+        "Referral to an ophthalmologist for persistent or complicated cases",
+        "Biopsy if malignancy is suspected (rare)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and examination findings of eyelid margin inflammation.",
+      "differentials": [
+        "Conjunctivitis",
+        "Allergic blepharitis",
+        "Chalazion",
+        "Stye (hordeolum)",
+        "Seborrheic dermatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Warm compresses applied to the eyelids for 5-10 minutes, 2-4 times daily",
+          "Eyelid scrubs with diluted baby shampoo or commercially available eyelid scrub pads"
+        ],
+        "secondLine": [
+          "Topical antibiotics (e.g., bacitracin or erythromycin ointment) if secondary infection is suspected"
+        ],
+        "procedures": [
+          "Lid hygiene education and instruction on proper eyelid care"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued eyelid hygiene with warm compresses and eyelid scrubs",
+          "Consideration of artificial tears for associated dry eye symptoms"
+        ],
+        "secondLine": [
+          "Topical corticosteroids (e.g., fluorometholone) for inflammation if not responding to hygiene alone"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and adjust management as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Bacitracin Ointment",
+          "mechanism": "Antibacterial agent effective against Staphylococcus species.",
+          "dosing": "Apply a small amount to the eyelid margin 1-2 times daily.",
+          "sideEffects": "Local irritation, allergic reaction.",
+          "notes": "Use with caution in patients with known allergies."
+        },
+        {
+          "name": "Fluorometholone Drops",
+          "mechanism": "Corticosteroid that reduces inflammation.",
+          "dosing": "1-2 drops in the affected eye(s) 2-4 times daily.",
+          "sideEffects": "Increased intraocular pressure, cataract formation with prolonged use.",
+          "notes": "Monitor intraocular pressure if used long-term."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Eyelid Scrubs",
+          "description": "Cleansing of the eyelid margins to remove debris and crusts.",
+          "indications": "Recommended for all patients with blepharitis as part of hygiene management.",
+          "risks": "Minimal; may cause temporary discomfort."
+        }
+      ]
+    },
+    "prognosis": "Blepharitis is a chronic condition that can be managed effectively with proper hygiene and treatment. Recurrences are common, and long-term management may be necessary.",
+    "complications": [
+      "Chalazia formation",
+      "Styes (hordeola)",
+      "Conjunctivitis",
+      "Corneal complications due to chronic inflammation"
+    ],
+    "foundationDoctorRole": "Foundation doctors should educate patients on eyelid hygiene, recognize symptoms of blepharitis, initiate first-line management, and refer to ophthalmology for persistent or complicated cases.",
+    "escalation": "Refer to an ophthalmologist if there is no improvement after 4-6 weeks of treatment, or if there are red flag symptoms such as vision changes or severe pain.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene when advising on eyelid care, and educate patients on the importance of not sharing towels or cosmetics to prevent infection."
+  }
+}

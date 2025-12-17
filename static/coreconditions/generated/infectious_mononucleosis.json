@@ -1,0 +1,129 @@
+{
+  "id": "infectious_mononucleosis",
+  "name": "Infectious mononucleosis",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:38:26.953615",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Infectious mononucleosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInfectious mononucleosis, often referred to as 'mono', is an infectious disease typically caused by the Epstein-Barr virus (EBV), characterized by fever, sore throat, lymphadenopathy, and fatigue.\n\n### Epidemiology\nInfectious mononucleosis is most common in adolescents and young adults, particularly those aged 15-24 years. It is transmitted through saliva, hence often referred to as the 'kissing disease'.\n\n### Essential Pathophysiology\nThe Epstein-Barr virus infects B lymphocytes, leading to their proliferation and the activation of T lymphocytes. This immune response results in the clinical manifestations of the disease, including lymphadenopathy and splenomegaly.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Sore throat\n- Fatigue\n- Lymphadenopathy (cervical)\n- Headache\n- Myalgia\n- Rash\n\n### Key Signs\n- Posterior cervical lymphadenopathy\n- Splenomegaly\n- Hepatomegaly\n- Palatal petechiae\n\n### Atypical Presentations\n- Severe fatigue without significant fever\n- Rash resembling rubella\n- Hepatitis-like symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain (risk of splenic rupture)\n- Respiratory distress\n- Persistent high fever\n- Neurological symptoms (e.g., confusion, seizures)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) showing lymphocytosis\n- Monospot test (heterophile antibody test)\n\n### Second-line Investigations\n- EBV-specific serology (VCA IgM, VCA IgG, EBNA IgG)\n- Liver function tests\n\n### Specialist Tests\n- Ultrasound abdomen (to assess splenomegaly)\n- CT scan if complications are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by laboratory findings such as positive heterophile antibodies and lymphocytosis. A positive Monospot test is indicative but not definitive.\n\n### Key Differential Diagnoses to Exclude\n- Streptococcal pharyngitis\n- Cytomegalovirus (CMV) infection\n- HIV infection\n- Toxoplasmosis\n- Lymphoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, analgesics)\n- Corticosteroids if severe symptoms (e.g., airway obstruction)\n\n#### Second-line Treatments\n- Antipyretics (e.g., paracetamol) for fever\n- Antihistamines for pruritus\n\n#### Emergency Procedures\n- Airway management in case of severe tonsillar enlargement\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued supportive care and monitoring for fatigue\n\n#### Second-line Treatments\n- Referral to specialist if symptoms persist beyond 6 months\n\n#### Monitoring Requirements\n- Regular follow-up for splenomegaly and liver function tests\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed (max 4g/day)\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: Safe in pregnancy.\n\n#### Corticosteroids (e.g., Prednisolone)\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive\n- **Typical Dosing Range**: 20-40 mg daily for 3-5 days in severe cases\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, increased infection risk\n- **When to Use vs. Alternatives**: Use cautiously; only in severe cases.\n\n### Procedures\n\n#### Airway management\n- **What it Involves**: Intervention to secure the airway in cases of severe tonsillar enlargement leading to obstruction.\n- **Indications**: Severe respiratory distress or stridor due to tonsillar hypertrophy.\n- **Key Risks/Complications**: Intubation risks, potential for airway trauma.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for infectious mononucleosis is generally good, with most patients recovering fully within 2-4 weeks. Fatigue may persist for several weeks to months in some cases.\n\n### Important Complications to Watch For\n- Splenic rupture\n- Hepatitis\n- Airway obstruction\n- Secondary bacterial infections (e.g., streptococcal pharyngitis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the clinical features of infectious mononucleosis, perform initial investigations, provide supportive management, and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT or general surgery if there are signs of airway obstruction, severe abdominal pain, or complications such as splenic rupture.\n\n### Key Safety Considerations\nMonitor for signs of splenic rupture, especially in patients with significant splenomegaly. Advise patients to avoid contact sports for at least 4 weeks after diagnosis to reduce the risk of splenic injury.\n",
+  "content": {
+    "overview": {
+      "definition": "Infectious mononucleosis, often referred to as 'mono', is an infectious disease typically caused by the Epstein-Barr virus (EBV), characterized by fever, sore throat, lymphadenopathy, and fatigue.",
+      "epidemiology": "Infectious mononucleosis is most common in adolescents and young adults, particularly those aged 15-24 years. It is transmitted through saliva, hence often referred to as the 'kissing disease'.",
+      "pathophysiology": "The Epstein-Barr virus infects B lymphocytes, leading to their proliferation and the activation of T lymphocytes. This immune response results in the clinical manifestations of the disease, including lymphadenopathy and splenomegaly."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Sore throat",
+        "Fatigue",
+        "Lymphadenopathy (cervical)",
+        "Headache",
+        "Myalgia",
+        "Rash"
+      ],
+      "signs": [
+        "Posterior cervical lymphadenopathy",
+        "Splenomegaly",
+        "Hepatomegaly",
+        "Palatal petechiae"
+      ],
+      "atypicalPresentations": [
+        "Severe fatigue without significant fever",
+        "Rash resembling rubella",
+        "Hepatitis-like symptoms"
+      ],
+      "redFlags": [
+        "Severe abdominal pain (risk of splenic rupture)",
+        "Respiratory distress",
+        "Persistent high fever",
+        "Neurological symptoms (e.g., confusion, seizures)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) showing lymphocytosis",
+        "Monospot test (heterophile antibody test)"
+      ],
+      "secondLine": [
+        "EBV-specific serology (VCA IgM, VCA IgG, EBNA IgG)",
+        "Liver function tests"
+      ],
+      "specialistTests": [
+        "Ultrasound abdomen (to assess splenomegaly)",
+        "CT scan if complications are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by laboratory findings such as positive heterophile antibodies and lymphocytosis. A positive Monospot test is indicative but not definitive.",
+      "differentials": [
+        "Streptococcal pharyngitis",
+        "Cytomegalovirus (CMV) infection",
+        "HIV infection",
+        "Toxoplasmosis",
+        "Lymphoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, analgesics)",
+          "Corticosteroids if severe symptoms (e.g., airway obstruction)"
+        ],
+        "secondLine": [
+          "Antipyretics (e.g., paracetamol) for fever",
+          "Antihistamines for pruritus"
+        ],
+        "procedures": [
+          "Airway management in case of severe tonsillar enlargement"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued supportive care and monitoring for fatigue"
+        ],
+        "secondLine": [
+          "Referral to specialist if symptoms persist beyond 6 months"
+        ],
+        "monitoring": [
+          "Regular follow-up for splenomegaly and liver function tests"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours as needed (max 4g/day)",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "Safe in pregnancy."
+        },
+        {
+          "name": "Corticosteroids (e.g., Prednisolone)",
+          "mechanism": "Anti-inflammatory and immunosuppressive",
+          "dosing": "20-40 mg daily for 3-5 days in severe cases",
+          "sideEffects": "Weight gain, hypertension, diabetes, increased infection risk",
+          "notes": "Use cautiously; only in severe cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Airway management",
+          "description": "Intervention to secure the airway in cases of severe tonsillar enlargement leading to obstruction.",
+          "indications": "Severe respiratory distress or stridor due to tonsillar hypertrophy.",
+          "risks": "Intubation risks, potential for airway trauma."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for infectious mononucleosis is generally good, with most patients recovering fully within 2-4 weeks. Fatigue may persist for several weeks to months in some cases.",
+    "complications": [
+      "Splenic rupture",
+      "Hepatitis",
+      "Airway obstruction",
+      "Secondary bacterial infections (e.g., streptococcal pharyngitis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the clinical features of infectious mononucleosis, perform initial investigations, provide supportive management, and refer to specialists when necessary.",
+    "escalation": "Refer to ENT or general surgery if there are signs of airway obstruction, severe abdominal pain, or complications such as splenic rupture.",
+    "keySafetyConsiderations": "Monitor for signs of splenic rupture, especially in patients with significant splenomegaly. Advise patients to avoid contact sports for at least 4 weeks after diagnosis to reduce the risk of splenic injury."
+  }
+}

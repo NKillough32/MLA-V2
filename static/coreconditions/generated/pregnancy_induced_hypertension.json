@@ -1,0 +1,139 @@
+{
+  "id": "pregnancy_induced_hypertension",
+  "name": "Pregnancy-induced hypertension",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:46:58.566451",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pregnancy-induced hypertension: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPregnancy-induced hypertension (PIH) is defined as new-onset hypertension (blood pressure ≥ 140/90 mmHg) after 20 weeks of gestation without the presence of proteinuria or other signs of preeclampsia.\n\n### Epidemiology\nPIH affects approximately 6-8% of pregnancies. It is more common in first-time mothers, women with a history of hypertension, and those with multiple gestations.\n\n### Essential Pathophysiology\nThe exact pathophysiology of PIH is not fully understood, but it is thought to involve placental ischemia leading to the release of factors that cause endothelial dysfunction, increased vascular resistance, and ultimately hypertension.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Visual disturbances (e.g., blurred vision, scotomas)\n- Nausea or vomiting\n- Epigastric pain\n\n### Key Signs\n- Elevated blood pressure (≥ 140/90 mmHg)\n- Edema (swelling)\n- Reflex hyperactivity\n\n### Atypical Presentations\n- Asymptomatic hypertension detected during routine prenatal visits\n- Severe hypertension without typical symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe headache unresponsive to analgesia\n- Sudden onset of visual changes\n- Severe epigastric pain or right upper quadrant pain\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood pressure measurement (at each visit)\n- Urinalysis for proteinuria\n- Blood tests (CBC, liver function tests, renal function tests)\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Ultrasound for fetal growth and well-being\n\n### Specialist Tests\n- Doppler ultrasound of uterine arteries\n- Non-stress test (NST) for fetal monitoring\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PIH is made when a pregnant woman has a blood pressure of ≥ 140/90 mmHg after 20 weeks of gestation without proteinuria or other signs of preeclampsia.\n\n### Key Differential Diagnoses to Exclude\n- Preeclampsia\n- Chronic hypertension\n- Gestational hypertension\n- Secondary hypertension (e.g., renal disease)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oral labetalol (100-200 mg twice daily)\n- Oral nifedipine (30 mg extended-release once daily)\n- Oral methyldopa (250-500 mg twice daily)\n\n#### Second-line Treatments\n- Intravenous hydralazine (5-10 mg bolus) for severe hypertension\n\n#### Emergency Procedures\n- Close monitoring in a hospital setting for severe cases\n- Consideration for delivery if severe or worsening symptoms\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- Regular monitoring of blood pressure and fetal growth\n\n#### Second-line Treatments\n- Antihypertensive medications if blood pressure remains elevated\n\n#### Monitoring Requirements\n- Frequent prenatal visits to monitor blood pressure and fetal well-being\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Labetalol\n- **Mechanism of Action**: Alpha and beta-adrenergic blocker that reduces heart rate and vascular resistance.\n- **Typical Dosing Range**: 100-200 mg orally twice daily, can increase to 400 mg twice daily if needed.\n- **Key Side Effects/Contraindications**: Fatigue, dizziness, nausea, and potential for bronchospasm in asthmatics.\n- **When to Use vs. Alternatives**: Preferred first-line agent for managing hypertension in pregnancy.\n\n#### Nifedipine\n- **Mechanism of Action**: Calcium channel blocker that relaxes vascular smooth muscle, leading to vasodilation.\n- **Typical Dosing Range**: 30 mg extended-release orally once daily.\n- **Key Side Effects/Contraindications**: Headache, flushing, peripheral edema, and hypotension.\n- **When to Use vs. Alternatives**: Use with caution; monitor for hypotension.\n\n#### Methyldopa\n- **Mechanism of Action**: Centrally acting alpha-2 agonist that decreases sympathetic outflow, leading to reduced blood pressure.\n- **Typical Dosing Range**: 250-500 mg orally twice daily, can increase to 1000 mg twice daily.\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, and potential for liver dysfunction.\n- **When to Use vs. Alternatives**: Considered safe in pregnancy.\n\n### Procedures\n\n#### Fetal monitoring\n- **What it Involves**: Continuous fetal heart rate monitoring to assess fetal well-being.\n- **Indications**: Severe hypertension, abnormal fetal movements, or other concerning symptoms.\n- **Key Risks/Complications**: False positives leading to unnecessary interventions.\n\n#### Delivery planning\n- **What it Involves**: Induction of labor or cesarean section if maternal or fetal health is at risk.\n- **Indications**: Severe PIH or preeclampsia, fetal distress.\n- **Key Risks/Complications**: Surgical risks, potential for preterm birth.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for PIH is generally good with appropriate management, but it can progress to preeclampsia or eclampsia if not monitored closely. Long-term outcomes for mothers and infants are usually favorable if managed appropriately.\n\n### Important Complications to Watch For\n- Progression to preeclampsia or eclampsia\n- Placental abruption\n- Fetal growth restriction\n- Preterm birth\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in monitoring blood pressure in pregnant patients, recognizing symptoms of PIH, and ensuring timely referral to obstetric specialists when necessary. They should also educate patients about the signs and symptoms of worsening hypertension.\n\n### When to Escalate to Senior/Specialist\nIf blood pressure is persistently elevated (≥ 160/110 mmHg) or if there are concerning symptoms (e.g., severe headache, visual changes), escalate care to an obstetrician immediately.\n\n### Key Safety Considerations\nEnsure regular monitoring of blood pressure and fetal well-being. Educate patients on recognizing red flags and when to seek immediate medical attention. Avoid certain medications contraindicated in pregnancy (e.g., ACE inhibitors, diuretics).\n",
+  "content": {
+    "overview": {
+      "definition": "Pregnancy-induced hypertension (PIH) is defined as new-onset hypertension (blood pressure ≥ 140/90 mmHg) after 20 weeks of gestation without the presence of proteinuria or other signs of preeclampsia.",
+      "epidemiology": "PIH affects approximately 6-8% of pregnancies. It is more common in first-time mothers, women with a history of hypertension, and those with multiple gestations.",
+      "pathophysiology": "The exact pathophysiology of PIH is not fully understood, but it is thought to involve placental ischemia leading to the release of factors that cause endothelial dysfunction, increased vascular resistance, and ultimately hypertension."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Visual disturbances (e.g., blurred vision, scotomas)",
+        "Nausea or vomiting",
+        "Epigastric pain"
+      ],
+      "signs": [
+        "Elevated blood pressure (≥ 140/90 mmHg)",
+        "Edema (swelling)",
+        "Reflex hyperactivity"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hypertension detected during routine prenatal visits",
+        "Severe hypertension without typical symptoms"
+      ],
+      "redFlags": [
+        "Severe headache unresponsive to analgesia",
+        "Sudden onset of visual changes",
+        "Severe epigastric pain or right upper quadrant pain",
+        "Altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood pressure measurement (at each visit)",
+        "Urinalysis for proteinuria",
+        "Blood tests (CBC, liver function tests, renal function tests)"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Ultrasound for fetal growth and well-being"
+      ],
+      "specialistTests": [
+        "Doppler ultrasound of uterine arteries",
+        "Non-stress test (NST) for fetal monitoring"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PIH is made when a pregnant woman has a blood pressure of ≥ 140/90 mmHg after 20 weeks of gestation without proteinuria or other signs of preeclampsia.",
+      "differentials": [
+        "Preeclampsia",
+        "Chronic hypertension",
+        "Gestational hypertension",
+        "Secondary hypertension (e.g., renal disease)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral labetalol (100-200 mg twice daily)",
+          "Oral nifedipine (30 mg extended-release once daily)",
+          "Oral methyldopa (250-500 mg twice daily)"
+        ],
+        "secondLine": [
+          "Intravenous hydralazine (5-10 mg bolus) for severe hypertension"
+        ],
+        "procedures": [
+          "Close monitoring in a hospital setting for severe cases",
+          "Consideration for delivery if severe or worsening symptoms"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "Regular monitoring of blood pressure and fetal growth"
+        ],
+        "secondLine": [
+          "Antihypertensive medications if blood pressure remains elevated"
+        ],
+        "monitoring": [
+          "Frequent prenatal visits to monitor blood pressure and fetal well-being"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Labetalol",
+          "mechanism": "Alpha and beta-adrenergic blocker that reduces heart rate and vascular resistance.",
+          "dosing": "100-200 mg orally twice daily, can increase to 400 mg twice daily if needed.",
+          "sideEffects": "Fatigue, dizziness, nausea, and potential for bronchospasm in asthmatics.",
+          "notes": "Preferred first-line agent for managing hypertension in pregnancy."
+        },
+        {
+          "name": "Nifedipine",
+          "mechanism": "Calcium channel blocker that relaxes vascular smooth muscle, leading to vasodilation.",
+          "dosing": "30 mg extended-release orally once daily.",
+          "sideEffects": "Headache, flushing, peripheral edema, and hypotension.",
+          "notes": "Use with caution; monitor for hypotension."
+        },
+        {
+          "name": "Methyldopa",
+          "mechanism": "Centrally acting alpha-2 agonist that decreases sympathetic outflow, leading to reduced blood pressure.",
+          "dosing": "250-500 mg orally twice daily, can increase to 1000 mg twice daily.",
+          "sideEffects": "Sedation, dry mouth, and potential for liver dysfunction.",
+          "notes": "Considered safe in pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fetal monitoring",
+          "description": "Continuous fetal heart rate monitoring to assess fetal well-being.",
+          "indications": "Severe hypertension, abnormal fetal movements, or other concerning symptoms.",
+          "risks": "False positives leading to unnecessary interventions."
+        },
+        {
+          "name": "Delivery planning",
+          "description": "Induction of labor or cesarean section if maternal or fetal health is at risk.",
+          "indications": "Severe PIH or preeclampsia, fetal distress.",
+          "risks": "Surgical risks, potential for preterm birth."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for PIH is generally good with appropriate management, but it can progress to preeclampsia or eclampsia if not monitored closely. Long-term outcomes for mothers and infants are usually favorable if managed appropriately.",
+    "complications": [
+      "Progression to preeclampsia or eclampsia",
+      "Placental abruption",
+      "Fetal growth restriction",
+      "Preterm birth"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in monitoring blood pressure in pregnant patients, recognizing symptoms of PIH, and ensuring timely referral to obstetric specialists when necessary. They should also educate patients about the signs and symptoms of worsening hypertension.",
+    "escalation": "If blood pressure is persistently elevated (≥ 160/110 mmHg) or if there are concerning symptoms (e.g., severe headache, visual changes), escalate care to an obstetrician immediately.",
+    "keySafetyConsiderations": "Ensure regular monitoring of blood pressure and fetal well-being. Educate patients on recognizing red flags and when to seek immediate medical attention. Avoid certain medications contraindicated in pregnancy (e.g., ACE inhibitors, diuretics)."
+  }
+}

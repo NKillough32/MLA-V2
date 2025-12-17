@@ -1,0 +1,146 @@
+{
+  "id": "colorectal_tumours",
+  "name": "Colorectal tumours",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:46:14.456727",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Colorectal tumours: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nColorectal tumours are abnormal growths in the colon or rectum, which can be benign (such as adenomas) or malignant (colorectal cancer).\n\n### Epidemiology\nColorectal cancer is the third most common cancer worldwide, with approximately 1.9 million new cases diagnosed in 2020. It is more prevalent in individuals over 50 years of age, with risk factors including family history, inflammatory bowel disease, and lifestyle factors such as diet and physical inactivity.\n\n### Essential Pathophysiology\nColorectal tumours typically arise from the epithelial cells of the colon or rectum. The progression from adenoma to carcinoma is often described by the adenoma-carcinoma sequence, where genetic mutations accumulate over time, leading to malignant transformation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Change in bowel habits (diarrhea or constipation)\n- Blood in stool (hematochezia or melena)\n- Abdominal pain or discomfort\n- Unexplained weight loss\n- Fatigue\n\n### Key Signs\n- Abdominal tenderness\n- Palpable mass in the abdomen\n- Anemia (pallor, fatigue)\n- Rectal mass on examination\n\n### Atypical Presentations\n- Bowel obstruction\n- Perforation leading to peritonitis\n- Metastatic disease presenting with symptoms related to other organs (e.g., liver, lungs)\n\n### Red Flags Requiring Immediate Action\n- Age over 50 with new onset of bowel symptoms\n- Family history of colorectal cancer or polyps\n- Unexplained iron deficiency anemia\n- Significant weight loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fecal occult blood test (FOBT)\n- Colonoscopy\n\n### Second-line Investigations\n- CT colonography (virtual colonoscopy)\n- Barium enema\n\n### Specialist Tests\n- Biopsy during colonoscopy\n- CT scan of the abdomen and pelvis\n- MRI for staging\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histological examination of biopsy specimens obtained during colonoscopy, showing malignant cells.\n\n### Key Differential Diagnoses to Exclude\n- Irritable bowel syndrome (IBS)\n- Diverticulitis\n- Inflammatory bowel disease (IBD)\n- Benign polyps\n- Hemorrhoids\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation\n- Pain management\n- Surgical consultation for obstruction or perforation\n\n#### Second-line Treatments\n- Chemotherapy for metastatic disease\n- Palliative care considerations\n\n#### Emergency Procedures\n- Colonoscopy with biopsy\n- Surgical resection (colectomy) for localized tumours\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection for localized tumours\n- Adjuvant chemotherapy for stage II and III cancers\n\n#### Second-line Treatments\n- Targeted therapies (e.g., anti-EGFR agents) for metastatic disease\n\n#### Monitoring Requirements\n- Regular follow-up colonoscopy for polyp surveillance\n- Monitoring for recurrence with CEA levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### 5-Fluorouracil (5-FU)\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: Administered intravenously; dosing varies based on regimen (e.g., FOLFOX)\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, myelosuppression\n- **When to Use vs. Alternatives**: Often used in combination with leucovorin and oxaliplatin.\n\n#### Oxaliplatin\n- **Mechanism of Action**: Platinum-based chemotherapeutic agent that cross-links DNA\n- **Typical Dosing Range**: 85 mg/m2 IV every 2 weeks\n- **Key Side Effects/Contraindications**: Peripheral neuropathy, nausea, myelosuppression\n- **When to Use vs. Alternatives**: Used in combination with 5-FU and leucovorin.\n\n#### Bevacizumab\n- **Mechanism of Action**: Monoclonal antibody that inhibits VEGF, preventing angiogenesis\n- **Typical Dosing Range**: 5 mg/kg IV every 2 weeks\n- **Key Side Effects/Contraindications**: Hypertension, proteinuria, risk of bleeding\n- **When to Use vs. Alternatives**: Used in metastatic colorectal cancer.\n\n### Procedures\n\n#### Colonoscopy\n- **What it Involves**: Endoscopic examination of the colon for diagnosis and biopsy\n- **Indications**: Suspicion of colorectal cancer, screening in high-risk patients\n- **Key Risks/Complications**: Perforation, bleeding, infection.\n\n#### Colectomy\n- **What it Involves**: Surgical resection of the affected segment of the colon\n- **Indications**: Localized colorectal cancer, obstruction, or perforation\n- **Key Risks/Complications**: Infection, anastomotic leak, bowel obstruction.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of colorectal cancer depends on the stage at diagnosis. Early-stage cancers (stage I) have a 5-year survival rate of over 90%, while advanced-stage cancers (stage IV) have a significantly lower survival rate.\n\n### Important Complications to Watch For\n- Bowel obstruction\n- Perforation\n- Metastasis to liver or lungs\n- Recurrence after treatment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of colorectal tumours, perform initial assessments, order appropriate investigations, and refer patients for specialist evaluation and management.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected colorectal cancer should be referred urgently to a gastroenterologist or surgeon for further evaluation and management, especially if red flags are present.\n\n### Key Safety Considerations\nEnsure informed consent is obtained for procedures, monitor for complications post-procedure, and maintain a high index of suspicion for malignancy in patients presenting with gastrointestinal symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Colorectal tumours are abnormal growths in the colon or rectum, which can be benign (such as adenomas) or malignant (colorectal cancer).",
+      "epidemiology": "Colorectal cancer is the third most common cancer worldwide, with approximately 1.9 million new cases diagnosed in 2020. It is more prevalent in individuals over 50 years of age, with risk factors including family history, inflammatory bowel disease, and lifestyle factors such as diet and physical inactivity.",
+      "pathophysiology": "Colorectal tumours typically arise from the epithelial cells of the colon or rectum. The progression from adenoma to carcinoma is often described by the adenoma-carcinoma sequence, where genetic mutations accumulate over time, leading to malignant transformation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Change in bowel habits (diarrhea or constipation)",
+        "Blood in stool (hematochezia or melena)",
+        "Abdominal pain or discomfort",
+        "Unexplained weight loss",
+        "Fatigue"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Palpable mass in the abdomen",
+        "Anemia (pallor, fatigue)",
+        "Rectal mass on examination"
+      ],
+      "atypicalPresentations": [
+        "Bowel obstruction",
+        "Perforation leading to peritonitis",
+        "Metastatic disease presenting with symptoms related to other organs (e.g., liver, lungs)"
+      ],
+      "redFlags": [
+        "Age over 50 with new onset of bowel symptoms",
+        "Family history of colorectal cancer or polyps",
+        "Unexplained iron deficiency anemia",
+        "Significant weight loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fecal occult blood test (FOBT)",
+        "Colonoscopy"
+      ],
+      "secondLine": [
+        "CT colonography (virtual colonoscopy)",
+        "Barium enema"
+      ],
+      "specialistTests": [
+        "Biopsy during colonoscopy",
+        "CT scan of the abdomen and pelvis",
+        "MRI for staging"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histological examination of biopsy specimens obtained during colonoscopy, showing malignant cells.",
+      "differentials": [
+        "Irritable bowel syndrome (IBS)",
+        "Diverticulitis",
+        "Inflammatory bowel disease (IBD)",
+        "Benign polyps",
+        "Hemorrhoids"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation",
+          "Pain management",
+          "Surgical consultation for obstruction or perforation"
+        ],
+        "secondLine": [
+          "Chemotherapy for metastatic disease",
+          "Palliative care considerations"
+        ],
+        "procedures": [
+          "Colonoscopy with biopsy",
+          "Surgical resection (colectomy) for localized tumours"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection for localized tumours",
+          "Adjuvant chemotherapy for stage II and III cancers"
+        ],
+        "secondLine": [
+          "Targeted therapies (e.g., anti-EGFR agents) for metastatic disease"
+        ],
+        "monitoring": [
+          "Regular follow-up colonoscopy for polyp surveillance",
+          "Monitoring for recurrence with CEA levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "5-Fluorouracil (5-FU)",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "Administered intravenously; dosing varies based on regimen (e.g., FOLFOX)",
+          "sideEffects": "Nausea, vomiting, diarrhea, myelosuppression",
+          "notes": "Often used in combination with leucovorin and oxaliplatin."
+        },
+        {
+          "name": "Oxaliplatin",
+          "mechanism": "Platinum-based chemotherapeutic agent that cross-links DNA",
+          "dosing": "85 mg/m2 IV every 2 weeks",
+          "sideEffects": "Peripheral neuropathy, nausea, myelosuppression",
+          "notes": "Used in combination with 5-FU and leucovorin."
+        },
+        {
+          "name": "Bevacizumab",
+          "mechanism": "Monoclonal antibody that inhibits VEGF, preventing angiogenesis",
+          "dosing": "5 mg/kg IV every 2 weeks",
+          "sideEffects": "Hypertension, proteinuria, risk of bleeding",
+          "notes": "Used in metastatic colorectal cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colonoscopy",
+          "description": "Endoscopic examination of the colon for diagnosis and biopsy",
+          "indications": "Suspicion of colorectal cancer, screening in high-risk patients",
+          "risks": "Perforation, bleeding, infection."
+        },
+        {
+          "name": "Colectomy",
+          "description": "Surgical resection of the affected segment of the colon",
+          "indications": "Localized colorectal cancer, obstruction, or perforation",
+          "risks": "Infection, anastomotic leak, bowel obstruction."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of colorectal cancer depends on the stage at diagnosis. Early-stage cancers (stage I) have a 5-year survival rate of over 90%, while advanced-stage cancers (stage IV) have a significantly lower survival rate.",
+    "complications": [
+      "Bowel obstruction",
+      "Perforation",
+      "Metastasis to liver or lungs",
+      "Recurrence after treatment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of colorectal tumours, perform initial assessments, order appropriate investigations, and refer patients for specialist evaluation and management.",
+    "escalation": "Patients with suspected colorectal cancer should be referred urgently to a gastroenterologist or surgeon for further evaluation and management, especially if red flags are present.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained for procedures, monitor for complications post-procedure, and maintain a high index of suspicion for malignancy in patients presenting with gastrointestinal symptoms."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "post_partum_haemorrhage",
+  "name": "Post-partum haemorrhage",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:49:56.157287",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Post-partum haemorrhage: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPost-partum haemorrhage (PPH) is defined as blood loss of more than 500 mL following vaginal delivery or more than 1000 mL following a cesarean section. It can occur immediately after delivery (primary PPH) or within 24 hours to 6 weeks post-delivery (secondary PPH).\n\n### Epidemiology\nPPH occurs in approximately 1-5% of all deliveries, with primary PPH being more common than secondary PPH. It is a leading cause of maternal morbidity and mortality worldwide, particularly in low-resource settings.\n\n### Essential Pathophysiology\nPPH is primarily caused by uterine atony (failure of the uterus to contract effectively), retained placental tissue, trauma to the birth canal, or coagulopathy. Uterine atony accounts for about 70-80% of cases of primary PPH.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Excessive vaginal bleeding\n- Dizziness or lightheadedness\n- Tachycardia\n- Hypotension\n- Weakness or fatigue\n\n### Key Signs\n- Blood loss greater than 500 mL (vaginal) or 1000 mL (cesarean)\n- Uterine atony (soft, boggy uterus)\n- Signs of shock (pallor, tachycardia, hypotension)\n- Retained products of conception (e.g., on ultrasound)\n\n### Atypical Presentations\n- Bleeding may be less obvious in cases of retained placenta or coagulopathy.\n- Some patients may present with only signs of shock without significant visible bleeding.\n\n### Red Flags Requiring Immediate Action\n- Severe hypotension (systolic <90 mmHg)\n- Persistent tachycardia (>120 bpm)\n- Altered mental status\n- Signs of coagulopathy (e.g., petechiae, ecchymosis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of blood loss\n- Vital signs monitoring\n- Uterine examination (to assess for atony)\n\n### Second-line Investigations\n- Complete blood count (CBC) to assess hemoglobin and hematocrit levels\n- Type and crossmatch for potential transfusion\n- Coagulation profile (PT, aPTT, INR)\n\n### Specialist Tests\n- Ultrasound to assess for retained products of conception or hematoma\n- CT scan if there is suspicion of vascular injury or other complications\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of PPH is based on the amount of blood loss and clinical signs of hypovolemia. Blood loss exceeding 500 mL after vaginal delivery or 1000 mL after cesarean delivery confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Uterine atony\n- Retained placenta\n- Trauma (lacerations)\n- Coagulation disorders (e.g., von Willebrand disease, thrombocytopenia)\n- Placenta previa or accreta\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Uterine massage to stimulate contraction\n- Administration of uterotonics (e.g., oxytocin)\n- Fluid resuscitation with crystalloids\n\n#### Second-line Treatments\n- Transfusion of packed red blood cells if hemoglobin <7 g/dL or signs of shock\n- Additional uterotonics (e.g., Methylergometrine, Carboprost)\n\n#### Emergency Procedures\n- Bimanual compression of the uterus\n- Surgical intervention (e.g., uterine artery embolization, hysterectomy) if bleeding persists\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring for signs of anemia and providing iron supplementation if needed\n\n#### Second-line Treatments\n- Referral to obstetrician for further management if bleeding persists or complications arise\n\n#### Monitoring Requirements\n- Regular follow-up for hemoglobin levels and overall recovery\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxytocin\n- **Mechanism of Action**: Stimulates uterine contractions and reduces bleeding by promoting uterine tone.\n- **Typical Dosing Range**: 10-40 units IV infusion or 5-10 units IM after delivery.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, hypotension, water retention.\n- **When to Use vs. Alternatives**: First-line treatment for PPH.\n\n#### Methylergometrine\n- **Mechanism of Action**: Stimulates uterine contractions and reduces blood loss.\n- **Typical Dosing Range**: 0.2 mg IM every 2-4 hours as needed, not to exceed 5 doses.\n- **Key Side Effects/Contraindications**: Hypertension, headache, nausea, vomiting.\n- **When to Use vs. Alternatives**: Contraindicated in hypertension.\n\n#### Carboprost\n- **Mechanism of Action**: Prostaglandin analogue that stimulates uterine contractions.\n- **Typical Dosing Range**: 250 mcg IM, may repeat every 15-90 minutes, max 2 mg.\n- **Key Side Effects/Contraindications**: Diarrhea, fever, flushing, bronchospasm.\n- **When to Use vs. Alternatives**: Useful in cases of uterine atony unresponsive to oxytocin.\n\n### Procedures\n\n#### Bimanual compression of the uterus\n- **What it Involves**: Manual compression of the uterus through the vagina and abdominal wall to stimulate contraction.\n- **Indications**: Used in cases of uterine atony when pharmacological measures are insufficient.\n- **Key Risks/Complications**: Discomfort, potential for uterine rupture if excessive force is applied.\n\n#### Uterine artery embolization\n- **What it Involves**: A minimally invasive procedure to occlude blood flow to the uterus, often used for retained placenta or severe bleeding.\n- **Indications**: Persistent bleeding despite medical management or retained products of conception.\n- **Key Risks/Complications**: Infection, uterine necrosis, need for surgical intervention.\n\n#### Hysterectomy\n- **What it Involves**: Surgical removal of the uterus, indicated in life-threatening cases of PPH.\n- **Indications**: Severe, uncontrolled bleeding not responsive to other treatments.\n- **Key Risks/Complications**: Infection, hemorrhage, anesthesia complications, loss of fertility.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and management, the prognosis for PPH is generally good. However, severe cases can lead to significant morbidity and mortality, particularly if not treated quickly.\n\n### Important Complications to Watch For\n- Anemia\n- Shock\n- Coagulopathy\n- Hysterectomy\n- Maternal death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of PPH, initiate first-line management, and escalate care to senior medical staff as needed. They should also be involved in monitoring the patient’s vital signs and response to treatment.\n\n### When to Escalate to Senior/Specialist\nIf the patient shows signs of severe hemorrhage (e.g., hypotension, tachycardia, altered mental status), immediate escalation to senior obstetric staff and activation of the massive transfusion protocol may be necessary.\n\n### Key Safety Considerations\nEnsure accurate measurement of blood loss, maintain IV access for fluid resuscitation, monitor vital signs closely, and be prepared to initiate emergency protocols for PPH.\n",
+  "content": {
+    "overview": {
+      "definition": "Post-partum haemorrhage (PPH) is defined as blood loss of more than 500 mL following vaginal delivery or more than 1000 mL following a cesarean section. It can occur immediately after delivery (primary PPH) or within 24 hours to 6 weeks post-delivery (secondary PPH).",
+      "epidemiology": "PPH occurs in approximately 1-5% of all deliveries, with primary PPH being more common than secondary PPH. It is a leading cause of maternal morbidity and mortality worldwide, particularly in low-resource settings.",
+      "pathophysiology": "PPH is primarily caused by uterine atony (failure of the uterus to contract effectively), retained placental tissue, trauma to the birth canal, or coagulopathy. Uterine atony accounts for about 70-80% of cases of primary PPH."
+    },
+    "recognition": {
+      "symptoms": [
+        "Excessive vaginal bleeding",
+        "Dizziness or lightheadedness",
+        "Tachycardia",
+        "Hypotension",
+        "Weakness or fatigue"
+      ],
+      "signs": [
+        "Blood loss greater than 500 mL (vaginal) or 1000 mL (cesarean)",
+        "Uterine atony (soft, boggy uterus)",
+        "Signs of shock (pallor, tachycardia, hypotension)",
+        "Retained products of conception (e.g., on ultrasound)"
+      ],
+      "atypicalPresentations": [
+        "Bleeding may be less obvious in cases of retained placenta or coagulopathy.",
+        "Some patients may present with only signs of shock without significant visible bleeding."
+      ],
+      "redFlags": [
+        "Severe hypotension (systolic <90 mmHg)",
+        "Persistent tachycardia (>120 bpm)",
+        "Altered mental status",
+        "Signs of coagulopathy (e.g., petechiae, ecchymosis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of blood loss",
+        "Vital signs monitoring",
+        "Uterine examination (to assess for atony)"
+      ],
+      "secondLine": [
+        "Complete blood count (CBC) to assess hemoglobin and hematocrit levels",
+        "Type and crossmatch for potential transfusion",
+        "Coagulation profile (PT, aPTT, INR)"
+      ],
+      "specialistTests": [
+        "Ultrasound to assess for retained products of conception or hematoma",
+        "CT scan if there is suspicion of vascular injury or other complications"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of PPH is based on the amount of blood loss and clinical signs of hypovolemia. Blood loss exceeding 500 mL after vaginal delivery or 1000 mL after cesarean delivery confirms the diagnosis.",
+      "differentials": [
+        "Uterine atony",
+        "Retained placenta",
+        "Trauma (lacerations)",
+        "Coagulation disorders (e.g., von Willebrand disease, thrombocytopenia)",
+        "Placenta previa or accreta"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Uterine massage to stimulate contraction",
+          "Administration of uterotonics (e.g., oxytocin)",
+          "Fluid resuscitation with crystalloids"
+        ],
+        "secondLine": [
+          "Transfusion of packed red blood cells if hemoglobin <7 g/dL or signs of shock",
+          "Additional uterotonics (e.g., Methylergometrine, Carboprost)"
+        ],
+        "procedures": [
+          "Bimanual compression of the uterus",
+          "Surgical intervention (e.g., uterine artery embolization, hysterectomy) if bleeding persists"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring for signs of anemia and providing iron supplementation if needed"
+        ],
+        "secondLine": [
+          "Referral to obstetrician for further management if bleeding persists or complications arise"
+        ],
+        "monitoring": [
+          "Regular follow-up for hemoglobin levels and overall recovery"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxytocin",
+          "mechanism": "Stimulates uterine contractions and reduces bleeding by promoting uterine tone.",
+          "dosing": "10-40 units IV infusion or 5-10 units IM after delivery.",
+          "sideEffects": "Nausea, vomiting, hypotension, water retention.",
+          "notes": "First-line treatment for PPH."
+        },
+        {
+          "name": "Methylergometrine",
+          "mechanism": "Stimulates uterine contractions and reduces blood loss.",
+          "dosing": "0.2 mg IM every 2-4 hours as needed, not to exceed 5 doses.",
+          "sideEffects": "Hypertension, headache, nausea, vomiting.",
+          "notes": "Contraindicated in hypertension."
+        },
+        {
+          "name": "Carboprost",
+          "mechanism": "Prostaglandin analogue that stimulates uterine contractions.",
+          "dosing": "250 mcg IM, may repeat every 15-90 minutes, max 2 mg.",
+          "sideEffects": "Diarrhea, fever, flushing, bronchospasm.",
+          "notes": "Useful in cases of uterine atony unresponsive to oxytocin."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bimanual compression of the uterus",
+          "description": "Manual compression of the uterus through the vagina and abdominal wall to stimulate contraction.",
+          "indications": "Used in cases of uterine atony when pharmacological measures are insufficient.",
+          "risks": "Discomfort, potential for uterine rupture if excessive force is applied."
+        },
+        {
+          "name": "Uterine artery embolization",
+          "description": "A minimally invasive procedure to occlude blood flow to the uterus, often used for retained placenta or severe bleeding.",
+          "indications": "Persistent bleeding despite medical management or retained products of conception.",
+          "risks": "Infection, uterine necrosis, need for surgical intervention."
+        },
+        {
+          "name": "Hysterectomy",
+          "description": "Surgical removal of the uterus, indicated in life-threatening cases of PPH.",
+          "indications": "Severe, uncontrolled bleeding not responsive to other treatments.",
+          "risks": "Infection, hemorrhage, anesthesia complications, loss of fertility."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and management, the prognosis for PPH is generally good. However, severe cases can lead to significant morbidity and mortality, particularly if not treated quickly.",
+    "complications": [
+      "Anemia",
+      "Shock",
+      "Coagulopathy",
+      "Hysterectomy",
+      "Maternal death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of PPH, initiate first-line management, and escalate care to senior medical staff as needed. They should also be involved in monitoring the patient’s vital signs and response to treatment.",
+    "escalation": "If the patient shows signs of severe hemorrhage (e.g., hypotension, tachycardia, altered mental status), immediate escalation to senior obstetric staff and activation of the massive transfusion protocol may be necessary.",
+    "keySafetyConsiderations": "Ensure accurate measurement of blood loss, maintain IV access for fluid resuscitation, monitor vital signs closely, and be prepared to initiate emergency protocols for PPH."
+  }
+}

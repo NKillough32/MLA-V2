@@ -1,0 +1,138 @@
+{
+  "id": "immobility",
+  "name": "Immobility",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:39:29.887845",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Immobility: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nImmobility refers to the inability to move freely or the restriction of movement, which can be due to various factors including physical, psychological, or environmental causes. In the elderly, immobility is often multifactorial, involving musculoskeletal, neurological, and systemic issues.\n\n### Epidemiology\nImmobility is prevalent among the elderly population, with studies indicating that up to 50% of older adults experience some degree of immobility, particularly those in long-term care facilities. It is associated with increased morbidity and mortality.\n\n### Essential Pathophysiology\nImmobility can lead to a cascade of physiological changes including muscle atrophy, joint stiffness, decreased cardiovascular fitness, and impaired respiratory function. It can also exacerbate existing conditions such as arthritis, neurological disorders, and cardiovascular diseases.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Reduced ability to perform activities of daily living (ADLs)\n- Fatigue\n- Pain in joints or muscles\n- Shortness of breath on exertion\n- Depression or anxiety\n\n### Key Signs\n- Decreased muscle strength\n- Joint contractures\n- Skin breakdown or pressure ulcers\n- Decreased range of motion\n- Postural instability\n\n### Atypical Presentations\n- Confusion or delirium in the absence of other acute illness\n- Increased falls or near-falls without clear cause\n- Social withdrawal or changes in behavior\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of immobility\n- Severe pain associated with immobility\n- Signs of deep vein thrombosis (DVT) or pulmonary embolism (PE)\n- Acute confusion or altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Functional mobility assessment (e.g., Timed Up and Go test)\n- Basic blood tests (CBC, electrolytes, renal function)\n\n### Second-line Investigations\n- Imaging studies (X-rays, MRI) to assess for fractures or other musculoskeletal issues\n- Assessment for vitamin D deficiency (25-hydroxyvitamin D levels)\n- Neurological assessment if indicated\n\n### Specialist Tests\n- Bone density scan (DEXA) for osteoporosis\n- Cardiopulmonary exercise testing if indicated\n- Referral to physiotherapy for functional assessment\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of immobility is primarily clinical, based on the assessment of mobility limitations and their impact on daily functioning. Consideration of underlying causes is essential.\n\n### Key Differential Diagnoses to Exclude\n- Osteoarthritis\n- Rheumatoid arthritis\n- Neurological disorders (e.g., stroke, Parkinson's disease)\n- Cardiovascular diseases (e.g., heart failure)\n- Psychological conditions (e.g., depression)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate physiotherapy assessment\n- Pain management (e.g., paracetamol, NSAIDs)\n- Encouragement of mobilization as tolerated\n\n#### Second-line Treatments\n- Referral to occupational therapy for ADL support\n- Consideration of assistive devices (e.g., walkers, canes)\n\n#### Emergency Procedures\n- None specific to immobility, but may involve interventions for underlying causes (e.g., joint injections for arthritis)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular physiotherapy and exercise programs\n- Nutritional support to prevent muscle wasting\n- Education on fall prevention and safety\n\n#### Second-line Treatments\n- Multidisciplinary team involvement (e.g., geriatrician, dietitian)\n- Home modifications to enhance mobility\n\n#### Monitoring Requirements\n- Regular follow-up assessments to track mobility and functional status\n- Monitoring for complications such as pressure ulcers or DVT\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: Consider in patients with mild to moderate pain.\n\n#### NSAIDs (e.g., Ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory, analgesic, and antipyretic effects by inhibiting COX enzymes.\n- **Typical Dosing Range**: 200-400 mg every 6-8 hours as needed, max 1200 mg/day over-the-counter.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, renal impairment, cardiovascular risks.\n- **When to Use vs. Alternatives**: Use with caution in elderly patients, consider gastroprotection.\n\n### Procedures\n\n#### Joint injection (e.g., corticosteroid)\n- **What it Involves**: Injection of corticosteroids into a joint to reduce inflammation and pain.\n- **Indications**: Severe arthritis causing immobility, localized joint pain.\n- **Key Risks/Complications**: Infection, joint damage, transient increase in pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of immobility in the elderly can vary widely depending on the underlying cause, duration of immobility, and the presence of comorbidities. Early intervention can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Pressure ulcers\n- Deep vein thrombosis (DVT)\n- Pulmonary embolism (PE)\n- Muscle atrophy\n- Functional decline\n- Increased risk of falls\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess mobility in elderly patients, identify underlying causes of immobility, initiate appropriate investigations, and collaborate with multidisciplinary teams for management. They should also educate patients and families about mobility aids and fall prevention strategies.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of acute immobility or deterioration, escalate to a senior clinician or geriatrician for further assessment and management.\n\n### Key Safety Considerations\nEnsure patient safety during mobilization, assess for fall risks, monitor for signs of DVT or PE, and provide education on safe mobility practices.\n",
+  "content": {
+    "overview": {
+      "definition": "Immobility refers to the inability to move freely or the restriction of movement, which can be due to various factors including physical, psychological, or environmental causes. In the elderly, immobility is often multifactorial, involving musculoskeletal, neurological, and systemic issues.",
+      "epidemiology": "Immobility is prevalent among the elderly population, with studies indicating that up to 50% of older adults experience some degree of immobility, particularly those in long-term care facilities. It is associated with increased morbidity and mortality.",
+      "pathophysiology": "Immobility can lead to a cascade of physiological changes including muscle atrophy, joint stiffness, decreased cardiovascular fitness, and impaired respiratory function. It can also exacerbate existing conditions such as arthritis, neurological disorders, and cardiovascular diseases."
+    },
+    "recognition": {
+      "symptoms": [
+        "Reduced ability to perform activities of daily living (ADLs)",
+        "Fatigue",
+        "Pain in joints or muscles",
+        "Shortness of breath on exertion",
+        "Depression or anxiety"
+      ],
+      "signs": [
+        "Decreased muscle strength",
+        "Joint contractures",
+        "Skin breakdown or pressure ulcers",
+        "Decreased range of motion",
+        "Postural instability"
+      ],
+      "atypicalPresentations": [
+        "Confusion or delirium in the absence of other acute illness",
+        "Increased falls or near-falls without clear cause",
+        "Social withdrawal or changes in behavior"
+      ],
+      "redFlags": [
+        "Sudden onset of immobility",
+        "Severe pain associated with immobility",
+        "Signs of deep vein thrombosis (DVT) or pulmonary embolism (PE)",
+        "Acute confusion or altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Functional mobility assessment (e.g., Timed Up and Go test)",
+        "Basic blood tests (CBC, electrolytes, renal function)"
+      ],
+      "secondLine": [
+        "Imaging studies (X-rays, MRI) to assess for fractures or other musculoskeletal issues",
+        "Assessment for vitamin D deficiency (25-hydroxyvitamin D levels)",
+        "Neurological assessment if indicated"
+      ],
+      "specialistTests": [
+        "Bone density scan (DEXA) for osteoporosis",
+        "Cardiopulmonary exercise testing if indicated",
+        "Referral to physiotherapy for functional assessment"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of immobility is primarily clinical, based on the assessment of mobility limitations and their impact on daily functioning. Consideration of underlying causes is essential.",
+      "differentials": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Neurological disorders (e.g., stroke, Parkinson's disease)",
+        "Cardiovascular diseases (e.g., heart failure)",
+        "Psychological conditions (e.g., depression)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate physiotherapy assessment",
+          "Pain management (e.g., paracetamol, NSAIDs)",
+          "Encouragement of mobilization as tolerated"
+        ],
+        "secondLine": [
+          "Referral to occupational therapy for ADL support",
+          "Consideration of assistive devices (e.g., walkers, canes)"
+        ],
+        "procedures": [
+          "None specific to immobility, but may involve interventions for underlying causes (e.g., joint injections for arthritis)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular physiotherapy and exercise programs",
+          "Nutritional support to prevent muscle wasting",
+          "Education on fall prevention and safety"
+        ],
+        "secondLine": [
+          "Multidisciplinary team involvement (e.g., geriatrician, dietitian)",
+          "Home modifications to enhance mobility"
+        ],
+        "monitoring": [
+          "Regular follow-up assessments to track mobility and functional status",
+          "Monitoring for complications such as pressure ulcers or DVT"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours as needed, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "Consider in patients with mild to moderate pain."
+        },
+        {
+          "name": "NSAIDs (e.g., Ibuprofen)",
+          "mechanism": "Anti-inflammatory, analgesic, and antipyretic effects by inhibiting COX enzymes.",
+          "dosing": "200-400 mg every 6-8 hours as needed, max 1200 mg/day over-the-counter.",
+          "sideEffects": "Gastrointestinal bleeding, renal impairment, cardiovascular risks.",
+          "notes": "Use with caution in elderly patients, consider gastroprotection."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint injection (e.g., corticosteroid)",
+          "description": "Injection of corticosteroids into a joint to reduce inflammation and pain.",
+          "indications": "Severe arthritis causing immobility, localized joint pain.",
+          "risks": "Infection, joint damage, transient increase in pain."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of immobility in the elderly can vary widely depending on the underlying cause, duration of immobility, and the presence of comorbidities. Early intervention can improve outcomes significantly.",
+    "complications": [
+      "Pressure ulcers",
+      "Deep vein thrombosis (DVT)",
+      "Pulmonary embolism (PE)",
+      "Muscle atrophy",
+      "Functional decline",
+      "Increased risk of falls"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess mobility in elderly patients, identify underlying causes of immobility, initiate appropriate investigations, and collaborate with multidisciplinary teams for management. They should also educate patients and families about mobility aids and fall prevention strategies.",
+    "escalation": "If a patient shows signs of acute immobility or deterioration, escalate to a senior clinician or geriatrician for further assessment and management.",
+    "keySafetyConsiderations": "Ensure patient safety during mobilization, assess for fall risks, monitor for signs of DVT or PE, and provide education on safe mobility practices."
+  }
+}

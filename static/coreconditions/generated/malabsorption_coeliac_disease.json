@@ -1,0 +1,126 @@
+{
+  "id": "malabsorption_coeliac_disease",
+  "name": "Malabsorption -Coeliac disease",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:47:33.668788",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Malabsorption -Coeliac disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCoeliac disease is an autoimmune disorder characterized by an inappropriate immune response to gluten, a protein found in wheat, barley, and rye, leading to inflammation and damage to the small intestine mucosa.\n\n### Epidemiology\nCoeliac disease affects approximately 1% of the population worldwide, with higher prevalence in individuals of European descent. It can occur at any age but is often diagnosed in childhood or early adulthood.\n\n### Essential Pathophysiology\nIn genetically predisposed individuals, the ingestion of gluten triggers an immune response that damages the intestinal villi, leading to malabsorption of nutrients. The disease is associated with specific HLA-DQ2 or HLA-DQ8 haplotypes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic diarrhea\n- Weight loss\n- Abdominal pain\n- Bloating\n- Fatigue\n- Nutritional deficiencies (e.g., iron deficiency anemia)\n\n### Key Signs\n- Dermatitis herpetiformis (skin rash)\n- Delayed growth in children\n- Signs of malnutrition (e.g., muscle wasting)\n- Abdominal distension\n\n### Atypical Presentations\n- Osteoporosis\n- Infertility\n- Neurological symptoms (e.g., peripheral neuropathy)\n- Dental enamel defects\n\n### Red Flags Requiring Immediate Action\n- Severe weight loss\n- Persistent diarrhea despite dietary changes\n- Signs of intestinal obstruction\n- Family history of autoimmune diseases\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serological tests for tissue transglutaminase antibodies (tTG-IgA)\n- Total IgA levels\n\n### Second-line Investigations\n- Endoscopy with duodenal biopsy to assess villous atrophy\n- Serological tests for deamidated gliadin peptide (DGP) antibodies\n\n### Specialist Tests\n- Genetic testing for HLA-DQ2 and HLA-DQ8\n- Bone density scan (DEXA) for osteoporosis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by the presence of positive serological tests and histological evidence of villous atrophy on biopsy, along with clinical improvement on a gluten-free diet.\n\n### Key Differential Diagnoses to Exclude\n- Irritable bowel syndrome (IBS)\n- Lactose intolerance\n- Inflammatory bowel disease (IBD)\n- Small intestinal bacterial overgrowth (SIBO)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to a gastroenterologist for biopsy confirmation and dietary advice\n\n#### Second-line Treatments\n- Nutritional support and management of complications (e.g., anemia)\n\n#### Emergency Procedures\n- Endoscopy with biopsy to confirm diagnosis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Strict adherence to a gluten-free diet (GFD)\n\n#### Second-line Treatments\n- Nutritional supplementation (e.g., iron, calcium, vitamin D)\n\n#### Monitoring Requirements\n- Regular follow-up with serological testing to monitor adherence and mucosal healing\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Iron supplements\n- **Mechanism of Action**: Replenishes iron stores in cases of iron deficiency anemia.\n- **Typical Dosing Range**: Ferrous sulfate 200 mg orally daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, constipation, dark stools.\n- **When to Use vs. Alternatives**: Monitor hemoglobin and ferritin levels.\n\n#### Calcium and Vitamin D supplements\n- **Mechanism of Action**: Supports bone health and prevents osteoporosis.\n- **Typical Dosing Range**: Calcium 1000-1200 mg and Vitamin D 800-1000 IU daily.\n- **Key Side Effects/Contraindications**: Hypercalcemia, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Consider DEXA scan for osteoporosis risk.\n\n### Procedures\n\n#### Endoscopy with biopsy\n- **What it Involves**: A procedure where a flexible tube with a camera is inserted through the mouth to visualize the duodenum and obtain tissue samples.\n- **Indications**: To confirm diagnosis of coeliac disease when serological tests are positive.\n- **Key Risks/Complications**: Bleeding, perforation, infection, sedation-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith strict adherence to a gluten-free diet, most patients experience complete resolution of symptoms and mucosal healing. Long-term complications can include increased risk of intestinal lymphoma and other autoimmune disorders if untreated.\n\n### Important Complications to Watch For\n- Osteoporosis\n- Malnutrition\n- Intestinal lymphoma\n- Dermatitis herpetiformis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of coeliac disease, initiate appropriate investigations, provide dietary advice, and refer to specialists for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to a gastroenterologist if there is uncertainty in diagnosis, if symptoms persist despite dietary changes, or if complications arise.\n\n### Key Safety Considerations\nEnsure patients understand the importance of a strict gluten-free diet and the potential risks of accidental gluten exposure. Monitor for nutritional deficiencies and complications regularly.\n",
+  "content": {
+    "overview": {
+      "definition": "Coeliac disease is an autoimmune disorder characterized by an inappropriate immune response to gluten, a protein found in wheat, barley, and rye, leading to inflammation and damage to the small intestine mucosa.",
+      "epidemiology": "Coeliac disease affects approximately 1% of the population worldwide, with higher prevalence in individuals of European descent. It can occur at any age but is often diagnosed in childhood or early adulthood.",
+      "pathophysiology": "In genetically predisposed individuals, the ingestion of gluten triggers an immune response that damages the intestinal villi, leading to malabsorption of nutrients. The disease is associated with specific HLA-DQ2 or HLA-DQ8 haplotypes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic diarrhea",
+        "Weight loss",
+        "Abdominal pain",
+        "Bloating",
+        "Fatigue",
+        "Nutritional deficiencies (e.g., iron deficiency anemia)"
+      ],
+      "signs": [
+        "Dermatitis herpetiformis (skin rash)",
+        "Delayed growth in children",
+        "Signs of malnutrition (e.g., muscle wasting)",
+        "Abdominal distension"
+      ],
+      "atypicalPresentations": [
+        "Osteoporosis",
+        "Infertility",
+        "Neurological symptoms (e.g., peripheral neuropathy)",
+        "Dental enamel defects"
+      ],
+      "redFlags": [
+        "Severe weight loss",
+        "Persistent diarrhea despite dietary changes",
+        "Signs of intestinal obstruction",
+        "Family history of autoimmune diseases"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serological tests for tissue transglutaminase antibodies (tTG-IgA)",
+        "Total IgA levels"
+      ],
+      "secondLine": [
+        "Endoscopy with duodenal biopsy to assess villous atrophy",
+        "Serological tests for deamidated gliadin peptide (DGP) antibodies"
+      ],
+      "specialistTests": [
+        "Genetic testing for HLA-DQ2 and HLA-DQ8",
+        "Bone density scan (DEXA) for osteoporosis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by the presence of positive serological tests and histological evidence of villous atrophy on biopsy, along with clinical improvement on a gluten-free diet.",
+      "differentials": [
+        "Irritable bowel syndrome (IBS)",
+        "Lactose intolerance",
+        "Inflammatory bowel disease (IBD)",
+        "Small intestinal bacterial overgrowth (SIBO)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to a gastroenterologist for biopsy confirmation and dietary advice"
+        ],
+        "secondLine": [
+          "Nutritional support and management of complications (e.g., anemia)"
+        ],
+        "procedures": [
+          "Endoscopy with biopsy to confirm diagnosis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Strict adherence to a gluten-free diet (GFD)"
+        ],
+        "secondLine": [
+          "Nutritional supplementation (e.g., iron, calcium, vitamin D)"
+        ],
+        "monitoring": [
+          "Regular follow-up with serological testing to monitor adherence and mucosal healing"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Iron supplements",
+          "mechanism": "Replenishes iron stores in cases of iron deficiency anemia.",
+          "dosing": "Ferrous sulfate 200 mg orally daily.",
+          "sideEffects": "Gastrointestinal upset, constipation, dark stools.",
+          "notes": "Monitor hemoglobin and ferritin levels."
+        },
+        {
+          "name": "Calcium and Vitamin D supplements",
+          "mechanism": "Supports bone health and prevents osteoporosis.",
+          "dosing": "Calcium 1000-1200 mg and Vitamin D 800-1000 IU daily.",
+          "sideEffects": "Hypercalcemia, gastrointestinal upset.",
+          "notes": "Consider DEXA scan for osteoporosis risk."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endoscopy with biopsy",
+          "description": "A procedure where a flexible tube with a camera is inserted through the mouth to visualize the duodenum and obtain tissue samples.",
+          "indications": "To confirm diagnosis of coeliac disease when serological tests are positive.",
+          "risks": "Bleeding, perforation, infection, sedation-related complications."
+        }
+      ]
+    },
+    "prognosis": "With strict adherence to a gluten-free diet, most patients experience complete resolution of symptoms and mucosal healing. Long-term complications can include increased risk of intestinal lymphoma and other autoimmune disorders if untreated.",
+    "complications": [
+      "Osteoporosis",
+      "Malnutrition",
+      "Intestinal lymphoma",
+      "Dermatitis herpetiformis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of coeliac disease, initiate appropriate investigations, provide dietary advice, and refer to specialists for further management.",
+    "escalation": "Refer to a gastroenterologist if there is uncertainty in diagnosis, if symptoms persist despite dietary changes, or if complications arise.",
+    "keySafetyConsiderations": "Ensure patients understand the importance of a strict gluten-free diet and the potential risks of accidental gluten exposure. Monitor for nutritional deficiencies and complications regularly."
+  }
+}

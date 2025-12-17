@@ -1,0 +1,156 @@
+{
+  "id": "heart_failure",
+  "name": "Heart failure",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:01:13.349705",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Heart failure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHeart failure (HF) is a clinical syndrome characterized by the heart's inability to pump sufficient blood to meet the body's metabolic needs, leading to symptoms of fluid overload and/or inadequate tissue perfusion.\n\n### Epidemiology\nHeart failure affects approximately 1-2% of the adult population, with prevalence increasing with age. It is a leading cause of hospitalization in older adults and has a high morbidity and mortality rate.\n\n### Essential Pathophysiology\nHeart failure can result from various conditions that impair the heart's ability to fill or eject blood, including ischemic heart disease, hypertension, valvular heart disease, and cardiomyopathies. The heart compensates through neurohormonal activation (e.g., RAAS, sympathetic nervous system), leading to fluid retention, increased heart rate, and myocardial remodeling.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Orthopnea\n- Paroxysmal nocturnal dyspnea\n- Fatigue\n- Edema (peripheral or pulmonary)\n- Cough (especially when supine)\n\n### Key Signs\n- Elevated jugular venous pressure (JVP)\n- Pulmonary crackles on auscultation\n- S3 heart sound\n- Hepatomegaly\n- Pitting edema\n- Ascites\n\n### Atypical Presentations\n- Confusion or altered mental status (especially in elderly)\n- Anorexia or nausea\n- Worsening renal function\n\n### Red Flags Requiring Immediate Action\n- Acute onset of severe dyspnea\n- Hypotension\n- Altered mental status\n- Persistent tachycardia or bradycardia\n- Signs of shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- B-type natriuretic peptide (BNP) or N-terminal proBNP (NT-proBNP)\n- Basic metabolic panel (electrolytes, renal function)\n\n### Second-line Investigations\n- Echocardiogram (to assess ejection fraction and structural abnormalities)\n- Cardiac MRI (if further characterization is needed)\n- Stress testing (if ischemic heart disease is suspected)\n\n### Specialist Tests\n- Coronary angiography (if ischemia is suspected)\n- Endomyocardial biopsy (in cases of suspected myocarditis or infiltrative disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of heart failure is based on clinical presentation, supported by imaging and biomarkers. The Framingham criteria can be used for diagnosis, requiring at least two major or one major and two minor criteria.\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD)\n- Pneumonia\n- Pulmonary embolism\n- Anemia\n- Thyroid disorders (hyperthyroidism or hypothyroidism)\n- Renal failure\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (if hypoxic)\n- Diuretics (e.g., furosemide) for fluid overload\n- Nitrates (e.g., nitroglycerin) for acute decompensation\n\n#### Second-line Treatments\n- Inotropes (e.g., dobutamine) for severe cases\n- Vasodilators (e.g., nitroprusside) for hypertensive emergencies\n\n#### Emergency Procedures\n- Endotracheal intubation (if respiratory failure)\n- Ultrasound-guided thoracentesis (for pleural effusion)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- ACE inhibitors (e.g., lisinopril)\n- Beta-blockers (e.g., carvedilol)\n- Diuretics (e.g., furosemide) for symptom control\n\n#### Second-line Treatments\n- Angiotensin receptor-neprilysin inhibitors (ARNIs) (e.g., sacubitril/valsartan)\n- Aldosterone antagonists (e.g., spironolactone)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom assessment\n- Renal function and electrolytes monitoring\n- Adherence to medication and lifestyle modifications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; may titrate up to 80-120 mg based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.\n- **Typical Dosing Range**: Initial: 5-10 mg PO daily; target dose: 20-40 mg daily.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Carvedilol\n- **Mechanism of Action**: Non-selective beta-blocker with alpha-1 blocking activity, reducing heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Initial: 3.125 mg PO twice daily; titrate to 25 mg twice daily.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue, dizziness.\n- **When to Use vs. Alternatives**: Titrate slowly; monitor heart rate and blood pressure.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway and facilitate ventilation.\n- **Indications**: Severe respiratory failure, inability to protect airway, or need for mechanical ventilation.\n- **Key Risks/Complications**: Trauma to airway, esophageal intubation, infection, hemodynamic instability.\n\n#### Ultrasound-guided thoracentesis\n- **What it Involves**: Needle insertion into the pleural space to remove fluid for diagnostic or therapeutic purposes.\n- **Indications**: Pleural effusion causing respiratory distress or for diagnostic evaluation.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection, visceral injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nHeart failure is a chronic condition with a poor prognosis; 5-year survival rates are approximately 50%. Early diagnosis and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Arrhythmias (e.g., atrial fibrillation)\n- Acute kidney injury\n- Pulmonary edema\n- Thromboembolic events (e.g., stroke)\n- Cardiogenic shock\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing heart failure symptoms, performing initial assessments, initiating treatment, and understanding the need for timely referrals to specialists. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of acute decompensation, persistent hypotension, or altered mental status, escalate care to senior medical staff or critical care teams immediately.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially in acute settings. Be vigilant for signs of worsening heart failure or complications. Ensure appropriate fluid management to avoid overload, and regularly assess renal function and electrolytes during diuretic therapy.\n",
+  "content": {
+    "overview": {
+      "definition": "Heart failure (HF) is a clinical syndrome characterized by the heart's inability to pump sufficient blood to meet the body's metabolic needs, leading to symptoms of fluid overload and/or inadequate tissue perfusion.",
+      "epidemiology": "Heart failure affects approximately 1-2% of the adult population, with prevalence increasing with age. It is a leading cause of hospitalization in older adults and has a high morbidity and mortality rate.",
+      "pathophysiology": "Heart failure can result from various conditions that impair the heart's ability to fill or eject blood, including ischemic heart disease, hypertension, valvular heart disease, and cardiomyopathies. The heart compensates through neurohormonal activation (e.g., RAAS, sympathetic nervous system), leading to fluid retention, increased heart rate, and myocardial remodeling."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Orthopnea",
+        "Paroxysmal nocturnal dyspnea",
+        "Fatigue",
+        "Edema (peripheral or pulmonary)",
+        "Cough (especially when supine)"
+      ],
+      "signs": [
+        "Elevated jugular venous pressure (JVP)",
+        "Pulmonary crackles on auscultation",
+        "S3 heart sound",
+        "Hepatomegaly",
+        "Pitting edema",
+        "Ascites"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status (especially in elderly)",
+        "Anorexia or nausea",
+        "Worsening renal function"
+      ],
+      "redFlags": [
+        "Acute onset of severe dyspnea",
+        "Hypotension",
+        "Altered mental status",
+        "Persistent tachycardia or bradycardia",
+        "Signs of shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "B-type natriuretic peptide (BNP) or N-terminal proBNP (NT-proBNP)",
+        "Basic metabolic panel (electrolytes, renal function)"
+      ],
+      "secondLine": [
+        "Echocardiogram (to assess ejection fraction and structural abnormalities)",
+        "Cardiac MRI (if further characterization is needed)",
+        "Stress testing (if ischemic heart disease is suspected)"
+      ],
+      "specialistTests": [
+        "Coronary angiography (if ischemia is suspected)",
+        "Endomyocardial biopsy (in cases of suspected myocarditis or infiltrative disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of heart failure is based on clinical presentation, supported by imaging and biomarkers. The Framingham criteria can be used for diagnosis, requiring at least two major or one major and two minor criteria.",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Pneumonia",
+        "Pulmonary embolism",
+        "Anemia",
+        "Thyroid disorders (hyperthyroidism or hypothyroidism)",
+        "Renal failure"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (if hypoxic)",
+          "Diuretics (e.g., furosemide) for fluid overload",
+          "Nitrates (e.g., nitroglycerin) for acute decompensation"
+        ],
+        "secondLine": [
+          "Inotropes (e.g., dobutamine) for severe cases",
+          "Vasodilators (e.g., nitroprusside) for hypertensive emergencies"
+        ],
+        "procedures": [
+          "Endotracheal intubation (if respiratory failure)",
+          "Ultrasound-guided thoracentesis (for pleural effusion)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "ACE inhibitors (e.g., lisinopril)",
+          "Beta-blockers (e.g., carvedilol)",
+          "Diuretics (e.g., furosemide) for symptom control"
+        ],
+        "secondLine": [
+          "Angiotensin receptor-neprilysin inhibitors (ARNIs) (e.g., sacubitril/valsartan)",
+          "Aldosterone antagonists (e.g., spironolactone)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom assessment",
+          "Renal function and electrolytes monitoring",
+          "Adherence to medication and lifestyle modifications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.",
+          "dosing": "Initial: 20-40 mg IV/PO; may titrate up to 80-120 mg based on response.",
+          "sideEffects": "Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.",
+          "dosing": "Initial: 5-10 mg PO daily; target dose: 20-40 mg daily.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema.",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Carvedilol",
+          "mechanism": "Non-selective beta-blocker with alpha-1 blocking activity, reducing heart rate and myocardial oxygen demand.",
+          "dosing": "Initial: 3.125 mg PO twice daily; titrate to 25 mg twice daily.",
+          "sideEffects": "Bradycardia, hypotension, fatigue, dizziness.",
+          "notes": "Titrate slowly; monitor heart rate and blood pressure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway and facilitate ventilation.",
+          "indications": "Severe respiratory failure, inability to protect airway, or need for mechanical ventilation.",
+          "risks": "Trauma to airway, esophageal intubation, infection, hemodynamic instability."
+        },
+        {
+          "name": "Ultrasound-guided thoracentesis",
+          "description": "Needle insertion into the pleural space to remove fluid for diagnostic or therapeutic purposes.",
+          "indications": "Pleural effusion causing respiratory distress or for diagnostic evaluation.",
+          "risks": "Pneumothorax, bleeding, infection, visceral injury."
+        }
+      ]
+    },
+    "prognosis": "Heart failure is a chronic condition with a poor prognosis; 5-year survival rates are approximately 50%. Early diagnosis and management can improve outcomes significantly.",
+    "complications": [
+      "Arrhythmias (e.g., atrial fibrillation)",
+      "Acute kidney injury",
+      "Pulmonary edema",
+      "Thromboembolic events (e.g., stroke)",
+      "Cardiogenic shock"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing heart failure symptoms, performing initial assessments, initiating treatment, and understanding the need for timely referrals to specialists. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "If a patient shows signs of acute decompensation, persistent hypotension, or altered mental status, escalate care to senior medical staff or critical care teams immediately.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially in acute settings. Be vigilant for signs of worsening heart failure or complications. Ensure appropriate fluid management to avoid overload, and regularly assess renal function and electrolytes during diuretic therapy."
+  }
+}

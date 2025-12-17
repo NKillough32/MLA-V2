@@ -1,0 +1,137 @@
+{
+  "id": "diabetes_mellitus",
+  "name": "Diabetes mellitus",
+  "domains": [
+    "Pre-operative Care"
+  ],
+  "generatedAt": "2025-12-17T21:13:15.092372",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetes mellitus: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetes mellitus is a group of metabolic disorders characterized by chronic hyperglycemia resulting from defects in insulin secretion, insulin action, or both.\n\n### Epidemiology\nDiabetes affects approximately 463 million adults worldwide, with type 2 diabetes accounting for about 90% of cases. The prevalence is increasing due to rising obesity rates and sedentary lifestyles.\n\n### Essential Pathophysiology\nIn type 1 diabetes, autoimmune destruction of pancreatic beta cells leads to absolute insulin deficiency. In type 2 diabetes, insulin resistance occurs, often accompanied by relative insulin deficiency. Both types result in elevated blood glucose levels.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Polyuria (increased urination)\n- Polydipsia (increased thirst)\n- Polyphagia (increased hunger)\n- Fatigue\n- Blurred vision\n- Weight loss (more common in type 1)\n\n### Key Signs\n- Ketonuria (in type 1)\n- Dehydration\n- Acanthosis nigricans (in type 2)\n- Peripheral neuropathy\n- Retinopathy\n\n### Atypical Presentations\n- Diabetes may present with recurrent infections, poor wound healing, or as a complication of another condition (e.g., pancreatitis).\n\n### Red Flags Requiring Immediate Action\n- Diabetic ketoacidosis (DKA) symptoms: nausea, vomiting, abdominal pain, altered mental status\n- Hyperglycemic hyperosmolar state (HHS) symptoms: severe dehydration, confusion, seizures\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fasting plasma glucose (FPG)\n- Random plasma glucose\n- HbA1c (glycated hemoglobin)\n\n### Second-line Investigations\n- Oral glucose tolerance test (OGTT)\n- C-peptide levels (to differentiate type 1 from type 2)\n\n### Specialist Tests\n- Autoantibody tests (GAD, IA-2) for type 1 diabetes\n- Lipid profile\n- Renal function tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of diabetes is confirmed with any of the following: FPG ≥ 7.0 mmol/L, random plasma glucose ≥ 11.1 mmol/L, HbA1c ≥ 6.5%, or OGTT ≥ 11.1 mmol/L.\n\n### Key Differential Diagnoses to Exclude\n- Maturity Onset Diabetes of the Young (MODY)\n- Secondary diabetes (e.g., due to Cushing's syndrome, pancreatitis)\n- LADA (Latent Autoimmune Diabetes in Adults)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Insulin therapy (for DKA or HHS)\n- Electrolyte management (especially potassium)\n\n#### Second-line Treatments\n- Bicarbonate therapy (if severe acidosis)\n\n#### Emergency Procedures\n- Insulin infusion protocol for DKA/HHS management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- Metformin (first-line pharmacotherapy for type 2 diabetes)\n\n#### Second-line Treatments\n- Sulfonylureas, DPP-4 inhibitors, GLP-1 receptor agonists, SGLT2 inhibitors\n\n#### Monitoring Requirements\n- Regular blood glucose monitoring\n- HbA1c every 3-6 months\n- Screening for complications (retinopathy, nephropathy, neuropathy)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metformin\n- **Mechanism of Action**: Increases insulin sensitivity and decreases hepatic glucose production.\n- **Typical Dosing Range**: Initial: 500 mg once or twice daily; max: 2000-3000 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: First-line treatment for type 2 diabetes.\n\n#### Insulin\n- **Mechanism of Action**: Replaces or supplements endogenous insulin.\n- **Typical Dosing Range**: Varies based on type (e.g., long-acting, short-acting); individualized based on blood glucose levels.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain.\n- **When to Use vs. Alternatives**: Essential for type 1 diabetes and may be required in advanced type 2 diabetes.\n\n#### Sulfonylureas (e.g., Glipizide)\n- **Mechanism of Action**: Stimulates insulin secretion from pancreatic beta cells.\n- **Typical Dosing Range**: Start at 2.5-5 mg daily; max: 20 mg/day.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain.\n- **When to Use vs. Alternatives**: Used as second-line therapy in type 2 diabetes.\n\n### Procedures\n\n#### Insulin infusion for DKA\n- **What it Involves**: Continuous IV insulin infusion to reduce blood glucose and correct acidosis.\n- **Indications**: Severe DKA or HHS requiring hospitalization.\n- **Key Risks/Complications**: Hypoglycemia, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, individuals with diabetes can lead healthy lives. However, poorly controlled diabetes can lead to serious complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.\n\n### Important Complications to Watch For\n- Cardiovascular disease\n- Diabetic neuropathy\n- Diabetic nephropathy\n- Diabetic retinopathy\n- Foot ulcers\n- Increased risk of infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of diabetes, initiate investigations, manage acute complications, and provide education on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for complex cases, such as those requiring insulin therapy initiation, or if there are significant complications or comorbidities.\n\n### Key Safety Considerations\nMonitor blood glucose levels closely, especially during acute management. Be aware of signs of hypoglycemia in patients on insulin or sulfonylureas. Ensure proper patient education on recognizing symptoms of hyperglycemia and hypoglycemia.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetes mellitus is a group of metabolic disorders characterized by chronic hyperglycemia resulting from defects in insulin secretion, insulin action, or both.",
+      "epidemiology": "Diabetes affects approximately 463 million adults worldwide, with type 2 diabetes accounting for about 90% of cases. The prevalence is increasing due to rising obesity rates and sedentary lifestyles.",
+      "pathophysiology": "In type 1 diabetes, autoimmune destruction of pancreatic beta cells leads to absolute insulin deficiency. In type 2 diabetes, insulin resistance occurs, often accompanied by relative insulin deficiency. Both types result in elevated blood glucose levels."
+    },
+    "recognition": {
+      "symptoms": [
+        "Polyuria (increased urination)",
+        "Polydipsia (increased thirst)",
+        "Polyphagia (increased hunger)",
+        "Fatigue",
+        "Blurred vision",
+        "Weight loss (more common in type 1)"
+      ],
+      "signs": [
+        "Ketonuria (in type 1)",
+        "Dehydration",
+        "Acanthosis nigricans (in type 2)",
+        "Peripheral neuropathy",
+        "Retinopathy"
+      ],
+      "atypicalPresentations": [
+        "Diabetes may present with recurrent infections, poor wound healing, or as a complication of another condition (e.g., pancreatitis)."
+      ],
+      "redFlags": [
+        "Diabetic ketoacidosis (DKA) symptoms: nausea, vomiting, abdominal pain, altered mental status",
+        "Hyperglycemic hyperosmolar state (HHS) symptoms: severe dehydration, confusion, seizures"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fasting plasma glucose (FPG)",
+        "Random plasma glucose",
+        "HbA1c (glycated hemoglobin)"
+      ],
+      "secondLine": [
+        "Oral glucose tolerance test (OGTT)",
+        "C-peptide levels (to differentiate type 1 from type 2)"
+      ],
+      "specialistTests": [
+        "Autoantibody tests (GAD, IA-2) for type 1 diabetes",
+        "Lipid profile",
+        "Renal function tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of diabetes is confirmed with any of the following: FPG ≥ 7.0 mmol/L, random plasma glucose ≥ 11.1 mmol/L, HbA1c ≥ 6.5%, or OGTT ≥ 11.1 mmol/L.",
+      "differentials": [
+        "Maturity Onset Diabetes of the Young (MODY)",
+        "Secondary diabetes (e.g., due to Cushing's syndrome, pancreatitis)",
+        "LADA (Latent Autoimmune Diabetes in Adults)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Insulin therapy (for DKA or HHS)",
+          "Electrolyte management (especially potassium)"
+        ],
+        "secondLine": [
+          "Bicarbonate therapy (if severe acidosis)"
+        ],
+        "procedures": [
+          "Insulin infusion protocol for DKA/HHS management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "Metformin (first-line pharmacotherapy for type 2 diabetes)"
+        ],
+        "secondLine": [
+          "Sulfonylureas, DPP-4 inhibitors, GLP-1 receptor agonists, SGLT2 inhibitors"
+        ],
+        "monitoring": [
+          "Regular blood glucose monitoring",
+          "HbA1c every 3-6 months",
+          "Screening for complications (retinopathy, nephropathy, neuropathy)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metformin",
+          "mechanism": "Increases insulin sensitivity and decreases hepatic glucose production.",
+          "dosing": "Initial: 500 mg once or twice daily; max: 2000-3000 mg/day in divided doses.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "First-line treatment for type 2 diabetes."
+        },
+        {
+          "name": "Insulin",
+          "mechanism": "Replaces or supplements endogenous insulin.",
+          "dosing": "Varies based on type (e.g., long-acting, short-acting); individualized based on blood glucose levels.",
+          "sideEffects": "Hypoglycemia, weight gain.",
+          "notes": "Essential for type 1 diabetes and may be required in advanced type 2 diabetes."
+        },
+        {
+          "name": "Sulfonylureas (e.g., Glipizide)",
+          "mechanism": "Stimulates insulin secretion from pancreatic beta cells.",
+          "dosing": "Start at 2.5-5 mg daily; max: 20 mg/day.",
+          "sideEffects": "Hypoglycemia, weight gain.",
+          "notes": "Used as second-line therapy in type 2 diabetes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Insulin infusion for DKA",
+          "description": "Continuous IV insulin infusion to reduce blood glucose and correct acidosis.",
+          "indications": "Severe DKA or HHS requiring hospitalization.",
+          "risks": "Hypoglycemia, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, individuals with diabetes can lead healthy lives. However, poorly controlled diabetes can lead to serious complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.",
+    "complications": [
+      "Cardiovascular disease",
+      "Diabetic neuropathy",
+      "Diabetic nephropathy",
+      "Diabetic retinopathy",
+      "Foot ulcers",
+      "Increased risk of infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of diabetes, initiate investigations, manage acute complications, and provide education on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to endocrinology for complex cases, such as those requiring insulin therapy initiation, or if there are significant complications or comorbidities.",
+    "keySafetyConsiderations": "Monitor blood glucose levels closely, especially during acute management. Be aware of signs of hypoglycemia in patients on insulin or sulfonylureas. Ensure proper patient education on recognizing symptoms of hyperglycemia and hypoglycemia."
+  }
+}

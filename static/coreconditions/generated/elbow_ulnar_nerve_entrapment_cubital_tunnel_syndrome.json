@@ -1,0 +1,124 @@
+{
+  "id": "elbow_ulnar_nerve_entrapment_cubital_tunnel_syndrome",
+  "name": "Elbow - Ulnar nerve entrapment (cubital tunnel syndrome)",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:33:24.061530",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Elbow - Ulnar nerve entrapment (cubital tunnel syndrome): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUlnar nerve entrapment, commonly known as cubital tunnel syndrome, occurs when the ulnar nerve is compressed at the elbow, leading to neurological symptoms in the hand and forearm.\n\n### Epidemiology\nCubital tunnel syndrome is the second most common entrapment neuropathy after carpal tunnel syndrome, with a prevalence of approximately 1-2% in the general population. It is more common in individuals who perform repetitive elbow flexion or have occupations that require prolonged elbow flexion.\n\n### Essential Pathophysiology\nThe ulnar nerve runs posterior to the medial epicondyle of the humerus and can become compressed due to direct trauma, prolonged flexion, or anatomical variations. This compression leads to ischemia and demyelination of the nerve, resulting in sensory and motor deficits.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Numbness and tingling in the ring and little fingers\n- Weakness in grip strength\n- Pain along the inner elbow\n- Clumsiness in hand movements\n\n### Key Signs\n- Positive Tinel's sign at the elbow\n- Weakness of the intrinsic muscles of the hand\n- Atrophy of the hypothenar eminence\n- Decreased sensation in the ulnar distribution\n\n### Atypical Presentations\n- Symptoms may worsen at night or with prolonged elbow flexion\n- Symptoms may mimic cervical radiculopathy\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe pain\n- Signs of acute trauma or fracture\n- Progressive weakness or atrophy of the hand muscles\n- Bowel or bladder dysfunction (suggesting cervical spine involvement)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Nerve conduction studies (NCS)\n- Electromyography (EMG)\n\n### Second-line Investigations\n- Ultrasound of the ulnar nerve\n- MRI of the elbow (if structural abnormalities are suspected)\n\n### Specialist Tests\n- Surgical exploration (if conservative management fails)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by NCS and EMG findings showing ulnar nerve conduction delay or block at the elbow.\n\n### Key Differential Diagnoses to Exclude\n- Cervical radiculopathy\n- Thoracic outlet syndrome\n- Median nerve entrapment (carpal tunnel syndrome)\n- Peripheral neuropathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Activity modification (avoiding elbow flexion)\n- Splinting the elbow in extension at night\n\n#### Second-line Treatments\n- Physical therapy focusing on nerve gliding exercises\n- Corticosteroid injections into the cubital tunnel\n\n#### Emergency Procedures\n- Ulnar nerve decompression surgery (if conservative measures fail)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued activity modification and ergonomic adjustments\n- Regular physiotherapy sessions\n\n#### Second-line Treatments\n- Surgical intervention if symptoms persist despite conservative management\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and functional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory effects reduce swelling and pressure on the nerve.\n- **Typical Dosing Range**: Intra-articular injection of 10-40 mg depending on severity.\n- **Key Side Effects/Contraindications**: Infection, local tissue atrophy, transient pain at injection site.\n- **When to Use vs. Alternatives**: Consider in cases of significant inflammation.\n\n#### NSAIDs (e.g., Ibuprofen)\n- **Mechanism of Action**: Reduce pain and inflammation.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal issues.\n\n### Procedures\n\n#### Ulnar nerve decompression\n- **What it Involves**: Surgical procedure to relieve pressure on the ulnar nerve at the elbow.\n- **Indications**: Persistent symptoms despite conservative management, significant motor weakness, or atrophy.\n- **Key Risks/Complications**: Infection, nerve injury, hematoma, recurrence of symptoms.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for cubital tunnel syndrome is generally good with appropriate management. Most patients experience significant improvement with conservative treatment, while surgical intervention has a high success rate.\n\n### Important Complications to Watch For\n- Persistent numbness or weakness\n- Recurrence of symptoms after surgery\n- Development of complex regional pain syndrome (CRPS)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform a thorough history and physical examination, recognize symptoms of ulnar nerve entrapment, initiate conservative management, and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to an orthopedic or neurology specialist if there is progressive weakness, significant atrophy, or failure of conservative management after 3-6 months.\n\n### Key Safety Considerations\nMonitor for signs of acute worsening, such as sudden weakness or loss of function, and ensure timely referral for surgical evaluation if indicated.\n",
+  "content": {
+    "overview": {
+      "definition": "Ulnar nerve entrapment, commonly known as cubital tunnel syndrome, occurs when the ulnar nerve is compressed at the elbow, leading to neurological symptoms in the hand and forearm.",
+      "epidemiology": "Cubital tunnel syndrome is the second most common entrapment neuropathy after carpal tunnel syndrome, with a prevalence of approximately 1-2% in the general population. It is more common in individuals who perform repetitive elbow flexion or have occupations that require prolonged elbow flexion.",
+      "pathophysiology": "The ulnar nerve runs posterior to the medial epicondyle of the humerus and can become compressed due to direct trauma, prolonged flexion, or anatomical variations. This compression leads to ischemia and demyelination of the nerve, resulting in sensory and motor deficits."
+    },
+    "recognition": {
+      "symptoms": [
+        "Numbness and tingling in the ring and little fingers",
+        "Weakness in grip strength",
+        "Pain along the inner elbow",
+        "Clumsiness in hand movements"
+      ],
+      "signs": [
+        "Positive Tinel's sign at the elbow",
+        "Weakness of the intrinsic muscles of the hand",
+        "Atrophy of the hypothenar eminence",
+        "Decreased sensation in the ulnar distribution"
+      ],
+      "atypicalPresentations": [
+        "Symptoms may worsen at night or with prolonged elbow flexion",
+        "Symptoms may mimic cervical radiculopathy"
+      ],
+      "redFlags": [
+        "Sudden onset of severe pain",
+        "Signs of acute trauma or fracture",
+        "Progressive weakness or atrophy of the hand muscles",
+        "Bowel or bladder dysfunction (suggesting cervical spine involvement)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Nerve conduction studies (NCS)",
+        "Electromyography (EMG)"
+      ],
+      "secondLine": [
+        "Ultrasound of the ulnar nerve",
+        "MRI of the elbow (if structural abnormalities are suspected)"
+      ],
+      "specialistTests": [
+        "Surgical exploration (if conservative management fails)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by NCS and EMG findings showing ulnar nerve conduction delay or block at the elbow.",
+      "differentials": [
+        "Cervical radiculopathy",
+        "Thoracic outlet syndrome",
+        "Median nerve entrapment (carpal tunnel syndrome)",
+        "Peripheral neuropathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Activity modification (avoiding elbow flexion)",
+          "Splinting the elbow in extension at night"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on nerve gliding exercises",
+          "Corticosteroid injections into the cubital tunnel"
+        ],
+        "procedures": [
+          "Ulnar nerve decompression surgery (if conservative measures fail)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued activity modification and ergonomic adjustments",
+          "Regular physiotherapy sessions"
+        ],
+        "secondLine": [
+          "Surgical intervention if symptoms persist despite conservative management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and functional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory effects reduce swelling and pressure on the nerve.",
+          "dosing": "Intra-articular injection of 10-40 mg depending on severity.",
+          "sideEffects": "Infection, local tissue atrophy, transient pain at injection site.",
+          "notes": "Consider in cases of significant inflammation."
+        },
+        {
+          "name": "NSAIDs (e.g., Ibuprofen)",
+          "mechanism": "Reduce pain and inflammation.",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use cautiously in patients with renal issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ulnar nerve decompression",
+          "description": "Surgical procedure to relieve pressure on the ulnar nerve at the elbow.",
+          "indications": "Persistent symptoms despite conservative management, significant motor weakness, or atrophy.",
+          "risks": "Infection, nerve injury, hematoma, recurrence of symptoms."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for cubital tunnel syndrome is generally good with appropriate management. Most patients experience significant improvement with conservative treatment, while surgical intervention has a high success rate.",
+    "complications": [
+      "Persistent numbness or weakness",
+      "Recurrence of symptoms after surgery",
+      "Development of complex regional pain syndrome (CRPS)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform a thorough history and physical examination, recognize symptoms of ulnar nerve entrapment, initiate conservative management, and refer to specialists when necessary.",
+    "escalation": "Refer to an orthopedic or neurology specialist if there is progressive weakness, significant atrophy, or failure of conservative management after 3-6 months.",
+    "keySafetyConsiderations": "Monitor for signs of acute worsening, such as sudden weakness or loss of function, and ensure timely referral for surgical evaluation if indicated."
+  }
+}

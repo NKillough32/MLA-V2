@@ -1,0 +1,151 @@
+{
+  "id": "breathlessness",
+  "name": "Breathlessness",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:57:49.339595",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Breathlessness: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBreathlessness, or dyspnea, is a subjective sensation of difficulty or discomfort in breathing, which can vary in intensity and is often associated with anxiety or panic.\n\n### Epidemiology\nBreathlessness is a common symptom in palliative care, affecting up to 70% of patients with advanced disease, particularly those with lung cancer, heart failure, and chronic obstructive pulmonary disease (COPD).\n\n### Essential Pathophysiology\nBreathlessness can arise from various mechanisms, including increased work of breathing due to airway obstruction, decreased lung compliance, impaired gas exchange, or central nervous system dysregulation. In palliative care, it often results from a combination of physical, psychological, and environmental factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shortness of breath\n- Increased respiratory rate\n- Feeling of suffocation\n- Chest tightness\n- Anxiety or panic\n\n### Key Signs\n- Use of accessory muscles for breathing\n- Nasal flaring\n- Cyanosis\n- Tachypnea\n- Pursed-lip breathing\n\n### Atypical Presentations\n- Breathlessness during rest or minimal exertion\n- Breathlessness with a normal respiratory rate\n- Breathlessness associated with anxiety rather than physical exertion\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of breathlessness\n- Breathlessness associated with chest pain\n- Breathlessness with hemoptysis\n- Severe breathlessness requiring immediate intervention\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Pulse oximetry to assess oxygen saturation\n- Basic blood tests (CBC, electrolytes)\n\n### Second-line Investigations\n- Chest X-ray to evaluate for pulmonary pathology\n- ECG to assess for cardiac causes\n- Spirometry if COPD or asthma is suspected\n\n### Specialist Tests\n- CT chest for detailed imaging of lung pathology\n- Echocardiogram for cardiac evaluation\n- Arterial blood gas analysis for assessing gas exchange\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of breathlessness is primarily clinical, based on patient history, symptom assessment, and physical examination findings.\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD)\n- Heart failure\n- Pulmonary embolism\n- Pneumonia\n- Anxiety disorders\n- Anemia\n- Pleural effusion\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy to maintain SpO2 > 92%\n- Positioning the patient in a comfortable position (e.g., sitting up)\n- Administering bronchodilators if wheezing is present\n\n#### Second-line Treatments\n- Opioids (e.g., morphine) for severe breathlessness\n- Anxiolytics (e.g., lorazepam) if anxiety is contributing\n\n#### Emergency Procedures\n- Thoracentesis for pleural effusion\n- Chest tube insertion for pneumothorax or significant pleural effusion\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular assessment of breathlessness using scales (e.g., Borg scale)\n- Non-pharmacological interventions (e.g., pulmonary rehabilitation, breathing exercises)\n\n#### Second-line Treatments\n- Long-acting bronchodilators for COPD management\n- Inhaled corticosteroids if asthma is present\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom control and adjust management as needed\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Morphine\n- **Mechanism of Action**: Opioid analgesic that reduces the perception of breathlessness and decreases respiratory drive.\n- **Typical Dosing Range**: Start with low doses (e.g., 2.5-5 mg orally or subcutaneously every 4 hours) and titrate based on response.\n- **Key Side Effects/Contraindications**: Sedation, constipation, respiratory depression, nausea.\n- **When to Use vs. Alternatives**: Consider using in low doses for breathlessness even in non-painful situations.\n\n#### Bronchodilators (e.g., Salbutamol)\n- **Mechanism of Action**: Relaxation of bronchial smooth muscle leading to bronchodilation.\n- **Typical Dosing Range**: Inhaled 100-200 mcg as needed, up to 4 times daily.\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, anxiety.\n- **When to Use vs. Alternatives**: Useful in patients with reversible airway obstruction.\n\n#### Lorazepam\n- **Mechanism of Action**: Benzodiazepine that reduces anxiety and can help with breathlessness related to panic.\n- **Typical Dosing Range**: 1-2 mg orally or subcutaneously as needed.\n- **Key Side Effects/Contraindications**: Sedation, dizziness, dependence.\n- **When to Use vs. Alternatives**: Use cautiously in patients with respiratory depression.\n\n### Procedures\n\n#### Thoracentesis\n- **What it Involves**: A procedure to remove fluid from the pleural space using a needle.\n- **Indications**: Pleural effusion causing significant breathlessness.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n#### Chest tube insertion\n- **What it Involves**: Placement of a tube in the pleural space to drain air or fluid.\n- **Indications**: Significant pleural effusion or pneumothorax causing respiratory distress.\n- **Key Risks/Complications**: Infection, injury to surrounding structures, pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of breathlessness in palliative care depends on the underlying cause and the overall condition of the patient. It can be a significant predictor of mortality in advanced disease.\n\n### Important Complications to Watch For\n- Increased anxiety and distress\n- Decreased quality of life\n- Potential for respiratory failure\n- Increased risk of hospitalizations\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and communicate effectively with the palliative care team.\n\n### When to Escalate to Senior/Specialist\nIf breathlessness is severe, unresponsive to initial management, or associated with red flags, escalate care to senior medical staff or palliative care specialists immediately.\n\n### Key Safety Considerations\nEnsure oxygen therapy is titrated to avoid hyperoxia, monitor for signs of respiratory distress, and be aware of the potential for opioid-induced respiratory depression.\n",
+  "content": {
+    "overview": {
+      "definition": "Breathlessness, or dyspnea, is a subjective sensation of difficulty or discomfort in breathing, which can vary in intensity and is often associated with anxiety or panic.",
+      "epidemiology": "Breathlessness is a common symptom in palliative care, affecting up to 70% of patients with advanced disease, particularly those with lung cancer, heart failure, and chronic obstructive pulmonary disease (COPD).",
+      "pathophysiology": "Breathlessness can arise from various mechanisms, including increased work of breathing due to airway obstruction, decreased lung compliance, impaired gas exchange, or central nervous system dysregulation. In palliative care, it often results from a combination of physical, psychological, and environmental factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shortness of breath",
+        "Increased respiratory rate",
+        "Feeling of suffocation",
+        "Chest tightness",
+        "Anxiety or panic"
+      ],
+      "signs": [
+        "Use of accessory muscles for breathing",
+        "Nasal flaring",
+        "Cyanosis",
+        "Tachypnea",
+        "Pursed-lip breathing"
+      ],
+      "atypicalPresentations": [
+        "Breathlessness during rest or minimal exertion",
+        "Breathlessness with a normal respiratory rate",
+        "Breathlessness associated with anxiety rather than physical exertion"
+      ],
+      "redFlags": [
+        "Sudden onset of breathlessness",
+        "Breathlessness associated with chest pain",
+        "Breathlessness with hemoptysis",
+        "Severe breathlessness requiring immediate intervention"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Pulse oximetry to assess oxygen saturation",
+        "Basic blood tests (CBC, electrolytes)"
+      ],
+      "secondLine": [
+        "Chest X-ray to evaluate for pulmonary pathology",
+        "ECG to assess for cardiac causes",
+        "Spirometry if COPD or asthma is suspected"
+      ],
+      "specialistTests": [
+        "CT chest for detailed imaging of lung pathology",
+        "Echocardiogram for cardiac evaluation",
+        "Arterial blood gas analysis for assessing gas exchange"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of breathlessness is primarily clinical, based on patient history, symptom assessment, and physical examination findings.",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Heart failure",
+        "Pulmonary embolism",
+        "Pneumonia",
+        "Anxiety disorders",
+        "Anemia",
+        "Pleural effusion"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy to maintain SpO2 > 92%",
+          "Positioning the patient in a comfortable position (e.g., sitting up)",
+          "Administering bronchodilators if wheezing is present"
+        ],
+        "secondLine": [
+          "Opioids (e.g., morphine) for severe breathlessness",
+          "Anxiolytics (e.g., lorazepam) if anxiety is contributing"
+        ],
+        "procedures": [
+          "Thoracentesis for pleural effusion",
+          "Chest tube insertion for pneumothorax or significant pleural effusion"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular assessment of breathlessness using scales (e.g., Borg scale)",
+          "Non-pharmacological interventions (e.g., pulmonary rehabilitation, breathing exercises)"
+        ],
+        "secondLine": [
+          "Long-acting bronchodilators for COPD management",
+          "Inhaled corticosteroids if asthma is present"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom control and adjust management as needed",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Morphine",
+          "mechanism": "Opioid analgesic that reduces the perception of breathlessness and decreases respiratory drive.",
+          "dosing": "Start with low doses (e.g., 2.5-5 mg orally or subcutaneously every 4 hours) and titrate based on response.",
+          "sideEffects": "Sedation, constipation, respiratory depression, nausea.",
+          "notes": "Consider using in low doses for breathlessness even in non-painful situations."
+        },
+        {
+          "name": "Bronchodilators (e.g., Salbutamol)",
+          "mechanism": "Relaxation of bronchial smooth muscle leading to bronchodilation.",
+          "dosing": "Inhaled 100-200 mcg as needed, up to 4 times daily.",
+          "sideEffects": "Tachycardia, tremors, anxiety.",
+          "notes": "Useful in patients with reversible airway obstruction."
+        },
+        {
+          "name": "Lorazepam",
+          "mechanism": "Benzodiazepine that reduces anxiety and can help with breathlessness related to panic.",
+          "dosing": "1-2 mg orally or subcutaneously as needed.",
+          "sideEffects": "Sedation, dizziness, dependence.",
+          "notes": "Use cautiously in patients with respiratory depression."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thoracentesis",
+          "description": "A procedure to remove fluid from the pleural space using a needle.",
+          "indications": "Pleural effusion causing significant breathlessness.",
+          "risks": "Pneumothorax, bleeding, infection."
+        },
+        {
+          "name": "Chest tube insertion",
+          "description": "Placement of a tube in the pleural space to drain air or fluid.",
+          "indications": "Significant pleural effusion or pneumothorax causing respiratory distress.",
+          "risks": "Infection, injury to surrounding structures, pain."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of breathlessness in palliative care depends on the underlying cause and the overall condition of the patient. It can be a significant predictor of mortality in advanced disease.",
+    "complications": [
+      "Increased anxiety and distress",
+      "Decreased quality of life",
+      "Potential for respiratory failure",
+      "Increased risk of hospitalizations"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and communicate effectively with the palliative care team.",
+    "escalation": "If breathlessness is severe, unresponsive to initial management, or associated with red flags, escalate care to senior medical staff or palliative care specialists immediately.",
+    "keySafetyConsiderations": "Ensure oxygen therapy is titrated to avoid hyperoxia, monitor for signs of respiratory distress, and be aware of the potential for opioid-induced respiratory depression."
+  }
+}

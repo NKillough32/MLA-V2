@@ -1,0 +1,147 @@
+{
+  "id": "encephalitis",
+  "name": "Encephalitis",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:47:35.741168",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Encephalitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEncephalitis is an inflammatory condition of the brain, often caused by viral infections, autoimmune processes, or other infectious agents, leading to neurological dysfunction.\n\n### Epidemiology\nEncephalitis has an incidence of approximately 1-2 cases per 100,000 people per year. It can occur at any age but is more common in children and young adults. Viral encephalitis, particularly due to herpes simplex virus (HSV), is the most common form.\n\n### Essential Pathophysiology\nThe pathophysiology involves the invasion of the central nervous system (CNS) by pathogens or the immune system's response to infections, leading to inflammation, neuronal damage, and disruption of normal brain function.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Headache\n- Altered mental status\n- Seizures\n- Nausea and vomiting\n- Photophobia\n- Focal neurological deficits\n\n### Key Signs\n- Confusion or disorientation\n- Neurological deficits (e.g., weakness, sensory loss)\n- Meningeal signs (e.g., neck stiffness)\n- Cranial nerve abnormalities\n\n### Atypical Presentations\n- Behavioral changes\n- Psychosis\n- Severe fatigue\n- Cognitive impairment\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration of neurological status\n- Severe headache with sudden onset\n- Persistent seizures\n- Signs of increased intracranial pressure (e.g., papilledema)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Electrolytes\n- Liver function tests (LFTs)\n- C-reactive protein (CRP)\n- Lumbar puncture for cerebrospinal fluid (CSF) analysis\n\n### Second-line Investigations\n- CT scan of the head\n- MRI of the brain\n- EEG (electroencephalogram)\n\n### Specialist Tests\n- CSF PCR for specific viral pathogens (e.g., HSV, VZV)\n- Serological tests for autoimmune encephalitis\n- Brain biopsy (in selected cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, CSF analysis showing pleocytosis, elevated protein, and/or positive PCR for viral pathogens, along with imaging findings.\n\n### Key Differential Diagnoses to Exclude\n- Meningitis\n- Brain abscess\n- Multiple sclerosis\n- Neurosyphilis\n- Toxic/metabolic encephalopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, fever management)\n- Antiviral therapy (e.g., acyclovir for HSV)\n- Corticosteroids (if autoimmune etiology suspected)\n\n#### Second-line Treatments\n- Antiepileptic drugs for seizure control\n- Intravenous immunoglobulin (IVIG) for autoimmune encephalitis\n\n#### Emergency Procedures\n- Lumbar puncture for CSF analysis\n- Intubation and ventilation (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation (physical, occupational, speech therapy)\n- Psychiatric support for cognitive and behavioral issues\n\n#### Second-line Treatments\n- Long-term antiepileptic medication if seizures persist\n- Cognitive rehabilitation programs\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- Follow-up imaging as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate.\n- **Typical Dosing Range**: 10 mg/kg IV every 8 hours for 14-21 days, adjusted for renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, neurotoxicity (tremors, confusion), nausea.\n- **When to Use vs. Alternatives**: Start as soon as HSV encephalitis is suspected.\n\n#### Methylprednisolone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects.\n- **Typical Dosing Range**: 1 g IV daily for 3 days, then taper.\n- **Key Side Effects/Contraindications**: Infection risk, hyperglycemia, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Consider in autoimmune encephalitis.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: Insertion of a needle into the lumbar region to collect CSF for analysis.\n- **Indications**: Suspected meningitis or encephalitis, elevated intracranial pressure.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n#### EEG\n- **What it Involves**: Recording of electrical activity in the brain to identify seizure activity.\n- **Indications**: Seizures, altered mental status.\n- **Key Risks/Complications**: Discomfort from electrodes, rare skin irritation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies depending on the cause and severity of encephalitis. Viral encephalitis can lead to significant morbidity and mortality, while autoimmune encephalitis may have a better prognosis with appropriate treatment.\n\n### Important Complications to Watch For\n- Seizures\n- Cognitive deficits\n- Motor deficits\n- Behavioral changes\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, initiate investigations, and provide supportive care. They should also communicate findings to senior staff and assist in management plans.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there is rapid deterioration, persistent seizures, or if the patient requires advanced interventions (e.g., intubation).\n\n### Key Safety Considerations\nMonitor for signs of increased intracranial pressure, ensure timely administration of antiviral therapy, and maintain hydration and electrolyte balance.\n",
+  "content": {
+    "overview": {
+      "definition": "Encephalitis is an inflammatory condition of the brain, often caused by viral infections, autoimmune processes, or other infectious agents, leading to neurological dysfunction.",
+      "epidemiology": "Encephalitis has an incidence of approximately 1-2 cases per 100,000 people per year. It can occur at any age but is more common in children and young adults. Viral encephalitis, particularly due to herpes simplex virus (HSV), is the most common form.",
+      "pathophysiology": "The pathophysiology involves the invasion of the central nervous system (CNS) by pathogens or the immune system's response to infections, leading to inflammation, neuronal damage, and disruption of normal brain function."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Headache",
+        "Altered mental status",
+        "Seizures",
+        "Nausea and vomiting",
+        "Photophobia",
+        "Focal neurological deficits"
+      ],
+      "signs": [
+        "Confusion or disorientation",
+        "Neurological deficits (e.g., weakness, sensory loss)",
+        "Meningeal signs (e.g., neck stiffness)",
+        "Cranial nerve abnormalities"
+      ],
+      "atypicalPresentations": [
+        "Behavioral changes",
+        "Psychosis",
+        "Severe fatigue",
+        "Cognitive impairment"
+      ],
+      "redFlags": [
+        "Rapid deterioration of neurological status",
+        "Severe headache with sudden onset",
+        "Persistent seizures",
+        "Signs of increased intracranial pressure (e.g., papilledema)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Electrolytes",
+        "Liver function tests (LFTs)",
+        "C-reactive protein (CRP)",
+        "Lumbar puncture for cerebrospinal fluid (CSF) analysis"
+      ],
+      "secondLine": [
+        "CT scan of the head",
+        "MRI of the brain",
+        "EEG (electroencephalogram)"
+      ],
+      "specialistTests": [
+        "CSF PCR for specific viral pathogens (e.g., HSV, VZV)",
+        "Serological tests for autoimmune encephalitis",
+        "Brain biopsy (in selected cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, CSF analysis showing pleocytosis, elevated protein, and/or positive PCR for viral pathogens, along with imaging findings.",
+      "differentials": [
+        "Meningitis",
+        "Brain abscess",
+        "Multiple sclerosis",
+        "Neurosyphilis",
+        "Toxic/metabolic encephalopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, fever management)",
+          "Antiviral therapy (e.g., acyclovir for HSV)",
+          "Corticosteroids (if autoimmune etiology suspected)"
+        ],
+        "secondLine": [
+          "Antiepileptic drugs for seizure control",
+          "Intravenous immunoglobulin (IVIG) for autoimmune encephalitis"
+        ],
+        "procedures": [
+          "Lumbar puncture for CSF analysis",
+          "Intubation and ventilation (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation (physical, occupational, speech therapy)",
+          "Psychiatric support for cognitive and behavioral issues"
+        ],
+        "secondLine": [
+          "Long-term antiepileptic medication if seizures persist",
+          "Cognitive rehabilitation programs"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "Follow-up imaging as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate.",
+          "dosing": "10 mg/kg IV every 8 hours for 14-21 days, adjusted for renal function.",
+          "sideEffects": "Nephrotoxicity, neurotoxicity (tremors, confusion), nausea.",
+          "notes": "Start as soon as HSV encephalitis is suspected."
+        },
+        {
+          "name": "Methylprednisolone",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects.",
+          "dosing": "1 g IV daily for 3 days, then taper.",
+          "sideEffects": "Infection risk, hyperglycemia, gastrointestinal bleeding.",
+          "notes": "Consider in autoimmune encephalitis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "Insertion of a needle into the lumbar region to collect CSF for analysis.",
+          "indications": "Suspected meningitis or encephalitis, elevated intracranial pressure.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        },
+        {
+          "name": "EEG",
+          "description": "Recording of electrical activity in the brain to identify seizure activity.",
+          "indications": "Seizures, altered mental status.",
+          "risks": "Discomfort from electrodes, rare skin irritation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies depending on the cause and severity of encephalitis. Viral encephalitis can lead to significant morbidity and mortality, while autoimmune encephalitis may have a better prognosis with appropriate treatment.",
+    "complications": [
+      "Seizures",
+      "Cognitive deficits",
+      "Motor deficits",
+      "Behavioral changes",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, initiate investigations, and provide supportive care. They should also communicate findings to senior staff and assist in management plans.",
+    "escalation": "Escalate care to a senior clinician if there is rapid deterioration, persistent seizures, or if the patient requires advanced interventions (e.g., intubation).",
+    "keySafetyConsiderations": "Monitor for signs of increased intracranial pressure, ensure timely administration of antiviral therapy, and maintain hydration and electrolyte balance."
+  }
+}

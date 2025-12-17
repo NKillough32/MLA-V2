@@ -1,0 +1,136 @@
+{
+  "id": "dementia",
+  "name": "Dementia?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:40:09.595845",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Dementia?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDementia is a syndrome characterized by a decline in cognitive function that interferes with daily living and social functioning. It is not a specific disease but a term that encompasses various conditions affecting the brain, leading to memory loss, impaired reasoning, and changes in behavior.\n\n### Epidemiology\nDementia affects approximately 50 million people worldwide, with numbers expected to triple by 2050. The prevalence increases with age, affecting 5-8% of those over 60 years and up to 30% of those over 85 years.\n\n### Essential Pathophysiology\nDementia results from various pathological processes, including neurodegeneration (e.g., Alzheimer's disease), vascular damage (e.g., vascular dementia), and other factors (e.g., Lewy body dementia, frontotemporal dementia). These processes lead to neuronal loss, synaptic dysfunction, and ultimately cognitive decline.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Memory loss\n- Difficulty in communication\n- Impaired reasoning and judgment\n- Disorientation to time and place\n- Changes in mood and behavior\n- Difficulty with complex tasks\n\n### Key Signs\n- Agnosia (difficulty recognizing objects)\n- Aphasia (language impairment)\n- Apraxia (difficulty with motor tasks)\n- Changes in personality\n- Loss of initiative\n\n### Atypical Presentations\n- Younger onset dementia (under 65 years)\n- Rapid progression of symptoms\n- Behavioral changes without significant memory loss\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of cognitive decline\n- Accompanying neurological signs (e.g., weakness, seizures)\n- Significant changes in personality or behavior\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and cognitive assessment (e.g., MMSE, MoCA)\n- Physical examination\n- Basic blood tests (e.g., FBC, U&E, LFTs, B12, thyroid function tests)\n\n### Second-line Investigations\n- Neuroimaging (CT or MRI) to assess for structural changes\n- Neuropsychological testing for detailed cognitive assessment\n\n### Specialist Tests\n- CSF analysis for biomarkers (e.g., amyloid, tau)\n- PET scans for amyloid or glucose metabolism\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of dementia is based on the presence of cognitive impairment affecting daily functioning, confirmed by clinical assessment and cognitive testing, and exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Delirium\n- Depression (pseudodementia)\n- Normal pressure hydrocephalus\n- Thyroid disorders\n- Vitamin deficiencies (e.g., B12 deficiency)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ensure safety and address any acute medical issues\n- Consider temporary medications for agitation or severe behavioral symptoms\n\n#### Second-line Treatments\n- Referral to specialist services for comprehensive assessment and management\n\n#### Emergency Procedures\n- Cognitive assessments and monitoring for progression of symptoms\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive stimulation therapy\n- Supportive care and education for patients and caregivers\n- Consideration of pharmacological treatment for symptomatic management\n\n#### Second-line Treatments\n- Referral to memory clinics or specialist dementia services for ongoing management and support\n\n#### Monitoring Requirements\n- Regular follow-up to assess cognitive decline and adjust management plans\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Donepezil\n- **Mechanism of Action**: Acetylcholinesterase inhibitor that increases acetylcholine levels in the brain.\n- **Typical Dosing Range**: 5 mg daily, can be increased to 10 mg after 4-6 weeks.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, insomnia, muscle cramps, fatigue.\n- **When to Use vs. Alternatives**: Used primarily in Alzheimer's disease; may help with cognitive symptoms.\n\n#### Memantine\n- **Mechanism of Action**: NMDA receptor antagonist that modulates glutamate activity.\n- **Typical Dosing Range**: 5 mg daily, can be increased to 20 mg daily based on tolerance.\n- **Key Side Effects/Contraindications**: Dizziness, headache, constipation, confusion.\n- **When to Use vs. Alternatives**: Used in moderate to severe Alzheimer's disease, often in combination with donepezil.\n\n### Procedures\n\n#### Cognitive assessments\n- **What it Involves**: Standardized tests to evaluate memory, attention, language, and problem-solving skills.\n- **Indications**: To assess the degree of cognitive impairment and monitor progression.\n- **Key Risks/Complications**: Minimal risks; may cause anxiety in patients.\n\n#### Neuroimaging (CT/MRI)\n- **What it Involves**: Imaging studies to identify structural brain changes associated with dementia.\n- **Indications**: To rule out other causes of cognitive decline and assess for vascular changes or atrophy.\n- **Key Risks/Complications**: Radiation exposure (CT), contrast reactions (MRI), and claustrophobia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nDementia is a progressive condition with varying rates of decline. Life expectancy can range from 4 to 20 years post-diagnosis, depending on the type and stage of dementia.\n\n### Important Complications to Watch For\n- Increased risk of falls\n- Infections (e.g., pneumonia)\n- Malnutrition and dehydration\n- Behavioral disturbances leading to caregiver stress\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, conduct basic investigations, and provide supportive care. They should also facilitate referrals to specialists and engage with multidisciplinary teams.\n\n### When to Escalate to Senior/Specialist\nIf there are concerns about rapid cognitive decline, significant behavioral changes, or acute medical issues, escalate to senior medical staff or geriatric specialists.\n\n### Key Safety Considerations\nEnsure patient safety in the home environment, assess for driving ability, monitor for medication side effects, and provide education to caregivers about managing challenging behaviors.\n",
+  "content": {
+    "overview": {
+      "definition": "Dementia is a syndrome characterized by a decline in cognitive function that interferes with daily living and social functioning. It is not a specific disease but a term that encompasses various conditions affecting the brain, leading to memory loss, impaired reasoning, and changes in behavior.",
+      "epidemiology": "Dementia affects approximately 50 million people worldwide, with numbers expected to triple by 2050. The prevalence increases with age, affecting 5-8% of those over 60 years and up to 30% of those over 85 years.",
+      "pathophysiology": "Dementia results from various pathological processes, including neurodegeneration (e.g., Alzheimer's disease), vascular damage (e.g., vascular dementia), and other factors (e.g., Lewy body dementia, frontotemporal dementia). These processes lead to neuronal loss, synaptic dysfunction, and ultimately cognitive decline."
+    },
+    "recognition": {
+      "symptoms": [
+        "Memory loss",
+        "Difficulty in communication",
+        "Impaired reasoning and judgment",
+        "Disorientation to time and place",
+        "Changes in mood and behavior",
+        "Difficulty with complex tasks"
+      ],
+      "signs": [
+        "Agnosia (difficulty recognizing objects)",
+        "Aphasia (language impairment)",
+        "Apraxia (difficulty with motor tasks)",
+        "Changes in personality",
+        "Loss of initiative"
+      ],
+      "atypicalPresentations": [
+        "Younger onset dementia (under 65 years)",
+        "Rapid progression of symptoms",
+        "Behavioral changes without significant memory loss"
+      ],
+      "redFlags": [
+        "Sudden onset of cognitive decline",
+        "Accompanying neurological signs (e.g., weakness, seizures)",
+        "Significant changes in personality or behavior"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and cognitive assessment (e.g., MMSE, MoCA)",
+        "Physical examination",
+        "Basic blood tests (e.g., FBC, U&E, LFTs, B12, thyroid function tests)"
+      ],
+      "secondLine": [
+        "Neuroimaging (CT or MRI) to assess for structural changes",
+        "Neuropsychological testing for detailed cognitive assessment"
+      ],
+      "specialistTests": [
+        "CSF analysis for biomarkers (e.g., amyloid, tau)",
+        "PET scans for amyloid or glucose metabolism"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of dementia is based on the presence of cognitive impairment affecting daily functioning, confirmed by clinical assessment and cognitive testing, and exclusion of other causes.",
+      "differentials": [
+        "Delirium",
+        "Depression (pseudodementia)",
+        "Normal pressure hydrocephalus",
+        "Thyroid disorders",
+        "Vitamin deficiencies (e.g., B12 deficiency)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ensure safety and address any acute medical issues",
+          "Consider temporary medications for agitation or severe behavioral symptoms"
+        ],
+        "secondLine": [
+          "Referral to specialist services for comprehensive assessment and management"
+        ],
+        "procedures": [
+          "Cognitive assessments and monitoring for progression of symptoms"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive stimulation therapy",
+          "Supportive care and education for patients and caregivers",
+          "Consideration of pharmacological treatment for symptomatic management"
+        ],
+        "secondLine": [
+          "Referral to memory clinics or specialist dementia services for ongoing management and support"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess cognitive decline and adjust management plans"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Donepezil",
+          "mechanism": "Acetylcholinesterase inhibitor that increases acetylcholine levels in the brain.",
+          "dosing": "5 mg daily, can be increased to 10 mg after 4-6 weeks.",
+          "sideEffects": "Nausea, diarrhea, insomnia, muscle cramps, fatigue.",
+          "notes": "Used primarily in Alzheimer's disease; may help with cognitive symptoms."
+        },
+        {
+          "name": "Memantine",
+          "mechanism": "NMDA receptor antagonist that modulates glutamate activity.",
+          "dosing": "5 mg daily, can be increased to 20 mg daily based on tolerance.",
+          "sideEffects": "Dizziness, headache, constipation, confusion.",
+          "notes": "Used in moderate to severe Alzheimer's disease, often in combination with donepezil."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cognitive assessments",
+          "description": "Standardized tests to evaluate memory, attention, language, and problem-solving skills.",
+          "indications": "To assess the degree of cognitive impairment and monitor progression.",
+          "risks": "Minimal risks; may cause anxiety in patients."
+        },
+        {
+          "name": "Neuroimaging (CT/MRI)",
+          "description": "Imaging studies to identify structural brain changes associated with dementia.",
+          "indications": "To rule out other causes of cognitive decline and assess for vascular changes or atrophy.",
+          "risks": "Radiation exposure (CT), contrast reactions (MRI), and claustrophobia."
+        }
+      ]
+    },
+    "prognosis": "Dementia is a progressive condition with varying rates of decline. Life expectancy can range from 4 to 20 years post-diagnosis, depending on the type and stage of dementia.",
+    "complications": [
+      "Increased risk of falls",
+      "Infections (e.g., pneumonia)",
+      "Malnutrition and dehydration",
+      "Behavioral disturbances leading to caregiver stress"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, conduct basic investigations, and provide supportive care. They should also facilitate referrals to specialists and engage with multidisciplinary teams.",
+    "escalation": "If there are concerns about rapid cognitive decline, significant behavioral changes, or acute medical issues, escalate to senior medical staff or geriatric specialists.",
+    "keySafetyConsiderations": "Ensure patient safety in the home environment, assess for driving ability, monitor for medication side effects, and provide education to caregivers about managing challenging behaviors."
+  }
+}

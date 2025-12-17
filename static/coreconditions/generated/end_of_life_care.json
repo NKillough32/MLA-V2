@@ -1,0 +1,150 @@
+{
+  "id": "end_of_life_care",
+  "name": "End of life care",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:59:58.036776",
+  "model": "gpt-4o-mini",
+  "rawContent": "# End of life care: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEnd of life care refers to the support and medical care given during the time surrounding death. It encompasses palliative care, which aims to relieve suffering and improve the quality of life for patients with terminal illnesses, and hospice care, which is specifically for those who are nearing the end of life.\n\n### Epidemiology\nApproximately 500,000 people die in the UK each year, with a significant proportion requiring end of life care. The need for such care is expected to rise due to an aging population and increasing prevalence of chronic diseases.\n\n### Essential Pathophysiology\nEnd of life care is not a specific condition but rather a phase in the trajectory of chronic illnesses where curative treatment is no longer effective or desired. Patients may experience multi-organ failure, cancer progression, or severe chronic disease exacerbations, leading to a decline in physiological function and quality of life.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain\n- Shortness of breath\n- Fatigue\n- Nausea\n- Anxiety\n- Depression\n- Loss of appetite\n- Delirium\n\n### Key Signs\n- Cachexia (weight loss)\n- Decreased level of consciousness\n- Changes in vital signs (e.g., hypotension, tachycardia)\n- Skin changes (e.g., mottling, cyanosis)\n- Decreased urine output\n\n### Atypical Presentations\n- Sudden changes in mental status\n- Unexplained agitation or restlessness\n- Prolonged periods of unresponsiveness\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in clinical status\n- Severe pain not responding to usual analgesics\n- Family distress or conflict regarding care decisions\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Assessment of pain and symptom burden\n- Review of current medications\n\n### Second-line Investigations\n- Blood tests (e.g., full blood count, renal function, liver function tests)\n- Imaging studies if indicated (e.g., chest X-ray for dyspnea)\n\n### Specialist Tests\n- Palliative care assessment tools (e.g., Edmonton Symptom Assessment System)\n- Psychological assessment for mental health issues\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of end of life care needs is based on clinical judgment, considering the patient's prognosis, symptom burden, and goals of care.\n\n### Key Differential Diagnoses to Exclude\n- Acute exacerbation of chronic illness\n- Terminal cancer\n- Severe heart failure\n- End-stage renal disease\n- Advanced neurological conditions (e.g., dementia)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate palliative care consultation\n- Optimize pain management (e.g., opioids)\n- Address acute symptoms (e.g., dyspnea, nausea)\n\n#### Second-line Treatments\n- Consider advanced care planning discussions\n- Involve multidisciplinary team (MDT) for holistic care\n\n#### Emergency Procedures\n- Subcutaneous or intravenous access for medication administration\n- Symptom management procedures (e.g., thoracentesis for pleural effusion)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular review of symptom management plan\n- Continued communication with patient and family regarding goals of care\n\n#### Second-line Treatments\n- Referral to hospice services if appropriate\n- Consideration of advance directives and living wills\n\n#### Monitoring Requirements\n- Regular assessment of symptom control and quality of life\n- Family support and bereavement services\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Morphine\n- **Mechanism of Action**: Opioid analgesic that acts on the central nervous system to relieve pain.\n- **Typical Dosing Range**: Start with low doses (e.g., 2.5-5 mg orally every 4 hours) and titrate based on pain control and side effects.\n- **Key Side Effects/Contraindications**: Constipation, sedation, nausea, respiratory depression.\n- **When to Use vs. Alternatives**: Consider using a patient-controlled analgesia (PCA) pump for patients with severe pain.\n\n#### Midazolam\n- **Mechanism of Action**: Benzodiazepine that provides sedation and anxiolysis.\n- **Typical Dosing Range**: Start with 2.5-5 mg subcutaneously or intravenously, titrate as needed.\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, paradoxical agitation.\n- **When to Use vs. Alternatives**: Useful for managing severe anxiety or agitation.\n\n#### Haloperidol\n- **Mechanism of Action**: Antipsychotic that can help manage delirium and nausea.\n- **Typical Dosing Range**: Start with 0.5-1 mg orally or subcutaneously, adjust based on response.\n- **Key Side Effects/Contraindications**: Sedation, extrapyramidal symptoms, QT prolongation.\n- **When to Use vs. Alternatives**: Consider for patients with delirium or severe nausea.\n\n### Procedures\n\n#### Subcutaneous infusion\n- **What it Involves**: Continuous delivery of medications via a subcutaneous catheter for symptom management.\n- **Indications**: Patients unable to take oral medications, requiring continuous symptom control.\n- **Key Risks/Complications**: Infection at the site, catheter blockage, local irritation.\n\n#### Thoracentesis\n- **What it Involves**: Procedure to remove fluid from the pleural space to relieve dyspnea.\n- **Indications**: Pleural effusion causing significant respiratory distress.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis in end of life care is variable and depends on the underlying condition. Most patients in this phase have a limited life expectancy, often measured in days to weeks.\n\n### Important Complications to Watch For\n- Uncontrolled pain\n- Severe dyspnea\n- Delirium\n- Family distress and conflict\n- Inadequate symptom management\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in recognizing the need for end of life care, initiating discussions about goals of care, managing symptoms, and coordinating with the palliative care team.\n\n### When to Escalate to Senior/Specialist\nIf symptoms are not controlled or if there are significant changes in the patient's condition, escalate care to the palliative care team or senior medical staff.\n\n### Key Safety Considerations\nEnsure clear communication with the patient and family regarding treatment goals. Regularly assess and document symptom control. Be aware of the potential for medication errors, especially with opioids.\n",
+  "content": {
+    "overview": {
+      "definition": "End of life care refers to the support and medical care given during the time surrounding death. It encompasses palliative care, which aims to relieve suffering and improve the quality of life for patients with terminal illnesses, and hospice care, which is specifically for those who are nearing the end of life.",
+      "epidemiology": "Approximately 500,000 people die in the UK each year, with a significant proportion requiring end of life care. The need for such care is expected to rise due to an aging population and increasing prevalence of chronic diseases.",
+      "pathophysiology": "End of life care is not a specific condition but rather a phase in the trajectory of chronic illnesses where curative treatment is no longer effective or desired. Patients may experience multi-organ failure, cancer progression, or severe chronic disease exacerbations, leading to a decline in physiological function and quality of life."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain",
+        "Shortness of breath",
+        "Fatigue",
+        "Nausea",
+        "Anxiety",
+        "Depression",
+        "Loss of appetite",
+        "Delirium"
+      ],
+      "signs": [
+        "Cachexia (weight loss)",
+        "Decreased level of consciousness",
+        "Changes in vital signs (e.g., hypotension, tachycardia)",
+        "Skin changes (e.g., mottling, cyanosis)",
+        "Decreased urine output"
+      ],
+      "atypicalPresentations": [
+        "Sudden changes in mental status",
+        "Unexplained agitation or restlessness",
+        "Prolonged periods of unresponsiveness"
+      ],
+      "redFlags": [
+        "Rapid deterioration in clinical status",
+        "Severe pain not responding to usual analgesics",
+        "Family distress or conflict regarding care decisions"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Assessment of pain and symptom burden",
+        "Review of current medications"
+      ],
+      "secondLine": [
+        "Blood tests (e.g., full blood count, renal function, liver function tests)",
+        "Imaging studies if indicated (e.g., chest X-ray for dyspnea)"
+      ],
+      "specialistTests": [
+        "Palliative care assessment tools (e.g., Edmonton Symptom Assessment System)",
+        "Psychological assessment for mental health issues"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of end of life care needs is based on clinical judgment, considering the patient's prognosis, symptom burden, and goals of care.",
+      "differentials": [
+        "Acute exacerbation of chronic illness",
+        "Terminal cancer",
+        "Severe heart failure",
+        "End-stage renal disease",
+        "Advanced neurological conditions (e.g., dementia)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate palliative care consultation",
+          "Optimize pain management (e.g., opioids)",
+          "Address acute symptoms (e.g., dyspnea, nausea)"
+        ],
+        "secondLine": [
+          "Consider advanced care planning discussions",
+          "Involve multidisciplinary team (MDT) for holistic care"
+        ],
+        "procedures": [
+          "Subcutaneous or intravenous access for medication administration",
+          "Symptom management procedures (e.g., thoracentesis for pleural effusion)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular review of symptom management plan",
+          "Continued communication with patient and family regarding goals of care"
+        ],
+        "secondLine": [
+          "Referral to hospice services if appropriate",
+          "Consideration of advance directives and living wills"
+        ],
+        "monitoring": [
+          "Regular assessment of symptom control and quality of life",
+          "Family support and bereavement services"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Morphine",
+          "mechanism": "Opioid analgesic that acts on the central nervous system to relieve pain.",
+          "dosing": "Start with low doses (e.g., 2.5-5 mg orally every 4 hours) and titrate based on pain control and side effects.",
+          "sideEffects": "Constipation, sedation, nausea, respiratory depression.",
+          "notes": "Consider using a patient-controlled analgesia (PCA) pump for patients with severe pain."
+        },
+        {
+          "name": "Midazolam",
+          "mechanism": "Benzodiazepine that provides sedation and anxiolysis.",
+          "dosing": "Start with 2.5-5 mg subcutaneously or intravenously, titrate as needed.",
+          "sideEffects": "Sedation, respiratory depression, paradoxical agitation.",
+          "notes": "Useful for managing severe anxiety or agitation."
+        },
+        {
+          "name": "Haloperidol",
+          "mechanism": "Antipsychotic that can help manage delirium and nausea.",
+          "dosing": "Start with 0.5-1 mg orally or subcutaneously, adjust based on response.",
+          "sideEffects": "Sedation, extrapyramidal symptoms, QT prolongation.",
+          "notes": "Consider for patients with delirium or severe nausea."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Subcutaneous infusion",
+          "description": "Continuous delivery of medications via a subcutaneous catheter for symptom management.",
+          "indications": "Patients unable to take oral medications, requiring continuous symptom control.",
+          "risks": "Infection at the site, catheter blockage, local irritation."
+        },
+        {
+          "name": "Thoracentesis",
+          "description": "Procedure to remove fluid from the pleural space to relieve dyspnea.",
+          "indications": "Pleural effusion causing significant respiratory distress.",
+          "risks": "Pneumothorax, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "Prognosis in end of life care is variable and depends on the underlying condition. Most patients in this phase have a limited life expectancy, often measured in days to weeks.",
+    "complications": [
+      "Uncontrolled pain",
+      "Severe dyspnea",
+      "Delirium",
+      "Family distress and conflict",
+      "Inadequate symptom management"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in recognizing the need for end of life care, initiating discussions about goals of care, managing symptoms, and coordinating with the palliative care team.",
+    "escalation": "If symptoms are not controlled or if there are significant changes in the patient's condition, escalate care to the palliative care team or senior medical staff.",
+    "keySafetyConsiderations": "Ensure clear communication with the patient and family regarding treatment goals. Regularly assess and document symptom control. Be aware of the potential for medication errors, especially with opioids."
+  }
+}

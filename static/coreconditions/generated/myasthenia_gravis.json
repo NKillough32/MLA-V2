@@ -1,0 +1,135 @@
+{
+  "id": "myasthenia_gravis",
+  "name": "?Myasthenia gravis?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:49:58.689932",
+  "model": "gpt-4o-mini",
+  "rawContent": "# ?Myasthenia gravis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMyasthenia gravis (MG) is an autoimmune neuromuscular disorder characterized by weakness and rapid fatigue of voluntary muscles due to the impairment of communication between nerves and muscles.\n\n### Epidemiology\nMG affects approximately 20 per 100,000 people, with a higher prevalence in women under 40 and men over 60. It can occur at any age but is most common in young adult women and older men.\n\n### Essential Pathophysiology\nIn MG, antibodies target acetylcholine receptors at the neuromuscular junction, leading to decreased transmission of nerve impulses to muscles, resulting in muscle weakness.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Muscle weakness that worsens with activity\n- Ptosis (drooping of one or both eyelids)\n- Diplopia (double vision)\n- Dysphagia (difficulty swallowing)\n- Dysarthria (slurred speech)\n- Generalized weakness\n\n### Key Signs\n- Weakness on examination that fluctuates\n- Ocular signs (ptosis, ophthalmoplegia)\n- Bulbar signs (difficulty with speech and swallowing)\n- Proximal muscle weakness\n\n### Atypical Presentations\n- Respiratory muscle weakness leading to respiratory failure\n- Isolated ocular myasthenia gravis (only eye symptoms)\n- Myasthenic crisis (acute exacerbation requiring ventilation)\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe muscle weakness\n- Respiratory distress\n- Difficulty swallowing or speaking\n- Severe ptosis affecting vision\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum acetylcholine receptor antibodies\n- Electromyography (EMG) with repetitive nerve stimulation\n\n### Second-line Investigations\n- Single-fiber EMG\n- CT scan of the chest to assess for thymoma\n\n### Specialist Tests\n- Anti-MuSK antibodies (muscle-specific kinase)\n- Thyroid function tests (to rule out thyroid disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, serological tests for antibodies, and electrophysiological studies showing decremental response in muscle strength.\n\n### Key Differential Diagnoses to Exclude\n- Lambert-Eaton myasthenic syndrome\n- Botulism\n- Thyroid eye disease\n- Cervical spondylotic myelopathy\n- Multiple sclerosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous immunoglobulin (IVIG)\n- Plasmapheresis\n\n#### Second-line Treatments\n- Corticosteroids (e.g., prednisone)\n\n#### Emergency Procedures\n- Plasmapheresis: a procedure to remove antibodies from the blood, indicated in myasthenic crisis or severe exacerbations. Risks include infection, hypotension, and electrolyte imbalances.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Acetylcholinesterase inhibitors (e.g., pyridostigmine)\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)\n- Thymectomy (surgical removal of the thymus gland)\n\n#### Monitoring Requirements\n- Regular assessment of muscle strength and function\n- Monitoring for side effects of immunosuppressive therapy\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pyridostigmine\n- **Mechanism of Action**: Inhibits acetylcholinesterase, increasing acetylcholine availability at the neuromuscular junction.\n- **Typical Dosing Range**: Initial: 60 mg orally 3 times daily; may increase to 120 mg 4 times daily as needed.\n- **Key Side Effects/Contraindications**: Abdominal cramps, diarrhea, increased salivation, muscle twitching.\n- **When to Use vs. Alternatives**: Monitor for cholinergic crisis (overdose of medication leading to increased weakness).\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that suppresses the immune response.\n- **Typical Dosing Range**: Start at 10-20 mg daily, adjust based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis, increased infection risk.\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.\n- **Typical Dosing Range**: 1-3 mg/kg/day, adjusted based on tolerance and response.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk.\n- **When to Use vs. Alternatives**: Requires regular blood monitoring for liver function and blood counts.\n\n### Procedures\n\n#### Thymectomy\n- **What it Involves**: Surgical removal of the thymus gland, which may improve symptoms in patients with thymoma or generalized MG.\n- **Indications**: Patients with generalized MG, especially those with thymoma or those under 60 years old.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures, respiratory complications. Risks are higher in older patients. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, most patients can manage their symptoms effectively, but some may experience significant disability. Myasthenic crisis can be life-threatening and requires immediate intervention.\n\n### Important Complications to Watch For\n- Myasthenic crisis (acute respiratory failure)\n- Thymoma (tumor of the thymus gland)\n- Increased risk of infections due to immunosuppressive therapy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of MG, initiate investigations, and manage acute exacerbations. They should also be aware of the need for multidisciplinary care involving neurologists, respiratory therapists, and possibly surgeons.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with respiratory distress, severe weakness, or difficulty swallowing, immediate escalation to senior medical staff and possible intensive care referral is necessary.\n\n### Key Safety Considerations\nMonitor for signs of respiratory failure, especially in patients with known MG. Be cautious with medications that may exacerbate weakness (e.g., certain antibiotics, beta-blockers). Regularly assess for side effects of immunosuppressive therapy.\n",
+  "content": {
+    "overview": {
+      "definition": "Myasthenia gravis (MG) is an autoimmune neuromuscular disorder characterized by weakness and rapid fatigue of voluntary muscles due to the impairment of communication between nerves and muscles.",
+      "epidemiology": "MG affects approximately 20 per 100,000 people, with a higher prevalence in women under 40 and men over 60. It can occur at any age but is most common in young adult women and older men.",
+      "pathophysiology": "In MG, antibodies target acetylcholine receptors at the neuromuscular junction, leading to decreased transmission of nerve impulses to muscles, resulting in muscle weakness."
+    },
+    "recognition": {
+      "symptoms": [
+        "Muscle weakness that worsens with activity",
+        "Ptosis (drooping of one or both eyelids)",
+        "Diplopia (double vision)",
+        "Dysphagia (difficulty swallowing)",
+        "Dysarthria (slurred speech)",
+        "Generalized weakness"
+      ],
+      "signs": [
+        "Weakness on examination that fluctuates",
+        "Ocular signs (ptosis, ophthalmoplegia)",
+        "Bulbar signs (difficulty with speech and swallowing)",
+        "Proximal muscle weakness"
+      ],
+      "atypicalPresentations": [
+        "Respiratory muscle weakness leading to respiratory failure",
+        "Isolated ocular myasthenia gravis (only eye symptoms)",
+        "Myasthenic crisis (acute exacerbation requiring ventilation)"
+      ],
+      "redFlags": [
+        "Sudden onset of severe muscle weakness",
+        "Respiratory distress",
+        "Difficulty swallowing or speaking",
+        "Severe ptosis affecting vision"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum acetylcholine receptor antibodies",
+        "Electromyography (EMG) with repetitive nerve stimulation"
+      ],
+      "secondLine": [
+        "Single-fiber EMG",
+        "CT scan of the chest to assess for thymoma"
+      ],
+      "specialistTests": [
+        "Anti-MuSK antibodies (muscle-specific kinase)",
+        "Thyroid function tests (to rule out thyroid disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, serological tests for antibodies, and electrophysiological studies showing decremental response in muscle strength.",
+      "differentials": [
+        "Lambert-Eaton myasthenic syndrome",
+        "Botulism",
+        "Thyroid eye disease",
+        "Cervical spondylotic myelopathy",
+        "Multiple sclerosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous immunoglobulin (IVIG)",
+          "Plasmapheresis"
+        ],
+        "secondLine": [
+          "Corticosteroids (e.g., prednisone)"
+        ],
+        "procedures": [
+          "Plasmapheresis: a procedure to remove antibodies from the blood, indicated in myasthenic crisis or severe exacerbations. Risks include infection, hypotension, and electrolyte imbalances."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Acetylcholinesterase inhibitors (e.g., pyridostigmine)"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)",
+          "Thymectomy (surgical removal of the thymus gland)"
+        ],
+        "monitoring": [
+          "Regular assessment of muscle strength and function",
+          "Monitoring for side effects of immunosuppressive therapy"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pyridostigmine",
+          "mechanism": "Inhibits acetylcholinesterase, increasing acetylcholine availability at the neuromuscular junction.",
+          "dosing": "Initial: 60 mg orally 3 times daily; may increase to 120 mg 4 times daily as needed.",
+          "sideEffects": "Abdominal cramps, diarrhea, increased salivation, muscle twitching.",
+          "notes": "Monitor for cholinergic crisis (overdose of medication leading to increased weakness)."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that suppresses the immune response.",
+          "dosing": "Start at 10-20 mg daily, adjust based on response.",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis, increased infection risk.",
+          "notes": "Long-term use requires monitoring for side effects."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.",
+          "dosing": "1-3 mg/kg/day, adjusted based on tolerance and response.",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk.",
+          "notes": "Requires regular blood monitoring for liver function and blood counts."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thymectomy",
+          "description": "Surgical removal of the thymus gland, which may improve symptoms in patients with thymoma or generalized MG.",
+          "indications": "Patients with generalized MG, especially those with thymoma or those under 60 years old.",
+          "risks": "Infection, bleeding, damage to surrounding structures, respiratory complications. Risks are higher in older patients. "
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, most patients can manage their symptoms effectively, but some may experience significant disability. Myasthenic crisis can be life-threatening and requires immediate intervention.",
+    "complications": [
+      "Myasthenic crisis (acute respiratory failure)",
+      "Thymoma (tumor of the thymus gland)",
+      "Increased risk of infections due to immunosuppressive therapy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of MG, initiate investigations, and manage acute exacerbations. They should also be aware of the need for multidisciplinary care involving neurologists, respiratory therapists, and possibly surgeons.",
+    "escalation": "If a patient presents with respiratory distress, severe weakness, or difficulty swallowing, immediate escalation to senior medical staff and possible intensive care referral is necessary.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory failure, especially in patients with known MG. Be cautious with medications that may exacerbate weakness (e.g., certain antibiotics, beta-blockers). Regularly assess for side effects of immunosuppressive therapy."
+  }
+}

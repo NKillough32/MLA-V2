@@ -1,0 +1,138 @@
+{
+  "id": "cutaneous_lymphoma",
+  "name": "Cutaneous Lymphoma",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:18:26.485749",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cutaneous Lymphoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCutaneous lymphoma is a type of cancer that originates in the lymphocytes (a type of white blood cell) and primarily affects the skin. It is classified as a non-Hodgkin lymphoma and can be either primary (originating in the skin) or secondary (involvement of the skin from systemic lymphoma).\n\n### Epidemiology\nCutaneous lymphomas are relatively rare, accounting for approximately 5% of all lymphomas. The most common types include mycosis fungoides and Sézary syndrome. It typically presents in adults, with a higher incidence in males and individuals over 50 years of age.\n\n### Essential Pathophysiology\nCutaneous lymphomas arise from malignant transformation of T-cells or B-cells in the skin. In mycosis fungoides, the malignant T-cells infiltrate the skin, leading to characteristic lesions. The exact cause is often unknown, but factors such as genetic predisposition, environmental exposures, and immune system dysfunction may play a role.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itchy skin (pruritus)\n- Skin lesions (patches, plaques, or tumors)\n- Erythema\n- Scaling or crusting of lesions\n\n### Key Signs\n- Erythematous patches or plaques\n- Nodular lesions\n- Lymphadenopathy (in advanced cases)\n- Erythroderma (in Sézary syndrome)\n\n### Atypical Presentations\n- Lesions resembling eczema or psoriasis\n- Rapidly growing tumors\n- Systemic symptoms (fever, weight loss) in advanced disease\n\n### Red Flags Requiring Immediate Action\n- Persistent skin lesions that do not respond to standard treatments\n- Rapidly changing or ulcerated lesions\n- Associated lymphadenopathy or systemic symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Skin biopsy (to confirm diagnosis)\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n\n### Second-line Investigations\n- Imaging studies (CT or PET scan) to assess for lymphadenopathy or systemic involvement\n- T-cell receptor gene rearrangement studies\n\n### Specialist Tests\n- Flow cytometry for immunophenotyping\n- Bone marrow biopsy (if systemic involvement is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of skin biopsy showing atypical lymphocytes in the epidermis and/or dermis, along with clinical correlation.\n\n### Key Differential Diagnoses to Exclude\n- Psoriasis\n- Eczema\n- Seborrheic dermatitis\n- Other skin malignancies (e.g., melanoma)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids for localized lesions\n- Phototherapy (e.g., PUVA or UVB)\n\n#### Second-line Treatments\n- Systemic retinoids (e.g., acitretin)\n- Chemotherapy (e.g., methotrexate)\n\n#### Emergency Procedures\n- Skin-directed therapies (e.g., localized radiation therapy)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up and monitoring of skin lesions\n- Education on skin care and sun protection\n\n#### Second-line Treatments\n- Systemic therapies (e.g., interferon-alpha, brentuximab vedotin)\n\n#### Monitoring Requirements\n- Regular skin examinations to monitor for progression or new lesions\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acitretin\n- **Mechanism of Action**: A retinoid that modulates skin cell growth and differentiation.\n- **Typical Dosing Range**: Initial: 25 mg daily; may increase to 50 mg daily based on response.\n- **Key Side Effects/Contraindications**: Dry skin, elevated liver enzymes, teratogenic effects.\n- **When to Use vs. Alternatives**: Avoid in pregnancy; monitor liver function.\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, leading to cell death.\n- **Typical Dosing Range**: 15-25 mg weekly, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression.\n- **When to Use vs. Alternatives**: Monitor CBC and LFTs regularly.\n\n#### Brentuximab vedotin\n- **Mechanism of Action**: CD30-targeted antibody-drug conjugate that delivers cytotoxic agent to CD30-expressing cells.\n- **Typical Dosing Range**: 1.8 mg/kg IV every 3 weeks.\n- **Key Side Effects/Contraindications**: Peripheral neuropathy, infusion reactions, myelosuppression.\n- **When to Use vs. Alternatives**: Monitor for signs of neuropathy.\n\n### Procedures\n\n#### Phototherapy (PUVA/UVB)\n- **What it Involves**: Use of ultraviolet light to treat skin lesions.\n- **Indications**: Localized skin lesions in early-stage cutaneous lymphoma.\n- **Key Risks/Complications**: Skin burns, increased risk of skin cancer with long-term use.\n\n#### Radiation therapy\n- **What it Involves**: Localized radiation to treat resistant skin lesions or larger tumors.\n- **Indications**: Localized disease or symptomatic relief in advanced cases.\n- **Key Risks/Complications**: Skin irritation, potential for secondary malignancies.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for cutaneous lymphoma varies widely depending on the subtype and stage at diagnosis. Early-stage mycosis fungoides has a good prognosis, while advanced stages or Sézary syndrome have a poorer prognosis.\n\n### Important Complications to Watch For\n- Secondary infections due to skin lesions\n- Lymphadenopathy and systemic involvement\n- Psychosocial impact due to visible skin lesions\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of cutaneous lymphoma, perform initial investigations, and refer patients to dermatology or oncology for further management. They should also provide education and support to patients regarding their condition.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology or oncology if there is suspicion of cutaneous lymphoma based on clinical findings or if the patient has persistent or worsening symptoms despite initial management.\n\n### Key Safety Considerations\nMonitor for signs of infection in patients with skin lesions, educate patients on sun protection, and ensure regular follow-up for monitoring treatment response and side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Cutaneous lymphoma is a type of cancer that originates in the lymphocytes (a type of white blood cell) and primarily affects the skin. It is classified as a non-Hodgkin lymphoma and can be either primary (originating in the skin) or secondary (involvement of the skin from systemic lymphoma).",
+      "epidemiology": "Cutaneous lymphomas are relatively rare, accounting for approximately 5% of all lymphomas. The most common types include mycosis fungoides and Sézary syndrome. It typically presents in adults, with a higher incidence in males and individuals over 50 years of age.",
+      "pathophysiology": "Cutaneous lymphomas arise from malignant transformation of T-cells or B-cells in the skin. In mycosis fungoides, the malignant T-cells infiltrate the skin, leading to characteristic lesions. The exact cause is often unknown, but factors such as genetic predisposition, environmental exposures, and immune system dysfunction may play a role."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itchy skin (pruritus)",
+        "Skin lesions (patches, plaques, or tumors)",
+        "Erythema",
+        "Scaling or crusting of lesions"
+      ],
+      "signs": [
+        "Erythematous patches or plaques",
+        "Nodular lesions",
+        "Lymphadenopathy (in advanced cases)",
+        "Erythroderma (in Sézary syndrome)"
+      ],
+      "atypicalPresentations": [
+        "Lesions resembling eczema or psoriasis",
+        "Rapidly growing tumors",
+        "Systemic symptoms (fever, weight loss) in advanced disease"
+      ],
+      "redFlags": [
+        "Persistent skin lesions that do not respond to standard treatments",
+        "Rapidly changing or ulcerated lesions",
+        "Associated lymphadenopathy or systemic symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Skin biopsy (to confirm diagnosis)",
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)"
+      ],
+      "secondLine": [
+        "Imaging studies (CT or PET scan) to assess for lymphadenopathy or systemic involvement",
+        "T-cell receptor gene rearrangement studies"
+      ],
+      "specialistTests": [
+        "Flow cytometry for immunophenotyping",
+        "Bone marrow biopsy (if systemic involvement is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of skin biopsy showing atypical lymphocytes in the epidermis and/or dermis, along with clinical correlation.",
+      "differentials": [
+        "Psoriasis",
+        "Eczema",
+        "Seborrheic dermatitis",
+        "Other skin malignancies (e.g., melanoma)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids for localized lesions",
+          "Phototherapy (e.g., PUVA or UVB)"
+        ],
+        "secondLine": [
+          "Systemic retinoids (e.g., acitretin)",
+          "Chemotherapy (e.g., methotrexate)"
+        ],
+        "procedures": [
+          "Skin-directed therapies (e.g., localized radiation therapy)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up and monitoring of skin lesions",
+          "Education on skin care and sun protection"
+        ],
+        "secondLine": [
+          "Systemic therapies (e.g., interferon-alpha, brentuximab vedotin)"
+        ],
+        "monitoring": [
+          "Regular skin examinations to monitor for progression or new lesions"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acitretin",
+          "mechanism": "A retinoid that modulates skin cell growth and differentiation.",
+          "dosing": "Initial: 25 mg daily; may increase to 50 mg daily based on response.",
+          "sideEffects": "Dry skin, elevated liver enzymes, teratogenic effects.",
+          "notes": "Avoid in pregnancy; monitor liver function."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, leading to cell death.",
+          "dosing": "15-25 mg weekly, adjusted based on response and tolerance.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression.",
+          "notes": "Monitor CBC and LFTs regularly."
+        },
+        {
+          "name": "Brentuximab vedotin",
+          "mechanism": "CD30-targeted antibody-drug conjugate that delivers cytotoxic agent to CD30-expressing cells.",
+          "dosing": "1.8 mg/kg IV every 3 weeks.",
+          "sideEffects": "Peripheral neuropathy, infusion reactions, myelosuppression.",
+          "notes": "Monitor for signs of neuropathy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Phototherapy (PUVA/UVB)",
+          "description": "Use of ultraviolet light to treat skin lesions.",
+          "indications": "Localized skin lesions in early-stage cutaneous lymphoma.",
+          "risks": "Skin burns, increased risk of skin cancer with long-term use."
+        },
+        {
+          "name": "Radiation therapy",
+          "description": "Localized radiation to treat resistant skin lesions or larger tumors.",
+          "indications": "Localized disease or symptomatic relief in advanced cases.",
+          "risks": "Skin irritation, potential for secondary malignancies."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for cutaneous lymphoma varies widely depending on the subtype and stage at diagnosis. Early-stage mycosis fungoides has a good prognosis, while advanced stages or Sézary syndrome have a poorer prognosis.",
+    "complications": [
+      "Secondary infections due to skin lesions",
+      "Lymphadenopathy and systemic involvement",
+      "Psychosocial impact due to visible skin lesions"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of cutaneous lymphoma, perform initial investigations, and refer patients to dermatology or oncology for further management. They should also provide education and support to patients regarding their condition.",
+    "escalation": "Refer to dermatology or oncology if there is suspicion of cutaneous lymphoma based on clinical findings or if the patient has persistent or worsening symptoms despite initial management.",
+    "keySafetyConsiderations": "Monitor for signs of infection in patients with skin lesions, educate patients on sun protection, and ensure regular follow-up for monitoring treatment response and side effects."
+  }
+}

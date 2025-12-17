@@ -1,0 +1,135 @@
+{
+  "id": "irritable_bowel_syndrome",
+  "name": "Irritable bowel syndrome",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:48:33.586248",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Irritable bowel syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIrritable Bowel Syndrome (IBS) is a functional gastrointestinal disorder characterized by a group of symptoms that typically include abdominal pain, bloating, and altered bowel habits (diarrhea, constipation, or alternating between both) without any identifiable organic cause.\n\n### Epidemiology\nIBS affects approximately 10-15% of the population, with a higher prevalence in women than men. It often presents in late adolescence to early adulthood and can significantly impact quality of life.\n\n### Essential Pathophysiology\nThe exact pathophysiology of IBS is not fully understood, but it is thought to involve a combination of gut-brain axis dysregulation, altered gut motility, visceral hypersensitivity, and changes in gut microbiota. Psychological factors such as stress and anxiety may also play a role.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain or discomfort\n- Bloating\n- Altered bowel habits (diarrhea, constipation, or alternating)\n- Mucus in stool\n- Feeling of incomplete evacuation\n\n### Key Signs\n- Abdominal tenderness on palpation\n- Borborygmi (increased bowel sounds)\n\n### Atypical Presentations\n- Symptoms worsening after meals\n- Symptoms improving with defecation\n- Presence of extra-intestinal symptoms (e.g., fatigue, fibromyalgia)\n\n### Red Flags Requiring Immediate Action\n- Unintentional weight loss\n- Severe or progressive abdominal pain\n- Rectal bleeding\n- Anemia\n- Onset of symptoms after age 50\n- Family history of colorectal cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Symptom diary (to track bowel habits and triggers)\n\n### Second-line Investigations\n- Blood tests (CBC, CRP, thyroid function tests) to rule out other conditions\n- Stool tests (to rule out infections or malabsorption)\n\n### Specialist Tests\n- Colonoscopy (if red flags are present)\n- Hydrogen breath tests (to assess for lactose intolerance or SIBO)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of IBS is primarily clinical, based on the Rome IV criteria: recurrent abdominal pain, on average, at least 1 day per week in the last 3 months associated with two or more of the following: related to defecation, associated with a change in frequency of stool, associated with a change in form (appearance) of stool.\n\n### Key Differential Diagnoses to Exclude\n- Inflammatory bowel disease (IBD)\n- Celiac disease\n- Colorectal cancer\n- Infectious gastroenteritis\n- Endometriosis (in women)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Dietary modifications (e.g., low FODMAP diet)\n- Symptomatic treatment (e.g., antispasmodics)\n\n#### Second-line Treatments\n- Probiotics\n- Laxatives or anti-diarrheal medications as needed\n\n#### Emergency Procedures\n- None specific for IBS; colonoscopy may be performed to rule out other conditions if indicated.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary changes (low FODMAP diet, increased fiber intake)\n- Psychological therapies (CBT, mindfulness)\n\n#### Second-line Treatments\n- Medications (e.g., SSRIs, tricyclic antidepressants) for pain management\n- Prescription of specific agents (e.g., lubiprostone for constipation-predominant IBS)\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom control and medication side effects.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Loperamide\n- **Mechanism of Action**: Opioid receptor agonist that slows gut motility, reducing diarrhea.\n- **Typical Dosing Range**: 2 mg after each loose stool, max 8 mg/day.\n- **Key Side Effects/Contraindications**: Constipation, abdominal discomfort, nausea.\n- **When to Use vs. Alternatives**: Use with caution in patients with constipation-predominant IBS.\n\n#### Hyoscine butylbromide (Buscopan)\n- **Mechanism of Action**: Antispasmodic that reduces gut motility and relieves cramping.\n- **Typical Dosing Range**: 10-20 mg 3-4 times daily as needed.\n- **Key Side Effects/Contraindications**: Dry mouth, dizziness, constipation.\n- **When to Use vs. Alternatives**: Avoid in patients with glaucoma.\n\n#### Rifaximin\n- **Mechanism of Action**: Antibiotic that alters gut microbiota, used for IBS-D.\n- **Typical Dosing Range**: 550 mg three times daily for 14 days.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness.\n- **When to Use vs. Alternatives**: Consider in patients with bloating and diarrhea.\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that modulates pain perception and gut motility.\n- **Typical Dosing Range**: Start at 10-25 mg at bedtime, titrate as needed.\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, weight gain.\n- **When to Use vs. Alternatives**: Useful for patients with significant abdominal pain.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nIBS is a chronic condition with variable symptoms. Many patients experience periods of remission and exacerbation. It does not lead to serious complications or increase the risk of colorectal cancer.\n\n### Important Complications to Watch For\n- Psychological distress (anxiety, depression)\n- Reduced quality of life\n- Work absenteeism\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of IBS, perform initial assessments, provide dietary and lifestyle advice, and manage common symptoms. They should also be aware of when to refer to a specialist for further evaluation.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology if there are red flags, lack of response to initial management, or if the diagnosis is uncertain after initial investigations.\n\n### Key Safety Considerations\nEnsure thorough history-taking to rule out red flags. Monitor for any signs of complications or worsening symptoms. Educate patients on the importance of follow-up and adherence to management plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Irritable Bowel Syndrome (IBS) is a functional gastrointestinal disorder characterized by a group of symptoms that typically include abdominal pain, bloating, and altered bowel habits (diarrhea, constipation, or alternating between both) without any identifiable organic cause.",
+      "epidemiology": "IBS affects approximately 10-15% of the population, with a higher prevalence in women than men. It often presents in late adolescence to early adulthood and can significantly impact quality of life.",
+      "pathophysiology": "The exact pathophysiology of IBS is not fully understood, but it is thought to involve a combination of gut-brain axis dysregulation, altered gut motility, visceral hypersensitivity, and changes in gut microbiota. Psychological factors such as stress and anxiety may also play a role."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain or discomfort",
+        "Bloating",
+        "Altered bowel habits (diarrhea, constipation, or alternating)",
+        "Mucus in stool",
+        "Feeling of incomplete evacuation"
+      ],
+      "signs": [
+        "Abdominal tenderness on palpation",
+        "Borborygmi (increased bowel sounds)"
+      ],
+      "atypicalPresentations": [
+        "Symptoms worsening after meals",
+        "Symptoms improving with defecation",
+        "Presence of extra-intestinal symptoms (e.g., fatigue, fibromyalgia)"
+      ],
+      "redFlags": [
+        "Unintentional weight loss",
+        "Severe or progressive abdominal pain",
+        "Rectal bleeding",
+        "Anemia",
+        "Onset of symptoms after age 50",
+        "Family history of colorectal cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Symptom diary (to track bowel habits and triggers)"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, CRP, thyroid function tests) to rule out other conditions",
+        "Stool tests (to rule out infections or malabsorption)"
+      ],
+      "specialistTests": [
+        "Colonoscopy (if red flags are present)",
+        "Hydrogen breath tests (to assess for lactose intolerance or SIBO)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of IBS is primarily clinical, based on the Rome IV criteria: recurrent abdominal pain, on average, at least 1 day per week in the last 3 months associated with two or more of the following: related to defecation, associated with a change in frequency of stool, associated with a change in form (appearance) of stool.",
+      "differentials": [
+        "Inflammatory bowel disease (IBD)",
+        "Celiac disease",
+        "Colorectal cancer",
+        "Infectious gastroenteritis",
+        "Endometriosis (in women)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Dietary modifications (e.g., low FODMAP diet)",
+          "Symptomatic treatment (e.g., antispasmodics)"
+        ],
+        "secondLine": [
+          "Probiotics",
+          "Laxatives or anti-diarrheal medications as needed"
+        ],
+        "procedures": [
+          "None specific for IBS; colonoscopy may be performed to rule out other conditions if indicated."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary changes (low FODMAP diet, increased fiber intake)",
+          "Psychological therapies (CBT, mindfulness)"
+        ],
+        "secondLine": [
+          "Medications (e.g., SSRIs, tricyclic antidepressants) for pain management",
+          "Prescription of specific agents (e.g., lubiprostone for constipation-predominant IBS)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom control and medication side effects."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Loperamide",
+          "mechanism": "Opioid receptor agonist that slows gut motility, reducing diarrhea.",
+          "dosing": "2 mg after each loose stool, max 8 mg/day.",
+          "sideEffects": "Constipation, abdominal discomfort, nausea.",
+          "notes": "Use with caution in patients with constipation-predominant IBS."
+        },
+        {
+          "name": "Hyoscine butylbromide (Buscopan)",
+          "mechanism": "Antispasmodic that reduces gut motility and relieves cramping.",
+          "dosing": "10-20 mg 3-4 times daily as needed.",
+          "sideEffects": "Dry mouth, dizziness, constipation.",
+          "notes": "Avoid in patients with glaucoma."
+        },
+        {
+          "name": "Rifaximin",
+          "mechanism": "Antibiotic that alters gut microbiota, used for IBS-D.",
+          "dosing": "550 mg three times daily for 14 days.",
+          "sideEffects": "Nausea, headache, dizziness.",
+          "notes": "Consider in patients with bloating and diarrhea."
+        },
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that modulates pain perception and gut motility.",
+          "dosing": "Start at 10-25 mg at bedtime, titrate as needed.",
+          "sideEffects": "Sedation, dry mouth, weight gain.",
+          "notes": "Useful for patients with significant abdominal pain."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "IBS is a chronic condition with variable symptoms. Many patients experience periods of remission and exacerbation. It does not lead to serious complications or increase the risk of colorectal cancer.",
+    "complications": [
+      "Psychological distress (anxiety, depression)",
+      "Reduced quality of life",
+      "Work absenteeism"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of IBS, perform initial assessments, provide dietary and lifestyle advice, and manage common symptoms. They should also be aware of when to refer to a specialist for further evaluation.",
+    "escalation": "Refer to gastroenterology if there are red flags, lack of response to initial management, or if the diagnosis is uncertain after initial investigations.",
+    "keySafetyConsiderations": "Ensure thorough history-taking to rule out red flags. Monitor for any signs of complications or worsening symptoms. Educate patients on the importance of follow-up and adherence to management plans."
+  }
+}

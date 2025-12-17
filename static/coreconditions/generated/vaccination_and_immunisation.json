@@ -1,0 +1,120 @@
+{
+  "id": "vaccination_and_immunisation",
+  "name": "Vaccination and immunisation",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:05:05.915438",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vaccination and immunisation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVaccination is the process of administering a vaccine to stimulate the body's immune response against specific pathogens, thereby providing immunity against infectious diseases. Immunisation refers to the broader process of becoming immune, which can occur through vaccination or natural infection.\n\n### Epidemiology\nVaccination programs have significantly reduced the incidence of vaccine-preventable diseases globally. For example, the World Health Organization (WHO) reports that vaccination has led to a 99% reduction in diseases like smallpox and a significant decline in measles, polio, and diphtheria cases.\n\n### Essential Pathophysiology\nVaccines work by introducing antigens (inactivated or weakened pathogens, or pieces of the pathogen) into the body, prompting the immune system to produce antibodies. This process creates immunological memory, allowing the body to respond more effectively upon future exposure to the actual pathogen.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Fatigue\n- Mild rash\n- Localised swelling at injection site\n\n### Key Signs\n- Erythema at injection site\n- Lymphadenopathy\n- Mild fever\n\n### Atypical Presentations\n- Severe allergic reactions (anaphylaxis)\n- Febrile seizures in children\n\n### Red Flags Requiring Immediate Action\n- High fever (>39°C)\n- Persistent vomiting\n- Severe allergic reaction (e.g., difficulty breathing, swelling of the face)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Patient history (vaccination status, recent infections)\n- Physical examination\n\n### Second-line Investigations\n- Blood tests (e.g., serology for specific antibodies)\n- Skin tests (e.g., tuberculin skin test for TB)\n\n### Specialist Tests\n- Genetic testing for immunodeficiencies\n- Advanced serological assays for specific pathogens\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of vaccination status is based on patient history, vaccination records, and serological testing for immunity.\n\n### Key Differential Diagnoses to Exclude\n- Vaccine-related adverse events\n- Natural infection with the pathogen\n- Immunodeficiency disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, antipyretics)\n- Observation for allergic reactions\n\n#### Second-line Treatments\n- Corticosteroids for severe allergic reactions\n\n#### Emergency Procedures\n- Administration of epinephrine for anaphylaxis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular vaccination updates as per national guidelines\n- Patient education on vaccine benefits and risks\n\n#### Second-line Treatments\n- Referral to immunology for patients with recurrent infections or suspected immunodeficiency\n\n#### Monitoring Requirements\n- Follow-up on vaccination status and response to vaccines\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Epinephrine\n- **Mechanism of Action**: Alpha and beta-adrenergic agonist that counteracts anaphylaxis\n- **Typical Dosing Range**: 0.01 mg/kg (max 0.3 mg) intramuscularly for anaphylaxis\n- **Key Side Effects/Contraindications**: Tachycardia, hypertension, anxiety\n- **When to Use vs. Alternatives**: Administer immediately in case of anaphylaxis.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed (max 4g/day)\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Used for fever and discomfort post-vaccination.\n\n### Procedures\n\n#### Vaccine administration\n- **What it Involves**: Intramuscular or subcutaneous injection of vaccines\n- **Indications**: Routine immunization, outbreak response\n- **Key Risks/Complications**: Local reactions, allergic reactions, fainting\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost vaccine-preventable diseases have a good prognosis when vaccination is administered appropriately. Complications from vaccines are rare and usually mild.\n\n### Important Complications to Watch For\n- Allergic reactions (anaphylaxis)\n- Local reactions (pain, swelling)\n- Febrile seizures in children\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should ensure accurate vaccination history, administer vaccines as per guidelines, educate patients about the importance of vaccination, and monitor for adverse reactions post-vaccination.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if there are concerns about severe allergic reactions or if the patient has a complex vaccination history requiring specialist input.\n\n### Key Safety Considerations\nEnsure informed consent is obtained prior to vaccination, monitor patients for at least 15 minutes post-vaccination for any immediate adverse reactions, and maintain up-to-date knowledge of vaccination schedules and contraindications.\n",
+  "content": {
+    "overview": {
+      "definition": "Vaccination is the process of administering a vaccine to stimulate the body's immune response against specific pathogens, thereby providing immunity against infectious diseases. Immunisation refers to the broader process of becoming immune, which can occur through vaccination or natural infection.",
+      "epidemiology": "Vaccination programs have significantly reduced the incidence of vaccine-preventable diseases globally. For example, the World Health Organization (WHO) reports that vaccination has led to a 99% reduction in diseases like smallpox and a significant decline in measles, polio, and diphtheria cases.",
+      "pathophysiology": "Vaccines work by introducing antigens (inactivated or weakened pathogens, or pieces of the pathogen) into the body, prompting the immune system to produce antibodies. This process creates immunological memory, allowing the body to respond more effectively upon future exposure to the actual pathogen."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Fatigue",
+        "Mild rash",
+        "Localised swelling at injection site"
+      ],
+      "signs": [
+        "Erythema at injection site",
+        "Lymphadenopathy",
+        "Mild fever"
+      ],
+      "atypicalPresentations": [
+        "Severe allergic reactions (anaphylaxis)",
+        "Febrile seizures in children"
+      ],
+      "redFlags": [
+        "High fever (>39°C)",
+        "Persistent vomiting",
+        "Severe allergic reaction (e.g., difficulty breathing, swelling of the face)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Patient history (vaccination status, recent infections)",
+        "Physical examination"
+      ],
+      "secondLine": [
+        "Blood tests (e.g., serology for specific antibodies)",
+        "Skin tests (e.g., tuberculin skin test for TB)"
+      ],
+      "specialistTests": [
+        "Genetic testing for immunodeficiencies",
+        "Advanced serological assays for specific pathogens"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of vaccination status is based on patient history, vaccination records, and serological testing for immunity.",
+      "differentials": [
+        "Vaccine-related adverse events",
+        "Natural infection with the pathogen",
+        "Immunodeficiency disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, antipyretics)",
+          "Observation for allergic reactions"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe allergic reactions"
+        ],
+        "procedures": [
+          "Administration of epinephrine for anaphylaxis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular vaccination updates as per national guidelines",
+          "Patient education on vaccine benefits and risks"
+        ],
+        "secondLine": [
+          "Referral to immunology for patients with recurrent infections or suspected immunodeficiency"
+        ],
+        "monitoring": [
+          "Follow-up on vaccination status and response to vaccines"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Epinephrine",
+          "mechanism": "Alpha and beta-adrenergic agonist that counteracts anaphylaxis",
+          "dosing": "0.01 mg/kg (max 0.3 mg) intramuscularly for anaphylaxis",
+          "sideEffects": "Tachycardia, hypertension, anxiety",
+          "notes": "Administer immediately in case of anaphylaxis."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours as needed (max 4g/day)",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Used for fever and discomfort post-vaccination."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vaccine administration",
+          "description": "Intramuscular or subcutaneous injection of vaccines",
+          "indications": "Routine immunization, outbreak response",
+          "risks": "Local reactions, allergic reactions, fainting"
+        }
+      ]
+    },
+    "prognosis": "Most vaccine-preventable diseases have a good prognosis when vaccination is administered appropriately. Complications from vaccines are rare and usually mild.",
+    "complications": [
+      "Allergic reactions (anaphylaxis)",
+      "Local reactions (pain, swelling)",
+      "Febrile seizures in children"
+    ],
+    "foundationDoctorRole": "Foundation doctors should ensure accurate vaccination history, administer vaccines as per guidelines, educate patients about the importance of vaccination, and monitor for adverse reactions post-vaccination.",
+    "escalation": "Refer to a senior clinician if there are concerns about severe allergic reactions or if the patient has a complex vaccination history requiring specialist input.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained prior to vaccination, monitor patients for at least 15 minutes post-vaccination for any immediate adverse reactions, and maintain up-to-date knowledge of vaccination schedules and contraindications."
+  }
+}

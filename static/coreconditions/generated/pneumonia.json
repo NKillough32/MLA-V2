@@ -1,0 +1,158 @@
+{
+  "id": "pneumonia",
+  "name": "Pneumonia",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:23:17.967406",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pneumonia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPneumonia is an inflammatory condition of the lung primarily affecting the alveoli, characterized by the accumulation of fluid, pus, and cellular debris, leading to impaired gas exchange.\n\n### Epidemiology\nPneumonia is a common respiratory infection, with an estimated incidence of 5-11 cases per 1,000 adults annually. It is a leading cause of morbidity and mortality worldwide, particularly in children, the elderly, and immunocompromised individuals.\n\n### Essential Pathophysiology\nPneumonia can be caused by various pathogens, including bacteria, viruses, and fungi. The infection leads to inflammation of the alveoli, resulting in consolidation, impaired gas exchange, and potential respiratory failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cough (productive or non-productive)\n- Fever\n- Chills\n- Dyspnea (shortness of breath)\n- Pleuritic chest pain\n- Fatigue\n- Sputum production (may be purulent)\n\n### Key Signs\n- Tachypnea (increased respiratory rate)\n- Tachycardia (increased heart rate)\n- Decreased oxygen saturation\n- Dullness to percussion over affected lung areas\n- Increased tactile fremitus\n- Bronchial breath sounds over consolidated areas\n- Crackles (rales) on auscultation\n\n### Atypical Presentations\n- Confusion or altered mental status (especially in elderly patients)\n- Nausea and vomiting\n- Abdominal pain\n- Myalgias\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Hypoxemia (SpO2 < 90%)\n- Sepsis (e.g., hypotension, altered mental status)\n- Pleural effusion or empyema\n- Immunocompromised status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (CXR) to assess for consolidation or effusion\n- Complete blood count (CBC) to check for leukocytosis\n- Sputum culture and sensitivity (if productive cough)\n- Blood cultures (if severe or hospitalized)\n\n### Second-line Investigations\n- CT chest (if complications suspected or unclear diagnosis)\n- Urinary antigen tests (for specific pathogens like Streptococcus pneumoniae or Legionella)\n- PCR testing for viral pathogens\n\n### Specialist Tests\n- Bronchoscopy (if suspected aspiration pneumonia or obstructive lesions)\n- Pleural fluid analysis (if effusion present)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of pneumonia is typically based on clinical presentation, physical examination findings, and radiological evidence of lung consolidation or infiltrates on chest imaging.\n\n### Key Differential Diagnoses to Exclude\n- Acute bronchitis\n- Chronic obstructive pulmonary disease (COPD) exacerbation\n- Pulmonary embolism\n- Lung cancer\n- Tuberculosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (if hypoxemic)\n- Intravenous fluids (if dehydrated)\n- Antibiotics (empirical therapy based on local guidelines)\n\n#### Second-line Treatments\n- Consideration of hospitalization for severe cases or those with comorbidities\n- Switch to oral antibiotics if clinically improving\n\n#### Emergency Procedures\n- Thoracentesis (for pleural effusion)\n- Chest tube insertion (for empyema)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Smoking cessation (if applicable)\n- Vaccination (pneumococcal and influenza vaccines)\n- Pulmonary rehabilitation (for chronic lung disease)\n\n#### Second-line Treatments\n- Long-term antibiotics (for recurrent pneumonia in specific cases)\n- Management of underlying conditions (e.g., COPD, asthma)\n\n#### Monitoring Requirements\n- Regular follow-up for recurrent symptoms\n- Assessment of lung function (spirometry)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis, leading to cell lysis.\n- **Typical Dosing Range**: 500 mg TID or 875 mg BID for 5-7 days.\n- **Key Side Effects/Contraindications**: Diarrhea, rash, allergic reactions.\n- **When to Use vs. Alternatives**: First-line for community-acquired pneumonia (CAP) in otherwise healthy adults.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis, effective against a broader range of bacteria.\n- **Typical Dosing Range**: 1-2 g IV daily for 5-7 days.\n- **Key Side Effects/Contraindications**: Diarrhea, allergic reactions, potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Used for severe pneumonia requiring hospitalization.\n\n#### Azithromycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit.\n- **Typical Dosing Range**: 500 mg on day 1, then 250 mg daily for 4 days.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, QT prolongation.\n- **When to Use vs. Alternatives**: Useful for atypical pneumonia (e.g., Mycoplasma, Chlamydia).\n\n### Procedures\n\n#### Thoracentesis\n- **What it Involves**: A procedure to remove fluid from the pleural space using a needle.\n- **Indications**: Suspected pleural effusion, diagnostic or therapeutic.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n#### Chest tube insertion\n- **What it Involves**: Placement of a tube in the pleural space to drain fluid or air.\n- **Indications**: Empyema, large pleural effusion, tension pneumothorax.\n- **Key Risks/Complications**: Infection, injury to surrounding structures, pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for pneumonia varies based on the causative organism, patient age, and comorbidities. Most patients recover fully with appropriate treatment, but complications can arise, especially in high-risk populations.\n\n### Important Complications to Watch For\n- Pleural effusion\n- Empyema\n- Lung abscess\n- Respiratory failure\n- Sepsis\n- Acute respiratory distress syndrome (ARDS)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors are responsible for initial assessment, management, and stabilization of patients with pneumonia. They should ensure appropriate investigations are ordered and initiate empirical antibiotic therapy based on local guidelines.\n\n### When to Escalate to Senior/Specialist\nPatients with severe pneumonia or those not responding to initial treatment should be escalated to senior medical staff or a respiratory specialist for further management.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially oxygen saturation and respiratory rate. Be vigilant for signs of sepsis or respiratory failure, and ensure timely intervention.\n",
+  "content": {
+    "overview": {
+      "definition": "Pneumonia is an inflammatory condition of the lung primarily affecting the alveoli, characterized by the accumulation of fluid, pus, and cellular debris, leading to impaired gas exchange.",
+      "epidemiology": "Pneumonia is a common respiratory infection, with an estimated incidence of 5-11 cases per 1,000 adults annually. It is a leading cause of morbidity and mortality worldwide, particularly in children, the elderly, and immunocompromised individuals.",
+      "pathophysiology": "Pneumonia can be caused by various pathogens, including bacteria, viruses, and fungi. The infection leads to inflammation of the alveoli, resulting in consolidation, impaired gas exchange, and potential respiratory failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cough (productive or non-productive)",
+        "Fever",
+        "Chills",
+        "Dyspnea (shortness of breath)",
+        "Pleuritic chest pain",
+        "Fatigue",
+        "Sputum production (may be purulent)"
+      ],
+      "signs": [
+        "Tachypnea (increased respiratory rate)",
+        "Tachycardia (increased heart rate)",
+        "Decreased oxygen saturation",
+        "Dullness to percussion over affected lung areas",
+        "Increased tactile fremitus",
+        "Bronchial breath sounds over consolidated areas",
+        "Crackles (rales) on auscultation"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status (especially in elderly patients)",
+        "Nausea and vomiting",
+        "Abdominal pain",
+        "Myalgias"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Hypoxemia (SpO2 < 90%)",
+        "Sepsis (e.g., hypotension, altered mental status)",
+        "Pleural effusion or empyema",
+        "Immunocompromised status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (CXR) to assess for consolidation or effusion",
+        "Complete blood count (CBC) to check for leukocytosis",
+        "Sputum culture and sensitivity (if productive cough)",
+        "Blood cultures (if severe or hospitalized)"
+      ],
+      "secondLine": [
+        "CT chest (if complications suspected or unclear diagnosis)",
+        "Urinary antigen tests (for specific pathogens like Streptococcus pneumoniae or Legionella)",
+        "PCR testing for viral pathogens"
+      ],
+      "specialistTests": [
+        "Bronchoscopy (if suspected aspiration pneumonia or obstructive lesions)",
+        "Pleural fluid analysis (if effusion present)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of pneumonia is typically based on clinical presentation, physical examination findings, and radiological evidence of lung consolidation or infiltrates on chest imaging.",
+      "differentials": [
+        "Acute bronchitis",
+        "Chronic obstructive pulmonary disease (COPD) exacerbation",
+        "Pulmonary embolism",
+        "Lung cancer",
+        "Tuberculosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (if hypoxemic)",
+          "Intravenous fluids (if dehydrated)",
+          "Antibiotics (empirical therapy based on local guidelines)"
+        ],
+        "secondLine": [
+          "Consideration of hospitalization for severe cases or those with comorbidities",
+          "Switch to oral antibiotics if clinically improving"
+        ],
+        "procedures": [
+          "Thoracentesis (for pleural effusion)",
+          "Chest tube insertion (for empyema)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Smoking cessation (if applicable)",
+          "Vaccination (pneumococcal and influenza vaccines)",
+          "Pulmonary rehabilitation (for chronic lung disease)"
+        ],
+        "secondLine": [
+          "Long-term antibiotics (for recurrent pneumonia in specific cases)",
+          "Management of underlying conditions (e.g., COPD, asthma)"
+        ],
+        "monitoring": [
+          "Regular follow-up for recurrent symptoms",
+          "Assessment of lung function (spirometry)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis, leading to cell lysis.",
+          "dosing": "500 mg TID or 875 mg BID for 5-7 days.",
+          "sideEffects": "Diarrhea, rash, allergic reactions.",
+          "notes": "First-line for community-acquired pneumonia (CAP) in otherwise healthy adults."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Inhibits bacterial cell wall synthesis, effective against a broader range of bacteria.",
+          "dosing": "1-2 g IV daily for 5-7 days.",
+          "sideEffects": "Diarrhea, allergic reactions, potential for Clostridium difficile infection.",
+          "notes": "Used for severe pneumonia requiring hospitalization."
+        },
+        {
+          "name": "Azithromycin",
+          "mechanism": "Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit.",
+          "dosing": "500 mg on day 1, then 250 mg daily for 4 days.",
+          "sideEffects": "Gastrointestinal upset, QT prolongation.",
+          "notes": "Useful for atypical pneumonia (e.g., Mycoplasma, Chlamydia)."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thoracentesis",
+          "description": "A procedure to remove fluid from the pleural space using a needle.",
+          "indications": "Suspected pleural effusion, diagnostic or therapeutic.",
+          "risks": "Pneumothorax, bleeding, infection."
+        },
+        {
+          "name": "Chest tube insertion",
+          "description": "Placement of a tube in the pleural space to drain fluid or air.",
+          "indications": "Empyema, large pleural effusion, tension pneumothorax.",
+          "risks": "Infection, injury to surrounding structures, pain."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for pneumonia varies based on the causative organism, patient age, and comorbidities. Most patients recover fully with appropriate treatment, but complications can arise, especially in high-risk populations.",
+    "complications": [
+      "Pleural effusion",
+      "Empyema",
+      "Lung abscess",
+      "Respiratory failure",
+      "Sepsis",
+      "Acute respiratory distress syndrome (ARDS)"
+    ],
+    "foundationDoctorRole": "Foundation doctors are responsible for initial assessment, management, and stabilization of patients with pneumonia. They should ensure appropriate investigations are ordered and initiate empirical antibiotic therapy based on local guidelines.",
+    "escalation": "Patients with severe pneumonia or those not responding to initial treatment should be escalated to senior medical staff or a respiratory specialist for further management.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially oxygen saturation and respiratory rate. Be vigilant for signs of sepsis or respiratory failure, and ensure timely intervention."
+  }
+}

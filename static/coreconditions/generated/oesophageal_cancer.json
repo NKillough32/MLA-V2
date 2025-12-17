@@ -1,0 +1,147 @@
+{
+  "id": "oesophageal_cancer",
+  "name": "Oesophageal cancer",
+  "domains": [
+    "Gastrointestinal",
+    "Oncology",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:40:12.255925",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Oesophageal cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOesophageal cancer is a malignant neoplasm of the oesophagus, which can arise from the squamous cells (squamous cell carcinoma) or glandular cells (adenocarcinoma) of the oesophageal lining.\n\n### Epidemiology\nOesophageal cancer is the sixth most common cause of cancer-related deaths worldwide. It is more prevalent in men than women, with a higher incidence in regions such as East Asia and parts of Africa. Risk factors include smoking, alcohol consumption, obesity, and gastroesophageal reflux disease (GERD).\n\n### Essential Pathophysiology\nThe pathophysiology involves genetic mutations leading to uncontrolled cell growth in the oesophagus. Adenocarcinoma often arises from Barrett's oesophagus, a condition where the normal squamous epithelium is replaced by columnar epithelium due to chronic acid exposure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dysphagia (difficulty swallowing)\n- Odynophagia (painful swallowing)\n- Unintentional weight loss\n- Chest pain or discomfort\n- Chronic cough\n- Hoarseness\n- Regurgitation of food\n\n### Key Signs\n- Cachexia (wasting syndrome)\n- Lymphadenopathy (especially supraclavicular or cervical)\n- Signs of anemia (pallor, fatigue)\n- Abdominal mass (in advanced cases)\n\n### Atypical Presentations\n- Aspiration pneumonia due to swallowing difficulties\n- Gastrointestinal bleeding (hematemesis or melena)\n\n### Red Flags Requiring Immediate Action\n- Persistent dysphagia in patients over 50\n- Unexplained weight loss\n- New onset of dysphagia\n- Symptoms of obstruction (e.g., vomiting, inability to swallow solids)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Upper gastrointestinal endoscopy (OGD) with biopsy\n- Barium swallow study\n\n### Second-line Investigations\n- CT scan of the chest and abdomen\n- Endoscopic ultrasound (EUS)\n\n### Specialist Tests\n- PET scan for staging\n- Molecular profiling of the tumor\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of biopsy specimens obtained during endoscopy. Staging is determined by the extent of local invasion and presence of metastases.\n\n### Key Differential Diagnoses to Exclude\n- Gastroesophageal reflux disease (GERD)\n- Peptic stricture\n- Achalasia\n- Esophageal varices\n- Benign esophageal tumors\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Nutritional support (enteral feeding if necessary)\n- Pain management\n\n#### Second-line Treatments\n- Chemotherapy (e.g., cisplatin and fluorouracil)\n- Radiotherapy for palliative care\n\n#### Emergency Procedures\n- Stenting for obstruction\n- Palliative surgery (e.g., bypass surgery)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection (esophagectomy) for localized disease\n- Chemoradiotherapy for non-resectable tumors\n\n#### Second-line Treatments\n- Targeted therapy (e.g., trastuzumab for HER2-positive tumors)\n- Immunotherapy (e.g., pembrolizumab for MSI-high tumors)\n\n#### Monitoring Requirements\n- Regular follow-up with endoscopy for recurrence\n- Nutritional assessment and support\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 75 mg/m² IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Hydration is essential to prevent nephrotoxicity.\n\n#### Fluorouracil (5-FU)\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 400 mg/m² IV bolus followed by 600 mg/m² continuous infusion over 22 hours\n- **Key Side Effects/Contraindications**: Mucositis, diarrhea, myelosuppression\n- **When to Use vs. Alternatives**: Monitor for signs of mucositis.\n\n#### Trastuzumab\n- **Mechanism of Action**: Monoclonal antibody targeting HER2 receptor\n- **Typical Dosing Range**: 8 mg/kg loading dose, then 6 mg/kg every 3 weeks\n- **Key Side Effects/Contraindications**: Cardiotoxicity, infusion reactions\n- **When to Use vs. Alternatives**: Monitor cardiac function before and during treatment.\n\n### Procedures\n\n#### Esophagectomy\n- **What it Involves**: Surgical removal of part or all of the esophagus, often with reconstruction using stomach or intestine.\n- **Indications**: Resectable esophageal cancer without distant metastasis.\n- **Key Risks/Complications**: Anastomotic leak, infection, respiratory complications, dysphagia post-surgery.\n\n#### Endoscopic stenting\n- **What it Involves**: Placement of a stent to relieve obstruction in the esophagus.\n- **Indications**: Palliative treatment for obstructive esophageal cancer.\n- **Key Risks/Complications**: Stent migration, perforation, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for oesophageal cancer is generally poor, with a 5-year survival rate of approximately 20% for all stages. Early-stage detection significantly improves outcomes.\n\n### Important Complications to Watch For\n- Dysphagia leading to malnutrition\n- Aspiration pneumonia\n- Esophageal perforation\n- Metastatic disease (liver, lung, bone)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of oesophageal cancer, conducting initial assessments, and facilitating timely referrals for investigations and specialist care. They should also provide supportive care and manage complications.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if a patient presents with red flags, significant weight loss, or if there are concerns about the patient's nutritional status or pain management.\n\n### Key Safety Considerations\nEnsure proper hydration and nutritional support for patients undergoing chemotherapy. Monitor for side effects of medications and complications from procedures. Maintain clear communication with the multidisciplinary team regarding patient management.\n",
+  "content": {
+    "overview": {
+      "definition": "Oesophageal cancer is a malignant neoplasm of the oesophagus, which can arise from the squamous cells (squamous cell carcinoma) or glandular cells (adenocarcinoma) of the oesophageal lining.",
+      "epidemiology": "Oesophageal cancer is the sixth most common cause of cancer-related deaths worldwide. It is more prevalent in men than women, with a higher incidence in regions such as East Asia and parts of Africa. Risk factors include smoking, alcohol consumption, obesity, and gastroesophageal reflux disease (GERD).",
+      "pathophysiology": "The pathophysiology involves genetic mutations leading to uncontrolled cell growth in the oesophagus. Adenocarcinoma often arises from Barrett's oesophagus, a condition where the normal squamous epithelium is replaced by columnar epithelium due to chronic acid exposure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dysphagia (difficulty swallowing)",
+        "Odynophagia (painful swallowing)",
+        "Unintentional weight loss",
+        "Chest pain or discomfort",
+        "Chronic cough",
+        "Hoarseness",
+        "Regurgitation of food"
+      ],
+      "signs": [
+        "Cachexia (wasting syndrome)",
+        "Lymphadenopathy (especially supraclavicular or cervical)",
+        "Signs of anemia (pallor, fatigue)",
+        "Abdominal mass (in advanced cases)"
+      ],
+      "atypicalPresentations": [
+        "Aspiration pneumonia due to swallowing difficulties",
+        "Gastrointestinal bleeding (hematemesis or melena)"
+      ],
+      "redFlags": [
+        "Persistent dysphagia in patients over 50",
+        "Unexplained weight loss",
+        "New onset of dysphagia",
+        "Symptoms of obstruction (e.g., vomiting, inability to swallow solids)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Upper gastrointestinal endoscopy (OGD) with biopsy",
+        "Barium swallow study"
+      ],
+      "secondLine": [
+        "CT scan of the chest and abdomen",
+        "Endoscopic ultrasound (EUS)"
+      ],
+      "specialistTests": [
+        "PET scan for staging",
+        "Molecular profiling of the tumor"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of biopsy specimens obtained during endoscopy. Staging is determined by the extent of local invasion and presence of metastases.",
+      "differentials": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Peptic stricture",
+        "Achalasia",
+        "Esophageal varices",
+        "Benign esophageal tumors"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Nutritional support (enteral feeding if necessary)",
+          "Pain management"
+        ],
+        "secondLine": [
+          "Chemotherapy (e.g., cisplatin and fluorouracil)",
+          "Radiotherapy for palliative care"
+        ],
+        "procedures": [
+          "Stenting for obstruction",
+          "Palliative surgery (e.g., bypass surgery)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection (esophagectomy) for localized disease",
+          "Chemoradiotherapy for non-resectable tumors"
+        ],
+        "secondLine": [
+          "Targeted therapy (e.g., trastuzumab for HER2-positive tumors)",
+          "Immunotherapy (e.g., pembrolizumab for MSI-high tumors)"
+        ],
+        "monitoring": [
+          "Regular follow-up with endoscopy for recurrence",
+          "Nutritional assessment and support"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "75 mg/m² IV every 3 weeks",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, myelosuppression",
+          "notes": "Hydration is essential to prevent nephrotoxicity."
+        },
+        {
+          "name": "Fluorouracil (5-FU)",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "400 mg/m² IV bolus followed by 600 mg/m² continuous infusion over 22 hours",
+          "sideEffects": "Mucositis, diarrhea, myelosuppression",
+          "notes": "Monitor for signs of mucositis."
+        },
+        {
+          "name": "Trastuzumab",
+          "mechanism": "Monoclonal antibody targeting HER2 receptor",
+          "dosing": "8 mg/kg loading dose, then 6 mg/kg every 3 weeks",
+          "sideEffects": "Cardiotoxicity, infusion reactions",
+          "notes": "Monitor cardiac function before and during treatment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Esophagectomy",
+          "description": "Surgical removal of part or all of the esophagus, often with reconstruction using stomach or intestine.",
+          "indications": "Resectable esophageal cancer without distant metastasis.",
+          "risks": "Anastomotic leak, infection, respiratory complications, dysphagia post-surgery."
+        },
+        {
+          "name": "Endoscopic stenting",
+          "description": "Placement of a stent to relieve obstruction in the esophagus.",
+          "indications": "Palliative treatment for obstructive esophageal cancer.",
+          "risks": "Stent migration, perforation, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for oesophageal cancer is generally poor, with a 5-year survival rate of approximately 20% for all stages. Early-stage detection significantly improves outcomes.",
+    "complications": [
+      "Dysphagia leading to malnutrition",
+      "Aspiration pneumonia",
+      "Esophageal perforation",
+      "Metastatic disease (liver, lung, bone)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of oesophageal cancer, conducting initial assessments, and facilitating timely referrals for investigations and specialist care. They should also provide supportive care and manage complications.",
+    "escalation": "Escalate care to a senior clinician if a patient presents with red flags, significant weight loss, or if there are concerns about the patient's nutritional status or pain management.",
+    "keySafetyConsiderations": "Ensure proper hydration and nutritional support for patients undergoing chemotherapy. Monitor for side effects of medications and complications from procedures. Maintain clear communication with the multidisciplinary team regarding patient management."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "faecal_incontinence",
+  "name": "Faecal incontinence",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:41:26.579212",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Faecal incontinence: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFaecal incontinence is the involuntary loss of solid or liquid stool, leading to social or hygienic problems. It can range from occasional leakage of stool to complete loss of bowel control.\n\n### Epidemiology\nFaecal incontinence affects approximately 2-15% of the general population, with higher prevalence in the elderly, particularly those in long-term care facilities. It is more common in women than men, often due to childbirth-related injuries.\n\n### Essential Pathophysiology\nThe condition can arise from a variety of causes including damage to the anal sphincter, neurological disorders (e.g., multiple sclerosis, spinal cord injury), rectal prolapse, inflammatory bowel disease, and cognitive impairment. The normal function of the anal sphincter and rectal sensation is disrupted, leading to an inability to control bowel movements.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Involuntary passage of stool\n- Urgency to defecate\n- Soiling of underwear\n- Difficulty in controlling bowel movements\n\n### Key Signs\n- Skin irritation or dermatitis around the anal area\n- Fecal impaction\n- Signs of dehydration or malnutrition in severe cases\n\n### Atypical Presentations\n- Fecal incontinence without prior constipation\n- Incontinence occurring only at night (nocturnal incontinence)\n\n### Red Flags Requiring Immediate Action\n- Recent onset of incontinence in an elderly patient\n- Associated weight loss\n- Change in bowel habits\n- Blood in stool\n- Neurological symptoms (e.g., weakness, sensory loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Digital rectal examination\n- Bristol stool chart assessment\n\n### Second-line Investigations\n- Anorectal manometry\n- Endoscopy (to rule out structural abnormalities)\n- MRI of the pelvis (if neurological cause suspected)\n\n### Specialist Tests\n- Defecography (to assess rectal function)\n- Electromyography (to evaluate sphincter function)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination, and exclusion of other causes. The Rome IV criteria can be used for functional bowel disorders.\n\n### Key Differential Diagnoses to Exclude\n- Constipation\n- Irritable bowel syndrome\n- Rectal prolapse\n- Neurological disorders (e.g., stroke, dementia)\n- Inflammatory bowel disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Bowel regimen (e.g., stool softeners, laxatives)\n- Dietary modifications (increase fiber intake)\n- Pelvic floor exercises\n\n#### Second-line Treatments\n- Antidiarrheal medications (e.g., loperamide)\n- Biofeedback therapy\n\n#### Emergency Procedures\n- Surgical options (e.g., sphincter repair, colostomy) if conservative measures fail\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued bowel regimen and dietary modifications\n- Pelvic floor rehabilitation\n\n#### Second-line Treatments\n- Medications (e.g., bulking agents, antidiarrheals)\n- Referral to gastroenterology or colorectal surgery for further management\n\n#### Monitoring Requirements\n- Regular follow-up to assess bowel habits and adjust management as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Loperamide\n- **Mechanism of Action**: Opioid receptor agonist that slows gut motility and increases transit time.\n- **Typical Dosing Range**: Initial: 4 mg, then 2 mg after each loose stool (max 16 mg/day).\n- **Key Side Effects/Contraindications**: Constipation, abdominal pain, nausea.\n- **When to Use vs. Alternatives**: Use with caution in patients with infectious diarrhea.\n\n#### Psyllium husk\n- **Mechanism of Action**: Bulk-forming laxative that absorbs water and increases stool bulk.\n- **Typical Dosing Range**: Start with 1 tsp in 8 oz of water, increase as tolerated.\n- **Key Side Effects/Contraindications**: Bloating, gas, abdominal cramping.\n- **When to Use vs. Alternatives**: Ensure adequate fluid intake to prevent obstruction.\n\n### Procedures\n\n#### Sphincter repair\n- **What it Involves**: Surgical procedure to repair damaged anal sphincter muscles.\n- **Indications**: Severe faecal incontinence due to sphincter injury, particularly after childbirth.\n- **Key Risks/Complications**: Infection, bleeding, recurrence of incontinence.\n\n#### Colostomy\n- **What it Involves**: Surgical creation of an opening in the abdominal wall for stool diversion.\n- **Indications**: Severe, refractory faecal incontinence where other treatments have failed.\n- **Key Risks/Complications**: Stoma complications, psychological impact, need for stoma care.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies depending on the underlying cause. Many patients can achieve significant improvement with appropriate management, while others may have persistent symptoms.\n\n### Important Complications to Watch For\n- Skin irritation and infection\n- Social isolation and depression\n- Nutritional deficiencies due to dietary restrictions\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on bowel management, and refer to specialists as needed. They should also monitor for complications and ensure appropriate follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology or colorectal surgery if conservative management fails, or if there are red flag symptoms indicating a more serious underlying condition.\n\n### Key Safety Considerations\nEnsure thorough assessment to rule out serious underlying conditions. Monitor for dehydration and nutritional deficiencies, especially in elderly patients. Provide education on bowel management strategies and the importance of follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Faecal incontinence is the involuntary loss of solid or liquid stool, leading to social or hygienic problems. It can range from occasional leakage of stool to complete loss of bowel control.",
+      "epidemiology": "Faecal incontinence affects approximately 2-15% of the general population, with higher prevalence in the elderly, particularly those in long-term care facilities. It is more common in women than men, often due to childbirth-related injuries.",
+      "pathophysiology": "The condition can arise from a variety of causes including damage to the anal sphincter, neurological disorders (e.g., multiple sclerosis, spinal cord injury), rectal prolapse, inflammatory bowel disease, and cognitive impairment. The normal function of the anal sphincter and rectal sensation is disrupted, leading to an inability to control bowel movements."
+    },
+    "recognition": {
+      "symptoms": [
+        "Involuntary passage of stool",
+        "Urgency to defecate",
+        "Soiling of underwear",
+        "Difficulty in controlling bowel movements"
+      ],
+      "signs": [
+        "Skin irritation or dermatitis around the anal area",
+        "Fecal impaction",
+        "Signs of dehydration or malnutrition in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Fecal incontinence without prior constipation",
+        "Incontinence occurring only at night (nocturnal incontinence)"
+      ],
+      "redFlags": [
+        "Recent onset of incontinence in an elderly patient",
+        "Associated weight loss",
+        "Change in bowel habits",
+        "Blood in stool",
+        "Neurological symptoms (e.g., weakness, sensory loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Digital rectal examination",
+        "Bristol stool chart assessment"
+      ],
+      "secondLine": [
+        "Anorectal manometry",
+        "Endoscopy (to rule out structural abnormalities)",
+        "MRI of the pelvis (if neurological cause suspected)"
+      ],
+      "specialistTests": [
+        "Defecography (to assess rectal function)",
+        "Electromyography (to evaluate sphincter function)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination, and exclusion of other causes. The Rome IV criteria can be used for functional bowel disorders.",
+      "differentials": [
+        "Constipation",
+        "Irritable bowel syndrome",
+        "Rectal prolapse",
+        "Neurological disorders (e.g., stroke, dementia)",
+        "Inflammatory bowel disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Bowel regimen (e.g., stool softeners, laxatives)",
+          "Dietary modifications (increase fiber intake)",
+          "Pelvic floor exercises"
+        ],
+        "secondLine": [
+          "Antidiarrheal medications (e.g., loperamide)",
+          "Biofeedback therapy"
+        ],
+        "procedures": [
+          "Surgical options (e.g., sphincter repair, colostomy) if conservative measures fail"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued bowel regimen and dietary modifications",
+          "Pelvic floor rehabilitation"
+        ],
+        "secondLine": [
+          "Medications (e.g., bulking agents, antidiarrheals)",
+          "Referral to gastroenterology or colorectal surgery for further management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess bowel habits and adjust management as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Loperamide",
+          "mechanism": "Opioid receptor agonist that slows gut motility and increases transit time.",
+          "dosing": "Initial: 4 mg, then 2 mg after each loose stool (max 16 mg/day).",
+          "sideEffects": "Constipation, abdominal pain, nausea.",
+          "notes": "Use with caution in patients with infectious diarrhea."
+        },
+        {
+          "name": "Psyllium husk",
+          "mechanism": "Bulk-forming laxative that absorbs water and increases stool bulk.",
+          "dosing": "Start with 1 tsp in 8 oz of water, increase as tolerated.",
+          "sideEffects": "Bloating, gas, abdominal cramping.",
+          "notes": "Ensure adequate fluid intake to prevent obstruction."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Sphincter repair",
+          "description": "Surgical procedure to repair damaged anal sphincter muscles.",
+          "indications": "Severe faecal incontinence due to sphincter injury, particularly after childbirth.",
+          "risks": "Infection, bleeding, recurrence of incontinence."
+        },
+        {
+          "name": "Colostomy",
+          "description": "Surgical creation of an opening in the abdominal wall for stool diversion.",
+          "indications": "Severe, refractory faecal incontinence where other treatments have failed.",
+          "risks": "Stoma complications, psychological impact, need for stoma care."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies depending on the underlying cause. Many patients can achieve significant improvement with appropriate management, while others may have persistent symptoms.",
+    "complications": [
+      "Skin irritation and infection",
+      "Social isolation and depression",
+      "Nutritional deficiencies due to dietary restrictions"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on bowel management, and refer to specialists as needed. They should also monitor for complications and ensure appropriate follow-up care.",
+    "escalation": "Refer to gastroenterology or colorectal surgery if conservative management fails, or if there are red flag symptoms indicating a more serious underlying condition.",
+    "keySafetyConsiderations": "Ensure thorough assessment to rule out serious underlying conditions. Monitor for dehydration and nutritional deficiencies, especially in elderly patients. Provide education on bowel management strategies and the importance of follow-up."
+  }
+}

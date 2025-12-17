@@ -1,0 +1,146 @@
+{
+  "id": "scleritis",
+  "name": "Scleritis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:41:22.770680",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Scleritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nScleritis is an inflammatory condition affecting the sclera, the white outer coating of the eyeball. It can be associated with systemic autoimmune diseases and can lead to significant ocular complications if not treated promptly.\n\n### Epidemiology\nScleritis is relatively rare, with an estimated incidence of 3-5 cases per 100,000 people per year. It is more common in women and typically occurs in individuals aged 30-60 years. It is often associated with systemic diseases such as rheumatoid arthritis, lupus, and other connective tissue disorders.\n\n### Essential Pathophysiology\nThe pathophysiology of scleritis involves an immune-mediated inflammatory response affecting the scleral tissue. This can lead to edema, necrosis, and potential perforation of the sclera if untreated. The inflammation can be anterior or posterior, with anterior scleritis being more common.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe eye pain (often described as deep and boring)\n- Redness of the eye\n- Photophobia (sensitivity to light)\n- Tearing\n- Decreased vision\n\n### Key Signs\n- Ciliary injection (perilimbal redness)\n- Scleral edema or nodules\n- Possible corneal involvement (in severe cases)\n- Increased intraocular pressure\n\n### Atypical Presentations\n- Scleromalacia perforans (thinning of the sclera without inflammation)\n- Posterior scleritis (may present with retinal detachment or choroidal effusion)\n\n### Red Flags Requiring Immediate Action\n- Severe pain unresponsive to analgesics\n- Vision changes or loss\n- Signs of systemic disease (e.g., joint pain, skin rashes)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Slit-lamp examination to assess scleral involvement\n- Visual acuity testing\n- Intraocular pressure measurement\n\n### Second-line Investigations\n- B-scan ultrasonography (to evaluate for posterior scleritis)\n- Fundoscopy (to assess for retinal changes)\n\n### Specialist Tests\n- Autoimmune screening (e.g., rheumatoid factor, ANA, anti-CCP)\n- Imaging studies (CT or MRI if posterior scleritis is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of characteristic symptoms and signs, along with exclusion of other causes of eye pain and redness. A thorough history and examination are essential.\n\n### Key Differential Diagnoses to Exclude\n- Conjunctivitis\n- Uveitis\n- Keratitis\n- Glaucoma\n- Orbital cellulitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (e.g., ibuprofen) for pain relief\n- Topical corticosteroids (e.g., prednisolone acetate) to reduce inflammation\n\n#### Second-line Treatments\n- Oral corticosteroids (e.g., prednisone) for more severe cases or if NSAIDs are ineffective\n\n#### Emergency Procedures\n- Referral to ophthalmology for potential surgical intervention in cases of scleral perforation or severe complications.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term immunosuppressive therapy (e.g., methotrexate, azathioprine) if associated with systemic disease\n\n#### Second-line Treatments\n- Biologic agents (e.g., rituximab, tocilizumab) for refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up with ophthalmology to monitor for complications and adjust treatment as necessary.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor reducing inflammation and pain\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Monitor for signs of gastrointestinal bleeding.\n\n#### Prednisolone acetate (topical)\n- **Mechanism of Action**: Corticosteroid that reduces inflammation\n- **Typical Dosing Range**: 1 drop every 1-2 hours initially, tapering as symptoms improve\n- **Key Side Effects/Contraindications**: Intraocular pressure increase, cataract formation\n- **When to Use vs. Alternatives**: Monitor intraocular pressure regularly.\n\n#### Prednisone (oral)\n- **Mechanism of Action**: Systemic corticosteroid that reduces inflammation\n- **Typical Dosing Range**: Starting dose of 40-60 mg daily, tapering based on response\n- **Key Side Effects/Contraindications**: Weight gain, diabetes, osteoporosis, adrenal suppression\n- **When to Use vs. Alternatives**: Consider bone protection in long-term use.\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits lymphocyte proliferation\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly\n- **Key Side Effects/Contraindications**: Hepatotoxicity, bone marrow suppression, mucositis\n- **When to Use vs. Alternatives**: Monitor liver function tests and complete blood counts regularly.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B cells\n- **Typical Dosing Range**: 1,000 mg IV on days 1 and 15, repeat every 6 months as needed\n- **Key Side Effects/Contraindications**: Infusion reactions, increased risk of infections\n- **When to Use vs. Alternatives**: Pre-medicate with antihistamines and corticosteroids.\n\n### Procedures\n\n#### Surgical intervention for scleral perforation\n- **What it Involves**: Repair of the sclera using grafts or sutures to prevent vision loss\n- **Indications**: Severe scleritis with scleral thinning or perforation\n- **Key Risks/Complications**: Infection, bleeding, further vision loss.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for scleritis is generally good, but it can lead to complications such as vision loss, especially if associated with systemic disease. Chronic scleritis may require long-term management.\n\n### Important Complications to Watch For\n- Scleral thinning and perforation\n- Vision loss\n- Cataract formation due to prolonged steroid use\n- Glaucoma due to increased intraocular pressure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of scleritis, initiate appropriate investigations, and manage acute pain. They should also be aware of when to refer to ophthalmology for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology if there is severe pain, vision changes, or if the patient is not responding to initial treatment. Consider referral to rheumatology if an underlying systemic condition is suspected.\n\n### Key Safety Considerations\nMonitor for signs of systemic disease, especially in patients with scleritis. Be vigilant for complications such as increased intraocular pressure and vision changes, and ensure appropriate follow-up and monitoring of patients on long-term immunosuppressive therapy.\n",
+  "content": {
+    "overview": {
+      "definition": "Scleritis is an inflammatory condition affecting the sclera, the white outer coating of the eyeball. It can be associated with systemic autoimmune diseases and can lead to significant ocular complications if not treated promptly.",
+      "epidemiology": "Scleritis is relatively rare, with an estimated incidence of 3-5 cases per 100,000 people per year. It is more common in women and typically occurs in individuals aged 30-60 years. It is often associated with systemic diseases such as rheumatoid arthritis, lupus, and other connective tissue disorders.",
+      "pathophysiology": "The pathophysiology of scleritis involves an immune-mediated inflammatory response affecting the scleral tissue. This can lead to edema, necrosis, and potential perforation of the sclera if untreated. The inflammation can be anterior or posterior, with anterior scleritis being more common."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe eye pain (often described as deep and boring)",
+        "Redness of the eye",
+        "Photophobia (sensitivity to light)",
+        "Tearing",
+        "Decreased vision"
+      ],
+      "signs": [
+        "Ciliary injection (perilimbal redness)",
+        "Scleral edema or nodules",
+        "Possible corneal involvement (in severe cases)",
+        "Increased intraocular pressure"
+      ],
+      "atypicalPresentations": [
+        "Scleromalacia perforans (thinning of the sclera without inflammation)",
+        "Posterior scleritis (may present with retinal detachment or choroidal effusion)"
+      ],
+      "redFlags": [
+        "Severe pain unresponsive to analgesics",
+        "Vision changes or loss",
+        "Signs of systemic disease (e.g., joint pain, skin rashes)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Slit-lamp examination to assess scleral involvement",
+        "Visual acuity testing",
+        "Intraocular pressure measurement"
+      ],
+      "secondLine": [
+        "B-scan ultrasonography (to evaluate for posterior scleritis)",
+        "Fundoscopy (to assess for retinal changes)"
+      ],
+      "specialistTests": [
+        "Autoimmune screening (e.g., rheumatoid factor, ANA, anti-CCP)",
+        "Imaging studies (CT or MRI if posterior scleritis is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of characteristic symptoms and signs, along with exclusion of other causes of eye pain and redness. A thorough history and examination are essential.",
+      "differentials": [
+        "Conjunctivitis",
+        "Uveitis",
+        "Keratitis",
+        "Glaucoma",
+        "Orbital cellulitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (e.g., ibuprofen) for pain relief",
+          "Topical corticosteroids (e.g., prednisolone acetate) to reduce inflammation"
+        ],
+        "secondLine": [
+          "Oral corticosteroids (e.g., prednisone) for more severe cases or if NSAIDs are ineffective"
+        ],
+        "procedures": [
+          "Referral to ophthalmology for potential surgical intervention in cases of scleral perforation or severe complications."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term immunosuppressive therapy (e.g., methotrexate, azathioprine) if associated with systemic disease"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., rituximab, tocilizumab) for refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up with ophthalmology to monitor for complications and adjust treatment as necessary."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor reducing inflammation and pain",
+          "dosing": "400-800 mg orally every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Monitor for signs of gastrointestinal bleeding."
+        },
+        {
+          "name": "Prednisolone acetate (topical)",
+          "mechanism": "Corticosteroid that reduces inflammation",
+          "dosing": "1 drop every 1-2 hours initially, tapering as symptoms improve",
+          "sideEffects": "Intraocular pressure increase, cataract formation",
+          "notes": "Monitor intraocular pressure regularly."
+        },
+        {
+          "name": "Prednisone (oral)",
+          "mechanism": "Systemic corticosteroid that reduces inflammation",
+          "dosing": "Starting dose of 40-60 mg daily, tapering based on response",
+          "sideEffects": "Weight gain, diabetes, osteoporosis, adrenal suppression",
+          "notes": "Consider bone protection in long-term use."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits lymphocyte proliferation",
+          "dosing": "7.5-25 mg orally once weekly",
+          "sideEffects": "Hepatotoxicity, bone marrow suppression, mucositis",
+          "notes": "Monitor liver function tests and complete blood counts regularly."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B cells",
+          "dosing": "1,000 mg IV on days 1 and 15, repeat every 6 months as needed",
+          "sideEffects": "Infusion reactions, increased risk of infections",
+          "notes": "Pre-medicate with antihistamines and corticosteroids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical intervention for scleral perforation",
+          "description": "Repair of the sclera using grafts or sutures to prevent vision loss",
+          "indications": "Severe scleritis with scleral thinning or perforation",
+          "risks": "Infection, bleeding, further vision loss."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for scleritis is generally good, but it can lead to complications such as vision loss, especially if associated with systemic disease. Chronic scleritis may require long-term management.",
+    "complications": [
+      "Scleral thinning and perforation",
+      "Vision loss",
+      "Cataract formation due to prolonged steroid use",
+      "Glaucoma due to increased intraocular pressure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of scleritis, initiate appropriate investigations, and manage acute pain. They should also be aware of when to refer to ophthalmology for further management.",
+    "escalation": "Refer to ophthalmology if there is severe pain, vision changes, or if the patient is not responding to initial treatment. Consider referral to rheumatology if an underlying systemic condition is suspected.",
+    "keySafetyConsiderations": "Monitor for signs of systemic disease, especially in patients with scleritis. Be vigilant for complications such as increased intraocular pressure and vision changes, and ensure appropriate follow-up and monitoring of patients on long-term immunosuppressive therapy."
+  }
+}

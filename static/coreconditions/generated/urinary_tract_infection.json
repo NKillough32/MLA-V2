@@ -1,0 +1,136 @@
+{
+  "id": "urinary_tract_infection",
+  "name": "Urinary tract infection",
+  "domains": [
+    "Renal",
+    "Urology",
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T20:18:21.478070",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Urinary tract infection: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA urinary tract infection (UTI) is an infection that can affect any part of the urinary system, including the kidneys, ureters, bladder, and urethra. The most common type is a bladder infection (cystitis).\n\n### Epidemiology\nUTIs are among the most common bacterial infections, particularly in women, with a lifetime prevalence of about 50-60%. They are less common in men, but incidence increases with age and in those with urinary tract abnormalities.\n\n### Essential Pathophysiology\nUTIs typically occur when bacteria enter the urinary tract, often from the gastrointestinal tract, and multiply. The most common pathogen is Escherichia coli, which accounts for approximately 80% of cases. The infection can lead to inflammation and irritation of the urinary tract lining.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dysuria (painful urination)\n- Increased frequency of urination\n- Urgency to urinate\n- Suprapubic pain\n- Hematuria (blood in urine)\n- Fever and chills (in cases of pyelonephritis)\n\n### Key Signs\n- Costovertebral angle tenderness (in pyelonephritis)\n- Fever (may indicate upper UTI)\n- Suprapubic tenderness\n\n### Atypical Presentations\n- Nausea and vomiting (especially in pyelonephritis)\n- Confusion or altered mental status in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Severe flank pain\n- High fever (>38.5°C)\n- Signs of sepsis (e.g., hypotension, tachycardia)\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (dipstick test)\n- Urine culture and sensitivity\n\n### Second-line Investigations\n- Ultrasound of the kidneys and bladder (if obstruction is suspected)\n- CT scan of the abdomen/pelvis (if complicated UTI is suspected)\n\n### Specialist Tests\n- Cystoscopy (if recurrent UTIs or anatomical abnormalities are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically based on the presence of symptoms and a positive urine culture showing >100,000 CFU/mL of a uropathogen, or >1,000 CFU/mL in symptomatic patients.\n\n### Key Differential Diagnoses to Exclude\n- Acute pyelonephritis\n- Interstitial cystitis\n- Urethritis\n- Vaginitis\n- Prostatitis (in men)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Nitrofurantoin 100 mg orally twice daily for 5 days (for uncomplicated UTI)\n- Trimethoprim 300 mg orally once daily for 3 days (for uncomplicated UTI)\n\n#### Second-line Treatments\n- Ciprofloxacin 500 mg orally twice daily for 3 days (if first-line agents are contraindicated)\n- Amoxicillin-clavulanate 500/125 mg orally three times daily for 5-7 days (if resistant organisms are suspected)\n\n#### Emergency Procedures\n- Urinary catheterization (if urinary retention is present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Patient education on hydration and hygiene practices\n- Consider prophylactic antibiotics for recurrent UTIs (e.g., nitrofurantoin 50 mg at bedtime)\n\n#### Second-line Treatments\n- Referral to urology for further evaluation if recurrent UTIs persist despite prophylaxis\n\n#### Monitoring Requirements\n- Regular follow-up for recurrent symptoms\n- Renal function tests if recurrent pyelonephritis occurs\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Nitrofurantoin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis and metabolism.\n- **Typical Dosing Range**: 100 mg orally twice daily for 5 days.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness, pulmonary toxicity (rare).\n- **When to Use vs. Alternatives**: Contraindicated in renal impairment (eGFR < 45 mL/min).\n\n#### Trimethoprim\n- **Mechanism of Action**: Inhibits bacterial folic acid synthesis.\n- **Typical Dosing Range**: 300 mg orally once daily for 3 days.\n- **Key Side Effects/Contraindications**: Rash, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Caution in patients with renal impairment.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Inhibits bacterial DNA gyrase, preventing DNA replication.\n- **Typical Dosing Range**: 500 mg orally twice daily for 3 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, tendonitis, QT prolongation.\n- **When to Use vs. Alternatives**: Avoid in pregnancy and in children.\n\n### Procedures\n\n#### Urinary catheterization\n- **What it Involves**: Insertion of a catheter into the bladder to drain urine.\n- **Indications**: Urinary retention, inability to void, or for sterile urine collection.\n- **Key Risks/Complications**: Infection, urethral injury, bladder spasms.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost uncomplicated UTIs resolve with appropriate antibiotic treatment. Complicated UTIs may require longer treatment and can lead to recurrent infections or renal complications.\n\n### Important Complications to Watch For\n- Recurrent UTIs\n- Pyelonephritis\n- Urosepsis\n- Renal abscess\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of UTI, perform initial investigations, initiate treatment, and refer to specialists when necessary. They should also educate patients on prevention strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to urology for recurrent UTIs, pyelonephritis, or if there are signs of complications such as sepsis or renal impairment.\n\n### Key Safety Considerations\nEnsure appropriate antibiotic stewardship to prevent resistance. Monitor for signs of complications, especially in vulnerable populations (elderly, pregnant women, immunocompromised patients).\n",
+  "content": {
+    "overview": {
+      "definition": "A urinary tract infection (UTI) is an infection that can affect any part of the urinary system, including the kidneys, ureters, bladder, and urethra. The most common type is a bladder infection (cystitis).",
+      "epidemiology": "UTIs are among the most common bacterial infections, particularly in women, with a lifetime prevalence of about 50-60%. They are less common in men, but incidence increases with age and in those with urinary tract abnormalities.",
+      "pathophysiology": "UTIs typically occur when bacteria enter the urinary tract, often from the gastrointestinal tract, and multiply. The most common pathogen is Escherichia coli, which accounts for approximately 80% of cases. The infection can lead to inflammation and irritation of the urinary tract lining."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dysuria (painful urination)",
+        "Increased frequency of urination",
+        "Urgency to urinate",
+        "Suprapubic pain",
+        "Hematuria (blood in urine)",
+        "Fever and chills (in cases of pyelonephritis)"
+      ],
+      "signs": [
+        "Costovertebral angle tenderness (in pyelonephritis)",
+        "Fever (may indicate upper UTI)",
+        "Suprapubic tenderness"
+      ],
+      "atypicalPresentations": [
+        "Nausea and vomiting (especially in pyelonephritis)",
+        "Confusion or altered mental status in elderly patients"
+      ],
+      "redFlags": [
+        "Severe flank pain",
+        "High fever (>38.5°C)",
+        "Signs of sepsis (e.g., hypotension, tachycardia)",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (dipstick test)",
+        "Urine culture and sensitivity"
+      ],
+      "secondLine": [
+        "Ultrasound of the kidneys and bladder (if obstruction is suspected)",
+        "CT scan of the abdomen/pelvis (if complicated UTI is suspected)"
+      ],
+      "specialistTests": [
+        "Cystoscopy (if recurrent UTIs or anatomical abnormalities are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically based on the presence of symptoms and a positive urine culture showing >100,000 CFU/mL of a uropathogen, or >1,000 CFU/mL in symptomatic patients.",
+      "differentials": [
+        "Acute pyelonephritis",
+        "Interstitial cystitis",
+        "Urethritis",
+        "Vaginitis",
+        "Prostatitis (in men)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Nitrofurantoin 100 mg orally twice daily for 5 days (for uncomplicated UTI)",
+          "Trimethoprim 300 mg orally once daily for 3 days (for uncomplicated UTI)"
+        ],
+        "secondLine": [
+          "Ciprofloxacin 500 mg orally twice daily for 3 days (if first-line agents are contraindicated)",
+          "Amoxicillin-clavulanate 500/125 mg orally three times daily for 5-7 days (if resistant organisms are suspected)"
+        ],
+        "procedures": [
+          "Urinary catheterization (if urinary retention is present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Patient education on hydration and hygiene practices",
+          "Consider prophylactic antibiotics for recurrent UTIs (e.g., nitrofurantoin 50 mg at bedtime)"
+        ],
+        "secondLine": [
+          "Referral to urology for further evaluation if recurrent UTIs persist despite prophylaxis"
+        ],
+        "monitoring": [
+          "Regular follow-up for recurrent symptoms",
+          "Renal function tests if recurrent pyelonephritis occurs"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Nitrofurantoin",
+          "mechanism": "Inhibits bacterial cell wall synthesis and metabolism.",
+          "dosing": "100 mg orally twice daily for 5 days.",
+          "sideEffects": "Nausea, headache, dizziness, pulmonary toxicity (rare).",
+          "notes": "Contraindicated in renal impairment (eGFR < 45 mL/min)."
+        },
+        {
+          "name": "Trimethoprim",
+          "mechanism": "Inhibits bacterial folic acid synthesis.",
+          "dosing": "300 mg orally once daily for 3 days.",
+          "sideEffects": "Rash, hyperkalemia, renal impairment.",
+          "notes": "Caution in patients with renal impairment."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Inhibits bacterial DNA gyrase, preventing DNA replication.",
+          "dosing": "500 mg orally twice daily for 3 days.",
+          "sideEffects": "Nausea, diarrhea, tendonitis, QT prolongation.",
+          "notes": "Avoid in pregnancy and in children."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Urinary catheterization",
+          "description": "Insertion of a catheter into the bladder to drain urine.",
+          "indications": "Urinary retention, inability to void, or for sterile urine collection.",
+          "risks": "Infection, urethral injury, bladder spasms."
+        }
+      ]
+    },
+    "prognosis": "Most uncomplicated UTIs resolve with appropriate antibiotic treatment. Complicated UTIs may require longer treatment and can lead to recurrent infections or renal complications.",
+    "complications": [
+      "Recurrent UTIs",
+      "Pyelonephritis",
+      "Urosepsis",
+      "Renal abscess"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of UTI, perform initial investigations, initiate treatment, and refer to specialists when necessary. They should also educate patients on prevention strategies.",
+    "escalation": "Refer to urology for recurrent UTIs, pyelonephritis, or if there are signs of complications such as sepsis or renal impairment.",
+    "keySafetyConsiderations": "Ensure appropriate antibiotic stewardship to prevent resistance. Monitor for signs of complications, especially in vulnerable populations (elderly, pregnant women, immunocompromised patients)."
+  }
+}

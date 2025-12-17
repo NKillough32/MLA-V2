@@ -1,0 +1,129 @@
+{
+  "id": "acute_ischaemic_limb",
+  "name": "Acute ischaemic limb",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:21:31.225058",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute ischaemic limb: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute ischaemic limb (AIL) refers to a sudden decrease in blood flow to a limb, leading to tissue ischaemia and potential necrosis. It is a surgical emergency that requires prompt recognition and intervention.\n\n### Epidemiology\nAcute limb ischaemia occurs in approximately 1-2 per 1,000 hospital admissions, with a higher incidence in patients with atherosclerotic disease, diabetes, and those over 60 years of age.\n\n### Essential Pathophysiology\nAcute ischaemia is typically caused by embolism or thrombosis in the arterial supply to the limb, leading to a rapid decrease in perfusion. This can result from atherosclerosis, cardiac sources (e.g., atrial fibrillation), or trauma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of limb pain (often described as severe)\n- Paresthesia (tingling or numbness)\n- Weakness or inability to move the limb\n- Coldness of the limb compared to the other side\n\n### Key Signs\n- Pallor of the limb\n- Pulselessness (absence of arterial pulses)\n- Paralysis (loss of motor function)\n- Poikilothermia (limb temperature changes)\n- Capillary refill time > 2 seconds\n\n### Atypical Presentations\n- Pain may be less pronounced in diabetic patients due to neuropathy\n- Symptoms may be mistaken for musculoskeletal pain or arthritis\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of limb pain in a patient with known cardiovascular disease\n- History of recent embolic events (e.g., stroke, myocardial infarction)\n- Presence of risk factors such as smoking, diabetes, or hyperlipidaemia\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Doppler ultrasound to assess blood flow\n\n### Second-line Investigations\n- CT angiography to visualize arterial occlusions\n- MRI if soft tissue involvement is suspected\n\n### Specialist Tests\n- Digital subtraction angiography (DSA) for detailed vascular imaging\n- Blood tests including lactate levels to assess tissue perfusion\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation (the 6 P's: pain, pallor, pulselessness, paralysis, paresthesia, poikilothermia) and confirmatory imaging studies.\n\n### Key Differential Diagnoses to Exclude\n- Chronic limb ischaemia\n- Compartment syndrome\n- Venous thrombosis\n- Peripheral neuropathy\n- Musculoskeletal injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to vascular surgery\n- Anticoagulation (e.g., heparin) to prevent further clot formation\n\n#### Second-line Treatments\n- Thrombolysis if indicated and within the treatment window\n- Surgical intervention (e.g., embolectomy, bypass surgery)\n\n#### Emergency Procedures\n- Embolectomy: surgical removal of an embolus from the artery, indicated in cases of acute arterial occlusion; risks include bleeding, infection, and limb loss.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (smoking cessation, exercise)\n- Management of comorbidities (e.g., diabetes, hypertension)\n\n#### Second-line Treatments\n- Revascularization procedures (e.g., angioplasty, stenting) if indicated\n- Regular follow-up with vascular specialists\n\n#### Monitoring Requirements\n- Regular assessment of limb perfusion and function\n- Monitoring for complications of chronic ischaemia\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Heparin\n- **Mechanism of Action**: Anticoagulant that inhibits thrombin and factor Xa, preventing further clot formation.\n- **Typical Dosing Range**: Initial bolus of 80 units/kg IV, followed by a continuous infusion of 18 units/kg/hour, adjusted based on aPTT.\n- **Key Side Effects/Contraindications**: Bleeding, thrombocytopenia, osteoporosis with long-term use.\n- **When to Use vs. Alternatives**: Monitor aPTT regularly to ensure therapeutic levels.\n\n#### Thrombolytics (e.g., alteplase)\n- **Mechanism of Action**: Dissolves blood clots by activating plasminogen to plasmin.\n- **Typical Dosing Range**: Bolus of 10 mg IV, followed by 90 mg over 2 hours.\n- **Key Side Effects/Contraindications**: Bleeding, intracranial hemorrhage, allergic reactions.\n- **When to Use vs. Alternatives**: Use with caution in patients with high bleeding risk.\n\n### Procedures\n\n#### Embolectomy\n- **What it Involves**: Surgical procedure to remove an embolus from the artery, restoring blood flow.\n- **Indications**: Acute limb ischaemia with a viable limb and significant arterial occlusion.\n- **Key Risks/Complications**: Bleeding, infection, limb loss, and complications related to anesthesia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the duration of ischaemia and the promptness of treatment. Early intervention can lead to limb salvage, while delayed treatment may result in amputation or significant morbidity.\n\n### Important Complications to Watch For\n- Limb necrosis\n- Infection (e.g., gangrene)\n- Compartment syndrome\n- Recurrent ischaemia\n- Mortality associated with underlying cardiovascular disease.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of acute ischaemic limb, initiate immediate management (e.g., anticoagulation), and facilitate urgent referral to vascular surgery.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to a vascular surgeon is required for any patient suspected of having acute limb ischaemia. If the patient is unstable, escalate to senior medical staff and ensure rapid transport to a surgical unit.\n\n### Key Safety Considerations\nEnsure timely assessment and intervention to prevent irreversible limb damage. Monitor for signs of bleeding if anticoagulation or thrombolysis is initiated.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute ischaemic limb (AIL) refers to a sudden decrease in blood flow to a limb, leading to tissue ischaemia and potential necrosis. It is a surgical emergency that requires prompt recognition and intervention.",
+      "epidemiology": "Acute limb ischaemia occurs in approximately 1-2 per 1,000 hospital admissions, with a higher incidence in patients with atherosclerotic disease, diabetes, and those over 60 years of age.",
+      "pathophysiology": "Acute ischaemia is typically caused by embolism or thrombosis in the arterial supply to the limb, leading to a rapid decrease in perfusion. This can result from atherosclerosis, cardiac sources (e.g., atrial fibrillation), or trauma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of limb pain (often described as severe)",
+        "Paresthesia (tingling or numbness)",
+        "Weakness or inability to move the limb",
+        "Coldness of the limb compared to the other side"
+      ],
+      "signs": [
+        "Pallor of the limb",
+        "Pulselessness (absence of arterial pulses)",
+        "Paralysis (loss of motor function)",
+        "Poikilothermia (limb temperature changes)",
+        "Capillary refill time > 2 seconds"
+      ],
+      "atypicalPresentations": [
+        "Pain may be less pronounced in diabetic patients due to neuropathy",
+        "Symptoms may be mistaken for musculoskeletal pain or arthritis"
+      ],
+      "redFlags": [
+        "Sudden onset of limb pain in a patient with known cardiovascular disease",
+        "History of recent embolic events (e.g., stroke, myocardial infarction)",
+        "Presence of risk factors such as smoking, diabetes, or hyperlipidaemia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Doppler ultrasound to assess blood flow"
+      ],
+      "secondLine": [
+        "CT angiography to visualize arterial occlusions",
+        "MRI if soft tissue involvement is suspected"
+      ],
+      "specialistTests": [
+        "Digital subtraction angiography (DSA) for detailed vascular imaging",
+        "Blood tests including lactate levels to assess tissue perfusion"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation (the 6 P's: pain, pallor, pulselessness, paralysis, paresthesia, poikilothermia) and confirmatory imaging studies.",
+      "differentials": [
+        "Chronic limb ischaemia",
+        "Compartment syndrome",
+        "Venous thrombosis",
+        "Peripheral neuropathy",
+        "Musculoskeletal injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to vascular surgery",
+          "Anticoagulation (e.g., heparin) to prevent further clot formation"
+        ],
+        "secondLine": [
+          "Thrombolysis if indicated and within the treatment window",
+          "Surgical intervention (e.g., embolectomy, bypass surgery)"
+        ],
+        "procedures": [
+          "Embolectomy: surgical removal of an embolus from the artery, indicated in cases of acute arterial occlusion; risks include bleeding, infection, and limb loss."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (smoking cessation, exercise)",
+          "Management of comorbidities (e.g., diabetes, hypertension)"
+        ],
+        "secondLine": [
+          "Revascularization procedures (e.g., angioplasty, stenting) if indicated",
+          "Regular follow-up with vascular specialists"
+        ],
+        "monitoring": [
+          "Regular assessment of limb perfusion and function",
+          "Monitoring for complications of chronic ischaemia"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Heparin",
+          "mechanism": "Anticoagulant that inhibits thrombin and factor Xa, preventing further clot formation.",
+          "dosing": "Initial bolus of 80 units/kg IV, followed by a continuous infusion of 18 units/kg/hour, adjusted based on aPTT.",
+          "sideEffects": "Bleeding, thrombocytopenia, osteoporosis with long-term use.",
+          "notes": "Monitor aPTT regularly to ensure therapeutic levels."
+        },
+        {
+          "name": "Thrombolytics (e.g., alteplase)",
+          "mechanism": "Dissolves blood clots by activating plasminogen to plasmin.",
+          "dosing": "Bolus of 10 mg IV, followed by 90 mg over 2 hours.",
+          "sideEffects": "Bleeding, intracranial hemorrhage, allergic reactions.",
+          "notes": "Use with caution in patients with high bleeding risk."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Embolectomy",
+          "description": "Surgical procedure to remove an embolus from the artery, restoring blood flow.",
+          "indications": "Acute limb ischaemia with a viable limb and significant arterial occlusion.",
+          "risks": "Bleeding, infection, limb loss, and complications related to anesthesia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the duration of ischaemia and the promptness of treatment. Early intervention can lead to limb salvage, while delayed treatment may result in amputation or significant morbidity.",
+    "complications": [
+      "Limb necrosis",
+      "Infection (e.g., gangrene)",
+      "Compartment syndrome",
+      "Recurrent ischaemia",
+      "Mortality associated with underlying cardiovascular disease."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of acute ischaemic limb, initiate immediate management (e.g., anticoagulation), and facilitate urgent referral to vascular surgery.",
+    "escalation": "Immediate referral to a vascular surgeon is required for any patient suspected of having acute limb ischaemia. If the patient is unstable, escalate to senior medical staff and ensure rapid transport to a surgical unit.",
+    "keySafetyConsiderations": "Ensure timely assessment and intervention to prevent irreversible limb damage. Monitor for signs of bleeding if anticoagulation or thrombolysis is initiated."
+  }
+}

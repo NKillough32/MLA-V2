@@ -1,0 +1,143 @@
+{
+  "id": "gastro_oesophageal_reflux_disease_and_hiatus_hernia",
+  "name": "Gastro-oesophageal reflux disease and hiatus hernia",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:39:27.638596",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastro-oesophageal reflux disease and hiatus hernia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastro-oesophageal reflux disease (GORD) is a chronic condition where stomach contents flow back into the oesophagus, causing symptoms and/or complications. A hiatus hernia occurs when part of the stomach pushes through the diaphragm into the thoracic cavity, which can exacerbate GORD.\n\n### Epidemiology\nGORD affects approximately 10-20% of the adult population in Western countries. Hiatus hernias are found in about 10% of the population, increasing with age, and are more common in individuals who are obese or pregnant.\n\n### Essential Pathophysiology\nGORD is primarily due to a dysfunction of the lower oesophageal sphincter (LES), leading to increased acid exposure in the oesophagus. Hiatus hernia can contribute to this by altering the anatomical position of the LES, reducing its ability to prevent reflux.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Heartburn\n- Regurgitation\n- Dysphagia\n- Chest pain\n- Chronic cough\n- Hoarseness\n- Sore throat\n\n### Key Signs\n- Epigastric tenderness\n- Signs of anaemia (pallor, fatigue)\n- Weight loss (in severe cases)\n\n### Atypical Presentations\n- Asthma exacerbations\n- Dental erosions\n- Laryngitis\n- Non-cardiac chest pain\n\n### Red Flags Requiring Immediate Action\n- Dysphagia\n- Odynophagia\n- Unexplained weight loss\n- Persistent vomiting\n- Anaemia\n- Signs of gastrointestinal bleeding (e.g., melena, hematemesis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Upper gastrointestinal endoscopy (OGD)\n- Barium swallow\n\n### Second-line Investigations\n- 24-hour pH monitoring\n- Manometry\n\n### Specialist Tests\n- Esophageal impedance testing\n- Endoscopic ultrasound (EUS)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptomatology and response to treatment. Endoscopy is used to assess for complications such as esophagitis or Barrett's esophagus.\n\n### Key Differential Diagnoses to Exclude\n- Peptic ulcer disease\n- Esophageal cancer\n- Eosinophilic esophagitis\n- Functional dyspepsia\n- Cardiac causes of chest pain\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Proton pump inhibitors (PPIs)\n- Antacids\n\n#### Second-line Treatments\n- H2 receptor antagonists\n- Prokinetics (e.g., metoclopramide)\n\n#### Emergency Procedures\n- Endoscopic dilation for strictures\n- Fundoplication for refractory cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (dietary changes, weight loss, smoking cessation)\n- PPIs (e.g., omeprazole)\n\n#### Second-line Treatments\n- Surgery (e.g., laparoscopic fundoplication) for refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and side effects of medications\n- Endoscopy for patients with Barrett's esophagus\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Omeprazole\n- **Mechanism of Action**: Inhibits proton pump in gastric parietal cells, reducing acid secretion.\n- **Typical Dosing Range**: 20-40 mg once daily before meals.\n- **Key Side Effects/Contraindications**: Headache, nausea, diarrhea, risk of Clostridium difficile infection, long-term use may lead to vitamin B12 deficiency.\n- **When to Use vs. Alternatives**: Consider monitoring for long-term use.\n\n#### Ranitidine\n- **Mechanism of Action**: H2 receptor antagonist that decreases gastric acid secretion.\n- **Typical Dosing Range**: 150 mg twice daily or 300 mg once daily at bedtime.\n- **Key Side Effects/Contraindications**: Headache, dizziness, gastrointestinal disturbances.\n- **When to Use vs. Alternatives**: Less effective than PPIs for GORD.\n\n#### Metoclopramide\n- **Mechanism of Action**: Prokinetic agent that increases gastric emptying and LES tone.\n- **Typical Dosing Range**: 10 mg three times daily before meals.\n- **Key Side Effects/Contraindications**: Drowsiness, fatigue, extrapyramidal symptoms (rare).\n- **When to Use vs. Alternatives**: Use with caution in elderly patients.\n\n### Procedures\n\n#### Fundoplication\n- **What it Involves**: Surgical procedure that wraps the top of the stomach around the lower esophagus to prevent reflux.\n- **Indications**: Refractory GORD not responding to medical management, significant hiatus hernia.\n- **Key Risks/Complications**: Infection, bleeding, dysphagia, gas bloat syndrome, recurrence of reflux.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients experience significant symptom relief. Chronic GORD can lead to complications such as esophagitis, strictures, and Barrett's esophagus, which has a risk of progression to esophageal cancer.\n\n### Important Complications to Watch For\n- Esophagitis\n- Strictures\n- Barrett's esophagus\n- Esophageal adenocarcinoma\n- Aspiration pneumonia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of GORD and hiatus hernia, initiate appropriate investigations, manage acute symptoms, and refer patients for specialist care when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology if there are red flags, lack of response to treatment, or if surgical intervention is considered.\n\n### Key Safety Considerations\nMonitor for potential complications of long-term PPI use, including renal impairment and gastrointestinal infections. Ensure appropriate follow-up for patients with Barrett's esophagus.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastro-oesophageal reflux disease (GORD) is a chronic condition where stomach contents flow back into the oesophagus, causing symptoms and/or complications. A hiatus hernia occurs when part of the stomach pushes through the diaphragm into the thoracic cavity, which can exacerbate GORD.",
+      "epidemiology": "GORD affects approximately 10-20% of the adult population in Western countries. Hiatus hernias are found in about 10% of the population, increasing with age, and are more common in individuals who are obese or pregnant.",
+      "pathophysiology": "GORD is primarily due to a dysfunction of the lower oesophageal sphincter (LES), leading to increased acid exposure in the oesophagus. Hiatus hernia can contribute to this by altering the anatomical position of the LES, reducing its ability to prevent reflux."
+    },
+    "recognition": {
+      "symptoms": [
+        "Heartburn",
+        "Regurgitation",
+        "Dysphagia",
+        "Chest pain",
+        "Chronic cough",
+        "Hoarseness",
+        "Sore throat"
+      ],
+      "signs": [
+        "Epigastric tenderness",
+        "Signs of anaemia (pallor, fatigue)",
+        "Weight loss (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Asthma exacerbations",
+        "Dental erosions",
+        "Laryngitis",
+        "Non-cardiac chest pain"
+      ],
+      "redFlags": [
+        "Dysphagia",
+        "Odynophagia",
+        "Unexplained weight loss",
+        "Persistent vomiting",
+        "Anaemia",
+        "Signs of gastrointestinal bleeding (e.g., melena, hematemesis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Upper gastrointestinal endoscopy (OGD)",
+        "Barium swallow"
+      ],
+      "secondLine": [
+        "24-hour pH monitoring",
+        "Manometry"
+      ],
+      "specialistTests": [
+        "Esophageal impedance testing",
+        "Endoscopic ultrasound (EUS)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptomatology and response to treatment. Endoscopy is used to assess for complications such as esophagitis or Barrett's esophagus.",
+      "differentials": [
+        "Peptic ulcer disease",
+        "Esophageal cancer",
+        "Eosinophilic esophagitis",
+        "Functional dyspepsia",
+        "Cardiac causes of chest pain"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Proton pump inhibitors (PPIs)",
+          "Antacids"
+        ],
+        "secondLine": [
+          "H2 receptor antagonists",
+          "Prokinetics (e.g., metoclopramide)"
+        ],
+        "procedures": [
+          "Endoscopic dilation for strictures",
+          "Fundoplication for refractory cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (dietary changes, weight loss, smoking cessation)",
+          "PPIs (e.g., omeprazole)"
+        ],
+        "secondLine": [
+          "Surgery (e.g., laparoscopic fundoplication) for refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and side effects of medications",
+          "Endoscopy for patients with Barrett's esophagus"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Omeprazole",
+          "mechanism": "Inhibits proton pump in gastric parietal cells, reducing acid secretion.",
+          "dosing": "20-40 mg once daily before meals.",
+          "sideEffects": "Headache, nausea, diarrhea, risk of Clostridium difficile infection, long-term use may lead to vitamin B12 deficiency.",
+          "notes": "Consider monitoring for long-term use."
+        },
+        {
+          "name": "Ranitidine",
+          "mechanism": "H2 receptor antagonist that decreases gastric acid secretion.",
+          "dosing": "150 mg twice daily or 300 mg once daily at bedtime.",
+          "sideEffects": "Headache, dizziness, gastrointestinal disturbances.",
+          "notes": "Less effective than PPIs for GORD."
+        },
+        {
+          "name": "Metoclopramide",
+          "mechanism": "Prokinetic agent that increases gastric emptying and LES tone.",
+          "dosing": "10 mg three times daily before meals.",
+          "sideEffects": "Drowsiness, fatigue, extrapyramidal symptoms (rare).",
+          "notes": "Use with caution in elderly patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fundoplication",
+          "description": "Surgical procedure that wraps the top of the stomach around the lower esophagus to prevent reflux.",
+          "indications": "Refractory GORD not responding to medical management, significant hiatus hernia.",
+          "risks": "Infection, bleeding, dysphagia, gas bloat syndrome, recurrence of reflux."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients experience significant symptom relief. Chronic GORD can lead to complications such as esophagitis, strictures, and Barrett's esophagus, which has a risk of progression to esophageal cancer.",
+    "complications": [
+      "Esophagitis",
+      "Strictures",
+      "Barrett's esophagus",
+      "Esophageal adenocarcinoma",
+      "Aspiration pneumonia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of GORD and hiatus hernia, initiate appropriate investigations, manage acute symptoms, and refer patients for specialist care when necessary.",
+    "escalation": "Refer to gastroenterology if there are red flags, lack of response to treatment, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Monitor for potential complications of long-term PPI use, including renal impairment and gastrointestinal infections. Ensure appropriate follow-up for patients with Barrett's esophagus."
+  }
+}

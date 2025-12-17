@@ -1,0 +1,143 @@
+{
+  "id": "valvular_heart_disease",
+  "name": "Valvular heart disease",
+  "domains": [
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care"
+  ],
+  "generatedAt": "2025-12-17T21:07:15.726454",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Valvular heart disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nValvular heart disease refers to any disease process that affects one or more of the heart valves, leading to dysfunction such as stenosis (narrowing) or regurgitation (leakage).\n\n### Epidemiology\nValvular heart disease is prevalent in the elderly population, with a significant increase in incidence due to age-related degeneration. Rheumatic heart disease remains a common cause in developing countries, while degenerative diseases like aortic stenosis are more common in developed nations.\n\n### Essential Pathophysiology\nThe heart valves ensure unidirectional blood flow through the heart chambers. Dysfunction can lead to volume overload (regurgitation) or pressure overload (stenosis) on the heart chambers, resulting in heart failure, arrhythmias, and other complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Fatigue\n- Palpitations\n- Chest pain\n- Syncope\n\n### Key Signs\n- Murmurs (systolic or diastolic)\n- Signs of heart failure (e.g., edema, elevated jugular venous pressure)\n- Pulsus parvus et tardus (in aortic stenosis)\n- Wide pulse pressure (in aortic regurgitation)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Symptoms may be mistaken for other conditions in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Acute onset of dyspnea\n- Syncope or presyncope\n- Rapidly worsening heart failure symptoms\n- New-onset atrial fibrillation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (transthoracic or transesophageal)\n- Electrocardiogram (ECG)\n- Chest X-ray\n\n### Second-line Investigations\n- Cardiac MRI\n- Exercise testing\n\n### Specialist Tests\n- Cardiac catheterization\n- CT angiography\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, echocardiographic findings, and hemodynamic assessment. Specific criteria depend on the type of valvular disease (e.g., aortic stenosis defined by aortic valve area <1.0 cm²).\n\n### Key Differential Diagnoses to Exclude\n- Coronary artery disease\n- Hypertrophic cardiomyopathy\n- Pericardial disease\n- Pulmonary hypertension\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Diuretics for fluid overload\n- Oxygen therapy\n- Inotropic support if needed\n\n#### Second-line Treatments\n- Vasodilators (e.g., nitroglycerin) for acute heart failure\n\n#### Emergency Procedures\n- Valve replacement or repair (surgical or percutaneous)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with echocardiography\n- Lifestyle modifications (diet, exercise)\n\n#### Second-line Treatments\n- Surgical intervention when indicated (e.g., symptomatic severe stenosis)\n- Anticoagulation for atrial fibrillation if present\n\n#### Monitoring Requirements\n- Regular follow-up with cardiology\n- Assessment of symptoms and functional capacity\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that promotes renal excretion of sodium and water.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; titrate based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes.\n\n#### Digoxin\n- **Mechanism of Action**: Increases myocardial contractility and decreases heart rate.\n- **Typical Dosing Range**: 0.125-0.25 mg daily; adjust based on renal function.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, arrhythmias, visual disturbances.\n- **When to Use vs. Alternatives**: Monitor for toxicity, especially in renal impairment.\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist that inhibits clotting factor synthesis.\n- **Typical Dosing Range**: Initial: 5-10 mg daily; adjust based on INR (target INR 2-3).\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, drug interactions.\n- **When to Use vs. Alternatives**: Regular INR monitoring required.\n\n### Procedures\n\n#### Aortic valve replacement (AVR)\n- **What it Involves**: Surgical procedure to replace a diseased aortic valve with a prosthetic valve.\n- **Indications**: Severe aortic stenosis or regurgitation with symptoms or reduced ejection fraction.\n- **Key Risks/Complications**: Bleeding, infection, thromboembolism, valve dysfunction.\n\n#### Mitral valve repair/replacement\n- **What it Involves**: Surgical intervention to correct mitral valve dysfunction.\n- **Indications**: Severe mitral regurgitation with symptoms or left ventricular dysfunction.\n- **Key Risks/Complications**: Similar to AVR, plus potential for atrial fibrillation postoperatively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies based on the type and severity of valvular disease. Early intervention can significantly improve outcomes, while untreated severe disease can lead to heart failure and increased mortality.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias (e.g., atrial fibrillation)\n- Thromboembolic events\n- Infective endocarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of valvular heart disease, perform initial assessments, and facilitate appropriate investigations and referrals to cardiology. They should also be aware of the management of acute heart failure and the importance of monitoring patients with chronic valvular disease.\n\n### When to Escalate to Senior/Specialist\nEscalate care to senior medical staff if there are signs of acute heart failure, significant arrhythmias, or if the patient is unstable. Ensure timely referral to cardiology for further evaluation and management.\n\n### Key Safety Considerations\nMonitor vital signs closely in patients with known valvular heart disease, especially during perioperative periods. Be vigilant for signs of heart failure and arrhythmias, and ensure appropriate anticoagulation management in patients with atrial fibrillation.\n",
+  "content": {
+    "overview": {
+      "definition": "Valvular heart disease refers to any disease process that affects one or more of the heart valves, leading to dysfunction such as stenosis (narrowing) or regurgitation (leakage).",
+      "epidemiology": "Valvular heart disease is prevalent in the elderly population, with a significant increase in incidence due to age-related degeneration. Rheumatic heart disease remains a common cause in developing countries, while degenerative diseases like aortic stenosis are more common in developed nations.",
+      "pathophysiology": "The heart valves ensure unidirectional blood flow through the heart chambers. Dysfunction can lead to volume overload (regurgitation) or pressure overload (stenosis) on the heart chambers, resulting in heart failure, arrhythmias, and other complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Fatigue",
+        "Palpitations",
+        "Chest pain",
+        "Syncope"
+      ],
+      "signs": [
+        "Murmurs (systolic or diastolic)",
+        "Signs of heart failure (e.g., edema, elevated jugular venous pressure)",
+        "Pulsus parvus et tardus (in aortic stenosis)",
+        "Wide pulse pressure (in aortic regurgitation)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Symptoms may be mistaken for other conditions in elderly patients"
+      ],
+      "redFlags": [
+        "Acute onset of dyspnea",
+        "Syncope or presyncope",
+        "Rapidly worsening heart failure symptoms",
+        "New-onset atrial fibrillation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (transthoracic or transesophageal)",
+        "Electrocardiogram (ECG)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "Cardiac MRI",
+        "Exercise testing"
+      ],
+      "specialistTests": [
+        "Cardiac catheterization",
+        "CT angiography"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, echocardiographic findings, and hemodynamic assessment. Specific criteria depend on the type of valvular disease (e.g., aortic stenosis defined by aortic valve area <1.0 cm²).",
+      "differentials": [
+        "Coronary artery disease",
+        "Hypertrophic cardiomyopathy",
+        "Pericardial disease",
+        "Pulmonary hypertension"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Diuretics for fluid overload",
+          "Oxygen therapy",
+          "Inotropic support if needed"
+        ],
+        "secondLine": [
+          "Vasodilators (e.g., nitroglycerin) for acute heart failure"
+        ],
+        "procedures": [
+          "Valve replacement or repair (surgical or percutaneous)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with echocardiography",
+          "Lifestyle modifications (diet, exercise)"
+        ],
+        "secondLine": [
+          "Surgical intervention when indicated (e.g., symptomatic severe stenosis)",
+          "Anticoagulation for atrial fibrillation if present"
+        ],
+        "monitoring": [
+          "Regular follow-up with cardiology",
+          "Assessment of symptoms and functional capacity"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that promotes renal excretion of sodium and water.",
+          "dosing": "Initial: 20-40 mg IV/PO; titrate based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal impairment.",
+          "notes": "Monitor renal function and electrolytes."
+        },
+        {
+          "name": "Digoxin",
+          "mechanism": "Increases myocardial contractility and decreases heart rate.",
+          "dosing": "0.125-0.25 mg daily; adjust based on renal function.",
+          "sideEffects": "Nausea, vomiting, arrhythmias, visual disturbances.",
+          "notes": "Monitor for toxicity, especially in renal impairment."
+        },
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist that inhibits clotting factor synthesis.",
+          "dosing": "Initial: 5-10 mg daily; adjust based on INR (target INR 2-3).",
+          "sideEffects": "Bleeding, skin necrosis, drug interactions.",
+          "notes": "Regular INR monitoring required."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Aortic valve replacement (AVR)",
+          "description": "Surgical procedure to replace a diseased aortic valve with a prosthetic valve.",
+          "indications": "Severe aortic stenosis or regurgitation with symptoms or reduced ejection fraction.",
+          "risks": "Bleeding, infection, thromboembolism, valve dysfunction."
+        },
+        {
+          "name": "Mitral valve repair/replacement",
+          "description": "Surgical intervention to correct mitral valve dysfunction.",
+          "indications": "Severe mitral regurgitation with symptoms or left ventricular dysfunction.",
+          "risks": "Similar to AVR, plus potential for atrial fibrillation postoperatively."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies based on the type and severity of valvular disease. Early intervention can significantly improve outcomes, while untreated severe disease can lead to heart failure and increased mortality.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias (e.g., atrial fibrillation)",
+      "Thromboembolic events",
+      "Infective endocarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of valvular heart disease, perform initial assessments, and facilitate appropriate investigations and referrals to cardiology. They should also be aware of the management of acute heart failure and the importance of monitoring patients with chronic valvular disease.",
+    "escalation": "Escalate care to senior medical staff if there are signs of acute heart failure, significant arrhythmias, or if the patient is unstable. Ensure timely referral to cardiology for further evaluation and management.",
+    "keySafetyConsiderations": "Monitor vital signs closely in patients with known valvular heart disease, especially during perioperative periods. Be vigilant for signs of heart failure and arrhythmias, and ensure appropriate anticoagulation management in patients with atrial fibrillation."
+  }
+}

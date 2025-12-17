@@ -1,0 +1,131 @@
+{
+  "id": "essential_tremor",
+  "name": "Essential tremor?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:55:30.182946",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Essential tremor?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEssential tremor (ET) is a common movement disorder characterized by involuntary, rhythmic shaking, primarily affecting the hands, but can also involve the head, voice, and other body parts. It is often mistaken for Parkinson's disease but is distinct in its presentation and pathophysiology.\n\n### Epidemiology\nEssential tremor affects approximately 0.4% to 6% of the population, with prevalence increasing with age. It can occur in both genders but is slightly more common in men. Family history is a significant risk factor, suggesting a genetic component.\n\n### Essential Pathophysiology\nThe exact pathophysiology of essential tremor is not fully understood, but it is believed to involve abnormal oscillatory activity in the central nervous system, particularly in the cerebellum and its connections. Genetic mutations have been identified in some familial cases, indicating a hereditary component.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Rhythmic shaking of the hands, especially when holding objects or performing tasks\n- Tremor may also affect the head, voice, and legs\n- Worsening of tremor with stress, fatigue, or caffeine\n- Improvement of tremor with alcohol consumption\n\n### Key Signs\n- Postural tremor observed when arms are extended\n- Action tremor during voluntary movements\n- No resting tremor, which differentiates it from Parkinson's disease\n\n### Atypical Presentations\n- Tremor may be unilateral at onset\n- Voice tremor may be the primary symptom\n- Tremor may be mistaken for anxiety or other psychiatric conditions\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of tremor\n- Tremor associated with other neurological signs (e.g., rigidity, bradykinesia)\n- Tremor that worsens rapidly or is accompanied by significant disability\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and neurological examination\n- Tremor rating scales (e.g., Fahn-Tolosa-Marin Clinical Rating Scale)\n\n### Second-line Investigations\n- Electromyography (EMG) to assess tremor characteristics\n- Neuroimaging (MRI) if atypical features are present or to rule out secondary causes\n\n### Specialist Tests\n- Genetic testing for familial cases\n- Cerebellar function tests if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of essential tremor is primarily clinical, based on the presence of a bilateral postural or action tremor, with no other neurological signs or symptoms that suggest an alternative diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Parkinson's disease\n- Dystonic tremor\n- Cerebellar tremor\n- Psychogenic tremor\n- Secondary causes (e.g., hyperthyroidism, drug-induced tremor)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and education about the benign nature of the condition\n- Consider short-term use of beta-blockers (e.g., propranolol) for symptomatic relief\n\n#### Second-line Treatments\n- Consider primidone if beta-blockers are ineffective or contraindicated\n\n#### Emergency Procedures\n- Botulinum toxin injections for focal tremors (e.g., head, voice)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term management with beta-blockers (e.g., propranolol) or primidone\n\n#### Second-line Treatments\n- Consider topiramate or gabapentin for refractory cases\n- Surgical options (e.g., deep brain stimulation) for severe cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess tremor severity and treatment efficacy\n- Monitor for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Propranolol\n- **Mechanism of Action**: Non-selective beta-adrenergic antagonist that reduces tremor amplitude and frequency.\n- **Typical Dosing Range**: Start at 40 mg orally, 2-3 times daily; titrate up to 240 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Fatigue, dizziness, bradycardia, hypotension, bronchospasm in asthmatics.\n- **When to Use vs. Alternatives**: Effective for many patients; consider contraindications such as asthma.\n\n#### Primidone\n- **Mechanism of Action**: Anticonvulsant that reduces tremor by modulating GABAergic activity.\n- **Typical Dosing Range**: Start at 50 mg at bedtime; increase gradually to 250-750 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Sedation, dizziness, nausea, potential for cognitive side effects.\n- **When to Use vs. Alternatives**: May be more effective than beta-blockers in some patients.\n\n#### Botulinum toxin\n- **Mechanism of Action**: Inhibits acetylcholine release at the neuromuscular junction, reducing muscle activity.\n- **Typical Dosing Range**: Injections tailored to the affected muscle groups, typically every 3-6 months.\n- **Key Side Effects/Contraindications**: Local muscle weakness, dysphagia, dry mouth.\n- **When to Use vs. Alternatives**: Useful for focal tremors, particularly in the head and voice.\n\n### Procedures\n\n#### Deep Brain Stimulation (DBS)\n- **What it Involves**: Surgical procedure involving the implantation of a device that delivers electrical impulses to specific brain regions to reduce tremor.\n- **Indications**: Severe essential tremor unresponsive to medical therapy, significantly affecting quality of life.\n- **Key Risks/Complications**: Infection, hemorrhage, hardware malfunction, cognitive changes.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nEssential tremor is generally a benign condition, but it can lead to significant functional impairment and disability over time. The tremor may progress, and some patients may require surgical intervention if medical management fails.\n\n### Important Complications to Watch For\n- Social embarrassment and anxiety due to visible tremors\n- Difficulty with daily activities (e.g., eating, writing)\n- Potential for secondary musculoskeletal issues due to compensatory movements\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize essential tremor, provide initial reassurance, and initiate first-line management. They should also be aware of when to refer to a neurologist for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if: 1) the tremor is atypical or rapidly progressive, 2) there are associated neurological signs, or 3) the patient is not responding to initial management.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially in elderly patients. Ensure patients understand the nature of the condition and the importance of adherence to treatment. Provide education on lifestyle modifications that may help manage symptoms, such as reducing caffeine intake and using adaptive devices.\n",
+  "content": {
+    "overview": {
+      "definition": "Essential tremor (ET) is a common movement disorder characterized by involuntary, rhythmic shaking, primarily affecting the hands, but can also involve the head, voice, and other body parts. It is often mistaken for Parkinson's disease but is distinct in its presentation and pathophysiology.",
+      "epidemiology": "Essential tremor affects approximately 0.4% to 6% of the population, with prevalence increasing with age. It can occur in both genders but is slightly more common in men. Family history is a significant risk factor, suggesting a genetic component.",
+      "pathophysiology": "The exact pathophysiology of essential tremor is not fully understood, but it is believed to involve abnormal oscillatory activity in the central nervous system, particularly in the cerebellum and its connections. Genetic mutations have been identified in some familial cases, indicating a hereditary component."
+    },
+    "recognition": {
+      "symptoms": [
+        "Rhythmic shaking of the hands, especially when holding objects or performing tasks",
+        "Tremor may also affect the head, voice, and legs",
+        "Worsening of tremor with stress, fatigue, or caffeine",
+        "Improvement of tremor with alcohol consumption"
+      ],
+      "signs": [
+        "Postural tremor observed when arms are extended",
+        "Action tremor during voluntary movements",
+        "No resting tremor, which differentiates it from Parkinson's disease"
+      ],
+      "atypicalPresentations": [
+        "Tremor may be unilateral at onset",
+        "Voice tremor may be the primary symptom",
+        "Tremor may be mistaken for anxiety or other psychiatric conditions"
+      ],
+      "redFlags": [
+        "Sudden onset of tremor",
+        "Tremor associated with other neurological signs (e.g., rigidity, bradykinesia)",
+        "Tremor that worsens rapidly or is accompanied by significant disability"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and neurological examination",
+        "Tremor rating scales (e.g., Fahn-Tolosa-Marin Clinical Rating Scale)"
+      ],
+      "secondLine": [
+        "Electromyography (EMG) to assess tremor characteristics",
+        "Neuroimaging (MRI) if atypical features are present or to rule out secondary causes"
+      ],
+      "specialistTests": [
+        "Genetic testing for familial cases",
+        "Cerebellar function tests if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of essential tremor is primarily clinical, based on the presence of a bilateral postural or action tremor, with no other neurological signs or symptoms that suggest an alternative diagnosis.",
+      "differentials": [
+        "Parkinson's disease",
+        "Dystonic tremor",
+        "Cerebellar tremor",
+        "Psychogenic tremor",
+        "Secondary causes (e.g., hyperthyroidism, drug-induced tremor)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and education about the benign nature of the condition",
+          "Consider short-term use of beta-blockers (e.g., propranolol) for symptomatic relief"
+        ],
+        "secondLine": [
+          "Consider primidone if beta-blockers are ineffective or contraindicated"
+        ],
+        "procedures": [
+          "Botulinum toxin injections for focal tremors (e.g., head, voice)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term management with beta-blockers (e.g., propranolol) or primidone"
+        ],
+        "secondLine": [
+          "Consider topiramate or gabapentin for refractory cases",
+          "Surgical options (e.g., deep brain stimulation) for severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess tremor severity and treatment efficacy",
+          "Monitor for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Propranolol",
+          "mechanism": "Non-selective beta-adrenergic antagonist that reduces tremor amplitude and frequency.",
+          "dosing": "Start at 40 mg orally, 2-3 times daily; titrate up to 240 mg/day as tolerated.",
+          "sideEffects": "Fatigue, dizziness, bradycardia, hypotension, bronchospasm in asthmatics.",
+          "notes": "Effective for many patients; consider contraindications such as asthma."
+        },
+        {
+          "name": "Primidone",
+          "mechanism": "Anticonvulsant that reduces tremor by modulating GABAergic activity.",
+          "dosing": "Start at 50 mg at bedtime; increase gradually to 250-750 mg/day as tolerated.",
+          "sideEffects": "Sedation, dizziness, nausea, potential for cognitive side effects.",
+          "notes": "May be more effective than beta-blockers in some patients."
+        },
+        {
+          "name": "Botulinum toxin",
+          "mechanism": "Inhibits acetylcholine release at the neuromuscular junction, reducing muscle activity.",
+          "dosing": "Injections tailored to the affected muscle groups, typically every 3-6 months.",
+          "sideEffects": "Local muscle weakness, dysphagia, dry mouth.",
+          "notes": "Useful for focal tremors, particularly in the head and voice."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Deep Brain Stimulation (DBS)",
+          "description": "Surgical procedure involving the implantation of a device that delivers electrical impulses to specific brain regions to reduce tremor.",
+          "indications": "Severe essential tremor unresponsive to medical therapy, significantly affecting quality of life.",
+          "risks": "Infection, hemorrhage, hardware malfunction, cognitive changes."
+        }
+      ]
+    },
+    "prognosis": "Essential tremor is generally a benign condition, but it can lead to significant functional impairment and disability over time. The tremor may progress, and some patients may require surgical intervention if medical management fails.",
+    "complications": [
+      "Social embarrassment and anxiety due to visible tremors",
+      "Difficulty with daily activities (e.g., eating, writing)",
+      "Potential for secondary musculoskeletal issues due to compensatory movements"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize essential tremor, provide initial reassurance, and initiate first-line management. They should also be aware of when to refer to a neurologist for further evaluation and management.",
+    "escalation": "Refer to a neurologist if: 1) the tremor is atypical or rapidly progressive, 2) there are associated neurological signs, or 3) the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially in elderly patients. Ensure patients understand the nature of the condition and the importance of adherence to treatment. Provide education on lifestyle modifications that may help manage symptoms, such as reducing caffeine intake and using adaptive devices."
+  }
+}

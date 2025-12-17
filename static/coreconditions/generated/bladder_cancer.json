@@ -1,0 +1,145 @@
+{
+  "id": "bladder_cancer",
+  "name": "Bladder cancer?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:13:31.865138",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Bladder cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBladder cancer is a malignant neoplasm that arises from the transitional epithelium of the bladder. It is characterized by the uncontrolled growth of abnormal cells in the bladder lining.\n\n### Epidemiology\nBladder cancer is the 10th most common cancer worldwide, with a higher prevalence in men than women. It is most commonly diagnosed in individuals over the age of 55, with risk factors including smoking, exposure to certain chemicals, and chronic bladder irritation.\n\n### Essential Pathophysiology\nBladder cancer typically arises from the urothelium and can be classified into non-muscle invasive (NMIBC) and muscle-invasive bladder cancer (MIBC). Genetic mutations, particularly in the FGFR3, TP53, and RB1 genes, contribute to tumorigenesis. Environmental factors, such as carcinogen exposure, play a significant role in the development of transitional cell carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hematuria (blood in urine)\n- Dysuria (painful urination)\n- Increased frequency of urination\n- Urgency to urinate\n- Pelvic pain\n\n### Key Signs\n- Palpable bladder mass (in advanced cases)\n- Lymphadenopathy (in advanced cases)\n- Weight loss (in advanced cases)\n\n### Atypical Presentations\n- Asymptomatic hematuria\n- Recurrent urinary tract infections\n\n### Red Flags Requiring Immediate Action\n- Persistent hematuria\n- Unexplained weight loss\n- New onset dysuria in older patients\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for hematuria)\n- Urine cytology (to detect malignant cells)\n- Cystoscopy (direct visualization of the bladder)\n\n### Second-line Investigations\n- CT urogram (to assess for upper urinary tract involvement)\n- MRI pelvis (for staging and local invasion assessment)\n\n### Specialist Tests\n- Transurethral resection of bladder tumor (TURBT) for histological diagnosis\n- PET scan (for advanced disease staging)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of bladder tissue obtained via cystoscopy and TURBT, showing malignant cells.\n\n### Key Differential Diagnoses to Exclude\n- Urinary tract infection\n- Benign prostatic hyperplasia (in men)\n- Urolithiasis (kidney stones)\n- Other malignancies (e.g., prostate cancer, renal cell carcinoma)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravesical chemotherapy (e.g., Mitomycin C) after TURBT for NMIBC\n- Pain management and hydration\n\n#### Second-line Treatments\n- Consideration of radical cystectomy for MIBC or recurrent NMIBC\n\n#### Emergency Procedures\n- Transurethral resection of bladder tumor (TURBT) - to remove tumors and obtain tissue for diagnosis.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular cystoscopic surveillance for NMIBC patients (every 3-6 months for the first 2 years)\n- Intravesical Bacillus Calmette-Guérin (BCG) therapy for high-risk NMIBC\n\n#### Second-line Treatments\n- Radical cystectomy with urinary diversion for muscle-invasive disease\n\n#### Monitoring Requirements\n- Regular imaging and cystoscopy to monitor for recurrence or progression.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mitomycin C\n- **Mechanism of Action**: Alkylating agent that inhibits DNA synthesis\n- **Typical Dosing Range**: 40 mg intravesically once a week for 6 weeks\n- **Key Side Effects/Contraindications**: Local irritation, hematuria, bladder spasms\n- **When to Use vs. Alternatives**: Used in NMIBC after TURBT.\n\n#### Bacillus Calmette-Guérin (BCG)\n- **Mechanism of Action**: Immunotherapy that stimulates the immune response against bladder cancer cells\n- **Typical Dosing Range**: Instilled intravesically, typically 1 dose per week for 6 weeks\n- **Key Side Effects/Contraindications**: Flu-like symptoms, dysuria, hematuria\n- **When to Use vs. Alternatives**: First-line treatment for high-risk NMIBC.\n\n#### Gemcitabine\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 1000 mg/m2 intravesically weekly for 6 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, myelosuppression\n- **When to Use vs. Alternatives**: Used in advanced bladder cancer.\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that cross-links DNA\n- **Typical Dosing Range**: 70 mg/m2 IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Used in combination chemotherapy for advanced disease.\n\n### Procedures\n\n#### Transurethral resection of bladder tumor (TURBT)\n- **What it Involves**: A minimally invasive procedure to remove tumors from the bladder using a cystoscope.\n- **Indications**: Diagnosis and treatment of bladder tumors, staging of bladder cancer.\n- **Key Risks/Complications**: Bleeding, infection, perforation of the bladder, urinary retention.\n\n#### Radical cystectomy\n- **What it Involves**: Surgical removal of the bladder and surrounding tissues, often including lymph nodes.\n- **Indications**: Muscle-invasive bladder cancer, recurrent high-risk NMIBC.\n- **Key Risks/Complications**: Infection, bleeding, urinary diversion complications, sexual dysfunction.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for bladder cancer varies based on the stage at diagnosis. NMIBC has a good prognosis with appropriate treatment, while MIBC has a poorer prognosis, with 5-year survival rates ranging from 50-70% depending on the stage.\n\n### Important Complications to Watch For\n- Recurrence of bladder cancer\n- Progression to muscle-invasive disease\n- Urinary incontinence\n- Ureteral obstruction\n- Metastasis to distant organs (e.g., lungs, liver)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of bladder cancer, perform initial assessments, order appropriate investigations, and refer patients for specialist evaluation and management. They should also be aware of the importance of follow-up and monitoring for recurrence.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected bladder cancer should be referred to urology for further evaluation and management. Any patient with red flag symptoms should be escalated urgently.\n\n### Key Safety Considerations\nEnsure proper handling and disposal of cytotoxic agents during treatment. Monitor for signs of infection or complications post-procedure. Educate patients on the importance of follow-up and adherence to surveillance protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "Bladder cancer is a malignant neoplasm that arises from the transitional epithelium of the bladder. It is characterized by the uncontrolled growth of abnormal cells in the bladder lining.",
+      "epidemiology": "Bladder cancer is the 10th most common cancer worldwide, with a higher prevalence in men than women. It is most commonly diagnosed in individuals over the age of 55, with risk factors including smoking, exposure to certain chemicals, and chronic bladder irritation.",
+      "pathophysiology": "Bladder cancer typically arises from the urothelium and can be classified into non-muscle invasive (NMIBC) and muscle-invasive bladder cancer (MIBC). Genetic mutations, particularly in the FGFR3, TP53, and RB1 genes, contribute to tumorigenesis. Environmental factors, such as carcinogen exposure, play a significant role in the development of transitional cell carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hematuria (blood in urine)",
+        "Dysuria (painful urination)",
+        "Increased frequency of urination",
+        "Urgency to urinate",
+        "Pelvic pain"
+      ],
+      "signs": [
+        "Palpable bladder mass (in advanced cases)",
+        "Lymphadenopathy (in advanced cases)",
+        "Weight loss (in advanced cases)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hematuria",
+        "Recurrent urinary tract infections"
+      ],
+      "redFlags": [
+        "Persistent hematuria",
+        "Unexplained weight loss",
+        "New onset dysuria in older patients"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for hematuria)",
+        "Urine cytology (to detect malignant cells)",
+        "Cystoscopy (direct visualization of the bladder)"
+      ],
+      "secondLine": [
+        "CT urogram (to assess for upper urinary tract involvement)",
+        "MRI pelvis (for staging and local invasion assessment)"
+      ],
+      "specialistTests": [
+        "Transurethral resection of bladder tumor (TURBT) for histological diagnosis",
+        "PET scan (for advanced disease staging)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of bladder tissue obtained via cystoscopy and TURBT, showing malignant cells.",
+      "differentials": [
+        "Urinary tract infection",
+        "Benign prostatic hyperplasia (in men)",
+        "Urolithiasis (kidney stones)",
+        "Other malignancies (e.g., prostate cancer, renal cell carcinoma)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravesical chemotherapy (e.g., Mitomycin C) after TURBT for NMIBC",
+          "Pain management and hydration"
+        ],
+        "secondLine": [
+          "Consideration of radical cystectomy for MIBC or recurrent NMIBC"
+        ],
+        "procedures": [
+          "Transurethral resection of bladder tumor (TURBT) - to remove tumors and obtain tissue for diagnosis."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular cystoscopic surveillance for NMIBC patients (every 3-6 months for the first 2 years)",
+          "Intravesical Bacillus Calmette-Guérin (BCG) therapy for high-risk NMIBC"
+        ],
+        "secondLine": [
+          "Radical cystectomy with urinary diversion for muscle-invasive disease"
+        ],
+        "monitoring": [
+          "Regular imaging and cystoscopy to monitor for recurrence or progression."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mitomycin C",
+          "mechanism": "Alkylating agent that inhibits DNA synthesis",
+          "dosing": "40 mg intravesically once a week for 6 weeks",
+          "sideEffects": "Local irritation, hematuria, bladder spasms",
+          "notes": "Used in NMIBC after TURBT."
+        },
+        {
+          "name": "Bacillus Calmette-Guérin (BCG)",
+          "mechanism": "Immunotherapy that stimulates the immune response against bladder cancer cells",
+          "dosing": "Instilled intravesically, typically 1 dose per week for 6 weeks",
+          "sideEffects": "Flu-like symptoms, dysuria, hematuria",
+          "notes": "First-line treatment for high-risk NMIBC."
+        },
+        {
+          "name": "Gemcitabine",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "1000 mg/m2 intravesically weekly for 6 weeks",
+          "sideEffects": "Nausea, vomiting, myelosuppression",
+          "notes": "Used in advanced bladder cancer."
+        },
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that cross-links DNA",
+          "dosing": "70 mg/m2 IV every 3 weeks",
+          "sideEffects": "Nephrotoxicity, ototoxicity, myelosuppression",
+          "notes": "Used in combination chemotherapy for advanced disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transurethral resection of bladder tumor (TURBT)",
+          "description": "A minimally invasive procedure to remove tumors from the bladder using a cystoscope.",
+          "indications": "Diagnosis and treatment of bladder tumors, staging of bladder cancer.",
+          "risks": "Bleeding, infection, perforation of the bladder, urinary retention."
+        },
+        {
+          "name": "Radical cystectomy",
+          "description": "Surgical removal of the bladder and surrounding tissues, often including lymph nodes.",
+          "indications": "Muscle-invasive bladder cancer, recurrent high-risk NMIBC.",
+          "risks": "Infection, bleeding, urinary diversion complications, sexual dysfunction."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for bladder cancer varies based on the stage at diagnosis. NMIBC has a good prognosis with appropriate treatment, while MIBC has a poorer prognosis, with 5-year survival rates ranging from 50-70% depending on the stage.",
+    "complications": [
+      "Recurrence of bladder cancer",
+      "Progression to muscle-invasive disease",
+      "Urinary incontinence",
+      "Ureteral obstruction",
+      "Metastasis to distant organs (e.g., lungs, liver)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of bladder cancer, perform initial assessments, order appropriate investigations, and refer patients for specialist evaluation and management. They should also be aware of the importance of follow-up and monitoring for recurrence.",
+    "escalation": "Patients with suspected bladder cancer should be referred to urology for further evaluation and management. Any patient with red flag symptoms should be escalated urgently.",
+    "keySafetyConsiderations": "Ensure proper handling and disposal of cytotoxic agents during treatment. Monitor for signs of infection or complications post-procedure. Educate patients on the importance of follow-up and adherence to surveillance protocols."
+  }
+}

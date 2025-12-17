@@ -1,0 +1,141 @@
+{
+  "id": "hepatocellular_cancer_and_liver_metastasis",
+  "name": "Hepatocellular cancer and Liver metastasis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:45:28.428901",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hepatocellular cancer and Liver metastasis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHepatocellular carcinoma (HCC) is the most common primary malignancy of the liver, arising from hepatocytes. Liver metastasis refers to the spread of cancer from other organs to the liver, which is a common site for metastatic disease due to its rich blood supply and filtration function.\n\n### Epidemiology\nHCC accounts for approximately 90% of primary liver cancers and is the third leading cause of cancer-related deaths worldwide. Risk factors include chronic hepatitis B and C infections, cirrhosis, alcohol abuse, and non-alcoholic fatty liver disease. Liver metastasis is common in cancers such as colorectal, breast, and lung cancers.\n\n### Essential Pathophysiology\nHCC typically develops in the context of chronic liver disease and cirrhosis, where ongoing inflammation and hepatocyte regeneration lead to genetic mutations. Liver metastasis occurs when cancer cells from a primary tumor invade the bloodstream or lymphatic system and colonize the liver.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unintentional weight loss\n- Loss of appetite\n- Abdominal pain or discomfort\n- Nausea and vomiting\n- Fatigue\n- Jaundice (yellowing of skin and eyes)\n- Ascites (fluid accumulation in the abdomen)\n\n### Key Signs\n- Hepatomegaly (enlarged liver)\n- Splenomegaly (enlarged spleen)\n- Palpable mass in the abdomen\n- Signs of chronic liver disease (e.g., spider angiomata, palmar erythema)\n- Ascites on examination\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute liver failure due to rapid tumor growth\n- Paraneoplastic syndromes (e.g., hypoglycemia, erythrocytosis)\n\n### Red Flags Requiring Immediate Action\n- New-onset jaundice\n- Rapid weight loss\n- Severe abdominal pain\n- Signs of liver failure (e.g., confusion, bleeding)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Alpha-fetoprotein (AFP) levels\n- Ultrasound of the liver\n\n### Second-line Investigations\n- CT scan of the abdomen\n- MRI of the liver\n\n### Specialist Tests\n- Liver biopsy (if diagnosis is uncertain)\n- PET scan (for staging and assessing metastasis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of HCC can be made based on imaging findings (e.g., characteristic lesions on ultrasound, CT, or MRI) in patients with underlying liver disease, or by histological confirmation via biopsy.\n\n### Key Differential Diagnoses to Exclude\n- Cholangiocarcinoma\n- Hepatic adenoma\n- Focal nodular hyperplasia\n- Liver abscess\n- Metastatic disease from other primary cancers\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, pain management)\n- Referral to hepatology or oncology\n\n#### Second-line Treatments\n- Transarterial chemoembolization (TACE) for unresectable tumors\n- Radiofrequency ablation (RFA) for small tumors\n\n#### Emergency Procedures\n- Liver resection (for localized HCC)\n- Liver transplantation (for selected patients with cirrhosis and HCC)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular surveillance with ultrasound and AFP in high-risk patients\n- Management of underlying liver disease (e.g., antiviral therapy for hepatitis)\n\n#### Second-line Treatments\n- Systemic therapy (e.g., sorafenib, lenvatinib) for advanced HCC\n\n#### Monitoring Requirements\n- Regular imaging to assess for tumor progression or recurrence\n- Monitoring for liver function and side effects of treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sorafenib\n- **Mechanism of Action**: Tyrosine kinase inhibitor that inhibits tumor cell proliferation and angiogenesis.\n- **Typical Dosing Range**: 400 mg orally twice daily.\n- **Key Side Effects/Contraindications**: Diarrhea, hand-foot skin reaction, fatigue, hypertension.\n- **When to Use vs. Alternatives**: Used in advanced HCC; monitor for liver function and side effects.\n\n#### Lenvatinib\n- **Mechanism of Action**: Multi-kinase inhibitor that targets VEGFR and FGFR pathways.\n- **Typical Dosing Range**: 8 mg orally once daily for patients ≥60 kg; 4 mg for patients <60 kg.\n- **Key Side Effects/Contraindications**: Hypertension, fatigue, diarrhea, decreased appetite.\n- **When to Use vs. Alternatives**: Alternative to sorafenib in advanced HCC.\n\n### Procedures\n\n#### Transarterial Chemoembolization (TACE)\n- **What it Involves**: A minimally invasive procedure that delivers chemotherapy directly to the tumor while blocking its blood supply.\n- **Indications**: Unresectable HCC, especially in patients with preserved liver function.\n- **Key Risks/Complications**: Post-embolization syndrome (fever, pain), liver failure, infection.\n\n#### Liver Resection\n- **What it Involves**: Surgical removal of the tumor and a margin of healthy liver tissue.\n- **Indications**: Localized HCC in patients with adequate liver function and no cirrhosis.\n- **Key Risks/Complications**: Bleeding, infection, liver failure, complications from anesthesia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for HCC depends on the stage at diagnosis, underlying liver function, and treatment response. Early-stage HCC has a better prognosis with potential for curative treatment, while advanced disease has a poor prognosis.\n\n### Important Complications to Watch For\n- Liver failure\n- Portal hypertension\n- Ascites\n- Bacterial infections (e.g., spontaneous bacterial peritonitis)\n- Metastatic spread to other organs\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of liver disease, perform initial investigations, and refer patients to appropriate specialists. They should also be aware of the management of complications and provide supportive care.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected HCC or liver metastasis should be escalated to a hepatologist or oncologist for further evaluation and management. Immediate referral is necessary for patients with acute liver failure or significant complications.\n\n### Key Safety Considerations\nMonitor liver function tests regularly in patients with liver disease. Be vigilant for signs of liver failure, especially after interventions. Ensure appropriate imaging and follow-up for patients with known liver lesions.\n",
+  "content": {
+    "overview": {
+      "definition": "Hepatocellular carcinoma (HCC) is the most common primary malignancy of the liver, arising from hepatocytes. Liver metastasis refers to the spread of cancer from other organs to the liver, which is a common site for metastatic disease due to its rich blood supply and filtration function.",
+      "epidemiology": "HCC accounts for approximately 90% of primary liver cancers and is the third leading cause of cancer-related deaths worldwide. Risk factors include chronic hepatitis B and C infections, cirrhosis, alcohol abuse, and non-alcoholic fatty liver disease. Liver metastasis is common in cancers such as colorectal, breast, and lung cancers.",
+      "pathophysiology": "HCC typically develops in the context of chronic liver disease and cirrhosis, where ongoing inflammation and hepatocyte regeneration lead to genetic mutations. Liver metastasis occurs when cancer cells from a primary tumor invade the bloodstream or lymphatic system and colonize the liver."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unintentional weight loss",
+        "Loss of appetite",
+        "Abdominal pain or discomfort",
+        "Nausea and vomiting",
+        "Fatigue",
+        "Jaundice (yellowing of skin and eyes)",
+        "Ascites (fluid accumulation in the abdomen)"
+      ],
+      "signs": [
+        "Hepatomegaly (enlarged liver)",
+        "Splenomegaly (enlarged spleen)",
+        "Palpable mass in the abdomen",
+        "Signs of chronic liver disease (e.g., spider angiomata, palmar erythema)",
+        "Ascites on examination"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute liver failure due to rapid tumor growth",
+        "Paraneoplastic syndromes (e.g., hypoglycemia, erythrocytosis)"
+      ],
+      "redFlags": [
+        "New-onset jaundice",
+        "Rapid weight loss",
+        "Severe abdominal pain",
+        "Signs of liver failure (e.g., confusion, bleeding)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Alpha-fetoprotein (AFP) levels",
+        "Ultrasound of the liver"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen",
+        "MRI of the liver"
+      ],
+      "specialistTests": [
+        "Liver biopsy (if diagnosis is uncertain)",
+        "PET scan (for staging and assessing metastasis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of HCC can be made based on imaging findings (e.g., characteristic lesions on ultrasound, CT, or MRI) in patients with underlying liver disease, or by histological confirmation via biopsy.",
+      "differentials": [
+        "Cholangiocarcinoma",
+        "Hepatic adenoma",
+        "Focal nodular hyperplasia",
+        "Liver abscess",
+        "Metastatic disease from other primary cancers"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, pain management)",
+          "Referral to hepatology or oncology"
+        ],
+        "secondLine": [
+          "Transarterial chemoembolization (TACE) for unresectable tumors",
+          "Radiofrequency ablation (RFA) for small tumors"
+        ],
+        "procedures": [
+          "Liver resection (for localized HCC)",
+          "Liver transplantation (for selected patients with cirrhosis and HCC)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular surveillance with ultrasound and AFP in high-risk patients",
+          "Management of underlying liver disease (e.g., antiviral therapy for hepatitis)"
+        ],
+        "secondLine": [
+          "Systemic therapy (e.g., sorafenib, lenvatinib) for advanced HCC"
+        ],
+        "monitoring": [
+          "Regular imaging to assess for tumor progression or recurrence",
+          "Monitoring for liver function and side effects of treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sorafenib",
+          "mechanism": "Tyrosine kinase inhibitor that inhibits tumor cell proliferation and angiogenesis.",
+          "dosing": "400 mg orally twice daily.",
+          "sideEffects": "Diarrhea, hand-foot skin reaction, fatigue, hypertension.",
+          "notes": "Used in advanced HCC; monitor for liver function and side effects."
+        },
+        {
+          "name": "Lenvatinib",
+          "mechanism": "Multi-kinase inhibitor that targets VEGFR and FGFR pathways.",
+          "dosing": "8 mg orally once daily for patients ≥60 kg; 4 mg for patients <60 kg.",
+          "sideEffects": "Hypertension, fatigue, diarrhea, decreased appetite.",
+          "notes": "Alternative to sorafenib in advanced HCC."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transarterial Chemoembolization (TACE)",
+          "description": "A minimally invasive procedure that delivers chemotherapy directly to the tumor while blocking its blood supply.",
+          "indications": "Unresectable HCC, especially in patients with preserved liver function.",
+          "risks": "Post-embolization syndrome (fever, pain), liver failure, infection."
+        },
+        {
+          "name": "Liver Resection",
+          "description": "Surgical removal of the tumor and a margin of healthy liver tissue.",
+          "indications": "Localized HCC in patients with adequate liver function and no cirrhosis.",
+          "risks": "Bleeding, infection, liver failure, complications from anesthesia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for HCC depends on the stage at diagnosis, underlying liver function, and treatment response. Early-stage HCC has a better prognosis with potential for curative treatment, while advanced disease has a poor prognosis.",
+    "complications": [
+      "Liver failure",
+      "Portal hypertension",
+      "Ascites",
+      "Bacterial infections (e.g., spontaneous bacterial peritonitis)",
+      "Metastatic spread to other organs"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of liver disease, perform initial investigations, and refer patients to appropriate specialists. They should also be aware of the management of complications and provide supportive care.",
+    "escalation": "Patients with suspected HCC or liver metastasis should be escalated to a hepatologist or oncologist for further evaluation and management. Immediate referral is necessary for patients with acute liver failure or significant complications.",
+    "keySafetyConsiderations": "Monitor liver function tests regularly in patients with liver disease. Be vigilant for signs of liver failure, especially after interventions. Ensure appropriate imaging and follow-up for patients with known liver lesions."
+  }
+}

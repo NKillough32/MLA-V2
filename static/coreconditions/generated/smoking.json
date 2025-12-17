@@ -1,0 +1,141 @@
+{
+  "id": "smoking",
+  "name": "Smoking",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:08:44.053652",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Smoking: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSmoking is the inhalation of the smoke of burning tobacco encased in cigarettes, cigars, or pipes. It is a major risk factor for various health conditions, including respiratory diseases, cardiovascular diseases, and cancers.\n\n### Epidemiology\nGlobally, smoking is responsible for approximately 8 million deaths annually. In the UK, around 14% of adults smoke, with higher prevalence in certain demographics, including those with lower socioeconomic status.\n\n### Essential Pathophysiology\nNicotine, the primary addictive substance in tobacco, stimulates the release of neurotransmitters such as dopamine, leading to addiction. Smoking causes chronic inflammation, oxidative stress, and damage to the respiratory epithelium, contributing to diseases such as chronic obstructive pulmonary disease (COPD) and lung cancer.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cough\n- Sputum production\n- Shortness of breath\n- Wheezing\n- Chest pain\n- Fatigue\n\n### Key Signs\n- Cyanosis\n- Clubbing of fingers\n- Wheezing on auscultation\n- Decreased breath sounds\n- Signs of chronic bronchitis (e.g., productive cough)\n\n### Atypical Presentations\n- Anxiety or depression exacerbated by withdrawal\n- Unexplained weight loss\n- Frequent respiratory infections\n\n### Red Flags Requiring Immediate Action\n- Hemoptysis (coughing up blood)\n- Severe shortness of breath\n- Chest pain with radiation to the arm or jaw\n- Unexplained weight loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Patient history and smoking status assessment\n- Physical examination\n- Spirometry (to assess lung function)\n\n### Second-line Investigations\n- Chest X-ray (to rule out lung pathology)\n- CT scan of the chest (if lung cancer is suspected)\n- Blood tests (e.g., full blood count, inflammatory markers)\n\n### Specialist Tests\n- Bronchoscopy (if lung cancer or other pathology is suspected)\n- Pulmonary function tests (to assess for COPD or asthma)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of smoking-related conditions is based on clinical history, physical examination, and relevant investigations. For nicotine dependence, the DSM-5 criteria can be used, which includes tolerance, withdrawal symptoms, and continued use despite harm.\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD)\n- Asthma\n- Lung cancer\n- Pulmonary fibrosis\n- Tuberculosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (if hypoxic)\n- Bronchodilators (e.g., salbutamol) for wheezing\n\n#### Second-line Treatments\n- Corticosteroids (if exacerbation of COPD or asthma)\n\n#### Emergency Procedures\n- Intubation and mechanical ventilation (in severe respiratory failure)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Smoking cessation programs (behavioral therapy, counseling)\n- Nicotine replacement therapy (NRT)\n\n#### Second-line Treatments\n- Bupropion (Zyban)\n- Varenicline (Champix)\n\n#### Monitoring Requirements\n- Regular follow-up to assess smoking status and withdrawal symptoms\n- Monitoring for complications of smoking (e.g., lung function tests)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Nicotine Replacement Therapy (NRT)\n- **Mechanism of Action**: Provides a controlled dose of nicotine to reduce withdrawal symptoms and cravings.\n- **Typical Dosing Range**: Varies by product (patch, gum, lozenge); typically, patches are applied daily, while gum/lozenges are used as needed.\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness, insomnia.\n- **When to Use vs. Alternatives**: Consider in patients who are motivated to quit; can be combined with behavioral therapy.\n\n#### Bupropion (Zyban)\n- **Mechanism of Action**: Atypical antidepressant that reduces cravings and withdrawal symptoms.\n- **Typical Dosing Range**: 150 mg daily for 3 days, then increase to 300 mg daily.\n- **Key Side Effects/Contraindications**: Insomnia, dry mouth, increased risk of seizures.\n- **When to Use vs. Alternatives**: Contraindicated in patients with a history of seizures or eating disorders.\n\n#### Varenicline (Champix)\n- **Mechanism of Action**: Partial agonist at nicotinic receptors, reducing cravings and withdrawal symptoms.\n- **Typical Dosing Range**: Start with 0.5 mg daily for 3 days, then 0.5 mg twice daily for 4 days, then increase to 1 mg twice daily.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, vivid dreams, increased risk of psychiatric symptoms.\n- **When to Use vs. Alternatives**: Monitor for mood changes; consider referral to psychiatry if needed.\n\n### Procedures\n\n#### Bronchoscopy\n- **What it Involves**: A procedure that allows direct visualization of the airways using a flexible tube with a camera.\n- **Indications**: Suspected lung cancer, persistent cough, or abnormal imaging findings.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax, respiratory distress.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nSmoking cessation significantly improves health outcomes, reducing the risk of smoking-related diseases. The prognosis varies based on the duration and intensity of smoking, as well as the presence of comorbid conditions.\n\n### Important Complications to Watch For\n- Chronic obstructive pulmonary disease (COPD)\n- Lung cancer\n- Cardiovascular diseases (e.g., myocardial infarction, stroke)\n- Respiratory infections\n- Reduced quality of life\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess smoking status, provide brief interventions for smoking cessation, and refer to specialized services as needed. They should also monitor for complications of smoking-related diseases.\n\n### When to Escalate to Senior/Specialist\nRefer to a smoking cessation specialist if the patient is unable to quit after multiple attempts or if there are significant comorbidities affecting management.\n\n### Key Safety Considerations\nEnsure to assess for contraindications to pharmacotherapy (e.g., history of seizures for bupropion). Monitor for side effects of medications and provide support for withdrawal symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Smoking is the inhalation of the smoke of burning tobacco encased in cigarettes, cigars, or pipes. It is a major risk factor for various health conditions, including respiratory diseases, cardiovascular diseases, and cancers.",
+      "epidemiology": "Globally, smoking is responsible for approximately 8 million deaths annually. In the UK, around 14% of adults smoke, with higher prevalence in certain demographics, including those with lower socioeconomic status.",
+      "pathophysiology": "Nicotine, the primary addictive substance in tobacco, stimulates the release of neurotransmitters such as dopamine, leading to addiction. Smoking causes chronic inflammation, oxidative stress, and damage to the respiratory epithelium, contributing to diseases such as chronic obstructive pulmonary disease (COPD) and lung cancer."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cough",
+        "Sputum production",
+        "Shortness of breath",
+        "Wheezing",
+        "Chest pain",
+        "Fatigue"
+      ],
+      "signs": [
+        "Cyanosis",
+        "Clubbing of fingers",
+        "Wheezing on auscultation",
+        "Decreased breath sounds",
+        "Signs of chronic bronchitis (e.g., productive cough)"
+      ],
+      "atypicalPresentations": [
+        "Anxiety or depression exacerbated by withdrawal",
+        "Unexplained weight loss",
+        "Frequent respiratory infections"
+      ],
+      "redFlags": [
+        "Hemoptysis (coughing up blood)",
+        "Severe shortness of breath",
+        "Chest pain with radiation to the arm or jaw",
+        "Unexplained weight loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Patient history and smoking status assessment",
+        "Physical examination",
+        "Spirometry (to assess lung function)"
+      ],
+      "secondLine": [
+        "Chest X-ray (to rule out lung pathology)",
+        "CT scan of the chest (if lung cancer is suspected)",
+        "Blood tests (e.g., full blood count, inflammatory markers)"
+      ],
+      "specialistTests": [
+        "Bronchoscopy (if lung cancer or other pathology is suspected)",
+        "Pulmonary function tests (to assess for COPD or asthma)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of smoking-related conditions is based on clinical history, physical examination, and relevant investigations. For nicotine dependence, the DSM-5 criteria can be used, which includes tolerance, withdrawal symptoms, and continued use despite harm.",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Asthma",
+        "Lung cancer",
+        "Pulmonary fibrosis",
+        "Tuberculosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (if hypoxic)",
+          "Bronchodilators (e.g., salbutamol) for wheezing"
+        ],
+        "secondLine": [
+          "Corticosteroids (if exacerbation of COPD or asthma)"
+        ],
+        "procedures": [
+          "Intubation and mechanical ventilation (in severe respiratory failure)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Smoking cessation programs (behavioral therapy, counseling)",
+          "Nicotine replacement therapy (NRT)"
+        ],
+        "secondLine": [
+          "Bupropion (Zyban)",
+          "Varenicline (Champix)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess smoking status and withdrawal symptoms",
+          "Monitoring for complications of smoking (e.g., lung function tests)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Nicotine Replacement Therapy (NRT)",
+          "mechanism": "Provides a controlled dose of nicotine to reduce withdrawal symptoms and cravings.",
+          "dosing": "Varies by product (patch, gum, lozenge); typically, patches are applied daily, while gum/lozenges are used as needed.",
+          "sideEffects": "Nausea, headache, dizziness, insomnia.",
+          "notes": "Consider in patients who are motivated to quit; can be combined with behavioral therapy."
+        },
+        {
+          "name": "Bupropion (Zyban)",
+          "mechanism": "Atypical antidepressant that reduces cravings and withdrawal symptoms.",
+          "dosing": "150 mg daily for 3 days, then increase to 300 mg daily.",
+          "sideEffects": "Insomnia, dry mouth, increased risk of seizures.",
+          "notes": "Contraindicated in patients with a history of seizures or eating disorders."
+        },
+        {
+          "name": "Varenicline (Champix)",
+          "mechanism": "Partial agonist at nicotinic receptors, reducing cravings and withdrawal symptoms.",
+          "dosing": "Start with 0.5 mg daily for 3 days, then 0.5 mg twice daily for 4 days, then increase to 1 mg twice daily.",
+          "sideEffects": "Nausea, insomnia, vivid dreams, increased risk of psychiatric symptoms.",
+          "notes": "Monitor for mood changes; consider referral to psychiatry if needed."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bronchoscopy",
+          "description": "A procedure that allows direct visualization of the airways using a flexible tube with a camera.",
+          "indications": "Suspected lung cancer, persistent cough, or abnormal imaging findings.",
+          "risks": "Bleeding, infection, pneumothorax, respiratory distress."
+        }
+      ]
+    },
+    "prognosis": "Smoking cessation significantly improves health outcomes, reducing the risk of smoking-related diseases. The prognosis varies based on the duration and intensity of smoking, as well as the presence of comorbid conditions.",
+    "complications": [
+      "Chronic obstructive pulmonary disease (COPD)",
+      "Lung cancer",
+      "Cardiovascular diseases (e.g., myocardial infarction, stroke)",
+      "Respiratory infections",
+      "Reduced quality of life"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess smoking status, provide brief interventions for smoking cessation, and refer to specialized services as needed. They should also monitor for complications of smoking-related diseases.",
+    "escalation": "Refer to a smoking cessation specialist if the patient is unable to quit after multiple attempts or if there are significant comorbidities affecting management.",
+    "keySafetyConsiderations": "Ensure to assess for contraindications to pharmacotherapy (e.g., history of seizures for bupropion). Monitor for side effects of medications and provide support for withdrawal symptoms."
+  }
+}

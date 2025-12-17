@@ -1,0 +1,133 @@
+{
+  "id": "pituitary_tumours",
+  "name": "Pituitary tumours",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:34:47.591060",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pituitary tumours: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPituitary tumours are abnormal growths that develop in the pituitary gland, which is located at the base of the brain and is responsible for regulating various hormonal functions in the body.\n\n### Epidemiology\nPituitary tumours are relatively common, with an estimated prevalence of 1 in 1,000 individuals. They can occur at any age but are most frequently diagnosed in adults aged 30-50 years. Approximately 10-15% of these tumours are malignant.\n\n### Essential Pathophysiology\nPituitary tumours can be classified as functional (hormone-secreting) or non-functional (non-hormone-secreting). Functional tumours secrete excess hormones, leading to various endocrine disorders, while non-functional tumours may cause symptoms primarily due to mass effect, such as headaches or visual disturbances.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Visual disturbances (e.g., bitemporal hemianopsia)\n- Hormonal imbalances (e.g., Cushing's syndrome, acromegaly, hyperprolactinemia)\n- Fatigue\n- Weight changes\n\n### Key Signs\n- Enlarged sella turcica on imaging\n- Elevated hormone levels (e.g., cortisol, growth hormone, prolactin)\n- Neurological deficits (e.g., cranial nerve palsies)\n\n### Atypical Presentations\n- Seizures\n- Hypopituitarism (due to compression of surrounding pituitary tissue)\n- Psychiatric symptoms\n\n### Red Flags Requiring Immediate Action\n- Rapidly worsening headaches\n- Sudden onset of visual loss\n- Signs of pituitary apoplexy (sudden headache, visual changes, altered consciousness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum hormone levels (e.g., prolactin, cortisol, IGF-1)\n- MRI of the pituitary gland\n\n### Second-line Investigations\n- Visual field testing\n- CT scan (if MRI is contraindicated)\n\n### Specialist Tests\n- Dynamic endocrine testing (e.g., suppression tests for Cushing's syndrome)\n- Genetic testing for familial syndromes (e.g., MEN1)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings (MRI), and hormonal assays. A pituitary tumour is confirmed if there is a mass on MRI and corresponding hormonal abnormalities.\n\n### Key Differential Diagnoses to Exclude\n- Craniopharyngioma\n- Meningioma\n- Adenoma of the pituitary gland\n- Metastatic disease\n- Hypothalamic tumours\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate neurosurgical consultation for suspected pituitary apoplexy\n- Steroid replacement therapy if adrenal insufficiency is suspected\n\n#### Second-line Treatments\n- Consideration of transsphenoidal surgery for decompression\n\n#### Emergency Procedures\n- Transsphenoidal resection of pituitary tumour\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of hormone levels and visual fields\n- Medical management of hormone excess (e.g., dopamine agonists for prolactinomas)\n\n#### Second-line Treatments\n- Radiotherapy for residual or recurrent tumours\n\n#### Monitoring Requirements\n- Regular follow-up with endocrinology and neurosurgery\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cabergoline\n- **Mechanism of Action**: Dopamine agonist that inhibits prolactin secretion\n- **Typical Dosing Range**: 0.5-1 mg twice weekly, titrate as needed\n- **Key Side Effects/Contraindications**: Nausea, dizziness, orthostatic hypotension\n- **When to Use vs. Alternatives**: First-line treatment for prolactinomas.\n\n#### Octreotide\n- **Mechanism of Action**: Somatostatin analogue that inhibits growth hormone secretion\n- **Typical Dosing Range**: 50-100 mcg subcutaneously 2-3 times daily\n- **Key Side Effects/Contraindications**: Gastrointestinal disturbances, gallstones\n- **When to Use vs. Alternatives**: Used for acromegaly.\n\n#### Bromocriptine\n- **Mechanism of Action**: Dopamine agonist that inhibits prolactin secretion\n- **Typical Dosing Range**: 1.25-2.5 mg daily, titrate as needed\n- **Key Side Effects/Contraindications**: Nausea, headache, dizziness\n- **When to Use vs. Alternatives**: Alternative to cabergoline for prolactinomas.\n\n### Procedures\n\n#### Transsphenoidal surgery\n- **What it Involves**: A minimally invasive surgical procedure to remove pituitary tumours through the nasal cavity.\n- **Indications**: Indicated for symptomatic tumours, particularly those causing visual disturbances or hormonal excess.\n- **Key Risks/Complications**: Risk of cerebrospinal fluid leak, infection, pituitary dysfunction, and neurological deficits.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for patients with pituitary tumours varies based on the type of tumour, size, and treatment response. Functional tumours often have a good prognosis with appropriate management, while non-functional tumours may require more aggressive treatment.\n\n### Important Complications to Watch For\n- Hypopituitarism\n- Visual field defects\n- Recurrence of the tumour\n- Cerebrospinal fluid leak\n- Infection\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of pituitary tumours, perform initial assessments, order appropriate investigations, and refer patients to specialists. They should also be aware of the management protocols and follow-up care.\n\n### When to Escalate to Senior/Specialist\nPatients with acute symptoms such as severe headaches, visual changes, or signs of pituitary apoplexy should be escalated to senior medical staff or neurosurgery immediately.\n\n### Key Safety Considerations\nEnsure timely imaging and hormonal assessment in patients with suspected pituitary tumours. Monitor for signs of pituitary apoplexy and manage adrenal insufficiency promptly.\n",
+  "content": {
+    "overview": {
+      "definition": "Pituitary tumours are abnormal growths that develop in the pituitary gland, which is located at the base of the brain and is responsible for regulating various hormonal functions in the body.",
+      "epidemiology": "Pituitary tumours are relatively common, with an estimated prevalence of 1 in 1,000 individuals. They can occur at any age but are most frequently diagnosed in adults aged 30-50 years. Approximately 10-15% of these tumours are malignant.",
+      "pathophysiology": "Pituitary tumours can be classified as functional (hormone-secreting) or non-functional (non-hormone-secreting). Functional tumours secrete excess hormones, leading to various endocrine disorders, while non-functional tumours may cause symptoms primarily due to mass effect, such as headaches or visual disturbances."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Visual disturbances (e.g., bitemporal hemianopsia)",
+        "Hormonal imbalances (e.g., Cushing's syndrome, acromegaly, hyperprolactinemia)",
+        "Fatigue",
+        "Weight changes"
+      ],
+      "signs": [
+        "Enlarged sella turcica on imaging",
+        "Elevated hormone levels (e.g., cortisol, growth hormone, prolactin)",
+        "Neurological deficits (e.g., cranial nerve palsies)"
+      ],
+      "atypicalPresentations": [
+        "Seizures",
+        "Hypopituitarism (due to compression of surrounding pituitary tissue)",
+        "Psychiatric symptoms"
+      ],
+      "redFlags": [
+        "Rapidly worsening headaches",
+        "Sudden onset of visual loss",
+        "Signs of pituitary apoplexy (sudden headache, visual changes, altered consciousness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum hormone levels (e.g., prolactin, cortisol, IGF-1)",
+        "MRI of the pituitary gland"
+      ],
+      "secondLine": [
+        "Visual field testing",
+        "CT scan (if MRI is contraindicated)"
+      ],
+      "specialistTests": [
+        "Dynamic endocrine testing (e.g., suppression tests for Cushing's syndrome)",
+        "Genetic testing for familial syndromes (e.g., MEN1)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings (MRI), and hormonal assays. A pituitary tumour is confirmed if there is a mass on MRI and corresponding hormonal abnormalities.",
+      "differentials": [
+        "Craniopharyngioma",
+        "Meningioma",
+        "Adenoma of the pituitary gland",
+        "Metastatic disease",
+        "Hypothalamic tumours"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate neurosurgical consultation for suspected pituitary apoplexy",
+          "Steroid replacement therapy if adrenal insufficiency is suspected"
+        ],
+        "secondLine": [
+          "Consideration of transsphenoidal surgery for decompression"
+        ],
+        "procedures": [
+          "Transsphenoidal resection of pituitary tumour"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of hormone levels and visual fields",
+          "Medical management of hormone excess (e.g., dopamine agonists for prolactinomas)"
+        ],
+        "secondLine": [
+          "Radiotherapy for residual or recurrent tumours"
+        ],
+        "monitoring": [
+          "Regular follow-up with endocrinology and neurosurgery"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cabergoline",
+          "mechanism": "Dopamine agonist that inhibits prolactin secretion",
+          "dosing": "0.5-1 mg twice weekly, titrate as needed",
+          "sideEffects": "Nausea, dizziness, orthostatic hypotension",
+          "notes": "First-line treatment for prolactinomas."
+        },
+        {
+          "name": "Octreotide",
+          "mechanism": "Somatostatin analogue that inhibits growth hormone secretion",
+          "dosing": "50-100 mcg subcutaneously 2-3 times daily",
+          "sideEffects": "Gastrointestinal disturbances, gallstones",
+          "notes": "Used for acromegaly."
+        },
+        {
+          "name": "Bromocriptine",
+          "mechanism": "Dopamine agonist that inhibits prolactin secretion",
+          "dosing": "1.25-2.5 mg daily, titrate as needed",
+          "sideEffects": "Nausea, headache, dizziness",
+          "notes": "Alternative to cabergoline for prolactinomas."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Transsphenoidal surgery",
+          "description": "A minimally invasive surgical procedure to remove pituitary tumours through the nasal cavity.",
+          "indications": "Indicated for symptomatic tumours, particularly those causing visual disturbances or hormonal excess.",
+          "risks": "Risk of cerebrospinal fluid leak, infection, pituitary dysfunction, and neurological deficits."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for patients with pituitary tumours varies based on the type of tumour, size, and treatment response. Functional tumours often have a good prognosis with appropriate management, while non-functional tumours may require more aggressive treatment.",
+    "complications": [
+      "Hypopituitarism",
+      "Visual field defects",
+      "Recurrence of the tumour",
+      "Cerebrospinal fluid leak",
+      "Infection"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of pituitary tumours, perform initial assessments, order appropriate investigations, and refer patients to specialists. They should also be aware of the management protocols and follow-up care.",
+    "escalation": "Patients with acute symptoms such as severe headaches, visual changes, or signs of pituitary apoplexy should be escalated to senior medical staff or neurosurgery immediately.",
+    "keySafetyConsiderations": "Ensure timely imaging and hormonal assessment in patients with suspected pituitary tumours. Monitor for signs of pituitary apoplexy and manage adrenal insufficiency promptly."
+  }
+}

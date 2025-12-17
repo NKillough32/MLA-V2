@@ -1,0 +1,142 @@
+{
+  "id": "right_heart_valve",
+  "name": "Right heart valve",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:13:49.967470",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Right heart valve: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRight heart valve disease refers to any dysfunction of the valves on the right side of the heart, primarily the tricuspid and pulmonary valves, which can lead to impaired blood flow and various cardiovascular complications.\n\n### Epidemiology\nRight heart valve disease is less common than left heart valve disease but can occur in various populations, particularly in patients with congenital heart defects, rheumatic fever, and those with a history of pulmonary hypertension. It is often underdiagnosed due to its subtle presentation.\n\n### Essential Pathophysiology\nDysfunction of the right heart valves can lead to either stenosis (narrowing) or regurgitation (leakage). Tricuspid stenosis can cause increased right atrial pressure, leading to right heart failure, while tricuspid regurgitation can result in volume overload of the right atrium and ventricle, causing dilation and further heart failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Swelling in the legs and abdomen (edema)\n- Palpitations\n- Shortness of breath (dyspnea)\n- Cyanosis (bluish discoloration of the skin)\n\n### Key Signs\n- Elevated jugular venous pressure (JVP)\n- Hepatomegaly\n- Pulsatile liver\n- Murmurs (tricuspid or pulmonary)\n- Peripheral edema\n\n### Atypical Presentations\n- Syncope\n- Chest pain\n- Exercise intolerance\n\n### Red Flags Requiring Immediate Action\n- Severe dyspnea at rest\n- Rapid weight gain due to fluid retention\n- Signs of right heart failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (transthoracic or transesophageal)\n- Electrocardiogram (ECG)\n- Chest X-ray\n\n### Second-line Investigations\n- Cardiac MRI\n- CT angiography\n\n### Specialist Tests\n- Right heart catheterization\n- Exercise testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, echocardiographic findings, and hemodynamic assessment. Key echocardiographic criteria include valve morphology, gradients across the valve, and assessment of right heart chamber sizes.\n\n### Key Differential Diagnoses to Exclude\n- Left heart valve disease\n- Cor pulmonale\n- Pulmonary embolism\n- Congenital heart disease (e.g., Ebstein's anomaly)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Diuretics for fluid overload\n- Oxygen therapy for hypoxia\n- Inotropic support if in shock\n\n#### Second-line Treatments\n- Vasodilators (e.g., nitroglycerin) for acute pulmonary hypertension\n\n#### Emergency Procedures\n- Tricuspid valve repair or replacement\n- Pulmonary valve replacement\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with echocardiography\n- Management of heart failure symptoms (e.g., diuretics)\n\n#### Second-line Treatments\n- Surgical intervention for severe cases\n\n#### Monitoring Requirements\n- Regular follow-up for symptom progression and echocardiographic changes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; may increase based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, hypotension.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Digoxin\n- **Mechanism of Action**: Increases myocardial contractility and decreases heart rate by inhibiting Na+/K+ ATPase.\n- **Typical Dosing Range**: 0.125-0.25 mg PO daily; adjust based on renal function.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, arrhythmias, visual disturbances.\n- **When to Use vs. Alternatives**: Monitor serum digoxin levels and renal function.\n\n#### Beta-blockers (e.g., Metoprolol)\n- **Mechanism of Action**: Reduces heart rate and myocardial oxygen demand, improves symptoms of heart failure.\n- **Typical Dosing Range**: Start at 25-50 mg PO daily; titrate based on tolerance.\n- **Key Side Effects/Contraindications**: Bradycardia, fatigue, hypotension.\n- **When to Use vs. Alternatives**: Caution in patients with asthma or severe bradycardia.\n\n### Procedures\n\n#### Tricuspid valve repair\n- **What it Involves**: Surgical procedure to correct tricuspid valve dysfunction, often via annuloplasty or leaflet repair.\n- **Indications**: Severe tricuspid regurgitation causing heart failure symptoms.\n- **Key Risks/Complications**: Bleeding, infection, valve dysfunction post-repair.\n\n#### Pulmonary valve replacement\n- **What it Involves**: Surgical replacement of the pulmonary valve, often indicated in severe pulmonary stenosis or regurgitation.\n- **Indications**: Severe pulmonary valve disease with symptoms or right heart failure.\n- **Key Risks/Complications**: Bleeding, infection, prosthetic valve complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of right heart valve disease varies based on the severity of the valve dysfunction and the presence of other comorbidities. Early diagnosis and management can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Right heart failure\n- Atrial fibrillation\n- Thromboembolic events\n- Infective endocarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of right heart valve disease, performing initial assessments, and understanding the importance of timely referrals for echocardiography and specialist evaluation.\n\n### When to Escalate to Senior/Specialist\nPatients with acute decompensated heart failure or severe symptoms should be escalated to a senior clinician or cardiology team immediately for further management.\n\n### Key Safety Considerations\nMonitor for signs of fluid overload, electrolyte imbalances, and ensure appropriate follow-up for patients with known valve disease.\n",
+  "content": {
+    "overview": {
+      "definition": "Right heart valve disease refers to any dysfunction of the valves on the right side of the heart, primarily the tricuspid and pulmonary valves, which can lead to impaired blood flow and various cardiovascular complications.",
+      "epidemiology": "Right heart valve disease is less common than left heart valve disease but can occur in various populations, particularly in patients with congenital heart defects, rheumatic fever, and those with a history of pulmonary hypertension. It is often underdiagnosed due to its subtle presentation.",
+      "pathophysiology": "Dysfunction of the right heart valves can lead to either stenosis (narrowing) or regurgitation (leakage). Tricuspid stenosis can cause increased right atrial pressure, leading to right heart failure, while tricuspid regurgitation can result in volume overload of the right atrium and ventricle, causing dilation and further heart failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Swelling in the legs and abdomen (edema)",
+        "Palpitations",
+        "Shortness of breath (dyspnea)",
+        "Cyanosis (bluish discoloration of the skin)"
+      ],
+      "signs": [
+        "Elevated jugular venous pressure (JVP)",
+        "Hepatomegaly",
+        "Pulsatile liver",
+        "Murmurs (tricuspid or pulmonary)",
+        "Peripheral edema"
+      ],
+      "atypicalPresentations": [
+        "Syncope",
+        "Chest pain",
+        "Exercise intolerance"
+      ],
+      "redFlags": [
+        "Severe dyspnea at rest",
+        "Rapid weight gain due to fluid retention",
+        "Signs of right heart failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (transthoracic or transesophageal)",
+        "Electrocardiogram (ECG)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "Cardiac MRI",
+        "CT angiography"
+      ],
+      "specialistTests": [
+        "Right heart catheterization",
+        "Exercise testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, echocardiographic findings, and hemodynamic assessment. Key echocardiographic criteria include valve morphology, gradients across the valve, and assessment of right heart chamber sizes.",
+      "differentials": [
+        "Left heart valve disease",
+        "Cor pulmonale",
+        "Pulmonary embolism",
+        "Congenital heart disease (e.g., Ebstein's anomaly)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Diuretics for fluid overload",
+          "Oxygen therapy for hypoxia",
+          "Inotropic support if in shock"
+        ],
+        "secondLine": [
+          "Vasodilators (e.g., nitroglycerin) for acute pulmonary hypertension"
+        ],
+        "procedures": [
+          "Tricuspid valve repair or replacement",
+          "Pulmonary valve replacement"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with echocardiography",
+          "Management of heart failure symptoms (e.g., diuretics)"
+        ],
+        "secondLine": [
+          "Surgical intervention for severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom progression and echocardiographic changes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.",
+          "dosing": "Initial: 20-40 mg IV/PO; may increase based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, hypotension.",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Digoxin",
+          "mechanism": "Increases myocardial contractility and decreases heart rate by inhibiting Na+/K+ ATPase.",
+          "dosing": "0.125-0.25 mg PO daily; adjust based on renal function.",
+          "sideEffects": "Nausea, vomiting, arrhythmias, visual disturbances.",
+          "notes": "Monitor serum digoxin levels and renal function."
+        },
+        {
+          "name": "Beta-blockers (e.g., Metoprolol)",
+          "mechanism": "Reduces heart rate and myocardial oxygen demand, improves symptoms of heart failure.",
+          "dosing": "Start at 25-50 mg PO daily; titrate based on tolerance.",
+          "sideEffects": "Bradycardia, fatigue, hypotension.",
+          "notes": "Caution in patients with asthma or severe bradycardia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tricuspid valve repair",
+          "description": "Surgical procedure to correct tricuspid valve dysfunction, often via annuloplasty or leaflet repair.",
+          "indications": "Severe tricuspid regurgitation causing heart failure symptoms.",
+          "risks": "Bleeding, infection, valve dysfunction post-repair."
+        },
+        {
+          "name": "Pulmonary valve replacement",
+          "description": "Surgical replacement of the pulmonary valve, often indicated in severe pulmonary stenosis or regurgitation.",
+          "indications": "Severe pulmonary valve disease with symptoms or right heart failure.",
+          "risks": "Bleeding, infection, prosthetic valve complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of right heart valve disease varies based on the severity of the valve dysfunction and the presence of other comorbidities. Early diagnosis and management can significantly improve outcomes.",
+    "complications": [
+      "Right heart failure",
+      "Atrial fibrillation",
+      "Thromboembolic events",
+      "Infective endocarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of right heart valve disease, performing initial assessments, and understanding the importance of timely referrals for echocardiography and specialist evaluation.",
+    "escalation": "Patients with acute decompensated heart failure or severe symptoms should be escalated to a senior clinician or cardiology team immediately for further management.",
+    "keySafetyConsiderations": "Monitor for signs of fluid overload, electrolyte imbalances, and ensure appropriate follow-up for patients with known valve disease."
+  }
+}

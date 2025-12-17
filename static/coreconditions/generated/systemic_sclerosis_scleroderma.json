@@ -1,0 +1,154 @@
+{
+  "id": "systemic_sclerosis_scleroderma",
+  "name": "Systemic sclerosis (Scleroderma)",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:32:38.341063",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Systemic sclerosis (Scleroderma): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSystemic sclerosis, also known as scleroderma, is a chronic autoimmune disease characterized by the hardening and tightening of the skin and connective tissues. It can affect various organs and systems, leading to significant morbidity.\n\n### Epidemiology\nSystemic sclerosis is relatively rare, with an estimated prevalence of 20-300 cases per million people. It predominantly affects women (approximately 3-4 times more than men) and typically presents between the ages of 30 and 50.\n\n### Essential Pathophysiology\nThe pathophysiology of systemic sclerosis involves an autoimmune response leading to excessive collagen deposition, vascular damage, and inflammation. This results in fibrosis of the skin and internal organs, as well as vascular abnormalities such as Raynaud's phenomenon.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Skin thickening and tightening\n- Raynaud's phenomenon (cold-induced color changes in fingers)\n- Fatigue\n- Joint pain and stiffness\n- Dysphagia (difficulty swallowing)\n- Shortness of breath\n- Dry eyes and mouth (sicca symptoms)\n\n### Key Signs\n- Skin changes (sclerodactyly, telangiectasia)\n- Pulmonary hypertension\n- Digital ulcers\n- Calcinosis cutis (calcium deposits in the skin)\n- Esophageal dysmotility\n- Joint swelling or deformities\n\n### Atypical Presentations\n- Limited cutaneous systemic sclerosis (CREST syndrome)\n- Rapidly progressive systemic sclerosis\n- Scleroderma renal crisis\n\n### Red Flags Requiring Immediate Action\n- New onset of Raynaud's phenomenon in older adults\n- Rapidly progressive skin changes\n- Severe gastrointestinal symptoms\n- Pulmonary symptoms (e.g., cough, dyspnea)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- Antinuclear antibody (ANA) testing\n- Specific autoantibody tests (e.g., anti-Scl-70, anti-centromere)\n- Chest X-ray\n\n### Second-line Investigations\n- High-resolution computed tomography (HRCT) scan of the chest\n- Esophageal manometry\n- Pulmonary function tests (PFTs)\n\n### Specialist Tests\n- Cardiac MRI\n- Skin biopsy (to assess fibrosis)\n- Renal ultrasound (to evaluate kidney involvement)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical features, serological markers, and organ involvement. The presence of skin thickening or sclerodactyly, along with positive ANA and specific autoantibodies, supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Lupus erythematosus\n- Dermatomyositis\n- Mixed connective tissue disease\n- Vasculitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (pain management, physical therapy)\n- Management of Raynaud's phenomenon (e.g., calcium channel blockers)\n\n#### Second-line Treatments\n- Corticosteroids for severe inflammatory symptoms\n- Immunosuppressants (e.g., mycophenolate mofetil)\n\n#### Emergency Procedures\n- Pulmonary rehabilitation for respiratory symptoms\n- Endoscopy for esophageal dysmotility\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of organ function (pulmonary, renal)\n- Lifestyle modifications (smoking cessation, exercise)\n\n#### Second-line Treatments\n- Disease-modifying agents (e.g., methotrexate, cyclophosphamide)\n- Management of complications (e.g., antihypertensives for pulmonary hypertension)\n\n#### Monitoring Requirements\n- Regular follow-up for disease progression\n- Screening for pulmonary hypertension and renal crisis\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Immunosuppressant that inhibits DNA synthesis and cell proliferation.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on tolerance and response.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Monitor liver function tests and complete blood counts regularly.\n\n#### Mycophenolate mofetil\n- **Mechanism of Action**: Inhibits lymphocyte proliferation by blocking purine synthesis.\n- **Typical Dosing Range**: 1-3 g orally daily, divided into two doses.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, increased risk of infections, hematologic abnormalities.\n- **When to Use vs. Alternatives**: Monitor for signs of infection and regular blood counts.\n\n#### Calcium channel blockers (e.g., nifedipine)\n- **Mechanism of Action**: Vasodilators that reduce peripheral vascular resistance.\n- **Typical Dosing Range**: 30-120 mg orally daily, adjusted based on response.\n- **Key Side Effects/Contraindications**: Headache, flushing, peripheral edema.\n- **When to Use vs. Alternatives**: Effective for managing Raynaud's phenomenon.\n\n### Procedures\n\n#### Esophageal dilation\n- **What it Involves**: Endoscopic procedure to dilate strictures in the esophagus.\n- **Indications**: Severe dysphagia due to esophageal motility disorders.\n- **Key Risks/Complications**: Perforation, bleeding, infection.\n\n#### Pulmonary rehabilitation\n- **What it Involves**: A program that includes exercise training, education, and support to improve lung function and quality of life.\n- **Indications**: Patients with pulmonary involvement or significant dyspnea.\n- **Key Risks/Complications**: Exacerbation of symptoms if not properly monitored.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of systemic sclerosis varies widely depending on the extent of organ involvement. Limited cutaneous disease generally has a better prognosis than diffuse disease. Early diagnosis and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Pulmonary hypertension\n- Interstitial lung disease\n- Renal crisis\n- Gastrointestinal complications (e.g., reflux, malabsorption)\n- Cardiac involvement (arrhythmias, heart failure)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing early signs of systemic sclerosis, conducting appropriate investigations, and managing symptoms. They should also provide education and support to patients regarding lifestyle modifications and treatment adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to a rheumatologist for suspected systemic sclerosis, especially in cases of rapidly progressive disease, significant organ involvement, or when specialized treatments are required.\n\n### Key Safety Considerations\nMonitor for signs of renal crisis (e.g., sudden hypertension, acute kidney injury), pulmonary hypertension (e.g., worsening dyspnea), and gastrointestinal complications. Regular follow-up is essential to manage disease progression and treatment side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Systemic sclerosis, also known as scleroderma, is a chronic autoimmune disease characterized by the hardening and tightening of the skin and connective tissues. It can affect various organs and systems, leading to significant morbidity.",
+      "epidemiology": "Systemic sclerosis is relatively rare, with an estimated prevalence of 20-300 cases per million people. It predominantly affects women (approximately 3-4 times more than men) and typically presents between the ages of 30 and 50.",
+      "pathophysiology": "The pathophysiology of systemic sclerosis involves an autoimmune response leading to excessive collagen deposition, vascular damage, and inflammation. This results in fibrosis of the skin and internal organs, as well as vascular abnormalities such as Raynaud's phenomenon."
+    },
+    "recognition": {
+      "symptoms": [
+        "Skin thickening and tightening",
+        "Raynaud's phenomenon (cold-induced color changes in fingers)",
+        "Fatigue",
+        "Joint pain and stiffness",
+        "Dysphagia (difficulty swallowing)",
+        "Shortness of breath",
+        "Dry eyes and mouth (sicca symptoms)"
+      ],
+      "signs": [
+        "Skin changes (sclerodactyly, telangiectasia)",
+        "Pulmonary hypertension",
+        "Digital ulcers",
+        "Calcinosis cutis (calcium deposits in the skin)",
+        "Esophageal dysmotility",
+        "Joint swelling or deformities"
+      ],
+      "atypicalPresentations": [
+        "Limited cutaneous systemic sclerosis (CREST syndrome)",
+        "Rapidly progressive systemic sclerosis",
+        "Scleroderma renal crisis"
+      ],
+      "redFlags": [
+        "New onset of Raynaud's phenomenon in older adults",
+        "Rapidly progressive skin changes",
+        "Severe gastrointestinal symptoms",
+        "Pulmonary symptoms (e.g., cough, dyspnea)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "Antinuclear antibody (ANA) testing",
+        "Specific autoantibody tests (e.g., anti-Scl-70, anti-centromere)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "High-resolution computed tomography (HRCT) scan of the chest",
+        "Esophageal manometry",
+        "Pulmonary function tests (PFTs)"
+      ],
+      "specialistTests": [
+        "Cardiac MRI",
+        "Skin biopsy (to assess fibrosis)",
+        "Renal ultrasound (to evaluate kidney involvement)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical features, serological markers, and organ involvement. The presence of skin thickening or sclerodactyly, along with positive ANA and specific autoantibodies, supports the diagnosis.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Lupus erythematosus",
+        "Dermatomyositis",
+        "Mixed connective tissue disease",
+        "Vasculitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (pain management, physical therapy)",
+          "Management of Raynaud's phenomenon (e.g., calcium channel blockers)"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe inflammatory symptoms",
+          "Immunosuppressants (e.g., mycophenolate mofetil)"
+        ],
+        "procedures": [
+          "Pulmonary rehabilitation for respiratory symptoms",
+          "Endoscopy for esophageal dysmotility"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of organ function (pulmonary, renal)",
+          "Lifestyle modifications (smoking cessation, exercise)"
+        ],
+        "secondLine": [
+          "Disease-modifying agents (e.g., methotrexate, cyclophosphamide)",
+          "Management of complications (e.g., antihypertensives for pulmonary hypertension)"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease progression",
+          "Screening for pulmonary hypertension and renal crisis"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Immunosuppressant that inhibits DNA synthesis and cell proliferation.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on tolerance and response.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.",
+          "notes": "Monitor liver function tests and complete blood counts regularly."
+        },
+        {
+          "name": "Mycophenolate mofetil",
+          "mechanism": "Inhibits lymphocyte proliferation by blocking purine synthesis.",
+          "dosing": "1-3 g orally daily, divided into two doses.",
+          "sideEffects": "Gastrointestinal upset, increased risk of infections, hematologic abnormalities.",
+          "notes": "Monitor for signs of infection and regular blood counts."
+        },
+        {
+          "name": "Calcium channel blockers (e.g., nifedipine)",
+          "mechanism": "Vasodilators that reduce peripheral vascular resistance.",
+          "dosing": "30-120 mg orally daily, adjusted based on response.",
+          "sideEffects": "Headache, flushing, peripheral edema.",
+          "notes": "Effective for managing Raynaud's phenomenon."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Esophageal dilation",
+          "description": "Endoscopic procedure to dilate strictures in the esophagus.",
+          "indications": "Severe dysphagia due to esophageal motility disorders.",
+          "risks": "Perforation, bleeding, infection."
+        },
+        {
+          "name": "Pulmonary rehabilitation",
+          "description": "A program that includes exercise training, education, and support to improve lung function and quality of life.",
+          "indications": "Patients with pulmonary involvement or significant dyspnea.",
+          "risks": "Exacerbation of symptoms if not properly monitored."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of systemic sclerosis varies widely depending on the extent of organ involvement. Limited cutaneous disease generally has a better prognosis than diffuse disease. Early diagnosis and management can improve outcomes significantly.",
+    "complications": [
+      "Pulmonary hypertension",
+      "Interstitial lung disease",
+      "Renal crisis",
+      "Gastrointestinal complications (e.g., reflux, malabsorption)",
+      "Cardiac involvement (arrhythmias, heart failure)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing early signs of systemic sclerosis, conducting appropriate investigations, and managing symptoms. They should also provide education and support to patients regarding lifestyle modifications and treatment adherence.",
+    "escalation": "Refer to a rheumatologist for suspected systemic sclerosis, especially in cases of rapidly progressive disease, significant organ involvement, or when specialized treatments are required.",
+    "keySafetyConsiderations": "Monitor for signs of renal crisis (e.g., sudden hypertension, acute kidney injury), pulmonary hypertension (e.g., worsening dyspnea), and gastrointestinal complications. Regular follow-up is essential to manage disease progression and treatment side effects."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "thyroid_eye_disease",
+  "name": "Thyroid eye disease",
+  "domains": [
+    "Endocrine",
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T19:32:56.929240",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thyroid eye disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThyroid eye disease (TED), also known as Graves' ophthalmopathy or thyroid-associated orbitopathy, is an autoimmune condition characterized by inflammation and swelling of the eye muscles and surrounding tissues, often associated with hyperthyroidism due to Graves' disease.\n\n### Epidemiology\nTED occurs in approximately 25-50% of patients with Graves' disease, with a higher prevalence in women (5-6 times more common than in men). It typically presents in individuals aged 30-50 years.\n\n### Essential Pathophysiology\nThe pathophysiology involves an autoimmune attack on the retro-orbital tissues, leading to inflammation and edema. This is mediated by glycosaminoglycans (GAGs) accumulation, which attracts water and causes swelling. The condition is associated with increased levels of thyroid-stimulating hormone receptor antibodies.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Protrusion of the eyes (exophthalmos)\n- Dry eyes or excessive tearing\n- Visual disturbances (diplopia, blurred vision)\n- Eye pain or discomfort\n- Swelling around the eyes\n\n### Key Signs\n- Protrusion of the eyes (exophthalmos)\n- Restricted eye movement\n- Lid retraction (Stare sign)\n- Conjunctival injection\n- Optic nerve involvement (decreased visual acuity)\n\n### Atypical Presentations\n- Unilateral involvement (less common)\n- Severe diplopia without significant exophthalmos\n- Rapid onset of symptoms\n\n### Red Flags Requiring Immediate Action\n- Sudden loss of vision\n- Severe eye pain\n- Optic nerve compression signs (e.g., relative afferent pupillary defect)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Thyroid function tests (TFTs) including TSH, Free T4, Free T3\n- Thyroid antibodies (TSH receptor antibodies)\n- Orbital ultrasound or CT scan to assess muscle enlargement\n\n### Second-line Investigations\n- Visual field testing\n- MRI of the orbits for detailed assessment of soft tissue involvement\n\n### Specialist Tests\n- Thyroid scintigraphy (to assess thyroid function)\n- Serum inflammatory markers (CRP, ESR)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical findings, imaging studies, and thyroid function tests. The presence of exophthalmos, diplopia, and thyroid dysfunction supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Orbital cellulitis\n- Tumors (orbital or intracranial)\n- Other causes of diplopia (e.g., myasthenia gravis, cranial nerve palsies)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids (e.g., prednisone 40-80 mg/day) for acute inflammation\n- Orbital decompression surgery if there is optic nerve compromise\n\n#### Second-line Treatments\n- Radiotherapy for severe cases not responding to steroids\n\n#### Emergency Procedures\n- Orbital decompression surgery: Indicated for severe exophthalmos or optic nerve compression. Risks include bleeding, infection, and vision loss.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying thyroid disease (antithyroid medications, radioactive iodine, or surgery)\n- Symptomatic treatment (artificial tears, prisms for diplopia)\n\n#### Second-line Treatments\n- Surgical intervention for persistent diplopia or cosmetic concerns (strabismus surgery)\n\n#### Monitoring Requirements\n- Regular follow-up with ophthalmology and endocrinology to monitor disease progression and treatment response.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: 40-80 mg/day for acute TED, tapering as symptoms improve.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis, mood changes.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially with long-term use.\n\n#### Teprotumumab\n- **Mechanism of Action**: Monoclonal antibody that inhibits IGF-1 receptor, reducing inflammation and tissue expansion.\n- **Typical Dosing Range**: Initial dose of 10 mg/kg IV, followed by 20 mg/kg every 3 weeks for 8 doses.\n- **Key Side Effects/Contraindications**: Nausea, muscle spasms, fatigue, hyperglycemia.\n- **When to Use vs. Alternatives**: Consider for patients with moderate to severe TED.\n\n### Procedures\n\n#### Orbital decompression surgery\n- **What it Involves**: Surgical procedure to relieve pressure in the orbit by removing bone or fat.\n- **Indications**: Severe exophthalmos, optic nerve compression, or cosmetic concerns.\n- **Key Risks/Complications**: Bleeding, infection, vision loss, diplopia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for TED varies; many patients experience improvement over time, but some may have persistent symptoms or complications. Early intervention can improve outcomes.\n\n### Important Complications to Watch For\n- Optic nerve damage leading to vision loss\n- Persistent diplopia\n- Corneal exposure and ulceration due to eyelid retraction\n- Psychosocial impact due to cosmetic changes.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize symptoms of TED, perform initial assessments, and refer to specialists (endocrinology and ophthalmology) for further management. They should also monitor patients for complications and manage acute presentations.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology for any patient with visual disturbances, severe eye pain, or signs of optic nerve involvement. Endocrinology referral is necessary for management of thyroid dysfunction.\n\n### Key Safety Considerations\nMonitor for signs of optic nerve compression and ensure timely referral. Be aware of the side effects of corticosteroids and manage them appropriately. Regular follow-up is essential to monitor disease progression and treatment response.\n",
+  "content": {
+    "overview": {
+      "definition": "Thyroid eye disease (TED), also known as Graves' ophthalmopathy or thyroid-associated orbitopathy, is an autoimmune condition characterized by inflammation and swelling of the eye muscles and surrounding tissues, often associated with hyperthyroidism due to Graves' disease.",
+      "epidemiology": "TED occurs in approximately 25-50% of patients with Graves' disease, with a higher prevalence in women (5-6 times more common than in men). It typically presents in individuals aged 30-50 years.",
+      "pathophysiology": "The pathophysiology involves an autoimmune attack on the retro-orbital tissues, leading to inflammation and edema. This is mediated by glycosaminoglycans (GAGs) accumulation, which attracts water and causes swelling. The condition is associated with increased levels of thyroid-stimulating hormone receptor antibodies."
+    },
+    "recognition": {
+      "symptoms": [
+        "Protrusion of the eyes (exophthalmos)",
+        "Dry eyes or excessive tearing",
+        "Visual disturbances (diplopia, blurred vision)",
+        "Eye pain or discomfort",
+        "Swelling around the eyes"
+      ],
+      "signs": [
+        "Protrusion of the eyes (exophthalmos)",
+        "Restricted eye movement",
+        "Lid retraction (Stare sign)",
+        "Conjunctival injection",
+        "Optic nerve involvement (decreased visual acuity)"
+      ],
+      "atypicalPresentations": [
+        "Unilateral involvement (less common)",
+        "Severe diplopia without significant exophthalmos",
+        "Rapid onset of symptoms"
+      ],
+      "redFlags": [
+        "Sudden loss of vision",
+        "Severe eye pain",
+        "Optic nerve compression signs (e.g., relative afferent pupillary defect)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Thyroid function tests (TFTs) including TSH, Free T4, Free T3",
+        "Thyroid antibodies (TSH receptor antibodies)",
+        "Orbital ultrasound or CT scan to assess muscle enlargement"
+      ],
+      "secondLine": [
+        "Visual field testing",
+        "MRI of the orbits for detailed assessment of soft tissue involvement"
+      ],
+      "specialistTests": [
+        "Thyroid scintigraphy (to assess thyroid function)",
+        "Serum inflammatory markers (CRP, ESR)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical findings, imaging studies, and thyroid function tests. The presence of exophthalmos, diplopia, and thyroid dysfunction supports the diagnosis.",
+      "differentials": [
+        "Orbital cellulitis",
+        "Tumors (orbital or intracranial)",
+        "Other causes of diplopia (e.g., myasthenia gravis, cranial nerve palsies)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids (e.g., prednisone 40-80 mg/day) for acute inflammation",
+          "Orbital decompression surgery if there is optic nerve compromise"
+        ],
+        "secondLine": [
+          "Radiotherapy for severe cases not responding to steroids"
+        ],
+        "procedures": [
+          "Orbital decompression surgery: Indicated for severe exophthalmos or optic nerve compression. Risks include bleeding, infection, and vision loss."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying thyroid disease (antithyroid medications, radioactive iodine, or surgery)",
+          "Symptomatic treatment (artificial tears, prisms for diplopia)"
+        ],
+        "secondLine": [
+          "Surgical intervention for persistent diplopia or cosmetic concerns (strabismus surgery)"
+        ],
+        "monitoring": [
+          "Regular follow-up with ophthalmology and endocrinology to monitor disease progression and treatment response."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "40-80 mg/day for acute TED, tapering as symptoms improve.",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis, mood changes.",
+          "notes": "Monitor for side effects, especially with long-term use."
+        },
+        {
+          "name": "Teprotumumab",
+          "mechanism": "Monoclonal antibody that inhibits IGF-1 receptor, reducing inflammation and tissue expansion.",
+          "dosing": "Initial dose of 10 mg/kg IV, followed by 20 mg/kg every 3 weeks for 8 doses.",
+          "sideEffects": "Nausea, muscle spasms, fatigue, hyperglycemia.",
+          "notes": "Consider for patients with moderate to severe TED."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Orbital decompression surgery",
+          "description": "Surgical procedure to relieve pressure in the orbit by removing bone or fat.",
+          "indications": "Severe exophthalmos, optic nerve compression, or cosmetic concerns.",
+          "risks": "Bleeding, infection, vision loss, diplopia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for TED varies; many patients experience improvement over time, but some may have persistent symptoms or complications. Early intervention can improve outcomes.",
+    "complications": [
+      "Optic nerve damage leading to vision loss",
+      "Persistent diplopia",
+      "Corneal exposure and ulceration due to eyelid retraction",
+      "Psychosocial impact due to cosmetic changes."
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize symptoms of TED, perform initial assessments, and refer to specialists (endocrinology and ophthalmology) for further management. They should also monitor patients for complications and manage acute presentations.",
+    "escalation": "Refer to ophthalmology for any patient with visual disturbances, severe eye pain, or signs of optic nerve involvement. Endocrinology referral is necessary for management of thyroid dysfunction.",
+    "keySafetyConsiderations": "Monitor for signs of optic nerve compression and ensure timely referral. Be aware of the side effects of corticosteroids and manage them appropriately. Regular follow-up is essential to monitor disease progression and treatment response."
+  }
+}

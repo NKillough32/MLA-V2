@@ -1,0 +1,145 @@
+{
+  "id": "breast_cancer",
+  "name": "Breast cancer",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:14:51.502614",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Breast cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBreast cancer is a malignant tumor that develops from the cells of the breast, primarily affecting women but also occurring in men. It is characterized by uncontrolled cell growth in breast tissue.\n\n### Epidemiology\nBreast cancer is the most common cancer in women worldwide, accounting for approximately 25% of all cancer cases. The lifetime risk of a woman developing breast cancer is about 1 in 8. Risk factors include age, family history, genetic mutations (e.g., BRCA1/BRCA2), hormonal factors, and lifestyle choices.\n\n### Essential Pathophysiology\nBreast cancer arises from the epithelial cells of the ducts (ductal carcinoma) or lobules (lobular carcinoma) of the breast. Genetic mutations lead to dysregulation of cell growth and apoptosis, resulting in tumor formation. The tumor can invade surrounding tissues and metastasize to distant sites.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Lump or mass in the breast or underarm\n- Change in breast shape or size\n- Nipple discharge (blood or clear fluid)\n- Skin changes (dimpling, redness, or thickening)\n- Pain in the breast or nipple\n\n### Key Signs\n- Palpable mass on examination\n- Nipple retraction or inversion\n- Axillary lymphadenopathy\n- Skin changes (peau d'orange appearance)\n- Asymmetry of the breasts\n\n### Atypical Presentations\n- Inflammatory breast cancer (swelling, redness, warmth)\n- Paget's disease of the nipple (scaly, itchy rash)\n- Metastatic symptoms (bone pain, weight loss, fatigue)\n\n### Red Flags Requiring Immediate Action\n- Age < 30 with a breast lump\n- Family history of breast or ovarian cancer\n- Rapidly growing mass\n- Persistent unilateral discharge, especially if bloody\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical breast examination\n- Mammography (for women over 40 or high-risk groups)\n- Ultrasound (for younger women or dense breast tissue)\n\n### Second-line Investigations\n- MRI of the breast (for high-risk patients or inconclusive findings)\n- Biopsy (fine needle aspiration or core needle biopsy)\n\n### Specialist Tests\n- Genetic testing for BRCA1/BRCA2 mutations\n- Hormone receptor testing (ER, PR)\n- HER2/neu testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of biopsy specimens, with classification based on tumor type, grade, and receptor status.\n\n### Key Differential Diagnoses to Exclude\n- Fibroadenoma\n- Cysts\n- Intraductal papilloma\n- Phyllodes tumor\n- Mastitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to oncology for staging and treatment planning\n- Surgical intervention (lumpectomy or mastectomy)\n\n#### Second-line Treatments\n- Adjuvant chemotherapy or radiotherapy based on staging and receptor status\n\n#### Emergency Procedures\n- Lumpectomy: removal of the tumor and a margin of surrounding tissue, indicated for early-stage breast cancer.\n- Mastectomy: removal of one or both breasts, indicated for larger tumors or multifocal disease.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hormonal therapy (e.g., Tamoxifen for ER-positive tumors)\n- Targeted therapy (e.g., Trastuzumab for HER2-positive tumors)\n\n#### Second-line Treatments\n- Chemotherapy (e.g., Doxorubicin, Cyclophosphamide) for advanced disease\n\n#### Monitoring Requirements\n- Regular follow-up with clinical examinations and imaging as needed\n- Monitoring for side effects of treatment and recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tamoxifen\n- **Mechanism of Action**: Selective estrogen receptor modulator (SERM) that blocks estrogen effects on breast tissue.\n- **Typical Dosing Range**: 20 mg orally daily.\n- **Key Side Effects/Contraindications**: Hot flashes, vaginal discharge, risk of thromboembolic events.\n- **When to Use vs. Alternatives**: Used in premenopausal and postmenopausal women with ER-positive breast cancer.\n\n#### Trastuzumab (Herceptin)\n- **Mechanism of Action**: Monoclonal antibody that targets HER2 receptors, inhibiting tumor growth.\n- **Typical Dosing Range**: Loading dose of 8 mg/kg IV, followed by 6 mg/kg every 3 weeks.\n- **Key Side Effects/Contraindications**: Cardiotoxicity, infusion reactions, fever.\n- **When to Use vs. Alternatives**: Used in HER2-positive breast cancer.\n\n#### Doxorubicin\n- **Mechanism of Action**: Anthracycline chemotherapy that intercalates DNA, inhibiting replication.\n- **Typical Dosing Range**: 60-75 mg/m² IV every 21 days.\n- **Key Side Effects/Contraindications**: Cardiotoxicity, myelosuppression, nausea.\n- **When to Use vs. Alternatives**: Used in various stages of breast cancer.\n\n### Procedures\n\n#### Lumpectomy\n- **What it Involves**: Surgical removal of the tumor and a margin of surrounding tissue.\n- **Indications**: Early-stage breast cancer, patient preference for breast conservation.\n- **Key Risks/Complications**: Infection, bleeding, changes in breast appearance.\n\n#### Mastectomy\n- **What it Involves**: Surgical removal of one or both breasts.\n- **Indications**: Large tumors, multifocal disease, patient preference.\n- **Key Risks/Complications**: Infection, bleeding, psychological impact, changes in body image.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for breast cancer varies widely based on stage at diagnosis, tumor biology, and response to treatment. Early-stage breast cancer has a high survival rate, while advanced disease has a poorer prognosis.\n\n### Important Complications to Watch For\n- Lymphedema (post-surgery)\n- Recurrence of cancer\n- Metastasis to other organs (e.g., bone, liver, brain)\n- Psychosocial impact (anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough clinical assessments, recognize red flags, initiate appropriate investigations, and provide patient education and support. They should also facilitate referrals to specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with concerning symptoms or findings, escalate to a senior clinician or oncologist for further evaluation and management.\n\n### Key Safety Considerations\nEnsure informed consent for procedures and treatments, monitor for adverse effects of chemotherapy and hormonal therapies, and provide psychosocial support to patients and families.\n",
+  "content": {
+    "overview": {
+      "definition": "Breast cancer is a malignant tumor that develops from the cells of the breast, primarily affecting women but also occurring in men. It is characterized by uncontrolled cell growth in breast tissue.",
+      "epidemiology": "Breast cancer is the most common cancer in women worldwide, accounting for approximately 25% of all cancer cases. The lifetime risk of a woman developing breast cancer is about 1 in 8. Risk factors include age, family history, genetic mutations (e.g., BRCA1/BRCA2), hormonal factors, and lifestyle choices.",
+      "pathophysiology": "Breast cancer arises from the epithelial cells of the ducts (ductal carcinoma) or lobules (lobular carcinoma) of the breast. Genetic mutations lead to dysregulation of cell growth and apoptosis, resulting in tumor formation. The tumor can invade surrounding tissues and metastasize to distant sites."
+    },
+    "recognition": {
+      "symptoms": [
+        "Lump or mass in the breast or underarm",
+        "Change in breast shape or size",
+        "Nipple discharge (blood or clear fluid)",
+        "Skin changes (dimpling, redness, or thickening)",
+        "Pain in the breast or nipple"
+      ],
+      "signs": [
+        "Palpable mass on examination",
+        "Nipple retraction or inversion",
+        "Axillary lymphadenopathy",
+        "Skin changes (peau d'orange appearance)",
+        "Asymmetry of the breasts"
+      ],
+      "atypicalPresentations": [
+        "Inflammatory breast cancer (swelling, redness, warmth)",
+        "Paget's disease of the nipple (scaly, itchy rash)",
+        "Metastatic symptoms (bone pain, weight loss, fatigue)"
+      ],
+      "redFlags": [
+        "Age < 30 with a breast lump",
+        "Family history of breast or ovarian cancer",
+        "Rapidly growing mass",
+        "Persistent unilateral discharge, especially if bloody"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical breast examination",
+        "Mammography (for women over 40 or high-risk groups)",
+        "Ultrasound (for younger women or dense breast tissue)"
+      ],
+      "secondLine": [
+        "MRI of the breast (for high-risk patients or inconclusive findings)",
+        "Biopsy (fine needle aspiration or core needle biopsy)"
+      ],
+      "specialistTests": [
+        "Genetic testing for BRCA1/BRCA2 mutations",
+        "Hormone receptor testing (ER, PR)",
+        "HER2/neu testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of biopsy specimens, with classification based on tumor type, grade, and receptor status.",
+      "differentials": [
+        "Fibroadenoma",
+        "Cysts",
+        "Intraductal papilloma",
+        "Phyllodes tumor",
+        "Mastitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to oncology for staging and treatment planning",
+          "Surgical intervention (lumpectomy or mastectomy)"
+        ],
+        "secondLine": [
+          "Adjuvant chemotherapy or radiotherapy based on staging and receptor status"
+        ],
+        "procedures": [
+          "Lumpectomy: removal of the tumor and a margin of surrounding tissue, indicated for early-stage breast cancer.",
+          "Mastectomy: removal of one or both breasts, indicated for larger tumors or multifocal disease."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hormonal therapy (e.g., Tamoxifen for ER-positive tumors)",
+          "Targeted therapy (e.g., Trastuzumab for HER2-positive tumors)"
+        ],
+        "secondLine": [
+          "Chemotherapy (e.g., Doxorubicin, Cyclophosphamide) for advanced disease"
+        ],
+        "monitoring": [
+          "Regular follow-up with clinical examinations and imaging as needed",
+          "Monitoring for side effects of treatment and recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tamoxifen",
+          "mechanism": "Selective estrogen receptor modulator (SERM) that blocks estrogen effects on breast tissue.",
+          "dosing": "20 mg orally daily.",
+          "sideEffects": "Hot flashes, vaginal discharge, risk of thromboembolic events.",
+          "notes": "Used in premenopausal and postmenopausal women with ER-positive breast cancer."
+        },
+        {
+          "name": "Trastuzumab (Herceptin)",
+          "mechanism": "Monoclonal antibody that targets HER2 receptors, inhibiting tumor growth.",
+          "dosing": "Loading dose of 8 mg/kg IV, followed by 6 mg/kg every 3 weeks.",
+          "sideEffects": "Cardiotoxicity, infusion reactions, fever.",
+          "notes": "Used in HER2-positive breast cancer."
+        },
+        {
+          "name": "Doxorubicin",
+          "mechanism": "Anthracycline chemotherapy that intercalates DNA, inhibiting replication.",
+          "dosing": "60-75 mg/m² IV every 21 days.",
+          "sideEffects": "Cardiotoxicity, myelosuppression, nausea.",
+          "notes": "Used in various stages of breast cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumpectomy",
+          "description": "Surgical removal of the tumor and a margin of surrounding tissue.",
+          "indications": "Early-stage breast cancer, patient preference for breast conservation.",
+          "risks": "Infection, bleeding, changes in breast appearance."
+        },
+        {
+          "name": "Mastectomy",
+          "description": "Surgical removal of one or both breasts.",
+          "indications": "Large tumors, multifocal disease, patient preference.",
+          "risks": "Infection, bleeding, psychological impact, changes in body image."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for breast cancer varies widely based on stage at diagnosis, tumor biology, and response to treatment. Early-stage breast cancer has a high survival rate, while advanced disease has a poorer prognosis.",
+    "complications": [
+      "Lymphedema (post-surgery)",
+      "Recurrence of cancer",
+      "Metastasis to other organs (e.g., bone, liver, brain)",
+      "Psychosocial impact (anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough clinical assessments, recognize red flags, initiate appropriate investigations, and provide patient education and support. They should also facilitate referrals to specialists as needed.",
+    "escalation": "If a patient presents with concerning symptoms or findings, escalate to a senior clinician or oncologist for further evaluation and management.",
+    "keySafetyConsiderations": "Ensure informed consent for procedures and treatments, monitor for adverse effects of chemotherapy and hormonal therapies, and provide psychosocial support to patients and families."
+  }
+}

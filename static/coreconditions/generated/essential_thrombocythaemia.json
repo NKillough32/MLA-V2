@@ -1,0 +1,130 @@
+{
+  "id": "essential_thrombocythaemia",
+  "name": "Essential thrombocythaemia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:57:57.763603",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Essential thrombocythaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEssential thrombocythaemia (ET) is a myeloproliferative neoplasm characterized by an elevated platelet count, often exceeding 450 x 10^9/L, due to the clonal proliferation of megakaryocytes in the bone marrow.\n\n### Epidemiology\nET is relatively rare, with an incidence of approximately 1-2 cases per 100,000 people per year. It is more common in individuals over 60 years of age and has a slight female predominance.\n\n### Essential Pathophysiology\nET is primarily caused by mutations in the JAK2, CALR, or MPL genes, leading to increased megakaryocyte production and subsequent thrombocytosis. This results in an increased risk of thrombotic and hemorrhagic complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Dizziness\n- Visual disturbances\n- Fatigue\n- Weakness\n- Night sweats\n\n### Key Signs\n- Elevated platelet count on complete blood count (CBC)\n- Splenomegaly\n- Erythromelalgia (burning pain in hands/feet)\n\n### Atypical Presentations\n- Thrombotic events (e.g., stroke, myocardial infarction)\n- Hemorrhagic events (e.g., easy bruising, bleeding gums)\n\n### Red Flags Requiring Immediate Action\n- Age > 60 years\n- History of thrombosis or bleeding\n- Symptoms of hyperviscosity (e.g., headache, visual changes)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) with platelet count\n- Peripheral blood smear\n- Bone marrow biopsy\n\n### Second-line Investigations\n- JAK2 V617F mutation testing\n- CALR mutation testing\n- MPL mutation testing\n\n### Specialist Tests\n- Bone marrow cytogenetics\n- Flow cytometry for megakaryocyte analysis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ET is based on the presence of elevated platelet count, bone marrow hypercellularity with increased megakaryocytes, and exclusion of secondary causes of thrombocytosis.\n\n### Key Differential Diagnoses to Exclude\n- Secondary thrombocytosis (e.g., iron deficiency, infection, inflammation)\n- Polycythemia vera\n- Myelofibrosis\n- Chronic myeloid leukaemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Low-dose aspirin (75-100 mg daily) for thrombotic risk reduction\n\n#### Second-line Treatments\n- Hydroxyurea for high-risk patients with severe thrombocytosis\n\n#### Emergency Procedures\n- Therapeutic phlebotomy (if hyperviscosity symptoms present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of platelet counts and symptoms\n\n#### Second-line Treatments\n- Interferon-alpha for younger patients or those desiring pregnancy\n\n#### Monitoring Requirements\n- Regular CBC to monitor platelet counts and assess for complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking thromboxane A2 production.\n- **Typical Dosing Range**: 75-100 mg orally once daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, dyspepsia, allergic reactions.\n- **When to Use vs. Alternatives**: Consider gastroprotective agents in high-risk patients.\n\n#### Hydroxyurea\n- **Mechanism of Action**: Inhibits DNA synthesis, reducing platelet production.\n- **Typical Dosing Range**: 15-20 mg/kg orally once daily, adjusted based on platelet response.\n- **Key Side Effects/Contraindications**: Myelosuppression, gastrointestinal upset, skin rash.\n- **When to Use vs. Alternatives**: Monitor blood counts regularly.\n\n#### Interferon-alpha\n- **Mechanism of Action**: Modulates immune response and inhibits megakaryocyte proliferation.\n- **Typical Dosing Range**: Start at 3 million units subcutaneously 3 times a week, titrate based on tolerance.\n- **Key Side Effects/Contraindications**: Flu-like symptoms, fatigue, depression.\n- **When to Use vs. Alternatives**: Consider in younger patients or those with a desire for pregnancy.\n\n### Procedures\n\n#### Therapeutic phlebotomy\n- **What it Involves**: Removal of blood to reduce blood viscosity and platelet count.\n- **Indications**: Severe hyperviscosity symptoms or very high platelet counts (>1,000 x 10^9/L).\n- **Key Risks/Complications**: Hypotension, bleeding, infection at the venipuncture site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for patients with ET is generally good, with a median survival of over 20 years. However, there is a risk of progression to myelofibrosis or acute leukaemia in a minority of cases.\n\n### Important Complications to Watch For\n- Thrombotic events (e.g., stroke, myocardial infarction)\n- Hemorrhagic events (e.g., gastrointestinal bleeding)\n- Progression to myelofibrosis or acute leukaemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of ET, perform initial investigations, and manage acute complications. They should also understand the importance of monitoring and follow-up care for chronic management.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist for patients with high-risk features, severe symptoms, or those requiring advanced management options.\n\n### Key Safety Considerations\nMonitor for signs of thrombosis or bleeding, especially in patients on antiplatelet therapy. Ensure regular follow-up for blood count monitoring and management of side effects from medications.\n",
+  "content": {
+    "overview": {
+      "definition": "Essential thrombocythaemia (ET) is a myeloproliferative neoplasm characterized by an elevated platelet count, often exceeding 450 x 10^9/L, due to the clonal proliferation of megakaryocytes in the bone marrow.",
+      "epidemiology": "ET is relatively rare, with an incidence of approximately 1-2 cases per 100,000 people per year. It is more common in individuals over 60 years of age and has a slight female predominance.",
+      "pathophysiology": "ET is primarily caused by mutations in the JAK2, CALR, or MPL genes, leading to increased megakaryocyte production and subsequent thrombocytosis. This results in an increased risk of thrombotic and hemorrhagic complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Dizziness",
+        "Visual disturbances",
+        "Fatigue",
+        "Weakness",
+        "Night sweats"
+      ],
+      "signs": [
+        "Elevated platelet count on complete blood count (CBC)",
+        "Splenomegaly",
+        "Erythromelalgia (burning pain in hands/feet)"
+      ],
+      "atypicalPresentations": [
+        "Thrombotic events (e.g., stroke, myocardial infarction)",
+        "Hemorrhagic events (e.g., easy bruising, bleeding gums)"
+      ],
+      "redFlags": [
+        "Age > 60 years",
+        "History of thrombosis or bleeding",
+        "Symptoms of hyperviscosity (e.g., headache, visual changes)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) with platelet count",
+        "Peripheral blood smear",
+        "Bone marrow biopsy"
+      ],
+      "secondLine": [
+        "JAK2 V617F mutation testing",
+        "CALR mutation testing",
+        "MPL mutation testing"
+      ],
+      "specialistTests": [
+        "Bone marrow cytogenetics",
+        "Flow cytometry for megakaryocyte analysis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ET is based on the presence of elevated platelet count, bone marrow hypercellularity with increased megakaryocytes, and exclusion of secondary causes of thrombocytosis.",
+      "differentials": [
+        "Secondary thrombocytosis (e.g., iron deficiency, infection, inflammation)",
+        "Polycythemia vera",
+        "Myelofibrosis",
+        "Chronic myeloid leukaemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Low-dose aspirin (75-100 mg daily) for thrombotic risk reduction"
+        ],
+        "secondLine": [
+          "Hydroxyurea for high-risk patients with severe thrombocytosis"
+        ],
+        "procedures": [
+          "Therapeutic phlebotomy (if hyperviscosity symptoms present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of platelet counts and symptoms"
+        ],
+        "secondLine": [
+          "Interferon-alpha for younger patients or those desiring pregnancy"
+        ],
+        "monitoring": [
+          "Regular CBC to monitor platelet counts and assess for complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation by blocking thromboxane A2 production.",
+          "dosing": "75-100 mg orally once daily.",
+          "sideEffects": "Gastrointestinal bleeding, dyspepsia, allergic reactions.",
+          "notes": "Consider gastroprotective agents in high-risk patients."
+        },
+        {
+          "name": "Hydroxyurea",
+          "mechanism": "Inhibits DNA synthesis, reducing platelet production.",
+          "dosing": "15-20 mg/kg orally once daily, adjusted based on platelet response.",
+          "sideEffects": "Myelosuppression, gastrointestinal upset, skin rash.",
+          "notes": "Monitor blood counts regularly."
+        },
+        {
+          "name": "Interferon-alpha",
+          "mechanism": "Modulates immune response and inhibits megakaryocyte proliferation.",
+          "dosing": "Start at 3 million units subcutaneously 3 times a week, titrate based on tolerance.",
+          "sideEffects": "Flu-like symptoms, fatigue, depression.",
+          "notes": "Consider in younger patients or those with a desire for pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Therapeutic phlebotomy",
+          "description": "Removal of blood to reduce blood viscosity and platelet count.",
+          "indications": "Severe hyperviscosity symptoms or very high platelet counts (>1,000 x 10^9/L).",
+          "risks": "Hypotension, bleeding, infection at the venipuncture site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for patients with ET is generally good, with a median survival of over 20 years. However, there is a risk of progression to myelofibrosis or acute leukaemia in a minority of cases.",
+    "complications": [
+      "Thrombotic events (e.g., stroke, myocardial infarction)",
+      "Hemorrhagic events (e.g., gastrointestinal bleeding)",
+      "Progression to myelofibrosis or acute leukaemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of ET, perform initial investigations, and manage acute complications. They should also understand the importance of monitoring and follow-up care for chronic management.",
+    "escalation": "Refer to a haematologist for patients with high-risk features, severe symptoms, or those requiring advanced management options.",
+    "keySafetyConsiderations": "Monitor for signs of thrombosis or bleeding, especially in patients on antiplatelet therapy. Ensure regular follow-up for blood count monitoring and management of side effects from medications."
+  }
+}

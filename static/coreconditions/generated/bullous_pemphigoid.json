@@ -1,0 +1,133 @@
+{
+  "id": "bullous_pemphigoid",
+  "name": "Bullous pemphigoid",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:26:21.911745",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Bullous pemphigoid: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBullous pemphigoid is an autoimmune blistering disorder characterized by the formation of large, tense blisters on the skin and mucous membranes, primarily affecting the elderly.\n\n### Epidemiology\nIt is most common in individuals over 60 years of age, with a prevalence of approximately 4-10 cases per 100,000 people per year. It is slightly more common in males than females.\n\n### Essential Pathophysiology\nBullous pemphigoid is caused by the production of autoantibodies against hemidesmosomal proteins (BP180 and BP230) in the basement membrane zone of the skin, leading to subepithelial blister formation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itchy skin (pruritus)\n- Tense blisters filled with clear fluid\n- Erythematous or urticarial plaques before blister formation\n\n### Key Signs\n- Large, tense blisters on normal or erythematous skin\n- Nikolsky sign is usually negative\n- Erosions or crusts may be present after blisters rupture\n\n### Atypical Presentations\n- Localized bullous pemphigoid (limited to one area)\n- Mucosal involvement (less common)\n- Blisters may appear in atypical locations such as the scalp or genital area\n\n### Red Flags Requiring Immediate Action\n- Rapidly spreading lesions\n- Signs of secondary infection\n- Systemic symptoms such as fever or malaise\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Skin biopsy for histopathology (direct immunofluorescence)\n- Serum autoantibody testing (anti-BP180 and anti-BP230)\n\n### Second-line Investigations\n- Indirect immunofluorescence (to assess circulating antibodies)\n- ELISA for specific autoantibodies\n\n### Specialist Tests\n- Referral to a dermatologist for advanced management\n- Consideration of skin culture if infection is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, histopathological findings, and serological tests confirming the presence of autoantibodies against BP180 and BP230.\n\n### Key Differential Diagnoses to Exclude\n- Pemphigus vulgaris\n- Dermatitis herpetiformis\n- Linear IgA disease\n- Contact dermatitis\n- Drug-induced bullous eruptions\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (e.g., clobetasol propionate)\n- Oral corticosteroids (e.g., prednisone)\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)\n- Tetracyclines (e.g., doxycycline)\n\n#### Emergency Procedures\n- Wound care for ruptured blisters\n- Referral for dermatological procedures if necessary\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term low-dose oral corticosteroids\n- Topical corticosteroids for localized disease\n\n#### Second-line Treatments\n- Immunosuppressive therapy (e.g., methotrexate)\n- Biologics (e.g., rituximab) in refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and side effects of medications\n- Monitoring for secondary infections\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and immune response\n- **Typical Dosing Range**: Initial dose of 0.5-1 mg/kg/day, tapering as symptoms improve\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis, increased infection risk\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose based on clinical response.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis\n- **Typical Dosing Range**: 2-3 mg/kg/day, with monitoring of blood counts\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk\n- **When to Use vs. Alternatives**: Requires regular monitoring of liver function and blood counts.\n\n#### Doxycycline\n- **Mechanism of Action**: Tetracycline antibiotic with anti-inflammatory properties\n- **Typical Dosing Range**: 100 mg twice daily\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset\n- **When to Use vs. Alternatives**: Useful in combination with corticosteroids for its anti-inflammatory effects.\n\n### Procedures\n\n#### Wound care for blisters\n- **What it Involves**: Careful cleaning and dressing of ruptured blisters to prevent infection\n- **Indications**: Presence of ruptured blisters or erosions\n- **Key Risks/Complications**: Infection, delayed healing\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nBullous pemphigoid generally has a good prognosis with appropriate treatment, although it can be chronic and relapsing. Most patients respond well to corticosteroids and immunosuppressive therapy.\n\n### Important Complications to Watch For\n- Secondary infections due to skin breakdown\n- Scarring and pigmentation changes\n- Potential for significant morbidity in elderly patients due to extensive skin involvement\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the clinical features of bullous pemphigoid, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for referral to dermatology for complex cases.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of severe disease, rapid progression, or complications such as infection, immediate referral to a dermatologist or senior clinician is necessary.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients with ruptured blisters. Be vigilant for side effects of systemic corticosteroids and immunosuppressive agents, including signs of adrenal insufficiency, infection, and gastrointestinal bleeding.\n",
+  "content": {
+    "overview": {
+      "definition": "Bullous pemphigoid is an autoimmune blistering disorder characterized by the formation of large, tense blisters on the skin and mucous membranes, primarily affecting the elderly.",
+      "epidemiology": "It is most common in individuals over 60 years of age, with a prevalence of approximately 4-10 cases per 100,000 people per year. It is slightly more common in males than females.",
+      "pathophysiology": "Bullous pemphigoid is caused by the production of autoantibodies against hemidesmosomal proteins (BP180 and BP230) in the basement membrane zone of the skin, leading to subepithelial blister formation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itchy skin (pruritus)",
+        "Tense blisters filled with clear fluid",
+        "Erythematous or urticarial plaques before blister formation"
+      ],
+      "signs": [
+        "Large, tense blisters on normal or erythematous skin",
+        "Nikolsky sign is usually negative",
+        "Erosions or crusts may be present after blisters rupture"
+      ],
+      "atypicalPresentations": [
+        "Localized bullous pemphigoid (limited to one area)",
+        "Mucosal involvement (less common)",
+        "Blisters may appear in atypical locations such as the scalp or genital area"
+      ],
+      "redFlags": [
+        "Rapidly spreading lesions",
+        "Signs of secondary infection",
+        "Systemic symptoms such as fever or malaise"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Skin biopsy for histopathology (direct immunofluorescence)",
+        "Serum autoantibody testing (anti-BP180 and anti-BP230)"
+      ],
+      "secondLine": [
+        "Indirect immunofluorescence (to assess circulating antibodies)",
+        "ELISA for specific autoantibodies"
+      ],
+      "specialistTests": [
+        "Referral to a dermatologist for advanced management",
+        "Consideration of skin culture if infection is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, histopathological findings, and serological tests confirming the presence of autoantibodies against BP180 and BP230.",
+      "differentials": [
+        "Pemphigus vulgaris",
+        "Dermatitis herpetiformis",
+        "Linear IgA disease",
+        "Contact dermatitis",
+        "Drug-induced bullous eruptions"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (e.g., clobetasol propionate)",
+          "Oral corticosteroids (e.g., prednisone)"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)",
+          "Tetracyclines (e.g., doxycycline)"
+        ],
+        "procedures": [
+          "Wound care for ruptured blisters",
+          "Referral for dermatological procedures if necessary"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term low-dose oral corticosteroids",
+          "Topical corticosteroids for localized disease"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (e.g., methotrexate)",
+          "Biologics (e.g., rituximab) in refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and side effects of medications",
+          "Monitoring for secondary infections"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and immune response",
+          "dosing": "Initial dose of 0.5-1 mg/kg/day, tapering as symptoms improve",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis, increased infection risk",
+          "notes": "Monitor for side effects and adjust dose based on clinical response."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis",
+          "dosing": "2-3 mg/kg/day, with monitoring of blood counts",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk",
+          "notes": "Requires regular monitoring of liver function and blood counts."
+        },
+        {
+          "name": "Doxycycline",
+          "mechanism": "Tetracycline antibiotic with anti-inflammatory properties",
+          "dosing": "100 mg twice daily",
+          "sideEffects": "Photosensitivity, gastrointestinal upset",
+          "notes": "Useful in combination with corticosteroids for its anti-inflammatory effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound care for blisters",
+          "description": "Careful cleaning and dressing of ruptured blisters to prevent infection",
+          "indications": "Presence of ruptured blisters or erosions",
+          "risks": "Infection, delayed healing"
+        }
+      ]
+    },
+    "prognosis": "Bullous pemphigoid generally has a good prognosis with appropriate treatment, although it can be chronic and relapsing. Most patients respond well to corticosteroids and immunosuppressive therapy.",
+    "complications": [
+      "Secondary infections due to skin breakdown",
+      "Scarring and pigmentation changes",
+      "Potential for significant morbidity in elderly patients due to extensive skin involvement"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the clinical features of bullous pemphigoid, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for referral to dermatology for complex cases.",
+    "escalation": "If a patient shows signs of severe disease, rapid progression, or complications such as infection, immediate referral to a dermatologist or senior clinician is necessary.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients with ruptured blisters. Be vigilant for side effects of systemic corticosteroids and immunosuppressive agents, including signs of adrenal insufficiency, infection, and gastrointestinal bleeding."
+  }
+}

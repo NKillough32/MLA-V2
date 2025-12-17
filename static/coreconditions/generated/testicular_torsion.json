@@ -1,0 +1,124 @@
+{
+  "id": "testicular_torsion",
+  "name": "Testicular torsion",
+  "domains": [
+    "Urology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:18:50.332500",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Testicular torsion: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTesticular torsion is a surgical emergency characterized by the twisting of the spermatic cord, leading to compromised blood supply to the testis, which can result in ischemia and necrosis if not promptly treated.\n\n### Epidemiology\nTesticular torsion is most common in males aged 12 to 18 years, but it can occur at any age, including neonates and older adults. The incidence is approximately 3-5 per 100,000 males per year.\n\n### Essential Pathophysiology\nThe condition occurs when the spermatic cord becomes twisted, obstructing venous outflow and subsequently arterial supply to the testis. This leads to ischemia, edema, and potential necrosis of the testicular tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of severe unilateral scrotal pain\n- Nausea and vomiting\n- Abdominal pain\n- Scrotal swelling\n\n### Key Signs\n- High-riding testis\n- Tenderness on palpation\n- Absence of the cremasteric reflex\n- Scrotal erythema and edema\n\n### Atypical Presentations\n- Pain may be referred to the lower abdomen\n- Symptoms may be intermittent in some cases\n- Presentation may vary in neonates (e.g., irritability, poor feeding)\n\n### Red Flags Requiring Immediate Action\n- Severe pain that is not relieved by analgesia\n- Signs of systemic illness (fever, tachycardia)\n- Delayed presentation (>6 hours)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Ultrasound with Doppler flow studies\n\n### Second-line Investigations\n- CT scan of the abdomen and pelvis (if diagnosis is uncertain)\n\n### Specialist Tests\n- Scrotal exploration (surgical intervention)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. A high index of suspicion is crucial, especially in the presence of acute scrotal pain.\n\n### Key Differential Diagnoses to Exclude\n- Epididymitis\n- Orchitis\n- Inguinal hernia\n- Trauma\n- Testicular tumor\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate surgical consultation\n- Analgesia (e.g., paracetamol, ibuprofen)\n- NPO (nothing by mouth) in preparation for surgery\n\n#### Second-line Treatments\n- Manual detorsion (if surgical intervention is delayed)\n\n#### Emergency Procedures\n- Surgical detorsion and fixation (orchidopexy)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical fixation of the testis (orchidopexy) to prevent recurrence\n\n#### Second-line Treatments\n- Follow-up with urology for monitoring and management of complications\n\n#### Monitoring Requirements\n- Regular follow-up for testicular function and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500mg-1000mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: Consider in combination with NSAIDs for better pain control.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 400mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues.\n\n### Procedures\n\n#### Surgical detorsion and fixation (orchidopexy)\n- **What it Involves**: A surgical procedure to untwist the spermatic cord and secure the testis to the scrotal wall to prevent recurrence.\n- **Indications**: Confirmed testicular torsion, acute scrotal pain with high suspicion of torsion.\n- **Key Risks/Complications**: Infection, bleeding, testicular necrosis if delayed, chronic pain.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nIf treated within 6 hours, the testis can often be salvaged. After 12 hours, the risk of testicular loss increases significantly, and after 24 hours, the testis is usually non-viable.\n\n### Important Complications to Watch For\n- Testicular necrosis\n- Infertility\n- Chronic pain\n- Testicular atrophy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should recognize the signs and symptoms of testicular torsion, provide initial management, and ensure timely referral to urology for surgical intervention.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to urology is required for any patient with suspected testicular torsion. If the patient is unstable, escalate to emergency services.\n\n### Key Safety Considerations\nEnsure timely assessment and intervention, monitor for signs of systemic infection, and provide adequate analgesia. Maintain a high index of suspicion in young males presenting with acute scrotal pain.\n",
+  "content": {
+    "overview": {
+      "definition": "Testicular torsion is a surgical emergency characterized by the twisting of the spermatic cord, leading to compromised blood supply to the testis, which can result in ischemia and necrosis if not promptly treated.",
+      "epidemiology": "Testicular torsion is most common in males aged 12 to 18 years, but it can occur at any age, including neonates and older adults. The incidence is approximately 3-5 per 100,000 males per year.",
+      "pathophysiology": "The condition occurs when the spermatic cord becomes twisted, obstructing venous outflow and subsequently arterial supply to the testis. This leads to ischemia, edema, and potential necrosis of the testicular tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of severe unilateral scrotal pain",
+        "Nausea and vomiting",
+        "Abdominal pain",
+        "Scrotal swelling"
+      ],
+      "signs": [
+        "High-riding testis",
+        "Tenderness on palpation",
+        "Absence of the cremasteric reflex",
+        "Scrotal erythema and edema"
+      ],
+      "atypicalPresentations": [
+        "Pain may be referred to the lower abdomen",
+        "Symptoms may be intermittent in some cases",
+        "Presentation may vary in neonates (e.g., irritability, poor feeding)"
+      ],
+      "redFlags": [
+        "Severe pain that is not relieved by analgesia",
+        "Signs of systemic illness (fever, tachycardia)",
+        "Delayed presentation (>6 hours)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Ultrasound with Doppler flow studies"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen and pelvis (if diagnosis is uncertain)"
+      ],
+      "specialistTests": [
+        "Scrotal exploration (surgical intervention)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. A high index of suspicion is crucial, especially in the presence of acute scrotal pain.",
+      "differentials": [
+        "Epididymitis",
+        "Orchitis",
+        "Inguinal hernia",
+        "Trauma",
+        "Testicular tumor"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate surgical consultation",
+          "Analgesia (e.g., paracetamol, ibuprofen)",
+          "NPO (nothing by mouth) in preparation for surgery"
+        ],
+        "secondLine": [
+          "Manual detorsion (if surgical intervention is delayed)"
+        ],
+        "procedures": [
+          "Surgical detorsion and fixation (orchidopexy)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical fixation of the testis (orchidopexy) to prevent recurrence"
+        ],
+        "secondLine": [
+          "Follow-up with urology for monitoring and management of complications"
+        ],
+        "monitoring": [
+          "Regular follow-up for testicular function and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500mg-1000mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "Consider in combination with NSAIDs for better pain control."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "400mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical detorsion and fixation (orchidopexy)",
+          "description": "A surgical procedure to untwist the spermatic cord and secure the testis to the scrotal wall to prevent recurrence.",
+          "indications": "Confirmed testicular torsion, acute scrotal pain with high suspicion of torsion.",
+          "risks": "Infection, bleeding, testicular necrosis if delayed, chronic pain."
+        }
+      ]
+    },
+    "prognosis": "If treated within 6 hours, the testis can often be salvaged. After 12 hours, the risk of testicular loss increases significantly, and after 24 hours, the testis is usually non-viable.",
+    "complications": [
+      "Testicular necrosis",
+      "Infertility",
+      "Chronic pain",
+      "Testicular atrophy"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should recognize the signs and symptoms of testicular torsion, provide initial management, and ensure timely referral to urology for surgical intervention.",
+    "escalation": "Immediate referral to urology is required for any patient with suspected testicular torsion. If the patient is unstable, escalate to emergency services.",
+    "keySafetyConsiderations": "Ensure timely assessment and intervention, monitor for signs of systemic infection, and provide adequate analgesia. Maintain a high index of suspicion in young males presenting with acute scrotal pain."
+  }
+}

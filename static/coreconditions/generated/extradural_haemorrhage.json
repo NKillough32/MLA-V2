@@ -1,0 +1,128 @@
+{
+  "id": "extradural_haemorrhage",
+  "name": "Extradural haemorrhage?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:46:03.819719",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Extradural haemorrhage?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nExtradural haemorrhage (EDH) is a type of traumatic brain injury characterized by the accumulation of blood between the outer membrane (dura mater) and the skull, typically resulting from a rupture of the middle meningeal artery following head trauma.\n\n### Epidemiology\nEDH accounts for approximately 1-3% of all head injuries and is more common in young adults, particularly males aged 15-30 years. It often occurs in the context of blunt head trauma.\n\n### Essential Pathophysiology\nThe pathophysiology involves the rupture of the middle meningeal artery or a vein, leading to blood accumulation in the extradural space. This accumulation creates pressure on the brain, which can lead to neurological deficits and increased intracranial pressure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headache (often severe and sudden onset)\n- Nausea and vomiting\n- Altered consciousness\n- Seizures\n\n### Key Signs\n- Lateralizing neurological signs (e.g., weakness on one side)\n- Cushing's triad (hypertension, bradycardia, irregular respirations)\n- Pupillary changes (e.g., dilated pupil on the side of the lesion)\n\n### Atypical Presentations\n- Delayed presentation (symptoms may develop hours to days after injury)\n- Confusion or altered mental status without focal neurological signs\n\n### Red Flags Requiring Immediate Action\n- Loss of consciousness at the time of injury\n- Rapid deterioration in neurological status\n- Severe headache following head trauma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (non-contrast)\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive)\n\n### Specialist Tests\n- Angiography (if vascular injury is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and imaging findings. A CT scan will typically show a biconvex (lens-shaped) hyperdense area between the skull and the dura mater.\n\n### Key Differential Diagnoses to Exclude\n- Subdural haemorrhage\n- Intracerebral haemorrhage\n- Cerebral contusion\n- Skull fracture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate neurosurgical consultation\n- Monitoring of vital signs and neurological status\n- Consideration of intubation if GCS < 8\n\n#### Second-line Treatments\n- Surgical evacuation of the hematoma (burr hole or craniotomy)\n\n#### Emergency Procedures\n- Burr hole drainage\n- Craniotomy for evacuation of the hematoma\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular neurological assessments\n- Management of intracranial pressure (ICP) if elevated\n\n#### Second-line Treatments\n- Re-evaluation for potential surgical intervention if symptoms persist\n\n#### Monitoring Requirements\n- Neurological status and vital signs, especially in the first 24-48 hours post-injury\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30 minutes, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal failure.\n- **When to Use vs. Alternatives**: Monitor serum osmolality and renal function.\n\n#### Antiepileptics (e.g., Phenytoin)\n- **Mechanism of Action**: Prevention of post-traumatic seizures.\n- **Typical Dosing Range**: Loading dose of 15-20 mg/kg IV, followed by maintenance of 5-10 mg/kg/day.\n- **Key Side Effects/Contraindications**: Gingival hyperplasia, ataxia, rash.\n- **When to Use vs. Alternatives**: Monitor levels to avoid toxicity.\n\n### Procedures\n\n#### Burr hole drainage\n- **What it Involves**: A small hole drilled into the skull to allow for drainage of the hematoma.\n- **Indications**: Acute extradural hematoma with significant mass effect or neurological deterioration.\n- **Key Risks/Complications**: Infection, bleeding, damage to underlying brain tissue.\n\n#### Craniotomy\n- **What it Involves**: Surgical procedure to remove a portion of the skull to access the brain and evacuate the hematoma.\n- **Indications**: Large or symptomatic extradural hematoma, or if burr hole drainage is insufficient.\n- **Key Risks/Complications**: Infection, bleeding, neurological deficits, seizures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for extradural haemorrhage depends on the size of the hematoma, the speed of intervention, and the patient's neurological status at presentation. Early surgical intervention can lead to favorable outcomes, while delayed treatment can result in significant morbidity or mortality.\n\n### Important Complications to Watch For\n- Increased intracranial pressure\n- Neurological deficits\n- Seizures\n- Re-bleeding\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, monitor vital signs, and neurological status, and ensure timely imaging and referral to neurosurgery. They should also be aware of the signs of deterioration and escalate care appropriately.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to senior medical staff or neurosurgery is required for any patient with suspected extradural haemorrhage, especially if there is a rapid decline in neurological status or vital signs.\n\n### Key Safety Considerations\nEnsure that all patients with head trauma are monitored closely for changes in consciousness or neurological status. Maintain a high index of suspicion for extradural haemorrhage in patients with a history of head trauma, especially if they present with a lucid interval followed by deterioration.\n",
+  "content": {
+    "overview": {
+      "definition": "Extradural haemorrhage (EDH) is a type of traumatic brain injury characterized by the accumulation of blood between the outer membrane (dura mater) and the skull, typically resulting from a rupture of the middle meningeal artery following head trauma.",
+      "epidemiology": "EDH accounts for approximately 1-3% of all head injuries and is more common in young adults, particularly males aged 15-30 years. It often occurs in the context of blunt head trauma.",
+      "pathophysiology": "The pathophysiology involves the rupture of the middle meningeal artery or a vein, leading to blood accumulation in the extradural space. This accumulation creates pressure on the brain, which can lead to neurological deficits and increased intracranial pressure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headache (often severe and sudden onset)",
+        "Nausea and vomiting",
+        "Altered consciousness",
+        "Seizures"
+      ],
+      "signs": [
+        "Lateralizing neurological signs (e.g., weakness on one side)",
+        "Cushing's triad (hypertension, bradycardia, irregular respirations)",
+        "Pupillary changes (e.g., dilated pupil on the side of the lesion)"
+      ],
+      "atypicalPresentations": [
+        "Delayed presentation (symptoms may develop hours to days after injury)",
+        "Confusion or altered mental status without focal neurological signs"
+      ],
+      "redFlags": [
+        "Loss of consciousness at the time of injury",
+        "Rapid deterioration in neurological status",
+        "Severe headache following head trauma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (non-contrast)"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive)"
+      ],
+      "specialistTests": [
+        "Angiography (if vascular injury is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and imaging findings. A CT scan will typically show a biconvex (lens-shaped) hyperdense area between the skull and the dura mater.",
+      "differentials": [
+        "Subdural haemorrhage",
+        "Intracerebral haemorrhage",
+        "Cerebral contusion",
+        "Skull fracture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate neurosurgical consultation",
+          "Monitoring of vital signs and neurological status",
+          "Consideration of intubation if GCS < 8"
+        ],
+        "secondLine": [
+          "Surgical evacuation of the hematoma (burr hole or craniotomy)"
+        ],
+        "procedures": [
+          "Burr hole drainage",
+          "Craniotomy for evacuation of the hematoma"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular neurological assessments",
+          "Management of intracranial pressure (ICP) if elevated"
+        ],
+        "secondLine": [
+          "Re-evaluation for potential surgical intervention if symptoms persist"
+        ],
+        "monitoring": [
+          "Neurological status and vital signs, especially in the first 24-48 hours post-injury"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.",
+          "dosing": "1-2 g/kg IV over 30 minutes, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal failure.",
+          "notes": "Monitor serum osmolality and renal function."
+        },
+        {
+          "name": "Antiepileptics (e.g., Phenytoin)",
+          "mechanism": "Prevention of post-traumatic seizures.",
+          "dosing": "Loading dose of 15-20 mg/kg IV, followed by maintenance of 5-10 mg/kg/day.",
+          "sideEffects": "Gingival hyperplasia, ataxia, rash.",
+          "notes": "Monitor levels to avoid toxicity."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Burr hole drainage",
+          "description": "A small hole drilled into the skull to allow for drainage of the hematoma.",
+          "indications": "Acute extradural hematoma with significant mass effect or neurological deterioration.",
+          "risks": "Infection, bleeding, damage to underlying brain tissue."
+        },
+        {
+          "name": "Craniotomy",
+          "description": "Surgical procedure to remove a portion of the skull to access the brain and evacuate the hematoma.",
+          "indications": "Large or symptomatic extradural hematoma, or if burr hole drainage is insufficient.",
+          "risks": "Infection, bleeding, neurological deficits, seizures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for extradural haemorrhage depends on the size of the hematoma, the speed of intervention, and the patient's neurological status at presentation. Early surgical intervention can lead to favorable outcomes, while delayed treatment can result in significant morbidity or mortality.",
+    "complications": [
+      "Increased intracranial pressure",
+      "Neurological deficits",
+      "Seizures",
+      "Re-bleeding",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, monitor vital signs, and neurological status, and ensure timely imaging and referral to neurosurgery. They should also be aware of the signs of deterioration and escalate care appropriately.",
+    "escalation": "Immediate escalation to senior medical staff or neurosurgery is required for any patient with suspected extradural haemorrhage, especially if there is a rapid decline in neurological status or vital signs.",
+    "keySafetyConsiderations": "Ensure that all patients with head trauma are monitored closely for changes in consciousness or neurological status. Maintain a high index of suspicion for extradural haemorrhage in patients with a history of head trauma, especially if they present with a lucid interval followed by deterioration."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "myocarditis",
+  "name": "Myocarditis",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:14:13.141558",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Myocarditis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMyocarditis is an inflammatory condition of the myocardium, often caused by viral infections, autoimmune diseases, or exposure to certain drugs or toxins.\n\n### Epidemiology\nMyocarditis has an incidence of approximately 1-10 cases per 100,000 people per year. It can affect individuals of all ages but is more common in young adults and adolescents. Viral infections, particularly from enteroviruses, are the most common cause.\n\n### Essential Pathophysiology\nMyocarditis typically results from an immune-mediated response to an infection, leading to inflammation and damage to the myocardial tissue. This inflammation can disrupt the normal electrical conduction system of the heart, leading to arrhythmias and impaired contractility.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chest pain\n- Shortness of breath\n- Fatigue\n- Palpitations\n- Fever\n- Flu-like symptoms\n\n### Key Signs\n- Tachycardia\n- Arrhythmias\n- S3 heart sound\n- Murmurs (e.g., mitral regurgitation)\n- Signs of heart failure (e.g., peripheral edema, jugular venous distension)\n\n### Atypical Presentations\n- Syncope\n- Acute heart failure\n- Cardiogenic shock\n\n### Red Flags Requiring Immediate Action\n- Severe chest pain\n- Rapidly progressive heart failure\n- Persistent arrhythmias\n- Signs of systemic infection (e.g., fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- Cardiac biomarkers (e.g., troponin, BNP)\n\n### Second-line Investigations\n- Echocardiogram\n- Cardiac MRI\n\n### Specialist Tests\n- Endomyocardial biopsy (if indicated)\n- Viral serologies\n- Autoimmune panels\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of myocarditis is often based on clinical presentation, elevated cardiac biomarkers, and imaging findings. Endomyocardial biopsy can confirm the diagnosis in certain cases.\n\n### Key Differential Diagnoses to Exclude\n- Acute coronary syndrome\n- Pericarditis\n- Dilated cardiomyopathy\n- Heart failure from other causes\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (oxygen, fluids)\n- Diuretics for heart failure\n- Antipyretics for fever\n\n#### Second-line Treatments\n- Beta-blockers for tachycardia\n- ACE inhibitors for heart failure\n\n#### Emergency Procedures\n- Cardiac monitoring in a hospital setting\n- Possible mechanical circulatory support in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Beta-blockers\n- ACE inhibitors\n- Diuretics for symptom management\n\n#### Second-line Treatments\n- Immunosuppressive therapy (if autoimmune etiology is suspected)\n- Anticoagulation if indicated\n\n#### Monitoring Requirements\n- Regular follow-up with echocardiograms\n- Monitoring for arrhythmias\n- Assessment of heart function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and myocardial oxygen demand\n- **Typical Dosing Range**: Start at low doses, titrate based on tolerance and heart rate\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue\n- **When to Use vs. Alternatives**: Use with caution in patients with asthma or severe bradycardia.\n\n#### ACE inhibitors\n- **Mechanism of Action**: Reduce afterload and preload, improve cardiac output\n- **Typical Dosing Range**: Start at low doses, titrate based on renal function and blood pressure\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Diuretics\n- **Mechanism of Action**: Reduce fluid overload, decrease preload\n- **Typical Dosing Range**: Furosemide 20-40 mg IV/PO, adjust based on response\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly.\n\n### Procedures\n\n#### Endomyocardial biopsy\n- **What it Involves**: A procedure to obtain a small sample of heart tissue for histological examination.\n- **Indications**: Suspected myocarditis with unclear etiology, especially if treatment is dependent on the underlying cause.\n- **Key Risks/Complications**: Bleeding, infection, arrhythmias, perforation of the heart.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of myocarditis varies widely; many patients recover completely, while others may develop chronic heart failure or dilated cardiomyopathy. Early diagnosis and management are crucial for improving outcomes.\n\n### Important Complications to Watch For\n- Dilated cardiomyopathy\n- Arrhythmias\n- Heart failure\n- Sudden cardiac death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of myocarditis, initiate appropriate investigations, and manage acute symptoms. They should also be aware of when to escalate care to a cardiologist or specialist team.\n\n### When to Escalate to Senior/Specialist\nPatients with severe symptoms, persistent arrhythmias, or signs of heart failure should be escalated to a cardiology team for further management and possible admission to a higher level of care.\n\n### Key Safety Considerations\nMonitor for signs of heart failure and arrhythmias, especially in patients with elevated troponin levels or significant ECG changes. Ensure appropriate follow-up and monitoring of patients discharged after acute myocarditis.\n",
+  "content": {
+    "overview": {
+      "definition": "Myocarditis is an inflammatory condition of the myocardium, often caused by viral infections, autoimmune diseases, or exposure to certain drugs or toxins.",
+      "epidemiology": "Myocarditis has an incidence of approximately 1-10 cases per 100,000 people per year. It can affect individuals of all ages but is more common in young adults and adolescents. Viral infections, particularly from enteroviruses, are the most common cause.",
+      "pathophysiology": "Myocarditis typically results from an immune-mediated response to an infection, leading to inflammation and damage to the myocardial tissue. This inflammation can disrupt the normal electrical conduction system of the heart, leading to arrhythmias and impaired contractility."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chest pain",
+        "Shortness of breath",
+        "Fatigue",
+        "Palpitations",
+        "Fever",
+        "Flu-like symptoms"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Arrhythmias",
+        "S3 heart sound",
+        "Murmurs (e.g., mitral regurgitation)",
+        "Signs of heart failure (e.g., peripheral edema, jugular venous distension)"
+      ],
+      "atypicalPresentations": [
+        "Syncope",
+        "Acute heart failure",
+        "Cardiogenic shock"
+      ],
+      "redFlags": [
+        "Severe chest pain",
+        "Rapidly progressive heart failure",
+        "Persistent arrhythmias",
+        "Signs of systemic infection (e.g., fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "Cardiac biomarkers (e.g., troponin, BNP)"
+      ],
+      "secondLine": [
+        "Echocardiogram",
+        "Cardiac MRI"
+      ],
+      "specialistTests": [
+        "Endomyocardial biopsy (if indicated)",
+        "Viral serologies",
+        "Autoimmune panels"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of myocarditis is often based on clinical presentation, elevated cardiac biomarkers, and imaging findings. Endomyocardial biopsy can confirm the diagnosis in certain cases.",
+      "differentials": [
+        "Acute coronary syndrome",
+        "Pericarditis",
+        "Dilated cardiomyopathy",
+        "Heart failure from other causes"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (oxygen, fluids)",
+          "Diuretics for heart failure",
+          "Antipyretics for fever"
+        ],
+        "secondLine": [
+          "Beta-blockers for tachycardia",
+          "ACE inhibitors for heart failure"
+        ],
+        "procedures": [
+          "Cardiac monitoring in a hospital setting",
+          "Possible mechanical circulatory support in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Beta-blockers",
+          "ACE inhibitors",
+          "Diuretics for symptom management"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (if autoimmune etiology is suspected)",
+          "Anticoagulation if indicated"
+        ],
+        "monitoring": [
+          "Regular follow-up with echocardiograms",
+          "Monitoring for arrhythmias",
+          "Assessment of heart function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and myocardial oxygen demand",
+          "dosing": "Start at low doses, titrate based on tolerance and heart rate",
+          "sideEffects": "Bradycardia, hypotension, fatigue",
+          "notes": "Use with caution in patients with asthma or severe bradycardia."
+        },
+        {
+          "name": "ACE inhibitors",
+          "mechanism": "Reduce afterload and preload, improve cardiac output",
+          "dosing": "Start at low doses, titrate based on renal function and blood pressure",
+          "sideEffects": "Cough, hyperkalemia, renal impairment",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Diuretics",
+          "mechanism": "Reduce fluid overload, decrease preload",
+          "dosing": "Furosemide 20-40 mg IV/PO, adjust based on response",
+          "sideEffects": "Electrolyte imbalances, dehydration",
+          "notes": "Monitor electrolytes regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endomyocardial biopsy",
+          "description": "A procedure to obtain a small sample of heart tissue for histological examination.",
+          "indications": "Suspected myocarditis with unclear etiology, especially if treatment is dependent on the underlying cause.",
+          "risks": "Bleeding, infection, arrhythmias, perforation of the heart."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of myocarditis varies widely; many patients recover completely, while others may develop chronic heart failure or dilated cardiomyopathy. Early diagnosis and management are crucial for improving outcomes.",
+    "complications": [
+      "Dilated cardiomyopathy",
+      "Arrhythmias",
+      "Heart failure",
+      "Sudden cardiac death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of myocarditis, initiate appropriate investigations, and manage acute symptoms. They should also be aware of when to escalate care to a cardiologist or specialist team.",
+    "escalation": "Patients with severe symptoms, persistent arrhythmias, or signs of heart failure should be escalated to a cardiology team for further management and possible admission to a higher level of care.",
+    "keySafetyConsiderations": "Monitor for signs of heart failure and arrhythmias, especially in patients with elevated troponin levels or significant ECG changes. Ensure appropriate follow-up and monitoring of patients discharged after acute myocarditis."
+  }
+}

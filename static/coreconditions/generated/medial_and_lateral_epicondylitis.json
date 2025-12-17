@@ -1,0 +1,125 @@
+{
+  "id": "medial_and_lateral_epicondylitis",
+  "name": "Medial and lateral epicondylitis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:31:00.274246",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Medial and lateral epicondylitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMedial and lateral epicondylitis, commonly known as golfer's elbow and tennis elbow respectively, are conditions characterized by pain and inflammation of the tendons that attach to the medial and lateral epicondyles of the humerus due to overuse or repetitive strain.\n\n### Epidemiology\nLateral epicondylitis affects approximately 1-3% of the population, commonly seen in individuals aged 30-50 years. Medial epicondylitis is less common but can occur in similar age groups, often associated with activities involving repetitive wrist flexion or gripping.\n\n### Essential Pathophysiology\nBoth conditions involve degenerative changes in the tendons due to repetitive microtrauma, leading to collagen degeneration, inflammation, and pain. In lateral epicondylitis, the extensor carpi radialis brevis tendon is primarily affected, while in medial epicondylitis, the flexor tendons, particularly the pronator teres and flexor carpi radialis, are involved.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain on the outer (lateral) or inner (medial) aspect of the elbow\n- Pain that may radiate down the forearm\n- Stiffness in the elbow\n- Weakness in grip strength\n- Difficulty with activities involving wrist flexion or extension\n\n### Key Signs\n- Tenderness over the lateral or medial epicondyle\n- Pain on resisted wrist extension (lateral) or wrist flexion (medial)\n- Reduced grip strength\n- Swelling may be present in chronic cases\n\n### Atypical Presentations\n- Pain may be referred to the shoulder or wrist\n- Symptoms may worsen with specific activities rather than general use\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by rest or analgesics\n- Signs of systemic illness (fever, weight loss)\n- Neurological symptoms (numbness, tingling) suggesting nerve involvement\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination to assess pain and tenderness\n- Patient history focusing on activity and symptom onset\n\n### Second-line Investigations\n- Ultrasound to assess tendon integrity and inflammation\n- MRI if there is suspicion of significant tendon tear or other pathology\n\n### Specialist Tests\n- Electromyography (EMG) if nerve entrapment is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination findings. Imaging may be used to rule out other conditions.\n\n### Key Differential Diagnoses to Exclude\n- Radial tunnel syndrome\n- Cervical radiculopathy\n- Ulnar nerve entrapment\n- Osteoarthritis of the elbow\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce inflammation\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on stretching and strengthening exercises\n- Bracing or splinting to reduce strain on the tendons\n\n#### Emergency Procedures\n- Corticosteroid injection for severe pain not responding to conservative measures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy and rehabilitation exercises\n- Gradual return to activity with ergonomic adjustments\n\n#### Second-line Treatments\n- Extracorporeal shock wave therapy (ESWT)\n- Platelet-rich plasma (PRP) injections\n\n#### Monitoring Requirements\n- Regular follow-up to assess progress and adjust treatment as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider renal function and gastrointestinal history before prescribing.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory agents that reduce swelling and pain\n- **Typical Dosing Range**: Intra-articular injection of 10-40 mg depending on severity\n- **Key Side Effects/Contraindications**: Local tissue atrophy, infection risk, transient increase in pain\n- **When to Use vs. Alternatives**: Use sparingly and not more than 2-3 times a year.\n\n### Procedures\n\n#### Corticosteroid injection\n- **What it Involves**: Injection of corticosteroid into the affected area to reduce inflammation\n- **Indications**: Severe pain not responding to conservative management\n- **Key Risks/Complications**: Infection, tendon rupture, transient pain increase\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience significant improvement with conservative management within 6-12 months. Chronic cases may take longer and require more invasive treatments.\n\n### Important Complications to Watch For\n- Chronic pain and disability\n- Tendon rupture in severe cases\n- Recurrence of symptoms after treatment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also monitor for red flags and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if symptoms persist despite conservative management for 6-12 weeks, or if there are red flags indicating more serious pathology.\n\n### Key Safety Considerations\nEnsure proper technique when administering injections to avoid complications. Monitor for signs of infection post-injection and educate patients on activity modification to prevent exacerbation of symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Medial and lateral epicondylitis, commonly known as golfer's elbow and tennis elbow respectively, are conditions characterized by pain and inflammation of the tendons that attach to the medial and lateral epicondyles of the humerus due to overuse or repetitive strain.",
+      "epidemiology": "Lateral epicondylitis affects approximately 1-3% of the population, commonly seen in individuals aged 30-50 years. Medial epicondylitis is less common but can occur in similar age groups, often associated with activities involving repetitive wrist flexion or gripping.",
+      "pathophysiology": "Both conditions involve degenerative changes in the tendons due to repetitive microtrauma, leading to collagen degeneration, inflammation, and pain. In lateral epicondylitis, the extensor carpi radialis brevis tendon is primarily affected, while in medial epicondylitis, the flexor tendons, particularly the pronator teres and flexor carpi radialis, are involved."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain on the outer (lateral) or inner (medial) aspect of the elbow",
+        "Pain that may radiate down the forearm",
+        "Stiffness in the elbow",
+        "Weakness in grip strength",
+        "Difficulty with activities involving wrist flexion or extension"
+      ],
+      "signs": [
+        "Tenderness over the lateral or medial epicondyle",
+        "Pain on resisted wrist extension (lateral) or wrist flexion (medial)",
+        "Reduced grip strength",
+        "Swelling may be present in chronic cases"
+      ],
+      "atypicalPresentations": [
+        "Pain may be referred to the shoulder or wrist",
+        "Symptoms may worsen with specific activities rather than general use"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by rest or analgesics",
+        "Signs of systemic illness (fever, weight loss)",
+        "Neurological symptoms (numbness, tingling) suggesting nerve involvement"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination to assess pain and tenderness",
+        "Patient history focusing on activity and symptom onset"
+      ],
+      "secondLine": [
+        "Ultrasound to assess tendon integrity and inflammation",
+        "MRI if there is suspicion of significant tendon tear or other pathology"
+      ],
+      "specialistTests": [
+        "Electromyography (EMG) if nerve entrapment is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination findings. Imaging may be used to rule out other conditions.",
+      "differentials": [
+        "Radial tunnel syndrome",
+        "Cervical radiculopathy",
+        "Ulnar nerve entrapment",
+        "Osteoarthritis of the elbow"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce inflammation",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on stretching and strengthening exercises",
+          "Bracing or splinting to reduce strain on the tendons"
+        ],
+        "procedures": [
+          "Corticosteroid injection for severe pain not responding to conservative measures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy and rehabilitation exercises",
+          "Gradual return to activity with ergonomic adjustments"
+        ],
+        "secondLine": [
+          "Extracorporeal shock wave therapy (ESWT)",
+          "Platelet-rich plasma (PRP) injections"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess progress and adjust treatment as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider renal function and gastrointestinal history before prescribing."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory agents that reduce swelling and pain",
+          "dosing": "Intra-articular injection of 10-40 mg depending on severity",
+          "sideEffects": "Local tissue atrophy, infection risk, transient increase in pain",
+          "notes": "Use sparingly and not more than 2-3 times a year."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Corticosteroid injection",
+          "description": "Injection of corticosteroid into the affected area to reduce inflammation",
+          "indications": "Severe pain not responding to conservative management",
+          "risks": "Infection, tendon rupture, transient pain increase"
+        }
+      ]
+    },
+    "prognosis": "Most patients experience significant improvement with conservative management within 6-12 months. Chronic cases may take longer and require more invasive treatments.",
+    "complications": [
+      "Chronic pain and disability",
+      "Tendon rupture in severe cases",
+      "Recurrence of symptoms after treatment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, and refer to physiotherapy. They should also monitor for red flags and escalate care as needed.",
+    "escalation": "Refer to a specialist if symptoms persist despite conservative management for 6-12 weeks, or if there are red flags indicating more serious pathology.",
+    "keySafetyConsiderations": "Ensure proper technique when administering injections to avoid complications. Monitor for signs of infection post-injection and educate patients on activity modification to prevent exacerbation of symptoms."
+  }
+}

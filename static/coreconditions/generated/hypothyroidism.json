@@ -1,0 +1,123 @@
+{
+  "id": "hypothyroidism",
+  "name": "Hypothyroidism",
+  "domains": [
+    "Endocrine",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:32:09.827251",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypothyroidism: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypothyroidism is a clinical syndrome resulting from insufficient production of thyroid hormones (thyroxine (T4) and triiodothyronine (T3)) by the thyroid gland, leading to a decreased metabolic rate and various systemic effects.\n\n### Epidemiology\nHypothyroidism affects approximately 1-2% of the general population, with a higher prevalence in women and older adults. In children, congenital hypothyroidism occurs in about 1 in 3,000 to 4,000 live births.\n\n### Essential Pathophysiology\nThe most common cause of hypothyroidism is autoimmune thyroiditis (Hashimoto's thyroiditis), where the immune system attacks the thyroid gland. Other causes include iodine deficiency, thyroid surgery, radiation therapy, and certain medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weight gain\n- Cold intolerance\n- Constipation\n- Dry skin\n- Hair loss\n- Depression\n- Menstrual irregularities\n\n### Key Signs\n- Bradycardia\n- Hypotension\n- Goiter\n- Puffy face (myxedema)\n- Delayed reflexes\n- Dry, coarse skin\n- Thinning hair\n\n### Atypical Presentations\n- In children: growth retardation, delayed puberty, intellectual disability\n- In elderly: may present with depression or cognitive decline\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Myxedema coma (life-threatening condition)\n- Rapidly worsening symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- TSH (Thyroid Stimulating Hormone)\n- Free T4\n\n### Second-line Investigations\n- Thyroid antibodies (anti-TPO, anti-thyroglobulin)\n- Thyroid ultrasound (if goiter is present)\n\n### Specialist Tests\n- Radioactive iodine uptake test (to differentiate causes)\n- Serum T3 (if TSH and T4 are inconclusive)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by elevated TSH and low free T4 levels. In primary hypothyroidism, TSH is high due to lack of feedback inhibition from thyroid hormones.\n\n### Key Differential Diagnoses to Exclude\n- Primary hypothyroidism (most common)\n- Secondary hypothyroidism (pituitary disease)\n- Tertiary hypothyroidism (hypothalamic disease)\n- Iodine deficiency\n- Drug-induced hypothyroidism (e.g., lithium, amiodarone)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate levothyroxine IV in myxedema coma\n\n#### Second-line Treatments\n- Supportive care, including warming and fluid management\n\n#### Emergency Procedures\n- Endotracheal intubation (if respiratory failure occurs)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Levothyroxine (T4) replacement therapy\n\n#### Second-line Treatments\n- Monitor TSH levels every 6-8 weeks until stable, then annually\n\n#### Monitoring Requirements\n- Regular follow-up for symptom resolution and TSH levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levothyroxine\n- **Mechanism of Action**: Synthetic form of T4, which is converted to T3 in the body, restoring normal thyroid hormone levels.\n- **Typical Dosing Range**: Initial dose typically 1.6 mcg/kg/day; adjust based on TSH levels every 6-8 weeks.\n- **Key Side Effects/Contraindications**: Hyperthyroidism symptoms (if overdosed), palpitations, anxiety, weight loss.\n- **When to Use vs. Alternatives**: Take on an empty stomach, preferably in the morning.\n\n### Procedures\n\n#### Thyroidectomy\n- **What it Involves**: Surgical removal of part or all of the thyroid gland.\n- **Indications**: Severe goiter causing compressive symptoms, thyroid cancer, or suspicion of malignancy.\n- **Key Risks/Complications**: Hypoparathyroidism, recurrent laryngeal nerve injury, bleeding, infection. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, individuals with hypothyroidism can lead normal, healthy lives. Untreated hypothyroidism can lead to serious complications, including cardiovascular disease and myxedema coma.\n\n### Important Complications to Watch For\n- Cardiovascular disease (due to increased cholesterol levels)\n- Myxedema coma (severe, life-threatening hypothyroidism)\n- Infertility\n- Developmental delays in children\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hypothyroidism, perform initial investigations, initiate treatment, and monitor patients. They should also educate patients about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist if there is difficulty in managing the condition, if there are atypical presentations, or if the patient does not respond to standard treatment.\n\n### Key Safety Considerations\nMonitor for signs of over-treatment (hyperthyroidism symptoms) and ensure regular follow-up for TSH levels. Educate patients on the importance of adherence to medication and the need for regular monitoring.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypothyroidism is a clinical syndrome resulting from insufficient production of thyroid hormones (thyroxine (T4) and triiodothyronine (T3)) by the thyroid gland, leading to a decreased metabolic rate and various systemic effects.",
+      "epidemiology": "Hypothyroidism affects approximately 1-2% of the general population, with a higher prevalence in women and older adults. In children, congenital hypothyroidism occurs in about 1 in 3,000 to 4,000 live births.",
+      "pathophysiology": "The most common cause of hypothyroidism is autoimmune thyroiditis (Hashimoto's thyroiditis), where the immune system attacks the thyroid gland. Other causes include iodine deficiency, thyroid surgery, radiation therapy, and certain medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weight gain",
+        "Cold intolerance",
+        "Constipation",
+        "Dry skin",
+        "Hair loss",
+        "Depression",
+        "Menstrual irregularities"
+      ],
+      "signs": [
+        "Bradycardia",
+        "Hypotension",
+        "Goiter",
+        "Puffy face (myxedema)",
+        "Delayed reflexes",
+        "Dry, coarse skin",
+        "Thinning hair"
+      ],
+      "atypicalPresentations": [
+        "In children: growth retardation, delayed puberty, intellectual disability",
+        "In elderly: may present with depression or cognitive decline"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Myxedema coma (life-threatening condition)",
+        "Rapidly worsening symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "TSH (Thyroid Stimulating Hormone)",
+        "Free T4"
+      ],
+      "secondLine": [
+        "Thyroid antibodies (anti-TPO, anti-thyroglobulin)",
+        "Thyroid ultrasound (if goiter is present)"
+      ],
+      "specialistTests": [
+        "Radioactive iodine uptake test (to differentiate causes)",
+        "Serum T3 (if TSH and T4 are inconclusive)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by elevated TSH and low free T4 levels. In primary hypothyroidism, TSH is high due to lack of feedback inhibition from thyroid hormones.",
+      "differentials": [
+        "Primary hypothyroidism (most common)",
+        "Secondary hypothyroidism (pituitary disease)",
+        "Tertiary hypothyroidism (hypothalamic disease)",
+        "Iodine deficiency",
+        "Drug-induced hypothyroidism (e.g., lithium, amiodarone)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate levothyroxine IV in myxedema coma"
+        ],
+        "secondLine": [
+          "Supportive care, including warming and fluid management"
+        ],
+        "procedures": [
+          "Endotracheal intubation (if respiratory failure occurs)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Levothyroxine (T4) replacement therapy"
+        ],
+        "secondLine": [
+          "Monitor TSH levels every 6-8 weeks until stable, then annually"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom resolution and TSH levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levothyroxine",
+          "mechanism": "Synthetic form of T4, which is converted to T3 in the body, restoring normal thyroid hormone levels.",
+          "dosing": "Initial dose typically 1.6 mcg/kg/day; adjust based on TSH levels every 6-8 weeks.",
+          "sideEffects": "Hyperthyroidism symptoms (if overdosed), palpitations, anxiety, weight loss.",
+          "notes": "Take on an empty stomach, preferably in the morning."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thyroidectomy",
+          "description": "Surgical removal of part or all of the thyroid gland.",
+          "indications": "Severe goiter causing compressive symptoms, thyroid cancer, or suspicion of malignancy.",
+          "risks": "Hypoparathyroidism, recurrent laryngeal nerve injury, bleeding, infection. "
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, individuals with hypothyroidism can lead normal, healthy lives. Untreated hypothyroidism can lead to serious complications, including cardiovascular disease and myxedema coma.",
+    "complications": [
+      "Cardiovascular disease (due to increased cholesterol levels)",
+      "Myxedema coma (severe, life-threatening hypothyroidism)",
+      "Infertility",
+      "Developmental delays in children"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hypothyroidism, perform initial investigations, initiate treatment, and monitor patients. They should also educate patients about the condition and its management.",
+    "escalation": "Refer to an endocrinologist if there is difficulty in managing the condition, if there are atypical presentations, or if the patient does not respond to standard treatment.",
+    "keySafetyConsiderations": "Monitor for signs of over-treatment (hyperthyroidism symptoms) and ensure regular follow-up for TSH levels. Educate patients on the importance of adherence to medication and the need for regular monitoring."
+  }
+}

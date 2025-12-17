@@ -1,0 +1,141 @@
+{
+  "id": "uveitis",
+  "name": "Uveitis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:40:47.199768",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Uveitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUveitis is an inflammation of the uvea, the middle layer of the eye, which includes the iris, ciliary body, and choroid. It can affect one or both eyes and can be classified as anterior, intermediate, posterior, or panuveitis based on the affected anatomical region.\n\n### Epidemiology\nUveitis accounts for approximately 10-15% of cases of blindness in the developed world. It can occur at any age but is most common in individuals aged 20-50 years. The incidence varies by geographic region and underlying causes, with autoimmune diseases being a significant contributor.\n\n### Essential Pathophysiology\nUveitis can result from infectious agents (bacterial, viral, fungal), autoimmune diseases (e.g., sarcoidosis, rheumatoid arthritis), trauma, or idiopathic causes. The inflammation leads to increased vascular permeability, resulting in the accumulation of inflammatory cells and exudates in the uveal tissues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Eye pain\n- Redness of the eye\n- Photophobia (sensitivity to light)\n- Blurred vision\n- Floaters (spots in vision)\n\n### Key Signs\n- Conjunctival injection (redness)\n- Anterior chamber cells and flare (in anterior uveitis)\n- Keratic precipitates (deposits on the corneal endothelium)\n- Vitreous opacities (in intermediate and posterior uveitis)\n- Retinal edema or exudates (in posterior uveitis)\n\n### Atypical Presentations\n- Unilateral or bilateral involvement\n- Chronic recurrent episodes\n- Systemic symptoms (fever, malaise) in cases of systemic disease\n\n### Red Flags Requiring Immediate Action\n- Severe vision loss\n- Persistent symptoms despite treatment\n- Systemic symptoms suggestive of underlying disease (e.g., weight loss, joint pain)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Slit-lamp examination\n- Visual acuity assessment\n- Intraocular pressure measurement\n\n### Second-line Investigations\n- Fundoscopy to assess the retina and vitreous\n- Fluorescein angiography (if retinal involvement is suspected)\n- Ocular ultrasound (to evaluate for vitreous detachment or retinal tears)\n\n### Specialist Tests\n- Serological tests for autoimmune diseases (e.g., ANA, rheumatoid factor)\n- Infectious disease panels (e.g., syphilis, tuberculosis, herpes viruses)\n- Imaging studies (e.g., chest X-ray for sarcoidosis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of uveitis is primarily clinical, based on symptoms, signs, and slit-lamp examination findings. Specific criteria may include the presence of anterior chamber cells, keratic precipitates, and retinal findings depending on the type of uveitis.\n\n### Key Differential Diagnoses to Exclude\n- Conjunctivitis\n- Scleritis\n- Retinal detachment\n- Endophthalmitis\n- Systemic inflammatory diseases (e.g., Behçet's disease, ankylosing spondylitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (e.g., prednisolone acetate 1% eye drops)\n- Cycloplegic agents (e.g., atropine 1% eye drops) to relieve pain and prevent synechiae\n\n#### Second-line Treatments\n- Systemic corticosteroids (e.g., prednisone) for severe cases or if topical treatment is insufficient\n- Immunosuppressive agents (e.g., methotrexate, azathioprine) for chronic or recurrent cases\n\n#### Emergency Procedures\n- Anterior chamber paracentesis for diagnostic purposes or to relieve pressure in severe cases.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term topical corticosteroids or immunosuppressive therapy based on underlying cause\n\n#### Second-line Treatments\n- Biologic agents (e.g., adalimumab) for refractory cases associated with autoimmune diseases\n- Regular follow-up with an ophthalmologist for monitoring and adjustment of therapy\n\n#### Monitoring Requirements\n- Regular visual acuity checks\n- Intraocular pressure monitoring\n- Assessment for complications (e.g., cataract, glaucoma)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone acetate\n- **Mechanism of Action**: Corticosteroid that reduces inflammation by inhibiting leukocyte infiltration and cytokine production.\n- **Typical Dosing Range**: 1-2 drops in the affected eye(s) every 1-2 hours, tapering as inflammation resolves.\n- **Key Side Effects/Contraindications**: Increased intraocular pressure, cataract formation, delayed wound healing.\n- **When to Use vs. Alternatives**: Monitor intraocular pressure regularly during prolonged use.\n\n#### Atropine\n- **Mechanism of Action**: Anticholinergic agent that dilates the pupil and paralyzes the ciliary muscle, reducing pain and preventing synechiae.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) 1-2 times daily as needed.\n- **Key Side Effects/Contraindications**: Photophobia, blurred vision, dry mouth.\n- **When to Use vs. Alternatives**: Use with caution in patients with narrow-angle glaucoma.\n\n#### Methotrexate\n- **Mechanism of Action**: Immunosuppressive agent that inhibits DNA synthesis and cell proliferation, used for chronic uveitis.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Hepatotoxicity, bone marrow suppression, gastrointestinal toxicity.\n- **When to Use vs. Alternatives**: Regular monitoring of liver function and blood counts is essential.\n\n### Procedures\n\n#### Anterior chamber paracentesis\n- **What it Involves**: A procedure to remove fluid from the anterior chamber of the eye, often for diagnostic purposes or to relieve pressure.\n- **Indications**: Severe uveitis with elevated intraocular pressure, diagnostic evaluation of suspected infectious uveitis.\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, transient increase in intraocular pressure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of uveitis varies widely depending on the underlying cause, severity, and promptness of treatment. Early diagnosis and management can lead to favorable outcomes, while untreated uveitis can result in complications such as cataracts, glaucoma, and permanent vision loss.\n\n### Important Complications to Watch For\n- Cataract formation\n- Glaucoma\n- Retinal detachment\n- Macular edema\n- Chronic vision impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of uveitis, perform initial assessments, and refer patients to ophthalmology for further evaluation and management. They should also be aware of the importance of monitoring for complications and the need for interdisciplinary collaboration in cases with systemic involvement.\n\n### When to Escalate to Senior/Specialist\nPatients with severe symptoms, significant vision loss, or systemic symptoms should be escalated to an ophthalmologist urgently. Any suspicion of infectious uveitis should prompt immediate referral for specialist evaluation.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and aseptic technique when administering eye drops. Monitor for signs of increased intraocular pressure and educate patients on the importance of adherence to follow-up appointments to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Uveitis is an inflammation of the uvea, the middle layer of the eye, which includes the iris, ciliary body, and choroid. It can affect one or both eyes and can be classified as anterior, intermediate, posterior, or panuveitis based on the affected anatomical region.",
+      "epidemiology": "Uveitis accounts for approximately 10-15% of cases of blindness in the developed world. It can occur at any age but is most common in individuals aged 20-50 years. The incidence varies by geographic region and underlying causes, with autoimmune diseases being a significant contributor.",
+      "pathophysiology": "Uveitis can result from infectious agents (bacterial, viral, fungal), autoimmune diseases (e.g., sarcoidosis, rheumatoid arthritis), trauma, or idiopathic causes. The inflammation leads to increased vascular permeability, resulting in the accumulation of inflammatory cells and exudates in the uveal tissues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Eye pain",
+        "Redness of the eye",
+        "Photophobia (sensitivity to light)",
+        "Blurred vision",
+        "Floaters (spots in vision)"
+      ],
+      "signs": [
+        "Conjunctival injection (redness)",
+        "Anterior chamber cells and flare (in anterior uveitis)",
+        "Keratic precipitates (deposits on the corneal endothelium)",
+        "Vitreous opacities (in intermediate and posterior uveitis)",
+        "Retinal edema or exudates (in posterior uveitis)"
+      ],
+      "atypicalPresentations": [
+        "Unilateral or bilateral involvement",
+        "Chronic recurrent episodes",
+        "Systemic symptoms (fever, malaise) in cases of systemic disease"
+      ],
+      "redFlags": [
+        "Severe vision loss",
+        "Persistent symptoms despite treatment",
+        "Systemic symptoms suggestive of underlying disease (e.g., weight loss, joint pain)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Slit-lamp examination",
+        "Visual acuity assessment",
+        "Intraocular pressure measurement"
+      ],
+      "secondLine": [
+        "Fundoscopy to assess the retina and vitreous",
+        "Fluorescein angiography (if retinal involvement is suspected)",
+        "Ocular ultrasound (to evaluate for vitreous detachment or retinal tears)"
+      ],
+      "specialistTests": [
+        "Serological tests for autoimmune diseases (e.g., ANA, rheumatoid factor)",
+        "Infectious disease panels (e.g., syphilis, tuberculosis, herpes viruses)",
+        "Imaging studies (e.g., chest X-ray for sarcoidosis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of uveitis is primarily clinical, based on symptoms, signs, and slit-lamp examination findings. Specific criteria may include the presence of anterior chamber cells, keratic precipitates, and retinal findings depending on the type of uveitis.",
+      "differentials": [
+        "Conjunctivitis",
+        "Scleritis",
+        "Retinal detachment",
+        "Endophthalmitis",
+        "Systemic inflammatory diseases (e.g., Behçet's disease, ankylosing spondylitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (e.g., prednisolone acetate 1% eye drops)",
+          "Cycloplegic agents (e.g., atropine 1% eye drops) to relieve pain and prevent synechiae"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids (e.g., prednisone) for severe cases or if topical treatment is insufficient",
+          "Immunosuppressive agents (e.g., methotrexate, azathioprine) for chronic or recurrent cases"
+        ],
+        "procedures": [
+          "Anterior chamber paracentesis for diagnostic purposes or to relieve pressure in severe cases."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term topical corticosteroids or immunosuppressive therapy based on underlying cause"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., adalimumab) for refractory cases associated with autoimmune diseases",
+          "Regular follow-up with an ophthalmologist for monitoring and adjustment of therapy"
+        ],
+        "monitoring": [
+          "Regular visual acuity checks",
+          "Intraocular pressure monitoring",
+          "Assessment for complications (e.g., cataract, glaucoma)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone acetate",
+          "mechanism": "Corticosteroid that reduces inflammation by inhibiting leukocyte infiltration and cytokine production.",
+          "dosing": "1-2 drops in the affected eye(s) every 1-2 hours, tapering as inflammation resolves.",
+          "sideEffects": "Increased intraocular pressure, cataract formation, delayed wound healing.",
+          "notes": "Monitor intraocular pressure regularly during prolonged use."
+        },
+        {
+          "name": "Atropine",
+          "mechanism": "Anticholinergic agent that dilates the pupil and paralyzes the ciliary muscle, reducing pain and preventing synechiae.",
+          "dosing": "1 drop in the affected eye(s) 1-2 times daily as needed.",
+          "sideEffects": "Photophobia, blurred vision, dry mouth.",
+          "notes": "Use with caution in patients with narrow-angle glaucoma."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Immunosuppressive agent that inhibits DNA synthesis and cell proliferation, used for chronic uveitis.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response and tolerance.",
+          "sideEffects": "Hepatotoxicity, bone marrow suppression, gastrointestinal toxicity.",
+          "notes": "Regular monitoring of liver function and blood counts is essential."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Anterior chamber paracentesis",
+          "description": "A procedure to remove fluid from the anterior chamber of the eye, often for diagnostic purposes or to relieve pressure.",
+          "indications": "Severe uveitis with elevated intraocular pressure, diagnostic evaluation of suspected infectious uveitis.",
+          "risks": "Infection, bleeding, retinal detachment, transient increase in intraocular pressure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of uveitis varies widely depending on the underlying cause, severity, and promptness of treatment. Early diagnosis and management can lead to favorable outcomes, while untreated uveitis can result in complications such as cataracts, glaucoma, and permanent vision loss.",
+    "complications": [
+      "Cataract formation",
+      "Glaucoma",
+      "Retinal detachment",
+      "Macular edema",
+      "Chronic vision impairment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of uveitis, perform initial assessments, and refer patients to ophthalmology for further evaluation and management. They should also be aware of the importance of monitoring for complications and the need for interdisciplinary collaboration in cases with systemic involvement.",
+    "escalation": "Patients with severe symptoms, significant vision loss, or systemic symptoms should be escalated to an ophthalmologist urgently. Any suspicion of infectious uveitis should prompt immediate referral for specialist evaluation.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and aseptic technique when administering eye drops. Monitor for signs of increased intraocular pressure and educate patients on the importance of adherence to follow-up appointments to prevent complications."
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "ectopic_pregnancy",
+  "name": "Ectopic pregnancy",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:45:57.394801",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ectopic pregnancy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEctopic pregnancy is a condition in which a fertilized egg implants and grows outside the main cavity of the uterus, most commonly in the fallopian tubes.\n\n### Epidemiology\nEctopic pregnancies occur in approximately 1-2% of all pregnancies. Risk factors include previous ectopic pregnancy, pelvic inflammatory disease, endometriosis, and certain fertility treatments.\n\n### Essential Pathophysiology\nThe fertilized ovum fails to reach the uterus due to various factors, such as tubal obstruction or abnormal tubal motility, leading to implantation in the fallopian tube or other sites.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often unilateral)\n- Vaginal bleeding (may be light or heavy)\n- Shoulder tip pain (referred pain due to diaphragmatic irritation)\n- Dizziness or fainting (indicating possible rupture and internal bleeding)\n\n### Key Signs\n- Abdominal tenderness\n- Cervical motion tenderness\n- Adnexal tenderness\n- Signs of shock (tachycardia, hypotension)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Positive pregnancy test with no visible intrauterine pregnancy on ultrasound\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Heavy vaginal bleeding\n- Signs of shock (e.g., hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum beta-hCG levels\n- Transvaginal ultrasound\n\n### Second-line Investigations\n- Laparoscopy (if diagnosis is uncertain or if there is suspicion of rupture)\n\n### Specialist Tests\n- MRI (rarely used, but can be helpful in atypical cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by the presence of an elevated serum beta-hCG level with an absence of an intrauterine pregnancy on ultrasound, and/or the identification of ectopic tissue during surgery.\n\n### Key Differential Diagnoses to Exclude\n- Normal early pregnancy\n- Miscarriage\n- Molar pregnancy\n- Ovarian cyst rupture\n- Appendicitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Methotrexate (if stable and criteria met)\n- Surgical intervention (laparoscopy or laparotomy) if ruptured or unstable\n\n#### Second-line Treatments\n- Surgical management if methotrexate is contraindicated or failed\n\n#### Emergency Procedures\n- Laparoscopy: Minimally invasive surgery to visualize and possibly remove ectopic tissue. Indicated for confirmed ectopic pregnancy or if there is suspicion of rupture. Risks include bleeding, infection, and damage to surrounding organs.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Counseling and follow-up care after treatment\n\n#### Second-line Treatments\n- Fertility assessment and management if desired\n\n#### Monitoring Requirements\n- Regular follow-up of beta-hCG levels until they return to zero after treatment.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, leading to the destruction of rapidly dividing cells, including trophoblastic tissue.\n- **Typical Dosing Range**: Single dose of 50 mg/m² body surface area, administered intramuscularly.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, abdominal pain, stomatitis, liver enzyme elevation, and risk of bone marrow suppression.\n- **When to Use vs. Alternatives**: Contraindicated in patients with renal impairment, liver disease, or active peptic ulcer disease.\n\n### Procedures\n\n#### Laparoscopy\n- **What it Involves**: A minimally invasive surgical procedure using a camera and instruments inserted through small incisions in the abdomen to visualize and possibly remove ectopic tissue.\n- **Indications**: Confirmed ectopic pregnancy, suspected rupture, or failure of medical management.\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding organs, and anesthesia-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and appropriate management, the prognosis is generally good. However, future fertility may be affected, especially after surgical intervention.\n\n### Important Complications to Watch For\n- Ruptured ectopic pregnancy leading to internal bleeding\n- Infertility\n- Increased risk of subsequent ectopic pregnancies\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of ectopic pregnancy, perform initial assessments, order appropriate investigations, and manage stable patients under supervision. They should also be aware of when to escalate care to senior colleagues.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation is required for patients presenting with severe abdominal pain, signs of shock, or suspected ruptured ectopic pregnancy. Consult obstetrics and gynecology urgently.\n\n### Key Safety Considerations\nEnsure accurate pregnancy dating, monitor beta-hCG levels appropriately, and provide thorough counseling regarding the risks and benefits of treatment options.\n",
+  "content": {
+    "overview": {
+      "definition": "Ectopic pregnancy is a condition in which a fertilized egg implants and grows outside the main cavity of the uterus, most commonly in the fallopian tubes.",
+      "epidemiology": "Ectopic pregnancies occur in approximately 1-2% of all pregnancies. Risk factors include previous ectopic pregnancy, pelvic inflammatory disease, endometriosis, and certain fertility treatments.",
+      "pathophysiology": "The fertilized ovum fails to reach the uterus due to various factors, such as tubal obstruction or abnormal tubal motility, leading to implantation in the fallopian tube or other sites."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often unilateral)",
+        "Vaginal bleeding (may be light or heavy)",
+        "Shoulder tip pain (referred pain due to diaphragmatic irritation)",
+        "Dizziness or fainting (indicating possible rupture and internal bleeding)"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Cervical motion tenderness",
+        "Adnexal tenderness",
+        "Signs of shock (tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Positive pregnancy test with no visible intrauterine pregnancy on ultrasound"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Heavy vaginal bleeding",
+        "Signs of shock (e.g., hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum beta-hCG levels",
+        "Transvaginal ultrasound"
+      ],
+      "secondLine": [
+        "Laparoscopy (if diagnosis is uncertain or if there is suspicion of rupture)"
+      ],
+      "specialistTests": [
+        "MRI (rarely used, but can be helpful in atypical cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by the presence of an elevated serum beta-hCG level with an absence of an intrauterine pregnancy on ultrasound, and/or the identification of ectopic tissue during surgery.",
+      "differentials": [
+        "Normal early pregnancy",
+        "Miscarriage",
+        "Molar pregnancy",
+        "Ovarian cyst rupture",
+        "Appendicitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Methotrexate (if stable and criteria met)",
+          "Surgical intervention (laparoscopy or laparotomy) if ruptured or unstable"
+        ],
+        "secondLine": [
+          "Surgical management if methotrexate is contraindicated or failed"
+        ],
+        "procedures": [
+          "Laparoscopy: Minimally invasive surgery to visualize and possibly remove ectopic tissue. Indicated for confirmed ectopic pregnancy or if there is suspicion of rupture. Risks include bleeding, infection, and damage to surrounding organs."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Counseling and follow-up care after treatment"
+        ],
+        "secondLine": [
+          "Fertility assessment and management if desired"
+        ],
+        "monitoring": [
+          "Regular follow-up of beta-hCG levels until they return to zero after treatment."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, leading to the destruction of rapidly dividing cells, including trophoblastic tissue.",
+          "dosing": "Single dose of 50 mg/m² body surface area, administered intramuscularly.",
+          "sideEffects": "Nausea, vomiting, abdominal pain, stomatitis, liver enzyme elevation, and risk of bone marrow suppression.",
+          "notes": "Contraindicated in patients with renal impairment, liver disease, or active peptic ulcer disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparoscopy",
+          "description": "A minimally invasive surgical procedure using a camera and instruments inserted through small incisions in the abdomen to visualize and possibly remove ectopic tissue.",
+          "indications": "Confirmed ectopic pregnancy, suspected rupture, or failure of medical management.",
+          "risks": "Bleeding, infection, damage to surrounding organs, and anesthesia-related complications."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and appropriate management, the prognosis is generally good. However, future fertility may be affected, especially after surgical intervention.",
+    "complications": [
+      "Ruptured ectopic pregnancy leading to internal bleeding",
+      "Infertility",
+      "Increased risk of subsequent ectopic pregnancies"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of ectopic pregnancy, perform initial assessments, order appropriate investigations, and manage stable patients under supervision. They should also be aware of when to escalate care to senior colleagues.",
+    "escalation": "Immediate escalation is required for patients presenting with severe abdominal pain, signs of shock, or suspected ruptured ectopic pregnancy. Consult obstetrics and gynecology urgently.",
+    "keySafetyConsiderations": "Ensure accurate pregnancy dating, monitor beta-hCG levels appropriately, and provide thorough counseling regarding the risks and benefits of treatment options."
+  }
+}

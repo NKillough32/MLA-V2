@@ -1,0 +1,131 @@
+{
+  "id": "otitis_media",
+  "name": "Otitis media",
+  "domains": [
+    "ENT",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:37:21.252051",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Otitis media: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOtitis media is an inflammation of the middle ear, which can be acute or chronic, and is characterized by the presence of fluid in the middle ear, often associated with infection.\n\n### Epidemiology\nOtitis media is one of the most common childhood illnesses, affecting approximately 75% of children by age 3. It is more prevalent in children due to their shorter Eustachian tubes and higher incidence of upper respiratory infections.\n\n### Essential Pathophysiology\nThe condition often arises from dysfunction of the Eustachian tube, leading to negative pressure in the middle ear, fluid accumulation, and potential bacterial or viral infection.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Ear pain (otalgia)\n- Hearing loss\n- Fever\n- Irritability in children\n- Nasal congestion\n- Discharge from the ear (if perforation occurs)\n\n### Key Signs\n- Red, bulging tympanic membrane\n- Decreased mobility of the tympanic membrane on pneumatic otoscopy\n- Presence of fluid levels or bubbles behind the tympanic membrane\n- Fever (in acute cases)\n\n### Atypical Presentations\n- Persistent crying in infants\n- Poor feeding or sleeping patterns\n- Balance issues\n\n### Red Flags Requiring Immediate Action\n- Severe pain or swelling around the ear\n- Persistent fever despite treatment\n- Signs of meningitis (stiff neck, altered consciousness)\n- Facial weakness or asymmetry\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination (otoscopy)\n- History taking\n\n### Second-line Investigations\n- Tympanometry\n- Audiometry (if hearing loss is suspected)\n\n### Specialist Tests\n- CT scan of the temporal bone (if complications are suspected)\n- Referral to ENT specialist for persistent cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms, signs, and otoscopic findings of middle ear effusion and inflammation.\n\n### Key Differential Diagnoses to Exclude\n- Acute sinusitis\n- Pharyngitis\n- Foreign body in the ear\n- Cholesteatoma\n- Eustachian tube dysfunction\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (paracetamol or ibuprofen)\n- Observation for 48-72 hours in mild cases\n\n#### Second-line Treatments\n- Antibiotics (if symptoms persist or worsen after observation)\n\n#### Emergency Procedures\n- Myringotomy (if severe or recurrent cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring and follow-up\n- Hearing assessment\n\n#### Second-line Treatments\n- Grommet insertion (tympanostomy tubes) for recurrent cases\n\n#### Monitoring Requirements\n- Regular audiological assessments\n- ENT follow-up for persistent effusion\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 500 mg TDS for 5-7 days (children: 20-40 mg/kg/day divided into 2-3 doses)\n- **Key Side Effects/Contraindications**: Diarrhea, rash, allergic reactions\n- **When to Use vs. Alternatives**: First-line antibiotic for acute otitis media in children.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces pain and inflammation\n- **Typical Dosing Range**: 200-400 mg every 6-8 hours as needed (children: 5-10 mg/kg every 6-8 hours)\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Useful for pain management.\n\n### Procedures\n\n#### Myringotomy\n- **What it Involves**: Surgical procedure to make an incision in the tympanic membrane to relieve pressure and drain fluid.\n- **Indications**: Severe acute otitis media, recurrent otitis media, or persistent effusion.\n- **Key Risks/Complications**: Infection, bleeding, tympanic membrane perforation, hearing loss.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children recover fully from acute otitis media without complications. Chronic otitis media can lead to hearing loss and speech delays if not managed appropriately.\n\n### Important Complications to Watch For\n- Hearing loss\n- Tympanic membrane perforation\n- Cholesteatoma\n- Mastoiditis\n- Intracranial complications (rare)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough history and examination, initiate appropriate management, provide education to families, and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT if there are recurrent episodes, complications, or if the patient does not respond to initial management within 48-72 hours.\n\n### Key Safety Considerations\nEnsure proper pain management, monitor for signs of complications, educate parents on when to seek further medical attention, and ensure follow-up for persistent cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Otitis media is an inflammation of the middle ear, which can be acute or chronic, and is characterized by the presence of fluid in the middle ear, often associated with infection.",
+      "epidemiology": "Otitis media is one of the most common childhood illnesses, affecting approximately 75% of children by age 3. It is more prevalent in children due to their shorter Eustachian tubes and higher incidence of upper respiratory infections.",
+      "pathophysiology": "The condition often arises from dysfunction of the Eustachian tube, leading to negative pressure in the middle ear, fluid accumulation, and potential bacterial or viral infection."
+    },
+    "recognition": {
+      "symptoms": [
+        "Ear pain (otalgia)",
+        "Hearing loss",
+        "Fever",
+        "Irritability in children",
+        "Nasal congestion",
+        "Discharge from the ear (if perforation occurs)"
+      ],
+      "signs": [
+        "Red, bulging tympanic membrane",
+        "Decreased mobility of the tympanic membrane on pneumatic otoscopy",
+        "Presence of fluid levels or bubbles behind the tympanic membrane",
+        "Fever (in acute cases)"
+      ],
+      "atypicalPresentations": [
+        "Persistent crying in infants",
+        "Poor feeding or sleeping patterns",
+        "Balance issues"
+      ],
+      "redFlags": [
+        "Severe pain or swelling around the ear",
+        "Persistent fever despite treatment",
+        "Signs of meningitis (stiff neck, altered consciousness)",
+        "Facial weakness or asymmetry"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination (otoscopy)",
+        "History taking"
+      ],
+      "secondLine": [
+        "Tympanometry",
+        "Audiometry (if hearing loss is suspected)"
+      ],
+      "specialistTests": [
+        "CT scan of the temporal bone (if complications are suspected)",
+        "Referral to ENT specialist for persistent cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms, signs, and otoscopic findings of middle ear effusion and inflammation.",
+      "differentials": [
+        "Acute sinusitis",
+        "Pharyngitis",
+        "Foreign body in the ear",
+        "Cholesteatoma",
+        "Eustachian tube dysfunction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (paracetamol or ibuprofen)",
+          "Observation for 48-72 hours in mild cases"
+        ],
+        "secondLine": [
+          "Antibiotics (if symptoms persist or worsen after observation)"
+        ],
+        "procedures": [
+          "Myringotomy (if severe or recurrent cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring and follow-up",
+          "Hearing assessment"
+        ],
+        "secondLine": [
+          "Grommet insertion (tympanostomy tubes) for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular audiological assessments",
+          "ENT follow-up for persistent effusion"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "500 mg TDS for 5-7 days (children: 20-40 mg/kg/day divided into 2-3 doses)",
+          "sideEffects": "Diarrhea, rash, allergic reactions",
+          "notes": "First-line antibiotic for acute otitis media in children."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces pain and inflammation",
+          "dosing": "200-400 mg every 6-8 hours as needed (children: 5-10 mg/kg every 6-8 hours)",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Useful for pain management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Myringotomy",
+          "description": "Surgical procedure to make an incision in the tympanic membrane to relieve pressure and drain fluid.",
+          "indications": "Severe acute otitis media, recurrent otitis media, or persistent effusion.",
+          "risks": "Infection, bleeding, tympanic membrane perforation, hearing loss."
+        }
+      ]
+    },
+    "prognosis": "Most children recover fully from acute otitis media without complications. Chronic otitis media can lead to hearing loss and speech delays if not managed appropriately.",
+    "complications": [
+      "Hearing loss",
+      "Tympanic membrane perforation",
+      "Cholesteatoma",
+      "Mastoiditis",
+      "Intracranial complications (rare)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough history and examination, initiate appropriate management, provide education to families, and refer to specialists when necessary.",
+    "escalation": "Refer to ENT if there are recurrent episodes, complications, or if the patient does not respond to initial management within 48-72 hours.",
+    "keySafetyConsiderations": "Ensure proper pain management, monitor for signs of complications, educate parents on when to seek further medical attention, and ensure follow-up for persistent cases."
+  }
+}

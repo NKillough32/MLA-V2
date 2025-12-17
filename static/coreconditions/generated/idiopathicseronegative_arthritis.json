@@ -1,0 +1,151 @@
+{
+  "id": "idiopathicseronegative_arthritis",
+  "name": "Idiopathic/Seronegative arthritis",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:28:42.952824",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Idiopathic/Seronegative arthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIdiopathic/Seronegative arthritis refers to a group of inflammatory joint diseases characterized by the absence of specific autoantibodies (such as rheumatoid factor or anti-CCP antibodies) and includes conditions like ankylosing spondylitis, psoriatic arthritis, and reactive arthritis.\n\n### Epidemiology\nSeronegative spondyloarthritis affects approximately 0.5-1% of the population, with a higher prevalence in males and often presenting in late adolescence to early adulthood.\n\n### Essential Pathophysiology\nThe exact cause is unknown (idiopathic), but it is believed to involve a combination of genetic predisposition (HLA-B27 association), environmental factors, and immune dysregulation leading to chronic inflammation of the joints and entheses.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic joint pain and stiffness\n- Swelling of joints\n- Fatigue\n- Reduced range of motion\n- Morning stiffness lasting more than 30 minutes\n\n### Key Signs\n- Tenderness and swelling in affected joints\n- Enthesitis (inflammation at tendon insertions)\n- Dactylitis (sausage digit)\n- Reduced spinal mobility\n- Skin lesions (in psoriatic arthritis)\n\n### Atypical Presentations\n- Uveitis (eye inflammation)\n- Nail changes (pitting, onycholysis in psoriatic arthritis)\n- Gastrointestinal symptoms (in reactive arthritis)\n\n### Red Flags Requiring Immediate Action\n- Severe joint pain with rapid onset\n- Systemic symptoms (fever, weight loss)\n- Neurological symptoms (numbness, weakness)\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- X-rays of affected joints\n\n### Second-line Investigations\n- MRI of the sacroiliac joints (for ankylosing spondylitis)\n- Ultrasound of joints\n- HLA-B27 testing\n\n### Specialist Tests\n- Joint aspiration and synovial fluid analysis\n- Bone scans\n- Genetic testing for specific conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical criteria, imaging findings, and exclusion of other conditions. The ASAS criteria for axial spondyloarthritis can be used for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Gout\n- Osteoarthritis\n- Systemic lupus erythematosus\n- Infectious arthritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Nonsteroidal anti-inflammatory drugs (NSAIDs)\n- Corticosteroids (intra-articular injections)\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) like methotrexate (for psoriatic arthritis)\n- Biologics (TNF inhibitors)\n\n#### Emergency Procedures\n- Joint aspiration for diagnostic and therapeutic purposes\n- Intra-articular steroid injections for localized inflammation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term NSAIDs for pain management\n- Physical therapy and exercise programs\n\n#### Second-line Treatments\n- DMARDs for disease control\n- Biologics for refractory cases\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity\n- Monitoring for side effects of medications\n- Assessment of functional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.\n- **Typical Dosing Range**: 400-800 mg orally every 6-8 hours as needed, max 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, cardiovascular risks.\n- **When to Use vs. Alternatives**: Monitor renal function and gastrointestinal symptoms.\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to anti-inflammatory effects.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Adalimumab (Humira)\n- **Mechanism of Action**: TNF-alpha inhibitor, reducing inflammation.\n- **Typical Dosing Range**: Initial dose of 160 mg subcutaneously, followed by 80 mg at week 2, then 40 mg every other week.\n- **Key Side Effects/Contraindications**: Increased risk of infections, injection site reactions.\n- **When to Use vs. Alternatives**: Screen for tuberculosis before starting.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: Involves using a needle to withdraw synovial fluid from a joint for analysis.\n- **Indications**: To diagnose or relieve swelling in inflammatory arthritis.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n#### Intra-articular steroid injection\n- **What it Involves**: Injection of corticosteroids directly into the joint to reduce inflammation.\n- **Indications**: Localized inflammatory arthritis not responding to systemic treatment.\n- **Key Risks/Complications**: Joint infection, transient increase in pain, potential for joint damage with repeated use. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies; some patients may experience periods of remission while others may have chronic symptoms leading to joint damage and disability. Early diagnosis and treatment can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Joint damage and deformity\n- Osteoporosis\n- Increased cardiovascular risk\n- Uveitis (in certain types)\n- Comorbidities such as inflammatory bowel disease in reactive arthritis.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, perform initial assessments, and initiate investigations. They should also be aware of the need for referral to rheumatology for further management and treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to rheumatology if there is a lack of response to initial treatment, worsening symptoms, or if red flags are present.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially DMARDs and biologics. Ensure regular follow-up for disease activity and functional assessment. Educate patients on signs of infection and when to seek immediate medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Idiopathic/Seronegative arthritis refers to a group of inflammatory joint diseases characterized by the absence of specific autoantibodies (such as rheumatoid factor or anti-CCP antibodies) and includes conditions like ankylosing spondylitis, psoriatic arthritis, and reactive arthritis.",
+      "epidemiology": "Seronegative spondyloarthritis affects approximately 0.5-1% of the population, with a higher prevalence in males and often presenting in late adolescence to early adulthood.",
+      "pathophysiology": "The exact cause is unknown (idiopathic), but it is believed to involve a combination of genetic predisposition (HLA-B27 association), environmental factors, and immune dysregulation leading to chronic inflammation of the joints and entheses."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic joint pain and stiffness",
+        "Swelling of joints",
+        "Fatigue",
+        "Reduced range of motion",
+        "Morning stiffness lasting more than 30 minutes"
+      ],
+      "signs": [
+        "Tenderness and swelling in affected joints",
+        "Enthesitis (inflammation at tendon insertions)",
+        "Dactylitis (sausage digit)",
+        "Reduced spinal mobility",
+        "Skin lesions (in psoriatic arthritis)"
+      ],
+      "atypicalPresentations": [
+        "Uveitis (eye inflammation)",
+        "Nail changes (pitting, onycholysis in psoriatic arthritis)",
+        "Gastrointestinal symptoms (in reactive arthritis)"
+      ],
+      "redFlags": [
+        "Severe joint pain with rapid onset",
+        "Systemic symptoms (fever, weight loss)",
+        "Neurological symptoms (numbness, weakness)",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "X-rays of affected joints"
+      ],
+      "secondLine": [
+        "MRI of the sacroiliac joints (for ankylosing spondylitis)",
+        "Ultrasound of joints",
+        "HLA-B27 testing"
+      ],
+      "specialistTests": [
+        "Joint aspiration and synovial fluid analysis",
+        "Bone scans",
+        "Genetic testing for specific conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical criteria, imaging findings, and exclusion of other conditions. The ASAS criteria for axial spondyloarthritis can be used for diagnosis.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Gout",
+        "Osteoarthritis",
+        "Systemic lupus erythematosus",
+        "Infectious arthritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Nonsteroidal anti-inflammatory drugs (NSAIDs)",
+          "Corticosteroids (intra-articular injections)"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) like methotrexate (for psoriatic arthritis)",
+          "Biologics (TNF inhibitors)"
+        ],
+        "procedures": [
+          "Joint aspiration for diagnostic and therapeutic purposes",
+          "Intra-articular steroid injections for localized inflammation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term NSAIDs for pain management",
+          "Physical therapy and exercise programs"
+        ],
+        "secondLine": [
+          "DMARDs for disease control",
+          "Biologics for refractory cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity",
+          "Monitoring for side effects of medications",
+          "Assessment of functional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Inhibits cyclooxygenase enzymes, reducing prostaglandin synthesis and inflammation.",
+          "dosing": "400-800 mg orally every 6-8 hours as needed, max 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, cardiovascular risks.",
+          "notes": "Monitor renal function and gastrointestinal symptoms."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to anti-inflammatory effects.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Adalimumab (Humira)",
+          "mechanism": "TNF-alpha inhibitor, reducing inflammation.",
+          "dosing": "Initial dose of 160 mg subcutaneously, followed by 80 mg at week 2, then 40 mg every other week.",
+          "sideEffects": "Increased risk of infections, injection site reactions.",
+          "notes": "Screen for tuberculosis before starting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "Involves using a needle to withdraw synovial fluid from a joint for analysis.",
+          "indications": "To diagnose or relieve swelling in inflammatory arthritis.",
+          "risks": "Infection, bleeding, pain at the site."
+        },
+        {
+          "name": "Intra-articular steroid injection",
+          "description": "Injection of corticosteroids directly into the joint to reduce inflammation.",
+          "indications": "Localized inflammatory arthritis not responding to systemic treatment.",
+          "risks": "Joint infection, transient increase in pain, potential for joint damage with repeated use. "
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies; some patients may experience periods of remission while others may have chronic symptoms leading to joint damage and disability. Early diagnosis and treatment can improve outcomes significantly.",
+    "complications": [
+      "Joint damage and deformity",
+      "Osteoporosis",
+      "Increased cardiovascular risk",
+      "Uveitis (in certain types)",
+      "Comorbidities such as inflammatory bowel disease in reactive arthritis."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, perform initial assessments, and initiate investigations. They should also be aware of the need for referral to rheumatology for further management and treatment.",
+    "escalation": "Refer to rheumatology if there is a lack of response to initial treatment, worsening symptoms, or if red flags are present.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially DMARDs and biologics. Ensure regular follow-up for disease activity and functional assessment. Educate patients on signs of infection and when to seek immediate medical attention."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "somatoform",
+  "name": "Somatoform",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:11:44.367306",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Somatoform: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSomatoform disorders are a group of mental health conditions characterized by physical symptoms that cannot be fully explained by a medical condition, substance use, or another mental disorder. These symptoms cause significant distress or impairment in social, occupational, or other important areas of functioning.\n\n### Epidemiology\nSomatoform disorders are relatively common, with estimates suggesting that 10-15% of patients in primary care settings may have somatic symptom disorder. They are more prevalent in women than men and often present in late adolescence or early adulthood.\n\n### Essential Pathophysiology\nThe exact pathophysiology of somatoform disorders is not fully understood. It is believed to involve a complex interplay of biological, psychological, and social factors. Neurobiological studies suggest dysregulation in pain perception and emotional processing, while psychological factors may include maladaptive coping strategies and heightened sensitivity to bodily sensations.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic pain without a clear medical cause\n- Fatigue\n- Gastrointestinal symptoms (nausea, diarrhea)\n- Neurological symptoms (numbness, weakness)\n- Sexual dysfunction\n\n### Key Signs\n- Physical examination may reveal no significant findings despite reported symptoms\n- Inconsistent symptom reporting\n- Excessive focus on health concerns\n\n### Atypical Presentations\n- Symptoms may mimic serious medical conditions (e.g., cancer, multiple sclerosis)\n- Symptoms may change over time or with stressors\n\n### Red Flags Requiring Immediate Action\n- Acute onset of symptoms after a significant life stressor\n- Symptoms that are inconsistent with known medical conditions\n- Presence of significant psychosocial stressors\n- History of multiple medical consultations without a clear diagnosis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Thorough clinical history and physical examination\n- Basic laboratory tests (CBC, metabolic panel) to rule out organic causes\n\n### Second-line Investigations\n- Imaging studies (X-ray, MRI) if indicated based on symptoms\n- Referral to a specialist (e.g., neurologist, gastroenterologist) if symptoms persist\n\n### Specialist Tests\n- Psychological assessment (e.g., structured interviews, questionnaires) to evaluate for underlying psychiatric conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of one or more somatic symptoms that are distressing or result in significant disruption of daily life, and the absence of a medical explanation for these symptoms. The symptoms must persist for at least 6 months.\n\n### Key Differential Diagnoses to Exclude\n- Conversion disorder\n- Hypochondriasis\n- Body dysmorphic disorder\n- Anxiety disorders\n- Depressive disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Establish a therapeutic alliance and validate the patient's experience\n- Provide reassurance and education about the nature of somatoform disorders\n\n#### Second-line Treatments\n- Cognitive-behavioral therapy (CBT) to address maladaptive thoughts and behaviors\n- Consider referral to a psychiatrist for medication management if symptoms are severe\n\n#### Emergency Procedures\n- None specific to somatoform disorders; focus is on psychological interventions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up appointments to monitor symptoms and provide support\n- Encourage engagement in physical activity and social interactions\n\n#### Second-line Treatments\n- Long-term CBT or other psychotherapeutic approaches\n- Consider group therapy for social support\n\n#### Monitoring Requirements\n- Regular assessment of symptom severity and functional impairment\n- Monitor for development of comorbid psychiatric conditions\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Selective Serotonin Reuptake Inhibitors (SSRIs)\n- **Mechanism of Action**: Increase serotonin levels in the brain, which can help improve mood and reduce anxiety\n- **Typical Dosing Range**: Start with low doses (e.g., fluoxetine 20 mg daily) and titrate as needed\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, weight gain\n- **When to Use vs. Alternatives**: SSRIs may be beneficial for comorbid anxiety or depression, which often accompany somatoform disorders.\n\n#### Cognitive Behavioral Therapy (CBT)\n- **Mechanism of Action**: Psychotherapeutic approach that helps patients identify and change negative thought patterns and behaviors\n- **Typical Dosing Range**: Typically involves weekly sessions for 12-20 weeks\n- **Key Side Effects/Contraindications**: None specific, but may cause initial discomfort as patients confront distressing thoughts\n- **When to Use vs. Alternatives**: CBT is considered a first-line treatment for somatoform disorders.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for somatoform disorders varies. Some patients may experience significant improvement with appropriate treatment, while others may have chronic symptoms that require ongoing management. Early intervention and a supportive therapeutic relationship can improve outcomes.\n\n### Important Complications to Watch For\n- Development of comorbid psychiatric disorders (e.g., anxiety, depression)\n- Increased healthcare utilization and costs\n- Potential for unnecessary medical procedures due to persistent symptom reporting\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be skilled in recognizing somatoform disorders, conducting thorough assessments, and providing initial management. They should also be aware of when to refer to mental health specialists for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, significant functional impairment, or if there are concerns about self-harm or suicidality, immediate referral to a psychiatrist or mental health crisis team is warranted.\n\n### Key Safety Considerations\nEnsure that patients are not subjected to unnecessary medical tests or procedures. Maintain a non-judgmental and empathetic approach to foster trust and encourage open communication about symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Somatoform disorders are a group of mental health conditions characterized by physical symptoms that cannot be fully explained by a medical condition, substance use, or another mental disorder. These symptoms cause significant distress or impairment in social, occupational, or other important areas of functioning.",
+      "epidemiology": "Somatoform disorders are relatively common, with estimates suggesting that 10-15% of patients in primary care settings may have somatic symptom disorder. They are more prevalent in women than men and often present in late adolescence or early adulthood.",
+      "pathophysiology": "The exact pathophysiology of somatoform disorders is not fully understood. It is believed to involve a complex interplay of biological, psychological, and social factors. Neurobiological studies suggest dysregulation in pain perception and emotional processing, while psychological factors may include maladaptive coping strategies and heightened sensitivity to bodily sensations."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic pain without a clear medical cause",
+        "Fatigue",
+        "Gastrointestinal symptoms (nausea, diarrhea)",
+        "Neurological symptoms (numbness, weakness)",
+        "Sexual dysfunction"
+      ],
+      "signs": [
+        "Physical examination may reveal no significant findings despite reported symptoms",
+        "Inconsistent symptom reporting",
+        "Excessive focus on health concerns"
+      ],
+      "atypicalPresentations": [
+        "Symptoms may mimic serious medical conditions (e.g., cancer, multiple sclerosis)",
+        "Symptoms may change over time or with stressors"
+      ],
+      "redFlags": [
+        "Acute onset of symptoms after a significant life stressor",
+        "Symptoms that are inconsistent with known medical conditions",
+        "Presence of significant psychosocial stressors",
+        "History of multiple medical consultations without a clear diagnosis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Thorough clinical history and physical examination",
+        "Basic laboratory tests (CBC, metabolic panel) to rule out organic causes"
+      ],
+      "secondLine": [
+        "Imaging studies (X-ray, MRI) if indicated based on symptoms",
+        "Referral to a specialist (e.g., neurologist, gastroenterologist) if symptoms persist"
+      ],
+      "specialistTests": [
+        "Psychological assessment (e.g., structured interviews, questionnaires) to evaluate for underlying psychiatric conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of one or more somatic symptoms that are distressing or result in significant disruption of daily life, and the absence of a medical explanation for these symptoms. The symptoms must persist for at least 6 months.",
+      "differentials": [
+        "Conversion disorder",
+        "Hypochondriasis",
+        "Body dysmorphic disorder",
+        "Anxiety disorders",
+        "Depressive disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Establish a therapeutic alliance and validate the patient's experience",
+          "Provide reassurance and education about the nature of somatoform disorders"
+        ],
+        "secondLine": [
+          "Cognitive-behavioral therapy (CBT) to address maladaptive thoughts and behaviors",
+          "Consider referral to a psychiatrist for medication management if symptoms are severe"
+        ],
+        "procedures": [
+          "None specific to somatoform disorders; focus is on psychological interventions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up appointments to monitor symptoms and provide support",
+          "Encourage engagement in physical activity and social interactions"
+        ],
+        "secondLine": [
+          "Long-term CBT or other psychotherapeutic approaches",
+          "Consider group therapy for social support"
+        ],
+        "monitoring": [
+          "Regular assessment of symptom severity and functional impairment",
+          "Monitor for development of comorbid psychiatric conditions"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+          "mechanism": "Increase serotonin levels in the brain, which can help improve mood and reduce anxiety",
+          "dosing": "Start with low doses (e.g., fluoxetine 20 mg daily) and titrate as needed",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, weight gain",
+          "notes": "SSRIs may be beneficial for comorbid anxiety or depression, which often accompany somatoform disorders."
+        },
+        {
+          "name": "Cognitive Behavioral Therapy (CBT)",
+          "mechanism": "Psychotherapeutic approach that helps patients identify and change negative thought patterns and behaviors",
+          "dosing": "Typically involves weekly sessions for 12-20 weeks",
+          "sideEffects": "None specific, but may cause initial discomfort as patients confront distressing thoughts",
+          "notes": "CBT is considered a first-line treatment for somatoform disorders."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "The prognosis for somatoform disorders varies. Some patients may experience significant improvement with appropriate treatment, while others may have chronic symptoms that require ongoing management. Early intervention and a supportive therapeutic relationship can improve outcomes.",
+    "complications": [
+      "Development of comorbid psychiatric disorders (e.g., anxiety, depression)",
+      "Increased healthcare utilization and costs",
+      "Potential for unnecessary medical procedures due to persistent symptom reporting"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be skilled in recognizing somatoform disorders, conducting thorough assessments, and providing initial management. They should also be aware of when to refer to mental health specialists for further evaluation and treatment.",
+    "escalation": "If a patient presents with severe symptoms, significant functional impairment, or if there are concerns about self-harm or suicidality, immediate referral to a psychiatrist or mental health crisis team is warranted.",
+    "keySafetyConsiderations": "Ensure that patients are not subjected to unnecessary medical tests or procedures. Maintain a non-judgmental and empathetic approach to foster trust and encourage open communication about symptoms."
+  }
+}

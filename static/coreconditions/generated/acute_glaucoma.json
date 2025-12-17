@@ -1,0 +1,156 @@
+{
+  "id": "acute_glaucoma",
+  "name": "Acute glaucoma",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:39:41.090249",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute glaucoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute glaucoma, also known as acute angle-closure glaucoma, is a rapid increase in intraocular pressure (IOP) due to the obstruction of aqueous humor outflow, typically caused by the closure of the anterior chamber angle.\n\n### Epidemiology\nAcute glaucoma is less common than chronic glaucoma, but it can occur in any age group, with a higher prevalence in older adults, particularly those with hyperopia (farsightedness). It is more common in women than men.\n\n### Essential Pathophysiology\nIn acute glaucoma, the iris is pushed forward, obstructing the trabecular meshwork and preventing aqueous humor from draining. This leads to a rapid increase in IOP, which can cause damage to the optic nerve and result in vision loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe eye pain\n- Headache\n- Nausea and vomiting\n- Blurred vision\n- Halos around lights\n\n### Key Signs\n- Red eye\n- Mid-dilated pupil that is non-reactive to light\n- Corneal edema (cloudiness)\n- Increased intraocular pressure (IOP)\n\n### Atypical Presentations\n- Bilateral symptoms (though usually unilateral)\n- Symptoms mimicking migraine or sinusitis\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe eye pain\n- Visual disturbances\n- Nausea and vomiting accompanying eye symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Intraocular pressure measurement (tonometry)\n- Slit-lamp examination\n\n### Second-line Investigations\n- Gonioscopy to assess the angle of the anterior chamber\n- Visual field testing\n\n### Specialist Tests\n- Optical coherence tomography (OCT)\n- Ultrasound biomicroscopy (UBM)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of symptoms, signs, and an elevated IOP (typically > 21 mmHg) with evidence of angle closure on gonioscopy.\n\n### Key Differential Diagnoses to Exclude\n- Chronic glaucoma\n- Uveitis\n- Corneal edema\n- Retinal detachment\n- Migraine\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical beta-blockers (e.g., timolol)\n- Topical carbonic anhydrase inhibitors (e.g., dorzolamide)\n- Pilocarpine (to constrict the pupil)\n- Oral carbonic anhydrase inhibitors (e.g., acetazolamide)\n\n#### Second-line Treatments\n- Systemic hyperosmotic agents (e.g., mannitol)\n- Topical prostaglandin analogs (e.g., latanoprost)\n\n#### Emergency Procedures\n- Laser peripheral iridotomy (to create a new drainage pathway)\n- Surgical iridectomy (if laser is not available or fails)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of IOP\n- Patient education on recognizing symptoms of acute attacks\n\n#### Second-line Treatments\n- Long-term topical medications (e.g., prostaglandin analogs, beta-blockers)\n\n#### Monitoring Requirements\n- Regular follow-up appointments to monitor IOP and visual fields\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Timolol\n- **Mechanism of Action**: Non-selective beta-adrenergic antagonist that reduces aqueous humor production.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) twice daily.\n- **Key Side Effects/Contraindications**: Burning/stinging on application, systemic effects (bradycardia, hypotension).\n- **When to Use vs. Alternatives**: Monitor for systemic side effects, especially in patients with respiratory conditions.\n\n#### Dorzolamide\n- **Mechanism of Action**: Carbonic anhydrase inhibitor that decreases aqueous humor production.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) 2-3 times daily.\n- **Key Side Effects/Contraindications**: Burning/stinging, bitter taste, allergic reactions.\n- **When to Use vs. Alternatives**: Use with caution in patients with sulfa allergies.\n\n#### Acetazolamide\n- **Mechanism of Action**: Systemic carbonic anhydrase inhibitor that decreases aqueous humor production.\n- **Typical Dosing Range**: 250 mg orally, 1-2 times daily.\n- **Key Side Effects/Contraindications**: Paresthesia, metabolic acidosis, renal stones.\n- **When to Use vs. Alternatives**: Monitor electrolytes and renal function.\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic agent that reduces IOP by drawing fluid out of the eye.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30-60 minutes.\n- **Key Side Effects/Contraindications**: Dehydration, electrolyte imbalances.\n- **When to Use vs. Alternatives**: Contraindicated in renal failure.\n\n#### Pilocarpine\n- **Mechanism of Action**: Cholinergic agonist that increases aqueous humor outflow by constricting the pupil.\n- **Typical Dosing Range**: 1 drop in the affected eye(s) 2-4 times daily.\n- **Key Side Effects/Contraindications**: Miosis, accommodation spasm, brow ache.\n- **When to Use vs. Alternatives**: Effectiveness may be limited in acute settings.\n\n### Procedures\n\n#### Laser Peripheral Iridotomy\n- **What it Involves**: A laser is used to create a small hole in the peripheral iris to allow aqueous humor to flow to the anterior chamber and relieve pressure.\n- **Indications**: Acute angle-closure glaucoma, prevention in at-risk patients.\n- **Key Risks/Complications**: Intraocular hemorrhage, retinal detachment, transient IOP spike.\n\n#### Surgical Iridectomy\n- **What it Involves**: Surgical removal of a portion of the peripheral iris to create a new drainage pathway for aqueous humor.\n- **Indications**: When laser treatment is not available or fails.\n- **Key Risks/Complications**: Infection, bleeding, cataract formation, retinal detachment.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis is generally good, but delayed treatment can lead to permanent vision loss.\n\n### Important Complications to Watch For\n- Permanent vision loss\n- Corneal decompensation\n- Optic nerve damage\n- Recurrent episodes of acute glaucoma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of acute glaucoma, perform initial assessments, and initiate treatment while ensuring timely referral to an ophthalmologist.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with symptoms suggestive of acute glaucoma, immediate referral to an ophthalmologist is essential, especially if IOP is significantly elevated (> 30 mmHg) or if there are signs of optic nerve damage.\n\n### Key Safety Considerations\nMonitor for systemic side effects of medications, ensure proper follow-up for patients treated for acute glaucoma, and educate patients on recognizing symptoms of acute attacks.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute glaucoma, also known as acute angle-closure glaucoma, is a rapid increase in intraocular pressure (IOP) due to the obstruction of aqueous humor outflow, typically caused by the closure of the anterior chamber angle.",
+      "epidemiology": "Acute glaucoma is less common than chronic glaucoma, but it can occur in any age group, with a higher prevalence in older adults, particularly those with hyperopia (farsightedness). It is more common in women than men.",
+      "pathophysiology": "In acute glaucoma, the iris is pushed forward, obstructing the trabecular meshwork and preventing aqueous humor from draining. This leads to a rapid increase in IOP, which can cause damage to the optic nerve and result in vision loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe eye pain",
+        "Headache",
+        "Nausea and vomiting",
+        "Blurred vision",
+        "Halos around lights"
+      ],
+      "signs": [
+        "Red eye",
+        "Mid-dilated pupil that is non-reactive to light",
+        "Corneal edema (cloudiness)",
+        "Increased intraocular pressure (IOP)"
+      ],
+      "atypicalPresentations": [
+        "Bilateral symptoms (though usually unilateral)",
+        "Symptoms mimicking migraine or sinusitis"
+      ],
+      "redFlags": [
+        "Sudden onset of severe eye pain",
+        "Visual disturbances",
+        "Nausea and vomiting accompanying eye symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Intraocular pressure measurement (tonometry)",
+        "Slit-lamp examination"
+      ],
+      "secondLine": [
+        "Gonioscopy to assess the angle of the anterior chamber",
+        "Visual field testing"
+      ],
+      "specialistTests": [
+        "Optical coherence tomography (OCT)",
+        "Ultrasound biomicroscopy (UBM)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of symptoms, signs, and an elevated IOP (typically > 21 mmHg) with evidence of angle closure on gonioscopy.",
+      "differentials": [
+        "Chronic glaucoma",
+        "Uveitis",
+        "Corneal edema",
+        "Retinal detachment",
+        "Migraine"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical beta-blockers (e.g., timolol)",
+          "Topical carbonic anhydrase inhibitors (e.g., dorzolamide)",
+          "Pilocarpine (to constrict the pupil)",
+          "Oral carbonic anhydrase inhibitors (e.g., acetazolamide)"
+        ],
+        "secondLine": [
+          "Systemic hyperosmotic agents (e.g., mannitol)",
+          "Topical prostaglandin analogs (e.g., latanoprost)"
+        ],
+        "procedures": [
+          "Laser peripheral iridotomy (to create a new drainage pathway)",
+          "Surgical iridectomy (if laser is not available or fails)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of IOP",
+          "Patient education on recognizing symptoms of acute attacks"
+        ],
+        "secondLine": [
+          "Long-term topical medications (e.g., prostaglandin analogs, beta-blockers)"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to monitor IOP and visual fields"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Timolol",
+          "mechanism": "Non-selective beta-adrenergic antagonist that reduces aqueous humor production.",
+          "dosing": "1 drop in the affected eye(s) twice daily.",
+          "sideEffects": "Burning/stinging on application, systemic effects (bradycardia, hypotension).",
+          "notes": "Monitor for systemic side effects, especially in patients with respiratory conditions."
+        },
+        {
+          "name": "Dorzolamide",
+          "mechanism": "Carbonic anhydrase inhibitor that decreases aqueous humor production.",
+          "dosing": "1 drop in the affected eye(s) 2-3 times daily.",
+          "sideEffects": "Burning/stinging, bitter taste, allergic reactions.",
+          "notes": "Use with caution in patients with sulfa allergies."
+        },
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Systemic carbonic anhydrase inhibitor that decreases aqueous humor production.",
+          "dosing": "250 mg orally, 1-2 times daily.",
+          "sideEffects": "Paresthesia, metabolic acidosis, renal stones.",
+          "notes": "Monitor electrolytes and renal function."
+        },
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic agent that reduces IOP by drawing fluid out of the eye.",
+          "dosing": "1-2 g/kg IV over 30-60 minutes.",
+          "sideEffects": "Dehydration, electrolyte imbalances.",
+          "notes": "Contraindicated in renal failure."
+        },
+        {
+          "name": "Pilocarpine",
+          "mechanism": "Cholinergic agonist that increases aqueous humor outflow by constricting the pupil.",
+          "dosing": "1 drop in the affected eye(s) 2-4 times daily.",
+          "sideEffects": "Miosis, accommodation spasm, brow ache.",
+          "notes": "Effectiveness may be limited in acute settings."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laser Peripheral Iridotomy",
+          "description": "A laser is used to create a small hole in the peripheral iris to allow aqueous humor to flow to the anterior chamber and relieve pressure.",
+          "indications": "Acute angle-closure glaucoma, prevention in at-risk patients.",
+          "risks": "Intraocular hemorrhage, retinal detachment, transient IOP spike."
+        },
+        {
+          "name": "Surgical Iridectomy",
+          "description": "Surgical removal of a portion of the peripheral iris to create a new drainage pathway for aqueous humor.",
+          "indications": "When laser treatment is not available or fails.",
+          "risks": "Infection, bleeding, cataract formation, retinal detachment."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis is generally good, but delayed treatment can lead to permanent vision loss.",
+    "complications": [
+      "Permanent vision loss",
+      "Corneal decompensation",
+      "Optic nerve damage",
+      "Recurrent episodes of acute glaucoma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of acute glaucoma, perform initial assessments, and initiate treatment while ensuring timely referral to an ophthalmologist.",
+    "escalation": "If a patient presents with symptoms suggestive of acute glaucoma, immediate referral to an ophthalmologist is essential, especially if IOP is significantly elevated (> 30 mmHg) or if there are signs of optic nerve damage.",
+    "keySafetyConsiderations": "Monitor for systemic side effects of medications, ensure proper follow-up for patients treated for acute glaucoma, and educate patients on recognizing symptoms of acute attacks."
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "contraception",
+  "name": "Contraception",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:53:17.812050",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Contraception: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nContraception refers to methods or devices used to prevent pregnancy as a result of sexual intercourse. It encompasses a variety of techniques, including hormonal, barrier, intrauterine, and permanent methods.\n\n### Epidemiology\nApproximately 64% of women of reproductive age in the UK use some form of contraception. The most common methods include the contraceptive pill, condoms, and intrauterine devices (IUDs).\n\n### Essential Pathophysiology\nContraceptive methods work by various mechanisms: hormonal methods (e.g., pills, patches) prevent ovulation, thickening cervical mucus, and thinning the endometrial lining; barrier methods (e.g., condoms) physically block sperm from reaching the egg; IUDs create a local inflammatory response that is toxic to sperm and eggs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Desire to prevent pregnancy\n- Menstrual irregularities (with some hormonal methods)\n- Side effects from hormonal methods (e.g., nausea, headaches)\n\n### Key Signs\n- No signs unless complications arise (e.g., infection from IUD)\n\n### Atypical Presentations\n- Unplanned pregnancy despite contraceptive use (e.g., contraceptive failure)\n- Severe side effects from hormonal methods\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain after IUD insertion\n- Signs of thrombosis (e.g., leg swelling, chest pain)\n- Unexplained vaginal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Patient history and contraceptive needs assessment\n- Pregnancy test if there is a concern for pregnancy\n\n### Second-line Investigations\n- Pelvic examination if indicated (e.g., for IUD insertion)\n- Ultrasound if there are concerns about complications\n\n### Specialist Tests\n- Hormonal assays if hormonal imbalance is suspected\n- STI screening if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of contraceptive needs is based on patient history, including reproductive goals, medical history, and preferences.\n\n### Key Differential Diagnoses to Exclude\n- Pregnancy\n- Ectopic pregnancy\n- Menstrual disorders\n- STIs\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Counseling on emergency contraception options (e.g., Levonorgestrel, Ulipristal)\n\n#### Second-line Treatments\n- Referral to a specialist if complications arise (e.g., IUD complications)\n\n#### Emergency Procedures\n- IUD insertion\n- Emergency contraception administration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Counseling on long-term contraceptive options (e.g., pills, IUDs, implants)\n- Regular follow-up for side effects and efficacy\n\n#### Second-line Treatments\n- Consider alternative methods if side effects are intolerable\n\n#### Monitoring Requirements\n- Regular review of contraceptive method effectiveness and side effects\n- Screening for STIs as appropriate\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levonorgestrel\n- **Mechanism of Action**: Progestin that prevents ovulation and thickens cervical mucus.\n- **Typical Dosing Range**: 1.5 mg orally within 72 hours of unprotected intercourse.\n- **Key Side Effects/Contraindications**: Nausea, fatigue, headache, menstrual changes.\n- **When to Use vs. Alternatives**: Most effective when taken as soon as possible after unprotected intercourse.\n\n#### Ulipristal Acetate\n- **Mechanism of Action**: Selective progesterone receptor modulator that delays ovulation.\n- **Typical Dosing Range**: 30 mg orally within 120 hours of unprotected intercourse.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal pain, menstrual changes.\n- **When to Use vs. Alternatives**: Can be taken up to 5 days after unprotected intercourse.\n\n#### Combined Oral Contraceptive Pill (COCP)\n- **Mechanism of Action**: Inhibits ovulation, alters endometrial lining, and thickens cervical mucus.\n- **Typical Dosing Range**: One pill daily, starting at least 7 days before unprotected intercourse for full effect.\n- **Key Side Effects/Contraindications**: Nausea, breast tenderness, mood changes, increased risk of thrombosis.\n- **When to Use vs. Alternatives**: Requires regular adherence for effectiveness.\n\n#### Copper IUD\n- **Mechanism of Action**: Creates a local inflammatory reaction toxic to sperm and eggs.\n- **Typical Dosing Range**: Inserted by a healthcare professional, effective for up to 10 years.\n- **Key Side Effects/Contraindications**: Increased menstrual bleeding, cramping.\n- **When to Use vs. Alternatives**: Can be used as emergency contraception if inserted within 5 days of unprotected intercourse.\n\n### Procedures\n\n#### IUD Insertion\n- **What it Involves**: A small T-shaped device inserted into the uterus to prevent pregnancy.\n- **Indications**: Long-term contraception, emergency contraception (if within 5 days of unprotected intercourse).\n- **Key Risks/Complications**: Pain during insertion, expulsion, perforation of the uterus, risk of infection.\n\n#### Implant Insertion\n- **What it Involves**: A small rod inserted under the skin of the upper arm that releases hormones to prevent ovulation.\n- **Indications**: Long-term contraception (up to 3 years).\n- **Key Risks/Complications**: Insertion site infection, irregular bleeding, potential for removal complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost contraceptive methods are highly effective when used correctly. Complications are rare but can occur, particularly with IUDs and hormonal methods.\n\n### Important Complications to Watch For\n- Unplanned pregnancy\n- Ectopic pregnancy\n- Infection (especially with IUDs)\n- Thromboembolic events (with hormonal methods)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to counsel patients on contraceptive options, assess for contraindications, and provide referrals for specialized care when necessary. They should also be aware of the importance of follow-up and monitoring for side effects.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are complications from contraceptive methods, such as severe side effects, unplanned pregnancy, or if the patient has complex medical history affecting contraceptive choices.\n\n### Key Safety Considerations\nEnsure informed consent is obtained before any procedure. Assess for contraindications to hormonal methods (e.g., history of thromboembolism, certain cancers). Monitor for side effects and complications, and provide clear instructions on what to do in case of missed doses or complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Contraception refers to methods or devices used to prevent pregnancy as a result of sexual intercourse. It encompasses a variety of techniques, including hormonal, barrier, intrauterine, and permanent methods.",
+      "epidemiology": "Approximately 64% of women of reproductive age in the UK use some form of contraception. The most common methods include the contraceptive pill, condoms, and intrauterine devices (IUDs).",
+      "pathophysiology": "Contraceptive methods work by various mechanisms: hormonal methods (e.g., pills, patches) prevent ovulation, thickening cervical mucus, and thinning the endometrial lining; barrier methods (e.g., condoms) physically block sperm from reaching the egg; IUDs create a local inflammatory response that is toxic to sperm and eggs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Desire to prevent pregnancy",
+        "Menstrual irregularities (with some hormonal methods)",
+        "Side effects from hormonal methods (e.g., nausea, headaches)"
+      ],
+      "signs": [
+        "No signs unless complications arise (e.g., infection from IUD)"
+      ],
+      "atypicalPresentations": [
+        "Unplanned pregnancy despite contraceptive use (e.g., contraceptive failure)",
+        "Severe side effects from hormonal methods"
+      ],
+      "redFlags": [
+        "Severe abdominal pain after IUD insertion",
+        "Signs of thrombosis (e.g., leg swelling, chest pain)",
+        "Unexplained vaginal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Patient history and contraceptive needs assessment",
+        "Pregnancy test if there is a concern for pregnancy"
+      ],
+      "secondLine": [
+        "Pelvic examination if indicated (e.g., for IUD insertion)",
+        "Ultrasound if there are concerns about complications"
+      ],
+      "specialistTests": [
+        "Hormonal assays if hormonal imbalance is suspected",
+        "STI screening if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of contraceptive needs is based on patient history, including reproductive goals, medical history, and preferences.",
+      "differentials": [
+        "Pregnancy",
+        "Ectopic pregnancy",
+        "Menstrual disorders",
+        "STIs"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Counseling on emergency contraception options (e.g., Levonorgestrel, Ulipristal)"
+        ],
+        "secondLine": [
+          "Referral to a specialist if complications arise (e.g., IUD complications)"
+        ],
+        "procedures": [
+          "IUD insertion",
+          "Emergency contraception administration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Counseling on long-term contraceptive options (e.g., pills, IUDs, implants)",
+          "Regular follow-up for side effects and efficacy"
+        ],
+        "secondLine": [
+          "Consider alternative methods if side effects are intolerable"
+        ],
+        "monitoring": [
+          "Regular review of contraceptive method effectiveness and side effects",
+          "Screening for STIs as appropriate"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levonorgestrel",
+          "mechanism": "Progestin that prevents ovulation and thickens cervical mucus.",
+          "dosing": "1.5 mg orally within 72 hours of unprotected intercourse.",
+          "sideEffects": "Nausea, fatigue, headache, menstrual changes.",
+          "notes": "Most effective when taken as soon as possible after unprotected intercourse."
+        },
+        {
+          "name": "Ulipristal Acetate",
+          "mechanism": "Selective progesterone receptor modulator that delays ovulation.",
+          "dosing": "30 mg orally within 120 hours of unprotected intercourse.",
+          "sideEffects": "Headache, nausea, abdominal pain, menstrual changes.",
+          "notes": "Can be taken up to 5 days after unprotected intercourse."
+        },
+        {
+          "name": "Combined Oral Contraceptive Pill (COCP)",
+          "mechanism": "Inhibits ovulation, alters endometrial lining, and thickens cervical mucus.",
+          "dosing": "One pill daily, starting at least 7 days before unprotected intercourse for full effect.",
+          "sideEffects": "Nausea, breast tenderness, mood changes, increased risk of thrombosis.",
+          "notes": "Requires regular adherence for effectiveness."
+        },
+        {
+          "name": "Copper IUD",
+          "mechanism": "Creates a local inflammatory reaction toxic to sperm and eggs.",
+          "dosing": "Inserted by a healthcare professional, effective for up to 10 years.",
+          "sideEffects": "Increased menstrual bleeding, cramping.",
+          "notes": "Can be used as emergency contraception if inserted within 5 days of unprotected intercourse."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "IUD Insertion",
+          "description": "A small T-shaped device inserted into the uterus to prevent pregnancy.",
+          "indications": "Long-term contraception, emergency contraception (if within 5 days of unprotected intercourse).",
+          "risks": "Pain during insertion, expulsion, perforation of the uterus, risk of infection."
+        },
+        {
+          "name": "Implant Insertion",
+          "description": "A small rod inserted under the skin of the upper arm that releases hormones to prevent ovulation.",
+          "indications": "Long-term contraception (up to 3 years).",
+          "risks": "Insertion site infection, irregular bleeding, potential for removal complications."
+        }
+      ]
+    },
+    "prognosis": "Most contraceptive methods are highly effective when used correctly. Complications are rare but can occur, particularly with IUDs and hormonal methods.",
+    "complications": [
+      "Unplanned pregnancy",
+      "Ectopic pregnancy",
+      "Infection (especially with IUDs)",
+      "Thromboembolic events (with hormonal methods)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to counsel patients on contraceptive options, assess for contraindications, and provide referrals for specialized care when necessary. They should also be aware of the importance of follow-up and monitoring for side effects.",
+    "escalation": "Refer to a specialist if there are complications from contraceptive methods, such as severe side effects, unplanned pregnancy, or if the patient has complex medical history affecting contraceptive choices.",
+    "keySafetyConsiderations": "Ensure informed consent is obtained before any procedure. Assess for contraindications to hormonal methods (e.g., history of thromboembolism, certain cancers). Monitor for side effects and complications, and provide clear instructions on what to do in case of missed doses or complications."
+  }
+}

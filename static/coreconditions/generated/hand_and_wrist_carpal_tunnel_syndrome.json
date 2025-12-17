@@ -1,0 +1,122 @@
+{
+  "id": "hand_and_wrist_carpal_tunnel_syndrome",
+  "name": "Hand and wrist - Carpal Tunnel syndrome",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:33:40.919999",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hand and wrist - Carpal Tunnel syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCarpal Tunnel Syndrome (CTS) is a condition caused by compression of the median nerve as it travels through the carpal tunnel in the wrist, leading to sensory and motor disturbances in the hand.\n\n### Epidemiology\nCTS is one of the most common peripheral nerve entrapment syndromes, affecting approximately 3-6% of the general population, with a higher prevalence in women and individuals aged 30-60 years.\n\n### Essential Pathophysiology\nThe median nerve is compressed due to increased pressure within the carpal tunnel, which can be caused by factors such as repetitive wrist movements, inflammation, or anatomical variations. This leads to ischemia and demyelination of the nerve, resulting in symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Numbness or tingling in the thumb, index, middle, and half of the ring finger\n- Pain in the wrist that may radiate to the forearm\n- Weakness in grip strength\n- Symptoms often worse at night or with activities\n\n### Key Signs\n- Positive Phalen's test (numbness with wrist flexion)\n- Positive Tinel's sign (tingling with tapping over the median nerve)\n- Decreased sensation in the median nerve distribution\n- Thenar muscle atrophy in chronic cases\n\n### Atypical Presentations\n- Symptoms may be bilateral\n- Symptoms may be mistaken for cervical radiculopathy or other neuropathies\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by rest or analgesia\n- Progressive weakness in the hand\n- Signs of muscle wasting\n- Symptoms associated with systemic illness (e.g., fever, weight loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and physical examination\n- Nerve conduction studies (NCS) to assess median nerve function\n\n### Second-line Investigations\n- Ultrasound of the wrist to visualize the median nerve and carpal tunnel anatomy\n\n### Specialist Tests\n- Electromyography (EMG) if NCS is inconclusive or to assess for other neuropathies\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by positive findings on NCS. Symptoms must correlate with median nerve distribution and be reproducible with provocative tests.\n\n### Key Differential Diagnoses to Exclude\n- Cervical radiculopathy\n- Thoracic outlet syndrome\n- Peripheral neuropathy (e.g., diabetic neuropathy)\n- De Quervain's tenosynovitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Wrist splinting (especially at night)\n- Activity modification to avoid exacerbating symptoms\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Corticosteroid injections into the carpal tunnel\n\n#### Emergency Procedures\n- Surgical decompression of the carpal tunnel if conservative measures fail\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued use of wrist splints and ergonomic adjustments\n- Physical therapy focusing on wrist and hand exercises\n\n#### Second-line Treatments\n- Consideration of surgical intervention if symptoms persist despite conservative management\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom progression and response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with peptic ulcer disease or renal issues.\n\n#### Corticosteroids (e.g., Methylprednisolone)\n- **Mechanism of Action**: Anti-inflammatory effects that reduce swelling and pressure on the median nerve\n- **Typical Dosing Range**: 10-40 mg injected into the carpal tunnel, depending on severity\n- **Key Side Effects/Contraindications**: Local pain, infection risk, potential for tendon rupture with repeated injections\n- **When to Use vs. Alternatives**: Limit injections to avoid complications.\n\n### Procedures\n\n#### Carpal Tunnel Release\n- **What it Involves**: Surgical procedure to cut the transverse carpal ligament and relieve pressure on the median nerve\n- **Indications**: Persistent symptoms despite conservative management, significant functional impairment\n- **Key Risks/Complications**: Infection, nerve injury, scar formation, recurrence of symptoms\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients experience significant improvement in symptoms. Surgical intervention has a high success rate, with many patients reporting complete relief.\n\n### Important Complications to Watch For\n- Persistent symptoms despite treatment\n- Recurrence of symptoms after surgery\n- Potential for permanent nerve damage if untreated for a long time\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide conservative management, and refer to specialists when surgical intervention is indicated. They should also educate patients about the condition and self-management strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to an orthopedic or hand specialist if symptoms are severe, progressive, or unresponsive to initial management, or if there are red flags present.\n\n### Key Safety Considerations\nMonitor for signs of severe nerve compression or muscle atrophy, and ensure timely referral for surgical evaluation if conservative measures fail.\n",
+  "content": {
+    "overview": {
+      "definition": "Carpal Tunnel Syndrome (CTS) is a condition caused by compression of the median nerve as it travels through the carpal tunnel in the wrist, leading to sensory and motor disturbances in the hand.",
+      "epidemiology": "CTS is one of the most common peripheral nerve entrapment syndromes, affecting approximately 3-6% of the general population, with a higher prevalence in women and individuals aged 30-60 years.",
+      "pathophysiology": "The median nerve is compressed due to increased pressure within the carpal tunnel, which can be caused by factors such as repetitive wrist movements, inflammation, or anatomical variations. This leads to ischemia and demyelination of the nerve, resulting in symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Numbness or tingling in the thumb, index, middle, and half of the ring finger",
+        "Pain in the wrist that may radiate to the forearm",
+        "Weakness in grip strength",
+        "Symptoms often worse at night or with activities"
+      ],
+      "signs": [
+        "Positive Phalen's test (numbness with wrist flexion)",
+        "Positive Tinel's sign (tingling with tapping over the median nerve)",
+        "Decreased sensation in the median nerve distribution",
+        "Thenar muscle atrophy in chronic cases"
+      ],
+      "atypicalPresentations": [
+        "Symptoms may be bilateral",
+        "Symptoms may be mistaken for cervical radiculopathy or other neuropathies"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by rest or analgesia",
+        "Progressive weakness in the hand",
+        "Signs of muscle wasting",
+        "Symptoms associated with systemic illness (e.g., fever, weight loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and physical examination",
+        "Nerve conduction studies (NCS) to assess median nerve function"
+      ],
+      "secondLine": [
+        "Ultrasound of the wrist to visualize the median nerve and carpal tunnel anatomy"
+      ],
+      "specialistTests": [
+        "Electromyography (EMG) if NCS is inconclusive or to assess for other neuropathies"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by positive findings on NCS. Symptoms must correlate with median nerve distribution and be reproducible with provocative tests.",
+      "differentials": [
+        "Cervical radiculopathy",
+        "Thoracic outlet syndrome",
+        "Peripheral neuropathy (e.g., diabetic neuropathy)",
+        "De Quervain's tenosynovitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Wrist splinting (especially at night)",
+          "Activity modification to avoid exacerbating symptoms",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Corticosteroid injections into the carpal tunnel"
+        ],
+        "procedures": [
+          "Surgical decompression of the carpal tunnel if conservative measures fail"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued use of wrist splints and ergonomic adjustments",
+          "Physical therapy focusing on wrist and hand exercises"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if symptoms persist despite conservative management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom progression and response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with peptic ulcer disease or renal issues."
+        },
+        {
+          "name": "Corticosteroids (e.g., Methylprednisolone)",
+          "mechanism": "Anti-inflammatory effects that reduce swelling and pressure on the median nerve",
+          "dosing": "10-40 mg injected into the carpal tunnel, depending on severity",
+          "sideEffects": "Local pain, infection risk, potential for tendon rupture with repeated injections",
+          "notes": "Limit injections to avoid complications."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Carpal Tunnel Release",
+          "description": "Surgical procedure to cut the transverse carpal ligament and relieve pressure on the median nerve",
+          "indications": "Persistent symptoms despite conservative management, significant functional impairment",
+          "risks": "Infection, nerve injury, scar formation, recurrence of symptoms"
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients experience significant improvement in symptoms. Surgical intervention has a high success rate, with many patients reporting complete relief.",
+    "complications": [
+      "Persistent symptoms despite treatment",
+      "Recurrence of symptoms after surgery",
+      "Potential for permanent nerve damage if untreated for a long time"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide conservative management, and refer to specialists when surgical intervention is indicated. They should also educate patients about the condition and self-management strategies.",
+    "escalation": "Refer to an orthopedic or hand specialist if symptoms are severe, progressive, or unresponsive to initial management, or if there are red flags present.",
+    "keySafetyConsiderations": "Monitor for signs of severe nerve compression or muscle atrophy, and ensure timely referral for surgical evaluation if conservative measures fail."
+  }
+}

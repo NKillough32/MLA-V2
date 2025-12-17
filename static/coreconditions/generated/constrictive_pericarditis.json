@@ -1,0 +1,124 @@
+{
+  "id": "constrictive_pericarditis",
+  "name": "Constrictive pericarditis",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:12:47.126300",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Constrictive pericarditis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nConstrictive pericarditis is a condition characterized by the thickening and fibrosis of the pericardium, leading to impaired diastolic filling of the heart due to the rigid pericardial sac.\n\n### Epidemiology\nIt is relatively rare, with an incidence of approximately 1-2 cases per 100,000 people per year. It can occur after infections, surgery, or radiation therapy, and is more common in developing countries due to tuberculosis.\n\n### Essential Pathophysiology\nThe pericardium becomes thickened and fibrotic, restricting the heart's ability to expand during diastole. This leads to elevated pressures in the heart and systemic venous congestion.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Fatigue\n- Palpitations\n- Chest discomfort\n- Edema (peripheral or abdominal)\n\n### Key Signs\n- Elevated jugular venous pressure (JVP)\n- Kussmaul's sign (lack of decline in JVP during inspiration)\n- Pulsus paradoxus (drop in blood pressure during inspiration)\n- Ascites\n- Hepatomegaly\n\n### Atypical Presentations\n- Chest pain mimicking angina\n- Syncope or presyncope\n- Weight loss\n\n### Red Flags Requiring Immediate Action\n- Severe dyspnea\n- Rapidly worsening symptoms\n- Signs of heart failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (to assess pericardial thickness and diastolic function)\n- Chest X-ray (to look for pericardial calcification)\n\n### Second-line Investigations\n- CT scan of the chest (to evaluate pericardial thickness and calcification)\n- MRI of the heart (to assess pericardial involvement)\n\n### Specialist Tests\n- Cardiac catheterization (to measure pressures and rule out other causes of heart failure)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings (thickened pericardium), and exclusion of other causes of heart failure.\n\n### Key Differential Diagnoses to Exclude\n- Heart failure from other causes (e.g., cardiomyopathy)\n- Restrictive cardiomyopathy\n- Pericardial effusion\n- Myocardial infarction\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Diuretics (to manage fluid overload)\n- NSAIDs (for pain relief)\n\n#### Second-line Treatments\n- Steroids (if inflammation is significant)\n\n#### Emergency Procedures\n- Pericardiocentesis (if there is a significant effusion contributing to symptoms)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical pericardiectomy (definitive treatment)\n\n#### Second-line Treatments\n- Medical management with diuretics and anti-inflammatory medications\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and heart function assessment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO, may increase based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 400-800 mg PO every 6-8 hours as needed.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, renal impairment, cardiovascular risks.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal impairment.\n\n### Procedures\n\n#### Pericardiocentesis\n- **What it Involves**: A procedure to remove fluid from the pericardial space using a needle.\n- **Indications**: Significant pericardial effusion causing symptoms or hemodynamic compromise.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection, cardiac injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the underlying cause and the timing of intervention. Surgical pericardiectomy can lead to significant improvement in symptoms and quality of life.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias\n- Pulmonary hypertension\n- Pericardial effusion\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of constrictive pericarditis, initiate appropriate investigations, and manage acute symptoms. They should also be aware of when to refer to a cardiologist for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to cardiology if there is rapid deterioration, severe symptoms, or if surgical intervention is being considered.\n\n### Key Safety Considerations\nMonitor for signs of heart failure, electrolyte imbalances with diuretics, and ensure appropriate follow-up for patients undergoing medical or surgical management.\n",
+  "content": {
+    "overview": {
+      "definition": "Constrictive pericarditis is a condition characterized by the thickening and fibrosis of the pericardium, leading to impaired diastolic filling of the heart due to the rigid pericardial sac.",
+      "epidemiology": "It is relatively rare, with an incidence of approximately 1-2 cases per 100,000 people per year. It can occur after infections, surgery, or radiation therapy, and is more common in developing countries due to tuberculosis.",
+      "pathophysiology": "The pericardium becomes thickened and fibrotic, restricting the heart's ability to expand during diastole. This leads to elevated pressures in the heart and systemic venous congestion."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Fatigue",
+        "Palpitations",
+        "Chest discomfort",
+        "Edema (peripheral or abdominal)"
+      ],
+      "signs": [
+        "Elevated jugular venous pressure (JVP)",
+        "Kussmaul's sign (lack of decline in JVP during inspiration)",
+        "Pulsus paradoxus (drop in blood pressure during inspiration)",
+        "Ascites",
+        "Hepatomegaly"
+      ],
+      "atypicalPresentations": [
+        "Chest pain mimicking angina",
+        "Syncope or presyncope",
+        "Weight loss"
+      ],
+      "redFlags": [
+        "Severe dyspnea",
+        "Rapidly worsening symptoms",
+        "Signs of heart failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (to assess pericardial thickness and diastolic function)",
+        "Chest X-ray (to look for pericardial calcification)"
+      ],
+      "secondLine": [
+        "CT scan of the chest (to evaluate pericardial thickness and calcification)",
+        "MRI of the heart (to assess pericardial involvement)"
+      ],
+      "specialistTests": [
+        "Cardiac catheterization (to measure pressures and rule out other causes of heart failure)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings (thickened pericardium), and exclusion of other causes of heart failure.",
+      "differentials": [
+        "Heart failure from other causes (e.g., cardiomyopathy)",
+        "Restrictive cardiomyopathy",
+        "Pericardial effusion",
+        "Myocardial infarction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Diuretics (to manage fluid overload)",
+          "NSAIDs (for pain relief)"
+        ],
+        "secondLine": [
+          "Steroids (if inflammation is significant)"
+        ],
+        "procedures": [
+          "Pericardiocentesis (if there is a significant effusion contributing to symptoms)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical pericardiectomy (definitive treatment)"
+        ],
+        "secondLine": [
+          "Medical management with diuretics and anti-inflammatory medications"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and heart function assessment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle.",
+          "dosing": "Initial: 20-40 mg IV/PO, may increase based on response.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal impairment.",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "400-800 mg PO every 6-8 hours as needed.",
+          "sideEffects": "Gastrointestinal bleeding, renal impairment, cardiovascular risks.",
+          "notes": "Use with caution in patients with renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pericardiocentesis",
+          "description": "A procedure to remove fluid from the pericardial space using a needle.",
+          "indications": "Significant pericardial effusion causing symptoms or hemodynamic compromise.",
+          "risks": "Pneumothorax, bleeding, infection, cardiac injury."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the underlying cause and the timing of intervention. Surgical pericardiectomy can lead to significant improvement in symptoms and quality of life.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias",
+      "Pulmonary hypertension",
+      "Pericardial effusion"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of constrictive pericarditis, initiate appropriate investigations, and manage acute symptoms. They should also be aware of when to refer to a cardiologist for further evaluation and management.",
+    "escalation": "Refer to cardiology if there is rapid deterioration, severe symptoms, or if surgical intervention is being considered.",
+    "keySafetyConsiderations": "Monitor for signs of heart failure, electrolyte imbalances with diuretics, and ensure appropriate follow-up for patients undergoing medical or surgical management."
+  }
+}

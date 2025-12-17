@@ -1,0 +1,134 @@
+{
+  "id": "candidiasis",
+  "name": "Candidiasis",
+  "domains": [
+    "Infection",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:10:19.441613",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Candidiasis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCandidiasis is a fungal infection caused by yeasts of the genus Candida, most commonly Candida albicans. It can affect various body sites, including the skin, mucous membranes, and internal organs.\n\n### Epidemiology\nCandidiasis is a common infection, particularly in immunocompromised individuals, infants, and those with diabetes. It is estimated that 70% of women will experience a vaginal yeast infection at least once in their lifetime.\n\n### Essential Pathophysiology\nCandida species are part of the normal flora of the human body but can become pathogenic under certain conditions, such as immunosuppression, antibiotic use, or diabetes. The overgrowth of Candida leads to tissue invasion and inflammation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching\n- Burning sensation\n- Redness and swelling\n- Discharge (thick, white, and clumpy in vaginal candidiasis)\n- Pain during intercourse (vaginal candidiasis)\n- Oral lesions (white patches in oral thrush)\n\n### Key Signs\n- Erythema and edema of affected areas\n- White patches in the mouth (oral thrush)\n- Rash in intertriginous areas (skin folds)\n- Fissures or cracks in the skin\n\n### Atypical Presentations\n- Chronic mucocutaneous candidiasis (persistent oral and skin infections)\n- Candidemia (systemic infection)\n\n### Red Flags Requiring Immediate Action\n- Severe pain or swelling\n- Fever in the presence of candidiasis\n- Signs of systemic infection (e.g., hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- KOH preparation of skin scrapings or oral swabs\n- Culture of the organism from affected sites\n\n### Second-line Investigations\n- Blood cultures (in cases of suspected candidemia)\n- Endoscopy (for esophageal candidiasis)\n\n### Specialist Tests\n- Serological tests for Candida antibodies (in chronic cases)\n- Biopsy of lesions (if malignancy is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by laboratory findings such as KOH prep and culture. In cases of systemic infection, blood cultures are definitive.\n\n### Key Differential Diagnoses to Exclude\n- Bacterial vaginosis\n- Herpes simplex virus infection\n- Psoriasis\n- Contact dermatitis\n- Oral leukoplakia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical antifungals (e.g., clotrimazole, miconazole) for localized infections\n- Fluconazole orally for systemic or severe cases\n\n#### Second-line Treatments\n- Intravenous antifungals (e.g., amphotericin B) for severe systemic infections\n\n#### Emergency Procedures\n- Debridement of infected tissue in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term topical antifungal therapy for recurrent infections\n- Management of underlying conditions (e.g., diabetes control)\n\n#### Second-line Treatments\n- Oral antifungal therapy for recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and monitor for recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluconazole\n- **Mechanism of Action**: Inhibits fungal cell membrane synthesis by blocking ergosterol production.\n- **Typical Dosing Range**: 150 mg orally for vaginal candidiasis; 200-400 mg daily for systemic infections.\n- **Key Side Effects/Contraindications**: Nausea, headache, abdominal pain, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Monitor liver function tests in long-term use.\n\n#### Clotrimazole\n- **Mechanism of Action**: Inhibits fungal cell membrane synthesis.\n- **Typical Dosing Range**: Apply cream twice daily for skin infections; use vaginal tablets as directed.\n- **Key Side Effects/Contraindications**: Local irritation, burning sensation.\n- **When to Use vs. Alternatives**: Safe for use in pregnancy.\n\n#### Amphotericin B\n- **Mechanism of Action**: Binds to ergosterol in fungal cell membranes, causing cell death.\n- **Typical Dosing Range**: 0.5-1 mg/kg/day IV for systemic infections.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, infusion reactions, electrolyte imbalances.\n- **When to Use vs. Alternatives**: Requires monitoring of renal function.\n\n### Procedures\n\n#### Debridement of infected tissue\n- **What it Involves**: Surgical removal of necrotic or infected tissue to promote healing.\n- **Indications**: Severe localized candidiasis unresponsive to medical therapy.\n- **Key Risks/Complications**: Bleeding, infection, delayed healing.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of candidiasis are self-limiting and respond well to treatment. Chronic or recurrent cases may require long-term management and monitoring.\n\n### Important Complications to Watch For\n- Systemic candidiasis (candidemia)\n- Esophageal candidiasis leading to dysphagia\n- Chronic mucocutaneous candidiasis leading to significant morbidity.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize candidiasis, initiate appropriate investigations, and manage uncomplicated cases. They should also be aware of when to escalate care for severe or systemic infections.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there is evidence of systemic infection, failure to respond to initial treatment, or if the patient is immunocompromised.\n\n### Key Safety Considerations\nMonitor for signs of systemic infection in patients with localized candidiasis. Be cautious with antifungal dosing in patients with liver or renal impairment.\n",
+  "content": {
+    "overview": {
+      "definition": "Candidiasis is a fungal infection caused by yeasts of the genus Candida, most commonly Candida albicans. It can affect various body sites, including the skin, mucous membranes, and internal organs.",
+      "epidemiology": "Candidiasis is a common infection, particularly in immunocompromised individuals, infants, and those with diabetes. It is estimated that 70% of women will experience a vaginal yeast infection at least once in their lifetime.",
+      "pathophysiology": "Candida species are part of the normal flora of the human body but can become pathogenic under certain conditions, such as immunosuppression, antibiotic use, or diabetes. The overgrowth of Candida leads to tissue invasion and inflammation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching",
+        "Burning sensation",
+        "Redness and swelling",
+        "Discharge (thick, white, and clumpy in vaginal candidiasis)",
+        "Pain during intercourse (vaginal candidiasis)",
+        "Oral lesions (white patches in oral thrush)"
+      ],
+      "signs": [
+        "Erythema and edema of affected areas",
+        "White patches in the mouth (oral thrush)",
+        "Rash in intertriginous areas (skin folds)",
+        "Fissures or cracks in the skin"
+      ],
+      "atypicalPresentations": [
+        "Chronic mucocutaneous candidiasis (persistent oral and skin infections)",
+        "Candidemia (systemic infection)"
+      ],
+      "redFlags": [
+        "Severe pain or swelling",
+        "Fever in the presence of candidiasis",
+        "Signs of systemic infection (e.g., hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "KOH preparation of skin scrapings or oral swabs",
+        "Culture of the organism from affected sites"
+      ],
+      "secondLine": [
+        "Blood cultures (in cases of suspected candidemia)",
+        "Endoscopy (for esophageal candidiasis)"
+      ],
+      "specialistTests": [
+        "Serological tests for Candida antibodies (in chronic cases)",
+        "Biopsy of lesions (if malignancy is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by laboratory findings such as KOH prep and culture. In cases of systemic infection, blood cultures are definitive.",
+      "differentials": [
+        "Bacterial vaginosis",
+        "Herpes simplex virus infection",
+        "Psoriasis",
+        "Contact dermatitis",
+        "Oral leukoplakia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical antifungals (e.g., clotrimazole, miconazole) for localized infections",
+          "Fluconazole orally for systemic or severe cases"
+        ],
+        "secondLine": [
+          "Intravenous antifungals (e.g., amphotericin B) for severe systemic infections"
+        ],
+        "procedures": [
+          "Debridement of infected tissue in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term topical antifungal therapy for recurrent infections",
+          "Management of underlying conditions (e.g., diabetes control)"
+        ],
+        "secondLine": [
+          "Oral antifungal therapy for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and monitor for recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluconazole",
+          "mechanism": "Inhibits fungal cell membrane synthesis by blocking ergosterol production.",
+          "dosing": "150 mg orally for vaginal candidiasis; 200-400 mg daily for systemic infections.",
+          "sideEffects": "Nausea, headache, abdominal pain, liver enzyme elevation.",
+          "notes": "Monitor liver function tests in long-term use."
+        },
+        {
+          "name": "Clotrimazole",
+          "mechanism": "Inhibits fungal cell membrane synthesis.",
+          "dosing": "Apply cream twice daily for skin infections; use vaginal tablets as directed.",
+          "sideEffects": "Local irritation, burning sensation.",
+          "notes": "Safe for use in pregnancy."
+        },
+        {
+          "name": "Amphotericin B",
+          "mechanism": "Binds to ergosterol in fungal cell membranes, causing cell death.",
+          "dosing": "0.5-1 mg/kg/day IV for systemic infections.",
+          "sideEffects": "Nephrotoxicity, infusion reactions, electrolyte imbalances.",
+          "notes": "Requires monitoring of renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debridement of infected tissue",
+          "description": "Surgical removal of necrotic or infected tissue to promote healing.",
+          "indications": "Severe localized candidiasis unresponsive to medical therapy.",
+          "risks": "Bleeding, infection, delayed healing."
+        }
+      ]
+    },
+    "prognosis": "Most cases of candidiasis are self-limiting and respond well to treatment. Chronic or recurrent cases may require long-term management and monitoring.",
+    "complications": [
+      "Systemic candidiasis (candidemia)",
+      "Esophageal candidiasis leading to dysphagia",
+      "Chronic mucocutaneous candidiasis leading to significant morbidity."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize candidiasis, initiate appropriate investigations, and manage uncomplicated cases. They should also be aware of when to escalate care for severe or systemic infections.",
+    "escalation": "Refer to a specialist if there is evidence of systemic infection, failure to respond to initial treatment, or if the patient is immunocompromised.",
+    "keySafetyConsiderations": "Monitor for signs of systemic infection in patients with localized candidiasis. Be cautious with antifungal dosing in patients with liver or renal impairment."
+  }
+}

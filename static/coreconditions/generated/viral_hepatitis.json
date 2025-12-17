@@ -1,0 +1,153 @@
+{
+  "id": "viral_hepatitis",
+  "name": "Viral hepatitis",
+  "domains": [
+    "Gastrointestinal",
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T19:43:40.838433",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Viral hepatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nViral hepatitis refers to inflammation of the liver caused by viral infections, primarily hepatitis A, B, C, D, and E viruses. It can be acute or chronic, with varying degrees of severity and potential for liver damage.\n\n### Epidemiology\nHepatitis A and E are typically associated with fecal-oral transmission, while Hepatitis B, C, and D are primarily transmitted through blood and bodily fluids. Globally, hepatitis B and C are significant public health concerns, with millions of people affected and at risk of chronic liver disease.\n\n### Essential Pathophysiology\nViral hepatitis leads to liver inflammation, which can cause hepatocyte injury and necrosis. The immune response to the virus contributes to liver damage, and chronic infection can lead to fibrosis, cirrhosis, and hepatocellular carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Nausea and vomiting\n- Abdominal pain (especially in the right upper quadrant)\n- Loss of appetite\n- Jaundice (yellowing of skin and eyes)\n- Dark urine\n- Pale stools\n\n### Key Signs\n- Hepatomegaly (enlarged liver)\n- Splenomegaly (enlarged spleen)\n- Ascites (fluid in the abdomen)\n- Asterixis (flapping tremor) in chronic cases\n\n### Atypical Presentations\n- Asymptomatic in early stages, especially in chronic hepatitis B and C\n- Acute liver failure in severe cases\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Rapid onset of jaundice\n- Confusion or altered mental status (indicative of hepatic encephalopathy)\n- Coagulopathy (easy bruising or bleeding)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Hepatitis serology (anti-HAV, HBsAg, anti-HBs, anti-HCV, anti-HEV)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- HCV RNA (for hepatitis C)\n- HBV DNA (for hepatitis B)\n- Liver ultrasound (to assess liver size and rule out complications)\n\n### Specialist Tests\n- Liver biopsy (for chronic hepatitis to assess fibrosis)\n- FibroScan (non-invasive assessment of liver stiffness)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on serological tests indicating the presence of specific hepatitis viruses and liver function tests showing liver inflammation or damage.\n\n### Key Differential Diagnoses to Exclude\n- Alcoholic hepatitis\n- Autoimmune hepatitis\n- Non-alcoholic fatty liver disease (NAFLD)\n- Drug-induced liver injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, nutrition)\n- Monitoring of liver function and coagulation status\n\n#### Second-line Treatments\n- Antiviral therapy for acute hepatitis B (e.g., tenofovir) if severe\n\n#### Emergency Procedures\n- Liver transplant in cases of acute liver failure\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antiviral therapy for chronic hepatitis B (e.g., entecavir, tenofovir)\n- Direct-acting antivirals for chronic hepatitis C (e.g., sofosbuvir, ledipasvir)\n\n#### Second-line Treatments\n- Monitoring for liver cancer (ultrasound and AFP levels)\n- Management of complications (e.g., variceal bleeding)\n\n#### Monitoring Requirements\n- Regular LFTs and viral load assessments\n- Screening for hepatocellular carcinoma in high-risk patients\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Entecavir\n- **Mechanism of Action**: Nucleoside analogue that inhibits HBV replication\n- **Typical Dosing Range**: 0.5 mg orally once daily\n- **Key Side Effects/Contraindications**: Headache, fatigue, dizziness\n- **When to Use vs. Alternatives**: Consider renal function before prescribing.\n\n#### Tenofovir\n- **Mechanism of Action**: Nucleotide analogue that inhibits HBV and HIV replication\n- **Typical Dosing Range**: 300 mg orally once daily\n- **Key Side Effects/Contraindications**: Renal toxicity, bone density loss\n- **When to Use vs. Alternatives**: Monitor renal function regularly.\n\n#### Sofosbuvir\n- **Mechanism of Action**: NS5B polymerase inhibitor for HCV\n- **Typical Dosing Range**: 400 mg orally once daily\n- **Key Side Effects/Contraindications**: Fatigue, headache\n- **When to Use vs. Alternatives**: Used in combination with other agents.\n\n#### Ledipasvir\n- **Mechanism of Action**: NS5A inhibitor for HCV\n- **Typical Dosing Range**: 90 mg orally once daily\n- **Key Side Effects/Contraindications**: Fatigue, headache\n- **When to Use vs. Alternatives**: Used in combination with sofosbuvir.\n\n### Procedures\n\n#### Liver biopsy\n- **What it Involves**: Invasive procedure to obtain liver tissue for histological examination\n- **Indications**: Assessment of liver fibrosis and inflammation in chronic hepatitis\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n#### Liver transplant\n- **What it Involves**: Surgical procedure to replace a diseased liver with a healthy liver from a donor\n- **Indications**: End-stage liver disease or acute liver failure\n- **Key Risks/Complications**: Rejection, infection, complications from surgery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nAcute viral hepatitis often resolves spontaneously, but chronic hepatitis B and C can lead to significant morbidity and mortality due to liver cirrhosis and cancer. Early diagnosis and treatment improve outcomes significantly.\n\n### Important Complications to Watch For\n- Cirrhosis\n- Hepatocellular carcinoma\n- Acute liver failure\n- Portal hypertension\n- Variceal bleeding\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, provide supportive care, and refer to specialists for antiviral therapy and management of complications.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology/hepatology for severe cases, acute liver failure, or when complications arise. Escalate care for patients with signs of hepatic encephalopathy or significant coagulopathy.\n\n### Key Safety Considerations\nMonitor liver function tests and renal function in patients on antiviral therapy. Be vigilant for signs of liver failure and complications such as variceal bleeding or hepatic encephalopathy.\n",
+  "content": {
+    "overview": {
+      "definition": "Viral hepatitis refers to inflammation of the liver caused by viral infections, primarily hepatitis A, B, C, D, and E viruses. It can be acute or chronic, with varying degrees of severity and potential for liver damage.",
+      "epidemiology": "Hepatitis A and E are typically associated with fecal-oral transmission, while Hepatitis B, C, and D are primarily transmitted through blood and bodily fluids. Globally, hepatitis B and C are significant public health concerns, with millions of people affected and at risk of chronic liver disease.",
+      "pathophysiology": "Viral hepatitis leads to liver inflammation, which can cause hepatocyte injury and necrosis. The immune response to the virus contributes to liver damage, and chronic infection can lead to fibrosis, cirrhosis, and hepatocellular carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Nausea and vomiting",
+        "Abdominal pain (especially in the right upper quadrant)",
+        "Loss of appetite",
+        "Jaundice (yellowing of skin and eyes)",
+        "Dark urine",
+        "Pale stools"
+      ],
+      "signs": [
+        "Hepatomegaly (enlarged liver)",
+        "Splenomegaly (enlarged spleen)",
+        "Ascites (fluid in the abdomen)",
+        "Asterixis (flapping tremor) in chronic cases"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages, especially in chronic hepatitis B and C",
+        "Acute liver failure in severe cases"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Rapid onset of jaundice",
+        "Confusion or altered mental status (indicative of hepatic encephalopathy)",
+        "Coagulopathy (easy bruising or bleeding)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Hepatitis serology (anti-HAV, HBsAg, anti-HBs, anti-HCV, anti-HEV)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "HCV RNA (for hepatitis C)",
+        "HBV DNA (for hepatitis B)",
+        "Liver ultrasound (to assess liver size and rule out complications)"
+      ],
+      "specialistTests": [
+        "Liver biopsy (for chronic hepatitis to assess fibrosis)",
+        "FibroScan (non-invasive assessment of liver stiffness)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on serological tests indicating the presence of specific hepatitis viruses and liver function tests showing liver inflammation or damage.",
+      "differentials": [
+        "Alcoholic hepatitis",
+        "Autoimmune hepatitis",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Drug-induced liver injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, nutrition)",
+          "Monitoring of liver function and coagulation status"
+        ],
+        "secondLine": [
+          "Antiviral therapy for acute hepatitis B (e.g., tenofovir) if severe"
+        ],
+        "procedures": [
+          "Liver transplant in cases of acute liver failure"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antiviral therapy for chronic hepatitis B (e.g., entecavir, tenofovir)",
+          "Direct-acting antivirals for chronic hepatitis C (e.g., sofosbuvir, ledipasvir)"
+        ],
+        "secondLine": [
+          "Monitoring for liver cancer (ultrasound and AFP levels)",
+          "Management of complications (e.g., variceal bleeding)"
+        ],
+        "monitoring": [
+          "Regular LFTs and viral load assessments",
+          "Screening for hepatocellular carcinoma in high-risk patients"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Entecavir",
+          "mechanism": "Nucleoside analogue that inhibits HBV replication",
+          "dosing": "0.5 mg orally once daily",
+          "sideEffects": "Headache, fatigue, dizziness",
+          "notes": "Consider renal function before prescribing."
+        },
+        {
+          "name": "Tenofovir",
+          "mechanism": "Nucleotide analogue that inhibits HBV and HIV replication",
+          "dosing": "300 mg orally once daily",
+          "sideEffects": "Renal toxicity, bone density loss",
+          "notes": "Monitor renal function regularly."
+        },
+        {
+          "name": "Sofosbuvir",
+          "mechanism": "NS5B polymerase inhibitor for HCV",
+          "dosing": "400 mg orally once daily",
+          "sideEffects": "Fatigue, headache",
+          "notes": "Used in combination with other agents."
+        },
+        {
+          "name": "Ledipasvir",
+          "mechanism": "NS5A inhibitor for HCV",
+          "dosing": "90 mg orally once daily",
+          "sideEffects": "Fatigue, headache",
+          "notes": "Used in combination with sofosbuvir."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Liver biopsy",
+          "description": "Invasive procedure to obtain liver tissue for histological examination",
+          "indications": "Assessment of liver fibrosis and inflammation in chronic hepatitis",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        },
+        {
+          "name": "Liver transplant",
+          "description": "Surgical procedure to replace a diseased liver with a healthy liver from a donor",
+          "indications": "End-stage liver disease or acute liver failure",
+          "risks": "Rejection, infection, complications from surgery."
+        }
+      ]
+    },
+    "prognosis": "Acute viral hepatitis often resolves spontaneously, but chronic hepatitis B and C can lead to significant morbidity and mortality due to liver cirrhosis and cancer. Early diagnosis and treatment improve outcomes significantly.",
+    "complications": [
+      "Cirrhosis",
+      "Hepatocellular carcinoma",
+      "Acute liver failure",
+      "Portal hypertension",
+      "Variceal bleeding"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, provide supportive care, and refer to specialists for antiviral therapy and management of complications.",
+    "escalation": "Refer to gastroenterology/hepatology for severe cases, acute liver failure, or when complications arise. Escalate care for patients with signs of hepatic encephalopathy or significant coagulopathy.",
+    "keySafetyConsiderations": "Monitor liver function tests and renal function in patients on antiviral therapy. Be vigilant for signs of liver failure and complications such as variceal bleeding or hepatic encephalopathy."
+  }
+}

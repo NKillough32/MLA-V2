@@ -1,0 +1,142 @@
+{
+  "id": "diabetic_retinopathy",
+  "name": "Diabetic retinopathy",
+  "domains": [
+    "Endocrine",
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T19:31:41.917091",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetic retinopathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetic retinopathy is a diabetes-related eye condition that affects the retina's blood vessels, leading to vision impairment and potential blindness. It is a common complication of diabetes mellitus, particularly in those with poorly controlled blood sugar levels.\n\n### Epidemiology\nDiabetic retinopathy affects approximately 30-40% of patients with diabetes. The prevalence increases with the duration of diabetes, with nearly 90% of patients with type 1 diabetes and 60% of patients with type 2 diabetes developing some degree of retinopathy after 20 years of diabetes.\n\n### Essential Pathophysiology\nThe condition is characterized by hyperglycemia-induced damage to retinal blood vessels, leading to microaneurysms, hemorrhages, and exudates. Over time, this can progress to retinal ischemia, neovascularization, and ultimately, vision loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Blurred vision\n- Floaters\n- Dark spots in vision\n- Difficulty seeing at night\n- Sudden vision loss\n\n### Key Signs\n- Retinal hemorrhages\n- Microaneurysms\n- Cotton wool spots\n- Hard exudates\n- Neovascularization\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Rapid vision loss due to vitreous hemorrhage\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of vision changes\n- Severe vision loss\n- Persistent floaters or flashes of light\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fundoscopy\n- Visual acuity testing\n- Optical coherence tomography (OCT)\n\n### Second-line Investigations\n- Fluorescein angiography\n- Ultrasound of the eye\n\n### Specialist Tests\n- Electroretinography (ERG)\n- Visual field testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical findings during fundoscopic examination, including the presence of microaneurysms, retinal hemorrhages, and exudates. The severity is classified into non-proliferative and proliferative diabetic retinopathy.\n\n### Key Differential Diagnoses to Exclude\n- Hypertensive retinopathy\n- Retinal vein occlusion\n- Age-related macular degeneration\n- Central serous chorioretinopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to ophthalmology for urgent assessment\n- Control of blood glucose levels\n\n#### Second-line Treatments\n- Laser photocoagulation therapy\n\n#### Emergency Procedures\n- Intravitreal injections of anti-VEGF agents\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular eye examinations (annual for type 1, biannual for type 2)\n- Optimizing glycemic control\n\n#### Second-line Treatments\n- Laser therapy for proliferative retinopathy\n- Intravitreal injections for macular edema\n\n#### Monitoring Requirements\n- Regular monitoring of HbA1c levels\n- Visual acuity assessments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aflibercept\n- **Mechanism of Action**: VEGF inhibitor that reduces neovascularization and edema\n- **Typical Dosing Range**: 2 mg intravitreal injection every 4-8 weeks\n- **Key Side Effects/Contraindications**: Intraocular inflammation, retinal detachment, increased intraocular pressure\n- **When to Use vs. Alternatives**: Used for diabetic macular edema and proliferative diabetic retinopathy.\n\n#### Ranibizumab\n- **Mechanism of Action**: Monoclonal antibody fragment that inhibits VEGF\n- **Typical Dosing Range**: 0.5 mg intravitreal injection every month\n- **Key Side Effects/Contraindications**: Endophthalmitis, retinal detachment, bleeding\n- **When to Use vs. Alternatives**: Effective for diabetic macular edema.\n\n#### Laser photocoagulation\n- **Mechanism of Action**: Destroys abnormal blood vessels and reduces retinal ischemia\n- **Typical Dosing Range**: Performed as needed based on ophthalmologist's assessment\n- **Key Side Effects/Contraindications**: Visual field loss, night vision difficulties\n- **When to Use vs. Alternatives**: Standard treatment for proliferative diabetic retinopathy.\n\n### Procedures\n\n#### Laser photocoagulation\n- **What it Involves**: A procedure that uses laser light to treat retinal damage by sealing leaking blood vessels and preventing new vessel growth.\n- **Indications**: Proliferative diabetic retinopathy, diabetic macular edema\n- **Key Risks/Complications**: Vision loss, retinal detachment, bleeding.\n\n#### Intravitreal injection\n- **What it Involves**: Injection of medication directly into the vitreous cavity of the eye to reduce swelling and neovascularization.\n- **Indications**: Diabetic macular edema, proliferative diabetic retinopathy\n- **Key Risks/Complications**: Intraocular infection, bleeding, retinal detachment.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early detection and appropriate management, the progression of diabetic retinopathy can be slowed, and vision can be preserved. However, untreated, it can lead to significant vision loss and blindness.\n\n### Important Complications to Watch For\n- Vision loss\n- Retinal detachment\n- Vitreous hemorrhage\n- Glaucoma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should ensure regular screening for diabetic retinopathy in diabetic patients, manage blood glucose levels, and refer patients to ophthalmology when indicated. They should also educate patients about the importance of eye examinations and glycemic control.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology for any patient with new or worsening visual symptoms, or if there are signs of proliferative diabetic retinopathy on examination.\n\n### Key Safety Considerations\nEnsure proper glycemic control to prevent progression of retinopathy. Monitor for signs of acute vision changes and refer promptly. Educate patients on the importance of regular eye examinations.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetic retinopathy is a diabetes-related eye condition that affects the retina's blood vessels, leading to vision impairment and potential blindness. It is a common complication of diabetes mellitus, particularly in those with poorly controlled blood sugar levels.",
+      "epidemiology": "Diabetic retinopathy affects approximately 30-40% of patients with diabetes. The prevalence increases with the duration of diabetes, with nearly 90% of patients with type 1 diabetes and 60% of patients with type 2 diabetes developing some degree of retinopathy after 20 years of diabetes.",
+      "pathophysiology": "The condition is characterized by hyperglycemia-induced damage to retinal blood vessels, leading to microaneurysms, hemorrhages, and exudates. Over time, this can progress to retinal ischemia, neovascularization, and ultimately, vision loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "Blurred vision",
+        "Floaters",
+        "Dark spots in vision",
+        "Difficulty seeing at night",
+        "Sudden vision loss"
+      ],
+      "signs": [
+        "Retinal hemorrhages",
+        "Microaneurysms",
+        "Cotton wool spots",
+        "Hard exudates",
+        "Neovascularization"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Rapid vision loss due to vitreous hemorrhage"
+      ],
+      "redFlags": [
+        "Sudden onset of vision changes",
+        "Severe vision loss",
+        "Persistent floaters or flashes of light"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fundoscopy",
+        "Visual acuity testing",
+        "Optical coherence tomography (OCT)"
+      ],
+      "secondLine": [
+        "Fluorescein angiography",
+        "Ultrasound of the eye"
+      ],
+      "specialistTests": [
+        "Electroretinography (ERG)",
+        "Visual field testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical findings during fundoscopic examination, including the presence of microaneurysms, retinal hemorrhages, and exudates. The severity is classified into non-proliferative and proliferative diabetic retinopathy.",
+      "differentials": [
+        "Hypertensive retinopathy",
+        "Retinal vein occlusion",
+        "Age-related macular degeneration",
+        "Central serous chorioretinopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to ophthalmology for urgent assessment",
+          "Control of blood glucose levels"
+        ],
+        "secondLine": [
+          "Laser photocoagulation therapy"
+        ],
+        "procedures": [
+          "Intravitreal injections of anti-VEGF agents"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular eye examinations (annual for type 1, biannual for type 2)",
+          "Optimizing glycemic control"
+        ],
+        "secondLine": [
+          "Laser therapy for proliferative retinopathy",
+          "Intravitreal injections for macular edema"
+        ],
+        "monitoring": [
+          "Regular monitoring of HbA1c levels",
+          "Visual acuity assessments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aflibercept",
+          "mechanism": "VEGF inhibitor that reduces neovascularization and edema",
+          "dosing": "2 mg intravitreal injection every 4-8 weeks",
+          "sideEffects": "Intraocular inflammation, retinal detachment, increased intraocular pressure",
+          "notes": "Used for diabetic macular edema and proliferative diabetic retinopathy."
+        },
+        {
+          "name": "Ranibizumab",
+          "mechanism": "Monoclonal antibody fragment that inhibits VEGF",
+          "dosing": "0.5 mg intravitreal injection every month",
+          "sideEffects": "Endophthalmitis, retinal detachment, bleeding",
+          "notes": "Effective for diabetic macular edema."
+        },
+        {
+          "name": "Laser photocoagulation",
+          "mechanism": "Destroys abnormal blood vessels and reduces retinal ischemia",
+          "dosing": "Performed as needed based on ophthalmologist's assessment",
+          "sideEffects": "Visual field loss, night vision difficulties",
+          "notes": "Standard treatment for proliferative diabetic retinopathy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laser photocoagulation",
+          "description": "A procedure that uses laser light to treat retinal damage by sealing leaking blood vessels and preventing new vessel growth.",
+          "indications": "Proliferative diabetic retinopathy, diabetic macular edema",
+          "risks": "Vision loss, retinal detachment, bleeding."
+        },
+        {
+          "name": "Intravitreal injection",
+          "description": "Injection of medication directly into the vitreous cavity of the eye to reduce swelling and neovascularization.",
+          "indications": "Diabetic macular edema, proliferative diabetic retinopathy",
+          "risks": "Intraocular infection, bleeding, retinal detachment."
+        }
+      ]
+    },
+    "prognosis": "With early detection and appropriate management, the progression of diabetic retinopathy can be slowed, and vision can be preserved. However, untreated, it can lead to significant vision loss and blindness.",
+    "complications": [
+      "Vision loss",
+      "Retinal detachment",
+      "Vitreous hemorrhage",
+      "Glaucoma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should ensure regular screening for diabetic retinopathy in diabetic patients, manage blood glucose levels, and refer patients to ophthalmology when indicated. They should also educate patients about the importance of eye examinations and glycemic control.",
+    "escalation": "Refer to ophthalmology for any patient with new or worsening visual symptoms, or if there are signs of proliferative diabetic retinopathy on examination.",
+    "keySafetyConsiderations": "Ensure proper glycemic control to prevent progression of retinopathy. Monitor for signs of acute vision changes and refer promptly. Educate patients on the importance of regular eye examinations."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "cerebellar_disorders",
+  "name": "Cerebellar disorders",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:55:52.782896",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cerebellar disorders: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCerebellar disorders refer to a group of conditions that affect the cerebellum, a region of the brain responsible for coordination, balance, and fine motor control. These disorders can result from various causes, including genetic mutations, stroke, tumors, infections, and degenerative diseases.\n\n### Epidemiology\nCerebellar disorders can affect individuals of all ages, but certain types, such as spinocerebellar ataxias, are more prevalent in specific populations. The incidence of cerebellar ataxia is estimated to be around 1 in 100,000 people per year, with a higher prevalence in older adults.\n\n### Essential Pathophysiology\nCerebellar disorders typically involve dysfunction of the cerebellar cortex and/or the deep cerebellar nuclei, leading to impaired coordination and balance. This can result from neuronal degeneration, demyelination, or structural lesions affecting the cerebellum.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Ataxia (loss of coordination)\n- Dysmetria (inability to control the range of motion)\n- Tremors\n- Dizziness\n- Nausea\n- Speech disturbances (dysarthria)\n- Visual disturbances\n\n### Key Signs\n- Unsteady gait\n- Wide-based stance\n- Nystagmus (involuntary eye movements)\n- Hypotonia (decreased muscle tone)\n- Intention tremor (tremor during purposeful movement)\n\n### Atypical Presentations\n- Cognitive changes (in some degenerative conditions)\n- Behavioral changes (e.g., in Wilson's disease)\n- Seizures (in cases of cerebellar tumors)\n\n### Red Flags Requiring Immediate Action\n- Acute onset of symptoms (suggestive of stroke or hemorrhage)\n- Severe headache (possible intracranial pressure increase)\n- Rapid progression of symptoms (suggestive of a tumor or degenerative disease)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Neurological examination\n- MRI of the brain\n- CT scan of the brain\n\n### Second-line Investigations\n- Electromyography (EMG)\n- Lumbar puncture (if infection or inflammatory process is suspected)\n- Genetic testing (for hereditary ataxias)\n\n### Specialist Tests\n- Vestibular function tests\n- Cerebellar function tests (e.g., finger-to-nose test)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cerebellar disorders is primarily clinical, based on the presence of characteristic symptoms and signs, supported by imaging and laboratory findings as needed.\n\n### Key Differential Diagnoses to Exclude\n- Multiple sclerosis\n- Stroke (ischemic or hemorrhagic)\n- Cerebellar tumors (e.g., medulloblastoma)\n- Wilson's disease\n- Alcoholic cerebellar degeneration\n- Spinocerebellar ataxias\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (monitoring vital signs, ensuring safety)\n- Hydration and nutrition management\n\n#### Second-line Treatments\n- Corticosteroids (if inflammation is suspected)\n- Antiemetics (for nausea)\n\n#### Emergency Procedures\n- Lumbar puncture (if infection is suspected)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy (to improve coordination and balance)\n- Occupational therapy (to assist with daily activities)\n\n#### Second-line Treatments\n- Speech therapy (for dysarthria)\n- Nutritional support (if swallowing difficulties arise)\n\n#### Monitoring Requirements\n- Regular follow-up for progression of symptoms\n- Assessment of functional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: Prednisone 1 mg/kg/day, tapering as needed\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis\n- **When to Use vs. Alternatives**: Used in cases of cerebellar inflammation or demyelination.\n\n#### Antiemetics (e.g., Ondansetron)\n- **Mechanism of Action**: Serotonin receptor antagonist that reduces nausea\n- **Typical Dosing Range**: 4-8 mg IV/PO every 8 hours as needed\n- **Key Side Effects/Contraindications**: Headache, constipation, dizziness\n- **When to Use vs. Alternatives**: Useful for managing nausea associated with cerebellar disorders.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected infection, inflammatory conditions, or to rule out other causes of neurological symptoms.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of cerebellar disorders varies widely depending on the underlying cause. Some conditions may be stable or slowly progressive, while others can lead to significant disability or be life-threatening.\n\n### Important Complications to Watch For\n- Falls and injuries due to ataxia\n- Aspiration pneumonia due to swallowing difficulties\n- Progressive disability and loss of independence\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough neurological assessments, recognize symptoms of cerebellar dysfunction, initiate appropriate investigations, and provide supportive care. They should also educate patients and families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist for any patient with acute onset of cerebellar symptoms, rapid progression, or concerning findings on imaging or examination.\n\n### Key Safety Considerations\nEnsure patient safety to prevent falls, monitor for signs of increased intracranial pressure, and be vigilant for complications such as aspiration pneumonia.\n",
+  "content": {
+    "overview": {
+      "definition": "Cerebellar disorders refer to a group of conditions that affect the cerebellum, a region of the brain responsible for coordination, balance, and fine motor control. These disorders can result from various causes, including genetic mutations, stroke, tumors, infections, and degenerative diseases.",
+      "epidemiology": "Cerebellar disorders can affect individuals of all ages, but certain types, such as spinocerebellar ataxias, are more prevalent in specific populations. The incidence of cerebellar ataxia is estimated to be around 1 in 100,000 people per year, with a higher prevalence in older adults.",
+      "pathophysiology": "Cerebellar disorders typically involve dysfunction of the cerebellar cortex and/or the deep cerebellar nuclei, leading to impaired coordination and balance. This can result from neuronal degeneration, demyelination, or structural lesions affecting the cerebellum."
+    },
+    "recognition": {
+      "symptoms": [
+        "Ataxia (loss of coordination)",
+        "Dysmetria (inability to control the range of motion)",
+        "Tremors",
+        "Dizziness",
+        "Nausea",
+        "Speech disturbances (dysarthria)",
+        "Visual disturbances"
+      ],
+      "signs": [
+        "Unsteady gait",
+        "Wide-based stance",
+        "Nystagmus (involuntary eye movements)",
+        "Hypotonia (decreased muscle tone)",
+        "Intention tremor (tremor during purposeful movement)"
+      ],
+      "atypicalPresentations": [
+        "Cognitive changes (in some degenerative conditions)",
+        "Behavioral changes (e.g., in Wilson's disease)",
+        "Seizures (in cases of cerebellar tumors)"
+      ],
+      "redFlags": [
+        "Acute onset of symptoms (suggestive of stroke or hemorrhage)",
+        "Severe headache (possible intracranial pressure increase)",
+        "Rapid progression of symptoms (suggestive of a tumor or degenerative disease)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Neurological examination",
+        "MRI of the brain",
+        "CT scan of the brain"
+      ],
+      "secondLine": [
+        "Electromyography (EMG)",
+        "Lumbar puncture (if infection or inflammatory process is suspected)",
+        "Genetic testing (for hereditary ataxias)"
+      ],
+      "specialistTests": [
+        "Vestibular function tests",
+        "Cerebellar function tests (e.g., finger-to-nose test)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cerebellar disorders is primarily clinical, based on the presence of characteristic symptoms and signs, supported by imaging and laboratory findings as needed.",
+      "differentials": [
+        "Multiple sclerosis",
+        "Stroke (ischemic or hemorrhagic)",
+        "Cerebellar tumors (e.g., medulloblastoma)",
+        "Wilson's disease",
+        "Alcoholic cerebellar degeneration",
+        "Spinocerebellar ataxias"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (monitoring vital signs, ensuring safety)",
+          "Hydration and nutrition management"
+        ],
+        "secondLine": [
+          "Corticosteroids (if inflammation is suspected)",
+          "Antiemetics (for nausea)"
+        ],
+        "procedures": [
+          "Lumbar puncture (if infection is suspected)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy (to improve coordination and balance)",
+          "Occupational therapy (to assist with daily activities)"
+        ],
+        "secondLine": [
+          "Speech therapy (for dysarthria)",
+          "Nutritional support (if swallowing difficulties arise)"
+        ],
+        "monitoring": [
+          "Regular follow-up for progression of symptoms",
+          "Assessment of functional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "Prednisone 1 mg/kg/day, tapering as needed",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis",
+          "notes": "Used in cases of cerebellar inflammation or demyelination."
+        },
+        {
+          "name": "Antiemetics (e.g., Ondansetron)",
+          "mechanism": "Serotonin receptor antagonist that reduces nausea",
+          "dosing": "4-8 mg IV/PO every 8 hours as needed",
+          "sideEffects": "Headache, constipation, dizziness",
+          "notes": "Useful for managing nausea associated with cerebellar disorders."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected infection, inflammatory conditions, or to rule out other causes of neurological symptoms.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of cerebellar disorders varies widely depending on the underlying cause. Some conditions may be stable or slowly progressive, while others can lead to significant disability or be life-threatening.",
+    "complications": [
+      "Falls and injuries due to ataxia",
+      "Aspiration pneumonia due to swallowing difficulties",
+      "Progressive disability and loss of independence"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough neurological assessments, recognize symptoms of cerebellar dysfunction, initiate appropriate investigations, and provide supportive care. They should also educate patients and families about the condition and its management.",
+    "escalation": "Refer to a neurologist for any patient with acute onset of cerebellar symptoms, rapid progression, or concerning findings on imaging or examination.",
+    "keySafetyConsiderations": "Ensure patient safety to prevent falls, monitor for signs of increased intracranial pressure, and be vigilant for complications such as aspiration pneumonia."
+  }
+}

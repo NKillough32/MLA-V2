@@ -1,0 +1,130 @@
+{
+  "id": "acute_kidney_injury",
+  "name": "Acute kidney injury",
+  "domains": [
+    "Post-operative care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:14:50.713641",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute kidney injury: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute kidney injury (AKI) is a rapid decline in kidney function, characterized by an increase in serum creatinine or a decrease in urine output over a short period, typically hours to days.\n\n### Epidemiology\nAKI occurs in approximately 5-15% of hospitalized patients and is more common in those undergoing major surgery, particularly in the elderly and those with pre-existing kidney disease.\n\n### Essential Pathophysiology\nAKI can result from prerenal causes (e.g., hypovolemia, decreased cardiac output), intrinsic renal causes (e.g., acute tubular necrosis, glomerulonephritis), or postrenal causes (e.g., urinary obstruction). The underlying mechanisms involve ischemia, nephrotoxicity, and inflammation leading to tubular cell injury and dysfunction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Decreased urine output\n- Fatigue\n- Nausea\n- Confusion\n- Shortness of breath\n\n### Key Signs\n- Hypertension\n- Edema\n- Electrolyte imbalances (e.g., hyperkalemia)\n- Uremic symptoms (e.g., pruritus, asterixis)\n\n### Atypical Presentations\n- Asymptomatic elevation of creatinine in some cases\n- Non-specific abdominal pain\n\n### Red Flags Requiring Immediate Action\n- Rapid increase in serum creatinine (>0.3 mg/dL in 48 hours)\n- Anuria (no urine output for 12 hours)\n- Severe electrolyte disturbances (e.g., hyperkalemia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum creatinine\n- Urine output monitoring\n- Electrolyte panel\n- Urinalysis\n\n### Second-line Investigations\n- Renal ultrasound (to assess for obstruction)\n- Fractional excretion of sodium (FENa)\n\n### Specialist Tests\n- CT scan of abdomen/pelvis (if obstruction suspected)\n- Kidney biopsy (if intrinsic renal disease suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nAKI is diagnosed based on the KDIGO criteria: an increase in serum creatinine by ≥0.3 mg/dL within 48 hours, or an increase by ≥1.5 times baseline creatinine within the prior 7 days, or urine output <0.5 mL/kg/h for 6 hours.\n\n### Key Differential Diagnoses to Exclude\n- Chronic kidney disease\n- Acute glomerulonephritis\n- Acute tubular necrosis\n- Post-renal obstruction (e.g., stones, tumors)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (if prerenal cause)\n- Electrolyte management (e.g., calcium gluconate for hyperkalemia)\n- Avoid nephrotoxic agents\n\n#### Second-line Treatments\n- Diuretics (if volume overload)\n- Renal replacement therapy (if severe AKI)\n\n#### Emergency Procedures\n- Dialysis (hemodialysis or peritoneal dialysis) for severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Identify and treat underlying cause (e.g., diabetes, hypertension)\n- Monitor renal function regularly\n\n#### Second-line Treatments\n- Referral to nephrology for advanced management\n\n#### Monitoring Requirements\n- Regular serum creatinine and electrolyte levels\n- Blood pressure control\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium reabsorption in the ascending loop of Henle.\n- **Typical Dosing Range**: Initial: 20-40 mg IV; may increase based on response.\n- **Key Side Effects/Contraindications**: Dehydration, electrolyte imbalances (hypokalemia, hyponatremia), ototoxicity (rare).\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n#### Calcium gluconate\n- **Mechanism of Action**: Stabilizes cardiac myocyte membranes in hyperkalemia.\n- **Typical Dosing Range**: 1 g IV over 2 hours; may repeat as needed.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, local irritation at injection site.\n- **When to Use vs. Alternatives**: Monitor ECG for changes.\n\n### Procedures\n\n#### Hemodialysis\n- **What it Involves**: A procedure to remove waste products and excess fluid from the blood when kidneys are unable to do so.\n- **Indications**: Severe AKI with complications (e.g., hyperkalemia, acidosis, volume overload).\n- **Key Risks/Complications**: Infection, hypotension, bleeding, access complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of AKI varies; many patients recover renal function, but some may progress to chronic kidney disease or end-stage renal disease, especially if there are underlying risk factors.\n\n### Important Complications to Watch For\n- Electrolyte imbalances (e.g., hyperkalemia, metabolic acidosis)\n- Fluid overload\n- Uremia\n- Increased risk of cardiovascular events\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should monitor renal function, recognize signs of AKI, initiate appropriate investigations, manage fluid and electrolyte balance, and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nIf AKI is suspected or confirmed, escalate to a senior clinician or nephrologist, especially if there are signs of severe AKI or complications.\n\n### Key Safety Considerations\nEnsure careful monitoring of renal function in at-risk patients (e.g., post-operative, dehydrated), avoid nephrotoxic medications, and ensure adequate hydration pre- and post-surgery.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute kidney injury (AKI) is a rapid decline in kidney function, characterized by an increase in serum creatinine or a decrease in urine output over a short period, typically hours to days.",
+      "epidemiology": "AKI occurs in approximately 5-15% of hospitalized patients and is more common in those undergoing major surgery, particularly in the elderly and those with pre-existing kidney disease.",
+      "pathophysiology": "AKI can result from prerenal causes (e.g., hypovolemia, decreased cardiac output), intrinsic renal causes (e.g., acute tubular necrosis, glomerulonephritis), or postrenal causes (e.g., urinary obstruction). The underlying mechanisms involve ischemia, nephrotoxicity, and inflammation leading to tubular cell injury and dysfunction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Decreased urine output",
+        "Fatigue",
+        "Nausea",
+        "Confusion",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Hypertension",
+        "Edema",
+        "Electrolyte imbalances (e.g., hyperkalemia)",
+        "Uremic symptoms (e.g., pruritus, asterixis)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic elevation of creatinine in some cases",
+        "Non-specific abdominal pain"
+      ],
+      "redFlags": [
+        "Rapid increase in serum creatinine (>0.3 mg/dL in 48 hours)",
+        "Anuria (no urine output for 12 hours)",
+        "Severe electrolyte disturbances (e.g., hyperkalemia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum creatinine",
+        "Urine output monitoring",
+        "Electrolyte panel",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "Renal ultrasound (to assess for obstruction)",
+        "Fractional excretion of sodium (FENa)"
+      ],
+      "specialistTests": [
+        "CT scan of abdomen/pelvis (if obstruction suspected)",
+        "Kidney biopsy (if intrinsic renal disease suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "AKI is diagnosed based on the KDIGO criteria: an increase in serum creatinine by ≥0.3 mg/dL within 48 hours, or an increase by ≥1.5 times baseline creatinine within the prior 7 days, or urine output <0.5 mL/kg/h for 6 hours.",
+      "differentials": [
+        "Chronic kidney disease",
+        "Acute glomerulonephritis",
+        "Acute tubular necrosis",
+        "Post-renal obstruction (e.g., stones, tumors)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (if prerenal cause)",
+          "Electrolyte management (e.g., calcium gluconate for hyperkalemia)",
+          "Avoid nephrotoxic agents"
+        ],
+        "secondLine": [
+          "Diuretics (if volume overload)",
+          "Renal replacement therapy (if severe AKI)"
+        ],
+        "procedures": [
+          "Dialysis (hemodialysis or peritoneal dialysis) for severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Identify and treat underlying cause (e.g., diabetes, hypertension)",
+          "Monitor renal function regularly"
+        ],
+        "secondLine": [
+          "Referral to nephrology for advanced management"
+        ],
+        "monitoring": [
+          "Regular serum creatinine and electrolyte levels",
+          "Blood pressure control"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium reabsorption in the ascending loop of Henle.",
+          "dosing": "Initial: 20-40 mg IV; may increase based on response.",
+          "sideEffects": "Dehydration, electrolyte imbalances (hypokalemia, hyponatremia), ototoxicity (rare).",
+          "notes": "Use cautiously in patients with renal impairment."
+        },
+        {
+          "name": "Calcium gluconate",
+          "mechanism": "Stabilizes cardiac myocyte membranes in hyperkalemia.",
+          "dosing": "1 g IV over 2 hours; may repeat as needed.",
+          "sideEffects": "Hypotension, bradycardia, local irritation at injection site.",
+          "notes": "Monitor ECG for changes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Hemodialysis",
+          "description": "A procedure to remove waste products and excess fluid from the blood when kidneys are unable to do so.",
+          "indications": "Severe AKI with complications (e.g., hyperkalemia, acidosis, volume overload).",
+          "risks": "Infection, hypotension, bleeding, access complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of AKI varies; many patients recover renal function, but some may progress to chronic kidney disease or end-stage renal disease, especially if there are underlying risk factors.",
+    "complications": [
+      "Electrolyte imbalances (e.g., hyperkalemia, metabolic acidosis)",
+      "Fluid overload",
+      "Uremia",
+      "Increased risk of cardiovascular events"
+    ],
+    "foundationDoctorRole": "Foundation doctors should monitor renal function, recognize signs of AKI, initiate appropriate investigations, manage fluid and electrolyte balance, and escalate care as needed.",
+    "escalation": "If AKI is suspected or confirmed, escalate to a senior clinician or nephrologist, especially if there are signs of severe AKI or complications.",
+    "keySafetyConsiderations": "Ensure careful monitoring of renal function in at-risk patients (e.g., post-operative, dehydrated), avoid nephrotoxic medications, and ensure adequate hydration pre- and post-surgery."
+  }
+}

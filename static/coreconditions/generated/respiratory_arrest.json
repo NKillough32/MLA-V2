@@ -1,0 +1,151 @@
+{
+  "id": "respiratory_arrest",
+  "name": "Respiratory arrest",
+  "domains": [
+    "Anaesthesia and Critical Care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:00:55.224240",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Respiratory arrest: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRespiratory arrest is a medical emergency characterized by the cessation of breathing, leading to inadequate oxygenation and ventilation, which can result in hypoxia and subsequent organ failure if not promptly addressed.\n\n### Epidemiology\nRespiratory arrest can occur in various settings, including in patients with chronic respiratory diseases, during anaesthesia, or in paediatric emergencies. It is more common in children due to airway obstruction, respiratory infections, and congenital anomalies.\n\n### Essential Pathophysiology\nRespiratory arrest can result from various factors, including airway obstruction, central nervous system depression, neuromuscular disorders, or severe pulmonary disease. The lack of ventilation leads to hypoxia, hypercapnia, and acidosis, which can cause irreversible damage to vital organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden cessation of breathing\n- Cyanosis\n- Altered level of consciousness\n- Agitation or confusion (in some cases)\n\n### Key Signs\n- Absence of breath sounds\n- Unresponsive to verbal stimuli\n- Pulsus paradoxus (in severe cases)\n- Bradycardia or tachycardia\n\n### Atypical Presentations\n- Respiratory distress without complete arrest (e.g., gasping or irregular breathing)\n- Cyanosis without respiratory failure\n\n### Red Flags Requiring Immediate Action\n- Unresponsive patient\n- Severe respiratory distress\n- History of choking or drowning\n- Underlying chronic respiratory disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (ABCDE approach)\n- Pulse oximetry\n- Capnography (if available)\n\n### Second-line Investigations\n- Arterial blood gas analysis (ABG)\n- Chest X-ray (to assess for underlying pathology)\n\n### Specialist Tests\n- CT scan of the chest (if indicated)\n- Pulmonary function tests (in chronic cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of respiratory arrest is primarily clinical, based on the absence of breathing and inadequate oxygenation. Confirmatory tests may include pulse oximetry and ABG results showing hypoxemia and hypercapnia.\n\n### Key Differential Diagnoses to Exclude\n- Cardiac arrest\n- Severe asthma exacerbation\n- Pneumothorax\n- Pulmonary embolism\n- Neuromuscular disorders (e.g., myasthenia gravis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Call for help (activate emergency response)\n- Initiate CPR (30 compressions to 2 breaths)\n- Administer supplemental oxygen\n\n#### Second-line Treatments\n- Advanced airway management (intubation or bag-mask ventilation)\n- Administer adrenaline if indicated (e.g., in anaphylaxis)\n\n#### Emergency Procedures\n- Endotracheal intubation\n- Bag-mask ventilation\n- Chest decompression (if tension pneumothorax is suspected)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Identify and treat underlying causes (e.g., bronchodilators for asthma)\n- Oxygen therapy as needed\n\n#### Second-line Treatments\n- Consider non-invasive ventilation (NIV) for chronic respiratory failure\n\n#### Monitoring Requirements\n- Regular assessment of respiratory function\n- Monitoring of oxygen saturation and ABG\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Adrenaline\n- **Mechanism of Action**: Alpha and beta-adrenergic agonist, increases heart rate and improves coronary perfusion during CPR\n- **Typical Dosing Range**: 1 mg IV every 3-5 minutes during cardiac arrest\n- **Key Side Effects/Contraindications**: Tachycardia, hypertension, arrhythmias\n- **When to Use vs. Alternatives**: Use in cases of anaphylaxis or asystole.\n\n#### Atropine\n- **Mechanism of Action**: Anticholinergic agent that increases heart rate by blocking vagal effects\n- **Typical Dosing Range**: 0.5 mg IV every 3-5 minutes, max 3 mg\n- **Key Side Effects/Contraindications**: Dry mouth, blurred vision, tachycardia\n- **When to Use vs. Alternatives**: Consider in bradycardia associated with respiratory arrest.\n\n#### Oxygen\n- **Mechanism of Action**: Increases oxygen saturation and delivery to tissues\n- **Typical Dosing Range**: Administer high-flow oxygen (15 L/min) via non-rebreather mask\n- **Key Side Effects/Contraindications**: Oxygen toxicity in prolonged use at high concentrations\n- **When to Use vs. Alternatives**: Monitor for signs of hyperoxia.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway\n- **Indications**: Inability to maintain airway patency, respiratory failure\n- **Key Risks/Complications**: Esophageal intubation, trauma to airway structures, infection.\n\n#### Bag-mask ventilation\n- **What it Involves**: Using a bag and mask to provide positive pressure ventilation\n- **Indications**: Respiratory arrest with a patent airway\n- **Key Risks/Complications**: Inadequate seal leading to ineffective ventilation, aspiration.\n\n#### Chest decompression\n- **What it Involves**: Needle decompression of the pleural space in tension pneumothorax\n- **Indications**: Signs of tension pneumothorax (hypotension, tracheal deviation)\n- **Key Risks/Complications**: Injury to lung or vascular structures, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of respiratory arrest depends on the underlying cause, duration of arrest, and promptness of intervention. Early recognition and treatment can lead to favorable outcomes, while prolonged arrest can result in significant morbidity or mortality.\n\n### Important Complications to Watch For\n- Hypoxic brain injury\n- Cardiac arrest\n- Pulmonary complications (e.g., pneumonia)\n- Long-term respiratory failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing respiratory arrest, initiating CPR, and providing basic airway management. They should also be familiar with the emergency protocols and escalation pathways in their institution.\n\n### When to Escalate to Senior/Specialist\nIf a patient is in respiratory arrest, immediate escalation to senior medical staff and activation of emergency services is critical. Continuous monitoring and reassessment of the patient's condition are essential during management.\n\n### Key Safety Considerations\nEnsure the safety of the healthcare team and the patient during resuscitation efforts. Use personal protective equipment (PPE) as necessary, especially in cases of suspected infectious diseases. Maintain clear communication with the team and document all interventions.\n",
+  "content": {
+    "overview": {
+      "definition": "Respiratory arrest is a medical emergency characterized by the cessation of breathing, leading to inadequate oxygenation and ventilation, which can result in hypoxia and subsequent organ failure if not promptly addressed.",
+      "epidemiology": "Respiratory arrest can occur in various settings, including in patients with chronic respiratory diseases, during anaesthesia, or in paediatric emergencies. It is more common in children due to airway obstruction, respiratory infections, and congenital anomalies.",
+      "pathophysiology": "Respiratory arrest can result from various factors, including airway obstruction, central nervous system depression, neuromuscular disorders, or severe pulmonary disease. The lack of ventilation leads to hypoxia, hypercapnia, and acidosis, which can cause irreversible damage to vital organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden cessation of breathing",
+        "Cyanosis",
+        "Altered level of consciousness",
+        "Agitation or confusion (in some cases)"
+      ],
+      "signs": [
+        "Absence of breath sounds",
+        "Unresponsive to verbal stimuli",
+        "Pulsus paradoxus (in severe cases)",
+        "Bradycardia or tachycardia"
+      ],
+      "atypicalPresentations": [
+        "Respiratory distress without complete arrest (e.g., gasping or irregular breathing)",
+        "Cyanosis without respiratory failure"
+      ],
+      "redFlags": [
+        "Unresponsive patient",
+        "Severe respiratory distress",
+        "History of choking or drowning",
+        "Underlying chronic respiratory disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (ABCDE approach)",
+        "Pulse oximetry",
+        "Capnography (if available)"
+      ],
+      "secondLine": [
+        "Arterial blood gas analysis (ABG)",
+        "Chest X-ray (to assess for underlying pathology)"
+      ],
+      "specialistTests": [
+        "CT scan of the chest (if indicated)",
+        "Pulmonary function tests (in chronic cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of respiratory arrest is primarily clinical, based on the absence of breathing and inadequate oxygenation. Confirmatory tests may include pulse oximetry and ABG results showing hypoxemia and hypercapnia.",
+      "differentials": [
+        "Cardiac arrest",
+        "Severe asthma exacerbation",
+        "Pneumothorax",
+        "Pulmonary embolism",
+        "Neuromuscular disorders (e.g., myasthenia gravis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Call for help (activate emergency response)",
+          "Initiate CPR (30 compressions to 2 breaths)",
+          "Administer supplemental oxygen"
+        ],
+        "secondLine": [
+          "Advanced airway management (intubation or bag-mask ventilation)",
+          "Administer adrenaline if indicated (e.g., in anaphylaxis)"
+        ],
+        "procedures": [
+          "Endotracheal intubation",
+          "Bag-mask ventilation",
+          "Chest decompression (if tension pneumothorax is suspected)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Identify and treat underlying causes (e.g., bronchodilators for asthma)",
+          "Oxygen therapy as needed"
+        ],
+        "secondLine": [
+          "Consider non-invasive ventilation (NIV) for chronic respiratory failure"
+        ],
+        "monitoring": [
+          "Regular assessment of respiratory function",
+          "Monitoring of oxygen saturation and ABG"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Adrenaline",
+          "mechanism": "Alpha and beta-adrenergic agonist, increases heart rate and improves coronary perfusion during CPR",
+          "dosing": "1 mg IV every 3-5 minutes during cardiac arrest",
+          "sideEffects": "Tachycardia, hypertension, arrhythmias",
+          "notes": "Use in cases of anaphylaxis or asystole."
+        },
+        {
+          "name": "Atropine",
+          "mechanism": "Anticholinergic agent that increases heart rate by blocking vagal effects",
+          "dosing": "0.5 mg IV every 3-5 minutes, max 3 mg",
+          "sideEffects": "Dry mouth, blurred vision, tachycardia",
+          "notes": "Consider in bradycardia associated with respiratory arrest."
+        },
+        {
+          "name": "Oxygen",
+          "mechanism": "Increases oxygen saturation and delivery to tissues",
+          "dosing": "Administer high-flow oxygen (15 L/min) via non-rebreather mask",
+          "sideEffects": "Oxygen toxicity in prolonged use at high concentrations",
+          "notes": "Monitor for signs of hyperoxia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway",
+          "indications": "Inability to maintain airway patency, respiratory failure",
+          "risks": "Esophageal intubation, trauma to airway structures, infection."
+        },
+        {
+          "name": "Bag-mask ventilation",
+          "description": "Using a bag and mask to provide positive pressure ventilation",
+          "indications": "Respiratory arrest with a patent airway",
+          "risks": "Inadequate seal leading to ineffective ventilation, aspiration."
+        },
+        {
+          "name": "Chest decompression",
+          "description": "Needle decompression of the pleural space in tension pneumothorax",
+          "indications": "Signs of tension pneumothorax (hypotension, tracheal deviation)",
+          "risks": "Injury to lung or vascular structures, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of respiratory arrest depends on the underlying cause, duration of arrest, and promptness of intervention. Early recognition and treatment can lead to favorable outcomes, while prolonged arrest can result in significant morbidity or mortality.",
+    "complications": [
+      "Hypoxic brain injury",
+      "Cardiac arrest",
+      "Pulmonary complications (e.g., pneumonia)",
+      "Long-term respiratory failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing respiratory arrest, initiating CPR, and providing basic airway management. They should also be familiar with the emergency protocols and escalation pathways in their institution.",
+    "escalation": "If a patient is in respiratory arrest, immediate escalation to senior medical staff and activation of emergency services is critical. Continuous monitoring and reassessment of the patient's condition are essential during management.",
+    "keySafetyConsiderations": "Ensure the safety of the healthcare team and the patient during resuscitation efforts. Use personal protective equipment (PPE) as necessary, especially in cases of suspected infectious diseases. Maintain clear communication with the team and document all interventions."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "tonsillitis_and_pharyngitis",
+  "name": "Tonsillitis and pharyngitis",
+  "domains": [
+    "ENT",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:37:55.844409",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Tonsillitis and pharyngitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTonsillitis is the inflammation of the tonsils, typically due to viral or bacterial infection, while pharyngitis refers to inflammation of the pharynx, often presenting with sore throat.\n\n### Epidemiology\nTonsillitis and pharyngitis are common in children and adolescents, with peak incidence between ages 5-15. Viral causes are more prevalent, but bacterial infections, particularly Group A Streptococcus, are significant in school-aged children.\n\n### Essential Pathophysiology\nInfection leads to inflammation of the tonsils and pharynx, resulting in edema, erythema, and exudate. The immune response involves lymphoid tissue activation, which can lead to systemic symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sore throat\n- Difficulty swallowing (odynophagia)\n- Fever\n- Cough\n- Malaise\n- Headache\n- Nausea\n\n### Key Signs\n- Enlarged tonsils\n- Tonsillar exudate\n- Fever (often >38°C)\n- Tender anterior cervical lymphadenopathy\n- Erythematous pharynx\n\n### Atypical Presentations\n- Persistent sore throat without fever\n- Recurrent episodes of tonsillitis\n- Absence of typical signs in viral infections\n\n### Red Flags Requiring Immediate Action\n- Difficulty breathing or swallowing\n- Severe throat pain\n- High fever (>39°C)\n- Persistent symptoms beyond 5 days\n- Signs of dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Throat swab for rapid antigen detection test (RADT)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Throat culture (if RADT negative and suspicion of streptococcal infection)\n- Monospot test (for infectious mononucleosis)\n\n### Specialist Tests\n- Consider referral for sleep studies if obstructive sleep apnea is suspected due to tonsillar hypertrophy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history and physical examination. RADT or throat culture confirms streptococcal infection.\n\n### Key Differential Diagnoses to Exclude\n- Viral pharyngitis\n- Infectious mononucleosis\n- Epiglottitis\n- Peritonsillar abscess\n- Candidiasis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesics (e.g., paracetamol or ibuprofen) for pain relief\n- Hydration and rest\n\n#### Second-line Treatments\n- Antibiotics (e.g., penicillin or amoxicillin for streptococcal infection)\n\n#### Emergency Procedures\n- Tonsillectomy (for recurrent tonsillitis or obstructive sleep apnea)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued symptomatic management with analgesics and hydration\n\n#### Second-line Treatments\n- Consider referral to ENT for evaluation of chronic tonsillitis or tonsillar hypertrophy\n\n#### Monitoring Requirements\n- Regular follow-up for recurrent symptoms or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 500 mg TID for 10 days\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, rash, allergic reactions\n- **When to Use vs. Alternatives**: First-line treatment for streptococcal tonsillitis.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Useful for symptomatic relief.\n\n### Procedures\n\n#### Tonsillectomy\n- **What it Involves**: Surgical removal of the tonsils, typically performed under general anesthesia.\n- **Indications**: Recurrent tonsillitis (≥5 episodes/year), obstructive sleep apnea, or significant tonsillar hypertrophy.\n- **Key Risks/Complications**: Bleeding, infection, anesthesia complications, pain post-operatively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of viral tonsillitis resolve spontaneously within a week. Bacterial tonsillitis responds well to antibiotics, reducing complications. Chronic cases may require surgical intervention.\n\n### Important Complications to Watch For\n- Peritonsillar abscess\n- Dehydration due to difficulty swallowing\n- Airway obstruction\n- Rheumatic fever (post-streptococcal)\n- Post-streptococcal glomerulonephritis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough history and examination, initiate appropriate investigations, manage symptoms, and escalate care for severe cases or complications.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT for persistent symptoms, suspected complications, or if airway compromise is present.\n\n### Key Safety Considerations\nMonitor for signs of airway obstruction, especially in children. Ensure adequate hydration and pain management. Be vigilant for signs of complications such as peritonsillar abscess.\n",
+  "content": {
+    "overview": {
+      "definition": "Tonsillitis is the inflammation of the tonsils, typically due to viral or bacterial infection, while pharyngitis refers to inflammation of the pharynx, often presenting with sore throat.",
+      "epidemiology": "Tonsillitis and pharyngitis are common in children and adolescents, with peak incidence between ages 5-15. Viral causes are more prevalent, but bacterial infections, particularly Group A Streptococcus, are significant in school-aged children.",
+      "pathophysiology": "Infection leads to inflammation of the tonsils and pharynx, resulting in edema, erythema, and exudate. The immune response involves lymphoid tissue activation, which can lead to systemic symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sore throat",
+        "Difficulty swallowing (odynophagia)",
+        "Fever",
+        "Cough",
+        "Malaise",
+        "Headache",
+        "Nausea"
+      ],
+      "signs": [
+        "Enlarged tonsils",
+        "Tonsillar exudate",
+        "Fever (often >38°C)",
+        "Tender anterior cervical lymphadenopathy",
+        "Erythematous pharynx"
+      ],
+      "atypicalPresentations": [
+        "Persistent sore throat without fever",
+        "Recurrent episodes of tonsillitis",
+        "Absence of typical signs in viral infections"
+      ],
+      "redFlags": [
+        "Difficulty breathing or swallowing",
+        "Severe throat pain",
+        "High fever (>39°C)",
+        "Persistent symptoms beyond 5 days",
+        "Signs of dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Throat swab for rapid antigen detection test (RADT)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Throat culture (if RADT negative and suspicion of streptococcal infection)",
+        "Monospot test (for infectious mononucleosis)"
+      ],
+      "specialistTests": [
+        "Consider referral for sleep studies if obstructive sleep apnea is suspected due to tonsillar hypertrophy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history and physical examination. RADT or throat culture confirms streptococcal infection.",
+      "differentials": [
+        "Viral pharyngitis",
+        "Infectious mononucleosis",
+        "Epiglottitis",
+        "Peritonsillar abscess",
+        "Candidiasis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesics (e.g., paracetamol or ibuprofen) for pain relief",
+          "Hydration and rest"
+        ],
+        "secondLine": [
+          "Antibiotics (e.g., penicillin or amoxicillin for streptococcal infection)"
+        ],
+        "procedures": [
+          "Tonsillectomy (for recurrent tonsillitis or obstructive sleep apnea)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued symptomatic management with analgesics and hydration"
+        ],
+        "secondLine": [
+          "Consider referral to ENT for evaluation of chronic tonsillitis or tonsillar hypertrophy"
+        ],
+        "monitoring": [
+          "Regular follow-up for recurrent symptoms or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "500 mg TID for 10 days",
+          "sideEffects": "Nausea, diarrhea, rash, allergic reactions",
+          "notes": "First-line treatment for streptococcal tonsillitis."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Useful for symptomatic relief."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tonsillectomy",
+          "description": "Surgical removal of the tonsils, typically performed under general anesthesia.",
+          "indications": "Recurrent tonsillitis (≥5 episodes/year), obstructive sleep apnea, or significant tonsillar hypertrophy.",
+          "risks": "Bleeding, infection, anesthesia complications, pain post-operatively."
+        }
+      ]
+    },
+    "prognosis": "Most cases of viral tonsillitis resolve spontaneously within a week. Bacterial tonsillitis responds well to antibiotics, reducing complications. Chronic cases may require surgical intervention.",
+    "complications": [
+      "Peritonsillar abscess",
+      "Dehydration due to difficulty swallowing",
+      "Airway obstruction",
+      "Rheumatic fever (post-streptococcal)",
+      "Post-streptococcal glomerulonephritis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough history and examination, initiate appropriate investigations, manage symptoms, and escalate care for severe cases or complications.",
+    "escalation": "Refer to ENT for persistent symptoms, suspected complications, or if airway compromise is present.",
+    "keySafetyConsiderations": "Monitor for signs of airway obstruction, especially in children. Ensure adequate hydration and pain management. Be vigilant for signs of complications such as peritonsillar abscess."
+  }
+}

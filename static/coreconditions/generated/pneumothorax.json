@@ -1,0 +1,123 @@
+{
+  "id": "pneumothorax",
+  "name": "Pneumothorax",
+  "domains": [
+    "Respiratory",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:24:53.069875",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pneumothorax: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA pneumothorax is the presence of air in the pleural space, which can lead to lung collapse and respiratory distress.\n\n### Epidemiology\nPneumothorax is relatively common, with a higher incidence in young males (ages 15-34) and those with underlying lung disease. It can occur spontaneously or as a result of trauma or medical procedures.\n\n### Essential Pathophysiology\nAir enters the pleural space, disrupting the negative pressure that keeps the lung inflated. This can occur due to rupture of alveoli (primary spontaneous pneumothorax) or from trauma (secondary pneumothorax). The lung collapses, leading to impaired gas exchange and respiratory distress.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset of sharp chest pain\n- Shortness of breath\n- Decreased breath sounds on affected side\n\n### Key Signs\n- Hyper-resonance on percussion\n- Decreased tactile fremitus\n- Decreased breath sounds on auscultation\n\n### Atypical Presentations\n- Mild symptoms in small pneumothorax\n- Chest pain radiating to shoulder or abdomen\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Hypotension\n- Cyanosis\n- Tracheal deviation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (upright if possible)\n- Ultrasound (especially in children)\n\n### Second-line Investigations\n- CT chest (for complex cases or to confirm small pneumothorax)\n\n### Specialist Tests\n- Pleural ultrasound for guided drainage\n- Bronchoscopy (if suspecting underlying lung pathology)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and imaging findings (e.g., visible pleural line on chest X-ray).\n\n### Key Differential Diagnoses to Exclude\n- Pulmonary embolism\n- Pneumonia\n- Pleural effusion\n- Rib fracture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation for small, asymptomatic pneumothorax\n- Needle decompression for tension pneumothorax\n- Chest drain insertion for larger or symptomatic pneumothorax\n\n#### Second-line Treatments\n- Surgical intervention (e.g., VATS) for recurrent cases\n\n#### Emergency Procedures\n- Needle decompression: Insertion of a large-bore cannula into the 2nd intercostal space at the midclavicular line to relieve tension pneumothorax. Indicated in acute respiratory distress. Risks include bleeding, infection, and lung injury.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Chest tube drainage for persistent pneumothorax\n- Pleurodesis for recurrent cases\n\n#### Second-line Treatments\n- Surgical options (e.g., pleurectomy) for recurrent pneumothorax\n\n#### Monitoring Requirements\n- Regular follow-up chest X-rays to monitor resolution\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: Paracetamol 1g every 6 hours as needed; Ibuprofen 400mg every 8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment (NSAIDs)\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n#### Antibiotics (if indicated)\n- **Mechanism of Action**: Prevent infection in cases of chest drain\n- **Typical Dosing Range**: Ceftriaxone 1g IV daily or Co-amoxiclav 1.2g IV every 8 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset\n- **When to Use vs. Alternatives**: Consider local guidelines for antibiotic choice.\n\n### Procedures\n\n#### Chest drain insertion\n- **What it Involves**: Insertion of a tube into the pleural space to drain air or fluid.\n- **Indications**: Large or symptomatic pneumothorax, persistent air leak.\n- **Key Risks/Complications**: Infection, bleeding, lung injury, re-expansion pulmonary edema.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost small pneumothoraces resolve spontaneously within 1-2 weeks. Larger or recurrent pneumothoraces may require surgical intervention. Complications can include respiratory failure or re-expansion pulmonary edema.\n\n### Important Complications to Watch For\n- Recurrent pneumothorax\n- Infection (empyema)\n- Respiratory failure\n- Lung injury from procedures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, perform initial assessments, and initiate management (e.g., oxygen therapy, analgesia). They should also be familiar with the indications for referral to senior colleagues for procedures or surgical intervention.\n\n### When to Escalate to Senior/Specialist\nEscalate care for patients with severe respiratory distress, hypotension, or signs of tension pneumothorax. Consult senior medical staff or surgical teams as needed.\n\n### Key Safety Considerations\nEnsure proper monitoring of vital signs and oxygen saturation. Be aware of the potential for rapid deterioration in patients with tension pneumothorax. Maintain a high index of suspicion in at-risk populations (e.g., smokers, those with underlying lung disease).\n",
+  "content": {
+    "overview": {
+      "definition": "A pneumothorax is the presence of air in the pleural space, which can lead to lung collapse and respiratory distress.",
+      "epidemiology": "Pneumothorax is relatively common, with a higher incidence in young males (ages 15-34) and those with underlying lung disease. It can occur spontaneously or as a result of trauma or medical procedures.",
+      "pathophysiology": "Air enters the pleural space, disrupting the negative pressure that keeps the lung inflated. This can occur due to rupture of alveoli (primary spontaneous pneumothorax) or from trauma (secondary pneumothorax). The lung collapses, leading to impaired gas exchange and respiratory distress."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset of sharp chest pain",
+        "Shortness of breath",
+        "Decreased breath sounds on affected side"
+      ],
+      "signs": [
+        "Hyper-resonance on percussion",
+        "Decreased tactile fremitus",
+        "Decreased breath sounds on auscultation"
+      ],
+      "atypicalPresentations": [
+        "Mild symptoms in small pneumothorax",
+        "Chest pain radiating to shoulder or abdomen"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Hypotension",
+        "Cyanosis",
+        "Tracheal deviation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (upright if possible)",
+        "Ultrasound (especially in children)"
+      ],
+      "secondLine": [
+        "CT chest (for complex cases or to confirm small pneumothorax)"
+      ],
+      "specialistTests": [
+        "Pleural ultrasound for guided drainage",
+        "Bronchoscopy (if suspecting underlying lung pathology)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and imaging findings (e.g., visible pleural line on chest X-ray).",
+      "differentials": [
+        "Pulmonary embolism",
+        "Pneumonia",
+        "Pleural effusion",
+        "Rib fracture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation for small, asymptomatic pneumothorax",
+          "Needle decompression for tension pneumothorax",
+          "Chest drain insertion for larger or symptomatic pneumothorax"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., VATS) for recurrent cases"
+        ],
+        "procedures": [
+          "Needle decompression: Insertion of a large-bore cannula into the 2nd intercostal space at the midclavicular line to relieve tension pneumothorax. Indicated in acute respiratory distress. Risks include bleeding, infection, and lung injury."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Chest tube drainage for persistent pneumothorax",
+          "Pleurodesis for recurrent cases"
+        ],
+        "secondLine": [
+          "Surgical options (e.g., pleurectomy) for recurrent pneumothorax"
+        ],
+        "monitoring": [
+          "Regular follow-up chest X-rays to monitor resolution"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics",
+          "mechanism": "Pain relief",
+          "dosing": "Paracetamol 1g every 6 hours as needed; Ibuprofen 400mg every 8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment (NSAIDs)",
+          "notes": "Use cautiously in patients with renal impairment."
+        },
+        {
+          "name": "Antibiotics (if indicated)",
+          "mechanism": "Prevent infection in cases of chest drain",
+          "dosing": "Ceftriaxone 1g IV daily or Co-amoxiclav 1.2g IV every 8 hours",
+          "sideEffects": "Allergic reactions, gastrointestinal upset",
+          "notes": "Consider local guidelines for antibiotic choice."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Chest drain insertion",
+          "description": "Insertion of a tube into the pleural space to drain air or fluid.",
+          "indications": "Large or symptomatic pneumothorax, persistent air leak.",
+          "risks": "Infection, bleeding, lung injury, re-expansion pulmonary edema."
+        }
+      ]
+    },
+    "prognosis": "Most small pneumothoraces resolve spontaneously within 1-2 weeks. Larger or recurrent pneumothoraces may require surgical intervention. Complications can include respiratory failure or re-expansion pulmonary edema.",
+    "complications": [
+      "Recurrent pneumothorax",
+      "Infection (empyema)",
+      "Respiratory failure",
+      "Lung injury from procedures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, perform initial assessments, and initiate management (e.g., oxygen therapy, analgesia). They should also be familiar with the indications for referral to senior colleagues for procedures or surgical intervention.",
+    "escalation": "Escalate care for patients with severe respiratory distress, hypotension, or signs of tension pneumothorax. Consult senior medical staff or surgical teams as needed.",
+    "keySafetyConsiderations": "Ensure proper monitoring of vital signs and oxygen saturation. Be aware of the potential for rapid deterioration in patients with tension pneumothorax. Maintain a high index of suspicion in at-risk populations (e.g., smokers, those with underlying lung disease)."
+  }
+}

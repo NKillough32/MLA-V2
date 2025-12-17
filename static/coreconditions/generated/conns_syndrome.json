@@ -1,0 +1,128 @@
+{
+  "id": "conns_syndrome",
+  "name": "Conn?s syndrome",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:33:59.848074",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Conn?s syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nConn's syndrome, also known as primary hyperaldosteronism, is a condition characterized by excessive production of aldosterone from the adrenal glands, leading to hypertension and electrolyte imbalances.\n\n### Epidemiology\nConn's syndrome accounts for approximately 5-10% of cases of secondary hypertension. It is more common in adults aged 30-50 years and has a slight female predominance.\n\n### Essential Pathophysiology\nThe condition is primarily caused by an adrenal adenoma (in about 60-70% of cases), bilateral adrenal hyperplasia, or adrenal carcinoma. Excess aldosterone leads to sodium retention, potassium excretion, and increased blood volume, resulting in hypertension.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hypertension (often resistant to treatment)\n- Headaches\n- Fatigue\n- Muscle weakness\n- Palpitations\n\n### Key Signs\n- Elevated blood pressure\n- Hypokalemia (low potassium levels)\n- Metabolic alkalosis\n- Increased plasma aldosterone levels\n- Low plasma renin activity\n\n### Atypical Presentations\n- Asymptomatic hypertension\n- Severe hypertension in young patients\n- Hypertension with hypokalemia\n\n### Red Flags Requiring Immediate Action\n- Severe or resistant hypertension\n- Hypokalemia with muscle weakness\n- Family history of hypertension or adrenal disorders\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum electrolytes (to check for hypokalemia)\n- Plasma aldosterone concentration (PAC)\n- Plasma renin activity (PRA)\n\n### Second-line Investigations\n- Saline infusion test\n- Oral sodium loading test\n- CT scan of the adrenal glands\n\n### Specialist Tests\n- Adrenal vein sampling (to differentiate unilateral from bilateral disease)\n- Genetic testing for familial hyperaldosteronism\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by a high PAC to PRA ratio (>20) along with elevated aldosterone levels and suppressed renin levels, typically in the presence of hypokalemia.\n\n### Key Differential Diagnoses to Exclude\n- Secondary causes of hypertension (e.g., Cushing's syndrome, pheochromocytoma)\n- Renal artery stenosis\n- Liddle syndrome\n- Glucocorticoid-remediable aldosteronism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Potassium supplementation (if hypokalemic)\n- Antihypertensive medications (e.g., spironolactone)\n\n#### Second-line Treatments\n- Consider hospitalization for severe hypertension or symptomatic hypokalemia\n\n#### Emergency Procedures\n- None typically required acutely, but monitor electrolytes and blood pressure closely.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical adrenalectomy for unilateral adenoma\n- Medical management with aldosterone antagonists (e.g., spironolactone)\n\n#### Second-line Treatments\n- Consider eplerenone if spironolactone is not tolerated\n\n#### Monitoring Requirements\n- Regular monitoring of blood pressure and electrolytes (especially potassium)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Spironolactone\n- **Mechanism of Action**: Aldosterone antagonist that promotes sodium excretion and potassium retention.\n- **Typical Dosing Range**: Starting dose: 25 mg daily, can be increased to 100 mg daily based on response.\n- **Key Side Effects/Contraindications**: Hyperkalemia, gynecomastia, menstrual irregularities, gastrointestinal disturbances.\n- **When to Use vs. Alternatives**: Monitor potassium levels regularly; contraindicated in renal impairment.\n\n#### Eplerenone\n- **Mechanism of Action**: Selective aldosterone receptor antagonist with fewer side effects than spironolactone.\n- **Typical Dosing Range**: Starting dose: 50 mg daily, can be increased to 100 mg daily.\n- **Key Side Effects/Contraindications**: Hyperkalemia, dizziness, fatigue.\n- **When to Use vs. Alternatives**: Less risk of gynecomastia compared to spironolactone.\n\n### Procedures\n\n#### Adrenalectomy\n- **What it Involves**: Surgical removal of the adrenal gland producing excess aldosterone.\n- **Indications**: Unilateral adrenal adenoma confirmed by imaging and biochemical tests.\n- **Key Risks/Complications**: Surgical risks include bleeding, infection, adrenal insufficiency post-surgery, and complications related to anesthesia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis is generally good. Surgical patients often experience normalization of blood pressure and resolution of hypokalemia. However, untreated Conn's syndrome can lead to cardiovascular complications such as stroke and heart disease.\n\n### Important Complications to Watch For\n- Hypertensive crisis\n- Cardiovascular disease (e.g., heart failure, myocardial infarction)\n- Kidney damage due to chronic hypertension\n- Hypokalemia-related complications (e.g., arrhythmias)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of Conn's syndrome, initiate appropriate investigations, manage acute complications, and refer to specialists for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist for suspected Conn's syndrome, especially in cases of resistant hypertension or significant electrolyte imbalances. Escalate care for severe hypertension or symptomatic hypokalemia.\n\n### Key Safety Considerations\nMonitor blood pressure and electrolytes closely, especially potassium levels, during treatment. Be aware of the potential for hyperkalemia with potassium-sparing diuretics and ensure appropriate follow-up for patients undergoing adrenal surgery.\n",
+  "content": {
+    "overview": {
+      "definition": "Conn's syndrome, also known as primary hyperaldosteronism, is a condition characterized by excessive production of aldosterone from the adrenal glands, leading to hypertension and electrolyte imbalances.",
+      "epidemiology": "Conn's syndrome accounts for approximately 5-10% of cases of secondary hypertension. It is more common in adults aged 30-50 years and has a slight female predominance.",
+      "pathophysiology": "The condition is primarily caused by an adrenal adenoma (in about 60-70% of cases), bilateral adrenal hyperplasia, or adrenal carcinoma. Excess aldosterone leads to sodium retention, potassium excretion, and increased blood volume, resulting in hypertension."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hypertension (often resistant to treatment)",
+        "Headaches",
+        "Fatigue",
+        "Muscle weakness",
+        "Palpitations"
+      ],
+      "signs": [
+        "Elevated blood pressure",
+        "Hypokalemia (low potassium levels)",
+        "Metabolic alkalosis",
+        "Increased plasma aldosterone levels",
+        "Low plasma renin activity"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hypertension",
+        "Severe hypertension in young patients",
+        "Hypertension with hypokalemia"
+      ],
+      "redFlags": [
+        "Severe or resistant hypertension",
+        "Hypokalemia with muscle weakness",
+        "Family history of hypertension or adrenal disorders"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum electrolytes (to check for hypokalemia)",
+        "Plasma aldosterone concentration (PAC)",
+        "Plasma renin activity (PRA)"
+      ],
+      "secondLine": [
+        "Saline infusion test",
+        "Oral sodium loading test",
+        "CT scan of the adrenal glands"
+      ],
+      "specialistTests": [
+        "Adrenal vein sampling (to differentiate unilateral from bilateral disease)",
+        "Genetic testing for familial hyperaldosteronism"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by a high PAC to PRA ratio (>20) along with elevated aldosterone levels and suppressed renin levels, typically in the presence of hypokalemia.",
+      "differentials": [
+        "Secondary causes of hypertension (e.g., Cushing's syndrome, pheochromocytoma)",
+        "Renal artery stenosis",
+        "Liddle syndrome",
+        "Glucocorticoid-remediable aldosteronism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Potassium supplementation (if hypokalemic)",
+          "Antihypertensive medications (e.g., spironolactone)"
+        ],
+        "secondLine": [
+          "Consider hospitalization for severe hypertension or symptomatic hypokalemia"
+        ],
+        "procedures": [
+          "None typically required acutely, but monitor electrolytes and blood pressure closely."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical adrenalectomy for unilateral adenoma",
+          "Medical management with aldosterone antagonists (e.g., spironolactone)"
+        ],
+        "secondLine": [
+          "Consider eplerenone if spironolactone is not tolerated"
+        ],
+        "monitoring": [
+          "Regular monitoring of blood pressure and electrolytes (especially potassium)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Spironolactone",
+          "mechanism": "Aldosterone antagonist that promotes sodium excretion and potassium retention.",
+          "dosing": "Starting dose: 25 mg daily, can be increased to 100 mg daily based on response.",
+          "sideEffects": "Hyperkalemia, gynecomastia, menstrual irregularities, gastrointestinal disturbances.",
+          "notes": "Monitor potassium levels regularly; contraindicated in renal impairment."
+        },
+        {
+          "name": "Eplerenone",
+          "mechanism": "Selective aldosterone receptor antagonist with fewer side effects than spironolactone.",
+          "dosing": "Starting dose: 50 mg daily, can be increased to 100 mg daily.",
+          "sideEffects": "Hyperkalemia, dizziness, fatigue.",
+          "notes": "Less risk of gynecomastia compared to spironolactone."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Adrenalectomy",
+          "description": "Surgical removal of the adrenal gland producing excess aldosterone.",
+          "indications": "Unilateral adrenal adenoma confirmed by imaging and biochemical tests.",
+          "risks": "Surgical risks include bleeding, infection, adrenal insufficiency post-surgery, and complications related to anesthesia."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis is generally good. Surgical patients often experience normalization of blood pressure and resolution of hypokalemia. However, untreated Conn's syndrome can lead to cardiovascular complications such as stroke and heart disease.",
+    "complications": [
+      "Hypertensive crisis",
+      "Cardiovascular disease (e.g., heart failure, myocardial infarction)",
+      "Kidney damage due to chronic hypertension",
+      "Hypokalemia-related complications (e.g., arrhythmias)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of Conn's syndrome, initiate appropriate investigations, manage acute complications, and refer to specialists for further evaluation and treatment.",
+    "escalation": "Refer to an endocrinologist for suspected Conn's syndrome, especially in cases of resistant hypertension or significant electrolyte imbalances. Escalate care for severe hypertension or symptomatic hypokalemia.",
+    "keySafetyConsiderations": "Monitor blood pressure and electrolytes closely, especially potassium levels, during treatment. Be aware of the potential for hyperkalemia with potassium-sparing diuretics and ensure appropriate follow-up for patients undergoing adrenal surgery."
+  }
+}

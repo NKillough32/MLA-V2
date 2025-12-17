@@ -1,0 +1,132 @@
+{
+  "id": "acute_pericarditis",
+  "name": "Acute pericarditis?",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:12:00.286898",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute pericarditis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute pericarditis is an inflammation of the pericardium, the fibrous sac surrounding the heart, characterized by chest pain and pericardial effusion.\n\n### Epidemiology\nAcute pericarditis occurs in approximately 5-10% of patients presenting with chest pain. It is more common in young adults and males, with a peak incidence between 20-50 years of age.\n\n### Essential Pathophysiology\nThe inflammation of the pericardium can be due to infectious agents (viral, bacterial, fungal), autoimmune diseases, post-myocardial infarction (Dressler's syndrome), or idiopathic causes. This inflammation leads to increased vascular permeability, resulting in fluid accumulation and potential effusion.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sharp, pleuritic chest pain that may improve when sitting forward\n- Fever\n- Dyspnea\n- Palpitations\n\n### Key Signs\n- Pericardial friction rub on auscultation\n- Signs of heart failure (if effusion is significant)\n- Tachycardia\n\n### Atypical Presentations\n- Abdominal pain\n- Shoulder pain\n- Fatigue\n\n### Red Flags Requiring Immediate Action\n- Severe chest pain with hemodynamic instability\n- Signs of cardiac tamponade (hypotension, distended neck veins, muffled heart sounds)\n- Persistent fever or worsening symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- Complete blood count (CBC)\n- C-reactive protein (CRP)\n\n### Second-line Investigations\n- Echocardiogram\n- Cardiac biomarkers (troponin)\n- Viral serologies (e.g., Coxsackievirus, Echovirus)\n\n### Specialist Tests\n- CT or MRI of the chest (if effusion or other complications are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically based on the presence of at least two of the following: chest pain, pericardial friction rub, typical ECG changes (e.g., ST elevation), and pericardial effusion on imaging.\n\n### Key Differential Diagnoses to Exclude\n- Myocardial infarction\n- Pulmonary embolism\n- Aortic dissection\n- Pneumonia\n- Esophageal rupture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs (e.g., ibuprofen)\n- Colchicine\n\n#### Second-line Treatments\n- Corticosteroids (if symptoms persist despite NSAIDs)\n\n#### Emergency Procedures\n- Pericardiocentesis (for significant effusion or cardiac tamponade)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Colchicine for recurrent pericarditis\n\n#### Second-line Treatments\n- Long-term NSAIDs or corticosteroids if needed\n\n#### Monitoring Requirements\n- Regular follow-up for symptom resolution and side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor reducing inflammation and pain\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Monitor for gastrointestinal side effects; consider co-prescribing a proton pump inhibitor.\n\n#### Colchicine\n- **Mechanism of Action**: Inhibits microtubule polymerization, reducing inflammation\n- **Typical Dosing Range**: 1.2 mg initially, followed by 0.6 mg once or twice daily for 3 months\n- **Key Side Effects/Contraindications**: Diarrhea, nausea, abdominal pain\n- **When to Use vs. Alternatives**: Effective for preventing recurrences.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory effects, suppressing immune response\n- **Typical Dosing Range**: Prednisone 0.2-0.5 mg/kg/day, tapering as symptoms improve\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis\n- **When to Use vs. Alternatives**: Use as a last resort due to side effects.\n\n### Procedures\n\n#### Pericardiocentesis\n- **What it Involves**: Needle drainage of pericardial fluid to relieve pressure\n- **Indications**: Cardiac tamponade, large symptomatic effusion\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection, arrhythmias\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for acute pericarditis is generally good, with most patients responding well to treatment. However, recurrent pericarditis can occur in 15-30% of cases.\n\n### Important Complications to Watch For\n- Cardiac tamponade\n- Chronic pericarditis\n- Constrictive pericarditis\n- Recurrent pericarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, order appropriate investigations, initiate treatment, and refer to cardiology for complex cases or complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if there are signs of cardiac tamponade, persistent symptoms despite treatment, or if the patient is unstable.\n\n### Key Safety Considerations\nMonitor for signs of cardiac tamponade, especially in patients with significant effusion. Be cautious with NSAIDs in patients with renal impairment or gastrointestinal issues.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute pericarditis is an inflammation of the pericardium, the fibrous sac surrounding the heart, characterized by chest pain and pericardial effusion.",
+      "epidemiology": "Acute pericarditis occurs in approximately 5-10% of patients presenting with chest pain. It is more common in young adults and males, with a peak incidence between 20-50 years of age.",
+      "pathophysiology": "The inflammation of the pericardium can be due to infectious agents (viral, bacterial, fungal), autoimmune diseases, post-myocardial infarction (Dressler's syndrome), or idiopathic causes. This inflammation leads to increased vascular permeability, resulting in fluid accumulation and potential effusion."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sharp, pleuritic chest pain that may improve when sitting forward",
+        "Fever",
+        "Dyspnea",
+        "Palpitations"
+      ],
+      "signs": [
+        "Pericardial friction rub on auscultation",
+        "Signs of heart failure (if effusion is significant)",
+        "Tachycardia"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain",
+        "Shoulder pain",
+        "Fatigue"
+      ],
+      "redFlags": [
+        "Severe chest pain with hemodynamic instability",
+        "Signs of cardiac tamponade (hypotension, distended neck veins, muffled heart sounds)",
+        "Persistent fever or worsening symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "Complete blood count (CBC)",
+        "C-reactive protein (CRP)"
+      ],
+      "secondLine": [
+        "Echocardiogram",
+        "Cardiac biomarkers (troponin)",
+        "Viral serologies (e.g., Coxsackievirus, Echovirus)"
+      ],
+      "specialistTests": [
+        "CT or MRI of the chest (if effusion or other complications are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically based on the presence of at least two of the following: chest pain, pericardial friction rub, typical ECG changes (e.g., ST elevation), and pericardial effusion on imaging.",
+      "differentials": [
+        "Myocardial infarction",
+        "Pulmonary embolism",
+        "Aortic dissection",
+        "Pneumonia",
+        "Esophageal rupture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs (e.g., ibuprofen)",
+          "Colchicine"
+        ],
+        "secondLine": [
+          "Corticosteroids (if symptoms persist despite NSAIDs)"
+        ],
+        "procedures": [
+          "Pericardiocentesis (for significant effusion or cardiac tamponade)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Colchicine for recurrent pericarditis"
+        ],
+        "secondLine": [
+          "Long-term NSAIDs or corticosteroids if needed"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom resolution and side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor reducing inflammation and pain",
+          "dosing": "400-800 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Monitor for gastrointestinal side effects; consider co-prescribing a proton pump inhibitor."
+        },
+        {
+          "name": "Colchicine",
+          "mechanism": "Inhibits microtubule polymerization, reducing inflammation",
+          "dosing": "1.2 mg initially, followed by 0.6 mg once or twice daily for 3 months",
+          "sideEffects": "Diarrhea, nausea, abdominal pain",
+          "notes": "Effective for preventing recurrences."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory effects, suppressing immune response",
+          "dosing": "Prednisone 0.2-0.5 mg/kg/day, tapering as symptoms improve",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis",
+          "notes": "Use as a last resort due to side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pericardiocentesis",
+          "description": "Needle drainage of pericardial fluid to relieve pressure",
+          "indications": "Cardiac tamponade, large symptomatic effusion",
+          "risks": "Pneumothorax, bleeding, infection, arrhythmias"
+        }
+      ]
+    },
+    "prognosis": "The prognosis for acute pericarditis is generally good, with most patients responding well to treatment. However, recurrent pericarditis can occur in 15-30% of cases.",
+    "complications": [
+      "Cardiac tamponade",
+      "Chronic pericarditis",
+      "Constrictive pericarditis",
+      "Recurrent pericarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, order appropriate investigations, initiate treatment, and refer to cardiology for complex cases or complications.",
+    "escalation": "Refer to a senior clinician if there are signs of cardiac tamponade, persistent symptoms despite treatment, or if the patient is unstable.",
+    "keySafetyConsiderations": "Monitor for signs of cardiac tamponade, especially in patients with significant effusion. Be cautious with NSAIDs in patients with renal impairment or gastrointestinal issues."
+  }
+}

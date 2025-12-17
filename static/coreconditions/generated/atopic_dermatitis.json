@@ -1,0 +1,138 @@
+{
+  "id": "atopic_dermatitis",
+  "name": "Atopic dermatitis",
+  "domains": [
+    "Dermatology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:14:58.803733",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Atopic dermatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAtopic dermatitis (AD) is a chronic inflammatory skin condition characterized by dry, itchy skin and eczematous lesions. It is commonly seen in children but can persist into adulthood.\n\n### Epidemiology\nAD affects approximately 15-20% of children and 1-3% of adults worldwide. It often presents in early childhood, with a significant number of cases developing before the age of 5.\n\n### Essential Pathophysiology\nThe pathophysiology of AD involves a complex interplay of genetic, immunological, and environmental factors. Key features include a defective skin barrier (due to mutations in the filaggrin gene), dysregulation of the immune system (increased Th2 cytokines), and environmental triggers that exacerbate the condition.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching (pruritus)\n- Dry skin\n- Red, inflamed patches\n- Thickened skin (lichenification)\n- Oozing or crusting lesions\n\n### Key Signs\n- Erythematous patches\n- Scaling\n- Excoriations\n- Lichenification\n- Possible secondary infections\n\n### Atypical Presentations\n- Nummular eczema (coin-shaped lesions)\n- Seborrheic dermatitis-like presentation\n- Acneiform eruptions in adults\n\n### Red Flags Requiring Immediate Action\n- Severe itching affecting sleep\n- Signs of secondary infection (e.g., fever, increased redness, pus)\n- Worsening symptoms despite treatment\n- Development of new lesions in adulthood\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n\n### Second-line Investigations\n- Skin prick tests for allergens\n- Patch testing for contact dermatitis\n\n### Specialist Tests\n- Skin biopsy (if diagnosis is uncertain)\n- Serum IgE levels (to assess atopy)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of pruritus and characteristic morphology and distribution of lesions. The Hanifin and Rajka criteria can be used for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Contact dermatitis\n- Seborrheic dermatitis\n- Psoriasis\n- Scabies\n- Impetigo\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical corticosteroids (e.g., hydrocortisone 1% cream)\n- Emollients (e.g., paraffin-based creams)\n\n#### Second-line Treatments\n- Topical calcineurin inhibitors (e.g., tacrolimus ointment)\n- Antihistamines for itching\n\n#### Emergency Procedures\n- Wet wrap therapy for severe flares\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular use of emollients\n- Education on skin care and trigger avoidance\n\n#### Second-line Treatments\n- Phototherapy (narrowband UVB)\n- Systemic immunosuppressants (e.g., cyclosporine)\n\n#### Monitoring Requirements\n- Regular follow-up to assess treatment efficacy and adherence\n- Monitoring for side effects of systemic treatments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydrocortisone\n- **Mechanism of Action**: Anti-inflammatory, reduces immune response\n- **Typical Dosing Range**: Apply to affected areas 1-2 times daily\n- **Key Side Effects/Contraindications**: Skin thinning, telangiectasia with prolonged use\n- **When to Use vs. Alternatives**: Use lowest potency necessary for the shortest duration.\n\n#### Tacrolimus\n- **Mechanism of Action**: Calcineurin inhibitor, reduces T-cell activation\n- **Typical Dosing Range**: Apply to affected areas twice daily\n- **Key Side Effects/Contraindications**: Burning sensation, increased risk of skin infections\n- **When to Use vs. Alternatives**: Avoid in children under 2 years.\n\n#### Cyclosporine\n- **Mechanism of Action**: Immunosuppressant, inhibits T-cell activation\n- **Typical Dosing Range**: 3-5 mg/kg/day in divided doses\n- **Key Side Effects/Contraindications**: Hypertension, nephrotoxicity, increased risk of infections\n- **When to Use vs. Alternatives**: Monitor renal function and blood pressure.\n\n### Procedures\n\n#### Wet wrap therapy\n- **What it Involves**: Application of wet dressings over topical treatments to enhance absorption and reduce inflammation\n- **Indications**: Severe flares of atopic dermatitis not responding to topical treatments\n- **Key Risks/Complications**: Risk of skin maceration, infection if not done properly\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nAtopic dermatitis is a chronic condition with periods of exacerbation and remission. Many children outgrow the condition, but some may continue to have symptoms into adulthood. Early and effective management can improve quality of life.\n\n### Important Complications to Watch For\n- Secondary bacterial infections (e.g., Staphylococcus aureus)\n- Eczema herpeticum (superinfection with herpes simplex virus)\n- Sleep disturbances due to itching\n- Psychosocial impact (anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize and manage mild to moderate cases of atopic dermatitis, provide education on skin care, and escalate care for severe cases or complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a dermatologist if: 1) Symptoms are severe or unresponsive to first-line treatments, 2) There are signs of secondary infection, 3) There is significant psychosocial impact, or 4) Systemic therapy is being considered.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially with topical corticosteroids. Educate patients on the importance of regular emollient use to prevent flares and the potential side effects of long-term topical corticosteroid use.\n",
+  "content": {
+    "overview": {
+      "definition": "Atopic dermatitis (AD) is a chronic inflammatory skin condition characterized by dry, itchy skin and eczematous lesions. It is commonly seen in children but can persist into adulthood.",
+      "epidemiology": "AD affects approximately 15-20% of children and 1-3% of adults worldwide. It often presents in early childhood, with a significant number of cases developing before the age of 5.",
+      "pathophysiology": "The pathophysiology of AD involves a complex interplay of genetic, immunological, and environmental factors. Key features include a defective skin barrier (due to mutations in the filaggrin gene), dysregulation of the immune system (increased Th2 cytokines), and environmental triggers that exacerbate the condition."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching (pruritus)",
+        "Dry skin",
+        "Red, inflamed patches",
+        "Thickened skin (lichenification)",
+        "Oozing or crusting lesions"
+      ],
+      "signs": [
+        "Erythematous patches",
+        "Scaling",
+        "Excoriations",
+        "Lichenification",
+        "Possible secondary infections"
+      ],
+      "atypicalPresentations": [
+        "Nummular eczema (coin-shaped lesions)",
+        "Seborrheic dermatitis-like presentation",
+        "Acneiform eruptions in adults"
+      ],
+      "redFlags": [
+        "Severe itching affecting sleep",
+        "Signs of secondary infection (e.g., fever, increased redness, pus)",
+        "Worsening symptoms despite treatment",
+        "Development of new lesions in adulthood"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination"
+      ],
+      "secondLine": [
+        "Skin prick tests for allergens",
+        "Patch testing for contact dermatitis"
+      ],
+      "specialistTests": [
+        "Skin biopsy (if diagnosis is uncertain)",
+        "Serum IgE levels (to assess atopy)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of pruritus and characteristic morphology and distribution of lesions. The Hanifin and Rajka criteria can be used for diagnosis.",
+      "differentials": [
+        "Contact dermatitis",
+        "Seborrheic dermatitis",
+        "Psoriasis",
+        "Scabies",
+        "Impetigo"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical corticosteroids (e.g., hydrocortisone 1% cream)",
+          "Emollients (e.g., paraffin-based creams)"
+        ],
+        "secondLine": [
+          "Topical calcineurin inhibitors (e.g., tacrolimus ointment)",
+          "Antihistamines for itching"
+        ],
+        "procedures": [
+          "Wet wrap therapy for severe flares"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular use of emollients",
+          "Education on skin care and trigger avoidance"
+        ],
+        "secondLine": [
+          "Phototherapy (narrowband UVB)",
+          "Systemic immunosuppressants (e.g., cyclosporine)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess treatment efficacy and adherence",
+          "Monitoring for side effects of systemic treatments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydrocortisone",
+          "mechanism": "Anti-inflammatory, reduces immune response",
+          "dosing": "Apply to affected areas 1-2 times daily",
+          "sideEffects": "Skin thinning, telangiectasia with prolonged use",
+          "notes": "Use lowest potency necessary for the shortest duration."
+        },
+        {
+          "name": "Tacrolimus",
+          "mechanism": "Calcineurin inhibitor, reduces T-cell activation",
+          "dosing": "Apply to affected areas twice daily",
+          "sideEffects": "Burning sensation, increased risk of skin infections",
+          "notes": "Avoid in children under 2 years."
+        },
+        {
+          "name": "Cyclosporine",
+          "mechanism": "Immunosuppressant, inhibits T-cell activation",
+          "dosing": "3-5 mg/kg/day in divided doses",
+          "sideEffects": "Hypertension, nephrotoxicity, increased risk of infections",
+          "notes": "Monitor renal function and blood pressure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wet wrap therapy",
+          "description": "Application of wet dressings over topical treatments to enhance absorption and reduce inflammation",
+          "indications": "Severe flares of atopic dermatitis not responding to topical treatments",
+          "risks": "Risk of skin maceration, infection if not done properly"
+        }
+      ]
+    },
+    "prognosis": "Atopic dermatitis is a chronic condition with periods of exacerbation and remission. Many children outgrow the condition, but some may continue to have symptoms into adulthood. Early and effective management can improve quality of life.",
+    "complications": [
+      "Secondary bacterial infections (e.g., Staphylococcus aureus)",
+      "Eczema herpeticum (superinfection with herpes simplex virus)",
+      "Sleep disturbances due to itching",
+      "Psychosocial impact (anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize and manage mild to moderate cases of atopic dermatitis, provide education on skin care, and escalate care for severe cases or complications.",
+    "escalation": "Refer to a dermatologist if: 1) Symptoms are severe or unresponsive to first-line treatments, 2) There are signs of secondary infection, 3) There is significant psychosocial impact, or 4) Systemic therapy is being considered.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially with topical corticosteroids. Educate patients on the importance of regular emollient use to prevent flares and the potential side effects of long-term topical corticosteroid use."
+  }
+}

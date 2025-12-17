@@ -1,0 +1,111 @@
+{
+  "id": "fibroadenoma",
+  "name": "Fibroadenoma",
+  "domains": [
+    "Breast"
+  ],
+  "generatedAt": "2025-12-17T21:20:18.487936",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Fibroadenoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFibroadenoma is a benign breast tumor composed of glandular and stromal tissue, commonly found in young women.\n\n### Epidemiology\nFibroadenomas are the most common benign breast tumors, particularly prevalent in women aged 15-35 years, with a higher incidence in African American women.\n\n### Essential Pathophysiology\nThe exact cause of fibroadenomas is not fully understood, but they are thought to be influenced by hormonal changes, particularly estrogen, leading to proliferation of breast tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless breast lump\n- Change in breast shape or size\n- Possible tenderness\n\n### Key Signs\n- Mobile, firm, and well-defined mass on examination\n- No associated lymphadenopathy\n- Normal overlying skin\n\n### Atypical Presentations\n- Multiple fibroadenomas\n- Giant fibroadenomas (larger than 5 cm)\n\n### Red Flags Requiring Immediate Action\n- Lump that is hard and fixed\n- Nipple discharge (especially bloody)\n- Skin changes (dimpling, ulceration)\n- Lump in a male patient\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical breast examination\n- Ultrasound of the breast\n\n### Second-line Investigations\n- Mammography (especially in women over 30)\n- Fine needle aspiration (FNA) cytology\n\n### Specialist Tests\n- Core needle biopsy\n- Excisional biopsy if diagnosis is uncertain or for large lesions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically made based on clinical examination and imaging findings, with confirmation via biopsy if necessary.\n\n### Key Differential Diagnoses to Exclude\n- Breast cyst\n- Phyllodes tumor\n- Breast cancer\n- Lipoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and reassurance for asymptomatic fibroadenomas\n\n#### Second-line Treatments\n- Surgical excision for symptomatic or enlarging lesions\n\n#### Emergency Procedures\n- Excisional biopsy for definitive diagnosis and removal of the tumor\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with clinical examination and imaging every 6-12 months\n\n#### Second-line Treatments\n- Surgical intervention if there are changes in size or symptoms\n\n#### Monitoring Requirements\n- Follow-up imaging to assess for changes in size or characteristics of the fibroadenoma\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics (e.g., paracetamol)\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity in overdose\n- **When to Use vs. Alternatives**: Used for symptomatic relief if the fibroadenoma is tender.\n\n### Procedures\n\n#### Excisional biopsy\n- **What it Involves**: Surgical removal of the fibroadenoma for both diagnosis and treatment.\n- **Indications**: Symptomatic fibroadenomas, large lesions, or those with uncertain diagnosis.\n- **Key Risks/Complications**: Scarring, infection, changes in breast shape or sensation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nFibroadenomas are benign and typically do not increase the risk of breast cancer. Most remain stable or regress over time.\n\n### Important Complications to Watch For\n- Rarely, fibroadenomas can undergo changes that mimic malignancy, leading to unnecessary interventions.\n- Surgical complications such as infection or scarring.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough breast examinations, recognize the characteristics of fibroadenomas, and provide appropriate reassurance and follow-up care. They should also be aware of when to escalate care to a specialist.\n\n### When to Escalate to Senior/Specialist\nRefer to a breast specialist if there are concerning features on examination, such as a fixed mass, or if the patient has significant anxiety about the lump.\n\n### Key Safety Considerations\nEnsure proper documentation of findings and patient education regarding the benign nature of fibroadenomas. Monitor for any changes in the lump and educate patients on when to seek further medical advice.\n",
+  "content": {
+    "overview": {
+      "definition": "Fibroadenoma is a benign breast tumor composed of glandular and stromal tissue, commonly found in young women.",
+      "epidemiology": "Fibroadenomas are the most common benign breast tumors, particularly prevalent in women aged 15-35 years, with a higher incidence in African American women.",
+      "pathophysiology": "The exact cause of fibroadenomas is not fully understood, but they are thought to be influenced by hormonal changes, particularly estrogen, leading to proliferation of breast tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless breast lump",
+        "Change in breast shape or size",
+        "Possible tenderness"
+      ],
+      "signs": [
+        "Mobile, firm, and well-defined mass on examination",
+        "No associated lymphadenopathy",
+        "Normal overlying skin"
+      ],
+      "atypicalPresentations": [
+        "Multiple fibroadenomas",
+        "Giant fibroadenomas (larger than 5 cm)"
+      ],
+      "redFlags": [
+        "Lump that is hard and fixed",
+        "Nipple discharge (especially bloody)",
+        "Skin changes (dimpling, ulceration)",
+        "Lump in a male patient"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical breast examination",
+        "Ultrasound of the breast"
+      ],
+      "secondLine": [
+        "Mammography (especially in women over 30)",
+        "Fine needle aspiration (FNA) cytology"
+      ],
+      "specialistTests": [
+        "Core needle biopsy",
+        "Excisional biopsy if diagnosis is uncertain or for large lesions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically made based on clinical examination and imaging findings, with confirmation via biopsy if necessary.",
+      "differentials": [
+        "Breast cyst",
+        "Phyllodes tumor",
+        "Breast cancer",
+        "Lipoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and reassurance for asymptomatic fibroadenomas"
+        ],
+        "secondLine": [
+          "Surgical excision for symptomatic or enlarging lesions"
+        ],
+        "procedures": [
+          "Excisional biopsy for definitive diagnosis and removal of the tumor"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with clinical examination and imaging every 6-12 months"
+        ],
+        "secondLine": [
+          "Surgical intervention if there are changes in size or symptoms"
+        ],
+        "monitoring": [
+          "Follow-up imaging to assess for changes in size or characteristics of the fibroadenoma"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics (e.g., paracetamol)",
+          "mechanism": "Pain relief",
+          "dosing": "500-1000 mg every 4-6 hours as needed",
+          "sideEffects": "Nausea, liver toxicity in overdose",
+          "notes": "Used for symptomatic relief if the fibroadenoma is tender."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Excisional biopsy",
+          "description": "Surgical removal of the fibroadenoma for both diagnosis and treatment.",
+          "indications": "Symptomatic fibroadenomas, large lesions, or those with uncertain diagnosis.",
+          "risks": "Scarring, infection, changes in breast shape or sensation."
+        }
+      ]
+    },
+    "prognosis": "Fibroadenomas are benign and typically do not increase the risk of breast cancer. Most remain stable or regress over time.",
+    "complications": [
+      "Rarely, fibroadenomas can undergo changes that mimic malignancy, leading to unnecessary interventions.",
+      "Surgical complications such as infection or scarring."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough breast examinations, recognize the characteristics of fibroadenomas, and provide appropriate reassurance and follow-up care. They should also be aware of when to escalate care to a specialist.",
+    "escalation": "Refer to a breast specialist if there are concerning features on examination, such as a fixed mass, or if the patient has significant anxiety about the lump.",
+    "keySafetyConsiderations": "Ensure proper documentation of findings and patient education regarding the benign nature of fibroadenomas. Monitor for any changes in the lump and educate patients on when to seek further medical advice."
+  }
+}

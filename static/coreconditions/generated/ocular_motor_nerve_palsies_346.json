@@ -1,0 +1,131 @@
+{
+  "id": "ocular_motor_nerve_palsies_346",
+  "name": "Ocular motor nerve palsies (3,4,6)",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:45:40.726086",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ocular motor nerve palsies (3,4,6): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOcular motor nerve palsies refer to dysfunction of the cranial nerves III (oculomotor), IV (trochlear), and VI (abducens), which control eye movements. This can lead to diplopia (double vision), ptosis (drooping eyelid), and misalignment of the eyes.\n\n### Epidemiology\nOcular motor nerve palsies can occur at any age but are more common in older adults. The incidence is approximately 11-20 per 100,000 people per year, with a higher prevalence in those with vascular risk factors such as diabetes and hypertension.\n\n### Essential Pathophysiology\nThe pathophysiology varies depending on the cause. Common causes include vascular ischemia (most common for CN III), trauma, tumors, and demyelinating diseases. Ischemic CN III palsy typically spares the pupil, while compressive lesions often involve the pupil.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Diplopia (double vision)\n- Ptosis (drooping eyelid)\n- Difficulty with eye movements\n- Blurred vision\n\n### Key Signs\n- Strabismus (misalignment of the eyes)\n- Limited eye movement in specific directions\n- Pupil involvement (dilated or non-reactive in CN III palsy)\n- Asymmetry of eyelid position\n\n### Atypical Presentations\n- Sudden onset of diplopia without headache\n- Pupil-sparing CN III palsy in a young patient\n\n### Red Flags Requiring Immediate Action\n- Acute onset of diplopia with headache (possible intracranial hemorrhage)\n- Pupil involvement in CN III palsy (possible compressive lesion)\n- Neurological deficits (suggesting a central cause)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination (including cranial nerve assessment)\n- Visual acuity testing\n- Pupil examination\n\n### Second-line Investigations\n- CT scan of the head (to rule out mass lesions)\n- MRI of the brain and orbit (if indicated)\n\n### Specialist Tests\n- Lumbar puncture (if meningitis or other CNS pathology is suspected)\n- Blood tests (to check for diabetes, thyroid function, etc.)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the history and examination findings. Imaging may be required to identify underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Thyroid eye disease\n- Myasthenia gravis\n- Intracranial aneurysm\n- Multiple sclerosis\n- Trauma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and reassurance (if benign cause)\n- Referral to ophthalmology for assessment\n\n#### Second-line Treatments\n- Consider corticosteroids if inflammatory cause suspected\n\n#### Emergency Procedures\n- Prism glasses for symptomatic relief of diplopia\n- Botulinum toxin injection for strabismus management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ocular motility exercises\n- Prism glasses for diplopia management\n\n#### Second-line Treatments\n- Surgical intervention for strabismus (if persistent)\n\n#### Monitoring Requirements\n- Regular follow-up with ophthalmology to assess progression or resolution\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: Prednisone 40-60 mg daily, tapering as per response\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes exacerbation, osteoporosis\n- **When to Use vs. Alternatives**: Consider in cases of inflammatory causes like Tolosa-Hunt syndrome.\n\n#### Botulinum toxin\n- **Mechanism of Action**: Paralysis of the extraocular muscles to realign the eyes\n- **Typical Dosing Range**: Varies based on muscle targeted; typically 1-5 units per muscle\n- **Key Side Effects/Contraindications**: Ptosis, diplopia, dry eye\n- **When to Use vs. Alternatives**: Used for symptomatic relief in chronic cases.\n\n### Procedures\n\n#### Prism glasses\n- **What it Involves**: Optical devices that bend light to align images seen by each eye\n- **Indications**: Used for symptomatic relief of diplopia\n- **Key Risks/Complications**: May not fully resolve diplopia; requires adjustment period.\n\n#### Strabismus surgery\n- **What it Involves**: Surgical realignment of the extraocular muscles\n- **Indications**: Persistent strabismus despite conservative management\n- **Key Risks/Complications**: Infection, overcorrection/undercorrection, scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies based on the underlying cause. Vascular causes often resolve spontaneously, while compressive lesions may require surgical intervention. Chronic cases may lead to persistent diplopia or strabismus.\n\n### Important Complications to Watch For\n- Persistent diplopia\n- Amblyopia (in children)\n- Psychosocial impact due to visual disturbances\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, and refer appropriately to ophthalmology or neurology. They should also provide patient education and reassurance.\n\n### When to Escalate to Senior/Specialist\nEscalate to senior medical staff if there are red flags present, such as acute onset with neurological deficits or pupil involvement in CN III palsy.\n\n### Key Safety Considerations\nEnsure timely referral for any acute presentations, monitor for signs of increased intracranial pressure, and provide appropriate follow-up for chronic cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Ocular motor nerve palsies refer to dysfunction of the cranial nerves III (oculomotor), IV (trochlear), and VI (abducens), which control eye movements. This can lead to diplopia (double vision), ptosis (drooping eyelid), and misalignment of the eyes.",
+      "epidemiology": "Ocular motor nerve palsies can occur at any age but are more common in older adults. The incidence is approximately 11-20 per 100,000 people per year, with a higher prevalence in those with vascular risk factors such as diabetes and hypertension.",
+      "pathophysiology": "The pathophysiology varies depending on the cause. Common causes include vascular ischemia (most common for CN III), trauma, tumors, and demyelinating diseases. Ischemic CN III palsy typically spares the pupil, while compressive lesions often involve the pupil."
+    },
+    "recognition": {
+      "symptoms": [
+        "Diplopia (double vision)",
+        "Ptosis (drooping eyelid)",
+        "Difficulty with eye movements",
+        "Blurred vision"
+      ],
+      "signs": [
+        "Strabismus (misalignment of the eyes)",
+        "Limited eye movement in specific directions",
+        "Pupil involvement (dilated or non-reactive in CN III palsy)",
+        "Asymmetry of eyelid position"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of diplopia without headache",
+        "Pupil-sparing CN III palsy in a young patient"
+      ],
+      "redFlags": [
+        "Acute onset of diplopia with headache (possible intracranial hemorrhage)",
+        "Pupil involvement in CN III palsy (possible compressive lesion)",
+        "Neurological deficits (suggesting a central cause)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination (including cranial nerve assessment)",
+        "Visual acuity testing",
+        "Pupil examination"
+      ],
+      "secondLine": [
+        "CT scan of the head (to rule out mass lesions)",
+        "MRI of the brain and orbit (if indicated)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture (if meningitis or other CNS pathology is suspected)",
+        "Blood tests (to check for diabetes, thyroid function, etc.)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the history and examination findings. Imaging may be required to identify underlying causes.",
+      "differentials": [
+        "Thyroid eye disease",
+        "Myasthenia gravis",
+        "Intracranial aneurysm",
+        "Multiple sclerosis",
+        "Trauma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and reassurance (if benign cause)",
+          "Referral to ophthalmology for assessment"
+        ],
+        "secondLine": [
+          "Consider corticosteroids if inflammatory cause suspected"
+        ],
+        "procedures": [
+          "Prism glasses for symptomatic relief of diplopia",
+          "Botulinum toxin injection for strabismus management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ocular motility exercises",
+          "Prism glasses for diplopia management"
+        ],
+        "secondLine": [
+          "Surgical intervention for strabismus (if persistent)"
+        ],
+        "monitoring": [
+          "Regular follow-up with ophthalmology to assess progression or resolution"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "Prednisone 40-60 mg daily, tapering as per response",
+          "sideEffects": "Weight gain, hypertension, diabetes exacerbation, osteoporosis",
+          "notes": "Consider in cases of inflammatory causes like Tolosa-Hunt syndrome."
+        },
+        {
+          "name": "Botulinum toxin",
+          "mechanism": "Paralysis of the extraocular muscles to realign the eyes",
+          "dosing": "Varies based on muscle targeted; typically 1-5 units per muscle",
+          "sideEffects": "Ptosis, diplopia, dry eye",
+          "notes": "Used for symptomatic relief in chronic cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Prism glasses",
+          "description": "Optical devices that bend light to align images seen by each eye",
+          "indications": "Used for symptomatic relief of diplopia",
+          "risks": "May not fully resolve diplopia; requires adjustment period."
+        },
+        {
+          "name": "Strabismus surgery",
+          "description": "Surgical realignment of the extraocular muscles",
+          "indications": "Persistent strabismus despite conservative management",
+          "risks": "Infection, overcorrection/undercorrection, scarring."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies based on the underlying cause. Vascular causes often resolve spontaneously, while compressive lesions may require surgical intervention. Chronic cases may lead to persistent diplopia or strabismus.",
+    "complications": [
+      "Persistent diplopia",
+      "Amblyopia (in children)",
+      "Psychosocial impact due to visual disturbances"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, and refer appropriately to ophthalmology or neurology. They should also provide patient education and reassurance.",
+    "escalation": "Escalate to senior medical staff if there are red flags present, such as acute onset with neurological deficits or pupil involvement in CN III palsy.",
+    "keySafetyConsiderations": "Ensure timely referral for any acute presentations, monitor for signs of increased intracranial pressure, and provide appropriate follow-up for chronic cases."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "pre_existing_and_gestational_diabetes",
+  "name": "Pre-existing and gestational diabetes",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:46:36.353088",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pre-existing and gestational diabetes: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPre-existing diabetes refers to diabetes diagnosed before pregnancy, while gestational diabetes is a form of diabetes that develops during pregnancy, typically resolving after delivery.\n\n### Epidemiology\nPre-existing diabetes affects approximately 1-2% of pregnancies, while gestational diabetes affects 2-10% of pregnancies, with increasing prevalence due to rising obesity rates.\n\n### Essential Pathophysiology\nIn pre-existing diabetes, insulin resistance and/or inadequate insulin secretion lead to hyperglycemia. In gestational diabetes, hormonal changes during pregnancy (e.g., increased placental hormones) cause insulin resistance, leading to elevated blood glucose levels.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased thirst (polydipsia)\n- Frequent urination (polyuria)\n- Fatigue\n- Blurred vision\n- Nausea\n\n### Key Signs\n- Elevated blood glucose levels\n- Ketones in urine (in severe cases)\n- Obesity (in pre-existing diabetes)\n- Signs of dehydration\n\n### Atypical Presentations\n- Asymptomatic in many cases, especially in gestational diabetes\n- Severe hyperglycemia may present with ketoacidosis\n\n### Red Flags Requiring Immediate Action\n- Severe hyperglycemia (e.g., blood glucose > 15 mmol/L)\n- Ketoacidosis symptoms (nausea, vomiting, abdominal pain, altered consciousness)\n- Fetal growth abnormalities (macrosomia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fasting blood glucose\n- Random blood glucose\n- HbA1c\n\n### Second-line Investigations\n- Oral glucose tolerance test (OGTT)\n- Urine ketones\n\n### Specialist Tests\n- Continuous glucose monitoring (CGM)\n- Fetal ultrasound for growth assessment\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of gestational diabetes is made if any of the following are met: fasting blood glucose ≥ 5.1 mmol/L, 1-hour post-OGTT ≥ 10.0 mmol/L, or 2-hour post-OGTT ≥ 8.5 mmol/L.\n\n### Key Differential Diagnoses to Exclude\n- Type 1 diabetes\n- Type 2 diabetes\n- Maturity-onset diabetes of the young (MODY)\n- Cushing's syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Insulin therapy for severe hyperglycemia\n- Hydration and electrolyte management\n\n#### Second-line Treatments\n- Metformin if insulin is not tolerated or contraindicated\n\n#### Emergency Procedures\n- Continuous glucose monitoring for tight glycemic control\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (low glycemic index diet)\n- Regular physical activity\n\n#### Second-line Treatments\n- Insulin therapy if blood glucose targets are not met\n\n#### Monitoring Requirements\n- Regular blood glucose monitoring (self-monitoring)\n- Fetal growth monitoring via ultrasound\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Insulin\n- **Mechanism of Action**: Replaces or supplements insulin to lower blood glucose levels.\n- **Typical Dosing Range**: Individualized; typically, basal-bolus regimen for pre-existing diabetes; sliding scale for gestational diabetes.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain, injection site reactions.\n- **When to Use vs. Alternatives**: Insulin is the first-line treatment for pre-existing diabetes in pregnancy.\n\n#### Metformin\n- **Mechanism of Action**: Decreases hepatic glucose production and increases insulin sensitivity.\n- **Typical Dosing Range**: 500 mg to 2000 mg daily, titrated based on tolerance and blood glucose levels.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: Considered for gestational diabetes if lifestyle changes are insufficient.\n\n### Procedures\n\n#### Continuous Glucose Monitoring (CGM)\n- **What it Involves**: A device that tracks glucose levels continuously throughout the day and night.\n- **Indications**: Used for patients with pre-existing diabetes to maintain tight glycemic control during pregnancy.\n- **Key Risks/Complications**: Skin irritation, inaccurate readings in certain conditions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most women with gestational diabetes have healthy pregnancies and deliveries. However, they are at increased risk of developing type 2 diabetes later in life.\n\n### Important Complications to Watch For\n- Macrosomia (large baby)\n- Preterm birth\n- Preeclampsia\n- Neonatal hypoglycemia\n- Increased risk of cesarean delivery\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, perform initial assessments, and refer to obstetricians or endocrinologists for management. They should also educate patients on lifestyle modifications and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to obstetrics/endocrinology if blood glucose levels are persistently above target, if there are signs of ketoacidosis, or if there are fetal growth concerns.\n\n### Key Safety Considerations\nEnsure regular monitoring of blood glucose levels, educate patients on recognizing hypoglycemia, and provide clear instructions on insulin administration and dietary management.\n",
+  "content": {
+    "overview": {
+      "definition": "Pre-existing diabetes refers to diabetes diagnosed before pregnancy, while gestational diabetes is a form of diabetes that develops during pregnancy, typically resolving after delivery.",
+      "epidemiology": "Pre-existing diabetes affects approximately 1-2% of pregnancies, while gestational diabetes affects 2-10% of pregnancies, with increasing prevalence due to rising obesity rates.",
+      "pathophysiology": "In pre-existing diabetes, insulin resistance and/or inadequate insulin secretion lead to hyperglycemia. In gestational diabetes, hormonal changes during pregnancy (e.g., increased placental hormones) cause insulin resistance, leading to elevated blood glucose levels."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased thirst (polydipsia)",
+        "Frequent urination (polyuria)",
+        "Fatigue",
+        "Blurred vision",
+        "Nausea"
+      ],
+      "signs": [
+        "Elevated blood glucose levels",
+        "Ketones in urine (in severe cases)",
+        "Obesity (in pre-existing diabetes)",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in many cases, especially in gestational diabetes",
+        "Severe hyperglycemia may present with ketoacidosis"
+      ],
+      "redFlags": [
+        "Severe hyperglycemia (e.g., blood glucose > 15 mmol/L)",
+        "Ketoacidosis symptoms (nausea, vomiting, abdominal pain, altered consciousness)",
+        "Fetal growth abnormalities (macrosomia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fasting blood glucose",
+        "Random blood glucose",
+        "HbA1c"
+      ],
+      "secondLine": [
+        "Oral glucose tolerance test (OGTT)",
+        "Urine ketones"
+      ],
+      "specialistTests": [
+        "Continuous glucose monitoring (CGM)",
+        "Fetal ultrasound for growth assessment"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of gestational diabetes is made if any of the following are met: fasting blood glucose ≥ 5.1 mmol/L, 1-hour post-OGTT ≥ 10.0 mmol/L, or 2-hour post-OGTT ≥ 8.5 mmol/L.",
+      "differentials": [
+        "Type 1 diabetes",
+        "Type 2 diabetes",
+        "Maturity-onset diabetes of the young (MODY)",
+        "Cushing's syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Insulin therapy for severe hyperglycemia",
+          "Hydration and electrolyte management"
+        ],
+        "secondLine": [
+          "Metformin if insulin is not tolerated or contraindicated"
+        ],
+        "procedures": [
+          "Continuous glucose monitoring for tight glycemic control"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (low glycemic index diet)",
+          "Regular physical activity"
+        ],
+        "secondLine": [
+          "Insulin therapy if blood glucose targets are not met"
+        ],
+        "monitoring": [
+          "Regular blood glucose monitoring (self-monitoring)",
+          "Fetal growth monitoring via ultrasound"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Insulin",
+          "mechanism": "Replaces or supplements insulin to lower blood glucose levels.",
+          "dosing": "Individualized; typically, basal-bolus regimen for pre-existing diabetes; sliding scale for gestational diabetes.",
+          "sideEffects": "Hypoglycemia, weight gain, injection site reactions.",
+          "notes": "Insulin is the first-line treatment for pre-existing diabetes in pregnancy."
+        },
+        {
+          "name": "Metformin",
+          "mechanism": "Decreases hepatic glucose production and increases insulin sensitivity.",
+          "dosing": "500 mg to 2000 mg daily, titrated based on tolerance and blood glucose levels.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "Considered for gestational diabetes if lifestyle changes are insufficient."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Continuous Glucose Monitoring (CGM)",
+          "description": "A device that tracks glucose levels continuously throughout the day and night.",
+          "indications": "Used for patients with pre-existing diabetes to maintain tight glycemic control during pregnancy.",
+          "risks": "Skin irritation, inaccurate readings in certain conditions."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most women with gestational diabetes have healthy pregnancies and deliveries. However, they are at increased risk of developing type 2 diabetes later in life.",
+    "complications": [
+      "Macrosomia (large baby)",
+      "Preterm birth",
+      "Preeclampsia",
+      "Neonatal hypoglycemia",
+      "Increased risk of cesarean delivery"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, perform initial assessments, and refer to obstetricians or endocrinologists for management. They should also educate patients on lifestyle modifications and monitor for complications.",
+    "escalation": "Refer to obstetrics/endocrinology if blood glucose levels are persistently above target, if there are signs of ketoacidosis, or if there are fetal growth concerns.",
+    "keySafetyConsiderations": "Ensure regular monitoring of blood glucose levels, educate patients on recognizing hypoglycemia, and provide clear instructions on insulin administration and dietary management."
+  }
+}

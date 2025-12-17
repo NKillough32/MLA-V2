@@ -1,0 +1,135 @@
+{
+  "id": "influenza",
+  "name": "Influenza",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:07:10.117406",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Influenza: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInfluenza, commonly known as the flu, is an acute viral infection caused by influenza viruses, primarily affecting the respiratory system.\n\n### Epidemiology\nInfluenza affects millions globally each year, with seasonal epidemics leading to significant morbidity and mortality, particularly in vulnerable populations such as the elderly, young children, and those with chronic health conditions.\n\n### Essential Pathophysiology\nInfluenza viruses infect epithelial cells of the respiratory tract, leading to cell death and an inflammatory response. This results in symptoms such as fever, cough, and muscle aches.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Chills\n- Cough\n- Sore throat\n- Muscle or body aches\n- Headaches\n- Fatigue\n- Runny or stuffy nose\n\n### Key Signs\n- Fever (often >38°C)\n- Tachycardia\n- Rhonchi or wheezing on auscultation\n- Conjunctival injection\n\n### Atypical Presentations\n- Gastrointestinal symptoms (nausea, vomiting, diarrhea) especially in children\n- Severe fatigue lasting weeks after initial infection\n\n### Red Flags Requiring Immediate Action\n- Difficulty breathing or shortness of breath\n- Chest pain\n- Confusion or altered mental status\n- Severe dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Rapid influenza diagnostic tests (RIDTs)\n- PCR testing for influenza\n\n### Second-line Investigations\n- Viral culture (less commonly used due to time constraints)\n- Serological testing (not typically used for acute diagnosis)\n\n### Specialist Tests\n- Chest X-ray (to rule out pneumonia)\n- CT scan if complications are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by rapid tests or PCR. A positive test in the context of symptoms is sufficient for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Common cold\n- COVID-19\n- Streptococcal pharyngitis\n- Pneumonia\n- Bronchitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oseltamivir (Tamiflu)\n- Zanamivir (Relenza)\n\n#### Second-line Treatments\n- Baloxavir marboxil (Xofluza)\n\n#### Emergency Procedures\n- Supportive care (hydration, antipyretics)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Vaccination (annual flu vaccine)\n\n#### Second-line Treatments\n- Antiviral prophylaxis in high-risk groups during outbreaks\n\n#### Monitoring Requirements\n- Monitor for complications such as pneumonia or exacerbation of chronic conditions\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oseltamivir (Tamiflu)\n- **Mechanism of Action**: Inhibits viral neuraminidase, preventing viral replication.\n- **Typical Dosing Range**: 75 mg orally twice daily for 5 days.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, headache, dizziness.\n- **When to Use vs. Alternatives**: Most effective when started within 48 hours of symptom onset.\n\n#### Zanamivir (Relenza)\n- **Mechanism of Action**: Inhibits viral neuraminidase, preventing viral replication.\n- **Typical Dosing Range**: 10 mg via inhalation twice daily for 5 days.\n- **Key Side Effects/Contraindications**: Bronchospasm, cough, throat discomfort.\n- **When to Use vs. Alternatives**: Contraindicated in patients with asthma or COPD.\n\n#### Baloxavir marboxil (Xofluza)\n- **Mechanism of Action**: Inhibits cap-dependent endonuclease, preventing viral replication.\n- **Typical Dosing Range**: 40 mg orally as a single dose for patients <80 kg; 80 mg for patients ≥80 kg.\n- **Key Side Effects/Contraindications**: Diarrhea, bronchitis, headache.\n- **When to Use vs. Alternatives**: Effective against some resistant strains.\n\n### Procedures\n\n#### Supportive care\n- **What it Involves**: Includes hydration, antipyretics, and rest.\n- **Indications**: All patients with influenza.\n- **Key Risks/Complications**: None, but inadequate hydration can lead to complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients recover within a week, but some may develop complications such as pneumonia, especially in high-risk groups.\n\n### Important Complications to Watch For\n- Pneumonia\n- Bronchitis\n- Sinus infections\n- Worsening of chronic medical conditions (e.g., asthma, COPD)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and manage patients with suspected influenza, initiate antiviral treatment when appropriate, and provide supportive care. They should also educate patients on prevention strategies, including vaccination.\n\n### When to Escalate to Senior/Specialist\nRefer to senior medical staff if a patient presents with severe symptoms, red flags, or if there is a need for hospitalization.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress, dehydration, and complications. Ensure appropriate isolation precautions to prevent the spread of influenza in healthcare settings.\n",
+  "content": {
+    "overview": {
+      "definition": "Influenza, commonly known as the flu, is an acute viral infection caused by influenza viruses, primarily affecting the respiratory system.",
+      "epidemiology": "Influenza affects millions globally each year, with seasonal epidemics leading to significant morbidity and mortality, particularly in vulnerable populations such as the elderly, young children, and those with chronic health conditions.",
+      "pathophysiology": "Influenza viruses infect epithelial cells of the respiratory tract, leading to cell death and an inflammatory response. This results in symptoms such as fever, cough, and muscle aches."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Chills",
+        "Cough",
+        "Sore throat",
+        "Muscle or body aches",
+        "Headaches",
+        "Fatigue",
+        "Runny or stuffy nose"
+      ],
+      "signs": [
+        "Fever (often >38°C)",
+        "Tachycardia",
+        "Rhonchi or wheezing on auscultation",
+        "Conjunctival injection"
+      ],
+      "atypicalPresentations": [
+        "Gastrointestinal symptoms (nausea, vomiting, diarrhea) especially in children",
+        "Severe fatigue lasting weeks after initial infection"
+      ],
+      "redFlags": [
+        "Difficulty breathing or shortness of breath",
+        "Chest pain",
+        "Confusion or altered mental status",
+        "Severe dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Rapid influenza diagnostic tests (RIDTs)",
+        "PCR testing for influenza"
+      ],
+      "secondLine": [
+        "Viral culture (less commonly used due to time constraints)",
+        "Serological testing (not typically used for acute diagnosis)"
+      ],
+      "specialistTests": [
+        "Chest X-ray (to rule out pneumonia)",
+        "CT scan if complications are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by rapid tests or PCR. A positive test in the context of symptoms is sufficient for diagnosis.",
+      "differentials": [
+        "Common cold",
+        "COVID-19",
+        "Streptococcal pharyngitis",
+        "Pneumonia",
+        "Bronchitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oseltamivir (Tamiflu)",
+          "Zanamivir (Relenza)"
+        ],
+        "secondLine": [
+          "Baloxavir marboxil (Xofluza)"
+        ],
+        "procedures": [
+          "Supportive care (hydration, antipyretics)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Vaccination (annual flu vaccine)"
+        ],
+        "secondLine": [
+          "Antiviral prophylaxis in high-risk groups during outbreaks"
+        ],
+        "monitoring": [
+          "Monitor for complications such as pneumonia or exacerbation of chronic conditions"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oseltamivir (Tamiflu)",
+          "mechanism": "Inhibits viral neuraminidase, preventing viral replication.",
+          "dosing": "75 mg orally twice daily for 5 days.",
+          "sideEffects": "Nausea, vomiting, headache, dizziness.",
+          "notes": "Most effective when started within 48 hours of symptom onset."
+        },
+        {
+          "name": "Zanamivir (Relenza)",
+          "mechanism": "Inhibits viral neuraminidase, preventing viral replication.",
+          "dosing": "10 mg via inhalation twice daily for 5 days.",
+          "sideEffects": "Bronchospasm, cough, throat discomfort.",
+          "notes": "Contraindicated in patients with asthma or COPD."
+        },
+        {
+          "name": "Baloxavir marboxil (Xofluza)",
+          "mechanism": "Inhibits cap-dependent endonuclease, preventing viral replication.",
+          "dosing": "40 mg orally as a single dose for patients <80 kg; 80 mg for patients ≥80 kg.",
+          "sideEffects": "Diarrhea, bronchitis, headache.",
+          "notes": "Effective against some resistant strains."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Supportive care",
+          "description": "Includes hydration, antipyretics, and rest.",
+          "indications": "All patients with influenza.",
+          "risks": "None, but inadequate hydration can lead to complications."
+        }
+      ]
+    },
+    "prognosis": "Most patients recover within a week, but some may develop complications such as pneumonia, especially in high-risk groups.",
+    "complications": [
+      "Pneumonia",
+      "Bronchitis",
+      "Sinus infections",
+      "Worsening of chronic medical conditions (e.g., asthma, COPD)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and manage patients with suspected influenza, initiate antiviral treatment when appropriate, and provide supportive care. They should also educate patients on prevention strategies, including vaccination.",
+    "escalation": "Refer to senior medical staff if a patient presents with severe symptoms, red flags, or if there is a need for hospitalization.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress, dehydration, and complications. Ensure appropriate isolation precautions to prevent the spread of influenza in healthcare settings."
+  }
+}

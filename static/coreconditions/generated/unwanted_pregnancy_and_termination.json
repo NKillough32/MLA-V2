@@ -1,0 +1,118 @@
+{
+  "id": "unwanted_pregnancy_and_termination",
+  "name": "Unwanted pregnancy and termination",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:53:34.513509",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Unwanted pregnancy and termination: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUnwanted pregnancy refers to a pregnancy that is not desired by the individual or couple, which may lead to consideration of termination. Termination of pregnancy (TOP) is the medical or surgical process of ending a pregnancy before the fetus can live independently outside the uterus.\n\n### Epidemiology\nUnwanted pregnancies are common, with studies indicating that approximately 45% of all pregnancies are unintended. The rates of termination vary by region, with higher rates in areas with limited access to contraception and reproductive health services.\n\n### Essential Pathophysiology\nUnwanted pregnancies can occur due to contraceptive failure, lack of access to contraception, or unprotected sexual intercourse. The decision to terminate may be influenced by social, economic, or health-related factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Missed menstrual period\n- Nausea and vomiting (morning sickness)\n- Breast tenderness\n- Fatigue\n\n### Key Signs\n- Positive pregnancy test\n- Uterine enlargement\n- Cervical changes (e.g., Chadwick's sign)\n\n### Atypical Presentations\n- Ectopic pregnancy (abdominal pain, vaginal bleeding)\n- Molar pregnancy (abnormal uterine growth)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Heavy vaginal bleeding\n- Signs of infection (fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urine pregnancy test\n- Serum beta-hCG levels\n\n### Second-line Investigations\n- Transvaginal ultrasound to confirm intrauterine pregnancy and assess gestational age\n\n### Specialist Tests\n- Genetic testing if indicated (e.g., for fetal anomalies)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of unwanted pregnancy is based on a positive pregnancy test and confirmation of gestational age via ultrasound.\n\n### Key Differential Diagnoses to Exclude\n- Ectopic pregnancy\n- Molar pregnancy\n- Spontaneous abortion\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Counseling on options (continuation, adoption, termination)\n- Referral to a specialist for termination services\n\n#### Second-line Treatments\n- Medical termination (mifepristone followed by misoprostol) or surgical options (suction curettage)\n\n#### Emergency Procedures\n- Suction curettage (D&C)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term contraceptive counseling and provision of contraceptive methods\n\n#### Second-line Treatments\n- Follow-up for mental health support if needed\n\n#### Monitoring Requirements\n- Regular follow-up to ensure no complications from termination\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mifepristone\n- **Mechanism of Action**: Blocks progesterone receptors, leading to uterine lining breakdown.\n- **Typical Dosing Range**: 200 mg orally, followed by misoprostol 24-48 hours later.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, abdominal pain, heavy bleeding.\n- **When to Use vs. Alternatives**: Used in medical termination of pregnancy.\n\n#### Misoprostol\n- **Mechanism of Action**: Prostaglandin analog that induces uterine contractions.\n- **Typical Dosing Range**: 800 mcg buccally or vaginally 24-48 hours after mifepristone.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, abdominal pain, fever.\n- **When to Use vs. Alternatives**: Used in conjunction with mifepristone for medical termination.\n\n### Procedures\n\n#### Suction Curettage (D&C)\n- **What it Involves**: A surgical procedure where the contents of the uterus are removed using suction.\n- **Indications**: Indicated for surgical termination of pregnancy, especially in the first trimester.\n- **Key Risks/Complications**: Infection, uterine perforation, retained products of conception.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost women who undergo termination of pregnancy do not experience long-term psychological effects. However, some may experience feelings of guilt or sadness, which should be addressed with appropriate counseling.\n\n### Important Complications to Watch For\n- Infection\n- Heavy bleeding\n- Uterine perforation (rare)\n- Psychological effects (anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should provide empathetic counseling, ensure informed consent, and facilitate referrals to appropriate services for termination. They should also be aware of local guidelines and legal requirements regarding termination of pregnancy.\n\n### When to Escalate to Senior/Specialist\nIf complications arise (e.g., heavy bleeding, signs of infection), escalate care to a senior clinician or gynecologist immediately.\n\n### Key Safety Considerations\nEnsure that patients are fully informed of their options and the potential risks and benefits of each. Maintain confidentiality and provide a non-judgmental environment for discussions.\n",
+  "content": {
+    "overview": {
+      "definition": "Unwanted pregnancy refers to a pregnancy that is not desired by the individual or couple, which may lead to consideration of termination. Termination of pregnancy (TOP) is the medical or surgical process of ending a pregnancy before the fetus can live independently outside the uterus.",
+      "epidemiology": "Unwanted pregnancies are common, with studies indicating that approximately 45% of all pregnancies are unintended. The rates of termination vary by region, with higher rates in areas with limited access to contraception and reproductive health services.",
+      "pathophysiology": "Unwanted pregnancies can occur due to contraceptive failure, lack of access to contraception, or unprotected sexual intercourse. The decision to terminate may be influenced by social, economic, or health-related factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Missed menstrual period",
+        "Nausea and vomiting (morning sickness)",
+        "Breast tenderness",
+        "Fatigue"
+      ],
+      "signs": [
+        "Positive pregnancy test",
+        "Uterine enlargement",
+        "Cervical changes (e.g., Chadwick's sign)"
+      ],
+      "atypicalPresentations": [
+        "Ectopic pregnancy (abdominal pain, vaginal bleeding)",
+        "Molar pregnancy (abnormal uterine growth)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Heavy vaginal bleeding",
+        "Signs of infection (fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urine pregnancy test",
+        "Serum beta-hCG levels"
+      ],
+      "secondLine": [
+        "Transvaginal ultrasound to confirm intrauterine pregnancy and assess gestational age"
+      ],
+      "specialistTests": [
+        "Genetic testing if indicated (e.g., for fetal anomalies)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of unwanted pregnancy is based on a positive pregnancy test and confirmation of gestational age via ultrasound.",
+      "differentials": [
+        "Ectopic pregnancy",
+        "Molar pregnancy",
+        "Spontaneous abortion"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Counseling on options (continuation, adoption, termination)",
+          "Referral to a specialist for termination services"
+        ],
+        "secondLine": [
+          "Medical termination (mifepristone followed by misoprostol) or surgical options (suction curettage)"
+        ],
+        "procedures": [
+          "Suction curettage (D&C)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term contraceptive counseling and provision of contraceptive methods"
+        ],
+        "secondLine": [
+          "Follow-up for mental health support if needed"
+        ],
+        "monitoring": [
+          "Regular follow-up to ensure no complications from termination"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mifepristone",
+          "mechanism": "Blocks progesterone receptors, leading to uterine lining breakdown.",
+          "dosing": "200 mg orally, followed by misoprostol 24-48 hours later.",
+          "sideEffects": "Nausea, vomiting, diarrhea, abdominal pain, heavy bleeding.",
+          "notes": "Used in medical termination of pregnancy."
+        },
+        {
+          "name": "Misoprostol",
+          "mechanism": "Prostaglandin analog that induces uterine contractions.",
+          "dosing": "800 mcg buccally or vaginally 24-48 hours after mifepristone.",
+          "sideEffects": "Nausea, vomiting, diarrhea, abdominal pain, fever.",
+          "notes": "Used in conjunction with mifepristone for medical termination."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Suction Curettage (D&C)",
+          "description": "A surgical procedure where the contents of the uterus are removed using suction.",
+          "indications": "Indicated for surgical termination of pregnancy, especially in the first trimester.",
+          "risks": "Infection, uterine perforation, retained products of conception."
+        }
+      ]
+    },
+    "prognosis": "Most women who undergo termination of pregnancy do not experience long-term psychological effects. However, some may experience feelings of guilt or sadness, which should be addressed with appropriate counseling.",
+    "complications": [
+      "Infection",
+      "Heavy bleeding",
+      "Uterine perforation (rare)",
+      "Psychological effects (anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should provide empathetic counseling, ensure informed consent, and facilitate referrals to appropriate services for termination. They should also be aware of local guidelines and legal requirements regarding termination of pregnancy.",
+    "escalation": "If complications arise (e.g., heavy bleeding, signs of infection), escalate care to a senior clinician or gynecologist immediately.",
+    "keySafetyConsiderations": "Ensure that patients are fully informed of their options and the potential risks and benefits of each. Maintain confidentiality and provide a non-judgmental environment for discussions."
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "diabetic_neuropathy",
+  "name": "Diabetic neuropathy",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:31:25.764408",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetic neuropathy: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetic neuropathy is a type of nerve damage that occurs as a complication of diabetes, primarily due to prolonged hyperglycemia leading to metabolic and vascular changes affecting nerve tissues.\n\n### Epidemiology\nDiabetic neuropathy affects approximately 50% of patients with diabetes, with prevalence increasing with the duration of diabetes. It is more common in patients with poor glycemic control and those with other risk factors such as hypertension and dyslipidemia.\n\n### Essential Pathophysiology\nThe pathophysiology involves a combination of metabolic and vascular factors. Chronic hyperglycemia leads to the accumulation of advanced glycation end-products (AGEs), oxidative stress, and inflammation, which damage nerve fibers. Additionally, microvascular complications can impair blood flow to nerves, exacerbating damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Numbness or tingling in the extremities\n- Burning or sharp pain\n- Loss of sensation\n- Muscle weakness\n- Impaired coordination\n\n### Key Signs\n- Decreased deep tendon reflexes\n- Loss of proprioception\n- Sensory loss on examination\n- Muscle atrophy in advanced cases\n\n### Atypical Presentations\n- Diabetic foot ulcers due to loss of protective sensation\n- Autonomic neuropathy presenting as gastrointestinal symptoms or orthostatic hypotension\n\n### Red Flags Requiring Immediate Action\n- New onset of severe pain\n- Rapid progression of symptoms\n- Signs of infection or ulceration in the feet\n- Loss of bowel or bladder control\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Monofilament test for sensory loss\n- Vibration perception threshold (VPT) testing\n\n### Second-line Investigations\n- Nerve conduction studies (NCS)\n- Electromyography (EMG)\n\n### Specialist Tests\n- Skin biopsy for intraepidermal nerve fiber density\n- Quantitative sensory testing (QST)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical symptoms, neurological examination findings, and supportive tests such as NCS or EMG. The presence of symptoms in a patient with diabetes and evidence of neuropathy on examination or testing confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Peripheral vascular disease\n- Multiple sclerosis\n- Vitamin B12 deficiency\n- Hypothyroidism\n- Alcoholic neuropathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management with analgesics (e.g., paracetamol, NSAIDs)\n- Tight glycemic control\n\n#### Second-line Treatments\n- Antidepressants (e.g., amitriptyline)\n- Anticonvulsants (e.g., gabapentin, pregabalin)\n\n#### Emergency Procedures\n- Referral to pain management specialists for refractory cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular foot care and education\n- Continued glycemic control\n- Physical therapy for muscle weakness\n\n#### Second-line Treatments\n- Consideration of neuropathic pain medications (e.g., duloxetine)\n- Management of comorbidities (e.g., hypertension, dyslipidemia)\n\n#### Monitoring Requirements\n- Regular foot examinations\n- Assessment of glycemic control (HbA1c)\n- Monitoring for progression of neuropathy\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that modulates pain pathways in the central nervous system.\n- **Typical Dosing Range**: Start at 10-25 mg at bedtime, titrate up to 75-150 mg as tolerated.\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, constipation, weight gain, cardiac arrhythmias.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in elderly patients.\n\n#### Gabapentin\n- **Mechanism of Action**: Calcium channel modulator that inhibits excitatory neurotransmitter release.\n- **Typical Dosing Range**: Start at 300 mg once daily, titrate up to 900-1800 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Dizziness, fatigue, peripheral edema, weight gain.\n- **When to Use vs. Alternatives**: Renal function should be monitored; dose adjustment may be necessary.\n\n#### Duloxetine\n- **Mechanism of Action**: Serotonin-norepinephrine reuptake inhibitor (SNRI) that helps alleviate neuropathic pain.\n- **Typical Dosing Range**: Start at 30 mg once daily, can increase to 60 mg after one week.\n- **Key Side Effects/Contraindications**: Nausea, dry mouth, fatigue, constipation, increased blood pressure.\n- **When to Use vs. Alternatives**: Monitor blood pressure regularly.\n\n### Procedures\n\n#### Nerve conduction studies (NCS)\n- **What it Involves**: A test that measures the speed of conduction of electrical impulses through a nerve.\n- **Indications**: To confirm the diagnosis of diabetic neuropathy and assess the severity.\n- **Key Risks/Complications**: Minimal; may cause discomfort at the site of electrode placement.\n\n#### Skin biopsy\n- **What it Involves**: A procedure to obtain a small sample of skin for histological examination of nerve fibers.\n- **Indications**: To assess for small fiber neuropathy when clinical diagnosis is uncertain.\n- **Key Risks/Complications**: Minor risks include bleeding, infection, and scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of diabetic neuropathy varies; early detection and management can slow progression. Some patients may experience significant improvement with glycemic control and symptomatic treatment, while others may have persistent symptoms.\n\n### Important Complications to Watch For\n- Foot ulcers and infections\n- Charcot foot (joint damage due to neuropathy)\n- Autonomic dysfunction (e.g., gastroparesis, orthostatic hypotension)\n- Increased risk of falls due to loss of proprioception\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments of patients with diabetes, recognize symptoms of neuropathy, initiate appropriate investigations, and manage acute symptoms. They should also educate patients on foot care and the importance of glycemic control.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are red flags, such as rapid progression of symptoms, severe pain, or complications like foot ulcers. Consider referral to a pain management clinic for refractory neuropathic pain.\n\n### Key Safety Considerations\nEnsure regular monitoring of blood glucose levels and HbA1c. Educate patients on foot care to prevent ulcers and infections. Be vigilant for signs of autonomic neuropathy that may require further management.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetic neuropathy is a type of nerve damage that occurs as a complication of diabetes, primarily due to prolonged hyperglycemia leading to metabolic and vascular changes affecting nerve tissues.",
+      "epidemiology": "Diabetic neuropathy affects approximately 50% of patients with diabetes, with prevalence increasing with the duration of diabetes. It is more common in patients with poor glycemic control and those with other risk factors such as hypertension and dyslipidemia.",
+      "pathophysiology": "The pathophysiology involves a combination of metabolic and vascular factors. Chronic hyperglycemia leads to the accumulation of advanced glycation end-products (AGEs), oxidative stress, and inflammation, which damage nerve fibers. Additionally, microvascular complications can impair blood flow to nerves, exacerbating damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Numbness or tingling in the extremities",
+        "Burning or sharp pain",
+        "Loss of sensation",
+        "Muscle weakness",
+        "Impaired coordination"
+      ],
+      "signs": [
+        "Decreased deep tendon reflexes",
+        "Loss of proprioception",
+        "Sensory loss on examination",
+        "Muscle atrophy in advanced cases"
+      ],
+      "atypicalPresentations": [
+        "Diabetic foot ulcers due to loss of protective sensation",
+        "Autonomic neuropathy presenting as gastrointestinal symptoms or orthostatic hypotension"
+      ],
+      "redFlags": [
+        "New onset of severe pain",
+        "Rapid progression of symptoms",
+        "Signs of infection or ulceration in the feet",
+        "Loss of bowel or bladder control"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Monofilament test for sensory loss",
+        "Vibration perception threshold (VPT) testing"
+      ],
+      "secondLine": [
+        "Nerve conduction studies (NCS)",
+        "Electromyography (EMG)"
+      ],
+      "specialistTests": [
+        "Skin biopsy for intraepidermal nerve fiber density",
+        "Quantitative sensory testing (QST)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical symptoms, neurological examination findings, and supportive tests such as NCS or EMG. The presence of symptoms in a patient with diabetes and evidence of neuropathy on examination or testing confirms the diagnosis.",
+      "differentials": [
+        "Peripheral vascular disease",
+        "Multiple sclerosis",
+        "Vitamin B12 deficiency",
+        "Hypothyroidism",
+        "Alcoholic neuropathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management with analgesics (e.g., paracetamol, NSAIDs)",
+          "Tight glycemic control"
+        ],
+        "secondLine": [
+          "Antidepressants (e.g., amitriptyline)",
+          "Anticonvulsants (e.g., gabapentin, pregabalin)"
+        ],
+        "procedures": [
+          "Referral to pain management specialists for refractory cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular foot care and education",
+          "Continued glycemic control",
+          "Physical therapy for muscle weakness"
+        ],
+        "secondLine": [
+          "Consideration of neuropathic pain medications (e.g., duloxetine)",
+          "Management of comorbidities (e.g., hypertension, dyslipidemia)"
+        ],
+        "monitoring": [
+          "Regular foot examinations",
+          "Assessment of glycemic control (HbA1c)",
+          "Monitoring for progression of neuropathy"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that modulates pain pathways in the central nervous system.",
+          "dosing": "Start at 10-25 mg at bedtime, titrate up to 75-150 mg as tolerated.",
+          "sideEffects": "Sedation, dry mouth, constipation, weight gain, cardiac arrhythmias.",
+          "notes": "Monitor for side effects, especially in elderly patients."
+        },
+        {
+          "name": "Gabapentin",
+          "mechanism": "Calcium channel modulator that inhibits excitatory neurotransmitter release.",
+          "dosing": "Start at 300 mg once daily, titrate up to 900-1800 mg/day in divided doses.",
+          "sideEffects": "Dizziness, fatigue, peripheral edema, weight gain.",
+          "notes": "Renal function should be monitored; dose adjustment may be necessary."
+        },
+        {
+          "name": "Duloxetine",
+          "mechanism": "Serotonin-norepinephrine reuptake inhibitor (SNRI) that helps alleviate neuropathic pain.",
+          "dosing": "Start at 30 mg once daily, can increase to 60 mg after one week.",
+          "sideEffects": "Nausea, dry mouth, fatigue, constipation, increased blood pressure.",
+          "notes": "Monitor blood pressure regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nerve conduction studies (NCS)",
+          "description": "A test that measures the speed of conduction of electrical impulses through a nerve.",
+          "indications": "To confirm the diagnosis of diabetic neuropathy and assess the severity.",
+          "risks": "Minimal; may cause discomfort at the site of electrode placement."
+        },
+        {
+          "name": "Skin biopsy",
+          "description": "A procedure to obtain a small sample of skin for histological examination of nerve fibers.",
+          "indications": "To assess for small fiber neuropathy when clinical diagnosis is uncertain.",
+          "risks": "Minor risks include bleeding, infection, and scarring."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of diabetic neuropathy varies; early detection and management can slow progression. Some patients may experience significant improvement with glycemic control and symptomatic treatment, while others may have persistent symptoms.",
+    "complications": [
+      "Foot ulcers and infections",
+      "Charcot foot (joint damage due to neuropathy)",
+      "Autonomic dysfunction (e.g., gastroparesis, orthostatic hypotension)",
+      "Increased risk of falls due to loss of proprioception"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments of patients with diabetes, recognize symptoms of neuropathy, initiate appropriate investigations, and manage acute symptoms. They should also educate patients on foot care and the importance of glycemic control.",
+    "escalation": "Refer to a specialist if there are red flags, such as rapid progression of symptoms, severe pain, or complications like foot ulcers. Consider referral to a pain management clinic for refractory neuropathic pain.",
+    "keySafetyConsiderations": "Ensure regular monitoring of blood glucose levels and HbA1c. Educate patients on foot care to prevent ulcers and infections. Be vigilant for signs of autonomic neuropathy that may require further management."
+  }
+}

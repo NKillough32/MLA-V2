@@ -1,0 +1,117 @@
+{
+  "id": "seborrhoeic_keratoses",
+  "name": "Seborrhoeic keratoses",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:19:07.158087",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Seborrhoeic keratoses: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSeborrhoeic keratoses are benign, non-cancerous skin growths that appear as raised, wart-like lesions. They are often brown, black, or light tan and have a scaly, rough surface.\n\n### Epidemiology\nSeborrhoeic keratoses are very common, particularly in older adults. They typically appear after the age of 40 and increase in prevalence with age, affecting both genders equally.\n\n### Essential Pathophysiology\nThe exact cause of seborrhoeic keratoses is not fully understood, but they are thought to arise from the proliferation of keratinocytes in the epidermis. Genetic factors may play a role, and they are often associated with sun exposure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asymptomatic in most cases\n- May itch or become irritated\n\n### Key Signs\n- Well-defined, raised lesions\n- Varied colors (brown, black, tan)\n- Scaly, rough surface\n- Often appear 'stuck on' the skin\n\n### Atypical Presentations\n- Lesions may be larger than typical\n- May appear in unusual locations (e.g., palms, soles)\n- Can be mistaken for melanoma if they are dark and irregular\n\n### Red Flags Requiring Immediate Action\n- Rapid growth of a lesion\n- Change in color or shape of a lesion\n- Bleeding or ulceration of a lesion\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Dermatoscopy\n\n### Second-line Investigations\n- Biopsy if diagnosis is uncertain or if malignancy is suspected\n\n### Specialist Tests\n- Histopathological examination of biopsy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical based on characteristic appearance. Biopsy may be required for atypical cases.\n\n### Key Differential Diagnoses to Exclude\n- Melanoma\n- Basal cell carcinoma\n- Actinic keratosis\n- Atypical nevi\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation if asymptomatic\n- Cryotherapy for symptomatic lesions\n\n#### Second-line Treatments\n- Curettage for larger lesions\n- Electrosurgery\n\n#### Emergency Procedures\n- Cryotherapy: freezing the lesion with liquid nitrogen to destroy it. Indicated for symptomatic lesions. Risks include hypopigmentation and scarring.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring for changes in lesions\n\n#### Second-line Treatments\n- Surgical excision for cosmetic reasons or if malignancy is suspected.\n\n#### Monitoring Requirements\n- Regular skin checks for new lesions or changes in existing lesions.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Topical 5-fluorouracil\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, used for superficial lesions.\n- **Typical Dosing Range**: Apply twice daily for 2-4 weeks.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and crusting.\n- **When to Use vs. Alternatives**: Not commonly used for seborrhoeic keratoses but may be considered in some cases.\n\n### Procedures\n\n#### Curettage\n- **What it Involves**: Surgical scraping of the lesion to remove it.\n- **Indications**: Indicated for larger or symptomatic seborrhoeic keratoses.\n- **Key Risks/Complications**: Bleeding, infection, scarring.\n\n#### Electrosurgery\n- **What it Involves**: Using electrical current to remove the lesion.\n- **Indications**: Indicated for larger lesions or those that are difficult to excise.\n- **Key Risks/Complications**: Pain, scarring, and potential for deeper tissue damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nSeborrhoeic keratoses are benign and do not progress to cancer. They may persist indefinitely but can be removed for cosmetic reasons.\n\n### Important Complications to Watch For\n- Secondary infection if lesions become irritated or scratched\n- Scarring from removal procedures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize seborrhoeic keratoses, provide reassurance to patients, and refer for further management if necessary. They should also be aware of the importance of monitoring for changes in lesions.\n\n### When to Escalate to Senior/Specialist\nRefer to a dermatologist if there are concerns about malignancy, rapid growth, or atypical features of the lesions.\n\n### Key Safety Considerations\nEnsure proper patient education regarding the benign nature of seborrhoeic keratoses and the importance of monitoring for changes. Advise patients on sun protection to prevent new lesions.\n",
+  "content": {
+    "overview": {
+      "definition": "Seborrhoeic keratoses are benign, non-cancerous skin growths that appear as raised, wart-like lesions. They are often brown, black, or light tan and have a scaly, rough surface.",
+      "epidemiology": "Seborrhoeic keratoses are very common, particularly in older adults. They typically appear after the age of 40 and increase in prevalence with age, affecting both genders equally.",
+      "pathophysiology": "The exact cause of seborrhoeic keratoses is not fully understood, but they are thought to arise from the proliferation of keratinocytes in the epidermis. Genetic factors may play a role, and they are often associated with sun exposure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asymptomatic in most cases",
+        "May itch or become irritated"
+      ],
+      "signs": [
+        "Well-defined, raised lesions",
+        "Varied colors (brown, black, tan)",
+        "Scaly, rough surface",
+        "Often appear 'stuck on' the skin"
+      ],
+      "atypicalPresentations": [
+        "Lesions may be larger than typical",
+        "May appear in unusual locations (e.g., palms, soles)",
+        "Can be mistaken for melanoma if they are dark and irregular"
+      ],
+      "redFlags": [
+        "Rapid growth of a lesion",
+        "Change in color or shape of a lesion",
+        "Bleeding or ulceration of a lesion"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Dermatoscopy"
+      ],
+      "secondLine": [
+        "Biopsy if diagnosis is uncertain or if malignancy is suspected"
+      ],
+      "specialistTests": [
+        "Histopathological examination of biopsy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical based on characteristic appearance. Biopsy may be required for atypical cases.",
+      "differentials": [
+        "Melanoma",
+        "Basal cell carcinoma",
+        "Actinic keratosis",
+        "Atypical nevi"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation if asymptomatic",
+          "Cryotherapy for symptomatic lesions"
+        ],
+        "secondLine": [
+          "Curettage for larger lesions",
+          "Electrosurgery"
+        ],
+        "procedures": [
+          "Cryotherapy: freezing the lesion with liquid nitrogen to destroy it. Indicated for symptomatic lesions. Risks include hypopigmentation and scarring."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring for changes in lesions"
+        ],
+        "secondLine": [
+          "Surgical excision for cosmetic reasons or if malignancy is suspected."
+        ],
+        "monitoring": [
+          "Regular skin checks for new lesions or changes in existing lesions."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Topical 5-fluorouracil",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, used for superficial lesions.",
+          "dosing": "Apply twice daily for 2-4 weeks.",
+          "sideEffects": "Local irritation, erythema, and crusting.",
+          "notes": "Not commonly used for seborrhoeic keratoses but may be considered in some cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Curettage",
+          "description": "Surgical scraping of the lesion to remove it.",
+          "indications": "Indicated for larger or symptomatic seborrhoeic keratoses.",
+          "risks": "Bleeding, infection, scarring."
+        },
+        {
+          "name": "Electrosurgery",
+          "description": "Using electrical current to remove the lesion.",
+          "indications": "Indicated for larger lesions or those that are difficult to excise.",
+          "risks": "Pain, scarring, and potential for deeper tissue damage."
+        }
+      ]
+    },
+    "prognosis": "Seborrhoeic keratoses are benign and do not progress to cancer. They may persist indefinitely but can be removed for cosmetic reasons.",
+    "complications": [
+      "Secondary infection if lesions become irritated or scratched",
+      "Scarring from removal procedures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize seborrhoeic keratoses, provide reassurance to patients, and refer for further management if necessary. They should also be aware of the importance of monitoring for changes in lesions.",
+    "escalation": "Refer to a dermatologist if there are concerns about malignancy, rapid growth, or atypical features of the lesions.",
+    "keySafetyConsiderations": "Ensure proper patient education regarding the benign nature of seborrhoeic keratoses and the importance of monitoring for changes. Advise patients on sun protection to prevent new lesions."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "asthma",
+  "name": "Asthma",
+  "domains": [
+    "Respiratory",
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T20:20:59.264823",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Asthma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAsthma is a chronic inflammatory disorder of the airways characterized by variable and recurring symptoms, airflow obstruction, and bronchial hyperresponsiveness.\n\n### Epidemiology\nAsthma affects approximately 300 million people worldwide, with a prevalence of about 5-10% in adults and 10-15% in children. It is a leading cause of morbidity and healthcare utilization.\n\n### Essential Pathophysiology\nAsthma involves inflammation of the airways, leading to bronchoconstriction, increased mucus production, and airway remodeling. Triggers such as allergens, irritants, and respiratory infections can exacerbate symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Wheezing\n- Shortness of breath\n- Chest tightness\n- Cough (especially at night or early morning)\n\n### Key Signs\n- Prolonged expiration\n- Use of accessory muscles of respiration\n- Decreased breath sounds\n- Cyanosis (in severe cases)\n\n### Atypical Presentations\n- Cough-variant asthma (cough as the predominant symptom)\n- Exercise-induced bronchoconstriction\n- Nocturnal asthma (symptoms worsening at night)\n\n### Red Flags Requiring Immediate Action\n- Severe breathlessness at rest\n- Inability to speak in full sentences\n- Cyanosis\n- Drowsiness or confusion\n- Peak flow <50% of personal best\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Peak expiratory flow rate (PEFR) monitoring\n- Spirometry (to assess airflow obstruction)\n\n### Second-line Investigations\n- Bronchodilator reversibility testing (increase in FEV1 >12% after bronchodilator)\n- Methacholine challenge test (if diagnosis is uncertain)\n\n### Specialist Tests\n- Allergy testing (skin prick tests or specific IgE)\n- Exhaled nitric oxide (FeNO) measurement (to assess eosinophilic inflammation)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination, and spirometry showing reversible airflow obstruction. A positive bronchodilator response supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD)\n- Vocal cord dysfunction\n- Heart failure\n- Pulmonary embolism\n- Anaphylaxis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Short-acting beta-2 agonists (SABAs) such as Salbutamol (Ventolin) via nebulizer or metered-dose inhaler (MDI)\n\n#### Second-line Treatments\n- Systemic corticosteroids (e.g., Prednisolone) for severe exacerbations\n\n#### Emergency Procedures\n- Oxygen therapy (if hypoxic)\n- Intubation and mechanical ventilation (in life-threatening cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Inhaled corticosteroids (ICS) as first-line maintenance therapy\n\n#### Second-line Treatments\n- Long-acting beta-2 agonists (LABAs) in combination with ICS\n\n#### Monitoring Requirements\n- Regular follow-up to assess control and adjust treatment\n- Peak flow monitoring at home\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Salbutamol\n- **Mechanism of Action**: Short-acting beta-2 adrenergic agonist causing bronchodilation\n- **Typical Dosing Range**: 100-200 mcg via MDI (1-2 puffs) every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia\n- **When to Use vs. Alternatives**: Use as a rescue inhaler for acute symptoms.\n\n#### Budesonide\n- **Mechanism of Action**: Inhaled corticosteroid reducing airway inflammation\n- **Typical Dosing Range**: 200-800 mcg twice daily depending on severity\n- **Key Side Effects/Contraindications**: Oral thrush, dysphonia, cough\n- **When to Use vs. Alternatives**: Rinse mouth after use to prevent thrush.\n\n#### Montelukast\n- **Mechanism of Action**: Leukotriene receptor antagonist reducing bronchoconstriction\n- **Typical Dosing Range**: 10 mg orally once daily at bedtime\n- **Key Side Effects/Contraindications**: Headache, gastrointestinal upset, mood changes\n- **When to Use vs. Alternatives**: Useful as an add-on therapy.\n\n### Procedures\n\n#### Nebulization\n- **What it Involves**: Administration of bronchodilators via a nebulizer for rapid relief of acute symptoms\n- **Indications**: Severe asthma exacerbation, inability to use MDI\n- **Key Risks/Complications**: Hypoxia, anxiety, equipment malfunction.\n\n#### Intubation\n- **What it Involves**: Placement of an endotracheal tube to secure airway in severe respiratory failure\n- **Indications**: Life-threatening asthma exacerbation with respiratory failure\n- **Key Risks/Complications**: Trauma to airway, infection, complications from sedation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most patients can achieve good control of asthma symptoms and maintain a normal quality of life. However, poorly controlled asthma can lead to significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Severe asthma exacerbations requiring hospitalization\n- Respiratory failure\n- Pneumonia\n- Airway remodeling leading to fixed airflow obstruction\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize asthma symptoms, perform basic assessments, initiate treatment for acute exacerbations, and educate patients on self-management and trigger avoidance.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe asthma exacerbation not responding to initial treatment, escalate care to senior medical staff and consider admission to a higher level of care (e.g., intensive care unit) if necessary.\n\n### Key Safety Considerations\nEnsure proper inhaler technique is taught to patients, monitor for side effects of medications, and assess for potential triggers in the patient's environment.\n",
+  "content": {
+    "overview": {
+      "definition": "Asthma is a chronic inflammatory disorder of the airways characterized by variable and recurring symptoms, airflow obstruction, and bronchial hyperresponsiveness.",
+      "epidemiology": "Asthma affects approximately 300 million people worldwide, with a prevalence of about 5-10% in adults and 10-15% in children. It is a leading cause of morbidity and healthcare utilization.",
+      "pathophysiology": "Asthma involves inflammation of the airways, leading to bronchoconstriction, increased mucus production, and airway remodeling. Triggers such as allergens, irritants, and respiratory infections can exacerbate symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Wheezing",
+        "Shortness of breath",
+        "Chest tightness",
+        "Cough (especially at night or early morning)"
+      ],
+      "signs": [
+        "Prolonged expiration",
+        "Use of accessory muscles of respiration",
+        "Decreased breath sounds",
+        "Cyanosis (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Cough-variant asthma (cough as the predominant symptom)",
+        "Exercise-induced bronchoconstriction",
+        "Nocturnal asthma (symptoms worsening at night)"
+      ],
+      "redFlags": [
+        "Severe breathlessness at rest",
+        "Inability to speak in full sentences",
+        "Cyanosis",
+        "Drowsiness or confusion",
+        "Peak flow <50% of personal best"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Peak expiratory flow rate (PEFR) monitoring",
+        "Spirometry (to assess airflow obstruction)"
+      ],
+      "secondLine": [
+        "Bronchodilator reversibility testing (increase in FEV1 >12% after bronchodilator)",
+        "Methacholine challenge test (if diagnosis is uncertain)"
+      ],
+      "specialistTests": [
+        "Allergy testing (skin prick tests or specific IgE)",
+        "Exhaled nitric oxide (FeNO) measurement (to assess eosinophilic inflammation)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination, and spirometry showing reversible airflow obstruction. A positive bronchodilator response supports the diagnosis.",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Vocal cord dysfunction",
+        "Heart failure",
+        "Pulmonary embolism",
+        "Anaphylaxis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Short-acting beta-2 agonists (SABAs) such as Salbutamol (Ventolin) via nebulizer or metered-dose inhaler (MDI)"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids (e.g., Prednisolone) for severe exacerbations"
+        ],
+        "procedures": [
+          "Oxygen therapy (if hypoxic)",
+          "Intubation and mechanical ventilation (in life-threatening cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Inhaled corticosteroids (ICS) as first-line maintenance therapy"
+        ],
+        "secondLine": [
+          "Long-acting beta-2 agonists (LABAs) in combination with ICS"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess control and adjust treatment",
+          "Peak flow monitoring at home"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Salbutamol",
+          "mechanism": "Short-acting beta-2 adrenergic agonist causing bronchodilation",
+          "dosing": "100-200 mcg via MDI (1-2 puffs) every 4-6 hours as needed",
+          "sideEffects": "Tachycardia, tremors, hypokalemia",
+          "notes": "Use as a rescue inhaler for acute symptoms."
+        },
+        {
+          "name": "Budesonide",
+          "mechanism": "Inhaled corticosteroid reducing airway inflammation",
+          "dosing": "200-800 mcg twice daily depending on severity",
+          "sideEffects": "Oral thrush, dysphonia, cough",
+          "notes": "Rinse mouth after use to prevent thrush."
+        },
+        {
+          "name": "Montelukast",
+          "mechanism": "Leukotriene receptor antagonist reducing bronchoconstriction",
+          "dosing": "10 mg orally once daily at bedtime",
+          "sideEffects": "Headache, gastrointestinal upset, mood changes",
+          "notes": "Useful as an add-on therapy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nebulization",
+          "description": "Administration of bronchodilators via a nebulizer for rapid relief of acute symptoms",
+          "indications": "Severe asthma exacerbation, inability to use MDI",
+          "risks": "Hypoxia, anxiety, equipment malfunction."
+        },
+        {
+          "name": "Intubation",
+          "description": "Placement of an endotracheal tube to secure airway in severe respiratory failure",
+          "indications": "Life-threatening asthma exacerbation with respiratory failure",
+          "risks": "Trauma to airway, infection, complications from sedation."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most patients can achieve good control of asthma symptoms and maintain a normal quality of life. However, poorly controlled asthma can lead to significant morbidity and mortality.",
+    "complications": [
+      "Severe asthma exacerbations requiring hospitalization",
+      "Respiratory failure",
+      "Pneumonia",
+      "Airway remodeling leading to fixed airflow obstruction"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize asthma symptoms, perform basic assessments, initiate treatment for acute exacerbations, and educate patients on self-management and trigger avoidance.",
+    "escalation": "If a patient presents with severe asthma exacerbation not responding to initial treatment, escalate care to senior medical staff and consider admission to a higher level of care (e.g., intensive care unit) if necessary.",
+    "keySafetyConsiderations": "Ensure proper inhaler technique is taught to patients, monitor for side effects of medications, and assess for potential triggers in the patient's environment."
+  }
+}

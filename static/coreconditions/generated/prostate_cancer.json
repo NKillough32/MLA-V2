@@ -1,0 +1,152 @@
+{
+  "id": "prostate_cancer",
+  "name": "Prostate cancer",
+  "domains": [
+    "Oncology",
+    "Urology"
+  ],
+  "generatedAt": "2025-12-17T20:12:46.652156",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Prostate cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nProstate cancer is a malignant neoplasm that arises from the prostate gland, primarily affecting older men. It is characterized by uncontrolled growth of prostate cells, which can invade surrounding tissues and metastasize to distant sites.\n\n### Epidemiology\nProstate cancer is the most common cancer in men in many countries, with a lifetime risk of approximately 1 in 8. The incidence increases with age, with the majority of cases diagnosed in men over 65 years. Risk factors include family history, ethnicity (higher in African American men), and certain genetic mutations (e.g., BRCA1/2).\n\n### Essential Pathophysiology\nProstate cancer typically begins in the peripheral zone of the prostate and is often adenocarcinoma. The cancer cells can grow slowly or aggressively, depending on the grade and stage. Hormonal influences, particularly androgens like testosterone, play a significant role in the growth of prostate cancer.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Urinary frequency\n- Nocturia\n- Weak or interrupted urine flow\n- Hematuria\n- Dysuria\n- Pelvic pain\n- Erectile dysfunction\n- Bone pain (in advanced cases)\n\n### Key Signs\n- Enlarged prostate on digital rectal examination (DRE)\n- Induration or nodularity of the prostate\n- Lymphadenopathy (especially in advanced disease)\n- Metastatic signs (e.g., bone tenderness)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute urinary retention\n- Unexplained weight loss\n- Fatigue\n\n### Red Flags Requiring Immediate Action\n- Age > 50 years\n- Family history of prostate cancer\n- Elevated PSA levels\n- Rapidly worsening urinary symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Prostate-specific antigen (PSA) testing\n- Digital rectal examination (DRE)\n\n### Second-line Investigations\n- Transrectal ultrasound (TRUS)\n- MRI of the prostate\n\n### Specialist Tests\n- Prostate biopsy (TRUS-guided)\n- Bone scan (if metastatic disease suspected)\n- CT scan of the abdomen and pelvis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of prostate tissue obtained via biopsy, with Gleason scoring to assess the aggressiveness of the cancer.\n\n### Key Differential Diagnoses to Exclude\n- Benign prostatic hyperplasia (BPH)\n- Prostatitis\n- Bladder cancer\n- Urethral stricture disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to urology for acute urinary retention or severe symptoms\n\n#### Second-line Treatments\n- Consider catheterization for urinary obstruction\n\n#### Emergency Procedures\n- Transurethral resection of the prostate (TURP) for symptomatic relief in BPH or cancer-related obstruction\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Active surveillance for low-risk localized prostate cancer\n- Radical prostatectomy for localized disease\n- Radiotherapy (external beam or brachytherapy)\n\n#### Second-line Treatments\n- Hormonal therapy (e.g., androgen deprivation therapy) for advanced disease\n\n#### Monitoring Requirements\n- Regular PSA testing and clinical evaluation for disease progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### LHRH agonists (e.g., Leuprolide)\n- **Mechanism of Action**: Suppresses testosterone production by the testes\n- **Typical Dosing Range**: Leuprolide 7.5 mg IM monthly or 22.5 mg every 3 months\n- **Key Side Effects/Contraindications**: Hot flashes, weight gain, decreased libido, osteoporosis\n- **When to Use vs. Alternatives**: Used in advanced prostate cancer to reduce androgen levels.\n\n#### Anti-androgens (e.g., Bicalutamide)\n- **Mechanism of Action**: Blocks the action of testosterone at the prostate receptor\n- **Typical Dosing Range**: Bicalutamide 50 mg orally daily\n- **Key Side Effects/Contraindications**: Gynecomastia, liver function abnormalities, diarrhea\n- **When to Use vs. Alternatives**: Often used in combination with LHRH agonists.\n\n#### Chemotherapy (e.g., Docetaxel)\n- **Mechanism of Action**: Inhibits cancer cell division\n- **Typical Dosing Range**: Docetaxel 75 mg/m2 IV every 3 weeks\n- **Key Side Effects/Contraindications**: Neutropenia, fatigue, nausea, peripheral neuropathy\n- **When to Use vs. Alternatives**: Used in metastatic castration-resistant prostate cancer.\n\n### Procedures\n\n#### Prostate biopsy\n- **What it Involves**: A procedure to obtain tissue samples from the prostate for histological examination.\n- **Indications**: Elevated PSA levels, abnormal DRE findings, or suspicious imaging.\n- **Key Risks/Complications**: Bleeding, infection, pain, and urinary retention.\n\n#### Radical prostatectomy\n- **What it Involves**: Surgical removal of the prostate gland and some surrounding tissue.\n- **Indications**: Localized prostate cancer with no evidence of metastasis.\n- **Key Risks/Complications**: Incontinence, erectile dysfunction, and surgical complications.\n\n#### Radiotherapy\n- **What it Involves**: Use of high-energy radiation to kill cancer cells.\n- **Indications**: Localized prostate cancer, recurrent disease, or palliative treatment.\n- **Key Risks/Complications**: Fatigue, urinary irritation, bowel symptoms, and secondary malignancies.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for prostate cancer varies widely based on the stage at diagnosis, Gleason score, and PSA levels. Early-stage disease has a high 5-year survival rate, while advanced disease has a poorer prognosis.\n\n### Important Complications to Watch For\n- Metastasis to bones, lymph nodes, or other organs\n- Urinary incontinence\n- Erectile dysfunction\n- Lymphedema from lymph node dissection\n- Secondary malignancies from treatment (e.g., radiation)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of prostate cancer, perform initial investigations (PSA, DRE), and refer patients appropriately. They should also be aware of the management options and potential complications.\n\n### When to Escalate to Senior/Specialist\nRefer to urology for any patient with suspected prostate cancer, especially with elevated PSA, abnormal DRE, or significant urinary symptoms. Escalate care for patients with acute urinary retention or severe symptoms.\n\n### Key Safety Considerations\nEnsure informed consent for procedures and treatments. Monitor for side effects of medications and complications of surgery. Provide patient education on the importance of follow-up and monitoring.\n",
+  "content": {
+    "overview": {
+      "definition": "Prostate cancer is a malignant neoplasm that arises from the prostate gland, primarily affecting older men. It is characterized by uncontrolled growth of prostate cells, which can invade surrounding tissues and metastasize to distant sites.",
+      "epidemiology": "Prostate cancer is the most common cancer in men in many countries, with a lifetime risk of approximately 1 in 8. The incidence increases with age, with the majority of cases diagnosed in men over 65 years. Risk factors include family history, ethnicity (higher in African American men), and certain genetic mutations (e.g., BRCA1/2).",
+      "pathophysiology": "Prostate cancer typically begins in the peripheral zone of the prostate and is often adenocarcinoma. The cancer cells can grow slowly or aggressively, depending on the grade and stage. Hormonal influences, particularly androgens like testosterone, play a significant role in the growth of prostate cancer."
+    },
+    "recognition": {
+      "symptoms": [
+        "Urinary frequency",
+        "Nocturia",
+        "Weak or interrupted urine flow",
+        "Hematuria",
+        "Dysuria",
+        "Pelvic pain",
+        "Erectile dysfunction",
+        "Bone pain (in advanced cases)"
+      ],
+      "signs": [
+        "Enlarged prostate on digital rectal examination (DRE)",
+        "Induration or nodularity of the prostate",
+        "Lymphadenopathy (especially in advanced disease)",
+        "Metastatic signs (e.g., bone tenderness)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute urinary retention",
+        "Unexplained weight loss",
+        "Fatigue"
+      ],
+      "redFlags": [
+        "Age > 50 years",
+        "Family history of prostate cancer",
+        "Elevated PSA levels",
+        "Rapidly worsening urinary symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Prostate-specific antigen (PSA) testing",
+        "Digital rectal examination (DRE)"
+      ],
+      "secondLine": [
+        "Transrectal ultrasound (TRUS)",
+        "MRI of the prostate"
+      ],
+      "specialistTests": [
+        "Prostate biopsy (TRUS-guided)",
+        "Bone scan (if metastatic disease suspected)",
+        "CT scan of the abdomen and pelvis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of prostate tissue obtained via biopsy, with Gleason scoring to assess the aggressiveness of the cancer.",
+      "differentials": [
+        "Benign prostatic hyperplasia (BPH)",
+        "Prostatitis",
+        "Bladder cancer",
+        "Urethral stricture disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to urology for acute urinary retention or severe symptoms"
+        ],
+        "secondLine": [
+          "Consider catheterization for urinary obstruction"
+        ],
+        "procedures": [
+          "Transurethral resection of the prostate (TURP) for symptomatic relief in BPH or cancer-related obstruction"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Active surveillance for low-risk localized prostate cancer",
+          "Radical prostatectomy for localized disease",
+          "Radiotherapy (external beam or brachytherapy)"
+        ],
+        "secondLine": [
+          "Hormonal therapy (e.g., androgen deprivation therapy) for advanced disease"
+        ],
+        "monitoring": [
+          "Regular PSA testing and clinical evaluation for disease progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "LHRH agonists (e.g., Leuprolide)",
+          "mechanism": "Suppresses testosterone production by the testes",
+          "dosing": "Leuprolide 7.5 mg IM monthly or 22.5 mg every 3 months",
+          "sideEffects": "Hot flashes, weight gain, decreased libido, osteoporosis",
+          "notes": "Used in advanced prostate cancer to reduce androgen levels."
+        },
+        {
+          "name": "Anti-androgens (e.g., Bicalutamide)",
+          "mechanism": "Blocks the action of testosterone at the prostate receptor",
+          "dosing": "Bicalutamide 50 mg orally daily",
+          "sideEffects": "Gynecomastia, liver function abnormalities, diarrhea",
+          "notes": "Often used in combination with LHRH agonists."
+        },
+        {
+          "name": "Chemotherapy (e.g., Docetaxel)",
+          "mechanism": "Inhibits cancer cell division",
+          "dosing": "Docetaxel 75 mg/m2 IV every 3 weeks",
+          "sideEffects": "Neutropenia, fatigue, nausea, peripheral neuropathy",
+          "notes": "Used in metastatic castration-resistant prostate cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Prostate biopsy",
+          "description": "A procedure to obtain tissue samples from the prostate for histological examination.",
+          "indications": "Elevated PSA levels, abnormal DRE findings, or suspicious imaging.",
+          "risks": "Bleeding, infection, pain, and urinary retention."
+        },
+        {
+          "name": "Radical prostatectomy",
+          "description": "Surgical removal of the prostate gland and some surrounding tissue.",
+          "indications": "Localized prostate cancer with no evidence of metastasis.",
+          "risks": "Incontinence, erectile dysfunction, and surgical complications."
+        },
+        {
+          "name": "Radiotherapy",
+          "description": "Use of high-energy radiation to kill cancer cells.",
+          "indications": "Localized prostate cancer, recurrent disease, or palliative treatment.",
+          "risks": "Fatigue, urinary irritation, bowel symptoms, and secondary malignancies."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for prostate cancer varies widely based on the stage at diagnosis, Gleason score, and PSA levels. Early-stage disease has a high 5-year survival rate, while advanced disease has a poorer prognosis.",
+    "complications": [
+      "Metastasis to bones, lymph nodes, or other organs",
+      "Urinary incontinence",
+      "Erectile dysfunction",
+      "Lymphedema from lymph node dissection",
+      "Secondary malignancies from treatment (e.g., radiation)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of prostate cancer, perform initial investigations (PSA, DRE), and refer patients appropriately. They should also be aware of the management options and potential complications.",
+    "escalation": "Refer to urology for any patient with suspected prostate cancer, especially with elevated PSA, abnormal DRE, or significant urinary symptoms. Escalate care for patients with acute urinary retention or severe symptoms.",
+    "keySafetyConsiderations": "Ensure informed consent for procedures and treatments. Monitor for side effects of medications and complications of surgery. Provide patient education on the importance of follow-up and monitoring."
+  }
+}

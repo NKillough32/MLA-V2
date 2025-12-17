@@ -1,0 +1,122 @@
+{
+  "id": "central_retinal_vein_occlusion",
+  "name": "Central retinal vein occlusion",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:42:56.834675",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Central retinal vein occlusion: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCentral retinal vein occlusion (CRVO) is a condition characterized by the blockage of the central retinal vein, leading to retinal hemorrhage, edema, and potential vision loss.\n\n### Epidemiology\nCRVO is the second most common retinal vascular disorder after diabetic retinopathy, with an incidence of approximately 0.5% in the general population, increasing with age. It is more prevalent in individuals over 60 years and is associated with systemic conditions such as hypertension, diabetes, and hyperlipidemia.\n\n### Essential Pathophysiology\nCRVO occurs when a thrombus forms in the central retinal vein, often due to venous stasis and increased intravascular pressure. This blockage leads to increased venous pressure, resulting in retinal ischemia, hemorrhage, and edema.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden vision loss in one eye\n- Blurred vision\n- Visual field defects\n\n### Key Signs\n- Retinal hemorrhages (flame-shaped and dot-and-blot)\n- Retinal edema\n- Cotton wool spots\n- Optic disc swelling\n\n### Atypical Presentations\n- Bilateral CRVO (rare)\n- CRVO with neovascularization\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of vision loss\n- Severe headache (may indicate associated conditions)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fundoscopy to assess retinal changes\n- Visual acuity testing\n- Optical coherence tomography (OCT)\n\n### Second-line Investigations\n- Fluorescein angiography to evaluate retinal perfusion\n- Visual field testing\n\n### Specialist Tests\n- Ocular ultrasound to rule out other conditions\n- Blood tests for systemic risk factors (e.g., glucose, lipids, coagulation profile)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of sudden vision loss, characteristic fundoscopic findings, and exclusion of other causes of retinal hemorrhage.\n\n### Key Differential Diagnoses to Exclude\n- Diabetic retinopathy\n- Retinal artery occlusion\n- Hypertensive retinopathy\n- Vitreous hemorrhage\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravitreal anti-VEGF injections (e.g., ranibizumab)\n- Intravitreal corticosteroids (e.g., triamcinolone)\n\n#### Second-line Treatments\n- Laser photocoagulation for neovascularization\n\n#### Emergency Procedures\n- Intravitreal injection of anti-VEGF or corticosteroids\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of visual acuity and retinal status\n- Management of underlying systemic conditions (e.g., hypertension, diabetes)\n\n#### Second-line Treatments\n- Consider referral for laser treatment if neovascularization develops\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess for complications and treatment response\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ranibizumab\n- **Mechanism of Action**: Anti-VEGF agent that inhibits vascular endothelial growth factor, reducing retinal edema and neovascularization.\n- **Typical Dosing Range**: Typically administered as an intravitreal injection every month for the first three months, then as needed based on response.\n- **Key Side Effects/Contraindications**: Possible ocular pain, increased intraocular pressure, retinal detachment, endophthalmitis.\n- **When to Use vs. Alternatives**: Considered first-line treatment for CRVO with macular edema.\n\n#### Triamcinolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema in the retina.\n- **Typical Dosing Range**: Intravitreal injection, typically 1 mg/0.1 mL.\n- **Key Side Effects/Contraindications**: Increased intraocular pressure, cataract formation, risk of infection.\n- **When to Use vs. Alternatives**: May be used in cases where anti-VEGF is not suitable.\n\n### Procedures\n\n#### Intravitreal injection\n- **What it Involves**: A procedure where medication is injected directly into the vitreous cavity of the eye.\n- **Indications**: Used for treating macular edema associated with CRVO.\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, transient increase in intraocular pressure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for vision recovery varies; some patients may experience significant improvement, while others may have persistent vision loss. The presence of macular edema and neovascularization worsens the prognosis.\n\n### Important Complications to Watch For\n- Macular edema\n- Neovascular glaucoma\n- Retinal detachment\n- Persistent vision loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of CRVO, perform initial assessments, and refer patients to ophthalmology for further management. They should also manage systemic risk factors and provide patient education.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology for any patient with sudden vision loss and suspected CRVO. Escalate care for patients with severe symptoms or complications such as neovascularization or glaucoma.\n\n### Key Safety Considerations\nEnsure proper aseptic technique during intravitreal injections to minimize infection risk. Monitor for signs of increased intraocular pressure and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "Central retinal vein occlusion (CRVO) is a condition characterized by the blockage of the central retinal vein, leading to retinal hemorrhage, edema, and potential vision loss.",
+      "epidemiology": "CRVO is the second most common retinal vascular disorder after diabetic retinopathy, with an incidence of approximately 0.5% in the general population, increasing with age. It is more prevalent in individuals over 60 years and is associated with systemic conditions such as hypertension, diabetes, and hyperlipidemia.",
+      "pathophysiology": "CRVO occurs when a thrombus forms in the central retinal vein, often due to venous stasis and increased intravascular pressure. This blockage leads to increased venous pressure, resulting in retinal ischemia, hemorrhage, and edema."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden vision loss in one eye",
+        "Blurred vision",
+        "Visual field defects"
+      ],
+      "signs": [
+        "Retinal hemorrhages (flame-shaped and dot-and-blot)",
+        "Retinal edema",
+        "Cotton wool spots",
+        "Optic disc swelling"
+      ],
+      "atypicalPresentations": [
+        "Bilateral CRVO (rare)",
+        "CRVO with neovascularization"
+      ],
+      "redFlags": [
+        "Sudden onset of vision loss",
+        "Severe headache (may indicate associated conditions)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fundoscopy to assess retinal changes",
+        "Visual acuity testing",
+        "Optical coherence tomography (OCT)"
+      ],
+      "secondLine": [
+        "Fluorescein angiography to evaluate retinal perfusion",
+        "Visual field testing"
+      ],
+      "specialistTests": [
+        "Ocular ultrasound to rule out other conditions",
+        "Blood tests for systemic risk factors (e.g., glucose, lipids, coagulation profile)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of sudden vision loss, characteristic fundoscopic findings, and exclusion of other causes of retinal hemorrhage.",
+      "differentials": [
+        "Diabetic retinopathy",
+        "Retinal artery occlusion",
+        "Hypertensive retinopathy",
+        "Vitreous hemorrhage"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravitreal anti-VEGF injections (e.g., ranibizumab)",
+          "Intravitreal corticosteroids (e.g., triamcinolone)"
+        ],
+        "secondLine": [
+          "Laser photocoagulation for neovascularization"
+        ],
+        "procedures": [
+          "Intravitreal injection of anti-VEGF or corticosteroids"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of visual acuity and retinal status",
+          "Management of underlying systemic conditions (e.g., hypertension, diabetes)"
+        ],
+        "secondLine": [
+          "Consider referral for laser treatment if neovascularization develops"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess for complications and treatment response"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ranibizumab",
+          "mechanism": "Anti-VEGF agent that inhibits vascular endothelial growth factor, reducing retinal edema and neovascularization.",
+          "dosing": "Typically administered as an intravitreal injection every month for the first three months, then as needed based on response.",
+          "sideEffects": "Possible ocular pain, increased intraocular pressure, retinal detachment, endophthalmitis.",
+          "notes": "Considered first-line treatment for CRVO with macular edema."
+        },
+        {
+          "name": "Triamcinolone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema in the retina.",
+          "dosing": "Intravitreal injection, typically 1 mg/0.1 mL.",
+          "sideEffects": "Increased intraocular pressure, cataract formation, risk of infection.",
+          "notes": "May be used in cases where anti-VEGF is not suitable."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravitreal injection",
+          "description": "A procedure where medication is injected directly into the vitreous cavity of the eye.",
+          "indications": "Used for treating macular edema associated with CRVO.",
+          "risks": "Infection, bleeding, retinal detachment, transient increase in intraocular pressure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for vision recovery varies; some patients may experience significant improvement, while others may have persistent vision loss. The presence of macular edema and neovascularization worsens the prognosis.",
+    "complications": [
+      "Macular edema",
+      "Neovascular glaucoma",
+      "Retinal detachment",
+      "Persistent vision loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of CRVO, perform initial assessments, and refer patients to ophthalmology for further management. They should also manage systemic risk factors and provide patient education.",
+    "escalation": "Refer to ophthalmology for any patient with sudden vision loss and suspected CRVO. Escalate care for patients with severe symptoms or complications such as neovascularization or glaucoma.",
+    "keySafetyConsiderations": "Ensure proper aseptic technique during intravitreal injections to minimize infection risk. Monitor for signs of increased intraocular pressure and educate patients on the importance of follow-up appointments."
+  }
+}

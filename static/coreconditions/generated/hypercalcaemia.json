@@ -1,0 +1,138 @@
+{
+  "id": "hypercalcaemia",
+  "name": "Hypercalcaemia?",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:35:57.746909",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypercalcaemia?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypercalcaemia is defined as an elevated level of calcium in the blood, typically above 2.6 mmol/L (10.5 mg/dL).\n\n### Epidemiology\nHypercalcaemia is relatively common, occurring in approximately 1% of the general population. It is more prevalent in older adults and can be associated with malignancies, primary hyperparathyroidism, and certain medications.\n\n### Essential Pathophysiology\nHypercalcaemia can result from increased intestinal absorption of calcium, increased renal tubular reabsorption, or increased bone resorption. Common causes include primary hyperparathyroidism, malignancy (especially bone metastases), vitamin D intoxication, and granulomatous diseases.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Polyuria\n- Polydipsia\n- Nausea\n- Vomiting\n- Constipation\n- Abdominal pain\n- Fatigue\n- Muscle weakness\n- Confusion\n- Depression\n\n### Key Signs\n- Dehydration\n- Hypertension\n- Tachycardia\n- Abdominal tenderness\n- Altered mental status\n\n### Atypical Presentations\n- Asymptomatic hypercalcaemia found incidentally on routine blood tests\n- Severe hypercalcaemia leading to acute kidney injury\n\n### Red Flags Requiring Immediate Action\n- Severe hypercalcaemia (>3.0 mmol/L)\n- Acute kidney injury\n- Severe neurological symptoms (confusion, coma)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum calcium (corrected for albumin)\n- Serum phosphate\n- Serum parathyroid hormone (PTH)\n- Vitamin D levels\n\n### Second-line Investigations\n- 24-hour urinary calcium excretion\n- Thyroid function tests\n- Chest X-ray (to check for malignancy or granulomatous disease)\n\n### Specialist Tests\n- CT scan or MRI for suspected malignancy\n- Bone density scan\n- PTHrP (parathyroid hormone-related peptide) levels\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypercalcaemia is based on serum calcium levels >2.6 mmol/L, with further evaluation to determine the underlying cause.\n\n### Key Differential Diagnoses to Exclude\n- Primary hyperparathyroidism\n- Malignancy (e.g., lung cancer, multiple myeloma)\n- Vitamin D intoxication\n- Granulomatous diseases (e.g., sarcoidosis)\n- Thyrotoxicosis\n- Familial hypocalciuric hypercalcaemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hydration with intravenous saline (0.9% NaCl)\n- Bisphosphonates (e.g., zoledronic acid)\n\n#### Second-line Treatments\n- Calcitonin\n- Glucocorticoids (if due to granulomatous disease)\n\n#### Emergency Procedures\n- Dialysis (in severe cases or acute kidney injury)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor calcium levels and symptoms\n- Treat underlying cause (e.g., surgery for primary hyperparathyroidism)\n\n#### Second-line Treatments\n- Bisphosphonates for symptomatic management\n\n#### Monitoring Requirements\n- Regular serum calcium and renal function tests\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Zoledronic acid\n- **Mechanism of Action**: Inhibits osteoclast-mediated bone resorption, reducing calcium release into the bloodstream.\n- **Typical Dosing Range**: 4 mg IV over 15 minutes, may repeat after 7 days if needed.\n- **Key Side Effects/Contraindications**: Fever, flu-like symptoms, renal impairment, osteonecrosis of the jaw.\n- **When to Use vs. Alternatives**: Consider renal function before administration.\n\n#### Calcitonin\n- **Mechanism of Action**: Inhibits osteoclast activity and promotes renal excretion of calcium.\n- **Typical Dosing Range**: 4-8 IU/kg SC or IM every 6-12 hours.\n- **Key Side Effects/Contraindications**: Nausea, flushing, allergic reactions.\n- **When to Use vs. Alternatives**: Less effective than bisphosphonates.\n\n### Procedures\n\n#### Dialysis\n- **What it Involves**: A procedure to remove excess calcium from the blood in cases of severe hypercalcaemia or acute kidney injury.\n- **Indications**: Severe hypercalcaemia (>3.0 mmol/L) with renal failure or symptomatic patients.\n- **Key Risks/Complications**: Infection, hypotension, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hypercalcaemia depends on the underlying cause. If treated promptly, many patients can recover fully. Chronic hypercalcaemia can lead to complications such as kidney stones and renal impairment.\n\n### Important Complications to Watch For\n- Kidney stones\n- Renal failure\n- Osteoporosis\n- Cardiac arrhythmias\n- Neurological complications (confusion, coma)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hypercalcaemia, perform initial investigations, and manage acute cases under supervision. They should also be aware of when to escalate care to senior colleagues.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hypercalcaemia (>3.0 mmol/L), altered mental status, or acute kidney injury, immediate senior review and possible admission to a higher level of care are required.\n\n### Key Safety Considerations\nMonitor renal function closely during treatment, especially with bisphosphonates and hydration. Be vigilant for signs of hypercalcaemia complications, and ensure appropriate follow-up for patients with chronic conditions.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypercalcaemia is defined as an elevated level of calcium in the blood, typically above 2.6 mmol/L (10.5 mg/dL).",
+      "epidemiology": "Hypercalcaemia is relatively common, occurring in approximately 1% of the general population. It is more prevalent in older adults and can be associated with malignancies, primary hyperparathyroidism, and certain medications.",
+      "pathophysiology": "Hypercalcaemia can result from increased intestinal absorption of calcium, increased renal tubular reabsorption, or increased bone resorption. Common causes include primary hyperparathyroidism, malignancy (especially bone metastases), vitamin D intoxication, and granulomatous diseases."
+    },
+    "recognition": {
+      "symptoms": [
+        "Polyuria",
+        "Polydipsia",
+        "Nausea",
+        "Vomiting",
+        "Constipation",
+        "Abdominal pain",
+        "Fatigue",
+        "Muscle weakness",
+        "Confusion",
+        "Depression"
+      ],
+      "signs": [
+        "Dehydration",
+        "Hypertension",
+        "Tachycardia",
+        "Abdominal tenderness",
+        "Altered mental status"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hypercalcaemia found incidentally on routine blood tests",
+        "Severe hypercalcaemia leading to acute kidney injury"
+      ],
+      "redFlags": [
+        "Severe hypercalcaemia (>3.0 mmol/L)",
+        "Acute kidney injury",
+        "Severe neurological symptoms (confusion, coma)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum calcium (corrected for albumin)",
+        "Serum phosphate",
+        "Serum parathyroid hormone (PTH)",
+        "Vitamin D levels"
+      ],
+      "secondLine": [
+        "24-hour urinary calcium excretion",
+        "Thyroid function tests",
+        "Chest X-ray (to check for malignancy or granulomatous disease)"
+      ],
+      "specialistTests": [
+        "CT scan or MRI for suspected malignancy",
+        "Bone density scan",
+        "PTHrP (parathyroid hormone-related peptide) levels"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypercalcaemia is based on serum calcium levels >2.6 mmol/L, with further evaluation to determine the underlying cause.",
+      "differentials": [
+        "Primary hyperparathyroidism",
+        "Malignancy (e.g., lung cancer, multiple myeloma)",
+        "Vitamin D intoxication",
+        "Granulomatous diseases (e.g., sarcoidosis)",
+        "Thyrotoxicosis",
+        "Familial hypocalciuric hypercalcaemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hydration with intravenous saline (0.9% NaCl)",
+          "Bisphosphonates (e.g., zoledronic acid)"
+        ],
+        "secondLine": [
+          "Calcitonin",
+          "Glucocorticoids (if due to granulomatous disease)"
+        ],
+        "procedures": [
+          "Dialysis (in severe cases or acute kidney injury)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor calcium levels and symptoms",
+          "Treat underlying cause (e.g., surgery for primary hyperparathyroidism)"
+        ],
+        "secondLine": [
+          "Bisphosphonates for symptomatic management"
+        ],
+        "monitoring": [
+          "Regular serum calcium and renal function tests"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Zoledronic acid",
+          "mechanism": "Inhibits osteoclast-mediated bone resorption, reducing calcium release into the bloodstream.",
+          "dosing": "4 mg IV over 15 minutes, may repeat after 7 days if needed.",
+          "sideEffects": "Fever, flu-like symptoms, renal impairment, osteonecrosis of the jaw.",
+          "notes": "Consider renal function before administration."
+        },
+        {
+          "name": "Calcitonin",
+          "mechanism": "Inhibits osteoclast activity and promotes renal excretion of calcium.",
+          "dosing": "4-8 IU/kg SC or IM every 6-12 hours.",
+          "sideEffects": "Nausea, flushing, allergic reactions.",
+          "notes": "Less effective than bisphosphonates."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Dialysis",
+          "description": "A procedure to remove excess calcium from the blood in cases of severe hypercalcaemia or acute kidney injury.",
+          "indications": "Severe hypercalcaemia (>3.0 mmol/L) with renal failure or symptomatic patients.",
+          "risks": "Infection, hypotension, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hypercalcaemia depends on the underlying cause. If treated promptly, many patients can recover fully. Chronic hypercalcaemia can lead to complications such as kidney stones and renal impairment.",
+    "complications": [
+      "Kidney stones",
+      "Renal failure",
+      "Osteoporosis",
+      "Cardiac arrhythmias",
+      "Neurological complications (confusion, coma)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hypercalcaemia, perform initial investigations, and manage acute cases under supervision. They should also be aware of when to escalate care to senior colleagues.",
+    "escalation": "If a patient presents with severe hypercalcaemia (>3.0 mmol/L), altered mental status, or acute kidney injury, immediate senior review and possible admission to a higher level of care are required.",
+    "keySafetyConsiderations": "Monitor renal function closely during treatment, especially with bisphosphonates and hydration. Be vigilant for signs of hypercalcaemia complications, and ensure appropriate follow-up for patients with chronic conditions."
+  }
+}

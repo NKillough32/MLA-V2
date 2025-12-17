@@ -1,0 +1,151 @@
+{
+  "id": "obesity",
+  "name": "Obesity",
+  "domains": [
+    "Endocrine",
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T19:36:43.234099",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Obesity: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nObesity is a complex, multifactorial chronic disease characterized by excessive body fat accumulation that presents a risk to health. It is typically defined using the Body Mass Index (BMI), where a BMI of 30 or greater is classified as obese.\n\n### Epidemiology\nObesity is a global epidemic, affecting over 650 million adults worldwide. In the UK, approximately 28% of adults are classified as obese, with higher prevalence in certain demographics and regions.\n\n### Essential Pathophysiology\nObesity results from an energy imbalance where caloric intake exceeds energy expenditure. It involves genetic, environmental, and behavioral factors, leading to alterations in metabolism, insulin resistance, and increased risk of comorbidities such as type 2 diabetes, cardiovascular disease, and certain cancers.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased body weight\n- Fatigue\n- Shortness of breath on exertion\n- Joint pain\n- Sleep apnea\n\n### Key Signs\n- Elevated BMI (≥30)\n- Abdominal obesity (waist circumference >102 cm in men, >88 cm in women)\n- Skin changes (acanthosis nigricans, striae)\n- Hypertension\n- Hyperlipidemia\n\n### Atypical Presentations\n- Obesity hypoventilation syndrome\n- Non-alcoholic fatty liver disease (NAFLD)\n- Psychological issues (depression, anxiety)\n\n### Red Flags Requiring Immediate Action\n- Rapid weight gain\n- Signs of metabolic syndrome (hypertension, dyslipidemia, hyperglycemia)\n- Symptoms of obstructive sleep apnea (snoring, daytime sleepiness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- BMI calculation\n- Waist circumference measurement\n- Blood pressure measurement\n- Basic metabolic panel (glucose, electrolytes)\n\n### Second-line Investigations\n- Lipid profile\n- Liver function tests\n- Thyroid function tests (TSH)\n- HbA1c for diabetes screening\n\n### Specialist Tests\n- Sleep study (polysomnography) for suspected sleep apnea\n- Endoscopy for suspected obesity-related complications (e.g., GERD)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of obesity is primarily based on BMI, with a BMI of 30 or greater indicating obesity. Additional assessments may include waist circumference and evaluation for obesity-related comorbidities.\n\n### Key Differential Diagnoses to Exclude\n- Hypothyroidism\n- Cushing's syndrome\n- Genetic syndromes (e.g., Prader-Willi syndrome)\n- Medications (e.g., antidepressants, antipsychotics)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet and exercise)\n- Behavioral therapy\n- Referral to dietitian\n\n#### Second-line Treatments\n- Pharmacotherapy (if BMI ≥30 or BMI ≥27 with comorbidities)\n- Consideration of bariatric surgery for eligible patients\n\n#### Emergency Procedures\n- Bariatric surgery (e.g., gastric bypass, sleeve gastrectomy)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued lifestyle modifications\n- Regular follow-up and monitoring of weight and comorbidities\n\n#### Second-line Treatments\n- Long-term pharmacotherapy (if initial measures fail)\n- Referral to obesity specialist or multidisciplinary team\n\n#### Monitoring Requirements\n- Regular assessment of weight, BMI, waist circumference, and comorbidities\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Orlistat\n- **Mechanism of Action**: Inhibits pancreatic lipase, reducing fat absorption in the intestine.\n- **Typical Dosing Range**: 120 mg orally three times a day with meals containing fat.\n- **Key Side Effects/Contraindications**: Gastrointestinal side effects (oily stools, flatulence), potential for malabsorption of fat-soluble vitamins.\n- **When to Use vs. Alternatives**: Monitor for vitamin deficiencies; consider supplementation.\n\n#### Liraglutide\n- **Mechanism of Action**: GLP-1 receptor agonist that increases satiety and reduces appetite.\n- **Typical Dosing Range**: 3 mg subcutaneously once daily after titration from lower doses.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, risk of pancreatitis.\n- **When to Use vs. Alternatives**: Monitor for signs of pancreatitis; contraindicated in personal or family history of medullary thyroid carcinoma.\n\n#### Phentermine-topiramate\n- **Mechanism of Action**: Appetite suppressant and anticonvulsant that promotes weight loss.\n- **Typical Dosing Range**: Starting dose of 3.75 mg/23 mg once daily, can be increased after 14 days.\n- **Key Side Effects/Contraindications**: Dry mouth, constipation, insomnia, potential for increased heart rate.\n- **When to Use vs. Alternatives**: Monitor cardiovascular status; contraindicated in pregnancy.\n\n### Procedures\n\n#### Gastric bypass\n- **What it Involves**: Surgical procedure that reduces stomach size and bypasses part of the small intestine.\n- **Indications**: BMI ≥40 or BMI ≥35 with obesity-related comorbidities; failure of non-surgical weight loss methods.\n- **Key Risks/Complications**: Infection, nutritional deficiencies, dumping syndrome, anastomotic leaks.\n\n#### Sleeve gastrectomy\n- **What it Involves**: Surgical procedure that removes a portion of the stomach, reducing its size and capacity.\n- **Indications**: Similar to gastric bypass; often preferred for lower surgical risk.\n- **Key Risks/Complications**: Similar to gastric bypass; potential for reflux and nutritional deficiencies.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nObesity is a chronic condition that can be managed but often requires long-term lifestyle changes and monitoring. Successful weight loss can significantly reduce the risk of obesity-related complications and improve quality of life.\n\n### Important Complications to Watch For\n- Type 2 diabetes\n- Hypertension\n- Cardiovascular disease\n- Obstructive sleep apnea\n- Osteoarthritis\n- Certain cancers (e.g., breast, colon)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize obesity, assess its impact on health, initiate lifestyle interventions, and refer to appropriate specialists for further management. They should also monitor for complications and support patients in weight management efforts.\n\n### When to Escalate to Senior/Specialist\nRefer to a dietitian for nutritional advice, an endocrinologist for metabolic issues, or a bariatric surgeon for surgical options if conservative measures fail or if the patient has significant comorbidities.\n\n### Key Safety Considerations\nEnsure comprehensive assessment of comorbidities before initiating treatment. Monitor for side effects of medications and complications of surgical interventions. Provide education on lifestyle changes and the importance of follow-up care.\n",
+  "content": {
+    "overview": {
+      "definition": "Obesity is a complex, multifactorial chronic disease characterized by excessive body fat accumulation that presents a risk to health. It is typically defined using the Body Mass Index (BMI), where a BMI of 30 or greater is classified as obese.",
+      "epidemiology": "Obesity is a global epidemic, affecting over 650 million adults worldwide. In the UK, approximately 28% of adults are classified as obese, with higher prevalence in certain demographics and regions.",
+      "pathophysiology": "Obesity results from an energy imbalance where caloric intake exceeds energy expenditure. It involves genetic, environmental, and behavioral factors, leading to alterations in metabolism, insulin resistance, and increased risk of comorbidities such as type 2 diabetes, cardiovascular disease, and certain cancers."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased body weight",
+        "Fatigue",
+        "Shortness of breath on exertion",
+        "Joint pain",
+        "Sleep apnea"
+      ],
+      "signs": [
+        "Elevated BMI (≥30)",
+        "Abdominal obesity (waist circumference >102 cm in men, >88 cm in women)",
+        "Skin changes (acanthosis nigricans, striae)",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "atypicalPresentations": [
+        "Obesity hypoventilation syndrome",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Psychological issues (depression, anxiety)"
+      ],
+      "redFlags": [
+        "Rapid weight gain",
+        "Signs of metabolic syndrome (hypertension, dyslipidemia, hyperglycemia)",
+        "Symptoms of obstructive sleep apnea (snoring, daytime sleepiness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "BMI calculation",
+        "Waist circumference measurement",
+        "Blood pressure measurement",
+        "Basic metabolic panel (glucose, electrolytes)"
+      ],
+      "secondLine": [
+        "Lipid profile",
+        "Liver function tests",
+        "Thyroid function tests (TSH)",
+        "HbA1c for diabetes screening"
+      ],
+      "specialistTests": [
+        "Sleep study (polysomnography) for suspected sleep apnea",
+        "Endoscopy for suspected obesity-related complications (e.g., GERD)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of obesity is primarily based on BMI, with a BMI of 30 or greater indicating obesity. Additional assessments may include waist circumference and evaluation for obesity-related comorbidities.",
+      "differentials": [
+        "Hypothyroidism",
+        "Cushing's syndrome",
+        "Genetic syndromes (e.g., Prader-Willi syndrome)",
+        "Medications (e.g., antidepressants, antipsychotics)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Lifestyle modifications (diet and exercise)",
+          "Behavioral therapy",
+          "Referral to dietitian"
+        ],
+        "secondLine": [
+          "Pharmacotherapy (if BMI ≥30 or BMI ≥27 with comorbidities)",
+          "Consideration of bariatric surgery for eligible patients"
+        ],
+        "procedures": [
+          "Bariatric surgery (e.g., gastric bypass, sleeve gastrectomy)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued lifestyle modifications",
+          "Regular follow-up and monitoring of weight and comorbidities"
+        ],
+        "secondLine": [
+          "Long-term pharmacotherapy (if initial measures fail)",
+          "Referral to obesity specialist or multidisciplinary team"
+        ],
+        "monitoring": [
+          "Regular assessment of weight, BMI, waist circumference, and comorbidities"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Orlistat",
+          "mechanism": "Inhibits pancreatic lipase, reducing fat absorption in the intestine.",
+          "dosing": "120 mg orally three times a day with meals containing fat.",
+          "sideEffects": "Gastrointestinal side effects (oily stools, flatulence), potential for malabsorption of fat-soluble vitamins.",
+          "notes": "Monitor for vitamin deficiencies; consider supplementation."
+        },
+        {
+          "name": "Liraglutide",
+          "mechanism": "GLP-1 receptor agonist that increases satiety and reduces appetite.",
+          "dosing": "3 mg subcutaneously once daily after titration from lower doses.",
+          "sideEffects": "Nausea, vomiting, diarrhea, risk of pancreatitis.",
+          "notes": "Monitor for signs of pancreatitis; contraindicated in personal or family history of medullary thyroid carcinoma."
+        },
+        {
+          "name": "Phentermine-topiramate",
+          "mechanism": "Appetite suppressant and anticonvulsant that promotes weight loss.",
+          "dosing": "Starting dose of 3.75 mg/23 mg once daily, can be increased after 14 days.",
+          "sideEffects": "Dry mouth, constipation, insomnia, potential for increased heart rate.",
+          "notes": "Monitor cardiovascular status; contraindicated in pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Gastric bypass",
+          "description": "Surgical procedure that reduces stomach size and bypasses part of the small intestine.",
+          "indications": "BMI ≥40 or BMI ≥35 with obesity-related comorbidities; failure of non-surgical weight loss methods.",
+          "risks": "Infection, nutritional deficiencies, dumping syndrome, anastomotic leaks."
+        },
+        {
+          "name": "Sleeve gastrectomy",
+          "description": "Surgical procedure that removes a portion of the stomach, reducing its size and capacity.",
+          "indications": "Similar to gastric bypass; often preferred for lower surgical risk.",
+          "risks": "Similar to gastric bypass; potential for reflux and nutritional deficiencies."
+        }
+      ]
+    },
+    "prognosis": "Obesity is a chronic condition that can be managed but often requires long-term lifestyle changes and monitoring. Successful weight loss can significantly reduce the risk of obesity-related complications and improve quality of life.",
+    "complications": [
+      "Type 2 diabetes",
+      "Hypertension",
+      "Cardiovascular disease",
+      "Obstructive sleep apnea",
+      "Osteoarthritis",
+      "Certain cancers (e.g., breast, colon)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize obesity, assess its impact on health, initiate lifestyle interventions, and refer to appropriate specialists for further management. They should also monitor for complications and support patients in weight management efforts.",
+    "escalation": "Refer to a dietitian for nutritional advice, an endocrinologist for metabolic issues, or a bariatric surgeon for surgical options if conservative measures fail or if the patient has significant comorbidities.",
+    "keySafetyConsiderations": "Ensure comprehensive assessment of comorbidities before initiating treatment. Monitor for side effects of medications and complications of surgical interventions. Provide education on lifestyle changes and the importance of follow-up care."
+  }
+}

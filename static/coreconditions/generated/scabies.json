@@ -1,0 +1,122 @@
+{
+  "id": "scabies",
+  "name": "Scabies?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:22:40.887307",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Scabies?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nScabies is a highly contagious skin infestation caused by the Sarcoptes scabiei mite, leading to intense itching and a characteristic rash.\n\n### Epidemiology\nScabies affects all socioeconomic groups and is particularly common in crowded living conditions. It is estimated that 300 million cases occur globally each year, with higher prevalence in developing countries.\n\n### Essential Pathophysiology\nThe scabies mite burrows into the stratum corneum of the skin, causing an allergic reaction to the mite, its eggs, and feces. This results in intense pruritus and a rash, primarily due to a Type IV hypersensitivity reaction.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Intense itching, especially at night\n- Rash with papules, vesicles, and crusts\n- Burrows (thin, grayish lines) in the skin\n\n### Key Signs\n- Excoriations due to scratching\n- Secondary bacterial infections (e.g., impetigo)\n- Commonly affected areas include web spaces of fingers, wrists, elbows, axillae, buttocks, and genitalia\n\n### Atypical Presentations\n- Nodular scabies (nodules in the genital area or axillae)\n- Scabies in immunocompromised patients may present with crusted scabies (Norwegian scabies)\n\n### Red Flags Requiring Immediate Action\n- Severe itching leading to significant sleep disturbance\n- Signs of secondary infection (e.g., fever, purulent discharge)\n- Widespread rash or involvement of sensitive areas (face, scalp in infants)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and examination\n- Skin scraping from burrows or lesions for microscopic examination\n\n### Second-line Investigations\n- Dermatoscopy to visualize mites or eggs\n- Tape test to collect skin debris for examination\n\n### Specialist Tests\n- Referral to dermatology for persistent or atypical cases\n- Skin biopsy in uncertain cases to rule out other conditions\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by the presence of typical symptoms, signs, and response to treatment. Confirmation can be made by identifying the mite or its eggs in skin scrapings.\n\n### Key Differential Diagnoses to Exclude\n- Contact dermatitis\n- Eczema\n- Psoriasis\n- Folliculitis\n- Impetigo\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical permethrin 5% cream applied to all areas of the body from the neck down, left on for 8-14 hours, then washed off\n- Oral ivermectin (200 mcg/kg) as an alternative in cases of extensive disease or crusted scabies\n\n#### Second-line Treatments\n- Repeat treatment after 1 week if symptoms persist\n- Consider treating close contacts simultaneously\n\n#### Emergency Procedures\n- None specific for scabies; focus on topical and systemic treatments\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continue topical permethrin or oral ivermectin as needed\n- Educate on hygiene and environmental decontamination\n\n#### Second-line Treatments\n- Consider referral to dermatology for persistent cases\n\n#### Monitoring Requirements\n- Monitor for treatment response and resolution of symptoms\n- Follow-up for secondary infections or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Permethrin 5% cream\n- **Mechanism of Action**: Neurotoxic to mites, causing paralysis and death\n- **Typical Dosing Range**: Apply to all skin surfaces from neck down, leave on for 8-14 hours, then wash off; repeat in 1 week if needed\n- **Key Side Effects/Contraindications**: Local irritation, erythema, burning sensation\n- **When to Use vs. Alternatives**: Safe in pregnancy and lactation; treat all close contacts simultaneously.\n\n#### Ivermectin\n- **Mechanism of Action**: Paralyzes and kills the mites by interfering with their nervous system\n- **Typical Dosing Range**: 200 mcg/kg orally, repeat in 1-2 weeks if necessary\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, dizziness, rarely serious neurological effects\n- **When to Use vs. Alternatives**: Consider in crusted scabies or when topical treatment fails.\n\n### Procedures\n\n#### Skin scraping\n- **What it Involves**: A procedure to collect skin debris from burrows or lesions for microscopic examination\n- **Indications**: To confirm diagnosis in atypical or persistent cases\n- **Key Risks/Complications**: Minimal; may cause local irritation or discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, scabies resolves completely, but itching may persist for several weeks due to residual hypersensitivity. Secondary infections can complicate recovery.\n\n### Important Complications to Watch For\n- Secondary bacterial infections (e.g., impetigo)\n- Crusted scabies in immunocompromised individuals leading to severe infestations\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize scabies, initiate treatment, educate patients on hygiene and environmental decontamination, and refer to dermatology when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology for persistent cases, crusted scabies, or if there are concerns about secondary infections or complications.\n\n### Key Safety Considerations\nEnsure to treat all close contacts simultaneously to prevent reinfestation. Educate patients on the importance of washing clothing and bedding in hot water to eliminate mites.\n",
+  "content": {
+    "overview": {
+      "definition": "Scabies is a highly contagious skin infestation caused by the Sarcoptes scabiei mite, leading to intense itching and a characteristic rash.",
+      "epidemiology": "Scabies affects all socioeconomic groups and is particularly common in crowded living conditions. It is estimated that 300 million cases occur globally each year, with higher prevalence in developing countries.",
+      "pathophysiology": "The scabies mite burrows into the stratum corneum of the skin, causing an allergic reaction to the mite, its eggs, and feces. This results in intense pruritus and a rash, primarily due to a Type IV hypersensitivity reaction."
+    },
+    "recognition": {
+      "symptoms": [
+        "Intense itching, especially at night",
+        "Rash with papules, vesicles, and crusts",
+        "Burrows (thin, grayish lines) in the skin"
+      ],
+      "signs": [
+        "Excoriations due to scratching",
+        "Secondary bacterial infections (e.g., impetigo)",
+        "Commonly affected areas include web spaces of fingers, wrists, elbows, axillae, buttocks, and genitalia"
+      ],
+      "atypicalPresentations": [
+        "Nodular scabies (nodules in the genital area or axillae)",
+        "Scabies in immunocompromised patients may present with crusted scabies (Norwegian scabies)"
+      ],
+      "redFlags": [
+        "Severe itching leading to significant sleep disturbance",
+        "Signs of secondary infection (e.g., fever, purulent discharge)",
+        "Widespread rash or involvement of sensitive areas (face, scalp in infants)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and examination",
+        "Skin scraping from burrows or lesions for microscopic examination"
+      ],
+      "secondLine": [
+        "Dermatoscopy to visualize mites or eggs",
+        "Tape test to collect skin debris for examination"
+      ],
+      "specialistTests": [
+        "Referral to dermatology for persistent or atypical cases",
+        "Skin biopsy in uncertain cases to rule out other conditions"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by the presence of typical symptoms, signs, and response to treatment. Confirmation can be made by identifying the mite or its eggs in skin scrapings.",
+      "differentials": [
+        "Contact dermatitis",
+        "Eczema",
+        "Psoriasis",
+        "Folliculitis",
+        "Impetigo"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical permethrin 5% cream applied to all areas of the body from the neck down, left on for 8-14 hours, then washed off",
+          "Oral ivermectin (200 mcg/kg) as an alternative in cases of extensive disease or crusted scabies"
+        ],
+        "secondLine": [
+          "Repeat treatment after 1 week if symptoms persist",
+          "Consider treating close contacts simultaneously"
+        ],
+        "procedures": [
+          "None specific for scabies; focus on topical and systemic treatments"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continue topical permethrin or oral ivermectin as needed",
+          "Educate on hygiene and environmental decontamination"
+        ],
+        "secondLine": [
+          "Consider referral to dermatology for persistent cases"
+        ],
+        "monitoring": [
+          "Monitor for treatment response and resolution of symptoms",
+          "Follow-up for secondary infections or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Permethrin 5% cream",
+          "mechanism": "Neurotoxic to mites, causing paralysis and death",
+          "dosing": "Apply to all skin surfaces from neck down, leave on for 8-14 hours, then wash off; repeat in 1 week if needed",
+          "sideEffects": "Local irritation, erythema, burning sensation",
+          "notes": "Safe in pregnancy and lactation; treat all close contacts simultaneously."
+        },
+        {
+          "name": "Ivermectin",
+          "mechanism": "Paralyzes and kills the mites by interfering with their nervous system",
+          "dosing": "200 mcg/kg orally, repeat in 1-2 weeks if necessary",
+          "sideEffects": "Nausea, diarrhea, dizziness, rarely serious neurological effects",
+          "notes": "Consider in crusted scabies or when topical treatment fails."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skin scraping",
+          "description": "A procedure to collect skin debris from burrows or lesions for microscopic examination",
+          "indications": "To confirm diagnosis in atypical or persistent cases",
+          "risks": "Minimal; may cause local irritation or discomfort."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, scabies resolves completely, but itching may persist for several weeks due to residual hypersensitivity. Secondary infections can complicate recovery.",
+    "complications": [
+      "Secondary bacterial infections (e.g., impetigo)",
+      "Crusted scabies in immunocompromised individuals leading to severe infestations"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize scabies, initiate treatment, educate patients on hygiene and environmental decontamination, and refer to dermatology when necessary.",
+    "escalation": "Refer to dermatology for persistent cases, crusted scabies, or if there are concerns about secondary infections or complications.",
+    "keySafetyConsiderations": "Ensure to treat all close contacts simultaneously to prevent reinfestation. Educate patients on the importance of washing clothing and bedding in hot water to eliminate mites."
+  }
+}

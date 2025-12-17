@@ -1,0 +1,118 @@
+{
+  "id": "scaphoid_fracture",
+  "name": "Scaphoid fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:29:34.868792",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Scaphoid fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA scaphoid fracture is a break in the scaphoid bone, one of the carpal bones in the wrist, typically resulting from a fall onto an outstretched hand.\n\n### Epidemiology\nScaphoid fractures account for approximately 60-70% of all carpal fractures, with a higher incidence in young adults (ages 15-30) and males due to higher activity levels.\n\n### Essential Pathophysiology\nThe scaphoid bone has a unique blood supply that is retrograde, meaning that fractures can disrupt blood flow, leading to avascular necrosis (AVN) if not treated properly.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Wrist pain, especially in the anatomical snuffbox\n- Swelling around the wrist\n- Decreased range of motion in the wrist\n\n### Key Signs\n- Tenderness in the anatomical snuffbox\n- Swelling over the scaphoid area\n- Pain on axial loading of the thumb\n\n### Atypical Presentations\n- Pain may be delayed in presentation, sometimes appearing days after the injury\n- Symptoms may mimic wrist sprains\n\n### Red Flags Requiring Immediate Action\n- Severe pain that does not improve with rest\n- Signs of compartment syndrome (e.g., severe swelling, pain on passive stretching)\n- Neurological symptoms (numbness, tingling in the hand)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the wrist (AP and lateral views)\n\n### Second-line Investigations\n- Repeat X-ray after 1-2 weeks if initial X-ray is negative but suspicion remains\n- MRI of the wrist for suspected occult fractures\n- CT scan for complex cases or surgical planning\n\n### Specialist Tests\n- Bone scan (if MRI is unavailable)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical examination, imaging findings, and the presence of tenderness in the anatomical snuffbox following a mechanism of injury consistent with a scaphoid fracture.\n\n### Key Differential Diagnoses to Exclude\n- Wrist sprain\n- Distal radius fracture\n- Lunate fracture\n- Triquetrum fracture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immobilization with a thumb spica cast for 6-12 weeks\n\n#### Second-line Treatments\n- Surgical intervention (e.g., percutaneous screw fixation) if there is non-union or displacement\n\n#### Emergency Procedures\n- Open reduction and internal fixation (ORIF) for displaced fractures or non-union cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued immobilization and rehabilitation exercises\n\n#### Second-line Treatments\n- Surgical intervention if there is persistent pain or non-union\n\n#### Monitoring Requirements\n- Regular follow-up with X-rays to assess healing and alignment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### NSAIDs (e.g., Ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory and analgesic effects\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues or gastrointestinal history.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Preferred for patients with gastrointestinal issues.\n\n### Procedures\n\n#### Open Reduction and Internal Fixation (ORIF)\n- **What it Involves**: Surgical procedure to realign the fractured scaphoid and secure it with screws or pins.\n- **Indications**: Displaced fractures, non-union, or fractures with avascular necrosis risk.\n- **Key Risks/Complications**: Infection, nerve injury, non-union, stiffness of the wrist.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for scaphoid fractures is generally good, with most patients returning to normal function. However, complications such as non-union or AVN can lead to chronic pain and functional impairment.\n\n### Important Complications to Watch For\n- Non-union of the fracture\n- Avascular necrosis of the scaphoid\n- Arthritis of the wrist\n- Chronic pain syndrome\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, provide initial management, and refer to orthopaedics for further evaluation and treatment as needed.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedic team if there is suspicion of a fracture with negative X-rays, if there are signs of complications, or if surgical intervention is required.\n\n### Key Safety Considerations\nEnsure proper immobilization to prevent further injury, monitor for signs of complications, and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "A scaphoid fracture is a break in the scaphoid bone, one of the carpal bones in the wrist, typically resulting from a fall onto an outstretched hand.",
+      "epidemiology": "Scaphoid fractures account for approximately 60-70% of all carpal fractures, with a higher incidence in young adults (ages 15-30) and males due to higher activity levels.",
+      "pathophysiology": "The scaphoid bone has a unique blood supply that is retrograde, meaning that fractures can disrupt blood flow, leading to avascular necrosis (AVN) if not treated properly."
+    },
+    "recognition": {
+      "symptoms": [
+        "Wrist pain, especially in the anatomical snuffbox",
+        "Swelling around the wrist",
+        "Decreased range of motion in the wrist"
+      ],
+      "signs": [
+        "Tenderness in the anatomical snuffbox",
+        "Swelling over the scaphoid area",
+        "Pain on axial loading of the thumb"
+      ],
+      "atypicalPresentations": [
+        "Pain may be delayed in presentation, sometimes appearing days after the injury",
+        "Symptoms may mimic wrist sprains"
+      ],
+      "redFlags": [
+        "Severe pain that does not improve with rest",
+        "Signs of compartment syndrome (e.g., severe swelling, pain on passive stretching)",
+        "Neurological symptoms (numbness, tingling in the hand)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the wrist (AP and lateral views)"
+      ],
+      "secondLine": [
+        "Repeat X-ray after 1-2 weeks if initial X-ray is negative but suspicion remains",
+        "MRI of the wrist for suspected occult fractures",
+        "CT scan for complex cases or surgical planning"
+      ],
+      "specialistTests": [
+        "Bone scan (if MRI is unavailable)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical examination, imaging findings, and the presence of tenderness in the anatomical snuffbox following a mechanism of injury consistent with a scaphoid fracture.",
+      "differentials": [
+        "Wrist sprain",
+        "Distal radius fracture",
+        "Lunate fracture",
+        "Triquetrum fracture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immobilization with a thumb spica cast for 6-12 weeks"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., percutaneous screw fixation) if there is non-union or displacement"
+        ],
+        "procedures": [
+          "Open reduction and internal fixation (ORIF) for displaced fractures or non-union cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued immobilization and rehabilitation exercises"
+        ],
+        "secondLine": [
+          "Surgical intervention if there is persistent pain or non-union"
+        ],
+        "monitoring": [
+          "Regular follow-up with X-rays to assess healing and alignment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "NSAIDs (e.g., Ibuprofen)",
+          "mechanism": "Anti-inflammatory and analgesic effects",
+          "dosing": "400-600 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal issues or gastrointestinal history."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours as needed, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Preferred for patients with gastrointestinal issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Open Reduction and Internal Fixation (ORIF)",
+          "description": "Surgical procedure to realign the fractured scaphoid and secure it with screws or pins.",
+          "indications": "Displaced fractures, non-union, or fractures with avascular necrosis risk.",
+          "risks": "Infection, nerve injury, non-union, stiffness of the wrist."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for scaphoid fractures is generally good, with most patients returning to normal function. However, complications such as non-union or AVN can lead to chronic pain and functional impairment.",
+    "complications": [
+      "Non-union of the fracture",
+      "Avascular necrosis of the scaphoid",
+      "Arthritis of the wrist",
+      "Chronic pain syndrome"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, provide initial management, and refer to orthopaedics for further evaluation and treatment as needed.",
+    "escalation": "Refer to orthopaedic team if there is suspicion of a fracture with negative X-rays, if there are signs of complications, or if surgical intervention is required.",
+    "keySafetyConsiderations": "Ensure proper immobilization to prevent further injury, monitor for signs of complications, and educate patients on the importance of follow-up appointments."
+  }
+}

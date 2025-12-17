@@ -1,0 +1,156 @@
+{
+  "id": "evaluation_of_deteriorating_patient",
+  "name": "Evaluation of deteriorating patient",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:02:10.610202",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Evaluation of deteriorating patient: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThe evaluation of a deteriorating patient involves the systematic assessment of a patient whose clinical condition is worsening, requiring immediate medical attention to prevent further decline or potential death.\n\n### Epidemiology\nDeteriorating patients are common in hospital settings, with studies indicating that up to 20% of patients may experience clinical deterioration during their hospital stay, often leading to increased morbidity and mortality.\n\n### Essential Pathophysiology\nDeterioration can result from various underlying pathophysiological processes, including but not limited to sepsis, respiratory failure, cardiac events, and metabolic derangements. Understanding the underlying cause is crucial for effective management.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shortness of breath\n- Chest pain\n- Altered mental status\n- Severe fatigue\n- Nausea or vomiting\n- Dizziness or lightheadedness\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Hypoxia\n- Altered level of consciousness\n- Increased respiratory rate\n- Fever or hypothermia\n\n### Atypical Presentations\n- Elderly patients may present with confusion rather than classic symptoms\n- Patients with chronic illness may have subtle changes in baseline function\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in vital signs\n- Sudden change in mental status\n- Persistent hypotension despite fluid resuscitation\n- Severe respiratory distress\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Vital signs monitoring (heart rate, blood pressure, respiratory rate, oxygen saturation)\n- Blood tests (CBC, electrolytes, renal function, lactate)\n- ECG\n- Chest X-ray\n\n### Second-line Investigations\n- CT scan of the chest/abdomen if indicated\n- Arterial blood gas analysis\n- Cardiac biomarkers (e.g., troponin)\n\n### Specialist Tests\n- Echocardiogram\n- CT pulmonary angiography for suspected PE\n- Lumbar puncture if CNS infection is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of a deteriorating patient is based on the presence of clinical signs and symptoms indicating a significant change from baseline, often requiring immediate intervention.\n\n### Key Differential Diagnoses to Exclude\n- Sepsis\n- Acute coronary syndrome\n- Pulmonary embolism\n- Acute respiratory distress syndrome (ARDS)\n- Stroke\n- Acute kidney injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate assessment of airway, breathing, circulation (ABCs)\n- Administer supplemental oxygen if hypoxic\n- IV fluids for hypotension\n- Call for senior help or rapid response team\n\n#### Second-line Treatments\n- Initiate sepsis protocol if infection is suspected\n- Administer medications as per underlying cause (e.g., bronchodilators for asthma, nitroglycerin for chest pain)\n\n#### Emergency Procedures\n- Endotracheal intubation for respiratory failure\n- Central venous catheter insertion for fluid resuscitation\n- Chest drain for pleural effusion or pneumothorax\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of vital signs and clinical status\n- Patient education on recognizing early signs of deterioration\n- Chronic disease management plans\n\n#### Second-line Treatments\n- Referral to specialist services for chronic conditions (e.g., cardiology, pulmonology)\n- Palliative care involvement for end-stage diseases\n\n#### Monitoring Requirements\n- Regular review of laboratory results\n- Assessment of response to treatment\n- Adjustment of management plans based on clinical status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxygen\n- **Mechanism of Action**: Increases oxygen delivery to tissues\n- **Typical Dosing Range**: Titrate to maintain SpO2 > 94%\n- **Key Side Effects/Contraindications**: Oxygen toxicity, especially in COPD patients\n- **When to Use vs. Alternatives**: Use cautiously in patients with chronic lung disease.\n\n#### Fluid resuscitation (e.g., Normal Saline, Lactated Ringer's)\n- **Mechanism of Action**: Restores intravascular volume\n- **Typical Dosing Range**: Bolus of 500-1000 mL IV over 30 minutes, reassess after each bolus\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances\n- **When to Use vs. Alternatives**: Monitor for signs of fluid overload.\n\n#### Norepinephrine\n- **Mechanism of Action**: Vasoconstrictor that increases blood pressure\n- **Typical Dosing Range**: Start at 0.05-0.5 mcg/kg/min, titrate to effect\n- **Key Side Effects/Contraindications**: Tachycardia, peripheral ischemia\n- **When to Use vs. Alternatives**: Consider in septic shock after fluid resuscitation.\n\n### Procedures\n\n#### Endotracheal intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway\n- **Indications**: Respiratory failure, inability to protect airway, severe hypoxia\n- **Key Risks/Complications**: Esophageal intubation, trauma to airway, infection.\n\n#### Central venous catheter insertion\n- **What it Involves**: Placement of a catheter into a central vein for medication administration or fluid resuscitation\n- **Indications**: Need for central access, fluid resuscitation in shock\n- **Key Risks/Complications**: Infection, pneumothorax, thrombosis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of a deteriorating patient depends on the underlying cause, timeliness of intervention, and overall health status. Early recognition and management can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Multi-organ failure\n- Cardiac arrest\n- Prolonged hospitalization\n- Increased healthcare costs\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in the early recognition of deteriorating patients, initiating appropriate investigations, and managing acute interventions while escalating care to senior clinicians as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient is deteriorating, escalate care by calling for senior medical staff or the rapid response team, especially if there are red flags present or if the patient is unresponsive to initial management.\n\n### Key Safety Considerations\nEnsure accurate and timely documentation of vital signs and clinical changes, maintain clear communication with the healthcare team, and adhere to protocols for monitoring and managing deteriorating patients.\n",
+  "content": {
+    "overview": {
+      "definition": "The evaluation of a deteriorating patient involves the systematic assessment of a patient whose clinical condition is worsening, requiring immediate medical attention to prevent further decline or potential death.",
+      "epidemiology": "Deteriorating patients are common in hospital settings, with studies indicating that up to 20% of patients may experience clinical deterioration during their hospital stay, often leading to increased morbidity and mortality.",
+      "pathophysiology": "Deterioration can result from various underlying pathophysiological processes, including but not limited to sepsis, respiratory failure, cardiac events, and metabolic derangements. Understanding the underlying cause is crucial for effective management."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shortness of breath",
+        "Chest pain",
+        "Altered mental status",
+        "Severe fatigue",
+        "Nausea or vomiting",
+        "Dizziness or lightheadedness"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Hypoxia",
+        "Altered level of consciousness",
+        "Increased respiratory rate",
+        "Fever or hypothermia"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion rather than classic symptoms",
+        "Patients with chronic illness may have subtle changes in baseline function"
+      ],
+      "redFlags": [
+        "Rapid deterioration in vital signs",
+        "Sudden change in mental status",
+        "Persistent hypotension despite fluid resuscitation",
+        "Severe respiratory distress"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Vital signs monitoring (heart rate, blood pressure, respiratory rate, oxygen saturation)",
+        "Blood tests (CBC, electrolytes, renal function, lactate)",
+        "ECG",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "CT scan of the chest/abdomen if indicated",
+        "Arterial blood gas analysis",
+        "Cardiac biomarkers (e.g., troponin)"
+      ],
+      "specialistTests": [
+        "Echocardiogram",
+        "CT pulmonary angiography for suspected PE",
+        "Lumbar puncture if CNS infection is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of a deteriorating patient is based on the presence of clinical signs and symptoms indicating a significant change from baseline, often requiring immediate intervention.",
+      "differentials": [
+        "Sepsis",
+        "Acute coronary syndrome",
+        "Pulmonary embolism",
+        "Acute respiratory distress syndrome (ARDS)",
+        "Stroke",
+        "Acute kidney injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate assessment of airway, breathing, circulation (ABCs)",
+          "Administer supplemental oxygen if hypoxic",
+          "IV fluids for hypotension",
+          "Call for senior help or rapid response team"
+        ],
+        "secondLine": [
+          "Initiate sepsis protocol if infection is suspected",
+          "Administer medications as per underlying cause (e.g., bronchodilators for asthma, nitroglycerin for chest pain)"
+        ],
+        "procedures": [
+          "Endotracheal intubation for respiratory failure",
+          "Central venous catheter insertion for fluid resuscitation",
+          "Chest drain for pleural effusion or pneumothorax"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of vital signs and clinical status",
+          "Patient education on recognizing early signs of deterioration",
+          "Chronic disease management plans"
+        ],
+        "secondLine": [
+          "Referral to specialist services for chronic conditions (e.g., cardiology, pulmonology)",
+          "Palliative care involvement for end-stage diseases"
+        ],
+        "monitoring": [
+          "Regular review of laboratory results",
+          "Assessment of response to treatment",
+          "Adjustment of management plans based on clinical status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxygen",
+          "mechanism": "Increases oxygen delivery to tissues",
+          "dosing": "Titrate to maintain SpO2 > 94%",
+          "sideEffects": "Oxygen toxicity, especially in COPD patients",
+          "notes": "Use cautiously in patients with chronic lung disease."
+        },
+        {
+          "name": "Fluid resuscitation (e.g., Normal Saline, Lactated Ringer's)",
+          "mechanism": "Restores intravascular volume",
+          "dosing": "Bolus of 500-1000 mL IV over 30 minutes, reassess after each bolus",
+          "sideEffects": "Fluid overload, electrolyte imbalances",
+          "notes": "Monitor for signs of fluid overload."
+        },
+        {
+          "name": "Norepinephrine",
+          "mechanism": "Vasoconstrictor that increases blood pressure",
+          "dosing": "Start at 0.05-0.5 mcg/kg/min, titrate to effect",
+          "sideEffects": "Tachycardia, peripheral ischemia",
+          "notes": "Consider in septic shock after fluid resuscitation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endotracheal intubation",
+          "description": "Placement of a tube into the trachea to secure the airway",
+          "indications": "Respiratory failure, inability to protect airway, severe hypoxia",
+          "risks": "Esophageal intubation, trauma to airway, infection."
+        },
+        {
+          "name": "Central venous catheter insertion",
+          "description": "Placement of a catheter into a central vein for medication administration or fluid resuscitation",
+          "indications": "Need for central access, fluid resuscitation in shock",
+          "risks": "Infection, pneumothorax, thrombosis."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of a deteriorating patient depends on the underlying cause, timeliness of intervention, and overall health status. Early recognition and management can significantly improve outcomes.",
+    "complications": [
+      "Multi-organ failure",
+      "Cardiac arrest",
+      "Prolonged hospitalization",
+      "Increased healthcare costs"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in the early recognition of deteriorating patients, initiating appropriate investigations, and managing acute interventions while escalating care to senior clinicians as needed.",
+    "escalation": "If a patient is deteriorating, escalate care by calling for senior medical staff or the rapid response team, especially if there are red flags present or if the patient is unresponsive to initial management.",
+    "keySafetyConsiderations": "Ensure accurate and timely documentation of vital signs and clinical changes, maintain clear communication with the healthcare team, and adhere to protocols for monitoring and managing deteriorating patients."
+  }
+}

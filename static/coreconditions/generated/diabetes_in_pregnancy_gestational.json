@@ -1,0 +1,122 @@
+{
+  "id": "diabetes_in_pregnancy_gestational",
+  "name": "Diabetes in pregnancy-Gestational",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:29:00.643005",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetes in pregnancy-Gestational: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGestational diabetes mellitus (GDM) is defined as glucose intolerance that is first recognized during pregnancy. It typically occurs in the second or third trimester and resolves after delivery in most cases.\n\n### Epidemiology\nGDM affects approximately 2-10% of pregnancies, with higher prevalence in certain populations, including those with obesity, a family history of diabetes, and certain ethnic groups (e.g., Hispanic, African American, Native American, Asian).\n\n### Essential Pathophysiology\nDuring pregnancy, hormonal changes lead to insulin resistance, particularly due to placental hormones such as human placental lactogen (hPL) and cortisol. In women with GDM, the pancreas cannot produce enough insulin to overcome this resistance, leading to hyperglycemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased thirst (polydipsia)\n- Increased urination (polyuria)\n- Fatigue\n- Nausea\n- Blurred vision\n\n### Key Signs\n- Elevated blood glucose levels on testing\n- Obesity or excessive weight gain during pregnancy\n- Signs of dehydration\n\n### Atypical Presentations\n- Asymptomatic in many cases; often diagnosed through routine screening\n\n### Red Flags Requiring Immediate Action\n- Severe hyperglycemia (e.g., blood glucose > 200 mg/dL)\n- Signs of ketoacidosis (nausea, vomiting, abdominal pain, altered mental status)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fasting plasma glucose (FPG)\n- Oral glucose tolerance test (OGTT)\n\n### Second-line Investigations\n- HbA1c (if needed for further assessment)\n- Urine ketones (to assess for ketoacidosis)\n\n### Specialist Tests\n- Referral to endocrinology or maternal-fetal medicine for complex cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of GDM is made if any of the following are met during the OGTT: Fasting ≥ 92 mg/dL (5.1 mmol/L), 1-hour ≥ 180 mg/dL (10.0 mmol/L), 2-hour ≥ 153 mg/dL (8.5 mmol/L).\n\n### Key Differential Diagnoses to Exclude\n- Type 1 diabetes\n- Type 2 diabetes\n- Diabetes insipidus\n- Hyperglycemia due to stress or illness\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate dietary modification (low glycemic index diet)\n- Blood glucose monitoring\n\n#### Second-line Treatments\n- Insulin therapy if blood glucose targets are not met with diet alone\n\n#### Emergency Procedures\n- Education on self-monitoring of blood glucose\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued dietary management and physical activity\n\n#### Second-line Treatments\n- Insulin or oral hypoglycemic agents (e.g., metformin) if needed\n\n#### Monitoring Requirements\n- Regular blood glucose checks (fasting and postprandial)\n- Fetal monitoring (ultrasound, non-stress tests)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Insulin\n- **Mechanism of Action**: Increases glucose uptake by cells and decreases hepatic glucose production.\n- **Typical Dosing Range**: Individualized; typically starts at 0.7-1.0 units/kg/day, adjusted based on blood glucose levels.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain, injection site reactions.\n- **When to Use vs. Alternatives**: Insulin is the preferred treatment for GDM when diet and exercise are insufficient.\n\n#### Metformin\n- **Mechanism of Action**: Decreases hepatic glucose production and increases insulin sensitivity.\n- **Typical Dosing Range**: 500 mg orally once daily, may increase to 2000 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: Considered for women who refuse insulin or have difficulty with injections.\n\n### Procedures\n\n#### Education on self-monitoring of blood glucose\n- **What it Involves**: Teaching patients how to use a glucometer to monitor their blood glucose levels at home.\n- **Indications**: To empower patients to manage their blood glucose levels effectively.\n- **Key Risks/Complications**: Potential for inaccurate readings if not performed correctly.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost women with GDM will have normal blood glucose levels postpartum, but they are at increased risk of developing type 2 diabetes later in life. Close follow-up is essential.\n\n### Important Complications to Watch For\n- Macrosomia (large baby)\n- Preterm birth\n- Increased risk of cesarean delivery\n- Neonatal hypoglycemia\n- Preeclampsia\n- Long-term risk of obesity and diabetes in the child.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize risk factors for GDM, perform initial screening, provide education on lifestyle modifications, and initiate insulin therapy if necessary. They should also monitor for complications and ensure appropriate follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to an endocrinologist or maternal-fetal medicine specialist if blood glucose levels are poorly controlled, if there are complications, or if the patient has other comorbidities.\n\n### Key Safety Considerations\nEnsure accurate blood glucose monitoring, educate patients on recognizing signs of hypoglycemia, and provide clear instructions on when to seek medical help.\n",
+  "content": {
+    "overview": {
+      "definition": "Gestational diabetes mellitus (GDM) is defined as glucose intolerance that is first recognized during pregnancy. It typically occurs in the second or third trimester and resolves after delivery in most cases.",
+      "epidemiology": "GDM affects approximately 2-10% of pregnancies, with higher prevalence in certain populations, including those with obesity, a family history of diabetes, and certain ethnic groups (e.g., Hispanic, African American, Native American, Asian).",
+      "pathophysiology": "During pregnancy, hormonal changes lead to insulin resistance, particularly due to placental hormones such as human placental lactogen (hPL) and cortisol. In women with GDM, the pancreas cannot produce enough insulin to overcome this resistance, leading to hyperglycemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased thirst (polydipsia)",
+        "Increased urination (polyuria)",
+        "Fatigue",
+        "Nausea",
+        "Blurred vision"
+      ],
+      "signs": [
+        "Elevated blood glucose levels on testing",
+        "Obesity or excessive weight gain during pregnancy",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in many cases; often diagnosed through routine screening"
+      ],
+      "redFlags": [
+        "Severe hyperglycemia (e.g., blood glucose > 200 mg/dL)",
+        "Signs of ketoacidosis (nausea, vomiting, abdominal pain, altered mental status)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fasting plasma glucose (FPG)",
+        "Oral glucose tolerance test (OGTT)"
+      ],
+      "secondLine": [
+        "HbA1c (if needed for further assessment)",
+        "Urine ketones (to assess for ketoacidosis)"
+      ],
+      "specialistTests": [
+        "Referral to endocrinology or maternal-fetal medicine for complex cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of GDM is made if any of the following are met during the OGTT: Fasting ≥ 92 mg/dL (5.1 mmol/L), 1-hour ≥ 180 mg/dL (10.0 mmol/L), 2-hour ≥ 153 mg/dL (8.5 mmol/L).",
+      "differentials": [
+        "Type 1 diabetes",
+        "Type 2 diabetes",
+        "Diabetes insipidus",
+        "Hyperglycemia due to stress or illness"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate dietary modification (low glycemic index diet)",
+          "Blood glucose monitoring"
+        ],
+        "secondLine": [
+          "Insulin therapy if blood glucose targets are not met with diet alone"
+        ],
+        "procedures": [
+          "Education on self-monitoring of blood glucose"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued dietary management and physical activity"
+        ],
+        "secondLine": [
+          "Insulin or oral hypoglycemic agents (e.g., metformin) if needed"
+        ],
+        "monitoring": [
+          "Regular blood glucose checks (fasting and postprandial)",
+          "Fetal monitoring (ultrasound, non-stress tests)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Insulin",
+          "mechanism": "Increases glucose uptake by cells and decreases hepatic glucose production.",
+          "dosing": "Individualized; typically starts at 0.7-1.0 units/kg/day, adjusted based on blood glucose levels.",
+          "sideEffects": "Hypoglycemia, weight gain, injection site reactions.",
+          "notes": "Insulin is the preferred treatment for GDM when diet and exercise are insufficient."
+        },
+        {
+          "name": "Metformin",
+          "mechanism": "Decreases hepatic glucose production and increases insulin sensitivity.",
+          "dosing": "500 mg orally once daily, may increase to 2000 mg/day in divided doses.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "Considered for women who refuse insulin or have difficulty with injections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Education on self-monitoring of blood glucose",
+          "description": "Teaching patients how to use a glucometer to monitor their blood glucose levels at home.",
+          "indications": "To empower patients to manage their blood glucose levels effectively.",
+          "risks": "Potential for inaccurate readings if not performed correctly."
+        }
+      ]
+    },
+    "prognosis": "Most women with GDM will have normal blood glucose levels postpartum, but they are at increased risk of developing type 2 diabetes later in life. Close follow-up is essential.",
+    "complications": [
+      "Macrosomia (large baby)",
+      "Preterm birth",
+      "Increased risk of cesarean delivery",
+      "Neonatal hypoglycemia",
+      "Preeclampsia",
+      "Long-term risk of obesity and diabetes in the child."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize risk factors for GDM, perform initial screening, provide education on lifestyle modifications, and initiate insulin therapy if necessary. They should also monitor for complications and ensure appropriate follow-up care.",
+    "escalation": "Refer to an endocrinologist or maternal-fetal medicine specialist if blood glucose levels are poorly controlled, if there are complications, or if the patient has other comorbidities.",
+    "keySafetyConsiderations": "Ensure accurate blood glucose monitoring, educate patients on recognizing signs of hypoglycemia, and provide clear instructions on when to seek medical help."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "varicose_veins",
+  "name": "Varicose veins",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:22:06.538883",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Varicose veins: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVaricose veins are dilated, tortuous veins that typically occur in the lower extremities due to valve incompetence, leading to venous hypertension.\n\n### Epidemiology\nVaricose veins affect approximately 20-25% of adults, with a higher prevalence in women and those with a family history. Risk factors include age, obesity, pregnancy, and prolonged standing.\n\n### Essential Pathophysiology\nThe condition arises from the failure of venous valves, leading to increased venous pressure and subsequent dilation of the veins. This can result in venous stasis, inflammation, and skin changes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Aching or heavy legs\n- Swelling in the legs or ankles\n- Itching or burning sensation over the veins\n- Cramping in the legs, especially at night\n\n### Key Signs\n- Visible, bulging veins\n- Skin changes (e.g., discoloration, eczema)\n- Swelling of the legs\n- Ulceration in severe cases\n\n### Atypical Presentations\n- Varicose veins in unusual locations (e.g., pelvic varicosities)\n- Acute venous thrombosis presenting as varicose veins\n\n### Red Flags Requiring Immediate Action\n- Severe pain or swelling in the leg\n- Signs of infection (redness, warmth, fever)\n- Non-healing ulcers\n- Sudden onset of varicose veins\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Doppler ultrasound\n\n### Second-line Investigations\n- Duplex ultrasound\n\n### Specialist Tests\n- Venography (rarely used)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the appearance of the veins and symptoms. Duplex ultrasound can confirm valve incompetence and assess the severity.\n\n### Key Differential Diagnoses to Exclude\n- Chronic venous insufficiency\n- Deep vein thrombosis\n- Lymphoedema\n- Arteriovenous malformations\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Compression stockings\n- Elevation of the legs\n- Analgesia for pain relief\n\n#### Second-line Treatments\n- Referral for surgical evaluation if complications arise\n\n#### Emergency Procedures\n- Sclerotherapy for symptomatic relief\n- Endovenous laser treatment (EVLT) for larger veins\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Compression therapy (stockings)\n- Lifestyle modifications (weight loss, exercise)\n\n#### Second-line Treatments\n- Sclerotherapy\n- Endovenous laser treatment (EVLT)\n- Surgical options (stripping, ligation)\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptoms and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Compression stockings\n- **Mechanism of Action**: Provides external pressure to the veins, improving venous return.\n- **Typical Dosing Range**: Worn during the day, fitted to the individual.\n- **Key Side Effects/Contraindications**: Skin irritation, discomfort if not fitted properly.\n- **When to Use vs. Alternatives**: Essential for conservative management.\n\n#### Analgesics (e.g., paracetamol, NSAIDs)\n- **Mechanism of Action**: Reduces pain and inflammation.\n- **Typical Dosing Range**: As per standard dosing guidelines.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset (NSAIDs), liver toxicity (high doses of paracetamol).\n- **When to Use vs. Alternatives**: Use as needed for symptomatic relief.\n\n### Procedures\n\n#### Sclerotherapy\n- **What it Involves**: Injection of a sclerosing agent into the varicose vein, causing it to collapse and fade.\n- **Indications**: Symptomatic varicose veins, cosmetic concerns.\n- **Key Risks/Complications**: Allergic reactions, pigmentation changes, thrombophlebitis.\n\n#### Endovenous laser treatment (EVLT)\n- **What it Involves**: Laser energy is delivered to the vein wall, causing it to close.\n- **Indications**: Larger varicose veins, symptomatic cases.\n- **Key Risks/Complications**: Nerve injury, skin burns, deep vein thrombosis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nVaricose veins are generally not life-threatening but can lead to complications such as venous ulcers, thrombophlebitis, and significant discomfort. Treatment can significantly improve quality of life.\n\n### Important Complications to Watch For\n- Venous ulcers\n- Thrombophlebitis\n- Bleeding from varicose veins\n- Skin changes (eczema, dermatitis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize varicose veins, provide initial management, and refer patients for further evaluation and treatment as necessary. They should also educate patients on lifestyle modifications and the importance of compression therapy.\n\n### When to Escalate to Senior/Specialist\nRefer to a vascular surgeon if there are complications such as ulcers, severe pain, or if conservative management fails.\n\n### Key Safety Considerations\nEnsure proper fitting of compression stockings to avoid complications. Monitor for signs of deep vein thrombosis in patients with varicose veins presenting with sudden leg swelling or pain.\n",
+  "content": {
+    "overview": {
+      "definition": "Varicose veins are dilated, tortuous veins that typically occur in the lower extremities due to valve incompetence, leading to venous hypertension.",
+      "epidemiology": "Varicose veins affect approximately 20-25% of adults, with a higher prevalence in women and those with a family history. Risk factors include age, obesity, pregnancy, and prolonged standing.",
+      "pathophysiology": "The condition arises from the failure of venous valves, leading to increased venous pressure and subsequent dilation of the veins. This can result in venous stasis, inflammation, and skin changes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Aching or heavy legs",
+        "Swelling in the legs or ankles",
+        "Itching or burning sensation over the veins",
+        "Cramping in the legs, especially at night"
+      ],
+      "signs": [
+        "Visible, bulging veins",
+        "Skin changes (e.g., discoloration, eczema)",
+        "Swelling of the legs",
+        "Ulceration in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Varicose veins in unusual locations (e.g., pelvic varicosities)",
+        "Acute venous thrombosis presenting as varicose veins"
+      ],
+      "redFlags": [
+        "Severe pain or swelling in the leg",
+        "Signs of infection (redness, warmth, fever)",
+        "Non-healing ulcers",
+        "Sudden onset of varicose veins"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Doppler ultrasound"
+      ],
+      "secondLine": [
+        "Duplex ultrasound"
+      ],
+      "specialistTests": [
+        "Venography (rarely used)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the appearance of the veins and symptoms. Duplex ultrasound can confirm valve incompetence and assess the severity.",
+      "differentials": [
+        "Chronic venous insufficiency",
+        "Deep vein thrombosis",
+        "Lymphoedema",
+        "Arteriovenous malformations"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Compression stockings",
+          "Elevation of the legs",
+          "Analgesia for pain relief"
+        ],
+        "secondLine": [
+          "Referral for surgical evaluation if complications arise"
+        ],
+        "procedures": [
+          "Sclerotherapy for symptomatic relief",
+          "Endovenous laser treatment (EVLT) for larger veins"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Compression therapy (stockings)",
+          "Lifestyle modifications (weight loss, exercise)"
+        ],
+        "secondLine": [
+          "Sclerotherapy",
+          "Endovenous laser treatment (EVLT)",
+          "Surgical options (stripping, ligation)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptoms and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Compression stockings",
+          "mechanism": "Provides external pressure to the veins, improving venous return.",
+          "dosing": "Worn during the day, fitted to the individual.",
+          "sideEffects": "Skin irritation, discomfort if not fitted properly.",
+          "notes": "Essential for conservative management."
+        },
+        {
+          "name": "Analgesics (e.g., paracetamol, NSAIDs)",
+          "mechanism": "Reduces pain and inflammation.",
+          "dosing": "As per standard dosing guidelines.",
+          "sideEffects": "Gastrointestinal upset (NSAIDs), liver toxicity (high doses of paracetamol).",
+          "notes": "Use as needed for symptomatic relief."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Sclerotherapy",
+          "description": "Injection of a sclerosing agent into the varicose vein, causing it to collapse and fade.",
+          "indications": "Symptomatic varicose veins, cosmetic concerns.",
+          "risks": "Allergic reactions, pigmentation changes, thrombophlebitis."
+        },
+        {
+          "name": "Endovenous laser treatment (EVLT)",
+          "description": "Laser energy is delivered to the vein wall, causing it to close.",
+          "indications": "Larger varicose veins, symptomatic cases.",
+          "risks": "Nerve injury, skin burns, deep vein thrombosis."
+        }
+      ]
+    },
+    "prognosis": "Varicose veins are generally not life-threatening but can lead to complications such as venous ulcers, thrombophlebitis, and significant discomfort. Treatment can significantly improve quality of life.",
+    "complications": [
+      "Venous ulcers",
+      "Thrombophlebitis",
+      "Bleeding from varicose veins",
+      "Skin changes (eczema, dermatitis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize varicose veins, provide initial management, and refer patients for further evaluation and treatment as necessary. They should also educate patients on lifestyle modifications and the importance of compression therapy.",
+    "escalation": "Refer to a vascular surgeon if there are complications such as ulcers, severe pain, or if conservative management fails.",
+    "keySafetyConsiderations": "Ensure proper fitting of compression stockings to avoid complications. Monitor for signs of deep vein thrombosis in patients with varicose veins presenting with sudden leg swelling or pain."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "spinal_fracture",
+  "name": "Spinal fracture",
+  "domains": [
+    "Rheumatology",
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T20:32:15.667254",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Spinal fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA spinal fracture is a break in one or more of the vertebrae in the spine, which can occur due to trauma, osteoporosis, or other pathological conditions.\n\n### Epidemiology\nSpinal fractures are common, particularly in older adults due to osteoporosis. They can also occur in younger individuals due to high-energy trauma such as motor vehicle accidents or falls.\n\n### Essential Pathophysiology\nSpinal fractures can result from excessive mechanical stress on the vertebrae, leading to structural failure. In osteoporotic patients, decreased bone density makes vertebrae more susceptible to fractures even with minimal trauma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe back pain\n- Numbness or tingling in the extremities\n- Weakness in the legs\n- Loss of bladder or bowel control\n\n### Key Signs\n- Deformity of the spine\n- Tenderness over the affected vertebrae\n- Limited range of motion\n- Neurological deficits\n\n### Atypical Presentations\n- Asymptomatic fractures\n- Fractures presenting with only neurological symptoms\n\n### Red Flags Requiring Immediate Action\n- History of significant trauma\n- Presence of neurological deficits\n- Incontinence or saddle anesthesia\n- Severe, unrelenting pain\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the spine\n- CT scan of the spine\n\n### Second-line Investigations\n- MRI of the spine\n\n### Specialist Tests\n- Bone density scan (DEXA)\n- Blood tests for calcium and vitamin D levels\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and the mechanism of injury. A fracture is confirmed by imaging studies showing a break in the vertebral body or posterior elements.\n\n### Key Differential Diagnoses to Exclude\n- Osteoporotic fracture\n- Pathological fracture (e.g., due to malignancy)\n- Disc herniation\n- Spinal stenosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management with NSAIDs or acetaminophen\n- Immobilization with a brace if indicated\n\n#### Second-line Treatments\n- Consideration of surgical intervention for unstable fractures\n\n#### Emergency Procedures\n- Vertebroplasty\n- Kyphoplasty\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy and rehabilitation\n- Osteoporosis management with bisphosphonates or other agents\n\n#### Second-line Treatments\n- Surgical stabilization if conservative management fails\n\n#### Monitoring Requirements\n- Regular follow-up for pain management and functional improvement\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Monitor renal function and gastrointestinal symptoms.\n\n#### Alendronate\n- **Mechanism of Action**: Bisphosphonate that inhibits osteoclast-mediated bone resorption\n- **Typical Dosing Range**: 10 mg daily or 70 mg weekly\n- **Key Side Effects/Contraindications**: Esophageal irritation, osteonecrosis of the jaw\n- **When to Use vs. Alternatives**: Ensure patient can sit upright for 30 minutes after taking.\n\n### Procedures\n\n#### Vertebroplasty\n- **What it Involves**: A minimally invasive procedure where bone cement is injected into the fractured vertebra to stabilize it.\n- **Indications**: Painful vertebral compression fractures, especially in osteoporotic patients.\n- **Key Risks/Complications**: Infection, cement leakage, new fractures.\n\n#### Kyphoplasty\n- **What it Involves**: Similar to vertebroplasty, but involves inflating a balloon in the vertebra before cement injection to restore height.\n- **Indications**: Painful vertebral compression fractures with significant height loss.\n- **Key Risks/Complications**: Infection, cement leakage, new fractures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for spinal fractures varies; many patients recover well with appropriate management, but complications such as chronic pain or neurological deficits can occur, especially in severe cases.\n\n### Important Complications to Watch For\n- Chronic back pain\n- Neurological deficits\n- Infection (post-surgery)\n- New fractures due to osteoporosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, manage acute pain, and refer to specialists as needed. They should also educate patients on osteoporosis prevention and management.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics or neurosurgery for unstable fractures, significant neurological deficits, or if surgical intervention is considered.\n\n### Key Safety Considerations\nEnsure proper immobilization of the spine in suspected fractures, monitor for signs of neurological compromise, and manage pain effectively to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "A spinal fracture is a break in one or more of the vertebrae in the spine, which can occur due to trauma, osteoporosis, or other pathological conditions.",
+      "epidemiology": "Spinal fractures are common, particularly in older adults due to osteoporosis. They can also occur in younger individuals due to high-energy trauma such as motor vehicle accidents or falls.",
+      "pathophysiology": "Spinal fractures can result from excessive mechanical stress on the vertebrae, leading to structural failure. In osteoporotic patients, decreased bone density makes vertebrae more susceptible to fractures even with minimal trauma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe back pain",
+        "Numbness or tingling in the extremities",
+        "Weakness in the legs",
+        "Loss of bladder or bowel control"
+      ],
+      "signs": [
+        "Deformity of the spine",
+        "Tenderness over the affected vertebrae",
+        "Limited range of motion",
+        "Neurological deficits"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic fractures",
+        "Fractures presenting with only neurological symptoms"
+      ],
+      "redFlags": [
+        "History of significant trauma",
+        "Presence of neurological deficits",
+        "Incontinence or saddle anesthesia",
+        "Severe, unrelenting pain"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the spine",
+        "CT scan of the spine"
+      ],
+      "secondLine": [
+        "MRI of the spine"
+      ],
+      "specialistTests": [
+        "Bone density scan (DEXA)",
+        "Blood tests for calcium and vitamin D levels"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and the mechanism of injury. A fracture is confirmed by imaging studies showing a break in the vertebral body or posterior elements.",
+      "differentials": [
+        "Osteoporotic fracture",
+        "Pathological fracture (e.g., due to malignancy)",
+        "Disc herniation",
+        "Spinal stenosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management with NSAIDs or acetaminophen",
+          "Immobilization with a brace if indicated"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention for unstable fractures"
+        ],
+        "procedures": [
+          "Vertebroplasty",
+          "Kyphoplasty"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy and rehabilitation",
+          "Osteoporosis management with bisphosphonates or other agents"
+        ],
+        "secondLine": [
+          "Surgical stabilization if conservative management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up for pain management and functional improvement"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-800 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Monitor renal function and gastrointestinal symptoms."
+        },
+        {
+          "name": "Alendronate",
+          "mechanism": "Bisphosphonate that inhibits osteoclast-mediated bone resorption",
+          "dosing": "10 mg daily or 70 mg weekly",
+          "sideEffects": "Esophageal irritation, osteonecrosis of the jaw",
+          "notes": "Ensure patient can sit upright for 30 minutes after taking."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Vertebroplasty",
+          "description": "A minimally invasive procedure where bone cement is injected into the fractured vertebra to stabilize it.",
+          "indications": "Painful vertebral compression fractures, especially in osteoporotic patients.",
+          "risks": "Infection, cement leakage, new fractures."
+        },
+        {
+          "name": "Kyphoplasty",
+          "description": "Similar to vertebroplasty, but involves inflating a balloon in the vertebra before cement injection to restore height.",
+          "indications": "Painful vertebral compression fractures with significant height loss.",
+          "risks": "Infection, cement leakage, new fractures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for spinal fractures varies; many patients recover well with appropriate management, but complications such as chronic pain or neurological deficits can occur, especially in severe cases.",
+    "complications": [
+      "Chronic back pain",
+      "Neurological deficits",
+      "Infection (post-surgery)",
+      "New fractures due to osteoporosis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, manage acute pain, and refer to specialists as needed. They should also educate patients on osteoporosis prevention and management.",
+    "escalation": "Refer to orthopaedics or neurosurgery for unstable fractures, significant neurological deficits, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Ensure proper immobilization of the spine in suspected fractures, monitor for signs of neurological compromise, and manage pain effectively to prevent complications."
+  }
+}

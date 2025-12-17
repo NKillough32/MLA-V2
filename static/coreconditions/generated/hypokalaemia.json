@@ -1,0 +1,132 @@
+{
+  "id": "hypokalaemia",
+  "name": "Hypokalaemia",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:16:56.740703",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypokalaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypokalaemia is defined as a serum potassium level of less than 3.5 mmol/L. It can result from various causes including inadequate intake, excessive loss, or redistribution of potassium.\n\n### Epidemiology\nHypokalaemia is relatively common, particularly in hospitalized patients, with an incidence of 20-30% in those receiving diuretics. It can occur in various populations, including those with gastrointestinal losses, renal disorders, and certain endocrine conditions.\n\n### Essential Pathophysiology\nPotassium is crucial for normal cellular function, particularly in muscle and nerve cells. Hypokalaemia can lead to impaired neuromuscular transmission, cardiac arrhythmias, and altered acid-base balance. Causes include renal losses (e.g., diuretics), gastrointestinal losses (e.g., vomiting, diarrhea), and shifts into cells (e.g., metabolic alkalosis, insulin administration).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Muscle weakness\n- Fatigue\n- Palpitations\n- Constipation\n- Cramping\n- Paresthesia\n\n### Key Signs\n- Hyporeflexia\n- Weakness on examination\n- Arrhythmias on ECG\n- Decreased bowel sounds\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Severe muscle paralysis in extreme cases\n\n### Red Flags Requiring Immediate Action\n- Severe hypokalaemia (<2.5 mmol/L)\n- Cardiac arrhythmias\n- Respiratory muscle weakness\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum potassium level\n- Serum creatinine\n- Electrolyte panel\n- ECG\n\n### Second-line Investigations\n- Urine potassium concentration\n- Urine chloride concentration\n- Arterial blood gas analysis\n\n### Specialist Tests\n- Plasma aldosterone and renin levels\n- 24-hour urine collection for electrolytes\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypokalaemia is based on serum potassium levels <3.5 mmol/L, alongside clinical symptoms and signs.\n\n### Key Differential Diagnoses to Exclude\n- Hyperkalaemia\n- Acidosis\n- Renal tubular acidosis\n- Adrenal insufficiency\n- Diuretic use\n- Gastrointestinal losses\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oral potassium supplements (e.g., potassium chloride)\n- Intravenous potassium (if severe or symptomatic)\n\n#### Second-line Treatments\n- Consider magnesium replacement if hypomagnesaemia is present\n\n#### Emergency Procedures\n- ECG monitoring for arrhythmias\n- Intravenous potassium administration (if severe)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary potassium supplementation (bananas, oranges, potatoes)\n- Oral potassium-sparing diuretics (e.g., spironolactone)\n\n#### Second-line Treatments\n- Adjusting medications that may contribute to hypokalaemia (e.g., diuretics)\n\n#### Monitoring Requirements\n- Regular serum potassium levels\n- Monitoring renal function and electrolytes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Potassium chloride\n- **Mechanism of Action**: Replenishes potassium stores in the body.\n- **Typical Dosing Range**: Oral: 20-40 mmol/day in divided doses; IV: 10-20 mmol/hour (max 40 mmol/hour in severe cases).\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, hyperkalaemia, venous irritation (IV).\n- **When to Use vs. Alternatives**: Monitor serum potassium levels closely during treatment.\n\n#### Spironolactone\n- **Mechanism of Action**: A potassium-sparing diuretic that inhibits aldosterone, reducing potassium loss.\n- **Typical Dosing Range**: 25-100 mg orally once daily.\n- **Key Side Effects/Contraindications**: Hyperkalaemia, gynecomastia, dizziness.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n### Procedures\n\n#### Intravenous potassium administration\n- **What it Involves**: Administering potassium chloride or potassium phosphate via IV for severe hypokalaemia.\n- **Indications**: Severe hypokalaemia (<2.5 mmol/L) or symptomatic patients.\n- **Key Risks/Complications**: Cardiac arrest if administered too rapidly, venous irritation, hyperkalaemia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, the prognosis for hypokalaemia is generally good. However, severe or prolonged hypokalaemia can lead to significant complications, including cardiac arrhythmias and muscle paralysis.\n\n### Important Complications to Watch For\n- Cardiac arrhythmias (e.g., ventricular tachycardia)\n- Muscle weakness or paralysis\n- Respiratory failure\n- Renal impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hypokalaemia, perform initial investigations, initiate treatment, and monitor patients for complications. They should also be aware of when to escalate care to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hypokalaemia (<2.5 mmol/L), symptomatic hypokalaemia, or if there are significant ECG changes, immediate escalation to a senior clinician is required for further management.\n\n### Key Safety Considerations\nAlways monitor serum potassium levels during treatment, especially with IV potassium. Be cautious of rapid infusion rates to avoid cardiac complications. Ensure ECG monitoring for patients with significant hypokalaemia.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypokalaemia is defined as a serum potassium level of less than 3.5 mmol/L. It can result from various causes including inadequate intake, excessive loss, or redistribution of potassium.",
+      "epidemiology": "Hypokalaemia is relatively common, particularly in hospitalized patients, with an incidence of 20-30% in those receiving diuretics. It can occur in various populations, including those with gastrointestinal losses, renal disorders, and certain endocrine conditions.",
+      "pathophysiology": "Potassium is crucial for normal cellular function, particularly in muscle and nerve cells. Hypokalaemia can lead to impaired neuromuscular transmission, cardiac arrhythmias, and altered acid-base balance. Causes include renal losses (e.g., diuretics), gastrointestinal losses (e.g., vomiting, diarrhea), and shifts into cells (e.g., metabolic alkalosis, insulin administration)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Muscle weakness",
+        "Fatigue",
+        "Palpitations",
+        "Constipation",
+        "Cramping",
+        "Paresthesia"
+      ],
+      "signs": [
+        "Hyporeflexia",
+        "Weakness on examination",
+        "Arrhythmias on ECG",
+        "Decreased bowel sounds"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Severe muscle paralysis in extreme cases"
+      ],
+      "redFlags": [
+        "Severe hypokalaemia (<2.5 mmol/L)",
+        "Cardiac arrhythmias",
+        "Respiratory muscle weakness"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum potassium level",
+        "Serum creatinine",
+        "Electrolyte panel",
+        "ECG"
+      ],
+      "secondLine": [
+        "Urine potassium concentration",
+        "Urine chloride concentration",
+        "Arterial blood gas analysis"
+      ],
+      "specialistTests": [
+        "Plasma aldosterone and renin levels",
+        "24-hour urine collection for electrolytes"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypokalaemia is based on serum potassium levels <3.5 mmol/L, alongside clinical symptoms and signs.",
+      "differentials": [
+        "Hyperkalaemia",
+        "Acidosis",
+        "Renal tubular acidosis",
+        "Adrenal insufficiency",
+        "Diuretic use",
+        "Gastrointestinal losses"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral potassium supplements (e.g., potassium chloride)",
+          "Intravenous potassium (if severe or symptomatic)"
+        ],
+        "secondLine": [
+          "Consider magnesium replacement if hypomagnesaemia is present"
+        ],
+        "procedures": [
+          "ECG monitoring for arrhythmias",
+          "Intravenous potassium administration (if severe)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary potassium supplementation (bananas, oranges, potatoes)",
+          "Oral potassium-sparing diuretics (e.g., spironolactone)"
+        ],
+        "secondLine": [
+          "Adjusting medications that may contribute to hypokalaemia (e.g., diuretics)"
+        ],
+        "monitoring": [
+          "Regular serum potassium levels",
+          "Monitoring renal function and electrolytes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Potassium chloride",
+          "mechanism": "Replenishes potassium stores in the body.",
+          "dosing": "Oral: 20-40 mmol/day in divided doses; IV: 10-20 mmol/hour (max 40 mmol/hour in severe cases).",
+          "sideEffects": "Gastrointestinal upset, hyperkalaemia, venous irritation (IV).",
+          "notes": "Monitor serum potassium levels closely during treatment."
+        },
+        {
+          "name": "Spironolactone",
+          "mechanism": "A potassium-sparing diuretic that inhibits aldosterone, reducing potassium loss.",
+          "dosing": "25-100 mg orally once daily.",
+          "sideEffects": "Hyperkalaemia, gynecomastia, dizziness.",
+          "notes": "Monitor renal function and potassium levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravenous potassium administration",
+          "description": "Administering potassium chloride or potassium phosphate via IV for severe hypokalaemia.",
+          "indications": "Severe hypokalaemia (<2.5 mmol/L) or symptomatic patients.",
+          "risks": "Cardiac arrest if administered too rapidly, venous irritation, hyperkalaemia."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, the prognosis for hypokalaemia is generally good. However, severe or prolonged hypokalaemia can lead to significant complications, including cardiac arrhythmias and muscle paralysis.",
+    "complications": [
+      "Cardiac arrhythmias (e.g., ventricular tachycardia)",
+      "Muscle weakness or paralysis",
+      "Respiratory failure",
+      "Renal impairment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hypokalaemia, perform initial investigations, initiate treatment, and monitor patients for complications. They should also be aware of when to escalate care to senior medical staff.",
+    "escalation": "If a patient presents with severe hypokalaemia (<2.5 mmol/L), symptomatic hypokalaemia, or if there are significant ECG changes, immediate escalation to a senior clinician is required for further management.",
+    "keySafetyConsiderations": "Always monitor serum potassium levels during treatment, especially with IV potassium. Be cautious of rapid infusion rates to avoid cardiac complications. Ensure ECG monitoring for patients with significant hypokalaemia."
+  }
+}

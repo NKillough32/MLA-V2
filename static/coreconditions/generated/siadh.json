@@ -1,0 +1,121 @@
+{
+  "id": "siadh",
+  "name": "SIADH",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:37:43.803208",
+  "model": "gpt-4o-mini",
+  "rawContent": "# SIADH: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSyndrome of Inappropriate Antidiuretic Hormone secretion (SIADH) is a condition characterized by excessive release of antidiuretic hormone (ADH) leading to water retention, hyponatremia, and hypoosmolality.\n\n### Epidemiology\nSIADH can occur in various populations but is commonly seen in hospitalized patients, particularly those with malignancies, central nervous system disorders, and pulmonary diseases. It is estimated to affect 1-2% of hospitalized patients.\n\n### Essential Pathophysiology\nIn SIADH, there is inappropriate secretion of ADH from the posterior pituitary gland or ectopic sources, leading to increased water reabsorption in the kidneys. This results in dilutional hyponatremia due to excess water retention without corresponding sodium retention.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nausea\n- Headache\n- Confusion\n- Seizures\n- Fatigue\n- Muscle cramps\n\n### Key Signs\n- Hyponatremia (serum sodium <135 mmol/L)\n- Low serum osmolality (<275 mOsm/kg)\n- Increased urine osmolality (>100 mOsm/kg)\n- Increased urine sodium concentration (>40 mmol/L)\n\n### Atypical Presentations\n- Asymptomatic hyponatremia\n- Severe neurological symptoms in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Rapidly declining serum sodium levels\n- Neurological symptoms such as seizures or coma\n- History of malignancy or recent surgery\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum sodium and osmolality\n- Urine sodium and osmolality\n- Thyroid function tests\n- Adrenal function tests\n\n### Second-line Investigations\n- CT scan of the chest/abdomen to identify malignancies\n- MRI of the brain to rule out CNS causes\n\n### Specialist Tests\n- ADH levels (if indicated)\n- Water deprivation test (to differentiate from psychogenic polydipsia)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of SIADH is based on the presence of hyponatremia, low serum osmolality, high urine osmolality, and exclusion of other causes of hyponatremia.\n\n### Key Differential Diagnoses to Exclude\n- Hypovolemic hyponatremia (e.g., adrenal insufficiency)\n- Hypervolemic hyponatremia (e.g., heart failure, cirrhosis)\n- Psychogenic polydipsia\n- Renal failure\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid restriction (800-1000 mL/day)\n- Hypertonic saline (3% NaCl) in severe cases\n\n#### Second-line Treatments\n- Vasopressin receptor antagonists (e.g., tolvaptan)\n\n#### Emergency Procedures\n- None specific for SIADH, but may require monitoring in a hospital setting for severe hyponatremia\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Fluid restriction (1-1.5 L/day)\n- Dietary sodium restriction\n\n#### Second-line Treatments\n- Vasopressin receptor antagonists (e.g., tolvaptan)\n\n#### Monitoring Requirements\n- Regular serum sodium and osmolality checks\n- Monitor for signs of fluid overload\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tolvaptan\n- **Mechanism of Action**: Vasopressin receptor antagonist that promotes free water excretion\n- **Typical Dosing Range**: Initially 15 mg orally once daily, may increase to 30 mg after 24 hours if needed\n- **Key Side Effects/Contraindications**: Thirst, dry mouth, polyuria, potential liver injury\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly during treatment.\n\n#### Demeclocycline\n- **Mechanism of Action**: Tetracycline antibiotic that induces nephrogenic diabetes insipidus, reducing water reabsorption\n- **Typical Dosing Range**: 300 mg orally 2-4 times daily\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset, potential for nephrotoxicity\n- **When to Use vs. Alternatives**: Not commonly used as first-line due to side effects.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of SIADH depends on the underlying cause. If the cause is identified and treated, the prognosis is generally good. Chronic SIADH may require ongoing management.\n\n### Important Complications to Watch For\n- Severe hyponatremia leading to cerebral edema\n- Seizures\n- Coma\n- Long-term neurological deficits\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of SIADH, initiate appropriate investigations, and manage fluid restrictions. They should also be aware of when to escalate care to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe hyponatremia (<120 mmol/L) or neurological symptoms, immediate escalation to a senior clinician is required for potential treatment with hypertonic saline and further management.\n\n### Key Safety Considerations\nMonitor serum sodium levels closely during treatment to avoid rapid correction, which can lead to osmotic demyelination syndrome. Ensure fluid restrictions are adhered to and educate patients about signs of worsening hyponatremia.\n",
+  "content": {
+    "overview": {
+      "definition": "Syndrome of Inappropriate Antidiuretic Hormone secretion (SIADH) is a condition characterized by excessive release of antidiuretic hormone (ADH) leading to water retention, hyponatremia, and hypoosmolality.",
+      "epidemiology": "SIADH can occur in various populations but is commonly seen in hospitalized patients, particularly those with malignancies, central nervous system disorders, and pulmonary diseases. It is estimated to affect 1-2% of hospitalized patients.",
+      "pathophysiology": "In SIADH, there is inappropriate secretion of ADH from the posterior pituitary gland or ectopic sources, leading to increased water reabsorption in the kidneys. This results in dilutional hyponatremia due to excess water retention without corresponding sodium retention."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nausea",
+        "Headache",
+        "Confusion",
+        "Seizures",
+        "Fatigue",
+        "Muscle cramps"
+      ],
+      "signs": [
+        "Hyponatremia (serum sodium <135 mmol/L)",
+        "Low serum osmolality (<275 mOsm/kg)",
+        "Increased urine osmolality (>100 mOsm/kg)",
+        "Increased urine sodium concentration (>40 mmol/L)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hyponatremia",
+        "Severe neurological symptoms in elderly patients"
+      ],
+      "redFlags": [
+        "Rapidly declining serum sodium levels",
+        "Neurological symptoms such as seizures or coma",
+        "History of malignancy or recent surgery"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum sodium and osmolality",
+        "Urine sodium and osmolality",
+        "Thyroid function tests",
+        "Adrenal function tests"
+      ],
+      "secondLine": [
+        "CT scan of the chest/abdomen to identify malignancies",
+        "MRI of the brain to rule out CNS causes"
+      ],
+      "specialistTests": [
+        "ADH levels (if indicated)",
+        "Water deprivation test (to differentiate from psychogenic polydipsia)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of SIADH is based on the presence of hyponatremia, low serum osmolality, high urine osmolality, and exclusion of other causes of hyponatremia.",
+      "differentials": [
+        "Hypovolemic hyponatremia (e.g., adrenal insufficiency)",
+        "Hypervolemic hyponatremia (e.g., heart failure, cirrhosis)",
+        "Psychogenic polydipsia",
+        "Renal failure"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid restriction (800-1000 mL/day)",
+          "Hypertonic saline (3% NaCl) in severe cases"
+        ],
+        "secondLine": [
+          "Vasopressin receptor antagonists (e.g., tolvaptan)"
+        ],
+        "procedures": [
+          "None specific for SIADH, but may require monitoring in a hospital setting for severe hyponatremia"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Fluid restriction (1-1.5 L/day)",
+          "Dietary sodium restriction"
+        ],
+        "secondLine": [
+          "Vasopressin receptor antagonists (e.g., tolvaptan)"
+        ],
+        "monitoring": [
+          "Regular serum sodium and osmolality checks",
+          "Monitor for signs of fluid overload"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tolvaptan",
+          "mechanism": "Vasopressin receptor antagonist that promotes free water excretion",
+          "dosing": "Initially 15 mg orally once daily, may increase to 30 mg after 24 hours if needed",
+          "sideEffects": "Thirst, dry mouth, polyuria, potential liver injury",
+          "notes": "Monitor liver function tests regularly during treatment."
+        },
+        {
+          "name": "Demeclocycline",
+          "mechanism": "Tetracycline antibiotic that induces nephrogenic diabetes insipidus, reducing water reabsorption",
+          "dosing": "300 mg orally 2-4 times daily",
+          "sideEffects": "Photosensitivity, gastrointestinal upset, potential for nephrotoxicity",
+          "notes": "Not commonly used as first-line due to side effects."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "The prognosis of SIADH depends on the underlying cause. If the cause is identified and treated, the prognosis is generally good. Chronic SIADH may require ongoing management.",
+    "complications": [
+      "Severe hyponatremia leading to cerebral edema",
+      "Seizures",
+      "Coma",
+      "Long-term neurological deficits"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of SIADH, initiate appropriate investigations, and manage fluid restrictions. They should also be aware of when to escalate care to senior medical staff.",
+    "escalation": "If a patient presents with severe hyponatremia (<120 mmol/L) or neurological symptoms, immediate escalation to a senior clinician is required for potential treatment with hypertonic saline and further management.",
+    "keySafetyConsiderations": "Monitor serum sodium levels closely during treatment to avoid rapid correction, which can lead to osmotic demyelination syndrome. Ensure fluid restrictions are adhered to and educate patients about signs of worsening hyponatremia."
+  }
+}

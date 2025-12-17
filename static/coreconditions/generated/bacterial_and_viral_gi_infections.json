@@ -1,0 +1,138 @@
+{
+  "id": "bacterial_and_viral_gi_infections",
+  "name": "Bacterial and viral GI infections",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:07:55.355725",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Bacterial and viral GI infections: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBacterial and viral gastrointestinal (GI) infections are infectious diseases caused by pathogenic bacteria or viruses that affect the gastrointestinal tract, leading to symptoms such as diarrhea, vomiting, and abdominal pain.\n\n### Epidemiology\nGastrointestinal infections are common worldwide, with viral infections (e.g., norovirus, rotavirus) being the leading cause of gastroenteritis. Bacterial infections (e.g., Salmonella, E. coli) also contribute significantly, especially in developing countries. Outbreaks can occur in crowded settings, such as schools and nursing homes.\n\n### Essential Pathophysiology\nBacterial infections often result from the ingestion of contaminated food or water, leading to inflammation of the intestinal mucosa. Viruses typically invade intestinal epithelial cells, causing cell death and disrupting normal absorption and secretion processes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Diarrhea (watery or bloody)\n- Vomiting\n- Abdominal pain or cramping\n- Nausea\n- Fever\n- Dehydration signs (thirst, dry mouth, decreased urine output)\n\n### Key Signs\n- Fever\n- Abdominal tenderness\n- Dehydration (dry mucous membranes, tachycardia, hypotension)\n- Borborygmi (increased bowel sounds)\n\n### Atypical Presentations\n- Severe abdominal pain mimicking appendicitis\n- Persistent vomiting without diarrhea\n- Neurological symptoms (in cases of certain viral infections)\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- High fever (>38.5°C)\n- Bloody diarrhea\n- Prolonged symptoms (>48 hours)\n- Recent travel history to endemic areas\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Stool culture (for bacterial infections)\n- Rapid antigen tests (for viral infections)\n- Electrolyte panel (to assess dehydration)\n\n### Second-line Investigations\n- PCR testing for specific pathogens (e.g., C. difficile, norovirus)\n- Serology for certain viral infections (e.g., hepatitis A)\n\n### Specialist Tests\n- Endoscopy (if inflammatory bowel disease is suspected)\n- Imaging studies (if complications like perforation are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by stool tests. Key criteria include the presence of diarrhea, vomiting, and abdominal pain, along with recent exposure history.\n\n### Key Differential Diagnoses to Exclude\n- Inflammatory bowel disease (IBD)\n- Irritable bowel syndrome (IBS)\n- Food intolerance\n- Non-infectious gastroenteritis (e.g., drug-induced)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rehydration therapy (oral rehydration solutions)\n- Antiemetics (e.g., ondansetron) if vomiting is severe\n\n#### Second-line Treatments\n- Antibiotics (if bacterial infection is confirmed and severe)\n- Probiotics (to restore gut flora)\n\n#### Emergency Procedures\n- IV fluid administration (for severe dehydration)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (e.g., BRAT diet for diarrhea)\n- Probiotics\n\n#### Second-line Treatments\n- Antibiotics for recurrent bacterial infections (e.g., rifaximin for SIBO)\n\n#### Monitoring Requirements\n- Regular assessment of hydration status\n- Monitoring for complications (e.g., persistent diarrhea)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ondansetron\n- **Mechanism of Action**: 5-HT3 receptor antagonist that reduces nausea and vomiting\n- **Typical Dosing Range**: 4-8 mg IV/PO every 8 hours as needed\n- **Key Side Effects/Contraindications**: Headache, constipation, dizziness\n- **When to Use vs. Alternatives**: Effective for severe vomiting, especially in gastroenteritis.\n\n#### Metronidazole\n- **Mechanism of Action**: Antimicrobial agent effective against anaerobic bacteria and protozoa\n- **Typical Dosing Range**: 500 mg PO/IV every 8 hours for 7-10 days\n- **Key Side Effects/Contraindications**: Nausea, metallic taste, peripheral neuropathy\n- **When to Use vs. Alternatives**: Used for C. difficile infections.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase\n- **Typical Dosing Range**: 500 mg PO every 12 hours for 3-7 days\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, tendon rupture\n- **When to Use vs. Alternatives**: Used for severe bacterial gastroenteritis.\n\n### Procedures\n\n#### IV fluid resuscitation\n- **What it Involves**: Administration of fluids and electrolytes via intravenous route\n- **Indications**: Severe dehydration, inability to tolerate oral intake\n- **Key Risks/Complications**: Infection at the IV site, fluid overload, electrolyte imbalances\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost viral gastroenteritis cases resolve spontaneously within 1-3 days. Bacterial infections may require antibiotics and can lead to complications such as hemolytic uremic syndrome (HUS) in cases of E. coli infection.\n\n### Important Complications to Watch For\n- Dehydration\n- Electrolyte imbalances\n- Hemolytic uremic syndrome (HUS) from E. coli\n- Sepsis (in severe bacterial infections)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide supportive care, and recognize when to escalate care for severe cases. They should also educate patients on hygiene practices to prevent transmission.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if there are signs of severe dehydration, persistent symptoms, or if the patient is immunocompromised or has significant comorbidities.\n\n### Key Safety Considerations\nEnsure proper hand hygiene to prevent the spread of infections. Monitor for signs of dehydration and electrolyte imbalances, especially in vulnerable populations (e.g., elderly, children). Be cautious with antibiotic use to avoid resistance.\n",
+  "content": {
+    "overview": {
+      "definition": "Bacterial and viral gastrointestinal (GI) infections are infectious diseases caused by pathogenic bacteria or viruses that affect the gastrointestinal tract, leading to symptoms such as diarrhea, vomiting, and abdominal pain.",
+      "epidemiology": "Gastrointestinal infections are common worldwide, with viral infections (e.g., norovirus, rotavirus) being the leading cause of gastroenteritis. Bacterial infections (e.g., Salmonella, E. coli) also contribute significantly, especially in developing countries. Outbreaks can occur in crowded settings, such as schools and nursing homes.",
+      "pathophysiology": "Bacterial infections often result from the ingestion of contaminated food or water, leading to inflammation of the intestinal mucosa. Viruses typically invade intestinal epithelial cells, causing cell death and disrupting normal absorption and secretion processes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Diarrhea (watery or bloody)",
+        "Vomiting",
+        "Abdominal pain or cramping",
+        "Nausea",
+        "Fever",
+        "Dehydration signs (thirst, dry mouth, decreased urine output)"
+      ],
+      "signs": [
+        "Fever",
+        "Abdominal tenderness",
+        "Dehydration (dry mucous membranes, tachycardia, hypotension)",
+        "Borborygmi (increased bowel sounds)"
+      ],
+      "atypicalPresentations": [
+        "Severe abdominal pain mimicking appendicitis",
+        "Persistent vomiting without diarrhea",
+        "Neurological symptoms (in cases of certain viral infections)"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "High fever (>38.5°C)",
+        "Bloody diarrhea",
+        "Prolonged symptoms (>48 hours)",
+        "Recent travel history to endemic areas"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Stool culture (for bacterial infections)",
+        "Rapid antigen tests (for viral infections)",
+        "Electrolyte panel (to assess dehydration)"
+      ],
+      "secondLine": [
+        "PCR testing for specific pathogens (e.g., C. difficile, norovirus)",
+        "Serology for certain viral infections (e.g., hepatitis A)"
+      ],
+      "specialistTests": [
+        "Endoscopy (if inflammatory bowel disease is suspected)",
+        "Imaging studies (if complications like perforation are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by stool tests. Key criteria include the presence of diarrhea, vomiting, and abdominal pain, along with recent exposure history.",
+      "differentials": [
+        "Inflammatory bowel disease (IBD)",
+        "Irritable bowel syndrome (IBS)",
+        "Food intolerance",
+        "Non-infectious gastroenteritis (e.g., drug-induced)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rehydration therapy (oral rehydration solutions)",
+          "Antiemetics (e.g., ondansetron) if vomiting is severe"
+        ],
+        "secondLine": [
+          "Antibiotics (if bacterial infection is confirmed and severe)",
+          "Probiotics (to restore gut flora)"
+        ],
+        "procedures": [
+          "IV fluid administration (for severe dehydration)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (e.g., BRAT diet for diarrhea)",
+          "Probiotics"
+        ],
+        "secondLine": [
+          "Antibiotics for recurrent bacterial infections (e.g., rifaximin for SIBO)"
+        ],
+        "monitoring": [
+          "Regular assessment of hydration status",
+          "Monitoring for complications (e.g., persistent diarrhea)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ondansetron",
+          "mechanism": "5-HT3 receptor antagonist that reduces nausea and vomiting",
+          "dosing": "4-8 mg IV/PO every 8 hours as needed",
+          "sideEffects": "Headache, constipation, dizziness",
+          "notes": "Effective for severe vomiting, especially in gastroenteritis."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antimicrobial agent effective against anaerobic bacteria and protozoa",
+          "dosing": "500 mg PO/IV every 8 hours for 7-10 days",
+          "sideEffects": "Nausea, metallic taste, peripheral neuropathy",
+          "notes": "Used for C. difficile infections."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase",
+          "dosing": "500 mg PO every 12 hours for 3-7 days",
+          "sideEffects": "Nausea, diarrhea, tendon rupture",
+          "notes": "Used for severe bacterial gastroenteritis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "IV fluid resuscitation",
+          "description": "Administration of fluids and electrolytes via intravenous route",
+          "indications": "Severe dehydration, inability to tolerate oral intake",
+          "risks": "Infection at the IV site, fluid overload, electrolyte imbalances"
+        }
+      ]
+    },
+    "prognosis": "Most viral gastroenteritis cases resolve spontaneously within 1-3 days. Bacterial infections may require antibiotics and can lead to complications such as hemolytic uremic syndrome (HUS) in cases of E. coli infection.",
+    "complications": [
+      "Dehydration",
+      "Electrolyte imbalances",
+      "Hemolytic uremic syndrome (HUS) from E. coli",
+      "Sepsis (in severe bacterial infections)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide supportive care, and recognize when to escalate care for severe cases. They should also educate patients on hygiene practices to prevent transmission.",
+    "escalation": "Refer to a senior clinician if there are signs of severe dehydration, persistent symptoms, or if the patient is immunocompromised or has significant comorbidities.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene to prevent the spread of infections. Monitor for signs of dehydration and electrolyte imbalances, especially in vulnerable populations (e.g., elderly, children). Be cautious with antibiotic use to avoid resistance."
+  }
+}

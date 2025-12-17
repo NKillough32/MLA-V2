@@ -1,0 +1,121 @@
+{
+  "id": "immune_thrombocytopaenia_neonatal",
+  "name": "Immune thrombocytopaenia (neonatal)",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T20:01:54.296126",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Immune thrombocytopaenia (neonatal): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nImmune thrombocytopaenia (neonatal) is a condition characterized by a low platelet count in newborns due to maternal antibodies targeting fetal platelets, leading to increased destruction of platelets.\n\n### Epidemiology\nIt occurs in approximately 1 in 1,000 live births, often associated with maternal autoimmune disorders such as systemic lupus erythematosus or idiopathic thrombocytopenic purpura (ITP).\n\n### Essential Pathophysiology\nMaternal antibodies (IgG) cross the placenta and bind to fetal platelets, leading to their destruction by the fetal reticuloendothelial system. This results in thrombocytopaenia in the neonate.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Petechiae\n- Purpura\n- Mucosal bleeding\n- Prolonged bleeding from puncture sites\n\n### Key Signs\n- Low platelet count on complete blood count (CBC)\n- Signs of bleeding (e.g., bruising, bleeding gums)\n- Hepatosplenomegaly (in severe cases)\n\n### Atypical Presentations\n- Severe thrombocytopaenia without bleeding symptoms\n- Thrombocytopaenia detected incidentally on routine blood tests\n\n### Red Flags Requiring Immediate Action\n- Severe thrombocytopaenia (<20,000/µL)\n- Significant bleeding complications\n- Need for urgent transfusion or intervention\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood smear to assess platelet morphology\n- Maternal blood tests for platelet antibodies\n\n### Second-line Investigations\n- Coagulation profile (PT, aPTT)\n- Liver function tests (to rule out other causes)\n- Direct Coombs test (to assess for hemolytic disease)\n\n### Specialist Tests\n- Platelet antibody testing (if available)\n- Bone marrow biopsy (rarely needed)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, maternal history of ITP or autoimmune disease, and laboratory findings of isolated thrombocytopaenia in the neonate.\n\n### Key Differential Diagnoses to Exclude\n- Congenital thrombocytopaenia (e.g., Wiskott-Aldrich syndrome)\n- Hemolytic disease of the newborn (Rh or ABO incompatibility)\n- Sepsis or other infections causing thrombocytopaenia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and monitoring of platelet counts\n- Supportive care for bleeding (e.g., platelet transfusion if severe)\n\n#### Second-line Treatments\n- Intravenous immunoglobulin (IVIG) for severe cases\n\n#### Emergency Procedures\n- Platelet transfusion in cases of significant bleeding or very low platelet counts\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of platelet counts and clinical status\n\n#### Second-line Treatments\n- Consideration of corticosteroids if chronic and symptomatic\n\n#### Monitoring Requirements\n- Frequent CBCs to monitor platelet levels and assess for bleeding risks\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Intravenous Immunoglobulin (IVIG)\n- **Mechanism of Action**: Provides passive immunity and may help to reduce the destruction of platelets by neutralizing maternal antibodies.\n- **Typical Dosing Range**: 1 g/kg IV for 1-2 days, depending on severity.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions.\n- **When to Use vs. Alternatives**: Effective in rapidly increasing platelet counts in severe cases.\n\n#### Corticosteroids (e.g., Prednisolone)\n- **Mechanism of Action**: Reduces immune response and antibody production.\n- **Typical Dosing Range**: 1-2 mg/kg/day, tapering as clinically indicated.\n- **Key Side Effects/Contraindications**: Increased risk of infection, growth suppression, adrenal suppression.\n- **When to Use vs. Alternatives**: Used in chronic cases or when IVIG is ineffective.\n\n### Procedures\n\n#### Platelet transfusion\n- **What it Involves**: Administration of donor platelets to increase platelet count.\n- **Indications**: Severe thrombocytopaenia with active bleeding or very low platelet counts (<20,000/µL).\n- **Key Risks/Complications**: Allergic reactions, transfusion-related acute lung injury (TRALI), infection transmission.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for neonatal immune thrombocytopaenia is generally good, with most cases resolving within weeks to months as maternal antibodies are cleared from the infant's system. Severe cases may require intervention but typically improve with treatment.\n\n### Important Complications to Watch For\n- Severe bleeding (intracranial hemorrhage, gastrointestinal bleeding)\n- Chronic thrombocytopaenia in some cases\n- Potential for long-term developmental issues if severe bleeding occurs\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of thrombocytopaenia, perform initial investigations, manage acute bleeding, and understand when to escalate care to a pediatric hematologist or neonatologist.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric hematologist for severe cases, those requiring transfusion, or if there is uncertainty in management.\n\n### Key Safety Considerations\nMonitor for signs of bleeding, ensure appropriate transfusion protocols are followed, and be aware of the potential for rapid deterioration in severe cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Immune thrombocytopaenia (neonatal) is a condition characterized by a low platelet count in newborns due to maternal antibodies targeting fetal platelets, leading to increased destruction of platelets.",
+      "epidemiology": "It occurs in approximately 1 in 1,000 live births, often associated with maternal autoimmune disorders such as systemic lupus erythematosus or idiopathic thrombocytopenic purpura (ITP).",
+      "pathophysiology": "Maternal antibodies (IgG) cross the placenta and bind to fetal platelets, leading to their destruction by the fetal reticuloendothelial system. This results in thrombocytopaenia in the neonate."
+    },
+    "recognition": {
+      "symptoms": [
+        "Petechiae",
+        "Purpura",
+        "Mucosal bleeding",
+        "Prolonged bleeding from puncture sites"
+      ],
+      "signs": [
+        "Low platelet count on complete blood count (CBC)",
+        "Signs of bleeding (e.g., bruising, bleeding gums)",
+        "Hepatosplenomegaly (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Severe thrombocytopaenia without bleeding symptoms",
+        "Thrombocytopaenia detected incidentally on routine blood tests"
+      ],
+      "redFlags": [
+        "Severe thrombocytopaenia (<20,000/µL)",
+        "Significant bleeding complications",
+        "Need for urgent transfusion or intervention"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood smear to assess platelet morphology",
+        "Maternal blood tests for platelet antibodies"
+      ],
+      "secondLine": [
+        "Coagulation profile (PT, aPTT)",
+        "Liver function tests (to rule out other causes)",
+        "Direct Coombs test (to assess for hemolytic disease)"
+      ],
+      "specialistTests": [
+        "Platelet antibody testing (if available)",
+        "Bone marrow biopsy (rarely needed)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, maternal history of ITP or autoimmune disease, and laboratory findings of isolated thrombocytopaenia in the neonate.",
+      "differentials": [
+        "Congenital thrombocytopaenia (e.g., Wiskott-Aldrich syndrome)",
+        "Hemolytic disease of the newborn (Rh or ABO incompatibility)",
+        "Sepsis or other infections causing thrombocytopaenia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and monitoring of platelet counts",
+          "Supportive care for bleeding (e.g., platelet transfusion if severe)"
+        ],
+        "secondLine": [
+          "Intravenous immunoglobulin (IVIG) for severe cases"
+        ],
+        "procedures": [
+          "Platelet transfusion in cases of significant bleeding or very low platelet counts"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of platelet counts and clinical status"
+        ],
+        "secondLine": [
+          "Consideration of corticosteroids if chronic and symptomatic"
+        ],
+        "monitoring": [
+          "Frequent CBCs to monitor platelet levels and assess for bleeding risks"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Intravenous Immunoglobulin (IVIG)",
+          "mechanism": "Provides passive immunity and may help to reduce the destruction of platelets by neutralizing maternal antibodies.",
+          "dosing": "1 g/kg IV for 1-2 days, depending on severity.",
+          "sideEffects": "Headache, fever, chills, allergic reactions.",
+          "notes": "Effective in rapidly increasing platelet counts in severe cases."
+        },
+        {
+          "name": "Corticosteroids (e.g., Prednisolone)",
+          "mechanism": "Reduces immune response and antibody production.",
+          "dosing": "1-2 mg/kg/day, tapering as clinically indicated.",
+          "sideEffects": "Increased risk of infection, growth suppression, adrenal suppression.",
+          "notes": "Used in chronic cases or when IVIG is ineffective."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Platelet transfusion",
+          "description": "Administration of donor platelets to increase platelet count.",
+          "indications": "Severe thrombocytopaenia with active bleeding or very low platelet counts (<20,000/µL).",
+          "risks": "Allergic reactions, transfusion-related acute lung injury (TRALI), infection transmission."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for neonatal immune thrombocytopaenia is generally good, with most cases resolving within weeks to months as maternal antibodies are cleared from the infant's system. Severe cases may require intervention but typically improve with treatment.",
+    "complications": [
+      "Severe bleeding (intracranial hemorrhage, gastrointestinal bleeding)",
+      "Chronic thrombocytopaenia in some cases",
+      "Potential for long-term developmental issues if severe bleeding occurs"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of thrombocytopaenia, perform initial investigations, manage acute bleeding, and understand when to escalate care to a pediatric hematologist or neonatologist.",
+    "escalation": "Refer to a pediatric hematologist for severe cases, those requiring transfusion, or if there is uncertainty in management.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding, ensure appropriate transfusion protocols are followed, and be aware of the potential for rapid deterioration in severe cases."
+  }
+}

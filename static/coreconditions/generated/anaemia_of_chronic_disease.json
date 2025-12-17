@@ -1,0 +1,128 @@
+{
+  "id": "anaemia_of_chronic_disease",
+  "name": "Anaemia of chronic disease",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:58:22.451275",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anaemia of chronic disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnaemia of chronic disease (ACD) is a type of anaemia that occurs in the context of chronic inflammation, infection, or malignancy, characterized by the sequestration of iron and impaired erythropoiesis.\n\n### Epidemiology\nACD is one of the most common types of anaemia in hospitalized patients and those with chronic diseases, affecting approximately 20-50% of patients with chronic inflammatory conditions.\n\n### Essential Pathophysiology\nIn ACD, inflammatory cytokines (e.g., IL-6, TNF-alpha) stimulate hepcidin production, which inhibits iron absorption from the gut and prevents iron release from macrophages, leading to functional iron deficiency despite normal or increased iron stores.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath on exertion\n\n### Key Signs\n- Pallor\n- Tachycardia\n- Systolic murmur (due to increased cardiac output)\n- Splenomegaly (in chronic inflammatory diseases)\n\n### Atypical Presentations\n- Mild cognitive impairment in elderly patients\n- Unexplained weight loss in malignancy\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue impacting daily activities\n- Signs of heart failure (e.g., dyspnoea, edema)\n- Signs of underlying malignancy (e.g., unexplained weight loss, night sweats)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Reticulocyte count\n- Peripheral blood smear\n- Serum ferritin\n- Serum iron and total iron-binding capacity (TIBC)\n\n### Second-line Investigations\n- C-reactive protein (CRP)\n- Erythrocyte sedimentation rate (ESR)\n- Bone marrow biopsy (if indicated)\n\n### Specialist Tests\n- Iron studies (to assess iron metabolism)\n- Tests for underlying chronic disease (e.g., autoimmune markers, cultures for infection)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of anaemia (Hb < 13 g/dL in men, < 12 g/dL in women) in the context of chronic disease, with low serum iron and TIBC, and normal or increased ferritin levels.\n\n### Key Differential Diagnoses to Exclude\n- Iron deficiency anaemia\n- Thalassemia\n- Chronic kidney disease\n- Myelodysplastic syndromes\n- Anemia due to malignancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Transfusion of packed red blood cells (if symptomatic or Hb < 7 g/dL)\n- Iron supplementation (if iron deficiency is also present)\n\n#### Second-line Treatments\n- Erythropoiesis-stimulating agents (e.g., Epoetin alfa) if indicated\n\n#### Emergency Procedures\n- Bone marrow aspiration/biopsy (if diagnosis is uncertain)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying chronic disease (e.g., controlling inflammation in autoimmune diseases)\n- Iron supplementation if indicated\n\n#### Second-line Treatments\n- Erythropoiesis-stimulating agents (e.g., Epoetin alfa) for patients with chronic kidney disease or cancer-related anaemia\n\n#### Monitoring Requirements\n- Regular CBC to monitor Hb levels and response to treatment\n- Monitoring of iron studies to avoid iron overload\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Epoetin alfa\n- **Mechanism of Action**: Stimulates erythropoiesis by acting on erythroid progenitor cells in the bone marrow.\n- **Typical Dosing Range**: Typically 50-100 units/kg subcutaneously 3 times a week, adjusted based on Hb response.\n- **Key Side Effects/Contraindications**: Hypertension, headache, increased risk of thromboembolic events.\n- **When to Use vs. Alternatives**: Monitor Hb levels regularly to avoid rapid increases.\n\n#### Iron sucrose\n- **Mechanism of Action**: Provides iron for erythropoiesis in patients with iron deficiency.\n- **Typical Dosing Range**: 100-200 mg IV over 2-5 minutes, repeated as necessary.\n- **Key Side Effects/Contraindications**: Hypotension, allergic reactions, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Monitor for signs of anaphylaxis during administration.\n\n### Procedures\n\n#### Bone marrow biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Indicated when the cause of anaemia is unclear or when malignancy is suspected.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site, and rarely, damage to surrounding structures. Risks are generally low.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of ACD largely depends on the underlying chronic disease. If the underlying condition is managed effectively, anaemia can improve significantly.\n\n### Important Complications to Watch For\n- Increased risk of cardiovascular events due to chronic anaemia\n- Fatigue impacting quality of life\n- Potential for iron overload with inappropriate iron supplementation\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, manage basic treatment, and refer to specialists when necessary. They should also educate patients about the importance of managing underlying chronic conditions.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist if there is uncertainty in diagnosis, if the patient is symptomatic with severe anaemia, or if there is no response to initial management.\n\n### Key Safety Considerations\nMonitor for signs of transfusion reactions if blood products are administered. Ensure appropriate monitoring of iron levels to prevent overload, especially in patients receiving iron supplementation.\n",
+  "content": {
+    "overview": {
+      "definition": "Anaemia of chronic disease (ACD) is a type of anaemia that occurs in the context of chronic inflammation, infection, or malignancy, characterized by the sequestration of iron and impaired erythropoiesis.",
+      "epidemiology": "ACD is one of the most common types of anaemia in hospitalized patients and those with chronic diseases, affecting approximately 20-50% of patients with chronic inflammatory conditions.",
+      "pathophysiology": "In ACD, inflammatory cytokines (e.g., IL-6, TNF-alpha) stimulate hepcidin production, which inhibits iron absorption from the gut and prevents iron release from macrophages, leading to functional iron deficiency despite normal or increased iron stores."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath on exertion"
+      ],
+      "signs": [
+        "Pallor",
+        "Tachycardia",
+        "Systolic murmur (due to increased cardiac output)",
+        "Splenomegaly (in chronic inflammatory diseases)"
+      ],
+      "atypicalPresentations": [
+        "Mild cognitive impairment in elderly patients",
+        "Unexplained weight loss in malignancy"
+      ],
+      "redFlags": [
+        "Severe fatigue impacting daily activities",
+        "Signs of heart failure (e.g., dyspnoea, edema)",
+        "Signs of underlying malignancy (e.g., unexplained weight loss, night sweats)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Reticulocyte count",
+        "Peripheral blood smear",
+        "Serum ferritin",
+        "Serum iron and total iron-binding capacity (TIBC)"
+      ],
+      "secondLine": [
+        "C-reactive protein (CRP)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "Bone marrow biopsy (if indicated)"
+      ],
+      "specialistTests": [
+        "Iron studies (to assess iron metabolism)",
+        "Tests for underlying chronic disease (e.g., autoimmune markers, cultures for infection)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of anaemia (Hb < 13 g/dL in men, < 12 g/dL in women) in the context of chronic disease, with low serum iron and TIBC, and normal or increased ferritin levels.",
+      "differentials": [
+        "Iron deficiency anaemia",
+        "Thalassemia",
+        "Chronic kidney disease",
+        "Myelodysplastic syndromes",
+        "Anemia due to malignancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Transfusion of packed red blood cells (if symptomatic or Hb < 7 g/dL)",
+          "Iron supplementation (if iron deficiency is also present)"
+        ],
+        "secondLine": [
+          "Erythropoiesis-stimulating agents (e.g., Epoetin alfa) if indicated"
+        ],
+        "procedures": [
+          "Bone marrow aspiration/biopsy (if diagnosis is uncertain)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying chronic disease (e.g., controlling inflammation in autoimmune diseases)",
+          "Iron supplementation if indicated"
+        ],
+        "secondLine": [
+          "Erythropoiesis-stimulating agents (e.g., Epoetin alfa) for patients with chronic kidney disease or cancer-related anaemia"
+        ],
+        "monitoring": [
+          "Regular CBC to monitor Hb levels and response to treatment",
+          "Monitoring of iron studies to avoid iron overload"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Epoetin alfa",
+          "mechanism": "Stimulates erythropoiesis by acting on erythroid progenitor cells in the bone marrow.",
+          "dosing": "Typically 50-100 units/kg subcutaneously 3 times a week, adjusted based on Hb response.",
+          "sideEffects": "Hypertension, headache, increased risk of thromboembolic events.",
+          "notes": "Monitor Hb levels regularly to avoid rapid increases."
+        },
+        {
+          "name": "Iron sucrose",
+          "mechanism": "Provides iron for erythropoiesis in patients with iron deficiency.",
+          "dosing": "100-200 mg IV over 2-5 minutes, repeated as necessary.",
+          "sideEffects": "Hypotension, allergic reactions, gastrointestinal upset.",
+          "notes": "Monitor for signs of anaphylaxis during administration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone marrow biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Indicated when the cause of anaemia is unclear or when malignancy is suspected.",
+          "risks": "Infection, bleeding, pain at the site, and rarely, damage to surrounding structures. Risks are generally low."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of ACD largely depends on the underlying chronic disease. If the underlying condition is managed effectively, anaemia can improve significantly.",
+    "complications": [
+      "Increased risk of cardiovascular events due to chronic anaemia",
+      "Fatigue impacting quality of life",
+      "Potential for iron overload with inappropriate iron supplementation"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, manage basic treatment, and refer to specialists when necessary. They should also educate patients about the importance of managing underlying chronic conditions.",
+    "escalation": "Refer to a haematologist if there is uncertainty in diagnosis, if the patient is symptomatic with severe anaemia, or if there is no response to initial management.",
+    "keySafetyConsiderations": "Monitor for signs of transfusion reactions if blood products are administered. Ensure appropriate monitoring of iron levels to prevent overload, especially in patients receiving iron supplementation."
+  }
+}

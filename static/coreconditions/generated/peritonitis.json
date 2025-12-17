@@ -1,0 +1,148 @@
+{
+  "id": "peritonitis",
+  "name": "Peritonitis",
+  "domains": [
+    "Gastrointestinal Surgery",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:16:30.106146",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peritonitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeritonitis is an inflammation of the peritoneum, the serous membrane lining the abdominal cavity and covering the abdominal organs. It can be classified as primary (spontaneous) or secondary (due to perforation or infection from other sources).\n\n### Epidemiology\nPeritonitis is a common surgical emergency, particularly in patients with abdominal trauma, perforated viscera, or those undergoing peritoneal dialysis. The incidence varies based on underlying conditions, with higher rates in patients with liver cirrhosis and those with peritoneal dialysis.\n\n### Essential Pathophysiology\nPeritonitis occurs when bacteria or irritants enter the peritoneal cavity, leading to an inflammatory response. This can result from perforation of the gastrointestinal tract, infection from the bloodstream, or direct contamination during surgical procedures. The inflammatory response can lead to fluid accumulation, adhesions, and potentially sepsis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often diffuse and severe)\n- Nausea and vomiting\n- Fever\n- Loss of appetite\n- Diarrhea or constipation\n- Abdominal distension\n\n### Key Signs\n- Tenderness on palpation (often diffuse)\n- Guarding and rigidity\n- Rebound tenderness\n- Decreased bowel sounds\n- Fever (often >38°C)\n- Tachycardia\n\n### Atypical Presentations\n- Altered mental status (especially in elderly patients)\n- Localized pain in specific quadrants (e.g., appendicitis)\n- Symptoms mimicking other conditions (e.g., urinary tract infection in females)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain with sudden onset\n- Signs of shock (hypotension, tachycardia)\n- Persistent vomiting\n- Signs of peritonitis in a patient with a history of recent abdominal surgery or trauma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Electrolytes\n- Abdominal X-ray (to check for free air or obstruction)\n- Urinalysis\n\n### Second-line Investigations\n- CT abdomen/pelvis with contrast (to identify source of infection)\n- Ultrasound abdomen (especially in children or pregnant women)\n- Laparoscopy (if diagnosis remains unclear)\n\n### Specialist Tests\n- Peritoneal fluid analysis (if ascites is present)\n- Blood cultures\n- Liver function tests (if liver disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of peritonitis is based on clinical presentation, imaging findings, and laboratory results indicating inflammation and infection of the peritoneum.\n\n### Key Differential Diagnoses to Exclude\n- Appendicitis\n- Diverticulitis\n- Pancreatitis\n- Cholecystitis\n- Bowel obstruction\n- Mesenteric ischemia\n- Ectopic pregnancy (in females)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids (crystalloids)\n- Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, ceftriaxone)\n- Surgical consultation for possible laparotomy\n\n#### Second-line Treatments\n- Consideration of specific antibiotics based on culture results\n- Supportive care (antiemetics, analgesia)\n\n#### Emergency Procedures\n- Laparotomy (to identify and treat the source of infection)\n- Laparoscopy (for diagnostic purposes or treatment of localized infections)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying conditions (e.g., liver disease, diabetes)\n- Regular monitoring for signs of infection\n\n#### Second-line Treatments\n- Consideration of peritoneal dialysis in patients with renal failure\n\n#### Monitoring Requirements\n- Regular assessment of abdominal symptoms\n- Monitoring laboratory values (CBC, electrolytes)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Third-generation cephalosporin effective against a wide range of bacteria.\n- **Typical Dosing Range**: 1-2 g IV once daily.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, potential for C. difficile infection.\n- **When to Use vs. Alternatives**: Good choice for community-acquired infections.\n\n### Procedures\n\n#### Laparotomy\n- **What it Involves**: Surgical procedure involving an incision in the abdominal wall to access the peritoneal cavity.\n- **Indications**: Suspected perforation, abscess, or other intra-abdominal pathology requiring direct intervention.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding organs, prolonged recovery.\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgical procedure using a camera and instruments inserted through small incisions in the abdomen.\n- **Indications**: Diagnostic evaluation of abdominal pain, treatment of localized infections.\n- **Key Risks/Complications**: Infection, bleeding, injury to organs, anesthesia complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of peritonitis depends on the underlying cause, the timeliness of diagnosis and treatment, and the patient's overall health. Early intervention generally leads to better outcomes, while delayed treatment can result in severe complications or death.\n\n### Important Complications to Watch For\n- Sepsis\n- Abscess formation\n- Bowel obstruction\n- Fistula formation\n- Multi-organ failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of peritonitis, initiate appropriate investigations, start empirical antibiotic therapy, and ensure timely surgical consultation. They should also monitor vital signs and laboratory results closely.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of sepsis or deteriorates rapidly, escalate care to senior medical staff and surgical teams immediately. Ensure that the patient is stabilized and prepared for potential surgical intervention.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and aseptic technique when managing patients with suspected peritonitis. Monitor for signs of deterioration, and be vigilant for complications such as sepsis. Maintain clear communication with the surgical team and document all findings and interventions.\n",
+  "content": {
+    "overview": {
+      "definition": "Peritonitis is an inflammation of the peritoneum, the serous membrane lining the abdominal cavity and covering the abdominal organs. It can be classified as primary (spontaneous) or secondary (due to perforation or infection from other sources).",
+      "epidemiology": "Peritonitis is a common surgical emergency, particularly in patients with abdominal trauma, perforated viscera, or those undergoing peritoneal dialysis. The incidence varies based on underlying conditions, with higher rates in patients with liver cirrhosis and those with peritoneal dialysis.",
+      "pathophysiology": "Peritonitis occurs when bacteria or irritants enter the peritoneal cavity, leading to an inflammatory response. This can result from perforation of the gastrointestinal tract, infection from the bloodstream, or direct contamination during surgical procedures. The inflammatory response can lead to fluid accumulation, adhesions, and potentially sepsis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often diffuse and severe)",
+        "Nausea and vomiting",
+        "Fever",
+        "Loss of appetite",
+        "Diarrhea or constipation",
+        "Abdominal distension"
+      ],
+      "signs": [
+        "Tenderness on palpation (often diffuse)",
+        "Guarding and rigidity",
+        "Rebound tenderness",
+        "Decreased bowel sounds",
+        "Fever (often >38°C)",
+        "Tachycardia"
+      ],
+      "atypicalPresentations": [
+        "Altered mental status (especially in elderly patients)",
+        "Localized pain in specific quadrants (e.g., appendicitis)",
+        "Symptoms mimicking other conditions (e.g., urinary tract infection in females)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain with sudden onset",
+        "Signs of shock (hypotension, tachycardia)",
+        "Persistent vomiting",
+        "Signs of peritonitis in a patient with a history of recent abdominal surgery or trauma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Electrolytes",
+        "Abdominal X-ray (to check for free air or obstruction)",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "CT abdomen/pelvis with contrast (to identify source of infection)",
+        "Ultrasound abdomen (especially in children or pregnant women)",
+        "Laparoscopy (if diagnosis remains unclear)"
+      ],
+      "specialistTests": [
+        "Peritoneal fluid analysis (if ascites is present)",
+        "Blood cultures",
+        "Liver function tests (if liver disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of peritonitis is based on clinical presentation, imaging findings, and laboratory results indicating inflammation and infection of the peritoneum.",
+      "differentials": [
+        "Appendicitis",
+        "Diverticulitis",
+        "Pancreatitis",
+        "Cholecystitis",
+        "Bowel obstruction",
+        "Mesenteric ischemia",
+        "Ectopic pregnancy (in females)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids (crystalloids)",
+          "Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, ceftriaxone)",
+          "Surgical consultation for possible laparotomy"
+        ],
+        "secondLine": [
+          "Consideration of specific antibiotics based on culture results",
+          "Supportive care (antiemetics, analgesia)"
+        ],
+        "procedures": [
+          "Laparotomy (to identify and treat the source of infection)",
+          "Laparoscopy (for diagnostic purposes or treatment of localized infections)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying conditions (e.g., liver disease, diabetes)",
+          "Regular monitoring for signs of infection"
+        ],
+        "secondLine": [
+          "Consideration of peritoneal dialysis in patients with renal failure"
+        ],
+        "monitoring": [
+          "Regular assessment of abdominal symptoms",
+          "Monitoring laboratory values (CBC, electrolytes)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Third-generation cephalosporin effective against a wide range of bacteria.",
+          "dosing": "1-2 g IV once daily.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, potential for C. difficile infection.",
+          "notes": "Good choice for community-acquired infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparotomy",
+          "description": "Surgical procedure involving an incision in the abdominal wall to access the peritoneal cavity.",
+          "indications": "Suspected perforation, abscess, or other intra-abdominal pathology requiring direct intervention.",
+          "risks": "Infection, bleeding, damage to surrounding organs, prolonged recovery."
+        },
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgical procedure using a camera and instruments inserted through small incisions in the abdomen.",
+          "indications": "Diagnostic evaluation of abdominal pain, treatment of localized infections.",
+          "risks": "Infection, bleeding, injury to organs, anesthesia complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of peritonitis depends on the underlying cause, the timeliness of diagnosis and treatment, and the patient's overall health. Early intervention generally leads to better outcomes, while delayed treatment can result in severe complications or death.",
+    "complications": [
+      "Sepsis",
+      "Abscess formation",
+      "Bowel obstruction",
+      "Fistula formation",
+      "Multi-organ failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of peritonitis, initiate appropriate investigations, start empirical antibiotic therapy, and ensure timely surgical consultation. They should also monitor vital signs and laboratory results closely.",
+    "escalation": "If a patient shows signs of sepsis or deteriorates rapidly, escalate care to senior medical staff and surgical teams immediately. Ensure that the patient is stabilized and prepared for potential surgical intervention.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and aseptic technique when managing patients with suspected peritonitis. Monitor for signs of deterioration, and be vigilant for complications such as sepsis. Maintain clear communication with the surgical team and document all findings and interventions."
+  }
+}

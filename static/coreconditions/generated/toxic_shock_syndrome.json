@@ -1,0 +1,137 @@
+{
+  "id": "toxic_shock_syndrome",
+  "name": "Toxic shock syndrome",
+  "domains": [
+    "Gynaecology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:52:58.979761",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Toxic shock syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nToxic Shock Syndrome (TSS) is a severe, life-threatening condition characterized by sudden onset fever, rash, and multi-organ dysfunction, often associated with the presence of certain strains of Staphylococcus aureus or Streptococcus pyogenes.\n\n### Epidemiology\nTSS is rare, with an estimated incidence of 0.8 to 3 cases per 100,000 population per year. It can occur in both adults and children, with a higher incidence in menstruating women using tampons, post-surgical patients, and those with skin infections.\n\n### Essential Pathophysiology\nTSS is caused by the release of toxins (superantigens) from bacteria, which activate a massive immune response leading to systemic inflammation, vasodilation, and multi-organ failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- High fever (≥38.9°C)\n- Rash (often diffuse, resembling sunburn)\n- Vomiting\n- Diarrhea\n- Muscle pain\n- Confusion or altered mental status\n\n### Key Signs\n- Hypotension (systolic BP <90 mmHg)\n- Tachycardia\n- Erythematous rash\n- Desquamation (especially of palms and soles)\n- Signs of organ dysfunction (e.g., oliguria, jaundice)\n\n### Atypical Presentations\n- Localized infections (e.g., abscesses) without systemic symptoms\n- Mild symptoms in children that progress rapidly\n\n### Red Flags Requiring Immediate Action\n- Severe hypotension\n- Altered mental status\n- Rapid progression of symptoms\n- History of recent surgery or tampon use\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Liver function tests (LFTs)\n- Renal function tests (RFTs)\n- Electrolytes\n\n### Second-line Investigations\n- Coagulation profile (PT, aPTT)\n- Serum lactate\n- C-reactive protein (CRP)\n- Chest X-ray (to rule out pneumonia)\n\n### Specialist Tests\n- Toxin detection (e.g., PCR for TSST-1)\n- Imaging studies (if abscess or localized infection suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical criteria: fever, rash, hypotension, and involvement of three or more organ systems (e.g., renal, hepatic, hematologic, gastrointestinal, or central nervous system).\n\n### Key Differential Diagnoses to Exclude\n- Sepsis\n- Kawasaki disease\n- Scarlet fever\n- Acute gastroenteritis\n- Drug reactions (e.g., Stevens-Johnson syndrome)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Vasopressors (if hypotensive despite fluids)\n- Antibiotics (e.g., clindamycin + vancomycin)\n\n#### Second-line Treatments\n- Intravenous immunoglobulin (IVIG) in severe cases\n\n#### Emergency Procedures\n- Drainage of any abscesses or localized infections\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor for organ function recovery\n- Supportive care as needed\n\n#### Second-line Treatments\n- Consider referral to infectious disease specialist for persistent cases\n\n#### Monitoring Requirements\n- Regular vital signs monitoring\n- Renal and liver function tests\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Clindamycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis, reducing toxin production.\n- **Typical Dosing Range**: 600-900 mg IV every 8 hours.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, rash, potential for C. difficile infection.\n- **When to Use vs. Alternatives**: Effective against anaerobes and some gram-positive bacteria.\n\n#### Vancomycin\n- **Mechanism of Action**: Inhibits cell wall synthesis in bacteria.\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours, adjusted for renal function.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, red man syndrome, ototoxicity.\n- **When to Use vs. Alternatives**: Coverage for MRSA.\n\n### Procedures\n\n#### Abscess drainage\n- **What it Involves**: Surgical procedure to drain pus from an infected area.\n- **Indications**: Presence of a localized collection of pus or abscess.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and treatment, the prognosis is generally good; however, delayed treatment can lead to significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Multi-organ failure\n- Renal failure\n- Pulmonary edema\n- Septic shock\n- Death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the signs and symptoms of TSS, initiate early investigations, and provide supportive care while ensuring timely escalation to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf TSS is suspected, escalate care to a senior clinician immediately, especially if there are signs of severe hypotension or multi-organ dysfunction.\n\n### Key Safety Considerations\nEnsure thorough history-taking, including recent tampon use, surgical history, and any skin infections. Monitor vital signs closely and be prepared to initiate resuscitation protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "Toxic Shock Syndrome (TSS) is a severe, life-threatening condition characterized by sudden onset fever, rash, and multi-organ dysfunction, often associated with the presence of certain strains of Staphylococcus aureus or Streptococcus pyogenes.",
+      "epidemiology": "TSS is rare, with an estimated incidence of 0.8 to 3 cases per 100,000 population per year. It can occur in both adults and children, with a higher incidence in menstruating women using tampons, post-surgical patients, and those with skin infections.",
+      "pathophysiology": "TSS is caused by the release of toxins (superantigens) from bacteria, which activate a massive immune response leading to systemic inflammation, vasodilation, and multi-organ failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "High fever (≥38.9°C)",
+        "Rash (often diffuse, resembling sunburn)",
+        "Vomiting",
+        "Diarrhea",
+        "Muscle pain",
+        "Confusion or altered mental status"
+      ],
+      "signs": [
+        "Hypotension (systolic BP <90 mmHg)",
+        "Tachycardia",
+        "Erythematous rash",
+        "Desquamation (especially of palms and soles)",
+        "Signs of organ dysfunction (e.g., oliguria, jaundice)"
+      ],
+      "atypicalPresentations": [
+        "Localized infections (e.g., abscesses) without systemic symptoms",
+        "Mild symptoms in children that progress rapidly"
+      ],
+      "redFlags": [
+        "Severe hypotension",
+        "Altered mental status",
+        "Rapid progression of symptoms",
+        "History of recent surgery or tampon use"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Liver function tests (LFTs)",
+        "Renal function tests (RFTs)",
+        "Electrolytes"
+      ],
+      "secondLine": [
+        "Coagulation profile (PT, aPTT)",
+        "Serum lactate",
+        "C-reactive protein (CRP)",
+        "Chest X-ray (to rule out pneumonia)"
+      ],
+      "specialistTests": [
+        "Toxin detection (e.g., PCR for TSST-1)",
+        "Imaging studies (if abscess or localized infection suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical criteria: fever, rash, hypotension, and involvement of three or more organ systems (e.g., renal, hepatic, hematologic, gastrointestinal, or central nervous system).",
+      "differentials": [
+        "Sepsis",
+        "Kawasaki disease",
+        "Scarlet fever",
+        "Acute gastroenteritis",
+        "Drug reactions (e.g., Stevens-Johnson syndrome)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Vasopressors (if hypotensive despite fluids)",
+          "Antibiotics (e.g., clindamycin + vancomycin)"
+        ],
+        "secondLine": [
+          "Intravenous immunoglobulin (IVIG) in severe cases"
+        ],
+        "procedures": [
+          "Drainage of any abscesses or localized infections"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor for organ function recovery",
+          "Supportive care as needed"
+        ],
+        "secondLine": [
+          "Consider referral to infectious disease specialist for persistent cases"
+        ],
+        "monitoring": [
+          "Regular vital signs monitoring",
+          "Renal and liver function tests"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Clindamycin",
+          "mechanism": "Inhibits bacterial protein synthesis, reducing toxin production.",
+          "dosing": "600-900 mg IV every 8 hours.",
+          "sideEffects": "Nausea, diarrhea, rash, potential for C. difficile infection.",
+          "notes": "Effective against anaerobes and some gram-positive bacteria."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Inhibits cell wall synthesis in bacteria.",
+          "dosing": "15-20 mg/kg IV every 8-12 hours, adjusted for renal function.",
+          "sideEffects": "Nephrotoxicity, red man syndrome, ototoxicity.",
+          "notes": "Coverage for MRSA."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Abscess drainage",
+          "description": "Surgical procedure to drain pus from an infected area.",
+          "indications": "Presence of a localized collection of pus or abscess.",
+          "risks": "Infection, bleeding, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and treatment, the prognosis is generally good; however, delayed treatment can lead to significant morbidity and mortality.",
+    "complications": [
+      "Multi-organ failure",
+      "Renal failure",
+      "Pulmonary edema",
+      "Septic shock",
+      "Death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the signs and symptoms of TSS, initiate early investigations, and provide supportive care while ensuring timely escalation to senior medical staff.",
+    "escalation": "If TSS is suspected, escalate care to a senior clinician immediately, especially if there are signs of severe hypotension or multi-organ dysfunction.",
+    "keySafetyConsiderations": "Ensure thorough history-taking, including recent tampon use, surgical history, and any skin infections. Monitor vital signs closely and be prepared to initiate resuscitation protocols."
+  }
+}

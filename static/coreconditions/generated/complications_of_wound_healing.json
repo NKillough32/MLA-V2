@@ -1,0 +1,133 @@
+{
+  "id": "complications_of_wound_healing",
+  "name": "Complications of wound healing",
+  "domains": [
+    "Plastics"
+  ],
+  "generatedAt": "2025-12-17T21:35:05.617793",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Complications of wound healing: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nComplications of wound healing refer to any abnormal or delayed healing processes that occur following an injury or surgical procedure, leading to adverse outcomes such as infection, dehiscence, or chronic wounds.\n\n### Epidemiology\nWound healing complications are common, affecting up to 10% of surgical patients, with higher rates in patients with comorbidities such as diabetes, obesity, and vascular disease.\n\n### Essential Pathophysiology\nWound healing involves a complex interplay of hemostasis, inflammation, proliferation, and remodeling. Complications can arise from factors that disrupt these phases, including infection, poor blood supply, foreign bodies, and systemic conditions.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased pain at the wound site\n- Persistent swelling or redness\n- Foul odor from the wound\n- Excessive drainage or bleeding\n\n### Key Signs\n- Erythema and warmth around the wound\n- Purulent discharge\n- Wound dehiscence (opening of the wound)\n- Necrosis of surrounding tissue\n\n### Atypical Presentations\n- Wound healing in immunocompromised patients may present with atypical infections or delayed healing without classic signs of inflammation.\n- Chronic wounds may present as non-healing ulcers without significant pain.\n\n### Red Flags Requiring Immediate Action\n- Signs of systemic infection (fever, chills)\n- Rapidly increasing size of the wound\n- Signs of necrotizing fasciitis (severe pain, systemic toxicity)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of the wound\n- Wound swab for microbiological analysis\n- Blood tests (CBC, CRP)\n\n### Second-line Investigations\n- Ultrasound to assess for abscess formation\n- CT scan for deeper tissue involvement if indicated\n\n### Specialist Tests\n- Biopsy of non-healing wounds to rule out malignancy\n- Vascular studies if ischemia is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of wound healing complications is primarily clinical, based on the presence of symptoms and signs of infection, dehiscence, or chronicity.\n\n### Key Differential Diagnoses to Exclude\n- Infection (cellulitis, abscess)\n- Dehiscence\n- Chronic venous insufficiency\n- Malignancy (e.g., Marjolin's ulcer)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Debridement of necrotic tissue\n- Antibiotic therapy based on culture results\n- Wound care with appropriate dressings\n\n#### Second-line Treatments\n- Consideration of surgical intervention for abscess drainage or debridement if conservative measures fail\n\n#### Emergency Procedures\n- Surgical debridement: Removal of devitalized tissue to promote healing. Indicated in cases of necrotic tissue or infection. Risks include bleeding, infection, and further tissue loss.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular wound assessment and care\n- Moist wound healing techniques (e.g., hydrocolloid dressings)\n- Management of underlying conditions (e.g., diabetes control)\n\n#### Second-line Treatments\n- Advanced wound care therapies (e.g., negative pressure wound therapy)\n- Consideration of skin grafting or flaps for non-healing wounds.\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing progress and adjust management as needed.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amoxicillin-clavulanate\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against skin flora and anaerobes.\n- **Typical Dosing Range**: 500 mg/125 mg every 8 hours for 5-7 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Consider in cases of suspected polymicrobial infection.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic effective against anaerobic bacteria and protozoa.\n- **Typical Dosing Range**: 500 mg every 8 hours for 5-7 days.\n- **Key Side Effects/Contraindications**: Nausea, metallic taste, disulfiram-like reaction with alcohol.\n- **When to Use vs. Alternatives**: Useful in cases of suspected anaerobic infection.\n\n### Procedures\n\n#### Wound debridement\n- **What it Involves**: Surgical removal of necrotic or infected tissue to promote healing.\n- **Indications**: Necrotic tissue, infected wounds, or chronic non-healing wounds.\n- **Key Risks/Complications**: Bleeding, infection, pain, and potential need for further surgical intervention.\n\n#### Skin grafting\n- **What it Involves**: Surgical procedure to cover a wound with skin from another area of the body.\n- **Indications**: Non-healing ulcers, significant tissue loss, or after debridement.\n- **Key Risks/Complications**: Graft failure, infection, scarring, and complications at donor site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for wound healing complications varies based on the underlying cause, patient comorbidities, and timely intervention. Early recognition and management can lead to improved outcomes.\n\n### Important Complications to Watch For\n- Chronic non-healing wounds\n- Infection leading to systemic illness\n- Necrosis and loss of function in affected areas\n- Psychosocial impact due to chronic wounds\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments of wounds, recognize signs of complications, initiate appropriate investigations, and manage basic wound care. They should also communicate effectively with senior staff regarding any concerns or escalations.\n\n### When to Escalate to Senior/Specialist\nEscalate to surgical or plastic surgery teams if there are signs of significant infection, necrosis, or if the wound is not healing as expected despite appropriate management.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and use of personal protective equipment (PPE) when managing wounds. Be vigilant for signs of infection and ensure timely follow-up for patients with complex wounds.\n",
+  "content": {
+    "overview": {
+      "definition": "Complications of wound healing refer to any abnormal or delayed healing processes that occur following an injury or surgical procedure, leading to adverse outcomes such as infection, dehiscence, or chronic wounds.",
+      "epidemiology": "Wound healing complications are common, affecting up to 10% of surgical patients, with higher rates in patients with comorbidities such as diabetes, obesity, and vascular disease.",
+      "pathophysiology": "Wound healing involves a complex interplay of hemostasis, inflammation, proliferation, and remodeling. Complications can arise from factors that disrupt these phases, including infection, poor blood supply, foreign bodies, and systemic conditions."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased pain at the wound site",
+        "Persistent swelling or redness",
+        "Foul odor from the wound",
+        "Excessive drainage or bleeding"
+      ],
+      "signs": [
+        "Erythema and warmth around the wound",
+        "Purulent discharge",
+        "Wound dehiscence (opening of the wound)",
+        "Necrosis of surrounding tissue"
+      ],
+      "atypicalPresentations": [
+        "Wound healing in immunocompromised patients may present with atypical infections or delayed healing without classic signs of inflammation.",
+        "Chronic wounds may present as non-healing ulcers without significant pain."
+      ],
+      "redFlags": [
+        "Signs of systemic infection (fever, chills)",
+        "Rapidly increasing size of the wound",
+        "Signs of necrotizing fasciitis (severe pain, systemic toxicity)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of the wound",
+        "Wound swab for microbiological analysis",
+        "Blood tests (CBC, CRP)"
+      ],
+      "secondLine": [
+        "Ultrasound to assess for abscess formation",
+        "CT scan for deeper tissue involvement if indicated"
+      ],
+      "specialistTests": [
+        "Biopsy of non-healing wounds to rule out malignancy",
+        "Vascular studies if ischemia is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of wound healing complications is primarily clinical, based on the presence of symptoms and signs of infection, dehiscence, or chronicity.",
+      "differentials": [
+        "Infection (cellulitis, abscess)",
+        "Dehiscence",
+        "Chronic venous insufficiency",
+        "Malignancy (e.g., Marjolin's ulcer)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Debridement of necrotic tissue",
+          "Antibiotic therapy based on culture results",
+          "Wound care with appropriate dressings"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention for abscess drainage or debridement if conservative measures fail"
+        ],
+        "procedures": [
+          "Surgical debridement: Removal of devitalized tissue to promote healing. Indicated in cases of necrotic tissue or infection. Risks include bleeding, infection, and further tissue loss."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular wound assessment and care",
+          "Moist wound healing techniques (e.g., hydrocolloid dressings)",
+          "Management of underlying conditions (e.g., diabetes control)"
+        ],
+        "secondLine": [
+          "Advanced wound care therapies (e.g., negative pressure wound therapy)",
+          "Consideration of skin grafting or flaps for non-healing wounds."
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing progress and adjust management as needed."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amoxicillin-clavulanate",
+          "mechanism": "Broad-spectrum antibiotic effective against skin flora and anaerobes.",
+          "dosing": "500 mg/125 mg every 8 hours for 5-7 days.",
+          "sideEffects": "Nausea, diarrhea, allergic reactions.",
+          "notes": "Consider in cases of suspected polymicrobial infection."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic effective against anaerobic bacteria and protozoa.",
+          "dosing": "500 mg every 8 hours for 5-7 days.",
+          "sideEffects": "Nausea, metallic taste, disulfiram-like reaction with alcohol.",
+          "notes": "Useful in cases of suspected anaerobic infection."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound debridement",
+          "description": "Surgical removal of necrotic or infected tissue to promote healing.",
+          "indications": "Necrotic tissue, infected wounds, or chronic non-healing wounds.",
+          "risks": "Bleeding, infection, pain, and potential need for further surgical intervention."
+        },
+        {
+          "name": "Skin grafting",
+          "description": "Surgical procedure to cover a wound with skin from another area of the body.",
+          "indications": "Non-healing ulcers, significant tissue loss, or after debridement.",
+          "risks": "Graft failure, infection, scarring, and complications at donor site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for wound healing complications varies based on the underlying cause, patient comorbidities, and timely intervention. Early recognition and management can lead to improved outcomes.",
+    "complications": [
+      "Chronic non-healing wounds",
+      "Infection leading to systemic illness",
+      "Necrosis and loss of function in affected areas",
+      "Psychosocial impact due to chronic wounds"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments of wounds, recognize signs of complications, initiate appropriate investigations, and manage basic wound care. They should also communicate effectively with senior staff regarding any concerns or escalations.",
+    "escalation": "Escalate to surgical or plastic surgery teams if there are signs of significant infection, necrosis, or if the wound is not healing as expected despite appropriate management.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and use of personal protective equipment (PPE) when managing wounds. Be vigilant for signs of infection and ensure timely follow-up for patients with complex wounds."
+  }
+}

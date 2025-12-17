@@ -1,0 +1,136 @@
+{
+  "id": "delirium_acute_confusional_state",
+  "name": "Delirium (Acute Confusional State)?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:40:29.932652",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Delirium (Acute Confusional State)?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDelirium, also known as acute confusional state, is a rapid-onset disturbance of consciousness and cognition characterized by inattention, disorganized thinking, and altered level of awareness. It is often reversible and can fluctuate in severity.\n\n### Epidemiology\nDelirium is common in hospitalized elderly patients, with prevalence rates ranging from 10% to 30% in general medical wards and up to 50% in intensive care units. Risk factors include advanced age, pre-existing cognitive impairment, and multiple comorbidities.\n\n### Essential Pathophysiology\nDelirium is thought to result from a combination of neurochemical imbalances, inflammation, and metabolic disturbances affecting neurotransmitter systems, particularly acetylcholine and dopamine. It can be triggered by various factors, including infections, medications, and metabolic derangements.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Acute onset of confusion\n- Disorientation to time and place\n- Inattention\n- Memory disturbances\n- Altered perception (hallucinations, illusions)\n\n### Key Signs\n- Fluctuating levels of consciousness\n- Disorganized thinking\n- Incoherent speech\n- Restlessness or lethargy\n- Changes in sleep-wake cycle\n\n### Atypical Presentations\n- Hypoactive delirium (more common in elderly)\n- Agitated delirium with psychomotor agitation\n- Delirium without obvious cognitive impairment\n\n### Red Flags Requiring Immediate Action\n- Sudden change in mental status\n- Severe agitation or lethargy\n- Presence of hallucinations or delusions\n- Inability to maintain attention\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including history and mental status examination\n- Review of medications\n- Basic metabolic panel (electrolytes, renal function)\n- Complete blood count (CBC)\n- Urinalysis\n\n### Second-line Investigations\n- CT or MRI of the brain (if structural cause suspected)\n- Liver function tests\n- Thyroid function tests\n- Toxicology screen\n\n### Specialist Tests\n- Lumbar puncture (if infection of CNS suspected)\n- EEG (if seizures or non-convulsive status epilepticus suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of delirium is based on the DSM-5 criteria, which include: 1) Disturbance in attention and awareness, 2) The disturbance develops over a short period, 3) The disturbance is not better explained by another neurocognitive disorder, and 4) Evidence that the disturbance is a direct physiological consequence of a medical condition, substance intoxication, or withdrawal.\n\n### Key Differential Diagnoses to Exclude\n- Dementia\n- Psychosis\n- Depression\n- Substance intoxication or withdrawal\n- Metabolic encephalopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Identify and treat underlying cause (e.g., infection, metabolic derangement)\n- Ensure safety of the patient (e.g., minimize fall risk)\n- Reorient the patient frequently (e.g., use clocks, calendars)\n- Provide a calm and quiet environment\n\n#### Second-line Treatments\n- Consider low-dose antipsychotics (e.g., haloperidol) for severe agitation or distress\n\n#### Emergency Procedures\n- None specific for delirium, but may involve interventions for underlying causes (e.g., IV fluids for dehydration)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ongoing assessment and monitoring of cognitive function\n- Regular re-evaluation of medications and comorbidities\n\n#### Second-line Treatments\n- Referral to geriatric services for comprehensive management if recurrent or persistent delirium\n\n#### Monitoring Requirements\n- Regular cognitive assessments\n- Monitoring for recurrence of delirium\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Haloperidol\n- **Mechanism of Action**: Dopamine antagonist, reduces agitation and psychotic symptoms\n- **Typical Dosing Range**: 0.5-2 mg orally or IM, repeat every 4-6 hours as needed, max 10 mg/day\n- **Key Side Effects/Contraindications**: Sedation, extrapyramidal symptoms, QT prolongation\n- **When to Use vs. Alternatives**: Use with caution in elderly patients; monitor for side effects.\n\n#### Olanzapine\n- **Mechanism of Action**: Atypical antipsychotic, modulates serotonin and dopamine receptors\n- **Typical Dosing Range**: 2.5-10 mg orally, can be given once daily\n- **Key Side Effects/Contraindications**: Sedation, weight gain, metabolic syndrome\n- **When to Use vs. Alternatives**: Consider for patients with a history of psychosis or severe agitation.\n\n### Procedures\n\n#### Reorientation techniques\n- **What it Involves**: Use of clocks, calendars, and familiar objects to help orient the patient\n- **Indications**: For patients with fluctuating consciousness and disorientation\n- **Key Risks/Complications**: May not be effective in all patients; can cause distress if the patient is agitated.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nDelirium is often reversible with appropriate treatment of the underlying cause. However, it can lead to longer-term cognitive decline and increased mortality in elderly patients.\n\n### Important Complications to Watch For\n- Increased length of hospital stay\n- Higher risk of institutionalization\n- Long-term cognitive impairment\n- Increased risk of falls and injuries\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, identify potential causes, initiate treatment, and ensure safety measures are in place. They should also communicate findings to senior staff and involve multidisciplinary teams as needed.\n\n### When to Escalate to Senior/Specialist\nIf the patient exhibits severe agitation, persistent confusion, or if there are concerns about safety, escalate to senior medical staff or psychiatric services.\n\n### Key Safety Considerations\nEnsure patient safety by minimizing fall risks, using bed alarms if necessary, and avoiding physical restraints unless absolutely required. Monitor for side effects of medications, especially in elderly patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Delirium, also known as acute confusional state, is a rapid-onset disturbance of consciousness and cognition characterized by inattention, disorganized thinking, and altered level of awareness. It is often reversible and can fluctuate in severity.",
+      "epidemiology": "Delirium is common in hospitalized elderly patients, with prevalence rates ranging from 10% to 30% in general medical wards and up to 50% in intensive care units. Risk factors include advanced age, pre-existing cognitive impairment, and multiple comorbidities.",
+      "pathophysiology": "Delirium is thought to result from a combination of neurochemical imbalances, inflammation, and metabolic disturbances affecting neurotransmitter systems, particularly acetylcholine and dopamine. It can be triggered by various factors, including infections, medications, and metabolic derangements."
+    },
+    "recognition": {
+      "symptoms": [
+        "Acute onset of confusion",
+        "Disorientation to time and place",
+        "Inattention",
+        "Memory disturbances",
+        "Altered perception (hallucinations, illusions)"
+      ],
+      "signs": [
+        "Fluctuating levels of consciousness",
+        "Disorganized thinking",
+        "Incoherent speech",
+        "Restlessness or lethargy",
+        "Changes in sleep-wake cycle"
+      ],
+      "atypicalPresentations": [
+        "Hypoactive delirium (more common in elderly)",
+        "Agitated delirium with psychomotor agitation",
+        "Delirium without obvious cognitive impairment"
+      ],
+      "redFlags": [
+        "Sudden change in mental status",
+        "Severe agitation or lethargy",
+        "Presence of hallucinations or delusions",
+        "Inability to maintain attention"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including history and mental status examination",
+        "Review of medications",
+        "Basic metabolic panel (electrolytes, renal function)",
+        "Complete blood count (CBC)",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "CT or MRI of the brain (if structural cause suspected)",
+        "Liver function tests",
+        "Thyroid function tests",
+        "Toxicology screen"
+      ],
+      "specialistTests": [
+        "Lumbar puncture (if infection of CNS suspected)",
+        "EEG (if seizures or non-convulsive status epilepticus suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of delirium is based on the DSM-5 criteria, which include: 1) Disturbance in attention and awareness, 2) The disturbance develops over a short period, 3) The disturbance is not better explained by another neurocognitive disorder, and 4) Evidence that the disturbance is a direct physiological consequence of a medical condition, substance intoxication, or withdrawal.",
+      "differentials": [
+        "Dementia",
+        "Psychosis",
+        "Depression",
+        "Substance intoxication or withdrawal",
+        "Metabolic encephalopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Identify and treat underlying cause (e.g., infection, metabolic derangement)",
+          "Ensure safety of the patient (e.g., minimize fall risk)",
+          "Reorient the patient frequently (e.g., use clocks, calendars)",
+          "Provide a calm and quiet environment"
+        ],
+        "secondLine": [
+          "Consider low-dose antipsychotics (e.g., haloperidol) for severe agitation or distress"
+        ],
+        "procedures": [
+          "None specific for delirium, but may involve interventions for underlying causes (e.g., IV fluids for dehydration)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ongoing assessment and monitoring of cognitive function",
+          "Regular re-evaluation of medications and comorbidities"
+        ],
+        "secondLine": [
+          "Referral to geriatric services for comprehensive management if recurrent or persistent delirium"
+        ],
+        "monitoring": [
+          "Regular cognitive assessments",
+          "Monitoring for recurrence of delirium"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Haloperidol",
+          "mechanism": "Dopamine antagonist, reduces agitation and psychotic symptoms",
+          "dosing": "0.5-2 mg orally or IM, repeat every 4-6 hours as needed, max 10 mg/day",
+          "sideEffects": "Sedation, extrapyramidal symptoms, QT prolongation",
+          "notes": "Use with caution in elderly patients; monitor for side effects."
+        },
+        {
+          "name": "Olanzapine",
+          "mechanism": "Atypical antipsychotic, modulates serotonin and dopamine receptors",
+          "dosing": "2.5-10 mg orally, can be given once daily",
+          "sideEffects": "Sedation, weight gain, metabolic syndrome",
+          "notes": "Consider for patients with a history of psychosis or severe agitation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Reorientation techniques",
+          "description": "Use of clocks, calendars, and familiar objects to help orient the patient",
+          "indications": "For patients with fluctuating consciousness and disorientation",
+          "risks": "May not be effective in all patients; can cause distress if the patient is agitated."
+        }
+      ]
+    },
+    "prognosis": "Delirium is often reversible with appropriate treatment of the underlying cause. However, it can lead to longer-term cognitive decline and increased mortality in elderly patients.",
+    "complications": [
+      "Increased length of hospital stay",
+      "Higher risk of institutionalization",
+      "Long-term cognitive impairment",
+      "Increased risk of falls and injuries"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, identify potential causes, initiate treatment, and ensure safety measures are in place. They should also communicate findings to senior staff and involve multidisciplinary teams as needed.",
+    "escalation": "If the patient exhibits severe agitation, persistent confusion, or if there are concerns about safety, escalate to senior medical staff or psychiatric services.",
+    "keySafetyConsiderations": "Ensure patient safety by minimizing fall risks, using bed alarms if necessary, and avoiding physical restraints unless absolutely required. Monitor for side effects of medications, especially in elderly patients."
+  }
+}

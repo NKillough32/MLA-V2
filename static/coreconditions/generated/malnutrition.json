@@ -1,0 +1,135 @@
+{
+  "id": "malnutrition",
+  "name": "Malnutrition",
+  "domains": [
+    "Gastrointestinal",
+    "Care of the Elderly",
+    "Nutrition"
+  ],
+  "generatedAt": "2025-12-17T19:48:51.114212",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Malnutrition: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMalnutrition is a condition resulting from an unbalanced intake of nutrients, leading to deficiencies, excesses, or imbalances in energy, protein, and other nutrients. It can manifest as undernutrition (wasting, stunting, or micronutrient deficiencies) or overnutrition (obesity).\n\n### Epidemiology\nMalnutrition affects approximately 1 in 10 people globally, with higher prevalence in the elderly, hospitalized patients, and those with chronic diseases. In the UK, around 30% of older adults in care homes are malnourished or at risk of malnutrition.\n\n### Essential Pathophysiology\nMalnutrition occurs when there is an imbalance between nutrient intake and the body's needs. This can be due to inadequate dietary intake, malabsorption, increased metabolic demands, or altered nutrient utilization. It leads to muscle wasting, immune dysfunction, and impaired wound healing.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weight loss\n- Fatigue\n- Weakness\n- Dizziness\n- Poor concentration\n- Dry skin\n- Hair loss\n- Delayed wound healing\n\n### Key Signs\n- Low body mass index (BMI)\n- Muscle wasting\n- Edema\n- Skin changes (e.g., dermatitis)\n- Poor oral health\n- Signs of vitamin deficiencies (e.g., night blindness, scurvy)\n\n### Atypical Presentations\n- Cognitive decline in elderly\n- Frequent infections\n- Delayed recovery from illness or surgery\n\n### Red Flags Requiring Immediate Action\n- Unintentional weight loss >5% in 1 month\n- BMI <18.5 kg/m²\n- Signs of dehydration\n- Severe weakness or fatigue\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Nutritional screening tools (e.g., MUST, MNA)\n- BMI measurement\n- Dietary assessment (24-hour recall, food frequency questionnaire)\n\n### Second-line Investigations\n- Blood tests (CBC, electrolytes, albumin, prealbumin, vitamin levels)\n- Urine tests for micronutrient deficiencies\n\n### Specialist Tests\n- Endoscopy for malabsorption syndromes\n- Imaging studies (e.g., CT scan for tumors)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of malnutrition is based on the presence of one or more of the following: unintentional weight loss, low BMI, reduced dietary intake, and signs of nutrient deficiencies.\n\n### Key Differential Diagnoses to Exclude\n- Anorexia nervosa\n- Chronic illness (e.g., cancer, COPD)\n- Hyperthyroidism\n- Gastrointestinal disorders (e.g., Crohn's disease, celiac disease)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Nutritional support (oral supplements, enteral feeding)\n- Hydration management\n\n#### Second-line Treatments\n- Parenteral nutrition if enteral feeding is not possible\n\n#### Emergency Procedures\n- Placement of feeding tubes (e.g., NG tube, PEG)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary counseling and education\n- Regular monitoring of weight and nutritional status\n\n#### Second-line Treatments\n- Referral to dietitian or nutritionist\n- Consideration of pharmacological agents for appetite stimulation\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess weight, dietary intake, and overall health\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Megestrol acetate\n- **Mechanism of Action**: Appetite stimulant\n- **Typical Dosing Range**: 400-800 mg orally once daily\n- **Key Side Effects/Contraindications**: Weight gain, adrenal suppression, thromboembolic events\n- **When to Use vs. Alternatives**: Used in patients with cancer or chronic illness to improve appetite.\n\n#### Dronabinol\n- **Mechanism of Action**: Cannabinoid that stimulates appetite\n- **Typical Dosing Range**: 2.5 mg orally 1-3 times daily\n- **Key Side Effects/Contraindications**: Dizziness, euphoria, somnolence\n- **When to Use vs. Alternatives**: Consider in patients with HIV/AIDS or cancer.\n\n### Procedures\n\n#### Percutaneous Endoscopic Gastrostomy (PEG)\n- **What it Involves**: A procedure to place a feeding tube directly into the stomach through the abdominal wall.\n- **Indications**: Indicated for patients who require long-term enteral feeding and cannot take oral nutrition.\n- **Key Risks/Complications**: Infection, bleeding, perforation of the bowel, tube dislodgement.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of malnutrition depends on the underlying cause, the duration of malnutrition, and the timeliness of intervention. Early recognition and management can lead to significant improvements in health outcomes.\n\n### Important Complications to Watch For\n- Increased risk of infections\n- Delayed wound healing\n- Muscle weakness and falls\n- Increased morbidity and mortality in chronic diseases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform nutritional assessments, recognize signs of malnutrition, initiate screening, and refer to dietitians or specialists as needed. They should also monitor patients' nutritional status during hospital stays and follow up on outpatient care.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of severe malnutrition or complications, escalate care to a senior clinician or a nutrition support team for further evaluation and management.\n\n### Key Safety Considerations\nEnsure proper monitoring of patients receiving enteral or parenteral nutrition to prevent complications such as aspiration, infection, and electrolyte imbalances. Regularly assess for signs of refeeding syndrome in at-risk patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Malnutrition is a condition resulting from an unbalanced intake of nutrients, leading to deficiencies, excesses, or imbalances in energy, protein, and other nutrients. It can manifest as undernutrition (wasting, stunting, or micronutrient deficiencies) or overnutrition (obesity).",
+      "epidemiology": "Malnutrition affects approximately 1 in 10 people globally, with higher prevalence in the elderly, hospitalized patients, and those with chronic diseases. In the UK, around 30% of older adults in care homes are malnourished or at risk of malnutrition.",
+      "pathophysiology": "Malnutrition occurs when there is an imbalance between nutrient intake and the body's needs. This can be due to inadequate dietary intake, malabsorption, increased metabolic demands, or altered nutrient utilization. It leads to muscle wasting, immune dysfunction, and impaired wound healing."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weight loss",
+        "Fatigue",
+        "Weakness",
+        "Dizziness",
+        "Poor concentration",
+        "Dry skin",
+        "Hair loss",
+        "Delayed wound healing"
+      ],
+      "signs": [
+        "Low body mass index (BMI)",
+        "Muscle wasting",
+        "Edema",
+        "Skin changes (e.g., dermatitis)",
+        "Poor oral health",
+        "Signs of vitamin deficiencies (e.g., night blindness, scurvy)"
+      ],
+      "atypicalPresentations": [
+        "Cognitive decline in elderly",
+        "Frequent infections",
+        "Delayed recovery from illness or surgery"
+      ],
+      "redFlags": [
+        "Unintentional weight loss >5% in 1 month",
+        "BMI <18.5 kg/m²",
+        "Signs of dehydration",
+        "Severe weakness or fatigue"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Nutritional screening tools (e.g., MUST, MNA)",
+        "BMI measurement",
+        "Dietary assessment (24-hour recall, food frequency questionnaire)"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, electrolytes, albumin, prealbumin, vitamin levels)",
+        "Urine tests for micronutrient deficiencies"
+      ],
+      "specialistTests": [
+        "Endoscopy for malabsorption syndromes",
+        "Imaging studies (e.g., CT scan for tumors)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of malnutrition is based on the presence of one or more of the following: unintentional weight loss, low BMI, reduced dietary intake, and signs of nutrient deficiencies.",
+      "differentials": [
+        "Anorexia nervosa",
+        "Chronic illness (e.g., cancer, COPD)",
+        "Hyperthyroidism",
+        "Gastrointestinal disorders (e.g., Crohn's disease, celiac disease)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Nutritional support (oral supplements, enteral feeding)",
+          "Hydration management"
+        ],
+        "secondLine": [
+          "Parenteral nutrition if enteral feeding is not possible"
+        ],
+        "procedures": [
+          "Placement of feeding tubes (e.g., NG tube, PEG)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary counseling and education",
+          "Regular monitoring of weight and nutritional status"
+        ],
+        "secondLine": [
+          "Referral to dietitian or nutritionist",
+          "Consideration of pharmacological agents for appetite stimulation"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess weight, dietary intake, and overall health"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Megestrol acetate",
+          "mechanism": "Appetite stimulant",
+          "dosing": "400-800 mg orally once daily",
+          "sideEffects": "Weight gain, adrenal suppression, thromboembolic events",
+          "notes": "Used in patients with cancer or chronic illness to improve appetite."
+        },
+        {
+          "name": "Dronabinol",
+          "mechanism": "Cannabinoid that stimulates appetite",
+          "dosing": "2.5 mg orally 1-3 times daily",
+          "sideEffects": "Dizziness, euphoria, somnolence",
+          "notes": "Consider in patients with HIV/AIDS or cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Percutaneous Endoscopic Gastrostomy (PEG)",
+          "description": "A procedure to place a feeding tube directly into the stomach through the abdominal wall.",
+          "indications": "Indicated for patients who require long-term enteral feeding and cannot take oral nutrition.",
+          "risks": "Infection, bleeding, perforation of the bowel, tube dislodgement."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of malnutrition depends on the underlying cause, the duration of malnutrition, and the timeliness of intervention. Early recognition and management can lead to significant improvements in health outcomes.",
+    "complications": [
+      "Increased risk of infections",
+      "Delayed wound healing",
+      "Muscle weakness and falls",
+      "Increased morbidity and mortality in chronic diseases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform nutritional assessments, recognize signs of malnutrition, initiate screening, and refer to dietitians or specialists as needed. They should also monitor patients' nutritional status during hospital stays and follow up on outpatient care.",
+    "escalation": "If a patient shows signs of severe malnutrition or complications, escalate care to a senior clinician or a nutrition support team for further evaluation and management.",
+    "keySafetyConsiderations": "Ensure proper monitoring of patients receiving enteral or parenteral nutrition to prevent complications such as aspiration, infection, and electrolyte imbalances. Regularly assess for signs of refeeding syndrome in at-risk patients."
+  }
+}

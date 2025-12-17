@@ -1,0 +1,129 @@
+{
+  "id": "necrotising_fasciitis",
+  "name": "Necrotising fasciitis?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:20:44.903911",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Necrotising fasciitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNecrotising fasciitis is a severe, rapidly progressing soft tissue infection characterized by the widespread death of tissue, primarily affecting the fascia and subcutaneous tissue.\n\n### Epidemiology\nIt is a rare condition, with an incidence of approximately 0.4 to 0.5 cases per 100,000 people per year. It can occur in all age groups but is more common in individuals with underlying health conditions such as diabetes, obesity, and immunosuppression.\n\n### Essential Pathophysiology\nNecrotising fasciitis is often caused by polymicrobial infections, including both aerobic and anaerobic bacteria. The infection leads to the release of toxins that cause tissue necrosis, systemic inflammatory response, and can progress to septic shock.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe pain out of proportion to clinical findings\n- Fever and chills\n- Nausea and vomiting\n- Fatigue\n\n### Key Signs\n- Erythema and swelling over the affected area\n- Crepitus (subcutaneous emphysema)\n- Bullae formation\n- Skin necrosis and discoloration (purple or black)\n- Systemic signs of sepsis (tachycardia, hypotension)\n\n### Atypical Presentations\n- Absence of fever in early stages\n- Localized pain without significant external signs\n- Rapid progression of symptoms despite initial improvement\n\n### Red Flags Requiring Immediate Action\n- Rapidly spreading erythema and swelling\n- Severe pain that worsens despite analgesia\n- Signs of systemic infection (e.g., hypotension, altered mental status)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Blood cultures\n- Lactate levels\n- Basic metabolic panel\n\n### Second-line Investigations\n- CT scan or MRI of the affected area to assess extent of necrosis\n- Ultrasound to evaluate for fluid collections\n\n### Specialist Tests\n- Tissue biopsy for culture and sensitivity\n- Surgical exploration for definitive diagnosis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of severe pain, systemic signs of infection, and rapid progression of symptoms. Imaging may support the diagnosis but is not definitive.\n\n### Key Differential Diagnoses to Exclude\n- Cellulitis\n- Abscess\n- Deep vein thrombosis\n- Septic arthritis\n- Gas gangrene\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate surgical debridement of necrotic tissue\n- Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, vancomycin)\n\n#### Second-line Treatments\n- Consideration of hyperbaric oxygen therapy in select cases\n\n#### Emergency Procedures\n- Surgical debridement: Removal of all necrotic tissue is critical for survival and recovery. Indicated in all cases of necrotising fasciitis. Risks include bleeding, infection, and need for further surgeries.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Wound care and monitoring for signs of infection\n- Nutritional support if indicated\n\n#### Second-line Treatments\n- Rehabilitation and physiotherapy if significant tissue loss occurs\n- Psychological support for patients with disfigurement\n\n#### Monitoring Requirements\n- Regular follow-up to assess for complications and healing of the wound.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria, including anaerobes.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, renal impairment.\n- **When to Use vs. Alternatives**: Consider in combination with vancomycin for MRSA coverage.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic effective against gram-positive bacteria, particularly MRSA.\n- **Typical Dosing Range**: 15 mg/kg IV every 12 hours (adjust based on renal function).\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, red man syndrome.\n- **When to Use vs. Alternatives**: Monitor trough levels to ensure therapeutic dosing.\n\n### Procedures\n\n#### Surgical debridement\n- **What it Involves**: Surgical procedure to remove necrotic tissue and drain any abscesses.\n- **Indications**: Confirmed or suspected necrotising fasciitis.\n- **Key Risks/Complications**: Bleeding, infection, need for further surgeries, and potential for significant tissue loss.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the speed of diagnosis and intervention. Early surgical intervention and appropriate antibiotic therapy can lead to better outcomes, but mortality rates can be as high as 25-30% in severe cases.\n\n### Important Complications to Watch For\n- Sepsis\n- Multi-organ failure\n- Amputation of affected limbs\n- Long-term disability due to tissue loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the early signs of necrotising fasciitis, initiate appropriate investigations, and escalate care promptly. They should also assist in the management of patients post-operatively and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to surgical team and infectious disease specialists is required upon suspicion of necrotising fasciitis. Escalate care if there are signs of systemic infection or rapid deterioration.\n\n### Key Safety Considerations\nEnsure timely surgical intervention, monitor for signs of sepsis, and maintain clear communication with the surgical and infectious disease teams. Regularly assess the patient's vital signs and clinical status.\n",
+  "content": {
+    "overview": {
+      "definition": "Necrotising fasciitis is a severe, rapidly progressing soft tissue infection characterized by the widespread death of tissue, primarily affecting the fascia and subcutaneous tissue.",
+      "epidemiology": "It is a rare condition, with an incidence of approximately 0.4 to 0.5 cases per 100,000 people per year. It can occur in all age groups but is more common in individuals with underlying health conditions such as diabetes, obesity, and immunosuppression.",
+      "pathophysiology": "Necrotising fasciitis is often caused by polymicrobial infections, including both aerobic and anaerobic bacteria. The infection leads to the release of toxins that cause tissue necrosis, systemic inflammatory response, and can progress to septic shock."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe pain out of proportion to clinical findings",
+        "Fever and chills",
+        "Nausea and vomiting",
+        "Fatigue"
+      ],
+      "signs": [
+        "Erythema and swelling over the affected area",
+        "Crepitus (subcutaneous emphysema)",
+        "Bullae formation",
+        "Skin necrosis and discoloration (purple or black)",
+        "Systemic signs of sepsis (tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Absence of fever in early stages",
+        "Localized pain without significant external signs",
+        "Rapid progression of symptoms despite initial improvement"
+      ],
+      "redFlags": [
+        "Rapidly spreading erythema and swelling",
+        "Severe pain that worsens despite analgesia",
+        "Signs of systemic infection (e.g., hypotension, altered mental status)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Lactate levels",
+        "Basic metabolic panel"
+      ],
+      "secondLine": [
+        "CT scan or MRI of the affected area to assess extent of necrosis",
+        "Ultrasound to evaluate for fluid collections"
+      ],
+      "specialistTests": [
+        "Tissue biopsy for culture and sensitivity",
+        "Surgical exploration for definitive diagnosis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of severe pain, systemic signs of infection, and rapid progression of symptoms. Imaging may support the diagnosis but is not definitive.",
+      "differentials": [
+        "Cellulitis",
+        "Abscess",
+        "Deep vein thrombosis",
+        "Septic arthritis",
+        "Gas gangrene"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate surgical debridement of necrotic tissue",
+          "Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, vancomycin)"
+        ],
+        "secondLine": [
+          "Consideration of hyperbaric oxygen therapy in select cases"
+        ],
+        "procedures": [
+          "Surgical debridement: Removal of all necrotic tissue is critical for survival and recovery. Indicated in all cases of necrotising fasciitis. Risks include bleeding, infection, and need for further surgeries."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Wound care and monitoring for signs of infection",
+          "Nutritional support if indicated"
+        ],
+        "secondLine": [
+          "Rehabilitation and physiotherapy if significant tissue loss occurs",
+          "Psychological support for patients with disfigurement"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for complications and healing of the wound."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria, including anaerobes.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, renal impairment.",
+          "notes": "Consider in combination with vancomycin for MRSA coverage."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic effective against gram-positive bacteria, particularly MRSA.",
+          "dosing": "15 mg/kg IV every 12 hours (adjust based on renal function).",
+          "sideEffects": "Nephrotoxicity, ototoxicity, red man syndrome.",
+          "notes": "Monitor trough levels to ensure therapeutic dosing."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical debridement",
+          "description": "Surgical procedure to remove necrotic tissue and drain any abscesses.",
+          "indications": "Confirmed or suspected necrotising fasciitis.",
+          "risks": "Bleeding, infection, need for further surgeries, and potential for significant tissue loss."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the speed of diagnosis and intervention. Early surgical intervention and appropriate antibiotic therapy can lead to better outcomes, but mortality rates can be as high as 25-30% in severe cases.",
+    "complications": [
+      "Sepsis",
+      "Multi-organ failure",
+      "Amputation of affected limbs",
+      "Long-term disability due to tissue loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the early signs of necrotising fasciitis, initiate appropriate investigations, and escalate care promptly. They should also assist in the management of patients post-operatively and monitor for complications.",
+    "escalation": "Immediate referral to surgical team and infectious disease specialists is required upon suspicion of necrotising fasciitis. Escalate care if there are signs of systemic infection or rapid deterioration.",
+    "keySafetyConsiderations": "Ensure timely surgical intervention, monitor for signs of sepsis, and maintain clear communication with the surgical and infectious disease teams. Regularly assess the patient's vital signs and clinical status."
+  }
+}

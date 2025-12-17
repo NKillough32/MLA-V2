@@ -1,0 +1,139 @@
+{
+  "id": "motor_neurone_disease",
+  "name": "Motor neurone disease?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:51:56.694378",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Motor neurone disease?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMotor neurone disease (MND) is a progressive neurodegenerative disorder that affects motor neurons in the brain and spinal cord, leading to muscle weakness, disability, and ultimately death.\n\n### Epidemiology\nMND has an incidence of approximately 1-2 per 100,000 people per year, with a prevalence of about 5-7 per 100,000. It is more common in men than women and typically presents between the ages of 40 and 70.\n\n### Essential Pathophysiology\nMND is characterized by the degeneration of upper motor neurons in the motor cortex and lower motor neurons in the brainstem and spinal cord. This leads to muscle atrophy, weakness, and spasticity due to the loss of voluntary motor control.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive muscle weakness\n- Muscle cramps\n- Fasciculations (muscle twitching)\n- Difficulty speaking (dysarthria)\n- Difficulty swallowing (dysphagia)\n- Respiratory difficulties\n\n### Key Signs\n- Muscle wasting\n- Hyperreflexia\n- Spasticity\n- Bulbar signs (e.g., dysphagia, dysarthria)\n- Weakness in specific muscle groups\n\n### Atypical Presentations\n- Cognitive changes (frontotemporal dementia)\n- Pseudobulbar affect (emotional lability)\n- Respiratory failure as the first symptom\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of symptoms\n- Onset of symptoms before age 40\n- Family history of MND or related disorders\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Neurological examination\n- Electromyography (EMG)\n- Nerve conduction studies (NCS)\n\n### Second-line Investigations\n- MRI of the brain and spinal cord (to rule out other conditions)\n- Blood tests (including creatine kinase, thyroid function tests, and vitamin B12 levels)\n\n### Specialist Tests\n- Genetic testing (for familial cases)\n- Lumbar puncture (to rule out other causes)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of upper and lower motor neuron signs in the same region, with progressive weakness over time. Supportive tests like EMG can confirm lower motor neuron involvement.\n\n### Key Differential Diagnoses to Exclude\n- Multiple sclerosis\n- Myasthenia gravis\n- Spinal muscular atrophy\n- Peripheral neuropathy\n- Cervical spondylotic myelopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care and symptom management\n- Referral to a multidisciplinary team (MDT) including physiotherapy, occupational therapy, and speech therapy\n\n#### Second-line Treatments\n- Consideration of non-invasive ventilation for respiratory support\n\n#### Emergency Procedures\n- Feeding tube placement (PEG) for dysphagia management\n- Tracheostomy for respiratory support in advanced cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Riluzole (to slow disease progression)\n- Symptomatic management (e.g., muscle relaxants for spasticity)\n\n#### Second-line Treatments\n- Edaravone (to slow decline in function)\n- Consideration of palliative care services\n\n#### Monitoring Requirements\n- Regular follow-up with the MDT to assess progression and adjust management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Riluzole\n- **Mechanism of Action**: Inhibits glutamate release and provides neuroprotective effects.\n- **Typical Dosing Range**: 50 mg orally twice daily.\n- **Key Side Effects/Contraindications**: Nausea, fatigue, liver enzyme elevation.\n- **When to Use vs. Alternatives**: May extend survival and time to tracheostomy.\n\n#### Edaravone\n- **Mechanism of Action**: Antioxidant that reduces oxidative stress.\n- **Typical Dosing Range**: 60 mg IV daily for 14 days, followed by a 14-day drug-free period.\n- **Key Side Effects/Contraindications**: Bruising, gait disturbance, headache.\n- **When to Use vs. Alternatives**: May slow functional decline.\n\n### Procedures\n\n#### Percutaneous endoscopic gastrostomy (PEG)\n- **What it Involves**: A procedure to place a feeding tube directly into the stomach through the abdominal wall.\n- **Indications**: Severe dysphagia leading to malnutrition or aspiration risk.\n- **Key Risks/Complications**: Infection, bleeding, perforation of the bowel.\n\n#### Tracheostomy\n- **What it Involves**: Surgical creation of an opening in the trachea to facilitate breathing.\n- **Indications**: Severe respiratory failure or inability to protect the airway.\n- **Key Risks/Complications**: Infection, tracheal injury, long-term dependence on ventilation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for MND varies; most patients live 2-5 years after diagnosis, but some may live longer. The rate of progression can vary significantly between individuals.\n\n### Important Complications to Watch For\n- Respiratory failure\n- Aspiration pneumonia\n- Malnutrition\n- Pressure ulcers\n- Psychological impact (depression, anxiety)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of MND, conduct initial assessments, and refer patients to appropriate specialists. They should also provide supportive care and education to patients and families.\n\n### When to Escalate to Senior/Specialist\nPatients with suspected MND should be referred to a neurologist for further evaluation. If respiratory distress or swallowing difficulties arise, urgent referral to a respiratory physician or gastroenterologist may be necessary.\n\n### Key Safety Considerations\nMonitor for signs of respiratory failure, ensure adequate nutritional support, and provide psychological support to patients and families. Regularly assess the need for palliative care services.\n",
+  "content": {
+    "overview": {
+      "definition": "Motor neurone disease (MND) is a progressive neurodegenerative disorder that affects motor neurons in the brain and spinal cord, leading to muscle weakness, disability, and ultimately death.",
+      "epidemiology": "MND has an incidence of approximately 1-2 per 100,000 people per year, with a prevalence of about 5-7 per 100,000. It is more common in men than women and typically presents between the ages of 40 and 70.",
+      "pathophysiology": "MND is characterized by the degeneration of upper motor neurons in the motor cortex and lower motor neurons in the brainstem and spinal cord. This leads to muscle atrophy, weakness, and spasticity due to the loss of voluntary motor control."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive muscle weakness",
+        "Muscle cramps",
+        "Fasciculations (muscle twitching)",
+        "Difficulty speaking (dysarthria)",
+        "Difficulty swallowing (dysphagia)",
+        "Respiratory difficulties"
+      ],
+      "signs": [
+        "Muscle wasting",
+        "Hyperreflexia",
+        "Spasticity",
+        "Bulbar signs (e.g., dysphagia, dysarthria)",
+        "Weakness in specific muscle groups"
+      ],
+      "atypicalPresentations": [
+        "Cognitive changes (frontotemporal dementia)",
+        "Pseudobulbar affect (emotional lability)",
+        "Respiratory failure as the first symptom"
+      ],
+      "redFlags": [
+        "Rapid progression of symptoms",
+        "Onset of symptoms before age 40",
+        "Family history of MND or related disorders"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Neurological examination",
+        "Electromyography (EMG)",
+        "Nerve conduction studies (NCS)"
+      ],
+      "secondLine": [
+        "MRI of the brain and spinal cord (to rule out other conditions)",
+        "Blood tests (including creatine kinase, thyroid function tests, and vitamin B12 levels)"
+      ],
+      "specialistTests": [
+        "Genetic testing (for familial cases)",
+        "Lumbar puncture (to rule out other causes)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of upper and lower motor neuron signs in the same region, with progressive weakness over time. Supportive tests like EMG can confirm lower motor neuron involvement.",
+      "differentials": [
+        "Multiple sclerosis",
+        "Myasthenia gravis",
+        "Spinal muscular atrophy",
+        "Peripheral neuropathy",
+        "Cervical spondylotic myelopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care and symptom management",
+          "Referral to a multidisciplinary team (MDT) including physiotherapy, occupational therapy, and speech therapy"
+        ],
+        "secondLine": [
+          "Consideration of non-invasive ventilation for respiratory support"
+        ],
+        "procedures": [
+          "Feeding tube placement (PEG) for dysphagia management",
+          "Tracheostomy for respiratory support in advanced cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Riluzole (to slow disease progression)",
+          "Symptomatic management (e.g., muscle relaxants for spasticity)"
+        ],
+        "secondLine": [
+          "Edaravone (to slow decline in function)",
+          "Consideration of palliative care services"
+        ],
+        "monitoring": [
+          "Regular follow-up with the MDT to assess progression and adjust management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Riluzole",
+          "mechanism": "Inhibits glutamate release and provides neuroprotective effects.",
+          "dosing": "50 mg orally twice daily.",
+          "sideEffects": "Nausea, fatigue, liver enzyme elevation.",
+          "notes": "May extend survival and time to tracheostomy."
+        },
+        {
+          "name": "Edaravone",
+          "mechanism": "Antioxidant that reduces oxidative stress.",
+          "dosing": "60 mg IV daily for 14 days, followed by a 14-day drug-free period.",
+          "sideEffects": "Bruising, gait disturbance, headache.",
+          "notes": "May slow functional decline."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Percutaneous endoscopic gastrostomy (PEG)",
+          "description": "A procedure to place a feeding tube directly into the stomach through the abdominal wall.",
+          "indications": "Severe dysphagia leading to malnutrition or aspiration risk.",
+          "risks": "Infection, bleeding, perforation of the bowel."
+        },
+        {
+          "name": "Tracheostomy",
+          "description": "Surgical creation of an opening in the trachea to facilitate breathing.",
+          "indications": "Severe respiratory failure or inability to protect the airway.",
+          "risks": "Infection, tracheal injury, long-term dependence on ventilation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for MND varies; most patients live 2-5 years after diagnosis, but some may live longer. The rate of progression can vary significantly between individuals.",
+    "complications": [
+      "Respiratory failure",
+      "Aspiration pneumonia",
+      "Malnutrition",
+      "Pressure ulcers",
+      "Psychological impact (depression, anxiety)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of MND, conduct initial assessments, and refer patients to appropriate specialists. They should also provide supportive care and education to patients and families.",
+    "escalation": "Patients with suspected MND should be referred to a neurologist for further evaluation. If respiratory distress or swallowing difficulties arise, urgent referral to a respiratory physician or gastroenterologist may be necessary.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory failure, ensure adequate nutritional support, and provide psychological support to patients and families. Regularly assess the need for palliative care services."
+  }
+}

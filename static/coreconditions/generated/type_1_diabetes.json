@@ -1,0 +1,127 @@
+{
+  "id": "type_1_diabetes",
+  "name": "Type 1 diabetes",
+  "domains": [
+    "Endocrine",
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Post-operative care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:28:20.338992",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Type 1 diabetes: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nType 1 diabetes (T1D) is an autoimmune condition characterized by the destruction of insulin-producing beta cells in the pancreas, leading to absolute insulin deficiency.\n\n### Epidemiology\nType 1 diabetes accounts for approximately 5-10% of all diabetes cases. It is most commonly diagnosed in children and young adults, with a peak incidence between ages 10-14.\n\n### Essential Pathophysiology\nIn Type 1 diabetes, the immune system mistakenly attacks and destroys the insulin-producing beta cells in the pancreas. This results in little to no insulin production, leading to hyperglycemia and the need for exogenous insulin for glucose metabolism.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Polyuria (increased urination)\n- Polydipsia (increased thirst)\n- Polyphagia (increased hunger)\n- Weight loss\n- Fatigue\n- Blurred vision\n\n### Key Signs\n- Ketonuria (presence of ketones in urine)\n- Dehydration signs (dry mucous membranes, decreased skin turgor)\n- Rapid breathing (Kussmaul respirations)\n- Fruity breath odor (due to acetone)\n- Altered mental status (in severe cases)\n\n### Atypical Presentations\n- Diabetic ketoacidosis (DKA) as the first presentation\n- Symptoms of hyperglycemia without classic triad\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- Altered consciousness or confusion\n- Signs of DKA (nausea, vomiting, abdominal pain)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Random blood glucose test\n- Fasting blood glucose test\n- HbA1c (glycated hemoglobin)\n\n### Second-line Investigations\n- C-peptide levels (to assess endogenous insulin production)\n- Autoantibody tests (GAD65, IA-2, ICA)\n\n### Specialist Tests\n- Continuous glucose monitoring (CGM)\n- Urine ketone testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of Type 1 diabetes is confirmed with any of the following: a random blood glucose level of 11.1 mmol/L or higher, a fasting blood glucose level of 7.0 mmol/L or higher, or an HbA1c of 48 mmol/mol (6.5%) or higher, along with symptoms of hyperglycemia.\n\n### Key Differential Diagnoses to Exclude\n- Type 2 diabetes\n- Maturity onset diabetes of the young (MODY)\n- LADA (Latent autoimmune diabetes in adults)\n- Secondary diabetes (due to pancreatitis, Cushing's syndrome, etc.)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer intravenous fluids (isotonic saline)\n- Initiate insulin therapy (IV regular insulin)\n\n#### Second-line Treatments\n- Electrolyte replacement (potassium monitoring and replacement)\n- Bicarbonate therapy (if severe acidosis)\n\n#### Emergency Procedures\n- Fluid resuscitation (IV fluids)\n- Insulin infusion (continuous IV insulin for DKA management)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Subcutaneous insulin therapy (basal-bolus regimen)\n- Education on carbohydrate counting and insulin adjustment\n\n#### Second-line Treatments\n- Continuous subcutaneous insulin infusion (insulin pump therapy)\n- Adjunctive therapies (e.g., GLP-1 receptor agonists)\n\n#### Monitoring Requirements\n- Regular blood glucose monitoring (self-monitoring or CGM)\n- Routine HbA1c checks (every 3-6 months)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Insulin (various types: rapid-acting, short-acting, intermediate-acting, long-acting)\n- **Mechanism of Action**: Insulin facilitates glucose uptake into cells and regulates glucose metabolism.\n- **Typical Dosing Range**: Individualized based on blood glucose levels, typically starting with a basal-bolus regimen.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain, lipodystrophy at injection sites.\n- **When to Use vs. Alternatives**: Patient education on recognizing hypoglycemia and adjusting insulin doses is crucial.\n\n### Procedures\n\n#### Insulin pump therapy\n- **What it Involves**: A device that delivers continuous subcutaneous insulin infusion, mimicking physiological insulin release.\n- **Indications**: Patients with Type 1 diabetes who have difficulty achieving glycemic control with multiple daily injections.\n- **Key Risks/Complications**: Infection at the infusion site, pump malfunction, risk of DKA if insulin delivery is interrupted.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith proper management, individuals with Type 1 diabetes can lead healthy lives. However, they are at increased risk for long-term complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.\n\n### Important Complications to Watch For\n- Diabetic ketoacidosis (DKA)\n- Hypoglycemia\n- Long-term complications (retinopathy, nephropathy, neuropathy, cardiovascular disease)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hyperglycemia and DKA, initiate management, and provide education on diabetes care. They should also monitor for complications and ensure appropriate referrals to specialists.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with DKA or severe hypoglycemia, immediate escalation to a senior clinician or endocrinologist is required. Continuous monitoring and adjustment of treatment are essential.\n\n### Key Safety Considerations\nEnsure regular monitoring of blood glucose levels, educate patients on recognizing signs of hypo- and hyperglycemia, and provide clear instructions on insulin administration and adjustment.\n",
+  "content": {
+    "overview": {
+      "definition": "Type 1 diabetes (T1D) is an autoimmune condition characterized by the destruction of insulin-producing beta cells in the pancreas, leading to absolute insulin deficiency.",
+      "epidemiology": "Type 1 diabetes accounts for approximately 5-10% of all diabetes cases. It is most commonly diagnosed in children and young adults, with a peak incidence between ages 10-14.",
+      "pathophysiology": "In Type 1 diabetes, the immune system mistakenly attacks and destroys the insulin-producing beta cells in the pancreas. This results in little to no insulin production, leading to hyperglycemia and the need for exogenous insulin for glucose metabolism."
+    },
+    "recognition": {
+      "symptoms": [
+        "Polyuria (increased urination)",
+        "Polydipsia (increased thirst)",
+        "Polyphagia (increased hunger)",
+        "Weight loss",
+        "Fatigue",
+        "Blurred vision"
+      ],
+      "signs": [
+        "Ketonuria (presence of ketones in urine)",
+        "Dehydration signs (dry mucous membranes, decreased skin turgor)",
+        "Rapid breathing (Kussmaul respirations)",
+        "Fruity breath odor (due to acetone)",
+        "Altered mental status (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Diabetic ketoacidosis (DKA) as the first presentation",
+        "Symptoms of hyperglycemia without classic triad"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "Altered consciousness or confusion",
+        "Signs of DKA (nausea, vomiting, abdominal pain)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Random blood glucose test",
+        "Fasting blood glucose test",
+        "HbA1c (glycated hemoglobin)"
+      ],
+      "secondLine": [
+        "C-peptide levels (to assess endogenous insulin production)",
+        "Autoantibody tests (GAD65, IA-2, ICA)"
+      ],
+      "specialistTests": [
+        "Continuous glucose monitoring (CGM)",
+        "Urine ketone testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of Type 1 diabetes is confirmed with any of the following: a random blood glucose level of 11.1 mmol/L or higher, a fasting blood glucose level of 7.0 mmol/L or higher, or an HbA1c of 48 mmol/mol (6.5%) or higher, along with symptoms of hyperglycemia.",
+      "differentials": [
+        "Type 2 diabetes",
+        "Maturity onset diabetes of the young (MODY)",
+        "LADA (Latent autoimmune diabetes in adults)",
+        "Secondary diabetes (due to pancreatitis, Cushing's syndrome, etc.)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer intravenous fluids (isotonic saline)",
+          "Initiate insulin therapy (IV regular insulin)"
+        ],
+        "secondLine": [
+          "Electrolyte replacement (potassium monitoring and replacement)",
+          "Bicarbonate therapy (if severe acidosis)"
+        ],
+        "procedures": [
+          "Fluid resuscitation (IV fluids)",
+          "Insulin infusion (continuous IV insulin for DKA management)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Subcutaneous insulin therapy (basal-bolus regimen)",
+          "Education on carbohydrate counting and insulin adjustment"
+        ],
+        "secondLine": [
+          "Continuous subcutaneous insulin infusion (insulin pump therapy)",
+          "Adjunctive therapies (e.g., GLP-1 receptor agonists)"
+        ],
+        "monitoring": [
+          "Regular blood glucose monitoring (self-monitoring or CGM)",
+          "Routine HbA1c checks (every 3-6 months)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Insulin (various types: rapid-acting, short-acting, intermediate-acting, long-acting)",
+          "mechanism": "Insulin facilitates glucose uptake into cells and regulates glucose metabolism.",
+          "dosing": "Individualized based on blood glucose levels, typically starting with a basal-bolus regimen.",
+          "sideEffects": "Hypoglycemia, weight gain, lipodystrophy at injection sites.",
+          "notes": "Patient education on recognizing hypoglycemia and adjusting insulin doses is crucial."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Insulin pump therapy",
+          "description": "A device that delivers continuous subcutaneous insulin infusion, mimicking physiological insulin release.",
+          "indications": "Patients with Type 1 diabetes who have difficulty achieving glycemic control with multiple daily injections.",
+          "risks": "Infection at the infusion site, pump malfunction, risk of DKA if insulin delivery is interrupted."
+        }
+      ]
+    },
+    "prognosis": "With proper management, individuals with Type 1 diabetes can lead healthy lives. However, they are at increased risk for long-term complications such as cardiovascular disease, neuropathy, nephropathy, and retinopathy.",
+    "complications": [
+      "Diabetic ketoacidosis (DKA)",
+      "Hypoglycemia",
+      "Long-term complications (retinopathy, nephropathy, neuropathy, cardiovascular disease)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hyperglycemia and DKA, initiate management, and provide education on diabetes care. They should also monitor for complications and ensure appropriate referrals to specialists.",
+    "escalation": "If a patient presents with DKA or severe hypoglycemia, immediate escalation to a senior clinician or endocrinologist is required. Continuous monitoring and adjustment of treatment are essential.",
+    "keySafetyConsiderations": "Ensure regular monitoring of blood glucose levels, educate patients on recognizing signs of hypo- and hyperglycemia, and provide clear instructions on insulin administration and adjustment."
+  }
+}

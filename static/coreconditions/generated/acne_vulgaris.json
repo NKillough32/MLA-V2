@@ -1,0 +1,148 @@
+{
+  "id": "acne_vulgaris",
+  "name": "Acne Vulgaris",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:27:52.870112",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acne Vulgaris: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcne vulgaris is a common skin condition characterized by the presence of comedones, papules, pustules, and sometimes cysts, primarily affecting the face, back, and shoulders due to the obstruction of hair follicles and inflammation of sebaceous glands.\n\n### Epidemiology\nAcne vulgaris affects approximately 85% of adolescents and young adults, with varying severity. It can persist into adulthood, affecting both genders, though it is more prevalent in males during adolescence.\n\n### Essential Pathophysiology\nThe pathophysiology of acne involves four key factors: increased sebum production, hyperkeratinization of the hair follicle, colonization by Cutibacterium acnes (formerly Propionibacterium acnes), and inflammation. Hormonal changes, particularly androgens, stimulate sebaceous gland activity, leading to excess oil production.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Comedones (open and closed)\n- Papules\n- Pustules\n- Cysts\n- Scarring\n- Post-inflammatory hyperpigmentation\n\n### Key Signs\n- Oily skin\n- Inflamed lesions\n- Presence of comedones\n- Scarring or pitting on the skin\n\n### Atypical Presentations\n- Acne fulminans (severe form with systemic symptoms)\n- Acne conglobata (nodular and cystic lesions)\n- Acne excoriee (self-induced lesions due to picking)\n\n### Red Flags Requiring Immediate Action\n- Severe acne unresponsive to treatment\n- Presence of systemic symptoms (fever, malaise)\n- Significant scarring or psychological distress\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n\n### Second-line Investigations\n- Hormonal assays (if suspected hormonal imbalance)\n- Skin swab for C. acnes (if secondary infection suspected)\n\n### Specialist Tests\n- Referral to dermatology for severe or resistant cases\n- Consideration of hormonal evaluation in females with irregular cycles\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of characteristic lesions and distribution. Severity can be classified as mild, moderate, or severe based on the number and type of lesions.\n\n### Key Differential Diagnoses to Exclude\n- Rosacea\n- Folliculitis\n- Perioral dermatitis\n- Seborrheic dermatitis\n- Pityrosporum folliculitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical retinoids (e.g., adapalene)\n- Benzoyl peroxide\n- Topical antibiotics (e.g., clindamycin)\n\n#### Second-line Treatments\n- Oral antibiotics (e.g., doxycycline, minocycline)\n- Hormonal treatments (e.g., combined oral contraceptives for females)\n\n#### Emergency Procedures\n- Incision and drainage of cysts\n- Chemical peels (for severe cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued use of topical retinoids and benzoyl peroxide\n- Regular follow-up to assess treatment response\n\n#### Second-line Treatments\n- Isotretinoin for severe cases unresponsive to other treatments\n\n#### Monitoring Requirements\n- Regular assessment of treatment efficacy and side effects, especially with isotretinoin\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Adapalene\n- **Mechanism of Action**: Topical retinoid that promotes cell turnover and prevents comedone formation.\n- **Typical Dosing Range**: Apply once daily at night.\n- **Key Side Effects/Contraindications**: Skin irritation, dryness, erythema.\n- **When to Use vs. Alternatives**: Less irritating than other retinoids.\n\n#### Benzoyl peroxide\n- **Mechanism of Action**: Antimicrobial and keratolytic agent that reduces C. acnes and unclogs pores.\n- **Typical Dosing Range**: Apply once or twice daily, starting with lower concentrations.\n- **Key Side Effects/Contraindications**: Skin irritation, dryness, bleaching of fabrics.\n- **When to Use vs. Alternatives**: Can be combined with topical antibiotics.\n\n#### Doxycycline\n- **Mechanism of Action**: Oral antibiotic that reduces inflammation and bacterial load.\n- **Typical Dosing Range**: 100 mg daily, may reduce to 50 mg after improvement.\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Avoid in pregnancy.\n\n#### Isotretinoin\n- **Mechanism of Action**: Oral retinoid that reduces sebum production and normalizes keratinization.\n- **Typical Dosing Range**: 0.5-1 mg/kg/day, duration typically 4-6 months.\n- **Key Side Effects/Contraindications**: Dryness, teratogenicity, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Requires monitoring of liver function and lipid levels.\n\n### Procedures\n\n#### Incision and drainage\n- **What it Involves**: Surgical procedure to drain large cysts or abscesses.\n- **Indications**: Severe cystic acne or abscess formation.\n- **Key Risks/Complications**: Infection, scarring, recurrence.\n\n#### Chemical peels\n- **What it Involves**: Application of a chemical solution to exfoliate the skin.\n- **Indications**: Severe acne or post-acne scarring.\n- **Key Risks/Complications**: Skin irritation, pigmentation changes.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nAcne vulgaris generally has a good prognosis with appropriate treatment. Most patients will see improvement, but some may experience scarring or psychological effects.\n\n### Important Complications to Watch For\n- Scarring (atrophic or hypertrophic)\n- Post-inflammatory hyperpigmentation\n- Psychosocial impact (anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize and manage mild to moderate acne, initiate first-line treatments, and refer to dermatology for severe cases or those unresponsive to treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology if: 1) Severe acne unresponsive to first-line treatments, 2) Significant psychological distress, 3) Presence of red flags.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially isotretinoin. Ensure patients are aware of the teratogenic risks associated with isotretinoin and the need for effective contraception.\n",
+  "content": {
+    "overview": {
+      "definition": "Acne vulgaris is a common skin condition characterized by the presence of comedones, papules, pustules, and sometimes cysts, primarily affecting the face, back, and shoulders due to the obstruction of hair follicles and inflammation of sebaceous glands.",
+      "epidemiology": "Acne vulgaris affects approximately 85% of adolescents and young adults, with varying severity. It can persist into adulthood, affecting both genders, though it is more prevalent in males during adolescence.",
+      "pathophysiology": "The pathophysiology of acne involves four key factors: increased sebum production, hyperkeratinization of the hair follicle, colonization by Cutibacterium acnes (formerly Propionibacterium acnes), and inflammation. Hormonal changes, particularly androgens, stimulate sebaceous gland activity, leading to excess oil production."
+    },
+    "recognition": {
+      "symptoms": [
+        "Comedones (open and closed)",
+        "Papules",
+        "Pustules",
+        "Cysts",
+        "Scarring",
+        "Post-inflammatory hyperpigmentation"
+      ],
+      "signs": [
+        "Oily skin",
+        "Inflamed lesions",
+        "Presence of comedones",
+        "Scarring or pitting on the skin"
+      ],
+      "atypicalPresentations": [
+        "Acne fulminans (severe form with systemic symptoms)",
+        "Acne conglobata (nodular and cystic lesions)",
+        "Acne excoriee (self-induced lesions due to picking)"
+      ],
+      "redFlags": [
+        "Severe acne unresponsive to treatment",
+        "Presence of systemic symptoms (fever, malaise)",
+        "Significant scarring or psychological distress"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination"
+      ],
+      "secondLine": [
+        "Hormonal assays (if suspected hormonal imbalance)",
+        "Skin swab for C. acnes (if secondary infection suspected)"
+      ],
+      "specialistTests": [
+        "Referral to dermatology for severe or resistant cases",
+        "Consideration of hormonal evaluation in females with irregular cycles"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of characteristic lesions and distribution. Severity can be classified as mild, moderate, or severe based on the number and type of lesions.",
+      "differentials": [
+        "Rosacea",
+        "Folliculitis",
+        "Perioral dermatitis",
+        "Seborrheic dermatitis",
+        "Pityrosporum folliculitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical retinoids (e.g., adapalene)",
+          "Benzoyl peroxide",
+          "Topical antibiotics (e.g., clindamycin)"
+        ],
+        "secondLine": [
+          "Oral antibiotics (e.g., doxycycline, minocycline)",
+          "Hormonal treatments (e.g., combined oral contraceptives for females)"
+        ],
+        "procedures": [
+          "Incision and drainage of cysts",
+          "Chemical peels (for severe cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued use of topical retinoids and benzoyl peroxide",
+          "Regular follow-up to assess treatment response"
+        ],
+        "secondLine": [
+          "Isotretinoin for severe cases unresponsive to other treatments"
+        ],
+        "monitoring": [
+          "Regular assessment of treatment efficacy and side effects, especially with isotretinoin"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Adapalene",
+          "mechanism": "Topical retinoid that promotes cell turnover and prevents comedone formation.",
+          "dosing": "Apply once daily at night.",
+          "sideEffects": "Skin irritation, dryness, erythema.",
+          "notes": "Less irritating than other retinoids."
+        },
+        {
+          "name": "Benzoyl peroxide",
+          "mechanism": "Antimicrobial and keratolytic agent that reduces C. acnes and unclogs pores.",
+          "dosing": "Apply once or twice daily, starting with lower concentrations.",
+          "sideEffects": "Skin irritation, dryness, bleaching of fabrics.",
+          "notes": "Can be combined with topical antibiotics."
+        },
+        {
+          "name": "Doxycycline",
+          "mechanism": "Oral antibiotic that reduces inflammation and bacterial load.",
+          "dosing": "100 mg daily, may reduce to 50 mg after improvement.",
+          "sideEffects": "Photosensitivity, gastrointestinal upset.",
+          "notes": "Avoid in pregnancy."
+        },
+        {
+          "name": "Isotretinoin",
+          "mechanism": "Oral retinoid that reduces sebum production and normalizes keratinization.",
+          "dosing": "0.5-1 mg/kg/day, duration typically 4-6 months.",
+          "sideEffects": "Dryness, teratogenicity, liver enzyme elevation.",
+          "notes": "Requires monitoring of liver function and lipid levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage",
+          "description": "Surgical procedure to drain large cysts or abscesses.",
+          "indications": "Severe cystic acne or abscess formation.",
+          "risks": "Infection, scarring, recurrence."
+        },
+        {
+          "name": "Chemical peels",
+          "description": "Application of a chemical solution to exfoliate the skin.",
+          "indications": "Severe acne or post-acne scarring.",
+          "risks": "Skin irritation, pigmentation changes."
+        }
+      ]
+    },
+    "prognosis": "Acne vulgaris generally has a good prognosis with appropriate treatment. Most patients will see improvement, but some may experience scarring or psychological effects.",
+    "complications": [
+      "Scarring (atrophic or hypertrophic)",
+      "Post-inflammatory hyperpigmentation",
+      "Psychosocial impact (anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize and manage mild to moderate acne, initiate first-line treatments, and refer to dermatology for severe cases or those unresponsive to treatment.",
+    "escalation": "Refer to dermatology if: 1) Severe acne unresponsive to first-line treatments, 2) Significant psychological distress, 3) Presence of red flags.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially isotretinoin. Ensure patients are aware of the teratogenic risks associated with isotretinoin and the need for effective contraception."
+  }
+}

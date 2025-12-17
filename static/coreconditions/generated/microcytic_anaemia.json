@@ -1,0 +1,131 @@
+{
+  "id": "microcytic_anaemia",
+  "name": "Microcytic anaemia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:53:05.473329",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Microcytic anaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMicrocytic anaemia is a type of anaemia characterized by the presence of smaller than normal red blood cells (microcytes) and is often associated with a reduced hemoglobin concentration.\n\n### Epidemiology\nMicrocytic anaemia is the most common type of anaemia worldwide, particularly prevalent in developing countries due to nutritional deficiencies. It is commonly seen in children and women of reproductive age.\n\n### Essential Pathophysiology\nThe primary cause of microcytic anaemia is iron deficiency, which leads to impaired hemoglobin synthesis. Other causes include thalassemia, anemia of chronic disease, and sideroblastic anemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath on exertion\n- Dizziness or lightheadedness\n\n### Key Signs\n- Pallor of the conjunctiva\n- Tachycardia\n- Systolic murmur due to increased cardiac output\n- Koilonychia (spoon nails)\n- Angular cheilitis\n\n### Atypical Presentations\n- Fatigue without significant pallor\n- Cognitive changes in elderly patients\n- Restless legs syndrome\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Signs of heart failure\n- Pica (craving for non-food substances)\n- Unexplained weight loss\n- Family history of hematological disorders\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- Peripheral blood smear\n- Serum ferritin\n- Serum iron and total iron binding capacity (TIBC)\n\n### Second-line Investigations\n- Reticulocyte count\n- Hemoglobin electrophoresis\n- Bone marrow biopsy (if indicated)\n\n### Specialist Tests\n- Genetic testing for thalassemia\n- Sideroblast identification in bone marrow\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of microcytic anaemia is based on a low hemoglobin level, low mean corpuscular volume (MCV), and low serum ferritin, with exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Iron deficiency anaemia\n- Thalassemia\n- Anemia of chronic disease\n- Sideroblastic anemia\n- Lead poisoning\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous iron (e.g., iron sucrose) for severe cases\n- Blood transfusion if hemoglobin < 7 g/dL or symptomatic\n\n#### Second-line Treatments\n- Oral iron supplementation (ferrous sulfate) if tolerated\n\n#### Emergency Procedures\n- Bone marrow aspiration if diagnosis is unclear or if malignancy is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral iron supplementation (ferrous sulfate 325 mg TID) for iron deficiency\n- Dietary advice to increase iron intake\n\n#### Second-line Treatments\n- Intravenous iron therapy for those who cannot tolerate oral iron or have malabsorption\n\n#### Monitoring Requirements\n- Regular monitoring of hemoglobin and ferritin levels every 3 months until stable\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ferrous sulfate\n- **Mechanism of Action**: Iron supplement that replenishes iron stores and aids in hemoglobin synthesis.\n- **Typical Dosing Range**: 325 mg orally three times a day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, constipation, dark stools.\n- **When to Use vs. Alternatives**: Take with vitamin C to enhance absorption; avoid taking with calcium or antacids.\n\n#### Iron sucrose\n- **Mechanism of Action**: Intravenous iron preparation for rapid replenishment of iron stores.\n- **Typical Dosing Range**: 100-200 mg IV over 2-5 minutes, repeated as necessary.\n- **Key Side Effects/Contraindications**: Hypotension, allergic reactions, infusion-related reactions.\n- **When to Use vs. Alternatives**: Monitor for allergic reactions during and after infusion.\n\n### Procedures\n\n#### Bone marrow aspiration\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Unexplained anaemia, suspected malignancy, or when other tests are inconclusive.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site, and damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for microcytic anaemia is generally good, especially in cases of iron deficiency. Chronic causes may require ongoing management.\n\n### Important Complications to Watch For\n- Heart failure due to chronic anaemia\n- Development of iron overload from excessive supplementation\n- Increased risk of infections due to impaired immune function in severe cases.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of microcytic anaemia, perform initial investigations, initiate treatment, and refer to specialists when necessary. They should also educate patients on dietary sources of iron and adherence to treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist if there is no response to treatment after 3 months, if there are atypical features, or if there is suspicion of malignancy.\n\n### Key Safety Considerations\nMonitor for signs of iron overload in patients receiving long-term iron therapy. Ensure appropriate follow-up of patients with chronic anaemia to prevent complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Microcytic anaemia is a type of anaemia characterized by the presence of smaller than normal red blood cells (microcytes) and is often associated with a reduced hemoglobin concentration.",
+      "epidemiology": "Microcytic anaemia is the most common type of anaemia worldwide, particularly prevalent in developing countries due to nutritional deficiencies. It is commonly seen in children and women of reproductive age.",
+      "pathophysiology": "The primary cause of microcytic anaemia is iron deficiency, which leads to impaired hemoglobin synthesis. Other causes include thalassemia, anemia of chronic disease, and sideroblastic anemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath on exertion",
+        "Dizziness or lightheadedness"
+      ],
+      "signs": [
+        "Pallor of the conjunctiva",
+        "Tachycardia",
+        "Systolic murmur due to increased cardiac output",
+        "Koilonychia (spoon nails)",
+        "Angular cheilitis"
+      ],
+      "atypicalPresentations": [
+        "Fatigue without significant pallor",
+        "Cognitive changes in elderly patients",
+        "Restless legs syndrome"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Signs of heart failure",
+        "Pica (craving for non-food substances)",
+        "Unexplained weight loss",
+        "Family history of hematological disorders"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "Peripheral blood smear",
+        "Serum ferritin",
+        "Serum iron and total iron binding capacity (TIBC)"
+      ],
+      "secondLine": [
+        "Reticulocyte count",
+        "Hemoglobin electrophoresis",
+        "Bone marrow biopsy (if indicated)"
+      ],
+      "specialistTests": [
+        "Genetic testing for thalassemia",
+        "Sideroblast identification in bone marrow"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of microcytic anaemia is based on a low hemoglobin level, low mean corpuscular volume (MCV), and low serum ferritin, with exclusion of other causes.",
+      "differentials": [
+        "Iron deficiency anaemia",
+        "Thalassemia",
+        "Anemia of chronic disease",
+        "Sideroblastic anemia",
+        "Lead poisoning"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous iron (e.g., iron sucrose) for severe cases",
+          "Blood transfusion if hemoglobin < 7 g/dL or symptomatic"
+        ],
+        "secondLine": [
+          "Oral iron supplementation (ferrous sulfate) if tolerated"
+        ],
+        "procedures": [
+          "Bone marrow aspiration if diagnosis is unclear or if malignancy is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral iron supplementation (ferrous sulfate 325 mg TID) for iron deficiency",
+          "Dietary advice to increase iron intake"
+        ],
+        "secondLine": [
+          "Intravenous iron therapy for those who cannot tolerate oral iron or have malabsorption"
+        ],
+        "monitoring": [
+          "Regular monitoring of hemoglobin and ferritin levels every 3 months until stable"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ferrous sulfate",
+          "mechanism": "Iron supplement that replenishes iron stores and aids in hemoglobin synthesis.",
+          "dosing": "325 mg orally three times a day.",
+          "sideEffects": "Gastrointestinal upset, constipation, dark stools.",
+          "notes": "Take with vitamin C to enhance absorption; avoid taking with calcium or antacids."
+        },
+        {
+          "name": "Iron sucrose",
+          "mechanism": "Intravenous iron preparation for rapid replenishment of iron stores.",
+          "dosing": "100-200 mg IV over 2-5 minutes, repeated as necessary.",
+          "sideEffects": "Hypotension, allergic reactions, infusion-related reactions.",
+          "notes": "Monitor for allergic reactions during and after infusion."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone marrow aspiration",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Unexplained anaemia, suspected malignancy, or when other tests are inconclusive.",
+          "risks": "Bleeding, infection, pain at the site, and damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for microcytic anaemia is generally good, especially in cases of iron deficiency. Chronic causes may require ongoing management.",
+    "complications": [
+      "Heart failure due to chronic anaemia",
+      "Development of iron overload from excessive supplementation",
+      "Increased risk of infections due to impaired immune function in severe cases."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of microcytic anaemia, perform initial investigations, initiate treatment, and refer to specialists when necessary. They should also educate patients on dietary sources of iron and adherence to treatment.",
+    "escalation": "Refer to a haematologist if there is no response to treatment after 3 months, if there are atypical features, or if there is suspicion of malignancy.",
+    "keySafetyConsiderations": "Monitor for signs of iron overload in patients receiving long-term iron therapy. Ensure appropriate follow-up of patients with chronic anaemia to prevent complications."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "macrocytic_anaemia",
+  "name": "Macrocytic anaemia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:53:22.084761",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Macrocytic anaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMacrocytic anaemia is a type of anaemia characterized by the presence of abnormally large red blood cells (macrocytes) in the bloodstream, typically indicated by an increased mean corpuscular volume (MCV) greater than 100 fL.\n\n### Epidemiology\nMacrocytic anaemia is relatively common, particularly in populations with nutritional deficiencies. It is more prevalent in older adults and can be associated with various underlying conditions such as vitamin B12 or folate deficiency.\n\n### Essential Pathophysiology\nMacrocytic anaemia primarily results from impaired DNA synthesis during red blood cell production, leading to ineffective erythropoiesis. This can occur due to deficiencies in vitamin B12 or folate, which are essential for DNA synthesis, or due to bone marrow disorders.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath\n- Dizziness\n- Glossitis (inflammation of the tongue)\n- Neurological symptoms (in cases of B12 deficiency)\n\n### Key Signs\n- Pallor\n- Tachycardia\n- Systolic murmur (due to increased blood flow)\n- Jaundice (in hemolytic cases)\n- Neurological signs (e.g., peripheral neuropathy in B12 deficiency)\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Cognitive changes or mood disturbances in B12 deficiency\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Neurological symptoms (e.g., numbness, tingling)\n- Signs of heart failure (e.g., edema, dyspnea)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) with MCV\n- Peripheral blood smear\n- Reticulocyte count\n\n### Second-line Investigations\n- Vitamin B12 level\n- Folate level\n- Liver function tests\n- Thyroid function tests\n\n### Specialist Tests\n- Bone marrow biopsy (if myelodysplastic syndrome is suspected)\n- Homocysteine and methylmalonic acid levels (to differentiate between B12 and folate deficiency)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of macrocytic anaemia is based on an elevated MCV (>100 fL) in conjunction with clinical symptoms and laboratory findings indicating a deficiency in vitamin B12 or folate, or other underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Iron deficiency anaemia (can be macrocytic in some cases)\n- Myelodysplastic syndromes\n- Liver disease\n- Hypothyroidism\n- Alcoholism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Transfusion of red blood cells (if severe symptoms present)\n- Correction of underlying deficiency (e.g., vitamin B12 or folate supplementation)\n\n#### Second-line Treatments\n- Consider intravenous vitamin B12 if oral supplementation is ineffective or in malabsorption cases\n\n#### Emergency Procedures\n- Bone marrow aspiration/biopsy (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral vitamin B12 supplementation (1-2 mg daily) or intramuscular injections (1000 mcg monthly) for B12 deficiency\n- Oral folic acid (5 mg daily) for folate deficiency\n\n#### Second-line Treatments\n- Monitor blood counts and vitamin levels regularly\n\n#### Monitoring Requirements\n- Regular CBC to assess response to treatment\n- Monitor for neurological symptoms in B12 deficiency\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Vitamin B12 (Cyanocobalamin)\n- **Mechanism of Action**: Essential for DNA synthesis and red blood cell formation.\n- **Typical Dosing Range**: 1-2 mg orally daily or 1000 mcg intramuscularly monthly for deficiency.\n- **Key Side Effects/Contraindications**: Mild diarrhea, itching, or rash; rare anaphylactic reactions.\n- **When to Use vs. Alternatives**: Monitor for improvement in symptoms and blood counts.\n\n#### Folic Acid (Folate)\n- **Mechanism of Action**: Essential for DNA synthesis and red blood cell formation.\n- **Typical Dosing Range**: 5 mg orally daily for deficiency.\n- **Key Side Effects/Contraindications**: Generally well tolerated; high doses can mask B12 deficiency.\n- **When to Use vs. Alternatives**: Ensure B12 levels are normal before initiating folate therapy.\n\n### Procedures\n\n#### Bone Marrow Biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Suspected myelodysplastic syndromes or other bone marrow pathologies.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of macrocytic anaemia largely depends on the underlying cause. If identified and treated early, patients can have a good prognosis, particularly in cases of nutritional deficiencies. Untreated B12 deficiency can lead to irreversible neurological damage.\n\n### Important Complications to Watch For\n- Neurological complications (e.g., peripheral neuropathy, cognitive impairment) in B12 deficiency\n- Heart failure due to severe anaemia\n- Increased risk of infections due to impaired immune function\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of macrocytic anaemia, initiate appropriate investigations, and manage basic treatment. They should also be aware of when to escalate care to a specialist.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist if there is no response to treatment, if there are atypical features, or if there is suspicion of malignancy or bone marrow disorders.\n\n### Key Safety Considerations\nEnsure to monitor for signs of neurological complications in B12 deficiency, and be cautious with folate supplementation in the presence of undiagnosed B12 deficiency to avoid masking symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Macrocytic anaemia is a type of anaemia characterized by the presence of abnormally large red blood cells (macrocytes) in the bloodstream, typically indicated by an increased mean corpuscular volume (MCV) greater than 100 fL.",
+      "epidemiology": "Macrocytic anaemia is relatively common, particularly in populations with nutritional deficiencies. It is more prevalent in older adults and can be associated with various underlying conditions such as vitamin B12 or folate deficiency.",
+      "pathophysiology": "Macrocytic anaemia primarily results from impaired DNA synthesis during red blood cell production, leading to ineffective erythropoiesis. This can occur due to deficiencies in vitamin B12 or folate, which are essential for DNA synthesis, or due to bone marrow disorders."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath",
+        "Dizziness",
+        "Glossitis (inflammation of the tongue)",
+        "Neurological symptoms (in cases of B12 deficiency)"
+      ],
+      "signs": [
+        "Pallor",
+        "Tachycardia",
+        "Systolic murmur (due to increased blood flow)",
+        "Jaundice (in hemolytic cases)",
+        "Neurological signs (e.g., peripheral neuropathy in B12 deficiency)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Cognitive changes or mood disturbances in B12 deficiency"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Neurological symptoms (e.g., numbness, tingling)",
+        "Signs of heart failure (e.g., edema, dyspnea)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) with MCV",
+        "Peripheral blood smear",
+        "Reticulocyte count"
+      ],
+      "secondLine": [
+        "Vitamin B12 level",
+        "Folate level",
+        "Liver function tests",
+        "Thyroid function tests"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy (if myelodysplastic syndrome is suspected)",
+        "Homocysteine and methylmalonic acid levels (to differentiate between B12 and folate deficiency)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of macrocytic anaemia is based on an elevated MCV (>100 fL) in conjunction with clinical symptoms and laboratory findings indicating a deficiency in vitamin B12 or folate, or other underlying causes.",
+      "differentials": [
+        "Iron deficiency anaemia (can be macrocytic in some cases)",
+        "Myelodysplastic syndromes",
+        "Liver disease",
+        "Hypothyroidism",
+        "Alcoholism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Transfusion of red blood cells (if severe symptoms present)",
+          "Correction of underlying deficiency (e.g., vitamin B12 or folate supplementation)"
+        ],
+        "secondLine": [
+          "Consider intravenous vitamin B12 if oral supplementation is ineffective or in malabsorption cases"
+        ],
+        "procedures": [
+          "Bone marrow aspiration/biopsy (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral vitamin B12 supplementation (1-2 mg daily) or intramuscular injections (1000 mcg monthly) for B12 deficiency",
+          "Oral folic acid (5 mg daily) for folate deficiency"
+        ],
+        "secondLine": [
+          "Monitor blood counts and vitamin levels regularly"
+        ],
+        "monitoring": [
+          "Regular CBC to assess response to treatment",
+          "Monitor for neurological symptoms in B12 deficiency"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Vitamin B12 (Cyanocobalamin)",
+          "mechanism": "Essential for DNA synthesis and red blood cell formation.",
+          "dosing": "1-2 mg orally daily or 1000 mcg intramuscularly monthly for deficiency.",
+          "sideEffects": "Mild diarrhea, itching, or rash; rare anaphylactic reactions.",
+          "notes": "Monitor for improvement in symptoms and blood counts."
+        },
+        {
+          "name": "Folic Acid (Folate)",
+          "mechanism": "Essential for DNA synthesis and red blood cell formation.",
+          "dosing": "5 mg orally daily for deficiency.",
+          "sideEffects": "Generally well tolerated; high doses can mask B12 deficiency.",
+          "notes": "Ensure B12 levels are normal before initiating folate therapy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone Marrow Biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Suspected myelodysplastic syndromes or other bone marrow pathologies.",
+          "risks": "Infection, bleeding, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of macrocytic anaemia largely depends on the underlying cause. If identified and treated early, patients can have a good prognosis, particularly in cases of nutritional deficiencies. Untreated B12 deficiency can lead to irreversible neurological damage.",
+    "complications": [
+      "Neurological complications (e.g., peripheral neuropathy, cognitive impairment) in B12 deficiency",
+      "Heart failure due to severe anaemia",
+      "Increased risk of infections due to impaired immune function"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of macrocytic anaemia, initiate appropriate investigations, and manage basic treatment. They should also be aware of when to escalate care to a specialist.",
+    "escalation": "Refer to a haematologist if there is no response to treatment, if there are atypical features, or if there is suspicion of malignancy or bone marrow disorders.",
+    "keySafetyConsiderations": "Ensure to monitor for signs of neurological complications in B12 deficiency, and be cautious with folate supplementation in the presence of undiagnosed B12 deficiency to avoid masking symptoms."
+  }
+}

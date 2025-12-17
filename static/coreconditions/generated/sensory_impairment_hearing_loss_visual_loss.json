@@ -1,0 +1,138 @@
+{
+  "id": "sensory_impairment_hearing_loss_visual_loss",
+  "name": "Sensory Impairment ? hearing loss, visual loss?",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:44:07.062091",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Sensory Impairment ? hearing loss, visual loss?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSensory impairment refers to the partial or total inability to use one or more of the senses, primarily hearing and vision. Hearing loss can be conductive, sensorineural, or mixed, while visual loss can range from mild visual impairment to complete blindness.\n\n### Epidemiology\nHearing loss affects approximately 1 in 6 adults in the UK, with prevalence increasing with age. Visual impairment affects around 2 million people in the UK, with age-related macular degeneration being a leading cause in older adults.\n\n### Essential Pathophysiology\nHearing loss can result from damage to the outer, middle, or inner ear structures, or from neural pathways to the brain. Visual loss can occur due to retinal damage, optic nerve damage, or cortical processing issues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Difficulty hearing conversations, especially in noisy environments\n- Muffled sounds or inability to hear certain frequencies\n- Blurred vision or difficulty seeing at night\n- Loss of peripheral vision\n\n### Key Signs\n- Increased volume on devices\n- Straining to hear or asking for repetition\n- Squinting or tilting head to see better\n- Frequent eye rubbing or tearing\n\n### Atypical Presentations\n- Sudden onset of hearing loss (could indicate acoustic neuroma or sudden sensorineural hearing loss)\n- Visual loss associated with headache (could indicate increased intracranial pressure)\n\n### Red Flags Requiring Immediate Action\n- Sudden hearing loss\n- Visual loss associated with eye pain or redness\n- Unilateral hearing loss or visual loss\n- Accompanying neurological symptoms (e.g., weakness, numbness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Audiometry for hearing loss\n- Visual acuity tests for visual impairment\n- Otoscopy to examine ear structures\n- Fundoscopy to assess retinal health\n\n### Second-line Investigations\n- Tympanometry for middle ear function\n- CT or MRI for structural abnormalities in the ear or brain\n- Visual field testing for peripheral vision loss\n\n### Specialist Tests\n- Electrocochleography for inner ear function\n- Ocular coherence tomography (OCT) for retinal imaging\n- Genetic testing for hereditary hearing loss\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, symptom assessment, and results from audiometric and visual acuity tests.\n\n### Key Differential Diagnoses to Exclude\n- Presbycusis (age-related hearing loss)\n- Acoustic neuroma\n- Cataracts\n- Glaucoma\n- Diabetic retinopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to ENT for sudden hearing loss\n- Referral to ophthalmology for acute visual loss\n\n#### Second-line Treatments\n- Corticosteroids for sudden sensorineural hearing loss (if indicated)\n- Surgical intervention for cataracts or retinal detachment\n\n#### Emergency Procedures\n- Tympanostomy for chronic otitis media\n- Intravitreal injections for retinal diseases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hearing aids for age-related hearing loss\n- Low vision aids and rehabilitation for visual impairment\n\n#### Second-line Treatments\n- Cochlear implants for severe sensorineural hearing loss\n- Surgical options for refractive errors\n\n#### Monitoring Requirements\n- Regular audiology assessments for hearing aids\n- Routine eye examinations for visual impairment management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory effects to reduce swelling and improve blood flow to the inner ear\n- **Typical Dosing Range**: Prednisone 1 mg/kg/day for 5-7 days, then taper\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, increased blood sugar\n- **When to Use vs. Alternatives**: Use in cases of sudden sensorineural hearing loss.\n\n#### Acetazolamide\n- **Mechanism of Action**: Carbonic anhydrase inhibitor that reduces intraocular pressure\n- **Typical Dosing Range**: 250 mg orally 2-3 times daily\n- **Key Side Effects/Contraindications**: Tingling in extremities, metabolic acidosis, renal stones\n- **When to Use vs. Alternatives**: Used in glaucoma management.\n\n### Procedures\n\n#### Tympanostomy\n- **What it Involves**: Insertion of tubes into the eardrum to allow fluid drainage and ventilation\n- **Indications**: Chronic otitis media with effusion\n- **Key Risks/Complications**: Infection, tympanic membrane perforation, hearing loss.\n\n#### Cataract surgery\n- **What it Involves**: Removal of the cloudy lens and replacement with an artificial lens\n- **Indications**: Significant visual impairment affecting daily activities\n- **Key Risks/Complications**: Infection, bleeding, retinal detachment, persistent visual disturbances. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies; early intervention in hearing loss can lead to improved communication and quality of life. Visual impairment management can prevent progression and improve function.\n\n### Important Complications to Watch For\n- Social isolation due to communication difficulties\n- Increased risk of falls and injuries due to visual impairment\n- Cognitive decline associated with untreated hearing loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, and refer appropriately to specialists. They should also provide education on the use of assistive devices and rehabilitation services.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT or ophthalmology for sudden changes in hearing or vision, or if there are concerning neurological signs.\n\n### Key Safety Considerations\nEnsure patient safety by assessing fall risk in visually impaired patients, and provide clear communication strategies for patients with hearing loss.\n",
+  "content": {
+    "overview": {
+      "definition": "Sensory impairment refers to the partial or total inability to use one or more of the senses, primarily hearing and vision. Hearing loss can be conductive, sensorineural, or mixed, while visual loss can range from mild visual impairment to complete blindness.",
+      "epidemiology": "Hearing loss affects approximately 1 in 6 adults in the UK, with prevalence increasing with age. Visual impairment affects around 2 million people in the UK, with age-related macular degeneration being a leading cause in older adults.",
+      "pathophysiology": "Hearing loss can result from damage to the outer, middle, or inner ear structures, or from neural pathways to the brain. Visual loss can occur due to retinal damage, optic nerve damage, or cortical processing issues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Difficulty hearing conversations, especially in noisy environments",
+        "Muffled sounds or inability to hear certain frequencies",
+        "Blurred vision or difficulty seeing at night",
+        "Loss of peripheral vision"
+      ],
+      "signs": [
+        "Increased volume on devices",
+        "Straining to hear or asking for repetition",
+        "Squinting or tilting head to see better",
+        "Frequent eye rubbing or tearing"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of hearing loss (could indicate acoustic neuroma or sudden sensorineural hearing loss)",
+        "Visual loss associated with headache (could indicate increased intracranial pressure)"
+      ],
+      "redFlags": [
+        "Sudden hearing loss",
+        "Visual loss associated with eye pain or redness",
+        "Unilateral hearing loss or visual loss",
+        "Accompanying neurological symptoms (e.g., weakness, numbness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Audiometry for hearing loss",
+        "Visual acuity tests for visual impairment",
+        "Otoscopy to examine ear structures",
+        "Fundoscopy to assess retinal health"
+      ],
+      "secondLine": [
+        "Tympanometry for middle ear function",
+        "CT or MRI for structural abnormalities in the ear or brain",
+        "Visual field testing for peripheral vision loss"
+      ],
+      "specialistTests": [
+        "Electrocochleography for inner ear function",
+        "Ocular coherence tomography (OCT) for retinal imaging",
+        "Genetic testing for hereditary hearing loss"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, symptom assessment, and results from audiometric and visual acuity tests.",
+      "differentials": [
+        "Presbycusis (age-related hearing loss)",
+        "Acoustic neuroma",
+        "Cataracts",
+        "Glaucoma",
+        "Diabetic retinopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to ENT for sudden hearing loss",
+          "Referral to ophthalmology for acute visual loss"
+        ],
+        "secondLine": [
+          "Corticosteroids for sudden sensorineural hearing loss (if indicated)",
+          "Surgical intervention for cataracts or retinal detachment"
+        ],
+        "procedures": [
+          "Tympanostomy for chronic otitis media",
+          "Intravitreal injections for retinal diseases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hearing aids for age-related hearing loss",
+          "Low vision aids and rehabilitation for visual impairment"
+        ],
+        "secondLine": [
+          "Cochlear implants for severe sensorineural hearing loss",
+          "Surgical options for refractive errors"
+        ],
+        "monitoring": [
+          "Regular audiology assessments for hearing aids",
+          "Routine eye examinations for visual impairment management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory effects to reduce swelling and improve blood flow to the inner ear",
+          "dosing": "Prednisone 1 mg/kg/day for 5-7 days, then taper",
+          "sideEffects": "Weight gain, mood changes, increased blood sugar",
+          "notes": "Use in cases of sudden sensorineural hearing loss."
+        },
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Carbonic anhydrase inhibitor that reduces intraocular pressure",
+          "dosing": "250 mg orally 2-3 times daily",
+          "sideEffects": "Tingling in extremities, metabolic acidosis, renal stones",
+          "notes": "Used in glaucoma management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tympanostomy",
+          "description": "Insertion of tubes into the eardrum to allow fluid drainage and ventilation",
+          "indications": "Chronic otitis media with effusion",
+          "risks": "Infection, tympanic membrane perforation, hearing loss."
+        },
+        {
+          "name": "Cataract surgery",
+          "description": "Removal of the cloudy lens and replacement with an artificial lens",
+          "indications": "Significant visual impairment affecting daily activities",
+          "risks": "Infection, bleeding, retinal detachment, persistent visual disturbances. "
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies; early intervention in hearing loss can lead to improved communication and quality of life. Visual impairment management can prevent progression and improve function.",
+    "complications": [
+      "Social isolation due to communication difficulties",
+      "Increased risk of falls and injuries due to visual impairment",
+      "Cognitive decline associated with untreated hearing loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, and refer appropriately to specialists. They should also provide education on the use of assistive devices and rehabilitation services.",
+    "escalation": "Refer to ENT or ophthalmology for sudden changes in hearing or vision, or if there are concerning neurological signs.",
+    "keySafetyConsiderations": "Ensure patient safety by assessing fall risk in visually impaired patients, and provide clear communication strategies for patients with hearing loss."
+  }
+}

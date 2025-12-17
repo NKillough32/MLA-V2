@@ -1,0 +1,136 @@
+{
+  "id": "muscle_disorders_acquired_muscle_disorders_eg_polymyositis_or_drug_induced_myopathies",
+  "name": "Muscle disorders - Acquired muscle disorders (e.g. polymyositis or drug-induced myopathies)",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:49:38.170770",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Muscle disorders - Acquired muscle disorders (e.g. polymyositis or drug-induced myopathies): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcquired muscle disorders are conditions that lead to muscle weakness and dysfunction due to non-genetic factors. Examples include polymyositis, dermatomyositis, and drug-induced myopathies.\n\n### Epidemiology\nPolymyositis and dermatomyositis are rare, with an incidence of 1-10 cases per 100,000 people per year. Drug-induced myopathies can occur in patients taking certain medications, with varying prevalence depending on the drug class.\n\n### Essential Pathophysiology\nAcquired muscle disorders often involve autoimmune mechanisms, where the body's immune system mistakenly attacks muscle fibers, leading to inflammation and muscle damage. In drug-induced myopathies, specific medications can cause direct toxicity to muscle cells or trigger an autoimmune response.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive muscle weakness (proximal more than distal)\n- Fatigue\n- Difficulty climbing stairs or lifting objects\n- Dysphagia (difficulty swallowing)\n- Respiratory muscle weakness\n\n### Key Signs\n- Muscle tenderness on palpation\n- Proximal muscle weakness (e.g., shoulder girdle, pelvic girdle)\n- Skin rashes (in dermatomyositis)\n- Elevated creatine kinase (CK) levels\n- Muscle atrophy\n\n### Atypical Presentations\n- Acute onset of weakness\n- Respiratory failure due to muscle weakness\n- Rash without significant muscle weakness\n\n### Red Flags Requiring Immediate Action\n- Severe muscle weakness affecting respiratory muscles\n- Dysphagia leading to aspiration\n- Rapid progression of symptoms\n- Associated systemic symptoms (fever, weight loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum creatine kinase (CK) levels\n- Electromyography (EMG)\n- Muscle biopsy\n\n### Second-line Investigations\n- Autoantibody testing (e.g., anti-Jo-1, anti-Mi-2)\n- MRI of muscles\n- Chest X-ray (to assess for respiratory involvement)\n\n### Specialist Tests\n- Muscle biopsy for histopathological examination\n- Genetic testing if hereditary myopathy is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, elevated CK levels, EMG findings, and muscle biopsy results showing inflammatory changes or necrosis.\n\n### Key Differential Diagnoses to Exclude\n- Duchenne muscular dystrophy\n- Myasthenia gravis\n- Hypothyroid myopathy\n- Electrolyte imbalances (e.g., hypokalemia)\n- Infectious myositis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., prednisone)\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine, methotrexate)\n\n#### Emergency Procedures\n- Intravenous immunoglobulin (IVIG) for severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term corticosteroids with tapering as tolerated\n- Physical therapy for muscle strengthening\n\n#### Second-line Treatments\n- Consideration of additional immunosuppressive agents (e.g., mycophenolate mofetil)\n\n#### Monitoring Requirements\n- Regular follow-up for muscle strength assessment\n- Monitoring for side effects of medications (e.g., osteoporosis, diabetes)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and immune response\n- **Typical Dosing Range**: Start at 0.5-1 mg/kg/day, taper based on response\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, diabetes, hypertension\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose accordingly.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis\n- **Typical Dosing Range**: 2-3 mg/kg/day, monitor TPMT levels\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity\n- **When to Use vs. Alternatives**: Requires regular blood monitoring.\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 7.5-25 mg weekly, adjust based on response\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, pulmonary toxicity\n- **When to Use vs. Alternatives**: Folic acid supplementation may reduce side effects.\n\n### Procedures\n\n#### Muscle biopsy\n- **What it Involves**: A small sample of muscle tissue is taken for histological examination.\n- **Indications**: To confirm diagnosis of myositis or rule out other muscle disorders.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies; some patients may achieve significant recovery with treatment, while others may have persistent weakness or complications. Early diagnosis and management improve outcomes.\n\n### Important Complications to Watch For\n- Respiratory failure due to muscle weakness\n- Dysphagia leading to aspiration pneumonia\n- Long-term corticosteroid side effects (e.g., osteoporosis, diabetes)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize symptoms of muscle disorders, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to specialists.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist or rheumatologist if there is rapid progression of symptoms, severe weakness, or if the patient is not responding to initial treatment.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress, dysphagia, and side effects of medications. Ensure regular follow-up for muscle strength and medication side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Acquired muscle disorders are conditions that lead to muscle weakness and dysfunction due to non-genetic factors. Examples include polymyositis, dermatomyositis, and drug-induced myopathies.",
+      "epidemiology": "Polymyositis and dermatomyositis are rare, with an incidence of 1-10 cases per 100,000 people per year. Drug-induced myopathies can occur in patients taking certain medications, with varying prevalence depending on the drug class.",
+      "pathophysiology": "Acquired muscle disorders often involve autoimmune mechanisms, where the body's immune system mistakenly attacks muscle fibers, leading to inflammation and muscle damage. In drug-induced myopathies, specific medications can cause direct toxicity to muscle cells or trigger an autoimmune response."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive muscle weakness (proximal more than distal)",
+        "Fatigue",
+        "Difficulty climbing stairs or lifting objects",
+        "Dysphagia (difficulty swallowing)",
+        "Respiratory muscle weakness"
+      ],
+      "signs": [
+        "Muscle tenderness on palpation",
+        "Proximal muscle weakness (e.g., shoulder girdle, pelvic girdle)",
+        "Skin rashes (in dermatomyositis)",
+        "Elevated creatine kinase (CK) levels",
+        "Muscle atrophy"
+      ],
+      "atypicalPresentations": [
+        "Acute onset of weakness",
+        "Respiratory failure due to muscle weakness",
+        "Rash without significant muscle weakness"
+      ],
+      "redFlags": [
+        "Severe muscle weakness affecting respiratory muscles",
+        "Dysphagia leading to aspiration",
+        "Rapid progression of symptoms",
+        "Associated systemic symptoms (fever, weight loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum creatine kinase (CK) levels",
+        "Electromyography (EMG)",
+        "Muscle biopsy"
+      ],
+      "secondLine": [
+        "Autoantibody testing (e.g., anti-Jo-1, anti-Mi-2)",
+        "MRI of muscles",
+        "Chest X-ray (to assess for respiratory involvement)"
+      ],
+      "specialistTests": [
+        "Muscle biopsy for histopathological examination",
+        "Genetic testing if hereditary myopathy is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, elevated CK levels, EMG findings, and muscle biopsy results showing inflammatory changes or necrosis.",
+      "differentials": [
+        "Duchenne muscular dystrophy",
+        "Myasthenia gravis",
+        "Hypothyroid myopathy",
+        "Electrolyte imbalances (e.g., hypokalemia)",
+        "Infectious myositis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., prednisone)"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine, methotrexate)"
+        ],
+        "procedures": [
+          "Intravenous immunoglobulin (IVIG) for severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term corticosteroids with tapering as tolerated",
+          "Physical therapy for muscle strengthening"
+        ],
+        "secondLine": [
+          "Consideration of additional immunosuppressive agents (e.g., mycophenolate mofetil)"
+        ],
+        "monitoring": [
+          "Regular follow-up for muscle strength assessment",
+          "Monitoring for side effects of medications (e.g., osteoporosis, diabetes)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and immune response",
+          "dosing": "Start at 0.5-1 mg/kg/day, taper based on response",
+          "sideEffects": "Weight gain, osteoporosis, diabetes, hypertension",
+          "notes": "Monitor for side effects and adjust dose accordingly."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis",
+          "dosing": "2-3 mg/kg/day, monitor TPMT levels",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity",
+          "notes": "Requires regular blood monitoring."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "7.5-25 mg weekly, adjust based on response",
+          "sideEffects": "Nausea, liver toxicity, pulmonary toxicity",
+          "notes": "Folic acid supplementation may reduce side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Muscle biopsy",
+          "description": "A small sample of muscle tissue is taken for histological examination.",
+          "indications": "To confirm diagnosis of myositis or rule out other muscle disorders.",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies; some patients may achieve significant recovery with treatment, while others may have persistent weakness or complications. Early diagnosis and management improve outcomes.",
+    "complications": [
+      "Respiratory failure due to muscle weakness",
+      "Dysphagia leading to aspiration pneumonia",
+      "Long-term corticosteroid side effects (e.g., osteoporosis, diabetes)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize symptoms of muscle disorders, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to specialists.",
+    "escalation": "Refer to a neurologist or rheumatologist if there is rapid progression of symptoms, severe weakness, or if the patient is not responding to initial treatment.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress, dysphagia, and side effects of medications. Ensure regular follow-up for muscle strength and medication side effects."
+  }
+}

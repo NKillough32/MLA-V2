@@ -1,0 +1,128 @@
+{
+  "id": "vestibular_migrain",
+  "name": "Vestibular migrain",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:56:47.275374",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vestibular migrain: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVestibular migraine is a type of migraine characterized by recurrent episodes of vertigo or dizziness associated with migraine features such as headache, photophobia, or phonophobia. It can occur with or without a headache.\n\n### Epidemiology\nVestibular migraine is estimated to affect 1-3% of the general population, with a higher prevalence in individuals with a history of migraine. It is more common in women than men, particularly in those aged 20-50 years.\n\n### Essential Pathophysiology\nThe exact pathophysiology of vestibular migraine is not fully understood, but it is believed to involve a combination of genetic predisposition, cortical spreading depression, and dysfunction of the vestibular system. Changes in neurotransmitter levels, particularly serotonin, may also play a role.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Recurrent episodes of vertigo\n- Dizziness\n- Nausea\n- Unsteadiness\n- Headache (may or may not be present)\n- Sensitivity to light and sound\n\n### Key Signs\n- Nystagmus (involuntary eye movements)\n- Balance disturbances\n- Positive Romberg test\n\n### Atypical Presentations\n- Vestibular symptoms without headache\n- Prolonged episodes lasting days to weeks\n- Symptoms triggered by specific movements or positions\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of vertigo\n- Neurological deficits (e.g., weakness, numbness)\n- Severe headache with a different pattern than usual\n- Symptoms persisting longer than 72 hours\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Dix-Hallpike maneuver to rule out BPPV\n\n### Second-line Investigations\n- Audiometry to assess hearing function\n- Vestibular function tests (e.g., caloric testing)\n\n### Specialist Tests\n- MRI of the brain to rule out central causes of vertigo\n- Vestibular evoked myogenic potentials (VEMP)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the International Classification of Headache Disorders (ICHD-3) criteria for vestibular migraine, which includes at least five episodes of vestibular symptoms lasting 20 minutes to 72 hours, with at least one migraine feature (headache, photophobia, phonophobia) during the episodes.\n\n### Key Differential Diagnoses to Exclude\n- Benign Paroxysmal Positional Vertigo (BPPV)\n- Meniere's disease\n- Vestibular neuritis\n- Central vestibular disorders (e.g., stroke, tumors)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest in a quiet, dark room\n- Hydration\n- Over-the-counter analgesics (e.g., ibuprofen, paracetamol)\n\n#### Second-line Treatments\n- Triptans (e.g., sumatriptan) if headache is present\n- Antiemetics (e.g., prochlorperazine) for nausea\n\n#### Emergency Procedures\n- None specific for acute management; supportive care is key.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (e.g., regular sleep, hydration, avoiding triggers)\n- Prophylactic medications (e.g., beta-blockers, amitriptyline)\n\n#### Second-line Treatments\n- Calcium channel blockers (e.g., flunarizine)\n- Topiramate\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and adjust medications as necessary.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that modulates neurotransmitter levels and has analgesic properties.\n- **Typical Dosing Range**: Start at 10-25 mg at bedtime, titrate up to 75 mg as tolerated.\n- **Key Side Effects/Contraindications**: Dry mouth, sedation, weight gain, constipation.\n- **When to Use vs. Alternatives**: Consider in patients with comorbid anxiety or depression.\n\n#### Propranolol\n- **Mechanism of Action**: Beta-blocker that reduces migraine frequency by stabilizing vascular tone.\n- **Typical Dosing Range**: Start at 40 mg daily, titrate up to 240 mg as tolerated.\n- **Key Side Effects/Contraindications**: Fatigue, dizziness, bradycardia, hypotension.\n- **When to Use vs. Alternatives**: Contraindicated in asthma.\n\n#### Sumatriptan\n- **Mechanism of Action**: Selective agonist for serotonin receptors, alleviating migraine symptoms.\n- **Typical Dosing Range**: 50-100 mg orally at onset of headache, may repeat after 2 hours if needed (max 300 mg/day).\n- **Key Side Effects/Contraindications**: Chest tightness, flushing, dizziness, nausea.\n- **When to Use vs. Alternatives**: Not to be used in patients with cardiovascular disease.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nVestibular migraine is generally a benign condition, but it can significantly impact quality of life. Many patients experience a reduction in frequency and severity of episodes over time.\n\n### Important Complications to Watch For\n- Chronic vestibular symptoms\n- Increased frequency of migraine attacks\n- Psychological impact (e.g., anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize vestibular migraine, perform initial assessments, provide symptomatic treatment, and refer to specialists when necessary. They should also educate patients about lifestyle modifications and trigger avoidance.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if there are atypical features, lack of response to treatment, or if the diagnosis is uncertain.\n\n### Key Safety Considerations\nEnsure to rule out serious causes of vertigo (e.g., stroke, tumors) in patients presenting with new or sudden onset symptoms. Monitor for medication side effects, especially in patients on multiple medications.\n",
+  "content": {
+    "overview": {
+      "definition": "Vestibular migraine is a type of migraine characterized by recurrent episodes of vertigo or dizziness associated with migraine features such as headache, photophobia, or phonophobia. It can occur with or without a headache.",
+      "epidemiology": "Vestibular migraine is estimated to affect 1-3% of the general population, with a higher prevalence in individuals with a history of migraine. It is more common in women than men, particularly in those aged 20-50 years.",
+      "pathophysiology": "The exact pathophysiology of vestibular migraine is not fully understood, but it is believed to involve a combination of genetic predisposition, cortical spreading depression, and dysfunction of the vestibular system. Changes in neurotransmitter levels, particularly serotonin, may also play a role."
+    },
+    "recognition": {
+      "symptoms": [
+        "Recurrent episodes of vertigo",
+        "Dizziness",
+        "Nausea",
+        "Unsteadiness",
+        "Headache (may or may not be present)",
+        "Sensitivity to light and sound"
+      ],
+      "signs": [
+        "Nystagmus (involuntary eye movements)",
+        "Balance disturbances",
+        "Positive Romberg test"
+      ],
+      "atypicalPresentations": [
+        "Vestibular symptoms without headache",
+        "Prolonged episodes lasting days to weeks",
+        "Symptoms triggered by specific movements or positions"
+      ],
+      "redFlags": [
+        "Sudden onset of vertigo",
+        "Neurological deficits (e.g., weakness, numbness)",
+        "Severe headache with a different pattern than usual",
+        "Symptoms persisting longer than 72 hours"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Dix-Hallpike maneuver to rule out BPPV"
+      ],
+      "secondLine": [
+        "Audiometry to assess hearing function",
+        "Vestibular function tests (e.g., caloric testing)"
+      ],
+      "specialistTests": [
+        "MRI of the brain to rule out central causes of vertigo",
+        "Vestibular evoked myogenic potentials (VEMP)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the International Classification of Headache Disorders (ICHD-3) criteria for vestibular migraine, which includes at least five episodes of vestibular symptoms lasting 20 minutes to 72 hours, with at least one migraine feature (headache, photophobia, phonophobia) during the episodes.",
+      "differentials": [
+        "Benign Paroxysmal Positional Vertigo (BPPV)",
+        "Meniere's disease",
+        "Vestibular neuritis",
+        "Central vestibular disorders (e.g., stroke, tumors)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest in a quiet, dark room",
+          "Hydration",
+          "Over-the-counter analgesics (e.g., ibuprofen, paracetamol)"
+        ],
+        "secondLine": [
+          "Triptans (e.g., sumatriptan) if headache is present",
+          "Antiemetics (e.g., prochlorperazine) for nausea"
+        ],
+        "procedures": [
+          "None specific for acute management; supportive care is key."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (e.g., regular sleep, hydration, avoiding triggers)",
+          "Prophylactic medications (e.g., beta-blockers, amitriptyline)"
+        ],
+        "secondLine": [
+          "Calcium channel blockers (e.g., flunarizine)",
+          "Topiramate"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and adjust medications as necessary."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that modulates neurotransmitter levels and has analgesic properties.",
+          "dosing": "Start at 10-25 mg at bedtime, titrate up to 75 mg as tolerated.",
+          "sideEffects": "Dry mouth, sedation, weight gain, constipation.",
+          "notes": "Consider in patients with comorbid anxiety or depression."
+        },
+        {
+          "name": "Propranolol",
+          "mechanism": "Beta-blocker that reduces migraine frequency by stabilizing vascular tone.",
+          "dosing": "Start at 40 mg daily, titrate up to 240 mg as tolerated.",
+          "sideEffects": "Fatigue, dizziness, bradycardia, hypotension.",
+          "notes": "Contraindicated in asthma."
+        },
+        {
+          "name": "Sumatriptan",
+          "mechanism": "Selective agonist for serotonin receptors, alleviating migraine symptoms.",
+          "dosing": "50-100 mg orally at onset of headache, may repeat after 2 hours if needed (max 300 mg/day).",
+          "sideEffects": "Chest tightness, flushing, dizziness, nausea.",
+          "notes": "Not to be used in patients with cardiovascular disease."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Vestibular migraine is generally a benign condition, but it can significantly impact quality of life. Many patients experience a reduction in frequency and severity of episodes over time.",
+    "complications": [
+      "Chronic vestibular symptoms",
+      "Increased frequency of migraine attacks",
+      "Psychological impact (e.g., anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize vestibular migraine, perform initial assessments, provide symptomatic treatment, and refer to specialists when necessary. They should also educate patients about lifestyle modifications and trigger avoidance.",
+    "escalation": "Refer to a neurologist if there are atypical features, lack of response to treatment, or if the diagnosis is uncertain.",
+    "keySafetyConsiderations": "Ensure to rule out serious causes of vertigo (e.g., stroke, tumors) in patients presenting with new or sudden onset symptoms. Monitor for medication side effects, especially in patients on multiple medications."
+  }
+}

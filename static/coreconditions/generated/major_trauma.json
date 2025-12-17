@@ -1,0 +1,137 @@
+{
+  "id": "major_trauma",
+  "name": "Major trauma",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:24:07.641990",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Major trauma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMajor trauma refers to a serious injury that poses a threat to life or limb, often requiring immediate medical intervention. It typically involves multiple body systems and can result from various mechanisms such as road traffic accidents, falls, or violence.\n\n### Epidemiology\nMajor trauma is a leading cause of morbidity and mortality worldwide, particularly in younger populations. It accounts for a significant number of emergency department visits and hospital admissions, with an estimated incidence of 100-200 cases per 100,000 population annually in developed countries.\n\n### Essential Pathophysiology\nMajor trauma can lead to complex physiological responses, including shock, coagulopathy, and multi-organ failure. The initial injury may cause direct tissue damage, while secondary injuries can arise from hypoxia, ischemia, and inflammatory responses.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe pain at the injury site\n- Shortness of breath\n- Altered consciousness\n- Nausea or vomiting\n- Signs of shock (e.g., pallor, sweating)\n\n### Key Signs\n- Deformity or abnormal positioning of limbs\n- Open wounds or lacerations\n- Swelling or bruising\n- Abnormal vital signs (e.g., hypotension, tachycardia)\n- Neurological deficits\n\n### Atypical Presentations\n- Elderly patients may present with atypical symptoms such as confusion or falls without obvious injury.\n- Pediatric patients may not exhibit classic signs of distress due to physiological differences.\n\n### Red Flags Requiring Immediate Action\n- GCS < 13\n- Systolic BP < 90 mmHg\n- Respiratory rate < 10 or > 30 breaths/min\n- Severe mechanism of injury (e.g., high-speed collision)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Primary survey (ABCDE approach)\n- Focused assessment with sonography for trauma (FAST)\n- X-rays of suspected fractures\n\n### Second-line Investigations\n- CT scan of the head, chest, abdomen, and pelvis as indicated\n- MRI for soft tissue injuries\n\n### Specialist Tests\n- Angiography for suspected vascular injuries\n- Lactate levels to assess metabolic status\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of major trauma is based on the mechanism of injury, clinical presentation, and the need for immediate intervention. The Trauma Score and Injury Severity Score (ISS) can be used to quantify the severity of injuries.\n\n### Key Differential Diagnoses to Exclude\n- Minor trauma\n- Non-traumatic causes of similar symptoms (e.g., myocardial infarction, stroke)\n- Spinal cord injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Airway management (intubation if necessary)\n- Fluid resuscitation (crystalloids)\n- Pain management (opioids)\n\n#### Second-line Treatments\n- Blood transfusion if significant hemorrhage is present\n- Surgical intervention for life-threatening injuries\n\n#### Emergency Procedures\n- Chest tube insertion for pneumothorax or hemothorax\n- Emergency laparotomy for intra-abdominal bleeding\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation services for physical therapy\n- Pain management strategies\n- Psychological support for trauma-related stress\n\n#### Second-line Treatments\n- Surgical correction of any long-term complications (e.g., malunion of fractures)\n\n#### Monitoring Requirements\n- Regular follow-up for functional recovery and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Morphine\n- **Mechanism of Action**: Opioid analgesic that binds to mu-opioid receptors in the CNS, providing pain relief.\n- **Typical Dosing Range**: Initial dose of 2-5 mg IV, titrate to effect every 5-10 minutes as needed.\n- **Key Side Effects/Contraindications**: Respiratory depression, sedation, constipation, nausea.\n- **When to Use vs. Alternatives**: Monitor respiratory rate and sedation level closely.\n\n#### Tranexamic Acid\n- **Mechanism of Action**: Antifibrinolytic agent that inhibits the breakdown of fibrin, reducing bleeding.\n- **Typical Dosing Range**: 1 g IV over 10 minutes, followed by 1 g IV over 8 hours if needed.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, thromboembolic events.\n- **When to Use vs. Alternatives**: Administer as soon as possible after injury.\n\n### Procedures\n\n#### Chest Tube Insertion\n- **What it Involves**: A procedure to drain air or fluid from the pleural space to relieve pressure on the lungs.\n- **Indications**: Pneumothorax, hemothorax, pleural effusion.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding structures.\n\n#### Emergency Laparotomy\n- **What it Involves**: Surgical procedure to open the abdominal cavity for assessment and management of intra-abdominal injuries.\n- **Indications**: Suspicion of intra-abdominal hemorrhage or organ injury.\n- **Key Risks/Complications**: Infection, bleeding, organ damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for major trauma varies widely based on the type and severity of injuries, the speed of medical intervention, and the patient's overall health. Early intervention and appropriate management can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Infection (e.g., pneumonia, surgical site infections)\n- Deep vein thrombosis (DVT)\n- Post-traumatic stress disorder (PTSD)\n- Chronic pain syndromes\n- Organ dysfunction or failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in the initial assessment and management of major trauma patients. They should be proficient in the ABCDE approach, perform initial resuscitation, and communicate effectively with the trauma team.\n\n### When to Escalate to Senior/Specialist\nIf a patient exhibits signs of shock, altered consciousness, or requires advanced interventions, escalate care to senior medical staff or the trauma team immediately.\n\n### Key Safety Considerations\nEnsure proper handover of information during transitions of care, maintain a high index of suspicion for associated injuries, and adhere to protocols for trauma management to minimize errors.\n",
+  "content": {
+    "overview": {
+      "definition": "Major trauma refers to a serious injury that poses a threat to life or limb, often requiring immediate medical intervention. It typically involves multiple body systems and can result from various mechanisms such as road traffic accidents, falls, or violence.",
+      "epidemiology": "Major trauma is a leading cause of morbidity and mortality worldwide, particularly in younger populations. It accounts for a significant number of emergency department visits and hospital admissions, with an estimated incidence of 100-200 cases per 100,000 population annually in developed countries.",
+      "pathophysiology": "Major trauma can lead to complex physiological responses, including shock, coagulopathy, and multi-organ failure. The initial injury may cause direct tissue damage, while secondary injuries can arise from hypoxia, ischemia, and inflammatory responses."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe pain at the injury site",
+        "Shortness of breath",
+        "Altered consciousness",
+        "Nausea or vomiting",
+        "Signs of shock (e.g., pallor, sweating)"
+      ],
+      "signs": [
+        "Deformity or abnormal positioning of limbs",
+        "Open wounds or lacerations",
+        "Swelling or bruising",
+        "Abnormal vital signs (e.g., hypotension, tachycardia)",
+        "Neurological deficits"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with atypical symptoms such as confusion or falls without obvious injury.",
+        "Pediatric patients may not exhibit classic signs of distress due to physiological differences."
+      ],
+      "redFlags": [
+        "GCS < 13",
+        "Systolic BP < 90 mmHg",
+        "Respiratory rate < 10 or > 30 breaths/min",
+        "Severe mechanism of injury (e.g., high-speed collision)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Primary survey (ABCDE approach)",
+        "Focused assessment with sonography for trauma (FAST)",
+        "X-rays of suspected fractures"
+      ],
+      "secondLine": [
+        "CT scan of the head, chest, abdomen, and pelvis as indicated",
+        "MRI for soft tissue injuries"
+      ],
+      "specialistTests": [
+        "Angiography for suspected vascular injuries",
+        "Lactate levels to assess metabolic status"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of major trauma is based on the mechanism of injury, clinical presentation, and the need for immediate intervention. The Trauma Score and Injury Severity Score (ISS) can be used to quantify the severity of injuries.",
+      "differentials": [
+        "Minor trauma",
+        "Non-traumatic causes of similar symptoms (e.g., myocardial infarction, stroke)",
+        "Spinal cord injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Airway management (intubation if necessary)",
+          "Fluid resuscitation (crystalloids)",
+          "Pain management (opioids)"
+        ],
+        "secondLine": [
+          "Blood transfusion if significant hemorrhage is present",
+          "Surgical intervention for life-threatening injuries"
+        ],
+        "procedures": [
+          "Chest tube insertion for pneumothorax or hemothorax",
+          "Emergency laparotomy for intra-abdominal bleeding"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation services for physical therapy",
+          "Pain management strategies",
+          "Psychological support for trauma-related stress"
+        ],
+        "secondLine": [
+          "Surgical correction of any long-term complications (e.g., malunion of fractures)"
+        ],
+        "monitoring": [
+          "Regular follow-up for functional recovery and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Morphine",
+          "mechanism": "Opioid analgesic that binds to mu-opioid receptors in the CNS, providing pain relief.",
+          "dosing": "Initial dose of 2-5 mg IV, titrate to effect every 5-10 minutes as needed.",
+          "sideEffects": "Respiratory depression, sedation, constipation, nausea.",
+          "notes": "Monitor respiratory rate and sedation level closely."
+        },
+        {
+          "name": "Tranexamic Acid",
+          "mechanism": "Antifibrinolytic agent that inhibits the breakdown of fibrin, reducing bleeding.",
+          "dosing": "1 g IV over 10 minutes, followed by 1 g IV over 8 hours if needed.",
+          "sideEffects": "Nausea, diarrhea, thromboembolic events.",
+          "notes": "Administer as soon as possible after injury."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Chest Tube Insertion",
+          "description": "A procedure to drain air or fluid from the pleural space to relieve pressure on the lungs.",
+          "indications": "Pneumothorax, hemothorax, pleural effusion.",
+          "risks": "Infection, bleeding, injury to surrounding structures."
+        },
+        {
+          "name": "Emergency Laparotomy",
+          "description": "Surgical procedure to open the abdominal cavity for assessment and management of intra-abdominal injuries.",
+          "indications": "Suspicion of intra-abdominal hemorrhage or organ injury.",
+          "risks": "Infection, bleeding, organ damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for major trauma varies widely based on the type and severity of injuries, the speed of medical intervention, and the patient's overall health. Early intervention and appropriate management can significantly improve outcomes.",
+    "complications": [
+      "Infection (e.g., pneumonia, surgical site infections)",
+      "Deep vein thrombosis (DVT)",
+      "Post-traumatic stress disorder (PTSD)",
+      "Chronic pain syndromes",
+      "Organ dysfunction or failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in the initial assessment and management of major trauma patients. They should be proficient in the ABCDE approach, perform initial resuscitation, and communicate effectively with the trauma team.",
+    "escalation": "If a patient exhibits signs of shock, altered consciousness, or requires advanced interventions, escalate care to senior medical staff or the trauma team immediately.",
+    "keySafetyConsiderations": "Ensure proper handover of information during transitions of care, maintain a high index of suspicion for associated injuries, and adhere to protocols for trauma management to minimize errors."
+  }
+}

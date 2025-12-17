@@ -1,0 +1,142 @@
+{
+  "id": "arrhythmias",
+  "name": "Arrhythmias",
+  "domains": [
+    "Pre-operative Care"
+  ],
+  "generatedAt": "2025-12-17T21:12:58.764939",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Arrhythmias: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nArrhythmias are abnormal heart rhythms that can result from issues with the heart's electrical conduction system, leading to irregular, too fast, or too slow heartbeats.\n\n### Epidemiology\nArrhythmias are common, affecting millions worldwide. Atrial fibrillation is the most prevalent, especially in older adults, with a prevalence of about 1-2% in the general population, increasing with age.\n\n### Essential Pathophysiology\nArrhythmias occur due to disturbances in the normal electrical conduction pathways of the heart, which can be caused by ischemia, electrolyte imbalances, structural heart disease, or genetic factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Palpitations\n- Dizziness\n- Syncope\n- Chest pain\n- Shortness of breath\n- Fatigue\n\n### Key Signs\n- Irregular pulse\n- Hypotension\n- Signs of heart failure (e.g., edema, jugular venous distension)\n- Altered mental status\n\n### Atypical Presentations\n- Asymptomatic in some cases\n- Fatigue or weakness without palpitations\n\n### Red Flags Requiring Immediate Action\n- Syncope or near-syncope\n- Chest pain with arrhythmia\n- Rapidly changing heart rates\n- Severe hypotension\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Patient history and physical examination\n- Pulse check\n\n### Second-line Investigations\n- Holter monitor (24-hour ECG monitoring)\n- Event monitor (longer-term monitoring)\n- Echocardiogram\n\n### Specialist Tests\n- Electrophysiological study (EPS)\n- Stress testing\n- Blood tests (electrolytes, thyroid function)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on ECG findings, patient history, and symptom correlation. Specific criteria depend on the type of arrhythmia (e.g., for atrial fibrillation, the presence of irregularly irregular rhythm on ECG).\n\n### Key Differential Diagnoses to Exclude\n- Atrial fibrillation\n- Atrial flutter\n- Ventricular tachycardia\n- Supraventricular tachycardia\n- Bradycardia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Vagal maneuvers (for SVT)\n- Adenosine (for SVT)\n- Beta-blockers or calcium channel blockers (for rate control)\n\n#### Second-line Treatments\n- Amiodarone (for ventricular tachycardia)\n- Cardioversion (synchronized for unstable arrhythmias)\n\n#### Emergency Procedures\n- Cardioversion (electrical or pharmacological)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Anticoagulation (for atrial fibrillation)\n- Beta-blockers (for rate control)\n- Lifestyle modifications (diet, exercise)\n\n#### Second-line Treatments\n- Antiarrhythmic medications (e.g., sotalol, flecainide)\n- Catheter ablation (for refractory cases)\n\n#### Monitoring Requirements\n- Regular follow-up with ECG\n- Monitoring for anticoagulation efficacy and bleeding risks\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Adenosine\n- **Mechanism of Action**: Slows conduction through the AV node, interrupting reentrant pathways.\n- **Typical Dosing Range**: 6 mg IV push, may repeat with 12 mg if no response.\n- **Key Side Effects/Contraindications**: Flushing, chest discomfort, transient asystole.\n- **When to Use vs. Alternatives**: Effective for paroxysmal SVT.\n\n#### Amiodarone\n- **Mechanism of Action**: Prolongs action potential and refractory period, affecting multiple ion channels.\n- **Typical Dosing Range**: Loading dose: 150 mg IV over 10 minutes, followed by 1 mg/min for 6 hours, then 0.5 mg/min.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Used for ventricular tachycardia and atrial fibrillation.\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist, reducing clot formation.\n- **Typical Dosing Range**: Initial: 5 mg daily, adjust based on INR (target INR 2-3).\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, drug interactions.\n- **When to Use vs. Alternatives**: Used for stroke prevention in atrial fibrillation.\n\n### Procedures\n\n#### Cardioversion\n- **What it Involves**: Delivery of electrical shock to restore normal rhythm.\n- **Indications**: Unstable atrial fibrillation, ventricular tachycardia, or SVT.\n- **Key Risks/Complications**: Arrhythmia recurrence, skin burns, sedation complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies by type of arrhythmia; many are manageable with treatment, but some can lead to serious complications like stroke or sudden cardiac death.\n\n### Important Complications to Watch For\n- Stroke (especially with atrial fibrillation)\n- Heart failure\n- Sudden cardiac arrest\n- Syncope\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize arrhythmias, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to cardiology for persistent or symptomatic arrhythmias, or if the patient is unstable (e.g., hypotensive, altered mental status).\n\n### Key Safety Considerations\nMonitor vital signs closely, especially in patients with known arrhythmias. Be aware of anticoagulation risks in patients with atrial fibrillation. Ensure proper patient education regarding symptoms and when to seek help.\n",
+  "content": {
+    "overview": {
+      "definition": "Arrhythmias are abnormal heart rhythms that can result from issues with the heart's electrical conduction system, leading to irregular, too fast, or too slow heartbeats.",
+      "epidemiology": "Arrhythmias are common, affecting millions worldwide. Atrial fibrillation is the most prevalent, especially in older adults, with a prevalence of about 1-2% in the general population, increasing with age.",
+      "pathophysiology": "Arrhythmias occur due to disturbances in the normal electrical conduction pathways of the heart, which can be caused by ischemia, electrolyte imbalances, structural heart disease, or genetic factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Palpitations",
+        "Dizziness",
+        "Syncope",
+        "Chest pain",
+        "Shortness of breath",
+        "Fatigue"
+      ],
+      "signs": [
+        "Irregular pulse",
+        "Hypotension",
+        "Signs of heart failure (e.g., edema, jugular venous distension)",
+        "Altered mental status"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in some cases",
+        "Fatigue or weakness without palpitations"
+      ],
+      "redFlags": [
+        "Syncope or near-syncope",
+        "Chest pain with arrhythmia",
+        "Rapidly changing heart rates",
+        "Severe hypotension"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Patient history and physical examination",
+        "Pulse check"
+      ],
+      "secondLine": [
+        "Holter monitor (24-hour ECG monitoring)",
+        "Event monitor (longer-term monitoring)",
+        "Echocardiogram"
+      ],
+      "specialistTests": [
+        "Electrophysiological study (EPS)",
+        "Stress testing",
+        "Blood tests (electrolytes, thyroid function)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on ECG findings, patient history, and symptom correlation. Specific criteria depend on the type of arrhythmia (e.g., for atrial fibrillation, the presence of irregularly irregular rhythm on ECG).",
+      "differentials": [
+        "Atrial fibrillation",
+        "Atrial flutter",
+        "Ventricular tachycardia",
+        "Supraventricular tachycardia",
+        "Bradycardia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Vagal maneuvers (for SVT)",
+          "Adenosine (for SVT)",
+          "Beta-blockers or calcium channel blockers (for rate control)"
+        ],
+        "secondLine": [
+          "Amiodarone (for ventricular tachycardia)",
+          "Cardioversion (synchronized for unstable arrhythmias)"
+        ],
+        "procedures": [
+          "Cardioversion (electrical or pharmacological)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Anticoagulation (for atrial fibrillation)",
+          "Beta-blockers (for rate control)",
+          "Lifestyle modifications (diet, exercise)"
+        ],
+        "secondLine": [
+          "Antiarrhythmic medications (e.g., sotalol, flecainide)",
+          "Catheter ablation (for refractory cases)"
+        ],
+        "monitoring": [
+          "Regular follow-up with ECG",
+          "Monitoring for anticoagulation efficacy and bleeding risks"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Adenosine",
+          "mechanism": "Slows conduction through the AV node, interrupting reentrant pathways.",
+          "dosing": "6 mg IV push, may repeat with 12 mg if no response.",
+          "sideEffects": "Flushing, chest discomfort, transient asystole.",
+          "notes": "Effective for paroxysmal SVT."
+        },
+        {
+          "name": "Amiodarone",
+          "mechanism": "Prolongs action potential and refractory period, affecting multiple ion channels.",
+          "dosing": "Loading dose: 150 mg IV over 10 minutes, followed by 1 mg/min for 6 hours, then 0.5 mg/min.",
+          "sideEffects": "Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity.",
+          "notes": "Used for ventricular tachycardia and atrial fibrillation."
+        },
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist, reducing clot formation.",
+          "dosing": "Initial: 5 mg daily, adjust based on INR (target INR 2-3).",
+          "sideEffects": "Bleeding, skin necrosis, drug interactions.",
+          "notes": "Used for stroke prevention in atrial fibrillation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardioversion",
+          "description": "Delivery of electrical shock to restore normal rhythm.",
+          "indications": "Unstable atrial fibrillation, ventricular tachycardia, or SVT.",
+          "risks": "Arrhythmia recurrence, skin burns, sedation complications."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies by type of arrhythmia; many are manageable with treatment, but some can lead to serious complications like stroke or sudden cardiac death.",
+    "complications": [
+      "Stroke (especially with atrial fibrillation)",
+      "Heart failure",
+      "Sudden cardiac arrest",
+      "Syncope"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize arrhythmias, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to specialists when necessary.",
+    "escalation": "Refer to cardiology for persistent or symptomatic arrhythmias, or if the patient is unstable (e.g., hypotensive, altered mental status).",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially in patients with known arrhythmias. Be aware of anticoagulation risks in patients with atrial fibrillation. Ensure proper patient education regarding symptoms and when to seek help."
+  }
+}

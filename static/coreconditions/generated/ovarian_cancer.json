@@ -1,0 +1,142 @@
+{
+  "id": "ovarian_cancer",
+  "name": "Ovarian cancer?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:14:12.780189",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ovarian cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOvarian cancer is a malignant neoplasm that arises from the ovary, characterized by the uncontrolled growth of abnormal cells. It is often diagnosed at an advanced stage due to vague symptoms.\n\n### Epidemiology\nOvarian cancer is the eighth most common cancer among women worldwide, with an estimated incidence of 6.6 per 100,000 women in the UK. It predominantly affects women over the age of 50, with peak incidence in the 60s and 70s.\n\n### Essential Pathophysiology\nOvarian cancer can arise from different cell types in the ovary, including epithelial cells (most common), germ cells, and stromal cells. Genetic mutations (e.g., BRCA1/2) and environmental factors contribute to tumorigenesis, leading to the formation of malignant tumors that can metastasize to other organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal bloating or swelling\n- Pelvic pain or discomfort\n- Changes in bowel habits (constipation, diarrhea)\n- Urinary urgency or frequency\n- Unexplained weight loss or gain\n- Fatigue\n- Menstrual irregularities\n\n### Key Signs\n- Abdominal mass or ascites on examination\n- Pelvic mass on examination\n- Signs of metastasis (e.g., liver enlargement, lymphadenopathy)\n\n### Atypical Presentations\n- Gastrointestinal symptoms (nausea, vomiting)\n- Back pain\n- Shortness of breath due to pleural effusion\n\n### Red Flags Requiring Immediate Action\n- Family history of ovarian or breast cancer\n- Age over 50 with new onset symptoms\n- Rapidly worsening symptoms\n- Ascites or significant abdominal distension\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Transvaginal ultrasound (TVUS)\n- CA-125 blood test\n\n### Second-line Investigations\n- CT scan of the abdomen and pelvis\n- MRI if further characterization is needed\n\n### Specialist Tests\n- Genetic testing for BRCA mutations\n- Laparoscopy for direct visualization and biopsy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of tissue obtained via biopsy or surgical resection. Elevated CA-125 levels may support the diagnosis but are not definitive.\n\n### Key Differential Diagnoses to Exclude\n- Benign ovarian cysts\n- Endometriosis\n- Pelvic inflammatory disease\n- Uterine fibroids\n- Gastrointestinal malignancies (e.g., colorectal cancer)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to oncology for assessment and management\n- Consideration of palliative care if advanced disease\n\n#### Second-line Treatments\n- Chemotherapy initiation (e.g., carboplatin and paclitaxel)\n\n#### Emergency Procedures\n- Surgical intervention (debulking surgery) if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with imaging and CA-125 monitoring\n\n#### Second-line Treatments\n- Consideration of maintenance therapy (e.g., PARP inhibitors for BRCA mutation carriers)\n\n#### Monitoring Requirements\n- Regular assessment of symptoms and side effects of treatment\n- Routine imaging as indicated\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Carboplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: AUC 5-6 every 3 weeks (adjust based on renal function)\n- **Key Side Effects/Contraindications**: Nausea, vomiting, myelosuppression, nephrotoxicity\n- **When to Use vs. Alternatives**: Monitor renal function and blood counts regularly.\n\n#### Paclitaxel\n- **Mechanism of Action**: Taxane that inhibits cell division by stabilizing microtubules\n- **Typical Dosing Range**: 175 mg/m2 IV over 3 hours every 3 weeks\n- **Key Side Effects/Contraindications**: Myelosuppression, neuropathy, hypersensitivity reactions\n- **When to Use vs. Alternatives**: Pre-medication with steroids and antihistamines may be required.\n\n#### Olaparib\n- **Mechanism of Action**: PARP inhibitor that prevents DNA repair in BRCA-mutated cells\n- **Typical Dosing Range**: 300 mg orally twice daily\n- **Key Side Effects/Contraindications**: Nausea, fatigue, anemia\n- **When to Use vs. Alternatives**: Indicated for maintenance therapy in BRCA mutation carriers.\n\n### Procedures\n\n#### Debulking surgery\n- **What it Involves**: Surgical removal of as much tumor as possible, often including the ovaries, uterus, and surrounding tissues.\n- **Indications**: Stage I-III ovarian cancer, symptomatic relief, and diagnosis confirmation.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding organs, anesthesia complications.\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgical procedure for diagnosis and potential biopsy.\n- **Indications**: To evaluate ovarian masses or ascites.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for ovarian cancer varies significantly based on the stage at diagnosis. The 5-year survival rate is approximately 45% overall, but it can be as high as 90% for stage I disease and much lower for advanced stages.\n\n### Important Complications to Watch For\n- Ascites\n- Bowel obstruction\n- Pleural effusion\n- Metastatic disease to liver, lungs, or peritoneum\n- Chemotherapy-related complications (e.g., myelosuppression, neuropathy)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms and signs of ovarian cancer, performing initial assessments, ordering appropriate investigations, and facilitating referrals to specialists. They should also provide supportive care and education to patients and families.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with red flags or concerning symptoms, escalate to a senior clinician or gynecological oncologist for urgent evaluation and management.\n\n### Key Safety Considerations\nEnsure thorough documentation of symptoms and findings, monitor for side effects of chemotherapy, and maintain clear communication with the oncology team regarding patient status and treatment response.\n",
+  "content": {
+    "overview": {
+      "definition": "Ovarian cancer is a malignant neoplasm that arises from the ovary, characterized by the uncontrolled growth of abnormal cells. It is often diagnosed at an advanced stage due to vague symptoms.",
+      "epidemiology": "Ovarian cancer is the eighth most common cancer among women worldwide, with an estimated incidence of 6.6 per 100,000 women in the UK. It predominantly affects women over the age of 50, with peak incidence in the 60s and 70s.",
+      "pathophysiology": "Ovarian cancer can arise from different cell types in the ovary, including epithelial cells (most common), germ cells, and stromal cells. Genetic mutations (e.g., BRCA1/2) and environmental factors contribute to tumorigenesis, leading to the formation of malignant tumors that can metastasize to other organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal bloating or swelling",
+        "Pelvic pain or discomfort",
+        "Changes in bowel habits (constipation, diarrhea)",
+        "Urinary urgency or frequency",
+        "Unexplained weight loss or gain",
+        "Fatigue",
+        "Menstrual irregularities"
+      ],
+      "signs": [
+        "Abdominal mass or ascites on examination",
+        "Pelvic mass on examination",
+        "Signs of metastasis (e.g., liver enlargement, lymphadenopathy)"
+      ],
+      "atypicalPresentations": [
+        "Gastrointestinal symptoms (nausea, vomiting)",
+        "Back pain",
+        "Shortness of breath due to pleural effusion"
+      ],
+      "redFlags": [
+        "Family history of ovarian or breast cancer",
+        "Age over 50 with new onset symptoms",
+        "Rapidly worsening symptoms",
+        "Ascites or significant abdominal distension"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Transvaginal ultrasound (TVUS)",
+        "CA-125 blood test"
+      ],
+      "secondLine": [
+        "CT scan of the abdomen and pelvis",
+        "MRI if further characterization is needed"
+      ],
+      "specialistTests": [
+        "Genetic testing for BRCA mutations",
+        "Laparoscopy for direct visualization and biopsy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of tissue obtained via biopsy or surgical resection. Elevated CA-125 levels may support the diagnosis but are not definitive.",
+      "differentials": [
+        "Benign ovarian cysts",
+        "Endometriosis",
+        "Pelvic inflammatory disease",
+        "Uterine fibroids",
+        "Gastrointestinal malignancies (e.g., colorectal cancer)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to oncology for assessment and management",
+          "Consideration of palliative care if advanced disease"
+        ],
+        "secondLine": [
+          "Chemotherapy initiation (e.g., carboplatin and paclitaxel)"
+        ],
+        "procedures": [
+          "Surgical intervention (debulking surgery) if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with imaging and CA-125 monitoring"
+        ],
+        "secondLine": [
+          "Consideration of maintenance therapy (e.g., PARP inhibitors for BRCA mutation carriers)"
+        ],
+        "monitoring": [
+          "Regular assessment of symptoms and side effects of treatment",
+          "Routine imaging as indicated"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Carboplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "AUC 5-6 every 3 weeks (adjust based on renal function)",
+          "sideEffects": "Nausea, vomiting, myelosuppression, nephrotoxicity",
+          "notes": "Monitor renal function and blood counts regularly."
+        },
+        {
+          "name": "Paclitaxel",
+          "mechanism": "Taxane that inhibits cell division by stabilizing microtubules",
+          "dosing": "175 mg/m2 IV over 3 hours every 3 weeks",
+          "sideEffects": "Myelosuppression, neuropathy, hypersensitivity reactions",
+          "notes": "Pre-medication with steroids and antihistamines may be required."
+        },
+        {
+          "name": "Olaparib",
+          "mechanism": "PARP inhibitor that prevents DNA repair in BRCA-mutated cells",
+          "dosing": "300 mg orally twice daily",
+          "sideEffects": "Nausea, fatigue, anemia",
+          "notes": "Indicated for maintenance therapy in BRCA mutation carriers."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Debulking surgery",
+          "description": "Surgical removal of as much tumor as possible, often including the ovaries, uterus, and surrounding tissues.",
+          "indications": "Stage I-III ovarian cancer, symptomatic relief, and diagnosis confirmation.",
+          "risks": "Infection, bleeding, damage to surrounding organs, anesthesia complications."
+        },
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgical procedure for diagnosis and potential biopsy.",
+          "indications": "To evaluate ovarian masses or ascites.",
+          "risks": "Infection, bleeding, injury to surrounding organs."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for ovarian cancer varies significantly based on the stage at diagnosis. The 5-year survival rate is approximately 45% overall, but it can be as high as 90% for stage I disease and much lower for advanced stages.",
+    "complications": [
+      "Ascites",
+      "Bowel obstruction",
+      "Pleural effusion",
+      "Metastatic disease to liver, lungs, or peritoneum",
+      "Chemotherapy-related complications (e.g., myelosuppression, neuropathy)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms and signs of ovarian cancer, performing initial assessments, ordering appropriate investigations, and facilitating referrals to specialists. They should also provide supportive care and education to patients and families.",
+    "escalation": "If a patient presents with red flags or concerning symptoms, escalate to a senior clinician or gynecological oncologist for urgent evaluation and management.",
+    "keySafetyConsiderations": "Ensure thorough documentation of symptoms and findings, monitor for side effects of chemotherapy, and maintain clear communication with the oncology team regarding patient status and treatment response."
+  }
+}

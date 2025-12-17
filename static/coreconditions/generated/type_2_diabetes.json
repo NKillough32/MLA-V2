@@ -1,0 +1,156 @@
+{
+  "id": "type_2_diabetes",
+  "name": "Type 2 diabetes",
+  "domains": [
+    "Endocrine",
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Post-operative care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:28:36.775903",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Type 2 diabetes: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nType 2 diabetes mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to hyperglycemia.\n\n### Epidemiology\nT2DM is one of the most common chronic diseases worldwide, affecting approximately 463 million adults globally, with increasing prevalence in children and adolescents due to rising obesity rates.\n\n### Essential Pathophysiology\nIn T2DM, the body's cells become resistant to insulin, a hormone that regulates blood glucose levels. This resistance leads to increased glucose production by the liver and decreased glucose uptake by muscle and fat tissues, resulting in elevated blood glucose levels.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased thirst (polydipsia)\n- Frequent urination (polyuria)\n- Increased hunger (polyphagia)\n- Fatigue\n- Blurred vision\n- Slow-healing sores or frequent infections\n\n### Key Signs\n- Obesity (especially central obesity)\n- Acanthosis nigricans (dark, velvety patches on skin)\n- Hypertension\n- Elevated blood glucose levels\n\n### Atypical Presentations\n- Asymptomatic hyperglycemia discovered incidentally\n- Diabetic foot ulcers\n- Recurrent infections\n\n### Red Flags Requiring Immediate Action\n- New-onset diabetes in patients under 30 years\n- Unexplained weight loss\n- Diabetic ketoacidosis (DKA) symptoms: nausea, vomiting, abdominal pain, altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fasting plasma glucose (FPG)\n- Random plasma glucose\n- HbA1c (glycated hemoglobin)\n\n### Second-line Investigations\n- Oral glucose tolerance test (OGTT)\n- C-peptide levels to assess insulin production\n\n### Specialist Tests\n- Autoantibody tests (to rule out Type 1 diabetes)\n- Lipid profile\n- Renal function tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of T2DM is confirmed with any of the following: HbA1c ≥ 6.5%, FPG ≥ 126 mg/dL (7.0 mmol/L), 2-hour plasma glucose ≥ 200 mg/dL (11.1 mmol/L) during an OGTT, or a random plasma glucose ≥ 200 mg/dL (11.1 mmol/L) in a patient with classic symptoms of hyperglycemia.\n\n### Key Differential Diagnoses to Exclude\n- Type 1 diabetes\n- Maturity-onset diabetes of the young (MODY)\n- Secondary diabetes (e.g., due to Cushing's syndrome, pancreatitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (if DKA or HHS)\n- Insulin therapy (if hyperglycemic crisis)\n\n#### Second-line Treatments\n- Electrolyte management (especially potassium)\n- Consideration of bicarbonate therapy in severe acidosis\n\n#### Emergency Procedures\n- Continuous glucose monitoring (CGM) in acute settings to guide insulin therapy\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise)\n- Metformin as first-line pharmacotherapy\n\n#### Second-line Treatments\n- Sulfonylureas (e.g., glipizide)\n- DPP-4 inhibitors (e.g., sitagliptin)\n- SGLT2 inhibitors (e.g., empagliflozin)\n\n#### Monitoring Requirements\n- Regular HbA1c checks (every 3-6 months)\n- Monitoring for complications (retinopathy, nephropathy, neuropathy)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metformin\n- **Mechanism of Action**: Decreases hepatic glucose production and increases insulin sensitivity.\n- **Typical Dosing Range**: Initial: 500 mg once or twice daily; max: 2000-3000 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: First-line treatment; contraindicated in severe renal impairment.\n\n#### Sulfonylureas (e.g., Glipizide)\n- **Mechanism of Action**: Stimulates insulin secretion from pancreatic beta cells.\n- **Typical Dosing Range**: Initial: 5 mg once daily; max: 40 mg/day.\n- **Key Side Effects/Contraindications**: Hypoglycemia, weight gain.\n- **When to Use vs. Alternatives**: Consider in patients who need additional glycemic control.\n\n#### DPP-4 inhibitors (e.g., Sitagliptin)\n- **Mechanism of Action**: Inhibits DPP-4 enzyme, increasing incretin levels, which increases insulin secretion and decreases glucagon levels.\n- **Typical Dosing Range**: 100 mg once daily.\n- **Key Side Effects/Contraindications**: Pancreatitis, joint pain.\n- **When to Use vs. Alternatives**: Weight neutral, can be used in renal impairment with dose adjustment.\n\n#### SGLT2 inhibitors (e.g., Empagliflozin)\n- **Mechanism of Action**: Inhibits glucose reabsorption in the kidneys, leading to increased glucose excretion.\n- **Typical Dosing Range**: 10 mg once daily; max: 25 mg/day.\n- **Key Side Effects/Contraindications**: Genital infections, dehydration, hypotension.\n- **When to Use vs. Alternatives**: Cardioprotective benefits.\n\n### Procedures\n\n#### Insulin therapy\n- **What it Involves**: Administration of insulin to manage hyperglycemia, especially in acute settings or when oral medications are insufficient.\n- **Indications**: Severe hyperglycemia, DKA, HHS, or when oral agents are not effective.\n- **Key Risks/Complications**: Hypoglycemia, weight gain, injection site reactions.\n\n#### Continuous glucose monitoring (CGM)\n- **What it Involves**: Real-time monitoring of glucose levels to optimize diabetes management.\n- **Indications**: Patients with frequent hypoglycemia, those on intensive insulin therapy.\n- **Key Risks/Complications**: Skin irritation, inaccurate readings if not calibrated.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, individuals with T2DM can lead healthy lives; however, poorly controlled diabetes can lead to significant morbidity and mortality due to complications.\n\n### Important Complications to Watch For\n- Cardiovascular disease\n- Diabetic retinopathy\n- Diabetic nephropathy\n- Diabetic neuropathy\n- Foot ulcers and infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of T2DM, initiate investigations, provide lifestyle advice, and manage acute complications. They should also understand the importance of regular monitoring and patient education.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for patients with poorly controlled diabetes, those with complications, or when there is uncertainty in management.\n\n### Key Safety Considerations\nMonitor for signs of hypoglycemia, especially in patients on insulin or sulfonylureas. Ensure regular follow-up for monitoring complications and adherence to treatment.\n",
+  "content": {
+    "overview": {
+      "definition": "Type 2 diabetes mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to hyperglycemia.",
+      "epidemiology": "T2DM is one of the most common chronic diseases worldwide, affecting approximately 463 million adults globally, with increasing prevalence in children and adolescents due to rising obesity rates.",
+      "pathophysiology": "In T2DM, the body's cells become resistant to insulin, a hormone that regulates blood glucose levels. This resistance leads to increased glucose production by the liver and decreased glucose uptake by muscle and fat tissues, resulting in elevated blood glucose levels."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased thirst (polydipsia)",
+        "Frequent urination (polyuria)",
+        "Increased hunger (polyphagia)",
+        "Fatigue",
+        "Blurred vision",
+        "Slow-healing sores or frequent infections"
+      ],
+      "signs": [
+        "Obesity (especially central obesity)",
+        "Acanthosis nigricans (dark, velvety patches on skin)",
+        "Hypertension",
+        "Elevated blood glucose levels"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hyperglycemia discovered incidentally",
+        "Diabetic foot ulcers",
+        "Recurrent infections"
+      ],
+      "redFlags": [
+        "New-onset diabetes in patients under 30 years",
+        "Unexplained weight loss",
+        "Diabetic ketoacidosis (DKA) symptoms: nausea, vomiting, abdominal pain, altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fasting plasma glucose (FPG)",
+        "Random plasma glucose",
+        "HbA1c (glycated hemoglobin)"
+      ],
+      "secondLine": [
+        "Oral glucose tolerance test (OGTT)",
+        "C-peptide levels to assess insulin production"
+      ],
+      "specialistTests": [
+        "Autoantibody tests (to rule out Type 1 diabetes)",
+        "Lipid profile",
+        "Renal function tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of T2DM is confirmed with any of the following: HbA1c ≥ 6.5%, FPG ≥ 126 mg/dL (7.0 mmol/L), 2-hour plasma glucose ≥ 200 mg/dL (11.1 mmol/L) during an OGTT, or a random plasma glucose ≥ 200 mg/dL (11.1 mmol/L) in a patient with classic symptoms of hyperglycemia.",
+      "differentials": [
+        "Type 1 diabetes",
+        "Maturity-onset diabetes of the young (MODY)",
+        "Secondary diabetes (e.g., due to Cushing's syndrome, pancreatitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (if DKA or HHS)",
+          "Insulin therapy (if hyperglycemic crisis)"
+        ],
+        "secondLine": [
+          "Electrolyte management (especially potassium)",
+          "Consideration of bicarbonate therapy in severe acidosis"
+        ],
+        "procedures": [
+          "Continuous glucose monitoring (CGM) in acute settings to guide insulin therapy"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise)",
+          "Metformin as first-line pharmacotherapy"
+        ],
+        "secondLine": [
+          "Sulfonylureas (e.g., glipizide)",
+          "DPP-4 inhibitors (e.g., sitagliptin)",
+          "SGLT2 inhibitors (e.g., empagliflozin)"
+        ],
+        "monitoring": [
+          "Regular HbA1c checks (every 3-6 months)",
+          "Monitoring for complications (retinopathy, nephropathy, neuropathy)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metformin",
+          "mechanism": "Decreases hepatic glucose production and increases insulin sensitivity.",
+          "dosing": "Initial: 500 mg once or twice daily; max: 2000-3000 mg/day in divided doses.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "First-line treatment; contraindicated in severe renal impairment."
+        },
+        {
+          "name": "Sulfonylureas (e.g., Glipizide)",
+          "mechanism": "Stimulates insulin secretion from pancreatic beta cells.",
+          "dosing": "Initial: 5 mg once daily; max: 40 mg/day.",
+          "sideEffects": "Hypoglycemia, weight gain.",
+          "notes": "Consider in patients who need additional glycemic control."
+        },
+        {
+          "name": "DPP-4 inhibitors (e.g., Sitagliptin)",
+          "mechanism": "Inhibits DPP-4 enzyme, increasing incretin levels, which increases insulin secretion and decreases glucagon levels.",
+          "dosing": "100 mg once daily.",
+          "sideEffects": "Pancreatitis, joint pain.",
+          "notes": "Weight neutral, can be used in renal impairment with dose adjustment."
+        },
+        {
+          "name": "SGLT2 inhibitors (e.g., Empagliflozin)",
+          "mechanism": "Inhibits glucose reabsorption in the kidneys, leading to increased glucose excretion.",
+          "dosing": "10 mg once daily; max: 25 mg/day.",
+          "sideEffects": "Genital infections, dehydration, hypotension.",
+          "notes": "Cardioprotective benefits."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Insulin therapy",
+          "description": "Administration of insulin to manage hyperglycemia, especially in acute settings or when oral medications are insufficient.",
+          "indications": "Severe hyperglycemia, DKA, HHS, or when oral agents are not effective.",
+          "risks": "Hypoglycemia, weight gain, injection site reactions."
+        },
+        {
+          "name": "Continuous glucose monitoring (CGM)",
+          "description": "Real-time monitoring of glucose levels to optimize diabetes management.",
+          "indications": "Patients with frequent hypoglycemia, those on intensive insulin therapy.",
+          "risks": "Skin irritation, inaccurate readings if not calibrated."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, individuals with T2DM can lead healthy lives; however, poorly controlled diabetes can lead to significant morbidity and mortality due to complications.",
+    "complications": [
+      "Cardiovascular disease",
+      "Diabetic retinopathy",
+      "Diabetic nephropathy",
+      "Diabetic neuropathy",
+      "Foot ulcers and infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of T2DM, initiate investigations, provide lifestyle advice, and manage acute complications. They should also understand the importance of regular monitoring and patient education.",
+    "escalation": "Refer to endocrinology for patients with poorly controlled diabetes, those with complications, or when there is uncertainty in management.",
+    "keySafetyConsiderations": "Monitor for signs of hypoglycemia, especially in patients on insulin or sulfonylureas. Ensure regular follow-up for monitoring complications and adherence to treatment."
+  }
+}

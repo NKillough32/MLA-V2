@@ -1,0 +1,105 @@
+{
+  "id": "vasa_praevia",
+  "name": "Vasa praevia",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:49:21.861853",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Vasa praevia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVasa praevia is a condition in pregnancy where fetal blood vessels cross or run near the internal cervical os, which can lead to vessel rupture during labor, resulting in fetal hemorrhage and potential fetal demise.\n\n### Epidemiology\nVasa praevia is rare, occurring in approximately 1 in 2,500 to 1 in 5,000 pregnancies. It is more common in pregnancies with low-lying placenta, multiple gestations, or certain types of assisted reproductive technology.\n\n### Essential Pathophysiology\nIn vasa praevia, the fetal vessels are not protected by the umbilical cord or placenta, making them vulnerable to rupture. This can occur during labor when the membranes rupture, leading to rapid fetal blood loss and hypoxia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless vaginal bleeding during labor or rupture of membranes\n- Fetal heart rate abnormalities (decelerations)\n\n### Key Signs\n- Fetal heart rate monitoring may show variable decelerations or bradycardia\n- Ultrasound may show vessels crossing the cervical os\n\n### Atypical Presentations\n- Bleeding may occur before labor in some cases\n- Fetal distress may be the only sign without prior bleeding\n\n### Red Flags Requiring Immediate Action\n- Any instance of vaginal bleeding in late pregnancy\n- Abnormal fetal heart rate patterns during monitoring\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Transabdominal ultrasound to assess placental location and fetal vessels\n- Color Doppler ultrasound to visualize fetal vessels\n\n### Second-line Investigations\n- Transvaginal ultrasound for better visualization of the cervical os and vessels\n\n### Specialist Tests\n- MRI may be used in complex cases to assess placental and vessel anatomy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily made through ultrasound imaging showing fetal vessels crossing the cervical os, often confirmed by color Doppler studies.\n\n### Key Differential Diagnoses to Exclude\n- Placenta previa\n- Abruptio placentae\n- Vaginal bleeding from other causes (e.g., cervical polyps, trauma)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate delivery via cesarean section if vasa praevia is diagnosed or suspected during labor\n\n#### Second-line Treatments\n- Consideration of corticosteroids for fetal lung maturity if delivery is anticipated before 34 weeks\n\n#### Emergency Procedures\n- Emergency cesarean section is the definitive management to prevent fetal hemorrhage.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Close monitoring with ultrasound in high-risk pregnancies to identify vasa praevia early\n\n#### Second-line Treatments\n- Planning for delivery at a tertiary center with access to neonatal care\n\n#### Monitoring Requirements\n- Regular fetal heart rate monitoring and assessment of fetal growth\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Betamethasone\n- **Mechanism of Action**: Corticosteroid that promotes fetal lung maturity\n- **Typical Dosing Range**: 12 mg IM every 24 hours for 2 doses, given if delivery is anticipated before 34 weeks\n- **Key Side Effects/Contraindications**: Maternal hyperglycemia, increased risk of infection, fetal effects if used long-term\n- **When to Use vs. Alternatives**: Administer if preterm delivery is anticipated to improve neonatal outcomes.\n\n### Procedures\n\n#### Emergency Cesarean Section\n- **What it Involves**: Surgical delivery of the fetus through an incision in the abdominal wall and uterus\n- **Indications**: Confirmed or suspected vasa praevia during labor or with significant fetal distress\n- **Key Risks/Complications**: Infection, hemorrhage, injury to surrounding organs, anesthesia complications\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith timely diagnosis and management, the prognosis for the fetus is good. However, if vasa praevia is undiagnosed and vessels rupture, the risk of fetal demise is high (up to 50-100%).\n\n### Important Complications to Watch For\n- Fetal hemorrhage leading to hypoxia or demise\n- Maternal complications from emergency cesarean section\n- Potential for long-term neurological impairment in survivors due to hypoxia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing signs of vasa praevia, especially in patients with risk factors. They should ensure timely referral to obstetric specialists and assist in monitoring during labor.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to obstetricians if there is any vaginal bleeding in late pregnancy or abnormal fetal heart rate patterns. Ensure that the patient is in a setting where emergency cesarean delivery can be performed if necessary.\n\n### Key Safety Considerations\nAlways assess for risk factors in patients with low-lying placenta or multiple gestations. Maintain a high index of suspicion for vasa praevia in cases of vaginal bleeding or fetal distress, and ensure appropriate imaging is performed.\n",
+  "content": {
+    "overview": {
+      "definition": "Vasa praevia is a condition in pregnancy where fetal blood vessels cross or run near the internal cervical os, which can lead to vessel rupture during labor, resulting in fetal hemorrhage and potential fetal demise.",
+      "epidemiology": "Vasa praevia is rare, occurring in approximately 1 in 2,500 to 1 in 5,000 pregnancies. It is more common in pregnancies with low-lying placenta, multiple gestations, or certain types of assisted reproductive technology.",
+      "pathophysiology": "In vasa praevia, the fetal vessels are not protected by the umbilical cord or placenta, making them vulnerable to rupture. This can occur during labor when the membranes rupture, leading to rapid fetal blood loss and hypoxia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless vaginal bleeding during labor or rupture of membranes",
+        "Fetal heart rate abnormalities (decelerations)"
+      ],
+      "signs": [
+        "Fetal heart rate monitoring may show variable decelerations or bradycardia",
+        "Ultrasound may show vessels crossing the cervical os"
+      ],
+      "atypicalPresentations": [
+        "Bleeding may occur before labor in some cases",
+        "Fetal distress may be the only sign without prior bleeding"
+      ],
+      "redFlags": [
+        "Any instance of vaginal bleeding in late pregnancy",
+        "Abnormal fetal heart rate patterns during monitoring"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Transabdominal ultrasound to assess placental location and fetal vessels",
+        "Color Doppler ultrasound to visualize fetal vessels"
+      ],
+      "secondLine": [
+        "Transvaginal ultrasound for better visualization of the cervical os and vessels"
+      ],
+      "specialistTests": [
+        "MRI may be used in complex cases to assess placental and vessel anatomy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily made through ultrasound imaging showing fetal vessels crossing the cervical os, often confirmed by color Doppler studies.",
+      "differentials": [
+        "Placenta previa",
+        "Abruptio placentae",
+        "Vaginal bleeding from other causes (e.g., cervical polyps, trauma)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate delivery via cesarean section if vasa praevia is diagnosed or suspected during labor"
+        ],
+        "secondLine": [
+          "Consideration of corticosteroids for fetal lung maturity if delivery is anticipated before 34 weeks"
+        ],
+        "procedures": [
+          "Emergency cesarean section is the definitive management to prevent fetal hemorrhage."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Close monitoring with ultrasound in high-risk pregnancies to identify vasa praevia early"
+        ],
+        "secondLine": [
+          "Planning for delivery at a tertiary center with access to neonatal care"
+        ],
+        "monitoring": [
+          "Regular fetal heart rate monitoring and assessment of fetal growth"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Betamethasone",
+          "mechanism": "Corticosteroid that promotes fetal lung maturity",
+          "dosing": "12 mg IM every 24 hours for 2 doses, given if delivery is anticipated before 34 weeks",
+          "sideEffects": "Maternal hyperglycemia, increased risk of infection, fetal effects if used long-term",
+          "notes": "Administer if preterm delivery is anticipated to improve neonatal outcomes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Emergency Cesarean Section",
+          "description": "Surgical delivery of the fetus through an incision in the abdominal wall and uterus",
+          "indications": "Confirmed or suspected vasa praevia during labor or with significant fetal distress",
+          "risks": "Infection, hemorrhage, injury to surrounding organs, anesthesia complications"
+        }
+      ]
+    },
+    "prognosis": "With timely diagnosis and management, the prognosis for the fetus is good. However, if vasa praevia is undiagnosed and vessels rupture, the risk of fetal demise is high (up to 50-100%).",
+    "complications": [
+      "Fetal hemorrhage leading to hypoxia or demise",
+      "Maternal complications from emergency cesarean section",
+      "Potential for long-term neurological impairment in survivors due to hypoxia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing signs of vasa praevia, especially in patients with risk factors. They should ensure timely referral to obstetric specialists and assist in monitoring during labor.",
+    "escalation": "Immediate escalation to obstetricians if there is any vaginal bleeding in late pregnancy or abnormal fetal heart rate patterns. Ensure that the patient is in a setting where emergency cesarean delivery can be performed if necessary.",
+    "keySafetyConsiderations": "Always assess for risk factors in patients with low-lying placenta or multiple gestations. Maintain a high index of suspicion for vasa praevia in cases of vaginal bleeding or fetal distress, and ensure appropriate imaging is performed."
+  }
+}

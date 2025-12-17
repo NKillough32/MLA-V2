@@ -1,0 +1,127 @@
+{
+  "id": "addisons_disease",
+  "name": "Addison?s disease",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:33:28.768571",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Addison?s disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAddison's disease, also known as primary adrenal insufficiency, is a disorder characterized by the inadequate production of steroid hormones (cortisol and aldosterone) from the adrenal glands due to damage or dysfunction of the adrenal cortex.\n\n### Epidemiology\nThe prevalence of Addison's disease is approximately 100-140 cases per million people, with a higher incidence in women and typically presenting between the ages of 30 and 50 years.\n\n### Essential Pathophysiology\nAddison's disease is primarily caused by autoimmune destruction of the adrenal cortex, leading to a deficiency in cortisol and aldosterone. Other causes include infections (e.g., tuberculosis), adrenal hemorrhage, and metastatic disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weight loss\n- Anorexia\n- Nausea and vomiting\n- Abdominal pain\n- Dizziness or lightheadedness (especially on standing)\n- Hyperpigmentation of the skin (especially in sun-exposed areas and pressure points)\n- Salt craving\n\n### Key Signs\n- Hypotension\n- Hyperkalemia\n- Hyponatremia\n- Dehydration\n- Low blood glucose levels\n- Increased skin pigmentation\n\n### Atypical Presentations\n- Acute adrenal crisis (severe hypotension, shock, confusion)\n- Psychiatric symptoms (depression, irritability)\n- Gastrointestinal symptoms (diarrhea, abdominal pain)\n\n### Red Flags Requiring Immediate Action\n- Severe hypotension or shock\n- Altered mental status\n- Severe abdominal pain\n- History of autoimmune disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum cortisol levels (morning sample)\n- ACTH stimulation test (Cosyntropin test)\n\n### Second-line Investigations\n- Electrolyte panel (to check for hyponatremia and hyperkalemia)\n- Adrenal antibodies (21-hydroxylase antibodies)\n- Plasma ACTH levels\n\n### Specialist Tests\n- CT scan of the adrenal glands (to assess for structural abnormalities)\n- MRI of the pituitary gland (to rule out secondary causes)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by low serum cortisol levels with elevated ACTH levels, particularly after an ACTH stimulation test shows inadequate cortisol response.\n\n### Key Differential Diagnoses to Exclude\n- Secondary adrenal insufficiency (pituitary or hypothalamic causes)\n- Congenital adrenal hyperplasia\n- Cushing's syndrome\n- Adrenal tumors\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous hydrocortisone (100 mg bolus, followed by 50 mg every 6 hours)\n- Fluid resuscitation (normal saline)\n- Electrolyte correction (especially hyperkalemia)\n\n#### Second-line Treatments\n- Consider vasopressors if hypotension persists despite fluid resuscitation\n\n#### Emergency Procedures\n- None specific for Addison's disease, but may require monitoring in an intensive care setting for acute adrenal crisis.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral hydrocortisone (15-30 mg/day in divided doses)\n- Fludrocortisone (0.05-0.2 mg/day) for mineralocorticoid replacement\n\n#### Second-line Treatments\n- Adjust hydrocortisone dose based on clinical response and stress situations (e.g., illness, surgery)\n\n#### Monitoring Requirements\n- Regular follow-up for symptoms and side effects of treatment\n- Annual assessment of adrenal function and electrolytes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydrocortisone\n- **Mechanism of Action**: Synthetic glucocorticoid that replaces cortisol deficiency.\n- **Typical Dosing Range**: 15-30 mg/day in divided doses, with higher doses during stress.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, osteoporosis, increased infection risk, mood changes.\n- **When to Use vs. Alternatives**: Patients should be educated on stress dosing during illness or surgery.\n\n#### Fludrocortisone\n- **Mechanism of Action**: Synthetic mineralocorticoid that replaces aldosterone.\n- **Typical Dosing Range**: 0.05-0.2 mg/day, adjusted based on blood pressure and electrolytes.\n- **Key Side Effects/Contraindications**: Hypertension, hypokalemia, edema.\n- **When to Use vs. Alternatives**: Monitor blood pressure and electrolytes regularly.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, patients can lead normal lives, but they require lifelong hormone replacement therapy and education on managing stress doses during illness or surgery.\n\n### Important Complications to Watch For\n- Adrenal crisis (acute adrenal insufficiency)\n- Electrolyte imbalances (hyperkalemia, hyponatremia)\n- Increased risk of infections\n- Osteoporosis due to long-term steroid use\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of Addison's disease, initiate investigations, manage acute adrenal crises, and provide education on chronic management and stress dosing.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for complex cases, especially if there is difficulty in managing electrolyte imbalances or if the patient presents with an adrenal crisis.\n\n### Key Safety Considerations\nEnsure patients are educated about the signs of adrenal crisis and the importance of carrying emergency steroid injections. Monitor for side effects of steroid therapy and adjust doses as necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Addison's disease, also known as primary adrenal insufficiency, is a disorder characterized by the inadequate production of steroid hormones (cortisol and aldosterone) from the adrenal glands due to damage or dysfunction of the adrenal cortex.",
+      "epidemiology": "The prevalence of Addison's disease is approximately 100-140 cases per million people, with a higher incidence in women and typically presenting between the ages of 30 and 50 years.",
+      "pathophysiology": "Addison's disease is primarily caused by autoimmune destruction of the adrenal cortex, leading to a deficiency in cortisol and aldosterone. Other causes include infections (e.g., tuberculosis), adrenal hemorrhage, and metastatic disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weight loss",
+        "Anorexia",
+        "Nausea and vomiting",
+        "Abdominal pain",
+        "Dizziness or lightheadedness (especially on standing)",
+        "Hyperpigmentation of the skin (especially in sun-exposed areas and pressure points)",
+        "Salt craving"
+      ],
+      "signs": [
+        "Hypotension",
+        "Hyperkalemia",
+        "Hyponatremia",
+        "Dehydration",
+        "Low blood glucose levels",
+        "Increased skin pigmentation"
+      ],
+      "atypicalPresentations": [
+        "Acute adrenal crisis (severe hypotension, shock, confusion)",
+        "Psychiatric symptoms (depression, irritability)",
+        "Gastrointestinal symptoms (diarrhea, abdominal pain)"
+      ],
+      "redFlags": [
+        "Severe hypotension or shock",
+        "Altered mental status",
+        "Severe abdominal pain",
+        "History of autoimmune disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum cortisol levels (morning sample)",
+        "ACTH stimulation test (Cosyntropin test)"
+      ],
+      "secondLine": [
+        "Electrolyte panel (to check for hyponatremia and hyperkalemia)",
+        "Adrenal antibodies (21-hydroxylase antibodies)",
+        "Plasma ACTH levels"
+      ],
+      "specialistTests": [
+        "CT scan of the adrenal glands (to assess for structural abnormalities)",
+        "MRI of the pituitary gland (to rule out secondary causes)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by low serum cortisol levels with elevated ACTH levels, particularly after an ACTH stimulation test shows inadequate cortisol response.",
+      "differentials": [
+        "Secondary adrenal insufficiency (pituitary or hypothalamic causes)",
+        "Congenital adrenal hyperplasia",
+        "Cushing's syndrome",
+        "Adrenal tumors"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous hydrocortisone (100 mg bolus, followed by 50 mg every 6 hours)",
+          "Fluid resuscitation (normal saline)",
+          "Electrolyte correction (especially hyperkalemia)"
+        ],
+        "secondLine": [
+          "Consider vasopressors if hypotension persists despite fluid resuscitation"
+        ],
+        "procedures": [
+          "None specific for Addison's disease, but may require monitoring in an intensive care setting for acute adrenal crisis."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral hydrocortisone (15-30 mg/day in divided doses)",
+          "Fludrocortisone (0.05-0.2 mg/day) for mineralocorticoid replacement"
+        ],
+        "secondLine": [
+          "Adjust hydrocortisone dose based on clinical response and stress situations (e.g., illness, surgery)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptoms and side effects of treatment",
+          "Annual assessment of adrenal function and electrolytes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydrocortisone",
+          "mechanism": "Synthetic glucocorticoid that replaces cortisol deficiency.",
+          "dosing": "15-30 mg/day in divided doses, with higher doses during stress.",
+          "sideEffects": "Weight gain, hypertension, osteoporosis, increased infection risk, mood changes.",
+          "notes": "Patients should be educated on stress dosing during illness or surgery."
+        },
+        {
+          "name": "Fludrocortisone",
+          "mechanism": "Synthetic mineralocorticoid that replaces aldosterone.",
+          "dosing": "0.05-0.2 mg/day, adjusted based on blood pressure and electrolytes.",
+          "sideEffects": "Hypertension, hypokalemia, edema.",
+          "notes": "Monitor blood pressure and electrolytes regularly."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "With appropriate treatment, patients can lead normal lives, but they require lifelong hormone replacement therapy and education on managing stress doses during illness or surgery.",
+    "complications": [
+      "Adrenal crisis (acute adrenal insufficiency)",
+      "Electrolyte imbalances (hyperkalemia, hyponatremia)",
+      "Increased risk of infections",
+      "Osteoporosis due to long-term steroid use"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of Addison's disease, initiate investigations, manage acute adrenal crises, and provide education on chronic management and stress dosing.",
+    "escalation": "Refer to endocrinology for complex cases, especially if there is difficulty in managing electrolyte imbalances or if the patient presents with an adrenal crisis.",
+    "keySafetyConsiderations": "Ensure patients are educated about the signs of adrenal crisis and the importance of carrying emergency steroid injections. Monitor for side effects of steroid therapy and adjust doses as necessary."
+  }
+}

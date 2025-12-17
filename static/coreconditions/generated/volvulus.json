@@ -1,0 +1,135 @@
+{
+  "id": "volvulus",
+  "name": "Volvulus",
+  "domains": [
+    "Gastrointestinal Surgery",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:17:08.344528",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Volvulus: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVolvulus is a condition characterized by the twisting of a loop of intestine, which can lead to obstruction and ischemia. It can occur in any part of the gastrointestinal tract but is most commonly seen in the sigmoid colon and the midgut in infants.\n\n### Epidemiology\nVolvulus is more common in infants and young children, particularly those with congenital malformations. In adults, sigmoid volvulus is more prevalent, especially in older individuals with chronic constipation. The incidence varies by age and underlying conditions, with a higher prevalence in developing countries due to dietary factors.\n\n### Essential Pathophysiology\nThe twisting of the intestine leads to obstruction of the lumen, preventing the passage of intestinal contents. This can cause increased intraluminal pressure, leading to ischemia due to compromised blood supply. If not resolved, it can result in necrosis of the affected bowel segment.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often colicky)\n- Nausea and vomiting\n- Abdominal distension\n- Constipation or obstipation\n- Diarrhea (in some cases)\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Abdominal tenderness\n- Guarding or rigidity\n- Bowel sounds may be absent or high-pitched\n\n### Atypical Presentations\n- In infants, may present with bilious vomiting and a 'currant jelly' stool due to intestinal ischemia and necrosis.\n- In elderly patients, may present with chronic abdominal pain and intermittent constipation.\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain that is sudden in onset\n- Signs of peritonitis (e.g., rigidity, rebound tenderness)\n- Persistent vomiting, especially bilious\n- Signs of shock (e.g., tachycardia, hypotension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal X-ray (to look for signs of obstruction)\n- CT abdomen (to confirm diagnosis and assess for ischemia)\n\n### Second-line Investigations\n- Ultrasound (especially in pediatric cases)\n- MRI (rarely used, but can be helpful in specific cases)\n\n### Specialist Tests\n- Contrast enema (can be diagnostic and therapeutic in some cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. Key imaging findings include the 'coffee bean sign' on X-ray or the 'whirl sign' on CT.\n\n### Key Differential Diagnoses to Exclude\n- Intestinal obstruction (due to other causes)\n- Intussusception\n- Mesenteric ischemia\n- Perforated viscus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Nasogastric tube decompression\n- Analgesia\n\n#### Second-line Treatments\n- Endoscopic decompression (for sigmoid volvulus)\n- Surgical intervention (if ischemia or perforation is suspected)\n\n#### Emergency Procedures\n- Laparotomy (to untwist the volvulus and assess bowel viability)\n- Laparoscopic surgery (in selected cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (high fiber diet)\n- Regular bowel habits and hydration\n\n#### Second-line Treatments\n- Surgical intervention (if recurrent volvulus occurs)\n\n#### Monitoring Requirements\n- Regular follow-up for bowel function and signs of recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### IV fluids\n- **Mechanism of Action**: Restores intravascular volume and corrects electrolyte imbalances.\n- **Typical Dosing Range**: Administer according to clinical status and fluid loss.\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances.\n- **When to Use vs. Alternatives**: Monitor vital signs and urine output.\n\n#### Analgesics (e.g., paracetamol, opioids)\n- **Mechanism of Action**: Pain relief.\n- **Typical Dosing Range**: Paracetamol 1g IV/PO every 6 hours; opioids as per protocol.\n- **Key Side Effects/Contraindications**: Constipation, sedation, respiratory depression (with opioids).\n- **When to Use vs. Alternatives**: Use cautiously in patients with bowel obstruction.\n\n### Procedures\n\n#### Laparotomy\n- **What it Involves**: Surgical opening of the abdominal cavity to untwist the volvulus and assess bowel viability.\n- **Indications**: Ischemia, perforation, or failure of conservative management.\n- **Key Risks/Complications**: Infection, bleeding, bowel resection, adhesions.\n\n#### Endoscopic decompression\n- **What it Involves**: Use of an endoscope to decompress a sigmoid volvulus.\n- **Indications**: Acute sigmoid volvulus without signs of ischemia.\n- **Key Risks/Complications**: Perforation, bleeding, incomplete decompression.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for volvulus is generally good if treated promptly. Delayed treatment can lead to significant morbidity and mortality due to bowel necrosis and sepsis.\n\n### Important Complications to Watch For\n- Bowel ischemia and necrosis\n- Perforation\n- Sepsis\n- Short bowel syndrome (if extensive resection is required)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of volvulus, initiate appropriate investigations, provide initial management, and escalate care to surgical teams when necessary.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe abdominal pain, signs of peritonitis, or hemodynamic instability, escalate to surgical teams immediately.\n\n### Key Safety Considerations\nEnsure timely recognition of red flags, monitor for signs of deterioration, and maintain clear communication with the surgical team regarding changes in the patient's condition.\n",
+  "content": {
+    "overview": {
+      "definition": "Volvulus is a condition characterized by the twisting of a loop of intestine, which can lead to obstruction and ischemia. It can occur in any part of the gastrointestinal tract but is most commonly seen in the sigmoid colon and the midgut in infants.",
+      "epidemiology": "Volvulus is more common in infants and young children, particularly those with congenital malformations. In adults, sigmoid volvulus is more prevalent, especially in older individuals with chronic constipation. The incidence varies by age and underlying conditions, with a higher prevalence in developing countries due to dietary factors.",
+      "pathophysiology": "The twisting of the intestine leads to obstruction of the lumen, preventing the passage of intestinal contents. This can cause increased intraluminal pressure, leading to ischemia due to compromised blood supply. If not resolved, it can result in necrosis of the affected bowel segment."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often colicky)",
+        "Nausea and vomiting",
+        "Abdominal distension",
+        "Constipation or obstipation",
+        "Diarrhea (in some cases)"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Abdominal tenderness",
+        "Guarding or rigidity",
+        "Bowel sounds may be absent or high-pitched"
+      ],
+      "atypicalPresentations": [
+        "In infants, may present with bilious vomiting and a 'currant jelly' stool due to intestinal ischemia and necrosis.",
+        "In elderly patients, may present with chronic abdominal pain and intermittent constipation."
+      ],
+      "redFlags": [
+        "Severe abdominal pain that is sudden in onset",
+        "Signs of peritonitis (e.g., rigidity, rebound tenderness)",
+        "Persistent vomiting, especially bilious",
+        "Signs of shock (e.g., tachycardia, hypotension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal X-ray (to look for signs of obstruction)",
+        "CT abdomen (to confirm diagnosis and assess for ischemia)"
+      ],
+      "secondLine": [
+        "Ultrasound (especially in pediatric cases)",
+        "MRI (rarely used, but can be helpful in specific cases)"
+      ],
+      "specialistTests": [
+        "Contrast enema (can be diagnostic and therapeutic in some cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. Key imaging findings include the 'coffee bean sign' on X-ray or the 'whirl sign' on CT.",
+      "differentials": [
+        "Intestinal obstruction (due to other causes)",
+        "Intussusception",
+        "Mesenteric ischemia",
+        "Perforated viscus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Nasogastric tube decompression",
+          "Analgesia"
+        ],
+        "secondLine": [
+          "Endoscopic decompression (for sigmoid volvulus)",
+          "Surgical intervention (if ischemia or perforation is suspected)"
+        ],
+        "procedures": [
+          "Laparotomy (to untwist the volvulus and assess bowel viability)",
+          "Laparoscopic surgery (in selected cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (high fiber diet)",
+          "Regular bowel habits and hydration"
+        ],
+        "secondLine": [
+          "Surgical intervention (if recurrent volvulus occurs)"
+        ],
+        "monitoring": [
+          "Regular follow-up for bowel function and signs of recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "IV fluids",
+          "mechanism": "Restores intravascular volume and corrects electrolyte imbalances.",
+          "dosing": "Administer according to clinical status and fluid loss.",
+          "sideEffects": "Fluid overload, electrolyte imbalances.",
+          "notes": "Monitor vital signs and urine output."
+        },
+        {
+          "name": "Analgesics (e.g., paracetamol, opioids)",
+          "mechanism": "Pain relief.",
+          "dosing": "Paracetamol 1g IV/PO every 6 hours; opioids as per protocol.",
+          "sideEffects": "Constipation, sedation, respiratory depression (with opioids).",
+          "notes": "Use cautiously in patients with bowel obstruction."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparotomy",
+          "description": "Surgical opening of the abdominal cavity to untwist the volvulus and assess bowel viability.",
+          "indications": "Ischemia, perforation, or failure of conservative management.",
+          "risks": "Infection, bleeding, bowel resection, adhesions."
+        },
+        {
+          "name": "Endoscopic decompression",
+          "description": "Use of an endoscope to decompress a sigmoid volvulus.",
+          "indications": "Acute sigmoid volvulus without signs of ischemia.",
+          "risks": "Perforation, bleeding, incomplete decompression."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for volvulus is generally good if treated promptly. Delayed treatment can lead to significant morbidity and mortality due to bowel necrosis and sepsis.",
+    "complications": [
+      "Bowel ischemia and necrosis",
+      "Perforation",
+      "Sepsis",
+      "Short bowel syndrome (if extensive resection is required)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of volvulus, initiate appropriate investigations, provide initial management, and escalate care to surgical teams when necessary.",
+    "escalation": "If a patient presents with severe abdominal pain, signs of peritonitis, or hemodynamic instability, escalate to surgical teams immediately.",
+    "keySafetyConsiderations": "Ensure timely recognition of red flags, monitor for signs of deterioration, and maintain clear communication with the surgical team regarding changes in the patient's condition."
+  }
+}

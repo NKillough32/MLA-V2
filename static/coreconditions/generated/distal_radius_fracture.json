@@ -1,0 +1,126 @@
+{
+  "id": "distal_radius_fracture",
+  "name": "Distal radius fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:29:19.953286",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Distal radius fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA distal radius fracture is a break in the radius bone near the wrist, commonly occurring due to falls or trauma, particularly in older adults and children.\n\n### Epidemiology\nDistal radius fractures are among the most common fractures in adults, particularly in those over 50 years of age, with a higher incidence in women due to osteoporosis. They also frequently occur in children due to falls during sports or play.\n\n### Essential Pathophysiology\nThe distal radius is subjected to significant forces during a fall, especially when the wrist is extended. This can lead to various fracture patterns, including Colles' fracture (dorsally angulated) and Smith's fracture (ventrally angulated).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain at the wrist\n- Swelling around the wrist\n- Deformity of the wrist\n- Limited range of motion\n\n### Key Signs\n- Tenderness over the distal radius\n- Swelling and bruising\n- Visible deformity (dorsal angulation in Colles' fracture)\n- Crepitus on movement\n\n### Atypical Presentations\n- Fracture without significant trauma in elderly patients (may indicate underlying osteoporosis)\n- Fractures in children may present with minimal symptoms\n\n### Red Flags Requiring Immediate Action\n- Neurovascular compromise (numbness, tingling, or weakness in the hand)\n- Open fracture (bone protruding through the skin)\n- Severe deformity or displacement\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the wrist (AP and lateral views)\n\n### Second-line Investigations\n- CT scan if fracture pattern is complex or surgical planning is needed\n\n### Specialist Tests\n- MRI may be used to assess for associated soft tissue injuries or occult fractures\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical examination and confirmed by X-ray findings of a fracture in the distal radius.\n\n### Key Differential Diagnoses to Exclude\n- Scaphoid fracture\n- Wrist sprain\n- Carpal bone fractures\n- Distal ulnar fracture\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immobilization with a splint or cast (if stable)\n- Pain management with NSAIDs\n\n#### Second-line Treatments\n- Reduction (closed or open) if the fracture is displaced\n\n#### Emergency Procedures\n- Closed reduction and casting\n- Open reduction and internal fixation (ORIF) for unstable fractures\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation exercises to restore range of motion and strength\n\n#### Second-line Treatments\n- Surgical intervention if there are complications or non-union\n\n#### Monitoring Requirements\n- Regular follow-up X-rays to assess healing and alignment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider renal function and GI history before prescribing.\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works centrally to reduce pain\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, max 4g/day\n- **Key Side Effects/Contraindications**: Generally well tolerated, risk of liver toxicity in overdose\n- **When to Use vs. Alternatives**: Preferred for mild to moderate pain.\n\n### Procedures\n\n#### Closed reduction and casting\n- **What it Involves**: Realigning the fractured bone fragments without surgery and immobilizing them in a cast.\n- **Indications**: Displaced fractures that can be realigned without surgery.\n- **Key Risks/Complications**: Potential for re-displacement, nerve injury, compartment syndrome.\n\n#### Open reduction and internal fixation (ORIF)\n- **What it Involves**: Surgical procedure to realign and stabilize the fracture using plates and screws.\n- **Indications**: Unstable fractures, intra-articular fractures, or when closed reduction fails.\n- **Key Risks/Complications**: Infection, non-union, nerve or vessel injury, stiffness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost distal radius fractures heal well with appropriate management, but complications such as malunion, non-union, or post-traumatic arthritis can occur, particularly in older adults.\n\n### Important Complications to Watch For\n- Malunion or non-union of the fracture\n- Complex regional pain syndrome (CRPS)\n- Carpal tunnel syndrome due to swelling or hematoma\n- Loss of range of motion in the wrist\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, provide pain management, and refer to orthopaedics for further management if necessary. They should also educate patients on rehabilitation and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedic team for any fractures that are unstable, open, or associated with neurovascular compromise. Escalate care for patients with significant pain not controlled by analgesia or those showing signs of complications.\n\n### Key Safety Considerations\nEnsure neurovascular status is assessed and documented. Monitor for signs of compartment syndrome post-reduction. Educate patients on signs of complications and the importance of follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "A distal radius fracture is a break in the radius bone near the wrist, commonly occurring due to falls or trauma, particularly in older adults and children.",
+      "epidemiology": "Distal radius fractures are among the most common fractures in adults, particularly in those over 50 years of age, with a higher incidence in women due to osteoporosis. They also frequently occur in children due to falls during sports or play.",
+      "pathophysiology": "The distal radius is subjected to significant forces during a fall, especially when the wrist is extended. This can lead to various fracture patterns, including Colles' fracture (dorsally angulated) and Smith's fracture (ventrally angulated)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain at the wrist",
+        "Swelling around the wrist",
+        "Deformity of the wrist",
+        "Limited range of motion"
+      ],
+      "signs": [
+        "Tenderness over the distal radius",
+        "Swelling and bruising",
+        "Visible deformity (dorsal angulation in Colles' fracture)",
+        "Crepitus on movement"
+      ],
+      "atypicalPresentations": [
+        "Fracture without significant trauma in elderly patients (may indicate underlying osteoporosis)",
+        "Fractures in children may present with minimal symptoms"
+      ],
+      "redFlags": [
+        "Neurovascular compromise (numbness, tingling, or weakness in the hand)",
+        "Open fracture (bone protruding through the skin)",
+        "Severe deformity or displacement"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the wrist (AP and lateral views)"
+      ],
+      "secondLine": [
+        "CT scan if fracture pattern is complex or surgical planning is needed"
+      ],
+      "specialistTests": [
+        "MRI may be used to assess for associated soft tissue injuries or occult fractures"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical examination and confirmed by X-ray findings of a fracture in the distal radius.",
+      "differentials": [
+        "Scaphoid fracture",
+        "Wrist sprain",
+        "Carpal bone fractures",
+        "Distal ulnar fracture"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immobilization with a splint or cast (if stable)",
+          "Pain management with NSAIDs"
+        ],
+        "secondLine": [
+          "Reduction (closed or open) if the fracture is displaced"
+        ],
+        "procedures": [
+          "Closed reduction and casting",
+          "Open reduction and internal fixation (ORIF) for unstable fractures"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation exercises to restore range of motion and strength"
+        ],
+        "secondLine": [
+          "Surgical intervention if there are complications or non-union"
+        ],
+        "monitoring": [
+          "Regular follow-up X-rays to assess healing and alignment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider renal function and GI history before prescribing."
+        },
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works centrally to reduce pain",
+          "dosing": "500-1000 mg every 4-6 hours as needed, max 4g/day",
+          "sideEffects": "Generally well tolerated, risk of liver toxicity in overdose",
+          "notes": "Preferred for mild to moderate pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction and casting",
+          "description": "Realigning the fractured bone fragments without surgery and immobilizing them in a cast.",
+          "indications": "Displaced fractures that can be realigned without surgery.",
+          "risks": "Potential for re-displacement, nerve injury, compartment syndrome."
+        },
+        {
+          "name": "Open reduction and internal fixation (ORIF)",
+          "description": "Surgical procedure to realign and stabilize the fracture using plates and screws.",
+          "indications": "Unstable fractures, intra-articular fractures, or when closed reduction fails.",
+          "risks": "Infection, non-union, nerve or vessel injury, stiffness."
+        }
+      ]
+    },
+    "prognosis": "Most distal radius fractures heal well with appropriate management, but complications such as malunion, non-union, or post-traumatic arthritis can occur, particularly in older adults.",
+    "complications": [
+      "Malunion or non-union of the fracture",
+      "Complex regional pain syndrome (CRPS)",
+      "Carpal tunnel syndrome due to swelling or hematoma",
+      "Loss of range of motion in the wrist"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, provide pain management, and refer to orthopaedics for further management if necessary. They should also educate patients on rehabilitation and follow-up care.",
+    "escalation": "Refer to orthopaedic team for any fractures that are unstable, open, or associated with neurovascular compromise. Escalate care for patients with significant pain not controlled by analgesia or those showing signs of complications.",
+    "keySafetyConsiderations": "Ensure neurovascular status is assessed and documented. Monitor for signs of compartment syndrome post-reduction. Educate patients on signs of complications and the importance of follow-up."
+  }
+}

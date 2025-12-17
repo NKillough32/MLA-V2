@@ -1,0 +1,127 @@
+{
+  "id": "hyperlipidaemia",
+  "name": "Hyperlipidaemia",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:37:22.991487",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyperlipidaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyperlipidaemia is a condition characterized by elevated levels of lipids (fats) in the blood, including cholesterol and triglycerides, which can lead to cardiovascular disease and other health issues.\n\n### Epidemiology\nHyperlipidaemia is prevalent worldwide, affecting approximately 30% of adults in developed countries. It is a major risk factor for cardiovascular diseases, including coronary artery disease and stroke.\n\n### Essential Pathophysiology\nHyperlipidaemia results from an imbalance between lipid production and clearance. Factors include genetic predisposition, dietary habits, obesity, diabetes, and sedentary lifestyle. Elevated low-density lipoprotein (LDL) cholesterol and triglycerides contribute to atherosclerosis, leading to cardiovascular complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Often asymptomatic; may present with xanthomas (fatty deposits under the skin) or pancreatitis in severe cases.\n- Chest pain or angina due to coronary artery disease.\n- Fatigue or weakness.\n\n### Key Signs\n- Xanthomas (yellowish skin lesions)\n- Corneal arcus (white or gray ring around the cornea)\n- Signs of cardiovascular disease (e.g., hypertension, heart murmurs)\n\n### Atypical Presentations\n- Acute pancreatitis due to severe hypertriglyceridaemia (usually >1000 mg/dL).\n- Fatty liver disease.\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain (suggestive of pancreatitis).\n- Chest pain or shortness of breath (suggestive of cardiovascular events).\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Lipid profile (total cholesterol, LDL, HDL, triglycerides)\n- Fasting blood glucose (to assess for diabetes)\n\n### Second-line Investigations\n- Liver function tests (to assess for liver disease)\n- Thyroid function tests (to rule out hypothyroidism)\n\n### Specialist Tests\n- Genetic testing for familial hyperlipidaemia\n- Apolipoprotein B levels\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on lipid profile results: Total cholesterol > 5.2 mmol/L, LDL > 3.0 mmol/L, triglycerides > 1.7 mmol/L, HDL < 1.0 mmol/L (men) or < 1.3 mmol/L (women).\n\n### Key Differential Diagnoses to Exclude\n- Hypothyroidism\n- Nephrotic syndrome\n- Cholestasis\n- Diabetes mellitus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate management of acute pancreatitis if present (IV fluids, pain control).\n\n#### Second-line Treatments\n- Consider hospitalization for severe cases.\n\n#### Emergency Procedures\n- Lipid apheresis (in severe cases of familial hyperlipidaemia).\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, weight loss)\n- Statins (e.g., Atorvastatin)\n\n#### Second-line Treatments\n- Ezetimibe (if statins are not sufficient or tolerated)\n- Fibrates (for high triglycerides)\n\n#### Monitoring Requirements\n- Regular lipid profile checks (every 3-6 months)\n- Monitor liver function tests and muscle symptoms with statin therapy.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Atorvastatin\n- **Mechanism of Action**: Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.\n- **Typical Dosing Range**: Initial: 10-20 mg once daily; can be increased to 80 mg based on response.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation, gastrointestinal symptoms.\n- **When to Use vs. Alternatives**: Monitor liver function tests and muscle symptoms.\n\n#### Ezetimibe\n- **Mechanism of Action**: Inhibits intestinal absorption of cholesterol.\n- **Typical Dosing Range**: 10 mg once daily.\n- **Key Side Effects/Contraindications**: Abdominal pain, diarrhea, headache.\n- **When to Use vs. Alternatives**: Often used in combination with statins.\n\n#### Fenofibrate\n- **Mechanism of Action**: Reduces triglyceride levels and increases HDL cholesterol.\n- **Typical Dosing Range**: 145 mg once daily.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation, gastrointestinal symptoms.\n- **When to Use vs. Alternatives**: Monitor renal function.\n\n### Procedures\n\n#### Lipid apheresis\n- **What it Involves**: A procedure that filters the blood to remove LDL cholesterol.\n- **Indications**: Severe familial hyperlipidaemia or refractory cases not responding to medical therapy.\n- **Key Risks/Complications**: Infection, bleeding, hypotension, allergic reactions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, including lifestyle changes and pharmacotherapy, patients can significantly reduce their cardiovascular risk. However, untreated hyperlipidaemia can lead to serious complications such as heart attack and stroke.\n\n### Important Complications to Watch For\n- Atherosclerosis leading to coronary artery disease.\n- Acute pancreatitis in cases of severe hypertriglyceridaemia.\n- Peripheral vascular disease.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, educate patients on lifestyle modifications, and initiate treatment under supervision. They should also monitor for complications and adjust management as necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if: 1) Lipid levels remain uncontrolled despite treatment, 2) Patient has a family history of premature cardiovascular disease, 3) Severe side effects from medications occur.\n\n### Key Safety Considerations\nEnsure regular monitoring of liver function tests and muscle symptoms in patients on statins. Educate patients on recognizing symptoms of pancreatitis and cardiovascular events.\n",
+  "content": {
+    "overview": {
+      "definition": "Hyperlipidaemia is a condition characterized by elevated levels of lipids (fats) in the blood, including cholesterol and triglycerides, which can lead to cardiovascular disease and other health issues.",
+      "epidemiology": "Hyperlipidaemia is prevalent worldwide, affecting approximately 30% of adults in developed countries. It is a major risk factor for cardiovascular diseases, including coronary artery disease and stroke.",
+      "pathophysiology": "Hyperlipidaemia results from an imbalance between lipid production and clearance. Factors include genetic predisposition, dietary habits, obesity, diabetes, and sedentary lifestyle. Elevated low-density lipoprotein (LDL) cholesterol and triglycerides contribute to atherosclerosis, leading to cardiovascular complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Often asymptomatic; may present with xanthomas (fatty deposits under the skin) or pancreatitis in severe cases.",
+        "Chest pain or angina due to coronary artery disease.",
+        "Fatigue or weakness."
+      ],
+      "signs": [
+        "Xanthomas (yellowish skin lesions)",
+        "Corneal arcus (white or gray ring around the cornea)",
+        "Signs of cardiovascular disease (e.g., hypertension, heart murmurs)"
+      ],
+      "atypicalPresentations": [
+        "Acute pancreatitis due to severe hypertriglyceridaemia (usually >1000 mg/dL).",
+        "Fatty liver disease."
+      ],
+      "redFlags": [
+        "Severe abdominal pain (suggestive of pancreatitis).",
+        "Chest pain or shortness of breath (suggestive of cardiovascular events)."
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Lipid profile (total cholesterol, LDL, HDL, triglycerides)",
+        "Fasting blood glucose (to assess for diabetes)"
+      ],
+      "secondLine": [
+        "Liver function tests (to assess for liver disease)",
+        "Thyroid function tests (to rule out hypothyroidism)"
+      ],
+      "specialistTests": [
+        "Genetic testing for familial hyperlipidaemia",
+        "Apolipoprotein B levels"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on lipid profile results: Total cholesterol > 5.2 mmol/L, LDL > 3.0 mmol/L, triglycerides > 1.7 mmol/L, HDL < 1.0 mmol/L (men) or < 1.3 mmol/L (women).",
+      "differentials": [
+        "Hypothyroidism",
+        "Nephrotic syndrome",
+        "Cholestasis",
+        "Diabetes mellitus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate management of acute pancreatitis if present (IV fluids, pain control)."
+        ],
+        "secondLine": [
+          "Consider hospitalization for severe cases."
+        ],
+        "procedures": [
+          "Lipid apheresis (in severe cases of familial hyperlipidaemia)."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, weight loss)",
+          "Statins (e.g., Atorvastatin)"
+        ],
+        "secondLine": [
+          "Ezetimibe (if statins are not sufficient or tolerated)",
+          "Fibrates (for high triglycerides)"
+        ],
+        "monitoring": [
+          "Regular lipid profile checks (every 3-6 months)",
+          "Monitor liver function tests and muscle symptoms with statin therapy."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Atorvastatin",
+          "mechanism": "Inhibits HMG-CoA reductase, reducing cholesterol synthesis in the liver.",
+          "dosing": "Initial: 10-20 mg once daily; can be increased to 80 mg based on response.",
+          "sideEffects": "Myopathy, liver enzyme elevation, gastrointestinal symptoms.",
+          "notes": "Monitor liver function tests and muscle symptoms."
+        },
+        {
+          "name": "Ezetimibe",
+          "mechanism": "Inhibits intestinal absorption of cholesterol.",
+          "dosing": "10 mg once daily.",
+          "sideEffects": "Abdominal pain, diarrhea, headache.",
+          "notes": "Often used in combination with statins."
+        },
+        {
+          "name": "Fenofibrate",
+          "mechanism": "Reduces triglyceride levels and increases HDL cholesterol.",
+          "dosing": "145 mg once daily.",
+          "sideEffects": "Myopathy, liver enzyme elevation, gastrointestinal symptoms.",
+          "notes": "Monitor renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lipid apheresis",
+          "description": "A procedure that filters the blood to remove LDL cholesterol.",
+          "indications": "Severe familial hyperlipidaemia or refractory cases not responding to medical therapy.",
+          "risks": "Infection, bleeding, hypotension, allergic reactions."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, including lifestyle changes and pharmacotherapy, patients can significantly reduce their cardiovascular risk. However, untreated hyperlipidaemia can lead to serious complications such as heart attack and stroke.",
+    "complications": [
+      "Atherosclerosis leading to coronary artery disease.",
+      "Acute pancreatitis in cases of severe hypertriglyceridaemia.",
+      "Peripheral vascular disease."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, educate patients on lifestyle modifications, and initiate treatment under supervision. They should also monitor for complications and adjust management as necessary.",
+    "escalation": "Refer to a specialist if: 1) Lipid levels remain uncontrolled despite treatment, 2) Patient has a family history of premature cardiovascular disease, 3) Severe side effects from medications occur.",
+    "keySafetyConsiderations": "Ensure regular monitoring of liver function tests and muscle symptoms in patients on statins. Educate patients on recognizing symptoms of pancreatitis and cardiovascular events."
+  }
+}

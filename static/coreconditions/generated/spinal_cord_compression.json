@@ -1,0 +1,130 @@
+{
+  "id": "spinal_cord_compression",
+  "name": "Spinal cord compression",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:15:29.865424",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Spinal cord compression: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSpinal cord compression (SCC) is a clinical condition characterized by the compression of the spinal cord due to various causes, leading to neurological deficits and potential loss of function.\n\n### Epidemiology\nSCC is most commonly seen in patients with malignancies, particularly metastatic cancer, with an incidence of approximately 5-10% in cancer patients. It can also occur due to trauma, degenerative diseases, or infections.\n\n### Essential Pathophysiology\nSCC occurs when there is pressure on the spinal cord, which can result from a tumor, herniated disc, or bony metastases. This pressure disrupts normal neural function, leading to ischemia, inflammation, and potential irreversible damage to the spinal cord.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Back pain\n- Weakness in limbs\n- Sensory changes (numbness, tingling)\n- Bowel and bladder dysfunction\n- Gait disturbances\n\n### Key Signs\n- Motor weakness on examination\n- Reduced reflexes\n- Sensory loss in a dermatomal pattern\n- Positive straight leg raise test (if lumbar)\n- Spinal tenderness on palpation\n\n### Atypical Presentations\n- Sudden onset of symptoms in a previously asymptomatic patient\n- Symptoms primarily affecting bowel and bladder function without significant back pain\n\n### Red Flags Requiring Immediate Action\n- History of cancer\n- Recent trauma\n- Rapidly progressive neurological deficits\n- Severe back pain unresponsive to analgesia\n- Fever or signs of infection\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- MRI of the spine (preferred imaging modality)\n- CT scan of the spine (if MRI unavailable)\n\n### Second-line Investigations\n- X-rays of the spine (to assess for bony lesions)\n- Bone scan (to evaluate for metastases)\n\n### Specialist Tests\n- Lumbar puncture (if infection or malignancy is suspected)\n- Electromyography (EMG) to assess nerve function\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings (MRI showing compression), and exclusion of other conditions.\n\n### Key Differential Diagnoses to Exclude\n- Herniated disc\n- Spinal stenosis\n- Multiple sclerosis\n- Transverse myelitis\n- Infectious processes (e.g., abscess)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids (e.g., dexamethasone 10 mg IV bolus, then 4 mg IV every 6 hours)\n- Pain management (NSAIDs, opioids)\n\n#### Second-line Treatments\n- Surgical decompression (if indicated)\n- Radiation therapy (for malignancy-related compression)\n\n#### Emergency Procedures\n- Surgical decompression (laminectomy, tumor resection)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation and physiotherapy\n- Long-term pain management strategies\n\n#### Second-line Treatments\n- Consideration of palliative care for advanced malignancy\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- Monitoring for complications (e.g., pressure sores, urinary retention)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and edema around the spinal cord.\n- **Typical Dosing Range**: Initial: 10 mg IV, then 4 mg IV every 6 hours; taper as clinically indicated.\n- **Key Side Effects/Contraindications**: Increased blood sugar, gastrointestinal bleeding, infection risk, mood changes.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in long-term use.\n\n#### Opioids\n- **Mechanism of Action**: Analgesics that bind to opioid receptors to relieve pain.\n- **Typical Dosing Range**: Individualized based on pain severity; start low and titrate up.\n- **Key Side Effects/Contraindications**: Constipation, sedation, respiratory depression, dependence.\n- **When to Use vs. Alternatives**: Consider bowel regimen to prevent constipation.\n\n### Procedures\n\n#### Surgical decompression\n- **What it Involves**: Surgical intervention to relieve pressure on the spinal cord, often through laminectomy or tumor resection.\n- **Indications**: Severe neurological deficits, progressive symptoms, or significant compression on imaging.\n- **Key Risks/Complications**: Infection, bleeding, neurological deterioration, cerebrospinal fluid leak.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of spinal cord compression depends on the underlying cause, the duration of symptoms before treatment, and the extent of neurological recovery. Early intervention often leads to better outcomes.\n\n### Important Complications to Watch For\n- Permanent neurological deficits\n- Bowel and bladder dysfunction\n- Pressure ulcers\n- Increased risk of falls and fractures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough neurological examinations, recognize red flags, initiate imaging studies, and manage acute symptoms while ensuring timely referral to specialists.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there are rapid changes in neurological status, severe pain unresponsive to treatment, or if there is suspicion of malignancy.\n\n### Key Safety Considerations\nEnsure timely imaging and intervention to prevent irreversible damage. Monitor for signs of deterioration and manage pain effectively.\n",
+  "content": {
+    "overview": {
+      "definition": "Spinal cord compression (SCC) is a clinical condition characterized by the compression of the spinal cord due to various causes, leading to neurological deficits and potential loss of function.",
+      "epidemiology": "SCC is most commonly seen in patients with malignancies, particularly metastatic cancer, with an incidence of approximately 5-10% in cancer patients. It can also occur due to trauma, degenerative diseases, or infections.",
+      "pathophysiology": "SCC occurs when there is pressure on the spinal cord, which can result from a tumor, herniated disc, or bony metastases. This pressure disrupts normal neural function, leading to ischemia, inflammation, and potential irreversible damage to the spinal cord."
+    },
+    "recognition": {
+      "symptoms": [
+        "Back pain",
+        "Weakness in limbs",
+        "Sensory changes (numbness, tingling)",
+        "Bowel and bladder dysfunction",
+        "Gait disturbances"
+      ],
+      "signs": [
+        "Motor weakness on examination",
+        "Reduced reflexes",
+        "Sensory loss in a dermatomal pattern",
+        "Positive straight leg raise test (if lumbar)",
+        "Spinal tenderness on palpation"
+      ],
+      "atypicalPresentations": [
+        "Sudden onset of symptoms in a previously asymptomatic patient",
+        "Symptoms primarily affecting bowel and bladder function without significant back pain"
+      ],
+      "redFlags": [
+        "History of cancer",
+        "Recent trauma",
+        "Rapidly progressive neurological deficits",
+        "Severe back pain unresponsive to analgesia",
+        "Fever or signs of infection"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "MRI of the spine (preferred imaging modality)",
+        "CT scan of the spine (if MRI unavailable)"
+      ],
+      "secondLine": [
+        "X-rays of the spine (to assess for bony lesions)",
+        "Bone scan (to evaluate for metastases)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture (if infection or malignancy is suspected)",
+        "Electromyography (EMG) to assess nerve function"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings (MRI showing compression), and exclusion of other conditions.",
+      "differentials": [
+        "Herniated disc",
+        "Spinal stenosis",
+        "Multiple sclerosis",
+        "Transverse myelitis",
+        "Infectious processes (e.g., abscess)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids (e.g., dexamethasone 10 mg IV bolus, then 4 mg IV every 6 hours)",
+          "Pain management (NSAIDs, opioids)"
+        ],
+        "secondLine": [
+          "Surgical decompression (if indicated)",
+          "Radiation therapy (for malignancy-related compression)"
+        ],
+        "procedures": [
+          "Surgical decompression (laminectomy, tumor resection)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation and physiotherapy",
+          "Long-term pain management strategies"
+        ],
+        "secondLine": [
+          "Consideration of palliative care for advanced malignancy"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "Monitoring for complications (e.g., pressure sores, urinary retention)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and edema around the spinal cord.",
+          "dosing": "Initial: 10 mg IV, then 4 mg IV every 6 hours; taper as clinically indicated.",
+          "sideEffects": "Increased blood sugar, gastrointestinal bleeding, infection risk, mood changes.",
+          "notes": "Monitor for side effects, especially in long-term use."
+        },
+        {
+          "name": "Opioids",
+          "mechanism": "Analgesics that bind to opioid receptors to relieve pain.",
+          "dosing": "Individualized based on pain severity; start low and titrate up.",
+          "sideEffects": "Constipation, sedation, respiratory depression, dependence.",
+          "notes": "Consider bowel regimen to prevent constipation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical decompression",
+          "description": "Surgical intervention to relieve pressure on the spinal cord, often through laminectomy or tumor resection.",
+          "indications": "Severe neurological deficits, progressive symptoms, or significant compression on imaging.",
+          "risks": "Infection, bleeding, neurological deterioration, cerebrospinal fluid leak."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of spinal cord compression depends on the underlying cause, the duration of symptoms before treatment, and the extent of neurological recovery. Early intervention often leads to better outcomes.",
+    "complications": [
+      "Permanent neurological deficits",
+      "Bowel and bladder dysfunction",
+      "Pressure ulcers",
+      "Increased risk of falls and fractures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough neurological examinations, recognize red flags, initiate imaging studies, and manage acute symptoms while ensuring timely referral to specialists.",
+    "escalation": "Escalate care to a senior clinician if there are rapid changes in neurological status, severe pain unresponsive to treatment, or if there is suspicion of malignancy.",
+    "keySafetyConsiderations": "Ensure timely imaging and intervention to prevent irreversible damage. Monitor for signs of deterioration and manage pain effectively."
+  }
+}

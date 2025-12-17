@@ -1,0 +1,149 @@
+{
+  "id": "depression",
+  "name": "Depression",
+  "domains": [
+    "Palliative Care",
+    "Psychiatry",
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T20:59:26.255379",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Depression: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDepression is a common mental health disorder characterized by persistent feelings of sadness, loss of interest or pleasure, and a range of emotional and physical problems that can affect daily functioning.\n\n### Epidemiology\nDepression affects approximately 1 in 6 people at some point in their lives. It is more prevalent in women than men and can occur at any age, with a peak onset in late adolescence to early adulthood.\n\n### Essential Pathophysiology\nThe pathophysiology of depression is complex and involves a combination of genetic, biological, environmental, and psychological factors. Neurotransmitter imbalances (particularly serotonin, norepinephrine, and dopamine), neuroendocrine dysregulation, and neuroinflammation are key contributors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent sadness or low mood\n- Loss of interest or pleasure in activities\n- Fatigue or low energy\n- Feelings of worthlessness or excessive guilt\n- Difficulty concentrating or making decisions\n- Sleep disturbances (insomnia or hypersomnia)\n- Changes in appetite or weight\n- Psychomotor agitation or retardation\n- Recurrent thoughts of death or suicide\n\n### Key Signs\n- Poor eye contact\n- Flat affect or emotional blunting\n- Psychomotor agitation or retardation\n- Neglect of personal hygiene\n- Social withdrawal\n- Changes in speech patterns (slowed or pressured speech)\n\n### Atypical Presentations\n- Irritability or anger instead of sadness\n- Somatic complaints (e.g., chronic pain, gastrointestinal issues)\n- Cognitive impairment or memory issues\n- Substance abuse as a coping mechanism\n\n### Red Flags Requiring Immediate Action\n- Suicidal ideation or plans\n- Severe functional impairment\n- Psychotic symptoms (delusions or hallucinations)\n- Recent significant life changes or stressors\n- History of previous suicide attempts\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental status examination\n- Patient Health Questionnaire-9 (PHQ-9)\n- Beck Depression Inventory (BDI)\n\n### Second-line Investigations\n- General health screening (e.g., thyroid function tests, vitamin D levels)\n- Screening for substance use disorders\n\n### Specialist Tests\n- Referral for psychiatric evaluation if severe or complex cases\n- Neuroimaging (e.g., MRI) if neurological symptoms are present\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the DSM-5 criteria, which require at least five symptoms to be present for a minimum of two weeks, including either depressed mood or loss of interest/pleasure.\n\n### Key Differential Diagnoses to Exclude\n- Bipolar disorder\n- Generalized anxiety disorder\n- Adjustment disorder\n- Post-traumatic stress disorder (PTSD)\n- Hypothyroidism\n- Substance-induced mood disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Cognitive Behavioral Therapy (CBT)\n- Antidepressants (SSRIs like fluoxetine or sertraline)\n\n#### Second-line Treatments\n- Increased intensity of psychotherapy\n- Switching to a different class of antidepressants (e.g., SNRIs)\n\n#### Emergency Procedures\n- Electroconvulsive therapy (ECT) for severe cases or treatment-resistant depression. Indications include severe depression with suicidal ideation, catatonia, or when rapid response is needed. Risks include memory loss and confusion.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term psychotherapy (CBT, interpersonal therapy)\n- Continuation of antidepressant therapy\n\n#### Second-line Treatments\n- Augmentation strategies (e.g., adding atypical antipsychotics or mood stabilizers)\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess treatment response and side effects\n- Monitoring for suicidal ideation and functional improvement\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose: 20 mg daily; may increase to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, weight gain.\n- **When to Use vs. Alternatives**: Considered first-line treatment for depression.\n\n#### Sertraline\n- **Mechanism of Action**: SSRI that enhances serotonin activity in the synaptic cleft.\n- **Typical Dosing Range**: Starting dose: 50 mg daily; may increase to 200 mg based on response.\n- **Key Side Effects/Contraindications**: Diarrhea, insomnia, sexual dysfunction, dry mouth.\n- **When to Use vs. Alternatives**: Effective for both depression and anxiety disorders.\n\n#### Venlafaxine\n- **Mechanism of Action**: Serotonin-norepinephrine reuptake inhibitor (SNRI) that increases serotonin and norepinephrine levels.\n- **Typical Dosing Range**: Starting dose: 75 mg daily; may increase to 375 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, hypertension, sexual dysfunction.\n- **When to Use vs. Alternatives**: Considered if SSRIs are ineffective.\n\n### Procedures\n\n#### Electroconvulsive Therapy (ECT)\n- **What it Involves**: A procedure that involves sending small electric currents through the brain to trigger a brief seizure, which can provide relief from severe depression.\n- **Indications**: Severe major depression, treatment-resistant depression, or when rapid response is needed.\n- **Key Risks/Complications**: Memory loss, confusion, physical side effects such as headache or muscle soreness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many individuals with depression can achieve significant improvement in symptoms and quality of life. However, some may experience recurrent episodes throughout their lives.\n\n### Important Complications to Watch For\n- Increased risk of suicide\n- Comorbid anxiety disorders\n- Substance abuse\n- Chronic health conditions (e.g., cardiovascular disease)\n- Impaired social and occupational functioning\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of depression, conduct initial assessments, initiate treatment, and refer to mental health services as needed. They should also monitor patients for treatment response and side effects.\n\n### When to Escalate to Senior/Specialist\nRefer to a psychiatrist if there is severe depression, suicidal ideation, or if the patient does not respond to initial treatment after 6-8 weeks.\n\n### Key Safety Considerations\nAlways assess for suicidal ideation and risk factors. Monitor for side effects of medications, especially in the initial treatment phase. Ensure a supportive environment and consider involving family or caregivers in the management plan.\n",
+  "content": {
+    "overview": {
+      "definition": "Depression is a common mental health disorder characterized by persistent feelings of sadness, loss of interest or pleasure, and a range of emotional and physical problems that can affect daily functioning.",
+      "epidemiology": "Depression affects approximately 1 in 6 people at some point in their lives. It is more prevalent in women than men and can occur at any age, with a peak onset in late adolescence to early adulthood.",
+      "pathophysiology": "The pathophysiology of depression is complex and involves a combination of genetic, biological, environmental, and psychological factors. Neurotransmitter imbalances (particularly serotonin, norepinephrine, and dopamine), neuroendocrine dysregulation, and neuroinflammation are key contributors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent sadness or low mood",
+        "Loss of interest or pleasure in activities",
+        "Fatigue or low energy",
+        "Feelings of worthlessness or excessive guilt",
+        "Difficulty concentrating or making decisions",
+        "Sleep disturbances (insomnia or hypersomnia)",
+        "Changes in appetite or weight",
+        "Psychomotor agitation or retardation",
+        "Recurrent thoughts of death or suicide"
+      ],
+      "signs": [
+        "Poor eye contact",
+        "Flat affect or emotional blunting",
+        "Psychomotor agitation or retardation",
+        "Neglect of personal hygiene",
+        "Social withdrawal",
+        "Changes in speech patterns (slowed or pressured speech)"
+      ],
+      "atypicalPresentations": [
+        "Irritability or anger instead of sadness",
+        "Somatic complaints (e.g., chronic pain, gastrointestinal issues)",
+        "Cognitive impairment or memory issues",
+        "Substance abuse as a coping mechanism"
+      ],
+      "redFlags": [
+        "Suicidal ideation or plans",
+        "Severe functional impairment",
+        "Psychotic symptoms (delusions or hallucinations)",
+        "Recent significant life changes or stressors",
+        "History of previous suicide attempts"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental status examination",
+        "Patient Health Questionnaire-9 (PHQ-9)",
+        "Beck Depression Inventory (BDI)"
+      ],
+      "secondLine": [
+        "General health screening (e.g., thyroid function tests, vitamin D levels)",
+        "Screening for substance use disorders"
+      ],
+      "specialistTests": [
+        "Referral for psychiatric evaluation if severe or complex cases",
+        "Neuroimaging (e.g., MRI) if neurological symptoms are present"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the DSM-5 criteria, which require at least five symptoms to be present for a minimum of two weeks, including either depressed mood or loss of interest/pleasure.",
+      "differentials": [
+        "Bipolar disorder",
+        "Generalized anxiety disorder",
+        "Adjustment disorder",
+        "Post-traumatic stress disorder (PTSD)",
+        "Hypothyroidism",
+        "Substance-induced mood disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Cognitive Behavioral Therapy (CBT)",
+          "Antidepressants (SSRIs like fluoxetine or sertraline)"
+        ],
+        "secondLine": [
+          "Increased intensity of psychotherapy",
+          "Switching to a different class of antidepressants (e.g., SNRIs)"
+        ],
+        "procedures": [
+          "Electroconvulsive therapy (ECT) for severe cases or treatment-resistant depression. Indications include severe depression with suicidal ideation, catatonia, or when rapid response is needed. Risks include memory loss and confusion."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term psychotherapy (CBT, interpersonal therapy)",
+          "Continuation of antidepressant therapy"
+        ],
+        "secondLine": [
+          "Augmentation strategies (e.g., adding atypical antipsychotics or mood stabilizers)"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess treatment response and side effects",
+          "Monitoring for suicidal ideation and functional improvement"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Starting dose: 20 mg daily; may increase to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, weight gain.",
+          "notes": "Considered first-line treatment for depression."
+        },
+        {
+          "name": "Sertraline",
+          "mechanism": "SSRI that enhances serotonin activity in the synaptic cleft.",
+          "dosing": "Starting dose: 50 mg daily; may increase to 200 mg based on response.",
+          "sideEffects": "Diarrhea, insomnia, sexual dysfunction, dry mouth.",
+          "notes": "Effective for both depression and anxiety disorders."
+        },
+        {
+          "name": "Venlafaxine",
+          "mechanism": "Serotonin-norepinephrine reuptake inhibitor (SNRI) that increases serotonin and norepinephrine levels.",
+          "dosing": "Starting dose: 75 mg daily; may increase to 375 mg based on response.",
+          "sideEffects": "Nausea, hypertension, sexual dysfunction.",
+          "notes": "Considered if SSRIs are ineffective."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electroconvulsive Therapy (ECT)",
+          "description": "A procedure that involves sending small electric currents through the brain to trigger a brief seizure, which can provide relief from severe depression.",
+          "indications": "Severe major depression, treatment-resistant depression, or when rapid response is needed.",
+          "risks": "Memory loss, confusion, physical side effects such as headache or muscle soreness."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many individuals with depression can achieve significant improvement in symptoms and quality of life. However, some may experience recurrent episodes throughout their lives.",
+    "complications": [
+      "Increased risk of suicide",
+      "Comorbid anxiety disorders",
+      "Substance abuse",
+      "Chronic health conditions (e.g., cardiovascular disease)",
+      "Impaired social and occupational functioning"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of depression, conduct initial assessments, initiate treatment, and refer to mental health services as needed. They should also monitor patients for treatment response and side effects.",
+    "escalation": "Refer to a psychiatrist if there is severe depression, suicidal ideation, or if the patient does not respond to initial treatment after 6-8 weeks.",
+    "keySafetyConsiderations": "Always assess for suicidal ideation and risk factors. Monitor for side effects of medications, especially in the initial treatment phase. Ensure a supportive environment and consider involving family or caregivers in the management plan."
+  }
+}

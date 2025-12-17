@@ -1,0 +1,137 @@
+{
+  "id": "dysfunctional_uterine_bleeding",
+  "name": "Dysfunctional uterine bleeding",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:51:44.737241",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Dysfunctional uterine bleeding: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDysfunctional uterine bleeding (DUB) is defined as abnormal uterine bleeding that is not attributable to any identifiable structural or systemic pathology. It is often related to hormonal imbalances affecting the menstrual cycle.\n\n### Epidemiology\nDUB is a common condition affecting women of reproductive age, with prevalence rates estimated between 10-30%. It is a leading cause of gynecological consultations and can significantly impact quality of life.\n\n### Essential Pathophysiology\nDUB is primarily caused by anovulation, leading to unopposed estrogen stimulation of the endometrium. This results in irregular shedding of the endometrial lining, causing abnormal bleeding patterns. Other factors may include hormonal imbalances, stress, and lifestyle factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Irregular menstrual cycles\n- Heavy menstrual bleeding (menorrhagia)\n- Prolonged menstrual bleeding\n- Intermenstrual bleeding (spotting)\n- Amenorrhea (absence of menstruation)\n\n### Key Signs\n- Pallor (in cases of significant blood loss)\n- Tachycardia (due to anemia)\n- Hypotension (in severe cases)\n\n### Atypical Presentations\n- Bleeding after menopause\n- Bleeding associated with significant pain\n- Bleeding in adolescents\n\n### Red Flags Requiring Immediate Action\n- Severe or sudden onset of bleeding\n- Bleeding associated with severe pain\n- Signs of anemia (fatigue, pallor, tachycardia)\n- Postmenopausal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC) to assess for anemia\n- Pregnancy test (urine or serum)\n- Pelvic ultrasound (transvaginal if possible)\n\n### Second-line Investigations\n- Endometrial biopsy (if indicated)\n- Coagulation profile (if bleeding disorder suspected)\n- Thyroid function tests (if hormonal imbalance suspected)\n\n### Specialist Tests\n- Hysteroscopy (for direct visualization of the uterine cavity)\n- MRI pelvis (if structural abnormalities are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of DUB is made when abnormal uterine bleeding occurs in the absence of any identifiable structural or systemic cause, following a thorough history, physical examination, and appropriate investigations.\n\n### Key Differential Diagnoses to Exclude\n- Uterine fibroids\n- Endometrial polyps\n- Endometrial hyperplasia\n- Malignancy (endometrial cancer)\n- Coagulation disorders\n- Thyroid disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids (if hypovolemic)\n- Tranexamic acid (to reduce bleeding)\n- Hormonal therapy (e.g., combined oral contraceptives)\n\n#### Second-line Treatments\n- D&C (dilatation and curettage) for severe cases\n\n#### Emergency Procedures\n- D&C: A surgical procedure to remove tissue from the uterus, indicated for heavy bleeding or to obtain tissue for diagnosis. Risks include infection, uterine perforation, and scarring.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hormonal contraceptives (e.g., combined oral contraceptives, progestins)\n- Non-steroidal anti-inflammatory drugs (NSAIDs) for pain and bleeding control\n\n#### Second-line Treatments\n- Levonorgestrel-releasing intrauterine system (LNG-IUS)\n- Endometrial ablation (for persistent cases)\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment and adjust management as necessary.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tranexamic acid\n- **Mechanism of Action**: Antifibrinolytic agent that reduces bleeding by inhibiting the breakdown of fibrin clots.\n- **Typical Dosing Range**: 1g orally 3 times a day for up to 4 days during menstruation.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache, and rarely thromboembolic events.\n- **When to Use vs. Alternatives**: Effective in reducing heavy menstrual bleeding.\n\n#### Combined oral contraceptives\n- **Mechanism of Action**: Suppress ovulation and stabilize the endometrial lining.\n- **Typical Dosing Range**: One tablet daily, taken continuously or cyclically depending on the regimen.\n- **Key Side Effects/Contraindications**: Nausea, breast tenderness, mood changes, and increased risk of thromboembolism.\n- **When to Use vs. Alternatives**: Also provides contraception.\n\n#### Levonorgestrel-releasing intrauterine system (LNG-IUS)\n- **Mechanism of Action**: Releases progestin locally to reduce endometrial proliferation and bleeding.\n- **Typical Dosing Range**: Inserted by a healthcare professional, effective for 3-5 years.\n- **Key Side Effects/Contraindications**: Irregular bleeding, cramping, and potential expulsion.\n- **When to Use vs. Alternatives**: Highly effective for managing DUB.\n\n### Procedures\n\n#### D&C (Dilatation and Curettage)\n- **What it Involves**: A surgical procedure to scrape the uterine lining to remove abnormal tissue or to obtain a sample for diagnosis.\n- **Indications**: Severe bleeding, suspected malignancy, or to clear retained products of conception.\n- **Key Risks/Complications**: Infection, uterine perforation, scarring (Asherman's syndrome).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for DUB is generally good with appropriate management. Many women respond well to hormonal treatments, and symptoms can be effectively controlled. However, underlying conditions must be ruled out to prevent complications.\n\n### Important Complications to Watch For\n- Anemia due to chronic blood loss\n- Increased risk of endometrial hyperplasia or cancer if left untreated\n- Psychosocial impact due to quality of life issues.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, including history taking and physical examination, order appropriate investigations, and initiate first-line management. They should also recognize red flags and escalate care when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynecologist if there are red flags, severe symptoms, or if the patient does not respond to initial management within a reasonable timeframe.\n\n### Key Safety Considerations\nEnsure to assess for signs of significant blood loss and anemia. Monitor vital signs in acute cases and be aware of the risks associated with surgical procedures.\n",
+  "content": {
+    "overview": {
+      "definition": "Dysfunctional uterine bleeding (DUB) is defined as abnormal uterine bleeding that is not attributable to any identifiable structural or systemic pathology. It is often related to hormonal imbalances affecting the menstrual cycle.",
+      "epidemiology": "DUB is a common condition affecting women of reproductive age, with prevalence rates estimated between 10-30%. It is a leading cause of gynecological consultations and can significantly impact quality of life.",
+      "pathophysiology": "DUB is primarily caused by anovulation, leading to unopposed estrogen stimulation of the endometrium. This results in irregular shedding of the endometrial lining, causing abnormal bleeding patterns. Other factors may include hormonal imbalances, stress, and lifestyle factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Irregular menstrual cycles",
+        "Heavy menstrual bleeding (menorrhagia)",
+        "Prolonged menstrual bleeding",
+        "Intermenstrual bleeding (spotting)",
+        "Amenorrhea (absence of menstruation)"
+      ],
+      "signs": [
+        "Pallor (in cases of significant blood loss)",
+        "Tachycardia (due to anemia)",
+        "Hypotension (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Bleeding after menopause",
+        "Bleeding associated with significant pain",
+        "Bleeding in adolescents"
+      ],
+      "redFlags": [
+        "Severe or sudden onset of bleeding",
+        "Bleeding associated with severe pain",
+        "Signs of anemia (fatigue, pallor, tachycardia)",
+        "Postmenopausal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC) to assess for anemia",
+        "Pregnancy test (urine or serum)",
+        "Pelvic ultrasound (transvaginal if possible)"
+      ],
+      "secondLine": [
+        "Endometrial biopsy (if indicated)",
+        "Coagulation profile (if bleeding disorder suspected)",
+        "Thyroid function tests (if hormonal imbalance suspected)"
+      ],
+      "specialistTests": [
+        "Hysteroscopy (for direct visualization of the uterine cavity)",
+        "MRI pelvis (if structural abnormalities are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of DUB is made when abnormal uterine bleeding occurs in the absence of any identifiable structural or systemic cause, following a thorough history, physical examination, and appropriate investigations.",
+      "differentials": [
+        "Uterine fibroids",
+        "Endometrial polyps",
+        "Endometrial hyperplasia",
+        "Malignancy (endometrial cancer)",
+        "Coagulation disorders",
+        "Thyroid disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids (if hypovolemic)",
+          "Tranexamic acid (to reduce bleeding)",
+          "Hormonal therapy (e.g., combined oral contraceptives)"
+        ],
+        "secondLine": [
+          "D&C (dilatation and curettage) for severe cases"
+        ],
+        "procedures": [
+          "D&C: A surgical procedure to remove tissue from the uterus, indicated for heavy bleeding or to obtain tissue for diagnosis. Risks include infection, uterine perforation, and scarring."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hormonal contraceptives (e.g., combined oral contraceptives, progestins)",
+          "Non-steroidal anti-inflammatory drugs (NSAIDs) for pain and bleeding control"
+        ],
+        "secondLine": [
+          "Levonorgestrel-releasing intrauterine system (LNG-IUS)",
+          "Endometrial ablation (for persistent cases)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment and adjust management as necessary."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tranexamic acid",
+          "mechanism": "Antifibrinolytic agent that reduces bleeding by inhibiting the breakdown of fibrin clots.",
+          "dosing": "1g orally 3 times a day for up to 4 days during menstruation.",
+          "sideEffects": "Nausea, diarrhea, headache, and rarely thromboembolic events.",
+          "notes": "Effective in reducing heavy menstrual bleeding."
+        },
+        {
+          "name": "Combined oral contraceptives",
+          "mechanism": "Suppress ovulation and stabilize the endometrial lining.",
+          "dosing": "One tablet daily, taken continuously or cyclically depending on the regimen.",
+          "sideEffects": "Nausea, breast tenderness, mood changes, and increased risk of thromboembolism.",
+          "notes": "Also provides contraception."
+        },
+        {
+          "name": "Levonorgestrel-releasing intrauterine system (LNG-IUS)",
+          "mechanism": "Releases progestin locally to reduce endometrial proliferation and bleeding.",
+          "dosing": "Inserted by a healthcare professional, effective for 3-5 years.",
+          "sideEffects": "Irregular bleeding, cramping, and potential expulsion.",
+          "notes": "Highly effective for managing DUB."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "D&C (Dilatation and Curettage)",
+          "description": "A surgical procedure to scrape the uterine lining to remove abnormal tissue or to obtain a sample for diagnosis.",
+          "indications": "Severe bleeding, suspected malignancy, or to clear retained products of conception.",
+          "risks": "Infection, uterine perforation, scarring (Asherman's syndrome)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for DUB is generally good with appropriate management. Many women respond well to hormonal treatments, and symptoms can be effectively controlled. However, underlying conditions must be ruled out to prevent complications.",
+    "complications": [
+      "Anemia due to chronic blood loss",
+      "Increased risk of endometrial hyperplasia or cancer if left untreated",
+      "Psychosocial impact due to quality of life issues."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, including history taking and physical examination, order appropriate investigations, and initiate first-line management. They should also recognize red flags and escalate care when necessary.",
+    "escalation": "Refer to a gynecologist if there are red flags, severe symptoms, or if the patient does not respond to initial management within a reasonable timeframe.",
+    "keySafetyConsiderations": "Ensure to assess for signs of significant blood loss and anemia. Monitor vital signs in acute cases and be aware of the risks associated with surgical procedures."
+  }
+}

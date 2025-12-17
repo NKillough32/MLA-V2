@@ -1,0 +1,133 @@
+{
+  "id": "polycystic_kidney_disease",
+  "name": "Polycystic kidney disease",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:20:34.126637",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polycystic kidney disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPolycystic kidney disease (PKD) is a genetic disorder characterized by the growth of numerous cysts in the kidneys, leading to kidney enlargement and progressive loss of renal function.\n\n### Epidemiology\nPKD affects approximately 1 in 400 to 1 in 1,000 individuals, making it one of the most common genetic disorders. It is divided into two main types: Autosomal Dominant PKD (ADPKD) and Autosomal Recessive PKD (ARPKD). ADPKD is more common, accounting for about 90% of cases.\n\n### Essential Pathophysiology\nPKD is caused by mutations in genes that regulate kidney cell growth and function, primarily PKD1 and PKD2. The cysts form due to abnormal cell proliferation and fluid secretion, leading to renal enlargement and eventual fibrosis, hypertension, and renal failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hypertension\n- Flank pain\n- Hematuria\n- Abdominal fullness\n- Urinary tract infections\n- Progressive renal failure\n\n### Key Signs\n- Palpable abdominal mass (enlarged kidneys)\n- Hypertension\n- Signs of chronic kidney disease (e.g., anemia, electrolyte imbalances)\n\n### Atypical Presentations\n- Cysts in other organs (e.g., liver, pancreas)\n- Extrarenal manifestations such as hepatic cysts or diverticula\n\n### Red Flags Requiring Immediate Action\n- Rapidly worsening renal function\n- Severe hypertension\n- Recurrent urinary tract infections\n- Hematuria with clots\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound abdomen (to detect cysts)\n- Blood pressure measurement\n- Serum creatinine and electrolytes\n\n### Second-line Investigations\n- CT scan abdomen (for detailed cyst assessment)\n- Genetic testing (if family history is present)\n\n### Specialist Tests\n- MRI abdomen (for complex cysts or to assess renal function)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically made based on imaging findings of multiple renal cysts, with family history supporting the diagnosis in ADPKD. Genetic testing can confirm the diagnosis in uncertain cases.\n\n### Key Differential Diagnoses to Exclude\n- Acquired cystic kidney disease\n- Simple renal cysts\n- Medullary sponge kidney\n- Nephronophthisis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Control hypertension (e.g., ACE inhibitors)\n- Pain management (e.g., NSAIDs)\n\n#### Second-line Treatments\n- Consider diuretics for fluid overload\n- Antibiotics for urinary tract infections\n\n#### Emergency Procedures\n- Drainage of large cysts (if symptomatic)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Blood pressure control (ACE inhibitors, ARBs)\n- Dietary modifications (low sodium, adequate hydration)\n- Management of complications (e.g., anemia, bone disease)\n\n#### Second-line Treatments\n- Referral to nephrology for advanced care\n- Consideration of renal replacement therapy (dialysis or transplant)\n\n#### Monitoring Requirements\n- Regular renal function tests (serum creatinine, eGFR)\n- Blood pressure monitoring\n- Screening for complications (e.g., imaging for cyst growth)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces blood pressure and proteinuria\n- **Typical Dosing Range**: Start at 5-10 mg daily, titrate to target BP\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes after initiation.\n\n#### Tolvaptan\n- **Mechanism of Action**: Vasopressin receptor antagonist that slows cyst growth\n- **Typical Dosing Range**: Start at 60 mg daily, can increase to 120 mg\n- **Key Side Effects/Contraindications**: Thirst, polyuria, liver function abnormalities\n- **When to Use vs. Alternatives**: Requires monitoring of liver function tests.\n\n### Procedures\n\n#### Cyst aspiration\n- **What it Involves**: Percutaneous drainage of symptomatic renal cysts\n- **Indications**: Large cysts causing pain or discomfort\n- **Key Risks/Complications**: Infection, bleeding, cyst recurrence.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies; many patients with ADPKD develop end-stage renal disease by age 60. Early management of hypertension and complications can improve outcomes.\n\n### Important Complications to Watch For\n- Hypertension\n- Chronic kidney disease\n- Urinary tract infections\n- Cyst infections\n- Liver cysts\n- Pancreatic cysts\n- Aneurysms (intracranial)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms, performing initial investigations, managing hypertension, and referring patients to nephrology for specialized care.\n\n### When to Escalate to Senior/Specialist\nRefer to nephrology for worsening renal function, uncontrolled hypertension, or complications such as recurrent infections or severe pain.\n\n### Key Safety Considerations\nMonitor renal function and electrolytes when initiating antihypertensive therapy, especially in patients with existing renal impairment. Be vigilant for signs of infection in cysts and manage promptly.\n",
+  "content": {
+    "overview": {
+      "definition": "Polycystic kidney disease (PKD) is a genetic disorder characterized by the growth of numerous cysts in the kidneys, leading to kidney enlargement and progressive loss of renal function.",
+      "epidemiology": "PKD affects approximately 1 in 400 to 1 in 1,000 individuals, making it one of the most common genetic disorders. It is divided into two main types: Autosomal Dominant PKD (ADPKD) and Autosomal Recessive PKD (ARPKD). ADPKD is more common, accounting for about 90% of cases.",
+      "pathophysiology": "PKD is caused by mutations in genes that regulate kidney cell growth and function, primarily PKD1 and PKD2. The cysts form due to abnormal cell proliferation and fluid secretion, leading to renal enlargement and eventual fibrosis, hypertension, and renal failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hypertension",
+        "Flank pain",
+        "Hematuria",
+        "Abdominal fullness",
+        "Urinary tract infections",
+        "Progressive renal failure"
+      ],
+      "signs": [
+        "Palpable abdominal mass (enlarged kidneys)",
+        "Hypertension",
+        "Signs of chronic kidney disease (e.g., anemia, electrolyte imbalances)"
+      ],
+      "atypicalPresentations": [
+        "Cysts in other organs (e.g., liver, pancreas)",
+        "Extrarenal manifestations such as hepatic cysts or diverticula"
+      ],
+      "redFlags": [
+        "Rapidly worsening renal function",
+        "Severe hypertension",
+        "Recurrent urinary tract infections",
+        "Hematuria with clots"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound abdomen (to detect cysts)",
+        "Blood pressure measurement",
+        "Serum creatinine and electrolytes"
+      ],
+      "secondLine": [
+        "CT scan abdomen (for detailed cyst assessment)",
+        "Genetic testing (if family history is present)"
+      ],
+      "specialistTests": [
+        "MRI abdomen (for complex cysts or to assess renal function)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically made based on imaging findings of multiple renal cysts, with family history supporting the diagnosis in ADPKD. Genetic testing can confirm the diagnosis in uncertain cases.",
+      "differentials": [
+        "Acquired cystic kidney disease",
+        "Simple renal cysts",
+        "Medullary sponge kidney",
+        "Nephronophthisis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Control hypertension (e.g., ACE inhibitors)",
+          "Pain management (e.g., NSAIDs)"
+        ],
+        "secondLine": [
+          "Consider diuretics for fluid overload",
+          "Antibiotics for urinary tract infections"
+        ],
+        "procedures": [
+          "Drainage of large cysts (if symptomatic)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Blood pressure control (ACE inhibitors, ARBs)",
+          "Dietary modifications (low sodium, adequate hydration)",
+          "Management of complications (e.g., anemia, bone disease)"
+        ],
+        "secondLine": [
+          "Referral to nephrology for advanced care",
+          "Consideration of renal replacement therapy (dialysis or transplant)"
+        ],
+        "monitoring": [
+          "Regular renal function tests (serum creatinine, eGFR)",
+          "Blood pressure monitoring",
+          "Screening for complications (e.g., imaging for cyst growth)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces blood pressure and proteinuria",
+          "dosing": "Start at 5-10 mg daily, titrate to target BP",
+          "sideEffects": "Cough, hyperkalemia, renal impairment",
+          "notes": "Monitor renal function and electrolytes after initiation."
+        },
+        {
+          "name": "Tolvaptan",
+          "mechanism": "Vasopressin receptor antagonist that slows cyst growth",
+          "dosing": "Start at 60 mg daily, can increase to 120 mg",
+          "sideEffects": "Thirst, polyuria, liver function abnormalities",
+          "notes": "Requires monitoring of liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cyst aspiration",
+          "description": "Percutaneous drainage of symptomatic renal cysts",
+          "indications": "Large cysts causing pain or discomfort",
+          "risks": "Infection, bleeding, cyst recurrence."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies; many patients with ADPKD develop end-stage renal disease by age 60. Early management of hypertension and complications can improve outcomes.",
+    "complications": [
+      "Hypertension",
+      "Chronic kidney disease",
+      "Urinary tract infections",
+      "Cyst infections",
+      "Liver cysts",
+      "Pancreatic cysts",
+      "Aneurysms (intracranial)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms, performing initial investigations, managing hypertension, and referring patients to nephrology for specialized care.",
+    "escalation": "Refer to nephrology for worsening renal function, uncontrolled hypertension, or complications such as recurrent infections or severe pain.",
+    "keySafetyConsiderations": "Monitor renal function and electrolytes when initiating antihypertensive therapy, especially in patients with existing renal impairment. Be vigilant for signs of infection in cysts and manage promptly."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "chronic_cognitive_impairment",
+  "name": "Chronic cognitive impairment",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-17T20:40:46.404873",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic cognitive impairment: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic cognitive impairment refers to a gradual decline in cognitive function that affects daily living and is often associated with aging. It encompasses a range of conditions, including mild cognitive impairment (MCI) and dementia.\n\n### Epidemiology\nChronic cognitive impairment affects approximately 10-20% of individuals over the age of 65, with prevalence increasing with age. Alzheimer's disease is the most common cause, accounting for 60-80% of dementia cases.\n\n### Essential Pathophysiology\nChronic cognitive impairment is characterized by neurodegenerative processes, including the accumulation of amyloid plaques and tau tangles in Alzheimer's disease, vascular damage in vascular dementia, and other pathological changes in different types of dementia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Memory loss\n- Difficulty concentrating\n- Language problems\n- Disorientation to time and place\n- Changes in mood or behavior\n\n### Key Signs\n- Impaired judgment\n- Difficulty with problem-solving\n- Reduced ability to perform familiar tasks\n- Changes in social interactions\n\n### Atypical Presentations\n- Younger onset dementia (under 65)\n- Rapid progression of symptoms\n- Behavioral changes without significant memory loss\n\n### Red Flags Requiring Immediate Action\n- Sudden changes in cognition\n- Severe memory loss affecting daily life\n- Inability to recognize familiar people or places\n- Significant personality changes\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Mini-Mental State Examination (MMSE)\n- Montreal Cognitive Assessment (MoCA)\n- Clinical history and cognitive assessment\n\n### Second-line Investigations\n- Neuropsychological testing\n- Blood tests (e.g., thyroid function, vitamin B12 levels)\n- Brain imaging (CT or MRI)\n\n### Specialist Tests\n- Lumbar puncture for cerebrospinal fluid analysis\n- PET scan for amyloid imaging\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of chronic cognitive impairment is based on clinical assessment, cognitive testing, and exclusion of other causes of cognitive decline. Criteria for dementia include significant cognitive decline from a previous level of performance in one or more cognitive domains, interference with independence in everyday activities, and not occurring exclusively in the context of delirium.\n\n### Key Differential Diagnoses to Exclude\n- Delirium\n- Depression (pseudodementia)\n- Normal pressure hydrocephalus\n- Thyroid disorders\n- Vitamin deficiencies\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and education for patients and families\n- Referral to a geriatrician or neurologist if necessary\n\n#### Second-line Treatments\n- Consideration of environmental modifications to enhance safety\n\n#### Emergency Procedures\n- Cognitive rehabilitation therapy\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive stimulation therapy\n- Occupational therapy for daily living skills\n- Supportive care and education for caregivers\n\n#### Second-line Treatments\n- Consider pharmacological interventions if appropriate\n\n#### Monitoring Requirements\n- Regular follow-up assessments to monitor cognitive decline and adjust management plans\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Donepezil\n- **Mechanism of Action**: Acetylcholinesterase inhibitor that increases acetylcholine levels in the brain.\n- **Typical Dosing Range**: 5 mg once daily, may increase to 10 mg after 4-6 weeks.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, insomnia, muscle cramps, fatigue.\n- **When to Use vs. Alternatives**: Used primarily in Alzheimer's disease.\n\n#### Memantine\n- **Mechanism of Action**: NMDA receptor antagonist that helps regulate glutamate activity.\n- **Typical Dosing Range**: 5 mg once daily, may increase to 10 mg twice daily.\n- **Key Side Effects/Contraindications**: Dizziness, headache, constipation, confusion.\n- **When to Use vs. Alternatives**: Used in moderate to severe Alzheimer's disease.\n\n### Procedures\n\n#### Cognitive rehabilitation therapy\n- **What it Involves**: A structured program aimed at improving cognitive function and daily living skills through targeted exercises and strategies.\n- **Indications**: Patients with mild to moderate cognitive impairment who are motivated to engage in therapy.\n- **Key Risks/Complications**: May require significant time commitment and may not be suitable for all patients.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of chronic cognitive impairment varies widely depending on the underlying cause. Mild cognitive impairment may remain stable or progress to dementia, while dementia typically leads to a gradual decline in function over time.\n\n### Important Complications to Watch For\n- Increased risk of falls\n- Inability to perform activities of daily living\n- Increased caregiver burden\n- Higher risk of institutionalization\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should conduct thorough assessments, recognize early signs of cognitive impairment, provide education and support to patients and families, and facilitate referrals to specialists as needed.\n\n### When to Escalate to Senior/Specialist\nIf there are concerns about rapid cognitive decline, significant behavioral changes, or safety issues, escalate to a senior clinician or geriatric specialist for further evaluation and management.\n\n### Key Safety Considerations\nEnsure patient safety in the home environment, assess for fall risks, and provide education on managing medications and potential side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic cognitive impairment refers to a gradual decline in cognitive function that affects daily living and is often associated with aging. It encompasses a range of conditions, including mild cognitive impairment (MCI) and dementia.",
+      "epidemiology": "Chronic cognitive impairment affects approximately 10-20% of individuals over the age of 65, with prevalence increasing with age. Alzheimer's disease is the most common cause, accounting for 60-80% of dementia cases.",
+      "pathophysiology": "Chronic cognitive impairment is characterized by neurodegenerative processes, including the accumulation of amyloid plaques and tau tangles in Alzheimer's disease, vascular damage in vascular dementia, and other pathological changes in different types of dementia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Memory loss",
+        "Difficulty concentrating",
+        "Language problems",
+        "Disorientation to time and place",
+        "Changes in mood or behavior"
+      ],
+      "signs": [
+        "Impaired judgment",
+        "Difficulty with problem-solving",
+        "Reduced ability to perform familiar tasks",
+        "Changes in social interactions"
+      ],
+      "atypicalPresentations": [
+        "Younger onset dementia (under 65)",
+        "Rapid progression of symptoms",
+        "Behavioral changes without significant memory loss"
+      ],
+      "redFlags": [
+        "Sudden changes in cognition",
+        "Severe memory loss affecting daily life",
+        "Inability to recognize familiar people or places",
+        "Significant personality changes"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Mini-Mental State Examination (MMSE)",
+        "Montreal Cognitive Assessment (MoCA)",
+        "Clinical history and cognitive assessment"
+      ],
+      "secondLine": [
+        "Neuropsychological testing",
+        "Blood tests (e.g., thyroid function, vitamin B12 levels)",
+        "Brain imaging (CT or MRI)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for cerebrospinal fluid analysis",
+        "PET scan for amyloid imaging"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of chronic cognitive impairment is based on clinical assessment, cognitive testing, and exclusion of other causes of cognitive decline. Criteria for dementia include significant cognitive decline from a previous level of performance in one or more cognitive domains, interference with independence in everyday activities, and not occurring exclusively in the context of delirium.",
+      "differentials": [
+        "Delirium",
+        "Depression (pseudodementia)",
+        "Normal pressure hydrocephalus",
+        "Thyroid disorders",
+        "Vitamin deficiencies"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and education for patients and families",
+          "Referral to a geriatrician or neurologist if necessary"
+        ],
+        "secondLine": [
+          "Consideration of environmental modifications to enhance safety"
+        ],
+        "procedures": [
+          "Cognitive rehabilitation therapy"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive stimulation therapy",
+          "Occupational therapy for daily living skills",
+          "Supportive care and education for caregivers"
+        ],
+        "secondLine": [
+          "Consider pharmacological interventions if appropriate"
+        ],
+        "monitoring": [
+          "Regular follow-up assessments to monitor cognitive decline and adjust management plans"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Donepezil",
+          "mechanism": "Acetylcholinesterase inhibitor that increases acetylcholine levels in the brain.",
+          "dosing": "5 mg once daily, may increase to 10 mg after 4-6 weeks.",
+          "sideEffects": "Nausea, diarrhea, insomnia, muscle cramps, fatigue.",
+          "notes": "Used primarily in Alzheimer's disease."
+        },
+        {
+          "name": "Memantine",
+          "mechanism": "NMDA receptor antagonist that helps regulate glutamate activity.",
+          "dosing": "5 mg once daily, may increase to 10 mg twice daily.",
+          "sideEffects": "Dizziness, headache, constipation, confusion.",
+          "notes": "Used in moderate to severe Alzheimer's disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cognitive rehabilitation therapy",
+          "description": "A structured program aimed at improving cognitive function and daily living skills through targeted exercises and strategies.",
+          "indications": "Patients with mild to moderate cognitive impairment who are motivated to engage in therapy.",
+          "risks": "May require significant time commitment and may not be suitable for all patients."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of chronic cognitive impairment varies widely depending on the underlying cause. Mild cognitive impairment may remain stable or progress to dementia, while dementia typically leads to a gradual decline in function over time.",
+    "complications": [
+      "Increased risk of falls",
+      "Inability to perform activities of daily living",
+      "Increased caregiver burden",
+      "Higher risk of institutionalization"
+    ],
+    "foundationDoctorRole": "Foundation doctors should conduct thorough assessments, recognize early signs of cognitive impairment, provide education and support to patients and families, and facilitate referrals to specialists as needed.",
+    "escalation": "If there are concerns about rapid cognitive decline, significant behavioral changes, or safety issues, escalate to a senior clinician or geriatric specialist for further evaluation and management.",
+    "keySafetyConsiderations": "Ensure patient safety in the home environment, assess for fall risks, and provide education on managing medications and potential side effects."
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "inherited_connective_tissue_diseases",
+  "name": "Inherited connective tissue diseases?",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:33:55.586619",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Inherited connective tissue diseases?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInherited connective tissue diseases are a group of genetic disorders that affect the connective tissues in the body, leading to a variety of symptoms and complications. These diseases are often characterized by abnormalities in collagen and other extracellular matrix components.\n\n### Epidemiology\nThese conditions are relatively rare, with varying prevalence depending on the specific disease. For example, Marfan syndrome occurs in approximately 1 in 5,000 individuals, while Ehlers-Danlos syndrome has an estimated prevalence of 1 in 5,000 to 1 in 20,000.\n\n### Essential Pathophysiology\nThe pathophysiology involves mutations in genes responsible for the synthesis and structure of connective tissue components, particularly collagen. This leads to structural weaknesses in tissues such as skin, ligaments, blood vessels, and organs, resulting in a range of clinical manifestations.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Joint hypermobility\n- Skin hyperelasticity\n- Easy bruising\n- Aortic dilation or dissection\n- Skeletal deformities (e.g., scoliosis)\n- Fatigue\n- Chronic pain\n\n### Key Signs\n- Positive Beighton score for hypermobility\n- Skin that is velvety or translucent\n- Murmurs indicating aortic regurgitation\n- Joint dislocations\n- Café-au-lait spots (in some syndromes)\n\n### Atypical Presentations\n- Early onset osteoarthritis\n- Gastrointestinal complications (e.g., bowel perforation)\n- Pulmonary complications (e.g., pneumothorax)\n\n### Red Flags Requiring Immediate Action\n- Family history of connective tissue disease\n- Sudden chest pain or back pain (indicative of aortic dissection)\n- Severe joint pain or swelling\n- Neurological symptoms (e.g., headaches, vision changes)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including family history\n- Beighton score for hypermobility\n- Echocardiogram (for aortic involvement)\n- Skin biopsy (for Ehlers-Danlos syndrome)\n\n### Second-line Investigations\n- Genetic testing for specific mutations (e.g., FBN1 for Marfan syndrome)\n- MRI for joint and soft tissue assessment\n- Ultrasound for vascular abnormalities\n\n### Specialist Tests\n- Cardiac MRI for detailed cardiac assessment\n- Pulmonary function tests if respiratory symptoms present\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical criteria, family history, and genetic testing where applicable. For example, the Ghent criteria for Marfan syndrome include major and minor criteria related to skeletal, ocular, and cardiovascular systems.\n\n### Key Differential Diagnoses to Exclude\n- Marfan syndrome\n- Ehlers-Danlos syndrome\n- Osteogenesis imperfecta\n- Loeys-Dietz syndrome\n- Stickler syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management with NSAIDs\n- Immediate referral for suspected aortic dissection\n\n#### Second-line Treatments\n- Corticosteroids for inflammatory exacerbations\n\n#### Emergency Procedures\n- Surgical intervention for aortic repair or joint stabilization if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring for cardiovascular complications\n- Physical therapy for joint stability and pain management\n\n#### Second-line Treatments\n- Surgical interventions for severe joint issues or deformities\n\n#### Monitoring Requirements\n- Regular echocardiograms to monitor aortic size\n- Routine assessments for joint function and mobility\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed, not to exceed 3200 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects.\n- **Typical Dosing Range**: Prednisone 5-60 mg daily depending on severity.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, hypertension, diabetes risk.\n- **When to Use vs. Alternatives**: Taper dosage to avoid withdrawal symptoms.\n\n### Procedures\n\n#### Aortic repair surgery\n- **What it Involves**: Surgical intervention to repair or replace a dilated or dissected aorta.\n- **Indications**: Severe aortic dilation or dissection, symptomatic patients.\n- **Key Risks/Complications**: Bleeding, infection, organ dysfunction, need for further surgeries.\n\n#### Joint stabilization surgery\n- **What it Involves**: Surgical procedures to stabilize hypermobile joints or repair damaged ligaments.\n- **Indications**: Severe joint instability or recurrent dislocations.\n- **Key Risks/Complications**: Infection, nerve damage, stiffness, need for rehabilitation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies widely depending on the specific connective tissue disease and the severity of symptoms. Early diagnosis and management can significantly improve quality of life and reduce complications.\n\n### Important Complications to Watch For\n- Aortic dissection or rupture\n- Joint damage and chronic pain\n- Increased risk of cardiovascular disease\n- Gastrointestinal complications\n- Psychosocial issues due to chronic illness\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of inherited connective tissue diseases, conducting thorough assessments, and referring patients to specialists for genetic counseling and management. They should also provide education and support to patients and families.\n\n### When to Escalate to Senior/Specialist\nPatients presenting with acute symptoms such as chest pain, severe joint pain, or neurological symptoms should be escalated to senior medical staff immediately. Regular follow-up for chronic management should be coordinated with rheumatology and genetics specialists.\n\n### Key Safety Considerations\nEnsure thorough family history is taken to identify hereditary patterns. Monitor for signs of aortic complications and joint instability. Educate patients on recognizing red flags and when to seek immediate medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Inherited connective tissue diseases are a group of genetic disorders that affect the connective tissues in the body, leading to a variety of symptoms and complications. These diseases are often characterized by abnormalities in collagen and other extracellular matrix components.",
+      "epidemiology": "These conditions are relatively rare, with varying prevalence depending on the specific disease. For example, Marfan syndrome occurs in approximately 1 in 5,000 individuals, while Ehlers-Danlos syndrome has an estimated prevalence of 1 in 5,000 to 1 in 20,000.",
+      "pathophysiology": "The pathophysiology involves mutations in genes responsible for the synthesis and structure of connective tissue components, particularly collagen. This leads to structural weaknesses in tissues such as skin, ligaments, blood vessels, and organs, resulting in a range of clinical manifestations."
+    },
+    "recognition": {
+      "symptoms": [
+        "Joint hypermobility",
+        "Skin hyperelasticity",
+        "Easy bruising",
+        "Aortic dilation or dissection",
+        "Skeletal deformities (e.g., scoliosis)",
+        "Fatigue",
+        "Chronic pain"
+      ],
+      "signs": [
+        "Positive Beighton score for hypermobility",
+        "Skin that is velvety or translucent",
+        "Murmurs indicating aortic regurgitation",
+        "Joint dislocations",
+        "Café-au-lait spots (in some syndromes)"
+      ],
+      "atypicalPresentations": [
+        "Early onset osteoarthritis",
+        "Gastrointestinal complications (e.g., bowel perforation)",
+        "Pulmonary complications (e.g., pneumothorax)"
+      ],
+      "redFlags": [
+        "Family history of connective tissue disease",
+        "Sudden chest pain or back pain (indicative of aortic dissection)",
+        "Severe joint pain or swelling",
+        "Neurological symptoms (e.g., headaches, vision changes)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including family history",
+        "Beighton score for hypermobility",
+        "Echocardiogram (for aortic involvement)",
+        "Skin biopsy (for Ehlers-Danlos syndrome)"
+      ],
+      "secondLine": [
+        "Genetic testing for specific mutations (e.g., FBN1 for Marfan syndrome)",
+        "MRI for joint and soft tissue assessment",
+        "Ultrasound for vascular abnormalities"
+      ],
+      "specialistTests": [
+        "Cardiac MRI for detailed cardiac assessment",
+        "Pulmonary function tests if respiratory symptoms present"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical criteria, family history, and genetic testing where applicable. For example, the Ghent criteria for Marfan syndrome include major and minor criteria related to skeletal, ocular, and cardiovascular systems.",
+      "differentials": [
+        "Marfan syndrome",
+        "Ehlers-Danlos syndrome",
+        "Osteogenesis imperfecta",
+        "Loeys-Dietz syndrome",
+        "Stickler syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management with NSAIDs",
+          "Immediate referral for suspected aortic dissection"
+        ],
+        "secondLine": [
+          "Corticosteroids for inflammatory exacerbations"
+        ],
+        "procedures": [
+          "Surgical intervention for aortic repair or joint stabilization if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring for cardiovascular complications",
+          "Physical therapy for joint stability and pain management"
+        ],
+        "secondLine": [
+          "Surgical interventions for severe joint issues or deformities"
+        ],
+        "monitoring": [
+          "Regular echocardiograms to monitor aortic size",
+          "Routine assessments for joint function and mobility"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "400-800 mg every 6-8 hours as needed, not to exceed 3200 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects.",
+          "dosing": "Prednisone 5-60 mg daily depending on severity.",
+          "sideEffects": "Weight gain, osteoporosis, hypertension, diabetes risk.",
+          "notes": "Taper dosage to avoid withdrawal symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Aortic repair surgery",
+          "description": "Surgical intervention to repair or replace a dilated or dissected aorta.",
+          "indications": "Severe aortic dilation or dissection, symptomatic patients.",
+          "risks": "Bleeding, infection, organ dysfunction, need for further surgeries."
+        },
+        {
+          "name": "Joint stabilization surgery",
+          "description": "Surgical procedures to stabilize hypermobile joints or repair damaged ligaments.",
+          "indications": "Severe joint instability or recurrent dislocations.",
+          "risks": "Infection, nerve damage, stiffness, need for rehabilitation."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies widely depending on the specific connective tissue disease and the severity of symptoms. Early diagnosis and management can significantly improve quality of life and reduce complications.",
+    "complications": [
+      "Aortic dissection or rupture",
+      "Joint damage and chronic pain",
+      "Increased risk of cardiovascular disease",
+      "Gastrointestinal complications",
+      "Psychosocial issues due to chronic illness"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of inherited connective tissue diseases, conducting thorough assessments, and referring patients to specialists for genetic counseling and management. They should also provide education and support to patients and families.",
+    "escalation": "Patients presenting with acute symptoms such as chest pain, severe joint pain, or neurological symptoms should be escalated to senior medical staff immediately. Regular follow-up for chronic management should be coordinated with rheumatology and genetics specialists.",
+    "keySafetyConsiderations": "Ensure thorough family history is taken to identify hereditary patterns. Monitor for signs of aortic complications and joint instability. Educate patients on recognizing red flags and when to seek immediate medical attention."
+  }
+}

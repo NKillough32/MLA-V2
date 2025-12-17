@@ -1,0 +1,152 @@
+{
+  "id": "hiv_aids",
+  "name": "HIV/ AIDS",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:06:00.086282",
+  "model": "gpt-4o-mini",
+  "rawContent": "# HIV/ AIDS: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHIV (Human Immunodeficiency Virus) is a virus that attacks the immune system, specifically CD4 T cells, leading to progressive immune deficiency. AIDS (Acquired Immunodeficiency Syndrome) is the most severe phase of HIV infection, characterized by a CD4 count below 200 cells/mm³ or the presence of opportunistic infections or cancers.\n\n### Epidemiology\nGlobally, approximately 38 million people are living with HIV, with significant prevalence in sub-Saharan Africa. In the UK, around 107,000 people are living with HIV, with a notable number unaware of their status.\n\n### Essential Pathophysiology\nHIV primarily infects CD4+ T lymphocytes, leading to their depletion over time. This results in a weakened immune response, making the individual susceptible to opportunistic infections and certain malignancies.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Fatigue\n- Weight loss\n- Night sweats\n- Lymphadenopathy\n- Diarrhea\n- Skin rashes\n\n### Key Signs\n- Oral thrush\n- Kaposi's sarcoma\n- Pneumocystis pneumonia (PCP)\n- Candidiasis\n- Herpes simplex virus infections\n- Cytomegalovirus retinitis\n\n### Atypical Presentations\n- Neurological symptoms (e.g., HIV-associated dementia)\n- Chronic skin conditions\n- Recurrent bacterial infections\n\n### Red Flags Requiring Immediate Action\n- CD4 count <200 cells/mm³\n- Presence of opportunistic infections\n- Unexplained weight loss >10% of body weight\n- Persistent fever >38.5°C for more than 2 weeks\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- HIV antibody test (4th generation)\n- HIV RNA viral load\n\n### Second-line Investigations\n- CD4 count\n- HIV resistance testing\n\n### Specialist Tests\n- Genotypic resistance testing\n- Phenotypic resistance testing\n- HIV tropism testing\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of HIV is confirmed by the detection of HIV antibodies or HIV RNA in the blood. A positive result should be followed by a confirmatory test (e.g., Western blot or HIV RNA).\n\n### Key Differential Diagnoses to Exclude\n- Acute retroviral syndrome\n- Tuberculosis\n- Hepatitis B and C\n- Syphilis\n- Other viral infections (e.g., CMV, EBV)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate antiretroviral therapy (ART) as soon as possible, ideally within 72 hours of diagnosis.\n\n#### Second-line Treatments\n- Consider prophylaxis for opportunistic infections (e.g., PCP prophylaxis with trimethoprim-sulfamethoxazole if CD4 <200).\n\n#### Emergency Procedures\n- Lumbar puncture for CNS opportunistic infections if indicated.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continue antiretroviral therapy (ART) to maintain viral suppression.\n\n#### Second-line Treatments\n- Monitor for opportunistic infections and manage comorbidities.\n\n#### Monitoring Requirements\n- Regular CD4 count and viral load monitoring (every 3-6 months).\n- Screen for other sexually transmitted infections (STIs) and hepatitis.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tenofovir disoproxil fumarate (TDF)\n- **Mechanism of Action**: Nucleotide reverse transcriptase inhibitor (NRTI) that inhibits viral replication.\n- **Typical Dosing Range**: 300 mg once daily.\n- **Key Side Effects/Contraindications**: Renal toxicity, bone mineral density loss, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Monitor renal function regularly.\n\n#### Emtricitabine (FTC)\n- **Mechanism of Action**: NRTI that inhibits reverse transcriptase.\n- **Typical Dosing Range**: 200 mg once daily.\n- **Key Side Effects/Contraindications**: Headache, diarrhea, rash.\n- **When to Use vs. Alternatives**: Well-tolerated, often used in combination.\n\n#### Efavirenz (EFV)\n- **Mechanism of Action**: Non-nucleoside reverse transcriptase inhibitor (NNRTI) that inhibits reverse transcriptase.\n- **Typical Dosing Range**: 600 mg once daily at bedtime.\n- **Key Side Effects/Contraindications**: CNS effects (dizziness, vivid dreams), rash.\n- **When to Use vs. Alternatives**: Avoid in pregnancy.\n\n#### Dolutegravir (DTG)\n- **Mechanism of Action**: Integrase strand transfer inhibitor (INSTI) that inhibits viral integration into the host genome.\n- **Typical Dosing Range**: 50 mg once daily.\n- **Key Side Effects/Contraindications**: Insomnia, headache, weight gain.\n- **When to Use vs. Alternatives**: Preferred first-line agent.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected CNS opportunistic infections or neurological symptoms.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n#### CD4 count monitoring\n- **What it Involves**: Blood test to measure the number of CD4 T cells.\n- **Indications**: To assess immune function and guide ART decisions.\n- **Key Risks/Complications**: Minimal, but requires venipuncture.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith effective antiretroviral therapy, individuals with HIV can live long, healthy lives. Early diagnosis and treatment are crucial for improving outcomes and reducing transmission risk.\n\n### Important Complications to Watch For\n- Opportunistic infections (e.g., PCP, TB)\n- Malignancies (e.g., Kaposi's sarcoma, lymphoma)\n- Neurological complications (e.g., HIV-associated dementia)\n- Chronic kidney disease\n- Cardiovascular disease\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of HIV, perform initial screening tests, provide education on safe practices, and refer patients for specialist care. They should also be aware of the importance of routine monitoring and adherence to ART.\n\n### When to Escalate to Senior/Specialist\nRefer to an HIV specialist if: 1) Initial tests are positive; 2) Patient presents with opportunistic infections; 3) There are complications of ART; 4) Patient has difficulty adhering to treatment.\n\n### Key Safety Considerations\nEnsure confidentiality and sensitivity when discussing HIV status. Provide education on safe sex practices and the importance of regular follow-up. Monitor for drug interactions and side effects of ART.\n",
+  "content": {
+    "overview": {
+      "definition": "HIV (Human Immunodeficiency Virus) is a virus that attacks the immune system, specifically CD4 T cells, leading to progressive immune deficiency. AIDS (Acquired Immunodeficiency Syndrome) is the most severe phase of HIV infection, characterized by a CD4 count below 200 cells/mm³ or the presence of opportunistic infections or cancers.",
+      "epidemiology": "Globally, approximately 38 million people are living with HIV, with significant prevalence in sub-Saharan Africa. In the UK, around 107,000 people are living with HIV, with a notable number unaware of their status.",
+      "pathophysiology": "HIV primarily infects CD4+ T lymphocytes, leading to their depletion over time. This results in a weakened immune response, making the individual susceptible to opportunistic infections and certain malignancies."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Fatigue",
+        "Weight loss",
+        "Night sweats",
+        "Lymphadenopathy",
+        "Diarrhea",
+        "Skin rashes"
+      ],
+      "signs": [
+        "Oral thrush",
+        "Kaposi's sarcoma",
+        "Pneumocystis pneumonia (PCP)",
+        "Candidiasis",
+        "Herpes simplex virus infections",
+        "Cytomegalovirus retinitis"
+      ],
+      "atypicalPresentations": [
+        "Neurological symptoms (e.g., HIV-associated dementia)",
+        "Chronic skin conditions",
+        "Recurrent bacterial infections"
+      ],
+      "redFlags": [
+        "CD4 count <200 cells/mm³",
+        "Presence of opportunistic infections",
+        "Unexplained weight loss >10% of body weight",
+        "Persistent fever >38.5°C for more than 2 weeks"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "HIV antibody test (4th generation)",
+        "HIV RNA viral load"
+      ],
+      "secondLine": [
+        "CD4 count",
+        "HIV resistance testing"
+      ],
+      "specialistTests": [
+        "Genotypic resistance testing",
+        "Phenotypic resistance testing",
+        "HIV tropism testing"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of HIV is confirmed by the detection of HIV antibodies or HIV RNA in the blood. A positive result should be followed by a confirmatory test (e.g., Western blot or HIV RNA).",
+      "differentials": [
+        "Acute retroviral syndrome",
+        "Tuberculosis",
+        "Hepatitis B and C",
+        "Syphilis",
+        "Other viral infections (e.g., CMV, EBV)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate antiretroviral therapy (ART) as soon as possible, ideally within 72 hours of diagnosis."
+        ],
+        "secondLine": [
+          "Consider prophylaxis for opportunistic infections (e.g., PCP prophylaxis with trimethoprim-sulfamethoxazole if CD4 <200)."
+        ],
+        "procedures": [
+          "Lumbar puncture for CNS opportunistic infections if indicated."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continue antiretroviral therapy (ART) to maintain viral suppression."
+        ],
+        "secondLine": [
+          "Monitor for opportunistic infections and manage comorbidities."
+        ],
+        "monitoring": [
+          "Regular CD4 count and viral load monitoring (every 3-6 months).",
+          "Screen for other sexually transmitted infections (STIs) and hepatitis."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tenofovir disoproxil fumarate (TDF)",
+          "mechanism": "Nucleotide reverse transcriptase inhibitor (NRTI) that inhibits viral replication.",
+          "dosing": "300 mg once daily.",
+          "sideEffects": "Renal toxicity, bone mineral density loss, gastrointestinal upset.",
+          "notes": "Monitor renal function regularly."
+        },
+        {
+          "name": "Emtricitabine (FTC)",
+          "mechanism": "NRTI that inhibits reverse transcriptase.",
+          "dosing": "200 mg once daily.",
+          "sideEffects": "Headache, diarrhea, rash.",
+          "notes": "Well-tolerated, often used in combination."
+        },
+        {
+          "name": "Efavirenz (EFV)",
+          "mechanism": "Non-nucleoside reverse transcriptase inhibitor (NNRTI) that inhibits reverse transcriptase.",
+          "dosing": "600 mg once daily at bedtime.",
+          "sideEffects": "CNS effects (dizziness, vivid dreams), rash.",
+          "notes": "Avoid in pregnancy."
+        },
+        {
+          "name": "Dolutegravir (DTG)",
+          "mechanism": "Integrase strand transfer inhibitor (INSTI) that inhibits viral integration into the host genome.",
+          "dosing": "50 mg once daily.",
+          "sideEffects": "Insomnia, headache, weight gain.",
+          "notes": "Preferred first-line agent."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected CNS opportunistic infections or neurological symptoms.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        },
+        {
+          "name": "CD4 count monitoring",
+          "description": "Blood test to measure the number of CD4 T cells.",
+          "indications": "To assess immune function and guide ART decisions.",
+          "risks": "Minimal, but requires venipuncture."
+        }
+      ]
+    },
+    "prognosis": "With effective antiretroviral therapy, individuals with HIV can live long, healthy lives. Early diagnosis and treatment are crucial for improving outcomes and reducing transmission risk.",
+    "complications": [
+      "Opportunistic infections (e.g., PCP, TB)",
+      "Malignancies (e.g., Kaposi's sarcoma, lymphoma)",
+      "Neurological complications (e.g., HIV-associated dementia)",
+      "Chronic kidney disease",
+      "Cardiovascular disease"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of HIV, perform initial screening tests, provide education on safe practices, and refer patients for specialist care. They should also be aware of the importance of routine monitoring and adherence to ART.",
+    "escalation": "Refer to an HIV specialist if: 1) Initial tests are positive; 2) Patient presents with opportunistic infections; 3) There are complications of ART; 4) Patient has difficulty adhering to treatment.",
+    "keySafetyConsiderations": "Ensure confidentiality and sensitivity when discussing HIV status. Provide education on safe sex practices and the importance of regular follow-up. Monitor for drug interactions and side effects of ART."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "gonorrhoea",
+  "name": "Gonorrhoea",
+  "domains": [
+    "Infection",
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T20:08:25.431199",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gonorrhoea: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGonorrhoea is a sexually transmitted infection (STI) caused by the bacterium Neisseria gonorrhoeae, primarily affecting the mucous membranes of the urogenital tract, rectum, and throat.\n\n### Epidemiology\nGonorrhoea is one of the most common STIs worldwide, with an estimated 87 million new cases annually. It is particularly prevalent among young adults aged 15-24 years and is associated with high-risk sexual behaviors.\n\n### Essential Pathophysiology\nNeisseria gonorrhoeae adheres to epithelial cells of the urogenital tract, leading to inflammation and purulent discharge. The bacteria can evade the immune response and can spread to other sites, including the rectum and throat.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Urethral discharge (purulent)\n- Dysuria (painful urination)\n- Pelvic pain\n- Vaginal discharge\n- Rectal pain or discharge\n- Sore throat (if oropharyngeal infection)\n\n### Key Signs\n- Urethral inflammation (redness and swelling)\n- Cervical motion tenderness\n- Purulent cervical discharge\n- Fever (in severe cases)\n- Abdominal tenderness\n\n### Atypical Presentations\n- Asymptomatic infection (common in women)\n- Pharyngeal gonorrhoea may present with mild sore throat\n- Disseminated gonococcal infection (DGI) presenting with arthritis or skin lesions\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Fever and chills\n- Signs of septic arthritis\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Nucleic acid amplification tests (NAATs) from urine or swabs (cervical, urethral, rectal, or pharyngeal)\n- Gram stain of urethral discharge (less sensitive)\n\n### Second-line Investigations\n- Culture of Neisseria gonorrhoeae (for antibiotic sensitivity testing)\n- Serology for other STIs (e.g., HIV, syphilis)\n\n### Specialist Tests\n- Pelvic ultrasound (if complications such as PID are suspected)\n- Joint aspiration (if DGI is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by the detection of Neisseria gonorrhoeae in clinical specimens using NAATs or culture.\n\n### Key Differential Diagnoses to Exclude\n- Chlamydia trachomatis infection\n- Bacterial vaginosis\n- Trichomoniasis\n- Urinary tract infection\n- Pelvic inflammatory disease (PID)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ceftriaxone 500 mg IM as a single dose plus Azithromycin 1 g orally as a single dose (dual therapy)\n\n#### Second-line Treatments\n- Consider alternative regimens based on local resistance patterns\n\n#### Emergency Procedures\n- Pelvic examination and swab for culture if PID is suspected\n- Joint aspiration if DGI is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular screening for STIs in at-risk populations\n- Patient education on safe sex practices\n\n#### Second-line Treatments\n- Referral to sexual health services for persistent or recurrent infections\n\n#### Monitoring Requirements\n- Follow-up testing for reinfection after 3 months\n- Monitor for complications such as PID or DGI\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 500 mg IM as a single dose.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset, local injection site reactions.\n- **When to Use vs. Alternatives**: Monitor for allergic reactions, especially in patients with penicillin allergy.\n\n#### Azithromycin\n- **Mechanism of Action**: Macrolide antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 1 g orally as a single dose.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, potential for QT prolongation.\n- **When to Use vs. Alternatives**: Consider alternative if patient has a history of macrolide allergy.\n\n### Procedures\n\n#### Pelvic examination\n- **What it Involves**: A thorough examination of the pelvic organs to assess for signs of infection or complications.\n- **Indications**: Suspected pelvic inflammatory disease or severe symptoms.\n- **Key Risks/Complications**: Discomfort, potential for exacerbating infection.\n\n#### Joint aspiration\n- **What it Involves**: Needle aspiration of a joint to assess for infection or inflammation.\n- **Indications**: Suspected disseminated gonococcal infection with joint involvement.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis is excellent. However, untreated gonorrhoea can lead to serious complications such as PID, infertility, and increased risk of HIV transmission.\n\n### Important Complications to Watch For\n- Pelvic inflammatory disease (PID)\n- Ectopic pregnancy\n- Infertility\n- Disseminated gonococcal infection (DGI)\n- Increased susceptibility to HIV\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of gonorrhoea, perform initial assessments, order appropriate investigations, and initiate treatment. They should also provide education on safe sexual practices and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist in sexual health if there are complications, treatment failures, or if the patient is at high risk for reinfection.\n\n### Key Safety Considerations\nEnsure confidentiality and sensitivity when discussing sexual health. Provide clear instructions for follow-up and educate patients on the importance of notifying sexual partners.\n",
+  "content": {
+    "overview": {
+      "definition": "Gonorrhoea is a sexually transmitted infection (STI) caused by the bacterium Neisseria gonorrhoeae, primarily affecting the mucous membranes of the urogenital tract, rectum, and throat.",
+      "epidemiology": "Gonorrhoea is one of the most common STIs worldwide, with an estimated 87 million new cases annually. It is particularly prevalent among young adults aged 15-24 years and is associated with high-risk sexual behaviors.",
+      "pathophysiology": "Neisseria gonorrhoeae adheres to epithelial cells of the urogenital tract, leading to inflammation and purulent discharge. The bacteria can evade the immune response and can spread to other sites, including the rectum and throat."
+    },
+    "recognition": {
+      "symptoms": [
+        "Urethral discharge (purulent)",
+        "Dysuria (painful urination)",
+        "Pelvic pain",
+        "Vaginal discharge",
+        "Rectal pain or discharge",
+        "Sore throat (if oropharyngeal infection)"
+      ],
+      "signs": [
+        "Urethral inflammation (redness and swelling)",
+        "Cervical motion tenderness",
+        "Purulent cervical discharge",
+        "Fever (in severe cases)",
+        "Abdominal tenderness"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic infection (common in women)",
+        "Pharyngeal gonorrhoea may present with mild sore throat",
+        "Disseminated gonococcal infection (DGI) presenting with arthritis or skin lesions"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Fever and chills",
+        "Signs of septic arthritis",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Nucleic acid amplification tests (NAATs) from urine or swabs (cervical, urethral, rectal, or pharyngeal)",
+        "Gram stain of urethral discharge (less sensitive)"
+      ],
+      "secondLine": [
+        "Culture of Neisseria gonorrhoeae (for antibiotic sensitivity testing)",
+        "Serology for other STIs (e.g., HIV, syphilis)"
+      ],
+      "specialistTests": [
+        "Pelvic ultrasound (if complications such as PID are suspected)",
+        "Joint aspiration (if DGI is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by the detection of Neisseria gonorrhoeae in clinical specimens using NAATs or culture.",
+      "differentials": [
+        "Chlamydia trachomatis infection",
+        "Bacterial vaginosis",
+        "Trichomoniasis",
+        "Urinary tract infection",
+        "Pelvic inflammatory disease (PID)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ceftriaxone 500 mg IM as a single dose plus Azithromycin 1 g orally as a single dose (dual therapy)"
+        ],
+        "secondLine": [
+          "Consider alternative regimens based on local resistance patterns"
+        ],
+        "procedures": [
+          "Pelvic examination and swab for culture if PID is suspected",
+          "Joint aspiration if DGI is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular screening for STIs in at-risk populations",
+          "Patient education on safe sex practices"
+        ],
+        "secondLine": [
+          "Referral to sexual health services for persistent or recurrent infections"
+        ],
+        "monitoring": [
+          "Follow-up testing for reinfection after 3 months",
+          "Monitor for complications such as PID or DGI"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "500 mg IM as a single dose.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset, local injection site reactions.",
+          "notes": "Monitor for allergic reactions, especially in patients with penicillin allergy."
+        },
+        {
+          "name": "Azithromycin",
+          "mechanism": "Macrolide antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "1 g orally as a single dose.",
+          "sideEffects": "Gastrointestinal upset, potential for QT prolongation.",
+          "notes": "Consider alternative if patient has a history of macrolide allergy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pelvic examination",
+          "description": "A thorough examination of the pelvic organs to assess for signs of infection or complications.",
+          "indications": "Suspected pelvic inflammatory disease or severe symptoms.",
+          "risks": "Discomfort, potential for exacerbating infection."
+        },
+        {
+          "name": "Joint aspiration",
+          "description": "Needle aspiration of a joint to assess for infection or inflammation.",
+          "indications": "Suspected disseminated gonococcal infection with joint involvement.",
+          "risks": "Infection, bleeding, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis is excellent. However, untreated gonorrhoea can lead to serious complications such as PID, infertility, and increased risk of HIV transmission.",
+    "complications": [
+      "Pelvic inflammatory disease (PID)",
+      "Ectopic pregnancy",
+      "Infertility",
+      "Disseminated gonococcal infection (DGI)",
+      "Increased susceptibility to HIV"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of gonorrhoea, perform initial assessments, order appropriate investigations, and initiate treatment. They should also provide education on safe sexual practices and follow-up care.",
+    "escalation": "Refer to a specialist in sexual health if there are complications, treatment failures, or if the patient is at high risk for reinfection.",
+    "keySafetyConsiderations": "Ensure confidentiality and sensitivity when discussing sexual health. Provide clear instructions for follow-up and educate patients on the importance of notifying sexual partners."
+  }
+}

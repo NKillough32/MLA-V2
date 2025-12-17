@@ -1,0 +1,128 @@
+{
+  "id": "epistaxis",
+  "name": "Epistaxis",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:39:02.727191",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Epistaxis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEpistaxis, commonly known as a nosebleed, is the bleeding from the nasal cavity, which can occur from the anterior or posterior nasal vessels.\n\n### Epidemiology\nEpistaxis is a common condition, affecting approximately 60% of the population at some point in their lives. It is most prevalent in children aged 2-10 years and adults aged 50-80 years.\n\n### Essential Pathophysiology\nEpistaxis can result from local trauma, dry air, nasal infections, or systemic conditions affecting coagulation. Anterior bleeds typically arise from the Kiesselbach's plexus, while posterior bleeds originate from the sphenopalatine artery.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nasal bleeding\n- Blood in the throat\n- Swallowing blood\n\n### Key Signs\n- Visible blood from the nostrils\n- Signs of hypovolemia in severe cases\n\n### Atypical Presentations\n- Recurrent epistaxis without clear cause\n- Epistaxis associated with systemic symptoms (e.g., fever, weight loss)\n\n### Red Flags Requiring Immediate Action\n- Severe or persistent bleeding lasting more than 20 minutes\n- Bleeding associated with significant trauma\n- Signs of hypovolemic shock (e.g., tachycardia, hypotension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and examination\n- Complete blood count (CBC) if significant bleeding is suspected\n\n### Second-line Investigations\n- Coagulation profile (PT, aPTT, INR) if bleeding is recurrent or unexplained\n- Nasal endoscopy for persistent cases\n\n### Specialist Tests\n- CT angiography for suspected vascular malformations\n- Referral to ENT for persistent or severe cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical based on history and physical examination, with consideration of bleeding source and severity.\n\n### Key Differential Diagnoses to Exclude\n- Trauma (e.g., nasal fracture)\n- Coagulation disorders (e.g., hemophilia)\n- Hypertension\n- Nasal tumors (benign or malignant)\n- Infections (e.g., rhinitis, sinusitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Direct pressure (pinching the nostrils together for 10-15 minutes)\n- Sitting upright and leaning forward to prevent swallowing blood\n\n#### Second-line Treatments\n- Topical vasoconstrictors (e.g., oxymetazoline)\n- Cauterization (chemical or electrical) for localized bleeding\n\n#### Emergency Procedures\n- Nasal packing (anterior or posterior) for severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Identify and manage underlying causes (e.g., hypertension, anticoagulation)\n- Humidification and saline nasal sprays for dry nasal mucosa\n\n#### Second-line Treatments\n- Referral to ENT for recurrent cases or those requiring surgical intervention\n\n#### Monitoring Requirements\n- Regular follow-up for patients with recurrent epistaxis or those on anticoagulants\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxymetazoline\n- **Mechanism of Action**: Vasoconstrictor that reduces blood flow to the nasal mucosa\n- **Typical Dosing Range**: 1-2 sprays in each nostril every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Nasal irritation, rebound congestion with prolonged use\n- **When to Use vs. Alternatives**: Use with caution in patients with hypertension.\n\n#### Lidocaine with epinephrine\n- **Mechanism of Action**: Local anesthetic with vasoconstrictive properties\n- **Typical Dosing Range**: Apply topically to the bleeding site as needed\n- **Key Side Effects/Contraindications**: Local irritation, systemic absorption can cause cardiovascular effects\n- **When to Use vs. Alternatives**: Avoid in patients with known allergies to local anesthetics.\n\n### Procedures\n\n#### Nasal packing\n- **What it Involves**: Insertion of gauze or a specialized nasal pack into the nasal cavity to control bleeding\n- **Indications**: Severe epistaxis not controlled by conservative measures\n- **Key Risks/Complications**: Discomfort, infection, sinusitis, and potential for rebleeding upon removal.\n\n#### Cauterization\n- **What it Involves**: Application of chemical agents (e.g., silver nitrate) or electrocautery to the bleeding vessel\n- **Indications**: Localized bleeding from identifiable vessels\n- **Key Risks/Complications**: Pain, tissue necrosis, and potential for scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of epistaxis are self-limiting and resolve with appropriate management. Recurrent cases may require further investigation and management of underlying causes.\n\n### Important Complications to Watch For\n- Recurrent epistaxis\n- Infection from nasal packing\n- Hypovolemic shock in severe cases\n- Anemia from chronic blood loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to assess and manage acute epistaxis, provide initial treatment, and recognize when to escalate care to ENT specialists for persistent or severe cases.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT if epistaxis is severe, recurrent, or associated with systemic symptoms. Consider urgent care if there are signs of hypovolemic shock.\n\n### Key Safety Considerations\nEnsure airway patency in severe cases, monitor vital signs, and be aware of the potential for significant blood loss. Educate patients on follow-up care and signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Epistaxis, commonly known as a nosebleed, is the bleeding from the nasal cavity, which can occur from the anterior or posterior nasal vessels.",
+      "epidemiology": "Epistaxis is a common condition, affecting approximately 60% of the population at some point in their lives. It is most prevalent in children aged 2-10 years and adults aged 50-80 years.",
+      "pathophysiology": "Epistaxis can result from local trauma, dry air, nasal infections, or systemic conditions affecting coagulation. Anterior bleeds typically arise from the Kiesselbach's plexus, while posterior bleeds originate from the sphenopalatine artery."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nasal bleeding",
+        "Blood in the throat",
+        "Swallowing blood"
+      ],
+      "signs": [
+        "Visible blood from the nostrils",
+        "Signs of hypovolemia in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Recurrent epistaxis without clear cause",
+        "Epistaxis associated with systemic symptoms (e.g., fever, weight loss)"
+      ],
+      "redFlags": [
+        "Severe or persistent bleeding lasting more than 20 minutes",
+        "Bleeding associated with significant trauma",
+        "Signs of hypovolemic shock (e.g., tachycardia, hypotension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and examination",
+        "Complete blood count (CBC) if significant bleeding is suspected"
+      ],
+      "secondLine": [
+        "Coagulation profile (PT, aPTT, INR) if bleeding is recurrent or unexplained",
+        "Nasal endoscopy for persistent cases"
+      ],
+      "specialistTests": [
+        "CT angiography for suspected vascular malformations",
+        "Referral to ENT for persistent or severe cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical based on history and physical examination, with consideration of bleeding source and severity.",
+      "differentials": [
+        "Trauma (e.g., nasal fracture)",
+        "Coagulation disorders (e.g., hemophilia)",
+        "Hypertension",
+        "Nasal tumors (benign or malignant)",
+        "Infections (e.g., rhinitis, sinusitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Direct pressure (pinching the nostrils together for 10-15 minutes)",
+          "Sitting upright and leaning forward to prevent swallowing blood"
+        ],
+        "secondLine": [
+          "Topical vasoconstrictors (e.g., oxymetazoline)",
+          "Cauterization (chemical or electrical) for localized bleeding"
+        ],
+        "procedures": [
+          "Nasal packing (anterior or posterior) for severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Identify and manage underlying causes (e.g., hypertension, anticoagulation)",
+          "Humidification and saline nasal sprays for dry nasal mucosa"
+        ],
+        "secondLine": [
+          "Referral to ENT for recurrent cases or those requiring surgical intervention"
+        ],
+        "monitoring": [
+          "Regular follow-up for patients with recurrent epistaxis or those on anticoagulants"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxymetazoline",
+          "mechanism": "Vasoconstrictor that reduces blood flow to the nasal mucosa",
+          "dosing": "1-2 sprays in each nostril every 6-8 hours as needed",
+          "sideEffects": "Nasal irritation, rebound congestion with prolonged use",
+          "notes": "Use with caution in patients with hypertension."
+        },
+        {
+          "name": "Lidocaine with epinephrine",
+          "mechanism": "Local anesthetic with vasoconstrictive properties",
+          "dosing": "Apply topically to the bleeding site as needed",
+          "sideEffects": "Local irritation, systemic absorption can cause cardiovascular effects",
+          "notes": "Avoid in patients with known allergies to local anesthetics."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nasal packing",
+          "description": "Insertion of gauze or a specialized nasal pack into the nasal cavity to control bleeding",
+          "indications": "Severe epistaxis not controlled by conservative measures",
+          "risks": "Discomfort, infection, sinusitis, and potential for rebleeding upon removal."
+        },
+        {
+          "name": "Cauterization",
+          "description": "Application of chemical agents (e.g., silver nitrate) or electrocautery to the bleeding vessel",
+          "indications": "Localized bleeding from identifiable vessels",
+          "risks": "Pain, tissue necrosis, and potential for scarring."
+        }
+      ]
+    },
+    "prognosis": "Most cases of epistaxis are self-limiting and resolve with appropriate management. Recurrent cases may require further investigation and management of underlying causes.",
+    "complications": [
+      "Recurrent epistaxis",
+      "Infection from nasal packing",
+      "Hypovolemic shock in severe cases",
+      "Anemia from chronic blood loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to assess and manage acute epistaxis, provide initial treatment, and recognize when to escalate care to ENT specialists for persistent or severe cases.",
+    "escalation": "Refer to ENT if epistaxis is severe, recurrent, or associated with systemic symptoms. Consider urgent care if there are signs of hypovolemic shock.",
+    "keySafetyConsiderations": "Ensure airway patency in severe cases, monitor vital signs, and be aware of the potential for significant blood loss. Educate patients on follow-up care and signs of complications."
+  }
+}

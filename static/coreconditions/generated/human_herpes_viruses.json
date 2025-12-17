@@ -1,0 +1,148 @@
+{
+  "id": "human_herpes_viruses",
+  "name": "Human herpes viruses",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:06:34.941690",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Human herpes viruses: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHuman herpes viruses (HHV) are a group of viruses that cause a variety of diseases in humans, characterized by their ability to establish lifelong latency in the host after primary infection. The most clinically significant members include Herpes Simplex Virus (HSV) types 1 and 2, Varicella-Zoster Virus (VZV), Epstein-Barr Virus (EBV), Cytomegalovirus (CMV), and Human Herpesvirus 6 (HHV-6).\n\n### Epidemiology\nHHVs are ubiquitous, with a high prevalence in the global population. HSV-1 is commonly associated with oral lesions, while HSV-2 is primarily linked to genital infections. VZV causes chickenpox and shingles, while EBV is associated with infectious mononucleosis and certain malignancies. CMV is a leading cause of congenital infections and opportunistic infections in immunocompromised patients.\n\n### Essential Pathophysiology\nHHVs enter the body through mucosal surfaces, replicate locally, and then establish latency in sensory ganglia or other tissues. Reactivation can occur due to various triggers, leading to symptomatic disease. The immune response plays a crucial role in controlling the infection and preventing reactivation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Fatigue\n- Sore throat\n- Lymphadenopathy\n- Painful vesicular lesions (oral or genital)\n- Rash (chickenpox or shingles)\n- Neurological symptoms (e.g., encephalitis)\n\n### Key Signs\n- Vesicular lesions on mucosal surfaces or skin\n- Lymphadenopathy\n- Fever\n- Rash (shingles)\n- Signs of systemic infection (e.g., hepatosplenomegaly in CMV)\n\n### Atypical Presentations\n- Asymptomatic shedding of HSV\n- Severe systemic illness in immunocompromised patients\n- Recurrent herpes labialis or genitalis with atypical lesions\n\n### Red Flags Requiring Immediate Action\n- Severe headache or altered mental status (possible encephalitis)\n- Severe immunocompromise (e.g., HIV, transplant patients)\n- Persistent fever with no clear source\n- Severe pain or neurological deficits in shingles\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and examination\n- PCR testing of lesions or blood for HSV, VZV, or CMV\n- Serology for EBV and CMV\n\n### Second-line Investigations\n- Tzanck smear (less commonly used)\n- Viral culture from lesions\n- Lymphocyte subset analysis in suspected CMV infection\n\n### Specialist Tests\n- Lumbar puncture for CSF analysis in suspected viral encephalitis\n- Biopsy of lesions for histopathological examination\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by laboratory tests. For HSV, PCR or serology can confirm active or past infection. For VZV, clinical presentation and PCR are key. EBV diagnosis is confirmed by serology (heterophile antibodies, VCA, and EBNA).\n\n### Key Differential Diagnoses to Exclude\n- Bacterial skin infections (e.g., impetigo)\n- Other viral infections (e.g., Coxsackievirus, HIV)\n- Fungal infections (e.g., candidiasis)\n- Non-infectious causes of vesicular lesions (e.g., contact dermatitis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Acyclovir 400 mg orally three times daily for HSV infections\n- Valacyclovir 1 g orally twice daily for genital herpes\n- Supportive care (analgesics, hydration)\n\n#### Second-line Treatments\n- Foscarnet for acyclovir-resistant HSV\n- Ganciclovir for severe CMV infections\n\n#### Emergency Procedures\n- Lumbar puncture for CSF analysis in suspected viral encephalitis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term suppressive therapy with acyclovir or valacyclovir for recurrent HSV infections\n\n#### Second-line Treatments\n- Consider immunotherapy for recurrent VZV infections in immunocompromised patients\n\n#### Monitoring Requirements\n- Regular follow-up for immunocompromised patients to monitor for CMV reactivation\n- Education on safe practices to prevent transmission\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate and causing chain termination.\n- **Typical Dosing Range**: Initial: 400 mg orally three times daily for 7-10 days; Suppressive: 400 mg twice daily.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache, renal toxicity (especially with rapid infusion).\n- **When to Use vs. Alternatives**: Hydration is important to prevent renal toxicity.\n\n#### Valacyclovir\n- **Mechanism of Action**: Prodrug of acyclovir, converted to acyclovir in the body, inhibits viral DNA synthesis.\n- **Typical Dosing Range**: Initial: 1 g orally twice daily for 7-10 days; Suppressive: 500 mg to 1 g once daily.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal pain, renal toxicity.\n- **When to Use vs. Alternatives**: More convenient dosing than acyclovir.\n\n#### Ganciclovir\n- **Mechanism of Action**: Inhibits viral DNA synthesis, primarily used for CMV infections.\n- **Typical Dosing Range**: 5 mg/kg IV every 12 hours for 14-21 days for induction; then 5 mg/kg once daily for maintenance.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, renal toxicity, fever, rash.\n- **When to Use vs. Alternatives**: Requires monitoring of blood counts.\n\n#### Foscarnet\n- **Mechanism of Action**: Inhibits viral DNA polymerase, used for resistant infections.\n- **Typical Dosing Range**: 40 mg/kg IV every 8 hours for 14-21 days.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, electrolyte imbalances, seizures.\n- **When to Use vs. Alternatives**: Requires careful monitoring of renal function.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected viral encephalitis or meningitis.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost HHV infections are self-limiting, but complications can occur, especially in immunocompromised individuals. Chronic infections (e.g., CMV) can lead to significant morbidity.\n\n### Important Complications to Watch For\n- Encephalitis (HSV)\n- Secondary bacterial infections\n- Postherpetic neuralgia (shingles)\n- Congenital CMV infection\n- Malignancies associated with EBV (e.g., lymphoma)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of HHV infections, initiate appropriate investigations, and manage acute cases. They should also educate patients on transmission and prevention strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to infectious disease specialists for severe or complicated cases, especially in immunocompromised patients or when there is uncertainty in diagnosis or management.\n\n### Key Safety Considerations\nEnsure appropriate use of antiviral medications to prevent resistance. Monitor renal function in patients receiving nephrotoxic drugs like acyclovir and ganciclovir. Educate patients on the importance of safe practices to prevent transmission of HHVs.\n",
+  "content": {
+    "overview": {
+      "definition": "Human herpes viruses (HHV) are a group of viruses that cause a variety of diseases in humans, characterized by their ability to establish lifelong latency in the host after primary infection. The most clinically significant members include Herpes Simplex Virus (HSV) types 1 and 2, Varicella-Zoster Virus (VZV), Epstein-Barr Virus (EBV), Cytomegalovirus (CMV), and Human Herpesvirus 6 (HHV-6).",
+      "epidemiology": "HHVs are ubiquitous, with a high prevalence in the global population. HSV-1 is commonly associated with oral lesions, while HSV-2 is primarily linked to genital infections. VZV causes chickenpox and shingles, while EBV is associated with infectious mononucleosis and certain malignancies. CMV is a leading cause of congenital infections and opportunistic infections in immunocompromised patients.",
+      "pathophysiology": "HHVs enter the body through mucosal surfaces, replicate locally, and then establish latency in sensory ganglia or other tissues. Reactivation can occur due to various triggers, leading to symptomatic disease. The immune response plays a crucial role in controlling the infection and preventing reactivation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Fatigue",
+        "Sore throat",
+        "Lymphadenopathy",
+        "Painful vesicular lesions (oral or genital)",
+        "Rash (chickenpox or shingles)",
+        "Neurological symptoms (e.g., encephalitis)"
+      ],
+      "signs": [
+        "Vesicular lesions on mucosal surfaces or skin",
+        "Lymphadenopathy",
+        "Fever",
+        "Rash (shingles)",
+        "Signs of systemic infection (e.g., hepatosplenomegaly in CMV)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic shedding of HSV",
+        "Severe systemic illness in immunocompromised patients",
+        "Recurrent herpes labialis or genitalis with atypical lesions"
+      ],
+      "redFlags": [
+        "Severe headache or altered mental status (possible encephalitis)",
+        "Severe immunocompromise (e.g., HIV, transplant patients)",
+        "Persistent fever with no clear source",
+        "Severe pain or neurological deficits in shingles"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and examination",
+        "PCR testing of lesions or blood for HSV, VZV, or CMV",
+        "Serology for EBV and CMV"
+      ],
+      "secondLine": [
+        "Tzanck smear (less commonly used)",
+        "Viral culture from lesions",
+        "Lymphocyte subset analysis in suspected CMV infection"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for CSF analysis in suspected viral encephalitis",
+        "Biopsy of lesions for histopathological examination"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by laboratory tests. For HSV, PCR or serology can confirm active or past infection. For VZV, clinical presentation and PCR are key. EBV diagnosis is confirmed by serology (heterophile antibodies, VCA, and EBNA).",
+      "differentials": [
+        "Bacterial skin infections (e.g., impetigo)",
+        "Other viral infections (e.g., Coxsackievirus, HIV)",
+        "Fungal infections (e.g., candidiasis)",
+        "Non-infectious causes of vesicular lesions (e.g., contact dermatitis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Acyclovir 400 mg orally three times daily for HSV infections",
+          "Valacyclovir 1 g orally twice daily for genital herpes",
+          "Supportive care (analgesics, hydration)"
+        ],
+        "secondLine": [
+          "Foscarnet for acyclovir-resistant HSV",
+          "Ganciclovir for severe CMV infections"
+        ],
+        "procedures": [
+          "Lumbar puncture for CSF analysis in suspected viral encephalitis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term suppressive therapy with acyclovir or valacyclovir for recurrent HSV infections"
+        ],
+        "secondLine": [
+          "Consider immunotherapy for recurrent VZV infections in immunocompromised patients"
+        ],
+        "monitoring": [
+          "Regular follow-up for immunocompromised patients to monitor for CMV reactivation",
+          "Education on safe practices to prevent transmission"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Inhibits viral DNA synthesis by competing with deoxyguanosine triphosphate and causing chain termination.",
+          "dosing": "Initial: 400 mg orally three times daily for 7-10 days; Suppressive: 400 mg twice daily.",
+          "sideEffects": "Nausea, diarrhea, headache, renal toxicity (especially with rapid infusion).",
+          "notes": "Hydration is important to prevent renal toxicity."
+        },
+        {
+          "name": "Valacyclovir",
+          "mechanism": "Prodrug of acyclovir, converted to acyclovir in the body, inhibits viral DNA synthesis.",
+          "dosing": "Initial: 1 g orally twice daily for 7-10 days; Suppressive: 500 mg to 1 g once daily.",
+          "sideEffects": "Headache, nausea, abdominal pain, renal toxicity.",
+          "notes": "More convenient dosing than acyclovir."
+        },
+        {
+          "name": "Ganciclovir",
+          "mechanism": "Inhibits viral DNA synthesis, primarily used for CMV infections.",
+          "dosing": "5 mg/kg IV every 12 hours for 14-21 days for induction; then 5 mg/kg once daily for maintenance.",
+          "sideEffects": "Bone marrow suppression, renal toxicity, fever, rash.",
+          "notes": "Requires monitoring of blood counts."
+        },
+        {
+          "name": "Foscarnet",
+          "mechanism": "Inhibits viral DNA polymerase, used for resistant infections.",
+          "dosing": "40 mg/kg IV every 8 hours for 14-21 days.",
+          "sideEffects": "Nephrotoxicity, electrolyte imbalances, seizures.",
+          "notes": "Requires careful monitoring of renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected viral encephalitis or meningitis.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "Most HHV infections are self-limiting, but complications can occur, especially in immunocompromised individuals. Chronic infections (e.g., CMV) can lead to significant morbidity.",
+    "complications": [
+      "Encephalitis (HSV)",
+      "Secondary bacterial infections",
+      "Postherpetic neuralgia (shingles)",
+      "Congenital CMV infection",
+      "Malignancies associated with EBV (e.g., lymphoma)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of HHV infections, initiate appropriate investigations, and manage acute cases. They should also educate patients on transmission and prevention strategies.",
+    "escalation": "Refer to infectious disease specialists for severe or complicated cases, especially in immunocompromised patients or when there is uncertainty in diagnosis or management.",
+    "keySafetyConsiderations": "Ensure appropriate use of antiviral medications to prevent resistance. Monitor renal function in patients receiving nephrotoxic drugs like acyclovir and ganciclovir. Educate patients on the importance of safe practices to prevent transmission of HHVs."
+  }
+}

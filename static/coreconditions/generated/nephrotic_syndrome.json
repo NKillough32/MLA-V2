@@ -1,0 +1,161 @@
+{
+  "id": "nephrotic_syndrome",
+  "name": "Nephrotic syndrome?",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:19:49.609488",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nephrotic syndrome?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNephrotic syndrome is a clinical condition characterized by a triad of proteinuria (excess protein in urine), hypoalbuminemia (low serum albumin levels), and edema (swelling due to fluid retention).\n\n### Epidemiology\nNephrotic syndrome is most common in children aged 2-6 years but can occur at any age. The incidence is approximately 2-7 cases per 100,000 children per year. In adults, it is often associated with underlying diseases such as diabetes and systemic lupus erythematosus.\n\n### Essential Pathophysiology\nNephrotic syndrome results from damage to the glomeruli, leading to increased permeability to proteins. This can be due to primary glomerular diseases (e.g., minimal change disease, focal segmental glomerulosclerosis) or secondary causes (e.g., diabetes, infections, drugs). The loss of protein leads to decreased oncotic pressure, resulting in edema and compensatory hyperlipidemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Edema (peripheral, periorbital, or ascites)\n- Fatigue\n- Weight gain due to fluid retention\n- Foamy urine (due to proteinuria)\n- Loss of appetite\n\n### Key Signs\n- Hypertension\n- Pitting edema\n- Ascites\n- Pale skin due to anemia\n- Signs of infection (if present)\n\n### Atypical Presentations\n- Acute kidney injury\n- Severe hypertension\n- Thromboembolic events (e.g., DVT, PE)\n\n### Red Flags Requiring Immediate Action\n- Severe edema or ascites\n- Acute kidney injury\n- Persistent hematuria\n- Signs of infection (fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for proteinuria)\n- Serum albumin\n- Serum creatinine\n- Lipid profile\n\n### Second-line Investigations\n- 24-hour urine protein collection\n- Serum electrolytes\n- Complement levels (C3, C4)\n- HIV, hepatitis B and C serologies\n\n### Specialist Tests\n- Kidney biopsy (if primary glomerular disease is suspected)\n- Immunofluorescence microscopy\n- Electron microscopy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of nephrotic syndrome is made with the presence of proteinuria >3.5 g/day, hypoalbuminemia (<30 g/L), and edema.\n\n### Key Differential Diagnoses to Exclude\n- Minimal change disease\n- Focal segmental glomerulosclerosis\n- Membranous nephropathy\n- Diabetic nephropathy\n- Lupus nephritis\n- Amyloidosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Diuretics (e.g., furosemide) for edema\n- ACE inhibitors (e.g., lisinopril) for hypertension and proteinuria\n- Supportive care (e.g., dietary sodium restriction)\n\n#### Second-line Treatments\n- Consider corticosteroids (e.g., prednisone) if primary nephrotic syndrome is suspected\n- Statins for hyperlipidemia\n\n#### Emergency Procedures\n- Paracentesis for symptomatic ascites\n- Dialysis if acute kidney injury occurs\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term corticosteroids for primary nephrotic syndrome (if indicated)\n- ACE inhibitors for hypertension and proteinuria\n- Statins for hyperlipidemia\n\n#### Second-line Treatments\n- Immunosuppressive agents (e.g., cyclophosphamide, mycophenolate mofetil) for resistant cases\n\n#### Monitoring Requirements\n- Regular follow-up for renal function (serum creatinine)\n- Monitoring of proteinuria\n- Assessment of complications (e.g., thromboembolism)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium reabsorption in the ascending loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; adjust based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor electrolytes and renal function regularly.\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial: 1-2 mg/kg/day; taper based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, increased infection risk.\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.\n- **Typical Dosing Range**: Initial: 5-10 mg daily; titrate based on blood pressure.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Statins (e.g., Atorvastatin)\n- **Mechanism of Action**: HMG-CoA reductase inhibitor that lowers cholesterol levels.\n- **Typical Dosing Range**: Initial: 10-20 mg daily; adjust based on lipid levels.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Monitor liver function tests.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: A procedure to remove fluid from the abdominal cavity using a needle.\n- **Indications**: Severe ascites causing discomfort or respiratory distress.\n- **Key Risks/Complications**: Infection, bleeding, bowel perforation.\n\n#### Kidney Biopsy\n- **What it Involves**: A procedure to obtain kidney tissue for histological examination.\n- **Indications**: Unexplained nephrotic syndrome, suspected primary glomerular disease.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of nephrotic syndrome varies based on the underlying cause. Minimal change disease often has a good prognosis with treatment, while focal segmental glomerulosclerosis may have a poorer outcome. Long-term complications include chronic kidney disease and increased risk of thromboembolic events.\n\n### Important Complications to Watch For\n- Chronic kidney disease\n- Thromboembolic events (DVT, PE)\n- Infections (due to immunosuppression)\n- Hyperlipidemia\n- Malnutrition due to protein loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of nephrotic syndrome, initiate appropriate investigations, manage acute symptoms, and refer to specialists for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to a nephrologist if there is no response to initial treatment, if there are signs of acute kidney injury, or if there are complications such as severe edema or infection.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess renal function and electrolytes in patients on diuretics and ACE inhibitors.\n",
+  "content": {
+    "overview": {
+      "definition": "Nephrotic syndrome is a clinical condition characterized by a triad of proteinuria (excess protein in urine), hypoalbuminemia (low serum albumin levels), and edema (swelling due to fluid retention).",
+      "epidemiology": "Nephrotic syndrome is most common in children aged 2-6 years but can occur at any age. The incidence is approximately 2-7 cases per 100,000 children per year. In adults, it is often associated with underlying diseases such as diabetes and systemic lupus erythematosus.",
+      "pathophysiology": "Nephrotic syndrome results from damage to the glomeruli, leading to increased permeability to proteins. This can be due to primary glomerular diseases (e.g., minimal change disease, focal segmental glomerulosclerosis) or secondary causes (e.g., diabetes, infections, drugs). The loss of protein leads to decreased oncotic pressure, resulting in edema and compensatory hyperlipidemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Edema (peripheral, periorbital, or ascites)",
+        "Fatigue",
+        "Weight gain due to fluid retention",
+        "Foamy urine (due to proteinuria)",
+        "Loss of appetite"
+      ],
+      "signs": [
+        "Hypertension",
+        "Pitting edema",
+        "Ascites",
+        "Pale skin due to anemia",
+        "Signs of infection (if present)"
+      ],
+      "atypicalPresentations": [
+        "Acute kidney injury",
+        "Severe hypertension",
+        "Thromboembolic events (e.g., DVT, PE)"
+      ],
+      "redFlags": [
+        "Severe edema or ascites",
+        "Acute kidney injury",
+        "Persistent hematuria",
+        "Signs of infection (fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for proteinuria)",
+        "Serum albumin",
+        "Serum creatinine",
+        "Lipid profile"
+      ],
+      "secondLine": [
+        "24-hour urine protein collection",
+        "Serum electrolytes",
+        "Complement levels (C3, C4)",
+        "HIV, hepatitis B and C serologies"
+      ],
+      "specialistTests": [
+        "Kidney biopsy (if primary glomerular disease is suspected)",
+        "Immunofluorescence microscopy",
+        "Electron microscopy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of nephrotic syndrome is made with the presence of proteinuria >3.5 g/day, hypoalbuminemia (<30 g/L), and edema.",
+      "differentials": [
+        "Minimal change disease",
+        "Focal segmental glomerulosclerosis",
+        "Membranous nephropathy",
+        "Diabetic nephropathy",
+        "Lupus nephritis",
+        "Amyloidosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Diuretics (e.g., furosemide) for edema",
+          "ACE inhibitors (e.g., lisinopril) for hypertension and proteinuria",
+          "Supportive care (e.g., dietary sodium restriction)"
+        ],
+        "secondLine": [
+          "Consider corticosteroids (e.g., prednisone) if primary nephrotic syndrome is suspected",
+          "Statins for hyperlipidemia"
+        ],
+        "procedures": [
+          "Paracentesis for symptomatic ascites",
+          "Dialysis if acute kidney injury occurs"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term corticosteroids for primary nephrotic syndrome (if indicated)",
+          "ACE inhibitors for hypertension and proteinuria",
+          "Statins for hyperlipidemia"
+        ],
+        "secondLine": [
+          "Immunosuppressive agents (e.g., cyclophosphamide, mycophenolate mofetil) for resistant cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for renal function (serum creatinine)",
+          "Monitoring of proteinuria",
+          "Assessment of complications (e.g., thromboembolism)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium reabsorption in the ascending loop of Henle, promoting diuresis.",
+          "dosing": "Initial: 20-40 mg IV/PO; adjust based on response.",
+          "sideEffects": "Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.",
+          "notes": "Monitor electrolytes and renal function regularly."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Initial: 1-2 mg/kg/day; taper based on response.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, increased infection risk.",
+          "notes": "Long-term use requires monitoring for side effects."
+        },
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased blood pressure.",
+          "dosing": "Initial: 5-10 mg daily; titrate based on blood pressure.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment.",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Statins (e.g., Atorvastatin)",
+          "mechanism": "HMG-CoA reductase inhibitor that lowers cholesterol levels.",
+          "dosing": "Initial: 10-20 mg daily; adjust based on lipid levels.",
+          "sideEffects": "Myopathy, liver enzyme elevation.",
+          "notes": "Monitor liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "A procedure to remove fluid from the abdominal cavity using a needle.",
+          "indications": "Severe ascites causing discomfort or respiratory distress.",
+          "risks": "Infection, bleeding, bowel perforation."
+        },
+        {
+          "name": "Kidney Biopsy",
+          "description": "A procedure to obtain kidney tissue for histological examination.",
+          "indications": "Unexplained nephrotic syndrome, suspected primary glomerular disease.",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of nephrotic syndrome varies based on the underlying cause. Minimal change disease often has a good prognosis with treatment, while focal segmental glomerulosclerosis may have a poorer outcome. Long-term complications include chronic kidney disease and increased risk of thromboembolic events.",
+    "complications": [
+      "Chronic kidney disease",
+      "Thromboembolic events (DVT, PE)",
+      "Infections (due to immunosuppression)",
+      "Hyperlipidemia",
+      "Malnutrition due to protein loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of nephrotic syndrome, initiate appropriate investigations, manage acute symptoms, and refer to specialists for further evaluation and treatment.",
+    "escalation": "Refer to a nephrologist if there is no response to initial treatment, if there are signs of acute kidney injury, or if there are complications such as severe edema or infection.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients on immunosuppressive therapy. Regularly assess renal function and electrolytes in patients on diuretics and ACE inhibitors."
+  }
+}

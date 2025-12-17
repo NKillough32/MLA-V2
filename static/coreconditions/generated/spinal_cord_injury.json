@@ -1,0 +1,131 @@
+{
+  "id": "spinal_cord_injury",
+  "name": "Spinal cord injury",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:34:06.712117",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Spinal cord injury: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSpinal cord injury (SCI) refers to damage to the spinal cord that results in a loss of function, such as mobility or feeling. It can be complete (total loss of function below the injury) or incomplete (some function remains).\n\n### Epidemiology\nApproximately 17,000 new cases of spinal cord injury occur each year in the United States, with a higher prevalence in males (80% of cases). The most common causes include motor vehicle accidents, falls, and sports injuries.\n\n### Essential Pathophysiology\nSpinal cord injuries can result from traumatic events that cause direct damage to the spinal cord or indirect damage due to ischemia, inflammation, or secondary injury processes. The injury can disrupt the neural pathways, leading to loss of motor and sensory function.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Loss of sensation or movement below the level of injury\n- Bowel and bladder dysfunction\n- Pain or discomfort in the neck or back\n- Difficulty breathing (in high cervical injuries)\n\n### Key Signs\n- Motor deficits (weakness or paralysis)\n- Sensory deficits (numbness or tingling)\n- Spinal shock (flaccid paralysis and loss of reflexes immediately after injury)\n- Abnormal posturing (decerebrate or decorticate posturing)\n\n### Atypical Presentations\n- Neurogenic shock (hypotension and bradycardia)\n- Autonomic dysreflexia (in patients with injuries above T6)\n\n### Red Flags Requiring Immediate Action\n- Severe back pain after trauma\n- Loss of bowel or bladder control\n- Progressive weakness or sensory loss\n- Signs of spinal shock\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the spine to assess for fractures or dislocations\n- CT scan for detailed bony anatomy and alignment\n\n### Second-line Investigations\n- MRI of the spine to evaluate soft tissue, spinal cord edema, and hematoma\n\n### Specialist Tests\n- Neurophysiological studies (e.g., EMG, nerve conduction studies) to assess nerve function\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical assessment of motor and sensory function using the American Spinal Injury Association (ASIA) impairment scale, which classifies the severity of injury from A (complete) to E (normal).\n\n### Key Differential Diagnoses to Exclude\n- Herniated disc\n- Spinal stenosis\n- Transverse myelitis\n- Multiple sclerosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immobilization of the spine (using a cervical collar and backboard)\n- High-dose corticosteroids (e.g., methylprednisolone) within 8 hours of injury to reduce inflammation\n\n#### Second-line Treatments\n- Surgical decompression if there is evidence of spinal cord compression or unstable fractures\n\n#### Emergency Procedures\n- Laminectomy for decompression of the spinal cord\n- Spinal fusion for stabilization of the spine\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation programs focusing on physical therapy and occupational therapy\n- Management of spasticity with baclofen or tizanidine\n\n#### Second-line Treatments\n- Surgical interventions for spasticity (e.g., intrathecal baclofen pump)\n- Pain management strategies (e.g., gabapentin)\n\n#### Monitoring Requirements\n- Regular assessment of neurological function and complications (e.g., pressure ulcers, urinary tract infections)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methylprednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and secondary injury to the spinal cord.\n- **Typical Dosing Range**: 30 mg/kg IV bolus followed by 5.4 mg/kg/hr infusion for 23 hours.\n- **Key Side Effects/Contraindications**: Increased risk of infection, gastrointestinal bleeding, hyperglycemia.\n- **When to Use vs. Alternatives**: Administer within 8 hours of injury for maximum benefit.\n\n#### Baclofen\n- **Mechanism of Action**: GABA-B receptor agonist that reduces spasticity.\n- **Typical Dosing Range**: Oral: 5-10 mg TID, titrate to effect; Intrathecal: 50-100 mcg/day, adjust as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, weakness, withdrawal symptoms if stopped abruptly.\n- **When to Use vs. Alternatives**: Monitor for signs of overdose (e.g., respiratory depression).\n\n### Procedures\n\n#### Laminectomy\n- **What it Involves**: Surgical procedure to remove the lamina of the vertebrae to relieve pressure on the spinal cord.\n- **Indications**: Spinal cord compression due to herniated disc, tumor, or fracture.\n- **Key Risks/Complications**: Infection, bleeding, nerve damage, instability of the spine.\n\n#### Spinal fusion\n- **What it Involves**: Surgical procedure to join two or more vertebrae together to stabilize the spine.\n- **Indications**: Unstable fractures, degenerative disc disease.\n- **Key Risks/Complications**: Infection, blood loss, failure of fusion, adjacent segment disease. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for spinal cord injury varies widely based on the level and completeness of the injury. Patients with complete injuries have a poorer prognosis for recovery compared to those with incomplete injuries. Rehabilitation can significantly improve quality of life and functional independence.\n\n### Important Complications to Watch For\n- Pressure ulcers\n- Deep vein thrombosis (DVT)\n- Urinary tract infections (UTIs)\n- Autonomic dysreflexia (in injuries above T6)\n- Respiratory complications (in high cervical injuries)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, stabilize the patient, initiate imaging, and manage acute complications. They should also coordinate with rehabilitation teams for long-term management.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurological deterioration, respiratory distress, or hemodynamic instability, escalate care to senior medical staff or neurosurgery promptly.\n\n### Key Safety Considerations\nEnsure spinal immobilization during transport, monitor for signs of shock or respiratory distress, and be vigilant for complications such as autonomic dysreflexia in patients with high-level injuries.\n",
+  "content": {
+    "overview": {
+      "definition": "Spinal cord injury (SCI) refers to damage to the spinal cord that results in a loss of function, such as mobility or feeling. It can be complete (total loss of function below the injury) or incomplete (some function remains).",
+      "epidemiology": "Approximately 17,000 new cases of spinal cord injury occur each year in the United States, with a higher prevalence in males (80% of cases). The most common causes include motor vehicle accidents, falls, and sports injuries.",
+      "pathophysiology": "Spinal cord injuries can result from traumatic events that cause direct damage to the spinal cord or indirect damage due to ischemia, inflammation, or secondary injury processes. The injury can disrupt the neural pathways, leading to loss of motor and sensory function."
+    },
+    "recognition": {
+      "symptoms": [
+        "Loss of sensation or movement below the level of injury",
+        "Bowel and bladder dysfunction",
+        "Pain or discomfort in the neck or back",
+        "Difficulty breathing (in high cervical injuries)"
+      ],
+      "signs": [
+        "Motor deficits (weakness or paralysis)",
+        "Sensory deficits (numbness or tingling)",
+        "Spinal shock (flaccid paralysis and loss of reflexes immediately after injury)",
+        "Abnormal posturing (decerebrate or decorticate posturing)"
+      ],
+      "atypicalPresentations": [
+        "Neurogenic shock (hypotension and bradycardia)",
+        "Autonomic dysreflexia (in patients with injuries above T6)"
+      ],
+      "redFlags": [
+        "Severe back pain after trauma",
+        "Loss of bowel or bladder control",
+        "Progressive weakness or sensory loss",
+        "Signs of spinal shock"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the spine to assess for fractures or dislocations",
+        "CT scan for detailed bony anatomy and alignment"
+      ],
+      "secondLine": [
+        "MRI of the spine to evaluate soft tissue, spinal cord edema, and hematoma"
+      ],
+      "specialistTests": [
+        "Neurophysiological studies (e.g., EMG, nerve conduction studies) to assess nerve function"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical assessment of motor and sensory function using the American Spinal Injury Association (ASIA) impairment scale, which classifies the severity of injury from A (complete) to E (normal).",
+      "differentials": [
+        "Herniated disc",
+        "Spinal stenosis",
+        "Transverse myelitis",
+        "Multiple sclerosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immobilization of the spine (using a cervical collar and backboard)",
+          "High-dose corticosteroids (e.g., methylprednisolone) within 8 hours of injury to reduce inflammation"
+        ],
+        "secondLine": [
+          "Surgical decompression if there is evidence of spinal cord compression or unstable fractures"
+        ],
+        "procedures": [
+          "Laminectomy for decompression of the spinal cord",
+          "Spinal fusion for stabilization of the spine"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation programs focusing on physical therapy and occupational therapy",
+          "Management of spasticity with baclofen or tizanidine"
+        ],
+        "secondLine": [
+          "Surgical interventions for spasticity (e.g., intrathecal baclofen pump)",
+          "Pain management strategies (e.g., gabapentin)"
+        ],
+        "monitoring": [
+          "Regular assessment of neurological function and complications (e.g., pressure ulcers, urinary tract infections)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methylprednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation and secondary injury to the spinal cord.",
+          "dosing": "30 mg/kg IV bolus followed by 5.4 mg/kg/hr infusion for 23 hours.",
+          "sideEffects": "Increased risk of infection, gastrointestinal bleeding, hyperglycemia.",
+          "notes": "Administer within 8 hours of injury for maximum benefit."
+        },
+        {
+          "name": "Baclofen",
+          "mechanism": "GABA-B receptor agonist that reduces spasticity.",
+          "dosing": "Oral: 5-10 mg TID, titrate to effect; Intrathecal: 50-100 mcg/day, adjust as needed.",
+          "sideEffects": "Drowsiness, dizziness, weakness, withdrawal symptoms if stopped abruptly.",
+          "notes": "Monitor for signs of overdose (e.g., respiratory depression)."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laminectomy",
+          "description": "Surgical procedure to remove the lamina of the vertebrae to relieve pressure on the spinal cord.",
+          "indications": "Spinal cord compression due to herniated disc, tumor, or fracture.",
+          "risks": "Infection, bleeding, nerve damage, instability of the spine."
+        },
+        {
+          "name": "Spinal fusion",
+          "description": "Surgical procedure to join two or more vertebrae together to stabilize the spine.",
+          "indications": "Unstable fractures, degenerative disc disease.",
+          "risks": "Infection, blood loss, failure of fusion, adjacent segment disease. "
+        }
+      ]
+    },
+    "prognosis": "The prognosis for spinal cord injury varies widely based on the level and completeness of the injury. Patients with complete injuries have a poorer prognosis for recovery compared to those with incomplete injuries. Rehabilitation can significantly improve quality of life and functional independence.",
+    "complications": [
+      "Pressure ulcers",
+      "Deep vein thrombosis (DVT)",
+      "Urinary tract infections (UTIs)",
+      "Autonomic dysreflexia (in injuries above T6)",
+      "Respiratory complications (in high cervical injuries)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, stabilize the patient, initiate imaging, and manage acute complications. They should also coordinate with rehabilitation teams for long-term management.",
+    "escalation": "If there are signs of neurological deterioration, respiratory distress, or hemodynamic instability, escalate care to senior medical staff or neurosurgery promptly.",
+    "keySafetyConsiderations": "Ensure spinal immobilization during transport, monitor for signs of shock or respiratory distress, and be vigilant for complications such as autonomic dysreflexia in patients with high-level injuries."
+  }
+}

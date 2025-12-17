@@ -1,0 +1,140 @@
+{
+  "id": "self_harm",
+  "name": "Self-harm",
+  "domains": [
+    "Psychiatry",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:08:06.638903",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Self-harm: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSelf-harm refers to the intentional act of causing harm to oneself, often as a way to cope with emotional distress. It can include cutting, burning, or other forms of self-injury without the intent to die.\n\n### Epidemiology\nSelf-harm is prevalent among adolescents and young adults, with studies indicating that approximately 10-20% of adolescents report self-harming behavior at some point. It is more common in females than males.\n\n### Essential Pathophysiology\nSelf-harm is often associated with underlying mental health conditions such as depression, anxiety, borderline personality disorder, and trauma. It may serve as a maladaptive coping mechanism to manage emotional pain, regulate intense emotions, or exert control.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Feelings of hopelessness or worthlessness\n- Emotional distress or turmoil\n- Impulsivity\n- Low self-esteem\n- Social withdrawal\n\n### Key Signs\n- Visible injuries or scars on the body\n- Frequent unexplained injuries\n- Wearing long sleeves in warm weather\n- Changes in behavior or mood\n- Increased substance use\n\n### Atypical Presentations\n- Self-harm may not always be visible; some individuals may engage in self-harm behaviors that are less obvious, such as substance abuse or risky behaviors.\n- Self-harm can also manifest as self-neglect or refusal to care for oneself.\n\n### Red Flags Requiring Immediate Action\n- Suicidal ideation or plans\n- Severe emotional distress\n- Recent trauma or loss\n- Increased frequency or severity of self-harm episodes\n- Substance abuse\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview to assess self-harm behavior, triggers, and underlying issues\n- Mental state examination\n\n### Second-line Investigations\n- Standardized assessment tools (e.g., Beck Depression Inventory, Hamilton Anxiety Scale)\n- Physical examination to assess the extent of injuries\n\n### Specialist Tests\n- Referral to a psychiatrist for comprehensive evaluation\n- Psychological testing if indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of self-harm is primarily clinical, based on the presence of intentional self-injury without suicidal intent. It is important to assess the context and motivations behind the behavior.\n\n### Key Differential Diagnoses to Exclude\n- Suicidal behavior\n- Eating disorders (e.g., anorexia, bulimia)\n- Substance use disorders\n- Post-traumatic stress disorder (PTSD)\n- Borderline personality disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ensure safety of the patient and assess for immediate risk of suicide\n- Provide a calm and supportive environment\n- Engage in active listening and validate feelings\n\n#### Second-line Treatments\n- Consider psychiatric referral for crisis intervention\n- Involve family or support systems if appropriate\n\n#### Emergency Procedures\n- Wound care for injuries (cleaning, suturing if necessary)\n- Psychiatric assessment for risk evaluation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive Behavioral Therapy (CBT)\n- Dialectical Behavior Therapy (DBT) for emotional regulation\n\n#### Second-line Treatments\n- Medication management for underlying mental health conditions (e.g., SSRIs for depression)\n- Group therapy or support groups\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess progress and safety\n- Monitoring for signs of worsening mental health or increased self-harm\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose: 20 mg daily, may increase to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.\n- **When to Use vs. Alternatives**: Consider monitoring for worsening symptoms during the initial treatment phase.\n\n#### Sertraline\n- **Mechanism of Action**: SSRI that helps to balance serotonin levels.\n- **Typical Dosing Range**: Starting dose: 50 mg daily, may increase to 200 mg based on response.\n- **Key Side Effects/Contraindications**: Diarrhea, insomnia, sexual dysfunction, headache.\n- **When to Use vs. Alternatives**: Effective for anxiety and depressive symptoms.\n\n### Procedures\n\n#### Wound care\n- **What it Involves**: Cleaning and dressing of self-inflicted wounds to prevent infection and promote healing.\n- **Indications**: Visible injuries requiring medical attention, such as cuts or burns.\n- **Key Risks/Complications**: Infection, scarring, and potential for further self-harm.\n\n#### Psychiatric assessment\n- **What it Involves**: Comprehensive evaluation by a psychiatrist to assess mental health status and risk factors.\n- **Indications**: Severe self-harm, suicidal ideation, or complex cases requiring specialized intervention.\n- **Key Risks/Complications**: Potential for distress during assessment; may require hospitalization if risk is high.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for individuals who self-harm varies widely. With appropriate intervention and support, many individuals can learn healthier coping mechanisms and reduce self-harming behaviors. However, there is a risk of recurrence, especially if underlying mental health issues are not addressed.\n\n### Important Complications to Watch For\n- Infection from self-inflicted wounds\n- Increased risk of future self-harm or suicidal behavior\n- Long-term psychological distress\n- Social and relational issues due to stigma or misunderstanding\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of self-harm, conduct initial assessments, provide immediate support, and refer to appropriate mental health services. They should also be aware of the importance of creating a safe and non-judgmental environment for patients.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe self-harm or suicidal ideation, immediate psychiatric consultation is necessary. If the patient is at imminent risk, hospitalization may be required for safety.\n\n### Key Safety Considerations\nAlways assess for suicidal ideation and intent. Ensure a safe environment for the patient, and involve mental health professionals early in the management process. Maintain confidentiality while ensuring the safety of the patient.\n",
+  "content": {
+    "overview": {
+      "definition": "Self-harm refers to the intentional act of causing harm to oneself, often as a way to cope with emotional distress. It can include cutting, burning, or other forms of self-injury without the intent to die.",
+      "epidemiology": "Self-harm is prevalent among adolescents and young adults, with studies indicating that approximately 10-20% of adolescents report self-harming behavior at some point. It is more common in females than males.",
+      "pathophysiology": "Self-harm is often associated with underlying mental health conditions such as depression, anxiety, borderline personality disorder, and trauma. It may serve as a maladaptive coping mechanism to manage emotional pain, regulate intense emotions, or exert control."
+    },
+    "recognition": {
+      "symptoms": [
+        "Feelings of hopelessness or worthlessness",
+        "Emotional distress or turmoil",
+        "Impulsivity",
+        "Low self-esteem",
+        "Social withdrawal"
+      ],
+      "signs": [
+        "Visible injuries or scars on the body",
+        "Frequent unexplained injuries",
+        "Wearing long sleeves in warm weather",
+        "Changes in behavior or mood",
+        "Increased substance use"
+      ],
+      "atypicalPresentations": [
+        "Self-harm may not always be visible; some individuals may engage in self-harm behaviors that are less obvious, such as substance abuse or risky behaviors.",
+        "Self-harm can also manifest as self-neglect or refusal to care for oneself."
+      ],
+      "redFlags": [
+        "Suicidal ideation or plans",
+        "Severe emotional distress",
+        "Recent trauma or loss",
+        "Increased frequency or severity of self-harm episodes",
+        "Substance abuse"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview to assess self-harm behavior, triggers, and underlying issues",
+        "Mental state examination"
+      ],
+      "secondLine": [
+        "Standardized assessment tools (e.g., Beck Depression Inventory, Hamilton Anxiety Scale)",
+        "Physical examination to assess the extent of injuries"
+      ],
+      "specialistTests": [
+        "Referral to a psychiatrist for comprehensive evaluation",
+        "Psychological testing if indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of self-harm is primarily clinical, based on the presence of intentional self-injury without suicidal intent. It is important to assess the context and motivations behind the behavior.",
+      "differentials": [
+        "Suicidal behavior",
+        "Eating disorders (e.g., anorexia, bulimia)",
+        "Substance use disorders",
+        "Post-traumatic stress disorder (PTSD)",
+        "Borderline personality disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ensure safety of the patient and assess for immediate risk of suicide",
+          "Provide a calm and supportive environment",
+          "Engage in active listening and validate feelings"
+        ],
+        "secondLine": [
+          "Consider psychiatric referral for crisis intervention",
+          "Involve family or support systems if appropriate"
+        ],
+        "procedures": [
+          "Wound care for injuries (cleaning, suturing if necessary)",
+          "Psychiatric assessment for risk evaluation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive Behavioral Therapy (CBT)",
+          "Dialectical Behavior Therapy (DBT) for emotional regulation"
+        ],
+        "secondLine": [
+          "Medication management for underlying mental health conditions (e.g., SSRIs for depression)",
+          "Group therapy or support groups"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess progress and safety",
+          "Monitoring for signs of worsening mental health or increased self-harm"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Starting dose: 20 mg daily, may increase to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.",
+          "notes": "Consider monitoring for worsening symptoms during the initial treatment phase."
+        },
+        {
+          "name": "Sertraline",
+          "mechanism": "SSRI that helps to balance serotonin levels.",
+          "dosing": "Starting dose: 50 mg daily, may increase to 200 mg based on response.",
+          "sideEffects": "Diarrhea, insomnia, sexual dysfunction, headache.",
+          "notes": "Effective for anxiety and depressive symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound care",
+          "description": "Cleaning and dressing of self-inflicted wounds to prevent infection and promote healing.",
+          "indications": "Visible injuries requiring medical attention, such as cuts or burns.",
+          "risks": "Infection, scarring, and potential for further self-harm."
+        },
+        {
+          "name": "Psychiatric assessment",
+          "description": "Comprehensive evaluation by a psychiatrist to assess mental health status and risk factors.",
+          "indications": "Severe self-harm, suicidal ideation, or complex cases requiring specialized intervention.",
+          "risks": "Potential for distress during assessment; may require hospitalization if risk is high."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for individuals who self-harm varies widely. With appropriate intervention and support, many individuals can learn healthier coping mechanisms and reduce self-harming behaviors. However, there is a risk of recurrence, especially if underlying mental health issues are not addressed.",
+    "complications": [
+      "Infection from self-inflicted wounds",
+      "Increased risk of future self-harm or suicidal behavior",
+      "Long-term psychological distress",
+      "Social and relational issues due to stigma or misunderstanding"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of self-harm, conduct initial assessments, provide immediate support, and refer to appropriate mental health services. They should also be aware of the importance of creating a safe and non-judgmental environment for patients.",
+    "escalation": "If a patient presents with severe self-harm or suicidal ideation, immediate psychiatric consultation is necessary. If the patient is at imminent risk, hospitalization may be required for safety.",
+    "keySafetyConsiderations": "Always assess for suicidal ideation and intent. Ensure a safe environment for the patient, and involve mental health professionals early in the management process. Maintain confidentiality while ensuring the safety of the patient."
+  }
+}

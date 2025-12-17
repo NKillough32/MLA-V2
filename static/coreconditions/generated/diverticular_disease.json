@@ -1,0 +1,138 @@
+{
+  "id": "diverticular_disease",
+  "name": "Diverticular disease",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:46:53.803298",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diverticular disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiverticular disease encompasses a spectrum of conditions related to the formation of diverticula (small pouches) in the colonic wall, including diverticulosis (presence of diverticula), diverticulitis (inflammation of diverticula), and complications such as abscesses or perforation.\n\n### Epidemiology\nDiverticular disease is common, particularly in Western populations, with prevalence increasing with age. It affects approximately 50% of individuals over 60 years of age. Diverticulitis occurs in about 10-25% of those with diverticulosis.\n\n### Essential Pathophysiology\nDiverticula form due to increased intraluminal pressure, often in the context of a low-fiber diet. Inflammation occurs when fecal matter becomes trapped in the diverticula, leading to diverticulitis. Risk factors include obesity, sedentary lifestyle, and certain medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (usually left lower quadrant)\n- Fever\n- Nausea and vomiting\n- Change in bowel habits (diarrhea or constipation)\n- Bloating\n\n### Key Signs\n- Tenderness in the left lower quadrant\n- Fever (often low-grade)\n- Guarding or rebound tenderness in severe cases\n- Possible palpable mass in case of abscess\n\n### Atypical Presentations\n- Right-sided diverticulitis (more common in Asian populations)\n- Asymptomatic diverticulosis (found incidentally)\n- Diverticular bleeding (painless rectal bleeding)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Signs of peritonitis (rigidity, rebound tenderness)\n- Hemodynamic instability (tachycardia, hypotension)\n- Persistent vomiting\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) to check for leukocytosis\n- CT abdomen/pelvis with contrast (gold standard for diverticulitis)\n- Abdominal ultrasound (alternative in certain populations)\n\n### Second-line Investigations\n- MRI abdomen (if CT is contraindicated)\n- Colonoscopy (after resolution of acute diverticulitis to assess for other pathology)\n\n### Specialist Tests\n- Flexible sigmoidoscopy or colonoscopy for evaluation of diverticular disease and to rule out malignancy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of diverticulitis is primarily clinical, supported by imaging findings on CT scan showing diverticula, pericolic fat stranding, and/or abscess formation.\n\n### Key Differential Diagnoses to Exclude\n- Colorectal cancer\n- Irritable bowel syndrome (IBS)\n- Inflammatory bowel disease (IBD)\n- Ischemic colitis\n- Appendicitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NPO (nothing by mouth)\n- IV fluids\n- Analgesia (e.g., paracetamol, opioids if severe)\n- Antibiotics (e.g., ciprofloxacin + metronidazole)\n\n#### Second-line Treatments\n- Surgical consultation for severe cases or complications (abscess, perforation)\n\n#### Emergency Procedures\n- CT-guided drainage of abscesses\n- Surgical resection (e.g., Hartmann's procedure) in cases of perforation or recurrent diverticulitis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modification (high-fiber diet)\n- Increased fluid intake\n- Regular exercise\n\n#### Second-line Treatments\n- Consideration of prophylactic surgery in recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up for symptom management and dietary adherence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, preventing DNA replication.\n- **Typical Dosing Range**: 500 mg orally every 12 hours for 7-10 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, tendonitis, risk of QT prolongation.\n- **When to Use vs. Alternatives**: Avoid in pregnancy and in children under 18 years.\n\n#### Metronidazole\n- **Mechanism of Action**: Antimicrobial that disrupts DNA synthesis in anaerobic bacteria and protozoa.\n- **Typical Dosing Range**: 500 mg orally every 8 hours for 7-10 days.\n- **Key Side Effects/Contraindications**: Nausea, metallic taste, disulfiram-like reaction with alcohol.\n- **When to Use vs. Alternatives**: Monitor for peripheral neuropathy with prolonged use.\n\n### Procedures\n\n#### CT-guided abscess drainage\n- **What it Involves**: Percutaneous drainage of an abscess under CT guidance.\n- **Indications**: Presence of a large abscess in diverticulitis not responding to medical management.\n- **Key Risks/Complications**: Bleeding, infection, bowel perforation.\n\n#### Surgical resection (e.g., Hartmann's procedure)\n- **What it Involves**: Resection of the affected segment of colon with creation of a colostomy.\n- **Indications**: Complicated diverticulitis with perforation or recurrent episodes.\n- **Key Risks/Complications**: Infection, anastomotic leak, bowel obstruction.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients with diverticulitis recover well with appropriate management. However, recurrent episodes can occur, and complications may lead to significant morbidity.\n\n### Important Complications to Watch For\n- Abscess formation\n- Perforation of the colon\n- Fistula formation (e.g., colovesical fistula)\n- Stricture or obstruction of the colon\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of diverticular disease, initiate appropriate investigations, manage acute cases, and refer to surgical teams when necessary. They should also educate patients on dietary modifications for chronic management.\n\n### When to Escalate to Senior/Specialist\nRefer to surgical team for patients with severe symptoms, signs of perforation, or those not improving with conservative management.\n\n### Key Safety Considerations\nMonitor for signs of sepsis in diverticulitis, ensure appropriate antibiotic coverage, and be vigilant for complications such as perforation or abscess formation.\n",
+  "content": {
+    "overview": {
+      "definition": "Diverticular disease encompasses a spectrum of conditions related to the formation of diverticula (small pouches) in the colonic wall, including diverticulosis (presence of diverticula), diverticulitis (inflammation of diverticula), and complications such as abscesses or perforation.",
+      "epidemiology": "Diverticular disease is common, particularly in Western populations, with prevalence increasing with age. It affects approximately 50% of individuals over 60 years of age. Diverticulitis occurs in about 10-25% of those with diverticulosis.",
+      "pathophysiology": "Diverticula form due to increased intraluminal pressure, often in the context of a low-fiber diet. Inflammation occurs when fecal matter becomes trapped in the diverticula, leading to diverticulitis. Risk factors include obesity, sedentary lifestyle, and certain medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (usually left lower quadrant)",
+        "Fever",
+        "Nausea and vomiting",
+        "Change in bowel habits (diarrhea or constipation)",
+        "Bloating"
+      ],
+      "signs": [
+        "Tenderness in the left lower quadrant",
+        "Fever (often low-grade)",
+        "Guarding or rebound tenderness in severe cases",
+        "Possible palpable mass in case of abscess"
+      ],
+      "atypicalPresentations": [
+        "Right-sided diverticulitis (more common in Asian populations)",
+        "Asymptomatic diverticulosis (found incidentally)",
+        "Diverticular bleeding (painless rectal bleeding)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Signs of peritonitis (rigidity, rebound tenderness)",
+        "Hemodynamic instability (tachycardia, hypotension)",
+        "Persistent vomiting"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) to check for leukocytosis",
+        "CT abdomen/pelvis with contrast (gold standard for diverticulitis)",
+        "Abdominal ultrasound (alternative in certain populations)"
+      ],
+      "secondLine": [
+        "MRI abdomen (if CT is contraindicated)",
+        "Colonoscopy (after resolution of acute diverticulitis to assess for other pathology)"
+      ],
+      "specialistTests": [
+        "Flexible sigmoidoscopy or colonoscopy for evaluation of diverticular disease and to rule out malignancy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of diverticulitis is primarily clinical, supported by imaging findings on CT scan showing diverticula, pericolic fat stranding, and/or abscess formation.",
+      "differentials": [
+        "Colorectal cancer",
+        "Irritable bowel syndrome (IBS)",
+        "Inflammatory bowel disease (IBD)",
+        "Ischemic colitis",
+        "Appendicitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NPO (nothing by mouth)",
+          "IV fluids",
+          "Analgesia (e.g., paracetamol, opioids if severe)",
+          "Antibiotics (e.g., ciprofloxacin + metronidazole)"
+        ],
+        "secondLine": [
+          "Surgical consultation for severe cases or complications (abscess, perforation)"
+        ],
+        "procedures": [
+          "CT-guided drainage of abscesses",
+          "Surgical resection (e.g., Hartmann's procedure) in cases of perforation or recurrent diverticulitis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modification (high-fiber diet)",
+          "Increased fluid intake",
+          "Regular exercise"
+        ],
+        "secondLine": [
+          "Consideration of prophylactic surgery in recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom management and dietary adherence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, preventing DNA replication.",
+          "dosing": "500 mg orally every 12 hours for 7-10 days.",
+          "sideEffects": "Nausea, diarrhea, tendonitis, risk of QT prolongation.",
+          "notes": "Avoid in pregnancy and in children under 18 years."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antimicrobial that disrupts DNA synthesis in anaerobic bacteria and protozoa.",
+          "dosing": "500 mg orally every 8 hours for 7-10 days.",
+          "sideEffects": "Nausea, metallic taste, disulfiram-like reaction with alcohol.",
+          "notes": "Monitor for peripheral neuropathy with prolonged use."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "CT-guided abscess drainage",
+          "description": "Percutaneous drainage of an abscess under CT guidance.",
+          "indications": "Presence of a large abscess in diverticulitis not responding to medical management.",
+          "risks": "Bleeding, infection, bowel perforation."
+        },
+        {
+          "name": "Surgical resection (e.g., Hartmann's procedure)",
+          "description": "Resection of the affected segment of colon with creation of a colostomy.",
+          "indications": "Complicated diverticulitis with perforation or recurrent episodes.",
+          "risks": "Infection, anastomotic leak, bowel obstruction."
+        }
+      ]
+    },
+    "prognosis": "Most patients with diverticulitis recover well with appropriate management. However, recurrent episodes can occur, and complications may lead to significant morbidity.",
+    "complications": [
+      "Abscess formation",
+      "Perforation of the colon",
+      "Fistula formation (e.g., colovesical fistula)",
+      "Stricture or obstruction of the colon"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of diverticular disease, initiate appropriate investigations, manage acute cases, and refer to surgical teams when necessary. They should also educate patients on dietary modifications for chronic management.",
+    "escalation": "Refer to surgical team for patients with severe symptoms, signs of perforation, or those not improving with conservative management.",
+    "keySafetyConsiderations": "Monitor for signs of sepsis in diverticulitis, ensure appropriate antibiotic coverage, and be vigilant for complications such as perforation or abscess formation."
+  }
+}

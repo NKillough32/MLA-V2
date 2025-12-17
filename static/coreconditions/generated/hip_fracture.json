@@ -1,0 +1,132 @@
+{
+  "id": "hip_fracture",
+  "name": "Hip fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:24:30.792231",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hip fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA hip fracture is a break in the upper quarter of the femur (thigh bone) that typically occurs due to a fall or trauma, particularly in older adults with osteoporosis.\n\n### Epidemiology\nHip fractures are common in the elderly, with an incidence of approximately 300,000 cases annually in the United States. They are more prevalent in women due to higher rates of osteoporosis.\n\n### Essential Pathophysiology\nHip fractures often result from low-energy trauma in osteoporotic bones. The fracture can occur in different locations: intracapsular (within the hip joint capsule) or extracapsular (outside the joint capsule). Blood supply to the femoral head can be compromised, leading to avascular necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe hip pain\n- Inability to bear weight on the affected leg\n- Shortened and externally rotated leg\n\n### Key Signs\n- Deformity of the hip\n- Swelling and bruising around the hip area\n- Tenderness on palpation of the hip joint\n\n### Atypical Presentations\n- Minimal pain in non-ambulatory patients\n- Delayed presentation after a fall\n\n### Red Flags Requiring Immediate Action\n- Inability to move the leg\n- Signs of neurovascular compromise (e.g., numbness, pallor)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the hip (AP and lateral views)\n\n### Second-line Investigations\n- CT scan of the hip (if X-ray is inconclusive)\n- MRI (to assess for occult fractures)\n\n### Specialist Tests\n- Bone density scan (DEXA) to assess osteoporosis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and confirmed by imaging (X-ray).\n\n### Key Differential Diagnoses to Exclude\n- Pelvic fracture\n- Proximal femoral stress fracture\n- Osteoarthritis exacerbation\n- Referred pain from lumbar spine pathology\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization of the limb\n\n#### Second-line Treatments\n- Surgical intervention (e.g., hip hemiarthroplasty or total hip replacement)\n\n#### Emergency Procedures\n- Surgical fixation (e.g., intramedullary nailing, dynamic hip screw)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation and physiotherapy post-surgery\n- Bone health optimization (calcium and vitamin D supplementation)\n\n#### Second-line Treatments\n- Consideration of bisphosphonates for osteoporosis management\n\n#### Monitoring Requirements\n- Regular follow-up for functional recovery and complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, renal impairment\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues.\n\n#### Bisphosphonates (e.g., Alendronate)\n- **Mechanism of Action**: Inhibits osteoclast-mediated bone resorption\n- **Typical Dosing Range**: 10 mg orally daily or 70 mg weekly\n- **Key Side Effects/Contraindications**: Esophageal irritation, osteonecrosis of the jaw\n- **When to Use vs. Alternatives**: Consider for patients with osteoporosis.\n\n### Procedures\n\n#### Intramedullary nailing\n- **What it Involves**: A surgical procedure where a metal rod is inserted into the femur to stabilize the fracture.\n- **Indications**: Intracapsular or unstable femoral neck fractures.\n- **Key Risks/Complications**: Infection, non-union, malunion.\n\n#### Dynamic hip screw (DHS) fixation\n- **What it Involves**: A device used to stabilize extracapsular hip fractures by allowing controlled sliding of the screw.\n- **Indications**: Intertrochanteric fractures.\n- **Key Risks/Complications**: Screw cut-out, infection, need for revision surgery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for hip fractures can be poor, with a 20% mortality rate within the first year post-fracture. Many patients experience significant functional decline and may require long-term care.\n\n### Important Complications to Watch For\n- Avascular necrosis of the femoral head\n- Non-union or malunion of the fracture\n- Deep vein thrombosis (DVT)\n- Pulmonary embolism (PE)\n- Infection at the surgical site\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide analgesia, assist in imaging, and prepare patients for surgical intervention. They should also educate patients about rehabilitation and osteoporosis management post-fracture.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurovascular compromise or if the patient is unstable, escalate to senior surgical staff immediately. Ensure timely surgical intervention is arranged.\n\n### Key Safety Considerations\nMonitor for signs of DVT and PE post-operatively. Ensure adequate pain management and mobilization to prevent complications. Assess for osteoporosis risk factors and initiate preventive measures.\n",
+  "content": {
+    "overview": {
+      "definition": "A hip fracture is a break in the upper quarter of the femur (thigh bone) that typically occurs due to a fall or trauma, particularly in older adults with osteoporosis.",
+      "epidemiology": "Hip fractures are common in the elderly, with an incidence of approximately 300,000 cases annually in the United States. They are more prevalent in women due to higher rates of osteoporosis.",
+      "pathophysiology": "Hip fractures often result from low-energy trauma in osteoporotic bones. The fracture can occur in different locations: intracapsular (within the hip joint capsule) or extracapsular (outside the joint capsule). Blood supply to the femoral head can be compromised, leading to avascular necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe hip pain",
+        "Inability to bear weight on the affected leg",
+        "Shortened and externally rotated leg"
+      ],
+      "signs": [
+        "Deformity of the hip",
+        "Swelling and bruising around the hip area",
+        "Tenderness on palpation of the hip joint"
+      ],
+      "atypicalPresentations": [
+        "Minimal pain in non-ambulatory patients",
+        "Delayed presentation after a fall"
+      ],
+      "redFlags": [
+        "Inability to move the leg",
+        "Signs of neurovascular compromise (e.g., numbness, pallor)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the hip (AP and lateral views)"
+      ],
+      "secondLine": [
+        "CT scan of the hip (if X-ray is inconclusive)",
+        "MRI (to assess for occult fractures)"
+      ],
+      "specialistTests": [
+        "Bone density scan (DEXA) to assess osteoporosis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and confirmed by imaging (X-ray).",
+      "differentials": [
+        "Pelvic fracture",
+        "Proximal femoral stress fracture",
+        "Osteoarthritis exacerbation",
+        "Referred pain from lumbar spine pathology"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization of the limb"
+        ],
+        "secondLine": [
+          "Surgical intervention (e.g., hip hemiarthroplasty or total hip replacement)"
+        ],
+        "procedures": [
+          "Surgical fixation (e.g., intramedullary nailing, dynamic hip screw)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation and physiotherapy post-surgery",
+          "Bone health optimization (calcium and vitamin D supplementation)"
+        ],
+        "secondLine": [
+          "Consideration of bisphosphonates for osteoporosis management"
+        ],
+        "monitoring": [
+          "Regular follow-up for functional recovery and complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal bleeding, renal impairment",
+          "notes": "Use with caution in patients with renal issues."
+        },
+        {
+          "name": "Bisphosphonates (e.g., Alendronate)",
+          "mechanism": "Inhibits osteoclast-mediated bone resorption",
+          "dosing": "10 mg orally daily or 70 mg weekly",
+          "sideEffects": "Esophageal irritation, osteonecrosis of the jaw",
+          "notes": "Consider for patients with osteoporosis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intramedullary nailing",
+          "description": "A surgical procedure where a metal rod is inserted into the femur to stabilize the fracture.",
+          "indications": "Intracapsular or unstable femoral neck fractures.",
+          "risks": "Infection, non-union, malunion."
+        },
+        {
+          "name": "Dynamic hip screw (DHS) fixation",
+          "description": "A device used to stabilize extracapsular hip fractures by allowing controlled sliding of the screw.",
+          "indications": "Intertrochanteric fractures.",
+          "risks": "Screw cut-out, infection, need for revision surgery."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for hip fractures can be poor, with a 20% mortality rate within the first year post-fracture. Many patients experience significant functional decline and may require long-term care.",
+    "complications": [
+      "Avascular necrosis of the femoral head",
+      "Non-union or malunion of the fracture",
+      "Deep vein thrombosis (DVT)",
+      "Pulmonary embolism (PE)",
+      "Infection at the surgical site"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide analgesia, assist in imaging, and prepare patients for surgical intervention. They should also educate patients about rehabilitation and osteoporosis management post-fracture.",
+    "escalation": "If there are signs of neurovascular compromise or if the patient is unstable, escalate to senior surgical staff immediately. Ensure timely surgical intervention is arranged.",
+    "keySafetyConsiderations": "Monitor for signs of DVT and PE post-operatively. Ensure adequate pain management and mobilization to prevent complications. Assess for osteoporosis risk factors and initiate preventive measures."
+  }
+}

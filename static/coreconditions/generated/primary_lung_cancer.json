@@ -1,0 +1,149 @@
+{
+  "id": "primary_lung_cancer",
+  "name": "Primary lung cancer",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:15:08.418696",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Primary lung cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPrimary lung cancer refers to malignancies that originate in the lung tissue, primarily including non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC).\n\n### Epidemiology\nLung cancer is the leading cause of cancer-related deaths worldwide, with approximately 2.2 million new cases diagnosed annually. Risk factors include smoking, exposure to secondhand smoke, occupational hazards, and genetic predisposition.\n\n### Essential Pathophysiology\nLung cancer develops from the epithelial cells of the lung, often due to mutations caused by carcinogens. NSCLC accounts for about 85% of cases and includes adenocarcinoma, squamous cell carcinoma, and large cell carcinoma. SCLC is more aggressive and associated with a higher rate of metastasis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent cough\n- Hemoptysis (coughing up blood)\n- Chest pain\n- Shortness of breath (dyspnea)\n- Unexplained weight loss\n- Fatigue\n- Wheezing\n\n### Key Signs\n- Clubbing of fingers\n- Cyanosis\n- Decreased breath sounds\n- Lymphadenopathy\n- Pleural effusion\n\n### Atypical Presentations\n- Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)\n- Bone pain due to metastasis\n- Neurological symptoms from brain metastases\n\n### Red Flags Requiring Immediate Action\n- New cough in a smoker or former smoker\n- Hemoptysis\n- Unexplained weight loss >5%\n- Persistent chest pain or dyspnea\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray\n- CT scan of the chest\n\n### Second-line Investigations\n- PET scan\n- Bronchoscopy with biopsy\n- CT-guided biopsy\n\n### Specialist Tests\n- Molecular testing for targeted therapies (e.g., EGFR, ALK, ROS1 mutations)\n- Immunohistochemistry for PD-L1 expression\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histological examination of tissue obtained via biopsy, with imaging studies supporting the presence of a lung mass or nodules.\n\n### Key Differential Diagnoses to Exclude\n- Metastatic cancer (from breast, colon, etc.)\n- Pneumonia\n- Tuberculosis\n- Benign lung tumors (hamartomas)\n- Interstitial lung disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy for hypoxia\n- Bronchodilators for wheezing\n- Pain management\n\n#### Second-line Treatments\n- Chemotherapy for SCLC (e.g., cisplatin + etoposide)\n- Targeted therapy for NSCLC (e.g., osimertinib for EGFR mutations)\n\n#### Emergency Procedures\n- Thoracentesis for pleural effusion\n- Chest tube insertion for pneumothorax or large effusions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Smoking cessation support\n- Regular follow-up with imaging and pulmonary function tests\n\n#### Second-line Treatments\n- Radiotherapy for local control\n- Palliative care for symptom management\n\n#### Monitoring Requirements\n- Regular imaging to assess for disease progression\n- Monitoring for treatment side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 75 mg/m2 IV every 3 weeks\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Hydration is essential to prevent nephrotoxicity.\n\n#### Osimertinib\n- **Mechanism of Action**: EGFR tyrosine kinase inhibitor\n- **Typical Dosing Range**: 80 mg orally once daily\n- **Key Side Effects/Contraindications**: Diarrhea, rash, interstitial lung disease\n- **When to Use vs. Alternatives**: Monitor for signs of lung toxicity.\n\n#### Etoposide\n- **Mechanism of Action**: Topoisomerase II inhibitor that prevents DNA unwinding\n- **Typical Dosing Range**: 100 mg/m2 IV for 3 days every 3 weeks\n- **Key Side Effects/Contraindications**: Myelosuppression, alopecia, hypersensitivity reactions\n- **When to Use vs. Alternatives**: Administer with caution in patients with renal impairment.\n\n### Procedures\n\n#### Bronchoscopy\n- **What it Involves**: A procedure using a thin tube with a camera to visualize the airways and obtain tissue samples.\n- **Indications**: Suspected lung cancer, persistent cough, hemoptysis.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax.\n\n#### Thoracentesis\n- **What it Involves**: A procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.\n- **Indications**: Pleural effusion with respiratory distress or for cytological analysis.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of lung cancer varies significantly based on the type, stage at diagnosis, and response to treatment. The 5-year survival rate for localized NSCLC is approximately 60%, while for metastatic disease, it drops to around 5%.\n\n### Important Complications to Watch For\n- Metastasis to other organs (brain, liver, bones)\n- Pleural effusion\n- Respiratory failure\n- Paraneoplastic syndromes (e.g., hypercalcemia, SIADH)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, order appropriate investigations, and refer patients to specialists. They should also provide supportive care and education to patients and families.\n\n### When to Escalate to Senior/Specialist\nRefer to oncology for suspected lung cancer, especially with red flag symptoms or abnormal imaging findings. Escalate care for acute respiratory distress or significant complications.\n\n### Key Safety Considerations\nEnsure proper handling of cytotoxic drugs, monitor for side effects, and provide patient education on signs of complications. Maintain infection control practices during procedures.\n",
+  "content": {
+    "overview": {
+      "definition": "Primary lung cancer refers to malignancies that originate in the lung tissue, primarily including non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC).",
+      "epidemiology": "Lung cancer is the leading cause of cancer-related deaths worldwide, with approximately 2.2 million new cases diagnosed annually. Risk factors include smoking, exposure to secondhand smoke, occupational hazards, and genetic predisposition.",
+      "pathophysiology": "Lung cancer develops from the epithelial cells of the lung, often due to mutations caused by carcinogens. NSCLC accounts for about 85% of cases and includes adenocarcinoma, squamous cell carcinoma, and large cell carcinoma. SCLC is more aggressive and associated with a higher rate of metastasis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent cough",
+        "Hemoptysis (coughing up blood)",
+        "Chest pain",
+        "Shortness of breath (dyspnea)",
+        "Unexplained weight loss",
+        "Fatigue",
+        "Wheezing"
+      ],
+      "signs": [
+        "Clubbing of fingers",
+        "Cyanosis",
+        "Decreased breath sounds",
+        "Lymphadenopathy",
+        "Pleural effusion"
+      ],
+      "atypicalPresentations": [
+        "Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)",
+        "Bone pain due to metastasis",
+        "Neurological symptoms from brain metastases"
+      ],
+      "redFlags": [
+        "New cough in a smoker or former smoker",
+        "Hemoptysis",
+        "Unexplained weight loss >5%",
+        "Persistent chest pain or dyspnea"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray",
+        "CT scan of the chest"
+      ],
+      "secondLine": [
+        "PET scan",
+        "Bronchoscopy with biopsy",
+        "CT-guided biopsy"
+      ],
+      "specialistTests": [
+        "Molecular testing for targeted therapies (e.g., EGFR, ALK, ROS1 mutations)",
+        "Immunohistochemistry for PD-L1 expression"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histological examination of tissue obtained via biopsy, with imaging studies supporting the presence of a lung mass or nodules.",
+      "differentials": [
+        "Metastatic cancer (from breast, colon, etc.)",
+        "Pneumonia",
+        "Tuberculosis",
+        "Benign lung tumors (hamartomas)",
+        "Interstitial lung disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy for hypoxia",
+          "Bronchodilators for wheezing",
+          "Pain management"
+        ],
+        "secondLine": [
+          "Chemotherapy for SCLC (e.g., cisplatin + etoposide)",
+          "Targeted therapy for NSCLC (e.g., osimertinib for EGFR mutations)"
+        ],
+        "procedures": [
+          "Thoracentesis for pleural effusion",
+          "Chest tube insertion for pneumothorax or large effusions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Smoking cessation support",
+          "Regular follow-up with imaging and pulmonary function tests"
+        ],
+        "secondLine": [
+          "Radiotherapy for local control",
+          "Palliative care for symptom management"
+        ],
+        "monitoring": [
+          "Regular imaging to assess for disease progression",
+          "Monitoring for treatment side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "75 mg/m2 IV every 3 weeks",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, myelosuppression",
+          "notes": "Hydration is essential to prevent nephrotoxicity."
+        },
+        {
+          "name": "Osimertinib",
+          "mechanism": "EGFR tyrosine kinase inhibitor",
+          "dosing": "80 mg orally once daily",
+          "sideEffects": "Diarrhea, rash, interstitial lung disease",
+          "notes": "Monitor for signs of lung toxicity."
+        },
+        {
+          "name": "Etoposide",
+          "mechanism": "Topoisomerase II inhibitor that prevents DNA unwinding",
+          "dosing": "100 mg/m2 IV for 3 days every 3 weeks",
+          "sideEffects": "Myelosuppression, alopecia, hypersensitivity reactions",
+          "notes": "Administer with caution in patients with renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bronchoscopy",
+          "description": "A procedure using a thin tube with a camera to visualize the airways and obtain tissue samples.",
+          "indications": "Suspected lung cancer, persistent cough, hemoptysis.",
+          "risks": "Bleeding, infection, pneumothorax."
+        },
+        {
+          "name": "Thoracentesis",
+          "description": "A procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.",
+          "indications": "Pleural effusion with respiratory distress or for cytological analysis.",
+          "risks": "Pneumothorax, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of lung cancer varies significantly based on the type, stage at diagnosis, and response to treatment. The 5-year survival rate for localized NSCLC is approximately 60%, while for metastatic disease, it drops to around 5%.",
+    "complications": [
+      "Metastasis to other organs (brain, liver, bones)",
+      "Pleural effusion",
+      "Respiratory failure",
+      "Paraneoplastic syndromes (e.g., hypercalcemia, SIADH)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, order appropriate investigations, and refer patients to specialists. They should also provide supportive care and education to patients and families.",
+    "escalation": "Refer to oncology for suspected lung cancer, especially with red flag symptoms or abnormal imaging findings. Escalate care for acute respiratory distress or significant complications.",
+    "keySafetyConsiderations": "Ensure proper handling of cytotoxic drugs, monitor for side effects, and provide patient education on signs of complications. Maintain infection control practices during procedures."
+  }
+}

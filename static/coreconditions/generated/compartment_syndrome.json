@@ -1,0 +1,121 @@
+{
+  "id": "compartment_syndrome",
+  "name": "Compartment syndrome",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:23:26.187150",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Compartment syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCompartment syndrome is a surgical emergency characterized by increased pressure within a closed anatomical space, leading to compromised blood flow and potential muscle and nerve damage.\n\n### Epidemiology\nIt is most commonly seen in the context of trauma, particularly fractures of the long bones, but can also occur due to crush injuries, burns, or tight bandaging. The incidence is estimated to be 3-5% in patients with tibial fractures.\n\n### Essential Pathophysiology\nIncreased pressure within a compartment (muscle group surrounded by fascia) leads to reduced perfusion pressure, resulting in ischemia. This can cause muscle necrosis and nerve damage if not promptly treated.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe pain out of proportion to injury\n- Paresthesia (tingling or numbness)\n- Weakness of the affected limb\n- Tightness or fullness in the muscle compartment\n\n### Key Signs\n- Swelling of the affected limb\n- Firmness of the compartment on palpation\n- Decreased sensation in the distribution of affected nerves\n- Decreased pulse in severe cases\n\n### Atypical Presentations\n- Pain may be less pronounced in elderly patients or those with peripheral neuropathy\n- Symptoms may be delayed after initial injury\n\n### Red Flags Requiring Immediate Action\n- Persistent pain despite analgesia\n- Rapidly increasing swelling\n- Loss of motor function or sensation\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment of symptoms and signs\n- Measurement of intracompartmental pressure (using a manometer)\n\n### Second-line Investigations\n- Doppler ultrasound to assess blood flow\n- MRI may be used in chronic cases\n\n### Specialist Tests\n- Intracompartmental pressure monitoring\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by intracompartmental pressure measurements (typically >30 mmHg is concerning).\n\n### Key Differential Diagnoses to Exclude\n- Deep vein thrombosis (DVT)\n- Peripheral artery occlusion\n- Rhabdomyolysis\n- Acute limb ischemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate elevation of the limb\n- Fasciotomy to relieve pressure\n\n#### Second-line Treatments\n- Analgesia and fluid resuscitation\n\n#### Emergency Procedures\n- Fasciotomy: surgical incision to relieve pressure in the compartment. Indicated in cases of confirmed compartment syndrome with significant pressure and symptoms. Risks include infection, nerve damage, and scarring.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Activity modification and physiotherapy\n\n#### Second-line Treatments\n- Surgical fasciotomy may be considered in refractory cases\n\n#### Monitoring Requirements\n- Regular assessment of symptoms and functional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics (e.g., Paracetamol, NSAIDs)\n- **Mechanism of Action**: Pain relief through inhibition of prostaglandin synthesis\n- **Typical Dosing Range**: Paracetamol 500-1000 mg every 4-6 hours; NSAIDs as per guidelines\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment (NSAIDs)\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n#### Opioids (e.g., Morphine)\n- **Mechanism of Action**: Central nervous system analgesic\n- **Typical Dosing Range**: Morphine 2-10 mg IV every 2-4 hours as needed\n- **Key Side Effects/Contraindications**: Respiratory depression, constipation, sedation\n- **When to Use vs. Alternatives**: Monitor closely for respiratory depression.\n\n### Procedures\n\n#### Fasciotomy\n- **What it Involves**: Surgical procedure to cut open the fascia to relieve pressure in a compartment.\n- **Indications**: Confirmed compartment syndrome with significant symptoms and pressure readings.\n- **Key Risks/Complications**: Infection, nerve injury, scarring, and delayed healing.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nIf treated promptly, the prognosis is generally good, with full recovery possible. Delayed treatment can lead to permanent muscle and nerve damage, resulting in functional impairment.\n\n### Important Complications to Watch For\n- Muscle necrosis\n- Permanent functional impairment\n- Rhabdomyolysis\n- Acute kidney injury due to myoglobinuria\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in assessing patients with potential compartment syndrome, particularly in trauma settings. They should perform thorough examinations, recognize red flags, and escalate care promptly.\n\n### When to Escalate to Senior/Specialist\nIf compartment syndrome is suspected, escalate to a senior clinician immediately for further assessment and potential surgical intervention.\n\n### Key Safety Considerations\nEnsure timely recognition and intervention to prevent irreversible damage. Monitor for signs of deterioration in limb function and report any changes promptly.\n",
+  "content": {
+    "overview": {
+      "definition": "Compartment syndrome is a surgical emergency characterized by increased pressure within a closed anatomical space, leading to compromised blood flow and potential muscle and nerve damage.",
+      "epidemiology": "It is most commonly seen in the context of trauma, particularly fractures of the long bones, but can also occur due to crush injuries, burns, or tight bandaging. The incidence is estimated to be 3-5% in patients with tibial fractures.",
+      "pathophysiology": "Increased pressure within a compartment (muscle group surrounded by fascia) leads to reduced perfusion pressure, resulting in ischemia. This can cause muscle necrosis and nerve damage if not promptly treated."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe pain out of proportion to injury",
+        "Paresthesia (tingling or numbness)",
+        "Weakness of the affected limb",
+        "Tightness or fullness in the muscle compartment"
+      ],
+      "signs": [
+        "Swelling of the affected limb",
+        "Firmness of the compartment on palpation",
+        "Decreased sensation in the distribution of affected nerves",
+        "Decreased pulse in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Pain may be less pronounced in elderly patients or those with peripheral neuropathy",
+        "Symptoms may be delayed after initial injury"
+      ],
+      "redFlags": [
+        "Persistent pain despite analgesia",
+        "Rapidly increasing swelling",
+        "Loss of motor function or sensation"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment of symptoms and signs",
+        "Measurement of intracompartmental pressure (using a manometer)"
+      ],
+      "secondLine": [
+        "Doppler ultrasound to assess blood flow",
+        "MRI may be used in chronic cases"
+      ],
+      "specialistTests": [
+        "Intracompartmental pressure monitoring"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by intracompartmental pressure measurements (typically >30 mmHg is concerning).",
+      "differentials": [
+        "Deep vein thrombosis (DVT)",
+        "Peripheral artery occlusion",
+        "Rhabdomyolysis",
+        "Acute limb ischemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate elevation of the limb",
+          "Fasciotomy to relieve pressure"
+        ],
+        "secondLine": [
+          "Analgesia and fluid resuscitation"
+        ],
+        "procedures": [
+          "Fasciotomy: surgical incision to relieve pressure in the compartment. Indicated in cases of confirmed compartment syndrome with significant pressure and symptoms. Risks include infection, nerve damage, and scarring."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Activity modification and physiotherapy"
+        ],
+        "secondLine": [
+          "Surgical fasciotomy may be considered in refractory cases"
+        ],
+        "monitoring": [
+          "Regular assessment of symptoms and functional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics (e.g., Paracetamol, NSAIDs)",
+          "mechanism": "Pain relief through inhibition of prostaglandin synthesis",
+          "dosing": "Paracetamol 500-1000 mg every 4-6 hours; NSAIDs as per guidelines",
+          "sideEffects": "Gastrointestinal upset, renal impairment (NSAIDs)",
+          "notes": "Use cautiously in patients with renal impairment."
+        },
+        {
+          "name": "Opioids (e.g., Morphine)",
+          "mechanism": "Central nervous system analgesic",
+          "dosing": "Morphine 2-10 mg IV every 2-4 hours as needed",
+          "sideEffects": "Respiratory depression, constipation, sedation",
+          "notes": "Monitor closely for respiratory depression."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fasciotomy",
+          "description": "Surgical procedure to cut open the fascia to relieve pressure in a compartment.",
+          "indications": "Confirmed compartment syndrome with significant symptoms and pressure readings.",
+          "risks": "Infection, nerve injury, scarring, and delayed healing."
+        }
+      ]
+    },
+    "prognosis": "If treated promptly, the prognosis is generally good, with full recovery possible. Delayed treatment can lead to permanent muscle and nerve damage, resulting in functional impairment.",
+    "complications": [
+      "Muscle necrosis",
+      "Permanent functional impairment",
+      "Rhabdomyolysis",
+      "Acute kidney injury due to myoglobinuria"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in assessing patients with potential compartment syndrome, particularly in trauma settings. They should perform thorough examinations, recognize red flags, and escalate care promptly.",
+    "escalation": "If compartment syndrome is suspected, escalate to a senior clinician immediately for further assessment and potential surgical intervention.",
+    "keySafetyConsiderations": "Ensure timely recognition and intervention to prevent irreversible damage. Monitor for signs of deterioration in limb function and report any changes promptly."
+  }
+}

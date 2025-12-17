@@ -1,0 +1,126 @@
+{
+  "id": "polycythaemia",
+  "name": "Polycythaemia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:57:42.621979",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polycythaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPolycythaemia is a condition characterized by an increased concentration of red blood cells (RBCs) in the blood, leading to increased blood viscosity and potential complications.\n\n### Epidemiology\nPolycythaemia vera (PV) is a myeloproliferative neoplasm with an incidence of approximately 1.5 to 2.5 cases per 100,000 people per year. Secondary causes of polycythaemia are more common and can occur in response to hypoxia or other stimuli.\n\n### Essential Pathophysiology\nIn polycythaemia vera, a mutation in the JAK2 gene leads to uncontrolled proliferation of erythroid progenitor cells in the bone marrow. Secondary polycythaemia can result from chronic hypoxia (e.g., COPD, sleep apnea) or increased erythropoietin production (e.g., tumors).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Dizziness\n- Visual disturbances\n- Fatigue\n- Itching (especially after a hot shower)\n\n### Key Signs\n- Hypertension\n- Plethora (ruddy complexion)\n- Splenomegaly\n- Engorged retinal veins\n\n### Atypical Presentations\n- Thrombotic events (e.g., stroke, myocardial infarction)\n- Gout due to increased uric acid levels\n\n### Red Flags Requiring Immediate Action\n- Severe headache or visual changes\n- Signs of thrombosis (e.g., leg swelling, chest pain)\n- Unexplained bleeding or bruising\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC) showing elevated hemoglobin/hematocrit\n- Erythropoietin level (low in PV, high in secondary causes)\n- JAK2 V617F mutation testing\n\n### Second-line Investigations\n- Bone marrow biopsy (to assess for hypercellularity)\n- Serum vitamin B12 and folate levels (to rule out other causes)\n\n### Specialist Tests\n- Erythropoietin receptor assay\n- Genetic testing for other mutations (e.g., CALR, MPL)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of polycythaemia vera is based on the WHO criteria: elevated hemoglobin/hematocrit, presence of JAK2 mutation, and bone marrow hypercellularity.\n\n### Key Differential Diagnoses to Exclude\n- Secondary polycythaemia (due to hypoxia or tumors)\n- Dehydration (relative polycythaemia)\n- Chronic myeloid leukaemia (CML)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Phlebotomy to reduce hematocrit levels (target <45%)\n- Hydration\n\n#### Second-line Treatments\n- Low-dose aspirin (to reduce thrombotic risk)\n\n#### Emergency Procedures\n- Therapeutic phlebotomy (removal of blood to decrease RBC mass)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular phlebotomy to maintain hematocrit <45%\n- Low-dose aspirin\n\n#### Second-line Treatments\n- Hydroxyurea (for high-risk patients or those with symptomatic disease)\n- Interferon-alpha (for younger patients or those desiring pregnancy)\n\n#### Monitoring Requirements\n- Regular FBC to monitor hematocrit and platelet levels\n- Monitoring for thrombotic events\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydroxyurea\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, reducing cell proliferation.\n- **Typical Dosing Range**: 15-20 mg/kg/day, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Myelosuppression, gastrointestinal upset, skin rash.\n- **When to Use vs. Alternatives**: Considered in high-risk patients or those with symptomatic disease.\n\n#### Aspirin\n- **Mechanism of Action**: Antiplatelet agent that inhibits thromboxane A2 production, reducing platelet aggregation.\n- **Typical Dosing Range**: 75-100 mg daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, dyspepsia.\n- **When to Use vs. Alternatives**: Used for thrombotic risk reduction.\n\n### Procedures\n\n#### Therapeutic phlebotomy\n- **What it Involves**: Removal of a specific volume of blood to reduce red cell mass and hematocrit.\n- **Indications**: Elevated hematocrit (>45% in men, >42% in women), symptomatic patients.\n- **Key Risks/Complications**: Hypotension, vasovagal syncope, infection at the venipuncture site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, patients can have a normal life expectancy. However, there is an increased risk of thrombotic events and progression to myelofibrosis or acute leukaemia in some cases.\n\n### Important Complications to Watch For\n- Thrombotic events (stroke, myocardial infarction)\n- Hemorrhagic events due to thrombocytopenia\n- Gout due to increased uric acid levels\n- Progression to myelofibrosis or acute leukaemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of polycythaemia, perform initial investigations, and manage acute presentations. They should also understand when to refer to a specialist for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist if there is uncertainty in diagnosis, management of complications, or if the patient is high-risk for thrombotic events.\n\n### Key Safety Considerations\nMonitor for signs of thrombosis or bleeding, ensure appropriate follow-up for patients undergoing phlebotomy, and educate patients on recognizing symptoms of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Polycythaemia is a condition characterized by an increased concentration of red blood cells (RBCs) in the blood, leading to increased blood viscosity and potential complications.",
+      "epidemiology": "Polycythaemia vera (PV) is a myeloproliferative neoplasm with an incidence of approximately 1.5 to 2.5 cases per 100,000 people per year. Secondary causes of polycythaemia are more common and can occur in response to hypoxia or other stimuli.",
+      "pathophysiology": "In polycythaemia vera, a mutation in the JAK2 gene leads to uncontrolled proliferation of erythroid progenitor cells in the bone marrow. Secondary polycythaemia can result from chronic hypoxia (e.g., COPD, sleep apnea) or increased erythropoietin production (e.g., tumors)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Dizziness",
+        "Visual disturbances",
+        "Fatigue",
+        "Itching (especially after a hot shower)"
+      ],
+      "signs": [
+        "Hypertension",
+        "Plethora (ruddy complexion)",
+        "Splenomegaly",
+        "Engorged retinal veins"
+      ],
+      "atypicalPresentations": [
+        "Thrombotic events (e.g., stroke, myocardial infarction)",
+        "Gout due to increased uric acid levels"
+      ],
+      "redFlags": [
+        "Severe headache or visual changes",
+        "Signs of thrombosis (e.g., leg swelling, chest pain)",
+        "Unexplained bleeding or bruising"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC) showing elevated hemoglobin/hematocrit",
+        "Erythropoietin level (low in PV, high in secondary causes)",
+        "JAK2 V617F mutation testing"
+      ],
+      "secondLine": [
+        "Bone marrow biopsy (to assess for hypercellularity)",
+        "Serum vitamin B12 and folate levels (to rule out other causes)"
+      ],
+      "specialistTests": [
+        "Erythropoietin receptor assay",
+        "Genetic testing for other mutations (e.g., CALR, MPL)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of polycythaemia vera is based on the WHO criteria: elevated hemoglobin/hematocrit, presence of JAK2 mutation, and bone marrow hypercellularity.",
+      "differentials": [
+        "Secondary polycythaemia (due to hypoxia or tumors)",
+        "Dehydration (relative polycythaemia)",
+        "Chronic myeloid leukaemia (CML)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Phlebotomy to reduce hematocrit levels (target <45%)",
+          "Hydration"
+        ],
+        "secondLine": [
+          "Low-dose aspirin (to reduce thrombotic risk)"
+        ],
+        "procedures": [
+          "Therapeutic phlebotomy (removal of blood to decrease RBC mass)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular phlebotomy to maintain hematocrit <45%",
+          "Low-dose aspirin"
+        ],
+        "secondLine": [
+          "Hydroxyurea (for high-risk patients or those with symptomatic disease)",
+          "Interferon-alpha (for younger patients or those desiring pregnancy)"
+        ],
+        "monitoring": [
+          "Regular FBC to monitor hematocrit and platelet levels",
+          "Monitoring for thrombotic events"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydroxyurea",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, reducing cell proliferation.",
+          "dosing": "15-20 mg/kg/day, adjusted based on response and tolerance.",
+          "sideEffects": "Myelosuppression, gastrointestinal upset, skin rash.",
+          "notes": "Considered in high-risk patients or those with symptomatic disease."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Antiplatelet agent that inhibits thromboxane A2 production, reducing platelet aggregation.",
+          "dosing": "75-100 mg daily.",
+          "sideEffects": "Gastrointestinal bleeding, dyspepsia.",
+          "notes": "Used for thrombotic risk reduction."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Therapeutic phlebotomy",
+          "description": "Removal of a specific volume of blood to reduce red cell mass and hematocrit.",
+          "indications": "Elevated hematocrit (>45% in men, >42% in women), symptomatic patients.",
+          "risks": "Hypotension, vasovagal syncope, infection at the venipuncture site."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, patients can have a normal life expectancy. However, there is an increased risk of thrombotic events and progression to myelofibrosis or acute leukaemia in some cases.",
+    "complications": [
+      "Thrombotic events (stroke, myocardial infarction)",
+      "Hemorrhagic events due to thrombocytopenia",
+      "Gout due to increased uric acid levels",
+      "Progression to myelofibrosis or acute leukaemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of polycythaemia, perform initial investigations, and manage acute presentations. They should also understand when to refer to a specialist for further management.",
+    "escalation": "Refer to a haematologist if there is uncertainty in diagnosis, management of complications, or if the patient is high-risk for thrombotic events.",
+    "keySafetyConsiderations": "Monitor for signs of thrombosis or bleeding, ensure appropriate follow-up for patients undergoing phlebotomy, and educate patients on recognizing symptoms of complications."
+  }
+}

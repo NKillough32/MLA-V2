@@ -1,0 +1,118 @@
+{
+  "id": "head_lice",
+  "name": "Head lice",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:23:06.567037",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Head lice: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHead lice (Pediculus humanus capitis) are small, wingless insects that infest the scalp and hair of humans, primarily affecting children. They feed on human blood and are transmitted through direct head-to-head contact.\n\n### Epidemiology\nHead lice infestations are common, particularly in children aged 3 to 11 years. It is estimated that 6 to 12 million infestations occur annually in the United States alone. They are more prevalent in crowded conditions and can affect individuals of any socioeconomic status.\n\n### Essential Pathophysiology\nHead lice attach to the hair shafts and lay eggs (nits) close to the scalp. The saliva of the lice can cause an allergic reaction, leading to itching and irritation. The life cycle of head lice includes three stages: egg (nit), nymph, and adult.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching of the scalp\n- Irritation and discomfort\n- Sensation of something moving in the hair\n\n### Key Signs\n- Visible lice or nits on hair shafts\n- Red or excoriated areas on the scalp\n- Secondary bacterial infections due to scratching\n\n### Atypical Presentations\n- Asymptomatic infestation (no itching or visible lice)\n- Nits found without active lice\n\n### Red Flags Requiring Immediate Action\n- Severe itching leading to secondary infections\n- Persistent infestation despite treatment\n- Signs of allergic reaction (e.g., rash, swelling)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual inspection of the scalp and hair for lice and nits\n- Use of a fine-toothed comb to detect lice\n\n### Second-line Investigations\n- Dermatological referral if there are complications or treatment failure\n\n### Specialist Tests\n- Microscopic examination of hair for nits or lice (rarely needed)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of live lice or nits within 1 cm of the scalp.\n\n### Key Differential Diagnoses to Exclude\n- Dandruff\n- Seborrheic dermatitis\n- Scabies\n- Allergic contact dermatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical pediculicides (e.g., permethrin, pyrethrin)\n- Manual removal of lice and nits using a fine-toothed comb\n\n#### Second-line Treatments\n- Oral ivermectin for resistant cases or severe infestations\n\n#### Emergency Procedures\n- Manual nit removal: using a fine-toothed comb to remove nits and lice from the hair. Indicated for all cases, especially when using topical treatments. Risks include scalp irritation and potential for secondary infection.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on prevention and control measures (e.g., avoiding sharing personal items)\n- Regular combing to check for lice\n\n#### Second-line Treatments\n- Consider referral to a dermatologist for persistent cases\n\n#### Monitoring Requirements\n- Follow-up to ensure resolution of infestation and check for reinfestation.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Permethrin\n- **Mechanism of Action**: Neurotoxin that disrupts sodium channel function in lice, leading to paralysis and death.\n- **Typical Dosing Range**: Apply to dry hair and scalp for 10 minutes, then rinse. Repeat in 7-10 days if necessary.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and itching.\n- **When to Use vs. Alternatives**: Safe for use in children over 2 months.\n\n#### Ivermectin\n- **Mechanism of Action**: Paralyzes and kills lice by enhancing GABA-mediated neurotransmission.\n- **Typical Dosing Range**: Single oral dose of 200 mcg/kg; may repeat in 7-10 days if necessary.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, dizziness, and potential neurotoxicity in high doses.\n- **When to Use vs. Alternatives**: Considered for severe or resistant cases.\n\n### Procedures\n\n#### Manual nit removal\n- **What it Involves**: Using a fine-toothed comb to systematically remove lice and nits from the hair.\n- **Indications**: All cases of head lice infestation, especially when using topical treatments.\n- **Key Risks/Complications**: Scalp irritation, potential for secondary infections, and time-consuming.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, head lice infestations can be effectively managed. Reinfection is common, especially in children due to close contact.\n\n### Important Complications to Watch For\n- Secondary bacterial infections from scratching\n- Scalp dermatitis due to irritation\n- Psychosocial impact due to stigma or embarrassment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize and manage head lice infestations, provide education to patients and families, and refer to dermatology if complications arise or if the infestation is persistent despite treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to a dermatologist if there are complications, treatment failure, or if the patient has severe symptoms.\n\n### Key Safety Considerations\nEnsure that patients are educated on the proper use of topical treatments to avoid toxicity. Advise against the use of unproven home remedies (e.g., mayonnaise, olive oil) and emphasize the importance of combing and environmental control measures.\n",
+  "content": {
+    "overview": {
+      "definition": "Head lice (Pediculus humanus capitis) are small, wingless insects that infest the scalp and hair of humans, primarily affecting children. They feed on human blood and are transmitted through direct head-to-head contact.",
+      "epidemiology": "Head lice infestations are common, particularly in children aged 3 to 11 years. It is estimated that 6 to 12 million infestations occur annually in the United States alone. They are more prevalent in crowded conditions and can affect individuals of any socioeconomic status.",
+      "pathophysiology": "Head lice attach to the hair shafts and lay eggs (nits) close to the scalp. The saliva of the lice can cause an allergic reaction, leading to itching and irritation. The life cycle of head lice includes three stages: egg (nit), nymph, and adult."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching of the scalp",
+        "Irritation and discomfort",
+        "Sensation of something moving in the hair"
+      ],
+      "signs": [
+        "Visible lice or nits on hair shafts",
+        "Red or excoriated areas on the scalp",
+        "Secondary bacterial infections due to scratching"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic infestation (no itching or visible lice)",
+        "Nits found without active lice"
+      ],
+      "redFlags": [
+        "Severe itching leading to secondary infections",
+        "Persistent infestation despite treatment",
+        "Signs of allergic reaction (e.g., rash, swelling)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual inspection of the scalp and hair for lice and nits",
+        "Use of a fine-toothed comb to detect lice"
+      ],
+      "secondLine": [
+        "Dermatological referral if there are complications or treatment failure"
+      ],
+      "specialistTests": [
+        "Microscopic examination of hair for nits or lice (rarely needed)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of live lice or nits within 1 cm of the scalp.",
+      "differentials": [
+        "Dandruff",
+        "Seborrheic dermatitis",
+        "Scabies",
+        "Allergic contact dermatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical pediculicides (e.g., permethrin, pyrethrin)",
+          "Manual removal of lice and nits using a fine-toothed comb"
+        ],
+        "secondLine": [
+          "Oral ivermectin for resistant cases or severe infestations"
+        ],
+        "procedures": [
+          "Manual nit removal: using a fine-toothed comb to remove nits and lice from the hair. Indicated for all cases, especially when using topical treatments. Risks include scalp irritation and potential for secondary infection."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on prevention and control measures (e.g., avoiding sharing personal items)",
+          "Regular combing to check for lice"
+        ],
+        "secondLine": [
+          "Consider referral to a dermatologist for persistent cases"
+        ],
+        "monitoring": [
+          "Follow-up to ensure resolution of infestation and check for reinfestation."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Permethrin",
+          "mechanism": "Neurotoxin that disrupts sodium channel function in lice, leading to paralysis and death.",
+          "dosing": "Apply to dry hair and scalp for 10 minutes, then rinse. Repeat in 7-10 days if necessary.",
+          "sideEffects": "Local irritation, erythema, and itching.",
+          "notes": "Safe for use in children over 2 months."
+        },
+        {
+          "name": "Ivermectin",
+          "mechanism": "Paralyzes and kills lice by enhancing GABA-mediated neurotransmission.",
+          "dosing": "Single oral dose of 200 mcg/kg; may repeat in 7-10 days if necessary.",
+          "sideEffects": "Nausea, diarrhea, dizziness, and potential neurotoxicity in high doses.",
+          "notes": "Considered for severe or resistant cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Manual nit removal",
+          "description": "Using a fine-toothed comb to systematically remove lice and nits from the hair.",
+          "indications": "All cases of head lice infestation, especially when using topical treatments.",
+          "risks": "Scalp irritation, potential for secondary infections, and time-consuming."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, head lice infestations can be effectively managed. Reinfection is common, especially in children due to close contact.",
+    "complications": [
+      "Secondary bacterial infections from scratching",
+      "Scalp dermatitis due to irritation",
+      "Psychosocial impact due to stigma or embarrassment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize and manage head lice infestations, provide education to patients and families, and refer to dermatology if complications arise or if the infestation is persistent despite treatment.",
+    "escalation": "Refer to a dermatologist if there are complications, treatment failure, or if the patient has severe symptoms.",
+    "keySafetyConsiderations": "Ensure that patients are educated on the proper use of topical treatments to avoid toxicity. Advise against the use of unproven home remedies (e.g., mayonnaise, olive oil) and emphasize the importance of combing and environmental control measures."
+  }
+}

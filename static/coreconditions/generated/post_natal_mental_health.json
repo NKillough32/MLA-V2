@@ -1,0 +1,148 @@
+{
+  "id": "post_natal_mental_health",
+  "name": "Post-natal mental health",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:50:36.376948",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Post-natal mental health: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPost-natal mental health refers to a range of mental health issues that can occur in women during the perinatal period, which includes pregnancy and the first year after childbirth. This encompasses conditions such as postpartum depression, anxiety disorders, and psychosis.\n\n### Epidemiology\nApproximately 10-15% of women experience postpartum depression, while anxiety disorders can affect up to 20% of new mothers. Postpartum psychosis is rarer, occurring in about 1-2 per 1000 births.\n\n### Essential Pathophysiology\nThe pathophysiology of post-natal mental health disorders is multifactorial, involving hormonal changes (e.g., fluctuations in estrogen and progesterone), psychosocial stressors (e.g., changes in family dynamics, sleep deprivation), and a history of mental health issues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Low mood\n- Anxiety\n- Irritability\n- Fatigue\n- Changes in appetite\n- Sleep disturbances\n- Feelings of guilt or worthlessness\n- Difficulty bonding with the baby\n\n### Key Signs\n- Tearfulness\n- Withdrawal from social interactions\n- Neglect of self-care or baby care\n- Increased sensitivity to stress\n- Changes in weight\n\n### Atypical Presentations\n- Obsessive thoughts about the baby\n- Panic attacks\n- Severe mood swings\n- Inability to cope with daily tasks\n\n### Red Flags Requiring Immediate Action\n- Suicidal thoughts or self-harm\n- Inability to care for the baby\n- Hallucinations or delusions\n- Severe agitation or confusion\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental health assessment\n- Edinburgh Postnatal Depression Scale (EPDS)\n- Generalized Anxiety Disorder 7-item scale (GAD-7)\n\n### Second-line Investigations\n- Structured clinical interview for DSM-5 (SCID-5)\n- Assessment of psychosocial stressors\n\n### Specialist Tests\n- Referral to a psychiatrist for comprehensive evaluation\n- Consideration of blood tests to rule out thyroid dysfunction\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 criteria for major depressive disorder or generalized anxiety disorder, with symptoms occurring within 4 weeks of delivery for postpartum depression and anxiety.\n\n### Key Differential Diagnoses to Exclude\n- Major depressive disorder\n- Generalized anxiety disorder\n- Bipolar disorder\n- Adjustment disorder\n- Post-traumatic stress disorder (PTSD)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Psychosocial support and counseling\n- Education about the condition and reassurance\n\n#### Second-line Treatments\n- Consideration of pharmacotherapy if symptoms are severe or persistent\n\n#### Emergency Procedures\n- Referral to mental health services for therapy or medication management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Cognitive Behavioral Therapy (CBT)\n- Support groups for new mothers\n\n#### Second-line Treatments\n- Medication management if symptoms persist despite therapy\n- Consideration of family therapy\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess mental health status and medication adherence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Sertraline\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose of 50 mg daily, can be increased to 100-200 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, insomnia, sexual dysfunction, weight gain.\n- **When to Use vs. Alternatives**: Considered first-line for postpartum depression and anxiety.\n\n#### Fluoxetine\n- **Mechanism of Action**: SSRI that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Starting dose of 20 mg daily, can be increased to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, anxiety, sexual dysfunction.\n- **When to Use vs. Alternatives**: Effective for long-term management of depression.\n\n#### Bupropion\n- **Mechanism of Action**: Norepinephrine-dopamine reuptake inhibitor (NDRI) that increases norepinephrine and dopamine levels.\n- **Typical Dosing Range**: Starting dose of 150 mg daily, can be increased to 300 mg.\n- **Key Side Effects/Contraindications**: Insomnia, dry mouth, increased risk of seizures.\n- **When to Use vs. Alternatives**: Considered if SSRIs are ineffective or not tolerated.\n\n### Procedures\n\n#### Psychotherapy\n- **What it Involves**: Therapeutic intervention aimed at improving mental health through conversation and support.\n- **Indications**: Indicated for mild to moderate postpartum depression and anxiety.\n- **Key Risks/Complications**: May require multiple sessions; some patients may not respond.\n\n#### Medication management\n- **What it Involves**: Use of antidepressants or anxiolytics to manage symptoms.\n- **Indications**: Indicated for moderate to severe cases or when psychotherapy alone is insufficient.\n- **Key Risks/Complications**: Potential side effects of medications; need for monitoring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for post-natal mental health disorders is generally good, with many women recovering fully. However, untreated conditions can lead to chronic mental health issues and affect mother-infant bonding.\n\n### Important Complications to Watch For\n- Chronic depression or anxiety\n- Increased risk of future mental health disorders\n- Impaired mother-infant bonding\n- Impact on child development\n- Suicidal ideation or attempts\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of post-natal mental health issues, conduct initial assessments, provide support, and refer to mental health services as needed. They should also educate patients about the condition and treatment options.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, such as suicidal ideation or psychosis, immediate referral to psychiatric services is necessary. Regular follow-up is essential for monitoring treatment response.\n\n### Key Safety Considerations\nEnsure safety of the mother and baby; assess for any risk of self-harm or harm to the baby. Provide a supportive environment and involve family members in care when appropriate.\n",
+  "content": {
+    "overview": {
+      "definition": "Post-natal mental health refers to a range of mental health issues that can occur in women during the perinatal period, which includes pregnancy and the first year after childbirth. This encompasses conditions such as postpartum depression, anxiety disorders, and psychosis.",
+      "epidemiology": "Approximately 10-15% of women experience postpartum depression, while anxiety disorders can affect up to 20% of new mothers. Postpartum psychosis is rarer, occurring in about 1-2 per 1000 births.",
+      "pathophysiology": "The pathophysiology of post-natal mental health disorders is multifactorial, involving hormonal changes (e.g., fluctuations in estrogen and progesterone), psychosocial stressors (e.g., changes in family dynamics, sleep deprivation), and a history of mental health issues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Low mood",
+        "Anxiety",
+        "Irritability",
+        "Fatigue",
+        "Changes in appetite",
+        "Sleep disturbances",
+        "Feelings of guilt or worthlessness",
+        "Difficulty bonding with the baby"
+      ],
+      "signs": [
+        "Tearfulness",
+        "Withdrawal from social interactions",
+        "Neglect of self-care or baby care",
+        "Increased sensitivity to stress",
+        "Changes in weight"
+      ],
+      "atypicalPresentations": [
+        "Obsessive thoughts about the baby",
+        "Panic attacks",
+        "Severe mood swings",
+        "Inability to cope with daily tasks"
+      ],
+      "redFlags": [
+        "Suicidal thoughts or self-harm",
+        "Inability to care for the baby",
+        "Hallucinations or delusions",
+        "Severe agitation or confusion"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental health assessment",
+        "Edinburgh Postnatal Depression Scale (EPDS)",
+        "Generalized Anxiety Disorder 7-item scale (GAD-7)"
+      ],
+      "secondLine": [
+        "Structured clinical interview for DSM-5 (SCID-5)",
+        "Assessment of psychosocial stressors"
+      ],
+      "specialistTests": [
+        "Referral to a psychiatrist for comprehensive evaluation",
+        "Consideration of blood tests to rule out thyroid dysfunction"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 criteria for major depressive disorder or generalized anxiety disorder, with symptoms occurring within 4 weeks of delivery for postpartum depression and anxiety.",
+      "differentials": [
+        "Major depressive disorder",
+        "Generalized anxiety disorder",
+        "Bipolar disorder",
+        "Adjustment disorder",
+        "Post-traumatic stress disorder (PTSD)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Psychosocial support and counseling",
+          "Education about the condition and reassurance"
+        ],
+        "secondLine": [
+          "Consideration of pharmacotherapy if symptoms are severe or persistent"
+        ],
+        "procedures": [
+          "Referral to mental health services for therapy or medication management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Cognitive Behavioral Therapy (CBT)",
+          "Support groups for new mothers"
+        ],
+        "secondLine": [
+          "Medication management if symptoms persist despite therapy",
+          "Consideration of family therapy"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess mental health status and medication adherence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Sertraline",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Starting dose of 50 mg daily, can be increased to 100-200 mg based on response.",
+          "sideEffects": "Nausea, diarrhea, insomnia, sexual dysfunction, weight gain.",
+          "notes": "Considered first-line for postpartum depression and anxiety."
+        },
+        {
+          "name": "Fluoxetine",
+          "mechanism": "SSRI that increases serotonin levels in the brain.",
+          "dosing": "Starting dose of 20 mg daily, can be increased to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, anxiety, sexual dysfunction.",
+          "notes": "Effective for long-term management of depression."
+        },
+        {
+          "name": "Bupropion",
+          "mechanism": "Norepinephrine-dopamine reuptake inhibitor (NDRI) that increases norepinephrine and dopamine levels.",
+          "dosing": "Starting dose of 150 mg daily, can be increased to 300 mg.",
+          "sideEffects": "Insomnia, dry mouth, increased risk of seizures.",
+          "notes": "Considered if SSRIs are ineffective or not tolerated."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Psychotherapy",
+          "description": "Therapeutic intervention aimed at improving mental health through conversation and support.",
+          "indications": "Indicated for mild to moderate postpartum depression and anxiety.",
+          "risks": "May require multiple sessions; some patients may not respond."
+        },
+        {
+          "name": "Medication management",
+          "description": "Use of antidepressants or anxiolytics to manage symptoms.",
+          "indications": "Indicated for moderate to severe cases or when psychotherapy alone is insufficient.",
+          "risks": "Potential side effects of medications; need for monitoring."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for post-natal mental health disorders is generally good, with many women recovering fully. However, untreated conditions can lead to chronic mental health issues and affect mother-infant bonding.",
+    "complications": [
+      "Chronic depression or anxiety",
+      "Increased risk of future mental health disorders",
+      "Impaired mother-infant bonding",
+      "Impact on child development",
+      "Suicidal ideation or attempts"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of post-natal mental health issues, conduct initial assessments, provide support, and refer to mental health services as needed. They should also educate patients about the condition and treatment options.",
+    "escalation": "If a patient presents with severe symptoms, such as suicidal ideation or psychosis, immediate referral to psychiatric services is necessary. Regular follow-up is essential for monitoring treatment response.",
+    "keySafetyConsiderations": "Ensure safety of the mother and baby; assess for any risk of self-harm or harm to the baby. Provide a supportive environment and involve family members in care when appropriate."
+  }
+}

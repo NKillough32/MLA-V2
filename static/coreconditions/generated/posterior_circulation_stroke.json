@@ -1,0 +1,137 @@
+{
+  "id": "posterior_circulation_stroke",
+  "name": "Posterior circulation stroke",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:56:59.431877",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Posterior circulation stroke: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPosterior circulation stroke refers to a type of stroke that occurs due to ischemia or hemorrhage in the posterior circulation of the brain, which includes the brainstem, cerebellum, and occipital lobes. It is less common than anterior circulation strokes but can lead to significant morbidity and mortality.\n\n### Epidemiology\nPosterior circulation strokes account for approximately 20% of all ischemic strokes. They are more prevalent in older adults and can occur in patients with vascular risk factors such as hypertension, diabetes, and atrial fibrillation.\n\n### Essential Pathophysiology\nThe posterior circulation is supplied by the vertebral and basilar arteries. Ischemia can occur due to embolism, thrombosis, or dissection, leading to reduced blood flow to critical areas responsible for balance, coordination, vision, and vital functions.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dizziness or vertigo\n- Ataxia\n- Visual disturbances (e.g., diplopia, homonymous hemianopia)\n- Nausea and vomiting\n- Dysphagia\n- Altered consciousness\n\n### Key Signs\n- Cerebellar signs (e.g., dysmetria, intention tremor)\n- Cranial nerve deficits (e.g., facial weakness, dysarthria)\n- Gait abnormalities\n- Visual field defects\n\n### Atypical Presentations\n- Isolated vertigo without other neurological signs\n- Sudden onset of hiccups or nausea\n- Transient loss of consciousness\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe headache (thunderclap headache)\n- Rapid deterioration of neurological status\n- Signs of brainstem involvement (e.g., bilateral weakness, altered consciousness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (to rule out hemorrhage)\n- MRI of the brain (to assess for ischemia)\n\n### Second-line Investigations\n- CT angiography (to evaluate vascular anatomy)\n- Doppler ultrasound of the carotid and vertebral arteries\n\n### Specialist Tests\n- Digital subtraction angiography (DSA)\n- Transcranial Doppler ultrasound\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and exclusion of other conditions. The presence of acute ischemic changes in the posterior circulation on MRI or CT is diagnostic.\n\n### Key Differential Diagnoses to Exclude\n- Anterior circulation stroke\n- Transient ischemic attack (TIA)\n- Migraine with aura\n- Vestibular disorders\n- Multiple sclerosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Aspirin (300 mg orally) within 24-48 hours of stroke onset\n- Supportive care (monitoring vital signs, neurological status)\n\n#### Second-line Treatments\n- Thrombectomy (if within 6-24 hours and suitable for large vessel occlusion)\n- Intravenous thrombolysis (if within 4.5 hours and no contraindications)\n\n#### Emergency Procedures\n- Endovascular therapy (for eligible patients with large vessel occlusion)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antiplatelet therapy (e.g., aspirin or clopidogrel)\n- Management of vascular risk factors (e.g., hypertension, diabetes)\n\n#### Second-line Treatments\n- Statins for secondary prevention\n- Rehabilitation services (physiotherapy, occupational therapy)\n\n#### Monitoring Requirements\n- Regular follow-up for neurological assessment and risk factor management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking cyclooxygenase-1 (COX-1)\n- **Typical Dosing Range**: 300 mg loading dose, then 75 mg daily\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, dyspepsia, allergic reactions\n- **When to Use vs. Alternatives**: First-line treatment for acute ischemic stroke after 24 hours.\n\n#### Clopidogrel\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking the P2Y12 receptor\n- **Typical Dosing Range**: Loading dose of 300 mg, then 75 mg daily\n- **Key Side Effects/Contraindications**: Bleeding, gastrointestinal upset, rash\n- **When to Use vs. Alternatives**: Used in combination with aspirin in some cases.\n\n#### Statins (e.g., Atorvastatin)\n- **Mechanism of Action**: Reduces cholesterol levels and stabilizes atherosclerotic plaques\n- **Typical Dosing Range**: Atorvastatin 80 mg daily\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation\n- **When to Use vs. Alternatives**: Recommended for secondary prevention.\n\n### Procedures\n\n#### Endovascular thrombectomy\n- **What it Involves**: A minimally invasive procedure to remove a clot from a blood vessel in the brain using a catheter.\n- **Indications**: Large vessel occlusion in the posterior circulation within 6-24 hours of symptom onset.\n- **Key Risks/Complications**: Hemorrhage, vessel perforation, contrast allergy.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of posterior circulation strokes varies depending on the extent of the stroke and the speed of treatment. Early intervention can improve outcomes, but complications such as disability and cognitive impairment are common.\n\n### Important Complications to Watch For\n- Persistent dizziness or vertigo\n- Cerebellar ataxia\n- Visual disturbances\n- Dysphagia leading to aspiration pneumonia\n- Mortality in severe cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of posterior circulation stroke, initiate appropriate investigations, and manage acute care. They should also be involved in the rehabilitation process and patient education regarding risk factor management.\n\n### When to Escalate to Senior/Specialist\nIf a posterior circulation stroke is suspected, escalate care to a senior clinician immediately. Ensure timely imaging and consider referral to a stroke unit or neurology specialist.\n\n### Key Safety Considerations\nMonitor for signs of deterioration in neurological status, ensure timely imaging to rule out hemorrhage, and be aware of contraindications for thrombolysis and thrombectomy.\n",
+  "content": {
+    "overview": {
+      "definition": "Posterior circulation stroke refers to a type of stroke that occurs due to ischemia or hemorrhage in the posterior circulation of the brain, which includes the brainstem, cerebellum, and occipital lobes. It is less common than anterior circulation strokes but can lead to significant morbidity and mortality.",
+      "epidemiology": "Posterior circulation strokes account for approximately 20% of all ischemic strokes. They are more prevalent in older adults and can occur in patients with vascular risk factors such as hypertension, diabetes, and atrial fibrillation.",
+      "pathophysiology": "The posterior circulation is supplied by the vertebral and basilar arteries. Ischemia can occur due to embolism, thrombosis, or dissection, leading to reduced blood flow to critical areas responsible for balance, coordination, vision, and vital functions."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dizziness or vertigo",
+        "Ataxia",
+        "Visual disturbances (e.g., diplopia, homonymous hemianopia)",
+        "Nausea and vomiting",
+        "Dysphagia",
+        "Altered consciousness"
+      ],
+      "signs": [
+        "Cerebellar signs (e.g., dysmetria, intention tremor)",
+        "Cranial nerve deficits (e.g., facial weakness, dysarthria)",
+        "Gait abnormalities",
+        "Visual field defects"
+      ],
+      "atypicalPresentations": [
+        "Isolated vertigo without other neurological signs",
+        "Sudden onset of hiccups or nausea",
+        "Transient loss of consciousness"
+      ],
+      "redFlags": [
+        "Sudden onset of severe headache (thunderclap headache)",
+        "Rapid deterioration of neurological status",
+        "Signs of brainstem involvement (e.g., bilateral weakness, altered consciousness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (to rule out hemorrhage)",
+        "MRI of the brain (to assess for ischemia)"
+      ],
+      "secondLine": [
+        "CT angiography (to evaluate vascular anatomy)",
+        "Doppler ultrasound of the carotid and vertebral arteries"
+      ],
+      "specialistTests": [
+        "Digital subtraction angiography (DSA)",
+        "Transcranial Doppler ultrasound"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and exclusion of other conditions. The presence of acute ischemic changes in the posterior circulation on MRI or CT is diagnostic.",
+      "differentials": [
+        "Anterior circulation stroke",
+        "Transient ischemic attack (TIA)",
+        "Migraine with aura",
+        "Vestibular disorders",
+        "Multiple sclerosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Aspirin (300 mg orally) within 24-48 hours of stroke onset",
+          "Supportive care (monitoring vital signs, neurological status)"
+        ],
+        "secondLine": [
+          "Thrombectomy (if within 6-24 hours and suitable for large vessel occlusion)",
+          "Intravenous thrombolysis (if within 4.5 hours and no contraindications)"
+        ],
+        "procedures": [
+          "Endovascular therapy (for eligible patients with large vessel occlusion)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antiplatelet therapy (e.g., aspirin or clopidogrel)",
+          "Management of vascular risk factors (e.g., hypertension, diabetes)"
+        ],
+        "secondLine": [
+          "Statins for secondary prevention",
+          "Rehabilitation services (physiotherapy, occupational therapy)"
+        ],
+        "monitoring": [
+          "Regular follow-up for neurological assessment and risk factor management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation by blocking cyclooxygenase-1 (COX-1)",
+          "dosing": "300 mg loading dose, then 75 mg daily",
+          "sideEffects": "Gastrointestinal bleeding, dyspepsia, allergic reactions",
+          "notes": "First-line treatment for acute ischemic stroke after 24 hours."
+        },
+        {
+          "name": "Clopidogrel",
+          "mechanism": "Inhibits platelet aggregation by blocking the P2Y12 receptor",
+          "dosing": "Loading dose of 300 mg, then 75 mg daily",
+          "sideEffects": "Bleeding, gastrointestinal upset, rash",
+          "notes": "Used in combination with aspirin in some cases."
+        },
+        {
+          "name": "Statins (e.g., Atorvastatin)",
+          "mechanism": "Reduces cholesterol levels and stabilizes atherosclerotic plaques",
+          "dosing": "Atorvastatin 80 mg daily",
+          "sideEffects": "Myopathy, liver enzyme elevation",
+          "notes": "Recommended for secondary prevention."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endovascular thrombectomy",
+          "description": "A minimally invasive procedure to remove a clot from a blood vessel in the brain using a catheter.",
+          "indications": "Large vessel occlusion in the posterior circulation within 6-24 hours of symptom onset.",
+          "risks": "Hemorrhage, vessel perforation, contrast allergy."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of posterior circulation strokes varies depending on the extent of the stroke and the speed of treatment. Early intervention can improve outcomes, but complications such as disability and cognitive impairment are common.",
+    "complications": [
+      "Persistent dizziness or vertigo",
+      "Cerebellar ataxia",
+      "Visual disturbances",
+      "Dysphagia leading to aspiration pneumonia",
+      "Mortality in severe cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of posterior circulation stroke, initiate appropriate investigations, and manage acute care. They should also be involved in the rehabilitation process and patient education regarding risk factor management.",
+    "escalation": "If a posterior circulation stroke is suspected, escalate care to a senior clinician immediately. Ensure timely imaging and consider referral to a stroke unit or neurology specialist.",
+    "keySafetyConsiderations": "Monitor for signs of deterioration in neurological status, ensure timely imaging to rule out hemorrhage, and be aware of contraindications for thrombolysis and thrombectomy."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "tuberculosis",
+  "name": "Tuberculosis",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:05:40.149090",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Tuberculosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTuberculosis (TB) is a contagious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but can also affect other parts of the body.\n\n### Epidemiology\nGlobally, TB is one of the top infectious disease killers, with approximately 10 million cases and 1.5 million deaths reported annually. It is more prevalent in low- and middle-income countries, particularly in areas with high HIV prevalence.\n\n### Essential Pathophysiology\nTB is transmitted via airborne droplets. Once inhaled, the bacteria can evade the immune system, leading to a latent infection in which the bacteria remain dormant. If the immune system weakens, the infection can reactivate, leading to active TB disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent cough (lasting more than 3 weeks)\n- Hemoptysis (coughing up blood)\n- Night sweats\n- Fever\n- Weight loss\n- Fatigue\n- Chest pain\n\n### Key Signs\n- Dullness to percussion\n- Decreased breath sounds\n- Crackles on auscultation\n- Lymphadenopathy (especially cervical)\n- Signs of respiratory distress\n\n### Atypical Presentations\n- Extrapulmonary TB (e.g., TB meningitis, TB osteomyelitis)\n- Asymptomatic latent TB infection\n- Miliary TB (disseminated disease)\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Massive hemoptysis\n- Signs of sepsis\n- Neurological symptoms (in case of TB meningitis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (CXR)\n- Sputum smear microscopy for acid-fast bacilli (AFB)\n- Sputum culture for Mycobacterium tuberculosis\n- Tuberculin skin test (TST) or Interferon-gamma release assays (IGRAs)\n\n### Second-line Investigations\n- CT scan of the chest\n- Bronchoscopy with lavage\n- PCR testing for TB (e.g., GeneXpert)\n\n### Specialist Tests\n- Liver function tests (to monitor for drug toxicity)\n- HIV testing (due to co-infection risk)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of active TB is confirmed by the presence of Mycobacterium tuberculosis in clinical specimens (sputum, biopsy) or by radiological evidence consistent with TB, along with clinical symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Lung cancer\n- Pneumonia\n- Fungal infections (e.g., histoplasmosis)\n- Sarcoidosis\n- Lymphoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate directly observed therapy (DOT) with first-line anti-TB drugs\n\n#### Second-line Treatments\n- Consider second-line drugs if resistance is suspected or confirmed\n\n#### Emergency Procedures\n- Pleural drainage (if there is a pleural effusion)\n- Bronchoscopy (for diagnostic purposes)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continuation of first-line anti-TB therapy for at least 6 months\n\n#### Second-line Treatments\n- Consider second-line agents for drug-resistant TB\n\n#### Monitoring Requirements\n- Regular follow-up with sputum tests to assess treatment response\n- Monitor for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Isoniazid\n- **Mechanism of Action**: Inhibits mycolic acid synthesis in bacterial cell walls\n- **Typical Dosing Range**: 300 mg daily\n- **Key Side Effects/Contraindications**: Hepatotoxicity, peripheral neuropathy\n- **When to Use vs. Alternatives**: Pyridoxine (Vitamin B6) should be given to prevent neuropathy.\n\n#### Rifampicin\n- **Mechanism of Action**: Inhibits bacterial RNA synthesis by binding to RNA polymerase\n- **Typical Dosing Range**: 600 mg daily\n- **Key Side Effects/Contraindications**: Hepatotoxicity, orange discoloration of body fluids\n- **When to Use vs. Alternatives**: May interact with other medications.\n\n#### Pyrazinamide\n- **Mechanism of Action**: Disrupts mycobacterial cell membrane metabolism and transport functions\n- **Typical Dosing Range**: 25 mg/kg daily\n- **Key Side Effects/Contraindications**: Hepatotoxicity, hyperuricemia\n- **When to Use vs. Alternatives**: Monitor uric acid levels.\n\n#### Ethambutol\n- **Mechanism of Action**: Inhibits cell wall synthesis by interfering with arabinogalactan synthesis\n- **Typical Dosing Range**: 15 mg/kg daily\n- **Key Side Effects/Contraindications**: Optic neuritis, red-green color blindness\n- **When to Use vs. Alternatives**: Regular vision checks are necessary.\n\n### Procedures\n\n#### Pleural drainage\n- **What it Involves**: Insertion of a chest tube to drain pleural effusion associated with TB\n- **Indications**: Significant pleural effusion causing respiratory distress\n- **Key Risks/Complications**: Infection, bleeding, pneumothorax\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for TB is generally good, with a cure rate of over 90% for drug-susceptible strains. However, drug-resistant TB has a poorer prognosis and requires longer treatment.\n\n### Important Complications to Watch For\n- Chronic lung disease (e.g., bronchiectasis)\n- Respiratory failure\n- Miliary TB leading to multi-organ failure\n- TB meningitis leading to neurological deficits\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of TB, initiate investigations, and manage treatment under supervision. They should also educate patients about adherence to therapy and monitor for side effects.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there is suspicion of drug-resistant TB, severe complications, or if the patient is not responding to initial treatment.\n\n### Key Safety Considerations\nEnsure proper infection control measures are in place to prevent transmission. Monitor liver function tests regularly during treatment, especially in patients with risk factors for hepatotoxicity.\n",
+  "content": {
+    "overview": {
+      "definition": "Tuberculosis (TB) is a contagious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but can also affect other parts of the body.",
+      "epidemiology": "Globally, TB is one of the top infectious disease killers, with approximately 10 million cases and 1.5 million deaths reported annually. It is more prevalent in low- and middle-income countries, particularly in areas with high HIV prevalence.",
+      "pathophysiology": "TB is transmitted via airborne droplets. Once inhaled, the bacteria can evade the immune system, leading to a latent infection in which the bacteria remain dormant. If the immune system weakens, the infection can reactivate, leading to active TB disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent cough (lasting more than 3 weeks)",
+        "Hemoptysis (coughing up blood)",
+        "Night sweats",
+        "Fever",
+        "Weight loss",
+        "Fatigue",
+        "Chest pain"
+      ],
+      "signs": [
+        "Dullness to percussion",
+        "Decreased breath sounds",
+        "Crackles on auscultation",
+        "Lymphadenopathy (especially cervical)",
+        "Signs of respiratory distress"
+      ],
+      "atypicalPresentations": [
+        "Extrapulmonary TB (e.g., TB meningitis, TB osteomyelitis)",
+        "Asymptomatic latent TB infection",
+        "Miliary TB (disseminated disease)"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Massive hemoptysis",
+        "Signs of sepsis",
+        "Neurological symptoms (in case of TB meningitis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (CXR)",
+        "Sputum smear microscopy for acid-fast bacilli (AFB)",
+        "Sputum culture for Mycobacterium tuberculosis",
+        "Tuberculin skin test (TST) or Interferon-gamma release assays (IGRAs)"
+      ],
+      "secondLine": [
+        "CT scan of the chest",
+        "Bronchoscopy with lavage",
+        "PCR testing for TB (e.g., GeneXpert)"
+      ],
+      "specialistTests": [
+        "Liver function tests (to monitor for drug toxicity)",
+        "HIV testing (due to co-infection risk)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of active TB is confirmed by the presence of Mycobacterium tuberculosis in clinical specimens (sputum, biopsy) or by radiological evidence consistent with TB, along with clinical symptoms.",
+      "differentials": [
+        "Lung cancer",
+        "Pneumonia",
+        "Fungal infections (e.g., histoplasmosis)",
+        "Sarcoidosis",
+        "Lymphoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate directly observed therapy (DOT) with first-line anti-TB drugs"
+        ],
+        "secondLine": [
+          "Consider second-line drugs if resistance is suspected or confirmed"
+        ],
+        "procedures": [
+          "Pleural drainage (if there is a pleural effusion)",
+          "Bronchoscopy (for diagnostic purposes)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continuation of first-line anti-TB therapy for at least 6 months"
+        ],
+        "secondLine": [
+          "Consider second-line agents for drug-resistant TB"
+        ],
+        "monitoring": [
+          "Regular follow-up with sputum tests to assess treatment response",
+          "Monitor for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Isoniazid",
+          "mechanism": "Inhibits mycolic acid synthesis in bacterial cell walls",
+          "dosing": "300 mg daily",
+          "sideEffects": "Hepatotoxicity, peripheral neuropathy",
+          "notes": "Pyridoxine (Vitamin B6) should be given to prevent neuropathy."
+        },
+        {
+          "name": "Rifampicin",
+          "mechanism": "Inhibits bacterial RNA synthesis by binding to RNA polymerase",
+          "dosing": "600 mg daily",
+          "sideEffects": "Hepatotoxicity, orange discoloration of body fluids",
+          "notes": "May interact with other medications."
+        },
+        {
+          "name": "Pyrazinamide",
+          "mechanism": "Disrupts mycobacterial cell membrane metabolism and transport functions",
+          "dosing": "25 mg/kg daily",
+          "sideEffects": "Hepatotoxicity, hyperuricemia",
+          "notes": "Monitor uric acid levels."
+        },
+        {
+          "name": "Ethambutol",
+          "mechanism": "Inhibits cell wall synthesis by interfering with arabinogalactan synthesis",
+          "dosing": "15 mg/kg daily",
+          "sideEffects": "Optic neuritis, red-green color blindness",
+          "notes": "Regular vision checks are necessary."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pleural drainage",
+          "description": "Insertion of a chest tube to drain pleural effusion associated with TB",
+          "indications": "Significant pleural effusion causing respiratory distress",
+          "risks": "Infection, bleeding, pneumothorax"
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for TB is generally good, with a cure rate of over 90% for drug-susceptible strains. However, drug-resistant TB has a poorer prognosis and requires longer treatment.",
+    "complications": [
+      "Chronic lung disease (e.g., bronchiectasis)",
+      "Respiratory failure",
+      "Miliary TB leading to multi-organ failure",
+      "TB meningitis leading to neurological deficits"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of TB, initiate investigations, and manage treatment under supervision. They should also educate patients about adherence to therapy and monitor for side effects.",
+    "escalation": "Refer to a specialist if there is suspicion of drug-resistant TB, severe complications, or if the patient is not responding to initial treatment.",
+    "keySafetyConsiderations": "Ensure proper infection control measures are in place to prevent transmission. Monitor liver function tests regularly during treatment, especially in patients with risk factors for hepatotoxicity."
+  }
+}

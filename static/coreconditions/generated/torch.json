@@ -1,0 +1,132 @@
+{
+  "id": "torch",
+  "name": "TORCH",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:47:38.140405",
+  "model": "gpt-4o-mini",
+  "rawContent": "# TORCH: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTORCH is an acronym that refers to a group of infectious diseases that can cause congenital abnormalities in a fetus if a mother is infected during pregnancy. The diseases included are Toxoplasmosis, Other (such as syphilis, varicella, and parvovirus B19), Rubella, Cytomegalovirus (CMV), and Herpes Simplex Virus (HSV).\n\n### Epidemiology\nThe prevalence of TORCH infections varies by region and population. For example, congenital CMV is the most common congenital infection in the United States, affecting approximately 1 in 150 live births. Rubella has become rare in countries with vaccination programs, while Toxoplasmosis is more common in areas with high rates of cat ownership and undercooked meat consumption.\n\n### Essential Pathophysiology\nEach TORCH infection has a unique pathophysiology. For instance, Toxoplasmosis is caused by the parasite Toxoplasma gondii, which can cross the placenta and affect fetal development. Rubella virus can cause fetal infection leading to congenital rubella syndrome, characterized by cardiac defects, cataracts, and deafness. CMV can lead to neurological impairment and growth restriction due to its ability to replicate in fetal tissues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Rash\n- Lethargy\n- Poor feeding\n- Irritability\n- Jaundice\n- Microcephaly\n- Hearing loss\n\n### Key Signs\n- Congenital anomalies (e.g., cataracts, heart defects)\n- Hepatosplenomegaly\n- Thrombocytopenia\n- Chorioretinitis\n- Neurological deficits\n\n### Atypical Presentations\n- Asymptomatic at birth (especially with CMV)\n- Late-onset symptoms (e.g., hearing loss developing after the neonatal period)\n\n### Red Flags Requiring Immediate Action\n- Maternal history of TORCH infections during pregnancy\n- Severe fetal growth restriction\n- Multiple congenital anomalies\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Maternal serology for TORCH infections (IgM and IgG)\n- Newborn screening for congenital infections (e.g., hearing test, blood tests)\n\n### Second-line Investigations\n- Amniocentesis for PCR testing of fetal fluid\n- Ultrasound for fetal anomalies\n\n### Specialist Tests\n- Ophthalmology referral for eye examination in suspected cases of congenital rubella or CMV\n- Neurology referral for developmental assessment in affected infants\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of TORCH infections is based on maternal serology, clinical findings in the newborn, and sometimes PCR testing of amniotic fluid or newborn blood.\n\n### Key Differential Diagnoses to Exclude\n- Non-infectious causes of congenital anomalies (e.g., genetic syndromes)\n- Other viral infections (e.g., Zika virus)\n- Environmental teratogens (e.g., alcohol, drugs)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care for symptomatic infants (e.g., feeding support, management of jaundice)\n- Referral to pediatric infectious disease specialists\n\n#### Second-line Treatments\n- Antiviral therapy for HSV (e.g., acyclovir) if symptomatic\n\n#### Emergency Procedures\n- Lumber puncture for suspected CNS involvement in HSV or CMV\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular developmental assessments and early intervention services\n\n#### Second-line Treatments\n- Long-term follow-up for hearing and vision screening\n\n#### Monitoring Requirements\n- Growth monitoring and nutritional support as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acyclovir\n- **Mechanism of Action**: Antiviral that inhibits viral DNA synthesis\n- **Typical Dosing Range**: 20 mg/kg IV every 8 hours for 14-21 days for severe cases\n- **Key Side Effects/Contraindications**: Renal toxicity, neurotoxicity, nausea\n- **When to Use vs. Alternatives**: Hydration is important to prevent renal damage.\n\n#### Ganciclovir\n- **Mechanism of Action**: Antiviral that inhibits viral DNA synthesis, used for CMV\n- **Typical Dosing Range**: 5 mg/kg IV every 12 hours for 14-21 days\n- **Key Side Effects/Contraindications**: Bone marrow suppression, renal toxicity\n- **When to Use vs. Alternatives**: Monitor blood counts regularly.\n\n### Procedures\n\n#### Amniocentesis\n- **What it Involves**: A procedure to obtain amniotic fluid for testing\n- **Indications**: To confirm suspected TORCH infections in utero\n- **Key Risks/Complications**: Infection, miscarriage, preterm labor.\n\n#### Lumber puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid for analysis\n- **Indications**: To diagnose CNS infections like HSV or CMV\n- **Key Risks/Complications**: Headache, infection, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies depending on the specific TORCH infection and timing of maternal infection. Early diagnosis and management can improve outcomes, but some infections like CMV can lead to lifelong disabilities.\n\n### Important Complications to Watch For\n- Hearing loss\n- Vision problems\n- Neurological deficits\n- Growth retardation\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be aware of the signs and symptoms of TORCH infections, perform initial assessments, and refer to specialists as needed. They should also educate patients about the importance of prenatal care and vaccination.\n\n### When to Escalate to Senior/Specialist\nIf a TORCH infection is suspected, escalate care to a pediatric infectious disease specialist and consider referral to maternal-fetal medicine for high-risk pregnancies.\n\n### Key Safety Considerations\nEnsure maternal screening for TORCH infections in early pregnancy, provide education on prevention (e.g., hygiene, avoiding undercooked meats), and monitor infants for developmental milestones.\n",
+  "content": {
+    "overview": {
+      "definition": "TORCH is an acronym that refers to a group of infectious diseases that can cause congenital abnormalities in a fetus if a mother is infected during pregnancy. The diseases included are Toxoplasmosis, Other (such as syphilis, varicella, and parvovirus B19), Rubella, Cytomegalovirus (CMV), and Herpes Simplex Virus (HSV).",
+      "epidemiology": "The prevalence of TORCH infections varies by region and population. For example, congenital CMV is the most common congenital infection in the United States, affecting approximately 1 in 150 live births. Rubella has become rare in countries with vaccination programs, while Toxoplasmosis is more common in areas with high rates of cat ownership and undercooked meat consumption.",
+      "pathophysiology": "Each TORCH infection has a unique pathophysiology. For instance, Toxoplasmosis is caused by the parasite Toxoplasma gondii, which can cross the placenta and affect fetal development. Rubella virus can cause fetal infection leading to congenital rubella syndrome, characterized by cardiac defects, cataracts, and deafness. CMV can lead to neurological impairment and growth restriction due to its ability to replicate in fetal tissues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Rash",
+        "Lethargy",
+        "Poor feeding",
+        "Irritability",
+        "Jaundice",
+        "Microcephaly",
+        "Hearing loss"
+      ],
+      "signs": [
+        "Congenital anomalies (e.g., cataracts, heart defects)",
+        "Hepatosplenomegaly",
+        "Thrombocytopenia",
+        "Chorioretinitis",
+        "Neurological deficits"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic at birth (especially with CMV)",
+        "Late-onset symptoms (e.g., hearing loss developing after the neonatal period)"
+      ],
+      "redFlags": [
+        "Maternal history of TORCH infections during pregnancy",
+        "Severe fetal growth restriction",
+        "Multiple congenital anomalies"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Maternal serology for TORCH infections (IgM and IgG)",
+        "Newborn screening for congenital infections (e.g., hearing test, blood tests)"
+      ],
+      "secondLine": [
+        "Amniocentesis for PCR testing of fetal fluid",
+        "Ultrasound for fetal anomalies"
+      ],
+      "specialistTests": [
+        "Ophthalmology referral for eye examination in suspected cases of congenital rubella or CMV",
+        "Neurology referral for developmental assessment in affected infants"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of TORCH infections is based on maternal serology, clinical findings in the newborn, and sometimes PCR testing of amniotic fluid or newborn blood.",
+      "differentials": [
+        "Non-infectious causes of congenital anomalies (e.g., genetic syndromes)",
+        "Other viral infections (e.g., Zika virus)",
+        "Environmental teratogens (e.g., alcohol, drugs)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care for symptomatic infants (e.g., feeding support, management of jaundice)",
+          "Referral to pediatric infectious disease specialists"
+        ],
+        "secondLine": [
+          "Antiviral therapy for HSV (e.g., acyclovir) if symptomatic"
+        ],
+        "procedures": [
+          "Lumber puncture for suspected CNS involvement in HSV or CMV"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular developmental assessments and early intervention services"
+        ],
+        "secondLine": [
+          "Long-term follow-up for hearing and vision screening"
+        ],
+        "monitoring": [
+          "Growth monitoring and nutritional support as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acyclovir",
+          "mechanism": "Antiviral that inhibits viral DNA synthesis",
+          "dosing": "20 mg/kg IV every 8 hours for 14-21 days for severe cases",
+          "sideEffects": "Renal toxicity, neurotoxicity, nausea",
+          "notes": "Hydration is important to prevent renal damage."
+        },
+        {
+          "name": "Ganciclovir",
+          "mechanism": "Antiviral that inhibits viral DNA synthesis, used for CMV",
+          "dosing": "5 mg/kg IV every 12 hours for 14-21 days",
+          "sideEffects": "Bone marrow suppression, renal toxicity",
+          "notes": "Monitor blood counts regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Amniocentesis",
+          "description": "A procedure to obtain amniotic fluid for testing",
+          "indications": "To confirm suspected TORCH infections in utero",
+          "risks": "Infection, miscarriage, preterm labor."
+        },
+        {
+          "name": "Lumber puncture",
+          "description": "A procedure to collect cerebrospinal fluid for analysis",
+          "indications": "To diagnose CNS infections like HSV or CMV",
+          "risks": "Headache, infection, bleeding."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies depending on the specific TORCH infection and timing of maternal infection. Early diagnosis and management can improve outcomes, but some infections like CMV can lead to lifelong disabilities.",
+    "complications": [
+      "Hearing loss",
+      "Vision problems",
+      "Neurological deficits",
+      "Growth retardation"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be aware of the signs and symptoms of TORCH infections, perform initial assessments, and refer to specialists as needed. They should also educate patients about the importance of prenatal care and vaccination.",
+    "escalation": "If a TORCH infection is suspected, escalate care to a pediatric infectious disease specialist and consider referral to maternal-fetal medicine for high-risk pregnancies.",
+    "keySafetyConsiderations": "Ensure maternal screening for TORCH infections in early pregnancy, provide education on prevention (e.g., hygiene, avoiding undercooked meats), and monitor infants for developmental milestones."
+  }
+}

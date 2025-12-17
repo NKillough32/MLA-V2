@@ -1,0 +1,143 @@
+{
+  "id": "diabetic_ketoacidosis",
+  "name": "Diabetic ketoacidosis",
+  "domains": [
+    "Endocrine",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:29:54.062641",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Diabetic ketoacidosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiabetic ketoacidosis (DKA) is a serious complication of diabetes characterized by hyperglycemia, metabolic acidosis, and ketonemia. It typically occurs in individuals with type 1 diabetes but can also occur in type 2 diabetes under stress conditions.\n\n### Epidemiology\nDKA is more common in children and adolescents with type 1 diabetes, with an incidence of 4-8 episodes per 100 patient-years. It can also occur in adults, particularly in those with undiagnosed diabetes or poor glycemic control.\n\n### Essential Pathophysiology\nIn DKA, insulin deficiency leads to increased lipolysis and ketogenesis in the liver, resulting in the accumulation of ketone bodies (acetoacetate and beta-hydroxybutyrate). This causes metabolic acidosis and an increase in blood glucose levels due to unopposed glucagon action.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Polyuria\n- Polydipsia\n- Nausea and vomiting\n- Abdominal pain\n- Weakness and fatigue\n- Altered mental status\n\n### Key Signs\n- Dehydration (dry mucous membranes, tachycardia)\n- Kussmaul respirations (deep, labored breathing)\n- Fruity odor on breath (due to acetone)\n- Hypotension\n- Altered level of consciousness\n\n### Atypical Presentations\n- Abdominal pain mimicking acute abdomen\n- Altered mental status without classic symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- Altered mental status (confusion, lethargy)\n- Rapidly worsening symptoms\n- Signs of infection (fever, leukocytosis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood glucose level\n- Arterial blood gas (ABG)\n- Serum ketones (beta-hydroxybutyrate)\n- Electrolytes (especially potassium)\n- Urea and creatinine\n\n### Second-line Investigations\n- Urinalysis (to check for ketones and glucose)\n- ECG (to monitor for arrhythmias due to electrolyte imbalances)\n\n### Specialist Tests\n- Cerebral CT/MRI (if neurological symptoms present)\n- Infection workup (blood cultures, chest X-ray)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of DKA is made based on the presence of hyperglycemia (blood glucose > 11 mmol/L), metabolic acidosis (pH < 7.3 or bicarbonate < 15 mmol/L), and ketonemia or ketonuria.\n\n### Key Differential Diagnoses to Exclude\n- Hyperglycemic hyperosmolar state (HHS)\n- Lactic acidosis\n- Acute pancreatitis\n- Renal failure\n- Sepsis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (0.9% saline)\n- Insulin infusion (0.1 units/kg/hour)\n- Electrolyte replacement (especially potassium)\n\n#### Second-line Treatments\n- Bicarbonate therapy (if severe acidosis, pH < 6.9)\n- Consideration of underlying causes (e.g., infection)\n\n#### Emergency Procedures\n- Insertion of IV cannula for fluid and insulin administration\n- Monitoring of vital signs and blood glucose levels\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on diabetes management and prevention of DKA\n- Regular follow-up with endocrinology\n\n#### Second-line Treatments\n- Adjustment of insulin regimen based on blood glucose monitoring\n\n#### Monitoring Requirements\n- Regular blood glucose and ketone monitoring during illness or stress\n- Assessment of HbA1c every 3-6 months\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Insulin\n- **Mechanism of Action**: Reduces blood glucose levels by facilitating cellular uptake of glucose and inhibiting ketogenesis.\n- **Typical Dosing Range**: 0.1 units/kg/hour IV infusion, adjust based on blood glucose levels.\n- **Key Side Effects/Contraindications**: Hypoglycemia, hypokalemia, allergic reactions.\n- **When to Use vs. Alternatives**: Monitor blood glucose every 1-2 hours during treatment.\n\n#### Potassium replacement\n- **Mechanism of Action**: Restores serum potassium levels, which can drop due to insulin therapy.\n- **Typical Dosing Range**: Typically 20-40 mEq/hour IV, adjusted based on serum potassium levels.\n- **Key Side Effects/Contraindications**: Hyperkalemia if over-replaced, cardiac arrhythmias.\n- **When to Use vs. Alternatives**: Monitor potassium levels closely.\n\n### Procedures\n\n#### IV fluid resuscitation\n- **What it Involves**: Administer isotonic saline to restore intravascular volume and improve renal perfusion.\n- **Indications**: Severe dehydration, hypotension, or altered mental status.\n- **Key Risks/Complications**: Fluid overload, especially in patients with renal impairment.\n\n#### Insulin infusion\n- **What it Involves**: Continuous IV infusion of insulin to lower blood glucose and suppress ketogenesis.\n- **Indications**: Confirmed DKA with significant hyperglycemia.\n- **Key Risks/Complications**: Hypoglycemia, hypokalemia, and potential for cerebral edema if treated too rapidly.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and treatment, the prognosis for DKA is generally good. However, complications can arise, and mortality rates can be as high as 5-10% in severe cases.\n\n### Important Complications to Watch For\n- Cerebral edema\n- Acute kidney injury\n- Cardiac arrhythmias\n- Thromboembolic events\n- Infection\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of DKA, initiate fluid resuscitation and insulin therapy, monitor vital signs and laboratory values, and escalate care to senior medical staff as needed.\n\n### When to Escalate to Senior/Specialist\nIf the patient shows signs of severe DKA (pH < 7.0, altered mental status, or persistent hypotension), or if there are concerns about the patient's response to treatment, escalate to a senior clinician or intensivist.\n\n### Key Safety Considerations\nMonitor vital signs and blood glucose levels closely during treatment. Be vigilant for signs of hypoglycemia and electrolyte imbalances, particularly hypokalemia. Ensure adequate fluid resuscitation to prevent renal impairment.\n",
+  "content": {
+    "overview": {
+      "definition": "Diabetic ketoacidosis (DKA) is a serious complication of diabetes characterized by hyperglycemia, metabolic acidosis, and ketonemia. It typically occurs in individuals with type 1 diabetes but can also occur in type 2 diabetes under stress conditions.",
+      "epidemiology": "DKA is more common in children and adolescents with type 1 diabetes, with an incidence of 4-8 episodes per 100 patient-years. It can also occur in adults, particularly in those with undiagnosed diabetes or poor glycemic control.",
+      "pathophysiology": "In DKA, insulin deficiency leads to increased lipolysis and ketogenesis in the liver, resulting in the accumulation of ketone bodies (acetoacetate and beta-hydroxybutyrate). This causes metabolic acidosis and an increase in blood glucose levels due to unopposed glucagon action."
+    },
+    "recognition": {
+      "symptoms": [
+        "Polyuria",
+        "Polydipsia",
+        "Nausea and vomiting",
+        "Abdominal pain",
+        "Weakness and fatigue",
+        "Altered mental status"
+      ],
+      "signs": [
+        "Dehydration (dry mucous membranes, tachycardia)",
+        "Kussmaul respirations (deep, labored breathing)",
+        "Fruity odor on breath (due to acetone)",
+        "Hypotension",
+        "Altered level of consciousness"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain mimicking acute abdomen",
+        "Altered mental status without classic symptoms"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "Altered mental status (confusion, lethargy)",
+        "Rapidly worsening symptoms",
+        "Signs of infection (fever, leukocytosis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood glucose level",
+        "Arterial blood gas (ABG)",
+        "Serum ketones (beta-hydroxybutyrate)",
+        "Electrolytes (especially potassium)",
+        "Urea and creatinine"
+      ],
+      "secondLine": [
+        "Urinalysis (to check for ketones and glucose)",
+        "ECG (to monitor for arrhythmias due to electrolyte imbalances)"
+      ],
+      "specialistTests": [
+        "Cerebral CT/MRI (if neurological symptoms present)",
+        "Infection workup (blood cultures, chest X-ray)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of DKA is made based on the presence of hyperglycemia (blood glucose > 11 mmol/L), metabolic acidosis (pH < 7.3 or bicarbonate < 15 mmol/L), and ketonemia or ketonuria.",
+      "differentials": [
+        "Hyperglycemic hyperosmolar state (HHS)",
+        "Lactic acidosis",
+        "Acute pancreatitis",
+        "Renal failure",
+        "Sepsis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (0.9% saline)",
+          "Insulin infusion (0.1 units/kg/hour)",
+          "Electrolyte replacement (especially potassium)"
+        ],
+        "secondLine": [
+          "Bicarbonate therapy (if severe acidosis, pH < 6.9)",
+          "Consideration of underlying causes (e.g., infection)"
+        ],
+        "procedures": [
+          "Insertion of IV cannula for fluid and insulin administration",
+          "Monitoring of vital signs and blood glucose levels"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on diabetes management and prevention of DKA",
+          "Regular follow-up with endocrinology"
+        ],
+        "secondLine": [
+          "Adjustment of insulin regimen based on blood glucose monitoring"
+        ],
+        "monitoring": [
+          "Regular blood glucose and ketone monitoring during illness or stress",
+          "Assessment of HbA1c every 3-6 months"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Insulin",
+          "mechanism": "Reduces blood glucose levels by facilitating cellular uptake of glucose and inhibiting ketogenesis.",
+          "dosing": "0.1 units/kg/hour IV infusion, adjust based on blood glucose levels.",
+          "sideEffects": "Hypoglycemia, hypokalemia, allergic reactions.",
+          "notes": "Monitor blood glucose every 1-2 hours during treatment."
+        },
+        {
+          "name": "Potassium replacement",
+          "mechanism": "Restores serum potassium levels, which can drop due to insulin therapy.",
+          "dosing": "Typically 20-40 mEq/hour IV, adjusted based on serum potassium levels.",
+          "sideEffects": "Hyperkalemia if over-replaced, cardiac arrhythmias.",
+          "notes": "Monitor potassium levels closely."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "IV fluid resuscitation",
+          "description": "Administer isotonic saline to restore intravascular volume and improve renal perfusion.",
+          "indications": "Severe dehydration, hypotension, or altered mental status.",
+          "risks": "Fluid overload, especially in patients with renal impairment."
+        },
+        {
+          "name": "Insulin infusion",
+          "description": "Continuous IV infusion of insulin to lower blood glucose and suppress ketogenesis.",
+          "indications": "Confirmed DKA with significant hyperglycemia.",
+          "risks": "Hypoglycemia, hypokalemia, and potential for cerebral edema if treated too rapidly."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and treatment, the prognosis for DKA is generally good. However, complications can arise, and mortality rates can be as high as 5-10% in severe cases.",
+    "complications": [
+      "Cerebral edema",
+      "Acute kidney injury",
+      "Cardiac arrhythmias",
+      "Thromboembolic events",
+      "Infection"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of DKA, initiate fluid resuscitation and insulin therapy, monitor vital signs and laboratory values, and escalate care to senior medical staff as needed.",
+    "escalation": "If the patient shows signs of severe DKA (pH < 7.0, altered mental status, or persistent hypotension), or if there are concerns about the patient's response to treatment, escalate to a senior clinician or intensivist.",
+    "keySafetyConsiderations": "Monitor vital signs and blood glucose levels closely during treatment. Be vigilant for signs of hypoglycemia and electrolyte imbalances, particularly hypokalemia. Ensure adequate fluid resuscitation to prevent renal impairment."
+  }
+}

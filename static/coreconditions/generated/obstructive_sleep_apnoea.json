@@ -1,0 +1,138 @@
+{
+  "id": "obstructive_sleep_apnoea",
+  "name": "Obstructive Sleep Apnoea",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:07:30.346510",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Obstructive Sleep Apnoea: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nObstructive Sleep Apnoea (OSA) is a sleep disorder characterized by repeated episodes of partial or complete obstruction of the upper airway during sleep, leading to disrupted sleep and decreased oxygen saturation.\n\n### Epidemiology\nOSA affects approximately 2-4% of the adult population, with higher prevalence in males and individuals with obesity, hypertension, and other comorbidities.\n\n### Essential Pathophysiology\nIn OSA, the relaxation of the muscles in the throat during sleep leads to airway collapse, resulting in apnoeas (complete cessation of breathing) or hypopnoeas (partial cessation). This causes intermittent hypoxia, sleep fragmentation, and increased sympathetic nervous system activity.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Loud snoring\n- Choking or gasping during sleep\n- Excessive daytime sleepiness\n- Morning headaches\n- Difficulty concentrating\n\n### Key Signs\n- Obesity (BMI >30)\n- Hypertension\n- Cyanosis during sleep\n- Enlarged tonsils or adenoids (in children)\n- Narrowed airway on examination\n\n### Atypical Presentations\n- Nocturnal seizures\n- Mood disturbances\n- Cardiac arrhythmias\n\n### Red Flags Requiring Immediate Action\n- Severe daytime sleepiness affecting daily activities\n- Uncontrolled hypertension\n- History of cardiovascular disease\n- Frequent nocturnal awakenings\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Polysomnography (sleep study)\n- Home sleep apnoea testing\n\n### Second-line Investigations\n- Oximetry during sleep\n- Epworth Sleepiness Scale (ESS)\n\n### Specialist Tests\n- CT or MRI of the neck to assess airway anatomy\n- Cardiopulmonary exercise testing (CPET)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of OSA is confirmed by polysomnography showing an Apnoea-Hypopnoea Index (AHI) of ≥5 events per hour with associated symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Central Sleep Apnoea\n- Obesity Hypoventilation Syndrome\n- Chronic Obstructive Pulmonary Disease (COPD)\n- Insomnia\n- Restless Legs Syndrome\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Positioning (lateral position)\n- Supplemental oxygen if hypoxic\n- Continuous Positive Airway Pressure (CPAP) initiation\n\n#### Second-line Treatments\n- Bilevel Positive Airway Pressure (BiPAP) if CPAP is not tolerated\n\n#### Emergency Procedures\n- Tracheostomy in severe cases or when other treatments fail.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (weight loss, smoking cessation)\n- CPAP therapy\n\n#### Second-line Treatments\n- Oral appliances (mandibular advancement devices)\n- Surgery (uvulopalatopharyngoplasty) if indicated.\n\n#### Monitoring Requirements\n- Regular follow-up for CPAP adherence and effectiveness\n- Assessment of comorbid conditions (e.g., hypertension, diabetes)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Modafinil\n- **Mechanism of Action**: Stimulant that promotes wakefulness\n- **Typical Dosing Range**: 200 mg orally once daily in the morning\n- **Key Side Effects/Contraindications**: Headache, nausea, anxiety, insomnia\n- **When to Use vs. Alternatives**: Used for excessive daytime sleepiness in OSA patients.\n\n#### Sodium Oxybate\n- **Mechanism of Action**: CNS depressant that improves sleep architecture\n- **Typical Dosing Range**: 4.5 g at bedtime, divided into two doses\n- **Key Side Effects/Contraindications**: Nausea, dizziness, potential for abuse\n- **When to Use vs. Alternatives**: Considered in patients with severe daytime sleepiness.\n\n### Procedures\n\n#### CPAP titration\n- **What it Involves**: Adjustment of CPAP settings during a sleep study to determine optimal pressure for airway patency.\n- **Indications**: Confirmed OSA with significant symptoms or comorbidities.\n- **Key Risks/Complications**: Discomfort, nasal congestion, skin irritation.\n\n#### Uvulopalatopharyngoplasty (UPPP)\n- **What it Involves**: Surgical procedure to remove excess tissue from the throat to widen the airway.\n- **Indications**: Severe OSA not responding to CPAP or oral appliances.\n- **Key Risks/Complications**: Bleeding, infection, changes in voice, difficulty swallowing. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, including CPAP therapy, the prognosis is generally good, with significant improvement in quality of life and reduction in cardiovascular risks.\n\n### Important Complications to Watch For\n- Cardiovascular disease (hypertension, heart failure)\n- Stroke\n- Type 2 diabetes\n- Depression and anxiety disorders\n- Increased risk of motor vehicle accidents\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of OSA, initiate investigations, and manage acute exacerbations. They should also educate patients on lifestyle modifications and the importance of adherence to CPAP therapy.\n\n### When to Escalate to Senior/Specialist\nRefer to a sleep specialist if there is severe OSA, poor response to initial management, or significant comorbidities.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress, especially in patients with severe OSA. Ensure proper fitting and tolerance of CPAP masks. Be aware of potential complications from sedative medications in patients with OSA.\n",
+  "content": {
+    "overview": {
+      "definition": "Obstructive Sleep Apnoea (OSA) is a sleep disorder characterized by repeated episodes of partial or complete obstruction of the upper airway during sleep, leading to disrupted sleep and decreased oxygen saturation.",
+      "epidemiology": "OSA affects approximately 2-4% of the adult population, with higher prevalence in males and individuals with obesity, hypertension, and other comorbidities.",
+      "pathophysiology": "In OSA, the relaxation of the muscles in the throat during sleep leads to airway collapse, resulting in apnoeas (complete cessation of breathing) or hypopnoeas (partial cessation). This causes intermittent hypoxia, sleep fragmentation, and increased sympathetic nervous system activity."
+    },
+    "recognition": {
+      "symptoms": [
+        "Loud snoring",
+        "Choking or gasping during sleep",
+        "Excessive daytime sleepiness",
+        "Morning headaches",
+        "Difficulty concentrating"
+      ],
+      "signs": [
+        "Obesity (BMI >30)",
+        "Hypertension",
+        "Cyanosis during sleep",
+        "Enlarged tonsils or adenoids (in children)",
+        "Narrowed airway on examination"
+      ],
+      "atypicalPresentations": [
+        "Nocturnal seizures",
+        "Mood disturbances",
+        "Cardiac arrhythmias"
+      ],
+      "redFlags": [
+        "Severe daytime sleepiness affecting daily activities",
+        "Uncontrolled hypertension",
+        "History of cardiovascular disease",
+        "Frequent nocturnal awakenings"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Polysomnography (sleep study)",
+        "Home sleep apnoea testing"
+      ],
+      "secondLine": [
+        "Oximetry during sleep",
+        "Epworth Sleepiness Scale (ESS)"
+      ],
+      "specialistTests": [
+        "CT or MRI of the neck to assess airway anatomy",
+        "Cardiopulmonary exercise testing (CPET)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of OSA is confirmed by polysomnography showing an Apnoea-Hypopnoea Index (AHI) of ≥5 events per hour with associated symptoms.",
+      "differentials": [
+        "Central Sleep Apnoea",
+        "Obesity Hypoventilation Syndrome",
+        "Chronic Obstructive Pulmonary Disease (COPD)",
+        "Insomnia",
+        "Restless Legs Syndrome"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Positioning (lateral position)",
+          "Supplemental oxygen if hypoxic",
+          "Continuous Positive Airway Pressure (CPAP) initiation"
+        ],
+        "secondLine": [
+          "Bilevel Positive Airway Pressure (BiPAP) if CPAP is not tolerated"
+        ],
+        "procedures": [
+          "Tracheostomy in severe cases or when other treatments fail."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (weight loss, smoking cessation)",
+          "CPAP therapy"
+        ],
+        "secondLine": [
+          "Oral appliances (mandibular advancement devices)",
+          "Surgery (uvulopalatopharyngoplasty) if indicated."
+        ],
+        "monitoring": [
+          "Regular follow-up for CPAP adherence and effectiveness",
+          "Assessment of comorbid conditions (e.g., hypertension, diabetes)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Modafinil",
+          "mechanism": "Stimulant that promotes wakefulness",
+          "dosing": "200 mg orally once daily in the morning",
+          "sideEffects": "Headache, nausea, anxiety, insomnia",
+          "notes": "Used for excessive daytime sleepiness in OSA patients."
+        },
+        {
+          "name": "Sodium Oxybate",
+          "mechanism": "CNS depressant that improves sleep architecture",
+          "dosing": "4.5 g at bedtime, divided into two doses",
+          "sideEffects": "Nausea, dizziness, potential for abuse",
+          "notes": "Considered in patients with severe daytime sleepiness."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "CPAP titration",
+          "description": "Adjustment of CPAP settings during a sleep study to determine optimal pressure for airway patency.",
+          "indications": "Confirmed OSA with significant symptoms or comorbidities.",
+          "risks": "Discomfort, nasal congestion, skin irritation."
+        },
+        {
+          "name": "Uvulopalatopharyngoplasty (UPPP)",
+          "description": "Surgical procedure to remove excess tissue from the throat to widen the airway.",
+          "indications": "Severe OSA not responding to CPAP or oral appliances.",
+          "risks": "Bleeding, infection, changes in voice, difficulty swallowing. "
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, including CPAP therapy, the prognosis is generally good, with significant improvement in quality of life and reduction in cardiovascular risks.",
+    "complications": [
+      "Cardiovascular disease (hypertension, heart failure)",
+      "Stroke",
+      "Type 2 diabetes",
+      "Depression and anxiety disorders",
+      "Increased risk of motor vehicle accidents"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of OSA, initiate investigations, and manage acute exacerbations. They should also educate patients on lifestyle modifications and the importance of adherence to CPAP therapy.",
+    "escalation": "Refer to a sleep specialist if there is severe OSA, poor response to initial management, or significant comorbidities.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress, especially in patients with severe OSA. Ensure proper fitting and tolerance of CPAP masks. Be aware of potential complications from sedative medications in patients with OSA."
+  }
+}

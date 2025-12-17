@@ -1,0 +1,136 @@
+{
+  "id": "anovulatory_cycles",
+  "name": "Anovulatory cycles",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:52:31.067207",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anovulatory cycles: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnovulatory cycles are menstrual cycles in which ovulation does not occur, leading to irregular or absent menstrual periods. This condition can result in hormonal imbalances and may affect fertility.\n\n### Epidemiology\nAnovulatory cycles are common, particularly in adolescents and perimenopausal women. It is estimated that up to 30% of women of reproductive age may experience anovulatory cycles at some point.\n\n### Essential Pathophysiology\nAnovulation can result from various factors including hormonal imbalances (e.g., low progesterone), stress, excessive exercise, obesity, polycystic ovary syndrome (PCOS), thyroid disorders, and other systemic illnesses. The lack of ovulation leads to insufficient progesterone production, which is necessary for the regulation of the menstrual cycle.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Irregular menstrual cycles\n- Amenorrhea (absence of menstruation)\n- Heavy or prolonged menstrual bleeding (menorrhagia)\n- Intermenstrual bleeding (spotting)\n- Infertility\n\n### Key Signs\n- Obesity or weight changes\n- Acne or hirsutism (excess hair growth)\n- Signs of hyperandrogenism (e.g., elevated testosterone levels)\n- Thinning hair or alopecia\n\n### Atypical Presentations\n- Menstrual cycles that are consistently longer than 35 days\n- Frequent episodes of heavy bleeding without a clear cycle\n\n### Red Flags Requiring Immediate Action\n- Severe pelvic pain\n- Signs of pregnancy\n- Unexplained weight loss or gain\n- Symptoms of thyroid dysfunction (e.g., fatigue, temperature intolerance)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pregnancy test (to rule out pregnancy)\n- Serum progesterone levels (to assess ovulation)\n- Thyroid function tests (TSH, Free T4)\n- Prolactin levels\n\n### Second-line Investigations\n- Transvaginal ultrasound (to assess ovarian morphology)\n- Endometrial biopsy (if there is abnormal uterine bleeding)\n- Hormonal assays (LH, FSH, testosterone)\n\n### Specialist Tests\n- MRI of the pituitary gland (if hyperprolactinemia is suspected)\n- Glucose tolerance test (to assess for insulin resistance in PCOS)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of anovulatory cycles is based on clinical history, menstrual cycle patterns, and laboratory findings indicating lack of ovulation (e.g., low progesterone levels).\n\n### Key Differential Diagnoses to Exclude\n- Polycystic ovary syndrome (PCOS)\n- Hypothalamic amenorrhea\n- Thyroid disorders (hypothyroidism, hyperthyroidism)\n- Hyperprolactinemia\n- Premature ovarian insufficiency\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Lifestyle modifications (weight management, exercise)\n- Hormonal therapy (e.g., combined oral contraceptives to regulate cycles)\n\n#### Second-line Treatments\n- Progestin therapy to induce withdrawal bleeding\n\n#### Emergency Procedures\n- D&C (Dilation and Curettage) for abnormal uterine bleeding if indicated\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Metformin (for insulin resistance in PCOS)\n- Clomiphene citrate (for ovulation induction)\n\n#### Second-line Treatments\n- Letrozole (alternative for ovulation induction)\n\n#### Monitoring Requirements\n- Regular follow-up to assess menstrual cycle regularity and ovulation status\n- Monitoring for complications such as endometrial hyperplasia\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metformin\n- **Mechanism of Action**: Improves insulin sensitivity and may restore ovulation in women with PCOS.\n- **Typical Dosing Range**: 500 mg orally once daily, may increase to 2000 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, lactic acidosis (rare).\n- **When to Use vs. Alternatives**: Monitor renal function before starting.\n\n#### Clomiphene citrate\n- **Mechanism of Action**: Selective estrogen receptor modulator that stimulates ovulation.\n- **Typical Dosing Range**: 50 mg orally for 5 days starting on day 3-5 of the menstrual cycle, may increase to 100 mg if no ovulation occurs.\n- **Key Side Effects/Contraindications**: Hot flashes, multiple pregnancies, ovarian hyperstimulation syndrome (OHSS).\n- **When to Use vs. Alternatives**: Monitor for ovulation with ultrasound.\n\n#### Letrozole\n- **Mechanism of Action**: Aromatase inhibitor that reduces estrogen levels, stimulating ovulation.\n- **Typical Dosing Range**: 2.5 mg orally for 5 days starting on day 3-5 of the menstrual cycle.\n- **Key Side Effects/Contraindications**: Fatigue, dizziness, hot flashes.\n- **When to Use vs. Alternatives**: Considered first-line for ovulation induction in some cases.\n\n### Procedures\n\n#### D&C (Dilation and Curettage)\n- **What it Involves**: A surgical procedure to remove tissue from the inside of the uterus.\n- **Indications**: Used for abnormal uterine bleeding or to obtain a sample for histological examination.\n- **Key Risks/Complications**: Infection, uterine perforation, scarring (Asherman's syndrome).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for anovulatory cycles varies depending on the underlying cause. Many women can achieve regular cycles and ovulation with appropriate management. However, conditions like PCOS may require ongoing management for fertility and metabolic health.\n\n### Important Complications to Watch For\n- Endometrial hyperplasia due to unopposed estrogen exposure\n- Infertility\n- Psychological impact due to menstrual irregularities\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of anovulatory cycles, perform initial assessments, and refer patients for further evaluation and management. They should also provide education on lifestyle modifications and the importance of follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynecologist if there are persistent symptoms, abnormal bleeding patterns, or if the patient is seeking fertility treatment.\n\n### Key Safety Considerations\nEnsure to rule out pregnancy in women of childbearing age presenting with amenorrhea. Monitor for signs of complications from treatments, such as OHSS with ovulation induction agents.\n",
+  "content": {
+    "overview": {
+      "definition": "Anovulatory cycles are menstrual cycles in which ovulation does not occur, leading to irregular or absent menstrual periods. This condition can result in hormonal imbalances and may affect fertility.",
+      "epidemiology": "Anovulatory cycles are common, particularly in adolescents and perimenopausal women. It is estimated that up to 30% of women of reproductive age may experience anovulatory cycles at some point.",
+      "pathophysiology": "Anovulation can result from various factors including hormonal imbalances (e.g., low progesterone), stress, excessive exercise, obesity, polycystic ovary syndrome (PCOS), thyroid disorders, and other systemic illnesses. The lack of ovulation leads to insufficient progesterone production, which is necessary for the regulation of the menstrual cycle."
+    },
+    "recognition": {
+      "symptoms": [
+        "Irregular menstrual cycles",
+        "Amenorrhea (absence of menstruation)",
+        "Heavy or prolonged menstrual bleeding (menorrhagia)",
+        "Intermenstrual bleeding (spotting)",
+        "Infertility"
+      ],
+      "signs": [
+        "Obesity or weight changes",
+        "Acne or hirsutism (excess hair growth)",
+        "Signs of hyperandrogenism (e.g., elevated testosterone levels)",
+        "Thinning hair or alopecia"
+      ],
+      "atypicalPresentations": [
+        "Menstrual cycles that are consistently longer than 35 days",
+        "Frequent episodes of heavy bleeding without a clear cycle"
+      ],
+      "redFlags": [
+        "Severe pelvic pain",
+        "Signs of pregnancy",
+        "Unexplained weight loss or gain",
+        "Symptoms of thyroid dysfunction (e.g., fatigue, temperature intolerance)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pregnancy test (to rule out pregnancy)",
+        "Serum progesterone levels (to assess ovulation)",
+        "Thyroid function tests (TSH, Free T4)",
+        "Prolactin levels"
+      ],
+      "secondLine": [
+        "Transvaginal ultrasound (to assess ovarian morphology)",
+        "Endometrial biopsy (if there is abnormal uterine bleeding)",
+        "Hormonal assays (LH, FSH, testosterone)"
+      ],
+      "specialistTests": [
+        "MRI of the pituitary gland (if hyperprolactinemia is suspected)",
+        "Glucose tolerance test (to assess for insulin resistance in PCOS)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of anovulatory cycles is based on clinical history, menstrual cycle patterns, and laboratory findings indicating lack of ovulation (e.g., low progesterone levels).",
+      "differentials": [
+        "Polycystic ovary syndrome (PCOS)",
+        "Hypothalamic amenorrhea",
+        "Thyroid disorders (hypothyroidism, hyperthyroidism)",
+        "Hyperprolactinemia",
+        "Premature ovarian insufficiency"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Lifestyle modifications (weight management, exercise)",
+          "Hormonal therapy (e.g., combined oral contraceptives to regulate cycles)"
+        ],
+        "secondLine": [
+          "Progestin therapy to induce withdrawal bleeding"
+        ],
+        "procedures": [
+          "D&C (Dilation and Curettage) for abnormal uterine bleeding if indicated"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Metformin (for insulin resistance in PCOS)",
+          "Clomiphene citrate (for ovulation induction)"
+        ],
+        "secondLine": [
+          "Letrozole (alternative for ovulation induction)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess menstrual cycle regularity and ovulation status",
+          "Monitoring for complications such as endometrial hyperplasia"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metformin",
+          "mechanism": "Improves insulin sensitivity and may restore ovulation in women with PCOS.",
+          "dosing": "500 mg orally once daily, may increase to 2000 mg/day as tolerated.",
+          "sideEffects": "Gastrointestinal upset, lactic acidosis (rare).",
+          "notes": "Monitor renal function before starting."
+        },
+        {
+          "name": "Clomiphene citrate",
+          "mechanism": "Selective estrogen receptor modulator that stimulates ovulation.",
+          "dosing": "50 mg orally for 5 days starting on day 3-5 of the menstrual cycle, may increase to 100 mg if no ovulation occurs.",
+          "sideEffects": "Hot flashes, multiple pregnancies, ovarian hyperstimulation syndrome (OHSS).",
+          "notes": "Monitor for ovulation with ultrasound."
+        },
+        {
+          "name": "Letrozole",
+          "mechanism": "Aromatase inhibitor that reduces estrogen levels, stimulating ovulation.",
+          "dosing": "2.5 mg orally for 5 days starting on day 3-5 of the menstrual cycle.",
+          "sideEffects": "Fatigue, dizziness, hot flashes.",
+          "notes": "Considered first-line for ovulation induction in some cases."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "D&C (Dilation and Curettage)",
+          "description": "A surgical procedure to remove tissue from the inside of the uterus.",
+          "indications": "Used for abnormal uterine bleeding or to obtain a sample for histological examination.",
+          "risks": "Infection, uterine perforation, scarring (Asherman's syndrome)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for anovulatory cycles varies depending on the underlying cause. Many women can achieve regular cycles and ovulation with appropriate management. However, conditions like PCOS may require ongoing management for fertility and metabolic health.",
+    "complications": [
+      "Endometrial hyperplasia due to unopposed estrogen exposure",
+      "Infertility",
+      "Psychological impact due to menstrual irregularities"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of anovulatory cycles, perform initial assessments, and refer patients for further evaluation and management. They should also provide education on lifestyle modifications and the importance of follow-up care.",
+    "escalation": "Refer to a gynecologist if there are persistent symptoms, abnormal bleeding patterns, or if the patient is seeking fertility treatment.",
+    "keySafetyConsiderations": "Ensure to rule out pregnancy in women of childbearing age presenting with amenorrhea. Monitor for signs of complications from treatments, such as OHSS with ovulation induction agents."
+  }
+}

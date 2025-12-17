@@ -1,0 +1,141 @@
+{
+  "id": "rosacea",
+  "name": "Rosacea",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:26:47.093188",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Rosacea: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRosacea is a chronic inflammatory skin condition characterized by facial erythema, flushing, and the presence of papules and pustules, primarily affecting the central face.\n\n### Epidemiology\nRosacea affects approximately 10% of the population, with a higher prevalence in women and individuals aged 30-50 years. It is more common in fair-skinned individuals.\n\n### Essential Pathophysiology\nThe exact pathophysiology of rosacea is not fully understood, but it is believed to involve a combination of genetic predisposition, immune dysregulation, and environmental triggers. Vascular abnormalities leading to increased blood flow and inflammation are also key features.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Facial flushing\n- Persistent redness\n- Burning or stinging sensation\n- Dryness or roughness of the skin\n\n### Key Signs\n- Erythema of the central face\n- Telangiectasia\n- Papules and pustules\n- Phymatous changes (e.g., rhinophyma)\n\n### Atypical Presentations\n- Ocular rosacea (eye irritation, redness, and dryness)\n- Rosacea-like dermatitis (mimicking other skin conditions)\n\n### Red Flags Requiring Immediate Action\n- Severe ocular symptoms (e.g., vision changes)\n- Rapid progression of symptoms\n- Unresponsive to standard treatments\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination and history taking\n\n### Second-line Investigations\n- Skin biopsy (if diagnosis is uncertain)\n\n### Specialist Tests\n- Referral to a dermatologist for complex cases or if ocular involvement is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of flushing, persistent facial erythema, papules, and pustules. The National Rosacea Society criteria can be used for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Acne vulgaris\n- Seborrheic dermatitis\n- Lupus erythematosus\n- Contact dermatitis\n- Perioral dermatitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical metronidazole\n- Topical azelaic acid\n\n#### Second-line Treatments\n- Oral tetracyclines (e.g., doxycycline) for moderate to severe cases\n\n#### Emergency Procedures\n- Laser therapy for telangiectasia\n- Intense pulsed light therapy for erythema\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Daily skincare regimen (gentle cleansers, moisturizers)\n- Avoidance of known triggers (e.g., spicy foods, alcohol)\n\n#### Second-line Treatments\n- Long-term topical treatments (e.g., ivermectin cream)\n\n#### Monitoring Requirements\n- Regular follow-up to assess treatment efficacy and side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Metronidazole\n- **Mechanism of Action**: Antimicrobial and anti-inflammatory effects\n- **Typical Dosing Range**: Apply topically once or twice daily\n- **Key Side Effects/Contraindications**: Skin irritation, dryness\n- **When to Use vs. Alternatives**: First-line topical treatment for mild to moderate rosacea.\n\n#### Azelaic acid\n- **Mechanism of Action**: Antimicrobial and keratolytic properties\n- **Typical Dosing Range**: Apply topically twice daily\n- **Key Side Effects/Contraindications**: Skin irritation, burning sensation\n- **When to Use vs. Alternatives**: Effective for both inflammatory lesions and erythema.\n\n#### Doxycycline\n- **Mechanism of Action**: Tetracycline antibiotic with anti-inflammatory properties\n- **Typical Dosing Range**: 100 mg orally once daily\n- **Key Side Effects/Contraindications**: Photosensitivity, gastrointestinal upset\n- **When to Use vs. Alternatives**: Used for moderate to severe cases.\n\n#### Ivermectin cream\n- **Mechanism of Action**: Antiparasitic with anti-inflammatory effects\n- **Typical Dosing Range**: Apply topically once daily\n- **Key Side Effects/Contraindications**: Skin irritation\n- **When to Use vs. Alternatives**: Useful for inflammatory lesions.\n\n### Procedures\n\n#### Laser therapy\n- **What it Involves**: Uses focused light to reduce redness and visible blood vessels\n- **Indications**: Persistent erythema and telangiectasia not responding to medical therapy\n- **Key Risks/Complications**: Skin burns, hyperpigmentation, transient swelling.\n\n#### Intense pulsed light therapy\n- **What it Involves**: Broad-spectrum light treatment to reduce redness and improve skin texture\n- **Indications**: Moderate to severe rosacea with significant erythema\n- **Key Risks/Complications**: Skin irritation, potential for burns.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nRosacea is a chronic condition with periods of exacerbation and remission. With appropriate management, symptoms can be controlled effectively, but there is no cure.\n\n### Important Complications to Watch For\n- Ocular rosacea leading to keratitis or conjunctivitis\n- Psychosocial impact due to visible skin changes\n- Rhinophyma (thickening of the skin on the nose)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize rosacea, initiate first-line treatments, and provide education on trigger avoidance. They should also be aware of when to refer to a dermatologist for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to a dermatologist if there is severe ocular involvement, rapid progression of symptoms, or if the patient is unresponsive to first-line treatments.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially with long-term use of topical agents. Educate patients on the importance of sun protection and avoiding known triggers.\n",
+  "content": {
+    "overview": {
+      "definition": "Rosacea is a chronic inflammatory skin condition characterized by facial erythema, flushing, and the presence of papules and pustules, primarily affecting the central face.",
+      "epidemiology": "Rosacea affects approximately 10% of the population, with a higher prevalence in women and individuals aged 30-50 years. It is more common in fair-skinned individuals.",
+      "pathophysiology": "The exact pathophysiology of rosacea is not fully understood, but it is believed to involve a combination of genetic predisposition, immune dysregulation, and environmental triggers. Vascular abnormalities leading to increased blood flow and inflammation are also key features."
+    },
+    "recognition": {
+      "symptoms": [
+        "Facial flushing",
+        "Persistent redness",
+        "Burning or stinging sensation",
+        "Dryness or roughness of the skin"
+      ],
+      "signs": [
+        "Erythema of the central face",
+        "Telangiectasia",
+        "Papules and pustules",
+        "Phymatous changes (e.g., rhinophyma)"
+      ],
+      "atypicalPresentations": [
+        "Ocular rosacea (eye irritation, redness, and dryness)",
+        "Rosacea-like dermatitis (mimicking other skin conditions)"
+      ],
+      "redFlags": [
+        "Severe ocular symptoms (e.g., vision changes)",
+        "Rapid progression of symptoms",
+        "Unresponsive to standard treatments"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination and history taking"
+      ],
+      "secondLine": [
+        "Skin biopsy (if diagnosis is uncertain)"
+      ],
+      "specialistTests": [
+        "Referral to a dermatologist for complex cases or if ocular involvement is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of flushing, persistent facial erythema, papules, and pustules. The National Rosacea Society criteria can be used for diagnosis.",
+      "differentials": [
+        "Acne vulgaris",
+        "Seborrheic dermatitis",
+        "Lupus erythematosus",
+        "Contact dermatitis",
+        "Perioral dermatitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical metronidazole",
+          "Topical azelaic acid"
+        ],
+        "secondLine": [
+          "Oral tetracyclines (e.g., doxycycline) for moderate to severe cases"
+        ],
+        "procedures": [
+          "Laser therapy for telangiectasia",
+          "Intense pulsed light therapy for erythema"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Daily skincare regimen (gentle cleansers, moisturizers)",
+          "Avoidance of known triggers (e.g., spicy foods, alcohol)"
+        ],
+        "secondLine": [
+          "Long-term topical treatments (e.g., ivermectin cream)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess treatment efficacy and side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antimicrobial and anti-inflammatory effects",
+          "dosing": "Apply topically once or twice daily",
+          "sideEffects": "Skin irritation, dryness",
+          "notes": "First-line topical treatment for mild to moderate rosacea."
+        },
+        {
+          "name": "Azelaic acid",
+          "mechanism": "Antimicrobial and keratolytic properties",
+          "dosing": "Apply topically twice daily",
+          "sideEffects": "Skin irritation, burning sensation",
+          "notes": "Effective for both inflammatory lesions and erythema."
+        },
+        {
+          "name": "Doxycycline",
+          "mechanism": "Tetracycline antibiotic with anti-inflammatory properties",
+          "dosing": "100 mg orally once daily",
+          "sideEffects": "Photosensitivity, gastrointestinal upset",
+          "notes": "Used for moderate to severe cases."
+        },
+        {
+          "name": "Ivermectin cream",
+          "mechanism": "Antiparasitic with anti-inflammatory effects",
+          "dosing": "Apply topically once daily",
+          "sideEffects": "Skin irritation",
+          "notes": "Useful for inflammatory lesions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laser therapy",
+          "description": "Uses focused light to reduce redness and visible blood vessels",
+          "indications": "Persistent erythema and telangiectasia not responding to medical therapy",
+          "risks": "Skin burns, hyperpigmentation, transient swelling."
+        },
+        {
+          "name": "Intense pulsed light therapy",
+          "description": "Broad-spectrum light treatment to reduce redness and improve skin texture",
+          "indications": "Moderate to severe rosacea with significant erythema",
+          "risks": "Skin irritation, potential for burns."
+        }
+      ]
+    },
+    "prognosis": "Rosacea is a chronic condition with periods of exacerbation and remission. With appropriate management, symptoms can be controlled effectively, but there is no cure.",
+    "complications": [
+      "Ocular rosacea leading to keratitis or conjunctivitis",
+      "Psychosocial impact due to visible skin changes",
+      "Rhinophyma (thickening of the skin on the nose)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize rosacea, initiate first-line treatments, and provide education on trigger avoidance. They should also be aware of when to refer to a dermatologist for further management.",
+    "escalation": "Refer to a dermatologist if there is severe ocular involvement, rapid progression of symptoms, or if the patient is unresponsive to first-line treatments.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially with long-term use of topical agents. Educate patients on the importance of sun protection and avoiding known triggers."
+  }
+}

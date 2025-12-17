@@ -1,0 +1,137 @@
+{
+  "id": "conjunctivitis",
+  "name": "Conjunctivitis",
+  "domains": [
+    "Opthalmolgy",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:40:00.083365",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Conjunctivitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nConjunctivitis, commonly known as pink eye, is the inflammation of the conjunctiva, the thin, transparent membrane that covers the white part of the eyeball and the inner surface of the eyelids.\n\n### Epidemiology\nConjunctivitis is a common condition, particularly in children, with viral conjunctivitis being the most prevalent. It can occur at any age and is often associated with upper respiratory infections. The incidence is higher in crowded environments such as schools and daycare centers.\n\n### Essential Pathophysiology\nConjunctivitis can be caused by infectious agents (bacterial, viral), allergens, irritants, or underlying systemic diseases. The inflammation leads to increased vascular permeability, resulting in redness, swelling, and discharge.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Redness of the eye\n- Itching or burning sensation\n- Discharge (watery or purulent)\n- Tearing\n- Crusty eyelids upon waking\n\n### Key Signs\n- Conjunctival injection (redness)\n- Chemosis (swelling of the conjunctiva)\n- Discharge (clear, mucoid, or purulent)\n- Lid edema\n\n### Atypical Presentations\n- Photophobia\n- Severe pain (suggestive of keratitis or other complications)\n- Vision changes (indicating more serious conditions)\n\n### Red Flags Requiring Immediate Action\n- Severe eye pain\n- Vision loss\n- Photophobia\n- History of recent eye surgery or trauma\n- Systemic symptoms (fever, malaise)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination (visual acuity, slit lamp examination)\n\n### Second-line Investigations\n- Conjunctival swab for culture (if bacterial conjunctivitis is suspected)\n- Allergy testing (if allergic conjunctivitis is suspected)\n\n### Specialist Tests\n- Referral to ophthalmology for persistent or severe cases\n- Fluorescein staining to check for corneal involvement\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical based on history and examination findings. Bacterial conjunctivitis typically presents with purulent discharge, while viral conjunctivitis often has watery discharge and is associated with upper respiratory symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Bacterial conjunctivitis\n- Viral conjunctivitis\n- Allergic conjunctivitis\n- Keratitis\n- Uveitis\n- Foreign body in the eye\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Topical antihistamines (for allergic conjunctivitis)\n- Topical antibiotics (for bacterial conjunctivitis)\n\n#### Second-line Treatments\n- Oral antihistamines (for allergic conjunctivitis)\n- Topical steroids (for severe allergic conjunctivitis)\n\n#### Emergency Procedures\n- Irrigation of the eye (for foreign body removal)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Avoidance of allergens (for allergic conjunctivitis)\n- Topical lubricants (for dry eye syndrome)\n\n#### Second-line Treatments\n- Topical mast cell stabilizers (for allergic conjunctivitis)\n- Systemic antihistamines (for allergic conjunctivitis)\n\n#### Monitoring Requirements\n- Regular follow-up for chronic cases to assess response to treatment and adjust management as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Olopatadine\n- **Mechanism of Action**: Antihistamine and mast cell stabilizer\n- **Typical Dosing Range**: 1 drop in affected eye(s) twice daily\n- **Key Side Effects/Contraindications**: Burning/stinging upon instillation, headache\n- **When to Use vs. Alternatives**: Effective for allergic conjunctivitis.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic\n- **Typical Dosing Range**: 1-2 drops in affected eye(s) every 2 hours for 2 days, then 1-2 drops every 4 hours for 5 days\n- **Key Side Effects/Contraindications**: Local irritation, allergic reactions\n- **When to Use vs. Alternatives**: Used for bacterial conjunctivitis.\n\n#### Artificial tears\n- **Mechanism of Action**: Lubrication\n- **Typical Dosing Range**: As needed\n- **Key Side Effects/Contraindications**: Rarely, may cause transient blurred vision\n- **When to Use vs. Alternatives**: Useful for dry eye and irritation.\n\n### Procedures\n\n#### Eye irrigation\n- **What it Involves**: Flushing the eye with saline or sterile water to remove foreign bodies or irritants.\n- **Indications**: Foreign body sensation, chemical exposure, or excessive discharge.\n- **Key Risks/Complications**: Corneal abrasion, infection, discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of conjunctivitis resolve spontaneously or with appropriate treatment. Viral conjunctivitis may take longer to resolve, while bacterial conjunctivitis typically improves within 24-48 hours of treatment.\n\n### Important Complications to Watch For\n- Keratitis (if untreated)\n- Chronic conjunctivitis\n- Spread of infection to adjacent structures (e.g., eyelid, cornea)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform a thorough history and examination, initiate appropriate first-line management, and refer to ophthalmology for severe or complicated cases. They should also educate patients on hygiene practices to prevent spread.\n\n### When to Escalate to Senior/Specialist\nRefer to ophthalmology if there is severe pain, vision changes, or if the condition does not improve with initial treatment within 48 hours.\n\n### Key Safety Considerations\nEnsure proper hand hygiene to prevent the spread of infection. Educate patients on avoiding touching their eyes and sharing personal items (towels, eye drops). Monitor for signs of complications, especially in cases of bacterial conjunctivitis.\n",
+  "content": {
+    "overview": {
+      "definition": "Conjunctivitis, commonly known as pink eye, is the inflammation of the conjunctiva, the thin, transparent membrane that covers the white part of the eyeball and the inner surface of the eyelids.",
+      "epidemiology": "Conjunctivitis is a common condition, particularly in children, with viral conjunctivitis being the most prevalent. It can occur at any age and is often associated with upper respiratory infections. The incidence is higher in crowded environments such as schools and daycare centers.",
+      "pathophysiology": "Conjunctivitis can be caused by infectious agents (bacterial, viral), allergens, irritants, or underlying systemic diseases. The inflammation leads to increased vascular permeability, resulting in redness, swelling, and discharge."
+    },
+    "recognition": {
+      "symptoms": [
+        "Redness of the eye",
+        "Itching or burning sensation",
+        "Discharge (watery or purulent)",
+        "Tearing",
+        "Crusty eyelids upon waking"
+      ],
+      "signs": [
+        "Conjunctival injection (redness)",
+        "Chemosis (swelling of the conjunctiva)",
+        "Discharge (clear, mucoid, or purulent)",
+        "Lid edema"
+      ],
+      "atypicalPresentations": [
+        "Photophobia",
+        "Severe pain (suggestive of keratitis or other complications)",
+        "Vision changes (indicating more serious conditions)"
+      ],
+      "redFlags": [
+        "Severe eye pain",
+        "Vision loss",
+        "Photophobia",
+        "History of recent eye surgery or trauma",
+        "Systemic symptoms (fever, malaise)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination (visual acuity, slit lamp examination)"
+      ],
+      "secondLine": [
+        "Conjunctival swab for culture (if bacterial conjunctivitis is suspected)",
+        "Allergy testing (if allergic conjunctivitis is suspected)"
+      ],
+      "specialistTests": [
+        "Referral to ophthalmology for persistent or severe cases",
+        "Fluorescein staining to check for corneal involvement"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical based on history and examination findings. Bacterial conjunctivitis typically presents with purulent discharge, while viral conjunctivitis often has watery discharge and is associated with upper respiratory symptoms.",
+      "differentials": [
+        "Bacterial conjunctivitis",
+        "Viral conjunctivitis",
+        "Allergic conjunctivitis",
+        "Keratitis",
+        "Uveitis",
+        "Foreign body in the eye"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Topical antihistamines (for allergic conjunctivitis)",
+          "Topical antibiotics (for bacterial conjunctivitis)"
+        ],
+        "secondLine": [
+          "Oral antihistamines (for allergic conjunctivitis)",
+          "Topical steroids (for severe allergic conjunctivitis)"
+        ],
+        "procedures": [
+          "Irrigation of the eye (for foreign body removal)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Avoidance of allergens (for allergic conjunctivitis)",
+          "Topical lubricants (for dry eye syndrome)"
+        ],
+        "secondLine": [
+          "Topical mast cell stabilizers (for allergic conjunctivitis)",
+          "Systemic antihistamines (for allergic conjunctivitis)"
+        ],
+        "monitoring": [
+          "Regular follow-up for chronic cases to assess response to treatment and adjust management as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Olopatadine",
+          "mechanism": "Antihistamine and mast cell stabilizer",
+          "dosing": "1 drop in affected eye(s) twice daily",
+          "sideEffects": "Burning/stinging upon instillation, headache",
+          "notes": "Effective for allergic conjunctivitis."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic",
+          "dosing": "1-2 drops in affected eye(s) every 2 hours for 2 days, then 1-2 drops every 4 hours for 5 days",
+          "sideEffects": "Local irritation, allergic reactions",
+          "notes": "Used for bacterial conjunctivitis."
+        },
+        {
+          "name": "Artificial tears",
+          "mechanism": "Lubrication",
+          "dosing": "As needed",
+          "sideEffects": "Rarely, may cause transient blurred vision",
+          "notes": "Useful for dry eye and irritation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Eye irrigation",
+          "description": "Flushing the eye with saline or sterile water to remove foreign bodies or irritants.",
+          "indications": "Foreign body sensation, chemical exposure, or excessive discharge.",
+          "risks": "Corneal abrasion, infection, discomfort."
+        }
+      ]
+    },
+    "prognosis": "Most cases of conjunctivitis resolve spontaneously or with appropriate treatment. Viral conjunctivitis may take longer to resolve, while bacterial conjunctivitis typically improves within 24-48 hours of treatment.",
+    "complications": [
+      "Keratitis (if untreated)",
+      "Chronic conjunctivitis",
+      "Spread of infection to adjacent structures (e.g., eyelid, cornea)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform a thorough history and examination, initiate appropriate first-line management, and refer to ophthalmology for severe or complicated cases. They should also educate patients on hygiene practices to prevent spread.",
+    "escalation": "Refer to ophthalmology if there is severe pain, vision changes, or if the condition does not improve with initial treatment within 48 hours.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene to prevent the spread of infection. Educate patients on avoiding touching their eyes and sharing personal items (towels, eye drops). Monitor for signs of complications, especially in cases of bacterial conjunctivitis."
+  }
+}

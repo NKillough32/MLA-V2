@@ -1,0 +1,131 @@
+{
+  "id": "idiopathic_intracranial_hypertension",
+  "name": "Idiopathic intracranial hypertension",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:53:47.396970",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Idiopathic intracranial hypertension: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIdiopathic intracranial hypertension (IIH) is a condition characterized by increased intracranial pressure without an identifiable cause, often seen in young obese women.\n\n### Epidemiology\nIIH is most commonly diagnosed in women aged 20-50 years, particularly those who are overweight or obese. The incidence is estimated to be 1-2 per 100,000 in the general population, but it can be as high as 20 per 100,000 in obese women.\n\n### Essential Pathophysiology\nThe exact pathophysiology of IIH is not fully understood, but it is thought to involve impaired cerebrospinal fluid (CSF) absorption, increased CSF production, or venous outflow obstruction, leading to elevated intracranial pressure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headache (often daily and worsening in the morning)\n- Visual disturbances (e.g., blurred vision, transient visual obscurations)\n- Tinnitus (ringing in the ears)\n- Nausea and vomiting\n\n### Key Signs\n- Papilledema (swelling of the optic disc)\n- Visual field defects (e.g., peripheral vision loss)\n- Cranial nerve VI palsy (abducens nerve)\n\n### Atypical Presentations\n- Headaches that are not relieved by typical analgesics\n- Symptoms mimicking migraine or tension-type headaches\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe headache (thunderclap headache)\n- Neurological deficits\n- Altered mental status\n- Signs of infection (fever, neck stiffness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Fundoscopy to assess for papilledema\n- MRI brain to rule out secondary causes (e.g., mass lesions, venous sinus thrombosis)\n\n### Second-line Investigations\n- Lumbar puncture to measure opening pressure and analyze CSF\n- Visual field testing\n\n### Specialist Tests\n- MR venography to assess for venous sinus thrombosis\n- Optical coherence tomography (OCT) for detailed assessment of optic nerve head\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of IIH is made based on the presence of elevated intracranial pressure (≥25 cm H2O) in the absence of a mass lesion or other secondary causes, along with symptoms and signs consistent with increased intracranial pressure.\n\n### Key Differential Diagnoses to Exclude\n- Cerebral venous sinus thrombosis\n- Brain tumor\n- Meningitis\n- Hydrocephalus\n- Pseudotumor cerebri\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Lumbar puncture for therapeutic drainage of CSF\n- Acetazolamide (carbonic anhydrase inhibitor)\n\n#### Second-line Treatments\n- Topiramate (antiepileptic)\n- Weight loss counseling\n\n#### Emergency Procedures\n- Lumboperitoneal shunt (for refractory cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Acetazolamide (initially 500 mg daily, titrate up to 2000 mg/day)\n- Weight loss (if overweight)\n\n#### Second-line Treatments\n- Topiramate (25-100 mg daily)\n- Surgical options (e.g., optic nerve sheath fenestration)\n\n#### Monitoring Requirements\n- Regular follow-up for visual field testing and symptom assessment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Acetazolamide\n- **Mechanism of Action**: Inhibits carbonic anhydrase, reducing CSF production\n- **Typical Dosing Range**: Start at 500 mg daily, can increase to 2000 mg/day\n- **Key Side Effects/Contraindications**: Nausea, fatigue, paresthesia, electrolyte imbalances\n- **When to Use vs. Alternatives**: Monitor electrolytes regularly, especially potassium.\n\n#### Topiramate\n- **Mechanism of Action**: Anticonvulsant that may reduce CSF production\n- **Typical Dosing Range**: Start at 25 mg daily, titrate to 100 mg daily\n- **Key Side Effects/Contraindications**: Cognitive side effects, weight loss, metabolic acidosis\n- **When to Use vs. Alternatives**: Consider in patients who cannot tolerate acetazolamide.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: Insertion of a needle into the lumbar spine to measure CSF pressure and obtain CSF for analysis\n- **Indications**: Diagnosis of IIH, therapeutic drainage\n- **Key Risks/Complications**: Headache post-procedure, infection, bleeding, nerve damage.\n\n#### Optic nerve sheath fenestration\n- **What it Involves**: Surgical procedure to relieve pressure on the optic nerve\n- **Indications**: Severe visual loss or progressive papilledema despite medical management\n- **Key Risks/Complications**: Infection, bleeding, worsening vision.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for IIH varies; many patients experience improvement with treatment, but some may have persistent symptoms or complications such as vision loss.\n\n### Important Complications to Watch For\n- Permanent vision loss\n- Chronic headaches\n- Cerebral venous sinus thrombosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of IIH, perform initial assessments, and refer patients for further evaluation and management. They should also monitor patients for complications and ensure appropriate follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if there is a sudden change in symptoms, significant visual loss, or if the patient does not respond to initial management.\n\n### Key Safety Considerations\nEnsure proper technique during lumbar puncture to minimize risks. Monitor for signs of infection or neurological deterioration post-procedure.\n",
+  "content": {
+    "overview": {
+      "definition": "Idiopathic intracranial hypertension (IIH) is a condition characterized by increased intracranial pressure without an identifiable cause, often seen in young obese women.",
+      "epidemiology": "IIH is most commonly diagnosed in women aged 20-50 years, particularly those who are overweight or obese. The incidence is estimated to be 1-2 per 100,000 in the general population, but it can be as high as 20 per 100,000 in obese women.",
+      "pathophysiology": "The exact pathophysiology of IIH is not fully understood, but it is thought to involve impaired cerebrospinal fluid (CSF) absorption, increased CSF production, or venous outflow obstruction, leading to elevated intracranial pressure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headache (often daily and worsening in the morning)",
+        "Visual disturbances (e.g., blurred vision, transient visual obscurations)",
+        "Tinnitus (ringing in the ears)",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Papilledema (swelling of the optic disc)",
+        "Visual field defects (e.g., peripheral vision loss)",
+        "Cranial nerve VI palsy (abducens nerve)"
+      ],
+      "atypicalPresentations": [
+        "Headaches that are not relieved by typical analgesics",
+        "Symptoms mimicking migraine or tension-type headaches"
+      ],
+      "redFlags": [
+        "Sudden onset of severe headache (thunderclap headache)",
+        "Neurological deficits",
+        "Altered mental status",
+        "Signs of infection (fever, neck stiffness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Fundoscopy to assess for papilledema",
+        "MRI brain to rule out secondary causes (e.g., mass lesions, venous sinus thrombosis)"
+      ],
+      "secondLine": [
+        "Lumbar puncture to measure opening pressure and analyze CSF",
+        "Visual field testing"
+      ],
+      "specialistTests": [
+        "MR venography to assess for venous sinus thrombosis",
+        "Optical coherence tomography (OCT) for detailed assessment of optic nerve head"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of IIH is made based on the presence of elevated intracranial pressure (≥25 cm H2O) in the absence of a mass lesion or other secondary causes, along with symptoms and signs consistent with increased intracranial pressure.",
+      "differentials": [
+        "Cerebral venous sinus thrombosis",
+        "Brain tumor",
+        "Meningitis",
+        "Hydrocephalus",
+        "Pseudotumor cerebri"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Lumbar puncture for therapeutic drainage of CSF",
+          "Acetazolamide (carbonic anhydrase inhibitor)"
+        ],
+        "secondLine": [
+          "Topiramate (antiepileptic)",
+          "Weight loss counseling"
+        ],
+        "procedures": [
+          "Lumboperitoneal shunt (for refractory cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Acetazolamide (initially 500 mg daily, titrate up to 2000 mg/day)",
+          "Weight loss (if overweight)"
+        ],
+        "secondLine": [
+          "Topiramate (25-100 mg daily)",
+          "Surgical options (e.g., optic nerve sheath fenestration)"
+        ],
+        "monitoring": [
+          "Regular follow-up for visual field testing and symptom assessment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Inhibits carbonic anhydrase, reducing CSF production",
+          "dosing": "Start at 500 mg daily, can increase to 2000 mg/day",
+          "sideEffects": "Nausea, fatigue, paresthesia, electrolyte imbalances",
+          "notes": "Monitor electrolytes regularly, especially potassium."
+        },
+        {
+          "name": "Topiramate",
+          "mechanism": "Anticonvulsant that may reduce CSF production",
+          "dosing": "Start at 25 mg daily, titrate to 100 mg daily",
+          "sideEffects": "Cognitive side effects, weight loss, metabolic acidosis",
+          "notes": "Consider in patients who cannot tolerate acetazolamide."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "Insertion of a needle into the lumbar spine to measure CSF pressure and obtain CSF for analysis",
+          "indications": "Diagnosis of IIH, therapeutic drainage",
+          "risks": "Headache post-procedure, infection, bleeding, nerve damage."
+        },
+        {
+          "name": "Optic nerve sheath fenestration",
+          "description": "Surgical procedure to relieve pressure on the optic nerve",
+          "indications": "Severe visual loss or progressive papilledema despite medical management",
+          "risks": "Infection, bleeding, worsening vision."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for IIH varies; many patients experience improvement with treatment, but some may have persistent symptoms or complications such as vision loss.",
+    "complications": [
+      "Permanent vision loss",
+      "Chronic headaches",
+      "Cerebral venous sinus thrombosis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of IIH, perform initial assessments, and refer patients for further evaluation and management. They should also monitor patients for complications and ensure appropriate follow-up care.",
+    "escalation": "Refer to a neurologist if there is a sudden change in symptoms, significant visual loss, or if the patient does not respond to initial management.",
+    "keySafetyConsiderations": "Ensure proper technique during lumbar puncture to minimize risks. Monitor for signs of infection or neurological deterioration post-procedure."
+  }
+}

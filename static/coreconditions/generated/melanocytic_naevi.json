@@ -1,0 +1,126 @@
+{
+  "id": "melanocytic_naevi",
+  "name": "Melanocytic naevi?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:18:48.025405",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Melanocytic naevi?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMelanocytic naevi, commonly known as moles, are benign proliferations of melanocytes, the pigment-producing cells in the skin. They can be congenital (present at birth) or acquired (developing over time).\n\n### Epidemiology\nMelanocytic naevi are extremely common, with most adults having between 10 to 40 moles. They are more prevalent in individuals with lighter skin types and can vary in number and appearance based on genetic and environmental factors.\n\n### Essential Pathophysiology\nMelanocytic naevi arise from the proliferation of melanocytes in the epidermis or dermis. They can be classified into junctional, compound, and intradermal naevi based on their anatomical location. Genetic mutations, particularly in the BRAF and NRAS genes, can contribute to their development.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Generally asymptomatic\n- Cosmetic concerns\n\n### Key Signs\n- Well-defined borders\n- Uniform color (brown, black, or tan)\n- Size typically less than 6mm\n- Flat or slightly raised surface\n\n### Atypical Presentations\n- Dysplastic naevi (larger, irregular borders, varied color)\n- Congenital naevi (present at birth, larger than average)\n\n### Red Flags Requiring Immediate Action\n- Change in size, shape, or color of a mole\n- Itching, bleeding, or crusting\n- New moles appearing after age 30\n- Family history of melanoma\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Dermatoscopy\n\n### Second-line Investigations\n- Photographic monitoring\n- Biopsy (excisional or punch) if suspicious lesions are identified\n\n### Specialist Tests\n- Histopathological examination of biopsy specimens\n- Genetic testing for melanoma predisposition (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the appearance of the naevus and any changes over time. Suspicious lesions may require biopsy for histological confirmation.\n\n### Key Differential Diagnoses to Exclude\n- Seborrheic keratosis\n- Basal cell carcinoma\n- Squamous cell carcinoma\n- Melanoma\n- Lentigo\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation for benign naevi without changes\n\n#### Second-line Treatments\n- Excision of suspicious naevi for histological evaluation\n\n#### Emergency Procedures\n- Excisional biopsy\n- Shave biopsy (for superficial lesions)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of existing naevi for changes\n\n#### Second-line Treatments\n- Patient education on sun protection and skin self-examination\n\n#### Monitoring Requirements\n- Regular dermatological check-ups, especially for high-risk patients\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Topical 5-fluorouracil\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, used for superficial skin lesions.\n- **Typical Dosing Range**: Apply twice daily for 2-4 weeks as directed by a dermatologist.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and crusting.\n- **When to Use vs. Alternatives**: Not typically used for naevi but may be considered for actinic keratosis.\n\n#### Imiquimod\n- **Mechanism of Action**: Immune response modifier that stimulates local immune response.\n- **Typical Dosing Range**: Apply once daily for 5 days a week for up to 16 weeks.\n- **Key Side Effects/Contraindications**: Local inflammation, erythema, and ulceration.\n- **When to Use vs. Alternatives**: Used for superficial basal cell carcinoma and actinic keratosis, not for naevi.\n\n### Procedures\n\n#### Excisional biopsy\n- **What it Involves**: Surgical removal of the entire naevus with a margin of normal skin.\n- **Indications**: Suspicious naevi that exhibit changes or atypical features.\n- **Key Risks/Complications**: Scarring, infection, and potential for incomplete removal.\n\n#### Shave biopsy\n- **What it Involves**: Removal of the upper layers of the skin containing the naevus.\n- **Indications**: Superficial naevi that are not suspected to be malignant.\n- **Key Risks/Complications**: Incomplete removal, potential for scarring.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for melanocytic naevi is generally excellent, as they are benign. However, monitoring is essential to detect any malignant transformation early.\n\n### Important Complications to Watch For\n- Malignant transformation into melanoma (rare)\n- Scarring or cosmetic concerns from excision\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough skin examinations, educate patients on self-monitoring, and refer to dermatology for suspicious lesions. They should also be aware of the importance of sun protection in preventing skin cancers.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology for any naevus that shows signs of change, is symptomatic, or has a concerning appearance. Immediate referral is warranted for suspected melanoma.\n\n### Key Safety Considerations\nEnsure proper patient education on skin self-examination and sun protection. Maintain a high index of suspicion for changes in naevi, especially in high-risk patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Melanocytic naevi, commonly known as moles, are benign proliferations of melanocytes, the pigment-producing cells in the skin. They can be congenital (present at birth) or acquired (developing over time).",
+      "epidemiology": "Melanocytic naevi are extremely common, with most adults having between 10 to 40 moles. They are more prevalent in individuals with lighter skin types and can vary in number and appearance based on genetic and environmental factors.",
+      "pathophysiology": "Melanocytic naevi arise from the proliferation of melanocytes in the epidermis or dermis. They can be classified into junctional, compound, and intradermal naevi based on their anatomical location. Genetic mutations, particularly in the BRAF and NRAS genes, can contribute to their development."
+    },
+    "recognition": {
+      "symptoms": [
+        "Generally asymptomatic",
+        "Cosmetic concerns"
+      ],
+      "signs": [
+        "Well-defined borders",
+        "Uniform color (brown, black, or tan)",
+        "Size typically less than 6mm",
+        "Flat or slightly raised surface"
+      ],
+      "atypicalPresentations": [
+        "Dysplastic naevi (larger, irregular borders, varied color)",
+        "Congenital naevi (present at birth, larger than average)"
+      ],
+      "redFlags": [
+        "Change in size, shape, or color of a mole",
+        "Itching, bleeding, or crusting",
+        "New moles appearing after age 30",
+        "Family history of melanoma"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Dermatoscopy"
+      ],
+      "secondLine": [
+        "Photographic monitoring",
+        "Biopsy (excisional or punch) if suspicious lesions are identified"
+      ],
+      "specialistTests": [
+        "Histopathological examination of biopsy specimens",
+        "Genetic testing for melanoma predisposition (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the appearance of the naevus and any changes over time. Suspicious lesions may require biopsy for histological confirmation.",
+      "differentials": [
+        "Seborrheic keratosis",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Melanoma",
+        "Lentigo"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation for benign naevi without changes"
+        ],
+        "secondLine": [
+          "Excision of suspicious naevi for histological evaluation"
+        ],
+        "procedures": [
+          "Excisional biopsy",
+          "Shave biopsy (for superficial lesions)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of existing naevi for changes"
+        ],
+        "secondLine": [
+          "Patient education on sun protection and skin self-examination"
+        ],
+        "monitoring": [
+          "Regular dermatological check-ups, especially for high-risk patients"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Topical 5-fluorouracil",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, used for superficial skin lesions.",
+          "dosing": "Apply twice daily for 2-4 weeks as directed by a dermatologist.",
+          "sideEffects": "Local irritation, erythema, and crusting.",
+          "notes": "Not typically used for naevi but may be considered for actinic keratosis."
+        },
+        {
+          "name": "Imiquimod",
+          "mechanism": "Immune response modifier that stimulates local immune response.",
+          "dosing": "Apply once daily for 5 days a week for up to 16 weeks.",
+          "sideEffects": "Local inflammation, erythema, and ulceration.",
+          "notes": "Used for superficial basal cell carcinoma and actinic keratosis, not for naevi."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Excisional biopsy",
+          "description": "Surgical removal of the entire naevus with a margin of normal skin.",
+          "indications": "Suspicious naevi that exhibit changes or atypical features.",
+          "risks": "Scarring, infection, and potential for incomplete removal."
+        },
+        {
+          "name": "Shave biopsy",
+          "description": "Removal of the upper layers of the skin containing the naevus.",
+          "indications": "Superficial naevi that are not suspected to be malignant.",
+          "risks": "Incomplete removal, potential for scarring."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for melanocytic naevi is generally excellent, as they are benign. However, monitoring is essential to detect any malignant transformation early.",
+    "complications": [
+      "Malignant transformation into melanoma (rare)",
+      "Scarring or cosmetic concerns from excision"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough skin examinations, educate patients on self-monitoring, and refer to dermatology for suspicious lesions. They should also be aware of the importance of sun protection in preventing skin cancers.",
+    "escalation": "Refer to dermatology for any naevus that shows signs of change, is symptomatic, or has a concerning appearance. Immediate referral is warranted for suspected melanoma.",
+    "keySafetyConsiderations": "Ensure proper patient education on skin self-examination and sun protection. Maintain a high index of suspicion for changes in naevi, especially in high-risk patients."
+  }
+}

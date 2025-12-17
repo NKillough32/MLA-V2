@@ -1,0 +1,140 @@
+{
+  "id": "anaemia",
+  "name": "Anaemia",
+  "domains": [
+    "Anaesthesia and Critical Care",
+    "Pre-operative Care",
+    "Post-operative care",
+    "Obstetrics",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:06:18.628932",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Anaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnaemia is a condition characterized by a deficiency in the number or quality of red blood cells (RBCs) or hemoglobin, leading to reduced oxygen transport capacity in the blood.\n\n### Epidemiology\nAnaemia affects approximately 25% of the global population, with higher prevalence in developing countries, women of childbearing age, and children. It is particularly common in patients with chronic diseases, nutritional deficiencies, and in the elderly.\n\n### Essential Pathophysiology\nAnaemia can result from decreased RBC production (due to iron, vitamin B12, or folate deficiency), increased RBC destruction (hemolysis), or blood loss (acute or chronic). The underlying mechanisms can vary widely, including bone marrow disorders, chronic inflammation, and nutritional deficiencies.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Shortness of breath\n- Dizziness\n- Palpitations\n\n### Key Signs\n- Pallor (conjunctival, skin)\n- Tachycardia\n- Systolic murmur\n- Bounding pulses (in severe cases)\n- Splenomegaly (in hemolytic anaemias)\n\n### Atypical Presentations\n- Cognitive impairment in elderly\n- Restless legs syndrome\n- Pica (craving for non-food substances)\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Chest pain or angina\n- Signs of heart failure\n- Acute blood loss (e.g., from trauma)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete Blood Count (CBC)\n- Peripheral blood smear\n- Reticulocyte count\n- Iron studies (serum iron, ferritin, TIBC)\n\n### Second-line Investigations\n- Vitamin B12 and folate levels\n- Bone marrow biopsy (if indicated)\n- Hemolysis markers (LDH, haptoglobin, bilirubin)\n\n### Specialist Tests\n- Coombs test (for autoimmune hemolytic anaemia)\n- Erythropoietin level\n- Genetic testing (for thalassemia or sickle cell disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of anaemia is based on hemoglobin levels: <13 g/dL in men and <12 g/dL in women, along with clinical symptoms and laboratory findings.\n\n### Key Differential Diagnoses to Exclude\n- Iron deficiency anaemia\n- Vitamin B12 deficiency anaemia\n- Folate deficiency anaemia\n- Anemia of chronic disease\n- Hemolytic anaemia\n- Aplastic anaemia\n- Thalassemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous iron (if severe or symptomatic)\n- Blood transfusion (if hemoglobin <7 g/dL or symptomatic)\n\n#### Second-line Treatments\n- Erythropoiesis-stimulating agents (e.g., Epoetin alfa)\n\n#### Emergency Procedures\n- Bone marrow aspiration/biopsy (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral iron supplementation (ferrous sulfate)\n- Vitamin B12 or folate supplementation (if deficient)\n\n#### Second-line Treatments\n- Intravenous iron therapy (if oral not tolerated or ineffective)\n- Erythropoiesis-stimulating agents (for chronic kidney disease)\n\n#### Monitoring Requirements\n- Regular CBC to monitor hemoglobin levels\n- Iron studies to assess response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ferrous sulfate\n- **Mechanism of Action**: Iron supplement that replenishes iron stores and aids in hemoglobin synthesis.\n- **Typical Dosing Range**: 325 mg orally once to three times daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, constipation, dark stools.\n- **When to Use vs. Alternatives**: Take with vitamin C to enhance absorption.\n\n#### Epoetin alfa\n- **Mechanism of Action**: Recombinant erythropoietin that stimulates RBC production in the bone marrow.\n- **Typical Dosing Range**: 50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on hemoglobin response.\n- **Key Side Effects/Contraindications**: Hypertension, headache, increased risk of thromboembolic events.\n- **When to Use vs. Alternatives**: Monitor hemoglobin levels regularly.\n\n### Procedures\n\n#### Bone marrow biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Suspected bone marrow disorders, unexplained cytopenias.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of anaemia depends on the underlying cause and the timeliness of treatment. Iron deficiency anaemia is generally reversible with appropriate treatment, while chronic anaemias may require ongoing management.\n\n### Important Complications to Watch For\n- Heart failure due to chronic anaemia\n- Increased risk of infections (in aplastic anaemia)\n- Development of severe fatigue and decreased quality of life.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, interpret results, and initiate management. They should also be aware of when to escalate care to senior colleagues.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe anaemia (e.g., hemoglobin <7 g/dL), signs of hemodynamic instability, or if there is a need for blood transfusion, escalate to a senior clinician immediately.\n\n### Key Safety Considerations\nMonitor for signs of transfusion reactions if blood products are administered. Ensure appropriate consent is obtained for procedures and transfusions. Regularly assess for response to treatment and adjust management as necessary.\n",
+  "content": {
+    "overview": {
+      "definition": "Anaemia is a condition characterized by a deficiency in the number or quality of red blood cells (RBCs) or hemoglobin, leading to reduced oxygen transport capacity in the blood.",
+      "epidemiology": "Anaemia affects approximately 25% of the global population, with higher prevalence in developing countries, women of childbearing age, and children. It is particularly common in patients with chronic diseases, nutritional deficiencies, and in the elderly.",
+      "pathophysiology": "Anaemia can result from decreased RBC production (due to iron, vitamin B12, or folate deficiency), increased RBC destruction (hemolysis), or blood loss (acute or chronic). The underlying mechanisms can vary widely, including bone marrow disorders, chronic inflammation, and nutritional deficiencies."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Shortness of breath",
+        "Dizziness",
+        "Palpitations"
+      ],
+      "signs": [
+        "Pallor (conjunctival, skin)",
+        "Tachycardia",
+        "Systolic murmur",
+        "Bounding pulses (in severe cases)",
+        "Splenomegaly (in hemolytic anaemias)"
+      ],
+      "atypicalPresentations": [
+        "Cognitive impairment in elderly",
+        "Restless legs syndrome",
+        "Pica (craving for non-food substances)"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Chest pain or angina",
+        "Signs of heart failure",
+        "Acute blood loss (e.g., from trauma)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete Blood Count (CBC)",
+        "Peripheral blood smear",
+        "Reticulocyte count",
+        "Iron studies (serum iron, ferritin, TIBC)"
+      ],
+      "secondLine": [
+        "Vitamin B12 and folate levels",
+        "Bone marrow biopsy (if indicated)",
+        "Hemolysis markers (LDH, haptoglobin, bilirubin)"
+      ],
+      "specialistTests": [
+        "Coombs test (for autoimmune hemolytic anaemia)",
+        "Erythropoietin level",
+        "Genetic testing (for thalassemia or sickle cell disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of anaemia is based on hemoglobin levels: <13 g/dL in men and <12 g/dL in women, along with clinical symptoms and laboratory findings.",
+      "differentials": [
+        "Iron deficiency anaemia",
+        "Vitamin B12 deficiency anaemia",
+        "Folate deficiency anaemia",
+        "Anemia of chronic disease",
+        "Hemolytic anaemia",
+        "Aplastic anaemia",
+        "Thalassemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous iron (if severe or symptomatic)",
+          "Blood transfusion (if hemoglobin <7 g/dL or symptomatic)"
+        ],
+        "secondLine": [
+          "Erythropoiesis-stimulating agents (e.g., Epoetin alfa)"
+        ],
+        "procedures": [
+          "Bone marrow aspiration/biopsy (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral iron supplementation (ferrous sulfate)",
+          "Vitamin B12 or folate supplementation (if deficient)"
+        ],
+        "secondLine": [
+          "Intravenous iron therapy (if oral not tolerated or ineffective)",
+          "Erythropoiesis-stimulating agents (for chronic kidney disease)"
+        ],
+        "monitoring": [
+          "Regular CBC to monitor hemoglobin levels",
+          "Iron studies to assess response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ferrous sulfate",
+          "mechanism": "Iron supplement that replenishes iron stores and aids in hemoglobin synthesis.",
+          "dosing": "325 mg orally once to three times daily.",
+          "sideEffects": "Gastrointestinal upset, constipation, dark stools.",
+          "notes": "Take with vitamin C to enhance absorption."
+        },
+        {
+          "name": "Epoetin alfa",
+          "mechanism": "Recombinant erythropoietin that stimulates RBC production in the bone marrow.",
+          "dosing": "50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on hemoglobin response.",
+          "sideEffects": "Hypertension, headache, increased risk of thromboembolic events.",
+          "notes": "Monitor hemoglobin levels regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone marrow biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Suspected bone marrow disorders, unexplained cytopenias.",
+          "risks": "Bleeding, infection, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of anaemia depends on the underlying cause and the timeliness of treatment. Iron deficiency anaemia is generally reversible with appropriate treatment, while chronic anaemias may require ongoing management.",
+    "complications": [
+      "Heart failure due to chronic anaemia",
+      "Increased risk of infections (in aplastic anaemia)",
+      "Development of severe fatigue and decreased quality of life."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of anaemia, perform initial investigations, interpret results, and initiate management. They should also be aware of when to escalate care to senior colleagues.",
+    "escalation": "If a patient presents with severe anaemia (e.g., hemoglobin <7 g/dL), signs of hemodynamic instability, or if there is a need for blood transfusion, escalate to a senior clinician immediately.",
+    "keySafetyConsiderations": "Monitor for signs of transfusion reactions if blood products are administered. Ensure appropriate consent is obtained for procedures and transfusions. Regularly assess for response to treatment and adjust management as necessary."
+  }
+}

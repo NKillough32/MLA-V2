@@ -1,0 +1,135 @@
+{
+  "id": "melanoma",
+  "name": "Melanoma?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:16:50.554700",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Melanoma?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMelanoma is a malignant tumor of melanocytes, the cells that produce the pigment melanin, primarily occurring in the skin but can also arise in other tissues such as the eyes and mucous membranes.\n\n### Epidemiology\nMelanoma accounts for approximately 1% of all skin cancers but is responsible for the majority of skin cancer deaths. The incidence is increasing, particularly in fair-skinned populations, with a lifetime risk of about 1 in 38 for Caucasians in the US.\n\n### Essential Pathophysiology\nMelanoma arises from genetic mutations in melanocytes, often triggered by UV radiation exposure. Key mutations include BRAF, NRAS, and KIT. The tumor can invade local tissues and metastasize to distant organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- New or changing mole\n- Itching or tenderness in a mole\n- Bleeding from a mole\n\n### Key Signs\n- Asymmetry in shape\n- Irregular borders\n- Variation in color\n- Diameter greater than 6mm\n- Evolving size, shape, or color\n\n### Atypical Presentations\n- Nodular melanoma (raised, dome-shaped)\n- Amelanotic melanoma (lacking pigment)\n- Melanoma in situ (confined to the epidermis)\n\n### Red Flags Requiring Immediate Action\n- Rapid growth of a mole\n- Development of new moles in adulthood\n- Moles that bleed or ulcerate\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full skin examination\n- Dermatoscopy of suspicious lesions\n\n### Second-line Investigations\n- Biopsy of the lesion (excisional or incisional)\n- Sentinel lymph node biopsy if indicated\n\n### Specialist Tests\n- Imaging studies (CT, MRI, PET scans) for staging\n- Genetic testing for BRAF mutation\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the ABCDE criteria (Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolving). Histological examination confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Basal cell carcinoma\n- Squamous cell carcinoma\n- Seborrheic keratosis\n- Lentigo maligna\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Surgical excision of the melanoma with clear margins\n\n#### Second-line Treatments\n- Adjuvant therapy (e.g., immunotherapy, targeted therapy) based on staging\n\n#### Emergency Procedures\n- Wide local excision\n- Sentinel lymph node biopsy\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular skin checks and monitoring for recurrence\n\n#### Second-line Treatments\n- Consideration of systemic therapies for advanced disease\n\n#### Monitoring Requirements\n- Regular follow-up appointments every 3-6 months for the first 2 years, then annually\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dabrafenib\n- **Mechanism of Action**: BRAF inhibitor that blocks the growth of cancer cells with BRAF mutations.\n- **Typical Dosing Range**: 150 mg orally twice daily.\n- **Key Side Effects/Contraindications**: Fever, fatigue, nausea, skin rash.\n- **When to Use vs. Alternatives**: Monitor for signs of fever and skin reactions.\n\n#### Trametinib\n- **Mechanism of Action**: MEK inhibitor that inhibits cell growth and survival in BRAF-mutant melanoma.\n- **Typical Dosing Range**: 2 mg orally once daily.\n- **Key Side Effects/Contraindications**: Diarrhea, rash, lymphedema.\n- **When to Use vs. Alternatives**: Monitor for skin reactions and manage diarrhea.\n\n#### Nivolumab\n- **Mechanism of Action**: PD-1 inhibitor that enhances the immune response against melanoma cells.\n- **Typical Dosing Range**: 3 mg/kg IV every 2 weeks.\n- **Key Side Effects/Contraindications**: Fatigue, rash, immune-mediated adverse effects.\n- **When to Use vs. Alternatives**: Monitor for signs of immune-related side effects.\n\n### Procedures\n\n#### Wide Local Excision\n- **What it Involves**: Surgical removal of the melanoma with a margin of normal skin.\n- **Indications**: Diagnosis of melanoma confirmed, staging indicates no metastasis.\n- **Key Risks/Complications**: Infection, scarring, recurrence.\n\n#### Sentinel Lymph Node Biopsy\n- **What it Involves**: Removal and examination of the first lymph node(s) that drain the area of the melanoma.\n- **Indications**: High-risk melanoma to assess for metastasis.\n- **Key Risks/Complications**: Lymphedema, infection, anesthesia complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for melanoma depends on the stage at diagnosis. Early-stage melanoma (in situ) has a high cure rate, while advanced melanoma has a poorer prognosis with a 5-year survival rate of about 15-20%.\n\n### Important Complications to Watch For\n- Metastasis to distant organs (lungs, liver, brain)\n- Lymphoedema post-surgery\n- Recurrence of melanoma\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough skin examinations, recognize suspicious lesions, and refer patients for specialist evaluation. They should also educate patients on sun protection and self-examination techniques.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology or oncology for any suspicious lesions, confirmed melanoma, or if the patient presents with advanced disease or complications.\n\n### Key Safety Considerations\nEnsure proper follow-up for patients with a history of melanoma, educate on sun safety, and monitor for signs of recurrence or metastasis.\n",
+  "content": {
+    "overview": {
+      "definition": "Melanoma is a malignant tumor of melanocytes, the cells that produce the pigment melanin, primarily occurring in the skin but can also arise in other tissues such as the eyes and mucous membranes.",
+      "epidemiology": "Melanoma accounts for approximately 1% of all skin cancers but is responsible for the majority of skin cancer deaths. The incidence is increasing, particularly in fair-skinned populations, with a lifetime risk of about 1 in 38 for Caucasians in the US.",
+      "pathophysiology": "Melanoma arises from genetic mutations in melanocytes, often triggered by UV radiation exposure. Key mutations include BRAF, NRAS, and KIT. The tumor can invade local tissues and metastasize to distant organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "New or changing mole",
+        "Itching or tenderness in a mole",
+        "Bleeding from a mole"
+      ],
+      "signs": [
+        "Asymmetry in shape",
+        "Irregular borders",
+        "Variation in color",
+        "Diameter greater than 6mm",
+        "Evolving size, shape, or color"
+      ],
+      "atypicalPresentations": [
+        "Nodular melanoma (raised, dome-shaped)",
+        "Amelanotic melanoma (lacking pigment)",
+        "Melanoma in situ (confined to the epidermis)"
+      ],
+      "redFlags": [
+        "Rapid growth of a mole",
+        "Development of new moles in adulthood",
+        "Moles that bleed or ulcerate"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full skin examination",
+        "Dermatoscopy of suspicious lesions"
+      ],
+      "secondLine": [
+        "Biopsy of the lesion (excisional or incisional)",
+        "Sentinel lymph node biopsy if indicated"
+      ],
+      "specialistTests": [
+        "Imaging studies (CT, MRI, PET scans) for staging",
+        "Genetic testing for BRAF mutation"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the ABCDE criteria (Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolving). Histological examination confirms the diagnosis.",
+      "differentials": [
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Seborrheic keratosis",
+        "Lentigo maligna"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Surgical excision of the melanoma with clear margins"
+        ],
+        "secondLine": [
+          "Adjuvant therapy (e.g., immunotherapy, targeted therapy) based on staging"
+        ],
+        "procedures": [
+          "Wide local excision",
+          "Sentinel lymph node biopsy"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular skin checks and monitoring for recurrence"
+        ],
+        "secondLine": [
+          "Consideration of systemic therapies for advanced disease"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments every 3-6 months for the first 2 years, then annually"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dabrafenib",
+          "mechanism": "BRAF inhibitor that blocks the growth of cancer cells with BRAF mutations.",
+          "dosing": "150 mg orally twice daily.",
+          "sideEffects": "Fever, fatigue, nausea, skin rash.",
+          "notes": "Monitor for signs of fever and skin reactions."
+        },
+        {
+          "name": "Trametinib",
+          "mechanism": "MEK inhibitor that inhibits cell growth and survival in BRAF-mutant melanoma.",
+          "dosing": "2 mg orally once daily.",
+          "sideEffects": "Diarrhea, rash, lymphedema.",
+          "notes": "Monitor for skin reactions and manage diarrhea."
+        },
+        {
+          "name": "Nivolumab",
+          "mechanism": "PD-1 inhibitor that enhances the immune response against melanoma cells.",
+          "dosing": "3 mg/kg IV every 2 weeks.",
+          "sideEffects": "Fatigue, rash, immune-mediated adverse effects.",
+          "notes": "Monitor for signs of immune-related side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wide Local Excision",
+          "description": "Surgical removal of the melanoma with a margin of normal skin.",
+          "indications": "Diagnosis of melanoma confirmed, staging indicates no metastasis.",
+          "risks": "Infection, scarring, recurrence."
+        },
+        {
+          "name": "Sentinel Lymph Node Biopsy",
+          "description": "Removal and examination of the first lymph node(s) that drain the area of the melanoma.",
+          "indications": "High-risk melanoma to assess for metastasis.",
+          "risks": "Lymphedema, infection, anesthesia complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for melanoma depends on the stage at diagnosis. Early-stage melanoma (in situ) has a high cure rate, while advanced melanoma has a poorer prognosis with a 5-year survival rate of about 15-20%.",
+    "complications": [
+      "Metastasis to distant organs (lungs, liver, brain)",
+      "Lymphoedema post-surgery",
+      "Recurrence of melanoma"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough skin examinations, recognize suspicious lesions, and refer patients for specialist evaluation. They should also educate patients on sun protection and self-examination techniques.",
+    "escalation": "Refer to dermatology or oncology for any suspicious lesions, confirmed melanoma, or if the patient presents with advanced disease or complications.",
+    "keySafetyConsiderations": "Ensure proper follow-up for patients with a history of melanoma, educate on sun safety, and monitor for signs of recurrence or metastasis."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "allergic_disorders",
+  "name": "Allergic disorders",
+  "domains": [
+    "Immunology",
+    "Respiratory",
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:03:08.647962",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Allergic disorders: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAllergic disorders are hypersensitivity reactions mediated by the immune system, typically involving IgE antibodies, leading to symptoms ranging from mild to severe. Common allergic disorders include allergic rhinitis, asthma, atopic dermatitis, and anaphylaxis.\n\n### Epidemiology\nAllergic disorders are among the most common chronic conditions, affecting approximately 20-30% of the population in developed countries. The prevalence of allergies has been increasing over the past few decades, particularly in urban areas.\n\n### Essential Pathophysiology\nAllergic reactions occur when the immune system overreacts to normally harmless substances (allergens). Upon first exposure, allergens trigger the production of IgE antibodies. Subsequent exposures lead to cross-linking of IgE on mast cells and basophils, resulting in degranulation and release of histamine and other mediators, causing inflammation and symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sneezing\n- Itchy eyes\n- Runny or stuffy nose\n- Coughing\n- Wheezing\n- Skin rashes (e.g., hives, eczema)\n- Abdominal pain (in food allergies)\n- Anaphylaxis (in severe cases)\n\n### Key Signs\n- Conjunctival injection\n- Nasal congestion\n- Wheezing on auscultation\n- Erythema and urticaria on skin examination\n- Signs of respiratory distress\n\n### Atypical Presentations\n- Chronic cough without wheezing (asthma)\n- Eczema in adults\n- Gastrointestinal symptoms without skin or respiratory symptoms (food allergies)\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Swelling of the face, lips, or throat\n- Rapid onset of symptoms after exposure to an allergen\n- History of anaphylaxis\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Skin prick tests for common allergens\n- Serum specific IgE tests\n\n### Second-line Investigations\n- Complete blood count (CBC) with eosinophil count\n- Pulmonary function tests (for asthma)\n- Nasal swabs for eosinophils (in rhinitis)\n\n### Specialist Tests\n- Allergen-specific IgE testing (RAST)\n- Patch testing for contact dermatitis\n- Oral food challenge (for food allergies)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination, and supportive test results (e.g., positive skin prick test or specific IgE).\n\n### Key Differential Diagnoses to Exclude\n- Infectious rhinitis\n- Non-allergic rhinitis\n- Asthma due to non-allergic triggers (e.g., exercise-induced)\n- Eczema due to irritants or infections\n- Gastroesophageal reflux disease (GERD)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer antihistamines (e.g., cetirizine, loratadine)\n- Bronchodilators (e.g., salbutamol) for asthma exacerbations\n- Epinephrine for anaphylaxis\n\n#### Second-line Treatments\n- Corticosteroids (e.g., prednisone) for severe inflammation\n- Intranasal corticosteroids for allergic rhinitis\n\n#### Emergency Procedures\n- Anaphylaxis management protocol (epinephrine auto-injector administration)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Avoidance of known allergens\n- Long-term antihistamines for allergic rhinitis\n- Inhaled corticosteroids for asthma\n\n#### Second-line Treatments\n- Leukotriene receptor antagonists (e.g., montelukast) for asthma\n- Immunotherapy (allergy shots) for specific allergies\n\n#### Monitoring Requirements\n- Regular follow-up for asthma control (e.g., using asthma control test)\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cetirizine\n- **Mechanism of Action**: Second-generation antihistamine that blocks H1 receptors, reducing allergic symptoms.\n- **Typical Dosing Range**: 10 mg orally once daily.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, headache.\n- **When to Use vs. Alternatives**: Less sedating than first-generation antihistamines.\n\n#### Salbutamol\n- **Mechanism of Action**: Short-acting beta-2 agonist that relaxes bronchial smooth muscle.\n- **Typical Dosing Range**: Inhaled 100-200 mcg as needed, up to 4 times daily.\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia.\n- **When to Use vs. Alternatives**: Used for acute asthma relief.\n\n#### Epinephrine\n- **Mechanism of Action**: Alpha and beta-adrenergic agonist that causes vasoconstriction and bronchodilation.\n- **Typical Dosing Range**: 0.3-0.5 mg intramuscularly (0.3-0.5 mL of 1:1000 solution) for anaphylaxis, may repeat every 5-15 minutes as needed.\n- **Key Side Effects/Contraindications**: Anxiety, palpitations, hypertension.\n- **When to Use vs. Alternatives**: First-line treatment for anaphylaxis.\n\n### Procedures\n\n#### Anaphylaxis management\n- **What it Involves**: Immediate administration of epinephrine and supportive care.\n- **Indications**: Severe allergic reaction with respiratory distress or hypotension.\n- **Key Risks/Complications**: Potential for adverse effects from epinephrine, including arrhythmias.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost allergic disorders can be effectively managed with avoidance strategies and medications. However, some patients may experience chronic symptoms or severe reactions, particularly in the case of anaphylaxis.\n\n### Important Complications to Watch For\n- Chronic asthma\n- Chronic rhinitis\n- Anaphylaxis leading to death if untreated\n- Secondary infections due to skin conditions (e.g., eczema)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize allergic disorders, initiate appropriate investigations, manage acute allergic reactions, and provide education on avoidance strategies and medication use.\n\n### When to Escalate to Senior/Specialist\nRefer to an allergist for persistent or severe cases, particularly if there is a history of anaphylaxis or if symptoms are not controlled with first-line treatments.\n\n### Key Safety Considerations\nEnsure patients have access to emergency medications (e.g., epinephrine auto-injectors) and understand how to use them. Educate patients on recognizing early signs of anaphylaxis and the importance of avoiding known allergens.\n",
+  "content": {
+    "overview": {
+      "definition": "Allergic disorders are hypersensitivity reactions mediated by the immune system, typically involving IgE antibodies, leading to symptoms ranging from mild to severe. Common allergic disorders include allergic rhinitis, asthma, atopic dermatitis, and anaphylaxis.",
+      "epidemiology": "Allergic disorders are among the most common chronic conditions, affecting approximately 20-30% of the population in developed countries. The prevalence of allergies has been increasing over the past few decades, particularly in urban areas.",
+      "pathophysiology": "Allergic reactions occur when the immune system overreacts to normally harmless substances (allergens). Upon first exposure, allergens trigger the production of IgE antibodies. Subsequent exposures lead to cross-linking of IgE on mast cells and basophils, resulting in degranulation and release of histamine and other mediators, causing inflammation and symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sneezing",
+        "Itchy eyes",
+        "Runny or stuffy nose",
+        "Coughing",
+        "Wheezing",
+        "Skin rashes (e.g., hives, eczema)",
+        "Abdominal pain (in food allergies)",
+        "Anaphylaxis (in severe cases)"
+      ],
+      "signs": [
+        "Conjunctival injection",
+        "Nasal congestion",
+        "Wheezing on auscultation",
+        "Erythema and urticaria on skin examination",
+        "Signs of respiratory distress"
+      ],
+      "atypicalPresentations": [
+        "Chronic cough without wheezing (asthma)",
+        "Eczema in adults",
+        "Gastrointestinal symptoms without skin or respiratory symptoms (food allergies)"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Swelling of the face, lips, or throat",
+        "Rapid onset of symptoms after exposure to an allergen",
+        "History of anaphylaxis",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Skin prick tests for common allergens",
+        "Serum specific IgE tests"
+      ],
+      "secondLine": [
+        "Complete blood count (CBC) with eosinophil count",
+        "Pulmonary function tests (for asthma)",
+        "Nasal swabs for eosinophils (in rhinitis)"
+      ],
+      "specialistTests": [
+        "Allergen-specific IgE testing (RAST)",
+        "Patch testing for contact dermatitis",
+        "Oral food challenge (for food allergies)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination, and supportive test results (e.g., positive skin prick test or specific IgE).",
+      "differentials": [
+        "Infectious rhinitis",
+        "Non-allergic rhinitis",
+        "Asthma due to non-allergic triggers (e.g., exercise-induced)",
+        "Eczema due to irritants or infections",
+        "Gastroesophageal reflux disease (GERD)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer antihistamines (e.g., cetirizine, loratadine)",
+          "Bronchodilators (e.g., salbutamol) for asthma exacerbations",
+          "Epinephrine for anaphylaxis"
+        ],
+        "secondLine": [
+          "Corticosteroids (e.g., prednisone) for severe inflammation",
+          "Intranasal corticosteroids for allergic rhinitis"
+        ],
+        "procedures": [
+          "Anaphylaxis management protocol (epinephrine auto-injector administration)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Avoidance of known allergens",
+          "Long-term antihistamines for allergic rhinitis",
+          "Inhaled corticosteroids for asthma"
+        ],
+        "secondLine": [
+          "Leukotriene receptor antagonists (e.g., montelukast) for asthma",
+          "Immunotherapy (allergy shots) for specific allergies"
+        ],
+        "monitoring": [
+          "Regular follow-up for asthma control (e.g., using asthma control test)",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cetirizine",
+          "mechanism": "Second-generation antihistamine that blocks H1 receptors, reducing allergic symptoms.",
+          "dosing": "10 mg orally once daily.",
+          "sideEffects": "Drowsiness, dry mouth, headache.",
+          "notes": "Less sedating than first-generation antihistamines."
+        },
+        {
+          "name": "Salbutamol",
+          "mechanism": "Short-acting beta-2 agonist that relaxes bronchial smooth muscle.",
+          "dosing": "Inhaled 100-200 mcg as needed, up to 4 times daily.",
+          "sideEffects": "Tachycardia, tremors, hypokalemia.",
+          "notes": "Used for acute asthma relief."
+        },
+        {
+          "name": "Epinephrine",
+          "mechanism": "Alpha and beta-adrenergic agonist that causes vasoconstriction and bronchodilation.",
+          "dosing": "0.3-0.5 mg intramuscularly (0.3-0.5 mL of 1:1000 solution) for anaphylaxis, may repeat every 5-15 minutes as needed.",
+          "sideEffects": "Anxiety, palpitations, hypertension.",
+          "notes": "First-line treatment for anaphylaxis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Anaphylaxis management",
+          "description": "Immediate administration of epinephrine and supportive care.",
+          "indications": "Severe allergic reaction with respiratory distress or hypotension.",
+          "risks": "Potential for adverse effects from epinephrine, including arrhythmias."
+        }
+      ]
+    },
+    "prognosis": "Most allergic disorders can be effectively managed with avoidance strategies and medications. However, some patients may experience chronic symptoms or severe reactions, particularly in the case of anaphylaxis.",
+    "complications": [
+      "Chronic asthma",
+      "Chronic rhinitis",
+      "Anaphylaxis leading to death if untreated",
+      "Secondary infections due to skin conditions (e.g., eczema)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize allergic disorders, initiate appropriate investigations, manage acute allergic reactions, and provide education on avoidance strategies and medication use.",
+    "escalation": "Refer to an allergist for persistent or severe cases, particularly if there is a history of anaphylaxis or if symptoms are not controlled with first-line treatments.",
+    "keySafetyConsiderations": "Ensure patients have access to emergency medications (e.g., epinephrine auto-injectors) and understand how to use them. Educate patients on recognizing early signs of anaphylaxis and the importance of avoiding known allergens."
+  }
+}

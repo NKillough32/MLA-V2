@@ -1,0 +1,137 @@
+{
+  "id": "giant_cell_arteritis_gca_",
+  "name": "Giant cell arteritis (GCA) ",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:34:36.609178",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Giant cell arteritis (GCA) : Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGiant cell arteritis (GCA), also known as temporal arteritis, is a type of vasculitis that primarily affects the large and medium-sized arteries, particularly the temporal arteries. It is characterized by inflammation of the arterial wall, leading to symptoms such as headache, visual disturbances, and jaw claudication.\n\n### Epidemiology\nGCA is most common in individuals over the age of 50, with a higher prevalence in women (approximately 2-3 times more common than in men). It is more prevalent in Northern European populations and has an incidence of about 15-30 cases per 100,000 people per year.\n\n### Essential Pathophysiology\nThe exact cause of GCA is unknown, but it is believed to involve an autoimmune response leading to the infiltration of T-cells and macrophages into the arterial wall. This results in the formation of giant cells and subsequent inflammation, which can cause luminal narrowing and ischemia to the tissues supplied by the affected arteries.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- New headache (often unilateral)\n- Jaw claudication (pain while chewing)\n- Visual disturbances (e.g., diplopia, sudden vision loss)\n- Scalp tenderness\n- Fatigue\n- Fever\n- Weight loss\n\n### Key Signs\n- Tenderness over the temporal artery\n- Reduced pulse in the temporal artery\n- Focal neurological deficits (if there is cranial involvement)\n- Systemic signs of inflammation (e.g., fever, malaise)\n\n### Atypical Presentations\n- Polymyalgia rheumatica (PMR) symptoms such as shoulder and hip pain\n- Isolated visual symptoms without headache\n\n### Red Flags Requiring Immediate Action\n- Sudden vision loss\n- Severe headache with scalp tenderness\n- Neurological deficits\n- Persistent fever and malaise\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Temporal artery ultrasound (to assess for halo sign)\n- Magnetic resonance angiography (MRA)\n\n### Specialist Tests\n- Temporal artery biopsy (gold standard for diagnosis)\n- Angiography (if large vessel involvement is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of GCA is based on clinical presentation, elevated inflammatory markers (ESR/CRP), and confirmation via temporal artery biopsy showing giant cells or inflammation.\n\n### Key Differential Diagnoses to Exclude\n- Polymyalgia rheumatica\n- Other forms of vasculitis (e.g., Takayasu arteritis)\n- Migraine\n- Tension-type headache\n- Intracranial mass lesions\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- High-dose corticosteroids (e.g., prednisone 40-60 mg daily)\n\n#### Second-line Treatments\n- Tapering corticosteroids based on clinical response and inflammatory markers\n\n#### Emergency Procedures\n- Temporal artery biopsy (to confirm diagnosis)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term corticosteroid therapy (tapered to the lowest effective dose)\n- Consideration of immunosuppressive agents (e.g., methotrexate, tocilizumab)\n\n#### Second-line Treatments\n- Monitoring for side effects of corticosteroids (e.g., osteoporosis, diabetes)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and side effects of treatment\n- Routine blood tests to monitor inflammatory markers and side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial dose of 40-60 mg daily, tapering based on clinical response.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, diabetes, hypertension, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose based on inflammatory markers.\n\n#### Methotrexate\n- **Mechanism of Action**: Immunosuppressant that inhibits DNA synthesis and reduces inflammation.\n- **Typical Dosing Range**: 7.5-25 mg weekly, adjusted based on tolerance and response.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Consider in patients requiring long-term corticosteroid sparing.\n\n#### Tocilizumab\n- **Mechanism of Action**: IL-6 receptor antagonist that reduces inflammation.\n- **Typical Dosing Range**: 4-8 mg/kg every 4 weeks, adjusted based on response.\n- **Key Side Effects/Contraindications**: Increased risk of infections, liver enzyme elevation, gastrointestinal perforation.\n- **When to Use vs. Alternatives**: Useful in patients with refractory GCA.\n\n### Procedures\n\n#### Temporal artery biopsy\n- **What it Involves**: A surgical procedure to obtain a sample of the temporal artery for histological examination.\n- **Indications**: To confirm the diagnosis of GCA when clinical suspicion is high and non-invasive tests are inconclusive.\n- **Key Risks/Complications**: Bleeding, infection, scarring, and transient neurological symptoms.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis for GCA is generally good, with most patients responding well to corticosteroids. However, there is a risk of complications such as permanent vision loss and aortic aneurysm if left untreated.\n\n### Important Complications to Watch For\n- Vision loss (due to ischemic optic neuropathy)\n- Aortic aneurysm or dissection\n- Stroke\n- Polymyalgia rheumatica\n- Corticosteroid-related complications (e.g., osteoporosis, diabetes)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing symptoms of GCA, initiate investigations, and start corticosteroid therapy promptly while ensuring timely referral to a rheumatologist for further management.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with sudden vision loss or severe headache with neurological deficits, immediate referral to an ophthalmologist or neurologist is warranted. If there is no improvement in symptoms or inflammatory markers after starting corticosteroids, escalate care to a rheumatologist.\n\n### Key Safety Considerations\nMonitor for signs of corticosteroid side effects, especially in long-term therapy. Ensure regular follow-up for blood tests to monitor inflammatory markers and assess for complications. Educate patients about the importance of adherence to therapy and reporting any new symptoms promptly.\n",
+  "content": {
+    "overview": {
+      "definition": "Giant cell arteritis (GCA), also known as temporal arteritis, is a type of vasculitis that primarily affects the large and medium-sized arteries, particularly the temporal arteries. It is characterized by inflammation of the arterial wall, leading to symptoms such as headache, visual disturbances, and jaw claudication.",
+      "epidemiology": "GCA is most common in individuals over the age of 50, with a higher prevalence in women (approximately 2-3 times more common than in men). It is more prevalent in Northern European populations and has an incidence of about 15-30 cases per 100,000 people per year.",
+      "pathophysiology": "The exact cause of GCA is unknown, but it is believed to involve an autoimmune response leading to the infiltration of T-cells and macrophages into the arterial wall. This results in the formation of giant cells and subsequent inflammation, which can cause luminal narrowing and ischemia to the tissues supplied by the affected arteries."
+    },
+    "recognition": {
+      "symptoms": [
+        "New headache (often unilateral)",
+        "Jaw claudication (pain while chewing)",
+        "Visual disturbances (e.g., diplopia, sudden vision loss)",
+        "Scalp tenderness",
+        "Fatigue",
+        "Fever",
+        "Weight loss"
+      ],
+      "signs": [
+        "Tenderness over the temporal artery",
+        "Reduced pulse in the temporal artery",
+        "Focal neurological deficits (if there is cranial involvement)",
+        "Systemic signs of inflammation (e.g., fever, malaise)"
+      ],
+      "atypicalPresentations": [
+        "Polymyalgia rheumatica (PMR) symptoms such as shoulder and hip pain",
+        "Isolated visual symptoms without headache"
+      ],
+      "redFlags": [
+        "Sudden vision loss",
+        "Severe headache with scalp tenderness",
+        "Neurological deficits",
+        "Persistent fever and malaise"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Temporal artery ultrasound (to assess for halo sign)",
+        "Magnetic resonance angiography (MRA)"
+      ],
+      "specialistTests": [
+        "Temporal artery biopsy (gold standard for diagnosis)",
+        "Angiography (if large vessel involvement is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of GCA is based on clinical presentation, elevated inflammatory markers (ESR/CRP), and confirmation via temporal artery biopsy showing giant cells or inflammation.",
+      "differentials": [
+        "Polymyalgia rheumatica",
+        "Other forms of vasculitis (e.g., Takayasu arteritis)",
+        "Migraine",
+        "Tension-type headache",
+        "Intracranial mass lesions"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "High-dose corticosteroids (e.g., prednisone 40-60 mg daily)"
+        ],
+        "secondLine": [
+          "Tapering corticosteroids based on clinical response and inflammatory markers"
+        ],
+        "procedures": [
+          "Temporal artery biopsy (to confirm diagnosis)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term corticosteroid therapy (tapered to the lowest effective dose)",
+          "Consideration of immunosuppressive agents (e.g., methotrexate, tocilizumab)"
+        ],
+        "secondLine": [
+          "Monitoring for side effects of corticosteroids (e.g., osteoporosis, diabetes)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and side effects of treatment",
+          "Routine blood tests to monitor inflammatory markers and side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Initial dose of 40-60 mg daily, tapering based on clinical response.",
+          "sideEffects": "Weight gain, osteoporosis, diabetes, hypertension, increased infection risk.",
+          "notes": "Monitor for side effects and adjust dose based on inflammatory markers."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Immunosuppressant that inhibits DNA synthesis and reduces inflammation.",
+          "dosing": "7.5-25 mg weekly, adjusted based on tolerance and response.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.",
+          "notes": "Consider in patients requiring long-term corticosteroid sparing."
+        },
+        {
+          "name": "Tocilizumab",
+          "mechanism": "IL-6 receptor antagonist that reduces inflammation.",
+          "dosing": "4-8 mg/kg every 4 weeks, adjusted based on response.",
+          "sideEffects": "Increased risk of infections, liver enzyme elevation, gastrointestinal perforation.",
+          "notes": "Useful in patients with refractory GCA."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Temporal artery biopsy",
+          "description": "A surgical procedure to obtain a sample of the temporal artery for histological examination.",
+          "indications": "To confirm the diagnosis of GCA when clinical suspicion is high and non-invasive tests are inconclusive.",
+          "risks": "Bleeding, infection, scarring, and transient neurological symptoms."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis for GCA is generally good, with most patients responding well to corticosteroids. However, there is a risk of complications such as permanent vision loss and aortic aneurysm if left untreated.",
+    "complications": [
+      "Vision loss (due to ischemic optic neuropathy)",
+      "Aortic aneurysm or dissection",
+      "Stroke",
+      "Polymyalgia rheumatica",
+      "Corticosteroid-related complications (e.g., osteoporosis, diabetes)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing symptoms of GCA, initiate investigations, and start corticosteroid therapy promptly while ensuring timely referral to a rheumatologist for further management.",
+    "escalation": "If a patient presents with sudden vision loss or severe headache with neurological deficits, immediate referral to an ophthalmologist or neurologist is warranted. If there is no improvement in symptoms or inflammatory markers after starting corticosteroids, escalate care to a rheumatologist.",
+    "keySafetyConsiderations": "Monitor for signs of corticosteroid side effects, especially in long-term therapy. Ensure regular follow-up for blood tests to monitor inflammatory markers and assess for complications. Educate patients about the importance of adherence to therapy and reporting any new symptoms promptly."
+  }
+}

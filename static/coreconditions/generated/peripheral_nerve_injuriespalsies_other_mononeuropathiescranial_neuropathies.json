@@ -1,0 +1,136 @@
+{
+  "id": "peripheral_nerve_injuriespalsies_other_mononeuropathiescranial_neuropathies",
+  "name": "Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:50:46.603375",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeripheral nerve injuries or palsies refer to damage to the peripheral nerves, which can result in motor, sensory, or autonomic dysfunction. This includes mononeuropathies (single nerve injuries) and cranial neuropathies (involvement of cranial nerves).\n\n### Epidemiology\nPeripheral nerve injuries are common, with an estimated incidence of 2-3% in the general population. They can occur due to trauma, compression, or systemic diseases. Cranial neuropathies are less common but can arise from various causes, including tumors, infections, and vascular issues.\n\n### Essential Pathophysiology\nPeripheral nerve injuries can result from direct trauma, compression, or ischemia, leading to axonal degeneration and demyelination. The severity of the injury can range from neuropraxia (temporary conduction block) to axonotmesis (axon damage with intact connective tissue) and neurotmesis (complete nerve transection). Cranial neuropathies may result from similar mechanisms affecting cranial nerves.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weakness in the affected muscle group\n- Numbness or tingling in the distribution of the affected nerve\n- Pain or discomfort along the nerve pathway\n- Loss of reflexes in the affected area\n\n### Key Signs\n- Muscle atrophy in chronic cases\n- Decreased sensation in the affected area\n- Weakness on manual muscle testing\n- Positive Tinel's sign (tingling on tapping the nerve)\n\n### Atypical Presentations\n- Bilateral symptoms in systemic conditions (e.g., diabetes)\n- Symptoms that do not follow a typical nerve distribution\n\n### Red Flags Requiring Immediate Action\n- Rapidly progressive weakness\n- Signs of systemic illness (fever, weight loss)\n- Bowel or bladder dysfunction\n- Severe pain not relieved by analgesics\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Nerve conduction studies (NCS)\n- Electromyography (EMG)\n\n### Second-line Investigations\n- Ultrasound of the nerve\n- MRI of the affected area\n\n### Specialist Tests\n- Genetic testing for hereditary neuropathies\n- Lumbar puncture for cerebrospinal fluid analysis if CNS involvement is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, nerve conduction studies, and electromyography findings that confirm the presence of a neuropathy and its location.\n\n### Key Differential Diagnoses to Exclude\n- Cervical radiculopathy\n- Multiple sclerosis\n- Diabetic neuropathy\n- Guillain-Barré syndrome\n- Myasthenia gravis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immobilization of the affected area\n- Pain management with NSAIDs or acetaminophen\n- Physical therapy to maintain range of motion\n\n#### Second-line Treatments\n- Corticosteroids for inflammatory neuropathies\n- Surgical intervention for compressive lesions\n\n#### Emergency Procedures\n- Nerve decompression surgery\n- Nerve repair or grafting in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical rehabilitation and occupational therapy\n- Pain management strategies (e.g., gabapentin, pregabalin)\n\n#### Second-line Treatments\n- Antidepressants (e.g., amitriptyline) for neuropathic pain\n- Transcutaneous electrical nerve stimulation (TENS)\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and adjust management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Gabapentin\n- **Mechanism of Action**: Modulates excitatory neurotransmitter release and inhibits excitatory pathways in the CNS.\n- **Typical Dosing Range**: Start at 300 mg/day, titrate up to 900-1800 mg/day as tolerated.\n- **Key Side Effects/Contraindications**: Dizziness, sedation, peripheral edema.\n- **When to Use vs. Alternatives**: Monitor renal function; adjust dose in renal impairment.\n\n#### Pregabalin\n- **Mechanism of Action**: Similar to gabapentin, it binds to the alpha-2-delta subunit of voltage-gated calcium channels, inhibiting excitatory neurotransmitter release.\n- **Typical Dosing Range**: Start at 75 mg twice daily, titrate to 150-600 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, somnolence, weight gain.\n- **When to Use vs. Alternatives**: Monitor for signs of misuse or dependence.\n\n### Procedures\n\n#### Nerve decompression surgery\n- **What it Involves**: Surgical procedure to relieve pressure on a nerve, often performed in cases of carpal tunnel syndrome or ulnar nerve entrapment.\n- **Indications**: Persistent symptoms despite conservative management, significant motor weakness.\n- **Key Risks/Complications**: Infection, nerve damage, persistent symptoms.\n\n#### Nerve repair or grafting\n- **What it Involves**: Surgical intervention to repair or reconstruct a damaged nerve.\n- **Indications**: Complete nerve transection or severe axonotmesis.\n- **Key Risks/Complications**: Infection, neuroma formation, incomplete recovery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for peripheral nerve injuries varies widely depending on the type and severity of the injury. Many patients experience significant recovery, especially with early intervention. Chronic neuropathies may lead to persistent symptoms and disability.\n\n### Important Complications to Watch For\n- Chronic pain syndromes\n- Muscle atrophy and weakness\n- Loss of function in the affected limb\n- Psychosocial impact due to disability\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough neurological examinations, recognize symptoms of peripheral nerve injuries, initiate appropriate investigations, and manage acute symptoms. They should also provide education on rehabilitation and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist for persistent or progressive symptoms, atypical presentations, or when surgical intervention is considered.\n\n### Key Safety Considerations\nMonitor for signs of compartment syndrome in acute injuries, ensure appropriate pain management, and educate patients on the importance of follow-up and rehabilitation.\n",
+  "content": {
+    "overview": {
+      "definition": "Peripheral nerve injuries or palsies refer to damage to the peripheral nerves, which can result in motor, sensory, or autonomic dysfunction. This includes mononeuropathies (single nerve injuries) and cranial neuropathies (involvement of cranial nerves).",
+      "epidemiology": "Peripheral nerve injuries are common, with an estimated incidence of 2-3% in the general population. They can occur due to trauma, compression, or systemic diseases. Cranial neuropathies are less common but can arise from various causes, including tumors, infections, and vascular issues.",
+      "pathophysiology": "Peripheral nerve injuries can result from direct trauma, compression, or ischemia, leading to axonal degeneration and demyelination. The severity of the injury can range from neuropraxia (temporary conduction block) to axonotmesis (axon damage with intact connective tissue) and neurotmesis (complete nerve transection). Cranial neuropathies may result from similar mechanisms affecting cranial nerves."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weakness in the affected muscle group",
+        "Numbness or tingling in the distribution of the affected nerve",
+        "Pain or discomfort along the nerve pathway",
+        "Loss of reflexes in the affected area"
+      ],
+      "signs": [
+        "Muscle atrophy in chronic cases",
+        "Decreased sensation in the affected area",
+        "Weakness on manual muscle testing",
+        "Positive Tinel's sign (tingling on tapping the nerve)"
+      ],
+      "atypicalPresentations": [
+        "Bilateral symptoms in systemic conditions (e.g., diabetes)",
+        "Symptoms that do not follow a typical nerve distribution"
+      ],
+      "redFlags": [
+        "Rapidly progressive weakness",
+        "Signs of systemic illness (fever, weight loss)",
+        "Bowel or bladder dysfunction",
+        "Severe pain not relieved by analgesics"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Nerve conduction studies (NCS)",
+        "Electromyography (EMG)"
+      ],
+      "secondLine": [
+        "Ultrasound of the nerve",
+        "MRI of the affected area"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary neuropathies",
+        "Lumbar puncture for cerebrospinal fluid analysis if CNS involvement is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, nerve conduction studies, and electromyography findings that confirm the presence of a neuropathy and its location.",
+      "differentials": [
+        "Cervical radiculopathy",
+        "Multiple sclerosis",
+        "Diabetic neuropathy",
+        "Guillain-Barré syndrome",
+        "Myasthenia gravis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immobilization of the affected area",
+          "Pain management with NSAIDs or acetaminophen",
+          "Physical therapy to maintain range of motion"
+        ],
+        "secondLine": [
+          "Corticosteroids for inflammatory neuropathies",
+          "Surgical intervention for compressive lesions"
+        ],
+        "procedures": [
+          "Nerve decompression surgery",
+          "Nerve repair or grafting in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical rehabilitation and occupational therapy",
+          "Pain management strategies (e.g., gabapentin, pregabalin)"
+        ],
+        "secondLine": [
+          "Antidepressants (e.g., amitriptyline) for neuropathic pain",
+          "Transcutaneous electrical nerve stimulation (TENS)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and adjust management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Gabapentin",
+          "mechanism": "Modulates excitatory neurotransmitter release and inhibits excitatory pathways in the CNS.",
+          "dosing": "Start at 300 mg/day, titrate up to 900-1800 mg/day as tolerated.",
+          "sideEffects": "Dizziness, sedation, peripheral edema.",
+          "notes": "Monitor renal function; adjust dose in renal impairment."
+        },
+        {
+          "name": "Pregabalin",
+          "mechanism": "Similar to gabapentin, it binds to the alpha-2-delta subunit of voltage-gated calcium channels, inhibiting excitatory neurotransmitter release.",
+          "dosing": "Start at 75 mg twice daily, titrate to 150-600 mg/day as needed.",
+          "sideEffects": "Dizziness, somnolence, weight gain.",
+          "notes": "Monitor for signs of misuse or dependence."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nerve decompression surgery",
+          "description": "Surgical procedure to relieve pressure on a nerve, often performed in cases of carpal tunnel syndrome or ulnar nerve entrapment.",
+          "indications": "Persistent symptoms despite conservative management, significant motor weakness.",
+          "risks": "Infection, nerve damage, persistent symptoms."
+        },
+        {
+          "name": "Nerve repair or grafting",
+          "description": "Surgical intervention to repair or reconstruct a damaged nerve.",
+          "indications": "Complete nerve transection or severe axonotmesis.",
+          "risks": "Infection, neuroma formation, incomplete recovery."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for peripheral nerve injuries varies widely depending on the type and severity of the injury. Many patients experience significant recovery, especially with early intervention. Chronic neuropathies may lead to persistent symptoms and disability.",
+    "complications": [
+      "Chronic pain syndromes",
+      "Muscle atrophy and weakness",
+      "Loss of function in the affected limb",
+      "Psychosocial impact due to disability"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough neurological examinations, recognize symptoms of peripheral nerve injuries, initiate appropriate investigations, and manage acute symptoms. They should also provide education on rehabilitation and follow-up care.",
+    "escalation": "Refer to a neurologist for persistent or progressive symptoms, atypical presentations, or when surgical intervention is considered.",
+    "keySafetyConsiderations": "Monitor for signs of compartment syndrome in acute injuries, ensure appropriate pain management, and educate patients on the importance of follow-up and rehabilitation."
+  }
+}

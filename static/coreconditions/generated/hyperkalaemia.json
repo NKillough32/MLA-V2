@@ -1,0 +1,146 @@
+{
+  "id": "hyperkalaemia",
+  "name": "Hyperkalaemia",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:17:28.696116",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyperkalaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyperkalaemia is defined as an elevated serum potassium level greater than 5.0 mmol/L. It can be life-threatening due to its effects on cardiac function.\n\n### Epidemiology\nHyperkalaemia is relatively common, particularly in patients with chronic kidney disease, heart failure, or those on certain medications. It is estimated to occur in 1-10% of hospitalized patients, with higher rates in those with renal impairment.\n\n### Essential Pathophysiology\nHyperkalaemia occurs when there is an imbalance between potassium intake, excretion, and distribution. Common causes include renal failure (decreased excretion), tissue breakdown (increased release), and medications that impair renal potassium handling.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Muscle weakness\n- Fatigue\n- Palpitations\n- Nausea\n- Paresthesia\n\n### Key Signs\n- Bradycardia\n- Tall peaked T-waves on ECG\n- Widened QRS complex\n- Hypotension\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Acute muscle paralysis in severe cases\n\n### Red Flags Requiring Immediate Action\n- Serum potassium >6.0 mmol/L\n- ECG changes (e.g., peaked T-waves, QRS widening)\n- Rapidly rising potassium levels\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum potassium level\n- ECG\n\n### Second-line Investigations\n- Serum creatinine\n- Urea and electrolytes (U&E)\n- Arterial blood gas (ABG)\n\n### Specialist Tests\n- 24-hour urine potassium excretion\n- Renal ultrasound\n- Plasma aldosterone and renin levels\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hyperkalaemia is based on serum potassium levels greater than 5.0 mmol/L, confirmed by repeat testing if necessary.\n\n### Key Differential Diagnoses to Exclude\n- Acute kidney injury\n- Chronic kidney disease\n- Adrenal insufficiency\n- Metabolic acidosis\n- Rhabdomyolysis\n- Hemolysis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Calcium gluconate or calcium chloride (to stabilize cardiac membrane)\n- Insulin and glucose (to shift potassium intracellularly)\n- Nebulized salbutamol (to shift potassium intracellularly)\n- Sodium bicarbonate (if acidosis present)\n\n#### Second-line Treatments\n- Dialysis (if severe or refractory)\n- Loop diuretics (if renal function allows)\n\n#### Emergency Procedures\n- Dialysis: indicated in severe hyperkalaemia or when medical management fails. Risks include hypotension, infection, and access complications.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary potassium restriction\n- Review of medications (e.g., ACE inhibitors, ARBs, potassium-sparing diuretics)\n\n#### Second-line Treatments\n- Potassium binders (e.g., sodium polystyrene sulfonate)\n\n#### Monitoring Requirements\n- Regular serum potassium levels\n- Renal function tests\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Calcium gluconate\n- **Mechanism of Action**: Stabilizes cardiac myocyte membranes against the effects of hyperkalemia.\n- **Typical Dosing Range**: 1g IV over 5-10 minutes; may repeat as necessary.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, local irritation at injection site.\n- **When to Use vs. Alternatives**: Use calcium chloride if IV access is difficult, but it is more irritating to veins.\n\n#### Insulin\n- **Mechanism of Action**: Promotes cellular uptake of potassium.\n- **Typical Dosing Range**: 10 units IV with 25g of dextrose (to prevent hypoglycemia).\n- **Key Side Effects/Contraindications**: Hypoglycemia, hypokalemia (if used excessively).\n- **When to Use vs. Alternatives**: Monitor blood glucose closely.\n\n#### Sodium bicarbonate\n- **Mechanism of Action**: Shifts potassium intracellularly, especially in the presence of acidosis.\n- **Typical Dosing Range**: 50-100 mEq IV over 1-2 hours.\n- **Key Side Effects/Contraindications**: Metabolic alkalosis, hypokalemia, fluid overload.\n- **When to Use vs. Alternatives**: Use cautiously in patients with heart failure.\n\n#### Sodium polystyrene sulfonate\n- **Mechanism of Action**: Binds potassium in the gut, promoting its excretion.\n- **Typical Dosing Range**: 15-30g orally or rectally, may repeat every 6 hours.\n- **Key Side Effects/Contraindications**: Constipation, electrolyte imbalances, intestinal necrosis (rare).\n- **When to Use vs. Alternatives**: Not for acute emergencies; slower acting.\n\n### Procedures\n\n#### Dialysis\n- **What it Involves**: A procedure to remove excess potassium and waste products from the blood when kidneys are unable to do so.\n- **Indications**: Severe hyperkalaemia (>6.5 mmol/L), ECG changes, or refractory to medical management.\n- **Key Risks/Complications**: Hypotension, infection, access complications, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of hyperkalaemia depends on the underlying cause and the speed of intervention. If treated promptly, the prognosis is generally good; however, severe cases can lead to cardiac arrest and death.\n\n### Important Complications to Watch For\n- Cardiac arrhythmias\n- Muscle weakness or paralysis\n- Metabolic acidosis\n- Acute kidney injury\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of hyperkalaemia, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely referral to senior medical staff or nephrology for severe cases.\n\n### When to Escalate to Senior/Specialist\nEscalate care if potassium levels are >6.0 mmol/L, if there are ECG changes, or if the patient is symptomatic. Consult senior medical staff or nephrology for severe cases or if the patient is unstable.\n\n### Key Safety Considerations\nAlways confirm elevated potassium levels with repeat testing. Monitor ECG changes closely in patients with hyperkalaemia. Be cautious with potassium-sparing diuretics and ACE inhibitors in at-risk patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Hyperkalaemia is defined as an elevated serum potassium level greater than 5.0 mmol/L. It can be life-threatening due to its effects on cardiac function.",
+      "epidemiology": "Hyperkalaemia is relatively common, particularly in patients with chronic kidney disease, heart failure, or those on certain medications. It is estimated to occur in 1-10% of hospitalized patients, with higher rates in those with renal impairment.",
+      "pathophysiology": "Hyperkalaemia occurs when there is an imbalance between potassium intake, excretion, and distribution. Common causes include renal failure (decreased excretion), tissue breakdown (increased release), and medications that impair renal potassium handling."
+    },
+    "recognition": {
+      "symptoms": [
+        "Muscle weakness",
+        "Fatigue",
+        "Palpitations",
+        "Nausea",
+        "Paresthesia"
+      ],
+      "signs": [
+        "Bradycardia",
+        "Tall peaked T-waves on ECG",
+        "Widened QRS complex",
+        "Hypotension"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Acute muscle paralysis in severe cases"
+      ],
+      "redFlags": [
+        "Serum potassium >6.0 mmol/L",
+        "ECG changes (e.g., peaked T-waves, QRS widening)",
+        "Rapidly rising potassium levels"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum potassium level",
+        "ECG"
+      ],
+      "secondLine": [
+        "Serum creatinine",
+        "Urea and electrolytes (U&E)",
+        "Arterial blood gas (ABG)"
+      ],
+      "specialistTests": [
+        "24-hour urine potassium excretion",
+        "Renal ultrasound",
+        "Plasma aldosterone and renin levels"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hyperkalaemia is based on serum potassium levels greater than 5.0 mmol/L, confirmed by repeat testing if necessary.",
+      "differentials": [
+        "Acute kidney injury",
+        "Chronic kidney disease",
+        "Adrenal insufficiency",
+        "Metabolic acidosis",
+        "Rhabdomyolysis",
+        "Hemolysis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Calcium gluconate or calcium chloride (to stabilize cardiac membrane)",
+          "Insulin and glucose (to shift potassium intracellularly)",
+          "Nebulized salbutamol (to shift potassium intracellularly)",
+          "Sodium bicarbonate (if acidosis present)"
+        ],
+        "secondLine": [
+          "Dialysis (if severe or refractory)",
+          "Loop diuretics (if renal function allows)"
+        ],
+        "procedures": [
+          "Dialysis: indicated in severe hyperkalaemia or when medical management fails. Risks include hypotension, infection, and access complications."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary potassium restriction",
+          "Review of medications (e.g., ACE inhibitors, ARBs, potassium-sparing diuretics)"
+        ],
+        "secondLine": [
+          "Potassium binders (e.g., sodium polystyrene sulfonate)"
+        ],
+        "monitoring": [
+          "Regular serum potassium levels",
+          "Renal function tests"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Calcium gluconate",
+          "mechanism": "Stabilizes cardiac myocyte membranes against the effects of hyperkalemia.",
+          "dosing": "1g IV over 5-10 minutes; may repeat as necessary.",
+          "sideEffects": "Hypotension, bradycardia, local irritation at injection site.",
+          "notes": "Use calcium chloride if IV access is difficult, but it is more irritating to veins."
+        },
+        {
+          "name": "Insulin",
+          "mechanism": "Promotes cellular uptake of potassium.",
+          "dosing": "10 units IV with 25g of dextrose (to prevent hypoglycemia).",
+          "sideEffects": "Hypoglycemia, hypokalemia (if used excessively).",
+          "notes": "Monitor blood glucose closely."
+        },
+        {
+          "name": "Sodium bicarbonate",
+          "mechanism": "Shifts potassium intracellularly, especially in the presence of acidosis.",
+          "dosing": "50-100 mEq IV over 1-2 hours.",
+          "sideEffects": "Metabolic alkalosis, hypokalemia, fluid overload.",
+          "notes": "Use cautiously in patients with heart failure."
+        },
+        {
+          "name": "Sodium polystyrene sulfonate",
+          "mechanism": "Binds potassium in the gut, promoting its excretion.",
+          "dosing": "15-30g orally or rectally, may repeat every 6 hours.",
+          "sideEffects": "Constipation, electrolyte imbalances, intestinal necrosis (rare).",
+          "notes": "Not for acute emergencies; slower acting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Dialysis",
+          "description": "A procedure to remove excess potassium and waste products from the blood when kidneys are unable to do so.",
+          "indications": "Severe hyperkalaemia (>6.5 mmol/L), ECG changes, or refractory to medical management.",
+          "risks": "Hypotension, infection, access complications, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of hyperkalaemia depends on the underlying cause and the speed of intervention. If treated promptly, the prognosis is generally good; however, severe cases can lead to cardiac arrest and death.",
+    "complications": [
+      "Cardiac arrhythmias",
+      "Muscle weakness or paralysis",
+      "Metabolic acidosis",
+      "Acute kidney injury"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of hyperkalaemia, initiate appropriate investigations, and manage acute cases under supervision. They should also be aware of the need for timely referral to senior medical staff or nephrology for severe cases.",
+    "escalation": "Escalate care if potassium levels are >6.0 mmol/L, if there are ECG changes, or if the patient is symptomatic. Consult senior medical staff or nephrology for severe cases or if the patient is unstable.",
+    "keySafetyConsiderations": "Always confirm elevated potassium levels with repeat testing. Monitor ECG changes closely in patients with hyperkalaemia. Be cautious with potassium-sparing diuretics and ACE inhibitors in at-risk patients."
+  }
+}

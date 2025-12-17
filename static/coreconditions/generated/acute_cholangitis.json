@@ -1,0 +1,145 @@
+{
+  "id": "acute_cholangitis",
+  "name": "Acute cholangitis",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:15:53.734703",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute cholangitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute cholangitis is a bacterial infection of the bile duct system, typically occurring due to obstruction (e.g., gallstones, strictures, tumors) that leads to bile stasis and infection.\n\n### Epidemiology\nAcute cholangitis is more common in adults, particularly those over 50 years of age. It is often associated with gallstones, and its incidence increases in patients with a history of biliary tract disease or prior biliary surgery.\n\n### Essential Pathophysiology\nThe condition arises when there is an obstruction in the bile duct, leading to increased pressure and stasis of bile. This stasis allows for bacterial overgrowth, commonly involving organisms such as Escherichia coli, Klebsiella, and Enterobacter. The infection can lead to systemic inflammatory response syndrome (SIRS) and sepsis if not treated promptly.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Right upper quadrant pain\n- Fever\n- Jaundice\n- Nausea and vomiting\n- Chills\n\n### Key Signs\n- Tenderness in the right upper quadrant\n- Fever (often >38°C)\n- Jaundice (icterus)\n- Hypotension (in severe cases)\n- Altered mental status (in severe cases)\n\n### Atypical Presentations\n- Elderly patients may present with confusion or altered mental status without classic symptoms.\n- Patients with diabetes may have atypical symptoms or a more rapid progression.\n\n### Red Flags Requiring Immediate Action\n- Severe hypotension\n- Altered mental status\n- Rapidly worsening jaundice\n- Signs of sepsis (e.g., tachycardia, tachypnea)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Blood cultures\n- Abdominal ultrasound\n\n### Second-line Investigations\n- CT abdomen with contrast\n- MRCP (Magnetic Resonance Cholangiopancreatography)\n\n### Specialist Tests\n- ERCP (Endoscopic Retrograde Cholangiopancreatography) for therapeutic intervention\n- Cholangiography\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is typically based on the presence of the classic triad of symptoms: fever, jaundice, and right upper quadrant pain. The presence of leukocytosis and elevated liver enzymes supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Acute pancreatitis\n- Biliary colic\n- Cholecystitis\n- Hepatitis\n- Liver abscess\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids\n- Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, ceftriaxone plus metronidazole)\n- Pain management\n\n#### Second-line Treatments\n- Consideration for urgent ERCP for decompression and stone removal if indicated.\n\n#### Emergency Procedures\n- ERCP for stone extraction and biliary drainage\n- Percutaneous drainage if ERCP is not available or unsuccessful\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying causes (e.g., cholecystectomy for gallstones)\n- Regular follow-up with imaging to monitor for recurrence\n\n#### Second-line Treatments\n- Consideration for surgical intervention if recurrent episodes occur.\n\n#### Monitoring Requirements\n- Regular liver function tests and imaging as indicated.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-negative and anaerobic bacteria.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Third-generation cephalosporin effective against gram-negative bacteria.\n- **Typical Dosing Range**: 1-2 g IV once daily.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, biliary sludging.\n- **When to Use vs. Alternatives**: Monitor for signs of biliary sludging in prolonged use.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic effective against anaerobic bacteria.\n- **Typical Dosing Range**: 500 mg IV every 8 hours.\n- **Key Side Effects/Contraindications**: Nausea, headache, metallic taste, disulfiram-like reaction with alcohol.\n- **When to Use vs. Alternatives**: Avoid alcohol during treatment.\n\n### Procedures\n\n#### ERCP\n- **What it Involves**: Endoscopic procedure to visualize and treat biliary obstructions.\n- **Indications**: Acute cholangitis with obstructive jaundice, choledocholithiasis.\n- **Key Risks/Complications**: Pancreatitis, bleeding, perforation, infection.\n\n#### Percutaneous drainage\n- **What it Involves**: Placement of a catheter to drain infected bile in cases where ERCP is not feasible.\n- **Indications**: Severe cholangitis with abscess formation or when ERCP fails.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis is generally good. However, delayed treatment can lead to severe complications, including sepsis and multi-organ failure.\n\n### Important Complications to Watch For\n- Sepsis\n- Biliary abscess\n- Pancreatitis\n- Chronic cholangitis\n- Liver failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should recognize the signs and symptoms of acute cholangitis, initiate appropriate investigations, start empirical antibiotic therapy, and ensure timely referral to surgical or gastroenterology teams for further management.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of sepsis or rapid deterioration, escalate care immediately to senior medical staff and consider urgent surgical intervention.\n\n### Key Safety Considerations\nMonitor vital signs closely for signs of sepsis, ensure timely administration of antibiotics, and maintain fluid resuscitation. Be vigilant for any signs of deterioration in the patient's condition.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute cholangitis is a bacterial infection of the bile duct system, typically occurring due to obstruction (e.g., gallstones, strictures, tumors) that leads to bile stasis and infection.",
+      "epidemiology": "Acute cholangitis is more common in adults, particularly those over 50 years of age. It is often associated with gallstones, and its incidence increases in patients with a history of biliary tract disease or prior biliary surgery.",
+      "pathophysiology": "The condition arises when there is an obstruction in the bile duct, leading to increased pressure and stasis of bile. This stasis allows for bacterial overgrowth, commonly involving organisms such as Escherichia coli, Klebsiella, and Enterobacter. The infection can lead to systemic inflammatory response syndrome (SIRS) and sepsis if not treated promptly."
+    },
+    "recognition": {
+      "symptoms": [
+        "Right upper quadrant pain",
+        "Fever",
+        "Jaundice",
+        "Nausea and vomiting",
+        "Chills"
+      ],
+      "signs": [
+        "Tenderness in the right upper quadrant",
+        "Fever (often >38°C)",
+        "Jaundice (icterus)",
+        "Hypotension (in severe cases)",
+        "Altered mental status (in severe cases)"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion or altered mental status without classic symptoms.",
+        "Patients with diabetes may have atypical symptoms or a more rapid progression."
+      ],
+      "redFlags": [
+        "Severe hypotension",
+        "Altered mental status",
+        "Rapidly worsening jaundice",
+        "Signs of sepsis (e.g., tachycardia, tachypnea)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Blood cultures",
+        "Abdominal ultrasound"
+      ],
+      "secondLine": [
+        "CT abdomen with contrast",
+        "MRCP (Magnetic Resonance Cholangiopancreatography)"
+      ],
+      "specialistTests": [
+        "ERCP (Endoscopic Retrograde Cholangiopancreatography) for therapeutic intervention",
+        "Cholangiography"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is typically based on the presence of the classic triad of symptoms: fever, jaundice, and right upper quadrant pain. The presence of leukocytosis and elevated liver enzymes supports the diagnosis.",
+      "differentials": [
+        "Acute pancreatitis",
+        "Biliary colic",
+        "Cholecystitis",
+        "Hepatitis",
+        "Liver abscess"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids",
+          "Broad-spectrum intravenous antibiotics (e.g., piperacillin-tazobactam, ceftriaxone plus metronidazole)",
+          "Pain management"
+        ],
+        "secondLine": [
+          "Consideration for urgent ERCP for decompression and stone removal if indicated."
+        ],
+        "procedures": [
+          "ERCP for stone extraction and biliary drainage",
+          "Percutaneous drainage if ERCP is not available or unsuccessful"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying causes (e.g., cholecystectomy for gallstones)",
+          "Regular follow-up with imaging to monitor for recurrence"
+        ],
+        "secondLine": [
+          "Consideration for surgical intervention if recurrent episodes occur."
+        ],
+        "monitoring": [
+          "Regular liver function tests and imaging as indicated."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-negative and anaerobic bacteria.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Third-generation cephalosporin effective against gram-negative bacteria.",
+          "dosing": "1-2 g IV once daily.",
+          "sideEffects": "Allergic reactions, diarrhea, biliary sludging.",
+          "notes": "Monitor for signs of biliary sludging in prolonged use."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic effective against anaerobic bacteria.",
+          "dosing": "500 mg IV every 8 hours.",
+          "sideEffects": "Nausea, headache, metallic taste, disulfiram-like reaction with alcohol.",
+          "notes": "Avoid alcohol during treatment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "ERCP",
+          "description": "Endoscopic procedure to visualize and treat biliary obstructions.",
+          "indications": "Acute cholangitis with obstructive jaundice, choledocholithiasis.",
+          "risks": "Pancreatitis, bleeding, perforation, infection."
+        },
+        {
+          "name": "Percutaneous drainage",
+          "description": "Placement of a catheter to drain infected bile in cases where ERCP is not feasible.",
+          "indications": "Severe cholangitis with abscess formation or when ERCP fails.",
+          "risks": "Infection, bleeding, injury to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis is generally good. However, delayed treatment can lead to severe complications, including sepsis and multi-organ failure.",
+    "complications": [
+      "Sepsis",
+      "Biliary abscess",
+      "Pancreatitis",
+      "Chronic cholangitis",
+      "Liver failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should recognize the signs and symptoms of acute cholangitis, initiate appropriate investigations, start empirical antibiotic therapy, and ensure timely referral to surgical or gastroenterology teams for further management.",
+    "escalation": "If a patient shows signs of sepsis or rapid deterioration, escalate care immediately to senior medical staff and consider urgent surgical intervention.",
+    "keySafetyConsiderations": "Monitor vital signs closely for signs of sepsis, ensure timely administration of antibiotics, and maintain fluid resuscitation. Be vigilant for any signs of deterioration in the patient's condition."
+  }
+}

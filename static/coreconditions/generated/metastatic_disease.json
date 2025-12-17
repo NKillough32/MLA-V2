@@ -1,0 +1,143 @@
+{
+  "id": "metastatic_disease",
+  "name": "Metastatic disease",
+  "domains": [
+    "Gastrointestinal",
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T19:45:53.612286",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Metastatic disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMetastatic disease refers to the spread of cancer cells from the primary tumor to distant organs or tissues, forming secondary tumors. It is a hallmark of advanced cancer and significantly impacts prognosis and treatment options.\n\n### Epidemiology\nMetastatic disease is common, with approximately 30% of patients diagnosed with solid tumors presenting with metastases. The most common sites of metastasis include the liver, lungs, bones, and brain, with the gastrointestinal and respiratory systems being frequent sites for secondary involvement.\n\n### Essential Pathophysiology\nCancer cells can invade surrounding tissues and enter the bloodstream or lymphatic system, allowing them to spread to distant sites. Once at a new site, they can proliferate and form secondary tumors, often influenced by the microenvironment and immune response.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unexplained weight loss\n- Fatigue\n- Pain at the site of metastasis\n- Jaundice (in liver metastases)\n- Cough or hemoptysis (in lung metastases)\n- Bowel obstruction (in gastrointestinal metastases)\n\n### Key Signs\n- Palpable liver or spleen (hepatomegaly or splenomegaly)\n- Lymphadenopathy\n- Respiratory distress or abnormal lung sounds\n- Abdominal distension or tenderness\n- Neurological deficits (in brain metastases)\n\n### Atypical Presentations\n- Asymptomatic until advanced stages\n- Metastatic lesions discovered incidentally on imaging\n- Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)\n\n### Red Flags Requiring Immediate Action\n- New onset of severe pain\n- Rapid weight loss\n- Neurological symptoms (e.g., seizures, confusion)\n- Signs of obstruction (e.g., bowel obstruction, respiratory distress)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Imaging studies (CT scan, MRI, PET scan)\n- Tumor markers (e.g., CEA, CA 19-9, PSA)\n\n### Second-line Investigations\n- Biopsy of metastatic lesions (if accessible)\n- Bone scan (for suspected bone metastases)\n- Endoscopy (for gastrointestinal lesions)\n\n### Specialist Tests\n- Genetic profiling of tumors\n- Cytogenetic analysis\n- Advanced imaging techniques (e.g., functional MRI)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of metastatic disease is based on imaging findings, histological confirmation of metastatic cells, and correlation with clinical symptoms and primary tumor identification.\n\n### Key Differential Diagnoses to Exclude\n- Primary malignancy (e.g., lung cancer, colorectal cancer)\n- Benign tumors (e.g., hemangiomas)\n- Infectious processes (e.g., abscesses)\n- Granulomatous diseases (e.g., sarcoidosis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management (opioids, NSAIDs)\n- Supportive care (hydration, nutrition)\n- Management of complications (e.g., bowel obstruction, respiratory distress)\n\n#### Second-line Treatments\n- Chemotherapy or targeted therapy based on primary tumor type\n- Radiation therapy for symptomatic relief\n\n#### Emergency Procedures\n- Palliative care interventions (e.g., stenting for obstruction, thoracentesis for pleural effusion)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Systemic therapy (chemotherapy, targeted therapy, immunotherapy)\n- Regular follow-up and monitoring for disease progression\n\n#### Second-line Treatments\n- Clinical trials for novel therapies\n- Radiation therapy for local control\n\n#### Monitoring Requirements\n- Regular imaging to assess for disease progression\n- Monitoring of tumor markers\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Doxorubicin\n- **Mechanism of Action**: Anthracycline antibiotic that intercalates DNA, inhibiting replication and transcription.\n- **Typical Dosing Range**: 60-75 mg/m² IV every 21 days.\n- **Key Side Effects/Contraindications**: Myelosuppression, cardiotoxicity, nausea, vomiting.\n- **When to Use vs. Alternatives**: Monitor cardiac function during treatment.\n\n#### Pembrolizumab\n- **Mechanism of Action**: PD-1 inhibitor that enhances T-cell response against tumor cells.\n- **Typical Dosing Range**: 200 mg IV every 3 weeks.\n- **Key Side Effects/Contraindications**: Immune-mediated adverse effects (e.g., pneumonitis, colitis), fatigue.\n- **When to Use vs. Alternatives**: Monitor for signs of autoimmune reactions.\n\n### Procedures\n\n#### Thoracentesis\n- **What it Involves**: Procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.\n- **Indications**: Pleural effusion suspected to be malignant or causing respiratory distress.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n#### Endoscopic stenting\n- **What it Involves**: Placement of a stent to relieve obstruction in the gastrointestinal tract.\n- **Indications**: Malignant obstruction causing symptoms such as vomiting or weight loss.\n- **Key Risks/Complications**: Perforation, bleeding, stent migration.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of metastatic disease varies widely depending on the primary cancer type, extent of metastasis, and response to treatment. Generally, metastatic disease is associated with a poorer prognosis compared to localized disease.\n\n### Important Complications to Watch For\n- Pain management issues\n- Organ dysfunction (e.g., liver failure, respiratory failure)\n- Infection due to immunosuppression from treatment\n- Psychosocial impacts (e.g., anxiety, depression)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of metastatic disease, conducting initial assessments, ordering appropriate investigations, and managing acute complications. They should also facilitate referrals to oncology and palliative care services as needed.\n\n### When to Escalate to Senior/Specialist\nEscalate care to oncology for patients with newly diagnosed metastatic disease or those requiring systemic therapy. Refer to palliative care for symptom management and end-of-life planning.\n\n### Key Safety Considerations\nEnsure thorough documentation of symptoms and treatment responses. Monitor for adverse effects of treatments, especially in patients receiving systemic therapies. Maintain clear communication with the multidisciplinary team regarding changes in patient status.\n",
+  "content": {
+    "overview": {
+      "definition": "Metastatic disease refers to the spread of cancer cells from the primary tumor to distant organs or tissues, forming secondary tumors. It is a hallmark of advanced cancer and significantly impacts prognosis and treatment options.",
+      "epidemiology": "Metastatic disease is common, with approximately 30% of patients diagnosed with solid tumors presenting with metastases. The most common sites of metastasis include the liver, lungs, bones, and brain, with the gastrointestinal and respiratory systems being frequent sites for secondary involvement.",
+      "pathophysiology": "Cancer cells can invade surrounding tissues and enter the bloodstream or lymphatic system, allowing them to spread to distant sites. Once at a new site, they can proliferate and form secondary tumors, often influenced by the microenvironment and immune response."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unexplained weight loss",
+        "Fatigue",
+        "Pain at the site of metastasis",
+        "Jaundice (in liver metastases)",
+        "Cough or hemoptysis (in lung metastases)",
+        "Bowel obstruction (in gastrointestinal metastases)"
+      ],
+      "signs": [
+        "Palpable liver or spleen (hepatomegaly or splenomegaly)",
+        "Lymphadenopathy",
+        "Respiratory distress or abnormal lung sounds",
+        "Abdominal distension or tenderness",
+        "Neurological deficits (in brain metastases)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic until advanced stages",
+        "Metastatic lesions discovered incidentally on imaging",
+        "Paraneoplastic syndromes (e.g., hypercalcemia, Cushing's syndrome)"
+      ],
+      "redFlags": [
+        "New onset of severe pain",
+        "Rapid weight loss",
+        "Neurological symptoms (e.g., seizures, confusion)",
+        "Signs of obstruction (e.g., bowel obstruction, respiratory distress)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Imaging studies (CT scan, MRI, PET scan)",
+        "Tumor markers (e.g., CEA, CA 19-9, PSA)"
+      ],
+      "secondLine": [
+        "Biopsy of metastatic lesions (if accessible)",
+        "Bone scan (for suspected bone metastases)",
+        "Endoscopy (for gastrointestinal lesions)"
+      ],
+      "specialistTests": [
+        "Genetic profiling of tumors",
+        "Cytogenetic analysis",
+        "Advanced imaging techniques (e.g., functional MRI)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of metastatic disease is based on imaging findings, histological confirmation of metastatic cells, and correlation with clinical symptoms and primary tumor identification.",
+      "differentials": [
+        "Primary malignancy (e.g., lung cancer, colorectal cancer)",
+        "Benign tumors (e.g., hemangiomas)",
+        "Infectious processes (e.g., abscesses)",
+        "Granulomatous diseases (e.g., sarcoidosis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management (opioids, NSAIDs)",
+          "Supportive care (hydration, nutrition)",
+          "Management of complications (e.g., bowel obstruction, respiratory distress)"
+        ],
+        "secondLine": [
+          "Chemotherapy or targeted therapy based on primary tumor type",
+          "Radiation therapy for symptomatic relief"
+        ],
+        "procedures": [
+          "Palliative care interventions (e.g., stenting for obstruction, thoracentesis for pleural effusion)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Systemic therapy (chemotherapy, targeted therapy, immunotherapy)",
+          "Regular follow-up and monitoring for disease progression"
+        ],
+        "secondLine": [
+          "Clinical trials for novel therapies",
+          "Radiation therapy for local control"
+        ],
+        "monitoring": [
+          "Regular imaging to assess for disease progression",
+          "Monitoring of tumor markers"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Doxorubicin",
+          "mechanism": "Anthracycline antibiotic that intercalates DNA, inhibiting replication and transcription.",
+          "dosing": "60-75 mg/m² IV every 21 days.",
+          "sideEffects": "Myelosuppression, cardiotoxicity, nausea, vomiting.",
+          "notes": "Monitor cardiac function during treatment."
+        },
+        {
+          "name": "Pembrolizumab",
+          "mechanism": "PD-1 inhibitor that enhances T-cell response against tumor cells.",
+          "dosing": "200 mg IV every 3 weeks.",
+          "sideEffects": "Immune-mediated adverse effects (e.g., pneumonitis, colitis), fatigue.",
+          "notes": "Monitor for signs of autoimmune reactions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Thoracentesis",
+          "description": "Procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.",
+          "indications": "Pleural effusion suspected to be malignant or causing respiratory distress.",
+          "risks": "Pneumothorax, bleeding, infection."
+        },
+        {
+          "name": "Endoscopic stenting",
+          "description": "Placement of a stent to relieve obstruction in the gastrointestinal tract.",
+          "indications": "Malignant obstruction causing symptoms such as vomiting or weight loss.",
+          "risks": "Perforation, bleeding, stent migration."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of metastatic disease varies widely depending on the primary cancer type, extent of metastasis, and response to treatment. Generally, metastatic disease is associated with a poorer prognosis compared to localized disease.",
+    "complications": [
+      "Pain management issues",
+      "Organ dysfunction (e.g., liver failure, respiratory failure)",
+      "Infection due to immunosuppression from treatment",
+      "Psychosocial impacts (e.g., anxiety, depression)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of metastatic disease, conducting initial assessments, ordering appropriate investigations, and managing acute complications. They should also facilitate referrals to oncology and palliative care services as needed.",
+    "escalation": "Escalate care to oncology for patients with newly diagnosed metastatic disease or those requiring systemic therapy. Refer to palliative care for symptom management and end-of-life planning.",
+    "keySafetyConsiderations": "Ensure thorough documentation of symptoms and treatment responses. Monitor for adverse effects of treatments, especially in patients receiving systemic therapies. Maintain clear communication with the multidisciplinary team regarding changes in patient status."
+  }
+}

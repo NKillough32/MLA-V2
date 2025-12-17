@@ -1,0 +1,143 @@
+{
+  "id": "aortic_valve_disease",
+  "name": "Aortic valve disease",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:13:00.975317",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Aortic valve disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAortic valve disease encompasses a range of conditions affecting the aortic valve, primarily aortic stenosis and aortic regurgitation, which can lead to significant morbidity and mortality if left untreated.\n\n### Epidemiology\nAortic stenosis is the most common valvular heart disease in the elderly, with a prevalence of 2-7% in individuals over 65 years. Aortic regurgitation is less common but can occur due to rheumatic fever, endocarditis, or degenerative changes.\n\n### Essential Pathophysiology\nIn aortic stenosis, the valve becomes narrowed, leading to increased left ventricular pressure overload, hypertrophy, and eventually heart failure. In aortic regurgitation, the valve fails to close properly, causing volume overload of the left ventricle, leading to dilation and heart failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Angina\n- Syncope\n- Palpitations\n- Fatigue\n\n### Key Signs\n- Systolic ejection murmur (aortic stenosis)\n- Diastolic murmur (aortic regurgitation)\n- Narrow pulse pressure (aortic regurgitation)\n- Pulsus parvus et tardus (aortic stenosis)\n- Signs of heart failure (e.g., edema, elevated jugular venous pressure)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Chest pain in younger patients with aortic regurgitation\n\n### Red Flags Requiring Immediate Action\n- Severe dyspnea\n- Syncope\n- Acute heart failure\n- Rapidly progressive symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (transthoracic)\n- Electrocardiogram (ECG)\n- Chest X-ray\n\n### Second-line Investigations\n- Transesophageal echocardiography (if transthoracic is inconclusive)\n- Cardiac MRI\n\n### Specialist Tests\n- Cardiac catheterization (if surgical intervention is considered)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, echocardiographic findings (valve area, gradient), and symptoms. Aortic stenosis is diagnosed with a valve area <1.0 cm² and a peak gradient >40 mmHg. Aortic regurgitation is diagnosed with evidence of left ventricular dilation and diastolic murmur.\n\n### Key Differential Diagnoses to Exclude\n- Mitral valve disease\n- Hypertrophic cardiomyopathy\n- Coronary artery disease\n- Pulmonary hypertension\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy\n- Diuretics for heart failure\n- Inotropic support if needed\n\n#### Second-line Treatments\n- Mechanical ventilation if respiratory failure occurs\n- Consideration for urgent surgical intervention\n\n#### Emergency Procedures\n- Aortic valve replacement (surgical or transcatheter)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring with echocardiography\n- Patient education on symptom recognition\n\n#### Second-line Treatments\n- Surgical intervention when symptomatic or severe disease is present\n\n#### Monitoring Requirements\n- Regular follow-up echocardiograms to assess progression\n- Monitoring for heart failure symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Diuretics\n- **Mechanism of Action**: Reduce preload and relieve symptoms of heart failure\n- **Typical Dosing Range**: Furosemide 20-80 mg IV/PO daily, titrate as needed\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal impairment\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and myocardial oxygen demand\n- **Typical Dosing Range**: Metoprolol 25-100 mg PO daily, titrate as needed\n- **Key Side Effects/Contraindications**: Bradycardia, fatigue, hypotension\n- **When to Use vs. Alternatives**: Caution in patients with severe aortic stenosis.\n\n#### ACE inhibitors\n- **Mechanism of Action**: Reduce afterload and improve symptoms of heart failure\n- **Typical Dosing Range**: Lisinopril 5-40 mg PO daily\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n### Procedures\n\n#### Aortic valve replacement (AVR)\n- **What it Involves**: Surgical procedure to replace the diseased aortic valve with a mechanical or biological prosthesis.\n- **Indications**: Severe symptomatic aortic stenosis or regurgitation, asymptomatic severe disease with LV dysfunction.\n- **Key Risks/Complications**: Bleeding, infection, prosthetic valve dysfunction, thromboembolism.\n\n#### Transcatheter aortic valve replacement (TAVR)\n- **What it Involves**: Minimally invasive procedure to replace the aortic valve via catheterization.\n- **Indications**: High-risk surgical patients with severe aortic stenosis.\n- **Key Risks/Complications**: Vascular complications, stroke, paravalvular leak.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of aortic valve disease depends on the severity and timing of intervention. Untreated severe aortic stenosis has a poor prognosis, with a median survival of 2-3 years after the onset of symptoms. Surgical intervention significantly improves outcomes.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias\n- Endocarditis\n- Thromboembolic events\n- Sudden cardiac death\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms and signs of aortic valve disease, perform initial assessments, and refer patients for further evaluation and management. They should also educate patients about their condition and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nPatients with severe symptoms, signs of heart failure, or rapidly deteriorating clinical status should be escalated to a senior clinician or cardiologist for urgent evaluation and management.\n\n### Key Safety Considerations\nMonitor for signs of heart failure, arrhythmias, and complications of treatment. Ensure timely referral for surgical evaluation in symptomatic patients or those with severe disease.\n",
+  "content": {
+    "overview": {
+      "definition": "Aortic valve disease encompasses a range of conditions affecting the aortic valve, primarily aortic stenosis and aortic regurgitation, which can lead to significant morbidity and mortality if left untreated.",
+      "epidemiology": "Aortic stenosis is the most common valvular heart disease in the elderly, with a prevalence of 2-7% in individuals over 65 years. Aortic regurgitation is less common but can occur due to rheumatic fever, endocarditis, or degenerative changes.",
+      "pathophysiology": "In aortic stenosis, the valve becomes narrowed, leading to increased left ventricular pressure overload, hypertrophy, and eventually heart failure. In aortic regurgitation, the valve fails to close properly, causing volume overload of the left ventricle, leading to dilation and heart failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Angina",
+        "Syncope",
+        "Palpitations",
+        "Fatigue"
+      ],
+      "signs": [
+        "Systolic ejection murmur (aortic stenosis)",
+        "Diastolic murmur (aortic regurgitation)",
+        "Narrow pulse pressure (aortic regurgitation)",
+        "Pulsus parvus et tardus (aortic stenosis)",
+        "Signs of heart failure (e.g., edema, elevated jugular venous pressure)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Chest pain in younger patients with aortic regurgitation"
+      ],
+      "redFlags": [
+        "Severe dyspnea",
+        "Syncope",
+        "Acute heart failure",
+        "Rapidly progressive symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (transthoracic)",
+        "Electrocardiogram (ECG)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "Transesophageal echocardiography (if transthoracic is inconclusive)",
+        "Cardiac MRI"
+      ],
+      "specialistTests": [
+        "Cardiac catheterization (if surgical intervention is considered)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, echocardiographic findings (valve area, gradient), and symptoms. Aortic stenosis is diagnosed with a valve area <1.0 cm² and a peak gradient >40 mmHg. Aortic regurgitation is diagnosed with evidence of left ventricular dilation and diastolic murmur.",
+      "differentials": [
+        "Mitral valve disease",
+        "Hypertrophic cardiomyopathy",
+        "Coronary artery disease",
+        "Pulmonary hypertension"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy",
+          "Diuretics for heart failure",
+          "Inotropic support if needed"
+        ],
+        "secondLine": [
+          "Mechanical ventilation if respiratory failure occurs",
+          "Consideration for urgent surgical intervention"
+        ],
+        "procedures": [
+          "Aortic valve replacement (surgical or transcatheter)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring with echocardiography",
+          "Patient education on symptom recognition"
+        ],
+        "secondLine": [
+          "Surgical intervention when symptomatic or severe disease is present"
+        ],
+        "monitoring": [
+          "Regular follow-up echocardiograms to assess progression",
+          "Monitoring for heart failure symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Diuretics",
+          "mechanism": "Reduce preload and relieve symptoms of heart failure",
+          "dosing": "Furosemide 20-80 mg IV/PO daily, titrate as needed",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal impairment",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and myocardial oxygen demand",
+          "dosing": "Metoprolol 25-100 mg PO daily, titrate as needed",
+          "sideEffects": "Bradycardia, fatigue, hypotension",
+          "notes": "Caution in patients with severe aortic stenosis."
+        },
+        {
+          "name": "ACE inhibitors",
+          "mechanism": "Reduce afterload and improve symptoms of heart failure",
+          "dosing": "Lisinopril 5-40 mg PO daily",
+          "sideEffects": "Cough, hyperkalemia, renal impairment",
+          "notes": "Monitor renal function and potassium levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Aortic valve replacement (AVR)",
+          "description": "Surgical procedure to replace the diseased aortic valve with a mechanical or biological prosthesis.",
+          "indications": "Severe symptomatic aortic stenosis or regurgitation, asymptomatic severe disease with LV dysfunction.",
+          "risks": "Bleeding, infection, prosthetic valve dysfunction, thromboembolism."
+        },
+        {
+          "name": "Transcatheter aortic valve replacement (TAVR)",
+          "description": "Minimally invasive procedure to replace the aortic valve via catheterization.",
+          "indications": "High-risk surgical patients with severe aortic stenosis.",
+          "risks": "Vascular complications, stroke, paravalvular leak."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of aortic valve disease depends on the severity and timing of intervention. Untreated severe aortic stenosis has a poor prognosis, with a median survival of 2-3 years after the onset of symptoms. Surgical intervention significantly improves outcomes.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias",
+      "Endocarditis",
+      "Thromboembolic events",
+      "Sudden cardiac death"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms and signs of aortic valve disease, perform initial assessments, and refer patients for further evaluation and management. They should also educate patients about their condition and the importance of follow-up.",
+    "escalation": "Patients with severe symptoms, signs of heart failure, or rapidly deteriorating clinical status should be escalated to a senior clinician or cardiologist for urgent evaluation and management.",
+    "keySafetyConsiderations": "Monitor for signs of heart failure, arrhythmias, and complications of treatment. Ensure timely referral for surgical evaluation in symptomatic patients or those with severe disease."
+  }
+}

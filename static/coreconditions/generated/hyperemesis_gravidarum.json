@@ -1,0 +1,156 @@
+{
+  "id": "hyperemesis_gravidarum",
+  "name": "Hyperemesis gravidarum",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:46:19.818045",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyperemesis gravidarum: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyperemesis gravidarum (HG) is a severe form of nausea and vomiting during pregnancy that can lead to dehydration, electrolyte imbalances, and weight loss. It is more intense than typical morning sickness and can significantly impact a woman's quality of life.\n\n### Epidemiology\nHG affects approximately 0.5% to 2% of pregnancies. It is more common in women with a history of HG in previous pregnancies, those carrying multiple gestations, and in women with a personal or family history of hyperemesis or motion sickness.\n\n### Essential Pathophysiology\nThe exact cause of HG is not fully understood, but it is thought to involve hormonal changes (particularly elevated levels of human chorionic gonadotropin (hCG) and estrogen), genetic predisposition, and possibly psychological factors. The condition may lead to metabolic derangements due to prolonged vomiting.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe nausea\n- Persistent vomiting\n- Dehydration\n- Weight loss (more than 5% of pre-pregnancy weight)\n- Electrolyte imbalances\n\n### Key Signs\n- Dry mucous membranes\n- Tachycardia\n- Hypotension\n- Ketones in urine\n- Weight loss on examination\n\n### Atypical Presentations\n- Vomiting beyond the first trimester\n- Severe abdominal pain\n- Altered mental status due to dehydration\n\n### Red Flags Requiring Immediate Action\n- Signs of dehydration (e.g., decreased urine output, dizziness)\n- Severe abdominal pain\n- Persistent vomiting beyond 16 weeks\n- Electrolyte abnormalities\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis for ketones and specific gravity\n- Blood tests (electrolytes, renal function, liver function tests)\n- Assessment of weight loss\n\n### Second-line Investigations\n- Ultrasound to rule out multiple gestation or molar pregnancy\n- Thyroid function tests if indicated\n\n### Specialist Tests\n- Gastric emptying studies (if gastroparesis is suspected)\n- Psychiatric evaluation if psychological factors are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of severe nausea and vomiting leading to dehydration, weight loss, and ketonuria, typically occurring in the first trimester.\n\n### Key Differential Diagnoses to Exclude\n- Gastroenteritis\n- Peptic ulcer disease\n- Cholecystitis\n- Pancreatitis\n- Hyperthyroidism\n- Molar pregnancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids (normal saline or Ringer's lactate)\n- Electrolyte replacement (potassium, magnesium)\n- Thiamine supplementation to prevent Wernicke's encephalopathy\n\n#### Second-line Treatments\n- Antiemetics (ondansetron, metoclopramide)\n- Corticosteroids (if severe and unresponsive to other treatments)\n\n#### Emergency Procedures\n- Hospital admission for IV fluids and monitoring\n- Consideration for nasogastric tube feeding if oral intake is not possible\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (small, frequent meals, bland diet)\n- Acupressure or acupuncture\n\n#### Second-line Treatments\n- Oral antiemetics (doxylamine-pyridoxine combination)\n- Consideration of outpatient management with antiemetics\n\n#### Monitoring Requirements\n- Regular weight checks\n- Monitoring of hydration status and electrolyte levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ondansetron\n- **Mechanism of Action**: 5-HT3 receptor antagonist that reduces nausea and vomiting\n- **Typical Dosing Range**: 4-8 mg IV/PO every 8 hours as needed\n- **Key Side Effects/Contraindications**: Headache, constipation, dizziness\n- **When to Use vs. Alternatives**: Use with caution in patients with prolonged QT interval.\n\n#### Metoclopramide\n- **Mechanism of Action**: Dopamine antagonist that increases gastric motility and reduces nausea\n- **Typical Dosing Range**: 10 mg IV/PO every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Drowsiness, fatigue, extrapyramidal symptoms\n- **When to Use vs. Alternatives**: Monitor for tardive dyskinesia with long-term use.\n\n#### Doxylamine-pyridoxine\n- **Mechanism of Action**: Antihistamine and vitamin B6 combination that helps reduce nausea\n- **Typical Dosing Range**: 10 mg/10 mg PO at bedtime, may increase to 20 mg/20 mg\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth\n- **When to Use vs. Alternatives**: Considered safe in pregnancy.\n\n#### Corticosteroids (e.g., prednisone)\n- **Mechanism of Action**: Anti-inflammatory that can reduce nausea and vomiting\n- **Typical Dosing Range**: 10-20 mg PO daily, tapering as symptoms improve\n- **Key Side Effects/Contraindications**: Increased blood sugar, mood changes, fluid retention\n- **When to Use vs. Alternatives**: Use only in severe cases due to potential risks.\n\n### Procedures\n\n#### Intravenous fluid therapy\n- **What it Involves**: Administration of IV fluids to correct dehydration and electrolyte imbalances\n- **Indications**: Severe dehydration, inability to tolerate oral intake\n- **Key Risks/Complications**: Infection, fluid overload, electrolyte imbalances.\n\n#### Nasogastric tube placement\n- **What it Involves**: Insertion of a tube through the nose into the stomach to provide nutrition and medication\n- **Indications**: Severe vomiting preventing oral intake, need for enteral feeding\n- **Key Risks/Complications**: Nasal trauma, esophageal injury, aspiration.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for hyperemesis gravidarum is generally good, with most women recovering by the second trimester. However, some may experience symptoms throughout their pregnancy. Long-term complications are rare but can include psychological effects and nutritional deficiencies if not managed properly.\n\n### Important Complications to Watch For\n- Dehydration\n- Electrolyte imbalances\n- Wernicke's encephalopathy due to thiamine deficiency\n- Poor fetal growth due to maternal malnutrition\n- Psychosocial impact on the mother\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of hyperemesis gravidarum, initiate appropriate investigations, provide initial management, and refer to obstetric specialists when necessary. They should also provide education and support to affected patients.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe dehydration, electrolyte imbalances, or if symptoms are unresponsive to initial management, escalate care to an obstetrician or a specialist in maternal-fetal medicine.\n\n### Key Safety Considerations\nMonitor for signs of dehydration and electrolyte imbalances, ensure appropriate fluid and electrolyte replacement, and be vigilant for complications such as Wernicke's encephalopathy. Provide psychological support and consider referral to mental health services if needed.\n",
+  "content": {
+    "overview": {
+      "definition": "Hyperemesis gravidarum (HG) is a severe form of nausea and vomiting during pregnancy that can lead to dehydration, electrolyte imbalances, and weight loss. It is more intense than typical morning sickness and can significantly impact a woman's quality of life.",
+      "epidemiology": "HG affects approximately 0.5% to 2% of pregnancies. It is more common in women with a history of HG in previous pregnancies, those carrying multiple gestations, and in women with a personal or family history of hyperemesis or motion sickness.",
+      "pathophysiology": "The exact cause of HG is not fully understood, but it is thought to involve hormonal changes (particularly elevated levels of human chorionic gonadotropin (hCG) and estrogen), genetic predisposition, and possibly psychological factors. The condition may lead to metabolic derangements due to prolonged vomiting."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe nausea",
+        "Persistent vomiting",
+        "Dehydration",
+        "Weight loss (more than 5% of pre-pregnancy weight)",
+        "Electrolyte imbalances"
+      ],
+      "signs": [
+        "Dry mucous membranes",
+        "Tachycardia",
+        "Hypotension",
+        "Ketones in urine",
+        "Weight loss on examination"
+      ],
+      "atypicalPresentations": [
+        "Vomiting beyond the first trimester",
+        "Severe abdominal pain",
+        "Altered mental status due to dehydration"
+      ],
+      "redFlags": [
+        "Signs of dehydration (e.g., decreased urine output, dizziness)",
+        "Severe abdominal pain",
+        "Persistent vomiting beyond 16 weeks",
+        "Electrolyte abnormalities"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis for ketones and specific gravity",
+        "Blood tests (electrolytes, renal function, liver function tests)",
+        "Assessment of weight loss"
+      ],
+      "secondLine": [
+        "Ultrasound to rule out multiple gestation or molar pregnancy",
+        "Thyroid function tests if indicated"
+      ],
+      "specialistTests": [
+        "Gastric emptying studies (if gastroparesis is suspected)",
+        "Psychiatric evaluation if psychological factors are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of severe nausea and vomiting leading to dehydration, weight loss, and ketonuria, typically occurring in the first trimester.",
+      "differentials": [
+        "Gastroenteritis",
+        "Peptic ulcer disease",
+        "Cholecystitis",
+        "Pancreatitis",
+        "Hyperthyroidism",
+        "Molar pregnancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids (normal saline or Ringer's lactate)",
+          "Electrolyte replacement (potassium, magnesium)",
+          "Thiamine supplementation to prevent Wernicke's encephalopathy"
+        ],
+        "secondLine": [
+          "Antiemetics (ondansetron, metoclopramide)",
+          "Corticosteroids (if severe and unresponsive to other treatments)"
+        ],
+        "procedures": [
+          "Hospital admission for IV fluids and monitoring",
+          "Consideration for nasogastric tube feeding if oral intake is not possible"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (small, frequent meals, bland diet)",
+          "Acupressure or acupuncture"
+        ],
+        "secondLine": [
+          "Oral antiemetics (doxylamine-pyridoxine combination)",
+          "Consideration of outpatient management with antiemetics"
+        ],
+        "monitoring": [
+          "Regular weight checks",
+          "Monitoring of hydration status and electrolyte levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ondansetron",
+          "mechanism": "5-HT3 receptor antagonist that reduces nausea and vomiting",
+          "dosing": "4-8 mg IV/PO every 8 hours as needed",
+          "sideEffects": "Headache, constipation, dizziness",
+          "notes": "Use with caution in patients with prolonged QT interval."
+        },
+        {
+          "name": "Metoclopramide",
+          "mechanism": "Dopamine antagonist that increases gastric motility and reduces nausea",
+          "dosing": "10 mg IV/PO every 6-8 hours as needed",
+          "sideEffects": "Drowsiness, fatigue, extrapyramidal symptoms",
+          "notes": "Monitor for tardive dyskinesia with long-term use."
+        },
+        {
+          "name": "Doxylamine-pyridoxine",
+          "mechanism": "Antihistamine and vitamin B6 combination that helps reduce nausea",
+          "dosing": "10 mg/10 mg PO at bedtime, may increase to 20 mg/20 mg",
+          "sideEffects": "Drowsiness, dry mouth",
+          "notes": "Considered safe in pregnancy."
+        },
+        {
+          "name": "Corticosteroids (e.g., prednisone)",
+          "mechanism": "Anti-inflammatory that can reduce nausea and vomiting",
+          "dosing": "10-20 mg PO daily, tapering as symptoms improve",
+          "sideEffects": "Increased blood sugar, mood changes, fluid retention",
+          "notes": "Use only in severe cases due to potential risks."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravenous fluid therapy",
+          "description": "Administration of IV fluids to correct dehydration and electrolyte imbalances",
+          "indications": "Severe dehydration, inability to tolerate oral intake",
+          "risks": "Infection, fluid overload, electrolyte imbalances."
+        },
+        {
+          "name": "Nasogastric tube placement",
+          "description": "Insertion of a tube through the nose into the stomach to provide nutrition and medication",
+          "indications": "Severe vomiting preventing oral intake, need for enteral feeding",
+          "risks": "Nasal trauma, esophageal injury, aspiration."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for hyperemesis gravidarum is generally good, with most women recovering by the second trimester. However, some may experience symptoms throughout their pregnancy. Long-term complications are rare but can include psychological effects and nutritional deficiencies if not managed properly.",
+    "complications": [
+      "Dehydration",
+      "Electrolyte imbalances",
+      "Wernicke's encephalopathy due to thiamine deficiency",
+      "Poor fetal growth due to maternal malnutrition",
+      "Psychosocial impact on the mother"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of hyperemesis gravidarum, initiate appropriate investigations, provide initial management, and refer to obstetric specialists when necessary. They should also provide education and support to affected patients.",
+    "escalation": "If a patient presents with severe dehydration, electrolyte imbalances, or if symptoms are unresponsive to initial management, escalate care to an obstetrician or a specialist in maternal-fetal medicine.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration and electrolyte imbalances, ensure appropriate fluid and electrolyte replacement, and be vigilant for complications such as Wernicke's encephalopathy. Provide psychological support and consider referral to mental health services if needed."
+  }
+}

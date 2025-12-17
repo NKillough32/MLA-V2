@@ -1,0 +1,127 @@
+{
+  "id": "squamous_cell_carcinoma",
+  "name": "Squamous cell carcinoma",
+  "domains": [
+    "Dermatology",
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T19:17:11.071766",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Squamous cell carcinoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSquamous cell carcinoma (SCC) is a type of skin cancer that arises from the squamous cells, which are flat cells located in the outer layer of the skin (epidermis). It is characterized by uncontrolled growth of abnormal squamous cells.\n\n### Epidemiology\nSCC is the second most common form of skin cancer, accounting for approximately 20% of all skin cancers. It is more prevalent in fair-skinned individuals and those with a history of excessive sun exposure. The incidence increases with age, particularly in individuals over 50 years.\n\n### Essential Pathophysiology\nSCC develops due to DNA damage in squamous cells, often caused by ultraviolet (UV) radiation from the sun or tanning beds. Other risk factors include immunosuppression, chronic skin conditions, and exposure to carcinogenic substances. The malignant transformation leads to uncontrolled cell proliferation and the potential for metastasis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- A persistent sore that does not heal\n- A growth that is red, scaly, or crusted\n- A wart-like bump that may bleed or ulcerate\n- Itching or tenderness in the affected area\n\n### Key Signs\n- A firm, red nodule\n- A flat lesion with a scaly, crusted surface\n- Ulceration or bleeding of the lesion\n- Induration or thickening of the skin\n\n### Atypical Presentations\n- Keratoacanthoma (a variant that may resemble SCC but has a different growth pattern)\n- SCC in situ (Bowen's disease) which appears as a persistent, scaly patch\n\n### Red Flags Requiring Immediate Action\n- Rapid growth of a lesion\n- Bleeding or ulceration of a lesion\n- Lesions on the lip or ear\n- History of previous skin cancers\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Dermatoscopy (to assess the characteristics of the lesion)\n\n### Second-line Investigations\n- Punch biopsy (to confirm diagnosis)\n- Shave biopsy (for superficial lesions)\n\n### Specialist Tests\n- Sentinel lymph node biopsy (for high-risk lesions)\n- Imaging studies (CT or MRI) if metastasis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histopathological examination of a biopsy showing atypical squamous cells with keratinization.\n\n### Key Differential Diagnoses to Exclude\n- Basal cell carcinoma\n- Melanoma\n- Actinic keratosis\n- Keratoacanthoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Surgical excision (wide local excision)\n- Cryotherapy (for superficial lesions)\n\n#### Second-line Treatments\n- Electrosurgery\n- Topical chemotherapy (e.g., 5-fluorouracil)\n\n#### Emergency Procedures\n- Mohs micrographic surgery (for high-risk or recurrent lesions)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular skin checks and monitoring for new lesions\n- Patient education on sun protection and skin care\n\n#### Second-line Treatments\n- Topical retinoids (for actinic keratosis prevention)\n- Photodynamic therapy (for superficial SCC)\n\n#### Monitoring Requirements\n- Regular follow-up appointments every 3-6 months for high-risk patients\n- Education on self-examination for new lesions\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### 5-Fluorouracil\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.\n- **Typical Dosing Range**: Apply topically twice daily for 2-4 weeks.\n- **Key Side Effects/Contraindications**: Local irritation, erythema, and ulceration at the application site.\n- **When to Use vs. Alternatives**: Effective for superficial SCC and actinic keratosis.\n\n#### Imiquimod\n- **Mechanism of Action**: Immune response modifier that stimulates local immune response against cancer cells.\n- **Typical Dosing Range**: Apply topically 3 times a week for up to 16 weeks.\n- **Key Side Effects/Contraindications**: Local inflammation, erythema, and flu-like symptoms.\n- **When to Use vs. Alternatives**: Used for superficial SCC and actinic keratosis.\n\n### Procedures\n\n#### Mohs Micrographic Surgery\n- **What it Involves**: A surgical technique that removes cancerous skin in layers, allowing for immediate microscopic examination to ensure complete removal.\n- **Indications**: High-risk SCC, recurrent lesions, or those located in cosmetically sensitive areas.\n- **Key Risks/Complications**: Scarring, infection, and potential for incomplete removal if not performed correctly.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for SCC is generally good, especially when detected early. The 5-year survival rate for localized SCC is over 90%. However, the risk of metastasis increases with tumor size, depth, and location.\n\n### Important Complications to Watch For\n- Local recurrence\n- Metastasis (especially in high-risk cases)\n- Scarring or disfigurement from treatment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize suspicious skin lesions, perform initial assessments, and refer patients for further evaluation and management. They should also educate patients on sun protection and skin self-examination.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology or oncology for lesions that are atypical, rapidly changing, or if there is suspicion of metastasis. Escalate care for patients with high-risk features or those requiring surgical intervention.\n\n### Key Safety Considerations\nEnsure proper sun protection advice is given to patients, monitor for signs of recurrence, and educate patients on the importance of follow-up appointments.\n",
+  "content": {
+    "overview": {
+      "definition": "Squamous cell carcinoma (SCC) is a type of skin cancer that arises from the squamous cells, which are flat cells located in the outer layer of the skin (epidermis). It is characterized by uncontrolled growth of abnormal squamous cells.",
+      "epidemiology": "SCC is the second most common form of skin cancer, accounting for approximately 20% of all skin cancers. It is more prevalent in fair-skinned individuals and those with a history of excessive sun exposure. The incidence increases with age, particularly in individuals over 50 years.",
+      "pathophysiology": "SCC develops due to DNA damage in squamous cells, often caused by ultraviolet (UV) radiation from the sun or tanning beds. Other risk factors include immunosuppression, chronic skin conditions, and exposure to carcinogenic substances. The malignant transformation leads to uncontrolled cell proliferation and the potential for metastasis."
+    },
+    "recognition": {
+      "symptoms": [
+        "A persistent sore that does not heal",
+        "A growth that is red, scaly, or crusted",
+        "A wart-like bump that may bleed or ulcerate",
+        "Itching or tenderness in the affected area"
+      ],
+      "signs": [
+        "A firm, red nodule",
+        "A flat lesion with a scaly, crusted surface",
+        "Ulceration or bleeding of the lesion",
+        "Induration or thickening of the skin"
+      ],
+      "atypicalPresentations": [
+        "Keratoacanthoma (a variant that may resemble SCC but has a different growth pattern)",
+        "SCC in situ (Bowen's disease) which appears as a persistent, scaly patch"
+      ],
+      "redFlags": [
+        "Rapid growth of a lesion",
+        "Bleeding or ulceration of a lesion",
+        "Lesions on the lip or ear",
+        "History of previous skin cancers"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Dermatoscopy (to assess the characteristics of the lesion)"
+      ],
+      "secondLine": [
+        "Punch biopsy (to confirm diagnosis)",
+        "Shave biopsy (for superficial lesions)"
+      ],
+      "specialistTests": [
+        "Sentinel lymph node biopsy (for high-risk lesions)",
+        "Imaging studies (CT or MRI) if metastasis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histopathological examination of a biopsy showing atypical squamous cells with keratinization.",
+      "differentials": [
+        "Basal cell carcinoma",
+        "Melanoma",
+        "Actinic keratosis",
+        "Keratoacanthoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Surgical excision (wide local excision)",
+          "Cryotherapy (for superficial lesions)"
+        ],
+        "secondLine": [
+          "Electrosurgery",
+          "Topical chemotherapy (e.g., 5-fluorouracil)"
+        ],
+        "procedures": [
+          "Mohs micrographic surgery (for high-risk or recurrent lesions)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular skin checks and monitoring for new lesions",
+          "Patient education on sun protection and skin care"
+        ],
+        "secondLine": [
+          "Topical retinoids (for actinic keratosis prevention)",
+          "Photodynamic therapy (for superficial SCC)"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments every 3-6 months for high-risk patients",
+          "Education on self-examination for new lesions"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "5-Fluorouracil",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, leading to cell death in rapidly dividing cells.",
+          "dosing": "Apply topically twice daily for 2-4 weeks.",
+          "sideEffects": "Local irritation, erythema, and ulceration at the application site.",
+          "notes": "Effective for superficial SCC and actinic keratosis."
+        },
+        {
+          "name": "Imiquimod",
+          "mechanism": "Immune response modifier that stimulates local immune response against cancer cells.",
+          "dosing": "Apply topically 3 times a week for up to 16 weeks.",
+          "sideEffects": "Local inflammation, erythema, and flu-like symptoms.",
+          "notes": "Used for superficial SCC and actinic keratosis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Mohs Micrographic Surgery",
+          "description": "A surgical technique that removes cancerous skin in layers, allowing for immediate microscopic examination to ensure complete removal.",
+          "indications": "High-risk SCC, recurrent lesions, or those located in cosmetically sensitive areas.",
+          "risks": "Scarring, infection, and potential for incomplete removal if not performed correctly."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for SCC is generally good, especially when detected early. The 5-year survival rate for localized SCC is over 90%. However, the risk of metastasis increases with tumor size, depth, and location.",
+    "complications": [
+      "Local recurrence",
+      "Metastasis (especially in high-risk cases)",
+      "Scarring or disfigurement from treatment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize suspicious skin lesions, perform initial assessments, and refer patients for further evaluation and management. They should also educate patients on sun protection and skin self-examination.",
+    "escalation": "Refer to dermatology or oncology for lesions that are atypical, rapidly changing, or if there is suspicion of metastasis. Escalate care for patients with high-risk features or those requiring surgical intervention.",
+    "keySafetyConsiderations": "Ensure proper sun protection advice is given to patients, monitor for signs of recurrence, and educate patients on the importance of follow-up appointments."
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "pre_eclampsia",
+  "name": "Pre-eclampsia",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:48:51.363855",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pre-eclampsia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPre-eclampsia is a pregnancy-specific condition characterized by new-onset hypertension and proteinuria after 20 weeks of gestation, which can lead to serious maternal and fetal complications.\n\n### Epidemiology\nAffects approximately 2-8% of pregnancies worldwide, with higher rates in first pregnancies, multiple gestations, and women with pre-existing conditions such as hypertension or diabetes.\n\n### Essential Pathophysiology\nPre-eclampsia is thought to result from placental dysfunction leading to inadequate blood flow and ischemia, causing systemic endothelial dysfunction, increased vascular resistance, and activation of the coagulation cascade.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headaches\n- Visual disturbances (e.g., blurred vision, scotomas)\n- Epigastric or right upper quadrant pain\n- Nausea and vomiting\n- Swelling of hands and face\n\n### Key Signs\n- Hypertension (blood pressure ≥ 140/90 mmHg on two occasions at least 4 hours apart)\n- Proteinuria (≥ 300 mg in 24-hour urine collection or dipstick ≥ 1+)\n- Oedema (may be present but is not diagnostic)\n\n### Atypical Presentations\n- Severe hypertension without proteinuria\n- Symptoms of HELLP syndrome (hemolysis, elevated liver enzymes, low platelets)\n\n### Red Flags Requiring Immediate Action\n- Severe headache unresponsive to analgesia\n- Visual disturbances\n- Severe epigastric pain\n- Sudden onset swelling of hands and face\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood pressure measurement\n- Urinalysis for proteinuria\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Renal function tests (RFTs)\n\n### Second-line Investigations\n- 24-hour urine collection for protein quantification\n- Ultrasound for fetal growth and amniotic fluid assessment\n- Doppler studies of uterine arteries\n\n### Specialist Tests\n- Coagulation profile\n- Liver ultrasound if HELLP syndrome is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of pre-eclampsia is made with the presence of hypertension (≥ 140/90 mmHg) and proteinuria (≥ 300 mg/24 hours) after 20 weeks of gestation, or severe features such as severe hypertension (≥ 160/110 mmHg) or signs of end-organ dysfunction.\n\n### Key Differential Diagnoses to Exclude\n- Gestational hypertension\n- Chronic hypertension\n- Chronic hypertension with superimposed pre-eclampsia\n- HELLP syndrome\n- Acute fatty liver of pregnancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate stabilization of blood pressure (e.g., labetalol, hydralazine)\n- Magnesium sulfate for seizure prophylaxis\n\n#### Second-line Treatments\n- Delivery of the fetus if severe features are present or if the mother or fetus is compromised\n\n#### Emergency Procedures\n- Delivery (vaginal or cesarean) depending on gestational age and maternal/fetal condition\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring of blood pressure and fetal well-being\n- Antihypertensive therapy if blood pressure is persistently elevated\n\n#### Second-line Treatments\n- Consideration of low-dose aspirin in high-risk women before 16 weeks gestation\n\n#### Monitoring Requirements\n- Regular blood pressure checks\n- Fetal growth scans\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Labetalol\n- **Mechanism of Action**: Non-selective beta-blocker with alpha-1 blocking activity, reducing blood pressure without significant reflex tachycardia.\n- **Typical Dosing Range**: Initial: 100 mg orally twice daily, can increase to 400 mg twice daily as needed.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, fatigue, dizziness.\n- **When to Use vs. Alternatives**: Preferred for acute management due to safety profile in pregnancy.\n\n#### Hydralazine\n- **Mechanism of Action**: Direct vasodilator that reduces systemic vascular resistance.\n- **Typical Dosing Range**: 5-10 mg IV bolus, may repeat every 20 minutes up to 20 mg.\n- **Key Side Effects/Contraindications**: Headache, tachycardia, hypotension.\n- **When to Use vs. Alternatives**: Used for acute severe hypertension.\n\n#### Magnesium sulfate\n- **Mechanism of Action**: CNS depressant that reduces the risk of seizures in pre-eclampsia.\n- **Typical Dosing Range**: Loading dose: 4-6 g IV over 20-30 minutes, followed by 1-2 g/hour continuous infusion.\n- **Key Side Effects/Contraindications**: Flushing, respiratory depression, hypotension.\n- **When to Use vs. Alternatives**: Monitor for signs of toxicity (e.g., loss of deep tendon reflexes).\n\n### Procedures\n\n#### Delivery\n- **What it Involves**: Induction of labor or cesarean section depending on maternal and fetal condition.\n- **Indications**: Severe pre-eclampsia, eclampsia, or fetal distress.\n- **Key Risks/Complications**: Infection, bleeding, anesthesia complications, preterm birth.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, most women with pre-eclampsia have good outcomes; however, it can lead to serious complications such as eclampsia, HELLP syndrome, and long-term cardiovascular risks.\n\n### Important Complications to Watch For\n- Eclampsia (seizures)\n- HELLP syndrome (hemolysis, elevated liver enzymes, low platelets)\n- Placental abruption\n- Fetal growth restriction\n- Long-term cardiovascular disease risk for the mother.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in monitoring pregnant patients for signs of pre-eclampsia, perform initial assessments, and escalate care as needed. They should also provide education to patients about warning signs and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nIf severe hypertension or severe features are present, escalate to obstetric team immediately. Ensure timely referral to a specialist if complications arise.\n\n### Key Safety Considerations\nMonitor for signs of worsening pre-eclampsia, including severe headache, visual changes, and abdominal pain. Ensure timely delivery if indicated, and monitor for magnesium sulfate toxicity during treatment.\n",
+  "content": {
+    "overview": {
+      "definition": "Pre-eclampsia is a pregnancy-specific condition characterized by new-onset hypertension and proteinuria after 20 weeks of gestation, which can lead to serious maternal and fetal complications.",
+      "epidemiology": "Affects approximately 2-8% of pregnancies worldwide, with higher rates in first pregnancies, multiple gestations, and women with pre-existing conditions such as hypertension or diabetes.",
+      "pathophysiology": "Pre-eclampsia is thought to result from placental dysfunction leading to inadequate blood flow and ischemia, causing systemic endothelial dysfunction, increased vascular resistance, and activation of the coagulation cascade."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headaches",
+        "Visual disturbances (e.g., blurred vision, scotomas)",
+        "Epigastric or right upper quadrant pain",
+        "Nausea and vomiting",
+        "Swelling of hands and face"
+      ],
+      "signs": [
+        "Hypertension (blood pressure ≥ 140/90 mmHg on two occasions at least 4 hours apart)",
+        "Proteinuria (≥ 300 mg in 24-hour urine collection or dipstick ≥ 1+)",
+        "Oedema (may be present but is not diagnostic)"
+      ],
+      "atypicalPresentations": [
+        "Severe hypertension without proteinuria",
+        "Symptoms of HELLP syndrome (hemolysis, elevated liver enzymes, low platelets)"
+      ],
+      "redFlags": [
+        "Severe headache unresponsive to analgesia",
+        "Visual disturbances",
+        "Severe epigastric pain",
+        "Sudden onset swelling of hands and face",
+        "Altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood pressure measurement",
+        "Urinalysis for proteinuria",
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Renal function tests (RFTs)"
+      ],
+      "secondLine": [
+        "24-hour urine collection for protein quantification",
+        "Ultrasound for fetal growth and amniotic fluid assessment",
+        "Doppler studies of uterine arteries"
+      ],
+      "specialistTests": [
+        "Coagulation profile",
+        "Liver ultrasound if HELLP syndrome is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of pre-eclampsia is made with the presence of hypertension (≥ 140/90 mmHg) and proteinuria (≥ 300 mg/24 hours) after 20 weeks of gestation, or severe features such as severe hypertension (≥ 160/110 mmHg) or signs of end-organ dysfunction.",
+      "differentials": [
+        "Gestational hypertension",
+        "Chronic hypertension",
+        "Chronic hypertension with superimposed pre-eclampsia",
+        "HELLP syndrome",
+        "Acute fatty liver of pregnancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate stabilization of blood pressure (e.g., labetalol, hydralazine)",
+          "Magnesium sulfate for seizure prophylaxis"
+        ],
+        "secondLine": [
+          "Delivery of the fetus if severe features are present or if the mother or fetus is compromised"
+        ],
+        "procedures": [
+          "Delivery (vaginal or cesarean) depending on gestational age and maternal/fetal condition"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring of blood pressure and fetal well-being",
+          "Antihypertensive therapy if blood pressure is persistently elevated"
+        ],
+        "secondLine": [
+          "Consideration of low-dose aspirin in high-risk women before 16 weeks gestation"
+        ],
+        "monitoring": [
+          "Regular blood pressure checks",
+          "Fetal growth scans"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Labetalol",
+          "mechanism": "Non-selective beta-blocker with alpha-1 blocking activity, reducing blood pressure without significant reflex tachycardia.",
+          "dosing": "Initial: 100 mg orally twice daily, can increase to 400 mg twice daily as needed.",
+          "sideEffects": "Hypotension, bradycardia, fatigue, dizziness.",
+          "notes": "Preferred for acute management due to safety profile in pregnancy."
+        },
+        {
+          "name": "Hydralazine",
+          "mechanism": "Direct vasodilator that reduces systemic vascular resistance.",
+          "dosing": "5-10 mg IV bolus, may repeat every 20 minutes up to 20 mg.",
+          "sideEffects": "Headache, tachycardia, hypotension.",
+          "notes": "Used for acute severe hypertension."
+        },
+        {
+          "name": "Magnesium sulfate",
+          "mechanism": "CNS depressant that reduces the risk of seizures in pre-eclampsia.",
+          "dosing": "Loading dose: 4-6 g IV over 20-30 minutes, followed by 1-2 g/hour continuous infusion.",
+          "sideEffects": "Flushing, respiratory depression, hypotension.",
+          "notes": "Monitor for signs of toxicity (e.g., loss of deep tendon reflexes)."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Delivery",
+          "description": "Induction of labor or cesarean section depending on maternal and fetal condition.",
+          "indications": "Severe pre-eclampsia, eclampsia, or fetal distress.",
+          "risks": "Infection, bleeding, anesthesia complications, preterm birth."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, most women with pre-eclampsia have good outcomes; however, it can lead to serious complications such as eclampsia, HELLP syndrome, and long-term cardiovascular risks.",
+    "complications": [
+      "Eclampsia (seizures)",
+      "HELLP syndrome (hemolysis, elevated liver enzymes, low platelets)",
+      "Placental abruption",
+      "Fetal growth restriction",
+      "Long-term cardiovascular disease risk for the mother."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in monitoring pregnant patients for signs of pre-eclampsia, perform initial assessments, and escalate care as needed. They should also provide education to patients about warning signs and the importance of follow-up.",
+    "escalation": "If severe hypertension or severe features are present, escalate to obstetric team immediately. Ensure timely referral to a specialist if complications arise.",
+    "keySafetyConsiderations": "Monitor for signs of worsening pre-eclampsia, including severe headache, visual changes, and abdominal pain. Ensure timely delivery if indicated, and monitor for magnesium sulfate toxicity during treatment."
+  }
+}

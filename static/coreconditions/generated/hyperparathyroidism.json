@@ -1,0 +1,133 @@
+{
+  "id": "hyperparathyroidism",
+  "name": "Hyperparathyroidism",
+  "domains": [
+    "Endocrine"
+  ],
+  "generatedAt": "2025-12-17T19:35:24.596412",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hyperparathyroidism: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHyperparathyroidism is a condition characterized by the overproduction of parathyroid hormone (PTH) from the parathyroid glands, leading to elevated serum calcium levels (hypercalcemia).\n\n### Epidemiology\nPrimary hyperparathyroidism is the most common cause of hypercalcemia in outpatient settings, with a prevalence of approximately 1% in the general population, more common in women and typically diagnosed in individuals aged 50-60 years.\n\n### Essential Pathophysiology\nHyperparathyroidism can be primary (due to adenoma, hyperplasia, or carcinoma of the parathyroid glands), secondary (due to chronic kidney disease or vitamin D deficiency), or tertiary (autonomous PTH secretion after prolonged secondary hyperparathyroidism). Elevated PTH leads to increased bone resorption, renal tubular reabsorption of calcium, and increased intestinal absorption of calcium.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Depression\n- Nausea\n- Constipation\n- Bone pain\n- Kidney stones\n\n### Key Signs\n- Hypercalcemia on blood tests\n- Bone tenderness\n- Abdominal tenderness\n- Dehydration signs\n\n### Atypical Presentations\n- Asymptomatic hypercalcemia found incidentally\n- Nephrolithiasis without other symptoms\n- Osteoporosis in younger patients\n\n### Red Flags Requiring Immediate Action\n- Severe hypercalcemia (>14 mg/dL)\n- Acute kidney injury\n- Severe bone pain or fractures\n- Neurological symptoms (confusion, lethargy)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum calcium levels (total and ionized)\n- Serum parathyroid hormone (PTH) levels\n- Serum vitamin D levels\n\n### Second-line Investigations\n- 24-hour urinary calcium excretion\n- Bone density scan (DEXA)\n- Renal ultrasound for stones\n\n### Specialist Tests\n- Sestamibi scan for parathyroid adenoma localization\n- CT/MRI for parathyroid imaging if surgery is indicated\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of primary hyperparathyroidism is made with elevated serum calcium and elevated or inappropriately normal PTH levels.\n\n### Key Differential Diagnoses to Exclude\n- Primary hyperparathyroidism\n- Secondary hyperparathyroidism (due to renal failure)\n- Malignancy-related hypercalcemia\n- Vitamin D intoxication\n- Thyrotoxicosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hydration with IV fluids (normal saline)\n- Bisphosphonates (e.g., zoledronic acid) for rapid calcium lowering\n\n#### Second-line Treatments\n- Calcitonin for acute symptomatic hypercalcemia\n\n#### Emergency Procedures\n- Dialysis in cases of severe hypercalcemia with acute kidney injury\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical removal of the parathyroid adenoma (if primary hyperparathyroidism)\n- Monitoring calcium levels and renal function in asymptomatic patients\n\n#### Second-line Treatments\n- Medications such as cinacalcet for symptomatic control or in patients not suitable for surgery\n\n#### Monitoring Requirements\n- Regular serum calcium and PTH levels\n- Bone density assessments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cinacalcet\n- **Mechanism of Action**: Calcimimetic that increases sensitivity of calcium-sensing receptors on parathyroid glands, reducing PTH secretion.\n- **Typical Dosing Range**: Start at 30 mg once daily, may increase to 60 mg or 90 mg based on calcium levels.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, hypocalcemia, dizziness.\n- **When to Use vs. Alternatives**: Useful in patients with secondary hyperparathyroidism or those who are not surgical candidates.\n\n#### Zoledronic acid\n- **Mechanism of Action**: Bisphosphonate that inhibits osteoclast-mediated bone resorption, lowering serum calcium.\n- **Typical Dosing Range**: 4 mg IV over 15 minutes once a year for osteoporosis; for hypercalcemia, may be given as a single dose.\n- **Key Side Effects/Contraindications**: Flu-like symptoms, renal impairment, osteonecrosis of the jaw.\n- **When to Use vs. Alternatives**: Effective for rapid control of hypercalcemia.\n\n### Procedures\n\n#### Parathyroidectomy\n- **What it Involves**: Surgical removal of one or more parathyroid glands.\n- **Indications**: Primary hyperparathyroidism with symptomatic hypercalcemia or significant complications (e.g., osteoporosis, nephrolithiasis).\n- **Key Risks/Complications**: Hypoparathyroidism, bleeding, infection, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, including surgical intervention, the prognosis is excellent, and symptoms often resolve post-surgery. Long-term monitoring is essential to prevent recurrence.\n\n### Important Complications to Watch For\n- Osteoporosis\n- Nephrolithiasis\n- Peptic ulcers\n- Pancreatitis\n- Cardiovascular disease due to prolonged hypercalcemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hyperparathyroidism, perform initial investigations, and manage acute hypercalcemia. They should also understand when to refer to endocrinology or surgery for further management.\n\n### When to Escalate to Senior/Specialist\nRefer to endocrinology for persistent hypercalcemia, symptomatic patients, or if surgery is indicated. Immediate referral to nephrology for severe hypercalcemia with acute kidney injury.\n\n### Key Safety Considerations\nMonitor renal function and electrolytes closely during treatment for hypercalcemia. Be aware of the signs of hypocalcemia post-surgery and manage accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Hyperparathyroidism is a condition characterized by the overproduction of parathyroid hormone (PTH) from the parathyroid glands, leading to elevated serum calcium levels (hypercalcemia).",
+      "epidemiology": "Primary hyperparathyroidism is the most common cause of hypercalcemia in outpatient settings, with a prevalence of approximately 1% in the general population, more common in women and typically diagnosed in individuals aged 50-60 years.",
+      "pathophysiology": "Hyperparathyroidism can be primary (due to adenoma, hyperplasia, or carcinoma of the parathyroid glands), secondary (due to chronic kidney disease or vitamin D deficiency), or tertiary (autonomous PTH secretion after prolonged secondary hyperparathyroidism). Elevated PTH leads to increased bone resorption, renal tubular reabsorption of calcium, and increased intestinal absorption of calcium."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Depression",
+        "Nausea",
+        "Constipation",
+        "Bone pain",
+        "Kidney stones"
+      ],
+      "signs": [
+        "Hypercalcemia on blood tests",
+        "Bone tenderness",
+        "Abdominal tenderness",
+        "Dehydration signs"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic hypercalcemia found incidentally",
+        "Nephrolithiasis without other symptoms",
+        "Osteoporosis in younger patients"
+      ],
+      "redFlags": [
+        "Severe hypercalcemia (>14 mg/dL)",
+        "Acute kidney injury",
+        "Severe bone pain or fractures",
+        "Neurological symptoms (confusion, lethargy)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum calcium levels (total and ionized)",
+        "Serum parathyroid hormone (PTH) levels",
+        "Serum vitamin D levels"
+      ],
+      "secondLine": [
+        "24-hour urinary calcium excretion",
+        "Bone density scan (DEXA)",
+        "Renal ultrasound for stones"
+      ],
+      "specialistTests": [
+        "Sestamibi scan for parathyroid adenoma localization",
+        "CT/MRI for parathyroid imaging if surgery is indicated"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of primary hyperparathyroidism is made with elevated serum calcium and elevated or inappropriately normal PTH levels.",
+      "differentials": [
+        "Primary hyperparathyroidism",
+        "Secondary hyperparathyroidism (due to renal failure)",
+        "Malignancy-related hypercalcemia",
+        "Vitamin D intoxication",
+        "Thyrotoxicosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hydration with IV fluids (normal saline)",
+          "Bisphosphonates (e.g., zoledronic acid) for rapid calcium lowering"
+        ],
+        "secondLine": [
+          "Calcitonin for acute symptomatic hypercalcemia"
+        ],
+        "procedures": [
+          "Dialysis in cases of severe hypercalcemia with acute kidney injury"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical removal of the parathyroid adenoma (if primary hyperparathyroidism)",
+          "Monitoring calcium levels and renal function in asymptomatic patients"
+        ],
+        "secondLine": [
+          "Medications such as cinacalcet for symptomatic control or in patients not suitable for surgery"
+        ],
+        "monitoring": [
+          "Regular serum calcium and PTH levels",
+          "Bone density assessments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cinacalcet",
+          "mechanism": "Calcimimetic that increases sensitivity of calcium-sensing receptors on parathyroid glands, reducing PTH secretion.",
+          "dosing": "Start at 30 mg once daily, may increase to 60 mg or 90 mg based on calcium levels.",
+          "sideEffects": "Nausea, vomiting, hypocalcemia, dizziness.",
+          "notes": "Useful in patients with secondary hyperparathyroidism or those who are not surgical candidates."
+        },
+        {
+          "name": "Zoledronic acid",
+          "mechanism": "Bisphosphonate that inhibits osteoclast-mediated bone resorption, lowering serum calcium.",
+          "dosing": "4 mg IV over 15 minutes once a year for osteoporosis; for hypercalcemia, may be given as a single dose.",
+          "sideEffects": "Flu-like symptoms, renal impairment, osteonecrosis of the jaw.",
+          "notes": "Effective for rapid control of hypercalcemia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Parathyroidectomy",
+          "description": "Surgical removal of one or more parathyroid glands.",
+          "indications": "Primary hyperparathyroidism with symptomatic hypercalcemia or significant complications (e.g., osteoporosis, nephrolithiasis).",
+          "risks": "Hypoparathyroidism, bleeding, infection, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, including surgical intervention, the prognosis is excellent, and symptoms often resolve post-surgery. Long-term monitoring is essential to prevent recurrence.",
+    "complications": [
+      "Osteoporosis",
+      "Nephrolithiasis",
+      "Peptic ulcers",
+      "Pancreatitis",
+      "Cardiovascular disease due to prolonged hypercalcemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hyperparathyroidism, perform initial investigations, and manage acute hypercalcemia. They should also understand when to refer to endocrinology or surgery for further management.",
+    "escalation": "Refer to endocrinology for persistent hypercalcemia, symptomatic patients, or if surgery is indicated. Immediate referral to nephrology for severe hypercalcemia with acute kidney injury.",
+    "keySafetyConsiderations": "Monitor renal function and electrolytes closely during treatment for hypercalcemia. Be aware of the signs of hypocalcemia post-surgery and manage accordingly."
+  }
+}

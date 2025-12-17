@@ -1,0 +1,119 @@
+{
+  "id": "metatarsal_stress_fracture",
+  "name": "Metatarsal stress fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:25:34.746526",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Metatarsal stress fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA metatarsal stress fracture is a small crack in one of the metatarsal bones of the foot, typically resulting from repetitive stress or overuse, often seen in athletes or individuals with increased physical activity.\n\n### Epidemiology\nMetatarsal stress fractures are common in athletes, particularly runners and dancers, with a higher incidence in females. They account for approximately 10-15% of all stress fractures.\n\n### Essential Pathophysiology\nStress fractures occur when the cumulative load on the bone exceeds its ability to remodel and repair itself. This imbalance leads to microdamage and eventual fracture, often exacerbated by factors such as poor footwear, sudden increases in activity, or underlying bone density issues.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Localized pain in the midfoot that worsens with activity and improves with rest.\n- Swelling and tenderness over the affected metatarsal.\n- Pain during weight-bearing activities.\n\n### Key Signs\n- Point tenderness over the metatarsal bone.\n- Swelling may be present.\n- Possible bruising in some cases.\n\n### Atypical Presentations\n- Pain may be referred to adjacent areas, such as the toes or ankle.\n- Symptoms may initially be mild and worsen gradually.\n\n### Red Flags Requiring Immediate Action\n- Severe, persistent pain that does not improve with rest.\n- Signs of infection (fever, redness, warmth, drainage).\n- Inability to bear weight on the affected foot.\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking.\n- X-ray of the foot (may be normal in early stages).\n\n### Second-line Investigations\n- MRI of the foot (sensitive for detecting stress fractures).\n- Bone scan (useful if MRI is unavailable).\n\n### Specialist Tests\n- CT scan (rarely needed, but can provide detailed imaging if diagnosis is uncertain).\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. A history of repetitive stress, localized pain, and tenderness over the metatarsal, along with imaging that may show a fracture line or bone marrow edema, confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Acute metatarsal fracture (traumatic).\n- Tendinopathy or ligament injury.\n- Neuroma or other soft tissue injuries.\n- Osteoarthritis of the metatarsophalangeal joint.\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification (avoid weight-bearing activities).\n- Ice application to reduce swelling.\n\n#### Second-line Treatments\n- Use of a stiff-soled shoe or walking boot to offload the metatarsal.\n\n#### Emergency Procedures\n- Consideration of orthopedic referral for severe cases or if conservative management fails.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Gradual return to activity with a focus on low-impact exercises.\n- Physical therapy to strengthen surrounding muscles.\n\n#### Second-line Treatments\n- Custom orthotics to correct biomechanical issues.\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing and adjust activity levels.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### NSAIDs (e.g., Ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory and analgesic effects.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues or gastrointestinal history.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic and antipyretic.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, not exceeding 3000 mg/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, generally well-tolerated.\n- **When to Use vs. Alternatives**: Preferred for patients with contraindications to NSAIDs.\n\n### Procedures\n\n#### Orthopedic referral\n- **What it Involves**: Referral to an orthopedic specialist for further evaluation and management if conservative treatment fails or if there are complications.\n- **Indications**: Persistent pain, inability to bear weight, or suspicion of non-union.\n- **Key Risks/Complications**: Delay in treatment, potential for chronic pain or complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost metatarsal stress fractures heal within 6-8 weeks with appropriate management. Return to full activity may take longer depending on the severity and compliance with treatment.\n\n### Important Complications to Watch For\n- Non-union or delayed healing.\n- Chronic pain or instability in the foot.\n- Increased risk of future stress fractures.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, and ensure appropriate imaging is obtained. They should also monitor for complications and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopedic services if there is no improvement after 4-6 weeks of conservative management, or if there are signs of complications such as infection or non-union.\n\n### Key Safety Considerations\nEnsure proper patient education on activity modification and the importance of adherence to treatment. Monitor for signs of complications and ensure timely referrals to specialists.\n",
+  "content": {
+    "overview": {
+      "definition": "A metatarsal stress fracture is a small crack in one of the metatarsal bones of the foot, typically resulting from repetitive stress or overuse, often seen in athletes or individuals with increased physical activity.",
+      "epidemiology": "Metatarsal stress fractures are common in athletes, particularly runners and dancers, with a higher incidence in females. They account for approximately 10-15% of all stress fractures.",
+      "pathophysiology": "Stress fractures occur when the cumulative load on the bone exceeds its ability to remodel and repair itself. This imbalance leads to microdamage and eventual fracture, often exacerbated by factors such as poor footwear, sudden increases in activity, or underlying bone density issues."
+    },
+    "recognition": {
+      "symptoms": [
+        "Localized pain in the midfoot that worsens with activity and improves with rest.",
+        "Swelling and tenderness over the affected metatarsal.",
+        "Pain during weight-bearing activities."
+      ],
+      "signs": [
+        "Point tenderness over the metatarsal bone.",
+        "Swelling may be present.",
+        "Possible bruising in some cases."
+      ],
+      "atypicalPresentations": [
+        "Pain may be referred to adjacent areas, such as the toes or ankle.",
+        "Symptoms may initially be mild and worsen gradually."
+      ],
+      "redFlags": [
+        "Severe, persistent pain that does not improve with rest.",
+        "Signs of infection (fever, redness, warmth, drainage).",
+        "Inability to bear weight on the affected foot."
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking.",
+        "X-ray of the foot (may be normal in early stages)."
+      ],
+      "secondLine": [
+        "MRI of the foot (sensitive for detecting stress fractures).",
+        "Bone scan (useful if MRI is unavailable)."
+      ],
+      "specialistTests": [
+        "CT scan (rarely needed, but can provide detailed imaging if diagnosis is uncertain)."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. A history of repetitive stress, localized pain, and tenderness over the metatarsal, along with imaging that may show a fracture line or bone marrow edema, confirms the diagnosis.",
+      "differentials": [
+        "Acute metatarsal fracture (traumatic).",
+        "Tendinopathy or ligament injury.",
+        "Neuroma or other soft tissue injuries.",
+        "Osteoarthritis of the metatarsophalangeal joint."
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification (avoid weight-bearing activities).",
+          "Ice application to reduce swelling."
+        ],
+        "secondLine": [
+          "Use of a stiff-soled shoe or walking boot to offload the metatarsal."
+        ],
+        "procedures": [
+          "Consideration of orthopedic referral for severe cases or if conservative management fails."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Gradual return to activity with a focus on low-impact exercises.",
+          "Physical therapy to strengthen surrounding muscles."
+        ],
+        "secondLine": [
+          "Custom orthotics to correct biomechanical issues."
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing and adjust activity levels."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "NSAIDs (e.g., Ibuprofen)",
+          "mechanism": "Anti-inflammatory and analgesic effects.",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use with caution in patients with renal issues or gastrointestinal history."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic and antipyretic.",
+          "dosing": "500-1000 mg every 4-6 hours as needed, not exceeding 3000 mg/day.",
+          "sideEffects": "Liver toxicity in overdose, generally well-tolerated.",
+          "notes": "Preferred for patients with contraindications to NSAIDs."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Orthopedic referral",
+          "description": "Referral to an orthopedic specialist for further evaluation and management if conservative treatment fails or if there are complications.",
+          "indications": "Persistent pain, inability to bear weight, or suspicion of non-union.",
+          "risks": "Delay in treatment, potential for chronic pain or complications."
+        }
+      ]
+    },
+    "prognosis": "Most metatarsal stress fractures heal within 6-8 weeks with appropriate management. Return to full activity may take longer depending on the severity and compliance with treatment.",
+    "complications": [
+      "Non-union or delayed healing.",
+      "Chronic pain or instability in the foot.",
+      "Increased risk of future stress fractures."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, and ensure appropriate imaging is obtained. They should also monitor for complications and refer to specialists when necessary.",
+    "escalation": "Refer to orthopedic services if there is no improvement after 4-6 weeks of conservative management, or if there are signs of complications such as infection or non-union.",
+    "keySafetyConsiderations": "Ensure proper patient education on activity modification and the importance of adherence to treatment. Monitor for signs of complications and ensure timely referrals to specialists."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "syncope",
+  "name": "Syncope",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:54:06.095270",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Syncope: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSyncope is a transient loss of consciousness and postural tone due to a temporary reduction in cerebral blood flow, characterized by rapid onset, short duration, and spontaneous recovery.\n\n### Epidemiology\nSyncope affects approximately 6% of the population annually, with a higher incidence in the elderly and those with underlying cardiovascular or neurological conditions.\n\n### Essential Pathophysiology\nThe pathophysiology of syncope can be categorized into three main types: vasovagal (neurocardiogenic), orthostatic hypotension, and cardiac causes. Vasovagal syncope is due to a reflex-mediated drop in heart rate and blood pressure, while orthostatic hypotension occurs when there is inadequate compensatory response to postural changes. Cardiac causes include arrhythmias and structural heart disease leading to decreased cardiac output.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Transient loss of consciousness\n- Dizziness or lightheadedness prior to syncope\n- Nausea\n- Palpitations\n\n### Key Signs\n- Pallor\n- Sweating\n- Bradycardia or tachycardia\n- Hypotension\n\n### Atypical Presentations\n- Syncope during exertion (suggestive of cardiac cause)\n- Prolonged postictal state (suggestive of seizure)\n- Syncope with associated chest pain or dyspnea\n\n### Red Flags Requiring Immediate Action\n- Syncope with exertion\n- Recurrent episodes of syncope\n- Family history of sudden cardiac death\n- Associated neurological symptoms (e.g., weakness, confusion)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Blood pressure measurement (lying and standing)\n- Basic blood tests (CBC, electrolytes, glucose)\n\n### Second-line Investigations\n- Echocardiogram\n- Holter monitor (24-hour ECG)\n- Tilt table test\n\n### Specialist Tests\n- Electrophysiological studies\n- MRI of the brain (if neurological cause suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of syncope is primarily clinical, based on history, physical examination, and exclusion of other causes. The presence of characteristic features (e.g., rapid onset, brief duration, spontaneous recovery) supports the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Seizure\n- Transient ischemic attack (TIA)\n- Hypoglycemia\n- Stroke\n- Cardiac arrhythmias\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Position the patient supine with legs elevated\n- Administer IV fluids if hypotensive\n- Monitor vital signs and ECG\n\n#### Second-line Treatments\n- Administer atropine for bradycardia\n- Consider IV glucose if hypoglycemia is suspected\n\n#### Emergency Procedures\n- Cardiac monitoring (if arrhythmia suspected)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Patient education on triggers and lifestyle modifications (e.g., hydration, avoiding prolonged standing)\n- Consider beta-blockers for recurrent vasovagal syncope\n\n#### Second-line Treatments\n- Referral to cardiology for further evaluation and management of underlying cardiac conditions\n\n#### Monitoring Requirements\n- Regular follow-up to assess frequency and severity of episodes\n- Monitor for new symptoms or changes in pattern\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Atropine\n- **Mechanism of Action**: Anticholinergic agent that increases heart rate by blocking vagal effects on the heart.\n- **Typical Dosing Range**: 0.5 mg IV every 3-5 minutes as needed, up to a total of 3 mg.\n- **Key Side Effects/Contraindications**: Dry mouth, blurred vision, urinary retention, tachycardia.\n- **When to Use vs. Alternatives**: Use with caution in patients with glaucoma or urinary retention.\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and myocardial oxygen demand, may help in vasovagal syncope.\n- **Typical Dosing Range**: Start with low doses (e.g., Propranolol 10-20 mg orally once daily) and titrate as needed.\n- **Key Side Effects/Contraindications**: Fatigue, bradycardia, hypotension, depression.\n- **When to Use vs. Alternatives**: Contraindicated in asthma and certain heart block types.\n\n### Procedures\n\n#### Tilt Table Test\n- **What it Involves**: A test to assess the body's response to changes in position, simulating standing up from a lying position.\n- **Indications**: Recurrent unexplained syncope, particularly if vasovagal syncope is suspected.\n- **Key Risks/Complications**: Rarely, may induce syncope during the test, leading to injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of syncope varies depending on the underlying cause. Vasovagal syncope is generally benign, while syncope due to cardiac causes may have a higher risk of morbidity and mortality.\n\n### Important Complications to Watch For\n- Injury from falls during syncope\n- Psychosocial impact (anxiety, fear of recurrence)\n- Increased risk of future cardiovascular events in certain populations\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, including history and physical examination, order appropriate investigations, and manage acute episodes. They should also educate patients on lifestyle modifications and recognize when to escalate care.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician or cardiology if syncope is recurrent, associated with concerning features, or if the cause remains unclear after initial evaluation.\n\n### Key Safety Considerations\nEnsure patient safety during episodes (e.g., prevent falls), monitor vital signs closely, and provide clear discharge instructions regarding activity restrictions and follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Syncope is a transient loss of consciousness and postural tone due to a temporary reduction in cerebral blood flow, characterized by rapid onset, short duration, and spontaneous recovery.",
+      "epidemiology": "Syncope affects approximately 6% of the population annually, with a higher incidence in the elderly and those with underlying cardiovascular or neurological conditions.",
+      "pathophysiology": "The pathophysiology of syncope can be categorized into three main types: vasovagal (neurocardiogenic), orthostatic hypotension, and cardiac causes. Vasovagal syncope is due to a reflex-mediated drop in heart rate and blood pressure, while orthostatic hypotension occurs when there is inadequate compensatory response to postural changes. Cardiac causes include arrhythmias and structural heart disease leading to decreased cardiac output."
+    },
+    "recognition": {
+      "symptoms": [
+        "Transient loss of consciousness",
+        "Dizziness or lightheadedness prior to syncope",
+        "Nausea",
+        "Palpitations"
+      ],
+      "signs": [
+        "Pallor",
+        "Sweating",
+        "Bradycardia or tachycardia",
+        "Hypotension"
+      ],
+      "atypicalPresentations": [
+        "Syncope during exertion (suggestive of cardiac cause)",
+        "Prolonged postictal state (suggestive of seizure)",
+        "Syncope with associated chest pain or dyspnea"
+      ],
+      "redFlags": [
+        "Syncope with exertion",
+        "Recurrent episodes of syncope",
+        "Family history of sudden cardiac death",
+        "Associated neurological symptoms (e.g., weakness, confusion)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Blood pressure measurement (lying and standing)",
+        "Basic blood tests (CBC, electrolytes, glucose)"
+      ],
+      "secondLine": [
+        "Echocardiogram",
+        "Holter monitor (24-hour ECG)",
+        "Tilt table test"
+      ],
+      "specialistTests": [
+        "Electrophysiological studies",
+        "MRI of the brain (if neurological cause suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of syncope is primarily clinical, based on history, physical examination, and exclusion of other causes. The presence of characteristic features (e.g., rapid onset, brief duration, spontaneous recovery) supports the diagnosis.",
+      "differentials": [
+        "Seizure",
+        "Transient ischemic attack (TIA)",
+        "Hypoglycemia",
+        "Stroke",
+        "Cardiac arrhythmias"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Position the patient supine with legs elevated",
+          "Administer IV fluids if hypotensive",
+          "Monitor vital signs and ECG"
+        ],
+        "secondLine": [
+          "Administer atropine for bradycardia",
+          "Consider IV glucose if hypoglycemia is suspected"
+        ],
+        "procedures": [
+          "Cardiac monitoring (if arrhythmia suspected)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Patient education on triggers and lifestyle modifications (e.g., hydration, avoiding prolonged standing)",
+          "Consider beta-blockers for recurrent vasovagal syncope"
+        ],
+        "secondLine": [
+          "Referral to cardiology for further evaluation and management of underlying cardiac conditions"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess frequency and severity of episodes",
+          "Monitor for new symptoms or changes in pattern"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Atropine",
+          "mechanism": "Anticholinergic agent that increases heart rate by blocking vagal effects on the heart.",
+          "dosing": "0.5 mg IV every 3-5 minutes as needed, up to a total of 3 mg.",
+          "sideEffects": "Dry mouth, blurred vision, urinary retention, tachycardia.",
+          "notes": "Use with caution in patients with glaucoma or urinary retention."
+        },
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and myocardial oxygen demand, may help in vasovagal syncope.",
+          "dosing": "Start with low doses (e.g., Propranolol 10-20 mg orally once daily) and titrate as needed.",
+          "sideEffects": "Fatigue, bradycardia, hypotension, depression.",
+          "notes": "Contraindicated in asthma and certain heart block types."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tilt Table Test",
+          "description": "A test to assess the body's response to changes in position, simulating standing up from a lying position.",
+          "indications": "Recurrent unexplained syncope, particularly if vasovagal syncope is suspected.",
+          "risks": "Rarely, may induce syncope during the test, leading to injury."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of syncope varies depending on the underlying cause. Vasovagal syncope is generally benign, while syncope due to cardiac causes may have a higher risk of morbidity and mortality.",
+    "complications": [
+      "Injury from falls during syncope",
+      "Psychosocial impact (anxiety, fear of recurrence)",
+      "Increased risk of future cardiovascular events in certain populations"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, including history and physical examination, order appropriate investigations, and manage acute episodes. They should also educate patients on lifestyle modifications and recognize when to escalate care.",
+    "escalation": "Refer to a senior clinician or cardiology if syncope is recurrent, associated with concerning features, or if the cause remains unclear after initial evaluation.",
+    "keySafetyConsiderations": "Ensure patient safety during episodes (e.g., prevent falls), monitor vital signs closely, and provide clear discharge instructions regarding activity restrictions and follow-up."
+  }
+}

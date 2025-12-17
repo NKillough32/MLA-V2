@@ -1,0 +1,140 @@
+{
+  "id": "acute_pancreatitis",
+  "name": "Acute pancreatitis",
+  "domains": [
+    "Gastrointestinal",
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T19:40:56.442904",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute pancreatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute pancreatitis is an inflammatory condition of the pancreas characterized by the sudden onset of abdominal pain, often associated with elevated pancreatic enzymes in the blood.\n\n### Epidemiology\nThe incidence of acute pancreatitis is approximately 5-80 cases per 100,000 people per year, with a higher prevalence in males and individuals aged 30-70 years. Common causes include gallstones and alcohol consumption.\n\n### Essential Pathophysiology\nAcute pancreatitis occurs when pancreatic enzymes become activated within the pancreas, leading to autodigestion of pancreatic tissue. This can be triggered by factors such as gallstones, alcohol, medications, and infections.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe epigastric pain that may radiate to the back\n- Nausea and vomiting\n- Abdominal distension\n- Fever\n- Tachycardia\n\n### Key Signs\n- Tenderness in the epigastric region\n- Guarding or rigidity of the abdomen\n- Decreased bowel sounds\n- Jaundice (if biliary obstruction is present)\n\n### Atypical Presentations\n- Pain may be less severe in elderly patients\n- Presentation with shock or altered mental status in severe cases\n\n### Red Flags Requiring Immediate Action\n- Persistent severe abdominal pain\n- Signs of shock (hypotension, tachycardia)\n- Jaundice\n- Signs of peritonitis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum amylase and lipase (lipase is more specific)\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Electrolytes\n\n### Second-line Investigations\n- Abdominal ultrasound (to check for gallstones)\n- CT abdomen (if diagnosis is uncertain or to assess severity)\n- MRI (if biliary obstruction is suspected)\n\n### Specialist Tests\n- Endoscopic retrograde cholangiopancreatography (ERCP) for suspected biliary obstruction\n- Pancreatic function tests (in chronic cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of acute pancreatitis is based on two of the following three criteria: 1) Characteristic abdominal pain, 2) Elevated serum lipase/amylase levels greater than three times the upper limit of normal, 3) Imaging findings consistent with pancreatitis (e.g., CT or ultrasound).\n\n### Key Differential Diagnoses to Exclude\n- Cholecystitis\n- Peptic ulcer disease\n- Mesenteric ischemia\n- Abdominal aortic aneurysm\n- Gastroenteritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (IV fluids, pain management)\n- NPO (nothing by mouth) until pain resolves\n\n#### Second-line Treatments\n- Nutritional support (enteral feeding if prolonged NPO)\n- Consider antibiotics if infected necrosis is suspected\n\n#### Emergency Procedures\n- ERCP for gallstone removal if obstructive jaundice is present\n- Surgical intervention for necrotizing pancreatitis or complications\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (alcohol cessation, dietary changes)\n- Pain management\n\n#### Second-line Treatments\n- Pancreatic enzyme replacement therapy (if malabsorption occurs)\n- Surgical options for complications (e.g., pseudocyst drainage)\n\n#### Monitoring Requirements\n- Regular follow-up for complications and nutritional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics (e.g., paracetamol, opioids)\n- **Mechanism of Action**: Pain relief through central and peripheral mechanisms\n- **Typical Dosing Range**: Paracetamol 1g every 6 hours; opioids as per pain severity\n- **Key Side Effects/Contraindications**: Nausea, constipation, sedation (opioids)\n- **When to Use vs. Alternatives**: Use cautiously in patients with liver disease.\n\n#### Antibiotics (e.g., piperacillin-tazobactam)\n- **Mechanism of Action**: Broad-spectrum coverage for potential infections\n- **Typical Dosing Range**: Piperacillin-tazobactam 4.5g IV every 6 hours\n- **Key Side Effects/Contraindications**: Diarrhea, allergic reactions, renal impairment\n- **When to Use vs. Alternatives**: Use in cases of infected necrosis.\n\n### Procedures\n\n#### Endoscopic retrograde cholangiopancreatography (ERCP)\n- **What it Involves**: A procedure to visualize and treat biliary obstructions using endoscopy and fluoroscopy.\n- **Indications**: Suspected choledocholithiasis or biliary obstruction causing pancreatitis.\n- **Key Risks/Complications**: Pancreatitis, bleeding, perforation, infection.\n\n#### Surgical necrosectomy\n- **What it Involves**: Surgical removal of necrotic pancreatic tissue.\n- **Indications**: Severe necrotizing pancreatitis with infection or complications.\n- **Key Risks/Complications**: Infection, bleeding, organ failure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of acute pancreatitis varies; mild cases often resolve with supportive care, while severe cases can lead to complications and a higher mortality rate (up to 30%).\n\n### Important Complications to Watch For\n- Pancreatic necrosis\n- Pseudocyst formation\n- Infection (e.g., infected pancreatic necrosis)\n- Systemic inflammatory response syndrome (SIRS)\n- Multi-organ failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage supportive care, monitor vital signs, and recognize complications. They should also communicate effectively with the surgical and gastroenterology teams for further management.\n\n### When to Escalate to Senior/Specialist\nEscalate care if the patient shows signs of deterioration, such as persistent hypotension, altered mental status, or severe abdominal pain despite treatment.\n\n### Key Safety Considerations\nEnsure adequate fluid resuscitation, monitor for signs of infection or complications, and maintain communication with senior staff regarding patient status.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute pancreatitis is an inflammatory condition of the pancreas characterized by the sudden onset of abdominal pain, often associated with elevated pancreatic enzymes in the blood.",
+      "epidemiology": "The incidence of acute pancreatitis is approximately 5-80 cases per 100,000 people per year, with a higher prevalence in males and individuals aged 30-70 years. Common causes include gallstones and alcohol consumption.",
+      "pathophysiology": "Acute pancreatitis occurs when pancreatic enzymes become activated within the pancreas, leading to autodigestion of pancreatic tissue. This can be triggered by factors such as gallstones, alcohol, medications, and infections."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe epigastric pain that may radiate to the back",
+        "Nausea and vomiting",
+        "Abdominal distension",
+        "Fever",
+        "Tachycardia"
+      ],
+      "signs": [
+        "Tenderness in the epigastric region",
+        "Guarding or rigidity of the abdomen",
+        "Decreased bowel sounds",
+        "Jaundice (if biliary obstruction is present)"
+      ],
+      "atypicalPresentations": [
+        "Pain may be less severe in elderly patients",
+        "Presentation with shock or altered mental status in severe cases"
+      ],
+      "redFlags": [
+        "Persistent severe abdominal pain",
+        "Signs of shock (hypotension, tachycardia)",
+        "Jaundice",
+        "Signs of peritonitis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum amylase and lipase (lipase is more specific)",
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Electrolytes"
+      ],
+      "secondLine": [
+        "Abdominal ultrasound (to check for gallstones)",
+        "CT abdomen (if diagnosis is uncertain or to assess severity)",
+        "MRI (if biliary obstruction is suspected)"
+      ],
+      "specialistTests": [
+        "Endoscopic retrograde cholangiopancreatography (ERCP) for suspected biliary obstruction",
+        "Pancreatic function tests (in chronic cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of acute pancreatitis is based on two of the following three criteria: 1) Characteristic abdominal pain, 2) Elevated serum lipase/amylase levels greater than three times the upper limit of normal, 3) Imaging findings consistent with pancreatitis (e.g., CT or ultrasound).",
+      "differentials": [
+        "Cholecystitis",
+        "Peptic ulcer disease",
+        "Mesenteric ischemia",
+        "Abdominal aortic aneurysm",
+        "Gastroenteritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (IV fluids, pain management)",
+          "NPO (nothing by mouth) until pain resolves"
+        ],
+        "secondLine": [
+          "Nutritional support (enteral feeding if prolonged NPO)",
+          "Consider antibiotics if infected necrosis is suspected"
+        ],
+        "procedures": [
+          "ERCP for gallstone removal if obstructive jaundice is present",
+          "Surgical intervention for necrotizing pancreatitis or complications"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (alcohol cessation, dietary changes)",
+          "Pain management"
+        ],
+        "secondLine": [
+          "Pancreatic enzyme replacement therapy (if malabsorption occurs)",
+          "Surgical options for complications (e.g., pseudocyst drainage)"
+        ],
+        "monitoring": [
+          "Regular follow-up for complications and nutritional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics (e.g., paracetamol, opioids)",
+          "mechanism": "Pain relief through central and peripheral mechanisms",
+          "dosing": "Paracetamol 1g every 6 hours; opioids as per pain severity",
+          "sideEffects": "Nausea, constipation, sedation (opioids)",
+          "notes": "Use cautiously in patients with liver disease."
+        },
+        {
+          "name": "Antibiotics (e.g., piperacillin-tazobactam)",
+          "mechanism": "Broad-spectrum coverage for potential infections",
+          "dosing": "Piperacillin-tazobactam 4.5g IV every 6 hours",
+          "sideEffects": "Diarrhea, allergic reactions, renal impairment",
+          "notes": "Use in cases of infected necrosis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endoscopic retrograde cholangiopancreatography (ERCP)",
+          "description": "A procedure to visualize and treat biliary obstructions using endoscopy and fluoroscopy.",
+          "indications": "Suspected choledocholithiasis or biliary obstruction causing pancreatitis.",
+          "risks": "Pancreatitis, bleeding, perforation, infection."
+        },
+        {
+          "name": "Surgical necrosectomy",
+          "description": "Surgical removal of necrotic pancreatic tissue.",
+          "indications": "Severe necrotizing pancreatitis with infection or complications.",
+          "risks": "Infection, bleeding, organ failure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of acute pancreatitis varies; mild cases often resolve with supportive care, while severe cases can lead to complications and a higher mortality rate (up to 30%).",
+    "complications": [
+      "Pancreatic necrosis",
+      "Pseudocyst formation",
+      "Infection (e.g., infected pancreatic necrosis)",
+      "Systemic inflammatory response syndrome (SIRS)",
+      "Multi-organ failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage supportive care, monitor vital signs, and recognize complications. They should also communicate effectively with the surgical and gastroenterology teams for further management.",
+    "escalation": "Escalate care if the patient shows signs of deterioration, such as persistent hypotension, altered mental status, or severe abdominal pain despite treatment.",
+    "keySafetyConsiderations": "Ensure adequate fluid resuscitation, monitor for signs of infection or complications, and maintain communication with senior staff regarding patient status."
+  }
+}

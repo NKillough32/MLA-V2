@@ -1,0 +1,152 @@
+{
+  "id": "erythroderma",
+  "name": "Erythroderma",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:16:10.713879",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Erythroderma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nErythroderma is a severe inflammatory skin condition characterized by widespread redness and scaling of the skin, affecting more than 90% of the body surface area.\n\n### Epidemiology\nErythroderma can occur in any age group but is more common in adults, particularly males. It can be associated with pre-existing skin conditions such as psoriasis, eczema, or dermatitis, and can also be triggered by drug reactions or systemic diseases.\n\n### Essential Pathophysiology\nThe pathophysiology of erythroderma involves an exaggerated inflammatory response, leading to increased vascular permeability, edema, and desquamation of the skin. This can result from various underlying conditions, including autoimmune diseases, malignancies, or infections.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe itching (pruritus)\n- Burning sensation\n- Flaking or peeling skin\n- Fever and chills\n- Fatigue\n\n### Key Signs\n- Widespread erythema\n- Scaling of the skin\n- Lymphadenopathy\n- Nail changes (e.g., pitting, onycholysis)\n- Signs of dehydration (e.g., dry mucous membranes)\n\n### Atypical Presentations\n- Erythema without scaling\n- Localized patches of erythroderma\n- Associated systemic symptoms (e.g., weight loss, night sweats)\n\n### Red Flags Requiring Immediate Action\n- Rapid onset of erythroderma\n- Signs of infection (e.g., fever, purulent discharge)\n- Severe systemic symptoms (e.g., hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Full blood count (FBC)\n- Liver function tests (LFTs)\n- Renal function tests (RFTs)\n- Electrolytes\n- Skin biopsy (if indicated)\n\n### Second-line Investigations\n- Serum immunoglobulins\n- HIV test\n- Thyroid function tests\n- Autoantibody panel (e.g., ANA, anti-dsDNA)\n\n### Specialist Tests\n- Dermatology referral for skin biopsy and histopathology\n- Patch testing for drug reactions\n- Imaging studies if systemic involvement is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of widespread erythema and scaling, along with exclusion of other conditions. A skin biopsy may be performed to confirm the diagnosis and rule out other dermatoses.\n\n### Key Differential Diagnoses to Exclude\n- Psoriasis\n- Atopic dermatitis\n- Seborrheic dermatitis\n- Drug-induced erythroderma\n- Cutaneous T-cell lymphoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous fluids for hydration\n- Topical emollients and corticosteroids\n- Antihistamines for pruritus\n\n#### Second-line Treatments\n- Systemic corticosteroids (e.g., prednisone)\n- Immunosuppressants (e.g., methotrexate)\n\n#### Emergency Procedures\n- Wound care for secondary infections\n- Phototherapy (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Topical corticosteroids\n- Emollients and moisturizers\n- Systemic agents (e.g., methotrexate, cyclosporine)\n\n#### Second-line Treatments\n- Biologics (e.g., TNF inhibitors)\n- Retinoids (e.g., acitretin)\n\n#### Monitoring Requirements\n- Regular follow-up for skin condition and side effects of medications\n- Monitoring for signs of systemic involvement\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial dose: 0.5-1 mg/kg/day, tapering based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, osteoporosis, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially with long-term use.\n\n#### Methotrexate\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis, reducing inflammation.\n- **Typical Dosing Range**: Initial dose: 10-25 mg weekly, adjusted based on response.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, teratogenic effects.\n- **When to Use vs. Alternatives**: Regular monitoring of liver function and blood counts required.\n\n#### Cyclosporine\n- **Mechanism of Action**: Immunosuppressant that inhibits T-cell activation.\n- **Typical Dosing Range**: Initial dose: 2.5-5 mg/kg/day, adjusted based on response.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, hypertension, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor renal function and blood pressure.\n\n### Procedures\n\n#### Skin biopsy\n- **What it Involves**: A small sample of skin is removed for histopathological examination.\n- **Indications**: To confirm diagnosis and rule out malignancy or other dermatoses.\n- **Key Risks/Complications**: Infection, scarring, bleeding.\n\n#### Phototherapy\n- **What it Involves**: Use of ultraviolet light to reduce inflammation and scaling.\n- **Indications**: Severe cases unresponsive to topical treatments.\n- **Key Risks/Complications**: Skin burns, increased risk of skin cancer.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of erythroderma varies depending on the underlying cause. With appropriate management, many patients can achieve significant improvement, but some may have chronic or recurrent disease.\n\n### Important Complications to Watch For\n- Secondary infections (e.g., cellulitis)\n- Dehydration and electrolyte imbalances\n- Hypothermia\n- Nutritional deficiencies due to malabsorption\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize erythroderma, initiate appropriate investigations, manage acute symptoms, and refer to dermatology for further evaluation and treatment.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with erythroderma and shows signs of systemic involvement (e.g., fever, hypotension), escalate care to a senior clinician and consider admission for intravenous fluids and monitoring.\n\n### Key Safety Considerations\nMonitor for signs of infection, dehydration, and electrolyte imbalances. Be vigilant for potential side effects of systemic medications, especially corticosteroids and immunosuppressants.\n",
+  "content": {
+    "overview": {
+      "definition": "Erythroderma is a severe inflammatory skin condition characterized by widespread redness and scaling of the skin, affecting more than 90% of the body surface area.",
+      "epidemiology": "Erythroderma can occur in any age group but is more common in adults, particularly males. It can be associated with pre-existing skin conditions such as psoriasis, eczema, or dermatitis, and can also be triggered by drug reactions or systemic diseases.",
+      "pathophysiology": "The pathophysiology of erythroderma involves an exaggerated inflammatory response, leading to increased vascular permeability, edema, and desquamation of the skin. This can result from various underlying conditions, including autoimmune diseases, malignancies, or infections."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe itching (pruritus)",
+        "Burning sensation",
+        "Flaking or peeling skin",
+        "Fever and chills",
+        "Fatigue"
+      ],
+      "signs": [
+        "Widespread erythema",
+        "Scaling of the skin",
+        "Lymphadenopathy",
+        "Nail changes (e.g., pitting, onycholysis)",
+        "Signs of dehydration (e.g., dry mucous membranes)"
+      ],
+      "atypicalPresentations": [
+        "Erythema without scaling",
+        "Localized patches of erythroderma",
+        "Associated systemic symptoms (e.g., weight loss, night sweats)"
+      ],
+      "redFlags": [
+        "Rapid onset of erythroderma",
+        "Signs of infection (e.g., fever, purulent discharge)",
+        "Severe systemic symptoms (e.g., hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Full blood count (FBC)",
+        "Liver function tests (LFTs)",
+        "Renal function tests (RFTs)",
+        "Electrolytes",
+        "Skin biopsy (if indicated)"
+      ],
+      "secondLine": [
+        "Serum immunoglobulins",
+        "HIV test",
+        "Thyroid function tests",
+        "Autoantibody panel (e.g., ANA, anti-dsDNA)"
+      ],
+      "specialistTests": [
+        "Dermatology referral for skin biopsy and histopathology",
+        "Patch testing for drug reactions",
+        "Imaging studies if systemic involvement is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of widespread erythema and scaling, along with exclusion of other conditions. A skin biopsy may be performed to confirm the diagnosis and rule out other dermatoses.",
+      "differentials": [
+        "Psoriasis",
+        "Atopic dermatitis",
+        "Seborrheic dermatitis",
+        "Drug-induced erythroderma",
+        "Cutaneous T-cell lymphoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous fluids for hydration",
+          "Topical emollients and corticosteroids",
+          "Antihistamines for pruritus"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids (e.g., prednisone)",
+          "Immunosuppressants (e.g., methotrexate)"
+        ],
+        "procedures": [
+          "Wound care for secondary infections",
+          "Phototherapy (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Topical corticosteroids",
+          "Emollients and moisturizers",
+          "Systemic agents (e.g., methotrexate, cyclosporine)"
+        ],
+        "secondLine": [
+          "Biologics (e.g., TNF inhibitors)",
+          "Retinoids (e.g., acitretin)"
+        ],
+        "monitoring": [
+          "Regular follow-up for skin condition and side effects of medications",
+          "Monitoring for signs of systemic involvement"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Initial dose: 0.5-1 mg/kg/day, tapering based on response.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, osteoporosis, increased infection risk.",
+          "notes": "Monitor for side effects, especially with long-term use."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis, reducing inflammation.",
+          "dosing": "Initial dose: 10-25 mg weekly, adjusted based on response.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, teratogenic effects.",
+          "notes": "Regular monitoring of liver function and blood counts required."
+        },
+        {
+          "name": "Cyclosporine",
+          "mechanism": "Immunosuppressant that inhibits T-cell activation.",
+          "dosing": "Initial dose: 2.5-5 mg/kg/day, adjusted based on response.",
+          "sideEffects": "Nephrotoxicity, hypertension, increased infection risk.",
+          "notes": "Monitor renal function and blood pressure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skin biopsy",
+          "description": "A small sample of skin is removed for histopathological examination.",
+          "indications": "To confirm diagnosis and rule out malignancy or other dermatoses.",
+          "risks": "Infection, scarring, bleeding."
+        },
+        {
+          "name": "Phototherapy",
+          "description": "Use of ultraviolet light to reduce inflammation and scaling.",
+          "indications": "Severe cases unresponsive to topical treatments.",
+          "risks": "Skin burns, increased risk of skin cancer."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of erythroderma varies depending on the underlying cause. With appropriate management, many patients can achieve significant improvement, but some may have chronic or recurrent disease.",
+    "complications": [
+      "Secondary infections (e.g., cellulitis)",
+      "Dehydration and electrolyte imbalances",
+      "Hypothermia",
+      "Nutritional deficiencies due to malabsorption"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize erythroderma, initiate appropriate investigations, manage acute symptoms, and refer to dermatology for further evaluation and treatment.",
+    "escalation": "If a patient presents with erythroderma and shows signs of systemic involvement (e.g., fever, hypotension), escalate care to a senior clinician and consider admission for intravenous fluids and monitoring.",
+    "keySafetyConsiderations": "Monitor for signs of infection, dehydration, and electrolyte imbalances. Be vigilant for potential side effects of systemic medications, especially corticosteroids and immunosuppressants."
+  }
+}

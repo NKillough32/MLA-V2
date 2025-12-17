@@ -1,0 +1,129 @@
+{
+  "id": "rotator_cuff_pathology",
+  "name": "Rotator cuff pathology",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:30:15.168067",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Rotator cuff pathology: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRotator cuff pathology refers to a spectrum of conditions affecting the rotator cuff, a group of muscles and tendons that stabilize the shoulder and allow for its movement. Common conditions include rotator cuff tears, tendinopathy, and impingement syndrome.\n\n### Epidemiology\nRotator cuff injuries are prevalent, particularly in individuals aged 40 and older. Approximately 30-50% of people over 60 years have rotator cuff tears, and they are a common cause of shoulder pain in the general population.\n\n### Essential Pathophysiology\nThe rotator cuff consists of four muscles (supraspinatus, infraspinatus, teres minor, and subscapularis) that stabilize the humeral head in the glenoid cavity. Pathology can arise from acute trauma, chronic overuse, or degenerative changes leading to inflammation, tears, or impingement of the tendons.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shoulder pain, especially with overhead activities\n- Weakness in shoulder abduction and external rotation\n- Limited range of motion\n- Night pain, particularly when lying on the affected side\n\n### Key Signs\n- Positive Neer test (pain on forward flexion with arm internally rotated)\n- Positive Hawkins-Kennedy test (pain on internal rotation with arm flexed)\n- Weakness on resisted abduction or external rotation\n- Tenderness over the greater tuberosity\n\n### Atypical Presentations\n- Referred pain to the neck or upper arm\n- Acute onset of pain after a specific injury or fall\n- Chronic pain with gradual onset without a clear injury\n\n### Red Flags Requiring Immediate Action\n- Significant trauma in younger patients\n- Acute severe pain with inability to move the shoulder\n- Signs of infection (fever, swelling, redness)\n- Neurological symptoms (numbness, tingling in the arm)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- X-ray (to rule out fractures and assess for calcific tendinopathy)\n\n### Second-line Investigations\n- Ultrasound (to assess for tears and tendinopathy)\n- MRI (to evaluate the extent of tears and other soft tissue pathology)\n\n### Specialist Tests\n- Arthrogram (if MRI is inconclusive)\n- CT scan (for complex cases or surgical planning)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings. A positive clinical test (e.g., Neer or Hawkins-Kennedy) combined with imaging evidence of rotator cuff pathology confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Shoulder osteoarthritis\n- Adhesive capsulitis (frozen shoulder)\n- Shoulder instability\n- Biceps tendon pathology\n- Cervical radiculopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce swelling\n- NSAIDs (e.g., ibuprofen) for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on range of motion and strengthening exercises\n- Corticosteroid injection for persistent pain\n\n#### Emergency Procedures\n- Arthroscopic repair of rotator cuff tears (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy with a focus on strengthening and flexibility\n- Activity modification to avoid exacerbating symptoms\n\n#### Second-line Treatments\n- Surgical intervention (arthroscopy or open repair) for significant tears or persistent symptoms despite conservative management\n- Corticosteroid injections for persistent pain\n\n#### Monitoring Requirements\n- Regular follow-up to assess progress and adjust management as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider renal function and gastrointestinal history before prescribing.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory agents that reduce swelling and pain\n- **Typical Dosing Range**: Intra-articular injection of 10-40 mg (e.g., triamcinolone) depending on the severity\n- **Key Side Effects/Contraindications**: Local pain, infection risk, potential for tendon rupture with repeated injections\n- **When to Use vs. Alternatives**: Limit injections to 2-3 times per year.\n\n### Procedures\n\n#### Arthroscopic rotator cuff repair\n- **What it Involves**: Minimally invasive surgery to repair torn rotator cuff tendons using small incisions and a camera\n- **Indications**: Significant rotator cuff tears causing pain and functional impairment not responding to conservative treatment\n- **Key Risks/Complications**: Infection, bleeding, stiffness, re-tear of the cuff, nerve injury\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for rotator cuff pathology varies; many patients improve with conservative management, but full recovery may take months. Surgical repair can lead to significant improvement, especially in younger patients with acute tears.\n\n### Important Complications to Watch For\n- Persistent pain and dysfunction\n- Re-tear of the rotator cuff after surgical repair\n- Shoulder stiffness or adhesive capsulitis\n- Chronic pain syndromes\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate conservative management, and refer to physiotherapy. They should recognize red flags and escalate care when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopedic surgery for surgical evaluation if there is significant functional impairment, persistent pain despite conservative management, or if red flags are present.\n\n### Key Safety Considerations\nMonitor for signs of infection post-injection or surgery, assess for potential complications of corticosteroid use, and ensure appropriate follow-up for patients undergoing conservative or surgical management.\n",
+  "content": {
+    "overview": {
+      "definition": "Rotator cuff pathology refers to a spectrum of conditions affecting the rotator cuff, a group of muscles and tendons that stabilize the shoulder and allow for its movement. Common conditions include rotator cuff tears, tendinopathy, and impingement syndrome.",
+      "epidemiology": "Rotator cuff injuries are prevalent, particularly in individuals aged 40 and older. Approximately 30-50% of people over 60 years have rotator cuff tears, and they are a common cause of shoulder pain in the general population.",
+      "pathophysiology": "The rotator cuff consists of four muscles (supraspinatus, infraspinatus, teres minor, and subscapularis) that stabilize the humeral head in the glenoid cavity. Pathology can arise from acute trauma, chronic overuse, or degenerative changes leading to inflammation, tears, or impingement of the tendons."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shoulder pain, especially with overhead activities",
+        "Weakness in shoulder abduction and external rotation",
+        "Limited range of motion",
+        "Night pain, particularly when lying on the affected side"
+      ],
+      "signs": [
+        "Positive Neer test (pain on forward flexion with arm internally rotated)",
+        "Positive Hawkins-Kennedy test (pain on internal rotation with arm flexed)",
+        "Weakness on resisted abduction or external rotation",
+        "Tenderness over the greater tuberosity"
+      ],
+      "atypicalPresentations": [
+        "Referred pain to the neck or upper arm",
+        "Acute onset of pain after a specific injury or fall",
+        "Chronic pain with gradual onset without a clear injury"
+      ],
+      "redFlags": [
+        "Significant trauma in younger patients",
+        "Acute severe pain with inability to move the shoulder",
+        "Signs of infection (fever, swelling, redness)",
+        "Neurological symptoms (numbness, tingling in the arm)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "X-ray (to rule out fractures and assess for calcific tendinopathy)"
+      ],
+      "secondLine": [
+        "Ultrasound (to assess for tears and tendinopathy)",
+        "MRI (to evaluate the extent of tears and other soft tissue pathology)"
+      ],
+      "specialistTests": [
+        "Arthrogram (if MRI is inconclusive)",
+        "CT scan (for complex cases or surgical planning)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings. A positive clinical test (e.g., Neer or Hawkins-Kennedy) combined with imaging evidence of rotator cuff pathology confirms the diagnosis.",
+      "differentials": [
+        "Shoulder osteoarthritis",
+        "Adhesive capsulitis (frozen shoulder)",
+        "Shoulder instability",
+        "Biceps tendon pathology",
+        "Cervical radiculopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce swelling",
+          "NSAIDs (e.g., ibuprofen) for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on range of motion and strengthening exercises",
+          "Corticosteroid injection for persistent pain"
+        ],
+        "procedures": [
+          "Arthroscopic repair of rotator cuff tears (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy with a focus on strengthening and flexibility",
+          "Activity modification to avoid exacerbating symptoms"
+        ],
+        "secondLine": [
+          "Surgical intervention (arthroscopy or open repair) for significant tears or persistent symptoms despite conservative management",
+          "Corticosteroid injections for persistent pain"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess progress and adjust management as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Nonsteroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain",
+          "dosing": "400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider renal function and gastrointestinal history before prescribing."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory agents that reduce swelling and pain",
+          "dosing": "Intra-articular injection of 10-40 mg (e.g., triamcinolone) depending on the severity",
+          "sideEffects": "Local pain, infection risk, potential for tendon rupture with repeated injections",
+          "notes": "Limit injections to 2-3 times per year."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Arthroscopic rotator cuff repair",
+          "description": "Minimally invasive surgery to repair torn rotator cuff tendons using small incisions and a camera",
+          "indications": "Significant rotator cuff tears causing pain and functional impairment not responding to conservative treatment",
+          "risks": "Infection, bleeding, stiffness, re-tear of the cuff, nerve injury"
+        }
+      ]
+    },
+    "prognosis": "The prognosis for rotator cuff pathology varies; many patients improve with conservative management, but full recovery may take months. Surgical repair can lead to significant improvement, especially in younger patients with acute tears.",
+    "complications": [
+      "Persistent pain and dysfunction",
+      "Re-tear of the rotator cuff after surgical repair",
+      "Shoulder stiffness or adhesive capsulitis",
+      "Chronic pain syndromes"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate conservative management, and refer to physiotherapy. They should recognize red flags and escalate care when necessary.",
+    "escalation": "Refer to orthopedic surgery for surgical evaluation if there is significant functional impairment, persistent pain despite conservative management, or if red flags are present.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-injection or surgery, assess for potential complications of corticosteroid use, and ensure appropriate follow-up for patients undergoing conservative or surgical management."
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "schizophrenia_and_psychosis",
+  "name": "Schizophrenia and Psychosis",
+  "domains": [
+    "Psychiatry"
+  ],
+  "generatedAt": "2025-12-17T21:12:04.879891",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Schizophrenia and Psychosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSchizophrenia is a chronic and severe mental disorder characterized by disturbances in thought processes, perceptions, emotional responsiveness, and social functioning. Psychosis refers to a state where an individual experiences a disconnection from reality, which can occur in various psychiatric disorders, including schizophrenia.\n\n### Epidemiology\nSchizophrenia affects approximately 1% of the population worldwide. It typically manifests in late adolescence to early adulthood, with a slightly earlier onset in males (late teens to early 20s) compared to females (early 20s to early 30s).\n\n### Essential Pathophysiology\nThe exact pathophysiology of schizophrenia is not fully understood, but it is believed to involve a combination of genetic, neurobiological, and environmental factors. Dysregulation of neurotransmitters, particularly dopamine and glutamate, is thought to play a key role in the development of psychotic symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hallucinations (auditory, visual)\n- Delusions (paranoid, grandiose)\n- Disorganized thinking and speech\n- Negative symptoms (apathy, anhedonia, social withdrawal)\n- Cognitive impairments\n\n### Key Signs\n- Disorganized behavior\n- Flat affect or inappropriate emotional responses\n- Poor self-care and hygiene\n- Social withdrawal\n- Difficulty in maintaining relationships\n\n### Atypical Presentations\n- Mood disturbances (depression or mania)\n- Substance-induced psychosis\n- Psychotic symptoms in the context of a medical condition\n\n### Red Flags Requiring Immediate Action\n- Acute onset of psychotic symptoms\n- Suicidal ideation or self-harm\n- Severe agitation or aggression\n- Inability to care for oneself\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment including mental state examination\n- History taking (including family history)\n- Physical examination to rule out medical causes\n\n### Second-line Investigations\n- Blood tests (CBC, metabolic panel, thyroid function tests)\n- Urine toxicology screen\n\n### Specialist Tests\n- MRI or CT scan of the brain (to rule out structural causes)\n- EEG (if seizures are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of schizophrenia is based on the DSM-5 criteria, which include the presence of two or more of the following symptoms for a significant portion of a 1-month period: delusions, hallucinations, disorganized speech, grossly disorganized or catatonic behavior, and negative symptoms. Additionally, social or occupational dysfunction must be present for a significant portion of the time since the onset of the disturbance.\n\n### Key Differential Diagnoses to Exclude\n- Bipolar disorder with psychotic features\n- Major depressive disorder with psychotic features\n- Substance-induced psychotic disorder\n- Schizoaffective disorder\n- Delusional disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antipsychotic medications (e.g., Olanzapine, Risperidone)\n- Supportive care and safety measures\n- Psychiatric assessment\n\n#### Second-line Treatments\n- Consideration of hospitalization for severe cases\n- Benzodiazepines for agitation\n\n#### Emergency Procedures\n- Electroconvulsive therapy (ECT) in severe cases unresponsive to medication\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term antipsychotic medication management\n- Psychosocial interventions (CBT, family therapy)\n- Regular follow-up and monitoring\n\n#### Second-line Treatments\n- Consideration of clozapine for treatment-resistant cases\n- Psychiatric rehabilitation programs\n\n#### Monitoring Requirements\n- Regular assessment of medication adherence\n- Monitoring for side effects and metabolic syndrome\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Olanzapine\n- **Mechanism of Action**: Atypical antipsychotic that blocks dopamine D2 and serotonin 5-HT2A receptors.\n- **Typical Dosing Range**: Initial: 10-15 mg/day; Maintenance: 5-20 mg/day.\n- **Key Side Effects/Contraindications**: Weight gain, sedation, metabolic syndrome, extrapyramidal symptoms (less common).\n- **When to Use vs. Alternatives**: Monitor weight and metabolic parameters regularly.\n\n#### Risperidone\n- **Mechanism of Action**: Atypical antipsychotic that antagonizes dopamine D2 and serotonin 5-HT2A receptors.\n- **Typical Dosing Range**: Initial: 1-2 mg/day; Maintenance: 2-6 mg/day.\n- **Key Side Effects/Contraindications**: Extrapyramidal symptoms, hyperprolactinemia, sedation.\n- **When to Use vs. Alternatives**: Lower doses may be needed in elderly patients.\n\n#### Clozapine\n- **Mechanism of Action**: Atypical antipsychotic with a unique receptor profile, effective in treatment-resistant schizophrenia.\n- **Typical Dosing Range**: Initial: 12.5 mg/day; Maintenance: 300-450 mg/day (titrated slowly).\n- **Key Side Effects/Contraindications**: Agranulocytosis, seizures, sedation, hypersalivation.\n- **When to Use vs. Alternatives**: Requires regular blood monitoring (CBC) due to risk of agranulocytosis.\n\n### Procedures\n\n#### Electroconvulsive Therapy (ECT)\n- **What it Involves**: A procedure that involves delivering small electric currents to the brain to induce a seizure, used in severe cases of psychosis.\n- **Indications**: Severe, treatment-resistant schizophrenia, particularly with catatonia or severe suicidal ideation.\n- **Key Risks/Complications**: Memory loss, confusion, physical side effects (headaches, muscle aches).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of schizophrenia varies; approximately 20-30% of patients achieve significant recovery, while others may experience chronic symptoms. Early intervention and adherence to treatment improve outcomes.\n\n### Important Complications to Watch For\n- Substance abuse disorders\n- Suicidal behavior\n- Social isolation and unemployment\n- Metabolic syndrome due to antipsychotic medications\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of schizophrenia and psychosis, conduct initial assessments, initiate treatment, and refer to psychiatric services as needed. They should also monitor for side effects of medications and provide psychoeducation to patients and families.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with acute psychosis, consider immediate psychiatric consultation, especially if there are safety concerns (risk of harm to self or others).\n\n### Key Safety Considerations\nEnsure patient safety during acute episodes, monitor for side effects of medications, and provide a supportive environment. Be aware of the risk of suicide and the need for regular follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Schizophrenia is a chronic and severe mental disorder characterized by disturbances in thought processes, perceptions, emotional responsiveness, and social functioning. Psychosis refers to a state where an individual experiences a disconnection from reality, which can occur in various psychiatric disorders, including schizophrenia.",
+      "epidemiology": "Schizophrenia affects approximately 1% of the population worldwide. It typically manifests in late adolescence to early adulthood, with a slightly earlier onset in males (late teens to early 20s) compared to females (early 20s to early 30s).",
+      "pathophysiology": "The exact pathophysiology of schizophrenia is not fully understood, but it is believed to involve a combination of genetic, neurobiological, and environmental factors. Dysregulation of neurotransmitters, particularly dopamine and glutamate, is thought to play a key role in the development of psychotic symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hallucinations (auditory, visual)",
+        "Delusions (paranoid, grandiose)",
+        "Disorganized thinking and speech",
+        "Negative symptoms (apathy, anhedonia, social withdrawal)",
+        "Cognitive impairments"
+      ],
+      "signs": [
+        "Disorganized behavior",
+        "Flat affect or inappropriate emotional responses",
+        "Poor self-care and hygiene",
+        "Social withdrawal",
+        "Difficulty in maintaining relationships"
+      ],
+      "atypicalPresentations": [
+        "Mood disturbances (depression or mania)",
+        "Substance-induced psychosis",
+        "Psychotic symptoms in the context of a medical condition"
+      ],
+      "redFlags": [
+        "Acute onset of psychotic symptoms",
+        "Suicidal ideation or self-harm",
+        "Severe agitation or aggression",
+        "Inability to care for oneself"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment including mental state examination",
+        "History taking (including family history)",
+        "Physical examination to rule out medical causes"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, metabolic panel, thyroid function tests)",
+        "Urine toxicology screen"
+      ],
+      "specialistTests": [
+        "MRI or CT scan of the brain (to rule out structural causes)",
+        "EEG (if seizures are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of schizophrenia is based on the DSM-5 criteria, which include the presence of two or more of the following symptoms for a significant portion of a 1-month period: delusions, hallucinations, disorganized speech, grossly disorganized or catatonic behavior, and negative symptoms. Additionally, social or occupational dysfunction must be present for a significant portion of the time since the onset of the disturbance.",
+      "differentials": [
+        "Bipolar disorder with psychotic features",
+        "Major depressive disorder with psychotic features",
+        "Substance-induced psychotic disorder",
+        "Schizoaffective disorder",
+        "Delusional disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antipsychotic medications (e.g., Olanzapine, Risperidone)",
+          "Supportive care and safety measures",
+          "Psychiatric assessment"
+        ],
+        "secondLine": [
+          "Consideration of hospitalization for severe cases",
+          "Benzodiazepines for agitation"
+        ],
+        "procedures": [
+          "Electroconvulsive therapy (ECT) in severe cases unresponsive to medication"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term antipsychotic medication management",
+          "Psychosocial interventions (CBT, family therapy)",
+          "Regular follow-up and monitoring"
+        ],
+        "secondLine": [
+          "Consideration of clozapine for treatment-resistant cases",
+          "Psychiatric rehabilitation programs"
+        ],
+        "monitoring": [
+          "Regular assessment of medication adherence",
+          "Monitoring for side effects and metabolic syndrome"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Olanzapine",
+          "mechanism": "Atypical antipsychotic that blocks dopamine D2 and serotonin 5-HT2A receptors.",
+          "dosing": "Initial: 10-15 mg/day; Maintenance: 5-20 mg/day.",
+          "sideEffects": "Weight gain, sedation, metabolic syndrome, extrapyramidal symptoms (less common).",
+          "notes": "Monitor weight and metabolic parameters regularly."
+        },
+        {
+          "name": "Risperidone",
+          "mechanism": "Atypical antipsychotic that antagonizes dopamine D2 and serotonin 5-HT2A receptors.",
+          "dosing": "Initial: 1-2 mg/day; Maintenance: 2-6 mg/day.",
+          "sideEffects": "Extrapyramidal symptoms, hyperprolactinemia, sedation.",
+          "notes": "Lower doses may be needed in elderly patients."
+        },
+        {
+          "name": "Clozapine",
+          "mechanism": "Atypical antipsychotic with a unique receptor profile, effective in treatment-resistant schizophrenia.",
+          "dosing": "Initial: 12.5 mg/day; Maintenance: 300-450 mg/day (titrated slowly).",
+          "sideEffects": "Agranulocytosis, seizures, sedation, hypersalivation.",
+          "notes": "Requires regular blood monitoring (CBC) due to risk of agranulocytosis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electroconvulsive Therapy (ECT)",
+          "description": "A procedure that involves delivering small electric currents to the brain to induce a seizure, used in severe cases of psychosis.",
+          "indications": "Severe, treatment-resistant schizophrenia, particularly with catatonia or severe suicidal ideation.",
+          "risks": "Memory loss, confusion, physical side effects (headaches, muscle aches)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of schizophrenia varies; approximately 20-30% of patients achieve significant recovery, while others may experience chronic symptoms. Early intervention and adherence to treatment improve outcomes.",
+    "complications": [
+      "Substance abuse disorders",
+      "Suicidal behavior",
+      "Social isolation and unemployment",
+      "Metabolic syndrome due to antipsychotic medications"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of schizophrenia and psychosis, conduct initial assessments, initiate treatment, and refer to psychiatric services as needed. They should also monitor for side effects of medications and provide psychoeducation to patients and families.",
+    "escalation": "If a patient presents with acute psychosis, consider immediate psychiatric consultation, especially if there are safety concerns (risk of harm to self or others).",
+    "keySafetyConsiderations": "Ensure patient safety during acute episodes, monitor for side effects of medications, and provide a supportive environment. Be aware of the risk of suicide and the need for regular follow-up."
+  }
+}

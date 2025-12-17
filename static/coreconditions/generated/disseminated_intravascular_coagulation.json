@@ -1,0 +1,134 @@
+{
+  "id": "disseminated_intravascular_coagulation",
+  "name": "Disseminated intravascular coagulation",
+  "domains": [
+    "Haematology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:51:17.084963",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Disseminated intravascular coagulation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDisseminated intravascular coagulation (DIC) is a serious condition characterized by the widespread activation of the coagulation cascade, leading to the formation of blood clots throughout the small blood vessels, which can result in organ dysfunction and bleeding due to the consumption of clotting factors and platelets.\n\n### Epidemiology\nDIC can occur in various clinical settings, including sepsis, trauma, obstetric complications, and malignancies. It is more common in critically ill patients and can affect both adults and children, with a higher incidence in those with underlying conditions.\n\n### Essential Pathophysiology\nDIC is triggered by various factors such as infection, trauma, or malignancy, leading to the release of pro-coagulant substances (e.g., tissue factor) into the circulation. This results in excessive thrombin generation, platelet activation, and fibrin formation, causing microvascular thrombosis. As clotting factors and platelets are consumed, patients may develop bleeding complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Bleeding (e.g., petechiae, ecchymosis, hematuria)\n- Shortness of breath\n- Chest pain\n- Abdominal pain\n- Altered mental status\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Fever\n- Jaundice\n- Oliguria or anuria\n\n### Atypical Presentations\n- Severe thrombosis without bleeding\n- Acute kidney injury\n- Acute respiratory distress syndrome (ARDS)\n\n### Red Flags Requiring Immediate Action\n- Rapid onset of bleeding\n- Severe thrombocytopenia\n- Signs of organ dysfunction (e.g., altered mental status, renal failure)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Coagulation profile (PT, aPTT, fibrinogen)\n- Peripheral blood smear\n\n### Second-line Investigations\n- D-dimer levels\n- Liver function tests\n- Renal function tests\n\n### Specialist Tests\n- Thromboelastography (TEG)\n- Bone marrow biopsy (if malignancy suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of DIC is based on clinical criteria and laboratory findings, including thrombocytopenia, prolonged PT/aPTT, low fibrinogen levels, and elevated D-dimer levels, along with clinical evidence of bleeding or organ dysfunction.\n\n### Key Differential Diagnoses to Exclude\n- Thrombotic thrombocytopenic purpura (TTP)\n- Hemolytic uremic syndrome (HUS)\n- Acute liver failure\n- Sepsis-induced coagulopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (fluid resuscitation, blood product transfusion)\n- Treat underlying cause (e.g., antibiotics for sepsis)\n\n#### Second-line Treatments\n- Consider anticoagulation in certain cases (e.g., heparin)\n\n#### Emergency Procedures\n- Plasma exchange (in TTP)\n- Surgical intervention for source control (e.g., in trauma)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor for complications and manage underlying conditions\n\n#### Second-line Treatments\n- Long-term anticoagulation may be considered in chronic DIC with thrombosis\n\n#### Monitoring Requirements\n- Regular CBC and coagulation profile to assess for resolution or progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Heparin\n- **Mechanism of Action**: Anticoagulant that inhibits thrombin and factor Xa, reducing clot formation.\n- **Typical Dosing Range**: Initial: 80 units/kg IV bolus, followed by 18 units/kg/hr infusion, adjusted based on aPTT.\n- **Key Side Effects/Contraindications**: Bleeding, thrombocytopenia (HIT), osteoporosis with long-term use.\n- **When to Use vs. Alternatives**: Use with caution in patients with active bleeding.\n\n#### FFP (Fresh Frozen Plasma)\n- **Mechanism of Action**: Provides clotting factors to correct coagulopathy.\n- **Typical Dosing Range**: Administer 10-15 mL/kg IV, may repeat based on coagulation profile.\n- **Key Side Effects/Contraindications**: Volume overload, transfusion reactions.\n- **When to Use vs. Alternatives**: Monitor for signs of transfusion reactions.\n\n### Procedures\n\n#### Plasma exchange\n- **What it Involves**: A procedure to remove plasma containing harmful substances and replace it with donor plasma or albumin.\n- **Indications**: Severe cases of DIC, particularly in TTP or HUS.\n- **Key Risks/Complications**: Infection, bleeding, allergic reactions, volume overload.\n\n#### Surgical intervention\n- **What it Involves**: Surgical procedures to control bleeding or remove the source of coagulopathy (e.g., abscess drainage).\n- **Indications**: Active bleeding due to trauma or localized DIC.\n- **Key Risks/Complications**: Infection, anesthesia complications, further bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of DIC depends on the underlying cause and the timeliness of treatment. Early recognition and management can improve outcomes significantly. Mortality rates can be high in cases associated with severe sepsis or obstetric complications.\n\n### Important Complications to Watch For\n- Organ failure (e.g., renal, hepatic)\n- Severe bleeding\n- Thrombotic complications (e.g., stroke, myocardial infarction)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the signs and symptoms of DIC, initiate appropriate investigations, and manage supportive care while escalating care to senior clinicians as needed.\n\n### When to Escalate to Senior/Specialist\nIf DIC is suspected, escalate to a senior clinician immediately, especially if there are signs of severe bleeding or organ dysfunction. Ensure timely involvement of haematology and critical care teams.\n\n### Key Safety Considerations\nMonitor for signs of bleeding and thrombosis, ensure appropriate transfusion practices, and maintain a high index of suspicion for DIC in critically ill patients.\n",
+  "content": {
+    "overview": {
+      "definition": "Disseminated intravascular coagulation (DIC) is a serious condition characterized by the widespread activation of the coagulation cascade, leading to the formation of blood clots throughout the small blood vessels, which can result in organ dysfunction and bleeding due to the consumption of clotting factors and platelets.",
+      "epidemiology": "DIC can occur in various clinical settings, including sepsis, trauma, obstetric complications, and malignancies. It is more common in critically ill patients and can affect both adults and children, with a higher incidence in those with underlying conditions.",
+      "pathophysiology": "DIC is triggered by various factors such as infection, trauma, or malignancy, leading to the release of pro-coagulant substances (e.g., tissue factor) into the circulation. This results in excessive thrombin generation, platelet activation, and fibrin formation, causing microvascular thrombosis. As clotting factors and platelets are consumed, patients may develop bleeding complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Bleeding (e.g., petechiae, ecchymosis, hematuria)",
+        "Shortness of breath",
+        "Chest pain",
+        "Abdominal pain",
+        "Altered mental status"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Fever",
+        "Jaundice",
+        "Oliguria or anuria"
+      ],
+      "atypicalPresentations": [
+        "Severe thrombosis without bleeding",
+        "Acute kidney injury",
+        "Acute respiratory distress syndrome (ARDS)"
+      ],
+      "redFlags": [
+        "Rapid onset of bleeding",
+        "Severe thrombocytopenia",
+        "Signs of organ dysfunction (e.g., altered mental status, renal failure)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Coagulation profile (PT, aPTT, fibrinogen)",
+        "Peripheral blood smear"
+      ],
+      "secondLine": [
+        "D-dimer levels",
+        "Liver function tests",
+        "Renal function tests"
+      ],
+      "specialistTests": [
+        "Thromboelastography (TEG)",
+        "Bone marrow biopsy (if malignancy suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of DIC is based on clinical criteria and laboratory findings, including thrombocytopenia, prolonged PT/aPTT, low fibrinogen levels, and elevated D-dimer levels, along with clinical evidence of bleeding or organ dysfunction.",
+      "differentials": [
+        "Thrombotic thrombocytopenic purpura (TTP)",
+        "Hemolytic uremic syndrome (HUS)",
+        "Acute liver failure",
+        "Sepsis-induced coagulopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (fluid resuscitation, blood product transfusion)",
+          "Treat underlying cause (e.g., antibiotics for sepsis)"
+        ],
+        "secondLine": [
+          "Consider anticoagulation in certain cases (e.g., heparin)"
+        ],
+        "procedures": [
+          "Plasma exchange (in TTP)",
+          "Surgical intervention for source control (e.g., in trauma)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor for complications and manage underlying conditions"
+        ],
+        "secondLine": [
+          "Long-term anticoagulation may be considered in chronic DIC with thrombosis"
+        ],
+        "monitoring": [
+          "Regular CBC and coagulation profile to assess for resolution or progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Heparin",
+          "mechanism": "Anticoagulant that inhibits thrombin and factor Xa, reducing clot formation.",
+          "dosing": "Initial: 80 units/kg IV bolus, followed by 18 units/kg/hr infusion, adjusted based on aPTT.",
+          "sideEffects": "Bleeding, thrombocytopenia (HIT), osteoporosis with long-term use.",
+          "notes": "Use with caution in patients with active bleeding."
+        },
+        {
+          "name": "FFP (Fresh Frozen Plasma)",
+          "mechanism": "Provides clotting factors to correct coagulopathy.",
+          "dosing": "Administer 10-15 mL/kg IV, may repeat based on coagulation profile.",
+          "sideEffects": "Volume overload, transfusion reactions.",
+          "notes": "Monitor for signs of transfusion reactions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Plasma exchange",
+          "description": "A procedure to remove plasma containing harmful substances and replace it with donor plasma or albumin.",
+          "indications": "Severe cases of DIC, particularly in TTP or HUS.",
+          "risks": "Infection, bleeding, allergic reactions, volume overload."
+        },
+        {
+          "name": "Surgical intervention",
+          "description": "Surgical procedures to control bleeding or remove the source of coagulopathy (e.g., abscess drainage).",
+          "indications": "Active bleeding due to trauma or localized DIC.",
+          "risks": "Infection, anesthesia complications, further bleeding."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of DIC depends on the underlying cause and the timeliness of treatment. Early recognition and management can improve outcomes significantly. Mortality rates can be high in cases associated with severe sepsis or obstetric complications.",
+    "complications": [
+      "Organ failure (e.g., renal, hepatic)",
+      "Severe bleeding",
+      "Thrombotic complications (e.g., stroke, myocardial infarction)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the signs and symptoms of DIC, initiate appropriate investigations, and manage supportive care while escalating care to senior clinicians as needed.",
+    "escalation": "If DIC is suspected, escalate to a senior clinician immediately, especially if there are signs of severe bleeding or organ dysfunction. Ensure timely involvement of haematology and critical care teams.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding and thrombosis, ensure appropriate transfusion practices, and maintain a high index of suspicion for DIC in critically ill patients."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "peripheral_vascular_disease",
+  "name": "Peripheral vascular Disease",
+  "domains": [
+    "Vascular"
+  ],
+  "generatedAt": "2025-12-17T21:21:52.044919",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peripheral vascular Disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeripheral vascular disease (PVD) refers to the narrowing or blockage of blood vessels outside the heart and brain, primarily affecting the arteries in the legs, leading to reduced blood flow.\n\n### Epidemiology\nPVD affects approximately 8-12 million people in the United States, with prevalence increasing with age. Risk factors include smoking, diabetes, hypertension, and hyperlipidemia.\n\n### Essential Pathophysiology\nPVD is primarily caused by atherosclerosis, where fatty deposits build up in the arterial walls, leading to stenosis or occlusion. This results in reduced blood flow, particularly during exertion, causing ischemic symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Intermittent claudication (pain in legs during exercise)\n- Rest pain (pain in feet or toes at rest)\n- Weakness or numbness in legs\n- Coldness in lower leg or foot, especially compared to the other leg\n- Non-healing wounds or ulcers on toes or feet\n\n### Key Signs\n- Decreased or absent pulses in the legs or feet\n- Coolness of the affected limb\n- Skin changes (shiny skin, hair loss on legs)\n- Nail changes (thickened or slow-growing nails)\n- Gangrene or necrosis in severe cases\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Acute limb ischemia (sudden onset of pain, pallor, pulselessness)\n- Chronic wounds or ulcers without claudication\n\n### Red Flags Requiring Immediate Action\n- Acute limb ischemia (sudden pain, pallor, pulselessness)\n- Severe rest pain\n- Non-healing ulcers or gangrene\n- Signs of systemic infection (fever, chills)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ankle-brachial index (ABI)\n- Doppler ultrasound\n\n### Second-line Investigations\n- CT angiography (CTA)\n- MR angiography (MRA)\n\n### Specialist Tests\n- Digital subtraction angiography (DSA)\n- Transcutaneous oxygen pressure (TcPO2)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical symptoms, physical examination findings, and confirmed by ABI < 0.9 or imaging studies showing arterial occlusion.\n\n### Key Differential Diagnoses to Exclude\n- Diabetic neuropathy\n- Spinal stenosis\n- Venous insufficiency\n- Arthritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate revascularization (surgical or endovascular)\n- Anticoagulation therapy\n\n#### Second-line Treatments\n- Thrombolysis if indicated\n\n#### Emergency Procedures\n- Embolectomy for acute limb ischemia\n- Angioplasty and stenting for revascularization\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (smoking cessation, exercise therapy)\n- Antiplatelet therapy (e.g., aspirin, clopidogrel)\n\n#### Second-line Treatments\n- Statins for lipid management\n- Supervised exercise programs\n\n#### Monitoring Requirements\n- Regular follow-up for symptom progression\n- Monitoring of ABI and cardiovascular risk factors\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation\n- **Typical Dosing Range**: 75-325 mg orally once daily\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions\n- **When to Use vs. Alternatives**: Consider enteric-coated formulations to reduce GI side effects.\n\n#### Clopidogrel\n- **Mechanism of Action**: Inhibits platelet aggregation via ADP receptor blockade\n- **Typical Dosing Range**: 75 mg orally once daily\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, bleeding\n- **When to Use vs. Alternatives**: Consider in patients with aspirin intolerance.\n\n#### Statins (e.g., Atorvastatin)\n- **Mechanism of Action**: Reduces cholesterol synthesis, stabilizes plaques\n- **Typical Dosing Range**: 10-80 mg orally once daily\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation\n- **When to Use vs. Alternatives**: Monitor liver function tests.\n\n### Procedures\n\n#### Angioplasty\n- **What it Involves**: Minimally invasive procedure to open narrowed arteries using a balloon catheter.\n- **Indications**: Significant stenosis causing claudication or critical limb ischemia.\n- **Key Risks/Complications**: Re-stenosis, bleeding, infection.\n\n#### Bypass surgery\n- **What it Involves**: Surgical procedure to create a bypass around blocked arteries using grafts.\n- **Indications**: Severe PVD with limb-threatening ischemia.\n- **Key Risks/Complications**: Infection, graft failure, myocardial infarction.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies; early detection and management can improve outcomes. Untreated PVD can lead to critical limb ischemia, amputation, and increased cardiovascular morbidity and mortality.\n\n### Important Complications to Watch For\n- Critical limb ischemia\n- Amputation\n- Myocardial infarction\n- Stroke\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, initiate investigations, and manage risk factors. They should also educate patients on lifestyle modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nRefer to vascular surgery for patients with acute limb ischemia, severe claudication unresponsive to medical therapy, or non-healing ulcers.\n\n### Key Safety Considerations\nMonitor for signs of acute limb ischemia, ensure appropriate follow-up for patients on anticoagulants, and educate patients on recognizing symptoms of worsening disease.\n",
+  "content": {
+    "overview": {
+      "definition": "Peripheral vascular disease (PVD) refers to the narrowing or blockage of blood vessels outside the heart and brain, primarily affecting the arteries in the legs, leading to reduced blood flow.",
+      "epidemiology": "PVD affects approximately 8-12 million people in the United States, with prevalence increasing with age. Risk factors include smoking, diabetes, hypertension, and hyperlipidemia.",
+      "pathophysiology": "PVD is primarily caused by atherosclerosis, where fatty deposits build up in the arterial walls, leading to stenosis or occlusion. This results in reduced blood flow, particularly during exertion, causing ischemic symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Intermittent claudication (pain in legs during exercise)",
+        "Rest pain (pain in feet or toes at rest)",
+        "Weakness or numbness in legs",
+        "Coldness in lower leg or foot, especially compared to the other leg",
+        "Non-healing wounds or ulcers on toes or feet"
+      ],
+      "signs": [
+        "Decreased or absent pulses in the legs or feet",
+        "Coolness of the affected limb",
+        "Skin changes (shiny skin, hair loss on legs)",
+        "Nail changes (thickened or slow-growing nails)",
+        "Gangrene or necrosis in severe cases"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Acute limb ischemia (sudden onset of pain, pallor, pulselessness)",
+        "Chronic wounds or ulcers without claudication"
+      ],
+      "redFlags": [
+        "Acute limb ischemia (sudden pain, pallor, pulselessness)",
+        "Severe rest pain",
+        "Non-healing ulcers or gangrene",
+        "Signs of systemic infection (fever, chills)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ankle-brachial index (ABI)",
+        "Doppler ultrasound"
+      ],
+      "secondLine": [
+        "CT angiography (CTA)",
+        "MR angiography (MRA)"
+      ],
+      "specialistTests": [
+        "Digital subtraction angiography (DSA)",
+        "Transcutaneous oxygen pressure (TcPO2)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical symptoms, physical examination findings, and confirmed by ABI < 0.9 or imaging studies showing arterial occlusion.",
+      "differentials": [
+        "Diabetic neuropathy",
+        "Spinal stenosis",
+        "Venous insufficiency",
+        "Arthritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate revascularization (surgical or endovascular)",
+          "Anticoagulation therapy"
+        ],
+        "secondLine": [
+          "Thrombolysis if indicated"
+        ],
+        "procedures": [
+          "Embolectomy for acute limb ischemia",
+          "Angioplasty and stenting for revascularization"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (smoking cessation, exercise therapy)",
+          "Antiplatelet therapy (e.g., aspirin, clopidogrel)"
+        ],
+        "secondLine": [
+          "Statins for lipid management",
+          "Supervised exercise programs"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom progression",
+          "Monitoring of ABI and cardiovascular risk factors"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation",
+          "dosing": "75-325 mg orally once daily",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions",
+          "notes": "Consider enteric-coated formulations to reduce GI side effects."
+        },
+        {
+          "name": "Clopidogrel",
+          "mechanism": "Inhibits platelet aggregation via ADP receptor blockade",
+          "dosing": "75 mg orally once daily",
+          "sideEffects": "Gastrointestinal upset, bleeding",
+          "notes": "Consider in patients with aspirin intolerance."
+        },
+        {
+          "name": "Statins (e.g., Atorvastatin)",
+          "mechanism": "Reduces cholesterol synthesis, stabilizes plaques",
+          "dosing": "10-80 mg orally once daily",
+          "sideEffects": "Myopathy, liver enzyme elevation",
+          "notes": "Monitor liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Angioplasty",
+          "description": "Minimally invasive procedure to open narrowed arteries using a balloon catheter.",
+          "indications": "Significant stenosis causing claudication or critical limb ischemia.",
+          "risks": "Re-stenosis, bleeding, infection."
+        },
+        {
+          "name": "Bypass surgery",
+          "description": "Surgical procedure to create a bypass around blocked arteries using grafts.",
+          "indications": "Severe PVD with limb-threatening ischemia.",
+          "risks": "Infection, graft failure, myocardial infarction."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies; early detection and management can improve outcomes. Untreated PVD can lead to critical limb ischemia, amputation, and increased cardiovascular morbidity and mortality.",
+    "complications": [
+      "Critical limb ischemia",
+      "Amputation",
+      "Myocardial infarction",
+      "Stroke"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, initiate investigations, and manage risk factors. They should also educate patients on lifestyle modifications and medication adherence.",
+    "escalation": "Refer to vascular surgery for patients with acute limb ischemia, severe claudication unresponsive to medical therapy, or non-healing ulcers.",
+    "keySafetyConsiderations": "Monitor for signs of acute limb ischemia, ensure appropriate follow-up for patients on anticoagulants, and educate patients on recognizing symptoms of worsening disease."
+  }
+}

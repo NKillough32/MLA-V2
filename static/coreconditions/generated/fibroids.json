@@ -1,0 +1,144 @@
+{
+  "id": "fibroids",
+  "name": "Fibroids",
+  "domains": [
+    "Gynaecology"
+  ],
+  "generatedAt": "2025-12-17T21:52:11.039538",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Fibroids: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUterine fibroids, also known as leiomyomas or myomas, are benign smooth muscle tumors of the uterus that can vary in size, number, and location. They are the most common pelvic tumors in women of reproductive age.\n\n### Epidemiology\nFibroids affect approximately 20-50% of women by age 50, with higher prevalence in African American women. They are often asymptomatic but can lead to significant morbidity in some cases.\n\n### Essential Pathophysiology\nThe exact cause of fibroids is unknown, but they are thought to be influenced by hormonal factors, particularly estrogen and progesterone. They arise from the smooth muscle cells of the uterus and can grow in response to these hormones, often enlarging during pregnancy and shrinking after menopause.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Heavy menstrual bleeding (menorrhagia)\n- Pelvic pain or pressure\n- Frequent urination\n- Constipation\n- Back pain\n- Pain during intercourse (dyspareunia)\n\n### Key Signs\n- Enlarged uterus on examination\n- Abdominal or pelvic mass\n- Irregular uterine contour\n\n### Atypical Presentations\n- Asymptomatic fibroids discovered incidentally on imaging\n- Fibroids causing urinary retention or obstruction\n- Fibroids leading to infertility\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Sudden increase in size of fibroid\n- Signs of anemia (fatigue, pallor)\n- Postmenopausal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pelvic ultrasound (transabdominal or transvaginal)\n\n### Second-line Investigations\n- MRI of the pelvis (to assess size and location)\n- Hysterosonography (saline infusion sonography)\n\n### Specialist Tests\n- Hysteroscopy (for direct visualization and biopsy)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical history, physical examination, and imaging findings. Fibroids are typically diagnosed when a pelvic ultrasound shows characteristic features of fibroids.\n\n### Key Differential Diagnoses to Exclude\n- Endometrial polyps\n- Adenomyosis\n- Ovarian tumors\n- Pelvic inflammatory disease (PID)\n- Ectopic pregnancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NSAIDs for pain relief\n- Iron supplementation for anemia\n\n#### Second-line Treatments\n- Hormonal therapy (e.g., combined oral contraceptives)\n\n#### Emergency Procedures\n- Uterine artery embolization (for symptomatic relief)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring for asymptomatic fibroids\n- Hormonal treatments (e.g., GnRH agonists, progestins)\n\n#### Second-line Treatments\n- Surgical options (myomectomy or hysterectomy) for symptomatic fibroids\n\n#### Monitoring Requirements\n- Regular follow-up with ultrasound to assess fibroid size and symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Leuprolide (GnRH agonist)\n- **Mechanism of Action**: Suppresses estrogen and progesterone production, leading to reduced fibroid size.\n- **Typical Dosing Range**: 3.75 mg IM monthly or 11.25 mg every 3 months.\n- **Key Side Effects/Contraindications**: Hot flashes, decreased libido, bone density loss, mood changes.\n- **When to Use vs. Alternatives**: Used for short-term management prior to surgery.\n\n#### Medroxyprogesterone acetate (Progestin)\n- **Mechanism of Action**: Reduces menstrual bleeding and can help manage symptoms.\n- **Typical Dosing Range**: 10-20 mg daily for 10-14 days per cycle.\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, irregular bleeding.\n- **When to Use vs. Alternatives**: Can be used for symptomatic relief.\n\n#### Tranexamic acid\n- **Mechanism of Action**: Antifibrinolytic agent that reduces menstrual bleeding.\n- **Typical Dosing Range**: 1 g orally 3 times daily during menstruation.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, headache.\n- **When to Use vs. Alternatives**: Useful for managing heavy menstrual bleeding.\n\n### Procedures\n\n#### Myomectomy\n- **What it Involves**: Surgical removal of fibroids while preserving the uterus.\n- **Indications**: Symptomatic fibroids, desire to maintain fertility.\n- **Key Risks/Complications**: Bleeding, infection, uterine perforation, recurrence of fibroids.\n\n#### Hysterectomy\n- **What it Involves**: Surgical removal of the uterus, can be abdominal or vaginal.\n- **Indications**: Severe symptoms, completed childbearing, large fibroids.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs, hormonal changes.\n\n#### Uterine artery embolization\n- **What it Involves**: Minimally invasive procedure that blocks blood flow to fibroids, causing them to shrink.\n- **Indications**: Symptomatic fibroids, not desiring future fertility.\n- **Key Risks/Complications**: Pain, infection, post-embolization syndrome, potential for fibroid recurrence.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for fibroids is generally good, especially for asymptomatic cases. Symptomatic fibroids can be effectively managed with medical or surgical interventions, and many women experience relief of symptoms post-treatment.\n\n### Important Complications to Watch For\n- Anemia due to heavy menstrual bleeding\n- Infertility (in some cases)\n- Pregnancy complications (e.g., miscarriage, preterm labor)\n- Degeneration of fibroids leading to acute pain\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of fibroids, perform initial assessments, and refer patients for appropriate imaging and specialist care. They should also be aware of the management options and potential complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a gynaecologist if there are red flags, severe symptoms, or if the patient desires surgical intervention.\n\n### Key Safety Considerations\nMonitor for signs of anemia in patients with heavy menstrual bleeding. Be aware of the potential for rapid growth of fibroids and the need for timely intervention if complications arise.\n",
+  "content": {
+    "overview": {
+      "definition": "Uterine fibroids, also known as leiomyomas or myomas, are benign smooth muscle tumors of the uterus that can vary in size, number, and location. They are the most common pelvic tumors in women of reproductive age.",
+      "epidemiology": "Fibroids affect approximately 20-50% of women by age 50, with higher prevalence in African American women. They are often asymptomatic but can lead to significant morbidity in some cases.",
+      "pathophysiology": "The exact cause of fibroids is unknown, but they are thought to be influenced by hormonal factors, particularly estrogen and progesterone. They arise from the smooth muscle cells of the uterus and can grow in response to these hormones, often enlarging during pregnancy and shrinking after menopause."
+    },
+    "recognition": {
+      "symptoms": [
+        "Heavy menstrual bleeding (menorrhagia)",
+        "Pelvic pain or pressure",
+        "Frequent urination",
+        "Constipation",
+        "Back pain",
+        "Pain during intercourse (dyspareunia)"
+      ],
+      "signs": [
+        "Enlarged uterus on examination",
+        "Abdominal or pelvic mass",
+        "Irregular uterine contour"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic fibroids discovered incidentally on imaging",
+        "Fibroids causing urinary retention or obstruction",
+        "Fibroids leading to infertility"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Sudden increase in size of fibroid",
+        "Signs of anemia (fatigue, pallor)",
+        "Postmenopausal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pelvic ultrasound (transabdominal or transvaginal)"
+      ],
+      "secondLine": [
+        "MRI of the pelvis (to assess size and location)",
+        "Hysterosonography (saline infusion sonography)"
+      ],
+      "specialistTests": [
+        "Hysteroscopy (for direct visualization and biopsy)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical history, physical examination, and imaging findings. Fibroids are typically diagnosed when a pelvic ultrasound shows characteristic features of fibroids.",
+      "differentials": [
+        "Endometrial polyps",
+        "Adenomyosis",
+        "Ovarian tumors",
+        "Pelvic inflammatory disease (PID)",
+        "Ectopic pregnancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NSAIDs for pain relief",
+          "Iron supplementation for anemia"
+        ],
+        "secondLine": [
+          "Hormonal therapy (e.g., combined oral contraceptives)"
+        ],
+        "procedures": [
+          "Uterine artery embolization (for symptomatic relief)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring for asymptomatic fibroids",
+          "Hormonal treatments (e.g., GnRH agonists, progestins)"
+        ],
+        "secondLine": [
+          "Surgical options (myomectomy or hysterectomy) for symptomatic fibroids"
+        ],
+        "monitoring": [
+          "Regular follow-up with ultrasound to assess fibroid size and symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Leuprolide (GnRH agonist)",
+          "mechanism": "Suppresses estrogen and progesterone production, leading to reduced fibroid size.",
+          "dosing": "3.75 mg IM monthly or 11.25 mg every 3 months.",
+          "sideEffects": "Hot flashes, decreased libido, bone density loss, mood changes.",
+          "notes": "Used for short-term management prior to surgery."
+        },
+        {
+          "name": "Medroxyprogesterone acetate (Progestin)",
+          "mechanism": "Reduces menstrual bleeding and can help manage symptoms.",
+          "dosing": "10-20 mg daily for 10-14 days per cycle.",
+          "sideEffects": "Weight gain, mood changes, irregular bleeding.",
+          "notes": "Can be used for symptomatic relief."
+        },
+        {
+          "name": "Tranexamic acid",
+          "mechanism": "Antifibrinolytic agent that reduces menstrual bleeding.",
+          "dosing": "1 g orally 3 times daily during menstruation.",
+          "sideEffects": "Nausea, diarrhea, headache.",
+          "notes": "Useful for managing heavy menstrual bleeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Myomectomy",
+          "description": "Surgical removal of fibroids while preserving the uterus.",
+          "indications": "Symptomatic fibroids, desire to maintain fertility.",
+          "risks": "Bleeding, infection, uterine perforation, recurrence of fibroids."
+        },
+        {
+          "name": "Hysterectomy",
+          "description": "Surgical removal of the uterus, can be abdominal or vaginal.",
+          "indications": "Severe symptoms, completed childbearing, large fibroids.",
+          "risks": "Infection, bleeding, injury to surrounding organs, hormonal changes."
+        },
+        {
+          "name": "Uterine artery embolization",
+          "description": "Minimally invasive procedure that blocks blood flow to fibroids, causing them to shrink.",
+          "indications": "Symptomatic fibroids, not desiring future fertility.",
+          "risks": "Pain, infection, post-embolization syndrome, potential for fibroid recurrence."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for fibroids is generally good, especially for asymptomatic cases. Symptomatic fibroids can be effectively managed with medical or surgical interventions, and many women experience relief of symptoms post-treatment.",
+    "complications": [
+      "Anemia due to heavy menstrual bleeding",
+      "Infertility (in some cases)",
+      "Pregnancy complications (e.g., miscarriage, preterm labor)",
+      "Degeneration of fibroids leading to acute pain"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of fibroids, perform initial assessments, and refer patients for appropriate imaging and specialist care. They should also be aware of the management options and potential complications.",
+    "escalation": "Refer to a gynaecologist if there are red flags, severe symptoms, or if the patient desires surgical intervention.",
+    "keySafetyConsiderations": "Monitor for signs of anemia in patients with heavy menstrual bleeding. Be aware of the potential for rapid growth of fibroids and the need for timely intervention if complications arise."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "drug_eruptions",
+  "name": "Drug eruptions?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:24:29.915451",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Drug eruptions?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDrug eruptions, also known as drug-induced skin reactions, are adverse cutaneous reactions that occur as a result of medication use. They can range from mild rashes to severe conditions such as Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN).\n\n### Epidemiology\nDrug eruptions are common, accounting for approximately 2-3% of all hospital admissions. They can occur with any medication, but certain classes such as antibiotics, anticonvulsants, and non-steroidal anti-inflammatory drugs (NSAIDs) are more frequently implicated.\n\n### Essential Pathophysiology\nThe pathophysiology of drug eruptions involves immune-mediated mechanisms, including Type I hypersensitivity (IgE-mediated), Type II (cytotoxic), Type III (immune complex-mediated), and Type IV (delayed-type hypersensitivity). These reactions can lead to keratinocyte apoptosis, inflammation, and disruption of the skin barrier.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Itching (pruritus)\n- Burning sensation\n- Pain\n- Fever\n- Malaise\n\n### Key Signs\n- Erythematous macules and papules\n- Urticaria (hives)\n- Vesicles or bullae\n- Desquamation\n- Target lesions (in cases of SJS/TEN)\n\n### Atypical Presentations\n- Erythema multiforme-like lesions\n- Exfoliative dermatitis\n- Fixed drug eruption (localized reaction)\n\n### Red Flags Requiring Immediate Action\n- Severe blistering or peeling of the skin\n- Mucosal involvement (oral, ocular, genital)\n- Fever and systemic symptoms\n- Rapid progression of skin lesions\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed medication history (including over-the-counter and herbal medications)\n- Physical examination of skin lesions\n- Laboratory tests (CBC, liver function tests, renal function tests)\n\n### Second-line Investigations\n- Skin biopsy (if diagnosis is uncertain)\n- Patch testing (for suspected delayed hypersensitivity)\n\n### Specialist Tests\n- Drug-specific IgE testing (for certain drugs)\n- Referral to dermatology for severe cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the temporal relationship between drug exposure and the onset of skin lesions, along with the characteristics of the eruption. A thorough medication history is essential.\n\n### Key Differential Diagnoses to Exclude\n- Infectious rashes (e.g., viral exanthems)\n- Autoimmune conditions (e.g., lupus erythematosus)\n- Other dermatological conditions (e.g., psoriasis, eczema)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate discontinuation of the offending drug\n- Supportive care (cool compresses, emollients)\n- Antihistamines for pruritus\n\n#### Second-line Treatments\n- Corticosteroids (topical or systemic depending on severity)\n- Consideration of systemic immunosuppressants in severe cases\n\n#### Emergency Procedures\n- Skin biopsy for diagnosis in uncertain cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Avoidance of the offending drug\n- Education on recognizing symptoms of drug eruptions\n\n#### Second-line Treatments\n- Regular follow-up to monitor for recurrence or new drug reactions\n\n#### Monitoring Requirements\n- Monitor for signs of systemic involvement (e.g., fever, mucosal lesions)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Antihistamines\n- **Mechanism of Action**: Block histamine receptors to reduce itching and allergic symptoms.\n- **Typical Dosing Range**: Cetirizine 10 mg once daily; Loratadine 10 mg once daily.\n- **Key Side Effects/Contraindications**: Drowsiness, dry mouth, dizziness.\n- **When to Use vs. Alternatives**: Non-sedating antihistamines are preferred for chronic management.\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory effects reduce immune response and inflammation.\n- **Typical Dosing Range**: Topical hydrocortisone 1% applied to affected areas; systemic prednisone 0.5-1 mg/kg/day for severe cases.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, adrenal suppression with long-term use.\n- **When to Use vs. Alternatives**: Taper systemic corticosteroids to avoid withdrawal symptoms.\n\n### Procedures\n\n#### Skin biopsy\n- **What it Involves**: A small sample of skin is removed for histological examination to confirm diagnosis.\n- **Indications**: Uncertain diagnosis, severe or atypical drug eruptions.\n- **Key Risks/Complications**: Infection, scarring, bleeding.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost drug eruptions resolve with discontinuation of the offending agent, but some severe forms (e.g., SJS/TEN) can have significant morbidity and mortality. Long-term follow-up may be necessary for severe cases.\n\n### Important Complications to Watch For\n- Secondary infections due to skin barrier disruption\n- Scarring or pigmentary changes\n- Systemic involvement leading to multi-organ failure in severe cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize drug eruptions, take a thorough medication history, initiate management, and refer to dermatology when necessary. They should also educate patients on avoiding known allergens and recognizing early signs of drug reactions.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology for severe cases, especially those with systemic symptoms or mucosal involvement. Immediate referral to emergency services is warranted for life-threatening reactions such as SJS/TEN.\n\n### Key Safety Considerations\nAlways consider drug eruptions in patients presenting with new skin lesions after starting a new medication. Document all medications thoroughly and educate patients on the importance of reporting any new symptoms after drug initiation.\n",
+  "content": {
+    "overview": {
+      "definition": "Drug eruptions, also known as drug-induced skin reactions, are adverse cutaneous reactions that occur as a result of medication use. They can range from mild rashes to severe conditions such as Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN).",
+      "epidemiology": "Drug eruptions are common, accounting for approximately 2-3% of all hospital admissions. They can occur with any medication, but certain classes such as antibiotics, anticonvulsants, and non-steroidal anti-inflammatory drugs (NSAIDs) are more frequently implicated.",
+      "pathophysiology": "The pathophysiology of drug eruptions involves immune-mediated mechanisms, including Type I hypersensitivity (IgE-mediated), Type II (cytotoxic), Type III (immune complex-mediated), and Type IV (delayed-type hypersensitivity). These reactions can lead to keratinocyte apoptosis, inflammation, and disruption of the skin barrier."
+    },
+    "recognition": {
+      "symptoms": [
+        "Itching (pruritus)",
+        "Burning sensation",
+        "Pain",
+        "Fever",
+        "Malaise"
+      ],
+      "signs": [
+        "Erythematous macules and papules",
+        "Urticaria (hives)",
+        "Vesicles or bullae",
+        "Desquamation",
+        "Target lesions (in cases of SJS/TEN)"
+      ],
+      "atypicalPresentations": [
+        "Erythema multiforme-like lesions",
+        "Exfoliative dermatitis",
+        "Fixed drug eruption (localized reaction)"
+      ],
+      "redFlags": [
+        "Severe blistering or peeling of the skin",
+        "Mucosal involvement (oral, ocular, genital)",
+        "Fever and systemic symptoms",
+        "Rapid progression of skin lesions"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed medication history (including over-the-counter and herbal medications)",
+        "Physical examination of skin lesions",
+        "Laboratory tests (CBC, liver function tests, renal function tests)"
+      ],
+      "secondLine": [
+        "Skin biopsy (if diagnosis is uncertain)",
+        "Patch testing (for suspected delayed hypersensitivity)"
+      ],
+      "specialistTests": [
+        "Drug-specific IgE testing (for certain drugs)",
+        "Referral to dermatology for severe cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the temporal relationship between drug exposure and the onset of skin lesions, along with the characteristics of the eruption. A thorough medication history is essential.",
+      "differentials": [
+        "Infectious rashes (e.g., viral exanthems)",
+        "Autoimmune conditions (e.g., lupus erythematosus)",
+        "Other dermatological conditions (e.g., psoriasis, eczema)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate discontinuation of the offending drug",
+          "Supportive care (cool compresses, emollients)",
+          "Antihistamines for pruritus"
+        ],
+        "secondLine": [
+          "Corticosteroids (topical or systemic depending on severity)",
+          "Consideration of systemic immunosuppressants in severe cases"
+        ],
+        "procedures": [
+          "Skin biopsy for diagnosis in uncertain cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Avoidance of the offending drug",
+          "Education on recognizing symptoms of drug eruptions"
+        ],
+        "secondLine": [
+          "Regular follow-up to monitor for recurrence or new drug reactions"
+        ],
+        "monitoring": [
+          "Monitor for signs of systemic involvement (e.g., fever, mucosal lesions)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Antihistamines",
+          "mechanism": "Block histamine receptors to reduce itching and allergic symptoms.",
+          "dosing": "Cetirizine 10 mg once daily; Loratadine 10 mg once daily.",
+          "sideEffects": "Drowsiness, dry mouth, dizziness.",
+          "notes": "Non-sedating antihistamines are preferred for chronic management."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory effects reduce immune response and inflammation.",
+          "dosing": "Topical hydrocortisone 1% applied to affected areas; systemic prednisone 0.5-1 mg/kg/day for severe cases.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, adrenal suppression with long-term use.",
+          "notes": "Taper systemic corticosteroids to avoid withdrawal symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skin biopsy",
+          "description": "A small sample of skin is removed for histological examination to confirm diagnosis.",
+          "indications": "Uncertain diagnosis, severe or atypical drug eruptions.",
+          "risks": "Infection, scarring, bleeding."
+        }
+      ]
+    },
+    "prognosis": "Most drug eruptions resolve with discontinuation of the offending agent, but some severe forms (e.g., SJS/TEN) can have significant morbidity and mortality. Long-term follow-up may be necessary for severe cases.",
+    "complications": [
+      "Secondary infections due to skin barrier disruption",
+      "Scarring or pigmentary changes",
+      "Systemic involvement leading to multi-organ failure in severe cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize drug eruptions, take a thorough medication history, initiate management, and refer to dermatology when necessary. They should also educate patients on avoiding known allergens and recognizing early signs of drug reactions.",
+    "escalation": "Refer to dermatology for severe cases, especially those with systemic symptoms or mucosal involvement. Immediate referral to emergency services is warranted for life-threatening reactions such as SJS/TEN.",
+    "keySafetyConsiderations": "Always consider drug eruptions in patients presenting with new skin lesions after starting a new medication. Document all medications thoroughly and educate patients on the importance of reporting any new symptoms after drug initiation."
+  }
+}

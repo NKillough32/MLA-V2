@@ -1,0 +1,121 @@
+{
+  "id": "impingement_syndromesubacromial_bursitis",
+  "name": "Impingement syndrome/subacromial bursitis?",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:30:34.368240",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Impingement syndrome/subacromial bursitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nImpingement syndrome, also known as subacromial bursitis, is a condition characterized by the compression of the rotator cuff tendons and subacromial bursa beneath the acromion during shoulder movements, leading to pain and functional impairment.\n\n### Epidemiology\nIt is one of the most common causes of shoulder pain, particularly in individuals aged 30-60 years, with a higher prevalence in athletes and those with occupations involving repetitive overhead activities.\n\n### Essential Pathophysiology\nThe condition arises from mechanical impingement of the rotator cuff tendons and subacromial bursa against the acromion, often due to structural abnormalities (e.g., acromion shape), inflammation, or degeneration of the rotator cuff tendons.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Shoulder pain, especially with overhead activities\n- Pain at rest or during sleep\n- Weakness in shoulder abduction and external rotation\n\n### Key Signs\n- Positive Neer test (pain on forward flexion with arm internally rotated)\n- Positive Hawkins-Kennedy test (pain on internal rotation with arm flexed)\n- Limited range of motion, particularly in abduction\n\n### Atypical Presentations\n- Pain referred to the lateral arm or neck\n- Symptoms mimicking cervical radiculopathy\n\n### Red Flags Requiring Immediate Action\n- Severe, unrelenting pain\n- Signs of systemic illness (fever, weight loss)\n- Neurological symptoms (numbness, tingling)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- X-ray of the shoulder to rule out bony abnormalities\n\n### Second-line Investigations\n- Ultrasound of the shoulder to assess rotator cuff integrity and bursa\n- MRI if there is suspicion of significant rotator cuff tear or other pathology\n\n### Specialist Tests\n- Arthroscopy for direct visualization and potential intervention if conservative management fails\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history, physical examination findings, and response to conservative treatment.\n\n### Key Differential Diagnoses to Exclude\n- Rotator cuff tear\n- Shoulder osteoarthritis\n- Cervical radiculopathy\n- Adhesive capsulitis (frozen shoulder)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Ice application to reduce inflammation\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Physical therapy focusing on strengthening and range of motion exercises\n- Corticosteroid injection into the subacromial space\n\n#### Emergency Procedures\n- Subacromial decompression surgery if conservative measures fail\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy and rehabilitation\n- Gradual return to activities with modifications\n\n#### Second-line Treatments\n- Surgical intervention if symptoms persist despite conservative management\n\n#### Monitoring Requirements\n- Regular follow-up to assess progress and adjust treatment as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective NSAID that reduces inflammation and pain\n- **Typical Dosing Range**: 400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Consider renal function and gastrointestinal history before prescribing.\n\n#### Corticosteroid (e.g., Triamcinolone)\n- **Mechanism of Action**: Anti-inflammatory agent that reduces swelling and pain\n- **Typical Dosing Range**: 10-40 mg injected into the subacromial space, depending on severity\n- **Key Side Effects/Contraindications**: Local pain, infection risk, skin atrophy\n- **When to Use vs. Alternatives**: Limit frequency of injections to avoid joint damage.\n\n### Procedures\n\n#### Subacromial Decompression\n- **What it Involves**: Surgical procedure to remove bone spurs and/or inflamed bursa to relieve impingement\n- **Indications**: Persistent symptoms despite conservative management, significant functional impairment\n- **Key Risks/Complications**: Infection, bleeding, nerve injury, failure to relieve symptoms\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients experience significant improvement with conservative management, but some may require surgical intervention. Full recovery can take several months, and chronic cases may lead to persistent pain and functional limitations.\n\n### Important Complications to Watch For\n- Chronic shoulder pain\n- Rotator cuff tears\n- Adhesive capsulitis (frozen shoulder)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on activity modification, prescribe appropriate medications, and refer to physiotherapy. They should also recognize when to escalate care to specialists.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopedic or rheumatology specialists if there is no improvement after 6-8 weeks of conservative management or if red flags are present.\n\n### Key Safety Considerations\nMonitor for signs of infection post-injection, assess for contraindications to NSAIDs, and ensure appropriate follow-up for patients undergoing surgical procedures.\n",
+  "content": {
+    "overview": {
+      "definition": "Impingement syndrome, also known as subacromial bursitis, is a condition characterized by the compression of the rotator cuff tendons and subacromial bursa beneath the acromion during shoulder movements, leading to pain and functional impairment.",
+      "epidemiology": "It is one of the most common causes of shoulder pain, particularly in individuals aged 30-60 years, with a higher prevalence in athletes and those with occupations involving repetitive overhead activities.",
+      "pathophysiology": "The condition arises from mechanical impingement of the rotator cuff tendons and subacromial bursa against the acromion, often due to structural abnormalities (e.g., acromion shape), inflammation, or degeneration of the rotator cuff tendons."
+    },
+    "recognition": {
+      "symptoms": [
+        "Shoulder pain, especially with overhead activities",
+        "Pain at rest or during sleep",
+        "Weakness in shoulder abduction and external rotation"
+      ],
+      "signs": [
+        "Positive Neer test (pain on forward flexion with arm internally rotated)",
+        "Positive Hawkins-Kennedy test (pain on internal rotation with arm flexed)",
+        "Limited range of motion, particularly in abduction"
+      ],
+      "atypicalPresentations": [
+        "Pain referred to the lateral arm or neck",
+        "Symptoms mimicking cervical radiculopathy"
+      ],
+      "redFlags": [
+        "Severe, unrelenting pain",
+        "Signs of systemic illness (fever, weight loss)",
+        "Neurological symptoms (numbness, tingling)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "X-ray of the shoulder to rule out bony abnormalities"
+      ],
+      "secondLine": [
+        "Ultrasound of the shoulder to assess rotator cuff integrity and bursa",
+        "MRI if there is suspicion of significant rotator cuff tear or other pathology"
+      ],
+      "specialistTests": [
+        "Arthroscopy for direct visualization and potential intervention if conservative management fails"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history, physical examination findings, and response to conservative treatment.",
+      "differentials": [
+        "Rotator cuff tear",
+        "Shoulder osteoarthritis",
+        "Cervical radiculopathy",
+        "Adhesive capsulitis (frozen shoulder)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Ice application to reduce inflammation",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy focusing on strengthening and range of motion exercises",
+          "Corticosteroid injection into the subacromial space"
+        ],
+        "procedures": [
+          "Subacromial decompression surgery if conservative measures fail"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy and rehabilitation",
+          "Gradual return to activities with modifications"
+        ],
+        "secondLine": [
+          "Surgical intervention if symptoms persist despite conservative management"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess progress and adjust treatment as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective NSAID that reduces inflammation and pain",
+          "dosing": "400-600 mg orally every 6-8 hours as needed, not exceeding 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Consider renal function and gastrointestinal history before prescribing."
+        },
+        {
+          "name": "Corticosteroid (e.g., Triamcinolone)",
+          "mechanism": "Anti-inflammatory agent that reduces swelling and pain",
+          "dosing": "10-40 mg injected into the subacromial space, depending on severity",
+          "sideEffects": "Local pain, infection risk, skin atrophy",
+          "notes": "Limit frequency of injections to avoid joint damage."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Subacromial Decompression",
+          "description": "Surgical procedure to remove bone spurs and/or inflamed bursa to relieve impingement",
+          "indications": "Persistent symptoms despite conservative management, significant functional impairment",
+          "risks": "Infection, bleeding, nerve injury, failure to relieve symptoms"
+        }
+      ]
+    },
+    "prognosis": "Most patients experience significant improvement with conservative management, but some may require surgical intervention. Full recovery can take several months, and chronic cases may lead to persistent pain and functional limitations.",
+    "complications": [
+      "Chronic shoulder pain",
+      "Rotator cuff tears",
+      "Adhesive capsulitis (frozen shoulder)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on activity modification, prescribe appropriate medications, and refer to physiotherapy. They should also recognize when to escalate care to specialists.",
+    "escalation": "Refer to orthopedic or rheumatology specialists if there is no improvement after 6-8 weeks of conservative management or if red flags are present.",
+    "keySafetyConsiderations": "Monitor for signs of infection post-injection, assess for contraindications to NSAIDs, and ensure appropriate follow-up for patients undergoing surgical procedures."
+  }
+}

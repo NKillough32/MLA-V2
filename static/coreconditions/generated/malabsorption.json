@@ -1,0 +1,138 @@
+{
+  "id": "malabsorption",
+  "name": "Malabsorption",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:47:18.632621",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Malabsorption: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMalabsorption is a condition in which the intestines cannot adequately absorb nutrients from the food consumed, leading to deficiencies in vitamins, minerals, and other essential nutrients.\n\n### Epidemiology\nMalabsorption syndromes can affect individuals of all ages, but certain conditions like celiac disease are more prevalent in specific populations. The incidence of malabsorption varies based on underlying causes, with celiac disease affecting approximately 1% of the population in Western countries.\n\n### Essential Pathophysiology\nMalabsorption can occur due to various mechanisms including: 1. Mucosal disease (e.g., celiac disease, Crohn's disease) leading to damage of the intestinal lining. 2. Enzyme deficiencies (e.g., pancreatic insufficiency) that prevent proper digestion. 3. Bacterial overgrowth that interferes with nutrient absorption. 4. Structural abnormalities (e.g., short bowel syndrome) that reduce the absorptive surface area.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Diarrhea\n- Steatorrhea (fatty stools)\n- Weight loss\n- Abdominal pain\n- Bloating and flatulence\n- Fatigue\n- Nutritional deficiencies (e.g., anemia, osteoporosis)\n\n### Key Signs\n- Dehydration\n- Malnutrition (e.g., muscle wasting, edema)\n- Dermatitis (e.g., dermatitis herpetiformis in celiac disease)\n- Abdominal tenderness\n- Signs of vitamin deficiencies (e.g., glossitis, cheilosis)\n\n### Atypical Presentations\n- Failure to thrive in children\n- Neurological symptoms (e.g., peripheral neuropathy due to vitamin B12 deficiency)\n- Bone pain or fractures due to vitamin D deficiency\n\n### Red Flags Requiring Immediate Action\n- Severe weight loss\n- Persistent diarrhea lasting more than 2 weeks\n- Signs of gastrointestinal bleeding\n- Severe abdominal pain\n- Signs of dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Basic metabolic panel\n- Liver function tests\n- Thyroid function tests\n- Stool studies (e.g., fecal fat test)\n\n### Second-line Investigations\n- Serological tests for celiac disease (e.g., tTG-IgA)\n- Pancreatic function tests (e.g., fecal elastase)\n- Hydrogen breath tests (for carbohydrate malabsorption)\n\n### Specialist Tests\n- Endoscopy with biopsy (for celiac disease or other mucosal diseases)\n- Imaging studies (e.g., abdominal ultrasound, CT scan)\n- Small bowel follow-through\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of malabsorption is based on clinical symptoms, laboratory findings (e.g., elevated fecal fat), and confirmation of underlying causes through specific tests.\n\n### Key Differential Diagnoses to Exclude\n- Celiac disease\n- Crohn's disease\n- Pancreatic insufficiency\n- Bacterial overgrowth\n- Lactose intolerance\n- Intestinal infections (e.g., giardiasis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rehydration (oral or IV fluids)\n- Nutritional support (e.g., enteral feeding if necessary)\n\n#### Second-line Treatments\n- Treat underlying cause (e.g., antibiotics for infections, enzyme replacement for pancreatic insufficiency)\n\n#### Emergency Procedures\n- Endoscopy for biopsy if celiac disease or other mucosal disease is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (e.g., gluten-free diet for celiac disease)\n- Nutritional supplementation (e.g., vitamins, minerals)\n\n#### Second-line Treatments\n- Medications to manage symptoms (e.g., loperamide for diarrhea)\n\n#### Monitoring Requirements\n- Regular follow-up for nutritional status\n- Monitoring for complications (e.g., osteoporosis screening)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Pancrelipase\n- **Mechanism of Action**: Enzyme replacement therapy to aid digestion in pancreatic insufficiency.\n- **Typical Dosing Range**: Dosing varies based on the severity of insufficiency; typically, 10,000-25,000 units of lipase with meals.\n- **Key Side Effects/Contraindications**: Abdominal pain, diarrhea, constipation, and potential for fibrosing colonopathy with high doses.\n- **When to Use vs. Alternatives**: Monitor for efficacy and adjust dosing based on symptoms.\n\n#### Loperamide\n- **Mechanism of Action**: Opioid receptor agonist that slows intestinal motility, reducing diarrhea.\n- **Typical Dosing Range**: 4 mg initially, followed by 2 mg after each loose stool, max 16 mg/day.\n- **Key Side Effects/Contraindications**: Constipation, dizziness, abdominal discomfort.\n- **When to Use vs. Alternatives**: Use with caution in infectious diarrhea.\n\n### Procedures\n\n#### Endoscopy with biopsy\n- **What it Involves**: A procedure to visualize the gastrointestinal tract and obtain tissue samples for histological examination.\n- **Indications**: Suspected celiac disease, Crohn's disease, or other mucosal disorders.\n- **Key Risks/Complications**: Bleeding, perforation, infection, sedation-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of malabsorption depends on the underlying cause. Conditions like celiac disease have a good prognosis with dietary management, while others may have chronic implications.\n\n### Important Complications to Watch For\n- Nutritional deficiencies (e.g., anemia, osteoporosis)\n- Growth retardation in children\n- Increased risk of infections due to malnutrition\n- Bowel obstruction in severe cases of Crohn's disease\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of malabsorption, initiate appropriate investigations, manage acute presentations, and refer to specialists when necessary. They should also provide education on dietary modifications and monitor for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology for persistent symptoms, severe malnutrition, or when initial investigations do not yield a diagnosis.\n\n### Key Safety Considerations\nEnsure proper hydration in patients with diarrhea, monitor for signs of malnutrition, and be aware of potential drug interactions with nutritional supplements.\n",
+  "content": {
+    "overview": {
+      "definition": "Malabsorption is a condition in which the intestines cannot adequately absorb nutrients from the food consumed, leading to deficiencies in vitamins, minerals, and other essential nutrients.",
+      "epidemiology": "Malabsorption syndromes can affect individuals of all ages, but certain conditions like celiac disease are more prevalent in specific populations. The incidence of malabsorption varies based on underlying causes, with celiac disease affecting approximately 1% of the population in Western countries.",
+      "pathophysiology": "Malabsorption can occur due to various mechanisms including: 1. Mucosal disease (e.g., celiac disease, Crohn's disease) leading to damage of the intestinal lining. 2. Enzyme deficiencies (e.g., pancreatic insufficiency) that prevent proper digestion. 3. Bacterial overgrowth that interferes with nutrient absorption. 4. Structural abnormalities (e.g., short bowel syndrome) that reduce the absorptive surface area."
+    },
+    "recognition": {
+      "symptoms": [
+        "Diarrhea",
+        "Steatorrhea (fatty stools)",
+        "Weight loss",
+        "Abdominal pain",
+        "Bloating and flatulence",
+        "Fatigue",
+        "Nutritional deficiencies (e.g., anemia, osteoporosis)"
+      ],
+      "signs": [
+        "Dehydration",
+        "Malnutrition (e.g., muscle wasting, edema)",
+        "Dermatitis (e.g., dermatitis herpetiformis in celiac disease)",
+        "Abdominal tenderness",
+        "Signs of vitamin deficiencies (e.g., glossitis, cheilosis)"
+      ],
+      "atypicalPresentations": [
+        "Failure to thrive in children",
+        "Neurological symptoms (e.g., peripheral neuropathy due to vitamin B12 deficiency)",
+        "Bone pain or fractures due to vitamin D deficiency"
+      ],
+      "redFlags": [
+        "Severe weight loss",
+        "Persistent diarrhea lasting more than 2 weeks",
+        "Signs of gastrointestinal bleeding",
+        "Severe abdominal pain",
+        "Signs of dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Basic metabolic panel",
+        "Liver function tests",
+        "Thyroid function tests",
+        "Stool studies (e.g., fecal fat test)"
+      ],
+      "secondLine": [
+        "Serological tests for celiac disease (e.g., tTG-IgA)",
+        "Pancreatic function tests (e.g., fecal elastase)",
+        "Hydrogen breath tests (for carbohydrate malabsorption)"
+      ],
+      "specialistTests": [
+        "Endoscopy with biopsy (for celiac disease or other mucosal diseases)",
+        "Imaging studies (e.g., abdominal ultrasound, CT scan)",
+        "Small bowel follow-through"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of malabsorption is based on clinical symptoms, laboratory findings (e.g., elevated fecal fat), and confirmation of underlying causes through specific tests.",
+      "differentials": [
+        "Celiac disease",
+        "Crohn's disease",
+        "Pancreatic insufficiency",
+        "Bacterial overgrowth",
+        "Lactose intolerance",
+        "Intestinal infections (e.g., giardiasis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rehydration (oral or IV fluids)",
+          "Nutritional support (e.g., enteral feeding if necessary)"
+        ],
+        "secondLine": [
+          "Treat underlying cause (e.g., antibiotics for infections, enzyme replacement for pancreatic insufficiency)"
+        ],
+        "procedures": [
+          "Endoscopy for biopsy if celiac disease or other mucosal disease is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (e.g., gluten-free diet for celiac disease)",
+          "Nutritional supplementation (e.g., vitamins, minerals)"
+        ],
+        "secondLine": [
+          "Medications to manage symptoms (e.g., loperamide for diarrhea)"
+        ],
+        "monitoring": [
+          "Regular follow-up for nutritional status",
+          "Monitoring for complications (e.g., osteoporosis screening)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Pancrelipase",
+          "mechanism": "Enzyme replacement therapy to aid digestion in pancreatic insufficiency.",
+          "dosing": "Dosing varies based on the severity of insufficiency; typically, 10,000-25,000 units of lipase with meals.",
+          "sideEffects": "Abdominal pain, diarrhea, constipation, and potential for fibrosing colonopathy with high doses.",
+          "notes": "Monitor for efficacy and adjust dosing based on symptoms."
+        },
+        {
+          "name": "Loperamide",
+          "mechanism": "Opioid receptor agonist that slows intestinal motility, reducing diarrhea.",
+          "dosing": "4 mg initially, followed by 2 mg after each loose stool, max 16 mg/day.",
+          "sideEffects": "Constipation, dizziness, abdominal discomfort.",
+          "notes": "Use with caution in infectious diarrhea."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Endoscopy with biopsy",
+          "description": "A procedure to visualize the gastrointestinal tract and obtain tissue samples for histological examination.",
+          "indications": "Suspected celiac disease, Crohn's disease, or other mucosal disorders.",
+          "risks": "Bleeding, perforation, infection, sedation-related complications."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of malabsorption depends on the underlying cause. Conditions like celiac disease have a good prognosis with dietary management, while others may have chronic implications.",
+    "complications": [
+      "Nutritional deficiencies (e.g., anemia, osteoporosis)",
+      "Growth retardation in children",
+      "Increased risk of infections due to malnutrition",
+      "Bowel obstruction in severe cases of Crohn's disease"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of malabsorption, initiate appropriate investigations, manage acute presentations, and refer to specialists when necessary. They should also provide education on dietary modifications and monitor for complications.",
+    "escalation": "Refer to gastroenterology for persistent symptoms, severe malnutrition, or when initial investigations do not yield a diagnosis.",
+    "keySafetyConsiderations": "Ensure proper hydration in patients with diarrhea, monitor for signs of malnutrition, and be aware of potential drug interactions with nutritional supplements."
+  }
+}

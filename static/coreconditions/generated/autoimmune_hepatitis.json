@@ -1,0 +1,134 @@
+{
+  "id": "autoimmune_hepatitis",
+  "name": "Autoimmune hepatitis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:44:04.250090",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Autoimmune hepatitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAutoimmune hepatitis (AIH) is a chronic inflammatory liver disease characterized by the presence of autoantibodies and elevated serum immunoglobulin levels, leading to hepatocellular injury and inflammation.\n\n### Epidemiology\nAIH is more common in women, with a peak incidence between the ages of 15-40 and 50-70. The prevalence varies globally, with higher rates reported in Northern Europe and North America.\n\n### Essential Pathophysiology\nThe exact cause of AIH is unknown, but it is believed to involve a combination of genetic predisposition and environmental triggers (such as viral infections or drugs) that lead to an inappropriate immune response against liver antigens, resulting in inflammation and liver damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Jaundice\n- Abdominal pain\n- Nausea\n- Loss of appetite\n- Pruritus\n\n### Key Signs\n- Hepatomegaly\n- Splenomegaly\n- Ascites\n- Spider angiomata\n- Palmar erythema\n- Asterixis\n\n### Atypical Presentations\n- Acute liver failure\n- Chronic liver disease symptoms in older adults\n- Overlap syndromes with primary biliary cholangitis or primary sclerosing cholangitis\n\n### Red Flags Requiring Immediate Action\n- Severe jaundice\n- Rapid deterioration of liver function\n- Signs of hepatic encephalopathy\n- Coagulopathy or bleeding tendencies\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Autoantibody testing (ANA, SMA, LKM-1)\n- Serum immunoglobulins (IgG)\n\n### Second-line Investigations\n- Liver biopsy (to assess histological features)\n- Viral hepatitis serologies (to rule out viral causes)\n- MRI or ultrasound (to assess liver architecture)\n\n### Specialist Tests\n- HLA typing (in selected cases)\n- FibroScan (to assess liver stiffness)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of AIH is based on the presence of characteristic symptoms, elevated liver enzymes, positive autoantibodies, and histological confirmation via liver biopsy showing interface hepatitis and plasma cell infiltration.\n\n### Key Differential Diagnoses to Exclude\n- Viral hepatitis (A, B, C)\n- Alcoholic liver disease\n- Non-alcoholic fatty liver disease (NAFLD)\n- Drug-induced liver injury\n- Primary biliary cholangitis\n- Primary sclerosing cholangitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., prednisolone 40-60 mg daily)\n\n#### Second-line Treatments\n- Azathioprine (if corticosteroids alone are insufficient)\n\n#### Emergency Procedures\n- Liver biopsy (for diagnosis and to assess severity)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term corticosteroids (tapered to lowest effective dose)\n- Azathioprine (1-2 mg/kg/day) for maintenance therapy\n\n#### Second-line Treatments\n- Mycophenolate mofetil (if azathioprine is not tolerated)\n- Liver transplantation (in cases of end-stage liver disease)\n\n#### Monitoring Requirements\n- Regular LFTs to monitor liver function\n- Monitoring for side effects of immunosuppressive therapy\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial 40-60 mg daily, tapering to lowest effective dose.\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, diabetes, hypertension, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose based on response.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.\n- **Typical Dosing Range**: 1-2 mg/kg/day, adjusted based on TPMT levels.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased risk of malignancy.\n- **When to Use vs. Alternatives**: Monitor complete blood count (CBC) regularly.\n\n### Procedures\n\n#### Liver biopsy\n- **What it Involves**: Percutaneous biopsy of liver tissue to assess for histological changes.\n- **Indications**: To confirm diagnosis of AIH and assess severity of liver damage.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many patients achieve remission and have a good prognosis. However, some may progress to cirrhosis or liver failure if untreated.\n\n### Important Complications to Watch For\n- Cirrhosis\n- Liver failure\n- Hepatocellular carcinoma\n- Increased risk of autoimmune diseases (e.g., thyroid disease, rheumatoid arthritis)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of AIH, perform initial investigations, and initiate treatment under supervision. They should also monitor patients for complications and side effects of therapy.\n\n### When to Escalate to Senior/Specialist\nRefer to a gastroenterologist or hepatologist if there is rapid deterioration of liver function, severe symptoms, or if the patient does not respond to initial treatment.\n\n### Key Safety Considerations\nMonitor liver function tests and complete blood counts regularly during treatment. Be vigilant for signs of infection or complications related to immunosuppressive therapy.\n",
+  "content": {
+    "overview": {
+      "definition": "Autoimmune hepatitis (AIH) is a chronic inflammatory liver disease characterized by the presence of autoantibodies and elevated serum immunoglobulin levels, leading to hepatocellular injury and inflammation.",
+      "epidemiology": "AIH is more common in women, with a peak incidence between the ages of 15-40 and 50-70. The prevalence varies globally, with higher rates reported in Northern Europe and North America.",
+      "pathophysiology": "The exact cause of AIH is unknown, but it is believed to involve a combination of genetic predisposition and environmental triggers (such as viral infections or drugs) that lead to an inappropriate immune response against liver antigens, resulting in inflammation and liver damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Jaundice",
+        "Abdominal pain",
+        "Nausea",
+        "Loss of appetite",
+        "Pruritus"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Ascites",
+        "Spider angiomata",
+        "Palmar erythema",
+        "Asterixis"
+      ],
+      "atypicalPresentations": [
+        "Acute liver failure",
+        "Chronic liver disease symptoms in older adults",
+        "Overlap syndromes with primary biliary cholangitis or primary sclerosing cholangitis"
+      ],
+      "redFlags": [
+        "Severe jaundice",
+        "Rapid deterioration of liver function",
+        "Signs of hepatic encephalopathy",
+        "Coagulopathy or bleeding tendencies"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Autoantibody testing (ANA, SMA, LKM-1)",
+        "Serum immunoglobulins (IgG)"
+      ],
+      "secondLine": [
+        "Liver biopsy (to assess histological features)",
+        "Viral hepatitis serologies (to rule out viral causes)",
+        "MRI or ultrasound (to assess liver architecture)"
+      ],
+      "specialistTests": [
+        "HLA typing (in selected cases)",
+        "FibroScan (to assess liver stiffness)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of AIH is based on the presence of characteristic symptoms, elevated liver enzymes, positive autoantibodies, and histological confirmation via liver biopsy showing interface hepatitis and plasma cell infiltration.",
+      "differentials": [
+        "Viral hepatitis (A, B, C)",
+        "Alcoholic liver disease",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Drug-induced liver injury",
+        "Primary biliary cholangitis",
+        "Primary sclerosing cholangitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., prednisolone 40-60 mg daily)"
+        ],
+        "secondLine": [
+          "Azathioprine (if corticosteroids alone are insufficient)"
+        ],
+        "procedures": [
+          "Liver biopsy (for diagnosis and to assess severity)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term corticosteroids (tapered to lowest effective dose)",
+          "Azathioprine (1-2 mg/kg/day) for maintenance therapy"
+        ],
+        "secondLine": [
+          "Mycophenolate mofetil (if azathioprine is not tolerated)",
+          "Liver transplantation (in cases of end-stage liver disease)"
+        ],
+        "monitoring": [
+          "Regular LFTs to monitor liver function",
+          "Monitoring for side effects of immunosuppressive therapy"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Glucocorticoid that reduces inflammation and immune response.",
+          "dosing": "Initial 40-60 mg daily, tapering to lowest effective dose.",
+          "sideEffects": "Weight gain, osteoporosis, diabetes, hypertension, increased infection risk.",
+          "notes": "Monitor for side effects and adjust dose based on response."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.",
+          "dosing": "1-2 mg/kg/day, adjusted based on TPMT levels.",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased risk of malignancy.",
+          "notes": "Monitor complete blood count (CBC) regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Liver biopsy",
+          "description": "Percutaneous biopsy of liver tissue to assess for histological changes.",
+          "indications": "To confirm diagnosis of AIH and assess severity of liver damage.",
+          "risks": "Bleeding, infection, pain at the biopsy site."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many patients achieve remission and have a good prognosis. However, some may progress to cirrhosis or liver failure if untreated.",
+    "complications": [
+      "Cirrhosis",
+      "Liver failure",
+      "Hepatocellular carcinoma",
+      "Increased risk of autoimmune diseases (e.g., thyroid disease, rheumatoid arthritis)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of AIH, perform initial investigations, and initiate treatment under supervision. They should also monitor patients for complications and side effects of therapy.",
+    "escalation": "Refer to a gastroenterologist or hepatologist if there is rapid deterioration of liver function, severe symptoms, or if the patient does not respond to initial treatment.",
+    "keySafetyConsiderations": "Monitor liver function tests and complete blood counts regularly during treatment. Be vigilant for signs of infection or complications related to immunosuppressive therapy."
+  }
+}

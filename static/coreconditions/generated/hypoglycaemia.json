@@ -1,0 +1,139 @@
+{
+  "id": "hypoglycaemia",
+  "name": "Hypoglycaemia",
+  "domains": [
+    "Endocrine",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:31:57.479193",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hypoglycaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHypoglycaemia is defined as a condition where blood glucose levels fall below 4.0 mmol/L, leading to a range of symptoms due to insufficient glucose supply to the brain and other tissues.\n\n### Epidemiology\nHypoglycaemia is common in patients with diabetes, particularly those on insulin or sulfonylureas. It can also occur in non-diabetic individuals due to various causes, including fasting, alcohol consumption, and certain medical conditions. The prevalence in diabetic patients can be as high as 30-40%.\n\n### Essential Pathophysiology\nHypoglycaemia occurs when there is an imbalance between glucose production and utilization. In diabetes, it often results from excessive insulin administration or inadequate carbohydrate intake. In non-diabetic individuals, it can be due to increased insulin secretion (insulinomas), adrenal insufficiency, or other metabolic disorders.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sweating\n- Tremors\n- Palpitations\n- Hunger\n- Dizziness\n- Confusion\n- Irritability\n- Headache\n- Visual disturbances\n- Seizures\n- Loss of consciousness\n\n### Key Signs\n- Tachycardia\n- Pallor\n- Diaphoresis\n- Altered mental status\n- Hypoglycaemia on blood glucose testing\n\n### Atypical Presentations\n- Hypoglycaemia unawareness (no typical symptoms)\n- Neuroglycopenic symptoms without adrenergic symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe hypoglycaemia (requiring assistance)\n- Prolonged unconsciousness\n- Recurrent episodes of hypoglycaemia\n- Hypoglycaemia in a non-diabetic patient\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Capillary blood glucose measurement\n- Venous blood glucose measurement\n\n### Second-line Investigations\n- Serum insulin levels\n- C-peptide levels\n- Lactate levels\n- Electrolytes\n\n### Specialist Tests\n- 72-hour fast with supervised monitoring\n- Insulinoma workup (CT/MRI of pancreas)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of hypoglycaemia is based on the Whipple's triad: symptoms of hypoglycaemia, low blood glucose levels, and relief of symptoms upon glucose administration.\n\n### Key Differential Diagnoses to Exclude\n- Diabetes mellitus (insulin or sulfonylurea use)\n- Insulinoma\n- Adrenal insufficiency\n- Alcohol-induced hypoglycaemia\n- Reactive hypoglycaemia\n- Sepsis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oral glucose (if conscious)\n- Intravenous dextrose (D50W) if unconscious or unable to swallow\n\n#### Second-line Treatments\n- Glucagon injection (if IV access not available)\n\n#### Emergency Procedures\n- Administering IV dextrose (D50W) in emergency settings\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Patient education on carbohydrate intake and recognition of symptoms\n- Regular monitoring of blood glucose levels\n\n#### Second-line Treatments\n- Adjustment of diabetes medications (if applicable)\n- Dietary modifications\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess blood glucose control and medication adjustments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Glucose (Dextrose)\n- **Mechanism of Action**: Provides immediate source of glucose to raise blood sugar levels.\n- **Typical Dosing Range**: D50W (50% dextrose) 25g IV push; repeat as necessary.\n- **Key Side Effects/Contraindications**: Hyperglycaemia, fluid overload, phlebitis at injection site.\n- **When to Use vs. Alternatives**: Monitor blood glucose levels after administration.\n\n#### Glucagon\n- **Mechanism of Action**: Stimulates hepatic glycogenolysis and gluconeogenesis, increasing blood glucose levels.\n- **Typical Dosing Range**: 0.5-1 mg IM/SC; may repeat after 15 minutes if no response.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, allergic reactions.\n- **When to Use vs. Alternatives**: Useful in unconscious patients when IV access is not available.\n\n### Procedures\n\n#### Intravenous Dextrose Administration\n- **What it Involves**: Administering a concentrated glucose solution directly into the bloodstream.\n- **Indications**: Severe hypoglycaemia with altered consciousness or inability to take oral glucose.\n- **Key Risks/Complications**: Infection at the IV site, fluid overload, hyperglycaemia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and treatment, the prognosis for hypoglycaemia is generally good. However, recurrent episodes can lead to hypoglycaemia unawareness, increasing the risk of severe hypoglycaemia in the future.\n\n### Important Complications to Watch For\n- Seizures\n- Coma\n- Cerebral edema\n- Long-term neurological damage (rare)\n- Recurrent hypoglycaemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of hypoglycaemia, perform initial assessments, administer treatment, and educate patients on prevention strategies. They should also be aware of when to escalate care to senior medical staff.\n\n### When to Escalate to Senior/Specialist\nIf a patient is unresponsive or unable to take oral glucose, escalate to senior staff for IV dextrose administration. If recurrent hypoglycaemia occurs, refer to an endocrinologist for further evaluation.\n\n### Key Safety Considerations\nAlways confirm blood glucose levels before administering treatment. Monitor patients closely after treatment for potential rebound hypoglycaemia. Educate patients on recognizing symptoms and the importance of carrying fast-acting carbohydrates.\n",
+  "content": {
+    "overview": {
+      "definition": "Hypoglycaemia is defined as a condition where blood glucose levels fall below 4.0 mmol/L, leading to a range of symptoms due to insufficient glucose supply to the brain and other tissues.",
+      "epidemiology": "Hypoglycaemia is common in patients with diabetes, particularly those on insulin or sulfonylureas. It can also occur in non-diabetic individuals due to various causes, including fasting, alcohol consumption, and certain medical conditions. The prevalence in diabetic patients can be as high as 30-40%.",
+      "pathophysiology": "Hypoglycaemia occurs when there is an imbalance between glucose production and utilization. In diabetes, it often results from excessive insulin administration or inadequate carbohydrate intake. In non-diabetic individuals, it can be due to increased insulin secretion (insulinomas), adrenal insufficiency, or other metabolic disorders."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sweating",
+        "Tremors",
+        "Palpitations",
+        "Hunger",
+        "Dizziness",
+        "Confusion",
+        "Irritability",
+        "Headache",
+        "Visual disturbances",
+        "Seizures",
+        "Loss of consciousness"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Pallor",
+        "Diaphoresis",
+        "Altered mental status",
+        "Hypoglycaemia on blood glucose testing"
+      ],
+      "atypicalPresentations": [
+        "Hypoglycaemia unawareness (no typical symptoms)",
+        "Neuroglycopenic symptoms without adrenergic symptoms"
+      ],
+      "redFlags": [
+        "Severe hypoglycaemia (requiring assistance)",
+        "Prolonged unconsciousness",
+        "Recurrent episodes of hypoglycaemia",
+        "Hypoglycaemia in a non-diabetic patient"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Capillary blood glucose measurement",
+        "Venous blood glucose measurement"
+      ],
+      "secondLine": [
+        "Serum insulin levels",
+        "C-peptide levels",
+        "Lactate levels",
+        "Electrolytes"
+      ],
+      "specialistTests": [
+        "72-hour fast with supervised monitoring",
+        "Insulinoma workup (CT/MRI of pancreas)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of hypoglycaemia is based on the Whipple's triad: symptoms of hypoglycaemia, low blood glucose levels, and relief of symptoms upon glucose administration.",
+      "differentials": [
+        "Diabetes mellitus (insulin or sulfonylurea use)",
+        "Insulinoma",
+        "Adrenal insufficiency",
+        "Alcohol-induced hypoglycaemia",
+        "Reactive hypoglycaemia",
+        "Sepsis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral glucose (if conscious)",
+          "Intravenous dextrose (D50W) if unconscious or unable to swallow"
+        ],
+        "secondLine": [
+          "Glucagon injection (if IV access not available)"
+        ],
+        "procedures": [
+          "Administering IV dextrose (D50W) in emergency settings"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Patient education on carbohydrate intake and recognition of symptoms",
+          "Regular monitoring of blood glucose levels"
+        ],
+        "secondLine": [
+          "Adjustment of diabetes medications (if applicable)",
+          "Dietary modifications"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess blood glucose control and medication adjustments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Glucose (Dextrose)",
+          "mechanism": "Provides immediate source of glucose to raise blood sugar levels.",
+          "dosing": "D50W (50% dextrose) 25g IV push; repeat as necessary.",
+          "sideEffects": "Hyperglycaemia, fluid overload, phlebitis at injection site.",
+          "notes": "Monitor blood glucose levels after administration."
+        },
+        {
+          "name": "Glucagon",
+          "mechanism": "Stimulates hepatic glycogenolysis and gluconeogenesis, increasing blood glucose levels.",
+          "dosing": "0.5-1 mg IM/SC; may repeat after 15 minutes if no response.",
+          "sideEffects": "Nausea, vomiting, allergic reactions.",
+          "notes": "Useful in unconscious patients when IV access is not available."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravenous Dextrose Administration",
+          "description": "Administering a concentrated glucose solution directly into the bloodstream.",
+          "indications": "Severe hypoglycaemia with altered consciousness or inability to take oral glucose.",
+          "risks": "Infection at the IV site, fluid overload, hyperglycaemia."
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and treatment, the prognosis for hypoglycaemia is generally good. However, recurrent episodes can lead to hypoglycaemia unawareness, increasing the risk of severe hypoglycaemia in the future.",
+    "complications": [
+      "Seizures",
+      "Coma",
+      "Cerebral edema",
+      "Long-term neurological damage (rare)",
+      "Recurrent hypoglycaemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of hypoglycaemia, perform initial assessments, administer treatment, and educate patients on prevention strategies. They should also be aware of when to escalate care to senior medical staff.",
+    "escalation": "If a patient is unresponsive or unable to take oral glucose, escalate to senior staff for IV dextrose administration. If recurrent hypoglycaemia occurs, refer to an endocrinologist for further evaluation.",
+    "keySafetyConsiderations": "Always confirm blood glucose levels before administering treatment. Monitor patients closely after treatment for potential rebound hypoglycaemia. Educate patients on recognizing symptoms and the importance of carrying fast-acting carbohydrates."
+  }
+}

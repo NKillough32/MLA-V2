@@ -1,0 +1,134 @@
+{
+  "id": "gastrointestinal_perforation",
+  "name": "Gastrointestinal perforation",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:16:07.610312",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastrointestinal perforation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastrointestinal perforation is a medical emergency characterized by a hole in the wall of the gastrointestinal tract, leading to the leakage of intestinal contents into the peritoneal cavity, which can cause peritonitis and sepsis.\n\n### Epidemiology\nGastrointestinal perforation is relatively rare but can occur in various conditions, with an incidence of approximately 2-3 cases per 100,000 population per year. It is more common in older adults and can be associated with conditions such as peptic ulcer disease, diverticulitis, and malignancies.\n\n### Essential Pathophysiology\nPerforation occurs when the integrity of the gastrointestinal wall is compromised, often due to ulceration, inflammation, or malignancy. The leakage of intestinal contents leads to chemical irritation and bacterial contamination of the peritoneal cavity, resulting in peritonitis, which can progress to sepsis and multi-organ failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset abdominal pain\n- Nausea and vomiting\n- Fever\n- Abdominal distension\n- Change in bowel habits\n\n### Key Signs\n- Tenderness on palpation\n- Guarding and rigidity\n- Decreased bowel sounds\n- Fever\n- Signs of sepsis (tachycardia, hypotension)\n\n### Atypical Presentations\n- Elderly patients may present with altered mental status\n- Patients on immunosuppressive therapy may have blunted symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe, sudden abdominal pain\n- Signs of shock (hypotension, tachycardia)\n- Persistent vomiting\n- Signs of peritonitis\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal X-ray (to look for free air)\n- CT scan of the abdomen (to confirm perforation and identify the source)\n\n### Second-line Investigations\n- Ultrasound of the abdomen (in certain cases)\n\n### Specialist Tests\n- Laparoscopy (for direct visualization and possible intervention)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging findings of free air under the diaphragm or fluid collections in the abdomen. A history of risk factors (e.g., peptic ulcer disease, diverticulitis) aids in diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Perforated peptic ulcer\n- Diverticulitis with perforation\n- Appendicitis\n- Bowel obstruction\n- Mesenteric ischemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate IV fluids\n- Broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam)\n- Surgical consultation for possible laparotomy\n\n#### Second-line Treatments\n- Pain management (opioids as needed)\n- NPO (nothing by mouth)\n\n#### Emergency Procedures\n- Laparotomy or laparoscopy for repair of perforation and peritoneal washout\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying conditions (e.g., H. pylori eradication for ulcers)\n- Dietary modifications\n\n#### Second-line Treatments\n- Regular follow-up for chronic conditions (e.g., diverticulitis management)\n\n#### Monitoring Requirements\n- Regular imaging if indicated (e.g., for diverticular disease)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive, gram-negative, and anaerobic bacteria.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider renal function before dosing.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic effective against anaerobic bacteria and protozoa.\n- **Typical Dosing Range**: 500 mg IV every 8 hours.\n- **Key Side Effects/Contraindications**: Nausea, headache, metallic taste, disulfiram-like reaction with alcohol.\n- **When to Use vs. Alternatives**: Use in combination with other antibiotics for polymicrobial infections.\n\n### Procedures\n\n#### Laparotomy\n- **What it Involves**: Surgical procedure involving a large incision in the abdominal wall to access the abdominal cavity.\n- **Indications**: Confirmed gastrointestinal perforation, peritonitis, or intra-abdominal abscess.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding organs, prolonged recovery.\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgical technique using small incisions and a camera to visualize and repair perforations.\n- **Indications**: Small perforations, stable patients, diagnostic purposes.\n- **Key Risks/Complications**: Injury to organs, bleeding, infection, conversion to open surgery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the cause of the perforation, the patient's overall health, and the timeliness of intervention. Early surgical intervention generally leads to better outcomes, while delayed treatment can result in significant morbidity and mortality.\n\n### Important Complications to Watch For\n- Peritonitis\n- Sepsis\n- Abscess formation\n- Fistula formation\n- Bowel obstruction\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of gastrointestinal perforation, initiate appropriate investigations, provide initial management (IV fluids, antibiotics), and escalate care to surgical teams promptly.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to surgical teams is required for any patient suspected of having a gastrointestinal perforation, especially if they exhibit signs of sepsis or peritonitis.\n\n### Key Safety Considerations\nEnsure timely administration of IV antibiotics and fluids, monitor vital signs closely, and prepare for potential surgical intervention. Be vigilant for signs of deterioration in the patient's condition.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastrointestinal perforation is a medical emergency characterized by a hole in the wall of the gastrointestinal tract, leading to the leakage of intestinal contents into the peritoneal cavity, which can cause peritonitis and sepsis.",
+      "epidemiology": "Gastrointestinal perforation is relatively rare but can occur in various conditions, with an incidence of approximately 2-3 cases per 100,000 population per year. It is more common in older adults and can be associated with conditions such as peptic ulcer disease, diverticulitis, and malignancies.",
+      "pathophysiology": "Perforation occurs when the integrity of the gastrointestinal wall is compromised, often due to ulceration, inflammation, or malignancy. The leakage of intestinal contents leads to chemical irritation and bacterial contamination of the peritoneal cavity, resulting in peritonitis, which can progress to sepsis and multi-organ failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset abdominal pain",
+        "Nausea and vomiting",
+        "Fever",
+        "Abdominal distension",
+        "Change in bowel habits"
+      ],
+      "signs": [
+        "Tenderness on palpation",
+        "Guarding and rigidity",
+        "Decreased bowel sounds",
+        "Fever",
+        "Signs of sepsis (tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with altered mental status",
+        "Patients on immunosuppressive therapy may have blunted symptoms"
+      ],
+      "redFlags": [
+        "Severe, sudden abdominal pain",
+        "Signs of shock (hypotension, tachycardia)",
+        "Persistent vomiting",
+        "Signs of peritonitis"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal X-ray (to look for free air)",
+        "CT scan of the abdomen (to confirm perforation and identify the source)"
+      ],
+      "secondLine": [
+        "Ultrasound of the abdomen (in certain cases)"
+      ],
+      "specialistTests": [
+        "Laparoscopy (for direct visualization and possible intervention)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging findings of free air under the diaphragm or fluid collections in the abdomen. A history of risk factors (e.g., peptic ulcer disease, diverticulitis) aids in diagnosis.",
+      "differentials": [
+        "Perforated peptic ulcer",
+        "Diverticulitis with perforation",
+        "Appendicitis",
+        "Bowel obstruction",
+        "Mesenteric ischemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate IV fluids",
+          "Broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam)",
+          "Surgical consultation for possible laparotomy"
+        ],
+        "secondLine": [
+          "Pain management (opioids as needed)",
+          "NPO (nothing by mouth)"
+        ],
+        "procedures": [
+          "Laparotomy or laparoscopy for repair of perforation and peritoneal washout"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying conditions (e.g., H. pylori eradication for ulcers)",
+          "Dietary modifications"
+        ],
+        "secondLine": [
+          "Regular follow-up for chronic conditions (e.g., diverticulitis management)"
+        ],
+        "monitoring": [
+          "Regular imaging if indicated (e.g., for diverticular disease)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive, gram-negative, and anaerobic bacteria.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider renal function before dosing."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic effective against anaerobic bacteria and protozoa.",
+          "dosing": "500 mg IV every 8 hours.",
+          "sideEffects": "Nausea, headache, metallic taste, disulfiram-like reaction with alcohol.",
+          "notes": "Use in combination with other antibiotics for polymicrobial infections."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparotomy",
+          "description": "Surgical procedure involving a large incision in the abdominal wall to access the abdominal cavity.",
+          "indications": "Confirmed gastrointestinal perforation, peritonitis, or intra-abdominal abscess.",
+          "risks": "Infection, bleeding, damage to surrounding organs, prolonged recovery."
+        },
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgical technique using small incisions and a camera to visualize and repair perforations.",
+          "indications": "Small perforations, stable patients, diagnostic purposes.",
+          "risks": "Injury to organs, bleeding, infection, conversion to open surgery."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the cause of the perforation, the patient's overall health, and the timeliness of intervention. Early surgical intervention generally leads to better outcomes, while delayed treatment can result in significant morbidity and mortality.",
+    "complications": [
+      "Peritonitis",
+      "Sepsis",
+      "Abscess formation",
+      "Fistula formation",
+      "Bowel obstruction"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of gastrointestinal perforation, initiate appropriate investigations, provide initial management (IV fluids, antibiotics), and escalate care to surgical teams promptly.",
+    "escalation": "Immediate escalation to surgical teams is required for any patient suspected of having a gastrointestinal perforation, especially if they exhibit signs of sepsis or peritonitis.",
+    "keySafetyConsiderations": "Ensure timely administration of IV antibiotics and fluids, monitor vital signs closely, and prepare for potential surgical intervention. Be vigilant for signs of deterioration in the patient's condition."
+  }
+}

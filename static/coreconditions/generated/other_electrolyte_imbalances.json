@@ -1,0 +1,144 @@
+{
+  "id": "other_electrolyte_imbalances",
+  "name": "Other electrolyte imbalances",
+  "domains": [
+    "Renal"
+  ],
+  "generatedAt": "2025-12-17T20:18:03.372092",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Other electrolyte imbalances: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nElectrolyte imbalances refer to abnormal levels of electrolytes in the body, which can affect various physiological functions. Common imbalances include hyponatremia, hypernatremia, hypokalemia, hyperkalemia, hypocalcemia, and hypercalcemia.\n\n### Epidemiology\nElectrolyte imbalances are common in hospitalized patients, particularly those with renal disease, heart failure, and those on diuretics. The prevalence varies by specific electrolyte and underlying conditions.\n\n### Essential Pathophysiology\nElectrolytes are essential for numerous bodily functions, including nerve conduction, muscle contraction, and fluid balance. Imbalances can arise from various causes, including renal dysfunction, hormonal changes, medications, and dietary factors.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Muscle weakness\n- Cramps\n- Confusion\n- Nausea\n- Vomiting\n- Arrhythmias\n\n### Key Signs\n- Dehydration\n- Tachycardia\n- Hypotension\n- Altered mental status\n- Muscle twitching\n- Edema\n\n### Atypical Presentations\n- Seizures in severe hyponatremia\n- Cardiac arrest in severe hyperkalemia\n- Rhabdomyolysis in severe hypokalemia\n\n### Red Flags Requiring Immediate Action\n- Severe electrolyte disturbance (e.g., K+ >6.0 mmol/L)\n- Rapid changes in electrolyte levels\n- Symptoms of cardiac arrhythmias\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serum electrolytes (Na+, K+, Ca2+, Mg2+)\n- Renal function tests (Urea, Creatinine)\n- Urine electrolytes (if indicated)\n\n### Second-line Investigations\n- ECG (for potassium abnormalities)\n- Chest X-ray (to assess for fluid overload)\n- Thyroid function tests (if indicated)\n\n### Specialist Tests\n- 24-hour urine collection for electrolytes\n- Hormonal assays (e.g., aldosterone, cortisol)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on serum electrolyte levels, clinical symptoms, and underlying causes. Specific thresholds vary by electrolyte (e.g., Na+ <135 mmol/L for hyponatremia).\n\n### Key Differential Diagnoses to Exclude\n- Renal failure\n- Adrenal insufficiency\n- Diuretic use\n- Heart failure\n- Liver cirrhosis\n- Malnutrition\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- IV fluids (isotonic saline for hyponatremia)\n- Calcium gluconate for hyperkalemia\n\n#### Second-line Treatments\n- Insulin and glucose for hyperkalemia\n- Sodium bicarbonate for metabolic acidosis\n\n#### Emergency Procedures\n- Dialysis for severe renal failure or electrolyte imbalance\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral electrolyte supplements (e.g., potassium chloride for hypokalemia)\n- Dietary modifications\n\n#### Second-line Treatments\n- Adjusting medications (e.g., changing diuretics)\n- Endocrine evaluation for hormonal imbalances\n\n#### Monitoring Requirements\n- Regular serum electrolyte levels\n- Renal function tests\n- Clinical symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Potassium Chloride\n- **Mechanism of Action**: Replenishes potassium levels in the body.\n- **Typical Dosing Range**: 20-40 mEq orally daily, adjusted based on serum levels.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, hyperkalemia.\n- **When to Use vs. Alternatives**: Monitor renal function and serum potassium levels.\n\n#### Calcium Gluconate\n- **Mechanism of Action**: Stabilizes cardiac membranes in hyperkalemia.\n- **Typical Dosing Range**: 1-2 g IV over 2 hours as needed.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia.\n- **When to Use vs. Alternatives**: Monitor ECG during administration.\n\n#### Sodium Bicarbonate\n- **Mechanism of Action**: Alkalinizes blood, shifts potassium into cells.\n- **Typical Dosing Range**: 50-100 mEq IV for severe acidosis.\n- **Key Side Effects/Contraindications**: Metabolic alkalosis, hypokalemia.\n- **When to Use vs. Alternatives**: Use cautiously in patients with heart failure.\n\n### Procedures\n\n#### Dialysis\n- **What it Involves**: A procedure to remove waste products and excess electrolytes from the blood.\n- **Indications**: Severe electrolyte imbalances, renal failure, fluid overload.\n- **Key Risks/Complications**: Infection, hypotension, electrolyte shifts.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies based on the underlying cause and severity of the imbalance. Early recognition and management can lead to favorable outcomes.\n\n### Important Complications to Watch For\n- Cardiac arrhythmias\n- Seizures\n- Muscle weakness leading to falls\n- Renal failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of electrolyte imbalances, initiate investigations, and manage acute cases under supervision. They should also educate patients on dietary modifications and medication adherence.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe electrolyte imbalances or shows signs of instability (e.g., arrhythmias, altered mental status), escalate to senior medical staff immediately.\n\n### Key Safety Considerations\nAlways monitor vital signs and ECG in patients with significant electrolyte imbalances. Be cautious with rapid correction of electrolyte levels to avoid complications such as osmotic demyelination syndrome in hyponatremia.\n",
+  "content": {
+    "overview": {
+      "definition": "Electrolyte imbalances refer to abnormal levels of electrolytes in the body, which can affect various physiological functions. Common imbalances include hyponatremia, hypernatremia, hypokalemia, hyperkalemia, hypocalcemia, and hypercalcemia.",
+      "epidemiology": "Electrolyte imbalances are common in hospitalized patients, particularly those with renal disease, heart failure, and those on diuretics. The prevalence varies by specific electrolyte and underlying conditions.",
+      "pathophysiology": "Electrolytes are essential for numerous bodily functions, including nerve conduction, muscle contraction, and fluid balance. Imbalances can arise from various causes, including renal dysfunction, hormonal changes, medications, and dietary factors."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Muscle weakness",
+        "Cramps",
+        "Confusion",
+        "Nausea",
+        "Vomiting",
+        "Arrhythmias"
+      ],
+      "signs": [
+        "Dehydration",
+        "Tachycardia",
+        "Hypotension",
+        "Altered mental status",
+        "Muscle twitching",
+        "Edema"
+      ],
+      "atypicalPresentations": [
+        "Seizures in severe hyponatremia",
+        "Cardiac arrest in severe hyperkalemia",
+        "Rhabdomyolysis in severe hypokalemia"
+      ],
+      "redFlags": [
+        "Severe electrolyte disturbance (e.g., K+ >6.0 mmol/L)",
+        "Rapid changes in electrolyte levels",
+        "Symptoms of cardiac arrhythmias"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serum electrolytes (Na+, K+, Ca2+, Mg2+)",
+        "Renal function tests (Urea, Creatinine)",
+        "Urine electrolytes (if indicated)"
+      ],
+      "secondLine": [
+        "ECG (for potassium abnormalities)",
+        "Chest X-ray (to assess for fluid overload)",
+        "Thyroid function tests (if indicated)"
+      ],
+      "specialistTests": [
+        "24-hour urine collection for electrolytes",
+        "Hormonal assays (e.g., aldosterone, cortisol)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on serum electrolyte levels, clinical symptoms, and underlying causes. Specific thresholds vary by electrolyte (e.g., Na+ <135 mmol/L for hyponatremia).",
+      "differentials": [
+        "Renal failure",
+        "Adrenal insufficiency",
+        "Diuretic use",
+        "Heart failure",
+        "Liver cirrhosis",
+        "Malnutrition"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "IV fluids (isotonic saline for hyponatremia)",
+          "Calcium gluconate for hyperkalemia"
+        ],
+        "secondLine": [
+          "Insulin and glucose for hyperkalemia",
+          "Sodium bicarbonate for metabolic acidosis"
+        ],
+        "procedures": [
+          "Dialysis for severe renal failure or electrolyte imbalance"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral electrolyte supplements (e.g., potassium chloride for hypokalemia)",
+          "Dietary modifications"
+        ],
+        "secondLine": [
+          "Adjusting medications (e.g., changing diuretics)",
+          "Endocrine evaluation for hormonal imbalances"
+        ],
+        "monitoring": [
+          "Regular serum electrolyte levels",
+          "Renal function tests",
+          "Clinical symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Potassium Chloride",
+          "mechanism": "Replenishes potassium levels in the body.",
+          "dosing": "20-40 mEq orally daily, adjusted based on serum levels.",
+          "sideEffects": "Gastrointestinal upset, hyperkalemia.",
+          "notes": "Monitor renal function and serum potassium levels."
+        },
+        {
+          "name": "Calcium Gluconate",
+          "mechanism": "Stabilizes cardiac membranes in hyperkalemia.",
+          "dosing": "1-2 g IV over 2 hours as needed.",
+          "sideEffects": "Hypotension, bradycardia.",
+          "notes": "Monitor ECG during administration."
+        },
+        {
+          "name": "Sodium Bicarbonate",
+          "mechanism": "Alkalinizes blood, shifts potassium into cells.",
+          "dosing": "50-100 mEq IV for severe acidosis.",
+          "sideEffects": "Metabolic alkalosis, hypokalemia.",
+          "notes": "Use cautiously in patients with heart failure."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Dialysis",
+          "description": "A procedure to remove waste products and excess electrolytes from the blood.",
+          "indications": "Severe electrolyte imbalances, renal failure, fluid overload.",
+          "risks": "Infection, hypotension, electrolyte shifts."
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies based on the underlying cause and severity of the imbalance. Early recognition and management can lead to favorable outcomes.",
+    "complications": [
+      "Cardiac arrhythmias",
+      "Seizures",
+      "Muscle weakness leading to falls",
+      "Renal failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of electrolyte imbalances, initiate investigations, and manage acute cases under supervision. They should also educate patients on dietary modifications and medication adherence.",
+    "escalation": "If a patient presents with severe electrolyte imbalances or shows signs of instability (e.g., arrhythmias, altered mental status), escalate to senior medical staff immediately.",
+    "keySafetyConsiderations": "Always monitor vital signs and ECG in patients with significant electrolyte imbalances. Be cautious with rapid correction of electrolyte levels to avoid complications such as osmotic demyelination syndrome in hyponatremia."
+  }
+}

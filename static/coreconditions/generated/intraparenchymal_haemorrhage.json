@@ -1,0 +1,138 @@
+{
+  "id": "intraparenchymal_haemorrhage",
+  "name": "Intraparenchymal haemorrhage?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:44:51.455747",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Intraparenchymal haemorrhage?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIntraparenchymal hemorrhage (IPH) is a type of stroke characterized by bleeding within the brain tissue itself, often resulting from the rupture of small blood vessels due to hypertension, trauma, or vascular malformations.\n\n### Epidemiology\nIPH accounts for approximately 10-15% of all strokes, with a higher incidence in older adults and those with risk factors such as hypertension, anticoagulant therapy, and alcohol abuse.\n\n### Essential Pathophysiology\nThe pathophysiology involves the rupture of small penetrating arteries, leading to localized bleeding within the brain parenchyma. This results in increased intracranial pressure, tissue damage, and potential secondary ischemia due to compromised blood flow.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden onset headache (often described as 'thunderclap')\n- Nausea and vomiting\n- Altered consciousness or confusion\n- Focal neurological deficits (e.g., weakness, speech difficulties)\n- Seizures\n\n### Key Signs\n- Altered level of consciousness (Glasgow Coma Scale < 15)\n- Neurological deficits (e.g., hemiparesis, aphasia)\n- Signs of increased intracranial pressure (e.g., papilledema)\n- Cranial nerve deficits\n\n### Atypical Presentations\n- Subacute presentation with gradual worsening of symptoms\n- Isolated seizures without focal deficits\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in neurological status\n- Severe headache with sudden onset\n- History of anticoagulant use or coagulopathy\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Non-contrast CT scan of the head (to identify the presence and extent of hemorrhage)\n- Complete blood count (CBC)\n- Coagulation profile (PT, aPTT, INR)\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive and further detail is needed)\n- CT angiography (to assess for vascular malformations or aneurysms)\n\n### Specialist Tests\n- Lumbar puncture (if subarachnoid hemorrhage is suspected and CT is negative)\n- Transcranial Doppler ultrasound (to assess for vasospasm)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on imaging findings of intraparenchymal hemorrhage on CT or MRI, along with clinical presentation.\n\n### Key Differential Diagnoses to Exclude\n- Subarachnoid hemorrhage\n- Cerebral venous sinus thrombosis\n- Brain tumor with hemorrhage\n- Traumatic brain injury\n- Ischemic stroke\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Maintain airway, breathing, and circulation (ABCs)\n- Control blood pressure (target < 140/90 mmHg)\n- Consider reversal of anticoagulation if applicable\n- Neurosurgical consultation for possible evacuation of hematoma\n\n#### Second-line Treatments\n- Administer mannitol or hypertonic saline for elevated intracranial pressure\n- Seizure prophylaxis with levetiracetam\n\n#### Emergency Procedures\n- Craniotomy for hematoma evacuation (indicated in cases of significant mass effect or midline shift)\n- External ventricular drain (for managing hydrocephalus)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation services (physical, occupational, and speech therapy)\n- Regular follow-up for blood pressure management and secondary stroke prevention\n\n#### Second-line Treatments\n- Consider antiplatelet therapy (e.g., aspirin) after stabilization\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- Blood pressure monitoring and management\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30-60 minutes, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal failure.\n- **When to Use vs. Alternatives**: Monitor serum osmolality and renal function.\n\n#### Levetiracetam\n- **Mechanism of Action**: Anticonvulsant that stabilizes neuronal membranes and inhibits abnormal electrical activity.\n- **Typical Dosing Range**: Initial: 500 mg bid, may increase to 1000 mg bid based on response.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, behavioral changes.\n- **When to Use vs. Alternatives**: Consider for seizure prophylaxis in acute setting.\n\n### Procedures\n\n#### Craniotomy for hematoma evacuation\n- **What it Involves**: Surgical procedure to remove the hematoma and relieve pressure on the brain.\n- **Indications**: Significant mass effect, midline shift, or deteriorating neurological status.\n- **Key Risks/Complications**: Infection, bleeding, neurological deficits, seizures.\n\n#### External ventricular drain (EVD)\n- **What it Involves**: Placement of a catheter into the ventricles to drain cerebrospinal fluid and reduce intracranial pressure.\n- **Indications**: Hydrocephalus or elevated intracranial pressure not responsive to medical management.\n- **Key Risks/Complications**: Infection, catheter obstruction, hemorrhage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of intraparenchymal hemorrhage varies widely depending on the size and location of the hemorrhage, the patient's age, and the presence of comorbidities. Mortality rates can be as high as 30-50% in severe cases, with many survivors experiencing significant disability.\n\n### Important Complications to Watch For\n- Rebleeding\n- Hydrocephalus\n- Seizures\n- Neurological deficits (e.g., hemiplegia, aphasia)\n- Infection (post-surgical complications)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing the signs and symptoms of intraparenchymal hemorrhage, performing initial assessments, and managing acute care. They should also facilitate timely referrals to neurosurgery and participate in the multidisciplinary management of patients during recovery.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to senior medical staff is required for any patient with suspected intraparenchymal hemorrhage, especially if there are signs of neurological deterioration or instability.\n\n### Key Safety Considerations\nEnsure rapid access to imaging and neurosurgical consultation. Monitor vital signs and neurological status closely. Be vigilant for signs of increased intracranial pressure and manage accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Intraparenchymal hemorrhage (IPH) is a type of stroke characterized by bleeding within the brain tissue itself, often resulting from the rupture of small blood vessels due to hypertension, trauma, or vascular malformations.",
+      "epidemiology": "IPH accounts for approximately 10-15% of all strokes, with a higher incidence in older adults and those with risk factors such as hypertension, anticoagulant therapy, and alcohol abuse.",
+      "pathophysiology": "The pathophysiology involves the rupture of small penetrating arteries, leading to localized bleeding within the brain parenchyma. This results in increased intracranial pressure, tissue damage, and potential secondary ischemia due to compromised blood flow."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden onset headache (often described as 'thunderclap')",
+        "Nausea and vomiting",
+        "Altered consciousness or confusion",
+        "Focal neurological deficits (e.g., weakness, speech difficulties)",
+        "Seizures"
+      ],
+      "signs": [
+        "Altered level of consciousness (Glasgow Coma Scale < 15)",
+        "Neurological deficits (e.g., hemiparesis, aphasia)",
+        "Signs of increased intracranial pressure (e.g., papilledema)",
+        "Cranial nerve deficits"
+      ],
+      "atypicalPresentations": [
+        "Subacute presentation with gradual worsening of symptoms",
+        "Isolated seizures without focal deficits"
+      ],
+      "redFlags": [
+        "Rapid deterioration in neurological status",
+        "Severe headache with sudden onset",
+        "History of anticoagulant use or coagulopathy"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Non-contrast CT scan of the head (to identify the presence and extent of hemorrhage)",
+        "Complete blood count (CBC)",
+        "Coagulation profile (PT, aPTT, INR)"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive and further detail is needed)",
+        "CT angiography (to assess for vascular malformations or aneurysms)"
+      ],
+      "specialistTests": [
+        "Lumbar puncture (if subarachnoid hemorrhage is suspected and CT is negative)",
+        "Transcranial Doppler ultrasound (to assess for vasospasm)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on imaging findings of intraparenchymal hemorrhage on CT or MRI, along with clinical presentation.",
+      "differentials": [
+        "Subarachnoid hemorrhage",
+        "Cerebral venous sinus thrombosis",
+        "Brain tumor with hemorrhage",
+        "Traumatic brain injury",
+        "Ischemic stroke"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Maintain airway, breathing, and circulation (ABCs)",
+          "Control blood pressure (target < 140/90 mmHg)",
+          "Consider reversal of anticoagulation if applicable",
+          "Neurosurgical consultation for possible evacuation of hematoma"
+        ],
+        "secondLine": [
+          "Administer mannitol or hypertonic saline for elevated intracranial pressure",
+          "Seizure prophylaxis with levetiracetam"
+        ],
+        "procedures": [
+          "Craniotomy for hematoma evacuation (indicated in cases of significant mass effect or midline shift)",
+          "External ventricular drain (for managing hydrocephalus)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation services (physical, occupational, and speech therapy)",
+          "Regular follow-up for blood pressure management and secondary stroke prevention"
+        ],
+        "secondLine": [
+          "Consider antiplatelet therapy (e.g., aspirin) after stabilization"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "Blood pressure monitoring and management"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.",
+          "dosing": "1-2 g/kg IV over 30-60 minutes, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal failure.",
+          "notes": "Monitor serum osmolality and renal function."
+        },
+        {
+          "name": "Levetiracetam",
+          "mechanism": "Anticonvulsant that stabilizes neuronal membranes and inhibits abnormal electrical activity.",
+          "dosing": "Initial: 500 mg bid, may increase to 1000 mg bid based on response.",
+          "sideEffects": "Drowsiness, dizziness, behavioral changes.",
+          "notes": "Consider for seizure prophylaxis in acute setting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Craniotomy for hematoma evacuation",
+          "description": "Surgical procedure to remove the hematoma and relieve pressure on the brain.",
+          "indications": "Significant mass effect, midline shift, or deteriorating neurological status.",
+          "risks": "Infection, bleeding, neurological deficits, seizures."
+        },
+        {
+          "name": "External ventricular drain (EVD)",
+          "description": "Placement of a catheter into the ventricles to drain cerebrospinal fluid and reduce intracranial pressure.",
+          "indications": "Hydrocephalus or elevated intracranial pressure not responsive to medical management.",
+          "risks": "Infection, catheter obstruction, hemorrhage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of intraparenchymal hemorrhage varies widely depending on the size and location of the hemorrhage, the patient's age, and the presence of comorbidities. Mortality rates can be as high as 30-50% in severe cases, with many survivors experiencing significant disability.",
+    "complications": [
+      "Rebleeding",
+      "Hydrocephalus",
+      "Seizures",
+      "Neurological deficits (e.g., hemiplegia, aphasia)",
+      "Infection (post-surgical complications)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing the signs and symptoms of intraparenchymal hemorrhage, performing initial assessments, and managing acute care. They should also facilitate timely referrals to neurosurgery and participate in the multidisciplinary management of patients during recovery.",
+    "escalation": "Immediate escalation to senior medical staff is required for any patient with suspected intraparenchymal hemorrhage, especially if there are signs of neurological deterioration or instability.",
+    "keySafetyConsiderations": "Ensure rapid access to imaging and neurosurgical consultation. Monitor vital signs and neurological status closely. Be vigilant for signs of increased intracranial pressure and manage accordingly."
+  }
+}

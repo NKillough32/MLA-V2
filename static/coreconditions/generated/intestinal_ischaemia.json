@@ -1,0 +1,142 @@
+{
+  "id": "intestinal_ischaemia",
+  "name": "Intestinal ischaemia",
+  "domains": [
+    "Gastrointestinal Surgery"
+  ],
+  "generatedAt": "2025-12-17T21:16:51.545017",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Intestinal ischaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIntestinal ischaemia refers to a condition where there is a reduction in blood flow to the intestines, leading to tissue damage and potential necrosis. It can be acute or chronic, with acute intestinal ischaemia being a surgical emergency.\n\n### Epidemiology\nAcute intestinal ischaemia has an incidence of approximately 1-2 per 100,000 people per year, with higher rates in older adults and those with cardiovascular disease. Chronic intestinal ischaemia is less common but can affect individuals with atherosclerosis or mesenteric artery stenosis.\n\n### Essential Pathophysiology\nIntestinal ischaemia occurs due to occlusion or stenosis of the mesenteric arteries, leading to inadequate blood supply. This can result from embolism, thrombosis, or systemic hypoperfusion. The lack of blood flow leads to ischemic injury, inflammation, and, if prolonged, necrosis of the intestinal tissue.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often out of proportion to physical findings)\n- Nausea and vomiting\n- Diarrhea or bloody stools\n- Weight loss (in chronic cases)\n- Postprandial pain (in chronic cases)\n\n### Key Signs\n- Abdominal tenderness\n- Guarding or rigidity\n- Decreased bowel sounds\n- Signs of shock (tachycardia, hypotension)\n\n### Atypical Presentations\n- Elderly patients may present with confusion or altered mental status instead of classic abdominal symptoms.\n- Patients with chronic ischaemia may present with vague abdominal discomfort and weight loss.\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain with a sudden onset\n- Signs of peritonitis\n- Hemodynamic instability\n- Bloody stools or significant diarrhea\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT angiography of the abdomen (to assess blood flow and identify occlusions)\n- Plain abdominal X-ray (to rule out perforation or obstruction)\n- Ultrasound (to assess blood flow and detect mesenteric artery stenosis)\n\n### Second-line Investigations\n- MRI angiography (if CT is contraindicated)\n- Doppler ultrasound (to assess mesenteric blood flow)\n\n### Specialist Tests\n- Mesenteric angiography (for direct visualization and possible intervention)\n- Laparoscopy (for direct assessment of bowel viability)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and sometimes intraoperative findings. Key criteria include evidence of reduced blood flow to the intestines and signs of intestinal necrosis.\n\n### Key Differential Diagnoses to Exclude\n- Acute pancreatitis\n- Bowel obstruction\n- Diverticulitis\n- Mesenteric lymphadenitis\n- Gastroenteritis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate resuscitation (IV fluids, electrolyte correction)\n- Broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam)\n- Surgical consultation for possible revascularization or bowel resection\n\n#### Second-line Treatments\n- Endovascular therapy (angioplasty/stenting) if indicated\n\n#### Emergency Procedures\n- Laparotomy (for bowel resection or revascularization)\n- Endovascular procedures (for mesenteric artery revascularization)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (dietary changes, smoking cessation)\n- Medications (antiplatelet agents, statins)\n\n#### Second-line Treatments\n- Surgical revascularization (bypass surgery or angioplasty) if symptoms persist\n\n#### Monitoring Requirements\n- Regular follow-up for symptom management and assessment of nutritional status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Piperacillin-tazobactam\n- **Mechanism of Action**: Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.\n- **Typical Dosing Range**: 3.375 g IV every 6 hours.\n- **Key Side Effects/Contraindications**: Allergic reactions, diarrhea, renal impairment.\n- **When to Use vs. Alternatives**: Consider in cases of suspected infection.\n\n#### Aspirin\n- **Mechanism of Action**: Antiplatelet agent that reduces thrombus formation.\n- **Typical Dosing Range**: 81-325 mg orally daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, tinnitus, allergic reactions.\n- **When to Use vs. Alternatives**: Consider for chronic management.\n\n#### Statins\n- **Mechanism of Action**: Lipid-lowering agents that stabilize atherosclerotic plaques.\n- **Typical Dosing Range**: Atorvastatin 10-80 mg orally daily.\n- **Key Side Effects/Contraindications**: Myopathy, liver enzyme elevation.\n- **When to Use vs. Alternatives**: Consider for patients with dyslipidemia.\n\n### Procedures\n\n#### Laparotomy\n- **What it Involves**: Surgical opening of the abdominal cavity to access the intestines.\n- **Indications**: Suspected bowel necrosis, revascularization needs, or significant intra-abdominal pathology.\n- **Key Risks/Complications**: Infection, bleeding, organ injury.\n\n#### Endovascular revascularization\n- **What it Involves**: Minimally invasive procedure to restore blood flow to the mesenteric arteries.\n- **Indications**: Acute mesenteric ischemia with identified occlusion.\n- **Key Risks/Complications**: Vascular complications, contrast-induced nephropathy.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of acute intestinal ischaemia is poor if not treated promptly, with mortality rates ranging from 50-80% in cases of bowel necrosis. Chronic intestinal ischaemia has a better prognosis with appropriate management, but patients may experience recurrent symptoms.\n\n### Important Complications to Watch For\n- Bowel necrosis\n- Peritonitis\n- Sepsis\n- Short bowel syndrome (if extensive resection is required)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of intestinal ischaemia, initiate resuscitation, order appropriate investigations, and refer to surgical teams promptly. They should also monitor patients for complications and manage supportive care.\n\n### When to Escalate to Senior/Specialist\nEscalate care to surgical teams for any patient with suspected acute intestinal ischaemia, especially if there are signs of peritonitis or hemodynamic instability.\n\n### Key Safety Considerations\nEnsure timely recognition and management of red flags. Monitor vital signs closely in suspected cases, and maintain a high index of suspicion in at-risk populations (e.g., elderly, those with cardiovascular disease). Always consider the need for surgical intervention in cases of suspected bowel necrosis.\n",
+  "content": {
+    "overview": {
+      "definition": "Intestinal ischaemia refers to a condition where there is a reduction in blood flow to the intestines, leading to tissue damage and potential necrosis. It can be acute or chronic, with acute intestinal ischaemia being a surgical emergency.",
+      "epidemiology": "Acute intestinal ischaemia has an incidence of approximately 1-2 per 100,000 people per year, with higher rates in older adults and those with cardiovascular disease. Chronic intestinal ischaemia is less common but can affect individuals with atherosclerosis or mesenteric artery stenosis.",
+      "pathophysiology": "Intestinal ischaemia occurs due to occlusion or stenosis of the mesenteric arteries, leading to inadequate blood supply. This can result from embolism, thrombosis, or systemic hypoperfusion. The lack of blood flow leads to ischemic injury, inflammation, and, if prolonged, necrosis of the intestinal tissue."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often out of proportion to physical findings)",
+        "Nausea and vomiting",
+        "Diarrhea or bloody stools",
+        "Weight loss (in chronic cases)",
+        "Postprandial pain (in chronic cases)"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Guarding or rigidity",
+        "Decreased bowel sounds",
+        "Signs of shock (tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion or altered mental status instead of classic abdominal symptoms.",
+        "Patients with chronic ischaemia may present with vague abdominal discomfort and weight loss."
+      ],
+      "redFlags": [
+        "Severe abdominal pain with a sudden onset",
+        "Signs of peritonitis",
+        "Hemodynamic instability",
+        "Bloody stools or significant diarrhea"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT angiography of the abdomen (to assess blood flow and identify occlusions)",
+        "Plain abdominal X-ray (to rule out perforation or obstruction)",
+        "Ultrasound (to assess blood flow and detect mesenteric artery stenosis)"
+      ],
+      "secondLine": [
+        "MRI angiography (if CT is contraindicated)",
+        "Doppler ultrasound (to assess mesenteric blood flow)"
+      ],
+      "specialistTests": [
+        "Mesenteric angiography (for direct visualization and possible intervention)",
+        "Laparoscopy (for direct assessment of bowel viability)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and sometimes intraoperative findings. Key criteria include evidence of reduced blood flow to the intestines and signs of intestinal necrosis.",
+      "differentials": [
+        "Acute pancreatitis",
+        "Bowel obstruction",
+        "Diverticulitis",
+        "Mesenteric lymphadenitis",
+        "Gastroenteritis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate resuscitation (IV fluids, electrolyte correction)",
+          "Broad-spectrum IV antibiotics (e.g., piperacillin-tazobactam)",
+          "Surgical consultation for possible revascularization or bowel resection"
+        ],
+        "secondLine": [
+          "Endovascular therapy (angioplasty/stenting) if indicated"
+        ],
+        "procedures": [
+          "Laparotomy (for bowel resection or revascularization)",
+          "Endovascular procedures (for mesenteric artery revascularization)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (dietary changes, smoking cessation)",
+          "Medications (antiplatelet agents, statins)"
+        ],
+        "secondLine": [
+          "Surgical revascularization (bypass surgery or angioplasty) if symptoms persist"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom management and assessment of nutritional status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Piperacillin-tazobactam",
+          "mechanism": "Broad-spectrum antibiotic effective against gram-positive and gram-negative bacteria.",
+          "dosing": "3.375 g IV every 6 hours.",
+          "sideEffects": "Allergic reactions, diarrhea, renal impairment.",
+          "notes": "Consider in cases of suspected infection."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Antiplatelet agent that reduces thrombus formation.",
+          "dosing": "81-325 mg orally daily.",
+          "sideEffects": "Gastrointestinal bleeding, tinnitus, allergic reactions.",
+          "notes": "Consider for chronic management."
+        },
+        {
+          "name": "Statins",
+          "mechanism": "Lipid-lowering agents that stabilize atherosclerotic plaques.",
+          "dosing": "Atorvastatin 10-80 mg orally daily.",
+          "sideEffects": "Myopathy, liver enzyme elevation.",
+          "notes": "Consider for patients with dyslipidemia."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Laparotomy",
+          "description": "Surgical opening of the abdominal cavity to access the intestines.",
+          "indications": "Suspected bowel necrosis, revascularization needs, or significant intra-abdominal pathology.",
+          "risks": "Infection, bleeding, organ injury."
+        },
+        {
+          "name": "Endovascular revascularization",
+          "description": "Minimally invasive procedure to restore blood flow to the mesenteric arteries.",
+          "indications": "Acute mesenteric ischemia with identified occlusion.",
+          "risks": "Vascular complications, contrast-induced nephropathy."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of acute intestinal ischaemia is poor if not treated promptly, with mortality rates ranging from 50-80% in cases of bowel necrosis. Chronic intestinal ischaemia has a better prognosis with appropriate management, but patients may experience recurrent symptoms.",
+    "complications": [
+      "Bowel necrosis",
+      "Peritonitis",
+      "Sepsis",
+      "Short bowel syndrome (if extensive resection is required)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of intestinal ischaemia, initiate resuscitation, order appropriate investigations, and refer to surgical teams promptly. They should also monitor patients for complications and manage supportive care.",
+    "escalation": "Escalate care to surgical teams for any patient with suspected acute intestinal ischaemia, especially if there are signs of peritonitis or hemodynamic instability.",
+    "keySafetyConsiderations": "Ensure timely recognition and management of red flags. Monitor vital signs closely in suspected cases, and maintain a high index of suspicion in at-risk populations (e.g., elderly, those with cardiovascular disease). Always consider the need for surgical intervention in cases of suspected bowel necrosis."
+  }
+}

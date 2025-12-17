@@ -1,0 +1,155 @@
+{
+  "id": "sarcoidosis",
+  "name": "Sarcoidosis?",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:25:41.205789",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Sarcoidosis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSarcoidosis is a systemic granulomatous disease characterized by the formation of non-caseating granulomas in various organs, most commonly the lungs, lymph nodes, skin, and eyes.\n\n### Epidemiology\nSarcoidosis has a prevalence of approximately 10-20 cases per 100,000 people in the UK, with higher rates in African American populations and those aged 20-40 years. It is more common in women than men.\n\n### Essential Pathophysiology\nThe exact cause of sarcoidosis is unknown, but it is thought to involve an exaggerated immune response to an unknown antigen, leading to the formation of granulomas. These granulomas can disrupt normal organ function.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cough\n- Dyspnea\n- Chest pain\n- Fatigue\n- Fever\n- Weight loss\n- Night sweats\n\n### Key Signs\n- Lymphadenopathy\n- Rales on auscultation\n- Erythema nodosum (skin lesions)\n- Hilar lymphadenopathy on chest X-ray\n\n### Atypical Presentations\n- Ocular symptoms (uveitis, conjunctivitis)\n- Skin lesions (lupus pernio)\n- Cardiac involvement (arrhythmias)\n- Neurological symptoms (facial nerve palsy, seizures)\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Acute visual changes\n- Neurological deficits\n- Persistent fever and weight loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (to assess for hilar lymphadenopathy)\n- Pulmonary function tests (to evaluate lung function)\n- Serum angiotensin-converting enzyme (ACE) levels\n\n### Second-line Investigations\n- High-resolution CT scan of the chest (to further evaluate lung involvement)\n- Bronchoscopy with bronchoalveolar lavage (BAL) for cytology and culture\n\n### Specialist Tests\n- Biopsy of affected tissue (e.g., skin, lymph nodes, lung) to confirm granuloma formation\n- Gallium scan (to assess for sarcoidosis in other organs)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of sarcoidosis is based on clinical presentation, imaging findings, and histological confirmation of non-caseating granulomas, while excluding other causes of granulomatous disease.\n\n### Key Differential Diagnoses to Exclude\n- Tuberculosis\n- Histoplasmosis\n- Coccidioidomycosis\n- Granulomatosis with polyangiitis (Wegener's)\n- Lymphoma\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (e.g., prednisone 0.5-1 mg/kg/day)\n\n#### Second-line Treatments\n- Methotrexate (15-25 mg weekly)\n- Azathioprine (2-3 mg/kg/day)\n\n#### Emergency Procedures\n- Bronchoscopy for BAL and biopsy if diagnosis is uncertain\n- Thoracentesis for pleural effusion if present\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Corticosteroids (tapering dose based on response)\n- Monitoring of lung function and symptoms\n\n#### Second-line Treatments\n- Methotrexate or azathioprine for steroid-sparing effect\n- Infliximab (for refractory cases)\n\n#### Monitoring Requirements\n- Regular follow-up for lung function tests\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: 0.5-1 mg/kg/day, taper based on response\n- **Key Side Effects/Contraindications**: Weight gain, hyperglycemia, osteoporosis, hypertension\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose accordingly.\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to immunosuppression\n- **Typical Dosing Range**: 15-25 mg weekly, monitor liver function\n- **Key Side Effects/Contraindications**: Hepatotoxicity, bone marrow suppression, mucositis\n- **When to Use vs. Alternatives**: Folic acid supplementation recommended.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressive agent that inhibits purine synthesis\n- **Typical Dosing Range**: 2-3 mg/kg/day, monitor for leukopenia\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk\n- **When to Use vs. Alternatives**: Monitor complete blood count regularly.\n\n#### Infliximab\n- **Mechanism of Action**: Monoclonal antibody against TNF-alpha, reducing inflammation\n- **Typical Dosing Range**: 5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks\n- **Key Side Effects/Contraindications**: Increased risk of infections, infusion reactions\n- **When to Use vs. Alternatives**: Screen for tuberculosis before starting.\n\n### Procedures\n\n#### Bronchoscopy\n- **What it Involves**: A procedure to visualize the airways and obtain samples for biopsy or lavage.\n- **Indications**: Uncertain diagnosis, suspected lung involvement, or to rule out infection.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax.\n\n#### Thoracentesis\n- **What it Involves**: A procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.\n- **Indications**: Pleural effusion suspected in sarcoidosis.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of sarcoidosis varies; many patients experience spontaneous remission, while others may develop chronic disease requiring long-term management. Severe cases can lead to pulmonary fibrosis and respiratory failure.\n\n### Important Complications to Watch For\n- Pulmonary fibrosis\n- Cardiac arrhythmias\n- Ocular complications (cataracts, glaucoma)\n- Hypercalcemia\n- Kidney stones\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of sarcoidosis, perform initial investigations, and manage acute presentations. They should also be aware of the need for specialist referral for complex cases.\n\n### When to Escalate to Senior/Specialist\nRefer to a respiratory specialist if there is uncertainty in diagnosis, severe symptoms, or if the patient does not respond to initial management.\n\n### Key Safety Considerations\nMonitor for side effects of corticosteroids and immunosuppressive therapy, ensure regular follow-up for lung function, and educate patients about signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Sarcoidosis is a systemic granulomatous disease characterized by the formation of non-caseating granulomas in various organs, most commonly the lungs, lymph nodes, skin, and eyes.",
+      "epidemiology": "Sarcoidosis has a prevalence of approximately 10-20 cases per 100,000 people in the UK, with higher rates in African American populations and those aged 20-40 years. It is more common in women than men.",
+      "pathophysiology": "The exact cause of sarcoidosis is unknown, but it is thought to involve an exaggerated immune response to an unknown antigen, leading to the formation of granulomas. These granulomas can disrupt normal organ function."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cough",
+        "Dyspnea",
+        "Chest pain",
+        "Fatigue",
+        "Fever",
+        "Weight loss",
+        "Night sweats"
+      ],
+      "signs": [
+        "Lymphadenopathy",
+        "Rales on auscultation",
+        "Erythema nodosum (skin lesions)",
+        "Hilar lymphadenopathy on chest X-ray"
+      ],
+      "atypicalPresentations": [
+        "Ocular symptoms (uveitis, conjunctivitis)",
+        "Skin lesions (lupus pernio)",
+        "Cardiac involvement (arrhythmias)",
+        "Neurological symptoms (facial nerve palsy, seizures)"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Acute visual changes",
+        "Neurological deficits",
+        "Persistent fever and weight loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (to assess for hilar lymphadenopathy)",
+        "Pulmonary function tests (to evaluate lung function)",
+        "Serum angiotensin-converting enzyme (ACE) levels"
+      ],
+      "secondLine": [
+        "High-resolution CT scan of the chest (to further evaluate lung involvement)",
+        "Bronchoscopy with bronchoalveolar lavage (BAL) for cytology and culture"
+      ],
+      "specialistTests": [
+        "Biopsy of affected tissue (e.g., skin, lymph nodes, lung) to confirm granuloma formation",
+        "Gallium scan (to assess for sarcoidosis in other organs)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of sarcoidosis is based on clinical presentation, imaging findings, and histological confirmation of non-caseating granulomas, while excluding other causes of granulomatous disease.",
+      "differentials": [
+        "Tuberculosis",
+        "Histoplasmosis",
+        "Coccidioidomycosis",
+        "Granulomatosis with polyangiitis (Wegener's)",
+        "Lymphoma"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (e.g., prednisone 0.5-1 mg/kg/day)"
+        ],
+        "secondLine": [
+          "Methotrexate (15-25 mg weekly)",
+          "Azathioprine (2-3 mg/kg/day)"
+        ],
+        "procedures": [
+          "Bronchoscopy for BAL and biopsy if diagnosis is uncertain",
+          "Thoracentesis for pleural effusion if present"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Corticosteroids (tapering dose based on response)",
+          "Monitoring of lung function and symptoms"
+        ],
+        "secondLine": [
+          "Methotrexate or azathioprine for steroid-sparing effect",
+          "Infliximab (for refractory cases)"
+        ],
+        "monitoring": [
+          "Regular follow-up for lung function tests",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "0.5-1 mg/kg/day, taper based on response",
+          "sideEffects": "Weight gain, hyperglycemia, osteoporosis, hypertension",
+          "notes": "Monitor for side effects and adjust dose accordingly."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to immunosuppression",
+          "dosing": "15-25 mg weekly, monitor liver function",
+          "sideEffects": "Hepatotoxicity, bone marrow suppression, mucositis",
+          "notes": "Folic acid supplementation recommended."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressive agent that inhibits purine synthesis",
+          "dosing": "2-3 mg/kg/day, monitor for leukopenia",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk",
+          "notes": "Monitor complete blood count regularly."
+        },
+        {
+          "name": "Infliximab",
+          "mechanism": "Monoclonal antibody against TNF-alpha, reducing inflammation",
+          "dosing": "5 mg/kg IV at weeks 0, 2, and 6, then every 8 weeks",
+          "sideEffects": "Increased risk of infections, infusion reactions",
+          "notes": "Screen for tuberculosis before starting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bronchoscopy",
+          "description": "A procedure to visualize the airways and obtain samples for biopsy or lavage.",
+          "indications": "Uncertain diagnosis, suspected lung involvement, or to rule out infection.",
+          "risks": "Bleeding, infection, pneumothorax."
+        },
+        {
+          "name": "Thoracentesis",
+          "description": "A procedure to remove fluid from the pleural space for diagnostic or therapeutic purposes.",
+          "indications": "Pleural effusion suspected in sarcoidosis.",
+          "risks": "Pneumothorax, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of sarcoidosis varies; many patients experience spontaneous remission, while others may develop chronic disease requiring long-term management. Severe cases can lead to pulmonary fibrosis and respiratory failure.",
+    "complications": [
+      "Pulmonary fibrosis",
+      "Cardiac arrhythmias",
+      "Ocular complications (cataracts, glaucoma)",
+      "Hypercalcemia",
+      "Kidney stones"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of sarcoidosis, perform initial investigations, and manage acute presentations. They should also be aware of the need for specialist referral for complex cases.",
+    "escalation": "Refer to a respiratory specialist if there is uncertainty in diagnosis, severe symptoms, or if the patient does not respond to initial management.",
+    "keySafetyConsiderations": "Monitor for side effects of corticosteroids and immunosuppressive therapy, ensure regular follow-up for lung function, and educate patients about signs of complications."
+  }
+}

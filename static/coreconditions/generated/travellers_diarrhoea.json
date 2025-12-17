@@ -1,0 +1,134 @@
+{
+  "id": "travellers_diarrhoea",
+  "name": "Traveller?s diarrhoea",
+  "domains": [
+    "Infection"
+  ],
+  "generatedAt": "2025-12-17T20:10:49.577532",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Traveller?s diarrhoea: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTraveller's diarrhoea is defined as the passage of three or more unformed stools in a 24-hour period, occurring in a person who has recently traveled to a region with poor sanitation, typically within 2 weeks of travel.\n\n### Epidemiology\nIt affects approximately 20-50% of travelers to developing countries, with higher rates in regions such as South Asia, Central and South America, and Africa.\n\n### Essential Pathophysiology\nThe condition is primarily caused by the ingestion of contaminated food or water, leading to infection by pathogens such as bacteria (e.g., E. coli, Campylobacter), viruses (e.g., norovirus), or parasites (e.g., Giardia). These pathogens disrupt the intestinal mucosa, leading to increased secretion of electrolytes and water, resulting in diarrhea.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Watery diarrhea\n- Abdominal cramps\n- Nausea\n- Vomiting\n- Fever\n- Bloating\n\n### Key Signs\n- Dehydration (dry mucous membranes, decreased skin turgor)\n- Fever (if infectious)\n- Abdominal tenderness\n\n### Atypical Presentations\n- Persistent diarrhea lasting more than 14 days\n- Diarrhea with blood or mucus\n- Severe abdominal pain\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- High fever (>38.5°C)\n- Bloody diarrhea\n- Prolonged symptoms (>48 hours)\n- Signs of systemic infection\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Stool culture (if bloody diarrhea or severe symptoms)\n- Rapid stool tests for pathogens (if available)\n\n### Second-line Investigations\n- Stool microscopy for ova and parasites\n- Blood tests (CBC, electrolytes) if dehydration is suspected\n\n### Specialist Tests\n- Endoscopy (if chronic diarrhea or suspicion of inflammatory bowel disease)\n- PCR for specific pathogens (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on recent travel history and symptomatology. Laboratory tests may be used to confirm specific pathogens in severe cases.\n\n### Key Differential Diagnoses to Exclude\n- Inflammatory bowel disease (IBD)\n- Irritable bowel syndrome (IBS)\n- Antibiotic-associated diarrhea\n- Viral gastroenteritis\n- Parasitic infections\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rehydration therapy (oral rehydration solutions)\n- Antimicrobial therapy (if severe or bloody diarrhea)\n\n#### Second-line Treatments\n- Antidiarrheal agents (e.g., loperamide) if no fever or bloody diarrhea\n\n#### Emergency Procedures\n- IV fluid administration for severe dehydration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Prolonged rehydration and dietary modifications\n\n#### Second-line Treatments\n- Antimicrobial therapy for persistent infections\n\n#### Monitoring Requirements\n- Regular follow-up for persistent symptoms or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Loperamide\n- **Mechanism of Action**: Opioid receptor agonist that decreases gut motility and increases transit time.\n- **Typical Dosing Range**: 4 mg initially, followed by 2 mg after each loose stool (max 16 mg/day).\n- **Key Side Effects/Contraindications**: Constipation, abdominal pain, dizziness.\n- **When to Use vs. Alternatives**: Contraindicated in bloody diarrhea or high fever.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, leading to cell death.\n- **Typical Dosing Range**: 500 mg orally twice daily for 3 days.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, tendonitis, QT prolongation.\n- **When to Use vs. Alternatives**: Consider resistance patterns; not first-line for all cases.\n\n#### Azithromycin\n- **Mechanism of Action**: Macrolide antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 1 g orally as a single dose or 500 mg daily for 3 days.\n- **Key Side Effects/Contraindications**: Nausea, abdominal pain, diarrhea.\n- **When to Use vs. Alternatives**: Effective against certain resistant strains.\n\n### Procedures\n\n#### Intravenous fluid therapy\n- **What it Involves**: Administration of fluids and electrolytes via IV route to correct dehydration.\n- **Indications**: Severe dehydration, inability to tolerate oral fluids, or persistent vomiting.\n- **Key Risks/Complications**: Infection at the IV site, fluid overload, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases resolve spontaneously within 3-7 days. Complications can arise from severe dehydration or persistent infections.\n\n### Important Complications to Watch For\n- Severe dehydration\n- Electrolyte imbalances\n- Post-infectious irritable bowel syndrome (IBS)\n- Chronic diarrhea due to persistent infection\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and manage patients with suspected traveller's diarrhoea, initiate rehydration therapy, and consider appropriate investigations and referrals based on severity.\n\n### When to Escalate to Senior/Specialist\nRefer to a senior clinician if the patient shows signs of severe dehydration, persistent symptoms, or if there are red flags present.\n\n### Key Safety Considerations\nEnsure proper hydration, monitor for signs of dehydration, and educate patients on food and water safety while traveling. Advise on when to seek medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Traveller's diarrhoea is defined as the passage of three or more unformed stools in a 24-hour period, occurring in a person who has recently traveled to a region with poor sanitation, typically within 2 weeks of travel.",
+      "epidemiology": "It affects approximately 20-50% of travelers to developing countries, with higher rates in regions such as South Asia, Central and South America, and Africa.",
+      "pathophysiology": "The condition is primarily caused by the ingestion of contaminated food or water, leading to infection by pathogens such as bacteria (e.g., E. coli, Campylobacter), viruses (e.g., norovirus), or parasites (e.g., Giardia). These pathogens disrupt the intestinal mucosa, leading to increased secretion of electrolytes and water, resulting in diarrhea."
+    },
+    "recognition": {
+      "symptoms": [
+        "Watery diarrhea",
+        "Abdominal cramps",
+        "Nausea",
+        "Vomiting",
+        "Fever",
+        "Bloating"
+      ],
+      "signs": [
+        "Dehydration (dry mucous membranes, decreased skin turgor)",
+        "Fever (if infectious)",
+        "Abdominal tenderness"
+      ],
+      "atypicalPresentations": [
+        "Persistent diarrhea lasting more than 14 days",
+        "Diarrhea with blood or mucus",
+        "Severe abdominal pain"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "High fever (>38.5°C)",
+        "Bloody diarrhea",
+        "Prolonged symptoms (>48 hours)",
+        "Signs of systemic infection"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Stool culture (if bloody diarrhea or severe symptoms)",
+        "Rapid stool tests for pathogens (if available)"
+      ],
+      "secondLine": [
+        "Stool microscopy for ova and parasites",
+        "Blood tests (CBC, electrolytes) if dehydration is suspected"
+      ],
+      "specialistTests": [
+        "Endoscopy (if chronic diarrhea or suspicion of inflammatory bowel disease)",
+        "PCR for specific pathogens (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on recent travel history and symptomatology. Laboratory tests may be used to confirm specific pathogens in severe cases.",
+      "differentials": [
+        "Inflammatory bowel disease (IBD)",
+        "Irritable bowel syndrome (IBS)",
+        "Antibiotic-associated diarrhea",
+        "Viral gastroenteritis",
+        "Parasitic infections"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rehydration therapy (oral rehydration solutions)",
+          "Antimicrobial therapy (if severe or bloody diarrhea)"
+        ],
+        "secondLine": [
+          "Antidiarrheal agents (e.g., loperamide) if no fever or bloody diarrhea"
+        ],
+        "procedures": [
+          "IV fluid administration for severe dehydration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Prolonged rehydration and dietary modifications"
+        ],
+        "secondLine": [
+          "Antimicrobial therapy for persistent infections"
+        ],
+        "monitoring": [
+          "Regular follow-up for persistent symptoms or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Loperamide",
+          "mechanism": "Opioid receptor agonist that decreases gut motility and increases transit time.",
+          "dosing": "4 mg initially, followed by 2 mg after each loose stool (max 16 mg/day).",
+          "sideEffects": "Constipation, abdominal pain, dizziness.",
+          "notes": "Contraindicated in bloody diarrhea or high fever."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, leading to cell death.",
+          "dosing": "500 mg orally twice daily for 3 days.",
+          "sideEffects": "Nausea, diarrhea, tendonitis, QT prolongation.",
+          "notes": "Consider resistance patterns; not first-line for all cases."
+        },
+        {
+          "name": "Azithromycin",
+          "mechanism": "Macrolide antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "1 g orally as a single dose or 500 mg daily for 3 days.",
+          "sideEffects": "Nausea, abdominal pain, diarrhea.",
+          "notes": "Effective against certain resistant strains."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravenous fluid therapy",
+          "description": "Administration of fluids and electrolytes via IV route to correct dehydration.",
+          "indications": "Severe dehydration, inability to tolerate oral fluids, or persistent vomiting.",
+          "risks": "Infection at the IV site, fluid overload, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "Most cases resolve spontaneously within 3-7 days. Complications can arise from severe dehydration or persistent infections.",
+    "complications": [
+      "Severe dehydration",
+      "Electrolyte imbalances",
+      "Post-infectious irritable bowel syndrome (IBS)",
+      "Chronic diarrhea due to persistent infection"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and manage patients with suspected traveller's diarrhoea, initiate rehydration therapy, and consider appropriate investigations and referrals based on severity.",
+    "escalation": "Refer to a senior clinician if the patient shows signs of severe dehydration, persistent symptoms, or if there are red flags present.",
+    "keySafetyConsiderations": "Ensure proper hydration, monitor for signs of dehydration, and educate patients on food and water safety while traveling. Advise on when to seek medical attention."
+  }
+}

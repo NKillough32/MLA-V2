@@ -1,0 +1,122 @@
+{
+  "id": "immune_thrombocytopaenia_gestational",
+  "name": "Immune thrombocytopaenia (gestational)",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T20:00:39.271833",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Immune thrombocytopaenia (gestational): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nImmune thrombocytopaenia (gestational) is a condition characterized by a low platelet count during pregnancy due to the production of antibodies that target and destroy platelets. It is often a benign condition but can lead to complications if not monitored appropriately.\n\n### Epidemiology\nGestational immune thrombocytopaenia occurs in approximately 3-5% of pregnancies, often presenting in the third trimester. It is more common in women with a history of autoimmune disorders or previous episodes of thrombocytopaenia.\n\n### Essential Pathophysiology\nThe condition arises from the maternal immune system producing antibodies against platelet antigens, leading to increased destruction of platelets in the spleen. This can be exacerbated by the physiological changes in pregnancy that affect platelet production and turnover.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Easy bruising\n- Prolonged bleeding from cuts\n- Petechiae (small red or purple spots on the skin)\n- Fatigue\n\n### Key Signs\n- Low platelet count on complete blood count (CBC)\n- Signs of bleeding (e.g., gum bleeding, hematuria)\n- Pallor\n\n### Atypical Presentations\n- Severe thrombocytopaenia (<50,000/µL) without significant bleeding\n- Thrombocytopaenia persisting beyond delivery\n\n### Red Flags Requiring Immediate Action\n- Severe bleeding complications (e.g., intracranial hemorrhage)\n- Platelet count <20,000/µL\n- History of autoimmune disease or previous severe thrombocytopaenia\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) to assess platelet levels\n- Peripheral blood smear to evaluate platelet morphology\n\n### Second-line Investigations\n- Bone marrow biopsy (if thrombocytopaenia is severe and unexplained)\n- Antibody testing for anti-platelet antibodies\n\n### Specialist Tests\n- Flow cytometry for platelet-associated antibodies\n- Genetic testing for inherited thrombocytopaenias (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of isolated thrombocytopaenia in a pregnant woman with no other causes identified, typically with a platelet count <150,000/µL and no evidence of other hematological disorders.\n\n### Key Differential Diagnoses to Exclude\n- Gestational thrombocytopaenia\n- Thrombotic thrombocytopenic purpura (TTP)\n- Heparin-induced thrombocytopaenia (HIT)\n- Aplastic anaemia\n- Bone marrow disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Observation and monitoring of platelet counts\n- Patient education on signs of bleeding\n\n#### Second-line Treatments\n- Corticosteroids (e.g., prednisone) if platelet count is critically low or if bleeding occurs\n\n#### Emergency Procedures\n- Platelet transfusion in cases of severe bleeding or very low platelet counts (<20,000/µL)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of platelet counts throughout pregnancy\n- Education on avoiding trauma and bleeding risks\n\n#### Second-line Treatments\n- Consideration of immunosuppressive therapy if severe thrombocytopaenia persists post-delivery\n\n#### Monitoring Requirements\n- Frequent CBCs to monitor platelet levels, especially in the third trimester\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Immunosuppressive agent that reduces antibody production against platelets.\n- **Typical Dosing Range**: Initial dose of 0.5-1 mg/kg/day, tapering based on response.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, increased risk of infection.\n- **When to Use vs. Alternatives**: Use with caution in pregnancy; monitor for maternal and fetal side effects.\n\n#### Intravenous immunoglobulin (IVIG)\n- **Mechanism of Action**: Provides passive immunity and may help increase platelet counts by neutralizing antibodies.\n- **Typical Dosing Range**: 1 g/kg IV once or divided over 2 days.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions.\n- **When to Use vs. Alternatives**: Consider in cases of severe thrombocytopaenia with bleeding.\n\n### Procedures\n\n#### Platelet transfusion\n- **What it Involves**: Administration of platelets to increase platelet count in cases of severe bleeding or critically low counts.\n- **Indications**: Severe thrombocytopaenia (<20,000/µL) with active bleeding or prior to invasive procedures.\n- **Key Risks/Complications**: Allergic reactions, transfusion-related acute lung injury (TRALI), infection transmission.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for gestational immune thrombocytopaenia is generally good, with most cases resolving postpartum. However, close monitoring is essential to prevent complications during pregnancy and delivery.\n\n### Important Complications to Watch For\n- Severe bleeding during delivery or postpartum\n- Fetal complications if maternal thrombocytopaenia is severe\n- Potential for recurrence in future pregnancies\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in monitoring platelet counts in pregnant patients, educating them about signs of bleeding, and ensuring timely referrals to specialists when necessary. They should also be involved in the management of acute cases and assist in patient education.\n\n### When to Escalate to Senior/Specialist\nIf platelet counts drop below 20,000/µL or if there are signs of significant bleeding, immediate referral to a hematologist and obstetrician is warranted. Additionally, any severe symptoms or complications should prompt urgent evaluation.\n\n### Key Safety Considerations\nEnsure thorough patient education on recognizing signs of bleeding. Monitor for any signs of severe thrombocytopaenia and be prepared to escalate care. Maintain a multidisciplinary approach involving obstetrics and hematology for optimal management.\n",
+  "content": {
+    "overview": {
+      "definition": "Immune thrombocytopaenia (gestational) is a condition characterized by a low platelet count during pregnancy due to the production of antibodies that target and destroy platelets. It is often a benign condition but can lead to complications if not monitored appropriately.",
+      "epidemiology": "Gestational immune thrombocytopaenia occurs in approximately 3-5% of pregnancies, often presenting in the third trimester. It is more common in women with a history of autoimmune disorders or previous episodes of thrombocytopaenia.",
+      "pathophysiology": "The condition arises from the maternal immune system producing antibodies against platelet antigens, leading to increased destruction of platelets in the spleen. This can be exacerbated by the physiological changes in pregnancy that affect platelet production and turnover."
+    },
+    "recognition": {
+      "symptoms": [
+        "Easy bruising",
+        "Prolonged bleeding from cuts",
+        "Petechiae (small red or purple spots on the skin)",
+        "Fatigue"
+      ],
+      "signs": [
+        "Low platelet count on complete blood count (CBC)",
+        "Signs of bleeding (e.g., gum bleeding, hematuria)",
+        "Pallor"
+      ],
+      "atypicalPresentations": [
+        "Severe thrombocytopaenia (<50,000/µL) without significant bleeding",
+        "Thrombocytopaenia persisting beyond delivery"
+      ],
+      "redFlags": [
+        "Severe bleeding complications (e.g., intracranial hemorrhage)",
+        "Platelet count <20,000/µL",
+        "History of autoimmune disease or previous severe thrombocytopaenia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) to assess platelet levels",
+        "Peripheral blood smear to evaluate platelet morphology"
+      ],
+      "secondLine": [
+        "Bone marrow biopsy (if thrombocytopaenia is severe and unexplained)",
+        "Antibody testing for anti-platelet antibodies"
+      ],
+      "specialistTests": [
+        "Flow cytometry for platelet-associated antibodies",
+        "Genetic testing for inherited thrombocytopaenias (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of isolated thrombocytopaenia in a pregnant woman with no other causes identified, typically with a platelet count <150,000/µL and no evidence of other hematological disorders.",
+      "differentials": [
+        "Gestational thrombocytopaenia",
+        "Thrombotic thrombocytopenic purpura (TTP)",
+        "Heparin-induced thrombocytopaenia (HIT)",
+        "Aplastic anaemia",
+        "Bone marrow disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Observation and monitoring of platelet counts",
+          "Patient education on signs of bleeding"
+        ],
+        "secondLine": [
+          "Corticosteroids (e.g., prednisone) if platelet count is critically low or if bleeding occurs"
+        ],
+        "procedures": [
+          "Platelet transfusion in cases of severe bleeding or very low platelet counts (<20,000/µL)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of platelet counts throughout pregnancy",
+          "Education on avoiding trauma and bleeding risks"
+        ],
+        "secondLine": [
+          "Consideration of immunosuppressive therapy if severe thrombocytopaenia persists post-delivery"
+        ],
+        "monitoring": [
+          "Frequent CBCs to monitor platelet levels, especially in the third trimester"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Immunosuppressive agent that reduces antibody production against platelets.",
+          "dosing": "Initial dose of 0.5-1 mg/kg/day, tapering based on response.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, increased risk of infection.",
+          "notes": "Use with caution in pregnancy; monitor for maternal and fetal side effects."
+        },
+        {
+          "name": "Intravenous immunoglobulin (IVIG)",
+          "mechanism": "Provides passive immunity and may help increase platelet counts by neutralizing antibodies.",
+          "dosing": "1 g/kg IV once or divided over 2 days.",
+          "sideEffects": "Headache, fever, chills, allergic reactions.",
+          "notes": "Consider in cases of severe thrombocytopaenia with bleeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Platelet transfusion",
+          "description": "Administration of platelets to increase platelet count in cases of severe bleeding or critically low counts.",
+          "indications": "Severe thrombocytopaenia (<20,000/µL) with active bleeding or prior to invasive procedures.",
+          "risks": "Allergic reactions, transfusion-related acute lung injury (TRALI), infection transmission."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for gestational immune thrombocytopaenia is generally good, with most cases resolving postpartum. However, close monitoring is essential to prevent complications during pregnancy and delivery.",
+    "complications": [
+      "Severe bleeding during delivery or postpartum",
+      "Fetal complications if maternal thrombocytopaenia is severe",
+      "Potential for recurrence in future pregnancies"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in monitoring platelet counts in pregnant patients, educating them about signs of bleeding, and ensuring timely referrals to specialists when necessary. They should also be involved in the management of acute cases and assist in patient education.",
+    "escalation": "If platelet counts drop below 20,000/µL or if there are signs of significant bleeding, immediate referral to a hematologist and obstetrician is warranted. Additionally, any severe symptoms or complications should prompt urgent evaluation.",
+    "keySafetyConsiderations": "Ensure thorough patient education on recognizing signs of bleeding. Monitor for any signs of severe thrombocytopaenia and be prepared to escalate care. Maintain a multidisciplinary approach involving obstetrics and hematology for optimal management."
+  }
+}

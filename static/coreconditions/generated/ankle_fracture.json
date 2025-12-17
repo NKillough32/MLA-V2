@@ -1,0 +1,138 @@
+{
+  "id": "ankle_fracture",
+  "name": "Ankle fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:24:49.550098",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ankle fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAn ankle fracture is a break in one or more of the bones that make up the ankle joint, typically involving the fibula, tibia, or talus.\n\n### Epidemiology\nAnkle fractures are common injuries, accounting for approximately 10% of all fractures. They are more prevalent in active individuals aged 20-40 and in older adults due to falls.\n\n### Essential Pathophysiology\nAnkle fractures usually occur due to trauma, such as twisting injuries or direct impact. The mechanism of injury can lead to various fracture patterns, including unimalleolar, bimalleolar, and trimalleolar fractures, depending on the involvement of the lateral malleolus (fibula) and medial malleolus (tibia).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain around the ankle joint\n- Swelling and bruising\n- Inability to bear weight on the affected limb\n- Deformity of the ankle\n\n### Key Signs\n- Tenderness over the malleoli\n- Swelling and ecchymosis around the ankle\n- Decreased range of motion\n- Possible visible deformity\n\n### Atypical Presentations\n- Minimal swelling with significant pain\n- Delayed presentation after injury\n- Fracture without significant trauma in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Open fracture (bone protruding through the skin)\n- Neurovascular compromise (numbness, tingling, weak pulse)\n- Severe deformity or instability of the joint\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the ankle (AP, lateral, and oblique views)\n\n### Second-line Investigations\n- CT scan for complex fractures or surgical planning\n- MRI for soft tissue evaluation if associated injuries are suspected\n\n### Specialist Tests\n- Bone scan if stress fracture is suspected and X-rays are inconclusive\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical examination and imaging findings. Ankle fractures are classified according to the Lauge-Hansen and Danis-Weber classification systems based on the mechanism of injury and the level of fibular fracture.\n\n### Key Differential Diagnoses to Exclude\n- Ankle sprain\n- Achilles tendon rupture\n- Talar dome lesion\n- Osteochondral injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- RICE (Rest, Ice, Compression, Elevation)\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Immobilization with a splint or cast\n\n#### Second-line Treatments\n- Orthopedic referral for surgical evaluation if indicated\n\n#### Emergency Procedures\n- Closed reduction and casting for stable fractures\n- Surgical fixation (ORIF) for unstable fractures or those with significant displacement\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy for rehabilitation and strengthening\n- Gradual return to activity\n\n#### Second-line Treatments\n- Surgical intervention for non-union or malunion\n\n#### Monitoring Requirements\n- Regular follow-up X-rays to assess healing\n- Monitoring for complications such as arthritis or chronic pain\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, anti-inflammatory\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Useful for pain and inflammation.\n\n#### Opioids (e.g., Oxycodone)\n- **Mechanism of Action**: Analgesic, acts on opioid receptors\n- **Typical Dosing Range**: 5-15 mg every 4-6 hours as needed\n- **Key Side Effects/Contraindications**: Constipation, sedation, respiratory depression\n- **When to Use vs. Alternatives**: Consider for severe pain management.\n\n### Procedures\n\n#### Closed Reduction\n- **What it Involves**: Non-surgical realignment of fractured bones under sedation or anesthesia.\n- **Indications**: Displaced fractures that can be realigned without surgery.\n- **Key Risks/Complications**: Re-displacement, neurovascular injury.\n\n#### Open Reduction and Internal Fixation (ORIF)\n- **What it Involves**: Surgical procedure to realign and stabilize the fracture using plates and screws.\n- **Indications**: Unstable fractures, fractures with significant displacement, or those involving the joint surface.\n- **Key Risks/Complications**: Infection, non-union, malunion, complications from anesthesia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost ankle fractures heal well with appropriate treatment. Complications can include chronic pain, arthritis, and instability of the ankle joint, particularly in cases of severe injury or inadequate treatment.\n\n### Important Complications to Watch For\n- Post-traumatic arthritis\n- Chronic pain syndrome\n- Malunion or non-union of the fracture\n- Compartment syndrome in severe cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, provide analgesia, and refer to orthopedic specialists when necessary. They should also educate patients on rehabilitation and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopedic surgery for any open fractures, fractures with neurovascular compromise, or those requiring surgical intervention. Escalate care for patients with significant pain not controlled by analgesia or those showing signs of complications.\n\n### Key Safety Considerations\nEnsure proper immobilization of the fracture to prevent further injury. Monitor for signs of compartment syndrome, especially in cases of severe swelling or pain. Educate patients on the importance of follow-up appointments and adherence to rehabilitation protocols.\n",
+  "content": {
+    "overview": {
+      "definition": "An ankle fracture is a break in one or more of the bones that make up the ankle joint, typically involving the fibula, tibia, or talus.",
+      "epidemiology": "Ankle fractures are common injuries, accounting for approximately 10% of all fractures. They are more prevalent in active individuals aged 20-40 and in older adults due to falls.",
+      "pathophysiology": "Ankle fractures usually occur due to trauma, such as twisting injuries or direct impact. The mechanism of injury can lead to various fracture patterns, including unimalleolar, bimalleolar, and trimalleolar fractures, depending on the involvement of the lateral malleolus (fibula) and medial malleolus (tibia)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain around the ankle joint",
+        "Swelling and bruising",
+        "Inability to bear weight on the affected limb",
+        "Deformity of the ankle"
+      ],
+      "signs": [
+        "Tenderness over the malleoli",
+        "Swelling and ecchymosis around the ankle",
+        "Decreased range of motion",
+        "Possible visible deformity"
+      ],
+      "atypicalPresentations": [
+        "Minimal swelling with significant pain",
+        "Delayed presentation after injury",
+        "Fracture without significant trauma in elderly patients"
+      ],
+      "redFlags": [
+        "Open fracture (bone protruding through the skin)",
+        "Neurovascular compromise (numbness, tingling, weak pulse)",
+        "Severe deformity or instability of the joint"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the ankle (AP, lateral, and oblique views)"
+      ],
+      "secondLine": [
+        "CT scan for complex fractures or surgical planning",
+        "MRI for soft tissue evaluation if associated injuries are suspected"
+      ],
+      "specialistTests": [
+        "Bone scan if stress fracture is suspected and X-rays are inconclusive"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical examination and imaging findings. Ankle fractures are classified according to the Lauge-Hansen and Danis-Weber classification systems based on the mechanism of injury and the level of fibular fracture.",
+      "differentials": [
+        "Ankle sprain",
+        "Achilles tendon rupture",
+        "Talar dome lesion",
+        "Osteochondral injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "RICE (Rest, Ice, Compression, Elevation)",
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Immobilization with a splint or cast"
+        ],
+        "secondLine": [
+          "Orthopedic referral for surgical evaluation if indicated"
+        ],
+        "procedures": [
+          "Closed reduction and casting for stable fractures",
+          "Surgical fixation (ORIF) for unstable fractures or those with significant displacement"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy for rehabilitation and strengthening",
+          "Gradual return to activity"
+        ],
+        "secondLine": [
+          "Surgical intervention for non-union or malunion"
+        ],
+        "monitoring": [
+          "Regular follow-up X-rays to assess healing",
+          "Monitoring for complications such as arthritis or chronic pain"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, anti-inflammatory",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Useful for pain and inflammation."
+        },
+        {
+          "name": "Opioids (e.g., Oxycodone)",
+          "mechanism": "Analgesic, acts on opioid receptors",
+          "dosing": "5-15 mg every 4-6 hours as needed",
+          "sideEffects": "Constipation, sedation, respiratory depression",
+          "notes": "Consider for severe pain management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed Reduction",
+          "description": "Non-surgical realignment of fractured bones under sedation or anesthesia.",
+          "indications": "Displaced fractures that can be realigned without surgery.",
+          "risks": "Re-displacement, neurovascular injury."
+        },
+        {
+          "name": "Open Reduction and Internal Fixation (ORIF)",
+          "description": "Surgical procedure to realign and stabilize the fracture using plates and screws.",
+          "indications": "Unstable fractures, fractures with significant displacement, or those involving the joint surface.",
+          "risks": "Infection, non-union, malunion, complications from anesthesia."
+        }
+      ]
+    },
+    "prognosis": "Most ankle fractures heal well with appropriate treatment. Complications can include chronic pain, arthritis, and instability of the ankle joint, particularly in cases of severe injury or inadequate treatment.",
+    "complications": [
+      "Post-traumatic arthritis",
+      "Chronic pain syndrome",
+      "Malunion or non-union of the fracture",
+      "Compartment syndrome in severe cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, provide analgesia, and refer to orthopedic specialists when necessary. They should also educate patients on rehabilitation and follow-up care.",
+    "escalation": "Refer to orthopedic surgery for any open fractures, fractures with neurovascular compromise, or those requiring surgical intervention. Escalate care for patients with significant pain not controlled by analgesia or those showing signs of complications.",
+    "keySafetyConsiderations": "Ensure proper immobilization of the fracture to prevent further injury. Monitor for signs of compartment syndrome, especially in cases of severe swelling or pain. Educate patients on the importance of follow-up appointments and adherence to rehabilitation protocols."
+  }
+}

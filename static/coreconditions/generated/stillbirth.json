@@ -1,0 +1,118 @@
+{
+  "id": "stillbirth",
+  "name": "Stillbirth",
+  "domains": [
+    "Obstetrics"
+  ],
+  "generatedAt": "2025-12-17T21:50:52.932426",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Stillbirth: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nStillbirth is defined as the loss of a fetus at or after 20 weeks of gestation, where the fetus is not born alive. It is a tragic event that can occur due to various maternal, fetal, or placental factors.\n\n### Epidemiology\nStillbirth affects approximately 1 in 160 births globally, with higher rates in low- and middle-income countries. Risk factors include advanced maternal age, obesity, smoking, and certain medical conditions such as diabetes and hypertension.\n\n### Essential Pathophysiology\nThe pathophysiology of stillbirth can involve a range of factors including placental insufficiency, fetal genetic abnormalities, maternal infections, and chronic health conditions. The underlying mechanisms often lead to fetal hypoxia, growth restriction, or direct fetal demise.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Absence of fetal movement after 28 weeks of gestation\n- No fetal heart sounds on auscultation\n\n### Key Signs\n- Decreased or absent fetal heart rate on Doppler examination\n- Maternal signs of labor or rupture of membranes\n\n### Atypical Presentations\n- Maternal anxiety or depression due to previous pregnancy loss\n- Unexplained abdominal pain or cramping\n\n### Red Flags Requiring Immediate Action\n- Sudden cessation of fetal movements\n- Maternal fever or signs of infection\n- Severe abdominal pain or bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Ultrasound to assess fetal heart activity and growth\n- Doppler ultrasound to evaluate placental blood flow\n\n### Second-line Investigations\n- MRI of the abdomen if anatomical abnormalities are suspected\n- Blood tests for maternal infections (e.g., TORCH panel)\n\n### Specialist Tests\n- Genetic testing of the fetus if indicated\n- Autopsy of the stillborn fetus to determine cause of death\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of stillbirth is confirmed by the absence of fetal heart activity on ultrasound after 20 weeks of gestation.\n\n### Key Differential Diagnoses to Exclude\n- Miscarriage (before 20 weeks)\n- Fetal demise (before 20 weeks)\n- Ectopic pregnancy\n- Molar pregnancy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Emotional support and counseling for the parents\n- Delivery planning, which may include induction of labor\n\n#### Second-line Treatments\n- Consideration of a cesarean section if indicated for maternal or fetal reasons\n- Referral to a specialist obstetrician for complex cases\n\n#### Emergency Procedures\n- Induction of labor: Administering medications such as oxytocin or prostaglandins to initiate labor in cases of stillbirth. Indicated when the fetus is confirmed to be stillborn. Risks include uterine hyperstimulation and potential for maternal complications.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Counseling and psychological support for the family\n- Follow-up appointments to monitor maternal health\n\n#### Second-line Treatments\n- Consideration of future pregnancy planning and risk assessment\n\n#### Monitoring Requirements\n- Regular follow-up with obstetric care to assess maternal health and emotional well-being\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oxytocin\n- **Mechanism of Action**: Stimulates uterine contractions to facilitate labor.\n- **Typical Dosing Range**: 10-20 units IV infusion, titrated to effect.\n- **Key Side Effects/Contraindications**: Uterine hyperstimulation, water retention, hypotension.\n- **When to Use vs. Alternatives**: Careful monitoring of uterine activity is essential.\n\n#### Prostaglandins (e.g., Misoprostol)\n- **Mechanism of Action**: Induces cervical ripening and uterine contractions.\n- **Typical Dosing Range**: 25 mcg vaginally every 4-6 hours, up to 200 mcg total.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, uterine hyperstimulation.\n- **When to Use vs. Alternatives**: Contraindicated in cases of previous uterine surgery.\n\n### Procedures\n\n#### Induction of Labor\n- **What it Involves**: A medical procedure to initiate labor using medications or mechanical methods.\n- **Indications**: Confirmed stillbirth after 20 weeks of gestation.\n- **Key Risks/Complications**: Uterine hyperstimulation, infection, and potential need for cesarean delivery.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for future pregnancies after stillbirth varies; women may have a higher risk of recurrence but many go on to have healthy pregnancies with appropriate monitoring and care.\n\n### Important Complications to Watch For\n- Psychological impact on parents, including PTSD, anxiety, and depression.\n- Increased risk of future pregnancy complications such as preterm birth or placental issues.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should provide compassionate care, support families through the grieving process, and ensure appropriate referrals to specialists for ongoing care and counseling.\n\n### When to Escalate to Senior/Specialist\nIf a stillbirth is suspected, immediate referral to an obstetrician is necessary. In cases of maternal distress or complications, escalate to emergency care.\n\n### Key Safety Considerations\nEnsure clear communication with the family regarding the diagnosis and management plan. Provide emotional support and involve mental health services as needed. Document all discussions and decisions thoroughly.\n",
+  "content": {
+    "overview": {
+      "definition": "Stillbirth is defined as the loss of a fetus at or after 20 weeks of gestation, where the fetus is not born alive. It is a tragic event that can occur due to various maternal, fetal, or placental factors.",
+      "epidemiology": "Stillbirth affects approximately 1 in 160 births globally, with higher rates in low- and middle-income countries. Risk factors include advanced maternal age, obesity, smoking, and certain medical conditions such as diabetes and hypertension.",
+      "pathophysiology": "The pathophysiology of stillbirth can involve a range of factors including placental insufficiency, fetal genetic abnormalities, maternal infections, and chronic health conditions. The underlying mechanisms often lead to fetal hypoxia, growth restriction, or direct fetal demise."
+    },
+    "recognition": {
+      "symptoms": [
+        "Absence of fetal movement after 28 weeks of gestation",
+        "No fetal heart sounds on auscultation"
+      ],
+      "signs": [
+        "Decreased or absent fetal heart rate on Doppler examination",
+        "Maternal signs of labor or rupture of membranes"
+      ],
+      "atypicalPresentations": [
+        "Maternal anxiety or depression due to previous pregnancy loss",
+        "Unexplained abdominal pain or cramping"
+      ],
+      "redFlags": [
+        "Sudden cessation of fetal movements",
+        "Maternal fever or signs of infection",
+        "Severe abdominal pain or bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Ultrasound to assess fetal heart activity and growth",
+        "Doppler ultrasound to evaluate placental blood flow"
+      ],
+      "secondLine": [
+        "MRI of the abdomen if anatomical abnormalities are suspected",
+        "Blood tests for maternal infections (e.g., TORCH panel)"
+      ],
+      "specialistTests": [
+        "Genetic testing of the fetus if indicated",
+        "Autopsy of the stillborn fetus to determine cause of death"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of stillbirth is confirmed by the absence of fetal heart activity on ultrasound after 20 weeks of gestation.",
+      "differentials": [
+        "Miscarriage (before 20 weeks)",
+        "Fetal demise (before 20 weeks)",
+        "Ectopic pregnancy",
+        "Molar pregnancy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Emotional support and counseling for the parents",
+          "Delivery planning, which may include induction of labor"
+        ],
+        "secondLine": [
+          "Consideration of a cesarean section if indicated for maternal or fetal reasons",
+          "Referral to a specialist obstetrician for complex cases"
+        ],
+        "procedures": [
+          "Induction of labor: Administering medications such as oxytocin or prostaglandins to initiate labor in cases of stillbirth. Indicated when the fetus is confirmed to be stillborn. Risks include uterine hyperstimulation and potential for maternal complications."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Counseling and psychological support for the family",
+          "Follow-up appointments to monitor maternal health"
+        ],
+        "secondLine": [
+          "Consideration of future pregnancy planning and risk assessment"
+        ],
+        "monitoring": [
+          "Regular follow-up with obstetric care to assess maternal health and emotional well-being"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oxytocin",
+          "mechanism": "Stimulates uterine contractions to facilitate labor.",
+          "dosing": "10-20 units IV infusion, titrated to effect.",
+          "sideEffects": "Uterine hyperstimulation, water retention, hypotension.",
+          "notes": "Careful monitoring of uterine activity is essential."
+        },
+        {
+          "name": "Prostaglandins (e.g., Misoprostol)",
+          "mechanism": "Induces cervical ripening and uterine contractions.",
+          "dosing": "25 mcg vaginally every 4-6 hours, up to 200 mcg total.",
+          "sideEffects": "Nausea, diarrhea, uterine hyperstimulation.",
+          "notes": "Contraindicated in cases of previous uterine surgery."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Induction of Labor",
+          "description": "A medical procedure to initiate labor using medications or mechanical methods.",
+          "indications": "Confirmed stillbirth after 20 weeks of gestation.",
+          "risks": "Uterine hyperstimulation, infection, and potential need for cesarean delivery."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for future pregnancies after stillbirth varies; women may have a higher risk of recurrence but many go on to have healthy pregnancies with appropriate monitoring and care.",
+    "complications": [
+      "Psychological impact on parents, including PTSD, anxiety, and depression.",
+      "Increased risk of future pregnancy complications such as preterm birth or placental issues."
+    ],
+    "foundationDoctorRole": "Foundation doctors should provide compassionate care, support families through the grieving process, and ensure appropriate referrals to specialists for ongoing care and counseling.",
+    "escalation": "If a stillbirth is suspected, immediate referral to an obstetrician is necessary. In cases of maternal distress or complications, escalate to emergency care.",
+    "keySafetyConsiderations": "Ensure clear communication with the family regarding the diagnosis and management plan. Provide emotional support and involve mental health services as needed. Document all discussions and decisions thoroughly."
+  }
+}

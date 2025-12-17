@@ -1,0 +1,140 @@
+{
+  "id": "thrombotic_thrombocytopenic_purpura",
+  "name": "Thrombotic thrombocytopenic purpura",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:52:08.382052",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Thrombotic thrombocytopenic purpura: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nThrombotic Thrombocytopenic Purpura (TTP) is a rare, life-threatening disorder characterized by the formation of small blood clots (thrombi) in the microcirculation, leading to a low platelet count (thrombocytopenia), hemolytic anemia, and organ dysfunction.\n\n### Epidemiology\nTTP has an incidence of approximately 3-4 cases per million people per year. It can occur at any age but is most common in adults aged 30-50 years, with a higher prevalence in women. Secondary forms of TTP can occur in association with conditions such as pregnancy, infections, and certain medications.\n\n### Essential Pathophysiology\nTTP is primarily caused by a deficiency of the von Willebrand factor-cleaving protease (ADAMTS13), leading to the accumulation of large von Willebrand factor multimers that promote excessive platelet aggregation and thrombus formation. This results in microangiopathic hemolytic anemia and thrombocytopenia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Pallor\n- Jaundice\n- Shortness of breath\n- Chest pain\n- Neurological symptoms (e.g., confusion, seizures)\n\n### Key Signs\n- Petechiae\n- Purpura\n- Splenomegaly\n- Neurological deficits\n- Elevated blood pressure\n\n### Atypical Presentations\n- Acute renal failure\n- Severe headache\n- Gastrointestinal symptoms (e.g., abdominal pain, diarrhea)\n\n### Red Flags Requiring Immediate Action\n- Severe thrombocytopenia (<20,000/µL)\n- Signs of hemolytic anemia (elevated LDH, low haptoglobin)\n- Neurological symptoms\n- Acute renal failure\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Peripheral blood smear\n- Lactate dehydrogenase (LDH)\n- Haptoglobin\n- Coagulation profile (PT, aPTT)\n\n### Second-line Investigations\n- ADAMTS13 activity assay\n- ADAMTS13 inhibitor testing\n- Direct Coombs test\n\n### Specialist Tests\n- Bone marrow biopsy (if indicated)\n- Genetic testing for hereditary forms of TTP\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of TTP is based on the presence of the following pentad: microangiopathic hemolytic anemia, thrombocytopenia, neurological symptoms, renal dysfunction, and fever. However, not all five criteria need to be present for diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Hemolytic Uremic Syndrome (HUS)\n- Disseminated Intravascular Coagulation (DIC)\n- Acute leukemia\n- Sepsis\n- Autoimmune disorders (e.g., SLE)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Plasma exchange (plasmapheresis)\n- Corticosteroids (e.g., prednisone)\n\n#### Second-line Treatments\n- Rituximab (in refractory cases)\n- Caplacizumab (anti-vWF antibody)\n\n#### Emergency Procedures\n- Plasma exchange: A procedure to remove plasma containing the abnormal von Willebrand factor and replace it with donor plasma.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term follow-up with regular monitoring of platelet counts and ADAMTS13 levels\n\n#### Second-line Treatments\n- Immunosuppressive therapy (if recurrent TTP)\n\n#### Monitoring Requirements\n- Regular CBC and LDH levels to monitor for recurrence.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Immunosuppressive agent that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial dose of 1-2 mg/kg/day, tapering as clinically indicated.\n- **Key Side Effects/Contraindications**: Increased risk of infection, hyperglycemia, osteoporosis, gastrointestinal bleeding.\n- **When to Use vs. Alternatives**: Used in conjunction with plasma exchange.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B-cells, reducing antibody production.\n- **Typical Dosing Range**: 375 mg/m² IV weekly for 4 weeks.\n- **Key Side Effects/Contraindications**: Infusion reactions, increased risk of infections, hypogammaglobulinemia.\n- **When to Use vs. Alternatives**: Used in refractory cases or for relapses.\n\n#### Caplacizumab\n- **Mechanism of Action**: Inhibits the interaction between von Willebrand factor and platelets.\n- **Typical Dosing Range**: 10 mg subcutaneously daily for 30 days, starting on the first day of plasma exchange.\n- **Key Side Effects/Contraindications**: Bleeding, thrombocytopenia, hypersensitivity reactions.\n- **When to Use vs. Alternatives**: Used in conjunction with plasma exchange.\n\n### Procedures\n\n#### Plasma Exchange (Plasmapheresis)\n- **What it Involves**: A procedure that removes plasma from the blood and replaces it with donor plasma or a substitute.\n- **Indications**: First-line treatment for TTP to remove the abnormal von Willebrand factor and replenish ADAMTS13.\n- **Key Risks/Complications**: Infection, hypotension, allergic reactions, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis for TTP is generally good, with a mortality rate of 10-20%. However, delays in treatment can lead to significant morbidity and mortality. Recurrence is possible, particularly in patients with hereditary forms.\n\n### Important Complications to Watch For\n- Recurrent TTP\n- Organ damage (e.g., renal failure, neurological deficits)\n- Thromboembolic events (e.g., stroke, myocardial infarction)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the signs and symptoms of TTP, initiate appropriate investigations, and facilitate timely referral to a specialist. They should also monitor patients for complications and manage supportive care.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to a hematologist is required for suspected TTP. If the patient exhibits severe symptoms (e.g., neurological deficits, severe anemia), escalate care urgently.\n\n### Key Safety Considerations\nMonitor for signs of bleeding, infection, and transfusion reactions during plasma exchange. Regularly assess vital signs and laboratory parameters (CBC, LDH, haptoglobin) to guide treatment and detect complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Thrombotic Thrombocytopenic Purpura (TTP) is a rare, life-threatening disorder characterized by the formation of small blood clots (thrombi) in the microcirculation, leading to a low platelet count (thrombocytopenia), hemolytic anemia, and organ dysfunction.",
+      "epidemiology": "TTP has an incidence of approximately 3-4 cases per million people per year. It can occur at any age but is most common in adults aged 30-50 years, with a higher prevalence in women. Secondary forms of TTP can occur in association with conditions such as pregnancy, infections, and certain medications.",
+      "pathophysiology": "TTP is primarily caused by a deficiency of the von Willebrand factor-cleaving protease (ADAMTS13), leading to the accumulation of large von Willebrand factor multimers that promote excessive platelet aggregation and thrombus formation. This results in microangiopathic hemolytic anemia and thrombocytopenia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pallor",
+        "Jaundice",
+        "Shortness of breath",
+        "Chest pain",
+        "Neurological symptoms (e.g., confusion, seizures)"
+      ],
+      "signs": [
+        "Petechiae",
+        "Purpura",
+        "Splenomegaly",
+        "Neurological deficits",
+        "Elevated blood pressure"
+      ],
+      "atypicalPresentations": [
+        "Acute renal failure",
+        "Severe headache",
+        "Gastrointestinal symptoms (e.g., abdominal pain, diarrhea)"
+      ],
+      "redFlags": [
+        "Severe thrombocytopenia (<20,000/µL)",
+        "Signs of hemolytic anemia (elevated LDH, low haptoglobin)",
+        "Neurological symptoms",
+        "Acute renal failure"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Peripheral blood smear",
+        "Lactate dehydrogenase (LDH)",
+        "Haptoglobin",
+        "Coagulation profile (PT, aPTT)"
+      ],
+      "secondLine": [
+        "ADAMTS13 activity assay",
+        "ADAMTS13 inhibitor testing",
+        "Direct Coombs test"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy (if indicated)",
+        "Genetic testing for hereditary forms of TTP"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of TTP is based on the presence of the following pentad: microangiopathic hemolytic anemia, thrombocytopenia, neurological symptoms, renal dysfunction, and fever. However, not all five criteria need to be present for diagnosis.",
+      "differentials": [
+        "Hemolytic Uremic Syndrome (HUS)",
+        "Disseminated Intravascular Coagulation (DIC)",
+        "Acute leukemia",
+        "Sepsis",
+        "Autoimmune disorders (e.g., SLE)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Plasma exchange (plasmapheresis)",
+          "Corticosteroids (e.g., prednisone)"
+        ],
+        "secondLine": [
+          "Rituximab (in refractory cases)",
+          "Caplacizumab (anti-vWF antibody)"
+        ],
+        "procedures": [
+          "Plasma exchange: A procedure to remove plasma containing the abnormal von Willebrand factor and replace it with donor plasma."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term follow-up with regular monitoring of platelet counts and ADAMTS13 levels"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (if recurrent TTP)"
+        ],
+        "monitoring": [
+          "Regular CBC and LDH levels to monitor for recurrence."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Immunosuppressive agent that reduces inflammation and immune response.",
+          "dosing": "Initial dose of 1-2 mg/kg/day, tapering as clinically indicated.",
+          "sideEffects": "Increased risk of infection, hyperglycemia, osteoporosis, gastrointestinal bleeding.",
+          "notes": "Used in conjunction with plasma exchange."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B-cells, reducing antibody production.",
+          "dosing": "375 mg/m² IV weekly for 4 weeks.",
+          "sideEffects": "Infusion reactions, increased risk of infections, hypogammaglobulinemia.",
+          "notes": "Used in refractory cases or for relapses."
+        },
+        {
+          "name": "Caplacizumab",
+          "mechanism": "Inhibits the interaction between von Willebrand factor and platelets.",
+          "dosing": "10 mg subcutaneously daily for 30 days, starting on the first day of plasma exchange.",
+          "sideEffects": "Bleeding, thrombocytopenia, hypersensitivity reactions.",
+          "notes": "Used in conjunction with plasma exchange."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Plasma Exchange (Plasmapheresis)",
+          "description": "A procedure that removes plasma from the blood and replaces it with donor plasma or a substitute.",
+          "indications": "First-line treatment for TTP to remove the abnormal von Willebrand factor and replenish ADAMTS13.",
+          "risks": "Infection, hypotension, allergic reactions, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis for TTP is generally good, with a mortality rate of 10-20%. However, delays in treatment can lead to significant morbidity and mortality. Recurrence is possible, particularly in patients with hereditary forms.",
+    "complications": [
+      "Recurrent TTP",
+      "Organ damage (e.g., renal failure, neurological deficits)",
+      "Thromboembolic events (e.g., stroke, myocardial infarction)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the signs and symptoms of TTP, initiate appropriate investigations, and facilitate timely referral to a specialist. They should also monitor patients for complications and manage supportive care.",
+    "escalation": "Immediate referral to a hematologist is required for suspected TTP. If the patient exhibits severe symptoms (e.g., neurological deficits, severe anemia), escalate care urgently.",
+    "keySafetyConsiderations": "Monitor for signs of bleeding, infection, and transfusion reactions during plasma exchange. Regularly assess vital signs and laboratory parameters (CBC, LDH, haptoglobin) to guide treatment and detect complications."
+  }
+}

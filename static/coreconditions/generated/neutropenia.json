@@ -1,0 +1,124 @@
+{
+  "id": "neutropenia",
+  "name": "Neutropenia",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:55:49.649999",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Neutropenia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNeutropenia is a condition characterized by an abnormally low level of neutrophils, a type of white blood cell essential for fighting off infections. It is defined as an absolute neutrophil count (ANC) of less than 1,500 cells per microliter of blood.\n\n### Epidemiology\nNeutropenia can occur in various populations, with an incidence of approximately 1 in 1,000 individuals. It is more common in patients undergoing chemotherapy, those with autoimmune diseases, and individuals with bone marrow disorders.\n\n### Essential Pathophysiology\nNeutropenia can result from decreased production of neutrophils in the bone marrow, increased destruction of neutrophils, or sequestration in the spleen. Causes include bone marrow disorders (e.g., aplastic anemia), infections (e.g., viral), autoimmune diseases, and certain medications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased susceptibility to infections\n- Fever\n- Malaise\n- Fatigue\n\n### Key Signs\n- Pallor\n- Signs of infection (e.g., fever, localized redness, swelling)\n- Oral ulcers\n\n### Atypical Presentations\n- Severe infections with minimal symptoms\n- Delayed wound healing\n\n### Red Flags Requiring Immediate Action\n- Fever >38°C in a neutropenic patient\n- Severe sepsis\n- Persistent neutropenia despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) with differential\n- Peripheral blood smear\n\n### Second-line Investigations\n- Bone marrow biopsy\n- Flow cytometry\n- Serum vitamin B12 and folate levels\n\n### Specialist Tests\n- Genetic testing for congenital neutropenia\n- Autoantibody tests (e.g., anti-neutrophil antibodies)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of neutropenia is based on the absolute neutrophil count (ANC) being less than 1,500 cells/µL, with further classification into mild (1,000-1,500), moderate (500-1,000), and severe (<500).\n\n### Key Differential Diagnoses to Exclude\n- Aplastic anemia\n- Leukemia\n- Myelodysplastic syndromes\n- Autoimmune disorders (e.g., lupus)\n- Infections (e.g., HIV, viral hepatitis)\n- Drug-induced neutropenia (e.g., chemotherapy, antibiotics)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate broad-spectrum intravenous antibiotics for febrile neutropenia\n- Supportive care (hydration, antipyretics)\n\n#### Second-line Treatments\n- Consider granulocyte colony-stimulating factor (G-CSF) if indicated\n\n#### Emergency Procedures\n- Bone marrow aspiration/biopsy if the cause is unclear\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor ANC regularly\n- Treat underlying cause (e.g., vitamin deficiencies, autoimmune conditions)\n\n#### Second-line Treatments\n- Consider G-CSF for chronic neutropenia\n\n#### Monitoring Requirements\n- Regular blood counts to monitor ANC and response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Filgrastim (G-CSF)\n- **Mechanism of Action**: Stimulates the production of neutrophils in the bone marrow.\n- **Typical Dosing Range**: 5-10 mcg/kg subcutaneously daily until ANC is adequate.\n- **Key Side Effects/Contraindications**: Bone pain, splenic rupture, leukocytosis.\n- **When to Use vs. Alternatives**: Used in patients with chemotherapy-induced neutropenia or severe chronic neutropenia.\n\n#### Pegfilgrastim\n- **Mechanism of Action**: Long-acting G-CSF that stimulates neutrophil production.\n- **Typical Dosing Range**: 6 mg subcutaneously once per chemotherapy cycle.\n- **Key Side Effects/Contraindications**: Similar to filgrastim but less frequent administration.\n- **When to Use vs. Alternatives**: Preferred for patients undergoing chemotherapy.\n\n### Procedures\n\n#### Bone Marrow Biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Unexplained neutropenia, suspected malignancy, or bone marrow disorders.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of neutropenia depends on the underlying cause. Patients with drug-induced or transient neutropenia often have a good prognosis, while those with bone marrow disorders may have a poorer outcome.\n\n### Important Complications to Watch For\n- Increased risk of infections (bacterial, fungal)\n- Sepsis\n- Delayed wound healing\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of neutropenia, initiate investigations, manage febrile neutropenia, and understand when to escalate care to a specialist.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with febrile neutropenia (fever >38°C and ANC <500), immediate escalation to a senior clinician and initiation of broad-spectrum antibiotics is critical.\n\n### Key Safety Considerations\nMonitor for signs of infection closely, especially in patients with severe neutropenia. Ensure appropriate isolation precautions are taken to prevent infections.\n",
+  "content": {
+    "overview": {
+      "definition": "Neutropenia is a condition characterized by an abnormally low level of neutrophils, a type of white blood cell essential for fighting off infections. It is defined as an absolute neutrophil count (ANC) of less than 1,500 cells per microliter of blood.",
+      "epidemiology": "Neutropenia can occur in various populations, with an incidence of approximately 1 in 1,000 individuals. It is more common in patients undergoing chemotherapy, those with autoimmune diseases, and individuals with bone marrow disorders.",
+      "pathophysiology": "Neutropenia can result from decreased production of neutrophils in the bone marrow, increased destruction of neutrophils, or sequestration in the spleen. Causes include bone marrow disorders (e.g., aplastic anemia), infections (e.g., viral), autoimmune diseases, and certain medications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased susceptibility to infections",
+        "Fever",
+        "Malaise",
+        "Fatigue"
+      ],
+      "signs": [
+        "Pallor",
+        "Signs of infection (e.g., fever, localized redness, swelling)",
+        "Oral ulcers"
+      ],
+      "atypicalPresentations": [
+        "Severe infections with minimal symptoms",
+        "Delayed wound healing"
+      ],
+      "redFlags": [
+        "Fever >38°C in a neutropenic patient",
+        "Severe sepsis",
+        "Persistent neutropenia despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) with differential",
+        "Peripheral blood smear"
+      ],
+      "secondLine": [
+        "Bone marrow biopsy",
+        "Flow cytometry",
+        "Serum vitamin B12 and folate levels"
+      ],
+      "specialistTests": [
+        "Genetic testing for congenital neutropenia",
+        "Autoantibody tests (e.g., anti-neutrophil antibodies)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of neutropenia is based on the absolute neutrophil count (ANC) being less than 1,500 cells/µL, with further classification into mild (1,000-1,500), moderate (500-1,000), and severe (<500).",
+      "differentials": [
+        "Aplastic anemia",
+        "Leukemia",
+        "Myelodysplastic syndromes",
+        "Autoimmune disorders (e.g., lupus)",
+        "Infections (e.g., HIV, viral hepatitis)",
+        "Drug-induced neutropenia (e.g., chemotherapy, antibiotics)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate broad-spectrum intravenous antibiotics for febrile neutropenia",
+          "Supportive care (hydration, antipyretics)"
+        ],
+        "secondLine": [
+          "Consider granulocyte colony-stimulating factor (G-CSF) if indicated"
+        ],
+        "procedures": [
+          "Bone marrow aspiration/biopsy if the cause is unclear"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor ANC regularly",
+          "Treat underlying cause (e.g., vitamin deficiencies, autoimmune conditions)"
+        ],
+        "secondLine": [
+          "Consider G-CSF for chronic neutropenia"
+        ],
+        "monitoring": [
+          "Regular blood counts to monitor ANC and response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Filgrastim (G-CSF)",
+          "mechanism": "Stimulates the production of neutrophils in the bone marrow.",
+          "dosing": "5-10 mcg/kg subcutaneously daily until ANC is adequate.",
+          "sideEffects": "Bone pain, splenic rupture, leukocytosis.",
+          "notes": "Used in patients with chemotherapy-induced neutropenia or severe chronic neutropenia."
+        },
+        {
+          "name": "Pegfilgrastim",
+          "mechanism": "Long-acting G-CSF that stimulates neutrophil production.",
+          "dosing": "6 mg subcutaneously once per chemotherapy cycle.",
+          "sideEffects": "Similar to filgrastim but less frequent administration.",
+          "notes": "Preferred for patients undergoing chemotherapy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone Marrow Biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Unexplained neutropenia, suspected malignancy, or bone marrow disorders.",
+          "risks": "Bleeding, infection, pain at the site."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of neutropenia depends on the underlying cause. Patients with drug-induced or transient neutropenia often have a good prognosis, while those with bone marrow disorders may have a poorer outcome.",
+    "complications": [
+      "Increased risk of infections (bacterial, fungal)",
+      "Sepsis",
+      "Delayed wound healing"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of neutropenia, initiate investigations, manage febrile neutropenia, and understand when to escalate care to a specialist.",
+    "escalation": "If a patient presents with febrile neutropenia (fever >38°C and ANC <500), immediate escalation to a senior clinician and initiation of broad-spectrum antibiotics is critical.",
+    "keySafetyConsiderations": "Monitor for signs of infection closely, especially in patients with severe neutropenia. Ensure appropriate isolation precautions are taken to prevent infections."
+  }
+}

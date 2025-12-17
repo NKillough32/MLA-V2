@@ -1,0 +1,141 @@
+{
+  "id": "head_injury_and_coma",
+  "name": "Head injury and coma?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:46:30.585469",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Head injury and coma?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHead injury refers to any trauma to the scalp, skull, or brain. A coma is a state of prolonged unconsciousness where a person cannot be awakened and fails to respond normally to painful stimuli, light, or sound.\n\n### Epidemiology\nHead injuries are common, with an estimated incidence of 200 per 100,000 people annually. They are a leading cause of morbidity and mortality, particularly in young adults and the elderly.\n\n### Essential Pathophysiology\nHead injuries can cause primary damage (direct injury to brain tissue) and secondary damage (swelling, ischemia, and biochemical changes). Coma can result from diffuse axonal injury, contusions, or intracranial hemorrhage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Loss of consciousness\n- Confusion\n- Amnesia\n- Headache\n- Nausea and vomiting\n\n### Key Signs\n- Glasgow Coma Scale (GCS) score < 8\n- Pupillary abnormalities\n- Abnormal motor responses\n- Cranial nerve deficits\n\n### Atypical Presentations\n- Delayed onset of symptoms\n- Persistent confusion without loss of consciousness\n- Seizures post-injury\n\n### Red Flags Requiring Immediate Action\n- GCS < 8\n- Severe headache\n- Repeated vomiting\n- Seizures\n- Focal neurological deficits\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head\n- X-ray of the skull (if fracture suspected)\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive)\n- Neuropsychological testing (for cognitive assessment)\n\n### Specialist Tests\n- EEG (to assess for seizures)\n- Cerebral angiography (if vascular injury suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical assessment (GCS) and imaging findings. A GCS < 8 indicates severe head injury and potential coma.\n\n### Key Differential Diagnoses to Exclude\n- Subdural hematoma\n- Epidural hematoma\n- Intracerebral hemorrhage\n- Diffuse axonal injury\n- Cerebral edema\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Airway management (intubation if GCS < 8)\n- IV fluids\n- Neurosurgical consultation\n\n#### Second-line Treatments\n- Mannitol (for cerebral edema)\n- Hypertonic saline\n\n#### Emergency Procedures\n- Craniotomy (for hematoma evacuation)\n- ICP monitoring (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation (physical, occupational, speech therapy)\n- Psychological support\n\n#### Second-line Treatments\n- Antidepressants (if indicated)\n- Anticonvulsants (if seizures occur)\n\n#### Monitoring Requirements\n- Regular neurological assessments\n- GCS monitoring\n- Follow-up imaging if symptoms persist\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.\n- **Typical Dosing Range**: 1 g/kg IV bolus, may repeat every 6-8 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal failure.\n- **When to Use vs. Alternatives**: Monitor serum osmolality and renal function.\n\n#### Hypertonic saline\n- **Mechanism of Action**: Increases serum osmolality, drawing fluid out of the brain.\n- **Typical Dosing Range**: 3% saline, 250-500 mL IV over 30 minutes, may repeat as needed.\n- **Key Side Effects/Contraindications**: Hypernatremia, fluid overload.\n- **When to Use vs. Alternatives**: Monitor sodium levels closely.\n\n### Procedures\n\n#### Craniotomy\n- **What it Involves**: Surgical opening of the skull to access the brain.\n- **Indications**: Evacuation of hematomas, decompression of brain tissue.\n- **Key Risks/Complications**: Infection, bleeding, neurological deficits.\n\n#### ICP monitoring\n- **What it Involves**: Insertion of a catheter into the ventricles or subarachnoid space to measure intracranial pressure.\n- **Indications**: Severe head injury with GCS < 8, suspected elevated ICP.\n- **Key Risks/Complications**: Infection, hemorrhage, catheter misplacement.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the severity of the injury, the GCS score at presentation, and the presence of secondary complications. Early intervention improves outcomes.\n\n### Important Complications to Watch For\n- Post-concussion syndrome\n- Seizures\n- Cognitive deficits\n- Chronic headache\n- Hydrocephalus\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, monitor vital signs, and GCS, and ensure timely referrals to neurosurgery and critical care as needed.\n\n### When to Escalate to Senior/Specialist\nEscalate care if GCS decreases, new neurological deficits arise, or if there are signs of increased intracranial pressure.\n\n### Key Safety Considerations\nEnsure airway protection in patients with low GCS, monitor for signs of deterioration, and maintain a high index of suspicion for intracranial complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Head injury refers to any trauma to the scalp, skull, or brain. A coma is a state of prolonged unconsciousness where a person cannot be awakened and fails to respond normally to painful stimuli, light, or sound.",
+      "epidemiology": "Head injuries are common, with an estimated incidence of 200 per 100,000 people annually. They are a leading cause of morbidity and mortality, particularly in young adults and the elderly.",
+      "pathophysiology": "Head injuries can cause primary damage (direct injury to brain tissue) and secondary damage (swelling, ischemia, and biochemical changes). Coma can result from diffuse axonal injury, contusions, or intracranial hemorrhage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Loss of consciousness",
+        "Confusion",
+        "Amnesia",
+        "Headache",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Glasgow Coma Scale (GCS) score < 8",
+        "Pupillary abnormalities",
+        "Abnormal motor responses",
+        "Cranial nerve deficits"
+      ],
+      "atypicalPresentations": [
+        "Delayed onset of symptoms",
+        "Persistent confusion without loss of consciousness",
+        "Seizures post-injury"
+      ],
+      "redFlags": [
+        "GCS < 8",
+        "Severe headache",
+        "Repeated vomiting",
+        "Seizures",
+        "Focal neurological deficits"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head",
+        "X-ray of the skull (if fracture suspected)"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive)",
+        "Neuropsychological testing (for cognitive assessment)"
+      ],
+      "specialistTests": [
+        "EEG (to assess for seizures)",
+        "Cerebral angiography (if vascular injury suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical assessment (GCS) and imaging findings. A GCS < 8 indicates severe head injury and potential coma.",
+      "differentials": [
+        "Subdural hematoma",
+        "Epidural hematoma",
+        "Intracerebral hemorrhage",
+        "Diffuse axonal injury",
+        "Cerebral edema"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Airway management (intubation if GCS < 8)",
+          "IV fluids",
+          "Neurosurgical consultation"
+        ],
+        "secondLine": [
+          "Mannitol (for cerebral edema)",
+          "Hypertonic saline"
+        ],
+        "procedures": [
+          "Craniotomy (for hematoma evacuation)",
+          "ICP monitoring (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation (physical, occupational, speech therapy)",
+          "Psychological support"
+        ],
+        "secondLine": [
+          "Antidepressants (if indicated)",
+          "Anticonvulsants (if seizures occur)"
+        ],
+        "monitoring": [
+          "Regular neurological assessments",
+          "GCS monitoring",
+          "Follow-up imaging if symptoms persist"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.",
+          "dosing": "1 g/kg IV bolus, may repeat every 6-8 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal failure.",
+          "notes": "Monitor serum osmolality and renal function."
+        },
+        {
+          "name": "Hypertonic saline",
+          "mechanism": "Increases serum osmolality, drawing fluid out of the brain.",
+          "dosing": "3% saline, 250-500 mL IV over 30 minutes, may repeat as needed.",
+          "sideEffects": "Hypernatremia, fluid overload.",
+          "notes": "Monitor sodium levels closely."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Craniotomy",
+          "description": "Surgical opening of the skull to access the brain.",
+          "indications": "Evacuation of hematomas, decompression of brain tissue.",
+          "risks": "Infection, bleeding, neurological deficits."
+        },
+        {
+          "name": "ICP monitoring",
+          "description": "Insertion of a catheter into the ventricles or subarachnoid space to measure intracranial pressure.",
+          "indications": "Severe head injury with GCS < 8, suspected elevated ICP.",
+          "risks": "Infection, hemorrhage, catheter misplacement."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the severity of the injury, the GCS score at presentation, and the presence of secondary complications. Early intervention improves outcomes.",
+    "complications": [
+      "Post-concussion syndrome",
+      "Seizures",
+      "Cognitive deficits",
+      "Chronic headache",
+      "Hydrocephalus"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, monitor vital signs, and GCS, and ensure timely referrals to neurosurgery and critical care as needed.",
+    "escalation": "Escalate care if GCS decreases, new neurological deficits arise, or if there are signs of increased intracranial pressure.",
+    "keySafetyConsiderations": "Ensure airway protection in patients with low GCS, monitor for signs of deterioration, and maintain a high index of suspicion for intracranial complications."
+  }
+}

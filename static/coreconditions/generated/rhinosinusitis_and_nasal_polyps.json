@@ -1,0 +1,143 @@
+{
+  "id": "rhinosinusitis_and_nasal_polyps",
+  "name": "Rhinosinusitis and nasal polyps",
+  "domains": [
+    "ENT"
+  ],
+  "generatedAt": "2025-12-17T21:38:43.636963",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Rhinosinusitis and nasal polyps: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRhinosinusitis is an inflammation of the nasal cavity and paranasal sinuses, which can be acute or chronic. Nasal polyps are non-cancerous growths that can develop in the nasal passages or sinuses, often associated with chronic rhinosinusitis.\n\n### Epidemiology\nRhinosinusitis affects approximately 10-15% of the population annually, with chronic rhinosinusitis affecting about 5-10%. Nasal polyps are found in 1-4% of the general population, with higher prevalence in patients with asthma, cystic fibrosis, and aspirin sensitivity.\n\n### Essential Pathophysiology\nRhinosinusitis is often caused by viral infections, leading to inflammation and obstruction of sinus drainage pathways. Chronic rhinosinusitis may involve bacterial infections, persistent inflammation, and the presence of nasal polyps, which can further obstruct sinus drainage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nasal congestion\n- Facial pain or pressure\n- Purulent nasal discharge\n- Reduced sense of smell (hyposmia)\n- Cough\n- Fever (in acute cases)\n- Fatigue\n\n### Key Signs\n- Tenderness over the sinuses\n- Nasal obstruction\n- Post-nasal drip\n- Purulent nasal discharge on examination\n- Nasal polyps on endoscopy\n\n### Atypical Presentations\n- Chronic cough without significant nasal symptoms\n- Asthma exacerbation\n- Sleep disturbances due to nasal obstruction\n\n### Red Flags Requiring Immediate Action\n- Severe headache or facial pain\n- Vision changes\n- Swelling around the eyes\n- High fever\n- Persistent symptoms despite treatment\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Nasal endoscopy\n- CT scan of the sinuses (if chronic or complicated)\n\n### Second-line Investigations\n- Allergy testing (if suspected allergic rhinitis)\n- Nasal swab for culture (if bacterial infection suspected)\n\n### Specialist Tests\n- Sinus aspiration for culture (in severe cases)\n- Imaging for complications (e.g., orbital cellulitis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical symptoms lasting more than 10 days, with purulent nasal discharge and facial pain/pressure. Chronic rhinosinusitis is diagnosed when symptoms persist for more than 12 weeks.\n\n### Key Differential Diagnoses to Exclude\n- Allergic rhinitis\n- Viral upper respiratory infection\n- Nasal tumors\n- Foreign body in the nasal cavity\n- Cystic fibrosis (in children)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intranasal corticosteroids (e.g., fluticasone)\n- Saline nasal irrigation\n- Analgesics (e.g., paracetamol)\n\n#### Second-line Treatments\n- Oral corticosteroids (for severe cases)\n- Antibiotics (if bacterial infection suspected)\n\n#### Emergency Procedures\n- Nasal decongestion (e.g., oxymetazoline) for short-term relief\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Intranasal corticosteroids\n- Saline nasal irrigation\n- Management of underlying conditions (e.g., asthma)\n\n#### Second-line Treatments\n- Oral corticosteroids (for exacerbations)\n- Surgery (e.g., functional endoscopic sinus surgery) if medical management fails\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control\n- Assessment of quality of life\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluticasone\n- **Mechanism of Action**: Intranasal corticosteroid that reduces inflammation\n- **Typical Dosing Range**: 1-2 sprays in each nostril once daily\n- **Key Side Effects/Contraindications**: Nasal irritation, epistaxis, headache\n- **When to Use vs. Alternatives**: Effective for both acute and chronic rhinosinusitis.\n\n#### Amoxicillin\n- **Mechanism of Action**: Beta-lactam antibiotic effective against common bacterial pathogens\n- **Typical Dosing Range**: 500 mg three times daily for 5-7 days\n- **Key Side Effects/Contraindications**: Diarrhea, rash, allergic reactions\n- **When to Use vs. Alternatives**: Consider in acute bacterial rhinosinusitis.\n\n#### Prednisolone\n- **Mechanism of Action**: Systemic corticosteroid that reduces inflammation\n- **Typical Dosing Range**: 40 mg once daily for 5 days\n- **Key Side Effects/Contraindications**: Weight gain, mood changes, increased blood sugar\n- **When to Use vs. Alternatives**: Used for severe exacerbations.\n\n### Procedures\n\n#### Functional Endoscopic Sinus Surgery (FESS)\n- **What it Involves**: Minimally invasive surgery to remove blockages in the sinuses and improve drainage\n- **Indications**: Chronic rhinosinusitis unresponsive to medical therapy, presence of nasal polyps\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding structures, recurrence of symptoms\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients with acute rhinosinusitis recover fully within 2-3 weeks. Chronic rhinosinusitis can be persistent and may require ongoing management. Nasal polyps may recur after treatment.\n\n### Important Complications to Watch For\n- Orbital cellulitis\n- Meningitis\n- Chronic sinusitis\n- Asthma exacerbation\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute symptoms, and refer to ENT specialists for chronic cases or complications. They should also educate patients on self-management strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT if symptoms persist despite treatment, if there are complications, or if surgery is indicated.\n\n### Key Safety Considerations\nMonitor for signs of complications such as worsening headache, visual changes, or swelling around the eyes. Ensure appropriate use of antibiotics to prevent resistance.\n",
+  "content": {
+    "overview": {
+      "definition": "Rhinosinusitis is an inflammation of the nasal cavity and paranasal sinuses, which can be acute or chronic. Nasal polyps are non-cancerous growths that can develop in the nasal passages or sinuses, often associated with chronic rhinosinusitis.",
+      "epidemiology": "Rhinosinusitis affects approximately 10-15% of the population annually, with chronic rhinosinusitis affecting about 5-10%. Nasal polyps are found in 1-4% of the general population, with higher prevalence in patients with asthma, cystic fibrosis, and aspirin sensitivity.",
+      "pathophysiology": "Rhinosinusitis is often caused by viral infections, leading to inflammation and obstruction of sinus drainage pathways. Chronic rhinosinusitis may involve bacterial infections, persistent inflammation, and the presence of nasal polyps, which can further obstruct sinus drainage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nasal congestion",
+        "Facial pain or pressure",
+        "Purulent nasal discharge",
+        "Reduced sense of smell (hyposmia)",
+        "Cough",
+        "Fever (in acute cases)",
+        "Fatigue"
+      ],
+      "signs": [
+        "Tenderness over the sinuses",
+        "Nasal obstruction",
+        "Post-nasal drip",
+        "Purulent nasal discharge on examination",
+        "Nasal polyps on endoscopy"
+      ],
+      "atypicalPresentations": [
+        "Chronic cough without significant nasal symptoms",
+        "Asthma exacerbation",
+        "Sleep disturbances due to nasal obstruction"
+      ],
+      "redFlags": [
+        "Severe headache or facial pain",
+        "Vision changes",
+        "Swelling around the eyes",
+        "High fever",
+        "Persistent symptoms despite treatment"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Nasal endoscopy",
+        "CT scan of the sinuses (if chronic or complicated)"
+      ],
+      "secondLine": [
+        "Allergy testing (if suspected allergic rhinitis)",
+        "Nasal swab for culture (if bacterial infection suspected)"
+      ],
+      "specialistTests": [
+        "Sinus aspiration for culture (in severe cases)",
+        "Imaging for complications (e.g., orbital cellulitis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical symptoms lasting more than 10 days, with purulent nasal discharge and facial pain/pressure. Chronic rhinosinusitis is diagnosed when symptoms persist for more than 12 weeks.",
+      "differentials": [
+        "Allergic rhinitis",
+        "Viral upper respiratory infection",
+        "Nasal tumors",
+        "Foreign body in the nasal cavity",
+        "Cystic fibrosis (in children)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intranasal corticosteroids (e.g., fluticasone)",
+          "Saline nasal irrigation",
+          "Analgesics (e.g., paracetamol)"
+        ],
+        "secondLine": [
+          "Oral corticosteroids (for severe cases)",
+          "Antibiotics (if bacterial infection suspected)"
+        ],
+        "procedures": [
+          "Nasal decongestion (e.g., oxymetazoline) for short-term relief"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Intranasal corticosteroids",
+          "Saline nasal irrigation",
+          "Management of underlying conditions (e.g., asthma)"
+        ],
+        "secondLine": [
+          "Oral corticosteroids (for exacerbations)",
+          "Surgery (e.g., functional endoscopic sinus surgery) if medical management fails"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control",
+          "Assessment of quality of life"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluticasone",
+          "mechanism": "Intranasal corticosteroid that reduces inflammation",
+          "dosing": "1-2 sprays in each nostril once daily",
+          "sideEffects": "Nasal irritation, epistaxis, headache",
+          "notes": "Effective for both acute and chronic rhinosinusitis."
+        },
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Beta-lactam antibiotic effective against common bacterial pathogens",
+          "dosing": "500 mg three times daily for 5-7 days",
+          "sideEffects": "Diarrhea, rash, allergic reactions",
+          "notes": "Consider in acute bacterial rhinosinusitis."
+        },
+        {
+          "name": "Prednisolone",
+          "mechanism": "Systemic corticosteroid that reduces inflammation",
+          "dosing": "40 mg once daily for 5 days",
+          "sideEffects": "Weight gain, mood changes, increased blood sugar",
+          "notes": "Used for severe exacerbations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Functional Endoscopic Sinus Surgery (FESS)",
+          "description": "Minimally invasive surgery to remove blockages in the sinuses and improve drainage",
+          "indications": "Chronic rhinosinusitis unresponsive to medical therapy, presence of nasal polyps",
+          "risks": "Bleeding, infection, damage to surrounding structures, recurrence of symptoms"
+        }
+      ]
+    },
+    "prognosis": "Most patients with acute rhinosinusitis recover fully within 2-3 weeks. Chronic rhinosinusitis can be persistent and may require ongoing management. Nasal polyps may recur after treatment.",
+    "complications": [
+      "Orbital cellulitis",
+      "Meningitis",
+      "Chronic sinusitis",
+      "Asthma exacerbation"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute symptoms, and refer to ENT specialists for chronic cases or complications. They should also educate patients on self-management strategies.",
+    "escalation": "Refer to ENT if symptoms persist despite treatment, if there are complications, or if surgery is indicated.",
+    "keySafetyConsiderations": "Monitor for signs of complications such as worsening headache, visual changes, or swelling around the eyes. Ensure appropriate use of antibiotics to prevent resistance."
+  }
+}

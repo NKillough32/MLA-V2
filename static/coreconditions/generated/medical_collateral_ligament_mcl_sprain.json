@@ -1,0 +1,119 @@
+{
+  "id": "medical_collateral_ligament_mcl_sprain",
+  "name": "Medical collateral ligament (MCL) sprain",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:26:36.321685",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Medical collateral ligament (MCL) sprain: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA Medical Collateral Ligament (MCL) sprain is an injury to the medial collateral ligament of the knee, which provides stability to the inner side of the knee joint. It is commonly caused by a direct blow to the outer side of the knee or by excessive lateral movement.\n\n### Epidemiology\nMCL sprains are among the most common knee injuries, particularly in athletes involved in contact sports such as football, rugby, and skiing. They can occur in both acute and chronic forms, with varying degrees of severity.\n\n### Essential Pathophysiology\nThe MCL is a band of tissue that connects the femur (thigh bone) to the tibia (shin bone) on the inner side of the knee. A sprain occurs when the ligament is stretched or torn, which can happen due to trauma or excessive force applied to the knee, leading to pain, swelling, and instability.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Medial knee pain\n- Swelling around the knee\n- Stiffness or reduced range of motion\n- Instability of the knee joint\n\n### Key Signs\n- Tenderness along the medial aspect of the knee\n- Swelling and bruising\n- Positive valgus stress test (pain or laxity when applying force to the outer knee)\n- Limited range of motion\n\n### Atypical Presentations\n- Chronic knee pain without a history of acute injury\n- Recurrent episodes of knee instability\n\n### Red Flags Requiring Immediate Action\n- Inability to bear weight on the affected leg\n- Locking or catching sensation in the knee\n- Signs of vascular compromise (coldness, pallor, diminished pulses)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- X-ray to rule out fractures\n\n### Second-line Investigations\n- MRI to assess the extent of ligament damage and associated injuries\n\n### Specialist Tests\n- Ultrasound for dynamic assessment of the ligament\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history, physical examination findings, and imaging studies if necessary. The severity of the sprain is classified as Grade I (mild), Grade II (moderate), or Grade III (severe).\n\n### Key Differential Diagnoses to Exclude\n- Anterior cruciate ligament (ACL) injury\n- Posterior cruciate ligament (PCL) injury\n- Meniscal tear\n- Patellar tendinopathy\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- RICE protocol (Rest, Ice, Compression, Elevation)\n- NSAIDs for pain relief\n\n#### Second-line Treatments\n- Physical therapy for rehabilitation and strengthening exercises\n\n#### Emergency Procedures\n- Knee brace application for support during recovery\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physical therapy focusing on strength and stability\n\n#### Second-line Treatments\n- Consideration of corticosteroid injections for persistent pain\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal disease or gastrointestinal history.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic that reduces pain without significant anti-inflammatory effects.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed, not exceeding 3000 mg/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, generally well tolerated.\n- **When to Use vs. Alternatives**: Preferred for patients with contraindications to NSAIDs.\n\n### Procedures\n\n#### Knee brace application\n- **What it Involves**: A supportive device worn around the knee to stabilize the joint during recovery.\n- **Indications**: Used in cases of moderate to severe MCL sprains to limit movement and provide support.\n- **Key Risks/Complications**: Potential for skin irritation, discomfort, or dependency on the brace.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost MCL sprains heal well with appropriate management, with Grade I and II sprains typically recovering within 2-6 weeks. Grade III sprains may require longer recovery and possibly surgical intervention if instability persists.\n\n### Important Complications to Watch For\n- Chronic knee instability\n- Recurrent sprains\n- Increased risk of osteoarthritis in the knee over time.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide appropriate first-line management, and refer to orthopaedics for severe cases or those not improving with conservative treatment.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics if there is significant instability, inability to bear weight, or if there are associated injuries (e.g., ACL tear).\n\n### Key Safety Considerations\nEnsure proper assessment of neurovascular status in the affected limb, monitor for signs of compartment syndrome, and educate patients on the importance of rehabilitation to prevent re-injury.\n",
+  "content": {
+    "overview": {
+      "definition": "A Medical Collateral Ligament (MCL) sprain is an injury to the medial collateral ligament of the knee, which provides stability to the inner side of the knee joint. It is commonly caused by a direct blow to the outer side of the knee or by excessive lateral movement.",
+      "epidemiology": "MCL sprains are among the most common knee injuries, particularly in athletes involved in contact sports such as football, rugby, and skiing. They can occur in both acute and chronic forms, with varying degrees of severity.",
+      "pathophysiology": "The MCL is a band of tissue that connects the femur (thigh bone) to the tibia (shin bone) on the inner side of the knee. A sprain occurs when the ligament is stretched or torn, which can happen due to trauma or excessive force applied to the knee, leading to pain, swelling, and instability."
+    },
+    "recognition": {
+      "symptoms": [
+        "Medial knee pain",
+        "Swelling around the knee",
+        "Stiffness or reduced range of motion",
+        "Instability of the knee joint"
+      ],
+      "signs": [
+        "Tenderness along the medial aspect of the knee",
+        "Swelling and bruising",
+        "Positive valgus stress test (pain or laxity when applying force to the outer knee)",
+        "Limited range of motion"
+      ],
+      "atypicalPresentations": [
+        "Chronic knee pain without a history of acute injury",
+        "Recurrent episodes of knee instability"
+      ],
+      "redFlags": [
+        "Inability to bear weight on the affected leg",
+        "Locking or catching sensation in the knee",
+        "Signs of vascular compromise (coldness, pallor, diminished pulses)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "X-ray to rule out fractures"
+      ],
+      "secondLine": [
+        "MRI to assess the extent of ligament damage and associated injuries"
+      ],
+      "specialistTests": [
+        "Ultrasound for dynamic assessment of the ligament"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history, physical examination findings, and imaging studies if necessary. The severity of the sprain is classified as Grade I (mild), Grade II (moderate), or Grade III (severe).",
+      "differentials": [
+        "Anterior cruciate ligament (ACL) injury",
+        "Posterior cruciate ligament (PCL) injury",
+        "Meniscal tear",
+        "Patellar tendinopathy"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "RICE protocol (Rest, Ice, Compression, Elevation)",
+          "NSAIDs for pain relief"
+        ],
+        "secondLine": [
+          "Physical therapy for rehabilitation and strengthening exercises"
+        ],
+        "procedures": [
+          "Knee brace application for support during recovery"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physical therapy focusing on strength and stability"
+        ],
+        "secondLine": [
+          "Consideration of corticosteroid injections for persistent pain"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "400-600 mg every 6-8 hours as needed, not exceeding 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use with caution in patients with renal disease or gastrointestinal history."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic that reduces pain without significant anti-inflammatory effects.",
+          "dosing": "500-1000 mg every 4-6 hours as needed, not exceeding 3000 mg/day.",
+          "sideEffects": "Liver toxicity in overdose, generally well tolerated.",
+          "notes": "Preferred for patients with contraindications to NSAIDs."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Knee brace application",
+          "description": "A supportive device worn around the knee to stabilize the joint during recovery.",
+          "indications": "Used in cases of moderate to severe MCL sprains to limit movement and provide support.",
+          "risks": "Potential for skin irritation, discomfort, or dependency on the brace."
+        }
+      ]
+    },
+    "prognosis": "Most MCL sprains heal well with appropriate management, with Grade I and II sprains typically recovering within 2-6 weeks. Grade III sprains may require longer recovery and possibly surgical intervention if instability persists.",
+    "complications": [
+      "Chronic knee instability",
+      "Recurrent sprains",
+      "Increased risk of osteoarthritis in the knee over time."
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide appropriate first-line management, and refer to orthopaedics for severe cases or those not improving with conservative treatment.",
+    "escalation": "Refer to orthopaedics if there is significant instability, inability to bear weight, or if there are associated injuries (e.g., ACL tear).",
+    "keySafetyConsiderations": "Ensure proper assessment of neurovascular status in the affected limb, monitor for signs of compartment syndrome, and educate patients on the importance of rehabilitation to prevent re-injury."
+  }
+}

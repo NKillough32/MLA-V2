@@ -1,0 +1,127 @@
+{
+  "id": "metacarpalphalangeal_fractures",
+  "name": "Metacarpal/phalangeal fractures",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:29:59.725859",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Metacarpal/phalangeal fractures: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMetacarpal and phalangeal fractures are breaks in the bones of the hand, specifically the metacarpals (the five long bones in the hand) and the phalanges (the bones of the fingers).\n\n### Epidemiology\nThese fractures are common injuries, particularly in young adults and children, often resulting from falls, sports injuries, or direct trauma. They account for approximately 10-15% of all fractures seen in emergency departments.\n\n### Essential Pathophysiology\nFractures occur when the force applied to the bone exceeds its strength. In the case of metacarpal and phalangeal fractures, this can result from axial loading, bending, or torsional forces. The fracture may be classified as closed or open, depending on whether the skin is broken.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pain in the hand or fingers\n- Swelling and bruising\n- Decreased range of motion\n- Tenderness at the fracture site\n\n### Key Signs\n- Deformity of the hand or fingers\n- Swelling and ecchymosis\n- Palpable tenderness over the metacarpal or phalanx\n- Crepitus on movement\n\n### Atypical Presentations\n- Fractures may present with minimal swelling or pain in elderly patients due to osteopenia or osteoporosis.\n- Non-displaced fractures may not show significant deformity.\n\n### Red Flags Requiring Immediate Action\n- Open fractures (bone protruding through the skin)\n- Neurovascular compromise (numbness, tingling, or weak pulse in the fingers)\n- Severe deformity or angulation of the fingers\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the hand (AP, lateral, and oblique views)\n\n### Second-line Investigations\n- CT scan if complex fracture or intra-articular involvement is suspected\n\n### Specialist Tests\n- MRI may be used for soft tissue evaluation or occult fractures if clinical suspicion remains high despite negative X-rays.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical examination and radiographic findings. Fractures are classified based on location (metacarpal vs. phalangeal), type (displaced vs. non-displaced), and involvement of the joint surface.\n\n### Key Differential Diagnoses to Exclude\n- Soft tissue injury (sprain or strain)\n- Dislocation of the finger or metacarpal joint\n- Osteoarthritis flare\n- Infection (e.g., septic arthritis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol or NSAIDs)\n- Immobilization with a splint or cast\n\n#### Second-line Treatments\n- Reduction of displaced fractures (closed or open reduction as necessary)\n- Referral to orthopaedics for surgical intervention if indicated\n\n#### Emergency Procedures\n- Closed reduction: realigning the fractured bone without surgical exposure.\n- Open reduction and internal fixation (ORIF): surgical procedure to realign and stabilize the fracture with hardware.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation exercises to restore range of motion and strength after immobilization\n\n#### Second-line Treatments\n- Surgical intervention if malunion or nonunion occurs\n\n#### Monitoring Requirements\n- Regular follow-up with X-rays to assess healing and alignment.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours, max 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID, inhibits COX enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours, max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for inflammation and pain.\n\n### Procedures\n\n#### Closed Reduction\n- **What it Involves**: A non-surgical procedure to realign the fractured bone using manual manipulation.\n- **Indications**: Displaced fractures that can be realigned without surgery.\n- **Key Risks/Complications**: Potential for re-displacement, nerve or vascular injury.\n\n#### Open Reduction and Internal Fixation (ORIF)\n- **What it Involves**: Surgical procedure to expose the fracture site, realign the bones, and stabilize them with plates and screws.\n- **Indications**: Severely displaced fractures, intra-articular fractures, or fractures with significant instability.\n- **Key Risks/Complications**: Infection, nonunion, malunion, nerve injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost metacarpal and phalangeal fractures heal well with appropriate management, typically within 6-8 weeks. Complications can include stiffness, pain, and in rare cases, malunion or nonunion.\n\n### Important Complications to Watch For\n- Malunion or nonunion of the fracture\n- Stiffness or loss of range of motion in the fingers\n- Complex regional pain syndrome (CRPS)\n- Infection in open fractures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide analgesia, and arrange for appropriate imaging. They should also recognize red flags that require urgent referral to orthopaedics.\n\n### When to Escalate to Senior/Specialist\nRefer to orthopaedics for any open fractures, fractures with neurovascular compromise, or those requiring surgical intervention.\n\n### Key Safety Considerations\nEnsure proper immobilization to prevent further injury, monitor for signs of compartment syndrome, and provide appropriate pain management.\n",
+  "content": {
+    "overview": {
+      "definition": "Metacarpal and phalangeal fractures are breaks in the bones of the hand, specifically the metacarpals (the five long bones in the hand) and the phalanges (the bones of the fingers).",
+      "epidemiology": "These fractures are common injuries, particularly in young adults and children, often resulting from falls, sports injuries, or direct trauma. They account for approximately 10-15% of all fractures seen in emergency departments.",
+      "pathophysiology": "Fractures occur when the force applied to the bone exceeds its strength. In the case of metacarpal and phalangeal fractures, this can result from axial loading, bending, or torsional forces. The fracture may be classified as closed or open, depending on whether the skin is broken."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pain in the hand or fingers",
+        "Swelling and bruising",
+        "Decreased range of motion",
+        "Tenderness at the fracture site"
+      ],
+      "signs": [
+        "Deformity of the hand or fingers",
+        "Swelling and ecchymosis",
+        "Palpable tenderness over the metacarpal or phalanx",
+        "Crepitus on movement"
+      ],
+      "atypicalPresentations": [
+        "Fractures may present with minimal swelling or pain in elderly patients due to osteopenia or osteoporosis.",
+        "Non-displaced fractures may not show significant deformity."
+      ],
+      "redFlags": [
+        "Open fractures (bone protruding through the skin)",
+        "Neurovascular compromise (numbness, tingling, or weak pulse in the fingers)",
+        "Severe deformity or angulation of the fingers"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the hand (AP, lateral, and oblique views)"
+      ],
+      "secondLine": [
+        "CT scan if complex fracture or intra-articular involvement is suspected"
+      ],
+      "specialistTests": [
+        "MRI may be used for soft tissue evaluation or occult fractures if clinical suspicion remains high despite negative X-rays."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical examination and radiographic findings. Fractures are classified based on location (metacarpal vs. phalangeal), type (displaced vs. non-displaced), and involvement of the joint surface.",
+      "differentials": [
+        "Soft tissue injury (sprain or strain)",
+        "Dislocation of the finger or metacarpal joint",
+        "Osteoarthritis flare",
+        "Infection (e.g., septic arthritis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol or NSAIDs)",
+          "Immobilization with a splint or cast"
+        ],
+        "secondLine": [
+          "Reduction of displaced fractures (closed or open reduction as necessary)",
+          "Referral to orthopaedics for surgical intervention if indicated"
+        ],
+        "procedures": [
+          "Closed reduction: realigning the fractured bone without surgical exposure.",
+          "Open reduction and internal fixation (ORIF): surgical procedure to realign and stabilize the fracture with hardware."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation exercises to restore range of motion and strength after immobilization"
+        ],
+        "secondLine": [
+          "Surgical intervention if malunion or nonunion occurs"
+        ],
+        "monitoring": [
+          "Regular follow-up with X-rays to assess healing and alignment."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic, works by inhibiting prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours, max 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID, inhibits COX enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600 mg every 6-8 hours, max 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Useful for inflammation and pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed Reduction",
+          "description": "A non-surgical procedure to realign the fractured bone using manual manipulation.",
+          "indications": "Displaced fractures that can be realigned without surgery.",
+          "risks": "Potential for re-displacement, nerve or vascular injury."
+        },
+        {
+          "name": "Open Reduction and Internal Fixation (ORIF)",
+          "description": "Surgical procedure to expose the fracture site, realign the bones, and stabilize them with plates and screws.",
+          "indications": "Severely displaced fractures, intra-articular fractures, or fractures with significant instability.",
+          "risks": "Infection, nonunion, malunion, nerve injury."
+        }
+      ]
+    },
+    "prognosis": "Most metacarpal and phalangeal fractures heal well with appropriate management, typically within 6-8 weeks. Complications can include stiffness, pain, and in rare cases, malunion or nonunion.",
+    "complications": [
+      "Malunion or nonunion of the fracture",
+      "Stiffness or loss of range of motion in the fingers",
+      "Complex regional pain syndrome (CRPS)",
+      "Infection in open fractures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide analgesia, and arrange for appropriate imaging. They should also recognize red flags that require urgent referral to orthopaedics.",
+    "escalation": "Refer to orthopaedics for any open fractures, fractures with neurovascular compromise, or those requiring surgical intervention.",
+    "keySafetyConsiderations": "Ensure proper immobilization to prevent further injury, monitor for signs of compartment syndrome, and provide appropriate pain management."
+  }
+}

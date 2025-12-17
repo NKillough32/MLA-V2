@@ -1,0 +1,138 @@
+{
+  "id": "cervical_cancer",
+  "name": "Cervical cancer?",
+  "domains": [
+    "Oncology"
+  ],
+  "generatedAt": "2025-12-17T20:13:56.556082",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cervical cancer?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCervical cancer is a malignant neoplasm of the cervix, primarily caused by persistent infection with high-risk types of human papillomavirus (HPV).\n\n### Epidemiology\nCervical cancer is the fourth most common cancer in women worldwide, with approximately 570,000 new cases and 311,000 deaths annually. It is most prevalent in low- and middle-income countries due to limited access to screening and vaccination.\n\n### Essential Pathophysiology\nCervical cancer typically develops from precancerous lesions (cervical intraepithelial neoplasia, CIN) that arise due to HPV infection. The virus integrates into the host genome, leading to dysregulation of cell cycle control and unchecked cellular proliferation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abnormal vaginal bleeding (post-coital, intermenstrual, or post-menopausal)\n- Unusual vaginal discharge (may be foul-smelling)\n- Pelvic pain or discomfort\n- Pain during intercourse (dyspareunia)\n- Urinary symptoms (e.g., hematuria, urinary incontinence)\n\n### Key Signs\n- Visible cervical lesions on examination\n- Pelvic mass on examination\n- Lymphadenopathy (especially in advanced disease)\n- Signs of metastasis (e.g., ascites, liver enlargement)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Symptoms mimicking other gynecological conditions (e.g., endometriosis)\n\n### Red Flags Requiring Immediate Action\n- Persistent abnormal bleeding\n- Severe pelvic pain\n- Signs of advanced disease (e.g., weight loss, fatigue)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Pap smear (cervical cytology)\n- HPV testing\n\n### Second-line Investigations\n- Colposcopy with biopsy\n- Endocervical curettage (ECC)\n\n### Specialist Tests\n- Imaging (MRI, CT, or PET scans) for staging\n- Histopathological examination of biopsy samples\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of cervical tissue showing malignant cells, typically following abnormal cytology results.\n\n### Key Differential Diagnoses to Exclude\n- Endometrial cancer\n- Vaginal cancer\n- Cervical polyps\n- Benign cervical lesions (e.g., nabothian cysts)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to gynecological oncology for suspected invasive cancer\n- Pain management and supportive care\n\n#### Second-line Treatments\n- Consideration of palliative care if advanced disease is present\n\n#### Emergency Procedures\n- Colposcopy and biopsy for diagnosis\n- Cone biopsy for treatment of precancerous lesions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical options (e.g., hysterectomy, radical trachelectomy) for localized disease\n- Radiotherapy for localized or recurrent disease\n\n#### Second-line Treatments\n- Chemotherapy (e.g., cisplatin-based regimens) for advanced disease\n\n#### Monitoring Requirements\n- Regular follow-up with Pap smears and HPV testing post-treatment\n- Monitoring for recurrence with imaging as indicated\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cisplatin\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 50-100 mg/m² IV every 3-4 weeks depending on regimen\n- **Key Side Effects/Contraindications**: Nausea, vomiting, nephrotoxicity, myelosuppression\n- **When to Use vs. Alternatives**: Hydration is crucial to prevent nephrotoxicity.\n\n#### Carboplatin\n- **Mechanism of Action**: Alkylating agent similar to cisplatin, with less nephrotoxicity\n- **Typical Dosing Range**: AUC 5-6 IV every 3-4 weeks\n- **Key Side Effects/Contraindications**: Myelosuppression, hypersensitivity reactions\n- **When to Use vs. Alternatives**: Consider premedication for hypersensitivity.\n\n#### Radiotherapy\n- **Mechanism of Action**: Uses high-energy radiation to kill cancer cells\n- **Typical Dosing Range**: Depends on treatment plan; typically delivered in fractions over several weeks\n- **Key Side Effects/Contraindications**: Fatigue, skin irritation, long-term risk of secondary cancers\n- **When to Use vs. Alternatives**: Requires careful planning and monitoring.\n\n### Procedures\n\n#### Colposcopy\n- **What it Involves**: A procedure to closely examine the cervix using a colposcope after abnormal Pap results.\n- **Indications**: Abnormal Pap smear results, HPV-positive results, or visible lesions.\n- **Key Risks/Complications**: Discomfort, bleeding, infection.\n\n#### Radical hysterectomy\n- **What it Involves**: Surgical removal of the uterus, cervix, surrounding tissue, and possibly lymph nodes.\n- **Indications**: Early-stage cervical cancer (IA1 to IIA).\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding organs, lymphedema.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for cervical cancer depends on the stage at diagnosis. Early-stage cervical cancer has a 5-year survival rate of over 90%, while advanced stages have significantly lower survival rates.\n\n### Important Complications to Watch For\n- Local recurrence\n- Distant metastasis\n- Treatment-related complications (e.g., lymphedema, bowel or bladder dysfunction)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of cervical cancer, perform initial assessments, and refer patients for appropriate screening and specialist care. They should also provide education on HPV vaccination and screening guidelines.\n\n### When to Escalate to Senior/Specialist\nRefer to gynecological oncology for any suspected cases of cervical cancer, especially with abnormal cytology or HPV results, and for management of advanced disease.\n\n### Key Safety Considerations\nEnsure informed consent for procedures and treatments, monitor for side effects of chemotherapy and radiotherapy, and provide appropriate follow-up care to detect recurrence early.\n",
+  "content": {
+    "overview": {
+      "definition": "Cervical cancer is a malignant neoplasm of the cervix, primarily caused by persistent infection with high-risk types of human papillomavirus (HPV).",
+      "epidemiology": "Cervical cancer is the fourth most common cancer in women worldwide, with approximately 570,000 new cases and 311,000 deaths annually. It is most prevalent in low- and middle-income countries due to limited access to screening and vaccination.",
+      "pathophysiology": "Cervical cancer typically develops from precancerous lesions (cervical intraepithelial neoplasia, CIN) that arise due to HPV infection. The virus integrates into the host genome, leading to dysregulation of cell cycle control and unchecked cellular proliferation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abnormal vaginal bleeding (post-coital, intermenstrual, or post-menopausal)",
+        "Unusual vaginal discharge (may be foul-smelling)",
+        "Pelvic pain or discomfort",
+        "Pain during intercourse (dyspareunia)",
+        "Urinary symptoms (e.g., hematuria, urinary incontinence)"
+      ],
+      "signs": [
+        "Visible cervical lesions on examination",
+        "Pelvic mass on examination",
+        "Lymphadenopathy (especially in advanced disease)",
+        "Signs of metastasis (e.g., ascites, liver enlargement)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Symptoms mimicking other gynecological conditions (e.g., endometriosis)"
+      ],
+      "redFlags": [
+        "Persistent abnormal bleeding",
+        "Severe pelvic pain",
+        "Signs of advanced disease (e.g., weight loss, fatigue)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Pap smear (cervical cytology)",
+        "HPV testing"
+      ],
+      "secondLine": [
+        "Colposcopy with biopsy",
+        "Endocervical curettage (ECC)"
+      ],
+      "specialistTests": [
+        "Imaging (MRI, CT, or PET scans) for staging",
+        "Histopathological examination of biopsy samples"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of cervical tissue showing malignant cells, typically following abnormal cytology results.",
+      "differentials": [
+        "Endometrial cancer",
+        "Vaginal cancer",
+        "Cervical polyps",
+        "Benign cervical lesions (e.g., nabothian cysts)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to gynecological oncology for suspected invasive cancer",
+          "Pain management and supportive care"
+        ],
+        "secondLine": [
+          "Consideration of palliative care if advanced disease is present"
+        ],
+        "procedures": [
+          "Colposcopy and biopsy for diagnosis",
+          "Cone biopsy for treatment of precancerous lesions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical options (e.g., hysterectomy, radical trachelectomy) for localized disease",
+          "Radiotherapy for localized or recurrent disease"
+        ],
+        "secondLine": [
+          "Chemotherapy (e.g., cisplatin-based regimens) for advanced disease"
+        ],
+        "monitoring": [
+          "Regular follow-up with Pap smears and HPV testing post-treatment",
+          "Monitoring for recurrence with imaging as indicated"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cisplatin",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "50-100 mg/m² IV every 3-4 weeks depending on regimen",
+          "sideEffects": "Nausea, vomiting, nephrotoxicity, myelosuppression",
+          "notes": "Hydration is crucial to prevent nephrotoxicity."
+        },
+        {
+          "name": "Carboplatin",
+          "mechanism": "Alkylating agent similar to cisplatin, with less nephrotoxicity",
+          "dosing": "AUC 5-6 IV every 3-4 weeks",
+          "sideEffects": "Myelosuppression, hypersensitivity reactions",
+          "notes": "Consider premedication for hypersensitivity."
+        },
+        {
+          "name": "Radiotherapy",
+          "mechanism": "Uses high-energy radiation to kill cancer cells",
+          "dosing": "Depends on treatment plan; typically delivered in fractions over several weeks",
+          "sideEffects": "Fatigue, skin irritation, long-term risk of secondary cancers",
+          "notes": "Requires careful planning and monitoring."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colposcopy",
+          "description": "A procedure to closely examine the cervix using a colposcope after abnormal Pap results.",
+          "indications": "Abnormal Pap smear results, HPV-positive results, or visible lesions.",
+          "risks": "Discomfort, bleeding, infection."
+        },
+        {
+          "name": "Radical hysterectomy",
+          "description": "Surgical removal of the uterus, cervix, surrounding tissue, and possibly lymph nodes.",
+          "indications": "Early-stage cervical cancer (IA1 to IIA).",
+          "risks": "Infection, bleeding, damage to surrounding organs, lymphedema."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for cervical cancer depends on the stage at diagnosis. Early-stage cervical cancer has a 5-year survival rate of over 90%, while advanced stages have significantly lower survival rates.",
+    "complications": [
+      "Local recurrence",
+      "Distant metastasis",
+      "Treatment-related complications (e.g., lymphedema, bowel or bladder dysfunction)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of cervical cancer, perform initial assessments, and refer patients for appropriate screening and specialist care. They should also provide education on HPV vaccination and screening guidelines.",
+    "escalation": "Refer to gynecological oncology for any suspected cases of cervical cancer, especially with abnormal cytology or HPV results, and for management of advanced disease.",
+    "keySafetyConsiderations": "Ensure informed consent for procedures and treatments, monitor for side effects of chemotherapy and radiotherapy, and provide appropriate follow-up care to detect recurrence early."
+  }
+}

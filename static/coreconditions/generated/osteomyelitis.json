@@ -1,0 +1,147 @@
+{
+  "id": "osteomyelitis",
+  "name": "Osteomyelitis?",
+  "domains": [
+    "Rheumatology"
+  ],
+  "generatedAt": "2025-12-17T20:26:59.937902",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Osteomyelitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOsteomyelitis is an infection of the bone, typically caused by bacteria, which can lead to inflammation, necrosis, and bone destruction.\n\n### Epidemiology\nOsteomyelitis is more common in children and adults with diabetes or immunocompromised states. It has an incidence of approximately 2-5 cases per 100,000 people annually.\n\n### Essential Pathophysiology\nThe infection can occur through hematogenous spread, direct inoculation (e.g., trauma, surgery), or contiguous spread from adjacent soft tissue infections. The bacteria proliferate in the bone, leading to inflammation and pus formation, which can compromise blood supply and result in bone necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Localized pain and tenderness\n- Swelling and warmth over the affected area\n- Fever and chills\n- Fatigue\n- Difficulty using the affected limb\n\n### Key Signs\n- Localized tenderness\n- Swelling and erythema\n- Limited range of motion\n- Fever (may be absent in chronic cases)\n\n### Atypical Presentations\n- Chronic osteomyelitis may present with non-specific symptoms such as malaise or low-grade fever.\n- In diabetic patients, osteomyelitis may present with foot ulcers without significant pain.\n\n### Red Flags Requiring Immediate Action\n- Persistent fever\n- Severe localized pain\n- Signs of systemic infection (e.g., sepsis)\n- Non-healing wounds or ulcers\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray (initial imaging)\n- MRI (more sensitive for early detection)\n- Blood cultures\n\n### Second-line Investigations\n- CT scan (if MRI is contraindicated)\n- Bone scan (for detecting osteomyelitis in complex cases)\n\n### Specialist Tests\n- Bone biopsy (for culture and sensitivity)\n- Serum inflammatory markers (e.g., CRP, ESR)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and microbiological confirmation from bone biopsy or cultures.\n\n### Key Differential Diagnoses to Exclude\n- Septic arthritis\n- Soft tissue infection (cellulitis)\n- Fracture or stress fracture\n- Tumors (primary or metastatic)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- IV antibiotics (e.g., cefazolin, vancomycin) based on culture results\n\n#### Second-line Treatments\n- Surgical debridement if there is abscess formation or necrotic bone\n\n#### Emergency Procedures\n- Bone biopsy for culture and sensitivity\n- Surgical drainage of abscesses\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Oral antibiotics (e.g., clindamycin, ciprofloxacin) based on culture results\n- Wound care and management of underlying conditions (e.g., diabetes)\n\n#### Second-line Treatments\n- Surgical intervention for debridement or stabilization of the affected bone\n\n#### Monitoring Requirements\n- Regular follow-up with imaging to assess healing\n- Monitoring for recurrence of infection\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cefazolin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 1-2 g IV every 8 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, nephrotoxicity, diarrhea\n- **When to Use vs. Alternatives**: Consider in cases of MSSA infection.\n\n#### Vancomycin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 15-20 mg/kg IV every 8-12 hours\n- **Key Side Effects/Contraindications**: Nephrotoxicity, red man syndrome\n- **When to Use vs. Alternatives**: Consider for MRSA coverage.\n\n#### Clindamycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis\n- **Typical Dosing Range**: 300-450 mg orally every 6-8 hours\n- **Key Side Effects/Contraindications**: Diarrhea, C. difficile infection\n- **When to Use vs. Alternatives**: Effective against anaerobes and some streptococci.\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Inhibits bacterial DNA gyrase\n- **Typical Dosing Range**: 500-750 mg orally every 12 hours\n- **Key Side Effects/Contraindications**: Tendon rupture, QT prolongation\n- **When to Use vs. Alternatives**: Consider for gram-negative coverage.\n\n### Procedures\n\n#### Bone biopsy\n- **What it Involves**: A procedure to obtain a sample of bone for microbiological analysis.\n- **Indications**: Suspected osteomyelitis with negative cultures from other sources.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n#### Surgical debridement\n- **What it Involves**: Surgical removal of necrotic bone and infected tissue.\n- **Indications**: Presence of abscess, necrotic bone, or failure of medical management.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for acute osteomyelitis is generally good, but chronic osteomyelitis can lead to significant morbidity and may require long-term management.\n\n### Important Complications to Watch For\n- Chronic osteomyelitis\n- Sepsis\n- Pathologic fractures\n- Amputation in severe cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate empirical antibiotic therapy, and refer to specialists as needed. They should also monitor for complications and ensure follow-up care.\n\n### When to Escalate to Senior/Specialist\nIf there is no improvement within 48-72 hours of starting treatment, or if the patient shows signs of systemic infection, escalate care to a senior clinician or infectious disease specialist.\n\n### Key Safety Considerations\nMonitor for signs of systemic infection, ensure appropriate antibiotic stewardship to prevent resistance, and educate patients on the importance of adherence to treatment and follow-up.\n",
+  "content": {
+    "overview": {
+      "definition": "Osteomyelitis is an infection of the bone, typically caused by bacteria, which can lead to inflammation, necrosis, and bone destruction.",
+      "epidemiology": "Osteomyelitis is more common in children and adults with diabetes or immunocompromised states. It has an incidence of approximately 2-5 cases per 100,000 people annually.",
+      "pathophysiology": "The infection can occur through hematogenous spread, direct inoculation (e.g., trauma, surgery), or contiguous spread from adjacent soft tissue infections. The bacteria proliferate in the bone, leading to inflammation and pus formation, which can compromise blood supply and result in bone necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Localized pain and tenderness",
+        "Swelling and warmth over the affected area",
+        "Fever and chills",
+        "Fatigue",
+        "Difficulty using the affected limb"
+      ],
+      "signs": [
+        "Localized tenderness",
+        "Swelling and erythema",
+        "Limited range of motion",
+        "Fever (may be absent in chronic cases)"
+      ],
+      "atypicalPresentations": [
+        "Chronic osteomyelitis may present with non-specific symptoms such as malaise or low-grade fever.",
+        "In diabetic patients, osteomyelitis may present with foot ulcers without significant pain."
+      ],
+      "redFlags": [
+        "Persistent fever",
+        "Severe localized pain",
+        "Signs of systemic infection (e.g., sepsis)",
+        "Non-healing wounds or ulcers"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray (initial imaging)",
+        "MRI (more sensitive for early detection)",
+        "Blood cultures"
+      ],
+      "secondLine": [
+        "CT scan (if MRI is contraindicated)",
+        "Bone scan (for detecting osteomyelitis in complex cases)"
+      ],
+      "specialistTests": [
+        "Bone biopsy (for culture and sensitivity)",
+        "Serum inflammatory markers (e.g., CRP, ESR)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and microbiological confirmation from bone biopsy or cultures.",
+      "differentials": [
+        "Septic arthritis",
+        "Soft tissue infection (cellulitis)",
+        "Fracture or stress fracture",
+        "Tumors (primary or metastatic)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "IV antibiotics (e.g., cefazolin, vancomycin) based on culture results"
+        ],
+        "secondLine": [
+          "Surgical debridement if there is abscess formation or necrotic bone"
+        ],
+        "procedures": [
+          "Bone biopsy for culture and sensitivity",
+          "Surgical drainage of abscesses"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Oral antibiotics (e.g., clindamycin, ciprofloxacin) based on culture results",
+          "Wound care and management of underlying conditions (e.g., diabetes)"
+        ],
+        "secondLine": [
+          "Surgical intervention for debridement or stabilization of the affected bone"
+        ],
+        "monitoring": [
+          "Regular follow-up with imaging to assess healing",
+          "Monitoring for recurrence of infection"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cefazolin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "1-2 g IV every 8 hours",
+          "sideEffects": "Allergic reactions, nephrotoxicity, diarrhea",
+          "notes": "Consider in cases of MSSA infection."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "15-20 mg/kg IV every 8-12 hours",
+          "sideEffects": "Nephrotoxicity, red man syndrome",
+          "notes": "Consider for MRSA coverage."
+        },
+        {
+          "name": "Clindamycin",
+          "mechanism": "Inhibits bacterial protein synthesis",
+          "dosing": "300-450 mg orally every 6-8 hours",
+          "sideEffects": "Diarrhea, C. difficile infection",
+          "notes": "Effective against anaerobes and some streptococci."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Inhibits bacterial DNA gyrase",
+          "dosing": "500-750 mg orally every 12 hours",
+          "sideEffects": "Tendon rupture, QT prolongation",
+          "notes": "Consider for gram-negative coverage."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone biopsy",
+          "description": "A procedure to obtain a sample of bone for microbiological analysis.",
+          "indications": "Suspected osteomyelitis with negative cultures from other sources.",
+          "risks": "Infection, bleeding, pain at the site."
+        },
+        {
+          "name": "Surgical debridement",
+          "description": "Surgical removal of necrotic bone and infected tissue.",
+          "indications": "Presence of abscess, necrotic bone, or failure of medical management.",
+          "risks": "Infection, bleeding, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for acute osteomyelitis is generally good, but chronic osteomyelitis can lead to significant morbidity and may require long-term management.",
+    "complications": [
+      "Chronic osteomyelitis",
+      "Sepsis",
+      "Pathologic fractures",
+      "Amputation in severe cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate empirical antibiotic therapy, and refer to specialists as needed. They should also monitor for complications and ensure follow-up care.",
+    "escalation": "If there is no improvement within 48-72 hours of starting treatment, or if the patient shows signs of systemic infection, escalate care to a senior clinician or infectious disease specialist.",
+    "keySafetyConsiderations": "Monitor for signs of systemic infection, ensure appropriate antibiotic stewardship to prevent resistance, and educate patients on the importance of adherence to treatment and follow-up."
+  }
+}

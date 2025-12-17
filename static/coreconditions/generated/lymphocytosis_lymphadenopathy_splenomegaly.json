@@ -1,0 +1,139 @@
+{
+  "id": "lymphocytosis_lymphadenopathy_splenomegaly",
+  "name": "Lymphocytosis, lymphadenopathy, splenomegaly",
+  "domains": [
+    "Haematology"
+  ],
+  "generatedAt": "2025-12-17T19:56:06.607314",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lymphocytosis, lymphadenopathy, splenomegaly: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLymphocytosis is an increase in the number of lymphocytes in the blood, often associated with lymphadenopathy (swollen lymph nodes) and splenomegaly (enlarged spleen).\n\n### Epidemiology\nLymphocytosis can occur in various conditions, including infections, autoimmune diseases, and malignancies. It is commonly seen in viral infections such as infectious mononucleosis and in chronic lymphocytic leukaemia (CLL).\n\n### Essential Pathophysiology\nLymphocytes are a type of white blood cell involved in the immune response. Lymphocytosis can result from increased production of lymphocytes in response to infection or inflammation, or from neoplastic processes such as leukaemia or lymphoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Night sweats\n- Weight loss\n- Fatigue\n- Malaise\n\n### Key Signs\n- Lymphadenopathy (palpable lymph nodes)\n- Splenomegaly (enlarged spleen)\n- Hepatomegaly (enlarged liver)\n- Rash (in some infections)\n\n### Atypical Presentations\n- Asymptomatic lymphocytosis found incidentally on a complete blood count (CBC)\n- Lymphadenopathy without systemic symptoms\n\n### Red Flags Requiring Immediate Action\n- Persistent lymphadenopathy lasting more than 4-6 weeks\n- Rapidly enlarging lymph nodes\n- B symptoms (fever, night sweats, weight loss)\n- Signs of splenic rupture (severe abdominal pain, hypotension)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC) with differential\n- Peripheral blood smear\n- Basic metabolic panel\n\n### Second-line Investigations\n- Liver function tests\n- Viral serologies (e.g., EBV, CMV)\n- HIV testing\n\n### Specialist Tests\n- Bone marrow biopsy\n- Flow cytometry\n- CT scan of the chest/abdomen/pelvis\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of lymphocytosis (>4,000 lymphocytes/µL), lymphadenopathy, and splenomegaly, along with clinical history and laboratory findings.\n\n### Key Differential Diagnoses to Exclude\n- Infectious mononucleosis\n- Chronic lymphocytic leukaemia (CLL)\n- Acute lymphoblastic leukaemia (ALL)\n- Lymphoma (Hodgkin's and Non-Hodgkin's)\n- Autoimmune disorders (e.g., lupus, rheumatoid arthritis)\n- Viral infections (e.g., hepatitis, HIV)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, analgesia)\n- Antipyretics for fever\n\n#### Second-line Treatments\n- Antiviral therapy if indicated (e.g., acyclovir for herpes viruses)\n\n#### Emergency Procedures\n- Lymph node biopsy if malignancy is suspected\n- Splenectomy in cases of splenic rupture or severe splenomegaly\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Observation and monitoring for asymptomatic lymphocytosis\n- Treat underlying cause (e.g., infection, autoimmune disease)\n\n#### Second-line Treatments\n- Chemotherapy or targeted therapy for malignancies (e.g., CLL)\n- Immunosuppressive therapy for autoimmune conditions\n\n#### Monitoring Requirements\n- Regular follow-up with CBC and clinical assessment\n- Monitor for complications of splenomegaly (e.g., splenic rupture)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Chlorambucil\n- **Mechanism of Action**: Alkylating agent that interferes with DNA replication\n- **Typical Dosing Range**: 0.1-0.2 mg/kg/day for 7 days every 4 weeks\n- **Key Side Effects/Contraindications**: Bone marrow suppression, nausea, vomiting, secondary malignancies\n- **When to Use vs. Alternatives**: Used in chronic lymphocytic leukaemia (CLL) management.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B-cells\n- **Typical Dosing Range**: 375 mg/m² IV weekly for 4 weeks or 1000 mg IV every 2 months\n- **Key Side Effects/Contraindications**: Infusion reactions, infections, tumor lysis syndrome\n- **When to Use vs. Alternatives**: Used in B-cell malignancies including CLL.\n\n### Procedures\n\n#### Lymph node biopsy\n- **What it Involves**: Surgical removal of a lymph node for histopathological examination\n- **Indications**: Persistent lymphadenopathy with suspicion of malignancy\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site\n\n#### Splenectomy\n- **What it Involves**: Surgical removal of the spleen\n- **Indications**: Severe splenomegaly, splenic rupture, or hypersplenism\n- **Key Risks/Complications**: Infection risk post-splenectomy, bleeding, thrombosis\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the underlying cause of lymphocytosis. Infections often resolve with treatment, while malignancies may require ongoing management and have variable outcomes.\n\n### Important Complications to Watch For\n- Infection due to splenomegaly or splenectomy\n- Hemolytic anemia\n- Thrombocytopenia\n- Progression to malignancy in cases of chronic lymphocytosis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, and manage supportive care. They should also recognize red flags and escalate care when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a haematologist for persistent lymphocytosis, suspected malignancy, or if the patient presents with red flags.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients with splenomegaly or post-splenectomy. Ensure appropriate vaccinations are given to patients undergoing splenectomy.\n",
+  "content": {
+    "overview": {
+      "definition": "Lymphocytosis is an increase in the number of lymphocytes in the blood, often associated with lymphadenopathy (swollen lymph nodes) and splenomegaly (enlarged spleen).",
+      "epidemiology": "Lymphocytosis can occur in various conditions, including infections, autoimmune diseases, and malignancies. It is commonly seen in viral infections such as infectious mononucleosis and in chronic lymphocytic leukaemia (CLL).",
+      "pathophysiology": "Lymphocytes are a type of white blood cell involved in the immune response. Lymphocytosis can result from increased production of lymphocytes in response to infection or inflammation, or from neoplastic processes such as leukaemia or lymphoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Night sweats",
+        "Weight loss",
+        "Fatigue",
+        "Malaise"
+      ],
+      "signs": [
+        "Lymphadenopathy (palpable lymph nodes)",
+        "Splenomegaly (enlarged spleen)",
+        "Hepatomegaly (enlarged liver)",
+        "Rash (in some infections)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic lymphocytosis found incidentally on a complete blood count (CBC)",
+        "Lymphadenopathy without systemic symptoms"
+      ],
+      "redFlags": [
+        "Persistent lymphadenopathy lasting more than 4-6 weeks",
+        "Rapidly enlarging lymph nodes",
+        "B symptoms (fever, night sweats, weight loss)",
+        "Signs of splenic rupture (severe abdominal pain, hypotension)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC) with differential",
+        "Peripheral blood smear",
+        "Basic metabolic panel"
+      ],
+      "secondLine": [
+        "Liver function tests",
+        "Viral serologies (e.g., EBV, CMV)",
+        "HIV testing"
+      ],
+      "specialistTests": [
+        "Bone marrow biopsy",
+        "Flow cytometry",
+        "CT scan of the chest/abdomen/pelvis"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of lymphocytosis (>4,000 lymphocytes/µL), lymphadenopathy, and splenomegaly, along with clinical history and laboratory findings.",
+      "differentials": [
+        "Infectious mononucleosis",
+        "Chronic lymphocytic leukaemia (CLL)",
+        "Acute lymphoblastic leukaemia (ALL)",
+        "Lymphoma (Hodgkin's and Non-Hodgkin's)",
+        "Autoimmune disorders (e.g., lupus, rheumatoid arthritis)",
+        "Viral infections (e.g., hepatitis, HIV)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, analgesia)",
+          "Antipyretics for fever"
+        ],
+        "secondLine": [
+          "Antiviral therapy if indicated (e.g., acyclovir for herpes viruses)"
+        ],
+        "procedures": [
+          "Lymph node biopsy if malignancy is suspected",
+          "Splenectomy in cases of splenic rupture or severe splenomegaly"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Observation and monitoring for asymptomatic lymphocytosis",
+          "Treat underlying cause (e.g., infection, autoimmune disease)"
+        ],
+        "secondLine": [
+          "Chemotherapy or targeted therapy for malignancies (e.g., CLL)",
+          "Immunosuppressive therapy for autoimmune conditions"
+        ],
+        "monitoring": [
+          "Regular follow-up with CBC and clinical assessment",
+          "Monitor for complications of splenomegaly (e.g., splenic rupture)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Chlorambucil",
+          "mechanism": "Alkylating agent that interferes with DNA replication",
+          "dosing": "0.1-0.2 mg/kg/day for 7 days every 4 weeks",
+          "sideEffects": "Bone marrow suppression, nausea, vomiting, secondary malignancies",
+          "notes": "Used in chronic lymphocytic leukaemia (CLL) management."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B-cells",
+          "dosing": "375 mg/m² IV weekly for 4 weeks or 1000 mg IV every 2 months",
+          "sideEffects": "Infusion reactions, infections, tumor lysis syndrome",
+          "notes": "Used in B-cell malignancies including CLL."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lymph node biopsy",
+          "description": "Surgical removal of a lymph node for histopathological examination",
+          "indications": "Persistent lymphadenopathy with suspicion of malignancy",
+          "risks": "Bleeding, infection, pain at the biopsy site"
+        },
+        {
+          "name": "Splenectomy",
+          "description": "Surgical removal of the spleen",
+          "indications": "Severe splenomegaly, splenic rupture, or hypersplenism",
+          "risks": "Infection risk post-splenectomy, bleeding, thrombosis"
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the underlying cause of lymphocytosis. Infections often resolve with treatment, while malignancies may require ongoing management and have variable outcomes.",
+    "complications": [
+      "Infection due to splenomegaly or splenectomy",
+      "Hemolytic anemia",
+      "Thrombocytopenia",
+      "Progression to malignancy in cases of chronic lymphocytosis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, and manage supportive care. They should also recognize red flags and escalate care when necessary.",
+    "escalation": "Refer to a haematologist for persistent lymphocytosis, suspected malignancy, or if the patient presents with red flags.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients with splenomegaly or post-splenectomy. Ensure appropriate vaccinations are given to patients undergoing splenectomy."
+  }
+}

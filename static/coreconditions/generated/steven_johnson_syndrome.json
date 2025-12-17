@@ -1,0 +1,138 @@
+{
+  "id": "steven_johnson_syndrome",
+  "name": "Steven-Johnson syndrome",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:23:51.744513",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Steven-Johnson syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nStevens-Johnson syndrome (SJS) is a severe mucocutaneous reaction characterized by extensive necrosis and detachment of the epidermis, often triggered by medications or infections.\n\n### Epidemiology\nSJS is rare, with an incidence of approximately 1-2 cases per million people per year. It can affect individuals of any age but is more common in adults and can be associated with certain genetic predispositions.\n\n### Essential Pathophysiology\nSJS is thought to be a hypersensitivity reaction, often mediated by T-cells, leading to keratinocyte apoptosis and subsequent epidermal detachment. The condition can be triggered by various medications, infections, and sometimes idiopathic causes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Malaise\n- Sore throat\n- Burning eyes\n- Skin pain\n\n### Key Signs\n- Erythematous macules and patches\n- Blistering of the skin\n- Mucosal involvement (oral, ocular, genital)\n- Nikolsky sign positive\n\n### Atypical Presentations\n- Mild skin involvement resembling viral exanthems\n- Delayed onset after drug exposure (up to 3 weeks)\n- Initial presentation as conjunctivitis\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of skin lesions\n- Severe mucosal involvement\n- Signs of systemic involvement (e.g., fever, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment and history taking\n- Complete blood count (CBC)\n- Liver function tests (LFTs)\n- Renal function tests (RFTs)\n\n### Second-line Investigations\n- Skin biopsy for histopathology (to confirm diagnosis)\n- Serum electrolytes\n- Cultures for infectious agents\n\n### Specialist Tests\n- Genetic testing for HLA-B*1502 in certain populations (e.g., Asian descent)\n- Patch testing for drug allergies\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of characteristic skin and mucosal lesions following exposure to a known trigger, along with systemic symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Toxic epidermal necrolysis (TEN)\n- Erythema multiforme\n- Viral exanthems (e.g., herpes simplex)\n- Drug reactions (e.g., fixed drug eruption)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate withdrawal of the offending agent\n- Supportive care (hydration, pain management)\n- Wound care and infection prevention\n\n#### Second-line Treatments\n- Systemic corticosteroids (consider in severe cases)\n- Intravenous immunoglobulin (IVIG) in severe cases\n\n#### Emergency Procedures\n- Fluid resuscitation in cases of significant fluid loss\n- Debridement of necrotic skin if necessary\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up for skin and mucosal care\n- Management of complications (e.g., ocular involvement)\n\n#### Second-line Treatments\n- Referral to dermatology for ongoing management\n\n#### Monitoring Requirements\n- Regular assessment for secondary infections\n- Monitoring for long-term sequelae (e.g., scarring, vision loss)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects\n- **Typical Dosing Range**: Typically 1-2 mg/kg/day of prednisone\n- **Key Side Effects/Contraindications**: Increased risk of infection, hyperglycemia, gastrointestinal bleeding\n- **When to Use vs. Alternatives**: Use with caution; consider in severe cases.\n\n#### Intravenous immunoglobulin (IVIG)\n- **Mechanism of Action**: Modulates immune response\n- **Typical Dosing Range**: 2 g/kg over 2-5 days\n- **Key Side Effects/Contraindications**: Headache, fever, thromboembolic events\n- **When to Use vs. Alternatives**: Consider in severe cases or if corticosteroids are contraindicated.\n\n### Procedures\n\n#### Wound care\n- **What it Involves**: Management of skin lesions to prevent infection and promote healing\n- **Indications**: Extensive skin detachment and risk of infection\n- **Key Risks/Complications**: Infection, delayed healing\n\n#### Fluid resuscitation\n- **What it Involves**: IV fluids to maintain hydration and electrolyte balance\n- **Indications**: Severe fluid loss due to skin detachment\n- **Key Risks/Complications**: Fluid overload, electrolyte imbalances\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of SJS varies; with early recognition and management, mortality rates are around 5-15%. However, complications can lead to long-term sequelae, including scarring and vision problems.\n\n### Important Complications to Watch For\n- Secondary infections (e.g., sepsis)\n- Ocular complications (e.g., dry eye, corneal scarring)\n- Pulmonary complications (e.g., pneumonia)\n- Long-term skin changes (e.g., scarring, pigment changes)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing early signs of SJS, initiate prompt management, and ensure timely referral to specialists. They should also educate patients about the importance of reporting any new medications or symptoms.\n\n### When to Escalate to Senior/Specialist\nIf SJS is suspected, escalate care to a senior clinician or dermatologist immediately. Monitor for signs of systemic involvement and prepare for potential transfer to a burn unit or intensive care if necessary.\n\n### Key Safety Considerations\nEnsure thorough medication history to identify potential triggers. Monitor for signs of infection and systemic complications. Provide patient education on the importance of avoiding known triggers in the future.\n",
+  "content": {
+    "overview": {
+      "definition": "Stevens-Johnson syndrome (SJS) is a severe mucocutaneous reaction characterized by extensive necrosis and detachment of the epidermis, often triggered by medications or infections.",
+      "epidemiology": "SJS is rare, with an incidence of approximately 1-2 cases per million people per year. It can affect individuals of any age but is more common in adults and can be associated with certain genetic predispositions.",
+      "pathophysiology": "SJS is thought to be a hypersensitivity reaction, often mediated by T-cells, leading to keratinocyte apoptosis and subsequent epidermal detachment. The condition can be triggered by various medications, infections, and sometimes idiopathic causes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Malaise",
+        "Sore throat",
+        "Burning eyes",
+        "Skin pain"
+      ],
+      "signs": [
+        "Erythematous macules and patches",
+        "Blistering of the skin",
+        "Mucosal involvement (oral, ocular, genital)",
+        "Nikolsky sign positive"
+      ],
+      "atypicalPresentations": [
+        "Mild skin involvement resembling viral exanthems",
+        "Delayed onset after drug exposure (up to 3 weeks)",
+        "Initial presentation as conjunctivitis"
+      ],
+      "redFlags": [
+        "Rapid progression of skin lesions",
+        "Severe mucosal involvement",
+        "Signs of systemic involvement (e.g., fever, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment and history taking",
+        "Complete blood count (CBC)",
+        "Liver function tests (LFTs)",
+        "Renal function tests (RFTs)"
+      ],
+      "secondLine": [
+        "Skin biopsy for histopathology (to confirm diagnosis)",
+        "Serum electrolytes",
+        "Cultures for infectious agents"
+      ],
+      "specialistTests": [
+        "Genetic testing for HLA-B*1502 in certain populations (e.g., Asian descent)",
+        "Patch testing for drug allergies"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of characteristic skin and mucosal lesions following exposure to a known trigger, along with systemic symptoms.",
+      "differentials": [
+        "Toxic epidermal necrolysis (TEN)",
+        "Erythema multiforme",
+        "Viral exanthems (e.g., herpes simplex)",
+        "Drug reactions (e.g., fixed drug eruption)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate withdrawal of the offending agent",
+          "Supportive care (hydration, pain management)",
+          "Wound care and infection prevention"
+        ],
+        "secondLine": [
+          "Systemic corticosteroids (consider in severe cases)",
+          "Intravenous immunoglobulin (IVIG) in severe cases"
+        ],
+        "procedures": [
+          "Fluid resuscitation in cases of significant fluid loss",
+          "Debridement of necrotic skin if necessary"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up for skin and mucosal care",
+          "Management of complications (e.g., ocular involvement)"
+        ],
+        "secondLine": [
+          "Referral to dermatology for ongoing management"
+        ],
+        "monitoring": [
+          "Regular assessment for secondary infections",
+          "Monitoring for long-term sequelae (e.g., scarring, vision loss)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects",
+          "dosing": "Typically 1-2 mg/kg/day of prednisone",
+          "sideEffects": "Increased risk of infection, hyperglycemia, gastrointestinal bleeding",
+          "notes": "Use with caution; consider in severe cases."
+        },
+        {
+          "name": "Intravenous immunoglobulin (IVIG)",
+          "mechanism": "Modulates immune response",
+          "dosing": "2 g/kg over 2-5 days",
+          "sideEffects": "Headache, fever, thromboembolic events",
+          "notes": "Consider in severe cases or if corticosteroids are contraindicated."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound care",
+          "description": "Management of skin lesions to prevent infection and promote healing",
+          "indications": "Extensive skin detachment and risk of infection",
+          "risks": "Infection, delayed healing"
+        },
+        {
+          "name": "Fluid resuscitation",
+          "description": "IV fluids to maintain hydration and electrolyte balance",
+          "indications": "Severe fluid loss due to skin detachment",
+          "risks": "Fluid overload, electrolyte imbalances"
+        }
+      ]
+    },
+    "prognosis": "The prognosis of SJS varies; with early recognition and management, mortality rates are around 5-15%. However, complications can lead to long-term sequelae, including scarring and vision problems.",
+    "complications": [
+      "Secondary infections (e.g., sepsis)",
+      "Ocular complications (e.g., dry eye, corneal scarring)",
+      "Pulmonary complications (e.g., pneumonia)",
+      "Long-term skin changes (e.g., scarring, pigment changes)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing early signs of SJS, initiate prompt management, and ensure timely referral to specialists. They should also educate patients about the importance of reporting any new medications or symptoms.",
+    "escalation": "If SJS is suspected, escalate care to a senior clinician or dermatologist immediately. Monitor for signs of systemic involvement and prepare for potential transfer to a burn unit or intensive care if necessary.",
+    "keySafetyConsiderations": "Ensure thorough medication history to identify potential triggers. Monitor for signs of infection and systemic complications. Provide patient education on the importance of avoiding known triggers in the future."
+  }
+}

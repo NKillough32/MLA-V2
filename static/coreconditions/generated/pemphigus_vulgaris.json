@@ -1,0 +1,143 @@
+{
+  "id": "pemphigus_vulgaris",
+  "name": "Pemphigus vulgaris?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:25:57.797381",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pemphigus vulgaris?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPemphigus vulgaris is an autoimmune blistering disorder characterized by the formation of painful blisters on the skin and mucous membranes due to the loss of adhesion between keratinocytes.\n\n### Epidemiology\nPemphigus vulgaris is rare, with an incidence of 0.1 to 0.5 cases per 100,000 people per year. It typically affects middle-aged adults, with a higher prevalence in individuals of Jewish and Mediterranean descent.\n\n### Essential Pathophysiology\nThe condition is caused by autoantibodies targeting desmogleins, which are adhesion proteins in the desmosomes of keratinocytes. This leads to acantholysis (loss of cell-to-cell adhesion) and the formation of intraepithelial blisters.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painful blisters on the skin\n- Oral mucosal lesions\n- Difficulty swallowing due to esophageal involvement\n- Itching or burning sensation\n\n### Key Signs\n- Flaccid blisters that rupture easily\n- Erosions and crusting on the skin\n- Positive Nikolsky sign (skin separates easily when rubbed)\n- Oral ulcers\n\n### Atypical Presentations\n- Blisters localized to the oral cavity without skin involvement\n- Mild cases with few lesions\n- Presentation in younger patients\n\n### Red Flags Requiring Immediate Action\n- Rapidly spreading lesions\n- Signs of secondary infection\n- Severe pain or difficulty swallowing\n- Systemic symptoms such as fever or malaise\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination\n- Histopathology (skin biopsy) showing acantholysis\n- Direct immunofluorescence microscopy (DIF) showing intercellular IgG and C3 deposits\n\n### Second-line Investigations\n- Indirect immunofluorescence to detect circulating autoantibodies\n- Enzyme-linked immunosorbent assay (ELISA) for specific desmoglein antibodies\n\n### Specialist Tests\n- Serum autoantibody titers to monitor disease activity\n- Patch testing if allergic contact dermatitis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, histopathological findings, and immunofluorescence results showing IgG and C3 deposits in the intercellular spaces of the epidermis.\n\n### Key Differential Diagnoses to Exclude\n- Bullous pemphigoid\n- Dermatitis herpetiformis\n- Epidermolysis bullosa\n- Contact dermatitis\n- Drug-induced pemphigus\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Systemic corticosteroids (e.g., prednisone)\n- Supportive care including pain management and wound care\n\n#### Second-line Treatments\n- Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)\n- Intravenous immunoglobulin (IVIG) in severe cases\n\n#### Emergency Procedures\n- Wound care and dressing changes to prevent infection\n- Possible plasmapheresis in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term corticosteroid therapy with gradual tapering\n- Maintenance immunosuppressive therapy (e.g., azathioprine)\n\n#### Second-line Treatments\n- Biologics (e.g., rituximab) for refractory cases\n- Consideration of other immunosuppressants\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and side effects of medications\n- Monitoring for potential complications such as infections\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and immune response\n- **Typical Dosing Range**: Initial dose 0.5-1 mg/kg/day, tapering based on clinical response\n- **Key Side Effects/Contraindications**: Weight gain, osteoporosis, hyperglycemia, increased infection risk\n- **When to Use vs. Alternatives**: Monitor for side effects and adjust dose as needed.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis\n- **Typical Dosing Range**: 2-3 mg/kg/day, adjusted based on TPMT levels\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk\n- **When to Use vs. Alternatives**: Requires monitoring of blood counts and liver function.\n\n#### Rituximab\n- **Mechanism of Action**: Monoclonal antibody targeting CD20 on B cells, depleting them\n- **Typical Dosing Range**: 1 g IV on days 1 and 15, may repeat every 6 months\n- **Key Side Effects/Contraindications**: Infusion reactions, increased risk of infections, hypogammaglobulinemia\n- **When to Use vs. Alternatives**: Consider premedication with antihistamines and corticosteroids.\n\n### Procedures\n\n#### Wound care\n- **What it Involves**: Cleaning and dressing of blisters and erosions to prevent infection\n- **Indications**: Presence of open blisters or erosions\n- **Key Risks/Complications**: Infection, delayed healing.\n\n#### Plasmapheresis\n- **What it Involves**: A procedure to remove circulating autoantibodies from the blood\n- **Indications**: Severe cases not responding to standard treatment\n- **Key Risks/Complications**: Hypotension, infection, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, many patients achieve remission, but the disease can be chronic and relapsing. Early diagnosis and management are crucial for a better prognosis.\n\n### Important Complications to Watch For\n- Secondary infections due to skin erosions\n- Nutritional deficiencies from oral involvement\n- Medication side effects (e.g., from long-term corticosteroids)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of pemphigus vulgaris, initiate investigations, and manage acute presentations. They should also provide education to patients about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to dermatology for suspected pemphigus vulgaris, especially in cases with extensive skin involvement or systemic symptoms. Escalate care for severe cases requiring hospitalization or intravenous therapies.\n\n### Key Safety Considerations\nMonitor for signs of infection, especially in patients with open lesions. Be vigilant for side effects of immunosuppressive therapies, including signs of adrenal insufficiency in patients on corticosteroids.\n",
+  "content": {
+    "overview": {
+      "definition": "Pemphigus vulgaris is an autoimmune blistering disorder characterized by the formation of painful blisters on the skin and mucous membranes due to the loss of adhesion between keratinocytes.",
+      "epidemiology": "Pemphigus vulgaris is rare, with an incidence of 0.1 to 0.5 cases per 100,000 people per year. It typically affects middle-aged adults, with a higher prevalence in individuals of Jewish and Mediterranean descent.",
+      "pathophysiology": "The condition is caused by autoantibodies targeting desmogleins, which are adhesion proteins in the desmosomes of keratinocytes. This leads to acantholysis (loss of cell-to-cell adhesion) and the formation of intraepithelial blisters."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painful blisters on the skin",
+        "Oral mucosal lesions",
+        "Difficulty swallowing due to esophageal involvement",
+        "Itching or burning sensation"
+      ],
+      "signs": [
+        "Flaccid blisters that rupture easily",
+        "Erosions and crusting on the skin",
+        "Positive Nikolsky sign (skin separates easily when rubbed)",
+        "Oral ulcers"
+      ],
+      "atypicalPresentations": [
+        "Blisters localized to the oral cavity without skin involvement",
+        "Mild cases with few lesions",
+        "Presentation in younger patients"
+      ],
+      "redFlags": [
+        "Rapidly spreading lesions",
+        "Signs of secondary infection",
+        "Severe pain or difficulty swallowing",
+        "Systemic symptoms such as fever or malaise"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination",
+        "Histopathology (skin biopsy) showing acantholysis",
+        "Direct immunofluorescence microscopy (DIF) showing intercellular IgG and C3 deposits"
+      ],
+      "secondLine": [
+        "Indirect immunofluorescence to detect circulating autoantibodies",
+        "Enzyme-linked immunosorbent assay (ELISA) for specific desmoglein antibodies"
+      ],
+      "specialistTests": [
+        "Serum autoantibody titers to monitor disease activity",
+        "Patch testing if allergic contact dermatitis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, histopathological findings, and immunofluorescence results showing IgG and C3 deposits in the intercellular spaces of the epidermis.",
+      "differentials": [
+        "Bullous pemphigoid",
+        "Dermatitis herpetiformis",
+        "Epidermolysis bullosa",
+        "Contact dermatitis",
+        "Drug-induced pemphigus"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Systemic corticosteroids (e.g., prednisone)",
+          "Supportive care including pain management and wound care"
+        ],
+        "secondLine": [
+          "Immunosuppressants (e.g., azathioprine, mycophenolate mofetil)",
+          "Intravenous immunoglobulin (IVIG) in severe cases"
+        ],
+        "procedures": [
+          "Wound care and dressing changes to prevent infection",
+          "Possible plasmapheresis in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term corticosteroid therapy with gradual tapering",
+          "Maintenance immunosuppressive therapy (e.g., azathioprine)"
+        ],
+        "secondLine": [
+          "Biologics (e.g., rituximab) for refractory cases",
+          "Consideration of other immunosuppressants"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and side effects of medications",
+          "Monitoring for potential complications such as infections"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and immune response",
+          "dosing": "Initial dose 0.5-1 mg/kg/day, tapering based on clinical response",
+          "sideEffects": "Weight gain, osteoporosis, hyperglycemia, increased infection risk",
+          "notes": "Monitor for side effects and adjust dose as needed."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis",
+          "dosing": "2-3 mg/kg/day, adjusted based on TPMT levels",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk",
+          "notes": "Requires monitoring of blood counts and liver function."
+        },
+        {
+          "name": "Rituximab",
+          "mechanism": "Monoclonal antibody targeting CD20 on B cells, depleting them",
+          "dosing": "1 g IV on days 1 and 15, may repeat every 6 months",
+          "sideEffects": "Infusion reactions, increased risk of infections, hypogammaglobulinemia",
+          "notes": "Consider premedication with antihistamines and corticosteroids."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Wound care",
+          "description": "Cleaning and dressing of blisters and erosions to prevent infection",
+          "indications": "Presence of open blisters or erosions",
+          "risks": "Infection, delayed healing."
+        },
+        {
+          "name": "Plasmapheresis",
+          "description": "A procedure to remove circulating autoantibodies from the blood",
+          "indications": "Severe cases not responding to standard treatment",
+          "risks": "Hypotension, infection, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, many patients achieve remission, but the disease can be chronic and relapsing. Early diagnosis and management are crucial for a better prognosis.",
+    "complications": [
+      "Secondary infections due to skin erosions",
+      "Nutritional deficiencies from oral involvement",
+      "Medication side effects (e.g., from long-term corticosteroids)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of pemphigus vulgaris, initiate investigations, and manage acute presentations. They should also provide education to patients about the condition and its management.",
+    "escalation": "Refer to dermatology for suspected pemphigus vulgaris, especially in cases with extensive skin involvement or systemic symptoms. Escalate care for severe cases requiring hospitalization or intravenous therapies.",
+    "keySafetyConsiderations": "Monitor for signs of infection, especially in patients with open lesions. Be vigilant for side effects of immunosuppressive therapies, including signs of adrenal insufficiency in patients on corticosteroids."
+  }
+}

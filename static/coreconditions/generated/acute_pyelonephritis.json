@@ -1,0 +1,135 @@
+{
+  "id": "acute_pyelonephritis",
+  "name": "Acute pyelonephritis",
+  "domains": [
+    "Renal",
+    "Urology"
+  ],
+  "generatedAt": "2025-12-17T20:18:44.452187",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute pyelonephritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute pyelonephritis is a sudden and severe kidney infection that typically affects one or both kidneys, characterized by inflammation of the renal pelvis and renal parenchyma, often due to ascending urinary tract infections.\n\n### Epidemiology\nIt is more common in women than men, with a lifetime risk of 20% in women. It often occurs in young adults and is associated with urinary tract abnormalities, diabetes, and pregnancy.\n\n### Essential Pathophysiology\nThe condition usually arises from bacteria ascending from the lower urinary tract. Common pathogens include Escherichia coli, Klebsiella, and Proteus species. The infection leads to inflammation, edema, and potential abscess formation in the renal parenchyma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever and chills\n- Flank pain\n- Nausea and vomiting\n- Dysuria\n- Increased frequency and urgency of urination\n- Costovertebral angle tenderness\n\n### Key Signs\n- Fever (often >38°C)\n- Tachycardia\n- Costovertebral angle tenderness\n- Suprapubic tenderness\n- Signs of dehydration\n\n### Atypical Presentations\n- Elderly patients may present with confusion or altered mental status\n- Diabetic patients may have atypical symptoms due to neuropathy\n\n### Red Flags Requiring Immediate Action\n- Severe flank pain\n- Persistent vomiting\n- Signs of sepsis (e.g., hypotension, tachycardia)\n- Immunocompromised status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for nitrites, leukocyte esterase, and blood)\n- Urine culture and sensitivity\n- Blood cultures (if systemic symptoms present)\n\n### Second-line Investigations\n- Ultrasound of the kidneys (to assess for obstruction or abscess)\n- CT scan of the abdomen/pelvis (if complications are suspected)\n\n### Specialist Tests\n- Renal function tests (to assess kidney function)\n- Cystoscopy (if recurrent infections or anatomical abnormalities are suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, urinalysis, and urine culture showing significant bacteriuria (≥10^5 CFU/mL) with compatible symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Acute cystitis\n- Renal abscess\n- Ureteral obstruction\n- Appendicitis\n- Diverticulitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Empirical antibiotic therapy (e.g., ciprofloxacin, trimethoprim-sulfamethoxazole) based on local guidelines\n\n#### Second-line Treatments\n- Switch to IV antibiotics if patient is unable to tolerate oral medications or if severe infection is suspected\n\n#### Emergency Procedures\n- Consider nephrostomy or ureteral stenting if there is significant obstruction or abscess formation.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Address underlying causes (e.g., urinary tract obstruction, diabetes management)\n- Prophylactic antibiotics in recurrent cases\n\n#### Second-line Treatments\n- Referral to urology for surgical intervention if anatomical abnormalities are present\n\n#### Monitoring Requirements\n- Regular follow-up with urine cultures to monitor for recurrence.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, preventing DNA replication.\n- **Typical Dosing Range**: 500 mg orally every 12 hours for 7-14 days, depending on severity.\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, dizziness, tendon rupture, QT prolongation.\n- **When to Use vs. Alternatives**: Avoid in pregnancy and in children under 18 years.\n\n#### Trimethoprim-sulfamethoxazole\n- **Mechanism of Action**: Combination antibiotic that inhibits bacterial folic acid synthesis.\n- **Typical Dosing Range**: 160 mg/800 mg orally every 12 hours for 7-14 days.\n- **Key Side Effects/Contraindications**: Rash, hyperkalemia, renal impairment, Stevens-Johnson syndrome.\n- **When to Use vs. Alternatives**: Check renal function before use.\n\n### Procedures\n\n#### Nephrostomy\n- **What it Involves**: Placement of a catheter through the skin into the renal pelvis to drain urine.\n- **Indications**: Severe obstruction, hydronephrosis, or renal abscess.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs, catheter dislodgement.\n\n#### Ureteral stenting\n- **What it Involves**: Placement of a stent in the ureter to relieve obstruction.\n- **Indications**: Ureteral obstruction due to stones or tumors.\n- **Key Risks/Complications**: Infection, stent migration, ureteral perforation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt treatment, the prognosis is generally good, but complications such as renal abscess or chronic kidney disease can occur if untreated.\n\n### Important Complications to Watch For\n- Renal abscess\n- Sepsis\n- Chronic kidney disease\n- Recurrent urinary tract infections\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, initiate empirical antibiotic therapy, and monitor for complications. They should also provide patient education on prevention strategies.\n\n### When to Escalate to Senior/Specialist\nIf the patient shows signs of sepsis, persistent vomiting, or worsening renal function, escalate care to a senior clinician or consider admission to a higher level of care.\n\n### Key Safety Considerations\nMonitor for signs of sepsis, ensure adequate hydration, and be aware of potential drug interactions, especially in patients with renal impairment.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute pyelonephritis is a sudden and severe kidney infection that typically affects one or both kidneys, characterized by inflammation of the renal pelvis and renal parenchyma, often due to ascending urinary tract infections.",
+      "epidemiology": "It is more common in women than men, with a lifetime risk of 20% in women. It often occurs in young adults and is associated with urinary tract abnormalities, diabetes, and pregnancy.",
+      "pathophysiology": "The condition usually arises from bacteria ascending from the lower urinary tract. Common pathogens include Escherichia coli, Klebsiella, and Proteus species. The infection leads to inflammation, edema, and potential abscess formation in the renal parenchyma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever and chills",
+        "Flank pain",
+        "Nausea and vomiting",
+        "Dysuria",
+        "Increased frequency and urgency of urination",
+        "Costovertebral angle tenderness"
+      ],
+      "signs": [
+        "Fever (often >38°C)",
+        "Tachycardia",
+        "Costovertebral angle tenderness",
+        "Suprapubic tenderness",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Elderly patients may present with confusion or altered mental status",
+        "Diabetic patients may have atypical symptoms due to neuropathy"
+      ],
+      "redFlags": [
+        "Severe flank pain",
+        "Persistent vomiting",
+        "Signs of sepsis (e.g., hypotension, tachycardia)",
+        "Immunocompromised status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for nitrites, leukocyte esterase, and blood)",
+        "Urine culture and sensitivity",
+        "Blood cultures (if systemic symptoms present)"
+      ],
+      "secondLine": [
+        "Ultrasound of the kidneys (to assess for obstruction or abscess)",
+        "CT scan of the abdomen/pelvis (if complications are suspected)"
+      ],
+      "specialistTests": [
+        "Renal function tests (to assess kidney function)",
+        "Cystoscopy (if recurrent infections or anatomical abnormalities are suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, urinalysis, and urine culture showing significant bacteriuria (≥10^5 CFU/mL) with compatible symptoms.",
+      "differentials": [
+        "Acute cystitis",
+        "Renal abscess",
+        "Ureteral obstruction",
+        "Appendicitis",
+        "Diverticulitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Empirical antibiotic therapy (e.g., ciprofloxacin, trimethoprim-sulfamethoxazole) based on local guidelines"
+        ],
+        "secondLine": [
+          "Switch to IV antibiotics if patient is unable to tolerate oral medications or if severe infection is suspected"
+        ],
+        "procedures": [
+          "Consider nephrostomy or ureteral stenting if there is significant obstruction or abscess formation."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Address underlying causes (e.g., urinary tract obstruction, diabetes management)",
+          "Prophylactic antibiotics in recurrent cases"
+        ],
+        "secondLine": [
+          "Referral to urology for surgical intervention if anatomical abnormalities are present"
+        ],
+        "monitoring": [
+          "Regular follow-up with urine cultures to monitor for recurrence."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone antibiotic that inhibits bacterial DNA gyrase, preventing DNA replication.",
+          "dosing": "500 mg orally every 12 hours for 7-14 days, depending on severity.",
+          "sideEffects": "Nausea, diarrhea, dizziness, tendon rupture, QT prolongation.",
+          "notes": "Avoid in pregnancy and in children under 18 years."
+        },
+        {
+          "name": "Trimethoprim-sulfamethoxazole",
+          "mechanism": "Combination antibiotic that inhibits bacterial folic acid synthesis.",
+          "dosing": "160 mg/800 mg orally every 12 hours for 7-14 days.",
+          "sideEffects": "Rash, hyperkalemia, renal impairment, Stevens-Johnson syndrome.",
+          "notes": "Check renal function before use."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nephrostomy",
+          "description": "Placement of a catheter through the skin into the renal pelvis to drain urine.",
+          "indications": "Severe obstruction, hydronephrosis, or renal abscess.",
+          "risks": "Infection, bleeding, injury to surrounding organs, catheter dislodgement."
+        },
+        {
+          "name": "Ureteral stenting",
+          "description": "Placement of a stent in the ureter to relieve obstruction.",
+          "indications": "Ureteral obstruction due to stones or tumors.",
+          "risks": "Infection, stent migration, ureteral perforation."
+        }
+      ]
+    },
+    "prognosis": "With prompt treatment, the prognosis is generally good, but complications such as renal abscess or chronic kidney disease can occur if untreated.",
+    "complications": [
+      "Renal abscess",
+      "Sepsis",
+      "Chronic kidney disease",
+      "Recurrent urinary tract infections"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, initiate empirical antibiotic therapy, and monitor for complications. They should also provide patient education on prevention strategies.",
+    "escalation": "If the patient shows signs of sepsis, persistent vomiting, or worsening renal function, escalate care to a senior clinician or consider admission to a higher level of care.",
+    "keySafetyConsiderations": "Monitor for signs of sepsis, ensure adequate hydration, and be aware of potential drug interactions, especially in patients with renal impairment."
+  }
+}

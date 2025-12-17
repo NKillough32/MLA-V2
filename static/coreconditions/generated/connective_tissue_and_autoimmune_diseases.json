@@ -1,0 +1,152 @@
+{
+  "id": "connective_tissue_and_autoimmune_diseases",
+  "name": "Connective tissue and autoimmune diseases",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:26:18.411030",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Connective tissue and autoimmune diseases: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nConnective tissue diseases (CTDs) are a group of disorders characterized by inflammation and damage to connective tissues, which include skin, joints, and internal organs. Autoimmune diseases occur when the immune system mistakenly attacks the body's own tissues, leading to inflammation and damage.\n\n### Epidemiology\nCTDs are more prevalent in women, particularly those of childbearing age. Conditions such as systemic lupus erythematosus (SLE), rheumatoid arthritis (RA), and scleroderma have varying prevalence rates, with SLE affecting approximately 1 in 1000 individuals in the general population.\n\n### Essential Pathophysiology\nThe pathophysiology of CTDs involves a combination of genetic predisposition, environmental triggers, and immune dysregulation. Autoantibodies are produced against self-antigens, leading to inflammation, tissue damage, and dysfunction of affected organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Joint pain and swelling\n- Skin rashes\n- Shortness of breath\n- Dry eyes and mouth (Sjögren's syndrome)\n- Raynaud's phenomenon\n\n### Key Signs\n- Arthritis (swelling, tenderness, decreased range of motion)\n- Skin changes (rashes, sclerodactyly)\n- Pulmonary involvement (crackles, decreased breath sounds)\n- Cardiac involvement (pericardial rub, arrhythmias)\n\n### Atypical Presentations\n- Unexplained fever\n- Weight loss\n- Neurological symptoms (e.g., seizures, neuropathy)\n- Gastrointestinal symptoms (e.g., dysphagia, abdominal pain)\n\n### Red Flags Requiring Immediate Action\n- Acute respiratory distress\n- Severe joint deformities\n- Rapidly progressive skin changes\n- New neurological deficits\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Basic metabolic panel\n- Liver function tests\n\n### Second-line Investigations\n- Antinuclear antibody (ANA)\n- Anti-double-stranded DNA (anti-dsDNA)\n- Anti-Smith antibody\n- Rheumatoid factor (RF)\n- Anti-citrullinated protein antibodies (ACPA)\n\n### Specialist Tests\n- High-resolution CT scan of the chest\n- Pulmonary function tests\n- Skin biopsy (for scleroderma)\n- Joint ultrasound\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical criteria, laboratory findings, and imaging studies. For example, the American College of Rheumatology (ACR) criteria for SLE include a combination of clinical and immunological criteria.\n\n### Key Differential Diagnoses to Exclude\n- Rheumatoid arthritis\n- Psoriatic arthritis\n- Infectious arthritis\n- Vasculitis\n- Fibromyalgia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief\n- Corticosteroids for acute inflammation\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate\n\n#### Emergency Procedures\n- Joint aspiration for diagnostic and therapeutic purposes\n- Pleural effusion drainage\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term DMARDs (e.g., methotrexate, hydroxychloroquine)\n- Regular monitoring of disease activity\n\n#### Second-line Treatments\n- Biologic agents (e.g., TNF inhibitors, IL-6 inhibitors)\n\n#### Monitoring Requirements\n- Regular follow-up for disease activity and medication side effects\n- Screening for organ involvement (e.g., pulmonary function tests)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to decreased DNA synthesis and immune response.\n- **Typical Dosing Range**: 7.5-25 mg orally once weekly, adjusted based on response and tolerance.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Hydroxychloroquine\n- **Mechanism of Action**: Modulates immune response and has anti-inflammatory properties.\n- **Typical Dosing Range**: 200-400 mg orally daily, based on weight and response.\n- **Key Side Effects/Contraindications**: Retinal toxicity, gastrointestinal upset, skin rashes.\n- **When to Use vs. Alternatives**: Regular eye exams are necessary to monitor for retinal damage.\n\n#### Corticosteroids (e.g., prednisone)\n- **Mechanism of Action**: Anti-inflammatory and immunosuppressive effects.\n- **Typical Dosing Range**: Start with 10-60 mg daily, taper based on clinical response.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, diabetes, osteoporosis.\n- **When to Use vs. Alternatives**: Use the lowest effective dose for the shortest duration.\n\n### Procedures\n\n#### Joint aspiration\n- **What it Involves**: Involves inserting a needle into a joint space to withdraw synovial fluid for analysis or to relieve pressure.\n- **Indications**: Swollen, painful joints to assess for infection, crystals, or inflammatory conditions.\n- **Key Risks/Complications**: Infection, bleeding, pain at the site.\n\n#### Pleural effusion drainage (thoracentesis)\n- **What it Involves**: Involves inserting a needle into the pleural space to remove excess fluid for diagnostic or therapeutic purposes.\n- **Indications**: Significant pleural effusion causing respiratory distress.\n- **Key Risks/Complications**: Pneumothorax, bleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies widely depending on the specific connective tissue disease, the severity of organ involvement, and the response to treatment. Early diagnosis and management can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Pulmonary fibrosis\n- Cardiac involvement (pericarditis, myocarditis)\n- Renal failure (lupus nephritis)\n- Increased risk of infections due to immunosuppressive therapy.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of CTDs, perform initial investigations, and manage acute exacerbations. They should also facilitate referrals to rheumatology and other specialties as needed.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms, such as respiratory distress or neurological changes, immediate escalation to senior medical staff and potential admission to a higher level of care is required.\n\n### Key Safety Considerations\nMonitor for signs of infection in patients on immunosuppressive therapy, ensure regular follow-up for medication side effects, and educate patients about recognizing worsening symptoms.\n",
+  "content": {
+    "overview": {
+      "definition": "Connective tissue diseases (CTDs) are a group of disorders characterized by inflammation and damage to connective tissues, which include skin, joints, and internal organs. Autoimmune diseases occur when the immune system mistakenly attacks the body's own tissues, leading to inflammation and damage.",
+      "epidemiology": "CTDs are more prevalent in women, particularly those of childbearing age. Conditions such as systemic lupus erythematosus (SLE), rheumatoid arthritis (RA), and scleroderma have varying prevalence rates, with SLE affecting approximately 1 in 1000 individuals in the general population.",
+      "pathophysiology": "The pathophysiology of CTDs involves a combination of genetic predisposition, environmental triggers, and immune dysregulation. Autoantibodies are produced against self-antigens, leading to inflammation, tissue damage, and dysfunction of affected organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Joint pain and swelling",
+        "Skin rashes",
+        "Shortness of breath",
+        "Dry eyes and mouth (Sjögren's syndrome)",
+        "Raynaud's phenomenon"
+      ],
+      "signs": [
+        "Arthritis (swelling, tenderness, decreased range of motion)",
+        "Skin changes (rashes, sclerodactyly)",
+        "Pulmonary involvement (crackles, decreased breath sounds)",
+        "Cardiac involvement (pericardial rub, arrhythmias)"
+      ],
+      "atypicalPresentations": [
+        "Unexplained fever",
+        "Weight loss",
+        "Neurological symptoms (e.g., seizures, neuropathy)",
+        "Gastrointestinal symptoms (e.g., dysphagia, abdominal pain)"
+      ],
+      "redFlags": [
+        "Acute respiratory distress",
+        "Severe joint deformities",
+        "Rapidly progressive skin changes",
+        "New neurological deficits"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Basic metabolic panel",
+        "Liver function tests"
+      ],
+      "secondLine": [
+        "Antinuclear antibody (ANA)",
+        "Anti-double-stranded DNA (anti-dsDNA)",
+        "Anti-Smith antibody",
+        "Rheumatoid factor (RF)",
+        "Anti-citrullinated protein antibodies (ACPA)"
+      ],
+      "specialistTests": [
+        "High-resolution CT scan of the chest",
+        "Pulmonary function tests",
+        "Skin biopsy (for scleroderma)",
+        "Joint ultrasound"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical criteria, laboratory findings, and imaging studies. For example, the American College of Rheumatology (ACR) criteria for SLE include a combination of clinical and immunological criteria.",
+      "differentials": [
+        "Rheumatoid arthritis",
+        "Psoriatic arthritis",
+        "Infectious arthritis",
+        "Vasculitis",
+        "Fibromyalgia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-steroidal anti-inflammatory drugs (NSAIDs) for pain relief",
+          "Corticosteroids for acute inflammation"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate"
+        ],
+        "procedures": [
+          "Joint aspiration for diagnostic and therapeutic purposes",
+          "Pleural effusion drainage"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term DMARDs (e.g., methotrexate, hydroxychloroquine)",
+          "Regular monitoring of disease activity"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., TNF inhibitors, IL-6 inhibitors)"
+        ],
+        "monitoring": [
+          "Regular follow-up for disease activity and medication side effects",
+          "Screening for organ involvement (e.g., pulmonary function tests)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to decreased DNA synthesis and immune response.",
+          "dosing": "7.5-25 mg orally once weekly, adjusted based on response and tolerance.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression, pulmonary toxicity.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Hydroxychloroquine",
+          "mechanism": "Modulates immune response and has anti-inflammatory properties.",
+          "dosing": "200-400 mg orally daily, based on weight and response.",
+          "sideEffects": "Retinal toxicity, gastrointestinal upset, skin rashes.",
+          "notes": "Regular eye exams are necessary to monitor for retinal damage."
+        },
+        {
+          "name": "Corticosteroids (e.g., prednisone)",
+          "mechanism": "Anti-inflammatory and immunosuppressive effects.",
+          "dosing": "Start with 10-60 mg daily, taper based on clinical response.",
+          "sideEffects": "Weight gain, hypertension, diabetes, osteoporosis.",
+          "notes": "Use the lowest effective dose for the shortest duration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Joint aspiration",
+          "description": "Involves inserting a needle into a joint space to withdraw synovial fluid for analysis or to relieve pressure.",
+          "indications": "Swollen, painful joints to assess for infection, crystals, or inflammatory conditions.",
+          "risks": "Infection, bleeding, pain at the site."
+        },
+        {
+          "name": "Pleural effusion drainage (thoracentesis)",
+          "description": "Involves inserting a needle into the pleural space to remove excess fluid for diagnostic or therapeutic purposes.",
+          "indications": "Significant pleural effusion causing respiratory distress.",
+          "risks": "Pneumothorax, bleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies widely depending on the specific connective tissue disease, the severity of organ involvement, and the response to treatment. Early diagnosis and management can improve outcomes significantly.",
+    "complications": [
+      "Pulmonary fibrosis",
+      "Cardiac involvement (pericarditis, myocarditis)",
+      "Renal failure (lupus nephritis)",
+      "Increased risk of infections due to immunosuppressive therapy."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of CTDs, perform initial investigations, and manage acute exacerbations. They should also facilitate referrals to rheumatology and other specialties as needed.",
+    "escalation": "If a patient presents with severe symptoms, such as respiratory distress or neurological changes, immediate escalation to senior medical staff and potential admission to a higher level of care is required.",
+    "keySafetyConsiderations": "Monitor for signs of infection in patients on immunosuppressive therapy, ensure regular follow-up for medication side effects, and educate patients about recognizing worsening symptoms."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "pubic_ramus_fracture",
+  "name": "Pubic ramus fracture",
+  "domains": [
+    "Trauma and Orthopaedics"
+  ],
+  "generatedAt": "2025-12-17T21:25:08.755536",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pubic ramus fracture: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA pubic ramus fracture is a break in one of the bony structures of the pelvis, specifically the superior or inferior pubic ramus, which are parts of the pubic bone. These fractures are often associated with low-energy trauma in older adults or high-energy trauma in younger individuals.\n\n### Epidemiology\nPubic ramus fractures are more common in elderly patients, particularly those with osteoporosis, and can occur in younger patients due to high-impact sports or accidents. They account for a significant proportion of pelvic fractures, especially in the context of falls.\n\n### Essential Pathophysiology\nThe pubic ramus is part of the pelvic ring, which provides structural support and stability. Fractures can disrupt this stability, leading to pain, difficulty in ambulation, and potential complications such as non-union or malunion.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Pelvic pain\n- Difficulty walking or bearing weight\n- Pain localized to the groin or lower abdomen\n- Swelling or bruising in the pelvic region\n\n### Key Signs\n- Tenderness over the pubic symphysis or ramus\n- Swelling or deformity in the pelvic area\n- Limited range of motion in the hip joint\n- Possible instability on physical examination\n\n### Atypical Presentations\n- Chronic pelvic pain without a clear history of trauma\n- Delayed presentation of symptoms after a fall\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by analgesia\n- Signs of neurovascular compromise (e.g., numbness, weakness in the lower limb)\n- Signs of internal bleeding (e.g., hypotension, tachycardia)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the pelvis (AP view)\n- Pelvic ultrasound (to assess for hematoma or fluid accumulation)\n\n### Second-line Investigations\n- CT scan of the pelvis (for detailed assessment of fracture pattern and associated injuries)\n\n### Specialist Tests\n- MRI (if soft tissue injury or occult fracture is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation and imaging findings. A pubic ramus fracture is confirmed by the presence of a fracture line on imaging studies, typically X-ray or CT.\n\n### Key Differential Diagnoses to Exclude\n- Hip fracture\n- Acetabular fracture\n- Pelvic ring fracture\n- Osteitis pubis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesia (e.g., paracetamol, NSAIDs)\n- Rest and activity modification\n- Use of assistive devices (e.g., crutches)\n\n#### Second-line Treatments\n- Referral to orthopaedics for further evaluation if there is significant displacement or instability\n\n#### Emergency Procedures\n- Surgical fixation (if indicated, based on fracture pattern and stability)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Physical therapy to improve strength and mobility\n- Gradual return to activity as tolerated\n\n#### Second-line Treatments\n- Consideration of surgical intervention if there is non-union or chronic pain\n\n#### Monitoring Requirements\n- Regular follow-up to assess healing and functional recovery\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic; works by inhibiting prostaglandin synthesis in the CNS.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed; maximum 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: First-line analgesic for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed; maximum 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal irritation, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for inflammatory pain.\n\n### Procedures\n\n#### Surgical fixation of pubic ramus fracture\n- **What it Involves**: Involves the use of plates and screws to stabilize the fracture fragments.\n- **Indications**: Displaced fractures, unstable pelvic fractures, or fractures associated with significant pain and dysfunction.\n- **Key Risks/Complications**: Infection, bleeding, nerve injury, non-union.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost pubic ramus fractures heal well with conservative management, especially in older adults. Complications can arise, particularly in cases of significant displacement or associated injuries.\n\n### Important Complications to Watch For\n- Non-union or malunion of the fracture\n- Chronic pain or instability\n- Infection (if surgical intervention is performed)\n- Deep vein thrombosis (DVT) due to immobility\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate imaging, manage pain, and refer to orthopaedics when necessary. They should also educate patients on activity modification and rehabilitation.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of neurovascular compromise, severe pain unresponsive to treatment, or significant instability, escalate to senior medical staff or orthopaedic team immediately.\n\n### Key Safety Considerations\nEnsure proper pain management and monitor for signs of complications. Assess for DVT risk in immobilized patients and consider prophylaxis as appropriate.\n",
+  "content": {
+    "overview": {
+      "definition": "A pubic ramus fracture is a break in one of the bony structures of the pelvis, specifically the superior or inferior pubic ramus, which are parts of the pubic bone. These fractures are often associated with low-energy trauma in older adults or high-energy trauma in younger individuals.",
+      "epidemiology": "Pubic ramus fractures are more common in elderly patients, particularly those with osteoporosis, and can occur in younger patients due to high-impact sports or accidents. They account for a significant proportion of pelvic fractures, especially in the context of falls.",
+      "pathophysiology": "The pubic ramus is part of the pelvic ring, which provides structural support and stability. Fractures can disrupt this stability, leading to pain, difficulty in ambulation, and potential complications such as non-union or malunion."
+    },
+    "recognition": {
+      "symptoms": [
+        "Pelvic pain",
+        "Difficulty walking or bearing weight",
+        "Pain localized to the groin or lower abdomen",
+        "Swelling or bruising in the pelvic region"
+      ],
+      "signs": [
+        "Tenderness over the pubic symphysis or ramus",
+        "Swelling or deformity in the pelvic area",
+        "Limited range of motion in the hip joint",
+        "Possible instability on physical examination"
+      ],
+      "atypicalPresentations": [
+        "Chronic pelvic pain without a clear history of trauma",
+        "Delayed presentation of symptoms after a fall"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by analgesia",
+        "Signs of neurovascular compromise (e.g., numbness, weakness in the lower limb)",
+        "Signs of internal bleeding (e.g., hypotension, tachycardia)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the pelvis (AP view)",
+        "Pelvic ultrasound (to assess for hematoma or fluid accumulation)"
+      ],
+      "secondLine": [
+        "CT scan of the pelvis (for detailed assessment of fracture pattern and associated injuries)"
+      ],
+      "specialistTests": [
+        "MRI (if soft tissue injury or occult fracture is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation and imaging findings. A pubic ramus fracture is confirmed by the presence of a fracture line on imaging studies, typically X-ray or CT.",
+      "differentials": [
+        "Hip fracture",
+        "Acetabular fracture",
+        "Pelvic ring fracture",
+        "Osteitis pubis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia (e.g., paracetamol, NSAIDs)",
+          "Rest and activity modification",
+          "Use of assistive devices (e.g., crutches)"
+        ],
+        "secondLine": [
+          "Referral to orthopaedics for further evaluation if there is significant displacement or instability"
+        ],
+        "procedures": [
+          "Surgical fixation (if indicated, based on fracture pattern and stability)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Physical therapy to improve strength and mobility",
+          "Gradual return to activity as tolerated"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if there is non-union or chronic pain"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess healing and functional recovery"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic; works by inhibiting prostaglandin synthesis in the CNS.",
+          "dosing": "500-1000 mg every 4-6 hours as needed; maximum 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "First-line analgesic for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600 mg every 6-8 hours as needed; maximum 2400 mg/day.",
+          "sideEffects": "Gastrointestinal irritation, renal impairment, increased bleeding risk.",
+          "notes": "Useful for inflammatory pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical fixation of pubic ramus fracture",
+          "description": "Involves the use of plates and screws to stabilize the fracture fragments.",
+          "indications": "Displaced fractures, unstable pelvic fractures, or fractures associated with significant pain and dysfunction.",
+          "risks": "Infection, bleeding, nerve injury, non-union."
+        }
+      ]
+    },
+    "prognosis": "Most pubic ramus fractures heal well with conservative management, especially in older adults. Complications can arise, particularly in cases of significant displacement or associated injuries.",
+    "complications": [
+      "Non-union or malunion of the fracture",
+      "Chronic pain or instability",
+      "Infection (if surgical intervention is performed)",
+      "Deep vein thrombosis (DVT) due to immobility"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate imaging, manage pain, and refer to orthopaedics when necessary. They should also educate patients on activity modification and rehabilitation.",
+    "escalation": "If there are signs of neurovascular compromise, severe pain unresponsive to treatment, or significant instability, escalate to senior medical staff or orthopaedic team immediately.",
+    "keySafetyConsiderations": "Ensure proper pain management and monitor for signs of complications. Assess for DVT risk in immobilized patients and consider prophylaxis as appropriate."
+  }
+}

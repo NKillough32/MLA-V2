@@ -1,0 +1,140 @@
+{
+  "id": "cellulitis",
+  "name": "Cellulitis?",
+  "domains": [
+    "Dermatology"
+  ],
+  "generatedAt": "2025-12-17T19:20:20.825894",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cellulitis?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCellulitis is a common, potentially serious bacterial skin infection characterized by redness, swelling, warmth, and pain in the affected area, typically involving the dermis and subcutaneous tissues.\n\n### Epidemiology\nCellulitis affects individuals of all ages, with a higher incidence in adults, particularly those with underlying conditions such as diabetes, obesity, or immunosuppression. It is more common in the lower extremities and can occur after breaks in the skin.\n\n### Essential Pathophysiology\nCellulitis is primarily caused by bacteria, most commonly Streptococcus pyogenes and Staphylococcus aureus, which enter through breaks in the skin. The infection leads to an inflammatory response, resulting in the clinical features of redness, swelling, and pain.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Localized pain and tenderness\n- Swelling\n- Redness\n- Warmth\n- Fever\n- Chills\n- Malaise\n\n### Key Signs\n- Erythema\n- Edema\n- Induration\n- Possible lymphangitis (red streaks)\n- Systemic signs of infection (fever, tachycardia)\n\n### Atypical Presentations\n- Abscess formation\n- Necrotizing fasciitis (severe cases)\n- Localized blistering or bullae\n\n### Red Flags Requiring Immediate Action\n- Rapid progression of symptoms\n- Severe pain disproportionate to the clinical findings\n- Signs of systemic infection (high fever, hypotension)\n- Immunocompromised status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Blood tests (CBC, CRP)\n\n### Second-line Investigations\n- Ultrasound (to assess for abscess formation)\n- Wound swab (if there is an open lesion)\n\n### Specialist Tests\n- MRI (if deep tissue involvement is suspected)\n- Blood cultures (if systemic infection is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on characteristic signs and symptoms. Laboratory tests may support the diagnosis but are not required for all cases.\n\n### Key Differential Diagnoses to Exclude\n- Deep vein thrombosis (DVT)\n- Contact dermatitis\n- Erysipelas\n- Necrotizing fasciitis\n- Abscess\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oral antibiotics (e.g., flucloxacillin)\n- Elevation of the affected limb\n- Analgesia\n\n#### Second-line Treatments\n- Intravenous antibiotics (e.g., benzylpenicillin plus flucloxacillin) if severe or systemic symptoms present\n- Surgical intervention if abscess or necrotizing fasciitis is suspected\n\n#### Emergency Procedures\n- Incision and drainage (if abscess is present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on skin care and hygiene\n- Management of underlying conditions (e.g., diabetes control)\n\n#### Second-line Treatments\n- Long-term prophylactic antibiotics in recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess for recurrence or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Flucloxacillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 500 mg orally every 6 hours for 5-10 days\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions\n- **When to Use vs. Alternatives**: First-line treatment for uncomplicated cellulitis.\n\n#### Benzylpenicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis\n- **Typical Dosing Range**: 1.2 g IV every 6 hours\n- **Key Side Effects/Contraindications**: Allergic reactions, electrolyte imbalance\n- **When to Use vs. Alternatives**: Used in severe cases or when systemic symptoms are present.\n\n#### Clindamycin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis\n- **Typical Dosing Range**: 300 mg orally every 6 hours or 600 mg IV every 8 hours\n- **Key Side Effects/Contraindications**: Diarrhea, C. difficile infection\n- **When to Use vs. Alternatives**: Consider in penicillin-allergic patients.\n\n### Procedures\n\n#### Incision and drainage\n- **What it Involves**: Surgical procedure to open and drain an abscess or infected area.\n- **Indications**: Presence of a fluctuant abscess or failure of antibiotic therapy.\n- **Key Risks/Complications**: Bleeding, infection, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of cellulitis respond well to treatment, with resolution of symptoms within 1-2 weeks. However, complications can occur, especially in immunocompromised patients or those with significant comorbidities.\n\n### Important Complications to Watch For\n- Abscess formation\n- Necrotizing fasciitis\n- Sepsis\n- Lymphangitis\n- Recurrence of cellulitis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, initiate appropriate antibiotic therapy, and monitor for complications. They should also educate patients on skin care and the importance of follow-up.\n\n### When to Escalate to Senior/Specialist\nIf the patient shows signs of systemic infection, does not improve with initial treatment, or has significant comorbidities, escalate care to a senior clinician or infectious disease specialist.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and use of personal protective equipment (PPE) when examining patients. Monitor for signs of systemic infection and be vigilant for any signs of deterioration.\n",
+  "content": {
+    "overview": {
+      "definition": "Cellulitis is a common, potentially serious bacterial skin infection characterized by redness, swelling, warmth, and pain in the affected area, typically involving the dermis and subcutaneous tissues.",
+      "epidemiology": "Cellulitis affects individuals of all ages, with a higher incidence in adults, particularly those with underlying conditions such as diabetes, obesity, or immunosuppression. It is more common in the lower extremities and can occur after breaks in the skin.",
+      "pathophysiology": "Cellulitis is primarily caused by bacteria, most commonly Streptococcus pyogenes and Staphylococcus aureus, which enter through breaks in the skin. The infection leads to an inflammatory response, resulting in the clinical features of redness, swelling, and pain."
+    },
+    "recognition": {
+      "symptoms": [
+        "Localized pain and tenderness",
+        "Swelling",
+        "Redness",
+        "Warmth",
+        "Fever",
+        "Chills",
+        "Malaise"
+      ],
+      "signs": [
+        "Erythema",
+        "Edema",
+        "Induration",
+        "Possible lymphangitis (red streaks)",
+        "Systemic signs of infection (fever, tachycardia)"
+      ],
+      "atypicalPresentations": [
+        "Abscess formation",
+        "Necrotizing fasciitis (severe cases)",
+        "Localized blistering or bullae"
+      ],
+      "redFlags": [
+        "Rapid progression of symptoms",
+        "Severe pain disproportionate to the clinical findings",
+        "Signs of systemic infection (high fever, hypotension)",
+        "Immunocompromised status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Blood tests (CBC, CRP)"
+      ],
+      "secondLine": [
+        "Ultrasound (to assess for abscess formation)",
+        "Wound swab (if there is an open lesion)"
+      ],
+      "specialistTests": [
+        "MRI (if deep tissue involvement is suspected)",
+        "Blood cultures (if systemic infection is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on characteristic signs and symptoms. Laboratory tests may support the diagnosis but are not required for all cases.",
+      "differentials": [
+        "Deep vein thrombosis (DVT)",
+        "Contact dermatitis",
+        "Erysipelas",
+        "Necrotizing fasciitis",
+        "Abscess"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral antibiotics (e.g., flucloxacillin)",
+          "Elevation of the affected limb",
+          "Analgesia"
+        ],
+        "secondLine": [
+          "Intravenous antibiotics (e.g., benzylpenicillin plus flucloxacillin) if severe or systemic symptoms present",
+          "Surgical intervention if abscess or necrotizing fasciitis is suspected"
+        ],
+        "procedures": [
+          "Incision and drainage (if abscess is present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on skin care and hygiene",
+          "Management of underlying conditions (e.g., diabetes control)"
+        ],
+        "secondLine": [
+          "Long-term prophylactic antibiotics in recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for recurrence or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Flucloxacillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "500 mg orally every 6 hours for 5-10 days",
+          "sideEffects": "Nausea, diarrhea, allergic reactions",
+          "notes": "First-line treatment for uncomplicated cellulitis."
+        },
+        {
+          "name": "Benzylpenicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis",
+          "dosing": "1.2 g IV every 6 hours",
+          "sideEffects": "Allergic reactions, electrolyte imbalance",
+          "notes": "Used in severe cases or when systemic symptoms are present."
+        },
+        {
+          "name": "Clindamycin",
+          "mechanism": "Inhibits bacterial protein synthesis",
+          "dosing": "300 mg orally every 6 hours or 600 mg IV every 8 hours",
+          "sideEffects": "Diarrhea, C. difficile infection",
+          "notes": "Consider in penicillin-allergic patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Incision and drainage",
+          "description": "Surgical procedure to open and drain an abscess or infected area.",
+          "indications": "Presence of a fluctuant abscess or failure of antibiotic therapy.",
+          "risks": "Bleeding, infection, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "Most cases of cellulitis respond well to treatment, with resolution of symptoms within 1-2 weeks. However, complications can occur, especially in immunocompromised patients or those with significant comorbidities.",
+    "complications": [
+      "Abscess formation",
+      "Necrotizing fasciitis",
+      "Sepsis",
+      "Lymphangitis",
+      "Recurrence of cellulitis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, initiate appropriate antibiotic therapy, and monitor for complications. They should also educate patients on skin care and the importance of follow-up.",
+    "escalation": "If the patient shows signs of systemic infection, does not improve with initial treatment, or has significant comorbidities, escalate care to a senior clinician or infectious disease specialist.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and use of personal protective equipment (PPE) when examining patients. Monitor for signs of systemic infection and be vigilant for any signs of deterioration."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "cirrhosis",
+  "name": "Cirrhosis",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:43:05.929037",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cirrhosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism.\n\n### Epidemiology\nCirrhosis affects approximately 0.1% to 0.5% of the general population, with higher prevalence in individuals with chronic liver disease. It is a leading cause of morbidity and mortality worldwide, particularly in regions with high rates of viral hepatitis and alcohol use.\n\n### Essential Pathophysiology\nCirrhosis results from chronic liver injury leading to the replacement of healthy liver tissue with scar tissue. This disrupts normal liver architecture and function, leading to portal hypertension, liver failure, and increased risk of hepatocellular carcinoma.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Weakness\n- Weight loss\n- Anorexia\n- Nausea\n- Pruritus\n- Jaundice\n- Abdominal pain\n- Confusion (hepatic encephalopathy)\n\n### Key Signs\n- Jaundice\n- Ascites\n- Spider angiomata\n- Palmar erythema\n- Gynecomastia\n- Asterixis\n- Caput medusae\n- Hepatomegaly or shrunken liver on examination\n\n### Atypical Presentations\n- Acute liver failure in previously asymptomatic patients\n- Non-specific abdominal pain\n- Severe pruritus without jaundice\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in liver function\n- Signs of hepatic encephalopathy\n- Severe ascites or abdominal distension\n- Gastrointestinal bleeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Complete blood count (CBC)\n- Coagulation profile\n- Serum electrolytes\n- Hepatitis serologies (A, B, C)\n- Alcohol use history\n\n### Second-line Investigations\n- Ultrasound abdomen (to assess liver size, ascites, and portal vein),\n- CT or MRI abdomen (for detailed imaging)\n- Liver biopsy (if indicated)\n\n### Specialist Tests\n- FibroScan (transient elastography)\n- Liver function tests (Child-Pugh score)\n- Alpha-fetoprotein (AFP) for hepatocellular carcinoma screening\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cirrhosis is based on clinical findings, laboratory tests, and imaging studies indicating liver dysfunction and fibrosis. A liver biopsy may confirm the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Chronic hepatitis\n- Alcoholic liver disease\n- Non-alcoholic fatty liver disease (NAFLD)\n- Hemochromatosis\n- Wilson's disease\n- Autoimmune hepatitis\n- Biliary obstruction\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (IV fluids, electrolyte management)\n- Treat underlying cause (e.g., manage infection, stop alcohol)\n\n#### Second-line Treatments\n- Lactulose for hepatic encephalopathy\n- Diuretics for ascites (e.g., spironolactone)\n\n#### Emergency Procedures\n- Paracentesis for symptomatic ascites\n- Endoscopy for variceal bleeding (band ligation)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (alcohol cessation, weight loss)\n- Regular monitoring of liver function and complications\n\n#### Second-line Treatments\n- Beta-blockers for portal hypertension\n- Diuretics for ascites management\n\n#### Monitoring Requirements\n- Regular ultrasound for hepatocellular carcinoma screening (every 6 months)\n- Monitoring for signs of liver failure\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lactulose\n- **Mechanism of Action**: Osmotic laxative that reduces ammonia absorption in the gut.\n- **Typical Dosing Range**: Initial: 30-45 mL orally 3 times daily; adjust to achieve 2-3 soft stools per day.\n- **Key Side Effects/Contraindications**: Diarrhea, abdominal cramps, electrolyte imbalance.\n- **When to Use vs. Alternatives**: Used in hepatic encephalopathy.\n\n#### Spironolactone\n- **Mechanism of Action**: Aldosterone antagonist that promotes sodium excretion and potassium retention.\n- **Typical Dosing Range**: Initial: 100 mg orally once daily; may increase to 400 mg based on response.\n- **Key Side Effects/Contraindications**: Hyperkalemia, gynecomastia, renal impairment.\n- **When to Use vs. Alternatives**: First-line diuretic for ascites.\n\n#### Propranolol\n- **Mechanism of Action**: Non-selective beta-blocker that reduces portal pressure.\n- **Typical Dosing Range**: Initial: 20 mg orally twice daily; titrate to target heart rate.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue.\n- **When to Use vs. Alternatives**: Used for primary prevention of variceal bleeding.\n\n### Procedures\n\n#### Paracentesis\n- **What it Involves**: A procedure to remove fluid from the abdominal cavity using a needle.\n- **Indications**: Symptomatic ascites, diagnostic evaluation of ascitic fluid.\n- **Key Risks/Complications**: Infection, bleeding, perforation of abdominal organs.\n\n#### Endoscopic variceal ligation (EVL)\n- **What it Involves**: A procedure to band varices in the esophagus to prevent bleeding.\n- **Indications**: Active variceal bleeding or high-risk varices.\n- **Key Risks/Complications**: Esophageal perforation, rebleeding, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of cirrhosis depends on the underlying cause, the presence of complications, and the Child-Pugh score. Patients with compensated cirrhosis can live for many years, while decompensated cirrhosis has a poorer prognosis.\n\n### Important Complications to Watch For\n- Portal hypertension\n- Esophageal varices\n- Ascites\n- Spontaneous bacterial peritonitis (SBP)\n- Hepatic encephalopathy\n- Hepatocellular carcinoma\n- Liver failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs and symptoms of cirrhosis, perform initial assessments, order appropriate investigations, and manage acute complications. They should also provide education on lifestyle modifications and follow-up care.\n\n### When to Escalate to Senior/Specialist\nEscalate care to a senior clinician if there are signs of acute liver failure, severe ascites, or hepatic encephalopathy. Refer to a gastroenterologist/hepatologist for further management and consideration of liver transplantation.\n\n### Key Safety Considerations\nMonitor for signs of hepatic encephalopathy, especially after initiating lactulose. Be vigilant for signs of infection in patients with ascites. Ensure regular monitoring of renal function in patients on diuretics.\n",
+  "content": {
+    "overview": {
+      "definition": "Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism.",
+      "epidemiology": "Cirrhosis affects approximately 0.1% to 0.5% of the general population, with higher prevalence in individuals with chronic liver disease. It is a leading cause of morbidity and mortality worldwide, particularly in regions with high rates of viral hepatitis and alcohol use.",
+      "pathophysiology": "Cirrhosis results from chronic liver injury leading to the replacement of healthy liver tissue with scar tissue. This disrupts normal liver architecture and function, leading to portal hypertension, liver failure, and increased risk of hepatocellular carcinoma."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Weight loss",
+        "Anorexia",
+        "Nausea",
+        "Pruritus",
+        "Jaundice",
+        "Abdominal pain",
+        "Confusion (hepatic encephalopathy)"
+      ],
+      "signs": [
+        "Jaundice",
+        "Ascites",
+        "Spider angiomata",
+        "Palmar erythema",
+        "Gynecomastia",
+        "Asterixis",
+        "Caput medusae",
+        "Hepatomegaly or shrunken liver on examination"
+      ],
+      "atypicalPresentations": [
+        "Acute liver failure in previously asymptomatic patients",
+        "Non-specific abdominal pain",
+        "Severe pruritus without jaundice"
+      ],
+      "redFlags": [
+        "Rapid deterioration in liver function",
+        "Signs of hepatic encephalopathy",
+        "Severe ascites or abdominal distension",
+        "Gastrointestinal bleeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Complete blood count (CBC)",
+        "Coagulation profile",
+        "Serum electrolytes",
+        "Hepatitis serologies (A, B, C)",
+        "Alcohol use history"
+      ],
+      "secondLine": [
+        "Ultrasound abdomen (to assess liver size, ascites, and portal vein),",
+        "CT or MRI abdomen (for detailed imaging)",
+        "Liver biopsy (if indicated)"
+      ],
+      "specialistTests": [
+        "FibroScan (transient elastography)",
+        "Liver function tests (Child-Pugh score)",
+        "Alpha-fetoprotein (AFP) for hepatocellular carcinoma screening"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cirrhosis is based on clinical findings, laboratory tests, and imaging studies indicating liver dysfunction and fibrosis. A liver biopsy may confirm the diagnosis.",
+      "differentials": [
+        "Chronic hepatitis",
+        "Alcoholic liver disease",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Hemochromatosis",
+        "Wilson's disease",
+        "Autoimmune hepatitis",
+        "Biliary obstruction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (IV fluids, electrolyte management)",
+          "Treat underlying cause (e.g., manage infection, stop alcohol)"
+        ],
+        "secondLine": [
+          "Lactulose for hepatic encephalopathy",
+          "Diuretics for ascites (e.g., spironolactone)"
+        ],
+        "procedures": [
+          "Paracentesis for symptomatic ascites",
+          "Endoscopy for variceal bleeding (band ligation)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (alcohol cessation, weight loss)",
+          "Regular monitoring of liver function and complications"
+        ],
+        "secondLine": [
+          "Beta-blockers for portal hypertension",
+          "Diuretics for ascites management"
+        ],
+        "monitoring": [
+          "Regular ultrasound for hepatocellular carcinoma screening (every 6 months)",
+          "Monitoring for signs of liver failure"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lactulose",
+          "mechanism": "Osmotic laxative that reduces ammonia absorption in the gut.",
+          "dosing": "Initial: 30-45 mL orally 3 times daily; adjust to achieve 2-3 soft stools per day.",
+          "sideEffects": "Diarrhea, abdominal cramps, electrolyte imbalance.",
+          "notes": "Used in hepatic encephalopathy."
+        },
+        {
+          "name": "Spironolactone",
+          "mechanism": "Aldosterone antagonist that promotes sodium excretion and potassium retention.",
+          "dosing": "Initial: 100 mg orally once daily; may increase to 400 mg based on response.",
+          "sideEffects": "Hyperkalemia, gynecomastia, renal impairment.",
+          "notes": "First-line diuretic for ascites."
+        },
+        {
+          "name": "Propranolol",
+          "mechanism": "Non-selective beta-blocker that reduces portal pressure.",
+          "dosing": "Initial: 20 mg orally twice daily; titrate to target heart rate.",
+          "sideEffects": "Bradycardia, hypotension, fatigue.",
+          "notes": "Used for primary prevention of variceal bleeding."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Paracentesis",
+          "description": "A procedure to remove fluid from the abdominal cavity using a needle.",
+          "indications": "Symptomatic ascites, diagnostic evaluation of ascitic fluid.",
+          "risks": "Infection, bleeding, perforation of abdominal organs."
+        },
+        {
+          "name": "Endoscopic variceal ligation (EVL)",
+          "description": "A procedure to band varices in the esophagus to prevent bleeding.",
+          "indications": "Active variceal bleeding or high-risk varices.",
+          "risks": "Esophageal perforation, rebleeding, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of cirrhosis depends on the underlying cause, the presence of complications, and the Child-Pugh score. Patients with compensated cirrhosis can live for many years, while decompensated cirrhosis has a poorer prognosis.",
+    "complications": [
+      "Portal hypertension",
+      "Esophageal varices",
+      "Ascites",
+      "Spontaneous bacterial peritonitis (SBP)",
+      "Hepatic encephalopathy",
+      "Hepatocellular carcinoma",
+      "Liver failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs and symptoms of cirrhosis, perform initial assessments, order appropriate investigations, and manage acute complications. They should also provide education on lifestyle modifications and follow-up care.",
+    "escalation": "Escalate care to a senior clinician if there are signs of acute liver failure, severe ascites, or hepatic encephalopathy. Refer to a gastroenterologist/hepatologist for further management and consideration of liver transplantation.",
+    "keySafetyConsiderations": "Monitor for signs of hepatic encephalopathy, especially after initiating lactulose. Be vigilant for signs of infection in patients with ascites. Ensure regular monitoring of renal function in patients on diuretics."
+  }
+}

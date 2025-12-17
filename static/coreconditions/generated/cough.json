@@ -1,0 +1,152 @@
+{
+  "id": "cough",
+  "name": "Cough",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:58:19.430054",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cough: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCough is a reflex action that clears the airways of mucus, irritants, foreign particles, and microbes. It can be acute or chronic and is a common symptom in various medical conditions.\n\n### Epidemiology\nCough is one of the most common reasons for medical consultations. In palliative care, it is prevalent among patients with advanced diseases, affecting quality of life significantly.\n\n### Essential Pathophysiology\nCough is mediated by the cough reflex, which involves sensory receptors in the airways, the vagus nerve, and the central nervous system. It can be triggered by inflammation, infection, or irritation of the respiratory tract.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dry cough\n- Productive cough\n- Coughing fits\n- Worsening cough at night\n- Cough associated with wheezing\n\n### Key Signs\n- Tachypnea\n- Use of accessory muscles for breathing\n- Cyanosis\n- Fever (if infection is present)\n- Rhonchi or wheezing on auscultation\n\n### Atypical Presentations\n- Cough with no respiratory symptoms\n- Cough associated with chest pain\n- Cough in the absence of lung disease\n\n### Red Flags Requiring Immediate Action\n- Hemoptysis\n- Unintentional weight loss\n- Persistent cough lasting more than 3 weeks\n- Cough associated with fever and night sweats\n- Severe dyspnea\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Chest X-ray\n- Sputum analysis\n\n### Second-line Investigations\n- CT chest\n- Pulmonary function tests\n- Bronchoscopy\n\n### Specialist Tests\n- Sputum culture for specific pathogens\n- Allergy testing\n- Esophageal pH monitoring (for suspected GERD)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, physical examination, and relevant investigations to identify underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Acute bronchitis\n- Pneumonia\n- Chronic obstructive pulmonary disease (COPD)\n- Asthma\n- Gastroesophageal reflux disease (GERD)\n- Lung cancer\n- Interstitial lung disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Identify and treat underlying cause\n- Cough suppressants (e.g., dextromethorphan)\n- Expectorants (e.g., guaifenesin)\n\n#### Second-line Treatments\n- Inhaled bronchodilators (e.g., salbutamol) if wheezing is present\n- Antibiotics if bacterial infection is suspected\n\n#### Emergency Procedures\n- Chest physiotherapy for mucus clearance\n- Nebulized medications for severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Identify and manage underlying condition (e.g., asthma, COPD)\n- Cough suppressants for symptomatic relief\n\n#### Second-line Treatments\n- Long-acting bronchodilators for asthma/COPD\n- Inhaled corticosteroids for asthma\n\n#### Monitoring Requirements\n- Regular follow-up to assess response to treatment\n- Monitor for complications such as respiratory failure\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dextromethorphan\n- **Mechanism of Action**: Cough suppressant that acts on the cough center in the brain.\n- **Typical Dosing Range**: 10-20 mg every 4-6 hours as needed; max 120 mg/day.\n- **Key Side Effects/Contraindications**: Dizziness, nausea, drowsiness.\n- **When to Use vs. Alternatives**: Not recommended for productive cough.\n\n#### Guaifenesin\n- **Mechanism of Action**: Expectorant that increases mucus clearance.\n- **Typical Dosing Range**: 200-400 mg every 4 hours; max 2400 mg/day.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea.\n- **When to Use vs. Alternatives**: Encourage hydration to enhance effectiveness.\n\n#### Salbutamol\n- **Mechanism of Action**: Bronchodilator that relaxes airway muscles.\n- **Typical Dosing Range**: Inhalation of 100-200 mcg as needed; max 12 doses/day.\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, headache.\n- **When to Use vs. Alternatives**: Use with caution in patients with cardiovascular disease.\n\n### Procedures\n\n#### Chest physiotherapy\n- **What it Involves**: Manual techniques to help clear mucus from the lungs.\n- **Indications**: Patients with excessive secretions, especially in palliative care.\n- **Key Risks/Complications**: Discomfort, potential for rib fractures in frail patients.\n\n#### Nebulized medication administration\n- **What it Involves**: Inhalation of medication in aerosol form to deliver directly to the lungs.\n- **Indications**: Severe wheezing or difficulty breathing.\n- **Key Risks/Complications**: Potential for bronchospasm if not used correctly.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of cough depends on the underlying cause. In palliative care, cough may indicate disease progression and can significantly impact quality of life.\n\n### Important Complications to Watch For\n- Aspiration pneumonia due to ineffective cough\n- Respiratory failure in severe cases\n- Sleep disturbances due to nocturnal cough\n- Social isolation due to embarrassment or discomfort\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to specialists when necessary. They should also provide education and support to patients and families regarding cough management.\n\n### When to Escalate to Senior/Specialist\nIf cough is persistent, worsening, or associated with red flags, escalate to a senior clinician for further evaluation and management.\n\n### Key Safety Considerations\nMonitor for signs of respiratory distress, ensure appropriate use of cough suppressants, and be aware of potential drug interactions, especially in patients with multiple comorbidities.\n",
+  "content": {
+    "overview": {
+      "definition": "Cough is a reflex action that clears the airways of mucus, irritants, foreign particles, and microbes. It can be acute or chronic and is a common symptom in various medical conditions.",
+      "epidemiology": "Cough is one of the most common reasons for medical consultations. In palliative care, it is prevalent among patients with advanced diseases, affecting quality of life significantly.",
+      "pathophysiology": "Cough is mediated by the cough reflex, which involves sensory receptors in the airways, the vagus nerve, and the central nervous system. It can be triggered by inflammation, infection, or irritation of the respiratory tract."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dry cough",
+        "Productive cough",
+        "Coughing fits",
+        "Worsening cough at night",
+        "Cough associated with wheezing"
+      ],
+      "signs": [
+        "Tachypnea",
+        "Use of accessory muscles for breathing",
+        "Cyanosis",
+        "Fever (if infection is present)",
+        "Rhonchi or wheezing on auscultation"
+      ],
+      "atypicalPresentations": [
+        "Cough with no respiratory symptoms",
+        "Cough associated with chest pain",
+        "Cough in the absence of lung disease"
+      ],
+      "redFlags": [
+        "Hemoptysis",
+        "Unintentional weight loss",
+        "Persistent cough lasting more than 3 weeks",
+        "Cough associated with fever and night sweats",
+        "Severe dyspnea"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Chest X-ray",
+        "Sputum analysis"
+      ],
+      "secondLine": [
+        "CT chest",
+        "Pulmonary function tests",
+        "Bronchoscopy"
+      ],
+      "specialistTests": [
+        "Sputum culture for specific pathogens",
+        "Allergy testing",
+        "Esophageal pH monitoring (for suspected GERD)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, physical examination, and relevant investigations to identify underlying causes.",
+      "differentials": [
+        "Acute bronchitis",
+        "Pneumonia",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Asthma",
+        "Gastroesophageal reflux disease (GERD)",
+        "Lung cancer",
+        "Interstitial lung disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Identify and treat underlying cause",
+          "Cough suppressants (e.g., dextromethorphan)",
+          "Expectorants (e.g., guaifenesin)"
+        ],
+        "secondLine": [
+          "Inhaled bronchodilators (e.g., salbutamol) if wheezing is present",
+          "Antibiotics if bacterial infection is suspected"
+        ],
+        "procedures": [
+          "Chest physiotherapy for mucus clearance",
+          "Nebulized medications for severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Identify and manage underlying condition (e.g., asthma, COPD)",
+          "Cough suppressants for symptomatic relief"
+        ],
+        "secondLine": [
+          "Long-acting bronchodilators for asthma/COPD",
+          "Inhaled corticosteroids for asthma"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess response to treatment",
+          "Monitor for complications such as respiratory failure"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dextromethorphan",
+          "mechanism": "Cough suppressant that acts on the cough center in the brain.",
+          "dosing": "10-20 mg every 4-6 hours as needed; max 120 mg/day.",
+          "sideEffects": "Dizziness, nausea, drowsiness.",
+          "notes": "Not recommended for productive cough."
+        },
+        {
+          "name": "Guaifenesin",
+          "mechanism": "Expectorant that increases mucus clearance.",
+          "dosing": "200-400 mg every 4 hours; max 2400 mg/day.",
+          "sideEffects": "Nausea, vomiting, diarrhea.",
+          "notes": "Encourage hydration to enhance effectiveness."
+        },
+        {
+          "name": "Salbutamol",
+          "mechanism": "Bronchodilator that relaxes airway muscles.",
+          "dosing": "Inhalation of 100-200 mcg as needed; max 12 doses/day.",
+          "sideEffects": "Tachycardia, tremors, headache.",
+          "notes": "Use with caution in patients with cardiovascular disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Chest physiotherapy",
+          "description": "Manual techniques to help clear mucus from the lungs.",
+          "indications": "Patients with excessive secretions, especially in palliative care.",
+          "risks": "Discomfort, potential for rib fractures in frail patients."
+        },
+        {
+          "name": "Nebulized medication administration",
+          "description": "Inhalation of medication in aerosol form to deliver directly to the lungs.",
+          "indications": "Severe wheezing or difficulty breathing.",
+          "risks": "Potential for bronchospasm if not used correctly."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of cough depends on the underlying cause. In palliative care, cough may indicate disease progression and can significantly impact quality of life.",
+    "complications": [
+      "Aspiration pneumonia due to ineffective cough",
+      "Respiratory failure in severe cases",
+      "Sleep disturbances due to nocturnal cough",
+      "Social isolation due to embarrassment or discomfort"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to specialists when necessary. They should also provide education and support to patients and families regarding cough management.",
+    "escalation": "If cough is persistent, worsening, or associated with red flags, escalate to a senior clinician for further evaluation and management.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory distress, ensure appropriate use of cough suppressants, and be aware of potential drug interactions, especially in patients with multiple comorbidities."
+  }
+}

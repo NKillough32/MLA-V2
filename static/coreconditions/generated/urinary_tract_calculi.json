@@ -1,0 +1,142 @@
+{
+  "id": "urinary_tract_calculi",
+  "name": "Urinary tract calculi",
+  "domains": [
+    "Urology"
+  ],
+  "generatedAt": "2025-12-17T21:19:07.930135",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Urinary tract calculi: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nUrinary tract calculi, commonly known as kidney stones, are solid masses made of crystals that originate in the kidneys and can affect any part of the urinary tract, including the ureters, bladder, and urethra.\n\n### Epidemiology\nUrinary tract calculi affect approximately 10% of the population at some point in their lives, with a higher prevalence in males (3:1 ratio) and peak incidence between ages 30-50. Risk factors include dehydration, high dietary intake of protein, sodium, and oxalate, and certain metabolic disorders.\n\n### Essential Pathophysiology\nCalculi form when urine becomes supersaturated with certain solutes, leading to crystallization. Factors influencing stone formation include urine pH, concentration of stone-forming substances (calcium, oxalate, uric acid), and the presence of inhibitors of crystallization.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe flank pain (renal colic)\n- Hematuria (blood in urine)\n- Nausea and vomiting\n- Dysuria (painful urination)\n- Frequent urination\n\n### Key Signs\n- Costovertebral angle tenderness\n- Abdominal tenderness\n- Signs of dehydration (dry mucous membranes, decreased skin turgor)\n\n### Atypical Presentations\n- Asymptomatic stones discovered incidentally on imaging\n- Recurrent urinary tract infections\n- Chronic abdominal pain\n\n### Red Flags Requiring Immediate Action\n- Persistent fever\n- Signs of sepsis (tachycardia, hypotension)\n- Anuria (no urine output)\n- Severe dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urinalysis (to check for hematuria, crystals, infection)\n- Non-contrast CT abdomen/pelvis (gold standard for stone detection)\n- Ultrasound (especially in pregnant patients)\n\n### Second-line Investigations\n- KUB X-ray (limited use due to radiolucent stones)\n- 24-hour urine collection (to assess stone composition and metabolic factors)\n\n### Specialist Tests\n- Serum calcium, phosphate, uric acid, and creatinine levels\n- Metabolic workup for recurrent stone formers\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and laboratory results indicating the presence of calculi in the urinary tract.\n\n### Key Differential Diagnoses to Exclude\n- Urinary tract infection\n- Appendicitis\n- Diverticulitis\n- Ectopic pregnancy\n- Abdominal aortic aneurysm\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Pain management (NSAIDs such as ibuprofen or ketorolac)\n- Hydration (IV fluids if necessary)\n- Antiemetics for nausea\n\n#### Second-line Treatments\n- Alpha-blockers (e.g., tamsulosin) to facilitate stone passage\n\n#### Emergency Procedures\n- Ureteroscopy with laser lithotripsy (for stones in the ureter)\n- Percutaneous nephrolithotomy (for large or complex stones)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Dietary modifications (increased fluid intake, reduced sodium and oxalate)\n- Medications to prevent recurrence (e.g., thiazide diuretics for calcium stones)\n\n#### Second-line Treatments\n- Referral to a urologist for recurrent stones or complex cases\n\n#### Monitoring Requirements\n- Regular follow-up with imaging and metabolic assessment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-selective COX inhibitor reducing inflammation and pain\n- **Typical Dosing Range**: 400-800 mg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Monitor renal function in patients with dehydration.\n\n#### Tamsulosin\n- **Mechanism of Action**: Alpha-1 adrenergic antagonist facilitating stone passage\n- **Typical Dosing Range**: 0.4 mg orally once daily\n- **Key Side Effects/Contraindications**: Dizziness, orthostatic hypotension, ejaculatory dysfunction\n- **When to Use vs. Alternatives**: Consider in patients with stones >5mm.\n\n#### Thiazide diuretics\n- **Mechanism of Action**: Inhibits sodium reabsorption in the distal convoluted tubule, reducing calcium excretion\n- **Typical Dosing Range**: 25-50 mg orally once daily\n- **Key Side Effects/Contraindications**: Hypokalemia, hyperglycemia, hyperuricemia\n- **When to Use vs. Alternatives**: Useful in patients with calcium stones.\n\n### Procedures\n\n#### Ureteroscopy\n- **What it Involves**: Endoscopic procedure to visualize and treat stones in the ureter or kidney\n- **Indications**: Ureteral stones, particularly those >5mm or causing obstruction\n- **Key Risks/Complications**: Ureteral perforation, bleeding, infection, need for stent placement.\n\n#### Percutaneous nephrolithotomy (PCNL)\n- **What it Involves**: Surgical procedure to remove large kidney stones through a small incision in the back\n- **Indications**: Stones >2cm, complex stones, or when other methods fail\n- **Key Risks/Complications**: Bleeding, infection, injury to surrounding organs, need for transfusion.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for urinary tract calculi is generally good, with many patients passing stones spontaneously. However, recurrence rates are high, with up to 50% of patients developing new stones within 5-10 years.\n\n### Important Complications to Watch For\n- Urinary tract obstruction\n- Hydronephrosis\n- Infection (pyelonephritis)\n- Chronic kidney disease due to recurrent obstruction\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, manage acute pain, initiate investigations, and provide education on lifestyle modifications. They should also recognize when to escalate care to a urologist.\n\n### When to Escalate to Senior/Specialist\nRefer to urology for patients with severe symptoms, signs of infection, or those who do not respond to conservative management.\n\n### Key Safety Considerations\nEnsure adequate hydration in patients, monitor for signs of infection, and be vigilant for complications such as obstruction or sepsis.\n",
+  "content": {
+    "overview": {
+      "definition": "Urinary tract calculi, commonly known as kidney stones, are solid masses made of crystals that originate in the kidneys and can affect any part of the urinary tract, including the ureters, bladder, and urethra.",
+      "epidemiology": "Urinary tract calculi affect approximately 10% of the population at some point in their lives, with a higher prevalence in males (3:1 ratio) and peak incidence between ages 30-50. Risk factors include dehydration, high dietary intake of protein, sodium, and oxalate, and certain metabolic disorders.",
+      "pathophysiology": "Calculi form when urine becomes supersaturated with certain solutes, leading to crystallization. Factors influencing stone formation include urine pH, concentration of stone-forming substances (calcium, oxalate, uric acid), and the presence of inhibitors of crystallization."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe flank pain (renal colic)",
+        "Hematuria (blood in urine)",
+        "Nausea and vomiting",
+        "Dysuria (painful urination)",
+        "Frequent urination"
+      ],
+      "signs": [
+        "Costovertebral angle tenderness",
+        "Abdominal tenderness",
+        "Signs of dehydration (dry mucous membranes, decreased skin turgor)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic stones discovered incidentally on imaging",
+        "Recurrent urinary tract infections",
+        "Chronic abdominal pain"
+      ],
+      "redFlags": [
+        "Persistent fever",
+        "Signs of sepsis (tachycardia, hypotension)",
+        "Anuria (no urine output)",
+        "Severe dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urinalysis (to check for hematuria, crystals, infection)",
+        "Non-contrast CT abdomen/pelvis (gold standard for stone detection)",
+        "Ultrasound (especially in pregnant patients)"
+      ],
+      "secondLine": [
+        "KUB X-ray (limited use due to radiolucent stones)",
+        "24-hour urine collection (to assess stone composition and metabolic factors)"
+      ],
+      "specialistTests": [
+        "Serum calcium, phosphate, uric acid, and creatinine levels",
+        "Metabolic workup for recurrent stone formers"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and laboratory results indicating the presence of calculi in the urinary tract.",
+      "differentials": [
+        "Urinary tract infection",
+        "Appendicitis",
+        "Diverticulitis",
+        "Ectopic pregnancy",
+        "Abdominal aortic aneurysm"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Pain management (NSAIDs such as ibuprofen or ketorolac)",
+          "Hydration (IV fluids if necessary)",
+          "Antiemetics for nausea"
+        ],
+        "secondLine": [
+          "Alpha-blockers (e.g., tamsulosin) to facilitate stone passage"
+        ],
+        "procedures": [
+          "Ureteroscopy with laser lithotripsy (for stones in the ureter)",
+          "Percutaneous nephrolithotomy (for large or complex stones)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Dietary modifications (increased fluid intake, reduced sodium and oxalate)",
+          "Medications to prevent recurrence (e.g., thiazide diuretics for calcium stones)"
+        ],
+        "secondLine": [
+          "Referral to a urologist for recurrent stones or complex cases"
+        ],
+        "monitoring": [
+          "Regular follow-up with imaging and metabolic assessment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-selective COX inhibitor reducing inflammation and pain",
+          "dosing": "400-800 mg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Monitor renal function in patients with dehydration."
+        },
+        {
+          "name": "Tamsulosin",
+          "mechanism": "Alpha-1 adrenergic antagonist facilitating stone passage",
+          "dosing": "0.4 mg orally once daily",
+          "sideEffects": "Dizziness, orthostatic hypotension, ejaculatory dysfunction",
+          "notes": "Consider in patients with stones >5mm."
+        },
+        {
+          "name": "Thiazide diuretics",
+          "mechanism": "Inhibits sodium reabsorption in the distal convoluted tubule, reducing calcium excretion",
+          "dosing": "25-50 mg orally once daily",
+          "sideEffects": "Hypokalemia, hyperglycemia, hyperuricemia",
+          "notes": "Useful in patients with calcium stones."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ureteroscopy",
+          "description": "Endoscopic procedure to visualize and treat stones in the ureter or kidney",
+          "indications": "Ureteral stones, particularly those >5mm or causing obstruction",
+          "risks": "Ureteral perforation, bleeding, infection, need for stent placement."
+        },
+        {
+          "name": "Percutaneous nephrolithotomy (PCNL)",
+          "description": "Surgical procedure to remove large kidney stones through a small incision in the back",
+          "indications": "Stones >2cm, complex stones, or when other methods fail",
+          "risks": "Bleeding, infection, injury to surrounding organs, need for transfusion."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for urinary tract calculi is generally good, with many patients passing stones spontaneously. However, recurrence rates are high, with up to 50% of patients developing new stones within 5-10 years.",
+    "complications": [
+      "Urinary tract obstruction",
+      "Hydronephrosis",
+      "Infection (pyelonephritis)",
+      "Chronic kidney disease due to recurrent obstruction"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, manage acute pain, initiate investigations, and provide education on lifestyle modifications. They should also recognize when to escalate care to a urologist.",
+    "escalation": "Refer to urology for patients with severe symptoms, signs of infection, or those who do not respond to conservative management.",
+    "keySafetyConsiderations": "Ensure adequate hydration in patients, monitor for signs of infection, and be vigilant for complications such as obstruction or sepsis."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "helicobacter_pylori",
+  "name": "Helicobacter pylori",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:47:51.748083",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Helicobacter pylori: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHelicobacter pylori (H. pylori) is a gram-negative, spiral-shaped bacterium that colonizes the gastric epithelium and is associated with various gastrointestinal diseases, including peptic ulcers and gastric cancer.\n\n### Epidemiology\nH. pylori infection is prevalent worldwide, affecting approximately 50% of the global population. It is more common in developing countries and among older adults.\n\n### Essential Pathophysiology\nH. pylori survives in the acidic environment of the stomach by producing urease, which neutralizes gastric acid. It causes chronic inflammation (chronic gastritis) and can lead to mucosal damage, resulting in peptic ulcers and increasing the risk of gastric cancer.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain or discomfort\n- Nausea\n- Bloating\n- Belching\n- Loss of appetite\n- Weight loss\n- Dyspepsia\n\n### Key Signs\n- Epigastric tenderness\n- Signs of anemia (pallor, fatigue)\n- Possible signs of gastrointestinal bleeding (melena, hematemesis)\n\n### Atypical Presentations\n- Non-specific abdominal symptoms\n- Fatigue or malaise without gastrointestinal symptoms\n- Extraintestinal manifestations (e.g., iron deficiency anemia)\n\n### Red Flags Requiring Immediate Action\n- Severe or persistent abdominal pain\n- Unexplained weight loss\n- Vomiting blood or coffee-ground material\n- Black, tarry stools\n- Family history of gastric cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Urea breath test (UBT)\n- Serology for H. pylori antibodies\n- Stool antigen test\n\n### Second-line Investigations\n- Endoscopy with biopsy (for histology and culture)\n- Rapid urease test during endoscopy\n\n### Specialist Tests\n- Gastric biopsy for histological examination\n- Molecular testing for antibiotic resistance\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of H. pylori infection can be established through positive results from any of the first-line tests (UBT, serology, stool antigen) or through biopsy during endoscopy.\n\n### Key Differential Diagnoses to Exclude\n- Gastritis (non-H. pylori)\n- Peptic ulcer disease (NSAID-induced)\n- Gastroesophageal reflux disease (GERD)\n- Functional dyspepsia\n- Gastric cancer\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antibiotic therapy (e.g., amoxicillin, clarithromycin)\n- Proton pump inhibitors (PPIs)\n\n#### Second-line Treatments\n- Bismuth subsalicylate\n- Tetracycline\n\n#### Emergency Procedures\n- Endoscopy for severe cases or complications (e.g., bleeding ulcers)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Triple therapy (PPI + two antibiotics) for 10-14 days\n- Quadruple therapy (PPI + bismuth + two antibiotics) if resistance is suspected\n\n#### Second-line Treatments\n- Consider alternative regimens if first-line fails\n\n#### Monitoring Requirements\n- Symptom resolution\n- Follow-up testing (e.g., UBT) to confirm eradication after treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Omeprazole\n- **Mechanism of Action**: Proton pump inhibitor that reduces gastric acid secretion.\n- **Typical Dosing Range**: 20 mg once daily before meals.\n- **Key Side Effects/Contraindications**: Headache, nausea, diarrhea, abdominal pain.\n- **When to Use vs. Alternatives**: Monitor for long-term use complications (e.g., vitamin B12 deficiency).\n\n#### Amoxicillin\n- **Mechanism of Action**: Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 1 g twice daily.\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Avoid in patients with penicillin allergy.\n\n#### Clarithromycin\n- **Mechanism of Action**: Macrolide antibiotic that inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 500 mg twice daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, taste disturbance, potential QT prolongation.\n- **When to Use vs. Alternatives**: Check for drug interactions.\n\n#### Metronidazole\n- **Mechanism of Action**: Antibiotic that disrupts DNA synthesis in anaerobic bacteria.\n- **Typical Dosing Range**: 500 mg twice daily.\n- **Key Side Effects/Contraindications**: Nausea, metallic taste, disulfiram-like reaction with alcohol.\n- **When to Use vs. Alternatives**: Use with caution in patients with liver disease.\n\n### Procedures\n\n#### Upper gastrointestinal endoscopy\n- **What it Involves**: A procedure using a flexible tube with a camera to visualize the upper GI tract and obtain biopsies.\n- **Indications**: Severe dyspepsia, suspected malignancy, or complications from ulcers.\n- **Key Risks/Complications**: Bleeding, perforation, infection, sedation-related complications.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost patients respond well to treatment, with eradication rates of 80-90%. However, reinfection can occur, and untreated infections can lead to chronic gastritis, peptic ulcers, and increased risk of gastric cancer.\n\n### Important Complications to Watch For\n- Peptic ulcers (gastric and duodenal)\n- Gastric cancer\n- MALT lymphoma\n- Chronic gastritis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of H. pylori infection, initiate appropriate investigations, and manage treatment regimens. They should also educate patients about lifestyle modifications and follow-up care.\n\n### When to Escalate to Senior/Specialist\nRefer to gastroenterology for patients with severe symptoms, complications, or treatment failure after two eradication attempts.\n\n### Key Safety Considerations\nEnsure appropriate antibiotic stewardship to prevent resistance. Monitor for adverse effects of medications, especially in patients with comorbidities or polypharmacy.\n",
+  "content": {
+    "overview": {
+      "definition": "Helicobacter pylori (H. pylori) is a gram-negative, spiral-shaped bacterium that colonizes the gastric epithelium and is associated with various gastrointestinal diseases, including peptic ulcers and gastric cancer.",
+      "epidemiology": "H. pylori infection is prevalent worldwide, affecting approximately 50% of the global population. It is more common in developing countries and among older adults.",
+      "pathophysiology": "H. pylori survives in the acidic environment of the stomach by producing urease, which neutralizes gastric acid. It causes chronic inflammation (chronic gastritis) and can lead to mucosal damage, resulting in peptic ulcers and increasing the risk of gastric cancer."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain or discomfort",
+        "Nausea",
+        "Bloating",
+        "Belching",
+        "Loss of appetite",
+        "Weight loss",
+        "Dyspepsia"
+      ],
+      "signs": [
+        "Epigastric tenderness",
+        "Signs of anemia (pallor, fatigue)",
+        "Possible signs of gastrointestinal bleeding (melena, hematemesis)"
+      ],
+      "atypicalPresentations": [
+        "Non-specific abdominal symptoms",
+        "Fatigue or malaise without gastrointestinal symptoms",
+        "Extraintestinal manifestations (e.g., iron deficiency anemia)"
+      ],
+      "redFlags": [
+        "Severe or persistent abdominal pain",
+        "Unexplained weight loss",
+        "Vomiting blood or coffee-ground material",
+        "Black, tarry stools",
+        "Family history of gastric cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Urea breath test (UBT)",
+        "Serology for H. pylori antibodies",
+        "Stool antigen test"
+      ],
+      "secondLine": [
+        "Endoscopy with biopsy (for histology and culture)",
+        "Rapid urease test during endoscopy"
+      ],
+      "specialistTests": [
+        "Gastric biopsy for histological examination",
+        "Molecular testing for antibiotic resistance"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of H. pylori infection can be established through positive results from any of the first-line tests (UBT, serology, stool antigen) or through biopsy during endoscopy.",
+      "differentials": [
+        "Gastritis (non-H. pylori)",
+        "Peptic ulcer disease (NSAID-induced)",
+        "Gastroesophageal reflux disease (GERD)",
+        "Functional dyspepsia",
+        "Gastric cancer"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antibiotic therapy (e.g., amoxicillin, clarithromycin)",
+          "Proton pump inhibitors (PPIs)"
+        ],
+        "secondLine": [
+          "Bismuth subsalicylate",
+          "Tetracycline"
+        ],
+        "procedures": [
+          "Endoscopy for severe cases or complications (e.g., bleeding ulcers)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Triple therapy (PPI + two antibiotics) for 10-14 days",
+          "Quadruple therapy (PPI + bismuth + two antibiotics) if resistance is suspected"
+        ],
+        "secondLine": [
+          "Consider alternative regimens if first-line fails"
+        ],
+        "monitoring": [
+          "Symptom resolution",
+          "Follow-up testing (e.g., UBT) to confirm eradication after treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Omeprazole",
+          "mechanism": "Proton pump inhibitor that reduces gastric acid secretion.",
+          "dosing": "20 mg once daily before meals.",
+          "sideEffects": "Headache, nausea, diarrhea, abdominal pain.",
+          "notes": "Monitor for long-term use complications (e.g., vitamin B12 deficiency)."
+        },
+        {
+          "name": "Amoxicillin",
+          "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "1 g twice daily.",
+          "sideEffects": "Allergic reactions, gastrointestinal upset.",
+          "notes": "Avoid in patients with penicillin allergy."
+        },
+        {
+          "name": "Clarithromycin",
+          "mechanism": "Macrolide antibiotic that inhibits bacterial protein synthesis.",
+          "dosing": "500 mg twice daily.",
+          "sideEffects": "Gastrointestinal upset, taste disturbance, potential QT prolongation.",
+          "notes": "Check for drug interactions."
+        },
+        {
+          "name": "Metronidazole",
+          "mechanism": "Antibiotic that disrupts DNA synthesis in anaerobic bacteria.",
+          "dosing": "500 mg twice daily.",
+          "sideEffects": "Nausea, metallic taste, disulfiram-like reaction with alcohol.",
+          "notes": "Use with caution in patients with liver disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Upper gastrointestinal endoscopy",
+          "description": "A procedure using a flexible tube with a camera to visualize the upper GI tract and obtain biopsies.",
+          "indications": "Severe dyspepsia, suspected malignancy, or complications from ulcers.",
+          "risks": "Bleeding, perforation, infection, sedation-related complications."
+        }
+      ]
+    },
+    "prognosis": "Most patients respond well to treatment, with eradication rates of 80-90%. However, reinfection can occur, and untreated infections can lead to chronic gastritis, peptic ulcers, and increased risk of gastric cancer.",
+    "complications": [
+      "Peptic ulcers (gastric and duodenal)",
+      "Gastric cancer",
+      "MALT lymphoma",
+      "Chronic gastritis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of H. pylori infection, initiate appropriate investigations, and manage treatment regimens. They should also educate patients about lifestyle modifications and follow-up care.",
+    "escalation": "Refer to gastroenterology for patients with severe symptoms, complications, or treatment failure after two eradication attempts.",
+    "keySafetyConsiderations": "Ensure appropriate antibiotic stewardship to prevent resistance. Monitor for adverse effects of medications, especially in patients with comorbidities or polypharmacy."
+  }
+}

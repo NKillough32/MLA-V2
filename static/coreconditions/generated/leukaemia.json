@@ -1,0 +1,155 @@
+{
+  "id": "leukaemia",
+  "name": "Leukaemia",
+  "domains": [
+    "Haematology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:56:23.888587",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Leukaemia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLeukaemia is a type of cancer that affects the blood and bone marrow, characterized by the uncontrolled proliferation of abnormal white blood cells.\n\n### Epidemiology\nLeukaemia is the most common cancer in children, accounting for about 30% of all childhood cancers. It can occur in adults as well, with varying incidence rates depending on the subtype.\n\n### Essential Pathophysiology\nLeukaemia arises from genetic mutations in hematopoietic stem cells, leading to the production of dysfunctional white blood cells. These cells proliferate uncontrollably, crowding out normal blood cells and impairing the body's ability to fight infections, control bleeding, and transport oxygen.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Fever\n- Frequent infections\n- Easy bruising or bleeding\n- Bone pain\n- Weight loss\n- Pallor\n- Night sweats\n\n### Key Signs\n- Pallor\n- Petechiae\n- Hepatosplenomegaly\n- Lymphadenopathy\n- Gingival hyperplasia\n- Skin rashes\n\n### Atypical Presentations\n- Abdominal pain due to splenomegaly\n- Neurological symptoms in CNS involvement\n- Respiratory distress due to leukostasis\n\n### Red Flags Requiring Immediate Action\n- Severe fatigue or weakness\n- Unexplained fever\n- Persistent infections\n- Significant bruising or bleeding\n- Rapid weight loss\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Peripheral blood smear\n- Bone marrow aspiration and biopsy\n\n### Second-line Investigations\n- Flow cytometry\n- Cytogenetic analysis\n- Molecular testing for specific mutations\n\n### Specialist Tests\n- Lumbar puncture for CNS involvement\n- Imaging studies (CT/MRI) for organomegaly or masses\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of leukaemia is confirmed by the presence of >20% blasts in the bone marrow or peripheral blood, along with characteristic immunophenotyping and cytogenetic abnormalities.\n\n### Key Differential Diagnoses to Exclude\n- Aplastic anaemia\n- Myelodysplastic syndromes\n- Lymphoma\n- Infection (e.g., sepsis)\n- Thrombocytopenic purpura\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to a haematologist\n- Supportive care (transfusions, antibiotics)\n- Hydration and allopurinol for tumor lysis syndrome prevention\n\n#### Second-line Treatments\n- Chemotherapy regimens (e.g., induction therapy with cytarabine and daunorubicin)\n- Consideration for stem cell transplant in eligible patients\n\n#### Emergency Procedures\n- Bone marrow biopsy for diagnosis and monitoring\n- Lumbar puncture for CNS prophylaxis or treatment\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of blood counts\n- Imatinib for Chronic Myeloid Leukaemia (CML) if Philadelphia chromosome positive\n\n#### Second-line Treatments\n- Hydroxyurea for symptomatic hyperleukocytosis\n- Consideration for allogeneic stem cell transplant in suitable candidates\n\n#### Monitoring Requirements\n- Regular CBCs to monitor for disease progression or treatment response\n- Monitoring for treatment side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Cytarabine\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 100-200 mg/m2 IV daily for 7 days (induction)\n- **Key Side Effects/Contraindications**: Nausea, vomiting, myelosuppression, mucositis\n- **When to Use vs. Alternatives**: Monitor for signs of infection and bleeding.\n\n#### Daunorubicin\n- **Mechanism of Action**: Anthracycline that intercalates DNA and inhibits topoisomerase II\n- **Typical Dosing Range**: 45 mg/m2 IV on days 1-3 (induction)\n- **Key Side Effects/Contraindications**: Cardiotoxicity, myelosuppression, nausea\n- **When to Use vs. Alternatives**: Monitor cardiac function during treatment.\n\n#### Imatinib\n- **Mechanism of Action**: Tyrosine kinase inhibitor that targets BCR-ABL fusion protein in CML\n- **Typical Dosing Range**: 400 mg orally daily\n- **Key Side Effects/Contraindications**: Fluid retention, myelosuppression, rash\n- **When to Use vs. Alternatives**: Monitor liver function tests.\n\n### Procedures\n\n#### Bone Marrow Biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: Diagnosis of leukaemia, assessment of response to treatment.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n#### Lumbar Puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected CNS involvement, prophylaxis for CNS leukaemia.\n- **Key Risks/Complications**: Headache, bleeding, infection, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies significantly based on the type of leukaemia, age of the patient, and response to treatment. Acute leukaemias have a poorer prognosis compared to chronic forms, but advancements in treatment have improved outcomes.\n\n### Important Complications to Watch For\n- Infection due to neutropenia\n- Bleeding due to thrombocytopenia\n- Tumor lysis syndrome\n- Organ infiltration leading to dysfunction\n- Secondary malignancies due to treatment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of leukaemia, perform initial investigations, provide supportive care, and facilitate referrals to specialists. They should also monitor patients for treatment side effects and complications.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with symptoms suggestive of leukaemia, escalate care to a haematologist immediately. In cases of severe symptoms (e.g., significant bleeding, respiratory distress), ensure urgent intervention.\n\n### Key Safety Considerations\nEnsure proper hand hygiene and infection control measures, monitor for signs of bleeding and infection, and provide education to patients and families about the disease and treatment side effects.\n",
+  "content": {
+    "overview": {
+      "definition": "Leukaemia is a type of cancer that affects the blood and bone marrow, characterized by the uncontrolled proliferation of abnormal white blood cells.",
+      "epidemiology": "Leukaemia is the most common cancer in children, accounting for about 30% of all childhood cancers. It can occur in adults as well, with varying incidence rates depending on the subtype.",
+      "pathophysiology": "Leukaemia arises from genetic mutations in hematopoietic stem cells, leading to the production of dysfunctional white blood cells. These cells proliferate uncontrollably, crowding out normal blood cells and impairing the body's ability to fight infections, control bleeding, and transport oxygen."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Fever",
+        "Frequent infections",
+        "Easy bruising or bleeding",
+        "Bone pain",
+        "Weight loss",
+        "Pallor",
+        "Night sweats"
+      ],
+      "signs": [
+        "Pallor",
+        "Petechiae",
+        "Hepatosplenomegaly",
+        "Lymphadenopathy",
+        "Gingival hyperplasia",
+        "Skin rashes"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain due to splenomegaly",
+        "Neurological symptoms in CNS involvement",
+        "Respiratory distress due to leukostasis"
+      ],
+      "redFlags": [
+        "Severe fatigue or weakness",
+        "Unexplained fever",
+        "Persistent infections",
+        "Significant bruising or bleeding",
+        "Rapid weight loss"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Peripheral blood smear",
+        "Bone marrow aspiration and biopsy"
+      ],
+      "secondLine": [
+        "Flow cytometry",
+        "Cytogenetic analysis",
+        "Molecular testing for specific mutations"
+      ],
+      "specialistTests": [
+        "Lumbar puncture for CNS involvement",
+        "Imaging studies (CT/MRI) for organomegaly or masses"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of leukaemia is confirmed by the presence of >20% blasts in the bone marrow or peripheral blood, along with characteristic immunophenotyping and cytogenetic abnormalities.",
+      "differentials": [
+        "Aplastic anaemia",
+        "Myelodysplastic syndromes",
+        "Lymphoma",
+        "Infection (e.g., sepsis)",
+        "Thrombocytopenic purpura"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to a haematologist",
+          "Supportive care (transfusions, antibiotics)",
+          "Hydration and allopurinol for tumor lysis syndrome prevention"
+        ],
+        "secondLine": [
+          "Chemotherapy regimens (e.g., induction therapy with cytarabine and daunorubicin)",
+          "Consideration for stem cell transplant in eligible patients"
+        ],
+        "procedures": [
+          "Bone marrow biopsy for diagnosis and monitoring",
+          "Lumbar puncture for CNS prophylaxis or treatment"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of blood counts",
+          "Imatinib for Chronic Myeloid Leukaemia (CML) if Philadelphia chromosome positive"
+        ],
+        "secondLine": [
+          "Hydroxyurea for symptomatic hyperleukocytosis",
+          "Consideration for allogeneic stem cell transplant in suitable candidates"
+        ],
+        "monitoring": [
+          "Regular CBCs to monitor for disease progression or treatment response",
+          "Monitoring for treatment side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Cytarabine",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "100-200 mg/m2 IV daily for 7 days (induction)",
+          "sideEffects": "Nausea, vomiting, myelosuppression, mucositis",
+          "notes": "Monitor for signs of infection and bleeding."
+        },
+        {
+          "name": "Daunorubicin",
+          "mechanism": "Anthracycline that intercalates DNA and inhibits topoisomerase II",
+          "dosing": "45 mg/m2 IV on days 1-3 (induction)",
+          "sideEffects": "Cardiotoxicity, myelosuppression, nausea",
+          "notes": "Monitor cardiac function during treatment."
+        },
+        {
+          "name": "Imatinib",
+          "mechanism": "Tyrosine kinase inhibitor that targets BCR-ABL fusion protein in CML",
+          "dosing": "400 mg orally daily",
+          "sideEffects": "Fluid retention, myelosuppression, rash",
+          "notes": "Monitor liver function tests."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone Marrow Biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "Diagnosis of leukaemia, assessment of response to treatment.",
+          "risks": "Bleeding, infection, pain at the site."
+        },
+        {
+          "name": "Lumbar Puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected CNS involvement, prophylaxis for CNS leukaemia.",
+          "risks": "Headache, bleeding, infection, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies significantly based on the type of leukaemia, age of the patient, and response to treatment. Acute leukaemias have a poorer prognosis compared to chronic forms, but advancements in treatment have improved outcomes.",
+    "complications": [
+      "Infection due to neutropenia",
+      "Bleeding due to thrombocytopenia",
+      "Tumor lysis syndrome",
+      "Organ infiltration leading to dysfunction",
+      "Secondary malignancies due to treatment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of leukaemia, perform initial investigations, provide supportive care, and facilitate referrals to specialists. They should also monitor patients for treatment side effects and complications.",
+    "escalation": "If a patient presents with symptoms suggestive of leukaemia, escalate care to a haematologist immediately. In cases of severe symptoms (e.g., significant bleeding, respiratory distress), ensure urgent intervention.",
+    "keySafetyConsiderations": "Ensure proper hand hygiene and infection control measures, monitor for signs of bleeding and infection, and provide education to patients and families about the disease and treatment side effects."
+  }
+}

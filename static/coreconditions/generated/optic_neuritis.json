@@ -1,0 +1,126 @@
+{
+  "id": "optic_neuritis",
+  "name": "Optic neuritis",
+  "domains": [
+    "Opthalmolgy"
+  ],
+  "generatedAt": "2025-12-17T21:43:13.106205",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Optic neuritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nOptic neuritis is an inflammatory condition of the optic nerve, often associated with demyelination, leading to vision loss and other visual disturbances.\n\n### Epidemiology\nOptic neuritis is most commonly seen in young adults, particularly women aged 20-40 years. It is often associated with multiple sclerosis (MS), with about 50% of patients with optic neuritis developing MS within 15 years.\n\n### Essential Pathophysiology\nThe condition involves inflammation and demyelination of the optic nerve, which disrupts the transmission of visual signals from the retina to the brain. This can be triggered by autoimmune processes, infections, or other inflammatory conditions.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden vision loss in one eye\n- Visual field defects\n- Pain with eye movement\n- Color vision changes (dyschromatopsia)\n\n### Key Signs\n- Relative afferent pupillary defect (RAPD)\n- Decreased visual acuity\n- Swelling of the optic disc (in some cases)\n- Visual field defects on examination\n\n### Atypical Presentations\n- Bilateral optic neuritis (less common)\n- Optic neuritis associated with systemic symptoms (fever, malaise)\n\n### Red Flags Requiring Immediate Action\n- Bilateral symptoms\n- Severe headache or systemic symptoms\n- Age >50 years\n- History of cancer or systemic disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual acuity testing\n- Fundoscopy\n- Visual field testing\n- MRI of the brain and orbits\n\n### Second-line Investigations\n- Optical coherence tomography (OCT)\n- Lumbar puncture (if MS is suspected)\n\n### Specialist Tests\n- Visual evoked potentials (VEP)\n- Blood tests for autoimmune markers (e.g., anti-aquaporin-4 antibodies)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by MRI findings of optic nerve lesions and exclusion of other causes of vision loss.\n\n### Key Differential Diagnoses to Exclude\n- Ischemic optic neuropathy\n- Retinal detachment\n- Papilledema\n- Infectious causes (e.g., syphilis, Lyme disease)\n- Neuromyelitis optica\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Corticosteroids (IV methylprednisolone)\n\n#### Second-line Treatments\n- Oral corticosteroids (prednisone)\n\n#### Emergency Procedures\n- None specific for optic neuritis, but consider lumbar puncture if MS is suspected\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring for development of multiple sclerosis\n- Referral to neurology for further management\n\n#### Second-line Treatments\n- Disease-modifying therapies for MS if diagnosed\n\n#### Monitoring Requirements\n- Regular follow-up for visual function and neurological symptoms\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methylprednisolone\n- **Mechanism of Action**: Anti-inflammatory; reduces edema and inflammation in the optic nerve.\n- **Typical Dosing Range**: IV 1 g daily for 3 days.\n- **Key Side Effects/Contraindications**: Increased blood sugar, mood changes, gastrointestinal upset, risk of infection.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in patients with comorbidities.\n\n#### Prednisone\n- **Mechanism of Action**: Anti-inflammatory; used for tapering after IV steroids.\n- **Typical Dosing Range**: Oral 60 mg daily for 7 days, then taper.\n- **Key Side Effects/Contraindications**: Similar to methylprednisolone, with additional risk of adrenal suppression.\n- **When to Use vs. Alternatives**: Tapering is important to prevent adrenal crisis.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: A procedure to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: To rule out other causes of optic neuritis, especially if MS is suspected.\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for recovery of vision is generally good, with many patients experiencing significant improvement within weeks to months. However, some may have persistent visual deficits or develop multiple sclerosis later.\n\n### Important Complications to Watch For\n- Persistent visual impairment\n- Development of multiple sclerosis\n- Neuropathic pain\n- Psychological impact of vision loss\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology or neurology for further evaluation and management. They should also educate patients about the condition and its implications.\n\n### When to Escalate to Senior/Specialist\nIf there are red flags or if the patient presents with bilateral symptoms, escalate to a senior clinician or neurologist immediately.\n\n### Key Safety Considerations\nMonitor for signs of increased intracranial pressure, especially if there are systemic symptoms. Ensure appropriate follow-up for visual function and neurological status.\n",
+  "content": {
+    "overview": {
+      "definition": "Optic neuritis is an inflammatory condition of the optic nerve, often associated with demyelination, leading to vision loss and other visual disturbances.",
+      "epidemiology": "Optic neuritis is most commonly seen in young adults, particularly women aged 20-40 years. It is often associated with multiple sclerosis (MS), with about 50% of patients with optic neuritis developing MS within 15 years.",
+      "pathophysiology": "The condition involves inflammation and demyelination of the optic nerve, which disrupts the transmission of visual signals from the retina to the brain. This can be triggered by autoimmune processes, infections, or other inflammatory conditions."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden vision loss in one eye",
+        "Visual field defects",
+        "Pain with eye movement",
+        "Color vision changes (dyschromatopsia)"
+      ],
+      "signs": [
+        "Relative afferent pupillary defect (RAPD)",
+        "Decreased visual acuity",
+        "Swelling of the optic disc (in some cases)",
+        "Visual field defects on examination"
+      ],
+      "atypicalPresentations": [
+        "Bilateral optic neuritis (less common)",
+        "Optic neuritis associated with systemic symptoms (fever, malaise)"
+      ],
+      "redFlags": [
+        "Bilateral symptoms",
+        "Severe headache or systemic symptoms",
+        "Age >50 years",
+        "History of cancer or systemic disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual acuity testing",
+        "Fundoscopy",
+        "Visual field testing",
+        "MRI of the brain and orbits"
+      ],
+      "secondLine": [
+        "Optical coherence tomography (OCT)",
+        "Lumbar puncture (if MS is suspected)"
+      ],
+      "specialistTests": [
+        "Visual evoked potentials (VEP)",
+        "Blood tests for autoimmune markers (e.g., anti-aquaporin-4 antibodies)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by MRI findings of optic nerve lesions and exclusion of other causes of vision loss.",
+      "differentials": [
+        "Ischemic optic neuropathy",
+        "Retinal detachment",
+        "Papilledema",
+        "Infectious causes (e.g., syphilis, Lyme disease)",
+        "Neuromyelitis optica"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Corticosteroids (IV methylprednisolone)"
+        ],
+        "secondLine": [
+          "Oral corticosteroids (prednisone)"
+        ],
+        "procedures": [
+          "None specific for optic neuritis, but consider lumbar puncture if MS is suspected"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring for development of multiple sclerosis",
+          "Referral to neurology for further management"
+        ],
+        "secondLine": [
+          "Disease-modifying therapies for MS if diagnosed"
+        ],
+        "monitoring": [
+          "Regular follow-up for visual function and neurological symptoms"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methylprednisolone",
+          "mechanism": "Anti-inflammatory; reduces edema and inflammation in the optic nerve.",
+          "dosing": "IV 1 g daily for 3 days.",
+          "sideEffects": "Increased blood sugar, mood changes, gastrointestinal upset, risk of infection.",
+          "notes": "Monitor for side effects, especially in patients with comorbidities."
+        },
+        {
+          "name": "Prednisone",
+          "mechanism": "Anti-inflammatory; used for tapering after IV steroids.",
+          "dosing": "Oral 60 mg daily for 7 days, then taper.",
+          "sideEffects": "Similar to methylprednisolone, with additional risk of adrenal suppression.",
+          "notes": "Tapering is important to prevent adrenal crisis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "A procedure to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "To rule out other causes of optic neuritis, especially if MS is suspected.",
+          "risks": "Headache, infection, bleeding, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for recovery of vision is generally good, with many patients experiencing significant improvement within weeks to months. However, some may have persistent visual deficits or develop multiple sclerosis later.",
+    "complications": [
+      "Persistent visual impairment",
+      "Development of multiple sclerosis",
+      "Neuropathic pain",
+      "Psychological impact of vision loss"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, and refer patients to ophthalmology or neurology for further evaluation and management. They should also educate patients about the condition and its implications.",
+    "escalation": "If there are red flags or if the patient presents with bilateral symptoms, escalate to a senior clinician or neurologist immediately.",
+    "keySafetyConsiderations": "Monitor for signs of increased intracranial pressure, especially if there are systemic symptoms. Ensure appropriate follow-up for visual function and neurological status."
+  }
+}

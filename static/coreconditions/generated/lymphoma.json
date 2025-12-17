@@ -1,0 +1,152 @@
+{
+  "id": "lymphoma",
+  "name": "Lymphoma",
+  "domains": [
+    "Haematology",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T19:56:41.251626",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lymphoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nLymphoma is a type of cancer that originates in the lymphatic system, which is part of the body's immune system. It primarily involves the proliferation of lymphocytes, a type of white blood cell.\n\n### Epidemiology\nLymphoma is the most common hematological malignancy in the UK, with approximately 15,000 new cases diagnosed annually. It can occur at any age but is more prevalent in young adults (15-35 years) and older adults (over 60 years).\n\n### Essential Pathophysiology\nLymphoma arises from genetic mutations in lymphocytes, leading to uncontrolled proliferation. The two main categories are Hodgkin Lymphoma (HL), characterized by Reed-Sternberg cells, and Non-Hodgkin Lymphoma (NHL), which encompasses a diverse group of lymphoid malignancies.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Painless lymphadenopathy (swollen lymph nodes)\n- Fever\n- Night sweats\n- Weight loss\n- Fatigue\n- Pruritus (itching)\n\n### Key Signs\n- Enlarged lymph nodes (cervical, axillary, inguinal)\n- Splenomegaly\n- Hepatomegaly\n- B symptoms (fever, night sweats, weight loss)\n\n### Atypical Presentations\n- Abdominal pain due to mesenteric lymphadenopathy\n- Respiratory symptoms from mediastinal lymphadenopathy\n- Skin lesions in cutaneous lymphoma\n\n### Red Flags Requiring Immediate Action\n- Rapidly enlarging lymph nodes\n- Persistent fever and night sweats\n- Unexplained weight loss >10% of body weight\n- Symptoms persisting for more than 4-6 weeks\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Lactate dehydrogenase (LDH)\n- Chest X-ray\n- CT scan of chest, abdomen, and pelvis\n- Biopsy of lymph node (excisional or core needle)\n\n### Second-line Investigations\n- PET-CT scan for staging\n- Bone marrow biopsy if indicated\n\n### Specialist Tests\n- Immunophenotyping\n- Cytogenetic analysis\n- Molecular studies (e.g., PCR for specific translocations)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by histological examination of lymph node biopsy showing malignant lymphocytes and/or Reed-Sternberg cells in Hodgkin Lymphoma.\n\n### Key Differential Diagnoses to Exclude\n- Reactive lymphadenopathy (infection, autoimmune)\n- Other malignancies (leukemia, metastatic cancer)\n- Tuberculosis\n- Sarcoidosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Chemotherapy (e.g., ABVD regimen for HL)\n- Radiotherapy for localized disease\n\n#### Second-line Treatments\n- High-dose chemotherapy with stem cell transplant for relapsed disease\n\n#### Emergency Procedures\n- Lymph node biopsy (excisional or core needle) for diagnosis\n- Central venous catheter placement for chemotherapy administration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with imaging and blood tests to monitor for recurrence\n\n#### Second-line Treatments\n- Consider clinical trials for novel therapies\n\n#### Monitoring Requirements\n- Monitor for late effects of treatment (e.g., secondary malignancies, cardiac toxicity)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Doxorubicin\n- **Mechanism of Action**: Anthracycline that intercalates DNA, inhibiting replication and transcription.\n- **Typical Dosing Range**: 50 mg/m² IV every 14 days (part of ABVD regimen).\n- **Key Side Effects/Contraindications**: Cardiotoxicity, myelosuppression, nausea, vomiting.\n- **When to Use vs. Alternatives**: Monitor cardiac function during treatment.\n\n#### Bleomycin\n- **Mechanism of Action**: Antitumor antibiotic that induces DNA strand breaks.\n- **Typical Dosing Range**: 10-15 units IV on days 1 and 15 of a 28-day cycle.\n- **Key Side Effects/Contraindications**: Pulmonary toxicity, skin reactions, fever.\n- **When to Use vs. Alternatives**: Monitor pulmonary function tests.\n\n#### Vinblastine\n- **Mechanism of Action**: Alkaloid that inhibits microtubule formation, preventing cell division.\n- **Typical Dosing Range**: 6 mg/m² IV on days 1 and 15 of a 28-day cycle.\n- **Key Side Effects/Contraindications**: Myelosuppression, peripheral neuropathy, constipation.\n- **When to Use vs. Alternatives**: Monitor blood counts.\n\n#### Cyclophosphamide\n- **Mechanism of Action**: Alkylating agent that cross-links DNA, leading to cell death.\n- **Typical Dosing Range**: 750 mg/m² IV every 14 days (part of ABVD regimen).\n- **Key Side Effects/Contraindications**: Hemorrhagic cystitis, myelosuppression, nausea.\n- **When to Use vs. Alternatives**: Hydration is important to prevent cystitis.\n\n### Procedures\n\n#### Lymph node biopsy\n- **What it Involves**: Surgical removal of a lymph node for histological examination.\n- **Indications**: Suspected lymphoma based on clinical and imaging findings.\n- **Key Risks/Complications**: Infection, bleeding, damage to surrounding structures.\n\n#### Central venous catheter placement\n- **What it Involves**: Insertion of a catheter into a large vein for long-term access.\n- **Indications**: For administration of chemotherapy and frequent blood draws.\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis varies widely depending on the type of lymphoma, stage at diagnosis, and response to treatment. Early-stage Hodgkin Lymphoma has a high cure rate (>80%), while aggressive Non-Hodgkin Lymphomas may have variable outcomes.\n\n### Important Complications to Watch For\n- Infection due to immunosuppression from chemotherapy\n- Secondary malignancies (e.g., breast cancer, lung cancer)\n- Cardiac complications from anthracyclines\n- Pulmonary toxicity from bleomycin\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of lymphoma, perform initial assessments, order appropriate investigations, and provide supportive care during treatment. They should also be aware of the need for timely referrals to oncology.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with red flags or concerning symptoms, escalate to a senior clinician for urgent evaluation and management.\n\n### Key Safety Considerations\nMonitor for signs of infection, manage side effects of chemotherapy, ensure appropriate hydration and supportive care, and educate patients about potential late effects of treatment.\n",
+  "content": {
+    "overview": {
+      "definition": "Lymphoma is a type of cancer that originates in the lymphatic system, which is part of the body's immune system. It primarily involves the proliferation of lymphocytes, a type of white blood cell.",
+      "epidemiology": "Lymphoma is the most common hematological malignancy in the UK, with approximately 15,000 new cases diagnosed annually. It can occur at any age but is more prevalent in young adults (15-35 years) and older adults (over 60 years).",
+      "pathophysiology": "Lymphoma arises from genetic mutations in lymphocytes, leading to uncontrolled proliferation. The two main categories are Hodgkin Lymphoma (HL), characterized by Reed-Sternberg cells, and Non-Hodgkin Lymphoma (NHL), which encompasses a diverse group of lymphoid malignancies."
+    },
+    "recognition": {
+      "symptoms": [
+        "Painless lymphadenopathy (swollen lymph nodes)",
+        "Fever",
+        "Night sweats",
+        "Weight loss",
+        "Fatigue",
+        "Pruritus (itching)"
+      ],
+      "signs": [
+        "Enlarged lymph nodes (cervical, axillary, inguinal)",
+        "Splenomegaly",
+        "Hepatomegaly",
+        "B symptoms (fever, night sweats, weight loss)"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain due to mesenteric lymphadenopathy",
+        "Respiratory symptoms from mediastinal lymphadenopathy",
+        "Skin lesions in cutaneous lymphoma"
+      ],
+      "redFlags": [
+        "Rapidly enlarging lymph nodes",
+        "Persistent fever and night sweats",
+        "Unexplained weight loss >10% of body weight",
+        "Symptoms persisting for more than 4-6 weeks"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Lactate dehydrogenase (LDH)",
+        "Chest X-ray",
+        "CT scan of chest, abdomen, and pelvis",
+        "Biopsy of lymph node (excisional or core needle)"
+      ],
+      "secondLine": [
+        "PET-CT scan for staging",
+        "Bone marrow biopsy if indicated"
+      ],
+      "specialistTests": [
+        "Immunophenotyping",
+        "Cytogenetic analysis",
+        "Molecular studies (e.g., PCR for specific translocations)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by histological examination of lymph node biopsy showing malignant lymphocytes and/or Reed-Sternberg cells in Hodgkin Lymphoma.",
+      "differentials": [
+        "Reactive lymphadenopathy (infection, autoimmune)",
+        "Other malignancies (leukemia, metastatic cancer)",
+        "Tuberculosis",
+        "Sarcoidosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Chemotherapy (e.g., ABVD regimen for HL)",
+          "Radiotherapy for localized disease"
+        ],
+        "secondLine": [
+          "High-dose chemotherapy with stem cell transplant for relapsed disease"
+        ],
+        "procedures": [
+          "Lymph node biopsy (excisional or core needle) for diagnosis",
+          "Central venous catheter placement for chemotherapy administration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with imaging and blood tests to monitor for recurrence"
+        ],
+        "secondLine": [
+          "Consider clinical trials for novel therapies"
+        ],
+        "monitoring": [
+          "Monitor for late effects of treatment (e.g., secondary malignancies, cardiac toxicity)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Doxorubicin",
+          "mechanism": "Anthracycline that intercalates DNA, inhibiting replication and transcription.",
+          "dosing": "50 mg/m² IV every 14 days (part of ABVD regimen).",
+          "sideEffects": "Cardiotoxicity, myelosuppression, nausea, vomiting.",
+          "notes": "Monitor cardiac function during treatment."
+        },
+        {
+          "name": "Bleomycin",
+          "mechanism": "Antitumor antibiotic that induces DNA strand breaks.",
+          "dosing": "10-15 units IV on days 1 and 15 of a 28-day cycle.",
+          "sideEffects": "Pulmonary toxicity, skin reactions, fever.",
+          "notes": "Monitor pulmonary function tests."
+        },
+        {
+          "name": "Vinblastine",
+          "mechanism": "Alkaloid that inhibits microtubule formation, preventing cell division.",
+          "dosing": "6 mg/m² IV on days 1 and 15 of a 28-day cycle.",
+          "sideEffects": "Myelosuppression, peripheral neuropathy, constipation.",
+          "notes": "Monitor blood counts."
+        },
+        {
+          "name": "Cyclophosphamide",
+          "mechanism": "Alkylating agent that cross-links DNA, leading to cell death.",
+          "dosing": "750 mg/m² IV every 14 days (part of ABVD regimen).",
+          "sideEffects": "Hemorrhagic cystitis, myelosuppression, nausea.",
+          "notes": "Hydration is important to prevent cystitis."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lymph node biopsy",
+          "description": "Surgical removal of a lymph node for histological examination.",
+          "indications": "Suspected lymphoma based on clinical and imaging findings.",
+          "risks": "Infection, bleeding, damage to surrounding structures."
+        },
+        {
+          "name": "Central venous catheter placement",
+          "description": "Insertion of a catheter into a large vein for long-term access.",
+          "indications": "For administration of chemotherapy and frequent blood draws.",
+          "risks": "Infection, thrombosis, pneumothorax."
+        }
+      ]
+    },
+    "prognosis": "The prognosis varies widely depending on the type of lymphoma, stage at diagnosis, and response to treatment. Early-stage Hodgkin Lymphoma has a high cure rate (>80%), while aggressive Non-Hodgkin Lymphomas may have variable outcomes.",
+    "complications": [
+      "Infection due to immunosuppression from chemotherapy",
+      "Secondary malignancies (e.g., breast cancer, lung cancer)",
+      "Cardiac complications from anthracyclines",
+      "Pulmonary toxicity from bleomycin"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of lymphoma, perform initial assessments, order appropriate investigations, and provide supportive care during treatment. They should also be aware of the need for timely referrals to oncology.",
+    "escalation": "If a patient presents with red flags or concerning symptoms, escalate to a senior clinician for urgent evaluation and management.",
+    "keySafetyConsiderations": "Monitor for signs of infection, manage side effects of chemotherapy, ensure appropriate hydration and supportive care, and educate patients about potential late effects of treatment."
+  }
+}

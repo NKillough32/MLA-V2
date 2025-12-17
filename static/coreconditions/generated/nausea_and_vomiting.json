@@ -1,0 +1,136 @@
+{
+  "id": "nausea_and_vomiting",
+  "name": "Nausea and vomiting",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:59:01.133227",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nausea and vomiting: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNausea is the sensation of an urge to vomit, while vomiting is the forceful expulsion of the contents of the stomach through the mouth. In palliative care, nausea and vomiting are common symptoms that can significantly affect the quality of life of patients.\n\n### Epidemiology\nNausea and vomiting are prevalent in patients with advanced illness, with estimates suggesting that up to 70% of patients in palliative care experience these symptoms at some point.\n\n### Essential Pathophysiology\nThe pathophysiology of nausea and vomiting involves complex interactions between the central nervous system, gastrointestinal tract, and various neurotransmitters. Key pathways include the chemoreceptor trigger zone (CTZ) in the brain, which responds to toxins and drugs, and the vestibular system, which can trigger motion sickness. In palliative care, factors such as metabolic disturbances, medications, and disease progression can contribute to these symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Nausea\n- Vomiting\n- Loss of appetite\n- Abdominal discomfort\n\n### Key Signs\n- Dehydration (dry mucous membranes, decreased skin turgor)\n- Electrolyte imbalances (e.g., hypokalemia)\n- Weight loss\n\n### Atypical Presentations\n- Persistent nausea without vomiting\n- Vomiting without nausea\n- Nausea triggered by specific stimuli (e.g., smells, sights)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Blood in vomit (hematemesis)\n- Signs of dehydration (e.g., confusion, hypotension)\n- New onset of nausea/vomiting in a previously stable patient\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Assessment of hydration status\n- Review of current medications\n\n### Second-line Investigations\n- Blood tests (electrolytes, renal function, liver function tests)\n- Imaging studies (ultrasound or CT scan if indicated)\n\n### Specialist Tests\n- Endoscopy (if gastrointestinal obstruction or malignancy is suspected)\n- Gastric emptying studies (if gastroparesis is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of nausea and/or vomiting, along with a thorough history and physical examination to identify underlying causes.\n\n### Key Differential Diagnoses to Exclude\n- Gastrointestinal obstruction\n- Medication side effects\n- Metabolic disturbances (e.g., hypercalcemia, uremia)\n- Infections (e.g., gastroenteritis)\n- Neurological causes (e.g., increased intracranial pressure)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Antiemetics (e.g., ondansetron, metoclopramide)\n- Hydration (IV fluids if necessary)\n\n#### Second-line Treatments\n- Adjusting or changing medications that may be causing nausea\n- Consideration of corticosteroids (e.g., dexamethasone) for inflammatory causes\n\n#### Emergency Procedures\n- Gastric tube insertion (if severe vomiting and risk of aspiration)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular antiemetic regimen tailored to the underlying cause\n- Non-pharmacological interventions (e.g., dietary changes, acupressure)\n\n#### Second-line Treatments\n- Consideration of palliative care interventions (e.g., nerve blocks, surgical interventions for obstruction)\n- Psychological support for anticipatory nausea\n\n#### Monitoring Requirements\n- Regular assessment of symptom control and side effects of medications\n- Hydration status and nutritional intake\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ondansetron\n- **Mechanism of Action**: 5-HT3 receptor antagonist that blocks serotonin receptors in the CTZ.\n- **Typical Dosing Range**: 4-8 mg IV/PO every 8 hours as needed.\n- **Key Side Effects/Contraindications**: Headache, constipation, dizziness.\n- **When to Use vs. Alternatives**: Effective for chemotherapy-induced nausea and vomiting.\n\n#### Metoclopramide\n- **Mechanism of Action**: Dopamine receptor antagonist that enhances gastric motility and increases gastric emptying.\n- **Typical Dosing Range**: 10 mg IV/PO every 6-8 hours as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, restlessness, extrapyramidal symptoms.\n- **When to Use vs. Alternatives**: Useful for nausea due to gastroparesis.\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and can help with nausea due to increased intracranial pressure or obstruction.\n- **Typical Dosing Range**: 4-8 mg IV/PO daily.\n- **Key Side Effects/Contraindications**: Increased appetite, insomnia, hyperglycemia.\n- **When to Use vs. Alternatives**: Consider for palliative care patients with nausea due to malignancy.\n\n### Procedures\n\n#### Gastric tube insertion\n- **What it Involves**: Placement of a tube through the nose or mouth into the stomach to decompress the stomach and prevent aspiration.\n- **Indications**: Severe vomiting, inability to tolerate oral intake, risk of aspiration.\n- **Key Risks/Complications**: Discomfort, nasal/esophageal injury, aspiration pneumonia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of nausea and vomiting in palliative care depends on the underlying cause. Effective management can significantly improve quality of life, but persistent symptoms may indicate disease progression.\n\n### Important Complications to Watch For\n- Dehydration\n- Electrolyte imbalances\n- Malnutrition\n- Aspiration pneumonia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and manage nausea and vomiting in palliative care patients, ensuring appropriate investigations are conducted and treatments are initiated. They should also communicate effectively with the palliative care team and family members regarding symptom management.\n\n### When to Escalate to Senior/Specialist\nIf symptoms are refractory to initial management or if red flags are present, escalate care to a senior clinician or palliative care specialist for further evaluation and management.\n\n### Key Safety Considerations\nMonitor for signs of dehydration and electrolyte imbalances, especially in patients with persistent vomiting. Ensure that any changes in medication are reviewed for potential side effects that may exacerbate nausea.\n",
+  "content": {
+    "overview": {
+      "definition": "Nausea is the sensation of an urge to vomit, while vomiting is the forceful expulsion of the contents of the stomach through the mouth. In palliative care, nausea and vomiting are common symptoms that can significantly affect the quality of life of patients.",
+      "epidemiology": "Nausea and vomiting are prevalent in patients with advanced illness, with estimates suggesting that up to 70% of patients in palliative care experience these symptoms at some point.",
+      "pathophysiology": "The pathophysiology of nausea and vomiting involves complex interactions between the central nervous system, gastrointestinal tract, and various neurotransmitters. Key pathways include the chemoreceptor trigger zone (CTZ) in the brain, which responds to toxins and drugs, and the vestibular system, which can trigger motion sickness. In palliative care, factors such as metabolic disturbances, medications, and disease progression can contribute to these symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Nausea",
+        "Vomiting",
+        "Loss of appetite",
+        "Abdominal discomfort"
+      ],
+      "signs": [
+        "Dehydration (dry mucous membranes, decreased skin turgor)",
+        "Electrolyte imbalances (e.g., hypokalemia)",
+        "Weight loss"
+      ],
+      "atypicalPresentations": [
+        "Persistent nausea without vomiting",
+        "Vomiting without nausea",
+        "Nausea triggered by specific stimuli (e.g., smells, sights)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Blood in vomit (hematemesis)",
+        "Signs of dehydration (e.g., confusion, hypotension)",
+        "New onset of nausea/vomiting in a previously stable patient"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Assessment of hydration status",
+        "Review of current medications"
+      ],
+      "secondLine": [
+        "Blood tests (electrolytes, renal function, liver function tests)",
+        "Imaging studies (ultrasound or CT scan if indicated)"
+      ],
+      "specialistTests": [
+        "Endoscopy (if gastrointestinal obstruction or malignancy is suspected)",
+        "Gastric emptying studies (if gastroparesis is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of nausea and/or vomiting, along with a thorough history and physical examination to identify underlying causes.",
+      "differentials": [
+        "Gastrointestinal obstruction",
+        "Medication side effects",
+        "Metabolic disturbances (e.g., hypercalcemia, uremia)",
+        "Infections (e.g., gastroenteritis)",
+        "Neurological causes (e.g., increased intracranial pressure)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Antiemetics (e.g., ondansetron, metoclopramide)",
+          "Hydration (IV fluids if necessary)"
+        ],
+        "secondLine": [
+          "Adjusting or changing medications that may be causing nausea",
+          "Consideration of corticosteroids (e.g., dexamethasone) for inflammatory causes"
+        ],
+        "procedures": [
+          "Gastric tube insertion (if severe vomiting and risk of aspiration)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular antiemetic regimen tailored to the underlying cause",
+          "Non-pharmacological interventions (e.g., dietary changes, acupressure)"
+        ],
+        "secondLine": [
+          "Consideration of palliative care interventions (e.g., nerve blocks, surgical interventions for obstruction)",
+          "Psychological support for anticipatory nausea"
+        ],
+        "monitoring": [
+          "Regular assessment of symptom control and side effects of medications",
+          "Hydration status and nutritional intake"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ondansetron",
+          "mechanism": "5-HT3 receptor antagonist that blocks serotonin receptors in the CTZ.",
+          "dosing": "4-8 mg IV/PO every 8 hours as needed.",
+          "sideEffects": "Headache, constipation, dizziness.",
+          "notes": "Effective for chemotherapy-induced nausea and vomiting."
+        },
+        {
+          "name": "Metoclopramide",
+          "mechanism": "Dopamine receptor antagonist that enhances gastric motility and increases gastric emptying.",
+          "dosing": "10 mg IV/PO every 6-8 hours as needed.",
+          "sideEffects": "Drowsiness, restlessness, extrapyramidal symptoms.",
+          "notes": "Useful for nausea due to gastroparesis."
+        },
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation and can help with nausea due to increased intracranial pressure or obstruction.",
+          "dosing": "4-8 mg IV/PO daily.",
+          "sideEffects": "Increased appetite, insomnia, hyperglycemia.",
+          "notes": "Consider for palliative care patients with nausea due to malignancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Gastric tube insertion",
+          "description": "Placement of a tube through the nose or mouth into the stomach to decompress the stomach and prevent aspiration.",
+          "indications": "Severe vomiting, inability to tolerate oral intake, risk of aspiration.",
+          "risks": "Discomfort, nasal/esophageal injury, aspiration pneumonia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of nausea and vomiting in palliative care depends on the underlying cause. Effective management can significantly improve quality of life, but persistent symptoms may indicate disease progression.",
+    "complications": [
+      "Dehydration",
+      "Electrolyte imbalances",
+      "Malnutrition",
+      "Aspiration pneumonia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and manage nausea and vomiting in palliative care patients, ensuring appropriate investigations are conducted and treatments are initiated. They should also communicate effectively with the palliative care team and family members regarding symptom management.",
+    "escalation": "If symptoms are refractory to initial management or if red flags are present, escalate care to a senior clinician or palliative care specialist for further evaluation and management.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration and electrolyte imbalances, especially in patients with persistent vomiting. Ensure that any changes in medication are reviewed for potential side effects that may exacerbate nausea."
+  }
+}

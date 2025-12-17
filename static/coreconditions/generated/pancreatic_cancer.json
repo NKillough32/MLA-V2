@@ -1,0 +1,138 @@
+{
+  "id": "pancreatic_cancer",
+  "name": "Pancreatic cancer",
+  "domains": [
+    "Gastrointestinal"
+  ],
+  "generatedAt": "2025-12-17T19:41:39.030660",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pancreatic cancer: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPancreatic cancer is a malignant neoplasm of the pancreas, often characterized by aggressive behavior and late presentation, leading to poor prognosis.\n\n### Epidemiology\nIt is the 12th most common cancer worldwide, with an incidence of approximately 5 per 100,000 people. Risk factors include smoking, obesity, chronic pancreatitis, and family history of pancreatic cancer.\n\n### Essential Pathophysiology\nMost pancreatic cancers are adenocarcinomas arising from the exocrine cells of the pancreas. The cancer typically develops in the head of the pancreas, leading to obstruction of the bile duct and presenting with jaundice. Genetic mutations (e.g., KRAS, TP53) play a significant role in tumorigenesis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often radiating to the back)\n- Weight loss\n- Jaundice\n- Anorexia\n- Nausea and vomiting\n- New-onset diabetes\n\n### Key Signs\n- Palpable mass in the abdomen\n- Jaundice (icterus)\n- Ascites\n- Courvoisier's sign (enlarged gallbladder due to bile duct obstruction)\n- Trousseau's sign (migratory thrombophlebitis)\n\n### Atypical Presentations\n- Fatigue\n- Depression\n- Thromboembolic events (DVT/PE)\n\n### Red Flags Requiring Immediate Action\n- New-onset diabetes in older adults\n- Unexplained weight loss\n- Severe abdominal pain with jaundice\n- Family history of pancreatic cancer\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal ultrasound\n- CT scan of the abdomen (with contrast)\n\n### Second-line Investigations\n- MRI of the abdomen\n- Endoscopic ultrasound (EUS)\n\n### Specialist Tests\n- Biopsy (fine needle aspiration or core biopsy)\n- CA 19-9 tumor marker\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed through histological examination of tissue obtained via biopsy, alongside imaging studies showing pancreatic mass or metastasis.\n\n### Key Differential Diagnoses to Exclude\n- Chronic pancreatitis\n- Pancreatic pseudocyst\n- Biliary obstruction due to gallstones\n- Gastric cancer\n- Liver metastases\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, pain management)\n- Nutritional support\n\n#### Second-line Treatments\n- Chemotherapy (e.g., FOLFIRINOX or Gemcitabine + Nab-paclitaxel)\n\n#### Emergency Procedures\n- Biliary stenting (endoscopic or percutaneous) for obstructive jaundice\n- Palliative care interventions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical resection (Whipple procedure for resectable tumors)\n- Chemotherapy for unresectable tumors\n\n#### Second-line Treatments\n- Radiation therapy (for local control)\n\n#### Monitoring Requirements\n- Regular imaging to assess for disease progression or recurrence\n- Monitoring of CA 19-9 levels\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Gemcitabine\n- **Mechanism of Action**: Antimetabolite that inhibits DNA synthesis\n- **Typical Dosing Range**: 1000 mg/m2 IV on days 1, 8, and 15 of a 28-day cycle\n- **Key Side Effects/Contraindications**: Myelosuppression, nausea, vomiting, fatigue\n- **When to Use vs. Alternatives**: Commonly used in advanced pancreatic cancer.\n\n#### FOLFIRINOX\n- **Mechanism of Action**: Combination of fluorouracil, leucovorin, irinotecan, and oxaliplatin that inhibits DNA synthesis and repair\n- **Typical Dosing Range**: Administered every 14 days, specific dosing varies based on patient tolerance\n- **Key Side Effects/Contraindications**: Myelosuppression, neuropathy, diarrhea, nausea\n- **When to Use vs. Alternatives**: More effective but also more toxic than Gemcitabine.\n\n### Procedures\n\n#### Whipple procedure (pancreaticoduodenectomy)\n- **What it Involves**: Surgical resection of the head of the pancreas, duodenum, gallbladder, and part of the bile duct\n- **Indications**: Resectable pancreatic adenocarcinoma\n- **Key Risks/Complications**: Bleeding, infection, delayed gastric emptying, pancreatic fistula.\n\n#### Endoscopic retrograde cholangiopancreatography (ERCP)\n- **What it Involves**: Endoscopic procedure to visualize and treat bile duct obstructions\n- **Indications**: Relief of obstructive jaundice\n- **Key Risks/Complications**: Pancreatitis, infection, perforation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe overall 5-year survival rate for pancreatic cancer is approximately 10%. Prognosis is significantly better for resectable tumors compared to metastatic disease.\n\n### Important Complications to Watch For\n- Metastasis to liver, lungs, and peritoneum\n- Biliary obstruction\n- Diabetes mellitus\n- Malnutrition due to poor digestion\n- Thromboembolic events (DVT/PE)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms, perform initial assessments, and coordinate investigations. They should also provide supportive care and assist in managing complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a specialist if there are signs of obstructive jaundice, significant weight loss, or if the patient is not responding to initial management.\n\n### Key Safety Considerations\nEnsure proper hydration and nutritional support in patients with significant weight loss. Monitor for signs of infection post-procedure and manage pain effectively.\n",
+  "content": {
+    "overview": {
+      "definition": "Pancreatic cancer is a malignant neoplasm of the pancreas, often characterized by aggressive behavior and late presentation, leading to poor prognosis.",
+      "epidemiology": "It is the 12th most common cancer worldwide, with an incidence of approximately 5 per 100,000 people. Risk factors include smoking, obesity, chronic pancreatitis, and family history of pancreatic cancer.",
+      "pathophysiology": "Most pancreatic cancers are adenocarcinomas arising from the exocrine cells of the pancreas. The cancer typically develops in the head of the pancreas, leading to obstruction of the bile duct and presenting with jaundice. Genetic mutations (e.g., KRAS, TP53) play a significant role in tumorigenesis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often radiating to the back)",
+        "Weight loss",
+        "Jaundice",
+        "Anorexia",
+        "Nausea and vomiting",
+        "New-onset diabetes"
+      ],
+      "signs": [
+        "Palpable mass in the abdomen",
+        "Jaundice (icterus)",
+        "Ascites",
+        "Courvoisier's sign (enlarged gallbladder due to bile duct obstruction)",
+        "Trousseau's sign (migratory thrombophlebitis)"
+      ],
+      "atypicalPresentations": [
+        "Fatigue",
+        "Depression",
+        "Thromboembolic events (DVT/PE)"
+      ],
+      "redFlags": [
+        "New-onset diabetes in older adults",
+        "Unexplained weight loss",
+        "Severe abdominal pain with jaundice",
+        "Family history of pancreatic cancer"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal ultrasound",
+        "CT scan of the abdomen (with contrast)"
+      ],
+      "secondLine": [
+        "MRI of the abdomen",
+        "Endoscopic ultrasound (EUS)"
+      ],
+      "specialistTests": [
+        "Biopsy (fine needle aspiration or core biopsy)",
+        "CA 19-9 tumor marker"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed through histological examination of tissue obtained via biopsy, alongside imaging studies showing pancreatic mass or metastasis.",
+      "differentials": [
+        "Chronic pancreatitis",
+        "Pancreatic pseudocyst",
+        "Biliary obstruction due to gallstones",
+        "Gastric cancer",
+        "Liver metastases"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, pain management)",
+          "Nutritional support"
+        ],
+        "secondLine": [
+          "Chemotherapy (e.g., FOLFIRINOX or Gemcitabine + Nab-paclitaxel)"
+        ],
+        "procedures": [
+          "Biliary stenting (endoscopic or percutaneous) for obstructive jaundice",
+          "Palliative care interventions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical resection (Whipple procedure for resectable tumors)",
+          "Chemotherapy for unresectable tumors"
+        ],
+        "secondLine": [
+          "Radiation therapy (for local control)"
+        ],
+        "monitoring": [
+          "Regular imaging to assess for disease progression or recurrence",
+          "Monitoring of CA 19-9 levels"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Gemcitabine",
+          "mechanism": "Antimetabolite that inhibits DNA synthesis",
+          "dosing": "1000 mg/m2 IV on days 1, 8, and 15 of a 28-day cycle",
+          "sideEffects": "Myelosuppression, nausea, vomiting, fatigue",
+          "notes": "Commonly used in advanced pancreatic cancer."
+        },
+        {
+          "name": "FOLFIRINOX",
+          "mechanism": "Combination of fluorouracil, leucovorin, irinotecan, and oxaliplatin that inhibits DNA synthesis and repair",
+          "dosing": "Administered every 14 days, specific dosing varies based on patient tolerance",
+          "sideEffects": "Myelosuppression, neuropathy, diarrhea, nausea",
+          "notes": "More effective but also more toxic than Gemcitabine."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Whipple procedure (pancreaticoduodenectomy)",
+          "description": "Surgical resection of the head of the pancreas, duodenum, gallbladder, and part of the bile duct",
+          "indications": "Resectable pancreatic adenocarcinoma",
+          "risks": "Bleeding, infection, delayed gastric emptying, pancreatic fistula."
+        },
+        {
+          "name": "Endoscopic retrograde cholangiopancreatography (ERCP)",
+          "description": "Endoscopic procedure to visualize and treat bile duct obstructions",
+          "indications": "Relief of obstructive jaundice",
+          "risks": "Pancreatitis, infection, perforation."
+        }
+      ]
+    },
+    "prognosis": "The overall 5-year survival rate for pancreatic cancer is approximately 10%. Prognosis is significantly better for resectable tumors compared to metastatic disease.",
+    "complications": [
+      "Metastasis to liver, lungs, and peritoneum",
+      "Biliary obstruction",
+      "Diabetes mellitus",
+      "Malnutrition due to poor digestion",
+      "Thromboembolic events (DVT/PE)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms, perform initial assessments, and coordinate investigations. They should also provide supportive care and assist in managing complications.",
+    "escalation": "Refer to a specialist if there are signs of obstructive jaundice, significant weight loss, or if the patient is not responding to initial management.",
+    "keySafetyConsiderations": "Ensure proper hydration and nutritional support in patients with significant weight loss. Monitor for signs of infection post-procedure and manage pain effectively."
+  }
+}

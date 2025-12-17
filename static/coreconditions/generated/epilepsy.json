@@ -1,0 +1,137 @@
+{
+  "id": "epilepsy",
+  "name": "Epilepsy?",
+  "domains": [
+    "Neurology"
+  ],
+  "generatedAt": "2025-12-17T20:54:33.121234",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Epilepsy?: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nEpilepsy is a chronic neurological disorder characterized by recurrent, unprovoked seizures due to abnormal electrical activity in the brain.\n\n### Epidemiology\nEpilepsy affects approximately 1% of the population worldwide, with a higher prevalence in children and the elderly. It can occur at any age but often begins in childhood or adolescence.\n\n### Essential Pathophysiology\nThe pathophysiology of epilepsy involves a disruption in the balance between excitatory (glutamate) and inhibitory (GABA) neurotransmission in the brain, leading to hyperexcitability and the generation of seizures.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Seizures (various types)\n- Postictal confusion\n- Aura (sensory disturbances before a seizure)\n\n### Key Signs\n- Witnessed seizure activity\n- Abnormal EEG findings\n- Neurological deficits post-seizure\n\n### Atypical Presentations\n- Seizures triggered by specific stimuli (photosensitivity)\n- Non-convulsive status epilepticus\n- Psychogenic non-epileptic seizures\n\n### Red Flags Requiring Immediate Action\n- First seizure after age 20\n- Seizures associated with head trauma\n- Seizures with significant postictal confusion or prolonged recovery\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electroencephalogram (EEG)\n- MRI of the brain\n- Blood tests (including metabolic panel, toxicology)\n\n### Second-line Investigations\n- CT scan of the brain (if MRI is contraindicated)\n- Video EEG monitoring\n\n### Specialist Tests\n- Genetic testing for hereditary epilepsy syndromes\n- Functional MRI (fMRI)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of epilepsy is made after two or more unprovoked seizures occurring more than 24 hours apart, or one unprovoked seizure with a high risk of recurrence.\n\n### Key Differential Diagnoses to Exclude\n- Syncope\n- Transient ischemic attack (TIA)\n- Psychogenic non-epileptic seizures\n- Movement disorders (e.g., myoclonus)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Benzodiazepines (e.g., Lorazepam, Diazepam) for seizure termination\n- Phenytoin or Fosphenytoin for status epilepticus\n\n#### Second-line Treatments\n- Levetiracetam or Valproate if seizures persist\n\n#### Emergency Procedures\n- Status epilepticus management protocol\n- Consideration for intubation if airway compromised\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Antiepileptic drugs (AEDs) such as Lamotrigine, Levetiracetam, Valproate\n\n#### Second-line Treatments\n- Consideration of polytherapy if seizures are not controlled with monotherapy\n\n#### Monitoring Requirements\n- Regular follow-up for seizure control and side effects of medications\n- Routine blood tests for drug levels and liver function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levetiracetam\n- **Mechanism of Action**: Modulates synaptic neurotransmitter release through binding to the SV2A protein.\n- **Typical Dosing Range**: Initial: 500 mg bid, may increase to 1500 mg bid based on response.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, behavioral changes.\n- **When to Use vs. Alternatives**: Well-tolerated, minimal drug interactions.\n\n#### Valproate\n- **Mechanism of Action**: Increases GABA levels in the brain, stabilizing neuronal membranes.\n- **Typical Dosing Range**: Initial: 10-15 mg/kg/day, may increase to 60 mg/kg/day.\n- **Key Side Effects/Contraindications**: Weight gain, tremor, hepatotoxicity, teratogenic effects.\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly.\n\n#### Lamotrigine\n- **Mechanism of Action**: Inhibits voltage-gated sodium channels, stabilizing neuronal membranes.\n- **Typical Dosing Range**: Initial: 25 mg daily, titrate to 100-200 mg daily based on response.\n- **Key Side Effects/Contraindications**: Rash (risk of Stevens-Johnson syndrome), dizziness.\n- **When to Use vs. Alternatives**: Titrate slowly to minimize rash risk.\n\n### Procedures\n\n#### EEG\n- **What it Involves**: A test that records electrical activity in the brain to identify seizure activity.\n- **Indications**: Suspected epilepsy, seizure classification, pre-surgical evaluation.\n- **Key Risks/Complications**: Minimal; may cause discomfort from electrodes.\n\n#### Vagal Nerve Stimulation (VNS)\n- **What it Involves**: A device implanted to stimulate the vagus nerve to reduce seizure frequency.\n- **Indications**: Refractory epilepsy not controlled by medications.\n- **Key Risks/Complications**: Infection, voice changes, throat discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for epilepsy varies; many patients achieve good seizure control with appropriate treatment, while others may have persistent seizures. Factors influencing prognosis include seizure type, age of onset, and response to treatment.\n\n### Important Complications to Watch For\n- Status epilepticus\n- Injury during seizures (e.g., falls, burns)\n- Psychosocial issues (e.g., depression, anxiety)\n- Sudden unexplained death in epilepsy (SUDEP)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize seizures, initiate acute management, and refer patients for further evaluation and treatment. They should also educate patients about seizure triggers and safety precautions.\n\n### When to Escalate to Senior/Specialist\nRefer to neurology for patients with refractory seizures, new-onset seizures in adults, or those with concerning features (e.g., focal seizures, neurological deficits).\n\n### Key Safety Considerations\nEnsure patient safety during seizures (e.g., protect from injury), educate about driving restrictions, and provide information on seizure action plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Epilepsy is a chronic neurological disorder characterized by recurrent, unprovoked seizures due to abnormal electrical activity in the brain.",
+      "epidemiology": "Epilepsy affects approximately 1% of the population worldwide, with a higher prevalence in children and the elderly. It can occur at any age but often begins in childhood or adolescence.",
+      "pathophysiology": "The pathophysiology of epilepsy involves a disruption in the balance between excitatory (glutamate) and inhibitory (GABA) neurotransmission in the brain, leading to hyperexcitability and the generation of seizures."
+    },
+    "recognition": {
+      "symptoms": [
+        "Seizures (various types)",
+        "Postictal confusion",
+        "Aura (sensory disturbances before a seizure)"
+      ],
+      "signs": [
+        "Witnessed seizure activity",
+        "Abnormal EEG findings",
+        "Neurological deficits post-seizure"
+      ],
+      "atypicalPresentations": [
+        "Seizures triggered by specific stimuli (photosensitivity)",
+        "Non-convulsive status epilepticus",
+        "Psychogenic non-epileptic seizures"
+      ],
+      "redFlags": [
+        "First seizure after age 20",
+        "Seizures associated with head trauma",
+        "Seizures with significant postictal confusion or prolonged recovery"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electroencephalogram (EEG)",
+        "MRI of the brain",
+        "Blood tests (including metabolic panel, toxicology)"
+      ],
+      "secondLine": [
+        "CT scan of the brain (if MRI is contraindicated)",
+        "Video EEG monitoring"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary epilepsy syndromes",
+        "Functional MRI (fMRI)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of epilepsy is made after two or more unprovoked seizures occurring more than 24 hours apart, or one unprovoked seizure with a high risk of recurrence.",
+      "differentials": [
+        "Syncope",
+        "Transient ischemic attack (TIA)",
+        "Psychogenic non-epileptic seizures",
+        "Movement disorders (e.g., myoclonus)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Benzodiazepines (e.g., Lorazepam, Diazepam) for seizure termination",
+          "Phenytoin or Fosphenytoin for status epilepticus"
+        ],
+        "secondLine": [
+          "Levetiracetam or Valproate if seizures persist"
+        ],
+        "procedures": [
+          "Status epilepticus management protocol",
+          "Consideration for intubation if airway compromised"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Antiepileptic drugs (AEDs) such as Lamotrigine, Levetiracetam, Valproate"
+        ],
+        "secondLine": [
+          "Consideration of polytherapy if seizures are not controlled with monotherapy"
+        ],
+        "monitoring": [
+          "Regular follow-up for seizure control and side effects of medications",
+          "Routine blood tests for drug levels and liver function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levetiracetam",
+          "mechanism": "Modulates synaptic neurotransmitter release through binding to the SV2A protein.",
+          "dosing": "Initial: 500 mg bid, may increase to 1500 mg bid based on response.",
+          "sideEffects": "Drowsiness, dizziness, behavioral changes.",
+          "notes": "Well-tolerated, minimal drug interactions."
+        },
+        {
+          "name": "Valproate",
+          "mechanism": "Increases GABA levels in the brain, stabilizing neuronal membranes.",
+          "dosing": "Initial: 10-15 mg/kg/day, may increase to 60 mg/kg/day.",
+          "sideEffects": "Weight gain, tremor, hepatotoxicity, teratogenic effects.",
+          "notes": "Monitor liver function tests regularly."
+        },
+        {
+          "name": "Lamotrigine",
+          "mechanism": "Inhibits voltage-gated sodium channels, stabilizing neuronal membranes.",
+          "dosing": "Initial: 25 mg daily, titrate to 100-200 mg daily based on response.",
+          "sideEffects": "Rash (risk of Stevens-Johnson syndrome), dizziness.",
+          "notes": "Titrate slowly to minimize rash risk."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "EEG",
+          "description": "A test that records electrical activity in the brain to identify seizure activity.",
+          "indications": "Suspected epilepsy, seizure classification, pre-surgical evaluation.",
+          "risks": "Minimal; may cause discomfort from electrodes."
+        },
+        {
+          "name": "Vagal Nerve Stimulation (VNS)",
+          "description": "A device implanted to stimulate the vagus nerve to reduce seizure frequency.",
+          "indications": "Refractory epilepsy not controlled by medications.",
+          "risks": "Infection, voice changes, throat discomfort."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for epilepsy varies; many patients achieve good seizure control with appropriate treatment, while others may have persistent seizures. Factors influencing prognosis include seizure type, age of onset, and response to treatment.",
+    "complications": [
+      "Status epilepticus",
+      "Injury during seizures (e.g., falls, burns)",
+      "Psychosocial issues (e.g., depression, anxiety)",
+      "Sudden unexplained death in epilepsy (SUDEP)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize seizures, initiate acute management, and refer patients for further evaluation and treatment. They should also educate patients about seizure triggers and safety precautions.",
+    "escalation": "Refer to neurology for patients with refractory seizures, new-onset seizures in adults, or those with concerning features (e.g., focal seizures, neurological deficits).",
+    "keySafetyConsiderations": "Ensure patient safety during seizures (e.g., protect from injury), educate about driving restrictions, and provide information on seizure action plans."
+  }
+}

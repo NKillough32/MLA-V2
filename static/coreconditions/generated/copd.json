@@ -1,0 +1,143 @@
+{
+  "id": "copd",
+  "name": "COPD",
+  "domains": [
+    "Respiratory"
+  ],
+  "generatedAt": "2025-12-17T20:21:19.825284",
+  "model": "gpt-4o-mini",
+  "rawContent": "# COPD: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease characterized by persistent respiratory symptoms and airflow limitation due to airway and/or alveolar abnormalities, primarily caused by significant exposure to noxious particles or gases, most commonly from smoking.\n\n### Epidemiology\nCOPD affects approximately 3 million people in the UK, with a prevalence of about 1 in 10 adults over 40 years. It is a leading cause of morbidity and mortality worldwide, with increasing incidence due to aging populations and continued smoking rates.\n\n### Essential Pathophysiology\nCOPD is primarily caused by chronic inflammation of the airways, leading to structural changes such as airway narrowing, destruction of alveoli (emphysema), and mucus hypersecretion. This results in airflow limitation, impaired gas exchange, and respiratory symptoms.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic cough\n- Sputum production\n- Dyspnea (shortness of breath) on exertion\n- Wheezing\n- Chest tightness\n\n### Key Signs\n- Prolonged expiration\n- Use of accessory muscles of respiration\n- Cyanosis\n- Pursed-lip breathing\n- Decreased breath sounds\n- Barrel chest (in advanced cases)\n\n### Atypical Presentations\n- Acute exacerbations with increased sputum purulence\n- Weight loss and muscle wasting in advanced disease\n- Cor pulmonale (right heart failure) due to pulmonary hypertension\n\n### Red Flags Requiring Immediate Action\n- Severe dyspnea at rest\n- New onset of hemoptysis\n- Rapid deterioration in symptoms\n- Signs of respiratory failure (e.g., confusion, cyanosis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Spirometry (to confirm airflow limitation)\n- Chest X-ray (to rule out other conditions)\n- Full blood count (to check for polycythemia)\n\n### Second-line Investigations\n- CT chest (to assess for emphysema and other lung pathology)\n- Alpha-1 antitrypsin level (in younger patients or atypical cases)\n\n### Specialist Tests\n- Arterial blood gases (ABG) to assess gas exchange\n- Exercise testing (e.g., 6-minute walk test)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of COPD is based on a history of exposure to risk factors, presence of respiratory symptoms, and confirmation of airflow limitation (FEV1/FVC < 0.7) on spirometry.\n\n### Key Differential Diagnoses to Exclude\n- Asthma\n- Bronchiectasis\n- Interstitial lung disease\n- Heart failure\n- Lung cancer\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Short-acting bronchodilators (e.g., salbutamol) via nebulizer or metered-dose inhaler (MDI)\n- Systemic corticosteroids (e.g., prednisolone 30-40 mg daily for 5-7 days)\n- Antibiotics if there is evidence of bacterial infection\n\n#### Second-line Treatments\n- Oxygen therapy (target SpO2 88-92%)\n- Non-invasive ventilation (NIV) in severe exacerbations\n\n#### Emergency Procedures\n- Bronchoscopy (for diagnostic purposes in suspected malignancy or infection)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Smoking cessation support (nicotine replacement therapy, counseling)\n- Long-acting bronchodilators (e.g., tiotropium)\n- Pulmonary rehabilitation\n\n#### Second-line Treatments\n- Inhaled corticosteroids (ICS) for patients with frequent exacerbations\n- Phosphodiesterase-4 inhibitors (e.g., roflumilast) for severe COPD\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and exacerbation frequency\n- Annual influenza and pneumococcal vaccinations\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Salbutamol\n- **Mechanism of Action**: Short-acting beta-2 agonist causing bronchodilation\n- **Typical Dosing Range**: 100-200 mcg via MDI as needed, up to 4 times daily\n- **Key Side Effects/Contraindications**: Tachycardia, tremor, hypokalemia\n- **When to Use vs. Alternatives**: Use as rescue medication for acute symptoms.\n\n#### Tiotropium\n- **Mechanism of Action**: Long-acting anticholinergic causing bronchodilation\n- **Typical Dosing Range**: 18 mcg once daily via inhaler\n- **Key Side Effects/Contraindications**: Dry mouth, constipation, urinary retention\n- **When to Use vs. Alternatives**: Used for maintenance therapy.\n\n#### Prednisolone\n- **Mechanism of Action**: Anti-inflammatory corticosteroid\n- **Typical Dosing Range**: 30-40 mg orally once daily for 5-7 days during exacerbations\n- **Key Side Effects/Contraindications**: Hyperglycemia, weight gain, osteoporosis\n- **When to Use vs. Alternatives**: Short-term use during exacerbations.\n\n### Procedures\n\n#### Bronchoscopy\n- **What it Involves**: A procedure to visualize the airways and obtain samples for diagnosis.\n- **Indications**: Suspected lung cancer, infection, or foreign body aspiration.\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nCOPD is a progressive disease with a variable course. Early diagnosis and management can improve quality of life and reduce exacerbations. The 5-year survival rate is approximately 50% in severe cases.\n\n### Important Complications to Watch For\n- Frequent respiratory infections\n- Acute exacerbations requiring hospitalization\n- Pulmonary hypertension\n- Cor pulmonale (right heart failure)\n- Respiratory failure\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing COPD, conducting spirometry, managing acute exacerbations, and providing education on smoking cessation and inhaler techniques. They should also be aware of when to refer to respiratory specialists.\n\n### When to Escalate to Senior/Specialist\nRefer to a respiratory physician if there is a lack of response to treatment, frequent exacerbations, or if the patient requires long-term oxygen therapy.\n\n### Key Safety Considerations\nMonitor for signs of respiratory failure, especially during acute exacerbations. Ensure appropriate use of oxygen therapy to avoid hypercapnia in COPD patients. Educate patients on inhaler technique and adherence to prescribed therapies.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease characterized by persistent respiratory symptoms and airflow limitation due to airway and/or alveolar abnormalities, primarily caused by significant exposure to noxious particles or gases, most commonly from smoking.",
+      "epidemiology": "COPD affects approximately 3 million people in the UK, with a prevalence of about 1 in 10 adults over 40 years. It is a leading cause of morbidity and mortality worldwide, with increasing incidence due to aging populations and continued smoking rates.",
+      "pathophysiology": "COPD is primarily caused by chronic inflammation of the airways, leading to structural changes such as airway narrowing, destruction of alveoli (emphysema), and mucus hypersecretion. This results in airflow limitation, impaired gas exchange, and respiratory symptoms."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic cough",
+        "Sputum production",
+        "Dyspnea (shortness of breath) on exertion",
+        "Wheezing",
+        "Chest tightness"
+      ],
+      "signs": [
+        "Prolonged expiration",
+        "Use of accessory muscles of respiration",
+        "Cyanosis",
+        "Pursed-lip breathing",
+        "Decreased breath sounds",
+        "Barrel chest (in advanced cases)"
+      ],
+      "atypicalPresentations": [
+        "Acute exacerbations with increased sputum purulence",
+        "Weight loss and muscle wasting in advanced disease",
+        "Cor pulmonale (right heart failure) due to pulmonary hypertension"
+      ],
+      "redFlags": [
+        "Severe dyspnea at rest",
+        "New onset of hemoptysis",
+        "Rapid deterioration in symptoms",
+        "Signs of respiratory failure (e.g., confusion, cyanosis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Spirometry (to confirm airflow limitation)",
+        "Chest X-ray (to rule out other conditions)",
+        "Full blood count (to check for polycythemia)"
+      ],
+      "secondLine": [
+        "CT chest (to assess for emphysema and other lung pathology)",
+        "Alpha-1 antitrypsin level (in younger patients or atypical cases)"
+      ],
+      "specialistTests": [
+        "Arterial blood gases (ABG) to assess gas exchange",
+        "Exercise testing (e.g., 6-minute walk test)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of COPD is based on a history of exposure to risk factors, presence of respiratory symptoms, and confirmation of airflow limitation (FEV1/FVC < 0.7) on spirometry.",
+      "differentials": [
+        "Asthma",
+        "Bronchiectasis",
+        "Interstitial lung disease",
+        "Heart failure",
+        "Lung cancer"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Short-acting bronchodilators (e.g., salbutamol) via nebulizer or metered-dose inhaler (MDI)",
+          "Systemic corticosteroids (e.g., prednisolone 30-40 mg daily for 5-7 days)",
+          "Antibiotics if there is evidence of bacterial infection"
+        ],
+        "secondLine": [
+          "Oxygen therapy (target SpO2 88-92%)",
+          "Non-invasive ventilation (NIV) in severe exacerbations"
+        ],
+        "procedures": [
+          "Bronchoscopy (for diagnostic purposes in suspected malignancy or infection)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Smoking cessation support (nicotine replacement therapy, counseling)",
+          "Long-acting bronchodilators (e.g., tiotropium)",
+          "Pulmonary rehabilitation"
+        ],
+        "secondLine": [
+          "Inhaled corticosteroids (ICS) for patients with frequent exacerbations",
+          "Phosphodiesterase-4 inhibitors (e.g., roflumilast) for severe COPD"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and exacerbation frequency",
+          "Annual influenza and pneumococcal vaccinations"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Salbutamol",
+          "mechanism": "Short-acting beta-2 agonist causing bronchodilation",
+          "dosing": "100-200 mcg via MDI as needed, up to 4 times daily",
+          "sideEffects": "Tachycardia, tremor, hypokalemia",
+          "notes": "Use as rescue medication for acute symptoms."
+        },
+        {
+          "name": "Tiotropium",
+          "mechanism": "Long-acting anticholinergic causing bronchodilation",
+          "dosing": "18 mcg once daily via inhaler",
+          "sideEffects": "Dry mouth, constipation, urinary retention",
+          "notes": "Used for maintenance therapy."
+        },
+        {
+          "name": "Prednisolone",
+          "mechanism": "Anti-inflammatory corticosteroid",
+          "dosing": "30-40 mg orally once daily for 5-7 days during exacerbations",
+          "sideEffects": "Hyperglycemia, weight gain, osteoporosis",
+          "notes": "Short-term use during exacerbations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bronchoscopy",
+          "description": "A procedure to visualize the airways and obtain samples for diagnosis.",
+          "indications": "Suspected lung cancer, infection, or foreign body aspiration.",
+          "risks": "Bleeding, infection, pneumothorax."
+        }
+      ]
+    },
+    "prognosis": "COPD is a progressive disease with a variable course. Early diagnosis and management can improve quality of life and reduce exacerbations. The 5-year survival rate is approximately 50% in severe cases.",
+    "complications": [
+      "Frequent respiratory infections",
+      "Acute exacerbations requiring hospitalization",
+      "Pulmonary hypertension",
+      "Cor pulmonale (right heart failure)",
+      "Respiratory failure"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing COPD, conducting spirometry, managing acute exacerbations, and providing education on smoking cessation and inhaler techniques. They should also be aware of when to refer to respiratory specialists.",
+    "escalation": "Refer to a respiratory physician if there is a lack of response to treatment, frequent exacerbations, or if the patient requires long-term oxygen therapy.",
+    "keySafetyConsiderations": "Monitor for signs of respiratory failure, especially during acute exacerbations. Ensure appropriate use of oxygen therapy to avoid hypercapnia in COPD patients. Educate patients on inhaler technique and adherence to prescribed therapies."
+  }
+}

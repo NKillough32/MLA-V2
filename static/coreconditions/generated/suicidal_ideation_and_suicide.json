@@ -1,0 +1,133 @@
+{
+  "id": "suicidal_ideation_and_suicide",
+  "name": "Suicidal ideation and Suicide",
+  "domains": [
+    "Palliative Care"
+  ],
+  "generatedAt": "2025-12-17T20:59:45.169552",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Suicidal ideation and Suicide: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSuicidal ideation refers to thoughts about self-harm or suicide, which can range from fleeting thoughts to detailed planning. Suicide is the act of intentionally ending one’s own life.\n\n### Epidemiology\nSuicidal ideation affects approximately 9.2% of adults in the U.S. at some point in their lives. It is more prevalent in individuals with mental health disorders, particularly depression, anxiety, and substance use disorders.\n\n### Essential Pathophysiology\nThe pathophysiology of suicidal ideation is complex and multifactorial, involving neurobiological, psychological, and social factors. Neurotransmitter imbalances (e.g., serotonin, norepinephrine), genetic predispositions, and psychosocial stressors contribute to the risk.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Persistent sadness or hopelessness\n- Feelings of worthlessness or guilt\n- Anxiety or agitation\n- Withdrawal from friends and activities\n- Changes in sleep or appetite\n- Substance abuse\n\n### Key Signs\n- Increased risk-taking behavior\n- Neglect of personal hygiene\n- Expressions of hopelessness\n- Talking about feeling trapped or in pain\n- Giving away possessions\n\n### Atypical Presentations\n- Sudden improvement in mood after a period of depression (may indicate decision to act)\n- Physical complaints without clear medical cause\n\n### Red Flags Requiring Immediate Action\n- Direct statements about wanting to die\n- Specific plans or means to commit suicide\n- History of previous suicide attempts\n- Family history of suicide or mental illness\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview and mental status examination\n- Risk assessment tools (e.g., Columbia-Suicide Severity Rating Scale)\n- Physical examination to rule out medical causes\n\n### Second-line Investigations\n- Laboratory tests (e.g., CBC, metabolic panel) to assess for underlying conditions\n- Screening for substance use disorders\n\n### Specialist Tests\n- Psychiatric evaluation by a mental health professional\n- Neuroimaging (if indicated by atypical presentations)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of suicidal ideation is based on clinical assessment, including the presence of thoughts of self-harm, intent, and a plan. It may be part of a broader diagnosis of a mental health disorder (e.g., Major Depressive Disorder).\n\n### Key Differential Diagnoses to Exclude\n- Major Depressive Disorder\n- Bipolar Disorder\n- Anxiety Disorders\n- Post-Traumatic Stress Disorder (PTSD)\n- Substance Use Disorders\n- Personality Disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ensure patient safety (remove means of self-harm)\n- Engage in supportive conversation\n- Consider hospitalization if risk is high\n\n#### Second-line Treatments\n- Involve mental health services for immediate assessment\n- Consider pharmacotherapy (e.g., SSRIs)\n\n#### Emergency Procedures\n- Crisis intervention (e.g., safety planning, emergency psychiatric evaluation)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Psychotherapy (e.g., Cognitive Behavioral Therapy, Dialectical Behavior Therapy)\n- Regular follow-up appointments\n\n#### Second-line Treatments\n- Medication management (e.g., SSRIs, mood stabilizers)\n- Group therapy or support groups\n\n#### Monitoring Requirements\n- Regular assessment of suicidal thoughts and behaviors\n- Monitoring for medication side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Fluoxetine (Prozac)\n- **Mechanism of Action**: Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.\n- **Typical Dosing Range**: Initial: 20 mg daily; may increase to 60 mg based on response.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.\n- **When to Use vs. Alternatives**: Considered first-line for depression and anxiety; monitor closely during dose changes.\n\n#### Sertraline (Zoloft)\n- **Mechanism of Action**: SSRI that enhances serotonin activity in the central nervous system.\n- **Typical Dosing Range**: Initial: 50 mg daily; may increase to 200 mg based on response.\n- **Key Side Effects/Contraindications**: Diarrhea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.\n- **When to Use vs. Alternatives**: Effective for depression, anxiety, and PTSD.\n\n### Procedures\n\n#### Crisis intervention\n- **What it Involves**: Immediate support and safety planning for individuals at risk of suicide.\n- **Indications**: High risk of self-harm or suicide; acute distress.\n- **Key Risks/Complications**: Potential for escalation of suicidal thoughts if not handled sensitively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for individuals with suicidal ideation varies widely. Early intervention and appropriate treatment can significantly reduce risk. However, individuals with a history of suicide attempts or severe mental illness have a higher risk of future attempts.\n\n### Important Complications to Watch For\n- Increased risk of completed suicide\n- Development of chronic mental health disorders\n- Impact on family and social relationships\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should conduct thorough assessments, ensure patient safety, initiate appropriate referrals, and provide empathetic support. They should also be aware of local mental health resources and crisis intervention services.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with active suicidal ideation, immediate psychiatric evaluation is necessary. If the patient is at imminent risk, hospitalization may be required.\n\n### Key Safety Considerations\nAlways assess the immediate safety of the patient. Remove any means of self-harm from the environment. Maintain open communication and provide a supportive environment.\n",
+  "content": {
+    "overview": {
+      "definition": "Suicidal ideation refers to thoughts about self-harm or suicide, which can range from fleeting thoughts to detailed planning. Suicide is the act of intentionally ending one’s own life.",
+      "epidemiology": "Suicidal ideation affects approximately 9.2% of adults in the U.S. at some point in their lives. It is more prevalent in individuals with mental health disorders, particularly depression, anxiety, and substance use disorders.",
+      "pathophysiology": "The pathophysiology of suicidal ideation is complex and multifactorial, involving neurobiological, psychological, and social factors. Neurotransmitter imbalances (e.g., serotonin, norepinephrine), genetic predispositions, and psychosocial stressors contribute to the risk."
+    },
+    "recognition": {
+      "symptoms": [
+        "Persistent sadness or hopelessness",
+        "Feelings of worthlessness or guilt",
+        "Anxiety or agitation",
+        "Withdrawal from friends and activities",
+        "Changes in sleep or appetite",
+        "Substance abuse"
+      ],
+      "signs": [
+        "Increased risk-taking behavior",
+        "Neglect of personal hygiene",
+        "Expressions of hopelessness",
+        "Talking about feeling trapped or in pain",
+        "Giving away possessions"
+      ],
+      "atypicalPresentations": [
+        "Sudden improvement in mood after a period of depression (may indicate decision to act)",
+        "Physical complaints without clear medical cause"
+      ],
+      "redFlags": [
+        "Direct statements about wanting to die",
+        "Specific plans or means to commit suicide",
+        "History of previous suicide attempts",
+        "Family history of suicide or mental illness"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview and mental status examination",
+        "Risk assessment tools (e.g., Columbia-Suicide Severity Rating Scale)",
+        "Physical examination to rule out medical causes"
+      ],
+      "secondLine": [
+        "Laboratory tests (e.g., CBC, metabolic panel) to assess for underlying conditions",
+        "Screening for substance use disorders"
+      ],
+      "specialistTests": [
+        "Psychiatric evaluation by a mental health professional",
+        "Neuroimaging (if indicated by atypical presentations)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of suicidal ideation is based on clinical assessment, including the presence of thoughts of self-harm, intent, and a plan. It may be part of a broader diagnosis of a mental health disorder (e.g., Major Depressive Disorder).",
+      "differentials": [
+        "Major Depressive Disorder",
+        "Bipolar Disorder",
+        "Anxiety Disorders",
+        "Post-Traumatic Stress Disorder (PTSD)",
+        "Substance Use Disorders",
+        "Personality Disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ensure patient safety (remove means of self-harm)",
+          "Engage in supportive conversation",
+          "Consider hospitalization if risk is high"
+        ],
+        "secondLine": [
+          "Involve mental health services for immediate assessment",
+          "Consider pharmacotherapy (e.g., SSRIs)"
+        ],
+        "procedures": [
+          "Crisis intervention (e.g., safety planning, emergency psychiatric evaluation)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Psychotherapy (e.g., Cognitive Behavioral Therapy, Dialectical Behavior Therapy)",
+          "Regular follow-up appointments"
+        ],
+        "secondLine": [
+          "Medication management (e.g., SSRIs, mood stabilizers)",
+          "Group therapy or support groups"
+        ],
+        "monitoring": [
+          "Regular assessment of suicidal thoughts and behaviors",
+          "Monitoring for medication side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Fluoxetine (Prozac)",
+          "mechanism": "Selective serotonin reuptake inhibitor (SSRI) that increases serotonin levels in the brain.",
+          "dosing": "Initial: 20 mg daily; may increase to 60 mg based on response.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.",
+          "notes": "Considered first-line for depression and anxiety; monitor closely during dose changes."
+        },
+        {
+          "name": "Sertraline (Zoloft)",
+          "mechanism": "SSRI that enhances serotonin activity in the central nervous system.",
+          "dosing": "Initial: 50 mg daily; may increase to 200 mg based on response.",
+          "sideEffects": "Diarrhea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in young adults.",
+          "notes": "Effective for depression, anxiety, and PTSD."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Crisis intervention",
+          "description": "Immediate support and safety planning for individuals at risk of suicide.",
+          "indications": "High risk of self-harm or suicide; acute distress.",
+          "risks": "Potential for escalation of suicidal thoughts if not handled sensitively."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for individuals with suicidal ideation varies widely. Early intervention and appropriate treatment can significantly reduce risk. However, individuals with a history of suicide attempts or severe mental illness have a higher risk of future attempts.",
+    "complications": [
+      "Increased risk of completed suicide",
+      "Development of chronic mental health disorders",
+      "Impact on family and social relationships"
+    ],
+    "foundationDoctorRole": "Foundation doctors should conduct thorough assessments, ensure patient safety, initiate appropriate referrals, and provide empathetic support. They should also be aware of local mental health resources and crisis intervention services.",
+    "escalation": "If a patient presents with active suicidal ideation, immediate psychiatric evaluation is necessary. If the patient is at imminent risk, hospitalization may be required.",
+    "keySafetyConsiderations": "Always assess the immediate safety of the patient. Remove any means of self-harm from the environment. Maintain open communication and provide a supportive environment."
+  }
+}

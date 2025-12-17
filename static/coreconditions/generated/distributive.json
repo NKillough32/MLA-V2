@@ -1,0 +1,151 @@
+{
+  "id": "distributive",
+  "name": "Distributive",
+  "domains": [
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T21:03:49.815195",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Distributive: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDistributive shock is a type of shock characterized by widespread vasodilation leading to inadequate tissue perfusion despite normal or increased cardiac output. It is commonly associated with conditions such as sepsis, anaphylaxis, and neurogenic shock.\n\n### Epidemiology\nDistributive shock is a common cause of shock in critically ill patients, particularly in the context of sepsis, which affects approximately 1 in 3 patients in intensive care units (ICUs).\n\n### Essential Pathophysiology\nIn distributive shock, there is a failure of the vascular system to maintain adequate blood flow due to loss of vascular tone. This can be due to inflammatory mediators in sepsis, histamine release in anaphylaxis, or loss of sympathetic tone in neurogenic shock, leading to decreased systemic vascular resistance and resultant hypotension.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hypotension\n- Tachycardia\n- Fever or hypothermia (in sepsis)\n- Shortness of breath\n- Altered mental status\n\n### Key Signs\n- Warm, flushed skin (in sepsis or anaphylaxis)\n- Bounding pulses\n- Decreased urine output\n- Tachypnea\n- Confusion or lethargy\n\n### Atypical Presentations\n- Cold, clammy skin (in late sepsis)\n- Bradycardia (in neurogenic shock)\n- Absence of fever in elderly patients with sepsis\n\n### Red Flags Requiring Immediate Action\n- Persistent hypotension despite fluid resuscitation\n- Altered mental status\n- Rapid deterioration in clinical condition\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Blood pressure measurement\n- Heart rate monitoring\n- Pulse oximetry\n- Blood glucose level\n- Basic metabolic panel\n\n### Second-line Investigations\n- Lactate level\n- Complete blood count (CBC)\n- Blood cultures\n- Urinalysis\n- Chest X-ray\n\n### Specialist Tests\n- Echocardiography\n- CT scan of the abdomen/pelvis (if intra-abdominal sepsis is suspected)\n- Vascular imaging (if vascular obstruction is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of distributive shock is based on clinical presentation of hypotension, evidence of inadequate perfusion, and identification of the underlying cause (e.g., sepsis, anaphylaxis).\n\n### Key Differential Diagnoses to Exclude\n- Hypovolemic shock\n- Cardiogenic shock\n- Obstructive shock\n- Neurogenic shock\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (crystalloids)\n- Vasopressors (e.g., norepinephrine)\n\n#### Second-line Treatments\n- Inotropic support (e.g., dobutamine)\n- Corticosteroids (if adrenal insufficiency is suspected)\n\n#### Emergency Procedures\n- Central venous catheter placement for monitoring and medication administration\n- Intra-arterial blood pressure monitoring (if severe shock)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Management of underlying cause (e.g., antibiotics for sepsis)\n- Fluid management\n\n#### Second-line Treatments\n- Long-term vasopressor therapy in refractory cases\n\n#### Monitoring Requirements\n- Regular assessment of vital signs\n- Monitoring of urine output\n- Lactate clearance\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Norepinephrine\n- **Mechanism of Action**: Alpha-1 agonist causing vasoconstriction and increased systemic vascular resistance.\n- **Typical Dosing Range**: Start at 0.05-0.5 mcg/kg/min, titrate to effect.\n- **Key Side Effects/Contraindications**: Tachycardia, peripheral ischemia, arrhythmias.\n- **When to Use vs. Alternatives**: First-line vasopressor for septic shock.\n\n#### Dopamine\n- **Mechanism of Action**: Dose-dependent effects: low doses increase renal perfusion, high doses cause vasoconstriction.\n- **Typical Dosing Range**: Start at 2-20 mcg/kg/min, titrate based on response.\n- **Key Side Effects/Contraindications**: Tachycardia, arrhythmias, nausea.\n- **When to Use vs. Alternatives**: Use with caution; norepinephrine is preferred.\n\n#### Hydrocortisone\n- **Mechanism of Action**: Glucocorticoid that reduces inflammation and supports vascular tone.\n- **Typical Dosing Range**: 200 mg IV daily in divided doses for septic shock.\n- **Key Side Effects/Contraindications**: Hyperglycemia, increased risk of infection, adrenal suppression.\n- **When to Use vs. Alternatives**: Consider in septic shock with adrenal insufficiency.\n\n### Procedures\n\n#### Central Venous Catheter Placement\n- **What it Involves**: Insertion of a catheter into a central vein for medication administration and monitoring.\n- **Indications**: Severe shock requiring vasopressors, fluid resuscitation, or hemodynamic monitoring.\n- **Key Risks/Complications**: Infection, thrombosis, pneumothorax, arterial injury.\n\n#### Intra-Arterial Blood Pressure Monitoring\n- **What it Involves**: Placement of a catheter in an artery to continuously monitor blood pressure.\n- **Indications**: Severe hypotension or unstable hemodynamics.\n- **Key Risks/Complications**: Infection, limb ischemia, hematoma.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of distributive shock depends on the underlying cause and the timeliness of treatment. Early recognition and management can significantly improve outcomes, while delayed treatment can lead to multi-organ failure and increased mortality rates.\n\n### Important Complications to Watch For\n- Multi-organ failure\n- Acute respiratory distress syndrome (ARDS)\n- Renal failure\n- Thromboembolic events\n- Long-term cognitive impairment\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing signs of distributive shock, initiating fluid resuscitation, and administering vasopressors under supervision. They should also be able to perform basic investigations and communicate effectively with senior staff regarding patient deterioration.\n\n### When to Escalate to Senior/Specialist\nIf a patient shows signs of distributive shock, escalate care to a senior clinician if there is persistent hypotension despite initial fluid resuscitation or if the patient’s condition is rapidly deteriorating.\n\n### Key Safety Considerations\nEnsure accurate monitoring of vital signs, especially blood pressure and heart rate. Be vigilant for signs of fluid overload, particularly in patients with heart failure or renal impairment. Always follow protocols for the administration of vasopressors and ensure appropriate central line placement to minimize complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Distributive shock is a type of shock characterized by widespread vasodilation leading to inadequate tissue perfusion despite normal or increased cardiac output. It is commonly associated with conditions such as sepsis, anaphylaxis, and neurogenic shock.",
+      "epidemiology": "Distributive shock is a common cause of shock in critically ill patients, particularly in the context of sepsis, which affects approximately 1 in 3 patients in intensive care units (ICUs).",
+      "pathophysiology": "In distributive shock, there is a failure of the vascular system to maintain adequate blood flow due to loss of vascular tone. This can be due to inflammatory mediators in sepsis, histamine release in anaphylaxis, or loss of sympathetic tone in neurogenic shock, leading to decreased systemic vascular resistance and resultant hypotension."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hypotension",
+        "Tachycardia",
+        "Fever or hypothermia (in sepsis)",
+        "Shortness of breath",
+        "Altered mental status"
+      ],
+      "signs": [
+        "Warm, flushed skin (in sepsis or anaphylaxis)",
+        "Bounding pulses",
+        "Decreased urine output",
+        "Tachypnea",
+        "Confusion or lethargy"
+      ],
+      "atypicalPresentations": [
+        "Cold, clammy skin (in late sepsis)",
+        "Bradycardia (in neurogenic shock)",
+        "Absence of fever in elderly patients with sepsis"
+      ],
+      "redFlags": [
+        "Persistent hypotension despite fluid resuscitation",
+        "Altered mental status",
+        "Rapid deterioration in clinical condition"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Blood pressure measurement",
+        "Heart rate monitoring",
+        "Pulse oximetry",
+        "Blood glucose level",
+        "Basic metabolic panel"
+      ],
+      "secondLine": [
+        "Lactate level",
+        "Complete blood count (CBC)",
+        "Blood cultures",
+        "Urinalysis",
+        "Chest X-ray"
+      ],
+      "specialistTests": [
+        "Echocardiography",
+        "CT scan of the abdomen/pelvis (if intra-abdominal sepsis is suspected)",
+        "Vascular imaging (if vascular obstruction is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of distributive shock is based on clinical presentation of hypotension, evidence of inadequate perfusion, and identification of the underlying cause (e.g., sepsis, anaphylaxis).",
+      "differentials": [
+        "Hypovolemic shock",
+        "Cardiogenic shock",
+        "Obstructive shock",
+        "Neurogenic shock"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (crystalloids)",
+          "Vasopressors (e.g., norepinephrine)"
+        ],
+        "secondLine": [
+          "Inotropic support (e.g., dobutamine)",
+          "Corticosteroids (if adrenal insufficiency is suspected)"
+        ],
+        "procedures": [
+          "Central venous catheter placement for monitoring and medication administration",
+          "Intra-arterial blood pressure monitoring (if severe shock)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Management of underlying cause (e.g., antibiotics for sepsis)",
+          "Fluid management"
+        ],
+        "secondLine": [
+          "Long-term vasopressor therapy in refractory cases"
+        ],
+        "monitoring": [
+          "Regular assessment of vital signs",
+          "Monitoring of urine output",
+          "Lactate clearance"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Norepinephrine",
+          "mechanism": "Alpha-1 agonist causing vasoconstriction and increased systemic vascular resistance.",
+          "dosing": "Start at 0.05-0.5 mcg/kg/min, titrate to effect.",
+          "sideEffects": "Tachycardia, peripheral ischemia, arrhythmias.",
+          "notes": "First-line vasopressor for septic shock."
+        },
+        {
+          "name": "Dopamine",
+          "mechanism": "Dose-dependent effects: low doses increase renal perfusion, high doses cause vasoconstriction.",
+          "dosing": "Start at 2-20 mcg/kg/min, titrate based on response.",
+          "sideEffects": "Tachycardia, arrhythmias, nausea.",
+          "notes": "Use with caution; norepinephrine is preferred."
+        },
+        {
+          "name": "Hydrocortisone",
+          "mechanism": "Glucocorticoid that reduces inflammation and supports vascular tone.",
+          "dosing": "200 mg IV daily in divided doses for septic shock.",
+          "sideEffects": "Hyperglycemia, increased risk of infection, adrenal suppression.",
+          "notes": "Consider in septic shock with adrenal insufficiency."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Central Venous Catheter Placement",
+          "description": "Insertion of a catheter into a central vein for medication administration and monitoring.",
+          "indications": "Severe shock requiring vasopressors, fluid resuscitation, or hemodynamic monitoring.",
+          "risks": "Infection, thrombosis, pneumothorax, arterial injury."
+        },
+        {
+          "name": "Intra-Arterial Blood Pressure Monitoring",
+          "description": "Placement of a catheter in an artery to continuously monitor blood pressure.",
+          "indications": "Severe hypotension or unstable hemodynamics.",
+          "risks": "Infection, limb ischemia, hematoma."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of distributive shock depends on the underlying cause and the timeliness of treatment. Early recognition and management can significantly improve outcomes, while delayed treatment can lead to multi-organ failure and increased mortality rates.",
+    "complications": [
+      "Multi-organ failure",
+      "Acute respiratory distress syndrome (ARDS)",
+      "Renal failure",
+      "Thromboembolic events",
+      "Long-term cognitive impairment"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing signs of distributive shock, initiating fluid resuscitation, and administering vasopressors under supervision. They should also be able to perform basic investigations and communicate effectively with senior staff regarding patient deterioration.",
+    "escalation": "If a patient shows signs of distributive shock, escalate care to a senior clinician if there is persistent hypotension despite initial fluid resuscitation or if the patient’s condition is rapidly deteriorating.",
+    "keySafetyConsiderations": "Ensure accurate monitoring of vital signs, especially blood pressure and heart rate. Be vigilant for signs of fluid overload, particularly in patients with heart failure or renal impairment. Always follow protocols for the administration of vasopressors and ensure appropriate central line placement to minimize complications."
+  }
+}
