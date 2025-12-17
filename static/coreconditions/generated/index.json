@@ -1,9 +1,99 @@
 {
-  "generatedAt": "2025-12-17T19:00:37.256330",
-  "totalConditions": 10,
-  "processedCount": 10,
+  "generatedAt": "2025-12-17T22:11:18.978125",
+  "totalConditions": 581,
+  "processedCount": 579,
   "model": "gpt-4o-mini",
   "conditions": [
+    {
+      "id": "febrile_convulsions",
+      "name": "?Febrile convulsions",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "febrile_convulsions.json",
+      "processed": true
+    },
+    {
+      "id": "myasthenia_gravis",
+      "name": "?Myasthenia gravis?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "myasthenia_gravis.json",
+      "processed": true
+    },
+    {
+      "id": "neuromuscular_respiratory_failure",
+      "name": "?Neuromuscular respiratory failure?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "neuromuscular_respiratory_failure.json",
+      "processed": true
+    },
+    {
+      "id": "trigeminal_neuralgia",
+      "name": "?Trigeminal neuralgia",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "trigeminal_neuralgia.json",
+      "processed": true
+    },
+    {
+      "id": "achilles_tendon_rupture",
+      "name": "Achilles tendon rupture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "achilles_tendon_rupture.json",
+      "processed": true
+    },
+    {
+      "id": "acne_vulgaris",
+      "name": "Acne Vulgaris",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "acne_vulgaris.json",
+      "processed": true
+    },
+    {
+      "id": "acoustic_neuroma",
+      "name": "Acoustic neuroma",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "acoustic_neuroma.json",
+      "processed": true
+    },
+    {
+      "id": "acoustic_neuroma",
+      "name": "Acoustic neuroma?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "acoustic_neuroma.json",
+      "processed": true
+    },
+    {
+      "id": "acquired_factors_for_vte",
+      "name": "Acquired factors for VTE",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "acquired_factors_for_vte.json",
+      "processed": true
+    },
+    {
+      "id": "actinic_keratosis",
+      "name": "Actinic Keratosis",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "actinic_keratosis.json",
+      "processed": true
+    },
     {
       "id": "acute_heart_failure",
       "name": "Acute Heart failure",
@@ -11,6 +101,15 @@
         "Cardiology"
       ],
       "filename": "acute_heart_failure.json",
+      "processed": true
+    },
+    {
+      "id": "acute_cholangitis",
+      "name": "Acute cholangitis",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "acute_cholangitis.json",
       "processed": true
     },
     {
@@ -23,12 +122,425 @@
       "processed": true
     },
     {
+      "id": "acute_glaucoma",
+      "name": "Acute glaucoma",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "acute_glaucoma.json",
+      "processed": true
+    },
+    {
+      "id": "acute_hepatic_failure",
+      "name": "Acute hepatic failure",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "acute_hepatic_failure.json",
+      "processed": true
+    },
+    {
+      "id": "acute_hepatitis",
+      "name": "Acute hepatitis",
+      "domains": [
+        "Gastrointestinal",
+        "Paediatrics"
+      ],
+      "filename": "acute_hepatitis.json",
+      "processed": true
+    },
+    {
+      "id": "acute_ischaemic_limb",
+      "name": "Acute ischaemic limb",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "acute_ischaemic_limb.json",
+      "processed": true
+    },
+    {
+      "id": "acute_kidney_injury",
+      "name": "Acute kidney injury",
+      "domains": [
+        "Post-operative care",
+        "Paediatrics"
+      ],
+      "filename": "acute_kidney_injury.json",
+      "processed": true
+    },
+    {
+      "id": "acute_pain_management",
+      "name": "Acute pain management",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "acute_pain_management.json",
+      "processed": true
+    },
+    {
+      "id": "acute_pancreatitis",
+      "name": "Acute pancreatitis",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "acute_pancreatitis.json",
+      "processed": true
+    },
+    {
+      "id": "acute_pericarditis",
+      "name": "Acute pericarditis?",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "acute_pericarditis.json",
+      "processed": true
+    },
+    {
+      "id": "acute_pyelonephritis",
+      "name": "Acute pyelonephritis",
+      "domains": [
+        "Renal",
+        "Urology"
+      ],
+      "filename": "acute_pyelonephritis.json",
+      "processed": true
+    },
+    {
+      "id": "acute_stress_reaction",
+      "name": "Acute stress reaction",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "acute_stress_reaction.json",
+      "processed": true
+    },
+    {
+      "id": "addisons_disease",
+      "name": "Addison?s disease",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "addisons_disease.json",
+      "processed": true
+    },
+    {
+      "id": "adenomyosis",
+      "name": "Adenomyosis",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "adenomyosis.json",
+      "processed": true
+    },
+    {
+      "id": "adverse_drug_reactions",
+      "name": "Adverse Drug Reactions",
+      "domains": [
+        "nan"
+      ],
+      "filename": "adverse_drug_reactions.json",
+      "processed": true
+    },
+    {
+      "id": "age_related_macular_degeneration",
+      "name": "Age-related macular degeneration",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "age_related_macular_degeneration.json",
+      "processed": true
+    },
+    {
+      "id": "alcohol",
+      "name": "Alcohol",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "alcohol.json",
+      "processed": true
+    },
+    {
+      "id": "alcoholic_hepatitis",
+      "name": "Alcoholic hepatitis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "alcoholic_hepatitis.json",
+      "processed": true
+    },
+    {
+      "id": "allergic_contact_dermatitis",
+      "name": "Allergic contact dermatitis",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "allergic_contact_dermatitis.json",
+      "processed": true
+    },
+    {
+      "id": "allergic_disorders",
+      "name": "Allergic disorders",
+      "domains": [
+        "Immunology",
+        "Respiratory",
+        "Rheumatology"
+      ],
+      "filename": "allergic_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "anaemia",
+      "name": "Anaemia",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Post-operative care",
+        "Obstetrics",
+        "Paediatrics"
+      ],
+      "filename": "anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "anaemia_of_chronic_disease",
+      "name": "Anaemia of chronic disease",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "anaemia_of_chronic_disease.json",
+      "processed": true
+    },
+    {
+      "id": "anaemiain_pregnancy",
+      "name": "Anaemiain pregnancy",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "anaemiain_pregnancy.json",
+      "processed": true
+    },
+    {
+      "id": "anaemiaof_coagulation_and_its_disorders",
+      "name": "Anaemiaof coagulation and its disorders",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "anaemiaof_coagulation_and_its_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "anal_and_perianal_lesions_anal_fissure",
+      "name": "Anal and Perianal Lesions - Anal Fissure",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "anal_and_perianal_lesions_anal_fissure.json",
+      "processed": true
+    },
+    {
+      "id": "anal_and_perianal_lesions_haemorrhoids",
+      "name": "Anal and Perianal Lesions - Haemorrhoids",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "anal_and_perianal_lesions_haemorrhoids.json",
+      "processed": true
+    },
+    {
+      "id": "anal_and_perianal_lesions_perianal_abscesses_and_fistulae",
+      "name": "Anal and Perianal Lesions - Perianal abscesses and fistulae",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "anal_and_perianal_lesions_perianal_abscesses_and_fistulae.json",
+      "processed": true
+    },
+    {
+      "id": "anaphylaxis",
+      "name": "Anaphylaxis",
+      "domains": [
+        "Immunology",
+        "Respiratory",
+        "Rheumatology"
+      ],
+      "filename": "anaphylaxis.json",
+      "processed": true
+    },
+    {
       "id": "angina",
       "name": "Angina",
       "domains": [
         "Cardiology"
       ],
       "filename": "angina.json",
+      "processed": true
+    },
+    {
+      "id": "ankle_fracture",
+      "name": "Ankle fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "ankle_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "ankylosing_spondylitis",
+      "name": "Ankylosing spondylitis?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "ankylosing_spondylitis.json",
+      "processed": true
+    },
+    {
+      "id": "anovulatory_cycles",
+      "name": "Anovulatory cycles",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "anovulatory_cycles.json",
+      "processed": true
+    },
+    {
+      "id": "anterior_cruciate_ligament_acl_tear",
+      "name": "Anterior cruciate ligament (ACL) tear",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "anterior_cruciate_ligament_acl_tear.json",
+      "processed": true
+    },
+    {
+      "id": "antibiotic_stewardship",
+      "name": "Antibiotic stewardship",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "antibiotic_stewardship.json",
+      "processed": true
+    },
+    {
+      "id": "anticoagulated_patient_and_bleeding",
+      "name": "Anticoagulated patient and bleeding",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "anticoagulated_patient_and_bleeding.json",
+      "processed": true
+    },
+    {
+      "id": "aortic_aneurysm",
+      "name": "Aortic aneurysm",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "aortic_aneurysm.json",
+      "processed": true
+    },
+    {
+      "id": "aortic_dissection",
+      "name": "Aortic dissection",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "aortic_dissection.json",
+      "processed": true
+    },
+    {
+      "id": "aortic_valve_disease",
+      "name": "Aortic valve disease",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "aortic_valve_disease.json",
+      "processed": true
+    },
+    {
+      "id": "appendicitis",
+      "name": "Appendicitis",
+      "domains": [
+        "Gastrointestinal Surgery",
+        "Paediatrics"
+      ],
+      "filename": "appendicitis.json",
+      "processed": true
+    },
+    {
+      "id": "arrhythmias",
+      "name": "Arrhythmias",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "arrhythmias.json",
+      "processed": true
+    },
+    {
+      "id": "arterial_ulcer",
+      "name": "Arterial ulcer",
+      "domains": [
+        "Plastics"
+      ],
+      "filename": "arterial_ulcer.json",
+      "processed": true
+    },
+    {
+      "id": "arterial_ulcers",
+      "name": "Arterial ulcers",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "arterial_ulcers.json",
+      "processed": true
+    },
+    {
+      "id": "ascites",
+      "name": "Ascites",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "ascites.json",
+      "processed": true
+    },
+    {
+      "id": "assessment_of_needs_and_discharge_planning",
+      "name": "Assessment of Needs and Discharge Planning",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "assessment_of_needs_and_discharge_planning.json",
+      "processed": true
+    },
+    {
+      "id": "asthma",
+      "name": "Asthma",
+      "domains": [
+        "Respiratory",
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Paediatrics"
+      ],
+      "filename": "asthma.json",
+      "processed": true
+    },
+    {
+      "id": "asthmacopd_overalp",
+      "name": "Asthma/COPD Overalp",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "asthmacopd_overalp.json",
+      "processed": true
+    },
+    {
+      "id": "atopic_dermatitis",
+      "name": "Atopic dermatitis",
+      "domains": [
+        "Dermatology",
+        "Paediatrics"
+      ],
+      "filename": "atopic_dermatitis.json",
       "processed": true
     },
     {
@@ -52,6 +564,325 @@
       "processed": true
     },
     {
+      "id": "atrophic_vaginitis",
+      "name": "Atrophic vaginitis",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "atrophic_vaginitis.json",
+      "processed": true
+    },
+    {
+      "id": "attention_deficit_hyperactivity_disorder_adhd",
+      "name": "Attention deficit hyperactivity disorder (ADHD)",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "attention_deficit_hyperactivity_disorder_adhd.json",
+      "processed": true
+    },
+    {
+      "id": "autistic_spectrum_disorder",
+      "name": "Autistic spectrum disorder",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "autistic_spectrum_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "autoimmune_hepatitis",
+      "name": "Autoimmune hepatitis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "autoimmune_hepatitis.json",
+      "processed": true
+    },
+    {
+      "id": "bacterial_and_viral_gi_infections",
+      "name": "Bacterial and viral GI infections",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "bacterial_and_viral_gi_infections.json",
+      "processed": true
+    },
+    {
+      "id": "bacterial_vaginosis",
+      "name": "Bacterial vaginosis",
+      "domains": [
+        "Infection",
+        "Gynaecology"
+      ],
+      "filename": "bacterial_vaginosis.json",
+      "processed": true
+    },
+    {
+      "id": "basal_cell_carcinoma",
+      "name": "Basal cell carcinoma",
+      "domains": [
+        "Dermatology",
+        "Oncology"
+      ],
+      "filename": "basal_cell_carcinoma.json",
+      "processed": true
+    },
+    {
+      "id": "benign_eyelid_disorders",
+      "name": "Benign eyelid disorders",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "benign_eyelid_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "benign_paroxysmal_positional_vertigo",
+      "name": "Benign paroxysmal positional vertigo",
+      "domains": [
+        "Neurology",
+        "ENT"
+      ],
+      "filename": "benign_paroxysmal_positional_vertigo.json",
+      "processed": true
+    },
+    {
+      "id": "biceps_tendon_rupture",
+      "name": "Biceps tendon rupture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "biceps_tendon_rupture.json",
+      "processed": true
+    },
+    {
+      "id": "biliary_atresia",
+      "name": "Biliary atresia",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "biliary_atresia.json",
+      "processed": true
+    },
+    {
+      "id": "bipolar_effective_disorder",
+      "name": "Bipolar effective disorder",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "bipolar_effective_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "blackouts_and_faints",
+      "name": "Blackouts and faints?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "blackouts_and_faints.json",
+      "processed": true
+    },
+    {
+      "id": "bladder_cancer",
+      "name": "Bladder cancer",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "bladder_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "bladder_cancer",
+      "name": "Bladder cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "bladder_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "blepharitis",
+      "name": "Blepharitis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "blepharitis.json",
+      "processed": true
+    },
+    {
+      "id": "blood_transfusion",
+      "name": "Blood transfusion",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "blood_transfusion.json",
+      "processed": true
+    },
+    {
+      "id": "bowens_disease",
+      "name": "Bowen's Disease",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "bowens_disease.json",
+      "processed": true
+    },
+    {
+      "id": "brain_abscess",
+      "name": "Brain abscess?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "brain_abscess.json",
+      "processed": true
+    },
+    {
+      "id": "brain_metastases",
+      "name": "Brain metastases",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "brain_metastases.json",
+      "processed": true
+    },
+    {
+      "id": "brain_metastases",
+      "name": "Brain metastases?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "brain_metastases.json",
+      "processed": true
+    },
+    {
+      "id": "breakdown_in_social_circumstances",
+      "name": "Breakdown in social circumstances?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "breakdown_in_social_circumstances.json",
+      "processed": true
+    },
+    {
+      "id": "breast_abscessmastitis",
+      "name": "Breast abscess/mastitis",
+      "domains": [
+        "Breast"
+      ],
+      "filename": "breast_abscessmastitis.json",
+      "processed": true
+    },
+    {
+      "id": "breast_cancer",
+      "name": "Breast cancer",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "breast_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "breast_cysts",
+      "name": "Breast cysts",
+      "domains": [
+        "Breast"
+      ],
+      "filename": "breast_cysts.json",
+      "processed": true
+    },
+    {
+      "id": "breathlessness",
+      "name": "Breathlessness",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "breathlessness.json",
+      "processed": true
+    },
+    {
+      "id": "bronchiectasis",
+      "name": "Bronchiectasis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "bronchiectasis.json",
+      "processed": true
+    },
+    {
+      "id": "bronchiectasis",
+      "name": "Bronchiectasis?",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "bronchiectasis.json",
+      "processed": true
+    },
+    {
+      "id": "bullous_pemphigoid",
+      "name": "Bullous pemphigoid",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "bullous_pemphigoid.json",
+      "processed": true
+    },
+    {
+      "id": "burns",
+      "name": "Burns",
+      "domains": [
+        "Plastics"
+      ],
+      "filename": "burns.json",
+      "processed": true
+    },
+    {
+      "id": "bursitis",
+      "name": "Bursitis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "copd",
+      "name": "COPD",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "copd.json",
+      "processed": true
+    },
+    {
+      "id": "covid_19",
+      "name": "COVID-19",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "covid_19.json",
+      "processed": true
+    },
+    {
+      "id": "cancer",
+      "name": "Cancer",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "cancer.json",
+      "processed": true
+    },
+    {
+      "id": "candidiasis",
+      "name": "Candidiasis",
+      "domains": [
+        "Infection",
+        "Paediatrics"
+      ],
+      "filename": "candidiasis.json",
+      "processed": true
+    },
+    {
       "id": "cardiac_arrest",
       "name": "Cardiac arrest",
       "domains": [
@@ -63,12 +894,326 @@
       "processed": true
     },
     {
+      "id": "cardiac_tamponade",
+      "name": "Cardiac tamponade",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "cardiac_tamponade.json",
+      "processed": true
+    },
+    {
+      "id": "cardiogenic",
+      "name": "Cardiogenic",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "cardiogenic.json",
+      "processed": true
+    },
+    {
+      "id": "cardiomyopathy",
+      "name": "Cardiomyopathy?",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "cardiomyopathy.json",
+      "processed": true
+    },
+    {
+      "id": "carpal_tunnel_syndrome",
+      "name": "Carpal Tunnel syndrome",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "carpal_tunnel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "cataract",
+      "name": "Cataract",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "cataract.json",
+      "processed": true
+    },
+    {
+      "id": "cauda_equina_syndrome",
+      "name": "Cauda equina syndrome",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "cauda_equina_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "cellulitis",
+      "name": "Cellulitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "cellulitis.json",
+      "processed": true
+    },
+    {
+      "id": "cellulitis",
+      "name": "Cellulitis?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "cellulitis.json",
+      "processed": true
+    },
+    {
+      "id": "central_retinal_artery_occlusion",
+      "name": "Central retinal artery occlusion",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "central_retinal_artery_occlusion.json",
+      "processed": true
+    },
+    {
+      "id": "central_retinal_vein_occlusion",
+      "name": "Central retinal vein occlusion",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "central_retinal_vein_occlusion.json",
+      "processed": true
+    },
+    {
+      "id": "cerebellar_disorders",
+      "name": "Cerebellar disorders",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "cerebellar_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy",
+      "name": "Cerebral palsy and hypoxic ischaemic encephalopathy?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy.json",
+      "processed": true
+    },
+    {
+      "id": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy",
+      "name": "Cerebral palsy and hypoxic-ischaemic encephalopathy",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "cerebral_palsy_and_hypoxic_ischaemic_encephalopathy.json",
+      "processed": true
+    },
+    {
+      "id": "cervical_cancer",
+      "name": "Cervical cancer",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "cervical_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "cervical_cancer",
+      "name": "Cervical cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "cervical_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "cervical_screening_hpv",
+      "name": "Cervical screening (HPV)",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "cervical_screening_hpv.json",
+      "processed": true
+    },
+    {
+      "id": "chlamydia",
+      "name": "Chlamydia",
+      "domains": [
+        "Infection",
+        "Gynaecology"
+      ],
+      "filename": "chlamydia.json",
+      "processed": true
+    },
+    {
+      "id": "cholecystitis",
+      "name": "Cholecystitis",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "cholecystitis.json",
+      "processed": true
+    },
+    {
       "id": "chronic_heart_failure",
       "name": "Chronic Heart Failure",
       "domains": [
         "Cardiology"
       ],
       "filename": "chronic_heart_failure.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_pain",
+      "name": "Chronic Pain",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "chronic_pain.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_cognitive_impairment",
+      "name": "Chronic cognitive impairment",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "chronic_cognitive_impairment.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_fatigue_syndrome",
+      "name": "Chronic fatigue syndrome",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "chronic_fatigue_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_glaucoma",
+      "name": "Chronic glaucoma",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "chronic_glaucoma.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_kidney_disease",
+      "name": "Chronic kidney disease",
+      "domains": [
+        "Haematology",
+        "Renal",
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Paediatrics"
+      ],
+      "filename": "chronic_kidney_disease.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_liver_disease",
+      "name": "Chronic liver disease",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "chronic_liver_disease.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_obstructive_pulmonary_disease",
+      "name": "Chronic obstructive pulmonary disease",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care"
+      ],
+      "filename": "chronic_obstructive_pulmonary_disease.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_pain",
+      "name": "Chronic pain",
+      "domains": [
+        "Rheumatology",
+        "Palliative Care"
+      ],
+      "filename": "chronic_pain.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_pain",
+      "name": "Chronic pain?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "chronic_pain.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_pancreatitis",
+      "name": "Chronic pancreatitis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "chronic_pancreatitis.json",
+      "processed": true
+    },
+    {
+      "id": "cirrhosis",
+      "name": "Cirrhosis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "cirrhosis.json",
+      "processed": true
+    },
+    {
+      "id": "clavicle_fracture",
+      "name": "Clavicle fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "clavicle_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "coeliac_disease",
+      "name": "Coeliac disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "coeliac_disease.json",
+      "processed": true
+    },
+    {
+      "id": "colorectal_tumours",
+      "name": "Colorectal tumours",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "colorectal_tumours.json",
+      "processed": true
+    },
+    {
+      "id": "colorectal_tumours",
+      "name": "Colorectal tumours?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "colorectal_tumours.json",
+      "processed": true
+    },
+    {
+      "id": "compartment_syndrome",
+      "name": "Compartment syndrome",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "compartment_syndrome.json",
       "processed": true
     },
     {
@@ -82,6 +1227,609 @@
       "processed": true
     },
     {
+      "id": "complications_of_wound_healing",
+      "name": "Complications of wound healing",
+      "domains": [
+        "Plastics"
+      ],
+      "filename": "complications_of_wound_healing.json",
+      "processed": true
+    },
+    {
+      "id": "congenital_dislocation_of_the_hip",
+      "name": "Congenital dislocation of the hip",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "congenital_dislocation_of_the_hip.json",
+      "processed": true
+    },
+    {
+      "id": "congenital_heart_disease",
+      "name": "Congenital heart disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "congenital_heart_disease.json",
+      "processed": true
+    },
+    {
+      "id": "conjunctivitis",
+      "name": "Conjunctivitis",
+      "domains": [
+        "Opthalmolgy",
+        "Paediatrics"
+      ],
+      "filename": "conjunctivitis.json",
+      "processed": true
+    },
+    {
+      "id": "conns_syndrome",
+      "name": "Conn?s syndrome",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "conns_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "connective_tissue_and_autoimmune_diseases",
+      "name": "Connective tissue and autoimmune diseases",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "connective_tissue_and_autoimmune_diseases.json",
+      "processed": true
+    },
+    {
+      "id": "constipation",
+      "name": "Constipation",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "constipation.json",
+      "processed": true
+    },
+    {
+      "id": "constrictive_pericarditis",
+      "name": "Constrictive pericarditis",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "constrictive_pericarditis.json",
+      "processed": true
+    },
+    {
+      "id": "contraception",
+      "name": "Contraception",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "contraception.json",
+      "processed": true
+    },
+    {
+      "id": "cord_prolapse",
+      "name": "Cord prolapse",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "cord_prolapse.json",
+      "processed": true
+    },
+    {
+      "id": "cough",
+      "name": "Cough",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "cough.json",
+      "processed": true
+    },
+    {
+      "id": "crystal_arthritis",
+      "name": "Crystal arthritis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "crystal_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "cushings_syndrome",
+      "name": "Cushing's syndrome",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "cushings_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "cushings_disease",
+      "name": "Cushing?s disease",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "cushings_disease.json",
+      "processed": true
+    },
+    {
+      "id": "cushings_syndrome",
+      "name": "Cushing?s syndrome",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "cushings_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "cutaneous_lymphoma",
+      "name": "Cutaneous Lymphoma",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "cutaneous_lymphoma.json",
+      "processed": true
+    },
+    {
+      "id": "cystic_fibrosis",
+      "name": "Cystic Fibrosis",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "cystic_fibrosis.json",
+      "processed": true
+    },
+    {
+      "id": "dequervains_tenosynovitis",
+      "name": "DeQuervain?s tenosynovitis?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "dequervains_tenosynovitis.json",
+      "processed": true
+    },
+    {
+      "id": "degenerative_disc_disease",
+      "name": "Degenerative disc disease",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "degenerative_disc_disease.json",
+      "processed": true
+    },
+    {
+      "id": "delirium_acute_confusional_state",
+      "name": "Delirium (Acute Confusional State)?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "delirium_acute_confusional_state.json",
+      "processed": true
+    },
+    {
+      "id": "delirium_acute_confusional_state",
+      "name": "Delirium (acute confusional state)",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "delirium_acute_confusional_state.json",
+      "processed": true
+    },
+    {
+      "id": "dementia",
+      "name": "Dementia",
+      "domains": [
+        "Neurology",
+        "Psychiatry"
+      ],
+      "filename": "dementia.json",
+      "processed": true
+    },
+    {
+      "id": "dementia",
+      "name": "Dementia?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "dementia.json",
+      "processed": true
+    },
+    {
+      "id": "depression",
+      "name": "Depression",
+      "domains": [
+        "Palliative Care",
+        "Psychiatry",
+        "Obstetrics"
+      ],
+      "filename": "depression.json",
+      "processed": true
+    },
+    {
+      "id": "developmental_delay",
+      "name": "Developmental delay",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "developmental_delay.json",
+      "processed": true
+    },
+    {
+      "id": "diabetes_in_pregnancy_gestational",
+      "name": "Diabetes in pregnancy-Gestational",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "diabetes_in_pregnancy_gestational.json",
+      "processed": true
+    },
+    {
+      "id": "diabetes_in_pregnancy_pre_existing",
+      "name": "Diabetes in pregnancy-pre existing",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "diabetes_in_pregnancy_pre_existing.json",
+      "processed": true
+    },
+    {
+      "id": "diabetes_insipidus",
+      "name": "Diabetes insipidus",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "diabetes_insipidus.json",
+      "processed": true
+    },
+    {
+      "id": "diabetes_mellitus",
+      "name": "Diabetes mellitus",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "diabetes_mellitus.json",
+      "processed": true
+    },
+    {
+      "id": "diabetic_ketoacidosis",
+      "name": "Diabetic ketoacidosis",
+      "domains": [
+        "Endocrine",
+        "Paediatrics"
+      ],
+      "filename": "diabetic_ketoacidosis.json",
+      "processed": true
+    },
+    {
+      "id": "diabetic_nephropathy",
+      "name": "Diabetic nephropathy",
+      "domains": [
+        "Endocrine",
+        "Renal"
+      ],
+      "filename": "diabetic_nephropathy.json",
+      "processed": true
+    },
+    {
+      "id": "diabetic_neuropathy",
+      "name": "Diabetic neuropathy",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "diabetic_neuropathy.json",
+      "processed": true
+    },
+    {
+      "id": "diabetic_retinopathy",
+      "name": "Diabetic retinopathy",
+      "domains": [
+        "Endocrine",
+        "Opthalmolgy"
+      ],
+      "filename": "diabetic_retinopathy.json",
+      "processed": true
+    },
+    {
+      "id": "disease_prevention_screening",
+      "name": "Disease Prevention Screening",
+      "domains": [
+        "nan"
+      ],
+      "filename": "disease_prevention_screening.json",
+      "processed": true
+    },
+    {
+      "id": "disseminated_intravascular_coagulation",
+      "name": "Disseminated intravascular coagulation",
+      "domains": [
+        "Haematology",
+        "Paediatrics"
+      ],
+      "filename": "disseminated_intravascular_coagulation.json",
+      "processed": true
+    },
+    {
+      "id": "distal_radius_fracture",
+      "name": "Distal radius fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "distal_radius_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "distributive",
+      "name": "Distributive",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "distributive.json",
+      "processed": true
+    },
+    {
+      "id": "diverticular_disease",
+      "name": "Diverticular disease",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "diverticular_disease.json",
+      "processed": true
+    },
+    {
+      "id": "dizziness",
+      "name": "Dizziness?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "dizziness.json",
+      "processed": true
+    },
+    {
+      "id": "downs_syndrome",
+      "name": "Downs syndrome",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "downs_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "drug_eruptions",
+      "name": "Drug eruptions?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "drug_eruptions.json",
+      "processed": true
+    },
+    {
+      "id": "drug_induced_hepatitis",
+      "name": "Drug-induced hepatitis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "drug_induced_hepatitis.json",
+      "processed": true
+    },
+    {
+      "id": "drugs",
+      "name": "Drugs",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "drugs.json",
+      "processed": true
+    },
+    {
+      "id": "dysfunctional_uterine_bleeding",
+      "name": "Dysfunctional uterine bleeding",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "dysfunctional_uterine_bleeding.json",
+      "processed": true
+    },
+    {
+      "id": "eating_disorders",
+      "name": "Eating disorders",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "eating_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "eating_disorders",
+      "name": "Eating disorders?",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "eating_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "ectopic_pregnancy",
+      "name": "Ectopic pregnancy",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "ectopic_pregnancy.json",
+      "processed": true
+    },
+    {
+      "id": "elbow_olecranon_bursitis",
+      "name": "Elbow - Olecranon bursitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "elbow_olecranon_bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "elbow_ulnar_nerve_entrapment_cubital_tunnel_syndrome",
+      "name": "Elbow - Ulnar nerve entrapment (cubital tunnel syndrome)",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "elbow_ulnar_nerve_entrapment_cubital_tunnel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "elbow_dislocation",
+      "name": "Elbow dislocation",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "elbow_dislocation.json",
+      "processed": true
+    },
+    {
+      "id": "elder_abuse",
+      "name": "Elder abuse",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "elder_abuse.json",
+      "processed": true
+    },
+    {
+      "id": "encephalitis",
+      "name": "Encephalitis",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "encephalitis.json",
+      "processed": true
+    },
+    {
+      "id": "end_of_life_care",
+      "name": "End of life care",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "end_of_life_care.json",
+      "processed": true
+    },
+    {
+      "id": "endometrial_cancer",
+      "name": "Endometrial cancer",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "endometrial_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "endometrial_cancer",
+      "name": "Endometrial cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "endometrial_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "endometriosis",
+      "name": "Endometriosis",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "endometriosis.json",
+      "processed": true
+    },
+    {
+      "id": "epididymitis_and_orchitis",
+      "name": "Epididymitis and orchitis",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "epididymitis_and_orchitis.json",
+      "processed": true
+    },
+    {
+      "id": "epiglottitis",
+      "name": "Epiglottitis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "epiglottitis.json",
+      "processed": true
+    },
+    {
+      "id": "epilepsy_status_epilepticus",
+      "name": "Epilepsy -?Status epilepticus?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "epilepsy_status_epilepticus.json",
+      "processed": true
+    },
+    {
+      "id": "epilepsy",
+      "name": "Epilepsy?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "epilepsy.json",
+      "processed": true
+    },
+    {
+      "id": "epistaxis",
+      "name": "Epistaxis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "epistaxis.json",
+      "processed": true
+    },
+    {
+      "id": "erectile_dysfunction",
+      "name": "Erectile dysfunction",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "erectile_dysfunction.json",
+      "processed": true
+    },
+    {
+      "id": "erysipelas",
+      "name": "Erysipelas?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "erysipelas.json",
+      "processed": true
+    },
+    {
+      "id": "erythema_multiforme",
+      "name": "Erythema multiforme",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "erythema_multiforme.json",
+      "processed": true
+    },
+    {
+      "id": "erythema_nodosum",
+      "name": "Erythema nodosum",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "erythema_nodosum.json",
+      "processed": true
+    },
+    {
+      "id": "erythroderma",
+      "name": "Erythroderma",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "erythroderma.json",
+      "processed": true
+    },
+    {
       "id": "essential_and_secondary_hypertension",
       "name": "Essential and Secondary Hypertension",
       "domains": [
@@ -92,6 +1840,3385 @@
       "processed": true
     },
     {
+      "id": "essential_and_secondary_hypertension",
+      "name": "Essential and secondary hypertension",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "essential_and_secondary_hypertension.json",
+      "processed": true
+    },
+    {
+      "id": "essential_or_secondary_hypertension",
+      "name": "Essential or secondary hypertension",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "essential_or_secondary_hypertension.json",
+      "processed": true
+    },
+    {
+      "id": "essential_thrombocythaemia",
+      "name": "Essential thrombocythaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "essential_thrombocythaemia.json",
+      "processed": true
+    },
+    {
+      "id": "essential_tremor",
+      "name": "Essential tremor?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "essential_tremor.json",
+      "processed": true
+    },
+    {
+      "id": "evaluation_of_deteriorating_patient",
+      "name": "Evaluation of deteriorating patient",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "evaluation_of_deteriorating_patient.json",
+      "processed": true
+    },
+    {
+      "id": "extradural_haemorrhage",
+      "name": "Extradural haemorrhage?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "extradural_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "faecal_incontinence",
+      "name": "Faecal incontinence",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "faecal_incontinence.json",
+      "processed": true
+    },
+    {
+      "id": "falls",
+      "name": "Falls?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "falls.json",
+      "processed": true
+    },
+    {
+      "id": "febrile_convulsion",
+      "name": "Febrile convulsion",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "febrile_convulsion.json",
+      "processed": true
+    },
+    {
+      "id": "fertility_and_subfertility",
+      "name": "Fertility and subfertility",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "fertility_and_subfertility.json",
+      "processed": true
+    },
+    {
+      "id": "fibroadenoma",
+      "name": "Fibroadenoma",
+      "domains": [
+        "Breast"
+      ],
+      "filename": "fibroadenoma.json",
+      "processed": true
+    },
+    {
+      "id": "fibroids",
+      "name": "Fibroids",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "fibroids.json",
+      "processed": true
+    },
+    {
+      "id": "fibromyalgia",
+      "name": "Fibromyalgia",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "fibromyalgia.json",
+      "processed": true
+    },
+    {
+      "id": "fluid_and_electrolyte_balance",
+      "name": "Fluid and electrolyte balance",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Post-operative care"
+      ],
+      "filename": "fluid_and_electrolyte_balance.json",
+      "processed": true
+    },
+    {
+      "id": "fluid_and_electrolyte_imbalance",
+      "name": "Fluid and electrolyte imbalance?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "fluid_and_electrolyte_imbalance.json",
+      "processed": true
+    },
+    {
+      "id": "folliculitis",
+      "name": "Folliculitis",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "folliculitis.json",
+      "processed": true
+    },
+    {
+      "id": "foot_and_ankle_achilles_tendinitis",
+      "name": "Foot and ankle - Achilles? tendinitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "foot_and_ankle_achilles_tendinitis.json",
+      "processed": true
+    },
+    {
+      "id": "frailty",
+      "name": "Frailty",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "frailty.json",
+      "processed": true
+    },
+    {
+      "id": "frailty_and_comprehensive_geriatric_assessment",
+      "name": "Frailty and Comprehensive Geriatric Assessment?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "frailty_and_comprehensive_geriatric_assessment.json",
+      "processed": true
+    },
+    {
+      "id": "functional_abdominal_pain",
+      "name": "Functional abdominal pain",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "functional_abdominal_pain.json",
+      "processed": true
+    },
+    {
+      "id": "gu_infection_epididymitis_and_orchitis",
+      "name": "GU infection - Epididymitis and orchitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "gu_infection_epididymitis_and_orchitis.json",
+      "processed": true
+    },
+    {
+      "id": "gu_infection_urinary_tract_infection",
+      "name": "GU infection - Urinary tract infection",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "gu_infection_urinary_tract_infection.json",
+      "processed": true
+    },
+    {
+      "id": "gallstones_and_biliary_colic",
+      "name": "Gallstones and biliary colic",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "gallstones_and_biliary_colic.json",
+      "processed": true
+    },
+    {
+      "id": "gangrene_and_necrotising_fasciitis",
+      "name": "Gangrene and necrotising fasciitis",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "gangrene_and_necrotising_fasciitis.json",
+      "processed": true
+    },
+    {
+      "id": "gastric_cancer",
+      "name": "Gastric cancer",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "gastric_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "gastric_cancer",
+      "name": "Gastric cancer?",
+      "domains": [
+        "Gastrointestinal",
+        "Oncology"
+      ],
+      "filename": "gastric_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "gastro_oesophageal_reflux_disease_and_hiatus_hernia",
+      "name": "Gastro-oesophageal reflux disease and hiatus hernia",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "gastro_oesophageal_reflux_disease_and_hiatus_hernia.json",
+      "processed": true
+    },
+    {
+      "id": "gastro_oesophageal_reflux_disorder",
+      "name": "Gastro-oesophageal reflux disorder",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "gastro_oesophageal_reflux_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "gastrointestinal_malignancies",
+      "name": "Gastrointestinal Malignancies",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "gastrointestinal_malignancies.json",
+      "processed": true
+    },
+    {
+      "id": "gastrointestinal_perforation",
+      "name": "Gastrointestinal perforation",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "gastrointestinal_perforation.json",
+      "processed": true
+    },
+    {
+      "id": "generalised_anxiety",
+      "name": "Generalised anxiety",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "generalised_anxiety.json",
+      "processed": true
+    },
+    {
+      "id": "giant_cell_arteritis",
+      "name": "Giant cell arteritis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "giant_cell_arteritis.json",
+      "processed": true
+    },
+    {
+      "id": "giant_cell_arteritis_gca_",
+      "name": "Giant cell arteritis (GCA) ",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "giant_cell_arteritis_gca_.json",
+      "processed": true
+    },
+    {
+      "id": "glomerulonephritis",
+      "name": "Glomerulonephritis?",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "glomerulonephritis.json",
+      "processed": true
+    },
+    {
+      "id": "gonorrhoea",
+      "name": "Gonorrhoea",
+      "domains": [
+        "Infection",
+        "Gynaecology"
+      ],
+      "filename": "gonorrhoea.json",
+      "processed": true
+    },
+    {
+      "id": "greater_trochanter_bursitis",
+      "name": "Greater trochanter bursitis?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "greater_trochanter_bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "hiv_aids",
+      "name": "HIV/ AIDS",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "hiv_aids.json",
+      "processed": true
+    },
+    {
+      "id": "haemochromatosis",
+      "name": "Haemochromatosis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "haemochromatosis.json",
+      "processed": true
+    },
+    {
+      "id": "haemochromatosis_iron_overload",
+      "name": "Haemochromatosis/ iron overload",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemochromatosis_iron_overload.json",
+      "processed": true
+    },
+    {
+      "id": "haemolytic_anaemia",
+      "name": "Haemolytic anaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemolytic_anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "haemolytic_anaemia_autoimmune_haemolytic_anaemia",
+      "name": "Haemolytic anaemia - Autoimmune haemolytic anaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemolytic_anaemia_autoimmune_haemolytic_anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "haemolytic_anaemia_sickle_cell_disease",
+      "name": "Haemolytic anaemia - Sickle cell disease",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemolytic_anaemia_sickle_cell_disease.json",
+      "processed": true
+    },
+    {
+      "id": "haemolytic_anaemia_thalassaemia",
+      "name": "Haemolytic anaemia - Thalassaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemolytic_anaemia_thalassaemia.json",
+      "processed": true
+    },
+    {
+      "id": "haemolytic_disease_of_the_newborn",
+      "name": "Haemolytic disease of the newborn",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemolytic_disease_of_the_newborn.json",
+      "processed": true
+    },
+    {
+      "id": "haemophilia",
+      "name": "Haemophilia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "haemophilia.json",
+      "processed": true
+    },
+    {
+      "id": "hand_and_wrist_carpal_tunnel_syndrome",
+      "name": "Hand and wrist - Carpal Tunnel syndrome",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "hand_and_wrist_carpal_tunnel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "head_injury_and_coma",
+      "name": "Head injury and coma?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "head_injury_and_coma.json",
+      "processed": true
+    },
+    {
+      "id": "head_lice",
+      "name": "Head lice",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "head_lice.json",
+      "processed": true
+    },
+    {
+      "id": "healthcare_associated_infections",
+      "name": "Healthcare associated infections",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "healthcare_associated_infections.json",
+      "processed": true
+    },
+    {
+      "id": "heart_failure",
+      "name": "Heart failure",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "heart_failure.json",
+      "processed": true
+    },
+    {
+      "id": "helicobacter_pylori",
+      "name": "Helicobacter pylori",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "helicobacter_pylori.json",
+      "processed": true
+    },
+    {
+      "id": "henoch_schoenlein_purpura",
+      "name": "Henoch-Schoenlein purpura",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "henoch_schoenlein_purpura.json",
+      "processed": true
+    },
+    {
+      "id": "hepatocellular_cancer",
+      "name": "Hepatocellular cancer",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "hepatocellular_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "hepatocellular_cancer_and_liver_metastasis",
+      "name": "Hepatocellular cancer and Liver metastasis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "hepatocellular_cancer_and_liver_metastasis.json",
+      "processed": true
+    },
+    {
+      "id": "hernias",
+      "name": "Hernias",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "hernias.json",
+      "processed": true
+    },
+    {
+      "id": "herpes_simplex_virus",
+      "name": "Herpes simplex virus",
+      "domains": [
+        "Infection",
+        "Paediatrics"
+      ],
+      "filename": "herpes_simplex_virus.json",
+      "processed": true
+    },
+    {
+      "id": "herpes_simplexvirus",
+      "name": "Herpes simplex?virus",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "herpes_simplexvirus.json",
+      "processed": true
+    },
+    {
+      "id": "hiatus_hernia",
+      "name": "Hiatus Hernia",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "hiatus_hernia.json",
+      "processed": true
+    },
+    {
+      "id": "high_inr_and_bleeding",
+      "name": "High INR and bleeding",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "high_inr_and_bleeding.json",
+      "processed": true
+    },
+    {
+      "id": "hip_fracture",
+      "name": "Hip fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "hip_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "hirschsprungs_disease",
+      "name": "Hirschsprung's disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "hirschsprungs_disease.json",
+      "processed": true
+    },
+    {
+      "id": "human_herpes_viruses",
+      "name": "Human herpes viruses",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "human_herpes_viruses.json",
+      "processed": true
+    },
+    {
+      "id": "human_papilloma_virus",
+      "name": "Human papilloma virus",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "human_papilloma_virus.json",
+      "processed": true
+    },
+    {
+      "id": "human_papilloma_virus",
+      "name": "Human papilloma virus,",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "human_papilloma_virus.json",
+      "processed": true
+    },
+    {
+      "id": "humeral_fracture",
+      "name": "Humeral fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "humeral_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "hypercalcaemia",
+      "name": "Hypercalcaemia",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "hypercalcaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hypercalcaemia",
+      "name": "Hypercalcaemia?",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hypercalcaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hyperemesis_gravidarum",
+      "name": "Hyperemesis gravidarum",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "hyperemesis_gravidarum.json",
+      "processed": true
+    },
+    {
+      "id": "hyperkalaemia",
+      "name": "Hyperkalaemia",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "hyperkalaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hyperlipidaemia",
+      "name": "Hyperlipidaemia",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hyperlipidaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hypernatraemia",
+      "name": "Hypernatraemia",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "hypernatraemia.json",
+      "processed": true
+    },
+    {
+      "id": "hyperosmolar_hyperglycaemic_state",
+      "name": "Hyperosmolar hyperglycaemic state?",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hyperosmolar_hyperglycaemic_state.json",
+      "processed": true
+    },
+    {
+      "id": "hyperparathyroidism",
+      "name": "Hyperparathyroidism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hyperparathyroidism.json",
+      "processed": true
+    },
+    {
+      "id": "hypertensive_kidney_disease",
+      "name": "Hypertensive kidney disease",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "hypertensive_kidney_disease.json",
+      "processed": true
+    },
+    {
+      "id": "hypocalcaemia",
+      "name": "Hypocalcaemia",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hypocalcaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hypoglycaemia",
+      "name": "Hypoglycaemia",
+      "domains": [
+        "Endocrine",
+        "Paediatrics"
+      ],
+      "filename": "hypoglycaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hypokalaemia",
+      "name": "Hypokalaemia",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "hypokalaemia.json",
+      "processed": true
+    },
+    {
+      "id": "hyponatraemia",
+      "name": "Hyponatraemia",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "hyponatraemia.json",
+      "processed": true
+    },
+    {
+      "id": "hypoparathyroidism",
+      "name": "Hypoparathyroidism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hypoparathyroidism.json",
+      "processed": true
+    },
+    {
+      "id": "hyposplenism_and_splenectomy",
+      "name": "Hyposplenism and splenectomy",
+      "domains": [
+        "Haematology",
+        "Paediatrics"
+      ],
+      "filename": "hyposplenism_and_splenectomy.json",
+      "processed": true
+    },
+    {
+      "id": "hypothermia_and_hyperthermia",
+      "name": "Hypothermia and hyperthermia",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "hypothermia_and_hyperthermia.json",
+      "processed": true
+    },
+    {
+      "id": "hypothyroidism",
+      "name": "Hypothyroidism",
+      "domains": [
+        "Endocrine",
+        "Paediatrics"
+      ],
+      "filename": "hypothyroidism.json",
+      "processed": true
+    },
+    {
+      "id": "hypovolaemic",
+      "name": "Hypovolaemic",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "hypovolaemic.json",
+      "processed": true
+    },
+    {
+      "id": "idiopathic_arthritis",
+      "name": "Idiopathic arthritis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "idiopathic_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "idiopathic_intracranial_hypertension",
+      "name": "Idiopathic intracranial hypertension",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "idiopathic_intracranial_hypertension.json",
+      "processed": true
+    },
+    {
+      "id": "idiopathic_pulmonary_fibrosis",
+      "name": "Idiopathic pulmonary fibrosis",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "idiopathic_pulmonary_fibrosis.json",
+      "processed": true
+    },
+    {
+      "id": "idiopathicseronegative_arthritis",
+      "name": "Idiopathic/Seronegative arthritis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "idiopathicseronegative_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "immobility",
+      "name": "Immobility",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "immobility.json",
+      "processed": true
+    },
+    {
+      "id": "immune_thrombocytopaenia_gestational",
+      "name": "Immune thrombocytopaenia (gestational)",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "immune_thrombocytopaenia_gestational.json",
+      "processed": true
+    },
+    {
+      "id": "immune_thrombocytopaenia_neonatal",
+      "name": "Immune thrombocytopaenia (neonatal)",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "immune_thrombocytopaenia_neonatal.json",
+      "processed": true
+    },
+    {
+      "id": "impetigo",
+      "name": "Impetigo",
+      "domains": [
+        "Dermatology",
+        "Paediatrics"
+      ],
+      "filename": "impetigo.json",
+      "processed": true
+    },
+    {
+      "id": "impingement_syndromesubacromial_bursitis",
+      "name": "Impingement syndrome/subacromial bursitis?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "impingement_syndromesubacromial_bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "infectious_colitis",
+      "name": "Infectious colitis",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "infectious_colitis.json",
+      "processed": true
+    },
+    {
+      "id": "infectious_mononucleosis",
+      "name": "Infectious mononucleosis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "infectious_mononucleosis.json",
+      "processed": true
+    },
+    {
+      "id": "infective_keratitis",
+      "name": "Infective keratitis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "infective_keratitis.json",
+      "processed": true
+    },
+    {
+      "id": "infectiveendocarditis",
+      "name": "Infective?Endocarditis",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "infectiveendocarditis.json",
+      "processed": true
+    },
+    {
+      "id": "inflammatory_bowel_disease",
+      "name": "Inflammatory bowel disease",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery",
+        "Paediatrics"
+      ],
+      "filename": "inflammatory_bowel_disease.json",
+      "processed": true
+    },
+    {
+      "id": "inflammatory_bowel_disease_arthropathy",
+      "name": "Inflammatory bowel disease arthropathy",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "inflammatory_bowel_disease_arthropathy.json",
+      "processed": true
+    },
+    {
+      "id": "influenza",
+      "name": "Influenza",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "influenza.json",
+      "processed": true
+    },
+    {
+      "id": "inherited_connective_tissue_diseases",
+      "name": "Inherited connective tissue diseases?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "inherited_connective_tissue_diseases.json",
+      "processed": true
+    },
+    {
+      "id": "inherited_muscular_dystrophies",
+      "name": "Inherited muscular dystrophies",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "inherited_muscular_dystrophies.json",
+      "processed": true
+    },
+    {
+      "id": "inherited_thrombophilia",
+      "name": "Inherited thrombophilia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "inherited_thrombophilia.json",
+      "processed": true
+    },
+    {
+      "id": "intestinal_obstruction_and_ileus",
+      "name": "Intestinal Obstruction and ileus",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "intestinal_obstruction_and_ileus.json",
+      "processed": true
+    },
+    {
+      "id": "intestinal_ischaemia",
+      "name": "Intestinal ischaemia",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "intestinal_ischaemia.json",
+      "processed": true
+    },
+    {
+      "id": "intestinal_obstruction_and_ileus",
+      "name": "Intestinal obstruction and ileus",
+      "domains": [
+        "Palliative Care",
+        "Post-operative care",
+        "Paediatrics"
+      ],
+      "filename": "intestinal_obstruction_and_ileus.json",
+      "processed": true
+    },
+    {
+      "id": "intraparenchymal_haemorrhage",
+      "name": "Intraparenchymal haemorrhage?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "intraparenchymal_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "intussusception",
+      "name": "Intussusception",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "intussusception.json",
+      "processed": true
+    },
+    {
+      "id": "iritis",
+      "name": "Iritis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "iritis.json",
+      "processed": true
+    },
+    {
+      "id": "irritable_bowel_syndrome",
+      "name": "Irritable bowel syndrome",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "irritable_bowel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "irritant_contact_dermatitis",
+      "name": "Irritant contact dermatitis",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "irritant_contact_dermatitis.json",
+      "processed": true
+    },
+    {
+      "id": "ischaemic_heart_disease",
+      "name": "Ischaemic heart disease",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "ischaemic_heart_disease.json",
+      "processed": true
+    },
+    {
+      "id": "ischaemic_stroke",
+      "name": "Ischaemic stroke",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "ischaemic_stroke.json",
+      "processed": true
+    },
+    {
+      "id": "isotonic_fluid_loss",
+      "name": "Isotonic fluid loss",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "isotonic_fluid_loss.json",
+      "processed": true
+    },
+    {
+      "id": "kawasaki_disease",
+      "name": "Kawasaki disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "kawasaki_disease.json",
+      "processed": true
+    },
+    {
+      "id": "labour",
+      "name": "Labour",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "labour.json",
+      "processed": true
+    },
+    {
+      "id": "laryngitis",
+      "name": "Laryngitis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "laryngitis.json",
+      "processed": true
+    },
+    {
+      "id": "leukaemia",
+      "name": "Leukaemia",
+      "domains": [
+        "Haematology",
+        "Paediatrics"
+      ],
+      "filename": "leukaemia.json",
+      "processed": true
+    },
+    {
+      "id": "leukaemia",
+      "name": "Leukaemia?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "leukaemia.json",
+      "processed": true
+    },
+    {
+      "id": "lower_respiratory_tract_infection",
+      "name": "Lower respiratory tract infection",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "lower_respiratory_tract_infection.json",
+      "processed": true
+    },
+    {
+      "id": "lower_respiratory_tract_infection_bronchiolitis",
+      "name": "Lower respiratory tract infection - Bronchiolitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "lower_respiratory_tract_infection_bronchiolitis.json",
+      "processed": true
+    },
+    {
+      "id": "lower_respiratory_tract_infection_pulmonary_tuberculosis",
+      "name": "Lower respiratory tract infection - Pulmonary tuberculosis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "lower_respiratory_tract_infection_pulmonary_tuberculosis.json",
+      "processed": true
+    },
+    {
+      "id": "lower_respiratory_tract_infections",
+      "name": "Lower respiratory tract infections",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "lower_respiratory_tract_infections.json",
+      "processed": true
+    },
+    {
+      "id": "lyme_disease",
+      "name": "Lyme disease",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "lyme_disease.json",
+      "processed": true
+    },
+    {
+      "id": "lymphocytosis_lymphadenopathy_splenomegaly",
+      "name": "Lymphocytosis, lymphadenopathy, splenomegaly",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "lymphocytosis_lymphadenopathy_splenomegaly.json",
+      "processed": true
+    },
+    {
+      "id": "lymphoma",
+      "name": "Lymphoma",
+      "domains": [
+        "Haematology",
+        "Paediatrics"
+      ],
+      "filename": "lymphoma.json",
+      "processed": true
+    },
+    {
+      "id": "lymphoma",
+      "name": "Lymphoma?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "lymphoma.json",
+      "processed": true
+    },
+    {
+      "id": "macrocytic_anaemia",
+      "name": "Macrocytic anaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "macrocytic_anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "major_trauma",
+      "name": "Major trauma",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "major_trauma.json",
+      "processed": true
+    },
+    {
+      "id": "malabsorption",
+      "name": "Malabsorption",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "malabsorption.json",
+      "processed": true
+    },
+    {
+      "id": "malabsorption_coeliac_disease",
+      "name": "Malabsorption -Coeliac disease",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "malabsorption_coeliac_disease.json",
+      "processed": true
+    },
+    {
+      "id": "malaria",
+      "name": "Malaria",
+      "domains": [
+        "Infection",
+        "Paediatrics"
+      ],
+      "filename": "malaria.json",
+      "processed": true
+    },
+    {
+      "id": "malignant_melanoma",
+      "name": "Malignant melanoma",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "malignant_melanoma.json",
+      "processed": true
+    },
+    {
+      "id": "malnutrition",
+      "name": "Malnutrition",
+      "domains": [
+        "Gastrointestinal",
+        "Care of the Elderly",
+        "Nutrition"
+      ],
+      "filename": "malnutrition.json",
+      "processed": true
+    },
+    {
+      "id": "measles",
+      "name": "Measles",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "measles.json",
+      "processed": true
+    },
+    {
+      "id": "medial_and_lateral_epicondylitis",
+      "name": "Medial and lateral epicondylitis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "medial_and_lateral_epicondylitis.json",
+      "processed": true
+    },
+    {
+      "id": "medical_collateral_ligament_mcl_sprain",
+      "name": "Medical collateral ligament (MCL) sprain",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "medical_collateral_ligament_mcl_sprain.json",
+      "processed": true
+    },
+    {
+      "id": "medication_considerations_patient_on_anticoagulant",
+      "name": "Medication considerations - Patient on anticoagulant",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_patient_on_anticoagulant.json",
+      "processed": true
+    },
+    {
+      "id": "medication_considerations_patient_on_oral_contraceptive_pill",
+      "name": "Medication considerations - Patient on oral contraceptive pill",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_patient_on_oral_contraceptive_pill.json",
+      "processed": true
+    },
+    {
+      "id": "medication_considerations_substance_misuse_disorder",
+      "name": "Medication considerations - Substance misuse disorder",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_substance_misuse_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "medication_considerations_patient_on_antiplatelet_therapy",
+      "name": "Medication considerations- Patient on antiplatelet therapy",
+      "domains": [
+        "Pre-operative Care"
+      ],
+      "filename": "medication_considerations_patient_on_antiplatelet_therapy.json",
+      "processed": true
+    },
+    {
+      "id": "melanocytic_naevi",
+      "name": "Melanocytic naevi?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "melanocytic_naevi.json",
+      "processed": true
+    },
+    {
+      "id": "melanoma",
+      "name": "Melanoma?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "melanoma.json",
+      "processed": true
+    },
+    {
+      "id": "meningitis",
+      "name": "Meningitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "meningitis.json",
+      "processed": true
+    },
+    {
+      "id": "meningitis",
+      "name": "Meningitis?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "meningitis.json",
+      "processed": true
+    },
+    {
+      "id": "meniscus_tears",
+      "name": "Meniscus tears",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "meniscus_tears.json",
+      "processed": true
+    },
+    {
+      "id": "menopause",
+      "name": "Menopause",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "menopause.json",
+      "processed": true
+    },
+    {
+      "id": "mental_capacity_concerns",
+      "name": "Mental capacity concerns?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "mental_capacity_concerns.json",
+      "processed": true
+    },
+    {
+      "id": "mesenteric_adenitis",
+      "name": "Mesenteric adenitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "mesenteric_adenitis.json",
+      "processed": true
+    },
+    {
+      "id": "metacarpalphalangeal_fractures",
+      "name": "Metacarpal/phalangeal fractures",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "metacarpalphalangeal_fractures.json",
+      "processed": true
+    },
+    {
+      "id": "metastatic_disease",
+      "name": "Metastatic Disease",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "metastatic_disease.json",
+      "processed": true
+    },
+    {
+      "id": "metastatic_disease",
+      "name": "Metastatic disease",
+      "domains": [
+        "Gastrointestinal",
+        "Respiratory"
+      ],
+      "filename": "metastatic_disease.json",
+      "processed": true
+    },
+    {
+      "id": "metatarsal_stress_fracture",
+      "name": "Metatarsal stress fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "metatarsal_stress_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "microcytic_anaemia",
+      "name": "Microcytic anaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "microcytic_anaemia.json",
+      "processed": true
+    },
+    {
+      "id": "migraine",
+      "name": "Migraine",
+      "domains": [
+        "Neurology",
+        "Paediatrics"
+      ],
+      "filename": "migraine.json",
+      "processed": true
+    },
+    {
+      "id": "mitral_valve_disease",
+      "name": "Mitral valve disease?",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "mitral_valve_disease.json",
+      "processed": true
+    },
+    {
+      "id": "motor_neurone_disease",
+      "name": "Motor neurone disease",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "motor_neurone_disease.json",
+      "processed": true
+    },
+    {
+      "id": "motor_neurone_disease",
+      "name": "Motor neurone disease?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "motor_neurone_disease.json",
+      "processed": true
+    },
+    {
+      "id": "multi_organ_dysfunction_syndrome",
+      "name": "Multi-organ dysfunction syndrome",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "multi_organ_dysfunction_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "multifactorial_falls_management",
+      "name": "Multifactorial falls management?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "multifactorial_falls_management.json",
+      "processed": true
+    },
+    {
+      "id": "multiple_myeloma",
+      "name": "Multiple myeloma",
+      "domains": [
+        "Haematology",
+        "Oncology"
+      ],
+      "filename": "multiple_myeloma.json",
+      "processed": true
+    },
+    {
+      "id": "multiple_sclerosis",
+      "name": "Multiple sclerosis?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "multiple_sclerosis.json",
+      "processed": true
+    },
+    {
+      "id": "mumps",
+      "name": "Mumps",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "mumps.json",
+      "processed": true
+    },
+    {
+      "id": "muscle_disorders_acquired_muscle_disorders_eg_polymyositis_or_drug_induced_myopathies",
+      "name": "Muscle disorders - Acquired muscle disorders (e.g. polymyositis or drug-induced myopathies)",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "muscle_disorders_acquired_muscle_disorders_eg_polymyositis_or_drug_induced_myopathies.json",
+      "processed": true
+    },
+    {
+      "id": "muscle_disorders_inherited_muscular_dystrophies",
+      "name": "Muscle disorders - Inherited muscular dystrophies",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "muscle_disorders_inherited_muscular_dystrophies.json",
+      "processed": true
+    },
+    {
+      "id": "myasthenia_gravis",
+      "name": "Myasthenia gravis",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "myasthenia_gravis.json",
+      "processed": true
+    },
+    {
+      "id": "myeloproliferative_myelodysplastic_disorders",
+      "name": "Myeloproliferative/ myelodysplastic disorders",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "myeloproliferative_myelodysplastic_disorders.json",
+      "processed": true
+    },
+    {
+      "id": "myocarditis",
+      "name": "Myocarditis",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "myocarditis.json",
+      "processed": true
+    },
+    {
+      "id": "mnires_disease",
+      "name": "Mnire's disease",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "mnires_disease.json",
+      "processed": true
+    },
+    {
+      "id": "nausea_and_vomiting",
+      "name": "Nausea and vomiting",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "nausea_and_vomiting.json",
+      "processed": true
+    },
+    {
+      "id": "necrotising_enterocolitis",
+      "name": "Necrotising enterocolitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "necrotising_enterocolitis.json",
+      "processed": true
+    },
+    {
+      "id": "necrotising_fasciitis",
+      "name": "Necrotising fasciitis?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "necrotising_fasciitis.json",
+      "processed": true
+    },
+    {
+      "id": "nephrotic_syndrome",
+      "name": "Nephrotic syndrome",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "nephrotic_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "nephrotic_syndrome",
+      "name": "Nephrotic syndrome?",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "nephrotic_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "nerve_root_entrapmentsciatica",
+      "name": "Nerve root entrapment/sciatica",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "nerve_root_entrapmentsciatica.json",
+      "processed": true
+    },
+    {
+      "id": "neuromuscular_respiratory_failure",
+      "name": "Neuromuscular respiratory failure",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "neuromuscular_respiratory_failure.json",
+      "processed": true
+    },
+    {
+      "id": "neutropaenic_sepsis",
+      "name": "Neutropaenic sepsis?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "neutropaenic_sepsis.json",
+      "processed": true
+    },
+    {
+      "id": "neutropenia",
+      "name": "Neutropenia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "neutropenia.json",
+      "processed": true
+    },
+    {
+      "id": "neutropenic_sepsis",
+      "name": "Neutropenic sepsis",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "neutropenic_sepsis.json",
+      "processed": true
+    },
+    {
+      "id": "non_alcoholic_fatty_liver",
+      "name": "Non-Alcoholic fatty liver",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "non_alcoholic_fatty_liver.json",
+      "processed": true
+    },
+    {
+      "id": "non_accidental_injury",
+      "name": "Non-accidental injury",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "non_accidental_injury.json",
+      "processed": true
+    },
+    {
+      "id": "notifiable_diseases",
+      "name": "Notifiable diseases",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "notifiable_diseases.json",
+      "processed": true
+    },
+    {
+      "id": "nutrition_and_hydration_dehydration",
+      "name": "Nutrition and hydration - Dehydration",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "nutrition_and_hydration_dehydration.json",
+      "processed": true
+    },
+    {
+      "id": "nutrition_and_hydration_malnutrition",
+      "name": "Nutrition and hydration - Malnutrition",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "nutrition_and_hydration_malnutrition.json",
+      "processed": true
+    },
+    {
+      "id": "nutrition_and_hydration_obesity",
+      "name": "Nutrition and hydration - Obesity",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "nutrition_and_hydration_obesity.json",
+      "processed": true
+    },
+    {
+      "id": "ocd",
+      "name": "OCD",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "ocd.json",
+      "processed": true
+    },
+    {
+      "id": "obesity",
+      "name": "Obesity",
+      "domains": [
+        "Endocrine",
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Obstetrics"
+      ],
+      "filename": "obesity.json",
+      "processed": true
+    },
+    {
+      "id": "obstructive",
+      "name": "Obstructive",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "obstructive.json",
+      "processed": true
+    },
+    {
+      "id": "obstructive_sleep_apnoea",
+      "name": "Obstructive Sleep Apnoea",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "obstructive_sleep_apnoea.json",
+      "processed": true
+    },
+    {
+      "id": "obstructive_sleep_apnoea",
+      "name": "Obstructive sleep apnoea",
+      "domains": [
+        "Pre-operative Care",
+        "Paediatrics"
+      ],
+      "filename": "obstructive_sleep_apnoea.json",
+      "processed": true
+    },
+    {
+      "id": "ocular_motor_nerve_palsies_346",
+      "name": "Ocular motor nerve palsies (3,4,6)",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "ocular_motor_nerve_palsies_346.json",
+      "processed": true
+    },
+    {
+      "id": "oesophageal_cancer",
+      "name": "Oesophageal cancer",
+      "domains": [
+        "Gastrointestinal",
+        "Oncology",
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "oesophageal_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "olecranon_fracture",
+      "name": "Olecranon fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "olecranon_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "optic_neuritis",
+      "name": "Optic neuritis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "optic_neuritis.json",
+      "processed": true
+    },
+    {
+      "id": "orbital_and_periorbital_cellulitis",
+      "name": "Orbital and periorbital cellulitis",
+      "domains": [
+        "Opthalmolgy",
+        "Paediatrics"
+      ],
+      "filename": "orbital_and_periorbital_cellulitis.json",
+      "processed": true
+    },
+    {
+      "id": "osteoarthritis",
+      "name": "Osteoarthritis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "osteoarthritis.json",
+      "processed": true
+    },
+    {
+      "id": "osteomyelitis",
+      "name": "Osteomyelitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "osteomyelitis.json",
+      "processed": true
+    },
+    {
+      "id": "osteomyelitis",
+      "name": "Osteomyelitis?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "osteomyelitis.json",
+      "processed": true
+    },
+    {
+      "id": "osteoporosis",
+      "name": "Osteoporosis?",
+      "domains": [
+        "Rheumatology",
+        "Care of the Elderly"
+      ],
+      "filename": "osteoporosis.json",
+      "processed": true
+    },
+    {
+      "id": "other_eczema",
+      "name": "Other eczema",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "other_eczema.json",
+      "processed": true
+    },
+    {
+      "id": "other_electrolyte_imbalances",
+      "name": "Other electrolyte imbalances",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "other_electrolyte_imbalances.json",
+      "processed": true
+    },
+    {
+      "id": "otitis_externa",
+      "name": "Otitis externa",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "otitis_externa.json",
+      "processed": true
+    },
+    {
+      "id": "otitis_media",
+      "name": "Otitis media",
+      "domains": [
+        "ENT",
+        "Paediatrics"
+      ],
+      "filename": "otitis_media.json",
+      "processed": true
+    },
+    {
+      "id": "ovarian_cancer",
+      "name": "Ovarian cancer",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "ovarian_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "ovarian_cancer",
+      "name": "Ovarian cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "ovarian_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "pancreatic_cancer",
+      "name": "Pancreatic Cancer",
+      "domains": [
+        "Gastrointestinal Surgery"
+      ],
+      "filename": "pancreatic_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "pancreatic_cancer",
+      "name": "Pancreatic cancer",
+      "domains": [
+        "Gastrointestinal"
+      ],
+      "filename": "pancreatic_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "pancreatic_cancer",
+      "name": "Pancreatic cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "pancreatic_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "pancytopaenia",
+      "name": "Pancytopaenia",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "pancytopaenia.json",
+      "processed": true
+    },
+    {
+      "id": "pancytopenia",
+      "name": "Pancytopenia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "pancytopenia.json",
+      "processed": true
+    },
+    {
+      "id": "panic_disorder",
+      "name": "Panic disorder",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "panic_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "parkinsons_disease",
+      "name": "Parkinson's disease",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "parkinsons_disease.json",
+      "processed": true
+    },
+    {
+      "id": "parkinsons_disease",
+      "name": "Parkinson's disease?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "parkinsons_disease.json",
+      "processed": true
+    },
+    {
+      "id": "pathological_fracture",
+      "name": "Pathological fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "pathological_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "pelvic_inflammatory_disease",
+      "name": "Pelvic inflammatory disease",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "pelvic_inflammatory_disease.json",
+      "processed": true
+    },
+    {
+      "id": "pemphigus_vulgaris",
+      "name": "Pemphigus vulgaris?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "pemphigus_vulgaris.json",
+      "processed": true
+    },
+    {
+      "id": "peptic_ulcer_disease_and_gastritis",
+      "name": "Peptic ulcer disease and gastritis",
+      "domains": [
+        "Gastrointestinal",
+        "Gastrointestinal Surgery",
+        "Paediatrics"
+      ],
+      "filename": "peptic_ulcer_disease_and_gastritis.json",
+      "processed": true
+    },
+    {
+      "id": "pericardial_effusion",
+      "name": "Pericardial effusion",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "pericardial_effusion.json",
+      "processed": true
+    },
+    {
+      "id": "perinatal_mental_health",
+      "name": "Perinatal mental health",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "perinatal_mental_health.json",
+      "processed": true
+    },
+    {
+      "id": "peripheral_nerve_injuriespalsies",
+      "name": "Peripheral nerve injuries/palsies",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "peripheral_nerve_injuriespalsies.json",
+      "processed": true
+    },
+    {
+      "id": "peripheral_nerve_injuriespalsies_bells_palsy",
+      "name": "Peripheral nerve injuries/palsies - Bell's Palsy",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "peripheral_nerve_injuriespalsies_bells_palsy.json",
+      "processed": true
+    },
+    {
+      "id": "peripheral_nerve_injuriespalsies_carpal_tunnel_syndrome",
+      "name": "Peripheral nerve injuries/palsies - Carpal Tunnel syndrome",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "peripheral_nerve_injuriespalsies_carpal_tunnel_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "peripheral_nerve_injuriespalsies_other_mononeuropathiescranial_neuropathies",
+      "name": "Peripheral nerve injuries/palsies - Other mononeuropathies/cranial neuropathies?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "peripheral_nerve_injuriespalsies_other_mononeuropathiescranial_neuropathies.json",
+      "processed": true
+    },
+    {
+      "id": "peripheral_vascular_disease",
+      "name": "Peripheral vascular Disease",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "peripheral_vascular_disease.json",
+      "processed": true
+    },
+    {
+      "id": "peritonitis",
+      "name": "Peritonitis",
+      "domains": [
+        "Gastrointestinal Surgery",
+        "Paediatrics"
+      ],
+      "filename": "peritonitis.json",
+      "processed": true
+    },
+    {
+      "id": "perthes_disease",
+      "name": "Perthes' disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "perthes_disease.json",
+      "processed": true
+    },
+    {
+      "id": "phobias",
+      "name": "Phobias",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "phobias.json",
+      "processed": true
+    },
+    {
+      "id": "pituitary_tumours",
+      "name": "Pituitary tumours",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "pituitary_tumours.json",
+      "processed": true
+    },
+    {
+      "id": "placenta_praevia",
+      "name": "Placenta praevia",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "placenta_praevia.json",
+      "processed": true
+    },
+    {
+      "id": "placental_abruption",
+      "name": "Placental abruption",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "placental_abruption.json",
+      "processed": true
+    },
+    {
+      "id": "pleural_effusion",
+      "name": "Pleural effusion",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "pleural_effusion.json",
+      "processed": true
+    },
+    {
+      "id": "pneumonia",
+      "name": "Pneumonia",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "pneumonia.json",
+      "processed": true
+    },
+    {
+      "id": "pneumothorax",
+      "name": "Pneumothorax",
+      "domains": [
+        "Respiratory",
+        "Paediatrics"
+      ],
+      "filename": "pneumothorax.json",
+      "processed": true
+    },
+    {
+      "id": "poisoning_and_overdose",
+      "name": "Poisoning and overdose",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "poisoning_and_overdose.json",
+      "processed": true
+    },
+    {
+      "id": "polycystic_ovarian_syndrome_pcos_and_hirsutism",
+      "name": "Polycystic Ovarian Syndrome (PCOS) and Hirsutism",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "polycystic_ovarian_syndrome_pcos_and_hirsutism.json",
+      "processed": true
+    },
+    {
+      "id": "polycystic_kidney_disease",
+      "name": "Polycystic kidney disease",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "polycystic_kidney_disease.json",
+      "processed": true
+    },
+    {
+      "id": "polycythaemia",
+      "name": "Polycythaemia",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "polycythaemia.json",
+      "processed": true
+    },
+    {
+      "id": "polymyalgia_rheumatica_pmr",
+      "name": "Polymyalgia rheumatica (PMR)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "polymyalgia_rheumatica_pmr.json",
+      "processed": true
+    },
+    {
+      "id": "polyneuropathies_diabetic_neuropathy",
+      "name": "Polyneuropathies - Diabetic neuropathy?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "polyneuropathies_diabetic_neuropathy.json",
+      "processed": true
+    },
+    {
+      "id": "polyneuropathies_guillain_barre_syndrome",
+      "name": "Polyneuropathies - Guillain-Barre syndrome",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "polyneuropathies_guillain_barre_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "post_traumatic_stress_disorder",
+      "name": "Post Traumatic Stress Disorder",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "post_traumatic_stress_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "post_natal_mental_health",
+      "name": "Post-natal mental health",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "post_natal_mental_health.json",
+      "processed": true
+    },
+    {
+      "id": "post_operative_pain",
+      "name": "Post-operative pain",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "post_operative_pain.json",
+      "processed": true
+    },
+    {
+      "id": "post_partum_haemorrhage",
+      "name": "Post-partum haemorrhage",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "post_partum_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "posterior_circulation_stroke",
+      "name": "Posterior circulation stroke",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "posterior_circulation_stroke.json",
+      "processed": true
+    },
+    {
+      "id": "pre_eclampsia",
+      "name": "Pre-eclampsia",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "pre_eclampsia.json",
+      "processed": true
+    },
+    {
+      "id": "pre_existing_and_gestational_diabetes",
+      "name": "Pre-existing and gestational diabetes",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "pre_existing_and_gestational_diabetes.json",
+      "processed": true
+    },
+    {
+      "id": "pre_existing_diabetes_in_pregnancy",
+      "name": "Pre-existing diabetes in pregnancy",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "pre_existing_diabetes_in_pregnancy.json",
+      "processed": true
+    },
+    {
+      "id": "pregnancy_induced_hypertension",
+      "name": "Pregnancy-induced hypertension",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "pregnancy_induced_hypertension.json",
+      "processed": true
+    },
+    {
+      "id": "presbycusis",
+      "name": "Presbycusis",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "presbycusis.json",
+      "processed": true
+    },
+    {
+      "id": "pressure_sores_and_skin_ulcers",
+      "name": "Pressure sores and skin ulcers?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "pressure_sores_and_skin_ulcers.json",
+      "processed": true
+    },
+    {
+      "id": "primary_lung_cancer",
+      "name": "Primary lung cancer",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "primary_lung_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "primary_lung_cancers",
+      "name": "Primary lung cancers",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "primary_lung_cancers.json",
+      "processed": true
+    },
+    {
+      "id": "prostate_cancer",
+      "name": "Prostate cancer",
+      "domains": [
+        "Oncology",
+        "Urology"
+      ],
+      "filename": "prostate_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "psoriatic_arthritis",
+      "name": "Psoriatic arthritis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "psoriatic_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "psoroasis",
+      "name": "Psoroasis",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "psoroasis.json",
+      "processed": true
+    },
+    {
+      "id": "pubic_ramus_fracture",
+      "name": "Pubic ramus fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "pubic_ramus_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "puerperal_infection_and_sepsis",
+      "name": "Puerperal infection and sepsis",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "puerperal_infection_and_sepsis.json",
+      "processed": true
+    },
+    {
+      "id": "pulmonary_embolism_and_deep_vein_thrombosis",
+      "name": "Pulmonary Embolism and Deep Vein Thrombosis",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "pulmonary_embolism_and_deep_vein_thrombosis.json",
+      "processed": true
+    },
+    {
+      "id": "pulmonary_embolism_and_deep_vein_thrombosis",
+      "name": "Pulmonary embolism and deep vein thrombosis",
+      "domains": [
+        "Haematology",
+        "Respiratory",
+        "Anaesthesia and Critical Care",
+        "Post-operative care"
+      ],
+      "filename": "pulmonary_embolism_and_deep_vein_thrombosis.json",
+      "processed": true
+    },
+    {
+      "id": "pulmonary_tuberculosis",
+      "name": "Pulmonary tuberculosis",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "pulmonary_tuberculosis.json",
+      "processed": true
+    },
+    {
+      "id": "pyloric_stenosis",
+      "name": "Pyloric stenosis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "pyloric_stenosis.json",
+      "processed": true
+    },
+    {
+      "id": "pyrexia_of_unknown_origin",
+      "name": "Pyrexia of unknown origin",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "pyrexia_of_unknown_origin.json",
+      "processed": true
+    },
+    {
+      "id": "radial_head_fracture",
+      "name": "Radial head fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "radial_head_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "radiculopathies_single_nerve_root_lesion",
+      "name": "Radiculopathies (single nerve root lesion)",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "radiculopathies_single_nerve_root_lesion.json",
+      "processed": true
+    },
+    {
+      "id": "raised_intracranial_pressure",
+      "name": "Raised intracranial pressure",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "raised_intracranial_pressure.json",
+      "processed": true
+    },
+    {
+      "id": "reactive_arthritis",
+      "name": "Reactive arthritis",
+      "domains": [
+        "Rheumatology",
+        "Paediatrics"
+      ],
+      "filename": "reactive_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "respiratory_failure",
+      "name": "Respiratory Failure",
+      "domains": [
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "respiratory_failure.json",
+      "processed": true
+    },
+    {
+      "id": "respiratory_arrest",
+      "name": "Respiratory arrest",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Paediatrics"
+      ],
+      "filename": "respiratory_arrest.json",
+      "processed": true
+    },
+    {
+      "id": "respiratory_failure",
+      "name": "Respiratory failure",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "respiratory_failure.json",
+      "processed": true
+    },
+    {
+      "id": "respiratory_secretions",
+      "name": "Respiratory secretions",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "respiratory_secretions.json",
+      "processed": true
+    },
+    {
+      "id": "retinal_detachment",
+      "name": "Retinal detachment",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "retinal_detachment.json",
+      "processed": true
+    },
+    {
+      "id": "rheumatoid_arthritis",
+      "name": "Rheumatoid arthritis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "rheumatoid_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "rhinosinusitis_and_nasal_polyps",
+      "name": "Rhinosinusitis and nasal polyps",
+      "domains": [
+        "ENT"
+      ],
+      "filename": "rhinosinusitis_and_nasal_polyps.json",
+      "processed": true
+    },
+    {
+      "id": "ricketsosteomalacia",
+      "name": "Rickets/Osteomalacia",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "ricketsosteomalacia.json",
+      "processed": true
+    },
+    {
+      "id": "ricketsosteomalacia",
+      "name": "Rickets/Osteomalacia?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "ricketsosteomalacia.json",
+      "processed": true
+    },
+    {
+      "id": "right_heart_valve",
+      "name": "Right heart valve",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "right_heart_valve.json",
+      "processed": true
+    },
+    {
+      "id": "rosacea",
+      "name": "Rosacea",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "rosacea.json",
+      "processed": true
+    },
+    {
+      "id": "rotator_cuff_pathology",
+      "name": "Rotator cuff pathology",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "rotator_cuff_pathology.json",
+      "processed": true
+    },
+    {
+      "id": "rubella",
+      "name": "Rubella",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "rubella.json",
+      "processed": true
+    },
+    {
+      "id": "siadh",
+      "name": "SIADH",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "siadh.json",
+      "processed": true
+    },
+    {
+      "id": "sarcoidosis",
+      "name": "Sarcoidosis?",
+      "domains": [
+        "Respiratory"
+      ],
+      "filename": "sarcoidosis.json",
+      "processed": true
+    },
+    {
+      "id": "scabies",
+      "name": "Scabies?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "scabies.json",
+      "processed": true
+    },
+    {
+      "id": "scaphoid_fracture",
+      "name": "Scaphoid fracture",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "scaphoid_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "scarring_and_abnormal_scarring",
+      "name": "Scarring and abnormal scarring",
+      "domains": [
+        "Plastics"
+      ],
+      "filename": "scarring_and_abnormal_scarring.json",
+      "processed": true
+    },
+    {
+      "id": "schizophrenia_and_psychosis",
+      "name": "Schizophrenia and Psychosis",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "schizophrenia_and_psychosis.json",
+      "processed": true
+    },
+    {
+      "id": "scleritis",
+      "name": "Scleritis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "scleritis.json",
+      "processed": true
+    },
+    {
+      "id": "seborrhoeic_keratoses",
+      "name": "Seborrhoeic keratoses",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "seborrhoeic_keratoses.json",
+      "processed": true
+    },
+    {
+      "id": "self_harm",
+      "name": "Self-harm",
+      "domains": [
+        "Psychiatry",
+        "Paediatrics"
+      ],
+      "filename": "self_harm.json",
+      "processed": true
+    },
+    {
+      "id": "sensory_impairment_hearing_loss_visual_loss",
+      "name": "Sensory Impairment ? hearing loss, visual loss?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "sensory_impairment_hearing_loss_visual_loss.json",
+      "processed": true
+    },
+    {
+      "id": "sepsis",
+      "name": "Sepsis",
+      "domains": [
+        "Infection",
+        "Anaesthesia and Critical Care",
+        "Post-operative care",
+        "Paediatrics"
+      ],
+      "filename": "sepsis.json",
+      "processed": true
+    },
+    {
+      "id": "septic_arthritis",
+      "name": "Septic arthritis",
+      "domains": [
+        "Rheumatology",
+        "Trauma and Orthopaedics",
+        "Paediatrics"
+      ],
+      "filename": "septic_arthritis.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_adhesive_capsulitis",
+      "name": "Shoulder - Adhesive capsulitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_adhesive_capsulitis.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_biceps_tendinopathy",
+      "name": "Shoulder - Biceps tendinopathy",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_biceps_tendinopathy.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_impingement_syndromesubacromial_bursitis",
+      "name": "Shoulder - Impingement syndrome/Subacromial bursitis",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_impingement_syndromesubacromial_bursitis.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_dislocation",
+      "name": "Shoulder dislocation",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "shoulder_dislocation.json",
+      "processed": true
+    },
+    {
+      "id": "shoulder_dystocia",
+      "name": "Shoulder dystocia",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "shoulder_dystocia.json",
+      "processed": true
+    },
+    {
+      "id": "sickle_cell_disease",
+      "name": "Sickle cell disease",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "sickle_cell_disease.json",
+      "processed": true
+    },
+    {
+      "id": "sjogrens_syndrome",
+      "name": "Sjogren's syndrome?",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "sjogrens_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "slipped_upper_femoral_epiphysis",
+      "name": "Slipped upper femoral epiphysis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "slipped_upper_femoral_epiphysis.json",
+      "processed": true
+    },
+    {
+      "id": "smoking",
+      "name": "Smoking",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "smoking.json",
+      "processed": true
+    },
+    {
+      "id": "somatoform",
+      "name": "Somatoform",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "somatoform.json",
+      "processed": true
+    },
+    {
+      "id": "spinal_cord_compression",
+      "name": "Spinal cord compression",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "spinal_cord_compression.json",
+      "processed": true
+    },
+    {
+      "id": "spinal_cord_compression",
+      "name": "Spinal cord compression?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "spinal_cord_compression.json",
+      "processed": true
+    },
+    {
+      "id": "spinal_cord_injury",
+      "name": "Spinal cord injury",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "spinal_cord_injury.json",
+      "processed": true
+    },
+    {
+      "id": "spinal_fracture",
+      "name": "Spinal fracture",
+      "domains": [
+        "Rheumatology",
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "spinal_fracture.json",
+      "processed": true
+    },
+    {
+      "id": "squamous_cell_carcinoma",
+      "name": "Squamous cell carcinoma",
+      "domains": [
+        "Dermatology",
+        "Oncology"
+      ],
+      "filename": "squamous_cell_carcinoma.json",
+      "processed": true
+    },
+    {
+      "id": "steven_johnson_syndrome",
+      "name": "Steven-Johnson syndrome",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "steven_johnson_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "stillbirth",
+      "name": "Stillbirth",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "stillbirth.json",
+      "processed": true
+    },
+    {
+      "id": "stroke",
+      "name": "Stroke",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "stroke.json",
+      "processed": false
+    },
+    {
+      "id": "subarachnoid_haemorrhage",
+      "name": "Subarachnoid haemorrhage",
+      "domains": [
+        "Neurology",
+        "Paediatrics"
+      ],
+      "filename": "subarachnoid_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "subdural_haematoma",
+      "name": "Subdural haematoma",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "subdural_haematoma.json",
+      "processed": true
+    },
+    {
+      "id": "subdural_haemorrhage",
+      "name": "Subdural haemorrhage",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "subdural_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "substance_misuse_disorder",
+      "name": "Substance misuse disorder",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Psychiatry"
+      ],
+      "filename": "substance_misuse_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "suicidal_ideation_and_suicide",
+      "name": "Suicidal ideation and Suicide",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "suicidal_ideation_and_suicide.json",
+      "processed": true
+    },
+    {
+      "id": "suicidal_ideation_and_suicide",
+      "name": "Suicidal ideation and suicide",
+      "domains": [
+        "Psychiatry"
+      ],
+      "filename": "suicidal_ideation_and_suicide.json",
+      "processed": true
+    },
+    {
+      "id": "surgical_site_infection",
+      "name": "Surgical site infection",
+      "domains": [
+        "Post-operative care"
+      ],
+      "filename": "surgical_site_infection.json",
+      "processed": true
+    },
+    {
+      "id": "syncope",
+      "name": "Syncope",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "syncope.json",
+      "processed": true
+    },
+    {
+      "id": "syphilis",
+      "name": "Syphilis",
+      "domains": [
+        "Infection",
+        "Obstetrics",
+        "Gynaecology"
+      ],
+      "filename": "syphilis.json",
+      "processed": true
+    },
+    {
+      "id": "systemic_lupus_erythematosus_sle",
+      "name": "Systemic lupus erythematosus (SLE)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "systemic_lupus_erythematosus_sle.json",
+      "processed": true
+    },
+    {
+      "id": "systemic_sclerosis_scleroderma",
+      "name": "Systemic sclerosis (Scleroderma)",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "systemic_sclerosis_scleroderma.json",
+      "processed": true
+    },
+    {
+      "id": "torch",
+      "name": "TORCH",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "torch.json",
+      "processed": true
+    },
+    {
+      "id": "talipes",
+      "name": "Talipes",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "talipes.json",
+      "processed": true
+    },
+    {
+      "id": "tension_headache",
+      "name": "Tension headache?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "tension_headache.json",
+      "processed": true
+    },
+    {
+      "id": "tension_headaches",
+      "name": "Tension headaches",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "tension_headaches.json",
+      "processed": true
+    },
+    {
+      "id": "terminal_agitation",
+      "name": "Terminal agitation",
+      "domains": [
+        "Palliative Care"
+      ],
+      "filename": "terminal_agitation.json",
+      "processed": true
+    },
+    {
+      "id": "testicular_cancer",
+      "name": "Testicular cancer",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "testicular_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "testicular_cancer",
+      "name": "Testicular cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "testicular_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "testicular_torsion",
+      "name": "Testicular torsion",
+      "domains": [
+        "Urology",
+        "Paediatrics"
+      ],
+      "filename": "testicular_torsion.json",
+      "processed": true
+    },
+    {
+      "id": "thrombotic_thrombocytopenic_purpura",
+      "name": "Thrombotic thrombocytopenic purpura",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "thrombotic_thrombocytopenic_purpura.json",
+      "processed": true
+    },
+    {
+      "id": "thyroid_cancer",
+      "name": "Thyroid cancer",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "thyroid_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "thyroid_cancer",
+      "name": "Thyroid cancer?",
+      "domains": [
+        "Oncology"
+      ],
+      "filename": "thyroid_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "thyroid_eye_disease",
+      "name": "Thyroid eye disease",
+      "domains": [
+        "Endocrine",
+        "Opthalmolgy"
+      ],
+      "filename": "thyroid_eye_disease.json",
+      "processed": true
+    },
+    {
+      "id": "thyroid_nodules",
+      "name": "Thyroid nodules",
+      "domains": [
+        "Endocrine"
+      ],
+      "filename": "thyroid_nodules.json",
+      "processed": true
+    },
+    {
+      "id": "thyrotoxicosis",
+      "name": "Thyrotoxicosis",
+      "domains": [
+        "Endocrine",
+        "Paediatrics"
+      ],
+      "filename": "thyrotoxicosis.json",
+      "processed": true
+    },
+    {
+      "id": "tonsillitis_and_pharyngitis",
+      "name": "Tonsillitis and pharyngitis",
+      "domains": [
+        "ENT",
+        "Paediatrics"
+      ],
+      "filename": "tonsillitis_and_pharyngitis.json",
+      "processed": true
+    },
+    {
+      "id": "toxic_epidermal_necrolysis",
+      "name": "Toxic epidermal necrolysis?",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "toxic_epidermal_necrolysis.json",
+      "processed": true
+    },
+    {
+      "id": "toxic_shock_syndrome",
+      "name": "Toxic shock syndrome",
+      "domains": [
+        "Gynaecology",
+        "Paediatrics"
+      ],
+      "filename": "toxic_shock_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "transfusion_reactions",
+      "name": "Transfusion reactions",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "transfusion_reactions.json",
+      "processed": true
+    },
+    {
+      "id": "transient_ischaemic_attack",
+      "name": "Transient ischaemic attack?",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "transient_ischaemic_attack.json",
+      "processed": false
+    },
+    {
+      "id": "travellers_diarrhoea",
+      "name": "Traveller?s diarrhoea",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "travellers_diarrhoea.json",
+      "processed": true
+    },
+    {
+      "id": "trichomonas_vaginalis",
+      "name": "Trichomonas vaginalis",
+      "domains": [
+        "Infection",
+        "Gynaecology"
+      ],
+      "filename": "trichomonas_vaginalis.json",
+      "processed": true
+    },
+    {
+      "id": "tuberculosis",
+      "name": "Tuberculosis",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "tuberculosis.json",
+      "processed": true
+    },
+    {
+      "id": "type_1_diabetes",
+      "name": "Type 1 diabetes",
+      "domains": [
+        "Endocrine",
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Post-operative care",
+        "Paediatrics"
+      ],
+      "filename": "type_1_diabetes.json",
+      "processed": true
+    },
+    {
+      "id": "type_2_diabetes",
+      "name": "Type 2 diabetes",
+      "domains": [
+        "Endocrine",
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care",
+        "Post-operative care",
+        "Paediatrics"
+      ],
+      "filename": "type_2_diabetes.json",
+      "processed": true
+    },
+    {
+      "id": "unwanted_pregnancy_and_termination",
+      "name": "Unwanted pregnancy and termination",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "unwanted_pregnancy_and_termination.json",
+      "processed": true
+    },
+    {
+      "id": "upper_limb_soft_tissue_injury",
+      "name": "Upper limb soft tissue injury",
+      "domains": [
+        "Trauma and Orthopaedics"
+      ],
+      "filename": "upper_limb_soft_tissue_injury.json",
+      "processed": true
+    },
+    {
+      "id": "upper_respiratory_tract_infection_croup",
+      "name": "Upper respiratory tract infection - Croup",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "upper_respiratory_tract_infection_croup.json",
+      "processed": true
+    },
+    {
+      "id": "upper_respiratory_tract_infection_epiglottitis",
+      "name": "Upper respiratory tract infection - Epiglottitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "upper_respiratory_tract_infection_epiglottitis.json",
+      "processed": true
+    },
+    {
+      "id": "upper_respiratory_tract_infection_tonsillitis",
+      "name": "Upper respiratory tract infection - Tonsillitis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "upper_respiratory_tract_infection_tonsillitis.json",
+      "processed": true
+    },
+    {
+      "id": "upper_respiratory_tract_infections",
+      "name": "Upper respiratory tract infections",
+      "domains": [
+        "Infection",
+        "Respiratory"
+      ],
+      "filename": "upper_respiratory_tract_infections.json",
+      "processed": true
+    },
+    {
+      "id": "urethral_syndrome",
+      "name": "Urethral syndrome",
+      "domains": [
+        "Renal"
+      ],
+      "filename": "urethral_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "urinary_incontinence",
+      "name": "Urinary incontinence",
+      "domains": [
+        "Urology",
+        "Gynaecology"
+      ],
+      "filename": "urinary_incontinence.json",
+      "processed": true
+    },
+    {
+      "id": "urinary_incontinence",
+      "name": "Urinary incontinence?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "urinary_incontinence.json",
+      "processed": true
+    },
+    {
+      "id": "urinary_tract_infection",
+      "name": "Urinary tract Infection",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "urinary_tract_infection.json",
+      "processed": true
+    },
+    {
+      "id": "urinary_tract_calculi",
+      "name": "Urinary tract calculi",
+      "domains": [
+        "Urology"
+      ],
+      "filename": "urinary_tract_calculi.json",
+      "processed": true
+    },
+    {
+      "id": "urinary_tract_infection",
+      "name": "Urinary tract infection",
+      "domains": [
+        "Renal",
+        "Urology",
+        "Gynaecology"
+      ],
+      "filename": "urinary_tract_infection.json",
+      "processed": true
+    },
+    {
+      "id": "urticaria",
+      "name": "Urticaria",
+      "domains": [
+        "Dermatology",
+        "Paediatrics"
+      ],
+      "filename": "urticaria.json",
+      "processed": true
+    },
+    {
+      "id": "uveitis",
+      "name": "Uveitis",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "uveitis.json",
+      "processed": true
+    },
+    {
+      "id": "vaccination_and_immunisation",
+      "name": "Vaccination and immunisation",
+      "domains": [
+        "Infection"
+      ],
+      "filename": "vaccination_and_immunisation.json",
+      "processed": true
+    },
+    {
+      "id": "vaginal_prolapse",
+      "name": "Vaginal prolapse",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "vaginal_prolapse.json",
+      "processed": true
+    },
+    {
+      "id": "valvular_heart_disease",
+      "name": "Valvular heart disease",
+      "domains": [
+        "Anaesthesia and Critical Care",
+        "Pre-operative Care"
+      ],
+      "filename": "valvular_heart_disease.json",
+      "processed": true
+    },
+    {
+      "id": "varicella_zoster",
+      "name": "Varicella zoster",
+      "domains": [
+        "Dermatology",
+        "Obstetrics",
+        "Paediatrics"
+      ],
+      "filename": "varicella_zoster.json",
+      "processed": true
+    },
+    {
+      "id": "varicose_veins",
+      "name": "Varicose veins",
+      "domains": [
+        "Vascular"
+      ],
+      "filename": "varicose_veins.json",
+      "processed": true
+    },
+    {
+      "id": "vasa_praevia",
+      "name": "Vasa praevia",
+      "domains": [
+        "Obstetrics"
+      ],
+      "filename": "vasa_praevia.json",
+      "processed": true
+    },
+    {
+      "id": "vasculitis",
+      "name": "Vasculitis",
+      "domains": [
+        "Rheumatology"
+      ],
+      "filename": "vasculitis.json",
+      "processed": true
+    },
+    {
+      "id": "venous_ulcer",
+      "name": "Venous ulcer",
+      "domains": [
+        "Plastics"
+      ],
+      "filename": "venous_ulcer.json",
+      "processed": true
+    },
+    {
+      "id": "venous_ulcers",
+      "name": "Venous ulcers",
+      "domains": [
+        "Dermatology",
+        "Vascular"
+      ],
+      "filename": "venous_ulcers.json",
+      "processed": true
+    },
+    {
       "id": "ventricular_tachycardia",
       "name": "Ventricular tachycardia",
       "domains": [
@@ -99,6 +5226,135 @@
         "Anaesthesia and Critical Care"
       ],
       "filename": "ventricular_tachycardia.json",
+      "processed": true
+    },
+    {
+      "id": "vertigo",
+      "name": "Vertigo?",
+      "domains": [
+        "Care of the Elderly"
+      ],
+      "filename": "vertigo.json",
+      "processed": true
+    },
+    {
+      "id": "vestibular_migrain",
+      "name": "Vestibular migrain",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "vestibular_migrain.json",
+      "processed": true
+    },
+    {
+      "id": "vestibular_neuronitis",
+      "name": "Vestibular neuronitis",
+      "domains": [
+        "Neurology"
+      ],
+      "filename": "vestibular_neuronitis.json",
+      "processed": true
+    },
+    {
+      "id": "viral_exanthema",
+      "name": "Viral exanthema",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "viral_exanthema.json",
+      "processed": true
+    },
+    {
+      "id": "viral_gastroenteritis",
+      "name": "Viral gastroenteritis",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "viral_gastroenteritis.json",
+      "processed": true
+    },
+    {
+      "id": "viral_hepatitis",
+      "name": "Viral hepatitis",
+      "domains": [
+        "Gastrointestinal",
+        "Infection"
+      ],
+      "filename": "viral_hepatitis.json",
+      "processed": true
+    },
+    {
+      "id": "viral_warts",
+      "name": "Viral warts",
+      "domains": [
+        "Dermatology"
+      ],
+      "filename": "viral_warts.json",
+      "processed": true
+    },
+    {
+      "id": "visual_field_defect",
+      "name": "Visual field defect",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "visual_field_defect.json",
+      "processed": true
+    },
+    {
+      "id": "visual_field_defects",
+      "name": "Visual field defects",
+      "domains": [
+        "Paediatrics"
+      ],
+      "filename": "visual_field_defects.json",
+      "processed": true
+    },
+    {
+      "id": "vitreous_haemorrhage",
+      "name": "Vitreous haemorrhage",
+      "domains": [
+        "Opthalmolgy"
+      ],
+      "filename": "vitreous_haemorrhage.json",
+      "processed": true
+    },
+    {
+      "id": "volvulus",
+      "name": "Volvulus",
+      "domains": [
+        "Gastrointestinal Surgery",
+        "Paediatrics"
+      ],
+      "filename": "volvulus.json",
+      "processed": true
+    },
+    {
+      "id": "von_willebrands_disorder",
+      "name": "Von Willebrand's disorder",
+      "domains": [
+        "Haematology"
+      ],
+      "filename": "von_willebrands_disorder.json",
+      "processed": true
+    },
+    {
+      "id": "vulval_and_vaginal_cancer",
+      "name": "Vulval and vaginal cancer",
+      "domains": [
+        "Gynaecology"
+      ],
+      "filename": "vulval_and_vaginal_cancer.json",
+      "processed": true
+    },
+    {
+      "id": "wernickes_encephalopathy",
+      "name": "Wernicke?s encephalopathy",
+      "domains": [
+        "Neurology",
+        "Psychiatry"
+      ],
+      "filename": "wernickes_encephalopathy.json",
       "processed": true
     }
   ]

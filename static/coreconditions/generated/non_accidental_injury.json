@@ -1,0 +1,137 @@
+{
+  "id": "non_accidental_injury",
+  "name": "Non-accidental injury",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:11:04.205224",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Non-accidental injury: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNon-accidental injury (NAI) refers to injuries inflicted on a child by a caregiver or another individual, often resulting from physical abuse. It is a significant concern in paediatrics due to its potential for severe physical and psychological harm.\n\n### Epidemiology\nNAI is estimated to affect 1 in 1,000 children annually in the UK, with higher rates in vulnerable populations. It is more common in children under 5 years of age, particularly in infants.\n\n### Essential Pathophysiology\nNAI can result from various forms of abuse, including physical, emotional, and sexual abuse. The injuries may range from bruises and fractures to more severe injuries like head trauma, which can lead to long-term disabilities or death.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Unexplained injuries or bruises in various stages of healing\n- Behavioral changes such as withdrawal, aggression, or fearfulness\n- Developmental delays or regression\n- Fear of going home or being with certain individuals\n\n### Key Signs\n- Multiple bruises in unusual locations (e.g., buttocks, back, thighs)\n- Fractures in different stages of healing\n- Burns or scalds with clear patterns\n- Signs of neglect (poor hygiene, malnutrition)\n\n### Atypical Presentations\n- Injuries that do not match the explanation given by the caregiver\n- Injuries in non-mobile infants\n- Frequent visits to different healthcare providers for similar injuries\n\n### Red Flags Requiring Immediate Action\n- History of previous injuries or hospital visits for similar concerns\n- Inconsistent explanations for injuries\n- Caregiver's reluctance to provide information or changes in story\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed history taking from the child and caregiver\n- Physical examination focusing on injury patterns\n- Documentation of findings with photographs if appropriate\n\n### Second-line Investigations\n- Skeletal survey for children under 2 years to identify hidden fractures\n- CT or MRI for suspected head injuries\n- Referral to child protection services\n\n### Specialist Tests\n- Bone density scans if non-accidental fractures are suspected\n- Psychological assessment if emotional abuse is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of NAI is based on a combination of clinical findings, history, and the context of the injuries. A multidisciplinary approach is essential, involving paediatricians, social workers, and law enforcement when necessary.\n\n### Key Differential Diagnoses to Exclude\n- Accidental injuries\n- Medical conditions that may cause bruising (e.g., coagulopathy)\n- Cultural practices that may lead to injuries\n- Neglect or emotional abuse without physical harm\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate safety assessment of the child\n- Reporting to child protection services\n- Providing necessary medical treatment for injuries\n\n#### Second-line Treatments\n- Psychiatric evaluation for the child and caregiver\n- Referral to paediatric social services for ongoing support\n\n#### Emergency Procedures\n- Skeletal survey to identify hidden injuries\n- CT scan for suspected head trauma\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ongoing psychological support for the child\n- Family therapy for caregivers if appropriate\n- Regular follow-up appointments to monitor the child's wellbeing\n\n#### Second-line Treatments\n- Referral to child and adolescent mental health services (CAMHS) for long-term support\n\n#### Monitoring Requirements\n- Regular assessments of the child's physical and emotional health\n- Monitoring the home environment for safety\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed, max 60 mg/kg/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: Use with caution in patients with liver disease.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours as needed, max 40 mg/kg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Avoid in children with dehydration or renal issues.\n\n### Procedures\n\n#### Skeletal Survey\n- **What it Involves**: A series of X-rays to identify fractures in various stages of healing, particularly in non-mobile infants.\n- **Indications**: Suspected non-accidental injury, especially in children under 2 years.\n- **Key Risks/Complications**: Radiation exposure, though minimal.\n\n#### CT Scan\n- **What it Involves**: Imaging technique to assess for intracranial injuries or other internal injuries.\n- **Indications**: Suspected head trauma or internal injuries from abuse.\n- **Key Risks/Complications**: Radiation exposure, potential allergic reaction to contrast if used.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for children who experience NAI varies widely depending on the severity of the injuries, the timeliness of intervention, and the support systems in place. Early recognition and intervention can improve outcomes significantly.\n\n### Important Complications to Watch For\n- Long-term psychological effects such as PTSD, anxiety, and depression\n- Physical disabilities resulting from severe injuries\n- Increased risk of future abuse or neglect\n- Impact on family dynamics and caregiver relationships\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors play a crucial role in the early recognition of NAI. They should be vigilant in assessing injuries, documenting findings, and ensuring appropriate referrals to safeguarding teams and child protection services.\n\n### When to Escalate to Senior/Specialist\nIf NAI is suspected, immediate escalation to a senior clinician and referral to child protection services is essential. Documentation should be thorough and include all findings and concerns.\n\n### Key Safety Considerations\nAlways prioritize the child's safety. Maintain confidentiality but understand the legal obligations to report suspected abuse. Be aware of the signs of NAI and ensure a multidisciplinary approach to management.\n",
+  "content": {
+    "overview": {
+      "definition": "Non-accidental injury (NAI) refers to injuries inflicted on a child by a caregiver or another individual, often resulting from physical abuse. It is a significant concern in paediatrics due to its potential for severe physical and psychological harm.",
+      "epidemiology": "NAI is estimated to affect 1 in 1,000 children annually in the UK, with higher rates in vulnerable populations. It is more common in children under 5 years of age, particularly in infants.",
+      "pathophysiology": "NAI can result from various forms of abuse, including physical, emotional, and sexual abuse. The injuries may range from bruises and fractures to more severe injuries like head trauma, which can lead to long-term disabilities or death."
+    },
+    "recognition": {
+      "symptoms": [
+        "Unexplained injuries or bruises in various stages of healing",
+        "Behavioral changes such as withdrawal, aggression, or fearfulness",
+        "Developmental delays or regression",
+        "Fear of going home or being with certain individuals"
+      ],
+      "signs": [
+        "Multiple bruises in unusual locations (e.g., buttocks, back, thighs)",
+        "Fractures in different stages of healing",
+        "Burns or scalds with clear patterns",
+        "Signs of neglect (poor hygiene, malnutrition)"
+      ],
+      "atypicalPresentations": [
+        "Injuries that do not match the explanation given by the caregiver",
+        "Injuries in non-mobile infants",
+        "Frequent visits to different healthcare providers for similar injuries"
+      ],
+      "redFlags": [
+        "History of previous injuries or hospital visits for similar concerns",
+        "Inconsistent explanations for injuries",
+        "Caregiver's reluctance to provide information or changes in story"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed history taking from the child and caregiver",
+        "Physical examination focusing on injury patterns",
+        "Documentation of findings with photographs if appropriate"
+      ],
+      "secondLine": [
+        "Skeletal survey for children under 2 years to identify hidden fractures",
+        "CT or MRI for suspected head injuries",
+        "Referral to child protection services"
+      ],
+      "specialistTests": [
+        "Bone density scans if non-accidental fractures are suspected",
+        "Psychological assessment if emotional abuse is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of NAI is based on a combination of clinical findings, history, and the context of the injuries. A multidisciplinary approach is essential, involving paediatricians, social workers, and law enforcement when necessary.",
+      "differentials": [
+        "Accidental injuries",
+        "Medical conditions that may cause bruising (e.g., coagulopathy)",
+        "Cultural practices that may lead to injuries",
+        "Neglect or emotional abuse without physical harm"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate safety assessment of the child",
+          "Reporting to child protection services",
+          "Providing necessary medical treatment for injuries"
+        ],
+        "secondLine": [
+          "Psychiatric evaluation for the child and caregiver",
+          "Referral to paediatric social services for ongoing support"
+        ],
+        "procedures": [
+          "Skeletal survey to identify hidden injuries",
+          "CT scan for suspected head trauma"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ongoing psychological support for the child",
+          "Family therapy for caregivers if appropriate",
+          "Regular follow-up appointments to monitor the child's wellbeing"
+        ],
+        "secondLine": [
+          "Referral to child and adolescent mental health services (CAMHS) for long-term support"
+        ],
+        "monitoring": [
+          "Regular assessments of the child's physical and emotional health",
+          "Monitoring the home environment for safety"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "15 mg/kg every 4-6 hours as needed, max 60 mg/kg/day",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "Use with caution in patients with liver disease."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "10 mg/kg every 6-8 hours as needed, max 40 mg/kg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Avoid in children with dehydration or renal issues."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Skeletal Survey",
+          "description": "A series of X-rays to identify fractures in various stages of healing, particularly in non-mobile infants.",
+          "indications": "Suspected non-accidental injury, especially in children under 2 years.",
+          "risks": "Radiation exposure, though minimal."
+        },
+        {
+          "name": "CT Scan",
+          "description": "Imaging technique to assess for intracranial injuries or other internal injuries.",
+          "indications": "Suspected head trauma or internal injuries from abuse.",
+          "risks": "Radiation exposure, potential allergic reaction to contrast if used."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for children who experience NAI varies widely depending on the severity of the injuries, the timeliness of intervention, and the support systems in place. Early recognition and intervention can improve outcomes significantly.",
+    "complications": [
+      "Long-term psychological effects such as PTSD, anxiety, and depression",
+      "Physical disabilities resulting from severe injuries",
+      "Increased risk of future abuse or neglect",
+      "Impact on family dynamics and caregiver relationships"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors play a crucial role in the early recognition of NAI. They should be vigilant in assessing injuries, documenting findings, and ensuring appropriate referrals to safeguarding teams and child protection services.",
+    "escalation": "If NAI is suspected, immediate escalation to a senior clinician and referral to child protection services is essential. Documentation should be thorough and include all findings and concerns.",
+    "keySafetyConsiderations": "Always prioritize the child's safety. Maintain confidentiality but understand the legal obligations to report suspected abuse. Be aware of the signs of NAI and ensure a multidisciplinary approach to management."
+  }
+}

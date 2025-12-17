@@ -1,0 +1,122 @@
+{
+  "id": "slipped_upper_femoral_epiphysis",
+  "name": "Slipped upper femoral epiphysis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:06:39.720984",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Slipped upper femoral epiphysis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSlipped upper femoral epiphysis (SUFE) is a condition characterized by the displacement of the femoral head due to slippage of the femoral epiphysis at the growth plate (physis). It typically occurs in adolescents during periods of rapid growth.\n\n### Epidemiology\nSUFE is most common in children aged 10-16 years, with a higher prevalence in males (2-3 times more common) and in those who are overweight. It is more prevalent in certain ethnic groups, particularly African American and Pacific Islander populations.\n\n### Essential Pathophysiology\nThe exact cause of SUFE is not fully understood, but it is believed to involve a combination of mechanical and hormonal factors. The growth plate becomes weak, leading to slippage of the femoral head due to shear forces, particularly during periods of rapid growth.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hip or groin pain\n- Knee pain (referred pain)\n- Limited range of motion in the hip\n- Limping or altered gait\n\n### Key Signs\n- Decreased internal rotation of the hip\n- External rotation of the affected leg\n- Tenderness over the hip joint\n- Leg length discrepancy\n\n### Atypical Presentations\n- Bilateral SUFE (occurs in 20-30% of cases)\n- Asymptomatic cases or mild symptoms\n- Presentation with knee pain only\n\n### Red Flags Requiring Immediate Action\n- Severe hip pain with inability to bear weight\n- Acute onset of symptoms after minor trauma\n- Signs of avascular necrosis (e.g., severe pain, inability to move the hip)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the hip (AP and lateral views)\n\n### Second-line Investigations\n- MRI of the hip (to assess for avascular necrosis or early changes)\n- CT scan (if X-ray findings are inconclusive)\n\n### Specialist Tests\n- Bone scan (to assess for bilateral involvement or avascular necrosis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation and radiographic findings. The presence of a posterior and inferior displacement of the femoral head on X-ray confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Transient synovitis\n- Perthes disease\n- Osteomyelitis\n- Fracture of the femoral neck\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-weight bearing with crutches\n- Pain management (NSAIDs)\n\n#### Second-line Treatments\n- Surgical intervention (in situ fixation or pinning)\n\n#### Emergency Procedures\n- Surgical fixation (e.g., in situ pinning) to stabilize the femoral head and prevent further slippage.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with orthopedic specialist\n- Physical therapy to improve range of motion\n\n#### Second-line Treatments\n- Surgical intervention if there is significant slippage or complications\n\n#### Monitoring Requirements\n- Regular X-rays to monitor for progression of slippage or complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours as needed, not exceeding 40 mg/kg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues or gastrointestinal history.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic and antipyretic that reduces pain and fever.\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed, not exceeding 75 mg/kg/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, generally well tolerated.\n- **When to Use vs. Alternatives**: Preferred for mild pain management.\n\n### Procedures\n\n#### In situ pinning\n- **What it Involves**: A surgical procedure where pins are inserted to stabilize the femoral head in its correct position.\n- **Indications**: Moderate to severe slippage, symptomatic patients, or those with risk of avascular necrosis.\n- **Key Risks/Complications**: Infection, nerve injury, avascular necrosis, hardware failure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for SUFE is generally good with early diagnosis and appropriate management. However, complications such as avascular necrosis or osteoarthritis can occur, particularly if treatment is delayed.\n\n### Important Complications to Watch For\n- Avascular necrosis of the femoral head\n- Chondrolysis\n- Early osteoarthritis\n- Recurrent slippage or contralateral SUFE\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms and signs of SUFE, initiate appropriate imaging, manage acute pain, and refer to orthopedic specialists for further management.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe pain, inability to bear weight, or signs of avascular necrosis, immediate orthopedic consultation is required.\n\n### Key Safety Considerations\nEnsure proper weight-bearing advice is given to prevent further slippage. Monitor for signs of complications post-surgery, including infection and avascular necrosis.\n",
+  "content": {
+    "overview": {
+      "definition": "Slipped upper femoral epiphysis (SUFE) is a condition characterized by the displacement of the femoral head due to slippage of the femoral epiphysis at the growth plate (physis). It typically occurs in adolescents during periods of rapid growth.",
+      "epidemiology": "SUFE is most common in children aged 10-16 years, with a higher prevalence in males (2-3 times more common) and in those who are overweight. It is more prevalent in certain ethnic groups, particularly African American and Pacific Islander populations.",
+      "pathophysiology": "The exact cause of SUFE is not fully understood, but it is believed to involve a combination of mechanical and hormonal factors. The growth plate becomes weak, leading to slippage of the femoral head due to shear forces, particularly during periods of rapid growth."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hip or groin pain",
+        "Knee pain (referred pain)",
+        "Limited range of motion in the hip",
+        "Limping or altered gait"
+      ],
+      "signs": [
+        "Decreased internal rotation of the hip",
+        "External rotation of the affected leg",
+        "Tenderness over the hip joint",
+        "Leg length discrepancy"
+      ],
+      "atypicalPresentations": [
+        "Bilateral SUFE (occurs in 20-30% of cases)",
+        "Asymptomatic cases or mild symptoms",
+        "Presentation with knee pain only"
+      ],
+      "redFlags": [
+        "Severe hip pain with inability to bear weight",
+        "Acute onset of symptoms after minor trauma",
+        "Signs of avascular necrosis (e.g., severe pain, inability to move the hip)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the hip (AP and lateral views)"
+      ],
+      "secondLine": [
+        "MRI of the hip (to assess for avascular necrosis or early changes)",
+        "CT scan (if X-ray findings are inconclusive)"
+      ],
+      "specialistTests": [
+        "Bone scan (to assess for bilateral involvement or avascular necrosis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation and radiographic findings. The presence of a posterior and inferior displacement of the femoral head on X-ray confirms the diagnosis.",
+      "differentials": [
+        "Transient synovitis",
+        "Perthes disease",
+        "Osteomyelitis",
+        "Fracture of the femoral neck"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-weight bearing with crutches",
+          "Pain management (NSAIDs)"
+        ],
+        "secondLine": [
+          "Surgical intervention (in situ fixation or pinning)"
+        ],
+        "procedures": [
+          "Surgical fixation (e.g., in situ pinning) to stabilize the femoral head and prevent further slippage."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with orthopedic specialist",
+          "Physical therapy to improve range of motion"
+        ],
+        "secondLine": [
+          "Surgical intervention if there is significant slippage or complications"
+        ],
+        "monitoring": [
+          "Regular X-rays to monitor for progression of slippage or complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "10 mg/kg every 6-8 hours as needed, not exceeding 40 mg/kg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Use with caution in patients with renal issues or gastrointestinal history."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic and antipyretic that reduces pain and fever.",
+          "dosing": "15 mg/kg every 4-6 hours as needed, not exceeding 75 mg/kg/day.",
+          "sideEffects": "Liver toxicity in overdose, generally well tolerated.",
+          "notes": "Preferred for mild pain management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "In situ pinning",
+          "description": "A surgical procedure where pins are inserted to stabilize the femoral head in its correct position.",
+          "indications": "Moderate to severe slippage, symptomatic patients, or those with risk of avascular necrosis.",
+          "risks": "Infection, nerve injury, avascular necrosis, hardware failure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for SUFE is generally good with early diagnosis and appropriate management. However, complications such as avascular necrosis or osteoarthritis can occur, particularly if treatment is delayed.",
+    "complications": [
+      "Avascular necrosis of the femoral head",
+      "Chondrolysis",
+      "Early osteoarthritis",
+      "Recurrent slippage or contralateral SUFE"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms and signs of SUFE, initiate appropriate imaging, manage acute pain, and refer to orthopedic specialists for further management.",
+    "escalation": "If a patient presents with severe pain, inability to bear weight, or signs of avascular necrosis, immediate orthopedic consultation is required.",
+    "keySafetyConsiderations": "Ensure proper weight-bearing advice is given to prevent further slippage. Monitor for signs of complications post-surgery, including infection and avascular necrosis."
+  }
+}

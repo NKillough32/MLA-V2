@@ -1,0 +1,123 @@
+{
+  "id": "febrile_convulsion",
+  "name": "Febrile convulsion",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:03:42.702796",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Febrile convulsion: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFebrile convulsions are seizures that occur in children, typically between the ages of 6 months and 5 years, triggered by fever, often due to an infection. They are characterized by a generalized tonic-clonic seizure lasting less than 15 minutes, with no underlying neurological condition.\n\n### Epidemiology\nFebrile convulsions affect approximately 2-5% of children in the 6 months to 5 years age group. The incidence is higher in children with a family history of febrile convulsions.\n\n### Essential Pathophysiology\nThe exact mechanism is not fully understood, but it is believed that rapid increases in body temperature may lead to abnormal electrical activity in the brain, particularly in genetically predisposed children.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Generalized shaking or jerking movements\n- Loss of consciousness\n- Stiffening of the body\n\n### Key Signs\n- Fever (temperature >38°C)\n- Postictal confusion or drowsiness\n- Tongue biting or incontinence may occur during the seizure\n\n### Atypical Presentations\n- Focal seizures\n- Prolonged seizures (>15 minutes)\n- Multiple seizures within 24 hours\n\n### Red Flags Requiring Immediate Action\n- Seizure lasting longer than 15 minutes\n- Focal neurological signs postictally\n- First seizure after age 5\n- No fever present\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and examination\n- Temperature measurement\n\n### Second-line Investigations\n- Blood tests (CBC, electrolytes, glucose) if indicated\n\n### Specialist Tests\n- EEG (if atypical features are present)\n- Neuroimaging (CT/MRI) if there are concerns for structural abnormalities\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of a generalized seizure in a child with fever and no evidence of intracranial infection or other neurological conditions.\n\n### Key Differential Diagnoses to Exclude\n- Meningitis\n- Encephalitis\n- Hypoglycemia\n- Seizures due to other causes (e.g., metabolic disorders)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ensure safety (protect from injury)\n- Position child on their side\n- Administer benzodiazepines (e.g., rectal diazepam or buccal midazolam) if seizure lasts >5 minutes\n\n#### Second-line Treatments\n- Consider IV lorazepam or diazepam if seizures are prolonged or recurrent\n\n#### Emergency Procedures\n- Airway management if necessary\n- IV access for medication administration\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Reassurance to parents about the benign nature of simple febrile convulsions\n- Education on fever management\n\n#### Second-line Treatments\n- Consider referral to a pediatric neurologist if recurrent or atypical seizures occur\n\n#### Monitoring Requirements\n- Follow-up appointments to assess seizure frequency and parental concerns\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Rectal Diazepam\n- **Mechanism of Action**: Benzodiazepine that enhances GABA activity, leading to CNS depression and seizure control.\n- **Typical Dosing Range**: 0.5 mg/kg (max 10 mg) rectally, may repeat once after 10-15 minutes if needed.\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, hypotension.\n- **When to Use vs. Alternatives**: Use with caution in children with respiratory issues.\n\n#### Buccal Midazolam\n- **Mechanism of Action**: Benzodiazepine that enhances GABA activity, leading to CNS depression and seizure control.\n- **Typical Dosing Range**: 0.5 mg/kg (max 10 mg) buccally, may repeat once after 10-15 minutes if needed.\n- **Key Side Effects/Contraindications**: Sedation, respiratory depression, hypotension.\n- **When to Use vs. Alternatives**: Preferred for home use due to ease of administration.\n\n### Procedures\n\n#### Airway management\n- **What it Involves**: Ensuring the airway is clear and maintaining ventilation during a seizure.\n- **Indications**: If the child is unresponsive or has compromised airway due to seizure activity.\n- **Key Risks/Complications**: Risk of aspiration, need for intubation in severe cases.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for children with simple febrile convulsions is excellent, with most outgrowing the condition by age 5. The risk of developing epilepsy is low (1-2%).\n\n### Important Complications to Watch For\n- Injury during seizure\n- Psychosocial impact on family\n- Increased anxiety in parents regarding future seizures\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize febrile convulsions, provide initial management, reassure families, and refer for further evaluation if necessary.\n\n### When to Escalate to Senior/Specialist\nIf seizures are prolonged (>5 minutes), recurrent, or if there are atypical features, escalate care to a pediatrician or neurologist.\n\n### Key Safety Considerations\nEnsure the child is in a safe position during the seizure, monitor vital signs, and provide reassurance to the family. Document the event and any interventions performed.\n",
+  "content": {
+    "overview": {
+      "definition": "Febrile convulsions are seizures that occur in children, typically between the ages of 6 months and 5 years, triggered by fever, often due to an infection. They are characterized by a generalized tonic-clonic seizure lasting less than 15 minutes, with no underlying neurological condition.",
+      "epidemiology": "Febrile convulsions affect approximately 2-5% of children in the 6 months to 5 years age group. The incidence is higher in children with a family history of febrile convulsions.",
+      "pathophysiology": "The exact mechanism is not fully understood, but it is believed that rapid increases in body temperature may lead to abnormal electrical activity in the brain, particularly in genetically predisposed children."
+    },
+    "recognition": {
+      "symptoms": [
+        "Generalized shaking or jerking movements",
+        "Loss of consciousness",
+        "Stiffening of the body"
+      ],
+      "signs": [
+        "Fever (temperature >38°C)",
+        "Postictal confusion or drowsiness",
+        "Tongue biting or incontinence may occur during the seizure"
+      ],
+      "atypicalPresentations": [
+        "Focal seizures",
+        "Prolonged seizures (>15 minutes)",
+        "Multiple seizures within 24 hours"
+      ],
+      "redFlags": [
+        "Seizure lasting longer than 15 minutes",
+        "Focal neurological signs postictally",
+        "First seizure after age 5",
+        "No fever present"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and examination",
+        "Temperature measurement"
+      ],
+      "secondLine": [
+        "Blood tests (CBC, electrolytes, glucose) if indicated"
+      ],
+      "specialistTests": [
+        "EEG (if atypical features are present)",
+        "Neuroimaging (CT/MRI) if there are concerns for structural abnormalities"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of a generalized seizure in a child with fever and no evidence of intracranial infection or other neurological conditions.",
+      "differentials": [
+        "Meningitis",
+        "Encephalitis",
+        "Hypoglycemia",
+        "Seizures due to other causes (e.g., metabolic disorders)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ensure safety (protect from injury)",
+          "Position child on their side",
+          "Administer benzodiazepines (e.g., rectal diazepam or buccal midazolam) if seizure lasts >5 minutes"
+        ],
+        "secondLine": [
+          "Consider IV lorazepam or diazepam if seizures are prolonged or recurrent"
+        ],
+        "procedures": [
+          "Airway management if necessary",
+          "IV access for medication administration"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Reassurance to parents about the benign nature of simple febrile convulsions",
+          "Education on fever management"
+        ],
+        "secondLine": [
+          "Consider referral to a pediatric neurologist if recurrent or atypical seizures occur"
+        ],
+        "monitoring": [
+          "Follow-up appointments to assess seizure frequency and parental concerns"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Rectal Diazepam",
+          "mechanism": "Benzodiazepine that enhances GABA activity, leading to CNS depression and seizure control.",
+          "dosing": "0.5 mg/kg (max 10 mg) rectally, may repeat once after 10-15 minutes if needed.",
+          "sideEffects": "Sedation, respiratory depression, hypotension.",
+          "notes": "Use with caution in children with respiratory issues."
+        },
+        {
+          "name": "Buccal Midazolam",
+          "mechanism": "Benzodiazepine that enhances GABA activity, leading to CNS depression and seizure control.",
+          "dosing": "0.5 mg/kg (max 10 mg) buccally, may repeat once after 10-15 minutes if needed.",
+          "sideEffects": "Sedation, respiratory depression, hypotension.",
+          "notes": "Preferred for home use due to ease of administration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Airway management",
+          "description": "Ensuring the airway is clear and maintaining ventilation during a seizure.",
+          "indications": "If the child is unresponsive or has compromised airway due to seizure activity.",
+          "risks": "Risk of aspiration, need for intubation in severe cases."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for children with simple febrile convulsions is excellent, with most outgrowing the condition by age 5. The risk of developing epilepsy is low (1-2%).",
+    "complications": [
+      "Injury during seizure",
+      "Psychosocial impact on family",
+      "Increased anxiety in parents regarding future seizures"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize febrile convulsions, provide initial management, reassure families, and refer for further evaluation if necessary.",
+    "escalation": "If seizures are prolonged (>5 minutes), recurrent, or if there are atypical features, escalate care to a pediatrician or neurologist.",
+    "keySafetyConsiderations": "Ensure the child is in a safe position during the seizure, monitor vital signs, and provide reassurance to the family. Document the event and any interventions performed."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "peripheral_nerve_injuriespalsies",
+  "name": "Peripheral nerve injuries/palsies",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:04:58.229107",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Peripheral nerve injuries/palsies: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPeripheral nerve injuries/palsies refer to damage or dysfunction of the peripheral nerves, which can result from trauma, compression, or systemic diseases, leading to motor, sensory, or autonomic deficits.\n\n### Epidemiology\nPeripheral nerve injuries are common in both adults and children, often resulting from trauma (e.g., sports injuries, falls, or accidents). In children, brachial plexus injuries during birth are a notable cause. The incidence varies by age and activity level, with higher rates in active populations.\n\n### Essential Pathophysiology\nPeripheral nerves consist of axons surrounded by myelin sheaths. Injury can disrupt the continuity of the nerve, leading to axonal degeneration and demyelination. Depending on the severity, injuries can be classified as neurapraxia (mild), axonotmesis (moderate), or neurotmesis (severe). Neurapraxia typically recovers fully, while axonotmesis may require longer recovery, and neurotmesis often necessitates surgical intervention.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Weakness or paralysis in the affected area\n- Numbness or tingling sensations\n- Loss of reflexes\n- Pain or discomfort along the nerve pathway\n\n### Key Signs\n- Muscle atrophy in chronic cases\n- Decreased muscle strength on examination\n- Sensory loss in a dermatomal or peripheral distribution\n- Altered reflexes (e.g., diminished or absent reflexes)\n\n### Atypical Presentations\n- Pain without obvious weakness\n- Sensory changes without motor involvement\n- Delayed presentation of symptoms after an injury\n\n### Red Flags Requiring Immediate Action\n- Severe, unrelenting pain\n- Rapidly progressive weakness\n- Signs of systemic illness (fever, weight loss)\n- Involvement of multiple nerve distributions\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination to assess motor and sensory function\n- Electromyography (EMG) to evaluate nerve function\n- Nerve conduction studies (NCS) to assess the speed and integrity of nerve conduction\n\n### Second-line Investigations\n- Ultrasound imaging of the nerve to assess for structural abnormalities\n- MRI of the affected area if there is suspicion of associated injuries or tumors\n\n### Specialist Tests\n- Genetic testing for hereditary neuropathies\n- Biopsy of the nerve in certain cases of suspected neuropathy\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on history, physical examination, and supportive findings from EMG/NCS. Specific criteria may include the presence of weakness, sensory loss, and reflex changes in a specific nerve distribution.\n\n### Key Differential Diagnoses to Exclude\n- Cervical radiculopathy\n- Multiple sclerosis\n- Diabetic neuropathy\n- Guillain-Barré syndrome\n- Herniated disc\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate immobilization of the affected area to prevent further injury\n- Pain management with NSAIDs or acetaminophen\n- Referral to a specialist (neurologist or orthopedic surgeon) for further evaluation\n\n#### Second-line Treatments\n- Physical therapy to maintain range of motion and prevent contractures\n- Consideration of corticosteroids in cases of acute inflammation\n\n#### Emergency Procedures\n- Surgical exploration and repair in cases of neurotmesis or significant axonotmesis\n- Decompression surgery for entrapment syndromes (e.g., carpal tunnel syndrome)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Rehabilitation with physical and occupational therapy to improve function\n- Use of assistive devices as needed\n\n#### Second-line Treatments\n- Consideration of surgical options for persistent symptoms or functional impairment\n- Pain management strategies including medications or nerve blocks\n\n#### Monitoring Requirements\n- Regular follow-up to assess recovery and adjust management plans as needed\n- Monitoring for complications such as muscle atrophy or joint contractures\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Gabapentin\n- **Mechanism of Action**: Modulates excitatory neurotransmitter release and inhibits excitatory pathways in the CNS.\n- **Typical Dosing Range**: Start at 300 mg orally at bedtime, titrate up to 900-1800 mg/day as needed.\n- **Key Side Effects/Contraindications**: Dizziness, fatigue, peripheral edema, and potential for sedation.\n- **When to Use vs. Alternatives**: Useful for neuropathic pain management.\n\n#### Pregabalin\n- **Mechanism of Action**: Similar to gabapentin, it binds to the alpha-2-delta subunit of voltage-gated calcium channels, inhibiting excitatory neurotransmitter release.\n- **Typical Dosing Range**: Start at 75 mg orally twice daily, can increase to 300 mg/day based on response.\n- **Key Side Effects/Contraindications**: Dizziness, somnolence, dry mouth, and weight gain.\n- **When to Use vs. Alternatives**: Effective for neuropathic pain and anxiety.\n\n### Procedures\n\n#### Nerve repair surgery\n- **What it Involves**: Surgical intervention to repair a severed or damaged nerve, often involving suturing the nerve ends together.\n- **Indications**: Severe nerve injuries (neurotmesis) where recovery is unlikely without surgical intervention.\n- **Key Risks/Complications**: Infection, scarring, incomplete recovery, and potential for neuroma formation.\n\n#### Carpal tunnel release\n- **What it Involves**: Surgical procedure to relieve pressure on the median nerve at the wrist.\n- **Indications**: Persistent symptoms of carpal tunnel syndrome not responsive to conservative management.\n- **Key Risks/Complications**: Infection, nerve damage, and recurrence of symptoms.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for peripheral nerve injuries varies widely based on the type and severity of the injury. Neurapraxia often resolves completely, while axonotmesis may take months to recover, and neurotmesis may result in permanent deficits if not treated appropriately.\n\n### Important Complications to Watch For\n- Chronic pain syndromes\n- Muscle atrophy and weakness\n- Joint contractures due to disuse\n- Neuroma formation at the site of injury\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to specialists when necessary. They should also educate patients about the nature of their injury and the expected recovery process.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist or orthopedic surgeon for any patient with significant weakness, sensory loss, or red flag symptoms. Escalate care for patients with worsening symptoms or those not responding to initial management.\n\n### Key Safety Considerations\nEnsure proper documentation of neurological assessments, monitor for signs of compartment syndrome in acute injuries, and educate patients on the importance of follow-up appointments to monitor recovery.\n",
+  "content": {
+    "overview": {
+      "definition": "Peripheral nerve injuries/palsies refer to damage or dysfunction of the peripheral nerves, which can result from trauma, compression, or systemic diseases, leading to motor, sensory, or autonomic deficits.",
+      "epidemiology": "Peripheral nerve injuries are common in both adults and children, often resulting from trauma (e.g., sports injuries, falls, or accidents). In children, brachial plexus injuries during birth are a notable cause. The incidence varies by age and activity level, with higher rates in active populations.",
+      "pathophysiology": "Peripheral nerves consist of axons surrounded by myelin sheaths. Injury can disrupt the continuity of the nerve, leading to axonal degeneration and demyelination. Depending on the severity, injuries can be classified as neurapraxia (mild), axonotmesis (moderate), or neurotmesis (severe). Neurapraxia typically recovers fully, while axonotmesis may require longer recovery, and neurotmesis often necessitates surgical intervention."
+    },
+    "recognition": {
+      "symptoms": [
+        "Weakness or paralysis in the affected area",
+        "Numbness or tingling sensations",
+        "Loss of reflexes",
+        "Pain or discomfort along the nerve pathway"
+      ],
+      "signs": [
+        "Muscle atrophy in chronic cases",
+        "Decreased muscle strength on examination",
+        "Sensory loss in a dermatomal or peripheral distribution",
+        "Altered reflexes (e.g., diminished or absent reflexes)"
+      ],
+      "atypicalPresentations": [
+        "Pain without obvious weakness",
+        "Sensory changes without motor involvement",
+        "Delayed presentation of symptoms after an injury"
+      ],
+      "redFlags": [
+        "Severe, unrelenting pain",
+        "Rapidly progressive weakness",
+        "Signs of systemic illness (fever, weight loss)",
+        "Involvement of multiple nerve distributions"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination to assess motor and sensory function",
+        "Electromyography (EMG) to evaluate nerve function",
+        "Nerve conduction studies (NCS) to assess the speed and integrity of nerve conduction"
+      ],
+      "secondLine": [
+        "Ultrasound imaging of the nerve to assess for structural abnormalities",
+        "MRI of the affected area if there is suspicion of associated injuries or tumors"
+      ],
+      "specialistTests": [
+        "Genetic testing for hereditary neuropathies",
+        "Biopsy of the nerve in certain cases of suspected neuropathy"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on history, physical examination, and supportive findings from EMG/NCS. Specific criteria may include the presence of weakness, sensory loss, and reflex changes in a specific nerve distribution.",
+      "differentials": [
+        "Cervical radiculopathy",
+        "Multiple sclerosis",
+        "Diabetic neuropathy",
+        "Guillain-Barré syndrome",
+        "Herniated disc"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate immobilization of the affected area to prevent further injury",
+          "Pain management with NSAIDs or acetaminophen",
+          "Referral to a specialist (neurologist or orthopedic surgeon) for further evaluation"
+        ],
+        "secondLine": [
+          "Physical therapy to maintain range of motion and prevent contractures",
+          "Consideration of corticosteroids in cases of acute inflammation"
+        ],
+        "procedures": [
+          "Surgical exploration and repair in cases of neurotmesis or significant axonotmesis",
+          "Decompression surgery for entrapment syndromes (e.g., carpal tunnel syndrome)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Rehabilitation with physical and occupational therapy to improve function",
+          "Use of assistive devices as needed"
+        ],
+        "secondLine": [
+          "Consideration of surgical options for persistent symptoms or functional impairment",
+          "Pain management strategies including medications or nerve blocks"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess recovery and adjust management plans as needed",
+          "Monitoring for complications such as muscle atrophy or joint contractures"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Gabapentin",
+          "mechanism": "Modulates excitatory neurotransmitter release and inhibits excitatory pathways in the CNS.",
+          "dosing": "Start at 300 mg orally at bedtime, titrate up to 900-1800 mg/day as needed.",
+          "sideEffects": "Dizziness, fatigue, peripheral edema, and potential for sedation.",
+          "notes": "Useful for neuropathic pain management."
+        },
+        {
+          "name": "Pregabalin",
+          "mechanism": "Similar to gabapentin, it binds to the alpha-2-delta subunit of voltage-gated calcium channels, inhibiting excitatory neurotransmitter release.",
+          "dosing": "Start at 75 mg orally twice daily, can increase to 300 mg/day based on response.",
+          "sideEffects": "Dizziness, somnolence, dry mouth, and weight gain.",
+          "notes": "Effective for neuropathic pain and anxiety."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nerve repair surgery",
+          "description": "Surgical intervention to repair a severed or damaged nerve, often involving suturing the nerve ends together.",
+          "indications": "Severe nerve injuries (neurotmesis) where recovery is unlikely without surgical intervention.",
+          "risks": "Infection, scarring, incomplete recovery, and potential for neuroma formation."
+        },
+        {
+          "name": "Carpal tunnel release",
+          "description": "Surgical procedure to relieve pressure on the median nerve at the wrist.",
+          "indications": "Persistent symptoms of carpal tunnel syndrome not responsive to conservative management.",
+          "risks": "Infection, nerve damage, and recurrence of symptoms."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for peripheral nerve injuries varies widely based on the type and severity of the injury. Neurapraxia often resolves completely, while axonotmesis may take months to recover, and neurotmesis may result in permanent deficits if not treated appropriately.",
+    "complications": [
+      "Chronic pain syndromes",
+      "Muscle atrophy and weakness",
+      "Joint contractures due to disuse",
+      "Neuroma formation at the site of injury"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to specialists when necessary. They should also educate patients about the nature of their injury and the expected recovery process.",
+    "escalation": "Refer to a neurologist or orthopedic surgeon for any patient with significant weakness, sensory loss, or red flag symptoms. Escalate care for patients with worsening symptoms or those not responding to initial management.",
+    "keySafetyConsiderations": "Ensure proper documentation of neurological assessments, monitor for signs of compartment syndrome in acute injuries, and educate patients on the importance of follow-up appointments to monitor recovery."
+  }
+}

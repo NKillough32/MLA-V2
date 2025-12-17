@@ -1,0 +1,112 @@
+{
+  "id": "rubella",
+  "name": "Rubella",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:08:45.776365",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Rubella: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nRubella, also known as German measles, is a contagious viral infection caused by the rubella virus, characterized by a distinctive rash and mild fever. It is particularly concerning in pregnant women due to the risk of congenital rubella syndrome in the fetus.\n\n### Epidemiology\nRubella is less common in countries with high vaccination coverage. The incidence has significantly decreased since the introduction of the MMR (measles, mumps, rubella) vaccine. However, outbreaks can still occur, especially in unvaccinated populations.\n\n### Essential Pathophysiology\nThe rubella virus is an RNA virus that primarily spreads through respiratory droplets. After an incubation period of 14-21 days, the virus replicates in the nasopharynx and regional lymph nodes, leading to viremia and subsequent dissemination to the skin and other organs.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Low-grade fever\n- Mild rash that starts on the face and spreads to the body\n- Lymphadenopathy (especially posterior auricular and cervical)\n- Mild conjunctivitis\n- Arthralgia (more common in adults)\n\n### Key Signs\n- Maculopapular rash that typically lasts 3 days\n- Postauricular and occipital lymphadenopathy\n- Mild conjunctival injection\n\n### Atypical Presentations\n- Asymptomatic cases, especially in vaccinated individuals\n- Rash may be less pronounced in adults\n\n### Red Flags Requiring Immediate Action\n- Fever lasting more than 3 days\n- Severe headache or neck stiffness (possible meningitis)\n- Signs of congenital rubella syndrome in infants (e.g., cataracts, cardiac defects)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Serological testing for rubella IgM antibodies (indicates recent infection)\n- Rubella IgG antibodies (to assess immunity or past infection)\n\n### Second-line Investigations\n- PCR testing of throat swabs or urine (for active infection)\n\n### Specialist Tests\n- Genetic testing for rubella virus in cases of congenital rubella syndrome\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by serological testing. A confirmed case requires the presence of rubella virus or rubella-specific IgM antibodies.\n\n### Key Differential Diagnoses to Exclude\n- Measles\n- Scarlet fever\n- Kawasaki disease\n- Other viral exanthems (e.g., roseola, fifth disease)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, antipyretics)\n- Isolation to prevent spread\n\n#### Second-line Treatments\n- Consideration of immunoglobulin in high-risk cases (e.g., pregnant women exposed to rubella)\n\n#### Emergency Procedures\n- None specific for rubella; supportive management is key\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring for complications in congenital rubella syndrome (e.g., audiology, cardiology follow-up)\n\n#### Second-line Treatments\n- Referral to specialists for management of specific complications (e.g., ophthalmology for cataracts)\n\n#### Monitoring Requirements\n- Regular follow-up for developmental milestones in affected children\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces fever and pain\n- **Typical Dosing Range**: 5-10 mg/kg every 6-8 hours as needed (max 40 mg/kg/day)\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in patients with renal issues or gastrointestinal disorders.\n\n#### Acetaminophen (Paracetamol)\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day)\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Preferred for fever management in children.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nRubella is generally self-limiting in healthy individuals, with a good prognosis. However, congenital rubella syndrome can lead to significant long-term complications, including hearing loss, cardiac defects, and developmental delays.\n\n### Important Complications to Watch For\n- Congenital rubella syndrome (infections during pregnancy)\n- Thrombocytopenic purpura\n- Encephalitis (rare)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of rubella, perform appropriate investigations, provide supportive care, and educate patients about vaccination and prevention strategies.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician for suspected congenital rubella syndrome or severe cases requiring specialist management.\n\n### Key Safety Considerations\nEnsure vaccination status is up to date in children and women of childbearing age. Pregnant women should be advised to avoid exposure to rubella, and vaccination should be administered pre-pregnancy.\n",
+  "content": {
+    "overview": {
+      "definition": "Rubella, also known as German measles, is a contagious viral infection caused by the rubella virus, characterized by a distinctive rash and mild fever. It is particularly concerning in pregnant women due to the risk of congenital rubella syndrome in the fetus.",
+      "epidemiology": "Rubella is less common in countries with high vaccination coverage. The incidence has significantly decreased since the introduction of the MMR (measles, mumps, rubella) vaccine. However, outbreaks can still occur, especially in unvaccinated populations.",
+      "pathophysiology": "The rubella virus is an RNA virus that primarily spreads through respiratory droplets. After an incubation period of 14-21 days, the virus replicates in the nasopharynx and regional lymph nodes, leading to viremia and subsequent dissemination to the skin and other organs."
+    },
+    "recognition": {
+      "symptoms": [
+        "Low-grade fever",
+        "Mild rash that starts on the face and spreads to the body",
+        "Lymphadenopathy (especially posterior auricular and cervical)",
+        "Mild conjunctivitis",
+        "Arthralgia (more common in adults)"
+      ],
+      "signs": [
+        "Maculopapular rash that typically lasts 3 days",
+        "Postauricular and occipital lymphadenopathy",
+        "Mild conjunctival injection"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic cases, especially in vaccinated individuals",
+        "Rash may be less pronounced in adults"
+      ],
+      "redFlags": [
+        "Fever lasting more than 3 days",
+        "Severe headache or neck stiffness (possible meningitis)",
+        "Signs of congenital rubella syndrome in infants (e.g., cataracts, cardiac defects)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Serological testing for rubella IgM antibodies (indicates recent infection)",
+        "Rubella IgG antibodies (to assess immunity or past infection)"
+      ],
+      "secondLine": [
+        "PCR testing of throat swabs or urine (for active infection)"
+      ],
+      "specialistTests": [
+        "Genetic testing for rubella virus in cases of congenital rubella syndrome"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by serological testing. A confirmed case requires the presence of rubella virus or rubella-specific IgM antibodies.",
+      "differentials": [
+        "Measles",
+        "Scarlet fever",
+        "Kawasaki disease",
+        "Other viral exanthems (e.g., roseola, fifth disease)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, antipyretics)",
+          "Isolation to prevent spread"
+        ],
+        "secondLine": [
+          "Consideration of immunoglobulin in high-risk cases (e.g., pregnant women exposed to rubella)"
+        ],
+        "procedures": [
+          "None specific for rubella; supportive management is key"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring for complications in congenital rubella syndrome (e.g., audiology, cardiology follow-up)"
+        ],
+        "secondLine": [
+          "Referral to specialists for management of specific complications (e.g., ophthalmology for cataracts)"
+        ],
+        "monitoring": [
+          "Regular follow-up for developmental milestones in affected children"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces fever and pain",
+          "dosing": "5-10 mg/kg every 6-8 hours as needed (max 40 mg/kg/day)",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in patients with renal issues or gastrointestinal disorders."
+        },
+        {
+          "name": "Acetaminophen (Paracetamol)",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day)",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Preferred for fever management in children."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Rubella is generally self-limiting in healthy individuals, with a good prognosis. However, congenital rubella syndrome can lead to significant long-term complications, including hearing loss, cardiac defects, and developmental delays.",
+    "complications": [
+      "Congenital rubella syndrome (infections during pregnancy)",
+      "Thrombocytopenic purpura",
+      "Encephalitis (rare)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of rubella, perform appropriate investigations, provide supportive care, and educate patients about vaccination and prevention strategies.",
+    "escalation": "Refer to a pediatrician for suspected congenital rubella syndrome or severe cases requiring specialist management.",
+    "keySafetyConsiderations": "Ensure vaccination status is up to date in children and women of childbearing age. Pregnant women should be advised to avoid exposure to rubella, and vaccination should be administered pre-pregnancy."
+  }
+}

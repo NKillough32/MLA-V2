@@ -1,0 +1,131 @@
+{
+  "id": "nutrition_and_hydration_malnutrition",
+  "name": "Nutrition and hydration - Malnutrition",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:00:40.509267",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nutrition and hydration - Malnutrition: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMalnutrition refers to deficiencies, excesses, or imbalances in a person's intake of energy and/or nutrients. In children, it can manifest as undernutrition (stunting, wasting, underweight) or overnutrition (obesity).\n\n### Epidemiology\nMalnutrition affects approximately 1 in 5 children globally, with higher prevalence in low- and middle-income countries. In the UK, around 5% of children are affected by malnutrition, particularly in vulnerable populations such as those with chronic illnesses or socioeconomic disadvantages.\n\n### Essential Pathophysiology\nMalnutrition can result from inadequate dietary intake, malabsorption, increased metabolic demands, or a combination of these factors. In children, it can lead to impaired growth, development, and immune function, affecting overall health and increasing susceptibility to infections.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Poor growth or weight gain\n- Fatigue\n- Irritability\n- Delayed wound healing\n- Frequent infections\n\n### Key Signs\n- Low body mass index (BMI)\n- Muscle wasting\n- Fatty liver\n- Skin changes (dry, flaky skin)\n- Hair loss\n\n### Atypical Presentations\n- Behavioral changes (e.g., increased aggression or withdrawal)\n- Cognitive delays or learning difficulties\n\n### Red Flags Requiring Immediate Action\n- Severe weight loss (>10% of body weight in a month)\n- Failure to thrive in infants\n- Signs of dehydration (dry mucous membranes, decreased urine output)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (growth charts, dietary history)\n- Blood tests (full blood count, electrolytes, liver function tests)\n- Urinalysis\n\n### Second-line Investigations\n- Nutritional assessment (24-hour dietary recall, food frequency questionnaire)\n- Anthropometric measurements (height, weight, mid-upper arm circumference)\n\n### Specialist Tests\n- Serum vitamin and mineral levels (e.g., vitamin D, iron)\n- Stool tests for malabsorption (e.g., fecal fat test)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of malnutrition is based on clinical assessment, including growth measurements (weight-for-age, height-for-age) and dietary intake evaluation. A BMI <5th percentile for age is indicative of undernutrition.\n\n### Key Differential Diagnoses to Exclude\n- Cystic fibrosis\n- Chronic kidney disease\n- Gastroesophageal reflux disease (GERD)\n- Infections (e.g., tuberculosis)\n- Endocrine disorders (e.g., hyperthyroidism)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate nutritional support (oral rehydration solutions, high-calorie supplements)\n- Monitoring of vital signs and hydration status\n\n#### Second-line Treatments\n- Enteral feeding (if oral intake is insufficient)\n- IV fluids if severely dehydrated\n\n#### Emergency Procedures\n- Nasogastric tube insertion for feeding in severe cases.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Nutritional counseling and education for families\n- Regular follow-up with growth monitoring\n\n#### Second-line Treatments\n- Referral to a dietitian for tailored meal plans\n- Consideration of enteral feeding if oral intake remains inadequate\n\n#### Monitoring Requirements\n- Regular weight and height measurements\n- Nutritional status assessments every 3-6 months\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Multivitamin supplements\n- **Mechanism of Action**: Provide essential vitamins and minerals to correct deficiencies.\n- **Typical Dosing Range**: As per pediatric guidelines, typically one chewable tablet daily for children over 4 years.\n- **Key Side Effects/Contraindications**: Generally well tolerated; may cause gastrointestinal upset in some cases.\n- **When to Use vs. Alternatives**: Consider in children with known deficiencies or at risk of malnutrition.\n\n#### Nutritional supplements (e.g., Fortisip, Ensure)\n- **Mechanism of Action**: High-calorie, nutrient-dense drinks to supplement dietary intake.\n- **Typical Dosing Range**: 1-2 bottles per day, depending on caloric needs.\n- **Key Side Effects/Contraindications**: May cause gastrointestinal discomfort or diarrhea.\n- **When to Use vs. Alternatives**: Useful for children who are unable to meet their nutritional needs through food alone.\n\n### Procedures\n\n#### Nasogastric tube insertion\n- **What it Involves**: A flexible tube is inserted through the nose into the stomach to provide nutritional support.\n- **Indications**: Used in cases of severe malnutrition where oral intake is inadequate or impossible.\n- **Key Risks/Complications**: Nasal trauma, esophageal injury, aspiration pneumonia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, children can recover from malnutrition and achieve normal growth and development. However, severe or prolonged malnutrition can lead to lasting physical and cognitive impairments.\n\n### Important Complications to Watch For\n- Growth retardation\n- Increased susceptibility to infections\n- Delayed wound healing\n- Long-term cognitive deficits\n- Bone health issues (e.g., rickets)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize signs of malnutrition, initiate appropriate investigations, and refer to specialists as needed. They should also provide education to families about nutrition and hydration.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric dietitian for complex cases or if there is no improvement with initial management. Escalate to a pediatrician if there are significant red flags or complications.\n\n### Key Safety Considerations\nMonitor for signs of refeeding syndrome in malnourished patients receiving nutritional support. Ensure hydration status is regularly assessed, especially in acute cases.\n",
+  "content": {
+    "overview": {
+      "definition": "Malnutrition refers to deficiencies, excesses, or imbalances in a person's intake of energy and/or nutrients. In children, it can manifest as undernutrition (stunting, wasting, underweight) or overnutrition (obesity).",
+      "epidemiology": "Malnutrition affects approximately 1 in 5 children globally, with higher prevalence in low- and middle-income countries. In the UK, around 5% of children are affected by malnutrition, particularly in vulnerable populations such as those with chronic illnesses or socioeconomic disadvantages.",
+      "pathophysiology": "Malnutrition can result from inadequate dietary intake, malabsorption, increased metabolic demands, or a combination of these factors. In children, it can lead to impaired growth, development, and immune function, affecting overall health and increasing susceptibility to infections."
+    },
+    "recognition": {
+      "symptoms": [
+        "Poor growth or weight gain",
+        "Fatigue",
+        "Irritability",
+        "Delayed wound healing",
+        "Frequent infections"
+      ],
+      "signs": [
+        "Low body mass index (BMI)",
+        "Muscle wasting",
+        "Fatty liver",
+        "Skin changes (dry, flaky skin)",
+        "Hair loss"
+      ],
+      "atypicalPresentations": [
+        "Behavioral changes (e.g., increased aggression or withdrawal)",
+        "Cognitive delays or learning difficulties"
+      ],
+      "redFlags": [
+        "Severe weight loss (>10% of body weight in a month)",
+        "Failure to thrive in infants",
+        "Signs of dehydration (dry mucous membranes, decreased urine output)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (growth charts, dietary history)",
+        "Blood tests (full blood count, electrolytes, liver function tests)",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "Nutritional assessment (24-hour dietary recall, food frequency questionnaire)",
+        "Anthropometric measurements (height, weight, mid-upper arm circumference)"
+      ],
+      "specialistTests": [
+        "Serum vitamin and mineral levels (e.g., vitamin D, iron)",
+        "Stool tests for malabsorption (e.g., fecal fat test)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of malnutrition is based on clinical assessment, including growth measurements (weight-for-age, height-for-age) and dietary intake evaluation. A BMI <5th percentile for age is indicative of undernutrition.",
+      "differentials": [
+        "Cystic fibrosis",
+        "Chronic kidney disease",
+        "Gastroesophageal reflux disease (GERD)",
+        "Infections (e.g., tuberculosis)",
+        "Endocrine disorders (e.g., hyperthyroidism)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate nutritional support (oral rehydration solutions, high-calorie supplements)",
+          "Monitoring of vital signs and hydration status"
+        ],
+        "secondLine": [
+          "Enteral feeding (if oral intake is insufficient)",
+          "IV fluids if severely dehydrated"
+        ],
+        "procedures": [
+          "Nasogastric tube insertion for feeding in severe cases."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Nutritional counseling and education for families",
+          "Regular follow-up with growth monitoring"
+        ],
+        "secondLine": [
+          "Referral to a dietitian for tailored meal plans",
+          "Consideration of enteral feeding if oral intake remains inadequate"
+        ],
+        "monitoring": [
+          "Regular weight and height measurements",
+          "Nutritional status assessments every 3-6 months"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Multivitamin supplements",
+          "mechanism": "Provide essential vitamins and minerals to correct deficiencies.",
+          "dosing": "As per pediatric guidelines, typically one chewable tablet daily for children over 4 years.",
+          "sideEffects": "Generally well tolerated; may cause gastrointestinal upset in some cases.",
+          "notes": "Consider in children with known deficiencies or at risk of malnutrition."
+        },
+        {
+          "name": "Nutritional supplements (e.g., Fortisip, Ensure)",
+          "mechanism": "High-calorie, nutrient-dense drinks to supplement dietary intake.",
+          "dosing": "1-2 bottles per day, depending on caloric needs.",
+          "sideEffects": "May cause gastrointestinal discomfort or diarrhea.",
+          "notes": "Useful for children who are unable to meet their nutritional needs through food alone."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Nasogastric tube insertion",
+          "description": "A flexible tube is inserted through the nose into the stomach to provide nutritional support.",
+          "indications": "Used in cases of severe malnutrition where oral intake is inadequate or impossible.",
+          "risks": "Nasal trauma, esophageal injury, aspiration pneumonia."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, children can recover from malnutrition and achieve normal growth and development. However, severe or prolonged malnutrition can lead to lasting physical and cognitive impairments.",
+    "complications": [
+      "Growth retardation",
+      "Increased susceptibility to infections",
+      "Delayed wound healing",
+      "Long-term cognitive deficits",
+      "Bone health issues (e.g., rickets)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize signs of malnutrition, initiate appropriate investigations, and refer to specialists as needed. They should also provide education to families about nutrition and hydration.",
+    "escalation": "Refer to a pediatric dietitian for complex cases or if there is no improvement with initial management. Escalate to a pediatrician if there are significant red flags or complications.",
+    "keySafetyConsiderations": "Monitor for signs of refeeding syndrome in malnourished patients receiving nutritional support. Ensure hydration status is regularly assessed, especially in acute cases."
+  }
+}

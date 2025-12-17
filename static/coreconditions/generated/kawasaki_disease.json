@@ -1,0 +1,128 @@
+{
+  "id": "kawasaki_disease",
+  "name": "Kawasaki disease",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:10:04.281298",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Kawasaki disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nKawasaki disease is an acute, self-limiting vasculitis that primarily affects children, characterized by fever, rash, conjunctivitis, and involvement of the coronary arteries.\n\n### Epidemiology\nKawasaki disease is most common in children under 5 years of age, with a higher incidence in boys and in children of Asian descent. The incidence in the UK is approximately 8-20 cases per 100,000 children under 5 years annually.\n\n### Essential Pathophysiology\nThe exact cause of Kawasaki disease is unknown, but it is thought to involve an autoimmune response triggered by an infectious agent in genetically predisposed individuals, leading to inflammation of medium-sized blood vessels, particularly affecting the coronary arteries.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever lasting more than 5 days\n- Rash (polymorphous, often maculopapular)\n- Conjunctivitis (bilateral, non-purulent)\n- Oral changes (strawberry tongue, cracked lips)\n- Cervical lymphadenopathy (often unilateral)\n\n### Key Signs\n- Fever (≥39°C)\n- Erythema of palms and soles\n- Desquamation of skin (especially around the nails)\n- Joint swelling or pain\n\n### Atypical Presentations\n- Prolonged fever without classic symptoms\n- Presence of only some symptoms (e.g., fever and rash only)\n- Older children or adolescents may present differently\n\n### Red Flags Requiring Immediate Action\n- Persistent high fever for more than 5 days\n- Signs of heart failure (e.g., tachycardia, hypotension)\n- Severe abdominal pain or vomiting\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Liver function tests (LFTs)\n- Urinalysis\n\n### Second-line Investigations\n- Echocardiogram (to assess coronary artery involvement)\n- Electrocardiogram (ECG)\n\n### Specialist Tests\n- Coronary angiography (if significant coronary artery disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of fever for 5 days or more and at least 4 of the following 5 criteria: conjunctivitis, rash, oral changes, cervical lymphadenopathy, and palm/sole changes.\n\n### Key Differential Diagnoses to Exclude\n- Scarlet fever\n- Staphylococcal scalded skin syndrome\n- Viral exanthems (e.g., measles, rubella)\n- Systemic juvenile idiopathic arthritis\n- Infectious mononucleosis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Intravenous immunoglobulin (IVIG) 2 g/kg over 10-12 hours\n- Aspirin (high dose, 80-100 mg/kg/day in divided doses)\n\n#### Second-line Treatments\n- Corticosteroids (if IVIG is ineffective)\n\n#### Emergency Procedures\n- Echocardiogram to monitor coronary artery changes\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Aspirin (low dose, 3-5 mg/kg/day once daily after acute phase)\n\n#### Second-line Treatments\n- Consideration of anticoagulation if coronary artery aneurysms develop\n\n#### Monitoring Requirements\n- Regular echocardiograms to monitor coronary artery status\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Intravenous Immunoglobulin (IVIG)\n- **Mechanism of Action**: Provides passive immunity and modulates the immune response.\n- **Typical Dosing Range**: 2 g/kg as a single infusion over 10-12 hours.\n- **Key Side Effects/Contraindications**: Headache, fever, chills, allergic reactions, thromboembolic events.\n- **When to Use vs. Alternatives**: Administered in the acute phase to reduce the risk of coronary artery aneurysms.\n\n#### Aspirin\n- **Mechanism of Action**: Anti-inflammatory and antiplatelet effects.\n- **Typical Dosing Range**: High dose: 80-100 mg/kg/day in divided doses during acute phase; Low dose: 3-5 mg/kg/day once daily after acute phase.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, Reye's syndrome in children (rare).\n- **When to Use vs. Alternatives**: Aspirin is crucial in both acute and chronic management.\n\n### Procedures\n\n#### Echocardiogram\n- **What it Involves**: Ultrasound imaging of the heart to assess for coronary artery involvement and function.\n- **Indications**: To evaluate for coronary artery aneurysms or other cardiac complications in Kawasaki disease.\n- **Key Risks/Complications**: Minimal risks associated with ultrasound; no radiation exposure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and treatment, the prognosis is generally good, with most children recovering fully. However, coronary artery aneurysms can develop in 15-25% of untreated cases, leading to long-term cardiovascular complications.\n\n### Important Complications to Watch For\n- Coronary artery aneurysms\n- Myocardial infarction\n- Arrhythmias\n- Heart failure\n- Pericarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing the signs and symptoms of Kawasaki disease, initiate investigations, and refer to a pediatric specialist for management. They should also educate families about the condition and its implications.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with prolonged fever and signs suggestive of Kawasaki disease, escalate care to a pediatrician or pediatric cardiologist promptly, especially if there are signs of cardiac involvement.\n\n### Key Safety Considerations\nMonitor for signs of coronary artery involvement and complications. Ensure appropriate follow-up with cardiology for children diagnosed with Kawasaki disease, especially those with coronary artery abnormalities.\n",
+  "content": {
+    "overview": {
+      "definition": "Kawasaki disease is an acute, self-limiting vasculitis that primarily affects children, characterized by fever, rash, conjunctivitis, and involvement of the coronary arteries.",
+      "epidemiology": "Kawasaki disease is most common in children under 5 years of age, with a higher incidence in boys and in children of Asian descent. The incidence in the UK is approximately 8-20 cases per 100,000 children under 5 years annually.",
+      "pathophysiology": "The exact cause of Kawasaki disease is unknown, but it is thought to involve an autoimmune response triggered by an infectious agent in genetically predisposed individuals, leading to inflammation of medium-sized blood vessels, particularly affecting the coronary arteries."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever lasting more than 5 days",
+        "Rash (polymorphous, often maculopapular)",
+        "Conjunctivitis (bilateral, non-purulent)",
+        "Oral changes (strawberry tongue, cracked lips)",
+        "Cervical lymphadenopathy (often unilateral)"
+      ],
+      "signs": [
+        "Fever (≥39°C)",
+        "Erythema of palms and soles",
+        "Desquamation of skin (especially around the nails)",
+        "Joint swelling or pain"
+      ],
+      "atypicalPresentations": [
+        "Prolonged fever without classic symptoms",
+        "Presence of only some symptoms (e.g., fever and rash only)",
+        "Older children or adolescents may present differently"
+      ],
+      "redFlags": [
+        "Persistent high fever for more than 5 days",
+        "Signs of heart failure (e.g., tachycardia, hypotension)",
+        "Severe abdominal pain or vomiting"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Liver function tests (LFTs)",
+        "Urinalysis"
+      ],
+      "secondLine": [
+        "Echocardiogram (to assess coronary artery involvement)",
+        "Electrocardiogram (ECG)"
+      ],
+      "specialistTests": [
+        "Coronary angiography (if significant coronary artery disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of fever for 5 days or more and at least 4 of the following 5 criteria: conjunctivitis, rash, oral changes, cervical lymphadenopathy, and palm/sole changes.",
+      "differentials": [
+        "Scarlet fever",
+        "Staphylococcal scalded skin syndrome",
+        "Viral exanthems (e.g., measles, rubella)",
+        "Systemic juvenile idiopathic arthritis",
+        "Infectious mononucleosis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Intravenous immunoglobulin (IVIG) 2 g/kg over 10-12 hours",
+          "Aspirin (high dose, 80-100 mg/kg/day in divided doses)"
+        ],
+        "secondLine": [
+          "Corticosteroids (if IVIG is ineffective)"
+        ],
+        "procedures": [
+          "Echocardiogram to monitor coronary artery changes"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Aspirin (low dose, 3-5 mg/kg/day once daily after acute phase)"
+        ],
+        "secondLine": [
+          "Consideration of anticoagulation if coronary artery aneurysms develop"
+        ],
+        "monitoring": [
+          "Regular echocardiograms to monitor coronary artery status"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Intravenous Immunoglobulin (IVIG)",
+          "mechanism": "Provides passive immunity and modulates the immune response.",
+          "dosing": "2 g/kg as a single infusion over 10-12 hours.",
+          "sideEffects": "Headache, fever, chills, allergic reactions, thromboembolic events.",
+          "notes": "Administered in the acute phase to reduce the risk of coronary artery aneurysms."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Anti-inflammatory and antiplatelet effects.",
+          "dosing": "High dose: 80-100 mg/kg/day in divided doses during acute phase; Low dose: 3-5 mg/kg/day once daily after acute phase.",
+          "sideEffects": "Gastrointestinal bleeding, Reye's syndrome in children (rare).",
+          "notes": "Aspirin is crucial in both acute and chronic management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Echocardiogram",
+          "description": "Ultrasound imaging of the heart to assess for coronary artery involvement and function.",
+          "indications": "To evaluate for coronary artery aneurysms or other cardiac complications in Kawasaki disease.",
+          "risks": "Minimal risks associated with ultrasound; no radiation exposure."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and treatment, the prognosis is generally good, with most children recovering fully. However, coronary artery aneurysms can develop in 15-25% of untreated cases, leading to long-term cardiovascular complications.",
+    "complications": [
+      "Coronary artery aneurysms",
+      "Myocardial infarction",
+      "Arrhythmias",
+      "Heart failure",
+      "Pericarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing the signs and symptoms of Kawasaki disease, initiate investigations, and refer to a pediatric specialist for management. They should also educate families about the condition and its implications.",
+    "escalation": "If a child presents with prolonged fever and signs suggestive of Kawasaki disease, escalate care to a pediatrician or pediatric cardiologist promptly, especially if there are signs of cardiac involvement.",
+    "keySafetyConsiderations": "Monitor for signs of coronary artery involvement and complications. Ensure appropriate follow-up with cardiology for children diagnosed with Kawasaki disease, especially those with coronary artery abnormalities."
+  }
+}

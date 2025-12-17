@@ -1,0 +1,129 @@
+{
+  "id": "henoch_schoenlein_purpura",
+  "name": "Henoch-Schoenlein purpura",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:08:26.075953",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Henoch-Schoenlein purpura: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHenoch-Schönlein purpura (HSP) is a small-vessel vasculitis characterized by a tetrad of symptoms: palpable purpura, often on the buttocks and legs, arthralgia or arthritis, abdominal pain, and renal involvement (hematuria and/or proteinuria).\n\n### Epidemiology\nHSP is the most common form of vasculitis in children, typically affecting those aged 2-11 years, with a peak incidence between 4-6 years. It is more prevalent in males than females and often follows an upper respiratory tract infection.\n\n### Essential Pathophysiology\nThe exact cause of HSP is unknown, but it is thought to involve an abnormal immune response to an infection or other triggers, leading to IgA deposition in small blood vessels, resulting in inflammation and damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Palpable purpura (often on buttocks and legs)\n- Arthralgia or arthritis\n- Abdominal pain (colicky)\n- Renal symptoms (hematuria, proteinuria)\n\n### Key Signs\n- Palpable purpura\n- Swelling and tenderness in joints\n- Abdominal tenderness\n- Hypertension (in renal involvement)\n\n### Atypical Presentations\n- Severe abdominal pain without purpura\n- Isolated renal involvement without systemic symptoms\n- Neurological symptoms (rare)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain with signs of peritonitis\n- Persistent vomiting\n- Severe renal impairment (elevated creatinine)\n- Neurological symptoms (confusion, seizures)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Urinalysis (to check for hematuria and proteinuria)\n- Stool test for occult blood\n\n### Second-line Investigations\n- Serum creatinine and electrolytes\n- Coagulation profile\n- Liver function tests\n\n### Specialist Tests\n- Renal ultrasound (if renal involvement is suspected)\n- Skin biopsy (if diagnosis is uncertain)\n- Immunological tests (e.g., serum IgA levels)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of the classic tetrad of symptoms: palpable purpura, arthralgia/arthritis, abdominal pain, and renal involvement.\n\n### Key Differential Diagnoses to Exclude\n- Idiopathic thrombocytopenic purpura (ITP)\n- Viral exanthems\n- Other forms of vasculitis (e.g., Kawasaki disease)\n- Systemic lupus erythematosus (SLE)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, pain management)\n- Corticosteroids (if severe symptoms or renal involvement)\n\n#### Second-line Treatments\n- Immunosuppressive therapy (e.g., azathioprine) for severe cases\n\n#### Emergency Procedures\n- Renal biopsy (if significant renal involvement and diagnosis is uncertain)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of renal function and blood pressure\n- Education on recognizing symptoms of recurrence\n\n#### Second-line Treatments\n- Long-term corticosteroids for chronic renal involvement\n\n#### Monitoring Requirements\n- Regular follow-up with nephrology if renal involvement persists\n- Monitoring for hypertension and renal function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisolone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation and immune response.\n- **Typical Dosing Range**: Initial: 1-2 mg/kg/day (max 60 mg) for 1-2 weeks, then taper.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, increased infection risk.\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in long-term use.\n\n#### Azathioprine\n- **Mechanism of Action**: Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.\n- **Typical Dosing Range**: 2-3 mg/kg/day, adjusted based on response and side effects.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, hepatotoxicity, increased infection risk.\n- **When to Use vs. Alternatives**: Requires regular monitoring of blood counts.\n\n### Procedures\n\n#### Renal biopsy\n- **What it Involves**: A procedure to obtain kidney tissue for histological examination.\n- **Indications**: Uncertain diagnosis, significant renal impairment, or atypical presentation.\n- **Key Risks/Complications**: Bleeding, infection, pain at the biopsy site, damage to surrounding structures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for HSP is generally good, with most children recovering completely. However, some may develop chronic renal disease or hypertension, particularly those with significant renal involvement.\n\n### Important Complications to Watch For\n- Chronic kidney disease\n- Hypertension\n- Intussusception (due to abdominal pain)\n- Recurrent episodes of HSP\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the symptoms of HSP, perform initial investigations, provide supportive care, and refer to specialists as needed. They should also educate families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician or pediatric nephrologist if there are severe symptoms, significant renal involvement, or if the child does not improve with initial management.\n\n### Key Safety Considerations\nMonitor for signs of renal impairment and hypertension, especially in cases with renal involvement. Ensure appropriate follow-up and education for families regarding symptom recognition and when to seek further medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Henoch-Schönlein purpura (HSP) is a small-vessel vasculitis characterized by a tetrad of symptoms: palpable purpura, often on the buttocks and legs, arthralgia or arthritis, abdominal pain, and renal involvement (hematuria and/or proteinuria).",
+      "epidemiology": "HSP is the most common form of vasculitis in children, typically affecting those aged 2-11 years, with a peak incidence between 4-6 years. It is more prevalent in males than females and often follows an upper respiratory tract infection.",
+      "pathophysiology": "The exact cause of HSP is unknown, but it is thought to involve an abnormal immune response to an infection or other triggers, leading to IgA deposition in small blood vessels, resulting in inflammation and damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Palpable purpura (often on buttocks and legs)",
+        "Arthralgia or arthritis",
+        "Abdominal pain (colicky)",
+        "Renal symptoms (hematuria, proteinuria)"
+      ],
+      "signs": [
+        "Palpable purpura",
+        "Swelling and tenderness in joints",
+        "Abdominal tenderness",
+        "Hypertension (in renal involvement)"
+      ],
+      "atypicalPresentations": [
+        "Severe abdominal pain without purpura",
+        "Isolated renal involvement without systemic symptoms",
+        "Neurological symptoms (rare)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain with signs of peritonitis",
+        "Persistent vomiting",
+        "Severe renal impairment (elevated creatinine)",
+        "Neurological symptoms (confusion, seizures)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Urinalysis (to check for hematuria and proteinuria)",
+        "Stool test for occult blood"
+      ],
+      "secondLine": [
+        "Serum creatinine and electrolytes",
+        "Coagulation profile",
+        "Liver function tests"
+      ],
+      "specialistTests": [
+        "Renal ultrasound (if renal involvement is suspected)",
+        "Skin biopsy (if diagnosis is uncertain)",
+        "Immunological tests (e.g., serum IgA levels)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of the classic tetrad of symptoms: palpable purpura, arthralgia/arthritis, abdominal pain, and renal involvement.",
+      "differentials": [
+        "Idiopathic thrombocytopenic purpura (ITP)",
+        "Viral exanthems",
+        "Other forms of vasculitis (e.g., Kawasaki disease)",
+        "Systemic lupus erythematosus (SLE)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, pain management)",
+          "Corticosteroids (if severe symptoms or renal involvement)"
+        ],
+        "secondLine": [
+          "Immunosuppressive therapy (e.g., azathioprine) for severe cases"
+        ],
+        "procedures": [
+          "Renal biopsy (if significant renal involvement and diagnosis is uncertain)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of renal function and blood pressure",
+          "Education on recognizing symptoms of recurrence"
+        ],
+        "secondLine": [
+          "Long-term corticosteroids for chronic renal involvement"
+        ],
+        "monitoring": [
+          "Regular follow-up with nephrology if renal involvement persists",
+          "Monitoring for hypertension and renal function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisolone",
+          "mechanism": "Corticosteroid that reduces inflammation and immune response.",
+          "dosing": "Initial: 1-2 mg/kg/day (max 60 mg) for 1-2 weeks, then taper.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, increased infection risk.",
+          "notes": "Monitor for side effects, especially in long-term use."
+        },
+        {
+          "name": "Azathioprine",
+          "mechanism": "Immunosuppressant that inhibits purine synthesis, reducing lymphocyte proliferation.",
+          "dosing": "2-3 mg/kg/day, adjusted based on response and side effects.",
+          "sideEffects": "Bone marrow suppression, hepatotoxicity, increased infection risk.",
+          "notes": "Requires regular monitoring of blood counts."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Renal biopsy",
+          "description": "A procedure to obtain kidney tissue for histological examination.",
+          "indications": "Uncertain diagnosis, significant renal impairment, or atypical presentation.",
+          "risks": "Bleeding, infection, pain at the biopsy site, damage to surrounding structures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for HSP is generally good, with most children recovering completely. However, some may develop chronic renal disease or hypertension, particularly those with significant renal involvement.",
+    "complications": [
+      "Chronic kidney disease",
+      "Hypertension",
+      "Intussusception (due to abdominal pain)",
+      "Recurrent episodes of HSP"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the symptoms of HSP, perform initial investigations, provide supportive care, and refer to specialists as needed. They should also educate families about the condition and its management.",
+    "escalation": "Refer to a pediatrician or pediatric nephrologist if there are severe symptoms, significant renal involvement, or if the child does not improve with initial management.",
+    "keySafetyConsiderations": "Monitor for signs of renal impairment and hypertension, especially in cases with renal involvement. Ensure appropriate follow-up and education for families regarding symptom recognition and when to seek further medical attention."
+  }
+}

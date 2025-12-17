@@ -1,0 +1,120 @@
+{
+  "id": "perthes_disease",
+  "name": "Perthes' disease",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:06:58.254448",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Perthes' disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPerthes' disease, also known as Legg-Calvé-Perthes disease, is a childhood hip disorder caused by temporary loss of blood supply to the femoral head, leading to avascular necrosis and subsequent bone deformity.\n\n### Epidemiology\nPerthes' disease primarily affects children aged 4 to 10 years, with a higher prevalence in boys (4:1 ratio). It is estimated to occur in 1 in 1,200 children.\n\n### Essential Pathophysiology\nThe exact cause of Perthes' disease is unknown, but it involves a disruption of blood flow to the femoral head, leading to bone death (necrosis). The body attempts to heal itself, but the process can result in deformity of the femoral head, affecting hip joint function.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hip pain (often referred to the knee)\n- Limping\n- Reduced range of motion in the hip\n- Hip stiffness\n\n### Key Signs\n- Limited internal rotation and abduction of the hip\n- Muscle atrophy of the thigh\n- Positive Trendelenburg sign\n\n### Atypical Presentations\n- Unilateral knee pain without hip symptoms\n- Bilateral involvement (less common)\n\n### Red Flags Requiring Immediate Action\n- Severe pain not relieved by rest\n- Persistent symptoms lasting more than a few weeks\n- Signs of infection (fever, swelling, redness)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- X-ray of the hip joint (AP and lateral views)\n- Clinical examination\n\n### Second-line Investigations\n- MRI of the hip (to assess the extent of necrosis)\n- Bone scan (to evaluate blood flow)\n\n### Specialist Tests\n- CT scan (if surgical intervention is considered)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, radiological findings, and exclusion of other conditions. X-ray findings typically show flattening of the femoral head and joint space widening.\n\n### Key Differential Diagnoses to Exclude\n- Transient synovitis\n- Septic arthritis\n- Osteomyelitis\n- Slipped capital femoral epiphysis (SCFE)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rest and activity modification\n- Physiotherapy to maintain range of motion\n\n#### Second-line Treatments\n- Use of crutches or a brace to limit weight-bearing\n\n#### Emergency Procedures\n- Surgical intervention (e.g., femoral osteotomy) may be considered in severe cases or if conservative management fails.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued physiotherapy\n- Monitoring with regular follow-up X-rays\n\n#### Second-line Treatments\n- Surgical options if significant deformity or dysfunction occurs\n\n#### Monitoring Requirements\n- Regular assessment of hip function and growth\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### NSAIDs (e.g., ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory and analgesic effects\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours as needed, not exceeding 40 mg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk\n- **When to Use vs. Alternatives**: Use with caution in children with asthma or renal issues.\n\n#### Analgesics (e.g., paracetamol)\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: 15 mg/kg every 6 hours as needed, not exceeding 60 mg/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Safe for short-term use.\n\n### Procedures\n\n#### Femoral osteotomy\n- **What it Involves**: Surgical procedure to reshape the femoral head and improve joint congruence.\n- **Indications**: Severe deformity or persistent symptoms despite conservative management.\n- **Key Risks/Complications**: Infection, bleeding, nerve injury, failure to improve symptoms.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for Perthes' disease varies; most children recover well with appropriate management, but some may develop osteoarthritis later in life, especially if the femoral head is significantly deformed.\n\n### Important Complications to Watch For\n- Early-onset osteoarthritis\n- Deformity of the femoral head\n- Chronic pain or dysfunction in the hip joint\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, recognize symptoms early, initiate investigations, and refer to paediatric orthopaedics when necessary. They should also provide education to families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to paediatric orthopaedics if there are red flags, persistent symptoms, or if the child is not responding to conservative management.\n\n### Key Safety Considerations\nMonitor for signs of complications such as infection or significant pain. Ensure appropriate follow-up and adherence to physiotherapy and activity restrictions.\n",
+  "content": {
+    "overview": {
+      "definition": "Perthes' disease, also known as Legg-Calvé-Perthes disease, is a childhood hip disorder caused by temporary loss of blood supply to the femoral head, leading to avascular necrosis and subsequent bone deformity.",
+      "epidemiology": "Perthes' disease primarily affects children aged 4 to 10 years, with a higher prevalence in boys (4:1 ratio). It is estimated to occur in 1 in 1,200 children.",
+      "pathophysiology": "The exact cause of Perthes' disease is unknown, but it involves a disruption of blood flow to the femoral head, leading to bone death (necrosis). The body attempts to heal itself, but the process can result in deformity of the femoral head, affecting hip joint function."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hip pain (often referred to the knee)",
+        "Limping",
+        "Reduced range of motion in the hip",
+        "Hip stiffness"
+      ],
+      "signs": [
+        "Limited internal rotation and abduction of the hip",
+        "Muscle atrophy of the thigh",
+        "Positive Trendelenburg sign"
+      ],
+      "atypicalPresentations": [
+        "Unilateral knee pain without hip symptoms",
+        "Bilateral involvement (less common)"
+      ],
+      "redFlags": [
+        "Severe pain not relieved by rest",
+        "Persistent symptoms lasting more than a few weeks",
+        "Signs of infection (fever, swelling, redness)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "X-ray of the hip joint (AP and lateral views)",
+        "Clinical examination"
+      ],
+      "secondLine": [
+        "MRI of the hip (to assess the extent of necrosis)",
+        "Bone scan (to evaluate blood flow)"
+      ],
+      "specialistTests": [
+        "CT scan (if surgical intervention is considered)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, radiological findings, and exclusion of other conditions. X-ray findings typically show flattening of the femoral head and joint space widening.",
+      "differentials": [
+        "Transient synovitis",
+        "Septic arthritis",
+        "Osteomyelitis",
+        "Slipped capital femoral epiphysis (SCFE)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rest and activity modification",
+          "Physiotherapy to maintain range of motion"
+        ],
+        "secondLine": [
+          "Use of crutches or a brace to limit weight-bearing"
+        ],
+        "procedures": [
+          "Surgical intervention (e.g., femoral osteotomy) may be considered in severe cases or if conservative management fails."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued physiotherapy",
+          "Monitoring with regular follow-up X-rays"
+        ],
+        "secondLine": [
+          "Surgical options if significant deformity or dysfunction occurs"
+        ],
+        "monitoring": [
+          "Regular assessment of hip function and growth"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "NSAIDs (e.g., ibuprofen)",
+          "mechanism": "Anti-inflammatory and analgesic effects",
+          "dosing": "10 mg/kg every 6-8 hours as needed, not exceeding 40 mg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk",
+          "notes": "Use with caution in children with asthma or renal issues."
+        },
+        {
+          "name": "Analgesics (e.g., paracetamol)",
+          "mechanism": "Pain relief",
+          "dosing": "15 mg/kg every 6 hours as needed, not exceeding 60 mg/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Safe for short-term use."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Femoral osteotomy",
+          "description": "Surgical procedure to reshape the femoral head and improve joint congruence.",
+          "indications": "Severe deformity or persistent symptoms despite conservative management.",
+          "risks": "Infection, bleeding, nerve injury, failure to improve symptoms."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for Perthes' disease varies; most children recover well with appropriate management, but some may develop osteoarthritis later in life, especially if the femoral head is significantly deformed.",
+    "complications": [
+      "Early-onset osteoarthritis",
+      "Deformity of the femoral head",
+      "Chronic pain or dysfunction in the hip joint"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, recognize symptoms early, initiate investigations, and refer to paediatric orthopaedics when necessary. They should also provide education to families about the condition and its management.",
+    "escalation": "Refer to paediatric orthopaedics if there are red flags, persistent symptoms, or if the child is not responding to conservative management.",
+    "keySafetyConsiderations": "Monitor for signs of complications such as infection or significant pain. Ensure appropriate follow-up and adherence to physiotherapy and activity restrictions."
+  }
+}

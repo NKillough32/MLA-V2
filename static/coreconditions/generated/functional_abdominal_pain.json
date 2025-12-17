@@ -1,0 +1,122 @@
+{
+  "id": "functional_abdominal_pain",
+  "name": "Functional abdominal pain",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:59:34.724160",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Functional abdominal pain: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nFunctional abdominal pain (FAP) is a common gastrointestinal disorder in children characterized by recurrent abdominal pain without an identifiable organic cause, often associated with altered bowel habits or psychosocial factors.\n\n### Epidemiology\nFAP is prevalent in 10-15% of children and adolescents, with a higher incidence in females. It often presents in school-aged children and can persist into adolescence.\n\n### Essential Pathophysiology\nThe exact pathophysiology of FAP is not fully understood but is thought to involve a combination of visceral hypersensitivity, altered gut motility, and psychosocial factors such as stress and anxiety.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Recurrent abdominal pain that is not localized\n- Pain that is relieved by defecation or associated with a change in bowel habits\n- Nausea or bloating\n- Loss of appetite\n\n### Key Signs\n- Normal physical examination findings\n- No signs of dehydration or malnutrition\n- Possible abdominal tenderness without guarding or rebound tenderness\n\n### Atypical Presentations\n- Pain that occurs at night\n- Pain associated with significant weight loss\n- Pain that awakens the child from sleep\n\n### Red Flags Requiring Immediate Action\n- Severe or persistent abdominal pain\n- Acute onset of pain\n- Weight loss or failure to thrive\n- Blood in stool or vomiting\n- Fever or significant abdominal distension\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Detailed history and physical examination\n- Dietary history to identify potential triggers\n- Bowel habit assessment\n\n### Second-line Investigations\n- Abdominal ultrasound to rule out structural abnormalities\n- Stool tests for occult blood or infection\n\n### Specialist Tests\n- Gastroenterology referral for endoscopy if alarm features are present\n- Psychological assessment if psychosocial factors are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of FAP is based on the Rome IV criteria, which include recurrent abdominal pain occurring at least once per week for 8 weeks, with no evidence of an underlying medical condition.\n\n### Key Differential Diagnoses to Exclude\n- Irritable bowel syndrome (IBS)\n- Gastroesophageal reflux disease (GERD)\n- Constipation\n- Food intolerances or allergies\n- Psychosomatic disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Reassurance and education for the child and family\n- Dietary modifications (e.g., increased fiber intake)\n- Over-the-counter analgesics (e.g., paracetamol)\n\n#### Second-line Treatments\n- Referral to a dietitian for tailored dietary advice\n- Consideration of probiotics\n\n#### Emergency Procedures\n- None typically required in acute management\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up to monitor symptoms and provide reassurance\n- Cognitive-behavioral therapy (CBT) for associated anxiety or stress\n\n#### Second-line Treatments\n- Consideration of medications such as tricyclic antidepressants (e.g., amitriptyline) for chronic pain management\n\n#### Monitoring Requirements\n- Regular assessment of growth and development\n- Monitoring for psychosocial issues\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant that modulates pain perception and has a calming effect on the gut.\n- **Typical Dosing Range**: Start at 10-25 mg at bedtime, titrate as needed up to 50 mg.\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, constipation, weight gain.\n- **When to Use vs. Alternatives**: Effective for chronic abdominal pain; monitor for side effects.\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic that works by inhibiting prostaglandin synthesis in the brain.\n- **Typical Dosing Range**: 15 mg/kg/dose every 6 hours as needed, max 60 mg/kg/day.\n- **Key Side Effects/Contraindications**: Generally well tolerated; overdose can lead to liver damage.\n- **When to Use vs. Alternatives**: First-line for acute pain relief.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for children with functional abdominal pain is generally good, with many experiencing resolution of symptoms over time. However, some may have recurrent episodes into adulthood.\n\n### Important Complications to Watch For\n- Psychosocial issues such as anxiety or depression\n- Chronic pain syndromes\n- Impact on school attendance and social interactions\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should provide reassurance, perform thorough assessments, and educate families about the nature of FAP. They should also monitor for red flags and refer to specialists when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric gastroenterologist if there are red flags, lack of improvement, or if psychosocial factors are suspected.\n\n### Key Safety Considerations\nEnsure to rule out serious underlying conditions in cases of abdominal pain, maintain open communication with families, and provide clear follow-up plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Functional abdominal pain (FAP) is a common gastrointestinal disorder in children characterized by recurrent abdominal pain without an identifiable organic cause, often associated with altered bowel habits or psychosocial factors.",
+      "epidemiology": "FAP is prevalent in 10-15% of children and adolescents, with a higher incidence in females. It often presents in school-aged children and can persist into adolescence.",
+      "pathophysiology": "The exact pathophysiology of FAP is not fully understood but is thought to involve a combination of visceral hypersensitivity, altered gut motility, and psychosocial factors such as stress and anxiety."
+    },
+    "recognition": {
+      "symptoms": [
+        "Recurrent abdominal pain that is not localized",
+        "Pain that is relieved by defecation or associated with a change in bowel habits",
+        "Nausea or bloating",
+        "Loss of appetite"
+      ],
+      "signs": [
+        "Normal physical examination findings",
+        "No signs of dehydration or malnutrition",
+        "Possible abdominal tenderness without guarding or rebound tenderness"
+      ],
+      "atypicalPresentations": [
+        "Pain that occurs at night",
+        "Pain associated with significant weight loss",
+        "Pain that awakens the child from sleep"
+      ],
+      "redFlags": [
+        "Severe or persistent abdominal pain",
+        "Acute onset of pain",
+        "Weight loss or failure to thrive",
+        "Blood in stool or vomiting",
+        "Fever or significant abdominal distension"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Detailed history and physical examination",
+        "Dietary history to identify potential triggers",
+        "Bowel habit assessment"
+      ],
+      "secondLine": [
+        "Abdominal ultrasound to rule out structural abnormalities",
+        "Stool tests for occult blood or infection"
+      ],
+      "specialistTests": [
+        "Gastroenterology referral for endoscopy if alarm features are present",
+        "Psychological assessment if psychosocial factors are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of FAP is based on the Rome IV criteria, which include recurrent abdominal pain occurring at least once per week for 8 weeks, with no evidence of an underlying medical condition.",
+      "differentials": [
+        "Irritable bowel syndrome (IBS)",
+        "Gastroesophageal reflux disease (GERD)",
+        "Constipation",
+        "Food intolerances or allergies",
+        "Psychosomatic disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Reassurance and education for the child and family",
+          "Dietary modifications (e.g., increased fiber intake)",
+          "Over-the-counter analgesics (e.g., paracetamol)"
+        ],
+        "secondLine": [
+          "Referral to a dietitian for tailored dietary advice",
+          "Consideration of probiotics"
+        ],
+        "procedures": [
+          "None typically required in acute management"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up to monitor symptoms and provide reassurance",
+          "Cognitive-behavioral therapy (CBT) for associated anxiety or stress"
+        ],
+        "secondLine": [
+          "Consideration of medications such as tricyclic antidepressants (e.g., amitriptyline) for chronic pain management"
+        ],
+        "monitoring": [
+          "Regular assessment of growth and development",
+          "Monitoring for psychosocial issues"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant that modulates pain perception and has a calming effect on the gut.",
+          "dosing": "Start at 10-25 mg at bedtime, titrate as needed up to 50 mg.",
+          "sideEffects": "Sedation, dry mouth, constipation, weight gain.",
+          "notes": "Effective for chronic abdominal pain; monitor for side effects."
+        },
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic that works by inhibiting prostaglandin synthesis in the brain.",
+          "dosing": "15 mg/kg/dose every 6 hours as needed, max 60 mg/kg/day.",
+          "sideEffects": "Generally well tolerated; overdose can lead to liver damage.",
+          "notes": "First-line for acute pain relief."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "The prognosis for children with functional abdominal pain is generally good, with many experiencing resolution of symptoms over time. However, some may have recurrent episodes into adulthood.",
+    "complications": [
+      "Psychosocial issues such as anxiety or depression",
+      "Chronic pain syndromes",
+      "Impact on school attendance and social interactions"
+    ],
+    "foundationDoctorRole": "Foundation doctors should provide reassurance, perform thorough assessments, and educate families about the nature of FAP. They should also monitor for red flags and refer to specialists when necessary.",
+    "escalation": "Refer to a pediatric gastroenterologist if there are red flags, lack of improvement, or if psychosocial factors are suspected.",
+    "keySafetyConsiderations": "Ensure to rule out serious underlying conditions in cases of abdominal pain, maintain open communication with families, and provide clear follow-up plans."
+  }
+}

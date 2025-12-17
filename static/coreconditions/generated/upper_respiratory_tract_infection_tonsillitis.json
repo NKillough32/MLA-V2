@@ -1,0 +1,138 @@
+{
+  "id": "upper_respiratory_tract_infection_tonsillitis",
+  "name": "Upper respiratory tract infection - Tonsillitis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:57:00.553054",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Upper respiratory tract infection - Tonsillitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTonsillitis is the inflammation of the tonsils, typically caused by viral or bacterial infections, leading to sore throat, difficulty swallowing, and fever.\n\n### Epidemiology\nTonsillitis is common in children aged 5-15 years, with peak incidence in school-aged children. It can occur in adults but is less common. Group A Streptococcus is a frequent bacterial cause.\n\n### Essential Pathophysiology\nThe tonsils are lymphoid tissues that play a role in immune response. Infections lead to hyperplasia and inflammation, resulting in symptoms such as sore throat and difficulty swallowing.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sore throat\n- Difficulty swallowing (odynophagia)\n- Fever\n- Enlarged, tender lymph nodes\n- Bad breath (halitosis)\n- Headache\n- Nausea and vomiting\n\n### Key Signs\n- Enlarged tonsils (often with exudate)\n- Fever\n- Tender anterior cervical lymphadenopathy\n- Redness of the oropharynx\n\n### Atypical Presentations\n- Abdominal pain (especially in younger children)\n- Persistent cough\n- Ear pain\n\n### Red Flags Requiring Immediate Action\n- Difficulty breathing or swallowing\n- Severe dehydration\n- Persistent high fever\n- Trismus (lockjaw)\n- Signs of systemic illness (e.g., rash, lethargy)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Rapid antigen detection test (RADT) for Group A Streptococcus\n\n### Second-line Investigations\n- Throat swab for culture (if RADT is negative and bacterial infection is suspected)\n- Complete blood count (CBC) to assess for leukocytosis\n\n### Specialist Tests\n- Monospot test (for infectious mononucleosis)\n- PCR for viral pathogens (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms and signs. A positive RADT or throat culture confirms bacterial tonsillitis.\n\n### Key Differential Diagnoses to Exclude\n- Viral pharyngitis\n- Infectious mononucleosis\n- Peritonsillar abscess\n- Epiglottitis\n- Croup\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, analgesia)\n- Antipyretics (e.g., paracetamol)\n- Antibiotics if bacterial (e.g., phenoxymethylpenicillin)\n\n#### Second-line Treatments\n- Consider corticosteroids for severe inflammation\n\n#### Emergency Procedures\n- Tonsillectomy (if recurrent or chronic tonsillitis)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ongoing monitoring and supportive care\n\n#### Second-line Treatments\n- Consider referral to ENT for recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up for recurrent infections\n- Assessment of sleep-disordered breathing if tonsils are enlarged\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Phenoxymethylpenicillin\n- **Mechanism of Action**: Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 500 mg orally every 6 hours for 10 days (children: 12.5 mg/kg every 6 hours).\n- **Key Side Effects/Contraindications**: Nausea, diarrhea, allergic reactions, rash.\n- **When to Use vs. Alternatives**: First-line treatment for confirmed bacterial tonsillitis.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.\n- **Typical Dosing Range**: 200-400 mg orally every 6-8 hours as needed (children: 5-10 mg/kg).\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Useful for symptomatic relief.\n\n#### Corticosteroids (e.g., dexamethasone)\n- **Mechanism of Action**: Anti-inflammatory effects reduce swelling and pain.\n- **Typical Dosing Range**: 10 mg orally as a single dose (consider in severe cases).\n- **Key Side Effects/Contraindications**: Increased appetite, mood changes, gastrointestinal upset.\n- **When to Use vs. Alternatives**: May be considered in severe cases to reduce inflammation.\n\n### Procedures\n\n#### Tonsillectomy\n- **What it Involves**: Surgical removal of the tonsils, typically performed under general anesthesia.\n- **Indications**: Recurrent tonsillitis (≥ 7 episodes in 1 year), obstructive sleep apnea, or peritonsillar abscess.\n- **Key Risks/Complications**: Bleeding, infection, anesthesia complications, pain post-operatively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost cases of tonsillitis resolve with appropriate management. Recurrent cases may require surgical intervention. Complications are rare but can include peritonsillar abscess and airway obstruction.\n\n### Important Complications to Watch For\n- Peritonsillar abscess\n- Dehydration due to difficulty swallowing\n- Airway obstruction\n- Rheumatic fever (if untreated streptococcal infection)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to ENT for recurrent cases or complications. They should also educate families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to ENT if there are signs of complications (e.g., airway obstruction, abscess formation) or if the patient does not improve with initial management.\n\n### Key Safety Considerations\nMonitor for signs of airway compromise, especially in young children. Ensure adequate hydration and pain control. Be vigilant for signs of systemic illness or complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Tonsillitis is the inflammation of the tonsils, typically caused by viral or bacterial infections, leading to sore throat, difficulty swallowing, and fever.",
+      "epidemiology": "Tonsillitis is common in children aged 5-15 years, with peak incidence in school-aged children. It can occur in adults but is less common. Group A Streptococcus is a frequent bacterial cause.",
+      "pathophysiology": "The tonsils are lymphoid tissues that play a role in immune response. Infections lead to hyperplasia and inflammation, resulting in symptoms such as sore throat and difficulty swallowing."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sore throat",
+        "Difficulty swallowing (odynophagia)",
+        "Fever",
+        "Enlarged, tender lymph nodes",
+        "Bad breath (halitosis)",
+        "Headache",
+        "Nausea and vomiting"
+      ],
+      "signs": [
+        "Enlarged tonsils (often with exudate)",
+        "Fever",
+        "Tender anterior cervical lymphadenopathy",
+        "Redness of the oropharynx"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain (especially in younger children)",
+        "Persistent cough",
+        "Ear pain"
+      ],
+      "redFlags": [
+        "Difficulty breathing or swallowing",
+        "Severe dehydration",
+        "Persistent high fever",
+        "Trismus (lockjaw)",
+        "Signs of systemic illness (e.g., rash, lethargy)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Rapid antigen detection test (RADT) for Group A Streptococcus"
+      ],
+      "secondLine": [
+        "Throat swab for culture (if RADT is negative and bacterial infection is suspected)",
+        "Complete blood count (CBC) to assess for leukocytosis"
+      ],
+      "specialistTests": [
+        "Monospot test (for infectious mononucleosis)",
+        "PCR for viral pathogens (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms and signs. A positive RADT or throat culture confirms bacterial tonsillitis.",
+      "differentials": [
+        "Viral pharyngitis",
+        "Infectious mononucleosis",
+        "Peritonsillar abscess",
+        "Epiglottitis",
+        "Croup"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, analgesia)",
+          "Antipyretics (e.g., paracetamol)",
+          "Antibiotics if bacterial (e.g., phenoxymethylpenicillin)"
+        ],
+        "secondLine": [
+          "Consider corticosteroids for severe inflammation"
+        ],
+        "procedures": [
+          "Tonsillectomy (if recurrent or chronic tonsillitis)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ongoing monitoring and supportive care"
+        ],
+        "secondLine": [
+          "Consider referral to ENT for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up for recurrent infections",
+          "Assessment of sleep-disordered breathing if tonsils are enlarged"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Phenoxymethylpenicillin",
+          "mechanism": "Beta-lactam antibiotic that inhibits bacterial cell wall synthesis.",
+          "dosing": "500 mg orally every 6 hours for 10 days (children: 12.5 mg/kg every 6 hours).",
+          "sideEffects": "Nausea, diarrhea, allergic reactions, rash.",
+          "notes": "First-line treatment for confirmed bacterial tonsillitis."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID) that reduces inflammation and pain.",
+          "dosing": "200-400 mg orally every 6-8 hours as needed (children: 5-10 mg/kg).",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Useful for symptomatic relief."
+        },
+        {
+          "name": "Corticosteroids (e.g., dexamethasone)",
+          "mechanism": "Anti-inflammatory effects reduce swelling and pain.",
+          "dosing": "10 mg orally as a single dose (consider in severe cases).",
+          "sideEffects": "Increased appetite, mood changes, gastrointestinal upset.",
+          "notes": "May be considered in severe cases to reduce inflammation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Tonsillectomy",
+          "description": "Surgical removal of the tonsils, typically performed under general anesthesia.",
+          "indications": "Recurrent tonsillitis (≥ 7 episodes in 1 year), obstructive sleep apnea, or peritonsillar abscess.",
+          "risks": "Bleeding, infection, anesthesia complications, pain post-operatively."
+        }
+      ]
+    },
+    "prognosis": "Most cases of tonsillitis resolve with appropriate management. Recurrent cases may require surgical intervention. Complications are rare but can include peritonsillar abscess and airway obstruction.",
+    "complications": [
+      "Peritonsillar abscess",
+      "Dehydration due to difficulty swallowing",
+      "Airway obstruction",
+      "Rheumatic fever (if untreated streptococcal infection)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, manage acute symptoms, and refer to ENT for recurrent cases or complications. They should also educate families about the condition and its management.",
+    "escalation": "Refer to ENT if there are signs of complications (e.g., airway obstruction, abscess formation) or if the patient does not improve with initial management.",
+    "keySafetyConsiderations": "Monitor for signs of airway compromise, especially in young children. Ensure adequate hydration and pain control. Be vigilant for signs of systemic illness or complications."
+  }
+}

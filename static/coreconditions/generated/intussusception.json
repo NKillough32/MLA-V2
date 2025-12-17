@@ -1,0 +1,132 @@
+{
+  "id": "intussusception",
+  "name": "Intussusception",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:01:47.286418",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Intussusception: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIntussusception is a medical condition in which a part of the intestine telescopes into an adjacent segment, leading to obstruction and potential ischemia.\n\n### Epidemiology\nIt is most common in children aged 6 months to 3 years, with a peak incidence between 5-9 months. It accounts for 20% of intestinal obstructions in this age group.\n\n### Essential Pathophysiology\nThe condition often arises due to a lead point, such as a Meckel's diverticulum, polyp, or lymphoma, causing the proximal segment of the bowel to invaginate into the distal segment. This can lead to obstruction of blood supply, resulting in ischemia and necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often intermittent and severe)\n- Vomiting (bilious)\n- Currant jelly stools (blood and mucus)\n- Lethargy\n- Abdominal distension\n\n### Key Signs\n- Abdominal tenderness\n- Palpable abdominal mass (sausage-shaped)\n- Decreased bowel sounds\n- Signs of dehydration\n\n### Atypical Presentations\n- Older children may present with less classic symptoms\n- Chronic intermittent abdominal pain may be seen in some cases\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Signs of shock (tachycardia, hypotension)\n- Persistent vomiting\n- Bloody stools\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal ultrasound (to assess for the presence of intussusception)\n- Abdominal X-ray (to check for signs of obstruction)\n\n### Second-line Investigations\n- CT abdomen (if ultrasound is inconclusive and the child is stable)\n\n### Specialist Tests\n- MRI abdomen (rarely used, but can be considered in specific cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and imaging findings (ultrasound or CT).\n\n### Key Differential Diagnoses to Exclude\n- Appendicitis\n- Volvulus\n- Meckel's diverticulum\n- Infectious gastroenteritis\n- Intestinal obstruction due to other causes\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Electrolyte correction\n- Analgesia\n\n#### Second-line Treatments\n- Air contrast enema (therapeutic and diagnostic)\n- Surgical intervention if non-operative management fails\n\n#### Emergency Procedures\n- Surgical reduction (if necessary)\n- Laparoscopic or open surgery to remove lead points or resect necrotic bowel\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitoring for recurrent symptoms after initial treatment\n\n#### Second-line Treatments\n- Surgical consultation for recurrent cases or if lead points are identified\n\n#### Monitoring Requirements\n- Regular follow-up to assess for complications or recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### IV fluids\n- **Mechanism of Action**: Restores hydration and electrolyte balance\n- **Typical Dosing Range**: Varies based on clinical status and weight\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances\n- **When to Use vs. Alternatives**: Essential for all patients presenting with dehydration.\n\n#### Analgesics (e.g., paracetamol)\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: 15 mg/kg every 6 hours as needed\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Use cautiously in patients with liver disease.\n\n### Procedures\n\n#### Air contrast enema\n- **What it Involves**: A radiological procedure where air and contrast are introduced into the rectum to visualize the intestines and potentially reduce the intussusception.\n- **Indications**: Diagnostic and therapeutic for intussusception.\n- **Key Risks/Complications**: Perforation, allergic reaction to contrast, transient abdominal pain.\n\n#### Surgical reduction\n- **What it Involves**: Surgical intervention to manually reduce the intussusception or resect necrotic bowel if necessary.\n- **Indications**: Failure of non-operative management, signs of bowel necrosis.\n- **Key Risks/Complications**: Infection, bleeding, bowel injury, anesthesia risks.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt diagnosis and treatment, the prognosis is generally good. Delayed treatment can lead to significant morbidity and mortality due to bowel necrosis.\n\n### Important Complications to Watch For\n- Bowel necrosis\n- Perforation\n- Sepsis\n- Short bowel syndrome (if extensive resection is required)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of intussusception, initiate appropriate investigations, provide initial management, and escalate care to pediatric surgical teams as needed.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with severe abdominal pain, signs of shock, or if imaging suggests intussusception, immediate escalation to a pediatric surgical team is required.\n\n### Key Safety Considerations\nEnsure timely fluid resuscitation and monitoring for signs of shock. Be vigilant for changes in vital signs and abdominal examination findings that may indicate deterioration.\n",
+  "content": {
+    "overview": {
+      "definition": "Intussusception is a medical condition in which a part of the intestine telescopes into an adjacent segment, leading to obstruction and potential ischemia.",
+      "epidemiology": "It is most common in children aged 6 months to 3 years, with a peak incidence between 5-9 months. It accounts for 20% of intestinal obstructions in this age group.",
+      "pathophysiology": "The condition often arises due to a lead point, such as a Meckel's diverticulum, polyp, or lymphoma, causing the proximal segment of the bowel to invaginate into the distal segment. This can lead to obstruction of blood supply, resulting in ischemia and necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often intermittent and severe)",
+        "Vomiting (bilious)",
+        "Currant jelly stools (blood and mucus)",
+        "Lethargy",
+        "Abdominal distension"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Palpable abdominal mass (sausage-shaped)",
+        "Decreased bowel sounds",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Older children may present with less classic symptoms",
+        "Chronic intermittent abdominal pain may be seen in some cases"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Signs of shock (tachycardia, hypotension)",
+        "Persistent vomiting",
+        "Bloody stools"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal ultrasound (to assess for the presence of intussusception)",
+        "Abdominal X-ray (to check for signs of obstruction)"
+      ],
+      "secondLine": [
+        "CT abdomen (if ultrasound is inconclusive and the child is stable)"
+      ],
+      "specialistTests": [
+        "MRI abdomen (rarely used, but can be considered in specific cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and imaging findings (ultrasound or CT).",
+      "differentials": [
+        "Appendicitis",
+        "Volvulus",
+        "Meckel's diverticulum",
+        "Infectious gastroenteritis",
+        "Intestinal obstruction due to other causes"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Electrolyte correction",
+          "Analgesia"
+        ],
+        "secondLine": [
+          "Air contrast enema (therapeutic and diagnostic)",
+          "Surgical intervention if non-operative management fails"
+        ],
+        "procedures": [
+          "Surgical reduction (if necessary)",
+          "Laparoscopic or open surgery to remove lead points or resect necrotic bowel"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitoring for recurrent symptoms after initial treatment"
+        ],
+        "secondLine": [
+          "Surgical consultation for recurrent cases or if lead points are identified"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess for complications or recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "IV fluids",
+          "mechanism": "Restores hydration and electrolyte balance",
+          "dosing": "Varies based on clinical status and weight",
+          "sideEffects": "Fluid overload, electrolyte imbalances",
+          "notes": "Essential for all patients presenting with dehydration."
+        },
+        {
+          "name": "Analgesics (e.g., paracetamol)",
+          "mechanism": "Pain relief",
+          "dosing": "15 mg/kg every 6 hours as needed",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Use cautiously in patients with liver disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Air contrast enema",
+          "description": "A radiological procedure where air and contrast are introduced into the rectum to visualize the intestines and potentially reduce the intussusception.",
+          "indications": "Diagnostic and therapeutic for intussusception.",
+          "risks": "Perforation, allergic reaction to contrast, transient abdominal pain."
+        },
+        {
+          "name": "Surgical reduction",
+          "description": "Surgical intervention to manually reduce the intussusception or resect necrotic bowel if necessary.",
+          "indications": "Failure of non-operative management, signs of bowel necrosis.",
+          "risks": "Infection, bleeding, bowel injury, anesthesia risks."
+        }
+      ]
+    },
+    "prognosis": "With prompt diagnosis and treatment, the prognosis is generally good. Delayed treatment can lead to significant morbidity and mortality due to bowel necrosis.",
+    "complications": [
+      "Bowel necrosis",
+      "Perforation",
+      "Sepsis",
+      "Short bowel syndrome (if extensive resection is required)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of intussusception, initiate appropriate investigations, provide initial management, and escalate care to pediatric surgical teams as needed.",
+    "escalation": "If a child presents with severe abdominal pain, signs of shock, or if imaging suggests intussusception, immediate escalation to a pediatric surgical team is required.",
+    "keySafetyConsiderations": "Ensure timely fluid resuscitation and monitoring for signs of shock. Be vigilant for changes in vital signs and abdominal examination findings that may indicate deterioration."
+  }
+}

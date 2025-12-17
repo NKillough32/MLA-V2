@@ -1,0 +1,128 @@
+{
+  "id": "congenital_dislocation_of_the_hip",
+  "name": "Congenital dislocation of the hip",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:06:22.849595",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Congenital dislocation of the hip: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCongenital dislocation of the hip (CDH), also known as developmental dysplasia of the hip (DDH), is a condition where the hip joint is improperly formed, leading to instability or dislocation of the femoral head from the acetabulum in infants and young children.\n\n### Epidemiology\nCDH occurs in approximately 1-2 per 1000 live births, with higher prevalence in females (4-5 times more common) and in breech presentations. It is more common in certain ethnic groups, such as Native Americans and those with a family history of hip dysplasia.\n\n### Essential Pathophysiology\nThe pathophysiology involves abnormal development of the hip joint, where the acetabulum is shallow, and the ligaments surrounding the joint are lax. This can lead to dislocation or subluxation of the femoral head, particularly during the first few months of life when the hip joint is still developing.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Limited range of motion in the hip\n- Asymmetry of the gluteal folds\n- Leg length discrepancy\n- Hip pain (in older children)\n\n### Key Signs\n- Positive Ortolani test (reduction of dislocated hip)\n- Positive Barlow test (dislocatable hip)\n- Asymmetrical thigh and gluteal folds\n- Limited abduction of the hip\n\n### Atypical Presentations\n- Hip pain in older children or adolescents\n- Limping or altered gait patterns\n\n### Red Flags Requiring Immediate Action\n- Failure to achieve developmental milestones\n- Severe pain or inability to bear weight\n- Signs of infection (fever, redness, swelling)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination (Ortolani and Barlow tests)\n- Ultrasound of the hip (in infants)\n\n### Second-line Investigations\n- X-ray of the hip (in older children)\n- MRI (if further evaluation is needed)\n\n### Specialist Tests\n- CT scan (for complex cases or surgical planning)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical examination findings and imaging studies. A positive Ortolani or Barlow test in infants is indicative of hip instability. Ultrasound is used to assess the hip joint in infants under 6 months, while X-rays are used for older children.\n\n### Key Differential Diagnoses to Exclude\n- Transient synovitis\n- Septic arthritis\n- Perthes disease\n- Osteomyelitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral to orthopaedics for suspected dislocation\n- Pavlik harness for infants under 6 months\n\n#### Second-line Treatments\n- Closed reduction under sedation if dislocation persists\n\n#### Emergency Procedures\n- Surgical intervention (open reduction and hip stabilization) if conservative measures fail\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued use of Pavlik harness or abduction brace for older infants\n- Physical therapy to improve hip function\n\n#### Second-line Treatments\n- Surgical options (osteotomy, hip arthroplasty) for severe cases\n\n#### Monitoring Requirements\n- Regular follow-up with hip ultrasound or X-ray to assess joint development\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Analgesics (e.g., paracetamol)\n- **Mechanism of Action**: Pain relief\n- **Typical Dosing Range**: 15 mg/kg every 6 hours as needed\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity (with overdose)\n- **When to Use vs. Alternatives**: Use cautiously in patients with liver disease.\n\n#### NSAIDs (e.g., ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory and analgesic\n- **Typical Dosing Range**: 5-10 mg/kg every 6-8 hours\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Avoid in patients with peptic ulcer disease.\n\n### Procedures\n\n#### Closed reduction\n- **What it Involves**: A non-surgical procedure to reposition the femoral head into the acetabulum under sedation.\n- **Indications**: Persistent dislocation despite conservative management.\n- **Key Risks/Complications**: Fracture, avascular necrosis, re-dislocation.\n\n#### Open reduction and hip stabilization\n- **What it Involves**: Surgical procedure to directly visualize and stabilize the hip joint.\n- **Indications**: Severe dysplasia or failed closed reduction.\n- **Key Risks/Complications**: Infection, nerve injury, stiffness.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and appropriate management, the prognosis is generally good, with most children achieving normal hip function. Late diagnosis or inadequate treatment can lead to hip arthritis and functional impairment in adulthood.\n\n### Important Complications to Watch For\n- Avascular necrosis of the femoral head\n- Early osteoarthritis\n- Recurrent dislocation\n- Leg length discrepancy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize signs and symptoms, and refer to orthopaedics when CDH is suspected. They should also provide education to parents about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with hip pain, limping, or signs of infection, escalate to a senior clinician or orthopaedic team immediately.\n\n### Key Safety Considerations\nEnsure proper positioning and monitoring during procedures. Be aware of the potential for avascular necrosis with delayed treatment. Educate parents on the importance of follow-up appointments and adherence to treatment plans.\n",
+  "content": {
+    "overview": {
+      "definition": "Congenital dislocation of the hip (CDH), also known as developmental dysplasia of the hip (DDH), is a condition where the hip joint is improperly formed, leading to instability or dislocation of the femoral head from the acetabulum in infants and young children.",
+      "epidemiology": "CDH occurs in approximately 1-2 per 1000 live births, with higher prevalence in females (4-5 times more common) and in breech presentations. It is more common in certain ethnic groups, such as Native Americans and those with a family history of hip dysplasia.",
+      "pathophysiology": "The pathophysiology involves abnormal development of the hip joint, where the acetabulum is shallow, and the ligaments surrounding the joint are lax. This can lead to dislocation or subluxation of the femoral head, particularly during the first few months of life when the hip joint is still developing."
+    },
+    "recognition": {
+      "symptoms": [
+        "Limited range of motion in the hip",
+        "Asymmetry of the gluteal folds",
+        "Leg length discrepancy",
+        "Hip pain (in older children)"
+      ],
+      "signs": [
+        "Positive Ortolani test (reduction of dislocated hip)",
+        "Positive Barlow test (dislocatable hip)",
+        "Asymmetrical thigh and gluteal folds",
+        "Limited abduction of the hip"
+      ],
+      "atypicalPresentations": [
+        "Hip pain in older children or adolescents",
+        "Limping or altered gait patterns"
+      ],
+      "redFlags": [
+        "Failure to achieve developmental milestones",
+        "Severe pain or inability to bear weight",
+        "Signs of infection (fever, redness, swelling)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination (Ortolani and Barlow tests)",
+        "Ultrasound of the hip (in infants)"
+      ],
+      "secondLine": [
+        "X-ray of the hip (in older children)",
+        "MRI (if further evaluation is needed)"
+      ],
+      "specialistTests": [
+        "CT scan (for complex cases or surgical planning)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical examination findings and imaging studies. A positive Ortolani or Barlow test in infants is indicative of hip instability. Ultrasound is used to assess the hip joint in infants under 6 months, while X-rays are used for older children.",
+      "differentials": [
+        "Transient synovitis",
+        "Septic arthritis",
+        "Perthes disease",
+        "Osteomyelitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral to orthopaedics for suspected dislocation",
+          "Pavlik harness for infants under 6 months"
+        ],
+        "secondLine": [
+          "Closed reduction under sedation if dislocation persists"
+        ],
+        "procedures": [
+          "Surgical intervention (open reduction and hip stabilization) if conservative measures fail"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued use of Pavlik harness or abduction brace for older infants",
+          "Physical therapy to improve hip function"
+        ],
+        "secondLine": [
+          "Surgical options (osteotomy, hip arthroplasty) for severe cases"
+        ],
+        "monitoring": [
+          "Regular follow-up with hip ultrasound or X-ray to assess joint development"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Analgesics (e.g., paracetamol)",
+          "mechanism": "Pain relief",
+          "dosing": "15 mg/kg every 6 hours as needed",
+          "sideEffects": "Nausea, liver toxicity (with overdose)",
+          "notes": "Use cautiously in patients with liver disease."
+        },
+        {
+          "name": "NSAIDs (e.g., ibuprofen)",
+          "mechanism": "Anti-inflammatory and analgesic",
+          "dosing": "5-10 mg/kg every 6-8 hours",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Avoid in patients with peptic ulcer disease."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Closed reduction",
+          "description": "A non-surgical procedure to reposition the femoral head into the acetabulum under sedation.",
+          "indications": "Persistent dislocation despite conservative management.",
+          "risks": "Fracture, avascular necrosis, re-dislocation."
+        },
+        {
+          "name": "Open reduction and hip stabilization",
+          "description": "Surgical procedure to directly visualize and stabilize the hip joint.",
+          "indications": "Severe dysplasia or failed closed reduction.",
+          "risks": "Infection, nerve injury, stiffness."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and appropriate management, the prognosis is generally good, with most children achieving normal hip function. Late diagnosis or inadequate treatment can lead to hip arthritis and functional impairment in adulthood.",
+    "complications": [
+      "Avascular necrosis of the femoral head",
+      "Early osteoarthritis",
+      "Recurrent dislocation",
+      "Leg length discrepancy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize signs and symptoms, and refer to orthopaedics when CDH is suspected. They should also provide education to parents about the condition and its management.",
+    "escalation": "If a child presents with hip pain, limping, or signs of infection, escalate to a senior clinician or orthopaedic team immediately.",
+    "keySafetyConsiderations": "Ensure proper positioning and monitoring during procedures. Be aware of the potential for avascular necrosis with delayed treatment. Educate parents on the importance of follow-up appointments and adherence to treatment plans."
+  }
+}

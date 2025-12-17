@@ -1,0 +1,133 @@
+{
+  "id": "nutrition_and_hydration_dehydration",
+  "name": "Nutrition and hydration - Dehydration",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:00:21.864083",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nutrition and hydration - Dehydration: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDehydration is a clinical condition that occurs when the body loses more fluids than it takes in, leading to a deficit in total body water. In children, this can result from various causes, including gastrointestinal losses (vomiting, diarrhea), inadequate fluid intake, or excessive fluid loss due to fever or sweating.\n\n### Epidemiology\nDehydration is a common condition in children, particularly in those under 5 years of age. It is often associated with gastroenteritis, which can lead to significant fluid loss. The incidence of dehydration varies by region, with higher rates in areas with limited access to clean water and healthcare.\n\n### Essential Pathophysiology\nDehydration leads to a decrease in extracellular fluid volume, which can result in reduced perfusion to organs and tissues. The body compensates by activating the renin-angiotensin-aldosterone system (RAAS) to conserve water and sodium, and by increasing thirst. Severe dehydration can lead to electrolyte imbalances, particularly hypernatremia or hyponatremia, depending on the type of fluid loss.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Thirst\n- Dry mouth\n- Decreased urine output\n- Fatigue\n- Dizziness\n- Irritability (in children)\n- Sunken eyes\n\n### Key Signs\n- Dry skin\n- Tachycardia\n- Hypotension\n- Decreased skin turgor\n- Sunken fontanelle (in infants)\n- Cool extremities\n\n### Atypical Presentations\n- Lethargy without obvious dehydration signs\n- Seizures due to electrolyte imbalances\n- Altered mental status\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration (e.g., lethargy, unresponsive)\n- Signs of shock (e.g., rapid heart rate, low blood pressure)\n- Persistent vomiting or diarrhea\n- Inability to keep fluids down\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Urine specific gravity\n- Serum electrolytes\n\n### Second-line Investigations\n- Urinalysis\n- Blood urea nitrogen (BUN)\n- Creatinine\n\n### Specialist Tests\n- Electrolyte panel\n- Venous blood gas (VBG) if acidosis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of dehydration is primarily clinical, based on history and physical examination findings. The degree of dehydration can be classified as mild (3-5% body weight loss), moderate (6-9%), or severe (≥10%).\n\n### Key Differential Diagnoses to Exclude\n- Diabetes insipidus\n- Adrenal insufficiency\n- Acute kidney injury\n- Hyperglycemia (diabetic ketoacidosis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oral rehydration solutions (ORS) for mild to moderate dehydration\n- Intravenous fluids (e.g., normal saline or Ringer's lactate) for severe dehydration\n\n#### Second-line Treatments\n- Consider electrolyte replacement if significant imbalances are present\n\n#### Emergency Procedures\n- IV cannulation for fluid administration in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Encourage adequate fluid intake based on age and activity level\n- Monitor growth and hydration status regularly\n\n#### Second-line Treatments\n- Nutritional counseling for children with chronic conditions affecting hydration\n\n#### Monitoring Requirements\n- Regular weight checks\n- Monitoring of urine output and color\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Oral rehydration solution (ORS)\n- **Mechanism of Action**: Restores fluid and electrolyte balance\n- **Typical Dosing Range**: Administer according to age and severity of dehydration; typically 50-100 mL/kg over 4-6 hours for mild to moderate dehydration\n- **Key Side Effects/Contraindications**: Generally well tolerated; may cause mild gastrointestinal upset\n- **When to Use vs. Alternatives**: ORS is preferred over plain water or sugary drinks for rehydration.\n\n#### Intravenous fluids (e.g., Normal Saline)\n- **Mechanism of Action**: Restores intravascular volume and corrects electrolyte imbalances\n- **Typical Dosing Range**: Start with 20 mL/kg bolus for severe dehydration, reassess and repeat as necessary\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances\n- **When to Use vs. Alternatives**: Monitor vital signs and fluid status closely during administration.\n\n### Procedures\n\n#### Intravenous fluid administration\n- **What it Involves**: Insertion of an IV line to deliver fluids directly into the bloodstream\n- **Indications**: Severe dehydration, inability to tolerate oral fluids, or ongoing significant fluid losses\n- **Key Risks/Complications**: Infection, phlebitis, fluid overload, electrolyte imbalances\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith prompt recognition and appropriate management, the prognosis for dehydration in children is generally good. Severe dehydration can lead to complications such as acute kidney injury or shock if not treated promptly.\n\n### Important Complications to Watch For\n- Electrolyte imbalances (e.g., hypernatremia, hypokalemia)\n- Acute kidney injury\n- Shock\n- Seizures due to severe dehydration or electrolyte disturbances\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize signs of dehydration, initiate appropriate fluid resuscitation, and monitor patients for complications. They should also educate families on the importance of hydration, especially during illness.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with severe dehydration or shows signs of shock, immediate escalation to a senior clinician or pediatric specialist is required. Continuous monitoring and reassessment are essential during treatment.\n\n### Key Safety Considerations\nEnsure accurate assessment of hydration status, monitor vital signs closely during fluid administration, and be aware of the signs of fluid overload. Educate caregivers on recognizing early signs of dehydration.\n",
+  "content": {
+    "overview": {
+      "definition": "Dehydration is a clinical condition that occurs when the body loses more fluids than it takes in, leading to a deficit in total body water. In children, this can result from various causes, including gastrointestinal losses (vomiting, diarrhea), inadequate fluid intake, or excessive fluid loss due to fever or sweating.",
+      "epidemiology": "Dehydration is a common condition in children, particularly in those under 5 years of age. It is often associated with gastroenteritis, which can lead to significant fluid loss. The incidence of dehydration varies by region, with higher rates in areas with limited access to clean water and healthcare.",
+      "pathophysiology": "Dehydration leads to a decrease in extracellular fluid volume, which can result in reduced perfusion to organs and tissues. The body compensates by activating the renin-angiotensin-aldosterone system (RAAS) to conserve water and sodium, and by increasing thirst. Severe dehydration can lead to electrolyte imbalances, particularly hypernatremia or hyponatremia, depending on the type of fluid loss."
+    },
+    "recognition": {
+      "symptoms": [
+        "Thirst",
+        "Dry mouth",
+        "Decreased urine output",
+        "Fatigue",
+        "Dizziness",
+        "Irritability (in children)",
+        "Sunken eyes"
+      ],
+      "signs": [
+        "Dry skin",
+        "Tachycardia",
+        "Hypotension",
+        "Decreased skin turgor",
+        "Sunken fontanelle (in infants)",
+        "Cool extremities"
+      ],
+      "atypicalPresentations": [
+        "Lethargy without obvious dehydration signs",
+        "Seizures due to electrolyte imbalances",
+        "Altered mental status"
+      ],
+      "redFlags": [
+        "Severe dehydration (e.g., lethargy, unresponsive)",
+        "Signs of shock (e.g., rapid heart rate, low blood pressure)",
+        "Persistent vomiting or diarrhea",
+        "Inability to keep fluids down"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Urine specific gravity",
+        "Serum electrolytes"
+      ],
+      "secondLine": [
+        "Urinalysis",
+        "Blood urea nitrogen (BUN)",
+        "Creatinine"
+      ],
+      "specialistTests": [
+        "Electrolyte panel",
+        "Venous blood gas (VBG) if acidosis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of dehydration is primarily clinical, based on history and physical examination findings. The degree of dehydration can be classified as mild (3-5% body weight loss), moderate (6-9%), or severe (≥10%).",
+      "differentials": [
+        "Diabetes insipidus",
+        "Adrenal insufficiency",
+        "Acute kidney injury",
+        "Hyperglycemia (diabetic ketoacidosis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oral rehydration solutions (ORS) for mild to moderate dehydration",
+          "Intravenous fluids (e.g., normal saline or Ringer's lactate) for severe dehydration"
+        ],
+        "secondLine": [
+          "Consider electrolyte replacement if significant imbalances are present"
+        ],
+        "procedures": [
+          "IV cannulation for fluid administration in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Encourage adequate fluid intake based on age and activity level",
+          "Monitor growth and hydration status regularly"
+        ],
+        "secondLine": [
+          "Nutritional counseling for children with chronic conditions affecting hydration"
+        ],
+        "monitoring": [
+          "Regular weight checks",
+          "Monitoring of urine output and color"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Oral rehydration solution (ORS)",
+          "mechanism": "Restores fluid and electrolyte balance",
+          "dosing": "Administer according to age and severity of dehydration; typically 50-100 mL/kg over 4-6 hours for mild to moderate dehydration",
+          "sideEffects": "Generally well tolerated; may cause mild gastrointestinal upset",
+          "notes": "ORS is preferred over plain water or sugary drinks for rehydration."
+        },
+        {
+          "name": "Intravenous fluids (e.g., Normal Saline)",
+          "mechanism": "Restores intravascular volume and corrects electrolyte imbalances",
+          "dosing": "Start with 20 mL/kg bolus for severe dehydration, reassess and repeat as necessary",
+          "sideEffects": "Fluid overload, electrolyte imbalances",
+          "notes": "Monitor vital signs and fluid status closely during administration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intravenous fluid administration",
+          "description": "Insertion of an IV line to deliver fluids directly into the bloodstream",
+          "indications": "Severe dehydration, inability to tolerate oral fluids, or ongoing significant fluid losses",
+          "risks": "Infection, phlebitis, fluid overload, electrolyte imbalances"
+        }
+      ]
+    },
+    "prognosis": "With prompt recognition and appropriate management, the prognosis for dehydration in children is generally good. Severe dehydration can lead to complications such as acute kidney injury or shock if not treated promptly.",
+    "complications": [
+      "Electrolyte imbalances (e.g., hypernatremia, hypokalemia)",
+      "Acute kidney injury",
+      "Shock",
+      "Seizures due to severe dehydration or electrolyte disturbances"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize signs of dehydration, initiate appropriate fluid resuscitation, and monitor patients for complications. They should also educate families on the importance of hydration, especially during illness.",
+    "escalation": "If a child presents with severe dehydration or shows signs of shock, immediate escalation to a senior clinician or pediatric specialist is required. Continuous monitoring and reassessment are essential during treatment.",
+    "keySafetyConsiderations": "Ensure accurate assessment of hydration status, monitor vital signs closely during fluid administration, and be aware of the signs of fluid overload. Educate caregivers on recognizing early signs of dehydration."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "subdural_haematoma",
+  "name": "Subdural haematoma",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:04:22.954188",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Subdural haematoma: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nA subdural haematoma (SDH) is a collection of blood between the dura mater and the arachnoid membrane, typically resulting from tearing of bridging veins due to trauma or other causes.\n\n### Epidemiology\nSubdural haematomas are more common in infants and the elderly, with a higher incidence in males. In children, they can occur due to non-accidental injury or falls.\n\n### Essential Pathophysiology\nThe pathophysiology involves the rupture of bridging veins, leading to blood accumulation in the subdural space. This can increase intracranial pressure and cause brain injury.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Headache\n- Confusion\n- Dizziness\n- Nausea and vomiting\n- Seizures\n- Altered consciousness\n\n### Key Signs\n- Altered level of consciousness\n- Pupillary changes\n- Neurological deficits\n- Signs of increased intracranial pressure (e.g., hypertension, bradycardia)\n\n### Atypical Presentations\n- Asymptomatic in some cases\n- Chronic SDH may present with subtle cognitive decline or personality changes\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in consciousness\n- Severe headache with sudden onset\n- Focal neurological deficits\n- Seizures in a previously healthy child\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- CT scan of the head (non-contrast)\n\n### Second-line Investigations\n- MRI of the brain (if CT is inconclusive)\n\n### Specialist Tests\n- Cerebral angiography (if vascular injury is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on imaging findings of a crescent-shaped hyperdense area on CT, along with clinical symptoms.\n\n### Key Differential Diagnoses to Exclude\n- Epidural haematoma\n- Intracerebral haemorrhage\n- Cerebral contusion\n- Meningitis\n- Brain tumor\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate neurosurgical consultation\n- Monitoring in a high-dependency unit\n\n#### Second-line Treatments\n- Surgical intervention (craniotomy or burr hole drainage) if significant mass effect or symptoms present\n\n#### Emergency Procedures\n- Craniotomy: opening of the skull to remove the haematoma and relieve pressure. Indicated in cases of significant mass effect or neurological deterioration. Risks include infection, bleeding, and neurological deficits.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Observation and monitoring for symptoms\n\n#### Second-line Treatments\n- Surgical intervention if symptomatic or significant mass effect persists.\n\n#### Monitoring Requirements\n- Regular neurological assessments and imaging to monitor for changes.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Mannitol\n- **Mechanism of Action**: Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.\n- **Typical Dosing Range**: 1-2 g/kg IV over 30 minutes, may repeat every 4-6 hours as needed.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, renal failure.\n- **When to Use vs. Alternatives**: Use cautiously in patients with renal impairment.\n\n#### Antiepileptics (e.g., Levetiracetam)\n- **Mechanism of Action**: Prevention of seizures in patients with SDH.\n- **Typical Dosing Range**: Initial: 500 mg IV, maintenance: 1000-3000 mg/day in divided doses.\n- **Key Side Effects/Contraindications**: Drowsiness, dizziness, behavioral changes.\n- **When to Use vs. Alternatives**: Monitor for signs of CNS depression.\n\n### Procedures\n\n#### Burr hole drainage\n- **What it Involves**: A small hole drilled in the skull to allow drainage of the haematoma.\n- **Indications**: Indicated for chronic SDH or acute SDH with minimal mass effect.\n- **Key Risks/Complications**: Infection, bleeding, recurrence of haematoma.\n\n#### Craniotomy\n- **What it Involves**: Surgical procedure to remove a portion of the skull to access the brain and evacuate the haematoma.\n- **Indications**: Indicated for large or symptomatic SDH with significant mass effect.\n- **Key Risks/Complications**: Infection, bleeding, neurological deficits, seizures.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis depends on the size of the haematoma, the age of the patient, and the presence of neurological deficits. Early intervention generally leads to better outcomes.\n\n### Important Complications to Watch For\n- Rebleeding\n- Infection\n- Seizures\n- Chronic headache\n- Neurological deficits\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, and initiate investigations. They should also monitor vital signs and neurological status, and escalate care as needed.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to a senior clinician or neurosurgeon if there are signs of increased intracranial pressure, rapid deterioration, or significant neurological deficits.\n\n### Key Safety Considerations\nEnsure timely imaging and monitoring of neurological status. Be vigilant for signs of deterioration and maintain a high index of suspicion in at-risk populations (e.g., infants, elderly).\n",
+  "content": {
+    "overview": {
+      "definition": "A subdural haematoma (SDH) is a collection of blood between the dura mater and the arachnoid membrane, typically resulting from tearing of bridging veins due to trauma or other causes.",
+      "epidemiology": "Subdural haematomas are more common in infants and the elderly, with a higher incidence in males. In children, they can occur due to non-accidental injury or falls.",
+      "pathophysiology": "The pathophysiology involves the rupture of bridging veins, leading to blood accumulation in the subdural space. This can increase intracranial pressure and cause brain injury."
+    },
+    "recognition": {
+      "symptoms": [
+        "Headache",
+        "Confusion",
+        "Dizziness",
+        "Nausea and vomiting",
+        "Seizures",
+        "Altered consciousness"
+      ],
+      "signs": [
+        "Altered level of consciousness",
+        "Pupillary changes",
+        "Neurological deficits",
+        "Signs of increased intracranial pressure (e.g., hypertension, bradycardia)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in some cases",
+        "Chronic SDH may present with subtle cognitive decline or personality changes"
+      ],
+      "redFlags": [
+        "Rapid deterioration in consciousness",
+        "Severe headache with sudden onset",
+        "Focal neurological deficits",
+        "Seizures in a previously healthy child"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "CT scan of the head (non-contrast)"
+      ],
+      "secondLine": [
+        "MRI of the brain (if CT is inconclusive)"
+      ],
+      "specialistTests": [
+        "Cerebral angiography (if vascular injury is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on imaging findings of a crescent-shaped hyperdense area on CT, along with clinical symptoms.",
+      "differentials": [
+        "Epidural haematoma",
+        "Intracerebral haemorrhage",
+        "Cerebral contusion",
+        "Meningitis",
+        "Brain tumor"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate neurosurgical consultation",
+          "Monitoring in a high-dependency unit"
+        ],
+        "secondLine": [
+          "Surgical intervention (craniotomy or burr hole drainage) if significant mass effect or symptoms present"
+        ],
+        "procedures": [
+          "Craniotomy: opening of the skull to remove the haematoma and relieve pressure. Indicated in cases of significant mass effect or neurological deterioration. Risks include infection, bleeding, and neurological deficits."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Observation and monitoring for symptoms"
+        ],
+        "secondLine": [
+          "Surgical intervention if symptomatic or significant mass effect persists."
+        ],
+        "monitoring": [
+          "Regular neurological assessments and imaging to monitor for changes."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Mannitol",
+          "mechanism": "Osmotic diuretic that reduces intracranial pressure by drawing fluid out of the brain.",
+          "dosing": "1-2 g/kg IV over 30 minutes, may repeat every 4-6 hours as needed.",
+          "sideEffects": "Electrolyte imbalances, dehydration, renal failure.",
+          "notes": "Use cautiously in patients with renal impairment."
+        },
+        {
+          "name": "Antiepileptics (e.g., Levetiracetam)",
+          "mechanism": "Prevention of seizures in patients with SDH.",
+          "dosing": "Initial: 500 mg IV, maintenance: 1000-3000 mg/day in divided doses.",
+          "sideEffects": "Drowsiness, dizziness, behavioral changes.",
+          "notes": "Monitor for signs of CNS depression."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Burr hole drainage",
+          "description": "A small hole drilled in the skull to allow drainage of the haematoma.",
+          "indications": "Indicated for chronic SDH or acute SDH with minimal mass effect.",
+          "risks": "Infection, bleeding, recurrence of haematoma."
+        },
+        {
+          "name": "Craniotomy",
+          "description": "Surgical procedure to remove a portion of the skull to access the brain and evacuate the haematoma.",
+          "indications": "Indicated for large or symptomatic SDH with significant mass effect.",
+          "risks": "Infection, bleeding, neurological deficits, seizures."
+        }
+      ]
+    },
+    "prognosis": "The prognosis depends on the size of the haematoma, the age of the patient, and the presence of neurological deficits. Early intervention generally leads to better outcomes.",
+    "complications": [
+      "Rebleeding",
+      "Infection",
+      "Seizures",
+      "Chronic headache",
+      "Neurological deficits"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, and initiate investigations. They should also monitor vital signs and neurological status, and escalate care as needed.",
+    "escalation": "Immediate referral to a senior clinician or neurosurgeon if there are signs of increased intracranial pressure, rapid deterioration, or significant neurological deficits.",
+    "keySafetyConsiderations": "Ensure timely imaging and monitoring of neurological status. Be vigilant for signs of deterioration and maintain a high index of suspicion in at-risk populations (e.g., infants, elderly)."
+  }
+}

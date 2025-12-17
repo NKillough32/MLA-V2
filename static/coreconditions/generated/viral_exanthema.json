@@ -1,0 +1,128 @@
+{
+  "id": "viral_exanthema",
+  "name": "Viral exanthema",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:09:42.002286",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Viral exanthema: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nViral exanthema refers to a widespread rash caused by viral infections, commonly seen in children. It is characterized by a variety of skin eruptions that can be associated with systemic symptoms.\n\n### Epidemiology\nViral exanthems are prevalent in children, particularly those under 5 years of age. Common viral causes include measles, rubella, roseola, and varicella. Outbreaks can occur in unvaccinated populations.\n\n### Essential Pathophysiology\nViral exanthems are typically caused by viral replication in the skin and immune response to the infection. The rash is often a result of the immune system's response to the viral antigens, leading to inflammation and skin changes.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Malaise\n- Cough\n- Rhinorrhea\n- Sore throat\n- Lymphadenopathy\n\n### Key Signs\n- Maculopapular rash\n- Petechiae\n- Vesicular lesions\n- Enanthem (oral lesions)\n\n### Atypical Presentations\n- Rash without fever\n- Rash in vaccinated individuals\n- Delayed rash appearance\n\n### Red Flags Requiring Immediate Action\n- High fever persisting beyond 3 days\n- Severe headache\n- Stiff neck\n- Altered consciousness\n- Respiratory distress\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment\n- History of vaccination\n- Complete blood count (CBC)\n\n### Second-line Investigations\n- Serological tests for specific viruses (e.g., IgM, IgG)\n- Polymerase chain reaction (PCR) for viral DNA/RNA\n\n### Specialist Tests\n- Skin biopsy (rarely needed)\n- Lumbar puncture if CNS involvement is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the characteristic rash and associated symptoms, along with vaccination history.\n\n### Key Differential Diagnoses to Exclude\n- Bacterial skin infections (e.g., impetigo)\n- Drug eruptions\n- Other viral infections (e.g., enterovirus, parvovirus)\n- Non-infectious causes (e.g., autoimmune conditions)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, antipyretics)\n- Antihistamines for itching\n\n#### Second-line Treatments\n- Corticosteroids for severe inflammation (if indicated)\n\n#### Emergency Procedures\n- None specific for viral exanthema, but consider lumbar puncture if CNS involvement is suspected.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on viral exanthema and reassurance to parents\n\n#### Second-line Treatments\n- Follow-up for any complications or persistent symptoms\n\n#### Monitoring Requirements\n- Monitor for secondary infections or complications, especially in immunocompromised patients.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed, max 60 mg/kg/day\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose\n- **When to Use vs. Alternatives**: Safe for use in children.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours as needed, max 40 mg/kg/day\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Avoid in dehydration.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: Involves inserting a needle into the lumbar spine to collect cerebrospinal fluid (CSF) for analysis.\n- **Indications**: Suspected viral meningitis or encephalitis.\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost viral exanthems are self-limiting with a good prognosis. Complications can occur, particularly in immunocompromised individuals or those with underlying health conditions.\n\n### Important Complications to Watch For\n- Secondary bacterial infections\n- Dehydration due to fever\n- Encephalitis (rare)\n- Pneumonia (in cases like measles)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, provide supportive care, educate families, and recognize when to escalate care for complications.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician if there are red flags, severe symptoms, or if the child is immunocompromised.\n\n### Key Safety Considerations\nEnsure vaccination status is up to date, monitor for signs of complications, and provide education to parents about the nature of viral exanthems and when to seek further medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Viral exanthema refers to a widespread rash caused by viral infections, commonly seen in children. It is characterized by a variety of skin eruptions that can be associated with systemic symptoms.",
+      "epidemiology": "Viral exanthems are prevalent in children, particularly those under 5 years of age. Common viral causes include measles, rubella, roseola, and varicella. Outbreaks can occur in unvaccinated populations.",
+      "pathophysiology": "Viral exanthems are typically caused by viral replication in the skin and immune response to the infection. The rash is often a result of the immune system's response to the viral antigens, leading to inflammation and skin changes."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Malaise",
+        "Cough",
+        "Rhinorrhea",
+        "Sore throat",
+        "Lymphadenopathy"
+      ],
+      "signs": [
+        "Maculopapular rash",
+        "Petechiae",
+        "Vesicular lesions",
+        "Enanthem (oral lesions)"
+      ],
+      "atypicalPresentations": [
+        "Rash without fever",
+        "Rash in vaccinated individuals",
+        "Delayed rash appearance"
+      ],
+      "redFlags": [
+        "High fever persisting beyond 3 days",
+        "Severe headache",
+        "Stiff neck",
+        "Altered consciousness",
+        "Respiratory distress"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment",
+        "History of vaccination",
+        "Complete blood count (CBC)"
+      ],
+      "secondLine": [
+        "Serological tests for specific viruses (e.g., IgM, IgG)",
+        "Polymerase chain reaction (PCR) for viral DNA/RNA"
+      ],
+      "specialistTests": [
+        "Skin biopsy (rarely needed)",
+        "Lumbar puncture if CNS involvement is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the characteristic rash and associated symptoms, along with vaccination history.",
+      "differentials": [
+        "Bacterial skin infections (e.g., impetigo)",
+        "Drug eruptions",
+        "Other viral infections (e.g., enterovirus, parvovirus)",
+        "Non-infectious causes (e.g., autoimmune conditions)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, antipyretics)",
+          "Antihistamines for itching"
+        ],
+        "secondLine": [
+          "Corticosteroids for severe inflammation (if indicated)"
+        ],
+        "procedures": [
+          "None specific for viral exanthema, but consider lumbar puncture if CNS involvement is suspected."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on viral exanthema and reassurance to parents"
+        ],
+        "secondLine": [
+          "Follow-up for any complications or persistent symptoms"
+        ],
+        "monitoring": [
+          "Monitor for secondary infections or complications, especially in immunocompromised patients."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "15 mg/kg every 4-6 hours as needed, max 60 mg/kg/day",
+          "sideEffects": "Liver toxicity in overdose",
+          "notes": "Safe for use in children."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "10 mg/kg every 6-8 hours as needed, max 40 mg/kg/day",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Avoid in dehydration."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "Involves inserting a needle into the lumbar spine to collect cerebrospinal fluid (CSF) for analysis.",
+          "indications": "Suspected viral meningitis or encephalitis.",
+          "risks": "Headache, infection, bleeding, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "Most viral exanthems are self-limiting with a good prognosis. Complications can occur, particularly in immunocompromised individuals or those with underlying health conditions.",
+    "complications": [
+      "Secondary bacterial infections",
+      "Dehydration due to fever",
+      "Encephalitis (rare)",
+      "Pneumonia (in cases like measles)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, provide supportive care, educate families, and recognize when to escalate care for complications.",
+    "escalation": "Refer to a pediatrician if there are red flags, severe symptoms, or if the child is immunocompromised.",
+    "keySafetyConsiderations": "Ensure vaccination status is up to date, monitor for signs of complications, and provide education to parents about the nature of viral exanthems and when to seek further medical attention."
+  }
+}

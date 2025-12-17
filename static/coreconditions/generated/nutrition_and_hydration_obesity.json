@@ -1,0 +1,139 @@
+{
+  "id": "nutrition_and_hydration_obesity",
+  "name": "Nutrition and hydration - Obesity",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:01:02.604048",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Nutrition and hydration - Obesity: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nObesity is a complex chronic disease characterized by excessive body fat accumulation that presents a risk to health. It is typically defined using the Body Mass Index (BMI), where a BMI of 30 or greater is classified as obesity.\n\n### Epidemiology\nObesity is a significant public health issue, with increasing prevalence globally. In children and adolescents, the prevalence of obesity has tripled since the 1970s, with approximately 18.5% of children aged 2-19 years in the United States classified as obese.\n\n### Essential Pathophysiology\nObesity results from an energy imbalance where caloric intake exceeds energy expenditure. It is influenced by genetic, environmental, and behavioral factors. Excess adipose tissue leads to metabolic dysregulation, including insulin resistance, inflammation, and hormonal changes that contribute to comorbidities.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Increased body weight\n- Fatigue\n- Difficulty in physical activities\n- Low self-esteem\n- Social isolation\n\n### Key Signs\n- Elevated BMI (≥30)\n- Abdominal obesity (waist circumference >94 cm in men, >80 cm in women)\n- Skin changes (acanthosis nigricans, striae)\n- Hypertension\n- Dyslipidemia\n\n### Atypical Presentations\n- Obesity without significant caloric intake (e.g., Prader-Willi syndrome)\n- Rapid weight gain due to fluid retention (e.g., heart failure)\n\n### Red Flags Requiring Immediate Action\n- Severe obesity with sudden weight gain\n- Signs of metabolic syndrome (hypertension, dyslipidemia, glucose intolerance)\n- Development of obesity-related complications (e.g., sleep apnea, type 2 diabetes)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- BMI calculation\n- Waist circumference measurement\n- Basic metabolic panel (glucose, electrolytes)\n\n### Second-line Investigations\n- Lipid profile\n- Liver function tests\n- Thyroid function tests (TSH, free T4)\n\n### Specialist Tests\n- Oral glucose tolerance test (OGTT)\n- Sleep study (polysomnography) for suspected sleep apnea\n- Endocrine evaluation for suspected secondary causes of obesity\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of obesity is primarily based on BMI, with a BMI of 30 or greater indicating obesity. Additional assessments may include waist circumference and evaluation for obesity-related comorbidities.\n\n### Key Differential Diagnoses to Exclude\n- Hypothyroidism\n- Cushing's syndrome\n- Genetic syndromes (e.g., Prader-Willi syndrome)\n- Medications (e.g., antipsychotics, corticosteroids)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Dietary counseling (caloric restriction)\n- Increased physical activity (at least 60 minutes of moderate activity daily)\n- Behavioral therapy\n\n#### Second-line Treatments\n- Referral to a dietitian for personalized meal planning\n- Consideration of pharmacotherapy if lifestyle changes are insufficient\n\n#### Emergency Procedures\n- Bariatric surgery (for severe obesity with comorbidities)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term lifestyle modifications (diet and exercise)\n- Regular follow-up to monitor weight and comorbidities\n\n#### Second-line Treatments\n- Pharmacotherapy (if BMI ≥30 or BMI ≥27 with comorbidities)\n\n#### Monitoring Requirements\n- Regular assessment of weight, BMI, waist circumference, and metabolic parameters\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Orlistat\n- **Mechanism of Action**: Inhibits pancreatic lipase, reducing fat absorption in the intestine.\n- **Typical Dosing Range**: 120 mg orally three times a day with meals containing fat.\n- **Key Side Effects/Contraindications**: Gastrointestinal side effects (oily stools, flatulence), potential for malabsorption of fat-soluble vitamins.\n- **When to Use vs. Alternatives**: Should be used in conjunction with a reduced-calorie diet.\n\n#### Liraglutide\n- **Mechanism of Action**: GLP-1 receptor agonist that increases satiety and reduces appetite.\n- **Typical Dosing Range**: Starting dose of 0.6 mg subcutaneously once daily, titrated to 3 mg once daily.\n- **Key Side Effects/Contraindications**: Nausea, vomiting, diarrhea, risk of pancreatitis.\n- **When to Use vs. Alternatives**: Monitor for thyroid tumors in patients with a family history.\n\n#### Phentermine-topiramate\n- **Mechanism of Action**: Phentermine is a sympathomimetic that suppresses appetite; topiramate is an anticonvulsant that promotes satiety.\n- **Typical Dosing Range**: Starting dose of 3.75 mg/23 mg once daily, can be increased to 15 mg/92 mg once daily.\n- **Key Side Effects/Contraindications**: Dry mouth, constipation, insomnia, potential for increased heart rate.\n- **When to Use vs. Alternatives**: Contraindicated in pregnancy.\n\n### Procedures\n\n#### Bariatric surgery\n- **What it Involves**: Surgical procedures (e.g., gastric bypass, sleeve gastrectomy) that restrict food intake and/or absorption.\n- **Indications**: Severe obesity (BMI ≥40 or ≥35 with comorbidities) unresponsive to lifestyle changes.\n- **Key Risks/Complications**: Surgical complications (infection, bleeding), nutritional deficiencies, need for lifelong follow-up.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for obesity varies; weight loss can significantly improve health outcomes and reduce the risk of comorbidities. However, obesity is often a chronic condition requiring ongoing management.\n\n### Important Complications to Watch For\n- Type 2 diabetes\n- Hypertension\n- Dyslipidemia\n- Sleep apnea\n- Joint problems (osteoarthritis)\n- Psychosocial issues (depression, anxiety)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should assess and monitor weight and BMI in pediatric patients, provide dietary and lifestyle advice, and refer to specialists when necessary. They should also be aware of the psychological impact of obesity on children and adolescents.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician or endocrinologist for complex cases, especially if there are signs of secondary causes of obesity or significant comorbidities.\n\n### Key Safety Considerations\nEnsure that weight management strategies are age-appropriate and culturally sensitive. Monitor for potential side effects of medications and ensure regular follow-up to assess effectiveness and adherence.\n",
+  "content": {
+    "overview": {
+      "definition": "Obesity is a complex chronic disease characterized by excessive body fat accumulation that presents a risk to health. It is typically defined using the Body Mass Index (BMI), where a BMI of 30 or greater is classified as obesity.",
+      "epidemiology": "Obesity is a significant public health issue, with increasing prevalence globally. In children and adolescents, the prevalence of obesity has tripled since the 1970s, with approximately 18.5% of children aged 2-19 years in the United States classified as obese.",
+      "pathophysiology": "Obesity results from an energy imbalance where caloric intake exceeds energy expenditure. It is influenced by genetic, environmental, and behavioral factors. Excess adipose tissue leads to metabolic dysregulation, including insulin resistance, inflammation, and hormonal changes that contribute to comorbidities."
+    },
+    "recognition": {
+      "symptoms": [
+        "Increased body weight",
+        "Fatigue",
+        "Difficulty in physical activities",
+        "Low self-esteem",
+        "Social isolation"
+      ],
+      "signs": [
+        "Elevated BMI (≥30)",
+        "Abdominal obesity (waist circumference >94 cm in men, >80 cm in women)",
+        "Skin changes (acanthosis nigricans, striae)",
+        "Hypertension",
+        "Dyslipidemia"
+      ],
+      "atypicalPresentations": [
+        "Obesity without significant caloric intake (e.g., Prader-Willi syndrome)",
+        "Rapid weight gain due to fluid retention (e.g., heart failure)"
+      ],
+      "redFlags": [
+        "Severe obesity with sudden weight gain",
+        "Signs of metabolic syndrome (hypertension, dyslipidemia, glucose intolerance)",
+        "Development of obesity-related complications (e.g., sleep apnea, type 2 diabetes)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "BMI calculation",
+        "Waist circumference measurement",
+        "Basic metabolic panel (glucose, electrolytes)"
+      ],
+      "secondLine": [
+        "Lipid profile",
+        "Liver function tests",
+        "Thyroid function tests (TSH, free T4)"
+      ],
+      "specialistTests": [
+        "Oral glucose tolerance test (OGTT)",
+        "Sleep study (polysomnography) for suspected sleep apnea",
+        "Endocrine evaluation for suspected secondary causes of obesity"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of obesity is primarily based on BMI, with a BMI of 30 or greater indicating obesity. Additional assessments may include waist circumference and evaluation for obesity-related comorbidities.",
+      "differentials": [
+        "Hypothyroidism",
+        "Cushing's syndrome",
+        "Genetic syndromes (e.g., Prader-Willi syndrome)",
+        "Medications (e.g., antipsychotics, corticosteroids)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Dietary counseling (caloric restriction)",
+          "Increased physical activity (at least 60 minutes of moderate activity daily)",
+          "Behavioral therapy"
+        ],
+        "secondLine": [
+          "Referral to a dietitian for personalized meal planning",
+          "Consideration of pharmacotherapy if lifestyle changes are insufficient"
+        ],
+        "procedures": [
+          "Bariatric surgery (for severe obesity with comorbidities)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term lifestyle modifications (diet and exercise)",
+          "Regular follow-up to monitor weight and comorbidities"
+        ],
+        "secondLine": [
+          "Pharmacotherapy (if BMI ≥30 or BMI ≥27 with comorbidities)"
+        ],
+        "monitoring": [
+          "Regular assessment of weight, BMI, waist circumference, and metabolic parameters"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Orlistat",
+          "mechanism": "Inhibits pancreatic lipase, reducing fat absorption in the intestine.",
+          "dosing": "120 mg orally three times a day with meals containing fat.",
+          "sideEffects": "Gastrointestinal side effects (oily stools, flatulence), potential for malabsorption of fat-soluble vitamins.",
+          "notes": "Should be used in conjunction with a reduced-calorie diet."
+        },
+        {
+          "name": "Liraglutide",
+          "mechanism": "GLP-1 receptor agonist that increases satiety and reduces appetite.",
+          "dosing": "Starting dose of 0.6 mg subcutaneously once daily, titrated to 3 mg once daily.",
+          "sideEffects": "Nausea, vomiting, diarrhea, risk of pancreatitis.",
+          "notes": "Monitor for thyroid tumors in patients with a family history."
+        },
+        {
+          "name": "Phentermine-topiramate",
+          "mechanism": "Phentermine is a sympathomimetic that suppresses appetite; topiramate is an anticonvulsant that promotes satiety.",
+          "dosing": "Starting dose of 3.75 mg/23 mg once daily, can be increased to 15 mg/92 mg once daily.",
+          "sideEffects": "Dry mouth, constipation, insomnia, potential for increased heart rate.",
+          "notes": "Contraindicated in pregnancy."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bariatric surgery",
+          "description": "Surgical procedures (e.g., gastric bypass, sleeve gastrectomy) that restrict food intake and/or absorption.",
+          "indications": "Severe obesity (BMI ≥40 or ≥35 with comorbidities) unresponsive to lifestyle changes.",
+          "risks": "Surgical complications (infection, bleeding), nutritional deficiencies, need for lifelong follow-up."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for obesity varies; weight loss can significantly improve health outcomes and reduce the risk of comorbidities. However, obesity is often a chronic condition requiring ongoing management.",
+    "complications": [
+      "Type 2 diabetes",
+      "Hypertension",
+      "Dyslipidemia",
+      "Sleep apnea",
+      "Joint problems (osteoarthritis)",
+      "Psychosocial issues (depression, anxiety)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should assess and monitor weight and BMI in pediatric patients, provide dietary and lifestyle advice, and refer to specialists when necessary. They should also be aware of the psychological impact of obesity on children and adolescents.",
+    "escalation": "Refer to a pediatrician or endocrinologist for complex cases, especially if there are signs of secondary causes of obesity or significant comorbidities.",
+    "keySafetyConsiderations": "Ensure that weight management strategies are age-appropriate and culturally sensitive. Monitor for potential side effects of medications and ensure regular follow-up to assess effectiveness and adherence."
+  }
+}

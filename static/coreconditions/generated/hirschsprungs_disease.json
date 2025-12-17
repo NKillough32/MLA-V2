@@ -1,0 +1,126 @@
+{
+  "id": "hirschsprungs_disease",
+  "name": "Hirschsprung's disease",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:59:02.100885",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Hirschsprung's disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nHirschsprung's disease is a congenital condition characterized by the absence of ganglion cells (aganglionosis) in a segment of the colon, leading to functional obstruction and severe constipation.\n\n### Epidemiology\nIt occurs in approximately 1 in 5,000 live births, with a higher prevalence in males (4:1 ratio) and is often associated with other congenital anomalies, particularly in syndromic cases.\n\n### Essential Pathophysiology\nThe disease results from a failure of neural crest cells to migrate during embryonic development, leading to a lack of enteric ganglia in the distal colon. This absence prevents normal peristalsis, causing proximal bowel dilation and constipation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Delayed passage of meconium (beyond 48 hours)\n- Severe constipation\n- Abdominal distension\n- Vomiting (bilious)\n- Failure to thrive\n\n### Key Signs\n- Abdominal distension\n- Palpable fecal mass\n- Empty rectum on examination\n- Signs of dehydration\n\n### Atypical Presentations\n- Older children presenting with chronic constipation\n- Diarrhea alternating with constipation\n- Failure to thrive without obvious gastrointestinal symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal distension\n- Signs of bowel perforation (e.g., peritonitis)\n- Failure to pass meconium within 48 hours of birth\n- Severe dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal X-ray (to assess for bowel obstruction)\n- Contrast enema (to visualize the colon and identify the transition zone)\n\n### Second-line Investigations\n- Anorectal manometry (to assess rectal sensation and reflexes)\n- Biopsy of the rectal mucosa (to confirm absence of ganglion cells)\n\n### Specialist Tests\n- Genetic testing for associated syndromes (e.g., Down syndrome)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by rectal biopsy showing the absence of ganglion cells in the submucosal and myenteric plexus.\n\n### Key Differential Diagnoses to Exclude\n- Constipation due to dietary factors\n- Intestinal obstruction from other causes (e.g., volvulus, atresia)\n- Cystic fibrosis\n- Hypothyroidism\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids if dehydrated)\n- Bowel decompression (NG tube if necessary)\n- Electrolyte management\n\n#### Second-line Treatments\n- Surgical consultation for possible colostomy or definitive surgery\n\n#### Emergency Procedures\n- Surgical resection of the aganglionic segment (pull-through procedure)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular bowel regimen (stool softeners, laxatives)\n- Dietary modifications (high fiber intake)\n\n#### Second-line Treatments\n- Enemas or manual disimpaction if necessary\n\n#### Monitoring Requirements\n- Regular follow-up for bowel function and growth parameters\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Lactulose\n- **Mechanism of Action**: Osmotic laxative that draws water into the bowel to soften stools.\n- **Typical Dosing Range**: Initial: 15-30 mL daily; may increase to 60 mL as needed.\n- **Key Side Effects/Contraindications**: Abdominal cramps, diarrhea, electrolyte imbalance.\n- **When to Use vs. Alternatives**: Monitor for dehydration and electrolyte levels.\n\n#### Senna\n- **Mechanism of Action**: Stimulant laxative that increases peristalsis in the colon.\n- **Typical Dosing Range**: Initial: 7.5-15 mg at bedtime; may increase as needed.\n- **Key Side Effects/Contraindications**: Abdominal cramps, diarrhea, dependence with long-term use.\n- **When to Use vs. Alternatives**: Use with caution in children.\n\n### Procedures\n\n#### Pull-through procedure\n- **What it Involves**: Surgical resection of the aganglionic bowel segment and anastomosis of the normal bowel to the rectum.\n- **Indications**: Confirmed diagnosis of Hirschsprung's disease with significant symptoms.\n- **Key Risks/Complications**: Infection, anastomotic leak, bowel obstruction, enterocolitis.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate surgical intervention, most children can achieve normal bowel function, although some may experience ongoing bowel issues such as constipation or incontinence.\n\n### Important Complications to Watch For\n- Enterocolitis (inflammation of the intestines)\n- Bowel obstruction\n- Short bowel syndrome (if extensive resection)\n- Fecal incontinence\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of Hirschsprung's disease, initiate investigations, manage acute presentations, and provide pre- and post-operative care for surgical patients.\n\n### When to Escalate to Senior/Specialist\nRefer to pediatric surgery for any child with suspected Hirschsprung's disease, especially if there are signs of bowel obstruction or enterocolitis.\n\n### Key Safety Considerations\nMonitor for signs of dehydration, electrolyte imbalances, and complications post-surgery. Ensure proper follow-up for bowel function and growth.\n",
+  "content": {
+    "overview": {
+      "definition": "Hirschsprung's disease is a congenital condition characterized by the absence of ganglion cells (aganglionosis) in a segment of the colon, leading to functional obstruction and severe constipation.",
+      "epidemiology": "It occurs in approximately 1 in 5,000 live births, with a higher prevalence in males (4:1 ratio) and is often associated with other congenital anomalies, particularly in syndromic cases.",
+      "pathophysiology": "The disease results from a failure of neural crest cells to migrate during embryonic development, leading to a lack of enteric ganglia in the distal colon. This absence prevents normal peristalsis, causing proximal bowel dilation and constipation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Delayed passage of meconium (beyond 48 hours)",
+        "Severe constipation",
+        "Abdominal distension",
+        "Vomiting (bilious)",
+        "Failure to thrive"
+      ],
+      "signs": [
+        "Abdominal distension",
+        "Palpable fecal mass",
+        "Empty rectum on examination",
+        "Signs of dehydration"
+      ],
+      "atypicalPresentations": [
+        "Older children presenting with chronic constipation",
+        "Diarrhea alternating with constipation",
+        "Failure to thrive without obvious gastrointestinal symptoms"
+      ],
+      "redFlags": [
+        "Severe abdominal distension",
+        "Signs of bowel perforation (e.g., peritonitis)",
+        "Failure to pass meconium within 48 hours of birth",
+        "Severe dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal X-ray (to assess for bowel obstruction)",
+        "Contrast enema (to visualize the colon and identify the transition zone)"
+      ],
+      "secondLine": [
+        "Anorectal manometry (to assess rectal sensation and reflexes)",
+        "Biopsy of the rectal mucosa (to confirm absence of ganglion cells)"
+      ],
+      "specialistTests": [
+        "Genetic testing for associated syndromes (e.g., Down syndrome)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by rectal biopsy showing the absence of ganglion cells in the submucosal and myenteric plexus.",
+      "differentials": [
+        "Constipation due to dietary factors",
+        "Intestinal obstruction from other causes (e.g., volvulus, atresia)",
+        "Cystic fibrosis",
+        "Hypothyroidism"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids if dehydrated)",
+          "Bowel decompression (NG tube if necessary)",
+          "Electrolyte management"
+        ],
+        "secondLine": [
+          "Surgical consultation for possible colostomy or definitive surgery"
+        ],
+        "procedures": [
+          "Surgical resection of the aganglionic segment (pull-through procedure)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular bowel regimen (stool softeners, laxatives)",
+          "Dietary modifications (high fiber intake)"
+        ],
+        "secondLine": [
+          "Enemas or manual disimpaction if necessary"
+        ],
+        "monitoring": [
+          "Regular follow-up for bowel function and growth parameters"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Lactulose",
+          "mechanism": "Osmotic laxative that draws water into the bowel to soften stools.",
+          "dosing": "Initial: 15-30 mL daily; may increase to 60 mL as needed.",
+          "sideEffects": "Abdominal cramps, diarrhea, electrolyte imbalance.",
+          "notes": "Monitor for dehydration and electrolyte levels."
+        },
+        {
+          "name": "Senna",
+          "mechanism": "Stimulant laxative that increases peristalsis in the colon.",
+          "dosing": "Initial: 7.5-15 mg at bedtime; may increase as needed.",
+          "sideEffects": "Abdominal cramps, diarrhea, dependence with long-term use.",
+          "notes": "Use with caution in children."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pull-through procedure",
+          "description": "Surgical resection of the aganglionic bowel segment and anastomosis of the normal bowel to the rectum.",
+          "indications": "Confirmed diagnosis of Hirschsprung's disease with significant symptoms.",
+          "risks": "Infection, anastomotic leak, bowel obstruction, enterocolitis."
+        }
+      ]
+    },
+    "prognosis": "With appropriate surgical intervention, most children can achieve normal bowel function, although some may experience ongoing bowel issues such as constipation or incontinence.",
+    "complications": [
+      "Enterocolitis (inflammation of the intestines)",
+      "Bowel obstruction",
+      "Short bowel syndrome (if extensive resection)",
+      "Fecal incontinence"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of Hirschsprung's disease, initiate investigations, manage acute presentations, and provide pre- and post-operative care for surgical patients.",
+    "escalation": "Refer to pediatric surgery for any child with suspected Hirschsprung's disease, especially if there are signs of bowel obstruction or enterocolitis.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration, electrolyte imbalances, and complications post-surgery. Ensure proper follow-up for bowel function and growth."
+  }
+}

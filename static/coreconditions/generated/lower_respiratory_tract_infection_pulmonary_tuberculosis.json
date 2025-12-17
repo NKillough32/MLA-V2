@@ -1,0 +1,156 @@
+{
+  "id": "lower_respiratory_tract_infection_pulmonary_tuberculosis",
+  "name": "Lower respiratory tract infection - Pulmonary tuberculosis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:57:47.863410",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lower respiratory tract infection - Pulmonary tuberculosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPulmonary tuberculosis (TB) is a contagious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but can also involve other organs. It is characterized by the formation of granulomas in lung tissue.\n\n### Epidemiology\nGlobally, TB remains a significant public health issue, with millions of new cases reported annually. It is more prevalent in low- and middle-income countries, with higher incidence rates in urban areas and among immunocompromised individuals, including those with HIV.\n\n### Essential Pathophysiology\nTB infection begins when airborne droplets containing Mycobacterium tuberculosis are inhaled, leading to infection of alveolar macrophages. The bacteria can evade the immune response, leading to a chronic inflammatory response and the formation of granulomas, which can eventually cause lung tissue damage.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chronic cough (lasting more than 3 weeks)\n- Hemoptysis (coughing up blood)\n- Chest pain\n- Weight loss\n- Night sweats\n- Fever\n- Fatigue\n- Loss of appetite\n\n### Key Signs\n- Dullness to percussion\n- Decreased breath sounds\n- Wheezing\n- Crackles on auscultation\n- Lymphadenopathy (especially cervical)\n\n### Atypical Presentations\n- Asymptomatic in early stages\n- Pleural effusion\n- Extrapulmonary TB (e.g., meningitis, bone, or kidney involvement)\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- High fever persisting despite treatment\n- Significant hemoptysis\n- Rapid weight loss\n- Immunocompromised status (e.g., HIV positive)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Chest X-ray (CXR)\n- Sputum smear microscopy for acid-fast bacilli (AFB)\n- Sputum culture for Mycobacterium tuberculosis\n- Tuberculin skin test (TST) or Interferon-gamma release assays (IGRAs)\n\n### Second-line Investigations\n- CT scan of the chest (if CXR is inconclusive)\n- Bronchoscopy with bronchoalveolar lavage (BAL)\n\n### Specialist Tests\n- Nucleic acid amplification tests (NAAT) for rapid diagnosis\n- Drug susceptibility testing (DST)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of pulmonary tuberculosis is confirmed by the presence of Mycobacterium tuberculosis in sputum or tissue samples, along with clinical symptoms and radiological findings consistent with TB.\n\n### Key Differential Diagnoses to Exclude\n- Pneumonia\n- Lung cancer\n- Chronic obstructive pulmonary disease (COPD)\n- Interstitial lung disease\n- Fungal infections (e.g., histoplasmosis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Initiate directly observed therapy (DOT) with first-line anti-TB medications\n\n#### Second-line Treatments\n- Consider hospitalization for severe cases or those with complications\n\n#### Emergency Procedures\n- Pleural drainage for significant pleural effusion\n- Bronchoscopy for diagnostic purposes or to manage airway obstruction\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continuation of anti-TB therapy for at least 6 months after initial treatment phase\n\n#### Second-line Treatments\n- Consider second-line drugs for drug-resistant TB\n\n#### Monitoring Requirements\n- Regular follow-up with sputum tests to assess treatment response\n- Monitor for side effects of medications\n- Assess for adherence to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Isoniazid\n- **Mechanism of Action**: Inhibits mycolic acid synthesis in bacterial cell walls\n- **Typical Dosing Range**: 5 mg/kg daily (max 300 mg)\n- **Key Side Effects/Contraindications**: Hepatotoxicity, peripheral neuropathy\n- **When to Use vs. Alternatives**: Vitamin B6 (pyridoxine) supplementation recommended to prevent neuropathy.\n\n#### Rifampicin\n- **Mechanism of Action**: Inhibits bacterial RNA synthesis by binding to RNA polymerase\n- **Typical Dosing Range**: 10 mg/kg daily (max 600 mg)\n- **Key Side Effects/Contraindications**: Hepatotoxicity, orange discoloration of body fluids\n- **When to Use vs. Alternatives**: Monitor liver function tests regularly.\n\n#### Pyrazinamide\n- **Mechanism of Action**: Disrupts mycobacterial cell membrane metabolism and transport\n- **Typical Dosing Range**: 25 mg/kg daily (max 2000 mg)\n- **Key Side Effects/Contraindications**: Hepatotoxicity, hyperuricemia\n- **When to Use vs. Alternatives**: Monitor uric acid levels.\n\n#### Ethambutol\n- **Mechanism of Action**: Inhibits cell wall synthesis by interfering with arabinogalactan synthesis\n- **Typical Dosing Range**: 15 mg/kg daily (max 1600 mg)\n- **Key Side Effects/Contraindications**: Optic neuritis, red-green color blindness\n- **When to Use vs. Alternatives**: Regular vision checks recommended.\n\n### Procedures\n\n#### Pleural drainage\n- **What it Involves**: Insertion of a chest tube to drain pleural effusion\n- **Indications**: Significant pleural effusion causing respiratory distress or infection\n- **Key Risks/Complications**: Infection, bleeding, pneumothorax, injury to surrounding structures.\n\n#### Bronchoscopy\n- **What it Involves**: Endoscopic examination of the airways for diagnostic or therapeutic purposes\n- **Indications**: Suspected airway obstruction, need for biopsy, or lavage\n- **Key Risks/Complications**: Bleeding, infection, pneumothorax, bronchospasm.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate treatment, the prognosis for pulmonary tuberculosis is generally good, with a high cure rate. However, drug-resistant TB poses significant challenges and can lead to poorer outcomes.\n\n### Important Complications to Watch For\n- Chronic lung disease (e.g., bronchiectasis)\n- Respiratory failure\n- Pleural effusion or empyema\n- Extrapulmonary TB (e.g., meningitis, bone disease)\n- Drug-resistant TB\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of TB, initiate investigations, and manage treatment under supervision. They should also educate patients about adherence to therapy and monitor for side effects.\n\n### When to Escalate to Senior/Specialist\nRefer to a respiratory physician for severe cases, suspected drug-resistant TB, or if the patient is not responding to initial treatment.\n\n### Key Safety Considerations\nEnsure appropriate infection control measures are in place to prevent transmission. Monitor for side effects of anti-TB medications and ensure adherence to treatment regimens.\n",
+  "content": {
+    "overview": {
+      "definition": "Pulmonary tuberculosis (TB) is a contagious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but can also involve other organs. It is characterized by the formation of granulomas in lung tissue.",
+      "epidemiology": "Globally, TB remains a significant public health issue, with millions of new cases reported annually. It is more prevalent in low- and middle-income countries, with higher incidence rates in urban areas and among immunocompromised individuals, including those with HIV.",
+      "pathophysiology": "TB infection begins when airborne droplets containing Mycobacterium tuberculosis are inhaled, leading to infection of alveolar macrophages. The bacteria can evade the immune response, leading to a chronic inflammatory response and the formation of granulomas, which can eventually cause lung tissue damage."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chronic cough (lasting more than 3 weeks)",
+        "Hemoptysis (coughing up blood)",
+        "Chest pain",
+        "Weight loss",
+        "Night sweats",
+        "Fever",
+        "Fatigue",
+        "Loss of appetite"
+      ],
+      "signs": [
+        "Dullness to percussion",
+        "Decreased breath sounds",
+        "Wheezing",
+        "Crackles on auscultation",
+        "Lymphadenopathy (especially cervical)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in early stages",
+        "Pleural effusion",
+        "Extrapulmonary TB (e.g., meningitis, bone, or kidney involvement)"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "High fever persisting despite treatment",
+        "Significant hemoptysis",
+        "Rapid weight loss",
+        "Immunocompromised status (e.g., HIV positive)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Chest X-ray (CXR)",
+        "Sputum smear microscopy for acid-fast bacilli (AFB)",
+        "Sputum culture for Mycobacterium tuberculosis",
+        "Tuberculin skin test (TST) or Interferon-gamma release assays (IGRAs)"
+      ],
+      "secondLine": [
+        "CT scan of the chest (if CXR is inconclusive)",
+        "Bronchoscopy with bronchoalveolar lavage (BAL)"
+      ],
+      "specialistTests": [
+        "Nucleic acid amplification tests (NAAT) for rapid diagnosis",
+        "Drug susceptibility testing (DST)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of pulmonary tuberculosis is confirmed by the presence of Mycobacterium tuberculosis in sputum or tissue samples, along with clinical symptoms and radiological findings consistent with TB.",
+      "differentials": [
+        "Pneumonia",
+        "Lung cancer",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Interstitial lung disease",
+        "Fungal infections (e.g., histoplasmosis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Initiate directly observed therapy (DOT) with first-line anti-TB medications"
+        ],
+        "secondLine": [
+          "Consider hospitalization for severe cases or those with complications"
+        ],
+        "procedures": [
+          "Pleural drainage for significant pleural effusion",
+          "Bronchoscopy for diagnostic purposes or to manage airway obstruction"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continuation of anti-TB therapy for at least 6 months after initial treatment phase"
+        ],
+        "secondLine": [
+          "Consider second-line drugs for drug-resistant TB"
+        ],
+        "monitoring": [
+          "Regular follow-up with sputum tests to assess treatment response",
+          "Monitor for side effects of medications",
+          "Assess for adherence to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Isoniazid",
+          "mechanism": "Inhibits mycolic acid synthesis in bacterial cell walls",
+          "dosing": "5 mg/kg daily (max 300 mg)",
+          "sideEffects": "Hepatotoxicity, peripheral neuropathy",
+          "notes": "Vitamin B6 (pyridoxine) supplementation recommended to prevent neuropathy."
+        },
+        {
+          "name": "Rifampicin",
+          "mechanism": "Inhibits bacterial RNA synthesis by binding to RNA polymerase",
+          "dosing": "10 mg/kg daily (max 600 mg)",
+          "sideEffects": "Hepatotoxicity, orange discoloration of body fluids",
+          "notes": "Monitor liver function tests regularly."
+        },
+        {
+          "name": "Pyrazinamide",
+          "mechanism": "Disrupts mycobacterial cell membrane metabolism and transport",
+          "dosing": "25 mg/kg daily (max 2000 mg)",
+          "sideEffects": "Hepatotoxicity, hyperuricemia",
+          "notes": "Monitor uric acid levels."
+        },
+        {
+          "name": "Ethambutol",
+          "mechanism": "Inhibits cell wall synthesis by interfering with arabinogalactan synthesis",
+          "dosing": "15 mg/kg daily (max 1600 mg)",
+          "sideEffects": "Optic neuritis, red-green color blindness",
+          "notes": "Regular vision checks recommended."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pleural drainage",
+          "description": "Insertion of a chest tube to drain pleural effusion",
+          "indications": "Significant pleural effusion causing respiratory distress or infection",
+          "risks": "Infection, bleeding, pneumothorax, injury to surrounding structures."
+        },
+        {
+          "name": "Bronchoscopy",
+          "description": "Endoscopic examination of the airways for diagnostic or therapeutic purposes",
+          "indications": "Suspected airway obstruction, need for biopsy, or lavage",
+          "risks": "Bleeding, infection, pneumothorax, bronchospasm."
+        }
+      ]
+    },
+    "prognosis": "With appropriate treatment, the prognosis for pulmonary tuberculosis is generally good, with a high cure rate. However, drug-resistant TB poses significant challenges and can lead to poorer outcomes.",
+    "complications": [
+      "Chronic lung disease (e.g., bronchiectasis)",
+      "Respiratory failure",
+      "Pleural effusion or empyema",
+      "Extrapulmonary TB (e.g., meningitis, bone disease)",
+      "Drug-resistant TB"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of TB, initiate investigations, and manage treatment under supervision. They should also educate patients about adherence to therapy and monitor for side effects.",
+    "escalation": "Refer to a respiratory physician for severe cases, suspected drug-resistant TB, or if the patient is not responding to initial treatment.",
+    "keySafetyConsiderations": "Ensure appropriate infection control measures are in place to prevent transmission. Monitor for side effects of anti-TB medications and ensure adherence to treatment regimens."
+  }
+}

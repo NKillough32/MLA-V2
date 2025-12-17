@@ -1,0 +1,134 @@
+{
+  "id": "autistic_spectrum_disorder",
+  "name": "Autistic spectrum disorder",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:10:44.897967",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Autistic spectrum disorder: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAutistic Spectrum Disorder (ASD) is a neurodevelopmental disorder characterized by challenges with social communication, restricted interests, and repetitive behaviors. It encompasses a range of conditions previously classified as separate disorders, including autism, Asperger's syndrome, and pervasive developmental disorder not otherwise specified (PDD-NOS).\n\n### Epidemiology\nASD affects approximately 1 in 100 children, with a higher prevalence in boys (4:1 ratio). The incidence has been increasing, partly due to improved awareness and diagnostic criteria.\n\n### Essential Pathophysiology\nThe exact pathophysiology of ASD is not fully understood, but it is believed to involve a combination of genetic and environmental factors that affect brain development. Abnormalities in synaptic connectivity, neurotransmitter systems, and brain structure have been observed in individuals with ASD.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Difficulty with social interactions\n- Challenges in communication (verbal and non-verbal)\n- Repetitive behaviors or routines\n- Intense focus on specific interests\n- Sensory sensitivities (over or under-reactivity to sensory input)\n\n### Key Signs\n- Limited eye contact\n- Lack of response to name being called\n- Delayed speech development\n- Unusual body language or gestures\n- Echolalia (repeating phrases or sentences)\n\n### Atypical Presentations\n- High-functioning autism (Asperger's syndrome) with average or above-average intelligence\n- Co-occurring conditions such as ADHD or anxiety disorders\n- Milder symptoms that may not be recognized until later childhood or adolescence\n\n### Red Flags Requiring Immediate Action\n- No babbling by 12 months\n- No single words by 16 months\n- No two-word phrases by 24 months\n- Loss of previously acquired language or social skills\n- Lack of interest in peer relationships\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Developmental screening tools (e.g., M-CHAT, ASQ)\n- Clinical assessment by a pediatrician or child psychologist\n\n### Second-line Investigations\n- Comprehensive developmental evaluation\n- Speech and language assessment\n- Occupational therapy assessment\n\n### Specialist Tests\n- Genetic testing (e.g., chromosomal microarray)\n- Neuroimaging (MRI) if indicated for other concerns\n- Hearing tests to rule out sensory issues\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the DSM-5 criteria, which include persistent deficits in social communication and interaction across multiple contexts, and restricted, repetitive patterns of behavior, interests, or activities. Symptoms must be present in early developmental period and cause significant impairment in social, occupational, or other important areas of functioning.\n\n### Key Differential Diagnoses to Exclude\n- Attention Deficit Hyperactivity Disorder (ADHD)\n- Intellectual Disability\n- Social (Pragmatic) Communication Disorder\n- Anxiety Disorders\n- Language Disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate support for behavioral issues (e.g., calming techniques)\n- Referral to child mental health services if acute crisis\n\n#### Second-line Treatments\n- Crisis intervention services if needed\n- Family support services\n\n#### Emergency Procedures\n- Behavioral therapy (e.g., Applied Behavior Analysis)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Early intervention programs (e.g., speech therapy, occupational therapy)\n- Parent training and support programs\n\n#### Second-line Treatments\n- Social skills training\n- Cognitive Behavioral Therapy (CBT) for co-occurring anxiety\n\n#### Monitoring Requirements\n- Regular follow-up to assess developmental progress\n- Adjustment of interventions based on response\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Selective Serotonin Reuptake Inhibitors (SSRIs)\n- **Mechanism of Action**: Increase serotonin levels in the brain, which can help with anxiety and mood regulation.\n- **Typical Dosing Range**: Start with low doses, e.g., fluoxetine 5-10 mg daily, titrate based on response and tolerability.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, weight gain, sexual dysfunction.\n- **When to Use vs. Alternatives**: SSRIs may be beneficial for anxiety symptoms often seen in ASD.\n\n#### Stimulants (e.g., methylphenidate)\n- **Mechanism of Action**: Increase dopamine and norepinephrine levels to improve attention and reduce hyperactivity.\n- **Typical Dosing Range**: Start with 5 mg once or twice daily, titrate as needed.\n- **Key Side Effects/Contraindications**: Insomnia, decreased appetite, increased heart rate.\n- **When to Use vs. Alternatives**: Consider for co-occurring ADHD symptoms.\n\n### Procedures\n\n#### Applied Behavior Analysis (ABA)\n- **What it Involves**: A therapy based on the principles of behaviorism that uses reinforcement strategies to improve specific behaviors.\n- **Indications**: Used for children with ASD to improve social skills, communication, and reduce problematic behaviors.\n- **Key Risks/Complications**: Requires trained professionals; may not be effective for all children.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for individuals with ASD varies widely. Early intervention can lead to significant improvements in communication and social skills. Some individuals may achieve independence, while others may require lifelong support.\n\n### Important Complications to Watch For\n- Co-occurring mental health issues (e.g., anxiety, depression)\n- Learning disabilities\n- Social isolation\n- Increased risk of bullying or victimization\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be aware of the signs and symptoms of ASD, conduct developmental screenings, and refer to appropriate specialists for diagnosis and management. They should also provide support and education to families.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with severe behavioral issues or a crisis situation, escalate to child mental health services or emergency services as appropriate.\n\n### Key Safety Considerations\nEnsure a safe environment for the child, especially if they exhibit self-injurious behaviors. Be aware of sensory sensitivities and adjust the clinical environment accordingly.\n",
+  "content": {
+    "overview": {
+      "definition": "Autistic Spectrum Disorder (ASD) is a neurodevelopmental disorder characterized by challenges with social communication, restricted interests, and repetitive behaviors. It encompasses a range of conditions previously classified as separate disorders, including autism, Asperger's syndrome, and pervasive developmental disorder not otherwise specified (PDD-NOS).",
+      "epidemiology": "ASD affects approximately 1 in 100 children, with a higher prevalence in boys (4:1 ratio). The incidence has been increasing, partly due to improved awareness and diagnostic criteria.",
+      "pathophysiology": "The exact pathophysiology of ASD is not fully understood, but it is believed to involve a combination of genetic and environmental factors that affect brain development. Abnormalities in synaptic connectivity, neurotransmitter systems, and brain structure have been observed in individuals with ASD."
+    },
+    "recognition": {
+      "symptoms": [
+        "Difficulty with social interactions",
+        "Challenges in communication (verbal and non-verbal)",
+        "Repetitive behaviors or routines",
+        "Intense focus on specific interests",
+        "Sensory sensitivities (over or under-reactivity to sensory input)"
+      ],
+      "signs": [
+        "Limited eye contact",
+        "Lack of response to name being called",
+        "Delayed speech development",
+        "Unusual body language or gestures",
+        "Echolalia (repeating phrases or sentences)"
+      ],
+      "atypicalPresentations": [
+        "High-functioning autism (Asperger's syndrome) with average or above-average intelligence",
+        "Co-occurring conditions such as ADHD or anxiety disorders",
+        "Milder symptoms that may not be recognized until later childhood or adolescence"
+      ],
+      "redFlags": [
+        "No babbling by 12 months",
+        "No single words by 16 months",
+        "No two-word phrases by 24 months",
+        "Loss of previously acquired language or social skills",
+        "Lack of interest in peer relationships"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Developmental screening tools (e.g., M-CHAT, ASQ)",
+        "Clinical assessment by a pediatrician or child psychologist"
+      ],
+      "secondLine": [
+        "Comprehensive developmental evaluation",
+        "Speech and language assessment",
+        "Occupational therapy assessment"
+      ],
+      "specialistTests": [
+        "Genetic testing (e.g., chromosomal microarray)",
+        "Neuroimaging (MRI) if indicated for other concerns",
+        "Hearing tests to rule out sensory issues"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the DSM-5 criteria, which include persistent deficits in social communication and interaction across multiple contexts, and restricted, repetitive patterns of behavior, interests, or activities. Symptoms must be present in early developmental period and cause significant impairment in social, occupational, or other important areas of functioning.",
+      "differentials": [
+        "Attention Deficit Hyperactivity Disorder (ADHD)",
+        "Intellectual Disability",
+        "Social (Pragmatic) Communication Disorder",
+        "Anxiety Disorders",
+        "Language Disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate support for behavioral issues (e.g., calming techniques)",
+          "Referral to child mental health services if acute crisis"
+        ],
+        "secondLine": [
+          "Crisis intervention services if needed",
+          "Family support services"
+        ],
+        "procedures": [
+          "Behavioral therapy (e.g., Applied Behavior Analysis)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Early intervention programs (e.g., speech therapy, occupational therapy)",
+          "Parent training and support programs"
+        ],
+        "secondLine": [
+          "Social skills training",
+          "Cognitive Behavioral Therapy (CBT) for co-occurring anxiety"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess developmental progress",
+          "Adjustment of interventions based on response"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+          "mechanism": "Increase serotonin levels in the brain, which can help with anxiety and mood regulation.",
+          "dosing": "Start with low doses, e.g., fluoxetine 5-10 mg daily, titrate based on response and tolerability.",
+          "sideEffects": "Nausea, insomnia, weight gain, sexual dysfunction.",
+          "notes": "SSRIs may be beneficial for anxiety symptoms often seen in ASD."
+        },
+        {
+          "name": "Stimulants (e.g., methylphenidate)",
+          "mechanism": "Increase dopamine and norepinephrine levels to improve attention and reduce hyperactivity.",
+          "dosing": "Start with 5 mg once or twice daily, titrate as needed.",
+          "sideEffects": "Insomnia, decreased appetite, increased heart rate.",
+          "notes": "Consider for co-occurring ADHD symptoms."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Applied Behavior Analysis (ABA)",
+          "description": "A therapy based on the principles of behaviorism that uses reinforcement strategies to improve specific behaviors.",
+          "indications": "Used for children with ASD to improve social skills, communication, and reduce problematic behaviors.",
+          "risks": "Requires trained professionals; may not be effective for all children."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for individuals with ASD varies widely. Early intervention can lead to significant improvements in communication and social skills. Some individuals may achieve independence, while others may require lifelong support.",
+    "complications": [
+      "Co-occurring mental health issues (e.g., anxiety, depression)",
+      "Learning disabilities",
+      "Social isolation",
+      "Increased risk of bullying or victimization"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be aware of the signs and symptoms of ASD, conduct developmental screenings, and refer to appropriate specialists for diagnosis and management. They should also provide support and education to families.",
+    "escalation": "If a child presents with severe behavioral issues or a crisis situation, escalate to child mental health services or emergency services as appropriate.",
+    "keySafetyConsiderations": "Ensure a safe environment for the child, especially if they exhibit self-injurious behaviors. Be aware of sensory sensitivities and adjust the clinical environment accordingly."
+  }
+}

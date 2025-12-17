@@ -1,0 +1,128 @@
+{
+  "id": "necrotising_enterocolitis",
+  "name": "Necrotising enterocolitis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:00:02.959435",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Necrotising enterocolitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nNecrotising enterocolitis (NEC) is a serious gastrointestinal condition primarily affecting premature infants, characterized by inflammation and necrosis of the intestinal wall.\n\n### Epidemiology\nNEC occurs in approximately 5-10% of infants born before 32 weeks of gestation and is a leading cause of morbidity and mortality in this population.\n\n### Essential Pathophysiology\nThe exact pathophysiology of NEC is not fully understood, but it is thought to involve a combination of factors including intestinal ischemia, bacterial colonization, and an immature immune response, leading to inflammation and necrosis of the bowel.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal distension\n- Feeding intolerance\n- Bile-stained vomiting\n- Lethargy\n- Temperature instability\n\n### Key Signs\n- Abdominal tenderness\n- Decreased bowel sounds\n- Bloody stools\n- Signs of sepsis (e.g., tachycardia, hypotension)\n\n### Atypical Presentations\n- Apnea\n- Bradycardia\n- Hypoglycemia\n\n### Red Flags Requiring Immediate Action\n- Rapid deterioration in clinical status\n- Severe abdominal distension\n- Persistent vomiting\n- Signs of perforation (e.g., sudden abdominal pain, peritonitis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal X-ray (to assess for pneumatosis intestinalis or free air)\n- Clinical assessment and monitoring of vital signs\n\n### Second-line Investigations\n- Ultrasound abdomen (to evaluate for bowel wall thickening or free fluid)\n- Laboratory tests (CBC, electrolytes, blood cultures)\n\n### Specialist Tests\n- CT abdomen (if perforation is suspected)\n- Consultation with pediatric surgery\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of NEC is primarily clinical, supported by radiological findings. The Bell's staging criteria are often used, with Stage II indicating moderate disease and Stage III indicating severe disease.\n\n### Key Differential Diagnoses to Exclude\n- Intestinal obstruction\n- Infectious gastroenteritis\n- Sepsis\n- Congenital anomalies (e.g., malrotation)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- NPO (nothing by mouth)\n- IV fluids and electrolyte management\n- Broad-spectrum antibiotics (e.g., Ampicillin and Gentamicin)\n\n#### Second-line Treatments\n- Surgical consultation for possible resection if perforation or necrosis is confirmed\n\n#### Emergency Procedures\n- Abdominal decompression (if indicated)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Nutritional support (TPN if necessary)\n- Gradual reintroduction of enteral feeds as tolerated\n\n#### Second-line Treatments\n- Monitoring for complications such as strictures or short bowel syndrome\n\n#### Monitoring Requirements\n- Regular abdominal examinations\n- Nutritional assessments\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ampicillin\n- **Mechanism of Action**: Inhibits bacterial cell wall synthesis.\n- **Typical Dosing Range**: 50 mg/kg IV every 6 hours.\n- **Key Side Effects/Contraindications**: Rash, diarrhea, allergic reactions.\n- **When to Use vs. Alternatives**: Monitor for signs of anaphylaxis.\n\n#### Gentamicin\n- **Mechanism of Action**: Inhibits bacterial protein synthesis.\n- **Typical Dosing Range**: 5-7.5 mg/kg IV every 24 hours (adjust based on renal function).\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity.\n- **When to Use vs. Alternatives**: Monitor renal function and drug levels.\n\n### Procedures\n\n#### Abdominal decompression\n- **What it Involves**: Insertion of a nasogastric tube to relieve bowel distension.\n- **Indications**: Severe abdominal distension or vomiting.\n- **Key Risks/Complications**: Aspiration, esophageal injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for NEC varies; early diagnosis and management can improve outcomes, but severe cases may lead to significant morbidity or mortality.\n\n### Important Complications to Watch For\n- Intestinal perforation\n- Short bowel syndrome\n- Strictures\n- Sepsis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in monitoring at-risk infants for signs of NEC, initiate early investigations, and manage supportive care while escalating to senior staff as needed.\n\n### When to Escalate to Senior/Specialist\nImmediate escalation to a pediatrician or surgeon is required if there are signs of perforation, severe abdominal distension, or rapid clinical deterioration.\n\n### Key Safety Considerations\nEnsure strict adherence to feeding protocols in preterm infants, monitor for signs of feeding intolerance, and maintain a high index of suspicion for NEC in at-risk populations.\n",
+  "content": {
+    "overview": {
+      "definition": "Necrotising enterocolitis (NEC) is a serious gastrointestinal condition primarily affecting premature infants, characterized by inflammation and necrosis of the intestinal wall.",
+      "epidemiology": "NEC occurs in approximately 5-10% of infants born before 32 weeks of gestation and is a leading cause of morbidity and mortality in this population.",
+      "pathophysiology": "The exact pathophysiology of NEC is not fully understood, but it is thought to involve a combination of factors including intestinal ischemia, bacterial colonization, and an immature immune response, leading to inflammation and necrosis of the bowel."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal distension",
+        "Feeding intolerance",
+        "Bile-stained vomiting",
+        "Lethargy",
+        "Temperature instability"
+      ],
+      "signs": [
+        "Abdominal tenderness",
+        "Decreased bowel sounds",
+        "Bloody stools",
+        "Signs of sepsis (e.g., tachycardia, hypotension)"
+      ],
+      "atypicalPresentations": [
+        "Apnea",
+        "Bradycardia",
+        "Hypoglycemia"
+      ],
+      "redFlags": [
+        "Rapid deterioration in clinical status",
+        "Severe abdominal distension",
+        "Persistent vomiting",
+        "Signs of perforation (e.g., sudden abdominal pain, peritonitis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal X-ray (to assess for pneumatosis intestinalis or free air)",
+        "Clinical assessment and monitoring of vital signs"
+      ],
+      "secondLine": [
+        "Ultrasound abdomen (to evaluate for bowel wall thickening or free fluid)",
+        "Laboratory tests (CBC, electrolytes, blood cultures)"
+      ],
+      "specialistTests": [
+        "CT abdomen (if perforation is suspected)",
+        "Consultation with pediatric surgery"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of NEC is primarily clinical, supported by radiological findings. The Bell's staging criteria are often used, with Stage II indicating moderate disease and Stage III indicating severe disease.",
+      "differentials": [
+        "Intestinal obstruction",
+        "Infectious gastroenteritis",
+        "Sepsis",
+        "Congenital anomalies (e.g., malrotation)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "NPO (nothing by mouth)",
+          "IV fluids and electrolyte management",
+          "Broad-spectrum antibiotics (e.g., Ampicillin and Gentamicin)"
+        ],
+        "secondLine": [
+          "Surgical consultation for possible resection if perforation or necrosis is confirmed"
+        ],
+        "procedures": [
+          "Abdominal decompression (if indicated)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Nutritional support (TPN if necessary)",
+          "Gradual reintroduction of enteral feeds as tolerated"
+        ],
+        "secondLine": [
+          "Monitoring for complications such as strictures or short bowel syndrome"
+        ],
+        "monitoring": [
+          "Regular abdominal examinations",
+          "Nutritional assessments"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ampicillin",
+          "mechanism": "Inhibits bacterial cell wall synthesis.",
+          "dosing": "50 mg/kg IV every 6 hours.",
+          "sideEffects": "Rash, diarrhea, allergic reactions.",
+          "notes": "Monitor for signs of anaphylaxis."
+        },
+        {
+          "name": "Gentamicin",
+          "mechanism": "Inhibits bacterial protein synthesis.",
+          "dosing": "5-7.5 mg/kg IV every 24 hours (adjust based on renal function).",
+          "sideEffects": "Nephrotoxicity, ototoxicity.",
+          "notes": "Monitor renal function and drug levels."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Abdominal decompression",
+          "description": "Insertion of a nasogastric tube to relieve bowel distension.",
+          "indications": "Severe abdominal distension or vomiting.",
+          "risks": "Aspiration, esophageal injury."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for NEC varies; early diagnosis and management can improve outcomes, but severe cases may lead to significant morbidity or mortality.",
+    "complications": [
+      "Intestinal perforation",
+      "Short bowel syndrome",
+      "Strictures",
+      "Sepsis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in monitoring at-risk infants for signs of NEC, initiate early investigations, and manage supportive care while escalating to senior staff as needed.",
+    "escalation": "Immediate escalation to a pediatrician or surgeon is required if there are signs of perforation, severe abdominal distension, or rapid clinical deterioration.",
+    "keySafetyConsiderations": "Ensure strict adherence to feeding protocols in preterm infants, monitor for signs of feeding intolerance, and maintain a high index of suspicion for NEC in at-risk populations."
+  }
+}

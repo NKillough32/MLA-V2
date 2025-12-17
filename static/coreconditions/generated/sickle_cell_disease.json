@@ -1,0 +1,142 @@
+{
+  "id": "sickle_cell_disease",
+  "name": "Sickle cell disease",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:07:47.111959",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Sickle cell disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nSickle cell disease (SCD) is a genetic blood disorder characterized by the production of abnormal hemoglobin, known as hemoglobin S, which causes red blood cells to become rigid, sticky, and shaped like sickles or crescent moons. This leads to various complications due to vaso-occlusion and hemolysis.\n\n### Epidemiology\nSCD is most prevalent in individuals of African, Mediterranean, Middle Eastern, and Indian ancestry. In the UK, approximately 15,000 people are living with SCD, with around 300 babies born with the disease each year.\n\n### Essential Pathophysiology\nIn SCD, the abnormal hemoglobin S polymerizes under low oxygen conditions, leading to the distortion of red blood cells into a sickle shape. These sickled cells are less flexible and can obstruct blood flow in small vessels, causing pain crises, organ damage, and increased hemolysis, leading to anemia.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Recurrent pain episodes (pain crises)\n- Anemia-related fatigue\n- Swelling of hands and feet (dactylitis)\n- Frequent infections\n- Delayed growth and puberty in children\n\n### Key Signs\n- Pallor\n- Jaundice\n- Splenomegaly\n- Leg ulcers\n- Retinopathy\n\n### Atypical Presentations\n- Acute chest syndrome (chest pain, fever, respiratory distress)\n- Stroke (neurological deficits)\n- Priapism (painful prolonged erection)\n\n### Red Flags Requiring Immediate Action\n- Severe chest pain or difficulty breathing\n- High fever (indicative of infection)\n- Neurological symptoms (suggestive of stroke)\n- Severe abdominal pain (possible splenic sequestration)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Peripheral blood smear\n- Hemoglobin electrophoresis\n\n### Second-line Investigations\n- Reticulocyte count\n- Liver function tests\n- Bilirubin levels\n\n### Specialist Tests\n- Genetic testing for sickle cell trait or disease\n- MRI of the brain (to assess for silent strokes)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by hemoglobin electrophoresis showing the presence of hemoglobin S and/or the absence of normal hemoglobin A.\n\n### Key Differential Diagnoses to Exclude\n- Thalassemia\n- Hereditary spherocytosis\n- Autoimmune hemolytic anemia\n- Acute leukemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Hydration (IV fluids)\n- Pain management (opioids, NSAIDs)\n- Oxygen therapy if hypoxic\n\n#### Second-line Treatments\n- Transfusion (if severe anemia or acute chest syndrome)\n- Antibiotics (if infection suspected)\n\n#### Emergency Procedures\n- Exchange transfusion (for severe complications)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Hydroxyurea (to reduce pain crises and acute chest syndrome)\n- Regular blood transfusions (for severe cases)\n\n#### Second-line Treatments\n- Folic acid supplementation\n- Penicillin prophylaxis (in children)\n\n#### Monitoring Requirements\n- Regular follow-up for growth and development\n- Screening for complications (e.g., stroke, pulmonary hypertension)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Hydroxyurea\n- **Mechanism of Action**: Stimulates fetal hemoglobin (HbF) production, reducing sickling and hemolysis.\n- **Typical Dosing Range**: Start at 15 mg/kg/day, increase to 20 mg/kg/day as tolerated.\n- **Key Side Effects/Contraindications**: Bone marrow suppression, gastrointestinal upset, skin changes.\n- **When to Use vs. Alternatives**: Monitor blood counts regularly; contraindicated in pregnancy.\n\n#### Folic acid\n- **Mechanism of Action**: Supports red blood cell production.\n- **Typical Dosing Range**: 1 mg daily.\n- **Key Side Effects/Contraindications**: Generally well tolerated; high doses can cause gastrointestinal upset.\n- **When to Use vs. Alternatives**: Essential in patients with hemolytic anemia.\n\n#### Penicillin\n- **Mechanism of Action**: Antibacterial agent to prevent infections.\n- **Typical Dosing Range**: 125 mg twice daily (up to age 3), 250 mg twice daily (ages 3-5).\n- **Key Side Effects/Contraindications**: Allergic reactions, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Start prophylaxis from 2 months of age until at least 5 years.\n\n### Procedures\n\n#### Exchange transfusion\n- **What it Involves**: A procedure where a patient's blood is removed and replaced with donor blood to reduce the percentage of sickle cells.\n- **Indications**: Severe anemia, acute chest syndrome, stroke prevention.\n- **Key Risks/Complications**: Infection, transfusion reactions, electrolyte imbalances.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, individuals with SCD can lead relatively normal lives, but they are at risk for various complications that can affect life expectancy. Regular follow-up and preventive care are essential.\n\n### Important Complications to Watch For\n- Acute chest syndrome\n- Stroke\n- Pulmonary hypertension\n- Avascular necrosis of bones\n- Leg ulcers\n- Infections (due to splenic dysfunction)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of SCD, initiate management for pain crises, and understand the importance of preventive care and monitoring for complications. They should also be aware of when to escalate care to a specialist.\n\n### When to Escalate to Senior/Specialist\nRefer to a hematologist for severe cases, complications such as acute chest syndrome, or if the patient is not responding to standard management.\n\n### Key Safety Considerations\nEnsure adequate hydration and pain control during crises. Monitor for signs of infection and complications. Educate patients and families about recognizing red flags and when to seek urgent care.\n",
+  "content": {
+    "overview": {
+      "definition": "Sickle cell disease (SCD) is a genetic blood disorder characterized by the production of abnormal hemoglobin, known as hemoglobin S, which causes red blood cells to become rigid, sticky, and shaped like sickles or crescent moons. This leads to various complications due to vaso-occlusion and hemolysis.",
+      "epidemiology": "SCD is most prevalent in individuals of African, Mediterranean, Middle Eastern, and Indian ancestry. In the UK, approximately 15,000 people are living with SCD, with around 300 babies born with the disease each year.",
+      "pathophysiology": "In SCD, the abnormal hemoglobin S polymerizes under low oxygen conditions, leading to the distortion of red blood cells into a sickle shape. These sickled cells are less flexible and can obstruct blood flow in small vessels, causing pain crises, organ damage, and increased hemolysis, leading to anemia."
+    },
+    "recognition": {
+      "symptoms": [
+        "Recurrent pain episodes (pain crises)",
+        "Anemia-related fatigue",
+        "Swelling of hands and feet (dactylitis)",
+        "Frequent infections",
+        "Delayed growth and puberty in children"
+      ],
+      "signs": [
+        "Pallor",
+        "Jaundice",
+        "Splenomegaly",
+        "Leg ulcers",
+        "Retinopathy"
+      ],
+      "atypicalPresentations": [
+        "Acute chest syndrome (chest pain, fever, respiratory distress)",
+        "Stroke (neurological deficits)",
+        "Priapism (painful prolonged erection)"
+      ],
+      "redFlags": [
+        "Severe chest pain or difficulty breathing",
+        "High fever (indicative of infection)",
+        "Neurological symptoms (suggestive of stroke)",
+        "Severe abdominal pain (possible splenic sequestration)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Peripheral blood smear",
+        "Hemoglobin electrophoresis"
+      ],
+      "secondLine": [
+        "Reticulocyte count",
+        "Liver function tests",
+        "Bilirubin levels"
+      ],
+      "specialistTests": [
+        "Genetic testing for sickle cell trait or disease",
+        "MRI of the brain (to assess for silent strokes)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by hemoglobin electrophoresis showing the presence of hemoglobin S and/or the absence of normal hemoglobin A.",
+      "differentials": [
+        "Thalassemia",
+        "Hereditary spherocytosis",
+        "Autoimmune hemolytic anemia",
+        "Acute leukemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Hydration (IV fluids)",
+          "Pain management (opioids, NSAIDs)",
+          "Oxygen therapy if hypoxic"
+        ],
+        "secondLine": [
+          "Transfusion (if severe anemia or acute chest syndrome)",
+          "Antibiotics (if infection suspected)"
+        ],
+        "procedures": [
+          "Exchange transfusion (for severe complications)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Hydroxyurea (to reduce pain crises and acute chest syndrome)",
+          "Regular blood transfusions (for severe cases)"
+        ],
+        "secondLine": [
+          "Folic acid supplementation",
+          "Penicillin prophylaxis (in children)"
+        ],
+        "monitoring": [
+          "Regular follow-up for growth and development",
+          "Screening for complications (e.g., stroke, pulmonary hypertension)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Hydroxyurea",
+          "mechanism": "Stimulates fetal hemoglobin (HbF) production, reducing sickling and hemolysis.",
+          "dosing": "Start at 15 mg/kg/day, increase to 20 mg/kg/day as tolerated.",
+          "sideEffects": "Bone marrow suppression, gastrointestinal upset, skin changes.",
+          "notes": "Monitor blood counts regularly; contraindicated in pregnancy."
+        },
+        {
+          "name": "Folic acid",
+          "mechanism": "Supports red blood cell production.",
+          "dosing": "1 mg daily.",
+          "sideEffects": "Generally well tolerated; high doses can cause gastrointestinal upset.",
+          "notes": "Essential in patients with hemolytic anemia."
+        },
+        {
+          "name": "Penicillin",
+          "mechanism": "Antibacterial agent to prevent infections.",
+          "dosing": "125 mg twice daily (up to age 3), 250 mg twice daily (ages 3-5).",
+          "sideEffects": "Allergic reactions, gastrointestinal upset.",
+          "notes": "Start prophylaxis from 2 months of age until at least 5 years."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Exchange transfusion",
+          "description": "A procedure where a patient's blood is removed and replaced with donor blood to reduce the percentage of sickle cells.",
+          "indications": "Severe anemia, acute chest syndrome, stroke prevention.",
+          "risks": "Infection, transfusion reactions, electrolyte imbalances."
+        }
+      ]
+    },
+    "prognosis": "With appropriate management, individuals with SCD can lead relatively normal lives, but they are at risk for various complications that can affect life expectancy. Regular follow-up and preventive care are essential.",
+    "complications": [
+      "Acute chest syndrome",
+      "Stroke",
+      "Pulmonary hypertension",
+      "Avascular necrosis of bones",
+      "Leg ulcers",
+      "Infections (due to splenic dysfunction)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of SCD, initiate management for pain crises, and understand the importance of preventive care and monitoring for complications. They should also be aware of when to escalate care to a specialist.",
+    "escalation": "Refer to a hematologist for severe cases, complications such as acute chest syndrome, or if the patient is not responding to standard management.",
+    "keySafetyConsiderations": "Ensure adequate hydration and pain control during crises. Monitor for signs of infection and complications. Educate patients and families about recognizing red flags and when to seek urgent care."
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "pyloric_stenosis",
+  "name": "Pyloric stenosis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:02:01.792586",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pyloric stenosis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPyloric stenosis is a condition in infants characterized by the narrowing of the pylorus, the opening from the stomach into the small intestine, leading to gastric outlet obstruction.\n\n### Epidemiology\nPyloric stenosis occurs in approximately 2-4 per 1000 live births, with a higher prevalence in males (3-4 times more common) and in first-born children. It typically presents between 3-12 weeks of age.\n\n### Essential Pathophysiology\nThe exact cause of pyloric stenosis is unknown, but it is thought to involve hypertrophy of the pyloric muscle, leading to narrowing of the pyloric channel. This results in delayed gastric emptying and subsequent projectile vomiting.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Projectile vomiting after feeding\n- Dehydration\n- Hunger soon after vomiting\n- Constipation\n\n### Key Signs\n- Palpable 'olive' mass in the right upper quadrant\n- Dehydration signs (dry mucous membranes, decreased skin turgor)\n- Electrolyte imbalances (hypochloremic metabolic alkalosis)\n\n### Atypical Presentations\n- Older infants presenting with less severe symptoms\n- Failure to thrive without classic symptoms\n\n### Red Flags Requiring Immediate Action\n- Severe dehydration\n- Electrolyte imbalances\n- Persistent vomiting despite feeding\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Abdominal ultrasound (to visualize the thickened pylorus)\n- Electrolyte panel (to assess for dehydration and metabolic alkalosis)\n\n### Second-line Investigations\n- Upper gastrointestinal series (to assess for obstruction)\n\n### Specialist Tests\n- Endoscopy (rarely needed, but can be used for diagnosis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily based on clinical presentation and confirmed by abdominal ultrasound showing a thickened pylorus (muscle wall thickness >4mm and channel length >14mm).\n\n### Key Differential Diagnoses to Exclude\n- Gastroesophageal reflux disease (GERD)\n- Intestinal obstruction (e.g., malrotation)\n- Infection (e.g., gastroenteritis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Fluid resuscitation (IV fluids)\n- Electrolyte correction (especially potassium and chloride)\n\n#### Second-line Treatments\n- NPO (nothing by mouth) until surgery\n\n#### Emergency Procedures\n- Pyloromyotomy (surgical procedure to relieve the obstruction)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Surgical intervention (pyloromyotomy) is definitive treatment\n\n#### Second-line Treatments\n- Nutritional support (if needed pre-operatively)\n\n#### Monitoring Requirements\n- Post-operative monitoring for complications (e.g., infection, dehydration)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ondansetron\n- **Mechanism of Action**: 5-HT3 receptor antagonist used to prevent nausea and vomiting\n- **Typical Dosing Range**: 0.1 mg/kg IV or PO, max 4 mg\n- **Key Side Effects/Contraindications**: Headache, constipation, dizziness\n- **When to Use vs. Alternatives**: Useful in managing vomiting pre-operatively.\n\n#### IV fluids (e.g., Normal Saline, D5W)\n- **Mechanism of Action**: Rehydration and electrolyte replacement\n- **Typical Dosing Range**: Based on clinical assessment and electrolyte levels\n- **Key Side Effects/Contraindications**: Fluid overload, electrolyte imbalances\n- **When to Use vs. Alternatives**: Careful monitoring of fluid balance is essential.\n\n### Procedures\n\n#### Pyloromyotomy\n- **What it Involves**: Surgical procedure where the thickened pyloric muscle is split to relieve the obstruction.\n- **Indications**: Confirmed diagnosis of pyloric stenosis with significant symptoms.\n- **Key Risks/Complications**: Infection, bleeding, perforation, post-operative vomiting.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for infants undergoing pyloromyotomy is excellent, with most infants recovering fully and returning to normal feeding within a few days.\n\n### Important Complications to Watch For\n- Dehydration\n- Electrolyte imbalances\n- Post-operative complications (infection, delayed gastric emptying)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize the signs and symptoms of pyloric stenosis, initiate appropriate investigations, manage fluid and electrolyte imbalances, and prepare the patient for surgical intervention.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of severe dehydration, electrolyte imbalances, or if the infant is not responding to initial management, escalate to a pediatric surgeon or senior clinician immediately.\n\n### Key Safety Considerations\nEnsure accurate assessment of hydration status and electrolyte levels. Monitor for signs of complications post-operatively, and provide clear instructions for follow-up care.\n",
+  "content": {
+    "overview": {
+      "definition": "Pyloric stenosis is a condition in infants characterized by the narrowing of the pylorus, the opening from the stomach into the small intestine, leading to gastric outlet obstruction.",
+      "epidemiology": "Pyloric stenosis occurs in approximately 2-4 per 1000 live births, with a higher prevalence in males (3-4 times more common) and in first-born children. It typically presents between 3-12 weeks of age.",
+      "pathophysiology": "The exact cause of pyloric stenosis is unknown, but it is thought to involve hypertrophy of the pyloric muscle, leading to narrowing of the pyloric channel. This results in delayed gastric emptying and subsequent projectile vomiting."
+    },
+    "recognition": {
+      "symptoms": [
+        "Projectile vomiting after feeding",
+        "Dehydration",
+        "Hunger soon after vomiting",
+        "Constipation"
+      ],
+      "signs": [
+        "Palpable 'olive' mass in the right upper quadrant",
+        "Dehydration signs (dry mucous membranes, decreased skin turgor)",
+        "Electrolyte imbalances (hypochloremic metabolic alkalosis)"
+      ],
+      "atypicalPresentations": [
+        "Older infants presenting with less severe symptoms",
+        "Failure to thrive without classic symptoms"
+      ],
+      "redFlags": [
+        "Severe dehydration",
+        "Electrolyte imbalances",
+        "Persistent vomiting despite feeding"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Abdominal ultrasound (to visualize the thickened pylorus)",
+        "Electrolyte panel (to assess for dehydration and metabolic alkalosis)"
+      ],
+      "secondLine": [
+        "Upper gastrointestinal series (to assess for obstruction)"
+      ],
+      "specialistTests": [
+        "Endoscopy (rarely needed, but can be used for diagnosis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily based on clinical presentation and confirmed by abdominal ultrasound showing a thickened pylorus (muscle wall thickness >4mm and channel length >14mm).",
+      "differentials": [
+        "Gastroesophageal reflux disease (GERD)",
+        "Intestinal obstruction (e.g., malrotation)",
+        "Infection (e.g., gastroenteritis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Fluid resuscitation (IV fluids)",
+          "Electrolyte correction (especially potassium and chloride)"
+        ],
+        "secondLine": [
+          "NPO (nothing by mouth) until surgery"
+        ],
+        "procedures": [
+          "Pyloromyotomy (surgical procedure to relieve the obstruction)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Surgical intervention (pyloromyotomy) is definitive treatment"
+        ],
+        "secondLine": [
+          "Nutritional support (if needed pre-operatively)"
+        ],
+        "monitoring": [
+          "Post-operative monitoring for complications (e.g., infection, dehydration)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ondansetron",
+          "mechanism": "5-HT3 receptor antagonist used to prevent nausea and vomiting",
+          "dosing": "0.1 mg/kg IV or PO, max 4 mg",
+          "sideEffects": "Headache, constipation, dizziness",
+          "notes": "Useful in managing vomiting pre-operatively."
+        },
+        {
+          "name": "IV fluids (e.g., Normal Saline, D5W)",
+          "mechanism": "Rehydration and electrolyte replacement",
+          "dosing": "Based on clinical assessment and electrolyte levels",
+          "sideEffects": "Fluid overload, electrolyte imbalances",
+          "notes": "Careful monitoring of fluid balance is essential."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Pyloromyotomy",
+          "description": "Surgical procedure where the thickened pyloric muscle is split to relieve the obstruction.",
+          "indications": "Confirmed diagnosis of pyloric stenosis with significant symptoms.",
+          "risks": "Infection, bleeding, perforation, post-operative vomiting."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for infants undergoing pyloromyotomy is excellent, with most infants recovering fully and returning to normal feeding within a few days.",
+    "complications": [
+      "Dehydration",
+      "Electrolyte imbalances",
+      "Post-operative complications (infection, delayed gastric emptying)"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize the signs and symptoms of pyloric stenosis, initiate appropriate investigations, manage fluid and electrolyte imbalances, and prepare the patient for surgical intervention.",
+    "escalation": "If there are signs of severe dehydration, electrolyte imbalances, or if the infant is not responding to initial management, escalate to a pediatric surgeon or senior clinician immediately.",
+    "keySafetyConsiderations": "Ensure accurate assessment of hydration status and electrolyte levels. Monitor for signs of complications post-operatively, and provide clear instructions for follow-up care."
+  }
+}

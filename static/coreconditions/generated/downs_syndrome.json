@@ -1,0 +1,125 @@
+{
+  "id": "downs_syndrome",
+  "name": "Downs syndrome",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:03:23.834500",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Downs syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDown syndrome, also known as Trisomy 21, is a genetic disorder caused by the presence of an extra copy of chromosome 21, leading to developmental and physical challenges.\n\n### Epidemiology\nDown syndrome occurs in approximately 1 in 700 live births, with the incidence increasing with maternal age. It is one of the most common chromosomal disorders.\n\n### Essential Pathophysiology\nThe extra chromosome 21 results in an overexpression of genes located on this chromosome, leading to the characteristic features and associated health issues seen in individuals with Down syndrome.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Hypotonia (decreased muscle tone)\n- Delayed developmental milestones\n- Intellectual disability\n- Speech and language delays\n\n### Key Signs\n- Characteristic facial features (flat facial profile, slanted eyes, epicanthic folds)\n- Single transverse palmar crease\n- Short stature\n- Protruding tongue\n\n### Atypical Presentations\n- Mild intellectual disability\n- Late presentation of congenital heart defects\n\n### Red Flags Requiring Immediate Action\n- Failure to thrive\n- Severe developmental delays\n- Signs of congenital heart disease (e.g., cyanosis, murmur)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Karyotyping (chromosomal analysis)\n- Clinical assessment and history taking\n\n### Second-line Investigations\n- Echocardiogram (to assess for congenital heart defects)\n- Thyroid function tests (to check for hypothyroidism)\n\n### Specialist Tests\n- Genetic counseling and testing for family members\n- Audiology assessment (hearing tests)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of Down syndrome is confirmed through karyotyping, which reveals the presence of an extra chromosome 21.\n\n### Key Differential Diagnoses to Exclude\n- Other genetic syndromes (e.g., Turner syndrome, Klinefelter syndrome)\n- Developmental delay due to environmental factors\n- Autism spectrum disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care for any acute medical issues (e.g., respiratory infections)\n- Nutritional support if failure to thrive is present\n\n#### Second-line Treatments\n- Referral to pediatric specialists (e.g., cardiology, endocrinology) for associated conditions\n\n#### Emergency Procedures\n- Surgical intervention for congenital heart defects (if present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Early intervention programs (speech therapy, physical therapy)\n- Regular monitoring of growth and development\n\n#### Second-line Treatments\n- Educational support and individualized education plans (IEPs)\n- Psychological support for families\n\n#### Monitoring Requirements\n- Regular follow-up for developmental milestones\n- Screening for associated conditions (e.g., hearing, vision, thyroid)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Levothyroxine\n- **Mechanism of Action**: Synthetic thyroid hormone used to treat hypothyroidism, which is common in Down syndrome.\n- **Typical Dosing Range**: Start with 1.6-1.8 mcg/kg/day, adjusted based on TSH levels.\n- **Key Side Effects/Contraindications**: Hyperthyroidism symptoms (e.g., palpitations, weight loss), allergic reactions.\n- **When to Use vs. Alternatives**: Monitor TSH and free T4 levels regularly.\n\n#### Antibiotics (e.g., Amoxicillin)\n- **Mechanism of Action**: Used to treat infections, which individuals with Down syndrome are more susceptible to.\n- **Typical Dosing Range**: Amoxicillin 20-40 mg/kg/day divided into two or three doses.\n- **Key Side Effects/Contraindications**: Diarrhea, allergic reactions, rash.\n- **When to Use vs. Alternatives**: Consider prophylactic antibiotics for dental procedures if indicated.\n\n### Procedures\n\n#### Cardiac surgery\n- **What it Involves**: Surgical correction of congenital heart defects (e.g., atrioventricular septal defect).\n- **Indications**: Presence of significant congenital heart defects causing symptoms or hemodynamic compromise.\n- **Key Risks/Complications**: Anesthesia risks, bleeding, infection, arrhythmias.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early intervention and appropriate management, individuals with Down syndrome can lead fulfilling lives, but they may have a shorter life expectancy and are at risk for various health complications.\n\n### Important Complications to Watch For\n- Congenital heart defects\n- Hypothyroidism\n- Hearing loss\n- Vision problems (e.g., cataracts)\n- Increased risk of leukemia\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs of Down syndrome, provide supportive care, coordinate referrals to specialists, and educate families about the condition and available resources.\n\n### When to Escalate to Senior/Specialist\nRefer to pediatric specialists for any acute medical issues, developmental concerns, or if there are signs of significant comorbidities.\n\n### Key Safety Considerations\nEnsure regular monitoring for associated conditions, provide appropriate vaccinations, and educate families on recognizing signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Down syndrome, also known as Trisomy 21, is a genetic disorder caused by the presence of an extra copy of chromosome 21, leading to developmental and physical challenges.",
+      "epidemiology": "Down syndrome occurs in approximately 1 in 700 live births, with the incidence increasing with maternal age. It is one of the most common chromosomal disorders.",
+      "pathophysiology": "The extra chromosome 21 results in an overexpression of genes located on this chromosome, leading to the characteristic features and associated health issues seen in individuals with Down syndrome."
+    },
+    "recognition": {
+      "symptoms": [
+        "Hypotonia (decreased muscle tone)",
+        "Delayed developmental milestones",
+        "Intellectual disability",
+        "Speech and language delays"
+      ],
+      "signs": [
+        "Characteristic facial features (flat facial profile, slanted eyes, epicanthic folds)",
+        "Single transverse palmar crease",
+        "Short stature",
+        "Protruding tongue"
+      ],
+      "atypicalPresentations": [
+        "Mild intellectual disability",
+        "Late presentation of congenital heart defects"
+      ],
+      "redFlags": [
+        "Failure to thrive",
+        "Severe developmental delays",
+        "Signs of congenital heart disease (e.g., cyanosis, murmur)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Karyotyping (chromosomal analysis)",
+        "Clinical assessment and history taking"
+      ],
+      "secondLine": [
+        "Echocardiogram (to assess for congenital heart defects)",
+        "Thyroid function tests (to check for hypothyroidism)"
+      ],
+      "specialistTests": [
+        "Genetic counseling and testing for family members",
+        "Audiology assessment (hearing tests)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of Down syndrome is confirmed through karyotyping, which reveals the presence of an extra chromosome 21.",
+      "differentials": [
+        "Other genetic syndromes (e.g., Turner syndrome, Klinefelter syndrome)",
+        "Developmental delay due to environmental factors",
+        "Autism spectrum disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care for any acute medical issues (e.g., respiratory infections)",
+          "Nutritional support if failure to thrive is present"
+        ],
+        "secondLine": [
+          "Referral to pediatric specialists (e.g., cardiology, endocrinology) for associated conditions"
+        ],
+        "procedures": [
+          "Surgical intervention for congenital heart defects (if present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Early intervention programs (speech therapy, physical therapy)",
+          "Regular monitoring of growth and development"
+        ],
+        "secondLine": [
+          "Educational support and individualized education plans (IEPs)",
+          "Psychological support for families"
+        ],
+        "monitoring": [
+          "Regular follow-up for developmental milestones",
+          "Screening for associated conditions (e.g., hearing, vision, thyroid)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Levothyroxine",
+          "mechanism": "Synthetic thyroid hormone used to treat hypothyroidism, which is common in Down syndrome.",
+          "dosing": "Start with 1.6-1.8 mcg/kg/day, adjusted based on TSH levels.",
+          "sideEffects": "Hyperthyroidism symptoms (e.g., palpitations, weight loss), allergic reactions.",
+          "notes": "Monitor TSH and free T4 levels regularly."
+        },
+        {
+          "name": "Antibiotics (e.g., Amoxicillin)",
+          "mechanism": "Used to treat infections, which individuals with Down syndrome are more susceptible to.",
+          "dosing": "Amoxicillin 20-40 mg/kg/day divided into two or three doses.",
+          "sideEffects": "Diarrhea, allergic reactions, rash.",
+          "notes": "Consider prophylactic antibiotics for dental procedures if indicated."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardiac surgery",
+          "description": "Surgical correction of congenital heart defects (e.g., atrioventricular septal defect).",
+          "indications": "Presence of significant congenital heart defects causing symptoms or hemodynamic compromise.",
+          "risks": "Anesthesia risks, bleeding, infection, arrhythmias."
+        }
+      ]
+    },
+    "prognosis": "With early intervention and appropriate management, individuals with Down syndrome can lead fulfilling lives, but they may have a shorter life expectancy and are at risk for various health complications.",
+    "complications": [
+      "Congenital heart defects",
+      "Hypothyroidism",
+      "Hearing loss",
+      "Vision problems (e.g., cataracts)",
+      "Increased risk of leukemia"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs of Down syndrome, provide supportive care, coordinate referrals to specialists, and educate families about the condition and available resources.",
+    "escalation": "Refer to pediatric specialists for any acute medical issues, developmental concerns, or if there are signs of significant comorbidities.",
+    "keySafetyConsiderations": "Ensure regular monitoring for associated conditions, provide appropriate vaccinations, and educate families on recognizing signs of complications."
+  }
+}

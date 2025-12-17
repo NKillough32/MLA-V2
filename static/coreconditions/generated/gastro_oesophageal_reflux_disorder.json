@@ -1,0 +1,134 @@
+{
+  "id": "gastro_oesophageal_reflux_disorder",
+  "name": "Gastro-oesophageal reflux disorder",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:58:05.064529",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Gastro-oesophageal reflux disorder: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nGastro-oesophageal reflux disorder (GORD) is a condition characterized by the abnormal reflux of gastric contents into the oesophagus, leading to symptoms and/or complications.\n\n### Epidemiology\nGORD is common in infants and children, with an estimated prevalence of 1-8% in the paediatric population. It is more prevalent in infants under 12 months, with a peak incidence around 4 months of age.\n\n### Essential Pathophysiology\nGORD occurs due to a combination of factors including lower oesophageal sphincter (LOS) dysfunction, increased intra-abdominal pressure, and delayed gastric emptying. In infants, the immaturity of the LOS and the horizontal position during feeding contribute to reflux.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Regurgitation\n- Vomiting\n- Heartburn\n- Chest pain\n- Difficulty swallowing (dysphagia)\n- Coughing or wheezing (especially at night)\n- Poor weight gain\n\n### Key Signs\n- Irritability during feeding\n- Arching of the back (Sandifer's syndrome)\n- Failure to thrive\n- Respiratory symptoms (e.g., recurrent pneumonia)\n\n### Atypical Presentations\n- Chronic cough\n- Asthma-like symptoms\n- Recurrent otitis media\n- Dental erosion\n\n### Red Flags Requiring Immediate Action\n- Severe vomiting (projectile)\n- Blood in vomit or stool\n- Persistent abdominal pain\n- Failure to thrive\n- Signs of dehydration (e.g., dry mucous membranes, decreased urine output)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n- Trial of empirical treatment (e.g., dietary changes, acid suppression)\n\n### Second-line Investigations\n- pH probe study (24-hour oesophageal pH monitoring)\n- Upper gastrointestinal (GI) series (barium swallow)\n- Oesophagogastroduodenoscopy (OGD) if indicated\n\n### Specialist Tests\n- Oesophageal manometry (to assess motility)\n- Esophageal biopsy (if eosinophilic esophagitis is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on symptoms and response to treatment. In infants, a trial of dietary modification or acid suppression can support the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Eosinophilic esophagitis\n- Gastritis\n- Pyloric stenosis\n- Intestinal obstruction\n- Infections (e.g., gastroenteritis)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Positioning (keeping the infant upright after feeds)\n- Thickening feeds (for infants)\n- Dietary modifications (for older children)\n\n#### Second-line Treatments\n- Proton pump inhibitors (PPIs) or H2 receptor antagonists\n\n#### Emergency Procedures\n- Fundoplication (surgical intervention for severe cases)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (dietary changes, weight management)\n- Medications (PPIs, H2 blockers)\n\n#### Second-line Treatments\n- Referral to a gastroenterologist for further evaluation\n\n#### Monitoring Requirements\n- Regular follow-up to assess symptom control and medication side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Omeprazole\n- **Mechanism of Action**: Proton pump inhibitor that reduces gastric acid secretion.\n- **Typical Dosing Range**: Infants: 0.5-1 mg/kg once daily; Children: 10-20 mg once daily depending on age and weight.\n- **Key Side Effects/Contraindications**: Headache, nausea, abdominal pain, diarrhea, risk of Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Monitor for long-term use effects, including potential vitamin B12 deficiency.\n\n#### Ranitidine\n- **Mechanism of Action**: H2 receptor antagonist that decreases gastric acid production.\n- **Typical Dosing Range**: Infants: 1-2 mg/kg twice daily; Children: 75-150 mg twice daily depending on age and weight.\n- **Key Side Effects/Contraindications**: Headache, dizziness, gastrointestinal disturbances.\n- **When to Use vs. Alternatives**: Use with caution in renal impairment.\n\n### Procedures\n\n#### Fundoplication\n- **What it Involves**: Surgical procedure that wraps the top of the stomach around the lower oesophagus to prevent reflux.\n- **Indications**: Severe GORD unresponsive to medical management, significant complications, or poor quality of life.\n- **Key Risks/Complications**: Surgical risks include infection, bleeding, and complications related to anesthesia. Long-term risks include dysphagia and gas bloat syndrome. \n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost infants outgrow GORD by 12-18 months of age. Chronic cases may require ongoing management into childhood. Complications can include oesophagitis, strictures, and respiratory issues.\n\n### Important Complications to Watch For\n- Oesophagitis\n- Strictures\n- Barrett's oesophagus (rare in children)\n- Aspiration pneumonia\n- Dental erosion\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform thorough assessments, initiate appropriate investigations, and manage initial treatment. They should also educate families about lifestyle modifications and when to seek further medical attention.\n\n### When to Escalate to Senior/Specialist\nRefer to a paediatric gastroenterologist if there are red flags, lack of response to treatment, or if surgical intervention is considered.\n\n### Key Safety Considerations\nMonitor for signs of dehydration, especially in infants. Be aware of potential side effects of medications, particularly long-term use of PPIs. Ensure appropriate follow-up for ongoing management.\n",
+  "content": {
+    "overview": {
+      "definition": "Gastro-oesophageal reflux disorder (GORD) is a condition characterized by the abnormal reflux of gastric contents into the oesophagus, leading to symptoms and/or complications.",
+      "epidemiology": "GORD is common in infants and children, with an estimated prevalence of 1-8% in the paediatric population. It is more prevalent in infants under 12 months, with a peak incidence around 4 months of age.",
+      "pathophysiology": "GORD occurs due to a combination of factors including lower oesophageal sphincter (LOS) dysfunction, increased intra-abdominal pressure, and delayed gastric emptying. In infants, the immaturity of the LOS and the horizontal position during feeding contribute to reflux."
+    },
+    "recognition": {
+      "symptoms": [
+        "Regurgitation",
+        "Vomiting",
+        "Heartburn",
+        "Chest pain",
+        "Difficulty swallowing (dysphagia)",
+        "Coughing or wheezing (especially at night)",
+        "Poor weight gain"
+      ],
+      "signs": [
+        "Irritability during feeding",
+        "Arching of the back (Sandifer's syndrome)",
+        "Failure to thrive",
+        "Respiratory symptoms (e.g., recurrent pneumonia)"
+      ],
+      "atypicalPresentations": [
+        "Chronic cough",
+        "Asthma-like symptoms",
+        "Recurrent otitis media",
+        "Dental erosion"
+      ],
+      "redFlags": [
+        "Severe vomiting (projectile)",
+        "Blood in vomit or stool",
+        "Persistent abdominal pain",
+        "Failure to thrive",
+        "Signs of dehydration (e.g., dry mucous membranes, decreased urine output)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination",
+        "Trial of empirical treatment (e.g., dietary changes, acid suppression)"
+      ],
+      "secondLine": [
+        "pH probe study (24-hour oesophageal pH monitoring)",
+        "Upper gastrointestinal (GI) series (barium swallow)",
+        "Oesophagogastroduodenoscopy (OGD) if indicated"
+      ],
+      "specialistTests": [
+        "Oesophageal manometry (to assess motility)",
+        "Esophageal biopsy (if eosinophilic esophagitis is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on symptoms and response to treatment. In infants, a trial of dietary modification or acid suppression can support the diagnosis.",
+      "differentials": [
+        "Eosinophilic esophagitis",
+        "Gastritis",
+        "Pyloric stenosis",
+        "Intestinal obstruction",
+        "Infections (e.g., gastroenteritis)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Positioning (keeping the infant upright after feeds)",
+          "Thickening feeds (for infants)",
+          "Dietary modifications (for older children)"
+        ],
+        "secondLine": [
+          "Proton pump inhibitors (PPIs) or H2 receptor antagonists"
+        ],
+        "procedures": [
+          "Fundoplication (surgical intervention for severe cases)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (dietary changes, weight management)",
+          "Medications (PPIs, H2 blockers)"
+        ],
+        "secondLine": [
+          "Referral to a gastroenterologist for further evaluation"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess symptom control and medication side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Omeprazole",
+          "mechanism": "Proton pump inhibitor that reduces gastric acid secretion.",
+          "dosing": "Infants: 0.5-1 mg/kg once daily; Children: 10-20 mg once daily depending on age and weight.",
+          "sideEffects": "Headache, nausea, abdominal pain, diarrhea, risk of Clostridium difficile infection.",
+          "notes": "Monitor for long-term use effects, including potential vitamin B12 deficiency."
+        },
+        {
+          "name": "Ranitidine",
+          "mechanism": "H2 receptor antagonist that decreases gastric acid production.",
+          "dosing": "Infants: 1-2 mg/kg twice daily; Children: 75-150 mg twice daily depending on age and weight.",
+          "sideEffects": "Headache, dizziness, gastrointestinal disturbances.",
+          "notes": "Use with caution in renal impairment."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fundoplication",
+          "description": "Surgical procedure that wraps the top of the stomach around the lower oesophagus to prevent reflux.",
+          "indications": "Severe GORD unresponsive to medical management, significant complications, or poor quality of life.",
+          "risks": "Surgical risks include infection, bleeding, and complications related to anesthesia. Long-term risks include dysphagia and gas bloat syndrome. "
+        }
+      ]
+    },
+    "prognosis": "Most infants outgrow GORD by 12-18 months of age. Chronic cases may require ongoing management into childhood. Complications can include oesophagitis, strictures, and respiratory issues.",
+    "complications": [
+      "Oesophagitis",
+      "Strictures",
+      "Barrett's oesophagus (rare in children)",
+      "Aspiration pneumonia",
+      "Dental erosion"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform thorough assessments, initiate appropriate investigations, and manage initial treatment. They should also educate families about lifestyle modifications and when to seek further medical attention.",
+    "escalation": "Refer to a paediatric gastroenterologist if there are red flags, lack of response to treatment, or if surgical intervention is considered.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration, especially in infants. Be aware of potential side effects of medications, particularly long-term use of PPIs. Ensure appropriate follow-up for ongoing management."
+  }
+}

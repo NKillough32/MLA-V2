@@ -1,0 +1,137 @@
+{
+  "id": "inherited_muscular_dystrophies",
+  "name": "Inherited muscular dystrophies",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:06:00.408235",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Inherited muscular dystrophies: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nInherited muscular dystrophies (IMDs) are a group of genetic disorders characterized by progressive muscle weakness and degeneration due to mutations in genes responsible for muscle structure and function.\n\n### Epidemiology\nIMDs are relatively rare, with an estimated prevalence of 1 in 3,500 live births for Duchenne muscular dystrophy (DMD), the most common form. Other types, such as Becker muscular dystrophy (BMD) and limb-girdle muscular dystrophies (LGMD), have varying prevalence rates.\n\n### Essential Pathophysiology\nIMDs result from mutations in genes encoding proteins that are essential for muscle fiber integrity. For example, DMD is caused by mutations in the dystrophin gene, leading to muscle cell membrane instability, inflammation, and eventual muscle fiber necrosis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Progressive muscle weakness\n- Delayed motor milestones\n- Frequent falls\n- Difficulty climbing stairs or running\n- Calf hypertrophy\n- Gowers' sign (using hands to rise from the floor)\n\n### Key Signs\n- Muscle wasting\n- Contractures\n- Skeletal deformities (e.g., scoliosis)\n- Cardiomyopathy\n- Respiratory muscle weakness\n\n### Atypical Presentations\n- Milder symptoms in Becker muscular dystrophy\n- Onset in late childhood or adulthood in some limb-girdle muscular dystrophies\n- Cognitive impairment in some forms\n\n### Red Flags Requiring Immediate Action\n- Family history of muscular dystrophy\n- Rapid progression of weakness\n- Loss of ambulation before age 12 in DMD\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Creatine kinase (CK) levels\n- Genetic testing for known mutations\n- Muscle biopsy (if indicated)\n\n### Second-line Investigations\n- Electromyography (EMG)\n- MRI of muscles\n\n### Specialist Tests\n- Cardiac evaluation (ECG, echocardiogram)\n- Pulmonary function tests\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, family history, elevated CK levels, and confirmation through genetic testing or muscle biopsy.\n\n### Key Differential Diagnoses to Exclude\n- Spinal muscular atrophy\n- Myasthenia gravis\n- Congenital myopathies\n- Metabolic myopathies\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (physiotherapy, occupational therapy)\n- Corticosteroids (e.g., prednisone) to slow progression\n\n#### Second-line Treatments\n- Referral to a multidisciplinary team (neurology, cardiology, respiratory)\n\n#### Emergency Procedures\n- Surgical interventions for contractures or scoliosis\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular physiotherapy and exercise programs\n- Nutritional support\n\n#### Second-line Treatments\n- Assistive devices (wheelchairs, braces)\n- Cardiac and respiratory management\n\n#### Monitoring Requirements\n- Regular follow-up for cardiac and respiratory function\n- Monitoring for scoliosis progression\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Prednisone\n- **Mechanism of Action**: Anti-inflammatory; slows muscle degeneration\n- **Typical Dosing Range**: 0.75 mg/kg/day (max 60 mg/day)\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, osteoporosis, mood changes\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n#### Eteplirsen\n- **Mechanism of Action**: Exon-skipping therapy for DMD\n- **Typical Dosing Range**: 30 mg/kg IV weekly\n- **Key Side Effects/Contraindications**: Injection site reactions, headache, nausea\n- **When to Use vs. Alternatives**: Only for patients with specific mutations.\n\n### Procedures\n\n#### Surgical release of contractures\n- **What it Involves**: Surgical intervention to release tight muscles or tendons\n- **Indications**: Severe contractures affecting mobility\n- **Key Risks/Complications**: Infection, bleeding, anesthesia complications\n\n#### Spinal fusion\n- **What it Involves**: Surgical stabilization of the spine\n- **Indications**: Severe scoliosis\n- **Key Risks/Complications**: Infection, nerve injury, blood loss\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nPrognosis varies by type; DMD typically leads to loss of ambulation by age 12 and reduced life expectancy due to respiratory and cardiac complications. Becker muscular dystrophy has a more variable course with a longer life expectancy.\n\n### Important Complications to Watch For\n- Cardiomyopathy\n- Respiratory failure\n- Scoliosis\n- Contractures\n- Infections due to immobility\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms, coordinate referrals, and provide supportive care. They should also educate families about the condition and management options.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric neurologist for suspected muscular dystrophy, especially if there are red flags or atypical presentations. Escalate care to a multidisciplinary team for comprehensive management.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially corticosteroids. Ensure regular follow-up for cardiac and respiratory function, and provide education on recognizing signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Inherited muscular dystrophies (IMDs) are a group of genetic disorders characterized by progressive muscle weakness and degeneration due to mutations in genes responsible for muscle structure and function.",
+      "epidemiology": "IMDs are relatively rare, with an estimated prevalence of 1 in 3,500 live births for Duchenne muscular dystrophy (DMD), the most common form. Other types, such as Becker muscular dystrophy (BMD) and limb-girdle muscular dystrophies (LGMD), have varying prevalence rates.",
+      "pathophysiology": "IMDs result from mutations in genes encoding proteins that are essential for muscle fiber integrity. For example, DMD is caused by mutations in the dystrophin gene, leading to muscle cell membrane instability, inflammation, and eventual muscle fiber necrosis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Progressive muscle weakness",
+        "Delayed motor milestones",
+        "Frequent falls",
+        "Difficulty climbing stairs or running",
+        "Calf hypertrophy",
+        "Gowers' sign (using hands to rise from the floor)"
+      ],
+      "signs": [
+        "Muscle wasting",
+        "Contractures",
+        "Skeletal deformities (e.g., scoliosis)",
+        "Cardiomyopathy",
+        "Respiratory muscle weakness"
+      ],
+      "atypicalPresentations": [
+        "Milder symptoms in Becker muscular dystrophy",
+        "Onset in late childhood or adulthood in some limb-girdle muscular dystrophies",
+        "Cognitive impairment in some forms"
+      ],
+      "redFlags": [
+        "Family history of muscular dystrophy",
+        "Rapid progression of weakness",
+        "Loss of ambulation before age 12 in DMD"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Creatine kinase (CK) levels",
+        "Genetic testing for known mutations",
+        "Muscle biopsy (if indicated)"
+      ],
+      "secondLine": [
+        "Electromyography (EMG)",
+        "MRI of muscles"
+      ],
+      "specialistTests": [
+        "Cardiac evaluation (ECG, echocardiogram)",
+        "Pulmonary function tests"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, family history, elevated CK levels, and confirmation through genetic testing or muscle biopsy.",
+      "differentials": [
+        "Spinal muscular atrophy",
+        "Myasthenia gravis",
+        "Congenital myopathies",
+        "Metabolic myopathies"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (physiotherapy, occupational therapy)",
+          "Corticosteroids (e.g., prednisone) to slow progression"
+        ],
+        "secondLine": [
+          "Referral to a multidisciplinary team (neurology, cardiology, respiratory)"
+        ],
+        "procedures": [
+          "Surgical interventions for contractures or scoliosis"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular physiotherapy and exercise programs",
+          "Nutritional support"
+        ],
+        "secondLine": [
+          "Assistive devices (wheelchairs, braces)",
+          "Cardiac and respiratory management"
+        ],
+        "monitoring": [
+          "Regular follow-up for cardiac and respiratory function",
+          "Monitoring for scoliosis progression"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Prednisone",
+          "mechanism": "Anti-inflammatory; slows muscle degeneration",
+          "dosing": "0.75 mg/kg/day (max 60 mg/day)",
+          "sideEffects": "Weight gain, hypertension, osteoporosis, mood changes",
+          "notes": "Long-term use requires monitoring for side effects."
+        },
+        {
+          "name": "Eteplirsen",
+          "mechanism": "Exon-skipping therapy for DMD",
+          "dosing": "30 mg/kg IV weekly",
+          "sideEffects": "Injection site reactions, headache, nausea",
+          "notes": "Only for patients with specific mutations."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Surgical release of contractures",
+          "description": "Surgical intervention to release tight muscles or tendons",
+          "indications": "Severe contractures affecting mobility",
+          "risks": "Infection, bleeding, anesthesia complications"
+        },
+        {
+          "name": "Spinal fusion",
+          "description": "Surgical stabilization of the spine",
+          "indications": "Severe scoliosis",
+          "risks": "Infection, nerve injury, blood loss"
+        }
+      ]
+    },
+    "prognosis": "Prognosis varies by type; DMD typically leads to loss of ambulation by age 12 and reduced life expectancy due to respiratory and cardiac complications. Becker muscular dystrophy has a more variable course with a longer life expectancy.",
+    "complications": [
+      "Cardiomyopathy",
+      "Respiratory failure",
+      "Scoliosis",
+      "Contractures",
+      "Infections due to immobility"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms, coordinate referrals, and provide supportive care. They should also educate families about the condition and management options.",
+    "escalation": "Refer to a pediatric neurologist for suspected muscular dystrophy, especially if there are red flags or atypical presentations. Escalate care to a multidisciplinary team for comprehensive management.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially corticosteroids. Ensure regular follow-up for cardiac and respiratory function, and provide education on recognizing signs of complications."
+  }
+}

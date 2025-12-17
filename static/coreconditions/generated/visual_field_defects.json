@@ -1,0 +1,122 @@
+{
+  "id": "visual_field_defects",
+  "name": "Visual field defects",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:05:16.066400",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Visual field defects: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVisual field defects refer to partial or complete loss of vision in specific areas of the visual field, which can occur due to various underlying conditions affecting the optic pathways, retina, or visual cortex.\n\n### Epidemiology\nVisual field defects can occur in children due to congenital conditions, trauma, or acquired diseases. The prevalence varies based on the underlying cause, with congenital defects being more common in certain genetic syndromes.\n\n### Essential Pathophysiology\nVisual field defects arise from damage to the visual pathways, which include the retina, optic nerve, optic chiasm, optic tract, lateral geniculate nucleus, and visual cortex. Damage can be due to ischemia, trauma, tumors, or degenerative diseases.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Blurred vision\n- Difficulty seeing in certain directions\n- Loss of peripheral vision\n- Difficulty with depth perception\n\n### Key Signs\n- Defects in visual field during examination\n- Abnormalities in pupillary response\n- Strabismus or misalignment of the eyes\n\n### Atypical Presentations\n- Visual field defects in a child with developmental delay\n- Sudden onset of visual field loss after head trauma\n\n### Red Flags Requiring Immediate Action\n- Sudden loss of vision\n- Visual field loss associated with headache\n- Visual field defects in a child with a family history of eye disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Visual field testing (perimetry)\n- Fundoscopy to assess the retina and optic nerve\n\n### Second-line Investigations\n- MRI of the brain to assess for lesions affecting the visual pathways\n- CT scan if MRI is contraindicated\n\n### Specialist Tests\n- Electroretinography (ERG)\n- Visual evoked potentials (VEP)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical history, visual field testing results, and imaging studies to identify the underlying cause.\n\n### Key Differential Diagnoses to Exclude\n- Retinal detachment\n- Optic neuritis\n- Glaucoma\n- Brain tumors (e.g., glioma, meningioma)\n- Congenital optic nerve anomalies\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to ophthalmology or neurology depending on the suspected cause\n- Management of underlying conditions (e.g., steroids for optic neuritis)\n\n#### Second-line Treatments\n- Consideration of surgical intervention if a mass lesion is identified\n\n#### Emergency Procedures\n- Optic nerve decompression in cases of severe optic nerve compression\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of visual fields and visual acuity\n- Referral to low vision services for rehabilitation\n\n#### Second-line Treatments\n- Consideration of visual aids and occupational therapy\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess progression of visual field defects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Corticosteroids\n- **Mechanism of Action**: Reduce inflammation and edema in conditions like optic neuritis\n- **Typical Dosing Range**: Methylprednisolone 1 g IV daily for 3 days, followed by oral taper\n- **Key Side Effects/Contraindications**: Increased blood sugar, mood changes, gastrointestinal upset\n- **When to Use vs. Alternatives**: Monitor for side effects, especially in long-term use.\n\n#### Acetazolamide\n- **Mechanism of Action**: Reduces intraocular pressure in glaucoma\n- **Typical Dosing Range**: 250 mg orally twice daily\n- **Key Side Effects/Contraindications**: Nausea, fatigue, electrolyte imbalances\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes.\n\n### Procedures\n\n#### Optic nerve decompression\n- **What it Involves**: Surgical procedure to relieve pressure on the optic nerve\n- **Indications**: Severe optic nerve compression due to a mass or trauma\n- **Key Risks/Complications**: Infection, bleeding, further vision loss\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for visual field defects varies widely depending on the underlying cause. Some conditions may be reversible, while others may lead to permanent vision loss.\n\n### Important Complications to Watch For\n- Permanent visual impairment\n- Psychosocial impact due to loss of vision\n- Increased risk of falls and accidents\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize red flags, and refer appropriately to specialists. They should also provide education and support to families regarding visual field defects.\n\n### When to Escalate to Senior/Specialist\nImmediate referral to ophthalmology or neurology for sudden onset visual field defects or associated neurological symptoms.\n\n### Key Safety Considerations\nEnsure safety measures are in place for patients with significant visual field defects, including home safety assessments and mobility training.\n",
+  "content": {
+    "overview": {
+      "definition": "Visual field defects refer to partial or complete loss of vision in specific areas of the visual field, which can occur due to various underlying conditions affecting the optic pathways, retina, or visual cortex.",
+      "epidemiology": "Visual field defects can occur in children due to congenital conditions, trauma, or acquired diseases. The prevalence varies based on the underlying cause, with congenital defects being more common in certain genetic syndromes.",
+      "pathophysiology": "Visual field defects arise from damage to the visual pathways, which include the retina, optic nerve, optic chiasm, optic tract, lateral geniculate nucleus, and visual cortex. Damage can be due to ischemia, trauma, tumors, or degenerative diseases."
+    },
+    "recognition": {
+      "symptoms": [
+        "Blurred vision",
+        "Difficulty seeing in certain directions",
+        "Loss of peripheral vision",
+        "Difficulty with depth perception"
+      ],
+      "signs": [
+        "Defects in visual field during examination",
+        "Abnormalities in pupillary response",
+        "Strabismus or misalignment of the eyes"
+      ],
+      "atypicalPresentations": [
+        "Visual field defects in a child with developmental delay",
+        "Sudden onset of visual field loss after head trauma"
+      ],
+      "redFlags": [
+        "Sudden loss of vision",
+        "Visual field loss associated with headache",
+        "Visual field defects in a child with a family history of eye disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Visual field testing (perimetry)",
+        "Fundoscopy to assess the retina and optic nerve"
+      ],
+      "secondLine": [
+        "MRI of the brain to assess for lesions affecting the visual pathways",
+        "CT scan if MRI is contraindicated"
+      ],
+      "specialistTests": [
+        "Electroretinography (ERG)",
+        "Visual evoked potentials (VEP)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical history, visual field testing results, and imaging studies to identify the underlying cause.",
+      "differentials": [
+        "Retinal detachment",
+        "Optic neuritis",
+        "Glaucoma",
+        "Brain tumors (e.g., glioma, meningioma)",
+        "Congenital optic nerve anomalies"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to ophthalmology or neurology depending on the suspected cause",
+          "Management of underlying conditions (e.g., steroids for optic neuritis)"
+        ],
+        "secondLine": [
+          "Consideration of surgical intervention if a mass lesion is identified"
+        ],
+        "procedures": [
+          "Optic nerve decompression in cases of severe optic nerve compression"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of visual fields and visual acuity",
+          "Referral to low vision services for rehabilitation"
+        ],
+        "secondLine": [
+          "Consideration of visual aids and occupational therapy"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess progression of visual field defects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Reduce inflammation and edema in conditions like optic neuritis",
+          "dosing": "Methylprednisolone 1 g IV daily for 3 days, followed by oral taper",
+          "sideEffects": "Increased blood sugar, mood changes, gastrointestinal upset",
+          "notes": "Monitor for side effects, especially in long-term use."
+        },
+        {
+          "name": "Acetazolamide",
+          "mechanism": "Reduces intraocular pressure in glaucoma",
+          "dosing": "250 mg orally twice daily",
+          "sideEffects": "Nausea, fatigue, electrolyte imbalances",
+          "notes": "Monitor renal function and electrolytes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Optic nerve decompression",
+          "description": "Surgical procedure to relieve pressure on the optic nerve",
+          "indications": "Severe optic nerve compression due to a mass or trauma",
+          "risks": "Infection, bleeding, further vision loss"
+        }
+      ]
+    },
+    "prognosis": "The prognosis for visual field defects varies widely depending on the underlying cause. Some conditions may be reversible, while others may lead to permanent vision loss.",
+    "complications": [
+      "Permanent visual impairment",
+      "Psychosocial impact due to loss of vision",
+      "Increased risk of falls and accidents"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize red flags, and refer appropriately to specialists. They should also provide education and support to families regarding visual field defects.",
+    "escalation": "Immediate referral to ophthalmology or neurology for sudden onset visual field defects or associated neurological symptoms.",
+    "keySafetyConsiderations": "Ensure safety measures are in place for patients with significant visual field defects, including home safety assessments and mobility training."
+  }
+}

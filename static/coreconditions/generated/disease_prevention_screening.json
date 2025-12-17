@@ -1,0 +1,113 @@
+{
+  "id": "disease_prevention_screening",
+  "name": "Disease Prevention Screening",
+  "domains": [
+    "nan"
+  ],
+  "generatedAt": "2025-12-17T22:11:17.953872",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Disease Prevention Screening: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDisease prevention screening refers to the systematic examination of individuals to identify diseases or risk factors for diseases in asymptomatic populations, with the aim of early detection and intervention to reduce morbidity and mortality.\n\n### Epidemiology\nScreening programs vary by disease and population, but common examples include breast cancer screening (mammography), cervical cancer screening (Pap smear), and colorectal cancer screening (colonoscopy). The effectiveness of screening programs is influenced by factors such as age, sex, and risk factors prevalent in the population.\n\n### Essential Pathophysiology\nScreening aims to identify diseases at an early stage when they are more treatable. For example, in cancer screening, the pathophysiology involves detecting precancerous lesions or early-stage cancers before they progress to more advanced, symptomatic disease.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Asymptomatic in most cases, as screening targets healthy individuals.\n\n### Key Signs\n- No physical signs unless a disease is detected during screening.\n\n### Atypical Presentations\n- Some individuals may present with anxiety about potential findings.\n\n### Red Flags Requiring Immediate Action\n- Family history of screened diseases, previous abnormal screening results.\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Mammography for breast cancer in women aged 50-74 every 2 years.\n- Pap smear for cervical cancer in women aged 21-65 every 3 years or HPV testing every 5 years.\n- Colonoscopy for colorectal cancer starting at age 45, every 10 years.\n\n### Second-line Investigations\n- MRI for breast cancer screening in high-risk women.\n- HPV co-testing with Pap smear in women over 30.\n\n### Specialist Tests\n- Genetic testing for BRCA mutations in women with a family history of breast or ovarian cancer.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the results of screening tests and follow-up diagnostic procedures if abnormalities are found.\n\n### Key Differential Diagnoses to Exclude\n- False positives and false negatives in screening tests.\n- Other benign conditions that may mimic disease findings.\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Referral for diagnostic imaging or procedures based on abnormal screening results.\n\n#### Second-line Treatments\n- Consideration of biopsy if imaging suggests malignancy.\n\n#### Emergency Procedures\n- Colonoscopy for abnormal findings in stool tests.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up screenings as per guidelines based on initial findings.\n\n#### Second-line Treatments\n- Lifestyle modifications and risk factor management.\n\n#### Monitoring Requirements\n- Annual follow-up for high-risk individuals, adherence to screening schedules.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Tamoxifen\n- **Mechanism of Action**: Selective estrogen receptor modulator used in women at high risk for breast cancer.\n- **Typical Dosing Range**: 20 mg daily.\n- **Key Side Effects/Contraindications**: Hot flashes, risk of thromboembolic events, endometrial cancer.\n- **When to Use vs. Alternatives**: Consider in women with a strong family history of breast cancer.\n\n#### Aspirin\n- **Mechanism of Action**: Antiplatelet agent that may reduce colorectal cancer risk.\n- **Typical Dosing Range**: 81-325 mg daily, depending on cardiovascular risk.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, ulcers.\n- **When to Use vs. Alternatives**: Discuss risks vs. benefits in patients with a family history of colorectal cancer.\n\n### Procedures\n\n#### Colonoscopy\n- **What it Involves**: A procedure to visualize the colon and rectum using a flexible tube with a camera.\n- **Indications**: Abnormal stool tests, family history of colorectal cancer, or previous polyps.\n- **Key Risks/Complications**: Perforation, bleeding, adverse reactions to sedation.\n\n#### Mammography\n- **What it Involves**: X-ray imaging of the breast to detect tumors or abnormalities.\n- **Indications**: Routine screening in women aged 50-74, or younger in high-risk groups.\n- **Key Risks/Complications**: False positives, radiation exposure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for diseases detected through screening is generally better than for those diagnosed at a later stage, as early intervention can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Overdiagnosis leading to unnecessary treatment, psychological distress from false positives, complications from invasive follow-up procedures.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should educate patients about the importance of screening, assist in coordinating screening programs, and manage follow-up care for patients with abnormal results.\n\n### When to Escalate to Senior/Specialist\nRefer to specialists for abnormal screening results or if patients have significant risk factors that require further evaluation.\n\n### Key Safety Considerations\nEnsure informed consent for screening procedures, discuss potential risks and benefits, and maintain confidentiality of results.\n",
+  "content": {
+    "overview": {
+      "definition": "Disease prevention screening refers to the systematic examination of individuals to identify diseases or risk factors for diseases in asymptomatic populations, with the aim of early detection and intervention to reduce morbidity and mortality.",
+      "epidemiology": "Screening programs vary by disease and population, but common examples include breast cancer screening (mammography), cervical cancer screening (Pap smear), and colorectal cancer screening (colonoscopy). The effectiveness of screening programs is influenced by factors such as age, sex, and risk factors prevalent in the population.",
+      "pathophysiology": "Screening aims to identify diseases at an early stage when they are more treatable. For example, in cancer screening, the pathophysiology involves detecting precancerous lesions or early-stage cancers before they progress to more advanced, symptomatic disease."
+    },
+    "recognition": {
+      "symptoms": [
+        "Asymptomatic in most cases, as screening targets healthy individuals."
+      ],
+      "signs": [
+        "No physical signs unless a disease is detected during screening."
+      ],
+      "atypicalPresentations": [
+        "Some individuals may present with anxiety about potential findings."
+      ],
+      "redFlags": [
+        "Family history of screened diseases, previous abnormal screening results."
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Mammography for breast cancer in women aged 50-74 every 2 years.",
+        "Pap smear for cervical cancer in women aged 21-65 every 3 years or HPV testing every 5 years.",
+        "Colonoscopy for colorectal cancer starting at age 45, every 10 years."
+      ],
+      "secondLine": [
+        "MRI for breast cancer screening in high-risk women.",
+        "HPV co-testing with Pap smear in women over 30."
+      ],
+      "specialistTests": [
+        "Genetic testing for BRCA mutations in women with a family history of breast or ovarian cancer."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the results of screening tests and follow-up diagnostic procedures if abnormalities are found.",
+      "differentials": [
+        "False positives and false negatives in screening tests.",
+        "Other benign conditions that may mimic disease findings."
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Referral for diagnostic imaging or procedures based on abnormal screening results."
+        ],
+        "secondLine": [
+          "Consideration of biopsy if imaging suggests malignancy."
+        ],
+        "procedures": [
+          "Colonoscopy for abnormal findings in stool tests."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up screenings as per guidelines based on initial findings."
+        ],
+        "secondLine": [
+          "Lifestyle modifications and risk factor management."
+        ],
+        "monitoring": [
+          "Annual follow-up for high-risk individuals, adherence to screening schedules."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Tamoxifen",
+          "mechanism": "Selective estrogen receptor modulator used in women at high risk for breast cancer.",
+          "dosing": "20 mg daily.",
+          "sideEffects": "Hot flashes, risk of thromboembolic events, endometrial cancer.",
+          "notes": "Consider in women with a strong family history of breast cancer."
+        },
+        {
+          "name": "Aspirin",
+          "mechanism": "Antiplatelet agent that may reduce colorectal cancer risk.",
+          "dosing": "81-325 mg daily, depending on cardiovascular risk.",
+          "sideEffects": "Gastrointestinal bleeding, ulcers.",
+          "notes": "Discuss risks vs. benefits in patients with a family history of colorectal cancer."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Colonoscopy",
+          "description": "A procedure to visualize the colon and rectum using a flexible tube with a camera.",
+          "indications": "Abnormal stool tests, family history of colorectal cancer, or previous polyps.",
+          "risks": "Perforation, bleeding, adverse reactions to sedation."
+        },
+        {
+          "name": "Mammography",
+          "description": "X-ray imaging of the breast to detect tumors or abnormalities.",
+          "indications": "Routine screening in women aged 50-74, or younger in high-risk groups.",
+          "risks": "False positives, radiation exposure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for diseases detected through screening is generally better than for those diagnosed at a later stage, as early intervention can significantly improve outcomes.",
+    "complications": [
+      "Overdiagnosis leading to unnecessary treatment, psychological distress from false positives, complications from invasive follow-up procedures."
+    ],
+    "foundationDoctorRole": "Foundation doctors should educate patients about the importance of screening, assist in coordinating screening programs, and manage follow-up care for patients with abnormal results.",
+    "escalation": "Refer to specialists for abnormal screening results or if patients have significant risk factors that require further evaluation.",
+    "keySafetyConsiderations": "Ensure informed consent for screening procedures, discuss potential risks and benefits, and maintain confidentiality of results."
+  }
+}

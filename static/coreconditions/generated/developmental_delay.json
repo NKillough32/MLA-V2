@@ -1,0 +1,142 @@
+{
+  "id": "developmental_delay",
+  "name": "Developmental delay",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:03:06.321668",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Developmental delay: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDevelopmental delay is a condition characterized by a significant lag in a child's physical, cognitive, behavioral, emotional, or social development compared to normative age-related milestones.\n\n### Epidemiology\nDevelopmental delay affects approximately 1 in 6 children in the United States, with varying prevalence across different regions and populations. It is more common in boys than girls.\n\n### Essential Pathophysiology\nDevelopmental delay can arise from a variety of factors including genetic abnormalities, prenatal exposure to toxins, perinatal complications, and environmental influences. The underlying pathophysiology often involves disruptions in neurodevelopment, leading to impaired cognitive and motor skills.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Delayed speech and language skills\n- Difficulty with motor skills (e.g., crawling, walking)\n- Challenges in social interactions\n- Problems with self-care tasks (e.g., dressing, feeding)\n- Difficulty in understanding or following instructions\n\n### Key Signs\n- Failure to meet developmental milestones\n- Limited eye contact or social engagement\n- Poor coordination or balance\n- Inconsistent responses to stimuli\n- Lack of imaginative play\n\n### Atypical Presentations\n- Regression of previously acquired skills\n- Unusual behaviors (e.g., repetitive movements)\n- Severe behavioral issues (e.g., aggression, tantrums)\n\n### Red Flags Requiring Immediate Action\n- No babbling by 12 months\n- No single words by 16 months\n- No two-word phrases by 24 months\n- Loss of any language or social skills at any age\n- Inability to sit, crawl, or walk by expected ages\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Developmental screening tools (e.g., Ages and Stages Questionnaire, Denver Developmental Screening Test)\n- Comprehensive history and physical examination\n- Parental questionnaires\n\n### Second-line Investigations\n- Referral to a pediatrician or developmental specialist\n- Hearing and vision assessments\n- Neurodevelopmental assessments\n\n### Specialist Tests\n- Genetic testing (if indicated)\n- MRI or CT scan of the brain (if structural abnormalities are suspected)\n- Metabolic screening (if indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of significant delays in one or more areas of development (cognitive, motor, social, emotional, or adaptive) as compared to normative age-related milestones, confirmed through standardized assessments.\n\n### Key Differential Diagnoses to Exclude\n- Autism Spectrum Disorder\n- Intellectual Disability\n- Cerebral Palsy\n- Hearing Impairment\n- Vision Impairment\n- Lead Poisoning\n- Genetic Syndromes (e.g., Down syndrome)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate referral to a pediatric specialist for comprehensive evaluation\n- Supportive care and parental education\n\n#### Second-line Treatments\n- Engagement with early intervention services (e.g., speech therapy, occupational therapy)\n\n#### Emergency Procedures\n- Developmental assessments by specialists to determine specific needs and interventions\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Ongoing developmental support through therapy (speech, occupational, physical)\n- Family support and education\n\n#### Second-line Treatments\n- Consideration of special education services\n- Behavioral therapy for associated behavioral issues\n\n#### Monitoring Requirements\n- Regular follow-up appointments to assess progress and adjust interventions as needed\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methylphenidate\n- **Mechanism of Action**: Stimulant that increases dopamine and norepinephrine levels in the brain, improving attention and focus.\n- **Typical Dosing Range**: Start with 5 mg once or twice daily, titrate based on response and tolerability.\n- **Key Side Effects/Contraindications**: Insomnia, decreased appetite, anxiety, increased heart rate.\n- **When to Use vs. Alternatives**: Monitor for cardiovascular side effects and growth suppression.\n\n#### Selective Serotonin Reuptake Inhibitors (SSRIs)\n- **Mechanism of Action**: Increases serotonin levels in the brain, which can help with anxiety and mood regulation.\n- **Typical Dosing Range**: Fluoxetine: Start with 5-10 mg daily, titrate as needed.\n- **Key Side Effects/Contraindications**: Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in children.\n- **When to Use vs. Alternatives**: Consider referral to a psychiatrist for management.\n\n### Procedures\n\n#### Developmental Assessment\n- **What it Involves**: A comprehensive evaluation of a child's developmental progress across multiple domains (cognitive, motor, social, emotional).\n- **Indications**: To determine the extent of developmental delay and guide intervention strategies.\n- **Key Risks/Complications**: Minimal risks; may cause anxiety for the child and family.\n\n#### Genetic Testing\n- **What it Involves**: Testing for chromosomal abnormalities or genetic syndromes that may contribute to developmental delay.\n- **Indications**: When a genetic cause is suspected based on family history or clinical findings.\n- **Key Risks/Complications**: Potential for emotional distress from results; risk of incidental findings.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for children with developmental delay varies widely depending on the underlying cause, the severity of the delay, and the timeliness and effectiveness of interventions. Early intervention can significantly improve outcomes.\n\n### Important Complications to Watch For\n- Social isolation\n- Behavioral problems\n- Learning difficulties\n- Increased risk of mental health issues\n- Challenges in daily living skills\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs of developmental delay, conduct initial assessments, provide parental support, and refer to appropriate specialists for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nIf significant developmental delays are identified, escalate to a pediatrician or developmental specialist for comprehensive evaluation and management.\n\n### Key Safety Considerations\nEnsure regular monitoring of developmental progress, provide resources for parental support, and be aware of the potential for associated conditions (e.g., autism, learning disabilities) that may require additional interventions.\n",
+  "content": {
+    "overview": {
+      "definition": "Developmental delay is a condition characterized by a significant lag in a child's physical, cognitive, behavioral, emotional, or social development compared to normative age-related milestones.",
+      "epidemiology": "Developmental delay affects approximately 1 in 6 children in the United States, with varying prevalence across different regions and populations. It is more common in boys than girls.",
+      "pathophysiology": "Developmental delay can arise from a variety of factors including genetic abnormalities, prenatal exposure to toxins, perinatal complications, and environmental influences. The underlying pathophysiology often involves disruptions in neurodevelopment, leading to impaired cognitive and motor skills."
+    },
+    "recognition": {
+      "symptoms": [
+        "Delayed speech and language skills",
+        "Difficulty with motor skills (e.g., crawling, walking)",
+        "Challenges in social interactions",
+        "Problems with self-care tasks (e.g., dressing, feeding)",
+        "Difficulty in understanding or following instructions"
+      ],
+      "signs": [
+        "Failure to meet developmental milestones",
+        "Limited eye contact or social engagement",
+        "Poor coordination or balance",
+        "Inconsistent responses to stimuli",
+        "Lack of imaginative play"
+      ],
+      "atypicalPresentations": [
+        "Regression of previously acquired skills",
+        "Unusual behaviors (e.g., repetitive movements)",
+        "Severe behavioral issues (e.g., aggression, tantrums)"
+      ],
+      "redFlags": [
+        "No babbling by 12 months",
+        "No single words by 16 months",
+        "No two-word phrases by 24 months",
+        "Loss of any language or social skills at any age",
+        "Inability to sit, crawl, or walk by expected ages"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Developmental screening tools (e.g., Ages and Stages Questionnaire, Denver Developmental Screening Test)",
+        "Comprehensive history and physical examination",
+        "Parental questionnaires"
+      ],
+      "secondLine": [
+        "Referral to a pediatrician or developmental specialist",
+        "Hearing and vision assessments",
+        "Neurodevelopmental assessments"
+      ],
+      "specialistTests": [
+        "Genetic testing (if indicated)",
+        "MRI or CT scan of the brain (if structural abnormalities are suspected)",
+        "Metabolic screening (if indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of significant delays in one or more areas of development (cognitive, motor, social, emotional, or adaptive) as compared to normative age-related milestones, confirmed through standardized assessments.",
+      "differentials": [
+        "Autism Spectrum Disorder",
+        "Intellectual Disability",
+        "Cerebral Palsy",
+        "Hearing Impairment",
+        "Vision Impairment",
+        "Lead Poisoning",
+        "Genetic Syndromes (e.g., Down syndrome)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate referral to a pediatric specialist for comprehensive evaluation",
+          "Supportive care and parental education"
+        ],
+        "secondLine": [
+          "Engagement with early intervention services (e.g., speech therapy, occupational therapy)"
+        ],
+        "procedures": [
+          "Developmental assessments by specialists to determine specific needs and interventions"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Ongoing developmental support through therapy (speech, occupational, physical)",
+          "Family support and education"
+        ],
+        "secondLine": [
+          "Consideration of special education services",
+          "Behavioral therapy for associated behavioral issues"
+        ],
+        "monitoring": [
+          "Regular follow-up appointments to assess progress and adjust interventions as needed"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methylphenidate",
+          "mechanism": "Stimulant that increases dopamine and norepinephrine levels in the brain, improving attention and focus.",
+          "dosing": "Start with 5 mg once or twice daily, titrate based on response and tolerability.",
+          "sideEffects": "Insomnia, decreased appetite, anxiety, increased heart rate.",
+          "notes": "Monitor for cardiovascular side effects and growth suppression."
+        },
+        {
+          "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+          "mechanism": "Increases serotonin levels in the brain, which can help with anxiety and mood regulation.",
+          "dosing": "Fluoxetine: Start with 5-10 mg daily, titrate as needed.",
+          "sideEffects": "Nausea, insomnia, sexual dysfunction, increased risk of suicidal thoughts in children.",
+          "notes": "Consider referral to a psychiatrist for management."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Developmental Assessment",
+          "description": "A comprehensive evaluation of a child's developmental progress across multiple domains (cognitive, motor, social, emotional).",
+          "indications": "To determine the extent of developmental delay and guide intervention strategies.",
+          "risks": "Minimal risks; may cause anxiety for the child and family."
+        },
+        {
+          "name": "Genetic Testing",
+          "description": "Testing for chromosomal abnormalities or genetic syndromes that may contribute to developmental delay.",
+          "indications": "When a genetic cause is suspected based on family history or clinical findings.",
+          "risks": "Potential for emotional distress from results; risk of incidental findings."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for children with developmental delay varies widely depending on the underlying cause, the severity of the delay, and the timeliness and effectiveness of interventions. Early intervention can significantly improve outcomes.",
+    "complications": [
+      "Social isolation",
+      "Behavioral problems",
+      "Learning difficulties",
+      "Increased risk of mental health issues",
+      "Challenges in daily living skills"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs of developmental delay, conduct initial assessments, provide parental support, and refer to appropriate specialists for further evaluation and management.",
+    "escalation": "If significant developmental delays are identified, escalate to a pediatrician or developmental specialist for comprehensive evaluation and management.",
+    "keySafetyConsiderations": "Ensure regular monitoring of developmental progress, provide resources for parental support, and be aware of the potential for associated conditions (e.g., autism, learning disabilities) that may require additional interventions."
+  }
+}

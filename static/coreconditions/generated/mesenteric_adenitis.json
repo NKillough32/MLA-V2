@@ -1,0 +1,134 @@
+{
+  "id": "mesenteric_adenitis",
+  "name": "Mesenteric adenitis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:01:32.350245",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Mesenteric adenitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMesenteric adenitis is an inflammatory condition of the mesenteric lymph nodes, often seen in children, typically presenting with abdominal pain that mimics appendicitis.\n\n### Epidemiology\nIt is most common in children aged 2 to 12 years, with a peak incidence in those aged 5 to 10 years. It is often associated with viral infections, particularly gastroenteritis.\n\n### Essential Pathophysiology\nThe condition is usually a response to infection, leading to lymphadenopathy in the mesenteric lymph nodes. This can occur due to viral infections (e.g., adenovirus, cytomegalovirus) or bacterial infections (e.g., Yersinia enterocolitica). The inflamed lymph nodes can cause localized abdominal pain and may mimic appendicitis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Abdominal pain (often right lower quadrant)\n- Nausea\n- Vomiting\n- Diarrhea\n- Fever\n\n### Key Signs\n- Tenderness in the right lower quadrant\n- Guarding or rebound tenderness (less common)\n- Fever (low-grade)\n- Lymphadenopathy (may be palpable in some cases)\n\n### Atypical Presentations\n- Persistent abdominal pain without fever\n- Symptoms mimicking appendicitis but with a longer duration\n- Abdominal pain with respiratory symptoms (in cases of viral infection)\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Signs of peritonitis (rigidity, rebound tenderness)\n- Persistent vomiting\n- Signs of dehydration\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- C-reactive protein (CRP)\n- Abdominal ultrasound\n\n### Second-line Investigations\n- CT abdomen (if diagnosis is uncertain)\n- Stool tests for pathogens (if diarrhea is present)\n\n### Specialist Tests\n- Lymph node biopsy (rarely needed)\n- Serological tests for specific infections (e.g., Yersinia)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by imaging (ultrasound) showing enlarged mesenteric lymph nodes and exclusion of appendicitis.\n\n### Key Differential Diagnoses to Exclude\n- Appendicitis\n- Mesenteric ischemia\n- Intestinal obstruction\n- Gastroenteritis\n- Crohn's disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, analgesia)\n- Antipyretics for fever\n\n#### Second-line Treatments\n- Antibiotics if bacterial infection is suspected (e.g., ceftriaxone)\n\n#### Emergency Procedures\n- Surgical consultation if appendicitis is suspected and imaging is inconclusive.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on the self-limiting nature of the condition\n- Symptomatic management (analgesics, hydration)\n\n#### Second-line Treatments\n- Follow-up if symptoms persist beyond expected duration\n\n#### Monitoring Requirements\n- Regular follow-up to ensure resolution of symptoms and to monitor for complications.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ceftriaxone\n- **Mechanism of Action**: Broad-spectrum cephalosporin antibiotic effective against a variety of bacteria.\n- **Typical Dosing Range**: 50-100 mg/kg IV once daily (max 2 g) for 7-14 days depending on severity.\n- **Key Side Effects/Contraindications**: Diarrhea, rash, allergic reactions, potential for Clostridium difficile infection.\n- **When to Use vs. Alternatives**: Consider in cases where bacterial infection is suspected.\n\n#### Paracetamol (Acetaminophen)\n- **Mechanism of Action**: Analgesic and antipyretic.\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day).\n- **Key Side Effects/Contraindications**: Rarely causes liver toxicity in overdose.\n- **When to Use vs. Alternatives**: Use for symptomatic relief of fever and pain.\n\n### Procedures\n\n#### Ultrasound abdomen\n- **What it Involves**: Non-invasive imaging to assess for enlarged mesenteric lymph nodes and rule out appendicitis.\n- **Indications**: Suspected mesenteric adenitis or appendicitis.\n- **Key Risks/Complications**: Minimal; may require repeat imaging if findings are inconclusive.\n\n#### Laparoscopy\n- **What it Involves**: Minimally invasive surgical procedure to visualize the abdominal cavity.\n- **Indications**: Indeterminate cases where appendicitis is suspected but not confirmed by imaging.\n- **Key Risks/Complications**: Infection, bleeding, injury to surrounding organs.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis is generally excellent, with most children recovering fully within a few days to weeks. Recurrence is rare.\n\n### Important Complications to Watch For\n- Misdiagnosis leading to unnecessary surgery (e.g., appendectomy)\n- Infection or abscess formation in severe cases\n- Chronic abdominal pain in some cases\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, order appropriate investigations, provide supportive care, and recognize when to escalate care to surgical teams for suspected appendicitis.\n\n### When to Escalate to Senior/Specialist\nIf there are signs of severe abdominal pain, peritonitis, or if the patient does not improve with conservative management, escalate to a senior clinician or surgical team.\n\n### Key Safety Considerations\nEnsure thorough assessment to differentiate from appendicitis. Monitor for signs of deterioration, and maintain hydration and pain control.\n",
+  "content": {
+    "overview": {
+      "definition": "Mesenteric adenitis is an inflammatory condition of the mesenteric lymph nodes, often seen in children, typically presenting with abdominal pain that mimics appendicitis.",
+      "epidemiology": "It is most common in children aged 2 to 12 years, with a peak incidence in those aged 5 to 10 years. It is often associated with viral infections, particularly gastroenteritis.",
+      "pathophysiology": "The condition is usually a response to infection, leading to lymphadenopathy in the mesenteric lymph nodes. This can occur due to viral infections (e.g., adenovirus, cytomegalovirus) or bacterial infections (e.g., Yersinia enterocolitica). The inflamed lymph nodes can cause localized abdominal pain and may mimic appendicitis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Abdominal pain (often right lower quadrant)",
+        "Nausea",
+        "Vomiting",
+        "Diarrhea",
+        "Fever"
+      ],
+      "signs": [
+        "Tenderness in the right lower quadrant",
+        "Guarding or rebound tenderness (less common)",
+        "Fever (low-grade)",
+        "Lymphadenopathy (may be palpable in some cases)"
+      ],
+      "atypicalPresentations": [
+        "Persistent abdominal pain without fever",
+        "Symptoms mimicking appendicitis but with a longer duration",
+        "Abdominal pain with respiratory symptoms (in cases of viral infection)"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Signs of peritonitis (rigidity, rebound tenderness)",
+        "Persistent vomiting",
+        "Signs of dehydration",
+        "Altered mental status"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "C-reactive protein (CRP)",
+        "Abdominal ultrasound"
+      ],
+      "secondLine": [
+        "CT abdomen (if diagnosis is uncertain)",
+        "Stool tests for pathogens (if diarrhea is present)"
+      ],
+      "specialistTests": [
+        "Lymph node biopsy (rarely needed)",
+        "Serological tests for specific infections (e.g., Yersinia)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by imaging (ultrasound) showing enlarged mesenteric lymph nodes and exclusion of appendicitis.",
+      "differentials": [
+        "Appendicitis",
+        "Mesenteric ischemia",
+        "Intestinal obstruction",
+        "Gastroenteritis",
+        "Crohn's disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, analgesia)",
+          "Antipyretics for fever"
+        ],
+        "secondLine": [
+          "Antibiotics if bacterial infection is suspected (e.g., ceftriaxone)"
+        ],
+        "procedures": [
+          "Surgical consultation if appendicitis is suspected and imaging is inconclusive."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on the self-limiting nature of the condition",
+          "Symptomatic management (analgesics, hydration)"
+        ],
+        "secondLine": [
+          "Follow-up if symptoms persist beyond expected duration"
+        ],
+        "monitoring": [
+          "Regular follow-up to ensure resolution of symptoms and to monitor for complications."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Broad-spectrum cephalosporin antibiotic effective against a variety of bacteria.",
+          "dosing": "50-100 mg/kg IV once daily (max 2 g) for 7-14 days depending on severity.",
+          "sideEffects": "Diarrhea, rash, allergic reactions, potential for Clostridium difficile infection.",
+          "notes": "Consider in cases where bacterial infection is suspected."
+        },
+        {
+          "name": "Paracetamol (Acetaminophen)",
+          "mechanism": "Analgesic and antipyretic.",
+          "dosing": "15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day).",
+          "sideEffects": "Rarely causes liver toxicity in overdose.",
+          "notes": "Use for symptomatic relief of fever and pain."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ultrasound abdomen",
+          "description": "Non-invasive imaging to assess for enlarged mesenteric lymph nodes and rule out appendicitis.",
+          "indications": "Suspected mesenteric adenitis or appendicitis.",
+          "risks": "Minimal; may require repeat imaging if findings are inconclusive."
+        },
+        {
+          "name": "Laparoscopy",
+          "description": "Minimally invasive surgical procedure to visualize the abdominal cavity.",
+          "indications": "Indeterminate cases where appendicitis is suspected but not confirmed by imaging.",
+          "risks": "Infection, bleeding, injury to surrounding organs."
+        }
+      ]
+    },
+    "prognosis": "The prognosis is generally excellent, with most children recovering fully within a few days to weeks. Recurrence is rare.",
+    "complications": [
+      "Misdiagnosis leading to unnecessary surgery (e.g., appendectomy)",
+      "Infection or abscess formation in severe cases",
+      "Chronic abdominal pain in some cases"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, order appropriate investigations, provide supportive care, and recognize when to escalate care to surgical teams for suspected appendicitis.",
+    "escalation": "If there are signs of severe abdominal pain, peritonitis, or if the patient does not improve with conservative management, escalate to a senior clinician or surgical team.",
+    "keySafetyConsiderations": "Ensure thorough assessment to differentiate from appendicitis. Monitor for signs of deterioration, and maintain hydration and pain control."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "mumps",
+  "name": "Mumps",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:09:21.044838",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Mumps: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMumps is a viral infection caused by the mumps virus, characterized by swelling of the parotid glands, fever, and malaise. It primarily affects children but can occur in unvaccinated adults.\n\n### Epidemiology\nMumps incidence has significantly decreased in countries with widespread vaccination. However, outbreaks can still occur, particularly in communities with low vaccination rates. The disease is more common in children aged 5-14 years.\n\n### Essential Pathophysiology\nThe mumps virus is an RNA virus that primarily infects the parotid glands, leading to inflammation and swelling. It can also affect other organs, including the testes, ovaries, pancreas, and central nervous system.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fever\n- Headache\n- Muscle aches\n- Fatigue\n- Loss of appetite\n- Swelling of the parotid glands (parotitis)\n\n### Key Signs\n- Bilateral or unilateral parotid gland swelling\n- Tenderness over the parotid area\n- Fever (often >38°C)\n- Possible orchitis or oophoritis in older children and adults\n\n### Atypical Presentations\n- Mumps without parotitis (asymptomatic cases)\n- Meningitis or encephalitis\n- Orchitis in post-pubertal males\n\n### Red Flags Requiring Immediate Action\n- Severe headache or neck stiffness (possible meningitis)\n- High fever (>39°C)\n- Persistent vomiting\n- Severe abdominal pain (possible pancreatitis)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and physical examination\n- Serological testing for mumps IgM and IgG antibodies\n\n### Second-line Investigations\n- PCR testing of saliva or urine for mumps virus\n- Complete blood count (CBC) to check for leukocytosis\n\n### Specialist Tests\n- Lumbar puncture if meningitis is suspected (CSF analysis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by serological tests showing elevated mumps IgM or a significant rise in IgG titers. PCR confirmation is definitive.\n\n### Key Differential Diagnoses to Exclude\n- Viral parotitis (e.g., Coxsackie virus)\n- Bacterial parotitis (e.g., Staphylococcus aureus)\n- Sialadenitis\n- Salivary gland tumors\n- Other viral infections (e.g., influenza, rubella)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, analgesics)\n- Isolation to prevent spread\n\n#### Second-line Treatments\n- Antipyretics for fever\n- Cold compresses for swelling\n\n#### Emergency Procedures\n- None specific for mumps; supportive measures are key\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor for complications (e.g., orchitis, meningitis)\n\n#### Second-line Treatments\n- Referral to specialists if complications arise (e.g., urologist for orchitis)\n\n#### Monitoring Requirements\n- Regular follow-up for any long-term complications, especially in post-pubertal males\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic\n- **Typical Dosing Range**: 15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day)\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions\n- **When to Use vs. Alternatives**: Safe in children; monitor liver function in chronic use.\n\n#### Ibuprofen\n- **Mechanism of Action**: Non-steroidal anti-inflammatory drug (NSAID)\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours as needed (max 40 mg/kg/day)\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, allergic reactions\n- **When to Use vs. Alternatives**: Use with caution in dehydrated patients.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMumps is generally self-limiting, with most patients recovering fully. Complications can occur but are rare. Long-term sequelae are uncommon.\n\n### Important Complications to Watch For\n- Orchitis (inflammation of the testes)\n- Oophoritis (inflammation of the ovaries)\n- Meningitis\n- Encephalitis\n- Pancreatitis\n- Hearing loss (rare)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize symptoms of mumps, provide supportive care, educate families about vaccination, and refer to specialists if complications arise.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician if there are signs of severe complications (e.g., meningitis, orchitis) or if the patient is immunocompromised.\n\n### Key Safety Considerations\nEnsure vaccination status is up to date (MMR vaccine). Educate families on the importance of vaccination to prevent outbreaks. Monitor for complications and provide appropriate referrals.\n",
+  "content": {
+    "overview": {
+      "definition": "Mumps is a viral infection caused by the mumps virus, characterized by swelling of the parotid glands, fever, and malaise. It primarily affects children but can occur in unvaccinated adults.",
+      "epidemiology": "Mumps incidence has significantly decreased in countries with widespread vaccination. However, outbreaks can still occur, particularly in communities with low vaccination rates. The disease is more common in children aged 5-14 years.",
+      "pathophysiology": "The mumps virus is an RNA virus that primarily infects the parotid glands, leading to inflammation and swelling. It can also affect other organs, including the testes, ovaries, pancreas, and central nervous system."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fever",
+        "Headache",
+        "Muscle aches",
+        "Fatigue",
+        "Loss of appetite",
+        "Swelling of the parotid glands (parotitis)"
+      ],
+      "signs": [
+        "Bilateral or unilateral parotid gland swelling",
+        "Tenderness over the parotid area",
+        "Fever (often >38°C)",
+        "Possible orchitis or oophoritis in older children and adults"
+      ],
+      "atypicalPresentations": [
+        "Mumps without parotitis (asymptomatic cases)",
+        "Meningitis or encephalitis",
+        "Orchitis in post-pubertal males"
+      ],
+      "redFlags": [
+        "Severe headache or neck stiffness (possible meningitis)",
+        "High fever (>39°C)",
+        "Persistent vomiting",
+        "Severe abdominal pain (possible pancreatitis)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and physical examination",
+        "Serological testing for mumps IgM and IgG antibodies"
+      ],
+      "secondLine": [
+        "PCR testing of saliva or urine for mumps virus",
+        "Complete blood count (CBC) to check for leukocytosis"
+      ],
+      "specialistTests": [
+        "Lumbar puncture if meningitis is suspected (CSF analysis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by serological tests showing elevated mumps IgM or a significant rise in IgG titers. PCR confirmation is definitive.",
+      "differentials": [
+        "Viral parotitis (e.g., Coxsackie virus)",
+        "Bacterial parotitis (e.g., Staphylococcus aureus)",
+        "Sialadenitis",
+        "Salivary gland tumors",
+        "Other viral infections (e.g., influenza, rubella)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, analgesics)",
+          "Isolation to prevent spread"
+        ],
+        "secondLine": [
+          "Antipyretics for fever",
+          "Cold compresses for swelling"
+        ],
+        "procedures": [
+          "None specific for mumps; supportive measures are key"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor for complications (e.g., orchitis, meningitis)"
+        ],
+        "secondLine": [
+          "Referral to specialists if complications arise (e.g., urologist for orchitis)"
+        ],
+        "monitoring": [
+          "Regular follow-up for any long-term complications, especially in post-pubertal males"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic",
+          "dosing": "15 mg/kg every 4-6 hours as needed (max 60 mg/kg/day)",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions",
+          "notes": "Safe in children; monitor liver function in chronic use."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Non-steroidal anti-inflammatory drug (NSAID)",
+          "dosing": "10 mg/kg every 6-8 hours as needed (max 40 mg/kg/day)",
+          "sideEffects": "Gastrointestinal upset, renal impairment, allergic reactions",
+          "notes": "Use with caution in dehydrated patients."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Mumps is generally self-limiting, with most patients recovering fully. Complications can occur but are rare. Long-term sequelae are uncommon.",
+    "complications": [
+      "Orchitis (inflammation of the testes)",
+      "Oophoritis (inflammation of the ovaries)",
+      "Meningitis",
+      "Encephalitis",
+      "Pancreatitis",
+      "Hearing loss (rare)"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize symptoms of mumps, provide supportive care, educate families about vaccination, and refer to specialists if complications arise.",
+    "escalation": "Refer to a pediatrician if there are signs of severe complications (e.g., meningitis, orchitis) or if the patient is immunocompromised.",
+    "keySafetyConsiderations": "Ensure vaccination status is up to date (MMR vaccine). Educate families on the importance of vaccination to prevent outbreaks. Monitor for complications and provide appropriate referrals."
+  }
+}

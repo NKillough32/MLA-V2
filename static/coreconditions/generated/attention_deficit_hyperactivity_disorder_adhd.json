@@ -1,0 +1,116 @@
+{
+  "id": "attention_deficit_hyperactivity_disorder_adhd",
+  "name": "Attention deficit hyperactivity disorder (ADHD)",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:10:21.391784",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Attention deficit hyperactivity disorder (ADHD): Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAttention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning or development.\n\n### Epidemiology\nADHD affects approximately 5-10% of children worldwide, with a higher prevalence in males (2-3 times more common than females). Symptoms often persist into adulthood, affecting 2-5% of adults.\n\n### Essential Pathophysiology\nADHD is believed to involve dysregulation of neurotransmitters, particularly dopamine and norepinephrine, in the brain's prefrontal cortex and basal ganglia. Genetic factors, environmental influences, and brain structure abnormalities may also contribute.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Inattention (difficulty sustaining attention, careless mistakes)\n- Hyperactivity (fidgeting, inability to stay seated)\n- Impulsivity (interrupting others, difficulty waiting for turns)\n\n### Key Signs\n- Disorganization in tasks and activities\n- Frequent loss of items necessary for tasks\n- Difficulty following through on instructions\n\n### Atypical Presentations\n- Emotional dysregulation (mood swings, irritability)\n- Learning difficulties without hyperactivity\n\n### Red Flags Requiring Immediate Action\n- Significant academic underachievement\n- Frequent disciplinary issues at school\n- Family history of ADHD or other psychiatric disorders\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical interview with parents and teachers\n- Standardized ADHD rating scales (e.g., Conners' Rating Scales)\n\n### Second-line Investigations\n- Behavioral assessments\n- Cognitive testing (to assess executive function)\n\n### Specialist Tests\n- Neuropsychological testing (if learning difficulties are present)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on DSM-5 criteria, which require the presence of at least six symptoms of inattention and/or hyperactivity-impulsivity for at least six months, with symptoms present before age 12 and causing impairment in two or more settings (e.g., home, school).\n\n### Key Differential Diagnoses to Exclude\n- Oppositional Defiant Disorder (ODD)\n- Conduct Disorder (CD)\n- Anxiety Disorders\n- Learning Disabilities\n- Bipolar Disorder\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Psychoeducation for parents and child\n- Behavioral interventions (e.g., reward systems)\n\n#### Second-line Treatments\n- Consider referral to child psychologist or psychiatrist for behavioral therapy\n\n#### Emergency Procedures\n- None specific for acute management; focus on behavioral strategies\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Stimulant medications (e.g., methylphenidate)\n- Behavioral therapy\n\n#### Second-line Treatments\n- Non-stimulant medications (e.g., atomoxetine)\n- Parent training programs\n\n#### Monitoring Requirements\n- Regular follow-up to assess medication efficacy and side effects\n- Monitoring academic performance and behavioral changes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Methylphenidate\n- **Mechanism of Action**: Increases dopamine and norepinephrine levels in the brain\n- **Typical Dosing Range**: Start at 5 mg once or twice daily, may increase by 5 mg weekly; max 60 mg/day\n- **Key Side Effects/Contraindications**: Insomnia, decreased appetite, increased heart rate, anxiety\n- **When to Use vs. Alternatives**: Monitor growth in children; consider drug holidays.\n\n#### Atomoxetine\n- **Mechanism of Action**: Selective norepinephrine reuptake inhibitor\n- **Typical Dosing Range**: Start at 0.5 mg/kg/day, may increase to 1.2 mg/kg/day\n- **Key Side Effects/Contraindications**: Fatigue, decreased appetite, nausea, potential liver damage\n- **When to Use vs. Alternatives**: Non-stimulant option; may take several weeks to see full effect.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith appropriate management, many children with ADHD can lead successful lives. However, untreated ADHD can lead to academic failure, social difficulties, and increased risk of substance abuse in adolescence and adulthood.\n\n### Important Complications to Watch For\n- Co-occurring disorders (e.g., anxiety, depression)\n- Academic underachievement\n- Social difficulties\n- Increased risk of accidents and injuries\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of ADHD, conduct initial assessments, provide psychoeducation, and refer to specialists for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician or child psychiatrist if there are concerns about diagnosis, management, or if the child is not responding to initial interventions.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially cardiovascular effects; ensure regular follow-up to assess growth and development; consider the impact of ADHD on family dynamics and provide support resources.\n",
+  "content": {
+    "overview": {
+      "definition": "Attention Deficit Hyperactivity Disorder (ADHD) is a neurodevelopmental disorder characterized by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with functioning or development.",
+      "epidemiology": "ADHD affects approximately 5-10% of children worldwide, with a higher prevalence in males (2-3 times more common than females). Symptoms often persist into adulthood, affecting 2-5% of adults.",
+      "pathophysiology": "ADHD is believed to involve dysregulation of neurotransmitters, particularly dopamine and norepinephrine, in the brain's prefrontal cortex and basal ganglia. Genetic factors, environmental influences, and brain structure abnormalities may also contribute."
+    },
+    "recognition": {
+      "symptoms": [
+        "Inattention (difficulty sustaining attention, careless mistakes)",
+        "Hyperactivity (fidgeting, inability to stay seated)",
+        "Impulsivity (interrupting others, difficulty waiting for turns)"
+      ],
+      "signs": [
+        "Disorganization in tasks and activities",
+        "Frequent loss of items necessary for tasks",
+        "Difficulty following through on instructions"
+      ],
+      "atypicalPresentations": [
+        "Emotional dysregulation (mood swings, irritability)",
+        "Learning difficulties without hyperactivity"
+      ],
+      "redFlags": [
+        "Significant academic underachievement",
+        "Frequent disciplinary issues at school",
+        "Family history of ADHD or other psychiatric disorders"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical interview with parents and teachers",
+        "Standardized ADHD rating scales (e.g., Conners' Rating Scales)"
+      ],
+      "secondLine": [
+        "Behavioral assessments",
+        "Cognitive testing (to assess executive function)"
+      ],
+      "specialistTests": [
+        "Neuropsychological testing (if learning difficulties are present)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on DSM-5 criteria, which require the presence of at least six symptoms of inattention and/or hyperactivity-impulsivity for at least six months, with symptoms present before age 12 and causing impairment in two or more settings (e.g., home, school).",
+      "differentials": [
+        "Oppositional Defiant Disorder (ODD)",
+        "Conduct Disorder (CD)",
+        "Anxiety Disorders",
+        "Learning Disabilities",
+        "Bipolar Disorder"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Psychoeducation for parents and child",
+          "Behavioral interventions (e.g., reward systems)"
+        ],
+        "secondLine": [
+          "Consider referral to child psychologist or psychiatrist for behavioral therapy"
+        ],
+        "procedures": [
+          "None specific for acute management; focus on behavioral strategies"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Stimulant medications (e.g., methylphenidate)",
+          "Behavioral therapy"
+        ],
+        "secondLine": [
+          "Non-stimulant medications (e.g., atomoxetine)",
+          "Parent training programs"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess medication efficacy and side effects",
+          "Monitoring academic performance and behavioral changes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Methylphenidate",
+          "mechanism": "Increases dopamine and norepinephrine levels in the brain",
+          "dosing": "Start at 5 mg once or twice daily, may increase by 5 mg weekly; max 60 mg/day",
+          "sideEffects": "Insomnia, decreased appetite, increased heart rate, anxiety",
+          "notes": "Monitor growth in children; consider drug holidays."
+        },
+        {
+          "name": "Atomoxetine",
+          "mechanism": "Selective norepinephrine reuptake inhibitor",
+          "dosing": "Start at 0.5 mg/kg/day, may increase to 1.2 mg/kg/day",
+          "sideEffects": "Fatigue, decreased appetite, nausea, potential liver damage",
+          "notes": "Non-stimulant option; may take several weeks to see full effect."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "With appropriate management, many children with ADHD can lead successful lives. However, untreated ADHD can lead to academic failure, social difficulties, and increased risk of substance abuse in adolescence and adulthood.",
+    "complications": [
+      "Co-occurring disorders (e.g., anxiety, depression)",
+      "Academic underachievement",
+      "Social difficulties",
+      "Increased risk of accidents and injuries"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of ADHD, conduct initial assessments, provide psychoeducation, and refer to specialists for further evaluation and management.",
+    "escalation": "Refer to a pediatrician or child psychiatrist if there are concerns about diagnosis, management, or if the child is not responding to initial interventions.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially cardiovascular effects; ensure regular follow-up to assess growth and development; consider the impact of ADHD on family dynamics and provide support resources."
+  }
+}

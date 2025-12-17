@@ -1,0 +1,142 @@
+{
+  "id": "constipation",
+  "name": "Constipation",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:58:46.019033",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Constipation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nConstipation in children is defined as infrequent bowel movements, typically fewer than three times per week, or difficulty passing stools that may be hard, dry, or painful to pass.\n\n### Epidemiology\nConstipation affects approximately 3-30% of children at some point, with a higher prevalence in those aged 2-4 years. It is more common in boys than girls.\n\n### Essential Pathophysiology\nConstipation can result from a variety of factors including dietary habits (low fiber intake), inadequate fluid intake, lack of physical activity, and psychological factors (e.g., fear of using the toilet). It may also be due to underlying medical conditions such as hypothyroidism or neurological disorders.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Infrequent bowel movements (less than 3 times per week)\n- Hard, dry stools\n- Abdominal pain or discomfort\n- Bloating\n- Loss of appetite\n- Soiling (encopresis)\n\n### Key Signs\n- Abdominal distension\n- Fecal impaction on examination\n- Anal fissures or hemorrhoids\n- Decreased bowel sounds\n\n### Atypical Presentations\n- Failure to thrive\n- Irritability or behavioral changes\n- Urinary incontinence\n\n### Red Flags Requiring Immediate Action\n- Severe abdominal pain\n- Vomiting\n- Failure to thrive\n- Blood in stool\n- Onset after age 1 year without prior constipation history\n- Neurological signs (e.g., weakness, loss of reflexes)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- History and physical examination\n- Dietary assessment\n- Bristol stool chart\n\n### Second-line Investigations\n- Abdominal X-ray (to assess for fecal impaction)\n- Thyroid function tests (if indicated)\n\n### Specialist Tests\n- Anorectal manometry (if Hirschsprung's disease is suspected)\n- Colonoscopy (if alarm features are present)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the Rome IV criteria, which include two or more of the following: less than three bowel movements per week, at least one episode of fecal incontinence per week, history of painful or hard bowel movements, and presence of a large fecal mass in the rectum.\n\n### Key Differential Diagnoses to Exclude\n- Hirschsprung's disease\n- Hypothyroidism\n- Celiac disease\n- Diabetes mellitus\n- Intestinal obstruction\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Increased fluid intake\n- Dietary changes (increase fiber)\n- Oral laxatives (e.g., polyethylene glycol)\n\n#### Second-line Treatments\n- Suppositories (glycerin or bisacodyl)\n- Enemas (saline or phosphate)\n\n#### Emergency Procedures\n- Manual disimpaction (if severe fecal impaction is present)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular bowel habits (toilet training)\n- Dietary modifications (high fiber diet)\n- Oral laxatives (polyethylene glycol)\n\n#### Second-line Treatments\n- Behavioral therapy (if psychological factors are involved)\n- Referral to a pediatric gastroenterologist (if no improvement)\n\n#### Monitoring Requirements\n- Regular follow-up to assess bowel habits and adjust treatment as necessary\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Polyethylene glycol (PEG)\n- **Mechanism of Action**: Osmotic laxative that retains water in the stool, softening it and increasing bowel movements.\n- **Typical Dosing Range**: Children 1-5 years: 0.5-1 g/kg/day; 6-11 years: 1-1.5 g/kg/day; >12 years: 17 g/day.\n- **Key Side Effects/Contraindications**: Bloating, abdominal discomfort, diarrhea.\n- **When to Use vs. Alternatives**: Considered first-line for chronic constipation.\n\n#### Lactulose\n- **Mechanism of Action**: Osmotic laxative that draws water into the bowel, softening stools.\n- **Typical Dosing Range**: Children 1-5 years: 5-10 mL/day; 6-11 years: 10-15 mL/day; >12 years: 15-30 mL/day.\n- **Key Side Effects/Contraindications**: Abdominal cramps, flatulence, diarrhea.\n- **When to Use vs. Alternatives**: Useful in children who do not tolerate PEG.\n\n#### Bisacodyl\n- **Mechanism of Action**: Stimulant laxative that increases peristalsis and fluid secretion in the intestines.\n- **Typical Dosing Range**: Children >6 years: 5-10 mg orally or 10 mg rectally.\n- **Key Side Effects/Contraindications**: Abdominal cramps, diarrhea.\n- **When to Use vs. Alternatives**: Used for acute constipation.\n\n### Procedures\n\n#### Manual disimpaction\n- **What it Involves**: A procedure where a healthcare provider manually removes fecal material from the rectum.\n- **Indications**: Severe fecal impaction causing pain or obstruction.\n- **Key Risks/Complications**: Rectal trauma, bleeding, discomfort.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children respond well to treatment and can achieve regular bowel habits. Chronic constipation may require ongoing management and follow-up.\n\n### Important Complications to Watch For\n- Fecal impaction\n- Encopresis (involuntary fecal soiling)\n- Anal fissures\n- Hemorrhoids\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide education on dietary and lifestyle modifications, and initiate first-line treatments. They should also recognize red flags that require urgent referral.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric gastroenterologist if there is no improvement after 4-6 weeks of treatment, if red flags are present, or if there are concerns about underlying pathology.\n\n### Key Safety Considerations\nMonitor for signs of dehydration, especially in children with vomiting or diarrhea. Ensure that laxatives are used appropriately and not overused to avoid dependency.\n",
+  "content": {
+    "overview": {
+      "definition": "Constipation in children is defined as infrequent bowel movements, typically fewer than three times per week, or difficulty passing stools that may be hard, dry, or painful to pass.",
+      "epidemiology": "Constipation affects approximately 3-30% of children at some point, with a higher prevalence in those aged 2-4 years. It is more common in boys than girls.",
+      "pathophysiology": "Constipation can result from a variety of factors including dietary habits (low fiber intake), inadequate fluid intake, lack of physical activity, and psychological factors (e.g., fear of using the toilet). It may also be due to underlying medical conditions such as hypothyroidism or neurological disorders."
+    },
+    "recognition": {
+      "symptoms": [
+        "Infrequent bowel movements (less than 3 times per week)",
+        "Hard, dry stools",
+        "Abdominal pain or discomfort",
+        "Bloating",
+        "Loss of appetite",
+        "Soiling (encopresis)"
+      ],
+      "signs": [
+        "Abdominal distension",
+        "Fecal impaction on examination",
+        "Anal fissures or hemorrhoids",
+        "Decreased bowel sounds"
+      ],
+      "atypicalPresentations": [
+        "Failure to thrive",
+        "Irritability or behavioral changes",
+        "Urinary incontinence"
+      ],
+      "redFlags": [
+        "Severe abdominal pain",
+        "Vomiting",
+        "Failure to thrive",
+        "Blood in stool",
+        "Onset after age 1 year without prior constipation history",
+        "Neurological signs (e.g., weakness, loss of reflexes)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "History and physical examination",
+        "Dietary assessment",
+        "Bristol stool chart"
+      ],
+      "secondLine": [
+        "Abdominal X-ray (to assess for fecal impaction)",
+        "Thyroid function tests (if indicated)"
+      ],
+      "specialistTests": [
+        "Anorectal manometry (if Hirschsprung's disease is suspected)",
+        "Colonoscopy (if alarm features are present)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the Rome IV criteria, which include two or more of the following: less than three bowel movements per week, at least one episode of fecal incontinence per week, history of painful or hard bowel movements, and presence of a large fecal mass in the rectum.",
+      "differentials": [
+        "Hirschsprung's disease",
+        "Hypothyroidism",
+        "Celiac disease",
+        "Diabetes mellitus",
+        "Intestinal obstruction"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Increased fluid intake",
+          "Dietary changes (increase fiber)",
+          "Oral laxatives (e.g., polyethylene glycol)"
+        ],
+        "secondLine": [
+          "Suppositories (glycerin or bisacodyl)",
+          "Enemas (saline or phosphate)"
+        ],
+        "procedures": [
+          "Manual disimpaction (if severe fecal impaction is present)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular bowel habits (toilet training)",
+          "Dietary modifications (high fiber diet)",
+          "Oral laxatives (polyethylene glycol)"
+        ],
+        "secondLine": [
+          "Behavioral therapy (if psychological factors are involved)",
+          "Referral to a pediatric gastroenterologist (if no improvement)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess bowel habits and adjust treatment as necessary"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Polyethylene glycol (PEG)",
+          "mechanism": "Osmotic laxative that retains water in the stool, softening it and increasing bowel movements.",
+          "dosing": "Children 1-5 years: 0.5-1 g/kg/day; 6-11 years: 1-1.5 g/kg/day; >12 years: 17 g/day.",
+          "sideEffects": "Bloating, abdominal discomfort, diarrhea.",
+          "notes": "Considered first-line for chronic constipation."
+        },
+        {
+          "name": "Lactulose",
+          "mechanism": "Osmotic laxative that draws water into the bowel, softening stools.",
+          "dosing": "Children 1-5 years: 5-10 mL/day; 6-11 years: 10-15 mL/day; >12 years: 15-30 mL/day.",
+          "sideEffects": "Abdominal cramps, flatulence, diarrhea.",
+          "notes": "Useful in children who do not tolerate PEG."
+        },
+        {
+          "name": "Bisacodyl",
+          "mechanism": "Stimulant laxative that increases peristalsis and fluid secretion in the intestines.",
+          "dosing": "Children >6 years: 5-10 mg orally or 10 mg rectally.",
+          "sideEffects": "Abdominal cramps, diarrhea.",
+          "notes": "Used for acute constipation."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Manual disimpaction",
+          "description": "A procedure where a healthcare provider manually removes fecal material from the rectum.",
+          "indications": "Severe fecal impaction causing pain or obstruction.",
+          "risks": "Rectal trauma, bleeding, discomfort."
+        }
+      ]
+    },
+    "prognosis": "Most children respond well to treatment and can achieve regular bowel habits. Chronic constipation may require ongoing management and follow-up.",
+    "complications": [
+      "Fecal impaction",
+      "Encopresis (involuntary fecal soiling)",
+      "Anal fissures",
+      "Hemorrhoids"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide education on dietary and lifestyle modifications, and initiate first-line treatments. They should also recognize red flags that require urgent referral.",
+    "escalation": "Refer to a pediatric gastroenterologist if there is no improvement after 4-6 weeks of treatment, if red flags are present, or if there are concerns about underlying pathology.",
+    "keySafetyConsiderations": "Monitor for signs of dehydration, especially in children with vomiting or diarrhea. Ensure that laxatives are used appropriately and not overused to avoid dependency."
+  }
+}

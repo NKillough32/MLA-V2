@@ -1,0 +1,117 @@
+{
+  "id": "measles",
+  "name": "Measles",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:09:03.960721",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Measles: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nMeasles is a highly contagious viral infection caused by the measles virus, characterized by a prodromal phase of fever, cough, coryza, conjunctivitis, followed by a characteristic maculopapular rash.\n\n### Epidemiology\nMeasles is endemic in many parts of the world, with outbreaks occurring primarily in unvaccinated populations. The World Health Organization reported over 365,000 cases globally in 2019, with significant morbidity and mortality, especially in children under five years of age.\n\n### Essential Pathophysiology\nThe measles virus is an RNA virus that enters the body through the respiratory tract. It replicates in the nasopharynx and regional lymph nodes, leading to a systemic infection. The immune response to the virus causes the characteristic symptoms and rash.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- High fever (often > 38.3°C)\n- Cough\n- Coryza (runny nose)\n- Conjunctivitis\n- Koplik spots (small white spots inside the mouth)\n- Maculopapular rash (starts on the face and spreads downwards)\n\n### Key Signs\n- Fever\n- Conjunctival injection\n- Koplik spots\n- Maculopapular rash\n\n### Atypical Presentations\n- Rash may be less pronounced in immunocompromised patients\n- Severe diarrhea or otitis media as complications\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Encephalitis (confusion, seizures)\n- Persistent high fever\n- Signs of dehydration\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical diagnosis based on history and examination\n- Serology for measles IgM and IgG antibodies\n\n### Second-line Investigations\n- PCR testing of throat swabs or urine samples\n\n### Specialist Tests\n- Lumbar puncture if encephalitis is suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, supported by serological evidence of measles IgM antibodies or PCR confirmation of the virus.\n\n### Key Differential Diagnoses to Exclude\n- Rubella\n- Scarlet fever\n- Kawasaki disease\n- Other viral exanthems\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, antipyretics)\n- Vitamin A supplementation (especially in malnourished children)\n\n#### Second-line Treatments\n- Antibiotics for secondary bacterial infections (e.g., otitis media)\n\n#### Emergency Procedures\n- Hospitalization for severe cases, especially with complications\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Monitor for complications (e.g., subacute sclerosing panencephalitis)\n\n#### Second-line Treatments\n- Long-term follow-up for developmental assessments\n\n#### Monitoring Requirements\n- Regular assessments for growth and development, especially in children with complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Vitamin A\n- **Mechanism of Action**: Essential for immune function and epithelial integrity, reduces morbidity and mortality in measles\n- **Typical Dosing Range**: 100,000 IU for children <12 months; 200,000 IU for older children, given as a single dose\n- **Key Side Effects/Contraindications**: Hypervitaminosis A (nausea, headache, dizziness)\n- **When to Use vs. Alternatives**: Administer within 24 hours of diagnosis for best outcomes.\n\n### Procedures\n\n#### Lumbar puncture\n- **What it Involves**: Involves inserting a needle into the lumbar spine to collect cerebrospinal fluid for analysis.\n- **Indications**: Suspected encephalitis or severe neurological symptoms.\n- **Key Risks/Complications**: Headache, infection, bleeding, nerve damage.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children recover completely from measles, but complications can lead to long-term sequelae or death. The risk of complications increases in malnourished children and those with weakened immune systems.\n\n### Important Complications to Watch For\n- Diarrhea\n- Otitis media\n- Pneumonia\n- Encephalitis\n- Subacute sclerosing panencephalitis (SSPE)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation Year doctors should be able to recognize measles, provide supportive care, and educate families about vaccination and prevention. They should also be prepared to manage complications and escalate care when necessary.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatrician for severe cases, complications, or if the patient is immunocompromised. Notify public health authorities in case of suspected outbreaks.\n\n### Key Safety Considerations\nEnsure vaccination status is up to date in children. Isolate suspected cases to prevent transmission. Monitor for signs of complications, especially in high-risk populations.\n",
+  "content": {
+    "overview": {
+      "definition": "Measles is a highly contagious viral infection caused by the measles virus, characterized by a prodromal phase of fever, cough, coryza, conjunctivitis, followed by a characteristic maculopapular rash.",
+      "epidemiology": "Measles is endemic in many parts of the world, with outbreaks occurring primarily in unvaccinated populations. The World Health Organization reported over 365,000 cases globally in 2019, with significant morbidity and mortality, especially in children under five years of age.",
+      "pathophysiology": "The measles virus is an RNA virus that enters the body through the respiratory tract. It replicates in the nasopharynx and regional lymph nodes, leading to a systemic infection. The immune response to the virus causes the characteristic symptoms and rash."
+    },
+    "recognition": {
+      "symptoms": [
+        "High fever (often > 38.3°C)",
+        "Cough",
+        "Coryza (runny nose)",
+        "Conjunctivitis",
+        "Koplik spots (small white spots inside the mouth)",
+        "Maculopapular rash (starts on the face and spreads downwards)"
+      ],
+      "signs": [
+        "Fever",
+        "Conjunctival injection",
+        "Koplik spots",
+        "Maculopapular rash"
+      ],
+      "atypicalPresentations": [
+        "Rash may be less pronounced in immunocompromised patients",
+        "Severe diarrhea or otitis media as complications"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Encephalitis (confusion, seizures)",
+        "Persistent high fever",
+        "Signs of dehydration"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical diagnosis based on history and examination",
+        "Serology for measles IgM and IgG antibodies"
+      ],
+      "secondLine": [
+        "PCR testing of throat swabs or urine samples"
+      ],
+      "specialistTests": [
+        "Lumbar puncture if encephalitis is suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, supported by serological evidence of measles IgM antibodies or PCR confirmation of the virus.",
+      "differentials": [
+        "Rubella",
+        "Scarlet fever",
+        "Kawasaki disease",
+        "Other viral exanthems"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, antipyretics)",
+          "Vitamin A supplementation (especially in malnourished children)"
+        ],
+        "secondLine": [
+          "Antibiotics for secondary bacterial infections (e.g., otitis media)"
+        ],
+        "procedures": [
+          "Hospitalization for severe cases, especially with complications"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Monitor for complications (e.g., subacute sclerosing panencephalitis)"
+        ],
+        "secondLine": [
+          "Long-term follow-up for developmental assessments"
+        ],
+        "monitoring": [
+          "Regular assessments for growth and development, especially in children with complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Vitamin A",
+          "mechanism": "Essential for immune function and epithelial integrity, reduces morbidity and mortality in measles",
+          "dosing": "100,000 IU for children <12 months; 200,000 IU for older children, given as a single dose",
+          "sideEffects": "Hypervitaminosis A (nausea, headache, dizziness)",
+          "notes": "Administer within 24 hours of diagnosis for best outcomes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Lumbar puncture",
+          "description": "Involves inserting a needle into the lumbar spine to collect cerebrospinal fluid for analysis.",
+          "indications": "Suspected encephalitis or severe neurological symptoms.",
+          "risks": "Headache, infection, bleeding, nerve damage."
+        }
+      ]
+    },
+    "prognosis": "Most children recover completely from measles, but complications can lead to long-term sequelae or death. The risk of complications increases in malnourished children and those with weakened immune systems.",
+    "complications": [
+      "Diarrhea",
+      "Otitis media",
+      "Pneumonia",
+      "Encephalitis",
+      "Subacute sclerosing panencephalitis (SSPE)"
+    ],
+    "foundationDoctorRole": "Foundation Year doctors should be able to recognize measles, provide supportive care, and educate families about vaccination and prevention. They should also be prepared to manage complications and escalate care when necessary.",
+    "escalation": "Refer to a pediatrician for severe cases, complications, or if the patient is immunocompromised. Notify public health authorities in case of suspected outbreaks.",
+    "keySafetyConsiderations": "Ensure vaccination status is up to date in children. Isolate suspected cases to prevent transmission. Monitor for signs of complications, especially in high-risk populations."
+  }
+}

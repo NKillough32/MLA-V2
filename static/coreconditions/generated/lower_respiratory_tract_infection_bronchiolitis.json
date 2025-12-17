@@ -1,0 +1,133 @@
+{
+  "id": "lower_respiratory_tract_infection_bronchiolitis",
+  "name": "Lower respiratory tract infection - Bronchiolitis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:57:24.059335",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Lower respiratory tract infection - Bronchiolitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBronchiolitis is a common viral lower respiratory tract infection in infants and young children, characterized by inflammation of the bronchioles, leading to wheezing, coughing, and difficulty breathing.\n\n### Epidemiology\nBronchiolitis primarily affects infants under 2 years of age, with peak incidence between 2-6 months. It is most commonly caused by respiratory syncytial virus (RSV), accounting for 50-70% of cases. Seasonal outbreaks typically occur in winter months.\n\n### Essential Pathophysiology\nThe infection leads to inflammation and obstruction of the small airways (bronchioles) due to edema, mucus production, and necrosis of epithelial cells. This results in impaired gas exchange and increased work of breathing.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cough\n- Wheezing\n- Shortness of breath\n- Rapid breathing (tachypnea)\n- Fever\n- Poor feeding\n- Irritability\n\n### Key Signs\n- Increased respiratory rate\n- Use of accessory muscles\n- Nasal flaring\n- Grunting\n- Cyanosis\n- Decreased air entry on auscultation\n\n### Atypical Presentations\n- Persistent vomiting\n- Apnea (especially in infants)\n- Severe lethargy\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Cyanosis\n- Apnea\n- Dehydration\n- Inability to maintain oral intake\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment (history and physical examination)\n- Pulse oximetry to assess oxygen saturation\n\n### Second-line Investigations\n- Chest X-ray (if pneumonia is suspected)\n- Viral PCR or rapid antigen testing for RSV (if available)\n\n### Specialist Tests\n- Bronchoscopy (rarely indicated)\n- Blood gas analysis (in severe cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of respiratory distress, wheezing, and a history of upper respiratory tract infection in a child under 2 years of age.\n\n### Key Differential Diagnoses to Exclude\n- Pneumonia\n- Asthma\n- Foreign body aspiration\n- Croup\n- Congenital heart disease\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (hydration, oxygen therapy if needed)\n- Saline nasal drops and suctioning for nasal congestion\n\n#### Second-line Treatments\n- Bronchodilators (e.g., salbutamol) may be considered in some cases, though evidence is limited\n\n#### Emergency Procedures\n- Oxygen therapy (if oxygen saturation < 92%)\n- Consideration for admission if severe respiratory distress or dehydration is present\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on recognizing signs of respiratory distress\n- Follow-up care for recurrent wheezing or respiratory issues\n\n#### Second-line Treatments\n- Consider referral to a pediatric pulmonologist for recurrent cases\n\n#### Monitoring Requirements\n- Regular follow-up to assess respiratory function and growth\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Salbutamol\n- **Mechanism of Action**: Beta-2 adrenergic agonist causing bronchodilation\n- **Typical Dosing Range**: 0.15 mg/kg via nebulizer every 1-4 hours as needed\n- **Key Side Effects/Contraindications**: Tachycardia, tremors, hypokalemia\n- **When to Use vs. Alternatives**: Use with caution in infants; monitor for side effects.\n\n#### Ribavirin\n- **Mechanism of Action**: Antiviral agent, inhibits viral replication\n- **Typical Dosing Range**: Not routinely used; consider in severe cases with RSV\n- **Key Side Effects/Contraindications**: Anemia, teratogenic effects\n- **When to Use vs. Alternatives**: Reserved for severe cases in immunocompromised patients.\n\n### Procedures\n\n#### Oxygen therapy\n- **What it Involves**: Supplemental oxygen to maintain saturation above 92%\n- **Indications**: Severe hypoxia or respiratory distress\n- **Key Risks/Complications**: Oxygen toxicity, especially in preterm infants.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nMost children recover fully within 1-2 weeks. However, some may experience recurrent wheezing or asthma-like symptoms later in life.\n\n### Important Complications to Watch For\n- Apnea\n- Respiratory failure\n- Dehydration\n- Secondary bacterial infections (e.g., pneumonia)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, provide supportive care, and recognize when to escalate care. They should also educate parents about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to pediatricians for severe cases, especially those with respiratory distress, dehydration, or failure to thrive.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially respiratory rate and oxygen saturation. Be vigilant for signs of respiratory failure and ensure adequate hydration.\n",
+  "content": {
+    "overview": {
+      "definition": "Bronchiolitis is a common viral lower respiratory tract infection in infants and young children, characterized by inflammation of the bronchioles, leading to wheezing, coughing, and difficulty breathing.",
+      "epidemiology": "Bronchiolitis primarily affects infants under 2 years of age, with peak incidence between 2-6 months. It is most commonly caused by respiratory syncytial virus (RSV), accounting for 50-70% of cases. Seasonal outbreaks typically occur in winter months.",
+      "pathophysiology": "The infection leads to inflammation and obstruction of the small airways (bronchioles) due to edema, mucus production, and necrosis of epithelial cells. This results in impaired gas exchange and increased work of breathing."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cough",
+        "Wheezing",
+        "Shortness of breath",
+        "Rapid breathing (tachypnea)",
+        "Fever",
+        "Poor feeding",
+        "Irritability"
+      ],
+      "signs": [
+        "Increased respiratory rate",
+        "Use of accessory muscles",
+        "Nasal flaring",
+        "Grunting",
+        "Cyanosis",
+        "Decreased air entry on auscultation"
+      ],
+      "atypicalPresentations": [
+        "Persistent vomiting",
+        "Apnea (especially in infants)",
+        "Severe lethargy"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Cyanosis",
+        "Apnea",
+        "Dehydration",
+        "Inability to maintain oral intake"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment (history and physical examination)",
+        "Pulse oximetry to assess oxygen saturation"
+      ],
+      "secondLine": [
+        "Chest X-ray (if pneumonia is suspected)",
+        "Viral PCR or rapid antigen testing for RSV (if available)"
+      ],
+      "specialistTests": [
+        "Bronchoscopy (rarely indicated)",
+        "Blood gas analysis (in severe cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of respiratory distress, wheezing, and a history of upper respiratory tract infection in a child under 2 years of age.",
+      "differentials": [
+        "Pneumonia",
+        "Asthma",
+        "Foreign body aspiration",
+        "Croup",
+        "Congenital heart disease"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (hydration, oxygen therapy if needed)",
+          "Saline nasal drops and suctioning for nasal congestion"
+        ],
+        "secondLine": [
+          "Bronchodilators (e.g., salbutamol) may be considered in some cases, though evidence is limited"
+        ],
+        "procedures": [
+          "Oxygen therapy (if oxygen saturation < 92%)",
+          "Consideration for admission if severe respiratory distress or dehydration is present"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on recognizing signs of respiratory distress",
+          "Follow-up care for recurrent wheezing or respiratory issues"
+        ],
+        "secondLine": [
+          "Consider referral to a pediatric pulmonologist for recurrent cases"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess respiratory function and growth"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Salbutamol",
+          "mechanism": "Beta-2 adrenergic agonist causing bronchodilation",
+          "dosing": "0.15 mg/kg via nebulizer every 1-4 hours as needed",
+          "sideEffects": "Tachycardia, tremors, hypokalemia",
+          "notes": "Use with caution in infants; monitor for side effects."
+        },
+        {
+          "name": "Ribavirin",
+          "mechanism": "Antiviral agent, inhibits viral replication",
+          "dosing": "Not routinely used; consider in severe cases with RSV",
+          "sideEffects": "Anemia, teratogenic effects",
+          "notes": "Reserved for severe cases in immunocompromised patients."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oxygen therapy",
+          "description": "Supplemental oxygen to maintain saturation above 92%",
+          "indications": "Severe hypoxia or respiratory distress",
+          "risks": "Oxygen toxicity, especially in preterm infants."
+        }
+      ]
+    },
+    "prognosis": "Most children recover fully within 1-2 weeks. However, some may experience recurrent wheezing or asthma-like symptoms later in life.",
+    "complications": [
+      "Apnea",
+      "Respiratory failure",
+      "Dehydration",
+      "Secondary bacterial infections (e.g., pneumonia)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, provide supportive care, and recognize when to escalate care. They should also educate parents about the condition and its management.",
+    "escalation": "Refer to pediatricians for severe cases, especially those with respiratory distress, dehydration, or failure to thrive.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially respiratory rate and oxygen saturation. Be vigilant for signs of respiratory failure and ensure adequate hydration."
+  }
+}

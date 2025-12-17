@@ -1,0 +1,143 @@
+{
+  "id": "idiopathic_arthritis",
+  "name": "Idiopathic arthritis",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:05:37.108287",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Idiopathic arthritis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nIdiopathic arthritis, often referred to as juvenile idiopathic arthritis (JIA), is a group of inflammatory joint diseases that occur in children under the age of 16, characterized by arthritis lasting more than six weeks with no identifiable cause.\n\n### Epidemiology\nJIA affects approximately 1 in 1,000 children, with a higher prevalence in females. The onset is typically between ages 1 and 3, but it can occur at any age.\n\n### Essential Pathophysiology\nThe exact cause of JIA is unknown (idiopathic), but it is believed to involve a combination of genetic predisposition and environmental triggers leading to an autoimmune response that results in inflammation of the synovial membrane, joint damage, and systemic effects.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Joint pain\n- Swelling in joints\n- Stiffness, especially in the morning\n- Fatigue\n- Fever\n- Rash\n\n### Key Signs\n- Swollen joints\n- Limited range of motion\n- Warmth over affected joints\n- Tenderness on palpation\n- Growth disturbances\n\n### Atypical Presentations\n- Oligoarticular JIA may present with asymmetrical joint involvement\n- Systemic JIA may present with high fevers and rash before joint symptoms\n- Enthesitis-related JIA may present with heel pain or inflammation at tendon insertion sites\n\n### Red Flags Requiring Immediate Action\n- Persistent joint swelling or pain\n- Systemic symptoms such as fever or rash\n- Signs of systemic illness (e.g., weight loss, fatigue)\n- Failure to thrive in infants or young children\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Erythrocyte sedimentation rate (ESR)\n- C-reactive protein (CRP)\n- Joint aspiration (if indicated)\n\n### Second-line Investigations\n- Antinuclear antibody (ANA)\n- Rheumatoid factor (RF)\n- X-rays of affected joints\n- Ultrasound of joints\n\n### Specialist Tests\n- MRI of joints\n- Genetic testing for HLA-B27 in enthesitis-related JIA\n- Bone density scan if corticosteroids are used long-term\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on the presence of arthritis in one or more joints for at least six weeks in a child under 16 years of age, with exclusion of other causes of arthritis.\n\n### Key Differential Diagnoses to Exclude\n- Infectious arthritis\n- Reactive arthritis\n- Systemic lupus erythematosus\n- Kawasaki disease\n- Osteomyelitis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Non-steroidal anti-inflammatory drugs (NSAIDs)\n- Corticosteroids (if severe inflammation)\n\n#### Second-line Treatments\n- Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate\n\n#### Emergency Procedures\n- Joint injections with corticosteroids for localized inflammation\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term NSAIDs\n- Physical therapy and exercise programs\n\n#### Second-line Treatments\n- Biologic agents (e.g., TNF inhibitors) if DMARDs are ineffective\n- Methotrexate or leflunomide\n\n#### Monitoring Requirements\n- Regular follow-up for joint function and growth\n- Monitoring for side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ibuprofen\n- **Mechanism of Action**: Inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis and inflammation.\n- **Typical Dosing Range**: 10 mg/kg every 6-8 hours, max 40 mg/kg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, increased bleeding risk.\n- **When to Use vs. Alternatives**: Monitor for signs of gastrointestinal bleeding.\n\n#### Methotrexate\n- **Mechanism of Action**: Inhibits dihydrofolate reductase, leading to anti-inflammatory effects.\n- **Typical Dosing Range**: 15 mg/m2 once weekly, adjusted based on response.\n- **Key Side Effects/Contraindications**: Nausea, liver toxicity, bone marrow suppression.\n- **When to Use vs. Alternatives**: Folic acid supplementation is recommended to reduce side effects.\n\n#### Etanercept\n- **Mechanism of Action**: TNF-alpha inhibitor that reduces inflammation.\n- **Typical Dosing Range**: 0.8 mg/kg subcutaneously once weekly, max 50 mg/week.\n- **Key Side Effects/Contraindications**: Injection site reactions, increased risk of infections.\n- **When to Use vs. Alternatives**: Screen for tuberculosis before starting.\n\n### Procedures\n\n#### Intra-articular corticosteroid injection\n- **What it Involves**: Injection of corticosteroids directly into the joint to reduce inflammation.\n- **Indications**: Persistent joint swelling and pain not responding to systemic treatment.\n- **Key Risks/Complications**: Infection, joint damage, transient increase in pain post-injection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis for children with JIA varies; many achieve remission, but some may have persistent symptoms into adulthood. Early diagnosis and treatment are crucial for better outcomes.\n\n### Important Complications to Watch For\n- Joint damage and deformity\n- Growth disturbances\n- Osteoporosis due to long-term corticosteroid use\n- Uveitis, particularly in oligoarticular JIA\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of JIA, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to a pediatric rheumatologist.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric rheumatologist if there is persistent joint pain, systemic symptoms, or if the child is not responding to first-line treatments.\n\n### Key Safety Considerations\nMonitor for side effects of medications, especially NSAIDs and DMARDs. Ensure regular follow-up for growth and development, and educate families about signs of complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Idiopathic arthritis, often referred to as juvenile idiopathic arthritis (JIA), is a group of inflammatory joint diseases that occur in children under the age of 16, characterized by arthritis lasting more than six weeks with no identifiable cause.",
+      "epidemiology": "JIA affects approximately 1 in 1,000 children, with a higher prevalence in females. The onset is typically between ages 1 and 3, but it can occur at any age.",
+      "pathophysiology": "The exact cause of JIA is unknown (idiopathic), but it is believed to involve a combination of genetic predisposition and environmental triggers leading to an autoimmune response that results in inflammation of the synovial membrane, joint damage, and systemic effects."
+    },
+    "recognition": {
+      "symptoms": [
+        "Joint pain",
+        "Swelling in joints",
+        "Stiffness, especially in the morning",
+        "Fatigue",
+        "Fever",
+        "Rash"
+      ],
+      "signs": [
+        "Swollen joints",
+        "Limited range of motion",
+        "Warmth over affected joints",
+        "Tenderness on palpation",
+        "Growth disturbances"
+      ],
+      "atypicalPresentations": [
+        "Oligoarticular JIA may present with asymmetrical joint involvement",
+        "Systemic JIA may present with high fevers and rash before joint symptoms",
+        "Enthesitis-related JIA may present with heel pain or inflammation at tendon insertion sites"
+      ],
+      "redFlags": [
+        "Persistent joint swelling or pain",
+        "Systemic symptoms such as fever or rash",
+        "Signs of systemic illness (e.g., weight loss, fatigue)",
+        "Failure to thrive in infants or young children"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Erythrocyte sedimentation rate (ESR)",
+        "C-reactive protein (CRP)",
+        "Joint aspiration (if indicated)"
+      ],
+      "secondLine": [
+        "Antinuclear antibody (ANA)",
+        "Rheumatoid factor (RF)",
+        "X-rays of affected joints",
+        "Ultrasound of joints"
+      ],
+      "specialistTests": [
+        "MRI of joints",
+        "Genetic testing for HLA-B27 in enthesitis-related JIA",
+        "Bone density scan if corticosteroids are used long-term"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on the presence of arthritis in one or more joints for at least six weeks in a child under 16 years of age, with exclusion of other causes of arthritis.",
+      "differentials": [
+        "Infectious arthritis",
+        "Reactive arthritis",
+        "Systemic lupus erythematosus",
+        "Kawasaki disease",
+        "Osteomyelitis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Non-steroidal anti-inflammatory drugs (NSAIDs)",
+          "Corticosteroids (if severe inflammation)"
+        ],
+        "secondLine": [
+          "Disease-modifying antirheumatic drugs (DMARDs) such as methotrexate"
+        ],
+        "procedures": [
+          "Joint injections with corticosteroids for localized inflammation"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term NSAIDs",
+          "Physical therapy and exercise programs"
+        ],
+        "secondLine": [
+          "Biologic agents (e.g., TNF inhibitors) if DMARDs are ineffective",
+          "Methotrexate or leflunomide"
+        ],
+        "monitoring": [
+          "Regular follow-up for joint function and growth",
+          "Monitoring for side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ibuprofen",
+          "mechanism": "Inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis and inflammation.",
+          "dosing": "10 mg/kg every 6-8 hours, max 40 mg/kg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, increased bleeding risk.",
+          "notes": "Monitor for signs of gastrointestinal bleeding."
+        },
+        {
+          "name": "Methotrexate",
+          "mechanism": "Inhibits dihydrofolate reductase, leading to anti-inflammatory effects.",
+          "dosing": "15 mg/m2 once weekly, adjusted based on response.",
+          "sideEffects": "Nausea, liver toxicity, bone marrow suppression.",
+          "notes": "Folic acid supplementation is recommended to reduce side effects."
+        },
+        {
+          "name": "Etanercept",
+          "mechanism": "TNF-alpha inhibitor that reduces inflammation.",
+          "dosing": "0.8 mg/kg subcutaneously once weekly, max 50 mg/week.",
+          "sideEffects": "Injection site reactions, increased risk of infections.",
+          "notes": "Screen for tuberculosis before starting."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intra-articular corticosteroid injection",
+          "description": "Injection of corticosteroids directly into the joint to reduce inflammation.",
+          "indications": "Persistent joint swelling and pain not responding to systemic treatment.",
+          "risks": "Infection, joint damage, transient increase in pain post-injection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis for children with JIA varies; many achieve remission, but some may have persistent symptoms into adulthood. Early diagnosis and treatment are crucial for better outcomes.",
+    "complications": [
+      "Joint damage and deformity",
+      "Growth disturbances",
+      "Osteoporosis due to long-term corticosteroid use",
+      "Uveitis, particularly in oligoarticular JIA"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of JIA, perform initial assessments, order appropriate investigations, and initiate management while ensuring timely referral to a pediatric rheumatologist.",
+    "escalation": "Refer to a pediatric rheumatologist if there is persistent joint pain, systemic symptoms, or if the child is not responding to first-line treatments.",
+    "keySafetyConsiderations": "Monitor for side effects of medications, especially NSAIDs and DMARDs. Ensure regular follow-up for growth and development, and educate families about signs of complications."
+  }
+}

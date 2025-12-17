@@ -1,0 +1,122 @@
+{
+  "id": "tension_headaches",
+  "name": "Tension headaches",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:04:00.862591",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Tension headaches: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTension headaches are the most common type of primary headache, characterized by a bilateral, pressing or tightening sensation that is often mild to moderate in intensity. They are not aggravated by routine physical activity and are not associated with nausea or vomiting.\n\n### Epidemiology\nTension headaches affect approximately 30-78% of the general population at some point in their lives, with a higher prevalence in females. They can occur at any age but are most common in adolescents and young adults.\n\n### Essential Pathophysiology\nThe exact pathophysiology of tension headaches is not fully understood. It is believed to involve muscle tension in the head, neck, and shoulders, as well as alterations in central pain processing. Stress, anxiety, and poor posture are common triggers.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Bilateral headache\n- Pressing or tightening quality\n- Mild to moderate intensity\n- Not aggravated by physical activity\n- No nausea or vomiting\n\n### Key Signs\n- Tenderness in the scalp, neck, or shoulder muscles\n- Normal neurological examination\n\n### Atypical Presentations\n- Unilateral headache (less common)\n- Headache with mild photophobia or phonophobia\n\n### Red Flags Requiring Immediate Action\n- Sudden onset of severe headache (thunderclap headache)\n- New headache in a patient over 40 years old\n- Headache associated with neurological deficits\n- Change in headache pattern or frequency\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical history and physical examination\n\n### Second-line Investigations\n- CT scan of the head (if red flags present)\n- MRI of the brain (if indicated)\n\n### Specialist Tests\n- Referral to a neurologist for chronic or refractory cases\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the International Classification of Headache Disorders (ICHD-3) criteria for tension-type headaches.\n\n### Key Differential Diagnoses to Exclude\n- Migraine\n- Cluster headache\n- Cervicogenic headache\n- Medication overuse headache\n- Sinus headache\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Analgesics such as paracetamol or ibuprofen\n\n#### Second-line Treatments\n- Combination analgesics (e.g., paracetamol with caffeine)\n- Non-steroidal anti-inflammatory drugs (NSAIDs)\n\n#### Emergency Procedures\n- None specific for tension headaches, but physical therapy may be beneficial\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular use of analgesics should be avoided to prevent medication overuse headaches\n- Cognitive behavioral therapy (CBT)\n- Stress management techniques\n\n#### Second-line Treatments\n- Preventive medications such as amitriptyline (low dose)\n\n#### Monitoring Requirements\n- Regular follow-up to assess headache frequency and response to treatment\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Paracetamol\n- **Mechanism of Action**: Analgesic and antipyretic; works by inhibiting prostaglandin synthesis in the central nervous system.\n- **Typical Dosing Range**: 500-1000 mg every 4-6 hours as needed; maximum 4g/day.\n- **Key Side Effects/Contraindications**: Liver toxicity in overdose, allergic reactions.\n- **When to Use vs. Alternatives**: Generally well-tolerated; first-line for mild to moderate pain.\n\n#### Ibuprofen\n- **Mechanism of Action**: NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.\n- **Typical Dosing Range**: 400-600 mg every 6-8 hours as needed; maximum 2400 mg/day.\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment, cardiovascular risks.\n- **When to Use vs. Alternatives**: Effective for pain relief; consider gastrointestinal protection in long-term use.\n\n#### Amitriptyline\n- **Mechanism of Action**: Tricyclic antidepressant; modulates neurotransmitters involved in pain perception.\n- **Typical Dosing Range**: 10-25 mg at bedtime; may increase to 50 mg based on tolerance.\n- **Key Side Effects/Contraindications**: Sedation, dry mouth, weight gain, potential cardiac effects.\n- **When to Use vs. Alternatives**: Used for chronic tension-type headaches; requires monitoring for side effects.\n\n### Procedures\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nTension headaches are generally benign and self-limiting. With appropriate management, most patients can achieve significant relief. Chronic tension-type headaches may require ongoing management and can impact quality of life.\n\n### Important Complications to Watch For\n- Medication overuse headache due to frequent analgesic use\n- Chronic pain syndromes\n- Impact on daily activities and quality of life\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize tension headaches, provide initial management, and educate patients on lifestyle modifications. They should also be aware of when to refer to a specialist for further evaluation.\n\n### When to Escalate to Senior/Specialist\nRefer to a neurologist if headaches are severe, persistent, or associated with red flags. Consider referral for chronic cases that do not respond to initial management.\n\n### Key Safety Considerations\nEnsure to assess for red flags in headache presentations. Monitor for signs of medication overuse and educate patients on the risks of frequent analgesic use.\n",
+  "content": {
+    "overview": {
+      "definition": "Tension headaches are the most common type of primary headache, characterized by a bilateral, pressing or tightening sensation that is often mild to moderate in intensity. They are not aggravated by routine physical activity and are not associated with nausea or vomiting.",
+      "epidemiology": "Tension headaches affect approximately 30-78% of the general population at some point in their lives, with a higher prevalence in females. They can occur at any age but are most common in adolescents and young adults.",
+      "pathophysiology": "The exact pathophysiology of tension headaches is not fully understood. It is believed to involve muscle tension in the head, neck, and shoulders, as well as alterations in central pain processing. Stress, anxiety, and poor posture are common triggers."
+    },
+    "recognition": {
+      "symptoms": [
+        "Bilateral headache",
+        "Pressing or tightening quality",
+        "Mild to moderate intensity",
+        "Not aggravated by physical activity",
+        "No nausea or vomiting"
+      ],
+      "signs": [
+        "Tenderness in the scalp, neck, or shoulder muscles",
+        "Normal neurological examination"
+      ],
+      "atypicalPresentations": [
+        "Unilateral headache (less common)",
+        "Headache with mild photophobia or phonophobia"
+      ],
+      "redFlags": [
+        "Sudden onset of severe headache (thunderclap headache)",
+        "New headache in a patient over 40 years old",
+        "Headache associated with neurological deficits",
+        "Change in headache pattern or frequency"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical history and physical examination"
+      ],
+      "secondLine": [
+        "CT scan of the head (if red flags present)",
+        "MRI of the brain (if indicated)"
+      ],
+      "specialistTests": [
+        "Referral to a neurologist for chronic or refractory cases"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the International Classification of Headache Disorders (ICHD-3) criteria for tension-type headaches.",
+      "differentials": [
+        "Migraine",
+        "Cluster headache",
+        "Cervicogenic headache",
+        "Medication overuse headache",
+        "Sinus headache"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesics such as paracetamol or ibuprofen"
+        ],
+        "secondLine": [
+          "Combination analgesics (e.g., paracetamol with caffeine)",
+          "Non-steroidal anti-inflammatory drugs (NSAIDs)"
+        ],
+        "procedures": [
+          "None specific for tension headaches, but physical therapy may be beneficial"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular use of analgesics should be avoided to prevent medication overuse headaches",
+          "Cognitive behavioral therapy (CBT)",
+          "Stress management techniques"
+        ],
+        "secondLine": [
+          "Preventive medications such as amitriptyline (low dose)"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess headache frequency and response to treatment"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Paracetamol",
+          "mechanism": "Analgesic and antipyretic; works by inhibiting prostaglandin synthesis in the central nervous system.",
+          "dosing": "500-1000 mg every 4-6 hours as needed; maximum 4g/day.",
+          "sideEffects": "Liver toxicity in overdose, allergic reactions.",
+          "notes": "Generally well-tolerated; first-line for mild to moderate pain."
+        },
+        {
+          "name": "Ibuprofen",
+          "mechanism": "NSAID; inhibits cyclooxygenase (COX) enzymes, reducing prostaglandin synthesis.",
+          "dosing": "400-600 mg every 6-8 hours as needed; maximum 2400 mg/day.",
+          "sideEffects": "Gastrointestinal upset, renal impairment, cardiovascular risks.",
+          "notes": "Effective for pain relief; consider gastrointestinal protection in long-term use."
+        },
+        {
+          "name": "Amitriptyline",
+          "mechanism": "Tricyclic antidepressant; modulates neurotransmitters involved in pain perception.",
+          "dosing": "10-25 mg at bedtime; may increase to 50 mg based on tolerance.",
+          "sideEffects": "Sedation, dry mouth, weight gain, potential cardiac effects.",
+          "notes": "Used for chronic tension-type headaches; requires monitoring for side effects."
+        }
+      ],
+      "procedures": []
+    },
+    "prognosis": "Tension headaches are generally benign and self-limiting. With appropriate management, most patients can achieve significant relief. Chronic tension-type headaches may require ongoing management and can impact quality of life.",
+    "complications": [
+      "Medication overuse headache due to frequent analgesic use",
+      "Chronic pain syndromes",
+      "Impact on daily activities and quality of life"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize tension headaches, provide initial management, and educate patients on lifestyle modifications. They should also be aware of when to refer to a specialist for further evaluation.",
+    "escalation": "Refer to a neurologist if headaches are severe, persistent, or associated with red flags. Consider referral for chronic cases that do not respond to initial management.",
+    "keySafetyConsiderations": "Ensure to assess for red flags in headache presentations. Monitor for signs of medication overuse and educate patients on the risks of frequent analgesic use."
+  }
+}

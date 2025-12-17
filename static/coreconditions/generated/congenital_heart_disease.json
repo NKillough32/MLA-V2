@@ -1,0 +1,144 @@
+{
+  "id": "congenital_heart_disease",
+  "name": "Congenital heart disease",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:56:04.765531",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Congenital heart disease: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCongenital heart disease (CHD) refers to a range of structural heart defects present at birth that affect the normal flow of blood through the heart and blood vessels.\n\n### Epidemiology\nCHD affects approximately 1 in 100 live births, making it one of the most common congenital conditions. It can vary from simple defects that may not require treatment to complex conditions that can be life-threatening.\n\n### Essential Pathophysiology\nCHD results from abnormal heart development during fetal life, leading to structural anomalies such as septal defects, valve abnormalities, or abnormal connections between blood vessels. These defects can disrupt normal hemodynamics, leading to cyanosis, heart failure, or other complications.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Cyanosis (bluish discoloration of the skin)\n- Shortness of breath\n- Fatigue\n- Poor feeding and growth in infants\n- Palpitations\n- Chest pain (in older children)\n\n### Key Signs\n- Murmurs on auscultation\n- Clubbing of fingers\n- Tachycardia\n- Tachypnea\n- Hepatomegaly\n- Signs of heart failure (e.g., edema, respiratory distress)\n\n### Atypical Presentations\n- Asymptomatic in mild cases\n- Failure to thrive without obvious cause\n- Recurrent respiratory infections\n\n### Red Flags Requiring Immediate Action\n- Severe cyanosis\n- Rapid deterioration in clinical status\n- Signs of heart failure in infants\n- Persistent tachypnea or respiratory distress\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Echocardiography (transthoracic)\n- Chest X-ray\n- Electrocardiogram (ECG)\n\n### Second-line Investigations\n- Cardiac MRI\n- Cardiac CT\n- Pulse oximetry for oxygen saturation\n\n### Specialist Tests\n- Invasive cardiac catheterization\n- Genetic testing for syndromic causes\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings from echocardiography, and sometimes confirmed by cardiac catheterization.\n\n### Key Differential Diagnoses to Exclude\n- Acquired heart disease (e.g., rheumatic heart disease)\n- Respiratory conditions (e.g., pneumonia)\n- Anemia\n- Metabolic disorders\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy for hypoxia\n- Diuretics for heart failure (e.g., furosemide)\n- Inotropic support (e.g., dobutamine)\n\n#### Second-line Treatments\n- Prostaglandin E1 for ductal-dependent lesions\n- Surgical intervention for critical defects\n\n#### Emergency Procedures\n- Cardiac catheterization for diagnostic or therapeutic purposes\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular follow-up with a pediatric cardiologist\n- Monitoring growth and development\n- Education for parents about signs of deterioration\n\n#### Second-line Treatments\n- Surgical repair or intervention as needed based on the type of defect\n- Medications for heart failure management\n\n#### Monitoring Requirements\n- Regular echocardiograms to assess heart function and structure\n- Monitoring for arrhythmias or other complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that reduces fluid overload by inhibiting sodium and chloride reabsorption in the loop of Henle.\n- **Typical Dosing Range**: Initial: 1 mg/kg IV/PO; adjust based on response, typically 1-2 times daily.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances, dehydration, ototoxicity (rare).\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Dobutamine\n- **Mechanism of Action**: Inotropic agent that increases cardiac output by stimulating beta-1 adrenergic receptors.\n- **Typical Dosing Range**: 2-20 mcg/kg/min IV infusion, titrate to effect.\n- **Key Side Effects/Contraindications**: Tachycardia, arrhythmias, hypotension.\n- **When to Use vs. Alternatives**: Used in acute heart failure or cardiogenic shock.\n\n#### Prostaglandin E1 (Alprostadil)\n- **Mechanism of Action**: Vasodilator that maintains ductus arteriosus patency in ductal-dependent lesions.\n- **Typical Dosing Range**: 0.01-0.1 mcg/kg/min IV infusion, adjust based on response.\n- **Key Side Effects/Contraindications**: Apnea, hypotension, flushing, fever.\n- **When to Use vs. Alternatives**: Monitor closely for respiratory effects.\n\n### Procedures\n\n#### Cardiac catheterization\n- **What it Involves**: A minimally invasive procedure to diagnose and sometimes treat congenital heart defects by inserting a catheter into the heart through blood vessels.\n- **Indications**: To assess hemodynamics, measure pressures, and perform interventions such as balloon angioplasty or stent placement.\n- **Key Risks/Complications**: Bleeding, infection, arrhythmias, vascular injury.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of congenital heart disease varies widely depending on the type and severity of the defect. Many children with mild defects lead normal lives, while others with complex defects may require multiple surgeries and ongoing care.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias\n- Endocarditis\n- Pulmonary hypertension\n- Growth and developmental delays\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize signs and symptoms of congenital heart disease, perform initial assessments, and coordinate care with pediatric cardiology. They should also educate families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to pediatric cardiology for any suspected congenital heart disease, especially in cases of severe symptoms, failure to thrive, or when surgical intervention may be necessary.\n\n### Key Safety Considerations\nEnsure accurate monitoring of vital signs, especially in acute settings. Be vigilant for signs of heart failure and respiratory distress. Maintain clear communication with the pediatric cardiology team and ensure timely referrals.\n",
+  "content": {
+    "overview": {
+      "definition": "Congenital heart disease (CHD) refers to a range of structural heart defects present at birth that affect the normal flow of blood through the heart and blood vessels.",
+      "epidemiology": "CHD affects approximately 1 in 100 live births, making it one of the most common congenital conditions. It can vary from simple defects that may not require treatment to complex conditions that can be life-threatening.",
+      "pathophysiology": "CHD results from abnormal heart development during fetal life, leading to structural anomalies such as septal defects, valve abnormalities, or abnormal connections between blood vessels. These defects can disrupt normal hemodynamics, leading to cyanosis, heart failure, or other complications."
+    },
+    "recognition": {
+      "symptoms": [
+        "Cyanosis (bluish discoloration of the skin)",
+        "Shortness of breath",
+        "Fatigue",
+        "Poor feeding and growth in infants",
+        "Palpitations",
+        "Chest pain (in older children)"
+      ],
+      "signs": [
+        "Murmurs on auscultation",
+        "Clubbing of fingers",
+        "Tachycardia",
+        "Tachypnea",
+        "Hepatomegaly",
+        "Signs of heart failure (e.g., edema, respiratory distress)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in mild cases",
+        "Failure to thrive without obvious cause",
+        "Recurrent respiratory infections"
+      ],
+      "redFlags": [
+        "Severe cyanosis",
+        "Rapid deterioration in clinical status",
+        "Signs of heart failure in infants",
+        "Persistent tachypnea or respiratory distress"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Echocardiography (transthoracic)",
+        "Chest X-ray",
+        "Electrocardiogram (ECG)"
+      ],
+      "secondLine": [
+        "Cardiac MRI",
+        "Cardiac CT",
+        "Pulse oximetry for oxygen saturation"
+      ],
+      "specialistTests": [
+        "Invasive cardiac catheterization",
+        "Genetic testing for syndromic causes"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings from echocardiography, and sometimes confirmed by cardiac catheterization.",
+      "differentials": [
+        "Acquired heart disease (e.g., rheumatic heart disease)",
+        "Respiratory conditions (e.g., pneumonia)",
+        "Anemia",
+        "Metabolic disorders"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy for hypoxia",
+          "Diuretics for heart failure (e.g., furosemide)",
+          "Inotropic support (e.g., dobutamine)"
+        ],
+        "secondLine": [
+          "Prostaglandin E1 for ductal-dependent lesions",
+          "Surgical intervention for critical defects"
+        ],
+        "procedures": [
+          "Cardiac catheterization for diagnostic or therapeutic purposes"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular follow-up with a pediatric cardiologist",
+          "Monitoring growth and development",
+          "Education for parents about signs of deterioration"
+        ],
+        "secondLine": [
+          "Surgical repair or intervention as needed based on the type of defect",
+          "Medications for heart failure management"
+        ],
+        "monitoring": [
+          "Regular echocardiograms to assess heart function and structure",
+          "Monitoring for arrhythmias or other complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that reduces fluid overload by inhibiting sodium and chloride reabsorption in the loop of Henle.",
+          "dosing": "Initial: 1 mg/kg IV/PO; adjust based on response, typically 1-2 times daily.",
+          "sideEffects": "Electrolyte imbalances, dehydration, ototoxicity (rare).",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Dobutamine",
+          "mechanism": "Inotropic agent that increases cardiac output by stimulating beta-1 adrenergic receptors.",
+          "dosing": "2-20 mcg/kg/min IV infusion, titrate to effect.",
+          "sideEffects": "Tachycardia, arrhythmias, hypotension.",
+          "notes": "Used in acute heart failure or cardiogenic shock."
+        },
+        {
+          "name": "Prostaglandin E1 (Alprostadil)",
+          "mechanism": "Vasodilator that maintains ductus arteriosus patency in ductal-dependent lesions.",
+          "dosing": "0.01-0.1 mcg/kg/min IV infusion, adjust based on response.",
+          "sideEffects": "Apnea, hypotension, flushing, fever.",
+          "notes": "Monitor closely for respiratory effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Cardiac catheterization",
+          "description": "A minimally invasive procedure to diagnose and sometimes treat congenital heart defects by inserting a catheter into the heart through blood vessels.",
+          "indications": "To assess hemodynamics, measure pressures, and perform interventions such as balloon angioplasty or stent placement.",
+          "risks": "Bleeding, infection, arrhythmias, vascular injury."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of congenital heart disease varies widely depending on the type and severity of the defect. Many children with mild defects lead normal lives, while others with complex defects may require multiple surgeries and ongoing care.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias",
+      "Endocarditis",
+      "Pulmonary hypertension",
+      "Growth and developmental delays"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize signs and symptoms of congenital heart disease, perform initial assessments, and coordinate care with pediatric cardiology. They should also educate families about the condition and its management.",
+    "escalation": "Refer to pediatric cardiology for any suspected congenital heart disease, especially in cases of severe symptoms, failure to thrive, or when surgical intervention may be necessary.",
+    "keySafetyConsiderations": "Ensure accurate monitoring of vital signs, especially in acute settings. Be vigilant for signs of heart failure and respiratory distress. Maintain clear communication with the pediatric cardiology team and ensure timely referrals."
+  }
+}

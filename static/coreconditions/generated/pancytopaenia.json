@@ -1,0 +1,143 @@
+{
+  "id": "pancytopaenia",
+  "name": "Pancytopaenia",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:08:08.230264",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Pancytopaenia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nPancytopaenia is a hematological condition characterized by a reduction in the number of red blood cells, white blood cells, and platelets in the peripheral blood.\n\n### Epidemiology\nPancytopaenia can occur in various age groups but is particularly significant in pediatric populations due to underlying hematological disorders, infections, or bone marrow pathologies. The incidence varies based on the underlying cause, with aplastic anemia and leukemia being common in children.\n\n### Essential Pathophysiology\nPancytopaenia can result from decreased production of blood cells in the bone marrow, increased destruction of blood cells, or sequestration in the spleen. Causes include bone marrow failure syndromes (e.g., aplastic anemia), malignancies (e.g., leukemia), hypersplenism, and peripheral destruction (e.g., autoimmune disorders).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue\n- Pallor\n- Easy bruising or bleeding\n- Recurrent infections\n- Shortness of breath\n\n### Key Signs\n- Pallor\n- Petechiae or purpura\n- Splenomegaly\n- Hepatomegaly\n- Lymphadenopathy\n\n### Atypical Presentations\n- Failure to thrive in infants\n- Severe infections without obvious source\n- Prolonged bleeding after minor injuries\n\n### Red Flags Requiring Immediate Action\n- Severe anemia (Hb < 7 g/dL)\n- Thrombocytopenia with bleeding\n- Neutropenia with fever\n- Rapidly worsening symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Complete blood count (CBC)\n- Peripheral blood smear\n- Reticulocyte count\n\n### Second-line Investigations\n- Bone marrow aspiration and biopsy\n- Coagulation profile\n- Liver function tests\n- Vitamin B12 and folate levels\n\n### Specialist Tests\n- Flow cytometry\n- Cytogenetic analysis\n- Autoantibody tests (e.g., anti-nuclear antibody)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of pancytopaenia is based on the presence of low levels of all three blood cell lines (red cells, white cells, and platelets) on a complete blood count, along with clinical correlation and exclusion of other causes.\n\n### Key Differential Diagnoses to Exclude\n- Aplastic anemia\n- Leukemia\n- Hypersplenism\n- Myelodysplastic syndromes\n- Autoimmune disorders (e.g., systemic lupus erythematosus)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (transfusions as needed)\n- Antibiotics for infections\n- Corticosteroids if autoimmune cause suspected\n\n#### Second-line Treatments\n- Consider hematology referral for further evaluation\n- Consider immunosuppressive therapy if aplastic anemia is diagnosed\n\n#### Emergency Procedures\n- Bone marrow biopsy for diagnosis\n- Splenectomy in cases of hypersplenism\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Regular monitoring of blood counts\n- Management of underlying cause (e.g., vitamin supplementation, treatment of infections)\n\n#### Second-line Treatments\n- Consider hematopoietic growth factors (e.g., erythropoietin) if indicated\n- Immunosuppressive therapy for aplastic anemia\n\n#### Monitoring Requirements\n- Regular follow-up with blood counts\n- Monitoring for complications of anemia and thrombocytopenia\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Erythropoietin\n- **Mechanism of Action**: Stimulates red blood cell production in the bone marrow.\n- **Typical Dosing Range**: Typically 50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on hemoglobin levels.\n- **Key Side Effects/Contraindications**: Hypertension, headache, injection site reactions.\n- **When to Use vs. Alternatives**: Monitor hemoglobin levels regularly to avoid rapid increases.\n\n#### Corticosteroids\n- **Mechanism of Action**: Immunosuppressive effects reduce autoimmune destruction of blood cells.\n- **Typical Dosing Range**: Prednisolone 1-2 mg/kg/day, tapering as clinically indicated.\n- **Key Side Effects/Contraindications**: Weight gain, hypertension, hyperglycemia, increased infection risk.\n- **When to Use vs. Alternatives**: Long-term use requires monitoring for side effects.\n\n### Procedures\n\n#### Bone Marrow Biopsy\n- **What it Involves**: A procedure to obtain a sample of bone marrow for examination.\n- **Indications**: To evaluate for bone marrow disorders such as aplastic anemia or leukemia.\n- **Key Risks/Complications**: Bleeding, infection, pain at the site.\n\n#### Splenectomy\n- **What it Involves**: Surgical removal of the spleen.\n- **Indications**: Severe hypersplenism causing significant cytopenias.\n- **Key Risks/Complications**: Infection risk post-splenectomy, bleeding, and anesthesia risks. Vaccination against encapsulated organisms is essential pre-operatively.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of pancytopaenia depends on the underlying cause. Aplastic anemia can have a poor prognosis without treatment, while other causes may have better outcomes with appropriate management.\n\n### Important Complications to Watch For\n- Severe anemia leading to heart failure\n- Infections due to neutropenia\n- Bleeding complications due to thrombocytopenia\n- Long-term complications from underlying conditions (e.g., malignancy)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of pancytopaenia, initiate appropriate investigations, manage acute complications, and refer to hematology for further evaluation and management.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with severe symptoms (e.g., significant bleeding, severe anemia, or signs of infection), immediate escalation to a senior clinician and hematology is required.\n\n### Key Safety Considerations\nEnsure appropriate blood product transfusions are available for patients with severe anemia or thrombocytopenia. Monitor for signs of infection and bleeding, and ensure timely referral to specialists for further management.\n",
+  "content": {
+    "overview": {
+      "definition": "Pancytopaenia is a hematological condition characterized by a reduction in the number of red blood cells, white blood cells, and platelets in the peripheral blood.",
+      "epidemiology": "Pancytopaenia can occur in various age groups but is particularly significant in pediatric populations due to underlying hematological disorders, infections, or bone marrow pathologies. The incidence varies based on the underlying cause, with aplastic anemia and leukemia being common in children.",
+      "pathophysiology": "Pancytopaenia can result from decreased production of blood cells in the bone marrow, increased destruction of blood cells, or sequestration in the spleen. Causes include bone marrow failure syndromes (e.g., aplastic anemia), malignancies (e.g., leukemia), hypersplenism, and peripheral destruction (e.g., autoimmune disorders)."
+    },
+    "recognition": {
+      "symptoms": [
+        "Fatigue",
+        "Pallor",
+        "Easy bruising or bleeding",
+        "Recurrent infections",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Pallor",
+        "Petechiae or purpura",
+        "Splenomegaly",
+        "Hepatomegaly",
+        "Lymphadenopathy"
+      ],
+      "atypicalPresentations": [
+        "Failure to thrive in infants",
+        "Severe infections without obvious source",
+        "Prolonged bleeding after minor injuries"
+      ],
+      "redFlags": [
+        "Severe anemia (Hb < 7 g/dL)",
+        "Thrombocytopenia with bleeding",
+        "Neutropenia with fever",
+        "Rapidly worsening symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Complete blood count (CBC)",
+        "Peripheral blood smear",
+        "Reticulocyte count"
+      ],
+      "secondLine": [
+        "Bone marrow aspiration and biopsy",
+        "Coagulation profile",
+        "Liver function tests",
+        "Vitamin B12 and folate levels"
+      ],
+      "specialistTests": [
+        "Flow cytometry",
+        "Cytogenetic analysis",
+        "Autoantibody tests (e.g., anti-nuclear antibody)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of pancytopaenia is based on the presence of low levels of all three blood cell lines (red cells, white cells, and platelets) on a complete blood count, along with clinical correlation and exclusion of other causes.",
+      "differentials": [
+        "Aplastic anemia",
+        "Leukemia",
+        "Hypersplenism",
+        "Myelodysplastic syndromes",
+        "Autoimmune disorders (e.g., systemic lupus erythematosus)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (transfusions as needed)",
+          "Antibiotics for infections",
+          "Corticosteroids if autoimmune cause suspected"
+        ],
+        "secondLine": [
+          "Consider hematology referral for further evaluation",
+          "Consider immunosuppressive therapy if aplastic anemia is diagnosed"
+        ],
+        "procedures": [
+          "Bone marrow biopsy for diagnosis",
+          "Splenectomy in cases of hypersplenism"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Regular monitoring of blood counts",
+          "Management of underlying cause (e.g., vitamin supplementation, treatment of infections)"
+        ],
+        "secondLine": [
+          "Consider hematopoietic growth factors (e.g., erythropoietin) if indicated",
+          "Immunosuppressive therapy for aplastic anemia"
+        ],
+        "monitoring": [
+          "Regular follow-up with blood counts",
+          "Monitoring for complications of anemia and thrombocytopenia"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Erythropoietin",
+          "mechanism": "Stimulates red blood cell production in the bone marrow.",
+          "dosing": "Typically 50-100 units/kg subcutaneously 1-3 times weekly, adjusted based on hemoglobin levels.",
+          "sideEffects": "Hypertension, headache, injection site reactions.",
+          "notes": "Monitor hemoglobin levels regularly to avoid rapid increases."
+        },
+        {
+          "name": "Corticosteroids",
+          "mechanism": "Immunosuppressive effects reduce autoimmune destruction of blood cells.",
+          "dosing": "Prednisolone 1-2 mg/kg/day, tapering as clinically indicated.",
+          "sideEffects": "Weight gain, hypertension, hyperglycemia, increased infection risk.",
+          "notes": "Long-term use requires monitoring for side effects."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Bone Marrow Biopsy",
+          "description": "A procedure to obtain a sample of bone marrow for examination.",
+          "indications": "To evaluate for bone marrow disorders such as aplastic anemia or leukemia.",
+          "risks": "Bleeding, infection, pain at the site."
+        },
+        {
+          "name": "Splenectomy",
+          "description": "Surgical removal of the spleen.",
+          "indications": "Severe hypersplenism causing significant cytopenias.",
+          "risks": "Infection risk post-splenectomy, bleeding, and anesthesia risks. Vaccination against encapsulated organisms is essential pre-operatively."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of pancytopaenia depends on the underlying cause. Aplastic anemia can have a poor prognosis without treatment, while other causes may have better outcomes with appropriate management.",
+    "complications": [
+      "Severe anemia leading to heart failure",
+      "Infections due to neutropenia",
+      "Bleeding complications due to thrombocytopenia",
+      "Long-term complications from underlying conditions (e.g., malignancy)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of pancytopaenia, initiate appropriate investigations, manage acute complications, and refer to hematology for further evaluation and management.",
+    "escalation": "If a patient presents with severe symptoms (e.g., significant bleeding, severe anemia, or signs of infection), immediate escalation to a senior clinician and hematology is required.",
+    "keySafetyConsiderations": "Ensure appropriate blood product transfusions are available for patients with severe anemia or thrombocytopenia. Monitor for signs of infection and bleeding, and ensure timely referral to specialists for further management."
+  }
+}

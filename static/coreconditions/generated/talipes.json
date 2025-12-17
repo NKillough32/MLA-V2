@@ -1,0 +1,121 @@
+{
+  "id": "talipes",
+  "name": "Talipes",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T22:07:19.485763",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Talipes: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nTalipes, commonly known as clubfoot, is a congenital deformity characterized by an abnormal positioning of the foot and ankle. The foot is typically turned inward and downward, which can affect one or both feet.\n\n### Epidemiology\nTalipes occurs in approximately 1 in 1000 live births, with a higher prevalence in males (2:1 ratio). It can be associated with other congenital conditions, such as spina bifida or arthrogryposis.\n\n### Essential Pathophysiology\nThe exact cause of talipes is not fully understood, but it is believed to involve a combination of genetic and environmental factors. Abnormalities in the musculoskeletal system, including shortened tendons and ligaments, lead to the characteristic foot position.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Inwardly turned foot\n- Downward pointing foot\n- Limited range of motion in the ankle\n\n### Key Signs\n- Foot deformity evident at birth\n- Asymmetry between feet\n- Tight Achilles tendon\n\n### Atypical Presentations\n- Bilateral clubfoot\n- Associated with other congenital anomalies\n\n### Red Flags Requiring Immediate Action\n- Severe deformity not responding to initial treatment\n- Presence of neurological signs (e.g., weakness, sensory loss)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical examination of the foot and ankle\n- Ultrasound (in utero diagnosis)\n\n### Second-line Investigations\n- X-rays to assess the severity of the deformity\n\n### Specialist Tests\n- MRI if associated neurological conditions are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the characteristic appearance of the foot. The Pirani scoring system can be used to assess the severity of the deformity.\n\n### Key Differential Diagnoses to Exclude\n- Metatarsus adductus\n- Congenital vertical talus\n- Neuromuscular disorders (e.g., cerebral palsy)\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Ponseti method (serial casting)\n- Foot abduction brace\n\n#### Second-line Treatments\n- Surgical intervention if conservative measures fail\n\n#### Emergency Procedures\n- Tenotomy of the Achilles tendon if necessary\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Continued use of foot abduction brace after initial correction\n\n#### Second-line Treatments\n- Physical therapy to improve range of motion and strength\n\n#### Monitoring Requirements\n- Regular follow-up to assess foot position and function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### NSAIDs (e.g., ibuprofen)\n- **Mechanism of Action**: Anti-inflammatory and analgesic effects\n- **Typical Dosing Range**: 5-10 mg/kg every 6-8 hours as needed\n- **Key Side Effects/Contraindications**: Gastrointestinal upset, renal impairment\n- **When to Use vs. Alternatives**: Use with caution in infants; monitor for side effects.\n\n#### Muscle relaxants (if indicated)\n- **Mechanism of Action**: Reduce muscle tone and spasticity\n- **Typical Dosing Range**: Varies based on specific agent used\n- **Key Side Effects/Contraindications**: Sedation, dizziness\n- **When to Use vs. Alternatives**: Consider in cases with associated neuromuscular conditions.\n\n### Procedures\n\n#### Ponseti method\n- **What it Involves**: A series of casts applied to gradually correct the foot position over several weeks.\n- **Indications**: Initial treatment for talipes; best started early in life.\n- **Key Risks/Complications**: Skin irritation, pressure sores, recurrence of deformity.\n\n#### Surgical correction\n- **What it Involves**: Surgical procedures to correct severe or resistant cases of talipes.\n- **Indications**: Failure of conservative treatment, severe deformity.\n- **Key Risks/Complications**: Infection, nerve injury, stiffness of the foot.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early and appropriate treatment, the prognosis for talipes is generally good, with most children achieving functional feet. However, some may experience residual deformity or require further interventions.\n\n### Important Complications to Watch For\n- Recurrence of deformity\n- Foot pain or stiffness\n- Impaired mobility\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize talipes, initiate appropriate referrals, and provide education to families about the condition and its management.\n\n### When to Escalate to Senior/Specialist\nRefer to a pediatric orthopedic specialist if there is severe deformity, lack of improvement with initial treatment, or associated neurological signs.\n\n### Key Safety Considerations\nEnsure proper fitting of casts and braces to prevent skin breakdown; monitor for signs of complications such as infection or impaired circulation.\n",
+  "content": {
+    "overview": {
+      "definition": "Talipes, commonly known as clubfoot, is a congenital deformity characterized by an abnormal positioning of the foot and ankle. The foot is typically turned inward and downward, which can affect one or both feet.",
+      "epidemiology": "Talipes occurs in approximately 1 in 1000 live births, with a higher prevalence in males (2:1 ratio). It can be associated with other congenital conditions, such as spina bifida or arthrogryposis.",
+      "pathophysiology": "The exact cause of talipes is not fully understood, but it is believed to involve a combination of genetic and environmental factors. Abnormalities in the musculoskeletal system, including shortened tendons and ligaments, lead to the characteristic foot position."
+    },
+    "recognition": {
+      "symptoms": [
+        "Inwardly turned foot",
+        "Downward pointing foot",
+        "Limited range of motion in the ankle"
+      ],
+      "signs": [
+        "Foot deformity evident at birth",
+        "Asymmetry between feet",
+        "Tight Achilles tendon"
+      ],
+      "atypicalPresentations": [
+        "Bilateral clubfoot",
+        "Associated with other congenital anomalies"
+      ],
+      "redFlags": [
+        "Severe deformity not responding to initial treatment",
+        "Presence of neurological signs (e.g., weakness, sensory loss)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical examination of the foot and ankle",
+        "Ultrasound (in utero diagnosis)"
+      ],
+      "secondLine": [
+        "X-rays to assess the severity of the deformity"
+      ],
+      "specialistTests": [
+        "MRI if associated neurological conditions are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the characteristic appearance of the foot. The Pirani scoring system can be used to assess the severity of the deformity.",
+      "differentials": [
+        "Metatarsus adductus",
+        "Congenital vertical talus",
+        "Neuromuscular disorders (e.g., cerebral palsy)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Ponseti method (serial casting)",
+          "Foot abduction brace"
+        ],
+        "secondLine": [
+          "Surgical intervention if conservative measures fail"
+        ],
+        "procedures": [
+          "Tenotomy of the Achilles tendon if necessary"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Continued use of foot abduction brace after initial correction"
+        ],
+        "secondLine": [
+          "Physical therapy to improve range of motion and strength"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess foot position and function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "NSAIDs (e.g., ibuprofen)",
+          "mechanism": "Anti-inflammatory and analgesic effects",
+          "dosing": "5-10 mg/kg every 6-8 hours as needed",
+          "sideEffects": "Gastrointestinal upset, renal impairment",
+          "notes": "Use with caution in infants; monitor for side effects."
+        },
+        {
+          "name": "Muscle relaxants (if indicated)",
+          "mechanism": "Reduce muscle tone and spasticity",
+          "dosing": "Varies based on specific agent used",
+          "sideEffects": "Sedation, dizziness",
+          "notes": "Consider in cases with associated neuromuscular conditions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ponseti method",
+          "description": "A series of casts applied to gradually correct the foot position over several weeks.",
+          "indications": "Initial treatment for talipes; best started early in life.",
+          "risks": "Skin irritation, pressure sores, recurrence of deformity."
+        },
+        {
+          "name": "Surgical correction",
+          "description": "Surgical procedures to correct severe or resistant cases of talipes.",
+          "indications": "Failure of conservative treatment, severe deformity.",
+          "risks": "Infection, nerve injury, stiffness of the foot."
+        }
+      ]
+    },
+    "prognosis": "With early and appropriate treatment, the prognosis for talipes is generally good, with most children achieving functional feet. However, some may experience residual deformity or require further interventions.",
+    "complications": [
+      "Recurrence of deformity",
+      "Foot pain or stiffness",
+      "Impaired mobility"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize talipes, initiate appropriate referrals, and provide education to families about the condition and its management.",
+    "escalation": "Refer to a pediatric orthopedic specialist if there is severe deformity, lack of improvement with initial treatment, or associated neurological signs.",
+    "keySafetyConsiderations": "Ensure proper fitting of casts and braces to prevent skin breakdown; monitor for signs of complications such as infection or impaired circulation."
+  }
+}

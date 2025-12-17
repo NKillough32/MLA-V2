@@ -1,0 +1,124 @@
+{
+  "id": "upper_respiratory_tract_infection_croup",
+  "name": "Upper respiratory tract infection - Croup",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:56:26.148180",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Upper respiratory tract infection - Croup: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCroup, also known as laryngotracheobronchitis, is a common viral infection in children characterized by inflammation of the upper airway, leading to a distinctive barking cough, stridor, and respiratory distress.\n\n### Epidemiology\nCroup primarily affects children aged 6 months to 3 years, with a peak incidence between 1 and 2 years. It is most common in the fall and winter months and is often caused by viral infections, particularly parainfluenza virus.\n\n### Essential Pathophysiology\nCroup is caused by viral infection leading to inflammation and edema of the larynx, trachea, and bronchi. This results in narrowing of the airway, which causes the characteristic symptoms of stridor and a barking cough.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Barking cough\n- Stridor (inspiratory wheezing)\n- Hoarseness\n- Fever\n- Respiratory distress\n\n### Key Signs\n- Tachypnea\n- Use of accessory muscles of respiration\n- Cyanosis (in severe cases)\n- Restlessness or agitation\n\n### Atypical Presentations\n- Mild symptoms without stridor\n- Symptoms persisting beyond 3 days\n- Recurrent episodes\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Cyanosis\n- Altered level of consciousness\n- Inability to swallow or drooling\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Clinical assessment based on history and physical examination\n\n### Second-line Investigations\n- Pulse oximetry to assess oxygen saturation\n- Chest X-ray (if pneumonia is suspected)\n\n### Specialist Tests\n- Viral swabs (if atypical presentation or severe disease)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is primarily clinical, based on the presence of a barking cough, stridor, and respiratory distress in a child, particularly during the fall and winter months.\n\n### Key Differential Diagnoses to Exclude\n- Bacterial tracheitis\n- Epiglottitis\n- Foreign body aspiration\n- Allergic reaction\n- Laryngeal edema\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Dexamethasone 0.6 mg/kg orally (max 10 mg) for 1-3 days\n- Nebulized adrenaline (if stridor at rest)\n\n#### Second-line Treatments\n- Oxygen therapy if hypoxic (SpO2 < 92%)\n- Consider hospitalization for severe cases\n\n#### Emergency Procedures\n- Intubation (in severe cases with respiratory failure)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Education on recognizing symptoms and when to seek help\n\n#### Second-line Treatments\n- Follow-up for recurrent croup or complications\n\n#### Monitoring Requirements\n- Regular assessment of respiratory status and symptom control\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Dexamethasone\n- **Mechanism of Action**: Corticosteroid that reduces inflammation in the airway.\n- **Typical Dosing Range**: 0.6 mg/kg orally once (max 10 mg).\n- **Key Side Effects/Contraindications**: Increased appetite, mood changes, gastrointestinal upset, potential for adrenal suppression with prolonged use.\n- **When to Use vs. Alternatives**: Single dose is effective and well-tolerated.\n\n#### Nebulized adrenaline\n- **Mechanism of Action**: Causes vasoconstriction and reduces edema in the airway.\n- **Typical Dosing Range**: 5 mL of 1:1000 solution nebulized as needed.\n- **Key Side Effects/Contraindications**: Tachycardia, hypertension, anxiety, tremors.\n- **When to Use vs. Alternatives**: Used for acute stridor at rest.\n\n### Procedures\n\n#### Intubation\n- **What it Involves**: Placement of an endotracheal tube to secure the airway.\n- **Indications**: Severe respiratory distress or failure, inability to maintain oxygenation.\n- **Key Risks/Complications**: Trauma to the airway, infection, prolonged sedation, and complications from mechanical ventilation. Risks are higher in children.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nCroup is generally self-limiting, with most children improving within 3-7 days. Severe cases may require hospitalization but have a good long-term prognosis.\n\n### Important Complications to Watch For\n- Bacterial superinfection (e.g., bacterial tracheitis)\n- Respiratory failure\n- Recurrent croup episodes\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of croup, initiate appropriate management, and escalate care when necessary. They should also provide education to parents about the condition and when to seek further help.\n\n### When to Escalate to Senior/Specialist\nIf a child presents with severe respiratory distress, stridor at rest, or altered consciousness, immediate escalation to a senior clinician and potential admission to a pediatric ward or intensive care unit is required.\n\n### Key Safety Considerations\nMonitor respiratory status closely, especially in severe cases. Ensure adequate hydration and consider the need for oxygen therapy. Educate parents on warning signs that require immediate medical attention.\n",
+  "content": {
+    "overview": {
+      "definition": "Croup, also known as laryngotracheobronchitis, is a common viral infection in children characterized by inflammation of the upper airway, leading to a distinctive barking cough, stridor, and respiratory distress.",
+      "epidemiology": "Croup primarily affects children aged 6 months to 3 years, with a peak incidence between 1 and 2 years. It is most common in the fall and winter months and is often caused by viral infections, particularly parainfluenza virus.",
+      "pathophysiology": "Croup is caused by viral infection leading to inflammation and edema of the larynx, trachea, and bronchi. This results in narrowing of the airway, which causes the characteristic symptoms of stridor and a barking cough."
+    },
+    "recognition": {
+      "symptoms": [
+        "Barking cough",
+        "Stridor (inspiratory wheezing)",
+        "Hoarseness",
+        "Fever",
+        "Respiratory distress"
+      ],
+      "signs": [
+        "Tachypnea",
+        "Use of accessory muscles of respiration",
+        "Cyanosis (in severe cases)",
+        "Restlessness or agitation"
+      ],
+      "atypicalPresentations": [
+        "Mild symptoms without stridor",
+        "Symptoms persisting beyond 3 days",
+        "Recurrent episodes"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Cyanosis",
+        "Altered level of consciousness",
+        "Inability to swallow or drooling"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Clinical assessment based on history and physical examination"
+      ],
+      "secondLine": [
+        "Pulse oximetry to assess oxygen saturation",
+        "Chest X-ray (if pneumonia is suspected)"
+      ],
+      "specialistTests": [
+        "Viral swabs (if atypical presentation or severe disease)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is primarily clinical, based on the presence of a barking cough, stridor, and respiratory distress in a child, particularly during the fall and winter months.",
+      "differentials": [
+        "Bacterial tracheitis",
+        "Epiglottitis",
+        "Foreign body aspiration",
+        "Allergic reaction",
+        "Laryngeal edema"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Dexamethasone 0.6 mg/kg orally (max 10 mg) for 1-3 days",
+          "Nebulized adrenaline (if stridor at rest)"
+        ],
+        "secondLine": [
+          "Oxygen therapy if hypoxic (SpO2 < 92%)",
+          "Consider hospitalization for severe cases"
+        ],
+        "procedures": [
+          "Intubation (in severe cases with respiratory failure)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Education on recognizing symptoms and when to seek help"
+        ],
+        "secondLine": [
+          "Follow-up for recurrent croup or complications"
+        ],
+        "monitoring": [
+          "Regular assessment of respiratory status and symptom control"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Dexamethasone",
+          "mechanism": "Corticosteroid that reduces inflammation in the airway.",
+          "dosing": "0.6 mg/kg orally once (max 10 mg).",
+          "sideEffects": "Increased appetite, mood changes, gastrointestinal upset, potential for adrenal suppression with prolonged use.",
+          "notes": "Single dose is effective and well-tolerated."
+        },
+        {
+          "name": "Nebulized adrenaline",
+          "mechanism": "Causes vasoconstriction and reduces edema in the airway.",
+          "dosing": "5 mL of 1:1000 solution nebulized as needed.",
+          "sideEffects": "Tachycardia, hypertension, anxiety, tremors.",
+          "notes": "Used for acute stridor at rest."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Intubation",
+          "description": "Placement of an endotracheal tube to secure the airway.",
+          "indications": "Severe respiratory distress or failure, inability to maintain oxygenation.",
+          "risks": "Trauma to the airway, infection, prolonged sedation, and complications from mechanical ventilation. Risks are higher in children."
+        }
+      ]
+    },
+    "prognosis": "Croup is generally self-limiting, with most children improving within 3-7 days. Severe cases may require hospitalization but have a good long-term prognosis.",
+    "complications": [
+      "Bacterial superinfection (e.g., bacterial tracheitis)",
+      "Respiratory failure",
+      "Recurrent croup episodes"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of croup, initiate appropriate management, and escalate care when necessary. They should also provide education to parents about the condition and when to seek further help.",
+    "escalation": "If a child presents with severe respiratory distress, stridor at rest, or altered consciousness, immediate escalation to a senior clinician and potential admission to a pediatric ward or intensive care unit is required.",
+    "keySafetyConsiderations": "Monitor respiratory status closely, especially in severe cases. Ensure adequate hydration and consider the need for oxygen therapy. Educate parents on warning signs that require immediate medical attention."
+  }
+}

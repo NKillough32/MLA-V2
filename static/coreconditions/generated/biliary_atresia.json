@@ -1,0 +1,127 @@
+{
+  "id": "biliary_atresia",
+  "name": "Biliary atresia",
+  "domains": [
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T21:58:22.267306",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Biliary atresia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nBiliary atresia is a congenital condition characterized by the absence or obstruction of the bile ducts, leading to cholestasis and liver damage in infants.\n\n### Epidemiology\nIt occurs in approximately 1 in 10,000 live births, with a higher prevalence in females and in certain ethnic groups, such as Asian populations.\n\n### Essential Pathophysiology\nThe condition results in the failure of bile to flow from the liver to the intestine, causing bile accumulation in the liver, leading to hepatocellular injury, fibrosis, and ultimately cirrhosis if untreated.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Jaundice (persistent beyond 2 weeks of age)\n- Pale stools (acholic)\n- Dark urine\n- Poor weight gain\n- Irritability\n\n### Key Signs\n- Hepatomegaly\n- Splenomegaly\n- Ascites\n- Failure to thrive\n\n### Atypical Presentations\n- Biliary atresia can sometimes present with only mild jaundice or with signs of liver failure in older infants.\n\n### Red Flags Requiring Immediate Action\n- Jaundice persisting beyond 2 weeks of age\n- Pale stools\n- Severe hepatomegaly\n- Signs of liver failure (e.g., ascites, coagulopathy)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Liver function tests (LFTs)\n- Ultrasound abdomen (to assess liver and biliary tree)\n- Hepatobiliary scintigraphy (HIDA scan)\n\n### Second-line Investigations\n- Magnetic resonance cholangiopancreatography (MRCP)\n- Liver biopsy (to assess for fibrosis and confirm diagnosis)\n\n### Specialist Tests\n- Genetic testing (to rule out syndromic causes)\n- Liver function tests for metabolic disorders\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is based on clinical presentation, imaging findings, and histological confirmation via liver biopsy showing bile duct proliferation and fibrosis.\n\n### Key Differential Diagnoses to Exclude\n- Physiological jaundice\n- Neonatal hepatitis\n- Alpha-1 antitrypsin deficiency\n- Cystic fibrosis\n- Galactosemia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Supportive care (nutrition, hydration)\n- Phototherapy for jaundice\n\n#### Second-line Treatments\n- Consideration for surgical intervention (Kasai procedure)\n\n#### Emergency Procedures\n- Kasai portoenterostomy (to restore bile flow)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Nutritional support (high-calorie diet, fat-soluble vitamins)\n- Management of complications (e.g., pruritus, vitamin deficiencies)\n\n#### Second-line Treatments\n- Liver transplantation (if progressive liver disease occurs)\n\n#### Monitoring Requirements\n- Regular follow-up with pediatric gastroenterology/hepatology for growth and liver function\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Ursodeoxycholic acid\n- **Mechanism of Action**: Improves bile flow and reduces cholestasis\n- **Typical Dosing Range**: 15 mg/kg/day divided into two doses\n- **Key Side Effects/Contraindications**: Diarrhea, abdominal pain\n- **When to Use vs. Alternatives**: May be used to manage cholestasis and improve liver function.\n\n#### Fat-soluble vitamins (A, D, E, K)\n- **Mechanism of Action**: Supplementation to prevent deficiencies due to malabsorption\n- **Typical Dosing Range**: As per pediatric guidelines based on individual deficiencies\n- **Key Side Effects/Contraindications**: Hypervitaminosis (especially A and D)\n- **When to Use vs. Alternatives**: Monitor levels regularly.\n\n### Procedures\n\n#### Kasai portoenterostomy\n- **What it Involves**: Surgical procedure to connect the liver to the intestine, bypassing the obstructed bile ducts.\n- **Indications**: Biliary atresia diagnosed in infants, ideally before 3 months of age.\n- **Key Risks/Complications**: Infection, bleeding, bile leaks, need for future liver transplantation.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWithout surgical intervention, biliary atresia leads to progressive liver failure and death by 2 years of age. With early intervention, prognosis improves significantly, but many patients may still require liver transplantation later in life.\n\n### Important Complications to Watch For\n- Chronic liver disease\n- Portal hypertension\n- Variceal bleeding\n- Malnutrition\n- Fat-soluble vitamin deficiencies\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be vigilant in recognizing signs of biliary atresia in jaundiced infants, initiate appropriate investigations, and refer to pediatric specialists promptly.\n\n### When to Escalate to Senior/Specialist\nIf biliary atresia is suspected, escalate care to a pediatric gastroenterologist or hepatologist for further evaluation and management.\n\n### Key Safety Considerations\nEnsure timely referral for jaundiced infants beyond 2 weeks of age, monitor for signs of liver failure, and provide nutritional support to prevent malnutrition.\n",
+  "content": {
+    "overview": {
+      "definition": "Biliary atresia is a congenital condition characterized by the absence or obstruction of the bile ducts, leading to cholestasis and liver damage in infants.",
+      "epidemiology": "It occurs in approximately 1 in 10,000 live births, with a higher prevalence in females and in certain ethnic groups, such as Asian populations.",
+      "pathophysiology": "The condition results in the failure of bile to flow from the liver to the intestine, causing bile accumulation in the liver, leading to hepatocellular injury, fibrosis, and ultimately cirrhosis if untreated."
+    },
+    "recognition": {
+      "symptoms": [
+        "Jaundice (persistent beyond 2 weeks of age)",
+        "Pale stools (acholic)",
+        "Dark urine",
+        "Poor weight gain",
+        "Irritability"
+      ],
+      "signs": [
+        "Hepatomegaly",
+        "Splenomegaly",
+        "Ascites",
+        "Failure to thrive"
+      ],
+      "atypicalPresentations": [
+        "Biliary atresia can sometimes present with only mild jaundice or with signs of liver failure in older infants."
+      ],
+      "redFlags": [
+        "Jaundice persisting beyond 2 weeks of age",
+        "Pale stools",
+        "Severe hepatomegaly",
+        "Signs of liver failure (e.g., ascites, coagulopathy)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Liver function tests (LFTs)",
+        "Ultrasound abdomen (to assess liver and biliary tree)",
+        "Hepatobiliary scintigraphy (HIDA scan)"
+      ],
+      "secondLine": [
+        "Magnetic resonance cholangiopancreatography (MRCP)",
+        "Liver biopsy (to assess for fibrosis and confirm diagnosis)"
+      ],
+      "specialistTests": [
+        "Genetic testing (to rule out syndromic causes)",
+        "Liver function tests for metabolic disorders"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is based on clinical presentation, imaging findings, and histological confirmation via liver biopsy showing bile duct proliferation and fibrosis.",
+      "differentials": [
+        "Physiological jaundice",
+        "Neonatal hepatitis",
+        "Alpha-1 antitrypsin deficiency",
+        "Cystic fibrosis",
+        "Galactosemia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Supportive care (nutrition, hydration)",
+          "Phototherapy for jaundice"
+        ],
+        "secondLine": [
+          "Consideration for surgical intervention (Kasai procedure)"
+        ],
+        "procedures": [
+          "Kasai portoenterostomy (to restore bile flow)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Nutritional support (high-calorie diet, fat-soluble vitamins)",
+          "Management of complications (e.g., pruritus, vitamin deficiencies)"
+        ],
+        "secondLine": [
+          "Liver transplantation (if progressive liver disease occurs)"
+        ],
+        "monitoring": [
+          "Regular follow-up with pediatric gastroenterology/hepatology for growth and liver function"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Ursodeoxycholic acid",
+          "mechanism": "Improves bile flow and reduces cholestasis",
+          "dosing": "15 mg/kg/day divided into two doses",
+          "sideEffects": "Diarrhea, abdominal pain",
+          "notes": "May be used to manage cholestasis and improve liver function."
+        },
+        {
+          "name": "Fat-soluble vitamins (A, D, E, K)",
+          "mechanism": "Supplementation to prevent deficiencies due to malabsorption",
+          "dosing": "As per pediatric guidelines based on individual deficiencies",
+          "sideEffects": "Hypervitaminosis (especially A and D)",
+          "notes": "Monitor levels regularly."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Kasai portoenterostomy",
+          "description": "Surgical procedure to connect the liver to the intestine, bypassing the obstructed bile ducts.",
+          "indications": "Biliary atresia diagnosed in infants, ideally before 3 months of age.",
+          "risks": "Infection, bleeding, bile leaks, need for future liver transplantation."
+        }
+      ]
+    },
+    "prognosis": "Without surgical intervention, biliary atresia leads to progressive liver failure and death by 2 years of age. With early intervention, prognosis improves significantly, but many patients may still require liver transplantation later in life.",
+    "complications": [
+      "Chronic liver disease",
+      "Portal hypertension",
+      "Variceal bleeding",
+      "Malnutrition",
+      "Fat-soluble vitamin deficiencies"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be vigilant in recognizing signs of biliary atresia in jaundiced infants, initiate appropriate investigations, and refer to pediatric specialists promptly.",
+    "escalation": "If biliary atresia is suspected, escalate care to a pediatric gastroenterologist or hepatologist for further evaluation and management.",
+    "keySafetyConsiderations": "Ensure timely referral for jaundiced infants beyond 2 weeks of age, monitor for signs of liver failure, and provide nutritional support to prevent malnutrition."
+  }
+}
