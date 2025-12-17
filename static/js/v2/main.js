@@ -1858,7 +1858,7 @@ class MLAQuizApp {
             <div class="cc-section">
                 <h3 class="cc-section-title">🔬 Investigation</h3>
                 
-                ${condition.investigation.immediate ? `
+                ${Array.isArray(condition.investigation.immediate) && condition.investigation.immediate.length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Immediate Investigations</h4>
                     <ul class="cc-list">
@@ -1867,7 +1867,7 @@ class MLAQuizApp {
                 </div>
                 ` : ''}
 
-                ${condition.investigation.further ? `
+                ${Array.isArray(condition.investigation.further) && condition.investigation.further.length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Further Investigations</h4>
                     <ul class="cc-list">
@@ -1876,7 +1876,7 @@ class MLAQuizApp {
                 </div>
                 ` : ''}
 
-                ${condition.investigation.interpretation ? `
+                ${Array.isArray(condition.investigation.interpretation) && condition.investigation.interpretation.length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Interpretation</h4>
                     <ul class="cc-list">
