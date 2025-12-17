@@ -668,6 +668,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Highly specific for SLE. Rising titres suggest flare. Monitor every 3 months in active disease'
             },
             'Anti-ENA (Extractable Nuclear Antigens)': {
+                normal: 'Negative (no ENA antibodies detected)',
                 'Anti-Ro (SS-A)': 'Sjögren syndrome, SLE, subacute cutaneous lupus, congenital heart block',
                 'Anti-La (SS-B)': 'Sjögren syndrome (usually with anti-Ro), SLE',
                 'Anti-Sm (Smith)': 'SLE (highly specific but only 30% sensitive)',
@@ -675,6 +676,7 @@ window.labDatabase = {
                 'Anti-Scl-70': 'Diffuse systemic sclerosis (scleroderma)',
                 'Anti-Jo-1': 'Polymyositis, dermatomyositis, antisynthetase syndrome',
                 'Anti-centromere': 'Limited systemic sclerosis (CREST syndrome)',
+                description: 'Order after a positive ANA to refine connective tissue disease diagnosis.',
                 clinicalSignificance: 'Ordered after positive ANA to identify specific disease. Multiple antibodies may be present'
             },
             'Rheumatoid Factor (RF)': {
@@ -689,6 +691,7 @@ window.labDatabase = {
                 clinicalSignificance: 'More specific than RF for RA. Can be positive before clinical symptoms (pre-RA). Helps distinguish RA from other inflammatory arthritis. High titre = worse prognosis'
             },
             'Coeliac Serology': {
+                normal: 'Negative serology while consuming gluten',
                 'tTG-IgA (Tissue Transglutaminase)': 'Normal: <7 U/mL. High: >10 U/mL (98% sensitive for coeliac disease)',
                 'Total IgA': 'Check to exclude IgA deficiency (2-3% coeliacs) which causes false negative tTG-IgA',
                 'EMA-IgA (Endomysial Antibody)': '99% specific for coeliac disease but less sensitive than tTG',
@@ -696,12 +699,14 @@ window.labDatabase = {
                 clinicalSignificance: 'Test on gluten-containing diet (6 weeks). Positive serology → duodenal biopsy for diagnosis. Repeat serology yearly to monitor adherence to gluten-free diet'
             },
             'Thyroid Autoantibodies': {
+                normal: 'Negative thyroid autoantibodies',
                 'Anti-TPO (Thyroid Peroxidase)': 'Normal: <35 IU/mL. Positive: Hashimoto thyroiditis (90%), Graves disease (70%), postpartum thyroiditis',
                 'Anti-Thyroglobulin': 'Hashimoto thyroiditis, Graves disease (less sensitive than TPO)',
                 'TSH Receptor Antibodies (TRAb)': 'Graves disease (98% sensitivity/specificity). Stimulating antibodies cause hyperthyroidism',
                 clinicalSignificance: 'Anti-TPO positive predicts progression to hypothyroidism. TRAb diagnostic for Graves disease. Monitor TRAb in pregnancy (crosses placenta - risk of neonatal thyrotoxicosis)'
             },
             'Liver Autoantibodies': {
+                normal: 'Negative for liver-specific autoantibodies',
                 'AMA (Anti-Mitochondrial)': 'Primary biliary cholangitis (95% sensitive/specific). M2 subtype most specific',
                 'ANA in liver disease': 'Autoimmune hepatitis, PBC',
                 'Anti-SMA (Smooth Muscle)': 'Autoimmune hepatitis type 1',
@@ -715,6 +720,7 @@ window.labDatabase = {
         name: 'Microbiology Investigations',
         values: {
             'Blood Cultures': {
+                normal: 'No growth after 5 days of incubation',
                 indication: 'Suspected bacteraemia/sepsis, endocarditis, fever of unknown origin',
                 sampling: 'Draw 2-3 sets (aerobic + anaobic bottles each) from different sites before antibiotics if possible. Take when spiking temperature',
                 results: {
@@ -731,6 +737,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Always send before antibiotics in suspected pyelonephritis. Asymptomatic bacteriuria (positive culture, no symptoms) usually does not need treatment except in pregnancy'
             },
             'Sputum Culture': {
+                normal: 'Mixed upper airway flora or no significant growth',
                 indication: 'Pneumonia, COPD exacerbation, TB, suspected atypical organism',
                 results: {
                     'Common pathogens': 'Strep pneumoniae, H. influenzae, Moraxella, Staph aureus (including MRSA)',
@@ -740,19 +747,22 @@ window.labDatabase = {
                 clinicalSignificance: 'Quality assessed by microscopy (<10 epithelial cells/field = good sample). Difficult to distinguish colonization from infection especially in COPD'
             },
             'Stool Culture & Testing': {
+                normal: 'No enteric pathogens or toxins detected',
                 'Standard Culture': 'Detects Salmonella, Shigella, Campylobacter, E. coli O157',
                 'Stool Antigen Tests': 'Rapid tests for C. difficile toxin, Giardia, Cryptosporidium, H. pylori',
                 'C. difficile': 'Test for toxin (GDH + toxin or PCR). Send sample if diarrhoea ≥3 loose stools in 24h and recent antibiotics or hospital stay',
                 'Ova, Cysts & Parasites': 'Requires 3 samples. For persistent diarrhoea especially if travel history',
                 clinicalSignificance: 'Only send if diarrhoea ≥3 days (unless bloody, severe, immunocompromised, or recent travel). C. diff testing only valid with diarrhoea'
             },
-            'Wound & Skin Swabs': {
+                'Wound & Skin Swabs': {
+                normal: 'No pathogenic growth (skin commensals only)',
                 indication: 'Infected wounds, cellulitis (aspirate if fluctuant), MRSA screening',
                 'MRSA Screening': 'Nasal swab ± groin/perineum. Pre-op for high-risk surgery or if previous MRSA. Decolonize with nasal mupirocin + chlorhexidine washes if positive',
                 results: 'Common pathogens: Staph aureus (including MRSA), Strep pyogenes, Pseudomonas (chronic wounds), anaerobes (diabetic foot)',
                 clinicalSignificance: 'Superficial swabs often grow skin commensals. Aspirate or deep tissue sample better if possible. Diabetic foot ulcers need deep swab or bone biopsy if osteomyelitis suspected'
             },
             'Viral Serology': {
+                normal: 'Negative serology (IgM and IgG absent)',
                 'HIV': 'Combined antigen/antibody test (4th generation). Window period 45 days. Positive screen needs confirmatory test. CD4 count and viral load if positive',
                 'Hepatitis B': 'HBsAg (acute infection), Anti-HBs (immunity from vaccine/recovery), Anti-HBc (past/current infection), HBeAg (high infectivity)',
                 'Hepatitis C': 'Anti-HCV antibody (screen), HCV RNA PCR (confirms active infection). Treat if RNA positive',
@@ -774,6 +784,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Always measure if no contraindications. Essential for diagnosis of idiopathic intracranial hypertension'
             },
             'Appearance': {
+                normal: 'Crystal clear, colourless CSF',
                 'Clear': 'Normal or viral meningitis',
                 'Turbid/cloudy': 'Bacterial meningitis (high WCC)',
                 'Bloody': 'Traumatic tap vs SAH (distinguish with xanthochromia, three-tube test)',
@@ -804,6 +815,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Always compare to paired blood glucose (taken within 1h). Low CSF glucose with high protein = bacterial or TB meningitis'
             },
             'Microbiology': {
+                normal: 'Negative Gram stain, PCR and culture',
                 'Gram stain': 'Immediate result. Positive in 60-90% bacterial meningitis. Guides initial antibiotics',
                 'Culture': 'Gold standard but takes 24-48h. Sensitivity reduced if antibiotics given',
                 'PCR': 'Meningococcal/pneumococcal PCR rapid. Viral PCR (HSV, VZV, enteroviruses) - 95% sensitive',
@@ -943,6 +955,7 @@ window.labDatabase = {
         name: 'Neurophysiology Studies',
         values: {
             'Electroencephalography (EEG)': {
+                normal: 'Posterior dominant alpha rhythm (8-13 Hz), symmetric with normal reactivity',
                 indication: 'Seizures, encephalopathy, encephalitis, brain death',
                 findings: {
                     'Normal': 'Posterior dominant rhythm 8-13 Hz (alpha), symmetrical',
@@ -955,6 +968,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Normal EEG does not exclude epilepsy (50% sensitivity). Repeat or sleep-deprived EEG increases yield. Video-telemetry gold standard'
             },
             'Nerve Conduction Studies (NCS)': {
+                normal: 'Normal conduction velocities and amplitudes without conduction block',
                 indication: 'Peripheral neuropathy, radiculopathy, carpal tunnel syndrome, GBS',
                 measurements: 'Sensory and motor nerve conduction velocities, amplitudes, latencies',
                 findings: {
@@ -966,6 +980,7 @@ window.labDatabase = {
                 clinicalSignificance: 'Distinguishes axonal from demyelinating neuropathy - guides treatment. Delay 2-3 weeks post injury for Wallerian degeneration'
             },
             'Electromyography (EMG)': {
+                normal: 'Insertional activity only with no spontaneous discharges',
                 indication: 'Myopathy, anterior horn cell disease (MND), radiculopathy',
                 technique: 'Needle electrode inserted into muscle - records spontaneous and voluntary activity',
                 findings: {
