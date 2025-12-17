@@ -47459,3 +47459,66 @@ export const coreConditions = {
         "domain": "Orthopaedics"
     }
 };
+
+// Helper functions
+export function getCondition(id) {
+    return coreConditions[id] || null;
+}
+
+export function searchConditions(query) {
+    if (!query) return [];
+    
+    const searchLower = query.toLowerCase();
+    const results = [];
+    
+    for (const [id, condition] of Object.entries(coreConditions)) {
+        const name = condition.name?.toLowerCase() || '';
+        const domain = condition.domain?.toLowerCase() || '';
+        const synonyms = (condition.synonyms || []).join(' ').toLowerCase();
+        
+        if (name.includes(searchLower) || 
+            domain.includes(searchLower) || 
+            synonyms.includes(searchLower) ||
+            id.includes(searchLower)) {
+            results.push({ id, ...condition });
+        }
+    }
+    
+    return results;
+}
+
+export function getConditionsByDomain(domain) {
+    if (!domain) return [];
+    
+    const domainLower = domain.toLowerCase();
+    return Object.entries(coreConditions)
+        .filter(([_, condition]) => condition.domain?.toLowerCase() === domainLower)
+        .map(([id, condition]) => ({ id, ...condition }));
+}
+
+export function getAllDomains() {
+    const domains = new Set();
+    for (const condition of Object.values(coreConditions)) {
+        if (condition.domain) {
+            domains.add(condition.domain);
+        }
+    }
+    return Array.from(domains).sort();
+}
+
+export function getStatistics() {
+    const domains = {};
+    let total = 0;
+    
+    for (const condition of Object.values(coreConditions)) {
+        total++;
+        const domain = condition.domain || 'Unknown';
+        domains[domain] = (domains[domain] || 0) + 1;
+    }
+    
+    return {
+        total,
+        byDomain: domains,
+        domains: Object.keys(domains).sort()
+    };
+}

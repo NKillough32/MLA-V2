@@ -7,7 +7,7 @@ import { eventBus } from './EventBus.js';
 import { storage } from './StorageManager.js';
 import { analytics } from './AnalyticsManager.js';
 import { 
-    coreConditionsDatabase, 
+    coreConditions as coreConditionsDatabase, 
     getCondition, 
     searchConditions, 
     getConditionsByDomain,
