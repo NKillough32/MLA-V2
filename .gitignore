@@ -2,3 +2,6 @@
 static/asset-manifest.json
 static/js/v2/main.*.js
 static/js/v2/**/*.????????.js
+scripts/generate_missing.py
+scripts/generate_stroke.py
+scripts/generate_tia.py
