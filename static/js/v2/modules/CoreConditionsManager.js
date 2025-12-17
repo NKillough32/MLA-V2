@@ -24,6 +24,11 @@ export class CoreConditionsManager {
         this.favoriteConditions = new Set();
         this.recentConditions = [];
         this.maxRecentConditions = 20;
+        
+        // Enhanced content system
+        this.enhancedConditions = new Map();
+        this.enhancedIndex = null;
+        this.useEnhancedContent = true; // Prefer enhanced content when available
     }
 
     /**
@@ -36,6 +41,9 @@ export class CoreConditionsManager {
         }
 
         try {
+            // Load enhanced content index if available
+            await this.loadEnhancedIndex();
+            
             // Load user preferences
             await this.loadFavorites();
             await this.loadRecentConditions();
@@ -43,9 +51,15 @@ export class CoreConditionsManager {
             this.initialized = true;
             console.log('📚 Core Conditions Manager initialized');
             
+            const legacyStats = getStatistics();
+            const enhancedStats = this.enhancedIndex ? {
+                totalConditions: this.enhancedIndex.totalConditions,
+                enhancedAvailable: true
+            } : { enhancedAvailable: false };
+            
             return {
                 success: true,
-                stats: getStatistics()
+                stats: { ...legacyStats, enhanced: enhancedStats }
             };
         } catch (error) {
             console.error('Failed to initialize CoreConditionsManager:', error);
@@ -509,6 +523,174 @@ export class CoreConditionsManager {
         }
         
         return management.slice(0, 5);
+    }
+
+    /**
+     * Load enhanced conditions index
+     */
+    async loadEnhancedIndex() {
+        try {
+            const response = await fetch('/static/coreconditions/generated/index.json');
+            if (response.ok) {
+                this.enhancedIndex = await response.json();
+                console.log(`📖 Enhanced: Loaded index for ${this.enhancedIndex.totalConditions} conditions`);
+                return true;
+            }
+        } catch (error) {
+            console.warn('Enhanced conditions not available yet:', error.message);
+        }
+        return false;
+    }
+
+    /**
+     * Get enhanced condition data
+     */
+    async getEnhancedCondition(conditionName) {
+        if (!this.enhancedIndex) return null;
+
+        // Find matching condition by name
+        const condition = this.enhancedIndex.conditions.find(c => 
+            c.name.toLowerCase() === conditionName.toLowerCase()
+        );
+
+        if (!condition) return null;
+
+        // Check cache first
+        if (this.enhancedConditions.has(condition.id)) {
+            return this.enhancedConditions.get(condition.id);
+        }
+
+        // Load from server
+        try {
+            const response = await fetch(`/static/coreconditions/generated/${condition.filename}`);
+            if (response.ok) {
+                const data = await response.json();
+                this.enhancedConditions.set(condition.id, data);
+                return data;
+            }
+        } catch (error) {
+            console.error(`Failed to load enhanced condition ${conditionName}:`, error);
+        }
+        
+        return null;
+    }
+
+    /**
+     * Get condition with enhanced data if available, fallback to legacy
+     */
+    async getConditionData(conditionId) {
+        // Try enhanced first if available
+        if (this.useEnhancedContent && this.enhancedIndex) {
+            const enhanced = await this.getEnhancedCondition(conditionId);
+            if (enhanced) {
+                return this.formatEnhancedCondition(enhanced);
+            }
+        }
+
+        // Fallback to legacy system
+        return getCondition(conditionId);
+    }
+
+    /**
+     * Format enhanced condition for compatibility with existing UI
+     */
+    formatEnhancedCondition(enhanced) {
+        const content = enhanced.content;
+        
+        return {
+            name: enhanced.name,
+            domains: enhanced.domains,
+            recognition: {
+                typical: content.recognition.keySymptoms || [],
+                atypical: content.recognition.atypicalPresentations || [],
+                examination: content.recognition.keySigns || [],
+                redFlags: content.recognition.redFlags || []
+            },
+            investigation: {
+                immediate: content.investigation.firstLine || [],
+                further: content.investigation.secondLine || [],
+                specialist: content.investigation.specialistTests || []
+            },
+            diagnosis: {
+                criteria: content.diagnosis.criteria || '',
+                differential: content.diagnosis.differentials || []
+            },
+            management: {
+                acute: {
+                    firstLine: content.management.acute.firstLine || [],
+                    secondLine: content.management.acute.secondLine || [],
+                    procedures: content.management.acute.procedures || []
+                },
+                chronic: {
+                    firstLine: content.management.chronic.firstLine || [],
+                    secondLine: content.management.chronic.secondLine || [],
+                    monitoring: content.management.chronic.monitoring || []
+                },
+                drugs: content.management.drugs || [],
+                procedures: content.management.procedures || []
+            },
+            prognosis: content.prognosis || '',
+            complications: content.complications || [],
+            foundationRole: content.foundationDoctorRole || '',
+            escalation: content.escalation || '',
+            safetyConsiderations: content.keySafetyConsiderations || '',
+            enhanced: true // Flag to indicate this is enhanced content
+        };
+    }
+
+    /**
+     * Search enhanced conditions
+     */
+    searchEnhancedConditions(query) {
+        if (!this.enhancedIndex) return [];
+
+        const lowerQuery = query.toLowerCase();
+        return this.enhancedIndex.conditions.filter(condition =>
+            condition.name.toLowerCase().includes(lowerQuery) ||
+            condition.domains.some(domain => domain.toLowerCase().includes(lowerQuery))
+        );
+    }
+
+    /**
+     * Get drug information with mechanisms
+     */
+    async getDrugInformation(conditionName) {
+        const enhanced = await this.getEnhancedCondition(conditionName);
+        if (enhanced && enhanced.content.management.drugs) {
+            return enhanced.content.management.drugs;
+        }
+        return [];
+    }
+
+    /**
+     * Get procedure information
+     */
+    async getProcedureInformation(conditionName) {
+        const enhanced = await this.getEnhancedCondition(conditionName);
+        if (enhanced && enhanced.content.management.procedures) {
+            return enhanced.content.management.procedures;
+        }
+        return [];
+    }
+
+    /**
+     * Check if enhanced content is available
+     */
+    hasEnhancedContent() {
+        return this.enhancedIndex !== null;
+    }
+
+    /**
+     * Get enhanced statistics
+     */
+    getEnhancedStats() {
+        if (!this.enhancedIndex) return null;
+        
+        return {
+            totalConditions: this.enhancedIndex.totalConditions,
+            generatedAt: this.enhancedIndex.generatedAt,
+            cached: this.enhancedConditions.size
+        };
     }
 }
 

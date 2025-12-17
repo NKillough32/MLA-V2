@@ -1,0 +1,53 @@
+{
+  "id": "anaemia",
+  "name": "Anaemia",
+  "domains": [
+    "Anaesthesia and Critical Care",
+    "Obstetrics",
+    "Paediatrics",
+    "Post-operative care",
+    "Pre-operative Care"
+  ],
+  "lastUpdated": "2025-12-17T17:33:53.194050",
+  "content": {
+    "overview": {
+      "definition": "",
+      "epidemiology": "",
+      "pathophysiology": ""
+    },
+    "recognition": {
+      "keySymptoms": [],
+      "keySigns": [],
+      "atypicalPresentations": [],
+      "redFlags": []
+    },
+    "investigation": {
+      "firstLine": [],
+      "secondLine": [],
+      "specialistTests": []
+    },
+    "diagnosis": {
+      "criteria": "",
+      "differentials": []
+    },
+    "management": {
+      "acute": {
+        "firstLine": [],
+        "secondLine": [],
+        "procedures": []
+      },
+      "chronic": {
+        "firstLine": [],
+        "secondLine": [],
+        "monitoring": []
+      },
+      "drugs": [],
+      "procedures": []
+    },
+    "prognosis": "",
+    "complications": [],
+    "foundationDoctorRole": "",
+    "escalation": "",
+    "rawContent": "# Comprehensive Medical Reference on Anaemia for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAnaemia is defined as a reduction in the number of red blood cells (RBCs) or hemoglobin concentration below normal levels, leading to decreased oxygen-carrying capacity of the blood. It is classified based on red cell morphology (microcytic, macrocytic, normocytic) and underlying etiology (iron deficiency, vitamin B12 deficiency, chronic disease, etc.).\n\n### Epidemiology\n- **Prevalence**: Anaemia affects approximately 25% of the global population, with higher rates in developing countries.\n- **Demographics**: It is more prevalent in women (especially during menstruation and pregnancy), children, and the elderly. Specific populations, such as those with chronic diseases or malnutrition, are also at increased risk.\n\n### Essential Pathophysiology\nAnaemia can result from:\n- **Decreased production**: Bone marrow disorders, nutritional deficiencies (iron, B12, folate), chronic inflammation.\n- **Increased destruction**: Hemolytic anaemias (autoimmune, hereditary).\n- **Blood loss**: Acute (trauma, surgery) or chronic (GI bleeding, heavy menstruation).\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Fatigue and weakness\n- Shortness of breath on exertion\n- Dizziness or lightheadedness\n- Palpitations\n- Headaches\n- Cold extremities\n\n### Key Signs\n- Pallor (conjunctival, skin)\n- Tachycardia\n- Hypotension (in severe cases)\n- Systolic murmur (due to increased cardiac output)\n- Signs of underlying causes (e.g., jaundice in hemolytic anaemia)\n\n### Atypical Presentations\n- **Elderly**: May present with confusion, falls, or unexplained fatigue.\n- **Immunocompromised**: May have atypical infections or exacerbation of underlying conditions.\n\n### Red Flags Requiring Immediate Action\n- Severe anaemia (Hb < 70 g/L)\n- Signs of acute blood loss (e.g., hypotension, tachycardia)\n- Chest pain or severe dyspnoea\n- Altered mental status\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- **Bedside**: Vital signs, general examination.\n- **Basic Bloods**: Full blood count (FBC), reticulocyte count, peripheral blood smear.\n- **Iron Studies**: Serum iron, ferritin, total iron-binding capacity (TIBC).\n\n### Second-line Investigations\n- **Bone Marrow Biopsy**: If aplastic anaemia or malignancy is suspected.\n- **Hemolysis Tests**: LDH, haptoglobin, bilirubin levels.\n- **Vitamin Levels**: Serum B12, folate levels.\n\n### Specialist Tests\n- Referral to a haematologist for suspected myelodysplastic syndromes, aplastic anaemia, or complex cases.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria\n- **Anaemia**: Hb < 130 g/L in men, < 120 g/L in women.\n- **Microcytic Anaemia**: Low MCV (< 80 fL), often iron deficiency.\n- **Macrocytic Anaemia**: High MCV (> 100 fL), often due to B12 or folate deficiency.\n\n### Key Differential Diagnoses\n- Iron deficiency anaemia\n- Anemia of chronic disease\n- Thalassemia\n- Sickle cell disease\n- Aplastic anaemia\n- Hemolytic anaemia\n\n## 5. MANAGEMENT\n\n### Acute Management\n#### First-line Treatments\n- **Blood Transfusion**: Indicated for severe anaemia (Hb < 70 g/L) or symptomatic patients.\n- **IV Iron**: For patients unable to tolerate oral iron or with severe deficiency.\n\n#### Second-line Treatments\n- **Erythropoiesis-stimulating agents (ESAs)**: In chronic kidney disease or cancer-related anaemia.\n\n#### Emergency Procedures\n- **Surgical intervention**: If there is a source of acute bleeding (e.g., trauma, GI bleed).\n\n### Chronic Management\n#### First-line Treatments\n- **Oral Iron Supplements**: Ferrous sulfate 200 mg TID (elemental iron 65 mg) for iron deficiency.\n- **Vitamin B12 Injections**: 1 mg IM every 3 months for B12 deficiency.\n\n#### Second-line Treatments\n- **Folic Acid**: 5 mg daily for folate deficiency.\n- **ESAs**: For chronic disease-related anaemia.\n\n#### Monitoring Requirements\n- Regular FBC to monitor Hb levels and response to treatment.\n- Iron studies to assess iron status during treatment.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n#### Iron Supplements\n- **Mechanism of Action**: Increases iron availability for hemoglobin synthesis.\n- **Typical Dosing Range**: Ferrous sulfate 200 mg TID.\n- **Key Side Effects**: Gastrointestinal upset, constipation, dark stools.\n- **Contraindications**: Hemochromatosis, hemosiderosis.\n- **When to Use**: For iron deficiency anaemia; alternatives include IV iron for intolerance.\n\n#### Erythropoiesis-Stimulating Agents (ESAs)\n- **Mechanism of Action**: Stimulates RBC production in the bone marrow.\n- **Typical Dosing Range**: Epoetin alfa 50-100 units/kg SC 3 times weekly.\n- **Key Side Effects**: Hypertension, thromboembolic events.\n- **Contraindications**: Uncontrolled hypertension, certain malignancies.\n- **When to Use**: In chronic kidney disease or cancer-related anaemia.\n\n### Procedures\n#### Blood Transfusion\n- **What It Involves**: Administration of donor blood products to restore blood volume and improve oxygen delivery.\n- **Indications**: Severe anaemia, symptomatic patients, acute blood loss.\n- **Key Risks/Complications**: Allergic reactions, transfusion-related acute lung injury (TRALI), hemolytic reactions.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\n- With appropriate management, most patients with anaemia can achieve normal hemoglobin levels and improve symptoms.\n- Chronic anaemia may require ongoing management and monitoring.\n\n### Important Complications to Watch For\n- Heart failure due to chronic anaemia.\n- Severe fatigue impacting quality of life.\n- Increased risk of falls and fractures in the elderly.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\n- Conduct initial assessments and recognize signs/symptoms of anaemia.\n- Order and interpret basic investigations.\n- Initiate first-line treatments under supervision.\n\n### When to Escalate to Senior/Specialist\n- If the patient presents with severe anaemia or red flags.\n- If the cause of anaemia is unclear after initial investigations.\n- For management of complex cases or when specialist input is required.\n\n### Key Safety Considerations\n- Monitor patients closely for signs of deterioration.\n- Ensure informed consent for blood transfusions and understand the risks involved.\n- Be aware of the potential for adverse reactions to treatments and manage them promptly.\n\nThis comprehensive guide aims to equip Foundation Year doctors with the knowledge and skills necessary to recognize, investigate, diagnose, and manage anaemia effectively in various clinical settings."
+  }
+}
