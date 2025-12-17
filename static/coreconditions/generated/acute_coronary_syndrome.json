@@ -1,0 +1,170 @@
+{
+  "id": "acute_coronary_syndrome",
+  "name": "Acute coronary syndrome",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T18:57:08.155101",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute coronary syndrome: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute coronary syndrome (ACS) is a spectrum of conditions associated with sudden, reduced blood flow to the heart, including unstable angina, non-ST elevation myocardial infarction (NSTEMI), and ST elevation myocardial infarction (STEMI).\n\n### Epidemiology\nACS is a leading cause of morbidity and mortality worldwide, with an incidence of approximately 1.5 million cases annually in the United States alone. Risk factors include age, male gender, smoking, hypertension, diabetes, hyperlipidemia, and family history of coronary artery disease.\n\n### Essential Pathophysiology\nACS typically results from the rupture of an atherosclerotic plaque in a coronary artery, leading to thrombosis and subsequent ischemia of the myocardial tissue. The degree of ischemia and the duration of occlusion determine the clinical presentation and severity of the syndrome.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Chest pain (often described as pressure, squeezing, or heaviness)\n- Shortness of breath\n- Nausea or vomiting\n- Diaphoresis (sweating)\n- Palpitations\n- Fatigue\n\n### Key Signs\n- Tachycardia\n- Hypotension\n- Diaphoresis\n- Pallor\n- S3 or S4 heart sounds\n- New murmur\n\n### Atypical Presentations\n- Abdominal pain\n- Jaw pain\n- Back pain\n- Fatigue in elderly or diabetic patients\n- Syncope\n\n### Red Flags Requiring Immediate Action\n- Persistent chest pain lasting more than 15 minutes\n- Severe shortness of breath\n- Signs of heart failure (e.g., pulmonary edema)\n- Cardiogenic shock (hypotension, altered mental status)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- 12-lead ECG\n- Cardiac biomarkers (troponin, CK-MB)\n- Chest X-ray\n\n### Second-line Investigations\n- Echocardiography\n- Stress testing (if stable)\n- Coronary angiography (if indicated)\n\n### Specialist Tests\n- Cardiac MRI\n- CT coronary angiography\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of ACS is based on clinical presentation, ECG changes, and elevated cardiac biomarkers. The presence of chest pain, ST-segment changes on ECG, and elevated troponin levels confirms the diagnosis.\n\n### Key Differential Diagnoses to Exclude\n- Aortic dissection\n- Pulmonary embolism\n- Pneumothorax\n- Gastroesophageal reflux disease (GERD)\n- Pericarditis\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Aspirin 300 mg (chewed)\n- Nitroglycerin (sublingual) for pain relief\n- Oxygen therapy if hypoxic\n- Morphine for severe pain\n\n#### Second-line Treatments\n- Antiplatelet therapy (e.g., clopidogrel)\n- Beta-blockers (if no contraindications)\n- ACE inhibitors (if heart failure or hypertension present)\n\n#### Emergency Procedures\n- Coronary angioplasty and stenting (PCI) for STEMI or high-risk NSTEMI\n- Coronary artery bypass grafting (CABG) for multi-vessel disease or failed PCI\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Lifestyle modifications (diet, exercise, smoking cessation)\n- Statins for lipid management\n- Beta-blockers for secondary prevention\n\n#### Second-line Treatments\n- ACE inhibitors for heart failure or hypertension\n- Antiplatelet therapy (e.g., aspirin, clopidogrel)\n\n#### Monitoring Requirements\n- Regular follow-up for cardiac rehabilitation\n- Monitoring of cardiac risk factors (lipids, blood pressure)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Aspirin\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking thromboxane A2 production.\n- **Typical Dosing Range**: 300 mg loading dose, then 75-100 mg daily.\n- **Key Side Effects/Contraindications**: Gastrointestinal bleeding, allergic reactions.\n- **When to Use vs. Alternatives**: Essential for all ACS patients unless contraindicated.\n\n#### Clopidogrel\n- **Mechanism of Action**: Inhibits platelet aggregation by blocking the P2Y12 receptor.\n- **Typical Dosing Range**: Loading dose of 600 mg, then 75 mg daily.\n- **Key Side Effects/Contraindications**: Bleeding, gastrointestinal upset.\n- **When to Use vs. Alternatives**: Used in conjunction with aspirin.\n\n#### Nitroglycerin\n- **Mechanism of Action**: Vasodilator that reduces myocardial oxygen demand.\n- **Typical Dosing Range**: 0.4 mg sublingual every 5 minutes as needed, up to 3 doses.\n- **Key Side Effects/Contraindications**: Headache, hypotension, tachycardia.\n- **When to Use vs. Alternatives**: Contraindicated with phosphodiesterase inhibitors.\n\n#### Beta-blockers\n- **Mechanism of Action**: Reduce heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Start with low dose, titrate to effect (e.g., metoprolol 25-50 mg daily).\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue.\n- **When to Use vs. Alternatives**: Contraindicated in acute heart failure or severe asthma.\n\n#### ACE inhibitors\n- **Mechanism of Action**: Reduce afterload and preload, improving cardiac output.\n- **Typical Dosing Range**: Start with low dose (e.g., lisinopril 5-10 mg daily).\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Indicated in patients with heart failure or diabetes.\n\n### Procedures\n\n#### Coronary Angioplasty and Stenting (PCI)\n- **What it Involves**: A minimally invasive procedure to open narrowed coronary arteries using a balloon and placing a stent.\n- **Indications**: STEMI, high-risk NSTEMI, or unstable angina.\n- **Key Risks/Complications**: Bleeding, vascular complications, restenosis.\n\n#### Coronary Artery Bypass Grafting (CABG)\n- **What it Involves**: Surgical procedure to bypass blocked coronary arteries using grafts from other vessels.\n- **Indications**: Severe multi-vessel disease, failed PCI, or left main coronary artery disease.\n- **Key Risks/Complications**: Infection, bleeding, stroke, myocardial infarction.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of ACS varies based on the type (STEMI vs. NSTEMI vs. unstable angina), the extent of myocardial damage, and the timeliness of treatment. Early intervention significantly improves outcomes.\n\n### Important Complications to Watch For\n- Heart failure\n- Arrhythmias\n- Cardiogenic shock\n- Recurrent myocardial infarction\n- Pericarditis\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should perform initial assessments, recognize symptoms of ACS, initiate treatment protocols, and ensure timely referral to cardiology for further management. They should also educate patients on lifestyle modifications and medication adherence post-discharge.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with chest pain and red flags, escalate care immediately to senior medical staff and prepare for potential emergency interventions (e.g., PCI).\n\n### Key Safety Considerations\nEnsure rapid assessment and treatment of chest pain, monitor vital signs closely, and be aware of the potential for deterioration. Always check for contraindications before administering medications, especially in patients with known allergies or renal impairment.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute coronary syndrome (ACS) is a spectrum of conditions associated with sudden, reduced blood flow to the heart, including unstable angina, non-ST elevation myocardial infarction (NSTEMI), and ST elevation myocardial infarction (STEMI).",
+      "epidemiology": "ACS is a leading cause of morbidity and mortality worldwide, with an incidence of approximately 1.5 million cases annually in the United States alone. Risk factors include age, male gender, smoking, hypertension, diabetes, hyperlipidemia, and family history of coronary artery disease.",
+      "pathophysiology": "ACS typically results from the rupture of an atherosclerotic plaque in a coronary artery, leading to thrombosis and subsequent ischemia of the myocardial tissue. The degree of ischemia and the duration of occlusion determine the clinical presentation and severity of the syndrome."
+    },
+    "recognition": {
+      "symptoms": [
+        "Chest pain (often described as pressure, squeezing, or heaviness)",
+        "Shortness of breath",
+        "Nausea or vomiting",
+        "Diaphoresis (sweating)",
+        "Palpitations",
+        "Fatigue"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Hypotension",
+        "Diaphoresis",
+        "Pallor",
+        "S3 or S4 heart sounds",
+        "New murmur"
+      ],
+      "atypicalPresentations": [
+        "Abdominal pain",
+        "Jaw pain",
+        "Back pain",
+        "Fatigue in elderly or diabetic patients",
+        "Syncope"
+      ],
+      "redFlags": [
+        "Persistent chest pain lasting more than 15 minutes",
+        "Severe shortness of breath",
+        "Signs of heart failure (e.g., pulmonary edema)",
+        "Cardiogenic shock (hypotension, altered mental status)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "12-lead ECG",
+        "Cardiac biomarkers (troponin, CK-MB)",
+        "Chest X-ray"
+      ],
+      "secondLine": [
+        "Echocardiography",
+        "Stress testing (if stable)",
+        "Coronary angiography (if indicated)"
+      ],
+      "specialistTests": [
+        "Cardiac MRI",
+        "CT coronary angiography"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of ACS is based on clinical presentation, ECG changes, and elevated cardiac biomarkers. The presence of chest pain, ST-segment changes on ECG, and elevated troponin levels confirms the diagnosis.",
+      "differentials": [
+        "Aortic dissection",
+        "Pulmonary embolism",
+        "Pneumothorax",
+        "Gastroesophageal reflux disease (GERD)",
+        "Pericarditis"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Aspirin 300 mg (chewed)",
+          "Nitroglycerin (sublingual) for pain relief",
+          "Oxygen therapy if hypoxic",
+          "Morphine for severe pain"
+        ],
+        "secondLine": [
+          "Antiplatelet therapy (e.g., clopidogrel)",
+          "Beta-blockers (if no contraindications)",
+          "ACE inhibitors (if heart failure or hypertension present)"
+        ],
+        "procedures": [
+          "Coronary angioplasty and stenting (PCI) for STEMI or high-risk NSTEMI",
+          "Coronary artery bypass grafting (CABG) for multi-vessel disease or failed PCI"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Lifestyle modifications (diet, exercise, smoking cessation)",
+          "Statins for lipid management",
+          "Beta-blockers for secondary prevention"
+        ],
+        "secondLine": [
+          "ACE inhibitors for heart failure or hypertension",
+          "Antiplatelet therapy (e.g., aspirin, clopidogrel)"
+        ],
+        "monitoring": [
+          "Regular follow-up for cardiac rehabilitation",
+          "Monitoring of cardiac risk factors (lipids, blood pressure)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Aspirin",
+          "mechanism": "Inhibits platelet aggregation by blocking thromboxane A2 production.",
+          "dosing": "300 mg loading dose, then 75-100 mg daily.",
+          "sideEffects": "Gastrointestinal bleeding, allergic reactions.",
+          "notes": "Essential for all ACS patients unless contraindicated."
+        },
+        {
+          "name": "Clopidogrel",
+          "mechanism": "Inhibits platelet aggregation by blocking the P2Y12 receptor.",
+          "dosing": "Loading dose of 600 mg, then 75 mg daily.",
+          "sideEffects": "Bleeding, gastrointestinal upset.",
+          "notes": "Used in conjunction with aspirin."
+        },
+        {
+          "name": "Nitroglycerin",
+          "mechanism": "Vasodilator that reduces myocardial oxygen demand.",
+          "dosing": "0.4 mg sublingual every 5 minutes as needed, up to 3 doses.",
+          "sideEffects": "Headache, hypotension, tachycardia.",
+          "notes": "Contraindicated with phosphodiesterase inhibitors."
+        },
+        {
+          "name": "Beta-blockers",
+          "mechanism": "Reduce heart rate and myocardial oxygen demand.",
+          "dosing": "Start with low dose, titrate to effect (e.g., metoprolol 25-50 mg daily).",
+          "sideEffects": "Bradycardia, hypotension, fatigue.",
+          "notes": "Contraindicated in acute heart failure or severe asthma."
+        },
+        {
+          "name": "ACE inhibitors",
+          "mechanism": "Reduce afterload and preload, improving cardiac output.",
+          "dosing": "Start with low dose (e.g., lisinopril 5-10 mg daily).",
+          "sideEffects": "Cough, hyperkalemia, renal impairment.",
+          "notes": "Indicated in patients with heart failure or diabetes."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Coronary Angioplasty and Stenting (PCI)",
+          "description": "A minimally invasive procedure to open narrowed coronary arteries using a balloon and placing a stent.",
+          "indications": "STEMI, high-risk NSTEMI, or unstable angina.",
+          "risks": "Bleeding, vascular complications, restenosis."
+        },
+        {
+          "name": "Coronary Artery Bypass Grafting (CABG)",
+          "description": "Surgical procedure to bypass blocked coronary arteries using grafts from other vessels.",
+          "indications": "Severe multi-vessel disease, failed PCI, or left main coronary artery disease.",
+          "risks": "Infection, bleeding, stroke, myocardial infarction."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of ACS varies based on the type (STEMI vs. NSTEMI vs. unstable angina), the extent of myocardial damage, and the timeliness of treatment. Early intervention significantly improves outcomes.",
+    "complications": [
+      "Heart failure",
+      "Arrhythmias",
+      "Cardiogenic shock",
+      "Recurrent myocardial infarction",
+      "Pericarditis"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessments, recognize symptoms of ACS, initiate treatment protocols, and ensure timely referral to cardiology for further management. They should also educate patients on lifestyle modifications and medication adherence post-discharge.",
+    "escalation": "If a patient presents with chest pain and red flags, escalate care immediately to senior medical staff and prepare for potential emergency interventions (e.g., PCI).",
+    "keySafetyConsiderations": "Ensure rapid assessment and treatment of chest pain, monitor vital signs closely, and be aware of the potential for deterioration. Always check for contraindications before administering medications, especially in patients with known allergies or renal impairment."
+  }
+}

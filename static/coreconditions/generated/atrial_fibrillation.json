@@ -1,0 +1,137 @@
+{
+  "id": "atrial_fibrillation",
+  "name": "Atrial fibrillation",
+  "domains": [
+    "Cardiology",
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T18:58:22.640357",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Atrial fibrillation: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAtrial fibrillation (AF) is a common cardiac arrhythmia characterized by disorganized electrical activity in the atria, leading to ineffective atrial contraction and an irregularly irregular ventricular response.\n\n### Epidemiology\nAF is the most prevalent arrhythmia, affecting approximately 1-2% of the general population, with prevalence increasing with age. It is associated with increased risk of stroke, heart failure, and mortality.\n\n### Essential Pathophysiology\nAF results from multiple reentrant circuits in the atria, often triggered by ectopic foci, particularly in the pulmonary veins. This leads to rapid atrial rates, loss of coordinated atrial contraction, and potential thrombus formation due to stasis.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Palpitations\n- Fatigue\n- Dizziness\n- Shortness of breath\n- Chest pain\n\n### Key Signs\n- Irregularly irregular pulse\n- Tachycardia\n- Hypotension (in severe cases)\n- Signs of heart failure (e.g., elevated JVP, peripheral edema)\n\n### Atypical Presentations\n- Syncope\n- Confusion (especially in elderly patients)\n- Asymptomatic (found incidentally)\n\n### Red Flags Requiring Immediate Action\n- New onset AF in a patient with chest pain or acute coronary syndrome\n- Rapid ventricular response leading to hypotension\n- Signs of stroke (e.g., unilateral weakness, speech difficulties)\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG) to confirm AF\n- Basic blood tests (CBC, electrolytes, renal function)\n- Chest X-ray (to assess heart size and rule out other causes)\n\n### Second-line Investigations\n- Echocardiogram (to assess cardiac structure and function)\n- Thyroid function tests (to rule out hyperthyroidism)\n- Holter monitor (for intermittent AF)\n\n### Specialist Tests\n- Transesophageal echocardiogram (to assess for left atrial thrombus before cardioversion)\n- Electrophysiological studies (for refractory cases)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of AF is made based on the presence of an irregularly irregular pulse and confirmation by ECG showing absence of distinct P waves and irregular R-R intervals.\n\n### Key Differential Diagnoses to Exclude\n- Atrial flutter\n- Supraventricular tachycardia\n- Ventricular tachycardia\n- Sinus arrhythmia\n- Multifocal atrial tachycardia\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rate control with beta-blockers (e.g., metoprolol) or calcium channel blockers (e.g., diltiazem)\n- Anticoagulation (e.g., heparin) if indicated\n\n#### Second-line Treatments\n- Rhythm control with antiarrhythmic drugs (e.g., amiodarone) or electrical cardioversion\n\n#### Emergency Procedures\n- Electrical cardioversion (for rapid AF with hemodynamic instability)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term anticoagulation (e.g., warfarin, DOACs) based on CHA2DS2-VASc score\n- Rate control with beta-blockers or calcium channel blockers\n\n#### Second-line Treatments\n- Rhythm control strategies (e.g., catheter ablation, antiarrhythmic medications)\n\n#### Monitoring Requirements\n- Regular follow-up for anticoagulation management (INR for warfarin)\n- Monitoring for symptoms and side effects of medications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Warfarin\n- **Mechanism of Action**: Vitamin K antagonist that inhibits clotting factors II, VII, IX, and X\n- **Typical Dosing Range**: Initial dose 5 mg daily, adjusted based on INR (target INR 2-3)\n- **Key Side Effects/Contraindications**: Bleeding, skin necrosis, drug interactions\n- **When to Use vs. Alternatives**: Requires regular INR monitoring.\n\n#### Dabigatran\n- **Mechanism of Action**: Direct thrombin inhibitor\n- **Typical Dosing Range**: 150 mg twice daily (75 mg if renal impairment)\n- **Key Side Effects/Contraindications**: Bleeding, gastrointestinal upset\n- **When to Use vs. Alternatives**: No routine monitoring required.\n\n#### Amiodarone\n- **Mechanism of Action**: Class III antiarrhythmic that prolongs the action potential\n- **Typical Dosing Range**: Loading dose of 600 mg daily for 1 week, then 100-200 mg daily\n- **Key Side Effects/Contraindications**: Thyroid dysfunction, pulmonary toxicity, liver toxicity\n- **When to Use vs. Alternatives**: Monitor for side effects and drug interactions.\n\n### Procedures\n\n#### Electrical Cardioversion\n- **What it Involves**: Delivery of a synchronized electrical shock to restore normal sinus rhythm\n- **Indications**: Rapid AF with hemodynamic instability or persistent AF causing symptoms\n- **Key Risks/Complications**: Arrhythmias, thromboembolism, skin burns.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nAF is a chronic condition that can be managed effectively, but it carries a significant risk of stroke and heart failure. With appropriate management, many patients can maintain a good quality of life.\n\n### Important Complications to Watch For\n- Stroke\n- Heart failure\n- Thromboembolism\n- Increased mortality risk\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize AF, initiate appropriate investigations, manage acute episodes, and understand the principles of long-term management including anticoagulation and rate control.\n\n### When to Escalate to Senior/Specialist\nRefer to cardiology for patients with new onset AF, those with significant symptoms, or those requiring advanced management (e.g., catheter ablation).\n\n### Key Safety Considerations\nEnsure appropriate anticoagulation based on stroke risk; monitor for signs of bleeding; be aware of the potential for rapid ventricular response leading to hemodynamic instability.\n",
+  "content": {
+    "overview": {
+      "definition": "Atrial fibrillation (AF) is a common cardiac arrhythmia characterized by disorganized electrical activity in the atria, leading to ineffective atrial contraction and an irregularly irregular ventricular response.",
+      "epidemiology": "AF is the most prevalent arrhythmia, affecting approximately 1-2% of the general population, with prevalence increasing with age. It is associated with increased risk of stroke, heart failure, and mortality.",
+      "pathophysiology": "AF results from multiple reentrant circuits in the atria, often triggered by ectopic foci, particularly in the pulmonary veins. This leads to rapid atrial rates, loss of coordinated atrial contraction, and potential thrombus formation due to stasis."
+    },
+    "recognition": {
+      "symptoms": [
+        "Palpitations",
+        "Fatigue",
+        "Dizziness",
+        "Shortness of breath",
+        "Chest pain"
+      ],
+      "signs": [
+        "Irregularly irregular pulse",
+        "Tachycardia",
+        "Hypotension (in severe cases)",
+        "Signs of heart failure (e.g., elevated JVP, peripheral edema)"
+      ],
+      "atypicalPresentations": [
+        "Syncope",
+        "Confusion (especially in elderly patients)",
+        "Asymptomatic (found incidentally)"
+      ],
+      "redFlags": [
+        "New onset AF in a patient with chest pain or acute coronary syndrome",
+        "Rapid ventricular response leading to hypotension",
+        "Signs of stroke (e.g., unilateral weakness, speech difficulties)"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG) to confirm AF",
+        "Basic blood tests (CBC, electrolytes, renal function)",
+        "Chest X-ray (to assess heart size and rule out other causes)"
+      ],
+      "secondLine": [
+        "Echocardiogram (to assess cardiac structure and function)",
+        "Thyroid function tests (to rule out hyperthyroidism)",
+        "Holter monitor (for intermittent AF)"
+      ],
+      "specialistTests": [
+        "Transesophageal echocardiogram (to assess for left atrial thrombus before cardioversion)",
+        "Electrophysiological studies (for refractory cases)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of AF is made based on the presence of an irregularly irregular pulse and confirmation by ECG showing absence of distinct P waves and irregular R-R intervals.",
+      "differentials": [
+        "Atrial flutter",
+        "Supraventricular tachycardia",
+        "Ventricular tachycardia",
+        "Sinus arrhythmia",
+        "Multifocal atrial tachycardia"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rate control with beta-blockers (e.g., metoprolol) or calcium channel blockers (e.g., diltiazem)",
+          "Anticoagulation (e.g., heparin) if indicated"
+        ],
+        "secondLine": [
+          "Rhythm control with antiarrhythmic drugs (e.g., amiodarone) or electrical cardioversion"
+        ],
+        "procedures": [
+          "Electrical cardioversion (for rapid AF with hemodynamic instability)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term anticoagulation (e.g., warfarin, DOACs) based on CHA2DS2-VASc score",
+          "Rate control with beta-blockers or calcium channel blockers"
+        ],
+        "secondLine": [
+          "Rhythm control strategies (e.g., catheter ablation, antiarrhythmic medications)"
+        ],
+        "monitoring": [
+          "Regular follow-up for anticoagulation management (INR for warfarin)",
+          "Monitoring for symptoms and side effects of medications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Warfarin",
+          "mechanism": "Vitamin K antagonist that inhibits clotting factors II, VII, IX, and X",
+          "dosing": "Initial dose 5 mg daily, adjusted based on INR (target INR 2-3)",
+          "sideEffects": "Bleeding, skin necrosis, drug interactions",
+          "notes": "Requires regular INR monitoring."
+        },
+        {
+          "name": "Dabigatran",
+          "mechanism": "Direct thrombin inhibitor",
+          "dosing": "150 mg twice daily (75 mg if renal impairment)",
+          "sideEffects": "Bleeding, gastrointestinal upset",
+          "notes": "No routine monitoring required."
+        },
+        {
+          "name": "Amiodarone",
+          "mechanism": "Class III antiarrhythmic that prolongs the action potential",
+          "dosing": "Loading dose of 600 mg daily for 1 week, then 100-200 mg daily",
+          "sideEffects": "Thyroid dysfunction, pulmonary toxicity, liver toxicity",
+          "notes": "Monitor for side effects and drug interactions."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electrical Cardioversion",
+          "description": "Delivery of a synchronized electrical shock to restore normal sinus rhythm",
+          "indications": "Rapid AF with hemodynamic instability or persistent AF causing symptoms",
+          "risks": "Arrhythmias, thromboembolism, skin burns."
+        }
+      ]
+    },
+    "prognosis": "AF is a chronic condition that can be managed effectively, but it carries a significant risk of stroke and heart failure. With appropriate management, many patients can maintain a good quality of life.",
+    "complications": [
+      "Stroke",
+      "Heart failure",
+      "Thromboembolism",
+      "Increased mortality risk"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize AF, initiate appropriate investigations, manage acute episodes, and understand the principles of long-term management including anticoagulation and rate control.",
+    "escalation": "Refer to cardiology for patients with new onset AF, those with significant symptoms, or those requiring advanced management (e.g., catheter ablation).",
+    "keySafetyConsiderations": "Ensure appropriate anticoagulation based on stroke risk; monitor for signs of bleeding; be aware of the potential for rapid ventricular response leading to hemodynamic instability."
+  }
+}

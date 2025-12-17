@@ -1,14 +1,105 @@
 {
-  "generatedAt": "2025-12-17T17:48:07.238972",
-  "totalConditions": 1,
+  "generatedAt": "2025-12-17T19:00:37.256330",
+  "totalConditions": 10,
+  "processedCount": 10,
+  "model": "gpt-4o-mini",
   "conditions": [
     {
-      "id": "acute_pain_management",
-      "name": "Acute pain management",
+      "id": "acute_heart_failure",
+      "name": "Acute Heart failure",
       "domains": [
+        "Cardiology"
+      ],
+      "filename": "acute_heart_failure.json",
+      "processed": true
+    },
+    {
+      "id": "acute_coronary_syndrome",
+      "name": "Acute coronary syndrome",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "acute_coronary_syndrome.json",
+      "processed": true
+    },
+    {
+      "id": "angina",
+      "name": "Angina",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "angina.json",
+      "processed": true
+    },
+    {
+      "id": "atrial_arrhythmias",
+      "name": "Atrial arrhythmias",
+      "domains": [
+        "Cardiology",
         "Anaesthesia and Critical Care"
       ],
-      "filename": "acute_pain_management.json"
+      "filename": "atrial_arrhythmias.json",
+      "processed": true
+    },
+    {
+      "id": "atrial_fibrillation",
+      "name": "Atrial fibrillation",
+      "domains": [
+        "Cardiology",
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "atrial_fibrillation.json",
+      "processed": true
+    },
+    {
+      "id": "cardiac_arrest",
+      "name": "Cardiac arrest",
+      "domains": [
+        "Cardiology",
+        "Anaesthesia and Critical Care",
+        "Paediatrics"
+      ],
+      "filename": "cardiac_arrest.json",
+      "processed": true
+    },
+    {
+      "id": "chronic_heart_failure",
+      "name": "Chronic Heart Failure",
+      "domains": [
+        "Cardiology"
+      ],
+      "filename": "chronic_heart_failure.json",
+      "processed": true
+    },
+    {
+      "id": "complete_heart_block",
+      "name": "Complete heart block",
+      "domains": [
+        "Cardiology",
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "complete_heart_block.json",
+      "processed": true
+    },
+    {
+      "id": "essential_and_secondary_hypertension",
+      "name": "Essential and Secondary Hypertension",
+      "domains": [
+        "Cardiology",
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "essential_and_secondary_hypertension.json",
+      "processed": true
+    },
+    {
+      "id": "ventricular_tachycardia",
+      "name": "Ventricular tachycardia",
+      "domains": [
+        "Cardiology",
+        "Anaesthesia and Critical Care"
+      ],
+      "filename": "ventricular_tachycardia.json",
+      "processed": true
     }
   ]
 }

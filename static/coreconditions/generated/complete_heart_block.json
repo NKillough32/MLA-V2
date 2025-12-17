@@ -1,0 +1,126 @@
+{
+  "id": "complete_heart_block",
+  "name": "Complete heart block",
+  "domains": [
+    "Cardiology",
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T18:59:01.945798",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Complete heart block: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nComplete heart block, also known as third-degree atrioventricular (AV) block, is a condition where there is a complete failure of electrical conduction from the atria to the ventricles, resulting in dissociation between atrial and ventricular activity.\n\n### Epidemiology\nComplete heart block occurs in approximately 1-2% of the general population and is more common in older adults, particularly those with underlying heart disease. It can also occur in children, often due to congenital heart defects or as a result of infections such as rheumatic fever.\n\n### Essential Pathophysiology\nIn complete heart block, the electrical signals generated in the atria do not reach the ventricles due to a block at the AV node or below. This results in the atria and ventricles beating independently, leading to a slower ventricular rate and potential hemodynamic instability.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Syncope (fainting)\n- Dizziness\n- Fatigue\n- Palpitations\n- Chest pain\n- Shortness of breath\n\n### Key Signs\n- Bradycardia (heart rate < 60 bpm)\n- Irregular pulse\n- Hypotension\n- Signs of heart failure (e.g., peripheral edema, jugular venous distension)\n\n### Atypical Presentations\n- Asymptomatic in some patients\n- Confusion or altered mental status in elderly patients\n\n### Red Flags Requiring Immediate Action\n- Severe bradycardia (<40 bpm)\n- Syncope or near-syncope\n- Signs of heart failure\n- Acute coronary syndrome symptoms\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG) to confirm complete heart block\n- Vital signs monitoring\n\n### Second-line Investigations\n- Echocardiography to assess structural heart disease\n- Holter monitoring for transient block\n\n### Specialist Tests\n- Electrophysiological studies to determine the site of block\n- Cardiac MRI if structural abnormalities are suspected\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis is confirmed by ECG showing complete dissociation between atrial and ventricular activity, with P waves present but not associated with QRS complexes.\n\n### Key Differential Diagnoses to Exclude\n- Second-degree AV block (Mobitz type I and II)\n- Sick sinus syndrome\n- Atrial fibrillation with a slow ventricular response\n- Ventricular escape rhythm\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Atropine 0.5 mg IV bolus (may repeat every 3-5 minutes up to 3 mg)\n- Transcutaneous pacing if symptomatic and atropine ineffective\n\n#### Second-line Treatments\n- Transvenous pacing if transcutaneous pacing is inadequate or if the patient is unstable\n\n#### Emergency Procedures\n- Temporary pacing (transvenous or transcutaneous) to stabilize the patient until definitive management can be arranged.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Permanent pacemaker insertion for symptomatic patients or those with persistent complete heart block\n\n#### Second-line Treatments\n- Consideration of dual-chamber pacing in patients with atrial fibrillation and complete heart block\n\n#### Monitoring Requirements\n- Regular follow-up to assess pacemaker function and manage complications\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Atropine\n- **Mechanism of Action**: Anticholinergic agent that increases heart rate by blocking vagal effects on the heart.\n- **Typical Dosing Range**: 0.5 mg IV bolus, may repeat every 3-5 minutes up to a total of 3 mg.\n- **Key Side Effects/Contraindications**: Dry mouth, blurred vision, urinary retention, tachycardia.\n- **When to Use vs. Alternatives**: Not effective in complete heart block due to intrinsic conduction system disease.\n\n#### Isoproterenol\n- **Mechanism of Action**: Beta-adrenergic agonist that increases heart rate and myocardial contractility.\n- **Typical Dosing Range**: Start at 1-5 mcg/min IV infusion, titrate to effect.\n- **Key Side Effects/Contraindications**: Tachycardia, palpitations, headache, hypotension.\n- **When to Use vs. Alternatives**: Used in acute settings when pacing is not available.\n\n### Procedures\n\n#### Temporary pacing\n- **What it Involves**: Placement of a temporary pacing wire either transvenously or transcutaneously to provide electrical stimulation to the heart.\n- **Indications**: Symptomatic complete heart block, especially in unstable patients.\n- **Key Risks/Complications**: Infection, bleeding, pneumothorax (transvenous), discomfort (transcutaneous).\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of complete heart block depends on the underlying cause. Patients with idiopathic complete heart block may have a good prognosis with pacemaker insertion, while those with structural heart disease may have a poorer prognosis due to associated comorbidities.\n\n### Important Complications to Watch For\n- Heart failure\n- Syncope\n- Sudden cardiac arrest\n- Pacemaker-related complications (infection, lead dislodgement)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize the signs and symptoms of complete heart block, initiate appropriate investigations, and manage acute situations, including pacing. They should also understand the need for referral to cardiology for further management and follow-up.\n\n### When to Escalate to Senior/Specialist\nIf a patient presents with symptomatic complete heart block, escalate care to a senior clinician immediately, especially if there are signs of hemodynamic instability or if pacing is required.\n\n### Key Safety Considerations\nMonitor vital signs closely, especially heart rate and blood pressure. Be aware of the potential for rapid deterioration in patients with complete heart block, and ensure that pacing equipment is readily available in emergency situations.\n",
+  "content": {
+    "overview": {
+      "definition": "Complete heart block, also known as third-degree atrioventricular (AV) block, is a condition where there is a complete failure of electrical conduction from the atria to the ventricles, resulting in dissociation between atrial and ventricular activity.",
+      "epidemiology": "Complete heart block occurs in approximately 1-2% of the general population and is more common in older adults, particularly those with underlying heart disease. It can also occur in children, often due to congenital heart defects or as a result of infections such as rheumatic fever.",
+      "pathophysiology": "In complete heart block, the electrical signals generated in the atria do not reach the ventricles due to a block at the AV node or below. This results in the atria and ventricles beating independently, leading to a slower ventricular rate and potential hemodynamic instability."
+    },
+    "recognition": {
+      "symptoms": [
+        "Syncope (fainting)",
+        "Dizziness",
+        "Fatigue",
+        "Palpitations",
+        "Chest pain",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Bradycardia (heart rate < 60 bpm)",
+        "Irregular pulse",
+        "Hypotension",
+        "Signs of heart failure (e.g., peripheral edema, jugular venous distension)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic in some patients",
+        "Confusion or altered mental status in elderly patients"
+      ],
+      "redFlags": [
+        "Severe bradycardia (<40 bpm)",
+        "Syncope or near-syncope",
+        "Signs of heart failure",
+        "Acute coronary syndrome symptoms"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG) to confirm complete heart block",
+        "Vital signs monitoring"
+      ],
+      "secondLine": [
+        "Echocardiography to assess structural heart disease",
+        "Holter monitoring for transient block"
+      ],
+      "specialistTests": [
+        "Electrophysiological studies to determine the site of block",
+        "Cardiac MRI if structural abnormalities are suspected"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis is confirmed by ECG showing complete dissociation between atrial and ventricular activity, with P waves present but not associated with QRS complexes.",
+      "differentials": [
+        "Second-degree AV block (Mobitz type I and II)",
+        "Sick sinus syndrome",
+        "Atrial fibrillation with a slow ventricular response",
+        "Ventricular escape rhythm"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Atropine 0.5 mg IV bolus (may repeat every 3-5 minutes up to 3 mg)",
+          "Transcutaneous pacing if symptomatic and atropine ineffective"
+        ],
+        "secondLine": [
+          "Transvenous pacing if transcutaneous pacing is inadequate or if the patient is unstable"
+        ],
+        "procedures": [
+          "Temporary pacing (transvenous or transcutaneous) to stabilize the patient until definitive management can be arranged."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Permanent pacemaker insertion for symptomatic patients or those with persistent complete heart block"
+        ],
+        "secondLine": [
+          "Consideration of dual-chamber pacing in patients with atrial fibrillation and complete heart block"
+        ],
+        "monitoring": [
+          "Regular follow-up to assess pacemaker function and manage complications"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Atropine",
+          "mechanism": "Anticholinergic agent that increases heart rate by blocking vagal effects on the heart.",
+          "dosing": "0.5 mg IV bolus, may repeat every 3-5 minutes up to a total of 3 mg.",
+          "sideEffects": "Dry mouth, blurred vision, urinary retention, tachycardia.",
+          "notes": "Not effective in complete heart block due to intrinsic conduction system disease."
+        },
+        {
+          "name": "Isoproterenol",
+          "mechanism": "Beta-adrenergic agonist that increases heart rate and myocardial contractility.",
+          "dosing": "Start at 1-5 mcg/min IV infusion, titrate to effect.",
+          "sideEffects": "Tachycardia, palpitations, headache, hypotension.",
+          "notes": "Used in acute settings when pacing is not available."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Temporary pacing",
+          "description": "Placement of a temporary pacing wire either transvenously or transcutaneously to provide electrical stimulation to the heart.",
+          "indications": "Symptomatic complete heart block, especially in unstable patients.",
+          "risks": "Infection, bleeding, pneumothorax (transvenous), discomfort (transcutaneous)."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of complete heart block depends on the underlying cause. Patients with idiopathic complete heart block may have a good prognosis with pacemaker insertion, while those with structural heart disease may have a poorer prognosis due to associated comorbidities.",
+    "complications": [
+      "Heart failure",
+      "Syncope",
+      "Sudden cardiac arrest",
+      "Pacemaker-related complications (infection, lead dislodgement)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize the signs and symptoms of complete heart block, initiate appropriate investigations, and manage acute situations, including pacing. They should also understand the need for referral to cardiology for further management and follow-up.",
+    "escalation": "If a patient presents with symptomatic complete heart block, escalate care to a senior clinician immediately, especially if there are signs of hemodynamic instability or if pacing is required.",
+    "keySafetyConsiderations": "Monitor vital signs closely, especially heart rate and blood pressure. Be aware of the potential for rapid deterioration in patients with complete heart block, and ensure that pacing equipment is readily available in emergency situations."
+  }
+}

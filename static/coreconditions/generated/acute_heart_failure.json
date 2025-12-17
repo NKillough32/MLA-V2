@@ -1,0 +1,152 @@
+{
+  "id": "acute_heart_failure",
+  "name": "Acute Heart failure",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T18:59:36.431527",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Acute Heart failure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAcute heart failure (AHF) is a clinical syndrome characterized by the rapid onset of symptoms and signs due to the heart's inability to pump sufficient blood to meet the body's needs, leading to fluid overload and inadequate tissue perfusion.\n\n### Epidemiology\nAHF affects approximately 1-2% of the adult population, with higher prevalence in older adults. It is a leading cause of hospitalization in patients over 65 years of age.\n\n### Essential Pathophysiology\nAHF can result from various underlying conditions, including ischemic heart disease, hypertension, valvular heart disease, and cardiomyopathies. The pathophysiology involves a combination of impaired cardiac contractility, increased preload, and neurohormonal activation, leading to fluid retention and pulmonary congestion.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea (shortness of breath)\n- Orthopnea (difficulty breathing when lying flat)\n- Paroxysmal nocturnal dyspnea (sudden nighttime breathlessness)\n- Fatigue\n- Cough (often productive with pink frothy sputum)\n- Anxiety\n\n### Key Signs\n- Tachycardia\n- Elevated jugular venous pressure (JVP)\n- Pulmonary crackles on auscultation\n- Peripheral edema\n- Hepatomegaly\n- Ascites\n\n### Atypical Presentations\n- Confusion or altered mental status in elderly patients\n- Abdominal pain due to hepatic congestion\n- Syncope or presyncope\n\n### Red Flags Requiring Immediate Action\n- Severe respiratory distress\n- Hypotension (systolic BP <90 mmHg)\n- Altered mental status\n- Oliguria or anuria\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- Blood tests (including BNP or NT-proBNP, renal function, electrolytes)\n- Oxygen saturation measurement\n\n### Second-line Investigations\n- Echocardiography (to assess cardiac function and structure)\n- Cardiac biomarkers (troponin) if ischemia is suspected\n\n### Specialist Tests\n- Cardiac MRI (for detailed structural assessment)\n- Coronary angiography (if ischemic heart disease is suspected)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of acute heart failure is based on clinical presentation, supported by elevated BNP/NT-proBNP levels and characteristic findings on chest X-ray (e.g., pulmonary congestion).\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD) exacerbation\n- Pneumonia\n- Pulmonary embolism\n- Anemia\n- Acute kidney injury\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (if hypoxic)\n- Diuretics (e.g., furosemide) for fluid overload\n- Nitrates (e.g., nitroglycerin) for symptomatic relief\n\n#### Second-line Treatments\n- Inotropes (e.g., dobutamine) if there is evidence of low cardiac output\n- Vasodilators (e.g., nitroprusside) in severe cases\n\n#### Emergency Procedures\n- Non-invasive ventilation (NIV) for respiratory distress\n- Invasive monitoring (e.g., Swan-Ganz catheter) in severe cases\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- ACE inhibitors (e.g., ramipril)\n- Beta-blockers (e.g., bisoprolol)\n- Aldosterone antagonists (e.g., spironolactone)\n\n#### Second-line Treatments\n- SGLT2 inhibitors (e.g., empagliflozin)\n- Hydralazine and nitrates in specific populations\n\n#### Monitoring Requirements\n- Regular follow-up for symptom control and medication side effects\n- Monitoring renal function and electrolytes\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.\n- **Typical Dosing Range**: Initial: 20-40 mg IV; may be increased based on response.\n- **Key Side Effects/Contraindications**: Electrolyte imbalances (hypokalemia, hyponatremia), renal impairment, ototoxicity (rare).\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Ramipril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.\n- **Typical Dosing Range**: Starting dose: 1.25-2.5 mg orally once daily; titrate to 10 mg daily as tolerated.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema (rare).\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Spironolactone\n- **Mechanism of Action**: Aldosterone antagonist that promotes sodium excretion and potassium retention.\n- **Typical Dosing Range**: Starting dose: 12.5-25 mg orally once daily; titrate to 50 mg daily as tolerated.\n- **Key Side Effects/Contraindications**: Hyperkalemia, gynecomastia, renal impairment.\n- **When to Use vs. Alternatives**: Monitor potassium levels and renal function.\n\n### Procedures\n\n#### Non-invasive ventilation (NIV)\n- **What it Involves**: Use of positive pressure ventilation to improve oxygenation and reduce work of breathing in patients with acute respiratory failure.\n- **Indications**: Severe dyspnea, respiratory acidosis, or hypoxemia despite standard treatment.\n- **Key Risks/Complications**: Barotrauma, aspiration, discomfort, and need for intubation if NIV fails.\n\n#### Invasive monitoring (Swan-Ganz catheter)\n- **What it Involves**: Placement of a catheter in the pulmonary artery to measure pressures and cardiac output.\n- **Indications**: Severe heart failure with shock or unclear hemodynamics.\n- **Key Risks/Complications**: Infection, bleeding, arrhythmias, pulmonary artery rupture.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of acute heart failure varies widely based on the underlying cause, severity, and response to treatment. Early recognition and management can improve outcomes significantly. Long-term prognosis is often poor, with high rates of readmission and mortality.\n\n### Important Complications to Watch For\n- Pulmonary edema\n- Cardiogenic shock\n- Arrhythmias\n- Acute kidney injury\n- Thromboembolic events\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors play a crucial role in the initial assessment, stabilization, and management of patients with acute heart failure. They should be proficient in recognizing symptoms, performing basic investigations, and initiating treatment while ensuring timely referral to senior colleagues or specialists as needed.\n\n### When to Escalate to Senior/Specialist\nEscalate care to senior medical staff if the patient exhibits severe symptoms, does not respond to initial treatment, or if there are significant changes in vital signs or mental status.\n\n### Key Safety Considerations\nEnsure continuous monitoring of vital signs, oxygen saturation, and urine output. Be vigilant for signs of deterioration, and maintain a high index of suspicion for complications such as arrhythmias or acute kidney injury.\n",
+  "content": {
+    "overview": {
+      "definition": "Acute heart failure (AHF) is a clinical syndrome characterized by the rapid onset of symptoms and signs due to the heart's inability to pump sufficient blood to meet the body's needs, leading to fluid overload and inadequate tissue perfusion.",
+      "epidemiology": "AHF affects approximately 1-2% of the adult population, with higher prevalence in older adults. It is a leading cause of hospitalization in patients over 65 years of age.",
+      "pathophysiology": "AHF can result from various underlying conditions, including ischemic heart disease, hypertension, valvular heart disease, and cardiomyopathies. The pathophysiology involves a combination of impaired cardiac contractility, increased preload, and neurohormonal activation, leading to fluid retention and pulmonary congestion."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea (shortness of breath)",
+        "Orthopnea (difficulty breathing when lying flat)",
+        "Paroxysmal nocturnal dyspnea (sudden nighttime breathlessness)",
+        "Fatigue",
+        "Cough (often productive with pink frothy sputum)",
+        "Anxiety"
+      ],
+      "signs": [
+        "Tachycardia",
+        "Elevated jugular venous pressure (JVP)",
+        "Pulmonary crackles on auscultation",
+        "Peripheral edema",
+        "Hepatomegaly",
+        "Ascites"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status in elderly patients",
+        "Abdominal pain due to hepatic congestion",
+        "Syncope or presyncope"
+      ],
+      "redFlags": [
+        "Severe respiratory distress",
+        "Hypotension (systolic BP <90 mmHg)",
+        "Altered mental status",
+        "Oliguria or anuria"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "Blood tests (including BNP or NT-proBNP, renal function, electrolytes)",
+        "Oxygen saturation measurement"
+      ],
+      "secondLine": [
+        "Echocardiography (to assess cardiac function and structure)",
+        "Cardiac biomarkers (troponin) if ischemia is suspected"
+      ],
+      "specialistTests": [
+        "Cardiac MRI (for detailed structural assessment)",
+        "Coronary angiography (if ischemic heart disease is suspected)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of acute heart failure is based on clinical presentation, supported by elevated BNP/NT-proBNP levels and characteristic findings on chest X-ray (e.g., pulmonary congestion).",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD) exacerbation",
+        "Pneumonia",
+        "Pulmonary embolism",
+        "Anemia",
+        "Acute kidney injury"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (if hypoxic)",
+          "Diuretics (e.g., furosemide) for fluid overload",
+          "Nitrates (e.g., nitroglycerin) for symptomatic relief"
+        ],
+        "secondLine": [
+          "Inotropes (e.g., dobutamine) if there is evidence of low cardiac output",
+          "Vasodilators (e.g., nitroprusside) in severe cases"
+        ],
+        "procedures": [
+          "Non-invasive ventilation (NIV) for respiratory distress",
+          "Invasive monitoring (e.g., Swan-Ganz catheter) in severe cases"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "ACE inhibitors (e.g., ramipril)",
+          "Beta-blockers (e.g., bisoprolol)",
+          "Aldosterone antagonists (e.g., spironolactone)"
+        ],
+        "secondLine": [
+          "SGLT2 inhibitors (e.g., empagliflozin)",
+          "Hydralazine and nitrates in specific populations"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom control and medication side effects",
+          "Monitoring renal function and electrolytes"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle, promoting diuresis.",
+          "dosing": "Initial: 20-40 mg IV; may be increased based on response.",
+          "sideEffects": "Electrolyte imbalances (hypokalemia, hyponatremia), renal impairment, ototoxicity (rare).",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Ramipril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.",
+          "dosing": "Starting dose: 1.25-2.5 mg orally once daily; titrate to 10 mg daily as tolerated.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema (rare).",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Spironolactone",
+          "mechanism": "Aldosterone antagonist that promotes sodium excretion and potassium retention.",
+          "dosing": "Starting dose: 12.5-25 mg orally once daily; titrate to 50 mg daily as tolerated.",
+          "sideEffects": "Hyperkalemia, gynecomastia, renal impairment.",
+          "notes": "Monitor potassium levels and renal function."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Non-invasive ventilation (NIV)",
+          "description": "Use of positive pressure ventilation to improve oxygenation and reduce work of breathing in patients with acute respiratory failure.",
+          "indications": "Severe dyspnea, respiratory acidosis, or hypoxemia despite standard treatment.",
+          "risks": "Barotrauma, aspiration, discomfort, and need for intubation if NIV fails."
+        },
+        {
+          "name": "Invasive monitoring (Swan-Ganz catheter)",
+          "description": "Placement of a catheter in the pulmonary artery to measure pressures and cardiac output.",
+          "indications": "Severe heart failure with shock or unclear hemodynamics.",
+          "risks": "Infection, bleeding, arrhythmias, pulmonary artery rupture."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of acute heart failure varies widely based on the underlying cause, severity, and response to treatment. Early recognition and management can improve outcomes significantly. Long-term prognosis is often poor, with high rates of readmission and mortality.",
+    "complications": [
+      "Pulmonary edema",
+      "Cardiogenic shock",
+      "Arrhythmias",
+      "Acute kidney injury",
+      "Thromboembolic events"
+    ],
+    "foundationDoctorRole": "Foundation doctors play a crucial role in the initial assessment, stabilization, and management of patients with acute heart failure. They should be proficient in recognizing symptoms, performing basic investigations, and initiating treatment while ensuring timely referral to senior colleagues or specialists as needed.",
+    "escalation": "Escalate care to senior medical staff if the patient exhibits severe symptoms, does not respond to initial treatment, or if there are significant changes in vital signs or mental status.",
+    "keySafetyConsiderations": "Ensure continuous monitoring of vital signs, oxygen saturation, and urine output. Be vigilant for signs of deterioration, and maintain a high index of suspicion for complications such as arrhythmias or acute kidney injury."
+  }
+}

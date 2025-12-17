@@ -1,0 +1,130 @@
+{
+  "id": "ventricular_tachycardia",
+  "name": "Ventricular tachycardia",
+  "domains": [
+    "Cardiology",
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T18:59:19.832406",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Ventricular tachycardia: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nVentricular tachycardia (VT) is a rapid heart rhythm originating from the ventricles, characterized by three or more consecutive ventricular beats at a rate exceeding 100 beats per minute.\n\n### Epidemiology\nVT is more common in patients with underlying heart disease, particularly ischemic heart disease, cardiomyopathy, and heart failure. It can occur in both adults and children, with a higher prevalence in older populations.\n\n### Essential Pathophysiology\nVT occurs due to reentrant circuits or automaticity in the ventricles, often triggered by myocardial ischemia, electrolyte imbalances, or structural heart disease. It can lead to decreased cardiac output and may progress to ventricular fibrillation.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Palpitations\n- Dizziness\n- Syncope\n- Chest pain\n- Shortness of breath\n\n### Key Signs\n- Rapid heart rate (tachycardia)\n- Hypotension\n- Altered mental status\n- Signs of heart failure (e.g., pulmonary edema)\n\n### Atypical Presentations\n- Asymptomatic VT\n- VT in the setting of acute myocardial infarction\n\n### Red Flags Requiring Immediate Action\n- Sustained VT lasting more than 30 seconds\n- VT associated with hemodynamic instability\n- VT in a patient with a history of heart disease\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- 12-lead ECG\n- Vital signs monitoring\n- Cardiac biomarkers (e.g., troponin)\n\n### Second-line Investigations\n- Electrolyte panel\n- Echocardiography\n- Holter monitoring\n\n### Specialist Tests\n- Electrophysiological study (EPS)\n- Cardiac MRI\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of VT is primarily based on the ECG findings of a wide QRS complex tachycardia with a rate >100 bpm, and the absence of identifiable atrial activity.\n\n### Key Differential Diagnoses to Exclude\n- Atrial fibrillation with aberrant conduction\n- Supraventricular tachycardia (SVT) with bundle branch block\n- Torsades de pointes\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Administer oxygen\n- Establish IV access\n- Consider antiarrhythmic medications (e.g., amiodarone)\n\n#### Second-line Treatments\n- Synchronized cardioversion if unstable\n- Magnesium sulfate for Torsades de pointes\n\n#### Emergency Procedures\n- Synchronized cardioversion: Indicated for unstable VT; Risks include skin burns, arrhythmias, and hypotension.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Beta-blockers\n- Implantable cardioverter-defibrillator (ICD) placement\n\n#### Second-line Treatments\n- Antiarrhythmic drugs (e.g., sotalol, amiodarone)\n- Catheter ablation for recurrent VT\n\n#### Monitoring Requirements\n- Regular follow-up with cardiology\n- ECG monitoring for drug efficacy and side effects\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amiodarone\n- **Mechanism of Action**: Class III antiarrhythmic that prolongs the action potential and refractory period.\n- **Typical Dosing Range**: Loading dose: 150 mg IV over 10 minutes; Maintenance: 1 mg/min for 6 hours, then 0.5 mg/min.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity.\n- **When to Use vs. Alternatives**: Monitor for QT prolongation and liver function.\n\n#### Sotalol\n- **Mechanism of Action**: Class III antiarrhythmic that prolongs the action potential duration.\n- **Typical Dosing Range**: Initial: 80 mg orally twice daily; adjust based on renal function.\n- **Key Side Effects/Contraindications**: Torsades de pointes, fatigue, bradycardia.\n- **When to Use vs. Alternatives**: Requires renal adjustment; monitor QT interval.\n\n### Procedures\n\n#### Synchronized Cardioversion\n- **What it Involves**: Delivery of a shock synchronized to the R wave of the QRS complex to restore normal rhythm.\n- **Indications**: Unstable VT with hemodynamic compromise.\n- **Key Risks/Complications**: Arrhythmias, skin burns, hypotension.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of VT depends on the underlying cause; patients with structural heart disease have a higher risk of complications and mortality. Early recognition and management improve outcomes significantly.\n\n### Important Complications to Watch For\n- Progression to ventricular fibrillation\n- Cardiac arrest\n- Heart failure\n- Thromboembolic events\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize VT on an ECG, initiate basic management, and escalate care appropriately. They should also be familiar with the use of defibrillators and emergency protocols.\n\n### When to Escalate to Senior/Specialist\nIf a patient is unstable with VT, immediate escalation to senior medical staff and preparation for synchronized cardioversion is essential. For stable patients, further investigation and management should be discussed with a cardiologist.\n\n### Key Safety Considerations\nEnsure continuous monitoring of the patient’s vital signs and rhythm. Be aware of the potential for rapid deterioration in unstable patients and the need for immediate intervention.\n",
+  "content": {
+    "overview": {
+      "definition": "Ventricular tachycardia (VT) is a rapid heart rhythm originating from the ventricles, characterized by three or more consecutive ventricular beats at a rate exceeding 100 beats per minute.",
+      "epidemiology": "VT is more common in patients with underlying heart disease, particularly ischemic heart disease, cardiomyopathy, and heart failure. It can occur in both adults and children, with a higher prevalence in older populations.",
+      "pathophysiology": "VT occurs due to reentrant circuits or automaticity in the ventricles, often triggered by myocardial ischemia, electrolyte imbalances, or structural heart disease. It can lead to decreased cardiac output and may progress to ventricular fibrillation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Palpitations",
+        "Dizziness",
+        "Syncope",
+        "Chest pain",
+        "Shortness of breath"
+      ],
+      "signs": [
+        "Rapid heart rate (tachycardia)",
+        "Hypotension",
+        "Altered mental status",
+        "Signs of heart failure (e.g., pulmonary edema)"
+      ],
+      "atypicalPresentations": [
+        "Asymptomatic VT",
+        "VT in the setting of acute myocardial infarction"
+      ],
+      "redFlags": [
+        "Sustained VT lasting more than 30 seconds",
+        "VT associated with hemodynamic instability",
+        "VT in a patient with a history of heart disease"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "12-lead ECG",
+        "Vital signs monitoring",
+        "Cardiac biomarkers (e.g., troponin)"
+      ],
+      "secondLine": [
+        "Electrolyte panel",
+        "Echocardiography",
+        "Holter monitoring"
+      ],
+      "specialistTests": [
+        "Electrophysiological study (EPS)",
+        "Cardiac MRI"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of VT is primarily based on the ECG findings of a wide QRS complex tachycardia with a rate >100 bpm, and the absence of identifiable atrial activity.",
+      "differentials": [
+        "Atrial fibrillation with aberrant conduction",
+        "Supraventricular tachycardia (SVT) with bundle branch block",
+        "Torsades de pointes"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Administer oxygen",
+          "Establish IV access",
+          "Consider antiarrhythmic medications (e.g., amiodarone)"
+        ],
+        "secondLine": [
+          "Synchronized cardioversion if unstable",
+          "Magnesium sulfate for Torsades de pointes"
+        ],
+        "procedures": [
+          "Synchronized cardioversion: Indicated for unstable VT; Risks include skin burns, arrhythmias, and hypotension."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Beta-blockers",
+          "Implantable cardioverter-defibrillator (ICD) placement"
+        ],
+        "secondLine": [
+          "Antiarrhythmic drugs (e.g., sotalol, amiodarone)",
+          "Catheter ablation for recurrent VT"
+        ],
+        "monitoring": [
+          "Regular follow-up with cardiology",
+          "ECG monitoring for drug efficacy and side effects"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amiodarone",
+          "mechanism": "Class III antiarrhythmic that prolongs the action potential and refractory period.",
+          "dosing": "Loading dose: 150 mg IV over 10 minutes; Maintenance: 1 mg/min for 6 hours, then 0.5 mg/min.",
+          "sideEffects": "Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity.",
+          "notes": "Monitor for QT prolongation and liver function."
+        },
+        {
+          "name": "Sotalol",
+          "mechanism": "Class III antiarrhythmic that prolongs the action potential duration.",
+          "dosing": "Initial: 80 mg orally twice daily; adjust based on renal function.",
+          "sideEffects": "Torsades de pointes, fatigue, bradycardia.",
+          "notes": "Requires renal adjustment; monitor QT interval."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Synchronized Cardioversion",
+          "description": "Delivery of a shock synchronized to the R wave of the QRS complex to restore normal rhythm.",
+          "indications": "Unstable VT with hemodynamic compromise.",
+          "risks": "Arrhythmias, skin burns, hypotension."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of VT depends on the underlying cause; patients with structural heart disease have a higher risk of complications and mortality. Early recognition and management improve outcomes significantly.",
+    "complications": [
+      "Progression to ventricular fibrillation",
+      "Cardiac arrest",
+      "Heart failure",
+      "Thromboembolic events"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize VT on an ECG, initiate basic management, and escalate care appropriately. They should also be familiar with the use of defibrillators and emergency protocols.",
+    "escalation": "If a patient is unstable with VT, immediate escalation to senior medical staff and preparation for synchronized cardioversion is essential. For stable patients, further investigation and management should be discussed with a cardiologist.",
+    "keySafetyConsiderations": "Ensure continuous monitoring of the patient’s vital signs and rhythm. Be aware of the potential for rapid deterioration in unstable patients and the need for immediate intervention."
+  }
+}

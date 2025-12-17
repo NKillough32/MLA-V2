@@ -1,0 +1,141 @@
+{
+  "id": "cardiac_arrest",
+  "name": "Cardiac arrest",
+  "domains": [
+    "Cardiology",
+    "Anaesthesia and Critical Care",
+    "Paediatrics"
+  ],
+  "generatedAt": "2025-12-17T18:57:37.185398",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Cardiac arrest: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nCardiac arrest is a medical emergency characterized by the sudden cessation of effective cardiac function, leading to the loss of consciousness and absence of breathing. It can result from various underlying conditions, including arrhythmias, myocardial infarction, or severe hypoxia.\n\n### Epidemiology\nCardiac arrest occurs in approximately 1 in 1,000 people annually, with a higher incidence in older adults and those with pre-existing cardiovascular disease. The survival rate after out-of-hospital cardiac arrest is around 10-12%, while in-hospital rates are higher, approximately 25-30%.\n\n### Essential Pathophysiology\nCardiac arrest typically results from a failure of the heart's electrical system, leading to ventricular fibrillation (VF) or pulseless electrical activity (PEA). This disrupts the heart's ability to pump blood effectively, resulting in inadequate perfusion of vital organs, particularly the brain.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Sudden loss of consciousness\n- No breathing or abnormal breathing\n- No pulse\n\n### Key Signs\n- Unresponsive to stimuli\n- Cyanosis (bluish skin color)\n- Pupils may be dilated and non-reactive\n\n### Atypical Presentations\n- Cardiac arrest in children may present with respiratory distress or shock prior to arrest.\n- In elderly patients, there may be atypical symptoms such as confusion or weakness.\n\n### Red Flags Requiring Immediate Action\n- Witnessed collapse\n- History of heart disease\n- Presence of risk factors such as diabetes, hypertension, or smoking.\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Immediate ECG to assess rhythm\n- Pulse check to confirm absence of circulation\n\n### Second-line Investigations\n- Blood tests including cardiac enzymes (troponin), electrolytes, and arterial blood gases (ABG)\n- Chest X-ray to assess for pulmonary causes\n\n### Specialist Tests\n- Echocardiography to evaluate cardiac function\n- Coronary angiography if myocardial infarction is suspected.\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of cardiac arrest is made clinically based on the absence of pulse and unresponsiveness. Confirmatory tests may include ECG findings of VF or asystole.\n\n### Key Differential Diagnoses to Exclude\n- Myocardial infarction\n- Pulmonary embolism\n- Severe hypoxia\n- Tension pneumothorax\n- Acute coronary syndrome.\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Immediate initiation of CPR (30 compressions to 2 breaths)\n- Defibrillation if VF or pulseless VT is present\n- Administration of oxygen\n\n#### Second-line Treatments\n- Advanced airway management (intubation) if necessary\n- Administration of intravenous fluids\n\n#### Emergency Procedures\n- Defibrillation: delivering an electrical shock to restore normal rhythm, indicated in VF or pulseless VT. Risks include skin burns and arrhythmias.\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Post-resuscitation care including monitoring in an intensive care unit (ICU)\n- Consideration of therapeutic hypothermia for comatose survivors\n\n#### Second-line Treatments\n- Cardiac rehabilitation and lifestyle modification post-recovery\n- Assessment for implantable cardioverter-defibrillator (ICD) placement if indicated.\n\n#### Monitoring Requirements\n- Continuous cardiac monitoring in ICU\n- Regular neurological assessments.\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Adrenaline (Epinephrine)\n- **Mechanism of Action**: Increases coronary perfusion pressure and improves the chances of return of spontaneous circulation (ROSC).\n- **Typical Dosing Range**: 1 mg IV/IO every 3-5 minutes during resuscitation.\n- **Key Side Effects/Contraindications**: Increased heart rate, hypertension, anxiety, and potential for arrhythmias.\n- **When to Use vs. Alternatives**: Administer as soon as possible after cardiac arrest.\n\n#### Amiodarone\n- **Mechanism of Action**: Antiarrhythmic that stabilizes cardiac rhythm, particularly effective in VF and pulseless VT.\n- **Typical Dosing Range**: 300 mg IV push for the first dose, followed by 150 mg if needed.\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, and potential for pulmonary toxicity.\n- **When to Use vs. Alternatives**: Consider in refractory VF after defibrillation.\n\n#### Lidocaine\n- **Mechanism of Action**: Another antiarrhythmic used to suppress ventricular arrhythmias.\n- **Typical Dosing Range**: 1-1.5 mg/kg IV bolus, followed by 0.5-0.75 mg/kg every 5-10 minutes as needed.\n- **Key Side Effects/Contraindications**: Drowsiness, confusion, and seizures in overdose.\n- **When to Use vs. Alternatives**: Less commonly used than amiodarone.\n\n### Procedures\n\n#### Defibrillation\n- **What it Involves**: Application of an electrical shock to the chest to restore normal heart rhythm.\n- **Indications**: VF or pulseless VT during cardiac arrest.\n- **Key Risks/Complications**: Skin burns, arrhythmias, and potential for myocardial injury.\n\n#### Endotracheal Intubation\n- **What it Involves**: Placement of a tube into the trachea to secure the airway and facilitate ventilation.\n- **Indications**: Inability to maintain airway or inadequate ventilation during resuscitation.\n- **Key Risks/Complications**: Esophageal intubation, trauma to the airway, and hypoxia during the procedure.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis after cardiac arrest varies widely based on the underlying cause, time to defibrillation, and quality of post-resuscitation care. Early intervention significantly improves outcomes, with better survival rates in cases of witnessed arrest and immediate CPR.\n\n### Important Complications to Watch For\n- Neurological damage due to hypoxia\n- Myocardial injury\n- Acute kidney injury\n- Pulmonary complications such as pneumonia.\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in basic life support (BLS) and advanced life support (ALS) protocols. They should be able to recognize cardiac arrest, initiate CPR, and assist in advanced resuscitation efforts.\n\n### When to Escalate to Senior/Specialist\nIf a patient is in cardiac arrest, immediate activation of the emergency response team (code blue) is essential. Foundation doctors should also communicate with senior medical staff for further management decisions post-resuscitation.\n\n### Key Safety Considerations\nEnsure the safety of the resuscitation environment, including the presence of adequate personnel and equipment. Continuous monitoring of the patient’s rhythm and vital signs is crucial during and after resuscitation efforts.\n",
+  "content": {
+    "overview": {
+      "definition": "Cardiac arrest is a medical emergency characterized by the sudden cessation of effective cardiac function, leading to the loss of consciousness and absence of breathing. It can result from various underlying conditions, including arrhythmias, myocardial infarction, or severe hypoxia.",
+      "epidemiology": "Cardiac arrest occurs in approximately 1 in 1,000 people annually, with a higher incidence in older adults and those with pre-existing cardiovascular disease. The survival rate after out-of-hospital cardiac arrest is around 10-12%, while in-hospital rates are higher, approximately 25-30%.",
+      "pathophysiology": "Cardiac arrest typically results from a failure of the heart's electrical system, leading to ventricular fibrillation (VF) or pulseless electrical activity (PEA). This disrupts the heart's ability to pump blood effectively, resulting in inadequate perfusion of vital organs, particularly the brain."
+    },
+    "recognition": {
+      "symptoms": [
+        "Sudden loss of consciousness",
+        "No breathing or abnormal breathing",
+        "No pulse"
+      ],
+      "signs": [
+        "Unresponsive to stimuli",
+        "Cyanosis (bluish skin color)",
+        "Pupils may be dilated and non-reactive"
+      ],
+      "atypicalPresentations": [
+        "Cardiac arrest in children may present with respiratory distress or shock prior to arrest.",
+        "In elderly patients, there may be atypical symptoms such as confusion or weakness."
+      ],
+      "redFlags": [
+        "Witnessed collapse",
+        "History of heart disease",
+        "Presence of risk factors such as diabetes, hypertension, or smoking."
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Immediate ECG to assess rhythm",
+        "Pulse check to confirm absence of circulation"
+      ],
+      "secondLine": [
+        "Blood tests including cardiac enzymes (troponin), electrolytes, and arterial blood gases (ABG)",
+        "Chest X-ray to assess for pulmonary causes"
+      ],
+      "specialistTests": [
+        "Echocardiography to evaluate cardiac function",
+        "Coronary angiography if myocardial infarction is suspected."
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of cardiac arrest is made clinically based on the absence of pulse and unresponsiveness. Confirmatory tests may include ECG findings of VF or asystole.",
+      "differentials": [
+        "Myocardial infarction",
+        "Pulmonary embolism",
+        "Severe hypoxia",
+        "Tension pneumothorax",
+        "Acute coronary syndrome."
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Immediate initiation of CPR (30 compressions to 2 breaths)",
+          "Defibrillation if VF or pulseless VT is present",
+          "Administration of oxygen"
+        ],
+        "secondLine": [
+          "Advanced airway management (intubation) if necessary",
+          "Administration of intravenous fluids"
+        ],
+        "procedures": [
+          "Defibrillation: delivering an electrical shock to restore normal rhythm, indicated in VF or pulseless VT. Risks include skin burns and arrhythmias."
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Post-resuscitation care including monitoring in an intensive care unit (ICU)",
+          "Consideration of therapeutic hypothermia for comatose survivors"
+        ],
+        "secondLine": [
+          "Cardiac rehabilitation and lifestyle modification post-recovery",
+          "Assessment for implantable cardioverter-defibrillator (ICD) placement if indicated."
+        ],
+        "monitoring": [
+          "Continuous cardiac monitoring in ICU",
+          "Regular neurological assessments."
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Adrenaline (Epinephrine)",
+          "mechanism": "Increases coronary perfusion pressure and improves the chances of return of spontaneous circulation (ROSC).",
+          "dosing": "1 mg IV/IO every 3-5 minutes during resuscitation.",
+          "sideEffects": "Increased heart rate, hypertension, anxiety, and potential for arrhythmias.",
+          "notes": "Administer as soon as possible after cardiac arrest."
+        },
+        {
+          "name": "Amiodarone",
+          "mechanism": "Antiarrhythmic that stabilizes cardiac rhythm, particularly effective in VF and pulseless VT.",
+          "dosing": "300 mg IV push for the first dose, followed by 150 mg if needed.",
+          "sideEffects": "Hypotension, bradycardia, and potential for pulmonary toxicity.",
+          "notes": "Consider in refractory VF after defibrillation."
+        },
+        {
+          "name": "Lidocaine",
+          "mechanism": "Another antiarrhythmic used to suppress ventricular arrhythmias.",
+          "dosing": "1-1.5 mg/kg IV bolus, followed by 0.5-0.75 mg/kg every 5-10 minutes as needed.",
+          "sideEffects": "Drowsiness, confusion, and seizures in overdose.",
+          "notes": "Less commonly used than amiodarone."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Defibrillation",
+          "description": "Application of an electrical shock to the chest to restore normal heart rhythm.",
+          "indications": "VF or pulseless VT during cardiac arrest.",
+          "risks": "Skin burns, arrhythmias, and potential for myocardial injury."
+        },
+        {
+          "name": "Endotracheal Intubation",
+          "description": "Placement of a tube into the trachea to secure the airway and facilitate ventilation.",
+          "indications": "Inability to maintain airway or inadequate ventilation during resuscitation.",
+          "risks": "Esophageal intubation, trauma to the airway, and hypoxia during the procedure."
+        }
+      ]
+    },
+    "prognosis": "The prognosis after cardiac arrest varies widely based on the underlying cause, time to defibrillation, and quality of post-resuscitation care. Early intervention significantly improves outcomes, with better survival rates in cases of witnessed arrest and immediate CPR.",
+    "complications": [
+      "Neurological damage due to hypoxia",
+      "Myocardial injury",
+      "Acute kidney injury",
+      "Pulmonary complications such as pneumonia."
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in basic life support (BLS) and advanced life support (ALS) protocols. They should be able to recognize cardiac arrest, initiate CPR, and assist in advanced resuscitation efforts.",
+    "escalation": "If a patient is in cardiac arrest, immediate activation of the emergency response team (code blue) is essential. Foundation doctors should also communicate with senior medical staff for further management decisions post-resuscitation.",
+    "keySafetyConsiderations": "Ensure the safety of the resuscitation environment, including the presence of adequate personnel and equipment. Continuous monitoring of the patient’s rhythm and vital signs is crucial during and after resuscitation efforts."
+  }
+}

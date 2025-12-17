@@ -1,0 +1,155 @@
+{
+  "id": "chronic_heart_failure",
+  "name": "Chronic Heart Failure",
+  "domains": [
+    "Cardiology"
+  ],
+  "generatedAt": "2025-12-17T19:00:06.114031",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Chronic Heart Failure: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nChronic Heart Failure (CHF) is a clinical syndrome characterized by the heart's inability to pump sufficient blood to meet the body's metabolic demands, leading to symptoms of fluid overload and inadequate tissue perfusion.\n\n### Epidemiology\nCHF affects approximately 1-2% of the adult population, with prevalence increasing with age. It is a leading cause of morbidity and mortality worldwide, particularly in older adults.\n\n### Essential Pathophysiology\nCHF can result from various cardiac conditions, including ischemic heart disease, hypertension, and valvular heart disease. The heart undergoes structural and functional changes, leading to reduced cardiac output and compensatory mechanisms such as neurohormonal activation (e.g., RAAS, sympathetic nervous system), which ultimately exacerbate heart failure.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Dyspnea on exertion\n- Orthopnea\n- Paroxysmal nocturnal dyspnea\n- Fatigue\n- Edema (peripheral or pulmonary)\n- Cough (especially when supine)\n- Palpitations\n\n### Key Signs\n- Elevated jugular venous pressure\n- Pulmonary crackles on auscultation\n- S3 heart sound\n- Hepatomegaly\n- Pitting edema\n- Ascites\n\n### Atypical Presentations\n- Confusion or altered mental status in elderly patients\n- Unexplained weight loss\n- Anorexia or nausea\n\n### Red Flags Requiring Immediate Action\n- Acute worsening of symptoms\n- Severe dyspnea at rest\n- Hypotension\n- Altered mental status\n- Persistent tachycardia\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Chest X-ray\n- B-type natriuretic peptide (BNP) or N-terminal proBNP (NT-proBNP)\n- Basic metabolic panel (electrolytes, renal function)\n\n### Second-line Investigations\n- Echocardiogram (to assess ejection fraction and structural abnormalities)\n- Cardiac MRI (if further characterization is needed)\n- Stress testing (if ischemic heart disease is suspected)\n\n### Specialist Tests\n- Coronary angiography (if ischemic heart disease is suspected)\n- Endomyocardial biopsy (rarely indicated)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of CHF is based on clinical symptoms, signs, and supportive investigations (elevated BNP/NT-proBNP, echocardiographic findings).\n\n### Key Differential Diagnoses to Exclude\n- Chronic obstructive pulmonary disease (COPD)\n- Pulmonary hypertension\n- Anemia\n- Thyroid disorders (hyperthyroidism or hypothyroidism)\n- Renal failure\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Oxygen therapy (if hypoxic)\n- Diuretics (e.g., furosemide) for fluid overload\n- Nitrates for acute pulmonary edema\n\n#### Second-line Treatments\n- Inotropic agents (e.g., dobutamine) in severe cases\n- Vasodilators (e.g., nitroprusside) for severe hypertension\n\n#### Emergency Procedures\n- Ultrafiltration (in refractory cases of fluid overload)\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- ACE inhibitors (e.g., lisinopril)\n- Beta-blockers (e.g., carvedilol)\n- Diuretics (e.g., furosemide) for symptom control\n\n#### Second-line Treatments\n- Angiotensin receptor-neprilysin inhibitors (ARNIs) (e.g., sacubitril/valsartan)\n- Aldosterone antagonists (e.g., spironolactone)\n\n#### Monitoring Requirements\n- Regular follow-up for symptom assessment and medication titration\n- Monitoring renal function and electrolytes (especially potassium)\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Furosemide\n- **Mechanism of Action**: Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle.\n- **Typical Dosing Range**: Initial: 20-40 mg IV/PO; titrate based on response (max: 600 mg/day).\n- **Key Side Effects/Contraindications**: Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.\n- **When to Use vs. Alternatives**: Monitor renal function and electrolytes regularly.\n\n#### Lisinopril\n- **Mechanism of Action**: ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.\n- **Typical Dosing Range**: Initial: 2.5-5 mg daily; target: 20-40 mg daily.\n- **Key Side Effects/Contraindications**: Cough, hyperkalemia, renal impairment, angioedema.\n- **When to Use vs. Alternatives**: Monitor renal function and potassium levels.\n\n#### Carvedilol\n- **Mechanism of Action**: Non-selective beta-blocker with alpha-blocking properties, reducing heart rate and myocardial oxygen demand.\n- **Typical Dosing Range**: Initial: 3.125 mg twice daily; target: 25-50 mg twice daily.\n- **Key Side Effects/Contraindications**: Bradycardia, hypotension, fatigue, dizziness.\n- **When to Use vs. Alternatives**: Titrate slowly; contraindicated in severe asthma.\n\n#### Sacubitril/Valsartan\n- **Mechanism of Action**: ARNI that inhibits neprilysin and blocks angiotensin II receptors, leading to vasodilation and reduced heart failure symptoms.\n- **Typical Dosing Range**: Initial: 49/51 mg twice daily; target: 97/103 mg twice daily.\n- **Key Side Effects/Contraindications**: Hypotension, hyperkalemia, renal impairment.\n- **When to Use vs. Alternatives**: Must be used in place of ACE inhibitors.\n\n### Procedures\n\n#### Ultrafiltration\n- **What it Involves**: A procedure to remove excess fluid from the body using a dialysis-like machine.\n- **Indications**: Refractory fluid overload not responsive to diuretics.\n- **Key Risks/Complications**: Hypotension, electrolyte imbalances, infection.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of CHF varies based on etiology, severity, and response to treatment. With appropriate management, many patients can achieve improved quality of life and functional status, but the condition is often progressive.\n\n### Important Complications to Watch For\n- Arrhythmias (e.g., atrial fibrillation)\n- Acute decompensated heart failure\n- Cardiogenic shock\n- Renal failure\n- Thromboembolic events (e.g., stroke)\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be proficient in recognizing symptoms of CHF, performing initial assessments, initiating treatment, and monitoring patients. They should also be aware of when to escalate care to senior colleagues or specialists.\n\n### When to Escalate to Senior/Specialist\nEscalate care if there is acute decompensation, persistent symptoms despite treatment, or if the patient exhibits red flags such as severe hypotension or altered mental status.\n\n### Key Safety Considerations\nEnsure regular monitoring of renal function and electrolytes, especially when initiating or adjusting diuretics and ACE inhibitors. Be vigilant for signs of worsening heart failure or complications.\n",
+  "content": {
+    "overview": {
+      "definition": "Chronic Heart Failure (CHF) is a clinical syndrome characterized by the heart's inability to pump sufficient blood to meet the body's metabolic demands, leading to symptoms of fluid overload and inadequate tissue perfusion.",
+      "epidemiology": "CHF affects approximately 1-2% of the adult population, with prevalence increasing with age. It is a leading cause of morbidity and mortality worldwide, particularly in older adults.",
+      "pathophysiology": "CHF can result from various cardiac conditions, including ischemic heart disease, hypertension, and valvular heart disease. The heart undergoes structural and functional changes, leading to reduced cardiac output and compensatory mechanisms such as neurohormonal activation (e.g., RAAS, sympathetic nervous system), which ultimately exacerbate heart failure."
+    },
+    "recognition": {
+      "symptoms": [
+        "Dyspnea on exertion",
+        "Orthopnea",
+        "Paroxysmal nocturnal dyspnea",
+        "Fatigue",
+        "Edema (peripheral or pulmonary)",
+        "Cough (especially when supine)",
+        "Palpitations"
+      ],
+      "signs": [
+        "Elevated jugular venous pressure",
+        "Pulmonary crackles on auscultation",
+        "S3 heart sound",
+        "Hepatomegaly",
+        "Pitting edema",
+        "Ascites"
+      ],
+      "atypicalPresentations": [
+        "Confusion or altered mental status in elderly patients",
+        "Unexplained weight loss",
+        "Anorexia or nausea"
+      ],
+      "redFlags": [
+        "Acute worsening of symptoms",
+        "Severe dyspnea at rest",
+        "Hypotension",
+        "Altered mental status",
+        "Persistent tachycardia"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Chest X-ray",
+        "B-type natriuretic peptide (BNP) or N-terminal proBNP (NT-proBNP)",
+        "Basic metabolic panel (electrolytes, renal function)"
+      ],
+      "secondLine": [
+        "Echocardiogram (to assess ejection fraction and structural abnormalities)",
+        "Cardiac MRI (if further characterization is needed)",
+        "Stress testing (if ischemic heart disease is suspected)"
+      ],
+      "specialistTests": [
+        "Coronary angiography (if ischemic heart disease is suspected)",
+        "Endomyocardial biopsy (rarely indicated)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of CHF is based on clinical symptoms, signs, and supportive investigations (elevated BNP/NT-proBNP, echocardiographic findings).",
+      "differentials": [
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Pulmonary hypertension",
+        "Anemia",
+        "Thyroid disorders (hyperthyroidism or hypothyroidism)",
+        "Renal failure"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Oxygen therapy (if hypoxic)",
+          "Diuretics (e.g., furosemide) for fluid overload",
+          "Nitrates for acute pulmonary edema"
+        ],
+        "secondLine": [
+          "Inotropic agents (e.g., dobutamine) in severe cases",
+          "Vasodilators (e.g., nitroprusside) for severe hypertension"
+        ],
+        "procedures": [
+          "Ultrafiltration (in refractory cases of fluid overload)"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "ACE inhibitors (e.g., lisinopril)",
+          "Beta-blockers (e.g., carvedilol)",
+          "Diuretics (e.g., furosemide) for symptom control"
+        ],
+        "secondLine": [
+          "Angiotensin receptor-neprilysin inhibitors (ARNIs) (e.g., sacubitril/valsartan)",
+          "Aldosterone antagonists (e.g., spironolactone)"
+        ],
+        "monitoring": [
+          "Regular follow-up for symptom assessment and medication titration",
+          "Monitoring renal function and electrolytes (especially potassium)"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Furosemide",
+          "mechanism": "Loop diuretic that inhibits sodium and chloride reabsorption in the ascending loop of Henle.",
+          "dosing": "Initial: 20-40 mg IV/PO; titrate based on response (max: 600 mg/day).",
+          "sideEffects": "Electrolyte imbalances (hypokalemia, hyponatremia), dehydration, renal impairment.",
+          "notes": "Monitor renal function and electrolytes regularly."
+        },
+        {
+          "name": "Lisinopril",
+          "mechanism": "ACE inhibitor that reduces angiotensin II production, leading to vasodilation and decreased preload/afterload.",
+          "dosing": "Initial: 2.5-5 mg daily; target: 20-40 mg daily.",
+          "sideEffects": "Cough, hyperkalemia, renal impairment, angioedema.",
+          "notes": "Monitor renal function and potassium levels."
+        },
+        {
+          "name": "Carvedilol",
+          "mechanism": "Non-selective beta-blocker with alpha-blocking properties, reducing heart rate and myocardial oxygen demand.",
+          "dosing": "Initial: 3.125 mg twice daily; target: 25-50 mg twice daily.",
+          "sideEffects": "Bradycardia, hypotension, fatigue, dizziness.",
+          "notes": "Titrate slowly; contraindicated in severe asthma."
+        },
+        {
+          "name": "Sacubitril/Valsartan",
+          "mechanism": "ARNI that inhibits neprilysin and blocks angiotensin II receptors, leading to vasodilation and reduced heart failure symptoms.",
+          "dosing": "Initial: 49/51 mg twice daily; target: 97/103 mg twice daily.",
+          "sideEffects": "Hypotension, hyperkalemia, renal impairment.",
+          "notes": "Must be used in place of ACE inhibitors."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Ultrafiltration",
+          "description": "A procedure to remove excess fluid from the body using a dialysis-like machine.",
+          "indications": "Refractory fluid overload not responsive to diuretics.",
+          "risks": "Hypotension, electrolyte imbalances, infection."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of CHF varies based on etiology, severity, and response to treatment. With appropriate management, many patients can achieve improved quality of life and functional status, but the condition is often progressive.",
+    "complications": [
+      "Arrhythmias (e.g., atrial fibrillation)",
+      "Acute decompensated heart failure",
+      "Cardiogenic shock",
+      "Renal failure",
+      "Thromboembolic events (e.g., stroke)"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be proficient in recognizing symptoms of CHF, performing initial assessments, initiating treatment, and monitoring patients. They should also be aware of when to escalate care to senior colleagues or specialists.",
+    "escalation": "Escalate care if there is acute decompensation, persistent symptoms despite treatment, or if the patient exhibits red flags such as severe hypotension or altered mental status.",
+    "keySafetyConsiderations": "Ensure regular monitoring of renal function and electrolytes, especially when initiating or adjusting diuretics and ACE inhibitors. Be vigilant for signs of worsening heart failure or complications."
+  }
+}

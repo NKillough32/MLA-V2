@@ -1,0 +1,144 @@
+{
+  "id": "atrial_arrhythmias",
+  "name": "Atrial arrhythmias",
+  "domains": [
+    "Cardiology",
+    "Anaesthesia and Critical Care"
+  ],
+  "generatedAt": "2025-12-17T18:58:42.336721",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Atrial arrhythmias: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nAtrial arrhythmias are abnormal heart rhythms originating in the atria, characterized by irregular electrical activity that can lead to ineffective atrial contraction and potential thromboembolic events.\n\n### Epidemiology\nAtrial fibrillation (AF) is the most common atrial arrhythmia, affecting approximately 1-2% of the general population, with prevalence increasing with age. Other types include atrial flutter and atrial tachycardia.\n\n### Essential Pathophysiology\nAtrial arrhythmias result from disturbances in the normal electrical conduction pathways of the heart, often due to structural heart disease, ischemia, or electrolyte imbalances. AF, for example, is associated with fibrosis and dilation of the atria, leading to reentrant circuits.\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Palpitations\n- Dizziness\n- Shortness of breath\n- Fatigue\n- Chest pain\n\n### Key Signs\n- Irregularly irregular pulse\n- Tachycardia\n- Hypotension\n- Signs of heart failure\n\n### Atypical Presentations\n- Syncope\n- Stroke symptoms (e.g., weakness, speech difficulties)\n- Asymptomatic in some cases\n\n### Red Flags Requiring Immediate Action\n- New onset atrial fibrillation in a patient with heart failure\n- Rapid ventricular response\n- Signs of acute coronary syndrome\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- Electrocardiogram (ECG)\n- Basic blood tests (CBC, electrolytes, renal function)\n\n### Second-line Investigations\n- Echocardiogram\n- Holter monitor (24-hour ECG)\n- Thyroid function tests\n\n### Specialist Tests\n- Electrophysiological study (EPS)\n- Cardiac MRI\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis of atrial arrhythmias is primarily based on ECG findings, showing irregularly irregular rhythm for AF, or characteristic sawtooth pattern for atrial flutter.\n\n### Key Differential Diagnoses to Exclude\n- Supraventricular tachycardia (SVT)\n- Ventricular tachycardia (VT)\n- Sinus tachycardia\n- Atrial premature beats\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- Rate control with beta-blockers or calcium channel blockers\n- Anticoagulation if indicated\n\n#### Second-line Treatments\n- Rhythm control with antiarrhythmic drugs (e.g., amiodarone)\n- Cardioversion (chemical or electrical)\n\n#### Emergency Procedures\n- Electrical cardioversion\n- Ablation for atrial flutter or persistent AF\n\n### Chronic Management (Ongoing Care)\n\n#### First-line Treatments\n- Long-term anticoagulation (e.g., warfarin, DOACs)\n- Rate control medications (beta-blockers, digoxin)\n\n#### Second-line Treatments\n- Rhythm control strategies (e.g., amiodarone, sotalol)\n- Ablation for symptomatic patients\n\n#### Monitoring Requirements\n- Regular follow-up for anticoagulation management\n- Monitoring for signs of heart failure or stroke\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Amiodarone\n- **Mechanism of Action**: Class III antiarrhythmic; prolongs action potential and refractory period\n- **Typical Dosing Range**: Loading dose: 300 mg IV over 20-60 min; maintenance: 150 mg IV over 24 hours or oral 200 mg daily\n- **Key Side Effects/Contraindications**: Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity\n- **When to Use vs. Alternatives**: Monitor for QT prolongation and liver function.\n\n#### Dabigatran\n- **Mechanism of Action**: Direct thrombin inhibitor; reduces thrombus formation\n- **Typical Dosing Range**: 150 mg orally twice daily; 75 mg if CrCl 15-30 mL/min\n- **Key Side Effects/Contraindications**: Bleeding, gastrointestinal upset\n- **When to Use vs. Alternatives**: No routine monitoring required, but renal function should be assessed.\n\n#### Sotalol\n- **Mechanism of Action**: Class III antiarrhythmic; prolongs action potential duration\n- **Typical Dosing Range**: 80-160 mg orally twice daily; adjust for renal function\n- **Key Side Effects/Contraindications**: Torsades de pointes, bradycardia, fatigue\n- **When to Use vs. Alternatives**: Requires monitoring of renal function and QT interval.\n\n### Procedures\n\n#### Electrical Cardioversion\n- **What it Involves**: Delivery of a synchronized electrical shock to restore normal sinus rhythm\n- **Indications**: Persistent atrial fibrillation with hemodynamic instability or symptomatic patients\n- **Key Risks/Complications**: Arrhythmias, skin burns, thromboembolism if performed without anticoagulation.\n\n#### Catheter Ablation\n- **What it Involves**: Targeted destruction of arrhythmogenic foci in the atria using radiofrequency energy\n- **Indications**: Recurrent symptomatic atrial fibrillation despite medical therapy\n- **Key Risks/Complications**: Cardiac perforation, vascular complications, recurrence of arrhythmia.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nThe prognosis of atrial arrhythmias varies; AF is associated with increased risk of stroke and heart failure. Effective management can significantly improve quality of life and reduce complications.\n\n### Important Complications to Watch For\n- Stroke\n- Heart failure\n- Thromboembolism\n- Cardiomyopathy\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\nFoundation doctors should be able to recognize symptoms of atrial arrhythmias, perform initial assessments, initiate appropriate investigations, and manage acute situations. They should also understand the importance of anticoagulation and follow-up care.\n\n### When to Escalate to Senior/Specialist\nPatients with unstable vital signs, severe symptoms, or new-onset atrial arrhythmias should be escalated to senior medical staff or cardiology for urgent management.\n\n### Key Safety Considerations\nEnsure appropriate anticoagulation is in place before cardioversion; monitor for signs of stroke or heart failure; be vigilant for drug interactions, especially with anticoagulants and antiarrhythmics.\n",
+  "content": {
+    "overview": {
+      "definition": "Atrial arrhythmias are abnormal heart rhythms originating in the atria, characterized by irregular electrical activity that can lead to ineffective atrial contraction and potential thromboembolic events.",
+      "epidemiology": "Atrial fibrillation (AF) is the most common atrial arrhythmia, affecting approximately 1-2% of the general population, with prevalence increasing with age. Other types include atrial flutter and atrial tachycardia.",
+      "pathophysiology": "Atrial arrhythmias result from disturbances in the normal electrical conduction pathways of the heart, often due to structural heart disease, ischemia, or electrolyte imbalances. AF, for example, is associated with fibrosis and dilation of the atria, leading to reentrant circuits."
+    },
+    "recognition": {
+      "symptoms": [
+        "Palpitations",
+        "Dizziness",
+        "Shortness of breath",
+        "Fatigue",
+        "Chest pain"
+      ],
+      "signs": [
+        "Irregularly irregular pulse",
+        "Tachycardia",
+        "Hypotension",
+        "Signs of heart failure"
+      ],
+      "atypicalPresentations": [
+        "Syncope",
+        "Stroke symptoms (e.g., weakness, speech difficulties)",
+        "Asymptomatic in some cases"
+      ],
+      "redFlags": [
+        "New onset atrial fibrillation in a patient with heart failure",
+        "Rapid ventricular response",
+        "Signs of acute coronary syndrome"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Electrocardiogram (ECG)",
+        "Basic blood tests (CBC, electrolytes, renal function)"
+      ],
+      "secondLine": [
+        "Echocardiogram",
+        "Holter monitor (24-hour ECG)",
+        "Thyroid function tests"
+      ],
+      "specialistTests": [
+        "Electrophysiological study (EPS)",
+        "Cardiac MRI"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis of atrial arrhythmias is primarily based on ECG findings, showing irregularly irregular rhythm for AF, or characteristic sawtooth pattern for atrial flutter.",
+      "differentials": [
+        "Supraventricular tachycardia (SVT)",
+        "Ventricular tachycardia (VT)",
+        "Sinus tachycardia",
+        "Atrial premature beats"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Rate control with beta-blockers or calcium channel blockers",
+          "Anticoagulation if indicated"
+        ],
+        "secondLine": [
+          "Rhythm control with antiarrhythmic drugs (e.g., amiodarone)",
+          "Cardioversion (chemical or electrical)"
+        ],
+        "procedures": [
+          "Electrical cardioversion",
+          "Ablation for atrial flutter or persistent AF"
+        ]
+      },
+      "chronic": {
+        "firstLine": [
+          "Long-term anticoagulation (e.g., warfarin, DOACs)",
+          "Rate control medications (beta-blockers, digoxin)"
+        ],
+        "secondLine": [
+          "Rhythm control strategies (e.g., amiodarone, sotalol)",
+          "Ablation for symptomatic patients"
+        ],
+        "monitoring": [
+          "Regular follow-up for anticoagulation management",
+          "Monitoring for signs of heart failure or stroke"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Amiodarone",
+          "mechanism": "Class III antiarrhythmic; prolongs action potential and refractory period",
+          "dosing": "Loading dose: 300 mg IV over 20-60 min; maintenance: 150 mg IV over 24 hours or oral 200 mg daily",
+          "sideEffects": "Hypotension, bradycardia, thyroid dysfunction, pulmonary toxicity",
+          "notes": "Monitor for QT prolongation and liver function."
+        },
+        {
+          "name": "Dabigatran",
+          "mechanism": "Direct thrombin inhibitor; reduces thrombus formation",
+          "dosing": "150 mg orally twice daily; 75 mg if CrCl 15-30 mL/min",
+          "sideEffects": "Bleeding, gastrointestinal upset",
+          "notes": "No routine monitoring required, but renal function should be assessed."
+        },
+        {
+          "name": "Sotalol",
+          "mechanism": "Class III antiarrhythmic; prolongs action potential duration",
+          "dosing": "80-160 mg orally twice daily; adjust for renal function",
+          "sideEffects": "Torsades de pointes, bradycardia, fatigue",
+          "notes": "Requires monitoring of renal function and QT interval."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Electrical Cardioversion",
+          "description": "Delivery of a synchronized electrical shock to restore normal sinus rhythm",
+          "indications": "Persistent atrial fibrillation with hemodynamic instability or symptomatic patients",
+          "risks": "Arrhythmias, skin burns, thromboembolism if performed without anticoagulation."
+        },
+        {
+          "name": "Catheter Ablation",
+          "description": "Targeted destruction of arrhythmogenic foci in the atria using radiofrequency energy",
+          "indications": "Recurrent symptomatic atrial fibrillation despite medical therapy",
+          "risks": "Cardiac perforation, vascular complications, recurrence of arrhythmia."
+        }
+      ]
+    },
+    "prognosis": "The prognosis of atrial arrhythmias varies; AF is associated with increased risk of stroke and heart failure. Effective management can significantly improve quality of life and reduce complications.",
+    "complications": [
+      "Stroke",
+      "Heart failure",
+      "Thromboembolism",
+      "Cardiomyopathy"
+    ],
+    "foundationDoctorRole": "Foundation doctors should be able to recognize symptoms of atrial arrhythmias, perform initial assessments, initiate appropriate investigations, and manage acute situations. They should also understand the importance of anticoagulation and follow-up care.",
+    "escalation": "Patients with unstable vital signs, severe symptoms, or new-onset atrial arrhythmias should be escalated to senior medical staff or cardiology for urgent management.",
+    "keySafetyConsiderations": "Ensure appropriate anticoagulation is in place before cardioversion; monitor for signs of stroke or heart failure; be vigilant for drug interactions, especially with anticoagulants and antiarrhythmics."
+  }
+}
