@@ -1,0 +1,14 @@
+{
+  "name": "Desogestrel",
+  "class": "Progestogens (synthetic)",
+  "mechanism": "Synthetic progestogen - primarily works by inhibiting ovulation (inhibits LH surge), also thickens cervical mucus and thins endometrium",
+  "dosing": "Progestogen-only pill (POP): 75mcg OD continuously (no pill-free interval). Take at same time daily (12-hour window)",
+  "contraindications": "Current VTE (avoid if possible, caution), current/recent breast cancer, severe liver disease, undiagnosed vaginal bleeding",
+  "interactions": "Enzyme inducers (↓ effect - use additional contraception), enzyme inhibitors (possible ↑ effect)",
+  "monitoring": "Review need annually. Check BP, discuss irregular bleeding patterns. Counsel on missed pill rules",
+  "pregnancy": "Not known to be harmful if conception occurs. Stop when pregnancy confirmed",
+  "sideEffects": "Irregular bleeding (common - may settle after 3 months), headache, acne, breast tenderness, mood changes, weight change, ovarian cysts (usually resolve)",
+  "pharmacokinetics": "Rapidly absorbed, converted to active metabolite etonogestrel, half-life: 30 hours, hepatic metabolism",
+  "clinicalPearls": "Only POP that reliably inhibits ovulation (>97% of cycles). More forgiving than older POPs - 12-hour window vs 3-hour. Good choice when oestrogen contraindicated (e.g. breastfeeding, migraine with aura, VTE risk). Bleeding patterns often irregular initially",
+  "indication": "Contraception (especially when oestrogen contraindicated), suitable for breastfeeding women"
+}

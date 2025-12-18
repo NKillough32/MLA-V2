@@ -1,0 +1,14 @@
+{
+  "name": "Estradiol",
+  "class": "Oestrogens (natural)",
+  "mechanism": "Natural oestrogen (17β-estradiol) - binds to oestrogen receptors, reduces menopausal symptoms and bone resorption",
+  "dosing": "HRT: Oral 1-2mg OD. Transdermal patch 25-100mcg twice weekly. Gel 0.5-1.5mg daily. Combine with progestogen if uterus present",
+  "contraindications": "Oestrogen-dependent cancers (breast, endometrial), unexplained vaginal bleeding, active VTE/PE, untreated endometrial hyperplasia, active liver disease, acute porphyria",
+  "interactions": "Enzyme inducers (↓ effect), warfarin (may ↑ or ↓ effect), corticosteroids (may ↑ effect)",
+  "monitoring": "BP, breast examination, endometrial surveillance if uterus present. Review need annually. Mammography as per national screening",
+  "pregnancy": "Contraindicated - not for use in pregnancy",
+  "sideEffects": "Breast tenderness, nausea, leg cramps, headache, bloating, VTE risk (↑ with oral, lower with transdermal), stroke risk (small), breast cancer risk (with long-term use)",
+  "pharmacokinetics": "Oral: variable absorption, extensive first-pass metabolism. Transdermal: avoids first-pass, steady levels. Half-life: 1 hour (oral), hepatic metabolism",
+  "clinicalPearls": "Transdermal route preferred over oral (lower VTE risk, avoids first-pass). Always combine with progestogen if uterus present (prevents endometrial hyperplasia). Use lowest effective dose. Body-identical HRT increasingly preferred",
+  "indication": "Menopausal symptoms (hot flushes, night sweats), osteoporosis prevention (not first-line), urogenital atrophy"
+}

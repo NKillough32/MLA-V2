@@ -81,7 +81,7 @@
     {
       "id": "alprostadil",
       "name": "Alprostadil (Prostaglandin E1)",
-      "class": "",
+      "class": "Prostaglandins and analogues",
       "indication": "Maintain patent ductus arteriosus (neonates), erectile dysfunction"
     },
     {
@@ -124,7 +124,7 @@
       "id": "amoxicillin",
       "name": "Amoxicillin",
       "class": "Penicillins, broad-spectrum",
-      "indication": ""
+      "indication": "Respiratory infections (pneumonia, LRTI), UTI, otitis media, sinusitis, dental infections, H. pylori eradication (with PPI and clarithromycin)"
     },
     {
       "id": "amphotericin-b",
@@ -190,7 +190,7 @@
       "id": "atorvastatin",
       "name": "Atorvastatin",
       "class": "Statins",
-      "indication": ""
+      "indication": "Primary prevention of cardiovascular disease (QRISK ≥10%), secondary prevention (post-MI, stroke, TIA, angina, PVD), hypercholesterolaemia"
     },
     {
       "id": "atropine",
@@ -247,6 +247,12 @@
       "indication": "Severe eczema, psoriasis, severe inflammatory skin conditions"
     },
     {
+      "id": "bicalutamide",
+      "name": "Bicalutamide",
+      "class": "Hormone antagonists (anti-androgen)",
+      "indication": "Advanced prostate cancer (with LHRH analogue or after surgical castration), locally advanced prostate cancer at high risk of progression"
+    },
+    {
       "id": "biphasic insulin",
       "name": "Biphasic Insulin (Novomix, Humalog Mix)",
       "class": "Insulin - premixed combinations",
@@ -263,6 +269,12 @@
       "name": "Bisoprolol",
       "class": "Beta-blockers",
       "indication": "Heart failure, post-MI, hypertension, angina, atrial fibrillation"
+    },
+    {
+      "id": "brinzolamide",
+      "name": "Brinzolamide",
+      "class": "Carbonic anhydrase inhibitors (glaucoma treatment)",
+      "indication": "Open-angle glaucoma, ocular hypertension (adjunct or when prostaglandin analogues/beta-blockers contraindicated)"
     },
     {
       "id": "brivaracetam",
@@ -637,6 +649,12 @@
       "indication": "Cranial diabetes insipidus, primary nocturnal enuresis (>7y), von Willebrand disease, mild haemophilia A"
     },
     {
+      "id": "desogestrel",
+      "name": "Desogestrel",
+      "class": "Progestogens (synthetic)",
+      "indication": "Contraception (especially when oestrogen contraindicated), suitable for breastfeeding women"
+    },
+    {
       "id": "dexamethasone",
       "name": "Dexamethasone",
       "class": "Corticosteroid (glucocorticoid)",
@@ -817,10 +835,28 @@
       "indication": "GORD, peptic ulcer disease, H.pylori eradication, NSAID prophylaxis"
     },
     {
+      "id": "estradiol",
+      "name": "Estradiol",
+      "class": "Oestrogens (natural)",
+      "indication": "Menopausal symptoms (hot flushes, night sweats), osteoporosis prevention (not first-line), urogenital atrophy"
+    },
+    {
       "id": "ethambutol",
       "name": "Ethambutol",
       "class": "Antitubercular",
       "indication": "TB"
+    },
+    {
+      "id": "ethinylestradiol",
+      "name": "Ethinylestradiol",
+      "class": "Oestrogens (synthetic)",
+      "indication": "Contraception (combined with progestogen), occasionally hormone replacement therapy, menstrual disorders"
+    },
+    {
+      "id": "etoricoxib",
+      "name": "Etoricoxib",
+      "class": "Non-steroidal anti-inflammatory drugs (COX-2 inhibitor)",
+      "indication": "Osteoarthritis, rheumatoid arthritis, ankylosing spondylitis, acute gout"
     },
     {
       "id": "famotidine",
@@ -1003,16 +1039,16 @@
       "indication": "Acute constipation, before procedures"
     },
     {
-      "id": "glyceryl-trinitrate",
-      "name": "Glyceryl Trinitrate (GTN)",
-      "class": "Nitrates",
-      "indication": "Angina, heart failure, hypertensive emergency, anal fissure"
-    },
-    {
       "id": "glyceryl trinitrate",
       "name": "Glyceryl Trinitrate (GTN)",
       "class": "Nitrates",
       "indication": "Angina, acute coronary syndrome, acute heart failure, anal fissure (topical)"
+    },
+    {
+      "id": "glyceryl-trinitrate",
+      "name": "Glyceryl Trinitrate (GTN)",
+      "class": "Nitrates",
+      "indication": "Angina, heart failure, hypertensive emergency, anal fissure"
     },
     {
       "id": "glycopyrronium",
@@ -1225,16 +1261,16 @@
       "indication": "Angina, acute heart failure symptom relief in some settings"
     },
     {
-      "id": "isosorbide-mononitrate",
-      "name": "Isosorbide mononitrate",
-      "class": "Nitrate (long-acting)",
-      "indication": "Chronic stable angina, heart failure symptom control in some patients"
-    },
-    {
       "id": "isosorbide mononitrate",
       "name": "Isosorbide Mononitrate",
       "class": "Nitrates",
       "indication": "Angina prophylaxis, left ventricular failure (with hydralazine)"
+    },
+    {
+      "id": "isosorbide-mononitrate",
+      "name": "Isosorbide mononitrate",
+      "class": "Nitrate (long-acting)",
+      "indication": "Chronic stable angina, heart failure symptom control in some patients"
     },
     {
       "id": "itraconazole",
@@ -1277,6 +1313,12 @@
       "name": "Lansoprazole",
       "class": "Proton pump inhibitor (PPI)",
       "indication": "GORD, peptic ulcer disease, H.pylori eradication, Zollinger-Ellison syndrome"
+    },
+    {
+      "id": "latanoprost",
+      "name": "Latanoprost",
+      "class": "Prostaglandin analogues (glaucoma treatment)",
+      "indication": "Open-angle glaucoma, ocular hypertension (to reduce intraocular pressure)"
     },
     {
       "id": "letrozole",
@@ -1444,7 +1486,7 @@
       "id": "metformin",
       "name": "Metformin",
       "class": "Biguanide (oral hypoglycaemic)",
-      "indication": ""
+      "indication": "Type 2 diabetes mellitus (first-line), polycystic ovary syndrome (PCOS), gestational diabetes (specialist guidance)"
     },
     {
       "id": "methadone",
@@ -2011,16 +2053,16 @@
       "indication": "Constipation, bowel prep"
     },
     {
-      "id": "sodium-valproate",
-      "name": "Sodium Valproate",
-      "class": "Antiepileptic/mood stabiliser",
-      "indication": "Epilepsy (generalised seizures), bipolar disorder, migraine prophylaxis (not in women of childbearing potential)"
-    },
-    {
       "id": "sodium valproate",
       "name": "Sodium Valproate",
       "class": "Valproate (Antiepileptic)",
       "indication": "Generalised and focal epilepsy, bipolar disorder, migraine prophylaxis"
+    },
+    {
+      "id": "sodium-valproate",
+      "name": "Sodium Valproate",
+      "class": "Antiepileptic/mood stabiliser",
+      "indication": "Epilepsy (generalised seizures), bipolar disorder, migraine prophylaxis (not in women of childbearing potential)"
     },
     {
       "id": "solifenacin",
@@ -2155,16 +2197,16 @@
       "indication": "Metastatic melanoma and other BRAF/MEK pathway-driven malignancies as per oncology guidance"
     },
     {
-      "id": "tranexamic-acid",
-      "name": "Tranexamic Acid",
-      "class": "Antifibrinolytic",
-      "indication": "Major bleeding, trauma, menorrhagia, hereditary angioedema"
-    },
-    {
       "id": "tranexamic acid",
       "name": "Tranexamic Acid",
       "class": "Antifibrinolytic",
       "indication": "Trauma haemorrhage, menorrhagia, dental procedures in haemophilia, epistaxis, post-partum haemorrhage"
+    },
+    {
+      "id": "tranexamic-acid",
+      "name": "Tranexamic Acid",
+      "class": "Antifibrinolytic",
+      "indication": "Major bleeding, trauma, menorrhagia, hereditary angioedema"
     },
     {
       "id": "trazodone",
@@ -2287,6 +2329,6 @@
       "indication": "Short-term insomnia (2-4 weeks max)"
     }
   ],
-  "count": 381,
+  "count": 388,
   "generated": "Drug index for MLA-V2"
 }

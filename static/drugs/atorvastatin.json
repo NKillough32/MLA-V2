@@ -10,5 +10,6 @@
   "sideEffects": "Myalgia (common), hepatotoxicity (rare), rhabdomyolysis (very rare), new-onset diabetes (slight ↑)",
   "pharmacokinetics": "Peak: 1-2h, Half-life: 14h, Metabolism: CYP3A4, active metabolites",
   "clinicalPearls": "High-intensity statin. NICE preferred high-intensity option. Can take any time due to long half-life. Manage intolerance with dose adjustments or switch; consider specialist input for recurrent myopathy",
-  "targets": "Primary prevention: 20mg daily. Secondary prevention: 80mg daily. Target >40% LDL-C reduction"
+  "targets": "Primary prevention: 20mg daily. Secondary prevention: 80mg daily. Target >40% LDL-C reduction",
+  "indication": "Primary prevention of cardiovascular disease (QRISK ≥10%), secondary prevention (post-MI, stroke, TIA, angina, PVD), hypercholesterolaemia"
 }

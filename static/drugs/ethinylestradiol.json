@@ -1,0 +1,14 @@
+{
+  "name": "Ethinylestradiol",
+  "class": "Oestrogens (synthetic)",
+  "mechanism": "Synthetic oestrogen - binds to oestrogen receptors causing negative feedback on hypothalamus/pituitary, suppressing FSH and LH",
+  "dosing": "Combined oral contraceptive: 20-35mcg daily (with progestogen) for 21 days, then 7-day break. Varies by formulation",
+  "contraindications": "Current VTE/PE, history of VTE with thrombophilia, ischaemic heart disease, stroke, migraine with aura, breast cancer, active liver disease, pregnancy",
+  "interactions": "Enzyme inducers (↓ effect - rifampicin, carbamazepine, phenytoin), some antibiotics (↓ effect), lamotrigine (↓ lamotrigine levels)",
+  "monitoring": "BP at baseline and 3 months, then annually. BMI. Check family history of VTE, cardiovascular disease. Review need annually",
+  "pregnancy": "Contraindicated - not for use in pregnancy. Stop if pregnancy suspected",
+  "sideEffects": "Nausea, breast tenderness, headache, mood changes, VTE risk (↑ 2-4x), stroke risk (small), hypertension, irregular bleeding initially",
+  "pharmacokinetics": "Rapidly absorbed, extensive first-pass metabolism, half-life: 20 hours, hepatic metabolism via CYP3A4",
+  "clinicalPearls": "Most commonly used in combined oral contraceptives (with progestogen). VTE risk highest in first year and with higher doses (>35mcg). Prefer 20-30mcg preparations. Stop 4 weeks before major surgery. Less commonly used for HRT now",
+  "indication": "Contraception (combined with progestogen), occasionally hormone replacement therapy, menstrual disorders"
+}

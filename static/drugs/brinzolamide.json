@@ -1,0 +1,14 @@
+{
+  "name": "Brinzolamide",
+  "class": "Carbonic anhydrase inhibitors (glaucoma treatment)",
+  "mechanism": "Inhibits carbonic anhydrase in ciliary processes of eye, reducing aqueous humor production and intraocular pressure",
+  "dosing": "One drop in affected eye(s) twice daily. If used with other eye drops, space at least 5 minutes apart",
+  "contraindications": "Hypersensitivity to sulfonamides, severe renal impairment (CrCl <30ml/min), hyperchloraemic acidosis",
+  "interactions": "Oral carbonic anhydrase inhibitors (avoid concurrent use - ↑ systemic side effects), high-dose aspirin (theoretical interaction)",
+  "monitoring": "IOP monitoring. Check for signs of systemic absorption in patients with renal/hepatic impairment. Electrolytes if concerned about acidosis",
+  "pregnancy": "Avoid - no adequate data. Systemic carbonic anhydrase inhibitors are teratogenic in animals",
+  "sideEffects": "Bitter/unusual taste (common), blurred vision, local irritation, conjunctivitis, dry eye, rarely systemic effects (headache, fatigue) or hypersensitivity",
+  "pharmacokinetics": "Topical administration, some systemic absorption, binds to carbonic anhydrase in RBCs, half-life: 111 days in RBCs (after repeat dosing)",
+  "clinicalPearls": "Second/third-line for glaucoma when prostaglandin analogues/beta-blockers insufficient or contraindicated. Warn about bitter taste (common complaint). Can combine with prostaglandin analogues or beta-blockers. Less systemic side effects than oral acetazolamide",
+  "indication": "Open-angle glaucoma, ocular hypertension (adjunct or when prostaglandin analogues/beta-blockers contraindicated)"
+}

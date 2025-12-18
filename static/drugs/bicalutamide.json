@@ -1,0 +1,14 @@
+{
+  "name": "Bicalutamide",
+  "class": "Hormone antagonists (anti-androgen)",
+  "mechanism": "Non-steroidal anti-androgen - competitive inhibitor of androgen receptors, blocks testosterone and DHT action",
+  "dosing": "50mg OD (with LHRH analogue or surgical castration). Locally advanced prostate cancer: 150mg OD as monotherapy",
+  "contraindications": "Women, children, severe hepatic impairment. Caution in moderate hepatic impairment",
+  "interactions": "Warfarin (↑ anticoagulant effect - monitor INR closely), midazolam, ciclosporin (affects CYP3A4)",
+  "monitoring": "LFTs at baseline, monthly for 6 months then periodically. PSA levels. Monitor for gynaecomastia, hepatotoxicity",
+  "pregnancy": "Contraindicated in women - teratogenic",
+  "sideEffects": "Hot flushes, gynaecomastia, breast tenderness, decreased libido, erectile dysfunction, hepatotoxicity (rare), fatigue, constipation",
+  "pharmacokinetics": "Well absorbed orally, long half-life (5-7 days in standard dose, 7-10 days in 150mg), hepatic metabolism, slow elimination",
+  "clinicalPearls": "Usually given with LHRH agonist (e.g. goserelin) for metastatic prostate cancer. Start 3 days before LHRH agonist to prevent tumour flare. Monitor LFTs closely in first 6 months",
+  "indication": "Advanced prostate cancer (with LHRH analogue or after surgical castration), locally advanced prostate cancer at high risk of progression"
+}

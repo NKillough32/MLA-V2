@@ -1,0 +1,14 @@
+{
+  "name": "Etoricoxib",
+  "class": "Non-steroidal anti-inflammatory drugs (COX-2 inhibitor)",
+  "mechanism": "Selective COX-2 inhibitor - reduces prostaglandin synthesis while sparing COX-1 (less GI toxicity)",
+  "dosing": "Osteoarthritis: 30mg OD. Rheumatoid arthritis/ankylosing spondylitis: 60mg OD. Acute gout: 120mg OD for max 8 days",
+  "contraindications": "Active peptic ulcer, inflammatory bowel disease, heart failure, ischaemic heart disease, stroke, peripheral arterial disease, uncontrolled hypertension",
+  "interactions": "Warfarin (↑ INR), ACE inhibitors (↓ effect, ↑ nephrotoxicity), diuretics (↓ effect), lithium (↑ levels)",
+  "monitoring": "Blood pressure, renal function, cardiovascular risk factors, signs of GI bleeding",
+  "pregnancy": "Avoid - may cause premature closure of ductus arteriosus, delay labour. Contraindicated in 3rd trimester",
+  "sideEffects": "Hypertension, oedema, GI disturbance, headache, dizziness, increased cardiovascular risk, renal impairment",
+  "pharmacokinetics": "Good oral absorption, 100% bioavailability, highly protein bound (92%), half-life: 22 hours, hepatic metabolism",
+  "clinicalPearls": "Lower GI bleeding risk than non-selective NSAIDs but higher cardiovascular risk. Use lowest effective dose for shortest duration. Check BP within 2 weeks of starting",
+  "indication": "Osteoarthritis, rheumatoid arthritis, ankylosing spondylitis, acute gout"
+}

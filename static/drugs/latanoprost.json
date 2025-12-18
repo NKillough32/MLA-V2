@@ -1,0 +1,14 @@
+{
+  "name": "Latanoprost",
+  "class": "Prostaglandin analogues (glaucoma treatment)",
+  "mechanism": "Prostaglandin F2α analogue - increases uveoscleral outflow of aqueous humor, reducing intraocular pressure",
+  "dosing": "One drop in affected eye(s) once daily in the evening. Remove contact lenses before application, reinsert after 15 minutes",
+  "contraindications": "Hypersensitivity. Caution in active intraocular inflammation (uveitis, iritis), aphakia, pseudophakia with torn posterior lens capsule",
+  "interactions": "Other prostaglandin eye drops (avoid concurrent use - may reduce IOP-lowering effect). Can use with other glaucoma drops (space 5 minutes apart)",
+  "monitoring": "IOP monitoring (response typically seen in 3-4 weeks). Visual acuity. Fundoscopy. Visual field assessment",
+  "pregnancy": "Avoid unless essential - limited data. May cause increased uterine tone and contractions",
+  "sideEffects": "Iris pigmentation changes (brown, permanent), eyelash changes (lengthening, thickening, darkening), conjunctival hyperaemia, periorbital pigmentation, dry eye, blurred vision",
+  "pharmacokinetics": "Prodrug, rapidly hydrolysed to active acid form in cornea, peak IOP reduction 8-12 hours, duration 24 hours",
+  "clinicalPearls": "First-line for glaucoma/ocular hypertension. Use in evening (most effective). Warn about iris/eyelash changes - often cosmetically desirable but may be asymmetrical if treating one eye. Changes to iris pigmentation are permanent",
+  "indication": "Open-angle glaucoma, ocular hypertension (to reduce intraocular pressure)"
+}
