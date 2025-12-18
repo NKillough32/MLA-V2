@@ -314,12 +314,6 @@ export class ProceduresManager {
         }
 
         const categories = this.getCategories();
-        const categoryFilters = categories.map(cat => `
-            <button class="category-filter-btn ${category === cat.category ? 'active' : ''}" data-category="${cat.category}" 
-                    onclick="window.proceduresManager.filterByCategory('${cat.category}')">
-                ${this.formatCategoryName(cat.category)} (${cat.count})
-            </button>
-        `).join('');
 
         let html = `
             <div class="search-container">
@@ -327,12 +321,16 @@ export class ProceduresManager {
                 <button id="procedures-search-btn" onclick="window.proceduresManager.handleSearch()">🔍</button>
             </div>
             
-            <div class="category-filters" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-                <button class="category-filter-btn ${category === 'all' ? 'active' : ''}" data-category="all" 
-                        onclick="window.proceduresManager.filterByCategory('all')">
-                    All Procedures (${allProcedures.length})
-                </button>
-                ${categoryFilters}
+            <div class="category-filters">
+                <label class="category-filter-label" for="procedures-category-select">🏥 Filter by Category:</label>
+                <select class="category-filter-select" id="procedures-category-select" onchange="window.proceduresManager.filterByCategory(this.value)">
+                    <option value="all" ${category === 'all' ? 'selected' : ''}>All Procedures (${allProcedures.length})</option>
+                    ${categories.map(cat => `
+                        <option value="${cat.category}" ${category === cat.category ? 'selected' : ''}>
+                            ${this.formatCategoryName(cat.category)} (${cat.count})
+                        </option>
+                    `).join('')}
+                </select>
             </div>
 
             <div id="procedures-grid" class="lab-grid">

@@ -1234,14 +1234,13 @@ class MLAQuizApp {
             <div id="drug-voice-status-v2" style="display: none; padding: 10px; margin-bottom: 15px; background: var(--card-bg); border-left: 3px solid var(--accent); border-radius: 8px; font-size: 0.95em;">
                 🎤 Listening... Speak the drug name clearly.
             </div>
-            <div class="drug-categories" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
-                ${categories.map(cat => `
-                    <button class="category-btn ${cat.id === 'alphabetical' ? 'active' : ''}" 
-                            data-category="${cat.id}"
-                            style="padding: 8px 16px; border: 1px solid var(--border); background: var(--card-bg); border-radius: 20px; cursor: pointer; transition: all 0.2s; font-size: 0.9em;">
-                        ${cat.icon} ${cat.name}
-                    </button>
-                `).join('')}
+            <div class="drug-categories" style="margin-bottom: 20px;">
+                <label for="drug-category-select" class="filter-label">💊 Filter by Category</label>
+                <select id="drug-category-select" class="drug-category-select">
+                    ${categories.map(cat => `
+                        <option value="${cat.id}" ${cat.id === 'alphabetical' ? 'selected' : ''}>${cat.name}</option>
+                    `).join('')}
+                </select>
             </div>
             <div id="drug-list-v2"></div>
         `;
@@ -1356,13 +1355,13 @@ class MLAQuizApp {
             });
         }
         
-        // Category buttons
-        container.querySelectorAll('.category-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const category = btn.dataset.category;
-                this.showDrugCategory(category, container);
+        // Category dropdown
+        const categorySelect = container.querySelector('#drug-category-select');
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                this.showDrugCategory(e.target.value, container);
             });
-        });
+        }
         
         // Load initial category (alphabetical)
         this.showDrugCategory('alphabetical', container);
@@ -1371,10 +1370,11 @@ class MLAQuizApp {
     }
     
     async showDrugCategory(category, container) {
-        // Update active button
-        container.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-        const activeBtn = container.querySelector(`[data-category="${category}"]`);
-        if (activeBtn) activeBtn.classList.add('active');
+        // Update active option in select
+        const categorySelect = container.querySelector('#drug-category-select');
+        if (categorySelect) {
+            categorySelect.value = category;
+        }
         
         // Retrieve drugs from manager (async). Guard against non-array results.
         let drugs = [];
@@ -2799,7 +2799,10 @@ class MLAQuizApp {
             </div>
             <div class="psychiatry-controls">
                 <div class="psychiatry-filters">
-                    ${['All', ...allTags].map(tag => `<button class="psychiatry-filter-btn${tag === 'All' ? ' active' : ''}" data-tag="${tag}">${tag}</button>`).join('')}
+                    <label class="psychiatry-filter-label" for="psychiatry-tag-select">🧠 Filter by Tag:</label>
+                    <select class="psychiatry-filter-select" id="psychiatry-tag-select">
+                        ${['All', ...allTags].map(tag => `<option value="${tag}"${tag === 'All' ? ' selected' : ''}>${tag}</option>`).join('')}
+                    </select>
                 </div>
                 <div class="psychiatry-search">
                     <input id="psychiatry-search" class="tool-search" type="text" placeholder="Search symptoms, therapies, risks..." aria-label="Search psychiatry library">
@@ -2887,15 +2890,13 @@ class MLAQuizApp {
             }).join('');
         };
 
-        const filterButtons = container.querySelectorAll('.psychiatry-filter-btn');
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                activeTag = btn.dataset.tag || 'All';
+        const tagSelect = container.querySelector('#psychiatry-tag-select');
+        if (tagSelect) {
+            tagSelect.addEventListener('change', (e) => {
+                activeTag = e.target.value;
                 renderCards();
             });
-        });
+        }
 
         if (searchInput && searchBtn) {
             searchInput.addEventListener('input', () => requestAnimationFrame(renderCards));
@@ -3173,13 +3174,16 @@ class MLAQuizApp {
                 <input type="text" id="mnemonics-search" placeholder="Search mnemonics..." class="tool-search">
                 <button id="mnemonics-search-btn">🔍</button>
             </div>
-            <div class="mnemonics-categories">
-                <button class="category-btn active" data-category="all">All</button>
-                <button class="category-btn" data-category="cardiovascular">Cardiovascular</button>
-                <button class="category-btn" data-category="respiratory">Respiratory</button>
-                <button class="category-btn" data-category="neurology">Neurology</button>
-                <button class="category-btn" data-category="emergency">Emergency</button>
-                <button class="category-btn" data-category="general">General</button>
+            <div class="category-filters">
+                <label class="category-filter-label" for="mnemonics-category-select">🧠 Filter by Category:</label>
+                <select class="category-filter-select" id="mnemonics-category-select">
+                    <option value="all" selected>All Categories</option>
+                    <option value="cardiovascular">Cardiovascular</option>
+                    <option value="respiratory">Respiratory</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="general">General</option>
+                </select>
             </div>
             <div id="mnemonics-grid" class="lab-grid">
         `;
@@ -3202,11 +3206,11 @@ class MLAQuizApp {
         // Add search and filter functionality
         const searchInput = document.getElementById('mnemonics-search');
         const searchBtn = document.getElementById('mnemonics-search-btn');
-        const categoryBtns = document.querySelectorAll('.mnemonics-categories .category-btn');
+        const categorySelect = document.getElementById('mnemonics-category-select');
         
         const filterMnemonics = () => {
             const query = searchInput ? searchInput.value.toLowerCase() : '';
-            const activeCategory = document.querySelector('.mnemonics-categories .category-btn.active')?.dataset.category || 'all';
+            const activeCategory = categorySelect ? categorySelect.value : 'all';
             
             let filtered = mnemonicKeys;
             
@@ -3252,13 +3256,9 @@ class MLAQuizApp {
             searchBtn.addEventListener('click', filterMnemonics);
         }
         
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                filterMnemonics();
-            });
-        });
+        if (categorySelect) {
+            categorySelect.addEventListener('change', filterMnemonics);
+        }
     }
     
     /**
@@ -3763,13 +3763,16 @@ class MLAQuizApp {
             </div>
             <div id="examination-search-results" class="lab-grid"></div>
             <div class="examination-categories">
-                <button class="category-btn active" onclick="window.quizApp.showExaminationCategory('all'); event.stopPropagation();">All Systems</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('systemic'); event.stopPropagation();">Systemic</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('musculoskeletal'); event.stopPropagation();">MSK</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('specialized'); event.stopPropagation();">Specialized</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('psychiatric'); event.stopPropagation();">Psychiatric</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('emergency'); event.stopPropagation();">Emergency</button>
-                <button class="category-btn" onclick="window.quizApp.showExaminationCategory('primary_care'); event.stopPropagation();">Primary Care</button>
+                <label for="examination-category-select" class="filter-label">🩺 Filter by Category</label>
+                <select id="examination-category-select" class="examination-category-select">
+                    <option value="all" selected>All Systems</option>
+                    <option value="systemic">Systemic</option>
+                    <option value="musculoskeletal">MSK</option>
+                    <option value="specialized">Specialized</option>
+                    <option value="psychiatric">Psychiatric</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="primary_care">Primary Care</option>
+                </select>
             </div>
             <div id="examination-list" class="lab-grid"></div>
         `;
@@ -3779,6 +3782,14 @@ class MLAQuizApp {
         const searchBtn = document.getElementById('examination-search-btn');
         searchInput.addEventListener('input', () => this.searchExamination(examinationDatabase));
         searchBtn.addEventListener('click', () => this.searchExamination(examinationDatabase));
+        
+        // Setup category dropdown
+        const categorySelect = document.getElementById('examination-category-select');
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                this.showExaminationCategory(e.target.value);
+            });
+        }
         
         // Store database reference
         this.examinationDatabase = examinationDatabase;
@@ -3839,21 +3850,11 @@ class MLAQuizApp {
             return;
         }
         
-        // Update active button state
-        const categoryButtons = document.querySelectorAll('.examination-categories .category-btn');
-        categoryButtons.forEach(btn => {
-            btn.classList.remove('active');
-            const btnText = btn.textContent.trim();
-            if ((category === 'all' && btnText === 'All Systems') ||
-                (category === 'systemic' && btnText === 'Systemic') ||
-                (category === 'musculoskeletal' && btnText === 'MSK') ||
-                (category === 'specialized' && btnText === 'Specialized') ||
-                (category === 'psychiatric' && btnText === 'Psychiatric') ||
-                (category === 'emergency' && btnText === 'Emergency') ||
-                (category === 'primary_care' && btnText === 'Primary Care')) {
-                btn.classList.add('active');
-            }
-        });
+        // Update active dropdown state
+        const categorySelect = document.getElementById('examination-category-select');
+        if (categorySelect) {
+            categorySelect.value = category;
+        }
         
         let systems = Object.keys(examinationDatabase);
         
@@ -4436,7 +4437,7 @@ class MLAQuizApp {
             return;
         }
 
-        const filterButtons = panel.querySelectorAll('.milestone-filter-btn');
+        const domainSelect = panel.querySelector('#milestone-domain-select');
         const milestoneRows = panel.querySelectorAll('.milestone-row');
         const summaryElement = panel.querySelector('.milestone-domain-summary');
 
@@ -4457,21 +4458,16 @@ class MLAQuizApp {
                 row.style.display = shouldShow ? '' : 'none';
             });
 
-            filterButtons.forEach(btn => {
-                const btnDomain = btn.dataset.domain || 'all';
-                btn.classList.toggle('active', btnDomain === targetDomain);
-            });
-
             if (summaryElement) {
                 summaryElement.textContent = summaryText[targetDomain] || summaryText.all;
             }
         };
 
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                applyFilter(btn.dataset.domain || 'all');
+        if (domainSelect) {
+            domainSelect.addEventListener('change', (e) => {
+                applyFilter(e.target.value);
             });
-        });
+        }
 
         applyFilter('all');
         panel.dataset.initialized = 'true';

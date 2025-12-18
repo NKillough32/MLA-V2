@@ -1244,15 +1244,18 @@ export class PDFLibraryManager {
             </div>
             ${this.revisionAvailable ? `<div style="margin:8px 0 12px;"><a href="#" id="pdf-revision-link" style="text-decoration:none; font-weight:600;">📁 Revision</a></div>` : ''}
             <div class="pdf-categories">
-                <button class="category-btn active" data-category="all">All Documents</button>
-                <button class="category-btn" data-category="assessment">Assessment Tools</button>
-                <button class="category-btn" data-category="calculators">Calculators</button>
-                <button class="category-btn" data-category="management">Management</button>
-                <button class="category-btn" data-category="diagnosis">Diagnosis</button>
-                <button class="category-btn" data-category="scoring">Scoring Systems</button>
-                <button class="category-btn" data-category="emergency">Emergency</button>
-                <button class="category-btn" data-category="anatomy">Anatomy</button>
-                <button class="category-btn" data-category="other">Other</button>
+                <label for="pdf-category-select" class="filter-label">📚 Filter by Category</label>
+                <select id="pdf-category-select" class="pdf-category-select">
+                    <option value="all" selected>All Documents</option>
+                    <option value="assessment">Assessment Tools</option>
+                    <option value="calculators">Calculators</option>
+                    <option value="management">Management</option>
+                    <option value="diagnosis">Diagnosis</option>
+                    <option value="scoring">Scoring Systems</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="anatomy">Anatomy</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
             <div id="pdf-list" class="tool-results"></div>
         `;
@@ -1268,7 +1271,8 @@ export class PDFLibraryManager {
                 this.displayPDFs(results);
             } else {
                 // Show current category
-                const activeCategory = document.querySelector('.pdf-categories .category-btn.active')?.dataset.category || 'all';
+                const categorySelect = document.getElementById('pdf-category-select');
+                const activeCategory = categorySelect ? categorySelect.value : 'all';
                 await this.showCategory(activeCategory);
             }
         };
@@ -1276,17 +1280,15 @@ export class PDFLibraryManager {
         searchInput.addEventListener('input', performSearch);
         searchBtn.addEventListener('click', performSearch);
 
-        // Setup category buttons
-        const categoryBtns = document.querySelectorAll('.pdf-categories .category-btn');
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', async () => {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+        // Setup category dropdown
+        const categorySelect = document.getElementById('pdf-category-select');
+        if (categorySelect) {
+            categorySelect.addEventListener('change', async (e) => {
                 searchInput.value = ''; // Clear search when changing categories
-                await this.showCategory(btn.dataset.category);
+                await this.showCategory(e.target.value);
             });
-        });
-
+        }
+        
         // Show all PDFs initially
         await this.showCategory('all');
 

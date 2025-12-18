@@ -1391,26 +1391,44 @@
 
         .psychiatry-filters {
             display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
         }
 
-        .psychiatry-filter-btn {
-            border: 1px solid var(--v2-border);
+        .psychiatry-filter-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--v2-text-secondary);
+            white-space: nowrap;
+        }
+
+        .psychiatry-filter-select {
+            flex: 1;
+            max-width: 300px;
+            padding: 10px 40px 10px 16px;
+            border: 2px solid var(--v2-border);
+            border-radius: 8px;
             background: var(--v2-bg-card);
-            border-radius: 999px;
-            padding: 8px 12px;
-            cursor: pointer;
             color: var(--v2-text-primary);
-            transition: all var(--v2-transition-fast);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
         }
 
-        .psychiatry-filter-btn.active,
-        .psychiatry-filter-btn:hover {
-            background: linear-gradient(135deg, rgba(var(--v2-primary-rgb), 0.12), rgba(6, 182, 212, 0.12));
+        .psychiatry-filter-select:hover {
             border-color: var(--v2-primary);
-            color: var(--v2-primary-dark);
-            box-shadow: var(--v2-shadow-sm);
+        }
+
+        .psychiatry-filter-select:focus {
+            outline: none;
+            border-color: var(--v2-primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
         .psychiatry-search {
@@ -9117,27 +9135,46 @@
            Procedures Section Styles
            ======================================== */
         
-        .category-filter-btn {
-            padding: 8px 16px;
-            background: var(--v2-bg-card);
-            border: 1px solid var(--v2-border);
-            border-radius: 20px;
+        .category-filters {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .category-filter-label {
             font-size: 14px;
+            font-weight: 600;
+            color: var(--v2-text-secondary);
+            white-space: nowrap;
+        }
+
+        .category-filter-select {
+            flex: 1;
+            max-width: 300px;
+            padding: 10px 40px 10px 16px;
+            border: 2px solid var(--v2-border);
+            border-radius: 8px;
+            background: var(--v2-bg-card);
             color: var(--v2-text-primary);
+            font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
             transition: all 0.2s ease;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+            background-repeat: no-repeat;
+            background-position: right 12px center;
         }
-        
-        .category-filter-btn:hover {
-            background: #007AFF;
-            color: white;
-            border-color: #007AFF;
+
+        .category-filter-select:hover {
+            border-color: var(--v2-primary);
         }
-        
-        .category-filter-btn.active {
-            background: #007AFF;
-            color: white;
-            border-color: #007AFF;
+
+        .category-filter-select:focus {
+            outline: none;
+            border-color: var(--v2-primary);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
         
         .procedure-detail-header {
@@ -9238,19 +9275,14 @@
             color: #ffd60a !important;
         }
         
-        [data-theme="dark"] .category-filter-btn {
+        [data-theme="dark"] .category-filter-select {
             background: #1c1c1e;
             border-color: #38383a;
             color: #e5e5e7;
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
         }
         
-        [data-theme="dark"] .category-filter-btn:hover {
-            background: #0a84ff;
-            border-color: #0a84ff;
-        }
-        
-        [data-theme="dark"] .category-filter-btn.active {
-            background: #0a84ff;
+        [data-theme="dark"] .category-filter-select:hover {
             border-color: #0a84ff;
         }
         
@@ -10288,33 +10320,44 @@
 
             .milestone-filter {
                 display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
                 align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
             }
 
-            .milestone-filter-btn {
-                padding: 10px 18px;
-                border-radius: 999px;
-                border: 1px solid rgba(99, 102, 241, 0.25);
-                background: rgba(99, 102, 241, 0.08);
-                color: var(--v2-primary-dark);
-                font-size: 0.9rem;
+            .milestone-filter-label {
+                font-size: 14px;
                 font-weight: 600;
+                color: var(--v2-text-secondary);
+                white-space: nowrap;
+            }
+
+            .milestone-filter-select {
+                flex: 1;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
                 cursor: pointer;
-                transition: all var(--v2-transition-base);
+                transition: all 0.2s ease;
+                appearance: none;
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
             }
 
-            .milestone-filter-btn:hover {
-                transform: translateY(-1px);
-                box-shadow: var(--v2-shadow-sm);
+            .milestone-filter-select:hover {
+                border-color: var(--v2-primary);
             }
 
-            .milestone-filter-btn.active {
-                background: linear-gradient(135deg, var(--v2-primary) 0%, var(--v2-secondary) 100%);
-                color: #fff;
-                box-shadow: var(--v2-shadow-md);
-                border-color: transparent;
+            .milestone-filter-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
             }
 
             .milestone-domain-summary {
@@ -11843,6 +11886,136 @@
             [data-theme="dark"] .cc-management-card {
                 background: var(--v2-bg-card);
             }
+
+            /* Drug Reference Filter Styles */
+            .drug-categories {
+                margin-bottom: 20px;
+            }
+
+            .drug-categories .filter-label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                margin-bottom: 8px;
+            }
+
+            .drug-category-select {
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                appearance: none;
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+            }
+
+            .drug-category-select:hover {
+                border-color: var(--v2-primary);
+            }
+
+            .drug-category-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            /* PDF Library Filter Styles */
+            .pdf-categories {
+                margin-bottom: 20px;
+            }
+
+            .pdf-categories .filter-label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                margin-bottom: 8px;
+            }
+
+            .pdf-category-select {
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                appearance: none;
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+            }
+
+            .pdf-category-select:hover {
+                border-color: var(--v2-primary);
+            }
+
+            .pdf-category-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            /* Examination Filter Styles */
+            .examination-categories {
+                margin-bottom: 20px;
+            }
+
+            .examination-categories .filter-label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                margin-bottom: 8px;
+            }
+
+            .examination-category-select {
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                appearance: none;
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+            }
+
+            .examination-category-select:hover {
+                border-color: var(--v2-primary);
+            }
+
+            .examination-category-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            /* Dark theme support for new filters */
+            [data-theme="dark"] .drug-category-select,
+            [data-theme="dark"] .pdf-category-select,
+            [data-theme="dark"] .examination-category-select {
+                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+            }
         </style>
 </head>
 <body>
@@ -12638,11 +12811,14 @@
                     </div>
 
                     <div class="milestone-filter">
-                        <button class="milestone-filter-btn active" data-domain="all">All Domains</button>
-                        <button class="milestone-filter-btn" data-domain="gross-motor">Gross Motor</button>
-                        <button class="milestone-filter-btn" data-domain="fine-motor">Fine Motor</button>
-                        <button class="milestone-filter-btn" data-domain="speech-language">Speech &amp; Language</button>
-                        <button class="milestone-filter-btn" data-domain="social">Social &amp; Emotional</button>
+                        <label class="milestone-filter-label" for="milestone-domain-select">👶 Filter by Domain:</label>
+                        <select class="milestone-filter-select" id="milestone-domain-select">
+                            <option value="all" selected>All Domains</option>
+                            <option value="gross-motor">Gross Motor</option>
+                            <option value="fine-motor">Fine Motor</option>
+                            <option value="speech-language">Speech &amp; Language</option>
+                            <option value="social">Social &amp; Emotional</option>
+                        </select>
                     </div>
 
                     <p class="milestone-domain-summary"></p>
