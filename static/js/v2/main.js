@@ -1819,27 +1819,29 @@ class MLAQuizApp {
             <div class="cc-section">
                 <h3 class="cc-section-title">👁️ Recognition</h3>
                 
+                ${(condition.recognition.typical || condition.recognition.symptoms) ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Typical Presentation</h4>
                     <ul class="cc-list">
-                        ${condition.recognition.typical.map(item => `<li>${item}</li>`).join('')}
-                    </ul>
-                </div>
-
-                ${condition.recognition.atypical && condition.recognition.atypical.length > 0 ? `
-                <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">Atypical Presentation</h4>
-                    <ul class="cc-list">
-                        ${condition.recognition.atypical.map(item => `<li>${item}</li>`).join('')}
+                        ${(condition.recognition.typical || condition.recognition.symptoms).map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
 
-                ${condition.recognition.examination && condition.recognition.examination.length > 0 ? `
+                ${(condition.recognition.atypical || condition.recognition.atypicalPresentations) && (condition.recognition.atypical || condition.recognition.atypicalPresentations).length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Atypical Presentation</h4>
+                    <ul class="cc-list">
+                        ${(condition.recognition.atypical || condition.recognition.atypicalPresentations).map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${(condition.recognition.examination || condition.recognition.signs) && (condition.recognition.examination || condition.recognition.signs).length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Examination Findings</h4>
                     <ul class="cc-list">
-                        ${condition.recognition.examination.map(item => `<li>${item}</li>`).join('')}
+                        ${(condition.recognition.examination || condition.recognition.signs).map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
@@ -1858,29 +1860,29 @@ class MLAQuizApp {
             <div class="cc-section">
                 <h3 class="cc-section-title">🔬 Investigation</h3>
                 
-                ${Array.isArray(condition.investigation.immediate) && condition.investigation.immediate.length > 0 ? `
+                ${Array.isArray(condition.investigation.immediate || condition.investigation.firstLine) && (condition.investigation.immediate || condition.investigation.firstLine).length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Immediate Investigations</h4>
                     <ul class="cc-list">
-                        ${condition.investigation.immediate.map(item => `<li>${item}</li>`).join('')}
+                        ${(condition.investigation.immediate || condition.investigation.firstLine).map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
 
-                ${Array.isArray(condition.investigation.further) && condition.investigation.further.length > 0 ? `
+                ${Array.isArray(condition.investigation.further || condition.investigation.secondLine) && (condition.investigation.further || condition.investigation.secondLine).length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Further Investigations</h4>
                     <ul class="cc-list">
-                        ${condition.investigation.further.map(item => `<li>${item}</li>`).join('')}
+                        ${(condition.investigation.further || condition.investigation.secondLine).map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
 
-                ${Array.isArray(condition.investigation.interpretation) && condition.investigation.interpretation.length > 0 ? `
+                ${Array.isArray(condition.investigation.interpretation || condition.investigation.specialistTests) && (condition.investigation.interpretation || condition.investigation.specialistTests).length > 0 ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">Interpretation</h4>
+                    <h4 class="cc-subsection-title">Specialist Tests</h4>
                     <ul class="cc-list">
-                        ${condition.investigation.interpretation.map(item => `<li>${item}</li>`).join('')}
+                        ${(condition.investigation.interpretation || condition.investigation.specialistTests).map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
@@ -1897,11 +1899,11 @@ class MLAQuizApp {
                 </div>
                 ` : ''}
 
-                ${condition.diagnosis.differential && condition.diagnosis.differential.length > 0 ? `
+                ${(condition.diagnosis.differential || condition.diagnosis.differentials) && (condition.diagnosis.differential || condition.diagnosis.differentials).length > 0 ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Differential Diagnoses</h4>
                     <div class="cc-differential-list">
-                        ${condition.diagnosis.differential.map(diff => {
+                        ${(condition.diagnosis.differential || condition.diagnosis.differentials).map(diff => {
                             const parts = diff.split(':');
                             if (parts.length > 1) {
                                 return `<div class="cc-differential-item">
@@ -1920,26 +1922,56 @@ class MLAQuizApp {
             <div class="cc-section">
                 <h3 class="cc-section-title">💊 Management</h3>
                 
-                <h4 class="cc-subsection-title">First-Line Management</h4>
-                <div class="cc-management-grid">
-                    ${Object.entries(condition.management.firstLine || {}).map(([key, items]) => {
-                        if (!Array.isArray(items) || items.length === 0) return '';
-                        return `
-                            <div class="cc-management-card">
-                                <h5 class="cc-management-card-title">${key.replace(/([A-Z])/g, ' $1').trim()}</h5>
-                                <ul class="cc-list">
-                                    ${items.map(item => `<li>${item}</li>`).join('')}
-                                </ul>
-                            </div>
-                        `;
-                    }).join('')}
-                </div>
-
-                ${condition.management.secondLine && condition.management.secondLine.length > 0 ? `
+                ${condition.management.acute && condition.management.acute.firstLine && condition.management.acute.firstLine.length > 0 ? `
                 <div class="cc-subsection">
-                    <h4 class="cc-subsection-title">Second-Line Management</h4>
+                    <h4 class="cc-subsection-title">Acute Management - First Line</h4>
                     <ul class="cc-list">
-                        ${condition.management.secondLine.map(item => `<li>${item}</li>`).join('')}
+                        ${condition.management.acute.firstLine.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.acute && condition.management.acute.secondLine && condition.management.acute.secondLine.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Acute Management - Second Line</h4>
+                    <ul class="cc-list">
+                        ${condition.management.acute.secondLine.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.acute && condition.management.acute.procedures && condition.management.acute.procedures.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Acute Procedures</h4>
+                    <ul class="cc-list">
+                        ${condition.management.acute.procedures.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.chronic && condition.management.chronic.firstLine && condition.management.chronic.firstLine.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Chronic Management - First Line</h4>
+                    <ul class="cc-list">
+                        ${condition.management.chronic.firstLine.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.chronic && condition.management.chronic.secondLine && condition.management.chronic.secondLine.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Chronic Management - Second Line</h4>
+                    <ul class="cc-list">
+                        ${condition.management.chronic.secondLine.map(item => `<li>${item}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${condition.management.chronic && condition.management.chronic.monitoring && condition.management.chronic.monitoring.length > 0 ? `
+                <div class="cc-subsection">
+                    <h4 class="cc-subsection-title">Monitoring</h4>
+                    <ul class="cc-list">
+                        ${condition.management.chronic.monitoring.map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 ` : ''}
@@ -1955,37 +1987,37 @@ class MLAQuizApp {
             </div>
 
             <!-- Drugs & Procedures -->
-            ${(condition.drugs && condition.drugs.length > 0) || (condition.procedures && condition.procedures.length > 0) ? `
+            ${((condition.drugs && condition.drugs.length > 0) || (condition.procedures && condition.procedures.length > 0) || (condition.management.drugs && condition.management.drugs.length > 0) || (condition.management.procedures && condition.management.procedures.length > 0)) ? `
             <div class="cc-section">
                 <h3 class="cc-section-title">💊 Drugs & Procedures</h3>
                 
-                ${condition.drugs && condition.drugs.length > 0 ? `
+                ${((condition.drugs && condition.drugs.length > 0) || (condition.management.drugs && condition.management.drugs.length > 0)) ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Key Medications</h4>
-                    ${condition.drugs.map(drug => `
+                    ${(condition.drugs || condition.management.drugs || []).map(drug => `
                         <div class="cc-differential-item" style="margin-bottom: 16px;">
                             <div class="cc-differential-name">${drug.name}</div>
                             <div style="margin-top: 8px; display: grid; gap: 8px;">
-                                <p style="margin: 0;"><strong>Mechanism:</strong> ${drug.mechanism}</p>
-                                <p style="margin: 0;"><strong>Dosing:</strong> ${drug.dosing}</p>
-                                <p style="margin: 0;"><strong>Side Effects:</strong> ${drug.sideEffects}</p>
-                                <p style="margin: 0;"><strong>Clinical Notes:</strong> ${drug.notes}</p>
+                                ${drug.mechanism ? `<p style="margin: 0;"><strong>Mechanism:</strong> ${drug.mechanism}</p>` : ''}
+                                ${drug.dosing ? `<p style="margin: 0;"><strong>Dosing:</strong> ${drug.dosing}</p>` : ''}
+                                ${drug.sideEffects ? `<p style="margin: 0;"><strong>Side Effects:</strong> ${drug.sideEffects}</p>` : ''}
+                                ${drug.notes ? `<p style="margin: 0;"><strong>Clinical Notes:</strong> ${drug.notes}</p>` : ''}
                             </div>
                         </div>
                     `).join('')}
                 </div>
                 ` : ''}
 
-                ${condition.procedures && condition.procedures.length > 0 ? `
+                ${((condition.procedures && condition.procedures.length > 0) || (condition.management.procedures && condition.management.procedures.length > 0)) ? `
                 <div class="cc-subsection">
                     <h4 class="cc-subsection-title">Procedures</h4>
-                    ${condition.procedures.map(proc => `
+                    ${(condition.procedures || condition.management.procedures || []).map(proc => `
                         <div class="cc-differential-item" style="margin-bottom: 16px;">
                             <div class="cc-differential-name">${proc.name}</div>
                             <div style="margin-top: 8px; display: grid; gap: 8px;">
-                                <p style="margin: 0;"><strong>Description:</strong> ${proc.description}</p>
-                                <p style="margin: 0;"><strong>Indications:</strong> ${proc.indications}</p>
-                                <p style="margin: 0;"><strong>Risks:</strong> ${proc.risks}</p>
+                                ${proc.description ? `<p style="margin: 0;"><strong>Description:</strong> ${proc.description}</p>` : ''}
+                                ${proc.indications ? `<p style="margin: 0;"><strong>Indications:</strong> ${proc.indications}</p>` : ''}
+                                ${proc.risks ? `<p style="margin: 0;"><strong>Risks:</strong> ${proc.risks}</p>` : ''}
                             </div>
                         </div>
                     `).join('')}
@@ -2041,8 +2073,12 @@ class MLAQuizApp {
 
         detailContent.innerHTML = html;
         
-        // Scroll to top
+        // Scroll to top - multiple scroll contexts
         detailView.scrollTop = 0;
+        const panel = document.getElementById('core-conditions-panel');
+        if (panel) panel.scrollTop = 0;
+        const container = document.getElementById('core-conditions-container');
+        if (container) container.scrollTop = 0;
         window.scrollTo(0, 0);
     }
 
