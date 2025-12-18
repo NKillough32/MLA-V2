@@ -599,14 +599,17 @@ class InterpretationToolsManager {
                 </div>
                 <div id="interpretation-search-results" class="lab-grid"></div>
                 <div class="interpretation-categories">
-                    <button class="category-btn active" data-category="all" onclick="window.interpretationToolsManager.showInterpretationCategory('all'); event.stopPropagation();">All Tools</button>
-                    <button class="category-btn" data-category="ecg" onclick="window.interpretationToolsManager.showInterpretationCategory('ecg'); event.stopPropagation();">ECG</button>
-                    <button class="category-btn" data-category="abg" onclick="window.interpretationToolsManager.showInterpretationCategory('abg'); event.stopPropagation();">ABG</button>
-                    <button class="category-btn" data-category="imaging" onclick="window.interpretationToolsManager.showInterpretationCategory('imaging'); event.stopPropagation();">Imaging</button>
-                    <button class="category-btn" data-category="urine" onclick="window.interpretationToolsManager.showInterpretationCategory('urine'); event.stopPropagation();">Urine</button>
-                    <button class="category-btn" data-category="fluids" onclick="window.interpretationToolsManager.showInterpretationCategory('fluids'); event.stopPropagation();">Fluids</button>
-                    <button class="category-btn" data-category="labs" onclick="window.interpretationToolsManager.showInterpretationCategory('labs'); event.stopPropagation();">Lab Tests</button>
-                    <button class="category-btn" data-category="sexual-health" onclick="window.interpretationToolsManager.showInterpretationCategory('sexual-health'); event.stopPropagation();">Sexual Health</button>
+                    <label for="interpretation-category-select" class="filter-label">📊 Filter by Category</label>
+                    <select id="interpretation-category-select" class="interpretation-category-select">
+                        <option value="all" selected>All Tools</option>
+                        <option value="ecg">ECG</option>
+                        <option value="abg">ABG</option>
+                        <option value="imaging">Imaging</option>
+                        <option value="urine">Urine</option>
+                        <option value="fluids">Fluids</option>
+                        <option value="labs">Lab Tests</option>
+                        <option value="sexual-health">Sexual Health</option>
+                    </select>
                 </div>
                 <div id="interpretation-tools-list" class="interpretation-grid"></div>
             `;
@@ -641,18 +644,13 @@ class InterpretationToolsManager {
      * Setup category filtering handlers
      */
     setupCategoryFiltering() {
-        const categoryBtns = document.querySelectorAll('.interpretation-categories .category-btn');
+        const categorySelect = document.getElementById('interpretation-category-select');
         
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                const category = btn.dataset.category || 'all';
-                this.showInterpretationCategory(category);
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                this.showInterpretationCategory(e.target.value);
             });
-        });
+        }
     }
 
     /**

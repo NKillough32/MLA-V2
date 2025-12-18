@@ -3353,12 +3353,15 @@ class MLAQuizApp {
             </div>
             <div id="ddx-search-results" class="lab-grid"></div>
             <div class="ddx-categories">
-                <button class="category-btn active" onclick="window.quizApp.showDdxCategory('all'); event.stopPropagation();">All Symptoms</button>
-                <button class="category-btn" onclick="window.quizApp.showDdxCategory('cardiovascular'); event.stopPropagation();">CV/Pulm</button>
-                <button class="category-btn" onclick="window.quizApp.showDdxCategory('gastroenterology'); event.stopPropagation();">GI/Surgery</button>
-                <button class="category-btn" onclick="window.quizApp.showDdxCategory('neurology'); event.stopPropagation();">Neurology</button>
-                <button class="category-btn" onclick="window.quizApp.showDdxCategory('emergency'); event.stopPropagation();">Emergency</button>
-                <button class="category-btn" onclick="window.quizApp.showDdxCategory('general'); event.stopPropagation();">General Med</button>
+                <label for="ddx-category-select" class="filter-label">🔍 Filter by Category</label>
+                <select id="ddx-category-select" class="ddx-category-select">
+                    <option value="all" selected>All Symptoms</option>
+                    <option value="cardiovascular">CV/Pulm</option>
+                    <option value="gastroenterology">GI/Surgery</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="general">General Med</option>
+                </select>
             </div>
             <div id="ddx-list" class="lab-grid"></div>
         `;
@@ -3368,6 +3371,14 @@ class MLAQuizApp {
         const searchBtn = document.getElementById('ddx-search-btn');
         searchInput.addEventListener('input', () => this.searchDdx(ddxDatabase));
         searchBtn.addEventListener('click', () => this.searchDdx(ddxDatabase));
+        
+        // Setup category dropdown
+        const categorySelect = document.getElementById('ddx-category-select');
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                this.showDdxCategory(e.target.value);
+            });
+        }
         
         // Store database reference
         this.ddxDatabase = ddxDatabase;
@@ -3421,13 +3432,11 @@ class MLAQuizApp {
         const ddxDatabase = this.ddxDatabase;
         const ddxList = document.getElementById('ddx-list');
         
-        // Update active button state
-        document.querySelectorAll('.ddx-categories .category-btn').forEach(btn => btn.classList.remove('active'));
-        const targetButton = Array.from(document.querySelectorAll('.ddx-categories .category-btn')).find(btn => 
-            btn.textContent.toLowerCase().includes(category.toLowerCase()) ||
-            (category === 'all' && btn.textContent === 'All Symptoms')
-        );
-        if (targetButton) targetButton.classList.add('active');
+        // Update dropdown value
+        const categorySelect = document.getElementById('ddx-category-select');
+        if (categorySelect) {
+            categorySelect.value = category;
+        }
         
         let symptoms = Object.keys(ddxDatabase);
         

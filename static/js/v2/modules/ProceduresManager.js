@@ -108,6 +108,8 @@ export class ProceduresManager {
      * Format category name for display
      */
     formatCategoryName(category) {
+        if (!category) return 'Uncategorized';
+        
         const names = {
             'respiratory': 'Respiratory',
             'cardiovascular': 'Cardiovascular',
@@ -118,7 +120,7 @@ export class ProceduresManager {
             'orthopaedics': 'Orthopaedics',
             'practical': 'Practical Skills'
         };
-        return names[category] || category;
+        return names[category] || category.charAt(0).toUpperCase() + category.slice(1);
     }
 
     /**

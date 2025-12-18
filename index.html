@@ -11906,16 +11906,13 @@
                 padding: 10px 40px 10px 16px;
                 border: 2px solid var(--v2-border);
                 border-radius: 8px;
-                background: var(--v2-bg-card);
                 color: var(--v2-text-primary);
                 font-size: 14px;
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s ease;
                 appearance: none;
-                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
-                background-repeat: no-repeat;
-                background-position: right 12px center;
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
             }
 
             .drug-category-select:hover {
@@ -11947,16 +11944,13 @@
                 padding: 10px 40px 10px 16px;
                 border: 2px solid var(--v2-border);
                 border-radius: 8px;
-                background: var(--v2-bg-card);
                 color: var(--v2-text-primary);
                 font-size: 14px;
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s ease;
                 appearance: none;
-                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
-                background-repeat: no-repeat;
-                background-position: right 12px center;
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
             }
 
             .pdf-category-select:hover {
@@ -11988,16 +11982,13 @@
                 padding: 10px 40px 10px 16px;
                 border: 2px solid var(--v2-border);
                 border-radius: 8px;
-                background: var(--v2-bg-card);
                 color: var(--v2-text-primary);
                 font-size: 14px;
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s ease;
                 appearance: none;
-                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
-                background-repeat: no-repeat;
-                background-position: right 12px center;
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
             }
 
             .examination-category-select:hover {
@@ -12014,7 +12005,89 @@
             [data-theme="dark"] .drug-category-select,
             [data-theme="dark"] .pdf-category-select,
             [data-theme="dark"] .examination-category-select {
-                background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e');
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
+            }
+
+            /* Differential DX Filter Styles */
+            .ddx-categories {
+                margin-bottom: 20px;
+            }
+
+            .ddx-categories .filter-label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                margin-bottom: 8px;
+            }
+
+            .ddx-category-select {
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                appearance: none;
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
+            }
+
+            .ddx-category-select:hover {
+                border-color: var(--v2-primary);
+            }
+
+            .ddx-category-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            /* Interpretation Tools Filter Styles */
+            .interpretation-categories {
+                margin-bottom: 20px;
+            }
+
+            .interpretation-categories .filter-label {
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                margin-bottom: 8px;
+            }
+
+            .interpretation-category-select {
+                width: 100%;
+                max-width: 300px;
+                padding: 10px 40px 10px 16px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                color: var(--v2-text-primary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                appearance: none;
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
+            }
+
+            .interpretation-category-select:hover {
+                border-color: var(--v2-primary);
+            }
+
+            .interpretation-category-select:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            }
+
+            /* Dark theme support for ddx and interpretation filters */
+            [data-theme="dark"] .ddx-category-select,
+            [data-theme="dark"] .interpretation-category-select {
+                background: var(--v2-bg-card) url('data:image/svg+xml;charset=UTF-8,%3csvg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3e%3cpath d="M1 1.5L6 6.5L11 1.5" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/%3e%3c/svg%3e') no-repeat right 12px center;
             }
         </style>
 </head>
