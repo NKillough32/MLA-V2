@@ -640,6 +640,7 @@ export class CoreConditionsManager {
         return {
             name: enhanced.name,
             domains: enhanced.domains,
+            overview: content.overview || null,
             recognition: {
                 typical: content.recognition.symptoms || [],
                 atypical: content.recognition.atypicalPresentations || [],
@@ -657,20 +658,19 @@ export class CoreConditionsManager {
                 differential: content.diagnosis.differentials || []
             },
             management: {
-                firstLine: {
-                    acute: content.management.acute.firstLine || [],
-                    chronic: content.management.chronic.firstLine || []
-                },
-                secondLine: content.management.acute.secondLine.concat(content.management.chronic.secondLine || []),
-                complications: content.complications || []
+                acute: content.management?.acute || null,
+                chronic: content.management?.chronic || null,
+                complications: content.complications || [],
+                drugs: content.management?.drugs || [],
+                procedures: content.management?.procedures || []
             },
-            clinicalPearls: [],
+            clinicalPearls: content.clinicalPearls || [],
             prognosis: content.prognosis || '',
             foundationRole: content.foundationDoctorRole || '',
             escalation: content.escalation || '',
             safetyConsiderations: content.keySafetyConsiderations || '',
-            drugs: content.management.drugs || [],
-            procedures: content.management.procedures || [],
+            drugs: content.management?.drugs || [],
+            procedures: content.management?.procedures || [],
             enhanced: true // Flag to indicate this is enhanced content
         };
     }
