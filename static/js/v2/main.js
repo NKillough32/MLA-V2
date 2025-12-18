@@ -3577,11 +3577,11 @@ class MLAQuizApp {
     setupTriadsSearch() {
         const searchInput = document.getElementById('triads-search');
         const searchBtn = document.getElementById('triads-search-btn');
-        const categoryBtns = document.querySelectorAll('.triad-categories .category-btn');
+        const categorySelect = document.getElementById('triads-category-select');
         
         const performTriadsSearch = () => {
             const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
-            const activeCategory = document.querySelector('.triad-categories .category-btn.active')?.dataset.category || 'all';
+            const activeCategory = categorySelect ? categorySelect.value : 'all';
             
             const triadsData = this.triadsManager.clinicalTriads || {};
             let filteredTriads = Object.keys(triadsData);
@@ -3620,18 +3620,10 @@ class MLAQuizApp {
             searchBtn.addEventListener('click', performTriadsSearch);
         }
         
-        // Category buttons
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                performTriadsSearch();
-            });
-        });
-        
-        // Set 'all' as active initially
-        const allBtn = document.querySelector('.triad-categories .category-btn[data-category="all"]');
-        if (allBtn) allBtn.classList.add('active');
+        // Category dropdown
+        if (categorySelect) {
+            categorySelect.addEventListener('change', performTriadsSearch);
+        }
     }
 
     /**
@@ -4022,30 +4014,23 @@ class MLAQuizApp {
      * Setup emergency protocols search (V1 compatibility)
      */
     setupEmergencyProtocolsSearch() {
-        const categoryBtns = document.querySelectorAll('.emergency-categories .category-btn');
+        const categorySelect = document.getElementById('emergency-category-select');
         
-        const filterProtocols = () => {
-            const activeCategory = document.querySelector('.emergency-categories .category-btn.active')?.dataset.category || 'all';
-            
-            let filteredProtocols = Object.keys(this.emergencyProtocolsData);
-            
-            if (activeCategory !== 'all') {
-                filteredProtocols = filteredProtocols.filter(protocolId => 
-                    this.emergencyProtocolsData[protocolId].category === activeCategory
-                );
-            }
-            
-            this.displayEmergencyProtocols(filteredProtocols);
-        };
-        
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                filterProtocols();
+        if (categorySelect) {
+            categorySelect.addEventListener('change', (e) => {
+                const activeCategory = e.target.value;
+                
+                let filteredProtocols = Object.keys(this.emergencyProtocolsData);
+                
+                if (activeCategory !== 'all') {
+                    filteredProtocols = filteredProtocols.filter(protocolId => 
+                        this.emergencyProtocolsData[protocolId].category === activeCategory
+                    );
+                }
+                
+                this.displayEmergencyProtocols(filteredProtocols);
             });
-        });
+        }
     }
 
     /**

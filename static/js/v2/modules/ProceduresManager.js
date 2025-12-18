@@ -94,14 +94,25 @@ export class ProceduresManager {
         
         const categoryCounts = {};
         Object.values(this.procedures).forEach(proc => {
-            categoryCounts[proc.category] = (categoryCounts[proc.category] || 0) + 1;
+            const cat = proc.category || 'uncategorized';
+            categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
         });
         
-        return this.categories.map(cat => ({
-            id: cat,
-            name: this.formatCategoryName(cat),
-            count: categoryCounts[cat] || 0
-        }));
+        // Return only categories that actually have procedures
+        return Object.entries(categoryCounts)
+            .map(([category, count]) => ({
+                category: category,
+                name: this.formatCategoryName(category),
+                count: count
+            }))
+            .sort((a, b) => {
+                // Sort: predefined categories first, then alphabetically
+                const aPredefined = this.categories.includes(a.category);
+                const bPredefined = this.categories.includes(b.category);
+                if (aPredefined && !bPredefined) return -1;
+                if (!aPredefined && bPredefined) return 1;
+                return a.name.localeCompare(b.name);
+            });
     }
 
     /**

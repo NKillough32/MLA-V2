@@ -461,56 +461,56 @@ export class DrugReferenceManager {
         // Category filters
         const filters = {
             analgesics: (drug) => {
-                const drugClass = drug.class.toLowerCase();
-                const drugName = drug.name.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
+                const drugName = (drug.name || '').toLowerCase();
                 return drugClass.includes('analgesic') || drugClass.includes('nsaid') || 
                        drugClass.includes('opioid') || drugName.includes('paracetamol') ||
                        drugName.includes('ibuprofen') || drugName.includes('morphine') ||
                        drugName.includes('codeine') || drugName.includes('tramadol');
             },
             antibiotics: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('antibiotic') || drugClass.includes('penicillin') || 
                        drugClass.includes('macrolide') || drugClass.includes('cephalosporin') ||
                        drugClass.includes('quinolone') || drugClass.includes('tetracycline');
             },
             cardiovascular: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('statin') || drugClass.includes('ace inhibitor') ||
                        drugClass.includes('beta-blocker') || drugClass.includes('diuretic') ||
                        drugClass.includes('calcium channel') || drugClass.includes('anticoagulant') ||
                        drugClass.includes('antiplatelet') || drugClass.includes('cardiac');
             },
             'mental-health': (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('antidepressant') || drugClass.includes('ssri') ||
                        drugClass.includes('anxiolytic') || drugClass.includes('antipsychotic') ||
                        drugClass.includes('benzodiazepine') || drugClass.includes('mood stabilizer');
             },
             respiratory: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('bronchodilator') || drugClass.includes('corticosteroid') ||
                        drugClass.includes('beta-2 agonist') || drugClass.includes('anticholinergic');
             },
             endocrine: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('antidiabetic') || drugClass.includes('thyroid') ||
                        drugClass.includes('insulin') || drugClass.includes('hormone');
             },
             emergency: (drug) => {
-                const drugClass = drug.class.toLowerCase();
-                const drugName = drug.name.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
+                const drugName = (drug.name || '').toLowerCase();
                 return drugClass.includes('emergency') || drugClass.includes('antidote') ||
                        drugName.includes('adrenaline') || drugName.includes('naloxone') ||
                        drugName.includes('atropine') || drugName.includes('glucagon');
             },
             gastro: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('proton pump') || drugClass.includes('antiemetic') ||
                        drugClass.includes('laxative') || drugClass.includes('antidiarrhoeal');
             },
             neuro: (drug) => {
-                const drugClass = drug.class.toLowerCase();
+                const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('anticonvulsant') || drugClass.includes('antiepilep') ||
                        drugClass.includes('neuropathic') || drugClass.includes('triptan');
             }
