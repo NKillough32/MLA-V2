@@ -1,0 +1,2292 @@
+{
+  "drugs": [
+    {
+      "id": "acetylcysteine",
+      "name": "Acetylcysteine",
+      "class": "Mucolytic / Antidote",
+      "indication": "Paracetamol overdose (IV), viscous airway secretions (nebulised)"
+    },
+    {
+      "id": "aciclovir",
+      "name": "Aciclovir",
+      "class": "Antiviral drugs",
+      "indication": "Herpes simplex, varicella zoster, prophylaxis in immunocompromised"
+    },
+    {
+      "id": "activated-charcoal",
+      "name": "Activated charcoal",
+      "class": "Adsorbent (decontamination)",
+      "indication": "Acute poisoning (selected cases)"
+    },
+    {
+      "id": "adalimumab",
+      "name": "Adalimumab",
+      "class": "Monoclonal antibodies (Anti-TNF)",
+      "indication": "Rheumatoid arthritis, Crohn\\"
+    },
+    {
+      "id": "adcal-d3",
+      "name": "Adcal-D3 (Calcium Carbonate + Colecalciferol)",
+      "class": "Calcium and vitamin D supplement",
+      "indication": "Osteoporosis prevention/treatment adjunct, vitamin D deficiency, calcium supplementation"
+    },
+    {
+      "id": "adenosine",
+      "name": "Adenosine",
+      "class": "Antiarrhythmic (Purine nucleoside)",
+      "indication": "SVT termination, diagnostic test for broad complex tachycardia"
+    },
+    {
+      "id": "adrenaline",
+      "name": "Adrenaline (Epinephrine)",
+      "class": "Emergency drugs",
+      "indication": "Anaphylaxis, cardiac arrest, severe asthma (nebulised), local anaesthetic adjunct"
+    },
+    {
+      "id": "alendronic acid",
+      "name": "Alendronic Acid (Alendronate)",
+      "class": "Bisphosphonates",
+      "indication": "Osteoporosis, Paget\\"
+    },
+    {
+      "id": "alfacalcidol",
+      "name": "Alfacalcidol",
+      "class": "Vitamin D analogue",
+      "indication": "Hypocalcaemia in CKD, hypoparathyroidism, vitamin D-dependent rickets"
+    },
+    {
+      "id": "alfuzosin",
+      "name": "Alfuzosin",
+      "class": "Alpha-blockers",
+      "indication": "Benign prostatic hyperplasia"
+    },
+    {
+      "id": "gaviscon",
+      "name": "Alginates (Gaviscon)",
+      "class": "Alginate antacid",
+      "indication": "GERD, heartburn, hiatus hernia symptoms, pregnancy-related reflux"
+    },
+    {
+      "id": "allopurinol",
+      "name": "Allopurinol",
+      "class": "Xanthine oxidase inhibitor",
+      "indication": "Gout prophylaxis, hyperuricaemia, tumour-lysis-syndrome prevention"
+    },
+    {
+      "id": "alogliptin",
+      "name": "Alogliptin",
+      "class": "DPP-4 inhibitors (Gliptins)",
+      "indication": "Type 2 diabetes (add-on therapy)"
+    },
+    {
+      "id": "alprostadil",
+      "name": "Alprostadil (Prostaglandin E1)",
+      "class": "",
+      "indication": "Maintain patent ductus arteriosus (neonates), erectile dysfunction"
+    },
+    {
+      "id": "alteplase",
+      "name": "Alteplase (rt-PA)",
+      "class": "Thrombolytic (Emergency drug)",
+      "indication": "Acute ischaemic stroke (<4.5h), STEMI, massive PE"
+    },
+    {
+      "id": "amikacin",
+      "name": "Amikacin",
+      "class": "Aminoglycoside antibiotic",
+      "indication": "Serious Gram-negative infections, synergy for some Gram-positive infections in combination therapy"
+    },
+    {
+      "id": "aminophylline",
+      "name": "Aminophylline",
+      "class": "Methylxanthine bronchodilator",
+      "indication": "Acute severe asthma (IV), chronic asthma/COPD (oral) when other treatments inadequate"
+    },
+    {
+      "id": "amiodarone",
+      "name": "Amiodarone",
+      "class": "Antiarrhythmic drugs (Class III)",
+      "indication": "Life-threatening arrhythmias, AF (when other drugs fail), VT/VF"
+    },
+    {
+      "id": "amitriptyline",
+      "name": "Amitriptyline",
+      "class": "Tricyclic antidepressant (TCA)",
+      "indication": "Depression, neuropathic pain, migraine prophylaxis, nocturnal enuresis"
+    },
+    {
+      "id": "amlodipine",
+      "name": "Amlodipine",
+      "class": "Calcium channel blockers",
+      "indication": "Hypertension, stable angina. Often used as add-on therapy"
+    },
+    {
+      "id": "amoxicillin",
+      "name": "Amoxicillin",
+      "class": "Penicillins, broad-spectrum",
+      "indication": ""
+    },
+    {
+      "id": "amphotericin-b",
+      "name": "Amphotericin B",
+      "class": "Polyenes (antifungal)",
+      "indication": "Serious systemic fungal infections"
+    },
+    {
+      "id": "anastrozole",
+      "name": "Anastrozole",
+      "class": "Aromatase inhibitor",
+      "indication": "Breast cancer"
+    },
+    {
+      "id": "anidulafungin",
+      "name": "Anidulafungin",
+      "class": "Echinocandin antifungal",
+      "indication": "Invasive Candida"
+    },
+    {
+      "id": "anti-d-immunoglobulin",
+      "name": "Anti-D Immunoglobulin (RhD prophylaxis)",
+      "class": "Human immunoglobulin preparation",
+      "indication": "Prevention of RhD alloimmunisation after miscarriage, abortion, ectopic pregnancy, abdominal trauma, or delivery"
+    },
+    {
+      "id": "dermol-500",
+      "name": "Antimicrobial Emollient (Dermol 500)",
+      "class": "Antimicrobial emollient",
+      "indication": "Eczema with recurrent infection, dry skin prone to bacterial colonisation"
+    },
+    {
+      "id": "apixaban",
+      "name": "Apixaban",
+      "class": "Direct oral anticoagulant (DOAC) - Factor Xa inhibitor",
+      "indication": "Atrial fibrillation stroke prevention, VTE treatment and prophylaxis"
+    },
+    {
+      "id": "aripiprazole",
+      "name": "Aripiprazole",
+      "class": "Atypical antipsychotic",
+      "indication": "Schizophrenia, bipolar disorder (mania/mixed episodes), adjunct in treatment-resistant depression"
+    },
+    {
+      "id": "aspirin",
+      "name": "Aspirin",
+      "class": "Antiplatelet drug (COX-1 inhibitor)",
+      "indication": "Secondary prevention after MI/stroke, post-PCI dual therapy, stable angina, ACS"
+    },
+    {
+      "id": "atazanavir",
+      "name": "Atazanavir",
+      "class": "Antiviral drugs - Protease inhibitor",
+      "indication": "HIV infection (combination therapy)"
+    },
+    {
+      "id": "atenolol",
+      "name": "Atenolol",
+      "class": "Beta-blockers",
+      "indication": "Hypertension, angina, post-MI, arrhythmias, anxiety (short-term)"
+    },
+    {
+      "id": "atorvastatin",
+      "name": "Atorvastatin",
+      "class": "Statins",
+      "indication": ""
+    },
+    {
+      "id": "atropine",
+      "name": "Atropine",
+      "class": "Antimuscarinic",
+      "indication": "Symptomatic bradycardia, organophosphate poisoning, pre-medication"
+    },
+    {
+      "id": "azathioprine",
+      "name": "Azathioprine",
+      "class": "Immunosuppressant/antimetabolite",
+      "indication": "Autoimmune diseases, transplant"
+    },
+    {
+      "id": "azithromycin",
+      "name": "Azithromycin",
+      "class": "Antibiotic (Macrolide)",
+      "indication": "Atypical pneumonia, COPD exacerbations, chlamydia, URTI, skin infections"
+    },
+    {
+      "id": "beclometasone",
+      "name": "Beclometasone (Beclomethasone)",
+      "class": "Corticosteroids, inhaled / nasal",
+      "indication": "Asthma (preventer), COPD (with LABA), allergic rhinitis (nasal)"
+    },
+    {
+      "id": "beclomethasone",
+      "name": "Beclomethasone",
+      "class": "Inhaled corticosteroid",
+      "indication": "Asthma prophylaxis, COPD (in combination inhalers)"
+    },
+    {
+      "id": "bendroflumethiazide",
+      "name": "Bendroflumethiazide",
+      "class": "Diuretics, thiazide and thiazide-like",
+      "indication": "Hypertension, mild heart failure, oedema"
+    },
+    {
+      "id": "benzydamine",
+      "name": "Benzydamine (Difflam)",
+      "class": "NSAID (topical oral)",
+      "indication": "Painful oral/throat conditions, mouth ulcers, post-dental procedure, tonsillitis adjunct"
+    },
+    {
+      "id": "benzylpenicillin",
+      "name": "Benzylpenicillin",
+      "class": "Penicillins, narrow-spectrum",
+      "indication": "Meningitis, cellulitis, pneumonia, endocarditis, necrotizing fasciitis"
+    },
+    {
+      "id": "betamethasone",
+      "name": "Betamethasone Valerate",
+      "class": "Potent topical corticosteroid",
+      "indication": "Severe eczema, psoriasis, severe inflammatory skin conditions"
+    },
+    {
+      "id": "biphasic insulin",
+      "name": "Biphasic Insulin (Novomix, Humalog Mix)",
+      "class": "Insulin - premixed combinations",
+      "indication": "Type 2 diabetes requiring simpler insulin regime, some type 1 patients"
+    },
+    {
+      "id": "bisacodyl",
+      "name": "Bisacodyl",
+      "class": "Stimulant laxatives",
+      "indication": "Constipation, bowel preparation for procedures"
+    },
+    {
+      "id": "bisoprolol",
+      "name": "Bisoprolol",
+      "class": "Beta-blockers",
+      "indication": "Heart failure, post-MI, hypertension, angina, atrial fibrillation"
+    },
+    {
+      "id": "brivaracetam",
+      "name": "Brivaracetam",
+      "class": "Antiepileptics (Racetams)",
+      "indication": "Focal seizures (adjunctive or monotherapy)"
+    },
+    {
+      "id": "budesonide",
+      "name": "Budesonide",
+      "class": "Corticosteroids, inhaled",
+      "indication": "Asthma prophylaxis, COPD (in combination inhalers), Crohn\\"
+    },
+    {
+      "id": "budesonide-inhaled",
+      "name": "Budesonide (inhaled)",
+      "class": "Inhaled corticosteroid (ICS)",
+      "indication": "Maintenance anti-inflammatory therapy for asthma"
+    },
+    {
+      "id": "budesonide-formoterol",
+      "name": "Budesonide/formoterol",
+      "class": "ICS/LABA combination",
+      "indication": "Asthma maintenance; COPD in select cases"
+    },
+    {
+      "id": "bumetanide",
+      "name": "Bumetanide",
+      "class": "Loop diuretics",
+      "indication": "Acute pulmonary oedema, chronic heart failure with fluid overload, peripheral oedema"
+    },
+    {
+      "id": "bupivacaine",
+      "name": "Bupivacaine",
+      "class": "Local anaesthetics",
+      "indication": "Regional anaesthesia, epidural analgesia (labour/post-op), peripheral nerve blocks"
+    },
+    {
+      "id": "buprenorphine",
+      "name": "Buprenorphine",
+      "class": "Partial opioid agonist",
+      "indication": "Opioid dependence (OST), chronic pain management under specialist guidance"
+    },
+    {
+      "id": "calcium carbonate",
+      "name": "Calcium Carbonate",
+      "class": "Calcium supplement",
+      "indication": "Calcium supplement (osteoporosis prevention/treatment, pregnancy), phosphate binder (CKD), antacid"
+    },
+    {
+      "id": "calcium-gluconate",
+      "name": "Calcium Gluconate",
+      "class": "Mineral replacement/Antidote",
+      "indication": "Hypocalcemia, hyperkalemia, hypermagnesemia, calcium channel blocker overdose"
+    },
+    {
+      "id": "canagliflozin",
+      "name": "Canagliflozin",
+      "class": "SGLT2 inhibitor",
+      "indication": "T2DM"
+    },
+    {
+      "id": "candesartan",
+      "name": "Candesartan",
+      "class": "Angiotensin receptor blockers",
+      "indication": "Hypertension, heart failure, diabetic nephropathy, post-MI"
+    },
+    {
+      "id": "carbamazepine",
+      "name": "Carbamazepine",
+      "class": "Antiepileptic drug",
+      "indication": "Epilepsy, trigeminal neuralgia, bipolar disorder (second-line)"
+    },
+    {
+      "id": "carbimazole",
+      "name": "Carbimazole",
+      "class": "Antithyroid drugs",
+      "indication": "Hyperthyroidism (Graves disease, toxic multinodular goitre), pre-operative preparation"
+    },
+    {
+      "id": "carbocisteine",
+      "name": "Carbocisteine",
+      "class": "Mucolytic",
+      "indication": "COPD with productive cough, chronic bronchitis, bronchiectasis"
+    },
+    {
+      "id": "carbomer",
+      "name": "Carbomer (Carbomers)",
+      "class": "Ocular lubricants",
+      "indication": "Dry eyes, tear deficiency"
+    },
+    {
+      "id": "carbomer-eye-gel",
+      "name": "Carbomer Eye Gel (Viscotears/Clinitas)",
+      "class": "Ocular lubricant",
+      "indication": "Dry eye syndrome, keratitis sicca, insufficient tear production"
+    },
+    {
+      "id": "carboprost",
+      "name": "Carboprost",
+      "class": "Prostaglandin F2α analogue (uterotonic)",
+      "indication": "PPH management"
+    },
+    {
+      "id": "carvedilol",
+      "name": "Carvedilol",
+      "class": "Non-selective beta blocker with alpha-blocking activity",
+      "indication": "Heart failure, post-MI, hypertension"
+    },
+    {
+      "id": "caspofungin",
+      "name": "Caspofungin",
+      "class": "Echinocandin antifungal",
+      "indication": "Invasive fungal infections"
+    },
+    {
+      "id": "cefalexin",
+      "name": "Cefalexin",
+      "class": "Cephalosporins and carbapenems",
+      "indication": "Skin/soft tissue infections, UTI, respiratory tract infections, prophylaxis"
+    },
+    {
+      "id": "cefepime",
+      "name": "Cefepime",
+      "class": "Fourth-generation cephalosporin",
+      "indication": "Serious Gram-negative infections including Pseudomonas, hospital-acquired pneumonia, febrile neutropenia"
+    },
+    {
+      "id": "ceftriaxone",
+      "name": "Ceftriaxone",
+      "class": "Third-generation cephalosporin",
+      "indication": "Severe community infections, meningitis, gonorrhoea (depending on guidance)"
+    },
+    {
+      "id": "cefuroxime",
+      "name": "Cefuroxime",
+      "class": "Second-generation cephalosporin",
+      "indication": "Respiratory tract infections, pyelonephritis (IV), skin/soft tissue infections"
+    },
+    {
+      "id": "celecoxib",
+      "name": "Celecoxib",
+      "class": "COX-2 selective NSAID",
+      "indication": "Osteoarthritis, acute pain where NSAID indicated and GI risk a concern"
+    },
+    {
+      "id": "cetirizine",
+      "name": "Cetirizine",
+      "class": "Second-generation antihistamine (H1 antagonist)",
+      "indication": "Allergic rhinitis, chronic urticaria, allergic conjunctivitis, atopic dermatitis"
+    },
+    {
+      "id": "chloramphenicol",
+      "name": "Chloramphenicol",
+      "class": "Broad-spectrum antibiotic",
+      "indication": "Ophthalmic infections, selected systemic infections"
+    },
+    {
+      "id": "chloramphenicol-eye",
+      "name": "Chloramphenicol Eye Drops/Ointment",
+      "class": "Antibiotic (topical ophthalmic)",
+      "indication": "Bacterial conjunctivitis, superficial eye infections"
+    },
+    {
+      "id": "chlordiazepoxide",
+      "name": "Chlordiazepoxide",
+      "class": "Benzodiazepines",
+      "indication": "Alcohol withdrawal, short-term anxiety (rarely used now)"
+    },
+    {
+      "id": "corsodyl",
+      "name": "Chlorhexidine Mouthwash (Corsodyl)",
+      "class": "Antiseptic mouthwash",
+      "indication": "Gingivitis, oral hygiene (when brushing difficult), post-oral surgery, mouth ulcers"
+    },
+    {
+      "id": "chlorphenamine",
+      "name": "Chlorphenamine",
+      "class": "First-generation antihistamine (H1-receptor antagonist)",
+      "indication": "Allergic reactions, urticaria, hay fever, insomnia (short-term)"
+    },
+    {
+      "id": "chlorpromazine",
+      "name": "Chlorpromazine",
+      "class": "Antipsychotics, first-generation (typical)",
+      "indication": "Schizophrenia (rarely first-line), acute mania, severe anxiety, intractable hiccups, nausea/vomiting"
+    },
+    {
+      "id": "chlortalidone",
+      "name": "Chlortalidone (Chlorthalidone)",
+      "class": "Diuretics, thiazide-like",
+      "indication": "Hypertension, oedema"
+    },
+    {
+      "id": "cimetidine",
+      "name": "Cimetidine",
+      "class": "H2-receptor antagonists",
+      "indication": "Peptic ulcer disease, GORD, dyspepsia (rarely used now - PPIs preferred)"
+    },
+    {
+      "id": "cinnarizine",
+      "name": "Cinnarizine",
+      "class": "Antihistamine H1-receptor antagonist",
+      "indication": "Motion sickness, vertigo, Ménière\\"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name": "Ciprofloxacin",
+      "class": "Fluoroquinolone antibiotic",
+      "indication": "Complicated UTI, severe GI/respiratory infections, Pseudomonal infections (per microbiology advice)"
+    },
+    {
+      "id": "citalopram",
+      "name": "Citalopram",
+      "class": "Selective serotonin reuptake inhibitor (SSRI)",
+      "indication": "Depression, panic disorder (unlicensed but effective)"
+    },
+    {
+      "id": "clarithromycin",
+      "name": "Clarithromycin",
+      "class": "Macrolide antibiotic",
+      "indication": "Respiratory tract infections, H.pylori eradication, skin infections, atypical pneumonia"
+    },
+    {
+      "id": "clindamycin",
+      "name": "Clindamycin",
+      "class": "Clindamycin",
+      "indication": "Bone/joint infections, anaerobic infections, skin/soft tissue, dental infections"
+    },
+    {
+      "id": "clobetasone",
+      "name": "Clobetasone Butyrate",
+      "class": "Corticosteroids, topical",
+      "indication": "Eczema, dermatitis (moderate severity)"
+    },
+    {
+      "id": "eumovate",
+      "name": "Clobetasone Butyrate (Eumovate)",
+      "class": "Moderate potency topical corticosteroid",
+      "indication": "Moderate eczema, dermatitis, suitable for sensitive sites (face, flexures)"
+    },
+    {
+      "id": "clonazepam",
+      "name": "Clonazepam",
+      "class": "Benzodiazepine",
+      "indication": "Seizures, anxiety"
+    },
+    {
+      "id": "clopidogrel",
+      "name": "Clopidogrel",
+      "class": "Antiplatelet drugs, ADP-receptor antagonists",
+      "indication": "Acute coronary syndromes, stroke prevention, peripheral vascular disease"
+    },
+    {
+      "id": "clotrimazole",
+      "name": "Clotrimazole",
+      "class": "Azole antifungal (topical)",
+      "indication": "Vaginal thrush, cutaneous fungal infections"
+    },
+    {
+      "id": "clozapine",
+      "name": "Clozapine",
+      "class": "Atypical antipsychotic",
+      "indication": "Treatment-resistant schizophrenia (failed ≥2 antipsychotics), psychosis in Parkinsons disease (specialist use)"
+    },
+    {
+      "id": "co-amoxiclav",
+      "name": "Co-amoxiclav (Amoxicillin + Clavulanic acid)",
+      "class": "Penicillins, broad-spectrum",
+      "indication": "Cellulitis, animal bites, aspiration pneumonia, dental infections, UTI (if resistant)"
+    },
+    {
+      "id": "co-beneldopa",
+      "name": "Co-beneldopa (Levodopa + Benserazide)",
+      "class": "Dopaminergic drugs for Parkinson\\",
+      "indication": "Parkinson\\"
+    },
+    {
+      "id": "co-careldopa",
+      "name": "Co-careldopa (Levodopa + Carbidopa)",
+      "class": "Dopaminergic drugs for Parkinson\\",
+      "indication": "Parkinson\\"
+    },
+    {
+      "id": "co-codamol",
+      "name": "Co-codamol",
+      "class": "Opioid/paracetamol combination analgesic",
+      "indication": "Moderate pain where paracetamol alone insufficient. Post-operative pain, dental pain"
+    },
+    {
+      "id": "co-dydramol",
+      "name": "Co-dydramol (Dihydrocodeine + Paracetamol)",
+      "class": "Compound analgesic (opioid + non-opioid)",
+      "indication": "Moderate pain not controlled by paracetamol or NSAIDs alone"
+    },
+    {
+      "id": "co-trimoxazole",
+      "name": "Co-trimoxazole (Trimethoprim + Sulfamethoxazole)",
+      "class": "Antibacterial combination (folate synthesis inhibitors)",
+      "indication": "UTI (where susceptible), PCP prophylaxis/treatment, certain systemic infections"
+    },
+    {
+      "id": "cotrimoxazole",
+      "name": "Co-trimoxazole (Trimethoprim + Sulfamethoxazole)",
+      "class": "Trimethoprim",
+      "indication": "Pneumocystis pneumonia (PCP), toxoplasmosis, nocardia, some resistant UTIs"
+    },
+    {
+      "id": "codeine",
+      "name": "Codeine",
+      "class": "Opioid analgesic",
+      "indication": "Mild to moderate pain, dry cough, diarrhoea"
+    },
+    {
+      "id": "colchicine",
+      "name": "Colchicine",
+      "class": "Anti-inflammatory (microtubule inhibitor)",
+      "indication": "Acute gout, gout prophylaxis during urate-lowering therapy initiation, familial Mediterranean fever"
+    },
+    {
+      "id": "colecalciferol",
+      "name": "Colecalciferol (Vitamin D3)",
+      "class": "Vitamin supplement",
+      "indication": "Vitamin D deficiency, osteoporosis prevention, general health maintenance"
+    },
+    {
+      "id": "colistin",
+      "name": "Colistin (polymyxin E)",
+      "class": "Polymyxin antibiotic",
+      "indication": "Severe infections due to MDR Pseudomonas, Acinetobacter, Klebsiella species when other options exhausted"
+    },
+    {
+      "id": "cyclizine",
+      "name": "Cyclizine",
+      "class": "Antihistamine antiemetic",
+      "indication": "Motion sickness, vertigo, nausea/vomiting, pregnancy sickness"
+    },
+    {
+      "id": "dabigatran",
+      "name": "Dabigatran etexilate (dabigatran)",
+      "class": "Direct oral anticoagulant (direct thrombin inhibitor)",
+      "indication": "Stroke prevention in non-valvular AF; treatment and secondary prevention of VTE"
+    },
+    {
+      "id": "dalteparin",
+      "name": "Dalteparin",
+      "class": "Low molecular weight heparin (LMWH)",
+      "indication": "VTE prophylaxis and treatment, bridging for high-risk patients"
+    },
+    {
+      "id": "dapagliflozin",
+      "name": "Dapagliflozin",
+      "class": "SGLT2 inhibitor",
+      "indication": "Type 2 diabetes; heart failure/CKD indications per guidance"
+    },
+    {
+      "id": "daptomycin",
+      "name": "Daptomycin",
+      "class": "Lipopeptide antibiotic",
+      "indication": "Serious Gram-positive infections including MRSA bacteraemia, right-sided endocarditis, complicated skin/soft tissue infections"
+    },
+    {
+      "id": "denosumab",
+      "name": "Denosumab",
+      "class": "Monoclonal antibodies (RANKL inhibitor)",
+      "indication": "Osteoporosis, bone metastases, giant cell tumour of bone, hypercalcaemia of malignancy"
+    },
+    {
+      "id": "desmopressin",
+      "name": "Desmopressin",
+      "class": "Vasopressin analogue",
+      "indication": "Cranial diabetes insipidus, primary nocturnal enuresis (>7y), von Willebrand disease, mild haemophilia A"
+    },
+    {
+      "id": "dexamethasone",
+      "name": "Dexamethasone",
+      "class": "Corticosteroid (glucocorticoid)",
+      "indication": "Cerebral oedema, severe COVID-19, croup, severe inflammatory conditions"
+    },
+    {
+      "id": "diazepam",
+      "name": "Diazepam",
+      "class": "Benzodiazepines",
+      "indication": "Status epilepticus, severe anxiety, alcohol withdrawal, muscle spasm"
+    },
+    {
+      "id": "diclofenac",
+      "name": "Diclofenac",
+      "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+      "indication": "Short-term pain/inflammation when lower-risk NSAIDs ineffective (topical preferred)"
+    },
+    {
+      "id": "digoxin",
+      "name": "Digoxin",
+      "class": "Digoxin",
+      "indication": "AF (rate control), heart failure (symptom control). No mortality benefit"
+    },
+    {
+      "id": "dihydrocodeine",
+      "name": "Dihydrocodeine",
+      "class": "Opioid analgesic",
+      "indication": "Moderate to severe pain, persistent cough (unlicensed)"
+    },
+    {
+      "id": "diltiazem",
+      "name": "Diltiazem",
+      "class": "Calcium channel blockers",
+      "indication": "Hypertension, angina, atrial fibrillation (rate control)"
+    },
+    {
+      "id": "dinoprostone",
+      "name": "Dinoprostone (Prostaglandin E2)",
+      "class": "Prostaglandins",
+      "indication": "Induction of labour, cervical ripening"
+    },
+    {
+      "id": "disodium pamidronate",
+      "name": "Disodium Pamidronate (Pamidronate)",
+      "class": "Bisphosphonates",
+      "indication": "Hypercalcaemia of malignancy, bone pain in myeloma/metastases, Paget\\"
+    },
+    {
+      "id": "docusate",
+      "name": "Docusate (stool softener)",
+      "class": "Stool softener",
+      "indication": "Constipation"
+    },
+    {
+      "id": "docusate sodium",
+      "name": "Docusate Sodium",
+      "class": "Laxatives, stimulant and stool softener",
+      "indication": "Constipation (especially with hard stools), opioid-induced constipation"
+    },
+    {
+      "id": "domperidone",
+      "name": "Domperidone",
+      "class": "Antiemetic (Dopamine antagonist)",
+      "indication": "Nausea and vomiting (short-term use only), selected gastroparesis after specialist advice"
+    },
+    {
+      "id": "donepezil",
+      "name": "Donepezil",
+      "class": "Acetylcholinesterase inhibitors",
+      "indication": "Mild-moderate Alzheimer\\"
+    },
+    {
+      "id": "doxazosin",
+      "name": "Doxazosin",
+      "class": "Alpha-1 blocker",
+      "indication": "Hypertension (4th line), benign prostatic hyperplasia (BPH)"
+    },
+    {
+      "id": "doxycycline",
+      "name": "Doxycycline",
+      "class": "Tetracyclines and glycylcyclines",
+      "indication": "Respiratory tract infections, acne, chlamydia, malaria prophylaxis, Lyme disease"
+    },
+    {
+      "id": "dulaglutide",
+      "name": "Dulaglutide",
+      "class": "GLP-1 receptor agonist",
+      "indication": "T2DM"
+    },
+    {
+      "id": "duloxetine",
+      "name": "Duloxetine",
+      "class": "SNRI (serotonin-norepinephrine reuptake inhibitor)",
+      "indication": "Depression, generalised anxiety disorder, diabetic neuropathy, fibromyalgia, stress urinary incontinence"
+    },
+    {
+      "id": "dutasteride",
+      "name": "Dutasteride",
+      "class": "5 alpha-reductase inhibitors",
+      "indication": "Benign prostatic hyperplasia, male pattern baldness (off-label)"
+    },
+    {
+      "id": "edoxaban",
+      "name": "Edoxaban",
+      "class": "Direct oral anticoagulant (DOAC) – factor Xa inhibitor",
+      "indication": "Stroke prevention in non-valvular AF, treatment and secondary prevention of VTE"
+    },
+    {
+      "id": "efavirenz",
+      "name": "Efavirenz",
+      "class": "Antiviral drugs - Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
+      "indication": "HIV-1 infection (combination therapy)"
+    },
+    {
+      "id": "doublebase",
+      "name": "Emollients (Doublebase/Diprobase/Cetraben)",
+      "class": "Emollient/moisturiser",
+      "indication": "Eczema, dry skin conditions, psoriasis (adjunct), ichthyosis"
+    },
+    {
+      "id": "empagliflozin",
+      "name": "Empagliflozin",
+      "class": "Sodium-glucose co-transporter 2 inhibitors",
+      "indication": "Type 2 diabetes (with CVD benefits), heart failure with reduced ejection fraction, chronic kidney disease as per guideline indications"
+    },
+    {
+      "id": "enalapril",
+      "name": "Enalapril",
+      "class": "ACE inhibitor",
+      "indication": "Hypertension, heart failure, post-MI"
+    },
+    {
+      "id": "enoxaparin",
+      "name": "Enoxaparin",
+      "class": "Heparins and fondaparinux",
+      "indication": "VTE prophylaxis/treatment, acute coronary syndromes, pregnancy anticoagulation"
+    },
+    {
+      "id": "eplerenone",
+      "name": "Eplerenone",
+      "class": "Mineralocorticoid receptor antagonist (MRA)",
+      "indication": "Heart failure (HFrEF) as per guideline; alternative MRA"
+    },
+    {
+      "id": "ergometrine",
+      "name": "Ergometrine (ergonovine)",
+      "class": "Ergot alkaloid uterotonic",
+      "indication": "Management of postpartum haemorrhage"
+    },
+    {
+      "id": "ertapenem",
+      "name": "Ertapenem",
+      "class": "Carbapenem antibiotic",
+      "indication": "Intra-abdominal infections, complicated skin/soft tissue infections, community-acquired severe infections, some UTIs"
+    },
+    {
+      "id": "ertugliflozin",
+      "name": "Ertugliflozin",
+      "class": "SGLT2 inhibitor",
+      "indication": "T2DM"
+    },
+    {
+      "id": "erythromycin",
+      "name": "Erythromycin",
+      "class": "Macrolide antibiotic",
+      "indication": "Respiratory tract infections, skin infections, chlamydia, legionella"
+    },
+    {
+      "id": "escitalopram",
+      "name": "Escitalopram",
+      "class": "Antidepressants, selective serotonin reuptake inhibitors",
+      "indication": "Depression, generalized anxiety disorder, panic disorder, social anxiety"
+    },
+    {
+      "id": "esomeprazole",
+      "name": "Esomeprazole",
+      "class": "Proton pump inhibitors",
+      "indication": "GORD, peptic ulcer disease, H.pylori eradication, NSAID prophylaxis"
+    },
+    {
+      "id": "ethambutol",
+      "name": "Ethambutol",
+      "class": "Antitubercular",
+      "indication": "TB"
+    },
+    {
+      "id": "famotidine",
+      "name": "Famotidine",
+      "class": "H2-receptor antagonists",
+      "indication": "Peptic ulcer disease, GORD, dyspepsia"
+    },
+    {
+      "id": "felodipine",
+      "name": "Felodipine",
+      "class": "Calcium channel blockers",
+      "indication": "Hypertension, angina prophylaxis"
+    },
+    {
+      "id": "fentanyl",
+      "name": "Fentanyl",
+      "class": "Opioid analgesic (synthetic)",
+      "indication": "Severe acute pain, procedural sedation/analgesia, peri-intubation analgesia"
+    },
+    {
+      "id": "ferrous fumarate",
+      "name": "Ferrous Fumarate",
+      "class": "Iron supplement",
+      "indication": "Iron deficiency anaemia"
+    },
+    {
+      "id": "ferrous sulfate",
+      "name": "Ferrous Sulfate",
+      "class": "Iron supplement",
+      "indication": "Iron deficiency anaemia, prophylaxis in pregnancy"
+    },
+    {
+      "id": "fexofenadine",
+      "name": "Fexofenadine",
+      "class": "Second-generation antihistamine (H1 antagonist)",
+      "indication": "Seasonal allergic rhinitis, chronic idiopathic urticaria, allergic skin conditions"
+    },
+    {
+      "id": "filgrastim",
+      "name": "Filgrastim (G-CSF)",
+      "class": "Hematopoietic growth factor",
+      "indication": "Chemotherapy-induced neutropenia"
+    },
+    {
+      "id": "finasteride",
+      "name": "Finasteride",
+      "class": "5 alpha-reductase inhibitors",
+      "indication": "Benign prostatic hyperplasia, male pattern baldness"
+    },
+    {
+      "id": "flucloxacillin",
+      "name": "Flucloxacillin",
+      "class": "Penicillins, narrow-spectrum",
+      "indication": "Staphylococcal infections (cellulitis, bone/joint infections), endocarditis prophylaxis"
+    },
+    {
+      "id": "fluconazole",
+      "name": "Fluconazole",
+      "class": "Triazole antifungal",
+      "indication": "Candidiasis (vaginal, oral, systemic), cryptococcal meningitis, fungal prophylaxis"
+    },
+    {
+      "id": "flumazenil",
+      "name": "Flumazenil",
+      "class": "Benzodiazepine antagonist",
+      "indication": "Benzodiazepine overdose reversal, procedural sedation reversal, hepatic encephalopathy (unlicensed)"
+    },
+    {
+      "id": "fluoxetine",
+      "name": "Fluoxetine",
+      "class": "Selective serotonin reuptake inhibitor (SSRI)",
+      "indication": "Depression, panic disorder, OCD, bulimia nervosa, premenstrual dysphoric disorder"
+    },
+    {
+      "id": "flupentixol",
+      "name": "Flupentixol (Flupenthixol)",
+      "class": "Antipsychotics, first-generation",
+      "indication": "Schizophrenia, psychosis, depression (low dose)"
+    },
+    {
+      "id": "fluticasone-inhaled",
+      "name": "Fluticasone (inhaled)",
+      "class": "Inhaled corticosteroid (ICS)",
+      "indication": "Maintenance asthma/COPD (as appropriate)"
+    },
+    {
+      "id": "fluticasone",
+      "name": "Fluticasone (inhaled)",
+      "class": "Inhaled corticosteroid",
+      "indication": "Asthma maintenance"
+    },
+    {
+      "id": "nasal-fluticasone",
+      "name": "Fluticasone Nasal Spray",
+      "class": "Corticosteroid (intranasal)",
+      "indication": "Allergic rhinitis, nasal polyps"
+    },
+    {
+      "id": "fluticasone-salmeterol",
+      "name": "Fluticasone/salmeterol",
+      "class": "ICS/LABA combination",
+      "indication": "Asthma, COPD (as appropriate)"
+    },
+    {
+      "id": "folic acid",
+      "name": "Folic Acid",
+      "class": "Vitamins",
+      "indication": "Folate deficiency anaemia, pregnancy/preconception, methotrexate therapy, chronic haemolytic anaemia"
+    },
+    {
+      "id": "fondaparinux",
+      "name": "Fondaparinux",
+      "class": "Synthetic pentasaccharide (indirect anti‑Xa)",
+      "indication": "VTE prophylaxis/treatment, used in certain ACS pathways per protocol"
+    },
+    {
+      "id": "formoterol",
+      "name": "Formoterol",
+      "class": "Beta2-agonists",
+      "indication": "Asthma (step 3+ with ICS), COPD (combination inhalers)"
+    },
+    {
+      "id": "fosfomycin",
+      "name": "Fosfomycin",
+      "class": "Phosphonic acid antibiotic",
+      "indication": "Uncomplicated lower UTI, particularly when first-line antibiotics unsuitable or resistant"
+    },
+    {
+      "id": "furosemide",
+      "name": "Furosemide",
+      "class": "Diuretics, loop",
+      "indication": "Heart failure, pulmonary oedema, hypertension (rarely used), ascites"
+    },
+    {
+      "id": "fusidic-acid",
+      "name": "Fusidic Acid",
+      "class": "Antibiotic",
+      "indication": "Skin infections (impetigo, infected eczema), staphylococcal infections, bacterial conjunctivitis"
+    },
+    {
+      "id": "gabapentin",
+      "name": "Gabapentin",
+      "class": "Gabapentinoids",
+      "indication": "Neuropathic pain, epilepsy, restless leg syndrome (unlicensed)"
+    },
+    {
+      "id": "gentamicin",
+      "name": "Gentamicin",
+      "class": "Aminoglycoside antibiotic",
+      "indication": "Severe Gram-negative infections, synergistic therapy in endocarditis"
+    },
+    {
+      "id": "gliclazide",
+      "name": "Gliclazide",
+      "class": "Sulfonylurea",
+      "indication": "Type 2 diabetes (when metformin contraindicated/not tolerated or as add-on)"
+    },
+    {
+      "id": "glimepiride",
+      "name": "Glimepiride",
+      "class": "Sulfonylureas",
+      "indication": "Type 2 diabetes"
+    },
+    {
+      "id": "glipizide",
+      "name": "Glipizide",
+      "class": "Sulfonylureas",
+      "indication": "Type 2 diabetes"
+    },
+    {
+      "id": "glucagon",
+      "name": "Glucagon",
+      "class": "Emergency drugs",
+      "indication": "Severe hypoglycaemia when IV glucose not possible, diagnostic use"
+    },
+    {
+      "id": "glycerol",
+      "name": "Glycerol Suppositories",
+      "class": "Laxatives, rectal",
+      "indication": "Acute constipation, before procedures"
+    },
+    {
+      "id": "glyceryl-trinitrate",
+      "name": "Glyceryl Trinitrate (GTN)",
+      "class": "Nitrates",
+      "indication": "Angina, heart failure, hypertensive emergency, anal fissure"
+    },
+    {
+      "id": "glyceryl trinitrate",
+      "name": "Glyceryl Trinitrate (GTN)",
+      "class": "Nitrates",
+      "indication": "Angina, acute coronary syndrome, acute heart failure, anal fissure (topical)"
+    },
+    {
+      "id": "glycopyrronium",
+      "name": "Glycopyrronium (Glycopyrrolate)",
+      "class": "Antimuscarinics",
+      "indication": "COPD (inhaled), excessive salivation/secretions, reversal of neuromuscular blockade"
+    },
+    {
+      "id": "goserelin",
+      "name": "Goserelin",
+      "class": "Hormone antagonists - GnRH agonist",
+      "indication": "Prostate cancer, breast cancer, endometriosis, endometrial thinning before surgery, IVF"
+    },
+    {
+      "id": "granisetron",
+      "name": "Granisetron",
+      "class": "Antiemetic, 5-HT3 receptor antagonist",
+      "indication": "Chemotherapy-induced nausea/vomiting, radiotherapy-induced nausea, post-operative nausea"
+    },
+    {
+      "id": "haloperidol",
+      "name": "Haloperidol",
+      "class": "Antipsychotic (First-generation, typical)",
+      "indication": "Schizophrenia, acute psychosis, delirium, short-term control of severe agitation, Tourette syndrome"
+    },
+    {
+      "id": "heparin",
+      "name": "Heparin",
+      "class": "Heparins and fondaparinux",
+      "indication": "DVT/PE treatment, ACS, AF, cardiac surgery, dialysis, stroke prevention"
+    },
+    {
+      "id": "albumin",
+      "name": "Human Albumin Solution",
+      "class": "Colloid (Plasma substitute)",
+      "indication": "Severe hypoalbuminaemia, large volume paracentesis, burns, hepatorenal syndrome"
+    },
+    {
+      "id": "hydralazine",
+      "name": "Hydralazine",
+      "class": "Vasodilator (direct arteriolar dilator)",
+      "indication": "Severe hypertension (including in pregnancy under specialist care), refractory hypertension"
+    },
+    {
+      "id": "hydrocortisone",
+      "name": "Hydrocortisone",
+      "class": "Corticosteroids, topical",
+      "indication": "Eczema, dermatitis, insect bites, adrenal insufficiency (oral)"
+    },
+    {
+      "id": "hydrocortisone-topical",
+      "name": "Hydrocortisone Cream/Ointment 1%",
+      "class": "Mild topical corticosteroid",
+      "indication": "Mild eczema, insect bites, contact dermatitis, mild inflammatory skin conditions"
+    },
+    {
+      "id": "hydromol",
+      "name": "Hydromol Ointment/Cream",
+      "class": "Emollient",
+      "indication": "Severe dry skin, eczema, ichthyosis, psoriasis"
+    },
+    {
+      "id": "hydroxocobalamin",
+      "name": "Hydroxocobalamin",
+      "class": "Vitamins",
+      "indication": "Pernicious anaemia, B12 deficiency, neuropathy, cyanide poisoning (high dose)"
+    },
+    {
+      "id": "hydroxycarbamide",
+      "name": "Hydroxycarbamide (hydroxyurea)",
+      "class": "Antimetabolite / cytoreductive",
+      "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease"
+    },
+    {
+      "id": "hydroxychloroquine",
+      "name": "Hydroxychloroquine",
+      "class": "Disease-modifying antirheumatic drugs",
+      "indication": "Rheumatoid arthritis, SLE, malaria prophylaxis and treatment"
+    },
+    {
+      "id": "hyoscine",
+      "name": "Hyoscine (Scopolamine)",
+      "class": "Anticholinergic/Antimuscarinic",
+      "indication": "Motion sickness, excessive respiratory secretions, smooth muscle spasm"
+    },
+    {
+      "id": "hyoscine butylbromide",
+      "name": "Hyoscine Butylbromide (Buscopan)",
+      "class": "Antimuscarinics, GI",
+      "indication": "Irritable bowel syndrome, GI/renal/biliary colic, palliative care (bowel obstruction)"
+    },
+    {
+      "id": "hypromellose",
+      "name": "Hypromellose Eye Drops",
+      "class": "Ocular lubricant",
+      "indication": "Dry eyes, tear deficiency, contact lens discomfort"
+    },
+    {
+      "id": "ibuprofen",
+      "name": "Ibuprofen",
+      "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+      "indication": "Pain and inflammation, particularly musculoskeletal conditions, fever, dysmenorrhoea"
+    },
+    {
+      "id": "idarucizumab",
+      "name": "Idarucizumab",
+      "class": "Dabigatran reversal agent (monoclonal antibody fragment)",
+      "indication": "Rapid reversal of dabigatran anticoagulation"
+    },
+    {
+      "id": "iloprost",
+      "name": "Iloprost",
+      "class": "Prostaglandins (Prostacyclin analogue)",
+      "indication": "Pulmonary arterial hypertension, critical limb ischaemia, Raynaud\\"
+    },
+    {
+      "id": "indacaterol",
+      "name": "Indacaterol",
+      "class": "Beta2-agonists (LABA)",
+      "indication": "COPD, asthma (with ICS only)"
+    },
+    {
+      "id": "indapamide",
+      "name": "Indapamide",
+      "class": "Thiazide-like diuretic",
+      "indication": "Hypertension (first-line with ACEi/ARB or CCB), mild heart failure"
+    },
+    {
+      "id": "infliximab",
+      "name": "Infliximab",
+      "class": "Monoclonal antibodies (Anti-TNF)",
+      "indication": "Crohn\\"
+    },
+    {
+      "id": "insulin",
+      "name": "Insulin (soluble/regular; e.g., Actrapid/Humulin S)",
+      "class": "Short-acting insulin",
+      "indication": "Type 1 and Type 2 diabetes (as part of regimens); DKA/HHS (IV)"
+    },
+    {
+      "id": "insulin-aspart",
+      "name": "Insulin aspart",
+      "class": "Rapid-acting insulin analogue",
+      "indication": "Prandial insulin therapy in type 1 and type 2 diabetes as required"
+    },
+    {
+      "id": "insulin aspart",
+      "name": "Insulin Aspart (Novorapid)",
+      "class": "Insulin - rapid-acting analogue",
+      "indication": "Type 1 diabetes, type 2 diabetes (basal-bolus regime), DKA (IV)"
+    },
+    {
+      "id": "insulin-degludec",
+      "name": "Insulin degludec",
+      "class": "Ultra-long acting insulin analogue",
+      "indication": "Basal insulin therapy"
+    },
+    {
+      "id": "insulin-detemir",
+      "name": "Insulin detemir",
+      "class": "Long-acting insulin analogue",
+      "indication": "Basal insulin therapy"
+    },
+    {
+      "id": "insulin glargine",
+      "name": "Insulin Glargine (Lantus, Toujeo)",
+      "class": "Insulin - long-acting analogue",
+      "indication": "Type 1 and type 2 diabetes - basal insulin requirement"
+    },
+    {
+      "id": "insulin-glargine",
+      "name": "Insulin glargine (long-acting analogue)",
+      "class": "Basal insulin analogue",
+      "indication": "Basal insulin therapy in type 1 and type 2 diabetes"
+    },
+    {
+      "id": "insulin-lispro",
+      "name": "Insulin lispro",
+      "class": "Rapid-acting insulin analogue",
+      "indication": "Prandial insulin"
+    },
+    {
+      "id": "ipratropium",
+      "name": "Ipratropium",
+      "class": "Short-acting muscarinic antagonist (SAMA)",
+      "indication": "COPD, severe asthma (add-on therapy), acute exacerbations"
+    },
+    {
+      "id": "ipratropium-nebulised",
+      "name": "Ipratropium Nebuliser Solution",
+      "class": "Antimuscarinic bronchodilator (nebulised)",
+      "indication": "Acute asthma (adjunct to β2-agonists), COPD exacerbation"
+    },
+    {
+      "id": "irbesartan",
+      "name": "Irbesartan",
+      "class": "Angiotensin receptor blocker (ARB)",
+      "indication": "Hypertension, proteinuric CKD"
+    },
+    {
+      "id": "isoniazid",
+      "name": "Isoniazid",
+      "class": "Antitubercular",
+      "indication": "TB"
+    },
+    {
+      "id": "isosorbide-dinitrate",
+      "name": "Isosorbide dinitrate",
+      "class": "Nitrate (shorter-acting)",
+      "indication": "Angina, acute heart failure symptom relief in some settings"
+    },
+    {
+      "id": "isosorbide-mononitrate",
+      "name": "Isosorbide mononitrate",
+      "class": "Nitrate (long-acting)",
+      "indication": "Chronic stable angina, heart failure symptom control in some patients"
+    },
+    {
+      "id": "isosorbide mononitrate",
+      "name": "Isosorbide Mononitrate",
+      "class": "Nitrates",
+      "indication": "Angina prophylaxis, left ventricular failure (with hydralazine)"
+    },
+    {
+      "id": "itraconazole",
+      "name": "Itraconazole",
+      "class": "Triazole antifungal",
+      "indication": "Systemic fungal infections"
+    },
+    {
+      "id": "ivabradine",
+      "name": "Ivabradine",
+      "class": "If channel inhibitor",
+      "indication": "Chronic heart failure (LVEF ≤35%, HR ≥70 in sinus rhythm), angina if beta blockers unsuitable"
+    },
+    {
+      "id": "ketamine",
+      "name": "Ketamine",
+      "class": "Dissociative Anaesthetic/Analgesic",
+      "indication": "Emergency anaesthesia, procedural sedation, severe asthma, treatment-resistant depression"
+    },
+    {
+      "id": "ketorolac",
+      "name": "Ketorolac",
+      "class": "Non-selective NSAID",
+      "indication": "Moderate to severe acute pain (short-term postoperative pain)"
+    },
+    {
+      "id": "lactulose",
+      "name": "Lactulose",
+      "class": "Osmotic laxative",
+      "indication": "Constipation, hepatic encephalopathy, preparation for procedures"
+    },
+    {
+      "id": "lamotrigine",
+      "name": "Lamotrigine",
+      "class": "Antiepileptic/mood stabiliser",
+      "indication": "Epilepsy (focal and generalised), bipolar disorder (especially depression prevention)"
+    },
+    {
+      "id": "lansoprazole",
+      "name": "Lansoprazole",
+      "class": "Proton pump inhibitor (PPI)",
+      "indication": "GORD, peptic ulcer disease, H.pylori eradication, Zollinger-Ellison syndrome"
+    },
+    {
+      "id": "letrozole",
+      "name": "Letrozole",
+      "class": "Aromatase inhibitor",
+      "indication": "Breast cancer"
+    },
+    {
+      "id": "levetiracetam",
+      "name": "Levetiracetam",
+      "class": "Antiepileptic",
+      "indication": "Focal and generalized seizures, status epilepticus adjunct"
+    },
+    {
+      "id": "levobupivacaine",
+      "name": "Levobupivacaine",
+      "class": "Local anaesthetics",
+      "indication": "As bupivacaine - preferred when safety margin important (obstetrics, cardiovascular disease)"
+    },
+    {
+      "id": "levodopa",
+      "name": "Levodopa/Carbidopa (Co-careldopa)",
+      "class": "Dopaminergic drug for Parkinson\\",
+      "indication": "Parkinson\\"
+    },
+    {
+      "id": "levofloxacin",
+      "name": "Levofloxacin",
+      "class": "Fluoroquinolone antibiotic",
+      "indication": "Community-acquired pneumonia, complicated UTI, chronic prostatitis, anthrax (as per guidelines)"
+    },
+    {
+      "id": "levonorgestrel",
+      "name": "Levonorgestrel",
+      "class": "Synthetic progestogen",
+      "indication": "Emergency contraception, long-term contraception (IUS), menorrhagia"
+    },
+    {
+      "id": "levothyroxine",
+      "name": "Levothyroxine",
+      "class": "Thyroid hormones",
+      "indication": "Primary hypothyroidism, secondary hypothyroidism, thyroid cancer (TSH suppression)"
+    },
+    {
+      "id": "lidocaine",
+      "name": "Lidocaine",
+      "class": "Local anaesthetic (amide type)",
+      "indication": "Local anaesthesia, topical anaesthesia, ventricular arrhythmias (IV)"
+    },
+    {
+      "id": "lidocaine-systemic",
+      "name": "Lidocaine (systemic)",
+      "class": "Local anaesthetic / antiarrhythmic",
+      "indication": "Arrhythmias (IV), analgesia (topical/infiltration)"
+    },
+    {
+      "id": "linagliptin",
+      "name": "Linagliptin",
+      "class": "DPP-4 inhibitor",
+      "indication": "T2DM"
+    },
+    {
+      "id": "linezolid",
+      "name": "Linezolid",
+      "class": "Oxazolidinone antibiotic",
+      "indication": "Serious Gram-positive infections including MRSA, VRE, complicated skin and soft tissue infections, some pneumonia"
+    },
+    {
+      "id": "liothyronine",
+      "name": "Liothyronine (T3)",
+      "class": "Thyroid hormone",
+      "indication": "Myxoedema coma (emergency), rarely for hypothyroidism (specialist endocrinology use only)"
+    },
+    {
+      "id": "liquid paraffin",
+      "name": "Liquid Paraffin",
+      "class": "Emollients / Laxatives",
+      "indication": "Topical: dry skin conditions, eczema. Oral: constipation (rarely used now)"
+    },
+    {
+      "id": "liraglutide",
+      "name": "Liraglutide",
+      "class": "GLP-1 receptor agonist",
+      "indication": "Type 2 diabetes; weight management in some licensed indications"
+    },
+    {
+      "id": "lisinopril",
+      "name": "Lisinopril",
+      "class": "ACE inhibitor",
+      "indication": "Hypertension, heart failure, post-MI, diabetic nephropathy"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium carbonate",
+      "class": "Mood stabiliser",
+      "indication": "Bipolar disorder (acute treatment and prophylaxis), treatment-resistant depression"
+    },
+    {
+      "id": "lofepramine",
+      "name": "Lofepramine",
+      "class": "Antidepressants, tricyclics",
+      "indication": "Depression"
+    },
+    {
+      "id": "loperamide",
+      "name": "Loperamide",
+      "class": "Opioid antidiarrhoeal agent",
+      "indication": "Acute diarrhoea, chronic diarrhoea, IBS with diarrhoea"
+    },
+    {
+      "id": "loratadine",
+      "name": "Loratadine",
+      "class": "Second-generation antihistamine (H1 antagonist)",
+      "indication": "Allergic rhinitis, chronic idiopathic urticaria, allergic skin conditions"
+    },
+    {
+      "id": "lorazepam",
+      "name": "Lorazepam",
+      "class": "Short-acting benzodiazepine",
+      "indication": "Short-term anxiety, status epilepticus, premedication"
+    },
+    {
+      "id": "losartan",
+      "name": "Losartan",
+      "class": "Angiotensin receptor blockers",
+      "indication": "Hypertension, heart failure, diabetic nephropathy, post-MI (ACE-I intolerant)"
+    },
+    {
+      "id": "lymecycline",
+      "name": "Lymecycline",
+      "class": "Tetracyclines",
+      "indication": "Acne vulgaris, rosacea, respiratory infections, Lyme disease"
+    },
+    {
+      "id": "macrogol",
+      "name": "Macrogol (Movicol/Laxido)",
+      "class": "Osmotic laxative",
+      "indication": "Chronic constipation (first-line), faecal impaction, bowel preparation"
+    },
+    {
+      "id": "macrogol 3350",
+      "name": "Macrogol 3350 (Polyethylene Glycol)",
+      "class": "Laxatives, osmotic",
+      "indication": "Chronic constipation, faecal impaction, bowel preparation"
+    },
+    {
+      "id": "magnesium-sulfate",
+      "name": "Magnesium Sulfate",
+      "class": "Mineral supplement/Antiarrhythmic",
+      "indication": "Eclampsia, torsades de pointes, hypomagnesemia, severe asthma"
+    },
+    {
+      "id": "meropenem",
+      "name": "Meropenem",
+      "class": "Antibiotic (Carbapenem)",
+      "indication": "Severe sepsis, complicated UTI, intra-abdominal infections, meningitis"
+    },
+    {
+      "id": "mesalazine",
+      "name": "Mesalazine",
+      "class": "Aminosalicylates",
+      "indication": "Ulcerative colitis treatment and maintenance, Crohn\\"
+    },
+    {
+      "id": "metformin",
+      "name": "Metformin",
+      "class": "Biguanide (oral hypoglycaemic)",
+      "indication": ""
+    },
+    {
+      "id": "methadone",
+      "name": "Methadone",
+      "class": "Long-acting opioid agonist",
+      "indication": "Opioid substitution therapy, severe chronic pain under specialist supervision"
+    },
+    {
+      "id": "methotrexate",
+      "name": "Methotrexate",
+      "class": "Methotrexate",
+      "indication": "Rheumatoid arthritis, psoriasis, cancer (various), ectopic pregnancy"
+    },
+    {
+      "id": "metoclopramide",
+      "name": "Metoclopramide",
+      "class": "Antiemetic/Prokinetic (Dopamine antagonist)",
+      "indication": "Nausea/vomiting, gastroparesis, migraine-associated nausea, postoperative nausea"
+    },
+    {
+      "id": "metoprolol",
+      "name": "Metoprolol",
+      "class": "Beta-blocker (β1 selective)",
+      "indication": "Hypertension, angina, rate control in atrial fibrillation, secondary prevention post-MI"
+    },
+    {
+      "id": "metronidazole",
+      "name": "Metronidazole",
+      "class": "Nitroimidazole (antibacterial/antiprotozoal)",
+      "indication": "Anaerobic infections, bacterial vaginosis, H. pylori eradication (as part of combination therapy), giardiasis/trichomoniasis, limited/alternative role in C. difficile infection"
+    },
+    {
+      "id": "midazolam",
+      "name": "Midazolam",
+      "class": "Benzodiazepine (short-acting)",
+      "indication": "Seizure control (status epilepticus), conscious sedation, procedural sedation, premedication, ICU sedation"
+    },
+    {
+      "id": "mifepristone",
+      "name": "Mifepristone",
+      "class": "Anti-progestogen (progesterone receptor modulator)",
+      "indication": "Medical abortion up to 24 weeks (with prostaglandin), management of miscarriage, cervical priming before surgical uterine evacuation"
+    },
+    {
+      "id": "mirtazapine",
+      "name": "Mirtazapine",
+      "class": "Noradrenergic and specific serotonergic antidepressant (NaSSA)",
+      "indication": "Depression (especially with anxiety, insomnia, or weight loss)"
+    },
+    {
+      "id": "misoprostol",
+      "name": "Misoprostol",
+      "class": "Prostaglandin E1 analogue (uterotonic)",
+      "indication": "Prevention/treatment of PPH, induction of labour in select contexts"
+    },
+    {
+      "id": "misoprostol-gastro",
+      "name": "Misoprostol (GI use)",
+      "class": "Prostaglandin E1 analogue",
+      "indication": "GI mucosal protection"
+    },
+    {
+      "id": "mometasone",
+      "name": "Mometasone (inhaled)",
+      "class": "Inhaled corticosteroid",
+      "indication": "Asthma"
+    },
+    {
+      "id": "mometasone-nasal",
+      "name": "Mometasone Nasal Spray",
+      "class": "Corticosteroid (intranasal)",
+      "indication": "Allergic rhinitis, nasal polyps"
+    },
+    {
+      "id": "montelukast",
+      "name": "Montelukast",
+      "class": "Leukotriene receptor antagonist",
+      "indication": "Asthma prophylaxis, allergic rhinitis, exercise-induced bronchospasm"
+    },
+    {
+      "id": "morphine",
+      "name": "Morphine",
+      "class": "Opioid analgesic (strong opioid)",
+      "indication": "Moderate to severe acute pain, chronic severe pain, palliative care"
+    },
+    {
+      "id": "moxifloxacin",
+      "name": "Moxifloxacin",
+      "class": "Fluoroquinolone antibiotic",
+      "indication": "Certain respiratory and intra-abdominal infections where indicated"
+    },
+    {
+      "id": "n-acetylcysteine",
+      "name": "N-acetylcysteine (NAC)",
+      "class": "Antidote / mucolytic",
+      "indication": "Paracetamol overdose"
+    },
+    {
+      "id": "naloxone",
+      "name": "Naloxone",
+      "class": "Opioid antagonist",
+      "indication": "Opioid overdose with respiratory depression, reversal of opioid-induced respiratory depression in clinical settings"
+    },
+    {
+      "id": "naproxen",
+      "name": "Naproxen",
+      "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+      "indication": "Inflammatory conditions, musculoskeletal pain, dysmenorrhoea, acute gout"
+    },
+    {
+      "id": "nefopam",
+      "name": "Nefopam",
+      "class": "Non-opioid analgesic",
+      "indication": "Moderate pain when opioids inappropriate or as adjunct to other analgesics"
+    },
+    {
+      "id": "neomycin",
+      "name": "Neomycin",
+      "class": "Aminoglycosides",
+      "indication": "Hepatic encephalopathy, bowel preparation, topical skin infections"
+    },
+    {
+      "id": "nifedipine",
+      "name": "Nifedipine",
+      "class": "Calcium channel blockers",
+      "indication": "Hypertension, angina, Raynaud phenomenon"
+    },
+    {
+      "id": "nirmatrelvir",
+      "name": "Nirmatrelvir (with Ritonavir - Paxlovid)",
+      "class": "Antiviral drugs - Protease inhibitor",
+      "indication": "COVID-19 (mild-moderate in high-risk patients within 5 days of symptom onset)"
+    },
+    {
+      "id": "nitrofurantoin",
+      "name": "Nitrofurantoin",
+      "class": "Nitrofurantoin",
+      "indication": "UTI treatment and prophylaxis. Not effective for pyelonephritis"
+    },
+    {
+      "id": "nitroglycerin",
+      "name": "Nitroglycerin (GTN)",
+      "class": "Nitrate vasodilator",
+      "indication": "Acute angina, acute pulmonary oedema (IV), myocardial ischaemia"
+    },
+    {
+      "id": "nitrous oxide",
+      "name": "Nitrous Oxide",
+      "class": "Anaesthetics, general (Inhalational)",
+      "indication": "Adjunct to general anaesthesia, labour analgesia (Entonox), dental procedures"
+    },
+    {
+      "id": "noradrenaline",
+      "name": "Noradrenaline",
+      "class": "Sympathomimetic (Alpha/Beta agonist)",
+      "indication": "Septic shock, cardiogenic shock, severe hypotension, cardiac arrest"
+    },
+    {
+      "id": "norethisterone",
+      "name": "Norethisterone",
+      "class": "Oestrogens and progestogens",
+      "indication": "Menorrhagia, endometriosis, contraception (POP), HRT, delayed menstruation"
+    },
+    {
+      "id": "nortriptyline",
+      "name": "Nortriptyline",
+      "class": "Antidepressants, tricyclics",
+      "indication": "Depression, neuropathic pain"
+    },
+    {
+      "id": "nystatin",
+      "name": "Nystatin",
+      "class": "Antifungal drugs (Polyene)",
+      "indication": "Oral and intestinal candidiasis, candidal skin infections (topical)"
+    },
+    {
+      "id": "ofloxacin",
+      "name": "Ofloxacin",
+      "class": "Quinolones",
+      "indication": "UTI, respiratory infections, topical: bacterial conjunctivitis, otitis externa"
+    },
+    {
+      "id": "olanzapine",
+      "name": "Olanzapine",
+      "class": "Antipsychotics, second-generation (atypical)",
+      "indication": "Schizophrenia, bipolar disorder (acute mania), treatment-resistant depression"
+    },
+    {
+      "id": "omalizumab",
+      "name": "Omalizumab",
+      "class": "Monoclonal antibodies (Anti-IgE)",
+      "indication": "Severe persistent allergic asthma, chronic spontaneous urticaria"
+    },
+    {
+      "id": "omeprazole",
+      "name": "Omeprazole",
+      "class": "Proton pump inhibitor (PPI)",
+      "indication": "GORD, peptic ulcer disease, H.pylori eradication"
+    },
+    {
+      "id": "ondansetron",
+      "name": "Ondansetron",
+      "class": "Antiemetic (Selective 5-HT₃ receptor antagonist)",
+      "indication": "Chemotherapy, radiotherapy, or post-operative nausea and vomiting; pregnancy sickness (second-line)"
+    },
+    {
+      "id": "oseltamivir",
+      "name": "Oseltamivir",
+      "class": "Neuraminidase inhibitor",
+      "indication": "Influenza treatment/prophylaxis"
+    },
+    {
+      "id": "oxybutynin",
+      "name": "Oxybutynin",
+      "class": "Antimuscarinic (anticholinergic)",
+      "indication": "Urge incontinence, overactive bladder, nocturnal enuresis in children >5y"
+    },
+    {
+      "id": "oxycodone",
+      "name": "Oxycodone",
+      "class": "Opioid analgesic",
+      "indication": "Moderate to severe acute or chronic pain, breakthrough pain in opioid-treated patients"
+    },
+    {
+      "id": "oxygen",
+      "name": "Oxygen",
+      "class": "Emergency drug / Respiratory support",
+      "indication": "Hypoxaemia, acute breathlessness, cardiac arrest, major trauma, shock"
+    },
+    {
+      "id": "oxytocin",
+      "name": "Oxytocin",
+      "class": "Uterotonic",
+      "indication": "Labour induction/augmentation, postpartum haemorrhage"
+    },
+    {
+      "id": "pabrinex",
+      "name": "Pabrinex (Multivitamin infusion)",
+      "class": "Vitamin replacement",
+      "indication": "Vitamin replacement in deficiency"
+    },
+    {
+      "id": "pantoprazole",
+      "name": "Pantoprazole",
+      "class": "Proton Pump Inhibitor",
+      "indication": "GORD, peptic ulcer disease, H.pylori eradication, stress ulcer prophylaxis"
+    },
+    {
+      "id": "paracetamol",
+      "name": "Paracetamol",
+      "class": "Paracetamol",
+      "indication": "Pain relief, fever reduction. Safe alternative to NSAIDs"
+    },
+    {
+      "id": "paroxetine",
+      "name": "Paroxetine",
+      "class": "Selective serotonin reuptake inhibitors",
+      "indication": "Depression, panic disorder, OCD, social anxiety disorder, PTSD"
+    },
+    {
+      "id": "perindopril",
+      "name": "Perindopril",
+      "class": "ACE inhibitor",
+      "indication": "Hypertension, heart failure, post-MI"
+    },
+    {
+      "id": "phenoxymethylpenicillin",
+      "name": "Phenoxymethylpenicillin (Penicillin V)",
+      "class": "Penicillins, narrow-spectrum",
+      "indication": "Streptococcal pharyngitis, pneumococcal infections, rheumatic fever prophylaxis, endocarditis prophylaxis"
+    },
+    {
+      "id": "phenytoin",
+      "name": "Phenytoin",
+      "class": "Antiepileptic drug",
+      "indication": "Epilepsy, status epilepticus, trigeminal neuralgia"
+    },
+    {
+      "id": "phosphate enema",
+      "name": "Phosphate Enema",
+      "class": "Laxatives, rectal",
+      "indication": "Severe constipation, pre-procedure bowel clearance (when other methods ineffective)"
+    },
+    {
+      "id": "phytomenadione",
+      "name": "Phytomenadione (Vitamin K1)",
+      "class": "Vitamins",
+      "indication": "Warfarin reversal, vitamin K deficiency, newborn haemorrhagic disease prophylaxis"
+    },
+    {
+      "id": "pioglitazone",
+      "name": "Pioglitazone",
+      "class": "Thiazolidinediones",
+      "indication": "Type 2 diabetes as monotherapy or combination therapy"
+    },
+    {
+      "id": "tazobactam",
+      "name": "Piperacillin with Tazobactam (Tazocin)",
+      "class": "Penicillins, antipseudomonal",
+      "indication": "Hospital-acquired pneumonia, neutropenic sepsis, intra-abdominal infections, severe UTI/pyelonephritis"
+    },
+    {
+      "id": "piperacillin-tazobactam",
+      "name": "Piperacillin–tazobactam",
+      "class": "Penicillin/β-lactamase inhibitor combination (broad-spectrum)",
+      "indication": "Severe healthcare-associated infections, intra-abdominal sepsis, neutropenic sepsis and other indications per local policy"
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "class": "Triazole antifungal",
+      "indication": "Invasive fungal infections"
+    },
+    {
+      "id": "potassium-chloride",
+      "name": "Potassium Chloride (KCl)",
+      "class": "Electrolyte replacement",
+      "indication": "Hypokalaemia replacement and prevention"
+    },
+    {
+      "id": "pramipexole",
+      "name": "Pramipexole",
+      "class": "Dopaminergic drugs - dopamine agonist",
+      "indication": "Parkinson\\"
+    },
+    {
+      "id": "prasugrel",
+      "name": "Prasugrel",
+      "class": "Antiplatelet - irreversible P2Y12 inhibitor",
+      "indication": "ACS patients undergoing PCI (per cardiology guidance)"
+    },
+    {
+      "id": "pravastatin",
+      "name": "Pravastatin",
+      "class": "Statin",
+      "indication": "Hyperlipidaemia, cardiovascular risk reduction where appropriate"
+    },
+    {
+      "id": "prednisolone",
+      "name": "Prednisolone",
+      "class": "Corticosteroid (glucocorticoid)",
+      "indication": "Asthma, COPD exacerbation, inflammatory conditions"
+    },
+    {
+      "id": "pregabalin",
+      "name": "Pregabalin",
+      "class": "Gabapentinoids",
+      "indication": "Neuropathic pain (diabetic neuropathy, postherpetic neuralgia), adjunctive therapy for partial seizures, generalized anxiety disorder (licensed in some countries)"
+    },
+    {
+      "id": "prochlorperazine",
+      "name": "Prochlorperazine",
+      "class": "Phenothiazine antiemetic/antipsychotic",
+      "indication": "Severe nausea and vomiting, vertigo-associated nausea, migraine-related nausea (short courses)"
+    },
+    {
+      "id": "promethazine",
+      "name": "Promethazine",
+      "class": "Antihistamine H1-receptor antagonist (sedating)",
+      "indication": "Allergic conditions, motion sickness, short-term insomnia, nausea/vomiting"
+    },
+    {
+      "id": "propofol",
+      "name": "Propofol",
+      "class": "General Anaesthetic (Phenolic compound)",
+      "indication": "General anaesthesia induction/maintenance, ICU sedation, procedural sedation"
+    },
+    {
+      "id": "propranolol",
+      "name": "Propranolol",
+      "class": "Non-selective beta-blocker",
+      "indication": "Hypertension, angina, arrhythmias, migraine prophylaxis, essential tremor"
+    },
+    {
+      "id": "propylthiouracil",
+      "name": "Propylthiouracil (PTU)",
+      "class": "Antithyroid drug",
+      "indication": "Hyperthyroidism, thyroid storm"
+    },
+    {
+      "id": "prothrombin-concentrate",
+      "name": "Prothrombin complex concentrate (PCC)",
+      "class": "Coagulation factor concentrate",
+      "indication": "Rapid warfarin reversal"
+    },
+    {
+      "id": "pyrazinamide",
+      "name": "Pyrazinamide",
+      "class": "Antitubercular",
+      "indication": "TB"
+    },
+    {
+      "id": "pyridostigmine",
+      "name": "Pyridostigmine",
+      "class": "Acetylcholinesterase inhibitors",
+      "indication": "Myasthenia gravis, reversal of non-depolarising muscle relaxants"
+    },
+    {
+      "id": "quetiapine",
+      "name": "Quetiapine",
+      "class": "Antipsychotics, second-generation (atypical)",
+      "indication": "Schizophrenia, bipolar disorder, adjunctive treatment in depression"
+    },
+    {
+      "id": "quinine",
+      "name": "Quinine",
+      "class": "Quinine",
+      "indication": "Complicated malaria, nocturnal leg cramps (second-line)"
+    },
+    {
+      "id": "rabeprazole",
+      "name": "Rabeprazole",
+      "class": "PPI",
+      "indication": "GORD, PUD"
+    },
+    {
+      "id": "ramipril",
+      "name": "Ramipril",
+      "class": "Angiotensin-converting enzyme (ACE) inhibitors",
+      "indication": "Hypertension, heart failure, post-MI, diabetic nephropathy, primary prevention in high CV risk"
+    },
+    {
+      "id": "ranitidine",
+      "name": "Ranitidine",
+      "class": "H2-receptor antagonist",
+      "indication": "GORD, peptic ulcer disease, stress ulcer prophylaxis"
+    },
+    {
+      "id": "rifampicin",
+      "name": "Rifampicin",
+      "class": "Rifamycin antibiotic",
+      "indication": "TB (part of multi-drug regimens)"
+    },
+    {
+      "id": "risedronate",
+      "name": "Risedronate",
+      "class": "Bisphosphonates",
+      "indication": "Osteoporosis, Paget\\"
+    },
+    {
+      "id": "risperidone",
+      "name": "Risperidone",
+      "class": "Atypical antipsychotics",
+      "indication": "Schizophrenia, bipolar mania, behavioural disturbance in dementia (short-term)"
+    },
+    {
+      "id": "rituximab",
+      "name": "Rituximab",
+      "class": "Monoclonal antibodies (Anti-CD20)",
+      "indication": "Non-Hodgkin lymphoma, CLL, rheumatoid arthritis, vasculitis (GPA, MPA), pemphigus"
+    },
+    {
+      "id": "rivaroxaban",
+      "name": "Rivaroxaban",
+      "class": "Direct oral anticoagulant (Factor Xa inhibitor)",
+      "indication": "Non-valvular AF stroke prevention; treatment and secondary prevention of DVT/PE; VTE prophylaxis after hip/knee replacement"
+    },
+    {
+      "id": "rivastigmine",
+      "name": "Rivastigmine",
+      "class": "Acetylcholinesterase inhibitors",
+      "indication": "Mild-moderate Alzheimer\\"
+    },
+    {
+      "id": "ropinirole",
+      "name": "Ropinirole",
+      "class": "Dopaminergic drugs - dopamine agonist",
+      "indication": "Parkinson\\"
+    },
+    {
+      "id": "rosuvastatin",
+      "name": "Rosuvastatin",
+      "class": "Statins",
+      "indication": "Primary and secondary prevention of cardiovascular disease, hypercholesterolaemia"
+    },
+    {
+      "id": "sacubitril-valsartan",
+      "name": "Sacubitril-Valsartan (Entresto)",
+      "class": "Angiotensin receptor-neprilysin inhibitor (ARNI)",
+      "indication": "Chronic heart failure with reduced ejection fraction (HFrEF)"
+    },
+    {
+      "id": "salbutamol",
+      "name": "Salbutamol",
+      "class": "Short-acting β2-agonist (SABA)",
+      "indication": "Asthma, COPD, hyperkalaemia (nebulised)"
+    },
+    {
+      "id": "salbutamol-nebulised",
+      "name": "Salbutamol Nebuliser Solution",
+      "class": "Short-acting β2-agonist (nebulised)",
+      "indication": "Acute asthma/COPD exacerbation, severe bronchospasm, hyperkalemia (with insulin-dextrose)"
+    },
+    {
+      "id": "salmeterol",
+      "name": "Salmeterol",
+      "class": "Long-acting β2-agonist (LABA)",
+      "indication": "Asthma (step 3+ therapy with ICS), COPD (combination inhalers)"
+    },
+    {
+      "id": "saxagliptin",
+      "name": "Saxagliptin",
+      "class": "DPP-4 inhibitor",
+      "indication": "T2DM"
+    },
+    {
+      "id": "semaglutide",
+      "name": "Semaglutide",
+      "class": "GLP-1 receptor agonist",
+      "indication": "Type 2 diabetes; weight management in select settings"
+    },
+    {
+      "id": "senna",
+      "name": "Senna",
+      "class": "Stimulant laxative",
+      "indication": "Constipation, bowel preparation, opioid-induced constipation"
+    },
+    {
+      "id": "sertraline",
+      "name": "Sertraline",
+      "class": "Selective serotonin reuptake inhibitor (SSRI)",
+      "indication": "Depression, panic disorder, OCD, PTSD, social anxiety disorder"
+    },
+    {
+      "id": "sevoflurane",
+      "name": "Sevoflurane",
+      "class": "Anaesthetics, general (Volatile)",
+      "indication": "General anaesthesia (induction and maintenance)"
+    },
+    {
+      "id": "sildenafil",
+      "name": "Sildenafil",
+      "class": "Phosphodiesterase type 5 inhibitor",
+      "indication": "Erectile dysfunction, pulmonary arterial hypertension"
+    },
+    {
+      "id": "simvastatin",
+      "name": "Simvastatin",
+      "class": "Statins",
+      "indication": "Hypercholesterolaemia, cardiovascular disease prevention"
+    },
+    {
+      "id": "sitagliptin",
+      "name": "Sitagliptin",
+      "class": "Dipeptidylpeptidase-4 inhibitors",
+      "indication": "Type 2 diabetes as monotherapy or combination therapy"
+    },
+    {
+      "id": "sodium bicarbonate",
+      "name": "Sodium Bicarbonate",
+      "class": "Antacids / Alkalinizing agent",
+      "indication": "Antacid (short-term), metabolic acidosis, alkalinize urine (uric acid stones, salicylate/methotrexate OD)"
+    },
+    {
+      "id": "sodium citrate",
+      "name": "Sodium Citrate Enema (Micralax)",
+      "class": "Laxatives, rectal",
+      "indication": "Acute constipation, pre-procedure bowel evacuation"
+    },
+    {
+      "id": "sodium-picosulfate",
+      "name": "Sodium picosulfate",
+      "class": "Stimulant laxative (prodrug)",
+      "indication": "Constipation, bowel prep"
+    },
+    {
+      "id": "sodium-valproate",
+      "name": "Sodium Valproate",
+      "class": "Antiepileptic/mood stabiliser",
+      "indication": "Epilepsy (generalised seizures), bipolar disorder, migraine prophylaxis (not in women of childbearing potential)"
+    },
+    {
+      "id": "sodium valproate",
+      "name": "Sodium Valproate",
+      "class": "Valproate (Antiepileptic)",
+      "indication": "Generalised and focal epilepsy, bipolar disorder, migraine prophylaxis"
+    },
+    {
+      "id": "solifenacin",
+      "name": "Solifenacin",
+      "class": "Antimuscarinic (anticholinergic)",
+      "indication": "Urge incontinence, overactive bladder syndrome"
+    },
+    {
+      "id": "soluble insulin",
+      "name": "Soluble Insulin (Actrapid, Humulin S)",
+      "class": "Insulin - short-acting",
+      "indication": "Type 1/2 diabetes, DKA, hyperkalaemia (with glucose), HHS"
+    },
+    {
+      "id": "spironolactone",
+      "name": "Spironolactone",
+      "class": "Aldosterone antagonists",
+      "indication": "Heart failure (with ACE-I + β-blocker), primary hyperaldosteronism, ascites"
+    },
+    {
+      "id": "streptokinase",
+      "name": "Streptokinase",
+      "class": "Thrombolytic (Emergency drug)",
+      "indication": "STEMI (where PCI unavailable), massive PE, DVT"
+    },
+    {
+      "id": "sulfasalazine",
+      "name": "Sulfasalazine",
+      "class": "Disease-modifying antirheumatic drugs",
+      "indication": "Rheumatoid arthritis, ulcerative colitis, Crohn disease"
+    },
+    {
+      "id": "sumatriptan",
+      "name": "Sumatriptan",
+      "class": "Serotonin 5-HT1-receptor agonists (triptans)",
+      "indication": "Acute migraine treatment, cluster headache (subcutaneous)"
+    },
+    {
+      "id": "tadalafil",
+      "name": "Tadalafil",
+      "class": "Phosphodiesterase type-5 inhibitors",
+      "indication": "Erectile dysfunction, pulmonary arterial hypertension, benign prostatic hyperplasia"
+    },
+    {
+      "id": "tamoxifen",
+      "name": "Tamoxifen",
+      "class": "Selective oestrogen receptor modulator (SERM)",
+      "indication": "Breast cancer"
+    },
+    {
+      "id": "tamsulosin",
+      "name": "Tamsulosin",
+      "class": "Selective α1A-blocker",
+      "indication": "Lower urinary tract symptoms associated with BPH, ureteric stone expulsion (off-label)"
+    },
+    {
+      "id": "teicoplanin",
+      "name": "Teicoplanin",
+      "class": "Glycopeptide antibiotic",
+      "indication": "Gram-positive infections including MRSA and serious staphylococcal infections"
+    },
+    {
+      "id": "telmisartan",
+      "name": "Telmisartan",
+      "class": "Angiotensin II receptor blocker (ARB)",
+      "indication": "Hypertension, cardiovascular risk reduction in high-risk patients"
+    },
+    {
+      "id": "tenofovir",
+      "name": "Tenofovir Disoproxil (TDF)",
+      "class": "Antiviral drugs - Nucleotide reverse transcriptase inhibitor",
+      "indication": "HIV infection (combination therapy), chronic hepatitis B, HIV pre-exposure prophylaxis (PrEP)"
+    },
+    {
+      "id": "theophylline",
+      "name": "Theophylline",
+      "class": "Methylxanthine bronchodilator",
+      "indication": "Asthma/COPD (when other treatments inadequate), acute severe asthma"
+    },
+    {
+      "id": "thiamine",
+      "name": "Thiamine (B1) / Pabrinex",
+      "class": "Vitamin / metabolic therapy",
+      "indication": "Prevention/treatment of Wernicke encephalopathy; thiamine deficiency"
+    },
+    {
+      "id": "thiopental",
+      "name": "Thiopental (Thiopentone)",
+      "class": "Anaesthetics, general (Barbiturate)",
+      "indication": "Anaesthesia induction (rarely used), refractory status epilepticus, raised ICP reduction"
+    },
+    {
+      "id": "ticagrelor",
+      "name": "Ticagrelor",
+      "class": "Antiplatelet - P2Y12 receptor antagonist (reversible)",
+      "indication": "Acute coronary syndrome (with or without PCI) and secondary prevention when indicated"
+    },
+    {
+      "id": "tigecycline",
+      "name": "Tigecycline",
+      "class": "Glycylcycline antibiotic",
+      "indication": "Complicated intra-abdominal infections, complicated skin/soft tissue infections, some MDR organisms when options limited"
+    },
+    {
+      "id": "tiotropium",
+      "name": "Tiotropium",
+      "class": "Antimuscarinics, bronchodilators",
+      "indication": "COPD maintenance therapy, add-on to bronchodilators"
+    },
+    {
+      "id": "tolterodine",
+      "name": "Tolterodine",
+      "class": "Antimuscarinics, genitourinary",
+      "indication": "Overactive bladder, urge incontinence"
+    },
+    {
+      "id": "topiramate",
+      "name": "Topiramate",
+      "class": "Antiepileptic drugs",
+      "indication": "Epilepsy, migraine prophylaxis, bipolar disorder (unlicensed)"
+    },
+    {
+      "id": "tramadol",
+      "name": "Tramadol",
+      "class": "Opioids",
+      "indication": "Moderate pain when paracetamol/NSAIDs insufficient"
+    },
+    {
+      "id": "trametinib",
+      "name": "Trametinib",
+      "class": "MEK inhibitor (targeted anticancer therapy)",
+      "indication": "Metastatic melanoma and other BRAF/MEK pathway-driven malignancies as per oncology guidance"
+    },
+    {
+      "id": "tranexamic-acid",
+      "name": "Tranexamic Acid",
+      "class": "Antifibrinolytic",
+      "indication": "Major bleeding, trauma, menorrhagia, hereditary angioedema"
+    },
+    {
+      "id": "tranexamic acid",
+      "name": "Tranexamic Acid",
+      "class": "Antifibrinolytic",
+      "indication": "Trauma haemorrhage, menorrhagia, dental procedures in haemophilia, epistaxis, post-partum haemorrhage"
+    },
+    {
+      "id": "trazodone",
+      "name": "Trazodone",
+      "class": "Antidepressants, tricyclics and related drugs",
+      "indication": "Depression (especially with anxiety/insomnia), insomnia (off-label low dose)"
+    },
+    {
+      "id": "trimethoprim",
+      "name": "Trimethoprim",
+      "class": "Folate synthesis inhibitor antibiotic",
+      "indication": "UTI treatment and prophylaxis, pneumocystis pneumonia prophylaxis"
+    },
+    {
+      "id": "umeclidinium",
+      "name": "Umeclidinium",
+      "class": "Antimuscarinics, bronchodilators (LAMA)",
+      "indication": "COPD maintenance"
+    },
+    {
+      "id": "unfractionated heparin",
+      "name": "Unfractionated Heparin (UFH)",
+      "class": "Heparins",
+      "indication": "VTE treatment/prophylaxis, ACS, AF, during dialysis, cardiac surgery, when rapid reversal capability needed"
+    },
+    {
+      "id": "ursodeoxycholic-acid",
+      "name": "Ursodeoxycholic acid (UDCA)",
+      "class": "Bile acid",
+      "indication": "Primary biliary cholangitis, cholestasis"
+    },
+    {
+      "id": "valproic acid",
+      "name": "Valproic Acid (Valproate Semisodium)",
+      "class": "Valproate",
+      "indication": "As sodium valproate"
+    },
+    {
+      "id": "valsartan",
+      "name": "Valsartan",
+      "class": "Angiotensin receptor blocker (ARB)",
+      "indication": "Hypertension, heart failure (where indicated)"
+    },
+    {
+      "id": "vancomycin",
+      "name": "Vancomycin",
+      "class": "Glycopeptide antibiotic",
+      "indication": "Serious Gram-positive infections including MRSA, endocarditis, bone and joint infections; oral vancomycin for C. difficile colitis"
+    },
+    {
+      "id": "vardenafil",
+      "name": "Vardenafil",
+      "class": "Phosphodiesterase type-5 inhibitors",
+      "indication": "Erectile dysfunction"
+    },
+    {
+      "id": "venlafaxine",
+      "name": "Venlafaxine",
+      "class": "Antidepressants, tetracyclic and serotonin-noradrenaline reuptake inhibitors",
+      "indication": "Depression, generalized anxiety disorder, social anxiety disorder, panic disorder"
+    },
+    {
+      "id": "verapamil",
+      "name": "Verapamil",
+      "class": "Calcium channel blockers",
+      "indication": "Angina, hypertension, SVT, AF rate control, cluster headache prophylaxis"
+    },
+    {
+      "id": "vitamin-k",
+      "name": "Vitamin K (phytonadione)",
+      "class": "Fat-soluble vitamin / antidote",
+      "indication": "Reversal of vitamin K antagonist (warfarin) effects, neonatal prophylaxis"
+    },
+    {
+      "id": "voriconazole",
+      "name": "Voriconazole",
+      "class": "Triazole antifungal",
+      "indication": "Serious invasive fungal infections"
+    },
+    {
+      "id": "warfarin",
+      "name": "Warfarin",
+      "class": "Vitamin K antagonist (oral anticoagulant)",
+      "indication": "Stroke prevention in AF (where DOACs unsuitable), VTE treatment and secondary prevention, mechanical prosthetic valves (depending on type)"
+    },
+    {
+      "id": "white soft paraffin",
+      "name": "White Soft Paraffin",
+      "class": "Emollients",
+      "indication": "Dry skin, eczema, psoriasis, ichthyosis"
+    },
+    {
+      "id": "zafirlukast",
+      "name": "Zafirlukast",
+      "class": "Leukotriene receptor antagonists",
+      "indication": "Asthma prophylaxis (add-on), exercise-induced asthma"
+    },
+    {
+      "id": "zoledronic acid",
+      "name": "Zoledronic Acid",
+      "class": "Bisphosphonates",
+      "indication": "Osteoporosis, Paget\\"
+    },
+    {
+      "id": "zolmitriptan",
+      "name": "Zolmitriptan",
+      "class": "Triptans (5-HT1B/1D agonists)",
+      "indication": "Acute migraine, cluster headache"
+    },
+    {
+      "id": "zolpidem",
+      "name": "Zolpidem",
+      "class": "Z-drugs (Hypnotics)",
+      "indication": "Short-term insomnia"
+    },
+    {
+      "id": "zopiclone",
+      "name": "Zopiclone",
+      "class": "Z-drugs (Hypnotics)",
+      "indication": "Short-term insomnia (2-4 weeks max)"
+    }
+  ],
+  "count": 381,
+  "generated": "Drug index for MLA-V2"
+}

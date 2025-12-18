@@ -1,0 +1,14 @@
+{
+  "name": "Quetiapine",
+  "class": "Antipsychotics, second-generation (atypical)",
+  "mechanism": "Dopamine D2 and serotonin 5-HT2A receptor antagonist",
+  "dosing": "Schizophrenia: Start 25mg BD, increase to 300-450mg daily. Bipolar: 300-800mg daily",
+  "contraindications": "Comatose states, severe CNS depression",
+  "interactions": "Alcohol (↑ sedation), CYP3A4 inhibitors (↑ levels), phenytoin (↓ levels)",
+  "monitoring": "Blood glucose, lipids, weight, prolactin, ECG, movement disorders",
+  "pregnancy": "Use only if essential - extrapyramidal symptoms in neonate possible",
+  "sideEffects": "Sedation, weight gain, diabetes, postural hypotension, dry mouth, constipation",
+  "pharmacokinetics": "Half-life: 6h (XR: 7h), extensive hepatic metabolism",
+  "clinicalPearls": "Lower EPS risk than typical antipsychotics. Significant metabolic effects. Take with food",
+  "indication": "Schizophrenia, bipolar disorder, adjunctive treatment in depression"
+}

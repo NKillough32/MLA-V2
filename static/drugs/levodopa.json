@@ -1,0 +1,14 @@
+{
+  "name": "Levodopa/Carbidopa (Co-careldopa)",
+  "class": "Dopaminergic drug for Parkinson\\",
+  "mechanism": "Levodopa converted to dopamine in brain; carbidopa prevents peripheral conversion",
+  "dosing": "Start 62.5mg (50mg levodopa + 12.5mg carbidopa) TDS, increase gradually",
+  "contraindications": "Narrow-angle glaucoma, melanoma, MAOIs",
+  "interactions": "MAOIs (hypertensive crisis), antipsychotics (antagonism), iron (↓ absorption)",
+  "monitoring": "Motor symptoms, dyskinesias, psychiatric symptoms, blood pressure",
+  "pregnancy": "Use only if essential - limited safety data",
+  "sideEffects": "Nausea, dyskinesias, psychiatric symptoms, postural hypotension",
+  "pharmacokinetics": "Short half-life: 1-3h, extensive first-pass metabolism",
+  "clinicalPearls": "Take 30min before food. Wearing-off effects develop over time. Protein meals reduce absorption",
+  "indication": "Parkinson\\"
+}

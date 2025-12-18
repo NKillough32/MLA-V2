@@ -1,0 +1,14 @@
+{
+  "name": "Atazanavir",
+  "class": "Antiviral drugs - Protease inhibitor",
+  "mechanism": "Inhibits HIV protease, preventing viral maturation",
+  "dosing": "300mg OD with ritonavir 100mg (boosted regimen). Take with food",
+  "contraindications": "Severe hepatic impairment, concurrent rifampicin, PPIs (↓ absorption)",
+  "interactions": "Multiple - inhibits CYP3A4 and UGT1A1. Avoid PPIs. ↑ statins, CCBs. Rifampicin (contraindicated)",
+  "monitoring": "Viral load, CD4 count, bilirubin (unconjugated hyperbilirubinaemia common), glucose, lipids, renal function",
+  "pregnancy": "Use with caution - specialist advice",
+  "sideEffects": "Jaundice (unconjugated hyperbilirubinaemia - benign but cosmetic), nausea, nephrolithiasis, PR interval prolongation, hyperglycaemia",
+  "pharmacokinetics": "Oral with food, boosted with ritonavir, hepatic metabolism",
+  "clinicalPearls": "Boosted PI. Causes benign jaundice (Gilbert-like) in ~10% - warn patients about yellow eyes/skin. Cannot use with PPIs (↓ absorption - acid needed). Less lipid disturbance than other PIs. Once daily dosing. Nephrolithiasis risk",
+  "indication": "HIV infection (combination therapy)"
+}

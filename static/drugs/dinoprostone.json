@@ -1,0 +1,14 @@
+{
+  "name": "Dinoprostone (Prostaglandin E2)",
+  "class": "Prostaglandins",
+  "mechanism": "Prostaglandin E2 - ripens cervix and induces uterine contractions",
+  "dosing": "Vaginal gel/pessary: 1-2mg. Vaginal tablet: 3mg (repeat after 6h if needed)",
+  "contraindications": "Unexplained vaginal bleeding, placenta praevia, fetal distress, cephalopelvic disproportion, previous C-section",
+  "interactions": "Oxytocin (delay oxytocin for 6h after dinoprostone)",
+  "monitoring": "Fetal heart rate, uterine activity, vaginal bleeding, progression of labour",
+  "pregnancy": "Indicated for labour induction",
+  "sideEffects": "Uterine hyperstimulation, fetal distress, nausea, vomiting, diarrhoea, fever, vaginal bleeding",
+  "pharmacokinetics": "Vaginal administration, local and systemic effects",
+  "clinicalPearls": "For cervical ripening and labour induction. Used when Bishop score unfavourable. Remove pessary if hyperstimulation occurs. Delay oxytocin infusion for 6h after last dose. Can cause fever (not necessarily infection)",
+  "indication": "Induction of labour, cervical ripening"
+}

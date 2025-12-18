@@ -1,0 +1,14 @@
+{
+  "name": "Fluticasone Nasal Spray",
+  "class": "Corticosteroid (intranasal)",
+  "mechanism": "Topical corticosteroid reducing nasal inflammation",
+  "dosing": "Adults: 2 sprays each nostril OD (100mcg/nostril). Children: 1 spray each nostril OD",
+  "contraindications": "Untreated nasal infection, recent nasal surgery/trauma",
+  "interactions": "CYP3A4 inhibitors (ritonavir - may increase systemic exposure)",
+  "monitoring": "Nasal symptoms, growth in children (long-term use), nasal septum",
+  "pregnancy": "Safe - minimal systemic absorption",
+  "sideEffects": "Epistaxis, nasal irritation, headache, rarely septal perforation",
+  "pharmacokinetics": "Minimal systemic absorption, local effect",
+  "clinicalPearls": "Very commonly prescribed. OTC available. Takes few days for full effect. Shake before use",
+  "indication": "Allergic rhinitis, nasal polyps"
+}

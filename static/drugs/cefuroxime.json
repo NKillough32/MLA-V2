@@ -1,0 +1,14 @@
+{
+  "name": "Cefuroxime",
+  "class": "Second-generation cephalosporin",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "IV: 750mg-1.5g BD depending on infection severity. PO (axetil): 250-500mg BD",
+  "contraindications": "Severe β-lactam allergy",
+  "interactions": "May affect warfarin (monitor INR), probenecid (↑ levels)",
+  "monitoring": "Renal function for dose adjustment, signs of hypersensitivity",
+  "pregnancy": "Generally considered safe in pregnancy when indicated",
+  "sideEffects": "GI upset, rash, allergic reactions, C. difficile-associated diarrhoea",
+  "pharmacokinetics": "Good oral absorption (axetil prodrug), renal excretion",
+  "clinicalPearls": "Good for respiratory tract infections and some soft tissue infections; check local susceptibility",
+  "indication": "Respiratory tract infections, pyelonephritis (IV), skin/soft tissue infections"
+}

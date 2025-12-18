@@ -1,0 +1,14 @@
+{
+  "name": "Pioglitazone",
+  "class": "Thiazolidinediones",
+  "mechanism": "PPAR-γ agonist, improves insulin sensitivity in muscle and adipose tissue",
+  "dosing": "Start 15-30mg daily, max 45mg daily. Take with or without food",
+  "contraindications": "Heart failure, bladder cancer history, severe hepatic impairment",
+  "interactions": "Insulin (↑ hypoglycaemia, fluid retention), gemfibrozil (↑ levels)",
+  "monitoring": "Weight, signs of heart failure, liver function, bone density, bladder symptoms",
+  "pregnancy": "Avoid - limited safety data, insulin preferred",
+  "sideEffects": "Weight gain, fluid retention, heart failure, bone fractures, bladder cancer risk",
+  "pharmacokinetics": "Half-life: 3-7h (active metabolites 16-24h), hepatic metabolism",
+  "clinicalPearls": "May take 2-3 months for full effect. Monitor for heart failure. Avoid in osteoporosis",
+  "indication": "Type 2 diabetes as monotherapy or combination therapy"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Omeprazole",
+  "class": "Proton pump inhibitor (PPI)",
+  "mechanism": "Irreversibly inhibits gastric H+/K+-ATPase (proton pump)",
+  "dosing": "GORD: 20mg daily. Peptic ulcer: 20-40mg daily. H.pylori: 20mg BD with antibiotics",
+  "contraindications": "Hypersensitivity to PPIs",
+  "interactions": "Clopidogrel (↓ efficacy), warfarin (↑ INR), digoxin (↑ levels)",
+  "monitoring": "Vitamin B12, magnesium with long-term use. Review need regularly",
+  "pregnancy": "Generally safe - limited human data",
+  "sideEffects": "Headache, GI upset, increased infection risk, hypomagnesaemia (long-term)",
+  "pharmacokinetics": "Onset: 1h, Peak: 2h, Duration: 72h, CYP2C19 metabolism",
+  "clinicalPearls": "First PPI available OTC in UK. Take 30min before food",
+  "indication": "GORD, peptic ulcer disease, H.pylori eradication"
+}

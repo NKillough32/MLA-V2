@@ -1,0 +1,13 @@
+{
+  "name": "Clonazepam",
+  "class": "Benzodiazepine",
+  "mechanism": "Enhances GABA-A receptor activity",
+  "dosing": "0.5-2mg daily in divided doses (depending on indication)",
+  "contraindications": "Respiratory depression, severe hepatic impairment",
+  "interactions": "CNS depressants",
+  "monitoring": "Sedation, dependence",
+  "pregnancy": "Use with caution",
+  "sideEffects": "Sedation, dependence, withdrawal risk",
+  "clinicalPearls": "Used for panic disorder, some seizure types",
+  "indication": "Seizures, anxiety"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Adalimumab",
+  "class": "Monoclonal antibodies (Anti-TNF)",
+  "mechanism": "Fully human monoclonal antibody against TNF-alpha, reducing inflammation",
+  "dosing": "Rheumatoid arthritis: 40mg SC every 2 weeks. Crohn\\",
+  "contraindications": "Active infection, TB, severe heart failure, demyelinating disease",
+  "interactions": "Other immunosuppressants (↑ infection risk), live vaccines (avoid)",
+  "monitoring": "TB screening pre-treatment, FBC, LFTs, infection signs",
+  "pregnancy": "Use only if essential - limited data but other anti-TNFs used",
+  "sideEffects": "Injection site reactions, infections, reactivation of TB/hepatitis B, malignancy risk, lupus-like syndrome",
+  "pharmacokinetics": "SC administration, half-life ~2 weeks",
+  "clinicalPearls": "Screen for latent TB before starting. Counsel on infection risk. Stop if serious infection. Biosimilars widely available",
+  "indication": "Rheumatoid arthritis, Crohn\\"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Adenosine",
+  "class": "Antiarrhythmic (Purine nucleoside)",
+  "mechanism": "Blocks AV node conduction by activating adenosine A1 receptors",
+  "dosing": "Adult: rapid IV bolus 6mg via a large vein (immediate saline flush), if ineffective give 12mg then 18mg as per Resuscitation Council (tachycardia) guidance. Pediatric: 0.1mg/kg (see paediatric guidance)",
+  "contraindications": "Severe asthma (relative contraindication because of bronchospasm risk), COPD, 2nd/3rd degree heart block, sick sinus syndrome, WPW with AF",
+  "interactions": "Dipyridamole (↑ effect), theophylline (↓ effect), carbamazepine (↑ heart block)",
+  "monitoring": "Continuous ECG, blood pressure, respiratory status",
+  "pregnancy": "Use only if maternal benefit outweighs fetal risk; severe maternal asthma increases risk of bronchospasm. Refer to UK resuscitation guidance and seek specialist advice in pregnancy",
+  "sideEffects": "Chest pain, dyspnea, flushing, transient AV block, bronchospasm",
+  "pharmacokinetics": "Very short half-life <10 seconds. Rapid cellular uptake and metabolism",
+  "clinicalPearls": "Give fast IV push followed by saline flush. Warn patient of chest discomfort",
+  "indication": "SVT termination, diagnostic test for broad complex tachycardia"
+}

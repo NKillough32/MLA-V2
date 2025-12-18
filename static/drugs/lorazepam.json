@@ -1,0 +1,14 @@
+{
+  "name": "Lorazepam",
+  "class": "Short-acting benzodiazepine",
+  "mechanism": "Enhances GABA-A receptor activity, increasing neuronal inhibition",
+  "dosing": "Anxiety: 1-4mg daily in divided doses. Status epilepticus: 4mg IV slowly",
+  "contraindications": "Respiratory depression, severe hepatic impairment, myasthenia gravis",
+  "interactions": "Alcohol (↑ sedation), opioids (respiratory depression), phenytoin",
+  "monitoring": "Respiratory function, sedation level, signs of dependence",
+  "pregnancy": "Avoid - risk of floppy baby syndrome, neonatal withdrawal",
+  "sideEffects": "Sedation, confusion (elderly), dependence, respiratory depression",
+  "pharmacokinetics": "Intermediate half-life: 10-20h, conjugated (safer in elderly)",
+  "clinicalPearls": "Shorter-acting than diazepam. Less affected by hepatic impairment. High dependence risk",
+  "indication": "Short-term anxiety, status epilepticus, premedication"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Glyceryl Trinitrate (GTN)",
+  "class": "Nitrates",
+  "mechanism": "Releases nitric oxide causing smooth muscle relaxation and vasodilation",
+  "dosing": "Angina: 400-800mcg SL PRN. IV: 10-200mcg/min. Topical: 2.5-5mg patches daily",
+  "contraindications": "Severe aortic stenosis, hypertrophic cardiomyopathy, PDE5 inhibitor use",
+  "interactions": "Sildenafil/PDE5 inhibitors (severe hypotension), alcohol (↑ hypotension)",
+  "monitoring": "Blood pressure, heart rate, headache severity, nitrate tolerance",
+  "pregnancy": "Use if benefits outweigh risks. Limited data but generally considered safe",
+  "sideEffects": "Headache, hypotension, flushing, dizziness, nitrate tolerance",
+  "pharmacokinetics": "SL: onset 2-5min, duration 30min. Patches: onset 30min, duration 12-14h",
+  "clinicalPearls": "Nitrate-free period needed to prevent tolerance. Keep tablets in original container",
+  "indication": "Angina, heart failure, hypertensive emergency, anal fissure"
+}

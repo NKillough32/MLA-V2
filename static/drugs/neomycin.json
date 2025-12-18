@@ -1,0 +1,14 @@
+{
+  "name": "Neomycin",
+  "class": "Aminoglycosides",
+  "mechanism": "Aminoglycoside - inhibits bacterial protein synthesis",
+  "dosing": "Hepatic encephalopathy: 4-6g daily in divided doses PO. Bowel prep: 1g hourly for 4 doses then 6-hourly. Topical: as cream/ointment",
+  "contraindications": "Myasthenia gravis, intestinal obstruction",
+  "interactions": "Other ototoxic/nephrotoxic drugs (avoid systemic use)",
+  "monitoring": "Minimal absorption from GI tract but monitor for malabsorption, superinfection",
+  "pregnancy": "Avoid systemic use. Topical use acceptable",
+  "sideEffects": "GI upset, malabsorption (prolonged use), ototoxicity/nephrotoxicity (minimal with oral but systemic if gut damaged)",
+  "pharmacokinetics": "Poorly absorbed orally (topical GI effect)",
+  "clinicalPearls": "Oral form poorly absorbed - used to reduce ammonia-producing gut bacteria in hepatic encephalopathy. Too toxic for systemic use. Prolonged use can cause malabsorption. Topical preparations common in combination with steroids",
+  "indication": "Hepatic encephalopathy, bowel preparation, topical skin infections"
+}

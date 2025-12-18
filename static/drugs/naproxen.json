@@ -1,0 +1,14 @@
+{
+  "name": "Naproxen",
+  "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+  "mechanism": "Non-selective COX inhibitor with longer half-life than other NSAIDs",
+  "dosing": "Adults: 250-500mg BD with food. Acute pain: 500mg initially, then 250mg TDS",
+  "contraindications": "Active peptic ulceration, severe heart failure, severe renal/hepatic impairment",
+  "interactions": "ACE inhibitors (↓ effect), warfarin (↑ bleeding), lithium (↑ toxicity)",
+  "monitoring": "Renal function, blood pressure, signs of GI bleeding, cardiovascular events",
+  "pregnancy": "Avoid in 3rd trimester. Use lowest dose for shortest time if essential",
+  "sideEffects": "GI bleeding, cardiovascular events, renal impairment, fluid retention",
+  "pharmacokinetics": "Good oral absorption, Half-life: 12-15h, hepatic metabolism",
+  "clinicalPearls": "Longer half-life allows BD dosing. Lower GI toxicity than some NSAIDs",
+  "indication": "Inflammatory conditions, musculoskeletal pain, dysmenorrhoea, acute gout"
+}

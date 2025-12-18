@@ -1,0 +1,14 @@
+{
+  "name": "Adcal-D3 (Calcium Carbonate + Colecalciferol)",
+  "class": "Calcium and vitamin D supplement",
+  "mechanism": "Provides supplemental calcium (1500mg) and vitamin D3 (400IU) per 2 tablets",
+  "dosing": "1-2 tablets BD (chewable or dissolve)",
+  "contraindications": "Hypercalcaemia, hypercalciuria, renal calculi, severe renal impairment",
+  "interactions": "Bisphosphonates (separate by 2h), levothyroxine (separate by 4h), tetracyclines, iron",
+  "monitoring": "Serum calcium if long-term use, renal function",
+  "pregnancy": "Safe - calcium and vitamin D requirements increase in pregnancy",
+  "sideEffects": "Constipation, flatulence, nausea, hypercalcaemia (rare)",
+  "pharmacokinetics": "Calcium carbonate requires acid for absorption (take with food)",
+  "clinicalPearls": "Extremely commonly prescribed in UK. Chewable or dispersible. Take 2h away from bisphosphonates",
+  "indication": "Osteoporosis prevention/treatment adjunct, vitamin D deficiency, calcium supplementation"
+}

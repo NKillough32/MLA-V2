@@ -1,0 +1,13 @@
+{
+  "name": "Isosorbide dinitrate",
+  "class": "Nitrate (shorter-acting)",
+  "mechanism": "NO donor — venodilation and preload reduction",
+  "dosing": "Typical dosing varies by formulation and indication; follow product guidance",
+  "contraindications": "Concurrent PDE5 inhibitors, hypotension",
+  "interactions": "PDE5 inhibitors",
+  "monitoring": "BP",
+  "pregnancy": "Use if essential",
+  "sideEffects": "Headache, hypotension",
+  "clinicalPearls": "Used less commonly than ISMN for chronic management",
+  "indication": "Angina, acute heart failure symptom relief in some settings"
+}

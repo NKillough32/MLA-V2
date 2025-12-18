@@ -1,0 +1,14 @@
+{
+  "name": "Sodium Valproate",
+  "class": "Antiepileptic/mood stabiliser",
+  "mechanism": "Increases GABA levels, blocks voltage-gated sodium channels",
+  "dosing": "Epilepsy: start 600mg daily in divided doses, usual 1-2g daily. Bipolar: 750mg-2g daily",
+  "contraindications": "Pregnancy (teratogenic), liver disease, urea cycle disorders, mitochondrial disorders",
+  "interactions": "Lamotrigine (↑ levels), carbamazepine (enzyme induction), aspirin (↑ valproate)",
+  "monitoring": "LFTs, FBC (baseline and early), weight, pregnancy prevention programme for women",
+  "pregnancy": "CONTRAINDICATED - high teratogenicity and neurodevelopmental effects. Pregnancy Prevention Programme mandatory",
+  "sideEffects": "Weight gain, tremor, hair loss, hepatotoxicity, pancreatitis, thrombocytopenia",
+  "pharmacokinetics": "Highly protein bound, hepatic metabolism, half-life 9-18h",
+  "clinicalPearls": "Valproate Pregnancy Prevention Programme essential for women of childbearing potential. Annual risk acknowledgement form. Contraception mandatory",
+  "indication": "Epilepsy (generalised seizures), bipolar disorder, migraine prophylaxis (not in women of childbearing potential)"
+}

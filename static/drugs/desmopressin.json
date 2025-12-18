@@ -1,0 +1,14 @@
+{
+  "name": "Desmopressin",
+  "class": "Vasopressin analogue",
+  "mechanism": "Synthetic ADH analogue increasing water reabsorption and factor VIII/vWF release",
+  "dosing": "Diabetes insipidus: 10-40mcg intranasal BD or 100-200mcg PO TDS. Nocturnal enuresis: 200-400mcg PO at bedtime",
+  "contraindications": "Hyponatraemia, cardiac insufficiency, conditions with fluid overload",
+  "interactions": "Loop diuretics (↓ effect), tricyclics/NSAIDs (↑ hyponatraemia risk)",
+  "monitoring": "Serum sodium (especially elderly and first week), fluid balance, urine output",
+  "pregnancy": "Safe for diabetes insipidus - can be used in pregnancy",
+  "sideEffects": "Hyponatraemia (potentially severe), headache, nausea, fluid retention",
+  "pharmacokinetics": "Intranasal, oral or sublingual routes, half-life 3h",
+  "clinicalPearls": "Monitor sodium closely - hyponatraemia risk especially with oral route and elderly. Fluid restrict while using",
+  "indication": "Cranial diabetes insipidus, primary nocturnal enuresis (>7y), von Willebrand disease, mild haemophilia A"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Gliclazide",
+  "class": "Sulfonylurea",
+  "mechanism": "Stimulates insulin release from pancreatic β-cells by blocking K-ATP channels",
+  "dosing": "Standard release: 40-80mg daily with breakfast, max 320mg daily. MR: 30-120mg daily",
+  "contraindications": "Type 1 diabetes, ketoacidosis, severe renal/hepatic impairment",
+  "interactions": "Alcohol (↑ hypoglycaemia), β-blockers (mask hypoglycaemia), steroids (↑ glucose)",
+  "monitoring": "Blood glucose, HbA1c, weight, signs of hypoglycaemia",
+  "pregnancy": "Switch to insulin - crosses placenta",
+  "sideEffects": "Hypoglycaemia, weight gain, GI upset, skin reactions",
+  "pharmacokinetics": "Half-life: 10-20h, hepatic metabolism, renal excretion",
+  "clinicalPearls": "Second-line after metformin. Take with food. Lower hypoglycaemia risk than glibenclamide. Driving advice: inform DVLA if recurrent hypoglycaemia; provide hypoglycaemia education and arrange follow-up",
+  "indication": "Type 2 diabetes (when metformin contraindicated/not tolerated or as add-on)"
+}

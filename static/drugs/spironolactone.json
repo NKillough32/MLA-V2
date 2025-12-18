@@ -1,0 +1,14 @@
+{
+  "name": "Spironolactone",
+  "class": "Aldosterone antagonists",
+  "mechanism": "Competitive antagonist of aldosterone at mineralocorticoid receptors",
+  "dosing": "Heart failure: Start 25mg daily, max 50mg daily. Ascites: 100-400mg daily. Monitor K+ closely",
+  "contraindications": "Hyperkalaemia (>5.0mmol/L), severe renal impairment, Addison\\",
+  "interactions": "ACE inhibitors/ARBs (↑ hyperkalaemia), potassium supplements, trimethoprim",
+  "monitoring": "U&Es within 1 week, then monthly for 3 months, then 3-monthly. Gynaecomastia",
+  "pregnancy": "Avoid - feminisation of male fetus",
+  "sideEffects": "Hyperkalaemia, gynaecomastia, menstrual irregularities, GI upset",
+  "pharmacokinetics": "Half-life: 1-2 days (active metabolites), onset of action: 2-3 days",
+  "clinicalPearls": "K+-sparing effect. Check K+ before starting and monitor closely. Mortality benefit in heart failure",
+  "indication": "Heart failure (with ACE-I + β-blocker), primary hyperaldosteronism, ascites"
+}

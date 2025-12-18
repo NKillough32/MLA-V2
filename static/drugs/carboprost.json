@@ -1,0 +1,13 @@
+{
+  "name": "Carboprost",
+  "class": "Prostaglandin F2α analogue (uterotonic)",
+  "mechanism": "Stimulates uterine contraction",
+  "dosing": "IM 250mcg repeated per PPH protocols",
+  "contraindications": "Asthma (relative), severe hypertension",
+  "interactions": "Other uterotonics",
+  "monitoring": "Uterine tone, BP, respiratory status in asthma",
+  "pregnancy": "Used postpartum for PPH",
+  "sideEffects": "Bronchospasm, fever, vomiting",
+  "clinicalPearls": "Avoid in severe asthma",
+  "indication": "PPH management"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Ceftriaxone",
+  "class": "Third-generation cephalosporin",
+  "mechanism": "Inhibits bacterial cell wall synthesis",
+  "dosing": "IV dosing once daily commonly; adjust in severe hepatic dysfunction",
+  "contraindications": "Neonates with hyperbilirubinaemia (risk), calcium-containing IV products concurrently in neonates",
+  "interactions": "May displace bilirubin in neonates",
+  "monitoring": "LFTs if prolonged therapy",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "Allergic reactions, diarrhoea",
+  "clinicalPearls": "Useful for many severe community-acquired infections including meningitis (higher doses)",
+  "renalDoseAdjustments": "No change for isolated renal impairment; if eGFR <10 mL/min consider dosing every 48 h and monitor for accumulation.",
+  "hepaticDoseAdjustments": "Avoid >2 g/day in severe hepatic impairment; monitor bilirubin/LFTs with prolonged therapy.",
+  "antimicrobialStewardship": "High C. difficile risk – restrict to approved indications and step down once susceptibilities known.",
+  "treatmentDuration": "Meningitis 10–14 days; severe CAP 5–7 days; gonorrhoea single 1 g IM.",
+  "indication": "Severe community infections, meningitis, gonorrhoea (depending on guidance)"
+}

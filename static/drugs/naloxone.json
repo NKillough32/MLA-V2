@@ -1,0 +1,14 @@
+{
+  "name": "Naloxone",
+  "class": "Opioid antagonist",
+  "mechanism": "Competitive antagonist at μ‑opioid receptors, rapidly reversing opioid-induced respiratory depression",
+  "dosing": "Intranasal (pre-filled spray): 400 mcg per spray — may repeat every 2–3 minutes as necessary. IM/SC: 400 mcg–2 mg (commonly 400 mcg increments), repeat every 2–3 minutes. IV: 100–400 mcg boluses titrated to effect; if large opioid burden, consider infusion (e.g. 4 mcg/kg/h) after initial bolus titration. In community opioid rescue kits, follow local protocols (often 400 mcg IN).",
+  "contraindications": "Hypersensitivity to naloxone; use with caution in opioid-dependent patients because of precipitating acute withdrawal",
+  "interactions": "Reverses opioid analgesia and may precipitate withdrawal; may interact indirectly with drugs that affect cardiovascular stability",
+  "monitoring": "Continuous monitoring of respiratory rate, oxygenation, consciousness and haemodynamics. Observe for re‑sedation after initial response because naloxone duration may be shorter than some opioids; monitor for at least 2 hours (longer if long‑acting opioids suspected).",
+  "pregnancy": "Safe to use in pregnancy in opioid overdose; maternal resuscitation takes priority",
+  "sideEffects": "Acute opioid withdrawal (nausea, vomiting, agitation), tachycardia, hypertension, arrhythmias, pulmonary oedema (rare)",
+  "pharmacokinetics": "Rapid onset IV/IN; relatively short duration (30–120 minutes) requiring observation and possible repeat dosing",
+  "clinicalPearls": "Titrate to restore adequate spontaneous ventilation rather than full reversal to avoid severe withdrawal. Community kits commonly use intranasal formulations (400 mcg). Ensure plan for transfer to ED after reversal and consider need for repeat dosing or infusion for long-acting opioids.",
+  "indication": "Opioid overdose with respiratory depression, reversal of opioid-induced respiratory depression in clinical settings"
+}

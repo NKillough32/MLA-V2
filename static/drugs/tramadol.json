@@ -1,0 +1,14 @@
+{
+  "name": "Tramadol",
+  "class": "Opioids",
+  "mechanism": "Weak mu-opioid agonist + inhibits serotonin/noradrenaline reuptake",
+  "dosing": "Immediate release: 50-100mg QDS PRN (max 400mg daily). MR: 100-400mg daily",
+  "contraindications": "Epilepsy, head injury, concurrent MAOIs, severe respiratory depression",
+  "interactions": "MAOIs (serotonin syndrome), SSRIs (↑ seizure risk), carbamazepine (↓ efficacy)",
+  "monitoring": "Seizure risk, respiratory depression, signs of dependence",
+  "pregnancy": "Avoid - risk of neonatal withdrawal syndrome",
+  "sideEffects": "Nausea, dizziness, seizures, constipation, serotonin syndrome, dependence",
+  "pharmacokinetics": "Active metabolite via CYP2D6, half-life: 5-7h",
+  "clinicalPearls": "Lower respiratory depression than other opioids. Seizure risk especially with SSRIs",
+  "indication": "Moderate pain when paracetamol/NSAIDs insufficient"
+}

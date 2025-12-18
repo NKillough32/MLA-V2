@@ -1,0 +1,14 @@
+{
+  "name": "Rituximab",
+  "class": "Monoclonal antibodies (Anti-CD20)",
+  "mechanism": "Monoclonal antibody targeting CD20 on B-lymphocytes, causing B-cell depletion",
+  "dosing": "Varies by indication. Lymphoma: 375mg/m² IV weekly. RA: 1g IV on days 1 and 15",
+  "contraindications": "Active severe infection, severe heart failure",
+  "interactions": "Live vaccines (avoid - contraindicated for 12 months after), antihypertensives (stop before infusion)",
+  "monitoring": "FBC, immunoglobulins, infections, infusion reactions, hepatitis B reactivation (screen first), PML",
+  "pregnancy": "Avoid - B-cell depletion in neonate",
+  "sideEffects": "Infusion reactions (very common first infusion), infections, progressive multifocal leukoencephalopathy (PML - rare but serious), hepatitis B reactivation, tumour lysis syndrome, cardiac arrhythmias",
+  "pharmacokinetics": "IV infusion (first dose over 4-6h), B-cell depletion lasts 6-12 months",
+  "clinicalPearls": "Pre-medicate with paracetamol, antihistamine, corticosteroid. First infusion reactions common - slow infusion rate. Screen for hepatitis B before starting. Causes profound immunosuppression - B-cells depleted for months. PML risk - warn about neurological symptoms",
+  "indication": "Non-Hodgkin lymphoma, CLL, rheumatoid arthritis, vasculitis (GPA, MPA), pemphigus"
+}

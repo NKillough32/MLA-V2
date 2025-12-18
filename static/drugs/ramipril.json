@@ -1,0 +1,14 @@
+{
+  "name": "Ramipril",
+  "class": "Angiotensin-converting enzyme (ACE) inhibitors",
+  "mechanism": "Inhibits ACE, preventing conversion of angiotensin I to II, reducing aldosterone secretion",
+  "dosing": "Hypertension: Start 1.25-2.5mg daily, usual 2.5-5mg daily, max 10mg daily. Heart failure: Start 1.25mg daily, target 10mg daily",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, angioedema history, hyperkalaemia >5.5mmol/L",
+  "interactions": "NSAIDs (↓ antihypertensive effect, ↑ nephrotoxicity), potassium supplements (hyperkalaemia), lithium (↑ levels)",
+  "monitoring": "eGFR and potassium baseline, 1-2 weeks after starting/dose change, then annually",
+  "pregnancy": "Contraindicated - teratogenic (oligohydramnios, IUGR, renal dysgenesis)",
+  "sideEffects": "Dry cough (10-15%), hyperkalaemia, acute kidney injury, angioedema (rare), hypotension",
+  "pharmacokinetics": "Prodrug activated hepatically, Half-life: 13-17h, Excretion: renal and biliary",
+  "clinicalPearls": "Most commonly prescribed ACE inhibitor in UK. Renoprotective in diabetes. Stop immediately if pregnant",
+  "indication": "Hypertension, heart failure, post-MI, diabetic nephropathy, primary prevention in high CV risk"
+}

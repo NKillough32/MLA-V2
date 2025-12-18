@@ -1,0 +1,13 @@
+{
+  "name": "N-acetylcysteine (NAC)",
+  "class": "Antidote / mucolytic",
+  "mechanism": "Replenishes glutathione to detoxify NAPQI in paracetamol overdose",
+  "dosing": "IV protocols vary (e.g., 150mg/kg over 1h, then 50mg/kg over 4h, then 100mg/kg over 16h) or oral 72h regimen",
+  "contraindications": "Hypersensitivity to components",
+  "interactions": "None significant",
+  "monitoring": "LFTs, clinical status, anaphylactoid reactions during IV infusion",
+  "pregnancy": "Use when indicated",
+  "sideEffects": "Anaphylactoid reactions with rapid IV infusion",
+  "clinicalPearls": "Start empirically if uncertain timing for paracetamol overdose and NAC is available",
+  "indication": "Paracetamol overdose"
+}

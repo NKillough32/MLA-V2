@@ -10,7 +10,7 @@ export class DrugReferenceManager {
     constructor() {
         this.eventBus = eventBus;
         this.storage = storage;
-        this.drugDatabase = null;
+        this.drugLoader = null;
         this.recognition = null;
         this.recentDrugs = [];
         this.initialized = false;
@@ -289,40 +289,49 @@ export class DrugReferenceManager {
         // Load drug database immediately with retry mechanism
         console.log('🏥 Loading drug database...');
         
-        // Retry up to 5 times with 100ms delay to ensure window.drugDatabase is available
+        // Retry up to 5 times with 100ms delay to ensure window.drugLoader is available
         let retries = 0;
         const maxRetries = 5;
         
         while (retries < maxRetries) {
-            if (typeof window.drugDatabase !== 'undefined') {
-                this.drugDatabase = window.drugDatabase;
-                console.log(`✅ Drug database loaded: ${Object.keys(this.drugDatabase).length} drugs`);
+            if (typeof window.drugLoader !== 'undefined') {
+                this.drugLoader = window.drugLoader;
+                
+                // Load the index to get drug count
+                const index = await this.drugLoader.loadIndex();
+                console.log(`✅ Drug database loaded: ${index.count} drugs (lazy loading enabled)`);
                 break;
             } else {
                 retries++;
-                console.log(`⏳ Waiting for drug database... (attempt ${retries}/${maxRetries})`);
+                console.log(`⏳ Waiting for drug loader... (attempt ${retries}/${maxRetries})`);
                 await new Promise(resolve => setTimeout(resolve, 100));
             }
         }
         
-        if (!this.drugDatabase) {
-            console.warn('⚠️ Drug database not loaded after retries. Using empty database.');
-            this.drugDatabase = {};
+        if (!this.drugLoader) {
+            console.warn('⚠️ Drug loader not available after retries.');
+            // Create a fallback loader
+            this.drugLoader = {
+                loadIndex: async () => ({ drugs: [], count: 0 }),
+                getDrug: async () => null,
+                search: async () => []
+            };
         }
 
         this.dataLoaded = true;
         
+        const index = await this.drugLoader.loadIndex();
         this.eventBus.emit('DRUG_MANAGER_READY', { 
-            drugCount: Object.keys(this.drugDatabase).length,
-            lazyLoaded: false
+            drugCount: index.count,
+            lazyLoaded: true
         });
         
         this.eventBus.emit('DRUG_DATA_LOADED', { 
-            drugCount: Object.keys(this.drugDatabase).length 
+            drugCount: index.count 
         });
         
         this.initialized = true;
-        console.log('✅ DrugReferenceManager initialized with data loaded');
+        console.log('✅ DrugReferenceManager initialized with lazy loading');
     }
 
 
@@ -332,34 +341,22 @@ export class DrugReferenceManager {
      */
     async searchDrugs(query) {
         
-        if (!this.drugDatabase) return [];
+        if (!this.drugLoader) return [];
         
         const lowerQuery = query.toLowerCase().trim();
         if (lowerQuery.length < 2) return [];
 
-        const matches = Object.entries(this.drugDatabase).filter(([key, drug]) => {
-            return key.toLowerCase().includes(lowerQuery) ||
-                   drug.name.toLowerCase().includes(lowerQuery) ||
-                   drug.class.toLowerCase().includes(lowerQuery) ||
-                   (drug.indication && drug.indication.toLowerCase().includes(lowerQuery));
-        });
-
-        // Sort by relevance (exact name match first, then starts with, then contains)
-        matches.sort(([keyA, drugA], [keyB, drugB]) => {
-            const nameA = drugA.name.toLowerCase();
-            const nameB = drugB.name.toLowerCase();
-            
-            if (nameA === lowerQuery) return -1;
-            if (nameB === lowerQuery) return 1;
-            if (nameA.startsWith(lowerQuery)) return -1;
-            if (nameB.startsWith(lowerQuery)) return 1;
-            return nameA.localeCompare(nameB);
-        });
+        // Use the drugLoader's search function which works with the index
+        const matches = await this.drugLoader.search(lowerQuery);
 
         this.eventBus.emit('DRUG_SEARCHED', { query, resultCount: matches.length });
 
+        // Load full drug data for the matches and add BNF links
         const drugsWithLinks = await Promise.all(
-            matches.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+            matches.map(async (indexEntry) => {
+                const drugData = await this.drugLoader.getDrug(indexEntry.id);
+                return this.withValidatedBnfLink(indexEntry.id, drugData);
+            })
         );
 
         return drugsWithLinks.filter(drug => drug !== null);
@@ -444,13 +441,19 @@ export class DrugReferenceManager {
      */
     async getDrugsByCategory(category) {
         
-        if (!this.drugDatabase) return [];
+        if (!this.drugLoader) return [];
 
-        const drugs = Object.entries(this.drugDatabase);
+        // Load index to get all drug entries
+        const index = await this.drugLoader.loadIndex();
+        const drugs = index.drugs;
 
         if (category === 'all' || category === 'alphabetical') {
+            // Load full drug data for all drugs
             const enrichedDrugs = await Promise.all(
-                drugs.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+                drugs.map(async (indexEntry) => {
+                    const drugData = await this.drugLoader.getDrug(indexEntry.id);
+                    return this.withValidatedBnfLink(indexEntry.id, drugData);
+                })
             );
 
             return enrichedDrugs
@@ -519,11 +522,20 @@ export class DrugReferenceManager {
         const filter = filters[category];
         if (!filter) return [];
 
-        const filteredDrugs = drugs
-            .filter(([, drug]) => filter(drug));
+        // First pass: filter based on index data (lightweight)
+        // Then load full drug data for matches
+        const filteredDrugIds = [];
+        
+        for (const indexEntry of drugs) {
+            // Load full drug data to check against filter
+            const drugData = await this.drugLoader.getDrug(indexEntry.id);
+            if (drugData && filter(drugData)) {
+                filteredDrugIds.push({ id: indexEntry.id, data: drugData });
+            }
+        }
 
         const enrichedDrugs = await Promise.all(
-            filteredDrugs.map(([key, drug]) => this.withValidatedBnfLink(key, drug))
+            filteredDrugIds.map(({ id, data }) => this.withValidatedBnfLink(id, data))
         );
 
         return enrichedDrugs
@@ -536,14 +548,17 @@ export class DrugReferenceManager {
      */
     async getDrug(drugKey) {
         
-        if (!this.drugDatabase || !this.drugDatabase[drugKey]) return null;
+        if (!this.drugLoader) return null;
+        
+        const drug = await this.drugLoader.getDrug(drugKey);
+        if (!drug) return null;
         
         // Add to recent drugs
         this.addToRecent(drugKey);
         
-        this.eventBus.emit('DRUG_VIEWED', { drugKey, drug: this.drugDatabase[drugKey] });
+        this.eventBus.emit('DRUG_VIEWED', { drugKey, drug });
         
-        return this.withValidatedBnfLink(drugKey, this.drugDatabase[drugKey]);
+        return this.withValidatedBnfLink(drugKey, drug);
     }
 
     /**
@@ -576,8 +591,13 @@ export class DrugReferenceManager {
             this.recentDrugs = [];
         }
         
+        if (!this.drugLoader) return [];
+        
         const recentWithLinks = await Promise.all(
-            this.recentDrugs.map(key => this.withValidatedBnfLink(key, this.drugDatabase[key]))
+            this.recentDrugs.map(async (key) => {
+                const drug = await this.drugLoader.getDrug(key);
+                return this.withValidatedBnfLink(key, drug);
+            })
         );
 
         return recentWithLinks.filter(drug => drug !== null);
@@ -700,9 +720,10 @@ export class DrugReferenceManager {
     /**
      * Get drug count
      */
-    getDrugCount() {
-        
-        return this.drugDatabase ? Object.keys(this.drugDatabase).length : 0;
+    async getDrugCount() {
+        if (!this.drugLoader) return 0;
+        const index = await this.drugLoader.loadIndex();
+        return index.count;
     }
 
     /**

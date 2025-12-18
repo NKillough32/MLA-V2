@@ -1,0 +1,14 @@
+{
+  "name": "Biphasic Insulin (Novomix, Humalog Mix)",
+  "class": "Insulin - premixed combinations",
+  "mechanism": "Combination of rapid/short-acting + intermediate-acting insulin in fixed ratios",
+  "dosing": "SC: typically BD before breakfast and evening meal. Common ratios: 30/70, 50/50",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "As other insulins",
+  "monitoring": "Pre-meal and bedtime glucose, HbA1c, hypoglycaemia",
+  "pregnancy": "Safe but basal-bolus preferred for tighter control",
+  "sideEffects": "Hypoglycaemia, weight gain, lipohypertrophy",
+  "pharmacokinetics": "Dual profile: rapid component peaks 1-3h, longer component provides basal coverage",
+  "clinicalPearls": "Convenient but less flexible than basal-bolus. Requires regular meal timings. Roll/mix gently before injection. Not suitable for DKA",
+  "indication": "Type 2 diabetes requiring simpler insulin regime, some type 1 patients"
+}

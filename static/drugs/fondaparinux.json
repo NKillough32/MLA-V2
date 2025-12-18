@@ -1,0 +1,13 @@
+{
+  "name": "Fondaparinux",
+  "class": "Synthetic pentasaccharide (indirect anti‑Xa)",
+  "mechanism": "Antithrombin-mediated selective factor Xa inhibition",
+  "dosing": "Weight-based dosing for VTE prophylaxis/treatment; see local guideline. Used in some ACS pathways per local protocol",
+  "contraindications": "Severe renal impairment (CrCl <30 mL/min), active bleeding, bacterial endocarditis",
+  "interactions": "Other anticoagulants (↑ bleeding risk)",
+  "monitoring": "Renal function, platelet count",
+  "pregnancy": "Use with specialist advice",
+  "sideEffects": "Bleeding",
+  "clinicalPearls": "Once-daily subcutaneous injection; check weight-based dose and renal function",
+  "indication": "VTE prophylaxis/treatment, used in certain ACS pathways per protocol"
+}

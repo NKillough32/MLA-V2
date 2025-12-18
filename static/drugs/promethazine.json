@@ -1,0 +1,14 @@
+{
+  "name": "Promethazine",
+  "class": "Antihistamine H1-receptor antagonist (sedating)",
+  "mechanism": "H1 antagonist + antimuscarinic + sedative effects",
+  "dosing": "Allergy: 25mg nocte (up to 25mg BD). Motion sickness: 25mg night before travel then 25mg BD. Insomnia: 25-50mg nocte",
+  "contraindications": "Infants <2 years (respiratory depression risk), porphyria",
+  "interactions": "CNS depressants (↑ sedation), antimuscarinics, MAOIs",
+  "monitoring": "Sedation, antimuscarinic effects",
+  "pregnancy": "Generally avoid - if used, lowest dose shortest time",
+  "sideEffects": "Sedation (very common), antimuscarinic effects (dry mouth, urinary retention, blurred vision), headache, nightmares",
+  "pharmacokinetics": "Oral/IM, long duration of action (12-24h)",
+  "clinicalPearls": "Very sedating antihistamine. Useful for night-time allergy symptoms. Avoid driving. Not recommended routinely for insomnia (tolerance develops). Avoid in elderly (confusion risk)",
+  "indication": "Allergic conditions, motion sickness, short-term insomnia, nausea/vomiting"
+}

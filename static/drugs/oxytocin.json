@@ -1,0 +1,14 @@
+{
+  "name": "Oxytocin",
+  "class": "Uterotonic",
+  "mechanism": "Stimulates uterine smooth muscle contraction via oxytocin receptors",
+  "dosing": "IV infusion titrated for labour induction/augmentation; IM 10 units for postpartum haemorrhage",
+  "contraindications": "Uterine rupture risk, foetal distress when vaginal birth not advisable",
+  "interactions": "Vasoconstrictors and ergometrine (use caution), tocolytics (antagonistic)",
+  "monitoring": "Continuous CTG during labour, uterine tone, maternal vital signs",
+  "pregnancy": "Used during labour and postpartum under obstetric supervision",
+  "sideEffects": "Uterine hyperstimulation, hypotension, water retention with prolonged high-dose infusion",
+  "pharmacokinetics": "Rapid onset; short half-life",
+  "clinicalPearls": "Use with careful monitoring in labour wards and for PPH management",
+  "indication": "Labour induction/augmentation, postpartum haemorrhage"
+}

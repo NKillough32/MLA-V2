@@ -1,0 +1,13 @@
+{
+  "name": "Rifampicin",
+  "class": "Rifamycin antibiotic",
+  "mechanism": "Inhibits DNA-dependent RNA polymerase",
+  "dosing": "600mg daily in TB regimens (adult)",
+  "contraindications": "Severe hepatic impairment",
+  "interactions": "Potent CYP inducer (many drug interactions)",
+  "monitoring": "LFTs, drug interactions",
+  "pregnancy": "Use if benefits outweigh risks",
+  "sideEffects": "Hepatotoxicity, orange discoloration of bodily fluids",
+  "clinicalPearls": "Powerful CYP inducer — review all meds",
+  "indication": "TB (part of multi-drug regimens)"
+}

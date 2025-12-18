@@ -1,0 +1,14 @@
+{
+  "name": "Morphine",
+  "class": "Opioid analgesic (strong opioid)",
+  "mechanism": "μ-opioid receptor agonist producing analgesia, sedation, and respiratory depression",
+  "dosing": "Oral (immediate-release): opioid‑naïve 2.5–5 mg PO every 4 h PRN (adjust to context). Oral modified‑release for chronic pain individualized (e.g., 10–30 mg BD). SC/IM: 2.5–5 mg titrated to effect; IV bolus 2.5–5 mg (titrate carefully). PCA and infusion dosing depend on local protocols; typical PCA bolus 1 mg with lockout, infusion rates individualized.",
+  "contraindications": "Respiratory depression, acute severe asthma, paralytic ileus, significant CNS depression, known hypersensitivity",
+  "interactions": "Other CNS depressants (benzos, gabapentinoids, alcohol) ↑ risk of respiratory depression; MAOIs (dangerous interactions), CYP interactions via metabolites",
+  "monitoring": "Pain scores, sedation score, respiratory rate and oxygenation, bowel function, renal function (metabolite accumulation), signs of tolerance/dependence",
+  "pregnancy": "Use only if necessary; avoid near term where possible (risk neonatal respiratory depression/withdrawal); liaise with obstetrics",
+  "sideEffects": "Constipation, nausea, vomiting, pruritus, sedation, respiratory depression, urinary retention",
+  "pharmacokinetics": "Hepatic metabolism to M3G/M6G; renally excreted metabolites accumulate in CKD—reduce dose or use alternative (e.g., oxycodone/fentanyl) in severe renal impairment",
+  "clinicalPearls": "Co-prescribe laxative and consider antiemetic for initiation; start low and titrate. Use caution with concomitant sedatives and in the elderly. Naloxone reverses opioid toxicity—titrate to restore ventilation rather than full reversal. For PCA/infusions, follow local policies and monitor closely.",
+  "indication": "Moderate to severe acute pain, chronic severe pain, palliative care"
+}

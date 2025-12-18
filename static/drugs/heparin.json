@@ -1,0 +1,14 @@
+{
+  "name": "Heparin",
+  "class": "Heparins and fondaparinux",
+  "mechanism": "Binds to antithrombin III, enhancing inactivation of thrombin and factor Xa",
+  "dosing": "DVT/PE: Loading 80 units/kg IV, then 18 units/kg/h. Monitor APTT. Prophylaxis: 5000 units SC BD-TDS",
+  "contraindications": "Active bleeding, severe thrombocytopenia, previous HIT, severe liver disease",
+  "interactions": "Aspirin, warfarin (↑ bleeding risk), NSAIDS (↑ bleeding risk)",
+  "monitoring": "APTT (target 1.5-2.5x control), platelet count (HIT screening), signs of bleeding",
+  "pregnancy": "Safe - does not cross placenta. First-line anticoagulant in pregnancy",
+  "sideEffects": "Bleeding, HIT, osteoporosis (long-term), alopecia, skin necrosis",
+  "pharmacokinetics": "IV: immediate onset, t½ 1-2h. SC: onset 1-2h. Metabolism hepatic",
+  "clinicalPearls": "Monitor for HIT. Reverse with protamine. Use anti-Xa levels if APTT unreliable",
+  "indication": "DVT/PE treatment, ACS, AF, cardiac surgery, dialysis, stroke prevention"
+}

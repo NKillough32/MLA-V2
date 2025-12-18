@@ -1,0 +1,13 @@
+{
+  "name": "Methadone",
+  "class": "Long-acting opioid agonist",
+  "mechanism": "Full μ-opioid agonist; NMDA receptor antagonist properties",
+  "dosing": "Specialist supervised dosing for OST; analgesic regimens individualised. Risk of accumulation — start low and titrate slowly",
+  "contraindications": "Respiratory depression, severe asthma, uncontrolled QT prolongation",
+  "interactions": "Many CYP interactions, QT-prolonging drugs",
+  "monitoring": "ECG (QT), respiratory status, signs of accumulation",
+  "pregnancy": "Used in pregnancy for OST under specialist care",
+  "sideEffects": "Respiratory depression, sedation, QT prolongation, constipation",
+  "clinicalPearls": "Long half-life and accumulation risk; specialist prescribing and community OST pathways apply",
+  "indication": "Opioid substitution therapy, severe chronic pain under specialist supervision"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Liraglutide",
+  "class": "GLP-1 receptor agonist",
+  "mechanism": "GLP-1 analogue increasing insulin secretion and reducing appetite",
+  "dosing": "Titrated subcutaneously per product regimen; doses vary by indication",
+  "contraindications": "Personal/family history of medullary thyroid carcinoma (MTC), MEN2",
+  "interactions": "May delay gastric emptying affecting absorption of oral meds",
+  "monitoring": "GI tolerance, weight, glycaemic control",
+  "pregnancy": "Avoid",
+  "sideEffects": "Nausea, vomiting, pancreatitis (rare)",
+  "clinicalPearls": "Useful for weight loss and glycaemic control; specialist initiation often",
+  "indication": "Type 2 diabetes; weight management in some licensed indications"
+}

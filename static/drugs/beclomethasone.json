@@ -1,0 +1,14 @@
+{
+  "name": "Beclomethasone",
+  "class": "Inhaled corticosteroid",
+  "mechanism": "Synthetic glucocorticoid with anti-inflammatory effects in airways",
+  "dosing": "Adults: 200-800mcg daily in divided doses. Children: 100-400mcg daily. Use spacer device",
+  "contraindications": "Hypersensitivity. Caution in active pulmonary TB",
+  "interactions": "Few significant interactions due to low systemic absorption",
+  "monitoring": "Growth in children, oral candidiasis, signs of systemic effects (high doses)",
+  "pregnancy": "Safe - inhaled route minimises systemic exposure",
+  "sideEffects": "Oral candidiasis, hoarse voice, growth retardation (children with high doses)",
+  "pharmacokinetics": "Low systemic bioavailability (~20%), extensive first-pass metabolism",
+  "clinicalPearls": "Brown/red preventer inhaler. Rinse mouth after use. Use spacer device. Regular use essential",
+  "indication": "Asthma prophylaxis, COPD (in combination inhalers)"
+}

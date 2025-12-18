@@ -1387,14 +1387,7 @@ class MLAQuizApp {
 
         if (!Array.isArray(drugs)) {
             console.warn('showDrugCategory: expected array from drugManager.getDrugsByCategory, got:', drugs);
-            // Fallback: try to read raw database if available
-            if (this.drugManager && this.drugManager.drugDatabase) {
-                drugs = Object.entries(this.drugManager.drugDatabase)
-                    .map(([key, d]) => this.drugManager.withBnfLink(key, d))
-                    .filter(d => d !== null);
-            } else {
-                drugs = [];
-            }
+            drugs = [];
         }
 
         const drugListContainer = container.querySelector('#drug-list-v2');

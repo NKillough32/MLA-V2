@@ -1,0 +1,14 @@
+{
+  "name": "Duloxetine",
+  "class": "SNRI (serotonin-norepinephrine reuptake inhibitor)",
+  "mechanism": "Inhibits serotonin and norepinephrine reuptake, modulates pain pathways",
+  "dosing": "Depression: 60mg OD. Neuropathic pain: start 30mg OD, increase to 60mg. Max 120mg daily",
+  "contraindications": "Uncontrolled hypertension, severe renal/hepatic impairment, MAOIs (within 14 days)",
+  "interactions": "MAOIs (serotonin syndrome), NSAIDs/warfarin (bleeding), CYP1A2 inhibitors",
+  "monitoring": "Blood pressure, mood, bleeding risk, hepatic function",
+  "pregnancy": "Avoid if possible - use only if benefit outweighs risk",
+  "sideEffects": "Nausea, dry mouth, dizziness, fatigue, sweating, hypertension",
+  "pharmacokinetics": "Hepatic metabolism via CYP1A2 and CYP2D6, half-life 12h",
+  "clinicalPearls": "Useful for diabetic neuropathy and fibromyalgia. Monitor BP - can cause hypertension. Withdraw gradually",
+  "indication": "Depression, generalised anxiety disorder, diabetic neuropathy, fibromyalgia, stress urinary incontinence"
+}

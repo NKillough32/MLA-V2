@@ -1,0 +1,14 @@
+{
+  "name": "Salbutamol",
+  "class": "Short-acting β2-agonist (SABA)",
+  "mechanism": "Selective β2-adrenoreceptor agonist causing bronchodilation",
+  "dosing": "Inhaler: 100-200mcg PRN, max 800mcg daily. Nebuliser: 2.5-5mg QDS",
+  "contraindications": "Hypersensitivity. Caution in cardiovascular disease",
+  "interactions": "β-blockers (antagonistic), digoxin (hypokalaemia), diuretics",
+  "monitoring": "Peak flow, symptoms, heart rate, potassium (high doses)",
+  "pregnancy": "Safe - drug of choice in pregnancy",
+  "sideEffects": "Tremor, palpitations, headache, hypokalaemia (high doses)",
+  "pharmacokinetics": "Inhaled onset: 5min, Duration: 3-5h",
+  "clinicalPearls": "Blue inhaler. If using >3x/week, need preventer. Use spacer",
+  "indication": "Asthma, COPD, hyperkalaemia (nebulised)"
+}

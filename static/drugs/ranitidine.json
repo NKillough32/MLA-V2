@@ -1,0 +1,14 @@
+{
+  "name": "Ranitidine",
+  "class": "H2-receptor antagonist",
+  "mechanism": "Competitive antagonist of histamine H2-receptors in gastric parietal cells",
+  "dosing": "GORD: 150mg BD or 300mg at night. Peptic ulcer: 300mg at night. Acute: 50mg IV TDS",
+  "contraindications": "Hypersensitivity, porphyria",
+  "interactions": "Warfarin (may ↑ INR), ketoconazole (↓ absorption), atazanavir",
+  "monitoring": "Symptom relief, signs of gastric malignancy (prolonged use)",
+  "pregnancy": "Safe - no evidence of harm",
+  "sideEffects": "Generally well tolerated, headache, dizziness, GI upset, confusion (elderly)",
+  "pharmacokinetics": "Well absorbed, half-life: 2-3h, renal and hepatic elimination",
+  "clinicalPearls": "Less effective than PPIs. Withdrawn in many countries due to NDMA contamination concerns",
+  "indication": "GORD, peptic ulcer disease, stress ulcer prophylaxis"
+}

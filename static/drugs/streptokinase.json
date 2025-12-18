@@ -1,0 +1,14 @@
+{
+  "name": "Streptokinase",
+  "class": "Thrombolytic (Emergency drug)",
+  "mechanism": "Bacterial protein that activates plasminogen to plasmin, lysing fibrin clots",
+  "dosing": "MI: 1.5 million units IV over 60min. PE: 250,000 units over 30min then 100,000 units/h for 24-72h",
+  "contraindications": "Recent streptococcal infection, previous streptokinase use, active bleeding, recent surgery",
+  "interactions": "Anticoagulants/antiplatelets (↑ bleeding), NSAIDs",
+  "monitoring": "BP, bleeding, reperfusion arrhythmias, allergic reactions",
+  "pregnancy": "Avoid - can cause placental separation",
+  "sideEffects": "Bleeding, allergic reactions, hypotension, reperfusion arrhythmias",
+  "pharmacokinetics": "IV infusion, antigenic (cannot repeat), half-life ~20min",
+  "clinicalPearls": "Give hydrocortisone + chlorphenamine pre-treatment. Cannot use if previous dose (antibodies). Largely replaced by alteplase in stroke",
+  "indication": "STEMI (where PCI unavailable), massive PE, DVT"
+}

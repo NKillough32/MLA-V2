@@ -1,0 +1,14 @@
+{
+  "name": "Oxygen",
+  "class": "Emergency drug / Respiratory support",
+  "mechanism": "Increases alveolar and arterial oxygen concentration",
+  "dosing": "Target sats: 94-98% (88-92% if COPD risk). Acute: 15L/min via non-rebreathe. Titrate to target",
+  "contraindications": "None in emergency. Caution in COPD (target 88-92%)",
+  "interactions": "None",
+  "monitoring": "SpO2, ABG if type 2 respiratory failure risk, respiratory rate",
+  "pregnancy": "Safe",
+  "sideEffects": "CO2 retention in COPD, oxygen toxicity (prolonged high FiO2), absorption atelectasis",
+  "pharmacokinetics": "Inhaled, immediate effect",
+  "clinicalPearls": "Prescribe target saturations. COPD: risk of CO2 retention - target 88-92%. Use Venturi masks for precise FiO2. Humidify if >4L/min",
+  "indication": "Hypoxaemia, acute breathlessness, cardiac arrest, major trauma, shock"
+}

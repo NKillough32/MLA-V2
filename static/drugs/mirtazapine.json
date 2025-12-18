@@ -1,0 +1,14 @@
+{
+  "name": "Mirtazapine",
+  "class": "Noradrenergic and specific serotonergic antidepressant (NaSSA)",
+  "mechanism": "Blocks α2-adrenergic autoreceptors and 5-HT2/5-HT3 receptors, enhancing noradrenaline and serotonin",
+  "dosing": "Adults: Start 15mg at night, increase after 1-2 weeks to 30mg, max 45mg daily",
+  "contraindications": "MAOIs, mania, severe hepatic impairment",
+  "interactions": "MAOIs, warfarin, alcohol (↑ sedation), tramadol",
+  "monitoring": "FBC (especially first few months), weight, mood, sedation level",
+  "pregnancy": "Use if benefit outweighs risk - limited safety data",
+  "sideEffects": "Sedation (dose-related), weight gain, dry mouth, constipation, blood dyscrasias (rare)",
+  "pharmacokinetics": "Half-life: 20-40h, hepatic metabolism",
+  "clinicalPearls": "Paradoxical effect: more sedating at lower doses. Good for depression with insomnia/weight loss",
+  "indication": "Depression (especially with anxiety, insomnia, or weight loss)"
+}

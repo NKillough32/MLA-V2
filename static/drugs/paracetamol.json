@@ -1,0 +1,14 @@
+{
+  "name": "Paracetamol",
+  "class": "Paracetamol",
+  "mechanism": "Inhibits COX enzymes centrally, affects prostaglandin synthesis in hypothalamus",
+  "dosing": "Adults: 500mg-1g every 4-6 hours (max 4g/24h). Children: 15mg/kg every 4-6 hours (max 60mg/kg/24h)",
+  "contraindications": "Severe hepatic impairment, hypersensitivity to paracetamol",
+  "interactions": "Warfarin (↑ INR with regular use), carbamazepine (↑ hepatotoxicity risk), chronic alcohol (↑ hepatotoxicity)",
+  "monitoring": "Liver function with prolonged use, paracetamol levels in overdose",
+  "pregnancy": "Safe - preferred analgesic and antipyretic in pregnancy",
+  "sideEffects": "Hepatotoxicity (overdose), very rarely serious skin reactions (SJS/TEN)",
+  "pharmacokinetics": "Onset: 30min, Peak: 1h, Half-life: 2h, Metabolism: hepatic conjugation",
+  "clinicalPearls": "First-line analgesic in UK. No anti-inflammatory effect. Overdose antidote: N-acetylcysteine. Safe in asthma",
+  "indication": "Pain relief, fever reduction. Safe alternative to NSAIDs"
+}

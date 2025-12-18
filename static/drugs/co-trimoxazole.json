@@ -1,0 +1,14 @@
+{
+  "name": "Co-trimoxazole (Trimethoprim + Sulfamethoxazole)",
+  "class": "Antibacterial combination (folate synthesis inhibitors)",
+  "mechanism": "Sequential blockade of folate synthesis pathway (trimethoprim inhibits dihydrofolate reductase; sulfamethoxazole inhibits dihydropteroate synthase)",
+  "dosing": "Uncomplicated UTI (where susceptible): 160/800mg (one DS tablet) BD for 3 days. PCP prophylaxis: 160/800mg three times weekly or daily dosing as indicated",
+  "contraindications": "Severe hepatic impairment, megaloblastic anaemia due to folate deficiency, sulfonamide allergy",
+  "interactions": "Warfarin (↑ INR), methotrexate (↑ toxicity), ACEi/ARBs (↑ hyperkalaemia risk), trimethoprim may ↑ creatinine (functional)",
+  "monitoring": "U&Es, FBC and LFTs for prolonged therapy; watch for rash and signs of bone marrow suppression",
+  "pregnancy": "Avoid near term; caution in pregnancy due to folate antagonism",
+  "sideEffects": "Rash (including SJS/TEN rare), GI upset, cytopenias, hyperkalaemia, photosensitivity",
+  "pharmacokinetics": "Well absorbed orally; renal excretion of metabolites; half-lives differ between components",
+  "clinicalPearls": "Check local resistance patterns for UTI use. Can potentiate warfarin — monitor INR closely",
+  "indication": "UTI (where susceptible), PCP prophylaxis/treatment, certain systemic infections"
+}

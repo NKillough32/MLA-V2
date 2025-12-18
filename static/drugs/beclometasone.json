@@ -1,0 +1,14 @@
+{
+  "name": "Beclometasone (Beclomethasone)",
+  "class": "Corticosteroids, inhaled / nasal",
+  "mechanism": "Inhaled corticosteroid - reduces airway inflammation",
+  "dosing": "Asthma: 200-800mcg daily in divided doses (higher if extra-fine particles). Nasal: 2 sprays each nostril BD",
+  "contraindications": "Untreated infection, hypersensitivity",
+  "interactions": "None significant (minimal systemic absorption)",
+  "monitoring": "Asthma control, growth (children), oral candidiasis, bone density if high dose long-term",
+  "pregnancy": "Safe - inhaled corticosteroids of choice in pregnancy",
+  "sideEffects": "Oral candidiasis, hoarse voice, sore throat, paradoxical bronchospasm (rare). High dose: adrenal suppression, osteoporosis",
+  "pharmacokinetics": "Inhaled, minimal systemic absorption, hepatic metabolism",
+  "clinicalPearls": "Rinse mouth after use to prevent candidiasis. Extra-fine particle formulations (Qvar, Kbihaler) ~2x more potent. Spacer device improves delivery and reduces oral candidiasis",
+  "indication": "Asthma (preventer), COPD (with LABA), allergic rhinitis (nasal)"
+}

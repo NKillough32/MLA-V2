@@ -1,0 +1,14 @@
+{
+  "name": "Moxifloxacin",
+  "class": "Fluoroquinolone antibiotic",
+  "mechanism": "Inhibits bacterial DNA gyrase and topoisomerase IV",
+  "dosing": "400mg once daily PO/IV",
+  "contraindications": "Tendon disorders related to fluoroquinolones, pregnancy (avoid unless necessary), prolonged QT",
+  "interactions": "Drugs that prolong QT (macrolides, some antipsychotics), antacids (↓ absorption)",
+  "monitoring": "QT interval for at-risk patients, hepatic function in prolonged use",
+  "pregnancy": "Generally avoided unless benefit outweighs risk",
+  "sideEffects": "Tendonitis/tendon rupture, QT prolongation, nausea, CNS effects (confusion, hallucinations)",
+  "pharmacokinetics": "Good tissue penetration, hepatic metabolism and renal excretion",
+  "clinicalPearls": "Reserve for specific indications due to safety concerns and rising resistance",
+  "indication": "Certain respiratory and intra-abdominal infections where indicated"
+}

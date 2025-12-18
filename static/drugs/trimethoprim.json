@@ -1,0 +1,14 @@
+{
+  "name": "Trimethoprim",
+  "class": "Folate synthesis inhibitor antibiotic",
+  "mechanism": "Inhibits bacterial dihydrofolate reductase, preventing folate synthesis",
+  "dosing": "UTI: 200mg BD for 3 days (uncomplicated) or 7 days (men/complicated). Prophylaxis: 100mg at night",
+  "contraindications": "Folate deficiency, severe renal impairment, blood dyscrasias",
+  "interactions": "Warfarin (↑ INR), methotrexate (↑ toxicity), ACE inhibitors (hyperkalaemia)",
+  "monitoring": "FBC if prolonged use, U&Es (can cause hyperkalaemia), signs of folate deficiency",
+  "pregnancy": "Avoid in first trimester (folate antagonist). Folate supplementation if essential",
+  "sideEffects": "GI upset, skin rashes, hyperkalaemia, blood dyscrasias (rare)",
+  "pharmacokinetics": "Well absorbed, Half-life: 10h, mainly renal excretion",
+  "clinicalPearls": "First-line for uncomplicated UTI in women. Can cause hyperkalaemia especially with ACE-I",
+  "indication": "UTI treatment and prophylaxis, pneumocystis pneumonia prophylaxis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Trametinib",
+  "class": "MEK inhibitor (targeted anticancer therapy)",
+  "mechanism": "Inhibits MEK1 and MEK2, blocking MAPK pathway signalling in tumours with BRAF/MEK pathway activation",
+  "dosing": "Oral 2mg once daily (usually in combination with other targeted agents); oncology dosing varies",
+  "contraindications": "Known hypersensitivity; caution with cardiac disease and retinal disorders",
+  "interactions": "CYP3A4 inducers/inhibitors may alter levels; many anticancer drug interactions possible",
+  "monitoring": "LVEF, blood pressure, skin toxicity, ocular symptoms, LFTs",
+  "pregnancy": "Contraindicated - teratogenic",
+  "sideEffects": "Rash, diarrhoea, peripheral oedema, cardiomyopathy, ocular toxicity (retinal events)",
+  "pharmacokinetics": "Oral agent with hepatic metabolism; refer to oncology guidance for specifics",
+  "clinicalPearls": "Specialist oncology drug - use as part of targeted therapy in selected cancers; not a routine ward antimicrobial or cardiovascular drug",
+  "indication": "Metastatic melanoma and other BRAF/MEK pathway-driven malignancies as per oncology guidance"
+}

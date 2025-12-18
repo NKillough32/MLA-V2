@@ -1,0 +1,14 @@
+{
+  "name": "Alteplase (rt-PA)",
+  "class": "Thrombolytic (Emergency drug)",
+  "mechanism": "Tissue plasminogen activator - converts plasminogen to plasmin, dissolving fibrin clots",
+  "dosing": "Ischaemic stroke: 0.9mg/kg (max 90mg) - 10% bolus, rest over 60min. MI: accelerated regime over 90min",
+  "contraindications": "Haemorrhagic stroke, recent major surgery/trauma, active bleeding, BP >185/110",
+  "interactions": "Anticoagulants/antiplatelets (↑ bleeding risk)",
+  "monitoring": "Neuro obs every 15min, BP, bleeding signs, ECG if MI",
+  "pregnancy": "Avoid unless life-threatening - limited data",
+  "sideEffects": "Intracranial haemorrhage (6-7% in stroke), systemic bleeding, reperfusion arrhythmias",
+  "pharmacokinetics": "IV only, rapid clearance (half-life 4-5min), effect within minutes",
+  "clinicalPearls": "Time-critical: stroke <4.5h from onset, STEMI <12h. Strict BP control essential. Major bleeding risk - have reversal agents ready",
+  "indication": "Acute ischaemic stroke (<4.5h), STEMI, massive PE"
+}

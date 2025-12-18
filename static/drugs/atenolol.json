@@ -1,0 +1,14 @@
+{
+  "name": "Atenolol",
+  "class": "Beta-blockers",
+  "mechanism": "Selective beta-1 adrenergic receptor antagonist",
+  "dosing": "Hypertension: 25-50mg daily. Angina: 50-100mg daily. Post-MI: 50mg BD. Elderly: start 25mg daily",
+  "contraindications": "Asthma, severe COPD, cardiogenic shock, severe bradycardia, heart block",
+  "interactions": "Calcium channel blockers (↑ bradycardia), insulin (masks hypoglycaemia), NSAIDs (↓ antihypertensive effect)",
+  "monitoring": "Heart rate, blood pressure, signs of heart failure, renal function, glucose (diabetics)",
+  "pregnancy": "Use with caution; consult UKTIS for guidance",
+  "sideEffects": "Bradycardia, hypotension, fatigue, cold extremities, bronchospasm, vivid dreams",
+  "pharmacokinetics": "Low lipophilicity, mainly renal excretion, half-life: 6-7h",
+  "clinicalPearls": "Less CNS side effects than lipophilic beta-blockers. Reduce dose in renal impairment. Water-soluble",
+  "indication": "Hypertension, angina, post-MI, arrhythmias, anxiety (short-term)"
+}

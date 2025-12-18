@@ -1,0 +1,14 @@
+{
+  "name": "Alogliptin",
+  "class": "DPP-4 inhibitors (Gliptins)",
+  "mechanism": "Inhibits dipeptidyl peptidase-4, increasing incretin levels",
+  "dosing": "25mg OD (12.5mg if moderate renal impairment, 6.25mg if severe)",
+  "contraindications": "Type 1 diabetes, DKA",
+  "interactions": "None significant",
+  "monitoring": "HbA1c, renal function, pancreatitis symptoms, heart failure",
+  "pregnancy": "Avoid - insufficient data",
+  "sideEffects": "Nasopharyngitis, pancreatitis (rare), heart failure (controversial), hypersensitivity reactions",
+  "pharmacokinetics": "Oral, renal excretion (dose adjust in CKD)",
+  "clinicalPearls": "Similar efficacy to other DPP-4 inhibitors. Weight-neutral. Low hypo risk. Dose reduction needed in renal impairment. Some concern about heart failure risk",
+  "indication": "Type 2 diabetes (add-on therapy)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Nirmatrelvir (with Ritonavir - Paxlovid)",
+  "class": "Antiviral drugs - Protease inhibitor",
+  "mechanism": "Inhibits SARS-CoV-2 main protease (Mpro), preventing viral replication",
+  "dosing": "COVID-19: nirmatrelvir 300mg + ritonavir 100mg BD for 5 days (start within 5 days of symptoms)",
+  "contraindications": "Severe renal/hepatic impairment, drugs highly dependent on CYP3A clearance (many interactions)",
+  "interactions": "Extensive - ritonavir is potent CYP3A4 inhibitor. Check all medications. Avoid statins, midazolam, many others",
+  "monitoring": "Drug interactions, renal function, clinical response, rebound symptoms",
+  "pregnancy": "Use only if benefit outweighs risk",
+  "sideEffects": "Dysgeusia (altered taste - very common), diarrhoea, hypertension, myalgia, rebound COVID symptoms (5-10% after stopping)",
+  "pharmacokinetics": "Oral, ritonavir boosts nirmatrelvir levels via CYP3A4 inhibition",
+  "clinicalPearls": "Reduces hospitalization/death in high-risk COVID patients if started early (<5 days). Metallic taste very common. Extensive drug interactions due to ritonavir - check carefully. Rebound symptoms possible after completion. Reserved for high-risk patients",
+  "indication": "COVID-19 (mild-moderate in high-risk patients within 5 days of symptom onset)"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Posaconazole",
+  "class": "Triazole antifungal",
+  "mechanism": "Inhibits ergosterol synthesis",
+  "dosing": "Oral/IV formulation dosing per product",
+  "contraindications": "Contraindicated with certain medications",
+  "interactions": "CYP3A4 interactions",
+  "monitoring": "LFTs, drug levels",
+  "pregnancy": "Avoid unless necessary",
+  "sideEffects": "GI upset, hepatotoxicity",
+  "clinicalPearls": "Used for prophylaxis in neutropenic patients and resistant infections",
+  "indication": "Invasive fungal infections"
+}

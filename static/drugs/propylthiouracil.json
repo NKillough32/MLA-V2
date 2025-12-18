@@ -1,0 +1,13 @@
+{
+  "name": "Propylthiouracil (PTU)",
+  "class": "Antithyroid drug",
+  "mechanism": "Inhibits thyroid peroxidase and peripheral conversion of T4 to T3",
+  "dosing": "Thyroid storm: high-dose per endocrinology guidance; regular dosing individualized",
+  "contraindications": "Severe liver disease",
+  "interactions": "Other hepatotoxic drugs",
+  "monitoring": "LFTs, FBC",
+  "pregnancy": "Preferred in first trimester as alternative to carbimazole in some cases; specialist advice",
+  "sideEffects": "Hepatotoxicity, agranulocytosis (rare)",
+  "clinicalPearls": "Use specialist guidance for thyroid storm and pregnancy",
+  "indication": "Hyperthyroidism, thyroid storm"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Nitrofurantoin",
+  "class": "Nitrofurantoin",
+  "mechanism": "Inhibits bacterial enzymes involved in carbohydrate metabolism",
+  "dosing": "UTI treatment: 100mg BD for 3 days (women) or 7 days (men). Prophylaxis: 50-100mg at night",
+  "contraindications": "eGFR <45ml/min/1.73mÂ², pregnancy at term, G6PD deficiency, acute porphyria",
+  "interactions": "Magnesium salts (↓ absorption), probenecid (↑ toxicity)",
+  "monitoring": "Renal function, LFTs, signs of pulmonary toxicity (chronic use)",
+  "pregnancy": "Safe except at term (risk of neonatal haemolysis)",
+  "sideEffects": "GI upset, pulmonary toxicity (chronic use), peripheral neuropathy, hepatotoxicity",
+  "pharmacokinetics": "Rapidly absorbed, concentrated in urine, Half-life: 20min",
+  "clinicalPearls": "Excellent for uncomplicated UTI. Take with food. Avoid if eGFR <45. Urine may turn brown",
+  "indication": "UTI treatment and prophylaxis. Not effective for pyelonephritis"
+}

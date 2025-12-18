@@ -1,0 +1,13 @@
+{
+  "name": "Buprenorphine",
+  "class": "Partial opioid agonist",
+  "mechanism": "Partial μ-opioid receptor agonist, κ-antagonist",
+  "dosing": "Analgesic patches: variable; OST (sublingual) doses per specialist protocol. Avoid giving full opioid agonists shortly after buprenorphine in opioid-dependent patients (precipitated withdrawal)",
+  "contraindications": "Severe respiratory depression without monitoring",
+  "interactions": "CNS depressants, CYP3A4 modulators",
+  "monitoring": "Respiratory monitoring, signs of withdrawal in dependent patients",
+  "pregnancy": "Use in pregnancy for opioid dependence only under specialist antenatal care",
+  "sideEffects": "Sedation, constipation, nausea, precipitated withdrawal risk",
+  "clinicalPearls": "Partial agonist: risk of precipitated withdrawal in opioid-tolerant patients. Used for opioid substitution and some pain formulations",
+  "indication": "Opioid dependence (OST), chronic pain management under specialist guidance"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Levothyroxine",
+  "class": "Thyroid hormones",
+  "mechanism": "Synthetic L-thyroxine (T4) hormone, converted to active T3 in peripheral tissues",
+  "dosing": "Adults <50yrs: 1.6micrograms/kg daily. >50yrs or cardiac disease: 25-50micrograms daily, increase by 25-50micrograms every 3-4 weeks",
+  "contraindications": "Untreated adrenal insufficiency, acute myocardial infarction, thyrotoxicosis",
+  "interactions": "Iron/calcium (take 4h apart), warfarin (↑ anticoagulant effect), carbamazepine (↑ metabolism)",
+  "monitoring": "TSH every 6-8 weeks until stable, then annually. Free T4 if pituitary disease suspected",
+  "pregnancy": "Safe - essential in pregnancy. Increase dose by 25-50micrograms. Monitor TSH each trimester",
+  "sideEffects": "Over-replacement: palpitations, insomnia, tremor, weight loss, heat intolerance, AF, osteoporosis",
+  "pharmacokinetics": "Peak: 2-4h, Half-life: 7 days, Steady state: 6-8 weeks",
+  "clinicalPearls": "Take on empty stomach 30-60min before breakfast. Consistent brand/timing. TSH target 0.4-4.0 mU/L",
+  "indication": "Primary hypothyroidism, secondary hypothyroidism, thyroid cancer (TSH suppression)"
+}

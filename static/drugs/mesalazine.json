@@ -1,0 +1,14 @@
+{
+  "name": "Mesalazine",
+  "class": "Aminosalicylates",
+  "mechanism": "Anti-inflammatory action in gut mucosa, exact mechanism unknown",
+  "dosing": "Ulcerative colitis: 1.2-2.4g daily in divided doses. Maintenance: 1.2-1.6g daily",
+  "contraindications": "Severe renal impairment, salicylate hypersensitivity",
+  "interactions": "Lactulose (↓ release), azathioprine (theoretical ↑ leucopenia)",
+  "monitoring": "FBC, U&Es, LFTs before and during treatment. Annual monitoring",
+  "pregnancy": "Safe - continue treatment. Folic acid supplementation recommended",
+  "sideEffects": "Headache, nausea, rash, blood dyscrasias, nephrotoxicity (rare)",
+  "pharmacokinetics": "Topical action in gut, minimal systemic absorption",
+  "clinicalPearls": "Take with food. Multiple formulations with different release characteristics",
+  "indication": "Ulcerative colitis treatment and maintenance, Crohn\\"
+}

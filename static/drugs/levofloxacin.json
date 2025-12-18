@@ -1,0 +1,14 @@
+{
+  "name": "Levofloxacin",
+  "class": "Fluoroquinolone antibiotic",
+  "mechanism": "Inhibits bacterial DNA gyrase and topoisomerase IV",
+  "dosing": "CAP: 500mg OD-BD for 5-7 days. UTI: 500mg OD for 7-10 days. IV/PO",
+  "contraindications": "Hypersensitivity to quinolones, epilepsy, QT prolongation, tendon disorders",
+  "interactions": "NSAIDs (seizure risk), corticosteroids (tendon rupture), drugs prolonging QT",
+  "monitoring": "Tendon pain, CNS effects, blood glucose (diabetes), ECG if QT risk",
+  "pregnancy": "Avoid - cartilage damage in animal studies",
+  "sideEffects": "Nausea, diarrhoea, tendon rupture, QT prolongation, photosensitivity, C. diff",
+  "pharmacokinetics": "Excellent bioavailability (99%), renal excretion, half-life 6-8h",
+  "clinicalPearls": "Reserve for resistant infections. Warn about tendon rupture risk. Sun protection advised",
+  "indication": "Community-acquired pneumonia, complicated UTI, chronic prostatitis, anthrax (as per guidelines)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Nitroglycerin (GTN)",
+  "class": "Nitrate vasodilator",
+  "mechanism": "Releases nitric oxide causing venodilation and coronary artery dilation",
+  "dosing": "Sublingual: 400-600mcg (1-2 sprays or tablets) every 5 minutes up to 3 doses. IV infusion titrated in acute coronary syndromes/heart failure",
+  "contraindications": "Hypotension, use with PDE5 inhibitors (sildenafil) within 24-48h, severe aortic stenosis",
+  "interactions": "PDE5 inhibitors (severe hypotension), antihypertensives (additive hypotension)",
+  "monitoring": "BP, heart rate, relief of chest pain, signs of headache or flushing",
+  "pregnancy": "Use if clearly indicated; consult obstetrics",
+  "sideEffects": "Headache, hypotension, flushing, reflex tachycardia",
+  "pharmacokinetics": "Rapid onset sublingual; short half-life; hepatic metabolism for oral/IV forms",
+  "clinicalPearls": "Sublingual GTN for acute angina; remove patch at night to reduce tolerance. Avoid with PDE5 inhibitors",
+  "indication": "Acute angina, acute pulmonary oedema (IV), myocardial ischaemia"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Codeine",
+  "class": "Opioid analgesic",
+  "mechanism": "Prodrug converted to morphine by CYP2D6, mu-opioid receptor agonist",
+  "dosing": "Pain: 15-60mg QDS PRN. Cough: 15-30mg QDS. Diarrhoea: 30mg TDS-QDS",
+  "contraindications": "Children <12 years, breastfeeding, severe respiratory disease, acute abdomen",
+  "interactions": "Alcohol/sedatives (↑ sedation), MAOIs (avoid), CYP2D6 inhibitors (↓ efficacy)",
+  "monitoring": "Respiratory rate, sedation level, bowel function, signs of dependence",
+  "pregnancy": "Avoid near term - risk of neonatal respiratory depression",
+  "sideEffects": "Constipation, nausea, sedation, respiratory depression, dependence",
+  "pharmacokinetics": "Prodrug, 10% converted to morphine, half-life: 3-4h",
+  "clinicalPearls": "Variable efficacy due to CYP2D6 polymorphisms. Always prescribe laxatives for regular use",
+  "indication": "Mild to moderate pain, dry cough, diarrhoea"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Human Albumin Solution",
+  "class": "Colloid (Plasma substitute)",
+  "mechanism": "Increases oncotic pressure, expanding intravascular volume",
+  "dosing": "4.5% (iso-oncotic): 500ml over 30min-4h. 20% (hyperoncotic): 100ml over 30-60min. Adjust to response",
+  "contraindications": "Severe anaemia, cardiac failure (relative), pulmonary oedema",
+  "interactions": "None significant",
+  "monitoring": "CVP, BP, fluid balance, pulmonary oedema signs, electrolytes",
+  "pregnancy": "Safe if clinically indicated",
+  "sideEffects": "Fluid overload, allergic reactions (rare), transient hypotension",
+  "pharmacokinetics": "Remains intravascular, half-life ~16-20 days",
+  "clinicalPearls": "More expensive than crystalloids. Consider for severe hypoalbuminaemia, ascites drainage, burns. 20% useful when fluid restricted",
+  "indication": "Severe hypoalbuminaemia, large volume paracentesis, burns, hepatorenal syndrome"
+}

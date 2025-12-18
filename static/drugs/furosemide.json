@@ -1,0 +1,14 @@
+{
+  "name": "Furosemide",
+  "class": "Diuretics, loop",
+  "mechanism": "Inhibits Na+/K+/2Cl- co-transporter in ascending limb of loop of Henle",
+  "dosing": "Heart failure: Start 20-40mg daily, titrate to response. Oedema: 20-80mg daily. IV dose = half oral dose",
+  "contraindications": "Anuria, severe electrolyte imbalance, hepatic coma",
+  "interactions": "Lithium (↑ toxicity), digoxin (hypokalaemia ↑ toxicity), NSAIDs (↓ effect)",
+  "monitoring": "U&Es (check 1–2 weeks after initiation/titration), fluid balance, weight, hearing (especially after high IV doses). If giving IV infusion, administer at ≤4 mg/min to reduce ototoxicity risk; monitor renal function and electrolytes closely",
+  "pregnancy": "Use with caution; consult UKTIS for guidance",
+  "sideEffects": "Hypokalaemia, hyponatraemia, dehydration, ototoxicity (especially with high IV doses or rapid administration), gout",
+  "pharmacokinetics": "Oral onset: 1h, Peak: 1-2h, Duration: 6h. IV onset: 5min",
+  "clinicalPearls": "Take in morning to avoid nocturia. Monitor K+ closely. Ototoxicity with high IV doses; IV infusion rate should not exceed 4 mg/min. Ensure renal function and electrolytes monitored after initiation/titration",
+  "indication": "Heart failure, pulmonary oedema, hypertension (rarely used), ascites"
+}

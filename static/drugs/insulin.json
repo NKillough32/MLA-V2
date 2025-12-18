@@ -1,0 +1,14 @@
+{
+  "name": "Insulin (soluble/regular; e.g., Actrapid/Humulin S)",
+  "class": "Short-acting insulin",
+  "mechanism": "Replaces endogenous insulin to facilitate cellular glucose uptake and inhibit hepatic glucose output",
+  "dosing": "SC pre-meal dosing individualised (often part of basal-bolus regimens). IV infusion for DKA/HHS per local protocol (e.g., 0.1 units/kg/h).",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "Beta-blockers (mask hypos), steroids (↑ glucose), alcohol (hypo risk)",
+  "monitoring": "Capillary glucose, ketones if unwell, electrolytes in IV therapy",
+  "pregnancy": "Safe; first-line in gestational diabetes if needed",
+  "sideEffects": "Hypoglycaemia, weight gain, injection-site reactions",
+  "pharmacokinetics": "Onset ~30 min SC; peak 2–4 h; duration 6–8 h",
+  "clinicalPearls": "Use IV only in monitored settings per protocol. Educate on hypo recognition and treatment; driving advice per DVLA.",
+  "indication": "Type 1 and Type 2 diabetes (as part of regimens); DKA/HHS (IV)"
+}

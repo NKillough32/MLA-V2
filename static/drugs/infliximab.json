@@ -1,0 +1,14 @@
+{
+  "name": "Infliximab",
+  "class": "Monoclonal antibodies (Anti-TNF)",
+  "mechanism": "Chimeric monoclonal antibody against TNF-alpha",
+  "dosing": "IV infusion: 5mg/kg at 0, 2, 6 weeks then every 8 weeks. Pre-medicate with antihistamine ± paracetamol/hydrocortisone",
+  "contraindications": "Active infection, TB, severe heart failure, demyelinating disease",
+  "interactions": "Live vaccines (avoid), other immunosuppressants (↑ infection risk)",
+  "monitoring": "TB screening pre-treatment, FBC, LFTs, infusion reactions, infections, malignancy screening",
+  "pregnancy": "Avoid if possible - crosses placenta especially in 3rd trimester. Stop 6-10 weeks before delivery if possible",
+  "sideEffects": "Infusion reactions (fever, chills, urticaria), infections (including TB reactivation, opportunistic), malignancy risk, heart failure exacerbation, lupus-like syndrome, hepatotoxicity",
+  "pharmacokinetics": "IV infusion over 2h, half-life ~8-10 days",
+  "clinicalPearls": "Chimeric antibody (mouse-human) - more immunogenic than adalimumab. Screen for latent TB before starting. Pre-medicate to reduce infusion reactions. Hospital administration needed. Biosimilars available. Stop if serious infection",
+  "indication": "Crohn\\"
+}

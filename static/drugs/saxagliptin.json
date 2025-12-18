@@ -1,0 +1,12 @@
+{
+  "name": "Saxagliptin",
+  "class": "DPP-4 inhibitor",
+  "mechanism": "Inhibits DPP-4",
+  "dosing": "5mg once daily (adjust for renal impairment)",
+  "contraindications": "Hypersensitivity",
+  "monitoring": "Renal function",
+  "pregnancy": "Avoid",
+  "sideEffects": "Pancreatitis (rare)",
+  "clinicalPearls": "Well-tolerated, weight neutral",
+  "indication": "T2DM"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Ticagrelor",
+  "class": "Antiplatelet - P2Y12 receptor antagonist (reversible)",
+  "mechanism": "Direct-acting reversible P2Y12 ADP receptor antagonist, prevents platelet aggregation",
+  "dosing": "Loading 180mg PO, then 90mg BD for maintenance (duration per ACS/PCI protocol)",
+  "contraindications": "Active bleeding, history of intracranial haemorrhage, severe hepatic impairment",
+  "interactions": "Strong CYP3A4 inhibitors/inducers, concomitant anticoagulants/antiplatelets (↑ bleeding)",
+  "monitoring": "Signs of bleeding, haemoglobin, platelets",
+  "pregnancy": "Use only if clearly needed",
+  "sideEffects": "Dyspnoea (commonly reported), bleeding, bradyarrhythmias (rare)",
+  "pharmacokinetics": "Rapid onset; hepatic metabolism via CYP3A4",
+  "clinicalPearls": "Used in acute coronary syndromes and after PCI; do not give with ticlopidine/clopidogrel concurrently",
+  "indication": "Acute coronary syndrome (with or without PCI) and secondary prevention when indicated"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Chlorpromazine",
+  "class": "Antipsychotics, first-generation (typical)",
+  "mechanism": "Dopamine D2 receptor antagonist + antimuscarinic + antihistamine + alpha-blocking effects",
+  "dosing": "Schizophrenia: start 25mg TDS, increase gradually to 75-300mg daily. Nausea: 10-25mg TDS",
+  "contraindications": "CNS depression, phaeochromocytoma, bone marrow depression",
+  "interactions": "CNS depressants, drugs prolonging QT, antihypertensives (↑ hypotension)",
+  "monitoring": "FBC, U&Es, LFTs, lipids, glucose, weight, BP, ECG (QTc), EPS, sedation",
+  "pregnancy": "Use only if essential - EPS in neonate",
+  "sideEffects": "Sedation (very common), extrapyramidal side effects, hypotension, antimuscarinic effects, hyperprolactinaemia, neuroleptic malignant syndrome, QT prolongation",
+  "pharmacokinetics": "Oral/IM, hepatic metabolism, long half-life",
+  "clinicalPearls": "First antipsychotic (1950s) - now rarely first-line. Very sedating. Useful for intractable hiccups. Monitor for EPS and tardive dyskinesia. Photosensitivity - advise sun protection",
+  "indication": "Schizophrenia (rarely first-line), acute mania, severe anxiety, intractable hiccups, nausea/vomiting"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Iloprost",
+  "class": "Prostaglandins (Prostacyclin analogue)",
+  "mechanism": "Prostacyclin analogue - vasodilation and inhibits platelet aggregation",
+  "dosing": "Pulmonary hypertension: 2.5-5mcg inhaled 6-9 times daily. Critical limb ischaemia: 0.5-2ng/kg/min IV for 6h daily",
+  "contraindications": "Unstable angina, MI within 6 months, severe arrhythmias, conditions increasing bleeding risk",
+  "interactions": "Antihypertensives (↑ hypotension), anticoagulants (↑ bleeding)",
+  "monitoring": "BP, HR, bleeding, respiratory function (if inhaled)",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Hypotension, flushing, headache, jaw pain, cough (inhaled), bleeding tendency",
+  "pharmacokinetics": "Inhaled or IV, short half-life (20-30min)",
+  "clinicalPearls": "For pulmonary hypertension when oral therapies inadequate. Inhaled route reduces systemic side effects. Frequent dosing needed (short half-life). Also used in critical limb ischaemia when revascularization not possible",
+  "indication": "Pulmonary arterial hypertension, critical limb ischaemia, Raynaud\\"
+}

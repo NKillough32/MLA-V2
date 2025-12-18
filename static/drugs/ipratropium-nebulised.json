@@ -1,0 +1,14 @@
+{
+  "name": "Ipratropium Nebuliser Solution",
+  "class": "Antimuscarinic bronchodilator (nebulised)",
+  "mechanism": "Muscarinic antagonist causing bronchodilation",
+  "dosing": "Acute: 500 micrograms QDS PRN. Can combine with salbutamol",
+  "contraindications": "Hypersensitivity, caution in glaucoma/prostatic hypertrophy",
+  "interactions": "Other antimuscarinic drugs (additive effects)",
+  "monitoring": "Respiratory function, heart rate, ocular symptoms",
+  "pregnancy": "Safe to use if needed",
+  "sideEffects": "Dry mouth, cough, headache, rarely paradoxical bronchospasm, glaucoma (if nebuliser mist reaches eyes)",
+  "pharmacokinetics": "Inhaled, minimal systemic absorption, onset 15min, peak 1-2h",
+  "clinicalPearls": "Add to salbutamol in severe asthma/COPD. Protect eyes during nebulisation (mouthpiece better than mask). Slower onset than salbutamol but longer duration",
+  "indication": "Acute asthma (adjunct to β2-agonists), COPD exacerbation"
+}

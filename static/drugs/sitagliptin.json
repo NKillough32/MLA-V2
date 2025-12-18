@@ -1,0 +1,14 @@
+{
+  "name": "Sitagliptin",
+  "class": "Dipeptidylpeptidase-4 inhibitors",
+  "mechanism": "Inhibits DPP-4 enzyme, increasing incretin hormone levels (GLP-1 and GIP)",
+  "dosing": "Type 2 diabetes: 100mg daily. Renal impairment: 50mg daily (eGFR 30-50), 25mg daily (eGFR <30)",
+  "contraindications": "Type 1 diabetes, diabetic ketoacidosis, hypersensitivity",
+  "interactions": "Minimal drug interactions. Digoxin (↑ levels slightly)",
+  "monitoring": "HbA1c, renal function, signs of pancreatitis, hypoglycaemia (with other drugs)",
+  "pregnancy": "Avoid - limited safety data, insulin preferred",
+  "sideEffects": "Headache, URTI, pancreatitis (rare), hypoglycaemia (with insulin/sulfonylureas)",
+  "pharmacokinetics": "Good oral absorption, half-life: 12h, mainly renal excretion",
+  "clinicalPearls": "Weight neutral. Low hypoglycaemia risk as monotherapy. Good add-on to metformin",
+  "indication": "Type 2 diabetes as monotherapy or combination therapy"
+}

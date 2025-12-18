@@ -1,0 +1,14 @@
+{
+  "name": "Sildenafil",
+  "class": "Phosphodiesterase type 5 inhibitor",
+  "mechanism": "Inhibits PDE5, increasing cGMP levels and causing smooth muscle relaxation",
+  "dosing": "Erectile dysfunction: 50mg 1h before sexual activity. Pulmonary hypertension: 20mg TDS",
+  "contraindications": "Nitrates, recent MI/stroke, severe hypotension, hereditary retinal disorders",
+  "interactions": "Nitrates (severe hypotension), alpha-blockers (hypotension), CYP3A4 inhibitors",
+  "monitoring": "Blood pressure, vision changes, priapism, cardiovascular status",
+  "pregnancy": "Not applicable for ED indication. Limited data for pulmonary hypertension",
+  "sideEffects": "Headache, flushing, dyspepsia, visual disturbances, priapism (rare)",
+  "pharmacokinetics": "Rapid absorption, peak: 1h, half-life: 4h, hepatic metabolism",
+  "clinicalPearls": "Never with nitrates. High-fat meals delay absorption. Seek help if erection >4h",
+  "indication": "Erectile dysfunction, pulmonary arterial hypertension"
+}

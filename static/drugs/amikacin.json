@@ -1,0 +1,14 @@
+{
+  "name": "Amikacin",
+  "class": "Aminoglycoside antibiotic",
+  "mechanism": "Binds 30S ribosomal subunit inhibiting protein synthesis and causing bacterial cell death (concentration-dependent)",
+  "dosing": "Typically 15mg/kg once daily IV/IM (adjust for renal function and therapeutic drug monitoring)",
+  "contraindications": "Myasthenia gravis or other neuromuscular disorders (risk of paralysis), known hypersensitivity",
+  "interactions": "Other nephrotoxic or ototoxic drugs (vancomycin, loop diuretics), neuromuscular blockers",
+  "monitoring": "Renal function, trough/peak levels (TDM), audiology if prolonged therapy",
+  "pregnancy": "Avoid unless benefit outweighs risk - risk of fetal ototoxicity",
+  "sideEffects": "Nephrotoxicity, ototoxicity (vestibular and cochlear), neuromuscular blockade (rare)",
+  "pharmacokinetics": "Poor oral absorption; IV/IM dosing. Renal excretion; half-life prolonged in renal impairment",
+  "clinicalPearls": "Use TDM and once-daily dosing where possible. Adjust dose interval in renal impairment",
+  "indication": "Serious Gram-negative infections, synergy for some Gram-positive infections in combination therapy"
+}

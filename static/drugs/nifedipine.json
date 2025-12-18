@@ -1,0 +1,14 @@
+{
+  "name": "Nifedipine",
+  "class": "Calcium channel blockers",
+  "mechanism": "Blocks L-type calcium channels, causing vasodilation and reduced peripheral resistance",
+  "dosing": "Hypertension: Modified release 10mg BD or 30mg daily. Max 90mg daily. Angina: 5-20mg TDS (immediate release)",
+  "contraindications": "Cardiogenic shock, unstable angina, acute MI, aortic stenosis",
+  "interactions": "Beta-blockers (↑ hypotension), digoxin (↑ levels), grapefruit juice (↑ levels)",
+  "monitoring": "Blood pressure, heart rate, ankle oedema, signs of heart failure",
+  "pregnancy": "Use with caution - may inhibit labour",
+  "sideEffects": "Flushing, headache, ankle oedema, gingival hyperplasia, palpitations",
+  "pharmacokinetics": "Rapid absorption, extensive first-pass metabolism, half-life: 2-5h (immediate), 7-12h (modified release)",
+  "clinicalPearls": "Use modified-release preparations only. Sublingual immediate-release can cause stroke. Peripheral oedema dose-related",
+  "indication": "Hypertension, angina, Raynaud phenomenon"
+}

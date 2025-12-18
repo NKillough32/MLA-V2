@@ -1,0 +1,14 @@
+{
+  "name": "Ofloxacin",
+  "class": "Quinolones",
+  "mechanism": "Fluoroquinolone - inhibits bacterial DNA gyrase",
+  "dosing": "Oral: 200-400mg BD. UTI: 200mg BD for 3 days. Topical (ear/eye): 1-2 drops BD-QDS",
+  "contraindications": "Tendon disorders, epilepsy, G6PD deficiency, pregnancy, children (except topical)",
+  "interactions": "NSAIDs (↑ seizure risk), corticosteroids (↑ tendon rupture), theophylline, warfarin",
+  "monitoring": "Tendonitis symptoms, CNS effects, QTc",
+  "pregnancy": "Avoid - arthropathy in animals",
+  "sideEffects": "Nausea, diarrhoea, tendonitis/rupture, QT prolongation, photosensitivity, CNS effects",
+  "pharmacokinetics": "Oral/topical, renal excretion",
+  "clinicalPearls": "Broad-spectrum quinolone. Less commonly used systemically than ciprofloxacin. Topical preparations for ear/eye infections useful. Warn about tendon rupture risk (especially with steroids). Stop if tendon pain",
+  "indication": "UTI, respiratory infections, topical: bacterial conjunctivitis, otitis externa"
+}

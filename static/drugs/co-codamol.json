@@ -1,0 +1,14 @@
+{
+  "name": "Co-codamol",
+  "class": "Opioid/paracetamol combination analgesic",
+  "mechanism": "Codeine acts on μ-opioid receptors, paracetamol inhibits COX enzymes centrally",
+  "dosing": "Adults: 8/500mg or 30/500mg, 1-2 tablets every 4-6 hours (max 8 tablets/24h). Children >12 years: 8/500mg only",
+  "contraindications": "Children <12 years, acute respiratory depression, paralytic ileus, severe hepatic impairment",
+  "interactions": "Alcohol (↑ sedation), MAOIs, other CNS depressants, warfarin (paracetamol component)",
+  "monitoring": "Signs of respiratory depression, constipation, dependence with long-term use",
+  "pregnancy": "Use with caution - potential neonatal withdrawal if used near term",
+  "sideEffects": "Constipation, nausea, drowsiness, dizziness, dry mouth, potential for dependence",
+  "pharmacokinetics": "Codeine: prodrug converted to morphine by CYP2D6. Half-life: 3-4h",
+  "clinicalPearls": "Popular UK combination. 8/500mg available OTC. 30/500mg prescription only. Maximum 3 days OTC use",
+  "indication": "Moderate pain where paracetamol alone insufficient. Post-operative pain, dental pain"
+}

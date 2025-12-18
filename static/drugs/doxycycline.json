@@ -1,0 +1,14 @@
+{
+  "name": "Doxycycline",
+  "class": "Tetracyclines and glycylcyclines",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to 30S ribosomal subunit",
+  "dosing": "Adults: 200mg on day 1, then 100mg daily. Acne: 40mg daily modified-release. Malaria prophylaxis: 100mg daily",
+  "contraindications": "Pregnancy, breastfeeding, children <12 years, myasthenia gravis",
+  "interactions": "Antacids/iron (↓ absorption), warfarin (↑ INR), penicillins (antagonistic)",
+  "monitoring": "LFTs if prolonged use, signs of C.difficile colitis, photosensitivity",
+  "pregnancy": "Contraindicated - risk of dental staining and bone growth inhibition in fetus",
+  "sideEffects": "GI upset, photosensitivity, oesophageal irritation, vaginal thrush",
+  "pharmacokinetics": "Well absorbed, Half-life: 18-22h, Hepatic metabolism and renal excretion",
+  "clinicalPearls": "Take with food, avoid dairy 2h before/after. Stay upright 30min after dose. First-line for atypical pneumonia",
+  "indication": "Respiratory tract infections, acne, chlamydia, malaria prophylaxis, Lyme disease"
+}

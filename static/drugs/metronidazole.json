@@ -1,0 +1,14 @@
+{
+  "name": "Metronidazole",
+  "class": "Nitroimidazole (antibacterial/antiprotozoal)",
+  "mechanism": "Forms reactive metabolites that damage DNA in anaerobic bacteria and certain protozoa",
+  "dosing": "Oral: 400 mg TDS for 5–7 days for most indications. IV: 500 mg TDS. For C. difficile infection metronidazole is no longer first-line for initial episodes — NICE recommends oral vancomycin or fidaxomicin; metronidazole may be used in specific circumstances (e.g. where oral therapy is not possible) typically 400 mg TDS for 10–14 days",
+  "contraindications": "Hypersensitivity to nitroimidazoles; avoid concurrent disulfiram or alcohol (disulfiram-like reaction)",
+  "interactions": "Warfarin (may ↑ INR), alcohol (disulfiram-like reaction), caution with lithium — monitor levels if co-prescribed",
+  "monitoring": "Check for signs of peripheral neuropathy during prolonged courses; LFTs if used long-term or in hepatic impairment",
+  "pregnancy": "Use specialist/UKTIS advice if required. Avoid in first trimester where possible; may be used later in pregnancy if benefits outweigh risks",
+  "sideEffects": "Metallic taste, nausea, GI upset, headache, peripheral neuropathy with prolonged use, rarely hepatic dysfunction or seizures",
+  "pharmacokinetics": "Well absorbed orally with good tissue and CNS penetration; hepatic metabolism with renal excretion of metabolites",
+  "clinicalPearls": "Avoid alcohol during treatment and for 48 hours afterwards. Not first-line for initial C. difficile per current NICE guidance — use oral vancomycin/fidaxomicin where indicated. Prolonged therapy risks peripheral neuropathy and should prompt review",
+  "indication": "Anaerobic infections, bacterial vaginosis, H. pylori eradication (as part of combination therapy), giardiasis/trichomoniasis, limited/alternative role in C. difficile infection"
+}

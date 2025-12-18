@@ -1,0 +1,12 @@
+{
+  "name": "Rabeprazole",
+  "class": "PPI",
+  "mechanism": "Proton pump inhibitor",
+  "dosing": "20mg once daily",
+  "contraindications": "Hypersensitivity",
+  "monitoring": "Response, magnesium with long-term use",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "GI upset, headache",
+  "clinicalPearls": "Alternative PPI",
+  "indication": "GORD, PUD"
+}

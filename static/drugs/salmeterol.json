@@ -1,0 +1,14 @@
+{
+  "name": "Salmeterol",
+  "class": "Long-acting β2-agonist (LABA)",
+  "mechanism": "Selective β2-adrenoreceptor agonist with 12-hour duration of action",
+  "dosing": "Adults: 25-50mcg BD via inhaler. Always used with inhaled corticosteroid",
+  "contraindications": "Hypersensitivity. Never use as monotherapy in asthma",
+  "interactions": "β-blockers (antagonism), diuretics (hypokalaemia), theophylline",
+  "monitoring": "Peak flow, asthma control, signs of paradoxical bronchospasm",
+  "pregnancy": "Safe - no evidence of harm",
+  "sideEffects": "Tremor, palpitations, headache, paradoxical bronchospasm",
+  "pharmacokinetics": "Onset: 10-20min, Peak: 3-4h, Duration: 12h",
+  "clinicalPearls": "Always combined with ICS. Not for acute relief. Green accuhaler common in UK",
+  "indication": "Asthma (step 3+ therapy with ICS), COPD (combination inhalers)"
+}

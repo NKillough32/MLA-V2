@@ -1,0 +1,14 @@
+{
+  "name": "Bisacodyl",
+  "class": "Stimulant laxatives",
+  "mechanism": "Stimulates colonic nerve plexus, increasing peristalsis and secretion",
+  "dosing": "Oral: 5-10mg at night. Rectal: 10mg suppository. Max 3 consecutive days",
+  "contraindications": "Intestinal obstruction, acute abdomen, severe dehydration, ileus",
+  "interactions": "Milk/antacids (enteric coating dissolution), diuretics (↑ electrolyte loss)",
+  "monitoring": "Bowel movements, electrolytes (with prolonged use), signs of dependency",
+  "pregnancy": "Safe for short-term use",
+  "sideEffects": "Abdominal cramps, diarrhoea, electrolyte imbalance, dependency with long-term use",
+  "pharmacokinetics": "Enteric-coated tablets, activated in alkaline environment of small intestine",
+  "clinicalPearls": "Take tablets whole, avoid milk within 1h. Suppositories work within 30min. Short-term use only",
+  "indication": "Constipation, bowel preparation for procedures"
+}

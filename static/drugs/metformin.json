@@ -1,0 +1,14 @@
+{
+  "name": "Metformin",
+  "class": "Biguanide (oral hypoglycaemic)",
+  "mechanism": "Reduces hepatic gluconeogenesis, increases insulin sensitivity and reduces intestinal glucose absorption",
+  "dosing": "Immediate-release: start 500 mg once or twice daily with food, titrate up to 1 g twice daily as tolerated. Modified-release: start 500 mg once daily, up to 2 g once daily depending on formulation. Adjust dose for renal impairment—see SmPC and local guidance.",
+  "contraindications": "eGFR <30 mL/min/1.73 m² (contraindicated); acute or chronic metabolic acidosis including diabetic ketoacidosis; conditions associated with hypoxia",
+  "interactions": "Iodinated contrast (withhold around procedure and check eGFR), drugs that alter renal function (NSAIDs, ACEi/ARBs, diuretics) may ↑ metformin accumulation",
+  "monitoring": "Baseline and periodic eGFR (at least annually; more often if eGFR 45–60 or if risk factors present). Check B12 periodically if anaemia or neuropathy. HbA1c every 3–6 months.",
+  "pregnancy": "Used in pregnancy for gestational diabetes and PCOS in some circumstances; specialist/obstetric guidance and UKTIS advice recommended",
+  "sideEffects": "GI upset (nausea, diarrhoea), metallic taste, reduced B12 absorption leading to deficiency, rare risk of lactic acidosis in severe renal impairment or hypoxic states",
+  "pharmacokinetics": "Not metabolised; renally excreted unchanged. Oral bioavailability variable; half-life ~6 hours in plasma but longer clinical effect",
+  "clinicalPearls": "Withhold before and for 48 hours after iodinated contrast or major procedures if renal function may be compromised; consider restarting when eGFR stable. Use lowest effective dose in elderly with declining renal function. Counsel regarding GI effects and slow titration. Consider alternative agents in significant CKD.",
+  "efficacy": "Effective first-line therapy for type 2 diabetes; reduces HbA1c and has favourable weight and CV profile"
+}

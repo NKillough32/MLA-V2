@@ -1,0 +1,14 @@
+{
+  "name": "Calcium Gluconate",
+  "class": "Mineral replacement/Antidote",
+  "mechanism": "Provides calcium ions essential for cardiac, skeletal muscle function and nerve transmission",
+  "dosing": "Hypocalcemia: 10-20ml of 10% solution IV. Hyperkalemia: 10ml of 10% IV. Mg toxicity: 10-20ml IV",
+  "contraindications": "Hypercalcemia, calcium kidney stones, digoxin toxicity",
+  "interactions": "Digoxin (↑ toxicity), thiazides (↑ calcium), levothyroxine (↓ absorption)",
+  "monitoring": "Serum calcium, phosphate, magnesium, ECG, signs of extravasation",
+  "pregnancy": "Safe when clinically indicated. Essential mineral",
+  "sideEffects": "Hypercalcemia, tissue necrosis (extravasation), bradycardia, hypotension",
+  "pharmacokinetics": "IV: immediate effect. Calcium distributed to bones, excreted via kidneys",
+  "clinicalPearls": "Preferred over calcium chloride peripherally. Give slowly to avoid arrhythmias",
+  "indication": "Hypocalcemia, hyperkalemia, hypermagnesemia, calcium channel blocker overdose"
+}

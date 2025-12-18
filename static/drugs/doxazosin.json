@@ -1,0 +1,14 @@
+{
+  "name": "Doxazosin",
+  "class": "Alpha-1 blocker",
+  "mechanism": "Selective α1-adrenoceptor antagonist causing vasodilation and relaxation of bladder neck/prostate",
+  "dosing": "Start 1mg OD at bedtime, titrate slowly to max 16mg OD. Hypertension: 1-16mg OD. BPH: 1-8mg OD",
+  "contraindications": "History of postural hypotension, hypersensitivity",
+  "interactions": "Other antihypertensives (↑ hypotension), PDE5 inhibitors (severe hypotension)",
+  "monitoring": "Blood pressure (especially first dose), symptoms of postural hypotension",
+  "pregnancy": "Limited data - avoid unless essential",
+  "sideEffects": "First-dose hypotension, dizziness, headache, fatigue, peripheral oedema",
+  "pharmacokinetics": "Well absorbed orally, hepatic metabolism, half-life 22h",
+  "clinicalPearls": "Always start at bedtime due to first-dose hypotension. Modified-release formulation available",
+  "indication": "Hypertension (4th line), benign prostatic hyperplasia (BPH)"
+}

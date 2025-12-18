@@ -1,0 +1,14 @@
+{
+  "name": "Prochlorperazine",
+  "class": "Phenothiazine antiemetic/antipsychotic",
+  "mechanism": "Dopamine D2 receptor antagonist in the chemoreceptor trigger zone with additional anticholinergic effects",
+  "dosing": "Adults: Oral 5–10 mg TDS; IM 12.5 mg single dose for acute nausea; PR 25 mg for severe nausea/vomiting. Avoid prolonged high-dose therapy; use the lowest effective dose and review regularly.",
+  "contraindications": "Severe CNS depression, bone marrow suppression, known hypersensitivity, coma, Parkinson\\",
+  "interactions": "Additive CNS depression with opioids, benzodiazepines, anticholinergics; increased risk of extrapyramidal effects with other dopamine antagonists and lithium",
+  "monitoring": "Watch for extrapyramidal symptoms (acute dystonia, parkinsonism, akathisia) and tardive dyskinesia with long-term use. Monitor ECG if other QT-prolonging drugs are co-prescribed and in at-risk patients.",
+  "pregnancy": "Use only if benefit outweighs risk. Newborn extrapyramidal or withdrawal symptoms may occur after third-trimester exposure; consult UKTIS for detailed advice",
+  "sideEffects": "Extrapyramidal reactions, sedation, anticholinergic effects, hypotension, tardive dyskinesia (long-term)",
+  "pharmacokinetics": "Well absorbed orally; extensive hepatic metabolism, elimination in urine and bile",
+  "clinicalPearls": "Avoid in elderly patients with dementia due to increased mortality and stroke risk. Acute dystonic reactions respond to anticholinergics (e.g. procyclidine). Reserve for severe nausea when other agents are unsuitable; consider alternatives in young children and in Parkinson\\",
+  "indication": "Severe nausea and vomiting, vertigo-associated nausea, migraine-related nausea (short courses)"
+}

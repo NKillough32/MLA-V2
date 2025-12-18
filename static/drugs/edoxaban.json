@@ -1,0 +1,14 @@
+{
+  "name": "Edoxaban",
+  "class": "Direct oral anticoagulant (DOAC) – factor Xa inhibitor",
+  "mechanism": "Selective inhibition of factor Xa, reducing thrombin generation",
+  "dosing": "Atrial fibrillation (stroke prevention): 60 mg once daily; reduce to 30 mg once daily if CrCl 15–50 mL/min, body weight ≤60 kg, or concomitant P-gp inhibitors (e.g. verapamil, dronedarone). VTE treatment: start with parenteral anticoagulation for 5–10 days then edoxaban 60 mg once daily (30 mg if dose reduction criteria met). Always check SmPC/local guidelines for indication-specific dosing.",
+  "contraindications": "Active clinically significant bleeding, severe hepatic impairment associated with coagulopathy, mechanical prosthetic heart valves, pregnancy",
+  "interactions": "P-gp inhibitors (↑ edoxaban levels) and inducers (↓ levels), other anticoagulants and antiplatelets (↑ bleeding risk); check for P-gp inhibitors such as amiodarone, verapamil, dronedarone",
+  "monitoring": "Renal function at baseline and periodically (dose adjustments for changes); clinical monitoring for bleeding, Hb and platelets as indicated",
+  "pregnancy": "Contraindicated – use specialist advice",
+  "sideEffects": "Bleeding, anaemia, bruising",
+  "reversal": "No routine specific oral reversal widely available; in life‑threatening bleeding consider idarucizumab only for dabigatran; for factor Xa inhibitors consider prothrombin complex concentrate (PCC) and urgent haematology advice. Local major haemorrhage guidelines apply (urgent PCC ± tranexamic acid, local protocols).",
+  "clinicalPearls": "Assess renal function and body weight before initiating. Missed doses should be taken as soon as remembered on the same day but do not double doses. Use caution with concomitant antiplatelet therapy.",
+  "indication": "Stroke prevention in non-valvular AF, treatment and secondary prevention of VTE"
+}

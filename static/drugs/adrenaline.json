@@ -1,0 +1,14 @@
+{
+  "name": "Adrenaline (Epinephrine)",
+  "class": "Emergency drugs",
+  "mechanism": "Non-selective α and β adrenergic agonist causing vasoconstriction and inotropy",
+  "dosing": "Anaphylaxis: 500mcg IM (0.5ml of 1:1000). Cardiac arrest: 1mg IV (10ml of 1:10,000)",
+  "contraindications": "None in life-threatening situations. Caution with severe hypertension",
+  "interactions": "β-blockers (unopposed α effects), tricyclics (arrhythmias), MAOIs",
+  "monitoring": "Heart rate, blood pressure, ECG, blood glucose",
+  "pregnancy": "Safe in life-threatening situations",
+  "sideEffects": "Tachycardia, hypertension, arrhythmias, tremor, anxiety, hyperglycaemia",
+  "pharmacokinetics": "Rapid onset, short duration: 5-10min, metabolised by COMT/MAO",
+  "clinicalPearls": "First-line for anaphylaxis. IM route for anaphylaxis, IV for cardiac arrest. Check expiry dates",
+  "indication": "Anaphylaxis, cardiac arrest, severe asthma (nebulised), local anaesthetic adjunct"
+}

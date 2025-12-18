@@ -1,0 +1,14 @@
+{
+  "name": "Alfuzosin",
+  "class": "Alpha-blockers",
+  "mechanism": "Selective α1-adrenoceptor antagonist - relaxes prostatic and bladder neck smooth muscle",
+  "dosing": "10mg OD (modified release)",
+  "contraindications": "Hypotension, postural hypotension history, severe hepatic impairment",
+  "interactions": "Antihypertensives (↑ hypotension), CYP3A4 inhibitors (↑ levels), PDE5 inhibitors (caution)",
+  "monitoring": "BP (especially after first dose), urinary symptoms, postural hypotension",
+  "pregnancy": "Not applicable (male indication)",
+  "sideEffects": "Dizziness, postural hypotension, headache, fatigue, retrograde ejaculation, floppy iris syndrome (cataract surgery)",
+  "pharmacokinetics": "Oral, hepatic metabolism, half-life 10h",
+  "clinicalPearls": "Once-daily uroselective α-blocker. Less postural hypotension than doxazosin. Warn about first-dose hypotension. Inform ophthalmologist before cataract surgery (floppy iris). Effects within 48h",
+  "indication": "Benign prostatic hyperplasia"
+}

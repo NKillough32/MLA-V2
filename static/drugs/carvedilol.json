@@ -1,0 +1,14 @@
+{
+  "name": "Carvedilol",
+  "class": "Non-selective beta blocker with alpha-blocking activity",
+  "mechanism": "β1, β2, and α1 antagonist providing vasodilation and reduced cardiac workload",
+  "dosing": "Heart failure: start 3.125mg BD, titrate slowly to max 25-50mg BD. Hypertension: 12.5-50mg daily",
+  "contraindications": "Severe heart failure decompensation, asthma, heart block, severe hepatic impairment",
+  "interactions": "Digoxin (↑ levels), insulin (masks hypoglycaemia), calcium channel blockers",
+  "monitoring": "Heart rate, blood pressure, signs of heart failure worsening, hepatic function",
+  "pregnancy": "Limited data - use only if benefit outweighs risk",
+  "sideEffects": "Dizziness, bradycardia, hypotension, fatigue, bronchospasm",
+  "pharmacokinetics": "Extensive hepatic metabolism, half-life 6-10h",
+  "clinicalPearls": "Evidence-based for heart failure. Start low, go slow with careful titration",
+  "indication": "Heart failure, post-MI, hypertension"
+}

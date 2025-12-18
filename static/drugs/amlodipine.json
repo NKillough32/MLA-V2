@@ -1,0 +1,14 @@
+{
+  "name": "Amlodipine",
+  "class": "Calcium channel blockers",
+  "mechanism": "Blocks L-type calcium channels in vascular smooth muscle and myocardium, causing vasodilation",
+  "dosing": "Hypertension: Start 5mg daily, max 10mg daily. Elderly/hepatic impairment: start 2.5mg daily",
+  "contraindications": "Hypersensitivity, unstable angina, significant aortic stenosis",
+  "interactions": "Simvastatin (limit simvastatin to 20mg), CYP3A4 inhibitors (monitor for hypotension)",
+  "monitoring": "Blood pressure, heart rate, signs of fluid retention, ankle oedema",
+  "pregnancy": "Avoid unless essential - limited safety data",
+  "sideEffects": "Ankle oedema (dose-related), flushing, dizziness, fatigue, gingival hyperplasia (rare)",
+  "pharmacokinetics": "Peak: 6-12h, Half-life: 35-50h, Hepatic metabolism via CYP3A4",
+  "clinicalPearls": "Long half-life allows once daily dosing. Ankle oedema not due to fluid retention. Preferred CCB in UK",
+  "indication": "Hypertension, stable angina. Often used as add-on therapy"
+}

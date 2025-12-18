@@ -1,0 +1,14 @@
+{
+  "name": "Amiodarone",
+  "class": "Antiarrhythmic drugs (Class III)",
+  "mechanism": "Blocks potassium channels, prolongs action potential and refractory period",
+  "dosing": "Loading: 200mg TDS for 1 week, then 200mg BD for 1 week. Maintenance: 200mg daily",
+  "contraindications": "Sinus bradycardia, heart block, thyroid disease, iodine allergy",
+  "interactions": "Warfarin (↑ INR), digoxin (↑ levels), β-blockers (bradycardia), many others",
+  "monitoring": "TFTs and LFTs every 6 months; annual CXR; ECG at baseline and periodically; vision checks and ophthalmology referral if visual symptoms. Pre-treatment: TFTs, LFTs, CXR",
+  "pregnancy": "Avoid in pregnancy - risk of neonatal hypothyroidism and bradycardia; UKTIS advises avoid unless essential",
+  "sideEffects": "Pulmonary fibrosis, thyroid dysfunction, hepatotoxicity, corneal deposits, skin discolouration",
+  "pharmacokinetics": "Very long half-life: 20-100 days, extensive tissue distribution",
+  "clinicalPearls": "Many serious side effects. Regular monitoring essential (TFTs/LFTs 6-monthly, CXR annually). Ophthalmology review if visual symptoms. Sun protection (photosensitivity)",
+  "indication": "Life-threatening arrhythmias, AF (when other drugs fail), VT/VF"
+}

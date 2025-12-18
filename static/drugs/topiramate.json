@@ -1,0 +1,14 @@
+{
+  "name": "Topiramate",
+  "class": "Antiepileptic drugs",
+  "mechanism": "Multiple mechanisms: blocks sodium channels, enhances GABA, blocks glutamate receptors",
+  "dosing": "Epilepsy: Start 25mg BD, increase weekly to 200-400mg daily. Migraine: 25mg daily, increase to 100mg daily",
+  "contraindications": "Hypersensitivity, acute narrow-angle glaucoma",
+  "interactions": "Carbamazepine (↓ topiramate), oral contraceptives (↓ efficacy), lithium (↑ levels)",
+  "monitoring": "Weight, kidney stones, mood changes, cognitive function, visual disturbances",
+  "pregnancy": "Avoid - teratogenic risk including cleft palate. Effective contraception essential",
+  "sideEffects": "Weight loss, cognitive impairment, kidney stones, acute glaucoma, metabolic acidosis",
+  "pharmacokinetics": "Half-life: 20-30h, 80% renal excretion unchanged",
+  "clinicalPearls": "Weight loss common (beneficial in some). Cognitive effects dose-related. Slow titration essential",
+  "indication": "Epilepsy, migraine prophylaxis, bipolar disorder (unlicensed)"
+}

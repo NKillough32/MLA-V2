@@ -1,0 +1,14 @@
+{
+  "name": "Theophylline",
+  "class": "Methylxanthine bronchodilator",
+  "mechanism": "Phosphodiesterase inhibition and adenosine receptor antagonism",
+  "dosing": "MR preparation: 200-300mg BD. Adjust to therapeutic levels (10-20mg/L)",
+  "contraindications": "Hypersensitivity, porphyria. Caution in cardiovascular disease",
+  "interactions": "Ciprofloxacin (↑ levels), carbamazepine (↓ levels), smoking (↓ levels)",
+  "monitoring": "Theophylline levels, signs of toxicity, heart rate, seizures",
+  "pregnancy": "Use with caution - crosses placenta but appears safe",
+  "sideEffects": "Nausea, headache, insomnia, arrhythmias, seizures (toxicity)",
+  "pharmacokinetics": "Narrow therapeutic window, hepatic metabolism, wide individual variation",
+  "clinicalPearls": "Narrow therapeutic window. Many factors affect levels (smoking, infections, drugs)",
+  "indication": "Asthma/COPD (when other treatments inadequate), acute severe asthma"
+}

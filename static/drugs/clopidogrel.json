@@ -1,0 +1,14 @@
+{
+  "name": "Clopidogrel",
+  "class": "Antiplatelet drugs, ADP-receptor antagonists",
+  "mechanism": "Irreversibly inhibits P2Y12 ADP receptor on platelets",
+  "dosing": "Acute coronary syndrome: 600mg loading dose, then 75mg daily. Stroke prevention: 75mg daily",
+  "contraindications": "Active bleeding, severe hepatic impairment",
+  "interactions": "Warfarin (↑ bleeding), Omeprazole/Esomeprazole reduce activation via CYP2C19—avoid; if gastroprotection needed prefer pantoprazole. Other strong CYP2C19 inhibitors may ↓ activation",
+  "monitoring": "Signs of bleeding, FBC, hepatic function",
+  "pregnancy": "Avoid - limited safety data, bleeding risk",
+  "sideEffects": "Bleeding, dyspepsia, rash, thrombotic thrombocytopenic purpura (rare)",
+  "pharmacokinetics": "Prodrug requiring CYP2C19 activation, irreversible platelet inhibition",
+  "clinicalPearls": "Dual antiplatelet therapy with aspirin post-ACS. Genetic testing for CYP2C19 variants",
+  "indication": "Acute coronary syndromes, stroke prevention, peripheral vascular disease"
+}

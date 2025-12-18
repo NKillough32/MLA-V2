@@ -1,0 +1,14 @@
+{
+  "name": "Glimepiride",
+  "class": "Sulfonylureas",
+  "mechanism": "Stimulates pancreatic insulin release by closing K-ATP channels on beta cells",
+  "dosing": "Start 1mg OD with breakfast, increase gradually. Max 6mg daily",
+  "contraindications": "Type 1 diabetes, DKA, severe renal/hepatic impairment",
+  "interactions": "As gliclazide",
+  "monitoring": "Blood glucose, HbA1c, hypoglycaemia, weight",
+  "pregnancy": "Avoid - switch to insulin",
+  "sideEffects": "Hypoglycaemia, weight gain, GI upset, rash, hepatotoxicity (rare)",
+  "pharmacokinetics": "Oral, once daily dosing, hepatic metabolism",
+  "clinicalPearls": "Once-daily sulfonylurea. Similar efficacy to gliclazide but longer acting. Risk of hypoglycaemia (especially in elderly/renal impairment). Counsel on hypoglycaemia symptoms",
+  "indication": "Type 2 diabetes"
+}

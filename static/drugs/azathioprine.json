@@ -1,0 +1,13 @@
+{
+  "name": "Azathioprine",
+  "class": "Immunosuppressant/antimetabolite",
+  "mechanism": "Purine analogue inhibiting DNA synthesis",
+  "dosing": "Dose per indication; TPMT testing recommended prior to use",
+  "contraindications": "Pregnancy unless benefits outweigh risks (specialist advice)",
+  "interactions": "Allopurinol (↑ azathioprine toxicity), other immunosuppressants",
+  "monitoring": "FBC, LFTs, TPMT activity",
+  "pregnancy": "Use only if necessary with specialist advice",
+  "sideEffects": "Myelosuppression, hepatotoxicity",
+  "clinicalPearls": "Check TPMT before prescribing",
+  "indication": "Autoimmune diseases, transplant"
+}

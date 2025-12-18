@@ -1,0 +1,14 @@
+{
+  "name": "Glucagon",
+  "class": "Emergency drugs",
+  "mechanism": "Hormone that stimulates hepatic glucose production and glycogenolysis",
+  "dosing": "Severe hypoglycaemia: 1mg IM/SC/IV. Children <25kg: 0.5mg. May repeat after 10min",
+  "contraindications": "Phaeochromocytoma (may cause hypertensive crisis)",
+  "interactions": "Warfarin (may ↑ anticoagulant effect)",
+  "monitoring": "Blood glucose, consciousness level, blood pressure",
+  "pregnancy": "Safe when clinically indicated",
+  "sideEffects": "Nausea, vomiting, hypokalaemia, hypotension, allergic reactions",
+  "pharmacokinetics": "Onset: 8-10min IM, Duration: 1-2h, hepatic metabolism",
+  "clinicalPearls": "Give glucose orally when conscious. Ineffective if glycogen stores depleted. Train family/carers",
+  "indication": "Severe hypoglycaemia when IV glucose not possible, diagnostic use"
+}

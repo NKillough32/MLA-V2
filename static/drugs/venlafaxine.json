@@ -1,0 +1,14 @@
+{
+  "name": "Venlafaxine",
+  "class": "Antidepressants, tetracyclic and serotonin-noradrenaline reuptake inhibitors",
+  "mechanism": "Inhibits reuptake of serotonin and noradrenaline (SNRI)",
+  "dosing": "Depression: Start 75mg daily, usual 150mg daily, max 375mg daily. XL formulation preferred",
+  "contraindications": "MAOIs, uncontrolled hypertension, severe hepatic/renal impairment",
+  "interactions": "MAOIs (serotonin syndrome), warfarin (↑ bleeding), tramadol (↑ seizure risk)",
+  "monitoring": "Blood pressure (dose-related ↑), mood, suicide risk, withdrawal symptoms",
+  "pregnancy": "Use if benefit outweighs risk - neonatal complications possible",
+  "sideEffects": "Nausea, headache, hypertension (dose-related), withdrawal syndrome, sexual dysfunction",
+  "pharmacokinetics": "Half-life: 5h (active metabolite 11h), hepatic metabolism",
+  "clinicalPearls": "Monitor BP regularly. Severe withdrawal syndrome - taper slowly. Effective for anxiety",
+  "indication": "Depression, generalized anxiety disorder, social anxiety disorder, panic disorder"
+}

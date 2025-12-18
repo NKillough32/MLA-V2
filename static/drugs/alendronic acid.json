@@ -1,0 +1,14 @@
+{
+  "name": "Alendronic Acid (Alendronate)",
+  "class": "Bisphosphonates",
+  "mechanism": "Inhibits osteoclast-mediated bone resorption",
+  "dosing": "Osteoporosis: 70mg weekly. Ensure calcium/vitamin D replete",
+  "contraindications": "Oesophageal abnormalities, hypocalcaemia, inability to stand/sit upright for 30min",
+  "interactions": "Calcium/iron (↓ absorption - separate by 2h), NSAIDs (↑ GI irritation)",
+  "monitoring": "Calcium, vitamin D, renal function, dental health, atypical fractures",
+  "pregnancy": "Avoid - persists in bone for years",
+  "sideEffects": "Oesophagitis, oesophageal ulcer, musculoskeletal pain, atypical femoral fractures (rare), osteonecrosis of jaw (rare)",
+  "pharmacokinetics": "Poor oral absorption, accumulates in bone (half-life years)",
+  "clinicalPearls": "Take with full glass of water on empty stomach. Stay upright 30min. Dental check before starting. Review need after 5 years",
+  "indication": "Osteoporosis, Paget\\"
+}

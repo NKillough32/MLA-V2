@@ -1,0 +1,14 @@
+{
+  "name": "Gabapentin",
+  "class": "Gabapentinoids",
+  "mechanism": "Binds to voltage-gated calcium channel α2δ subunit, reducing neurotransmitter release",
+  "dosing": "Neuropathic pain: Start 300mg daily, increase to 300mg TDS, max 3600mg daily in divided doses",
+  "contraindications": "Hypersensitivity to gabapentin",
+  "interactions": "Antacids (↓ absorption), opioids (↑ sedation), alcohol (↑ CNS depression)",
+  "monitoring": "Pain scores, mood changes, renal function, signs of abuse/dependence",
+  "pregnancy": "Use only if the maternal benefit outweighs fetal risk; consult UKTIS/SmPC",
+  "sideEffects": "Drowsiness, dizziness, fatigue, peripheral oedema, weight gain, ataxia",
+  "pharmacokinetics": "Dose-dependent absorption, Half-life: 5-7h, renal excretion unchanged",
+  "clinicalPearls": "Gradual dose escalation needed. Reduce dose in renal impairment. Potential for abuse. In the UK gabapentin is classed as a Schedule 3 controlled drug (since 2019); prescribers should record supply and be cautious with repeat prescriptions",
+  "indication": "Neuropathic pain, epilepsy, restless leg syndrome (unlicensed)"
+}

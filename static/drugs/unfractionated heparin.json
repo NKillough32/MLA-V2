@@ -1,0 +1,14 @@
+{
+  "name": "Unfractionated Heparin (UFH)",
+  "class": "Heparins",
+  "mechanism": "Enhances antithrombin activity - anticoagulation",
+  "dosing": "Treatment: 80 units/kg bolus then 18 units/kg/h IV (adjust to APTT). Prophylaxis: 5000 units SC BD-TDS",
+  "contraindications": "Active bleeding, haemophilia, thrombocytopenia, recent hemorrhagic stroke",
+  "interactions": "Antiplatelet agents (↑ bleeding), NSAIDs, SSRIs",
+  "monitoring": "APTT (target 1.5-2.5× control for therapeutic), platelet count (HIT), bleeding",
+  "pregnancy": "Safe - does not cross placenta",
+  "sideEffects": "Bleeding, heparin-induced thrombocytopenia (HIT), osteoporosis (long-term), hyperkalaemia",
+  "pharmacokinetics": "IV or SC, onset immediate (IV), short half-life (1-2h), requires monitoring",
+  "clinicalPearls": "Preferred over LMWH when rapid reversal may be needed (surgery, bleeding). Monitored with APTT. Check platelets for HIT (days 5-10). Reversed with protamine. Used in VTE, ACS, cardiac surgery. LMWH easier (no monitoring) so preferred when possible",
+  "indication": "VTE treatment/prophylaxis, ACS, AF, during dialysis, cardiac surgery, when rapid reversal capability needed"
+}

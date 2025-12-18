@@ -1,0 +1,14 @@
+{
+  "name": "Levobupivacaine",
+  "class": "Local anaesthetics",
+  "mechanism": "S-enantiomer of bupivacaine - amide local anaesthetic",
+  "dosing": "As bupivacaine. Max 2mg/kg. Epidural: 0.125-0.75%",
+  "contraindications": "As bupivacaine",
+  "interactions": "As bupivacaine",
+  "monitoring": "As bupivacaine",
+  "pregnancy": "Safe - preferred over bupivacaine in obstetrics",
+  "sideEffects": "Less cardiotoxic than bupivacaine. Otherwise similar side effects",
+  "pharmacokinetics": "Similar to bupivacaine but less cardiotoxic",
+  "clinicalPearls": "Safer than bupivacaine - less CNS and cardiac toxicity. Preferred in obstetrics. More expensive than bupivacaine. Same efficacy but improved safety margin",
+  "indication": "As bupivacaine - preferred when safety margin important (obstetrics, cardiovascular disease)"
+}

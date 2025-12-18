@@ -1,0 +1,14 @@
+{
+  "name": "Metoprolol",
+  "class": "Beta-blocker (β1 selective)",
+  "mechanism": "Selective β1-adrenoceptor antagonist reducing heart rate and myocardial contractility",
+  "dosing": "Hypertension/angina: 50-100mg daily (in divided doses or extended-release). IV for acute rate control per local protocol",
+  "contraindications": "Uncompensated heart failure, severe bradycardia, cardiogenic shock, asthma with active bronchospasm (use cautiously)",
+  "interactions": "Other rate-limiting drugs (CCBs, digoxin), insulin (masks hypoglycaemia), CYP2D6 inhibitors (increase levels)",
+  "monitoring": "Heart rate, blood pressure, signs of heart failure, ECG as needed",
+  "pregnancy": "Use with caution—can cause fetal bradycardia and growth restriction",
+  "sideEffects": "Bradycardia, fatigue, cold extremities, sleep disturbance, impotence",
+  "pharmacokinetics": "Hepatic metabolism (CYP2D6); variable bioavailability; half-life ~3-7h (longer for extended-release formulations)",
+  "clinicalPearls": "Cardioselective at low doses; useful for rate control in AF/flutter and post-MI management",
+  "indication": "Hypertension, angina, rate control in atrial fibrillation, secondary prevention post-MI"
+}

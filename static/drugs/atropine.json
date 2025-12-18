@@ -1,0 +1,14 @@
+{
+  "name": "Atropine",
+  "class": "Antimuscarinic",
+  "mechanism": "Competitive antagonist at muscarinic acetylcholine receptors",
+  "dosing": "Bradycardia: 500mcg IV, repeat if necessary (max 3mg). Pre-med: 300-600mcg IM",
+  "contraindications": "Narrow-angle glaucoma, prostatic enlargement, paralytic ileus",
+  "interactions": "Tricyclics (↑ antimuscarinic effects), antihistamines (↑ sedation)",
+  "monitoring": "Heart rate, blood pressure, pupil size, mental state",
+  "pregnancy": "Safe - crosses placenta but no evidence of harm",
+  "sideEffects": "Dry mouth, blurred vision, urinary retention, confusion, tachycardia",
+  "pharmacokinetics": "Rapid onset: 1-2min IV, Duration: 30min-4h depending on dose",
+  "clinicalPearls": "Antidote for organophosphate poisoning. May cause paradoxical bradycardia at low doses",
+  "indication": "Symptomatic bradycardia, organophosphate poisoning, pre-medication"
+}

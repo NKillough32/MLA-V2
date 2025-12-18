@@ -1,0 +1,14 @@
+{
+  "name": "Denosumab",
+  "class": "Monoclonal antibodies (RANKL inhibitor)",
+  "mechanism": "Monoclonal antibody against RANKL, inhibiting osteoclast formation/function",
+  "dosing": "Osteoporosis: 60mg SC every 6 months. Cancer: 120mg SC every 4 weeks",
+  "contraindications": "Hypocalcaemia (correct first), pregnancy, breastfeeding",
+  "interactions": "None significant but can use with bisphosphonates",
+  "monitoring": "Calcium, vitamin D, dental health, atypical fractures, ONJ, hypocalcaemia after stopping (rebound)",
+  "pregnancy": "Contraindicated - teratogenic",
+  "sideEffects": "Hypocalcaemia (especially if vitamin D deficient), osteonecrosis of jaw, atypical femoral fractures, musculoskeletal pain, serious infections, dermatological reactions",
+  "pharmacokinetics": "SC injection, half-life ~25 days, not renally excreted (safe in CKD)",
+  "clinicalPearls": "Alternative to bisphosphonates. Useful in renal impairment (not renally excreted). Ensure vitamin D replete and adequate calcium intake. Dental check before starting. Stopping can cause rebound increased bone turnover - consider bridging with bisphosphonate. More rapid offset than bisphosphonates",
+  "indication": "Osteoporosis, bone metastases, giant cell tumour of bone, hypercalcaemia of malignancy"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Methotrexate",
+  "class": "Methotrexate",
+  "mechanism": "Inhibits dihydrofolate reductase, interfering with folate metabolism",
+  "dosing": "Rheumatoid arthritis: 7.5-25mg weekly. Always prescribe folic acid 5mg weekly (day after MTX)",
+  "contraindications": "Pregnancy, breastfeeding, severe renal/hepatic impairment, immunodeficiency",
+  "interactions": "NSAIDs (↑ toxicity), trimethoprim (↑ toxicity), PPIs (↑ levels)",
+  "monitoring": "FBC, LFTs, U&Es weekly initially, then monthly. CXR annually",
+  "pregnancy": "Contraindicated - teratogenic and abortifacient",
+  "sideEffects": "Bone marrow suppression, hepatotoxicity, pulmonary fibrosis, mucositis",
+  "pharmacokinetics": "Variable absorption, renal excretion, polyglutamate forms accumulate",
+  "clinicalPearls": "Always prescribe with folic acid. Stop if infection/illness. DMARD monitoring essential",
+  "indication": "Rheumatoid arthritis, psoriasis, cancer (various), ectopic pregnancy"
+}

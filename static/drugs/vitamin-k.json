@@ -1,0 +1,13 @@
+{
+  "name": "Vitamin K (phytonadione)",
+  "class": "Fat-soluble vitamin / antidote",
+  "mechanism": "Required for γ-carboxylation of clotting factors II, VII, IX and X",
+  "dosing": "IV/IM/SC/PO dosing varies by indication; IV should be given slowly to reduce anaphylactoid risk",
+  "contraindications": "Hypersensitivity to phytonadione or excipients",
+  "interactions": "Warfarin (antagonises effect)",
+  "monitoring": "INR for reversal of warfarin anticoagulation",
+  "pregnancy": "Use when indicated (neonatal prophylaxis given IM at birth in many systems)",
+  "sideEffects": "Rare hypersensitivity with IV administration",
+  "clinicalPearls": "Essential antidote for warfarin over-anticoagulation; route/dose depend on urgency",
+  "indication": "Reversal of vitamin K antagonist (warfarin) effects, neonatal prophylaxis"
+}

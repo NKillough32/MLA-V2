@@ -1,0 +1,14 @@
+{
+  "name": "Propranolol",
+  "class": "Non-selective beta-blocker",
+  "mechanism": "Non-selective β1 and β2 antagonist reducing heart rate, myocardial contractility and peripheral vasodilation",
+  "dosing": "Hypertension/angina: 40-320mg daily in divided doses or as extended-release; anxiety/thyrotoxicosis use lower doses as needed",
+  "contraindications": "Asthma/COPD with active bronchospasm, severe peripheral vascular disease, uncontrolled heart failure",
+  "interactions": "CCBs/antiarrhythmics (additive bradycardia), insulin (masks hypoglycaemia), CYP2D6 inhibitors",
+  "monitoring": "HR, BP, signs of heart failure, respiratory status",
+  "pregnancy": "Use with caution; fetal growth restriction reported with long-term use",
+  "sideEffects": "Bradycardia, fatigue, bronchospasm, vivid dreams, impotence",
+  "pharmacokinetics": "Hepatic metabolism; high first-pass effect; lipid soluble (crosses BBB)",
+  "clinicalPearls": "Useful for migraine prophylaxis, essential tremor, thyrotoxicosis symptoms; avoid in reactive airways disease",
+  "indication": "Hypertension, angina, arrhythmias, migraine prophylaxis, essential tremor"
+}

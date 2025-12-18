@@ -1,0 +1,14 @@
+{
+  "name": "Co-amoxiclav (Amoxicillin + Clavulanic acid)",
+  "class": "Penicillins, broad-spectrum",
+  "mechanism": "Beta-lactam + beta-lactamase inhibitor - broader spectrum than amoxicillin alone",
+  "dosing": "Standard: 500/125mg TDS or 875/125mg BD. Severe: 1.2g TDS IV",
+  "contraindications": "Penicillin allergy, co-amoxiclav-associated jaundice history",
+  "interactions": "Warfarin (↑ INR), methotrexate, allopurinol (rash)",
+  "monitoring": "LFTs if prolonged use, signs of cholestatic jaundice",
+  "pregnancy": "Safe",
+  "sideEffects": "Diarrhoea (common), cholestatic jaundice (rare), rash, C.diff",
+  "pharmacokinetics": "Well absorbed orally, renal excretion, dose reduce in renal impairment",
+  "clinicalPearls": "Higher diarrhoea rate than amoxicillin. Cholestatic jaundice can occur weeks after stopping. Good for bite wounds, aspiration pneumonia",
+  "indication": "Cellulitis, animal bites, aspiration pneumonia, dental infections, UTI (if resistant)"
+}

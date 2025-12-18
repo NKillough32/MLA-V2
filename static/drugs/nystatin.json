@@ -1,0 +1,14 @@
+{
+  "name": "Nystatin",
+  "class": "Antifungal drugs (Polyene)",
+  "mechanism": "Binds to fungal cell membrane ergosterol, causing cell death",
+  "dosing": "Oral thrush: 100,000 units QDS (swish and swallow or retain in mouth). Intestinal: 500,000 units QDS",
+  "contraindications": "Hypersensitivity",
+  "interactions": "None (not absorbed)",
+  "monitoring": "Clinical response",
+  "pregnancy": "Safe",
+  "sideEffects": "Nausea, oral irritation (if suspension), diarrhoea",
+  "pharmacokinetics": "Not absorbed from GI tract - acts topically",
+  "clinicalPearls": "Topical antifungal only (not absorbed). For oral thrush: hold in mouth as long as possible before swallowing. Continue for 48h after symptoms resolve. Denture hygiene important",
+  "indication": "Oral and intestinal candidiasis, candidal skin infections (topical)"
+}

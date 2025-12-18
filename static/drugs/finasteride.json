@@ -1,0 +1,14 @@
+{
+  "name": "Finasteride",
+  "class": "5 alpha-reductase inhibitors",
+  "mechanism": "Inhibits type 2 5α-reductase, reducing DHT",
+  "dosing": "BPH: 5mg OD. Male pattern baldness: 1mg OD",
+  "contraindications": "Women of childbearing age, children, pregnancy",
+  "interactions": "None significant",
+  "monitoring": "PSA, prostate symptoms, hair growth (if used for alopecia)",
+  "pregnancy": "Contraindicated - teratogenic",
+  "sideEffects": "Sexual dysfunction (impotence, reduced libido, ejaculation disorders), gynaecomastia, depression",
+  "pharmacokinetics": "Oral, half-life 5-6h (metabolites longer)",
+  "clinicalPearls": "Takes 3-6 months for BPH benefit. Reduces PSA by ~50% - need to double PSA value for screening. Post-finasteride syndrome controversial but reported. Avoid contact with crushed tablets if pregnant",
+  "indication": "Benign prostatic hyperplasia, male pattern baldness"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Tenofovir Disoproxil (TDF)",
+  "class": "Antiviral drugs - Nucleotide reverse transcriptase inhibitor",
+  "mechanism": "Inhibits HIV reverse transcriptase and HBV polymerase",
+  "dosing": "HIV: 245mg OD (as part of combination therapy). HBV: 245mg OD",
+  "contraindications": "Hypersensitivity. Caution in renal impairment",
+  "interactions": "Didanosine (↑ toxicity - avoid), nephrotoxic drugs, boosted PIs (↑ levels)",
+  "monitoring": "Renal function (calculate eGFR pre-treatment and regularly), bone density (long-term), viral load, CD4 count",
+  "pregnancy": "Safe - preferred NRTI in pregnancy",
+  "sideEffects": "Renal impairment (tubular dysfunction, Fanconi syndrome), osteoporosis, nausea, diarrhoea, lactic acidosis (rare)",
+  "pharmacokinetics": "Oral, renal excretion, dose adjust in CKD",
+  "clinicalPearls": "Backbone of many HIV regimens. Also effective for HBV. Monitor renal function closely. Newer formulation (tenofovir alafenamide - TAF) has less renal/bone toxicity. Part of PrEP regime",
+  "indication": "HIV infection (combination therapy), chronic hepatitis B, HIV pre-exposure prophylaxis (PrEP)"
+}

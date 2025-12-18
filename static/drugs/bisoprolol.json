@@ -1,0 +1,14 @@
+{
+  "name": "Bisoprolol",
+  "class": "Beta-blockers",
+  "mechanism": "Selective antagonist of cardiac beta-1 adrenoreceptors",
+  "dosing": "Heart failure: Start 1.25mg daily, titrate to 10mg daily. Hypertension: 5-10mg daily",
+  "contraindications": "Asthma, severe COPD, cardiogenic shock, severe bradycardia, severe heart failure",
+  "interactions": "Calcium channel blockers (↑ bradycardia), insulin (masks hypoglycemia), NSAIDs",
+  "monitoring": "Heart rate, blood pressure, signs of heart failure, renal function, glucose",
+  "pregnancy": "Use only if the potential maternal benefit outweighs fetal risk; avoid in first trimester if possible and consult UKTIS/specialist guidance. Monitor fetal growth and consider alternative agents if planning pregnancy",
+  "sideEffects": "Bradycardia, hypotension, fatigue, cold extremities, bronchospasm",
+  "pharmacokinetics": "Good oral bioavailability. t½ 10-12h. 50% hepatic, 50% renal elimination",
+  "clinicalPearls": "Most cardioselective beta-blocker. Evidence-based for heart failure",
+  "indication": "Heart failure, post-MI, hypertension, angina, atrial fibrillation"
+}

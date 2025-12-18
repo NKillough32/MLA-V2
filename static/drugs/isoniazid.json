@@ -1,0 +1,13 @@
+{
+  "name": "Isoniazid",
+  "class": "Antitubercular",
+  "mechanism": "Inhibits mycolic acid synthesis",
+  "dosing": "300mg daily (adult) in TB regimens",
+  "contraindications": "Acute liver disease",
+  "interactions": "Inhibits CYP enzymes (some interactions)",
+  "monitoring": "LFTs, pyridoxine supplementation (B6) to reduce neuropathy",
+  "pregnancy": "Use if indicated with pyridoxine",
+  "sideEffects": "Hepatotoxicity, peripheral neuropathy",
+  "clinicalPearls": "Give pyridoxine to prevent neuropathy",
+  "indication": "TB"
+}

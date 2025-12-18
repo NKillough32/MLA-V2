@@ -1,0 +1,14 @@
+{
+  "name": "Loratadine",
+  "class": "Second-generation antihistamine (H1 antagonist)",
+  "mechanism": "Selective peripheral H1 receptor antagonist, minimal CNS and anticholinergic effects",
+  "dosing": "Adults: 10mg daily. Children 2-12 years: 5mg daily (<30kg) or 10mg daily (>30kg)",
+  "contraindications": "Hypersensitivity to loratadine, severe hepatic impairment",
+  "interactions": "CYP3A4 inhibitors (ketoconazole, erythromycin) may ↑ levels but no clinical significance",
+  "monitoring": "Sedation level, effectiveness for allergic symptoms",
+  "pregnancy": "Generally considered compatible in pregnancy; preferred antihistamine in many cases, see UKTIS",
+  "sideEffects": "Headache, drowsiness (3%), dry mouth, fatigue, nervousness",
+  "pharmacokinetics": "Rapidly absorbed, Half-life: 8h (active metabolite 28h), hepatic metabolism",
+  "clinicalPearls": "Non-sedating antihistamine. Once daily dosing. Available OTC. No dose adjustment in renal disease",
+  "indication": "Allergic rhinitis, chronic idiopathic urticaria, allergic skin conditions"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Activated charcoal",
+  "class": "Adsorbent (decontamination)",
+  "mechanism": "Adsorbs many toxins in GI tract reducing absorption",
+  "dosing": "50-100g orally for adults (single dose) — follow toxicology guidance",
+  "contraindications": "Unprotected airway, caustic ingestion",
+  "interactions": "May adsorb orally administered antidotes/meds",
+  "monitoring": "Airway protection, vomiting",
+  "pregnancy": "Use if indicated",
+  "sideEffects": "Vomiting, aspiration risk if airway not protected",
+  "clinicalPearls": "Most effective when given early after ingestion",
+  "indication": "Acute poisoning (selected cases)"
+}

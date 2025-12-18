@@ -1,0 +1,13 @@
+{
+  "name": "Filgrastim (G-CSF)",
+  "class": "Hematopoietic growth factor",
+  "mechanism": "Stimulates neutrophil production",
+  "dosing": "Per protocol for chemotherapy-induced neutropenia or stem cell mobilisation",
+  "contraindications": "Hypersensitivity",
+  "interactions": "None major",
+  "monitoring": "FBC",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "Bone pain, leukocytosis",
+  "clinicalPearls": "Used to reduce duration of neutropenia",
+  "indication": "Chemotherapy-induced neutropenia"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Esomeprazole",
+  "class": "Proton pump inhibitors",
+  "mechanism": "S-isomer of omeprazole - inhibits gastric H+/K+ ATPase (proton pump)",
+  "dosing": "GORD: 20-40mg OD. GI bleed: 40mg BD. H.pylori: 20mg BD with antibiotics",
+  "contraindications": "Hypersensitivity to PPIs",
+  "interactions": "Clopidogrel (↓ effect), warfarin, phenytoin, methotrexate, digoxin",
+  "monitoring": "Symptom control, Mg2+ if long-term, vitamin B12 if >3 years",
+  "pregnancy": "Safe - widely used",
+  "sideEffects": "Headache, GI upset, hypomagnesaemia (long-term), increased fracture risk, C.diff risk",
+  "pharmacokinetics": "Better bioavailability than omeprazole, half-life 1-1.5h, hepatic metabolism",
+  "clinicalPearls": "Take 30-60min before food. Slightly more potent than omeprazole. Review need after 8 weeks unless clear indication",
+  "indication": "GORD, peptic ulcer disease, H.pylori eradication, NSAID prophylaxis"
+}

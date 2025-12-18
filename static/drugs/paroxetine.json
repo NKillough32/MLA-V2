@@ -1,0 +1,14 @@
+{
+  "name": "Paroxetine",
+  "class": "Selective serotonin reuptake inhibitors",
+  "mechanism": "Selective inhibition of serotonin reuptake, minimal effect on noradrenaline and dopamine",
+  "dosing": "Depression: 20mg daily, max 50mg daily. Panic disorder: 10mg daily initially, usual 40mg daily",
+  "contraindications": "MAOIs (within 14 days), pregnancy/breastfeeding, unstable epilepsy",
+  "interactions": "MAOIs (serotonin syndrome), warfarin (↑ bleeding), tramadol (serotonin syndrome), tamoxifen (↓ efficacy)",
+  "monitoring": "Mood, suicidal ideation (especially <25yrs), weight, sexual function, withdrawal symptoms",
+  "pregnancy": "Avoid - increased malformation risk, especially cardiac defects",
+  "sideEffects": "Nausea, sexual dysfunction, weight gain, withdrawal syndrome, sweating, tremor",
+  "pharmacokinetics": "Short half-life: 24h, extensive hepatic metabolism, highly protein-bound",
+  "clinicalPearls": "Most sedating SSRI. Worst withdrawal syndrome - taper slowly. Strong CYP2D6 inhibitor",
+  "indication": "Depression, panic disorder, OCD, social anxiety disorder, PTSD"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Ethambutol",
+  "class": "Antitubercular",
+  "mechanism": "Inhibits arabinosyl transferase (cell wall synthesis)",
+  "dosing": "Weight-based dosing per TB regimen",
+  "contraindications": "Children unable to report vision changes",
+  "interactions": "None major",
+  "monitoring": "Visual acuity and colour vision",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "Optic neuropathy (dose-related)",
+  "clinicalPearls": "Monitor vision regularly",
+  "indication": "TB"
+}

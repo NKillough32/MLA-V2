@@ -1,0 +1,14 @@
+{
+  "name": "Risperidone",
+  "class": "Atypical antipsychotics",
+  "mechanism": "Dopamine D2 and serotonin 5-HT2A receptor antagonist",
+  "dosing": "Schizophrenia: 2mg daily initially, usual 4-6mg daily. Elderly: 0.5mg BD initially",
+  "contraindications": "Coma, CNS depression, phaeochromocytoma, prolactinoma",
+  "interactions": "CNS depressants (↑ sedation), carbamazepine (↓ levels), fluoxetine (↑ levels)",
+  "monitoring": "Weight, glucose, lipids, prolactin, movement disorders, LFTs, FBC, ECG",
+  "pregnancy": "Use only if benefit outweighs risk - risk of extrapyramidal symptoms in neonate",
+  "sideEffects": "Extrapyramidal symptoms, hyperprolactinaemia, weight gain, sedation, postural hypotension",
+  "pharmacokinetics": "Good oral bioavailability, half-life: 3h (parent), 24h (active metabolite)",
+  "clinicalPearls": "Lower risk of metabolic effects than olanzapine. Monitor for tardive dyskinesia. Depot formulation available",
+  "indication": "Schizophrenia, bipolar mania, behavioural disturbance in dementia (short-term)"
+}

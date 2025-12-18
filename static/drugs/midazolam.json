@@ -1,0 +1,14 @@
+{
+  "name": "Midazolam",
+  "class": "Benzodiazepine (short-acting)",
+  "mechanism": "Positive allosteric modulator at GABA-A receptors causing sedation, anxiolysis and amnesia",
+  "dosing": "Seizure rescue (IV): 0.1–0.2 mg/kg (max 5 mg) IV bolus; IM/IN: 0.2 mg/kg (max 10 mg). Procedural/conscious sedation: 1–2.5 mg IV incremental doses. Anaesthesia induction: 0.15–0.3 mg/kg IV. Adjust for elderly and hepatic impairment.",
+  "contraindications": "Severe respiratory depression, acute narrow-angle glaucoma, hypersensitivity to benzodiazepines",
+  "interactions": "Additive CNS and respiratory depression with opioids, alcohol and other sedatives; CYP3A4 inhibitors may increase effect",
+  "monitoring": "Continuous monitoring of respiratory rate, oxygen saturation and level of consciousness during and after administration; observe until baseline mental state",
+  "pregnancy": "Avoid if possible; use only if benefits outweigh risks and follow specialist/UKTIS guidance for neonate monitoring if used near delivery",
+  "sideEffects": "Respiratory depression, hypotension, paradoxical agitation, prolonged sedation in elderly/renal impairment",
+  "pharmacokinetics": "Rapid onset (IV: minutes), short acting; hepatic metabolism (CYP3A4) with active metabolites in some populations",
+  "clinicalPearls": "Have airway equipment and reversal (flumazenil) available where clinically indicated. Intranasal and buccal routes useful for prehospital/seizure rescue. Reduce dose in older adults and those with hepatic impairment.",
+  "indication": "Seizure control (status epilepticus), conscious sedation, procedural sedation, premedication, ICU sedation"
+}

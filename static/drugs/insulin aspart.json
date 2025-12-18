@@ -1,0 +1,14 @@
+{
+  "name": "Insulin Aspart (Novorapid)",
+  "class": "Insulin - rapid-acting analogue",
+  "mechanism": "Rapid-acting insulin analogue - promotes glucose uptake",
+  "dosing": "SC: give immediately before or with meals. Typical 4-12 units per meal. Adjust to BG and carbs",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "Steroids/thiazides (↓ effect), beta-blockers (mask hypo), ACEi (↑ hypo risk)",
+  "monitoring": "Capillary glucose pre-meals and bedtime, HbA1c, hypoglycaemia frequency, injection sites",
+  "pregnancy": "Safe - insulin of choice in pregnancy",
+  "sideEffects": "Hypoglycaemia, weight gain, lipohypertrophy, allergic reactions (rare)",
+  "pharmacokinetics": "Onset 10-20min, peak 1-3h, duration 3-5h",
+  "clinicalPearls": "Inject 0-15min before eating. Faster onset than regular insulin. Part of basal-bolus regimes. Rotate injection sites",
+  "indication": "Type 1 diabetes, type 2 diabetes (basal-bolus regime), DKA (IV)"
+}

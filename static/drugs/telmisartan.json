@@ -1,0 +1,14 @@
+{
+  "name": "Telmisartan",
+  "class": "Angiotensin II receptor blocker (ARB)",
+  "mechanism": "Blocks AT1 receptors preventing vasoconstriction and aldosterone release",
+  "dosing": "20-80mg OD (usual 40mg). Cardiovascular protection: start 20mg",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, hyperkalaemia",
+  "interactions": "NSAIDs (↓ effect, ↑ renal impairment), potassium-sparing diuretics (hyperkalaemia)",
+  "monitoring": "U&Es (especially within 1-2 weeks of starting), blood pressure",
+  "pregnancy": "Contraindicated - fetal toxicity",
+  "sideEffects": "Dizziness, hyperkalaemia, renal impairment, angioedema (rare)",
+  "pharmacokinetics": "Longest half-life of ARBs (24h), high lipophilicity",
+  "clinicalPearls": "Good option for once-daily dosing. Also has PPAR-gamma agonist activity",
+  "indication": "Hypertension, cardiovascular risk reduction in high-risk patients"
+}

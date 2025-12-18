@@ -1,0 +1,14 @@
+{
+  "name": "Cefepime",
+  "class": "Fourth-generation cephalosporin",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to PBPs; increased Gram-negative and Pseudomonas coverage",
+  "dosing": "1-2g IV every 8-12 hours (adjust for renal function)",
+  "contraindications": "Cephalosporin hypersensitivity",
+  "interactions": "Aminoglycosides (↑ nephrotoxicity risk), antacids (↓ absorption for oral forms - not applicable to IV)",
+  "monitoring": "Renal function, signs of encephalopathy (rare with renal impairment)",
+  "pregnancy": "Use if needed - limited data but often used in pregnancy when indicated",
+  "sideEffects": "GI upset, allergic reactions, neurotoxicity (encephalopathy/seizures in renal impairment), C. difficile",
+  "pharmacokinetics": "Good distribution including CSF in inflamed meninges; renal elimination",
+  "clinicalPearls": "Strong anti-pseudomonal activity; dose adjust in renal impairment; watch for neurotoxicity in elderly/renal failure",
+  "indication": "Serious Gram-negative infections including Pseudomonas, hospital-acquired pneumonia, febrile neutropenia"
+}

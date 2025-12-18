@@ -1,0 +1,14 @@
+{
+  "name": "Montelukast",
+  "class": "Leukotriene receptor antagonist",
+  "mechanism": "Selective antagonist of cysteinyl leukotriene (CysLT1) receptors",
+  "dosing": "Adults: 10mg daily at bedtime. Children 6-14 years: 5mg daily. Children 2-5 years: 4mg daily",
+  "contraindications": "Hypersensitivity to montelukast, acute asthma attacks",
+  "interactions": "CYP2C8 inducers (rifampicin) may ↓ levels. CYP2C8/2C9 interactions possible",
+  "monitoring": "Asthma control, mood changes, neuropsychiatric symptoms, liver function",
+  "pregnancy": "Generally considered compatible; continue if clinically required and consult UKTIS for specific drug guidance",
+  "sideEffects": "Headache, GI upset, neuropsychiatric effects (mood changes, sleep disturbances)",
+  "pharmacokinetics": "Rapid absorption, Half-life: 3-6h, extensive hepatic metabolism",
+  "clinicalPearls": "Add-on therapy in asthma step 3. Take at bedtime. Monitor for mood changes",
+  "indication": "Asthma prophylaxis, allergic rhinitis, exercise-induced bronchospasm"
+}

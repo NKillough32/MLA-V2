@@ -1,0 +1,14 @@
+{
+  "name": "Trazodone",
+  "class": "Antidepressants, tricyclics and related drugs",
+  "mechanism": "Serotonin antagonist and reuptake inhibitor (SARI) + α1-antagonist",
+  "dosing": "Depression: start 100-150mg daily (can divide doses), increase to 300mg. Insomnia: 50-100mg nocte",
+  "contraindications": "Recent MI, mania, severe hepatic impairment",
+  "interactions": "MAOIs (serotonin syndrome), CYP3A4 inhibitors, antihypertensives (↑ hypotension)",
+  "monitoring": "Mood, suicidality, postural BP, priapism, sedation",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Drowsiness (very common), postural hypotension, dizziness, dry mouth, priapism (rare but serious)",
+  "pharmacokinetics": "Oral, hepatic metabolism, half-life 5-9h",
+  "clinicalPearls": "Sedating antidepressant - often used for depression with insomnia. Lower seizure risk than tricyclics. Warn male patients about priapism (seek help if >2h). Useful off-label for insomnia",
+  "indication": "Depression (especially with anxiety/insomnia), insomnia (off-label low dose)"
+}

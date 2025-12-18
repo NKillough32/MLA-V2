@@ -1,0 +1,14 @@
+{
+  "name": "Lansoprazole",
+  "class": "Proton pump inhibitor (PPI)",
+  "mechanism": "Irreversibly inhibits gastric H+/K+-ATPase (proton pump)",
+  "dosing": "GORD: 30mg daily. Peptic ulcer: 30mg daily for 4-8 weeks. H.pylori: 30mg BD with antibiotics",
+  "contraindications": "Hypersensitivity to PPIs",
+  "interactions": "Similar to omeprazole - clopidogrel, warfarin, digoxin",
+  "monitoring": "Similar to omeprazole - B12, magnesium with long-term use",
+  "pregnancy": "Generally safe - no increased malformation risk",
+  "sideEffects": "Similar to omeprazole - headache, GI upset, long-term risks",
+  "pharmacokinetics": "Enteric-coated, acid-labile, hepatic metabolism",
+  "clinicalPearls": "Alternative to omeprazole. Take before food. Orodispersible tablets available",
+  "indication": "GORD, peptic ulcer disease, H.pylori eradication, Zollinger-Ellison syndrome"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Disodium Pamidronate (Pamidronate)",
+  "class": "Bisphosphonates",
+  "mechanism": "Inhibits osteoclast-mediated bone resorption",
+  "dosing": "Hypercalcaemia: 30-90mg IV over 2-4h. Paget\\",
+  "contraindications": "Hypocalcaemia, severe renal impairment",
+  "interactions": "Aminoglycosides (↑ hypocalcaemia), NSAIDs (↑ renal toxicity)",
+  "monitoring": "Calcium, phosphate, magnesium, U&Es, temperature (acute phase reaction), dental health",
+  "pregnancy": "Avoid",
+  "sideEffects": "Acute phase reaction (fever, myalgia - give paracetamol), hypocalcaemia, osteonecrosis of jaw, renal impairment, atrial fibrillation",
+  "pharmacokinetics": "IV infusion only, long bone half-life",
+  "clinicalPearls": "IV bisphosphonate. Ensure adequate hydration before/during infusion. Pre-treat with paracetamol for acute phase reaction. Correct vitamin D deficiency first. Screen for dental problems. Slow infusion (≥2h) to reduce renal toxicity. Largely replaced by zoledronic acid",
+  "indication": "Hypercalcaemia of malignancy, bone pain in myeloma/metastases, Paget\\"
+}

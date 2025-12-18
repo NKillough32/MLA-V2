@@ -1,0 +1,14 @@
+{
+  "name": "Atorvastatin",
+  "class": "Statins",
+  "mechanism": "Competitively inhibits HMG-CoA reductase, rate-limiting enzyme in cholesterol synthesis",
+  "dosing": "Adults: Start 20mg daily, usual dose 20-80mg daily. High-intensity: 40-80mg daily. Take any time of day",
+  "contraindications": "Active liver disease, pregnancy, breastfeeding, unexplained persistent ↑ ALT/AST",
+  "interactions": "Ciclosporin (↑ statin levels), warfarin (↑ INR), digoxin (↑ levels), grapefruit juice",
+  "monitoring": "LFTs before treatment and at 3 months, lipids at 3 months, CK if muscle symptoms. For suspected statin intolerance consider dose reduction, alternate statin, or specialist referral. Stop statin if CK > 5× ULN or severe myopathy",
+  "pregnancy": "Contraindicated - stop 3 months before conception",
+  "sideEffects": "Myalgia (common), hepatotoxicity (rare), rhabdomyolysis (very rare), new-onset diabetes (slight ↑)",
+  "pharmacokinetics": "Peak: 1-2h, Half-life: 14h, Metabolism: CYP3A4, active metabolites",
+  "clinicalPearls": "High-intensity statin. NICE preferred high-intensity option. Can take any time due to long half-life. Manage intolerance with dose adjustments or switch; consider specialist input for recurrent myopathy",
+  "targets": "Primary prevention: 20mg daily. Secondary prevention: 80mg daily. Target >40% LDL-C reduction"
+}

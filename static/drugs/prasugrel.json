@@ -1,0 +1,13 @@
+{
+  "name": "Prasugrel",
+  "class": "Antiplatelet - irreversible P2Y12 inhibitor",
+  "mechanism": "Irreversible P2Y12 receptor antagonist",
+  "dosing": "Loading 60mg, then 10mg daily (consider 5mg daily in elderly/low body weight per guidance); used per ACS/PCI protocols",
+  "contraindications": "History of stroke/TIA, active pathological bleeding",
+  "interactions": "Other antiplatelet/anticoagulant drugs (↑ bleeding)",
+  "monitoring": "Signs of bleeding, Hb and platelets",
+  "pregnancy": "Use only if benefit outweighs risk",
+  "sideEffects": "Bleeding, bruising",
+  "clinicalPearls": "Preferentially used in PCI populations; avoid in prior stroke/TIA",
+  "indication": "ACS patients undergoing PCI (per cardiology guidance)"
+}

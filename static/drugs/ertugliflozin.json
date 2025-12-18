@@ -1,0 +1,12 @@
+{
+  "name": "Ertugliflozin",
+  "class": "SGLT2 inhibitor",
+  "mechanism": "Inhibits SGLT2",
+  "dosing": "5-15mg once daily",
+  "contraindications": "Type 1 diabetes, severe renal impairment",
+  "monitoring": "Renal function",
+  "pregnancy": "Avoid",
+  "sideEffects": "Genital infections",
+  "clinicalPearls": "One of the SGLT2 class; follow SmPC for indications",
+  "indication": "T2DM"
+}

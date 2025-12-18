@@ -1,0 +1,14 @@
+{
+  "name": "Clotrimazole",
+  "class": "Azole antifungal (topical)",
+  "mechanism": "Inhibits ergosterol synthesis by blocking fungal CYP450 enzymes",
+  "dosing": "Topical cream/ointment/vaginal pessary dosing varies by preparation; follow product instructions",
+  "contraindications": "Hypersensitivity to imidazoles",
+  "interactions": "Minimal for topical use; systemic formulations have more interactions (CYP450)",
+  "monitoring": "Local skin reactions",
+  "pregnancy": "Topical use generally considered safe in pregnancy for vulvovaginal candidiasis",
+  "sideEffects": "Local irritation, burning, rash",
+  "pharmacokinetics": "Poor systemic absorption when used topically",
+  "clinicalPearls": "Useful topical antifungal; choose formulation based on site of infection",
+  "indication": "Vaginal thrush, cutaneous fungal infections"
+}

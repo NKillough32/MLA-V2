@@ -1,0 +1,14 @@
+{
+  "name": "Fosfomycin",
+  "class": "Phosphonic acid antibiotic",
+  "mechanism": "Inhibits bacterial cell wall synthesis by blocking MurA enzyme",
+  "dosing": "Uncomplicated UTI: 3g single dose sachet dissolved in water",
+  "contraindications": "Severe renal impairment (eGFR <10), hypersensitivity",
+  "interactions": "Metoclopramide (↓ absorption)",
+  "monitoring": "Clinical response, repeat cultures if treatment fails",
+  "pregnancy": "Limited data - use only if essential",
+  "sideEffects": "Diarrhoea, nausea, vulvovaginal candidiasis, headache",
+  "pharmacokinetics": "Single oral dose, high urinary concentrations, minimal metabolism",
+  "clinicalPearls": "Excellent for uncomplicated UTI including E. coli. Taken on empty stomach. Increasingly used for resistant organisms",
+  "indication": "Uncomplicated lower UTI, particularly when first-line antibiotics unsuitable or resistant"
+}

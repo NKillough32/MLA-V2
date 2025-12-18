@@ -1,0 +1,14 @@
+{
+  "name": "Isosorbide Mononitrate",
+  "class": "Nitrates",
+  "mechanism": "Nitric oxide donor - predominantly venodilation, reducing preload",
+  "dosing": "Standard release: 20mg BD (8am and 2pm for nitrate-free interval). Modified release: 60mg OD",
+  "contraindications": "Hypotension, hypovolaemia, raised ICP, severe anaemia, PDE5 inhibitor use",
+  "interactions": "PDE5 inhibitors (profound hypotension), antihypertensives, alcohol",
+  "monitoring": "BP, angina frequency, headache, tolerance",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Headache (very common initially), flushing, dizziness, hypotension",
+  "pharmacokinetics": "Better oral bioavailability than isosorbide dinitrate, half-life 4-5h",
+  "clinicalPearls": "Asymmetric dosing (not 12-hourly) maintains nitrate-free interval to prevent tolerance. Headache improves with continued use. Less useful than beta-blockers/CCBs for angina prophylaxis",
+  "indication": "Angina prophylaxis, left ventricular failure (with hydralazine)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Enalapril",
+  "class": "ACE inhibitor",
+  "mechanism": "Inhibits angiotensin-converting enzyme, lowering angiotensin II production",
+  "dosing": "Start 2.5-5mg once daily in elderly; usual maintenance 5-20mg once daily",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, history of ACE inhibitor–induced angioedema",
+  "interactions": "Potassium supplements/ACEi/ARBs (↑ hyperkalaemia), NSAIDs (↓ effect), lithium (↑ toxicity)",
+  "monitoring": "BP, renal function and K+ 1-2 weeks after starting or dose changes",
+  "pregnancy": "Contraindicated - fetal toxicity",
+  "sideEffects": "Cough, hyperkalaemia, hypotension, dizziness, renal impairment, angioedema",
+  "pharmacokinetics": "Prodrug converted to enalaprilat; excreted renally; half-life variable",
+  "clinicalPearls": "Start low and titrate, check renal function after initiation. Substitute with ARB if cough occurs",
+  "indication": "Hypertension, heart failure, post-MI"
+}

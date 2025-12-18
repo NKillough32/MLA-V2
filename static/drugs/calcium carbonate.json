@@ -1,0 +1,14 @@
+{
+  "name": "Calcium Carbonate",
+  "class": "Calcium supplement",
+  "mechanism": "Provides supplemental calcium; also acts as antacid and phosphate binder",
+  "dosing": "Supplement: 1.25g (500mg elemental Ca) OD-TDS with meals. CKD phosphate binder: 1-3g with meals",
+  "contraindications": "Hypercalcaemia, hypercalciuria, renal calculi, severe renal impairment (unless for phosphate binding)",
+  "interactions": "Levothyroxine (↓ absorption - separate by 4h), bisphosphonates (separate by 2h), iron, tetracyclines, quinolones",
+  "monitoring": "Serum calcium, phosphate (if CKD), kidney function",
+  "pregnancy": "Safe - supplement recommended if dietary intake low",
+  "sideEffects": "Constipation (common), flatulence, GI upset, hypercalcaemia (if excessive)",
+  "pharmacokinetics": "Oral, requires acid for absorption (take with food), excreted renally",
+  "clinicalPearls": "Most calcium per tablet (40% elemental calcium). Requires gastric acid - less well absorbed with PPIs. Take with food for better absorption. Also acts as antacid. Used as phosphate binder in CKD. Constipation very common - may need laxative",
+  "indication": "Calcium supplement (osteoporosis prevention/treatment, pregnancy), phosphate binder (CKD), antacid"
+}

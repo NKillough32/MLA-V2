@@ -1,0 +1,14 @@
+{
+  "name": "Oxycodone",
+  "class": "Opioid analgesic",
+  "mechanism": "μ-opioid receptor agonist",
+  "dosing": "Oral immediate-release: 5-10mg every 4-6 hours PRN. Modified-release: 10-20mg BD for chronic pain. Reduce dose in elderly/renal impairment",
+  "contraindications": "Severe respiratory depression, acute or severe bronchial asthma, paralytic ileus, known hypersensitivity",
+  "interactions": "CNS depressants (↑ sedation and respiratory depression), MAOIs (avoid), CYP3A4 inhibitors (↑ oxycodone levels)",
+  "monitoring": "Respiratory rate, sedation, bowel function, pain control",
+  "pregnancy": "Avoid near term; prolonged use may cause neonatal withdrawal",
+  "sideEffects": "Nausea, constipation, sedation, pruritus, respiratory depression, dependence with long-term use",
+  "pharmacokinetics": "Well absorbed orally, hepatic metabolism (CYP3A4/CYP2D6), half-life ~3-4h",
+  "clinicalPearls": "Good oral alternative to morphine for moderate-severe pain. Always prescribe laxative when used regularly. Adjust for opioid-tolerant patients",
+  "indication": "Moderate to severe acute or chronic pain, breakthrough pain in opioid-treated patients"
+}

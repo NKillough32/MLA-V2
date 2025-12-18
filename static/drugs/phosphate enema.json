@@ -1,0 +1,14 @@
+{
+  "name": "Phosphate Enema",
+  "class": "Laxatives, rectal",
+  "mechanism": "Osmotic laxative - draws water into bowel",
+  "dosing": "1 enema (133ml) PR",
+  "contraindications": "Heart failure, ascites, renal impairment, inflammatory bowel disease",
+  "interactions": "None",
+  "monitoring": "Electrolytes (especially if renal impairment), bowel evacuation",
+  "pregnancy": "Avoid",
+  "sideEffects": "Local irritation, electrolyte disturbances (hyperphosphataemia, hypocalcaemia, hyperkalaemia), arrhythmias",
+  "pharmacokinetics": "Local + systemic absorption, onset 5-20min",
+  "clinicalPearls": "Rapid and effective but can cause serious electrolyte disturbances, especially in renal impairment, elderly, bowel disease. Avoid in CKD. Use sodium citrate or docusate enemas as safer alternatives",
+  "indication": "Severe constipation, pre-procedure bowel clearance (when other methods ineffective)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Magnesium Sulfate",
+  "class": "Mineral supplement/Antiarrhythmic",
+  "mechanism": "Essential cofactor for enzymes, membrane stabilizer, calcium channel blocker",
+  "dosing": "Hypomagnesemia: 8mmol IV over 24h. Torsades: 8mmol IV over 10-15min. Eclampsia: 4g IV then 1g/h",
+  "contraindications": "Severe renal impairment, myasthenia gravis, heart block",
+  "interactions": "Digoxin (↓ efficacy), neuromuscular blockers (↑ paralysis), calcium channel blockers",
+  "monitoring": "Serum magnesium, reflexes, respiratory rate, urine output, renal function",
+  "pregnancy": "Safe and indicated for eclampsia/pre-eclampsia. Standard treatment",
+  "sideEffects": "Hypotension, respiratory depression, areflexia, cardiac arrest (overdose)",
+  "pharmacokinetics": "Onset 1-5min IV. Excreted unchanged by kidneys. t½ 3-4h",
+  "clinicalPearls": "Check reflexes before each dose. Have calcium gluconate ready as antidote",
+  "indication": "Eclampsia, torsades de pointes, hypomagnesemia, severe asthma"
+}

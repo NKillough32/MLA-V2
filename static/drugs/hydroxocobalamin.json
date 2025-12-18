@@ -1,0 +1,14 @@
+{
+  "name": "Hydroxocobalamin",
+  "class": "Vitamins",
+  "mechanism": "Vitamin B12 - essential cofactor for cell metabolism and DNA synthesis",
+  "dosing": "Pernicious anaemia: 1mg IM 3x weekly for 2 weeks, then every 3 months for life. Deficiency: 1mg IM 3x weekly for 2 weeks, then review",
+  "contraindications": "Hypersensitivity, cobalt allergy",
+  "interactions": "Chloramphenicol (↓ response)",
+  "monitoring": "FBC, reticulocyte count, K+ (initial treatment can cause hypokalaemia), neurological symptoms",
+  "pregnancy": "Safe - essential vitamin",
+  "sideEffects": "Injection site reactions, hypokalaemia (initial treatment), red discolouration of urine, rash",
+  "pharmacokinetics": "IM injection, stored in liver, slow release",
+  "clinicalPearls": "Don\\",
+  "indication": "Pernicious anaemia, B12 deficiency, neuropathy, cyanide poisoning (high dose)"
+}

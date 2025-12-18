@@ -1,0 +1,13 @@
+{
+  "name": "Pyrazinamide",
+  "class": "Antitubercular",
+  "mechanism": "Prodrug active in acidic environments",
+  "dosing": "Weight-based dosing per TB regimen",
+  "contraindications": "Severe liver disease, acute gout",
+  "interactions": "May ↑ uric acid",
+  "monitoring": "LFTs, uric acid",
+  "pregnancy": "Use per specialist guidance",
+  "sideEffects": "Hepatotoxicity, hyperuricaemia",
+  "clinicalPearls": "Part of standard TB regimen",
+  "indication": "TB"
+}

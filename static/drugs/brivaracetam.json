@@ -1,0 +1,14 @@
+{
+  "name": "Brivaracetam",
+  "class": "Antiepileptics (Racetams)",
+  "mechanism": "Binds to synaptic vesicle protein SV2A with higher affinity than levetiracetam",
+  "dosing": "Start 25-50mg BD, usual 50-100mg BD (max 200mg daily)",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Carbamazepine (↓ brivaracetam levels), rifampicin. Weak enzyme inducer",
+  "monitoring": "Seizure frequency, psychiatric symptoms, LFTs",
+  "pregnancy": "Avoid unless essential - limited data",
+  "sideEffects": "Somnolence, dizziness, fatigue, psychiatric effects (aggression, anxiety, irritability)",
+  "pharmacokinetics": "Oral/IV, hepatic metabolism, half-life 9h",
+  "clinicalPearls": "Similar to levetiracetam but more potent (lower doses). Less behavioural side effects than levetiracetam in some patients. Rapid titration possible. Useful if levetiracetam causes irritability",
+  "indication": "Focal seizures (adjunctive or monotherapy)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Umeclidinium",
+  "class": "Antimuscarinics, bronchodilators (LAMA)",
+  "mechanism": "Long-acting muscarinic antagonist - bronchodilation",
+  "dosing": "Inhaled: 55mcg OD (often combined with vilanterol as Anoro)",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Other antimuscarinics (↑ effects)",
+  "monitoring": "Respiratory function, antimuscarinic effects",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Dry mouth, nasopharyngitis, upper respiratory tract infection, cough",
+  "pharmacokinetics": "Inhaled, minimal systemic absorption",
+  "clinicalPearls": "Once-daily LAMA for COPD. Usually combined with LABA (vilanterol). Alternative to tiotropium. Similar efficacy to other LAMAs",
+  "indication": "COPD maintenance"
+}

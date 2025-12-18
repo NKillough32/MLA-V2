@@ -1,0 +1,14 @@
+{
+  "name": "Oxybutynin",
+  "class": "Antimuscarinic (anticholinergic)",
+  "mechanism": "M3 muscarinic receptor antagonist reducing detrusor muscle contractions",
+  "dosing": "Immediate release: 5mg BD-TDS (max 5mg QDS). Modified release: 5-20mg OD",
+  "contraindications": "Urinary retention, gastric retention, uncontrolled narrow-angle glaucoma, myasthenia gravis",
+  "interactions": "Other anticholinergics (↑ effects), donepezil/rivastigmine (antagonism)",
+  "monitoring": "Bladder symptoms, post-void residual (if retention risk), cognitive function (elderly)",
+  "pregnancy": "Avoid unless essential - limited data",
+  "sideEffects": "Dry mouth, constipation, blurred vision, cognitive impairment (especially elderly), urinary retention",
+  "pharmacokinetics": "Hepatic metabolism, first-pass effect, half-life 2-3h (ER formulation has less first-pass)",
+  "clinicalPearls": "Modified-release better tolerated. High anticholinergic burden - caution elderly. Consider alternatives in dementia",
+  "indication": "Urge incontinence, overactive bladder, nocturnal enuresis in children >5y"
+}

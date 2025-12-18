@@ -1,0 +1,14 @@
+{
+  "name": "Alfacalcidol",
+  "class": "Vitamin D analogue",
+  "mechanism": "1α-hydroxylated vitamin D - converted to active 1,25-dihydroxyvitamin D in liver",
+  "dosing": "CKD: 250 nanograms-1 microgram OD. Hypoparathyroidism: 1 microgram OD initially",
+  "contraindications": "Hypercalcaemia, metastatic calcification, hypersensitivity",
+  "interactions": "Thiazides (↑ hypercalcaemia), cardiac glycosides (↑ toxicity if hypercalcaemia)",
+  "monitoring": "Serum calcium weekly initially, then monthly. Also phosphate, PTH, alkaline phosphatase",
+  "pregnancy": "Use if benefit outweighs risk - high doses teratogenic in animals",
+  "sideEffects": "Hypercalcaemia, hypercalciuria, pruritus, rash",
+  "pharmacokinetics": "Activated in liver (no kidney activation needed), half-life 19h",
+  "clinicalPearls": "Useful in renal failure (doesnt need kidney activation). Monitor calcium closely - narrow therapeutic window",
+  "indication": "Hypocalcaemia in CKD, hypoparathyroidism, vitamin D-dependent rickets"
+}

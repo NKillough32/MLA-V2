@@ -1,0 +1,14 @@
+{
+  "name": "Salbutamol Nebuliser Solution",
+  "class": "Short-acting β2-agonist (nebulised)",
+  "mechanism": "β2-agonist causing bronchodilation",
+  "dosing": "Acute asthma: 2.5-5mg nebulised, can repeat. Chronic: 2.5mg QDS PRN",
+  "contraindications": "Hypersensitivity (rare absolute contraindication)",
+  "interactions": "β-blockers (antagonism), theophylline (↑ tachycardia)",
+  "monitoring": "Heart rate, respiratory rate, oxygen saturations, ECG if severe",
+  "pregnancy": "Safe - inhaled route preferred",
+  "sideEffects": "Tremor, tachycardia, hypokalaemia, headache, palpitations",
+  "pharmacokinetics": "Inhaled delivery, rapid onset (5min), duration 4-6h",
+  "clinicalPearls": "Use oxygen-driven in hypoxia, air-driven in COPD (with controlled O2). Back-to-back nebulisers in severe asthma. Monitor K+ in severe asthma",
+  "indication": "Acute asthma/COPD exacerbation, severe bronchospasm, hyperkalemia (with insulin-dextrose)"
+}

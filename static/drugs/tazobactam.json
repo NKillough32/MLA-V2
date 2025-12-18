@@ -1,0 +1,14 @@
+{
+  "name": "Piperacillin with Tazobactam (Tazocin)",
+  "class": "Penicillins, antipseudomonal",
+  "mechanism": "Extended-spectrum penicillin + beta-lactamase inhibitor - covers Pseudomonas and anaerobes",
+  "dosing": "4.5g TDS IV (piperacillin 4g + tazobactam 500mg). Severe: QDS",
+  "contraindications": "Penicillin allergy",
+  "interactions": "Aminoglycosides (inactivation in vitro - don\\",
+  "monitoring": "Renal function, electrolytes (contains sodium), signs of C.diff",
+  "pregnancy": "Use if benefit outweighs risk - limited data",
+  "sideEffects": "Diarrhoea, rash, hypersensitivity, C.diff, hypokalaemia, eosinophilia",
+  "pharmacokinetics": "IV only, renal excretion, dose adjust in renal impairment",
+  "clinicalPearls": "Broad-spectrum including Pseudomonas. Hospital-acquired pneumonia, neutropenic sepsis, intra-abdominal sepsis. High sodium content - caution in heart failure",
+  "indication": "Hospital-acquired pneumonia, neutropenic sepsis, intra-abdominal infections, severe UTI/pyelonephritis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Sodium Bicarbonate",
+  "class": "Antacids / Alkalinizing agent",
+  "mechanism": "Neutralizes gastric acid (antacid), alkalinizes urine, corrects metabolic acidosis",
+  "dosing": "Antacid: 1-5g PRN. Acidosis: IV 8.4% (1mmol/ml) dose calculated. Alkalinize urine: 3g TDS PO",
+  "contraindications": "Metabolic/respiratory alkalosis, hypocalcaemia (if IV), hypokalaemia",
+  "interactions": "Lithium (↑ excretion), aspirin (↑ excretion), many drugs (affects absorption)",
+  "monitoring": "pH, U&Es, bicarbonate levels, calcium (if IV)",
+  "pregnancy": "Safe but avoid regular use (sodium load)",
+  "sideEffects": "Belching, flatulence, sodium overload, metabolic alkalosis, hypokalaemia (if excessive)",
+  "pharmacokinetics": "Oral or IV, systemic alkalinizing effects",
+  "clinicalPearls": "Rapid-acting antacid but short duration. Releases CO2 (belching). High sodium content. Used to alkalinize urine (renal stones, overdoses). IV form for metabolic acidosis (calculate deficit). Can cause rebound acid hypersecretion",
+  "indication": "Antacid (short-term), metabolic acidosis, alkalinize urine (uric acid stones, salicylate/methotrexate OD)"
+}

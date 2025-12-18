@@ -1,0 +1,14 @@
+{
+  "name": "Famotidine",
+  "class": "H2-receptor antagonists",
+  "mechanism": "Histamine H2 receptor antagonist",
+  "dosing": "Peptic ulcer: 40mg nocte or 20mg BD. GORD: 20-40mg BD",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Fewer than cimetidine. Ketoconazole/itraconazole (↓ absorption)",
+  "monitoring": "Symptom control, renal function",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Headache, dizziness, constipation, diarrhoea",
+  "pharmacokinetics": "Oral, renal excretion",
+  "clinicalPearls": "Fewer interactions than cimetidine. Less commonly used since ranitidine recall. PPIs now generally preferred for acid suppression",
+  "indication": "Peptic ulcer disease, GORD, dyspepsia"
+}

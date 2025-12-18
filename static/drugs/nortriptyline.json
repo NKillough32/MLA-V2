@@ -1,0 +1,14 @@
+{
+  "name": "Nortriptyline",
+  "class": "Antidepressants, tricyclics",
+  "mechanism": "Noradrenaline reuptake inhibitor (metabolite of amitriptyline)",
+  "dosing": "Depression: 50-150mg daily in divided doses or at night. Neuropathic pain: 10-25mg nocte, titrate to 75mg",
+  "contraindications": "Recent MI, arrhythmias, mania, severe liver disease",
+  "interactions": "MAOIs (contraindicated), SSRIs (↑ levels), anticholinergics, adrenaline (arrhythmias)",
+  "monitoring": "ECG (QTc), mood, suicidality, antimuscarinic effects, BP",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Antimuscarionic effects (dry mouth, constipation, urinary retention, blurred vision), sedation, arrhythmias, weight gain, postural hypotension",
+  "pharmacokinetics": "Oral, hepatic metabolism, half-life 18-95h",
+  "clinicalPearls": "Less sedating and fewer antimuscarinic effects than amitriptyline. Narrow therapeutic index - levels can be monitored. Useful for neuropathic pain. Takes 2-4 weeks for antidepressant effect",
+  "indication": "Depression, neuropathic pain"
+}

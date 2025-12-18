@@ -1,0 +1,14 @@
+{
+  "name": "Hydroxychloroquine",
+  "class": "Disease-modifying antirheumatic drugs",
+  "mechanism": "Antimalarial with immunomodulatory effects, exact mechanism in rheumatic disease unknown",
+  "dosing": "Rheumatoid arthritis: 200-400mg daily with food. Max 5mg/kg/day based on ideal body weight",
+  "contraindications": "Retinal/visual field changes, severe liver disease, porphyria",
+  "interactions": "Digoxin (↑ levels), antiepileptics (↓ seizure threshold), QT-prolonging drugs",
+  "monitoring": "Annual ophthalmology screening, FBC, liver function, symptoms",
+  "pregnancy": "Safe in established rheumatic disease - continue treatment",
+  "sideEffects": "Retinopathy (dose/time related), GI upset, skin reactions, cardiomyopathy (rare)",
+  "pharmacokinetics": "Long half-life: 1-2 months, extensive tissue distribution",
+  "clinicalPearls": "Takes 2-3 months for effect. Retinopathy related to cumulative dose. Generally well tolerated",
+  "indication": "Rheumatoid arthritis, SLE, malaria prophylaxis and treatment"
+}

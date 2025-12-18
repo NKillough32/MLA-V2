@@ -1,0 +1,14 @@
+{
+  "name": "Ferrous Fumarate",
+  "class": "Iron supplement",
+  "mechanism": "Provides supplemental elemental iron",
+  "dosing": "200-400mg OD-TDS (containing 65-130mg elemental iron per tablet)",
+  "contraindications": "As ferrous sulfate",
+  "interactions": "As ferrous sulfate",
+  "monitoring": "As ferrous sulfate",
+  "pregnancy": "Safe",
+  "sideEffects": "As ferrous sulfate (possibly better tolerated)",
+  "pharmacokinetics": "As ferrous sulfate",
+  "clinicalPearls": "Higher elemental iron content than ferrous sulfate per mg. Some patients tolerate better. Otherwise equivalent to ferrous sulfate",
+  "indication": "Iron deficiency anaemia"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Glyceryl Trinitrate (GTN)",
+  "class": "Nitrates",
+  "mechanism": "Nitric oxide donor - venodilation (↓ preload) and coronary vasodilation",
+  "dosing": "Sublingual: 300-600mcg PRN (repeat after 5min up to 3 doses). IV: 10-200mcg/min. Patch: 5-10mg daily",
+  "contraindications": "Hypotension, hypovolaemia, raised ICP, severe aortic stenosis, PDE5 inhibitor use (24h sildenafil, 48h tadalafil)",
+  "interactions": "PDE5 inhibitors (severe hypotension), antihypertensives (↑ hypotension), alcohol",
+  "monitoring": "BP, HR, headache, nitrate tolerance",
+  "pregnancy": "Use if benefits outweigh risks",
+  "sideEffects": "Headache (common), flushing, dizziness, hypotension, reflex tachycardia, tolerance",
+  "pharmacokinetics": "Sublingual: onset 1-3min. IV: immediate. Extensive first-pass metabolism. Short half-life",
+  "clinicalPearls": "Sublingual for acute angina. Patch-free interval (10-12h) prevents tolerance. Warn about postural hypotension. Ask about sildenafil before giving",
+  "indication": "Angina, acute coronary syndrome, acute heart failure, anal fissure (topical)"
+}

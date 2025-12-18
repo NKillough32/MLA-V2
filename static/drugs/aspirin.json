@@ -1,0 +1,14 @@
+{
+  "name": "Aspirin",
+  "class": "Antiplatelet drug (COX-1 inhibitor)",
+  "mechanism": "Irreversibly inhibits cyclo-oxygenase-1 (COX-1), preventing thromboxane A₂ formation and platelet aggregation",
+  "dosing": "Secondary prevention: 75 mg OD. Acute MI/ACS: 300 mg stat PO then 75 mg OD with a P2Y₁₂ inhibitor (dual therapy typically for 12 months post-ACS). Pain/fever: 300–900 mg QDS.",
+  "contraindications": "Active GI bleeding, severe HF, children <16 years (Reye’s syndrome risk)",
+  "interactions": "Warfarin or DOACs (↑ bleeding), methotrexate (↑ toxicity), ACEi/diuretics (↓ efficacy)",
+  "monitoring": "Bleeding signs, Hb if long-term, renal function in elderly",
+  "pregnancy": "Low-dose safe (preeclampsia prophylaxis); avoid high-dose in 3rd trimester (ductus arteriosus closure)",
+  "sideEffects": "Dyspepsia, GI ulcer/bleed, bronchospasm in aspirin-sensitive asthma, tinnitus (high dose)",
+  "pharmacokinetics": "Irreversible platelet inhibition lasting 7–10 days; hepatic metabolism",
+  "clinicalPearls": "Always consider PPI cover if age > 65 or on anticoagulant. Stop 7 days pre-surgery unless indicated by cardiology.",
+  "indication": "Secondary prevention after MI/stroke, post-PCI dual therapy, stable angina, ACS"
+}

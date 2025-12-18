@@ -1,0 +1,14 @@
+{
+  "name": "Lymecycline",
+  "class": "Tetracyclines",
+  "mechanism": "Tetracycline antibiotic - inhibits bacterial protein synthesis",
+  "dosing": "Acne: 408mg OD-BD. Rosacea: 408mg OD. Infections: 408mg BD",
+  "contraindications": "Pregnancy, breastfeeding, children <12 years, renal failure",
+  "interactions": "Iron, calcium, antacids (↓ absorption - separate by 2h), retinoids (↑ ICP), warfarin",
+  "monitoring": "Clinical response, photosensitivity",
+  "pregnancy": "Contraindicated - teeth/bone effects",
+  "sideEffects": "GI upset, oesophageal ulceration (take with water, sit upright), photosensitivity, teeth staining (children), hepatotoxicity (rare)",
+  "pharmacokinetics": "Oral, take with water (not milk), avoid lying down 30min",
+  "clinicalPearls": "Tetracycline for acne/rosacea. Take with plenty of water. Avoid dairy products. Sun protection essential. Minimum 6-8 weeks for acne improvement. Similar to doxycycline but less commonly used",
+  "indication": "Acne vulgaris, rosacea, respiratory infections, Lyme disease"
+}

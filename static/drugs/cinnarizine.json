@@ -1,0 +1,14 @@
+{
+  "name": "Cinnarizine",
+  "class": "Antihistamine H1-receptor antagonist",
+  "mechanism": "H1 antagonist + calcium channel blocking effects",
+  "dosing": "Motion sickness: 30mg 2h before travel, then 15mg every 8h. Vestibular disorders: 30mg TDS",
+  "contraindications": "Porphyria",
+  "interactions": "CNS depressants, alcohol",
+  "monitoring": "Drowsiness, extrapyramidal symptoms (rare but reported)",
+  "pregnancy": "Avoid",
+  "sideEffects": "Drowsiness, GI upset, weight gain, extrapyramidal effects (rare, long-term)",
+  "pharmacokinetics": "Oral, hepatic metabolism, half-life 3-6h",
+  "clinicalPearls": "Effective for motion sickness and vertigo. Less sedating than promethazine. Take 2h before travel. Rare reports of parkinsonism with long-term use",
+  "indication": "Motion sickness, vertigo, Ménière\\"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Piperacillin–tazobactam",
+  "class": "Penicillin/β-lactamase inhibitor combination (broad-spectrum)",
+  "mechanism": "Piperacillin inhibits cell wall synthesis; tazobactam inhibits many β-lactamases",
+  "dosing": "Typical adult IV dosing: 4.5 g every 6–8 h (consider extended/continuous infusion strategies in severe infections per local policy); adjust for renal impairment and indication. Follow local microbiology guidance for dosing in ICU/renal replacement therapy.",
+  "contraindications": "Penicillin allergy, previous severe β-lactam hypersensitivity",
+  "interactions": "May potentiate anticoagulants (↑ bleeding), methotrexate toxicity, high sodium load to consider in HF",
+  "monitoring": "Renal function, electrolytes (sodium load), LFTs for prolonged therapy, clinical response",
+  "pregnancy": "Generally acceptable if clinically indicated",
+  "sideEffects": "Allergic reactions, diarrhoea, C. difficile infection, electrolyte disturbances (Na+)",
+  "pharmacokinetics": "Renal elimination; time-dependent killing; short half-life",
+  "clinicalPearls": "Broad-spectrum including Pseudomonas; stewardship important—use per local protocols. Consider extended or continuous infusion for severe/critically ill patients to optimise time > MIC.",
+  "renalDoseAdjustments": "eGFR 20–40 mL/min: 4.5 g IV every 8 h; eGFR <20 mL/min: 4.5 g IV every 12 h; haemodialysis: 4.5 g IV every 12 h with a post-dialysis top-up dose (follow local guidance).",
+  "antimicrobialStewardship": "Review at 48 h and de-escalate when cultures available. Aim for total IV course 5–7 days once source controlled.",
+  "treatmentDuration": "Neutropenic sepsis: continue until afebrile and neutrophil recovery; complicated intra-abdominal infection: typically 5–7 days post source-control unless ongoing sepsis.",
+  "indication": "Severe healthcare-associated infections, intra-abdominal sepsis, neutropenic sepsis and other indications per local policy"
+}

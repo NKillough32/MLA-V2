@@ -1,0 +1,13 @@
+{
+  "name": "Valsartan",
+  "class": "Angiotensin receptor blocker (ARB)",
+  "mechanism": "Selective AT1 receptor antagonist",
+  "dosing": "Hypertension: 80-160mg daily; titrate per response",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis",
+  "interactions": "NSAIDs, potassium supplements, lithium",
+  "monitoring": "eGFR and potassium baseline and 1–2 weeks after initiation",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Dizziness, hyperkalaemia, renal impairment",
+  "clinicalPearls": "Alternative to ACE inhibitors when cough/intolerance occurs",
+  "indication": "Hypertension, heart failure (where indicated)"
+}

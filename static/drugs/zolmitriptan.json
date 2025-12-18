@@ -1,0 +1,14 @@
+{
+  "name": "Zolmitriptan",
+  "class": "Triptans (5-HT1B/1D agonists)",
+  "mechanism": "Serotonin 5-HT1B/1D receptor agonist - vasoconstriction, inhibits neuropeptide release",
+  "dosing": "Oral: 2.5mg (repeat after 2h if needed, max 10mg/24h). Nasal: 5mg (one spray)",
+  "contraindications": "IHD, previous MI, uncontrolled hypertension, CVA/TIA, peripheral vascular disease",
+  "interactions": "Ergotamine (↑ vasospasm - avoid within 24h), SSRIs/SNRIs (serotonin syndrome), MAOIs",
+  "monitoring": "Cardiovascular status, medication overuse headache",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Tingling, warm sensation, heaviness, tightness (chest/throat), dizziness, drowsiness, nausea",
+  "pharmacokinetics": "Oral or nasal spray, onset 30min (oral), 15min (nasal), half-life 2.5-3h",
+  "clinicalPearls": "Similar to sumatriptan but better oral bioavailability. Nasal spray useful if vomiting. Take early in attack. Max 2 doses/attack. Limit to 10 days/month to avoid medication overuse headache",
+  "indication": "Acute migraine, cluster headache"
+}

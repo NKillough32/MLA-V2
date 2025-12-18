@@ -1,0 +1,14 @@
+{
+  "name": "Verapamil",
+  "class": "Calcium channel blockers",
+  "mechanism": "Non-dihydropyridine CCB - blocks L-type calcium channels in heart and vasculature",
+  "dosing": "Oral: 40-120mg TDS initially (MR: 240-480mg daily). IV: 5-10mg over 2min for SVT",
+  "contraindications": "Hypotension, heart failure, 2nd/3rd degree heart block, sick sinus, WPW with AF, concurrent beta-blocker",
+  "interactions": "Beta-blockers (severe bradycardia/asystole - avoid), digoxin (↑ levels), statins (↑ myopathy), grapefruit juice",
+  "monitoring": "BP, HR, ECG, constipation, LFTs",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Constipation (very common), bradycardia, AV block, hypotension, ankle oedema, headache, gingival hyperplasia",
+  "pharmacokinetics": "Oral or IV, extensive first-pass metabolism, half-life 4-7h",
+  "clinicalPearls": "Rate-limiting CCB (unlike amlodipine). Useful for SVT, AF rate control, hypertension. Severe constipation common. NEVER with beta-blockers (heart block/asystole)",
+  "indication": "Angina, hypertension, SVT, AF rate control, cluster headache prophylaxis"
+}

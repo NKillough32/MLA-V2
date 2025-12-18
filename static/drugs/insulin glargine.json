@@ -1,0 +1,14 @@
+{
+  "name": "Insulin Glargine (Lantus, Toujeo)",
+  "class": "Insulin - long-acting analogue",
+  "mechanism": "Long-acting insulin analogue - provides basal glucose control for ~24h",
+  "dosing": "SC: typically 10 units OD initially, titrate to fasting glucose. Give same time daily",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "As other insulins",
+  "monitoring": "Fasting glucose, HbA1c, hypoglycaemia, injection sites",
+  "pregnancy": "Safe - suitable for pregnancy",
+  "sideEffects": "Hypoglycaemia, weight gain, injection site reactions, lipohypertrophy",
+  "pharmacokinetics": "Onset 1-2h, no pronounced peak, duration ~24h (U-300 longer)",
+  "clinicalPearls": "Peakless profile reduces nocturnal hypos. Once daily dosing. Cannot mix with other insulins. U-100 (Lantus) vs U-300 (Toujeo) - different concentrations",
+  "indication": "Type 1 and type 2 diabetes - basal insulin requirement"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Aminophylline",
+  "class": "Methylxanthine bronchodilator",
+  "mechanism": "Phosphodiesterase inhibitor causing bronchodilation and anti-inflammatory effects",
+  "dosing": "IV loading: 5mg/kg over 20min (if not on theophylline), then 0.5mg/kg/h infusion. Oral: 225-450mg BD",
+  "contraindications": "Acute porphyria, hyperthyroidism (relative), severe cardiac disease",
+  "interactions": "Many - CYP1A2 interactions, macrolides, quinolones (↑ levels), smoking (↓ levels)",
+  "monitoring": "Theophylline levels (target 10-20mg/L), ECG, potassium, signs of toxicity",
+  "pregnancy": "Use if asthma control requires - neonatal irritability/apnoea possible",
+  "sideEffects": "Nausea, tachycardia, arrhythmias, seizures (toxicity), insomnia",
+  "pharmacokinetics": "Narrow therapeutic index, variable metabolism, levels affected by many factors",
+  "clinicalPearls": "IV form for acute severe asthma. Therapeutic drug monitoring essential. Many drug interactions",
+  "indication": "Acute severe asthma (IV), chronic asthma/COPD (oral) when other treatments inadequate"
+}

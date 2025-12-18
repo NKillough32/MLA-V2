@@ -1,0 +1,14 @@
+{
+  "name": "Chlorphenamine",
+  "class": "First-generation antihistamine (H1-receptor antagonist)",
+  "mechanism": "H1-receptor antagonist with anticholinergic and sedative properties",
+  "dosing": "Adults: 4mg TDS-QDS. Children 1-2y: 1mg BD. Children 2-6y: 1mg QDS. IV: 10-20mg slowly",
+  "contraindications": "MAOIs, severe liver disease, porphyria",
+  "interactions": "Alcohol (↑ sedation), anticholinergics (↑ effects), MAOIs (avoid)",
+  "monitoring": "Sedation level, anticholinergic effects, driving ability",
+  "pregnancy": "Appears safe - no increased malformation risk",
+  "sideEffects": "Sedation, dry mouth, blurred vision, urinary retention, confusion (elderly)",
+  "pharmacokinetics": "Well absorbed, half-life: 12-15h, hepatic metabolism",
+  "clinicalPearls": "Useful for acute allergic reactions. IM/IV route available for anaphylaxis adjunct",
+  "indication": "Allergic reactions, urticaria, hay fever, insomnia (short-term)"
+}

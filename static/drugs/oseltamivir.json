@@ -1,0 +1,13 @@
+{
+  "name": "Oseltamivir",
+  "class": "Neuraminidase inhibitor",
+  "mechanism": "Inhibits influenza neuraminidase",
+  "dosing": "75mg BD for 5 days (treatment) or 75mg once daily for prophylaxis",
+  "contraindications": "Hypersensitivity",
+  "interactions": "None major",
+  "monitoring": "Clinical response",
+  "pregnancy": "Use if clinical need",
+  "sideEffects": "Nausea, vomiting",
+  "clinicalPearls": "Start within 48h of symptom onset for greatest benefit",
+  "indication": "Influenza treatment/prophylaxis"
+}

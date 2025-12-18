@@ -1,0 +1,14 @@
+{
+  "name": "Bendroflumethiazide",
+  "class": "Diuretics, thiazide and thiazide-like",
+  "mechanism": "Inhibits sodium-chloride cotransporter in distal convoluted tubule",
+  "dosing": "Hypertension: 2.5mg daily (morning). Oedema: 5-10mg daily initially",
+  "contraindications": "Anuria, severe renal/hepatic impairment, hypersensitivity to sulfonamides",
+  "interactions": "Lithium (↑ toxicity), digoxin (hypokalaemia ↑ toxicity), NSAIDs (↓ effect)",
+  "monitoring": "U&Es, glucose, uric acid, blood pressure",
+  "pregnancy": "Avoid - may cause neonatal thrombocytopenia",
+  "sideEffects": "Hyponatraemia, hypokalaemia, hyperuricaemia, glucose intolerance, impotence",
+  "pharmacokinetics": "Onset: 2h, Peak: 4-6h, Duration: 12-18h",
+  "clinicalPearls": "Historically commonly used, but NICE NG136 prefers thiazide-like diuretics (e.g., indapamide or chlortalidone) as first-line for hypertension; bendroflumethiazide is not considered first-line for HTN under current NICE guidance. Take in morning. 2.5mg often sufficient",
+  "indication": "Hypertension, mild heart failure, oedema"
+}

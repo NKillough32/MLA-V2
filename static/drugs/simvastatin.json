@@ -1,0 +1,14 @@
+{
+  "name": "Simvastatin",
+  "class": "Statins",
+  "mechanism": "Competitively inhibits HMG-CoA reductase, rate-limiting enzyme in cholesterol synthesis",
+  "dosing": "Start 20mg at night, max 80mg daily. Usual maintenance: 20-40mg daily",
+  "contraindications": "Active liver disease, pregnancy, breastfeeding",
+  "interactions": "Amlodipine (max simvastatin 20mg), clarithromycin (rhabdomyolysis risk), grapefruit juice",
+  "monitoring": "LFTs at baseline and 3 months, CK if muscle symptoms, lipid profile",
+  "pregnancy": "Contraindicated - cholesterol essential for fetal development",
+  "sideEffects": "Myalgia, rhabdomyolysis (rare), hepatotoxicity, diabetes risk",
+  "pharmacokinetics": "Extensive first-pass metabolism, active metabolites, CYP3A4 substrate",
+  "clinicalPearls": "Take at night (cholesterol synthesis peaks). Many drug interactions. Generic statin",
+  "indication": "Hypercholesterolaemia, cardiovascular disease prevention"
+}

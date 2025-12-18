@@ -1,0 +1,13 @@
+{
+  "name": "Eplerenone",
+  "class": "Mineralocorticoid receptor antagonist (MRA)",
+  "mechanism": "Selective aldosterone receptor antagonist",
+  "dosing": "Heart failure: 25mg daily, up-titrate to 50mg daily as tolerated",
+  "contraindications": "Hyperkalaemia, severe renal impairment, pregnancy",
+  "interactions": "Potassium supplements, ACEi/ARBs (↑ hyperkalaemia risk), CYP3A4 inhibitors",
+  "monitoring": "U&Es frequently after initiation and dose changes (K+ monitoring)",
+  "pregnancy": "Avoid",
+  "sideEffects": "Hyperkalaemia, dizziness",
+  "clinicalPearls": "Less anti-androgenic effects than spironolactone; used in heart failure with reduced ejection fraction",
+  "indication": "Heart failure (HFrEF) as per guideline; alternative MRA"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Pramipexole",
+  "class": "Dopaminergic drugs - dopamine agonist",
+  "mechanism": "Non-ergot dopamine D2/D3 receptor agonist",
+  "dosing": "Start 88mcg TDS (or 260mcg OD modified release), titrate weekly. Max 3.3mg daily",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Cimetidine (↑ levels), antipsychotics, levodopa (↑ dyskinesia)",
+  "monitoring": "Motor symptoms, impulse control, somnolence, hallucinations, BP",
+  "pregnancy": "Avoid",
+  "sideEffects": "As ropinirole - nausea, impulse control disorders, sleep attacks, hallucinations, postural hypotension",
+  "pharmacokinetics": "Oral, minimal metabolism, renal excretion, half-life 8-12h",
+  "clinicalPearls": "Similar to ropinirole. Some evidence for neuroprotection in early PD. Dose reduce in renal impairment. Warn about impulse control disorders",
+  "indication": "Parkinson\\"
+}

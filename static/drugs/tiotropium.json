@@ -1,0 +1,14 @@
+{
+  "name": "Tiotropium",
+  "class": "Antimuscarinics, bronchodilators",
+  "mechanism": "Long-acting muscarinic antagonist (LAMA) - blocks M3 receptors in airways",
+  "dosing": "COPD: 18mcg daily via HandiHaler or 5mcg daily via Respimat. Take same time each day",
+  "contraindications": "Hypersensitivity to atropine derivatives",
+  "interactions": "Other anticholinergics (↑ anticholinergic effects)",
+  "monitoring": "Lung function, symptoms, anticholinergic side effects, narrow-angle glaucoma",
+  "pregnancy": "Use only if benefit outweighs risk - limited safety data",
+  "sideEffects": "Dry mouth, constipation, urinary retention, narrow-angle glaucoma, paradoxical bronchospasm",
+  "pharmacokinetics": "Long duration of action (24h), minimal systemic absorption",
+  "clinicalPearls": "Once daily LAMA for COPD. Different devices deliver different doses. Avoid contact with eyes",
+  "indication": "COPD maintenance therapy, add-on to bronchodilators"
+}

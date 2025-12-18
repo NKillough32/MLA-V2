@@ -1,0 +1,14 @@
+{
+  "name": "Amoxicillin",
+  "class": "Penicillins, broad-spectrum",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "Adults: 500mg TDS or 1g BD. Severe infections: 1g TDS. Children: 40-90mg/kg daily in 2-3 divided doses",
+  "contraindications": "Penicillin allergy, infectious mononucleosis (high rash risk)",
+  "interactions": "Methotrexate (↑ toxicity), combined oral contraceptive (↓ efficacy), probenecid (↑ levels)",
+  "monitoring": "Signs of allergic reaction, C. difficile-associated diarrhoea, renal function in severe illness",
+  "pregnancy": "Safe - suitable for use in pregnancy",
+  "sideEffects": "GI upset, diarrhoea, rash (especially with EBV), CDAD, hypersensitivity reactions",
+  "pharmacokinetics": "Onset: 1h, Peak: 1-2h, Half-life: 1h, Excretion: mainly renal",
+  "clinicalPearls": "Broad spectrum penicillin. Good oral bioavailability. Reduce dose in severe renal impairment (CrCl <30)",
+  "coverage": "Gram-positive: Streptococci, some Staphylococci. Gram-negative: E. coli, H. influenzae. No MRSA/Pseudomonas cover"
+}

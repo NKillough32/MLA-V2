@@ -1,0 +1,13 @@
+{
+  "name": "Insulin glargine (long-acting analogue)",
+  "class": "Basal insulin analogue",
+  "mechanism": "Long-acting basal insulin providing relatively flat 24-hour coverage",
+  "dosing": "Once-daily dosing at the same time each day; individualize dose (typical starting doses vary by prior therapy and weight)",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "Drugs affecting glucose control (steroids ↑ requirements, beta-blockers may mask hypoglycaemia)",
+  "monitoring": "Capillary blood glucose, HbA1c, injection sites; monitor for hypoglycaemia during dose titration",
+  "pregnancy": "Use with specialist/obstetric guidance; insulin remains treatment of choice in pregnancy when required",
+  "sideEffects": "Hypoglycaemia, weight gain, injection-site reactions",
+  "clinicalPearls": "Common basal insulin; counsel patients on hypoglycaemia recognition and dose adjustment during intercurrent illness",
+  "indication": "Basal insulin therapy in type 1 and type 2 diabetes"
+}

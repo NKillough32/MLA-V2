@@ -1,0 +1,14 @@
+{
+  "name": "Cyclizine",
+  "class": "Antihistamine antiemetic",
+  "mechanism": "H1 receptor antagonist with anticholinergic properties, acts on vestibular system",
+  "dosing": "Adults: 50mg TDS PO/IM/IV. Children 6-12 years: 25mg TDS. Motion sickness: 50mg 30min before travel",
+  "contraindications": "Severe heart failure, porphyria, known hypersensitivity",
+  "interactions": "CNS depressants (↑ sedation), anticholinergics (↑ effects), MAOIs",
+  "monitoring": "Sedation level, anticholinergic effects, cardiac function in elderly",
+  "pregnancy": "Generally considered compatible in pregnancy for short-term use; RCOG green-top guidance supports use for nausea and vomiting in pregnancy when indicated (refer to UKTIS for detailed guidance)",
+  "sideEffects": "Drowsiness, dry mouth, blurred vision, constipation, urinary retention",
+  "pharmacokinetics": "Good oral absorption, Half-life: 20h, hepatic metabolism",
+  "clinicalPearls": "Excellent for motion sickness and vertigo. Less sedating than promethazine",
+  "indication": "Motion sickness, vertigo, nausea/vomiting, pregnancy sickness"
+}

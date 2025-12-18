@@ -1,0 +1,14 @@
+{
+  "name": "Solifenacin",
+  "class": "Antimuscarinic (anticholinergic)",
+  "mechanism": "M3 selective muscarinic receptor antagonist reducing bladder contractions",
+  "dosing": "5mg OD (can increase to 10mg OD if needed)",
+  "contraindications": "Urinary retention, severe GI conditions, uncontrolled narrow-angle glaucoma, myasthenia",
+  "interactions": "CYP3A4 inhibitors (max 5mg), other anticholinergics",
+  "monitoring": "Bladder symptoms, cognitive function, post-void residual if retention risk",
+  "pregnancy": "Avoid - toxicity in animal studies",
+  "sideEffects": "Dry mouth, constipation, blurred vision, dyspepsia, cognitive impairment",
+  "pharmacokinetics": "Hepatic metabolism via CYP3A4, half-life 45-68h",
+  "clinicalPearls": "Once daily dosing. More M3-selective than oxybutynin. Still caution in elderly re: anticholinergic burden",
+  "indication": "Urge incontinence, overactive bladder syndrome"
+}

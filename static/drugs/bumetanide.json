@@ -1,0 +1,14 @@
+{
+  "name": "Bumetanide",
+  "class": "Loop diuretics",
+  "mechanism": "Inhibits Na+-K+-2Cl- transporter in the thick ascending limb of the loop of Henle",
+  "dosing": "IV/PO: 0.5-2mg once daily (usual IV bolus 1-2mg). Higher doses (up to 10mg) may be used in resistant oedema; titrate to effect",
+  "contraindications": "Anuria, severe electrolyte depletion, hypersensitivity to sulfonamides",
+  "interactions": "Aminoglycosides (↑ ototoxicity), ACE inhibitors/ARBs (↑ renal dysfunction), NSAIDs (↓ diuretic effect), digoxin (↑ arrhythmia risk with hypokalaemia)",
+  "monitoring": "U&Es (especially K+, Na+, creatinine) 1–2 weeks after initiation/titration, blood pressure, weight, fluid balance. Monitor for hearing changes if high IV doses or rapid administration",
+  "pregnancy": "Use with caution; consider specialist advice",
+  "sideEffects": "Hypokalaemia, hyponatraemia, dehydration, hypotension, dizziness. Ototoxicity can occur with high or rapid IV doses and with concomitant aminoglycosides",
+  "pharmacokinetics": "Rapid onset (IV), short half-life ~1-1.5h; hepatic metabolism and renal excretion",
+  "clinicalPearls": "More potent than furosemide mg-for-mg (≈40× stronger). Useful when oral absorption of furosemide unreliable or in diuretic resistance. Monitor electrolytes closely. Beware ototoxicity with rapid/high-dose IV administration and when combined with aminoglycosides",
+  "indication": "Acute pulmonary oedema, chronic heart failure with fluid overload, peripheral oedema"
+}

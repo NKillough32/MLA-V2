@@ -1,0 +1,14 @@
+{
+  "name": "Sumatriptan",
+  "class": "Serotonin 5-HT1-receptor agonists (triptans)",
+  "mechanism": "Selective 5-HT1B/1D receptor agonist causing vasoconstriction and neuronal inhibition",
+  "dosing": "Subcutaneous: 6mg, may repeat after 1h. Oral: 50-100mg, may repeat after 2h. Max 300mg/24h",
+  "contraindications": "Ischaemic heart disease, cerebrovascular disease, uncontrolled hypertension",
+  "interactions": "MAOIs (avoid), SSRIs (serotonin syndrome risk), ergot alkaloids",
+  "monitoring": "Cardiovascular status, blood pressure, frequency of use (medication overuse headache)",
+  "pregnancy": "Avoid - limited safety data",
+  "sideEffects": "Injection site reactions, chest tightness, dizziness, fatigue, medication overuse headache",
+  "pharmacokinetics": "Rapid onset SC: 10-15min, Oral: 30min, half-life: 2h",
+  "clinicalPearls": "Most effective when taken early in attack. Limit to 2 days/week to avoid medication overuse",
+  "indication": "Acute migraine treatment, cluster headache (subcutaneous)"
+}

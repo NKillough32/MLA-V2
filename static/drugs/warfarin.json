@@ -1,0 +1,14 @@
+{
+  "name": "Warfarin",
+  "class": "Vitamin K antagonist (oral anticoagulant)",
+  "mechanism": "Inhibits vitamin K epoxide reductase (VKORC1), reducing synthesis of clotting factors II, VII, IX and X and proteins C and S",
+  "dosing": "Highly individualised using INR-guided dosing; typical initiation regimens vary (e.g., 1–5 mg OD titrated against INR). Usual maintenance targets: INR 2.0–3.0 for AF/VTE (target 2.5); higher targets (e.g., 2.5–3.5) for some mechanical valves — follow local guidance.",
+  "contraindications": "Pregnancy (teratogenic, especially early gestation and near term), active bleeding, severe hepatic impairment, inability to adhere to monitoring",
+  "interactions": "Very many: antibiotics (macrolides, metronidazole), azoles, amiodarone (↑ INR); enzyme inducers (carbamazepine, rifampicin) ↓ INR; dietary vitamin K (green leafy veg) affects control. Check interactions prior to changes.",
+  "monitoring": "INR frequently until stable (often several times weekly initially), then spacing to every 4–12 weeks depending on stability; check LFTs, full medication review and adherence. Monitor for bleeding signs.",
+  "pregnancy": "Generally avoid; if anticoagulation essential in pregnancy use LMWH under specialist care. Warfarin contraindicated around delivery.",
+  "sideEffects": "Bleeding (minor to major), skin necrosis (rare), purple toe syndrome (rare)",
+  "pharmacokinetics": "Delayed onset/offset due to existing clotting factor half-lives (effect usually seen 48–72 h); hepatic metabolism (CYP2C9 and others)",
+  "clinicalPearls": "Stop ~5 days before elective procedures; consider bridging with LMWH only for high thrombotic risk patients. Reversal: oral/IV vitamin K for elevated INR without major bleeding; prothrombin complex concentrate (PCC) ± IV vitamin K for major bleeding or urgent reversal. Liaise with haematology/anticoagulation service for complex cases.",
+  "indication": "Stroke prevention in AF (where DOACs unsuitable), VTE treatment and secondary prevention, mechanical prosthetic valves (depending on type)"
+}

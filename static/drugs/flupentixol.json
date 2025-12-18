@@ -1,0 +1,14 @@
+{
+  "name": "Flupentixol (Flupenthixol)",
+  "class": "Antipsychotics, first-generation",
+  "mechanism": "Dopamine D1/D2 receptor antagonist",
+  "dosing": "Oral: 3-18mg daily in divided doses. Depot: 20-40mg IM every 2-4 weeks",
+  "contraindications": "CNS depression, circulatory collapse, phaeochromocytoma",
+  "interactions": "As other antipsychotics",
+  "monitoring": "As chlorpromazine",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "EPS, sedation, weight gain, hyperprolactinaemia, hypotension, QT prolongation",
+  "pharmacokinetics": "Oral or depot injection, long half-life (depot lasts 2-4 weeks)",
+  "clinicalPearls": "Depot useful for adherence. Low dose (0.5-1mg) used for depression (off-label). Monitor for tardive dyskinesia",
+  "indication": "Schizophrenia, psychosis, depression (low dose)"
+}

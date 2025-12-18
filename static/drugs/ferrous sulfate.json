@@ -1,0 +1,14 @@
+{
+  "name": "Ferrous Sulfate",
+  "class": "Iron supplement",
+  "mechanism": "Provides supplemental elemental iron",
+  "dosing": "Prophylaxis: 200mg (65mg elemental Fe) OD. Treatment: 200mg BD-TDS",
+  "contraindications": "Haemochromatosis, haemosiderosis, anaemias not due to iron deficiency",
+  "interactions": "Levothyroxine (↓ absorption - separate by 4h), bisphosphonates, antibiotics (tetracyclines, quinolones)",
+  "monitoring": "FBC, ferritin, tolerance of GI side effects",
+  "pregnancy": "Safe - prophylaxis recommended",
+  "sideEffects": "GI upset (nausea, constipation/diarrhoea, abdominal pain), black stools, tooth staining (liquid)",
+  "pharmacokinetics": "Oral, absorption increased in iron deficiency, take on empty stomach for best absorption",
+  "clinicalPearls": "Constipation very common - consider lactulose. Take on empty stomach (or with vitamin C) for better absorption, but worse GI side effects. Black stools normal. Takes 3 months to replete stores",
+  "indication": "Iron deficiency anaemia, prophylaxis in pregnancy"
+}

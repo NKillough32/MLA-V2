@@ -1,0 +1,14 @@
+{
+  "name": "Lidocaine",
+  "class": "Local anaesthetic (amide type)",
+  "mechanism": "Blocks voltage-gated sodium channels, preventing nerve conduction",
+  "dosing": "Local infiltration: max 4.5mg/kg (7mg/kg with adrenaline). Topical: 2-5% preparations",
+  "contraindications": "Heart block, severe cardiac failure, hypersensitivity to amides",
+  "interactions": "Beta-blockers (↑ toxicity), cimetidine (↑ levels), class I antiarrhythmics",
+  "monitoring": "Signs of systemic toxicity, cardiac rhythm (IV use)",
+  "pregnancy": "Safe for local use - does not cross placenta significantly",
+  "sideEffects": "Local: burning, swelling. Systemic: CNS toxicity, cardiac arrhythmias",
+  "pharmacokinetics": "Rapid onset: 2-5min, duration: 1-3h, hepatic metabolism",
+  "clinicalPearls": "Most common local anaesthetic. Adrenaline prolongs duration. IV form for arrhythmias",
+  "indication": "Local anaesthesia, topical anaesthesia, ventricular arrhythmias (IV)"
+}

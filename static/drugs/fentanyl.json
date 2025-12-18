@@ -1,0 +1,13 @@
+{
+  "name": "Fentanyl",
+  "class": "Opioid analgesic (synthetic)",
+  "mechanism": "Potent μ-opioid receptor agonist",
+  "dosing": "Analgesia: 25-100mcg IV bolus titrated to effect; intranasal 100-200mcg (device dependent) for prehospital/ED use. Reduce dose in elderly and renal impairment",
+  "contraindications": "Respiratory depression, acute severe asthma, hypersensitivity",
+  "interactions": "CNS depressants, MAOIs, CYP3A4 inhibitors",
+  "monitoring": "Respiratory rate, oxygen saturation, sedation score, BP",
+  "pregnancy": "Use with caution; neonatal respiratory depression possible with prolonged maternal use",
+  "sideEffects": "Respiratory depression, bradycardia, nausea, constipation, chest wall rigidity with large rapid boluses",
+  "clinicalPearls": "Short-acting and potent — useful for ED analgesia and procedural analgesia. Titrate slowly and monitor closely",
+  "indication": "Severe acute pain, procedural sedation/analgesia, peri-intubation analgesia"
+}

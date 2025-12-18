@@ -1,0 +1,14 @@
+{
+  "name": "Digoxin",
+  "class": "Digoxin",
+  "mechanism": "Inhibits Na+/K+-ATPase pump, increases intracellular Ca2+, ↑ contractility, ↓ AV conduction",
+  "dosing": "Loading: 10-15 micrograms/kg IV or PO. Maintenance: 125-250 micrograms daily (reduce in elderly/renal impairment)",
+  "contraindications": "Ventricular arrhythmias, heart block, hypertrophic cardiomyopathy with outflow obstruction",
+  "interactions": "Amiodarone (↑ levels), diuretics (hypokalaemia ↑ toxicity), verapamil, quinidine",
+  "monitoring": "Digoxin levels (6h post-dose), U&Es, heart rate, rhythm, signs of toxicity",
+  "pregnancy": "Safe - no teratogenic effects, adjust dose due to increased clearance",
+  "sideEffects": "Nausea, vomiting, visual disturbances, arrhythmias, confusion (toxicity)",
+  "pharmacokinetics": "Half-life: 36h (longer in renal impairment), mainly renal excretion",
+  "clinicalPearls": "Narrow therapeutic window. Target level 1.0-2.0 micrograms/L. Toxicity common in elderly",
+  "indication": "AF (rate control), heart failure (symptom control). No mortality benefit"
+}

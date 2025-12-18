@@ -1,0 +1,14 @@
+{
+  "name": "Sevoflurane",
+  "class": "Anaesthetics, general (Volatile)",
+  "mechanism": "Volatile anaesthetic - mechanism unclear (GABA-A modulation, others)",
+  "dosing": "Inhalational: induction 0.5-1% increasing to 5-8%. Maintenance 0.5-3% in O2/N2O",
+  "contraindications": "Malignant hyperthermia susceptibility, severe hepatic impairment",
+  "interactions": "Neuromuscular blockers (↑ effect), antihypertensives",
+  "monitoring": "Anaesthetic depth, BP, HR, temperature (malignant hyperthermia), respiratory function",
+  "pregnancy": "Safe - commonly used",
+  "sideEffects": "Hypotension, respiratory depression, malignant hyperthermia (rare), postoperative nausea, emergence delirium (children)",
+  "pharmacokinetics": "Inhaled, rapid onset/offset (low blood:gas solubility), metabolised minimally",
+  "clinicalPearls": "Most commonly used volatile anaesthetic. Pleasant smell - good for gas induction (children). Rapid onset/recovery. Minimal metabolism. Can cause compound A (nephrotoxic in rats - not clinically significant in humans at recommended flows)",
+  "indication": "General anaesthesia (induction and maintenance)"
+}

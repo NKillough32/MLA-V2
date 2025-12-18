@@ -1,0 +1,14 @@
+{
+  "name": "Sacubitril-Valsartan (Entresto)",
+  "class": "Angiotensin receptor-neprilysin inhibitor (ARNI)",
+  "mechanism": "Neprilysin inhibitor + ARB - increases natriuretic peptides while blocking angiotensin II",
+  "dosing": "Start 24/26mg or 49/51mg BD, target 97/103mg BD. Must stop ACEi 36h before starting",
+  "contraindications": "Concurrent ACEi use, history of angioedema, severe hepatic impairment",
+  "interactions": "ACEi (angioedema risk - 36h washout essential), potassium-sparing diuretics",
+  "monitoring": "Blood pressure, U&Es, signs of angioedema",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Hypotension, hyperkalaemia, renal impairment, angioedema, dizziness",
+  "pharmacokinetics": "Sacubitril is prodrug converted to active LBQ657, valsartan absorbed intact",
+  "clinicalPearls": "Superior to enalapril in heart failure. Must have 36h ACEi washout. Specialist initiation often required",
+  "indication": "Chronic heart failure with reduced ejection fraction (HFrEF)"
+}

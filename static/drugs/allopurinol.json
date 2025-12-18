@@ -1,0 +1,14 @@
+{
+  "name": "Allopurinol",
+  "class": "Xanthine oxidase inhibitor",
+  "mechanism": "Inhibits xanthine oxidase, decreasing uric acid synthesis",
+  "dosing": "Start 100 mg OD; titrate by 100 mg every 2–4 weeks to target serum urate < 300 µmol/L (max 900 mg OD)",
+  "contraindications": "Acute gout flare (delay initiation), known HLA-B*58:01 positivity (↑ risk of severe cutaneous reactions)",
+  "interactions": "Azathioprine / mercaptopurine (↑ toxicity – reduce dose 75%), warfarin (↑ INR), ACEi (hypersensitivity)",
+  "monitoring": "Urate, U&Es, LFTs, FBC; observe for rash or eosinophilia",
+  "pregnancy": "Avoid if possible; limited safety data",
+  "sideEffects": "Rash, Stevens-Johnson syndrome, hepatic dysfunction, bone-marrow suppression (rare)",
+  "pharmacokinetics": "Oral bioavailability ≈ 90 %; active metabolite oxypurinol t½ ≈ 20 h; renal elimination",
+  "clinicalPearls": "Test HLA-B*58:01 in patients of Han Chinese, Thai or Korean descent. Continue during intercurrent flares once established; co-prescribe prophylactic colchicine for first 3 months.",
+  "indication": "Gout prophylaxis, hyperuricaemia, tumour-lysis-syndrome prevention"
+}

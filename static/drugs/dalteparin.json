@@ -1,0 +1,14 @@
+{
+  "name": "Dalteparin",
+  "class": "Low molecular weight heparin (LMWH)",
+  "mechanism": "Enhances antithrombin-mediated inhibition of factor Xa",
+  "dosing": "Prophylaxis: 2500-5000 units SC once daily. Treatment dosing weight-based (e.g., 200 units/kg daily or 100 units/kg BD)",
+  "contraindications": "Active bleeding, severe thrombocytopenia, history of heparin-induced thrombocytopenia (HIT)",
+  "interactions": "Antiplatelet agents (↑ bleeding), other anticoagulants",
+  "monitoring": "Platelet count (for HIT), renal function, signs of bleeding",
+  "pregnancy": "Preferred anticoagulant in pregnancy when anticoagulation needed",
+  "sideEffects": "Bleeding, injection site reactions, thrombocytopenia (rare), hyperkalaemia",
+  "pharmacokinetics": "SC absorption with predictable dose-response; renal excretion",
+  "clinicalPearls": "Use dose adjustment for renal impairment and obesity. Monitor anti-Xa in special populations",
+  "indication": "VTE prophylaxis and treatment, bridging for high-risk patients"
+}

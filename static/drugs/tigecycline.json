@@ -1,0 +1,14 @@
+{
+  "name": "Tigecycline",
+  "class": "Glycylcycline antibiotic",
+  "mechanism": "Binds 30S ribosomal subunit inhibiting protein synthesis",
+  "dosing": "Loading 100mg IV, then 50mg IV every 12 hours (adjust per product guidance)",
+  "contraindications": "Severe hepatic impairment (dose adjustment), hypersensitivity to tetracyclines/glycylcyclines",
+  "interactions": "May reduce effectiveness of oral contraceptives; interactions similar to tetracyclines",
+  "monitoring": "LFTs, clinical response, signs of pancreatitis (rare)",
+  "pregnancy": "Contraindicated (tetracycline class effects on teeth/bone)",
+  "sideEffects": "Nausea/vomiting (common), increased mortality signal in some studies when used for severe infections, photosensitivity",
+  "pharmacokinetics": "Large volume of distribution (poor serum concentrations), hepatic metabolism",
+  "clinicalPearls": "Not ideal for bloodstream infections due to low serum levels. Use for complicated intra-abdominal and skin infections where organisms resistant to other agents",
+  "indication": "Complicated intra-abdominal infections, complicated skin/soft tissue infections, some MDR organisms when options limited"
+}

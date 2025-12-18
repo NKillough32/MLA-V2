@@ -1,0 +1,14 @@
+{
+  "name": "Hydromol Ointment/Cream",
+  "class": "Emollient",
+  "mechanism": "Occlusive emollient providing skin barrier",
+  "dosing": "Apply liberally and frequently (QDS minimum)",
+  "contraindications": "Hypersensitivity",
+  "interactions": "None",
+  "monitoring": "Skin hydration, tolerability",
+  "pregnancy": "Safe",
+  "sideEffects": "Greasy feel, rarely folliculitis, fire hazard",
+  "pharmacokinetics": "Local skin hydration",
+  "clinicalPearls": "Very greasy - excellent for very dry skin. Ointment more occlusive than cream. Paraffin-based - fire hazard. Patient preference important for adherence",
+  "indication": "Severe dry skin, eczema, ichthyosis, psoriasis"
+}

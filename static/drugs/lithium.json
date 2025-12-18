@@ -1,0 +1,14 @@
+{
+  "name": "Lithium carbonate",
+  "class": "Mood stabiliser",
+  "mechanism": "Unclear - affects neurotransmitter function and cellular signalling",
+  "dosing": "Start 200-400mg daily, target level 0.6-1.0mmol/L for maintenance, 0.8-1.2mmol/L acute",
+  "contraindications": "Severe renal/cardiac disease, Addison\\",
+  "interactions": "Diuretics (↑ toxicity), ACE inhibitors (↑ levels), NSAIDs (↑ levels), theophylline (↓ levels)",
+  "monitoring": "Lithium levels weekly until stable, then 3-monthly. TFTs, U&Es, weight",
+  "pregnancy": "Avoid 1st trimester (Ebstein\\",
+  "sideEffects": "Tremor, polyuria, weight gain, hypothyroidism, nephrotoxicity, teratogenicity",
+  "pharmacokinetics": "Narrow therapeutic window, renal excretion, half-life: 12-27h",
+  "clinicalPearls": "Regular level monitoring essential. Toxicity >1.5mmol/L. Maintain good hydration",
+  "indication": "Bipolar disorder (acute treatment and prophylaxis), treatment-resistant depression"
+}

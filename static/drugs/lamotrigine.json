@@ -1,0 +1,14 @@
+{
+  "name": "Lamotrigine",
+  "class": "Antiepileptic/mood stabiliser",
+  "mechanism": "Blocks voltage-gated sodium channels, inhibits glutamate release",
+  "dosing": "Monotherapy: start 25mg OD for 2 weeks, slow titration. With valproate: start 12.5mg alternate days",
+  "contraindications": "Hypersensitivity, caution with hepatic/renal impairment",
+  "interactions": "Valproate (↑ lamotrigine levels - halve dose), carbamazepine (↓ levels), OCP (↓ lamotrigine)",
+  "monitoring": "Watch for rash (especially first 8 weeks), mood, skin reactions",
+  "pregnancy": "Relatively safer antiepileptic - high dose folic acid recommended",
+  "sideEffects": "Rash (including Stevens-Johnson syndrome), dizziness, headache, insomnia",
+  "pharmacokinetics": "Well absorbed, hepatic glucuronidation, half-life 24-35h",
+  "clinicalPearls": "SLOW titration essential to reduce rash risk. Stop immediately if rash appears. Useful for bipolar depression",
+  "indication": "Epilepsy (focal and generalised), bipolar disorder (especially depression prevention)"
+}

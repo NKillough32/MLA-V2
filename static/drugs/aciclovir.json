@@ -1,0 +1,14 @@
+{
+  "name": "Aciclovir",
+  "class": "Antiviral drugs",
+  "mechanism": "Nucleoside analogue - inhibits viral DNA polymerase after phosphorylation by viral thymidine kinase",
+  "dosing": "Herpes simplex: 200mg 5x daily for 5 days. Shingles: 800mg 5x daily for 7 days. IV: 5-10mg/kg TDS",
+  "contraindications": "Hypersensitivity. Caution in renal impairment, dehydration",
+  "interactions": "Nephrotoxic drugs (↑ nephrotoxicity), probenecid (↑ levels), mycophenolate",
+  "monitoring": "Renal function, hydration status, neurological symptoms (high doses)",
+  "pregnancy": "Safe - no evidence of teratogenicity",
+  "sideEffects": "GI upset, headache, dizziness, acute kidney injury (IV), neurological effects (high doses)",
+  "pharmacokinetics": "Variable oral absorption (15-30%), half-life: 2-3h, mainly renal excretion",
+  "clinicalPearls": "Most effective when started within 72h of rash onset. Maintain good hydration",
+  "indication": "Herpes simplex, varicella zoster, prophylaxis in immunocompromised"
+}

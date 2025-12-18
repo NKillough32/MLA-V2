@@ -1,0 +1,14 @@
+{
+  "name": "Colchicine",
+  "class": "Anti-inflammatory (microtubule inhibitor)",
+  "mechanism": "Inhibits neutrophil chemotaxis and phagocytosis by disrupting microtubules",
+  "dosing": "Acute gout: 500mcg 2-4 times daily until relief (max 6mg per course). Prophylaxis: 500mcg OD-BD",
+  "contraindications": "Severe renal/hepatic impairment, blood disorders, pregnancy",
+  "interactions": "Macrolides, statins, ciclosporin (↑ toxicity), P-glycoprotein inhibitors",
+  "monitoring": "FBC, U&Es, LFTs if prolonged use. Watch for toxicity signs",
+  "pregnancy": "Avoid - teratogenic risk",
+  "sideEffects": "Diarrhoea, nausea, vomiting, abdominal pain, bone marrow suppression (toxicity)",
+  "pharmacokinetics": "Hepatic metabolism, renal excretion, narrow therapeutic index",
+  "clinicalPearls": "Start at first sign of acute gout. High dose regimens no longer recommended due to toxicity. Stop if diarrhoea develops",
+  "indication": "Acute gout, gout prophylaxis during urate-lowering therapy initiation, familial Mediterranean fever"
+}

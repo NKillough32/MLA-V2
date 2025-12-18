@@ -1,0 +1,14 @@
+{
+  "name": "Mometasone Nasal Spray",
+  "class": "Corticosteroid (intranasal)",
+  "mechanism": "Potent topical corticosteroid for nasal inflammation",
+  "dosing": "Adults: 2 sprays each nostril OD (100mcg/spray). Children ≥3y: 1 spray each nostril OD",
+  "contraindications": "Untreated nasal infection, recent nasal surgery",
+  "interactions": "Minimal - very low systemic absorption",
+  "monitoring": "Symptom control, epistaxis, growth in children",
+  "pregnancy": "Use if benefit outweighs risk - minimal absorption",
+  "sideEffects": "Epistaxis, headache, nasal irritation, pharyngitis",
+  "pharmacokinetics": "Minimal systemic bioavailability (<1%)",
+  "clinicalPearls": "Often preferred over fluticasone for once-daily dosing. Licensed from age 3",
+  "indication": "Allergic rhinitis, nasal polyps"
+}

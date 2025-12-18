@@ -1,0 +1,14 @@
+{
+  "name": "Olanzapine",
+  "class": "Antipsychotics, second-generation (atypical)",
+  "mechanism": "Dopamine D2, serotonin 5-HT2A receptor antagonist with multiple receptor activity",
+  "dosing": "Schizophrenia: Start 10mg daily, range 5-20mg. Bipolar: 15mg daily, adjust 5-20mg",
+  "contraindications": "Comatose states, severe CNS depression",
+  "interactions": "Alcohol (↑ sedation), carbamazepine (↓ olanzapine levels), smoking (↓ levels)",
+  "monitoring": "Weight, glucose, lipids, prolactin, FBC, LFTs, movement disorders",
+  "pregnancy": "Use only if essential - risk of extrapyramidal symptoms in neonate",
+  "sideEffects": "Weight gain, diabetes, dyslipidaemia, sedation, extrapyramidal effects (less than typical)",
+  "pharmacokinetics": "Half-life: 30h, hepatic metabolism, smoking increases clearance",
+  "clinicalPearls": "Lower EPS risk than haloperidol but significant metabolic effects. Regular monitoring essential",
+  "indication": "Schizophrenia, bipolar disorder (acute mania), treatment-resistant depression"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Sulfasalazine",
+  "class": "Disease-modifying antirheumatic drugs",
+  "mechanism": "Cleaved in colon to 5-aminosalicylic acid and sulfapyridine, anti-inflammatory action",
+  "dosing": "Rheumatoid arthritis: 500mg daily initially, increase weekly to 2-3g daily in divided doses",
+  "contraindications": "Sulfonamide allergy, severe renal/hepatic impairment, porphyria",
+  "interactions": "Folate antagonists (↑ toxicity), digoxin (↓ absorption), warfarin (↑ anticoagulation)",
+  "monitoring": "FBC (especially first 3 months), LFTs, U&Es, folate levels",
+  "pregnancy": "Generally safe - supplement with folate 5mg daily",
+  "sideEffects": "GI upset, rash, blood disorders, male infertility (reversible), orange discoloration of urine",
+  "pharmacokinetics": "Prodrug, cleaved by colonic bacteria, active metabolites have different kinetics",
+  "clinicalPearls": "DMARD with dual action (RA and IBD). Take with food. Supplement folate. Check G6PD deficiency",
+  "indication": "Rheumatoid arthritis, ulcerative colitis, Crohn disease"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Haloperidol",
+  "class": "Antipsychotic (First-generation, typical)",
+  "mechanism": "Potent dopamine D2 receptor antagonist in mesolimbic and mesocortical pathways; also blocks α1-adrenergic and 5-HT2 receptors",
+  "dosing": "Psychosis/schizophrenia: 1.5–3 mg twice daily (max 30 mg/day). Acute agitation: 2.5–10 mg IM repeated q30 min if needed (max 18 mg/24 h). Elderly: start 0.5 mg twice daily and titrate cautiously",
+  "contraindications": "Parkinson’s disease, Lewy-body dementia, prolonged QTc, CNS depression, comatose states",
+  "interactions": "QT-prolonging agents (macrolides, fluoroquinolones), CNS depressants, carbamazepine (↓ levels)",
+  "monitoring": "Baseline ECG (QTc < 450 ms), electrolytes, weight, BP, extrapyramidal symptoms, prolactin",
+  "pregnancy": "Use only if benefit outweighs risk; neonatal extrapyramidal symptoms possible",
+  "sideEffects": "Extrapyramidal symptoms, tardive dyskinesia, QT prolongation, neuroleptic malignant syndrome, hyperprolactinaemia, sedation",
+  "pharmacokinetics": "Onset 30–60 min PO, t½ ≈ 20 h, hepatic metabolism (CYP3A4, 2D6)",
+  "clinicalPearls": "Avoid in dementia-related psychosis (↑ mortality). Always use the lowest effective dose for the shortest duration. ECG before initiation and after dose increases",
+  "indication": "Schizophrenia, acute psychosis, delirium, short-term control of severe agitation, Tourette syndrome"
+}

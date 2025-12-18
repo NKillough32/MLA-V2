@@ -1,0 +1,13 @@
+{
+  "name": "Perindopril",
+  "class": "ACE inhibitor",
+  "mechanism": "ACE inhibition reducing angiotensin II and aldosterone",
+  "dosing": "Hypertension: start 2-4mg daily and titrate as tolerated",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, history of ACEi-induced angioedema",
+  "interactions": "NSAIDs, potassium-sparing diuretics, lithium",
+  "monitoring": "eGFR and potassium baseline and 1–2 weeks after initiation",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Cough, hyperkalaemia, hypotension, angioedema",
+  "clinicalPearls": "Used widely in UK cardiology/HTN pathways",
+  "indication": "Hypertension, heart failure, post-MI"
+}

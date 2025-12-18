@@ -1,0 +1,14 @@
+{
+  "name": "Fluoxetine",
+  "class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "mechanism": "Inhibits serotonin reuptake at synaptic cleft, increasing serotonin availability",
+  "dosing": "Depression: Start 20mg daily, usual dose 20mg, max 60mg daily. Take in morning",
+  "contraindications": "MAOIs (within 14 days), mania, severe hepatic impairment",
+  "interactions": "MAOIs (serotonin syndrome), warfarin (↑ bleeding), tramadol (↑ seizure risk)",
+  "monitoring": "Mood, suicide risk (especially <25 years), weight, sodium levels",
+  "pregnancy": "Use if benefit outweighs risk - potential neonatal adaptation syndrome",
+  "sideEffects": "Nausea, headache, insomnia, sexual dysfunction, weight loss, hyponatraemia",
+  "pharmacokinetics": "Long half-life: 4-6 days (active metabolite: 4-16 days), CYP2D6 metabolism",
+  "clinicalPearls": "Longest half-life SSRI - less withdrawal symptoms. May initially increase anxiety. Monitor under 25s weekly",
+  "indication": "Depression, panic disorder, OCD, bulimia nervosa, premenstrual dysphoric disorder"
+}

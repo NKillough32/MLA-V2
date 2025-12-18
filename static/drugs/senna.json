@@ -1,0 +1,14 @@
+{
+  "name": "Senna",
+  "class": "Stimulant laxative",
+  "mechanism": "Anthraquinone glycosides stimulate colonic peristalsis and inhibit water/electrolyte absorption",
+  "dosing": "Adults: 7.5-15mg at bedtime (sennosides). Children >6 years: 3.75-7.5mg at bedtime",
+  "contraindications": "Intestinal obstruction, inflammatory bowel disease, severe dehydration, appendicitis",
+  "interactions": "Cardiac glycosides (hypokalaemia ↑ toxicity), thiazide diuretics",
+  "monitoring": "Bowel movements, electrolyte balance with prolonged use, dependency",
+  "pregnancy": "Generally considered compatible in pregnancy; consult UKTIS if exposure occurs",
+  "sideEffects": "Abdominal cramps, hypokalaemia, melanosis coli (prolonged use), dependency",
+  "pharmacokinetics": "Prodrug activated by colonic bacteria, onset 8-12h",
+  "clinicalPearls": "Most widely used stimulant laxative in UK. Avoid prolonged use >1 week",
+  "indication": "Constipation, bowel preparation, opioid-induced constipation"
+}

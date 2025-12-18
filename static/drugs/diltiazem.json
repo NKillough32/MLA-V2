@@ -1,0 +1,14 @@
+{
+  "name": "Diltiazem",
+  "class": "Calcium channel blockers",
+  "mechanism": "Non-dihydropyridine CCB - blocks L-type calcium channels in heart and vessels",
+  "dosing": "Hypertension: 60mg BD or 120mg XL daily. Angina: 60mg TDS or 120-300mg XL daily",
+  "contraindications": "Heart block, sick sinus syndrome, severe bradycardia, severe heart failure",
+  "interactions": "Beta-blockers (↑ bradycardia), digoxin (↑ levels), simvastatin (↑ levels)",
+  "monitoring": "Heart rate, blood pressure, signs of heart failure, liver function",
+  "pregnancy": "Avoid unless essential - limited safety data",
+  "sideEffects": "Bradycardia, heart block, ankle oedema, constipation, gingival hyperplasia",
+  "pharmacokinetics": "Half-life: 3-4h (XL: 6-8h), extensive hepatic metabolism",
+  "clinicalPearls": "Rate-limiting CCB. Good for AF rate control. Avoid with beta-blockers",
+  "indication": "Hypertension, angina, atrial fibrillation (rate control)"
+}

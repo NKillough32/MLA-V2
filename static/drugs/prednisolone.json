@@ -1,0 +1,14 @@
+{
+  "name": "Prednisolone",
+  "class": "Corticosteroid (glucocorticoid)",
+  "mechanism": "Synthetic glucocorticoid with anti-inflammatory and immunosuppressive effects",
+  "dosing": "Acute: 30-60mg daily, then taper. Maintenance: 5-15mg daily. Always taper gradually",
+  "contraindications": "Systemic infection (unless life-threatening), live vaccines",
+  "interactions": "Warfarin (variable effect), NSAIDs (↑ GI bleeding), vaccines (↓ response)",
+  "monitoring": "Blood glucose, blood pressure, bone density, growth (children)",
+  "pregnancy": "Use if essential - may cause cleft palate (first trimester)",
+  "sideEffects": "Weight gain, mood changes, osteoporosis, diabetes, increased infection risk",
+  "pharmacokinetics": "Half-life: 12-36h, oral bioavailability: 70%",
+  "clinicalPearls": "Never stop abruptly. Take with food. Consider bone protection",
+  "indication": "Asthma, COPD exacerbation, inflammatory conditions"
+}

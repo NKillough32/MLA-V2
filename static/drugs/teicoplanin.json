@@ -1,0 +1,14 @@
+{
+  "name": "Teicoplanin",
+  "class": "Glycopeptide antibiotic",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to D-ala-D-ala termini",
+  "dosing": "Loading: 6-12mg/kg IV every 12 hours for 3 doses then 6-12mg/kg once daily; adjust for renal function and product guidance",
+  "contraindications": "Hypersensitivity to glycopeptides",
+  "interactions": "Other nephrotoxic agents (↑ nephrotoxicity risk)",
+  "monitoring": "Renal function, trough levels where available, signs of ototoxicity/nephrotoxicity",
+  "pregnancy": "Use if clearly needed - limited data",
+  "sideEffects": "Infusion-related reactions, rash, nephrotoxicity (less than vancomycin in some studies)",
+  "pharmacokinetics": "Long half-life allowing once-daily dosing after loading; mainly renal excretion",
+  "clinicalPearls": "Used similarly to vancomycin in some settings; local dosing/monitoring protocols vary",
+  "indication": "Gram-positive infections including MRSA and serious staphylococcal infections"
+}

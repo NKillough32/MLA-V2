@@ -1,0 +1,14 @@
+{
+  "name": "Tadalafil",
+  "class": "Phosphodiesterase type-5 inhibitors",
+  "mechanism": "Inhibits PDE5, increasing cGMP causing smooth muscle relaxation and vasodilation",
+  "dosing": "Erectile dysfunction: 10mg PRN (up to 20mg) 30min before sexual activity. Daily: 2.5-5mg OD. Pulmonary hypertension: 40mg OD",
+  "contraindications": "Nitrates (within 48h), severe cardiovascular disease, recent stroke/MI, hypotension, hereditary retinal disorders",
+  "interactions": "Nitrates (fatal hypotension), alpha-blockers (hypotension), CYP3A4 inhibitors (↑ levels)",
+  "monitoring": "BP, visual changes, priapism",
+  "pregnancy": "Not applicable for erectile dysfunction. Pulmonary hypertension: avoid",
+  "sideEffects": "Headache, flushing, dyspepsia, nasal congestion, back pain, visual disturbances, priapism (rare)",
+  "pharmacokinetics": "Oral, hepatic metabolism, very long half-life (17.5h)",
+  "clinicalPearls": "Longest acting PDE5 inhibitor. Can be taken with food. Warn about nitrate interaction. If erection >4h, seek emergency help",
+  "indication": "Erectile dysfunction, pulmonary arterial hypertension, benign prostatic hyperplasia"
+}

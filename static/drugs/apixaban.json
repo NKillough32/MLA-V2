@@ -1,0 +1,15 @@
+{
+  "name": "Apixaban",
+  "class": "Direct oral anticoagulant (DOAC) - Factor Xa inhibitor",
+  "mechanism": "Direct, selective inhibition of factor Xa in coagulation cascade",
+  "dosing": "AF: 5mg BD. Reduce to 2.5mg BD if the patient meets ≥2 of the following: age ≥80 years, body weight ≤60 kg, serum creatinine ≥133 µmol/L (see SmPC). Note: patients with severe renal impairment (CrCl 15–29 mL/min) also commonly require 2.5mg BD — check the local formulary/SmPC for details. VTE: 10mg BD for 7 days, then 5mg BD",
+  "contraindications": "Active bleeding, severe hepatic impairment, pregnancy, prosthetic valves",
+  "interactions": "Strong CYP3A4 inhibitors (↓ dose), P-gp inducers (avoid), warfarin (↑ bleeding)",
+  "monitoring": "Renal function, hepatic function, signs of bleeding. No routine coagulation monitoring",
+  "pregnancy": "Contraindicated in pregnancy — refer to the SmPC/Medicines.org.uk for pregnancy guidance",
+  "sideEffects": "Bleeding, anaemia, nausea, hypotension",
+  "pharmacokinetics": "Peak: 3-4h, Half-life: 12h, multiple elimination pathways",
+  "clinicalPearls": "Can be taken with or without food. Less renal clearance than rivaroxaban",
+  "indication": "Atrial fibrillation stroke prevention, VTE treatment and prophylaxis",
+  "reversal": "Life-threatening bleeding: andexanet alfa where available; if not available or contraindicated consider 4-factor PCC. For non-life-threatening bleeding consider local protocols. Avoid routine bridging with heparin when stopping for procedures unless high thrombotic risk."
+}

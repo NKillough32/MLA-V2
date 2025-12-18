@@ -1,0 +1,14 @@
+{
+  "name": "Metoclopramide",
+  "class": "Antiemetic/Prokinetic (Dopamine antagonist)",
+  "mechanism": "Blocks dopamine D2 receptors in CTZ and enhances GI motility",
+  "dosing": "Adult: 10mg TDS PO/IV/IM. Max 5 days treatment. Reduce dose in elderly/renal impairment",
+  "contraindications": "GI obstruction, perforation, pheochromocytoma, prolactinoma, Parkinson\\",
+  "interactions": "Dopamine agonists (antagonism), CNS depressants, digoxin (↑ absorption)",
+  "monitoring": "Neurological symptoms (tardive dyskinesia), cardiac conduction, renal function",
+  "pregnancy": "Generally considered compatible and commonly used for hyperemesis gravidarum; consult UKTIS as required",
+  "sideEffects": "Extrapyramidal effects, tardive dyskinesia, drowsiness, depression, galactorrhea",
+  "pharmacokinetics": "Onset 30min PO, 10min IV. t½ 4-6h. Hepatic metabolism, renal excretion",
+  "clinicalPearls": "Limit to 5 days to reduce tardive dyskinesia risk. Give procyclidine for dystonia",
+  "indication": "Nausea/vomiting, gastroparesis, migraine-associated nausea, postoperative nausea"
+}

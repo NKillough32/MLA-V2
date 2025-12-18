@@ -1,0 +1,14 @@
+{
+  "name": "Liothyronine (T3)",
+  "class": "Thyroid hormone",
+  "mechanism": "Synthetic tri-iodothyronine - active form of thyroid hormone",
+  "dosing": "Myxoedema coma: 5-20mcg IV/slow IV then 5-20mcg BD. Oral: rarely used, specialist only",
+  "contraindications": "Thyrotoxicosis, acute MI (unless hypothyroid)",
+  "interactions": "Warfarin (↑ effect), antidiabetic drugs (may need adjustment)",
+  "monitoring": "TFTs, heart rate, cardiac symptoms, clinical response",
+  "pregnancy": "Continue if already on - specialist management",
+  "sideEffects": "Arrhythmias, angina, tremor, restlessness, headache, hypersensitivity",
+  "pharmacokinetics": "Rapid onset (hours vs weeks for T4), short half-life (2.5 days)",
+  "clinicalPearls": "Rarely used - mainly myxoedema coma or specialist T3 requirement. Very expensive. Most hypothyroid patients need levothyroxine only",
+  "indication": "Myxoedema coma (emergency), rarely for hypothyroidism (specialist endocrinology use only)"
+}

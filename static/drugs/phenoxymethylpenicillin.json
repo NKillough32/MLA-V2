@@ -1,0 +1,15 @@
+{
+  "name": "Phenoxymethylpenicillin (Penicillin V)",
+  "class": "Penicillins, narrow-spectrum",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "Adults: 500mg QDS on empty stomach. Children: 62.5-125mg QDS (<1yr), 125-250mg QDS (1-5yrs), 250mg QDS (6-12yrs)",
+  "contraindications": "Penicillin allergy, severe renal impairment",
+  "interactions": "Methotrexate (↑ toxicity), probenecid (↑ levels), oral contraceptives (↓ efficacy)",
+  "monitoring": "Signs of allergic reaction, C. difficile-associated diarrhoea",
+  "pregnancy": "Safe - suitable for use in pregnancy",
+  "sideEffects": "GI upset, diarrhoea, allergic reactions, CDAD, oral thrush",
+  "pharmacokinetics": "Variable oral absorption, best on empty stomach, half-life: 0.5-1h",
+  "clinicalPearls": "Oral alternative to benzylpenicillin. Take 1h before or 2h after food. First-line for streptococcal infections",
+  "coverage": "Gram-positive: Streptococci, pneumococci. Limited gram-negative cover. No staphylococcal cover",
+  "indication": "Streptococcal pharyngitis, pneumococcal infections, rheumatic fever prophylaxis, endocarditis prophylaxis"
+}

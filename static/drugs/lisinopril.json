@@ -1,0 +1,14 @@
+{
+  "name": "Lisinopril",
+  "class": "ACE inhibitor",
+  "mechanism": "Inhibits angiotensin-converting enzyme (ACE), reducing angiotensin II and aldosterone",
+  "dosing": "Start 5-10mg once daily (usual maintenance 20-40mg daily). Lower starting doses in elderly or renal impairment",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, history of ACE inhibitor–induced angioedema",
+  "interactions": "Potassium-sparing diuretics/ACEi/ARBs (↑ hyperkalaemia), NSAIDs (↓ antihypertensive effect), lithium (↑ toxicity)",
+  "monitoring": "BP, serum creatinine and potassium 1-2 weeks after initiation or dose changes. An acceptable rise in creatinine/eGFR is generally ≤30% from baseline; monitor and consider dose change if larger increases occur",
+  "pregnancy": "Contraindicated — fetal toxicity",
+  "sideEffects": "Dry cough, hyperkalaemia, hypotension, renal impairment, angioedema (rare)",
+  "pharmacokinetics": "Not metabolised, excreted unchanged by kidneys; half-life ~12h",
+  "clinicalPearls": "Start low and titrate; check renal function and K+ after initiation. Substitute with ARB if cough troublesome",
+  "indication": "Hypertension, heart failure, post-MI, diabetic nephropathy"
+}

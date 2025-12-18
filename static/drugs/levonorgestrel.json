@@ -1,0 +1,14 @@
+{
+  "name": "Levonorgestrel",
+  "class": "Synthetic progestogen",
+  "mechanism": "Progesterone receptor agonist, prevents/delays ovulation and affects endometrium",
+  "dosing": "Emergency contraception: 1.5mg STAT (within 72h). IUS: 52mg over 5 years",
+  "contraindications": "Pregnancy, severe liver disease, undiagnosed vaginal bleeding",
+  "interactions": "Enzyme inducers (↓ efficacy - may need higher dose), ritonavir",
+  "monitoring": "Pregnancy test if period late, BP with IUS, bleeding patterns",
+  "pregnancy": "Contraindicated - stop if pregnancy occurs",
+  "sideEffects": "Nausea, headache, breast tenderness, irregular bleeding, mood changes",
+  "pharmacokinetics": "Rapid absorption, half-life: 24-32h, hepatic metabolism",
+  "clinicalPearls": "Most effective within 12h of unprotected intercourse. Available OTC as emergency contraception",
+  "indication": "Emergency contraception, long-term contraception (IUS), menorrhagia"
+}

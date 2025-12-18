@@ -1,0 +1,13 @@
+{
+  "name": "Isosorbide mononitrate",
+  "class": "Nitrate (long-acting)",
+  "mechanism": "NO donor causing venodilation and reduced preload",
+  "dosing": "Immediate/modified-release preparations vary; commonly 20-60mg daily for chronic angina; follow product guidance",
+  "contraindications": "Concurrent PDE5 inhibitor use, hypotension, severe anemia",
+  "interactions": "PDE5 inhibitors (profound hypotension)",
+  "monitoring": "BP, symptomatic response",
+  "pregnancy": "Use if essential",
+  "sideEffects": "Headache, hypotension, reflex tachycardia",
+  "clinicalPearls": "Use nitrate-free interval to avoid tolerance",
+  "indication": "Chronic stable angina, heart failure symptom control in some patients"
+}

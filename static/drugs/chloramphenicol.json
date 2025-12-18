@@ -1,0 +1,13 @@
+{
+  "name": "Chloramphenicol",
+  "class": "Broad-spectrum antibiotic",
+  "mechanism": "Inhibits 50S ribosomal subunit",
+  "dosing": "Topical ophthalmic or systemic dosing varies — systemic use limited by toxicity",
+  "contraindications": "Aplastic anaemia history",
+  "interactions": "Bone marrow suppressing drugs",
+  "monitoring": "FBC for aplastic anaemia with systemic use",
+  "pregnancy": "Use with caution; topical ophthalmic use common",
+  "sideEffects": "Bone marrow suppression, aplastic anaemia (rare)",
+  "clinicalPearls": "Topical ophthalmic use for conjunctivitis; systemic use limited due to toxicity",
+  "indication": "Ophthalmic infections, selected systemic infections"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Losartan",
+  "class": "Angiotensin receptor blockers",
+  "mechanism": "Selective antagonist of angiotensin II at AT1 receptors",
+  "dosing": "Hypertension: Start 50mg daily, max 100mg daily. Heart failure: Start 12.5mg daily, target 150mg daily",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, severe renal impairment",
+  "interactions": "NSAIDs (↓ efficacy), potassium supplements (hyperkalemia), lithium (↑ levels)",
+  "monitoring": "eGFR, potassium, blood pressure. Check 1-2 weeks after starting",
+  "pregnancy": "Contraindicated - teratogenic in 2nd/3rd trimester",
+  "sideEffects": "Dizziness, hyperkalemia, dry cough (less than ACE-I), angioedema (rare)",
+  "pharmacokinetics": "Prodrug, active metabolite half-life: 6-9h, hepatic metabolism",
+  "clinicalPearls": "Alternative to ACE inhibitor if cough. Less cough than ACE-I but more expensive",
+  "indication": "Hypertension, heart failure, diabetic nephropathy, post-MI (ACE-I intolerant)"
+}

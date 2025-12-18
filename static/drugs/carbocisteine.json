@@ -1,0 +1,14 @@
+{
+  "name": "Carbocisteine",
+  "class": "Mucolytic",
+  "mechanism": "Reduces viscosity of mucus by breaking disulfide bonds in mucoproteins",
+  "dosing": "750mg TDS initially, then 1.5g daily in divided doses (maintenance)",
+  "contraindications": "Active peptic ulcer disease, hypersensitivity",
+  "interactions": "Few significant interactions",
+  "monitoring": "Clinical response, GI symptoms",
+  "pregnancy": "Avoid in first trimester - limited safety data",
+  "sideEffects": "GI upset, nausea, rash (rare), GI bleeding (rare)",
+  "pharmacokinetics": "Well absorbed orally, excreted mainly unchanged in urine",
+  "clinicalPearls": "Very commonly prescribed in UK for COPD. Consider stopping if no benefit after 4 weeks",
+  "indication": "COPD with productive cough, chronic bronchitis, bronchiectasis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Indacaterol",
+  "class": "Beta2-agonists (LABA)",
+  "mechanism": "Long-acting β2-agonist - bronchodilation",
+  "dosing": "Inhaled: 150-300mcg OD",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Beta-blockers (antagonism), sympathomimetics (↑ cardiovascular effects)",
+  "monitoring": "Respiratory function, HR, tremor, K+",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Headache, cough, nasopharyngitis, tremor, palpitations, hypokalaemia",
+  "pharmacokinetics": "Inhaled, 24h duration",
+  "clinicalPearls": "Ultra-long-acting LABA - once daily dosing. Must use with ICS in asthma. Monotherapy OK in COPD. Often combined with LAMA (glycopyrronium)",
+  "indication": "COPD, asthma (with ICS only)"
+}

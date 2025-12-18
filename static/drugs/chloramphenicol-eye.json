@@ -1,0 +1,14 @@
+{
+  "name": "Chloramphenicol Eye Drops/Ointment",
+  "class": "Antibiotic (topical ophthalmic)",
+  "mechanism": "Bacteriostatic - inhibits bacterial protein synthesis",
+  "dosing": "Drops: 1 drop every 2 hours initially, reduce as infection controlled. Ointment: apply QDS and at bedtime",
+  "contraindications": "Hypersensitivity, family history of aplastic anaemia (relative)",
+  "interactions": "None significant for topical use",
+  "monitoring": "Clinical response, prolonged use may need specialist review",
+  "pregnancy": "Safe for topical ocular use - minimal systemic absorption",
+  "sideEffects": "Transient stinging, hypersensitivity (rare), aplastic anaemia (extremely rare with topical)",
+  "pharmacokinetics": "Local action, minimal systemic absorption",
+  "clinicalPearls": "Available OTC. First-line for bacterial conjunctivitis. Use drops during day, ointment at night. 5 days treatment usually sufficient",
+  "indication": "Bacterial conjunctivitis, superficial eye infections"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Macrogol (Movicol/Laxido)",
+  "class": "Osmotic laxative",
+  "mechanism": "Polyethylene glycol increases water content of stool via osmosis",
+  "dosing": "Chronic constipation: 1-3 sachets daily. Faecal impaction: 8 sachets daily for 3 days",
+  "contraindications": "Intestinal perforation/obstruction, severe inflammatory bowel disease, toxic megacolon",
+  "interactions": "May reduce absorption of other oral medications (give 1h apart)",
+  "monitoring": "Bowel movements, fluid balance (elderly), electrolytes if prolonged use",
+  "pregnancy": "Safe - not significantly absorbed",
+  "sideEffects": "Abdominal pain, flatulence, nausea, electrolyte disturbance (rare)",
+  "pharmacokinetics": "Not absorbed systemically, works locally in GI tract",
+  "clinicalPearls": "Very commonly prescribed in UK. Safe for long-term use. Can be used in pregnancy",
+  "indication": "Chronic constipation (first-line), faecal impaction, bowel preparation"
+}

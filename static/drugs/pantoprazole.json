@@ -1,0 +1,14 @@
+{
+  "name": "Pantoprazole",
+  "class": "Proton Pump Inhibitor",
+  "mechanism": "Irreversibly inhibits gastric H+/K+-ATPase (proton pump)",
+  "dosing": "Adult: 40mg daily PO/IV. Severe GORD: 40mg BD. Zollinger-Ellison: up to 240mg daily",
+  "contraindications": "Hypersensitivity to PPIs, severe liver disease",
+  "interactions": "Clopidogrel (↓ efficacy), digoxin (↑ levels), ketoconazole (↓ absorption)",
+  "monitoring": "Magnesium levels (long-term), B12 levels, bone density, C.diff risk",
+  "pregnancy": "Generally considered compatible where clinically necessary; consult UKTIS",
+  "sideEffects": "Headache, diarrhea, hypomagnesemia, increased fracture risk, C.diff",
+  "pharmacokinetics": "Onset 2-3 days for full effect. t½ 1h. Hepatic metabolism (CYP2C19)",
+  "clinicalPearls": "IV formulation available. Less drug interactions than omeprazole",
+  "indication": "GORD, peptic ulcer disease, H.pylori eradication, stress ulcer prophylaxis"
+}

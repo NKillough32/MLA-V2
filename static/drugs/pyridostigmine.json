@@ -1,0 +1,14 @@
+{
+  "name": "Pyridostigmine",
+  "class": "Acetylcholinesterase inhibitors",
+  "mechanism": "Reversible cholinesterase inhibitor - enhances neuromuscular transmission",
+  "dosing": "Myasthenia: 30-120mg TDS-QDS (total usually 0.3-1.2g daily). Start low, titrate to response",
+  "contraindications": "Mechanical bowel obstruction, urinary obstruction",
+  "interactions": "Aminoglycosides (↓ effect), beta-blockers, anticholinergics",
+  "monitoring": "Muscle strength, cholinergic crisis signs, respiratory function",
+  "pregnancy": "Use if benefit outweighs risk - increase dose in pregnancy",
+  "sideEffects": "Cholinergic effects: nausea, vomiting, diarrhoea, abdominal cramps, hypersalivation, sweating, bradycardia, miosis",
+  "pharmacokinetics": "Oral, onset 30-60min, duration 3-6h",
+  "clinicalPearls": "Mainstay of myasthenia gravis treatment. Take 30-60min before meals if swallowing difficulty. Atropine reverses cholinergic crisis. Beware over-treatment (cholinergic crisis mimics myasthenic crisis)",
+  "indication": "Myasthenia gravis, reversal of non-depolarising muscle relaxants"
+}

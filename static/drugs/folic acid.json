@@ -1,0 +1,14 @@
+{
+  "name": "Folic Acid",
+  "class": "Vitamins",
+  "mechanism": "Essential for DNA synthesis and cell division",
+  "dosing": "Folate deficiency: 5mg OD for 4 months. Prophylaxis: 400mcg OD. Pregnancy: 400mcg (5mg if high risk). Methotrexate: 5mg weekly",
+  "contraindications": "Undiagnosed megaloblastic anaemia (can mask B12 deficiency)",
+  "interactions": "Phenytoin (↓ levels), sulfasalazine, methotrexate",
+  "monitoring": "FBC, reticulocyte count, vitamin B12",
+  "pregnancy": "Essential - prevents neural tube defects. 400mcg preconception to 12 weeks (5mg if previous NTD)",
+  "sideEffects": "Rare - GI upset, allergic reactions",
+  "pharmacokinetics": "Well absorbed orally, stored in liver",
+  "clinicalPearls": "Check B12 before treating megaloblastic anaemia (folic acid can worsen subacute combined degeneration). 5mg weekly with methotrexate reduces toxicity",
+  "indication": "Folate deficiency anaemia, pregnancy/preconception, methotrexate therapy, chronic haemolytic anaemia"
+}

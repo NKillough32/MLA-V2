@@ -1,0 +1,14 @@
+{
+  "name": "Tranexamic Acid",
+  "class": "Antifibrinolytic",
+  "mechanism": "Inhibits plasminogen activation and plasmin, reducing fibrinolysis",
+  "dosing": "Major haemorrhage: 1g IV over 10min, then 1g over 8h. Menorrhagia: 1g TDS-QDS PO for 4 days. Trauma: 1g over 10min within 3h of injury",
+  "contraindications": "Thromboembolic disease history, DIC, subarachnoid haemorrhage",
+  "interactions": "Combined hormonal contraceptives (↑ VTE risk - relative), factor concentrates",
+  "monitoring": "Bleeding control, thromboembolic events",
+  "pregnancy": "Generally safe - used for antepartum haemorrhage",
+  "sideEffects": "GI upset, thrombosis (rare), seizures (high dose, renal impairment), visual disturbances",
+  "pharmacokinetics": "Oral bioavailability ~45%, renal excretion, half-life 2-3h",
+  "clinicalPearls": "Give within 3h of trauma to reduce mortality. Essential in major haemorrhage protocol. Highly effective for menorrhagia. Dose reduce in renal impairment",
+  "indication": "Trauma haemorrhage, menorrhagia, dental procedures in haemophilia, epistaxis, post-partum haemorrhage"
+}

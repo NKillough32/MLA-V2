@@ -1,0 +1,14 @@
+{
+  "name": "Aripiprazole",
+  "class": "Atypical antipsychotic",
+  "mechanism": "Partial D2 and 5-HT1A agonist, 5-HT2A antagonist",
+  "dosing": "Schizophrenia: 10-15mg OD (max 30mg). Bipolar: 15-30mg OD. Depot: 400mg monthly IM",
+  "contraindications": "Hypersensitivity, caution in cardiovascular disease, epilepsy",
+  "interactions": "CYP3A4/2D6 inhibitors (↑ levels), carbamazepine (↓ levels), antihypertensives",
+  "monitoring": "Weight, glucose, lipids, ECG (baseline), prolactin, movement disorders",
+  "pregnancy": "Avoid unless essential - neonatal extrapyramidal effects reported",
+  "sideEffects": "Akathisia, insomnia, anxiety, weight gain (less than other atypicals), dyslipidaemia",
+  "pharmacokinetics": "Long half-life (75h), hepatic metabolism, active metabolite",
+  "clinicalPearls": "Lower weight gain/metabolic risk than olanzapine. Akathisia common - may need propranolol",
+  "indication": "Schizophrenia, bipolar disorder (mania/mixed episodes), adjunct in treatment-resistant depression"
+}

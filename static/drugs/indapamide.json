@@ -1,0 +1,14 @@
+{
+  "name": "Indapamide",
+  "class": "Thiazide-like diuretic",
+  "mechanism": "Acts on distal convoluted tubule causing natriuresis and vasodilation",
+  "dosing": "2.5mg OD in morning (modified-release: 1.5mg OD)",
+  "contraindications": "Severe renal impairment (eGFR <30), severe hepatic impairment, hypokalaemia, gout",
+  "interactions": "NSAIDs (↓ effect), lithium (↑ toxicity), digoxin (hypokalaemia ↑ toxicity)",
+  "monitoring": "U&Es, glucose, uric acid, blood pressure",
+  "pregnancy": "Avoid - may cause placental hypoperfusion",
+  "sideEffects": "Hypokalaemia, hyponatraemia, hyperglycaemia, gout, impotence",
+  "pharmacokinetics": "Well absorbed, hepatic metabolism, long half-life allowing once daily dosing",
+  "clinicalPearls": "Preferred thiazide-like in UK for hypertension. Less metabolic disturbance than bendroflumethiazide",
+  "indication": "Hypertension (first-line with ACEi/ARB or CCB), mild heart failure"
+}

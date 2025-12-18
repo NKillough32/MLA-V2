@@ -1,0 +1,14 @@
+{
+  "name": "Flumazenil",
+  "class": "Benzodiazepine antagonist",
+  "mechanism": "Competitive antagonist at benzodiazepine binding site on GABA-A receptor",
+  "dosing": "IV: 200mcg over 15 seconds, then 100mcg at 60-second intervals (max 1mg). Infusion: 100-400mcg/h",
+  "contraindications": "Mixed overdose with tricyclics, epilepsy on benzodiazepines, chronic benzodiazepine use",
+  "interactions": "Can precipitate withdrawal seizures in chronic benzodiazepine users",
+  "monitoring": "Consciousness level, respiratory rate, blood pressure, seizure activity, re-sedation",
+  "pregnancy": "Use only if clearly indicated - limited safety data",
+  "sideEffects": "Anxiety, agitation, seizures (especially in mixed overdose), re-sedation, withdrawal syndrome",
+  "pharmacokinetics": "Rapid onset: 1-2min, short duration: 20-50min, hepatic metabolism",
+  "clinicalPearls": "Short half-life - may need repeated doses. Risk of seizures in mixed overdose. Monitor for re-sedation",
+  "indication": "Benzodiazepine overdose reversal, procedural sedation reversal, hepatic encephalopathy (unlicensed)"
+}

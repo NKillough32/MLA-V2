@@ -1,0 +1,14 @@
+{
+  "name": "Chlortalidone (Chlorthalidone)",
+  "class": "Diuretics, thiazide-like",
+  "mechanism": "Thiazide-like diuretic - inhibits Na+/Cl- cotransporter in distal tubule",
+  "dosing": "Hypertension: 12.5-25mg OD (morning). Oedema: 50mg OD initially",
+  "contraindications": "Hypokalaemia, hyponatraemia, hypercalcaemia, severe renal/hepatic impairment, Addison\\",
+  "interactions": "As bendroflumethiazide",
+  "monitoring": "U&Es, glucose, lipids, uric acid",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Hypokalaemia, hyponatraemia, hyperuricaemia, hyperglycaemia, hypercalcaemia, postural hypotension, impotence",
+  "pharmacokinetics": "Oral, very long half-life (40-60h), renal excretion",
+  "clinicalPearls": "Longer acting than bendroflumethiazide. Some evidence for superior cardiovascular outcomes. Used in major hypertension trials. Start low dose",
+  "indication": "Hypertension, oedema"
+}

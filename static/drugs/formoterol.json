@@ -1,0 +1,14 @@
+{
+  "name": "Formoterol",
+  "class": "Beta2-agonists",
+  "mechanism": "Selective β2-adrenoreceptor agonist with rapid onset and long duration",
+  "dosing": "Adults: 12mcg BD via dry powder inhaler. Max 48mcg daily. Always with ICS in asthma",
+  "contraindications": "Hypersensitivity. Never use as monotherapy in asthma",
+  "interactions": "β-blockers (antagonism), diuretics (hypokalemia), theophylline",
+  "monitoring": "Peak flow, asthma control, heart rate, potassium (high doses)",
+  "pregnancy": "Safe - no evidence of harm",
+  "sideEffects": "Tremor, palpitations, headache, muscle cramps, hypokalemia",
+  "pharmacokinetics": "Onset: 1-3min, Duration: 12h, hepatic metabolism",
+  "clinicalPearls": "Rapid onset unlike salmeterol. Always combined with ICS. Available in combination inhalers",
+  "indication": "Asthma (step 3+ with ICS), COPD (combination inhalers)"
+}

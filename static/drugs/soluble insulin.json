@@ -1,0 +1,14 @@
+{
+  "name": "Soluble Insulin (Actrapid, Humulin S)",
+  "class": "Insulin - short-acting",
+  "mechanism": "Short-acting regular insulin - promotes glucose uptake into cells",
+  "dosing": "SC: 15-30min before meals. IV: DKA/HHS - 0.1 units/kg/h infusion",
+  "contraindications": "Hypoglycaemia",
+  "interactions": "As other insulins",
+  "monitoring": "Capillary glucose, HbA1c, hypoglycaemia",
+  "pregnancy": "Safe",
+  "sideEffects": "Hypoglycaemia, weight gain, injection site reactions",
+  "pharmacokinetics": "SC: onset 30min, peak 2-4h, duration 6-8h. IV: onset immediate",
+  "clinicalPearls": "Only insulin suitable for IV use. Slower than rapid analogues - need to inject 30min before eating. Used in sliding scales (IV) and DKA treatment",
+  "indication": "Type 1/2 diabetes, DKA, hyperkalaemia (with glucose), HHS"
+}

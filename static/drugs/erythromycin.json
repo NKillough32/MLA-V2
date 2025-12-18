@@ -1,0 +1,14 @@
+{
+  "name": "Erythromycin",
+  "class": "Macrolide antibiotic",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit",
+  "dosing": "Adults: 250-500mg QDS. Children: 25-50mg/kg daily in divided doses. Take before food",
+  "contraindications": "Hypersensitivity to macrolides, concurrent use with ergot alkaloids",
+  "interactions": "Warfarin (↑ INR), theophylline (↑ levels), carbamazepine (↑ levels), QT-prolonging drugs",
+  "monitoring": "LFTs with prolonged use, signs of C.difficile colitis, hearing (high doses)",
+  "pregnancy": "Safe - drug of choice for chlamydia in pregnancy",
+  "sideEffects": "GI upset, QT prolongation, cholestatic hepatitis, tinnitus",
+  "pharmacokinetics": "Variable oral absorption, half-life: 1-4h, hepatic metabolism",
+  "clinicalPearls": "Take before food to improve absorption. Many drug interactions via CYP3A4",
+  "indication": "Respiratory tract infections, skin infections, chlamydia, legionella"
+}

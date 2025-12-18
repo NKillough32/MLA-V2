@@ -1,0 +1,14 @@
+{
+  "name": "Clozapine",
+  "class": "Atypical antipsychotic",
+  "mechanism": "Multiple receptor antagonism (D2, D4, 5-HT2A, muscarinic, α-adrenergic)",
+  "dosing": "Start 12.5mg OD-BD, titrate slowly to 200-450mg daily (max 900mg). Requires registration",
+  "contraindications": "Bone marrow disorders, severe cardiac disease, uncontrolled epilepsy, paralytic ileus",
+  "interactions": "CNS depressants, drugs causing agranulocytosis, CYP1A2 inhibitors (↑ levels)",
+  "monitoring": "MANDATORY FBC monitoring (weekly for 18 weeks, then fortnightly to 52 weeks, then monthly). ECG, weight, glucose, lipids",
+  "pregnancy": "Avoid unless absolutely essential - specialist advice required",
+  "sideEffects": "Agranulocytosis (1%), myocarditis, sedation, hypersalivation, seizures, weight gain, constipation",
+  "pharmacokinetics": "Hepatic metabolism, half-life 12h, steady state 7-10 days",
+  "clinicalPearls": "Treatment-resistant schizophrenia only. Clozapine Monitoring Service mandatory. Most effective antipsychotic but highest risk",
+  "indication": "Treatment-resistant schizophrenia (failed ≥2 antipsychotics), psychosis in Parkinsons disease (specialist use)"
+}

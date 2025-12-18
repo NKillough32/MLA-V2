@@ -1,0 +1,14 @@
+{
+  "name": "Zoledronic Acid",
+  "class": "Bisphosphonates",
+  "mechanism": "Potent inhibitor of osteoclastic bone resorption",
+  "dosing": "Osteoporosis: 5mg IV once yearly. Paget\\",
+  "contraindications": "Hypocalcaemia, severe renal impairment (eGFR <35 for osteoporosis)",
+  "interactions": "Nephrotoxic drugs, aminoglycosides (↑ hypocalcaemia)",
+  "monitoring": "Calcium, phosphate, magnesium, creatinine, vitamin D before each dose. Hydration status",
+  "pregnancy": "Avoid",
+  "sideEffects": "Acute phase reaction (fever, myalgia post-infusion), renal impairment, hypocalcaemia, atypical fractures, ONJ",
+  "pharmacokinetics": "IV infusion over 15min, long bone half-life",
+  "clinicalPearls": "Ensure vitamin D replete before giving. Pre-treat with paracetamol/ibuprofen for acute phase reaction. Hydrate well. Once-yearly dosing improves adherence",
+  "indication": "Osteoporosis, Paget\\"
+}

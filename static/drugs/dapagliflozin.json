@@ -1,0 +1,13 @@
+{
+  "name": "Dapagliflozin",
+  "class": "SGLT2 inhibitor",
+  "mechanism": "Promotes glucosuria by inhibiting renal SGLT2",
+  "dosing": "10mg once daily (typical)",
+  "contraindications": "Type 1 diabetes, severe renal impairment",
+  "interactions": "Diuretics (caution), insulin/secretagogues",
+  "monitoring": "Renal function, signs of volume depletion and genital infections",
+  "pregnancy": "Avoid",
+  "sideEffects": "Genital infections, volume depletion, rare DKA",
+  "clinicalPearls": "Cardiorenal benefit in selected patients",
+  "indication": "Type 2 diabetes; heart failure/CKD indications per guidance"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Letrozole",
+  "class": "Aromatase inhibitor",
+  "mechanism": "Inhibits peripheral conversion of androgens to oestrogens",
+  "dosing": "2.5mg once daily",
+  "contraindications": "Pregnancy",
+  "interactions": "CYP interactions",
+  "monitoring": "Bone density, lipids",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Hot flushes, arthralgia, bone density loss",
+  "clinicalPearls": "Used in postmenopausal ER+ breast cancer",
+  "indication": "Breast cancer"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Ketamine",
+  "class": "Dissociative Anaesthetic/Analgesic",
+  "mechanism": "NMDA receptor antagonist causing dissociative anaesthesia and analgesia",
+  "dosing": "Anaesthesia: 1-2mg/kg IV, 4-6mg/kg IM. Analgesia: 0.1-0.3mg/kg IV. Depression: 0.5mg/kg",
+  "contraindications": "Severe hypertension, raised ICP, psychotic disorders, porphyria",
+  "interactions": "CNS depressants, sympathomimetics (↑ hypertension), theophylline",
+  "monitoring": "Blood pressure, heart rate, respiratory rate, emergence reactions",
+  "pregnancy": "Use only if benefit outweighs risk; consult UKTIS or SmPC as needed",
+  "sideEffects": "Emergence reactions, hallucinations, hypertension, tachycardia, laryngospasm",
+  "pharmacokinetics": "Rapid onset 1-2min IV. t½ 2-3h. Hepatic metabolism to active metabolites",
+  "clinicalPearls": "Maintains airway reflexes. Good for unstable patients. Pre-treat with benzodiazepine",
+  "indication": "Emergency anaesthesia, procedural sedation, severe asthma, treatment-resistant depression"
+}

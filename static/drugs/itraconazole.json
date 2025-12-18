@@ -1,0 +1,13 @@
+{
+  "name": "Itraconazole",
+  "class": "Triazole antifungal",
+  "mechanism": "Inhibits fungal ergosterol synthesis",
+  "dosing": "Oral dosing varies by indication",
+  "contraindications": "Coadministration with certain CYP substrates",
+  "interactions": "Extensive CYP interactions",
+  "monitoring": "LFTs",
+  "pregnancy": "Avoid",
+  "sideEffects": "GI upset, hepatotoxicity",
+  "clinicalPearls": "Used for certain systemic mycoses",
+  "indication": "Systemic fungal infections"
+}

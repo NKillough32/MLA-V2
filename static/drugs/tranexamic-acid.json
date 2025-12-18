@@ -1,0 +1,14 @@
+{
+  "name": "Tranexamic Acid",
+  "class": "Antifibrinolytic",
+  "mechanism": "Lysine analog that inhibits plasminogen activation and plasmin activity",
+  "dosing": "Major bleeding: 1g IV over 10min, then 1g over 8h. Trauma: 1g IV then 1g over 8h within 3h",
+  "contraindications": "Active thromboembolic disease, history of seizures, subarachnoid hemorrhage",
+  "interactions": "Hormonal contraceptives (↑ thrombosis risk), factor IX complex concentrates",
+  "monitoring": "Signs of thrombosis, renal function, visual disturbances",
+  "pregnancy": "Generally considered compatible and widely used in postpartum haemorrhage; follow local guidance",
+  "sideEffects": "Nausea, diarrhea, thrombosis (rare), seizures (high dose), visual disturbances",
+  "pharmacokinetics": "Peak 3h PO, 1h IV. 90% excreted unchanged in urine. t½ 2-3h",
+  "clinicalPearls": "Most effective within 3h of trauma. Reduces mortality in major bleeding",
+  "indication": "Major bleeding, trauma, menorrhagia, hereditary angioedema"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Tamsulosin",
+  "class": "Selective α1A-blocker",
+  "mechanism": "Selectively blocks α1A receptors in prostate and bladder neck causing relaxation",
+  "dosing": "400 micrograms OD after food (same time each day)",
+  "contraindications": "Severe hepatic impairment, postural hypotension, hypersensitivity",
+  "interactions": "Other α-blockers, antihypertensives (↑ hypotension), CYP3A4/2D6 inhibitors",
+  "monitoring": "Blood pressure, prostate symptoms, cataract surgery (warn ophthalmologist - intraoperative floppy iris syndrome)",
+  "pregnancy": "Not applicable - male indication only",
+  "sideEffects": "Dizziness, postural hypotension, retrograde ejaculation, intraoperative floppy iris syndrome",
+  "pharmacokinetics": "Modified release formulation, hepatic metabolism, half-life 10-13h",
+  "clinicalPearls": "More uroselective than doxazosin - less hypotension. Must inform anaesthetist/ophthalmologist. Take same time daily",
+  "indication": "Lower urinary tract symptoms associated with BPH, ureteric stone expulsion (off-label)"
+}

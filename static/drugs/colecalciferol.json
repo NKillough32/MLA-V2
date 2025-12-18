@@ -1,0 +1,14 @@
+{
+  "name": "Colecalciferol (Vitamin D3)",
+  "class": "Vitamin supplement",
+  "mechanism": "Precursor to active vitamin D, essential for calcium absorption and bone health",
+  "dosing": "Deficiency: 6000 units daily for 8 weeks. Maintenance: 800-2000 units daily",
+  "contraindications": "Hypercalcaemia, severe renal impairment, sarcoidosis",
+  "interactions": "Thiazides (↑ hypercalcaemia risk), digoxin (hypercalcaemia ↑ toxicity)",
+  "monitoring": "Serum calcium, 25-OH vitamin D levels",
+  "pregnancy": "Safe - 400 units daily recommended",
+  "sideEffects": "Hypercalcaemia, hypercalciuria, nausea, constipation (overdose)",
+  "pharmacokinetics": "Fat-soluble, stored in adipose tissue, half-life: 2-3 weeks",
+  "clinicalPearls": "Increasingly prescribed due to widespread deficiency. Take with fatty meal for absorption",
+  "indication": "Vitamin D deficiency, osteoporosis prevention, general health maintenance"
+}

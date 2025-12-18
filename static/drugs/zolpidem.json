@@ -1,0 +1,14 @@
+{
+  "name": "Zolpidem",
+  "class": "Z-drugs (Hypnotics)",
+  "mechanism": "Imidazopyridine - selective GABA-A receptor agonist",
+  "dosing": "10mg at bedtime (5mg in elderly). Maximum 4 weeks",
+  "contraindications": "As zopiclone",
+  "interactions": "As zopiclone",
+  "monitoring": "Dependence, complex sleep behaviours",
+  "pregnancy": "Avoid",
+  "sideEffects": "Drowsiness, dizziness, headache, complex sleep behaviours (sleep-walking, sleep-eating), dependence, amnesia",
+  "pharmacokinetics": "Rapid onset, short half-life (2-3h)",
+  "clinicalPearls": "More hypnotic-selective than benzodiazepines. Risk of complex sleep behaviours - warn patients. Short duration reduces morning hangover but can cause early waking",
+  "indication": "Short-term insomnia"
+}

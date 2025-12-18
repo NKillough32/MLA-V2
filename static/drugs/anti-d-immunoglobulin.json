@@ -1,0 +1,13 @@
+{
+  "name": "Anti-D Immunoglobulin (RhD prophylaxis)",
+  "class": "Human immunoglobulin preparation",
+  "mechanism": "Binds fetal RhD-positive erythrocytes in maternal circulation to prevent maternal sensitisation",
+  "dosing": "Standard 250 IU IM for sensitising events up to 20 weeks (e.g., miscarriage, ectopic, TOP); 500 IU IM after 20 weeks or following delivery of RhD-positive infant",
+  "contraindications": "RhD-positive or previously sensitised individuals, IgA deficiency with anti-IgA antibodies (use specialist products)",
+  "interactions": "Live vaccines (MMR, varicella) efficacy may be reduced—delay vaccines for 3 months if possible",
+  "monitoring": "Observe for 20 minutes post-injection for anaphylaxis; check Kleihauer test if significant fetomaternal haemorrhage suspected",
+  "pregnancy": "Indicated for RhD-negative pregnant patients following sensitising events and routinely at 28 weeks and post-delivery",
+  "sideEffects": "Local pain, mild pyrexia, rare anaphylaxis",
+  "clinicalPearls": "Administer as soon as possible and within 72 hours of event; document batch number and consent",
+  "indication": "Prevention of RhD alloimmunisation after miscarriage, abortion, ectopic pregnancy, abdominal trauma, or delivery"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Nitrous Oxide",
+  "class": "Anaesthetics, general (Inhalational)",
+  "mechanism": "NMDA receptor antagonist, other mechanisms - weak anaesthetic, analgesic",
+  "dosing": "Anaesthesia: 50-70% with O2. Analgesia (Entonox): 50% with 50% O2",
+  "contraindications": "Pneumothorax, bowel obstruction, head injury, severe respiratory disease, vitamin B12 deficiency",
+  "interactions": "Volatile anaesthetics (additive), methotrexate",
+  "monitoring": "SpO2, anaesthetic depth, avoid >4h use (bone marrow suppression)",
+  "pregnancy": "Safe for short-term use (labour analgesia)",
+  "sideEffects": "Nausea/vomiting, megaloblastic anaemia (prolonged exposure), bone marrow suppression, diffusion into closed spaces (expands pneumothorax), occupational exposure hazards",
+  "pharmacokinetics": "Inhaled, very rapid onset/offset (low blood:gas solubility), not metabolised",
+  "clinicalPearls": "Weak anaesthetic - used with other agents or 50:50 with O2 for analgesia (Entonox in labour). Expands closed gas spaces - avoid in pneumothorax, bowel obstruction. Inactivates vitamin B12 - chronic use causes subacute combined degeneration",
+  "indication": "Adjunct to general anaesthesia, labour analgesia (Entonox), dental procedures"
+}

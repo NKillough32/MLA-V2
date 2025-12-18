@@ -1,0 +1,14 @@
+{
+  "name": "Rosuvastatin",
+  "class": "Statins",
+  "mechanism": "HMG-CoA reductase inhibitor - reduces cholesterol synthesis",
+  "dosing": "Start 5-10mg OD at night, increase to 20mg if needed. Max 40mg (only in high-risk patients)",
+  "contraindications": "Active liver disease, pregnancy, breastfeeding, myopathy",
+  "interactions": "Fibrates (↑ myopathy), ciclosporin, warfarin, CYP3A4 inhibitors (less than other statins)",
+  "monitoring": "Lipid profile (3 months), LFTs pre-treatment, creatine kinase if myalgia",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Myalgia, GI upset, headache, myopathy/rhabdomyolysis (rare), DM risk",
+  "pharmacokinetics": "Oral, minimal hepatic metabolism, renal excretion ~10%",
+  "clinicalPearls": "Most potent statin - greatest LDL reduction per mg. Start 5mg in Asian patients and CKD. Less drug interactions than atorvastatin",
+  "indication": "Primary and secondary prevention of cardiovascular disease, hypercholesterolaemia"
+}

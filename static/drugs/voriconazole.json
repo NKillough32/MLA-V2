@@ -1,0 +1,13 @@
+{
+  "name": "Voriconazole",
+  "class": "Triazole antifungal",
+  "mechanism": "Inhibits fungal 14α-demethylase",
+  "dosing": "Weight and route dependent; IV/PO dosing per SmPC",
+  "contraindications": "Concurrent terfenadine, astemizole, cisapride",
+  "interactions": "Extensive CYP interactions",
+  "monitoring": "LFTs, visual disturbances, drug levels in prolonged therapy",
+  "pregnancy": "Avoid unless necessary",
+  "sideEffects": "Visual disturbance, hepatotoxicity, photosensitivity",
+  "clinicalPearls": "First-line for invasive aspergillosis in many settings",
+  "indication": "Serious invasive fungal infections"
+}

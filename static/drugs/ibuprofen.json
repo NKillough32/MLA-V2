@@ -1,0 +1,14 @@
+{
+  "name": "Ibuprofen",
+  "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+  "mechanism": "Non-selective cyclooxygenase (COX) inhibitor, reducing prostaglandin synthesis",
+  "dosing": "Adults: 400mg TDS-QDS with food (max 2.4g daily). Children >6 months: 20-30mg/kg daily in 3-4 divided doses",
+  "contraindications": "Active peptic ulceration, severe heart failure, severe renal impairment, pregnancy (3rd trimester)",
+  "interactions": "ACE inhibitors (↓ antihypertensive effect), warfarin (↑ bleeding risk), lithium (↑ toxicity), methotrexate (↑ toxicity)",
+  "monitoring": "Renal function, blood pressure, signs of GI bleeding, fluid retention",
+  "pregnancy": "Avoid in 3rd trimester - risk of oligohydramnios and premature closure of ductus arteriosus",
+  "sideEffects": "GI bleeding/perforation, acute kidney injury, fluid retention, hypertension, bronchospasm (aspirin-sensitive asthma)",
+  "pharmacokinetics": "Onset: 30min, Peak: 1-2h, Half-life: 2-4h, Hepatic metabolism",
+  "clinicalPearls": "Most widely used NSAID in UK. Always take with food. Use lowest effective dose for shortest time",
+  "indication": "Pain and inflammation, particularly musculoskeletal conditions, fever, dysmenorrhoea"
+}

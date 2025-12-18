@@ -1,0 +1,14 @@
+{
+  "name": "Quinine",
+  "class": "Quinine",
+  "mechanism": "Interferes with parasitic DNA replication, affects calcium distribution in muscle",
+  "dosing": "Malaria: 600mg TDS for 7 days. Cramps: 200-300mg at bedtime (unlicensed)",
+  "contraindications": "Optic neuritis, tinnitus, myasthenia gravis, G6PD deficiency",
+  "interactions": "Warfarin (↑ INR), digoxin (↑ levels), mefloquine (↑ seizure risk)",
+  "monitoring": "Hearing, vision, blood glucose, cardiac rhythm, signs of cinchonism",
+  "pregnancy": "Use with caution - may cause thrombocytopenia in neonate",
+  "sideEffects": "Cinchonism (tinnitus, headache, nausea), hypoglycaemia, arrhythmias",
+  "pharmacokinetics": "Half-life: 18h in malaria (shorter in healthy), hepatic metabolism",
+  "clinicalPearls": "Unlicensed use for nocturnal cramps. Monitor for cinchonism. Resistance common",
+  "indication": "Complicated malaria, nocturnal leg cramps (second-line)"
+}

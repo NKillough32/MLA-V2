@@ -1,0 +1,14 @@
+{
+  "name": "Azithromycin",
+  "class": "Antibiotic (Macrolide)",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit",
+  "dosing": "Adult: 500mg daily for 3 days PO or 500mg daily IV. Pneumonia: 500mg x 5 days",
+  "contraindications": "Macrolide allergy, severe liver disease, QT prolongation",
+  "interactions": "Warfarin (↑ INR), digoxin (↑ levels), simvastatin (↑ myopathy), QT drugs",
+  "monitoring": "QT interval, liver function, infection resolution, hearing (high dose)",
+  "pregnancy": "Generally considered compatible in pregnancy; UKTIS advises azithromycin may be used if indicated (e.g., chlamydia), but avoid unnecessary use",
+  "sideEffects": "GI upset, QT prolongation, hepatotoxicity, hearing loss (rare)",
+  "pharmacokinetics": "Long tissue half-life 68h. Good intracellular penetration. Hepatic metabolism",
+  "clinicalPearls": "Once daily dosing. Good atypical coverage. Short course therapy",
+  "indication": "Atypical pneumonia, COPD exacerbations, chlamydia, URTI, skin infections"
+}

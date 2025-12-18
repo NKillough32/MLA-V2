@@ -1,0 +1,13 @@
+{
+  "name": "Idarucizumab",
+  "class": "Dabigatran reversal agent (monoclonal antibody fragment)",
+  "mechanism": "Binds dabigatran and neutralises its anticoagulant effect",
+  "dosing": "5 g IV (administer as two consecutive 2.5 g boluses) as per SmPC for urgent reversal of dabigatran",
+  "contraindications": "Hypersensitivity to idarucizumab or excipients",
+  "interactions": "No clinically significant drug interactions documented",
+  "monitoring": "Clinical haemostasis and bleeding; coagulation tests may include thrombin time (TT) or diluted thrombin time to document effect where available; monitor renal function",
+  "pregnancy": "Use only if clearly indicated and after specialist assessment",
+  "sideEffects": "Headache, hypokalaemia, fever, constipation (generally well tolerated)",
+  "clinicalPearls": "Reserved for emergency reversal of dabigatran in life‑threatening bleeding or urgent procedures. Contact haematology and follow local major haemorrhage protocols. Re-dosing is rarely required; consider dabigatran plasma level testing if available.",
+  "indication": "Rapid reversal of dabigatran anticoagulation"
+}

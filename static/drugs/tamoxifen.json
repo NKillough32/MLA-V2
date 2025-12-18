@@ -1,0 +1,13 @@
+{
+  "name": "Tamoxifen",
+  "class": "Selective oestrogen receptor modulator (SERM)",
+  "mechanism": "Oestrogen receptor antagonist in breast tissue",
+  "dosing": "20mg once daily",
+  "contraindications": "History of thromboembolism, pregnancy",
+  "interactions": "CYP interactions",
+  "monitoring": "LFTs, signs of VTE",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Hot flushes, VTE risk, endometrial changes",
+  "clinicalPearls": "Used as adjuvant therapy in ER+ breast cancer",
+  "indication": "Breast cancer"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Clarithromycin",
+  "class": "Macrolide antibiotic",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit",
+  "dosing": "Adults: 250-500mg BD. Severe infections: 500mg BD. H.pylori: 500mg BD with PPI and amoxicillin",
+  "contraindications": "Macrolide hypersensitivity, myasthenia gravis, severe hepatic impairment",
+  "interactions": "Warfarin (↑ INR), simvastatin (rhabdomyolysis risk), digoxin (↑ levels)",
+  "monitoring": "LFTs if prolonged use, signs of cardiac arrhythmias, drug interactions",
+  "pregnancy": "Use only if essential - crosses placenta but no evidence of harm",
+  "sideEffects": "GI upset, metallic taste, QT prolongation, hepatotoxicity (rare)",
+  "pharmacokinetics": "Well absorbed, Half-life: 3-7h, hepatic metabolism (CYP3A4)",
+  "clinicalPearls": "Part of triple therapy for H.pylori. Good tissue penetration. Many drug interactions via CYP3A4",
+  "indication": "Respiratory tract infections, H.pylori eradication, skin infections, atypical pneumonia"
+}

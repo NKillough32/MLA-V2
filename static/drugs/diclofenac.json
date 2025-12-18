@@ -1,0 +1,14 @@
+{
+  "name": "Diclofenac",
+  "class": "Non-steroidal anti-inflammatory drug (NSAID)",
+  "mechanism": "Non-selective COX inhibitor, reducing prostaglandin synthesis",
+  "dosing": "Oral: 50 mg TDS or 75 mg BD with food. Topical 1–2 % gel TDS-QDS to affected area.",
+  "contraindications": "Active peptic ulcer, established IHD, PAD, cerebrovascular disease, NYHA II–IV HF, severe renal impairment",
+  "interactions": "ACEi/ARBs (renal risk), anticoagulants (↑ bleeding), corticosteroids (↑ ulcer risk)",
+  "monitoring": "BP, renal function (U&Es 1–2 weeks after initiation), GI symptoms, CV risk review",
+  "pregnancy": "Avoid, especially 3rd trimester (premature ductus closure)",
+  "sideEffects": "GI bleeding, fluid retention, hypertension, ↑ CV event risk",
+  "pharmacokinetics": "t½ 1–2 h; hepatic metabolism; renal excretion",
+  "clinicalPearls": "Oral diclofenac contraindicated in established CVD or moderate–severe HF (MHRA 2015). Topical formulation preferred for local pain.",
+  "indication": "Short-term pain/inflammation when lower-risk NSAIDs ineffective (topical preferred)"
+}

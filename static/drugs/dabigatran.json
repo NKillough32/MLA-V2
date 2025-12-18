@@ -1,0 +1,14 @@
+{
+  "name": "Dabigatran etexilate (dabigatran)",
+  "class": "Direct oral anticoagulant (direct thrombin inhibitor)",
+  "mechanism": "Prodrug converted to dabigatran which directly and reversibly inhibits thrombin (factor IIa), preventing fibrin formation",
+  "dosing": "AF: 150 mg BD (consider 110 mg BD if ≥80 years, low body weight, or high bleeding risk). VTE treatment: after 5 days parenteral anticoagulation → 150 mg BD (dose reduce per local guidance). Adjust or avoid in significant renal impairment (CrCl <30 mL/min).",
+  "contraindications": "Active pathological bleeding, mechanical prosthetic heart valves, clinically significant bleeding risk, severe renal impairment (CrCl <30 mL/min for many indications), pregnancy/breastfeeding",
+  "interactions": "P-gp inhibitors (e.g., amiodarone, verapamil) ↑ levels; P-gp inducers ↓ levels. Concomitant anticoagulants/antiplatelets ↑ bleeding risk",
+  "monitoring": "Renal function at baseline and periodically (frequency depends on renal function); clinical monitoring for bleeding",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Bleeding (including GI), dyspepsia, anaemia",
+  "pharmacokinetics": "Peak 1–2 h; half-life ~12–17 h (renal-dependent); ~80% renal elimination",
+  "clinicalPearls": "Capsules must be swallowed whole (acidic core). For life‑threatening bleeding or urgent reversal: idarucizumab 5 g IV (two 2.5 g boluses) as per SmPC and local major haemorrhage protocols. Stop 24–48 h pre-procedure depending on renal function and bleeding risk; involve haematology/local major haemorrhage team for complex cases.",
+  "indication": "Stroke prevention in non-valvular AF; treatment and secondary prevention of VTE"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Phenytoin",
+  "class": "Antiepileptic drug",
+  "mechanism": "Blocks voltage-gated sodium channels, stabilizing neuronal membranes",
+  "dosing": "Loading: 15-20mg/kg IV slowly. Maintenance: 300-400mg daily (adjust to levels)",
+  "contraindications": "Heart block, sinus bradycardia, porphyria",
+  "interactions": "Warfarin (variable), carbamazepine (↓ levels), numerous others",
+  "monitoring": "Phenytoin levels (10-20mg/L), LFTs, FBC, folate, gum hyperplasia",
+  "pregnancy": "Teratogenic - folate supplementation essential",
+  "sideEffects": "Gum hyperplasia, hirsutism, acne, ataxia, nystagmus, confusion",
+  "pharmacokinetics": "Zero-order kinetics at therapeutic doses, highly protein-bound",
+  "clinicalPearls": "Narrow therapeutic window. Many drug interactions. IV administration requires cardiac monitoring",
+  "indication": "Epilepsy, status epilepticus, trigeminal neuralgia"
+}

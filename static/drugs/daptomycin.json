@@ -1,0 +1,14 @@
+{
+  "name": "Daptomycin",
+  "class": "Lipopeptide antibiotic",
+  "mechanism": "Causes rapid depolarization of bacterial cell membrane leading to cell death (concentration-dependent)",
+  "dosing": "4-8mg/kg IV once daily (higher doses for bacteraemia/endocarditis); adjust for renal function",
+  "contraindications": "Pneumonia (inactivated by surfactant), hypersensitivity",
+  "interactions": "Statins (↑ risk of myopathy/rhabdomyolysis), concurrent muscle-toxic drugs",
+  "monitoring": "CK at baseline and weekly during therapy, renal function, signs of myopathy",
+  "pregnancy": "Use only if clearly needed - limited data",
+  "sideEffects": "Myopathy, elevated CK, peripheral neuropathy (rare), eosinophilic pneumonia (rare)",
+  "pharmacokinetics": "IV only; renal excretion; poor lung penetration (not for pneumonia)",
+  "clinicalPearls": "Excellent for Gram-positive bacteraemia and endocarditis including MRSA and VRE; monitor CK and avoid concurrent statin use if possible",
+  "indication": "Serious Gram-positive infections including MRSA bacteraemia, right-sided endocarditis, complicated skin/soft tissue infections"
+}

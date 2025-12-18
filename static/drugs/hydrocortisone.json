@@ -1,0 +1,14 @@
+{
+  "name": "Hydrocortisone",
+  "class": "Corticosteroids, topical",
+  "mechanism": "Anti-inflammatory glucocorticoid effects via cytoplasmic receptors",
+  "dosing": "Topical: Apply thinly BD-QDS. Oral: 20-30mg daily in divided doses",
+  "contraindications": "Viral skin infections, rosacea, perioral dermatitis (topical)",
+  "interactions": "Minimal with topical use. Oral form: similar to prednisolone",
+  "monitoring": "Skin atrophy with prolonged topical use, HPA axis suppression",
+  "pregnancy": "Safe topically. Oral use: similar precautions to prednisolone",
+  "sideEffects": "Topical: skin atrophy, striae. Oral: similar to other corticosteroids",
+  "pharmacokinetics": "Topical absorption varies by site. Oral: short half-life 8-12h",
+  "clinicalPearls": "Mildest topical steroid. Available OTC in low concentrations. Safe for face/children",
+  "indication": "Eczema, dermatitis, insect bites, adrenal insufficiency (oral)"
+}

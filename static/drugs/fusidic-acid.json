@@ -1,0 +1,14 @@
+{
+  "name": "Fusidic Acid",
+  "class": "Antibiotic",
+  "mechanism": "Inhibits bacterial protein synthesis - particularly effective against staphylococci",
+  "dosing": "Topical: apply TDS-QDS. Oral: 500mg TDS. Eye: BD",
+  "contraindications": "Hypersensitivity, avoid ocular ointment with soft contact lenses",
+  "interactions": "Statins (↑ myopathy risk - suspend statin during treatment)",
+  "monitoring": "LFTs if systemic use, clinical response",
+  "pregnancy": "Topical use safe - systemic use limited data",
+  "sideEffects": "Local irritation (topical), nausea, jaundice (systemic)",
+  "pharmacokinetics": "Excellent skin penetration (topical), hepatic excretion",
+  "clinicalPearls": "Excellent for impetigo/infected eczema. STOP statins during oral fusidic acid. Often combined with hydrocortisone for infected eczema",
+  "indication": "Skin infections (impetigo, infected eczema), staphylococcal infections, bacterial conjunctivitis"
+}

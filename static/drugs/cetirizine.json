@@ -1,0 +1,14 @@
+{
+  "name": "Cetirizine",
+  "class": "Second-generation antihistamine (H1 antagonist)",
+  "mechanism": "Selective peripheral H1 receptor antagonist with minimal CNS penetration",
+  "dosing": "Adults: 10mg daily. Children 6-12 years: 5mg daily or 2.5mg BD. Children 2-6 years: 2.5mg daily",
+  "contraindications": "End-stage renal disease, hypersensitivity to cetirizine or hydroxyzine",
+  "interactions": "Minimal interactions due to limited metabolism. Alcohol (↑ sedation)",
+  "monitoring": "Sedation level (less than first-generation), renal function in elderly",
+  "pregnancy": "Generally considered compatible in pregnancy; use when clinically indicated and consult UKTIS if concerned",
+  "sideEffects": "Drowsiness (10%), dry mouth, headache, fatigue, GI upset",
+  "pharmacokinetics": "Good oral absorption, Half-life: 8-11h, 60% renal excretion unchanged",
+  "clinicalPearls": "Less sedating than chlorphenamine. Reduce dose in renal impairment. Available OTC",
+  "indication": "Allergic rhinitis, chronic urticaria, allergic conjunctivitis, atopic dermatitis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Nefopam",
+  "class": "Non-opioid analgesic",
+  "mechanism": "Centrally acting analgesic - inhibits monoamine reuptake, no opioid receptor activity",
+  "dosing": "30-90mg TDS (start 30mg TDS). Max 90mg TDS. Can be given IV/IM",
+  "contraindications": "Seizure disorders, urinary retention, MI, glaucoma",
+  "interactions": "MAOIs, tricyclic antidepressants (↑ anticholinergic effects), tramadol",
+  "monitoring": "Pain relief, anticholinergic effects, seizure risk",
+  "pregnancy": "Avoid - limited safety data",
+  "sideEffects": "Nausea, sweating, tachycardia, dry mouth, urinary retention, confusion",
+  "pharmacokinetics": "Hepatic metabolism, half-life 4h",
+  "clinicalPearls": "Useful opioid-sparing analgesic. Anticholinergic - caution in elderly. Pink urine is normal",
+  "indication": "Moderate pain when opioids inappropriate or as adjunct to other analgesics"
+}

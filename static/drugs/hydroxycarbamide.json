@@ -1,0 +1,13 @@
+{
+  "name": "Hydroxycarbamide (hydroxyurea)",
+  "class": "Antimetabolite / cytoreductive",
+  "mechanism": "Inhibits ribonucleotide reductase",
+  "dosing": "Dosing per indication (e.g., myeloproliferative disease)",
+  "contraindications": "Pregnancy, severe bone marrow suppression",
+  "interactions": "Cytotoxic drugs (additive marrow suppression)",
+  "monitoring": "FBC, renal, hepatic function",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Myelosuppression, mucositis, teratogenicity",
+  "clinicalPearls": "Used for myeloproliferative neoplasms and sickle cell to reduce crises",
+  "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease"
+}

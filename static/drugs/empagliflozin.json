@@ -1,0 +1,14 @@
+{
+  "name": "Empagliflozin",
+  "class": "Sodium-glucose co-transporter 2 inhibitors",
+  "mechanism": "Inhibits sodium-glucose co-transporter 2 in proximal renal tubules",
+  "dosing": "Type 2 diabetes: 10mg daily, may increase to 25mg. Heart failure: 10mg daily",
+  "contraindications": "Type 1 diabetes, ketoacidosis, severe renal impairment (eGFR <30)",
+  "interactions": "Diuretics (↑ volume depletion), insulin (↑ hypoglycaemia risk)",
+  "monitoring": "eGFR, genital infections, volume status. Consider ketone monitoring if clinically unwell",
+  "pregnancy": "Avoid - limited safety data",
+  "sideEffects": "Genital infections, UTI, volume depletion, diabetic ketoacidosis (rare)",
+  "pharmacokinetics": "Long half-life: 12h, renal excretion, minimal drug interactions",
+  "clinicalPearls": "Cardiovascular and renal benefits: recommended as an add-on in T2DM with CVD and in HFrEF/CKD where indicated. See NICE guidance (NG136/NG17 and NG238) for specific pathways. Monitor renal function; consider patient education on volume status",
+  "indication": "Type 2 diabetes (with CVD benefits), heart failure with reduced ejection fraction, chronic kidney disease as per guideline indications"
+}

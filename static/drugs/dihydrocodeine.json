@@ -1,0 +1,14 @@
+{
+  "name": "Dihydrocodeine",
+  "class": "Opioid analgesic",
+  "mechanism": "Mu-opioid receptor agonist, weaker than morphine but stronger than codeine",
+  "dosing": "Adults: 30mg every 4-6 hours PRN (max 240mg daily). Modified release: 60-120mg BD",
+  "contraindications": "Respiratory depression, acute abdomen, severe asthma, paralytic ileus",
+  "interactions": "CNS depressants (↑ sedation), MAOIs (avoid), rifampicin (↓ efficacy)",
+  "monitoring": "Respiratory rate, sedation level, bowel function, pain scores, signs of dependence",
+  "pregnancy": "Use with caution - neonatal withdrawal syndrome possible",
+  "sideEffects": "Sedation, constipation, nausea, respiratory depression, dependence, tolerance",
+  "pharmacokinetics": "Good oral bioavailability, half-life: 3-4h, hepatic metabolism",
+  "clinicalPearls": "Step 2 analgesic (WHO ladder). Always prescribe laxatives. Less euphoric than morphine",
+  "indication": "Moderate to severe pain, persistent cough (unlicensed)"
+}

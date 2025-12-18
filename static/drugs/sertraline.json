@@ -1,0 +1,14 @@
+{
+  "name": "Sertraline",
+  "class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "mechanism": "Potent and selective inhibition of serotonin reuptake",
+  "dosing": "Adults: Start 50mg daily, can increase by 50mg increments weekly, max 200mg daily. Take with food",
+  "contraindications": "MAOIs, unstable epilepsy, mania",
+  "interactions": "MAOIs, warfarin (↑ bleeding risk), NSAIDs, tramadol",
+  "monitoring": "Mood, suicide risk (especially <25 years), bleeding if on anticoagulants",
+  "pregnancy": "Preferred SSRI in pregnancy - lowest risk profile",
+  "sideEffects": "Nausea, diarrhoea, insomnia, sexual dysfunction, tremor, dry mouth",
+  "pharmacokinetics": "Half-life: 26h, extensive first-pass metabolism",
+  "clinicalPearls": "NICE first-line SSRI choice. Take with food to ↓ GI upset. Lower drug interaction potential",
+  "indication": "Depression, panic disorder, OCD, PTSD, social anxiety disorder"
+}

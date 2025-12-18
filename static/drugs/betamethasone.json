@@ -1,0 +1,14 @@
+{
+  "name": "Betamethasone Valerate",
+  "class": "Potent topical corticosteroid",
+  "mechanism": "Potent anti-inflammatory via glucocorticoid receptor",
+  "dosing": "0.1% cream/ointment apply thinly OD-BD. 0.025% (moderate potency) for less severe",
+  "contraindications": "Untreated skin infections, rosacea, acne, avoid prolonged facial use",
+  "interactions": "None for topical use",
+  "monitoring": "Skin atrophy, HPA axis suppression (extensive/prolonged use)",
+  "pregnancy": "Avoid potent steroids in large amounts - brief use acceptable",
+  "sideEffects": "Skin atrophy, striae, telangiectasia, contact dermatitis, HPA suppression (extensive use)",
+  "pharmacokinetics": "Systemic absorption increased with occlusion/thin skin",
+  "clinicalPearls": "Potent steroid - not for face or children <1y. Use short courses. Step down to weaker steroid. Use ointment for dry/thick skin",
+  "indication": "Severe eczema, psoriasis, severe inflammatory skin conditions"
+}

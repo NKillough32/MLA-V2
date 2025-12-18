@@ -1,0 +1,14 @@
+{
+  "name": "Enoxaparin",
+  "class": "Heparins and fondaparinux",
+  "mechanism": "Enhances antithrombin III activity, preferentially inhibiting factor Xa",
+  "dosing": "VTE prophylaxis: 40mg daily SC. VTE treatment: 1.5mg/kg daily or 1mg/kg BD SC",
+  "contraindications": "Active bleeding, thrombocytopenia, severe renal impairment",
+  "interactions": "Anticoagulants (↑ bleeding), NSAIDs (↑ bleeding), antiplatelets",
+  "monitoring": "Anti-Xa levels (if required), platelet count, signs of bleeding",
+  "pregnancy": "Safe - does not cross placenta. Preferred anticoagulant in pregnancy",
+  "sideEffects": "Bleeding, thrombocytopenia (HIT), injection site reactions, osteoporosis",
+  "pharmacokinetics": "Subcutaneous bioavailability 90%, half-life: 4-7h, renal excretion",
+  "clinicalPearls": "More predictable than unfractionated heparin. Pregnancy anticoagulant of choice",
+  "indication": "VTE prophylaxis/treatment, acute coronary syndromes, pregnancy anticoagulation"
+}

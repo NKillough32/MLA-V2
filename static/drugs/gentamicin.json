@@ -1,0 +1,16 @@
+{
+  "name": "Gentamicin",
+  "class": "Aminoglycoside antibiotic",
+  "mechanism": "Binds 30S ribosomal subunit causing misreading and inhibition of protein synthesis",
+  "dosing": "IV dosing weight-based and indication-specific; use once-daily regimens where appropriate and monitor levels",
+  "contraindications": "Myasthenia gravis (relative), hypersensitivity",
+  "interactions": "Nephrotoxins (vancomycin, loop diuretics), neuromuscular blockers",
+  "monitoring": "Renal function, gentamicin trough/peak levels per local protocol, hearing/vestibular symptoms",
+  "pregnancy": "Use if essential with caution",
+  "sideEffects": "Nephrotoxicity, ototoxicity (esp. high doses/rapid IV or coadministration with other ototoxins)",
+  "clinicalPearls": "Dose and monitor levels closely; adjust for renal impairment",
+  "renalDoseAdjustments": "Extended-interval dosing: eGFR ≥60 mL/min every 24 h; 40–59 mL/min every 36 h; 20–39 mL/min every 48 h; <20 mL/min give dose based on therapeutic level monitoring.",
+  "therapeuticDrugMonitoring": "Aim peak 8–10 mg/L (once-daily regimens) with trough <1 mg/L. Take a level 6–14 h post dose and apply Hartford or local nomogram to determine next interval.",
+  "antimicrobialStewardship": "Limit course to ≤7 days where possible. Review for IV-to-oral step-down once cultures identify a susceptible agent.",
+  "indication": "Severe Gram-negative infections, synergistic therapy in endocarditis"
+}

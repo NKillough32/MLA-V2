@@ -1,0 +1,12 @@
+{
+  "name": "Anastrozole",
+  "class": "Aromatase inhibitor",
+  "mechanism": "Inhibits aromatase",
+  "dosing": "1mg once daily",
+  "contraindications": "Pregnancy",
+  "monitoring": "Bone density",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Arthralgia, osteoporosis risk",
+  "clinicalPearls": "Postmenopausal breast cancer therapy",
+  "indication": "Breast cancer"
+}

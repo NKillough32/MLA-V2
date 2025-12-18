@@ -1,0 +1,14 @@
+{
+  "name": "Meropenem",
+  "class": "Antibiotic (Carbapenem)",
+  "mechanism": "Inhibits bacterial cell wall synthesis, stable to most beta-lactamases",
+  "dosing": "Adult: 0.5-1g TDS IV. Severe infections/meningitis: 2g TDS. Infuse over 15-30min",
+  "contraindications": "Carbapenem allergy, severe penicillin allergy (cross-reactivity)",
+  "interactions": "Probenecid (↑ levels), valproate (↓ seizure threshold), ganciclovir",
+  "monitoring": "Renal function, seizure activity, infection resolution, C.diff surveillance",
+  "pregnancy": "Generally considered compatible where benefits outweigh risks; consult UKTIS/SmPC",
+  "sideEffects": "Diarrhea, nausea, headache, seizures (high dose/renal impairment), C.diff",
+  "pharmacokinetics": "Excellent tissue penetration including CSF. t½ 1h. 70% renal excretion",
+  "clinicalPearls": "Broad spectrum including ESBL producers. Lower seizure risk than imipenem",
+  "indication": "Severe sepsis, complicated UTI, intra-abdominal infections, meningitis"
+}

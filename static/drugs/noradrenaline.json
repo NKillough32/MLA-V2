@@ -1,0 +1,14 @@
+{
+  "name": "Noradrenaline",
+  "class": "Sympathomimetic (Alpha/Beta agonist)",
+  "mechanism": "Potent α1 and moderate β1 agonist causing vasoconstriction and increased contractility",
+  "dosing": "IV infusion: 0.01-3mcg/kg/min via central line. Titrate to MAP >65mmHg",
+  "contraindications": "Hypovolemia (relative), pregnancy (unless life-threatening), peripheral vascular disease",
+  "interactions": "TCAs (↑ pressor response), MAOIs (↑ hypertensive crisis), halothane (arrhythmias)",
+  "monitoring": "Blood pressure, heart rate, urine output, peripheral perfusion, ECG",
+  "pregnancy": "Avoid unless life-threatening. May reduce uterine blood flow",
+  "sideEffects": "Hypertension, arrhythmias, peripheral ischemia, tissue necrosis (extravasation)",
+  "pharmacokinetics": "IV only. Onset immediate, duration 1-2min after stopping. Metabolized by COMT/MAO",
+  "clinicalPearls": "First-line vasopressor in septic shock. Give via central line. Have phentolamine ready",
+  "indication": "Septic shock, cardiogenic shock, severe hypotension, cardiac arrest"
+}

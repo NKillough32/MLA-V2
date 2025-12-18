@@ -1,0 +1,14 @@
+{
+  "name": "Tolterodine",
+  "class": "Antimuscarinics, genitourinary",
+  "mechanism": "Muscarinic receptor antagonist - reduces detrusor overactivity",
+  "dosing": "Standard: 2mg BD. Modified release: 4mg OD",
+  "contraindications": "Urinary retention, gastric retention, uncontrolled angle-closure glaucoma, myasthenia gravis",
+  "interactions": "CYP3A4 inhibitors (↑ levels), other antimuscarinics (↑ effects)",
+  "monitoring": "Residual urine volume, antimuscarinic side effects, cognitive effects (elderly)",
+  "pregnancy": "Avoid",
+  "sideEffects": "Dry mouth, constipation, blurred vision, drowsiness, cognitive impairment (elderly), urinary retention",
+  "pharmacokinetics": "Oral, hepatic metabolism, half-life 2-10h",
+  "clinicalPearls": "Less selective than solifenacin. Similar efficacy to oxybutynin but better tolerated. Avoid in elderly due to cognitive effects. Advise on fluid restriction and bladder training",
+  "indication": "Overactive bladder, urge incontinence"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Alginates (Gaviscon)",
+  "class": "Alginate antacid",
+  "mechanism": "Forms viscous gel/raft on stomach contents preventing reflux",
+  "dosing": "Liquid: 10-20ml after meals and bedtime. Tablets: 2-4 tablets after meals and bedtime",
+  "contraindications": "Intestinal obstruction, hypercalcaemia (calcium-containing formulations), phenylketonuria (some formulations)",
+  "interactions": "May reduce absorption of other drugs - give 2h apart from antibiotics/levothyroxine",
+  "monitoring": "Symptom control, electrolytes if renal impairment (sodium/calcium content)",
+  "pregnancy": "Safe - not significantly absorbed",
+  "sideEffects": "Constipation, flatulence, rarely hypercalcaemia",
+  "pharmacokinetics": "Local action in GI tract, minimal absorption",
+  "clinicalPearls": "Very commonly used OTC. Advance formulation more effective. High sodium in some - Gaviscon Advance lower. Safe in pregnancy for reflux",
+  "indication": "GERD, heartburn, hiatus hernia symptoms, pregnancy-related reflux"
+}

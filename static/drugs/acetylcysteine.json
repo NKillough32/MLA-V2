@@ -1,0 +1,14 @@
+{
+  "name": "Acetylcysteine",
+  "class": "Mucolytic / Antidote",
+  "mechanism": "Mucolytic: breaks disulfide bonds in mucus. Antidote: replenishes glutathione in paracetamol overdose",
+  "dosing": "Paracetamol OD: 150mg/kg in 200ml glucose 5% over 1h, then 50mg/kg over 4h, then 100mg/kg over 16h. Nebuliser: 3-5ml of 20% solution TDS-QDS",
+  "contraindications": "Caution in asthma (bronchospasm risk with nebulised form)",
+  "interactions": "None significant",
+  "monitoring": "Anaphylactoid reactions (common with IV), LFTs in paracetamol overdose",
+  "pregnancy": "Safe - essential in paracetamol overdose",
+  "sideEffects": "IV: anaphylactoid reactions (flushing, urticaria, bronchospasm), nausea. Nebulised: bronchospasm, unpleasant taste",
+  "pharmacokinetics": "IV: peak effect immediate. Nebulised: local airway action",
+  "clinicalPearls": "Life-saving in paracetamol overdose - start if >150mg/kg ingested even before levels back. Slow infusion rate if anaphylactoid reaction occurs",
+  "indication": "Paracetamol overdose (IV), viscous airway secretions (nebulised)"
+}

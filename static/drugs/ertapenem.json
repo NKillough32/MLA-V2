@@ -1,0 +1,14 @@
+{
+  "name": "Ertapenem",
+  "class": "Carbapenem antibiotic",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "1g IV/IM once daily",
+  "contraindications": "Known hypersensitivity to carbapenems, history of seizures (use caution)",
+  "interactions": "Valproate (↓ levels), probenecid (↓ clearance), other β-lactams (additive effects)",
+  "monitoring": "Renal function, signs of C. difficile infection, seizure activity",
+  "pregnancy": "Use if clearly needed - limited data",
+  "sideEffects": "GI upset, rash, seizures (rare, especially with renal impairment), C. difficile colitis",
+  "pharmacokinetics": "Once-daily dosing due to longer half-life than some carbapenems; primarily renal excretion",
+  "clinicalPearls": "Does NOT reliably cover Pseudomonas or Acinetobacter (unlike meropenem). Useful for community severe infections and intra-abdominal sepsis in some protocols",
+  "indication": "Intra-abdominal infections, complicated skin/soft tissue infections, community-acquired severe infections, some UTIs"
+}

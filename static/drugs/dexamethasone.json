@@ -1,0 +1,14 @@
+{
+  "name": "Dexamethasone",
+  "class": "Corticosteroid (glucocorticoid)",
+  "mechanism": "Potent synthetic glucocorticoid with anti-inflammatory and immunosuppressive effects",
+  "dosing": "Cerebral oedema: 4mg QDS. COVID-19: 6mg daily for 10 days. Croup: 150mcg/kg single dose",
+  "contraindications": "Systemic infection (unless covering antimicrobials), live vaccines",
+  "interactions": "Similar to prednisolone - warfarin, NSAIDs, vaccines",
+  "monitoring": "Blood glucose, blood pressure, mood changes, infection signs",
+  "pregnancy": "Use if essential - crosses placenta more than prednisolone",
+  "sideEffects": "Similar to prednisolone but more potent - hyperglycaemia, immunosuppression",
+  "pharmacokinetics": "Long half-life: 36-72h, potency: 25x hydrocortisone",
+  "clinicalPearls": "4x more potent than prednisolone. Minimal mineralocorticoid activity. Use tapering for prolonged courses to avoid adrenal suppression. COVID-19: 6 mg once daily for up to 10 days (RECOVERY trial)",
+  "indication": "Cerebral oedema, severe COVID-19, croup, severe inflammatory conditions"
+}

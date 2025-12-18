@@ -1,0 +1,14 @@
+{
+  "name": "Colistin (polymyxin E)",
+  "class": "Polymyxin antibiotic",
+  "mechanism": "Cationic detergent that disrupts bacterial cell membrane integrity (Gram-negative bacteria)",
+  "dosing": "Dosing complex - use local guidance and consult pharmacy; typical IV dosing based on colistin base activity and renal function",
+  "contraindications": "Hypersensitivity to polymyxins",
+  "interactions": "Other nephrotoxic or neurotoxic agents (aminoglycosides, vancomycin, amphotericin)",
+  "monitoring": "Renal function, respiratory status, neuromuscular blockade signs",
+  "pregnancy": "Use only if no safer alternatives - limited data",
+  "sideEffects": "Nephrotoxicity, neurotoxicity (paresthesia, dizziness, neuromuscular blockade), bronchospasm with inhaled forms",
+  "pharmacokinetics": "Poor oral absorption; IV or inhaled administration. Renal clearance; dosing adjusted for renal impairment",
+  "clinicalPearls": "Often used as a last-resort agent for multidrug-resistant Gram-negative infections; dosing regimens vary—consult infectious diseases/pharmacy",
+  "indication": "Severe infections due to MDR Pseudomonas, Acinetobacter, Klebsiella species when other options exhausted"
+}

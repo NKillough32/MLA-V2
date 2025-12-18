@@ -1,0 +1,14 @@
+{
+  "name": "Diazepam",
+  "class": "Benzodiazepines",
+  "mechanism": "Enhances GABA-A receptor activity, increasing chloride influx and neuronal inhibition",
+  "dosing": "Anxiety: 2-5mg TDS. Status epilepticus: 10-20mg IV slowly. Muscle spasm: 2-15mg daily",
+  "contraindications": "Respiratory depression, severe hepatic impairment, myasthenia gravis, sleep apnoea",
+  "interactions": "Alcohol (↑ sedation), opioids (respiratory depression), phenytoin (variable)",
+  "monitoring": "Respiratory function, level of sedation, signs of dependence",
+  "pregnancy": "Avoid - risk of floppy baby syndrome and withdrawal in neonate",
+  "sideEffects": "Sedation, ataxia, confusion (elderly), dependence, respiratory depression",
+  "pharmacokinetics": "Long half-life: 20-100h (including active metabolites), hepatic metabolism",
+  "clinicalPearls": "Long-acting benzodiazepine. High dependence potential. Flumazenil reverses effects",
+  "indication": "Status epilepticus, severe anxiety, alcohol withdrawal, muscle spasm"
+}

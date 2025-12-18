@@ -1,0 +1,13 @@
+{
+  "name": "Thiamine (B1) / Pabrinex",
+  "class": "Vitamin / metabolic therapy",
+  "mechanism": "Cofactor in carbohydrate metabolism (pyruvate dehydrogenase, transketolase)",
+  "dosing": "Prevention: IV thiamine 200mg daily in at-risk alcohol-dependent patients; Treatment (suspected Wernicke): high-dose parenteral thiamine (e.g., Pabrinex or 500mg IV thiamine 3x daily) per local protocol",
+  "contraindications": "None significant for thiamine itself; follow product guidance for Pabrinex components",
+  "interactions": "None clinically important",
+  "monitoring": "Clinical neurological signs, magnesium status (replete Mg if low)",
+  "pregnancy": "Safe and indicated when required",
+  "sideEffects": "Rare hypersensitivity (parenteral formulations)",
+  "clinicalPearls": "Give thiamine prior to/during glucose administration in malnourished or alcohol-dependent patients to avoid precipitating Wernicke",
+  "indication": "Prevention/treatment of Wernicke encephalopathy; thiamine deficiency"
+}

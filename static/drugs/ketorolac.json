@@ -1,0 +1,14 @@
+{
+  "name": "Ketorolac",
+  "class": "Non-selective NSAID",
+  "mechanism": "Inhibits COX-1 and COX-2, reducing prostaglandin synthesis",
+  "dosing": "IV/IM: 10-30mg single doses as required. PO: 10mg then 10mg every 4-6h (max 40mg/day) for short-term use",
+  "contraindications": "Active peptic ulcer, significant renal impairment, bleeding diathesis, recent major surgery (esp. CABG)",
+  "interactions": "Anticoagulants/antiplatelets (↑ bleeding), ACEi/ARBs (↓ efficacy)",
+  "monitoring": "Renal function, signs of bleeding, pain relief",
+  "pregnancy": "Avoid in late pregnancy; use caution earlier",
+  "sideEffects": "GI bleeding, renal impairment, increased bleeding risk, bronchospasm in aspirin-sensitive asthma",
+  "pharmacokinetics": "Good analgesic potency; short-term use only to limit adverse effects",
+  "clinicalPearls": "Powerful analgesic for short-term use (≤5 days). Avoid with other NSAIDs and in renal impairment",
+  "indication": "Moderate to severe acute pain (short-term postoperative pain)"
+}

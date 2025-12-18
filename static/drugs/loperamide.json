@@ -1,0 +1,14 @@
+{
+  "name": "Loperamide",
+  "class": "Opioid antidiarrhoeal agent",
+  "mechanism": "Mu-opioid receptor agonist in GI tract, slows intestinal motility",
+  "dosing": "Adults: 4mg initially, then 2mg after each loose stool (max 16mg daily). Children >4 years: weight-based dosing",
+  "contraindications": "Acute dysentery, acute ulcerative colitis, bacterial enterocolitis, children <4 years",
+  "interactions": "P-glycoprotein inhibitors (↑ CNS effects), quinidine, ritonavir",
+  "monitoring": "Stool frequency, abdominal pain, signs of toxic megacolon",
+  "pregnancy": "Safe - limited systemic absorption, no increased malformation risk",
+  "sideEffects": "Constipation, abdominal cramps, drowsiness, dry mouth, nausea",
+  "pharmacokinetics": "Poor oral absorption, minimal CNS penetration, Half-life: 10-14h",
+  "clinicalPearls": "Available OTC (max 2 days). Does not cross blood-brain barrier at therapeutic doses",
+  "indication": "Acute diarrhoea, chronic diarrhoea, IBS with diarrhoea"
+}

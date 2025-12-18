@@ -1,0 +1,14 @@
+{
+  "name": "Bupivacaine",
+  "class": "Local anaesthetics",
+  "mechanism": "Amide local anaesthetic - blocks voltage-gated sodium channels",
+  "dosing": "Dose depends on site/technique. Max 2mg/kg (3mg/kg with adrenaline). Epidural: 0.25-0.5%. Spinal: 0.5%",
+  "contraindications": "Hypersensitivity to amide anaesthetics, IV regional anaesthesia (Bier\\",
+  "interactions": "Antiarrhythmics (↑ myocardial depression), beta-blockers",
+  "monitoring": "Signs of toxicity (perioral tingling, tinnitus, seizures, arrhythmias), BP, HR",
+  "pregnancy": "Safe - widely used for epidural analgesia in labour",
+  "sideEffects": "CNS toxicity (at high doses): tinnitus, perioral tingling, seizures. Cardiac toxicity: arrhythmias, cardiac arrest. Hypotension (epidural/spinal)",
+  "pharmacokinetics": "Duration 2-8h (longer than lidocaine), metabolised hepatically",
+  "clinicalPearls": "Long-acting local anaesthetic. More cardiotoxic than lidocaine - inadvertent IV injection can cause cardiac arrest. Have lipid emulsion (Intralipid) ready for toxicity. Levobupivacaine less cardiotoxic",
+  "indication": "Regional anaesthesia, epidural analgesia (labour/post-op), peripheral nerve blocks"
+}

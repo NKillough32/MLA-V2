@@ -1,0 +1,14 @@
+{
+  "name": "Phytomenadione (Vitamin K1)",
+  "class": "Vitamins",
+  "mechanism": "Cofactor for synthesis of clotting factors II, VII, IX, X",
+  "dosing": "Warfarin reversal: 1-5mg IV/PO depending on INR and bleeding. Neonates: 1mg IM at birth. Deficiency: 10mg IV/PO",
+  "contraindications": "Hypersensitivity (IV can cause anaphylaxis)",
+  "interactions": "Warfarin (antagonises effect), antibiotics (↓ gut synthesis)",
+  "monitoring": "INR, PT, bleeding",
+  "pregnancy": "Safe",
+  "sideEffects": "Anaphylactoid reactions (IV, rare), injection site reactions, transient hyperbilirubinaemia (neonates)",
+  "pharmacokinetics": "Oral/IV/IM, onset hours (oral) to 6-12h for INR correction",
+  "clinicalPearls": "Give IV slowly to reduce anaphylaxis risk. For major warfarin bleed, give with PCC. Oral as effective as IV if no emergency. All neonates receive prophylaxis",
+  "indication": "Warfarin reversal, vitamin K deficiency, newborn haemorrhagic disease prophylaxis"
+}

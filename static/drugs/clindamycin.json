@@ -1,0 +1,14 @@
+{
+  "name": "Clindamycin",
+  "class": "Clindamycin",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to 50S ribosomal subunit",
+  "dosing": "Adult: 150-450mg QDS PO or 0.6-2.7g daily IV in divided doses. Max 4.8g/day IV",
+  "contraindications": "Previous C.diff colitis, severe liver disease, lincomycin allergy",
+  "interactions": "Neuromuscular blockers (↑ paralysis), warfarin (↑ INR), ciclosporin",
+  "monitoring": "Diarrhea/C.diff symptoms, liver function, infection resolution",
+  "clinicalPearls": "Excellent bone penetration. High C.diff risk. Stop if diarrhea develops",
+  "pregnancy": "Generally considered compatible in pregnancy; seek UKTIS for specific scenarios",
+  "sideEffects": "C.diff colitis, diarrhea, rash, metallic taste, liver dysfunction",
+  "pharmacokinetics": "Good tissue/bone penetration. t½ 2-3h. Hepatic metabolism",
+  "indication": "Bone/joint infections, anaerobic infections, skin/soft tissue, dental infections"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Citalopram",
+  "class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "mechanism": "Selective inhibition of serotonin reuptake with minimal effect on other neurotransmitters",
+  "dosing": "Adults: Start 20mg daily, usual dose 20mg, max 40mg daily (20mg if >65 years or hepatic impairment)",
+  "contraindications": "MAOIs, QT prolongation, recent MI, severe heart failure",
+  "interactions": "MAOIs (serotonin syndrome), drugs prolonging QT interval, warfarin",
+  "monitoring": "ECG if cardiac risk factors, electrolytes, mood, suicide risk",
+  "pregnancy": "Use if benefit outweighs risk - potential pulmonary hypertension in neonate",
+  "sideEffects": "Nausea, dry mouth, drowsiness, sexual dysfunction, QT prolongation (dose-related)",
+  "pharmacokinetics": "Half-life: 35h, CYP2C19 and CYP3A4 metabolism",
+  "clinicalPearls": "Lowest interaction profile of SSRIs. Dose reduction needed in elderly. ECG if >40mg or cardiac risk",
+  "indication": "Depression, panic disorder (unlicensed but effective)"
+}

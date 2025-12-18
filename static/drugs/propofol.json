@@ -1,0 +1,14 @@
+{
+  "name": "Propofol",
+  "class": "General Anaesthetic (Phenolic compound)",
+  "mechanism": "GABA-A receptor agonist causing rapid onset anaesthesia",
+  "dosing": "Induction: 1.5-2.5mg/kg IV. Maintenance: 4-12mg/kg/h IV. ICU sedation: 0.3-4mg/kg/h",
+  "contraindications": "Egg/soy allergy, children <16 years (prolonged use), severe cardiac failure",
+  "interactions": "CNS depressants (↑ effect), NO drug interactions metabolically",
+  "monitoring": "Blood pressure, respiratory rate, depth of anaesthesia, lipid levels (prolonged use)",
+  "pregnancy": "Use in pregnancy only if essential and after considering maternal and fetal risks; consult obstetric/anesthetic guidance",
+  "sideEffects": "Hypotension, respiratory depression, injection pain, propofol infusion syndrome",
+  "pharmacokinetics": "Rapid onset 40s, offset 5-10min. t½ 1-3h. Hepatic and extrahepatic metabolism",
+  "clinicalPearls": "Painful injection - use lidocaine. Quick recovery. Risk of PRIS with prolonged use",
+  "indication": "General anaesthesia induction/maintenance, ICU sedation, procedural sedation"
+}

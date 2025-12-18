@@ -1,0 +1,14 @@
+{
+  "name": "Candesartan",
+  "class": "Angiotensin receptor blockers",
+  "mechanism": "Selective antagonist of angiotensin II at AT1 receptors",
+  "dosing": "Hypertension: Start 8mg daily, usual 8-16mg daily, max 32mg daily. Heart failure: Start 4mg daily",
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, severe renal/hepatic impairment",
+  "interactions": "NSAIDs (↓ efficacy), potassium supplements (hyperkalemia), lithium (↑ levels)",
+  "monitoring": "eGFR, potassium, blood pressure. Check 1-2 weeks after starting",
+  "pregnancy": "Contraindicated - teratogenic in 2nd/3rd trimester",
+  "sideEffects": "Dizziness, hyperkalemia, acute kidney injury, angioedema (rare)",
+  "pharmacokinetics": "Prodrug, active metabolite half-life: 9h, renal and biliary excretion",
+  "clinicalPearls": "Alternative to ACE inhibitor if cough. Often better tolerated than other ARBs",
+  "indication": "Hypertension, heart failure, diabetic nephropathy, post-MI"
+}

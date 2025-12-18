@@ -1,0 +1,14 @@
+{
+  "name": "Rivaroxaban",
+  "class": "Direct oral anticoagulant (Factor Xa inhibitor)",
+  "mechanism": "Direct, selective inhibition of factor Xa, interrupting thrombin generation and clot formation",
+  "dosing": "AF (stroke prevention): 20 mg once daily with food (15 mg OD if eGFR 15–49 mL/min). VTE treatment: 15 mg BD for 21 days, then 20 mg OD with food. VTE prophylaxis post-orthopaedics: 10 mg OD.",
+  "contraindications": "Active bleeding, hepatic disease with coagulopathy, pregnancy/breastfeeding, mechanical heart valves",
+  "interactions": "Strong CYP3A4/P-gp inhibitors (e.g., azoles, HIV protease inhibitors ↑ levels), inducers (e.g., rifampicin ↓ effect)",
+  "monitoring": "Renal & hepatic function at baseline and periodically; clinical signs of bleeding; no routine coagulation testing",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Bleeding, anaemia, GI upset, transaminitis",
+  "pharmacokinetics": "Peak 2–4 h; t½ 5–13 h; dual hepatic/renal elimination",
+  "clinicalPearls": "Take doses ≥15 mg with food. Hold ≥24 h pre-low bleed-risk procedures (longer if renal impairment). Reversal: andexanet alfa (where available) or PCC for life-threatening bleed.",
+  "indication": "Non-valvular AF stroke prevention; treatment and secondary prevention of DVT/PE; VTE prophylaxis after hip/knee replacement"
+}

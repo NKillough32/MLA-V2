@@ -1,0 +1,14 @@
+{
+  "name": "Zafirlukast",
+  "class": "Leukotriene receptor antagonists",
+  "mechanism": "Blocks cysteinyl leukotriene receptors - anti-inflammatory",
+  "dosing": "20mg BD (1h before or 2h after food)",
+  "contraindications": "Hepatic impairment, hypersensitivity",
+  "interactions": "Warfarin (↑ INR), theophylline (↓ levels), aspirin (↑ levels)",
+  "monitoring": "LFTs (Churg-Strauss syndrome), respiratory function",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Headache, GI upset, hepatotoxicity (rare), Churg-Strauss syndrome",
+  "pharmacokinetics": "Oral, hepatic metabolism",
+  "clinicalPearls": "Less commonly used than montelukast (BD dosing, more interactions, hepatotoxicity). Monitor LFTs. Can unmask Churg-Strauss when steroids reduced. Take on empty stomach",
+  "indication": "Asthma prophylaxis (add-on), exercise-induced asthma"
+}

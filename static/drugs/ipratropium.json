@@ -1,0 +1,14 @@
+{
+  "name": "Ipratropium",
+  "class": "Short-acting muscarinic antagonist (SAMA)",
+  "mechanism": "Competitive antagonist of muscarinic receptors in bronchial smooth muscle",
+  "dosing": "MDI: 40mcg QDS. Nebuliser: 250-500mcg QDS. Acute exacerbation: 500mcg nebulised",
+  "contraindications": "Hypersensitivity to atropine or derivatives",
+  "interactions": "Other anticholinergics (↑ anticholinergic effects)",
+  "monitoring": "Bronchodilator response, anticholinergic side effects, eye symptoms",
+  "pregnancy": "Safe - minimal systemic absorption",
+  "sideEffects": "Dry mouth, cough, headache, paradoxical bronchospasm (rare)",
+  "pharmacokinetics": "Minimal systemic absorption, onset: 15min, duration: 3-6h",
+  "clinicalPearls": "Additive effect with beta-2 agonists. Avoid contact with eyes (glaucoma risk)",
+  "indication": "COPD, severe asthma (add-on therapy), acute exacerbations"
+}

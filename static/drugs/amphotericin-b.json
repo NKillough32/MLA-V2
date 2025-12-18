@@ -1,0 +1,13 @@
+{
+  "name": "Amphotericin B",
+  "class": "Polyenes (antifungal)",
+  "mechanism": "Binds ergosterol and disrupts fungal cell membranes",
+  "dosing": "IV formulations vary; lipid formulations reduce nephrotoxicity",
+  "contraindications": "Hypersensitivity to amphotericin",
+  "interactions": "Nephrotoxins increase toxicity risk",
+  "monitoring": "Renal function, electrolytes (K+, Mg2+), infusion reactions",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "Nephrotoxicity, infusion-related fevers, electrolyte disturbances",
+  "clinicalPearls": "Reserved for serious systemic fungal infections",
+  "indication": "Serious systemic fungal infections"
+}

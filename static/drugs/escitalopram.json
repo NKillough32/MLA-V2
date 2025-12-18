@@ -1,0 +1,14 @@
+{
+  "name": "Escitalopram",
+  "class": "Antidepressants, selective serotonin reuptake inhibitors",
+  "mechanism": "Selective inhibition of serotonin reuptake with high selectivity",
+  "dosing": "Adults: Start 10mg daily, usual dose 10-20mg daily. Elderly: max 10mg daily",
+  "contraindications": "MAOIs, QT prolongation, recent MI",
+  "interactions": "MAOIs (serotonin syndrome), drugs prolonging QT interval, warfarin",
+  "monitoring": "ECG if cardiac risk factors, mood, suicide risk, sexual function",
+  "pregnancy": "Use if benefit outweighs risk - potential neonatal complications",
+  "sideEffects": "Nausea, headache, sexual dysfunction, insomnia, QT prolongation",
+  "pharmacokinetics": "Half-life: 27-32h, hepatic metabolism via CYP2C19",
+  "clinicalPearls": "S-enantiomer of citalopram. Often better tolerated than citalopram. Take any time of day",
+  "indication": "Depression, generalized anxiety disorder, panic disorder, social anxiety"
+}

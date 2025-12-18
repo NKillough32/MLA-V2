@@ -1,0 +1,14 @@
+{
+  "name": "Dutasteride",
+  "class": "5 alpha-reductase inhibitors",
+  "mechanism": "Inhibits both type 1 and type 2 5α-reductase, reducing dihydrotestosterone (DHT)",
+  "dosing": "500mcg OD",
+  "contraindications": "Women of childbearing age, children, severe hepatic impairment",
+  "interactions": "CYP3A4 inhibitors (↑ levels)",
+  "monitoring": "PSA (halves after 6 months), prostate symptoms, sexual function",
+  "pregnancy": "Contraindicated - teratogenic (feminisation of male fetus). Men should not donate blood",
+  "sideEffects": "Impotence, reduced libido, ejaculation disorders, gynaecomastia, depression",
+  "pharmacokinetics": "Oral, very long half-life (3-5 weeks), extensively protein bound",
+  "clinicalPearls": "More potent than finasteride. Takes 3-6 months for full effect. Persistent sexual dysfunction reported. Women and children should not handle crushed tablets. PSA halved - double value for screening",
+  "indication": "Benign prostatic hyperplasia, male pattern baldness (off-label)"
+}

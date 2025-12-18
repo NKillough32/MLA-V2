@@ -1,0 +1,13 @@
+{
+  "name": "Canagliflozin",
+  "class": "SGLT2 inhibitor",
+  "mechanism": "Inhibits SGLT2",
+  "dosing": "100-300mg daily",
+  "contraindications": "Type 1 diabetes, severe renal impairment",
+  "interactions": "Diuretics",
+  "monitoring": "Renal function, foot checks (amputation signal in some studies)",
+  "pregnancy": "Avoid",
+  "sideEffects": "Genital infections, volume depletion, rare DKA",
+  "clinicalPearls": "Watch for foot infections/amputation signal in older studies",
+  "indication": "T2DM"
+}

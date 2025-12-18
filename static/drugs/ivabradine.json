@@ -1,0 +1,14 @@
+{
+  "name": "Ivabradine",
+  "class": "If channel inhibitor",
+  "mechanism": "Inhibits If channels in SA node reducing heart rate without affecting contractility",
+  "dosing": "Start 5mg BD, adjust to 2.5-7.5mg BD based on heart rate (target HR 50-60bpm)",
+  "contraindications": "Sick sinus syndrome, heart block, severe hypotension, acute MI, severe hepatic impairment",
+  "interactions": "CYP3A4 inhibitors (↑ levels), verapamil/diltiazem (excessive bradycardia)",
+  "monitoring": "Heart rate, ECG, blood pressure, visual symptoms",
+  "pregnancy": "Avoid - teratogenic in animal studies",
+  "sideEffects": "Bradycardia, visual phenomena (phosphenes), headache, dizziness",
+  "pharmacokinetics": "Hepatic metabolism via CYP3A4, half-life 6h",
+  "clinicalPearls": "Useful when beta blockers contraindicated. Licensed for angina and heart failure",
+  "indication": "Chronic heart failure (LVEF ≤35%, HR ≥70 in sinus rhythm), angina if beta blockers unsuitable"
+}

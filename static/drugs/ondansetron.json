@@ -1,0 +1,14 @@
+{
+  "name": "Ondansetron",
+  "class": "Antiemetic (Selective 5-HT₃ receptor antagonist)",
+  "mechanism": "Blocks serotonin 5-HT₃ receptors in the chemoreceptor trigger zone and GI tract",
+  "dosing": "Post-operative or chemo-induced N/V: 4–8 mg IV or PO up to TDS (max single IV dose 16 mg due to QT risk)",
+  "contraindications": "Congenital long QT syndrome, severe hepatic impairment",
+  "interactions": "Other QT-prolonging drugs (macrolides, antipsychotics), serotonergic agents (risk of serotonin syndrome)",
+  "monitoring": "ECG if risk factors for QT prolongation, constipation, LFTs if prolonged use",
+  "pregnancy": "Can be used if clinically indicated for hyperemesis gravidarum (RCOG GTG 69)",
+  "sideEffects": "Constipation, headache, flushing, QT prolongation (dose-related), rare arrhythmias",
+  "pharmacokinetics": "t½ ≈ 4 h, hepatic metabolism (CYP3A4/2D6)",
+  "clinicalPearls": "Avoid single IV doses > 16 mg; monitor QT; good alternative to dopamine-blocking antiemetics in Parkinson’s disease",
+  "indication": "Chemotherapy, radiotherapy, or post-operative nausea and vomiting; pregnancy sickness (second-line)"
+}

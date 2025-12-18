@@ -1,0 +1,14 @@
+{
+  "name": "Co-careldopa (Levodopa + Carbidopa)",
+  "class": "Dopaminergic drugs for Parkinson\\",
+  "mechanism": "Levodopa (dopamine precursor) + carbidopa (peripheral dopa-decarboxylase inhibitor)",
+  "dosing": "Start 25/100mg TDS, increase gradually. Max ~200/2000mg daily in divided doses",
+  "contraindications": "Closed-angle glaucoma, MAOIs (within 2 weeks), malignant melanoma",
+  "interactions": "MAOIs (hypertensive crisis), iron (↓ absorption), antipsychotics (↓ effect)",
+  "monitoring": "Motor function, wearing-off/dyskinesia, psychiatric effects, postural BP",
+  "pregnancy": "Use only if essential - limited data",
+  "sideEffects": "Dyskinesia, wearing-off, on-off fluctuations, nausea, psychiatric effects (hallucinations, impulse control), postural hypotension",
+  "pharmacokinetics": "Oral, crosses BBB, short half-life (1-3h)",
+  "clinicalPearls": "Gold standard for PD. Start low, go slow. Take 30min before food for better absorption. Motor complications inevitable long-term. Domperidone helps nausea",
+  "indication": "Parkinson\\"
+}

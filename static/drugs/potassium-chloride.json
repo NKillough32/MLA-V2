@@ -1,0 +1,14 @@
+{
+  "name": "Potassium Chloride (KCl)",
+  "class": "Electrolyte replacement",
+  "mechanism": "Provides potassium ions to correct hypokalaemia",
+  "dosing": "Oral: 600mg (8mmol) BD-TDS or as prescribed. IV: individualised replacement guided by serum K+ (use diluted IV KCl not bolus) ",
+  "contraindications": "Hyperkalaemia, severe renal impairment without monitoring, untreated Addison’s disease",
+  "interactions": "ACE inhibitors/ARBs/spironolactone (↑ hyperkalaemia risk), trimethoprim, NSAIDs",
+  "monitoring": "Serum potassium, renal function, ECG during IV replacement",
+  "pregnancy": "Use if required with monitoring",
+  "sideEffects": "GI upset, local pain at infusion site, hyperkalaemia if over-replaced",
+  "pharmacokinetics": "Rapidly distributed in extracellular fluid; excreted renally",
+  "clinicalPearls": "Never give concentrated IV KCl as bolus. Dilute and infuse slowly with cardiac monitoring for significant deficits",
+  "indication": "Hypokalaemia replacement and prevention"
+}

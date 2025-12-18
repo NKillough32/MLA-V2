@@ -1,0 +1,14 @@
+{
+  "name": "Budesonide",
+  "class": "Corticosteroids, inhaled",
+  "mechanism": "Synthetic glucocorticoid with potent anti-inflammatory effects in airways",
+  "dosing": "Adults: 200-800mcg BD inhaled. Children: 100-400mcg BD. Use spacer device",
+  "contraindications": "Hypersensitivity. Caution in active pulmonary TB",
+  "interactions": "CYP3A4 inhibitors (↑ systemic exposure), minimal with inhaled use",
+  "monitoring": "Growth in children, oral candidiasis, signs of systemic effects",
+  "pregnancy": "Safe - preferred ICS in pregnancy",
+  "sideEffects": "Oral candidiasis, hoarse voice, growth suppression (children, high doses)",
+  "pharmacokinetics": "High first-pass metabolism, low systemic bioavailability",
+  "clinicalPearls": "High potency ICS. Good safety profile. Rinse mouth after use",
+  "indication": "Asthma prophylaxis, COPD (in combination inhalers), Crohn\\"
+}

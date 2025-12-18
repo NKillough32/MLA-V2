@@ -1,0 +1,14 @@
+{
+  "name": "Flucloxacillin",
+  "class": "Penicillins, narrow-spectrum",
+  "mechanism": "β-lactam antibiotic - inhibits cell wall synthesis, resistant to β-lactamases",
+  "dosing": "Oral: 250-500mg QDS on empty stomach. IV: 0.25-2g QDS. Severe infections: up to 8g daily",
+  "contraindications": "Penicillin allergy, previous flucloxacillin-induced hepatitis",
+  "interactions": "Warfarin (may ↑ INR), methotrexate (↑ toxicity), probenecid (↑ levels)",
+  "monitoring": "LFTs (risk of cholestatic hepatitis), signs of allergic reaction",
+  "pregnancy": "Safe - no evidence of harm",
+  "sideEffects": "GI upset, allergic reactions, cholestatic hepatitis (rare but serious), CDAD",
+  "pharmacokinetics": "Variable oral absorption, half-life: 1h, mainly renal excretion",
+  "clinicalPearls": "First-line for staphylococcal infections. Take on empty stomach. Monitor LFTs",
+  "indication": "Staphylococcal infections (cellulitis, bone/joint infections), endocarditis prophylaxis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Linezolid",
+  "class": "Oxazolidinone antibiotic",
+  "mechanism": "Inhibits bacterial protein synthesis by binding to the 50S ribosomal subunit and preventing formation of the initiation complex",
+  "dosing": "Adults: 600mg IV/PO every 12 hours (usual duration depends on infection)",
+  "contraindications": "Concurrent or recent (within 2 weeks) MAOI use, uncontrolled hypertension, untreated peripheral neuropathy",
+  "interactions": "SSRIs/SNRIs/TCAs (risk of serotonin syndrome), tyramine-rich foods (hypertensive reactions), MAOIs",
+  "monitoring": "Full blood count (weekly if >2 weeks), signs of neuropathy, blood pressure if hypertensive",
+  "pregnancy": "Use only if clearly needed - limited data",
+  "sideEffects": "Myelosuppression (thrombocytopenia, anaemia), peripheral and optic neuropathy with prolonged use, lactic acidosis (rare)",
+  "pharmacokinetics": "Good oral bioavailability (~100%), wide tissue distribution, hepatic metabolism to inactive metabolites",
+  "clinicalPearls": "Reserve for resistant Gram-positive infections including MRSA and VRE where appropriate. Limit duration where possible and monitor blood counts",
+  "indication": "Serious Gram-positive infections including MRSA, VRE, complicated skin and soft tissue infections, some pneumonia"
+}

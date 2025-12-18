@@ -1,0 +1,16 @@
+{
+  "name": "Vancomycin",
+  "class": "Glycopeptide antibiotic",
+  "mechanism": "Inhibits cell wall synthesis by binding D-Ala-D-Ala termini of peptidoglycan precursors",
+  "dosing": "IV: loading and maintenance weight-based regimens per local protocol (commonly 15–20 mg/kg IV loading then 15–20 mg/kg q8–12h adjusted for renal function). Use local nomograms. Oral: 125–500 mg PO QDS for C. difficile depending on severity and guidance.",
+  "contraindications": "Hypersensitivity to glycopeptides",
+  "interactions": "Other nephrotoxins and ototoxins (aminoglycosides, amphotericin, loop diuretics) — increased nephro/ototoxicity risk",
+  "monitoring": "Renal function and fluid balance closely; therapeutic drug monitoring (AUC-guided preferred where available; trough-based monitoring per local policy). Monitor for infusion reactions and hearing when prolonged therapy",
+  "pregnancy": "Use if essential; seek specialist/obstetric advice",
+  "sideEffects": "Nephrotoxicity, ototoxicity (rare), infusion-related reactions including \"Red man\" syndrome if infused too rapidly",
+  "clinicalPearls": "Prefer AUC-guided TDM when available (reduces nephrotoxicity risk). Infuse over ≥60 minutes (longer for higher doses) to reduce infusion reactions; premedicate/slow infusion if prior reactions. Adjust dose for renal impairment and use local microbiology/ID guidance for target exposures.",
+  "renalDoseAdjustments": "Initial maintenance: eGFR ≥50 mL/min every 12 h; 20–49 mL/min every 24 h; <20 mL/min every 48 h. Modify according to AUC/trough monitoring.",
+  "therapeuticDrugMonitoring": "Target AUC/MIC 400–600 (or trough 15–20 mg/L if AUC monitoring unavailable). Take pre-dose level before 4th dose or sooner in renal impairment.",
+  "antimicrobialStewardship": "Review MRSA screen and cultures at 48 h. Step down to oral linezolid/doxycycline if appropriate once stable and organism susceptible.",
+  "indication": "Serious Gram-positive infections including MRSA, endocarditis, bone and joint infections; oral vancomycin for C. difficile colitis"
+}

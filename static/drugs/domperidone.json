@@ -1,0 +1,14 @@
+{
+  "name": "Domperidone",
+  "class": "Antiemetic (Dopamine antagonist)",
+  "mechanism": "Selective D2 receptor antagonist at CTZ, prokinetic effect on upper GI tract",
+  "dosing": "Adults: 10mg TDS (maximum 30 mg/day) before meals for up to 7 days (MHRA restriction). Not licensed for children <12 years or weight <35 kg",
+  "contraindications": "Known cardiac conduction disorders, significant ventricular arrhythmia, moderate–severe hepatic impairment, prolactinoma, congenital or acquired QT prolongation",
+  "interactions": "CYP3A4 inhibitors (↑ levels), other QT-prolonging drugs, anticholinergics",
+  "monitoring": "Consider ECG in patients with cardiac risk factors or on concomitant QT-prolonging drugs. Check hepatic function if prolonged use. Monitor for extrapyramidal signs and signs of hyperprolactinaemia if used longer than recommended",
+  "pregnancy": "Use only if essential and after specialist/UKTIS advice — limited safety data",
+  "sideEffects": "QT prolongation and rare serious arrhythmias, galactorrhoea, gynaecomastia, extrapyramidal effects (rare)",
+  "pharmacokinetics": "Poor oral bioavailability (~15%), Half-life: 7-9h, hepatic metabolism",
+  "clinicalPearls": "MHRA guidance: restrict use to short-term symptomatic treatment (max 7 days). Maximum 30 mg/day. Contraindicated under 12 years or <35 kg. Avoid combinations with other QT-prolonging drugs and strong CYP3A4 inhibitors; consider alternatives in cardiac risk",
+  "indication": "Nausea and vomiting (short-term use only), selected gastroparesis after specialist advice"
+}

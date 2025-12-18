@@ -1,0 +1,14 @@
+{
+  "name": "Amitriptyline",
+  "class": "Tricyclic antidepressant (TCA)",
+  "mechanism": "Inhibits serotonin and noradrenaline reuptake; antagonises muscarinic, histamine H₁, and α₁-adrenergic receptors",
+  "dosing": "Depression: 25–75 mg nocte, titrate to max 150 mg. Neuropathic pain: 10–25 mg nocte (up to 75 mg).",
+  "contraindications": "Recent MI, arrhythmias, mania, severe liver disease, concurrent MAOI use",
+  "interactions": "Alcohol (↑ sedation), anticholinergics, QT-prolonging drugs, serotonergic agents",
+  "monitoring": "ECG (QTc > 450 ms = caution), suicide risk (esp < 25 years), anticholinergic effects",
+  "pregnancy": "Use with caution – neonatal withdrawal possible",
+  "sideEffects": "Sedation, dry mouth, constipation, urinary retention, orthostatic hypotension, QT prolongation, arrhythmia in overdose",
+  "pharmacokinetics": "Hepatic metabolism (CYP2D6); t½ ≈ 15 h",
+  "clinicalPearls": "Start low and go slow. Cardiotoxic in overdose – dispense small quantities. Avoid in combination with SSRIs or tramadol (serotonin syndrome).",
+  "indication": "Depression, neuropathic pain, migraine prophylaxis, nocturnal enuresis"
+}

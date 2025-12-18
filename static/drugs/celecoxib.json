@@ -1,0 +1,14 @@
+{
+  "name": "Celecoxib",
+  "class": "COX-2 selective NSAID",
+  "mechanism": "Selective inhibition of cyclooxygenase-2 enzyme, reducing prostaglandin synthesis",
+  "dosing": "200mg once daily or 100mg BD depending on indication",
+  "contraindications": "Established cardiovascular disease (caution), active peptic ulcer disease, severe renal impairment",
+  "interactions": "Warfarin (↑ bleeding), ACEi/ARBs (↓ efficacy), lithium (↑ levels)",
+  "monitoring": "Renal function, BP, signs of GI bleeding",
+  "pregnancy": "Avoid in late pregnancy (risk of premature closure of ductus arteriosus)",
+  "sideEffects": "GI upset, increased cardiovascular risk, renal impairment, hypertension",
+  "pharmacokinetics": "Oral absorption, hepatic metabolism CYP2C9, half-life ~11h",
+  "clinicalPearls": "Lower GI risk than non-selective NSAIDs but may increase CV risk. Use lowest effective dose for the shortest duration",
+  "indication": "Osteoarthritis, acute pain where NSAID indicated and GI risk a concern"
+}

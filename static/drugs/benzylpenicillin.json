@@ -1,0 +1,14 @@
+{
+  "name": "Benzylpenicillin",
+  "class": "Penicillins, narrow-spectrum",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "Adult: 0.6-2.4g QDS IV/IM. Meningitis: 2.4g 4-hourly. Severe infections: up to 14.4g/day",
+  "contraindications": "Penicillin allergy, previous severe allergic reaction",
+  "interactions": "Probenecid (↑ levels), methotrexate (↑ toxicity), oral contraceptives (↓ efficacy)",
+  "monitoring": "Signs of infection resolution, allergic reactions, renal function if high dose",
+  "pregnancy": "Generally considered compatible in pregnancy for indicated infections; consult local guidance or UKTIS for detailed advice",
+  "sideEffects": "Allergic reactions (rash to anaphylaxis), diarrhea, injection site reactions",
+  "pharmacokinetics": "Good tissue penetration. t½ 30min. Mainly renal excretion",
+  "clinicalPearls": "First-line for streptococcal infections. Give IV for serious infections",
+  "indication": "Meningitis, cellulitis, pneumonia, endocarditis, necrotizing fasciitis"
+}

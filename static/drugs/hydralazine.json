@@ -1,0 +1,14 @@
+{
+  "name": "Hydralazine",
+  "class": "Vasodilator (direct arteriolar dilator)",
+  "mechanism": "Direct relaxation of arteriolar smooth muscle reducing afterload",
+  "dosing": "Start 25mg BD/TDS; titrate as needed (usual 50-200mg/day in divided doses)",
+  "contraindications": "Coronary artery disease, mitral valve rheumatic disease (use with caution), severe tachycardia",
+  "interactions": "Other antihypertensives (additive hypotension), MAOIs (sympathomimetic interactions)",
+  "monitoring": "BP, HR, signs of lupus-like syndrome (long-term), renal function",
+  "pregnancy": "Can be used in pregnancy for severe hypertension under specialist guidance",
+  "sideEffects": "Tachycardia, fluid retention, headache, flushing, lupus-like syndrome with long-term use",
+  "pharmacokinetics": "Hepatic acetylation (slow vs fast acetylators affect response and side effects)",
+  "clinicalPearls": "Often used in combination with a β-blocker and diuretic to counter reflex tachycardia; consider in pregnancy with severe hypertension under guidance",
+  "indication": "Severe hypertension (including in pregnancy under specialist care), refractory hypertension"
+}

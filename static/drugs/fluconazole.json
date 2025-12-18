@@ -1,0 +1,14 @@
+{
+  "name": "Fluconazole",
+  "class": "Triazole antifungal",
+  "mechanism": "Inhibits fungal cytochrome P450 enzyme 14α-demethylase, disrupting ergosterol synthesis",
+  "dosing": "Vaginal candidiasis: 150mg single dose. Oral candidiasis: 50mg daily for 7-14 days. Systemic: up to 400mg daily depending on indication",
+  "contraindications": "Hypersensitivity to azoles, concurrent terfenadine/astemizole, significant hepatic impairment without specialist advice",
+  "interactions": "Warfarin (↑ INR), phenytoin (↑ levels), rifampicin (↓ fluconazole levels), many CYP3A4 substrates/inhibitors",
+  "monitoring": "LFTs with prolonged or high-dose therapy, signs of hepatotoxicity, review drug interactions",
+  "pregnancy": "Avoid high or prolonged doses in pregnancy due to a malformation signal. A single 150mg dose for vaginal candidiasis is unlikely to increase risk but should be used only if clearly indicated — follow UKTIS guidance",
+  "sideEffects": "GI upset, headache, skin rashes, hepatotoxicity (rare), QT prolongation",
+  "pharmacokinetics": "Excellent oral bioavailability (~90%), CSF penetration, renal excretion",
+  "clinicalPearls": "Single 150mg dose appropriate for uncomplicated vulvovaginal candidiasis; avoid prolonged or high-dose therapy in pregnancy. For systemic infections, specialist guidance and monitoring required",
+  "indication": "Candidiasis (vaginal, oral, systemic), cryptococcal meningitis, fungal prophylaxis"
+}

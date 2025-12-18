@@ -1,0 +1,14 @@
+{
+  "name": "Ciprofloxacin",
+  "class": "Fluoroquinolone antibiotic",
+  "mechanism": "Inhibits bacterial DNA gyrase and topoisomerase IV, preventing DNA replication",
+  "dosing": "Typical: 500 mg BD (UTI 250–500 mg BD 3 days; pyelonephritis 500 mg BD 7 days). Adjust in renal impairment.",
+  "contraindications": "Pregnancy, breastfeeding, children (<18 years – arthropathy risk), previous quinolone tendon injury",
+  "interactions": "Warfarin (↑ INR), theophylline (↑ toxicity), antacids / iron (↓ absorption), QT-prolonging agents",
+  "monitoring": "Tendon pain, CNS effects, QT interval, renal function",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Tendon rupture, neuropathy, QT prolongation, hypoglycaemia, CNS effects, aortic aneurysm risk (MHRA 2024)",
+  "pharmacokinetics": "Oral ≈ 70 % bioavailable; renal ± hepatic excretion; t½ ≈ 4 h",
+  "clinicalPearls": "Reserve for resistant infections; avoid in patients with history of tendon disorders or aortic aneurysm. Discontinue immediately if tendon pain, neuropathy, or mental disturbance.",
+  "indication": "Complicated UTI, severe GI/respiratory infections, Pseudomonal infections (per microbiology advice)"
+}

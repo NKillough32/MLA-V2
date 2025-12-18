@@ -1,0 +1,14 @@
+{
+  "name": "Zopiclone",
+  "class": "Z-drugs (Hypnotics)",
+  "mechanism": "Cyclopyrrolone - acts on GABA-A receptors (benzodiazepine site)",
+  "dosing": "7.5mg at bedtime (3.75mg in elderly/hepatic impairment). Maximum 2-4 weeks",
+  "contraindications": "Myasthenia gravis, severe respiratory failure, sleep apnoea, severe hepatic impairment",
+  "interactions": "CNS depressants (↑ sedation), CYP3A4 inhibitors (↑ levels), alcohol",
+  "monitoring": "Dependence, daytime drowsiness, cognitive impairment",
+  "pregnancy": "Avoid - neonatal withdrawal, floppy infant syndrome",
+  "sideEffects": "Metallic taste (very common), drowsiness, dizziness, dependence, withdrawal, amnesia, falls (elderly)",
+  "pharmacokinetics": "Rapid absorption, onset 30min, half-life 5h",
+  "clinicalPearls": "Shorter course better than benzodiazepines but still addictive. Bitter metallic taste very common. Taper to stop after >2 weeks. Review regularly - CBT-I more effective long-term",
+  "indication": "Short-term insomnia (2-4 weeks max)"
+}

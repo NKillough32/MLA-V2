@@ -1,0 +1,14 @@
+{
+  "name": "Pregabalin",
+  "class": "Gabapentinoids",
+  "mechanism": "Binds to the α2δ subunit of voltage-gated calcium channels, reducing excitatory neurotransmitter release",
+  "dosing": "Neuropathic pain: Start 75 mg twice daily, may increase to 150 mg twice daily after 1 week; typical range 150–300 mg twice daily. Epilepsy: 150–600 mg daily in divided doses. Renal dose adjustment required—use eGFR-based dosing (consult SmPC).",
+  "contraindications": "Hypersensitivity to pregabalin",
+  "interactions": "Additive CNS depression with opioids, benzodiazepines and alcohol; may increase dizziness/sedation when co-prescribed with other sedating agents",
+  "monitoring": "Renal function (baseline and periodically), weight, signs of misuse or dependence, mood/behaviour (suicidal ideation), respiratory drive when used with opioids",
+  "pregnancy": "Limited data—use in pregnancy only if clearly needed; discuss with specialist and consult UKTIS for detailed advice",
+  "sideEffects": "Dizziness, somnolence, peripheral oedema, weight gain, blurred vision, ataxia, mood changes",
+  "pharmacokinetics": "Oral bioavailability >90%, predominantly renally excreted unchanged; half-life ~6 hours",
+  "clinicalPearls": "Class C controlled drug in the UK (special prescribing considerations). Warn patients about driving and alcohol. Taper gradually when discontinuing to reduce withdrawal symptoms. Use lowest effective dose in the elderly and those with renal impairment.",
+  "indication": "Neuropathic pain (diabetic neuropathy, postherpetic neuralgia), adjunctive therapy for partial seizures, generalized anxiety disorder (licensed in some countries)"
+}

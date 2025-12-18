@@ -1,0 +1,14 @@
+{
+  "name": "Thiopental (Thiopentone)",
+  "class": "Anaesthetics, general (Barbiturate)",
+  "mechanism": "GABA-A receptor agonist - rapid onset general anaesthesia",
+  "dosing": "Induction: 3-5mg/kg IV. Status epilepticus: loading dose then infusion",
+  "contraindications": "Porphyria, airway obstruction, severe cardiovascular disease",
+  "interactions": "CNS depressants (↑ effects), vasopressors",
+  "monitoring": "Anaesthetic depth, BP (hypotension common), respiratory function, extravasation (causes tissue necrosis)",
+  "pregnancy": "Use only for emergency (e.g., status epilepticus)",
+  "sideEffects": "Hypotension, respiratory depression, laryngospasm, tissue necrosis if extravasated",
+  "pharmacokinetics": "IV only, very rapid onset (30 sec), short duration (5-10min), hepatic metabolism",
+  "clinicalPearls": "Rapid sequence induction agent (less used now - propofol preferred). Still used for status epilepticus refractory to other treatments. Severe hypotension common. Extravasation causes necrosis - ensure good IV access. Triggers porphyria",
+  "indication": "Anaesthesia induction (rarely used), refractory status epilepticus, raised ICP reduction"
+}

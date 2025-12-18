@@ -1,0 +1,14 @@
+{
+  "name": "Cefalexin",
+  "class": "Cephalosporins and carbapenems",
+  "mechanism": "Inhibits bacterial cell wall synthesis by binding to penicillin-binding proteins",
+  "dosing": "Adults: 250-500mg QDS. Severe infections: 1-1.5g QDS. Children: 25mg/kg BD (max 1g BD)",
+  "contraindications": "Cephalosporin hypersensitivity. Caution if penicillin allergy (cross-reactivity 1-3%)",
+  "interactions": "Probenecid (↑ levels), warfarin (may ↑ INR), metformin (monitor)",
+  "monitoring": "Signs of allergic reaction, C.difficile-associated diarrhoea, renal function",
+  "pregnancy": "Safe - no increased risk of congenital abnormalities",
+  "sideEffects": "GI upset, diarrhoea, allergic reactions, CDAD, transient rise in LFTs",
+  "pharmacokinetics": "Well absorbed orally, Half-life: 1h, mainly renal excretion",
+  "clinicalPearls": "Good oral bioavailability. First-line for cellulitis in UK. Take with food if GI upset",
+  "indication": "Skin/soft tissue infections, UTI, respiratory tract infections, prophylaxis"
+}

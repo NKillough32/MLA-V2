@@ -1,0 +1,14 @@
+{
+  "name": "Carbamazepine",
+  "class": "Antiepileptic drug",
+  "mechanism": "Blocks voltage-gated sodium channels, stabilizes neuronal membranes",
+  "dosing": "Start 100-200mg BD, increase slowly to 800-1200mg daily in divided doses",
+  "contraindications": "AV block, porphyria, bone marrow depression",
+  "interactions": "Warfarin (↓ effect), contraceptives (↓ efficacy), numerous CYP450 interactions",
+  "monitoring": "FBC, LFTs, sodium levels, carbamazepine levels (4-12mg/L)",
+  "pregnancy": "Teratogenic - folate supplementation recommended; seek UKTIS/specialist advice. Women of childbearing potential: folic acid 5 mg daily",
+  "sideEffects": "Diplopia, ataxia, hyponatraemia, blood dyscrasias, Stevens-Johnson syndrome",
+  "pharmacokinetics": "Induces own metabolism, half-life decreases with time",
+  "clinicalPearls": "Start low, go slow. Monitor for hyponatraemia. Screen for HLA-B*1502 in people of Asian ancestry where relevant prior to initiation. Many drug interactions",
+  "indication": "Epilepsy, trigeminal neuralgia, bipolar disorder (second-line)"
+}

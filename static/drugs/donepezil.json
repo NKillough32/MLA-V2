@@ -1,0 +1,14 @@
+{
+  "name": "Donepezil",
+  "class": "Acetylcholinesterase inhibitors",
+  "mechanism": "Reversible acetylcholinesterase inhibitor - increases acetylcholine in brain",
+  "dosing": "Start 5mg OD at night, increase to 10mg after 4-6 weeks if tolerated",
+  "contraindications": "Sick sinus syndrome, supraventricular conduction abnormalities",
+  "interactions": "Beta-blockers (↑ bradycardia), anticholinergics (antagonism), NSAIDs (↑ GI bleeding)",
+  "monitoring": "Cognitive function, weight, behavioural changes, HR, GI side effects",
+  "pregnancy": "Avoid - not indicated",
+  "sideEffects": "Nausea, diarrhoea, insomnia, muscle cramps, bradycardia, syncope, vivid dreams",
+  "pharmacokinetics": "Oral, long half-life (70h), hepatic metabolism",
+  "clinicalPearls": "Modest benefit in Alzheimer\\",
+  "indication": "Mild-moderate Alzheimer\\"
+}

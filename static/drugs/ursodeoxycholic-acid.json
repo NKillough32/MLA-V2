@@ -1,0 +1,12 @@
+{
+  "name": "Ursodeoxycholic acid (UDCA)",
+  "class": "Bile acid",
+  "mechanism": "Decreases cholesterol absorption and bile toxicity",
+  "dosing": "10-15mg/kg daily divided",
+  "contraindications": "Obstructive bile duct disease without decompression",
+  "monitoring": "LFTs, response",
+  "pregnancy": "Use if indicated",
+  "sideEffects": "Diarrhoea",
+  "clinicalPearls": "Used in cholestatic liver disease and gallstone dissolution in select cases",
+  "indication": "Primary biliary cholangitis, cholestasis"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Goserelin",
+  "class": "Hormone antagonists - GnRH agonist",
+  "mechanism": "GnRH agonist - initially stimulates then suppresses gonadotrophin release, reducing sex hormones",
+  "dosing": "SC implant: 3.6mg monthly or 10.8mg every 3 months",
+  "contraindications": "Pregnancy, undiagnosed vaginal bleeding",
+  "interactions": "QT-prolonging drugs (caution)",
+  "monitoring": "PSA (prostate cancer), bone density (long-term use), QTc, testosterone/oestrogen levels",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Tumour flare (first 2 weeks - give antiandrogen cover in prostate cancer), hot flushes, decreased libido, erectile dysfunction, osteoporosis, mood changes, QT prolongation",
+  "pharmacokinetics": "SC depot implant, slow release over 1-3 months",
+  "clinicalPearls": "Medical castration. Initial flare can worsen symptoms - co-prescribe anti-androgen for first 2-3 weeks in prostate cancer. Causes menopausal symptoms. Long-term use → osteoporosis - monitor bone density. Reversible after stopping but may take months",
+  "indication": "Prostate cancer, breast cancer, endometriosis, endometrial thinning before surgery, IVF"
+}

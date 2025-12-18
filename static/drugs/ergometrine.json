@@ -1,0 +1,13 @@
+{
+  "name": "Ergometrine (ergonovine)",
+  "class": "Ergot alkaloid uterotonic",
+  "mechanism": "Stimulates uterine smooth muscle causing sustained contraction",
+  "dosing": "IM/IV bolus for postpartum haemorrhage as per protocol; IV should be given slowly with monitoring",
+  "contraindications": "Hypertension, pre-eclampsia, cardiac disease, sepsis, pregnancy for labour augmentation",
+  "interactions": "Other vasoconstrictors, macrolides (may increase levels)",
+  "monitoring": "BP, uterine tone, signs of ischemia",
+  "pregnancy": "Used postpartum for PPH; contraindicated for induction of labour in hypertensive disease",
+  "sideEffects": "Hypertension, coronary vasospasm (rare), nausea",
+  "clinicalPearls": "Use with caution in cardiac disease; often second-line or adjunct to oxytocin",
+  "indication": "Management of postpartum haemorrhage"
+}

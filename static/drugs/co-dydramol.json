@@ -1,0 +1,14 @@
+{
+  "name": "Co-dydramol (Dihydrocodeine + Paracetamol)",
+  "class": "Compound analgesic (opioid + non-opioid)",
+  "mechanism": "Dihydrocodeine 10mg + paracetamol 500mg per tablet - combined analgesic effect",
+  "dosing": "1-2 tablets every 4-6 hours. Max 8 tablets daily (4g paracetamol)",
+  "contraindications": "Respiratory depression, acute alcoholism, head injury, raised ICP, paralytic ileus",
+  "interactions": "CNS depressants, MAOIs, warfarin (paracetamol component)",
+  "monitoring": "Pain relief, respiratory rate, constipation, dependence risk",
+  "pregnancy": "Avoid regular use - neonatal withdrawal",
+  "sideEffects": "Constipation, nausea, drowsiness, dependence, respiratory depression",
+  "pharmacokinetics": "Oral absorption, hepatic metabolism, 4-6h duration",
+  "clinicalPearls": "Common step-up from co-codamol. Risk of dependence. Prescribe laxatives. Max 4g paracetamol daily from all sources",
+  "indication": "Moderate pain not controlled by paracetamol or NSAIDs alone"
+}

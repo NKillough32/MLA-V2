@@ -1,0 +1,14 @@
+{
+  "name": "Risedronate",
+  "class": "Bisphosphonates",
+  "mechanism": "Inhibits osteoclast activity, reducing bone resorption",
+  "dosing": "Osteoporosis: 35mg weekly or 150mg monthly",
+  "contraindications": "Hypocalcaemia, severe renal impairment (eGFR <30)",
+  "interactions": "Calcium/antacids (↓ absorption), NSAIDs (↑ GI side effects)",
+  "monitoring": "Calcium, vitamin D, renal function, BMD, jaw health",
+  "pregnancy": "Avoid",
+  "sideEffects": "GI upset, oesophagitis, headache, musculoskeletal pain, atypical fractures (rare), ONJ (rare)",
+  "pharmacokinetics": "Oral, poor absorption, accumulates in bone",
+  "clinicalPearls": "Take 30min before food with water only. Sit upright 30min. Monthly dosing may improve adherence. Similar efficacy to alendronate",
+  "indication": "Osteoporosis, Paget\\"
+}

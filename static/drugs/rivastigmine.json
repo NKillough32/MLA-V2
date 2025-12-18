@@ -1,0 +1,14 @@
+{
+  "name": "Rivastigmine",
+  "class": "Acetylcholinesterase inhibitors",
+  "mechanism": "Reversible cholinesterase inhibitor (both acetylcholinesterase and butyrylcholinesterase)",
+  "dosing": "Oral: start 1.5mg BD, increase gradually to 3-6mg BD. Transdermal patch: 4.6mg/24h initially",
+  "contraindications": "Hypersensitivity",
+  "interactions": "As donepezil",
+  "monitoring": "As donepezil",
+  "pregnancy": "Avoid",
+  "sideEffects": "Nausea, vomiting, diarrhoea, anorexia, weight loss, dizziness, headache. Patch: skin reactions",
+  "pharmacokinetics": "Oral or transdermal, short half-life (1.5h)",
+  "clinicalPearls": "Patch formulation reduces GI side effects and improves compliance. Useful in Parkinson\\",
+  "indication": "Mild-moderate Alzheimer\\"
+}

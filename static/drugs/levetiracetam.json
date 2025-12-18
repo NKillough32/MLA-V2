@@ -1,0 +1,14 @@
+{
+  "name": "Levetiracetam",
+  "class": "Antiepileptic",
+  "mechanism": "Binds to synaptic vesicle protein SV2A, modulating neurotransmitter release",
+  "dosing": "Adults: 500-1000mg BD (may increase to 3000mg/day). IV formulations available for acute seizures",
+  "contraindications": "Hypersensitivity to levetiracetam",
+  "interactions": "Minimal drug interactions (advantageous in polypharmacy)",
+  "monitoring": "Renal dose adjustments (check CrCl), mood/behaviour for irritability",
+  "pregnancy": "Use with caution; folate recommended pre-conception",
+  "sideEffects": "Somnolence, dizziness, behavioural changes, irritability, rarely psychosis",
+  "pharmacokinetics": "Renal excretion primarily unchanged; half-life ~6-8h (longer in elderly)",
+  "clinicalPearls": "Favourable interaction profile; widely used for acute and chronic seizure control",
+  "indication": "Focal and generalized seizures, status epilepticus adjunct"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Docusate Sodium",
+  "class": "Laxatives, stimulant and stool softener",
+  "mechanism": "Stimulant + stool softener - reduces surface tension, stimulates peristalsis",
+  "dosing": "Oral: 100-200mg TDS. Rectal: 120mg enema",
+  "contraindications": "Bowel obstruction",
+  "interactions": "Liquid paraffin (↑ absorption - avoid)",
+  "monitoring": "Bowel frequency, abdominal cramps",
+  "pregnancy": "Generally safe",
+  "sideEffects": "Abdominal cramps, diarrhoea, nausea",
+  "pharmacokinetics": "Oral/rectal, onset 1-3 days (oral), 20min (rectal)",
+  "clinicalPearls": "Combined stimulant and softener. Useful in opioid-induced constipation. Rectal preparation good for rapid relief. Less effective than senna alone as stimulant",
+  "indication": "Constipation (especially with hard stools), opioid-induced constipation"
+}

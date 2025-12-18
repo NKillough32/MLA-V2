@@ -1,0 +1,13 @@
+{
+  "name": "Alprostadil (Prostaglandin E1)",
+  "mechanism": "Prostaglandin E1 - maintains ductus arteriosus patency (neonates), causes vasodilation (erectile dysfunction)",
+  "dosing": "PDA maintenance: 5-20 nanograms/kg/min IV. Erectile dysfunction: intracavernosal 2.5-20mcg or urethral 125-1000mcg",
+  "contraindications": "Conditions where sexual activity inadvisable, anatomical penile deformities, predisposition to priapism",
+  "interactions": "Antihypertensives (↑ hypotension)",
+  "monitoring": "Neonates: respiratory function, BP, temp. Erectile: priapism, penile fibrosis",
+  "pregnancy": "Not applicable (used in neonates or male erectile dysfunction)",
+  "sideEffects": "Neonates: apnoea, fever, seizures, flushing. Erectile: penile pain, priapism, fibrosis, urethral bleeding",
+  "pharmacokinetics": "IV infusion (neonates) or local (intracavernosal/urethral)",
+  "clinicalPearls": "Maintains ductus arteriosus patency in duct-dependent congenital heart disease until surgery. For erectile dysfunction: intracavernosal injection more effective than urethral. Warn about priapism (>4h - emergency). Can cause penile fibrosis with repeated use",
+  "indication": "Maintain patent ductus arteriosus (neonates), erectile dysfunction"
+}

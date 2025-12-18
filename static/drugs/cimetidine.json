@@ -1,0 +1,14 @@
+{
+  "name": "Cimetidine",
+  "class": "H2-receptor antagonists",
+  "mechanism": "Histamine H2 receptor antagonist - reduces gastric acid secretion",
+  "dosing": "Peptic ulcer: 400mg BD or 800mg nocte. Reflux: 400mg QDS",
+  "contraindications": "Hypersensitivity",
+  "interactions": "Multiple - inhibits CYP450. ↑ warfarin, phenytoin, theophylline, carbamazepine levels. ↓ ketoconazole absorption",
+  "monitoring": "Symptom control, drug interactions",
+  "pregnancy": "Use ranitidine in preference",
+  "sideEffects": "Diarrhoea, dizziness, rash, gynaecomastia, confusion (elderly), impotence",
+  "pharmacokinetics": "Oral, renal excretion",
+  "clinicalPearls": "Less commonly used than ranitidine due to drug interactions. Can cause confusion in elderly. Gynaecomastia due to antiandrogenic effects. PPIs now preferred",
+  "indication": "Peptic ulcer disease, GORD, dyspepsia (rarely used now - PPIs preferred)"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Efavirenz",
+  "class": "Antiviral drugs - Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
+  "mechanism": "Inhibits HIV-1 reverse transcriptase",
+  "dosing": "600mg OD at bedtime (on empty stomach)",
+  "contraindications": "Pregnancy (1st trimester - teratogenic), severe hepatic impairment",
+  "interactions": "Multiple CYP450 interactions. ↓ levels of many drugs including contraceptives, warfarin, statins",
+  "monitoring": "Viral load, CD4 count, LFTs, psychiatric symptoms, lipids",
+  "pregnancy": "Avoid in 1st trimester (neural tube defects). Barrier contraception essential in women of childbearing age",
+  "sideEffects": "CNS effects (vivid dreams, dizziness, confusion - usually resolve after 2-4 weeks), rash, psychiatric symptoms, hepatotoxicity, teratogenic",
+  "pharmacokinetics": "Oral, take at bedtime to reduce CNS side effects, hepatic metabolism, long half-life",
+  "clinicalPearls": "Take at bedtime to minimize CNS side effects (usually transient). Neuropsychiatric effects common initially. Many drug interactions - check before prescribing anything else. False positive cannabis tests. Less commonly used now (newer agents better tolerated)",
+  "indication": "HIV-1 infection (combination therapy)"
+}

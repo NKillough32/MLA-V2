@@ -1,0 +1,13 @@
+{
+  "name": "Lidocaine (systemic)",
+  "class": "Local anaesthetic / antiarrhythmic",
+  "mechanism": "Blocks voltage-gated sodium channels",
+  "dosing": "IV bolus for arrhythmia 1-1.5mg/kg; infusion per protocol. Toxic doses vary",
+  "contraindications": "Severe heart block without pacemaker, severe SA node dysfunction",
+  "interactions": "Other antiarrhythmics",
+  "monitoring": "ECG, signs of local anaesthetic systemic toxicity (LAST)",
+  "pregnancy": "Use if necessary",
+  "sideEffects": "CNS toxicity (tremor, seizures), cardiac toxicity at high doses",
+  "clinicalPearls": "Monitor levels with infusion; treat LAST with lipid emulsion therapy",
+  "indication": "Arrhythmias (IV), analgesia (topical/infiltration)"
+}

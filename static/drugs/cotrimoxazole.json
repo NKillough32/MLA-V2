@@ -1,0 +1,14 @@
+{
+  "name": "Co-trimoxazole (Trimethoprim + Sulfamethoxazole)",
+  "class": "Trimethoprim",
+  "mechanism": "Synergistic inhibition of folate synthesis - sequential blockade",
+  "dosing": "Standard: 960mg BD. PCP treatment: 120mg/kg/day in 2-4 divided doses for 14-21 days. PCP prophylaxis: 960mg OD or 3x weekly",
+  "contraindications": "Severe renal/hepatic impairment, porphyria, blood dyscrasias, G6PD deficiency",
+  "interactions": "Warfarin (↑ INR), methotrexate (↑ toxicity), phenytoin, sulfonylureas",
+  "monitoring": "FBC, U&Es (risk of hyperkalaemia), LFTs. Watch for rash",
+  "pregnancy": "Avoid - teratogenic (folate antagonist). Contraindicated in 1st trimester",
+  "sideEffects": "Rash (common, can be severe Stevens-Johnson), nausea, hyperkalaemia, bone marrow suppression, crystalluria",
+  "pharmacokinetics": "Oral, renal excretion, dose reduce in renal impairment",
+  "clinicalPearls": "Higher side effect rate than trimethoprim alone. Reserved for PCP (treatment/prophylaxis), nocardia, toxoplasmosis. HIV patients high risk of rash. Ensure good hydration",
+  "indication": "Pneumocystis pneumonia (PCP), toxoplasmosis, nocardia, some resistant UTIs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Chlordiazepoxide",
+  "class": "Benzodiazepines",
+  "mechanism": "Benzodiazepine - enhances GABA-A receptor activity",
+  "dosing": "Anxiety: 5-10mg TDS. Alcohol withdrawal: reducing regime starting 10-50mg QDS",
+  "contraindications": "Respiratory depression, sleep apnoea, severe hepatic impairment, myasthenia gravis",
+  "interactions": "CNS depressants (↑ sedation), CYP3A4 inhibitors",
+  "monitoring": "Sedation, falls risk, dependence, liver function",
+  "pregnancy": "Avoid - neonatal withdrawal, floppy infant syndrome",
+  "sideEffects": "Drowsiness, confusion (elderly), ataxia, dependence, withdrawal, falls, amnesia",
+  "pharmacokinetics": "Oral, long-acting (half-life 24-48h), hepatic metabolism",
+  "clinicalPearls": "Preferred benzodiazepine for alcohol detox (long half-life = smoother withdrawal). Reducing regime over 5-7 days. Accumulates in elderly/liver disease. Pabrinex alongside alcohol withdrawal",
+  "indication": "Alcohol withdrawal, short-term anxiety (rarely used now)"
+}

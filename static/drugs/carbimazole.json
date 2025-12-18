@@ -1,0 +1,14 @@
+{
+  "name": "Carbimazole",
+  "class": "Antithyroid drugs",
+  "mechanism": "Inhibits thyroid peroxidase, blocking iodine organification and thyroid hormone synthesis",
+  "dosing": "Initial: 15-40mg daily in divided doses. Maintenance: 5-15mg daily. Titrate according to TFTs",
+  "contraindications": "Severe blood disorders, severe liver disease, breast-feeding",
+  "interactions": "Warfarin (↓ anticoagulation as thyroid status normalises), digoxin (↓ levels)",
+  "monitoring": "TFTs every 4-6 weeks initially, then 2-3 monthly. FBC (especially first 3 months), LFTs",
+  "pregnancy": "Use propylthiouracil in first trimester - carbimazole teratogenic",
+  "sideEffects": "Rash, arthralgia, agranulocytosis (rare but serious), hepatitis, vasculitis",
+  "pharmacokinetics": "Prodrug converted to methimazole, half-life: 4-6h, crosses placenta",
+  "clinicalPearls": "Monitor for sore throat/fever (agranulocytosis). Switch to propylthiouracil in pregnancy. Block-and-replace regimen option",
+  "indication": "Hyperthyroidism (Graves disease, toxic multinodular goitre), pre-operative preparation"
+}

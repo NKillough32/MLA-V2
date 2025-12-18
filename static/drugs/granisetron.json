@@ -1,0 +1,14 @@
+{
+  "name": "Granisetron",
+  "class": "Antiemetic, 5-HT3 receptor antagonist",
+  "mechanism": "Blocks 5-HT3 receptors in CTZ and GI tract",
+  "dosing": "Chemotherapy: 1-2mg PO/IV before chemo. PONV prevention: 1mg before induction",
+  "contraindications": "Hypersensitivity, QT prolongation",
+  "interactions": "Drugs prolonging QT, SSRIs (serotonin syndrome rare)",
+  "monitoring": "QTc, constipation, serotonin syndrome",
+  "pregnancy": "Use only if essential",
+  "sideEffects": "Headache, constipation, QT prolongation, serotonin syndrome (rare)",
+  "pharmacokinetics": "Oral/IV, hepatic metabolism, half-life 5-9h",
+  "clinicalPearls": "Similar to ondansetron but less commonly used. Very effective for chemotherapy-induced nausea. Often combined with dexamethasone. Watch for constipation",
+  "indication": "Chemotherapy-induced nausea/vomiting, radiotherapy-induced nausea, post-operative nausea"
+}

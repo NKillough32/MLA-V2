@@ -1,0 +1,13 @@
+{
+  "name": "Misoprostol",
+  "class": "Prostaglandin E1 analogue (uterotonic)",
+  "mechanism": "Causes uterine contractions and cervical ripening",
+  "dosing": "Vaginal/oral/rectal/PO forms used in obstetrics per protocol; doses depend on indication",
+  "contraindications": "Previous uterine surgery with caution, hypersensitivity",
+  "interactions": "Other uterotonics (additive)",
+  "monitoring": "Uterine activity, maternal vitals",
+  "pregnancy": "Used in obstetrics as indicated (often for PPH or induction depending on protocol)",
+  "sideEffects": "Fever, diarrhoea, uterine hyperstimulation",
+  "clinicalPearls": "Widely used in global obstetric protocols; dosing and route vary by setting",
+  "indication": "Prevention/treatment of PPH, induction of labour in select contexts"
+}

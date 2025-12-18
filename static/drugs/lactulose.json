@@ -1,0 +1,14 @@
+{
+  "name": "Lactulose",
+  "class": "Osmotic laxative",
+  "mechanism": "Non-absorbable disaccharide, osmotically active, acidifies colon reducing ammonia absorption",
+  "dosing": "Adults: 15ml BD initially, adjust to 1-2 soft stools daily. Hepatic encephalopathy: 30-50ml TDS",
+  "contraindications": "Galactosaemia, intestinal obstruction, fructose intolerance",
+  "interactions": "No significant drug interactions",
+  "monitoring": "Stool frequency/consistency, electrolyte balance, dehydration risk",
+  "pregnancy": "Generally considered compatible in pregnancy; minimal systemic absorption",
+  "sideEffects": "Flatulence, abdominal cramps, nausea, electrolyte disturbance (overdose)",
+  "pharmacokinetics": "Not absorbed in small intestine, fermented by colonic bacteria",
+  "clinicalPearls": "Safe in pregnancy and elderly. Takes 2-3 days for full effect. Sweet taste",
+  "indication": "Constipation, hepatic encephalopathy, preparation for procedures"
+}

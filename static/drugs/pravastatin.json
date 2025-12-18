@@ -1,0 +1,14 @@
+{
+  "name": "Pravastatin",
+  "class": "Statin",
+  "mechanism": "HMG-CoA reductase inhibitor reducing cholesterol synthesis",
+  "dosing": "10-40mg once daily (start 10-20mg and titrate)",
+  "contraindications": "Active liver disease, pregnancy, breastfeeding",
+  "interactions": "Fewer CYP interactions than many statins; caution with fibrates and cyclosporine",
+  "monitoring": "LFTs at baseline and when clinically indicated, CK if muscle symptoms",
+  "pregnancy": "Contraindicated",
+  "sideEffects": "Myalgia, hepatotoxicity (rare), new-onset diabetes (small risk)",
+  "pharmacokinetics": "Hydrophilic statin with less drug interaction via CYP system",
+  "clinicalPearls": "Useful when drug interactions with CYP3A4-metabolised statins are a concern",
+  "indication": "Hyperlipidaemia, cardiovascular risk reduction where appropriate"
+}

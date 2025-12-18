@@ -1,0 +1,14 @@
+{
+  "name": "Felodipine",
+  "class": "Calcium channel blockers",
+  "mechanism": "Dihydropyridine CCB - peripheral vasodilation",
+  "dosing": "Start 5mg OD, increase to 10mg if needed",
+  "contraindications": "Unstable angina, MI within 1 month, significant aortic stenosis, uncontrolled heart failure",
+  "interactions": "CYP3A4 inhibitors (↑ levels), grapefruit juice (↑ levels)",
+  "monitoring": "BP, ankle oedema, HR",
+  "pregnancy": "Avoid unless essential",
+  "sideEffects": "Flushing, headache, ankle oedema, palpitations, dizziness",
+  "pharmacokinetics": "Oral, extensive first-pass, half-life 25h",
+  "clinicalPearls": "Long-acting dihydropyridine. Similar to amlodipine but less commonly used. Once daily dosing. Avoid grapefruit",
+  "indication": "Hypertension, angina prophylaxis"
+}

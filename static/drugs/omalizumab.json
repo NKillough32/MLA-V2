@@ -1,0 +1,14 @@
+{
+  "name": "Omalizumab",
+  "class": "Monoclonal antibodies (Anti-IgE)",
+  "mechanism": "Monoclonal antibody against IgE, reducing allergic inflammation",
+  "dosing": "SC injection every 2-4 weeks. Dose based on body weight and baseline IgE (150-600mg)",
+  "contraindications": "Hypersensitivity, acute asthma/bronchospasm",
+  "interactions": "None significant",
+  "monitoring": "Asthma control, exacerbation frequency, anaphylaxis (observe 2h after first 3 doses)",
+  "pregnancy": "Use only if essential - limited data",
+  "sideEffects": "Injection site reactions, headache, anaphylaxis (rare but can occur hours after injection), parasitic infections (theoretical)",
+  "pharmacokinetics": "SC, slow absorption, half-life ~26 days",
+  "clinicalPearls": "For severe allergic asthma inadequately controlled despite high-dose ICS + LABA. Expensive. Observe for anaphylaxis for 2h after first 3 injections. Effects take 12-16 weeks. Requires high IgE levels and proven allergic component. Also used for chronic spontaneous urticaria",
+  "indication": "Severe persistent allergic asthma, chronic spontaneous urticaria"
+}

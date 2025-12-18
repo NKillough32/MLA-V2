@@ -1,0 +1,14 @@
+{
+  "name": "Hyoscine (Scopolamine)",
+  "class": "Anticholinergic/Antimuscarinic",
+  "mechanism": "Competitive antagonist of muscarinic acetylcholine receptors",
+  "dosing": "Motion sickness: 0.3mg patch behind ear. Palliative care: 0.4-0.6mg SC/IV TDS-QDS",
+  "contraindications": "Narrow-angle glaucoma, prostatic enlargement, myasthenia gravis, intestinal obstruction",
+  "interactions": "Anticholinergic drugs (↑ effects), phenothiazines, tricyclics",
+  "monitoring": "Anticholinergic effects, confusion in elderly, respiratory secretions",
+  "pregnancy": "Generally considered compatible for short-term use in pregnancy for nausea; consult UKTIS for guidance",
+  "sideEffects": "Dry mouth, drowsiness, blurred vision, confusion, hallucinations",
+  "pharmacokinetics": "Crosses blood-brain barrier, Half-life: 4-8h, hepatic metabolism",
+  "clinicalPearls": "Patches for motion sickness. Excellent for respiratory secretions in palliative care",
+  "indication": "Motion sickness, excessive respiratory secretions, smooth muscle spasm"
+}

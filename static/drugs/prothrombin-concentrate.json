@@ -1,0 +1,13 @@
+{
+  "name": "Prothrombin complex concentrate (PCC)",
+  "class": "Coagulation factor concentrate",
+  "mechanism": "Contains factors II, VII, IX, X (and variable protein C/S) to rapidly reverse vitamin K antagonists",
+  "dosing": "Dose based on INR and weight per local guideline",
+  "contraindications": "Known allergy to product components",
+  "interactions": "None specific",
+  "monitoring": "INR, haemostasis",
+  "pregnancy": "Specialist use only",
+  "sideEffects": "Thrombosis risk",
+  "clinicalPearls": "Used for rapid reversal of warfarin in major bleeding or emergency surgery",
+  "indication": "Rapid warfarin reversal"
+}
