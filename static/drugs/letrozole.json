@@ -1,13 +1,14 @@
 {
   "name": "Letrozole",
-  "class": "Aromatase inhibitor",
-  "mechanism": "Inhibits peripheral conversion of androgens to oestrogens",
-  "dosing": "2.5mg once daily",
-  "contraindications": "Pregnancy",
-  "interactions": "CYP interactions",
-  "monitoring": "Bone density, lipids",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Hot flushes, arthralgia, bone density loss",
-  "clinicalPearls": "Used in postmenopausal ER+ breast cancer",
-  "indication": "Breast cancer"
+  "class": "Aromatase inhibitors (non-steroidal)",
+  "mechanism": "Potent non-steroidal aromatase inhibitor - blocks conversion of androgens to oestrogens in peripheral tissues (adipose, muscle, liver). Reduces circulating oestrogen by >95% in postmenopausal women, depriving ER+ breast cancer cells of growth stimulus",
+  "dosing": "Breast cancer: 2.5mg OD continuously for 5 years (extended therapy 10 years increasingly recommended). Can take with/without food. Continue until disease progression or unacceptable toxicity. If switch from tamoxifen, can start immediately after stopping",
+  "contraindications": "Pregnancy, breastfeeding, premenopausal status (unless with ovarian suppression), severe hepatic/renal impairment, osteoporosis (relative). Only for oestrogen receptor-positive breast cancer",
+  "interactions": "Tamoxifen (reduces letrozole efficacy - don't use concurrently). Oestrogen-containing therapies (HRT, COCs) antagonize effect - avoid. Warfarin (possible ↑ INR - monitor). Metabolized by CYP3A4/2A6 but few clinically significant interactions",
+  "monitoring": "Bone mineral density (DEXA): baseline, then every 2 years - treat osteoporosis/osteopenia appropriately (bisphosphonates, denosumab). Lipid profile (may ↑ cholesterol - manage as per guidelines). LFTs at baseline and periodically. Ensure menopausal status confirmed (FSH, oestradiol if uncertain). Monitor for bone pain, fractures, arthralgia, cardiovascular risk factors",
+  "pregnancy": "Contraindicated - teratogenic (causes fetal abnormalities in animals). May cause fetal harm. Premenopausal women must use non-hormonal contraception (barrier methods). Confirm not pregnant before starting. Advise to contact immediately if pregnancy suspected",
+  "sideEffects": "Very common: hot flushes (50%), arthralgia/bone pain (20% - often causes discontinuation), fatigue, night sweats. Common: osteoporosis/fractures (monitor DEXA), headache, nausea, hair thinning, hypercholesterolaemia, vaginal dryness/bleeding, myalgia, oedema. Uncommon: thromboembolic events (lower risk than tamoxifen), rash, dizziness, depression/anxiety, trigger finger. Rare: hepatitis",
+  "pharmacokinetics": "Rapidly and completely absorbed orally. Peak 1h. Half-life: 2 days. Steady state 2-6 weeks. Hepatic metabolism (CYP3A4, 2A6). Renal excretion (90% as metabolites). Food doesn't affect absorption significantly",
+  "clinicalPearls": "More potent than anastrozole (though similar clinical efficacy). First-line adjuvant therapy for postmenopausal ER+ early breast cancer - superior disease-free survival vs tamoxifen. Can be used upfront for 5 years or after 2-3 years tamoxifen (sequential therapy). Extended therapy to 10 years shows additional benefit but ↑ side effects - individualize decision. Arthralgia most common reason for discontinuation - may improve with switching to different AI (anastrozole/exemestane), dose reduction (not standard), or timing adjustment (try night dosing). NSAIDs, gentle exercise may help joint symptoms. Calcium 1200mg + vitamin D 800IU daily essential. Bisphosphonates if osteoporosis or high fracture risk (T-score <-2.5 or previous fragility fracture). Lower thromboembolic risk than tamoxifen but higher bone/joint effects. Also used off-label for ovulation induction in PCOS (alternative to clomiphene). Monitor cardiovascular risk factors as oestrogen-protective effect lost (BP, lipids, smoking cessation). Switching between AIs may help if side effects intolerable",
+  "indication": "Postmenopausal oestrogen receptor-positive breast cancer (adjuvant therapy for early breast cancer, first-line or second-line for advanced breast cancer after tamoxifen). Off-label: ovulation induction in PCOS"
 }

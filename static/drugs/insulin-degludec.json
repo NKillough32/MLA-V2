@@ -1,12 +1,14 @@
 {
   "name": "Insulin degludec",
-  "class": "Ultra-long acting insulin analogue",
-  "mechanism": "Basal insulin replacement with very long duration",
-  "dosing": "Once daily individualized dosing",
-  "contraindications": "Hypoglycaemia",
-  "monitoring": "BG, HbA1c",
-  "pregnancy": "Use with specialist advice",
-  "sideEffects": "Hypoglycaemia",
-  "clinicalPearls": "Very long-acting basal insulin",
-  "indication": "Basal insulin therapy"
+  "class": "Ultra-long-acting insulin analogue (basal insulin)",
+  "mechanism": "Ultra-long-acting basal insulin - forms multi-hexamers in SC tissue creating depot for slow continuous release. Provides stable, flat basal insulin coverage >42 hours. Activates insulin receptors, promotes glucose uptake, suppresses hepatic glucose production",
+  "dosing": "SC once daily, any time (but same time daily). Type 1: typically 0.2-0.4 units/kg/day as basal component (with rapid-acting for meals). Type 2: start 10 units OD or 0.1-0.2 units/kg, titrate by 2 units every 3-4 days based on fasting glucose (target <7mmol/L). Can give with main meal if forget morning dose (flexibility due to ultra-long action)",
+  "contraindications": "Hypoglycaemia. Caution: renal/hepatic impairment (may ↓ requirements), acute illness, increased exercise, elderly (↑ hypo risk)",
+  "interactions": "Oral antidiabetics, ACE inhibitors, MAOIs, octreotide, pramlintide ↑ hypoglycaemia. Corticosteroids, diuretics, sympathomimetics, thyroid hormones, oestrogens, somatropin ↓ effect. Beta-blockers mask hypo symptoms. Alcohol ↑ hypo risk. Pentamidine may cause hypoglycaemia then hyperglycaemia",
+  "monitoring": "Fasting blood glucose (target <7mmol/L; <5.3 in pregnancy). HbA1c every 3-6 months (T1DM target ≤53mmol/mol, T2DM ≤48mmol/mol). Injection sites for lipodystrophy/hypertrophy (rotate). Hypo/hyperglycaemia symptoms. Weight. Renal function annually",
+  "pregnancy": "Safe - can be used in pregnancy. Insulin requirements change: ↓ in 1st trimester, ↑ in 2nd/3rd trimester (may double). Tight control crucial (fasting <5.3, 1h post-meal <7.8, 2h <6.4 mmol/L). Specialist diabetes in pregnancy team essential. May combine with rapid-acting analogues",
+  "sideEffects": "Hypoglycaemia (especially nocturnal - ultra-long action means prolonged hypo possible), weight gain, injection site reactions, lipohypertrophy (rotate sites), peripheral oedema (starting insulin), rarely severe allergic reactions, hypokalaemia (high doses - monitor in DKA treatment)",
+  "pharmacokinetics": "SC: Onset 30-90 min, no pronounced peak (flat profile), duration >42h (allows flexible timing). Ultra-long half-life: ~25h. Steady state in 2-3 days. Forms stable multi-hexamers creating SC depot. Hepatic/renal metabolism. Can miss occasional dose due to ultra-long action (though not recommended)",
+  "clinicalPearls": "Brand: Tresiba. Key advantages: FLEXIBLE timing (can vary by up to 8h between doses without losing efficacy - unique among basal insulins), ultra-flat profile (↓ nocturnal hypo vs glargine), lower dose-to-dose variability. Once-daily only (even high doses). Lower hypoglycaemia risk than other basal insulins (DEVOTE, BEGIN trials). Ideal for patients with unpredictable schedules or frequent nocturnal hypos. More expensive than NPH/glargine - may not be first-line. Clear solution. Cannot mix with other insulins. Rotate injection sites (abdomen, thighs, buttocks). Refrigerate unopened (2-8°C); in-use pen at room temp <8 weeks. Titrate fasting glucose to target (increase 2 units every 3-4 days if fasting >7mmol/L). Available combined with liraglutide (Xultophy) or aspart (Ryzodeg). If switching from other basal insulin, use unit-for-unit conversion initially then titrate",
+  "indication": "Type 1 diabetes (basal insulin in basal-bolus regimen), Type 2 diabetes (basal insulin with oral agents or in basal-bolus regimen), pregnancy-related diabetes with specialist input"
 }

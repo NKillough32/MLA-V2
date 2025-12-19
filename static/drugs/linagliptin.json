@@ -1,12 +1,14 @@
 {
   "name": "Linagliptin",
-  "class": "DPP-4 inhibitor",
-  "mechanism": "Inhibits DPP-4 increasing incretins",
-  "dosing": "5mg once daily",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Renal function (dose adjustment not required for many patients)",
-  "pregnancy": "Avoid",
-  "sideEffects": "Pancreatitis (rare)",
-  "clinicalPearls": "No dose adjustment usually required in renal impairment",
-  "indication": "T2DM"
+  "class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+  "mechanism": "Selectively inhibits DPP-4 enzyme - prolongs active GLP-1 and GIP levels, enhancing glucose-dependent insulin secretion, suppressing glucagon secretion, slowing gastric emptying",
+  "dosing": "T2DM: 5mg OD with/without food. No dose adjustment for renal/hepatic impairment (unique among DPP-4 inhibitors). Can combine with metformin, sulfonylurea, SGLT2i, or insulin. Available with metformin (Jentadueto)",
+  "contraindications": "Hypersensitivity to DPP-4 inhibitors, type 1 diabetes, diabetic ketoacidosis. Caution: history of pancreatitis, heart failure risk factors",
+  "interactions": "CYP3A4/P-gp inducers (rifampicin) may ↓ levels (usually not clinically significant). Insulin/sulfonylureas ↑ hypoglycaemia risk - consider dose reduction. No significant interactions with metformin, warfarin, simvastatin, digoxin",
+  "monitoring": "HbA1c (3-monthly initially, 6-monthly when stable). Renal function (annual or more if CKD - though dose adjustment not needed). LFTs at baseline and if symptoms. Signs/symptoms of pancreatitis (persistent severe abdominal pain). Heart failure symptoms. Hypoglycaemia if combined with sulfonylurea/insulin",
+  "pregnancy": "Avoid - insufficient data. Insulin is preferred for diabetes management in pregnancy. Stop when pregnancy confirmed or planned",
+  "sideEffects": "Common: nasopharyngitis, hypoglycaemia (when combined with sulfonylurea/insulin). Uncommon: pancreatitis (stop immediately if suspected - abdominal pain, vomiting), hypersensitivity reactions (angioedema, urticaria, exfoliative skin conditions), arthralgia. Possible ↑ heart failure risk (post-marketing data - association unclear). Generally well tolerated",
+  "pharmacokinetics": "Rapidly absorbed, peak 1.5h. Long half-life: 100+ hours (allowing OD dosing). Primarily non-renal elimination (85% biliary/faecal, enterohepatic recirculation). Minimal CYP metabolism. This unique pharmacokinetic profile allows use in any stage of renal impairment without dose adjustment",
+  "clinicalPearls": "Key advantage: NO dose adjustment in renal impairment (unlike sitagliptin, saxagliptin) - ideal for CKD patients. Weight neutral - suitable for overweight patients. Low hypoglycaemia risk when used alone or with metformin. Well tolerated with minimal GI side effects. Cardiovascular outcomes: CARMELINA trial showed non-inferiority (neither benefit nor harm vs placebo). Some evidence of anti-fibrotic effects in kidneys (CARMELINA subanalysis). Can be combined with all other oral antidiabetics and insulin. Discontinue if pancreatitis suspected (rare but serious). Heart failure concerns less pronounced than saxagliptin but still counsel about symptoms. Consider as add-on to metformin in patients with CKD stage 3-4 where SGLT2i contraindicated",
+  "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on to metformin, sulfonylurea, SGLT2 inhibitor, or insulin). Particularly suitable in renal impairment"
 }

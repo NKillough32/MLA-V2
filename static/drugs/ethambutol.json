@@ -1,13 +1,14 @@
 {
   "name": "Ethambutol",
-  "class": "Antitubercular",
-  "mechanism": "Inhibits arabinosyl transferase (cell wall synthesis)",
-  "dosing": "Weight-based dosing per TB regimen",
-  "contraindications": "Children unable to report vision changes",
-  "interactions": "None major",
-  "monitoring": "Visual acuity and colour vision",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "Optic neuropathy (dose-related)",
-  "clinicalPearls": "Monitor vision regularly",
-  "indication": "TB"
+  "class": "Antitubercular antibiotic",
+  "mechanism": "Inhibits arabinosyl transferases (embCAB genes), blocking mycobacterial cell wall arabinogalactan synthesis. Bacteriostatic. Prevents emergence of resistance when used with other TB drugs",
+  "dosing": "Standard regimen: <50kg: 800mg daily; 50-74kg: 1.2g daily; ≥75kg: 1.6g daily. Alternative: 30mg/kg 3x/week (DOT). First 2 months only usually (intensive phase), but may continue if resistance suspected. Take as single daily dose. Reduce if renal impairment (eGFR <30: 15-25mg/kg 3x/week)",
+  "contraindications": "Optic neuritis. Children too young to report visual symptoms (relative - use if benefit outweighs risk, usually >5 years). Pre-existing optic neuropathy. Caution: renal impairment (dose adjust), diabetic retinopathy, elderly, cataracts, alcohol excess",
+  "interactions": "Aluminium hydroxide (↓ absorption - separate by 4h). No significant CYP interactions. Rare reports of optic toxicity with other drugs affecting vision",
+  "monitoring": "Visual acuity and colour vision (Ishihara charts - red-green discrimination) at baseline, monthly if dose >15mg/kg/day or therapy >2 months, or if visual symptoms. Immediate ophthalmology if vision changes. Renal function (baseline, periodically - dose adjust). Uric acid (may be elevated). FBC. Culture/sensitivity. Adherence (DOT recommended)",
+  "pregnancy": "Use if needed - benefit usually outweighs risk. Limited evidence of harm but visual development in neonate theoretical concern. WHO/NICE recommend use in pregnancy for TB. Specialist input. Can't easily monitor infant vision",
+  "sideEffects": "Dose-related optic neuropathy (1-2% - loss of visual acuity, red-green colour blindness, central scotomas - STOP IMMEDIATELY, usually reversible if caught early, may be irreversible if continued). Common: arthralgia, hyperuricaemia (usually asymptomatic). Uncommon: peripheral neuropathy, GI upset, rash, pruritus, hepatotoxicity (rare). Rare: anaphylaxis",
+  "pharmacokinetics": "Well absorbed orally (75-80%). Peak 2-4h. Widely distributed but poor CNS penetration. Not significantly metabolized. Half-life: 10-15h (prolonged in renal impairment). 80% excreted unchanged in urine - dose adjustment needed in renal impairment. 20% in faeces",
+  "clinicalPearls": "Part of standard 4-drug TB regimen (RIPE: Rifampicin, Isoniazid, Pyrazinamide, Ethambutol). Used to prevent isoniazid-resistance emerging. Usually first 2 months only, then stop if sensitive TB confirmed. Continue longer if resistance suspected/confirmed. KEY RISK: optic neuropathy - educate patients to report vision changes immediately (blurred vision, colour blindness, blind spots). Check baseline vision with Snellen chart and Ishihara plates. Monthly vision checks if high-dose or >2 months. STOP IMMEDIATELY if vision deteriorates - usually reversible if stopped early, potentially permanent if continued. Higher risk: high dose (>15-25mg/kg), prolonged therapy, renal impairment (accumulation), diabetes, elderly. Cannot use in young children unable to report visual symptoms (unless no alternative). In CNS TB, limited penetration - not ideal. Combination tablets available (Voractiv contains all 4 first-line drugs). DOT recommended to ensure adherence",
+  "indication": "Active tuberculosis (pulmonary and extrapulmonary) as part of standard 4-drug regimen. Used to prevent emergence of resistance to isoniazid"
 }

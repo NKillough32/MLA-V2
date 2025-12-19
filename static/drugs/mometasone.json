@@ -1,12 +1,14 @@
 {
   "name": "Mometasone (inhaled)",
-  "class": "Inhaled corticosteroid",
-  "mechanism": "Anti-inflammatory",
-  "dosing": "Device-specific",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Inhaler technique",
-  "pregnancy": "Use if needed",
-  "sideEffects": "Oral thrush",
-  "clinicalPearls": "Once-daily options exist",
-  "indication": "Asthma"
+  "class": "Inhaled corticosteroid (ICS)",
+  "mechanism": "Potent synthetic corticosteroid - suppresses inflammatory cells, reduces airway hyperresponsiveness, decreases mucus production",
+  "dosing": "Asthma adults: 200-400mcg OD-BD via MDI or DPI. Children 5-12y: 100-200mcg OD-BD. Start at higher end if stepping up, lower end for maintenance. Available as Asmanex (DPI) or Mometasone MDI",
+  "contraindications": "Hypersensitivity to mometasone. Not for acute asthma or status asthmaticus. Caution in active/quiescent TB, fungal infections",
+  "interactions": "CYP3A4 inhibitors (ketoconazole, ritonavir) may ↑ systemic exposure - usually not clinically significant at inhaled doses. Avoid in severe hepatic impairment",
+  "monitoring": "Peak flow/spirometry, symptom control, inhaler technique, growth in children (annual height), signs of oral candidiasis, adrenal suppression with high doses (>800mcg/day)",
+  "pregnancy": "Safe - use if asthma control needed. Poorly controlled asthma poses greater risk than ICS. Prefer beclometasone as most data, but mometasone acceptable",
+  "sideEffects": "Oral candidiasis (rinse mouth after use), hoarse voice, throat irritation, cough. High doses: adrenal suppression (rare), growth retardation in children (monitor), osteoporosis risk with very high prolonged doses",
+  "pharmacokinetics": "Minimal systemic absorption after inhalation (<1%). What is absorbed undergoes extensive first-pass metabolism. Half-life: 5 hours. Long duration allows once-daily dosing",
+  "clinicalPearls": "High potency ICS - equivalent to high-dose beclometasone/budesonide at lower mcg doses. Once-daily dosing possible for maintenance (improves adherence). Rinse and spit after use to prevent candidiasis. Not a reliever - patients need SABA for acute symptoms. DPI requires good inspiratory flow; MDI available for those who can't generate adequate flow. If stepping down from high-dose ICS, reduce by 25-50% every 3 months if stable",
+  "indication": "Asthma (prophylaxis, maintenance therapy), not for acute relief"
 }

@@ -1,11 +1,14 @@
 {
   "name": "Dulaglutide",
-  "class": "GLP-1 receptor agonist",
-  "mechanism": "GLP-1 analogue",
-  "dosing": "Once-weekly SC per product",
-  "contraindications": "MTC/MEN2",
-  "monitoring": "GI tolerance",
-  "sideEffects": "Nausea",
-  "clinicalPearls": "Once-weekly option",
-  "indication": "T2DM"
+  "class": "GLP-1 receptor agonist (incretin mimetic)",
+  "mechanism": "Long-acting GLP-1 receptor agonist - increases glucose-dependent insulin secretion, suppresses glucagon, slows gastric emptying, promotes satiety",
+  "dosing": "T2DM: 0.75mg SC once weekly initially, increase to 1.5mg weekly if needed (max 4.5mg weekly). Pre-filled pen - inject same day each week, any time, with/without food",
+  "contraindications": "Personal/family history of medullary thyroid carcinoma (MTC), Multiple Endocrine Neoplasia syndrome type 2 (MEN2), severe GI disease, diabetic ketoacidosis",
+  "interactions": "Delays gastric emptying - may affect oral medication absorption (take other drugs 1h before injection). Insulin/sulfonylureas (↑ hypoglycaemia risk - reduce doses)",
+  "monitoring": "HbA1c (3-monthly initially), weight, GI tolerance (nausea often transient), renal function, signs of pancreatitis, thyroid nodules. Counsel on medullary thyroid cancer symptoms",
+  "pregnancy": "Avoid - limited data. Stop 2 months before planned pregnancy. Use in pregnancy only if benefit outweighs risk",
+  "sideEffects": "Nausea (very common, usually transient), vomiting, diarrhoea, constipation, abdominal pain, injection site reactions, pancreatitis (rare), potential thyroid C-cell tumours (animal data)",
+  "pharmacokinetics": "Long half-life: 5 days. SC absorption with steady state in 2-4 weeks. Weekly dosing maintains therapeutic levels. Minimal renal elimination",
+  "clinicalPearls": "Once-weekly convenience improves adherence vs daily GLP-1s. Significant weight loss (3-5kg average). Cardiovascular benefits demonstrated in trials. Start with 0.75mg to minimize GI effects. Nausea peaks at 2-3 days, resolves in most within 4-8 weeks. Can be used with basal insulin. Less hypoglycaemia than sulfonylureas",
+  "indication": "Type 2 diabetes mellitus (add-on to metformin or as dual/triple therapy), cardiovascular risk reduction in T2DM"
 }

@@ -1,12 +1,14 @@
 {
   "name": "Ertugliflozin",
-  "class": "SGLT2 inhibitor",
-  "mechanism": "Inhibits SGLT2",
-  "dosing": "5-15mg once daily",
-  "contraindications": "Type 1 diabetes, severe renal impairment",
-  "monitoring": "Renal function",
-  "pregnancy": "Avoid",
-  "sideEffects": "Genital infections",
-  "clinicalPearls": "One of the SGLT2 class; follow SmPC for indications",
-  "indication": "T2DM"
+  "class": "Sodium-glucose co-transporter 2 (SGLT2) inhibitor (gliflozin)",
+  "mechanism": "Selective SGLT2 inhibitor - blocks renal glucose reabsorption in proximal tubule, increases urinary glucose excretion (30-50g/day), reduces blood glucose independent of insulin",
+  "dosing": "T2DM: 5mg OD initially, increase to 15mg OD if tolerated and needed for glycaemic control. Take morning with/without food. eGFR <45: do not initiate (stop if falls below 45). Available with metformin (Segluromet) or sitagliptin (Steglujan)",
+  "contraindications": "Type 1 diabetes, DKA, eGFR persistently <45 ml/min/1.73m², dialysis. Caution: elderly (volume depletion risk), recurrent UTIs, genital infection history, at risk of DKA",
+  "interactions": "Diuretics, ACE inhibitors/ARBs ↑ volume depletion risk. Insulin/sulfonylureas ↑ hypoglycaemia (reduce doses). May ↑ lithium excretion. Interferes with 1,5-AG assay",
+  "monitoring": "eGFR before starting and annually (more if CKD stage 3a/3b). HbA1c 3-monthly. BP. Volume status (especially elderly/on diuretics). Ketones if unwell (DKA risk). Genital/UTI symptoms. Foot checks (Fournier's gangrene risk rare)",
+  "pregnancy": "Avoid - limited data. May affect fetal kidney development. Use insulin for diabetes in pregnancy. Stop when pregnancy planned/confirmed",
+  "sideEffects": "Very common: genital mycotic infections (women 10-15%, men 3-4% - treat with topical antifungal), UTIs. Common: volume depletion (dizziness, postural hypotension especially elderly/on diuretics), hypoglycaemia (with insulin/SU). Rare: DKA (euglycaemic DKA possible - ketones despite normal glucose), Fournier's gangrene (necrotizing fasciitis of perineum - emergency), lower limb amputation (possible ↑ risk), acute kidney injury",
+  "pharmacokinetics": "Well absorbed, peak 1h. Half-life: 17h. Minimal renal excretion unchanged (<2%), mainly metabolized (UGT) and excreted in faeces. Unlike some SGLT2is, doesn't accumulate in renal impairment but less effective",
+  "clinicalPearls": "Newer SGLT2i with similar efficacy to empagliflozin/dapagliflozin. Cardiovascular/renal outcomes data less extensive than empa/dapa. Weight loss 2-3kg average. Modest BP reduction (3-5mmHg). Low intrinsic hypoglycaemia risk. Counsel about genital hygiene, adequate hydration. Stop during acute illness/surgery (DKA risk - especially if insulin dose reduced inappropriately). Sick day rules essential: stop if vomiting/unable to eat, check ketones. Higher genital infection rate than some SGLT2is. Consider if HbA1c inadequate on metformin or GLP-1 agonist. Not currently licensed for heart failure/CKD indications (unlike empa/dapa)",
+  "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on therapy)"
 }

@@ -1,12 +1,14 @@
 {
   "name": "Sodium picosulfate",
-  "class": "Stimulant laxative (prodrug)",
-  "mechanism": "Converted by gut bacteria to active stimulant",
-  "dosing": "Per bowel prep or constipation dosing",
-  "contraindications": "Bowel obstruction",
-  "monitoring": "Electrolytes if significant use",
-  "pregnancy": "Use with caution",
-  "sideEffects": "Abdominal cramp, diarrhoea",
-  "clinicalPearls": "Common in bowel prep formulations",
-  "indication": "Constipation, bowel prep"
+  "class": "Stimulant laxative",
+  "mechanism": "Prodrug activated by colonic bacteria to form active metabolite (bis-(p-hydroxyphenyl)-pyridyl-2-methane - BHPM). Stimulates colonic peristalsis, inhibits water/electrolyte absorption, stimulates colonic mucosa. Onset 6-12h orally, 10-30 min rectally",
+  "dosing": "Constipation: 5-10mg PO at bedtime (start 5mg). Bowel prep (pre-colonoscopy): Picolax sachets - 1 sachet (10mg) at 8am and 6pm day before procedure (each dissolved in 150ml water). Paediatric: 1 month-4 years: 2.5mg; 4-12 years: 2.5-5mg; >12 years: adult dose. Short-term use only",
+  "contraindications": "Intestinal obstruction, ileus, acute abdomen (appendicitis, etc.), inflammatory bowel disease (active), severe dehydration, hereditary fructose intolerance (contains sorbitol in some formulations). Avoid long-term use",
+  "interactions": "Diuretics ↑ hypokalaemia risk. Corticosteroids ↑ hypokalaemia. Cardiac glycosides (digoxin) - hypokalaemia enhances toxicity. Antibiotics may reduce efficacy (destroy activating bacteria)",
+  "monitoring": "Ensure adequate hydration, especially with bowel prep. Electrolytes if prolonged use (hypokalaemia, hyponatraemia). Abuse potential in eating disorders. Frequency of bowel movements. Watch for dependency",
+  "pregnancy": "Limited data but no evidence of harm. Use if needed - dietary/lifestyle measures first-line. Not absorbed systemically in significant amounts. Generally considered safe",
+  "sideEffects": "Common: abdominal cramps, diarrhoea, nausea, dizziness (especially with bowel prep - dehydration). Prolonged use: hypokalaemia, electrolyte imbalance, colonic atony (cathartic colon - loses normal function), dependency. Rare: angioedema, rash",
+  "pharmacokinetics": "Minimal systemic absorption. Prodrug hydrolyzed by colonic bacteria to active BHPM. Onset: 6-12h orally (overnight), 10-30 min rectally. Acts locally in colon. Minimal enterohepatic circulation. Excreted in faeces",
+  "clinicalPearls": "Brand: Dulcolax (tablets), Picolax (bowel prep sachets - contains sodium picosulfate + magnesium citrate). Similar mechanism to bisacodyl. Used short-term for constipation or bowel prep. NOT for chronic constipation - risk of dependency and 'cathartic colon'. First-line: lifestyle (fluid, fibre, exercise), then bulk-forming laxatives, then osmotic laxatives. Stimulants (picosulfate, bisacodyl, senna) are rescue therapy. Bowel prep: Picolax commonly used pre-colonoscopy - warn patients about frequency of loose stools, need to stay near toilet, clear fluids only. Adequate hydration critical during bowel prep (risk of dehydration, electrolyte disturbance, AKI). Split-dose regimen (evening before + morning of) better tolerated than same-day. Avoid long-term: risk of hypokalaemia, colon atony, melanosis coli (benign pigmentation), dependency. In opioid-induced constipation: consider peripherally-acting mu-opioid receptor antagonists (naloxegol) instead. Not absorbed: safe in pregnancy/breastfeeding (though lifestyle/bulk-forming preferred). May take 6-12h - advise to take at bedtime for morning effect",
+  "indication": "Short-term relief of constipation. Bowel preparation before colonoscopy/surgery"
 }

@@ -1,13 +1,14 @@
 {
   "name": "Itraconazole",
   "class": "Triazole antifungal",
-  "mechanism": "Inhibits fungal ergosterol synthesis",
-  "dosing": "Oral dosing varies by indication",
-  "contraindications": "Coadministration with certain CYP substrates",
-  "interactions": "Extensive CYP interactions",
-  "monitoring": "LFTs",
-  "pregnancy": "Avoid",
-  "sideEffects": "GI upset, hepatotoxicity",
-  "clinicalPearls": "Used for certain systemic mycoses",
-  "indication": "Systemic fungal infections"
+  "mechanism": "Inhibits fungal cytochrome P450-dependent 14α-lanosterol demethylase, disrupting ergosterol synthesis, leading to altered fungal cell membrane permeability and growth inhibition. Fungistatic (fungicidal at high concentrations)",
+  "dosing": "Aspergillosis: 200mg BD for 2-4 days, then 200mg OD (or BD if severe). Candidiasis oral: 100mg OD for 15 days. Onychomycosis: 200mg OD for 3 months (fingernails), 3-6 months (toenails), or pulse 200mg BD for 1 week/month (2 pulses fingernails, 3 pulses toenails). Take capsules with food (↑ absorption). Liquid on empty stomach",
+  "contraindications": "Congestive heart failure (negative inotrope). Coadministration with CYP3A4 substrates that prolong QT (terfenadine, astemizole, cisapride, pimozide, quinidine). Pregnancy (except life-threatening infections). Severe hepatic impairment",
+  "interactions": "EXTENSIVE CYP3A4 interactions - potent inhibitor. AVOID: simvastatin, lovastatin (rhabdomyolysis), terfenadine, astemizole, cisapride (fatal arrhythmias), ergot alkaloids (ergotism), oral midazolam, triazolam (profound sedation), pimozide, quinidine (QT prolongation). CAUTION: warfarin (↑ INR), digoxin (↑ levels - toxicity), phenytoin, carbamazepine (complex bidirectional), ciclosporin, tacrolimus (↑ levels), ritonavir (complex). Rifampicin ↓ itraconazole levels (avoid)",
+  "monitoring": "LFTs before treatment and monthly if >1 month therapy. Signs of heart failure (ankle swelling, breathlessness - stop if develops). Drug levels if immunosuppressed or not responding (therapeutic trough >0.5mg/L). Potassium, magnesium (QT risk). ECG if cardiac risk factors. Monitor closely for drug interactions",
+  "pregnancy": "Avoid unless life-threatening infection with no alternative. Teratogenic - reports of skeletal/cardiac abnormalities. Women of childbearing potential: use contraception during and 2 months after treatment. Pregnancy test before starting",
+  "sideEffects": "Common: GI upset (nausea, dyspepsia, abdominal pain), headache, dizziness. Uncommon: hepatotoxicity (stop if signs of hepatitis), heart failure (negative inotrope - caution/avoid in cardiac disease), hypokalaemia, peripheral neuropathy (stop if occurs), Stevens-Johnson syndrome (rare). High-dose/prolonged: adrenal suppression (rare)",
+  "pharmacokinetics": "Oral: capsules require gastric acid for absorption (take with food, avoid PPIs/H2RAs or use liquid formulation). Liquid: better absorption, take on empty stomach. Highly protein-bound (99%). Extensively metabolized by CYP3A4 (also inhibits it). Half-life: 20-40h. Accumulates in keratinous tissues (nails, skin). Lipophilic - persists in tissues after stopping",
+  "clinicalPearls": "Broad-spectrum azole effective against Aspergillus, Candida, dermatophytes, dimorphic fungi. Better aspergillosis coverage than fluconazole. EXTENSIVE drug interactions - always check before prescribing. Capsules poorly absorbed without gastric acid - liquid formulation for patients on PPIs/H2RAs or achlorhydria. Persists in nails for months after treatment (allows 'pulse therapy' for onychomycosis). Can cause heart failure - avoid in CHF or LVEF <30%. Monitor LFTs monthly if long-term use. Effective for onychomycosis but terbinafine preferred (fewer interactions, better cure rates). For Aspergillus: alternatives voriconazole (better CNS penetration) or liposomal amphotericin. Drug level monitoring helpful in invasive infections or immunosuppression (target trough >0.5mg/L, ideally 1-2mg/L). Absorption erratic - bioavailability 55% (capsule with food), 100% (oral solution fasting). Avoid grapefruit juice (unpredictable effect)",
+  "indication": "Aspergillosis (not first-line), Candida infections (oral, oesophageal, vulvovaginal), dermatophyte infections (onychomycosis, tinea), sporotrichosis, histoplasmosis, blastomycosis, pityriasis versicolor"
 }

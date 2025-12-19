@@ -1,13 +1,14 @@
 {
   "name": "Canagliflozin",
-  "class": "SGLT2 inhibitor",
-  "mechanism": "Inhibits SGLT2",
-  "dosing": "100-300mg daily",
-  "contraindications": "Type 1 diabetes, severe renal impairment",
-  "interactions": "Diuretics",
-  "monitoring": "Renal function, foot checks (amputation signal in some studies)",
-  "pregnancy": "Avoid",
-  "sideEffects": "Genital infections, volume depletion, rare DKA",
-  "clinicalPearls": "Watch for foot infections/amputation signal in older studies",
-  "indication": "T2DM"
+  "class": "SGLT2 inhibitor (sodium-glucose co-transporter 2 inhibitor, gliflozin)",
+  "mechanism": "Inhibits SGLT2 in proximal renal tubule, reducing glucose reabsorption → glycosuria (~80g/day glucose loss). Lowers HbA1c (~10mmol/mol), modest weight loss (~2-3kg), BP reduction. Cardiovascular/renal benefits: ↓ CV events, heart failure hospitalization, CKD progression (likely via haemodynamic effects, reduced afterload, diuresis, metabolic shift)",
+  "dosing": "T2DM: start 100mg OD before breakfast. May increase to 300mg OD if eGFR >60 and additional control needed. CKD (with/without diabetes): 100mg OD if eGFR ≥20. Adjust/stop if eGFR <20 (diabetes), continue if CKD indication. With UGT inducers (rifampicin, phenytoin, ritonavir): consider 300mg if tolerated",
+  "contraindications": "T1DM (DKA risk), eGFR <20 (if diabetes indication only), severe hepatic impairment, diabetic ketoacidosis. Caution: elderly (volume depletion, falls, amputation risk), recurrent UTIs/genital infections, dehydration risk, heart failure (initiation caution), lower limb amputation history",
+  "interactions": "Diuretics ↑ dehydration/hypotension (use caution, monitor volume status). UGT inducers (rifampicin, phenytoin, phenobarbital, ritonavir) ↓ canagliflozin exposure (may need 300mg dose). Digoxin: monitor levels. Insulin/sulfonylureas: ↑ hypoglycaemia (reduce insulin/SU dose). Lithium: ? altered levels",
+  "monitoring": "Renal function (eGFR at baseline, periodically, before initiation). Foot care (amputation risk - especially if PVD, neuropathy). Signs of DKA (atypical - euglycaemic DKA possible, especially perioperatively/illness). Volume status, BP (especially elderly/diuretics). Genital/UTI symptoms. Weight, HbA1c, lipids. Bone density (? fracture risk)",
+  "pregnancy": "AVOID - limited data, potential renal toxicity to fetus (second/third trimester). Stop if pregnancy detected. Switch to insulin",
+  "sideEffects": "Common: genital mycotic infections (10-15% - thrush, balanitis), UTIs (more in women), polyuria, thirst, volume depletion (dizziness, hypotension), hypoglycaemia (if with insulin/SU). Uncommon: euglycaemic DKA (ketoacidosis despite normal glucose - suspect if unwell, acidotic, ketonuria), lower limb amputation (pooled data showed increased risk - ? causality, foot care essential), AKI (especially with dehydration), fractures (? increased risk), Fournier's gangrene (rare necrotizing fasciitis of perineum - stop immediately, urgent surgery)",
+  "pharmacokinetics": "Well absorbed orally. Peak 1-2h. Protein-bound (99%). Metabolized by UGT1A9/2B4 (glucuronidation). Half-life: 11-13h. Excreted: 50% faeces, 33% urine (renal clearance). Renally excreted - efficacy reduced if eGFR <60, but CV/renal benefits persist",
+  "clinicalPearls": "Brand: Invokana. One of first SGLT2i with proven CV benefit (CANVAS trial: ↓ MACE, HF hospitalization). CREDENCE trial: ↓ renal outcomes in CKD. Now used for: T2DM with CV disease/HF, CKD (with/without diabetes). KEY ADVANTAGES: cardioprotective, renoprotective, weight loss, no hypoglycaemia (unless with insulin/SU), BP reduction. KEY RISKS: genital infections (counsel, hygiene), DKA (stop during illness/'sick days', perioperatively), amputation (foot care essential). SICK DAY RULES: STOP SGLT2i during intercurrent illness (N&V, reduced intake) - DKA risk. Restart when eating/drinking normally. Perioperatively: stop 3 days before major surgery (DKA risk). DKA can occur with NORMAL glucose (euglycaemic DKA) - test ketones if unwell. Amputation: controversial increased risk in CANVAS (toe/metatarsal). Mechanism unclear. Ensure foot care, podiatry if PVD/neuropathy. UTI/genital infections: counsel on hygiene, hydration. Women more UTIs, men more balanitis. Treat infections, can usually continue. Volume depletion: especially elderly, loop diuretics, heat - advise hydration. eGFR dip: expect small initial dip (haemodynamic), stabilizes. Long-term renoprotective. Alternative SGLT2i: dapagliflozin (more HF trial data - DAPA-HF), empagliflozin (EMPA-REG OUTCOME). Class effect likely. Consider in all T2DM with ASCVD, HF, or CKD eGFR 20-60",
+  "indication": "Type 2 diabetes mellitus (glycaemic control, CV risk reduction). Chronic kidney disease (with/without diabetes, eGFR ≥20) to slow progression"
 }

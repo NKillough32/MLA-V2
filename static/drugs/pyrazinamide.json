@@ -1,13 +1,14 @@
 {
   "name": "Pyrazinamide",
-  "class": "Antitubercular",
-  "mechanism": "Prodrug active in acidic environments",
-  "dosing": "Weight-based dosing per TB regimen",
-  "contraindications": "Severe liver disease, acute gout",
-  "interactions": "May ↑ uric acid",
-  "monitoring": "LFTs, uric acid",
-  "pregnancy": "Use per specialist guidance",
-  "sideEffects": "Hepatotoxicity, hyperuricaemia",
-  "clinicalPearls": "Part of standard TB regimen",
-  "indication": "TB"
+  "class": "Antitubercular antibiotic",
+  "mechanism": "Prodrug converted by bacterial pyrazinamidase to active pyrazinoic acid. Active in acidic environment (macrophage pH 5.5) - kills semi-dormant bacilli. Bactericidal. Unique sterilizing activity allows shorter TB regimens (6 vs 9 months)",
+  "dosing": "Weight-based: <50kg: 1.5g daily; 50-74kg: 2g daily; ≥75kg: 2.5g daily. Intensive phase (first 2 months) only in standard regimen. Can give OD or divided doses. Take with/after food. Reduce dose if eGFR <30 or give 3x/week. Combination tablets available (Rifater, Voractiv)",
+  "contraindications": "Severe hepatic impairment, acute gout, porphyria. Caution: renal impairment (dose adjust), diabetes (may worsen control), elderly, alcohol excess, pre-existing liver disease, hyperuricaemia, HIV co-infection",
+  "interactions": "Probenecid/sulfinpyrazone (↓ uric acid excretion - avoid). Rifampicin (additive hepatotoxicity). Ciclosporin (may ↓ levels). Avoid allopurinol initially (may precipitate gout). No significant CYP interactions",
+  "monitoring": "LFTs pre-treatment, 2 weeks, monthly (or if symptoms). Stop if ALT >5× ULN or 3× ULN with symptoms. Uric acid (if gout history/symptoms). Renal function. FBC. Visual acuity (may need ethambutol). Culture/sensitivity. Adherence (DOT recommended)",
+  "pregnancy": "Use if needed for active TB - benefit outweighs theoretical risk. WHO/NICE recommend in pregnancy. Limited data but no evidence of teratogenicity. Congenital TB more dangerous than drug risk. Specialist input essential",
+  "sideEffects": "Very common: hyperuricaemia (asymptomatic in most). Common: arthralgia, hepatotoxicity (elevated transaminases - monitor closely), nausea, vomiting, anorexia. Uncommon: gout flare, rash, photosensitivity, fever, sideroblastic anaemia. Rare: severe hepatitis (can be fatal - stop immediately)",
+  "pharmacokinetics": "Well absorbed orally (food ↓ rate not extent). Peak 2h. Widely distributed including CSF (excellent for TB meningitis). Hydrolyzed to active pyrazinoic acid in liver/acidic sites. Half-life: 9-10h. Renal excretion (70%). Dose adjust in renal impairment",
+  "clinicalPearls": "Essential component of short-course TB therapy - allows 6-month regimen vs 9 months without it. Used ONLY in intensive phase (first 2 months), then stopped. Part of standard 4-drug regimen: Rifampicin, Isoniazid, Pyrazinamide, Ethambutol (RIPE). Hepatotoxicity risk ↑ with rifampicin - monitor LFTs closely first 2 months. Hyperuricaemia common but usually asymptomatic (don't treat unless gout develops). If gout occurs, stop pyrazinamide permanently (don't restart). NOT effective against latent TB (needs acidic pH). Advise patients about hepatotoxicity symptoms (jaundice, dark urine, pale stools, persistent nausea) - stop and seek urgent medical review. Ensure adequate hydration. DOT (directly observed therapy) recommended to ensure adherence. Can use in HIV-TB co-infection but monitor liver closely (ARVs also hepatotoxic)",
+  "indication": "Active tuberculosis (pulmonary and extrapulmonary) - intensive phase of treatment (first 2 months only). Part of standard 4-drug regimen"
 }

@@ -1,12 +1,14 @@
 {
   "name": "Fluticasone/salmeterol",
-  "class": "ICS/LABA combination",
-  "mechanism": "Anti-inflammatory + bronchodilator",
-  "dosing": "Device-specific",
-  "contraindications": "See components",
-  "monitoring": "Asthma control",
-  "pregnancy": "Use if needed",
-  "sideEffects": "As for components",
-  "clinicalPearls": "Common combination inhaler",
-  "indication": "Asthma, COPD (as appropriate)"
+  "class": "Inhaled corticosteroid/long-acting beta-2 agonist combination (ICS/LABA)",
+  "mechanism": "Dual action: Fluticasone (ICS) - suppresses airway inflammation, reduces mucus, decreases bronchial hyperresponsiveness. Salmeterol (LABA) - long-acting bronchodilation via beta-2 receptor agonism, improves lung function for 12 hours",
+  "dosing": "Asthma adults: 50/100, 50/250, or 50/500 mcg BD via Accuhaler (DPI) or MDI. COPD: 50/500 mcg BD. Step up/down based on control. Rinse mouth after use. Not for acute relief - patients need separate SABA. Device-specific technique crucial",
+  "contraindications": "Hypersensitivity. Not for acute asthma/COPD exacerbation or status asthmaticus. Caution: active/quiescent TB, severe cardiovascular disease, QT prolongation, hyperthyroidism, DM, hypokalaemia",
+  "interactions": "CYP3A4 inhibitors (ritonavir, ketoconazole) ↑ fluticasone exposure - avoid strong inhibitors or use with caution. Beta-blockers antagonize salmeterol. MAOIs, TCAs ↑ cardiovascular effects. Other LABAs - avoid duplication",
+  "monitoring": "Peak flow/spirometry, symptom control (day/night), exacerbation frequency, inhaler technique, SABA use (<3x/week if controlled). Growth in children (annual height). Signs of oral candidiasis. Adrenal suppression with high-dose ICS. Cardiovascular effects (palpitations, arrhythmias)",
+  "pregnancy": "Benefits usually outweigh risks. Poorly controlled asthma poses greater risk to mother/fetus than ICS/LABA. Continue if asthma well controlled. Monitor closely. Prefer beclometasone as most pregnancy data for ICS, but fluticasone acceptable. Salmeterol less studied than salbutamol but likely safe",
+  "sideEffects": "Common: oral candidiasis (rinse after use), hoarse voice, headache, palpitations, tremor, muscle cramps. ICS effects: adrenal suppression (high dose, prolonged), growth retardation (children), osteoporosis (very high dose). LABA effects: tachycardia, arrhythmias, hypokalaemia (high dose), paradoxical bronchospasm (rare)",
+  "pharmacokinetics": "Delivered via inhalation. Fluticasone: minimal systemic absorption (<1%), extensive first-pass metabolism. Salmeterol: low systemic bioavailability (5-10%), duration 12h. Both hepatically metabolized (CYP3A4)",
+  "clinicalPearls": "Brand names: Seretide (various strengths), AirFluSal (generic). LABA must always be with ICS (never alone in asthma - increases mortality risk). Rinse and spit after use to reduce candidiasis/dysphonia. Not a reliever - patients MUST have SABA for acute symptoms. Available as Accuhaler (DPI - breath-actuated, needs good inspiratory effort) or MDI (pressurized, may need spacer). Check technique at every visit. Step down therapy once stable 3 months - may reduce ICS dose or frequency. If not controlled on 50/500 BD, add LAMA/LTRA or refer. COPD: reduces exacerbations but doesn't affect mortality - balance against pneumonia risk. MART regimen not applicable (MART uses formoterol, not salmeterol)",
+  "indication": "Asthma (regular preventer therapy, step 3+ - inadequate control on ICS alone), COPD (FEV1 <50% with exacerbations despite LABA/LAMA)"
 }

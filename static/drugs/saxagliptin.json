@@ -1,12 +1,14 @@
 {
   "name": "Saxagliptin",
-  "class": "DPP-4 inhibitor",
-  "mechanism": "Inhibits DPP-4",
-  "dosing": "5mg once daily (adjust for renal impairment)",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Renal function",
-  "pregnancy": "Avoid",
-  "sideEffects": "Pancreatitis (rare)",
-  "clinicalPearls": "Well-tolerated, weight neutral",
-  "indication": "T2DM"
+  "class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+  "mechanism": "Selectively inhibits DPP-4 enzyme - increases active GLP-1 and GIP levels, enhancing glucose-dependent insulin secretion and suppressing glucagon",
+  "dosing": "T2DM: 5mg OD with/without food. Renal impairment: CrCl ≤50ml/min: 2.5mg OD. Strong CYP3A4/5 inhibitors (ketoconazole, ritonavir): 2.5mg OD. Available alone or combined with metformin (Komboglyze)",
+  "contraindications": "Hypersensitivity to DPP-4 inhibitors, type 1 diabetes, diabetic ketoacidosis. Caution in history of pancreatitis, heart failure",
+  "interactions": "Strong CYP3A4/5 inhibitors (ketoconazole, ritonavir, clarithromycin) ↑ levels - reduce dose to 2.5mg. Sulfonylureas/insulin ↑ hypoglycaemia risk. Does not affect metformin levels",
+  "monitoring": "HbA1c (3-monthly initially), renal function (annually or more if CKD), signs/symptoms of pancreatitis (persistent severe abdominal pain), heart failure symptoms (ankle swelling, breathlessness), hypoglycaemia if with sulfonylurea/insulin",
+  "pregnancy": "Avoid - limited data. Insulin is preferred for diabetes in pregnancy. Stop when pregnancy confirmed",
+  "sideEffects": "Common: URTI, UTI, headache, peripheral oedema. Uncommon: pancreatitis (stop if suspected), hypersensitivity reactions (angioedema, urticaria, anaphylaxis), arthralgia. Heart failure risk (post-marketing reports - possible association). Generally well tolerated",
+  "pharmacokinetics": "Good oral bioavailability (67%). Half-life: 2.5h (saxagliptin), 3.1h (active metabolite). Renal excretion (75%). Steady state in 2 days. Metabolism via CYP3A4/5",
+  "clinicalPearls": "Weight neutral - good choice for overweight patients who can't tolerate metformin or GLP-1s. Low hypoglycaemia risk when used alone or with metformin. Dose reduction needed in moderate-severe renal impairment (unlike some other gliptins). Heart failure concerns - avoid in patients with history of HF or at high risk. Generally well tolerated with minimal GI side effects compared to metformin. Can be combined with metformin, sulfonylurea, or thiazolidinedione. Discontinue if pancreatitis suspected (rare but serious)",
+  "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on to metformin/sulfonylurea/thiazolidinedione/insulin)"
 }

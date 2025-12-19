@@ -1,14 +1,14 @@
 {
   "name": "Nystatin",
-  "class": "Antifungal drugs (Polyene)",
-  "mechanism": "Binds to fungal cell membrane ergosterol, causing cell death",
-  "dosing": "Oral thrush: 100,000 units QDS (swish and swallow or retain in mouth). Intestinal: 500,000 units QDS",
-  "contraindications": "Hypersensitivity",
-  "interactions": "None (not absorbed)",
-  "monitoring": "Clinical response",
-  "pregnancy": "Safe",
-  "sideEffects": "Nausea, oral irritation (if suspension), diarrhoea",
-  "pharmacokinetics": "Not absorbed from GI tract - acts topically",
-  "clinicalPearls": "Topical antifungal only (not absorbed). For oral thrush: hold in mouth as long as possible before swallowing. Continue for 48h after symptoms resolve. Denture hygiene important",
-  "indication": "Oral and intestinal candidiasis, candidal skin infections (topical)"
+  "class": "Polyene antifungal",
+  "mechanism": "Binds to ergosterol in fungal cell membrane, forming pores → loss of intracellular components (K+, small molecules), cell death. Fungicidal. Active against Candida spp. Not absorbed systemically - topical action only in GI tract/on skin/mucosa",
+  "dosing": "Oral candidiasis (thrush): suspension 100,000 units (1ml) QDS after food. Hold in mouth/swish around lesions, then swallow. Continue 48h after symptoms resolve. Prophylaxis (immunocompromised): 100,000 units QDS. Intestinal candidiasis: 500,000 units QDS. Skin/vaginal: topical formulations (cream, pessary, ointment) BD-QDS. Infants: 100,000 units QDS (0.5ml each side of mouth). Dentures: remove, soak overnight in nystatin solution",
+  "contraindications": "Hypersensitivity to nystatin. Caution: sucrose content in suspension (diabetes - 3g sucrose per 5ml)",
+  "interactions": "None - not absorbed systemically. No drug interactions",
+  "monitoring": "Clinical response (resolution of oral lesions, symptoms). If not responding after 7-14 days, consider alternative diagnosis (e.g. bacterial, viral), resistant Candida, or systemic therapy (fluconazole). Check denture hygiene, inhaler technique (if steroid-induced), underlying immunosuppression",
+  "pregnancy": "Safe - not absorbed systemically. Use as needed for candidiasis",
+  "sideEffects": "Common: nausea (if swallowed, suspension tastes unpleasant), oral irritation, hypersensitivity (local rash, contact dermatitis with topical). Diarrhoea (high doses). Rarely: vomiting, Stevens-Johnson syndrome (very rare). Generally very well-tolerated (not absorbed)",
+  "pharmacokinetics": "NOT absorbed from GI tract or through intact skin/mucosa. Acts topically at site of application. Excreted unchanged in faeces. No systemic exposure, no metabolism, no renal/hepatic considerations",
+  "clinicalPearls": "TOPICAL antifungal for mucocutaneous candidiasis ONLY. NOT for systemic infections. MAIN USE: oral thrush (white plaques on tongue/buccal mucosa, angular cheilitis). Common in: infants, denture wearers, inhaled corticosteroid users (post-inhaler rinsing ↓ risk), immunosuppressed (HIV, chemotherapy, diabetes, antibiotics). ADMINISTRATION: key to hold in mouth as long as possible (contact time critical) before swallowing. After food (don't eat/drink for 30 min after to maintain contact). Swish around affected areas. DENTURES: remove dentures, clean thoroughly, soak overnight in nystatin or chlorhexidine. Treat dentures AND mucosa. TREATMENT DURATION: continue 48h after symptoms resolve (typically 7-14 days total). Relapse common if stopped early or denture hygiene poor. INFANTS: dropper delivers 0.5ml to each side of mouth after feeds. Mother's nipples may need treatment (clotrimazole cream) if breastfeeding. NOT ABSORBED: advantages - safe in pregnancy, no drug interactions, no renal/hepatic dose adjustment. Disadvantages - only topical action, no systemic effect, requires frequent dosing and compliance (QDS). ALTERNATIVES: miconazole oral gel (BD, more convenient, some systemic absorption - interactions with warfarin), fluconazole (systemic, once-daily, for severe/refractory/oesophageal candidiasis, but drug interactions and resistance concerns). STEROID INHALER USERS: counsel on post-inhaler rinsing (mouth wash and spit, use spacer) to prevent thrush. If thrush develops, treat with nystatin AND optimize inhaler technique. TASTE: unpleasant (suspension) - warn patients. Refrigeration may improve palatability (not required for stability). Sugar content: 3g per 5ml - caution in diabetes (or use sugar-free miconazole gel). RESISTANCE: rare with nystatin (unlike azoles). TOPICAL FORMULATIONS: cream/ointment for skin candidiasis (intertrigo, nappy rash), pessaries/cream for vaginal candidiasis (alternative to clotrimazole/fluconazole - less convenient, not absorbed). When to use SYSTEMIC therapy: oesophageal candidiasis (fluconazole PO/IV), severe/refractory oral thrush, immunocompromised with extensive disease, candidaemia/invasive candidiasis (echinocandins, amphotericin). Nystatin INSUFFICIENT for these",
+  "indication": "Oral candidiasis (thrush). Intestinal candidiasis. Candidal skin infections (intertrigo, nappy rash). Vulvovaginal candidiasis (topical). Prophylaxis of oral candidiasis in immunosuppressed"
 }

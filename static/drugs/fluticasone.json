@@ -1,12 +1,14 @@
 {
   "name": "Fluticasone (inhaled)",
-  "class": "Inhaled corticosteroid",
-  "mechanism": "Anti-inflammatory corticosteroid",
-  "dosing": "Device-specific dosing; typically BD",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Inhaler technique, oral thrush",
-  "pregnancy": "Use with ICS as indicated",
-  "sideEffects": "Oral candidiasis, dysphonia",
-  "clinicalPearls": "Often combined with LABA",
-  "indication": "Asthma maintenance"
+  "class": "Inhaled corticosteroid (ICS)",
+  "mechanism": "Potent synthetic corticosteroid - anti-inflammatory action by suppressing inflammatory cells (eosinophils, mast cells), reducing airway hyperresponsiveness, decreasing mucus production, increasing beta-2 receptor expression",
+  "dosing": "Asthma adults: Start 100-500mcg BD (MDI/DPI). Maintenance 100-1000mcg BD depending on severity. Children 4-16y: 50-200mcg BD. Available as Flixotide (various devices - Accuhaler/Evohaler), Flovent. Also in combination with salmeterol (Seretide). Take after bronchodilator. Rinse mouth after",
+  "contraindications": "Hypersensitivity. Not for acute asthma/status asthmaticus or primary treatment of status asthmaticus. Caution: active/quiescent TB, fungal infections, severe hepatic impairment (↑ systemic exposure)",
+  "interactions": "CYP3A4 inhibitors (ritonavir, ketoconazole, itraconazole) ↑ systemic exposure - avoid strong inhibitors or use lowest ICS dose. May interact with other potent CYP3A4 inhibitors (cobicistat, clarithromycin). Risk of Cushing's syndrome with strong inhibitors",
+  "monitoring": "Peak flow/spirometry (baseline, 4-8 weeks, then as needed). Symptom control (day/night), SABA use (<3x/week if controlled), exacerbations. Inhaler technique (every visit). Growth in children (annual height). Signs of oral candidiasis. Adrenal suppression with high doses (morning cortisol if >500mcg/day >3 months). Bone density if very high dose long-term",
+  "pregnancy": "Safe - benefits outweigh risks. Poorly controlled asthma greater risk to mother/fetus than ICS. Continue if controlling asthma. Beclometasone has most pregnancy data, but fluticasone widely used and considered safe. Monitor asthma closely as may worsen/improve in pregnancy",
+  "sideEffects": "Common: oral candidiasis (10% - rinse mouth after use), hoarse voice/dysphonia, throat irritation, cough. Uncommon: paradoxical bronchospasm (rare - stop if occurs). High doses/prolonged use: adrenal suppression (very rare, reversible), growth retardation in children (monitor height), osteoporosis (very high dose), cataracts, glaucoma, psychiatric effects, bruising. Systemic effects more likely with doses >500mcg/day",
+  "pharmacokinetics": "Inhaled route. ~10-30% reaches lungs (rest deposited in oropharynx, swallowed). Minimal systemic absorption (<1% from lungs). Swallowed portion undergoes extensive first-pass metabolism. Half-life: 7.8h. Metabolized by CYP3A4. Twice daily dosing maintains effect",
+  "clinicalPearls": "Higher potency than beclometasone/budesonide mcg-for-mcg (100mcg fluticasone ≈ 200-250mcg beclometasone). MUST rinse mouth and spit after use (reduces candidiasis/dysphonia). Not a reliever - patients need SABA for acute symptoms. Start at dose appropriate for severity then step down after 3 months if stable. Often combined with LABA (salmeterol in Seretide - never use LABA alone). Multiple devices available - Accuhaler (DPI, breath-actuated), Evohaler (MDI, may need spacer). Check technique: common errors include not breathing out first, not breath-holding 10 seconds, wrong inspiratory effort. Step up if using SABA >3x/week, nocturnal waking, or exacerbations. Step down by 25-50% every 3 months if stable. For high-dose ICS (>500mcg/day), consider adding LABA/LAMA/LTRA before increasing further. In children, monitor growth closely - if growth falters, review need or consider alternative",
+  "indication": "Asthma (prophylaxis and maintenance therapy, not for acute relief), COPD (in selected cases - usually with LABA)"
 }

@@ -1,13 +1,14 @@
 {
   "name": "Caspofungin",
   "class": "Echinocandin antifungal",
-  "mechanism": "Inhibits β-(1,3)-D-glucan synthesis in fungal cell wall",
-  "dosing": "IV dosing per product",
-  "contraindications": "Hypersensitivity",
-  "interactions": "Cyclosporin may ↑ levels",
-  "monitoring": "LFTs",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "Infusion reactions, hepatotoxicity",
-  "clinicalPearls": "Useful for invasive Candida and salvage therapy",
-  "indication": "Invasive fungal infections"
+  "mechanism": "Inhibits β-(1,3)-D-glucan synthase, essential enzyme for fungal cell wall synthesis. Disrupts fungal cell wall integrity, causing cell lysis. Fungicidal against Candida spp., fungistatic against Aspergillus. Not active against Cryptococcus or Zygomycetes (lack glucan target)",
+  "dosing": "Loading dose: 70mg IV day 1. Maintenance: 50mg IV daily. Increase to 70mg daily if >80kg, hepatic enzyme inducers, or invasive aspergillosis. Reduce to 35mg daily if moderate hepatic impairment (Child-Pugh B). No dose adjustment for renal impairment. Infuse over 1 hour. Duration: invasive candidiasis 14 days post-last positive culture and symptom resolution; aspergillosis salvage therapy variable",
+  "contraindications": "Hypersensitivity to caspofungin or echinocandins. Coadministration with ciclosporin (unless benefit outweighs risk - hepatotoxicity). Caution: hepatic impairment (dose reduce)",
+  "interactions": "Ciclosporin: ↑ caspofungin levels + hepatotoxicity - AVOID unless benefit outweighs risk, monitor LFTs closely. Enzyme inducers (rifampicin, phenytoin, carbamazepine, dexamethasone, efavirenz, nevirapine): ↓ caspofungin levels - increase dose to 70mg daily. Tacrolimus: caspofungin ↓ tacrolimus levels by ~20% (monitor levels)",
+  "monitoring": "LFTs (baseline, then regularly - hepatotoxicity risk, especially with ciclosporin). FBC (rare anaemia, eosinophilia). Signs of infusion reactions (flushing, pruritus, rash, tachycardia - slow infusion). Clinical response (fever, inflammatory markers, cultures). Potassium, magnesium (hypo- common). Tacrolimus levels if coadministered",
+  "pregnancy": "Limited data - animal studies show adverse effects. Use only if benefit outweighs risk. No alternative may be available for invasive fungal infection. Specialist advice",
+  "sideEffects": "Common: infusion-related reactions (flushing, pruritus, rash during infusion - slow rate), headache, GI upset (nausea, vomiting, diarrhoea), fever, phlebitis at infusion site, hypokalaemia, hypomagnesaemia, raised LFTs (transaminases, ALP). Uncommon: hepatotoxicity (more with ciclosporin - monitor LFTs), anaphylaxis (rare), haemolytic anaemia, thrombocytopenia, Stevens-Johnson syndrome (very rare)",
+  "pharmacokinetics": "IV only (not orally absorbed). Protein-bound (97%). Slowly metabolized by peptide hydrolysis and N-acetylation (not CYP-mediated, but enzyme inducers still ↓ levels). Half-life: 9-11h (β-phase), terminal 40-50h. Excreted: 35% faeces, <5% urine (no renal dose adjustment). Steady-state by day 5-7",
+  "clinicalPearls": "First echinocandin introduced (2001). Broad coverage against Candida (including azole-resistant C. glabrata, C. krusei) and Aspergillus. NO activity against Cryptococcus, Zygomycetes, Fusarium, Scedosporium. USES: invasive candidiasis (candidaemia, intra-abdominal abscesses), empiric therapy for febrile neutropenia unresponsive to antibiotics, salvage therapy for invasive aspergillosis (if refractory/intolerant to amphotericin/azoles). ADVANTAGES: well-tolerated (less nephrotoxic than amphotericin, fewer interactions than azoles), fungicidal against Candida, covers azole-resistant species. DISADVANTAGES: IV only (no oral formulation), poor CNS penetration (not for CNS infections), no Cryptococcus coverage. Infusion reactions: slow rate if occur. Hepatotoxicity: especially with ciclosporin (avoid unless essential, monitor LFTs). Enzyme inducers: ↓ levels - increase dose to 70mg. Consider if candidiasis in critically ill (fungicidal, well-tolerated, no renal toxicity). Alternative echinocandins: anidulafungin (no hepatic metabolism, no dose adjustment), micafungin (similar). Azole resistance increasing - echinocandins first-line for invasive candidiasis in many settings. For aspergillosis: voriconazole preferred first-line, caspofungin salvage. Good activity in biofilms (catheters, prosthetics). No renal dose adjustment - useful in renal impairment (unlike amphotericin)",
+  "indication": "Invasive candidiasis (candidaemia, Candida peritonitis/abscesses), empiric antifungal therapy in febrile neutropenia unresponsive to antibiotics, salvage therapy for invasive aspergillosis (refractory/intolerant to amphotericin or azoles)"
 }

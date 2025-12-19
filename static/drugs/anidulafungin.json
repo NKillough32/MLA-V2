@@ -1,12 +1,14 @@
 {
   "name": "Anidulafungin",
   "class": "Echinocandin antifungal",
-  "mechanism": "Inhibits β-(1,3)-D-glucan synthesis",
-  "dosing": "IV per product",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "LFTs",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "Infusion reactions",
-  "clinicalPearls": "Another echinocandin option for invasive fungal infections",
-  "indication": "Invasive Candida"
+  "mechanism": "Inhibits β-(1,3)-D-glucan synthase, essential component of fungal cell wall. Fungicidal against Candida species, fungistatic against Aspergillus. Does not affect human cells (lack β-glucan)",
+  "dosing": "Invasive candidiasis: Loading 200mg IV on day 1, then 100mg IV OD. Oesophageal candidiasis: Loading 100mg IV day 1, then 50mg IV OD. Infuse over 90 mins (1.1mg/min max rate). Duration: 14 days after last positive blood culture or resolution of symptoms",
+  "contraindications": "Hypersensitivity to echinocandins. No dose adjustment needed for renal/hepatic impairment (unique metabolism). Caution in severe hepatic impairment (limited data)",
+  "interactions": "Minimal drug interactions (not metabolized by CYP450). No interaction with ciclosporin (unlike caspofungin). No dose adjustments needed with other medications",
+  "monitoring": "LFTs (baseline and during therapy - hepatotoxicity possible). FBC (anaemia). Clinical response (fever, cultures). Repeat blood cultures to confirm clearance. Renal function. Signs of histamine-mediated reactions during infusion",
+  "pregnancy": "Limited data - use only if benefit outweighs risk. Animal studies show no teratogenicity but placental transfer occurs. Consider alternative if possible",
+  "sideEffects": "Common: diarrhoea, nausea, vomiting, hypokalaemia, ↑ LFTs (transaminases, ALP). Infusion-related: flushing, urticaria, pruritus, dyspnoea (rare, histamine-mediated - slow infusion). Rare: hepatotoxicity, anaphylaxis, Stevens-Johnson syndrome",
+  "pharmacokinetics": "IV only. Large volume of distribution. Half-life: 24h (allows OD dosing). Unique metabolism: slow chemical degradation (not hepatic/renal) - no dose adjustment for organ impairment. Minimal faecal excretion, negligible renal excretion (<1%)",
+  "clinicalPearls": "Advantages over other echinocandins: NO dose adjustment for renal/hepatic impairment, no CYP interactions (safe with many drugs), no interaction with ciclosporin (unlike caspofungin). Effective against azole-resistant Candida (including C. glabrata, C. krusei). NOT active against Cryptococcus, Mucor, or endemic fungi. Similar efficacy to fluconazole for candidaemia but broader spectrum. Consider for critically ill patients, azole-resistant Candida, or recent azole exposure. Can step down to oral azole after 5-7 days if clinically improved, susceptible species, and source controlled. Infuse via peripheral or central line. Does not penetrate CNS/urine well - not for CNS infections or urinary candidiasis",
+  "indication": "Invasive candidiasis (candidaemia, intra-abdominal candidiasis), oesophageal candidiasis in adults. First-line for invasive candidiasis in critically ill or azole-resistant cases"
 }

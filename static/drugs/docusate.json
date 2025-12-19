@@ -1,12 +1,14 @@
 {
-  "name": "Docusate (stool softener)",
-  "class": "Stool softener",
-  "mechanism": "Surfactant reducing stool surface tension",
-  "dosing": "Per product directions",
-  "contraindications": "Intestinal obstruction",
-  "monitoring": "Clinical response",
-  "pregnancy": "Use if needed",
-  "sideEffects": "GI upset",
-  "clinicalPearls": "Often combined with stimulant laxatives",
-  "indication": "Constipation"
+  "name": "Docusate sodium (Docusol)",
+  "class": "Stool softener (surfactant laxative)",
+  "mechanism": "Anionic surfactant - reduces surface tension of stool, allowing water and fats to penetrate, softening hard faeces. Stimulates fluid secretion in small/large intestine (mild)",
+  "dosing": "Adults: 200-500mg daily in divided doses (usually 100mg BD-TDS). Up to 500mg daily. Children >12y: 100-300mg daily. Take with plenty of fluids. Oral capsules or liquid. Onset: 1-3 days. May take with food",
+  "contraindications": "Intestinal obstruction, acute abdominal conditions (appendicitis, undiagnosed abdominal pain), nausea/vomiting, severe dehydration. Caution: hepatic impairment (sodium docusate absorbed)",
+  "interactions": "May increase absorption of other drugs (surfactant effect). Liquid paraffin (↑ absorption of paraffin - avoid combination). Danthron (may ↑ liver toxicity). Aspirin (theoretical ↑ GI irritation)",
+  "monitoring": "Bowel movement frequency and consistency. Hydration status. Signs of electrolyte imbalance with prolonged use. Abdominal pain or distension (may indicate obstruction)",
+  "pregnancy": "Generally considered safe - poorly absorbed systemically. Widely used in pregnancy. Avoid high doses. Adequate fluid intake essential. Lactulose often preferred as first-line",
+  "sideEffects": "Common: abdominal cramps, diarrhoea (excessive dose), nausea, bitter taste (liquid). Uncommon: rash, throat irritation (liquid). Rare: hepatotoxicity with chronic high-dose use (case reports)",
+  "pharmacokinetics": "Oral administration. Some systemic absorption (undergoes enterohepatic circulation). Absorbed fraction metabolized in liver. Most excreted in faeces. Onset: 1-3 days for stool softening effect",
+  "clinicalPearls": "Often combined with stimulant laxatives (senna, bisacodyl) in compound preparations (e.g., co-danthramer, co-danthrusate - restricted to palliative care due to carcinogenicity concerns). Mild effect compared to osmotic laxatives (macrogol, lactulose). Most useful for preventing hard stools (e.g., post-MI, haemorrhoids, anal fissure, post-operative, with opioids). Not first-line for chronic constipation - bulk-forming or osmotic laxatives preferred. Ensure adequate fluid intake (6-8 glasses/day) or may worsen constipation. Less effective if already severely constipated - may need stimulant laxative initially. Available OTC. Liquid formulation can be mixed with juice/milk to improve taste. If no effect after 5 days, consider alternative laxative or investigate cause",
+  "indication": "Constipation (particularly hard stools), prevention of constipation in patients at risk (cardiac conditions, haemorrhoids, anal fissure, after rectal surgery), adjunct with opioid therapy"
 }

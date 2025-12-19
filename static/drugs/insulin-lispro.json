@@ -1,12 +1,14 @@
 {
   "name": "Insulin lispro",
-  "class": "Rapid-acting insulin analogue",
-  "mechanism": "Prandial insulin",
-  "dosing": "Individualized",
-  "contraindications": "Hypoglycaemia",
-  "monitoring": "BG",
-  "pregnancy": "Use with specialist advice",
-  "sideEffects": "Hypoglycaemia",
-  "clinicalPearls": "Rapid onset prandial insulin",
-  "indication": "Prandial insulin"
+  "class": "Rapid-acting insulin analogue (mealtime/bolus insulin)",
+  "mechanism": "Rapid-acting insulin analogue - modified human insulin with faster absorption. Binds to insulin receptors, facilitates glucose uptake into cells, suppresses hepatic glucose production",
+  "dosing": "SC: 0-15 mins before meals (or immediately after). Dose individualized based on blood glucose, carbohydrate intake, and activity. Typical: 4-12 units per meal. Pump therapy: continuous SC infusion. IV: Can be used in DKA/HHS (dilute in 0.9% NaCl)",
+  "contraindications": "Episodes of hypoglycaemia. Caution if renal/hepatic impairment (may ↓ insulin requirements), during illness (may ↑ requirements), lipodystrophy at injection sites",
+  "interactions": "Oral antidiabetics, ACE inhibitors, octreotide ↑ hypoglycaemia risk. Corticosteroids, thiazides, thyroid hormones, growth hormone ↓ glucose-lowering effect. Beta-blockers mask hypoglycaemia symptoms",
+  "monitoring": "Blood glucose (pre-meal, 2h post-meal, bedtime, overnight). HbA1c every 3-6 months. Injection sites for lipodystrophy. Signs of hypo/hyperglycaemia. Adjust doses based on glucose patterns and carb intake",
+  "pregnancy": "Safe - insulin of choice in pregnancy (with insulin aspart). Insulin requirements ↑ in 2nd/3rd trimester. Tight glucose control essential (target: fasting <5.3, 1h post-meal <7.8, 2h <6.4 mmol/L). Specialist diabetes in pregnancy team",
+  "sideEffects": "Hypoglycaemia (most common - tremor, sweating, confusion, coma), weight gain, injection site reactions (lipohypertrophy/atrophy - rotate sites), rarely: severe allergic reactions, hypokalaemia (high doses)",
+  "pharmacokinetics": "SC: Onset 5-15 min, peak 30-90 min, duration 3-5h. Faster than regular insulin due to rapid dissociation into monomers. IV: immediate onset, very short duration. Renal/hepatic metabolism",
+  "clinicalPearls": "Brand name: Humalog. Give 0-15 mins before meals (vs 30 mins for regular insulin) - more flexible timing. Ideal for carb counting and correction doses. Clear solution. Can be mixed with NPH (draw rapid-acting first). Rotate injection sites (abdomen fastest absorption, thighs/buttocks slower). Store in fridge (2-8°C), in-use pens at room temp <28 days. Always carry fast-acting carbs (hypo treatment: 15-20g glucose, recheck in 15 mins). Ultra-rapid formulations (Lyumjev) available with even faster onset",
+  "indication": "Type 1 diabetes (mealtime insulin), Type 2 diabetes (basal-bolus regimen), diabetic ketoacidosis (IV), hyperglycaemia in hospital"
 }

@@ -1,12 +1,14 @@
 {
   "name": "Rabeprazole",
-  "class": "PPI",
-  "mechanism": "Proton pump inhibitor",
-  "dosing": "20mg once daily",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Response, magnesium with long-term use",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "GI upset, headache",
-  "clinicalPearls": "Alternative PPI",
-  "indication": "GORD, PUD"
+  "class": "Proton pump inhibitors (PPI)",
+  "mechanism": "Irreversibly inhibits H+/K+-ATPase (proton pump) in gastric parietal cells, reducing gastric acid secretion by >90%",
+  "dosing": "GORD: 20mg OD for 4-8 weeks (maintenance 10-20mg OD). Peptic ulcer: 20mg OD for 4-8 weeks. H. pylori eradication: 20mg BD with antibiotics for 7 days. Zollinger-Ellison: 60mg OD initially. Take 30-60 mins before food",
+  "contraindications": "Hypersensitivity to PPIs. Do not use if suspected gastric malignancy (may mask symptoms). Caution with severe hepatic impairment",
+  "interactions": "Reduces absorption of drugs requiring acidic environment (atazanavir, erlotinib, ketoconazole). ↑ methotrexate levels. May ↑ clopidogrel effectiveness (less interaction than omeprazole). ↓ efficacy of dasatinib",
+  "monitoring": "Symptom response. Long-term use (>1 year): consider magnesium levels (risk of hypomagnesaemia), vitamin B12 (risk of deficiency), bone density if osteoporosis risk. Review need for continued therapy annually",
+  "pregnancy": "No evidence of harm. Omeprazole has most safety data, but rabeprazole likely safe if clinically needed. Use if benefit outweighs potential risk",
+  "sideEffects": "Common: headache, GI upset (diarrhoea, N&V, abdominal pain). Long-term: hypomagnesaemia, ↑ fracture risk (hip/wrist/spine), vitamin B12 deficiency, fundic gland polyps. Rare: C. difficile infection (↑ risk), pneumonia, interstitial nephritis",
+  "pharmacokinetics": "Rapid onset (1h), peak 3-5h, half-life 1-2h. Prodrug activated in acidic environment of parietal cells. Hepatic metabolism via CYP2C19 and CYP3A4. Duration: 24h+ despite short half-life (irreversible inhibition)",
+  "clinicalPearls": "Faster onset than some PPIs due to acid-independent activation. Less CYP2C19-dependent than omeprazole (more predictable in poor metabolizers). Use lowest effective dose for shortest duration. Step down to H2RA or antacids once symptoms controlled. Avoid long-term use >8 weeks without clear indication. Best taken before breakfast on empty stomach. If twice daily, take 30-60 mins before morning and evening meals",
+  "indication": "GORD, peptic ulcer disease (gastric/duodenal), H. pylori eradication (with antibiotics), Zollinger-Ellison syndrome, NSAID-associated ulcer prophylaxis"
 }

@@ -1,12 +1,14 @@
 {
   "name": "Budesonide/formoterol",
-  "class": "ICS/LABA combination",
-  "mechanism": "Anti-inflammatory + bronchodilator",
-  "dosing": "Device-specific; follow product guidance",
-  "contraindications": "See individual components",
-  "monitoring": "Asthma control",
-  "pregnancy": "Use with specialist advice",
-  "sideEffects": "As for components",
-  "clinicalPearls": "Used in maintenance and SMART regimens",
-  "indication": "Asthma maintenance; COPD in select cases"
+  "class": "Inhaled corticosteroid/long-acting beta-2 agonist combination (ICS/LABA)",
+  "mechanism": "Dual action: Budesonide (ICS) - suppresses airway inflammation, reduces hyperresponsiveness. Formoterol (LABA) - rapid-onset long-acting bronchodilation (onset 1-3 min, duration 12h), preventing bronchoconstriction. Unique: formoterol has fast onset allowing MART use",
+  "dosing": "Asthma maintenance: 1-2 inhalations BD (100/6, 200/6, or 400/12 mcg formulations). MART (Maintenance And Reliever Therapy): 1-2 inhalations BD maintenance PLUS 1 inhalation as needed for relief (max 8 inhalations/day total). COPD: 400/12 mcg 2 inhalations BD. Rinse mouth after use. Multiple devices: Turbohaler (DPI), MDI",
+  "contraindications": "Hypersensitivity. Not for status asthmaticus (though MART can be used for mild-moderate acute asthma). Caution: cardiovascular disease, QT prolongation, hyperthyroidism, diabetes, hypokalaemia, active/quiescent TB",
+  "interactions": "CYP3A4 inhibitors (ketoconazole, ritonavir) ↑ budesonide exposure - avoid strong inhibitors. Beta-blockers antagonize formoterol. MAOIs, TCAs ↑ cardiovascular effects. Other LABAs - don't duplicate. Xanthines, steroids, diuretics ↑ hypokalaemia risk",
+  "monitoring": "Peak flow/spirometry, symptom control, SABA use (should be minimal if MART used correctly). Exacerbation frequency. Inhaler technique. Growth in children (annual height). Signs of oral candidiasis. With MART: monitor total daily inhalations (<8). Potassium if high-dose or multiple bronchodilators. Cardiovascular effects (palpitations)",
+  "pregnancy": "Benefits usually outweigh risks. Poorly controlled asthma greater risk. Budesonide has good safety data in pregnancy (preferred ICS). Formoterol less data than salbutamol but likely safe. Continue if controlling asthma well. Monitor closely",
+  "sideEffects": "Common: oral candidiasis (rinse after use), hoarse voice, headache, tremor, palpitations, muscle cramps. ICS effects: adrenal suppression (high dose), growth retardation (children). LABA effects: tachycardia, arrhythmias, hypokalaemia (high doses), hyperglycaemia. Paradoxical bronchospasm (rare - stop)",
+  "pharmacokinetics": "Inhaled delivery. Budesonide: high first-pass metabolism (90%), minimal systemic effects. Half-life: 2-3h. Formoterol: rapid onset 1-3 min (faster than salmeterol), peak 30-60 min, duration 12h. Low systemic bioavailability (<20%). Both hepatically metabolized",
+  "clinicalPearls": "Brand names: Symbicort, DuoResp Spiromax. Key advantage: formoterol's RAPID onset allows MART (Maintenance And Reliever Therapy) - use same inhaler for prevention AND relief. MART simplifies regimen, reduces exacerbations vs fixed-dose ICS/LABA. MART not suitable with salmeterol (slow onset). LABA must NEVER be used alone in asthma (increased mortality). Rinse and spit after use. Not a substitute for SABA if not using MART regimen. Multiple devices: Turbohaler (DPI, breath-actuated), MDI (may need spacer). Check technique: adequate inspiratory flow for DPI. MART: explain to use 1 puff for relief, wait 5 mins, second if needed. If using >8 puffs/day, seek medical review. Step up therapy if frequent MART use. COPD: reduces exacerbations, improves QoL, no mortality benefit. Monitor for pneumonia risk. If uncontrolled on high-dose ICS/LABA, add LAMA or refer. Not for acute severe asthma requiring hospital - use nebulized salbutamol/ipratropium + systemic steroids",
+  "indication": "Asthma (regular preventer, step 3+, or MART regimen from step 3), COPD (FEV1 <50% with exacerbations despite bronchodilators)"
 }

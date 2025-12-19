@@ -135,14 +135,14 @@
     {
       "id": "anastrozole",
       "name": "Anastrozole",
-      "class": "Aromatase inhibitor",
-      "indication": "Breast cancer"
+      "class": "Aromatase inhibitors (hormone therapy)",
+      "indication": "Postmenopausal oestrogen receptor-positive early/advanced breast cancer (adjuvant, first-line, or second-line after tamoxifen)"
     },
     {
       "id": "anidulafungin",
       "name": "Anidulafungin",
       "class": "Echinocandin antifungal",
-      "indication": "Invasive Candida"
+      "indication": "Invasive candidiasis (candidaemia, intra-abdominal candidiasis), oesophageal candidiasis in adults. First-line for invasive candidiasis in critically ill or azole-resistant cases"
     },
     {
       "id": "anti-d-immunoglobulin",
@@ -297,8 +297,8 @@
     {
       "id": "budesonide-formoterol",
       "name": "Budesonide/formoterol",
-      "class": "ICS/LABA combination",
-      "indication": "Asthma maintenance; COPD in select cases"
+      "class": "Inhaled corticosteroid/long-acting beta-2 agonist combination (ICS/LABA)",
+      "indication": "Asthma (regular preventer, step 3+, or MART regimen from step 3), COPD (FEV1 <50% with exacerbations despite bronchodilators)"
     },
     {
       "id": "bumetanide",
@@ -333,8 +333,8 @@
     {
       "id": "canagliflozin",
       "name": "Canagliflozin",
-      "class": "SGLT2 inhibitor",
-      "indication": "T2DM"
+      "class": "SGLT2 inhibitor (sodium-glucose co-transporter 2 inhibitor, gliflozin)",
+      "indication": "Type 2 diabetes mellitus (glycaemic control, CV risk reduction). Chronic kidney disease (with/without diabetes, eGFR ≥20) to slow progression"
     },
     {
       "id": "candesartan",
@@ -376,7 +376,7 @@
       "id": "carboprost",
       "name": "Carboprost",
       "class": "Prostaglandin F2α analogue (uterotonic)",
-      "indication": "PPH management"
+      "indication": "Postpartum haemorrhage refractory to oxytocin (second-line uterotonic). Medical termination of pregnancy (second trimester - not standard UK practice)"
     },
     {
       "id": "carvedilol",
@@ -388,7 +388,7 @@
       "id": "caspofungin",
       "name": "Caspofungin",
       "class": "Echinocandin antifungal",
-      "indication": "Invasive fungal infections"
+      "indication": "Invasive candidiasis (candidaemia, Candida peritonitis/abscesses), empiric antifungal therapy in febrile neutropenia unresponsive to antibiotics, salvage therapy for invasive aspergillosis (refractory/intolerant to amphotericin or azoles)"
     },
     {
       "id": "cefalexin",
@@ -519,8 +519,8 @@
     {
       "id": "clonazepam",
       "name": "Clonazepam",
-      "class": "Benzodiazepine",
-      "indication": "Seizures, anxiety"
+      "class": "Benzodiazepine (anxiolytic, anticonvulsant)",
+      "indication": "Epilepsy (myoclonic seizures, Lennox-Gastaut syndrome, absence seizures refractory to first-line). Panic disorder (short-term or when SSRIs ineffective). Acute mania (adjunct). REM sleep behavior disorder (off-license)"
     },
     {
       "id": "clopidogrel",
@@ -703,16 +703,16 @@
       "indication": "Hypercalcaemia of malignancy, bone pain in myeloma/metastases, Paget\\"
     },
     {
-      "id": "docusate",
-      "name": "Docusate (stool softener)",
-      "class": "Stool softener",
-      "indication": "Constipation"
-    },
-    {
       "id": "docusate sodium",
       "name": "Docusate Sodium",
       "class": "Laxatives, stimulant and stool softener",
       "indication": "Constipation (especially with hard stools), opioid-induced constipation"
+    },
+    {
+      "id": "docusate",
+      "name": "Docusate sodium (Docusol)",
+      "class": "Stool softener (surfactant laxative)",
+      "indication": "Constipation (particularly hard stools), prevention of constipation in patients at risk (cardiac conditions, haemorrhoids, anal fissure, after rectal surgery), adjunct with opioid therapy"
     },
     {
       "id": "domperidone",
@@ -741,8 +741,8 @@
     {
       "id": "dulaglutide",
       "name": "Dulaglutide",
-      "class": "GLP-1 receptor agonist",
-      "indication": "T2DM"
+      "class": "GLP-1 receptor agonist (incretin mimetic)",
+      "indication": "Type 2 diabetes mellitus (add-on to metformin or as dual/triple therapy), cardiovascular risk reduction in T2DM"
     },
     {
       "id": "duloxetine",
@@ -813,8 +813,8 @@
     {
       "id": "ertugliflozin",
       "name": "Ertugliflozin",
-      "class": "SGLT2 inhibitor",
-      "indication": "T2DM"
+      "class": "Sodium-glucose co-transporter 2 (SGLT2) inhibitor (gliflozin)",
+      "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on therapy)"
     },
     {
       "id": "erythromycin",
@@ -843,8 +843,8 @@
     {
       "id": "ethambutol",
       "name": "Ethambutol",
-      "class": "Antitubercular",
-      "indication": "TB"
+      "class": "Antitubercular antibiotic",
+      "indication": "Active tuberculosis (pulmonary and extrapulmonary) as part of standard 4-drug regimen. Used to prevent emergence of resistance to isoniazid"
     },
     {
       "id": "ethinylestradiol",
@@ -897,8 +897,8 @@
     {
       "id": "filgrastim",
       "name": "Filgrastim (G-CSF)",
-      "class": "Hematopoietic growth factor",
-      "indication": "Chemotherapy-induced neutropenia"
+      "class": "Recombinant granulocyte colony-stimulating factor (G-CSF)",
+      "indication": "Reduction in duration of neutropenia and incidence of febrile neutropenia following myelosuppressive chemotherapy. Mobilization of peripheral blood progenitor cells for collection and subsequent autologous/allogeneic transplantation. Severe chronic neutropenia (congenital, cyclic, idiopathic)"
     },
     {
       "id": "finasteride",
@@ -945,8 +945,8 @@
     {
       "id": "fluticasone",
       "name": "Fluticasone (inhaled)",
-      "class": "Inhaled corticosteroid",
-      "indication": "Asthma maintenance"
+      "class": "Inhaled corticosteroid (ICS)",
+      "indication": "Asthma (prophylaxis and maintenance therapy, not for acute relief), COPD (in selected cases - usually with LABA)"
     },
     {
       "id": "nasal-fluticasone",
@@ -957,8 +957,8 @@
     {
       "id": "fluticasone-salmeterol",
       "name": "Fluticasone/salmeterol",
-      "class": "ICS/LABA combination",
-      "indication": "Asthma, COPD (as appropriate)"
+      "class": "Inhaled corticosteroid/long-acting beta-2 agonist combination (ICS/LABA)",
+      "indication": "Asthma (regular preventer therapy, step 3+ - inadequate control on ICS alone), COPD (FEV1 <50% with exacerbations despite LABA/LAMA)"
     },
     {
       "id": "folic acid",
@@ -1017,8 +1017,8 @@
     {
       "id": "glimepiride",
       "name": "Glimepiride",
-      "class": "Sulfonylureas",
-      "indication": "Type 2 diabetes"
+      "class": "Sulfonylurea (second-generation)",
+      "indication": "Type 2 diabetes mellitus (second/third-line, usually with metformin, when diet/exercise/metformin inadequate)"
     },
     {
       "id": "glipizide",
@@ -1203,14 +1203,14 @@
     {
       "id": "insulin-degludec",
       "name": "Insulin degludec",
-      "class": "Ultra-long acting insulin analogue",
-      "indication": "Basal insulin therapy"
+      "class": "Ultra-long-acting insulin analogue (basal insulin)",
+      "indication": "Type 1 diabetes (basal insulin in basal-bolus regimen), Type 2 diabetes (basal insulin with oral agents or in basal-bolus regimen), pregnancy-related diabetes with specialist input"
     },
     {
       "id": "insulin-detemir",
       "name": "Insulin detemir",
-      "class": "Long-acting insulin analogue",
-      "indication": "Basal insulin therapy"
+      "class": "Long-acting insulin analogue (basal insulin)",
+      "indication": "Type 1 diabetes (basal insulin in basal-bolus regimen), Type 2 diabetes (basal insulin with oral agents or in basal-bolus regimen), pregnancy-related diabetes"
     },
     {
       "id": "insulin glargine",
@@ -1227,8 +1227,8 @@
     {
       "id": "insulin-lispro",
       "name": "Insulin lispro",
-      "class": "Rapid-acting insulin analogue",
-      "indication": "Prandial insulin"
+      "class": "Rapid-acting insulin analogue (mealtime/bolus insulin)",
+      "indication": "Type 1 diabetes (mealtime insulin), Type 2 diabetes (basal-bolus regimen), diabetic ketoacidosis (IV), hyperglycaemia in hospital"
     },
     {
       "id": "ipratropium",
@@ -1251,8 +1251,8 @@
     {
       "id": "isoniazid",
       "name": "Isoniazid",
-      "class": "Antitubercular",
-      "indication": "TB"
+      "class": "Antitubercular antibiotic (hydrazide)",
+      "indication": "Active tuberculosis (pulmonary and extrapulmonary) as part of standard multi-drug regimen. Latent TB infection (treatment to prevent progression to active disease)"
     },
     {
       "id": "isosorbide-dinitrate",
@@ -1276,7 +1276,7 @@
       "id": "itraconazole",
       "name": "Itraconazole",
       "class": "Triazole antifungal",
-      "indication": "Systemic fungal infections"
+      "indication": "Aspergillosis (not first-line), Candida infections (oral, oesophageal, vulvovaginal), dermatophyte infections (onychomycosis, tinea), sporotrichosis, histoplasmosis, blastomycosis, pityriasis versicolor"
     },
     {
       "id": "ivabradine",
@@ -1323,8 +1323,8 @@
     {
       "id": "letrozole",
       "name": "Letrozole",
-      "class": "Aromatase inhibitor",
-      "indication": "Breast cancer"
+      "class": "Aromatase inhibitors (non-steroidal)",
+      "indication": "Postmenopausal oestrogen receptor-positive breast cancer (adjuvant therapy for early breast cancer, first-line or second-line for advanced breast cancer after tamoxifen). Off-label: ovulation induction in PCOS"
     },
     {
       "id": "levetiracetam",
@@ -1377,8 +1377,8 @@
     {
       "id": "linagliptin",
       "name": "Linagliptin",
-      "class": "DPP-4 inhibitor",
-      "indication": "T2DM"
+      "class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+      "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on to metformin, sulfonylurea, SGLT2 inhibitor, or insulin). Particularly suitable in renal impairment"
     },
     {
       "id": "linezolid",
@@ -1545,14 +1545,14 @@
     {
       "id": "misoprostol-gastro",
       "name": "Misoprostol (GI use)",
-      "class": "Prostaglandin E1 analogue",
-      "indication": "GI mucosal protection"
+      "class": "Prostaglandin E1 analogue (gastric cytoprotective)",
+      "indication": "Prevention of NSAID-induced gastric and duodenal ulcers in high-risk patients requiring long-term NSAID therapy. Healing of NSAID-associated ulcers (alternative to PPI)"
     },
     {
       "id": "mometasone",
       "name": "Mometasone (inhaled)",
-      "class": "Inhaled corticosteroid",
-      "indication": "Asthma"
+      "class": "Inhaled corticosteroid (ICS)",
+      "indication": "Asthma (prophylaxis, maintenance therapy), not for acute relief"
     },
     {
       "id": "mometasone-nasal",
@@ -1659,8 +1659,8 @@
     {
       "id": "nystatin",
       "name": "Nystatin",
-      "class": "Antifungal drugs (Polyene)",
-      "indication": "Oral and intestinal candidiasis, candidal skin infections (topical)"
+      "class": "Polyene antifungal",
+      "indication": "Oral candidiasis (thrush). Intestinal candidiasis. Candidal skin infections (intertrigo, nappy rash). Vulvovaginal candidiasis (topical). Prophylaxis of oral candidiasis in immunosuppressed"
     },
     {
       "id": "ofloxacin",
@@ -1684,7 +1684,7 @@
       "id": "omeprazole",
       "name": "Omeprazole",
       "class": "Proton pump inhibitor (PPI)",
-      "indication": "GORD, peptic ulcer disease, H.pylori eradication"
+      "indication": "Gastro-oesophageal reflux disease (GORD), peptic ulcer disease (gastric and duodenal), H. pylori eradication (combination therapy), NSAID-associated ulcer treatment/prophylaxis, Zollinger-Ellison syndrome (gastrinoma), dyspepsia, upper GI bleeding (IV)"
     },
     {
       "id": "ondansetron",
@@ -1695,8 +1695,8 @@
     {
       "id": "oseltamivir",
       "name": "Oseltamivir",
-      "class": "Neuraminidase inhibitor",
-      "indication": "Influenza treatment/prophylaxis"
+      "class": "Neuraminidase inhibitor (antiviral)",
+      "indication": "Treatment of influenza A and B (ideally within 48h of symptom onset). Post-exposure prophylaxis and seasonal prophylaxis of influenza in at-risk individuals"
     },
     {
       "id": "oxybutynin",
@@ -1797,8 +1797,8 @@
     {
       "id": "posaconazole",
       "name": "Posaconazole",
-      "class": "Triazole antifungal",
-      "indication": "Invasive fungal infections"
+      "class": "Triazole antifungal (extended-spectrum)",
+      "indication": "Prophylaxis of invasive fungal infections in high-risk patients (neutropenia from AML/MDS chemotherapy, allogeneic HSCT with GvHD). Treatment of invasive aspergillosis (refractory/intolerant to amphotericin or voriconazole). Treatment of mucormycosis (zygomycosis). Treatment of chromoblastomycosis, mycetoma, coccidioidomycosis (refractory)"
     },
     {
       "id": "potassium-chloride",
@@ -1875,8 +1875,8 @@
     {
       "id": "pyrazinamide",
       "name": "Pyrazinamide",
-      "class": "Antitubercular",
-      "indication": "TB"
+      "class": "Antitubercular antibiotic",
+      "indication": "Active tuberculosis (pulmonary and extrapulmonary) - intensive phase of treatment (first 2 months only). Part of standard 4-drug regimen"
     },
     {
       "id": "pyridostigmine",
@@ -1899,8 +1899,8 @@
     {
       "id": "rabeprazole",
       "name": "Rabeprazole",
-      "class": "PPI",
-      "indication": "GORD, PUD"
+      "class": "Proton pump inhibitors (PPI)",
+      "indication": "GORD, peptic ulcer disease (gastric/duodenal), H. pylori eradication (with antibiotics), Zollinger-Ellison syndrome, NSAID-associated ulcer prophylaxis"
     },
     {
       "id": "ramipril",
@@ -1917,8 +1917,8 @@
     {
       "id": "rifampicin",
       "name": "Rifampicin",
-      "class": "Rifamycin antibiotic",
-      "indication": "TB (part of multi-drug regimens)"
+      "class": "Rifamycin antibiotic (antitubercular)",
+      "indication": "Active tuberculosis (pulmonary and extrapulmonary) as part of multi-drug regimen. Latent TB (with isoniazid, 3 months). Meningococcal prophylaxis (close contacts). MRSA eradication (combination therapy). Legionella pneumonia (combination with macrolide). Prosthetic joint infections (Staph - with fluoroquinolone)"
     },
     {
       "id": "risedronate",
@@ -1989,8 +1989,8 @@
     {
       "id": "saxagliptin",
       "name": "Saxagliptin",
-      "class": "DPP-4 inhibitor",
-      "indication": "T2DM"
+      "class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+      "indication": "Type 2 diabetes mellitus (monotherapy if metformin not tolerated, or add-on to metformin/sulfonylurea/thiazolidinedione/insulin)"
     },
     {
       "id": "semaglutide",
@@ -2049,8 +2049,8 @@
     {
       "id": "sodium-picosulfate",
       "name": "Sodium picosulfate",
-      "class": "Stimulant laxative (prodrug)",
-      "indication": "Constipation, bowel prep"
+      "class": "Stimulant laxative",
+      "indication": "Short-term relief of constipation. Bowel preparation before colonoscopy/surgery"
     },
     {
       "id": "sodium valproate",
@@ -2110,7 +2110,7 @@
       "id": "tamoxifen",
       "name": "Tamoxifen",
       "class": "Selective oestrogen receptor modulator (SERM)",
-      "indication": "Breast cancer"
+      "indication": "Adjuvant treatment of oestrogen receptor-positive (ER+) breast cancer (especially premenopausal). Risk reduction in high-risk women. Treatment of metastatic breast cancer"
     },
     {
       "id": "tamsulosin",
@@ -2235,8 +2235,8 @@
     {
       "id": "ursodeoxycholic-acid",
       "name": "Ursodeoxycholic acid (UDCA)",
-      "class": "Bile acid",
-      "indication": "Primary biliary cholangitis, cholestasis"
+      "class": "Bile acid (hydrophilic)",
+      "indication": "Primary biliary cholangitis (PBC) - disease-modifying therapy. Dissolution of radiolucent gallstones (rarely used). Symptomatic treatment of pruritus in cholestatic liver disease. Intrahepatic cholestasis of pregnancy (off-license)"
     },
     {
       "id": "valproic acid",

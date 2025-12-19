@@ -1,12 +1,14 @@
 {
   "name": "Anastrozole",
-  "class": "Aromatase inhibitor",
-  "mechanism": "Inhibits aromatase",
-  "dosing": "1mg once daily",
-  "contraindications": "Pregnancy",
-  "monitoring": "Bone density",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Arthralgia, osteoporosis risk",
-  "clinicalPearls": "Postmenopausal breast cancer therapy",
-  "indication": "Breast cancer"
+  "class": "Aromatase inhibitors (hormone therapy)",
+  "mechanism": "Non-steroidal aromatase inhibitor - blocks conversion of androgens to oestrogens in peripheral tissues, reducing circulating oestrogen levels by ~80% in postmenopausal women",
+  "dosing": "Breast cancer: 1mg OD continuously for 5 years (some evidence for extended therapy). Can be taken with/without food. Continue until tumour progression or unacceptable toxicity",
+  "contraindications": "Pregnancy, breastfeeding, premenopausal women (unless ovarian suppression), severe hepatic/renal impairment. Only for oestrogen receptor-positive breast cancer",
+  "interactions": "Tamoxifen (reduces anastrozole efficacy - don't combine). Oestrogen-containing therapies (antagonizes effect). Warfarin (monitor INR). No significant CYP450 interactions",
+  "monitoring": "Bone mineral density (DEXA) at baseline and every 2 years - treat osteoporosis if present. Lipid profile (may ↑ cholesterol). LFTs at baseline. Assess menopausal status (must be postmenopausal). Monitor for bone pain, fractures, arthralgia",
+  "pregnancy": "Contraindicated - teratogenic. May cause fetal harm. Premenopausal women must use non-hormonal contraception. Check not pregnant before starting",
+  "sideEffects": "Very common: arthralgia/bone pain (affect joints/back), hot flushes, osteoporosis/fractures, asthenia, headache. Common: vaginal dryness, hair thinning, GI upset, myalgia, hypercholesterolaemia, mood changes, skin rash. Rare: hepatitis, allergic reactions, thromboembolic events (less than tamoxifen)",
+  "pharmacokinetics": "Well absorbed orally, 85% oral bioavailability. Peak levels 2h. Half-life: 40-50h. Steady state in 7 days. Hepatic metabolism (85%), renal excretion. Food doesn't affect absorption",
+  "clinicalPearls": "First-line adjuvant therapy for postmenopausal ER+ breast cancer (superior to tamoxifen in some trials). Lower thromboembolic risk than tamoxifen but higher fracture risk. Arthralgia is most common side effect causing discontinuation - may improve with switching to different AI or taking at night. Calcium and vitamin D supplementation essential. Bisphosphonates if osteoporosis or high fracture risk. Extended therapy beyond 5 years controversial - discuss risks/benefits. If on tamoxifen, switch after 2-3 years to complete 5 years AI therapy. Monitor for cardiovascular risk factors as oestrogen-protective effect lost",
+  "indication": "Postmenopausal oestrogen receptor-positive early/advanced breast cancer (adjuvant, first-line, or second-line after tamoxifen)"
 }

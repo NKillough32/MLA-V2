@@ -1,12 +1,14 @@
 {
   "name": "Insulin detemir",
-  "class": "Long-acting insulin analogue",
-  "mechanism": "Basal insulin",
-  "dosing": "Once or twice daily individualized dosing",
-  "contraindications": "Hypoglycaemia",
-  "monitoring": "BG",
-  "pregnancy": "Use with specialist advice",
-  "sideEffects": "Hypoglycaemia",
-  "clinicalPearls": "Basal insulin option",
-  "indication": "Basal insulin therapy"
+  "class": "Long-acting insulin analogue (basal insulin)",
+  "mechanism": "Long-acting insulin analogue - slow absorption due to self-association into hexamers and reversible albumin binding. Provides steady basal insulin coverage without pronounced peak. Activates insulin receptors, facilitates glucose uptake, suppresses hepatic glucose output",
+  "dosing": "SC once or twice daily (individualized). Type 1: typically 0.2-0.4 units/kg/day as part of basal-bolus. Type 2: start 10 units OD or 0.1-0.2 units/kg, titrate by 2-4 units every 3 days based on fasting glucose (target <7mmol/L). If OD insufficient, split to BD. Inject same time(s) daily",
+  "contraindications": "Hypoglycaemia. Caution: renal/hepatic impairment (may ↓ requirements), concurrent illness, increased physical activity",
+  "interactions": "Oral antidiabetics, ACE inhibitors, fibrates, MAOIs ↑ hypoglycaemia risk. Corticosteroids, oral contraceptives, thiazides, thyroid hormones, danazol, growth hormone ↓ effect. Beta-blockers mask hypoglycaemia symptoms. Alcohol ↑ hypo risk",
+  "monitoring": "Fasting blood glucose (target <7mmol/L for most; <5 in pregnancy). Bedtime glucose if nocturnal hypos. HbA1c every 3-6 months (target ≤48mmol/mol for most T2DM, ≤53 for most T1DM). Injection sites for lipodystrophy. Signs of hypo/hyperglycaemia. Weight",
+  "pregnancy": "Safe - can be used in pregnancy alongside rapid-acting analogues (lispro/aspart). Insulin requirements change: ↓ in 1st trimester, ↑ in 2nd/3rd trimester (may double). Tight control essential. Specialist diabetes in pregnancy team. May need to switch to BD dosing",
+  "sideEffects": "Hypoglycaemia (especially nocturnal with long-acting insulins), weight gain (less than NPH/glargine), injection site reactions, lipohypertrophy (rotate sites), peripheral oedema (starting insulin), rarely severe allergic reactions",
+  "pharmacokinetics": "SC: Onset 1-2h, relatively flat profile, duration 20-24h (dose-dependent). Slower absorption and longer duration than NPH. Albumin binding prolongs action. Needs BD dosing in ~40% patients (vs glargine/degludec which are OD). Hepatic/renal metabolism",
+  "clinicalPearls": "Brand name: Levemir. Less weight gain than glargine in some studies. Relatively flat profile reduces nocturnal hypoglycaemia risk vs NPH. May need twice-daily dosing (esp. T1DM, higher doses) - if fasting glucose good but pre-dinner high, split to BD. Clear solution (like all analogues). Cannot mix with other insulins. Rotate injection sites (avoid lipohypertrophy). Refrigerate unopened (2-8°C); in-use at room temp <6 weeks. Titrate fasting glucose to target (typically increase 2-4 units every 3-7 days if fasting >7mmol/L). If recurrent hypos, reduce by 10-20%",
+  "indication": "Type 1 diabetes (basal insulin in basal-bolus regimen), Type 2 diabetes (basal insulin with oral agents or in basal-bolus regimen), pregnancy-related diabetes"
 }
