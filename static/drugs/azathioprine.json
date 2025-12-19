@@ -3,11 +3,11 @@
   "class": "Immunosuppressant/antimetabolite",
   "mechanism": "Purine analogue inhibiting DNA synthesis",
   "dosing": "Dose per indication; TPMT testing recommended prior to use",
-  "contraindications": "Pregnancy unless benefits outweigh risks (specialist advice)",
-  "interactions": "Allopurinol (↑ azathioprine toxicity), other immunosuppressants",
-  "monitoring": "FBC, LFTs, TPMT activity",
-  "pregnancy": "Use only if necessary with specialist advice",
-  "sideEffects": "Myelosuppression, hepatotoxicity",
-  "clinicalPearls": "Check TPMT before prescribing",
-  "indication": "Autoimmune diseases, transplant"
+  "contraindications": "Severe leukopenia or thrombocytopenia; known hypersensitivity; caution in pregnancy — specialist advice needed",
+  "interactions": "Allopurinol markedly increases active metabolite levels — dose reductions of azathioprine required; interactions with other immunosuppressants and TPMT-related drugs",
+  "monitoring": "Baseline and regular full blood counts and liver function tests; TPMT enzyme/activity testing before initiation to identify patients at increased risk of myelosuppression",
+  "pregnancy": "Use only if benefits outweigh risks and after specialist discussion; limited data — specialist-led decision making",
+  "sideEffects": "Myelosuppression (dose-limiting), hepatotoxicity, increased susceptibility to infections, possible long-term malignancy risk",
+  "clinicalPearls": "Check TPMT status before starting; consider dose reduction or alternative therapy in patients with low TPMT activity; counsel about infection risk",
+  "indication": "Immunosuppression for autoimmune diseases and for prevention of transplant rejection under specialist supervision"
 }

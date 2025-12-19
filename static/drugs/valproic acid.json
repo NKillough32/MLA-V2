@@ -3,12 +3,12 @@
   "class": "Valproate",
   "mechanism": "As sodium valproate",
   "dosing": "As sodium valproate (doses expressed as valproic acid)",
-  "contraindications": "As sodium valproate",
-  "interactions": "As sodium valproate",
-  "monitoring": "As sodium valproate",
-  "pregnancy": "As sodium valproate - highly teratogenic",
-  "sideEffects": "As sodium valproate",
-  "pharmacokinetics": "As sodium valproate",
-  "clinicalPearls": "Mixture of sodium valproate and valproic acid (as Depakote, Epilim Chrono). Same precautions as sodium valproate. Pregnancy Prevention Programme applies",
-  "indication": "As sodium valproate"
+  "contraindications": "Pregnancy (highly teratogenic); known mitochondrial disorders (e.g., POLG-related); hypersensitivity to valproate",
+  "interactions": "Numerous pharmacokinetic and pharmacodynamic interactions (enzyme inhibition/induction) — check interactions for co-prescribed antiepileptics and psychotropics",
+  "monitoring": "Baseline and regular LFTs and full blood count, serum valproate levels where indicated, and monitoring of clinical response; ensure Pregnancy Prevention Programme for women of childbearing potential",
+  "pregnancy": "Contraindicated in pregnancy due to high teratogenic risk; specialist advice required and discuss alternatives for women of childbearing potential",
+  "sideEffects": "Common: weight gain, tremor; serious: hepatotoxicity (especially in young children), pancreatitis, teratogenicity; risk of hyperammonemia",
+  "pharmacokinetics": "Highly protein-bound; hepatic metabolism with several pathways; interactions common",
+  "clinicalPearls": "Use specialist guidance for initiation and monitoring; ensure effective contraception in women of childbearing potential and enrolment in risk-management programmes",
+  "indication": "Epilepsy, bipolar affective disorder, and certain cases of migraine prophylaxis (selected patients)"
 }

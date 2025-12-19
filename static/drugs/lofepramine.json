@@ -3,12 +3,12 @@
   "class": "Antidepressants, tricyclics",
   "mechanism": "Noradrenaline reuptake inhibitor",
   "dosing": "Depression: 70mg BD-TDS",
-  "contraindications": "As other tricyclics",
-  "interactions": "As other tricyclics",
-  "monitoring": "As other tricyclics",
-  "pregnancy": "Use only if essential",
-  "sideEffects": "Fewer antimuscarinic and cardiotoxic effects than older tricyclics. Less dangerous in overdose",
-  "pharmacokinetics": "Oral, hepatic metabolism",
-  "clinicalPearls": "Safest tricyclic in overdose - less cardiotoxic. Better tolerated than older tricyclics. Less sedating. Good choice if tricyclic needed in elderly",
-  "indication": "Depression"
+  "contraindications": "Concurrent MAO inhibitor use and other standard TCA contraindications; known hypersensitivity",
+  "interactions": "Interactions similar to other tricyclic antidepressants — caution with other serotonergic agents and MAOIs",
+  "monitoring": "Monitor for clinical response, anticholinergic side effects and cardiac symptoms; ECG in older patients or those with cardiac risk",
+  "pregnancy": "Use only if benefits outweigh risks and under specialist advice",
+  "sideEffects": "Anticholinergic effects (dry mouth, constipation), orthostatic hypotension; lower cardiotoxicity in overdose compared with older TCAs",
+  "pharmacokinetics": "Oral administration with hepatic metabolism",
+  "clinicalPearls": "Considered safer than many TCAs in overdose; useful option when TCA is clinically indicated, especially in older patients",
+  "indication": "Major depressive disorder when a tricyclic antidepressant is indicated"
 }

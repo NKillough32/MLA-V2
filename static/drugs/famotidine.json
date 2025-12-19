@@ -2,13 +2,13 @@
   "name": "Famotidine",
   "class": "H2-receptor antagonists",
   "mechanism": "Histamine H2 receptor antagonist",
-  "dosing": "Peptic ulcer: 40mg nocte or 20mg BD. GORD: 20-40mg BD",
-  "contraindications": "Hypersensitivity",
-  "interactions": "Fewer than cimetidine. Ketoconazole/itraconazole (↓ absorption)",
-  "monitoring": "Symptom control, renal function",
-  "pregnancy": "Use only if essential",
-  "sideEffects": "Headache, dizziness, constipation, diarrhoea",
-  "pharmacokinetics": "Oral, renal excretion",
-  "clinicalPearls": "Fewer interactions than cimetidine. Less commonly used since ranitidine recall. PPIs now generally preferred for acid suppression",
-  "indication": "Peptic ulcer disease, GORD, dyspepsia"
+  "dosing": "Peptic ulcer: commonly 40 mg nocte or 20 mg twice daily; GORD: 20–40 mg twice daily depending on severity; adjust dose in renal impairment",
+  "contraindications": "Known hypersensitivity to famotidine or related H2 antagonists",
+  "interactions": "Fewer clinically significant interactions than cimetidine; may reduce absorption of azole antifungals (ketoconazole, itraconazole) due to altered gastric pH; overall interaction profile favourable",
+  "monitoring": "Assess symptom response and healing where clinically indicated; check renal function and adjust dose in renal impairment",
+  "pregnancy": "Use only if essential; avoid unnecessary exposure but may be used when clinically indicated",
+  "sideEffects": "Common: headache, dizziness, gastrointestinal upset (nausea, constipation, diarrhoea); rare: confusion in elderly or those with severe renal impairment",
+  "pharmacokinetics": "Oral administration with predominant renal excretion; dose adjustment required in renal impairment",
+  "clinicalPearls": "Less interaction-prone than cimetidine; proton pump inhibitors are generally preferred for many acid-related conditions but famotidine is useful when PPIs are contraindicated or not tolerated",
+  "indication": "Peptic ulcer disease, gastro-oesophageal reflux disease (GORD), and symptomatic relief of dyspepsia"
 }

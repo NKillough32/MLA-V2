@@ -3,11 +3,11 @@
   "class": "Antiplatelet - irreversible P2Y12 inhibitor",
   "mechanism": "Irreversible P2Y12 receptor antagonist",
   "dosing": "Loading 60mg, then 10mg daily (consider 5mg daily in elderly/low body weight per guidance); used per ACS/PCI protocols",
-  "contraindications": "History of stroke/TIA, active pathological bleeding",
-  "interactions": "Other antiplatelet/anticoagulant drugs (↑ bleeding)",
-  "monitoring": "Signs of bleeding, Hb and platelets",
-  "pregnancy": "Use only if benefit outweighs risk",
-  "sideEffects": "Bleeding, bruising",
-  "clinicalPearls": "Preferentially used in PCI populations; avoid in prior stroke/TIA",
-  "indication": "ACS patients undergoing PCI (per cardiology guidance)"
+  "contraindications": "Prior history of stroke or transient ischaemic attack (TIA), active pathological bleeding, severe hepatic impairment",
+  "interactions": "Concomitant antiplatelet or anticoagulant therapy increases bleeding risk; avoid with other agents that significantly increase bleeding unless specifically indicated",
+  "monitoring": "Monitor for signs of bleeding, haemoglobin and platelet count where clinically indicated; assess renal and hepatic function as relevant",
+  "pregnancy": "Use only if benefits justify potential risks; specialist/cardiology advice required",
+  "sideEffects": "Bleeding is the principal adverse effect (including major bleeding); bruising and minor bleeding are common",
+  "clinicalPearls": "Preferred P2Y12 inhibitor in some PCI/ACS settings for patients at lower bleeding risk; consider dose reduction (5 mg) in elderly (>75) or low body weight per guidance; avoid in prior stroke/TIA patients",
+  "indication": "Antiplatelet therapy in acute coronary syndrome particularly in patients undergoing percutaneous coronary intervention (follow cardiology protocols)"
 }

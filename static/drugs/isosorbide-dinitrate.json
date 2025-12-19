@@ -3,11 +3,11 @@
   "class": "Nitrate (shorter-acting)",
   "mechanism": "NO donor — venodilation and preload reduction",
   "dosing": "Typical dosing varies by formulation and indication; follow product guidance",
-  "contraindications": "Concurrent PDE5 inhibitors, hypotension",
-  "interactions": "PDE5 inhibitors",
-  "monitoring": "BP",
-  "pregnancy": "Use if essential",
-  "sideEffects": "Headache, hypotension",
-  "clinicalPearls": "Used less commonly than ISMN for chronic management",
-  "indication": "Angina, acute heart failure symptom relief in some settings"
+  "contraindications": "Concurrent phosphodiesterase-5 (PDE5) inhibitor use (severe hypotension risk), marked hypotension, severe anaemia, increased intracranial pressure; avoid where systemic hypotension is problematic",
+  "interactions": "Strong interaction with PDE5 inhibitors (profound hypotension); additive hypotensive effects with other vasodilators; alcohol may exacerbate hypotension",
+  "monitoring": "Measure blood pressure and heart rate before and after dose initiation and with dose changes; monitor symptom relief and tolerance to headaches",
+  "pregnancy": "Use in pregnancy only if essential and after specialist discussion—short-term use may be considered for acute symptom relief",
+  "sideEffects": "Common: headache, flushing, hypotension; less common: reflex tachycardia; long-term tolerance may develop",
+  "clinicalPearls": "Short-acting nitrate useful for acute angina or symptomatic relief; isosorbide mononitrate (ISMN) is preferred for chronic prophylaxis due to longer duration; ensure nitrate-free interval to reduce tolerance",
+  "indication": "Relief of acute angina symptoms and selected use for symptom relief in acute heart failure settings (e.g., pulmonary oedema)"
 }

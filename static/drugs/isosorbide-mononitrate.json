@@ -2,12 +2,12 @@
   "name": "Isosorbide mononitrate",
   "class": "Nitrate (long-acting)",
   "mechanism": "NO donor causing venodilation and reduced preload",
-  "dosing": "Immediate/modified-release preparations vary; commonly 20-60mg daily for chronic angina; follow product guidance",
-  "contraindications": "Concurrent PDE5 inhibitor use, hypotension, severe anemia",
-  "interactions": "PDE5 inhibitors (profound hypotension)",
-  "monitoring": "BP, symptomatic response",
-  "pregnancy": "Use if essential",
-  "sideEffects": "Headache, hypotension, reflex tachycardia",
-  "clinicalPearls": "Use nitrate-free interval to avoid tolerance",
-  "indication": "Chronic stable angina, heart failure symptom control in some patients"
+  "dosing": "Dosing depends on formulation (immediate- or modified-release); commonly 20–60 mg daily for chronic angina—follow product-specific guidance and allow a nitrate-free interval to reduce tolerance",
+  "contraindications": "Concurrent phosphodiesterase-5 (PDE5) inhibitor use, marked hypotension, severe anaemia, increased intracranial pressure, known hypersensitivity",
+  "interactions": "Co-administration with PDE5 inhibitors can cause profound hypotension; additive hypotensive effects with other vasodilators or antihypertensives",
+  "monitoring": "Monitor blood pressure, heart rate and symptomatic response; check for development of postural symptoms and headaches",
+  "pregnancy": "Use only if clinically essential with specialist advice",
+  "sideEffects": "Common: headache, flushing, hypotension; reflex tachycardia; long-term use requires nitrate-free interval to prevent tolerance",
+  "clinicalPearls": "Isosorbide mononitrate preferred for once-daily chronic prophylaxis due to longer duration; ensure daily nitrate-free period to reduce tolerance; educate patients about timing",
+  "indication": "Prevention of angina (chronic stable angina) and symptomatic relief in selected patients with heart failure"
 }

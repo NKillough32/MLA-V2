@@ -2,13 +2,13 @@
   "name": "Antimicrobial Emollient (Dermol 500)",
   "class": "Antimicrobial emollient",
   "mechanism": "Emollient with benzalkonium chloride and chlorhexidine (antimicrobial)",
-  "dosing": "Apply liberally and frequently. Can use as soap substitute",
-  "contraindications": "Hypersensitivity",
-  "interactions": "None significant",
-  "monitoring": "Skin condition, signs of infection",
-  "pregnancy": "Safe",
-  "sideEffects": "Skin irritation (rare), contact dermatitis",
-  "pharmacokinetics": "Local action only",
-  "clinicalPearls": "Useful for infection-prone eczema. Contains antiseptics. Doubles as wash product. Fire hazard warning applies",
-  "indication": "Eczema with recurrent infection, dry skin prone to bacterial colonisation"
+  "dosing": "Apply liberally and frequently to affected areas; may be used as a soap substitute for cleansing in eczema prone to infection",
+  "contraindications": "Known hypersensitivity to chlorhexidine, benzalkonium chloride or other formulation components",
+  "interactions": "Avoid use concurrently with other topical antiseptics that may interact with chlorhexidine; no relevant systemic interactions",
+  "monitoring": "Monitor skin for signs of irritation or contact dermatitis and for clinical response in infection-prone eczema",
+  "pregnancy": "Considered safe for topical use in pregnancy; avoid unnecessary exposure",
+  "sideEffects": "Rare contact dermatitis or skin irritation; hypersensitivity reactions reported in some individuals",
+  "pharmacokinetics": "Acts locally on the skin with negligible systemic absorption",
+  "clinicalPearls": "Useful as an antimicrobial emollient in patients with eczema prone to bacterial colonisation; suitable as a wash substitute but monitor for irritation; note fire hazard with emollient products",
+  "indication": "Topical management of eczema with recurrent infection and dry skin prone to bacterial colonisation"
 }

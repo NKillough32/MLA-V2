@@ -3,11 +3,11 @@
   "class": "Antimetabolite / cytoreductive",
   "mechanism": "Inhibits ribonucleotide reductase",
   "dosing": "Dosing per indication (e.g., myeloproliferative disease)",
-  "contraindications": "Pregnancy, severe bone marrow suppression",
-  "interactions": "Cytotoxic drugs (additive marrow suppression)",
-  "monitoring": "FBC, renal, hepatic function",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Myelosuppression, mucositis, teratogenicity",
-  "clinicalPearls": "Used for myeloproliferative neoplasms and sickle cell to reduce crises",
-  "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease"
+  "contraindications": "Pregnancy, severe bone marrow suppression, known hypersensitivity",
+  "interactions": "Concurrent cytotoxic or marrow-suppressing drugs increase risk of myelosuppression; monitor co-administered agents",
+  "monitoring": "Regular full blood counts, and renal and liver function tests; frequency depends on indication and dose",
+  "pregnancy": "Contraindicated due to teratogenicity; effective contraception required for patients of childbearing potential",
+  "sideEffects": "Myelosuppression, mucositis, gastrointestinal upset, potential teratogenicity",
+  "clinicalPearls": "Specialist-led dosing and monitoring required; used in myeloproliferative disorders and to reduce vaso-occlusive crises in sickle cell disease",
+  "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease and other specialist indications"
 }

@@ -3,11 +3,11 @@
   "class": "Polyenes (antifungal)",
   "mechanism": "Binds ergosterol and disrupts fungal cell membranes",
   "dosing": "IV formulations vary; lipid formulations reduce nephrotoxicity",
-  "contraindications": "Hypersensitivity to amphotericin",
-  "interactions": "Nephrotoxins increase toxicity risk",
-  "monitoring": "Renal function, electrolytes (K+, Mg2+), infusion reactions",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "Nephrotoxicity, infusion-related fevers, electrolyte disturbances",
-  "clinicalPearls": "Reserved for serious systemic fungal infections",
-  "indication": "Serious systemic fungal infections"
+  "contraindications": "Hypersensitivity to amphotericin B or formulation components",
+  "interactions": "Concurrent nephrotoxins (e.g., aminoglycosides, calcineurin inhibitors) increase risk of renal injury; monitor co-administered drugs closely",
+  "monitoring": "Frequent monitoring of renal function, serum electrolytes (potassium, magnesium), and for infusion-related reactions during and after administration; consider pre-medication for infusion reactions",
+  "pregnancy": "Use only if benefits outweigh risks; specialist infectious disease/obstetric advice required",
+  "sideEffects": "Nephrotoxicity (dose-limiting), infusion-related fever and rigors, electrolyte disturbances (hypokalaemia, hypomagnesaemia); lipid formulations reduce nephrotoxicity",
+  "clinicalPearls": "Reserved for serious systemic fungal infections; consider lipid formulations to reduce nephrotoxicity and monitor electrolytes closely",
+  "indication": "Serious systemic fungal infections where alternative agents are unsuitable"
 }

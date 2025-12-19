@@ -3,12 +3,12 @@
   "class": "Z-drugs (Hypnotics)",
   "mechanism": "Imidazopyridine - selective GABA-A receptor agonist",
   "dosing": "10mg at bedtime (5mg in elderly). Maximum 4 weeks",
-  "contraindications": "As zopiclone",
-  "interactions": "As zopiclone",
-  "monitoring": "Dependence, complex sleep behaviours",
-  "pregnancy": "Avoid",
-  "sideEffects": "Drowsiness, dizziness, headache, complex sleep behaviours (sleep-walking, sleep-eating), dependence, amnesia",
-  "pharmacokinetics": "Rapid onset, short half-life (2-3h)",
-  "clinicalPearls": "More hypnotic-selective than benzodiazepines. Risk of complex sleep behaviours - warn patients. Short duration reduces morning hangover but can cause early waking",
-  "indication": "Short-term insomnia"
+  "contraindications": "Severe respiratory insufficiency, sleep apnoea syndrome (unless supervised), hypersensitivity to zolpidem or excipients",
+  "interactions": "Additive sedative effects with alcohol, opioids, benzodiazepines and other CNS depressants; drugs that inhibit CYP3A4 may increase zolpidem exposure",
+  "monitoring": "Monitor for dependence, tolerance and complex sleep-related behaviours (sleep-driving, sleep-eating); review need for ongoing therapy and aim for short-term use",
+  "pregnancy": "Avoid where possible; consider non-pharmacological measures for insomnia in pregnancy",
+  "sideEffects": "Drowsiness, dizziness, headache, complex sleep behaviours (sleep-walking, sleep-eating), anterograde amnesia, dependence and withdrawal symptoms on abrupt cessation",
+  "pharmacokinetics": "Rapid onset of action with a short elimination half-life (approximately 2–3 hours)",
+  "clinicalPearls": "Use lowest effective dose for shortest possible duration (usually ≤4 weeks); counsel patients about avoiding alcohol and activities requiring full alertness the next day",
+  "indication": "Short-term management of insomnia characterized by difficulty falling asleep"
 }

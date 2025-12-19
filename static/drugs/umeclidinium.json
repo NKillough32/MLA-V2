@@ -3,12 +3,12 @@
   "class": "Antimuscarinics, bronchodilators (LAMA)",
   "mechanism": "Long-acting muscarinic antagonist - bronchodilation",
   "dosing": "Inhaled: 55mcg OD (often combined with vilanterol as Anoro)",
-  "contraindications": "Hypersensitivity",
-  "interactions": "Other antimuscarinics (↑ effects)",
-  "monitoring": "Respiratory function, antimuscarinic effects",
-  "pregnancy": "Avoid unless essential",
-  "sideEffects": "Dry mouth, nasopharyngitis, upper respiratory tract infection, cough",
-  "pharmacokinetics": "Inhaled, minimal systemic absorption",
-  "clinicalPearls": "Once-daily LAMA for COPD. Usually combined with LABA (vilanterol). Alternative to tiotropium. Similar efficacy to other LAMAs",
-  "indication": "COPD maintenance"
+  "contraindications": "Known hypersensitivity to umeclidinium or formulation components, severe hypersensitivity to other antimuscarinic agents",
+  "interactions": "Additive antimuscarinic effects when combined with other anticholinergic drugs; caution with medications that may exacerbate urinary retention or narrow-angle glaucoma",
+  "monitoring": "Monitor respiratory function (spirometry), symptom control and for antimuscarinic adverse effects such as urinary retention and dry mouth",
+  "pregnancy": "Avoid unless essential and after specialist discussion",
+  "sideEffects": "Dry mouth, upper respiratory tract infection, cough; local antimuscarinic effects predominate with minimal systemic effects",
+  "pharmacokinetics": "Administered by inhalation with low systemic exposure and once-daily activity",
+  "clinicalPearls": "Once-daily long-acting muscarinic antagonist useful for maintenance therapy in COPD; commonly combined with a LABA for improved bronchodilation; choose therapy based on symptom burden and exacerbation risk",
+  "indication": "Maintenance bronchodilator therapy in COPD (often used in combination inhalers)"
 }

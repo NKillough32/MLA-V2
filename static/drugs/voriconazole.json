@@ -3,11 +3,11 @@
   "class": "Triazole antifungal",
   "mechanism": "Inhibits fungal 14α-demethylase",
   "dosing": "Weight and route dependent; IV/PO dosing per SmPC",
-  "contraindications": "Concurrent terfenadine, astemizole, cisapride",
-  "interactions": "Extensive CYP interactions",
-  "monitoring": "LFTs, visual disturbances, drug levels in prolonged therapy",
-  "pregnancy": "Avoid unless necessary",
-  "sideEffects": "Visual disturbance, hepatotoxicity, photosensitivity",
-  "clinicalPearls": "First-line for invasive aspergillosis in many settings",
-  "indication": "Serious invasive fungal infections"
+  "contraindications": "Known hypersensitivity to voriconazole; concurrent use of contraindicated drugs that prolong QT or have severe interactions (consult SmPC)",
+  "interactions": "Extensive CYP450 interactions (notably CYP2C19, CYP2C9, CYP3A4); many drug levels and effects may be altered — check interactions before prescribing",
+  "monitoring": "Baseline and periodic LFTs; monitor for visual disturbances, skin photosensitivity, and consider therapeutic drug monitoring in prolonged therapy or in patients with significant interactions",
+  "pregnancy": "Avoid unless potential benefit justifies the risk; seek specialist advice",
+  "sideEffects": "Visual disturbance (reversible), hepatotoxicity, photosensitivity and skin reactions; may prolong QT interval",
+  "clinicalPearls": "Important to review drug interactions and consider therapeutic drug monitoring in prolonged therapy; first-line therapy for invasive aspergillosis in many settings",
+  "indication": "Serious invasive fungal infections such as invasive aspergillosis and certain severe mould/yeast infections"
 }

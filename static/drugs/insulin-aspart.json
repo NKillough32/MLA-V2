@@ -3,11 +3,11 @@
   "class": "Rapid-acting insulin analogue",
   "mechanism": "Rapid-onset insulin for prandial glucose control",
   "dosing": "Doses individualized; given at mealtimes or by pump",
-  "contraindications": "Hypoglycaemia",
-  "interactions": "Drugs affecting glucose levels (steroids, beta-blockers)",
-  "monitoring": "Blood glucose, signs of hypoglycaemia",
-  "pregnancy": "Used in pregnancy when required (insulin of choice per obstetric guidance)",
-  "sideEffects": "Hypoglycaemia, weight gain",
-  "clinicalPearls": "Short-acting prandial insulin used in multiple regimens",
-  "indication": "Prandial insulin therapy in type 1 and type 2 diabetes as required"
+  "contraindications": "Hypoglycaemia or hypersensitivity to insulin or excipients",
+  "interactions": "Many drugs affect glucose control — e.g., corticosteroids may increase glucose, beta-blockers may blunt hypoglycaemia symptoms; adjust insulin dose accordingly",
+  "monitoring": "Frequent blood glucose monitoring during initiation and titration, and when other interacting drugs or acute illness occur; monitor for hypoglycaemia",
+  "pregnancy": "Insulin is the preferred agent for glycaemic control in pregnancy when needed; follow obstetric guidance",
+  "sideEffects": "Hypoglycaemia, injection-site reactions, weight gain; rare allergic reactions",
+  "clinicalPearls": "Rapid-acting analogue given at mealtimes to control post-prandial glucose; dosing should be individualized with education on carbohydrate counting and hypoglycaemia management",
+  "indication": "Prandial insulin therapy for glycaemic control in type 1 diabetes and as required in type 2 diabetes"
 }

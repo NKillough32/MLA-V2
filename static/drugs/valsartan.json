@@ -3,11 +3,11 @@
   "class": "Angiotensin receptor blocker (ARB)",
   "mechanism": "Selective AT1 receptor antagonist",
   "dosing": "Hypertension: 80-160mg daily; titrate per response",
-  "contraindications": "Pregnancy, bilateral renal artery stenosis",
-  "interactions": "NSAIDs, potassium supplements, lithium",
-  "monitoring": "eGFR and potassium baseline and 1–2 weeks after initiation",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Dizziness, hyperkalaemia, renal impairment",
-  "clinicalPearls": "Alternative to ACE inhibitors when cough/intolerance occurs",
-  "indication": "Hypertension, heart failure (where indicated)"
+  "contraindications": "Pregnancy (contraindicated), bilateral renal artery stenosis, known hypersensitivity",
+  "interactions": "NSAIDs may reduce antihypertensive effect and increase renal risk; avoid combined use with other RAS blockers; potassium supplements/ potassium-sparing diuretics increase hyperkalaemia risk; lithium levels may rise",
+  "monitoring": "Check eGFR and serum potassium at baseline and 1–2 weeks after initiation or dose changes; monitor blood pressure and signs of renal impairment",
+  "pregnancy": "Contraindicated during pregnancy; discontinue as soon as pregnancy is confirmed and seek specialist advice",
+  "sideEffects": "Dizziness, hypotension, hyperkalaemia, possible renal impairment; rare angioedema",
+  "clinicalPearls": "Useful alternative to ACE inhibitors in patients who develop cough; monitor renal function closely when used with diuretics or NSAIDs",
+  "indication": "Hypertension and heart failure where ARB therapy is indicated"
 }

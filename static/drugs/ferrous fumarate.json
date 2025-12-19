@@ -3,12 +3,11 @@
   "class": "Iron supplement",
   "mechanism": "Provides supplemental elemental iron",
   "dosing": "200-400mg OD-TDS (containing 65-130mg elemental iron per tablet)",
-  "contraindications": "As ferrous sulfate",
-  "interactions": "As ferrous sulfate",
-  "monitoring": "As ferrous sulfate",
-  "pregnancy": "Safe",
-  "sideEffects": "As ferrous sulfate (possibly better tolerated)",
-  "pharmacokinetics": "As ferrous sulfate",
-  "clinicalPearls": "Higher elemental iron content than ferrous sulfate per mg. Some patients tolerate better. Otherwise equivalent to ferrous sulfate",
-  "indication": "Iron deficiency anaemia"
+  "contraindications": "Known iron overload states (e.g., haemochromatosis), anaemia of other specified causes unless iron deficiency demonstrated, known hypersensitivity",
+  "interactions": "Absorption reduced by antacids, calcium, and some antibiotics (quinolones, tetracyclines); separate dosing where possible; vitamin C can enhance absorption",
+  "monitoring": "Monitor hemoglobin, mean cell volume and reticulocyte response; check ferritin/iron studies to confirm response and guide duration of therapy",
+  "pregnancy": "Generally safe and commonly used in pregnancy for iron deficiency under supervision",
+  "sideEffects": "Gastrointestinal upset (nausea, abdominal pain), constipation or diarrhoea, dark stools; some formulations may be better tolerated",
+  "clinicalPearls": "Choose formulation based on elemental iron content and tolerance; advise patient about dark stools and constipation, and give guidance on administration with regard to food and interacting medications",
+  "indication": "Treatment and prevention of iron deficiency anaemia"
 }

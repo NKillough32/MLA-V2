@@ -2,13 +2,13 @@
   "name": "Glipizide",
   "class": "Sulfonylureas",
   "mechanism": "Stimulates insulin release from pancreatic beta cells",
-  "dosing": "Start 2.5-5mg daily before breakfast, increase gradually. Max 20mg daily (can divide doses)",
-  "contraindications": "As other sulfonylureas",
-  "interactions": "As other sulfonylureas",
-  "monitoring": "As other sulfonylureas",
-  "pregnancy": "Avoid - use insulin",
-  "sideEffects": "As other sulfonylureas",
-  "pharmacokinetics": "Oral, shorter acting than glimepiride, hepatic metabolism",
-  "clinicalPearls": "Shorter-acting sulfonylurea. Can be given BD if needed. Less commonly used in UK than gliclazide. Similar efficacy and side effects",
-  "indication": "Type 2 diabetes"
+  "dosing": "Start 2.5–5 mg orally before breakfast, increase gradually depending on glycaemic response; usual maximum 20 mg daily (may divide doses); use with caution in elderly and those with renal impairment",
+  "contraindications": "Type 1 diabetes, diabetic ketoacidosis, known hypersensitivity to sulfonylureas; caution in severe hepatic impairment",
+  "interactions": "Drugs that increase hypoglycaemia risk (e.g., other antidiabetics, sulfonamides) or reduce efficacy (e.g., corticosteroids); rifampicin and other enzyme inducers may reduce effect",
+  "monitoring": "Regular blood glucose monitoring during initiation and dose changes; assess HbA1c periodically; monitor for symptoms of hypoglycaemia especially in elderly or patients with renal impairment",
+  "pregnancy": "Avoid - insulin is preferred for glycaemic control in pregnancy",
+  "sideEffects": "Hypoglycaemia (major risk), weight gain, gastrointestinal upset, rash; hypoglycaemia risk increased in elderly and those with renal impairment",
+  "pharmacokinetics": "Oral administration; shorter-acting sulfonylurea with hepatic metabolism and renal excretion of metabolites",
+  "clinicalPearls": "Shorter-acting agent among sulfonylureas; consider alternatives (e.g., gliclazide or insulin) in frail/elderly to reduce prolonged hypoglycaemia risk; adjust dose with renal impairment",
+  "indication": "Type 2 diabetes mellitus for additional glycaemic control when diet, exercise and metformin (or other first-line therapy) are insufficient"
 }

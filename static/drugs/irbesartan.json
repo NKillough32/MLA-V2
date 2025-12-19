@@ -3,11 +3,11 @@
   "class": "Angiotensin receptor blocker (ARB)",
   "mechanism": "Selective AT1 receptor antagonist",
   "dosing": "Hypertension: 150-300mg daily",
-  "contraindications": "Pregnancy, bilateral renal artery stenosis",
-  "interactions": "NSAIDs, potassium supplements, lithium",
-  "monitoring": "eGFR and potassium baseline and 1–2 weeks after initiation",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Dizziness, hyperkalaemia",
-  "clinicalPearls": "Common ARB for hypertension and nephropathy",
-  "indication": "Hypertension, proteinuric CKD"
+  "contraindications": "Pregnancy (teratogenic risk with RAS blockade); bilateral renal artery stenosis; history of angioedema with ARBs",
+  "interactions": "Concomitant NSAIDs (may reduce antihypertensive effect and increase renal risk), potassium-sparing diuretics or potassium supplements (risk of hyperkalaemia), lithium (increased lithium levels), other RAS blockers",
+  "monitoring": "Check eGFR and serum potassium at baseline, 1–2 weeks after initiation or dose changes, and periodically thereafter; monitor blood pressure response and symptoms of hypotension",
+  "pregnancy": "Contraindicated in pregnancy; stop as soon as pregnancy is confirmed and seek specialist advice",
+  "sideEffects": "Common: dizziness, postural hypotension; metabolic: hyperkalaemia; renal function alteration; rare: angioedema",
+  "clinicalPearls": "Well-tolerated ARB often used when ACE inhibitors are not tolerated; beneficial for proteinuric CKD but monitor renal function closely",
+  "indication": "Hypertension (monotherapy or combination therapy) and reduction of proteinuria in chronic kidney disease; selected use in heart failure where indicated"
 }

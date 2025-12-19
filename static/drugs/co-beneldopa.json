@@ -3,12 +3,12 @@
   "class": "Dopaminergic drugs for Parkinson\\",
   "mechanism": "Levodopa + benserazide (peripheral dopa-decarboxylase inhibitor)",
   "dosing": "Start 50/12.5mg TDS-QDS, titrate to response. Max 200/800mg daily",
-  "contraindications": "As co-careldopa",
-  "interactions": "As co-careldopa",
-  "monitoring": "As co-careldopa",
-  "pregnancy": "Use only if essential",
-  "sideEffects": "As co-careldopa",
-  "pharmacokinetics": "Similar to co-careldopa",
-  "clinicalPearls": "Alternative to co-careldopa - same efficacy. Some patients prefer one over the other. Also available as dispersible Madopar",
-  "indication": "Parkinson\\"
+  "contraindications": "Concurrent use of non-selective MAO inhibitors; known hypersensitivity",
+  "interactions": "Antipsychotics that antagonise dopamine may reduce efficacy; exact interactions mirror those of other levodopa preparations",
+  "monitoring": "Assess motor response, dyskinesia, blood pressure for orthostatic hypotension, and other dopaminergic side effects; adjust dose accordingly",
+  "pregnancy": "Use only if essential with specialist advice",
+  "sideEffects": "Nausea, orthostatic hypotension, dyskinesia with long-term use, hallucinations/psychosis in susceptible individuals",
+  "pharmacokinetics": "Levodopa is converted to dopamine centrally; benserazide inhibits peripheral decarboxylation increasing central availability",
+  "clinicalPearls": "Equivalent efficacy to co-careldopa for symptomatic management of Parkinson's; choose formulation based on patient response and tolerability",
+  "indication": "Symptomatic treatment of Parkinson's disease"
 }

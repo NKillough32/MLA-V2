@@ -3,11 +3,11 @@
   "class": "Coagulation factor concentrate",
   "mechanism": "Contains factors II, VII, IX, X (and variable protein C/S) to rapidly reverse vitamin K antagonists",
   "dosing": "Dose based on INR and weight per local guideline",
-  "contraindications": "Known allergy to product components",
-  "interactions": "None specific",
-  "monitoring": "INR, haemostasis",
-  "pregnancy": "Specialist use only",
-  "sideEffects": "Thrombosis risk",
-  "clinicalPearls": "Used for rapid reversal of warfarin in major bleeding or emergency surgery",
-  "indication": "Rapid warfarin reversal"
+  "contraindications": "Known hypersensitivity to PCC components or heparin (depending on product formulation)",
+  "interactions": "No routine drug interactions but concurrent prothrombotic states and certain factor products may increase thrombosis risk; follow local transfusion/haematology guidance",
+  "monitoring": "Monitor INR, clinical haemostasis, and for thrombotic complications after administration; ensure vitamin K given where appropriate",
+  "pregnancy": "Specialist use only with haematology/obstetric guidance",
+  "sideEffects": "Potential thrombosis risk; allergic reactions or transfusion-related events may occur",
+  "clinicalPearls": "Used alongside vitamin K to rapidly correct INR in major bleeding or when immediate reversal is needed for urgent surgery; dosing protocols vary by product and local guidelines",
+  "indication": "Rapid reversal of vitamin K antagonist anticoagulation in major bleeding or prior to urgent procedures"
 }

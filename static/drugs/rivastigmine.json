@@ -3,12 +3,12 @@
   "class": "Acetylcholinesterase inhibitors",
   "mechanism": "Reversible cholinesterase inhibitor (both acetylcholinesterase and butyrylcholinesterase)",
   "dosing": "Oral: start 1.5mg BD, increase gradually to 3-6mg BD. Transdermal patch: 4.6mg/24h initially",
-  "contraindications": "Hypersensitivity",
-  "interactions": "As donepezil",
-  "monitoring": "As donepezil",
-  "pregnancy": "Avoid",
-  "sideEffects": "Nausea, vomiting, diarrhoea, anorexia, weight loss, dizziness, headache. Patch: skin reactions",
-  "pharmacokinetics": "Oral or transdermal, short half-life (1.5h)",
-  "clinicalPearls": "Patch formulation reduces GI side effects and improves compliance. Useful in Parkinson\\",
-  "indication": "Mild-moderate Alzheimer\\"
+  "contraindications": "Hypersensitivity to rivastigmine or excipients; caution in patients with cardiac conduction abnormalities or severe hepatic impairment",
+  "interactions": "Cholinergic and anticholinergic drugs may antagonise effects; caution with other cholinesterase inhibitors; review concomitant medications that increase cholinergic burden",
+  "monitoring": "Monitor for gastrointestinal adverse effects, weight loss and signs of bradycardia or syncope; assess cognitive and functional response regularly; patch application sites should be inspected for local skin reactions",
+  "pregnancy": "Avoid unless benefits justify potential risks; limited data available",
+  "sideEffects": "Gastrointestinal symptoms (nausea, vomiting, diarrhoea), anorexia and weight loss, dizziness and headache; transdermal patch may cause local skin reactions",
+  "pharmacokinetics": "Available orally and as a transdermal patch; relatively short systemic half-life with prolonged central cholinesterase inhibition",
+  "clinicalPearls": "Transdermal formulation typically better tolerated gastrointestinally and may improve adherence; useful in Parkinson's disease dementia as well as Alzheimer’s disease",
+  "indication": "Mild to moderate Alzheimer’s disease and cognitive symptoms in Parkinson’s disease dementia"
 }

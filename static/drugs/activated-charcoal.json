@@ -3,11 +3,11 @@
   "class": "Adsorbent (decontamination)",
   "mechanism": "Adsorbs many toxins in GI tract reducing absorption",
   "dosing": "50-100g orally for adults (single dose) — follow toxicology guidance",
-  "contraindications": "Unprotected airway, caustic ingestion",
-  "interactions": "May adsorb orally administered antidotes/meds",
-  "monitoring": "Airway protection, vomiting",
-  "pregnancy": "Use if indicated",
-  "sideEffects": "Vomiting, aspiration risk if airway not protected",
-  "clinicalPearls": "Most effective when given early after ingestion",
-  "indication": "Acute poisoning (selected cases)"
+  "contraindications": "Unprotected or compromised airway without airway protection; caustic ingestion (risk of aspiration and oesophageal injury); gastrointestinal perforation or obstruction",
+  "interactions": "May adsorb orally administered antidotes or medications and reduce their effectiveness; consider route and timing before giving other oral therapies",
+  "monitoring": "Ensure airway protection in patients with reduced consciousness; observe for vomiting and signs of aspiration; monitor clinical response and toxin-specific parameters",
+  "pregnancy": "Use if indicated by toxicology advice; balance risks and benefits",
+  "sideEffects": "Vomiting common; aspiration pneumonitis if airway not protected; may cause bowel obstruction with repeated doses in some cases",
+  "clinicalPearls": "Most effective when given soon after ingestion (within 1 hour for many substances); consult toxicology centre for specific indications and dosing; single-dose activated charcoal is usual in most cases",
+  "indication": "Selected cases of acute oral poisoning where the toxin is adsorbed by charcoal and airway is protected"
 }

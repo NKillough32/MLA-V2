@@ -3,12 +3,12 @@
   "class": "Emollients",
   "mechanism": "Occlusive emollient - reduces transepidermal water loss",
   "dosing": "Apply liberally and frequently",
-  "contraindications": "None",
-  "interactions": "None",
-  "monitoring": "Skin hydration",
-  "pregnancy": "Safe",
-  "sideEffects": "Greasy, stains clothing, fire hazard",
-  "pharmacokinetics": "Not absorbed - acts as barrier",
-  "clinicalPearls": "Very effective occlusive emollient. Often mixed with liquid paraffin. Base for many ointments. FIRE HAZARD - warn patients that fabric with residues can ignite. Apply generously and often for eczema",
-  "indication": "Dry skin, eczema, psoriasis, ichthyosis"
+  "contraindications": "Known hypersensitivity to paraffin preparations",
+  "interactions": "None clinically significant",
+  "monitoring": "Assess skin hydration and tolerability; check for signs of folliculitis if occlusive use is extensive",
+  "pregnancy": "Considered safe for topical use in pregnancy",
+  "sideEffects": "Greasy residue, staining of clothing, potential fire hazard if fabrics are heavily contaminated with product",
+  "pharmacokinetics": "Acts topically as an occlusive barrier with minimal systemic absorption",
+  "clinicalPearls": "Highly occlusive and effective for severe dry skin; often combined with liquid paraffin; warn patients about fire risk and clothing staining",
+  "indication": "Dry skin, eczema, psoriasis, ichthyosis and related conditions"
 }

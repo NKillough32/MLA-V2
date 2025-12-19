@@ -3,10 +3,10 @@
   "class": "Vitamin replacement",
   "mechanism": "High-dose parenteral vitamins including thiamine",
   "dosing": "Per local protocol (e.g., parenteral B vitamins in alcohol withdrawal/malnutrition)",
-  "contraindications": "Hypersensitivity",
-  "monitoring": "Allergic reactions, clinical response",
-  "pregnancy": "Use if indicated",
-  "sideEffects": "Rare hypersensitivity",
-  "clinicalPearls": "Used in malnutrition and alcohol withdrawal; provides parenteral thiamine",
-  "indication": "Vitamin replacement in deficiency"
+  "contraindications": "Known hypersensitivity to any component of the preparation",
+  "monitoring": "Observe for immediate hypersensitivity during and after infusion; monitor clinical response (neurological improvement in Wernicke's) and fluid balance in large-volume infusions",
+  "pregnancy": "Use if indicated; parenteral thiamine is safe when clinically required",
+  "sideEffects": "Very rare allergic reactions or anaphylaxis; local infusion-site reactions may occur",
+  "clinicalPearls": "Essential to give parenteral thiamine promptly in suspected Wernicke's encephalopathy or severe malnutrition; follow local protocols for dose and infusion rates",
+  "indication": "Replacement of thiamine and other B vitamins in severe deficiency states such as Wernicke's encephalopathy and in malnourished patients"
 }

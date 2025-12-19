@@ -2,13 +2,13 @@
   "name": "Hypromellose Eye Drops",
   "class": "Ocular lubricant",
   "mechanism": "Artificial tears - lubricates ocular surface",
-  "dosing": "Apply 1-2 drops as required (up to every hour if needed)",
-  "contraindications": "Hypersensitivity",
-  "interactions": "None",
-  "monitoring": "Symptom control, need for preserved vs unpreserved",
-  "pregnancy": "Safe",
-  "sideEffects": "Transient blurring, rarely hypersensitivity",
-  "pharmacokinetics": "Local action, no systemic absorption",
-  "clinicalPearls": "First-line for dry eyes. Preservative-free if using >4 times daily or contact lens wearer. Very safe, can use frequently. Many brands available OTC",
-  "indication": "Dry eyes, tear deficiency, contact lens discomfort"
+  "dosing": "Instil 1–2 drops in the affected eye(s) as required; for severe dry eye may be used hourly or more frequently with preservative-free formulations",
+  "contraindications": "Known hypersensitivity to any component",
+  "interactions": "No clinically significant systemic interactions; separate administration timing when using topical ophthalmic medications to avoid washout",
+  "monitoring": "Assess symptom relief, ocular surface health and need for preservative-free formulations in frequent users or contact lens wearers",
+  "pregnancy": "Considered safe for topical ocular use in pregnancy",
+  "sideEffects": "Transient visual blurring after instillation; rare hypersensitivity or local irritation",
+  "pharmacokinetics": "Acts locally on the ocular surface with minimal systemic absorption",
+  "clinicalPearls": "Preservative-free preparations preferred for frequent use or in contact lens wearers; lubricants provide symptomatic relief but address only surface dryness",
+  "indication": "Dry eye syndromes, tear film deficiency and contact lens–related discomfort"
 }

@@ -2,13 +2,13 @@
   "name": "Indacaterol",
   "class": "Beta2-agonists (LABA)",
   "mechanism": "Long-acting β2-agonist - bronchodilation",
-  "dosing": "Inhaled: 150-300mcg OD",
-  "contraindications": "Hypersensitivity",
-  "interactions": "Beta-blockers (antagonism), sympathomimetics (↑ cardiovascular effects)",
-  "monitoring": "Respiratory function, HR, tremor, K+",
-  "pregnancy": "Use only if essential",
-  "sideEffects": "Headache, cough, nasopharyngitis, tremor, palpitations, hypokalaemia",
-  "pharmacokinetics": "Inhaled, 24h duration",
-  "clinicalPearls": "Ultra-long-acting LABA - once daily dosing. Must use with ICS in asthma. Monotherapy OK in COPD. Often combined with LAMA (glycopyrronium)",
-  "indication": "COPD, asthma (with ICS only)"
+  "dosing": "Inhaled once daily: typically 150–300 mcg OD depending on product",
+  "contraindications": "Known hypersensitivity to indacaterol or formulation excipients; caution in patients with significant cardiovascular disease",
+  "interactions": "Non-selective beta-blockers may antagonise effect; coadministration with other sympathomimetics may increase cardiovascular side effects; beta2-agonists can lower serum potassium",
+  "monitoring": "Assess respiratory function (spirometry), heart rate and symptoms; monitor for tremor and palpitations; check serum potassium in at-risk patients",
+  "pregnancy": "Use in pregnancy only if clearly needed and after specialist discussion",
+  "sideEffects": "Common: cough, headache, nasopharyngitis, tremor, palpitations; metabolic effects include hypokalaemia",
+  "pharmacokinetics": "Inhaled with a duration of about 24 hours enabling once-daily dosing",
+  "clinicalPearls": "Ultra-long-acting LABA suitable for once-daily dosing; always use with an inhaled corticosteroid for asthma control (not as monotherapy); in COPD may be used alone or in combination with LAMA",
+  "indication": "Maintenance bronchodilator therapy in COPD; adjunctive therapy in asthma only when combined with an inhaled corticosteroid"
 }

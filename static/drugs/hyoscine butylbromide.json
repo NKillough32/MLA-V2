@@ -3,12 +3,12 @@
   "class": "Antimuscarinics, GI",
   "mechanism": "Antimuscarinic - reduces GI smooth muscle spasm",
   "dosing": "Oral: 20mg QDS. IV: 20mg (can repeat)",
-  "contraindications": "Paralytic ileus, pyloric stenosis, closed-angle glaucoma, myasthenia gravis",
-  "interactions": "Other antimuscarinics (↑ effects)",
-  "monitoring": "GI symptoms, antimuscarinic effects",
-  "pregnancy": "Use only if essential",
-  "sideEffects": "Dry mouth, constipation, blurred vision, urinary retention, tachycardia",
-  "pharmacokinetics": "Oral/IV, poorly crosses BBB (quaternary amine)",
-  "clinicalPearls": "Doesn\\",
-  "indication": "Irritable bowel syndrome, GI/renal/biliary colic, palliative care (bowel obstruction)"
+  "contraindications": "Paralytic ileus, mechanical obstruction of the GI tract, pyloric stenosis, closed-angle glaucoma, myasthenia gravis, urinary retention where obstruction suspected",
+  "interactions": "Concomitant antimuscarinic agents increase anticholinergic effects; use caution with other drugs causing urinary retention or tachycardia",
+  "monitoring": "Monitor abdominal pain patterns, bowel function and for antimuscarinic adverse effects (dry mouth, urinary retention, blurred vision); reassess if symptoms worsen",
+  "pregnancy": "Use only if essential and after specialist/obstetric advice",
+  "sideEffects": "Antimuscarinic effects including dry mouth, constipation, blurred vision, urinary retention and tachycardia; less central effects due to poor CNS penetration",
+  "pharmacokinetics": "Quaternary ammonium compound with minimal central nervous system penetration; available oral and parenteral formulations",
+  "clinicalPearls": "Useful antispasmodic for GI colic and symptomatic relief in palliative care; avoid in patients with suspected mechanical obstruction; monitor for urinary retention",
+  "indication": "Relief of smooth muscle spasm in GI, biliary and renal colic; symptomatic use in IBS and selected palliative settings"
 }

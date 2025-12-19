@@ -3,11 +3,11 @@
   "class": "SGLT2 inhibitor",
   "mechanism": "Promotes glucosuria by inhibiting renal SGLT2",
   "dosing": "10mg once daily (typical)",
-  "contraindications": "Type 1 diabetes, severe renal impairment",
-  "interactions": "Diuretics (caution), insulin/secretagogues",
-  "monitoring": "Renal function, signs of volume depletion and genital infections",
-  "pregnancy": "Avoid",
-  "sideEffects": "Genital infections, volume depletion, rare DKA",
-  "clinicalPearls": "Cardiorenal benefit in selected patients",
-  "indication": "Type 2 diabetes; heart failure/CKD indications per guidance"
+  "contraindications": "Type 1 diabetes mellitus (risk of DKA), severe renal impairment or dialysis (reduced efficacy), pregnancy and breastfeeding; avoid if eGFR below licensed threshold",
+  "interactions": "Concomitant diuretics may increase risk of volume depletion and hypotension; insulin or insulin secretagogues increase hypoglycaemia risk — dose adjustments may be required",
+  "monitoring": "Assess renal function before initiation and periodically; monitor blood pressure, signs of volume depletion, and for genital mycotic infections; enquire about symptoms suggestive of DKA if unwell",
+  "pregnancy": "Avoid use in pregnancy; discontinue if pregnancy is planned or confirmed and seek specialist advice",
+  "sideEffects": "Common: genital mycotic infections, polyuria, thirst; less common but serious: volume depletion, rare cases of euglycaemic DKA; monitor accordingly",
+  "clinicalPearls": "Provides glycaemic control and has demonstrated cardiorenal benefits in specific patient groups; ensure appropriate patient education on genital hygiene and sick-day rules",
+  "indication": "Type 2 diabetes to improve glycaemic control; also indicated in selected patients for heart failure or chronic kidney disease per guideline recommendations"
 }

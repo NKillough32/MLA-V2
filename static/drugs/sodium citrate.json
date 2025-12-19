@@ -3,12 +3,12 @@
   "class": "Laxatives, rectal",
   "mechanism": "Osmotic + softening - draws water into rectum",
   "dosing": "1 micro-enema (5ml) PR",
-  "contraindications": "Bowel obstruction",
-  "interactions": "None",
-  "monitoring": "Bowel evacuation",
-  "pregnancy": "Safe",
-  "sideEffects": "Local irritation, cramps",
-  "pharmacokinetics": "Local rectal action, onset 5-30min",
-  "clinicalPearls": "Very quick onset. Small volume enema. Useful before procedures or for acute constipation. Often preferred to phosphate enemas (less systemic absorption)",
-  "indication": "Acute constipation, pre-procedure bowel evacuation"
+  "contraindications": "Suspected or known bowel obstruction, significant rectal bleeding of unknown cause",
+  "interactions": "None of clinical significance for rectal use",
+  "monitoring": "Confirm bowel evacuation and watch for abdominal pain or severe rectal bleeding post administration",
+  "pregnancy": "Considered safe for occasional use in pregnancy for constipation under clinical guidance",
+  "sideEffects": "Local irritation, abdominal cramps, rare allergic reactions",
+  "pharmacokinetics": "Local rectal action with rapid onset (usually within 5–30 minutes)",
+  "clinicalPearls": "Small-volume, rapid-onset micro-enema useful for quick relief or pre-procedural bowel clearance; preferred over phosphate enemas in many settings due to lower systemic absorption",
+  "indication": "Acute constipation and pre-procedure rectal/colonic clearance"
 }

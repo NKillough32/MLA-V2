@@ -2,12 +2,12 @@
   "name": "Lidocaine (systemic)",
   "class": "Local anaesthetic / antiarrhythmic",
   "mechanism": "Blocks voltage-gated sodium channels",
-  "dosing": "IV bolus for arrhythmia 1-1.5mg/kg; infusion per protocol. Toxic doses vary",
-  "contraindications": "Severe heart block without pacemaker, severe SA node dysfunction",
-  "interactions": "Other antiarrhythmics",
-  "monitoring": "ECG, signs of local anaesthetic systemic toxicity (LAST)",
-  "pregnancy": "Use if necessary",
-  "sideEffects": "CNS toxicity (tremor, seizures), cardiac toxicity at high doses",
-  "clinicalPearls": "Monitor levels with infusion; treat LAST with lipid emulsion therapy",
-  "indication": "Arrhythmias (IV), analgesia (topical/infiltration)"
+  "dosing": "IV bolus for ventricular arrhythmias typically 1–1.5 mg/kg followed by infusion per local protocol (e.g., 1–4 mg/min titrated to response); dosing for local infiltration/topical use differs—follow product guidance",
+  "contraindications": "Severe heart block without pacemaker, severe sinoatrial node dysfunction, known hypersensitivity to lidocaine or amide-type local anaesthetics",
+  "interactions": "Additive cardiac depressant or arrhythmogenic effects with other antiarrhythmic agents; drugs that inhibit metabolism may increase systemic levels",
+  "monitoring": "Continuous ECG monitoring during IV administration for arrhythmia management; observe for signs of local anaesthetic systemic toxicity (CNS excitation followed by depression, seizures) and cardiac toxicity",
+  "pregnancy": "Use if necessary; regional or local anaesthetic use is generally acceptable in pregnancy but follow obstetric anaesthesia guidance",
+  "sideEffects": "CNS effects (lightheadedness, tinnitus, tremor, seizures) at high or toxic levels; cardiovascular effects include bradycardia, hypotension and arrhythmias; allergic reactions are rare",
+  "clinicalPearls": "Monitor plasma levels when using prolonged infusions or in patients with hepatic impairment; manage LAST with airway support and intravenous lipid emulsion therapy as per protocols",
+  "indication": "Intravenous treatment of ventricular arrhythmias in emergency settings; local infiltration and topical analgesia per procedure-specific guidance"
 }

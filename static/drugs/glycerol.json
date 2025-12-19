@@ -3,12 +3,12 @@
   "class": "Laxatives, rectal",
   "mechanism": "Osmotic effect + mild irritant - promotes bowel movement",
   "dosing": "1-2 suppositories PR, repeat after 1h if no result",
-  "contraindications": "Bowel obstruction, inflammatory bowel disease (acute)",
-  "interactions": "None",
-  "monitoring": "Bowel evacuation",
-  "pregnancy": "Safe",
-  "sideEffects": "Local irritation, abdominal cramps",
-  "pharmacokinetics": "Local rectal action, onset 15-60min",
-  "clinicalPearls": "Simple, safe, rapid onset. Useful for quick relief or before procedures. Moisten with water before insertion. Generally well tolerated",
-  "indication": "Acute constipation, before procedures"
+  "contraindications": "Bowel obstruction, acute inflammatory bowel disease; avoid if rectal bleeding of unknown cause",
+  "interactions": "No clinically significant interactions for rectal use",
+  "monitoring": "Confirm bowel evacuation and assess for pain or signs of rectal injury",
+  "pregnancy": "Considered safe for incidental use in pregnancy",
+  "sideEffects": "Local irritation, abdominal cramps, rare rectal bleeding if mucosa fragile",
+  "pharmacokinetics": "Local action with onset usually within 15–60 minutes",
+  "clinicalPearls": "Useful for rapid relief of constipation and for pre-procedural bowel prep; advise moistening prior to insertion",
+  "indication": "Acute constipation and pre-procedural rectal clearance"
 }

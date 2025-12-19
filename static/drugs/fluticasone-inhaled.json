@@ -3,11 +3,11 @@
   "class": "Inhaled corticosteroid (ICS)",
   "mechanism": "Anti-inflammatory corticosteroid",
   "dosing": "Device-specific dosing; used BD typically",
-  "contraindications": "None specific",
-  "interactions": "Systemic CYP3A4 inhibitors may increase systemic exposure",
-  "monitoring": "Inhaler technique, thrush prevention",
-  "pregnancy": "Use if indicated; discuss with obstetric team",
-  "sideEffects": "Oral candidiasis, dysphonia",
-  "clinicalPearls": "Often used in combination inhalers with LABA",
-  "indication": "Maintenance asthma/COPD (as appropriate)"
+  "contraindications": "No absolute contraindications for inhaled use; caution in active untreated infections of the respiratory tract",
+  "interactions": "Systemic strong CYP3A4 inhibitors (e.g., ketoconazole) may increase systemic exposure to fluticasone and risk systemic corticosteroid effects",
+  "monitoring": "Regular review of inhaler technique and adherence; monitor for oral candidiasis and advise mouth rinsing after use; assess growth in children on high-dose ICS",
+  "pregnancy": "Use if clinically indicated; balance benefits and risks and discuss with obstetric team",
+  "sideEffects": "Local: oral candidiasis (thrush), dysphonia; systemic effects are rare at low-moderate inhaled doses but possible with high doses or with potent CYP3A4 inhibition",
+  "clinicalPearls": "Often combined with a long-acting beta-agonist for asthma control; advise mouth rinsing after inhalation to reduce thrush; dose and device selection should be individualised",
+  "indication": "Maintenance therapy for asthma; considered in COPD patients with frequent exacerbations and significant eosinophilia"
 }

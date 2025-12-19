@@ -3,11 +3,11 @@
   "class": "GLP-1 receptor agonist",
   "mechanism": "GLP-1 analogue with potent glycaemic and weight loss effects",
   "dosing": "Subcutaneous or oral formulations per product; titration required",
-  "contraindications": "MTC/MEN2 history",
-  "interactions": "May delay absorption of oral drugs",
-  "monitoring": "GI symptoms, glycaemic control",
-  "pregnancy": "Avoid",
-  "sideEffects": "Nausea, pancreatitis risk (rare)",
-  "clinicalPearls": "Increasingly used for weight and glucose control; cost and access vary",
-  "indication": "Type 2 diabetes; weight management in select settings"
+  "contraindications": "Personal or family history of medullary thyroid carcinoma (MTC) or MEN2; hypersensitivity to product components",
+  "interactions": "May delay gastric emptying and thus delay absorption of oral medicines; consider timing for oral drugs with narrow therapeutic indices",
+  "monitoring": "Monitor glycaemic control, weight, GI side effects during dose titration; consider pancreatic symptoms and refer if severe abdominal pain",
+  "pregnancy": "Avoid use in pregnancy; discuss alternatives and specialist review if pregnancy planned or confirmed",
+  "sideEffects": "Common: nausea, vomiting, early satiety; rare but serious: pancreatitis; may cause weight loss which is often intended",
+  "clinicalPearls": "Requires gradual dose titration to minimise GI adverse effects; effective for glycaemic control and weight reduction in eligible patients; counsel on injection technique (if SC)",
+  "indication": "Type 2 diabetes for glycaemic control and, in selected patients, for weight management under specialist pathways"
 }

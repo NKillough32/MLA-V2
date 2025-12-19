@@ -3,11 +3,11 @@
   "class": "Broad-spectrum antibiotic",
   "mechanism": "Inhibits 50S ribosomal subunit",
   "dosing": "Topical ophthalmic or systemic dosing varies — systemic use limited by toxicity",
-  "contraindications": "Aplastic anaemia history",
-  "interactions": "Bone marrow suppressing drugs",
-  "monitoring": "FBC for aplastic anaemia with systemic use",
-  "pregnancy": "Use with caution; topical ophthalmic use common",
-  "sideEffects": "Bone marrow suppression, aplastic anaemia (rare)",
-  "clinicalPearls": "Topical ophthalmic use for conjunctivitis; systemic use limited due to toxicity",
-  "indication": "Ophthalmic infections, selected systemic infections"
+  "contraindications": "History of aplastic anaemia or significant bone marrow disorders; hypersensitivity",
+  "interactions": "Concurrent bone marrow-suppressing drugs may increase haematological toxicity",
+  "monitoring": "With systemic use monitor full blood count regularly for bone marrow suppression; topical ophthalmic use does not require systemic monitoring",
+  "pregnancy": "Use with caution systemically; topical ophthalmic use commonly used when indicated",
+  "sideEffects": "Bone marrow suppression and aplastic anaemia (rare but serious) with systemic use; topical effects limited to ocular irritation",
+  "clinicalPearls": "Topical ophthalmic chloramphenicol is widely used for conjunctivitis; systemic use reserved due to risk of severe haematological toxicity and requires specialist oversight",
+  "indication": "Ophthalmic infections and selected systemic infections when benefits outweigh risks"
 }

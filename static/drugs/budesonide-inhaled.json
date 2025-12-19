@@ -3,11 +3,11 @@
   "class": "Inhaled corticosteroid (ICS)",
   "mechanism": "Anti-inflammatory glucocorticoid receptor agonist",
   "dosing": "Dose varies by device and indication; low-medium-high dosing tiers for asthma",
-  "contraindications": "Acute severe asthma as sole therapy",
-  "interactions": "Systemic corticosteroids interactions",
-  "monitoring": "Clinical response, inhaler technique; consider oral candidiasis prevention",
-  "pregnancy": "Preferred ICS in pregnancy when inhaled steroid is needed",
-  "sideEffects": "Oral thrush (use spacer/rinse mouth), dysphonia",
-  "clinicalPearls": "Mainstay of maintenance asthma therapy",
-  "indication": "Maintenance anti-inflammatory therapy for asthma"
+  "contraindications": "Not to be used as the sole therapy in acute severe asthma exacerbations; hypersensitivity to budesonide",
+  "interactions": "Systemic corticosteroid interactions and potential increased systemic effects with strong CYP3A4 inhibitors",
+  "monitoring": "Assess inhaler technique, symptom control and growth in children on higher doses; monitor for oral candidiasis and advise mouth rinsing or spacer use",
+  "pregnancy": "Budesonide is often preferred as the inhaled corticosteroid of choice in pregnancy when maintenance ICS therapy is required",
+  "sideEffects": "Local: oral candidiasis, dysphonia; systemic effects uncommon at low–moderate inhaled doses but possible at high doses or with potent CYP3A4 inhibition",
+  "clinicalPearls": "Mainstay maintenance therapy for asthma; select device and dose based on severity and patient ability; use spacer and mouth rinse to reduce local side effects",
+  "indication": "Maintenance anti-inflammatory therapy for asthma; may be considered in selected patients with COPD when indicated"
 }

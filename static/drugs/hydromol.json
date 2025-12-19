@@ -3,12 +3,12 @@
   "class": "Emollient",
   "mechanism": "Occlusive emollient providing skin barrier",
   "dosing": "Apply liberally and frequently (QDS minimum)",
-  "contraindications": "Hypersensitivity",
-  "interactions": "None",
-  "monitoring": "Skin hydration, tolerability",
-  "pregnancy": "Safe",
-  "sideEffects": "Greasy feel, rarely folliculitis, fire hazard",
-  "pharmacokinetics": "Local skin hydration",
-  "clinicalPearls": "Very greasy - excellent for very dry skin. Ointment more occlusive than cream. Paraffin-based - fire hazard. Patient preference important for adherence",
-  "indication": "Severe dry skin, eczema, ichthyosis, psoriasis"
+  "contraindications": "Known hypersensitivity to any components",
+  "interactions": "None of clinical significance",
+  "monitoring": "Assess skin hydration and tolerability; review for signs of folliculitis if suspected",
+  "pregnancy": "Considered safe in pregnancy for topical use",
+  "sideEffects": "Greasy residue, potential for folliculitis with occlusion, fire hazard if fabric with product residue is exposed to ignition",
+  "pharmacokinetics": "Acts topically; minimal systemic absorption",
+  "clinicalPearls": "Highly occlusive and useful for very dry skin; ointment formulations are more effective but greasier than creams—patient preference affects adherence; warn patients about fire risks",
+  "indication": "Management of severe dry skin, eczema, ichthyosis and related dermatoses"
 }

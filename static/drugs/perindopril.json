@@ -3,11 +3,11 @@
   "class": "ACE inhibitor",
   "mechanism": "ACE inhibition reducing angiotensin II and aldosterone",
   "dosing": "Hypertension: start 2-4mg daily and titrate as tolerated",
-  "contraindications": "Pregnancy, bilateral renal artery stenosis, history of ACEi-induced angioedema",
-  "interactions": "NSAIDs, potassium-sparing diuretics, lithium",
-  "monitoring": "eGFR and potassium baseline and 1–2 weeks after initiation",
-  "pregnancy": "Contraindicated",
-  "sideEffects": "Cough, hyperkalaemia, hypotension, angioedema",
-  "clinicalPearls": "Used widely in UK cardiology/HTN pathways",
-  "indication": "Hypertension, heart failure, post-MI"
+  "contraindications": "Pregnancy, bilateral renal artery stenosis, history of ACE inhibitor-induced angioedema, known hypersensitivity",
+  "interactions": "NSAIDs may blunt antihypertensive effect and increase renal risk; potassium-sparing diuretics and supplements increase hyperkalaemia risk; lithium levels may rise",
+  "monitoring": "Check eGFR and serum potassium at baseline and 1–2 weeks after initiation or dose changes; monitor blood pressure response and symptoms of hypotension",
+  "pregnancy": "Contraindicated in pregnancy; discontinue and seek specialist advice if pregnancy confirmed",
+  "sideEffects": "Persistent dry cough, hyperkalaemia, hypotension, rare angioedema",
+  "clinicalPearls": "Effective ACE inhibitor for hypertension and heart failure management; consider alternative (ARB) if cough develops",
+  "indication": "Hypertension, heart failure and secondary prevention post-myocardial infarction"
 }

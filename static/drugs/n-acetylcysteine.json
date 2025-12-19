@@ -2,12 +2,12 @@
   "name": "N-acetylcysteine (NAC)",
   "class": "Antidote / mucolytic",
   "mechanism": "Replenishes glutathione to detoxify NAPQI in paracetamol overdose",
-  "dosing": "IV protocols vary (e.g., 150mg/kg over 1h, then 50mg/kg over 4h, then 100mg/kg over 16h) or oral 72h regimen",
-  "contraindications": "Hypersensitivity to components",
-  "interactions": "None significant",
-  "monitoring": "LFTs, clinical status, anaphylactoid reactions during IV infusion",
-  "pregnancy": "Use when indicated",
-  "sideEffects": "Anaphylactoid reactions with rapid IV infusion",
-  "clinicalPearls": "Start empirically if uncertain timing for paracetamol overdose and NAC is available",
-  "indication": "Paracetamol overdose"
+  "dosing": "Intravenous regimens commonly used: e.g., 150 mg/kg over 1 hour, then 50 mg/kg over 4 hours, then 100 mg/kg over 16 hours (weight-adjusted); oral 72-hour protocol also used—follow local toxicology protocol",
+  "contraindications": "Known hypersensitivity to NAC or formulation components; caution in asthmatic patients due to bronchospasm risk",
+  "interactions": "May interact with activated charcoal if given orally (adsorption) — coordinate timing; otherwise few clinically significant drug interactions when used as antidote",
+  "monitoring": "Monitor LFTs, renal function and clinical status; observe for anaphylactoid or allergic-type reactions during IV infusion and manage accordingly; monitor paracetamol concentration to guide treatment duration",
+  "pregnancy": "Use when indicated for paracetamol overdose; benefits of antidote outweigh risks",
+  "sideEffects": "Anaphylactoid reactions during rapid IV infusion (flushing, bronchospasm, hypotension); gastrointestinal upset with oral regimen",
+  "clinicalPearls": "Start NAC empirically if there is uncertainty about timing of significant paracetamol ingestion and levels are not available; consult toxicology and follow local protocols",
+  "indication": "Antidote for paracetamol (acetaminophen) overdose; mucolytic use separate and lower-dose when indicated"
 }

@@ -3,11 +3,11 @@
   "class": "Antithyroid drug",
   "mechanism": "Inhibits thyroid peroxidase and peripheral conversion of T4 to T3",
   "dosing": "Thyroid storm: high-dose per endocrinology guidance; regular dosing individualized",
-  "contraindications": "Severe liver disease",
-  "interactions": "Other hepatotoxic drugs",
-  "monitoring": "LFTs, FBC",
-  "pregnancy": "Preferred in first trimester as alternative to carbimazole in some cases; specialist advice",
-  "sideEffects": "Hepatotoxicity, agranulocytosis (rare)",
-  "clinicalPearls": "Use specialist guidance for thyroid storm and pregnancy",
-  "indication": "Hyperthyroidism, thyroid storm"
+  "contraindications": "Severe liver disease and known hypersensitivity",
+  "interactions": "Concurrent hepatotoxic drugs increase risk of liver injury; monitor drug interactions carefully",
+  "monitoring": "Regular LFTs and full blood count due to risk of hepatotoxicity and agranulocytosis; stop drug and seek urgent review if fever or sore throat",
+  "pregnancy": "May be preferred in the first trimester in some cases as alternative to carbimazole under specialist advice; use lowest effective dose and specialist monitoring",
+  "sideEffects": "Hepatotoxicity (potentially severe), agranulocytosis (rare), vasculitis and other immune-mediated effects",
+  "clinicalPearls": "Use specialist endocrinology guidance for thyroid storm and pregnancy; monitor LFTs closely",
+  "indication": "Hyperthyroidism and thyroid storm under specialist management"
 }
