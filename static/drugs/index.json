@@ -16,7 +16,7 @@
       "id": "activated-charcoal",
       "name": "Activated charcoal",
       "class": "Adsorbent (decontamination)",
-      "indication": "Acute poisoning (selected cases)"
+      "indication": "Selected cases of acute oral poisoning where the toxin is adsorbed by charcoal and airway is protected"
     },
     {
       "id": "adalimumab",
@@ -130,7 +130,7 @@
       "id": "amphotericin-b",
       "name": "Amphotericin B",
       "class": "Polyenes (antifungal)",
-      "indication": "Serious systemic fungal infections"
+      "indication": "Serious systemic fungal infections where alternative agents are unsuitable"
     },
     {
       "id": "anastrozole",
@@ -154,7 +154,7 @@
       "id": "dermol-500",
       "name": "Antimicrobial Emollient (Dermol 500)",
       "class": "Antimicrobial emollient",
-      "indication": "Eczema with recurrent infection, dry skin prone to bacterial colonisation"
+      "indication": "Topical management of eczema with recurrent infection and dry skin prone to bacterial colonisation"
     },
     {
       "id": "apixaban",
@@ -202,7 +202,7 @@
       "id": "azathioprine",
       "name": "Azathioprine",
       "class": "Immunosuppressant/antimetabolite",
-      "indication": "Autoimmune diseases, transplant"
+      "indication": "Immunosuppression for autoimmune diseases and for prevention of transplant rejection under specialist supervision"
     },
     {
       "id": "azithromycin",
@@ -292,7 +292,7 @@
       "id": "budesonide-inhaled",
       "name": "Budesonide (inhaled)",
       "class": "Inhaled corticosteroid (ICS)",
-      "indication": "Maintenance anti-inflammatory therapy for asthma"
+      "indication": "Maintenance anti-inflammatory therapy for asthma; may be considered in selected patients with COPD when indicated"
     },
     {
       "id": "budesonide-formoterol",
@@ -430,7 +430,7 @@
       "id": "chloramphenicol",
       "name": "Chloramphenicol",
       "class": "Broad-spectrum antibiotic",
-      "indication": "Ophthalmic infections, selected systemic infections"
+      "indication": "Ophthalmic infections and selected systemic infections when benefits outweigh risks"
     },
     {
       "id": "chloramphenicol-eye",
@@ -550,7 +550,7 @@
       "id": "co-beneldopa",
       "name": "Co-beneldopa (Levodopa + Benserazide)",
       "class": "Dopaminergic drugs for Parkinson\\",
-      "indication": "Parkinson\\"
+      "indication": "Symptomatic treatment of Parkinson's disease"
     },
     {
       "id": "co-careldopa",
@@ -628,7 +628,7 @@
       "id": "dapagliflozin",
       "name": "Dapagliflozin",
       "class": "SGLT2 inhibitor",
-      "indication": "Type 2 diabetes; heart failure/CKD indications per guidance"
+      "indication": "Type 2 diabetes to improve glycaemic control; also indicated in selected patients for heart failure or chronic kidney disease per guideline recommendations"
     },
     {
       "id": "daptomycin",
@@ -862,7 +862,7 @@
       "id": "famotidine",
       "name": "Famotidine",
       "class": "H2-receptor antagonists",
-      "indication": "Peptic ulcer disease, GORD, dyspepsia"
+      "indication": "Peptic ulcer disease, gastro-oesophageal reflux disease (GORD), and symptomatic relief of dyspepsia"
     },
     {
       "id": "felodipine",
@@ -880,7 +880,7 @@
       "id": "ferrous fumarate",
       "name": "Ferrous Fumarate",
       "class": "Iron supplement",
-      "indication": "Iron deficiency anaemia"
+      "indication": "Treatment and prevention of iron deficiency anaemia"
     },
     {
       "id": "ferrous sulfate",
@@ -940,7 +940,7 @@
       "id": "fluticasone-inhaled",
       "name": "Fluticasone (inhaled)",
       "class": "Inhaled corticosteroid (ICS)",
-      "indication": "Maintenance asthma/COPD (as appropriate)"
+      "indication": "Maintenance therapy for asthma; considered in COPD patients with frequent exacerbations and significant eosinophilia"
     },
     {
       "id": "fluticasone",
@@ -1024,7 +1024,7 @@
       "id": "glipizide",
       "name": "Glipizide",
       "class": "Sulfonylureas",
-      "indication": "Type 2 diabetes"
+      "indication": "Type 2 diabetes mellitus for additional glycaemic control when diet, exercise and metformin (or other first-line therapy) are insufficient"
     },
     {
       "id": "glucagon",
@@ -1036,7 +1036,7 @@
       "id": "glycerol",
       "name": "Glycerol Suppositories",
       "class": "Laxatives, rectal",
-      "indication": "Acute constipation, before procedures"
+      "indication": "Acute constipation and pre-procedural rectal clearance"
     },
     {
       "id": "glyceryl trinitrate",
@@ -1108,7 +1108,7 @@
       "id": "hydromol",
       "name": "Hydromol Ointment/Cream",
       "class": "Emollient",
-      "indication": "Severe dry skin, eczema, ichthyosis, psoriasis"
+      "indication": "Management of severe dry skin, eczema, ichthyosis and related dermatoses"
     },
     {
       "id": "hydroxocobalamin",
@@ -1120,7 +1120,7 @@
       "id": "hydroxycarbamide",
       "name": "Hydroxycarbamide (hydroxyurea)",
       "class": "Antimetabolite / cytoreductive",
-      "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease"
+      "indication": "Polycythaemia vera, essential thrombocythaemia, sickle cell disease and other specialist indications"
     },
     {
       "id": "hydroxychloroquine",
@@ -1138,13 +1138,13 @@
       "id": "hyoscine butylbromide",
       "name": "Hyoscine Butylbromide (Buscopan)",
       "class": "Antimuscarinics, GI",
-      "indication": "Irritable bowel syndrome, GI/renal/biliary colic, palliative care (bowel obstruction)"
+      "indication": "Relief of smooth muscle spasm in GI, biliary and renal colic; symptomatic use in IBS and selected palliative settings"
     },
     {
       "id": "hypromellose",
       "name": "Hypromellose Eye Drops",
       "class": "Ocular lubricant",
-      "indication": "Dry eyes, tear deficiency, contact lens discomfort"
+      "indication": "Dry eye syndromes, tear film deficiency and contact lens–related discomfort"
     },
     {
       "id": "ibuprofen",
@@ -1168,7 +1168,7 @@
       "id": "indacaterol",
       "name": "Indacaterol",
       "class": "Beta2-agonists (LABA)",
-      "indication": "COPD, asthma (with ICS only)"
+      "indication": "Maintenance bronchodilator therapy in COPD; adjunctive therapy in asthma only when combined with an inhaled corticosteroid"
     },
     {
       "id": "indapamide",
@@ -1192,7 +1192,7 @@
       "id": "insulin-aspart",
       "name": "Insulin aspart",
       "class": "Rapid-acting insulin analogue",
-      "indication": "Prandial insulin therapy in type 1 and type 2 diabetes as required"
+      "indication": "Prandial insulin therapy for glycaemic control in type 1 diabetes and as required in type 2 diabetes"
     },
     {
       "id": "insulin aspart",
@@ -1246,7 +1246,7 @@
       "id": "irbesartan",
       "name": "Irbesartan",
       "class": "Angiotensin receptor blocker (ARB)",
-      "indication": "Hypertension, proteinuric CKD"
+      "indication": "Hypertension (monotherapy or combination therapy) and reduction of proteinuria in chronic kidney disease; selected use in heart failure where indicated"
     },
     {
       "id": "isoniazid",
@@ -1258,7 +1258,7 @@
       "id": "isosorbide-dinitrate",
       "name": "Isosorbide dinitrate",
       "class": "Nitrate (shorter-acting)",
-      "indication": "Angina, acute heart failure symptom relief in some settings"
+      "indication": "Relief of acute angina symptoms and selected use for symptom relief in acute heart failure settings (e.g., pulmonary oedema)"
     },
     {
       "id": "isosorbide mononitrate",
@@ -1270,7 +1270,7 @@
       "id": "isosorbide-mononitrate",
       "name": "Isosorbide mononitrate",
       "class": "Nitrate (long-acting)",
-      "indication": "Chronic stable angina, heart failure symptom control in some patients"
+      "indication": "Prevention of angina (chronic stable angina) and symptomatic relief in selected patients with heart failure"
     },
     {
       "id": "itraconazole",
@@ -1372,7 +1372,7 @@
       "id": "lidocaine-systemic",
       "name": "Lidocaine (systemic)",
       "class": "Local anaesthetic / antiarrhythmic",
-      "indication": "Arrhythmias (IV), analgesia (topical/infiltration)"
+      "indication": "Intravenous treatment of ventricular arrhythmias in emergency settings; local infiltration and topical analgesia per procedure-specific guidance"
     },
     {
       "id": "linagliptin",
@@ -1402,7 +1402,7 @@
       "id": "liraglutide",
       "name": "Liraglutide",
       "class": "GLP-1 receptor agonist",
-      "indication": "Type 2 diabetes; weight management in some licensed indications"
+      "indication": "Type 2 diabetes for glycaemic control and selected licensed use for weight management under specialist pathways"
     },
     {
       "id": "lisinopril",
@@ -1420,7 +1420,7 @@
       "id": "lofepramine",
       "name": "Lofepramine",
       "class": "Antidepressants, tricyclics",
-      "indication": "Depression"
+      "indication": "Major depressive disorder when a tricyclic antidepressant is indicated"
     },
     {
       "id": "loperamide",
@@ -1582,7 +1582,7 @@
       "id": "n-acetylcysteine",
       "name": "N-acetylcysteine (NAC)",
       "class": "Antidote / mucolytic",
-      "indication": "Paracetamol overdose"
+      "indication": "Antidote for paracetamol (acetaminophen) overdose; mucolytic use separate and lower-dose when indicated"
     },
     {
       "id": "naloxone",
@@ -1726,7 +1726,7 @@
       "id": "pabrinex",
       "name": "Pabrinex (Multivitamin infusion)",
       "class": "Vitamin replacement",
-      "indication": "Vitamin replacement in deficiency"
+      "indication": "Replacement of thiamine and other B vitamins in severe deficiency states such as Wernicke's encephalopathy and in malnourished patients"
     },
     {
       "id": "pantoprazole",
@@ -1750,7 +1750,7 @@
       "id": "perindopril",
       "name": "Perindopril",
       "class": "ACE inhibitor",
-      "indication": "Hypertension, heart failure, post-MI"
+      "indication": "Hypertension, heart failure and secondary prevention post-myocardial infarction"
     },
     {
       "id": "phenoxymethylpenicillin",
@@ -1816,7 +1816,7 @@
       "id": "prasugrel",
       "name": "Prasugrel",
       "class": "Antiplatelet - irreversible P2Y12 inhibitor",
-      "indication": "ACS patients undergoing PCI (per cardiology guidance)"
+      "indication": "Antiplatelet therapy in acute coronary syndrome particularly in patients undergoing percutaneous coronary intervention (follow cardiology protocols)"
     },
     {
       "id": "pravastatin",
@@ -1864,13 +1864,13 @@
       "id": "propylthiouracil",
       "name": "Propylthiouracil (PTU)",
       "class": "Antithyroid drug",
-      "indication": "Hyperthyroidism, thyroid storm"
+      "indication": "Hyperthyroidism and thyroid storm under specialist management"
     },
     {
       "id": "prothrombin-concentrate",
       "name": "Prothrombin complex concentrate (PCC)",
       "class": "Coagulation factor concentrate",
-      "indication": "Rapid warfarin reversal"
+      "indication": "Rapid reversal of vitamin K antagonist anticoagulation in major bleeding or prior to urgent procedures"
     },
     {
       "id": "pyrazinamide",
@@ -1948,7 +1948,7 @@
       "id": "rivastigmine",
       "name": "Rivastigmine",
       "class": "Acetylcholinesterase inhibitors",
-      "indication": "Mild-moderate Alzheimer\\"
+      "indication": "Mild to moderate Alzheimer’s disease and cognitive symptoms in Parkinson’s disease dementia"
     },
     {
       "id": "ropinirole",
@@ -1996,7 +1996,7 @@
       "id": "semaglutide",
       "name": "Semaglutide",
       "class": "GLP-1 receptor agonist",
-      "indication": "Type 2 diabetes; weight management in select settings"
+      "indication": "Type 2 diabetes for glycaemic control and, in selected patients, for weight management under specialist pathways"
     },
     {
       "id": "senna",
@@ -2044,7 +2044,7 @@
       "id": "sodium citrate",
       "name": "Sodium Citrate Enema (Micralax)",
       "class": "Laxatives, rectal",
-      "indication": "Acute constipation, pre-procedure bowel evacuation"
+      "indication": "Acute constipation and pre-procedure rectal/colonic clearance"
     },
     {
       "id": "sodium-picosulfate",
@@ -2224,7 +2224,7 @@
       "id": "umeclidinium",
       "name": "Umeclidinium",
       "class": "Antimuscarinics, bronchodilators (LAMA)",
-      "indication": "COPD maintenance"
+      "indication": "Maintenance bronchodilator therapy in COPD (often used in combination inhalers)"
     },
     {
       "id": "unfractionated heparin",
@@ -2242,13 +2242,13 @@
       "id": "valproic acid",
       "name": "Valproic Acid (Valproate Semisodium)",
       "class": "Valproate",
-      "indication": "As sodium valproate"
+      "indication": "Epilepsy, bipolar affective disorder, and certain cases of migraine prophylaxis (selected patients)"
     },
     {
       "id": "valsartan",
       "name": "Valsartan",
       "class": "Angiotensin receptor blocker (ARB)",
-      "indication": "Hypertension, heart failure (where indicated)"
+      "indication": "Hypertension and heart failure where ARB therapy is indicated"
     },
     {
       "id": "vancomycin",
@@ -2284,7 +2284,7 @@
       "id": "voriconazole",
       "name": "Voriconazole",
       "class": "Triazole antifungal",
-      "indication": "Serious invasive fungal infections"
+      "indication": "Serious invasive fungal infections such as invasive aspergillosis and certain severe mould/yeast infections"
     },
     {
       "id": "warfarin",
@@ -2296,7 +2296,7 @@
       "id": "white soft paraffin",
       "name": "White Soft Paraffin",
       "class": "Emollients",
-      "indication": "Dry skin, eczema, psoriasis, ichthyosis"
+      "indication": "Dry skin, eczema, psoriasis, ichthyosis and related conditions"
     },
     {
       "id": "zafirlukast",
@@ -2320,7 +2320,7 @@
       "id": "zolpidem",
       "name": "Zolpidem",
       "class": "Z-drugs (Hypnotics)",
-      "indication": "Short-term insomnia"
+      "indication": "Short-term management of insomnia characterized by difficulty falling asleep"
     },
     {
       "id": "zopiclone",
