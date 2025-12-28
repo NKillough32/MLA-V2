@@ -170,7 +170,52 @@ class CalculatorLoader {
      * @returns {string} Getter function name
      */
     getGetterName(id) {
-        // Convert kebab-case to camelCase and add get prefix
+        // Map special cases that don't follow the pattern
+        const specialCases = {
+            'qrisk3-official': 'getQRISK3OfficialCalculator',
+            'chads2vasc': 'getCHADS2VAScCalculator',
+            'hasbled': 'getHASBLEDCalculator',
+            'gcs': 'getGCSCalculator',
+            'apache': 'getAPACHECalculator',
+            'wells-pe': 'getWellsCalculator', // wells-pe uses getWellsCalculator
+            'curb65': 'getCURB65Calculator',
+            'crb65': 'getCRB65Calculator',
+            'meld': 'getMELDCalculator',
+            'fib4': 'getFIB4Calculator',
+            'apri': 'getAPRICalculator',
+            'ldl-calc': 'getLDLCalculator',
+            'map': 'getMAPCalculator',
+            'aa-gradient': 'getAAGradientCalculator',
+            'perc': 'getPERCCalculator',
+            'timi': 'getTIMICalculator',
+            'rcri': 'getRCRICalculator',
+            'qtc': 'getQTcCalculator',
+            'wells-dvt': 'getWellsDVTCalculator',
+            'phq9': 'getPHQ9Calculator',
+            'gad7': 'getGAD7Calculator',
+            'ciwa': 'getCIWACalculator',
+            'stopbang': 'getSTOPBANGCalculator',
+            'mse': 'getMSECalculator',
+            'mmse': 'getMMSECalculator',
+            'must': 'getMUSTCalculator',
+            'apgar': 'getAPGARCalculator',
+            'news2': 'getNEWS2Calculator',
+            'mews': 'getMEWSCalculator',
+            'rass': 'getRASSCalculator',
+            'nihss': 'getNIHSSCalculator',
+            'bsa': 'getBSACalculator',
+            'pefr': 'getPEFRCalculator',
+            'egfr': 'getEGFRCalculator',
+            'fena': 'getFENaCalculator',
+            'sofa': 'getSOFACalculator',
+            'abcd2': 'getABCD2Calculator'
+        };
+        
+        if (specialCases[id]) {
+            return specialCases[id];
+        }
+        
+        // Convert kebab-case to PascalCase and add get prefix
         const camelCase = id.replace(/-([a-z0-9])/g, (g) => g[1].toUpperCase());
         const pascalCase = camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
         return `get${pascalCase}Calculator`;
@@ -182,7 +227,52 @@ class CalculatorLoader {
      * @returns {string} Calculator function name
      */
     getCalculatorName(id) {
-        // Convert kebab-case to camelCase and add calculate prefix
+        // Map special cases that don't follow the pattern
+        const specialCases = {
+            'qrisk3-official': 'calculateQRISK3Official',
+            'chads2vasc': 'calculateCHADS2VASc',
+            'hasbled': 'calculateHASBLED',
+            'gcs': 'calculateGCS',
+            'apache': 'calculateAPACHE',
+            'wells-pe': 'calculateWells', // wells-pe uses calculateWells
+            'curb65': 'calculateCURB65',
+            'crb65': 'calculateCRB65',
+            'meld': 'calculateMELD',
+            'fib4': 'calculateFIB4',
+            'apri': 'calculateAPRI',
+            'ldl-calc': 'calculateLDL',
+            'map': 'calculateMAP',
+            'aa-gradient': 'calculateAAGradient',
+            'perc': 'calculatePERC',
+            'timi': 'calculateTIMI',
+            'rcri': 'calculateRCRI',
+            'qtc': 'calculateQTc',
+            'wells-dvt': 'calculateWellsDVT',
+            'phq9': 'calculatePHQ9',
+            'gad7': 'calculateGAD7',
+            'ciwa': 'calculateCIWA',
+            'stopbang': 'calculateSTOPBANG',
+            'mse': 'calculateMSE',
+            'mmse': 'calculateMMSE',
+            'must': 'calculateMUST',
+            'apgar': 'calculateAPGAR',
+            'news2': 'calculateNEWS2',
+            'mews': 'calculateMEWS',
+            'rass': 'calculateRASS',
+            'nihss': 'calculateNIHSS',
+            'bsa': 'calculateBSA',
+            'pefr': 'calculateAsthma', // pefr uses calculateAsthma
+            'egfr': 'calculateEGFR',
+            'fena': 'calculateFENa',
+            'sofa': 'calculateSOFA',
+            'abcd2': 'calculateABCD2'
+        };
+        
+        if (specialCases[id]) {
+            return specialCases[id];
+        }
+        
+        // Convert kebab-case to PascalCase and add calculate prefix
         const camelCase = id.replace(/-([a-z0-9])/g, (g) => g[1].toUpperCase());
         const pascalCase = camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
         return `calculate${pascalCase}`;
