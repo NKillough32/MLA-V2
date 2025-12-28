@@ -13901,14 +13901,30 @@
     
     <!-- Load global data files (required by V2 managers that expect window.* objects) -->
     <script src="/static/js/data/drugLoader.js"></script>
+    <script src="/static/js/data/calculatorLoader.js"></script>
     <script src="/static/js/data/labDatabase.js"></script>
     <script src="/static/js/data/guidelinesDatabase.js"></script>
     <script src="/static/js/data/vaccinationSchedule.js"></script>
     <script src="/static/js/data/proceduresDatabase.js"></script>
     
-    <!-- Load extracted calculators from V1 (provides window.ExtractedCalculators) -->
-    <!-- This contains all 61 calculator implementations extracted from V1 -->
-    <script src="/static/js/v2/extracted-calculators.js"></script>
+    <!-- Load calculators dynamically from JSON files -->
+    <!-- Calculator data is now loaded on-demand from /static/calculators/*.json -->
+    <script>
+        // Initialize ExtractedCalculators from JSON files
+        (async () => {
+            try {
+                console.log('📊 Loading calculators from JSON files...');
+                window.ExtractedCalculators = await calculatorLoader.loadAllCalculators();
+                console.log('✅ ExtractedCalculators ready:', Object.keys(window.ExtractedCalculators).length, 'functions');
+                
+                // Dispatch event to notify that calculators are ready
+                window.dispatchEvent(new CustomEvent('calculators-loaded'));
+            } catch (error) {
+                console.error('❌ Failed to load calculators:', error);
+                window.ExtractedCalculators = {};
+            }
+        })();
+    </script>
     
     <!-- Note: Other data files (mnemonics, triads, differentials, emergency, examination) 
          are ES6 modules imported directly by their respective managers -->

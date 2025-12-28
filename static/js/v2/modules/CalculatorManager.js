@@ -48,6 +48,17 @@ export class CalculatorManager {
             disableUnofficialQrisk: true
         });
         
+        // Listen for calculators-loaded event to rebuild registry
+        if (typeof window !== 'undefined') {
+            window.addEventListener('calculators-loaded', () => {
+                console.log('🔄 Rebuilding calculator registry with loaded calculators...');
+                this.buildCalculatorRegistry({
+                    extractedCalculators: window.ExtractedCalculators,
+                    disableUnofficialQrisk: true
+                });
+            });
+        }
+        
         console.log(`🧮 Calculator Manager initialized with ${this.calculators.size} calculators`);
     }
     

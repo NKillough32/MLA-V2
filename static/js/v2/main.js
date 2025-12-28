@@ -284,38 +284,34 @@ class MLAQuizApp {
 
     /**
      * Initialize calculator bridge with retry mechanism
+     * Waits for calculators to be loaded from JSON files
      */
     async initializeCalculatorBridge(eventBus, storageManager, analytics) {
-        const maxRetries = 10;
-        let retryCount = 0;
-        
-        const tryInitialize = () => {
-            if (window.ExtractedCalculators) {
-                this.calculatorBridge.initialize(eventBus, storageManager, analytics);
-                return true;
+        // Wait for calculators-loaded event or ExtractedCalculators to be available
+        const waitForCalculators = new Promise((resolve) => {
+            if (window.ExtractedCalculators && Object.keys(window.ExtractedCalculators).length > 0) {
+                console.log('✅ Calculators already loaded');
+                resolve();
             } else {
-                retryCount++;
-                if (retryCount < maxRetries) {
-                    return false;
-                } else {
-                    console.error('❌ ExtractedCalculators failed to load after maximum retries');
-                    return true; // Stop retrying
-                }
-            }
-        };
-        
-        // Try immediately first
-        if (!tryInitialize()) {
-            // Use a retry mechanism with exponential backoff
-            return new Promise((resolve) => {
-                const retryInterval = setInterval(() => {
-                    if (tryInitialize()) {
-                        clearInterval(retryInterval);
-                        resolve();
+                console.log('⏳ Waiting for calculators to load from JSON...');
+                window.addEventListener('calculators-loaded', () => {
+                    console.log('✅ Calculators loaded event received');
+                    resolve();
+                }, { once: true });
+                
+                // Fallback timeout after 10 seconds
+                setTimeout(() => {
+                    if (!window.ExtractedCalculators || Object.keys(window.ExtractedCalculators).length === 0) {
+                        console.warn('⚠️ Calculator loading timeout - initializing with empty set');
+                        window.ExtractedCalculators = {};
                     }
-                }, 100);
-            });
-        }
+                    resolve();
+                }, 10000);
+            }
+        });
+        
+        await waitForCalculators;
+        this.calculatorBridge.initialize(eventBus, storageManager, analytics);
     }
 
     setupCrossModuleCommunication() {

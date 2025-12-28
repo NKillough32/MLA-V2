@@ -1,0 +1,15 @@
+{
+  "id": "pefr",
+  "name": "Peak Flow Calculator",
+  "category": "RESPIRATORY",
+  "description": "Expected peak expiratory flow rate",
+  "keywords": [
+    "pefr",
+    "peak",
+    "flow",
+    "respiratory",
+    "asthma"
+  ],
+  "template": "",
+  "calculatorFunction": ""
+}
