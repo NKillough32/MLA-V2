@@ -10,5 +10,5 @@
     "prevention"
   ],
   "template": "",
-  "calculatorFunction": ""
+  "calculatorFunction": "// QRISK3 calculator uses external library\n        console.log('QRISK3 calculator loaded - uses QRISK3 library');"
 }

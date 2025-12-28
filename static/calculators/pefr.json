@@ -11,5 +11,5 @@
     "asthma"
   ],
   "template": "",
-  "calculatorFunction": ""
+  "calculatorFunction": "// PEFR calculator\n        console.log('PEFR calculator loaded');"
 }
