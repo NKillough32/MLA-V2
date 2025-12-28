@@ -2329,6 +2329,14 @@
       "indication": "Short-term insomnia (2-4 weeks max)"
     }
   ],
-  "count": 388,
+    ,
+    {
+      "id": "methylphenidate",
+      "name": "Methylphenidate",
+      "class": "Central nervous system stimulant",
+      "indication": "ADHD, narcolepsy"
+    }
+  ],
+  "count": 389,
   "generated": "Drug index for MLA-V2"
 }

@@ -1,0 +1,14 @@
+{
+  "name": "Methylphenidate",
+  "class": "Central nervous system stimulant (psychostimulant)",
+  "mechanism": "Blocks reuptake of norepinephrine and dopamine and increases their release in the synaptic cleft",
+  "dosing": "ADHD (children/adolescents): typically 5–20 mg once or twice daily (immediate-release) or 10–60 mg once daily (modified-release) depending on formulation and age; start low and titrate. Narcolepsy: individualized dosing (specialist management). Follow local formularies for age- and weight-specific guidance.",
+  "contraindications": "Severe hypertension, advanced arteriosclerosis, known structural cardiac abnormalities, hyperthyroidism, glaucoma, current use of MAO inhibitors or within 14 days, known hypersensitivity",
+  "interactions": "Concurrent sympathomimetics, monoamine oxidase inhibitors (risk of hypertensive crisis), serotonergic drugs (rare serotonin syndrome), antihypertensives may have reduced effect; stimulant effects may be potentiated by other stimulants or anorectics",
+  "monitoring": "Blood pressure and heart rate before initiation and periodically during treatment; growth (height/weight) in children; psychiatric symptoms (mood, behaviour, psychosis); signs of misuse or diversion",
+  "pregnancy": "Use only if clearly needed; limited data—discuss risks/benefits with specialist and obstetrics",
+  "sideEffects": "Insomnia, decreased appetite, weight loss, tachycardia, palpitations, increased blood pressure, anxiety, headache, abdominal pain; rare psychotic symptoms",
+  "pharmacokinetics": "Well absorbed orally; various formulations (immediate- and modified-release) with differing onset/duration; hepatic metabolism; renal excretion of metabolites",
+  "clinicalPearls": "Assess cardiac history and perform baseline cardiovascular assessment if risk factors present. Counsel patients about reduced appetite/weight loss in children and timing of doses to reduce insomnia. Monitor for misuse/diversion. Liaise with specialist services for initiation in paediatrics and narcolepsy.",
+  "indication": "Attention-deficit/hyperactivity disorder (ADHD), narcolepsy (specialist prescribing)"
+}
