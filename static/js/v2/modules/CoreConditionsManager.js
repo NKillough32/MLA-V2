@@ -320,13 +320,13 @@ export class CoreConditionsManager {
     /**
      * Export condition as text
      */
-    exportCondition(conditionId) {
-        const condition = this.getConditionById(conditionId);
+    async exportCondition(conditionId) {
+        const condition = await this.getConditionById(conditionId);
         if (!condition) return '';
 
         let text = `${condition.name}\n`;
         text += `${'='.repeat(condition.name.length)}\n\n`;
-        text += `Domain: ${condition.domain}\n`;
+        text += `Domain: ${condition.domains ? condition.domains[0] : (condition.domain || 'General')}\n`;
         
         if (condition.synonyms && condition.synonyms.length > 0) {
             text += `Synonyms: ${condition.synonyms.join(', ')}\n`;
@@ -415,7 +415,7 @@ export class CoreConditionsManager {
      * Copy condition to clipboard
      */
     async copyToClipboard(conditionId) {
-        const text = this.exportCondition(conditionId);
+        const text = await this.exportCondition(conditionId);
         
         try {
             await navigator.clipboard.writeText(text);
@@ -430,8 +430,8 @@ export class CoreConditionsManager {
     /**
      * Print condition
      */
-    printCondition(conditionId) {
-        const condition = this.getConditionById(conditionId);
+    async printCondition(conditionId) {
+        const condition = await this.getConditionById(conditionId);
         if (!condition) return;
 
         // Create a print-friendly version
@@ -532,8 +532,8 @@ export class CoreConditionsManager {
     /**
      * Get quick reference for a condition (summary)
      */
-    getQuickReference(conditionId) {
-        const condition = this.getConditionById(conditionId);
+    async getQuickReference(conditionId) {
+        const condition = await this.getConditionById(conditionId);
         if (!condition) return null;
 
         return {

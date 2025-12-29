@@ -14,43 +14,98 @@
       "pathophysiology": "Age-related muscle fibre loss, reduced anabolic signalling, chronic inflammation and reduced physical activity."
     },
     "recognition": {
-      "keyFeatures": [
+      "symptoms": [
         "Reduced handgrip strength",
         "Slow gait speed (<0.8 m/s often abnormal)",
-        "Difficulty rising from a chair or reduced physical performance"
+        "Difficulty rising from a chair or reduced physical performance",
+        "Unintentional weight loss",
+        "Muscle weakness and fatigue"
       ],
-      "screeningTools": [
-        "SARC-F questionnaire",
-        "Handgrip dynamometry",
-        "Timed Up and Go / gait speed"
+      "signs": [
+        "Low muscle mass on physical examination",
+        "Reduced calf circumference",
+        "Weak handgrip strength (<27 kg men, <16 kg women)"
+      ],
+      "atypicalPresentations": [
+        "Recurrent falls without obvious cause",
+        "Unexplained functional decline"
+      ],
+      "redFlags": [
+        "Rapid muscle loss",
+        "Severe malnutrition",
+        "Underlying malignancy suspected"
       ]
     },
     "investigation": {
-      "initial": [
-        "Nutritional assessment (weight loss, BMI)",
-        "Blood tests: FBC, U&E, LFTs, TSH, vitamin D, CRP",
-        "Assess mobility: gait speed, chair-stand test, handgrip"
+      "firstLine": [
+        "SARC-F questionnaire screening",
+        "Handgrip dynamometry",
+        "Gait speed assessment (4-metre walk test)",
+        "Chair-stand test (5 times sit-to-stand)",
+        "Nutritional assessment (weight, BMI, MUST score)"
       ],
-      "specialist": [
-        "DXA or bioimpedance for muscle mass if available",
-        "Consider referral for multidisciplinary sarcopenia clinic"
+      "secondLine": [
+        "Blood tests: FBC, U&E, LFTs, TSH, vitamin D, CRP, albumin",
+        "DXA scan or bioimpedance analysis for muscle mass quantification",
+        "Calf circumference measurement"
+      ],
+      "specialistTests": [
+        "Referral to multidisciplinary sarcopenia clinic",
+        "Advanced body composition imaging (CT/MRI)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Sarcopenia is diagnosed based on low muscle strength (handgrip or chair-stand test) plus either low muscle quantity/quality (DXA, BIA, or imaging) or low physical performance (gait speed <0.8 m/s). Use EWGSOP2 criteria for formal diagnosis.",
+      "differentials": [
+        "Cachexia (malignancy, chronic disease)",
+        "Malnutrition",
+        "Hypothyroidism",
+        "Polymyalgia rheumatica",
+        "Primary myopathy"
       ]
     },
     "management": {
-      "nonPharmacological": [
-        "Progressive resistance and balance exercise (physiotherapy)",
-        "Optimise protein intake and treat malnutrition",
-        "Correct vitamin D deficiency",
-        "Address reversible contributors (inflammation, endocrine dysfunction)"
-      ],
-      "pharmacological": [
-        "No routine disease-modifying drugs; treat underlying causes and optimise comorbidities"
-      ],
-      "referral": [
-        "Physiotherapy, dietetics, geriatric medicine as needed"
-      ]
+      "acute": {
+        "firstLine": [
+          "Address acute reversible causes (infection, dehydration, acute illness)",
+          "Nutritional support if malnourished"
+        ],
+        "secondLine": [
+          "Refer to acute geriatrics if severe functional decline"
+        ],
+        "procedures": []
+      },
+      "chronic": {
+        "firstLine": [
+          "Progressive resistance exercise training (2-3 sessions per week)",
+          "Balance and functional training",
+          "Protein supplementation (1.0–1.2 g/kg/day or higher if specialist advice)",
+          "Vitamin D supplementation if deficient"
+        ],
+        "secondLine": [
+          "Treat underlying conditions (heart failure, COPD, diabetes)",
+          "Review and optimise medications (deprescribe where appropriate)",
+          "Referral to physiotherapy and dietetics"
+        ],
+        "monitoring": [
+          "Regular reassessment of muscle strength and function",
+          "Monitor nutritional status and weight",
+          "Review exercise adherence and progress"
+        ]
+      },
+      "drugs": [],
+      "procedures": []
     },
+    "complications": [
+      "Increased falls risk and fractures",
+      "Loss of independence",
+      "Increased hospitalization",
+      "Reduced quality of life",
+      "Increased mortality"
+    ],
     "prognosis": "Improvement possible with early, sustained exercise and nutrition; untreated sarcopenia increases frailty and healthcare use.",
-    "foundationDoctorRole": "Screen older patients, start basic tests, provide brief advice on exercise and nutrition, and refer to physiotherapy/dietetics or geriatrics for comprehensive management."
+    "foundationDoctorRole": "Screen older patients, start basic tests, provide brief advice on exercise and nutrition, and refer to physiotherapy/dietetics or geriatrics for comprehensive management.",
+    "escalation": "Refer to geriatrics or specialist sarcopenia clinic if severe, rapid progression, or multidisciplinary input needed.",
+    "keySafetyConsiderations": "Ensure exercise programmes are safe and supervised; monitor for falls. Address polypharmacy and review medications that may impair muscle function or appetite."
   }
 }
