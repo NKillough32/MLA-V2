@@ -642,20 +642,20 @@ export class CoreConditionsManager {
             domains: enhanced.domains,
             overview: content.overview || null,
             recognition: {
-                typical: content.recognition.symptoms || [],
-                atypical: content.recognition.atypicalPresentations || [],
-                examination: content.recognition.signs || [],
-                redFlags: content.recognition.redFlags || []
+                typical: content.recognition?.symptoms || [],
+                atypical: content.recognition?.atypicalPresentations || [],
+                examination: content.recognition?.signs || [],
+                redFlags: content.recognition?.redFlags || []
             },
             investigation: {
-                immediate: content.investigation.firstLine || [],
-                further: content.investigation.secondLine || [],
-                specialist: content.investigation.specialistTests || [],
+                immediate: content.investigation?.firstLine || [],
+                further: content.investigation?.secondLine || [],
+                specialist: content.investigation?.specialistTests || [],
                 interpretation: []
             },
             diagnosis: {
-                criteria: content.diagnosis.criteria || '',
-                differential: content.diagnosis.differentials || []
+                criteria: content.diagnosis?.criteria || '',
+                differential: content.diagnosis?.differentials || []
             },
             management: {
                 acute: content.management?.acute || null,
@@ -696,7 +696,7 @@ export class CoreConditionsManager {
      */
     async getDrugInformation(conditionName) {
         const enhanced = await this.getEnhancedCondition(conditionName);
-        if (enhanced && enhanced.content.management.drugs) {
+        if (enhanced && enhanced.content?.management?.drugs) {
             return enhanced.content.management.drugs;
         }
         return [];
