@@ -663,6 +663,9 @@ export class CoreConditionsManager {
                 complications: content.complications || [],
                 drugs: content.management?.drugs || [],
                 procedures: content.management?.procedures || []
+                ,
+                // Pass through any related conditions defined in the enhanced JSON
+                relatedConditions: enhanced.relatedConditions || content.relatedConditions || []
             },
             clinicalPearls: content.clinicalPearls || [],
             prognosis: content.prognosis || '',

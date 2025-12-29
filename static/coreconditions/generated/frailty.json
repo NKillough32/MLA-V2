@@ -146,4 +146,19 @@
     "escalation": "Refer to geriatric services for complex cases, particularly if there is rapid deterioration or if the patient has multiple comorbidities requiring specialized management.",
     "keySafetyConsiderations": "Ensure safe prescribing practices to minimize polypharmacy, monitor for adverse drug reactions, and assess for fall risks in frail patients. Regularly review the patient's functional status and adjust care plans accordingly."
   }
+  ,
+  "relatedConditions": [
+    {
+      "id": "polypharmacy",
+      "name": "Polypharmacy and Deprescribing",
+      "filename": "polypharmacy.json",
+      "note": "Medication review and deprescribing are key components of frailty management."
+    },
+    {
+      "id": "sarcopenia",
+      "name": "Sarcopenia",
+      "filename": "sarcopenia.json",
+      "note": "Sarcopenia underlies physical frailty; address with exercise and nutrition."
+    }
+  ]
 }

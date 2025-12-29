@@ -2058,9 +2058,35 @@ class MLAQuizApp {
                 ` : ''}
             </div>
             ` : ''}
+            
+            ${condition.relatedConditions && condition.relatedConditions.length > 0 ? `
+            <div class="cc-section">
+                <h3 class="cc-section-title">🔗 Related</h3>
+                <div class="cc-subsection">
+                    <ul class="cc-list">
+                        ${condition.relatedConditions.map(rc => `<li><a href="#" class="cc-related-link" data-id="${rc.id}">${rc.name}</a>${rc.note ? ` — ${rc.note}` : ''}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+            ` : ''}
+
         `;
 
         detailContent.innerHTML = html;
+        // Attach handlers for related condition links to navigate within the UI
+        try {
+            const relatedLinks = detailContent.querySelectorAll('.cc-related-link');
+            relatedLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.dataset.id;
+                    // Reuse the same listView/detailView in this scope
+                    this.showConditionDetail(targetId, listView, detailView);
+                });
+            });
+        } catch (err) {
+            console.warn('Failed to attach related-links handlers', err);
+        }
         
         // Scroll to top - multiple scroll contexts
         detailView.scrollTop = 0;

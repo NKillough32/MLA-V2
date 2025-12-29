@@ -133,4 +133,19 @@
     "escalation": "If there are concerns about rapid cognitive decline, significant behavioral changes, or acute medical issues, escalate to senior medical staff or geriatric specialists.",
     "keySafetyConsiderations": "Ensure patient safety in the home environment, assess for driving ability, monitor for medication side effects, and provide education to caregivers about managing challenging behaviors."
   }
+  ,
+  "relatedConditions": [
+    {
+      "id": "polypharmacy",
+      "name": "Polypharmacy and Deprescribing",
+      "filename": "polypharmacy.json",
+      "note": "Medications (anticholinergics, benzodiazepines) can worsen cognition and precipitate delirium."
+    },
+    {
+      "id": "sarcopenia",
+      "name": "Sarcopenia",
+      "filename": "sarcopenia.json",
+      "note": "Muscle loss contributes to frailty, falls, and loss of independence in dementia patients."
+    }
+  ]
 }

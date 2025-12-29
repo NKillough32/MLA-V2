@@ -132,4 +132,19 @@
     "escalation": "If a patient shows signs of severe malnutrition or complications, escalate care to a senior clinician or a nutrition support team for further evaluation and management.",
     "keySafetyConsiderations": "Ensure proper monitoring of patients receiving enteral or parenteral nutrition to prevent complications such as aspiration, infection, and electrolyte imbalances. Regularly assess for signs of refeeding syndrome in at-risk patients."
   }
+  ,
+  "relatedConditions": [
+    {
+      "id": "sarcopenia",
+      "name": "Sarcopenia",
+      "filename": "sarcopenia.json",
+      "note": "Malnutrition contributes to muscle wasting and sarcopenia; address nutrition to improve outcomes."
+    },
+    {
+      "id": "polypharmacy",
+      "name": "Polypharmacy and Deprescribing",
+      "filename": "polypharmacy.json",
+      "note": "Review medications that impair appetite or contribute to malabsorption."
+    }
+  ]
 }

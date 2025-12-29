@@ -1,0 +1,56 @@
+{
+  "id": "sarcopenia",
+  "name": "Sarcopenia",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-29T00:00:00",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Sarcopenia\n\n## 1. OVERVIEW\nSarcopenia is the progressive loss of skeletal muscle mass and strength associated with ageing and disease, increasing frailty, falls and functional dependency.\n\n## 2. RECOGNITION\nKey features: reduced muscle strength (handgrip), slow gait speed, difficulty rising from a chair. Screening: SARC-F questionnaire, handgrip dynamometry, gait speed.\n\n## 3. INVESTIGATION\nAssess: handgrip strength, gait speed, timed up-and-go, calf circumference. Consider DXA or bioimpedance for muscle mass if available. Identify reversible contributors (malnutrition, vitamin D deficiency, inactivity, chronic disease).\n\n## 4. MANAGEMENT\nNon-pharmacological: progressive resistance exercise, physiotherapy, protein-enriched diet (1.0–1.2 g/kg/day or per specialist guidance), optimise vitamin D and treat underlying causes.\nPharmacological: no routine licensed drug; treat contributory conditions (optimize heart failure, treat hypothyroidism, address inflammation). Consider specialist trials or endocrine causes when appropriate.\n\n## 5. PROGNOSIS\nAssociated with increased falls, hospitalization, loss of independence and mortality. Early detection and exercise-based interventions improve outcomes.\n\n## 6. FOUNDATION DOCTOR ROLE\nScreen at-risk patients, initiate basic investigations (nutrition, vitamin D, thyroid, inflammatory markers), refer to physiotherapy and geriatric/multidisciplinary services, and promote exercise and nutrition interventions.",
+  "content": {
+    "overview": {
+      "definition": "Progressive loss of skeletal muscle mass, strength and function associated with ageing and disease.",
+      "epidemiology": "Common in older adults; prevalence increases with age and comorbidity.",
+      "pathophysiology": "Age-related muscle fibre loss, reduced anabolic signalling, chronic inflammation and reduced physical activity."
+    },
+    "recognition": {
+      "keyFeatures": [
+        "Reduced handgrip strength",
+        "Slow gait speed (<0.8 m/s often abnormal)",
+        "Difficulty rising from a chair or reduced physical performance"
+      ],
+      "screeningTools": [
+        "SARC-F questionnaire",
+        "Handgrip dynamometry",
+        "Timed Up and Go / gait speed"
+      ]
+    },
+    "investigation": {
+      "initial": [
+        "Nutritional assessment (weight loss, BMI)",
+        "Blood tests: FBC, U&E, LFTs, TSH, vitamin D, CRP",
+        "Assess mobility: gait speed, chair-stand test, handgrip"
+      ],
+      "specialist": [
+        "DXA or bioimpedance for muscle mass if available",
+        "Consider referral for multidisciplinary sarcopenia clinic"
+      ]
+    },
+    "management": {
+      "nonPharmacological": [
+        "Progressive resistance and balance exercise (physiotherapy)",
+        "Optimise protein intake and treat malnutrition",
+        "Correct vitamin D deficiency",
+        "Address reversible contributors (inflammation, endocrine dysfunction)"
+      ],
+      "pharmacological": [
+        "No routine disease-modifying drugs; treat underlying causes and optimise comorbidities"
+      ],
+      "referral": [
+        "Physiotherapy, dietetics, geriatric medicine as needed"
+      ]
+    },
+    "prognosis": "Improvement possible with early, sustained exercise and nutrition; untreated sarcopenia increases frailty and healthcare use.",
+    "foundationDoctorRole": "Screen older patients, start basic tests, provide brief advice on exercise and nutrition, and refer to physiotherapy/dietetics or geriatrics for comprehensive management."
+  }
+}

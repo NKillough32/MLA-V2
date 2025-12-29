@@ -1,0 +1,59 @@
+{
+  "id": "polypharmacy",
+  "name": "Polypharmacy and Deprescribing",
+  "domains": [
+    "Care of the Elderly"
+  ],
+  "generatedAt": "2025-12-29T00:00:00",
+  "model": "gpt-4o-mini",
+  "rawContent": "# Polypharmacy and Deprescribing\n\n## 1. OVERVIEW\nPolypharmacy (commonly defined as ≥5 regular medications) increases risk of adverse drug events, falls, hospitalisation and medication-related morbidity in older people. Deprescribing is the process of supervised medication withdrawal to minimise harm and improve outcomes.\n\n## 2. RECOGNITION\nIdentify patients with many regular medicines, recent falls, cognitive impairment, recurrent lines of adverse drug reactions or hospital admissions. Use tools: STOPP/START, Beers criteria, medication review checklists, anticholinergic burden scales.\n\n## 3. INVESTIGATION\nFull medication reconciliation (including OTC and herbal), check indications, durations, interactions, renal/hepatic function, and patient goals of care. Assess frailty, cognition and life expectancy when weighing benefits vs harms.\n\n## 4. MANAGEMENT\nConduct structured medication review: prioritise deprescribing of drugs with limited benefit, high risk (e.g., anticholinergics, benzodiazepines, long-term opioids, proton pump inhibitors without indication), and those causing orthostatic hypotension. Use shared decision-making, taper where needed, monitor withdrawal effects, and document rationale. Consider involvement of pharmacist and geriatrician.\n\n## 5. FOUNDATION DOCTOR ROLE\nPerform medication reconciliation, flag high-risk patients for formal review, start deprescribing under supervision for simple items (e.g., stop duplicate therapies, review PPI indications), and arrange follow-up to monitor for symptom recurrence or withdrawal.\n",
+  "content": {
+    "overview": {
+      "definition": "Use of multiple medicines leading to increased risk of harm; deprescribing is supervised withdrawal to reduce risk.",
+      "epidemiology": "Very common in older adults and those with multimorbidity; prevalence rises with age and care complexity.",
+      "impact": "Increased ADEs, falls, cognitive impairment, hospital admissions, and reduced quality of life."
+    },
+    "recognition": {
+      "redFlags": [
+        "Patients on ≥5 regular medications",
+        "Recent falls or syncope",
+        "New cognitive impairment after medication changes",
+        "Multiple prescribers without coordinated review"
+      ],
+      "tools": [
+        "STOPP/START criteria",
+        "Beers criteria",
+        "Anticholinergic burden scales",
+        "Medication review checklists"
+      ]
+    },
+    "investigation": {
+      "steps": [
+        "Medication reconciliation including OTC and herbal preparations",
+        "Check renal and hepatic function for dosing",
+        "Identify drugs with unclear indications or limited benefit",
+        "Assess interactions and cumulative anticholinergic/sedative burden"
+      ]
+    },
+    "management": {
+      "principles": [
+        "Review indication, benefit and harm for each drug",
+        "Prioritise deprescribing high-risk or low-benefit drugs",
+        "Use shared decision-making with patient/carer",
+        "Taper drugs that require gradual withdrawal (e.g., benzodiazepines, opioids, antidepressants)",
+        "Arrange follow-up and safety-netting"
+      ],
+      "commonTargets": [
+        "Long-term benzodiazepines and Z-drugs",
+        "Anticholinergics in cognitive impairment",
+        "Proton pump inhibitors without ongoing indication",
+        "Duplicate therapies and inappropriate antiplatelet/anticoagulant combinations"
+      ]
+    },
+    "referral": [
+      "Clinical pharmacist medication review",
+      "Geriatrician or specialist review for complex cases"
+    ],
+    "foundationDoctorRole": "Identify and document medication issues, start simple deprescribing under supervision, communicate changes to primary care, and ensure monitoring plans are in place."
+  }
+}
