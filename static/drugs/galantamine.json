@@ -1,0 +1,14 @@
+{
+  "name": "Galantamine",
+  "class": "Acetylcholinesterase inhibitor",
+  "mechanism": "Reversible acetylcholinesterase inhibitor and nicotinic receptor modulator",
+  "dosing": "Start 4 mg twice daily, increase to 8 mg twice daily after 4 weeks; max 12 mg twice daily (24 mg/day)",
+  "contraindications": "Known hypersensitivity, severe hepatic impairment",
+  "interactions": "Anticholinergics (antagonism), beta-blockers (bradycardia), NSAIDs (↑ GI bleed risk)",
+  "monitoring": "Cognition, weight, GI side effects, heart rate",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Nausea, vomiting, diarrhoea, anorexia, bradycardia, insomnia",
+  "pharmacokinetics": "Oral, hepatic metabolism; adjust in severe hepatic impairment",
+  "clinicalPearls": "Alternative to donepezil/rivastigmine for mild–moderate Alzheimer\u2019s; consider GI side effects on initiation.",
+  "indication": "Mild to moderate Alzheimer's disease"
+}

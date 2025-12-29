@@ -1,0 +1,14 @@
+{
+  "name": "Memantine",
+  "class": "NMDA receptor antagonist",
+  "mechanism": "Non-competitive NMDA receptor antagonist that modulates glutamate activity",
+  "dosing": "Start 5 mg once daily, increase weekly to 10 mg once daily then 10 mg twice daily (typical maintenance 20 mg/day)",
+  "contraindications": "Severe renal impairment (dose adjustment required), hypersensitivity",
+  "interactions": "Caution with other CNS-acting drugs; risk of confusion when combined with other NMDA antagonists",
+  "monitoring": "Renal function, cognitive response, behaviour and hallucinations",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Dizziness, headache, constipation, confusion, hallucinations",
+  "pharmacokinetics": "Oral, primarily renal excretion",
+  "clinicalPearls": "Used in moderate–severe Alzheimer\u2019s disease; may be combined with acetylcholinesterase inhibitors like donepezil.",
+  "indication": "Moderate to severe Alzheimer's disease"
+}

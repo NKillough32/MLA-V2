@@ -1,0 +1,14 @@
+{
+  "name": "Tolcapone",
+  "class": "COMT inhibitor",
+  "mechanism": "Inhibits catechol-O-methyltransferase both peripherally and centrally, prolonging levodopa effect",
+  "dosing": "Typically 100-200 mg three times daily (specialist dosing)",
+  "contraindications": "History of hepatic disease or unexplained LFT abnormalities",
+  "interactions": "Increases levodopa levels; interactions with other dopaminergic agents",
+  "monitoring": "Liver function tests prior to initiation and regularly during treatment (risk of severe hepatotoxicity)",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Hepatotoxicity, diarrhoea, dyskinesia, urine discoloration, orthostatic hypotension",
+  "pharmacokinetics": "Oral, hepatic metabolism",
+  "clinicalPearls": "Reserved for specialist use due to hepatic risk; requires regular LFT monitoring. Entacapone is usually preferred in routine practice.",
+  "indication": "Adjunct to levodopa in Parkinson's disease with motor fluctuations (specialist use)"
+}

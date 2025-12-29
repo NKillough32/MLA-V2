@@ -1,0 +1,14 @@
+{
+  "name": "Entacapone",
+  "class": "COMT inhibitor",
+  "mechanism": "Inhibits catechol-O-methyltransferase (COMT) peripherally, prolonging levodopa's half-life and effect",
+  "dosing": "200 mg with each levodopa dose (commonly with every co-careldopa dose); maximum ~1600 mg/day",
+  "contraindications": "Known hypersensitivity; caution with history of severe hepatic disease (monitor clinically)",
+  "interactions": "Increases levodopa concentrations (may worsen dopaminergic adverse effects); interactions with MAO inhibitors and other dopaminergic agents",
+  "monitoring": "Clinical response, dopaminergic adverse effects (dyskinesia, hallucinations), bowel symptoms; tolcapone (not entacapone) requires LFT monitoring",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Diarrhoea, abdominal pain, urine discoloration (brownish), increased dyskinesia, orthostatic hypotension",
+  "pharmacokinetics": "Oral, rapidly absorbed, metabolised hepatically",
+  "clinicalPearls": "Used as adjunct to levodopa to reduce OFF time in Parkinson's disease; entacapone is peripheral COMT inhibitor with lower hepatic risk than tolcapone.",
+  "indication": "Adjunct to levodopa in Parkinson's disease with motor fluctuations"
+}

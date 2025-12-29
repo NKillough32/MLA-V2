@@ -1,0 +1,14 @@
+{
+  "name": "Trihexyphenidyl",
+  "class": "Anticholinergic (antimuscarinic)",
+  "mechanism": "Antimuscarinic that reduces cholinergic activity in the CNS",
+  "dosing": "Start 1 mg two or three times daily, titrate cautiously; doses vary (specialist guidance recommended)",
+  "contraindications": "Narrow-angle glaucoma, urinary retention, severe prostatic hypertrophy, severe dementia",
+  "interactions": "Other anticholinergics (additive effects), may antagonise acetylcholinesterase inhibitors",
+  "monitoring": "Cognitive status, urinary retention, bowel function, temperature in hot weather",
+  "pregnancy": "Use with caution",
+  "sideEffects": "Confusion, dry mouth, blurred vision, urinary retention, constipation, tachycardia, hallucinations",
+  "pharmacokinetics": "Oral",
+  "clinicalPearls": "Sometimes helpful for tremor in younger patients but generally poorly tolerated in older adults; use with caution in the elderly due to cognitive adverse effects.",
+  "indication": "Symptomatic management of tremor in Parkinson's disease (selected patients)"
+}

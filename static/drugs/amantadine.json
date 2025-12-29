@@ -1,0 +1,14 @@
+{
+  "name": "Amantadine",
+  "class": "Dopaminergic/antiviral agent",
+  "mechanism": "Enhances dopaminergic neurotransmission (uncertain exact mechanism) and has NMDA-antagonist properties",
+  "dosing": "Typical 100 mg twice daily; adjust for renal impairment",
+  "contraindications": "Severe renal impairment unless dose adjusted; hypersensitivity",
+  "interactions": "Anticholinergics, other CNS-active agents; caution with QT-prolonging drugs",
+  "monitoring": "Renal function, confusion or hallucinations, peripheral edema",
+  "pregnancy": "Not recommended unless necessary",
+  "sideEffects": "Confusion, hallucinations, peripheral oedema, livedo reticularis, dizziness, insomnia",
+  "pharmacokinetics": "Oral, renally excreted (dose adjust in renal impairment)",
+  "clinicalPearls": "May help reduce dyskinesia and improve motor symptoms in Parkinson's disease; useful in acute levodopa-induced dyskinesia in some cases.",
+  "indication": "Symptomatic management of Parkinson's disease; reduction of levodopa-induced dyskinesia in selected cases"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Rotigotine",
+  "class": "Dopamine agonist (patch)",
+  "mechanism": "Non-ergot dopamine agonist delivered transdermally providing continuous dopaminergic stimulation",
+  "dosing": "Patch 2 mg/24h, titrate weekly based on response (range commonly 2-8 mg/24h)",
+  "contraindications": "Known hypersensitivity to rotigotine or patch components",
+  "interactions": "Other dopaminergic agents (additive effects), dopaminergic antagonists may reduce efficacy",
+  "monitoring": "Skin site reactions, impulse control disorders, orthostatic symptoms, neuropsychiatric effects",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Nausea, somnolence, dizziness, application site reactions, hallucinations, orthostatic hypotension",
+  "pharmacokinetics": "Transdermal delivery with continuous plasma concentrations",
+  "clinicalPearls": "Useful for early Parkinson's disease or when oral therapy is difficult; avoid sudden patch removal without medical review.",
+  "indication": "Parkinson's disease (monotherapy or adjunct via transdermal patch)"
+}

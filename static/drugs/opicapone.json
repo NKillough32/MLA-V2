@@ -1,0 +1,14 @@
+{
+  "name": "Opicapone",
+  "class": "COMT inhibitor",
+  "mechanism": "Highly selective peripheral COMT inhibitor that prolongs levodopa effect",
+  "dosing": "50 mg once daily at bedtime (specialist dosing may vary)",
+  "contraindications": "Severe hepatic impairment, hypersensitivity",
+  "interactions": "Increases levodopa concentrations; interactions with other dopaminergic drugs",
+  "monitoring": "Clinical response, dyskinesia, gastrointestinal side effects",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Constipation, dyskinesia, hallucinations, orthostatic hypotension",
+  "pharmacokinetics": "Oral, long duration allowing once-daily dosing",
+  "clinicalPearls": "Once-daily COMT inhibitor used to reduce OFF time; often specialist-initiated.",
+  "indication": "Adjunct to levodopa in Parkinson's disease to reduce OFF time"
+}

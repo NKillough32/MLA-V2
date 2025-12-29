@@ -2333,8 +2333,75 @@
       "name": "Methylphenidate",
       "class": "Central nervous system stimulant",
       "indication": "ADHD, narcolepsy"
+    },
+    {
+      "id": "amantadine",
+      "name": "Amantadine",
+      "class": "Dopaminergic/antiviral agent",
+      "indication": "Parkinson's disease (symptomatic), treatment of levodopa-induced dyskinesia in selected cases"
+    },
+    {
+      "id": "memantine",
+      "name": "Memantine",
+      "class": "NMDA receptor antagonist",
+      "indication": "Moderate to severe Alzheimer's disease"
+    },
+    {
+      "id": "entacapone",
+      "name": "Entacapone",
+      "class": "COMT inhibitor",
+      "indication": "Adjunct to levodopa in Parkinson's disease with motor fluctuations"
+    },
+    {
+      "id": "galantamine",
+      "name": "Galantamine",
+      "class": "Acetylcholinesterase inhibitor",
+      "indication": "Mild to moderate Alzheimer's disease"
+    },
+    {
+      "id": "rasagiline",
+      "name": "Rasagiline",
+      "class": "MAO-B inhibitor",
+      "indication": "Parkinson's disease (monotherapy or adjunct)"
+    },
+    {
+      "id": "selegiline",
+      "name": "Selegiline",
+      "class": "MAO-B inhibitor",
+      "indication": "Parkinson's disease (adjunct therapy)"
+    },
+    {
+      "id": "tolcapone",
+      "name": "Tolcapone",
+      "class": "COMT inhibitor",
+      "indication": "Adjunct to levodopa in Parkinson's disease (specialist use)"
+    },
+    {
+      "id": "trihexyphenidyl",
+      "name": "Trihexyphenidyl (benzhexol)",
+      "class": "Anticholinergic (antimuscarinic)",
+      "indication": "Symptomatic management of tremor in Parkinson's disease (selected patients)"
+    }
+    ,
+    {
+      "id": "rotigotine",
+      "name": "Rotigotine",
+      "class": "Dopamine agonist (patch)",
+      "indication": "Parkinson's disease (transdermal patch for symptomatic management)"
+    },
+    {
+      "id": "safinamide",
+      "name": "Safinamide",
+      "class": "MAO-B inhibitor / glutamate modulator",
+      "indication": "Adjunct to levodopa in Parkinson's disease with motor fluctuations"
+    },
+    {
+      "id": "opicapone",
+      "name": "Opicapone",
+      "class": "COMT inhibitor",
+      "indication": "Adjunct to levodopa in Parkinson's disease to reduce OFF time"
     }
   ],
-  "count": 389,
+  "count": 400,
   "generated": "Drug index for MLA-V2"
 }

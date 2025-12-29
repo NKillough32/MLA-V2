@@ -1,0 +1,14 @@
+{
+  "name": "Rasagiline",
+  "class": "MAO-B inhibitor",
+  "mechanism": "Irreversible selective monoamine oxidase-B inhibitor, increases synaptic dopamine",
+  "dosing": "1 mg once daily",
+  "contraindications": "Concurrent use with meperidine, methadone, sympathomimetics, or serotonergic drugs without specialist advice",
+  "interactions": "Serotonergic drugs (risk of serotonin syndrome), meperidine, linezolid; caution with tyramine-rich foods at high doses",
+  "monitoring": "Clinical efficacy and emergence of hallucinations or orthostatic symptoms",
+  "pregnancy": "Avoid",
+  "sideEffects": "Headache, arthralgia, dyspepsia, insomnia, hallucinations",
+  "pharmacokinetics": "Oral, hepatic metabolism",
+  "clinicalPearls": "Used for early Parkinson's disease or as adjunct to levodopa; once-daily dosing is convenient.",
+  "indication": "Parkinson's disease (monotherapy or adjunct)"
+}

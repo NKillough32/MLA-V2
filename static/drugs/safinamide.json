@@ -1,0 +1,14 @@
+{
+  "name": "Safinamide",
+  "class": "MAO-B inhibitor / glutamate modulator",
+  "mechanism": "Selective reversible MAO-B inhibition with additional non-dopaminergic effects on glutamate release",
+  "dosing": "50 mg once daily, may increase to 100 mg once daily based on response",
+  "contraindications": "Severe hepatic impairment, concurrent use with contraindicated serotonergic agents",
+  "interactions": "Serotonergic drugs (risk of serotonin syndrome), other MAO inhibitors, sympathomimetics",
+  "monitoring": "Clinical response, neuropsychiatric symptoms, blood pressure",
+  "pregnancy": "Avoid",
+  "sideEffects": "Dyskinesia (may increase), insomnia, nausea, dizziness, hallucinations",
+  "pharmacokinetics": "Oral; hepatic metabolism",
+  "clinicalPearls": "Used as adjunct to levodopa in Parkinson's disease to reduce OFF time; specialist-initiated in many regions.",
+  "indication": "Adjunctive treatment in Parkinson's disease with motor fluctuations"
+}

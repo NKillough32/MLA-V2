@@ -1,0 +1,14 @@
+{
+  "name": "Selegiline",
+  "class": "MAO-B inhibitor",
+  "mechanism": "Selective irreversible monoamine oxidase-B inhibitor at therapeutic doses",
+  "dosing": "Typically 5 mg twice daily (oral preparations); dosing varies with formulation",
+  "contraindications": "Concurrent use with meperidine, SSRIs, SNRIs, MAO inhibitors; uncontrolled hypertension",
+  "interactions": "Serotonergic drugs (serotonin syndrome risk), sympathomimetics; avoid amphetamines",
+  "monitoring": "Blood pressure, neuropsychiatric side effects",
+  "pregnancy": "Not recommended",
+  "sideEffects": "Insomnia (more common with transdermal/patch), nausea, dizziness, orthostatic hypotension, hallucinations",
+  "pharmacokinetics": "Oral; metabolised hepatically",
+  "clinicalPearls": "Often used as adjunct in Parkinson's disease; watch for interactions with antidepressants.",
+  "indication": "Parkinson's disease (adjunct therapy)"
+}
