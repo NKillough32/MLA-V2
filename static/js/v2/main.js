@@ -54,6 +54,7 @@ class MLAQuizApp {
         this.drugManager = new DrugReferenceManager();
         this.labManager = new LabValuesManager();
         this.guidelinesManager = new GuidelinesManager();
+        this.anatomyManager = anatomyManager;
         this.proceduresManager = proceduresManager;
         this.mnemonicsManager = mnemonicsManager;
         this.interpretationToolsManager = interpretationToolsManager;
@@ -850,6 +851,7 @@ class MLAQuizApp {
                 drugManager: this.drugManager,
                 labManager: this.labManager,
                 guidelinesManager: this.guidelinesManager,
+                proceduresManager: this.proceduresManager,
                 calculatorManager,
                 quizManager,
                 mnemonicsManager: this.mnemonicsManager,
@@ -859,7 +861,13 @@ class MLAQuizApp {
                 examinationManager: this.examinationManager,
                 interpretationToolsManager: this.interpretationToolsManager,
                 emergencyProtocolsManager: this.emergencyProtocolsManager,
-                pdfLibraryManager: this.pdfLibraryManager
+                pdfLibraryManager: this.pdfLibraryManager,
+                coreConditionsManager: this.coreConditionsManager,
+                medStatsEthicsManager: this.medStatsEthicsManager,
+                clinicalPearlsManager: this.clinicalPearlsManager,
+                ophthalmologyManager: this.ophthalmologyManager,
+                anatomyManager: this.anatomyManager,
+                psychiatryLibrary
             }
         });
 

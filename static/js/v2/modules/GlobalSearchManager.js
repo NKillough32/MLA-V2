@@ -40,7 +40,13 @@ export class GlobalSearchManager {
                 vaccinations: 4,
                 contraception: 4,
                 genetics: 4,
-                developmental: 4
+                developmental: 4,
+                coreConditions: 6,
+                psychiatry: 6,
+                medStatsEthics: 6,
+                clinicalPearls: 6,
+                anatomy: 6,
+                ophthalmology: 6
             }
         };
     }
@@ -225,17 +231,23 @@ export class GlobalSearchManager {
             this.buildPdfResults(query),
             this.buildGuidelineResults(query),
             this.buildDifferentialResults(query),
+            this.buildCoreConditionResults(query),
             this.buildDrugResults(query),
             this.buildCalculatorResults(query),
             this.buildLabResults(query),
             this.buildProcedureResults(query),
             this.buildQuizQuestionResults(query),
+            this.buildPsychiatryResults(query),
             this.buildVaccinationResults(query),
             this.buildContraceptionResults(query),
             this.buildGeneticsResults(query),
             this.buildDevelopmentalResults(query),
+            this.buildMedStatsEthicsResults(query),
+            this.buildClinicalPearlsResults(query),
             this.buildTriadResults(query),
             this.buildMnemonicResults(query),
+            this.buildOphthalmologyResults(query),
+            this.buildAnatomyResults(query),
             this.buildExaminationResults(query),
             this.buildInterpretationResults(query),
             this.buildEmergencyResults(query),
@@ -433,6 +445,29 @@ export class GlobalSearchManager {
         };
     }
 
+    async buildCoreConditionResults(query) {
+        const manager = this.managers.coreConditionsManager;
+        if (!manager?.searchEnhancedConditions) return null;
+        const matches = manager.searchEnhancedConditions(query) || [];
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.coreConditions || this.options.defaultLimit;
+        const mapped = matches.slice(0, limit).map(condition => ({
+            title: condition.name,
+            subtitle: (condition.domains || []).join(' • ') || 'Core condition',
+            badge: 'Condition',
+            action: { type: 'core-condition', id: condition.id, name: condition.name }
+        }));
+
+        return {
+            id: 'core-conditions',
+            label: 'Core Conditions',
+            icon: '📖',
+            total: matches.length,
+            matches: mapped
+        };
+    }
+
     async buildLaddersResults(query) {
         const manager = this.managers.laddersManager;
         if (!manager) return null;
@@ -476,6 +511,44 @@ export class GlobalSearchManager {
                 action: { type: 'ladder', key: ladder.key || ladder.id || ladder.name }
             })
         });
+    }
+
+    async buildPsychiatryResults(query) {
+        const library = this.managers.psychiatryLibrary || [];
+        if (!Array.isArray(library) || !library.length) return null;
+
+        const term = query.toLowerCase();
+        const results = library.filter(condition => {
+            const haystack = [
+                condition.title,
+                condition.summary,
+                ...(condition.tags || []),
+                ...(condition.distinguishing || []),
+                ...(condition.firstLine || []),
+                ...(condition.secondLine || []),
+                ...(condition.investigations || []),
+                ...(condition.crisis || []),
+                ...(condition.monitoring || [])
+            ].join(' ').toLowerCase();
+            return haystack.includes(term);
+        });
+
+        if (!results.length) return null;
+
+        const limit = this.options.limits.psychiatry || this.options.defaultLimit;
+        return {
+            id: 'psychiatry',
+            label: 'Psychiatry',
+            icon: '🧠',
+            total: results.length,
+            matches: results.slice(0, limit).map(condition => ({
+                title: condition.title,
+                subtitle: condition.summary || '',
+                badge: (condition.tags || [])[0] || 'Topic',
+                meta: (condition.tags || []).slice(1).join(' • '),
+                action: { type: 'psychiatry', id: condition.id, title: condition.title }
+            }))
+        };
     }
 
     async buildDrugResults(query) {
@@ -580,6 +653,80 @@ export class GlobalSearchManager {
         });
     }
 
+    async buildOphthalmologyResults(query) {
+        const manager = this.managers.ophthalmologyManager;
+        const sections = manager?.sections;
+        if (!Array.isArray(sections) || !sections.length) return null;
+
+        const term = query.toLowerCase();
+        const matches = [];
+
+        sections.forEach(section => {
+            (section.conditions || []).forEach(condition => {
+                const haystack = [
+                    condition.name,
+                    ...(condition.presentation || []),
+                    ...(condition.diagnosis || []),
+                    ...(condition.management || [])
+                ].join(' ').toLowerCase();
+                if (haystack.includes(term)) {
+                    matches.push({
+                        title: condition.name,
+                        subtitle: section.title,
+                        meta: (condition.presentation || [])[0] || '',
+                        action: { type: 'ophthalmology', name: condition.name, section: section.title }
+                    });
+                }
+            });
+        });
+
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.ophthalmology || this.options.defaultLimit;
+        return {
+            id: 'ophthalmology',
+            label: 'Ophthalmology',
+            icon: '👁️',
+            total: matches.length,
+            matches: matches.slice(0, limit)
+        };
+    }
+
+    async buildAnatomyResults(query) {
+        const manager = this.managers.anatomyManager;
+        const bodyMap = document.getElementById('bodyMap');
+        if (!manager || !bodyMap) return null;
+
+        const term = query.toLowerCase();
+        if (!term) return null;
+
+        const matches = [];
+        bodyMap.querySelectorAll('[data-structure], text').forEach(el => {
+            const ds = (el.getAttribute('data-structure') || '').toLowerCase();
+            const txt = (el.textContent || '').toLowerCase();
+            if (ds.includes(term) || txt.includes(term)) {
+                const name = el.getAttribute('data-structure') || el.textContent || query;
+                matches.push({
+                    title: name,
+                    subtitle: 'Anatomy map',
+                    meta: 'Highlight structure',
+                    action: { type: 'anatomy', name }
+                });
+            }
+        });
+
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.anatomy || this.options.defaultLimit;
+        return {
+            id: 'anatomy',
+            label: 'Anatomy',
+            icon: '🩻',
+            total: matches.length,
+            matches: matches.slice(0, limit)
+        };
+    }
+
     async buildTriadResults(query) {
         const manager = this.managers.triadsManager;
         if (!manager?.searchTriads) return null;
@@ -634,6 +781,86 @@ export class GlobalSearchManager {
                 action: { type: 'procedure', id: procedure.id }
             })
         });
+    }
+
+    async buildMedStatsEthicsResults(query) {
+        const manager = this.managers.medStatsEthicsManager;
+        const sections = manager?.sections;
+        if (!Array.isArray(sections) || !sections.length) return null;
+
+        const term = query.toLowerCase();
+        const matches = [];
+
+        sections.forEach((section) => {
+            const haystack = [
+                section.title,
+                section.summary,
+                section.badge,
+                section.note,
+                ...(section.subsections || []).flatMap(ss => [ss.heading, ss.note, ...(ss.items || [])]),
+                ...(section.items || [])
+            ].join(' ').toLowerCase();
+            if (haystack.includes(term)) {
+                matches.push(section);
+            }
+        });
+
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.medStatsEthics || this.options.defaultLimit;
+        return {
+            id: 'med-stats-ethics',
+            label: 'Medical Stats & Ethics',
+            icon: '📈',
+            total: matches.length,
+            matches: matches.slice(0, limit).map(section => ({
+                title: section.title,
+                subtitle: section.summary || section.badge || '',
+                badge: section.badge || 'Reference',
+                meta: section.note || '',
+                action: { type: 'med-stats', title: section.title }
+            }))
+        };
+    }
+
+    async buildClinicalPearlsResults(query) {
+        const manager = this.managers.clinicalPearlsManager;
+        const sections = manager?.sections;
+        if (!Array.isArray(sections) || !sections.length) return null;
+
+        const term = query.toLowerCase();
+        const matches = [];
+
+        sections.forEach((section) => {
+            const haystack = [
+                section.title,
+                section.summary,
+                section.badge,
+                section.note,
+                ...(section.tags || []),
+                ...(section.subsections || []).flatMap(ss => [ss.heading, ss.note, ...(ss.items || [])])
+            ].join(' ').toLowerCase();
+            if (haystack.includes(term)) {
+                matches.push(section);
+            }
+        });
+
+        if (!matches.length) return null;
+
+        const limit = this.options.limits.clinicalPearls || this.options.defaultLimit;
+        return {
+            id: 'clinical-pearls',
+            label: 'Clinical Pearls',
+            icon: '💡',
+            total: matches.length,
+            matches: matches.slice(0, limit).map(section => ({
+                title: section.title,
+                subtitle: section.summary || '',
+                badge: section.badge || 'Pearls',
+                meta: (section.tags || []).join(' • '),
+                action: { type: 'clinical-pearls', title: section.title }
+            }))
+        };
     }
 
     async buildExaminationResults(query) {
@@ -1044,6 +1271,64 @@ export class GlobalSearchManager {
             case 'mnemonic':
                 navigate('mnemonics', () => this.app?.showMnemonicDetail?.(action.key));
                 break;
+            case 'med-stats':
+                navigate('med-stats-ethics', () => {
+                    try {
+                        const panel = document.getElementById('med-stats-ethics-panel');
+                        if (!panel) return;
+                        this.app?.loadMedStatsEthicsContent?.(panel);
+                        const sectionTitle = action.title?.toLowerCase?.() || '';
+                        const targetHeading = Array.from(panel.querySelectorAll('.med-knowledge-card h4')).find(h =>
+                            (h.textContent || '').toLowerCase().includes(sectionTitle)
+                        );
+                        if (targetHeading) {
+                            targetHeading.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            targetHeading.classList.add('global-search-highlight');
+                            setTimeout(() => targetHeading.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'clinical-pearls':
+                navigate('clinical-pearls', () => {
+                    try {
+                        const panel = document.getElementById('clinical-pearls-panel');
+                        if (!panel) return;
+                        this.app?.loadClinicalPearlsContent?.(panel);
+                        const title = action.title?.toLowerCase?.() || '';
+                        const target = Array.from(panel.querySelectorAll('.knowledge-card h3')).find(h =>
+                            (h.textContent || '').toLowerCase().includes(title)
+                        );
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            target.classList.add('global-search-highlight');
+                            setTimeout(() => target.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'psychiatry':
+                navigate('psychiatry', () => {
+                    try {
+                        const panel = document.getElementById('psychiatry-panel');
+                        if (!panel) return;
+                        this.app?.loadPsychiatryContent?.(panel);
+                        const searchInput = panel.querySelector('#psychiatry-search');
+                        if (searchInput) {
+                            searchInput.value = action.title || '';
+                            searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                        }
+                        const matchCard = Array.from(panel.querySelectorAll('.psychiatry-card h3')).find(h =>
+                            (h.textContent || '').toLowerCase().includes((action.title || '').toLowerCase())
+                        );
+                        if (matchCard) {
+                            matchCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            matchCard.classList.add('global-search-highlight');
+                            setTimeout(() => matchCard.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
             case 'triad':
                 navigate('triads', () => this.managers.triadsManager?.showTriadDetails?.(action.key));
                 break;
@@ -1059,6 +1344,25 @@ export class GlobalSearchManager {
                     defer(() => this.app?.showDiagnosisDetail?.(action.symptomKey, action.diagnosisKey));
                 });
                 break;
+            case 'core-condition':
+                navigate('core-conditions', () => {
+                    try {
+                        const panel = document.getElementById('core-conditions-panel');
+                        if (!panel) return;
+                        this.app?.loadCoreConditionsContent?.(panel);
+                        const runSelection = () => {
+                            const searchInput = panel.querySelector('#cc-search-input');
+                            if (searchInput) {
+                                searchInput.value = action.name || '';
+                                searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                            }
+                            const card = panel.querySelector(`[data-condition-id="${CSS.escape(action.id || '')}"]`);
+                            if (card?.click) card.click();
+                        };
+                        setTimeout(runSelection, 80);
+                    } catch (e) { /* ignore */ }
+                });
+                break;
             case 'examination':
                 navigate('examination', () => this.app?.showExaminationDetail?.(action.key));
                 break;
@@ -1070,6 +1374,41 @@ export class GlobalSearchManager {
                 break;
             case 'ladder':
                 navigate('ladders', () => this.managers.laddersManager?.switchToLadder?.(action.key));
+                break;
+            case 'anatomy':
+                navigate('anatomy', () => {
+                    try {
+                        const input = document.getElementById('searchAnatomy');
+                        if (input) {
+                            input.value = action.name || '';
+                            input.dispatchEvent(new Event('input', { bubbles: true }));
+                        } else {
+                            this.managers.anatomyManager?.searchAnatomy?.(action.name);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
+                break;
+            case 'ophthalmology':
+                navigate('ophthalmology', () => {
+                    try {
+                        const panel = document.getElementById('ophthalmology-panel');
+                        if (!panel) return;
+                        this.app?.loadOphthalmologyContent?.(panel);
+                        const input = panel.querySelector('.ophthal-search-input');
+                        if (input) {
+                            input.value = action.name || '';
+                            input.dispatchEvent(new Event('input', { bubbles: true }));
+                        }
+                        const matchCard = Array.from(panel.querySelectorAll('.ophthal-condition-card')).find(card =>
+                            (card.querySelector('h4')?.textContent || '').toLowerCase().includes((action.name || '').toLowerCase())
+                        );
+                        if (matchCard) {
+                            matchCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            matchCard.classList.add('global-search-highlight');
+                            setTimeout(() => matchCard.classList.remove('global-search-highlight'), 2500);
+                        }
+                    } catch (e) { /* ignore */ }
+                });
                 break;
             case 'vaccination':
                 navigate('vaccinations', () => {
