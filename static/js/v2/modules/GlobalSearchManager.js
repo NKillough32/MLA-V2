@@ -774,11 +774,11 @@ export class GlobalSearchManager {
             icon: '🏥',
             limit: this.options.limits.procedures || this.options.defaultLimit,
             searchFn: () => manager.searchProcedures(query),
-            mapFn: (procedure) => ({
-                title: procedure.name,
-                subtitle: procedure.indication,
-                badge: procedure.category,
-                action: { type: 'procedure', id: procedure.id }
+            mapFn: (result) => ({
+                title: result.procedure?.name || result.name || 'Unnamed Procedure',
+                subtitle: result.procedure?.indication || result.indication || '',
+                badge: result.procedure?.category || result.category || '',
+                action: { type: 'procedure', id: result.id }
             })
         });
     }
@@ -1491,12 +1491,25 @@ export class GlobalSearchManager {
             case 'quiz-question':
                 defer(async () => {
                     if (!this.app) return;
+                    
+                    // Load quiz if it's different from the current one
                     if (action.quizName && action.quizName !== this.managers.quizManager?.quizName) {
                         const loaded = await this.managers.quizManager?.loadQuiz?.(action.quizName, action.isUploaded);
                         if (!loaded) return;
                     }
+                    
+                    // Ensure quiz is started if not already
+                    if (this.managers.quizManager?.questions?.length > 0 && !this.managers.quizManager?.quizStartTime) {
+                        await this.managers.quizManager?.startQuiz?.();
+                    }
+                    
+                    // Show quiz screen and navigate to the question
                     this.app.showScreen?.('quizScreen');
-                    this.managers.quizManager?.goToQuestion?.(action.index);
+                    
+                    // Small delay to ensure screen transition completes
+                    setTimeout(() => {
+                        this.managers.quizManager?.goToQuestion?.(action.index);
+                    }, 100);
                 });
                 break;
             case 'quiz-question-select':
