@@ -709,18 +709,18 @@ export const mnemonicsDatabase = {
         meaning: 'Transfusion-Related Acute Lung Injury',
         usage: 'Recognize serious transfusion complication',
         details: [
-            '<strong>T</strong> - <strong>Timing</strong>: acute onset during or within 6 hours of transfusion',
-            '<strong>R</strong> - <strong>Respiratory distress</strong>: dyspnoea with hypoxaemia',
-            '<strong>A</strong> - <strong>Appearance on CXR</strong>: bilateral pulmonary infiltrates',
-            '<strong>L</strong> - <strong>Low filling pressures</strong>: no evidence of fluid overload/TACO',
-            '<strong>I</strong> - <strong>Immune mediated injury</strong>: donor anti-HLA/HNA → neutrophil activation',
+            '<strong>T</strong> - <strong>Timing</strong>: acute onset during or within 6 hours of transfusion (new PaO₂/FiO₂ &lt;300 or SpO₂ &lt;90%)',
+            '<strong>R</strong> - <strong>Respiratory distress</strong>: dyspnoea, tachypnoea, frothy sputum, fever',
+            '<strong>A</strong> - <strong>Appearance on CXR</strong>: bilateral pulmonary infiltrates (non-cardiogenic oedema)',
+            '<strong>L</strong> - <strong>Low filling pressures</strong>: no volume overload (normal JVP, BNP not elevated) distinguishes from TACO',
+            '<strong>I</strong> - <strong>Immune-mediated injury</strong>: donor anti-HLA/HNA antibodies prime neutrophils → capillary leak',
             '',
             '<strong>💊 Management</strong>:',
             '• <strong>Stop transfusion immediately</strong>',
-            '• <strong>Supportive care</strong> — oxygen; consider ventilation if needed',
-            '• <strong>Usually resolves</strong> within 48–96 hours',
+            '• <strong>Supportive care</strong> — high-flow oxygen/ventilation; avoid diuretics (not fluid overload)',
+            '• <strong>Usually resolves</strong> within 48–96 hours with respiratory support',
             '',
-            '📋 Report to blood transfusion service'
+            '📋 Report to blood transfusion service; future donors may be deferred'
         ]
     },
 
