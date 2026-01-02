@@ -179,10 +179,12 @@ export class QuizManager {
                 quizData = result.quiz;
             }
 
+            const normalizedQuestions = this.normalizeQuestionList(quizData.questions || [], { force: true });
+
             // Store current quiz for image lookups (V1 compatibility)
-            this.currentQuiz = quizData;
+            this.currentQuiz = { ...quizData, questions: normalizedQuestions };
             this.quizName = quizName;
-            this.fullQuestionBank = quizData.questions || [];
+            this.fullQuestionBank = normalizedQuestions;
             this.questions = [...this.fullQuestionBank];
             
             // Filter questions based on selected length (V1 compatibility)
@@ -293,6 +295,22 @@ export class QuizManager {
      */
     sanitizeStorageKey(name) {
         return name.replace(/[^a-zA-Z0-9_-]/g, '_');
+    }
+
+    /**
+     * Ensure every question has a stable original index for cross-feature navigation
+     */
+    normalizeQuestionList(questions, { force = false, startIndex = 0 } = {}) {
+        if (!Array.isArray(questions)) return [];
+        return questions.map((question, idx) => this.applyOriginalIndex(question, startIndex + idx, { force }));
+    }
+
+    applyOriginalIndex(question, index, { force = false } = {}) {
+        if (!question || typeof question !== 'object') return question;
+        if (!force && Number.isInteger(question.__originalIndex)) {
+            return question;
+        }
+        return { ...question, __originalIndex: index };
     }
 
     /**
@@ -614,7 +632,7 @@ export class QuizManager {
         if (currentQuestions.length) {
             pools.push({ 
                 quizName: this.quizName || 'Current quiz', 
-                questions: currentQuestions, 
+                questions: this.normalizeQuestionList(currentQuestions), 
                 images: this.currentQuiz?.images || {},
                 isUploaded: false 
             });
@@ -626,7 +644,7 @@ export class QuizManager {
                 if (quiz?.questions?.length) {
                     pools.push({ 
                         quizName: quiz.name || 'Uploaded quiz', 
-                        questions: quiz.questions, 
+                        questions: this.normalizeQuestionList(quiz.questions, { force: true }), 
                         images: quiz.images || {},
                         isUploaded: true 
                     });
@@ -711,7 +729,7 @@ export class QuizManager {
         }
 
         const questions = matches
-            .map(match => match?.question)
+            .map((match, idx) => this.applyOriginalIndex(match?.question, Number.isInteger(match?.index) ? match.index : idx, { force: true }))
             .filter(Boolean);
 
         if (!questions.length) {
@@ -749,24 +767,60 @@ export class QuizManager {
     /**
      * Flag a set of questions (e.g., all search matches) for quick navigation
      */
-    selectQuestionsByIndices(indices = []) {
+    async ensureFullQuizForIndices(indices = []) {
+        const targets = Array.from(new Set(indices.filter((idx) => Number.isInteger(idx) && idx >= 0)));
+        if (!targets.length) return false;
+
+        // Ensure the full question bank is normalized
+        this.fullQuestionBank = this.normalizeQuestionList(this.fullQuestionBank, { force: true });
+
+        // Bail early if any index is out of bounds
+        if (targets.some((idx) => !this.fullQuestionBank[idx])) {
+            return false;
+        }
+
+        const hasAllTargets = targets.every((originalIdx) => this.questions.some((q) => q.__originalIndex === originalIdx));
+
+        // If the current session already includes the targets and has started, no need to rebuild
+        if (hasAllTargets && this.quizStartTime) {
+            return true;
+        }
+
+        // Expand to full set and restart quiz to make sure indices exist in the session
+        this.selectedQuizLength = 'all';
+        this.questions = [...this.fullQuestionBank];
+        await this.startQuiz();
+
+        return true;
+    }
+
+    async selectQuestionsByIndices(indices = []) {
         if (!Array.isArray(indices) || !indices.length) {
             return { count: 0, indices: [] };
         }
 
-        const valid = Array.from(new Set(indices.filter((idx) => idx >= 0 && idx < this.questions.length)));
-        if (!valid.length) {
+        const targets = Array.from(new Set(indices.filter((idx) => Number.isInteger(idx) && idx >= 0)));
+        if (!targets.length) {
             return { count: 0, indices: [] };
         }
 
-        valid.forEach((idx) => this.flaggedQuestions.add(idx));
+        const ready = await this.ensureFullQuizForIndices(targets);
+        if (!ready) {
+            return { count: 0, indices: [] };
+        }
+
+        const sessionIndices = targets
+            .map((originalIdx) => this.questions.findIndex((q) => q.__originalIndex === originalIdx))
+            .filter((idx) => idx >= 0);
+
+        sessionIndices.forEach((idx) => this.flaggedQuestions.add(idx));
 
         // Update UI to reflect bulk flagging
-        eventBus.emit(EVENTS.QUESTION_FLAGGED, { bulk: true, indices: valid });
+        eventBus.emit(EVENTS.QUESTION_FLAGGED, { bulk: true, indices: sessionIndices });
         eventBus.emit('quiz:progressUpdated', this.getProgress());
         this.renderQuestion();
 
-        return { count: valid.length, indices: valid };
+        return { count: sessionIndices.length, indices: sessionIndices };
     }
 
     /**
@@ -795,6 +849,28 @@ export class QuizManager {
             return true;
         }
         return false;
+    }
+
+    async goToOriginalQuestion(originalIndex) {
+        if (!Number.isInteger(originalIndex) || originalIndex < 0) {
+            return false;
+        }
+
+        const ready = await this.ensureFullQuizForIndices([originalIndex]);
+        if (!ready) {
+            return false;
+        }
+
+        const targetIndex = this.questions.findIndex((q) => q.__originalIndex === originalIndex);
+        if (targetIndex === -1) {
+            return false;
+        }
+
+        this.currentQuestionIndex = targetIndex;
+        this.renderQuestion();
+        this.scrollToTop();
+        analytics.vibrateClick();
+        return true;
     }
 
     /**

@@ -1497,6 +1497,8 @@ export class GlobalSearchManager {
                         const loaded = await this.managers.quizManager?.loadQuiz?.(action.quizName, action.isUploaded);
                         if (!loaded) return;
                     }
+
+                    await this.managers.quizManager?.ensureFullQuizForIndices?.([action.index]);
                     
                     // Ensure quiz is started if not already
                     if (this.managers.quizManager?.questions?.length > 0 && !this.managers.quizManager?.quizStartTime) {
@@ -1507,8 +1509,11 @@ export class GlobalSearchManager {
                     this.app.showScreen?.('quizScreen');
                     
                     // Small delay to ensure screen transition completes
-                    setTimeout(() => {
-                        this.managers.quizManager?.goToQuestion?.(action.index);
+                    setTimeout(async () => {
+                        const moved = await this.managers.quizManager?.goToOriginalQuestion?.(action.index);
+                        if (!moved && this.app?.uiManager?.showToast) {
+                            this.app.uiManager.showToast('Unable to open that question right now.', 'error');
+                        }
                     }, 100);
                 });
                 break;
@@ -1518,7 +1523,7 @@ export class GlobalSearchManager {
                         const loaded = await this.managers.quizManager?.loadQuiz?.(action.quizName, action.isUploaded);
                         if (!loaded) return;
                     }
-                    const selection = this.managers.quizManager?.selectQuestionsByIndices?.(action.indices || []);
+                    const selection = await this.managers.quizManager?.selectQuestionsByIndices?.(action.indices || []);
                     if (selection?.count) {
                         this.app?.showScreen?.('quizScreen');
                     }
