@@ -715,12 +715,15 @@ export const mnemonicsDatabase = {
             '<strong>L</strong> - <strong>Low filling pressures</strong>: no volume overload (normal JVP, BNP not elevated) distinguishes from TACO',
             '<strong>I</strong> - <strong>Immune-mediated injury</strong>: donor anti-HLA/HNA antibodies prime neutrophils → capillary leak',
             '',
-            '<strong>💊 Management</strong>:',
-            '• <strong>Stop transfusion immediately</strong>',
-            '• <strong>Supportive care</strong> — high-flow oxygen/ventilation; avoid diuretics (not fluid overload)',
-            '• <strong>Usually resolves</strong> within 48–96 hours with respiratory support',
+            '<strong>Management</strong>',
+            '• Stop transfusion immediately',
+            '• Supportive care — high-flow oxygen/ventilation; avoid diuretics (not fluid overload)',
+            '• Usually resolves within 48–96 hours with respiratory support',
             '',
-            '📋 Report to blood transfusion service; future donors may be deferred'
+            '<strong>Key Points</strong>',
+            '• 3rd leading cause of transfusion-related death (5-10% mortality)',
+            '• Differentiate from TACO (volume overload) — TRALI has normal/low CVP, no response to diuretics',
+            '• Report to blood transfusion service; implicated donors may be deferred from future donation'
         ]
     },
 
