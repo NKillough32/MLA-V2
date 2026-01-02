@@ -4752,7 +4752,13 @@ class MLAQuizApp {
                 if (!loaded) return;
             }
 
-            const moved = quizManager.goToQuestion(questionIndex);
+            await quizManager.ensureFullQuizForIndices?.([questionIndex]);
+
+            if (quizManager?.questions?.length > 0 && !quizManager?.quizStartTime) {
+                await quizManager.startQuiz();
+            }
+
+            const moved = await quizManager.goToOriginalQuestion?.(questionIndex);
             if (moved) {
                 this.showScreen('quizScreen');
             } else if (uiManager?.showToast) {
