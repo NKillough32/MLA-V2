@@ -16,6 +16,19 @@ export class LabValuesManager {
         this.dataLoaded = false;
     }
 
+    /**
+     * Safely get panel values object
+     */
+    getPanelValues(panelOrKey) {
+        if (!this.labDatabase) return {};
+
+        const panel = typeof panelOrKey === 'string' 
+            ? this.labDatabase[panelOrKey] 
+            : panelOrKey;
+
+        return panel?.values && typeof panel.values === 'object' ? panel.values : {};
+    }
+
     async initialize() {
         if (this.initialized) {
             console.log('🧪 LabValuesManager already initialized, skipping...');
@@ -51,8 +64,8 @@ export class LabValuesManager {
 
         this.dataLoaded = true;
         
-        const totalTests = Object.values(this.labDatabase).reduce((sum, panel) => 
-            sum + Object.keys(panel.values || {}).length, 0
+        const totalTests = Object.values(this.labDatabase || {}).reduce((sum, panel) => 
+            sum + Object.keys(this.getPanelValues(panel)).length, 0
         );
         
         this.eventBus.emit('LAB_MANAGER_READY', { 
@@ -87,17 +100,17 @@ export class LabValuesManager {
         // Search through all panels and tests
         Object.entries(this.labDatabase).forEach(([panelKey, panel]) => {
             // Check if panel name matches
-            if (panel.name.toLowerCase().includes(lowerQuery)) {
+            if (panel?.name && panel.name.toLowerCase().includes(lowerQuery)) {
                 matches.push({
                     type: 'panel',
                     key: panelKey,
                     name: panel.name,
-                    testCount: Object.keys(panel.values).length
+                    testCount: Object.keys(this.getPanelValues(panel)).length
                 });
             }
             
             // Check if any test within panel matches
-            Object.entries(panel.values).forEach(([testKey, test]) => {
+            Object.entries(this.getPanelValues(panel)).forEach(([testKey, test]) => {
                 if (testKey.toLowerCase().includes(lowerQuery)) {
                     matches.push({
                         type: 'test',
@@ -126,7 +139,7 @@ export class LabValuesManager {
         return Object.entries(this.labDatabase).map(([key, panel]) => ({
             key,
             name: panel.name,
-            testCount: Object.keys(panel.values).length
+            testCount: Object.keys(this.getPanelValues(panel)).length
         }));
     }
 
@@ -147,7 +160,7 @@ export class LabValuesManager {
         return {
             key: panelKey,
             name: panel.name,
-            tests: Object.entries(panel.values).map(([testKey, test]) => ({
+            tests: Object.entries(this.getPanelValues(panel)).map(([testKey, test]) => ({
                 key: testKey,
                 ...test
             }))
@@ -159,11 +172,13 @@ export class LabValuesManager {
      */
     async getTest(panelKey, testKey) {
         
-        if (!this.labDatabase || !this.labDatabase[panelKey] || 
-            !this.labDatabase[panelKey].values[testKey]) return null;
+        if (!this.labDatabase || !this.labDatabase[panelKey]) return null;
         
         const panel = this.labDatabase[panelKey];
-        const test = panel.values[testKey];
+        const panelValues = this.getPanelValues(panel);
+        const test = panelValues[testKey];
+
+        if (!test) return null;
         
         // Add to recent
         this.addToRecent({ type: 'test', panelKey, testKey });
@@ -259,7 +274,7 @@ export class LabValuesManager {
                     return panel ? {
                         key: panelKey,
                         name: panel.name,
-                        testCount: Object.keys(panel.values).length
+                        testCount: Object.keys(this.getPanelValues(panel)).length
                     } : null;
                 })
                 .filter(panel => panel !== null);
@@ -353,10 +368,8 @@ export class LabValuesManager {
         
         let totalTests = 0;
         for (const panelKey in this.labDatabase) {
-            const panel = this.labDatabase[panelKey];
-            if (panel && panel.tests) {
-                totalTests += Object.keys(panel.tests).length;
-            }
+            const panelValues = this.getPanelValues(panelKey);
+            totalTests += Object.keys(panelValues).length;
         }
         return totalTests;
     }
@@ -706,4 +719,3 @@ export class LabValuesManager {
 // Export singleton instance
 export const labValuesManager = new LabValuesManager();
 export default LabValuesManager;
-
