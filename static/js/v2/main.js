@@ -3367,11 +3367,11 @@ class MLAQuizApp {
                                 const trailing = trimmedDetail.slice(dashIndex + 3).trim();
 
                                 return `
-                                    <div style="display: grid; grid-template-columns: minmax(72px, 160px) 1fr; gap: 16px; align-items: stretch;">
-                                        <div style="display: flex; align-items: center; justify-content: center; padding: 14px 12px; background: rgba(99, 102, 241, 0.12); border-radius: 12px; font-size: 1.5em; font-weight: 700; color: var(--accent); text-align: center; line-height: 1.2; word-break: break-word; white-space: normal; min-height: 64px;">
+                                    <div class="mnemonic-breakdown-row">
+                                        <div class="mnemonic-letter-tile">
                                             ${leading}
                                         </div>
-                                        <div style="background: var(--card-bg); border-radius: 10px; padding: 14px 18px; line-height: 1.7; color: var(--text-primary); box-shadow: 0 2px 6px rgba(139, 92, 246, 0.15);">
+                                        <div class="mnemonic-detail-card">
                                             ${trailing}
                                         </div>
                                     </div>

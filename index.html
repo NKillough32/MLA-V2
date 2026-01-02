@@ -2962,9 +2962,56 @@
             line-height: 1.6;
             color: #3c3c3e;
         }
-        
+
         [data-theme="dark"] .info-section p {
             color: #e5e5ea;
+        }
+        
+        /* Mnemonic detail breakdown layout */
+        .mnemonic-breakdown-row {
+            display: grid;
+            grid-template-columns: minmax(72px, 160px) 1fr;
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .mnemonic-letter-tile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 12px;
+            background: rgba(var(--v2-primary-rgb, 99, 102, 241), 0.12);
+            border-radius: 12px;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--accent);
+            text-align: center;
+            line-height: 1.2;
+            word-break: break-word;
+            white-space: normal;
+            min-height: 64px;
+        }
+
+        .mnemonic-detail-card {
+            background: var(--card-bg, #ffffff);
+            border-radius: 10px;
+            padding: 14px 18px;
+            line-height: 1.7;
+            color: var(--text-primary);
+            box-shadow: 0 2px 6px rgba(139, 92, 246, 0.15);
+        }
+
+        @media (max-width: 700px) {
+            .mnemonic-breakdown-row {
+                grid-template-columns: 1fr;
+            }
+
+            .mnemonic-letter-tile {
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: left;
+                min-height: auto;
+            }
         }
         
         /* Info Section Items - Standardized for all types */
