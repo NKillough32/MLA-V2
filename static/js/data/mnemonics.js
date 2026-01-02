@@ -18,13 +18,13 @@ export const mnemonicsDatabase = {
             '<strong>N</strong> - <strong>Nitrates</strong> (GTN) for symptom relief',
             '<strong>A</strong> - <strong>Aspirin</strong> 300mg (antiplatelet)',
             '',
-            '💊 Modern approach adds:',
+            '<strong>Modern approach adds</strong>',
             '• Clopidogrel/Ticagrelor (dual antiplatelet)',
             '• Beta-blocker once stable',
             '• ACE inhibitor',
             '• Statin',
             '',
-            '⚠️ Note: Oxygen only if hypoxic - avoid hyperoxia'
+            '<strong>Note</strong>: Oxygen only if hypoxic - avoid hyperoxia'
         ]
     },
     'i-failed-heart-failure': {
@@ -42,7 +42,7 @@ export const mnemonicsDatabase = {
             '<strong>E</strong> - <strong>Endocrine</strong> (thyroid disease, Cushing)',
             '<strong>D</strong> - <strong>Dietary</strong> (high salt intake, non-compliance)',
             '',
-            '🩺 Always look for reversible causes in acute decompensation'
+            '<strong>Clinical note</strong>: Always look for reversible causes in acute decompensation'
         ]
     },
     'chops-shock': {
@@ -58,11 +58,11 @@ export const mnemonicsDatabase = {
             '<strong>P</strong> - <strong>Psychogenic</strong> (vasovagal)',
             '<strong>S</strong> - <strong>Septic</strong> (distributive - infection, vasodilation)',
             '',
-            '💡 Also remember:',
+            '<strong>Also remember</strong>',
             '• Anaphylactic shock (distributive)',
             '• Neurogenic shock (spinal injury)',
             '',
-            '🔬 Distinguish by clinical features and haemodynamic parameters'
+            '<strong>Clinical note</strong>: Distinguish by clinical features and haemodynamic parameters'
         ]
     },
     'six-ps-acute-limb': {
@@ -79,7 +79,7 @@ export const mnemonicsDatabase = {
             '<strong>Paralysis</strong> - Weakness or inability to move limb (late sign)',
             '<strong>Poikilothermia</strong> - Cool limb unable to regulate temperature',
             '',
-            '🚨 Limb viability threatened – needs urgent vascular referral for revascularisation'
+            '<strong>Emergency</strong>: Limb viability threatened – needs urgent vascular referral for revascularisation'
         ]
     },
 
@@ -96,7 +96,7 @@ export const mnemonicsDatabase = {
             '<strong>O</strong> - <strong>Oxygen</strong> or CPAP to optimise oxygenation and reduce work of breathing',
             '<strong>P</strong> - <strong>Position</strong> sitting upright with legs dependent to aid ventilation',
             '',
-            '📈 Escalate early to inotropes, NIV or ICU support if there is inadequate response'
+            '<strong>Escalation</strong>: Escalate early to inotropes, NIV or ICU support if there is inadequate response'
         ]
     },
 
@@ -114,13 +114,13 @@ export const mnemonicsDatabase = {
             '<strong>S</strong> - <strong>Silent chest</strong> (no wheeze - very little air movement)',
             '<strong>T</strong> - <strong>Tachycardia</strong> (>140 bpm)',
             '',
-            '⚠️ Other features:',
+            '<strong>Other features</strong>',
             '• SpO2 <92%',
             '• PaO2 <8 kPa',
             '• Normal/raised PaCO2 (4.6-6 kPa)',
             '• Peak flow <33% predicted',
             '',
-            '🚨 Requires immediate senior review and ITU consideration'
+            '<strong>Emergency</strong>: Requires immediate senior review and ITU consideration'
         ]
     },
     'dope-ventilator-troubleshoot': {
@@ -135,7 +135,7 @@ export const mnemonicsDatabase = {
             '<strong>P</strong> - <strong>Pneumothorax</strong>: Auscultate, percuss, consider ultrasound',
             '<strong>E</strong> - <strong>Equipment</strong>: Inspect ventilator circuit, oxygen supply, power',
             '',
-            '🛠️ Run through DOPE whenever alarms trigger or patient deteriorates'
+            '<strong>Clinical note</strong>: Run through DOPE whenever alarms trigger or patient deteriorates'
         ]
     },
     'opqrst-pain-assessment': {
@@ -152,7 +152,7 @@ export const mnemonicsDatabase = {
             '<strong>S</strong> - <strong>Severity</strong>: Grade the intensity (e.g. 0–10 scale)',
             '<strong>T</strong> - <strong>Time</strong>: Has the pain pattern changed or progressed?',
             '',
-            '📝 Combine with red flag screening and vitals for safe triage'
+            '<strong>Clinical note</strong>: Combine with red flag screening and vitals for safe triage'
         ]
     },
     'sample-emergency-history': {
@@ -169,7 +169,7 @@ export const mnemonicsDatabase = {
             '<strong>L</strong> - <strong>Last oral intake:</strong> Food, drink, medication timing (important for anaesthesia)',
             '<strong>E</strong> - <strong>Events/Environment:</strong> What led to the incident or symptoms?',
             '',
-            '🚑 Supports concise handovers and ensures critical context is captured'
+            '<strong>Clinical note</strong>: Supports concise handovers and ensures critical context is captured'
         ]
     },
     'curb-65': {
@@ -185,12 +185,12 @@ export const mnemonicsDatabase = {
             '<strong>B</strong> - <strong>Blood pressure</strong> (systolic <90 or diastolic ≤60 mmHg)',
             '<strong>65</strong> - <strong>Age</strong> ≥65 years',
             '',
-            '📊 Scoring:',
+            '<strong>Scoring</strong>',
             '• Score 0-1: Low risk → consider home treatment',
             '• Score 2: Intermediate risk → consider hospital admission',
             '• Score 3-5: High risk → urgent hospital admission',
             '',
-            '💡 CRB-65 (without urea) can be used in community'
+            '<strong>Note</strong>: CRB-65 (without urea) can be used in community'
         ]
     },
 
@@ -207,7 +207,7 @@ export const mnemonicsDatabase = {
             '<strong>Groans</strong> - Abdominal pain, constipation, pancreatitis, peptic ulcers',
             '<strong>Psychiatric overtones</strong> - Fatigue, depression, confusion, memory loss',
             '',
-            '🧪 Always check PTH to differentiate primary hyperparathyroidism vs malignancy-related hypercalcaemia'
+            '<strong>Investigation</strong>: Always check PTH to differentiate primary hyperparathyroidism vs malignancy-related hypercalcaemia'
         ]
     },
 
@@ -224,12 +224,12 @@ export const mnemonicsDatabase = {
             '<strong>S</strong> - <strong>Speech</strong> difficulty (slurred or unable to speak)',
             '<strong>T</strong> - <strong>Time</strong> to call 999 immediately',
             '',
-            '⏱️ Time is brain:',
+            '<strong>Time is brain</strong>',
             '• Thrombolysis window: 4.5 hours',
             '• Thrombectomy window: up to 24 hours (selected patients)',
             '• Every minute counts - 1.9 million neurons lost per minute',
             '',
-            '🚨 Call 999 immediately if any symptoms present'
+            '<strong>Emergency</strong>: Call 999 immediately if any symptoms present'
         ]
     },
     'avpu-consciousness': {
@@ -244,7 +244,7 @@ export const mnemonicsDatabase = {
             '<strong>P</strong> - <strong>Responds to Pain:</strong> Withdraws or localises only with painful stimulus',
             '<strong>U</strong> - <strong>Unresponsive:</strong> No response to voice or pain',
             '',
-            '🧠 Track AVPU alongside GCS scores to monitor neurological trends and trigger escalation'
+            '<strong>Clinical note</strong>: Track AVPU alongside GCS scores to monitor neurological trends and trigger escalation'
         ]
     },
 
@@ -262,12 +262,12 @@ export const mnemonicsDatabase = {
             '<strong>O</strong> - <strong>Oxygen</strong> (hypoxia from any cause)',
             '<strong>P</strong> - <strong>Pain</strong> (acute pain, urinary retention)',
             '',
-            '💡 Also consider:',
+            '<strong>Also consider</strong>',
             '• Alcohol withdrawal',
             '• Liver failure (hepatic encephalopathy)',
             '• Renal failure (uremic encephalopathy)',
             '',
-            '🔬 Investigate and treat underlying cause'
+            '<strong>Management</strong>: Investigate and treat underlying cause'
         ]
     },
     'move-gcs': {
@@ -286,9 +286,9 @@ export const mnemonicsDatabase = {
             '<strong>2</strong> - <strong>Extension to pain</strong> (decerebrate)',
             '<strong>1</strong> - <strong>No response</strong>',
             '',
-            '📊 Total GCS = Eye (4) + Verbal (5) + Motor (6) = 15',
+            '<strong>Total GCS</strong>: Eye (4) + Verbal (5) + Motor (6) = 15',
             '',
-            '⚠️ GCS <8 indicates severe impairment and need for airway protection'
+            '<strong>Critical threshold</strong>: GCS <8 indicates severe impairment and need for airway protection'
         ]
     },
 
@@ -307,7 +307,7 @@ export const mnemonicsDatabase = {
             '<strong>S</strong> - <strong>Sexuality:</strong> Relationships, consent, contraception, gender identity concerns',
             '<strong>S</strong> - <strong>Suicide/Safety:</strong> Mood, self-harm, abuse, violence, digital safety',
             '',
-            '🧠 Begin with less sensitive topics to build rapport before progressing to risk assessment'
+            '<strong>Clinical approach</strong>: Begin with less sensitive topics to build rapport before progressing to risk assessment'
         ]
     },
 
@@ -325,12 +325,12 @@ export const mnemonicsDatabase = {
             '<strong>D</strong> - <strong>Drugs</strong> (PPI, tranexamic acid if needed)',
             '<strong>E</strong> - <strong>Endoscopy</strong> (within 24h, urgent if shocked)',
             '',
-            '💉 Resuscitation targets:',
+            '<strong>Resuscitation targets</strong>',
             '• Hb >70 g/L (restrictive strategy)',
             '• Platelets >50 × 10⁹/L',
             '• INR <1.5',
             '',
-            '🔬 Calculate Glasgow-Blatchford and Rockall scores'
+            '<strong>Risk stratification</strong>: Calculate Glasgow-Blatchford and Rockall scores'
         ]
     },
     'hepatic-enceph': {
@@ -348,12 +348,12 @@ export const mnemonicsDatabase = {
             '<strong>I</strong> - <strong>Infection (SBP, UTI, pneumonia)</strong>',
             '<strong>C</strong> - <strong>Constipation</strong>',
             '',
-            '💊 Treatment:',
+            '<strong>Treatment</strong>',
             '• Lactulose (bowel clearance)',
             '• Rifaximin (reduce ammonia-producing bacteria)',
             '• Treat underlying precipitant',
             '',
-            '🩺 Grade using West Haven criteria (1-4)'
+            '<strong>Grading</strong>: Use West Haven criteria (1-4)'
         ]
     },
 
@@ -382,7 +382,7 @@ export const mnemonicsDatabase = {
             '• Bilateral ureteric obstruction',
             '• Bladder outlet obstruction',
             '',
-            '🔬 Urinalysis helps distinguish causes'
+            '<strong>Investigation</strong>: Urinalysis helps distinguish causes'
         ]
     },
     'murder-hyperkalaemia-ecg': {
@@ -399,12 +399,12 @@ export const mnemonicsDatabase = {
             '<strong>E</strong> - <strong>Elevated/tall tented T waves</strong>',
             '<strong>R</strong> - <strong>Really wide QRS complexes</strong>',
             '',
-            '⚡ Progressive changes:',
+            '<strong>Progressive changes</strong>',
             '• K+ 5.5-6.5: Tall peaked T waves',
             '• K+ 6.5-8: Prolonged PR, widened QRS',
             '• K+ >8: Sine wave pattern → VF/asystole',
             '',
-            '🚨 Emergency treatment if ECG changes:',
+            '<strong>Emergency treatment if ECG changes</strong>',
             '• 10ml 10% calcium gluconate IV',
             '• Insulin + dextrose',
             '• Salbutamol nebulizers',
@@ -426,13 +426,13 @@ export const mnemonicsDatabase = {
             '<strong>E</strong> - <strong>Exercise (increased glucose utilisation)</strong>',
             '<strong>D</strong> - <strong>Drinks (alcohol)</strong>',
             '',
-            '💡 Also consider:',
+            '<strong>Also consider</strong>',
             '• Insulinoma (rare)',
             '• Adrenal insufficiency',
             '• Sepsis',
             '• Liver failure',
             '',
-            '⚠️ Whipple\'s triad confirms true hypoglycaemia:',
+            '<strong>Whipple\'s triad confirms true hypoglycaemia</strong>',
             '1. Symptoms consistent with hypoglycaemia',
             '2. Low plasma glucose (<2.8 mmol/L)',
             '3. Relief of symptoms with glucose'
@@ -453,12 +453,12 @@ export const mnemonicsDatabase = {
             '<strong>I</strong> - <strong>Infection treatment (antibiotics if indicated)</strong>',
             '<strong>N</strong> - <strong>Never stop long-acting insulin</strong>',
             '',
-            '⚡ DKA criteria:',
+            '<strong>DKA criteria</strong>',
             '• Glucose >11 mmol/L',
             '• pH <7.3 or bicarbonate <15 mmol/L',
             '• Ketones >3 mmol/L or 2+ on dipstick',
             '',
-            '🎯 Treatment targets:',
+            '<strong>Treatment targets</strong>',
             '• Ketones fall by 0.5 mmol/L/hr',
             '• Glucose fall by 3 mmol/L/hr',
             '• Maintain K+ 4-5 mmol/L'
@@ -483,14 +483,14 @@ export const mnemonicsDatabase = {
             '2. <strong>Urine output</strong> monitoring (catheter)',
             '3. <strong>Lactate</strong> and FBC measurement',
             '',
-            '⏱️ Complete ALL within 1 hour of recognition',
+            '<strong>Timing</strong>: Complete ALL within 1 hour of recognition',
             '',
-            '🎯 qSOFA screening:',
+            '<strong>qSOFA screening</strong>',
             '• RR ≥22/min',
             '• Altered mental status',
             '• SBP ≤100 mmHg',
             '',
-            '📊 ≥2 criteria = high risk of poor outcome'
+            '<strong>Interpretation</strong>: ≥2 criteria = high risk of poor outcome'
         ]
     },
     'v-spin-meningitis': {
@@ -506,7 +506,7 @@ export const mnemonicsDatabase = {
             '<strong>I</strong> - <strong>Immunity intact (less unwell)</strong>',
             '<strong>N</strong> - <strong>No rash (usually)</strong>',
             '',
-            '🔬 CSF findings viral vs bacterial:',
+            '<strong>CSF findings viral vs bacterial</strong>',
             '',
             '<strong>Viral:</strong>',
             '• Clear CSF',
@@ -520,7 +520,7 @@ export const mnemonicsDatabase = {
             '• Protein >1 g/L',
             '• Glucose <50% plasma',
             '',
-            '⚠️ If in doubt, treat as bacterial until proven otherwise'
+            '<strong>Important</strong>: If in doubt, treat as bacterial until proven otherwise'
         ]
     },
 
@@ -552,7 +552,7 @@ export const mnemonicsDatabase = {
             '• Full examination',
             '• Prevent hypothermia',
             '',
-            '🚨 Repeat primary survey frequently'
+            '<strong>Clinical note</strong>: Repeat primary survey frequently'
         ]
     },
     'rule-of-9s-burns': {
@@ -571,14 +571,14 @@ export const mnemonicsDatabase = {
             '',
             '<strong>Total:</strong> 100%',
             '',
-            '💡 For irregular burns:',
+            '<strong>For irregular burns</strong>',
             '• Patient\'s palm (including fingers) ≈ 1% TBSA',
             '',
-            '🏥 Fluid resuscitation if:',
+            '<strong>Fluid resuscitation if</strong>',
             '• >15% TBSA in adults',
             '• >10% TBSA in children',
             '',
-            '💧 Parkland formula:',
+            '<strong>Parkland formula</strong>',
             '• 4ml × weight (kg) × %TBSA',
             '• Give half in first 8 hours',
             '• Give remaining half over next 16 hours'
@@ -597,18 +597,18 @@ export const mnemonicsDatabase = {
             '<strong>EL</strong> - <strong>Elevated Liver enzymes</strong>',
             '<strong>LP</strong> - <strong>Low Platelet count</strong>',
             '',
-            '🔬 Diagnostic criteria:',
+            '<strong>Diagnostic criteria</strong>',
             '• Hemolysis: schistocytes, ↑bilirubin, ↑LDH',
             '• Elevated liver enzymes: AST/ALT >2× normal',
             '• Low platelets: <100 × 10⁹/L',
             '',
-            '⚠️ Clinical features:',
+            '<strong>Clinical features</strong>',
             '• RUQ/epigastric pain',
             '• Nausea/vomiting',
             '• Headache',
             '• Visual disturbances',
             '',
-            '🚨 Management:',
+            '<strong>Management</strong>',
             '• Urgent obstetric review',
             '• Blood pressure control',
             '• MgSO4 for seizure prophylaxis',
@@ -632,13 +632,13 @@ export const mnemonicsDatabase = {
             '<strong>A</strong> - <strong>Alcohol (chronic)</strong>',
             '<strong>S</strong> - <strong>St John\'s Wort, Sulphonylureas</strong>',
             '',
-            '💊 Clinical implications:',
+            '<strong>Clinical implications</strong>',
             '• Reduce levels of other drugs metabolized by CYP450',
             '• OCP may become less effective',
             '• Warfarin dose may need increasing',
             '• Steroid doses may need adjusting',
             '',
-            '⚠️ Effects develop over weeks, persist after stopping'
+            '<strong>Important</strong>: Effects develop over weeks, persist after stopping'
         ]
     },
     'sickfaces-cyp-inhibitors': {
@@ -662,12 +662,12 @@ export const mnemonicsDatabase = {
             '<strong>O</strong> - <strong>Omeprazole</strong>',
             '<strong>M</strong> - <strong>Metronidazole</strong>',
             '',
-            '💊 Clinical implications:',
+            '<strong>Clinical implications</strong>',
             '• Increase levels of other drugs',
             '• Risk of toxicity with warfarin, phenytoin',
             '• Grapefruit juice also inhibits CYP3A4',
             '',
-            '⚠️ Effects usually rapid (hours to days)'
+            '<strong>Important</strong>: Effects usually rapid (hours to days)'
         ]
     },
 
@@ -685,7 +685,7 @@ export const mnemonicsDatabase = {
             '<strong>L</strong> - <strong>Lead poisoning</strong>',
             '<strong>S</strong> - <strong>Sideroblastic anaemia</strong>',
             '',
-            '🔬 Investigations to distinguish:',
+            '<strong>Investigations to distinguish</strong>',
             '',
             '<strong>Iron deficiency:</strong>',
             '• ↓ Ferritin, ↓ serum iron',
@@ -699,7 +699,7 @@ export const mnemonicsDatabase = {
             '• Normal/↑ ferritin',
             '• ↓ TIBC',
             '',
-            '💡 Most common cause is iron deficiency'
+            '<strong>Note</strong>: Most common cause is iron deficiency'
         ]
     },
     'trali': {
@@ -749,9 +749,9 @@ export const mnemonicsDatabase = {
             '<strong>M</strong> - <strong>Malar rash</strong>',
             '<strong>D</strong> - <strong>Discoid rash</strong>',
             '',
-            '📊 Need ≥4 criteria for diagnosis',
+            '<strong>Diagnosis</strong>: Need ≥4 criteria for diagnosis',
             '',
-            '🔬 ANA sensitivity 95% but low specificity'
+            '<strong>Investigation</strong>: ANA sensitivity 95% but low specificity'
         ]
     },
 
@@ -769,15 +769,15 @@ export const mnemonicsDatabase = {
             '<strong>D</strong> - <strong>Diameter >6mm</strong> (size of pencil eraser)',
             '<strong>E</strong> - <strong>Evolving</strong> (changing in size, shape, or colour)',
             '',
-            '⚠️ Additional warning signs:',
+            '<strong>Additional warning signs</strong>',
             '• "Ugly duckling" sign (lesion looks different from others)',
             '• Bleeding or oozing',
             '• Itching or pain',
             '• Rapid growth',
             '',
-            '🚨 Urgent 2-week rule referral if suspicious',
+            '<strong>Referral</strong>: Urgent 2-week rule referral if suspicious',
             '',
-            '🔬 Dermoscopy improves diagnostic accuracy'
+            '<strong>Investigation</strong>: Dermoscopy improves diagnostic accuracy'
         ]
     }
 };
