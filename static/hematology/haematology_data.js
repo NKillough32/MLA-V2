@@ -275,7 +275,7 @@ export const haematologyDatabase = {
                 'Target cells',
                 'Acanthocytes (spur cells) if liver disease'
             ],
-            image: 'target-cells.jpg',
+            image: 'thalassemia.jpg',
             imageDescription: 'Round macrocytes (vs oval in megaloblastic)'
         },
         labs: {
@@ -325,7 +325,7 @@ export const haematologyDatabase = {
                 'Polychromasia (reticulocytosis)',
                 'No specific size or shape uniformity'
             ],
-            image: 'hereditary-spherocytosis.jpg',
+            image: 'spherocytes.jpg',
             imageDescription: 'Spherical RBCs lacking biconcave shape, dense appearance'
         },
         labs: {
@@ -684,7 +684,7 @@ export const haematologyDatabase = {
                 'No Auer rods',
                 'Pancytopenia'
             ],
-            image: 'all-blasts.jpg',
+            image: 'all-lymphoblasts.jpg',
             imageDescription: 'Small uniform lymphoblasts with fine chromatin, no granules'
         },
         labs: {
@@ -726,7 +726,7 @@ export const haematologyDatabase = {
                 '<10% blasts in chronic phase',
                 'Thrombocytosis common'
             ],
-            image: 'cml.jpg',
+            image: 'cml-basophilia.jpg',
             imageDescription: 'Neutrophilia with left shift, full myeloid maturation spectrum visible'
         },
         labs: {
@@ -847,7 +847,7 @@ export const haematologyDatabase = {
                 'Often increased WBC (neutrophilia)',
                 'Often increased platelets (thrombocytosis)'
             ],
-            image: 'polycythemia.jpg',
+            image: 'polycythaemia-vera.jpg',
             imageDescription: 'Increased RBC concentration, normal morphology'
         },
         labs: {
@@ -897,7 +897,7 @@ export const haematologyDatabase = {
                 'Megakaryocyte fragments',
                 'Abnormal platelet forms'
             ],
-            image: 'essential-thrombocythemia.jpg',
+            image: 'essential-thrombocythaemia.jpg',
             imageDescription: 'Markedly increased platelets with size variation'
         },
         labs: {
@@ -938,7 +938,7 @@ export const haematologyDatabase = {
                 'Giant platelets',
                 'Left shift in WBC'
             ],
-            image: 'tear-drop-cells.jpg',
+            image: 'myelofibrosis.jpg',
             imageDescription: 'Tear drop cells (dacrocytes) - pathognomonic'
         },
         labs: {
