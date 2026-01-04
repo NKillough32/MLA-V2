@@ -275,7 +275,7 @@ export const haematologyDatabase = {
                 'Target cells',
                 'Acanthocytes (spur cells) if liver disease'
             ],
-            image: 'thalassemia.jpg',
+            image: 'megaloblastic.jpg',
             imageDescription: 'Round macrocytes (vs oval in megaloblastic)'
         },
         labs: {
@@ -418,8 +418,8 @@ export const haematologyDatabase = {
                 'Nucleated RBCs',
                 'Polychromasia'
             ],
-            image: 'sickle-cell.jpg',
-            imageDescription: 'Classic crescent/sickle-shaped RBCs, target cells, Howell-Jolly bodies'
+            image: 'howell-jolly-bodies.jpg',
+            imageDescription: 'Sickle cells, target cells, and Howell-Jolly bodies (functional hyposplenism)'
         },
         labs: {
             'Hb': '60-80 g/L (chronic)',
@@ -633,7 +633,7 @@ export const haematologyDatabase = {
                 'Pancytopenia (anaemia, neutropenia, thrombocytopenia)',
                 'Variable WBC (can be low, normal, or very high)'
             ],
-            image: 'aml-auer-rods.jpg',
+            image: 'aml-blasts.jpg',
             imageDescription: 'Large blast cells with prominent nucleoli, Auer rods (pathognomonic for AML)'
         },
         labs: {
