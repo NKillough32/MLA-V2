@@ -2,7 +2,9 @@
 
 All images in this folder are from Wikimedia Commons, used under Creative Commons licenses or Public Domain for educational purposes.
 
-**Additional Resource**: For more high-quality blood film images, visit the [ASH Image Bank](https://imagebank.hematology.org/) - a free resource from the American Society of Hematology (registration required).
+**Additional Resources**: For more high-quality blood film images, visit:
+- **ASH Image Bank** (https://imagebank.hematology.org/) - Free resource from the American Society of Hematology (registration required)
+- **Sysmex Europe Cell Images** (https://www.sysmex-europe.com/academy/library/cell-images/) - High-quality educational images from Sysmex
 
 ## Image Credits
 
@@ -60,13 +62,26 @@ To download all images, run:
 For more blood film images and educational resources:
 - **ASH Image Bank**: https://imagebank.hematology.org/ (Highly recommended - free, requires registration)
   - Thousands of high-quality hematology images
-  - Curated by experts
+  - Sysmex Europe Cell Images**: https://www.sysmex-europe.com/academy/library/cell-images/
+  - Professional-grade cell images from Sysmex (leading hematology equipment manufacturer)
+  - High-resolution blood cell images
+  - Free for educational purposes
+  - Well-organized by cell type
+- **Curated by experts
   - Includes rare conditions and detailed case studies
 - **PathologyOutlines**: https://www.pathologyoutlines.com/
 - **CDC DPDx Laboratory Identification**: https://www.cdc.gov/dpdx/
 
 ## Using ASH Image Bank
 
+
+## Using Sysmex Europe Cell Images
+
+1. Visit https://www.sysmex-europe.com/academy/library/cell-images/
+2. Browse by cell type or condition
+3. Download images for educational use
+4. High-quality images from professional hematology equipment
+5. Free for educational purposes
 1. Visit https://imagebank.hematology.org/
 2. Create a free account
 3. Search for condition (e.g., "iron deficiency anemia")

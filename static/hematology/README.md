@@ -17,8 +17,9 @@ Comprehensive hematology reference with blood film presentations, organized by c
 Blood smear images are sourced from:
 - **Wikimedia Commons** (CC-licensed or Public Domain) - Automated download via script
 - **ASH Image Bank** (https://imagebank.hematology.org/) - Free high-quality images (manual download, registration required)
+- **Sysmex Europe** (https://www.sysmex-europe.com/academy/library/cell-images/) - Professional cell images (free for education)
 
-**Recommended**: For the best quality educational images, use ASH Image Bank. The Wikimedia images provide a good starting point.
+**Recommended**: For the best quality educational images, use **ASH Image Bank** or **Sysmex Europe**. The Wikimedia images provide a good starting point.
 
 To download Wikimedia images:
 ```powershell
@@ -26,8 +27,8 @@ cd static/hematology
 .\download-blood-films.ps1
 ```
 
-For ASH Image Bank images:
-1. Register at https://imagebank.hematology.org/
+For ASH Image Bank or Sysmex images:
+1. Visit the respective website
 2. Search and download images for each condition
 3. Save to the `static/hematology/` folder with matching filenames
 

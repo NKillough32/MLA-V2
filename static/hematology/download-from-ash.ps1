@@ -1,11 +1,13 @@
-# PowerShell script to download hematology images from ASH Image Bank
-# Images are free for educational use
-# To find image IDs: Visit https://imagebank.hematology.org/, search for condition, copy image URL
+# PowerShell script to download hematology images from multiple sources
+# Sources:
+#   - ASH Image Bank (https://imagebank.hematology.org/) - Free for educational use
+#   - Sysmex Europe (https://www.sysmex-europe.com/academy/library/cell-images/) - Educational images
+# To find image IDs: Visit the site, search for condition, copy image URL/ID
 
 $ErrorActionPreference = "Continue"
 $outputDir = $PSScriptRoot
 
-Write-Host "Downloading from ASH Image Bank..." -ForegroundColor Cyan
+Write-Host "Downloading from ASH Image Bank and Sysmex Europe..." -ForegroundColor Cyan
 Write-Host "Output directory: $outputDir" -ForegroundColor Gray
 Write-Host ""
 

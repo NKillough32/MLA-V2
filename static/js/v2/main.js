@@ -31,6 +31,7 @@ import { clinicalPearlsManager } from './modules/ClinicalPearlsManager.js';
 import { coreConditionsManager } from './modules/CoreConditionsManager.js';
 import { ophthalmologyManager } from './modules/OphthalmologyManager.js';
 import { laddersManager } from './modules/LaddersManager.js';
+import { hematologyManager } from './modules/HematologyManager.js';
 import { PDFLibraryManager } from './modules/PDFLibraryManager.js';
 import GlobalSearchManager from './modules/GlobalSearchManager.js';
 import { psychiatryLibrary } from '../data/psychiatryLibrary.js';
@@ -143,7 +144,8 @@ class MLAQuizApp {
             this.clinicalPearlsManager.initialize(),
             this.coreConditionsManager.initialize(),
             this.ophthalmologyManager.initialize(),
-            this.laddersManager.initialize()
+            this.laddersManager.initialize(),
+            hematologyManager.initialize()
         ];
 
         await Promise.all([calculatorInitialization, ...referenceInitializers]);
@@ -1124,6 +1126,9 @@ class MLAQuizApp {
             case 'core-conditions':
                 this.loadCoreConditionsContent(panel);
                 break;
+            case 'hematology':
+                this.loadHematologyContent(panel);
+                break;
             case 'calculators':
                 this.loadCalculatorsContent(panel);
                 break;
@@ -2103,6 +2108,29 @@ class MLAQuizApp {
         const container = document.getElementById('core-conditions-container');
         if (container) container.scrollTop = 0;
         window.scrollTo(0, 0);
+    }
+
+    /**
+     * Load Hematology content
+     */
+    loadHematologyContent(panel) {
+        const container = panel.querySelector('#hematology-container');
+        if (!container) {
+            console.error('Hematology container not found');
+            return;
+        }
+
+        // Initialize hematology manager if not already done
+        if (!hematologyManager.initialized) {
+            hematologyManager.initialize().then(() => {
+                hematologyManager.render(container);
+            }).catch(err => {
+                console.error('Failed to initialize hematology manager:', err);
+                container.innerHTML = '<div class="error-message">Failed to load hematology content</div>';
+            });
+        } else {
+            hematologyManager.render(container);
+        }
     }
 
     /**

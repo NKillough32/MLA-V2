@@ -11964,6 +11964,425 @@
                 background: var(--v2-bg-card);
             }
 
+            /* Hematology Styles */
+            #hematology-container {
+                padding: 12px;
+            }
+
+            .hematology-header {
+                margin-bottom: 12px;
+            }
+
+            .hematology-header h3 {
+                color: var(--v2-primary);
+                margin: 0 0 4px 0;
+                font-size: 20px;
+            }
+
+            .hematology-header p {
+                color: var(--v2-text-secondary);
+                margin: 0;
+                line-height: 1.4;
+                font-size: 13px;
+            }
+
+            .hematology-controls {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+
+            .hematology-search-box {
+                flex: 1;
+                min-width: 200px;
+                position: relative;
+            }
+
+            .hematology-search-box input {
+                width: 100%;
+                padding: 8px 36px 8px 12px;
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                font-size: 14px;
+                background: var(--v2-bg-card);
+                color: var(--v2-text-primary);
+                transition: all 0.2s ease;
+            }
+
+            .hematology-search-box input:focus {
+                outline: none;
+                border-color: var(--v2-primary);
+                box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+            }
+
+            .hematology-search-icon {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 16px;
+                color: var(--v2-text-tertiary);
+                pointer-events: none;
+            }
+
+            .hematology-category-filter {
+                display: flex;
+                gap: 6px;
+                margin-bottom: 12px;
+                flex-wrap: wrap;
+                overflow-x: auto;
+                padding-bottom: 4px;
+            }
+
+            .hematology-category-btn {
+                padding: 6px 12px;
+                background: var(--v2-bg-elevated);
+                border: 2px solid var(--v2-border);
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--v2-text-secondary);
+                cursor: pointer;
+                white-space: nowrap;
+                transition: all 0.2s ease;
+            }
+
+            .hematology-category-btn:hover {
+                border-color: var(--v2-primary);
+                color: var(--v2-primary);
+            }
+
+            .hematology-category-btn.active {
+                background: var(--v2-primary);
+                color: white;
+                border-color: var(--v2-primary);
+            }
+
+            .hematology-stats {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 12px;
+                flex-wrap: wrap;
+            }
+
+            .hematology-stats .stat-item {
+                flex: 1;
+                min-width: 110px;
+                padding: 8px;
+                background: var(--v2-bg-elevated);
+                border: 1px solid var(--v2-border);
+                border-radius: 8px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .hematology-stats .stat-value {
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--v2-primary);
+            }
+
+            .hematology-stats .stat-label {
+                font-size: 11px;
+                color: var(--v2-text-tertiary);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .hematology-conditions-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 10px;
+                margin-top: 12px;
+            }
+
+            .hematology-condition-card {
+                background: var(--v2-bg-card);
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                padding: 12px;
+                transition: all 0.2s ease;
+                position: relative;
+            }
+
+            .hematology-condition-card:hover {
+                border-color: var(--v2-primary);
+                transform: translateY(-2px);
+                box-shadow: var(--v2-shadow-md);
+            }
+
+            .hematology-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 8px;
+            }
+
+            .hematology-card-header h4 {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                margin: 0;
+            }
+
+            .hematology-favorite-btn {
+                background: none;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+                padding: 2px;
+                transition: transform 0.2s ease;
+            }
+
+            .hematology-favorite-btn:hover {
+                transform: scale(1.2);
+            }
+
+            .hematology-favorite-btn.favorited {
+                filter: drop-shadow(0 0 4px rgba(255, 193, 7, 0.5));
+            }
+
+            .hematology-card-category {
+                display: inline-block;
+                padding: 3px 10px;
+                background: rgba(220, 38, 38, 0.1);
+                color: #dc2626;
+                border-radius: 10px;
+                font-size: 11px;
+                font-weight: 500;
+                margin-bottom: 6px;
+            }
+
+            .hematology-card-preview {
+                font-size: 13px;
+                color: var(--v2-text-secondary);
+                line-height: 1.4;
+                margin-bottom: 10px;
+            }
+
+            .hematology-card-preview ul {
+                margin: 4px 0;
+                padding-left: 18px;
+            }
+
+            .hematology-card-preview li {
+                margin: 2px 0;
+            }
+
+            .hematology-view-btn {
+                width: 100%;
+                padding: 8px;
+                background: var(--v2-primary);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+            .hematology-view-btn:hover {
+                background: var(--v2-primary-dark);
+                transform: scale(1.02);
+            }
+
+            .hematology-back-btn {
+                padding: 8px 16px;
+                background: var(--v2-bg-elevated);
+                border: 2px solid var(--v2-border);
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                cursor: pointer;
+                margin-bottom: 12px;
+                transition: all 0.2s ease;
+            }
+
+            .hematology-back-btn:hover {
+                border-color: var(--v2-primary);
+                color: var(--v2-primary);
+            }
+
+            .hematology-detail-header {
+                margin-bottom: 16px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid var(--v2-border);
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .hematology-detail-header h2 {
+                font-size: 24px;
+                font-weight: 700;
+                color: var(--v2-text-primary);
+                margin: 0;
+            }
+
+            .hematology-detail-category {
+                display: inline-block;
+                padding: 4px 12px;
+                background: rgba(220, 38, 38, 0.1);
+                color: #dc2626;
+                border-radius: 12px;
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+
+            .hematology-section {
+                background: var(--v2-bg-card);
+                border: 1px solid var(--v2-border);
+                border-radius: 8px;
+                padding: 14px;
+                margin-bottom: 12px;
+            }
+
+            .hematology-section h3 {
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--v2-text-primary);
+                margin: 0 0 12px 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .hematology-section h4 {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--v2-text-primary);
+                margin: 12px 0 8px 0;
+            }
+
+            .hematology-blood-film-image {
+                margin: 12px 0;
+                border-radius: 8px;
+                overflow: hidden;
+                border: 1px solid var(--v2-border);
+            }
+
+            .hematology-blood-film-image img {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+                display: block;
+            }
+
+            .hematology-image-caption {
+                margin: 8px 0 0 0;
+                font-size: 13px;
+                font-style: italic;
+                color: var(--v2-text-secondary);
+            }
+
+            .hematology-image-placeholder {
+                padding: 40px;
+                background: var(--v2-bg-elevated);
+                text-align: center;
+                border-radius: 8px;
+            }
+
+            .hematology-image-placeholder p {
+                font-size: 16px;
+                color: var(--v2-text-secondary);
+                margin: 0 0 8px 0;
+            }
+
+            .hematology-image-placeholder small {
+                font-size: 12px;
+                color: var(--v2-text-tertiary);
+            }
+
+            .hematology-findings-list,
+            .hematology-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 8px;
+            }
+
+            .hematology-findings-list li,
+            .hematology-list li {
+                padding-left: 24px;
+                position: relative;
+                line-height: 1.6;
+                font-size: 14px;
+                color: var(--v2-text-primary);
+            }
+
+            .hematology-findings-list li:before {
+                content: "🔬";
+                position: absolute;
+                left: 0;
+            }
+
+            .hematology-list li:before {
+                content: "•";
+                position: absolute;
+                left: 8px;
+                color: var(--v2-primary);
+                font-weight: bold;
+            }
+
+            .hematology-labs-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+                gap: 10px;
+            }
+
+            .hematology-lab-item {
+                padding: 10px;
+                background: var(--v2-bg-elevated);
+                border-radius: 6px;
+                font-size: 13px;
+            }
+
+            .hematology-lab-item strong {
+                color: var(--v2-primary);
+                display: block;
+                margin-bottom: 4px;
+            }
+
+            .hematology-type {
+                background: var(--v2-bg-elevated);
+                border-left: 3px solid var(--v2-primary);
+                padding: 12px;
+                margin-bottom: 12px;
+                border-radius: 4px;
+            }
+
+            .hematology-type h4 {
+                margin-top: 0;
+                color: var(--v2-primary);
+            }
+
+            .hematology-empty-state {
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .hematology-empty-state-icon {
+                font-size: 48px;
+                margin-bottom: 12px;
+            }
+
+            .hematology-empty-state h4 {
+                color: var(--v2-text-primary);
+                margin: 0 0 8px 0;
+            }
+
+            .hematology-empty-state p {
+                color: var(--v2-text-secondary);
+                margin: 0;
+            }
+
             /* Drug Reference Filter Styles */
             .drug-categories {
                 margin-bottom: 20px;
@@ -12543,6 +12962,7 @@
             <button class="tool-nav-btn" data-tool="med-stats-ethics">📈 Stats &amp; Ethics</button>
             <button class="tool-nav-btn" data-tool="clinical-pearls">💡 Clinical Pearls</button>
             <button class="tool-nav-btn" data-tool="ophthalmology">👁️ Ophthalmology</button>
+            <button class="tool-nav-btn" data-tool="hematology">🩸 Hematology</button>
             <button class="tool-nav-btn" data-tool="emergency-protocols">🚨 Emergency</button>
             <button class="tool-nav-btn" data-tool="interpretation">📋 Interpretation</button>
             <button class="tool-nav-btn" data-tool="ladders">🪜 Clinical Treatment Ladders</button>
@@ -12733,6 +13153,13 @@
             <div id="ophthalmology-panel" class="tool-panel">
                 <div id="ophthalmology-container" class="ophthalmology-grid">
                     <div class="loading-message">👁️ Loading ophthalmology overview...</div>
+                </div>
+            </div>
+
+            <!-- Hematology Panel -->
+            <div id="hematology-panel" class="tool-panel">
+                <div id="hematology-container">
+                    <div class="loading-message">🩸 Loading hematology reference...</div>
                 </div>
             </div>
 

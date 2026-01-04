@@ -1,0 +1,601 @@
+/**
+ * Hematology Manager
+ * Manages blood disorders and blood film presentations
+ */
+
+import { eventBus } from './EventBus.js';
+import { storage } from './StorageManager.js';
+import { analytics } from './AnalyticsManager.js';
+
+export class HematologyManager {
+    constructor() {
+        this.initialized = false;
+        this.haematologyData = null;
+        this.currentCondition = null;
+        this.currentCategory = 'all';
+        this.searchQuery = '';
+        this.favoriteConditions = new Set();
+        this.categories = [
+            { id: 'all', name: 'All Conditions', icon: '🩸' },
+            { id: 'anaemia-microcytic', name: 'Microcytic Anaemia', icon: '🔴' },
+            { id: 'anaemia-macrocytic', name: 'Macrocytic Anaemia', icon: '🔴' },
+            { id: 'anaemia-normocytic', name: 'Normocytic Anaemia', icon: '🔴' },
+            { id: 'anaemia-haemolytic', name: 'Haemolytic Anaemia', icon: '💥' },
+            { id: 'leukaemia', name: 'Leukaemias', icon: '⚪' },
+            { id: 'myeloproliferative', name: 'Myeloproliferative', icon: '📈' },
+            { id: 'coagulation', name: 'Coagulation Disorders', icon: '🩹' },
+            { id: 'lymphoma', name: 'Lymphomas', icon: '🔬' },
+            { id: 'plasma-cell', name: 'Plasma Cell Disorders', icon: '🧬' }
+        ];
+    }
+
+    /**
+     * Initialize the Hematology Manager
+     */
+    async initialize() {
+        if (this.initialized) {
+            console.warn('HematologyManager already initialized');
+            return;
+        }
+
+        try {
+            // Load hematology data
+            await this.loadHaematologyData();
+            
+            // Load user preferences
+            await this.loadFavorites();
+
+            this.initialized = true;
+            console.log('🩸 Hematology Manager initialized');
+            
+            return {
+                success: true,
+                stats: {
+                    totalConditions: this.haematologyData ? Object.keys(this.haematologyData).length : 0,
+                    categories: this.categories.length - 1 // Exclude 'all'
+                }
+            };
+        } catch (error) {
+            console.error('Failed to initialize HematologyManager:', error);
+            return { success: false, error: error.message };
+        }
+    }
+
+    /**
+     * Load hematology data from module
+     */
+    async loadHaematologyData() {
+        try {
+            const module = await import('/static/hematology/haematology_data.js');
+            this.haematologyData = module.haematologyDatabase;
+            console.log('📚 Loaded hematology data:', Object.keys(this.haematologyData).length, 'conditions');
+            return this.haematologyData;
+        } catch (error) {
+            console.error('❌ Failed to load hematology data:', error);
+            throw error;
+        }
+    }
+
+    /**
+     * Load favorite conditions from storage
+     */
+    async loadFavorites() {
+        try {
+            const favorites = await storage.getItem('hematology-favorites');
+            if (favorites) {
+                this.favoriteConditions = new Set(JSON.parse(favorites));
+            }
+        } catch (error) {
+            console.error('Failed to load favorites:', error);
+        }
+    }
+
+    /**
+     * Save favorite conditions to storage
+     */
+    async saveFavorites() {
+        try {
+            await storage.setItem('hematology-favorites', JSON.stringify(Array.from(this.favoriteConditions)));
+        } catch (error) {
+            console.error('Failed to save favorites:', error);
+        }
+    }
+
+    /**
+     * Toggle favorite status of a condition
+     */
+    async toggleFavorite(conditionId) {
+        if (this.favoriteConditions.has(conditionId)) {
+            this.favoriteConditions.delete(conditionId);
+            analytics.trackEvent('hematology_unfavorited', { conditionId });
+        } else {
+            this.favoriteConditions.add(conditionId);
+            analytics.trackEvent('hematology_favorited', { conditionId });
+        }
+        
+        await this.saveFavorites();
+        return this.favoriteConditions.has(conditionId);
+    }
+
+    /**
+     * Check if a condition is favorited
+     */
+    isFavorite(conditionId) {
+        return this.favoriteConditions.has(conditionId);
+    }
+
+    /**
+     * Get all conditions or filter by category
+     */
+    getConditions(category = 'all') {
+        if (!this.haematologyData) return [];
+
+        const conditions = Object.entries(this.haematologyData).map(([id, data]) => ({
+            id,
+            ...data
+        }));
+
+        if (category === 'all') {
+            return conditions;
+        }
+
+        return conditions.filter(c => c.category === category);
+    }
+
+    /**
+     * Search conditions
+     */
+    search(query) {
+        if (!this.haematologyData) return [];
+        
+        if (!query || query.trim() === '') {
+            return this.getConditions(this.currentCategory);
+        }
+
+        const searchTerm = query.toLowerCase().trim();
+        const conditions = this.getConditions();
+
+        const results = conditions.filter(condition => {
+            // Search in title
+            if (condition.title.toLowerCase().includes(searchTerm)) return true;
+            
+            // Search in blood film findings
+            if (condition.bloodFilm?.findings?.some(f => f.toLowerCase().includes(searchTerm))) return true;
+            
+            // Search in clinical features
+            if (condition.clinicalFeatures?.some(f => f.toLowerCase().includes(searchTerm))) return true;
+            
+            // Search in causes
+            if (condition.causes?.some(c => c.toLowerCase().includes(searchTerm))) return true;
+            
+            return false;
+        });
+
+        // Filter by category if not 'all'
+        if (this.currentCategory !== 'all') {
+            return results.filter(c => c.category === this.currentCategory);
+        }
+        
+        analytics.trackEvent('hematology_searched', { query, results: results.length });
+        return results;
+    }
+
+    /**
+     * Get a specific condition by ID
+     */
+    getCondition(conditionId) {
+        if (!this.haematologyData || !conditionId) return null;
+        
+        const data = this.haematologyData[conditionId];
+        if (!data) return null;
+        
+        analytics.trackEvent('hematology_viewed', { conditionId });
+        return {
+            id: conditionId,
+            ...data
+        };
+    }
+
+    /**
+     * Render the hematology UI
+     */
+    render(container) {
+        if (!container) {
+            console.error('No container provided for hematology render');
+            return;
+        }
+
+        const html = `
+            <div class="hematology-header">
+                <h3>🩸 Hematology & Blood Disorders</h3>
+                <p>Comprehensive guide to blood disorders and blood film presentations</p>
+            </div>
+
+            <div class="hematology-controls">
+                <div class="hematology-search-box">
+                    <input type="text" id="hematology-search-input" placeholder="Search conditions, findings, symptoms..." />
+                    <span class="hematology-search-icon">🔍</span>
+                </div>
+            </div>
+
+            <div class="hematology-category-filter" id="hematology-category-filter">
+                ${this.renderCategoryFilters()}
+            </div>
+
+            <div class="hematology-stats" id="hematology-stats">
+                <span class="stat-item">
+                    <span class="stat-value">${Object.keys(this.haematologyData || {}).length}</span>
+                    <span class="stat-label">Conditions</span>
+                </span>
+                <span class="stat-item">
+                    <span class="stat-value">${this.categories.length - 1}</span>
+                    <span class="stat-label">Categories</span>
+                </span>
+            </div>
+
+            <!-- List View -->
+            <div id="hematology-list-view" class="hematology-list-view">
+                <div class="hematology-conditions-grid" id="hematology-conditions-grid">
+                    ${this.renderConditionCards()}
+                </div>
+                <div id="hematology-empty-state" class="hematology-empty-state" style="display: none;">
+                    <div class="hematology-empty-state-icon">🔍</div>
+                    <h4>No conditions found</h4>
+                    <p>Try adjusting your search or category filter</p>
+                </div>
+            </div>
+
+            <!-- Detail View -->
+            <div id="hematology-detail-view" class="hematology-detail-view" style="display: none;">
+                <button class="hematology-back-btn" id="hematology-back-btn">
+                    ← Back to List
+                </button>
+                <div id="hematology-detail-content" class="hematology-detail-content">
+                    <!-- Condition details will be rendered here -->
+                </div>
+            </div>
+        `;
+
+        container.innerHTML = html;
+        this.attachEventListeners();
+    }
+
+    /**
+     * Render category filter buttons
+     */
+    renderCategoryFilters() {
+        return this.categories.map(cat => `
+            <button class="hematology-category-btn ${cat.id === this.currentCategory ? 'active' : ''}" 
+                    data-category="${cat.id}">
+                ${cat.icon} ${cat.name}
+            </button>
+        `).join('');
+    }
+
+    /**
+     * Render condition cards
+     */
+    renderConditionCards() {
+        const conditions = this.getConditions(this.currentCategory);
+        
+        if (conditions.length === 0) {
+            return '';
+        }
+
+        return conditions.map(condition => `
+            <div class="hematology-condition-card" data-condition-id="${condition.id}">
+                <div class="hematology-card-header">
+                    <h4>${condition.title}</h4>
+                    <button class="hematology-favorite-btn ${this.isFavorite(condition.id) ? 'favorited' : ''}" 
+                            data-condition-id="${condition.id}">
+                        ${this.isFavorite(condition.id) ? '⭐' : '☆'}
+                    </button>
+                </div>
+                <div class="hematology-card-category">
+                    ${this.getCategoryName(condition.category)}
+                </div>
+                ${condition.bloodFilm?.findings ? `
+                    <div class="hematology-card-preview">
+                        <strong>Blood Film:</strong>
+                        <ul>
+                            ${condition.bloodFilm.findings.slice(0, 3).map(f => `<li>${f}</li>`).join('')}
+                            ${condition.bloodFilm.findings.length > 3 ? '<li><em>+ more...</em></li>' : ''}
+                        </ul>
+                    </div>
+                ` : ''}
+                <button class="hematology-view-btn" data-condition-id="${condition.id}">
+                    View Details →
+                </button>
+            </div>
+        `).join('');
+    }
+
+    /**
+     * Render condition detail view
+     */
+    renderConditionDetail(conditionId) {
+        const condition = this.getCondition(conditionId);
+        if (!condition) return;
+
+        this.currentCondition = condition;
+
+        const detailContent = document.getElementById('hematology-detail-content');
+        if (!detailContent) return;
+
+        let html = `
+            <div class="hematology-detail-header">
+                <h2>${condition.title}</h2>
+                <button class="hematology-favorite-btn ${this.isFavorite(conditionId) ? 'favorited' : ''}" 
+                        data-condition-id="${conditionId}">
+                    ${this.isFavorite(conditionId) ? '⭐ Favorited' : '☆ Add to Favorites'}
+                </button>
+            </div>
+
+            <div class="hematology-detail-category">
+                ${this.getCategoryName(condition.category)}
+            </div>
+        `;
+
+        // Blood Film Section
+        if (condition.bloodFilm) {
+            html += `
+                <div class="hematology-section">
+                    <h3>🔬 Blood Film Findings</h3>
+                    ${condition.bloodFilm.image ? `
+                        <div class="hematology-blood-film-image">
+                            <img src="/static/hematology/${condition.bloodFilm.image}" 
+                                 alt="${condition.title} blood film" 
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                            <div class="hematology-image-placeholder" style="display: none;">
+                                <p>📷 Image not available</p>
+                                <small>See IMAGE_DOWNLOAD_INSTRUCTIONS.md for image sources</small>
+                            </div>
+                            ${condition.bloodFilm.imageDescription ? `
+                                <p class="hematology-image-caption">${condition.bloodFilm.imageDescription}</p>
+                            ` : ''}
+                        </div>
+                    ` : ''}
+                    <ul class="hematology-findings-list">
+                        ${condition.bloodFilm.findings.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Lab Values Section
+        if (condition.labs) {
+            html += `
+                <div class="hematology-section">
+                    <h3>📊 Laboratory Findings</h3>
+                    <div class="hematology-labs-grid">
+                        ${Object.entries(condition.labs).map(([test, value]) => `
+                            <div class="hematology-lab-item">
+                                <strong>${test}:</strong> ${value}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Causes Section
+        if (condition.causes) {
+            html += `
+                <div class="hematology-section">
+                    <h3>🎯 Causes</h3>
+                    <ul class="hematology-list">
+                        ${condition.causes.map(c => `<li>${c}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Clinical Features Section
+        if (condition.clinicalFeatures) {
+            html += `
+                <div class="hematology-section">
+                    <h3>🩺 Clinical Features</h3>
+                    <ul class="hematology-list">
+                        ${condition.clinicalFeatures.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Management Section
+        if (condition.management) {
+            html += `
+                <div class="hematology-section">
+                    <h3>💊 Management</h3>
+                    <ul class="hematology-list">
+                        ${condition.management.map(m => `<li>${m}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Types Section (for conditions like thalassemia)
+        if (condition.types) {
+            html += `
+                <div class="hematology-section">
+                    <h3>📋 Types & Variants</h3>
+                    ${Object.entries(condition.types).map(([typeName, typeData]) => `
+                        <div class="hematology-type">
+                            <h4>${typeName}</h4>
+                            ${typeData.genetics ? `<p><strong>Genetics:</strong> ${typeData.genetics}</p>` : ''}
+                            ${typeData.variants ? `
+                                <ul>
+                                    ${typeData.variants.map(v => `<li>${v}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Complications Section
+        if (condition.complications) {
+            html += `
+                <div class="hematology-section">
+                    <h3>⚠️ Complications</h3>
+                    <ul class="hematology-list">
+                        ${condition.complications.map(c => `<li>${c}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        detailContent.innerHTML = html;
+
+        // Show detail view, hide list view
+        const listView = document.getElementById('hematology-list-view');
+        const detailView = document.getElementById('hematology-detail-view');
+        if (listView) listView.style.display = 'none';
+        if (detailView) detailView.style.display = 'block';
+
+        // Scroll to top
+        if (detailView) detailView.scrollTop = 0;
+
+        // Re-attach event listeners for favorite button in detail view
+        this.attachFavoriteListeners();
+    }
+
+    /**
+     * Get category name from ID
+     */
+    getCategoryName(categoryId) {
+        const category = this.categories.find(c => c.id === categoryId);
+        return category ? `${category.icon} ${category.name}` : categoryId;
+    }
+
+    /**
+     * Attach event listeners
+     */
+    attachEventListeners() {
+        // Search input
+        const searchInput = document.getElementById('hematology-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                this.searchQuery = e.target.value;
+                this.refreshConditionsList();
+            });
+        }
+
+        // Category filters
+        const categoryBtns = document.querySelectorAll('.hematology-category-btn');
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const category = e.target.dataset.category;
+                this.currentCategory = category;
+                
+                // Update active state
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                this.refreshConditionsList();
+            });
+        });
+
+        // View detail buttons
+        const viewBtns = document.querySelectorAll('.hematology-view-btn');
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const conditionId = e.target.dataset.conditionId;
+                this.renderConditionDetail(conditionId);
+            });
+        });
+
+        // Back button
+        const backBtn = document.getElementById('hematology-back-btn');
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                const listView = document.getElementById('hematology-list-view');
+                const detailView = document.getElementById('hematology-detail-view');
+                if (listView) listView.style.display = 'block';
+                if (detailView) detailView.style.display = 'none';
+                this.currentCondition = null;
+            });
+        }
+
+        // Favorite buttons
+        this.attachFavoriteListeners();
+    }
+
+    /**
+     * Attach favorite button listeners
+     */
+    attachFavoriteListeners() {
+        const favBtns = document.querySelectorAll('.hematology-favorite-btn');
+        favBtns.forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                e.stopPropagation();
+                const conditionId = e.target.dataset.conditionId;
+                const isFav = await this.toggleFavorite(conditionId);
+                
+                // Update button state
+                if (isFav) {
+                    e.target.textContent = e.target.textContent.includes('Favorited') ? '⭐ Favorited' : '⭐';
+                    e.target.classList.add('favorited');
+                } else {
+                    e.target.textContent = e.target.textContent.includes('Add to') ? '☆ Add to Favorites' : '☆';
+                    e.target.classList.remove('favorited');
+                }
+            });
+        });
+    }
+
+    /**
+     * Refresh conditions list based on current filters
+     */
+    refreshConditionsList() {
+        const grid = document.getElementById('hematology-conditions-grid');
+        const emptyState = document.getElementById('hematology-empty-state');
+        
+        if (!grid || !emptyState) return;
+
+        const results = this.searchQuery ? this.search(this.searchQuery) : this.getConditions(this.currentCategory);
+        
+        if (results.length === 0) {
+            grid.style.display = 'none';
+            emptyState.style.display = 'block';
+        } else {
+            grid.style.display = 'grid';
+            emptyState.style.display = 'none';
+            
+            // Re-render cards
+            grid.innerHTML = results.map(condition => `
+                <div class="hematology-condition-card" data-condition-id="${condition.id}">
+                    <div class="hematology-card-header">
+                        <h4>${condition.title}</h4>
+                        <button class="hematology-favorite-btn ${this.isFavorite(condition.id) ? 'favorited' : ''}" 
+                                data-condition-id="${condition.id}">
+                            ${this.isFavorite(condition.id) ? '⭐' : '☆'}
+                        </button>
+                    </div>
+                    <div class="hematology-card-category">
+                        ${this.getCategoryName(condition.category)}
+                    </div>
+                    ${condition.bloodFilm?.findings ? `
+                        <div class="hematology-card-preview">
+                            <strong>Blood Film:</strong>
+                            <ul>
+                                ${condition.bloodFilm.findings.slice(0, 3).map(f => `<li>${f}</li>`).join('')}
+                                ${condition.bloodFilm.findings.length > 3 ? '<li><em>+ more...</em></li>' : ''}
+                            </ul>
+                        </div>
+                    ` : ''}
+                    <button class="hematology-view-btn" data-condition-id="${condition.id}">
+                        View Details →
+                    </button>
+                </div>
+            `).join('');
+            
+            // Re-attach event listeners
+            this.attachEventListeners();
+        }
+    }
+}
+
+// Create singleton instance
+export const hematologyManager = new HematologyManager();

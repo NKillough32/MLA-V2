@@ -1,29 +1,43 @@
 # Hematology Blood Film Images - Download Instructions
 
-## Recommended: ASH Image Bank (Best Quality)
+## Recommended Sources (Best Quality)
 
-The **American Society of Hematology Image Bank** (https://imagebank.hematology.org/) provides the highest quality, expertly curated hematology images - completely free for educational use.
+### Option 1: Sysmex Europe Cell Images ⭐ EASIEST
+**Website:** https://www.sysmex-europe.com/academy/library/cell-images/
 
-### Steps to Download from ASH Image Bank:
+**Why Sysmex?**
+- ✓ High-resolution professional images
+- ✓ NO registration required
+- ✓ Well-organized by cell type
+- ✓ From leading hematology equipment manufacturer
+- ✓ Free for educational use
+- ✓ Faster than ASH Image Bank
+
+**How to Download:**
+1. Visit https://www.sysmex-europe.com/academy/library/cell-images/
+2. Browse categories (e.g., "Pathological cells", "Red blood cells")
+3. Click on cell type you need
+4. Right-click image → Save As
+5. Rename to match required filename (e.g., `schistocytes.jpg`)
+6. Save to `C:\Users\Nicho\Desktop\MLA-V2\MLA-V2\static\hematology\`
+
+### Option 2: ASH Image Bank
+**Website:** https://imagebank.hematology.org/
+
+**Why ASH?**
+- ✓ Most comprehensive collection
+- ✓ Expert-curated with case details
+- ✓ Multiple examples per condition
+- ✓ Completely free for education
+
+**Drawback:** Requires free registration
+
+**How to Download:**
 
 1. **Register** (free): https://imagebank.hematology.org/Register
 2. **Search** for conditions (e.g., "iron deficiency anemia", "sickle cell")
-3. **Download** images and save to `static/hematology/` with these filenames:
-   - `iron-deficiency.jpg`
-   - `thalassemia.jpg`
-   - `sickle-cell.jpg`
-   - `spherocytes.jpg`
-   - `aml-auer-rods.jpg`
-   - etc. (see list below)
-4. **Attribution**: Images are free for educational use; proper citation provided on each image page
-
-### Benefits of ASH Image Bank:
-- ✓ High-resolution professional images
-- ✓ Expert-curated content
-- ✓ Multiple examples per condition
-- ✓ Detailed case information
-- ✓ Completely free for education
-- ✓ More comprehensive than Wikimedia
+3. **Download** images and save to `static/hematology/` with required filenames
+4. **Attribution**: Images are free for educational use
 
 ---
 
@@ -124,3 +138,28 @@ Ensure downloaded images use these exact filenames:
 
 ## License
 All images are free for educational use. See ATTRIBUTION.md for details.
+ysmex Europe Quick Reference
+
+**Most Useful Categories:**
+- **Pathological red blood cells**: Schistocytes, spherocytes, tear drop cells, target cells
+- **White blood cells - pathological**: Blasts, abnormal lymphocytes
+- **Normal cells**: Normal RBCs, normal WBCs
+
+**Example Searches:**
+- For schistocytes: Look under "Pathological red blood cells" → "Fragmentocytes/Schistocytes"
+- For spherocytes: Look under "Pathological red blood cells" → "Spherocytes"
+- For blasts: Look under "White blood cells - pathological" → "Blasts"
+
+---
+
+## Summary
+
+**Best approach**: 
+1. **First choice**: Sysmex Europe (no registration, high quality, easy)
+2. **Second choice**: ASH Image Bank (requires registration, most comprehensive)
+3. **Quick fallback**: Run Wikimedia script (some images already downloaded)
+
+**All three work**: The application will display whichever images are present
+
+## License
+All images from these sourc
