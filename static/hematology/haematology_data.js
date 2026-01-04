@@ -152,7 +152,7 @@ export const haematologyDatabase = {
                 'Basophilic stippling',
                 'Pappenheimer bodies (iron granules)'
             ],
-            image: 'basophilic-stippling.jpg',
+            image: 'sideroblastic-anaemia.jpg',
             imageDescription: 'Dimorphic RBC population with basophilic stippling; ring sideroblasts visible on bone marrow'
         },
         labs: {
@@ -275,7 +275,7 @@ export const haematologyDatabase = {
                 'Target cells',
                 'Acanthocytes (spur cells) if liver disease'
             ],
-            image: 'megaloblastic.jpg',
+            image: 'non-megaloblastic macrocytosis.jpg',
             imageDescription: 'Round macrocytes (vs oval in megaloblastic)'
         },
         labs: {
@@ -418,8 +418,8 @@ export const haematologyDatabase = {
                 'Nucleated RBCs',
                 'Polychromasia'
             ],
-            image: 'howell-jolly-bodies.jpg',
-            imageDescription: 'Sickle cells, target cells, and Howell-Jolly bodies (functional hyposplenism)'
+            image: 'sickle cell anemia.jpg',
+            imageDescription: 'Classic crescent/sickle-shaped RBCs with target cells and Howell-Jolly bodies'
         },
         labs: {
             'Hb': '60-80 g/L (chronic)',
@@ -897,8 +897,8 @@ export const haematologyDatabase = {
                 'Megakaryocyte fragments',
                 'Abnormal platelet forms'
             ],
-            image: 'essential-thrombocythaemia.jpg',
-            imageDescription: 'Markedly increased platelets with size variation'
+            image: 'Giant_platelets.jpg',
+            imageDescription: 'Markedly increased platelets with giant forms and size variation'
         },
         labs: {
             'Platelets': '>450 x10⁹/L sustained',
