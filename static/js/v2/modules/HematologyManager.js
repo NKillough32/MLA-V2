@@ -424,11 +424,28 @@ export class HematologyManager {
             html += `
                 <div class="hematology-section">
                     <h3>🎯 Causes</h3>
+            `;
+            
+            // Handle both array and object formats
+            if (Array.isArray(condition.causes)) {
+                html += `
                     <ul class="hematology-list">
                         ${condition.causes.map(c => `<li>${c}</li>`).join('')}
                     </ul>
-                </div>
-            `;
+                `;
+            } else if (typeof condition.causes === 'object') {
+                // Handle categorized causes (object with subcategories)
+                html += Object.entries(condition.causes).map(([category, items]) => `
+                    <div class="hematology-subcategory">
+                        <h4>${category}</h4>
+                        <ul class="hematology-list">
+                            ${items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `).join('');
+            }
+            
+            html += `</div>`;
         }
 
         // Clinical Features Section
