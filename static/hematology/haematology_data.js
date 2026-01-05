@@ -62,6 +62,7 @@ export const haematologyDatabase = {
                 'Polychromasia'
             ],
             image: 'thalassemia.jpg',
+            alternativeImages: ['Beta-thalassemia major.jpg'],
             imageDescription: 'Numerous target cells (codocytes) with characteristic "bull\'s eye" appearance are the hallmark finding. Red cells show marked microcytosis that is disproportionate to the degree of anaemia (unlike iron deficiency). Basophilic stippling (blue-purple dots from ribosomal RNA) may be visible. In severe cases, nucleated red blood cells appear in peripheral circulation. The microcytosis is often more pronounced than in iron deficiency, with MCV typically <70 fL despite relatively preserved haemoglobin levels.'
         },
         types: {
@@ -187,8 +188,8 @@ export const haematologyDatabase = {
                 'Pancytopenia in severe cases',
                 'Anisocytosis and poikilocytosis'
             ],
-            image: 'hypersegmented-neutrophil.jpg',
-            alternativeImages: ['Hypersegmented neutrophil.jpg', 'megaloblastic.jpg'],
+            image: 'Megaloblastic anemia.jpg',
+            alternativeImages: ['megaloblastic.jpg', 'Hypersegmented neutrophil.jpg', 'hypersegmented-neutrophil.jpg'],
             imageDescription: 'Red blood cells are enlarged (macrocytic, MCV >100 fL) and oval-shaped (macro-ovalocytes), a distinctive feature of megaloblastic anaemia. The pathognomonic finding is hypersegmented neutrophils with ≥6 nuclear lobes (normal is 3-5 lobes), reflecting nuclear-cytoplasmic maturation asynchrony due to impaired DNA synthesis. Variation in cell size and shape is prominent. In severe deficiency, pancytopenia occurs with both red and white cell lineages affected. These changes are identical in B12 and folate deficiency and can only be distinguished by biochemical testing.'
         },
         labs: {
