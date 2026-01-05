@@ -12399,14 +12399,14 @@
                 padding: 0;
                 margin: 0;
                 display: grid;
-                gap: 8px;
+                gap: 12px;
             }
 
             .hematology-findings-list li,
             .hematology-list li {
-                padding-left: 24px;
+                padding-left: 28px;
                 position: relative;
-                line-height: 1.6;
+                line-height: 1.7;
                 font-size: 14px;
                 color: var(--v2-text-primary);
             }
@@ -12415,14 +12415,49 @@
                 content: "🔬";
                 position: absolute;
                 left: 0;
+                top: 0;
             }
 
             .hematology-list li:before {
                 content: "•";
                 position: absolute;
-                left: 8px;
+                left: 10px;
+                top: 6px;
                 color: var(--v2-primary);
                 font-weight: bold;
+                font-size: 18px;
+            }
+
+            /* Nested lists with better indentation */
+            .hematology-list li ul,
+            .hematology-list li ol {
+                margin-top: 8px;
+                margin-bottom: 4px;
+                padding-left: 8px;
+                list-style: none;
+            }
+
+            .hematology-list li ul li,
+            .hematology-list li ol li {
+                padding-left: 20px;
+                margin-top: 6px;
+                font-size: 13.5px;
+                line-height: 1.6;
+            }
+
+            .hematology-list li ul li:before,
+            .hematology-list li ol li:before {
+                content: "◦";
+                left: 6px;
+                top: 4px;
+                font-size: 16px;
+                color: var(--v2-text-secondary);
+            }
+
+            /* Strong tags in lists */
+            .hematology-list strong {
+                color: var(--v2-primary);
+                font-weight: 600;
             }
 
             .hematology-labs-grid {

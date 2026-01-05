@@ -1149,8 +1149,9 @@ export const haematologyDatabase = {
                 'Large platelets (megathrombocytes)',
                 'Otherwise normal RBC and WBC morphology'
             ],
-            image: 'normal-blood-film.jpg',
-            imageDescription: 'Reduced platelet count with occasional large platelets'
+            image: 'Idiopathic Thrombocytopenic Purpura.jpg',
+            alternativeImages: ['Giant_platelets.jpg'],
+            imageDescription: 'Reduced platelet count with occasional large platelets (megathrombocytes). The blood film shows markedly decreased platelet numbers - normal platelet count is 150-400×10⁹/L, but ITP patients typically have <100 and often <30. The few platelets present are often larger than normal (megathrombocytes), reflecting increased bone marrow production attempting to compensate for peripheral destruction. Red cells and white cells appear morphologically normal. The large platelets indicate active megakaryopoiesis in the marrow. ITP is an autoimmune disorder where antibodies target platelet surface antigens (especially GPIIb/IIIa), leading to splenic destruction. Diagnosis is clinical after excluding other causes of thrombocytopenia.'
         },
         labs: {
             'Platelets': '<100 (often <30)',
@@ -1251,8 +1252,9 @@ export const haematologyDatabase = {
                 'Eosinophilia (in some cases)',
                 'Anaemia (in advanced disease)'
             ],
-            image: 'normal-blood-film.jpg',
-            imageDescription: 'Reed-Sternberg cells (large binucleate "owl-eye" cells) seen on lymph node biopsy, not blood'
+            image: 'Classical Reed-Sternberg cell.jpg',
+            alternativeImages: ['Nodular sclerosis Hodgkin lymphoma with classic Reed-Sternberg cells.jpg'],
+            imageDescription: 'Classical Reed-Sternberg cells are the diagnostic hallmark of Hodgkin lymphoma - large binucleate or multinucleate cells with prominent eosinophilic "owl-eye" nucleoli. These cells are typically seen on lymph node biopsy rather than peripheral blood. The blood film itself is usually normal or shows non-specific reactive changes including lymphocytosis, eosinophilia (which can be marked), neutrophilia, and anaemia in advanced disease. The images show the characteristic Reed-Sternberg cells from lymph node tissue - these are CD15+/CD30+ cells derived from germinal center B-cells. Diagnosis requires tissue biopsy showing Reed-Sternberg cells in an appropriate cellular background.'
         },
         labs: {
             'FBC': 'Often normal; may have anaemia, eosinophilia',
@@ -1650,7 +1652,7 @@ export const haematologyDatabase = {
                 'Macrocytosis',
                 'Variable blast percentage (<20%)'
             ],
-            image: 'normal-blood-film.jpg',
+            image: 'Myelodysplastic Syndrome.jpg',
             imageDescription: 'Blood film shows cytopenias with dysplastic features: hypogranular or agranular neutrophils, pseudo-Pelger-Huët cells (neutrophils with only 2 lobes instead of normal 3-5), macrocytic red cells, and circulating blasts (but <20%, which would indicate AML). Monocytosis may be present. The hallmark is dysplasia (abnormal maturation) across multiple cell lineages. Bone marrow shows hypercellular marrow with dysplastic changes, increased blasts (5-19%), and often ring sideroblasts. MDS is a clonal stem cell disorder characterized by ineffective haematopoiesis leading to peripheral cytopenias despite a cellular marrow.'
         },
         labs: {
