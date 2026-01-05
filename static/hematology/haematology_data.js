@@ -17,7 +17,8 @@ export const haematologyDatabase = {
                 'Pencil cells (elliptocytes)'
             ],
             image: 'iron-deficiency.jpg',
-            imageDescription: 'Pale, small RBCs with large central pallor (>1/3 of cell diameter)'
+            alternativeImages: ['Iron Deficiency Anemia Moderate.jpg'],
+            imageDescription: 'Red blood cells appear pale (hypochromic) with central pallor exceeding 1/3 of cell diameter, indicating reduced haemoglobin content. Cells are noticeably smaller than normal (microcytic). Variation in cell size (anisocytosis) and shape (poikilocytosis) is evident. Some cells show target cell appearance ("bull\'s eye"), and elongated pencil-shaped cells may be visible. These features reflect inadequate iron availability for haemoglobin synthesis.'
         },
         labs: {
             'MCV': '< 80 fL (low)',
@@ -61,7 +62,7 @@ export const haematologyDatabase = {
                 'Polychromasia'
             ],
             image: 'thalassemia.jpg',
-            imageDescription: 'Numerous target cells, marked microcytosis disproportionate to anaemia'
+            imageDescription: 'Numerous target cells (codocytes) with characteristic "bull\'s eye" appearance are the hallmark finding. Red cells show marked microcytosis that is disproportionate to the degree of anaemia (unlike iron deficiency). Basophilic stippling (blue-purple dots from ribosomal RNA) may be visible. In severe cases, nucleated red blood cells appear in peripheral circulation. The microcytosis is often more pronounced than in iron deficiency, with MCV typically <70 fL despite relatively preserved haemoglobin levels.'
         },
         types: {
             'Alpha Thalassaemia': {
@@ -153,7 +154,7 @@ export const haematologyDatabase = {
                 'Pappenheimer bodies (iron granules)'
             ],
             image: 'sideroblastic-anaemia.jpg',
-            imageDescription: 'Dimorphic RBC population with basophilic stippling; ring sideroblasts visible on bone marrow'
+            imageDescription: 'Characteristic dimorphic blood picture showing two distinct red cell populations: small, pale hypochromic cells alongside normal-sized or larger cells. Basophilic stippling (remnant ribosomal material) appears as fine blue dots scattered throughout some RBCs. Pappenheimer bodies (iron-containing granules) may be visible. The pathognomonic finding is ring sideroblasts in bone marrow (erythroblasts with iron-laden mitochondria forming a ring around the nucleus), seen with Prussian blue staining. This pattern reflects defective haem synthesis despite adequate iron stores.'
         },
         labs: {
             'MCV': 'Low or normal',
@@ -187,7 +188,8 @@ export const haematologyDatabase = {
                 'Anisocytosis and poikilocytosis'
             ],
             image: 'hypersegmented-neutrophil.jpg',
-            imageDescription: 'Large oval RBCs, hypersegmented neutrophils (pathognomonic)'
+            alternativeImages: ['Hypersegmented neutrophil.jpg', 'megaloblastic.jpg'],
+            imageDescription: 'Red blood cells are enlarged (macrocytic, MCV >100 fL) and oval-shaped (macro-ovalocytes), a distinctive feature of megaloblastic anaemia. The pathognomonic finding is hypersegmented neutrophils with ≥6 nuclear lobes (normal is 3-5 lobes), reflecting nuclear-cytoplasmic maturation asynchrony due to impaired DNA synthesis. Variation in cell size and shape is prominent. In severe deficiency, pancytopenia occurs with both red and white cell lineages affected. These changes are identical in B12 and folate deficiency and can only be distinguished by biochemical testing.'
         },
         labs: {
             'MCV': '> 100 fL (often > 110)',
@@ -236,7 +238,8 @@ export const haematologyDatabase = {
                 'Megaloblasts'
             ],
             image: 'megaloblastic.jpg',
-            imageDescription: 'Cannot distinguish from B12 deficiency on blood film alone'
+            alternativeImages: ['Megaloblastic anemia.jpg'],
+            imageDescription: 'Blood film appearance is morphologically identical to vitamin B12 deficiency and cannot be distinguished by microscopy alone. Large, oval-shaped red cells (macro-ovalocytes) dominate the film. Hypersegmented neutrophils with ≥6 nuclear lobes are present. The megaloblastic changes result from impaired DNA synthesis affecting all rapidly dividing cells. Unlike B12 deficiency, folate deficiency does NOT cause neurological damage, but the haematological picture is indistinguishable. Differentiation requires biochemical testing (serum/RBC folate levels, homocysteine elevated but methylmalonic acid normal).'
         },
         labs: {
             'MCV': '> 100 fL',
@@ -326,7 +329,7 @@ export const haematologyDatabase = {
                 'No specific size or shape uniformity'
             ],
             image: 'spherocytes.jpg',
-            imageDescription: 'Spherical RBCs lacking biconcave shape, dense appearance'
+            imageDescription: 'Spherocytes appear as small, densely staining red cells that have lost their normal biconcave disc shape and central pallor. They appear as uniformly dark, round cells due to increased cell density (elevated MCHC). The spherical shape results from membrane loss due to defects in RBC cytoskeletal proteins (spectrin, ankyrin). Polychromasia (blue-tinged cells) indicates increased reticulocyte production in response to haemolysis. These fragile spherical cells are trapped and destroyed in the spleen, leading to chronic extravascular haemolysis. The osmotic fragility test shows increased lysis in hypotonic saline.'
         },
         labs: {
             'Hb': 'Variable (mild to severe anaemia)',
@@ -372,7 +375,7 @@ export const haematologyDatabase = {
                 'Fragmented cells during haemolysis'
             ],
             image: 'g6pd-bite-cells.jpg',
-            imageDescription: 'Bite cells and blister cells during acute haemolytic episode'
+            imageDescription: 'Bite cells (degmacytes) show characteristic semi-circular indentations where splenic macrophages have removed Heinz bodies (denatured haemoglobin precipitates). Blister cells appear with haemoglobin pushed to one side. Heinz bodies are not visible on routine staining but require supravital stains (crystal violet/methyl violet). These features appear during acute oxidative haemolytic episodes triggered by drugs, infection, or fava beans. G6PD deficiency impairs the pentose phosphate pathway, leaving RBCs vulnerable to oxidative damage. Between episodes, the blood film may appear entirely normal.'
         },
         labs: {
             'G6PD enzyme assay': 'Low (definitive test)',
@@ -419,7 +422,8 @@ export const haematologyDatabase = {
                 'Polychromasia'
             ],
             image: 'sickle cell anemia.jpg',
-            imageDescription: 'Classic crescent/sickle-shaped RBCs with target cells and Howell-Jolly bodies'
+            alternativeImages: ['sickle-cell.jpg'],
+            imageDescription: 'Pathognomonic crescent or sickle-shaped red blood cells result from HbS polymerization under deoxygenated conditions. The abnormal haemoglobin (βGlu6Val mutation) forms rigid polymers, distorting cell shape. Target cells (codocytes) are common. Howell-Jolly bodies (nuclear remnants, small purple inclusions) indicate functional hyposplenism from repeated splenic infarction (autosplenectomy). Nucleated RBCs and polychromasia reflect bone marrow stress from chronic haemolysis. The percentage of irreversibly sickled cells correlates with disease severity. Sickle cells cause vaso-occlusion, leading to painful crises and organ damage.'
         },
         labs: {
             'Hb': '60-80 g/L (chronic)',
@@ -634,7 +638,8 @@ export const haematologyDatabase = {
                 'Variable WBC (can be low, normal, or very high)'
             ],
             image: 'aml-blasts.jpg',
-            imageDescription: 'Large blast cells with prominent nucleoli, Auer rods (pathognomonic for AML)'
+            alternativeImages: ['aml-auer-rods.jpg', 'Myeloblast with Auer rod.jpg', 'AML without maturation - 2..jpg'],
+            imageDescription: 'Large myeloblasts dominate the blood film, characterized by high nucleus-to-cytoplasm ratio, fine chromatin, and prominent nucleoli. Auer rods are pathognomonic pink-red needle-like cytoplasmic inclusions formed from abnormal fusion of primary granules - their presence confirms myeloid lineage and excludes ALL. Blasts comprise >20% of cells (diagnostic threshold). Background shows pancytopenia with reduced normal mature cells. Myeloblasts may show varying degrees of maturation (M0-M7 FAB classification). The presence of numerous circulating blasts reflects bone marrow failure and uncontrolled proliferation of malignant myeloid precursors.'
         },
         labs: {
             'WBC': 'Variable (low to >100)',
@@ -685,7 +690,8 @@ export const haematologyDatabase = {
                 'Pancytopenia'
             ],
             image: 'all-lymphoblasts.jpg',
-            imageDescription: 'Small uniform lymphoblasts with fine chromatin, no granules'
+            alternativeImages: ['B-Cell acute lymphoblastic leukemia.jpg', 'T-cell acute lymphoblastic leukemia.jpg'],
+            imageDescription: 'Lymphoblasts are generally smaller and more uniform than myeloblasts, with higher nucleus-to-cytoplasm ratios and scant basophilic cytoplasm. Nuclear chromatin is finely dispersed with small, indistinct nucleoli. Critically, Auer rods are ABSENT (their presence would indicate AML). Lymphoblasts comprise >20% of cells. Background pancytopenia reflects marrow replacement. B-cell ALL (more common, 85%) and T-cell ALL appear morphologically similar on routine staining and require immunophenotyping (CD19+/CD10+ for B-ALL, CD3+/CD7+ for T-ALL) for definitive classification. ALL blasts are typically PAS-positive (glycogen).'
         },
         labs: {
             'WBC': 'Usually high (often >50)',
@@ -727,7 +733,7 @@ export const haematologyDatabase = {
                 'Thrombocytosis common'
             ],
             image: 'cml-basophilia.jpg',
-            imageDescription: 'Neutrophilia with left shift, full myeloid maturation spectrum visible'
+            imageDescription: 'Dramatic leucocytosis with the complete myeloid maturation spectrum visible in peripheral blood: myeloblasts, promyelocytes, myelocytes, metamyelocytes, bands, and mature neutrophils ("left shift to immaturity"). This orderly maturation distinguishes CML from acute leukaemia. Increased basophils are a key diagnostic clue (basophilia). Eosinophils are also elevated. In chronic phase, blasts remain <10%. Platelet count is often elevated. The Philadelphia chromosome t(9;22) creating BCR-ABL fusion is diagnostic. Low neutrophil alkaline phosphatase (NAP) score helps distinguish from reactive leucocytosis.'
         },
         labs: {
             'WBC': '50-500 x10⁹/L',
@@ -784,7 +790,8 @@ export const haematologyDatabase = {
                 'Occasional prolymphocytes (<10%)'
             ],
             image: 'cll-smudge-cells.jpg',
-            imageDescription: 'Abundant small mature lymphocytes, smudge cells (pathognomonic)'
+            alternativeImages: ['Smudge cells.jpg'],
+            imageDescription: 'Numerous small, mature-appearing lymphocytes with clumped chromatin and scant cytoplasm dominate the film. Smudge cells (Gumprecht shadows) are pathognomonic - these are ruptured lymphocytes appearing as bare nuclei smeared across the slide, reflecting cell fragility due to abnormal cytoskeleton. The lymphocytes are monomorphic (uniform appearance) with <10% larger prolymphocytes. Despite mature appearance, these are clonal malignant B-cells (CD5+/CD19+/CD23+). The blood film alone raises suspicion, but diagnosis requires immunophenotyping showing absolute lymphocyte count >5×10⁹/L with characteristic markers.'
         },
         labs: {
             'WBC': '>5 with lymphocytes >5 (diagnostic)',
@@ -848,7 +855,7 @@ export const haematologyDatabase = {
                 'Often increased platelets (thrombocytosis)'
             ],
             image: 'polycythaemia-vera.jpg',
-            imageDescription: 'Increased RBC concentration, normal morphology'
+            imageDescription: 'Markedly increased red blood cell concentration (haematocrit >0.52 in men, >0.48 in women) with cells tightly packed together. RBC morphology is typically normal - cells maintain normal size and shape without the abnormalities seen in other conditions. Often shows panmyelosis with increased neutrophils and platelets alongside the erythrocytosis. The diagnosis requires JAK2 V617F mutation (95% positive) and low erythropoietin to distinguish from secondary polycythaemia. High RBC mass leads to hyperviscosity symptoms. Background is relatively "clean" without dysplastic features.'
         },
         labs: {
             'Hb': '>165 g/L (men), >160 g/L (women)',
@@ -898,7 +905,8 @@ export const haematologyDatabase = {
                 'Abnormal platelet forms'
             ],
             image: 'Giant_platelets.jpg',
-            imageDescription: 'Markedly increased platelets with giant forms and size variation'
+            alternativeImages: ['Essential thrombocythemia.jpg', 'essential-thrombocythaemia.jpg'],
+            imageDescription: 'Dramatically elevated platelet count (often >1000×10⁹/L) with striking platelet anisocytosis (marked variation in size). Giant platelets approaching the size of red blood cells are characteristic. Abnormal platelet morphology including megakaryocyte fragments and bizarre forms may be seen. Despite high numbers, platelets show functional abnormalities causing both thrombosis (most common) and paradoxical bleeding (when very elevated >1500, acquired von Willebrand syndrome). JAK2 V617F (50%), CALR (25%), or MPL (5%) mutations confirm clonality. RBCs and WBCs are typically normal, distinguishing from other myeloproliferative neoplasms.'
         },
         labs: {
             'Platelets': '>450 x10⁹/L sustained',
@@ -939,7 +947,7 @@ export const haematologyDatabase = {
                 'Left shift in WBC'
             ],
             image: 'myelofibrosis.jpg',
-            imageDescription: 'Tear drop cells (dacrocytes) - pathognomonic'
+            imageDescription: 'Classic leukoerythroblastic blood picture: tear-drop cells (dacrocytes) are the pathognomonic finding, formed as RBCs are forced through fibrotic bone marrow. Nucleated red blood cells (normoblasts) and immature white cells appear in peripheral blood due to extramedullary haematopoiesis. Giant, abnormal platelets are common. The combination of tear-drops + nucleated RBCs + left shift is highly suggestive of marrow infiltration or fibrosis. Bone marrow aspiration produces "dry tap" due to fibrosis; trephine biopsy shows reticulin/collagen fibrosis. This appearance can be primary myelofibrosis or secondary to PV/ET progression.'
         },
         labs: {
             'Hb': 'Low (anaemia)',
@@ -1092,7 +1100,7 @@ export const haematologyDatabase = {
                 'Nucleated RBCs'
             ],
             image: 'schistocytes.jpg',
-            imageDescription: 'Fragmented RBCs (schistocytes) - microangiopathic haemolysis'
+            imageDescription: 'Schistocytes (fragmented red cells) appear as helmet cells, triangular fragments, and other irregular RBC fragments resulting from mechanical shearing through fibrin strands in small vessels (microangiopathic haemolytic anaemia). >1% schistocytes is abnormal. Thrombocytopenia reflects platelet consumption in widespread microthrombi. This combination of schistocytes + low platelets + coagulopathy (prolonged PT/APTT, low fibrinogen, high D-dimer) is diagnostic of DIC. Simultaneous bleeding and thrombosis occur. The blood film is critical for rapid diagnosis in this life-threatening emergency.'
         },
         labs: {
             'Platelets': 'Low',
@@ -1356,7 +1364,7 @@ export const haematologyDatabase = {
                 'Leukoerythroblastic picture if marrow infiltration'
             ],
             image: 'rouleaux.jpg',
-            imageDescription: 'Rouleaux formation (RBC stacking) - due to high paraprotein'
+            imageDescription: 'Prominent rouleaux formation showing red blood cells stacked in linear "coin-stack" formations like rolls of coins. This results from elevated plasma proteins (paraprotein - monoclonal immunoglobulin) reducing the negative charge between RBCs, allowing them to aggregate. While mild rouleaux can occur in inflammation, extensive rouleaux suggests paraproteinaemia (myeloma, Waldenström\'s). Background shows normocytic normochromic anaemia. Plasma cells (normally <2%) may be visible in peripheral blood in advanced disease. This finding should prompt protein electrophoresis and investigation for plasma cell dyscrasia.'
         },
         labs: {
             'Hb': 'Low (anaemia)',
@@ -1413,5 +1421,731 @@ export const haematologyDatabase = {
             '<strong>Relapsed</strong>: Daratumumab (anti-CD38), carfilzomib, pomalidomide'
         ],
         prognosis: 'Median survival 5-7 years; not curable but increasingly chronic disease'
+    },
+
+    // ADDITIONAL BLOOD FILM FINDINGS
+    'howell-jolly-bodies': {
+        title: 'Howell-Jolly Bodies (Post-Splenectomy/Hyposplenism)',
+        category: 'rbc-inclusions',
+        bloodFilm: {
+            findings: [
+                'Howell-Jolly bodies (small round nuclear remnants)',
+                'Target cells',
+                'Acanthocytes (in severe liver disease)',
+                'Pappenheimer bodies may be present',
+                'Occasional nucleated RBCs'
+            ],
+            image: 'howell-jolly-bodies.jpg',
+            alternativeImages: ['Howell-Jolly bodies.jpg'],
+            imageDescription: 'Howell-Jolly bodies appear as small, round, dark purple inclusions (1-2 μm) within red blood cells, representing DNA remnants (nuclear fragments). Normally, the spleen removes these inclusions, so their presence indicates splenic dysfunction (hyposplenism/asplenia). Usually one inclusion per cell, located eccentrically near the cell margin. Common causes include post-splenectomy, sickle cell disease (autosplenectomy), coeliac disease, and congenital asplenia. Associated findings include target cells, acanthocytes, and occasionally nucleated RBCs. Patients are at increased infection risk from encapsulated organisms (pneumococcus, meningococcus, H. influenzae) requiring vaccinations and prophylactic antibiotics.'
+        },
+        causes: [
+            '<strong>Post-splenectomy</strong> - Most common',
+            '<strong>Functional hyposplenism</strong>: Sickle cell disease, coeliac disease',
+            '<strong>Severe megaloblastic anaemia</strong>',
+            '<strong>Myelodysplasia</strong>',
+            '<strong>Congenital asplenia</strong>'
+        ],
+        clinicalSignificance: [
+            'Marker of splenic dysfunction',
+            'Increased infection risk from encapsulated organisms',
+            'Requires vaccinations (pneumococcal, meningococcal, Hib)',
+            'Lifelong penicillin prophylaxis post-splenectomy'
+        ],
+        management: [
+            '<strong>Vaccinations</strong>: 2 weeks before splenectomy or immediately after if emergency',
+            '  • Pneumococcal (PCV13 + PPV23)',
+            '  • Meningococcal ACWY and B',
+            '  • Haemophilus influenzae B',
+            '  • Annual influenza',
+            '<strong>Antibiotic prophylaxis</strong>: Penicillin V 250-500mg BD lifelong',
+            '<strong>Patient education</strong>: Seek immediate medical attention for fever',
+            '<strong>Medical alert card/bracelet</strong>'
+        ]
+    },
+
+    'malaria': {
+        title: 'Malaria (Plasmodium Infection)',
+        category: 'rbc-parasites',
+        bloodFilm: {
+            findings: [
+                'Intraerythrocytic parasites (ring forms, trophozoites, schizonts)',
+                'Pigment (hemozoin) within parasitized RBCs',
+                'Gametocytes (P. falciparum: banana-shaped)',
+                'Multiple parasites per RBC (P. falciparum)',
+                'Schüffner\'s dots (P. vivax, P. ovale)'
+            ],
+            image: 'malaria-falciparum.jpg',
+            alternativeImages: ['Malaria Gametocyte of Plasmodium Falciparum.jpg'],
+            imageDescription: 'Malaria parasites appear within red blood cells in various morphological stages. Plasmodium falciparum (most dangerous): early ring forms (small rings with 1-2 chromatin dots), multiple rings per RBC common, banana-shaped gametocytes are pathognomonic. P. vivax/ovale: larger rings, enlarged RBCs, Schüffner\'s dots (fine red stippling), oval gametocytes. P. malariae: band forms, rosette schizonts. Brown-black malarial pigment (hemozoin from digested haemoglobin) is visible in mature parasites and monocytes. Diagnosis requires thick films (sensitivity) and thin films (species identification). Parasitaemia >2% in falciparum indicates severe disease requiring urgent treatment.'
+        },
+        species: {
+            'P. falciparum': [
+                'Most dangerous - causes cerebral malaria, severe disease',
+                'Multiple rings per RBC',
+                'Only rings and gametocytes in peripheral blood',
+                'Banana-shaped gametocytes (pathognomonic)',
+                'High parasitaemia possible (>2% severe)',
+                'No relapse (no liver stage)'
+            ],
+            'P. vivax': [
+                'Most common globally',
+                'Enlarged RBCs',
+                'Schüffner\'s dots',
+                'All stages in blood',
+                'Hypnozoites cause relapse (needs primaquine)'
+            ],
+            'P. ovale': [
+                'Similar to P. vivax',
+                'Oval, fimbriated RBCs',
+                'Relapsing (hypnozoites)'
+            ],
+            'P. malariae': [
+                'Band forms characteristic',
+                'Rosette schizonts (8-10 merozoites)',
+                'Quartan fever (72h cycle)',
+                'No relapse'
+            ],
+            'P. knowlesi': [
+                'Zoonotic (from macaques)',
+                'Resembles P. falciparum/malariae',
+                '24h cycle',
+                'Can be severe'
+            ]
+        },
+        clinicalFeatures: [
+            '<strong>Classic triad</strong>: Fever, rigors, sweating (cyclical)',
+            '<strong>Severe malaria (P. falciparum)</strong>:',
+            '  • Cerebral malaria - Seizures, coma',
+            '  • Severe anaemia',
+            '  • Acute kidney injury',
+            '  • Acute respiratory distress syndrome',
+            '  • Hypoglycaemia',
+            '  • Shock (algid malaria)',
+            '  • Blackwater fever (massive haemolysis)',
+            '<strong>Splenomegaly</strong>',
+            '<strong>Jaundice</strong>'
+        ],
+        diagnosis: [
+            '<strong>Thick blood film</strong>: Screening (high sensitivity)',
+            '<strong>Thin blood film</strong>: Species identification, parasitaemia count',
+            '<strong>Rapid diagnostic tests (RDT)</strong>: Detect malaria antigens',
+            '<strong>PCR</strong>: Most sensitive, species-specific',
+            'Take samples during fever spikes',
+            'Repeat if initial negative but high suspicion'
+        ],
+        management: [
+            '<strong>Uncomplicated P. falciparum</strong>:',
+            '  • Artemisinin combination therapy (ACT)',
+            '  • Artemether-lumefantrine (Riamet) 1st line UK',
+            '  • Atovaquone-proguanil (Malarone)',
+            '<strong>Severe/complicated falciparum</strong>:',
+            '  • IV artesunate (drug of choice)',
+            '  • ICU admission',
+            '  • Monitor parasitaemia daily',
+            '<strong>P. vivax/ovale</strong>:',
+            '  • Chloroquine (if sensitive)',
+            '  • Primaquine to clear hypnozoites (check G6PD first!)',
+            '<strong>P. malariae</strong>: Chloroquine',
+            '<strong>Supportive</strong>: Fluids, transfusion if severe anaemia, anticonvulsants'
+        ],
+        prevention: [
+            '<strong>Chemoprophylaxis</strong>: Depends on destination resistance patterns',
+            '<strong>Mosquito avoidance</strong>: DEET, nets, protective clothing',
+            '<strong>Awareness</strong>: Fever in returned traveller = malaria until proven otherwise'
+        ]
+    },
+
+    'basophilic-stippling': {
+        title: 'Basophilic Stippling',
+        category: 'rbc-inclusions',
+        bloodFilm: {
+            findings: [
+                'Fine or coarse blue-purple dots throughout RBC cytoplasm',
+                'May be seen with other RBC abnormalities',
+                'Variable number of stippled cells'
+            ],
+            image: 'basophilic-stippling.jpg',
+            imageDescription: 'Basophilic stippling appears as fine or coarse blue-purple dots scattered throughout the red cell cytoplasm, representing aggregates of residual ribosomal RNA. Fine stippling can be seen in many conditions affecting erythropoiesis. Coarse stippling is more significant and suggests specific pathology. The intensity and coarseness vary by cause. Common in lead poisoning (characteristic coarse stippling), thalassaemia, sideroblastic anaemia, and megaloblastic anaemia. Also seen with accelerated erythropoiesis. While not specific, the pattern and associated findings help narrow differential diagnosis.'
+        },
+        causes: {
+            'Coarse stippling (more specific)': [
+                '<strong>Lead poisoning</strong> - Classic association',
+                '<strong>Thalassaemia</strong>',
+                '<strong>Sideroblastic anaemia</strong>',
+                '<strong>Pyrimidine 5\' nucleotidase deficiency</strong> (rare)'
+            ],
+            'Fine stippling (non-specific)': [
+                '<strong>Megaloblastic anaemia</strong>',
+                '<strong>Haemolytic anaemia</strong>',
+                '<strong>Myelodysplastic syndromes</strong>',
+                '<strong>Alcoholism</strong>',
+                '<strong>Liver disease</strong>',
+                '<strong>Accelerated erythropoiesis</strong>'
+            ]
+        },
+        leadPoisoning: {
+            features: [
+                '<strong>Coarse basophilic stippling</strong> - Characteristic',
+                '<strong>Microcytic anaemia</strong>',
+                '<strong>Elevated blood lead level</strong>',
+                '<strong>Elevated free erythrocyte protoporphyrin (FEP)</strong>',
+                '<strong>Urinary coproporphyrin</strong>'
+            ],
+            clinicalFeatures: [
+                '<strong>Abdominal pain</strong> (lead colic)',
+                '<strong>Neurological</strong>: Peripheral neuropathy (wrist drop), encephalopathy',
+                '<strong>Gum lead line</strong> (Burton\'s line)',
+                '<strong>Renal impairment</strong>',
+                '<strong>Behavioural changes in children</strong>'
+            ],
+            management: [
+                '<strong>Remove exposure</strong>',
+                '<strong>Chelation therapy</strong> if symptomatic or very high levels:',
+                '  • EDTA (calcium disodium edetate)',
+                '  • Dimercaprol (BAL)',
+                '  • DMSA (succimer) - oral option',
+                '<strong>Supportive care</strong>'
+            ]
+        }
+    },
+
+    'poikilocytosis': {
+        title: 'Poikilocytosis (Abnormal RBC Shapes)',
+        category: 'rbc-morphology',
+        bloodFilm: {
+            findings: [
+                'Various abnormal RBC shapes',
+                'May include multiple types simultaneously'
+            ],
+            image: 'Poikilocytes_-_Red_blood_cell_types.jpg',
+            imageDescription: 'Poikilocytosis refers to variation in red blood cell shape (from Greek "poikilos" = varied). This educational image shows multiple poikilocyte types: (1) Echinocytes (burr cells) - regular small projections; (2) Acanthocytes (spur cells) - irregular projections, seen in liver disease, abetalipoproteinaemia; (3) Schistocytes (fragments) - helmet cells, microangiopathic haemolysis; (4) Spherocytes - round, dense, no central pallor; (5) Target cells - bull\'s eye appearance; (6) Stomatocytes - mouth-like central pallor; (7) Elliptocytes/ovalocytes - oval shape, hereditary elliptocytosis; (8) Tear drops (dacrocytes) - myelofibrosis; (9) Sickle cells - HbS disease. The specific types present provide diagnostic clues to underlying pathology.'
+        },
+        types: {
+            'Spherocytes': 'Hereditary spherocytosis, AIHA',
+            'Target cells': 'Liver disease, thalassaemia, HbC, iron deficiency, post-splenectomy',
+            'Schistocytes': 'Microangiopathic haemolysis (DIC, TTP, HUS, mechanical valves)',
+            'Sickle cells': 'Sickle cell disease',
+            'Elliptocytes': 'Hereditary elliptocytosis, iron deficiency, megaloblastic anaemia',
+            'Tear drops (dacrocytes)': 'Myelofibrosis, marrow infiltration',
+            'Acanthocytes': 'Liver disease, abetalipoproteinaemia, post-splenectomy',
+            'Echinocytes (burr cells)': 'Uraemia, pyruvate kinase deficiency, artefact',
+            'Stomatocytes': 'Hereditary stomatocytosis, alcoholism, liver disease',
+            'Bite cells': 'G6PD deficiency'
+        },
+        clinicalSignificance: 'The pattern of poikilocytosis helps narrow differential diagnosis; specific shapes point to particular disorders'
+    },
+
+    // MYELODYSPLASTIC SYNDROME
+    'myelodysplastic-syndrome': {
+        title: 'Myelodysplastic Syndrome (MDS)',
+        category: 'myeloproliferative',
+        bloodFilm: {
+            findings: [
+                'Cytopenias (anaemia most common)',
+                'Dysplastic cells (abnormal morphology)',
+                'Hypogranular neutrophils',
+                'Pseudo-Pelger-Huët anomaly (bilobed neutrophils)',
+                'Macrocytosis',
+                'Variable blast percentage (<20%)'
+            ],
+            image: 'normal-blood-film.jpg',
+            imageDescription: 'Blood film shows cytopenias with dysplastic features: hypogranular or agranular neutrophils, pseudo-Pelger-Huët cells (neutrophils with only 2 lobes instead of normal 3-5), macrocytic red cells, and circulating blasts (but <20%, which would indicate AML). Monocytosis may be present. The hallmark is dysplasia (abnormal maturation) across multiple cell lineages. Bone marrow shows hypercellular marrow with dysplastic changes, increased blasts (5-19%), and often ring sideroblasts. MDS is a clonal stem cell disorder characterized by ineffective haematopoiesis leading to peripheral cytopenias despite a cellular marrow.'
+        },
+        labs: {
+            'Hb': 'Low (anaemia in 80%)',
+            'MCV': 'Often high (macrocytic)',
+            'WBC': 'Low or normal',
+            'Neutrophils': 'Often low',
+            'Platelets': 'Low (thrombocytopenia)',
+            'Bone marrow': 'Hypercellular with dysplasia, 5-19% blasts',
+            'Cytogenetics': 'Abnormal in 50% (del(5q), -7, trisomy 8)',
+            'Reticulocytes': 'Low (inappropriately low for anaemia)'
+        },
+        classification: {
+            'WHO Classification': [
+                '<strong>MDS with single lineage dysplasia</strong>',
+                '<strong>MDS with multilineage dysplasia</strong>',
+                '<strong>MDS with ring sideroblasts</strong> (>15% ring sideroblasts)',
+                '<strong>MDS with excess blasts</strong> (5-19% blasts)',
+                '<strong>MDS with isolated del(5q)</strong> - Best prognosis',
+                '<strong>MDS, unclassifiable</strong>'
+            ],
+            'Risk Stratification (IPSS-R)': [
+                'Very low / Low risk - Watch and wait',
+                'Intermediate risk - Consider treatment',
+                'High / Very high risk - Intensive treatment, transplant'
+            ]
+        },
+        clinicalFeatures: [
+            '<strong>Anaemia symptoms</strong> - Fatigue, dyspnoea (most common presentation)',
+            '<strong>Infections</strong> - Due to neutropenia',
+            '<strong>Bleeding/bruising</strong> - Due to thrombocytopenia',
+            '<strong>Often elderly patients</strong> (median age 70)',
+            '<strong>Asymptomatic</strong> - 30% found incidentally',
+            '<strong>Hepatosplenomegaly</strong> - Rare (unlike leukaemia)'
+        ],
+        causes: [
+            '<strong>Primary (idiopathic)</strong> - 80-90%',
+            '<strong>Secondary (therapy-related)</strong>:',
+            '  • Previous chemotherapy (alkylating agents, topoisomerase inhibitors)',
+            '  • Previous radiotherapy',
+            '  • Occurs 5-10 years after treatment',
+            '<strong>Risk factors</strong>: Benzene exposure, smoking, previous chemotherapy'
+        ],
+        complications: [
+            '<strong>Transformation to AML</strong> - 30% of cases (main concern)',
+            '<strong>Severe infections</strong>',
+            '<strong>Bleeding</strong>',
+            '<strong>Iron overload</strong> - From repeated transfusions'
+        ],
+        management: [
+            '<strong>Low-risk MDS</strong>:',
+            '  • Watch and wait if asymptomatic',
+            '  • RBC transfusions (maintain Hb >80-90)',
+            '  • Erythropoietin (EPO) if EPO <500 and low transfusion need',
+            '  • Lenalidomide for del(5q)',
+            '<strong>High-risk MDS</strong>:',
+            '  • Azacitidine or decitabine (hypomethylating agents) - improves survival',
+            '  • Allogeneic stem cell transplant (only curative option, age <65-70)',
+            '<strong>Supportive care</strong>:',
+            '  • Transfusions (RBC, platelets)',
+            '  • Iron chelation if >20 units transfused (deferasirox)',
+            '  • G-CSF for severe neutropenia',
+            '  • Antibiotics for infections',
+            '<strong>Novel agents</strong>: Luspatercept (for ring sideroblasts)'
+        ],
+        prognosis: [
+            'Highly variable based on risk score',
+            'Low risk: Median survival 5-10 years',
+            'High risk: Median survival <1 year',
+            'Transplant can cure but carries significant morbidity/mortality'
+        ]
+    },
+
+    // ACUTE INTERMITTENT PORPHYRIA
+    'acute-intermittent-porphyria': {
+        title: 'Acute Intermittent Porphyria (AIP)',
+        category: 'rbc-disorders',
+        bloodFilm: {
+            findings: [
+                'Usually normal blood film',
+                'No specific haematological changes'
+            ],
+            image: 'normal-blood-film.jpg',
+            imageDescription: 'Blood film is typically normal. Acute intermittent porphyria is a metabolic disorder affecting haem synthesis, not a primary blood disorder. The diagnosis is biochemical (urine porphobilinogen) rather than morphological. During acute attacks, there are no characteristic blood film findings. This is included in haematology because it affects the haem biosynthesis pathway, but clinical presentation is primarily neurological and abdominal rather than haematological.'
+        },
+        genetics: 'Autosomal dominant, deficiency of porphobilinogen deaminase (PBGD/HMBS gene)',
+        pathophysiology: 'Defective haem synthesis → accumulation of toxic porphyrin precursors (ALA and PBG) → neurotoxicity',
+        labs: {
+            'Urine during attack': 'Dark red/brown urine on standing',
+            'Urine PBG': 'Very high during acute attack (diagnostic)',
+            'Urine ALA': 'Elevated',
+            'FBC': 'Normal',
+            'Urea & electrolytes': 'May show hyponatraemia (SIADH)',
+            'LFTs': 'May be mildly abnormal'
+        },
+        clinicalFeatures: [
+            '<strong>Classic triad</strong>: Abdominal pain + Neuropsychiatric symptoms + Autonomic dysfunction',
+            '<strong>Abdominal pain</strong> - Severe, colicky, no peritonism (most common)',
+            '<strong>Neurological</strong>:',
+            '  • Peripheral neuropathy (motor > sensory)',
+            '  • Acute ascending paralysis (can mimic Guillain-Barré)',
+            '  • Seizures',
+            '  • Confusion, psychosis, hallucinations',
+            '<strong>Autonomic dysfunction</strong>:',
+            '  • Tachycardia, hypertension',
+            '  • Constipation, vomiting',
+            '  • Urinary retention',
+            '<strong>Hyponatraemia</strong> - SIADH common',
+            '<strong>Dark urine</strong> - Red/brown on standing (oxidized porphyrins)',
+            '',
+            '<strong>Triggers of acute attacks</strong>:',
+            '  • Drugs: Barbiturates, sulfonamides, alcohol, oral contraceptives, many others',
+            '  • Hormonal: Menstruation, pregnancy',
+            '  • Fasting/low-calorie diets',
+            '  • Stress, infection',
+            '  • Smoking'
+        ],
+        diagnosis: [
+            '<strong>During acute attack</strong>:',
+            '  • Urine PBG and ALA elevated (diagnostic)',
+            '  • Urine darkens on standing',
+            '<strong>Between attacks</strong>:',
+            '  • May be normal',
+            '  • Genetic testing (HMBS mutation)',
+            '<strong>Family screening</strong> recommended'
+        ],
+        differentialDiagnosis: [
+            'Acute abdomen (appendicitis, cholecystitis)',
+            'Guillain-Barré syndrome',
+            'Lead poisoning',
+            'Acute psychosis'
+        ],
+        management: [
+            '<strong>Acute attack</strong>:',
+            '  • IV haem arginate (Normosang) 3mg/kg daily for 4 days - SPECIFIC TREATMENT',
+            '  • High carbohydrate intake (IV glucose 10% if needed) - suppresses ALA synthase',
+            '  • Analgesia (opiates safe)',
+            '  • Treat hyponatraemia',
+            '  • Stop precipitating drugs',
+            '<strong>Supportive</strong>:',
+            '  • Monitor respiratory function (may need ventilation)',
+            '  • Antiemetics',
+            '  • Beta-blockers for tachycardia/hypertension',
+            '<strong>Prevention</strong>:',
+            '  • Avoid triggers (critical - provide patient with safe drug list)',
+            '  • Avoid fasting',
+            '  • MedicAlert bracelet',
+            '  • Consider prophylactic haem arginate for recurrent attacks',
+            '  • Genetic counselling'
+        ],
+        prognosis: 'Good if diagnosed and triggers avoided; acute attacks can be fatal if untreated (respiratory paralysis)'
+    },
+
+    // AMYLOIDOSIS
+    'amyloidosis': {
+        title: 'Amyloidosis',
+        category: 'plasma-cell',
+        bloodFilm: {
+            findings: [
+                'Often normal',
+                'May show rouleaux (if myeloma-associated)',
+                'Thrombocytosis occasionally',
+                'Circulating plasma cells (rare)'
+            ],
+            image: 'normal-blood-film.jpg',
+            imageDescription: 'Blood film is usually normal or shows non-specific findings. In AL (light chain) amyloidosis associated with plasma cell dyscrasia, rouleaux formation may be seen due to paraprotein (similar to myeloma). The diagnosis of amyloidosis requires tissue biopsy showing Congo red-positive deposits with apple-green birefringence under polarized light. Amyloid is misfolded protein that deposits in tissues, causing organ dysfunction. Blood film does not show the amyloid deposits themselves.'
+        },
+        types: {
+            'AL Amyloid (Primary)': {
+                protein: 'Light chains (λ > κ) from plasma cells',
+                associations: 'Plasma cell dyscrasia, multiple myeloma (15%)',
+                prevalence: 'Most common in developed countries',
+                prognosis: 'Median survival 1-2 years untreated; better with treatment'
+            },
+            'AA Amyloid (Secondary)': {
+                protein: 'Serum amyloid A (acute phase protein)',
+                associations: 'Chronic inflammation: RA, IBD, chronic infections (TB, osteomyelitis), FMF',
+                prevalence: 'Common globally',
+                prognosis: 'Variable; treat underlying condition'
+            },
+            'ATTR Amyloid': {
+                protein: 'Transthyretin',
+                associations: 'Hereditary (mutant TTR) or Wild-type (senile cardiac)',
+                prevalence: 'Increasingly recognized',
+                prognosis: 'Variable; new treatments available'
+            },
+            'Dialysis-related': {
+                protein: 'β2-microglobulin',
+                associations: 'Long-term dialysis (>10 years)',
+                features: 'Carpal tunnel, bone cysts'
+            }
+        },
+        labs: {
+            'Serum protein electrophoresis': 'Monoclonal band (AL type)',
+            'Serum free light chains': 'Abnormal κ/λ ratio (AL)',
+            'Urine Bence-Jones protein': 'Positive (AL)',
+            'SAP scintigraphy': 'Shows amyloid distribution',
+            'NT-proBNP': 'Very elevated if cardiac involvement',
+            'Troponin': 'Elevated (cardiac)',
+            'Creatinine': 'Elevated (renal)',
+            'Alkaline phosphatase': 'Elevated (hepatic)'
+        },
+        clinicalFeatures: [
+            '<strong>Renal (50% AL)</strong>:',
+            '  • Nephrotic syndrome (heavy proteinuria, oedema)',
+            '  • Renal failure',
+            '  • Large kidneys on imaging',
+            '<strong>Cardiac (40% AL, most common in ATTR)</strong>:',
+            '  • Restrictive cardiomyopathy',
+            '  • Heart failure (preserved EF)',
+            '  • Low-voltage ECG despite thick ventricles',
+            '  • Arrhythmias, conduction defects',
+            '  • Sparkling/granular appearance on echo',
+            '<strong>Peripheral/Autonomic neuropathy</strong>:',
+            '  • Carpal tunnel syndrome (often bilateral)',
+            '  • Sensorimotor neuropathy',
+            '  • Autonomic dysfunction (orthostatic hypotension, erectile dysfunction)',
+            '<strong>GI tract</strong>:',
+            '  • Macroglossia (enlarged tongue - pathognomonic)',
+            '  • Malabsorption, diarrhoea',
+            '  • Hepatomegaly',
+            '<strong>Bleeding</strong>:',
+            '  • Factor X deficiency (binds to amyloid)',
+            '  • Easy bruising, periorbital purpura (raccoon eyes)',
+            '<strong>Other</strong>:',
+            '  • Shoulder pad sign (shoulder swelling)',
+            '  • Arthropathy'
+        ],
+        diagnosis: [
+            '<strong>Tissue biopsy</strong> (diagnostic):',
+            '  • Rectal, fat pad, kidney, heart, or affected organ',
+            '  • Congo red stain → apple-green birefringence under polarized light',
+            '  • Immunohistochemistry to determine type',
+            '<strong>Type AL</strong>: Serum/urine protein electrophoresis, free light chains',
+            '<strong>Type AA</strong>: Elevated SAA, look for chronic inflammation',
+            '<strong>Cardiac imaging</strong>: Echo, cardiac MRI (late gadolinium enhancement)',
+            '<strong>Genetic testing</strong> if ATTR suspected'
+        ],
+        management: [
+            '<strong>AL Amyloidosis</strong>:',
+            '  • Chemotherapy targeting plasma cells:',
+            '    - Bortezomib + cyclophosphamide + dexamethasone (CyBorD)',
+            '    - Melphalan + dexamethasone',
+            '  • Autologous stem cell transplant (selected patients)',
+            '  • Daratumumab (anti-CD38) for relapsed',
+            '<strong>AA Amyloidosis</strong>:',
+            '  • Treat underlying inflammatory condition',
+            '  • Anti-TNF therapy for RA/IBD',
+            '  • Colchicine for FMF',
+            '<strong>ATTR Amyloidosis</strong>:',
+            '  • Tafamidis (TTR stabilizer) - approved for cardiac ATTR',
+            '  • Patisiran, inotersen (TTR silencers)',
+            '  • Liver transplant (hereditary ATTR)',
+            '<strong>Supportive</strong>:',
+            '  • Diuretics (heart failure)',
+            '  • Dialysis (renal failure)',
+            '  • Pacemaker/ICD if needed',
+            '  • Avoid digoxin, calcium channel blockers (bind amyloid)'
+        ],
+        prognosis: [
+            '<strong>AL</strong>: Median survival 1-2 years untreated; improving with modern therapy',
+            '<strong>AA</strong>: Depends on control of underlying disease',
+            '<strong>ATTR</strong>: Cardiac involvement has median survival 2-5 years; new treatments improving outcomes',
+            'Poor prognostic factors: Cardiac involvement, troponin/BNP elevation, advanced age'
+        ]
+    },
+
+    // CASTLEMAN'S DISEASE
+    'castlemans-disease': {
+        title: "Castleman's Disease",
+        category: 'lymphoma',
+        bloodFilm: {
+            findings: [
+                'Usually normal',
+                'May show anaemia',
+                'Polyclonal hypergammaglobulinaemia',
+                'Rouleaux formation (elevated globulins)'
+            ],
+            image: 'normal-blood-film.jpg',
+            imageDescription: 'Blood film is typically normal or shows non-specific findings. Anaemia of chronic disease may be present in multicentric disease. Rouleaux formation can occur due to polyclonal hypergammaglobulinaemia (elevated immunoglobulins). Unlike lymphoma, there are no circulating abnormal lymphocytes. Diagnosis requires lymph node biopsy showing characteristic histology. Castleman disease is a rare lymphoproliferative disorder characterized by enlarged lymph nodes with specific histological patterns.'
+        },
+        types: {
+            'Unicentric Castleman Disease (UCD)': {
+                features: [
+                    'Single enlarged lymph node or node group',
+                    'Usually asymptomatic or local symptoms',
+                    'Most commonly mediastinal or abdominal',
+                    'Hyaline vascular type (90%) or plasma cell type',
+                    'Excellent prognosis with surgical excision'
+                ],
+                treatment: 'Surgical excision - curative'
+            },
+            'Multicentric Castleman Disease (MCD)': {
+                features: [
+                    'Multiple lymph node groups affected',
+                    'Systemic inflammatory symptoms',
+                    'Associated with HHV-8 (especially in HIV+)',
+                    'Plasma cell type',
+                    'Risk of lymphoma development'
+                ],
+                subtypes: [
+                    '<strong>HHV-8 positive MCD</strong> - Associated with HIV',
+                    '<strong>HHV-8 negative (idiopathic) MCD</strong> - IL-6 driven',
+                    '<strong>POEMS-associated MCD</strong> - Rare'
+                ],
+                treatment: 'Immunotherapy, chemotherapy, antivirals'
+            }
+        },
+        histology: {
+            'Hyaline vascular (90% UCD)': [
+                'Atretic germinal centers',
+                'Onion-skin layering of mantle zone',
+                'Interfollicular vascular proliferation',
+                'Usually asymptomatic'
+            ],
+            'Plasma cell type (UCD/MCD)': [
+                'Hyperplastic germinal centers',
+                'Sheets of plasma cells in interfollicular areas',
+                'More systemic symptoms'
+            ],
+            'Mixed type': 'Features of both'
+        },
+        clinicalFeatures: {
+            'UCD (70%)': [
+                '<strong>Localized lymphadenopathy</strong> - Single mass',
+                '<strong>Often asymptomatic</strong>',
+                'Discovered incidentally on imaging',
+                'Chest: Cough, dyspnoea if large mediastinal mass',
+                'Abdomen: Abdominal mass, discomfort'
+            ],
+            'MCD (30%)': [
+                '<strong>Generalized lymphadenopathy</strong>',
+                '<strong>B symptoms</strong>: Fever, night sweats, weight loss',
+                '<strong>Hepatosplenomegaly</strong>',
+                '<strong>Oedema, ascites, pleural effusions</strong>',
+                '<strong>Skin rash, cherry haemangiomas</strong>',
+                '<strong>Neuropathy</strong> (if POEMS-associated)',
+                '<strong>Kaposi sarcoma</strong> (if HHV-8+)',
+                '<strong>Autoimmune phenomena</strong>'
+            ]
+        },
+        labs: {
+            'MCD labs': [
+                'Anaemia (chronic disease)',
+                'Elevated CRP/ESR',
+                'Polyclonal hypergammaglobulinaemia',
+                'Hypoalbuminaemia',
+                'Elevated IL-6 (pathogenic)',
+                'Elevated VEGF',
+                'HHV-8 serology/PCR if suspected'
+            ],
+            'POEMS syndrome (rare association)': [
+                'Polyneuropathy',
+                'Organomegaly',
+                'Endocrinopathy',
+                'Monoclonal protein',
+                'Skin changes'
+            ]
+        },
+        diagnosis: [
+            '<strong>Lymph node biopsy</strong> - Essential for diagnosis',
+            '<strong>CT/PET scan</strong> - Assess extent (UCD vs MCD)',
+            '<strong>HHV-8 testing</strong> - If MCD suspected',
+            '<strong>IL-6 levels</strong> - Elevated in MCD',
+            'Exclude lymphoma, infection, autoimmune disease'
+        ],
+        management: [
+            '<strong>UCD</strong>:',
+            '  • Surgical excision - curative',
+            '  • Radiotherapy if unresectable',
+            '  • Observation acceptable if asymptomatic and stable',
+            '<strong>HHV-8 positive MCD</strong>:',
+            '  • Rituximab + antivirals (valganciclovir)',
+            '  • Chemotherapy if severe',
+            '  • Treat HIV if present (ART)',
+            '<strong>HHV-8 negative (idiopathic) MCD</strong>:',
+            '  • Siltuximab (anti-IL-6 antibody) - FDA approved, first-line',
+            '  • Tocilizumab (anti-IL-6 receptor) - alternative',
+            '  • Rituximab',
+            '  • Chemotherapy (cyclophosphamide, etoposide) if severe',
+            '  • Corticosteroids for symptom control',
+            '<strong>Supportive care</strong>:',
+            '  • Treat infections',
+            '  • Monitor for lymphoma development'
+        ],
+        prognosis: [
+            '<strong>UCD</strong>: Excellent - cured with excision',
+            '<strong>MCD</strong>: Variable, depends on subtype and treatment response',
+            '  • 5-year survival ~75% with treatment',
+            '  • HHV-8+ worse prognosis',
+            '  • Risk of transformation to lymphoma (plasmablastic lymphoma, NHL)',
+            '  • POEMS-associated has specific prognosis based on POEMS severity'
+        ]
+    },
+
+    // WALDENSTROM'S MACROGLOBULINAEMIA
+    'waldenstroms-macroglobulinaemia': {
+        title: "Waldenström's Macroglobulinaemia",
+        category: 'lymphoma',
+        bloodFilm: {
+            findings: [
+                'Rouleaux formation (prominent)',
+                'Lymphocytosis (small lymphocytes)',
+                'Lymphoplasmacytoid cells',
+                'Background staining (high protein)',
+                'No leukoerythroblastic picture'
+            ],
+            image: 'rouleaux.jpg',
+            imageDescription: 'Marked rouleaux formation (red cells stacked like coins) is characteristic due to very high paraprotein levels (IgM monoclonal protein). Small, mature-appearing lymphocytes are increased. Lymphoplasmacytoid cells (lymphocytes with plasmacytic features) may be seen. Background staining appears blue due to high serum protein. Hyperviscosity may cause poor blood film spreading. Diagnosis requires bone marrow showing lymphoplasmacytic infiltration plus serum IgM paraprotein. Waldenstrom macroglobulinaemia is a low-grade B-cell lymphoma producing monoclonal IgM, causing hyperviscosity syndrome.'
+        },
+        genetics: 'MYD88 L265P mutation in >90% (diagnostic); CXCR4 mutations in 30%',
+        labs: {
+            'IgM paraprotein': 'Monoclonal IgM (diagnostic)',
+            'Serum viscosity': 'Elevated (>1.8 relative to water)',
+            'Hb': 'Low (anaemia)',
+            'Platelets': 'May be low',
+            'Bone marrow': 'Lymphoplasmacytic infiltration (>10%)',
+            'Immunophenotype': 'CD19+, CD20+, surface IgM+, CD5-, CD10-, CD23-',
+            'β2-microglobulin': 'Prognostic marker',
+            'MYD88 mutation': 'Present in >90%'
+        },
+        clinicalFeatures: [
+            '<strong>Hyperviscosity syndrome (30%)</strong> - Hallmark:',
+            '  • Visual disturbance (blurred vision, diplopia)',
+            '  • Retinal vein engorgement, flame haemorrhages on fundoscopy',
+            '  • Neurological: Headache, dizziness, confusion, stroke',
+            '  • Bleeding (mucosal, epistaxis)',
+            '  • Cardiac: Heart failure',
+            '<strong>Anaemia symptoms</strong> - Fatigue, dyspnoea',
+            '<strong>B symptoms</strong> (25%): Fever, night sweats, weight loss',
+            '<strong>Lymphadenopathy</strong> (15%) - Usually modest',
+            '<strong>Hepatosplenomegaly</strong> (25%)',
+            '<strong>Peripheral neuropathy</strong> (20%):',
+            '  • Often due to IgM antibodies against myelin-associated glycoprotein (anti-MAG)',
+            '  • Symmetric sensory neuropathy',
+            '<strong>Cold agglutinin disease</strong>:',
+            '  • IgM binds RBCs in cold → haemolysis',
+            '  • Acrocyanosis, Raynaud phenomenon',
+            '<strong>Cryoglobulinaemia</strong> - Purpura, arthralgia, renal disease',
+            '<strong>Amyloidosis</strong> (5%) - AL type from light chains'
+        ],
+        diagnosis: [
+            '<strong>IgM paraprotein</strong> - Monoclonal IgM on serum electrophoresis',
+            '<strong>Bone marrow biopsy</strong>:',
+            '  • >10% lymphoplasmacytic cells',
+            '  • Intertrabecular pattern',
+            '  • Mast cells often increased',
+            '<strong>Immunophenotyping</strong>: CD19+, CD20+, sIgM+, CD5-, CD10-, CD23-',
+            '<strong>MYD88 L265P mutation</strong> - Highly specific',
+            '<strong>Imaging</strong>: CT (lymphadenopathy, organomegaly)',
+            'Exclude other IgM-producing conditions (MGUS, CLL, lymphoma)'
+        ],
+        differentialDiagnosis: [
+            'IgM MGUS (monoclonal gammopathy of undetermined significance)',
+            'Marginal zone lymphoma',
+            'CLL (CD5+ distinguishes)',
+            'Follicular lymphoma',
+            'Mantle cell lymphoma'
+        ],
+        management: [
+            '<strong>Asymptomatic, low burden</strong>:',
+            '  • Watch and wait',
+            '  • Monitor every 3-6 months',
+            '<strong>Indications to treat</strong>:',
+            '  • Symptomatic hyperviscosity',
+            '  • Symptomatic anaemia',
+            '  • Bulky lymphadenopathy',
+            '  • Progressive disease',
+            '<strong>First-line therapy</strong>:',
+            '  • Rituximab + bendamustine (most common)',
+            '  • DRC: Dexamethasone, rituximab, cyclophosphamide',
+            '  • Rituximab monotherapy (if hyperviscosity without cytopenias)',
+            '<strong>Targeted therapy</strong>:',
+            '  • Ibrutinib (BTK inhibitor) - very effective, especially if MYD88+/CXCR4 WT',
+            '  • Acalabrutinib, zanubrutinib (alternative BTK inhibitors)',
+            '<strong>Hyperviscosity management</strong>:',
+            '  • Urgent plasmapheresis - Removes IgM, immediate symptom relief',
+            '  • Start systemic therapy concurrently',
+            '<strong>Avoid</strong>:',
+            '  • Rituximab monotherapy can cause IgM flare (worsening hyperviscosity)',
+            '  • Start rituximab with chemotherapy or after plasmapheresis',
+            '<strong>Supportive</strong>:',
+            '  • Transfusions for anaemia',
+            '  • IVIG for recurrent infections',
+            '  • Neuropathy management'
+        ],
+        prognosis: [
+            'Indolent course - median survival 5-10 years',
+            'Not curable but highly treatable',
+            'Prognostic factors (IPSSWM score):',
+            '  • Age >65',
+            '  • Hb <115 g/L',
+            '  • Platelets <100',
+            '  • β2-microglobulin >3',
+            '  • IgM >70 g/L',
+            'Modern therapies (BTK inhibitors) improving outcomes'
+        ]
     }
 };

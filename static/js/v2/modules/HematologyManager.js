@@ -338,18 +338,59 @@ export class HematologyManager {
 
         // Blood Film Section
         if (condition.bloodFilm) {
+            // Collect all available images
+            const allImages = [];
+            if (condition.bloodFilm.image) {
+                allImages.push(condition.bloodFilm.image);
+            }
+            if (condition.bloodFilm.alternativeImages && Array.isArray(condition.bloodFilm.alternativeImages)) {
+                allImages.push(...condition.bloodFilm.alternativeImages);
+            }
+
             html += `
                 <div class="hematology-section">
                     <h3>🔬 Blood Film Findings</h3>
-                    ${condition.bloodFilm.image ? `
-                        <div class="hematology-blood-film-image">
-                            <img src="/static/hematology/${condition.bloodFilm.image}" 
-                                 alt="${condition.title} blood film" 
-                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                            <div class="hematology-image-placeholder" style="display: none;">
-                                <p>📷 Image not available</p>
-                                <small>See IMAGE_DOWNLOAD_INSTRUCTIONS.md for image sources</small>
-                            </div>
+                    ${allImages.length > 0 ? `
+                        <div class="hematology-blood-film-images">
+                            ${allImages.length > 1 ? `
+                                <div class="hematology-image-gallery">
+                                    <div class="hematology-gallery-main">
+                                        <img id="hematology-main-image" 
+                                             src="/static/hematology/${allImages[0]}" 
+                                             alt="${condition.title} blood film" 
+                                             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                                        <div class="hematology-image-placeholder" style="display: none;">
+                                            <p>📷 Image not available</p>
+                                            <small>See IMAGE_DOWNLOAD_INSTRUCTIONS.md for image sources</small>
+                                        </div>
+                                    </div>
+                                    <div class="hematology-gallery-thumbnails">
+                                        ${allImages.map((img, idx) => `
+                                            <div class="hematology-thumbnail ${idx === 0 ? 'active' : ''}" 
+                                                 data-image-src="/static/hematology/${img}"
+                                                 data-image-index="${idx}">
+                                                <img src="/static/hematology/${img}" 
+                                                     alt="${condition.title} view ${idx + 1}"
+                                                     onerror="this.parentElement.style.display='none';" />
+                                                <span class="hematology-thumbnail-label">${idx + 1}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                    <div class="hematology-image-counter">
+                                        <span id="hematology-current-image">1</span> / ${allImages.length}
+                                    </div>
+                                </div>
+                            ` : `
+                                <div class="hematology-blood-film-image">
+                                    <img src="/static/hematology/${allImages[0]}" 
+                                         alt="${condition.title} blood film" 
+                                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                                    <div class="hematology-image-placeholder" style="display: none;">
+                                        <p>📷 Image not available</p>
+                                        <small>See IMAGE_DOWNLOAD_INSTRUCTIONS.md for image sources</small>
+                                    </div>
+                                </div>
+                            `}
                             ${condition.bloodFilm.imageDescription ? `
                                 <p class="hematology-image-caption">${condition.bloodFilm.imageDescription}</p>
                             ` : ''}
@@ -459,6 +500,40 @@ export class HematologyManager {
 
         // Re-attach event listeners for favorite button in detail view
         this.attachFavoriteListeners();
+        
+        // Attach image gallery listeners
+        this.attachImageGalleryListeners();
+    }
+
+    /**
+     * Attach image gallery event listeners
+     */
+    attachImageGalleryListeners() {
+        const thumbnails = document.querySelectorAll('.hematology-thumbnail');
+        if (thumbnails.length === 0) return;
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', (e) => {
+                const imageSrc = e.currentTarget.dataset.imageSrc;
+                const imageIndex = parseInt(e.currentTarget.dataset.imageIndex);
+                
+                // Update main image
+                const mainImage = document.getElementById('hematology-main-image');
+                if (mainImage) {
+                    mainImage.src = imageSrc;
+                }
+                
+                // Update active thumbnail
+                thumbnails.forEach(t => t.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+                
+                // Update counter
+                const counter = document.getElementById('hematology-current-image');
+                if (counter) {
+                    counter.textContent = imageIndex + 1;
+                }
+            });
+        });
     }
 
     /**
