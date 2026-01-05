@@ -495,8 +495,20 @@ export class HematologyManager {
         if (listView) listView.style.display = 'none';
         if (detailView) detailView.style.display = 'block';
 
-        // Scroll to top
-        if (detailView) detailView.scrollTop = 0;
+        // Scroll to top - use requestAnimationFrame to ensure DOM is updated
+        requestAnimationFrame(() => {
+            if (detailView) {
+                detailView.scrollTop = 0;
+                detailView.scrollIntoView({ behavior: 'instant', block: 'start' });
+            }
+            // Also scroll the main container if it exists
+            const container = detailView?.closest('.module-container, .content-area');
+            if (container) {
+                container.scrollTop = 0;
+            }
+            // Scroll window to top as well
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        });
 
         // Re-attach event listeners for favorite button in detail view
         this.attachFavoriteListeners();
