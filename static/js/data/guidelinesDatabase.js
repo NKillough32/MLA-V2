@@ -151,6 +151,138 @@ window.guidelinesDatabase = {
         lifestyle: 'Smoking cessation (most important intervention). Pulmonary rehabilitation. Annual influenza vaccination. Pneumococcal vaccination',
         monitoring: 'Annual review. MRC dyspnoea scale, exacerbation frequency, CAT score'
     },
+    'oxygen-therapy': {
+        title: 'Oxygen Therapy & Respiratory Support (BTS 2024)',
+        category: 'pulmonary',
+        evidenceLevel: 'BTS Guidelines & NICE',
+        lastUpdated: '2024',
+        organisation: 'British Thoracic Society',
+        overview: 'Oxygen therapy is the cornerstone of managing acute hypoxaemia. The choice of delivery system depends on the severity of hypoxaemia, underlying respiratory condition, and risk of hypercapnic respiratory failure. Appropriate oxygen titration prevents both hypoxaemia and oxygen-induced hypercapnia.',
+        targetSaturations: {
+            'Standard patients': 'SpO2 94-98% - for most acutely unwell patients (e.g., ACS, sepsis, trauma, stroke)',
+            'At-risk patients': 'SpO2 88-92% - for patients at risk of hypercapnic respiratory failure (COPD, obesity hypoventilation, neuromuscular disorders, chest wall deformities, cystic fibrosis, bronchiectasis)',
+            'Critical note': 'COPD patients are at highest risk of hypercapnia. Use 28% Venturi mask at 4 l/min initially, then adjust based on blood gases. If pCO2 normal, can adjust target to 94-98%'
+        },
+        deliverySystems: {
+            'Nasal cannulae': {
+                'Flow rate': '1-6 L/min',
+                'FiO2 achieved': '24-44% (approximate)',
+                'Advantages': 'Comfortable, allows eating/speaking, well-tolerated for prolonged use',
+                'Disadvantages': 'Variable FiO2, mouth breathing reduces effectiveness, drying of nasal mucosa at higher flows',
+                'Indications': 'Mild hypoxaemia, stable patients requiring low-flow supplementation',
+                'Clinical pearls': 'Each 1 L/min increases FiO2 by approximately 4%. Not suitable for patients requiring precise oxygen control'
+            },
+            'Simple face mask': {
+                'Flow rate': '5-10 L/min (minimum 5 L/min to prevent CO2 rebreathing)',
+                'FiO2 achieved': '40-60%',
+                'Advantages': 'Higher FiO2 than nasal cannulae, readily available',
+                'Disadvantages': 'Variable FiO2, uncomfortable, interferes with eating/speaking, risk of CO2 rebreathing if flow <5 L/min',
+                'Indications': 'Moderate hypoxaemia requiring higher FiO2 than nasal cannulae',
+                'Clinical pearls': 'Being superseded by Venturi masks in most clinical situations'
+            },
+            'Venturi mask (fixed performance)': {
+                'Flow rate': 'As specified on valve (typically 2-15 L/min)',
+                'FiO2 achieved': '24%, 28%, 31%, 35%, 40%, 60% (depending on valve colour)',
+                'Advantages': 'Delivers precise, predictable FiO2 independent of breathing pattern. Essential for hypercapnic patients',
+                'Disadvantages': 'Multiple mask changes needed, more expensive, bulky equipment',
+                'Indications': 'Gold standard for COPD and patients at risk of hypercapnia. When precise oxygen control required',
+                'Clinical pearls': 'Blue = 24% (2-4 L/min), White = 28% (4-6 L/min), Yellow = 35% (8-10 L/min), Red = 40% (10-12 L/min). Start with 28% at 4 L/min for COPD exacerbations'
+            },
+            'Non-rebreather mask (reservoir mask)': {
+                'Flow rate': '10-15 L/min',
+                'FiO2 achieved': 'Up to 85% (60-85% in practice)',
+                'Advantages': 'Highest FiO2 from standard oxygen delivery, rapid correction of severe hypoxaemia',
+                'Disadvantages': 'Cannot deliver precise low FiO2, not suitable for hypercapnic patients',
+                'Indications': 'Severe hypoxaemia (SpO2 <85%), critical illness, pre-oxygenation for procedures',
+                'Clinical pearls': 'Ensure reservoir bag remains inflated during inspiration. If inadequate, consider high-flow nasal oxygen or NIV'
+            },
+            'High-flow nasal oxygen (HFNO/Optiflow)': {
+                'Flow rate': '30-70 L/min',
+                'FiO2 achieved': '21-100% (titrated)',
+                'Advantages': 'Heated and humidified, generates low-level PEEP (3-5 cmH2O), reduces work of breathing, better tolerated than NIV, allows eating/speaking',
+                'Disadvantages': 'Requires specialist equipment, cannot measure delivered pressures, more expensive',
+                'Indications': 'Type 1 respiratory failure unresponsive to standard oxygen, pre-oxygenation, weaning from NIV, palliative care',
+                'Clinical pearls': 'Increasingly used as step before NIV. Flow rates ≥40 L/min provide meaningful respiratory support. Monitor for clinical deterioration - not a substitute for NIV in type 2 failure'
+            }
+        },
+        acuteManagement: {
+            'Initial assessment': {
+                'Measure SpO2': 'Immediate oxygen saturation on arrival',
+                'Target selection': 'Choose 94-98% or 88-92% based on risk factors (see above)',
+                'Oxygen initiation': 'Start oxygen immediately if SpO2 below target',
+                'Blood gases': 'Check ABG within 30-60 minutes if at risk of hypercapnia or deteriorating'
+            },
+            'COPD-specific approach': {
+                'Initial therapy': '28% Venturi mask at 4 L/min - aim for SpO2 88-92%',
+                'Monitoring': 'ABG within 30-60 minutes to check for CO2 retention and acidosis',
+                'Adjustment': 'If pCO2 normal (4.6-6.0 kPa) and pH >7.35, can increase target to 94-98%. If pCO2 elevated with pH 7.25-7.35, continue 88-92% and consider NIV',
+                'Red flag': 'pH <7.25 with elevated pCO2 indicates severe acidosis - requires urgent senior review and likely NIV/HDU care'
+            },
+            'Titration': 'Adjust oxygen delivery to maintain target saturations. Recheck ABG 30-60 minutes after any change in oxygen therapy or clinical deterioration'
+        },
+        nonInvasiveVentilation: {
+            'Overview': 'NIV provides ventilatory support without endotracheal intubation using bilevel positive airway pressure (BiPAP). First-line for acute hypercapnic respiratory failure with respiratory acidosis',
+            'Indications': {
+                'Primary indication': 'COPD exacerbation with respiratory acidosis (pH 7.25-7.35, pCO2 >6.5 kPa) despite maximal medical therapy including controlled oxygen',
+                'Other indications': 'Cardiogenic pulmonary oedema, obesity hypoventilation syndrome, neuromuscular disorders, chest wall deformities, decompensated OSA, weaning from invasive ventilation',
+                'Bridge to decision': 'Ceiling of treatment discussions when intubation not appropriate'
+            },
+            'Contraindications': {
+                'Absolute': 'Facial trauma/burns, fixed upper airway obstruction, unable to protect airway, vomiting, bowel obstruction, undrained pneumothorax',
+                'Relative': 'Confusion/agitation (unless improving with NIV), copious secretions, haemodynamic instability, recent upper GI surgery'
+            },
+            'BiPAP settings': {
+                'EPAP (Expiratory PAP)': '4-5 cmH2O initially. Improves oxygenation by recruiting alveoli and preventing collapse. Increase if hypoxia persists despite adequate ventilation (FiO2 >60% required)',
+                'IPAP (Inspiratory PAP)': 'RCP: start 10 cmH2O, BTS: 12-15 cmH2O initially. Supports inspiration, reduces work of breathing, lowers pCO2',
+                'Pressure support': 'IPAP minus EPAP (typically 8-12 cmH2O initially). This is the key ventilatory support',
+                'Titration': 'Increase IPAP gradually by 2 cmH2O if persistently high/rising pCO2 with pH <7.30. Monitor patient comfort, air leaks, gastric distension. Maximum IPAP typically 20-25 cmH2O',
+                'Backup rate': '12-15 breaths/min (triggers if patient breath rate falls below threshold)'
+            },
+            'Monitoring on NIV': {
+                'Ward vs HDU': 'pH 7.25-7.35 can be managed on respiratory ward with NIV experience. pH <7.25 requires HDU/ICU with lower threshold for intubation',
+                'Clinical response': 'Improvement in respiratory rate, reduced work of breathing, improved consciousness within 1-2 hours',
+                'ABG timing': 'Repeat at 1, 4, and 12 hours. Look for rising pH, falling pCO2, stable/improving HCO3',
+                'Failure criteria': 'Worsening or static pH, deteriorating consciousness, inability to tolerate NIV, haemodynamic instability. Requires senior review ± intubation'
+            },
+            'Interface selection': 'Full face mask (covers nose and mouth) - better seal, preferred in acute setting. Nasal mask - more comfortable for prolonged use but risk of mouth breathing',
+            'Duration': 'Start with continuous NIV or intermittent periods (e.g., 1 hour on, 30 min off). Wean as clinical improvement occurs. Typical acute episode requires 24-48 hours'
+        },
+        severeExacerbations: {
+            'Nebulised bronchodilators': {
+                'Beta-agonists': 'Salbutamol 5mg nebulised every 4-6 hours (more frequently if severe)',
+                'Anticholinergics': 'Ipratropium bromide 500mcg nebulised every 4-6 hours',
+                'Combination': 'Often used together in acute setting for synergistic effect',
+                'Oxygen-driven': 'Drive nebulisers with compressed air in COPD (to avoid worsening hypercapnia). Give supplemental oxygen via nasal cannulae during nebulisation to maintain target saturations'
+            },
+            'Corticosteroids': {
+                'Oral': 'Prednisolone 30mg once daily for 5 days - reduces recovery time, prevents relapse',
+                'IV alternative': 'Hydrocortisone 100mg QDS if unable to swallow or severe exacerbation. Switch to oral when able',
+                'Duration': 'Do NOT extend beyond 5-7 days - no additional benefit and increased side effects'
+            },
+            'Antibiotics': 'If purulent sputum or clinical signs of pneumonia. See common-infections guideline for choice',
+            'IV theophylline': {
+                'Indication': 'Patients not responding to nebulised bronchodilators despite optimal doses',
+                'Loading': 'Aminophylline 5mg/kg IV over 20 minutes (omit if on oral theophylline)',
+                'Maintenance': '0.5mg/kg/hour continuous infusion',
+                'Monitoring': 'Narrow therapeutic index - check levels, watch for arrhythmias, nausea. Rarely used in modern practice'
+            },
+            'Escalation pathway': 'Controlled oxygen → Nebulisers + steroids + antibiotics → NIV if pH 7.25-7.35 → HDU/ICU if pH <7.25 or NIV failure → Intubation and invasive ventilation'
+        },
+        specialScenarios: {
+            'Acute asthma': 'Target SpO2 94-98%. High-flow oxygen via non-rebreather if severe. Back-to-back salbutamol nebulisers. IV magnesium sulfate if life-threatening',
+            'Pneumonia': 'Target SpO2 94-98%. Oxygen to maintain saturations. May require HFNO or CPAP if bilateral infiltrates',
+            'Pulmonary embolism': 'Target SpO2 94-98%. Oxygen as required. Consider thrombolysis if massive PE with haemodynamic compromise',
+            'Acute pulmonary oedema': 'CPAP 5-10 cmH2O with high-flow oxygen reduces intubation rates. Give alongside diuretics and vasodilators',
+            'Pneumothorax': 'High-flow oxygen (15 L/min) increases nitrogen gradient and speeds resolution if conservative management chosen. Contraindication to NIV until drained',
+            'Palliative care': 'Use oxygen for symptomatic relief of breathlessness if SpO2 <90% or patient finds it helpful. HFNO increasingly used for comfort'
+        },
+        documentation: 'Prescribe oxygen on drug chart with target saturations clearly stated. Document oxygen device, flow rate, SpO2 achieved. Review daily and titrate to lowest FiO2 achieving target. Sign oxygen off when no longer required',
+        safety: {
+            'Fire risk': 'Oxygen accelerates combustion. Ensure no smoking. Remove if open flames/electrical equipment in use',
+            'Humidification': 'Required for flows >4 L/min via nasal cannulae or prolonged use to prevent mucosal drying',
+            'CO2 retention': 'Uncontrolled high-flow oxygen in COPD can worsen hypercapnia through Haldane effect and V/Q mismatch. Always use Venturi masks and check ABGs'
+        }
+    },
     'ckd': {
         title: 'Chronic Kidney Disease (NICE NG203 2024)',
         category: 'renal',
