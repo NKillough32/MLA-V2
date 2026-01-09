@@ -11,6 +11,7 @@ class OphthalmologyManager {
         // Placeholder image using base64 encoding to avoid escaping issues in HTML attributes
         this.placeholderImage = 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bfdbfe" offset="0"/><stop stop-color="#93c5fd" offset="1"/></linearGradient></defs><rect width="400" height="240" fill="url(#g)"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="18">Image not available</text></svg>');
         this.searchTerm = '';
+        this.container = null;
     }
 
     async initialize() {
@@ -601,7 +602,8 @@ class OphthalmologyManager {
 
     filterConditions(searchTerm) {
         this.searchTerm = searchTerm.toLowerCase().trim();
-        const conditionCards = document.querySelectorAll('.ophthal-condition-card');
+        const root = this.container || document;
+        const conditionCards = root.querySelectorAll('.ophthal-condition-card');
         let visibleCount = 0;
         
         conditionCards.forEach(card => {
@@ -612,7 +614,7 @@ class OphthalmologyManager {
         });
         
         // Update stats
-        const statsEl = document.querySelector('.ophthal-search-stats');
+        const statsEl = root.querySelector('.ophthal-search-stats');
         if (statsEl) {
             const total = conditionCards.length;
             if (this.searchTerm) {
@@ -653,6 +655,7 @@ class OphthalmologyManager {
 
     render(container) {
         if (!container) return;
+        this.container = container;
         this.ensureStyles();
 
         // Search box HTML
