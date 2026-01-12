@@ -270,6 +270,35 @@ export const mnemonicsDatabase = {
             '<strong>Management</strong>: Investigate and treat underlying cause'
         ]
     },
+    'can-open-wernicke': {
+        title: 'CAN OPEN - Wernicke\'s Encephalopathy Features',
+        category: 'neurology',
+        mnemonic: 'CAN OPEN',
+        meaning: 'Clinical features of Wernicke\'s encephalopathy',
+        usage: 'Recognition of thiamine deficiency emergency',
+        details: [
+            '<strong>C</strong> - <strong>Confusion</strong> (80% - disorientation, altered consciousness)',
+            '<strong>A</strong> - <strong>Ataxia</strong> (25% - cerebellar gait ataxia, broad-based gait)',
+            '<strong>N</strong> - <strong>Nystagmus</strong> (30% - horizontal or horizontal-rotatory)',
+            '<strong>O</strong> - <strong>Ophthalmoplegia</strong> (30% - lateral rectus palsy most common)',
+            '<strong>PE</strong> - <strong>PEripheral neuropathy</strong> (80% - distal sensory loss, weakness)',
+            '<strong>N</strong> - <strong>Nutritional deficiency</strong> (thiamine/B1 deficiency)',
+            '',
+            '<strong>Classic triad</strong> (only 10-20% have all three):',
+            '1. Confusion',
+            '2. Ataxia',
+            '3. Ophthalmoplegia',
+            '',
+            '<strong>Emergency management</strong>',
+            '• <strong>Pabrinex 2 pairs IV TDS</strong> for 3-5 days',
+            '• <strong>NEVER give glucose before thiamine</strong> in at-risk patients',
+            '• Replace magnesium (required for thiamine utilization)',
+            '',
+            '<strong>Risk factors</strong>: Chronic alcohol use, malnutrition, hyperemesis gravidarum, post-bariatric surgery',
+            '',
+            '<strong>Key point</strong>: Low threshold for treatment - if in doubt, give thiamine. Untreated leads to Korsakoff syndrome (irreversible amnesia)'
+        ]
+    },
     'move-gcs': {
         title: 'MOVE - Remembering GCS Motor Score',
         category: 'neurology',
