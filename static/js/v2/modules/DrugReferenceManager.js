@@ -507,6 +507,21 @@ export class DrugReferenceManager {
                        drugName.includes('adrenaline') || drugName.includes('naloxone') ||
                        drugName.includes('atropine') || drugName.includes('glucagon');
             },
+            'reversal-agents': (drug) => {
+                const drugClass = (drug.class || '').toLowerCase();
+                const drugName = (drug.name || '').toLowerCase();
+                return drugClass.includes('reversal') || drugClass.includes('antagonist') ||
+                       drugClass.includes('antidote') || drugName.includes('naloxone') ||
+                       drugName.includes('flumazenil') || drugName.includes('idarucizumab') ||
+                       drugName.includes('protamine') || drugName.includes('andexanet') ||
+                       drugName.includes('sugammadex') || drugName.includes('neostigmine') ||
+                       drugName.includes('vitamin k') || drugName.includes('phytomenadione') ||
+                       drugName.includes('prothrombin') || drugName.includes('n-acetylcysteine') ||
+                       drugName.includes('acetylcysteine') || drugName.includes('glucagon') ||
+                       drugName.includes('calcium gluconate') || drugName.includes('sodium bicarbonate') ||
+                       drugName.includes('methylene blue') || drugName.includes('fomepizole') ||
+                       drugName.includes('hydroxocobalamin');
+            },
             gastro: (drug) => {
                 const drugClass = (drug.class || '').toLowerCase();
                 return drugClass.includes('proton pump') || drugClass.includes('antiemetic') ||
@@ -712,6 +727,7 @@ export class DrugReferenceManager {
             { id: 'respiratory', name: 'Respiratory', icon: '🫁' },
             { id: 'endocrine', name: 'Endocrine', icon: '🔬' },
             { id: 'emergency', name: 'Emergency', icon: '🚨' },
+            { id: 'reversal-agents', name: 'Reversal Agents', icon: '🔄' },
             { id: 'gastro', name: 'Gastro', icon: '🫀' },
             { id: 'neuro', name: 'Neurological', icon: '⚡' }
         ];

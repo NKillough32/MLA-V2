@@ -1,0 +1,14 @@
+{
+  "name": "Neostigmine",
+  "class": "Neuromuscular blockade reversal agent (acetylcholinesterase inhibitor)",
+  "mechanism": "Reversibly inhibits acetylcholinesterase enzyme, increasing acetylcholine at neuromuscular junction to overcome competitive blockade from non-depolarizing muscle relaxants",
+  "dosing": "Reversal of neuromuscular blockade: 2.5-5 mg IV (usual max 5 mg, 0.07 mg/kg) given with anticholinergic (glycopyrronium 0.5-1 mg or atropine 1.2-2.4 mg) to prevent muscarinic side effects. Give only after some recovery (presence of twitch response on train-of-four monitoring). Myasthenia gravis: oral 15-30 mg initially, maintenance 75-300 mg daily in divided doses",
+  "contraindications": "Bowel or urinary tract obstruction, recent bowel anastomosis, peritonitis, asthma (may cause bronchospasm)",
+  "interactions": "Aminoglycosides and other drugs with neuromuscular blocking effects may reduce efficacy. Anticholinergics (atropine, glycopyrronium) given together to counteract muscarinic effects. Depolarizing muscle relaxants (succinylcholine) - interaction complex",
+  "monitoring": "Train-of-four monitoring for adequate reversal (4/4 twitches with sustained response), respiratory adequacy, heart rate, blood pressure, signs of cholinergic excess (bradycardia, hypersalivation, bronchospasm)",
+  "pregnancy": "Use when benefits outweigh risks; used in obstetric anaesthesia when needed",
+  "sideEffects": "Muscarinic effects: bradycardia, hypersalivation, bronchospasm, nausea, abdominal cramps, increased bowel motility, miosis, blurred vision. Nicotinic effects at high doses: muscle fasciculation, weakness",
+  "pharmacokinetics": "Onset IV: 7-10 minutes; peak effect 10-20 minutes; duration 30-60 minutes; eliminated renally (adjust in renal impairment)",
+  "clinicalPearls": "ALWAYS co-administer with anticholinergic (glycopyrronium preferred - better cardiac profile than atropine). Only use when some neuromuscular recovery present (not for deep block - use sugammadex for rocuronium/vecuronium instead). Does NOT reverse depolarizing blockade (succinylcholine). Cheaper than sugammadex but slower reversal. Required for reversal of atracurium, cisatracurium, mivacurium. Monitor for recurarisation - may need extended recovery monitoring.",
+  "indication": "Reversal of non-depolarizing neuromuscular blockade (atracurium, cisatracurium, pancuronium, vecuronium), myasthenia gravis treatment"
+}

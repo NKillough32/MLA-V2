@@ -1,0 +1,14 @@
+{
+  "name": "Fomepizole",
+  "class": "Antidote (alcohol dehydrogenase inhibitor)",
+  "mechanism": "Competitive inhibitor of alcohol dehydrogenase enzyme, preventing metabolism of methanol and ethylene glycol to toxic metabolites (formic acid from methanol; glycolic and oxalic acid from ethylene glycol)",
+  "dosing": "Loading dose: 15 mg/kg IV over 30 minutes. Maintenance: 10 mg/kg IV every 12 hours for 4 doses, then 15 mg/kg every 12 hours until methanol/ethylene glycol <20 mg/dL and patient asymptomatic with normal pH. During hemodialysis: give dose at start of dialysis; if >6 hours dialysis, give additional dose at end. Max concentration 25 mg/mL for infusion",
+  "contraindications": "Known hypersensitivity to fomepizole or other pyrazoles",
+  "interactions": "Ethanol (competitive substrate for alcohol dehydrogenase - fomepizole preferred). May inhibit metabolism of other drugs metabolized by alcohol dehydrogenase",
+  "monitoring": "Methanol or ethylene glycol levels (every 2-4 hours until undetectable), arterial blood gas and pH (monitor for metabolic acidosis), renal function (U&Es, creatinine), osmolar gap, anion gap, visual symptoms (methanol), urinalysis for calcium oxalate crystals (ethylene glycol)",
+  "pregnancy": "Use when clinically indicated - benefits outweigh risks in life-threatening poisoning; limited human data but animal studies show no harm",
+  "sideEffects": "Headache, nausea, dizziness, drowsiness, mild transaminase elevation, phlebitis at injection site, hypersensitivity reactions (rare), eosinophilia. Generally well tolerated",
+  "pharmacokinetics": "Onset within 1-2 hours; hepatic metabolism (induces own metabolism with repeated dosing - hence dose increase after 48 hours); renal excretion; half-life 3-5 hours initially, may shorten to 1-2 hours with repeated dosing",
+  "clinicalPearls": "Standard of care for methanol and ethylene glycol poisoning - preferred over ethanol (more effective, easier to use, no CNS depression). Indications: confirmed or suspected methanol/ethylene glycol level >20 mg/dL, metabolic acidosis with high osmolar gap, visual symptoms (methanol), or calcium oxalate crystals in urine (ethylene glycol). Often used with hemodialysis in severe cases (acidosis, renal failure, high levels >50 mg/dL). Start empirically if strong clinical suspicion - don't wait for levels. Continue until toxic alcohol undetectable and patient asymptomatic. Monitor for dose increase needed after 48h due to auto-induction. Hemodialysis removes fomepizole - adjust dosing during dialysis.",
+  "indication": "Methanol poisoning, ethylene glycol poisoning (antifreeze ingestion)"
+}

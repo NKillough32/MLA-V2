@@ -1,0 +1,14 @@
+{
+  "name": "Andexanet alfa",
+  "class": "Factor Xa inhibitor reversal agent",
+  "mechanism": "Recombinant modified factor Xa protein that acts as a decoy, binding and sequestering factor Xa inhibitors (rivaroxaban, apixaban, edoxaban)",
+  "dosing": "Low dose regimen (for last dose ≤10 mg apixaban or ≤5 mg rivaroxaban, or unknown dose, or >8 h since last dose): IV bolus 400 mg at 30 mg/min, then infusion 4 mg/min for 120 min. High dose regimen (for last dose >10 mg apixaban or ≥10 mg rivaroxaban within 8 h): IV bolus 800 mg at 30 mg/min, then infusion 8 mg/min for 120 min. Consult local major haemorrhage protocols and haematology",
+  "contraindications": "Known hypersensitivity to andexanet alfa or excipients",
+  "interactions": "Do not administer with other haemostatic agents unless life-threatening bleeding persists",
+  "monitoring": "Clinical haemostasis and bleeding control, anti-Xa levels (if available) before and after administration, thrombotic events (increased risk post-reversal), haemoglobin, haematocrit, vital signs",
+  "pregnancy": "Use only if potential benefit justifies potential risk; limited data available",
+  "sideEffects": "Thromboembolic events (MI, ischaemic stroke, DVT, PE—occurs in ~10% within 30 days), infusion reactions (urticaria, flushing, dyspnoea), infection, fever",
+  "pharmacokinetics": "Onset: anti-Xa activity reduced by >80% within 2-5 min of bolus; duration: 2 hours after end of infusion (rebound of anti-Xa activity may occur)",
+  "clinicalPearls": "Reserved for life-threatening or uncontrolled bleeding with factor Xa inhibitors. Risk of thrombotic events significant—restart anticoagulation as soon as haemostasis permits. Very expensive; requires discussion with haematology and pharmacy. Follow local major haemorrhage protocols. PCC may be used if andexanet not available. Monitor for rebound anticoagulation after infusion ends.",
+  "indication": "Urgent reversal of factor Xa inhibitors (apixaban, rivaroxaban, edoxaban) in life-threatening or uncontrolled bleeding"
+}

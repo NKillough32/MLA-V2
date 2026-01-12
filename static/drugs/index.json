@@ -145,6 +145,12 @@
       "indication": "Invasive candidiasis (candidaemia, intra-abdominal candidiasis), oesophageal candidiasis in adults. First-line for invasive candidiasis in critically ill or azole-resistant cases"
     },
     {
+      "id": "andexanet-alfa",
+      "name": "Andexanet alfa",
+      "class": "Factor Xa inhibitor reversal agent",
+      "indication": "Urgent reversal of factor Xa inhibitors (apixaban, rivaroxaban, edoxaban) in life-threatening or uncontrolled bleeding"
+    },
+    {
       "id": "anti-d-immunoglobulin",
       "name": "Anti-D Immunoglobulin (RhD prophylaxis)",
       "class": "Human immunoglobulin preparation",
@@ -985,6 +991,12 @@
       "indication": "Uncomplicated lower UTI, particularly when first-line antibiotics unsuitable or resistant"
     },
     {
+      "id": "fomepizole",
+      "name": "Fomepizole",
+      "class": "Antidote (alcohol dehydrogenase inhibitor)",
+      "indication": "Methanol poisoning, ethylene glycol poisoning (antifreeze ingestion)"
+    },
+    {
       "id": "furosemide",
       "name": "Furosemide",
       "class": "Diuretics, loop",
@@ -1483,6 +1495,12 @@
       "indication": "Ulcerative colitis treatment and maintenance, Crohn\\"
     },
     {
+      "id": "methylene-blue",
+      "name": "Methylene Blue",
+      "class": "Antidote (reducing agent)",
+      "indication": "Methemoglobinemia (drug-induced: local anesthetics, nitrates, dapsone, antimalarials), ifosfamide-induced encephalopathy (unlicensed), vasoplegic syndrome post-cardiac surgery (unlicensed)"
+    },
+    {
       "id": "metformin",
       "name": "Metformin",
       "class": "Biguanide (oral hypoglycaemic)",
@@ -1607,6 +1625,12 @@
       "name": "Neomycin",
       "class": "Aminoglycosides",
       "indication": "Hepatic encephalopathy, bowel preparation, topical skin infections"
+    },
+    {
+      "id": "neostigmine",
+      "name": "Neostigmine",
+      "class": "Neuromuscular blockade reversal agent (acetylcholinesterase inhibitor)",
+      "indication": "Reversal of non-depolarizing neuromuscular blockade (atracurium, cisatracurium, pancuronium, vecuronium), myasthenia gravis treatment"
     },
     {
       "id": "nifedipine",
@@ -1873,6 +1897,12 @@
       "indication": "Rapid reversal of vitamin K antagonist anticoagulation in major bleeding or prior to urgent procedures"
     },
     {
+      "id": "protamine",
+      "name": "Protamine",
+      "class": "Heparin reversal agent",
+      "indication": "Reversal of unfractionated heparin (UFH) overdose or bleeding, partial reversal of LMWH, reversal after cardiopulmonary bypass"
+    },
+    {
       "id": "pyrazinamide",
       "name": "Pyrazinamide",
       "class": "Antitubercular antibiotic",
@@ -2093,6 +2123,12 @@
       "name": "Sulfasalazine",
       "class": "Disease-modifying antirheumatic drugs",
       "indication": "Rheumatoid arthritis, ulcerative colitis, Crohn disease"
+    },
+    {
+      "id": "sugammadex",
+      "name": "Sugammadex",
+      "class": "Neuromuscular blockade reversal agent (selective relaxant binding agent)",
+      "indication": "Reversal of rocuronium or vecuronium neuromuscular blockade, emergency reversal in failed intubation"
     },
     {
       "id": "sumatriptan",

@@ -1,0 +1,14 @@
+{
+  "name": "Protamine",
+  "class": "Heparin reversal agent",
+  "mechanism": "Positively charged protein that binds negatively charged heparin, forming stable complex that neutralises anticoagulant activity",
+  "dosing": "1 mg protamine neutralises ~100 units heparin. Dose depends on time since heparin: within 30 min: 1 mg per 100 units; 30-60 min: 0.5-0.75 mg per 100 units; 60-120 min: 0.375-0.5 mg per 100 units; >120 min: 0.25-0.375 mg per 100 units. Max single dose 50 mg. Give by slow IV infusion (max 5 mg/min to reduce adverse effects). For LMWH: less effective; use 1 mg per 100 units (1 mg) anti-Xa activity; may need repeat dosing",
+  "contraindications": "Known hypersensitivity to protamine or fish proteins (increased risk in fish allergy, previous vasectomy, diabetics on protamine insulin)",
+  "interactions": "None significant when used for reversal",
+  "monitoring": "APTT or ACT (for UFH), anti-Xa levels (for LMWH), signs of bleeding or clotting, vital signs during infusion (risk of hypotension, bradycardia), monitor for allergic reactions",
+  "pregnancy": "Use when clinically indicated; maternal resuscitation takes priority",
+  "sideEffects": "Hypotension, bradycardia, flushing, dyspnoea, anaphylactoid reactions (especially with rapid infusion), rebound anticoagulation (rare), protamine-induced anticoagulation with overdose (protamine itself has mild anticoagulant effect at high doses)",
+  "pharmacokinetics": "Onset within 5 minutes IV; duration 2 hours (heparin may outlast protamine effect)",
+  "clinicalPearls": "Give slowly (max 5 mg/min) to reduce hypotension and anaphylaxis risk. Only partially effective for LMWH (neutralises anti-IIa but not anti-Xa). Monitor APTT 5-15 min after dose. May need repeat dosing if heparin given by infusion. Have resuscitation equipment available. Fish allergy and diabetics on protamine insulin at higher risk of allergic reactions.",
+  "indication": "Reversal of unfractionated heparin (UFH) overdose or bleeding, partial reversal of LMWH, reversal after cardiopulmonary bypass"
+}

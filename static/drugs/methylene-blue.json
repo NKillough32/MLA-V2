@@ -1,0 +1,14 @@
+{
+  "name": "Methylene Blue",
+  "class": "Antidote (reducing agent)",
+  "mechanism": "Acts as cofactor in reduction of methemoglobin to hemoglobin by providing electrons via NADPH-methemoglobin reductase pathway. Also has antimicrobial properties and inhibits guanylate cyclase",
+  "dosing": "Methemoglobinemia: 1-2 mg/kg IV (typically 100 mg for 70 kg adult) over 5 minutes. May repeat 1 mg/kg after 30-60 minutes if inadequate response (max cumulative dose 7 mg/kg). Use lower dose (0.3-0.5 mg/kg) if G6PD deficiency suspected",
+  "contraindications": "G6PD deficiency (can cause severe hemolysis), severe renal impairment (accumulation), hypersensitivity to methylene blue or thiazide dyes",
+  "interactions": "Serotonergic drugs (SSRIs, SNRIs, MAOIs, tramadol) - risk of serotonin syndrome (avoid if possible, or use low dose with caution). May interfere with pulse oximetry readings",
+  "monitoring": "Methemoglobin levels (aim <10%), oxygen saturation (pulse oximetry may be unreliable - use co-oximetry), signs of hemolysis if G6PD deficient, urine color (blue-green normal), vital signs",
+  "pregnancy": "Use only if clearly indicated and life-threatening; limited data but has been used successfully; theoretical risk of hemolysis in fetus if G6PD deficient",
+  "sideEffects": "Blue-green discoloration of urine, skin, sclera; nausea, vomiting, abdominal pain, dizziness, headache, anxiety, confusion, hypertension, chest pain. At high doses (>7 mg/kg): paradoxical methemoglobinemia, hemolytic anemia. Serotonin syndrome with serotonergic drugs",
+  "pharmacokinetics": "Onset: improvement within minutes, peak effect 30-60 min; hepatic metabolism; renal and biliary excretion; tissue distribution causes blue discoloration",
+  "clinicalPearls": "Life-saving in severe methemoglobinemia (>20% or symptomatic). Causes immediate dramatic change in patient color from blue/grey to pink. Screen for G6PD before use if possible - if deficient, methylene blue ineffective and may worsen hemolysis (use alternative: exchange transfusion, hyperbaric oxygen). Warn patient about blue-green urine (normal, resolves in 1-2 days). May interfere with pulse oximetry - SpO2 may read falsely low (~85%). Use co-oximetry for accurate measurement. Avoid in patients on SSRIs/SNRIs if possible due to serotonin syndrome risk.",
+  "indication": "Methemoglobinemia (drug-induced: local anesthetics, nitrates, dapsone, antimalarials), ifosfamide-induced encephalopathy (unlicensed), vasoplegic syndrome post-cardiac surgery (unlicensed)"
+}

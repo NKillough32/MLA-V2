@@ -1,0 +1,14 @@
+{
+  "name": "Sugammadex",
+  "class": "Neuromuscular blockade reversal agent (selective relaxant binding agent)",
+  "mechanism": "Modified gamma-cyclodextrin that encapsulates and inactivates rocuronium and vecuronium (aminosteroid neuromuscular blocking agents), forming inactive complex that is renally excreted",
+  "dosing": "Routine reversal (moderate block, TOF count 2): 2 mg/kg IV. Deep reversal (TOF count 1-2 post-tetanic counts): 4 mg/kg IV. Immediate reversal (within 3 min of rocuronium 1.2 mg/kg): 16 mg/kg IV. Children: same mg/kg doses. Administer as single IV bolus over 10 seconds. Adjust dose in renal impairment (not recommended if CrCl <30)",
+  "contraindications": "Known hypersensitivity to sugammadex or excipients; severe renal impairment (CrCl <30 mL/min—not recommended for routine use)",
+  "interactions": "Hormonal contraceptives: may reduce efficacy (consider additional non-hormonal contraception for 7 days post-dose). Toremifene: wait 24 h after sugammadex. Can displace drugs from plasma proteins (warfarin, NSAIDs, etc.)",
+  "monitoring": "Neuromuscular function (train-of-four monitoring), respiratory adequacy, vital signs, signs of residual paralysis or recurarisation (rare)",
+  "pregnancy": "Use only if clearly indicated; limited data in pregnancy",
+  "sideEffects": "Taste disturbance (metallic taste common), nausea, cough, procedural complications (rare), hypersensitivity reactions including anaphylaxis (rare, <0.1%)",
+  "pharmacokinetics": "Onset: reversal within 3 minutes; duration: no recurarisation expected with appropriate dosing; renal excretion (sugammadex-rocuronium complex)",
+  "clinicalPearls": "Rapid, reliable reversal of rocuronium/vecuronium even from deep block. Allows immediate reversal in 'can't intubate, can't ventilate' scenarios (16 mg/kg). Does NOT reverse succinylcholine or benzylisoquinolinium agents (atracurium, cisatracurium)—use neostigmine for those. More expensive than neostigmine. Warn patients about contraceptive advice. Very useful in anaphylaxis to rocuronium or emergency airway situations.",
+  "indication": "Reversal of rocuronium or vecuronium neuromuscular blockade, emergency reversal in failed intubation"
+}
