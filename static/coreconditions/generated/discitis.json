@@ -1,0 +1,214 @@
+{
+  "id": "discitis",
+  "name": "Discitis",
+  "domains": [
+    "Infection",
+    "Musculoskeletal",
+    "Neurology"
+  ],
+  "generatedAt": "2026-01-12T00:00:00.000000",
+  "model": "claude-sonnet-4.5",
+  "rawContent": "# Discitis: Comprehensive Reference for Foundation Year Doctors\n\n## 1. OVERVIEW\n\n### Definition and Key Concepts\nDiscitis is an infection or inflammation of the intervertebral disc space. It can be septic (bacterial) or aseptic (inflammatory). Septic discitis often occurs with vertebral osteomyelitis (spondylodiscitis) and is a serious infection requiring prolonged antibiotic therapy.\n\n### Epidemiology\nDiscitis is relatively rare, with an incidence of 1 in 100,000-250,000 per year. It affects adults more commonly than children, with a peak incidence in the 5th-7th decades. Men are affected more frequently than women (2:1 ratio). Risk is higher in immunocompromised patients, diabetics, IV drug users, and those with recent spinal procedures.\n\n### Essential Pathophysiology\nInfection typically reaches the disc space through:\n- **Hematogenous spread** (most common): Bacteremia from distant infection (UTI, skin infection, endocarditis)\n- **Direct inoculation**: Spinal surgery, epidural injections, lumbar puncture\n- **Contiguous spread**: From adjacent vertebral osteomyelitis or psoas abscess\n\nThe disc space has limited blood supply in adults, making it susceptible to infection and slow to heal. Inflammation causes disc destruction, end-plate erosion, and potential abscess formation (epidural or paravertebral).\n\n### Common Causative Organisms\n- **Staphylococcus aureus** (40-60%): Most common, including MRSA\n- **Coagulase-negative staphylococci**: Post-operative infections\n- **Streptococcus species**: Including S. viridans\n- **Gram-negative organisms**: E. coli, Pseudomonas (especially IVDU, urinary source)\n- **Mycobacterium tuberculosis**: Pott's disease (spinal TB)\n- **Brucella**: Endemic areas, contact with livestock\n- **Fungal**: Candida, Aspergillus (immunocompromised)\n\n## 2. RECOGNITION\n\n### Key Symptoms\n- Severe back pain (insidious onset over weeks to months)\n- Pain worse at night and at rest (unlike mechanical pain)\n- Fever (may be low-grade or absent in 50%)\n- Malaise and weight loss\n- Radicular pain (if nerve root compression)\n- Difficulty walking or gait disturbance\n- Night sweats\n\n### Key Signs\n- Tenderness over affected spinal segment (percussion tenderness)\n- Restricted spinal movement (patient holds spine rigid)\n- Paraspinal muscle spasm\n- Fever (present in only 35-50%)\n- Neurological signs (weakness, sensory deficit, bladder/bowel dysfunction) if abscess or cord compression\n- Signs of source infection (e.g., infected skin wounds, IV drug use stigmata)\n\n### Atypical Presentations\n- Elderly: Confusion, falls, generalized weakness without prominent back pain\n- Children: Refusal to walk, irritability, abdominal pain\n- Post-operative: May mimic normal post-surgical pain initially\n- Indolent presentation with minimal symptoms (especially TB)\n\n### Red Flags Requiring Immediate Action\n- **Cauda equina syndrome**: Saddle anesthesia, urinary retention, bilateral leg weakness\n- **Progressive neurological deficit**: Rapidly worsening weakness or sensory loss\n- **Sepsis**: Hypotension, tachycardia, altered mental status\n- **Severe pain with constitutional symptoms**: Suggests epidural abscess\n\n## 3. INVESTIGATION\n\n### First-line Investigations\n- **Inflammatory markers**: ESR (highly sensitive, often >50 mm/hr), CRP (elevated in 90%)\n- **FBC**: Leukocytosis (may be normal in chronic cases)\n- **Blood cultures**: 2-3 sets before antibiotics (positive in 30-60%)\n- **Plain X-ray spine**: May show disc space narrowing, end-plate erosion (appears after 2-4 weeks)\n- **U&Es, LFTs, glucose**: Assess comorbidities and renal function before antibiotics\n\n### Second-line Investigations\n- **MRI spine with gadolinium** (GOLD STANDARD): Shows disc space enhancement, end-plate edema, paravertebral/epidural collections. Sensitivity >90%\n- **CT spine**: If MRI contraindicated; shows bony destruction but less sensitive for soft tissue\n- **CT-guided biopsy**: For microbiological diagnosis if blood cultures negative; do BEFORE antibiotics if possible\n\n### Specialist Tests\n- **Tuberculosis workup**: TB PCR, Mantoux test, sputum cultures, chest X-ray if TB suspected\n- **Brucella serology**: If travel history or livestock exposure\n- **HIV test**: Immunocompromised presentation\n- **Echocardiography**: To exclude endocarditis (10-15% association with discitis)\n\n## 4. DIAGNOSIS\n\n### Diagnostic Criteria or Clinical Decision Rules\nDiagnosis requires combination of:\n1. **Clinical**: Back pain + fever/constitutional symptoms + risk factors\n2. **Laboratory**: Elevated inflammatory markers (ESR/CRP)\n3. **Imaging**: MRI showing characteristic disc/vertebral changes\n4. **Microbiology**: Positive blood cultures or biopsy (confirms diagnosis and guides therapy)\n\n### Key Differential Diagnoses to Exclude\n- Mechanical back pain (degenerative disc disease)\n- Vertebral osteomyelitis without discitis\n- Epidural abscess (may coexist)\n- Spinal metastases\n- Multiple myeloma\n- Ankylosing spondylitis\n- Vertebral fracture (trauma, osteoporosis)\n- Paraspinal abscess\n- Pott's disease (spinal TB) - consider in endemic areas\n\n## 5. MANAGEMENT\n\n### Acute Management (Emergency/Immediate Care)\n\n#### First-line Treatments\n- **Analgesia**: Strong analgesia (opioids if needed), regular paracetamol, NSAIDs (if no contraindications)\n- **Bed rest initially**: Then gradual mobilization as pain allows\n- **Spinal immobilization**: Orthosis/brace for stability and pain relief\n- **Hold antibiotics**: Until blood cultures taken and ideally biopsy obtained (unless septic)\n\n#### Second-line Treatments\n- **Empirical IV antibiotics** (after cultures taken):\n  - **Native spine**: Flucloxacillin 2g QDS IV (covers Staph aureus) ± Gentamicin (if Gram-negative suspected)\n  - **Post-operative/IVDU**: Vancomycin 1g BD IV (covers MRSA) + Ceftriaxone 2g OD IV or Meropenem\n  - **Adjust based on cultures and sensitivities**\n\n#### Emergency Procedures\n- **Urgent neurosurgical review** if:\n  - Neurological deficit\n  - Epidural abscess\n  - Spinal instability\n  - Failure of medical management\n- **Surgical drainage**: For epidural/paravertebral abscess with neurological compromise\n- **Spinal decompression/fusion**: If instability or progressive neurological deficit\n\n### Chronic Management (Stepwise Approach)\n\n**STEP 1 - Prolonged Antibiotic Therapy:**\n- **Duration**: Minimum 6-12 weeks (often 6 weeks IV then 6 weeks oral)\n- **Switch to oral**: When clinically improving, CRP falling, sensitivities allow good oral agent\n- **Targeted therapy** based on culture results:\n  - MSSA: Flucloxacillin or cefazolin\n  - MRSA: Vancomycin (check levels) or linezolid\n  - Streptococcus: Benzylpenicillin or ceftriaxone\n  - Gram-negative: Ciprofloxacin or ceftriaxone (based on sensitivities)\n  - Culture-negative: Continue empirical regimen\n\n**STEP 2 - Monitoring and Follow-up:**\n- **Weekly CRP/ESR**: Should fall progressively; rising suggests treatment failure\n- **Repeat MRI at 6-8 weeks**: Assess response, exclude abscess\n- **Clinical assessment**: Pain improvement, mobility, neurological status\n- **Antibiotic levels**: Vancomycin trough levels if used\n\n**STEP 3 - Spinal Support:**\n- **Physiotherapy**: Gentle mobilization, core strengthening when acute phase settled\n- **Orthosis**: Thoracolumbar brace for 6-12 weeks (debated)\n- **Weight-bearing restrictions**: Gradual return to normal activity\n\n**STEP 4 - Surgical Intervention (if needed):**\nIndications:\n- Progressive neurological deficit despite antibiotics\n- Spinal instability or deformity\n- Epidural abscess with cord compression\n- Failed medical therapy (persistent sepsis, increasing CRP)\n- Large paravertebral abscess\n- Need for tissue diagnosis when biopsy unsuccessful\n\n**STEP 5 - Address Underlying Risk Factors:**\n- Optimize diabetes control\n- Screen for and treat endocarditis\n- Address IV drug use (addiction services referral)\n- Improve nutritional status\n- Consider immunodeficiency workup if recurrent\n\n#### Monitoring Requirements\n- **Weekly inflammatory markers** during treatment\n- **Regular clinical assessment**: Pain, neurology, mobility\n- **Repeat MRI**: At 6-8 weeks and end of treatment\n- **Long-term follow-up**: 3-6 months minimum to ensure cure\n- **Watch for complications**: Chronic back pain, spinal deformity, recurrence\n\n## 6. DRUGS & PROCEDURES\n\n### Drugs\n\n#### Flucloxacillin\n- **Mechanism of Action**: Beta-lactam antibiotic; inhibits bacterial cell wall synthesis. Active against Staph aureus (if methicillin-sensitive).\n- **Typical Dosing Range**: 2g QDS IV (8g/day) for severe infection; switch to 1g QDS oral when improving.\n- **Key Side Effects/Contraindications**: Cholestatic jaundice (rare but serious), GI upset, allergic reactions. Contraindicated in penicillin allergy.\n- **When to Use vs. Alternatives**: First-line for MSSA discitis. Use vancomycin if MRSA or penicillin allergy.\n\n#### Vancomycin\n- **Mechanism of Action**: Glycopeptide antibiotic; inhibits cell wall synthesis. Active against MRSA and most Gram-positive organisms.\n- **Typical Dosing Range**: 1g BD IV (adjust based on levels and renal function). Target trough 15-20 mg/L.\n- **Key Side Effects/Contraindications**: Nephrotoxicity, ototoxicity, red man syndrome (infusion-related). Requires therapeutic drug monitoring.\n- **When to Use vs. Alternatives**: MRSA discitis, post-operative infections, or penicillin allergy. Linezolid alternative if vancomycin intolerant.\n\n#### Ceftriaxone\n- **Mechanism of Action**: Third-generation cephalosporin; inhibits cell wall synthesis. Broad spectrum including Gram-negatives.\n- **Typical Dosing Range**: 2g OD IV (can be given once daily - advantage for outpatient IV therapy).\n- **Key Side Effects/Contraindications**: Diarrhea, Clostridium difficile, allergic reactions. Avoid if severe penicillin allergy.\n- **When to Use vs. Alternatives**: Streptococcal or Gram-negative discitis. Good bone penetration. Once-daily dosing useful for OPAT (outpatient parenteral antibiotic therapy).\n\n#### Ciprofloxacin\n- **Mechanism of Action**: Fluoroquinolone; inhibits DNA gyrase and topoisomerase IV. Excellent bone penetration.\n- **Typical Dosing Range**: 750mg BD oral or 400mg BD IV for osteomyelitis/discitis.\n- **Key Side Effects/Contraindications**: Tendon rupture (especially Achilles), QT prolongation, GI upset, CNS effects. Avoid in pregnancy, children.\n- **When to Use vs. Alternatives**: Oral step-down therapy for Gram-negative discitis (if sensitive). Good bioavailability allows IV-to-oral switch.\n\n### Procedures\n\n#### CT-Guided Spinal Biopsy\n- **What it Involves**: Percutaneous needle biopsy of affected disc/vertebra under CT or fluoroscopic guidance. Samples sent for culture (aerobic, anaerobic, TB, fungal) and histology.\n- **Indications**: Culture-negative discitis, atypical presentation, to confirm diagnosis, or if TB/fungal suspected.\n- **Key Risks/Complications**: Bleeding, infection, nerve injury, pneumothorax (if thoracic), inadequate sample. Yield increases if done before antibiotics started.\n\n#### Surgical Debridement and Fusion\n- **What it Involves**: Open or minimally invasive surgery to drain abscess, debride infected tissue, and stabilize spine (fusion with instrumentation if needed).\n- **Indications**: Epidural abscess with cord compression, progressive neurological deficit, spinal instability, failed medical therapy, large abscesses.\n- **Key Risks/Complications**: Bleeding, CSF leak, neurological injury, graft failure, hardware infection. Major surgery with significant morbidity.\n\n## 7. PROGNOSIS & COMPLICATIONS\n\n### Expected Outcomes\nWith early diagnosis and appropriate treatment:\n- **Cure rate**: 80-90% with prolonged antibiotics\n- **Symptom resolution**: Most patients improve within 2-4 weeks of starting appropriate antibiotics\n- **Recurrence risk**: 5-10%, higher if inadequate treatment duration\n- **Chronic back pain**: Common long-term sequela (40-50%)\n- **Mortality**: Low (<5%) if treated early, but higher in elderly with comorbidities\n\n### Important Complications to Watch For\n- **Epidural abscess** (10-30%): Can cause cord compression - surgical emergency\n- **Vertebral osteomyelitis**: Often coexists (spondylodiscitis)\n- **Paravertebral/psoas abscess**: May require drainage\n- **Neurological deficit**: Weakness, sensory loss, cauda equina syndrome\n- **Spinal deformity/kyphosis**: From vertebral collapse\n- **Spinal instability**: May require surgical fusion\n- **Sepsis**: Especially if diagnosis delayed\n- **Chronic pain**: Persistent back pain even after infection cured\n- **Recurrence**: Inadequate treatment or persistent source\n\n## 8. FOUNDATION DOCTOR ROLE\n\n### Specific Responsibilities and Limitations\n- **Initial assessment**: Take thorough history including risk factors (diabetes, IVDU, recent spinal procedures)\n- **Arrange urgent investigations**: Blood cultures (before antibiotics), inflammatory markers, MRI spine\n- **Analgesia**: Ensure adequate pain control\n- **Recognize red flags**: Neurological symptoms require urgent senior/neurosurgical review\n- **Coordinate care**: Liaise with microbiology, orthopedics/neurosurgery, infectious diseases\n- **Do NOT start antibiotics** until after blood cultures (and ideally biopsy) unless patient is septic\n\n### When to Escalate to Senior/Specialist\n- **Immediate escalation** if:\n  - Any neurological deficit (weakness, sensory loss, bladder/bowel symptoms)\n  - Suspected cauda equina syndrome\n  - Sepsis or hemodynamic instability\n  - Severe intractable pain\n- **Urgent specialist input** required:\n  - **Neurosurgery/Spinal orthopedics**: All cases for review; immediate if neurological signs\n  - **Infectious diseases/Microbiology**: Antibiotic guidance, especially if culture-negative or unusual organism\n  - **Interventional radiology**: For CT-guided biopsy if needed\n\n### Key Safety Considerations\n- **Never dismiss back pain + fever**: Always consider serious spinal infection\n- **Document neurological examination**: Regular monitoring for deterioration (especially first 48 hours)\n- **Blood cultures BEFORE antibiotics**: Critical for diagnosis\n- **Avoid delays in MRI**: Early imaging crucial for diagnosis and excluding abscess\n- **VTE prophylaxis**: Patients often immobile - assess thromboprophylaxis need\n- **Isolation precautions**: If MRSA or TB suspected\n- **Ensure adequate follow-up**: Discitis requires months of treatment and monitoring\n",
+  "content": {
+    "overview": {
+      "definition": "Discitis is an infection or inflammation of the intervertebral disc space. It can be septic (bacterial) or aseptic (inflammatory). Septic discitis often occurs with vertebral osteomyelitis (spondylodiscitis) and is a serious infection requiring prolonged antibiotic therapy.",
+      "epidemiology": "Discitis is relatively rare, with an incidence of 1 in 100,000-250,000 per year. It affects adults more commonly than children, with a peak incidence in the 5th-7th decades. Men are affected more frequently than women (2:1 ratio). Risk is higher in immunocompromised patients, diabetics, IV drug users, and those with recent spinal procedures.",
+      "pathophysiology": "Infection typically reaches the disc space through hematogenous spread (bacteremia from distant infection), direct inoculation (spinal surgery, epidural injections), or contiguous spread (adjacent osteomyelitis). The disc space has limited blood supply in adults, making it susceptible to infection and slow to heal. Inflammation causes disc destruction, end-plate erosion, and potential abscess formation."
+    },
+    "recognition": {
+      "symptoms": [
+        "Severe back pain (insidious onset over weeks to months)",
+        "Pain worse at night and at rest (unlike mechanical pain)",
+        "Fever (may be low-grade or absent in 50%)",
+        "Malaise and weight loss",
+        "Radicular pain (if nerve root compression)",
+        "Difficulty walking or gait disturbance",
+        "Night sweats"
+      ],
+      "signs": [
+        "Tenderness over affected spinal segment (percussion tenderness)",
+        "Restricted spinal movement (patient holds spine rigid)",
+        "Paraspinal muscle spasm",
+        "Fever (present in only 35-50%)",
+        "Neurological signs (weakness, sensory deficit, bladder/bowel dysfunction) if abscess or cord compression",
+        "Signs of source infection (e.g., infected skin wounds, IV drug use stigmata)"
+      ],
+      "atypicalPresentations": [
+        "Elderly: Confusion, falls, generalized weakness without prominent back pain",
+        "Children: Refusal to walk, irritability, abdominal pain",
+        "Post-operative: May mimic normal post-surgical pain initially",
+        "Indolent presentation with minimal symptoms (especially TB)"
+      ],
+      "redFlags": [
+        "Cauda equina syndrome: Saddle anesthesia, urinary retention, bilateral leg weakness",
+        "Progressive neurological deficit: Rapidly worsening weakness or sensory loss",
+        "Sepsis: Hypotension, tachycardia, altered mental status",
+        "Severe pain with constitutional symptoms: Suggests epidural abscess"
+      ]
+    },
+    "investigation": {
+      "firstLine": [
+        "Inflammatory markers: ESR (highly sensitive, often >50 mm/hr), CRP (elevated in 90%)",
+        "FBC: Leukocytosis (may be normal in chronic cases)",
+        "Blood cultures: 2-3 sets before antibiotics (positive in 30-60%)",
+        "Plain X-ray spine: May show disc space narrowing, end-plate erosion (appears after 2-4 weeks)",
+        "U&Es, LFTs, glucose: Assess comorbidities and renal function before antibiotics"
+      ],
+      "secondLine": [
+        "MRI spine with gadolinium (GOLD STANDARD): Shows disc space enhancement, end-plate edema, paravertebral/epidural collections. Sensitivity >90%",
+        "CT spine: If MRI contraindicated; shows bony destruction but less sensitive for soft tissue",
+        "CT-guided biopsy: For microbiological diagnosis if blood cultures negative; do BEFORE antibiotics if possible"
+      ],
+      "specialistTests": [
+        "Tuberculosis workup: TB PCR, Mantoux test, sputum cultures, chest X-ray if TB suspected",
+        "Brucella serology: If travel history or livestock exposure",
+        "HIV test: Immunocompromised presentation",
+        "Echocardiography: To exclude endocarditis (10-15% association with discitis)"
+      ]
+    },
+    "diagnosis": {
+      "criteria": "Diagnosis requires combination of: (1) Clinical - back pain + fever/constitutional symptoms + risk factors, (2) Laboratory - elevated inflammatory markers (ESR/CRP), (3) Imaging - MRI showing characteristic disc/vertebral changes, (4) Microbiology - positive blood cultures or biopsy confirms diagnosis and guides therapy.",
+      "differentials": [
+        "Mechanical back pain (degenerative disc disease)",
+        "Vertebral osteomyelitis without discitis",
+        "Epidural abscess (may coexist)",
+        "Spinal metastases",
+        "Multiple myeloma",
+        "Ankylosing spondylitis",
+        "Vertebral fracture (trauma, osteoporosis)",
+        "Paraspinal abscess",
+        "Pott's disease (spinal TB)"
+      ]
+    },
+    "management": {
+      "acute": {
+        "firstLine": [
+          "Analgesia: Strong analgesia (opioids if needed), regular paracetamol, NSAIDs (if no contraindications)",
+          "Bed rest initially: Then gradual mobilization as pain allows",
+          "Spinal immobilization: Orthosis/brace for stability and pain relief",
+          "Hold antibiotics: Until blood cultures taken and ideally biopsy obtained (unless septic)"
+        ],
+        "secondLine": [
+          "Empirical IV antibiotics (after cultures taken):",
+          "Native spine: Flucloxacillin 2g QDS IV ± Gentamicin (if Gram-negative suspected)",
+          "Post-operative/IVDU: Vancomycin 1g BD IV + Ceftriaxone 2g OD IV or Meropenem",
+          "Adjust based on cultures and sensitivities"
+        ],
+        "procedures": [
+          "Urgent neurosurgical review if neurological deficit, epidural abscess, spinal instability, or failure of medical management",
+          "Surgical drainage: For epidural/paravertebral abscess with neurological compromise",
+          "Spinal decompression/fusion: If instability or progressive neurological deficit"
+        ]
+      },
+      "chronic": {
+        "step1": [
+          "PROLONGED ANTIBIOTIC THERAPY:",
+          "Duration: Minimum 6-12 weeks (often 6 weeks IV then 6 weeks oral)",
+          "Switch to oral when clinically improving, CRP falling, sensitivities allow good oral agent",
+          "Targeted therapy based on culture results:",
+          "MSSA: Flucloxacillin or cefazolin",
+          "MRSA: Vancomycin (check levels) or linezolid",
+          "Streptococcus: Benzylpenicillin or ceftriaxone",
+          "Gram-negative: Ciprofloxacin or ceftriaxone (based on sensitivities)",
+          "Culture-negative: Continue empirical regimen"
+        ],
+        "step2": [
+          "MONITORING AND FOLLOW-UP:",
+          "Weekly CRP/ESR: Should fall progressively; rising suggests treatment failure",
+          "Repeat MRI at 6-8 weeks: Assess response, exclude abscess",
+          "Clinical assessment: Pain improvement, mobility, neurological status",
+          "Antibiotic levels: Vancomycin trough levels if used"
+        ],
+        "step3": [
+          "SPINAL SUPPORT:",
+          "Physiotherapy: Gentle mobilization, core strengthening when acute phase settled",
+          "Orthosis: Thoracolumbar brace for 6-12 weeks (debated)",
+          "Weight-bearing restrictions: Gradual return to normal activity"
+        ],
+        "step4": [
+          "SURGICAL INTERVENTION (if needed):",
+          "Progressive neurological deficit despite antibiotics",
+          "Spinal instability or deformity",
+          "Epidural abscess with cord compression",
+          "Failed medical therapy (persistent sepsis, increasing CRP)",
+          "Large paravertebral abscess",
+          "Need for tissue diagnosis when biopsy unsuccessful"
+        ],
+        "step5": [
+          "ADDRESS UNDERLYING RISK FACTORS:",
+          "Optimize diabetes control",
+          "Screen for and treat endocarditis",
+          "Address IV drug use (addiction services referral)",
+          "Improve nutritional status",
+          "Consider immunodeficiency workup if recurrent"
+        ],
+        "monitoring": [
+          "Weekly inflammatory markers during treatment",
+          "Regular clinical assessment: Pain, neurology, mobility",
+          "Repeat MRI: At 6-8 weeks and end of treatment",
+          "Long-term follow-up: 3-6 months minimum to ensure cure",
+          "Watch for complications: Chronic back pain, spinal deformity, recurrence"
+        ]
+      },
+      "drugs": [
+        {
+          "name": "Flucloxacillin",
+          "mechanism": "Beta-lactam antibiotic; inhibits bacterial cell wall synthesis. Active against Staph aureus (if methicillin-sensitive).",
+          "dosing": "2g QDS IV (8g/day) for severe infection; switch to 1g QDS oral when improving.",
+          "sideEffects": "Cholestatic jaundice (rare but serious), GI upset, allergic reactions. Contraindicated in penicillin allergy.",
+          "notes": "First-line for MSSA discitis. Use vancomycin if MRSA or penicillin allergy."
+        },
+        {
+          "name": "Vancomycin",
+          "mechanism": "Glycopeptide antibiotic; inhibits cell wall synthesis. Active against MRSA and most Gram-positive organisms.",
+          "dosing": "1g BD IV (adjust based on levels and renal function). Target trough 15-20 mg/L.",
+          "sideEffects": "Nephrotoxicity, ototoxicity, red man syndrome (infusion-related). Requires therapeutic drug monitoring.",
+          "notes": "MRSA discitis, post-operative infections, or penicillin allergy. Linezolid alternative if vancomycin intolerant."
+        },
+        {
+          "name": "Ceftriaxone",
+          "mechanism": "Third-generation cephalosporin; inhibits cell wall synthesis. Broad spectrum including Gram-negatives.",
+          "dosing": "2g OD IV (can be given once daily - advantage for outpatient IV therapy).",
+          "sideEffects": "Diarrhea, Clostridium difficile, allergic reactions. Avoid if severe penicillin allergy.",
+          "notes": "Streptococcal or Gram-negative discitis. Good bone penetration. Once-daily dosing useful for OPAT."
+        },
+        {
+          "name": "Ciprofloxacin",
+          "mechanism": "Fluoroquinolone; inhibits DNA gyrase and topoisomerase IV. Excellent bone penetration.",
+          "dosing": "750mg BD oral or 400mg BD IV for osteomyelitis/discitis.",
+          "sideEffects": "Tendon rupture (especially Achilles), QT prolongation, GI upset, CNS effects. Avoid in pregnancy, children.",
+          "notes": "Oral step-down therapy for Gram-negative discitis (if sensitive). Good bioavailability allows IV-to-oral switch."
+        }
+      ],
+      "procedures": [
+        {
+          "name": "CT-Guided Spinal Biopsy",
+          "description": "Percutaneous needle biopsy of affected disc/vertebra under CT or fluoroscopic guidance. Samples sent for culture (aerobic, anaerobic, TB, fungal) and histology.",
+          "indications": "Culture-negative discitis, atypical presentation, to confirm diagnosis, or if TB/fungal suspected.",
+          "risks": "Bleeding, infection, nerve injury, pneumothorax (if thoracic), inadequate sample. Yield increases if done before antibiotics started."
+        },
+        {
+          "name": "Surgical Debridement and Fusion",
+          "description": "Open or minimally invasive surgery to drain abscess, debride infected tissue, and stabilize spine (fusion with instrumentation if needed).",
+          "indications": "Epidural abscess with cord compression, progressive neurological deficit, spinal instability, failed medical therapy, large abscesses.",
+          "risks": "Bleeding, CSF leak, neurological injury, graft failure, hardware infection. Major surgery with significant morbidity."
+        }
+      ]
+    },
+    "prognosis": "With early diagnosis and appropriate treatment, cure rate is 80-90% with prolonged antibiotics. Most patients improve within 2-4 weeks of starting appropriate antibiotics. Recurrence risk is 5-10%, higher if inadequate treatment duration. Chronic back pain is a common long-term sequela (40-50%). Mortality is low (<5%) if treated early, but higher in elderly with comorbidities.",
+    "complications": [
+      "Epidural abscess (10-30%): Can cause cord compression - surgical emergency",
+      "Vertebral osteomyelitis: Often coexists (spondylodiscitis)",
+      "Paravertebral/psoas abscess: May require drainage",
+      "Neurological deficit: Weakness, sensory loss, cauda equina syndrome",
+      "Spinal deformity/kyphosis: From vertebral collapse",
+      "Spinal instability: May require surgical fusion",
+      "Sepsis: Especially if diagnosis delayed",
+      "Chronic pain: Persistent back pain even after infection cured",
+      "Recurrence: Inadequate treatment or persistent source"
+    ],
+    "foundationDoctorRole": "Foundation doctors should perform initial assessment including thorough history of risk factors (diabetes, IVDU, recent spinal procedures), arrange urgent investigations (blood cultures before antibiotics, inflammatory markers, MRI spine), ensure adequate analgesia, recognize red flags requiring urgent senior/neurosurgical review, coordinate care with microbiology and specialists, and avoid starting antibiotics until after blood cultures (and ideally biopsy) unless patient is septic.",
+    "escalation": "Immediate escalation required for: any neurological deficit (weakness, sensory loss, bladder/bowel symptoms), suspected cauda equina syndrome, sepsis or hemodynamic instability, severe intractable pain. Urgent specialist input required from neurosurgery/spinal orthopedics (all cases, immediate if neurological signs), infectious diseases/microbiology (antibiotic guidance, especially if culture-negative), and interventional radiology (for CT-guided biopsy if needed).",
+    "keySafetyConsiderations": "Never dismiss back pain + fever - always consider serious spinal infection. Document neurological examination with regular monitoring for deterioration (especially first 48 hours). Blood cultures BEFORE antibiotics are critical for diagnosis. Avoid delays in MRI as early imaging is crucial for diagnosis and excluding abscess. Assess VTE prophylaxis needs as patients often immobile. Use isolation precautions if MRSA or TB suspected. Ensure adequate follow-up as discitis requires months of treatment and monitoring."
+  }
+}
