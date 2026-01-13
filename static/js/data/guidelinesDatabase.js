@@ -820,31 +820,46 @@ window.guidelinesDatabase = {
         organisation: 'British Society for Rheumatology',
         diagnosis: {
             'Clinical': 'Acute monoarthritis (typically 1st MTP joint), rapid onset, severe pain, red, hot, swollen',
-            'Joint aspiration': 'Negatively birefringent needle-shaped crystals (monosodium urate)',
-            'Serum urate': 'May be normal during acute attack. Check 2-4 weeks after attack'
+            'Gold standard': 'Joint aspiration - negatively birefringent needle-shaped monosodium urate crystals under polarised light',
+            'Serum urate': 'May be normal during acute attack. Check 2-4 weeks after flare settles. NOT diagnostic alone'
         },
         acute: {
-            'First-line': 'NSAID (naproxen 750mg stat, then 250mg three times daily) OR colchicine 500mcg 2-4 times daily',
-            'Alternatives': 'Colchicine (if NSAID contraindicated), oral/IM steroid (if both contraindicated)',
-            'Avoid': 'Do NOT start/stop allopurinol during acute attack',
-            'Duration': 'Continue until 1-2 days after symptoms resolve'
+            'First-line': 'NSAID (naproxen 750mg stat then 250mg TDS, or diclofenac 75mg BD) + PPI gastroprotection',
+            'Second-line': 'Colchicine 500mcg BD-QDS (lower doses than historically - avoid 1mg then 500mcg dosing)',
+            'Third-line': 'Oral prednisolone 30-40mg daily for 5 days OR IM/intra-articular steroid if NSAIDs/colchicine contraindicated',
+            'AVOID': 'Do NOT start or stop urate-lowering therapy during acute attack. Continue if already established',
+            'Duration': 'Continue until 1-2 days after complete symptom resolution'
         },
         uratelowering: {
-            'Indications': '≥2 attacks/year, tophi, chronic gouty arthritis, urate stones, CKD stage ≥3',
-            'Target': 'Serum urate <300 micromol/L (<5mg/dL)',
-            'First-line': 'Allopurinol 100mg daily, increase by 100mg every 2-4 weeks to target (max 900mg)',
-            'Prophylaxis': 'Give colchicine 500mcg once/twice daily OR NSAID when starting allopurinol',
-            'Alternative': 'Febuxostat if allopurinol not tolerated'
+            'Indications': '≥2 attacks in 12 months, tophi, chronic gouty arthritis, urate stones, CKD stage ≥3, radiographic joint damage',
+            'Target': 'Serum urate <300 μmol/L (<5mg/dL) - TREAT TO TARGET approach',
+            'First-line': 'Allopurinol: Start 50-100mg daily (50mg if CKD stage 4-5). Titrate by 100mg every 2-4 weeks until target reached. Usual maintenance 300-600mg, max 900mg daily',
+            'Prophylaxis ESSENTIAL': 'Colchicine 500mcg OD-BD OR NSAID + PPI for minimum 3-6 months when starting/changing ULT. Prevents acute flares',
+            'Second-line': 'Febuxostat 80mg daily (increase to 120mg if needed) - if allopurinol contraindicated, not tolerated, or ineffective at max dose. MHRA warning: avoid in established cardiovascular disease',
+            'Third-line': 'Uricosuric agents (benzbromarone, probenecid) if xanthine oxidase inhibitors unsuitable. Specialist use only',
+            'Renal dosing': 'Can exceed traditional allopurinol renal dose caps if monitored carefully - dose to target urate, not creatinine'
         },
         lifestyle: {
-            'Diet': 'Reduce purine-rich foods (red meat, seafood, organ meats, yeast extracts)',
-            'Alcohol': 'Limit beer and spirits (wine less problematic)',
-            'Drinks': 'Avoid sugar-sweetened drinks, increase water intake',
-            'Weight': 'Gradual weight loss if overweight (rapid weight loss can trigger attacks)',
-            'Vitamin C': '500mg daily may reduce urate'
+            'Weight': 'Lose weight if BMI ≥25 (gradual - rapid loss can trigger attacks)',
+            'Alcohol': 'Reduce intake, especially beer and spirits. Limit to <14 units/week',
+            'Diet': 'Reduce purine-rich foods (red meat, seafood, offal, yeast extracts, oily fish). Avoid sugar-sweetened drinks',
+            'Hydration': 'Maintain good fluid intake (2-3L daily)',
+            'Vitamin C': '500-1000mg daily may modestly reduce urate levels',
+            'Cherry extract': 'May help reduce attack frequency (limited evidence)'
         },
-        monitoring: 'Check serum urate every 2-4 weeks when titrating allopurinol. Once at target, check 6-monthly',
-        complications: 'Tophi (chronic urate deposits), chronic gouty arthritis, urate nephropathy'
+        monitoring: {
+            'ULT titration': 'Check serum urate 2-4 weeks after each dose change',
+            'Once stable': 'Check urate 6-monthly once target achieved and maintained',
+            'Flare frequency': 'Monitor attack frequency and tophi resolution as markers of disease control',
+            'Renal/hepatic': 'Monitor U&Es and LFTs with ULT, especially febuxostat'
+        },
+        complications: 'Tophi (chronic urate deposits), chronic tophaceous arthritis, erosive joint damage, urate nephropathy, kidney stones',
+        keyPoints: {
+            'Never stop ULT during attack': 'Continue established therapy. Only avoid starting new ULT during acute flare',
+            'Prophylaxis mandatory': 'Failure to provide flare prophylaxis is major cause of ULT non-adherence',
+            'Dose to target': 'Titrate allopurinol to achieve urate <300 μmol/L, not to arbitrary dose limit',
+            'Long-term commitment': 'ULT is lifelong. Stopping therapy leads to recurrent attacks and progressive joint damage'
+        }
     },
     'rheumatoid': {
         title: 'Rheumatoid Arthritis (NICE NG100 2024)',
